@@ -364,7 +364,7 @@ $$
 They are the real and imaginary parts of the biquaternion norm of the field,
 
 $$
-\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = -\epsilon\left(I_1 + 2ic\,I_2\right),
+\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = -\left(I_1 + 2ic\,I_2\right),
 $$
 
 and they are invariant under the proper orthochronous Lorentz group. It is natural to ask what these field invariants imply for the *motion* of a charged particle. The answer has two parts, and it is worth separating them carefully.
@@ -524,12 +524,12 @@ Let a field's **charge–current biquaternion** be
 $$
 \tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J,
 \qquad
-\rho = \frac{\rho_E}{\sqrt{\epsilon}} - i\,\frac{\rho_H}{\sqrt{\mu}},
+\rho = \frac{\rho_E}{\epsilon} - i\,c\,\rho_H,
 \qquad
-\vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H,
+\vec J = c\,\mu\,\vec j_E - i\,\vec j_H,
 $$
 
-where $\rho_E = \mathrm{div}\,\vec D$ and $\rho_H = -\mathrm{div}\,\vec B$ are the electric and magnetic charge densities, $\vec j_E$ and $\vec j_H$ the corresponding currents, $\vec D = \epsilon\vec E$, and $\vec B = \mu\vec H$. Let a second field have field strength
+where $\rho_E = \mathrm{div}\,\vec D$ and $\rho_H = -\mathrm{div}\,\vec B$ are the electric and magnetic charge densities, $\vec j_E$ and $\vec j_H$ the corresponding currents, $\vec D = \epsilon\vec E$, and $\vec B = \mu\vec H$. No half power appears, and every entry is the field strength divided by a length: $\rho_E/\epsilon = \mathrm{div}\,\vec E$, $c\,\rho_H$, $c\,\mu\,\vec j_E$ and $\vec j_H$ are all in $\mathrm{V\,m^{-2}}$, the unit of $\tilde F$ over a metre, so the four coefficients of the element share it. The speed of light carries the two conversions, and the impedance is never named: it is $c\,\mu$, which is also $1/(c\,\epsilon)$. Let a second field have field strength
 
 $$
 \tilde F_2 = i\vec E_2 - c\vec B_2,
@@ -538,8 +538,15 @@ $$
 the field strength of *The Magnetic-Charge–Mass Hypothesis*, in that article's sign convention. The programme's **power–force biquaternion** is the product
 
 $$
-\tilde{\mathcal F} = i\,\tilde J_{\Phi,\mathrm{eg}}\circ\tilde F_2 .
+\tilde{\mathcal F} = i\,\epsilon\,\tilde J_{\Phi,\mathrm{eg}}\circ\tilde F_2
+= \frac{i}{c}\,\tilde J_{\Phi,\mathrm{eg}}\circ\left(c\,\epsilon\,\tilde F_2\right),
+\qquad
+c\,\epsilon\,\tilde F_2 = i\,c\,\vec D_2 - \vec H_2 ,
+\qquad
+\epsilon = \frac{1}{c^{2}\mu}.
 $$
+
+The factor $\epsilon$ is what the densities divide out, and it is put outside rather than inside so that each entry above stays a field over a length. Written with $c$, the same factor gives $c\,\epsilon\,\tilde F_2 = i\,c\,\vec D_2-\vec H_2$: the electric slot is the displacement and the magnetic slot is the magnetic field, so the product pairs the source with $\vec D_2$ and $\vec H_2$ directly.
 
 Its scalar and vector parts were recomputed here and are
 
@@ -548,7 +555,7 @@ $$
 = \frac{1}{c}\left(\vec E_2\cdot\vec j_E + \vec H_2\cdot\vec j_H\right)
 + i\left(\vec B_2\cdot\vec j_E - \vec D_2\cdot\vec j_H\right),
 \qquad
-\mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,\rho\,\tilde F_2 - i\,\big[\tilde F_2,\vec J\big],
+\mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,\epsilon\,\rho\,\tilde F_2 - i\,\epsilon\,\big[\tilde F_2,\vec J\big],
 $$
 
 where $(\cdot,\cdot)$ is the general plain bilinear form $\sum_{\imath\in\{x,y,z\}} F_{\imath} G_{\imath}$. The scalar part is a **power density**: its real part is the rate at which the electric and gravimagnetic fields do work on their currents, and its imaginary part is the corresponding magnetic-charge quantity.
@@ -559,7 +566,7 @@ $$
 \mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,i\left(\vec F_H + i\,\vec F_E\right),
 \qquad
 \vec F_H + i\,\vec F_E = i\,\mathrm{Vect}\big(\tilde{\mathcal F}\big)
-= -\,i\rho\,\tilde F_2 - \vec J\times\tilde F_2 ,
+= -\,i\,\epsilon\,\rho\,\tilde F_2 - \epsilon\,\vec J\times\tilde F_2 ,
 $$
 
 so that $\vec F_E = \mathrm{Re}\,\mathrm{Vect}(\tilde{\mathcal F})$ and $\vec F_H = -\mathrm{Im}\,\mathrm{Vect}(\tilde{\mathcal F})$. Expanding with the definitions above gives the four terms of the first half with their coefficients,
@@ -576,7 +583,7 @@ $$
 
 The density $\tilde{\mathcal F}$ is not the per-particle $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ and the two must not be identified: $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ is the four-force on one charge, $\tilde{\mathcal F}$ is a force per unit volume on a continuous distribution, and only the latter carries the power–force pairing in one element.
 
-**Status.** The object, the split and the coefficients above are algebra, and all were verified numerically: the scalar part against its component form, and both halves of the force against the direct expansion, with residuals at machine precision. The source's own expansions of the two halves do not close against the vector part as it stands; the reconciliation is the factor of $i$ displayed above, which the source suppresses. Reading $\vec F_H$ as the real part of the vector part rather than as $-\mathrm{Im}$ of it produces the apparent mismatch; with the factor placed correctly the source's two expansions close term by term. One exception remains: the source prints $-\rho_H\vec D_2$ where the derivation gives $-c\,\rho_H\vec D_2$, a factor of the dimensionless speed of light in that single term, and the derived form is the one carried above. The coefficient-level expansion is hypothesis-dependent through the magnetic-charge–mass identification, so the individual terms remain the programme's rather than the corpus's; what the corpus certifies is that they are what the programme's own product yields. The programme's third-law relation, $\tilde J_{\Phi,\mathrm{eg}}\circ\tilde F_2 = -\tilde J_{\Phi,\mathrm{eg},2}\circ\tilde F$, is the statement that the two power densities are equal, and the author compares it to Betti's reciprocity identity; that comparison, and the hypothesis, are the programme's, not the corpus's. See *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* for the provenance.
+**Status.** The object, the split and the coefficients above are algebra, and all were verified numerically: the scalar part against its component form, and both halves of the force against the direct expansion, with residuals at machine precision. The source's own expansions of the two halves do not close against the vector part as it stands; the reconciliation is the factor of $i$ displayed above, which the source suppresses. Reading $\vec F_H$ as the real part of the vector part rather than as $-\mathrm{Im}$ of it produces the apparent mismatch; with the factor placed correctly the source's two expansions close term by term. One exception remains: the source prints $-\rho_H\vec D_2$ where the derivation gives $-c\,\rho_H\vec D_2$, a factor of the speed of light in that single term, and the derived form is the one carried above. The coefficient-level expansion is hypothesis-dependent through the magnetic-charge–mass identification, so the individual terms remain the programme's rather than the corpus's; what the corpus certifies is that they are what the programme's own product yields. The programme's third-law relation, $\tilde J_{\Phi,\mathrm{eg}}\circ\tilde F_2 = -\tilde J_{\Phi,\mathrm{eg},2}\circ\tilde F$, is the statement that the two power densities are equal, and the author compares it to Betti's reciprocity identity; that comparison, and the hypothesis, are the programme's, not the corpus's. See *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* for the provenance.
 
 ## The Lamb-Vector Reading of the Force Law
 

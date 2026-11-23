@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The photon is the quantum of the electromagnetic field: massless, chargeless, of spin one, with two transverse polarizations and helicities $\pm 1$, and its own antiparticle. In the biquaternion framework of this series the electromagnetic field is the **biquaternion Maxwell field** $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the companion article *Maxwell's Equations in the Biquaternionic Formulation*, and its quantization is the Gupta–Bleuler construction of *Canonical Quantization of the Biquaternion Maxwell Field*. The photon is the one-particle state of that field.
+The photon is the quantum of the electromagnetic field: massless, chargeless, of spin one, with two transverse polarizations and helicities $\pm 1$, and its own antiparticle. In the biquaternion framework of this series the electromagnetic field is the **biquaternion Maxwell field** $\tilde{F} = i\vec E - c\vec B$ of the companion article *Maxwell's Equations in the Biquaternionic Formulation*, and its quantization is the Gupta–Bleuler construction of *Canonical Quantization of the Biquaternion Maxwell Field*. The photon is the one-particle state of that field.
 
 A framework that reformulates known physics can be read generously or carefully. Read generously, every correct statement about light becomes a statement the framework "contains"; read carefully, most of them are properties of Maxwell's equations and of canonical quantization that the framework transcribes, and the specific facts attached to the photon must be supplied from outside. This article takes the second interpretation and asks the question that the quantization article leaves explicitly open: **do the two transverse polarizations, and their helicities, have a native meaning in the algebra — for instance, in the vector part of the material sector?**
 
@@ -27,11 +27,11 @@ $$
 \mathbb{B}_{\Psi} = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{h_t\,e_t, i h'_{x}\,\vec e_x, i h'_{y}\,\vec e_y, i h'_{z}\,\vec e_z\},
 $$
 
-with $r'_t,h'_{x},h'_{y},h'_{z}$ real, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\mathsf{M}_2(i\vec e_{\imath})=\sigma_{\imath}$, and the reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and measure $\vec E$ and $\vec H$ in the invertibles $\sqrt{\epsilon_0}$ and $\sqrt{\mu_0}$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The material reading is $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$.
+with $r'_t,h'_{x},h'_{y},h'_{z}$ real, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\mathsf{M}_2(i\vec e_{\imath})=\sigma_{\imath}$, and the reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$, the field strength is $\tilde{F}=i\vec E-c\vec B$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and write $\vec B=\mu\vec H$, in which $c=1/\sqrt{\epsilon\mu}$ absorbs the medium constants and $\tilde{F}$ is a field strength in volts per metre. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$, so that $\tilde{F}=i\vec N$. The material reading is $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$.
 
 ## The Photon as the Quantum of the Biquaternion Maxwell Field
 
-The classical theory is the single equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ for the field strength; the sources vanish for the free field, and the equation is then $\tilde\nabla_\Phi\tilde{F}=0$. A plane-wave solution with four-wavevector $\tilde P_{\Phi}=i\omega\,e_t+2\pi\vec\nu_\Phi$ and complex amplitude $\vec F$ has
+The classical theory is the single equation $\tilde\nabla_\Phi\tilde{F}=-Z\,\tilde{J}_{\Phi}$ for the field strength; the sources vanish for the free field, and the equation is then $\tilde\nabla_\Phi\tilde{F}=0$. A plane-wave solution with four-wavevector $\tilde P_{\Phi}=i\omega\,e_t+2\pi\vec\nu_\Phi$ and complex amplitude $\vec F$ has
 
 $$
 \omega = c|2\pi\vec\nu_\Phi|, \qquad 2\pi\vec\nu_\Phi\cdot\vec F = 0,
@@ -43,14 +43,14 @@ The dictionary that places the photon's data in the algebra is the following.
 
 | Photon datum | Biquaternion object |
 |---|---|
-| The field | $\tilde{F}=i\sqrt{\epsilon}\,\vec N\in\mathbb{B}$, vanishing scalar part, mixed real/imaginary vector part |
+| The field | $\tilde{F}=i\vec N\in\mathbb{B}$, vanishing scalar part, mixed real/imaginary vector part |
 | Free equation | $\tilde\nabla_\Phi\tilde{F}=0$ |
 | Potential | $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A\in\mathbb{B}_{\Phi}$ |
 | Polarization directions | the four directions $e_t,\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{B}_{\Phi}$, the time coefficient carrying $Q_t=i q'_t$ |
 | Physical polarizations | the plane in $\mathrm{Vect}(\mathbb{B}_{\Phi})$ orthogonal to $\vec u_\Phi$ |
 | Helicity states | the $\pm1$ eigenvectors $\varepsilon_{\mathrm{fop},\pm}$ of the $\mathbb{B}_{\Psi}$ element $i\vec u_\Phi$ |
 | Helicity observable | $\digamma_{\mathrm{hlc}}=\tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}$, represented by the $\mathbb{B}_{\Psi}$ element $i\vec u_\Phi$ |
-| Conserved energy–momentum | $\tilde\Sigma_{\Psi}=\tfrac12\tilde{F}\tilde{F}^{*}=W+\tfrac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $\vec S$ the **Poynting vector** |
+| Conserved energy–momentum | $\tilde\Sigma_{\Psi}=\tfrac{\epsilon}{2}\tilde{F}\tilde{F}^{*}=W+\tfrac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $\vec S$ the **Poynting vector** |
 | Photon number | $N_\gamma$ (transverse sum) — **not** in $\mathbb{B}$ |
 
 Two structural observations follow from the table. The field-strength-like datum $\tilde{F}$ is in neither sector: it has vanishing scalar part and a vector part that is part electric (imaginary) and part magnetic (real), which is why it is not an element of $\mathbb{B}_{\Phi}$ even though it is built from the potentials. The polarization *directions*, by contrast, are real spatial vectors and do sit in the material sector; this is the observation that the quantization article invited, and the next section makes it precise.
@@ -152,7 +152,7 @@ $$
 \vec E+i\vec B = 2E_+\varepsilon_{\mathrm{fop},+}, \qquad \vec E-i\vec B = 2E_-\varepsilon_{\mathrm{fop},-}\;}.
 $$
 
-The two combinations $\vec E\pm i\vec B$ therefore separate the helicity $+1$ from the helicity $-1$ amplitude: the first contains only $E_+$, the second only $E_-$. Since $\tilde{F}=i\sqrt{\epsilon}\,\vec N=i\sqrt{\epsilon}\,(\vec E+ic\vec B)$, the field-strength biquaternion of a definite-helicity plane wave is supported on the corresponding self-dual or anti-self-dual component.
+The two combinations $\vec E\pm i\vec B$ therefore separate the helicity $+1$ from the helicity $-1$ amplitude: the first contains only $E_+$, the second only $E_-$. Since $\tilde{F}=i\vec N=i\,(\vec E+ic\vec B)$, the field-strength biquaternion of a definite-helicity plane wave is supported on the corresponding self-dual or anti-self-dual component.
 
 > **The two helicities are the two self-dual halves of the field strength.** A positive-frequency plane wave of helicity $+1$ has its amplitude in the self-dual piece $\vec E+ic\vec B$ and vanishing anti-self-dual piece $\vec E-ic\vec B$; helicity $-1$ reverses the roles.
 
@@ -255,8 +255,8 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\mathsf{M}_2(i\vec e_{\imath})=\sigma_{\imath}$ | Isomorphism with $M_2(\mathbb{C})$ |
 | $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath}\,\vec e_{\imath}\partial/\partial R_{\imath}$ | Biquaternionic gradient |
 | $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion, in $\mathbb{B}_{\Phi}$ |
-| $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H=i\sqrt{\epsilon}\,\vec N$ | Field-strength biquaternion (vanishing scalar part) |
-| $\vec N=\vec E+ic\vec B$, $\vec B=\mu\vec H$ | Riemann–Silberstein vector; $\tilde{F}=i\sqrt{\epsilon}\,\vec N$ |
+| $\tilde{F}=i\vec E-c\vec B=i\vec N$ | Field-strength biquaternion (vanishing scalar part) |
+| $\vec N=\vec E+ic\vec B$, $\vec B=\mu\vec H$ | Riemann–Silberstein vector; $\tilde{F}=i\vec N$ |
 | $\vec u_\Phi$ | Unit propagation direction (pure real quaternion) |
 | $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$; $\varepsilon_{\mathrm{fop},\pm}$ | Linear and circular polarization vectors |
 | $\sigma_{\mathrm{met},0}=-1$, $\sigma_{\mathrm{met},k}=+1$ | Indefinite form of Gupta–Bleuler; the biquaternion norm of $\mathbb{B}_{\Phi}$, its one minus the square of the $i$ in $Q_t=i q'_t$ |

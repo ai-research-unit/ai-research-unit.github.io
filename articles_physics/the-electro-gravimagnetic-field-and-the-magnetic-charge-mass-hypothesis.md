@@ -12,43 +12,44 @@ Two sources are recorded. The 2007 preprint is Russian and its text layer is deg
 
 ## The Field Strength and Its Content
 
-Write the field as one complex three-vector with the medium's constants absorbed,
+Write the field as one complex three-vector, with the medium's constants explicit,
 
 $$
-\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
+\tilde F = i\,\vec E - c\,\vec B,
 \qquad
 c = \frac{1}{\sqrt{\epsilon\mu}},
 \qquad
 \tau = r'_{t} .
 $$
 
-The programme writes the same field as the dual $-i\tilde F = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H$; the two differ by the central factor $-i$, and no separate symbol is used for the dual.
+The programme writes the same field as the dual $-i\tilde F = \vec E + ic\,\vec B$; the two differ by the central factor $-i$, and no separate symbol is used for the dual.
 
-**One normalisation, stated once.** The programme's field absorbs the square root of the permittivity, and that absorption is what makes its square an energy density. The corpus's own field strength in the other articles is the programme's divided by the square root of the permittivity, a constant factor in a homogeneous medium that carries no physics. This article keeps the programme's normalisation throughout, because every formula it reports — the combined charge and current, the stress tensors, the momentum densities, the wave table — is stated in it, and rewriting them would report a different system from the source's. A reader who moves between this article and the Maxwell article should carry that one constant with him.
+**The programme's own normalisation, and why it is not kept here.** The source absorbs the square root of the permittivity into the field, as a constant of the medium, so that the modulus squared of its field is directly the energy density. That choice costs a half power of a base unit in every display: the source's electric term has the dimension of a square root of an energy density, and no measurement returns such a number. The corpus's field strength, $i\vec E - c\vec B$, is the source's divided by that constant in a homogeneous medium, and every formula below is reported in it. Where the source's formula is quadratic in the field the constant appears as the permittivity or its reciprocal and is displayed; where it is linear in the charge or current it enters as one common factor on both sides of an equation and cancels, which is why the charge, the current, the stress pseudotensor and the momentum densities below carry no medium factor at all.
 
 The symmetrized Maxwell system for this object is one complex equation and one complex scalar equation,
 
 $$
 \boxed{\;\partial/\partial \tau \tilde F + i\,\mathrm{rot}\,\tilde F + i\,\vec J = 0,
 \qquad
-\rho = -i\,\mathrm{div}\,\tilde F = \frac{\rho_E}{\sqrt{\epsilon}} - i\,\frac{\rho_H}{\sqrt{\mu}},
+\rho = -i\,\mathrm{div}\,\tilde F = \frac{\rho_E}{\epsilon} - i\,c\,\rho_H,
 \qquad
-\vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H\;}
+\vec J = Z\,\vec j_E - i\,\vec j_H,
+\qquad Z = \sqrt{\frac{\mu}{\epsilon}} = \frac{1}{c\epsilon}\;}
 $$
 
-Here $\rho_E = \epsilon\,\mathrm{div}\,\vec E$ and $\rho_H = -\mu\,\mathrm{div}\,\vec H$ are the electric and magnetic charge densities, and $\vec j_E$, $\vec j_H$ the corresponding currents. This is the corpus's Maxwell content in the source's sign convention: the corpus writes $\tilde\nabla_\Phi\tilde F = -Z\,\tilde J_{\Phi}$ with $Z=\sqrt{\mu/\epsilon}$ the impedance of the medium, and the present equation is the same pair in the programme's normalisation, with the combined current $\vec J$ and the source's overall sign. The two conventions must not be mixed.
+Here $\rho_E = \epsilon\,\mathrm{div}\,\vec E$ and $\rho_H = -\mu\,\mathrm{div}\,\vec H$ are the electric and magnetic charge densities, and $\vec j_E$, $\vec j_H$ the corresponding currents. This is the corpus's Maxwell content in the source's sign convention: the corpus writes $\tilde\nabla_\Phi\tilde F = -Z\,\tilde J_{\Phi}$ with $Z=\sqrt{\mu/\epsilon}$ the impedance of the medium, and the present equation is that same pair, with the combined charge and current in place of the corpus's four-current and the source's overall sign. Each term of $\rho$ carries the dimension of $\tilde F$ over a length and each term of $\vec J$ the same, with no half power anywhere: $c\rho_H$ and $\rho_E/\epsilon$ agree, and $Z\vec j_E$ and $\vec j_H$ agree. The two conventions must not be mixed.
 
 The energy density and the energy flux are read off $\tilde F$ directly,
 
 $$
-W = \tfrac{1}{2}\,\|\tilde F\|^2 = \tfrac{1}{2}\left(\epsilon\,\|\vec E\|^2 + \mu\,\|\vec H\|^2\right),
+W = \tfrac{\epsilon}{2}\,\|\tilde F\|^2 = \tfrac{1}{2}\left(\epsilon\,\|\vec E\|^2 + \mu\,\|\vec H\|^2\right),
 \qquad
-\vec P = \tfrac{1}{2}\,i\,\tilde F\times\tilde F^* = c^{-1}\,\vec E\times\vec H,
+\vec P = \tfrac{c\epsilon}{2}\,i\,\tilde F\times\tilde F^* = c^{-1}\,\vec E\times\vec H,
 $$
 
-because the square of the field has the dimensions of energy density — which is why the source calls it an **energetic** field. The retarded solution and the shock-inclusive Cauchy theory are the Maxwell article's and are not repeated here.
+where $\|\tilde F\|^2 = \|\vec E\|^2 + c^2\|\vec B\|^2$ is the sum of the squared moduli of the three components. The modulus squared of the field is not an energy density by itself; multiplied by the permittivity it is one, and that product is what the source means when it calls the field **energetic**. The constant is displayed rather than absorbed into the field, which is the whole of the difference between the two normalisations. The retarded solution and the shock-inclusive Cauchy theory are the Maxwell article's and are not repeated here.
 
-**A notational warning about the star, because the source uses it two ways.** The source's involution is defined on the algebra by $F^* = \bar f - \bar F$, and the elements with $F^* = F$ — real scalar part, purely imaginary vector part — are what it calls **$*$-unitary**; they are exactly the elements $f_1 + iF_2$ of the corpus's Hermitian subspace $\mathbb{B}_{\Psi}$. So the source's star is the corpus's Hermitian conjugation ${}^{*}$, **not** the corpus's $\bar{\tilde Q}$, which conjugates the coefficients alone; the two agree only on fields with real scalar and vector parts. The energy and Poynting display above, however, uses the star for the coefficient conjugate, $\tilde F^* = -i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, and on a field with vanishing scalar part the two differ by a sign. Consequently the source's printed product identity for the energy–momentum, $\tilde\Pi_{\mathrm{id}} = \tfrac12(i\bar{\tilde F})\circ(-i\tilde F) = \tfrac12\bar{\tilde F}\circ\tilde F = W + i\vec P$, does not close under either reading: recomputed from the product rule, the paper's own conjugation gives $W - i\vec P$ and the coefficient conjugation of its energy display gives $-W + i\vec P$. The last two expressions, $\tfrac12(\bar{\tilde F},\tilde F) = W$ and $\tfrac12[\bar{\tilde F},\tilde F] = i\vec P$, are each correct, so the printed $W + i\vec P$ is right as a statement about the energy density and the flux separately; what fails is the chain that writes them as one product. The corpus keeps the energy display's convention and states $W$ and $\vec P$ directly.
+**A notational warning about the star, because the source uses it two ways.** The source's involution is defined on the algebra by $F^* = \bar f - \bar F$, and the elements with $F^* = F$ — real scalar part, purely imaginary vector part — are what it calls **$*$-unitary**; they are exactly the elements $f_1 + iF_2$ of the corpus's Hermitian subspace $\mathbb{B}_{\Psi}$. So the source's star is the corpus's Hermitian conjugation ${}^{*}$, **not** the corpus's $\bar{\tilde Q}$, which conjugates the coefficients alone; the two agree only on fields with real scalar and vector parts. The energy and Poynting display above, however, uses the star for the coefficient conjugate, $\tilde F^* = -i\,\vec E - c\,\vec B$, and on a field with vanishing scalar part the two differ by a sign. Consequently the source's printed product identity for the energy–momentum, $\tilde\Pi_{\mathrm{id}} = \tfrac12(i\bar{\tilde F})\circ(-i\tilde F) = \tfrac12\bar{\tilde F}\circ\tilde F = W + i\vec P$, does not close under either reading. Recomputed from the product rule in the field above, $\tfrac12\bar{\tilde F}\circ\tilde F = -\tfrac12\|\tilde F\|^2 + \tfrac12\bar{\tilde F}\times\tilde F = -\epsilon^{-1}W + i\epsilon^{-1}\vec P$: the scalar part comes out with the sign opposite to the printed one and the vector part as printed. In the source's own normalisation the same computation gives $-W + i\vec P$, so the discrepancy is not an artefact of the normalisation. The two pieces separately, $\tfrac12(\bar{\tilde F},\tilde F) = -\epsilon^{-1}W$ and $\tfrac12[\bar{\tilde F},\tilde F] = i\epsilon^{-1}\vec P$, are each right up to the overall factor, so the printed $W + i\vec P$ is correct as a statement about $W$ and $\vec P$ separately; what fails is the chain that writes them as one product. The corpus states $W$ and $\vec P$ from the display above and does not use the chain.
 
 ## The Magnetic-Charge–Mass Hypothesis
 
@@ -131,6 +132,8 @@ This is verified by expanding the product in the algebra; the scalar equation is
 
 ### The free source in components and as a spinor
 
+**A convention that has to be named here, because it is a unit choice and not a symmetry.** The programme's $\tau$ is the length $ct$, and its operators $D^\pm = \partial/\partial\tau \pm i\nabla$ put the time derivative and the spatial derivative on the same footing. That is the statement $c = 1$, with length and time measured in the same unit; it is why the source can write a time derivative of a volume density beside a divergence of a flux, in the vector equation above as much as in the pair below, and a relaxation law with no factor between them. In SI the same two equations do not carry the same $c$: the continuity equation reads $c\,\partial/\partial r'_t\,\rho_E + \mathrm{div}\,\vec j_E = 0$, the factor sitting on the time derivative, while the relaxation pair below closes as printed with $\partial/\partial r'_t$ a plain length derivative. The two cannot both hold under one reading of $\partial/\partial r'_t$, and that is exactly what the convention hides. The corpus keeps the source's displays in this block, marked as such, rather than silently inserting a $c$ in one line and not in the next. Nothing else in this article is written this way: the field strength, the charge, the current, the energy density, the flux, the stress pseudotensor and the wave table all carry their medium constants explicitly.
+
 The free first-law equation can be split into its real electric and gravimagnetic parts, and the source also writes its general solution as a spinor. The split gives the four equations
 
 $$
@@ -140,9 +143,9 @@ $$
 $$
 
 $$
-\partial/\partial \tau\vec j_E = \sqrt{\epsilon/\mu}\;\mathrm{rot}\,\vec j_H - c\,\mathrm{grad}\,\rho_E,
+\partial/\partial \tau\vec j_E = Z^{-1}\,\mathrm{rot}\,\vec j_H - c\,\mathrm{grad}\,\rho_E,
 \qquad
-\partial/\partial \tau\vec j_H = -\sqrt{\mu/\epsilon}\;\mathrm{rot}\,\vec j_E - c\,\mathrm{grad}\,\rho_H .
+\partial/\partial \tau\vec j_H = -Z\,\mathrm{rot}\,\vec j_E - c\,\mathrm{grad}\,\rho_H ,
 $$
 
 The first pair says that in a free field the electric and the gravimagnetic charge are separately conserved; the second says that each current is driven by the curl of the *other* current and by the gradient of its own charge. Both pairs were checked against the expansion of $D^-\tilde J_{\Phi,\mathrm{eg}}=0$, with residuals at machine precision ($5\times10^{-16}$).
@@ -434,8 +437,8 @@ The second is the integrated form of the field equation: the field in a volume i
 Integrating the second law over a fixed volume gives the momentum law. Write $m_{D^-}(r'_t)$ and $ϙ_{D^-}(r'_t)$ for the total gravimagnetic (mass) and electric charge in $D^-$. Using the divergence theorem, and taking the two field values on the right at a fixed point of $D^-$ by the mean-value theorem,
 
 $$
-\kappa\sqrt{\epsilon}\,\partial/\partial \tau\!\int_{D^-}\!\vec j_H\,dV
-+ \kappa\!\int_{\partial D^-}\!\Big(\frac{\rho_H}{\sqrt{\mu}}\,\vec w + \sqrt{\mu}\,(\vec w,\vec j_E)\Big)dS(r_x)
+\kappa\,\partial/\partial \tau\!\int_{D^-}\!\vec j_H\,dV
++ \kappa\!\int_{\partial D^-}\!\Big(c\,\rho_H\,\vec w + Z\,(\vec w,\vec j_E)\Big)dS(r_x)
 = ϙ_{D^-}\vec E_2 + m_{D^-}\vec H_2
 + \int_{D^-}\!\big(\vec j_E\times\vec B_2 - \vec j_H\times\vec D_2\big)dV .
 $$
@@ -449,11 +452,13 @@ The corpus's own conserved currents and their integral forms are in *Stress–En
 The 2009 paper reads its own second law as a momentum balance of a continuum. It introduces a **stress pseudotensor** for each half of the field,
 
 $$
-\sigma^{H}_{i\imath} = -\,\kappa\,\frac{\rho_H}{\sqrt{\mu}}\,\delta_{i\imath} + \sqrt{\mu}\,\vec j^E_l\,\epsilon_{i\imath l},
+\sigma^{H}_{i\imath} = \kappa\,(\mathrm{Im}\,\rho)\,\delta_{i\imath} + (\mathrm{Re}\,\vec J)_l\,\epsilon_{i\imath l},
 \qquad
-\sigma^{E}_{i\imath} = -\,\kappa\,\frac{\rho_E}{\sqrt{\epsilon}}\,\delta_{i\imath} - \sqrt{\epsilon}\,\vec j^H_l\,\epsilon_{i\imath l},
+\sigma^{E}_{i\imath} = -\,\kappa\,(\mathrm{Re}\,\rho)\,\delta_{i\imath} + (\mathrm{Im}\,\vec J)_l\,\epsilon_{i\imath l},
 \qquad i,k,l = 1,2,3,
 $$
+
+where $\mathrm{Im}\,\rho = -c\rho_H$ and $\mathrm{Re}\,\vec J = Z\vec j_E$, so each entry is a product of one charge or current with the coupling $\kappa$ and no half power survives; in the source's normalisation the same object carries one extra constant factor, the one that links the two fields.
 
 and writes the second law in the shape the momentum equation of a continuous medium has,
 
@@ -463,17 +468,17 @@ $$
 \frac{\partial \sigma^{E}_{i\imath}}{\partial x_{\imath}} + F^{E}_i = \partial/\partial \tau \Pi^{E}_i,
 $$
 
-with the density of mass forces $F^H$ the four-term half of the power–force biquaternion, a further resistance term when the scalar $a$ is present, and the momentum densities $\Pi^H = \kappa\sqrt{\epsilon}\,\vec j_H$, $\Pi^E = \kappa\sqrt{\mu}\,\vec j_E$ as the second-law component form normalises them. The 2009 display prints a different coefficient on the right side, one of the discrepancies recorded in this article, and the corpus carries the second law's own normalization. Two structural features are worth recording, and they are the reason the object is called a *pseudotensor*.
+with the density of mass forces $F^H$ the four-term half of the power–force biquaternion, a further resistance term when the scalar $a$ is present, and the momentum densities $\Pi^H = -\kappa\,\mathrm{Im}\,\vec J = \kappa\,\vec j_H$, $\Pi^E = \kappa\,\mathrm{Re}\,\vec J = \kappa Z\,\vec j_E$ as the second-law component form normalises them. With these entries each term of the momentum law is homogeneous: $\sigma$ carries the dimension of a squared field, its divergence and $\partial\Pi/\partial\tau$ that of a squared field over a length, and the force term the same. The object is a stress only up to the permittivity — a stress is a squared field multiplied by $\epsilon$ — and no $\epsilon$ appears in it, because its entries are built from the charges and currents rather than from the field strengths, whereas the energy density above does carry $\epsilon$. That asymmetry is the source's and is recorded, not repaired. The 2009 display prints a different coefficient on the right side, one of the discrepancies recorded in this article, and the corpus carries the second law's own normalization. Two structural features are worth recording, and they are the reason the object is called a *pseudotensor*.
 
 The first is that it is **not symmetric**. The isotropic term is symmetric, and the antisymmetric part is entirely the current term,
 
 $$
-\tfrac{1}{2}\left(\sigma^{H}_{i\imath} - \sigma^{H}_{\imath i}\right) = \sqrt{\mu}\,\vec j^E_l\,\epsilon_{i\imath l},
+\tfrac{1}{2}\left(\sigma^{H}_{i\imath} - \sigma^{H}_{\imath i}\right) = (\mathrm{Re}\,\vec J)_l\,\epsilon_{i\imath l},
 $$
 
 so the asymmetry is dual to a vector: the paper records only that the object is the analogue of the stress tensor of a liquid and that the traditional index symmetry $\sigma_{i\imath} \ne \sigma_{\imath i}$ fails, and the continuum-mechanics interpretation of the antisymmetric part is the corpus's — in a medium, an antisymmetric stress is the **torque (couple) density**, and a pseudotensor of this shape is the stress of a medium with couple stresses rather than of a simple fluid. The corpus's own electromagnetic stress–energy tensor, by contrast, is the *improved* one and is symmetric and traceless, so this object is not that tensor and cannot be obtained from it: it is a medium stress built from the charges and currents rather than from the field strengths, and the antisymmetric piece is what the improvement discards.
 
-The second is that the trace is fixed by the charge, $\mathrm{tr}\,\sigma^H = -3\kappa\rho_H/\sqrt{\mu}$, so the isotropic term is a hydrostatic pressure proportional to the mass density — the pressure interpretation of a gravitational potential rather than a stress of the field.
+The second is that the trace is fixed by the charge, $\mathrm{tr}\,\sigma^H = 3\kappa\,\mathrm{Im}\,\rho = -3\kappa c\,\rho_H$, so the isotropic term reads as a hydrostatic pressure proportional to the mass density — the pressure interpretation of a gravitational potential rather than a stress of the field.
 
 **The coefficients are not carried.** The rewrite as a divergence is a *form*, and it does not reproduce the component form of the second law that the same paper prints a few sections earlier: recomputed term by term, the divergence form and the component form differ in the sign of the curl term and in the placement of $\kappa$, so no normalization of the two pseudotensors makes the displayed line an identity. What the corpus records is therefore the structure — a two-term medium stress, an antisymmetric piece dual to the electric current, a hydrostatic piece proportional to the mass density, and a momentum balance in continuum form — and not the coefficients, which is also the status of the force split it is built from.
 
@@ -568,14 +573,14 @@ $$
 
 together with the two transverse relations. The normal (longitudinal) components of the electric and magnetic jumps are therefore exactly the jumps of the two real parts of the scalar field; when $[\alpha]=0$ both vanish and the fronts are transverse, which is the classical Maxwell case. The source reads this as the statement that the scalar field "describes the property of attraction–resistance of the EGM-field to the movement of external charges and currents", and the corpus keeps the name **attraction–resistance field** for it. This is the mirror of the $\tilde J_{\Phi,\mathrm{eg}}$-fronts: those are longitudinal when the charge jump is non-zero, and the field fronts are longitudinal when the scalar-field jump is non-zero.
 
-At the level of smooth solutions the programme constructs the corresponding waves from scalar plane potentials. Take $\theta_{\mathrm{rpd},j} = f(\upsilon_{\mathrm{rpd}})$ with $\upsilon_{\mathrm{rpd}} = (2\pi\vec\nu_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega\tau$ and $\|2\pi\vec\nu_\Phi\| = \omega$, and $A = D^-\theta_{\mathrm{rpd},j}$; the four modes are
+At the level of smooth solutions the programme constructs the corresponding waves from scalar plane potentials. Take $\theta_{\mathrm{rpd},j} = f(\upsilon_{\mathrm{rpd}})$ with $\upsilon_{\mathrm{rpd}} = (2\pi\vec\nu_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega\tau$ and $\|2\pi\vec\nu_\Phi\| = \omega$, and $A = D^-\theta_{\mathrm{rpd},j}$. The amplitude of $f$ is normalised so that the entries carry no half power of the medium; in the source's amplitude the entries below are larger by the square root of the permittivity. The four modes are
 
 | Mode | Potential | $(\vec E,\vec\nu_\Phi)$ | $(\vec H,\vec\nu_\Phi)$ |
 |---|---|---|---|
-| Longitudinal magnetic | $f$ | $0$ | $-\|\vec\nu_\Phi\|^2 \frac{df}{d\upsilon_{\mathrm{rpd}}}/\sqrt{\mu}$ |
-| Longitudinal electric | $if$ | $\|\vec\nu_\Phi\|^2 \frac{df}{d\upsilon_{\mathrm{rpd}}}/\sqrt{\epsilon}$ | $0$ |
-| Tesla's wave | $f \vec e_x$ | $-\omega k_1 \frac{df}{d\upsilon_{\mathrm{rpd}}}/\sqrt{\epsilon}$ | $0$ |
-| Torsion wave | $if \vec e_x$ | $0$ | $-\omega k_1 \frac{df}{d\upsilon_{\mathrm{rpd}}}/\sqrt{\mu}$ |
+| Longitudinal magnetic | $f$ | $0$ | $-Z^{-1}\|\vec\nu_\Phi\|^2 \frac{df}{d\upsilon_{\mathrm{rpd}}}$ |
+| Longitudinal electric | $if$ | $\|\vec\nu_\Phi\|^2 \frac{df}{d\upsilon_{\mathrm{rpd}}}$ | $0$ |
+| Tesla's wave | $f \vec e_x$ | $-\omega k_1 \frac{df}{d\upsilon_{\mathrm{rpd}}}$ | $0$ |
+| Torsion wave | $if \vec e_x$ | $0$ | $-Z^{-1}\omega k_1 \frac{df}{d\upsilon_{\mathrm{rpd}}}$ |
 
 the first two being pure longitudinal electric and magnetic waves, and the last two the modes the source names after Etkin. Applying $D^-$ to the potential gives the field directly; the construction was checked, and the longitudinal properties of all four modes follow from it with residuals at machine precision, as do the exact components of the Tesla mode. The source attributes the physical longitudinal electromagnetic waves to Hvorostenko and to Etkin and offers the modes as their EGM explanation; the corpus records the construction and the attribution. One printed result does not reproduce: the torsion-mode components in the source disagree with the source's own construction in one sign and one omitted term, while the other three modes reproduce exactly, so a reader returning to the PDF should confirm that one line. The exact derived form is $A = \frac{df}{d\upsilon_{\mathrm{rpd}}}(-k_1 - i\omega \vec e_x + k_3 \vec e_y - k_2 \vec e_z)$.
 
@@ -606,10 +611,10 @@ The corpus's relation to the programme is the same as to every external completi
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field strength; the programme's field is the dual $-i\tilde F$ |
+| $\tilde F = i\,\vec E - c\,\vec B$ | Field strength; the programme's field is the dual $-i\tilde F = \vec E + ic\vec B$ |
 | $\tau = r'_{t}$ | Scaled time of the programme's convention |
-| $\vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H$ | Combined complex current |
-| $\rho = \rho_E/\sqrt{\epsilon} - i\,\rho_H/\sqrt{\mu}$ | Combined complex charge density |
+| $\vec J = Z\,\vec j_E - i\,\vec j_H$ | Combined complex current |
+| $\rho = \rho_E/\epsilon - i\,c\,\rho_H$ | Combined complex charge density |
 | $\tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion |
 | $D^\pm = \partial/\partial \tau \pm i\nabla$ | Mutual complex gradients |
 | $\Box_\Phi = D^-D^+ = D^+D^-$ | Wave operator of the programme |

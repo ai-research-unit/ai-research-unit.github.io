@@ -4,7 +4,7 @@
 
 This is an exercise in the electromagnetism series. It constructs the **electromagnetic energy–momentum tensor** from the field-strength biquaternion $\tilde F$, and it uses the framework and the notation of the companion article *The Field-Strength Biquaternion and Its Invariants* together with its parent, *Maxwell's Equations in the Biquaternionic Formulation*. Those two articles are the parents of this exercise: they fix the field strength, the medium conventions, and the Hermitian form. What follows applies them. The three universal articles — *Introduction to the Biquaternion Universe*, *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and *The Informational Sector: States, Observables and Probability* — supply the algebra and the fixed-point subspace names, which are inherited without change.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_{\imath}^2 = -e_t$ and the product rule $\vec e_{\jmath} \vec e_{\imath} = -\delta_{\jmath\imath}e_t + \epsilon_{\jmath\imath k}\vec e_{\imath}$; the scalar imaginary $i$ with $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ and the Hermitian subspace $\mathbb{B}_{\Psi}$, with the material reading $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$ on $\mathbb{B}_{\Phi}$; the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, and the Hermitian conjugate ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ with $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$; the reduction formula, for a state $\tilde{Ϛ}_{\Psi}$ and an observable $\tilde H_\Psi$, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$; the field-strength biquaternion $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the energy density $W$; the Poynting vector $\vec S = \vec E\times\vec H$; and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v$ is reserved for particle and frame velocities.
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_{\imath}^2 = -e_t$ and the product rule $\vec e_{\jmath} \vec e_{\imath} = -\delta_{\jmath\imath}e_t + \epsilon_{\jmath\imath k}\vec e_{\imath}$; the scalar imaginary $i$ with $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ and the Hermitian subspace $\mathbb{B}_{\Psi}$, with the material reading $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$ on $\mathbb{B}_{\Phi}$; the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, and the Hermitian conjugate ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ with $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$; the reduction formula, for a state $\tilde{Ϛ}_{\Psi}$ and an observable $\tilde H_\Psi$, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$; the field-strength biquaternion $\tilde F = i\vec E - c\vec B$; the energy density $W$; the Poynting vector $\vec S = \vec E\times\vec H$; and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v$ is reserved for particle and frame velocities.
 
 **What is to be shown.** (1) Why the four-component biquaternionic energy–momentum cannot be the energy–momentum *tensor*, and why the real form $\tilde\Sigma_{\mathrm{re}} = W + \frac{1}{c}\vec S$ fails the conservation test that the Hermitian form $\frac{1}{2}\tilde F\tilde F^{*}$ passes. (2) The bilinear construction of the rank-two tensor from $\tilde F$ and the four units. (3) The tracelessness of $T_{\imath\jmath}$. (4) The conservation law $\partial/\partial R_{\imath} T_{\imath\jmath} = -f_{\jmath}$. (5) The rank-one form of $T_{\imath\jmath}$ for a plane wave. Each problem is stated and solved in full; the value of an exercise is in the solutions.
 
@@ -26,31 +26,31 @@ The natural pair of directions is supplied by the four units $e_t, \vec e_x, \ve
 
 **Statement.** (a) Recompute the Hermitian form $\tilde F\tilde F^{*}$ in terms of the energy density $W$ and the Poynting vector $\vec S$. (b) Compare it with the real form $\tilde\Sigma_{\mathrm{re}} = W + \frac{1}{c}\vec S$ and locate the difference. (c) For the real form, compute the scalar part of $\tilde\nabla_\Phi\tilde\Sigma_{\mathrm{re}}$ for general fields and check whether the equation $\tilde\nabla_\Phi\tilde\Sigma_{\mathrm{re}} = -\tilde{\mathcal F}$ expands to the Poynting theorem $\partial/\partial r'_t W + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$. (d) Identify the four-component object whose scalar divergence does give the energy law.
 
-**Solution (a).** With $\vec F = \tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ a pure vector, the quaternion conjugate is $\tilde F^{\natural} = -\vec F$ and the Hermitian conjugate is
+**Solution (a).** With $\vec F = \tilde F = i\vec E - c\vec B$ a pure vector, the quaternion conjugate is $\tilde F^{\natural} = -\vec F$ and the Hermitian conjugate is
 $$
-\tilde F^{*} = \bar{\tilde F}^{\,*} = (-\vec F)^* = -\vec F^* = i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H,
+\tilde F^{*} = \bar{\tilde F}^{\,*} = (-\vec F)^* = -\vec F^* = i\vec E + c\vec B,
 $$
-using that $\vec E$ and $\vec H$ are real. For two pure vectors, $\vec F\vec G = -\vec F\cdot\vec G + \vec F\times\vec G$, so
+using that $\vec E$ and $\vec B$ are real. For two pure vectors, $\vec F\vec G = -\vec F\cdot\vec G + \vec F\times\vec G$, so
 $$
 \tilde F\tilde F^{*} = -\vec F\cdot\tilde F^{*} + \vec F\times\tilde F^{*} .
 $$
 The dot product is
 $$
-\vec F\cdot\tilde F^{*} = (i\sqrt{\epsilon})^2\vec E^2 - (\sqrt{\mu})^2\vec H^2 + i\sqrt{\epsilon\mu}\left(\vec E\cdot\vec H - \vec H\cdot\vec E\right) = -\epsilon\,\vec E^2 - \mu\,\vec H^2 = -2W,
+\vec F\cdot\tilde F^{*} = (i)^2\vec E^2 - c^2\vec B^2 + ic\left(\vec E\cdot\vec B - \vec B\cdot\vec E\right) = -\,\vec E^2 - c^2\vec B^2 = -\frac{2W}{\epsilon},
 $$
 and the cross product is
 $$
-\vec F\times\tilde F^{*} = (i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H)\times(i\sqrt{\epsilon}\vec E + \sqrt{\mu}\vec H) = 2i\sqrt{\epsilon\mu}\,\vec E\times\vec H = \frac{2i}{c}\,\vec S,
+\vec F\times\tilde F^{*} = (i\vec E - c\vec B)\times(i\vec E + c\vec B) = 2ic\,\vec E\times\vec B = \frac{2i}{c\epsilon}\,\vec S,
 $$
-the $\vec E\times\vec E$ and $\vec H\times\vec H$ terms vanishing and the two mixed terms adding. Therefore
+the $\vec E\times\vec E$ and $\vec B\times\vec B$ terms vanishing and the two mixed terms adding, with the last step from $\vec S = \vec E\times\vec B/\mu$ and $c^2\epsilon\mu = 1$. Therefore
 $$
-\boxed{\;\tilde F\tilde F^{*} = 2W\,e_t + \frac{2i}{c}\,\vec S\;}
+\boxed{\;\tilde F\tilde F^{*} = \frac{2W}{\epsilon}\,e_t + \frac{2i}{c\epsilon}\,\vec S\;}
 $$
 with
 $$
 W = \frac{1}{2}\left(\epsilon\,\vec E^2 + \mu\,\vec H^2\right), \qquad \vec S = \vec E\times\vec H.
 $$
-This is an element of $\mathbb{B}_{\Psi}$: its scalar part $2W$ is real and its vector part $\frac{2i}{c}\vec S$ is purely imaginary. Its scalar part is twice the energy density, and its vector part carries the Poynting vector. This agrees with the parent article *The Field-Strength Biquaternion and Its Invariants*, whose contrast between the biquaternion norm and the Hermitian form gives $\tilde F\tilde F^{*} = 2We_t + \frac{2i}{c}\vec S$ and $\tilde F^{*}\tilde F = 2We_t - \frac{2i}{c}\vec S$.
+This is an element of $\mathbb{B}_{\Psi}$: its scalar part $2W/\epsilon$ is real and its vector part $\frac{2i}{c\epsilon}\vec S$ is purely imaginary. The permittivity appears exactly once, because the modulus squared of the field is a squared field and not an energy density; scaling by $\epsilon/2$ gives the energy–momentum biquaternion $\tilde\Sigma_{\Psi} = \frac{\epsilon}{2}\tilde F\tilde F^{*} = We_t + \frac{i}{c}\vec S$, whose scalar part is the energy density and whose vector part carries the Poynting vector. This agrees with the parent article *The Field-Strength Biquaternion and Its Invariants*, whose contrast between the biquaternion norm and the Hermitian form gives $\tilde F\tilde F^{*} = \frac{2W}{\epsilon}e_t + \frac{2i}{c\epsilon}\vec S$ and $\tilde F^{*}\tilde F = \frac{2W}{\epsilon}e_t - \frac{2i}{c\epsilon}\vec S$.
 
 **Solution (b).** The parents state the biquaternionic energy–momentum in the Hermitian form of part (a). The form it is easily miswritten in is the real form
 $$
@@ -58,7 +58,7 @@ $$
 $$
 with a **real** scalar part and a **real** vector part — an element of the quaternion subspace $\mathbb{H}_\mathbb{B}$. The comparison with part (a) shows that the two differ by a factor of $i$ on the Poynting part:
 $$
-\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\,\vec S \;\in\;\mathbb{B}_{\Psi}, \qquad \tilde\Sigma_{\mathrm{re}} = W + \frac{1}{c}\,\vec S \;\in\;\mathbb{H}_\mathbb{B}.
+\frac{\epsilon}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\,\vec S \;\in\;\mathbb{B}_{\Psi}, \qquad \tilde\Sigma_{\mathrm{re}} = W + \frac{1}{c}\,\vec S \;\in\;\mathbb{H}_\mathbb{B}.
 $$
 Only one of them can be the object whose biquaternionic gradient is the power–force density. The rest of this problem tests which. The two glyphs share the letter and differ in the label: $\tilde\Sigma_{\Psi}$ is the Hermitian element, its subscript naming the sector, and $\tilde\Sigma_{\mathrm{re}}$ is the real quaternion, its label naming the form.
 
@@ -93,9 +93,9 @@ $$
 $$
 using $\partial/\partial R_z\,S_z = c\,\partial/\partial R_z\,W = -\partial/\partial r'_t\,W$. This is nonzero whenever $\cos(kz-\omega r'_t/c)\sin(kz-\omega r'_t/c)\neq 0$. A conservation law that fails on a free plane wave is not a conservation law for the field. **For the real form, the equation $\tilde\nabla_\Phi\tilde\Sigma_{\mathrm{re}} = -\tilde{\mathcal F}$ does not expand to the Poynting theorem; the real form is not the biquaternionic energy–momentum.** The failure is a factor $i$ on the Poynting part, together with the fact — shown in Problem 2 — that a four-component object cannot carry the spatial stress at all.
 
-**Solution (d).** The object whose scalar divergence does give the energy law is the Hermitian form itself, halved:
+**Solution (d).** The object whose scalar divergence does give the energy law is the Hermitian form itself, scaled by $\epsilon/2$:
 $$
-\tilde\Sigma_{\Psi} = \frac{1}{2}\tilde F\tilde F^{*} = W\,e_t + \frac{i}{c}\,\vec S \;\in\;\mathbb{B}_{\Psi} .
+\tilde\Sigma_{\Psi} = \frac{\epsilon}{2}\tilde F\tilde F^{*} = W\,e_t + \frac{i}{c}\,\vec S \;\in\;\mathbb{B}_{\Psi} .
 $$
 For it,
 $$
@@ -107,7 +107,7 @@ using the Poynting theorem for the last equality. The factor $i$ is now uniform,
 
 **Statement.** With $e_t, \vec e_x, \vec e_y, \vec e_z$ the four units, the same in every frame, and $\tilde{Q} = \sum_{\imath} Q_{\imath} e_{\imath}$ a four-vector read on the material coordinate $Q_t=i q'_t$, $Q_{\imath}=q_{\imath}$, so that the $Q_{\imath}$ are its components, define the **ordered pair**
 $$
-\Pi_{\imath\jmath} = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,e_{\imath}\,\tilde F^{*}\,e_{\jmath}\right).
+\Pi_{\imath\jmath} = \frac{\epsilon}{2}\,\mathrm{Sc}\!\left(\tilde F\,e_{\imath}\,\tilde F^{*}\,e_{\jmath}\right).
 $$
 The first index is the unit inserted between the field and its conjugate — the **row** — and the second is the unit multiplied on the right — the **column**. A time slot carries one factor $i$ from $Q_t=i q'_t$, and two time slots carry $i^2=-1$; the components below are written with it. The pair is ordered, and $\Pi_{\jmath\imath}\ne\Pi_{\imath\jmath}$ in general. For a fixed column the whole content is the four components $\Pi_{\imath\jmath}$. The symmetric tensor is the same object with its time column multiplied by $i^2$,
 $$
@@ -127,36 +127,36 @@ $$
 $$
 is the Maxwell stress tensor. Then show that $T_{\imath\jmath}$, the same bilinear with its time column multiplied by $i^2=-1$, is symmetric.
 
-**Solution.** Two identities are needed. The first is the Hermitian form of Problem 1,
+**Solution.** Two identities are needed. The first is the Hermitian form of Problem 1, scaled by $\epsilon/2$,
 $$
-\tilde F\tilde F^{*} = 2W\,e_t + \frac{2i}{c}\,\vec S.
+\frac{\epsilon}{2}\tilde F\tilde F^{*} = W\,e_t + \frac{i}{c}\,\vec S.
 $$
-The second is the same bilinear with one unit inserted between the field and its conjugate. Because $\vec F\vec G = -\vec F\cdot\vec G + \vec F\times\vec G$ for pure vectors, and because $\vec e_{\jmath}\tilde F^{*} = -F^{*}_{\jmath} + \vec e_{\jmath}\times\tilde F^{*}$ with $F^{*}_{\jmath} = i\sqrt{\epsilon}E_{\jmath} + \sqrt{\mu}H_{\jmath}$, one has
+The second is the same bilinear with one unit inserted between the field and its conjugate. Because $\vec F\vec G = -\vec F\cdot\vec G + \vec F\times\vec G$ for pure vectors, and because $\vec e_{\jmath}\tilde F^{*} = -F^{*}_{\jmath} + \vec e_{\jmath}\times\tilde F^{*}$ with $F^{*}_{\jmath} = iE_{\jmath} + cB_{\jmath}$, one has
 $$
 \tilde F \vec e_{\jmath}\tilde F^{*} = -F^{*}_{\jmath}\,\vec F + \vec F\left(\vec e_{\jmath}\times\tilde F^{*}\right)
 = \underbrace{-\vec F\cdot\left(\vec e_{\jmath}\times\tilde F^{*}\right)}_{\text{scalar}} \;+\; \underbrace{\left[-F^{*}_{\jmath}\vec F + \vec F\times\left(\vec e_{\jmath}\times\tilde F^{*}\right)\right]}_{\text{vector}} .
 $$
-For the scalar part, $\vec F\cdot(\vec e_{\jmath}\times\tilde F^{*}) = \epsilon_{\jmath k\rho}F_\rho F^\dagger_{\imath} = -\epsilon_{\jmath k\rho}F_\rho F^*_{\imath}$. Writing $\epsilon_{\jmath k\rho}F_\rho F^*_{\imath} = i\,\epsilon_{\jmath k\rho}\mathrm{Im}(F_\rho F^*_{\imath})$ (the symmetric part is annihilated by $\epsilon_{\jmath k\rho}$), and using $\mathrm{Im}(F_\rho F^*_{\imath}) = \sqrt{\epsilon\mu}\,(H_\rho E_{\imath} - E_\rho H_{\imath}) = -\sqrt{\epsilon\mu}\,\epsilon_{\rho k\imath}S_{\imath}$ together with $\epsilon_{\jmath k\rho}\epsilon_{\rho k\imath} = -2\delta_{\jmath\imath}$, the scalar part is $+\frac{2i}{c}S_{\jmath}$. For the vector part, use the identity $\vec F\times(\vec e_{\jmath}\times\tilde F^{*}) = \vec e_{\jmath}(\vec F\cdot\tilde F^{*}) - \tilde F^{*}(\vec F\cdot \vec e_{\jmath}) = -2W\vec e_{\jmath} - F_{\jmath}\tilde F^{*}$, so its $\vec e_{\imath}$ component is
+For the scalar part, $\vec F\cdot(\vec e_{\jmath}\times\tilde F^{*}) = \epsilon_{\jmath k\rho}F_\rho F^\dagger_{\imath} = -\epsilon_{\jmath k\rho}F_\rho F^*_{\imath}$. Writing $\epsilon_{\jmath k\rho}F_\rho F^*_{\imath} = i\,\epsilon_{\jmath k\rho}\mathrm{Im}(F_\rho F^*_{\imath})$ (the symmetric part is annihilated by $\epsilon_{\jmath k\rho}$), and using $\mathrm{Im}(F_\rho F^*_{\imath}) = c\mu\,(E_\rho H_{\imath} - H_\rho E_{\imath}) = c\mu\,\epsilon_{\rho k\imath}S_{k}$ together with $\epsilon_{\jmath k\rho}\epsilon_{\rho k\imath} = -2\delta_{\jmath\imath}$, the scalar part is $+\frac{2i}{c\epsilon}S_{\jmath}$. For the vector part, use the identity $\vec F\times(\vec e_{\jmath}\times\tilde F^{*}) = \vec e_{\jmath}(\vec F\cdot\tilde F^{*}) - \tilde F^{*}(\vec F\cdot \vec e_{\jmath}) = -\frac{2W}{\epsilon}\vec e_{\jmath} - F_{\jmath}\tilde F^{*}$, so its $\vec e_{\imath}$ component is
 $$
--F^{*}_{\jmath} F_{\imath} - 2W\delta_{\jmath k} - F_{\jmath} F^\dagger_{\imath} = 2\,\mathrm{Re}\!\left(F_{\jmath} F^*_{\imath}\right) - 2W\delta_{\jmath k} = 2\left(\epsilon E_{\jmath} E_{\imath} + \mu H_{\jmath} H_{\imath} - W\delta_{\jmath k}\right) = 2\sigma_{\jmath k},
+-F^{*}_{\jmath} F_{\imath} - \frac{2W}{\epsilon}\delta_{\jmath k} - F_{\jmath} F^\dagger_{\imath} = 2\,\mathrm{Re}\!\left(F_{\jmath} F^*_{\imath}\right) - \frac{2W}{\epsilon}\delta_{\jmath k} = \frac{2}{\epsilon}\left(\epsilon E_{\jmath} E_{\imath} + \mu H_{\jmath} H_{\imath} - W\delta_{\jmath k}\right) = \frac{2}{\epsilon}\sigma_{\jmath k},
 $$
-using $F^{*} = -F^*$ and $\mathrm{Re}(F_{\jmath} F^*_{\imath}) = \epsilon E_{\jmath} E_{\imath} + \mu H_{\jmath} H_{\imath}$. Hence
+using $F^{*} = -F^*$ and $\mathrm{Re}(F_{\jmath} F^*_{\imath}) = E_{\jmath} E_{\imath} + c^2B_{\jmath} B_{\imath} = (\epsilon E_{\jmath} E_{\imath} + \mu H_{\jmath} H_{\imath})/\epsilon$. Hence
 $$
-\boxed{\;\tilde F \vec e_{\jmath}\tilde F^{*} = \frac{2i}{c}S_{\jmath}\,e_t + 2\sigma_{\jmath k}\,\vec e_{\imath}\;}.
+\boxed{\;\tilde F \vec e_{\jmath}\tilde F^{*} = \frac{2i}{c\epsilon}S_{\jmath}\,e_t + \frac{2}{\epsilon}\sigma_{\jmath k}\,\vec e_{\imath}\;}.
 $$
-Now multiply by $e_{\jmath}$ on the right and take the scalar part. For $\mu = 0$ the row is the time direction, so it carries one $i$, and two time slots carry $i^2$; with $\tilde Fe_t\tilde F^{*} = \tilde F\tilde F^{*} = 2We_t + \frac{2i}{c}\vec S$:
+Now multiply by $e_{\jmath}$ on the right and take the scalar part. For $\mu = 0$ the row is the time direction, so it carries one $i$, and two time slots carry $i^2$; with $\tilde Fe_t\tilde F^{*} = \tilde F\tilde F^{*} = \frac{2W}{\epsilon}e_t + \frac{2i}{c\epsilon}\vec S$, and with the factor $\epsilon/2$ carried by $\Pi$ cancelling the $1/\epsilon$ of each entry:
 $$
-\Pi_{00} = \frac{i^2}{2}\mathrm{Sc}\!\left(2We_t\,e_t\right) = -W,
+\Pi_{00} = \frac{\epsilon}{2}\cdot\frac{i^2}{\epsilon}\mathrm{Sc}\!\left(2We_t\,e_t\right) = \frac{i^2}{2}\cdot 2W = -W,
 $$
 $$
-\Pi_{0\jmath} = \frac{i}{2}\mathrm{Sc}\!\left(\frac{2i}{c}S_{\imath}\vec e_{\imath}\,\vec e_{\jmath}\right) = \frac{i}{2}\cdot\frac{2i}{c}S_{\imath}\left(-\delta_{k\jmath}\right) = \frac{1}{c}S_{\jmath},
+\Pi_{0\jmath} = \frac{\epsilon}{2}\cdot\frac{i}{\epsilon}\mathrm{Sc}\!\left(\frac{2i}{c}S_{\imath}\vec e_{\imath}\,\vec e_{\jmath}\right) = \frac{i}{2}\cdot\frac{2i}{c}S_{\imath}\left(-\delta_{k\jmath}\right) = \frac{1}{c}S_{\jmath},
 $$
 since $\mathrm{Sc}(\vec e_{\imath} \vec e_{\jmath}) = -\delta_{k\jmath}$. For the spatial rows, use the boxed identity: its scalar part meets the time column, which carries one $i$, and its vector part meets $e_{\imath}$, so
 $$
-\Pi_{\jmath0} = \frac{i}{2}\mathrm{Sc}\!\left(\frac{2i}{c}S_{\jmath} e_t\,e_t\right) = \frac{i^2}{c}S_{\jmath} = -\frac{1}{c}S_{\jmath},
+\Pi_{\jmath0} = \frac{\epsilon}{2}\cdot\frac{i}{\epsilon}\mathrm{Sc}\!\left(\frac{2i}{c}S_{\jmath} e_t\,e_t\right) = \frac{i^2}{c}S_{\jmath} = -\frac{1}{c}S_{\jmath},
 $$
 $$
-\Pi_{\jmath\imath} = \frac{1}{2}\mathrm{Sc}\!\left(2\sigma_{\jmath k}\vec e_{\imath}\,\vec e_{\imath}\right) = \sigma_{\jmath k}\,\mathrm{Sc}(\vec e_{\imath} \vec e_{\imath}) = -\sigma_{\jmath\imath}.
+\Pi_{\jmath\imath} = \frac{\epsilon}{2}\cdot\frac{1}{\epsilon}\mathrm{Sc}\!\left(2\sigma_{\jmath k}\vec e_{\imath}\,\vec e_{\imath}\right) = \sigma_{\jmath k}\,\mathrm{Sc}(\vec e_{\imath} \vec e_{\imath}) = -\sigma_{\jmath\imath}.
 $$
 Collecting,
 $$
@@ -285,7 +285,7 @@ reproduces the component table of Problem 2 up to the medium factors, and identi
 
 **5. Coupling to gravity and to the sector structure.** The parents identify the energy–momentum tensor as the source of the gravitational field, with the four-component $\tilde\Sigma_{\Psi}$ carrying its energy density and its energy flux. The source in general relativity is the rank-two tensor $T_{\imath\jmath}$, not the four-component $\tilde\Sigma_{\Psi}$; state precisely which components of $T_{\imath\jmath}$ are lost if $\tilde\Sigma_{\Psi}$ is used as the source, and whether the missing components are recoverable from the field equations. Then ask whether $T_{\imath\jmath}$ has a natural split under $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$, and whether that split carries the material/informational interpretation.
 
-**6. The complexified field.** Repeat the construction for a fully complexified $\tilde F$, with coefficients unrestricted in $\mathbb{C}$ rather than confined to the physical combination $i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$. Which of the statements — tracelessness, symmetry, conservation — survive, and what is the trace in the complexified case? (The parent notes that the projection onto $\mathbb{B}_{\Phi}$ reproduces the electromagnetic field; the question is what the extra components do to $T$.)
+**6. The complexified field.** Repeat the construction for a fully complexified $\tilde F$, with coefficients unrestricted in $\mathbb{C}$ rather than confined to the physical combination $i\vec E - c\vec B$. Which of the statements — tracelessness, symmetry, conservation — survive, and what is the trace in the complexified case? (The parent notes that the projection onto $\mathbb{B}_{\Phi}$ reproduces the electromagnetic field; the question is what the extra components do to $T$.)
 
 **7. The radiated flux and the self-interaction force.** For a field with sources, apply Gauss's theorem to $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} = -f_{\jmath}$ to show that the flux of energy–momentum through a closed 3-surface, $\left(c\,dP/dr'_t\right)(\Sigma) = \int_{{}^{3}\Sigma} T(d{}^{3}\Sigma)$, equals minus the four-volume integral of the force density, $\left(c\,dP/dr'_t\right)(\Sigma) = -\mathcal{Q}(\Omega)$. The step is formal for point charges, because $T$ is quadratic in the field and the product of the singular field with itself is undefined for distributions. Gsponer carries the calculation out in a Colombeau algebra of nonlinear generalized functions, obtains $\left(c\,dP/dr'_t\right)(\Sigma) = -\mathcal{Q}$ rigorously for an arbitrarily moving relativistic point charge, and derives the Lorentz–Dirac equation from it; the statement and its consequences are recorded in *Radiation from Accelerated Charges in Biquaternionic Form*.
 
@@ -328,7 +328,7 @@ The exercise also settles the form of the four-component *biquaternionic energy�
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $e_t, \vec e_x, \vec e_y, \vec e_z$ | The four units, the same in every frame; the material reading is $Q_t=i q'_t$, $Q_{\imath}=q_{\imath}$ |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
-| $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
+| $\tilde F = i\vec E - c\vec B$ | Field-strength biquaternion (pure vector) |
 | $\vec E, \vec H, \vec B = \mu\vec H$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Permittivity, permeability, speed of light in the medium |
 | $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ | Electromagnetic energy density |

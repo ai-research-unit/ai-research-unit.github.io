@@ -5,9 +5,9 @@
 *Maxwell's Equations in the Biquaternionic Formulation* writes the free field as one equation for one biquaternion,
 
 $$
-\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi ,
+\tilde\nabla_\Phi\tilde F=-Z\,\tilde J_\Phi ,
 \qquad
-\tilde F=\frac{1}{\sqrt{\mu}}\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr),
+\tilde F=c\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr),
 \qquad
 \tilde J_\Phi=ic\rho\,e_t+\vec J ,
 $$
@@ -18,7 +18,7 @@ Three results, and one of them is a warning.
 
 *First, the action is one term.* $S=\int\mathrm{d}^{4}r\,\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, with the field strength inside it, so that the potential enters only through $\tilde F$. That single placement is what makes the gauge orbit visible from the action rather than from the equation.
 
-*Second, the variation gives both halves of Maxwell.* Varying $\tilde A_\Phi$ gives $\tilde\nabla_\Phi\tilde F=0$ in the free case and $-\sqrt{\mu}\tilde J_\Phi$ once a matter action is added; the scalar part of the same equation is Gauss's law, and it is a constraint on the initial data and not an evolution equation.
+*Second, the variation gives both halves of Maxwell.* Varying $\tilde A_\Phi$ gives $\tilde\nabla_\Phi\tilde F=0$ in the free case and $-Z\tilde J_\Phi$ once a matter action is added; the scalar part of the same equation is Gauss's law, and it is a constraint on the initial data and not an evolution equation.
 
 *Third, the field's own symmetries give the stress and not a charge.* The free field has no phase symmetry, so there is no conserved charge intrinsic to it; what the action's translation invariance gives is the energy–momentum, whose temporal component is $\tfrac12(\epsilon\vec E^{2}+\vec B^{2}/\mu)$ and is positive. The charge appears only when a source is coupled, and its sign is the source's.
 
@@ -31,8 +31,8 @@ The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1
 The medium enters through two constants. The permittivity is $\epsilon$ and the permeability $\mu$, both positive, and $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, so the vacuum is the case $\epsilon=\epsilon_0$, $\mu=\mu_0$. The field strength carries the normalisation
 
 $$
-\tilde F=\frac{1}{\sqrt{\mu}}\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)
-=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H ,
+\tilde F=c\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)
+=i\vec E-c\vec B ,
 $$
 
 with $\vec H=\vec B/\mu$; the imaginary part is the electric field and the real part is the magnetic one, the electric term carrying the factor $i$ because it carries the time index. The source is $\tilde J_\Phi=ic\rho\,e_t+\vec J$, whose scalar part is the charge density and whose vector part is the current density. The pairing is $\mathrm{Re}\,\mathrm{Sc}(\cdot\,\cdot)$, the measure is $\mathrm{d}^{4}r$, and the symbol $\mathrm{Vect}$ is the pure-vector part.
@@ -42,13 +42,13 @@ with $\vec H=\vec B/\mu$; the imaginary part is the electric field and the real 
 **One term, and the potential appears only through the field strength.**
 
 $$
-S[\tilde A_\Phi]=\int\mathrm{d}^{4}r\;\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr).
+S[\tilde A_\Phi]=\int\mathrm{d}^{4}r\;\tfrac{\epsilon}{2}\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr).
 $$
 
-Its sign and its value. With $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ and the quaternion rule $\vec u\vec u=-\lvert\vec u\rvert^{2}$ for a real vector, $\mathrm{Sc}(\tilde F\tilde F)=-\epsilon\vec E^{2}+\mu\vec H^{2}$, the cross terms being vectors and dying in the scalar part when $\vec E$ and $\vec H$ are orthogonal, and cancelling in general because $\tilde F\tilde F$ is the square of one element. So
+Its sign and its value. With $\tilde F=i\vec E-c\vec B$ and the quaternion rule $\vec u\vec u=-\lvert\vec u\rvert^{2}$ for a real vector, $\mathrm{Sc}(\tilde F\tilde F)=-\vec E^{2}-c^{2}\vec B^{2}=-2W/\epsilon$, the cross terms being vectors and dying in the scalar part when $\vec E$ and $\vec B$ are orthogonal, and cancelling in general because $\tilde F\tilde F$ is the square of one element. So
 
 $$
-\tfrac12\,\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)=-\tfrac12\bigl(\epsilon\vec E^{2}-\vec B^{2}/\mu\bigr),
+\tfrac{\epsilon}{2}\,\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)=-\tfrac{\epsilon}{2}\bigl(\vec E^{2}+c^{2}\vec B^{2}\bigr)=-\tfrac12\bigl(\epsilon\vec E^{2}+\vec B^{2}/\mu\bigr),
 $$
 
 which is the standard Lagrangian up to one overall sign. The sign is the corpus's and is not chosen here: the Proca companion fixes it once, by requiring that the same field term, with the mass term added, give $\tilde\nabla_\Phi\tilde F=4\pi^{2}\nu_m^{2}\tilde A$ with the sign printed there. Flipping the sign of the field term without flipping the mass term would change the Proca equation's sign, and the corpus does not do that.
@@ -66,20 +66,20 @@ Three properties, each one line.
 Varying the potential, and one integration by parts. The variation of the field strength is
 
 $$
-\delta\tilde F=\frac{1}{\sqrt{\mu}}\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\delta\tilde A_\Phi\bigr),
+\delta\tilde F=c\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\delta\tilde A_\Phi\bigr),
 $$
 
 because the normalisation and the projection are linear. Hence
 
 $$
-\delta S=\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\,\delta\tilde F\bigr)
-=\frac{1}{\sqrt{\mu}}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\delta\tilde A_\Phi\bigr)\bigr).
+\delta S=\epsilon\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\,\delta\tilde F\bigr)
+=\frac{1}{Z}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\delta\tilde A_\Phi\bigr)\bigr),
 $$
 
 The projection can be dropped. $\tilde F$ is a pure vector and the scalar part of a vector times a scalar is zero, so replacing $\mathrm{Vect}(X)$ by $X$ changes nothing inside the pairing. One integration by parts then moves the derivative onto $\tilde F$,
 
 $$
-\delta S=-\frac{1}{\sqrt{\mu}}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde\nabla_\Phi\tilde F\,\delta\tilde A_\Phi\bigr)
+\delta S=-\frac{1}{Z}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde\nabla_\Phi\tilde F\,\delta\tilde A_\Phi\bigr)
 +\oint\mathrm{d}\Sigma\;\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\,\delta\tilde A_\Phi\bigr),
 $$
 
@@ -91,7 +91,7 @@ $$
 \tilde\nabla_\Phi\tilde F=0 ,
 $$
 
-the parent's homogeneous equation. Adding a matter action whose variation with respect to $\tilde A_\Phi$ is $-\sqrt{\mu}\,\tilde J_\Phi$ gives the inhomogeneous one. The constant $\sqrt{\mu}$ is therefore not a choice of this article: it is the normalisation that makes the source the current, and the coupled articles verify it by deriving the current from the matter action.
+the parent's homogeneous equation. Adding a matter action whose variation with respect to $\tilde A_\Phi$ is $-Z\,\tilde J_\Phi$ gives the inhomogeneous one. The constant $Z$ is therefore not a choice of this article: it is the normalisation that makes the source the current, and the coupled articles verify it by deriving the current from the matter action.
 
 What the variation does not produce. It does not produce a condition on $\tilde A_\Phi$ alone, because the action depends on the potential only through a gauge-invariant combination; the longitudinal part is invisible to it, and that invisibility is the next section but two.
 
@@ -149,18 +149,18 @@ The stress's conservation. $\partial_{\imath} T_{\imath\jmath}=0$ on solutions i
 
 What it adds. Two things, and both are structural rather than predictive. It exhibits the field strength as the only thing the action sees, so that the gauge orbit is a property of the action and not of a chosen equation. And it makes the constraint and the orbit visibly different: one comes from the scalar part of the variation, the other from the kernel of the map from potential to field strength.
 
-What it relabels. The Maxwell equations themselves. The action adds no solution, no prediction and no constant that the parent does not have. The normalisation $\sqrt{\mu}$ is the parent's; the sign of the field term is the Proca companion's; the stress is the standard one. A reader who wants the physics will find all of it in the parent.
+What it relabels. The Maxwell equations themselves. The action adds no solution, no prediction and no constant that the parent does not have. The normalisation $Z$ is the parent's; the sign of the field term is the Proca companion's; the stress is the standard one. A reader who wants the physics will find all of it in the parent.
 
 **What it does not reach.** The quantised theory. Nothing in this article creates a photon, counts modes in a Fock space, or sums histories. This family does not do that anywhere, and this article's honesty consists in not pretending that a classical action is a quantum theory. The route is named in the bridge article and it is a route, not a result.
 
 ## Summary
 
-The Maxwell field is the extremum of one term, $S=\int\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, and its variation recovers $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\tilde J_\Phi$ with the constraint $\vec\nabla_\Phi\cdot\vec D=\rho$ as the scalar part. The potential enters only through the field strength, so the longitudinal part is a gauge orbit and not a degree of freedom, and the count is two transverse polarisations. The free field's symmetries give a positive stress and no charge; the charge appears with the source and its sign is the source's. Nothing here is quantised, and the article says so in its first section rather than its last.
+The Maxwell field is the extremum of one term, $S=\int\tfrac{\epsilon}{2}\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, and its variation recovers $\tilde\nabla_\Phi\tilde F=-Z\tilde J_\Phi$ with the constraint $\vec\nabla_\Phi\cdot\vec D=\rho$ as the scalar part. The potential enters only through the field strength, so the longitudinal part is a gauge orbit and not a degree of freedom, and the count is two transverse polarisations. The free field's symmetries give a positive stress and no charge; the charge appears with the source and its sign is the source's. Nothing here is quantised, and the article says so in its first section rather than its last.
 
 $$
-S[\tilde A_\Phi]=\int\mathrm{d}^{4}r\;\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr),
+S[\tilde A_\Phi]=\int\mathrm{d}^{4}r\;\tfrac{\epsilon}{2}\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr),
 \qquad
-\tilde F=\frac{1}{\sqrt{\mu}}\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr).
+\tilde F=c\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr).
 $$
 
 ## Summary of Notation
@@ -175,7 +175,7 @@ $$
 | $\epsilon,\ \mu$ | Permittivity and permeability of the medium |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $\tilde A_\Phi=\sum_{\imath} A_{\imath} e_{\imath}$ | Four-potential, anti-Hermitian |
-| $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field strength, pure vector |
+| $\tilde F=i\vec E-c\vec B$ | Field strength, pure vector |
 | $\tilde J_\Phi=ic\rho\,e_t+\vec J$ | Four-current |
 | $\vec D=\epsilon\vec E,\ \vec B=\mu\vec H$ | Displacement and induction |
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |
@@ -184,7 +184,7 @@ $$
 
 ## Further Reading
 
-- *Maxwell's Equations in the Biquaternionic Formulation*, the parent, for the field strength, the source and the normalisation $\sqrt{\mu}$.
+- *Maxwell's Equations in the Biquaternionic Formulation*, the parent, for the field strength, the source and the normalisation $Z$.
 - *The Lagrangian and the Proca Equation*, for the same field term with a mass and for the sign convention this article keeps.
 - *The Lagrangian and the Coupled Klein–Gordon Equation*, for the derivation of the current that sources the field.
 - *The Lagrangian and the Electromagnetic Field in Polar Variables* is not written; the chart of a massless field is the gauge orbit's own parameterisation and is the gap this family leaves open.

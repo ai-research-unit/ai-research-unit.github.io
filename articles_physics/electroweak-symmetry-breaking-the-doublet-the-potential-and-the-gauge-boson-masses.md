@@ -512,7 +512,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 | $g_{hWW}$, $g_{hZZ}$, $g_{hhh}$, $g_{hhhh}$ | Scalar couplings, fixed by the masses |
 | $\rho$ | $M_W^2/(M_Z^2\cos^2\theta_W)$, identically one for a doublet |
 | $\delta r$ | The correction to the tree-level mass relation, $0.0355$, computed from $\alpha(0)$ |
-| $G_F$ | $4.5443\times10^{14}\ \mathrm{J}^{-2}$, fixing $v$ |
+| $G_F$ | $4.5438\times10^{14}\ \mathrm{J}^{-2}$, fixing $v$ |
 | $\xi_a$ | The three would-be Goldstone fields |
 
 ## Further Reading

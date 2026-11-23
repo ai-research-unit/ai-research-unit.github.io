@@ -8,7 +8,7 @@ $$
 \boxed{\;m_{\xi_{\mathrm{neu}}} \;\simeq\; \frac{m_D^2}{M_R}\;},
 $$
 
-so that a Dirac mass of the electroweak scale and a heavy mass near $1.8\times10^{-13}$–$1.8\times10^{-12}$ kg produce a light mass of order $2\times10^{-13}$ in the fraction $n=m/m_{\mathrm{vev}}$. **Units.** A mass in this article is that fraction, with $E_{\mathrm{vev}}=4.3895\times10^{-25}$ kg; scales and cutoffs stay in joules. The mechanism is not a model of the light mass alone but a statement about two masses of different kinds: the **Dirac mass**, which pairs two independent chiralities and conserves fermion number, and the **Majorana mass**, which pairs a field with its own conjugate and violates fermion number by two units. The seesaw is the mixing of the two.
+so that a Dirac mass of the electroweak scale and a heavy mass near $1.8\times10^{-13}$–$1.8\times10^{-12}$ kg produce a light mass of order $8.8\times10^{-38}\ \mathrm{kg}$. **Units.** A mass in this article is written in kilograms; scales and cutoffs stay in joules. The mechanism is not a model of the light mass alone but a statement about two masses of different kinds: the **Dirac mass**, which pairs two independent chiralities and conserves fermion number, and the **Majorana mass**, which pairs a field with its own conjugate and violates fermion number by two units. The seesaw is the mixing of the two.
 
 The biquaternion framework has already separated the two kinds, and that separation is the reason this article can be written at all. The framework's Dirac mass is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, through which the vector central phase passes; the framework's antilinear object is the real structure $\flat=-{}^{*}$, and the genuinely conjugate pairing built on it is a separate equation. The companion articles on antilinear structure and on the neutrino establish the distinction and the module reality condition $\mathcal{C}:\tilde{Ξ}\mapsto K\tilde{Ξ}^*$ with $\mathcal{C}^2=1$. This article asks what the framework supplies for the seesaw, and states the answer in the corpus's three categories. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
@@ -78,13 +78,13 @@ $$
 
 The light eigenvalue is suppressed by the ratio, and the heavy one is essentially the Majorana mass. The exact form of $\eta_{-}$ was used to avoid the cancellation in $(M_R-\sqrt{M_R^2+4m_D^2})/2$, and the values were recomputed:
 
-| $n_D$ | $n_R$ | heavy $n_{+}$ | light $n_{-}$ | $-n_D^2/n_R$ |
+| $m_D$ (kg) | $M_R$ (kg) | heavy $\eta_{+}$ (kg) | light $\eta_{-}$ (kg) | $-m_D^2/M_R$ (kg) |
 |---|---|---|---|---|
-| $0.4062$ | $4.06\times10^{12}$ | $4.06\times10^{12}$ | $-4.06\times10^{-14}$ | $-4.06\times10^{-14}$ |
-| $0.4062$ | $4.06\times10^{9}$ | $4.06\times10^{9}$ | $-4.06\times10^{-11}$ | $-4.06\times10^{-11}$ |
-| $0.4062$ | $4.06\times10^{3}$ | $4.06\times10^{3}$ | $-4.06\times10^{-5}$ | $-4.06\times10^{-5}$ |
+| $1.783\times10^{-25}$ | $1.782\times10^{-12}$ | $1.782\times10^{-12}$ | $-1.782\times10^{-38}$ | $-1.782\times10^{-38}$ |
+| $1.783\times10^{-25}$ | $1.782\times10^{-15}$ | $1.782\times10^{-15}$ | $-1.782\times10^{-35}$ | $-1.782\times10^{-35}$ |
+| $1.783\times10^{-25}$ | $1.782\times10^{-21}$ | $1.782\times10^{-21}$ | $-1.782\times10^{-29}$ | $-1.782\times10^{-29}$ |
 
-The third row is a check of the exact formula against the approximation at a resolvable scale: the exact light eigenvalue is $-4.06\times10^{-5}$ and $-n_D^2/n_R=-4.06\times10^{-5}$. The first row is the physical regime: a Dirac fraction of the electroweak scale and a heavy fraction of $4.06\times10^{12}$ give a light fraction of $4.06\times10^{-14}$.
+The third row is a check of the exact formula against the approximation at a resolvable scale: the exact light eigenvalue is $-1.782\times10^{-29}$ kg and $-m_D^2/M_R=-1.782\times10^{-29}$ kg. The first row is the physical regime: a Dirac mass at the electroweak scale and a heavy mass of $1.782\times10^{-12}$ kg, that is $10^{15}$ GeV, give a light mass of $1.782\times10^{-38}$ kg.
 
 **The mixing, and the decoupling.** The matrix is diagonalised by a rotation of angle $\theta$ with
 
@@ -154,21 +154,21 @@ $$
 \mathcal{L}_5 = \frac{c_5}{\Lambda}\,(LH)(LH) + \text{h.c.},
 $$
 
-where $L$ is the lepton doublet, $H$ the Higgs doublet, and $\Lambda$ the scale of the new physics. After electroweak symmetry breaking, with the Higgs doublet at its expectation value $\langle H\rangle=v=3.10\times10^{-25}$ kg and a coefficient $c_5\sim1$, it generates a Majorana mass for the light neutrino,
+where $L$ is the lepton doublet, $H$ the Higgs doublet, and $\Lambda$ the scale of the new physics. After electroweak symmetry breaking, with the Higgs doublet at its expectation value $\langle H\rangle=v=4.3893\times10^{-25}$ kg and a coefficient $c_5\sim1$, it generates a Majorana mass for the light neutrino,
 
 $$
 \boxed{\;m_{\xi_{\mathrm{neu}}} = \frac{c_5\,v^2}{\Lambda}\;}.
 $$
 
-The operator violates lepton number by two units, it is the lowest-dimensional operator that does so, and it is the model-independent statement of the seesaw. Its coefficient was recomputed for the electroweak vacuum expectation value $v=3.10\times10^{-25}$ kg:
+The operator violates lepton number by two units, it is the lowest-dimensional operator that does so, and it is the model-independent statement of the seesaw. Its coefficient was recomputed for the electroweak vacuum expectation value $v=4.3893\times10^{-25}$ kg:
 
-| $\Lambda$ (kg) | $n_{\xi_{\mathrm{neu}}}=m_{\xi_{\mathrm{neu}}}/m_{\mathrm{vev}}$ |
+| $\Lambda$ (kg) | $m_{\xi_{\mathrm{neu}}}=c_5v^2/\Lambda$ (kg) |
 |---|---|
-| $10^{14}$ | $1.23\times10^{-12}$ |
-| $10^{15}$ | $1.23\times10^{-13}$ |
-| $10^{16}$ | $1.23\times10^{-14}$ |
+| $1.78\times10^{-13}$ | $1.08\times10^{-36}$ |
+| $1.78\times10^{-12}$ | $1.08\times10^{-37}$ |
+| $1.78\times10^{-11}$ | $1.08\times10^{-38}$ |
 
-The observed light neutrino mass scale, inferred from the atmospheric and solar mass-squared differences of order $7.95\times10^{-75}\ \mathrm{kg^2}$ and $2.38\times10^{-76}\ \mathrm{kg^2}$, is of order $2.0\times10^{-13}$ in $n$, so a scale $\Lambda$ of order $1.8\times10^{-13}$–$1.8\times10^{-12}$ kg reproduces the observed magnitude with a coefficient of order one. This is the standard argument for a high seesaw scale, and it is a statement about the size of the object, not a derivation of it.
+The observed light neutrino mass scale, inferred from the atmospheric and solar mass-squared differences of order $7.95\times10^{-75}\ \mathrm{kg^2}$ and $2.38\times10^{-76}\ \mathrm{kg^2}$, is of order $8.8\times10^{-38}\ \mathrm{kg}$, so a scale $\Lambda$ of order $1.8\times10^{-13}$–$1.8\times10^{-12}$ kg reproduces the observed magnitude with a coefficient of order one. This is the standard argument for a high seesaw scale, and it is a statement about the size of the object, not a derivation of it.
 
 **The relation between the two descriptions.** The effective operator and the seesaw are the same physics at different scales: matching them gives $c_5/\Lambda \sim m_D^2/(M_R v^2)$, so that $m_{\xi_{\mathrm{neu}}}\sim m_D^2/M_R$ when $m_D\sim v$. In the framework's terms the dimension-five operator is a product of four module elements — two lepton doublets and two Higgs fields — and its coefficient is the ratio that mixes the linear chiral pairing with the heavy self-conjugate pairing. The framework does not derive the operator's uniqueness (that is standard effective-field-theory counting) and does not fix $\Lambda$; it gives the algebraic interpretation of the product as a pairing of the module with itself through the Higgs.
 
@@ -211,7 +211,7 @@ which is the leading result of the matrix diagonalisation, obtained now by elimi
 
 **What oscillation data fix.** Neutrino oscillations measure the two mass-squared differences, $\delta m^2_{\mathrm{atm}}\simeq7.95\times10^{-75}\ \mathrm{kg^2}$ and $\delta m^2_{\mathrm{sol}}\simeq2.38\times10^{-76}\ \mathrm{kg^2}$, and the mixing angles of the leptonic matrix; they do not measure the absolute mass scale, because an overall shift of the squared masses is invisible to oscillation. The two differences fix the spacings of the three light masses but leave the lightest mass free, and therefore leave open the **mass ordering**: the normal hierarchy, in which the lightest state is largely the electron neutrino, and the inverted hierarchy, in which two states are nearly degenerate and the third is lighter. The seesaw predicts a hierarchical light spectrum for a hierarchical $m_D$ and $M_R$ but does not fix which ordering.
 
-**The absolute scale.** The absolute scale is bounded from above by cosmology, which constrains the sum of the light neutrino masses to be below of order $4\times10^{-13}$ in $n$, and from below only by the oscillation data, which require the heaviest state to be at least $2.0\times10^{-13}$. The seesaw's relation $m_{\xi_{\mathrm{neu}}}\sim v^2/M_R$ then translates the level of the scale into a range for the heavy mass: fractions of order $2\times10^{-13}$ correspond to $M_R$ near $1.8\times10^{-13}$–$1.8\times10^{-12}$ kg for a coefficient of order one. This is the standard estimate, and it is an estimate and not a prediction: the unknown Yukawa and the unknown heavy matrix sit between the observed mass and the scale.
+**The absolute scale.** The absolute scale is bounded from above by cosmology, which constrains the sum of the light neutrino masses to be below of order $1.76\times10^{-37}\ \mathrm{kg}$, and from below only by the oscillation data, which require the heaviest state to be at least $8.8\times10^{-38}\ \mathrm{kg}$. The seesaw's relation $m_{\xi_{\mathrm{neu}}}\sim v^2/M_R$ then translates the level of the scale into a range for the heavy mass: masses of order $8.8\times10^{-38}\ \mathrm{kg}$ correspond to $M_R$ near $1.8\times10^{-13}$–$1.8\times10^{-12}$ kg for a coefficient of order one. This is the standard estimate, and it is an estimate and not a prediction: the unknown Yukawa and the unknown heavy matrix sit between the observed mass and the scale.
 
 **What the framework adds here.** Nothing quantitative. The framework supplies the two kinds of mass and their mixing, and it inherits the standard-model translation of the light mass into the heavy scale; it does not relate the leptonic mixing to the heavy sector, does not select the ordering, and does not predict the absolute scale. The companion article on the number of generations treats the counting of the light states; the present article states the mechanism and its scale, and stops.
 
@@ -273,7 +273,7 @@ The right-handed singlet that the mechanism needs is a gauge singlet and contrib
 | $m_{\xi_{\mathrm{neu}}}\simeq-m_DM_R^{-1}m_D^{T}$ | Light mass matrix (type-I, $N_g$ generations) |
 | $\theta\simeq m_D/M_R$ | Light–heavy mixing angle |
 | $c_5(LH)(LH)/\Lambda$ | Dimension-five Weinberg operator |
-| $m_{\xi_{\mathrm{neu}}}=c_5v^2/\Lambda$, $v=3.10\times10^{-25}$ kg | Light mass from the Weinberg operator |
+| $m_{\xi_{\mathrm{neu}}}=c_5v^2/\Lambda$, $v=4.3893\times10^{-25}$ kg | Light mass from the Weinberg operator |
 | $\flat=-{}^{*}$ | The algebra's real structure (separate object) |
 | $Y=0$, $SU(3)_c$ singlet | Quantum numbers of the heavy state |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

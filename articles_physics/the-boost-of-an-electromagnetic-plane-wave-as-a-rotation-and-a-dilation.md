@@ -172,7 +172,7 @@ $$
 \tilde U_{\Psi,\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\Psi,\mathrm b} \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{*} .
 $$
 
-The verification is direct: writing the wave amplitude as $\tilde{F}_0 = i\sqrt{\epsilon_0}\,\vec E_0 - \sqrt{\mu_0}\,\vec H_0$ with $\vec E_0\perp\vec u_\Phi$ and $\vec H_0 = Z_0^{-1}\vec u_\Phi\times\vec E_0$, the identity holds for both polarisations of the wave and hence, the map being linear in $\tilde{F}$, for every null field of that wave. The same computation gives the field of the boosted wave in the frame in which the wave element is the one computed above.
+The verification is direct: writing the wave amplitude as $\tilde{F}_0 = i\,\vec E_0 - c_0\,\vec B_0$ with $\vec E_0\perp\vec u_\Phi$ and $\vec H_0 = Z_0^{-1}\vec u_\Phi\times\vec E_0$, the identity holds for both polarisations of the wave and hence, the map being linear in $\tilde{F}$, for every null field of that wave. The same computation gives the field of the boosted wave in the frame in which the wave element is the one computed above.
 
 Two consequences deserve recording. First, the electric and magnetic fields are rotated and rescaled by the same $\tilde{u}$ and $\exp(d)$, so the polarisation direction, the propagation direction and the polarisation ellipse are carried by a single Euclidean similarity; this is why the boost of a plane wave can be drawn as a rotation of the wave's triad rather than as a mixing of field components. Second, because the field stays null, the boosted wave is still a radiation field and no Lorentz frame can make either field vanish — the null type of the invariant classification is preserved, as the field-strength article requires.
 

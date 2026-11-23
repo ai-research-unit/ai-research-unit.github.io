@@ -99,9 +99,9 @@ against $b_0/2\pi=7.667/6.283=1.220$. The agreement is not a coincidence and not
 
 ## The Strength at Every Scale
 
-A mass in this article is a fraction of the vacuum value, $n_i=m_i/m_{\mathrm{vev}}$ with $E_{\mathrm{vev}}=3.9449\times10^{-8}\ \mathrm{J}$; a scale, a cutoff and $\Lambda$ stay in joules, because those are energies.
+A mass in this article is written in kilograms; a scale, a cutoff and $\Lambda$ stay in joules, because those are energies.
 
-The table. Running down from $\alpha_s(M_Z)=0.1179$ with the flavour number changed at each threshold — $n_t=0.7014$, $n_b=1.698\times10^{-2}$, $n_c=5.158\times10^{-3}$ — and matching $\alpha_s$ continuously at each, which is the leading-order matching condition:
+The table. Running down from $\alpha_s(M_Z)=0.1179$ with the flavour number changed at each threshold — $m_t=3.079\times10^{-25}\ \mathrm{kg}$, $m_b=7.453\times10^{-27}\ \mathrm{kg}$, $m_c=2.264\times10^{-27}\ \mathrm{kg}$ — and matching $\alpha_s$ continuously at each, which is the leading-order matching condition:
 
 | $Q$ (J) | $N_f$ | $1/\alpha_s$, one loop | $\alpha_s$, one loop | $\alpha_s$, two loops |
 |---|---|---|---|---|
@@ -238,7 +238,7 @@ $$
 m_p=\frac{1}{2m_p}\langle p|\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}|p\rangle .
 $$
 
-The number, and what it denies. Lattice QCD puts the quark-mass contribution to the nucleon mass at a few per cent of $n_p=3.810\times10^{-3}$ — of order $1\%$ for the $u$ and $d$ current masses alone, nearer $5\%$ once the pion–nucleon sigma term is used — with the rest in the energy of the colour field and in the conformal anomaly, which are two distinct lines of the same decomposition. The proton is not made of quark masses; it is made of the energy of the colour field that binds them, and the coefficient that governs the anomalous part of that energy is $b_0$. This is why the proton mass is of order $\Lambda$ and not of order the quark masses, and why the ratio $m_pc^2/\Lambda_3=938/142=6.6$ of two energies is a number the lattice computes rather than a coincidence.
+The number, and what it denies. Lattice QCD puts the quark-mass contribution to the nucleon mass at a few per cent of $m_p=1.673\times10^{-27}\ \mathrm{kg}$ — of order $1\%$ for the $u$ and $d$ current masses alone, nearer $5\%$ once the pion–nucleon sigma term is used — with the rest in the energy of the colour field and in the conformal anomaly, which are two distinct lines of the same decomposition. The proton is not made of quark masses; it is made of the energy of the colour field that binds them, and the coefficient that governs the anomalous part of that energy is $b_0$. This is why the proton mass is of order $\Lambda$ and not of order the quark masses, and why the ratio $m_pc^2/\Lambda_3=938/142=6.6$ of two energies is a number the lattice computes rather than a coincidence.
 
 Why this belongs in this article and not the next two. The running and the mass gap are two readings of one coefficient. [The parton article](the-parton-model-and-deep-inelastic-scattering.html) takes the partonic description that asymptotic freedom licenses and computes structure functions in it, and [the jets article](jets-the-qcd-cross-section-and-the-infrared-structure.html) computes the cross sections. This one closes by noting that the same coefficient which makes the partons free at short distance is the one that makes the proton heavy at long distance.
 
@@ -280,7 +280,7 @@ The expansion dies below about $4.81\times10^{-11}\ \mathrm{J}$, where $\alpha_s
 
 The theory has an edge at $N_f=16.5$ and a conformal window below it; the Standard Model sits far inside, with $b_0=7$ at six flavours, and that margin is why perturbation theory works over four orders of magnitude. QED sits on the other side of the same sign with a Landau pole, and the difference is the adjoint Casimir.
 
-Two readings of the one coefficient close the article: the same $b_0$ that makes the partons free at short distance gives the proton its mass at long distance, through the conformal anomaly, with $n_p=3.810\times10^{-3}$ of which a few per cent comes from the quark masses and the rest from colour-field energy.
+Two readings of the one coefficient close the article: the same $b_0$ that makes the partons free at short distance gives the proton its mass at long distance, through the conformal anomaly, with $m_p=1.673\times10^{-27}\ \mathrm{kg}$ of which a few per cent comes from the quark masses and the rest from colour-field energy.
 
 The framework supplies the sign rule and the colour factors and nothing else. The beta function is imported, the regulator is imported, and the value of $\Lambda$ is supplied by nothing at all.
 
@@ -297,11 +297,11 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 | $N_f$ | Number of active quark flavours at the scale $\mu$ |
 | $\mu$ | Renormalisation scale; $Q$ the kinematic scale of a process |
 | $\Lambda$ | The strong-interaction scale, $\Lambda_{N_f}$ for $N_f$ flavours |
-| $n_t$, $n_b$, $n_c$ | Thresholds $0.7014$, $1.698\times10^{-2}$, $5.158\times10^{-3}$ |
+| $m_t$, $m_b$, $m_c$ | Flavour thresholds $3.079\times10^{-25}$, $7.453\times10^{-27}$, $2.264\times10^{-27}\ \mathrm{kg}$ |
 | $\alpha_s^*$ | Fixed-point coupling of the conformal window |
 | $g_s$ | The coupling itself, $\alpha_s=g_s^2/4\pi$; the beta function is written for $g_s$ |
 | $N_c=3$ | Number of colours; enters $b_0$ only through $C_A=N_c$ and the normalisation $T_R=\tfrac12$ |
-| $n_p$ | Proton mass, $3.810\times10^{-3}$, the matrix element of the conformal anomaly |
+| $m_p$ | Proton mass, $1.673\times10^{-27}\ \mathrm{kg}$, the matrix element of the conformal anomaly |
 | $\sigma$ | String tension; $m_p/\sqrt\sigma$ is a pure number the theory predicts |
 | $\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}$ | Trace of the energy–momentum tensor, proportional to $G_{a,\imath\jmath}G_{a,\imath\jmath}$ with coefficient $b_0$ |
 | $G_{a,\imath\jmath}$ | Gluon field strength, $a=1,\dots,8$; the operator of the conformal anomaly |

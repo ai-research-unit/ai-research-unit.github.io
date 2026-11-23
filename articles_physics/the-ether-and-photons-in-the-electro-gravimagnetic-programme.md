@@ -20,7 +20,7 @@ observation.
 
 The task is the corpus's usual one: record what is derived, mark what is chosen, and state the cost.
 The conventions are the corpus's. The field is the companion article's dual field strength
-$-i\tilde F = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H$, and the paper's
+$-i\tilde F = \vec E + ic\vec B = \vec E + iZ\vec H$, and the paper's
 biquaternion of *tension*, $\tilde{A}_{\Phi} = i\alpha - i\tilde F$, is that field with the
 scalar part the paper calls the density of the ether. The paper's conjugation — the vector part
 negated and the coefficients complex-conjugated, the paper's **mutual** biquaternion and the
@@ -206,8 +206,8 @@ satisfy the free equation, and their content differs in a way the programme read
 
 - **The scalar-potential mode is longitudinal and has the two field vectors parallel.** For
   $j = 0$ the mode has
-  $\vec E = -(\omega\sin\theta/\sqrt{\epsilon})\,\vec u_\Phi$ and
-  $\vec H = (\omega\cos\theta/\sqrt{\mu})\,\vec u_\Phi$ with $\theta = (2\pi\vec\nu_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$,
+  $\vec E = -\omega\sin\theta\,\vec u_\Phi$ and
+  $\vec H = (\omega\cos\theta/Z)\,\vec u_\Phi$ with $\theta = (2\pi\vec\nu_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$,
   so both fields lie along the wave vector and are parallel up to a relative sign set by the phase —
   recomputed. No other mode of the construction is of this kind: a potential axis along
   $\vec\nu_\Phi$ reproduces this mode up to a factor, which is the redundancy recorded below. The paper

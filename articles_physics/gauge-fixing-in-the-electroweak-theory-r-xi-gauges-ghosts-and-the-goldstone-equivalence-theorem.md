@@ -112,18 +112,18 @@ M_{\xi^\pm}^2=\zeta M_W^2 ,
 M_{\xi^0}^2=\zeta M_Z^2 .
 $$
 
-For the measured masses, quoted as fractions of the vacuum value with $E_{\mathrm{vev}}=3.9449\times10^{-8}\ \mathrm{J}$ and $n_W=0.3264$, $n_Z=0.3704$, the table reads:
+For the measured masses $M_W=1.4327\times10^{-25}\ \mathrm{kg}$ and $M_Z=1.6258\times10^{-25}\ \mathrm{kg}$, the table reads:
 
-| $\zeta$ | $n_{\xi^\pm}=\sqrt{\zeta}\,n_W$ | $n_{\xi^0}=\sqrt{\zeta}\,n_Z$ |
+| $\zeta$ | $M_{\xi^\pm}=\sqrt{\zeta}\,M_W$ (kg) | $M_{\xi^0}=\sqrt{\zeta}\,M_Z$ (kg) |
 |---|---|---|
 | $0$ | $0$ | $0$ |
-| $0.1$ | $0.1032$ | $0.1170$ |
-| $0.25$ | $0.1633$ | $0.1852$ |
-| $0.5$ | $0.2307$ | $0.2620$ |
-| $1$ | $0.3265$ | $0.3704$ |
-| $2$ | $0.4618$ | $0.5239$ |
-| $3$ | $0.5654$ | $0.6413$ |
-| $10$ | $1.0324$ | $1.1713$ |
+| $0.1$ | $4.53\times10^{-26}$ | $5.141\times10^{-26}$ |
+| $0.25$ | $7.163\times10^{-26}$ | $8.129\times10^{-26}$ |
+| $0.5$ | $1.013\times10^{-25}$ | $1.15\times10^{-25}$ |
+| $1$ | $1.433\times10^{-25}$ | $1.626\times10^{-25}$ |
+| $2$ | $2.026\times10^{-25}$ | $2.299\times10^{-25}$ |
+| $3$ | $2.481\times10^{-25}$ | $2.816\times10^{-25}$ |
+| $10$ | $4.53\times10^{-25}$ | $5.141\times10^{-25}$ |
 
 At $\zeta=1$ the Goldstone is degenerate with the vector that ate it. $M_{\xi^\pm}=M_W$ and $M_{\xi^0}=M_Z$ exactly, by the definitions of the two masses. This is the Feynman–'t Hooft gauge, and the degeneracy is why it is the gauge in which loop calculations are shortest: the $\zeta$-dependent parts of the gauge and Goldstone propagators have poles at the same place, so they combine into single integrals.
 
@@ -317,19 +317,19 @@ The theorem is the dynamical counterpart of the counting. The count is $12=12$: 
 
 ## The Numbers
 
-$n_W=0.3264$ and $n_Z=0.3704$. The tree-level values from the couplings $g=0.65174$ and $g_{\mathrm Y}=0.3574$ are $0.3259$ and $0.3717$; the difference is the radiative correction and is not a gauge effect.
+$M_W=1.4327\times10^{-25}\ \mathrm{kg}$ and $M_Z=1.6258\times10^{-25}\ \mathrm{kg}$. The tree-level values from the couplings $g=0.65174$ and $g_{\mathrm Y}=0.3574$ with $v=4.3893\times10^{-25}\ \mathrm{kg}$ are $1.4305\times10^{-25}$ and $1.6315\times10^{-25}\ \mathrm{kg}$; the difference is the radiative correction and is not a gauge effect.
 
 At the three standard gauges the Goldstone and ghost masses are these.
 
-| Gauge | $\zeta$ | $M_{\xi^\pm}=M_{c^\pm}$ | $M_{\xi^0}=M_{c^Z}$ |
+| Gauge | $\zeta$ | $M_{\xi^\pm}=M_{c^\pm}$ (kg) | $M_{\xi^0}=M_{c^Z}$ (kg) |
 |---|---|---|---|
 | Landau | $0$ | $0$ | $0$ |
-| Feynman–'t Hooft | $1$ | $0.3264$ | $0.3704$ |
+| Feynman–'t Hooft | $1$ | $1.4327\times10^{-25}$ | $1.6258\times10^{-25}$ |
 | Unitary | $\infty$ | $\infty$ | $\infty$ |
 
-Physical pole at $\Pi=M^2$; $\zeta$-pole at $\Pi=\zeta M^2$, shared by the Goldstone and the ghost. At $\zeta=2$ the $\zeta$-pole of the $W$ sector sits at $\Pi=2M_W^2$, that is at $\sqrt2\,n_W=0.4618$, above the physical pole by a factor $\sqrt2$ in mass.
+Physical pole at $\Pi=M^2$; $\zeta$-pole at $\Pi=\zeta M^2$, shared by the Goldstone and the ghost. At $\zeta=2$ the $\zeta$-pole of the $W$ sector sits at $\Pi=2M_W^2$, that is at $\sqrt2\,M_W=2.026\times10^{-25}\ \mathrm{kg}$, above the physical pole by a factor $\sqrt2$ in mass.
 
-The unitarity scale is $\sqrt{8\pi}\,v=1.97\times10^{-7}\ \mathrm{J}$, and $\sqrt{16\pi}\,v=2.80\times10^{-7}\ \mathrm{J}$ for the bound $\lvert a_0\rvert\le1$. The two differ by $\sqrt2$, which is the difference between the two conventions for the partial-wave bound, and both are quoted in the literature.
+The unitarity scale is $\sqrt{8\pi}\,v c^{2}=1.97\times10^{-7}\ \mathrm{J}$, and $\sqrt{16\pi}\,v c^{2}=2.80\times10^{-7}\ \mathrm{J}$ for the bound $\lvert a_0\rvert\le1$. The two differ by $\sqrt2$, which is the difference between the two conventions for the partial-wave bound, and both are quoted in the literature.
 
 One number is zero and must be: the determinant of the neutral ghost mass matrix. It vanishes for every $\zeta$, and it does so because the photon is massless. A non-zero determinant would mean that $\mathrm{U}(1)_{\mathrm{em}}$ was broken by the gauge fixing, which cannot happen: a gauge condition cannot break a symmetry that the gauge condition respects.
 
@@ -380,9 +380,9 @@ The framework realises the gauge-fixing procedure itself, not the selection of a
 | $\xi_{a}$, $\xi^\pm$, $\xi^0$ | The would-be Goldstone fields of article 4, which writes the index down |
 | $W_{a,\imath}$, $Z_{\imath}$, $A_{\imath}$ | The gauge fields in the broken basis: the charged pair, the neutral massive one and the photon |
 | $\omicron_{\mathrm{pot}}$, $h$ | The scalar doublet and the physical scalar left after the Goldstones are eaten |
-| $v$ | $3.9449\times10^{-8}\ \mathrm{J}$, the vacuum expectation value, entering $M_W=gv/2$ |
+| $v$ | $4.3893\times10^{-25}\ \mathrm{kg}$, the vacuum expectation value, entering $M_W=gv/2$ |
 | $g$, $g_{\mathrm Y}$ | The $SU(2)_L$ and $\mathrm U(1)_{\mathrm Y}$ couplings |
-| $n_W$, $n_Z$, $n_H$ | $0.3264$, $0.3704$ and $0.5080$, the measured boson masses as fractions of $m_{\mathrm{vev}}$ |
+| $M_W$, $M_Z$, $M_H$ | $1.4327\times10^{-25}$, $1.6258\times10^{-25}$ and $2.2300\times10^{-25}\ \mathrm{kg}$, the measured boson masses |
 | $M_Y$ | $g_{\mathrm Y}v/2$, the hypercharge partner in the unbroken-basis functional |
 | $G_{a}$, $G^Z$, $G^A$ | The gauge-fixing functionals |
 | $B_{a}$ | The Nakanishi–Lautrup auxiliary field |

@@ -16,7 +16,7 @@ $$
 \tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J,
 $$
 
-as in the companion EGM article and in *Shock Electromagnetic Waves*. The 2019 paper writes the same object with a partly different sign convention, $\rho = -\rho_E/\sqrt{\epsilon} + i\rho_H/\sqrt{\mu}$ and $\vec J = -\sqrt{\mu}\,\vec j_E + i\sqrt{\epsilon}\,\vec j_H$, which is the negative of the corpus's; every equation below is stated in the paper's own 2019 convention where it is quoted from the paper, and the conventions are not mixed. The source's symbol $\vec\nabla_\Phi$ means the **pure-vector** gradient, $\vec\nabla_\Phi = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ acting by quaternion multiplication on the left, so that $\vec\nabla_\Phi\circ\nabla = -\Delta_\Phi$; this is not the corpus's four-dimensional gradient, which carries the time derivative, and the relation between the two is given in its own section.
+as in the companion EGM article and in *Shock Electromagnetic Waves*. The 2019 paper writes the same object with a partly different sign convention, $\rho = -\rho_E/\epsilon + i\,c\rho_H$ and $\vec J = -Z\,\vec j_E + i\,\vec j_H$, which is the negative of the corpus's; every equation below is stated in the paper's own 2019 convention where it is quoted from the paper, and the conventions are not mixed. The source's symbol $\vec\nabla_\Phi$ means the **pure-vector** gradient, $\vec\nabla_\Phi = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ acting by quaternion multiplication on the left, so that $\vec\nabla_\Phi\circ\nabla = -\Delta_\Phi$; this is not the corpus's four-dimensional gradient, which carries the time derivative, and the relation between the two is given in its own section.
 
 ## The Free Charge–Current Field and Its Monochromatic Sector
 
@@ -281,7 +281,7 @@ Two comparisons must be made, and both are about what the object is not. It is *
 
 It is also **not** a spectrum. The paper writes the frequency $\omega_0$ as "the minimum frequency of the hydrogen spectrum", which is an input read off the atom it is supposed to explain. Because the Helmholtz equation carries no boundary condition, no sequence of frequencies is selected; a discrete set would require either a boundary at some radius or a quantisation condition, and the programme supplies neither. What the model has is a one-parameter family of standing waves, and the discreteness of the periodic system in the next section is imposed on that family from outside.
 
-The paper's further claim — that the electric and gravimagnetic charge densities and currents of this atom are given by its equations (5.1) and (5.2), which are products of $\cos(\omega_0\tau)$ or $\sin(\omega_0\tau)$ with $\sin(\omega_0 r)/r$ and with the corresponding combination for the current — is a rewriting of the pulsar amplitude into the electric and gravimagnetic variables. It is not independently verified here: the placement of $\sqrt{\epsilon}$ and $\sqrt{\mu}$ between the complex and the physical densities is convention-dependent, the source's text mixes the arguments $\omega_0r$ and $\omega_0r/c$ in the two ways of writing the same solution, and its numerical value of $c$ carries an extra digit ($2997924581$ rather than $299792458$). The $r$-dependence that the paper uses from these formulas — the nodal spheres at $\pi \nu_{\Phi}/\omega_0$ — is the one verified above from the pulsar amplitude directly.
+The paper's further claim — that the electric and gravimagnetic charge densities and currents of this atom are given by its equations (5.1) and (5.2), which are products of $\cos(\omega_0\tau)$ or $\sin(\omega_0\tau)$ with $\sin(\omega_0 r)/r$ and with the corresponding combination for the current — is a rewriting of the pulsar amplitude into the electric and gravimagnetic variables. It is not independently verified here: the placement of the impedance and of the factor $c$ between the complex and the physical densities is convention-dependent, the source's text mixes the arguments $\omega_0r$ and $\omega_0r/c$ in the two ways of writing the same solution, and its numerical value of $c$ carries an extra digit ($2997924581$ rather than $299792458$). The $r$-dependence that the paper uses from these formulas — the nodal spheres at $\pi \nu_{\Phi}/\omega_0$ — is the one verified above from the pulsar amplitude directly.
 
 ## The Periodic System as a Musical Scale
 
@@ -355,8 +355,8 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\rho, \vec J$ | Complex charge and current densities of the charge–current field |
 | $\rho_E, \rho_H$ | Electric and gravimagnetic charge densities |
 | $\vec j_E, \vec j_H$ | Electric and gravimagnetic current densities |
-| $\rho = -\rho_E/\sqrt{\epsilon} + i\rho_H/\sqrt{\mu}$ | 2019 source's charge convention (negative of the corpus's) |
-| $\vec J = -\sqrt{\mu}\,\vec j_E + i\sqrt{\epsilon}\,\vec j_H$ | 2019 source's current convention |
+| $\rho = -\rho_E/\epsilon + i\,c\rho_H$ | 2019 source's charge convention (negative of the corpus's) |
+| $\vec J = -Z\,\vec j_E + i\,\vec j_H$ | 2019 source's current convention |
 | $\tau = r'_{t}$ | Scaled time; $\omega$ is a frequency in units of $1/\mathrm{length}$ |
 | $\vec\nabla_\Phi = \vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ | Pure-vector gradient, acting by left quaternion multiplication |
 | $\vec\nabla_\Phi\circ\nabla = -\Delta_\Phi$ | The square of $\vec\nabla_\Phi$; hence the factorisation below |

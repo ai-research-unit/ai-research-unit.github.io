@@ -12,7 +12,7 @@ Three claims are refused at the outset.
 - The framework has no solution. It does not, and section *What the Algebra Says* gives the exact reason.
 - Naturalness is not a theorem. It is a heuristic with one success and at least one conspicuous failure, and section *Naturalness Is Not a Theorem* states both.
 
-**Units.** A mass in this article is a fraction of the vacuum value, $n_i=m_i/m_{\mathrm{vev}}$ with $E_{\mathrm{vev}}=3.9449\times10^{-8}\ \mathrm{J}$. A cutoff, a compositeness scale and a running scale stay in joules: those are energies, and the joule is their unit.
+**Units.** A mass in this article is written in kilograms. A cutoff, a compositeness scale and a running scale stay in joules: those are energies, and the joule is their unit.
 
 Four claims are then established, each with a number.
 
@@ -40,7 +40,7 @@ The Standard Model contributes through three sources.
 | Higgs quartic | $6\varpi_{\mathrm{cpl}}$ | $0.774$ | $31.1\%$ |
 | Total | — | $2.489$ | $100\%$ |
 
-The coefficients use $g=0.652$, $y_t=m_t/v=172.7/246.22=0.7014$ and $\varpi_{\mathrm{cpl}}=0.1291$. The top's contribution is $59\%$ of the total, which is the same fact as in the running of $\varpi_{\mathrm{cpl}}$ and in the vacuum stability condition: the top coupling dominates every question about the scalar sector.
+The coefficients use $g=0.652$, $y_t=m_t/v=3.079\times10^{-25}/4.3893\times10^{-25}=0.7014$ and $\varpi_{\mathrm{cpl}}=0.1291$. The top's contribution is $59\%$ of the total, which is the same fact as in the running of $\varpi_{\mathrm{cpl}}$ and in the vacuum stability condition: the top coupling dominates every question about the scalar sector.
 
 The physical interpretation needs no cutoff. Take the Standard Model to be valid up to a scale $\Lambda$ and ask what happens to the Higgs mass when a state of mass $M\sim\Lambda$ is integrated out. The answer is a shift of order $\Lambda^2/16\pi^2$, whatever the regularisation. So the question "why is the Higgs mass so much smaller than the scale of whatever comes next" is a question about heavy states, not about infinities.
 
@@ -156,25 +156,25 @@ so the shift vanishes exactly when supersymmetry is unbroken. Breaking it at sca
 
 The numbers are these, and there are two problems.
 
-| $n_{\tilde t}$ | $\delta m_H^2$ (J$^2$) | $\mathcal{T}_{\mathrm{tune}}$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
+| $m_{\tilde t}$ (kg) | $\delta m_H^2$ (J$^2$) | $\mathcal{T}_{\mathrm{tune}}$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
 |---|---|---|---|
-| $2.031$ | $3.59\times10^{-16}$ | $0.89$ | $1.12$ |
-| $3.046$ | $6.98\times10^{-16}$ | $1.74$ | $0.58$ |
-| $4.061$ | $1.10\times10^{-15}$ | $2.75$ | $0.36$ |
-| $8.123$ | $3.08\times10^{-15}$ | $7.69$ | $0.13$ |
-| $20.31$ | $8.32\times10^{-15}$ | $20.7$ | $0.048$ |
+| $8.915\times10^{-25}$ | $3.59\times10^{-16}$ | $0.89$ | $1.12$ |
+| $1.337\times10^{-24}$ | $6.98\times10^{-16}$ | $1.74$ | $0.58$ |
+| $1.782\times10^{-24}$ | $1.10\times10^{-15}$ | $2.75$ | $0.36$ |
+| $3.565\times10^{-24}$ | $3.08\times10^{-15}$ | $7.69$ | $0.13$ |
+| $8.915\times10^{-24}$ | $8.32\times10^{-15}$ | $20.7$ | $0.048$ |
 
-So a stop below $1.6\times10^{-7}\ \mathrm{J}$ keeps the tuning under $30\%$, and a stop at $8.0\times10^{-7}\ \mathrm{J}$ costs a factor of twenty. The LHC's stop searches reach about $1.2$–$2.1\times10^{-7}\ \mathrm{J}$ in favourable topologies and have found nothing, so the natural region is excluded for the simplest models.
+So a stop below $1.78\times10^{-24}\ \mathrm{kg}$, that is a supersymmetry-breaking scale of $1.6\times10^{-7}$ J, keeps the tuning under $30\%$, and a stop at $8.90\times10^{-24}\ \mathrm{kg}$ costs a factor of twenty. The LHC's stop searches reach about $1.34$–$2.34\times10^{-24}\ \mathrm{kg}$, at scales of $1.2$–$2.1\times10^{-7}$ J, in favourable topologies and have found nothing, so the natural region is excluded for the simplest models.
 
 The second problem is independent. In the minimal supersymmetric Standard Model the quartic is fixed by the gauge couplings,
 
 $$
 m_h^2=M_Z^2\cos^2 2\beta
 \quad\Longrightarrow\quad
-n_h\le n_Z=0.3704\ \text{at tree level},
+m_h\le M_Z=1.6258\times10^{-25}\ \mathrm{kg}\ \text{at tree level},
 $$
 
-against a measured $n_h=0.5080$. So the model requires large loop corrections from heavy stops to reach the measured mass, and those corrections are exactly the ones that reintroduce the tuning. The two requirements pull in opposite directions: *raise* $m_h$ needs heavy stops, *naturalness* needs light ones. This tension, not the absence of a discovery by itself, is what has made minimal supersymmetry uncomfortable.
+against a measured $m_h=2.230\times10^{-25}$ kg. So the model requires large loop corrections from heavy stops to reach the measured mass, and those corrections are exactly the ones that reintroduce the tuning. The two requirements pull in opposite directions: *raise* $m_h$ needs heavy stops, *naturalness* needs light ones. This tension, not the absence of a discovery by itself, is what has made minimal supersymmetry uncomfortable.
 
 Split supersymmetry survives, with the scalars heavy and the gauginos light. It gives up naturalness for the scalar mass and keeps the gauge-coupling unification and the dark matter candidate. It is a coherent position, and it concedes the point.
 
@@ -234,10 +234,10 @@ and from the table above the sum is $2.489$, which is not zero. The condition wo
 $$
 3y_t^2=0.239+0.774=1.013
 \quad\Longrightarrow\quad
-n_t=0.5808,
+m_t=2.549\times10^{-25}\ \mathrm{kg},
 $$
 
-against a measured $n_t=0.7014$. The condition fails by $20\%$ in the mass, that is by $45\%$ in the squared coupling.
+against a measured $m_t=3.079\times10^{-25}$ kg. The condition fails by $20\%$ in the mass, that is by $45\%$ in the squared coupling.
 
 The failure is informative. The quadratic terms do not cancel accidentally in the Standard Model, so no hidden mechanism is already present. The condition is also a *fine tuning of a different kind*: one equation on the parameters, not satisfied. A framework that solved the hierarchy problem by a cancellation among Standard Model states would have to explain why this particular combination vanishes, and nothing does.
 
@@ -299,7 +299,7 @@ Five candidates have been weighed.
 | Compositeness | Resonances at $f\lesssim1.6\times10^{-7}\ \mathrm{J}$ | Not found; $f$ pushed above $1.5$–$3.2\times10^{-7}\ \mathrm{J}$ |
 | Extra dimensions | Kaluza–Klein states | Not found |
 | Landscape | Nothing | Untestable at colliders |
-| Veltman | $n_t=0.5808$ | Refuted, $n_t=0.7014$ |
+| Veltman | $m_t=2.549\times10^{-25}$ kg | Refuted, $m_t=3.079\times10^{-25}$ kg |
 
 The corpus would accept a statement that makes $m_H/v$ a function of quantities already in the nineteen, at the second grade, with a measured consequence. No such statement exists, in the framework or outside it. The question is open, and it is neither to the framework's credit nor to its discredit.
 
@@ -322,11 +322,11 @@ The table gives each item and its provenance.
 | The tuning table, $10^{32}$ at $M_{\mathrm{Pl}}$ | Computed here |
 | $\Lambda_{\mathrm{stable}}=1.60\times10^{-7}\ \mathrm{J}$ $=8.0\,m_H$ | Computed here |
 | Chiral and gauge protection of fermion and vector masses | Imported |
-| The MSSM bound $n_h\le n_Z$ | Imported; the number $0.3704$ quoted |
+| The MSSM bound $m_h\le M_Z$ | Imported; the number $1.6258\times10^{-25}$ kg quoted |
 | The stop-tuning table | Computed here |
 | The composite tuning $(f/v)^2$ | Computed here |
 | The landscape argument | Imported; its status assessed here |
-| The Veltman condition and $n_t=0.5808$ | Computed here |
+| The Veltman condition and $m_t=2.549\times10^{-25}$ kg | Computed here |
 | The QCD-versus-electroweak contrast | Framework result, resting on the hadron article |
 | Naturalness as a heuristic, $1$–$1$ | This article's assessment |
 | A mechanism for $m_H/v$ | Not available |
@@ -341,7 +341,7 @@ Radiative stability requires new physics within $8.0$ Higgs masses, that is $1.6
 
 Fermion and gauge masses are protected because a symmetry forbids the mass term and hence its correction. The scalar has no such symmetry, and that is the whole content of the problem.
 
-Three responses: supersymmetry needs stops below $1.6\times10^{-7}\ \mathrm{J}$ for $30\%$ tuning, and its tree-level bound $n_h\le0.3704$ pulls the other way; compositeness needs $f\lesssim1.6\times10^{-7}\ \mathrm{J}$, and its tuning is $(f/v)^2=16.5$ at $f=1.6\times10^{-7}\ \mathrm{J}$; the landscape needs no new physics and makes no collider prediction. A fourth, the Veltman condition, is arithmetically refuted: it requires $m_t=2.29\times10^{-8}\ \mathrm{J}$ against a measured $172.7$.
+Three responses: supersymmetry needs stops below $1.6\times10^{-7}\ \mathrm{J}$ for $30\%$ tuning, and its tree-level bound $m_h\le1.6258\times10^{-25}$ kg pulls the other way; compositeness needs $f\lesssim1.6\times10^{-7}\ \mathrm{J}$, and its tuning is $(f/v)^2=16.5$ at $f=1.6\times10^{-7}\ \mathrm{J}$; the landscape needs no new physics and makes no collider prediction. A fourth, the Veltman condition, is arithmetically refuted: it requires $m_t=2.549\times10^{-25}$ kg against a measured $3.079\times10^{-25}$ kg.
 
 The framework has no cutoff — no measure — so the quadratic term cannot be computed in it, and it has no second confining sector and no family of vacua. Its one contribution is the contrast between the two scales: $\Lambda_{\mathrm{QCD}}$ is generated non-perturbatively and $v$ is not, and the tuning is the statement that the electroweak sector has no counterpart of the mechanism the strong sector does have.
 
@@ -356,8 +356,8 @@ Naturalness is a heuristic with one success (GIM) and one failure (weak-scale su
 | $c_i$ | Coefficient of the quadratic divergence from source $i$ |
 | $\mathcal{T}_{\mathrm{tune}}$ | Tuning, $\lvert\delta m_H^2\rvert/m_H^2$ |
 | $\varpi_{\mathrm{cpl}}$ | Higgs quartic, $0.1291$ |
-| $y_t$ | Top Yukawa, $0.7014$ |
-| $v$ | Higgs expectation value, $3.9449\times10^{-8}\ \mathrm{J}$ |
+| $y_t$ | $m_t/v=0.7014$ in this article's convention, with $m_t=3.079\times10^{-25}$ kg and $v=4.3893\times10^{-25}$ kg; the $\sqrt2$-normalised Yukawa is $0.9919$ |
+| $v$ | Higgs expectation value, $4.3893\times10^{-25}$ kg (an energy of $3.9449\times10^{-8}$ J) |
 | $f$ | Compositeness scale |
 | $M_{\mathrm{SUSY}}$, $m_{\tilde t}$ | Supersymmetry breaking scale, stop mass |
 | $M_{\mathrm{Pl}}$ | Planck scale, $1.95\times10^{9}\ \mathrm{J}$ |

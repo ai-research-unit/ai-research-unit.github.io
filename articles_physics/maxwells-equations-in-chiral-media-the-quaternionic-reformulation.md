@@ -36,15 +36,15 @@ Three consequences are worth stating, because they are what a reader who has not
 
 - **Simultaneous polarisation.** The relations say that an electric excitation polarises the medium magnetically as well as electrically, and conversely. This is the magnetoelectric coupling.
 - **Optical activity.** Because the two circular polarisations are affected oppositely — the factor $\beta\,\mathrm{rot}$ is first order in the wave vector and flips sign with the handedness of the polarisation — they acquire different effective wavenumbers. A linearly polarised wave, which is the sum of the two circular ones, therefore has its plane of polarisation rotated along the path. This is circular birefringence, and it is the observable that identifies an optically active medium.
-- **A continuity equation.** The field equations imply a conserved charge. In the time-harmonic convention the conservation law is $\mathrm{div}\,\vec j-i\omega\rho=0$, and taking the divergence of the second field equation gives $\mathrm{div}\,\vec{\mathcal E}=-(i/\nu_{\Phi})\,\mathrm{div}\,(\vec j/\sqrt{\epsilon})$, while $\mathrm{div}\,\vec E=\rho/\epsilon$ gives $\mathrm{div}\,\vec{\mathcal E}=\rho/(\epsilon\sqrt{\mu})$. Together,
+- **A continuity equation.** The field equations imply a conserved charge. In the time-harmonic convention the conservation law is $\mathrm{div}\,\vec j-i\omega\rho=0$, and taking the divergence of the second field equation gives $\mathrm{div}\,\vec{\mathcal E}=-(i/2\pi\nu_{\Phi})\,\mathrm{div}\,\vec j_{\mathrm n}$, while $\mathrm{div}\,\vec E=\rho/\epsilon$ gives $\mathrm{div}\,\vec{\mathcal E}=\rho/\epsilon$. Together,
 
 $$
-\mathrm{div}\,\vec{\mathcal E}=-\frac{i}{2\pi\nu_{\Phi}}\,\mathrm{div}\,\vec j_{\mathrm n}=\frac{\rho}{\epsilon\sqrt{\mu}},
+\mathrm{div}\,\vec{\mathcal E}=-\frac{i}{2\pi\nu_{\Phi}}\,\mathrm{div}\,\vec j_{\mathrm n}=\frac{\rho}{\epsilon},
 \qquad
-\vec j_{\mathrm n}=\frac{\vec j}{\sqrt{\epsilon}} .
+\vec j_{\mathrm n}=Z\,\vec j .
 $$
 
-It is this identity that converts the source terms of the reformulation into the compact form $(18)$ below. The paper writes it as $\rho/\sqrt{\epsilon\mu}=-(i/\nu_{\Phi})\,\mathrm{div}\,\vec j_{\mathrm n}$, that is, it prints $\rho/\sqrt{\epsilon\mu}$ for the scalar $\mathrm{div}\,\vec{\mathcal E}=\rho/(\epsilon\sqrt{\mu})$; the two differ by $\sqrt{\epsilon}$, a normalisation convention in the printed charge that does not enter the reformulation or the sourceless system.
+It is this identity that converts the source terms of the reformulation into the compact form $(18)$ below. The paper writes it as $\rho/\sqrt{\epsilon\mu}=-(i/2\pi\nu_{\Phi})\,\mathrm{div}\,\vec j_{\mathrm n}$, that is, it prints $\rho/\sqrt{\epsilon\mu}$ for the scalar $\mathrm{div}\,\vec{\mathcal E}=\rho/\epsilon$; the two differ by the impedance $Z=\sqrt{\mu/\epsilon}$, a normalisation convention in the printed charge that does not enter the reformulation or the sourceless system.
 
 The physical examples — DNA, the pupil of the eye, organic molecules, manufactured chiral metamaterials — fix the meaning of the class. They also warn against a purely formal interpretation: a chiral medium is not an abstract perturbation of an isotropic one but a distinct and experimentally rich class, whose linear response is the one described by the two relations above.
 
@@ -52,17 +52,17 @@ The physical examples — DNA, the pupil of the eye, organic molecules, manufact
 
 ### The normalised system
 
-Write the fields in the dimensionless normalisation
+Write the fields in the normalisation of integer dimension
 
 $$
-\vec{\mathcal E}=\frac{1}{\sqrt{\mu}}\,\vec E,
+\vec{\mathcal E}=\vec E,
 \qquad
-\vec{\mathcal H}=\frac{1}{\sqrt{\epsilon}}\,\vec H,
+\vec{\mathcal H}=Z\,\vec H,
 \qquad
-\vec j_{\mathrm n}=\frac{1}{\sqrt{\epsilon}}\,\vec j,
+\vec j_{\mathrm n}=Z\,\vec j,
 $$
 
-which balances the electric and magnetic halves in the same way as the field-strength biquaternion $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ of *The Field-Strength Biquaternion and Its Invariants*. Substituting the Drude–Born–Fedorov relations in the time-harmonic Maxwell equations and using $2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}$ gives the chiral system
+in which both halves are electric field strengths in volts per metre and the current slot is a field gradient in volts per square metre. This balances the electric and magnetic halves in the same way as the field-strength biquaternion $\tilde F=i\vec E-c\vec B$ of *The Field-Strength Biquaternion and Its Invariants*. The source's own §4 normalisation, which puts the square root of the permeability under the electric field and the square root of the permittivity under the magnetic field, differs from this one by a constant factor, and a constant factor does not change $(12)$. Substituting the Drude–Born–Fedorov relations in the time-harmonic Maxwell equations and using $2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}$ gives the chiral system
 
 $$
 \mathrm{rot}\,\vec{\mathcal E}=ik_\Phi\bigl(\vec{\mathcal H}+\beta\,\mathrm{rot}\,\vec{\mathcal H}\bigr),
@@ -109,7 +109,7 @@ D_3Ξ=-\mathrm{div}\,\vec{\mathcal E}+\mathrm{rot}\,\vec{\mathcal E}+i\,\mathrm{
 =2\pi\nu_{\Phi}Ξ+2\pi\nu_{\Phi}\beta\bigl(\mathrm{rot}\,\vec{\mathcal E}+i\,\mathrm{rot}\,\vec{\mathcal H}\bigr)+i\vec j_{\mathrm n}-\mathrm{div}\,\vec{\mathcal E},
 $$
 
-and the bracket is $D_3Ξ+\mathrm{div}\,\vec{\mathcal E}$. Collecting the $D_3Ξ$ terms gives $(D_3-2\pi\nu_{\Phi}^-)Ξ=i\vec j_{\mathrm n}/(1-2\pi\nu_{\Phi}\beta)-\mathrm{div}\,\vec{\mathcal E}$, and the continuity identity of the preceding section, $\mathrm{div}\,\vec{\mathcal E}=-(i/\nu_{\Phi})\,\mathrm{div}\,\vec j_{\mathrm n}$, turns the right-hand side into the first of equations $(18)$. The second follows by the same computation with $i\to-i$, which exchanges $\nu_{\Phi}^+$ and $\nu_{\Phi}^-$ and reverses the signs.
+and the bracket is $D_3Ξ+\mathrm{div}\,\vec{\mathcal E}$. Collecting the $D_3Ξ$ terms gives $(D_3-2\pi\nu_{\Phi}^-)Ξ=i\vec j_{\mathrm n}/(1-2\pi\nu_{\Phi}\beta)-\mathrm{div}\,\vec{\mathcal E}$, and the continuity identity of the preceding section, $\mathrm{div}\,\vec{\mathcal E}=-(i/2\pi\nu_{\Phi})\,\mathrm{div}\,\vec j_{\mathrm n}$, turns the right-hand side into the first of equations $(18)$. The second follows by the same computation with $i\to-i$, which exchanges $\nu_{\Phi}^+$ and $\nu_{\Phi}^-$ and reverses the signs.
 
 ### The sourceless system
 
@@ -124,10 +124,10 @@ $$
 
 Each equation is first order, scalar-shifted, and involves only one of the two combinations. Written in vectors, $(20)$ is the pair of **Beltrami** equations $\mathrm{rot}\,Ξ-2\pi\nu_{\Phi}^-Ξ=0$ and $\mathrm{rot}\,\tilde{Ξ}+2\pi\nu_{\Phi}^+\tilde{Ξ}=0$; purely vectorial solutions of $(D_3+\alpha)\vec f=0$ are the Beltrami fields, also called force-free fields. The reformulation is the procedure the authors call the **Bohren transformation** [Lakhtakia, Varadan and Varadan 1989]. Their point is not the vector form, which is classical, but that the quaternionic form $(20)$ is an equation of a type whose solutions carry a complete function theory, and that the results of the next sections are not reachable within three-dimensional vector calculus.
 
-**A bridge to the field-strength biquaternion.** The combination $Ξ$ is, up to a constant, the object the rest of the series calls the field strength. Let $\vec E,\vec H$ be the physical fields, $\vec{\mathcal E}=\vec E/\sqrt{\mu}$ and $\vec{\mathcal H}=\vec H/\sqrt{\epsilon}$ the normalised ones entering $Ξ$ (the source's §4 convention), and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ the field strength of the rest of the series (the source's §7 convention). With $c=1/\sqrt{\epsilon\mu}$,
+**A bridge to the field-strength biquaternion.** The combination $Ξ$ is, up to a constant, the object the rest of the series calls the field strength. Let $\vec E,\vec H$ be the physical fields, $\vec{\mathcal E}=\vec E$ and $\vec{\mathcal H}=Z\vec H$ the normalised ones entering $Ξ$, and $\tilde F=i\vec E-c\vec B=i\vec E-Z\vec H$ the field strength of the rest of the series. Then
 
 $$
-Ξ=\vec{\mathcal E}+i\vec{\mathcal H}=-ic\,\tilde F=ic\,\tilde F^{\natural},
+Ξ=\vec{\mathcal E}+i\vec{\mathcal H}=-i\,\tilde F=i\,\tilde F^{\natural},
 $$
 
 the two expressions agreeing because $\tilde F$ is a pure vector and $\tilde F^{\natural}=-\tilde F$ on the vectors. The chiral system is therefore the statement that $Ξ$ obeys a single first-order quaternionic equation with a scalar shift; the companion combination $\tilde{Ξ}$ obeys the shifted equation of the opposite shift. That is the precise sense in which the reformulation is a diagonalisation of the Maxwell operator by a complex structure already present in the algebra.
@@ -359,9 +359,9 @@ $$
 \tag{29}
 $$
 
-with the normalisation now applied locally, $\vec{\mathcal E}=\sqrt{\epsilon}\,\vec E$, $\vec{\mathcal H}=\sqrt{\mu}\,\vec H$ — the source's §7 normalisation, which differs from the §4 normalisation used above by the common factor $\sqrt{\epsilon\mu}=1/c$. The reformulation of the preceding sections does not survive unchanged, because the medium parameters no longer commute with the derivatives; but there is a regime in which it does.
+with the normalisation now applied locally, $\vec{\mathcal E}=\vec E/c$, $\vec{\mathcal H}=Z\vec H/c$ — the source's §7 normalisation, which differs from the §4 normalisation used above by the common factor $1/c$. The reformulation of the preceding sections does not survive unchanged, because the medium parameters no longer commute with the derivatives; but there is a regime in which it does.
 
-**Slowly changing media.** Put $\epsilon_{\mathrm{gr}}=\mathrm{grad}\sqrt{\epsilon}/\sqrt{\epsilon}$ and $\mu_{\mathrm{gr}}=\mathrm{grad}\sqrt{\mu}/\sqrt{\mu}$; these are the dimensionless vectors of §7, and $\epsilon_{\mathrm{gr}}/\nu_{\Phi}$, $\mu_{\mathrm{gr}}/\nu_{\Phi}$ are dimensionless too. In equation $(31)$ of the source the medium variation enters only through the multiplication operators $M_{\epsilon_{\mathrm{gr}}/\nu_{\Phi}}$ and $M_{\mu_{\mathrm{gr}}/\nu_{\Phi}}$. If $|\epsilon_{\mathrm{gr}}|,|\mu_{\mathrm{gr}}|\ll|\nu_{\Phi}|$ those two terms are negligible, and the diagonalisation survives: the two combinations
+**Slowly changing media.** Put $\epsilon_{\mathrm{gr}}=\tfrac12\,\mathrm{grad}\ln\epsilon$ and $\mu_{\mathrm{gr}}=\tfrac12\,\mathrm{grad}\ln\mu$ — the logarithmic gradients of the two medium constants, which is what the source's half powers amount to; these are the dimensionless vectors of §7, and $\epsilon_{\mathrm{gr}}/\nu_{\Phi}$, $\mu_{\mathrm{gr}}/\nu_{\Phi}$ are dimensionless too. In equation $(31)$ of the source the medium variation enters only through the multiplication operators $M_{\epsilon_{\mathrm{gr}}/\nu_{\Phi}}$ and $M_{\mu_{\mathrm{gr}}/\nu_{\Phi}}$. If $|\epsilon_{\mathrm{gr}}|,|\mu_{\mathrm{gr}}|\ll|\nu_{\Phi}|$ those two terms are negligible, and the diagonalisation survives: the two combinations
 
 $$
 Ξ=\vec{\mathcal E}+i\vec{\mathcal H},
@@ -468,9 +468,9 @@ The two things a reader should carry away are the two wavenumbers and the fact t
 | $2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}=\omega/c$ | Medium wavenumber |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $\vec D=\epsilon(\vec E+\beta\,\mathrm{rot}\,\vec E)$, $\vec B=\mu(\vec H+\beta\,\mathrm{rot}\,\vec H)$ | Drude–Born–Fedorov constitutive relations |
-| $\vec{\mathcal E}=\vec E/\sqrt{\mu}$, $\vec{\mathcal H}=\vec H/\sqrt{\epsilon}$ | §4 normalised fields of the reformulation |
-| $\vec j_{\mathrm n}=\vec j/\sqrt{\epsilon}$ | Normalised current density; the scalar of $(18)$ is $\mathrm{div}\,\vec{\mathcal E}$ |
-| $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion of the rest of the series (its §7 normalisation); $Ξ=-ic\tilde F$ |
+| $\vec{\mathcal E}=\vec E$, $\vec{\mathcal H}=Z\vec H$ | §4 normalised fields of the reformulation, both in $\mathrm{V\,m^{-1}}$ |
+| $\vec j_{\mathrm n}=Z\vec j$ | Normalised current density, in $\mathrm{V\,m^{-2}}$; the scalar of $(18)$ is $\mathrm{div}\,\vec{\mathcal E}$ |
+| $\tilde F=i\vec E-c\vec B=i\vec E-Z\vec H$ | Field-strength biquaternion of the rest of the series; $Ξ=-i\tilde F$ |
 | $Ξ=\vec{\mathcal E}+i\vec{\mathcal H}$, $\tilde{Ξ}=\vec{\mathcal E}-i\vec{\mathcal H}$ | The two diagonalising combinations; $\tilde{Ξ}=Ξ^{*}$ for real fields |
 | $\nu_{\Phi}^+=\nu_{\Phi}/(1+\nu_{\Phi}\beta)$, $\nu_{\Phi}^-=\nu_{\Phi}/(1-\nu_{\Phi}\beta)$ | The two chiral wavenumbers; both $=\nu_{\Phi}$ at $\beta=0$ |
 | $\mathrm{Sd}_\alpha=-\exp(i\theta_{\mathrm{shf}})e^{-\kappa_{\mathrm{dmp}}\lvert x\rvert}/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution, $\operatorname{Im}\alpha\ge0$ |

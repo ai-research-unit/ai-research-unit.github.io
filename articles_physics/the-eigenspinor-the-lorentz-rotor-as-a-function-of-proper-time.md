@@ -135,16 +135,16 @@ which is the condition under which $\langle\tilde{P}_{\Phi}\rangle_{\natural} = 
 The transcription to the Lorentz force is now a single identification. Recall that the field-strength biquaternion of the series is the pure vector
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
+\tilde{F} = i\vec E - c\vec B,
 $$
 
-so that $\vec E$ is the imaginary vector part and $\vec B = \mu\vec H$ the real vector part. The rotation rate of a charge $ϙ$ in this field is
+so that $\vec E$ is the imaginary vector part and $\vec B = \mu\vec H$ the real vector part up to the factor $c$. The rotation rate of a charge $ϙ$ in this field is
 
 $$
-\boxed{\;\vec\Omega_{\mathrm{LT}} = -\frac{ϙ}{m}\left(\frac{i}{c}\vec E + \vec B\right) = -\frac{ϙ}{m}\,\tilde{F}^{*}\;}
+\boxed{\;\vec\Omega_{\mathrm{LT}} = -\frac{ϙ}{m}\left(\frac{i}{c}\vec E + \vec B\right) = -\frac{ϙ}{mc}\,\tilde{F}^{*}\;}
 $$
 
-in the units of the field-strength article, where $\vec H$ is quoted in the units of $\vec B$ so that $\sqrt{\mu_0}\,\vec H=\vec B$ and $\sqrt{\epsilon_0}=1/c$, and $\tilde{F}^{*} = i\sqrt{\epsilon}\vec E + \sqrt{\mu}\vec H = i\vec E/c + \vec B$. The rate is a pure vector, so it preserves the norm, and the minus sign is the one fixed by using the rest-to-lab eigenspinor; with the lab-to-moving rotor the sign is reversed. Substituting into the equation of motion gives
+with $\tilde{F}^{*} = i\vec E + c\vec B$, so that $\tilde{F}^{*}/c = i\vec E/c + \vec B$ is the combination the rotation rate carries. The rate is a pure vector, so it preserves the norm, and the minus sign is the one fixed by using the rest-to-lab eigenspinor; with the lab-to-moving rotor the sign is reversed. Substituting into the equation of motion gives
 
 $$
 \frac{d\tilde{P}_{\Phi}}{d\tau} = -\frac{ϙ}{m}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{F}^{*}\tilde{P}_{\Phi}\right)
@@ -162,7 +162,7 @@ of the component-form section of *The Lorentz Force in Biquaternion Form*.
 **Consistency with the product formula.** The companion articles write the force as
 
 $$
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -ϙ\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right),
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -ϙZ\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right),
 $$
 
 with the velocity on the **left** and $\tilde{F}$ itself rather than $\tilde{F}^{*}$. The eigenspinor route puts the field on the left and uses the conjugate. The two expressions are different-looking but equal; both reproduce the component $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$, and their difference is a genuine algebraic identity, not an approximation. What the eigenspinor supplies is not a new formula for the force but the **linear object** — the rotor — whose quadratic product is the four-momentum and whose rate is the field.
@@ -252,7 +252,7 @@ $$
 = \tfrac12\left(\vec\Omega_{\mathrm{LT}}\tilde{P}_{\Phi} + \tilde{P}_{\Phi}\vec\Omega_{\mathrm{LT}}^{*}\right).
 $$
 
-With the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and the identification $\vec\Omega_{\mathrm{LT}} = -(ϙ/m)\tilde{F}^{*}$ (Heaviside–Lorentz units), this is the Lorentz four-force of the companion article, and it agrees with the companion's product form $-ϙ\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}(\tilde{V}_{\Phi}\tilde{F})$. Under a change of frame the eigenspinor transforms one-sidedly, $\tilde U\to\tilde U_{\mathrm{lor}}\tilde U$, the spinor law of *The Spinor Module*. In a uniform field the evolution integrates to $\tilde U = \exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)\tilde U(0)$.
+With the field-strength biquaternion $\tilde{F} = i\vec E - c\vec B$ and the identification $\vec\Omega_{\mathrm{LT}} = -(ϙ/(mc))\tilde{F}^{*}$ (Heaviside–Lorentz units), this is the Lorentz four-force of the companion article, and it agrees with the companion's product form $-ϙZ\,P_{\mathbb{B}_{\Phi}}(\tilde{V}_{\Phi}\tilde{F})$. Under a change of frame the eigenspinor transforms one-sidedly, $\tilde U\to\tilde U_{\mathrm{lor}}\tilde U$, the spinor law of *The Spinor Module*. In a uniform field the evolution integrates to $\tilde U = \exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)\tilde U(0)$.
 
 The eigenspinor does not remove the obstruction recorded in *The Lorentz Force in Biquaternion Form* to writing $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ as a single product of $\tilde{F}$ with $\tilde{V}_{\Phi}$. It offers a different route, in which the force has a **linear** source — the rotor and its rate — and the product formula is a derived corollary.
 
@@ -265,8 +265,8 @@ The eigenspinor does not remove the obstruction recorded in *The Lorentz Force i
 | $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$ | Four-momentum, in the material sector $\mathbb{B}_{\Phi}$ |
 | $imc\,e_t$ | Rest four-momentum (central) |
 | $\vec\Omega_{\mathrm{LT}}$ | Spacetime rotation rate, the generator of the Lorentz transformation; a pure vector, $\vec\Omega_{\mathrm{LT}}^{\natural} = -\vec\Omega_{\mathrm{LT}}$ |
-| $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ | Field-strength biquaternion |
-| $\tilde{F}^{*}$ | Its conjugate, $i\sqrt{\epsilon}\vec E + \sqrt{\mu}\vec H$ |
+| $\tilde{F} = i\vec E - c\vec B$ | Field-strength biquaternion |
+| $\tilde{F}^{*}$ | Its conjugate, $i\vec E + c\vec B$ |
 | $P_{\mathbb{B}_{\Phi}}(\tilde{Q}) = \tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
 | $\tilde{E}_{\Phi,(\imath)} = \tilde U\mathcal{E}_{\imath}\tilde U^{*}$ | Eigenframe (tetrad) along the worldline |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | Four-velocity |

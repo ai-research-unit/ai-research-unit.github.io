@@ -173,7 +173,7 @@ F_{k\kappa}=D_{\imath} A_\kappa-D_\kappa A_{\imath},
 D_{\imath}=\frac{\partial}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath} .
 $$
 
-The six real components of $\tilde F$ are the six field-strength components, and the $\sqrt{\epsilon}$, $\sqrt{\mu}$ normalization of the free article's display $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ is carried by the coefficients.
+The six real components of $\tilde F$ are the six field-strength components, and the medium normalization of the free article's display $\tilde F=i\vec E-c\vec B$ is carried by the coefficients.
 
 **The connection does not cancel, and this is the structural difference from the ordinary abelian curl.** For a neutral field strength built from a potential that shifts by a gradient, the connection terms cancel in the antisymmetric combination, because $D_{\imath} A_{\jmath}$ and $D_{\jmath} A_{\imath}$ carry the *same* connection coefficient. Here the potential is charged: it multiplies by $\digamma_{\mathrm{gau}}$ and the connection shifts, so the two statements are independent, and
 

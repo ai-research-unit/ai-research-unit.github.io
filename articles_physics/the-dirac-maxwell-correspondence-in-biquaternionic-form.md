@@ -49,12 +49,12 @@ $$
 \mathrm{rot}\,\vec H = 0, \qquad \mathrm{rot}\,\vec E = 0, \qquad \mathrm{div}(\epsilon\vec E) = 0, \qquad \mathrm{div}(\mu\vec H) = 0 ,
 $$
 
-carries its position dependence only through the two divergence equations, and on the normalised fields $\vec E_{\mathrm n} := \sqrt{\epsilon}\,\vec E$, $\vec H_{\mathrm n} := \sqrt{\mu}\,\vec H$ it becomes the pair of first-order equations with constant-free leading part,
+carries its position dependence only through the two divergence equations, and on the normalised fields $\vec E_{\mathrm n} := e^{G}\,\vec E$, $\vec H_{\mathrm n} := e^{G_2}\,\vec H$, with $\epsilon=e^{2G}$ and $\mu=e^{2G_2}$ the dimensionless dielectric functions, it becomes the pair of first-order equations with constant-free leading part,
 
 $$
 D\vec E_{\mathrm n} + \vec E_{\mathrm n}\vec G = 0, \qquad D\vec H_{\mathrm n} + \vec H_{\mathrm n}\vec G_2 = 0,
 \qquad
-\vec G := \frac{\mathrm{grad}\sqrt{\epsilon}}{\sqrt{\epsilon}}, \quad \vec G_2 := \frac{\mathrm{grad}\sqrt{\mu}}{\sqrt{\mu}} ,
+\vec G := \mathrm{grad}\,G, \quad \vec G_2 := \mathrm{grad}\,G_2 ,
 $$
 
 which is the **carrier identity** of *Electromagnetism in Media — The Local Complex Structure at Work*, read in the static case, where no time coordinate is present and the operator is the Moisil–Theodorescu operator $D$ alone, in the corpus's normalization $D=i\vec\nabla_\Phi$. The Dirac side has the same shape: the massive equation with an electric potential, and separately with a scalar potential, becomes after the dictionary a first-order equation whose only position dependence is a coefficient multiplying one basis direction, as recorded in *The Dirac Equation in Biquaternionic Form*, §*The Dirac Operator with Potentials in Quaternionic Form*. Matching the two shapes, the 2003 paper concludes that a solution of the Dirac equation with an electric or a scalar potential is a solution of the static Maxwell system of an isotropic inhomogeneous medium, the medium being the potential read as a parameter:
@@ -63,9 +63,9 @@ $$
 \epsilon = \exp(\,2G(r_x)), \qquad G(r_x) = \int g(r_x)\,dr_x ,
 $$
 
-with $g$ the Dirac potential. The identification is a statement about **coefficients** and not about fields: the potential is the logarithmic derivative of the square root of the permittivity, $\vec G = \mathrm{grad}\,G$, which is checked at once from $\sqrt{\epsilon} = \exp(G)$. What the correspondence does not do is identify the Dirac field with the electromagnetic field — the Dirac biquaternion and the field-strength biquaternion are different objects, and the matching is at the level of the equations they solve, with the restriction $\mathrm{Sc} = 0$ on the Maxwell side. The corpus records it because both ends already exist here, the carrier function of the media article and the potential coupling of the Dirac article, and this is the statement that joins them.
+with $g$ the Dirac potential. The identification is a statement about **coefficients** and not about fields: the potential is half the logarithmic derivative of the permittivity, $\vec G = \mathrm{grad}\,G$, which is checked at once from $\epsilon = \exp(2G)$. What the correspondence does not do is identify the Dirac field with the electromagnetic field — the Dirac biquaternion and the field-strength biquaternion are different objects, and the matching is at the level of the equations they solve, with the restriction $\mathrm{Sc} = 0$ on the Maxwell side. The corpus records it because both ends already exist here, the carrier function of the media article and the potential coupling of the Dirac article, and this is the statement that joins them.
 
-**What is quoted.** The source's own forms of the two reduced operators, for the electric and for the scalar potential, are partly illegible in the scan. What is legible, and what is recorded above, is the shape of the reduction, the normalisation by $\sqrt{\epsilon}$, and the parameter $\epsilon = \exp(2G)$ with $\vec G = \mathrm{grad}\,G$; the identification of the potential with an inhomogeneity of that form is the source's statement, carried here as such.
+**What is quoted.** The source's own forms of the two reduced operators, for the electric and for the scalar potential, are partly illegible in the scan. What is legible, and what is recorded above, is the shape of the reduction, the normalisation by $e^{G}$, and the parameter $\epsilon = \exp(2G)$ with $\vec G = \mathrm{grad}\,G$; the identification of the potential with an inhomogeneity of that form is the source's statement, carried here as such.
 
 ## The Mass Shell as the Condition on the Dirac–Maxwell Correspondence
 

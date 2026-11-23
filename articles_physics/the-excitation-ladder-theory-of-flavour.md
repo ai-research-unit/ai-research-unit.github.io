@@ -10,7 +10,7 @@ The hypothesis is that there are no elementary particles, only fields and their 
 
 The ontology is not new. Quantum field theory already holds that a particle is a pole of a propagator, that fields are primary, and that no object has a measured radius. What is new is only the second clause, that the flavours are rungs of a single tower, so that rung $n+1$ is built from the same medium as rung $n$. Everything below tests that clause and nothing else.
 
-The verdict can be given first. The ladder fails if its rungs are counted in mass. It works if they are counted in amplitude: the steps then grow by a constant factor, and three rungs follow from two numbers. That is a reading of the spacings and no derivation of them, and the two are kept apart throughout.
+The verdict can be given first. The ladder fails if its rungs are counted in mass. It works if they are counted in the square root of the mass: the steps then grow by a constant factor, and three rungs follow from two numbers. That is a reading of the spacings and no derivation of them, and the two are kept apart throughout.
 
 ## Flavour Is a Level, Not a Charge
 
@@ -49,70 +49,85 @@ The naive form of the theory is therefore excluded, and it is worth saying so in
 
 The corpus's own algebra gives an independent warning. The biquaternion algebra is a field-first framework with a module and spin structures, and it has no dispersion relation. It cannot produce a ladder in any variable, because a ladder is dynamics and the algebra is kinematics. That is the same reason the corpus cannot count generations, recorded as a negative result in [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html).
 
-## The Ladder Works in Amplitude
+## The Ladder Works in the Square Root
 
-In a medium amplitudes add and energies go as the square of an amplitude, so the natural variable is not $m$ but $\sqrt m$:
-
-$$
-\sqrt{m_e}=0.7148,\qquad \sqrt{m_\mu}=10.279,\qquad \sqrt{m_\tau}=42.153 .
-$$
-
-The steps in amplitude grow where the steps in mass shrank:
+Take the square root of the mass ratios, with rung 1 as the unit. Writing
 
 $$
-10.279-0.7148=9.564,
+a_i:=\sqrt{\frac{m_i}{m_1}},
+$$
+
+so that $a_1=1$ and no unit appears anywhere, the charged leptons give
+
+$$
+a_2=14.379,\qquad a_3=58.968 .
+$$
+
+The steps in the square root grow where the steps in mass shrank:
+
+$$
+14.379-1=13.379,
 \qquad
-42.153-10.279=31.874,
+58.968-14.379=44.589,
 \qquad
-\frac{31.874}{9.564}=3.333 .
+\frac{44.589}{13.379}=3.3326 .
 $$
 
-A mass tower that compresses by $12.3$ is an amplitude tower that expands by $10/3$. The two statements carry the same information, and only the second is the one a wave picture produces.
+The consecutive mass ratios fall by $12.3$; the steps in the square root grow by $3.3326$, which is $10/3$ to $0.02$ per cent. The second is the statement in which the two steps are comparable in size.
 
-| variable | step 1 | step 2 | the step |
+| variable | first value | second value | the change |
 |---|---|---|---|
-| mass | $206.77$ | $16.82$ | shrinks by $12.3$ |
-| $\sqrt m$ | $9.564$ | $31.874$ | grows by $3.333$ |
-| $\log m$ | $5.332$ | $2.823$ | shrinks by $1.889$ |
+| $m_{i+1}/m_i$ | $206.77$ | $16.82$ | shrinks by $12.3$ |
+| $\Delta\sqrt{m_i/m_1}$ | $13.379$ | $44.589$ | grows by $3.3326$ |
+| $\Delta\ln(m_i/m_1)$ | $5.332$ | $2.822$ | shrinks by $1.889$ |
 
 No column is constant, so the ladder is not an equal-spacing tower in any of these variables. That is the honest reading, and it moves the question from the spacing to the count.
 
+**The square root has a name in the coupling sector.** The mass of a fermion is its Yukawa coupling to the vacuum value, $y_f=\sqrt2\,m_f/v$, so the square root of a mass is the square root of a coupling and nothing more. The ratios above are the ratios $a_i=\sqrt{y_i/y_1}$, dimensionless, and no wave equation enters their definition. The variable is chosen because the two steps are then in a constant ratio; that is a property of the measured spectrum and not a derivation.
+
 ## Koide's Relation, Stated
 
-Koide's relation, stated in 1981 for the charged leptons and not derived since, is
+Koide's relation, stated in 1981 for the charged leptons and not derived since, is a statement about two mass ratios and nothing else. Dividing the printed form, a sum of masses over the square of a sum of their roots, by $m_1$ leaves the masses together, since every mass appears once above and its root once below, and what remains is two numbers. Writing
 
 $$
-Q=\frac{m_1+m_2+m_3}{\left(\sqrt{m_1}+\sqrt{m_2}+\sqrt{m_3}\right)^{2}}=\frac{2}{3}.
+\rho_2:=\frac{m_2}{m_1},\qquad \rho_3:=\frac{m_3}{m_1},
 $$
 
-With the PDG masses $m_e=9.1094\times10^{-31}$ kg, $m_\mu=1.8835\times10^{-28}$ kg and $m_\tau=3.1677\times10^{-27}$ kg, the amplitudes, their sums and the ratio are
+the relation is
+
+$$
+Q=\frac{1+\rho_2+\rho_3}{\left(1+\sqrt{\rho_2}+\sqrt{\rho_3}\right)^{2}}=\frac{2}{3}.
+$$
+
+With the PDG masses $m_e=0.510\,998\,95$ MeV, $m_\mu=105.658\,375\,5$ MeV and $m_\tau=1776.86$ MeV, the two ratios, their roots and the ratio are
 
 | quantity | value |
 |---|---|
-| $\sqrt{m_e}$ | $9.544\times10^{-16}\ \mathrm{kg}^{1/2}$ |
-| $\sqrt{m_\mu}$ | $1.3724\times10^{-14}\ \mathrm{kg}^{1/2}$ |
-| $\sqrt{m_\tau}$ | $5.628\times10^{-14}\ \mathrm{kg}^{1/2}$ |
-| $m_1+m_2+m_3$ | $3.357\times10^{-27}\ \mathrm{kg}$ |
-| $(\sqrt{m_1}+\sqrt{m_2}+\sqrt{m_3})^{2}$ | $5.035\times10^{-27}\ \mathrm{kg}$ |
-| $Q$ | $0.66666051$ |
+| $\rho_2=m_\mu/m_e$ | $206.768\,28$ |
+| $\sqrt{\rho_2}$ | $14.379\,44$ |
+| $\rho_3=m_\tau/m_e$ | $3477.228\,28$ |
+| $\sqrt{\rho_3}$ | $58.968\,03$ |
+| $1+\rho_2+\rho_3$ | $3684.996\,56$ |
+| $\left(1+\sqrt{\rho_2}+\sqrt{\rho_3}\right)^{2}$ | $5527.545\,88$ |
+| $Q$ | $0.666\,660\,51$ |
 
-The measured $Q$ falls below $\tfrac23$ by $6.2\times10^{-6}$ in absolute value, which is $9.2$ parts per million of $\tfrac23$, on three measured numbers.
+The measured $Q$ falls below $\tfrac23$ by $6.2\times10^{-6}$ in absolute value, which is $9.2$ parts per million of $\tfrac23$, on two measured ratios. Nothing in the display carries a unit: every quantity in it is a quotient of two masses, which is why the choice of mass unit or mass standard cancels.
 
-**Why it is stated here.** The variable of this article is the amplitude $a_i=\sqrt{m_i}$, so Koide's ratio is written in the ladder's own variable:
+**Why it is stated here.** The variable of this article is the square root of the mass ratio, $a_i=\sqrt{\rho_i}$ with $a_1=1$, so Koide's ratio is written in the ladder's own variable:
 
 $$
-Q=\frac{a_1^{2}+a_2^{2}+a_3^{2}}{(a_1+a_2+a_3)^{2}}=\frac13\left(1+\left(\frac{\sigma_a}{\bar a}\right)^{2}\right),
+Q=\frac{1+a_2^{2}+a_3^{2}}{(1+a_2+a_3)^{2}}=\frac13\left(1+\left(\frac{\sigma_a}{\bar a}\right)^{2}\right),
 $$
 
-with $\bar a$ the mean amplitude and $\sigma_a$ the standard deviation of the three. The bracket is an identity and not a fit, so $Q=\tfrac23$ is exactly the statement $\sigma_a/\bar a=1$: the three amplitudes are as spread as their own mean. The measured spread is $0.9999908$, and the same number read as an angle, $\omicron_{\mathrm{ang}}=\arccos\left(1/\sqrt{3Q}\right)$, is $44.9997^{\circ}$.
+with $\bar a$ the mean of the three $a_i$ and $\sigma_a$ their standard deviation. The bracket is an identity and not a fit, so $Q=\tfrac23$ is exactly the statement $\sigma_a/\bar a=1$: the three roots are as spread as their own mean. The measured spread is $0.999\,990\,8$, not $1$ by $9\times10^{-6}$, and the same number read as an angle, $\arccos\left(1/\sqrt{3Q}\right)$, is $44.9997^{\circ}$.
 
 **Why it is not evidence for the ladder.** The ladder sets an interval between neighbouring rungs and places no condition on a combination of the three masses, so Koide's relation is neither derived here nor used here. It is a measured arithmetic on three numbers, and the corpus records it as one. The numeral $\tfrac23$ also appears in the model as a trace ratio of one to three, in [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html), and the two are not the same statement: one is a dimension of a representation and the other a ratio of masses. That they coincide in value is recorded and not explained.
 
 ## No Exact Closure
 
-**The amplitude ladder fixes spacings and predicts no sum, so this article claims no exact numerical closure.** A wave ladder sets the interval between neighbouring rungs. It places no condition on a combination of three masses. Koide's relation, stated above, is the sharpest case of such a combination: three measured numbers land near a simple fraction, the ladder neither derives it nor uses it, and it is not counted here as evidence.
+**The square-root ladder fixes spacings and predicts no sum, so this article claims no exact numerical closure.** A ladder sets the interval between neighbouring rungs. It places no condition on a combination of three masses. Koide's relation, stated above, is the sharpest case of such a combination: two measured ratios land near a simple fraction, the ladder neither derives it nor uses it, and it is not counted here as evidence.
 
-**What the ladder gives is the growth of the steps and the count.** The two amplitude steps are $9.564$ and $31.874$, a growth of $3.333$, and that growth is a property of the two spacings and of nothing else. *The Count Is Three* takes the count as measured. Those are the two things this article offers, and it stops there.
+**What the ladder gives is the growth of the steps and the count.** The two steps in the square root are $13.379$ and $44.589$, a growth of $3.3326$, and that growth is a property of the two spacings and of nothing else. *The Count Is Three* takes the count as measured. Those are the two things this article offers, and it stops there.
 
 No mass and no scale is predicted. The arithmetic on the spacings and the fits that fix the count for the charged leptons are kept in [Flavour Research: The Ladder Arithmetic](../articles_internal/flavour-research.html), so that this article carries the idea and not its calculus.
 
@@ -181,16 +196,16 @@ What the theory does not owe is a derivation of three. Three is what the charged
 | why flavour is not a charge | explained by the model's structure, *Flavour Is a Level, Not a Charge* |
 | why rung 1 is stable | explained by conservation, *Flavour Is a Level, Not a Charge* |
 | why the naive mass ladder fails | quantified, *The Ladder Fails in Mass* |
-| the amplitude variable | motivated, with no equally good alternative, *The Ladder Works in Amplitude* |
+| the square-root variable | chosen because the two steps are then in the ratio $10/3$; not derived, *The Ladder Works in the Square Root* |
 | an exact numerical closure | none claimed, *No Exact Closure* |
 | Koide's relation | stated, measured, not derived, *Koide's Relation, Stated* |
 | why this tower counts three | measured, not derived, *The Count Is Three* |
 | why no fourth rung is added | the ladder is closed, *The Count Is Three* |
-| a derivation of the amplitude step | absent |
+| a derivation of the square-root step | absent |
 | a derivation of the scale and phase | absent |
 | a derivation of any quark mass | absent |
 
-The amplitude ladder reproduces the spacings of one tower and derives nothing further. What the theory adds is the count: rungs of one tower, spaced in amplitude, with the count fixed by measurement and not by principle.
+The square-root ladder reproduces the spacings of one tower and derives nothing further. What the theory adds is the count: rungs of one tower, spaced in the square root of the mass ratio, with the count fixed by measurement and not by principle.
 
 The scope is equally plain. The quantum numbers of one generation are derived, in the classification article. The three copies and every flavour-breaking parameter are input, here. The theory adds a reading of the second and not a derivation of it.
 
@@ -218,25 +233,30 @@ Every number below was recomputed from the measured masses before it was written
 | the mass step, second | $1776.86/105.658$ | $16.82$ |
 | the steps against a geometric ladder | $206.77$ against $16.82$ | shrinks by $12.3$ |
 | the ladder against integer quanta | $2$ and $3$ | off by $207$ and $3477$ |
-| the amplitude gaps | $10.279-0.7148$, $42.153-10.279$ | $9.564$, $31.874$ |
-| the amplitude steps | $31.874/9.564$ | $3.333$ |
+| the gaps in the square root | $14.379-1$, $58.968-14.379$ | $13.379$, $44.589$ |
+| the step ratio in the square root | $44.589/13.379$ | $3.3326$, against $10/3$ by $0.02\%$ |
 | the logarithmic steps | $\ln 206.77$, $\ln 16.82$ | $5.332$, $2.823$ |
 | the thermal ratio at $1.76\times10^{12}$ K | $e^{-(m_\mu-m_e)c^2/k_BT}$ | $0.501$ |
 | the thermal ratio at $2.97\times10^{13}$ K | $e^{-(m_\tau-m_e)c^2/k_BT}$ | $0.500$ |
 | the width ratio against the fifth power | $1.3486\times10^{6}$ against $1.3451\times10^{6}$ | agrees to 0.26 per cent |
-| Koide's ratio | $1883.0294/2824.5701$ | $0.66666051$ against $2/3$ |
-| Koide's spread | $\sigma_a/\bar a$ from the three amplitudes | $0.9999908$ |
+| Koide's ratio | $(1+206.768\,28+3477.228\,28)/(1+14.379\,44+58.968\,03)^{2}$ | $0.666\,660\,51$ against $2/3$ |
+| Koide's spread | $\sigma_a/\bar a$ from $a_i=\sqrt{\rho_i}$ | $0.999\,990\,8$ |
 | Koide's angle | $\arccos(1/\sqrt{3Q})$ | $44.9997^{\circ}$ |
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $Q$ | Koide's ratio, $\sum m/(\sum\sqrt{m})^{2}$, measured $0.66666051$ |
-| $a_i=\sqrt{m_i}$ | the amplitude of a rung, the ladder's variable |
+| $\rho_i$ | the mass ratio $m_i/m_1$; $\rho_1=1$, $\rho_2=206.768\,28$, $\rho_3=3477.228\,28$ |
+| $a_i$ | the root $\sqrt{\rho_i}$; $a_1=1$, $a_2=14.379\,44$, $a_3=58.968\,03$ |
+| $Q$ | Koide's ratio, $(1+\rho_2+\rho_3)/(1+\sqrt{\rho_2}+\sqrt{\rho_3})^{2}$, measured $0.666\,660\,51$ |
+| $\rho_i=m_i/m_1$ | the mass ratio of rung $i$ to rung 1; $\rho_2=206.768\,28$, $\rho_3=3477.228\,28$ |
+| $a_i=\sqrt{\rho_i}$ | the square root of that ratio, the ladder's variable; $a_1=1$, $a_2=14.379\,44$, $a_3=58.968\,03$ |
 | the rung count | three for every tower, measured and not derived |
 | $i=1,2,3$ | the rung index |
 | rung | a level of combined excitation, a pole with a mass |
+
+The letter $\rho$ carries the mass ratio in this article and is given the subscript of the rung it belongs to, so that it cannot be read for the charge density of the field articles or the number density $\rho_{\mathrm{num}}$ of the polar ones.
 
 ## Further Reading
 

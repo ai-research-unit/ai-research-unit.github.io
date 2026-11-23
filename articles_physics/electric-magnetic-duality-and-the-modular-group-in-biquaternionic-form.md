@@ -55,7 +55,7 @@ This article's claim is a structural statement, and it is a result rather than a
 In the source-free Maxwell theory the duality rotation is an obvious symmetry of the equations. Writing the field-strength biquaternion and its dual,
 
 $$
-F_{\mathrm{dual}}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H ,
+F_{\mathrm{dual}}=i\vec E-c\vec B ,
 \qquad
 F_{\mathrm{dual},\star}=-iF_{\mathrm{dual}} ,
 $$
@@ -71,10 +71,10 @@ This is the framework's crispest statement about duality. The phase $\exp(-i\the
 With sources the rotation is promoted from a symmetry of the free equation to a symmetry of the sourced one when the source rotates with the field: the equation
 
 $$
-\tilde\nabla_\Phi F_{\mathrm{dual}}=-\sqrt{\mu}\,\tilde J_{\Phi}
+\tilde\nabla_\Phi F_{\mathrm{dual}}=-Z\,\tilde J_{\Phi}
 $$
 
-is invariant under $F_{\mathrm{dual}}\mapsto \exp(-i\theta_{\mathrm{dua}})F_{\mathrm{dual}}$ together with $\tilde J_{\Phi}\mapsto \exp(-i\theta_{\mathrm{dua}})\tilde J_{\Phi}$, because the phase multiplies the single source term. At $\theta_{\mathrm{dua}}=\pi/2$ the rotated source is $i\sqrt{\mu}\,\tilde J_{\Phi}$, a term of magnetic form proportional to the electric current. The continuous rotation therefore generates a magnetic term from the electric one, and it does not act on a second, independent current. The rotation is exact, internal and central; its parameter is continuous.
+is invariant under $F_{\mathrm{dual}}\mapsto \exp(-i\theta_{\mathrm{dua}})F_{\mathrm{dual}}$ together with $\tilde J_{\Phi}\mapsto \exp(-i\theta_{\mathrm{dua}})\tilde J_{\Phi}$, because the phase multiplies the single source term. At $\theta_{\mathrm{dua}}=\pi/2$ the rotated source is $iZ\,\tilde J_{\Phi}$; a term of magnetic form proportional to the electric current. The continuous rotation therefore generates a magnetic term from the electric one, and it does not act on a second, independent current. The rotation is exact, internal and central; its parameter is continuous.
 
 ## The Complex Coupling and the Modular Group
 
@@ -210,7 +210,7 @@ Two consequences for the framework follow. First, the discreteness of the lattic
 The separation between what the algebra gives and what is imported is unusually clean in this article.
 
 - **The algebra gives the continuous rotation.** The duality rotation $F_{\mathrm{dual}}\mapsto \exp(-i\theta_{\mathrm{dua}})F_{\mathrm{dual}}$ is multiplication by an element of the unit circle of the centre $\mathbb C_{\mathbb B}$, which is a one-parameter continuous subgroup of the algebra's units. It is internal, central, and exact for the sourced equations. The framework's duality group, on its own, is $\mathrm{U}(1)$.
-- **The algebra gives the shape of the action on the field.** That the rotation exchanges the real and imaginary halves of $F_{\mathrm{dual}}$, that its generator is $ie_t$, that Hodge duality is the special case $\theta_{\mathrm{dua}}=\pi/2$ with $F_{\mathrm{dual},\star}=-iF_{\mathrm{dual}}$, and that the rotation is Lorentz-trivial are all algebraic statements read off from $F_{\mathrm{dual}}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ and the centrality of $i$. These are genuine results of the framework, and they fix the form of the duality.
+- **The algebra gives the shape of the action on the field.** That the rotation exchanges the real and imaginary halves of $F_{\mathrm{dual}}$, that its generator is $ie_t$, that Hodge duality is the special case $\theta_{\mathrm{dua}}=\pi/2$ with $F_{\mathrm{dual},\star}=-iF_{\mathrm{dual}}$, and that the rotation is Lorentz-trivial are all algebraic statements read off from $F_{\mathrm{dual}}=i\vec E-c\vec B$ and the centrality of $i$. These are genuine results of the framework, and they fix the form of the duality.
 - **The algebra does not give the discrete group.** A continuous centre cannot generate a discrete group, and no element of $\mathbb C_{\mathbb B}$ has the effect of $T:\theta_{\mathrm{dua}}\to\theta_{\mathrm{dua}}+2\pi$ on the spectrum except through the integer topological charge. The group $SL(2,\mathbb Z)$ arises from two imports: the quantisation of electric and magnetic charge, which is the Dirac condition and hence quantum physics, and the integrality of the topological charge, which is the instanton sector of *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form*. The modular group is thus a symmetry of the *quantum* theory with magnetic charges, not of the classical algebra.
 - **The algebra gives the self-dual point.** The exchange $g\leftrightarrow4\pi/g$ has its fixed point at $g^2=4\pi$, which is a statement about the coupling and not about the algebra; the algebra fixes only that the duality is a rotation by $\pi/2$ in the internal phase and that the rotation is of order four, since $\exp(-i\pi/2)=-i$ and $(-i)^2=-1$. The order-four character of the duality is the algebraic shadow of the order of $S$ modulo the centre.
 
@@ -243,10 +243,10 @@ The framework supplies the continuous $\mathrm{U}(1)$ duality intrinsically, bec
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra |
 | $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ | Centre; the continuous duality $\mathrm{U}(1)$ |
 | $i$ | Central scalar imaginary; generator of the duality rotation |
-| $F_{\mathrm{dual}}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field-strength biquaternion |
+| $F_{\mathrm{dual}}=i\vec E-c\vec B$ | Field-strength biquaternion |
 | $F_{\mathrm{dual},\star}=-iF_{\mathrm{dual}}$ | Hodge dual; duality rotation at $\theta_{\mathrm{dua}}=\pi/2$ |
 | $I_2=\vec E\cdot\vec B$ | Second invariant; CP-odd pseudoscalar |
-| $\tilde J_{\Phi}$ | Electric four-current, entering as $\sqrt{\mu}\,\tilde J_{\Phi}$ |
+| $\tilde J_{\Phi}$ | Electric four-current, entering as $Z\,\tilde J_{\Phi}$ |
 | $\theta_{\mathrm{dua}}$ | Theta angle; parameter of the internal rotation |
 | $\tau=\frac{\theta_{\mathrm{dua}}}{2\pi}+\frac{4\pi i}{g^2}$ | Complex coupling, upper half-plane |
 | $g$ | Gauge coupling |

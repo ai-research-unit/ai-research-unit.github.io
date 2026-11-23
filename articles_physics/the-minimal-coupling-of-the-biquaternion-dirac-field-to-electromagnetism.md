@@ -309,7 +309,7 @@ This is the biquaternion form of the standard fact that a mass term linear in th
 
 ## The Interaction Current and the Maxwell Source
 
-Minimal coupling has a second half: the coupled field must **source** the electromagnetic field. In the biquaternion framework the sourced Maxwell equation is $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, and the four-current $\tilde J_{\Phi}$ satisfies the integrability condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$, the biquaternionic form of charge conservation.
+Minimal coupling has a second half: the coupled field must **source** the electromagnetic field. In the biquaternion framework the sourced Maxwell equation is $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$, and the four-current $\tilde J_{\Phi}$ satisfies the integrability condition $Z\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$, the biquaternionic form of charge conservation.
 
 The natural candidate for the current of the Dirac field is the bilinear
 
@@ -381,7 +381,7 @@ The right-hand side is the pairing of the boson potential with the matter source
 
 The source notes the two-field coincidence, where the identity reads $\epsilon_0\vec E^2 - \vec B^2/\mu_0 = \xi\rho - \vec A\cdot\vec J$, that is, $\frac{1}{2\mu_0}\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath} = -\sum_{\jmath} A_{\jmath} J_{\jmath}$ in the $({+}{-}{-}{-})$ sign convention, the minus being that convention's; the mixed form above is the general one.
 
-**Domain.** The matter fields of the source are built from its own biquaternion Dirac field, in its own conventions, and are read off a Maxwell-like system that costs one of the field's four coefficient components: the source fixes that component by a linear relation to the other three, and its Appendix B gives the modified system that replaces the relation, with an extra real field appearing in all four equations. The identity is therefore stated on the constrained system, and it concerns the source's field strengths, not the corpus's $\tilde{Ξ}$ or its $\sqrt{\mu}\,\tilde{J}_{\Phi}$.
+**Domain.** The matter fields of the source are built from its own biquaternion Dirac field, in its own conventions, and are read off a Maxwell-like system that costs one of the field's four coefficient components: the source fixes that component by a linear relation to the other three, and its Appendix B gives the modified system that replaces the relation, with an extra real field appearing in all four equations. The identity is therefore stated on the constrained system, and it concerns the source's field strengths, not the corpus's $\tilde{Ξ}$ or its $Z\,\tilde{J}_{\Phi}$.
 
 Written as a residual, with the source's own residual combinations $r_5,\dots,r_8$ of its fields — the vectors $\vec r_6,\vec r_7$ and the scalars $r_5,r_8$ —
 
@@ -425,7 +425,7 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 
 3. **The interaction current.** The gauge-invariant bilinear $i\tilde{Ξ}\tilde{Ξ}^*$ is in $\mathbb{B}_{\Phi}$ but is not conserved: the exact solution $\tilde{Ξ}_{R} = \tfrac12\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$, with $\xi = \exp(iQ_x-Q_t)$, gives $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$. Is there a construction on the algebra, on a restricted subspace or with a further factor of the field, that is conserved? Or is the current irreducibly an object of a larger structure, as the older literature's construction suggests? Not settled here.
 
-4. **The sourced system.** How does the Dirac current feed the biquaternionic Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, and does the coupled system close on the algebra? The integrability condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ must be recovered from the current. The external identity of the section on the mixed invariant supplies the shape of an answer — the source contraction is fixed by the two field strengths — but it is stated for the source's own field strengths, not for $\tilde{Ξ}$, so it does not by itself close the corpus's system.
+4. **The sourced system.** How does the Dirac current feed the biquaternionic Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$, and does the coupled system close on the algebra? The integrability condition $Z\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ must be recovered from the current. The external identity of the section on the mixed invariant supplies the shape of an answer — the source contraction is fixed by the two field strengths — but it is stated for the source's own field strengths, not for $\tilde{Ξ}$, so it does not by itself close the corpus's system.
 
 5. **The shared generator.** The internal phase $\exp(i\theta_{\mathrm{gau}})$ and the complex time coordinate $i r'_t$ both use the single element $i$ of $\mathbb{B}$. Is this identification content-bearing, or vacuous because the phase is central? (The gauge principle article's open question.)
 
@@ -564,8 +564,8 @@ One external result is recorded on the source side, and it is not a development 
 | $\exp(2i\theta_{\mathrm{gau}})$ | Phase that an antilinear mass term would acquire under a local phase; the linear mass term acquires $\digamma_{\mathrm{gau}}$ instead |
 | $\|\tilde{Ξ}\|^2 = \mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^*)$ | Euclidean modulus squared; real and $\ge 0$, the sum of the four squared coefficient moduli |
 | $\tilde J_{\Phi,\mathrm{sp}} = i\tilde{Ξ}\tilde{Ξ}^*$ | Naive bilinear; gauge invariant, in $\mathbb{B}_{\Phi}$, **not conserved** |
-| $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Four-current; the Maxwell source is $\sqrt{\mu}\,\tilde J_{\Phi}$ |
-| $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell equation |
+| $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Four-current; the Maxwell source is $Z\,\tilde J_{\Phi}$ |
+| $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell equation |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $r_5,\dots,r_8$ | The external source's own residual combinations of its fields (scalars $r_5,r_8$, vectors $\vec r_6,\vec r_7$) |
 

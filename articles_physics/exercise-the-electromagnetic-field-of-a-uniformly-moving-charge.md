@@ -4,7 +4,7 @@
 
 This is an exercise in the electromagnetism series. It is the exactly solvable special case of its direct parent, *Exercise: The Electromagnetic Field of a Moving Charge*, which performs the Liénard–Wiechert differentiation for a charge on an arbitrary subluminal worldline and verifies the velocity–acceleration split; that exercise is in turn the downstream case declared by *Radiation from Accelerated Charges in Biquaternionic Form*, the theory article that supplies the retarded solution. The special case treated here is **uniform motion**, $d\vec v/dt'_{\mathrm{ret}} \equiv 0$. Then the acceleration field vanishes identically, the field reduces to the Lorentz-boosted Coulomb field, and — this is the point of singling the case out — the retarded position can be written in **closed form**, so the entire field is available in closed form in terms of the *present* position of the charge. Nothing in the parent is changed; every object used below is inherited from it and from its own parents, and no new formalism is introduced.
 
-**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (pure vector), the potential $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$, and the source $\sqrt{\mu}\,\tilde{J}_{\Phi} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\vec H = \vec B/\mu$. No object of the informational sector arises below; the boost rotor is invoked only in Problem 5.
+**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The field-strength biquaternion $\tilde{F} = i\vec E - c\vec B$ (pure vector), the potential $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$, and the source $Z\,\tilde{J}_{\Phi} = \frac{i\rho}{\epsilon}e_t + Z\,\vec J$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\vec H = \vec B/\mu$. No object of the informational sector arises below; the boost rotor is invoked only in Problem 5.
 
 **What is inherited from the parent.** The charge $ϙ$ moves on the worldline $x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z$ with coordinate velocity $\vec v(t')$ and $\vec\beta = \vec v/c$. The retarded time is defined implicitly by
 $$
@@ -183,7 +183,7 @@ I_1 = \vec E^2 - c^2\vec B^2 = \left(\vec u_R\cdot\vec E\right)^2
 \qquad
 I_2 = \vec E\cdot\vec B = 0 .
 $$
-The field is of electric type with a nonzero longitudinal component and is **not** null: $\langle\tilde{F}\rangle_{\natural} = -\epsilon I_1 \ne 0$ and $\tilde{F}^2 \ne 0$. It is therefore not a radiation field — consistent with $d\vec\beta/dt'_{\mathrm{ret}}=0$ — and this is the qualitative difference from the parent's acceleration field, which is a zero divisor.
+The field is of electric type with a nonzero longitudinal component and is **not** null: $\langle\tilde{F}\rangle_{\natural} = -I_1 \ne 0$ and $\tilde{F}^2 \ne 0$. It is therefore not a radiation field — consistent with $d\vec\beta/dt'_{\mathrm{ret}}=0$ — and this is the qualitative difference from the parent's acceleration field, which is a zero divisor.
 
 **Evidence.** On the same set of constant-velocity worldlines, the present-position closed form and the parent's retarded formula $\vec E_v$ agreed componentwise to better than $10^{-15}$ (quoted discrepancies ranged from $7\times10^{-21}$ to $2.2\times10^{-16}$); $|\vec E\times\vec d|$ and $|\vec B - \vec v\times\vec E/c^2|$ never exceeded $2\times10^{-17}$; and $d^2|\vec E|$ at fixed direction was constant to eight significant figures under $d\mapsto 2d,4d,8d$. The invariance of $d^2|\vec E|$ at fixed direction is the numerical form of the $1/d^2$ law.
 
@@ -305,7 +305,7 @@ $$
 \qquad
 \vec B_2 = 0,
 \qquad
-\tilde{F}_2 = i\sqrt{\epsilon}\,\vec E_2 .
+\tilde{F}_2 = i\vec E_2 .
 $$
 Transforming back to the lab, $\vec E_\parallel = \vec E_{2,\parallel}$ and $\vec E_\perp = \gamma\vec E_{2,\perp}$ (since $\vec B_2=0$), so
 $$
@@ -317,7 +317,7 @@ which is exactly the closed form of Problem 2. The magnetic field carried back b
 
 **Solution (c).** Because the charge's rest frame is inertial for *all* time when the motion is strictly uniform, the rest-frame field is the static Coulomb field at every event, with no acceleration correction; the boost is therefore exact, not a near-zone or low-velocity approximation. This is why the uniform case is the solvable one: the general Liénard–Wiechert field of an accelerated charge is not a boost of any static field, but here the boost is global and the whole field follows from it.
 
-**Evidence.** (i) Rotor direction: the conjugated rest four-velocity had velocity exactly $-\vec v_b$ for the three boosts above. (ii) Transformation law: the similarity matched the standard component formulas to $6.7\times10^{-16}$ over sixty random boosts; the conjugation did not. (iii) Boosted Coulomb: starting from $\tilde{F}_2 = i\sqrt{\epsilon}\,\vec E_2$ with the rest-frame Coulomb field, the lab field $\tilde{F} = \tilde U_{\vec v_b}\tilde{F}_2\tilde U^{\natural}_{\vec v_b}$ matched the closed form of Problem 2 to $2.1\times10^{-17}$ over twenty random configurations. Using the opposite boost sign, or the wrong transformation law, did not match.
+**Evidence.** (i) Rotor direction: the conjugated rest four-velocity had velocity exactly $-\vec v_b$ for the three boosts above. (ii) Transformation law: the similarity matched the standard component formulas to $6.7\times10^{-16}$ over sixty random boosts; the conjugation did not. (iii) Boosted Coulomb: starting from $\tilde{F}_2 = i\vec E_2$ with the rest-frame Coulomb field, the lab field $\tilde{F} = \tilde U_{\vec v_b}\tilde{F}_2\tilde U^{\natural}_{\vec v_b}$ matched the closed form of Problem 2 to $2.1\times10^{-17}$ over twenty random configurations. Using the opposite boost sign, or the wrong transformation law, did not match.
 
 ## Problem 6: Independent Checks, the Present-Position Fallacy, and the Invariants
 
@@ -342,16 +342,16 @@ I_1 = \vec E^2 - c^2\vec B^2 = \left(\vec u_R\cdot\vec E\right)^2
 \qquad
 I_2 = \vec E\cdot\vec B = 0 .
 $$
-In the biquaternion normalization, with $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and $\vec H=\vec B/\mu$,
+In the biquaternion normalization, with $\tilde{F} = i\vec E-c\vec B$,
 $$
 \boxed{\;
-\langle\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = -\epsilon\left(I_1 + 2ic\,I_2\right) = -\epsilon I_1 < 0,
+\langle\tilde{F}\rangle_{\natural} = -\tilde{F}^{2} = -\left(I_1 + 2ic\,I_2\right) = -I_1 < 0,
 \qquad
-\tilde{F}^2 = -\langle\tilde{F}\rangle_{\natural} = \epsilon I_1 > 0\;}.
+\tilde{F}^2 = I_1 + 2ic\,I_2 = I_1 > 0\;}.
 $$
 The field is of electric type, is **not** null, and is not a zero divisor: $\langle\tilde{F}\rangle_{\natural}\neq0$ and $\tilde{F}^2\neq0$. It therefore carries no radiation, in agreement with $d\vec\beta/dt'_{\mathrm{ret}}=0$; the contrast with the parent's acceleration field, whose $\tilde{F}_a$ *is* a zero divisor, is exact.
 
-**Evidence.** (a) The three checks just listed gave $2.1\times10^{-17}$ (rotor boost), the exact $\beta^2$ law of Problem 3, and the exact $\gamma$ and $1/\gamma^2$ laws of Problem 4. (b) The ratio $|\vec E|/|\vec E_C^{\text{present}}| = \Lambda(\theta)$ was computed at $\beta=0.5,0.9,0.99$: at $\beta=0.9$ it was $0.190$ along the motion, $0.267$ at $30^\circ$, $0.773$ at $60^\circ$, and $2.294=\gamma$ transverse; at $\beta=0.99$ it was $0.0199$, $0.0303$, $0.1459$, and $7.089$. (c) Over thirty random uniform worldlines, $|I_1-(\vec u_R\cdot\vec E)^2| \le 1.7\times10^{-18}$, $|I_2|\le 4.1\times10^{-20}$, and $|\langle\tilde{F}\rangle_{\natural}+\epsilon I_1| \le 8.7\times10^{-19}$; $\tilde{F}^2$ was nonzero (of order $10^{-3}$ in the sample), so the field is not a zero divisor.
+**Evidence.** (a) The three checks just listed gave $2.1\times10^{-17}$ (rotor boost), the exact $\beta^2$ law of Problem 3, and the exact $\gamma$ and $1/\gamma^2$ laws of Problem 4. (b) The ratio $|\vec E|/|\vec E_C^{\text{present}}| = \Lambda(\theta)$ was computed at $\beta=0.5,0.9,0.99$: at $\beta=0.9$ it was $0.190$ along the motion, $0.267$ at $30^\circ$, $0.773$ at $60^\circ$, and $2.294=\gamma$ transverse; at $\beta=0.99$ it was $0.0199$, $0.0303$, $0.1459$, and $7.089$. (c) Over thirty random uniform worldlines, $|I_1-(\vec u_R\cdot\vec E)^2| \le 1.7\times10^{-18}$, $|I_2|\le 4.1\times10^{-20}$, and $|\langle\tilde{F}\rangle_{\natural}+I_1| \le 8.7\times10^{-19}$; $\tilde{F}^2$ was nonzero (of order $10^{-3}$ in the sample), so the field is not a zero divisor.
 
 ## What the Uniform Case Adds, and What It Leaves Open
 
@@ -399,9 +399,9 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\partial/\partial R_t = -i\,\partial/\partial r'_t$ | Temporal component of the gradient |
-| $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
+| $\tilde{F} = i\vec E - c\vec B$ | Field-strength biquaternion (pure vector) |
 | $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$ | Potential biquaternion |
-| $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Four-current; the source is $\sqrt{\mu}\,\tilde J_{\Phi}$, with $\rho$ the charge density |
+| $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Four-current; the source is $Z\,\tilde J_{\Phi}$, with $\rho$ the charge density |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Permittivity, permeability, speed of light in the medium |
 | $\vec H = \vec B/\mu$ | Magnetic field; $\vec B$ the magnetic induction |
 | $ϙ$, $x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z$, $\vec v(t')$ | Charge, worldline, coordinate velocity |

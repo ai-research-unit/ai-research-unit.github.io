@@ -98,13 +98,13 @@ so the mass-shell condition, the four-acceleration constraints and the four-forc
 The potential is one element $\tilde A_{\Phi}$, the field strength is one element
 
 $$
-\tilde F=i\sqrt{\epsilon}\,(\vec E+ic\vec B),
+\tilde F=i\,(\vec E+ic\vec B),
 $$
 
 and the four Maxwell equations are one equation,
 
 $$
-\tilde\nabla_{\Phi}\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi},
+\tilde\nabla_{\Phi}\tilde F=-Z\,\tilde J_{\Phi},
 $$
 
 with the source one element as well ([Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html)). Read on the coefficients, the one equation is four: the scalar part of the product carries the two divergence equations and the vector part the two curl equations. The reading is a decomposition of a product into its types, not a separation of the equation into four equations that must be solved together.
@@ -436,7 +436,7 @@ The strongest objection is that this is a reformulation. It is, and the corpus a
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde S_{\Psi}=\rho_{\mathrm{num}}\tfrac{h}{4\pi}i\hat s$ | Spin element |
 | $\tilde\Upsilon_{\Phi}=\tilde\nabla_{\Phi}\theta_{\mathrm{pha}}$ | Momentum element: four-momentum divided by $\frac{h}{2\pi}$ |
-| $\tilde F=i\sqrt{\epsilon}(\vec E+ic\vec B)$ | Field strength element |
+| $\tilde F=i(\vec E+ic\vec B)=i\vec E-c\vec B$ | Field strength element |
 | $\tilde\varsigma_{\Psi}$ | State of the informational sector, positive and of trace one |
 | $\ast$ | Star conjugation |
 | $c$ | Speed of light in the medium |

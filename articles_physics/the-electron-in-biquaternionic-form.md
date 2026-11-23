@@ -103,7 +103,7 @@ Four statements are worth separating.
 **The electron's Coulomb field is an $\mathbb{B}_{\Psi}$ object.** For a point charge $ϙ$ at rest the field-strength biquaternion is, from the companion article on Maxwell's equations,
 
 $$
-\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{i\,ϙ\,\vec u_x}{4\pi\sqrt{\epsilon}\,\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|^2},
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{i\,ϙ\,\vec u_x}{4\pi\epsilon\,\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|^2},
 $$
 
 a purely imaginary vector, hence an element of the Hermitian subspace $\mathbb{B}_{\Psi}$, with $\vec u_x = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|$ the radial unit vector. The electron's charge shows itself, in the framework, through a field in the informational sector, while its current lies in the material sector. The two faces of the same charge sit in opposite halves of the algebra.
@@ -327,7 +327,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\langle\tilde Q\rangle_\natural = \tilde Q\tilde Q^\natural$ | Quaternionic norm |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing, read as $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ at normalisation |
 | $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j$ | Conserved four-current, in $\mathbb{B}_{\Phi}$ |
-| $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{B}_{\Psi}$; $\vec u_x$ the radial unit vector |
+| $\tilde{F} = iϙ\vec u_x/(4\pi\epsilon\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{B}_{\Psi}$; $\vec u_x$ the radial unit vector |
 | $\tilde\Upsilon_{\Phi} = i(\omega/c)\,e_t + 2\pi\vec\nu_\Phi$ | Four-wavevector |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign weights of the $\mathbb{B}_{\Phi}$ frame; metric in the closing section |
 | $m_e$, $e$, $\frac{h}{2\pi}$, $c$ | Electron mass, elementary charge, the action of one radian of phase, speed of light |

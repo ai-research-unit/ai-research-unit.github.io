@@ -12,7 +12,7 @@ Why this belongs to the duality. *Wave–Particle Duality and the Fourier Transf
 
 The strongest objection, stated first. Charge conservation is a property of matter, and calling it a cokernel only renames it. The objection is right about the naming and wrong about the content. The naming is what makes the counting possible, and the counting yields a statement the continuity equation does not: on the cone there is a second condition, of a different kind, and no fact about the source alone supplies it. §*Charge Conservation Is the Whole Cokernel Off the Cone* and §*On the Cone the Cokernel Is Two-Dimensional* establish that, and §*What the Second Condition Does* measures it.
 
-What is used and what is new. *Maxwell's Equations in the Biquaternionic Formulation* derives charge conservation as the integrability condition of $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi$, and that derivation is quoted. *The Fourier Transform and the Symbol of a Differential Operator*, §*The Kernel and the Cokernel*, states that the cokernel measures the conditions on the data, and that statement is used as it stands. The rank is that of *Wave–Particle Duality and the Count of Degrees of Freedom*. What is new here is the cokernel as an object: its dimension at each frequency point, its members, their component forms, and the identity of its second member on the cone.
+What is used and what is new. *Maxwell's Equations in the Biquaternionic Formulation* derives charge conservation as the integrability condition of $\tilde\nabla_\Phi\tilde F=-Z\,\tilde J_\Phi$, and that derivation is quoted. *The Fourier Transform and the Symbol of a Differential Operator*, §*The Kernel and the Cokernel*, states that the cokernel measures the conditions on the data, and that statement is used as it stands. The rank is that of *Wave–Particle Duality and the Count of Degrees of Freedom*. What is new here is the cokernel as an object: its dimension at each frequency point, its members, their component forms, and the identity of its second member on the cone.
 
 ## The Symbol and Its Cokernel
 
@@ -21,16 +21,16 @@ What is used and what is new. *Maxwell's Equations in the Biquaternionic Formula
 The equation is the corpus's, and the article changes nothing in it. In a medium of permittivity $\epsilon$ and permeability $\mu$, with $c=1/\sqrt{\epsilon\mu}$, the field strength $\tilde F$ and the four-current $\tilde J_\Phi=ic\rho\,e_t+\vec J$ satisfy
 
 $$
-\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi ,
+\tilde\nabla_\Phi\tilde F=-Z\,\tilde J_\Phi ,
 $$
 
 with $\tilde F$ a pure vector. On a plane wave the gradient is replaced by its symbol, and the transform of the equation is
 
 $$
-2\pi i\tilde\Upsilon_\Phi\,\mathcal F[\tilde F]=-\sqrt{\mu}\,\mathcal F[\tilde J_\Phi] .
+2\pi i\tilde\Upsilon_\Phi\,\mathcal F[\tilde F]=-Z\,\mathcal F[\tilde J_\Phi] .
 $$
 
-The factor $-\sqrt{\mu}$ is a non-zero scalar. It multiplies both sides, it moves neither a rank nor a cokernel, and the article keeps it in the displays and drops it in the counting.
+The factor $-Z$ is a non-zero scalar. It multiplies both sides, it moves neither a rank nor a cokernel, and the article keeps it in the displays and drops it in the counting.
 
 The unknown is pure, so the domain is three-dimensional. $\mathcal F[\tilde F]$ lies in $\mathbb B_V$, of complex dimension three. The right-hand side lies in the whole algebra, of complex dimension four. The map in question is left multiplication by $2\pi i\tilde\Upsilon_\Phi$ read on $\mathbb B_V$,
 
@@ -223,7 +223,7 @@ Charge conservation still holds, because $\varepsilon_{\mathrm{fop},+}$ is trans
 
 ### The size of the mismatch
 
-The least-squares defect is exactly the offending component. Solving $2\pi i\tilde\Upsilon_\Phi\tilde F=-\sqrt{\mu}\tilde J_\Phi$ in the least-squares sense, the residual is at most $10^{-15}$ for the first source and exactly $3$ for the second, in the coefficient norm of the algebra. The residual is the modulus of the coefficient of $\varepsilon_{\mathrm{fop},+}$, over one hundred sampled points and directions, to $8.9\times10^{-16}$.
+The least-squares defect is exactly the offending component. Solving $2\pi i\tilde\Upsilon_\Phi\tilde F=-Z\tilde J_\Phi$ in the least-squares sense, the residual is at most $10^{-15}$ for the first source and exactly $3$ for the second, in the coefficient norm of the algebra. The residual is the modulus of the coefficient of $\varepsilon_{\mathrm{fop},+}$, over one hundred sampled points and directions, to $8.9\times10^{-16}$.
 
 This is the operational content of the second member. The cokernel is a quotient, and a quotient is not directly observable. Its dual is: the coefficient of $\varepsilon_{\mathrm{fop},+}$ in the source is a number one can compute, and it is the obstruction. **Charge conservation is necessary and, on the cone, not sufficient**; the shortage is measured in one circular component of the current.
 
@@ -272,7 +272,7 @@ No value of a mass, no gauge invariance, no statement about a state. The article
 
 ## Summary
 
-Maxwell's equation transforms into $2\pi i\tilde\Upsilon_\Phi\mathcal F[\tilde F]=-\sqrt{\mu}\mathcal F[\tilde J_\Phi]$, with the field strength in the three-dimensional vector part and the source in the four-dimensional algebra. The map $L_{2\pi i\tilde\Upsilon_\Phi}:\mathbb B_V\to\mathbb B$ has rank three off the light cone and two on it, and its cokernel therefore has dimension one and two respectively. The cokernel is written as a space of multipliers: an element $M$ annihilates the image exactly when $M\,2\pi i\tilde\Upsilon_\Phi$ is central, a condition that is one complex equation and that identifies the quotient with a subspace of the algebra itself.
+Maxwell's equation transforms into $2\pi i\tilde\Upsilon_\Phi\mathcal F[\tilde F]=-Z\,\mathcal F[\tilde J_\Phi]$, with the field strength in the three-dimensional vector part and the source in the four-dimensional algebra. The map $L_{2\pi i\tilde\Upsilon_\Phi}:\mathbb B_V\to\mathbb B$ has rank three off the light cone and two on it, and its cokernel therefore has dimension one and two respectively. The cokernel is written as a space of multipliers: an element $M$ annihilates the image exactly when $M\,2\pi i\tilde\Upsilon_\Phi$ is central, a condition that is one complex equation and that identifies the quotient with a subspace of the algebra itself.
 
 Off the cone the cokernel is read by one element, the spanning $\tilde\Upsilon_\Phi^\natural$ of the line, and the functional it defines is $\mathrm{Sc}(\tilde\Upsilon_\Phi^\natural\tilde J_\Phi)=\vec\nu_\Phi\cdot\vec J-\nu_t^{\prime}c\rho$. Its vanishing is the continuity equation. Charge conservation is thus the whole cokernel off the cone, and the statement is exactly the integrability condition of the Maxwell article, read on the source instead of on the equation.
 

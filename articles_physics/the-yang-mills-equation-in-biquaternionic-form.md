@@ -2,7 +2,7 @@
 
 ## Introduction
 
-*Maxwell's Equations in the Biquaternionic Formulation* compresses the four Maxwell equations into a single biquaternion equation, $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, in which a biquaternionic field strength is sourced by a biquaternionic current. *Non-Abelian Gauge Fields in Biquaternionic Form* then lets the connection of the same framework take values in the compact factor $\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ of the material sector, obtains the non-abelian curvature
+*Maxwell's Equations in the Biquaternionic Formulation* compresses the four Maxwell equations into a single biquaternion equation, $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$, in which a biquaternionic field strength is sourced by a biquaternionic current. *Non-Abelian Gauge Fields in Biquaternionic Form* then lets the connection of the same framework take values in the compact factor $\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ of the material sector, obtains the non-abelian curvature
 
 $$
 F_{\imath\jmath} = \partial/\partial R_{\imath} \mathcal{A}_{\jmath} - \partial/\partial R_{\jmath} \mathcal{A}_{\imath} + i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}],
@@ -122,7 +122,7 @@ $$\boxed{\;\sum_{\jmath\in\{t,x,y,z\}} \bigl(D_{\imath} F_{\imath\jmath}\bigr) e
 \qquad\text{equivalently}\qquad
 \sum_{\jmath\in\{t,x,y,z\}} \bigl(D_{\imath} F_{\imath\jmath}\bigr) e_{\jmath} = \sum_{\jmath\in\{t,x,y,z\}} J_{\jmath}\, e_{\jmath}\;},$$
 
-in which the covariant derivative acts on the $\mathrm{SU}(2)$-valued curvature components by the adjoint action $D_{\imath} F_{\imath\jmath} = \partial/\partial R_{\imath} F_{\imath\jmath} + i\kappa[\mathcal{A}_{\imath},F_{\imath\jmath}]$, and the sum over $\mu$ is the divergence. The left-hand side is the covariant divergence of the curvature, expanded in the quaternion basis; the right-hand side is the source biquaternion. This is the direct non-abelian analogue of the parent's $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$: the parent's source $\sqrt{\mu}\,\tilde{J}_{\Phi}$, with $\tilde J_{\Phi}$ the four-current, plays the role of $-\mathcal{J}$ up to the parent's normalisation of $\tilde{F}$ (the parent uses $R_0 = i\rho/\sqrt{\epsilon}$, $\vec R = \sqrt{\mu}\,\vec J$, and writes its equation with the opposite sign). The sign of the source is a convention, fixed here by defining $J_{\jmath}$ through the field equation; what is not a convention is that the derivative on the left is covariant.
+in which the covariant derivative acts on the $\mathrm{SU}(2)$-valued curvature components by the adjoint action $D_{\imath} F_{\imath\jmath} = \partial/\partial R_{\imath} F_{\imath\jmath} + i\kappa[\mathcal{A}_{\imath},F_{\imath\jmath}]$, and the sum over $\mu$ is the divergence. The left-hand side is the covariant divergence of the curvature, expanded in the quaternion basis; the right-hand side is the source biquaternion. This is the direct non-abelian analogue of the parent's $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$: the parent's source $Z\,\tilde{J}_{\Phi}$, with $\tilde J_{\Phi}$ the four-current, plays the role of $-\mathcal{J}$ up to the parent's normalisation of $\tilde{F}$ (the parent uses $R_0 = i\rho/\epsilon$, $\vec R = Z\,\vec J$, and writes its equation with the opposite sign). The sign of the source is a convention, fixed here by defining $J_{\jmath}$ through the field equation; what is not a convention is that the derivative on the left is covariant.
 
 **The biquaternion packaging does not collapse.** It is tempting to write the left-hand side as $\sum_{\imath} D_{\imath} F_{\imath}$ with $F_{\imath} := \sum_{\jmath} F_{\imath\jmath}e_{\jmath}$, and to advertise a one-line product. That is not correct, and the failure is instructive. Because the adjoint commutator does not pass through the quaternion basis,
 
@@ -224,7 +224,7 @@ The relation between the two halves is worth stating without overclaim. The fiel
 
 ## What the Biquaternion Packaging Does and Does Not Give
 
-The framework's compact form of the abelian equations, $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, is a genuine one-line equation. For the non-abelian system the analogous packaging is more delicate, and this article records the limits of what the packaging delivers rather than presenting a formula that would not survive a recheck.
+The framework's compact form of the abelian equations, $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$, is a genuine one-line equation. For the non-abelian system the analogous packaging is more delicate, and this article records the limits of what the packaging delivers rather than presenting a formula that would not survive a recheck.
 
 The curvature biquaternion is defined, as in the parent, by $\mathcal{F} = \tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$. Its *components* transform in the adjoint, $F_{2,\imath\jmath} = \tilde UF_{\imath\jmath}\tilde U^{-1}$, so $\mathcal{F}$ inherits the componentwise adjoint law
 
@@ -326,7 +326,7 @@ the outgoing and incoming spherical waves dressed by the exponential weight, and
 
 ## Open Questions
 
-1. **A one-line biquaternion form.** The abelian parent compresses its four equations into $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$. Is there a representative of the non-abelian curvature, or a modified product, for which the Yang–Mills equation is a single adjoint-covariant biquaternion identity, or is the index-mixing obstruction of this article fatal to that program? The obstruction found here is sharp enough to state and not resolved.
+1. **A one-line biquaternion form.** The abelian parent compresses its four equations into $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$. Is there a representative of the non-abelian curvature, or a modified product, for which the Yang–Mills equation is a single adjoint-covariant biquaternion identity, or is the index-mixing obstruction of this article fatal to that program? The obstruction found here is sharp enough to state and not resolved.
 
 2. **Which compact algebra, and how many factors.** The gauge algebra used here is the $\mathrm{SU}(2)$ factor of the material sector, with the abelian factor $\mathbb{R}(ie_t)$ beside it. Whether larger gauge algebras are available, and whether the framework selects one, is the gap recorded by the non-abelian parent and untouched here.
 
@@ -401,7 +401,7 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $\mathcal{F} = \tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$ | Curvature biquaternion (componentwise adjoint law) |
 | $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ | Gauge-invariant Yang–Mills density (matrix trace) |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading (distinct from the matrix trace) |
-| $\sqrt{\mu}\,\tilde{J}_{\Phi}$, with $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$ | Parent's abelian source; plays the role of $-\mathcal{J}$ up to the parent's normalisation |
+| $Z\,\tilde{J}_{\Phi}$, with $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$ | Parent's abelian source; plays the role of $-\mathcal{J}$ up to the parent's normalisation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\vec F = -E - iH$ | Constant complex-vector structural coefficient of the biwave equation (Alexeyeva); $E, H$ real vectors |
 | $\vec\nabla_{+} = \partial/\partial \tau + i\vec\nabla_\Phi$, $\vec\nabla_{-} = \partial/\partial \tau - i\vec\nabla_\Phi$, $\Box_A = \partial^2/\partial \tau^2 - \Delta_\Phi$ | The source's mutual bigradients and wave operator, in her letters and without the corpus sector mark; $\Box_A$ is minus this article's $\Box_\Phi$ |
@@ -414,7 +414,7 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the $\mathrm{SU}(2)$ factor, the curvature with its commutator, the adjoint transformation, the Bianchi identity, and the source-free equation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = 0$ that this article sources.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the abelian connection and covariant derivative, the curvature as a commutator that closes on the algebra, and the gap this article and its non-abelian companion take up.
-- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian field equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, the source biquaternion, and the conservation law whose non-abelian generalisation is the subject here.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian field equation $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$, the source biquaternion, and the conservation law whose non-abelian generalisation is the subject here.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection and the transformation law, and the preview of the non-abelian curvature used here.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian invariants and the biquaternion norm, whose non-abelian extension remains open.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the covariant derivative on the spinor module and the matter representation that the current of this article does not fix.

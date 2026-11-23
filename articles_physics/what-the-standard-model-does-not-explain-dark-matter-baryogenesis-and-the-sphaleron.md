@@ -49,26 +49,26 @@ Any candidate must have three properties.
 
 The sharpest single measurement is the Bullet Cluster: two galaxy clusters that have passed through each other, with the X-ray gas (baryons) shocked and slowed in the middle while the gravitational mass, reconstructed from lensing, has passed through. The mass-to-light ratio tracks the galaxies and not the gas. That is a direct statement that the dark component is collisionless and the baryonic component is not, and it cannot be reproduced by any modification of gravity that couples to baryons alone.
 
-A mass in this article is a fraction of the vacuum value, $n_i=m_i/m_{\mathrm{vev}}$ with $E_{\mathrm{vev}}=3.9449\times10^{-8}\ \mathrm{J}$; a temperature, an energy and a sphaleron scale stay in joules and kelvin.
+A mass in this article is written in kilograms; a temperature, an energy and a sphaleron scale stay in joules and kelvin.
 
 The model's own candidates fail one by one.
 
-| Candidate | $n$ | Why it fails |
+| Candidate | $m$ (kg) | Why it fails |
 |---|---|---|
-| Neutrinos | $\Sigma n_{\xi_{\mathrm{neu}}}<4.9\times10^{-13}$ | Hot: free-streams out of structures; at most $1.1\%$ of the dark density |
-| Higgs | $0.5080$ | Decays in $10^{-22}$ s |
-| Neutron | $3.816\times10^{-3}$ | Decays in $880$ s |
+| Neutrinos | $\Sigma m_{\xi_{\mathrm{neu}}}<2.151\times10^{-37}$ | Hot: free-streams out of structures; at most $1.1\%$ of the dark density |
+| Higgs | $2.230\times10^{-25}$ | Decays in $10^{-22}$ s |
+| Neutron | $1.675\times10^{-27}$ | Decays in $880$ s |
 | Gluons, photons | $0$ | Massless, and they were in equilibrium |
-| $Z$, $W$ | $0.3704$, $0.3265$ | Decay in $10^{-25}$ s |
+| $Z$, $W$ | $1.6258\times10^{-25}$, $1.4327\times10^{-25}$ | Decay in $10^{-25}$ s |
 | The vacuum | — | Contributes to dark *energy*, not to matter; and with the wrong sign and magnitude |
 
-The neutrino row can be quantified. The cosmological bound on the sum of neutrino masses is $\Sigma n_{\xi_{\mathrm{neu}}}<4.9\times10^{-13}$, and the relic density is
+The neutrino row can be quantified. The cosmological bound on the sum of neutrino masses is $\Sigma m_{\xi_{\mathrm{neu}}}<2.151\times10^{-37}$ kg, and the relic density is
 
 $$
-\Omega_{\jmath} h^2=\frac{\Sigma n_{\xi_{\mathrm{neu}}}}{3.783\times10^{-10}} ,
+\Omega_{\jmath} h^2=\frac{\Sigma m_{\xi_{\mathrm{neu}}}}{1.6604\times10^{-34}\ \mathrm{kg}} ,
 $$
 
-so at the bound $\Omega_{\jmath} h^2=0.00129$, which is $1.1\%$ of $\Omega_{\mathrm{DM}}h^2$. So [the neutrino article](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) settles the question in the negative with a number: neutrinos are a $1\%$ correction to the dark component and cannot be it. This is also why "hot dark matter" was abandoned in the 1980s — the same calculation, with the same conclusion, before the oscillations were measured.
+so at the bound $\Omega_{\jmath} h^2=0.00130$, which is $1.1\%$ of $\Omega_{\mathrm{DM}}h^2$. So [the neutrino article](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) settles the question in the negative with a number: neutrinos are a $1\%$ correction to the dark component and cannot be it. This is also why "hot dark matter" was abandoned in the 1980s — the same calculation, with the same conclusion, before the oscillations were measured.
 
 The real obstacle is a symmetry problem. Even a new neutral particle is not automatically stable. Stability requires a conserved quantum number, and the model's only exact global symmetries are $B-L$ (non-perturbatively conserved) and the accidental ones. So a dark matter candidate requires either a new symmetry or an accidental one, and an accidental symmetry is a statement about which operators are allowed by the gauge quantum numbers — which is a statement about a content the model does not have.
 
@@ -89,9 +89,9 @@ $$
 The reading has two parts.
 
 - Three species are confirmed, to a part in three hundred. This is the strongest single piece of evidence that the generation structure stops at three.
-- A fourth species with $n_{\xi_{\mathrm{neu}}}<n_Z/2=0.1852$ is excluded at many standard deviations. So the model cannot be extended by adding a fourth generation with a light neutrino, and any new neutral fermion must either be heavier than half the $Z$ or not couple to it.
+- A fourth species with $m_{\xi_{\mathrm{neu}}}<M_Z/2=8.129\times10^{-26}$ kg is excluded at many standard deviations. So the model cannot be extended by adding a fourth generation with a light neutrino, and any new neutral fermion must either be heavier than half the $Z$ or not couple to it.
 
-This bound closes the simplest door. The obvious way to make dark matter out of the model's own content is to add a fourth generation and let its neutrino be the dark matter. That door is shut twice: by $N_{\xi_{\mathrm{neu}}}$, and by the relic density above — a fourth neutrino with $n_\nu$ up to $0.1828$ would still be relativistic at decoupling if light, and hot if light, and excluded by $N_{\xi_{\mathrm{neu}}}$ if it is in equilibrium.
+This bound closes the simplest door. The obvious way to make dark matter out of the model's own content is to add a fourth generation and let its neutrino be the dark matter. That door is shut twice: by $N_{\xi_{\mathrm{neu}}}$, and by the relic density above — a fourth neutrino with $m_\nu$ up to $8.024\times10^{-26}$ kg would still be relativistic at decoupling if light, and hot if light, and excluded by $N_{\xi_{\mathrm{neu}}}$ if it is in equilibrium.
 
 There is a loophole. $N_{\xi_{\mathrm{neu}}}$ counts species in equilibrium with the $Z$ at $T\sim M_Z$. A particle that decoupled earlier, or never coupled to the $Z$ at all, is invisible to this measurement. So the bound excludes a *class* of candidates — those with full weak interactions — and not the possibility of a new sector. The hidden sector is where the model's extensions have gone, and this is why.
 
@@ -281,10 +281,10 @@ Baryogenesis requires a departure from equilibrium. The Standard Model's candida
 The answer is one number.
 
 $$
-n_H>0.2924\ \Longrightarrow\ \text{the transition is a crossover, not a first-order transition.}
+m_H>1.283\times10^{-25}\ \mathrm{kg}\ \Longrightarrow\ \text{the transition is a crossover, not a first-order transition.}
 $$
 
-The measured $n_H=0.5080$ is $74\%$ above that threshold. So the transition is smooth: the expectation value turns on continuously, there are no bubbles, no walls, no supercooling, and no departure from equilibrium at all. The third Sakharov condition fails outright, not marginally.
+The measured $m_H=2.230\times10^{-25}\ \mathrm{kg}$ is $74\%$ above that threshold. So the transition is smooth: the expectation value turns on continuously, there are no bubbles, no walls, no supercooling, and no departure from equilibrium at all. The third Sakharov condition fails outright, not marginally.
 
 The Higgs mass decides it. The transition is first order when the cubic term in the finite-temperature effective potential is strong enough to create a barrier between the symmetric and broken minima. That term is proportional to $g^3T$ from the gauge bosons and to $\digamma_{\mathrm{qtc}}^{3/2}T$ from the scalar; a larger $\digamma_{\mathrm{qtc}}$ raises the barrier at $T=0$ but also makes the transition smoother at finite temperature, and the competition resolves in favour of a crossover once the Higgs is heavier than about $1.28$–$1.42\times10^{-25}$ kg. At $2.23\times10^{-25}$ kg there is no barrier.
 
@@ -341,7 +341,7 @@ The table gives each number the article uses and says whether it was imported or
 | Item | Status |
 |---|---|
 | $\Omega_{\mathrm{DM}}h^2=0.1200$, $\Omega_b h^2=0.02237$, ratio $5.36$ | Imported; ratio computed here |
-| $\Omega_{\jmath} h^2<0.00129$, $1.1\%$ of the dark density | Computed here from $\Sigma n_{\xi_{\mathrm{neu}}}<4.9\times10^{-13}$ |
+| $\Omega_{\jmath} h^2<0.00130$, $1.1\%$ of the dark density | Computed here from $\Sigma m_{\xi_{\mathrm{neu}}}<2.151\times10^{-37}$ kg |
 | $N_{\xi_{\mathrm{neu}}}=2.9963\pm0.0074$ | Imported |
 | $\sigma_{\mathrm{SI}}<2.6\times10^{-51}\ \mathrm{m^{2}}$, $1.5\times10^{14}$ below weak | Imported limit; ratio computed here |
 | $\digamma_{\mathrm{bau}}=6.1\times10^{-10}$ | Imported |
@@ -352,7 +352,7 @@ The table gives each number the article uses and says whether it was imported or
 | $E_{\mathrm{sph}}=1.44\times10^{-6}$ J, $B=1.90$ | Imported energy; $B$ recomputed here |
 | $\exp(-E_{\mathrm{sph}}/k_BT)=10^{-39}$ at $1.16\times10^{15}$ K | Computed here |
 | $\tau_p>10^{160}$ yr | Imported ('t Hooft) |
-| $n_H>0.2924$ gives a crossover; $T_c=1.851\times10^{15}$ K | Imported; the comparison with $n_H=0.5080$ computed here |
+| $m_H>1.283\times10^{-25}$ kg gives a crossover; $T_c=1.851\times10^{15}$ K | Imported; the comparison with $m_H=2.230\times10^{-25}$ kg computed here |
 | $B=28L/79$ | Computed here from the standard conversion factor |
 | A dark matter candidate, the sphaleron, a first-order transition | not available |
 
@@ -400,5 +400,5 @@ The one route it can build is leptogenesis, with $B=28L/79$, and that route exis
 - [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html). The corpus's one dark matter candidate that arrives for an independent reason.
 - [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html). The two Majorana phases that leptogenesis needs, and why the quark sector's failure does not constrain them.
 - [The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form](the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html). The object whose finite-temperature behaviour decides whether the transition is first order.
-- [The Landau Pole, Triviality and Vacuum Stability](the-landau-pole-triviality-and-vacuum-stability.html). The quartic at $n_H=0.5080$, which is also what makes the transition a crossover.
+- [The Landau Pole, Triviality and Vacuum Stability](the-landau-pole-triviality-and-vacuum-stability.html). The quartic at $m_H=2.230\times10^{-25}\ \mathrm{kg}$, which is also what makes the transition a crossover.
 - [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). The discrete inputs — the group, the content, the generation count — and where dark matter and $B-L$ violation would appear if they existed.

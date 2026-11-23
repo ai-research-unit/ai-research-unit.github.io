@@ -100,7 +100,7 @@ $$
 
 using the definition of the star. The trace here is the **matrix trace** on the $\mathrm{SU}(2)$ factor, the one the parent article uses for the gauge-invariant density $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$; it is *not* the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs a Hermitian state with a Hermitian observable, not two gauge-algebra elements. The integer character of $Ϙ$ is the statement that $\pi_3(SU(2))=\mathbb Z$: a finite-action gauge field on $\mathbb R^4$ is classified at infinity by a map from the three-sphere to the gauge group, and the density's integral is the degree of that map. The same invariant is the one the Skyrme model uses: the baryon number of *The Skyrme Model and the Topological Baryon in Biquaternionic Form* is the degree of a map into the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$, so the instanton winding and the baryon winding are the same $\pi_3$ of the same group, read on two different fields. The density is a total derivative, as the next section shows, so $Ϙ$ is unchanged by any continuous deformation of the connection that keeps the boundary data fixed; this is the content of the next section.
 
-In the abelian case the same object collapses to the framework's second invariant. With the field-strength biquaternion $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and its components, the density is
+In the abelian case the same object collapses to the framework's second invariant. With the field-strength biquaternion $\tilde{F}=i\vec E-c\vec B$ and its components, the density is
 
 $$
 \boxed{\;\frac{1}{4}\sum_{\imath,\jmath,\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}
@@ -200,7 +200,7 @@ I_1=\vec E^2-c^2\vec B^2,
 \qquad
 I_2=\vec E\cdot\vec B,
 \qquad
-\langle\tilde{F}\rangle_{\natural}=\tilde{F}\tilde{F}^{\natural}=-\epsilon\left(I_1+2ic\,I_2\right),
+\langle\tilde{F}\rangle_{\natural}=\tilde{F}\tilde{F}^{\natural}=-\left(I_1+2ic\,I_2\right),
 $$
 
 and shows that any other algebraic invariant is a function of these two. The question raised at the start of this article is whether these invariants suffice to build the topological density, or whether the density lies outside the framework's invariant calculus.
@@ -354,10 +354,10 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; one operator in both charts, the rotation moving $Q_t$ alone |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian; hyperbolic on $Q_t=i q'_t$, elliptic on $Q_t=c\tau$ |
 | $\star$ | Hodge star on two-forms; $\star^2=+1$ Euclidean, $-1$ Lorentzian |
-| $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Abelian field-strength biquaternion |
+| $\tilde{F}=i\vec E-c\vec B$ | Abelian field-strength biquaternion |
 | $F_{\imath\jmath}$ | Field-strength components (abelian in the Maxwell sections, non-abelian in the gauge sections) |
 | $I_1=\vec E^2-c^2\vec B^2,\ I_2=\vec E\cdot\vec B$ | The two field-strength invariants |
-| $\langle\tilde{F}\rangle_{\natural}=\tilde{F}\tilde{F}^{\natural}=-\epsilon(I_1+2icI_2)$ | The biquaternion norm |
+| $\langle\tilde{F}\rangle_{\natural}=\tilde{F}\tilde{F}^{\natural}=-(I_1+2icI_2)$ | The biquaternion norm |
 | $\mathcal{A}_{\imath}=\sum_a\mathcal{A}_{\imath a}\vec e_a$ | Non-abelian connection, $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\mathcal{F}=\tfrac12\sum_{\imath,\jmath} F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$ | Biquaternion representative of the non-abelian curvature |
 | $T_a=\tfrac12 \vec e_a$ | $\mathrm{SU}(2)$ generators, $[T_a,T_b]=\sum_c\epsilon_{abc}T_c$ |

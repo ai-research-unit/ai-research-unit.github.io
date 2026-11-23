@@ -12,7 +12,7 @@ The question naturally arises whether electromagnetic waves can form shocks. Thi
 
 This article treats the three regimes. The first is the one relevant to the linear biquaternion Maxwell equations of the companion article; the other two require nonlinear or material extensions of those equations. The article is honest about which results are established and which are the subject of ongoing research.
 
-The biquaternionic gradient $\tilde\nabla_\Phi$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box_\Phi\tilde{F} = -\sqrt{\mu}\,(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde\nabla_\Phi = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
+The biquaternionic gradient $\tilde\nabla_\Phi$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box_\Phi\tilde{F} = -Z\,(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde\nabla_\Phi = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
 
 ## Why Linear Vacuum Maxwell Has No Shocks
 
@@ -21,7 +21,7 @@ The biquaternionic gradient $\tilde\nabla_\Phi$, the field-strength biquaternion
 The biquaternionic Maxwell equation in vacuum is
 
 $$
-\tilde\nabla_\Phi \tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi},
+\tilde\nabla_\Phi \tilde{F} = -Z\,\tilde{J}_{\Phi},
 $$
 
 where $\tilde J_{\Phi}$ is the four-current and $\tilde{F}$ is the field-strength biquaternion. In the absence of sources, $\tilde J_{\Phi} = 0$, and the equation is
@@ -88,7 +88,7 @@ where $\{\partial/\partial R_{\imath} \tilde{F}\}$ denotes the classical derivat
 
 ### The Jump Condition
 
-Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ in a homogeneous medium, and separating the surface terms, one obtains the **jump condition** on $S$:
+Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$ in a homogeneous medium, and separating the surface terms, one obtains the **jump condition** on $S$:
 
 $$
 \boxed{\;\tilde U_{\mathrm n}\,[\tilde{F}]_S = 0\;}.
@@ -104,7 +104,7 @@ So a discontinuity cannot propagate on a non-characteristic surface; the field m
 
 **Consequence for a characteristic surface.** If the surface is **characteristic** (the light cone, $\tilde U_{\mathrm n}\tilde U_{\mathrm n}^{\natural} = 0$), then $\tilde U_{\mathrm n}$ is $N$-degenerate, a zero divisor, and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.
 
-**Remark on material interfaces.** At a **material interface** (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\vec D]\cdot n = 0$ and $[\vec B]\cdot n = 0$, with the tangential components of $\vec E$ and $\vec H$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$ in a homogeneous medium.
+**Remark on material interfaces.** At a **material interface** (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = i\vec E - c\vec B$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\vec D]\cdot n = 0$ and $[\vec B]\cdot n = 0$, with the tangential components of $\vec E$ and $\vec H$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$ in a homogeneous medium.
 
 ### The Light-Cone Condition
 
@@ -149,14 +149,14 @@ The scalar equation carries the whole transversality statement: if the scalar ju
 The wave-front condition is compact in the biquaternionic variable, but its content on the electric and magnetic fields is a **joint jump system**. Write the field strength,
 
 $$
-\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
+\tilde F = i\vec E - c\vec B,
 $$
  On a wave front $F_t$ moving with unit normal $\vec u$ at speed $c$, the condition $[\tilde{F}]_{F_t} = -i[\tilde{F}]_{F_t}\times\vec u$ is equivalent to the pair
 
 $$
-\sqrt{\epsilon}\,[\vec E]_{F_t} = \sqrt{\mu}\,[\vec H]_{F_t}\times\vec u,
+[\vec E]_{F_t} = c\,[\vec B]_{F_t}\times\vec u,
 \qquad
-\sqrt{\mu}\,[\vec H]_{F_t} = \sqrt{\epsilon}\,\vec u\times[\vec E]_{F_t}.
+c\,[\vec B]_{F_t} = \vec u\times[\vec E]_{F_t}.
 $$
 
 The two are not independent: each follows from the other together with transversality. Three corollaries make the geometry explicit.
@@ -314,10 +314,10 @@ The biquaternion framework can be applied to shock fronts in nonlinear media and
 
 ### The Generalized Source
 
-The nonlinearity of the medium can be absorbed into an effective four-current $\tilde J_{\Phi,\mathrm{eff}}$, which enters the equation multiplied by $\sqrt{\mu}$. The biquaternionic Maxwell equation becomes
+The nonlinearity of the medium can be absorbed into an effective four-current $\tilde J_{\Phi,\mathrm{eff}}$, which enters the equation multiplied by $Z$. The biquaternionic Maxwell equation becomes
 
 $$
-\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi,\mathrm{eff}},
+\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi,\mathrm{eff}},
 $$
 
 where $\tilde J_{\Phi,\mathrm{eff}}$ includes both the external sources (free charges and currents) and the effective sources arising from the nonlinear response of the medium. In the vacuum limit, $\tilde J_{\Phi,\mathrm{eff}} \to \tilde J_{\Phi}$; in a linear medium, $\tilde J_{\Phi,\mathrm{eff}}$ is a linear function of $\tilde{F}$; in a nonlinear medium, it is a nonlinear function.
@@ -331,10 +331,10 @@ $$
 $$
 
 $$
-\tilde U_{\mathrm n}\,[\tilde{F}]_S = -\sqrt{\mu}\,[\tilde J_{\Phi,\mathrm{eff}}]_S \quad \text{when } \tilde J_{\Phi,\mathrm{eff}} \text{ jumps across } S.
+\tilde U_{\mathrm n}\,[\tilde{F}]_S = -Z\,[\tilde J_{\Phi,\mathrm{eff}}]_S \quad \text{when } \tilde J_{\Phi,\mathrm{eff}} \text{ jumps across } S.
 $$
 
-In the linear vacuum case, $\tilde J_{\Phi,\mathrm{eff}} = 0$ everywhere, and the jump in $\tilde{F}$ is forced to vanish (unless the surface is characteristic, in which case the wave-front structure appears). In the nonlinear case, the jump in $\sqrt{\mu}\,\tilde{J}_{\Phi,\mathrm{eff}}$ provides the driving term for the shock.
+In the linear vacuum case, $\tilde J_{\Phi,\mathrm{eff}} = 0$ everywhere, and the jump in $\tilde{F}$ is forced to vanish (unless the surface is characteristic, in which case the wave-front structure appears). In the nonlinear case, the jump in $Z\,\tilde{J}_{\Phi,\mathrm{eff}}$ provides the driving term for the shock.
 
 ### The Characteristic Structure
 
@@ -409,8 +409,8 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 | $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\digamma_{\mathrm{wav},t} e_t + \vec u$ in the $i r'_t$ convention; the spatial case is the pure $\vec u$ |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |
 | $\tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the electro-gravimagnetic programme |
-| $\rho = \rho_E/\sqrt{\epsilon} - i\rho_H/\sqrt{\mu}$ | Combined complex charge density |
-| $\vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H$ | Combined complex current |
+| $\rho = \rho_E/\epsilon - i\,c\,\rho_H$ | Combined complex charge density |
+| $\vec J = Z\,\vec j_E - i\,\vec j_H$ | Combined complex current |
 | $\vec m$ | Unit normal to the charge–current front |
 | $[\vec E]_{F_t}, [\vec H]_{F_t}$ | Jumps of the electric and magnetic fields across the wave front |
 | $\vec u$ | Unit normal to the wave front, in the direction of motion |
