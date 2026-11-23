@@ -91,7 +91,7 @@
 \qquad
 (\tilde\nabla_\Phi)^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$</p>
-<p>read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla_{\Phi}=-i\,e_t\,\partial/\partial r'_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, read on that sector as $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. No derivative below is written in any other form.</p>
+<p>read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla_{\Phi}=-i\,e_t\,\partial/\partial r'_t+\sum_{k\in\{x,y,z\}}\vec e_k\,\partial/\partial R_k$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, read on that sector as $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. No derivative below is written in any other form.</p>
 <p>The classical field theory is defined by the parent article's Lagrangian density. The field is $\tilde{Ξ}$, with the two parts $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$, and its <strong>Dirac adjoint</strong> is the right multiplication of $\tilde{Ξ}^{\dagger}$ by the single element $i\vec e_x$,</p>
 <p>$$
 \bar{\tilde{Ξ}}=\tilde{Ξ}^{\dagger}i\vec e_x ,
@@ -142,7 +142,7 @@ i h\,\tilde\Upsilon_{\Phi}=i\tilde P_{\Phi}=-\frac{E}{c}\,e_t+i\vec p ,
 \qquad
 -\frac{h^{2}}{4\pi^{2}}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=\frac{E^2}{c^2}-|\vec p|^{2}=-N ,
 $$</p>
-<p>with $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$ the wave biquaternion. The derivatives bring $-E$ from the time coordinate, through $\partial/\partial R_t=-i\partial/\partial r'_t$ followed by $\partial/\partial r'_t\to-iE$, and $+ip_\eta$ from each spatial one. The two lines on a plane wave are therefore</p>
+<p>with $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$ the wave biquaternion. The derivatives bring $-E$ from the time coordinate, through $\partial/\partial R_t=-i\partial/\partial r'_t$ followed by $\partial/\partial r'_t\to-iE$, and $+ip_k$ from each spatial one. The two lines on a plane wave are therefore</p>
 <p>$$
 \big(w_L,w_R\big)\longmapsto\big(i h\,\tilde\Upsilon_{\Phi}\,w_R,\ -i h\,\tilde\Upsilon_{\Phi}^{\natural}w_L\big),
 $$</p>
@@ -214,7 +214,7 @@ $$</p>
 <p>$$
 S_F(p)=-\frac{i\big(\tilde P_{\Phi}\,w_R+imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L+imc\,w_R\big)}{N+m^{2}\,c^{2}-i\epsilon}.
 $$</p>
-<p>The propagator companion writes its own amplitude as $\mathcal{A}_p+mc$ over the same denominator, with $\mathcal{A}_p$ an action whose energy term multiplies $\vec e_x$ on the right and whose momentum terms multiply $\vec e_\eta$ on the left and $\vec e_y$ on the right, and the symbol here is the left action of the gradient on each part of the pair. The two are not the same map, and they share the pole set because the square of each is multiplication by $-N$. Written with the invertibles, the numerator has its two imaginary units multiplied to $-1$ and becomes</p>
+<p>The propagator companion writes its own amplitude as $\mathcal{A}_p+mc$ over the same denominator, with $\mathcal{A}_p$ an action whose energy term multiplies $\vec e_x$ on the right and whose momentum terms multiply $\vec e_k$ on the left and $\vec e_y$ on the right, and the symbol here is the left action of the gradient on each part of the pair. The two are not the same map, and they share the pole set because the square of each is multiplication by $-N$. Written with the invertibles, the numerator has its two imaginary units multiplied to $-1$ and becomes</p>
 <p>$$
 S_F(p):\ (w_L,w_R)\,\longmapsto\frac{\big(\tilde P_{\Phi}\,w_R-imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L-imc\,w_R\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon},
 $$</p>

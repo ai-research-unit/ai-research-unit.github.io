@@ -153,7 +153,7 @@ g_{{\imath}{\jmath}}=\eta_{{\imath}{\jmath}}+h_{{\imath}{\jmath}},\qquad
 h_{{\imath}{\jmath}}\mapsto h_{{\imath}{\jmath}}-\partial_{\imath}\zeta_{\jmath}-\partial_{\jmath}\zeta_{\imath},
 $$</p>
 <p>$$
-\bar h_{00}=h_{00}+\tfrac12h,\quad \bar h_{0\eta}=h_{0\eta},\quad \bar h_{\eta l}=h_{\eta l}-\tfrac12h\,\delta_{\eta l},\quad \bar h=-\bar h_{00}+\sum_\eta\bar h_{\eta\eta}=-h .
+\bar h_{00}=h_{00}+\tfrac12h,\quad \bar h_{0k}=h_{0k},\quad \bar h_{k l}=h_{k l}-\tfrac12h\,\delta_{k l},\quad \bar h=-\bar h_{00}+\sum_{k\in\{x,y,z\}}\bar h_{kk}=-h .
 $$</p>
 <p><strong>The wave equation.</strong></p>
 <p>$$
@@ -175,7 +175,7 @@ $$</p>
 <p><strong>The non-trivial claim.</strong> The wave equation holds for the <em>frame</em> perturbation, not only for the metric perturbation, and the trace part is subtracted in the same way. A gravitational wave is therefore a propagating congruence of frames. The graviton itself is not a material biquaternion: it is not an element of $\mathbb{B}_{\Phi}$, and the natural single-biquaternion packaging $\sum h_{{\imath}{\jmath}}\varepsilon_{\imath}\varepsilon_{\jmath}^{\natural}$ collapses to the trace $h\,e_t$ and annihilates exactly the two amplitudes a graviton would carry.</p>
 <p><strong>The graviton as a symmetric square.</strong> The carrier is the symmetric square of the material vector, $V\odot V$, whose decomposition is $0\oplus2$: $6=1+5$, the trace the spin-zero singlet and the trace-free part the spin-two carrier, the trace being removed with the algebra's bilinear form. The massless gauge removes three of the five. On that space the transverse-traceless projector</p>
 <p>$$
-P_{ij,\eta l}=\tfrac12\bigl(\Pi_{i\eta}\Pi_{jl}+\Pi_{il}\Pi_{j\eta}\bigr)-\tfrac12\Pi_{ij}\Pi_{\eta l}
+P_{ij,k l}=\tfrac12\bigl(\Pi_{ik}\Pi_{jl}+\Pi_{il}\Pi_{jk}\bigr)-\tfrac12\Pi_{ij}\Pi_{k l}
 $$</p>
 <p>is idempotent, has trace two, kills the pure-gauge and trace modes, and has a two-dimensional complement whose fixed points are the two polarisations. All of it was verified to machine precision. The canonical quantisation then gives the standard mode expansion, the bosonic commutators, the de Donder gauge fixing with vector ghosts and BRST, and the Fierz–Pauli massive theory with five polarisations that shows the van Dam–Veltman–Zakharov discontinuity. The count is the framework's; the coupling to $T_{{\imath}{\jmath}}$, the equivalence principle and Newton's constant are not.</p>
 <p><strong>Source.</strong> <code>articles_physics/linearized-gravity-in-biquaternionic-form.md</code>, <code>articles_physics/gravitational-waves-in-biquaternionic-form.md</code>, <code>articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.md</code>.</p>
@@ -261,7 +261,7 @@ $$</p>
 <p>$$
 R=\mathrm{tr}\bigl[(\tilde FD)^{2}+\Box\bigr],
 $$</p>
-<p>which makes the Hilbert action algebra-writable at the cost of presupposing the connection it uses. And the source can be carried as the Gram matrix of its own frame: the single-element packaging fails only because ten components do not fit in eight, while a frame carries any nondegenerate symmetric $T$. For a perfect fluid the frame is explicit — one <strong>informational</strong> time leg, $\mathfrak U_0=-\sqrt\rho\,e_t$, and three material space legs, $\mathfrak U_\eta=\sqrt p\,\vec e_\eta$ — and its Gram matrix is exactly $\mathrm{diag}(\rho,p,p,p)$. The sector assignment is forced: a material time leg has norm $-\rho$, negative energy. What remains open is therefore not the carrier but the matter action whose variation fixes the frame.</p>
+<p>which makes the Hilbert action algebra-writable at the cost of presupposing the connection it uses. And the source can be carried as the Gram matrix of its own frame: the single-element packaging fails only because ten components do not fit in eight, while a frame carries any nondegenerate symmetric $T$. For a perfect fluid the frame is explicit — one <strong>informational</strong> time leg, $\mathfrak U_0=-\sqrt\rho\,e_t$, and three material space legs, $\mathfrak U_k=\sqrt p\,\vec e_k$ — and its Gram matrix is exactly $\mathrm{diag}(\rho,p,p,p)$. The sector assignment is forced: a material time leg has norm $-\rho$, negative energy. What remains open is therefore not the carrier but the matter action whose variation fixes the frame.</p>
 <p><strong>What an action would not fix.</strong> The conformal factor and the measure. Even a solved action would leave both open. The article's own ordering: this is the corpus's single hardest open object, its reason fits in one sentence, and the negative route — a no-go for the traceless source — is the cheaper of the two attacks.</p>
 <h2 id="summary">Summary</h2>
 <p><strong>The category in eleven formulas.</strong></p>
@@ -319,7 +319,7 @@ $$</p>
 <td>metric perturbation and its trace reverse</td>
 </tr>
 <tr>
-<td>$P_{ij,\eta l}$</td>
+<td>$P_{ij,k l}$</td>
 <td>transverse-traceless projector on $V\odot V$</td>
 </tr>
 <tr>

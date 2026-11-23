@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-fourier-transform-and-the-coupled-schrodinger-equation-in-biquaternionic-form"><strong>The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The coupled equation is the free one with two numbers shifted, and the transform says so in one line. <em>The Coupled Schrödinger Equation in Biquaternionic Form</em> writes $i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta(-i \frac{h}{2\pi}\,D_\eta)^{2}\tilde\Xi$ with $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ and $D_\eta=\partial_\eta+\frac{2\pi iϙ A_\eta}{h}$. In frequency space each covariant derivative becomes a number, and the equation becomes a relation between three numbers.</p>
+<p>The coupled equation is the free one with two numbers shifted, and the transform says so in one line. <em>The Coupled Schrödinger Equation in Biquaternionic Form</em> writes $i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_{k\in\{x,y,z\}}(-i \frac{h}{2\pi}\,D_k)^{2}\tilde\Xi$ with $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ and $D_k=\partial_k+\frac{2\pi iϙ A_k}{h}$. In frequency space each covariant derivative becomes a number, and the equation becomes a relation between three numbers.</p>
 <p>The first finding is a translation of the symbol's argument. The coupled symbol is the free symbol evaluated at a shifted frequency and a shifted wave vector: $\omega\mapsto\omega+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ and $\vec\nu_{\Phi}\mapsto\vec\nu_{\Phi}-\frac{q\vec A}{h}$. Verified over one hundred draws, the two sides differ by zero to machine precision. The potential shifts the symbol's argument and does not change its shape, and the shape is the free symbol's.</p>
 <p>The sign of the frequency shift is fixed by the parent and it is plus. The parent's temporal covariant derivative enters the equation as $i \frac{h}{2\pi}\partial_{t'}+ϙ\omicron_{\mathrm{pot}}$, so the phase's rate acquires $+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ and not $-\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$. The opposite sign is what a careless substitution of $i \frac{h}{2\pi} D_t$ with $D_t=\partial_{t'}+\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ would give, and the article uses the parent's.</p>
 <p>The second finding is the split between the curvature and the gap. The symbol's second derivative in the wave vector is $-\frac{h^{2}}{4\pi^{2}}/m$, independent of $\vec A$: verified as $-0.588235$ with no connection, with $\vec A$ and with $2\vec A$. The gap between the two eigenvalues in the constant setting is $2\lvert\vec h_\Psi-q\vec A\rvert$, which moves: $1.232882$ free and $1.503329$ with $ϙ\vec A=(0.35,0.25,0)$. The curvature is a property of the kinetic term and the gap is a property of the vector potential.</p>
@@ -84,22 +84,22 @@
 <p>$$
 D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
-D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta,
+D_k=\partial_k+\frac{2\pi iϙ}{h}A_k,
 \qquad
-i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi}\,D_\eta\big)^{2}\tilde\Xi .
+i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_{k\in\{x,y,z\}}\big(-i \frac{h}{2\pi}\,D_k\big)^{2}\tilde\Xi .
 $$</p>
 <p>The temporal slot carries the opposite sign to the spatial ones, and the reason is the metric $i$ of $\partial/\partial R_t=-i\partial_{r'_t}$, which the parent states once.</p>
 <p>The two settings. The <em>constant</em> setting takes a constant Hermitian Hamiltonian and a constant connection, so the equation is an ordinary differential equation and the solution is the free one with shifted coefficients. The <em>operator</em> setting takes $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/(2m)+V$ and a connection that may vary in space. Every statement below is labelled with the setting it belongs to, and none is transferred.</p>
-<p>The substitution. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r)$, so $\partial_{t'}\mapsto-i\omega$ and $\partial_\eta\mapsto ik_\eta$. The covariant slots therefore become the numbers</p>
+<p>The substitution. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r)$, so $\partial_{t'}\mapsto-i\omega$ and $\partial_k\mapsto i\nu_{\Phi,k}$. The covariant slots therefore become the numbers</p>
 <p>$$
 i \frac{h}{2\pi}\,D_t\longmapsto hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}},
 \qquad
--i \frac{h}{2\pi}\,D_\eta\longmapsto h\,k_\eta+ϙ A_\eta .
+-i \frac{h}{2\pi}\,D_k\longmapsto h\,\nu_{\Phi,k}+ϙ A_k .
 $$</p>
 <h2 id="two-settings-two-symbols">Two Settings, Two Symbols</h2>
 <p>The operator setting's symbol is a central scalar. With $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/(2m)+V$ and a constant connection, the frequency-space equation is</p>
 <p>$$
-\Big(hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\frac{1}{2m}\sum_\eta\big(h\,k_\eta+ϙ A_\eta\big)^{2}\Big)\hat{\tilde\Xi}=0,
+\Big(hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\frac{1}{2m}\sum_{k\in\{x,y,z\}}\big(h\,\nu_{\Phi,k}+ϙ A_k\big)^{2}\Big)\hat{\tilde\Xi}=0,
 $$</p>
 <p>so the symbol is the parent's dispersion relation written as a function,</p>
 <p>$$
@@ -129,11 +129,11 @@ $$</p>
 <p>Why the sign is not free. The two signs of the two slots are one fact: the metric $i$ in $\partial/\partial R_t=-i\partial_{r'_t}$ multiplies the connection's temporal coefficient, which is itself imaginary, and the product is real with the sign the parent computes. A convention that flips one slot and not the other breaks the gauge covariance, and the parent's §<em>Gauge Covariance</em> would fail.</p>
 <p>The check. Taking the free symbol at $\omega-\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ instead gives $hf_{\mathrm{frq}}-ϙ\omicron_{\mathrm{pot}}-\lvert h\,\vec\nu_{\Phi}-q\vec A\rvert^{2}/(2m)$, which differs from the parent's equation by $2ϙ\omicron_{\mathrm{pot}}$. The difference is not a normalisation: it is a sign error that the parent's own substitution forbids.</p>
 <p>What the sign means physically. With $ϙ$ the negative of the electric charge, as the parent's note says, the potential energy is $+ϙ\omicron_{\mathrm{pot}}$ and the frequency shift is $+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$. A positive potential raises the frequency, which is the statement that the energy is $hf_{\mathrm{frq}}=-\rho_{\mathrm{chg}}\omicron_{\mathrm{pot}}+\ldots$ and the symbol is written with the opposite sign.</p>
-<p>The spatial sign. The spatial slot has $+\frac{2\pi iϙ A_\eta}{h}$ inside $D_\eta$, and $-i \frac{h}{2\pi} D_\eta$ gives $h\,k_\eta+ϙ A_\eta$. So the mechanical momentum is $h\,\vec\nu_{\Phi}-q\vec A$ and the symbol's wave-vector shift is $-\frac{2\pi q\vec A}{h}$. The two shifts have the same sign in the symbol and opposite signs in the covariant derivatives, and that is the parent's bookkeeping read once more.</p>
+<p>The spatial sign. The spatial slot has $+\frac{2\pi iϙ A_k}{h}$ inside $D_k$, and $-i \frac{h}{2\pi} D_k$ gives $h\,\nu_{\Phi,k}+ϙ A_k$. So the mechanical momentum is $h\,\vec\nu_{\Phi}-q\vec A$ and the symbol's wave-vector shift is $-\frac{2\pi q\vec A}{h}$. The two shifts have the same sign in the symbol and opposite signs in the covariant derivatives, and that is the parent's bookkeeping read once more.</p>
 <h2 id="the-curvature-is-invariant-and-the-gap-moves">The Curvature Is Invariant and the Gap Moves</h2>
 <p>The curvature. Differentiating the operator setting's symbol twice,</p>
 <p>$$
-\frac{\partial^{2}\sigma_{\mathrm{gco}}}{\partial k_\eta^{2}}=-\frac{hc}{(2\pi)^{2}\nu_m}
+\frac{\partial^{2}\sigma_{\mathrm{gco}}}{\partial \nu_{\Phi,k}^{2}}=-\frac{hc}{(2\pi)^{2}\nu_m}
 \qquad
 \text{for each }\eta ,
 $$</p>
@@ -144,9 +144,9 @@ $$</p>
 <p>The two statements together. The scalar potential adds a constant to the symbol; the vector potential adds a term linear in the wave vector and a term quadratic in it. The first shifts the pair, the second changes its separation, and the two are the two halves of one translation's Taylor expansion.</p>
 <p>Why the split matters. A measurement of the gap determines $\lvert\vec h_\Psi-q\vec A\rvert$ and not $\vec h_\Psi$; a measurement of the curvature determines $m$ and nothing else. <strong>So the transform separates the mass from the vector potential</strong>, which the position-space equation does not do in one line.</p>
 <h2 id="why-the-connection-does-not-split-the-symbol">Why the Connection Does Not Split the Symbol</h2>
-<p>Centrality in every slot. $\omicron_{\mathrm{pot}}$ is real and multiplies $e_t$; $A_\eta$ is real and multiplies nothing. Both are central, so $D_\eta$ commutes with the units and acts on each of the four complex coefficients of $\tilde\Xi$ separately and identically. The symbol is therefore one scalar or one element, and never an array that mixes coefficients.</p>
+<p>Centrality in every slot. $\omicron_{\mathrm{pot}}$ is real and multiplies $e_t$; $A_k$ is real and multiplies nothing. Both are central, so $D_k$ commutes with the units and acts on each of the four complex coefficients of $\tilde\Xi$ separately and identically. The symbol is therefore one scalar or one element, and never an array that mixes coefficients.</p>
 <p>The four copies survive. The coupled theory is four copies of the standard charged scalar field sharing one connection, as the parent says. In frequency space the four copies share one symbol, so the symbol's zero set is common. A coupling that did not commute with the units would give four different symbols, and the article would have to speak of a matrix of them.</p>
-<p>The connection is a number in every slot. $i \frac{h}{2\pi} D_t$ becomes $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $-i \frac{h}{2\pi} D_\eta$ becomes $h\,k_\eta+ϙ A_\eta$; both are numbers and neither is an operator. <strong>So the coupling is invisible to the symbol's structure and visible only in its arguments.</strong></p>
+<p>The connection is a number in every slot. $i \frac{h}{2\pi} D_t$ becomes $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $-i \frac{h}{2\pi} D_k$ becomes $h\,\nu_{\Phi,k}+ϙ A_k$; both are numbers and neither is an operator. <strong>So the coupling is invisible to the symbol's structure and visible only in its arguments.</strong></p>
 <p>What the commutator would have added. The covariant derivatives do not commute, and their commutator is the field strength. In the symbol that commutator contributes nothing, because the symbol is the image of the operator at one wave vector and the commutator is a statement about two. The magnetic field therefore enters the symbol only through $\vec A$ itself, which is the standard statement that a plane wave in a constant $\vec A$ sees the vector potential and not the field.</p>
 <p>Why that is not a paradox. A constant $\vec A$ shifts the wave vector; a constant $\vec B$ is what a non-constant $\vec A$ produces, and then the symbol ceases to exist at one wave vector. <strong>The article's licence is constant coefficients, and the field strength's effect is outside it.</strong></p>
 <h2 id="the-poles-and-their-spacing">The Poles and Their Spacing</h2>
@@ -169,7 +169,7 @@ $$</p>
 <p>The first question is the operator setting's spectrum. With a confining potential the eigenvalues are discrete, and the symbol is a local object. Whether the symbol's zero set approximates the spectrum in a stated limit — the WKB limit — is not decided here.</p>
 <p>The second is the sign's physical reading. The shift $+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ raises the frequency for a positive $ϙ\omicron_{\mathrm{pot}}$. Whether the corpus's convention for the charge makes that the standard sign for every reader is a conventions question and not a physics question, and it is left to the conventions articles.</p>
 <p>The third is the varying connection. The gauge-invariant statement is about the two invariants; whether a local symbol built from them is faithful where the connection varies is the polar companion's open question, and it is open here.</p>
-<p>The fourth is the field strength's second-order effect. The curvature in the wave vector is invariant, and the mixed derivative $\partial^{2}\sigma/\partial\omega\partial k_\eta$ vanishes. Whether a nonzero mixed derivative is the mark of a coupling outside the present class is not settled.</p>
+<p>The fourth is the field strength's second-order effect. The curvature in the wave vector is invariant, and the mixed derivative $\partial^{2}\sigma/\partial\omega\partial \nu_{\Phi,k}$ vanishes. Whether a nonzero mixed derivative is the mark of a coupling outside the present class is not settled.</p>
 <h2 id="summary">Summary</h2>
 <p>The coupled symbol is the free symbol at a shifted argument. In the operator setting, $\sigma_{\mathrm{gco}}(\omega,2\pi\vec\nu_{\Phi})=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\lvert h\,\vec\nu_{\Phi}-q\vec A\rvert^{2}/(2m)$ equals $\sigma_{\mathrm{free}}(\omega+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h},\vec\nu_{\Phi}-\frac{q\vec A}{h})$, verified over one hundred draws with zero residual. The sign of the frequency shift is plus, because the parent's temporal slot carries $i \frac{h}{2\pi}\partial_{t'}+ϙ\omicron_{\mathrm{pot}}$, and the opposite sign would differ by $2ϙ\omicron_{\mathrm{pot}}$.</p>
 <p>The curvature in the wave vector is $-\frac{h^{2}}{4\pi^{2}}/m=-0.588235$, the same with no connection, with $\vec A$ and with $2\vec A$. The gap in the constant setting is $2\lvert\vec h_\Psi-q\vec A\rvert$: $1.232882$ free and $1.503329$ with $ϙ\vec A=(0.35,0.25,0)$, while $ϙ\omicron_{\mathrm{pot}}=0.4$ alone left the gap at $1.232883$ and moved the symbol by $-0.360000$. The scalar potential translates the pair and the vector potential separates it, and the effective mass is the bare mass.</p>
@@ -188,7 +188,7 @@ $$</p>
 <td>The covariant time derivative; the minus sign is the metric's</td>
 </tr>
 <tr>
-<td>$D_\eta=\partial_\eta+\frac{2\pi iϙ A_\eta}{h}$</td>
+<td>$D_k=\partial_k+\frac{2\pi iϙ A_k}{h}$</td>
 <td>The covariant spatial derivative; the plus sign</td>
 </tr>
 <tr>
@@ -212,7 +212,7 @@ $$</p>
 <td>The shifted Hamiltonian</td>
 </tr>
 <tr>
-<td>$\partial^{2}\sigma/\partial k_\eta^{2}=-\frac{h^{2}}{4\pi^{2}}/m=-0.588235$</td>
+<td>$\partial^{2}\sigma/\partial \nu_{\Phi,k}^{2}=-\frac{h^{2}}{4\pi^{2}}/m=-0.588235$</td>
 <td>The curvature; the effective mass; invariant</td>
 </tr>
 <tr>

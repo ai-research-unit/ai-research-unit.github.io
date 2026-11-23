@@ -128,7 +128,7 @@
 <p><strong>The quantum–classical divide</strong> is the boundary of the ball. The pure states are $|\vec s_\Psi|=1$; the classical states are the centre $\vec s_\Psi=0$. Nothing in between is classical, and the corpus refuses the reading of $h\to0$ as the definition of classicality: the limit that produces classical mechanics is the one of the next section, and it is a limit on the <em>phase gradient</em>, not on $\frac{h}{2\pi}$.</p>
 <p><strong>The commutation relation is an axiom.</strong> The corpus does not derive</p>
 <p>$$
-[r_j,p_\eta]=i \frac{h}{2\pi}\,\delta_{j\eta}
+[r_j,p_k]=i \frac{h}{2\pi}\,\delta_{jk}
 $$</p>
 <p>from the algebra. It states it as an independent axiom, and it records why: the algebra supplies the generators and the products, but the identification of the position with a multiplication operator and of the momentum with a derivative is a further step. The imaginary unit in $i \frac{h}{2\pi}$ is the central one, and it is what makes the commutator anti-Hermitian and the group unitary.</p>
 <p><strong>Source.</strong> <code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>, <code>articles_physics/the-quantum-classical-divide-in-the-biquaternion-framework.md</code>, <code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code>.</p>
@@ -181,8 +181,8 @@ $$</p>
 <p><strong>The non-trivial claim.</strong> The classical limit is a limit on the <em>gradient of the phase</em>, not on $\frac{h}{2\pi}$. The amplitude equation survives as the continuity equation, with the correct $1/\sqrt{p}$ focusing factor. The corpus keeps the quantum potential in the exact equation and drops it only under these two inequalities.</p>
 <p><strong>The kinetic momentum, and the bracket that does not close.</strong></p>
 <p>$$
-\pi_\eta=p_\eta-ϙA_\eta,\qquad
-[\pi_j,\pi_\eta]=i \frac{h}{2\pi}\,ϙ\,\varepsilon_{j\eta l}B_l .
+\pi_k=p_k-ϙA_k,\qquad
+[\pi_j,\pi_k]=i \frac{h}{2\pi}\,ϙ\,\varepsilon_{jk l}B_l .
 $$</p>
 <p>$$
 \vec L_{\mathrm{kin}}=\vec L_{\mathrm{orb}}-ϙ\,\vec r\times\vec A,\qquad
@@ -238,7 +238,7 @@ $$</p>
 <h2 id="4-spin-one-and-above">4. Spin One and Above</h2>
 <p><strong>The generators and their ladder operators.</strong></p>
 <p>$$
-\tilde S_{\Psi,\eta}=\frac{h}{4\pi}i\vec e_\eta,\qquad
+\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_k,\qquad
 \tilde S_{\Psi,\pm}=\frac{h}{4\pi}\bigl(i\vec e_x\mp\vec e_y\bigr),
 $$</p>
 <p>$$
@@ -247,7 +247,7 @@ $$</p>
 <p><strong>The non-trivial claim.</strong> The ladder operators are nilpotent and null. They are not observables and they have no norm; they are the two null directions of the spin algebra. This is why the raising and lowering cannot be read as physical transitions without a state to act on.</p>
 <p><strong>Addition of angular momenta.</strong> The total generators close on the same table:</p>
 <p>$$
-[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i \frac{h}{2\pi}\,\epsilon_{ij\eta}\tilde S_{\Psi,\mathrm{tot},\eta},
+[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i \frac{h}{2\pi}\,\epsilon_{ijk}\tilde S_{\Psi,\mathrm{tot},k},
 $$</p>
 <p>$$
 \tilde S_{\Psi,\mathrm{tot},\pm}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle
@@ -259,11 +259,11 @@ $$</p>
 $$</p>
 <p><strong>The generalised Bloch ball for spin 1.</strong></p>
 <p>$$
-\tilde F_\eta=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}
-=\frac{h}{4\pi}\bigl(i\vec e_\eta\otimes e_t+e_t\otimes i\vec e_\eta\bigr),
+\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}
+=\frac{h}{4\pi}\bigl(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\bigr),
 $$</p>
 <p>$$
-[F_i,F_j]=i \frac{h}{2\pi}\,\epsilon_{ij\eta}F_\eta,\qquad F_1^{2}+F_2^{2}+F_3^{2}=2\frac{h^{2}}{4\pi^{2}}I_3 .
+[F_i,F_j]=i \frac{h}{2\pi}\,\epsilon_{ijk}F_k,\qquad F_1^{2}+F_2^{2}+F_3^{2}=2\frac{h^{2}}{4\pi^{2}}I_3 .
 $$</p>
 <p><strong>The qutrit obstruction, and it is the sharpest statement of the category.</strong></p>
 <p>$$

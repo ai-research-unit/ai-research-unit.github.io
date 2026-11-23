@@ -77,18 +77,18 @@
 <h2 id="the-generators-as-elements-of-the-algebra">The Generators as Elements of the Algebra</h2>
 <h3 id="the-three-rotations">The Three Rotations</h3>
 <p>$$
-J_\eta=\tfrac12\vec e_\eta,\qquad \eta=x,y,z .
+J_k=\tfrac12\vec e_k,\qquad k=x,y,z .
 $$</p>
-<p>Each is a pure vector with real coefficients, so each is anti-Hermitian, $J_\eta^{*}=-J_\eta$. As a rotor generator, $J_\eta$ exponentiates to the rotation of <em>The Group of Unit-Norm Biquaternions</em>,</p>
+<p>Each is a pure vector with real coefficients, so each is anti-Hermitian, $J_k^{*}=-J_k$. As a rotor generator, $J_k$ exponentiates to the rotation of <em>The Group of Unit-Norm Biquaternions</em>,</p>
 <p>$$
 \exp(\theta_{\mathrm{axr}}J_{\vec u})=\cos\tfrac{\theta_{\mathrm{axr}}}{2}+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u ,
 $$</p>
 <p>and the factor $\tfrac12$ in the generator is the half-angle of the rotor, seen infinitesimally.</p>
 <h3 id="the-three-boosts">The Three Boosts</h3>
 <p>$$
-K_\eta=\tfrac12 i\vec e_\eta,\qquad \eta=x,y,z .
+K_k=\tfrac12 i\vec e_k,\qquad k=x,y,z .
 $$</p>
-<p>Each is a pure vector with imaginary coefficients, so each is Hermitian, $K_\eta^{*}=K_\eta$. It exponentiates to the boost,</p>
+<p>Each is a pure vector with imaginary coefficients, so each is Hermitian, $K_k^{*}=K_k$. It exponentiates to the boost,</p>
 <p>$$
 \exp(\theta_{\mathrm{rpd}}K_{\vec u})=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u ,
 $$</p>
@@ -98,15 +98,15 @@ $$</p>
 <thead>
 <tr>
 <th></th>
-<th>$J_\eta$</th>
-<th>$K_\eta$</th>
+<th>$J_k$</th>
+<th>$K_k$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>element</td>
-<td>$\tfrac12\vec e_\eta$</td>
-<td>$\tfrac12 i\vec e_\eta$</td>
+<td>$\tfrac12\vec e_k$</td>
+<td>$\tfrac12 i\vec e_k$</td>
 </tr>
 <tr>
 <td>under the star</td>
@@ -132,7 +132,7 @@ $$</p>
 </table></div>
 <p>The last row is the infinitesimal form of the difference between a closed and an open direction, and it is the row that produces the inertia of the invariant form.</p>
 <h3 id="why-these-and-not-others">Why These and Not Others</h3>
-<p>The six are a basis of the traceless part: three complex directions $\vec e_\eta$ read as six real directions $\vec e_\eta$ and $i\vec e_\eta$. The factors $\tfrac12$ are conventions that make the exponential formula free of factors of two; they do not affect the bracket's shape, only its numerical entries.</p>
+<p>The six are a basis of the traceless part: three complex directions $\vec e_k$ read as six real directions $\vec e_k$ and $i\vec e_k$. The factors $\tfrac12$ are conventions that make the exponential formula free of factors of two; they do not affect the bracket's shape, only its numerical entries.</p>
 <h2 id="the-commutator-table">The Commutator Table</h2>
 <h3 id="the-nine-brackets">The Nine Brackets</h3>
 <p>Direct multiplication in the algebra gives, for cyclic $(i,j,k)=(x,y,z)$,</p>
@@ -274,15 +274,15 @@ $$</p>
 <p>$$
 C=\tfrac12\bigl(\vec K^{2}-\vec J^{2}\bigr),
 $$</p>
-<p>where $\vec J^{2}=\sum_\eta J_\eta J_\eta$ and $\vec K^{2}=\sum_\eta K_\eta K_\eta$ are sums of products inside the universal enveloping algebra. A second, independent invariant exists and is written in <em>The Two Casimirs of the Lorentz Algebra</em>; this article needs only the first.</p>
-<p><strong>Why the sign is what it is.</strong> In the physicist's Hermitian convention the generators are $\mathcal{J}_\eta=iJ_\eta$ and $\mathcal{K}_\eta=iK_\eta$, and $\mathcal{J}^{2}-\mathcal{K}^{2}=(i)^{2}(\vec J^{2}-\vec K^{2})=\vec K^{2}-\vec J^{2}$. So the same Casimir is written</p>
+<p>where $\vec J^{2}=\sum_{k\in\{x,y,z\}} J_k J_k$ and $\vec K^{2}=\sum_{k\in\{x,y,z\}} K_k K_k$ are sums of products inside the universal enveloping algebra. A second, independent invariant exists and is written in <em>The Two Casimirs of the Lorentz Algebra</em>; this article needs only the first.</p>
+<p><strong>Why the sign is what it is.</strong> In the physicist's Hermitian convention the generators are $\mathcal{J}_k=iJ_k$ and $\mathcal{K}_k=iK_k$, and $\mathcal{J}^{2}-\mathcal{K}^{2}=(i)^{2}(\vec J^{2}-\vec K^{2})=\vec K^{2}-\vec J^{2}$. So the same Casimir is written</p>
 <p>$$
 C=\tfrac12\bigl(\mathcal{J}^{2}-\mathcal{K}^{2}\bigr)\quad\text{(Hermitian generators)}
 =\tfrac12\bigl(\vec K^{2}-\vec J^{2}\bigr)\quad\text{(anti-Hermitian generators)} .
 $$</p>
 <p>A formula copied from a book that uses the other convention will be off by an overall sign, and the sign is a convention and not a result.</p>
 <h3 id="the-eigenvalue-on-the-defining-representation">The Eigenvalue on the Defining Representation</h3>
-<p>On the $2\times2$ image, $J_\eta=\tfrac12\mathsf{M}_2(\vec e_\eta)$ satisfies $J_\eta^{2}=-\tfrac14I_2$, so $\vec J^{2}=-\tfrac34I_2$; and $K_\eta^{2}=+\tfrac14I_2$, so $\vec K^{2}=+\tfrac34I_2$. Hence</p>
+<p>On the $2\times2$ image, $J_k=\tfrac12\mathsf{M}_2(\vec e_k)$ satisfies $J_k^{2}=-\tfrac14I_2$, so $\vec J^{2}=-\tfrac34I_2$; and $K_k^{2}=+\tfrac14I_2$, so $\vec K^{2}=+\tfrac34I_2$. Hence</p>
 <p>$$
 C=\tfrac12\bigl(\tfrac34+\tfrac34\bigr)I_2=\tfrac34 I_2 .
 $$</p>
@@ -332,7 +332,7 @@ $$</p>
 <h3 id="the-corollary-for-this-block">The Corollary for This Block</h3>
 <p>A reader who meets the table in the four-vector display and again in the two-triple display and again in the Casimir computation is meeting one object three times. The differences between the articles are the differences between what each display is <em>for</em>, and the table is the one invariant that all of them share. That is why it is printed in full once, here, and cited afterwards.</p>
 <h2 id="summary">Summary</h2>
-<p>The six generators are $J_\eta=\tfrac12\vec e_\eta$, anti-Hermitian and compact, and $K_\eta=\tfrac12 i\vec e_\eta$, Hermitian and non-compact. Their brackets are $[J_i,J_j]=J_k$, $[J_i,K_j]=K_k$, $[K_i,K_j]=-J_k$ cyclically, with structure constants $\pm\epsilon_{ijk}$. The three blocks say that the rotations close, that the boosts transform as a vector, and that two boosts bracket to a rotation with the sign that makes the algebra Lorentzian rather than Euclidean. The trace form is $-\tfrac12$ on rotations and $+\tfrac12$ on boosts; the Killing form is $-4$ and $+4$; both have inertia $(3,3)$ and the Killing form has determinant $-4096$. The quadratic Casimir is $\tfrac12(\vec K^{2}-\vec J^{2})$ in the anti-Hermitian convention, equal to $\tfrac12(\mathcal{J}^{2}-\mathcal{K}^{2})$ in the Hermitian one, with value $\tfrac34$ on the defining representation. The table is the same in every display because every faithful representation is a Lie algebra homomorphism, and a homomorphism preserves brackets.</p>
+<p>The six generators are $J_k=\tfrac12\vec e_k$, anti-Hermitian and compact, and $K_k=\tfrac12 i\vec e_k$, Hermitian and non-compact. Their brackets are $[J_i,J_j]=J_k$, $[J_i,K_j]=K_k$, $[K_i,K_j]=-J_k$ cyclically, with structure constants $\pm\epsilon_{ijk}$. The three blocks say that the rotations close, that the boosts transform as a vector, and that two boosts bracket to a rotation with the sign that makes the algebra Lorentzian rather than Euclidean. The trace form is $-\tfrac12$ on rotations and $+\tfrac12$ on boosts; the Killing form is $-4$ and $+4$; both have inertia $(3,3)$ and the Killing form has determinant $-4096$. The quadratic Casimir is $\tfrac12(\vec K^{2}-\vec J^{2})$ in the anti-Hermitian convention, equal to $\tfrac12(\mathcal{J}^{2}-\mathcal{K}^{2})$ in the Hermitian one, with value $\tfrac34$ on the defining representation. The table is the same in every display because every faithful representation is a Lie algebra homomorphism, and a homomorphism preserves brackets.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -343,11 +343,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$J_\eta=\tfrac12\vec e_\eta$</td>
+<td>$J_k=\tfrac12\vec e_k$</td>
 <td>the rotation generators, anti-Hermitian</td>
 </tr>
 <tr>
-<td>$K_\eta=\tfrac12 i\vec e_\eta$</td>
+<td>$K_k=\tfrac12 i\vec e_k$</td>
 <td>the boost generators, Hermitian</td>
 </tr>
 <tr>

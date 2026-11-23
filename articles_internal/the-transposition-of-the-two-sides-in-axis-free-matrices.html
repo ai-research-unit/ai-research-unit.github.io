@@ -175,9 +175,9 @@ $$</p>
 <p>and $S_k^{2}=T_k^{2}=-\mathrm I_4$. Property (4) is the whole proof of Step One.</p>
 <p><strong>The decomposition of the two displays.</strong> By (1) and (2),</p>
 <p>$$
-L_{\mathrm{axf}}(\tilde Q)=Q_t\mathrm I_4+\sum_{k}Q_kS_k,
+L_{\mathrm{axf}}(\tilde Q)=Q_t\mathrm I_4+\sum_{k\in\{x,y,z\}}Q_kS_k,
 \qquad
-R_{\mathrm{axf}}(\tilde Q)=Q_t\mathrm I_4+\sum_{k}Q_kT_k .
+R_{\mathrm{axf}}(\tilde Q)=Q_t\mathrm I_4+\sum_{k\in\{x,y,z\}}Q_kT_k .
 \tag{5}
 $$</p>
 <p>Four matrices, four coefficients. The two families differ only in which of the two triples is used.</p>
@@ -331,8 +331,8 @@ $$</p>
 <p><strong>And the same statement read on the units.</strong> $D\,S_k\,D=-T_k$ for each direction: the congruence negates the two mixed entries of $S_k$ and keeps its two spatial entries, and that is $-T_k$ at all four positions. Hence, applying the congruence term by term to (5),</p>
 <p>$$
 D\,L_{\mathrm{axf}}(\tilde Q^{\natural})\,D
-=D\Bigl(Q_t\mathrm I_4-\sum_kQ_kS_k\Bigr)D
-=Q_t\mathrm I_4+\sum_kQ_kT_k
+=D\Bigl(Q_t\mathrm I_4-\sum_{k\in\{x,y,z\}}Q_kS_k\Bigr)D
+=Q_t\mathrm I_4+\sum_{k\in\{x,y,z\}}Q_kT_k
 =R_{\mathrm{axf}}(\tilde Q).
 $$</p>
 <p><strong>The mechanism in one sentence.</strong> The reversal negates the vector part of the parameter, the right family acts with the vector part of the opposite sign, and the matrix $D$ is the map that negates the vector coordinates; so conjugating the left matrix by the matrix of the reversal produces the right matrix.</p>
@@ -535,7 +535,7 @@ $$</p>
 $$</p>
 <p><strong>The block is the cross product.</strong> The six off-diagonal slots are $-2Q_z$, $2Q_y$, $2Q_z$, $-2Q_x$, $-2Q_y$, $2Q_x$, each a single vector coordinate up to the factor $\pm2$, so the block vanishes exactly when the three coordinates do. That is C4: <strong>the two families meet in the scalars and nowhere else.</strong></p>
 <p><strong>The fixed-space shortcut (C5).</strong> Let $\tau$ be a reversal with matrix $S$, and suppose $\tau(\tilde Q)=\tilde Q$. Then by (6), $\bigl[\tau R_{\tilde Q}\bigr]=S\,R_{\mathrm{axf}}(\tilde Q)$ and $\bigl[L_{\tilde Q}\tau\bigr]=L_{\mathrm{axf}}(\tilde Q)\,S$, and the two agree exactly when $S\,R_{\mathrm{axf}}(\tilde Q)=L_{\mathrm{axf}}(\tilde Q)\,S$. Two instances: for $\natural$, $S=D$, and (21) is the identity, holding for <strong>central</strong> $\tilde Q$, the fixed space of $\natural$; for $\ast$, $S=D\overline{(\cdot)}$, and $D\,\overline{R_{\mathrm{axf}}(\tilde Q)}=L_{\mathrm{axf}}(\tilde Q)D$ holds for <strong>Hermitian</strong> $\tilde Q$, the fixed space $\mathbb{B}_{\Psi}$ of $\ast$. Neither holds off its fixed space, and the error the parent article warns about is the substitution of a fixed-space identity for a general one: in the frame it is the claim that two matrices with visibly different entries are equal.</p>
-<p><strong>Why the transport cannot be dropped.</strong> In (18) the parameter on the right is $\tilde Q^{\natural}$ and the parameter on the left is $\tilde Q$. An identity written with the same parameter on both sides would read $R_{\mathrm{axf}}(\tilde Q)=DL_{\mathrm{axf}}(\tilde Q)D$, and by (5) that would say $\sum_kQ_kT_k=-\sum_kQ_kS_k$ for all $\tilde Q$, which fails for every noncentral parameter: in the frame it is a sign error in the vector block, visible in (21) against (2).</p>
+<p><strong>Why the transport cannot be dropped.</strong> In (18) the parameter on the right is $\tilde Q^{\natural}$ and the parameter on the left is $\tilde Q$. An identity written with the same parameter on both sides would read $R_{\mathrm{axf}}(\tilde Q)=DL_{\mathrm{axf}}(\tilde Q)D$, and by (5) that would say $\sum_{k\in\{x,y,z\}}Q_kT_k=-\sum_{k\in\{x,y,z\}}Q_kS_k$ for all $\tilde Q$, which fails for every noncentral parameter: in the frame it is a sign error in the vector block, visible in (21) against (2).</p>
 <h2 id="step-eight-the-general-complex-linear-reversal-c8">Step Eight: The General Complex-Linear Reversal (C8)</h2>
 <p><strong>The matrix of $\tau_U$.</strong> Let $U$ be invertible and $\tau_U(x)=U\natural(x)U^{-1}$. As a composite it is $\mathrm{Ad}_U\circ\natural$, and $\mathrm{Ad}_U$ has matrix $L_{\mathrm{axf}}(U)R_{\mathrm{axf}}(U)^{-1}$, since $x\mapsto UxU^{-1}$ is a left multiplication followed by a right multiplication by $U^{-1}$. Hence</p>
 <p>$$

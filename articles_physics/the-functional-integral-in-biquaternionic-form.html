@@ -183,7 +183,7 @@ $$
 2\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Ξ}^{*}_-W_{\mathrm{kinetic}}\tilde{Ξ}_+\big) = 0 = 2\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Ξ}^{*}_+W_{\mathrm{kinetic}}\tilde{Ξ}_-\big)
 \qquad\text{for all } \tilde{Ξ}_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} .
 $$</p>
-<p><strong>Proof.</strong> It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i q'_t$ and $Q_\eta=q_\eta$, in the informational sector $Q_t=q_t$ and $Q_\eta=i q'_\eta$, and each elementary term is $2\,\mathrm{Re}\,\mathrm{Sc}(e_{\imath}^{*}W_{\mathrm{kinetic}}e_{\jmath})$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i r'_t\cdot h_t$ on the time slot and $x_\eta\cdot i h'_{x_\eta}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.</p>
+<p><strong>Proof.</strong> It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i q'_t$ and $Q_k=q_k$, in the informational sector $Q_t=q_t$ and $Q_k=i q'_k$, and each elementary term is $2\,\mathrm{Re}\,\mathrm{Sc}(e_{\imath}^{*}W_{\mathrm{kinetic}}e_{\jmath})$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i r'_t\cdot h_t$ on the time slot and $x_k\cdot i h'_{x_k}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.</p>
 <p><strong>Consequence: factorisation.</strong> With the source split as $\tilde J_{\Phi}=\tilde J_{\Phi,-}+\tilde J_{\Phi,+}$, the free functional integral is
 $$
 \boxed{\;Z_0[\tilde J_{\Phi}] = \int\mathcal{D}\tilde{Ξ}_-\,\exp(-\frac12\langle\tilde{Ξ}_-,W_{\mathrm{kinetic}}\tilde{Ξ}_-\rangle+\langle\tilde J_{\Phi,-},\tilde{Ξ}_-\rangle)
@@ -251,7 +251,7 @@ that is, when taking the causal complement twice returns the region. A region is
 $$
 \mathcal{D}\tilde{Ξ} = \prod_{x}\prod_{\imath\in\{t,x,y,z\}}dΞ_{\imath}(x)
 \quad\text{or}\quad
-\mathcal{D}\tilde{Ξ} = \prod_{\eta}\prod_{\imath\in\{t,x,y,z\}}dΞ_{\imath}(k),
+\mathcal{D}\tilde{Ξ} = \prod_{k\in\{x,y,z\}}\prod_{\imath\in\{t,x,y,z\}}dΞ_{\imath}(k),
 $$
 a product of Lebesgue measures on the coefficients, one per biquaternion component. The algebra fixes the <em>number</em> of components — four complex coefficients, two per sector — and the fact that the measure is the volume form of the module; it does nothing else.</p>
 <p><strong>The gap.</strong> The algebra does not supply: the space of field configurations (infinite-dimensional, and outside the finite-dimensional algebra); the action functional beyond its quadratic part; the choice of regulator; and the definition of the continuum measure. These are the analytic data of the theory, and they are transcribed from the standard treatment. The path-integral article's gap for the space of paths is the same gap in one fewer dimension. What the algebra <em>does</em> supply is the scalar extraction that turns a biquaternion Lagrangian into an action, the two-sector structure that factorizes the free theory, the central character of the kinetic operator, and the identification of the Euclidean rotation with a sector relabeling.</p>
@@ -307,7 +307,7 @@ The Gaussian formula was verified in finite dimension ($\det A_{\mathrm{gau}}=3.
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\eta^2=-e_t$</td>
+<td>Quaternion basis, $\vec e_k^2=-e_t$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$</td>

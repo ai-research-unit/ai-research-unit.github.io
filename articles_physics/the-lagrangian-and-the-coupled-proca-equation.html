@@ -102,7 +102,7 @@ $$</p>
 <p><strong>The mass term is the invariant length, and it is real.</strong> For any element of $\mathbb{B}$ with components $A_{\imath}$,</p>
 <p>$$
 \mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)
-=\lvert A_t\rvert^{2}-\sum_\eta\lvert A_\eta\rvert^{2}
+=\lvert A_t\rvert^{2}-\sum_{k\in\{x,y,z\}}\lvert A_k\rvert^{2}
 =\lvert a'_t\rvert^{2}-\lvert\vec a'\rvert^{2},
 $$</p>
 <p>exactly, with $A_t=i a'_t$ on the material slice; the right side is real for every complex element, and on the slice it is the Minkowski square of the four-vector $a'$. The cross terms of the product are traceless, the four diagonal terms carry the metric signs through $\natural$, and the check is exact to $4\times10^{-15}$ over random draws, real and material alike.</p>
@@ -205,7 +205,7 @@ $$</p>
 S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
 $$</p>
 <p>its Euler–Lagrange equation is the coupled Proca equation, and its symmetries give the charge current and the energy–momentum.</p>
-<p>The mass term is the invariant length $\lvert A_t\rvert^{2}-\sum_\eta\lvert A_\eta\rvert^{2}=\lvert a'_t\rvert^{2}-\lvert\vec a'\rvert^{2}$, it is real, it is invariant under the central phase, and it reduces to the free article's $\langle\tilde A_\Phi\rangle_\natural$ on the material slice with the sign included. That invariance is the variational statement that a massive charged vector field is possible. The field term is the Maxwell density on the material slice and is not invariant on the complex carrier, because the algebra's field strength is one half of a complex bivector; the invariant pairing of the two halves exists and its normalization is open.</p>
+<p>The mass term is the invariant length $\lvert A_t\rvert^{2}-\sum_{k\in\{x,y,z\}}\lvert A_k\rvert^{2}=\lvert a'_t\rvert^{2}-\lvert\vec a'\rvert^{2}$, it is real, it is invariant under the central phase, and it reduces to the free article's $\langle\tilde A_\Phi\rangle_\natural$ on the material slice with the sign included. That invariance is the variational statement that a massive charged vector field is possible. The field term is the Maxwell density on the material slice and is not invariant on the complex carrier, because the algebra's field strength is one half of a complex bivector; the invariant pairing of the two halves exists and its normalization is open.</p>
 <p>The constraint is the trace of the equation and the curvature does not enter it. The charge current exists because the carrier has a phase, and the free article's "no second current" is the statement that a real carrier has none.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -222,7 +222,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t=1,\ \vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\eta^{2}=-e_t$</td>
+<td>Quaternion basis, $\vec e_k^{2}=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -241,7 +241,7 @@ $$</p>
 <td>Complex Proca potential, an element of $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$</td>
+<td>$\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$</td>
 <td>Connection, an element of $\mathbb{B}_\Phi$</td>
 </tr>
 <tr>

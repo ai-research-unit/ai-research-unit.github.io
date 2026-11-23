@@ -100,9 +100,9 @@ $$</p>
 <p>is the Peierls bracket: the difference of the two Green functions is the classical bracket of the field with itself. For a conjugate pair the same construction gives $\{\phi(x),\pi(y)\}=\partial_{y_0}G(x,y)$, and at equal times that is a delta function.</p>
 <p>The hand check for the scalar. For $\mathcal{D}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ the difference of the Green functions is the Pauli–Jordan function,</p>
 <p>$$
-G(x,y)=\int\mathrm{d}^{3}\nu_{\Phi}\;\frac{\sin\bigl(\omega_k\,\Delta r'^{0}/c\bigr)}{\omega_k}\,e^{2\pi i\vec\nu_{\Phi}\cdot(\vec r-\vec r')},
+G(x,y)=\int\mathrm{d}^{3}\nu_{\Phi}\;\frac{\sin\bigl(\omega_{\mathrm{mode},m}\,\Delta r'^{0}/c\bigr)}{\omega_{\mathrm{mode},m}}\,e^{2\pi i\vec\nu_{\Phi}\cdot(\vec r-\vec r')},
 \qquad
-\omega_k=c\sqrt{k^{2}+4\pi^{2}\nu_m^{2}},
+\omega_{\mathrm{mode},m}=c\sqrt{4\pi^{2}\nu_{\Phi}^{2}+4\pi^{2}\nu_m^{2}},
 $$</p>
 <p>which vanishes at $\Delta r'^{0}=0$ and whose time derivative there is $\delta^{3}(\vec r-\vec r')$. So $\{\phi(\vec r),\phi(\vec r')\}=0$ and $\{\phi(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')$: the canonical bracket is <em>derived</em> from the action's Green functions, not assumed. That derivation is the first step of the route, and it is the one the corpus's quadratic actions make available.</p>
 <p><strong>Why the bracket and not the Poisson bracket of the momenta.</strong> The Peierls bracket is defined on solutions and not on initial data, so it is invariant under field redefinitions and it exists even when the naive Legendre transform is degenerate. For the corpus's first-order actions that is not a convenience but a necessity: the momenta are constrained, and the naive bracket would be inconsistent.</p>

@@ -90,7 +90,7 @@
 \tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z ,
 \qquad Q_t, Q_x, Q_y, Q_z \in \mathbb{C} ,
 $$</p>
-<p>so $\dim_{\mathbb{C}}\mathbb{B} = 4$ and $\dim_{\mathbb{R}}\mathbb{B} = 8$. The algebra closes on itself: the product of two basis elements is again a basis element up to signs, and the product of two general elements is again a four-component object. Equivalently, with $\vec e_\eta\mapsto -i\sigma_\eta$ and $e_t\mapsto I_2$, the algebra is the matrix algebra</p>
+<p>so $\dim_{\mathbb{C}}\mathbb{B} = 4$ and $\dim_{\mathbb{R}}\mathbb{B} = 8$. The algebra closes on itself: the product of two basis elements is again a basis element up to signs, and the product of two general elements is again a four-component object. Equivalently, with $\vec e_k\mapsto -i\sigma_k$ and $e_t\mapsto I_2$, the algebra is the matrix algebra</p>
 <p>$$
 \mathbb{B} \cong M_2(\mathbb{C}) ,
 $$</p>
@@ -157,7 +157,7 @@ $$</p>
 <h3 id="the-gradient">The Gradient</h3>
 <p>The same truncation appears at the level of derivatives, and it is the form in which the multipole expansion actually meets the algebra. The spatial gradient is the pure-vector gradient of the material chart, the operator the corpus writes with its arrow and its sector,</p>
 <p>$$
-\vec\nabla_\Phi=\sum_\eta\vec e_\eta\,\frac{\partial}{\partial r_\eta}
+\vec\nabla_\Phi=\sum_{k\in\{x,y,z\}}\vec e_k\,\frac{\partial}{\partial r_k}
 =\vec e_x\frac{\partial}{\partial r_x}+\vec e_y\frac{\partial}{\partial r_y}+\vec e_z\frac{\partial}{\partial r_z},
 $$</p>
 <p>acting by left quaternion multiplication on a field of the algebra. Its square is</p>
@@ -166,10 +166,10 @@ $$</p>
 =\sum_{\imath,\jmath}\vec e_{\imath}\vec e_{\jmath}\,\frac{\partial^2}{\partial r_{\imath}\,\partial r_{\jmath}}
 =-\Delta_\Phi\,e_t,
 \qquad
-\Delta_\Phi=\sum_\eta\frac{\partial^2}{\partial r_\eta^2},
+\Delta_\Phi=\sum_{k\in\{x,y,z\}}\frac{\partial^2}{\partial r_k^2},
 $$</p>
 <p>because the antisymmetric part of the product multiplies the symmetric operator $\partial^2/\partial r_{\imath}\partial r_{\jmath}$ and cancels, leaving only the trace. The second gradient of any scalar potential is therefore a <strong>purely central</strong> element: whatever traceless symmetric structure $\partial^2Ξ/\partial r_i\partial r_j$ has, the product of two gradient operators discards it. This was verified on a quadratic potential with a random symmetric Hessian $H_{\imath\jmath}=\partial^2Ξ/\partial r_{\imath}\partial r_{\jmath}$, for which $\sum_{\imath\jmath}\vec e_{\imath} \vec e_{\jmath}\,H_{\imath\jmath} = -\mathrm{tr}(H)e_t$ exactly. The derivative operator, like the algebra, stops at the trace.</p>
-<p><strong>The identity is chart-free and the spelling is not.</strong> The product rule $\vec e_{\imath}\vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmath\eta}\vec e_\eta$ knows nothing of coordinates, so the collapse to the trace holds for any symmetric second derivative. What the subscript fixes is only which coordinates the derivatives are taken in, and the article takes them in the material ones: the multipole moments below are integrals over the source in $r_\eta$, and the potential whose Hessian carries the tower is a function of the same three coordinates. Written in the eight coordinates the same operator would not be pure — it would be $\tilde\nabla_\Phi$, with a scalar part — and the collapse would read differently. The pure part is what the algebra's product meets.</p>
+<p><strong>The identity is chart-free and the spelling is not.</strong> The product rule $\vec e_{\imath}\vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmathk}\vec e_k$ knows nothing of coordinates, so the collapse to the trace holds for any symmetric second derivative. What the subscript fixes is only which coordinates the derivatives are taken in, and the article takes them in the material ones: the multipole moments below are integrals over the source in $r_k$, and the potential whose Hessian carries the tower is a function of the same three coordinates. Written in the eight coordinates the same operator would not be pure — it would be $\tilde\nabla_\Phi$, with a scalar part — and the collapse would read differently. The pure part is what the algebra's product meets.</p>
 <p>The two facts together — the algebra's product and its gradient — say that the finite object can iterate a vector operation arbitrarily many times and still produce only $D^{(0)}\oplus D^{(1)}$ content. The multipole order cannot be raised by multiplication or by differentiation inside the algebra.</p>
 <h2 id="where-the-tower-actually-lives">Where the Tower Actually Lives</h2>
 <p>The tower is real, so it must live somewhere. There are five equivalent descriptions of its home, and all of them are infinite-dimensional.</p>
@@ -181,7 +181,7 @@ $$</p>
 \dim_{\mathbb{C}}\operatorname{sym}^l_0(D^{(1)}) = 2l+1 ,
 $$</p>
 <p>which for $l = 2$ is the $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$ of the quadrupole. The tower is the collection of all these tensor powers, and the space they span is infinite-dimensional. The algebra $\mathbb{B}$ is the $l\leq1$ part of this collection; the higher powers live outside it.</p>
-<p><strong>(iii) The universal enveloping algebra.</strong> The rotation generators $\tilde S_{\Psi,1}, \tilde S_{\Psi,2}, \tilde S_{\Psi,3}$ (equivalently, the algebra elements $\vec e_\eta$ with their commutators) generate the universal enveloping algebra $U(\mathrm{SU}(2))$, whose elements are the polynomials in the generators. By the Poincaré–Birkhoff–Witt theorem it has a basis of ordered monomials and is <strong>infinite-dimensional</strong>, and it carries every irreducible representation $D^{(l)}$, because each $D^{(l)}$ is generated from a highest-weight vector by repeated application of the lowering generator. The enveloping algebra is an algebra — not merely a function space — that does contain the whole tower as its finite-dimensional modules, and it is exactly the enlargement the multipole series calls for. It is infinite-dimensional, and it must be.</p>
+<p><strong>(iii) The universal enveloping algebra.</strong> The rotation generators $\tilde S_{\Psi,1}, \tilde S_{\Psi,2}, \tilde S_{\Psi,3}$ (equivalently, the algebra elements $\vec e_k$ with their commutators) generate the universal enveloping algebra $U(\mathrm{SU}(2))$, whose elements are the polynomials in the generators. By the Poincaré–Birkhoff–Witt theorem it has a basis of ordered monomials and is <strong>infinite-dimensional</strong>, and it carries every irreducible representation $D^{(l)}$, because each $D^{(l)}$ is generated from a highest-weight vector by repeated application of the lowering generator. The enveloping algebra is an algebra — not merely a function space — that does contain the whole tower as its finite-dimensional modules, and it is exactly the enlargement the multipole series calls for. It is infinite-dimensional, and it must be.</p>
 <p><strong>(iv) The differential-operator algebra.</strong> The operators generated by $\vec\nabla_\Phi$ and the coordinate multiplications, acting on functions, form an infinite-dimensional algebra; the multipole moments are linear functionals on it, obtained by integrating the source against spherical harmonics. The moments are not values of the field but integrals over the source, with $\theta_2$ and $\theta_{\mathrm{azm},2}$ the polar and azimuthal angles of the source point,</p>
 <p>$$
 \mathcal{Q}_{l\,n_{\mathrm{mag}}} = \int \rho(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\,r_2^{\,l}\,Y_{l\,n_{\mathrm{mag}}}^{*}(\theta_2,\theta_{\mathrm{azm},2})\,d^3r_2 ,
@@ -288,7 +288,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_\eta^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t+\epsilon_{\imath\jmath\lambda}\vec e_\lambda$</td>
+<td>Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t+\epsilon_{\imath\jmath\lambda}\vec e_\lambda$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -328,7 +328,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\vec\nabla_\Phi\vec\nabla_\Phi = -\Delta_\Phi\,e_t$</td>
-<td>The truncated second gradient, in the material chart; $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$</td>
+<td>The truncated second gradient, in the material chart; $\Delta_\Phi=\sum_{k\in\{x,y,z\}}\partial^2/\partial r_k^2$</td>
 </tr>
 <tr>
 <td>$U(\mathrm{SU}(2))$</td>

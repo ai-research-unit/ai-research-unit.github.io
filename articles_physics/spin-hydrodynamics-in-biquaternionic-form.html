@@ -86,10 +86,10 @@ $$</p>
 <h3 id="the-polarization-element">The polarization element</h3>
 <p><strong>The spin polarization is the rotor's generator, read as a thermodynamic variable.</strong> With the rotor $\tilde u_{\mathrm r}$ of the polar form and its generator $\tilde\omega_\Psi=\tfrac12\omega_{\lambda\jmath}\tilde e_{\lambda\jmath}$ — the antisymmetric part of the algebra's basis, with $\lambda<\jmath$ — the polarization element is proportional to the generator:</p>
 <p>$$
-\tilde S_{\Psi,\eta}=\frac{h}{4\pi}\,\tilde u_{\mathrm r}\,\tilde e_{\lambda\jmath}\,\tilde u_{\mathrm r}^{\natural}\,\omega_{\lambda\jmath},
+\tilde S_{\Psi,k}=\frac{h}{4\pi}\,\tilde u_{\mathrm r}\,\tilde e_{\lambda\jmath}\,\tilde u_{\mathrm r}^{\natural}\,\omega_{\lambda\jmath},
 $$</p>
 <p>the rotor conjugating the generator into the fluid's frame and the factor $\frac{h}{2\pi 2}$ making the components angular momenta. The display is the polar-form article's rotor read as a density: the spin element is what the rotor looks like when it is summed over a volume.</p>
-<p>Writing the six independent components $\omega_{\lambda\jmath}=-\omega_{\jmath\lambda}$ and the corresponding components $S_{\Psi,\eta,\lambda\jmath}$ of the spin element, the article never raises an index; the pair $(\lambda,\jmath)$ labels which rotation, and the array is antisymmetric in it. The spin tensor's components are the angular momentum density in the $\lambda\jmath$ plane, and the flux of that component in the $\eta$ direction is written with $\eta$ last, so the current carries three labels: one for the direction of transport and two for the plane.</p>
+<p>Writing the six independent components $\omega_{\lambda\jmath}=-\omega_{\jmath\lambda}$ and the corresponding components $S_{\Psi,k,\lambda\jmath}$ of the spin element, the article never raises an index; the pair $(\lambda,\jmath)$ labels which rotation, and the array is antisymmetric in it. The spin tensor's components are the angular momentum density in the $\lambda\jmath$ plane, and the flux of that component in the $k$ direction is written with $k$ last, so the current carries three labels: one for the direction of transport and two for the plane.</p>
 <p>Write</p>
 <p>$$
 S_{\Psi,\lambda\jmath}\equiv S_{\Psi,t,\lambda\jmath},
@@ -134,7 +134,7 @@ $$</p>
 <h3 id="spin-gradients-and-the-stress">Spin gradients and the stress</h3>
 <p>A gradient in the polarization is a gradient in the spin density, and it contributes to the stress the way any gradient of an intensive variable does. The stress element gains a term</p>
 <p>$$
-\tilde\Sigma_{\Psi,\mathrm{spn}}=-\left(\partial_\lambda \mu_{\mathrm{spn}}\right)\tilde S_{\Psi,\eta}\ \text{in the first-order form},
+\tilde\Sigma_{\Psi,\mathrm{spn}}=-\left(\partial_\lambda \mu_{\mathrm{spn}}\right)\tilde S_{\Psi,k}\ \text{in the first-order form},
 $$</p>
 <p>whose divergence is the force that a polarization gradient exerts on the flow. The display is schematic in its indices — the spin element is antisymmetric and contracts with the gradient in the $\lambda$ slot — and the article states the structure and does not write the index algebra in full, because the full algebra is bookkeeping without physics.</p>
 <p>A fluid with a polarization gradient is a fluid whose momentum balance feels the spin, so the flow and the spin cannot be solved separately; the two are one system, and that is the sense in which spin hydrodynamics is not ordinary hydrodynamics with an extra field.</p>
@@ -159,7 +159,7 @@ $$</p>
 <h3 id="relaxation">Relaxation</h3>
 <p>The polarization relaxes to its local equilibrium value on a time scale $\tau_{\mathrm{spn}}$, and the relaxation is the spin channel's answer to the shear's viscosity.</p>
 <p>$$
-\frac{d}{dt}\left(S_{\Psi,\eta,\lambda\jmath}-S_{\Psi,\eta,\lambda\jmath}^{\mathrm{eq}}\right)=-\,\frac{1}{\tau_{\mathrm{spn}}}\left(S_{\Psi,\eta,\lambda\jmath}-S_{\Psi,\eta,\lambda\jmath}^{\mathrm{eq}}\right),
+\frac{d}{dt}\left(S_{\Psi,k,\lambda\jmath}-S_{\Psi,k,\lambda\jmath}^{\mathrm{eq}}\right)=-\,\frac{1}{\tau_{\mathrm{spn}}}\left(S_{\Psi,k,\lambda\jmath}-S_{\Psi,k,\lambda\jmath}^{\mathrm{eq}}\right),
 $$</p>
 <p>the relaxation-time approximation, which is the standard closure and is quoted as such. Its solution is exponential, and its content is one number: how long a polarized element remembers its polarization.</p>
 <p>With $\tau_{\mathrm{spn}}=0.5\,\mathrm{fm}/c=1.667\,820\,476\times10^{-24}\,\mathrm{s}$, the surviving fraction after $0.5\,\mathrm{fm}/c$ is $e^{-1}=0.367\,879$, after $1\,\mathrm{fm}/c$ it is $0.135\,335$, after $2\,\mathrm{fm}/c$ it is $0.018\,316$, and after $5\,\mathrm{fm}/c$ it is $4.540\times10^{-5}$. The polarization is gone after a few relaxation times, which is why spin hydrodynamics is a description of the early stage of a collision and not of its late stage.</p>
@@ -246,8 +246,8 @@ $$</p>
 <p>Interpretation, and marked as such. That the spin element is $\tfrac{h}{4\pi}$ times the conjugated generator with the components read as angular momenta is the corpus's normalisation and not a derivation. That the relaxation is exponential is the relaxation-time approximation and is quoted, not derived.</p>
 <p><strong>Not claimed.</strong> That the transport coefficients have been computed — they have not. That the full index algebra of the spin stress has been written — it has not, and the article says so where the display is schematic. That the spin conservation law has been derived from the rotor's equation of motion — that is <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a>'s subject, and this article cites it. That the theory is causal — that is <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>'s, and the spin channel's hyperbolicity is asserted here on the strength of its relaxation equation rather than proved.</p>
 <h2 id="summary">Summary</h2>
-<p>A spin fluid has two intensive variables. The spin potential $\mu_{\mathrm{spn}}$ is conjugate to the spin polarization, whose element is the rotor's generator conjugated into the fluid's frame, $\tilde S_{\Psi,\eta}=\tfrac{h}{4\pi}\tilde u_{\mathrm r}\tilde e_{\lambda\jmath}\tilde u_{\mathrm r}^{\natural}\omega_{\lambda\jmath}$, with the six components $\omega_{\lambda\jmath}$ antisymmetric and every index low. The first law gains one term, $dw_{\mathrm{fl}}=Tds_{\mathrm{ent}}+\mu_{\mathrm{chm}}d\rho_{\mathrm{num}}+\tfrac12\omega_{\lambda\jmath}dS_{\Psi,\eta,\lambda\jmath}$, and the equation of state gains one argument.</p>
-<p>Rotational flow and spin gradients couple. The vorticity $\omega^{\mathrm{vrt}}_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ is not the polarization, and in equilibrium $\mu_{\mathrm{spn}}^{\mathrm{eq}}=hf_{\mathrm{frq},\mathrm{mag}}^{\mathrm{vrt}}/2$ with $P_{\mathrm{pol}}=\tanh(\mu_{\mathrm{spn}}^{\mathrm{eq}}/k_BT)$, which is $0.065\,738$ at $hf_{\mathrm{frq},\mathrm{mag}}^{\mathrm{vrt}}=0.019\,75\,\mathrm{GeV}$ and $0.215\,946$ at $0.065\,82\,\mathrm{GeV}$ for $k_BT=0.15\,\mathrm{GeV}$. The spin-rotation energy is $e_{\mathrm{rot}}=-\tfrac12\omega^{\mathrm{vrt}}_{\lambda\jmath}S_{\Psi,\eta,\lambda\jmath}$ and the spin gradient contributes to the stress.</p>
+<p>A spin fluid has two intensive variables. The spin potential $\mu_{\mathrm{spn}}$ is conjugate to the spin polarization, whose element is the rotor's generator conjugated into the fluid's frame, $\tilde S_{\Psi,k}=\tfrac{h}{4\pi}\tilde u_{\mathrm r}\tilde e_{\lambda\jmath}\tilde u_{\mathrm r}^{\natural}\omega_{\lambda\jmath}$, with the six components $\omega_{\lambda\jmath}$ antisymmetric and every index low. The first law gains one term, $dw_{\mathrm{fl}}=Tds_{\mathrm{ent}}+\mu_{\mathrm{chm}}d\rho_{\mathrm{num}}+\tfrac12\omega_{\lambda\jmath}dS_{\Psi,k,\lambda\jmath}$, and the equation of state gains one argument.</p>
+<p>Rotational flow and spin gradients couple. The vorticity $\omega^{\mathrm{vrt}}_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ is not the polarization, and in equilibrium $\mu_{\mathrm{spn}}^{\mathrm{eq}}=hf_{\mathrm{frq},\mathrm{mag}}^{\mathrm{vrt}}/2$ with $P_{\mathrm{pol}}=\tanh(\mu_{\mathrm{spn}}^{\mathrm{eq}}/k_BT)$, which is $0.065\,738$ at $hf_{\mathrm{frq},\mathrm{mag}}^{\mathrm{vrt}}=0.019\,75\,\mathrm{GeV}$ and $0.215\,946$ at $0.065\,82\,\mathrm{GeV}$ for $k_BT=0.15\,\mathrm{GeV}$. The spin-rotation energy is $e_{\mathrm{rot}}=-\tfrac12\omega^{\mathrm{vrt}}_{\lambda\jmath}S_{\Psi,k,\lambda\jmath}$ and the spin gradient contributes to the stress.</p>
 <p>Spin diffusion is $J_{\Psi,\mathrm{spn},\lambda}=-\kappa_{\mathrm{spn}}\partial_\lambda\mu_{\mathrm{spn}}$, with the production $\sigma_{\mathrm{ent,spn}}=T^{-1}\kappa_{\mathrm{spn}}(\partial_\lambda\mu_{\mathrm{spn}})(\partial_\lambda\mu_{\mathrm{spn}})\ge0$, real by the inherited declaration. Spin relaxation drives the polarization to its equilibrium value on the time scale $\tau_{\mathrm{spn}}$; with $\tau_{\mathrm{spn}}=0.5\,\mathrm{fm}/c$ the surviving fraction is $0.367\,879$ after $0.5\,\mathrm{fm}/c$ and $4.540\times10^{-5}$ after $5\,\mathrm{fm}/c$.</p>
 <p>The caution is the article's centre: $\partial p_{\mathrm{th}}/\partial\omega_{\lambda\jmath}\neq S_{\Psi,\lambda\jmath}$ off the equilibrium surface, so the differential relations do not close — thirteen relations for fourteen unknowns — and the missing relation is the spin's constitutive one, not the equilibrium identity. Using the identity as a closure over-determines the system and turns the spin conservation laws into constraints on the flow; using it as the relaxation's fixed point is the method.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -284,11 +284,11 @@ $$</p>
 <td>Magnitude of the rotation vector</td>
 </tr>
 <tr>
-<td>$\tilde S_{\Psi,\eta}$</td>
+<td>$\tilde S_{\Psi,k}$</td>
 <td>Spin element</td>
 </tr>
 <tr>
-<td>$S_{\Psi,\eta,\lambda\jmath}$</td>
+<td>$S_{\Psi,k,\lambda\jmath}$</td>
 <td>Components of the spin current, three labels, all low</td>
 </tr>
 <tr>
@@ -308,7 +308,7 @@ $$</p>
 <td>Spin diffusivity, with $\ell_{\mathrm{spn}}=\sqrt{D_{\mathrm{spn}}\tau}$</td>
 </tr>
 <tr>
-<td>$S_{\Psi,\eta,\lambda\jmath}^{\mathrm{eq}}$</td>
+<td>$S_{\Psi,k,\lambda\jmath}^{\mathrm{eq}}$</td>
 <td>Its equilibrium value</td>
 </tr>
 <tr>

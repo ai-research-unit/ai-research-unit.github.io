@@ -240,7 +240,7 @@ $$</p>
 <h2 id="8-the-chiral-field-sigma-model-and-pion">8. The Chiral Field: Sigma Model and Pion</h2>
 <p>$$
 \tilde U=\exp\!\left(\frac{\vec\pi}{f_\pi}\right),\qquad \langle\tilde U\rangle_\natural=\tilde U\tilde U^{\natural}=e_t,
-\qquad \vec\pi=\sum_\eta\pi_\eta\vec e_\eta\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi,
+\qquad \vec\pi=\sum_{k\in\{x,y,z\}}\pi_k\vec e_k\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi,
 $$</p>
 <p>$$
 \boxed{\;\mathcal{L}_\pi^{(2)}=-\frac{f_\pi^2}{2}\sum_{\imath}\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial R_{\imath}}\frac{\partial\tilde U^{\natural}}{\partial R_{\imath}}\right)\;}
@@ -248,7 +248,7 @@ $$</p>
 \boxed{\;m_\pi^2f_\pi^2=-\left(m_u+m_d\right)\langle\bar qq\rangle\;}
 $$</p>
 <p><strong>The non-trivial claim, sigma-model side.</strong> The framework's group-valued field — the unit real quaternions $\mathbb{H}^1_\mathbb{B}$, or the central phase — satisfies the <strong>Maurer–Cartan equation</strong>, and the biquaternion norm is the invariant metric on the group. So the target space of the nonlinear sigma model is the framework's own unit sphere, the flat connection is the Maurer–Cartan form, and the power counting is the derivative counting. What the framework does <strong>not</strong> supply is the axial–vector decomposition of the currents tied to chirality: the global $SU(2)_L\times SU(2)_R$ is there, the separation into the two chiral currents is not, and that is the letter law again.</p>
-<p><strong>The non-trivial claim, pion side.</strong> The pion is the <strong>adjoint of the material sector</strong>: $\vec\pi=\sum_\eta\pi_\eta\vec e_\eta$ with $[\vec e_j,\vec e_\eta]=2\sum_l\epsilon_{j\eta l}\vec e_l$, and the normalisation is the plain weight of the units, $\mathrm{Sc}(\vec\pi^2)=-\sum_\eta\pi_\eta\pi_\eta$ and $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ with $T_\eta=\tfrac{i}{2}\vec e_\eta$. One normalisation, used by the pions, by the custodial triplet and by the weak vertex — that coincidence is a genuine framework statement, because it is the <em>same</em> group and the <em>same</em> adjoint appearing at two scales.</p>
+<p><strong>The non-trivial claim, pion side.</strong> The pion is the <strong>adjoint of the material sector</strong>: $\vec\pi=\sum_{k\in\{x,y,z\}}\pi_k\vec e_k$ with $[\vec e_j,\vec e_k]=2\sum_l\epsilon_{jk l}\vec e_l$, and the normalisation is the plain weight of the units, $\mathrm{Sc}(\vec\pi^2)=-\sum_{k\in\{x,y,z\}}\pi_k\pi_k$ and $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ with $T_k=\tfrac{i}{2}\vec e_k$. One normalisation, used by the pions, by the custodial triplet and by the weak vertex — that coincidence is a genuine framework statement, because it is the <em>same</em> group and the <em>same</em> adjoint appearing at two scales.</p>
 <p><strong>The mass relation, which is the sector's one genuine bridge.</strong> The mass term is</p>
 <p>$$
 \mathcal{L}_\pi^{\text{mass}}=f_\pi^2B_0\,\mathrm{Sc}\!\left(M\tilde U+M^{*}\tilde U^{*}\right),
@@ -269,9 +269,9 @@ $$</p>
 \tilde{\Xi}^{*}\,iR_{\mathrm{axf},\vec e_x}\,\tilde{\Xi}
 $$</p>
 <p>$$
-\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5\eta}\rangle_{\natural}=\frac{m_u+m_d}{2}\,\bar q\,(i\xi)\,T_\eta\,q,
+\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5k}\rangle_{\natural}=\frac{m_u+m_d}{2}\,\bar q\,(i\xi)\,T_k\,q,
 \qquad
-\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5\eta}\rangle_{\natural}=f_\pi m_\pi^2\,\pi_\eta+\cdots
+\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5k}\rangle_{\natural}=f_\pi m_\pi^2\,\pi_k+\cdots
 $$</p>
 <p><strong>The non-trivial claim, split in two and kept split.</strong> <em>Established and recomputed</em>: the massless two-sided equation $\mathcal D\tilde\Xi=0$ carries the vector phase — left multiplication by a central element — and a second, axial-looking phase; the bilinear above is chirality-odd and Lorentz-invariant, changes sign under $\xi$, and <strong>vanishes on an element of a single value</strong>, so it pairs the two values and only them. That last property is the framework's own statement of why a condensate needs both letters, and it is what makes the order parameter possible. <em>Standard, transcribed</em>: the Nambu–Jona-Lasinio gap equation, the critical coupling $G_c$, the mean-field condensate and the Goldstone counting are textbook, stated in the corpus's notation.</p>
 <p><strong>The identification that carries the physics.</strong> The framework's mass coefficient and the condensate are the same object seen twice, $m\leftrightarrow-2G\langle\tilde\Xi^*iR_{\mathrm{axf},\vec e_x}\tilde\Xi\rangle$, so a mass is what a condensate looks like inside the equation. And the centrality of the order parameter's value is what makes the symmetry breaking pattern the right one: the central phase passes through the linear chiral pair and is conserved, the axial phase does not and is broken.</p>

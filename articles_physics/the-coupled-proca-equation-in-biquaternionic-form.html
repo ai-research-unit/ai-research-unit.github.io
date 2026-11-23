@@ -109,7 +109,7 @@ $$</p>
 <p>$$
 \tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
 \qquad
-\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta,
+\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k,
 $$</p>
 <p>acting from the left. The sign pair is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\lambda=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$.</p>
 <p>The connection is central per component in the abelian case. With $A_{\imath}$ scalar coefficients that commute with the units and with one another, the covariant derivative separates:</p>
@@ -128,7 +128,7 @@ $$</p>
 <p>$$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural},
 \qquad
-\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta .
+\tilde A_\Phi^{\natural}=A_te_t-\sum_{k\in\{x,y,z\}} A_k\vec e_k .
 $$</p>
 <p>For a purely electric potential $\tilde A_\Phi^{\natural}=+\tilde A_\Phi$; for a purely magnetic one $\tilde A_\Phi^{\natural}=-\tilde A_\Phi$; for a general potential it is neither. The asymmetry is the algebra's statement that the electric and magnetic slots of the connection enter the conjugate derivative with opposite signs, and it is why the field strength below is not simply twice the magnetic part.</p>
 <p><strong>The side is the left, and the mirror is the renaming.</strong> Every coupling here acts on the left. The right-action equation on $\tilde A$ is the left-action equation on $\tilde A^{\natural}$, by the renaming identity $(\tilde A\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A^{\natural}$, so the two sides are one construction and not two.</p>
@@ -179,9 +179,9 @@ $$</p>
 <p>the two displays agreeing because the pure-vector part of an element and the part of its $\natural$-image are related by the sign of the whole, and the antisymmetric combination of the gradient and its conjugate is the vector part of either.</p>
 <p>In components the definition is the covariant curl.</p>
 <p>$$
-F_{0\eta}=D_0A_\eta-D_\eta A_0,
+F_{0k}=D_0A_k-D_k A_0,
 \qquad
-F_{\eta\kappa}=D_\eta A_\kappa-D_\kappa A_\eta,
+F_{k\kappa}=D_k A_\kappa-D_\kappa A_k,
 \qquad
 D_{\imath}=\frac{\partial}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath} .
 $$</p>
@@ -289,7 +289,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t=1,\ \vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\eta^{2}=-e_t$</td>
+<td>Quaternion basis, $\vec e_k^{2}=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -308,11 +308,11 @@ $$</p>
 <td>The coupled Proca potential, an element of $\mathbb{B}$; $a'_t$ and $\vec A$ complex</td>
 </tr>
 <tr>
-<td>$\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$</td>
+<td>$\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$</td>
 <td>The connection, an element of $\mathbb{B}_\Phi$; $A_{\imath}$ central in the abelian case</td>
 </tr>
 <tr>
-<td>$\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$</td>
+<td>$\tilde A_\Phi^{\natural}=A_te_t-\sum_{k\in\{x,y,z\}} A_k\vec e_k$</td>
 <td>Its $\natural$-image; the conjugate derivative's connection</td>
 </tr>
 <tr>

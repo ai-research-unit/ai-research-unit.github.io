@@ -104,7 +104,7 @@ $$</li>
   = \sum_{\imath\in\{t,x,y,z\}}  e_{\imath}\left(\partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath}\right)
   =: \sum_{\imath\in\{t,x,y,z\}}  e_{\imath}\, \tilde\nabla_{\mathrm{gco},\Phi,\imath},
 $$</p>
-<p>where the coordinate is that of the material frame of <em>Frame and Metric Conventions</em>, $Q_t=i q'_t$ and $Q_\eta=q_\eta$. Its action on a biquaternion-valued field $\tilde{Ξ}(\tilde{Q})$ is left multiplication by that operator,</p>
+<p>where the coordinate is that of the material frame of <em>Frame and Metric Conventions</em>, $Q_t=i q'_t$ and $Q_k=q_k$. Its action on a biquaternion-valued field $\tilde{Ξ}(\tilde{Q})$ is left multiplication by that operator,</p>
 <p>$$
 \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ} = \tilde\nabla_\Phi\tilde{Ξ} +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ},
 \qquad
@@ -146,12 +146,12 @@ $$</p>
 </tr>
 <tr>
 <td>Space components $\mu = k$</td>
-<td>$\tilde\nabla_{\mathrm{gco},\Phi,k} = \partial/\partial r_\eta +\frac{2\pi i\,ϙ}{h}A_\eta$</td>
-<td>$A_\eta$ real</td>
+<td>$\tilde\nabla_{\mathrm{gco},\Phi,k} = \partial/\partial r_k +\frac{2\pi i\,ϙ}{h}A_k$</td>
+<td>$A_k$ real</td>
 </tr>
 </tbody>
 </table></div>
-<p>The line ${\imath}=t$ is the only place where $i^2=-1$ is used. The coupling contributes one imaginary unit and the complex time component $A_t=i\,a'_t$ contributes the other; they multiply to $-1$, and the potential term of the time component is the real number $-\frac{2\pi ϙ\,a'_{t}}{h}$. The three spatial components keep their imaginary unit, because $A_\eta$ is real.</p>
+<p>The line ${\imath}=t$ is the only place where $i^2=-1$ is used. The coupling contributes one imaginary unit and the complex time component $A_t=i\,a'_t$ contributes the other; they multiply to $-1$, and the potential term of the time component is the real number $-\frac{2\pi ϙ\,a'_{t}}{h}$. The three spatial components keep their imaginary unit, because $A_k$ is real.</p>
 <h2 id="the-covariant-derivative-as-a-derivation">The Covariant Derivative as a Derivation</h2>
 <p>The properties collected here are the ones that make $\tilde\nabla_{\mathrm{gco},\Phi}$ a covariant derivative rather than an arbitrary first-order operator. They are stated for the abelian case.</p>
 <p><strong>1. Linearity over constants.</strong> For a central constant $\alpha$,</p>
@@ -227,11 +227,11 @@ $$</p>
 <p><strong>The curvature is the obstruction to doing this on a neighbourhood.</strong> A connection with $\tilde{F} = 0$ satisfies $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath} = 0$, and the Poincaré lemma applied to the one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ then supplies a local $\Gamma$ with $\tilde{A}_{\Phi} = \tilde\nabla_\Phi\Gamma$. The step from a closed one-form to an exact one is the Poincaré lemma; it is <em>invoked</em> here, not recomputed. The conclusion is that $\tilde{F}$ measures exactly what cannot be removed by a gauge transformation.</p>
 <p><strong>The connection one-form is a real quaternion.</strong> One observation about the connection is worth recording. Pairing the connection with a coordinate displacement gives</p>
 <p>$$
-\sum_{\imath} A_{\imath}\,dx_{\imath} = A_t\,d(i r'_t) + \sum_\eta A_\eta\,dr_\eta = -\xi\,dr'_t + \vec A\cdot d\vec r ,
+\sum_{\imath} A_{\imath}\,dx_{\imath} = A_t\,d(i r'_t) + \sum_{k\in\{x,y,z\}} A_k\,dr_k = -\xi\,dr'_t + \vec A\cdot d\vec r ,
 \qquad
 d\vec r = \vec e_x\,dr_x + \vec e_y\,dr_y + \vec e_z\,dr_z ,
 $$</p>
-<p>which is real. The time term is real because its two imaginary units cancel, $d(i r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_\eta$ and $dr_\eta$ are separately real. In the algebra this says $\sum_{\imath} A_{\imath}\,dx_{\imath} \in \mathbb{B}_{H}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_{\imath} A_{\imath}\,dx_{\imath} \mapsto \sum_{\imath} A_{\imath}\,dx_{\imath} - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a <strong>holonomy</strong> is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.</p>
+<p>which is real. The time term is real because its two imaginary units cancel, $d(i r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_k$ and $dr_k$ are separately real. In the algebra this says $\sum_{\imath} A_{\imath}\,dx_{\imath} \in \mathbb{B}_{H}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_{\imath} A_{\imath}\,dx_{\imath} \mapsto \sum_{\imath} A_{\imath}\,dx_{\imath} - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a <strong>holonomy</strong> is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.</p>
 <h2 id="the-curvature-as-the-commutator-of-covariant-derivatives">The Curvature as the Commutator of Covariant Derivatives</h2>
 <p>The curvature is the part of the covariant derivative that survives antisymmetrization. In the abelian case the connection coefficients commute, and the general commutator formula collapses to the curl:</p>
 <p>$$
@@ -296,10 +296,10 @@ $$</p>
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R} .
 $$</p>
 <p>Squaring its first member with the second gives the boxed identity on the $R$ part, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R}$. The second member is not a new equation: it is the first written on the conjugate field, $\natural$ is what separates them, and both act from the left.</p>
-<p><strong>Why the mass couples two fields.</strong> A first-order equation on a single field does not close on a second-order equation for that field. Write $\tilde\nabla_\Phi\tilde{Ξ} = 2\pi\nu_m\tilde{Ξ}$ and apply $(\tilde\nabla_\Phi)^{\natural}$: the result is $\Box_\Phi\tilde{Ξ} = m\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$, an equation in two different objects, and nothing reduces it to $\Box_\Phi\tilde{Ξ} = 4\pi^{2}\nu_m^{2}\tilde{Ξ}$, because $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ} = 2\pi\nu_m\tilde{Ξ}$ is the second equation and not a consequence of the first. If both members were imposed on one field, their difference would give $2\sum_\eta\vec e_\eta\,\partial/\partial R_\eta\tilde{Ξ} = 0$, so the field would not vary in space and the remaining time equation would be exponential rather than oscillatory: no wave survives. Two fields close the system instead, and applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$ returns $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = m(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R}$, which is the boxed identity.</p>
+<p><strong>Why the mass couples two fields.</strong> A first-order equation on a single field does not close on a second-order equation for that field. Write $\tilde\nabla_\Phi\tilde{Ξ} = 2\pi\nu_m\tilde{Ξ}$ and apply $(\tilde\nabla_\Phi)^{\natural}$: the result is $\Box_\Phi\tilde{Ξ} = m\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$, an equation in two different objects, and nothing reduces it to $\Box_\Phi\tilde{Ξ} = 4\pi^{2}\nu_m^{2}\tilde{Ξ}$, because $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ} = 2\pi\nu_m\tilde{Ξ}$ is the second equation and not a consequence of the first. If both members were imposed on one field, their difference would give $2\sum_{k\in\{x,y,z\}}\vec e_k\,\partial/\partial R_k\tilde{Ξ} = 0$, so the field would not vary in space and the remaining time equation would be exponential rather than oscillatory: no wave survives. Two fields close the system instead, and applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$ returns $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = m(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R}$, which is the boxed identity.</p>
 <p>The square of the gradient, the operator left when the connection is switched off, is not scalar, and it is not $\Box_\Phi$. On a scalar function it reads</p>
 <p>$$
-\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_\eta\vec e_\eta\,\frac{\partial^2}{\partial R_t\partial R_\eta},
+\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_{k\in\{x,y,z\}}\vec e_k\,\frac{\partial^2}{\partial R_t\partial R_k},
 $$</p>
 <p>which is $\Box_\Phi$ with the sign of $\Delta_\Phi$ reversed and a vector part added. The expression is derived here from the squares of the invertibles, and it was checked with residual $0$ on random polynomial scalar functions. The Laplacian enters with opposite signs because the spatial legs of $\tilde\nabla_\Phi$ square to $-e_t$ while $e_{\imath}^{\natural} e_{\imath} = e_t$ for every $\mu$, and the mixed derivatives leave a vector part wherever they do not vanish. Writing $\tilde\nabla_\Phi^2 = \Box_\Phi$ would therefore be wrong by $2\Delta_\Phi$ in the scalar part and by that vector part.</p>
 <p><strong>The minimal coupling</strong> replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}$ by $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ in the pair, which is the coupled pair of <em>Gauge Covariance and What It Forces</em>. The replacement holds term by term because the coefficients $A_{\imath}$ are central and pass through the invertibles.</p>
@@ -375,7 +375,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_\eta^2 = -e_t$</td>
+<td>Quaternion basis, $\vec e_k^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -394,11 +394,11 @@ $$</p>
 <td>Centre of the algebra; source of the abelian gauge group</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$</td>
+<td>$\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{k\in\{x,y,z\}}\vec e_k\,\partial/\partial R_k$</td>
 <td>Biquaternionic gradient</td>
 </tr>
 <tr>
-<td>$(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$</td>
+<td>$(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_{k\in\{x,y,z\}}\vec e_k\,\partial/\partial R_k$</td>
 <td>Quaternion-conjugate gradient</td>
 </tr>
 <tr>
@@ -406,11 +406,11 @@ $$</p>
 <td>d'Alembertian</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta}$</td>
+<td>$\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_{k\in\{x,y,z\}}\vec e_k\frac{\partial^2}{\partial R_t\partial R_k}$</td>
 <td>Square of the gradient; not scalar, and not $\Box_\Phi$</td>
 </tr>
 <tr>
-<td>$\Delta_\Phi=\sum_\eta\partial^2/\partial R_\eta^2$</td>
+<td>$\Delta_\Phi=\sum_{k\in\{x,y,z\}}\partial^2/\partial R_k^2$</td>
 <td>Laplacian in the three vector coordinates</td>
 </tr>
 <tr>

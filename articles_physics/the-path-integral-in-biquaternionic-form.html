@@ -97,7 +97,7 @@ $$</p>
 <p>For a non-relativistic particle of mass $m$ in a potential $V$, the path integral is the continuum limit of a product of short-time kernels. Over a stretch $T=r'_{t,f}-r'_{t,i}$ of the material coordinate, divided into $N$ steps of length $\varepsilon=T/N$ — the step is a length along $r'_t$, so the corresponding duration is $\varepsilon/c$ —</p>
 <p>$$
 G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})
-=\lim_{N\to\infty}\int\prod_{k=1}^{N-1}dx_k\;\prod_{k=0}^{N-1}G_{\mathrm{prop},\varepsilon}(x_{k+1},x_k),
+=\lim_{N\to\infty}\int\prod_{n=1}^{N-1}dx_{\mathrm{site},n}\;\prod_{n=0}^{N-1}G_{\mathrm{prop},\varepsilon}(x_{\mathrm{site},n+1},x_{\mathrm{site},n}),
 $$</p>
 <p>with the single-step kernel</p>
 <p>$$

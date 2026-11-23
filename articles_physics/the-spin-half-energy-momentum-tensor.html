@@ -203,16 +203,16 @@ $$</p>
 <p>which is $\partial_t w_{\mathrm{fl}}+\vec\nabla_\Phi\cdot\vec S_{\mathrm P}=0$ in the flat case: an energy density whose rate of change is the divergence of its flux. The quantum stress article proves that on solutions the flux carries the quantum potential and that the divergence of the quantum part is the quantum force.</p>
 <p>The law is one real equation and the element has four slots, so three of the four are not constrained by it. That is not a defect: a conservation law constrains the four-vector's divergence and leaves its curl free, and the curl is the dynamics that the field equation supplies. The same division appears in the scalar fluid, where the continuity equation constrains the density and the mass shell supplies the momentum.</p>
 <h3 id="the-spin-law">The Spin Law</h3>
-<p><strong>The divergence of the spin current is a torque, and the torque is the rotor connection contracted with the spin.</strong> With the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$, a real vector part,</p>
+<p><strong>The divergence of the spin current is a torque, and the torque is the rotor connection contracted with the spin.</strong> With the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_k\tilde u_{\mathrm r}=\tfrac12\vec\Omega_k$, a real vector part,</p>
 <p>$$
-\sum_\eta\partial_\eta S_{\Psi,\eta,\lambda\jmath}=\tau_{\lambda\jmath},
+\sum_{k\in\{x,y,z\}}\partial_k S_{\Psi,k,\lambda\jmath}=\tau_{\lambda\jmath},
 \qquad
 \tau_{\lambda\jmath}=\tfrac12\Bigl(\sum_\rho\varepsilon_\rho\,\Omega_{\lambda\rho}S_{\rho\jmath}-\sum_\rho\varepsilon_\rho\,\Omega_{\jmath\rho}S_{\rho\lambda}\Bigr).
 $$</p>
-<p>The display is the rotor's own equation in components. The rotor's equation is $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$, and differentiating the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ gives the commutator of the connection with the spin. The conservation law is that statement with the indices put back. <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a> derives it and this article quotes it.</p>
+<p>The display is the rotor's own equation in components. The rotor's equation is $\partial_k\tilde u_{\mathrm r}=\tfrac12\vec\Omega_k\tilde u_{\mathrm r}$, and differentiating the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ gives the commutator of the connection with the spin. The conservation law is that statement with the indices put back. <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a> derives it and this article quotes it.</p>
 <p>The torque vanishes when the connection turns about the spin's own axis. That is the free rotor's conservation, and it is a statement about the geometry of the rotation and not about the field equation.</p>
 <p><em>Check.</em> At rest, with the flow $v_{\Phi}=e_t$ and the spin along $\vec e_z$, the spin tensor is $S_{12}=+1$ and the rest of its components vanish. Take the connection's spatial part $\vec\Omega_{0}$ and compute all six components of $\tau$. For $\vec\Omega_{0}=(0,0,2)$ the maximum modulus of $\tau$ is $0.000000$; for $\vec\Omega_{0}=(1,0,0)$ it is $0.500000$; for the mixed $\vec\Omega_{0}=(1,0,1)$ it is $0.500000$. So the torque vanishes exactly when the connection is along the spin and not otherwise.</p>
-<p>It establishes that the source of the spin law is a commutator and that its kernel is the connection along the spin. It does not establish that the connection is derivable from the field equation: $\vec\Omega_\eta$ is what the polar form's fourth bracket supplies, and the equation for it is the corpus's open question.</p>
+<p>It establishes that the source of the spin law is a commutator and that its kernel is the connection along the spin. It does not establish that the connection is derivable from the field equation: $\vec\Omega_k$ is what the polar form's fourth bracket supplies, and the equation for it is the corpus's open question.</p>
 <h2 id="the-gordon-spin-term-and-the-vorticity">The Gordon Spin Term and the Vorticity</h2>
 <p>The Gordon decomposition splits the current into a convection part and a spin part, and the spin part is a bound current. The identity is</p>
 <p>$$
@@ -261,7 +261,7 @@ $$</p>
 <td>Spin current, antisymmetric in the last two indices</td>
 </tr>
 <tr>
-<td>$S_{\Psi,\eta,\lambda\jmath}$</td>
+<td>$S_{\Psi,k,\lambda\jmath}$</td>
 <td>Its components in the corpus's letters</td>
 </tr>
 <tr>
@@ -273,7 +273,7 @@ $$</p>
 <td>Spin direction</td>
 </tr>
 <tr>
-<td>$\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$</td>
+<td>$\tilde u_{\mathrm r}^{-1}\partial_k\tilde u_{\mathrm r}=\tfrac12\vec\Omega_k$</td>
 <td>Rotor connection</td>
 </tr>
 <tr>

@@ -132,7 +132,7 @@ $$</p>
 <p>that is, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$ acting from the left. The term $\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}\tilde\Xi$ is the <strong>interaction term</strong>, and it is exactly the term the localized central phase forces.</p>
 <p><strong>The conjugate entry is not the negative of the entry.</strong> Since $\natural$ fixes $e_t$ and negates the three spatial units, a potential with real coefficients has</p>
 <p>$$
-\tilde A_{\Phi}^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta .
+\tilde A_{\Phi}^{\natural}=A_te_t-\sum_{k\in\{x,y,z\}} A_k\vec e_k .
 $$</p>
 <p>For a purely electric potential $\tilde A_{\Phi}^{\natural}=+\tilde A_{\Phi}$, so the two members carry opposite entries; for a purely magnetic one $\tilde A_{\Phi}^{\natural}=-\tilde A_{\Phi}$, so they carry the same entry; for a general potential it is neither. The second member is the conjugate of the first and not the first with $ϙ\to-ϙ$.</p>
 <p><strong>The asymmetry is not a decomposition.</strong> It is tempting to read the electric and magnetic parts as two couplings sharing a coefficient, since each is self-conjugate up to a sign. The gauge law rules this out: the entry absorbs $-\tilde\nabla_\Phi\Gamma$, which has a time part and a space part, so a purely electric potential does not stay purely electric under a general gauge function. Purity is a property of a gauge and not of the entry. Only the whole covector is covariant.</p>
@@ -142,7 +142,7 @@ $$</p>
 \qquad
 \tilde\nabla_{\mathrm{gco},\Phi,\imath}=\frac{\partial}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath},
 $$</p>
-<p>with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial x_\eta$. Each $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ is a central scalar operator: the derivative acts on the coefficients only and the $A_{\imath}$ are complex numbers, so every component commutes with every element of $\mathbb{B}$ and with every invertible element.</p>
+<p>with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_k=\partial/\partial x_k$. Each $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ is a central scalar operator: the derivative acts on the coefficients only and the $A_{\imath}$ are complex numbers, so every component commutes with every element of $\mathbb{B}$ and with every invertible element.</p>
 <p><strong>That one line is the whole of the polar reading.</strong> Because each component is central, the interaction term passes through the field and can be written on either side of it. It cannot rotate a non-central factor; it multiplies the whole word. The polar companion draws every consequence of that sentence, and this article uses it once, in §<em>Larmor Precession and the Gyromagnetic Ratio</em>.</p>
 <p><strong>The connection is a material-sector object.</strong> For a real gauge function $\Gamma$, the gauge law keeps $\tilde A_{\Phi}$ in $\mathbb{B}_{\Phi}$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$ is Hermitian,</p>
 <p>$$
@@ -275,7 +275,7 @@ $$</p>
 E=\int\mathrm{d}^{3}\varrho\;\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\,i \frac{h}{2\pi} c\,\partial_{r'_t}\tilde\Xi\bigr].
 $$</p>
 <p>On a plane wave it is $\frac{h}{2\pi} c\,\kappa_t$ in the covariant reading and $\frac{h}{2\pi} c\,\pi_t$ in the canonical one, and the two differ by $ϙA_t c$: the energy of the coupled system is the kinetic energy, and the canonical energy is the kinetic energy less the potential's share. That difference is the whole of the constant-potential shift of §<em>Solutions in a Constant Potential</em>.</p>
-<p><strong>Momentum.</strong> If $\tilde A_{\Phi}$ does not depend on $x_\eta$, the charge is the corresponding component of</p>
+<p><strong>Momentum.</strong> If $\tilde A_{\Phi}$ does not depend on $x_k$, the charge is the corresponding component of</p>
 <p>$$
 \vec P=\int\mathrm{d}^{3}\varrho\;\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\,(-i \frac{h}{2\pi})\vec\nabla_\Phi\tilde\Xi\bigr],
 $$</p>
@@ -314,7 +314,7 @@ j_{\imath}=\tilde\Xi^{\dagger}iR_{\vec e_x}\,iL_{e_{\imath}}R_{\vec e_{\mathrm{s
 \qquad
 \mathrm{spt}(t)=x,\ \mathrm{spt}(\eta)=y .
 $$</p>
-<p>Its time component is $\tilde\Xi^{\dagger}\tilde\Xi$ and its spatial components are $\tilde\Xi^{\dagger}\alpha_\eta\tilde\Xi$ with $\alpha_\eta=L_{\vec e_\eta}R_{\vec e_z}$.</p>
+<p>Its time component is $\tilde\Xi^{\dagger}\tilde\Xi$ and its spatial components are $\tilde\Xi^{\dagger}\alpha_k\tilde\Xi$ with $\alpha_k=L_{\vec e_k}R_{\vec e_z}$.</p>
 <p><strong>The dictionary, and the point of making it.</strong> Every ingredient of that display is a basis operator of the algebra except one: the adjoint row is built on $iR_{\vec e_x}$, a one-sided operator. Read as a pairing, the same object is</p>
 <p>$$
 j_{\imath}=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_{\imath}\tilde\Xi\,\vec e_{\mathrm{spt}(\imath)}\bigr)\vec e_x\bigr),
@@ -325,7 +325,7 @@ $$</p>
 <p>$$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,
 \qquad
-(\gamma_\eta)^{2}=-I_4,
+(\gamma_k)^{2}=-I_4,
 \qquad
 \gamma_5^{2}=I_4,
 \qquad
@@ -391,7 +391,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t=1,\ \vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\eta^{2}=-e_t$</td>
+<td>Quaternion basis, $\vec e_k^{2}=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -422,7 +422,7 @@ $$</p>
 <td>Mass wave number</td>
 </tr>
 <tr>
-<td>$\tilde A_{\Phi}=A_te_t+\sum_\eta A_\eta\vec e_\eta$</td>
+<td>$\tilde A_{\Phi}=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$</td>
 <td>Potential biquaternion, an element of $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
