@@ -427,11 +427,11 @@ $$
 which for real $\vec Q$ is the line $Q_x=Q_y=Q_z$. On it,
 
 $$
-\vec\Pi_{\mathrm{nil},\pm}=\frac{B\,\vec e_\mu-\dfrac{Q_\mu}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^{2}-B^{2}}},
+\vec\Pi_{\mathrm{nil},\pm}=\frac{B\,\vec e_{\imath}-\dfrac{Q_{\imath}}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_{\imath}]}{2\sqrt{Q_{\imath}^{2}-B^{2}}},
 \qquad \mu\in\{x,y,z\},
 $$
 
-and at least one of the three charts is defined whenever $B\neq0$. The charts are the transverse construction with $\vec X=\vec e_\mu$.
+and at least one of the three charts is defined whenever $B\neq0$. The charts are the transverse construction with $\vec X=\vec e_{\imath}$.
 
 The exceptional cone is not the spectral cone. It is not $B^{2}=0$ and it is not $N=0$; it is the locus where the symmetric auxiliary vector $\vec w$ becomes parallel to $\vec Q$. It is a defect of the formula, not of the object: the pair exists everywhere on the region, and the chart is what changes.
 
@@ -877,7 +877,7 @@ The boundary. The reading is algebraic. It gives the form of a two-component spi
 
 Read: the eigenbasis depends on $\tilde Q$, and no rotation-natural rational formula for its nilpotents exists.
 
-**The frame that diagonalises an element cannot be built from the element alone.** The root $\vec{Ζ}$ is built from $\vec Q$, but the two nilpotents need one more direction: the symmetric formula uses $\vec w$, and the axis charts use $\vec e_\mu$. The obstruction is a theorem of invariant theory, not a failure of ingenuity.
+**The frame that diagonalises an element cannot be built from the element alone.** The root $\vec{Ζ}$ is built from $\vec Q$, but the two nilpotents need one more direction: the symmetric formula uses $\vec w$, and the axis charts use $\vec e_{\imath}$. The obstruction is a theorem of invariant theory, not a failure of ingenuity.
 
 The interpretation is that a mode basis is a gauge choice. Two physicists who diagonalise the same momentum with different auxiliary directions get two bases related by the reciprocal rescaling, and nothing in the algebra prefers one. The physical content — the spectrum, the idempotents, the two ideals as subspaces — does not depend on the choice.
 

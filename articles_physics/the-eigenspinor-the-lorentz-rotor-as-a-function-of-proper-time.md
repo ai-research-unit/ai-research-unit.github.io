@@ -172,7 +172,7 @@ with the velocity on the **left** and $\tilde{F}$ itself rather than $\tilde{F}^
 The eigenspinor carries the rest frame of the particle, so its images of the rest-frame axes are the particle's own frame in the laboratory. With $\mathcal{E}_0 = ie_t$ and $\mathcal{E}_k = \vec e_\eta$ the basis of $\mathbb{B}_{\Phi}$,
 
 $$
-\tilde{E}_{\Phi,(\mu)}(\tau) = \tilde U(\tau)\,\mathcal{E}_\mu\,\tilde U(\tau)^{*} \in \mathbb{B}_{\Phi} ,
+\tilde{E}_{\Phi,(\imath)}(\tau) = \tilde U(\tau)\,\mathcal{E}_{\imath}\,\tilde U(\tau)^{*} \in \mathbb{B}_{\Phi} ,
 $$
 
 and the four-vector $\tilde{E}_{\Phi,(0)} = i\tilde U\tilde U^{*}$ is the four-velocity direction, $c\,\tilde{E}_{\Phi,(0)} = \tilde{V}_{\Phi}$. The three spatial images $\tilde{E}_{\Phi,(\eta)}$ are the boosted axes, orthonormal in the sense of the Minkowski form, and they rotate along the worldline with the same rate $\vec\Omega_{\mathrm{LT}}$. The eigenspinor is therefore a **tetrad** in which the time axis is the four-velocity: it is a frame field along the worldline, and the four-momentum is its time leg rescaled by $mc$.
@@ -193,7 +193,7 @@ Both factors are rotors: $\vec\Omega_{\mathrm{LT}}$ is a pure vector, so $\exp(\
 
 ## The Precession
 
-**What precesses is the frame the eigenspinor carries, and the rate is the rate of the rotor.** The tetrad $\tilde E_{\Phi,(\mu)}=\tilde U\mathcal{E}_\mu\tilde U^{*}$ turns with $\tilde U$, so the angular velocity of the particle's own axes in the laboratory is read off $\vec\Omega_{\mathrm{LT}}$: the vector part of the rate is the instantaneous rotation, and its modulus is the rate at which the frame turns per unit proper time.
+**What precesses is the frame the eigenspinor carries, and the rate is the rate of the rotor.** The tetrad $\tilde E_{\Phi,(\imath)}=\tilde U\mathcal{E}_{\imath}\tilde U^{*}$ turns with $\tilde U$, so the angular velocity of the particle's own axes in the laboratory is read off $\vec\Omega_{\mathrm{LT}}$: the vector part of the rate is the instantaneous rotation, and its modulus is the rate at which the frame turns per unit proper time.
 
 **In a purely magnetic field that rate has a name.** With $\vec E=0$ the rate is $\vec\Omega_{\mathrm{LT}}=-(ϙ/m)\vec B$, real and pure, so the exponential $\exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)$ is a real unit quaternion: a spatial rotation of angle $\lvert\vec\Omega_{\mathrm{LT}}\rvert\tau$ about $\vec B$. The frame precesses about the field at the angular frequency
 
@@ -268,11 +268,11 @@ The eigenspinor does not remove the obstruction recorded in *The Lorentz Force i
 | $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ | Field-strength biquaternion |
 | $\tilde{F}^{*}$ | Its conjugate, $i\sqrt{\epsilon}\vec E + \sqrt{\mu}\vec H$ |
 | $P_{\mathbb{B}_{\Phi}}(\tilde{Q}) = \tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
-| $\tilde{E}_{\Phi,(\mu)} = \tilde U\mathcal{E}_\mu\tilde U^{*}$ | Eigenframe (tetrad) along the worldline |
+| $\tilde{E}_{\Phi,(\imath)} = \tilde U\mathcal{E}_{\imath}\tilde U^{*}$ | Eigenframe (tetrad) along the worldline |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | Four-velocity |
 | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ | Lorentz four-force, $d\tilde{P}_{\Phi}/d\tau$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

@@ -5,7 +5,7 @@
 The claim. The angle $\theta_W$ is not a third coupling. It is the one angle by which the two neutral gauge fields must be rotated to make the photon couple as pure electric charge, and once it is so defined the $Z$ coupling follows with no further freedom:
 
 $$
-\mathcal{L}_Z=\frac{g}{\cos\theta_W}\sum_{f,\mu}\varepsilon_\mu Z_\mu\bar f\gamma_\mu\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_W\,P_R\Big]f .
+\mathcal{L}_Z=\frac{g}{\cos\theta_W}\sum_{f,\imath}\varepsilon_{\imath} Z_{\imath}\bar f\gamma_{\imath}\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_W\,P_R\Big]f .
 $$
 
 The appearance of $\sin^2\theta_W$ in that bracket is therefore not a second convention. It is the residue of the rotation, and §*The Rotation, and Why the Angle Appears Squared* proves it in three lines.
@@ -24,14 +24,14 @@ Status in the migration. The angle is a relation between two couplings, not a nu
 
 ## The Two Neutral Currents
 
-Before mixing there are two. The electroweak sector carries four gauge fields, and two of them are neutral: $W_{3,\mu}$ of $SU(2)_L$ and $B_\mu$ of $\mathrm{U}(1)_Y$. Their couplings to matter are fixed by the quantum numbers of article 1 and by nothing else,
+Before mixing there are two. The electroweak sector carries four gauge fields, and two of them are neutral: $W_{3,\imath}$ of $SU(2)_L$ and $B_{\imath}$ of $\mathrm{U}(1)_Y$. Their couplings to matter are fixed by the quantum numbers of article 1 and by nothing else,
 
 $$
-\mathcal{L}_{\mathrm{neutral}}=g\,W_{3,\mu} J_{3,\mu}+g_{\mathrm Y}B_\mu J_{Y,\mu} ,
+\mathcal{L}_{\mathrm{neutral}}=g\,W_{3,\imath} J_{3,\imath}+g_{\mathrm Y}B_{\imath} J_{Y,\imath} ,
 \qquad
-J_{3,\mu}=\sum_f T_{3f}\,\bar f\gamma_\mu f ,
+J_{3,\imath}=\sum_f T_{3f}\,\bar f\gamma_{\imath} f ,
 \qquad
-J_{Y,\mu}=\sum_f Y_f\,\bar f\gamma_\mu f ,
+J_{Y,\imath}=\sum_f Y_f\,\bar f\gamma_{\imath} f ,
 $$
 
 with $T_{3f}$ the weak isospin of the left part and $Y_f$ the hypercharge. Both currents are neutral — $T_3$ and $Y$ both commute with $Q$, so neither can change a fermion's charge. That alone would not make them diagonal in flavour, since the up-type and down-type mass matrices are diagonalised by different unitary rotations; what removes the mixing is universality, the $Z$ coupling to all three generations being one set of numbers, so the vertex is proportional to the unit in flavour space and the rotations cancel as $X^\dagger X=1$. The charged current fails exactly there: $W$ joins a $u$-type field to a $d$-type one and leaves $X_u^\dagger X_d=V_{\mathrm{CKM}}$ behind, the object of [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). That asymmetry is why the neutral sector needs no mixing matrix and the charged sector does.
@@ -47,17 +47,17 @@ The two invariants of the rotation. A rotation of the pair $(W_3,B)$ has one ang
 The rotation. Write the physical fields as
 
 $$
-A_\mu=\sin\theta_W\,W_{3,\mu}+\cos\theta_W\,B_\mu ,
+A_{\imath}=\sin\theta_W\,W_{3,\imath}+\cos\theta_W\,B_{\imath} ,
 \qquad
-Z_\mu=\cos\theta_W\,W_{3,\mu}-\sin\theta_W\,B_\mu ,
+Z_{\imath}=\cos\theta_W\,W_{3,\imath}-\sin\theta_W\,B_{\imath} ,
 $$
 
 with the inverse
 
 $$
-W_{3,\mu}=\sin\theta_W\,A_\mu+\cos\theta_W\,Z_\mu ,
+W_{3,\imath}=\sin\theta_W\,A_{\imath}+\cos\theta_W\,Z_{\imath} ,
 \qquad
-B_\mu=\cos\theta_W\,A_\mu-\sin\theta_W\,Z_\mu .
+B_{\imath}=\cos\theta_W\,A_{\imath}-\sin\theta_W\,Z_{\imath} .
 $$
 
 The angle is so far a free parameter of the notation; the two conditions below fix it and then fix the $Z$ coupling.
@@ -65,11 +65,11 @@ The angle is so far a free parameter of the notation; the two conditions below f
 Substituting, in one step. Using $Y_f=Q_f-T_{3f}$, the neutral Lagrangian becomes
 
 $$
-\mathcal{L}_{\mathrm{neutral}}=A_\mu\Big[\big(g\sin\theta_W-g_{\mathrm Y}\cos\theta_W\big)J_{3,\mu}+g_{\mathrm Y}\cos\theta_W\,J_{Q,\mu}\Big]
-+Z_\mu\Big[\big(g\cos\theta_W+g_{\mathrm Y}\sin\theta_W\big)J_{3,\mu}-g_{\mathrm Y}\sin\theta_W\,J_{Q,\mu}\Big] ,
+\mathcal{L}_{\mathrm{neutral}}=A_{\imath}\Big[\big(g\sin\theta_W-g_{\mathrm Y}\cos\theta_W\big)J_{3,\imath}+g_{\mathrm Y}\cos\theta_W\,J_{Q,\imath}\Big]
++Z_{\imath}\Big[\big(g\cos\theta_W+g_{\mathrm Y}\sin\theta_W\big)J_{3,\imath}-g_{\mathrm Y}\sin\theta_W\,J_{Q,\imath}\Big] ,
 $$
 
-with $J_{Q,\mu}=\sum_fQ_f\bar f\gamma_\mu f$ the electromagnetic current. Two brackets, and the whole article is in them.
+with $J_{Q,\imath}=\sum_fQ_f\bar f\gamma_{\imath} f$ the electromagnetic current. Two brackets, and the whole article is in them.
 
 The first condition. The photon must couple as $eQ$ with no $T_3$ admixture, because the electromagnetic current is the only conserved current with no axial part and the photon is massless. Setting the $J_3$ coefficient to zero,
 
@@ -90,8 +90,8 @@ $$
 which is the electric charge expressed through either coupling, and the $Z$ bracket becomes
 
 $$
-Z_\mu\sqrt{g^2+g_{\mathrm Y}^2}\left[J_{3,\mu}-\frac{g_{\mathrm Y}\sin\theta_W}{\sqrt{g^2+g_{\mathrm Y}^2}}J_{Q,\mu}\right]
-=Z_\mu\sqrt{g^2+g_{\mathrm Y}^2}\left[J_{3,\mu}-\sin^2\theta_W\,J_{Q,\mu}\right] .
+Z_{\imath}\sqrt{g^2+g_{\mathrm Y}^2}\left[J_{3,\imath}-\frac{g_{\mathrm Y}\sin\theta_W}{\sqrt{g^2+g_{\mathrm Y}^2}}J_{Q,\imath}\right]
+=Z_{\imath}\sqrt{g^2+g_{\mathrm Y}^2}\left[J_{3,\imath}-\sin^2\theta_W\,J_{Q,\imath}\right] .
 $$
 
 The square, and where it comes from. The coefficient of $J_Q$ in the $Z$ coupling is
@@ -108,8 +108,8 @@ Four symbols, two numbers. The neutral sector is written with $g$, $g_{\mathrm Y
 The overall $Z$ coupling. With $\sqrt{g^2+g_{\mathrm Y}^2}=g/\cos\theta_W=e/(\sin\theta_W\cos\theta_W)$, the Lagrangian reads
 
 $$
-\mathcal{L}_Z=\frac{g}{\cos\theta_W}Z_\mu\left(J_{3,\mu}-\sin^2\theta_WJ_{Q,\mu}\right)
-=\frac{e}{\sin\theta_W\cos\theta_W}Z_\mu\left(J_{3,\mu}-\sin^2\theta_WJ_{Q,\mu}\right),
+\mathcal{L}_Z=\frac{g}{\cos\theta_W}Z_{\imath}\left(J_{3,\imath}-\sin^2\theta_WJ_{Q,\imath}\right)
+=\frac{e}{\sin\theta_W\cos\theta_W}Z_{\imath}\left(J_{3,\imath}-\sin^2\theta_WJ_{Q,\imath}\right),
 $$
 
 which is the standard form, and the combination $e/(\sin\theta_W\cos\theta_W)$ is the one measured by the $Z$ couplings to fermions.
@@ -117,7 +117,7 @@ which is the standard form, and the combination $e/(\sin\theta_W\cos\theta_W)$ i
 The chiral decomposition. Because $T_3$ acts only on left-handed fields and $Q$ acts on both, the bracket separates by chirality:
 
 $$
-J_{3,\mu}-\sin^2\theta_WJ_{Q,\mu}=\sum_f\bar f\gamma_\mu\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_WP_R\Big]f ,
+J_{3,\imath}-\sin^2\theta_WJ_{Q,\imath}=\sum_f\bar f\gamma_{\imath}\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_WP_R\Big]f ,
 \qquad
 P_{L,R}=\tfrac12\left(1\mp\gamma^5\right).
 $$
@@ -150,7 +150,7 @@ The table. At $\sin^2\theta_W=0.23122$, with $T_3$ the isospin of the left part:
 
 | Fermion | $T_3$ | $Q$ | $g_L$ | $g_R$ | $g_V$ | $g_A$ | $A_f$ |
 |---|---|---|---|---|---|---|---|
-| $\nu_{\mathrm{neu},e},\nu_{\mathrm{neu},\mu},\nu_{\mathrm{neu},\tau}$ | $+1/2$ | $0$ | $0.5000$ | $0$ | $0.5000$ | $0.5000$ | $1.0000$ |
+| $\nu_{\mathrm{neu},e},\nu_{\mathrm{neu},\imath},\nu_{\mathrm{neu},\tau}$ | $+1/2$ | $0$ | $0.5000$ | $0$ | $0.5000$ | $0.5000$ | $1.0000$ |
 | $e,\mu,\tau$ | $-1/2$ | $-1$ | $-0.2688$ | $0.2312$ | $-0.0376$ | $-0.5000$ | $0.1494$ |
 | $u,c,t$ | $+1/2$ | $+2/3$ | $0.3459$ | $-0.1541$ | $0.1917$ | $0.5000$ | $0.6686$ |
 | $d,s,b$ | $-1/2$ | $-1/3$ | $-0.4229$ | $0.0771$ | $-0.3459$ | $-0.5000$ | $0.9357$ |
@@ -186,14 +186,14 @@ using $G_F/\sqrt2=g^2/(8M_W^2)$ and $M_W=M_Z\cos\theta_W$. The $4$ in that coeff
 The effective Lagrangian. With the table's couplings,
 
 $$
-\mathcal{L}_{\mathrm{NC}}^{\mathrm{eff}}=-\frac{4G_F}{\sqrt2}\sum_{f,f'}J^{Z}_{\mu,f}J^{Z}_{\mu,f'} ,
+\mathcal{L}_{\mathrm{NC}}^{\mathrm{eff}}=-\frac{4G_F}{\sqrt2}\sum_{f,f'}J^{Z}_{\imath,f}J^{Z}_{\imath,f'} ,
 \qquad
-J^Z_{\mu,f}=\bar f\gamma_\mu\left(g_{Vf}+g_{Af}\gamma^5\right)f ,
+J^Z_{\imath,f}=\bar f\gamma_{\imath}\left(g_{Vf}+g_{Af}\gamma^5\right)f ,
 $$
 
 and every low-energy neutral-current experiment is a measurement of a product of these couplings.
 
-Neutrino–electron scattering. The two processes $\nu_ee\to\nu_ee$ and $\bar\nu_ee\to\bar\nu_ee$ have cross sections whose ratio determines a combination of the electron's couplings. With $g_V=-\tfrac12+2\sin^2\theta_W$ and $g_A=-\tfrac12$ for the electron, the measured values are consistent with the table and bound $\sin^2\theta_W$ to a few per cent. The channel is clean and the statistics are poor, which is why it is a confirmation and not a precision measurement.
+Neutrino–electron scattering. The two processes ${\jmath}_ee\to\jmath_ee$ and $\bar\jmath_ee\to\bar\jmath_ee$ have cross sections whose ratio determines a combination of the electron's couplings. With $g_V=-\tfrac12+2\sin^2\theta_W$ and $g_A=-\tfrac12$ for the electron, the measured values are consistent with the table and bound $\sin^2\theta_W$ to a few per cent. The channel is clean and the statistics are poor, which is why it is a confirmation and not a precision measurement.
 
 Neutrino–nucleon scattering and the Paschos–Wolfenstein relation. The classic measurement used deep inelastic scattering on an isoscalar target, and its strength is that it compares a difference of differences rather than a ratio of ratios. Define
 
@@ -321,7 +321,7 @@ with $A_f$ the column of the table. Computed with $\sin^2\theta_{\mathrm{eff}}=0
 | Quantity | Computed | Measured | Pull |
 |---|---|---|---|
 | $A_{FB}^{0,e}$ | $0.0163$ | $0.0145\pm0.0025$ | $+0.7\sigma$ |
-| $A_{FB}^{0,\mu}$ | $0.0163$ | $0.0169\pm0.0013$ | $-0.5\sigma$ |
+| $A_{FB}^{0,\imath}$ | $0.0163$ | $0.0169\pm0.0013$ | $-0.5\sigma$ |
 | $A_{FB}^{0,\tau}$ | $0.0163$ | $0.0188\pm0.0017$ | $-1.5\sigma$ |
 | $A_{FB}^{0,b}$ | $0.1034$ | $0.0992\pm0.0016$ | $+2.6\sigma$ |
 | $A_{FB}^{0,c}$ | $0.0738$ | $0.0707\pm0.0035$ | $+0.9\sigma$ |
@@ -406,11 +406,11 @@ The framework has no route to the angle, and the companion article says so. The 
 
 | Symbol | Meaning |
 |---|---|
-| $W_{3,\mu}$, $B_\mu$ | The two neutral gauge fields before mixing |
-| $A_\mu$, $Z_\mu$ | The photon and the neutral massive field |
+| $W_{3,\imath}$, $B_{\imath}$ | The two neutral gauge fields before mixing |
+| $A_{\imath}$, $Z_{\imath}$ | The photon and the neutral massive field |
 | $\theta_W$ | $\tan\theta_W=g_{\mathrm Y}/g$, the rotation that makes the photon pure charge |
 | $e$ | $g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ |
-| $J_{3,\mu}$, $J_{Y,\mu}$, $J_{Q,\mu}$ | The isospin, hypercharge and electromagnetic currents |
+| $J_{3,\imath}$, $J_{Y,\imath}$, $J_{Q,\imath}$ | The isospin, hypercharge and electromagnetic currents |
 | $T_{3f}$, $Q_f$, $Y_f$ | Isospin, charge and hypercharge of the fermion $f$ |
 | $g_{Lf}$, $g_{Rf}$ | $T_3-Q\sin^2\theta_W$ and $-Q\sin^2\theta_W$, the chiral $Z$ couplings |
 | $g_{Vf}$, $g_{Af}$ | $T_3-2Q\sin^2\theta_W$ and $T_3$, the vector and axial $Z$ couplings |

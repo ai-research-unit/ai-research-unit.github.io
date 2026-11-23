@@ -247,10 +247,10 @@ lying in the vector part, hence in $\mathbb{B}_{\Phi}$. For a small surface defo
 The continuity equation relates the shape to the velocity in the usual way. For an incompressible medium, $\vec\nabla_\Phi\cdot\vec v = 0$, and the surface displacement follows by integrating the normal velocity. In the algebra the divergence is the central part of the gradient acting on the velocity element,
 
 $$
-\mathrm{Sc}\!\left(\vec\nabla_\Phi\vec v\right) = -\sum_\mu\partial/\partial R_\mu\,v_\mu = -\vec\nabla_\Phi\cdot\vec v,
+\mathrm{Sc}\!\left(\vec\nabla_\Phi\vec v\right) = -\sum_{\imath}\partial/\partial R_{\imath}\,v_{\imath} = -\vec\nabla_\Phi\cdot\vec v,
 $$
 
-obtained from $\vec\nabla_\Phi\vec v = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial/\partial R_\mu\,v_\nu$: only the terms with $\mu = \nu$ contribute to the centre, and $\vec e_\eta^2 = -e_t$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla_\Phi\vec v$, a scalar statement, while the remainder of $\vec\nabla_\Phi\vec v$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
+obtained from $\vec\nabla_\Phi\vec v = \sum_{\imath,\jmath}\vec e_{\imath} \vec e_{\jmath}\,\partial/\partial R_{\imath}\,v_{\jmath}$: only the terms with $\mu = \jmath$ contribute to the centre, and $\vec e_\eta^2 = -e_t$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla_\Phi\vec v$, a scalar statement, while the remainder of $\vec\nabla_\Phi\vec v$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the vector-part algebra and the commutator $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ used in these manipulations.
 
 ### The Energy of a Mode

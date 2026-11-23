@@ -17,10 +17,10 @@ The article is organised as follows. The next section fixes what is being counte
 The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, $\vec e_x\vec e_y = -\vec e_y\vec e_x = \vec e_z$, and central scalar imaginary $i$. A general element is
 
 $$
-\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z, \qquad Q_\mu = q_\mu + iq'_\mu \in \mathbb{C},
+\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z, \qquad Q_{\imath} = q_{\imath} + iq'_{\imath} \in \mathbb{C},
 $$
 
-with the eight real parameters $q_\mu, q'_\mu$ of *Algebra and Element Conventions*. To multiply two elements a machine must combine their sixteen real parameters; the question is how many **real multiplications** the combination needs, additions being counted as free.
+with the eight real parameters $q_{\imath}, q'_{\imath}$ of *Algebra and Element Conventions*. To multiply two elements a machine must combine their sixteen real parameters; the question is how many **real multiplications** the combination needs, additions being counted as free.
 
 The count below is a count of multiplications of the algebraic kind, and its two levels are worth naming before they are used:
 
@@ -73,7 +73,7 @@ $$
 H_4 = (M_0-M_1-M_2+M_3)(N_0-N_1-N_2+N_3),
 $$
 
-and let the four corner products be $P_{00} = M_0N_0$, $P_{32} = M_3N_2$, $P_{13} = M_1N_3$, $P_{21} = M_2N_1$. Then the coefficients $Q_\mu$ of the product $\tilde Q=\tilde Q_1\tilde Q_2$ satisfy
+and let the four corner products be $P_{00} = M_0N_0$, $P_{32} = M_3N_2$, $P_{13} = M_1N_3$, $P_{21} = M_2N_1$. Then the coefficients $Q_{\imath}$ of the product $\tilde Q=\tilde Q_1\tilde Q_2$ satisfy
 
 $$
 4Q_t = 8P_{00} - (H_1+H_2+H_3+H_4),
@@ -129,7 +129,7 @@ The memory side is worth recording next to the count. A matrix-valued biquaterni
 The object a machine actually consumes is not the algebra but its matrix image. For a matrix-valued biquaternion $\tilde{Q}$ with complex component matrices $Q_t,Q_x,Q_y,Q_z$ of size $n\times m$, the image is the $2n\times2m$ complex matrix
 
 $$
-M = \sum_{\mu\in\{t,x,y,z\}} \mathsf{M}_2(e_\mu)\otimes Q_\mu, \qquad \mathsf{M}_2(e_t) = I_2,
+M = \sum_{\imath\in\{t,x,y,z\}} \mathsf{M}_2(e_{\imath})\otimes Q_{\imath}, \qquad \mathsf{M}_2(e_t) = I_2,
 $$
 
 where $\mathsf{M}_2$ is the isomorphism of *The Element and Operator Representations* and $\otimes$ is the Kronecker product, taken with $\mathsf{M}_2$ first: the indices of $\mathsf{M}_2$ are the block indices of the image and the array indices run inside the blocks. With $\mathsf{M}_2(\vec e_\eta) = -i\sigma_\eta$ in the corpus convention the image is $I_2\otimes Q_t$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A$ and $B$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in *The Realification and the Effect of the Change of Scalars*.
@@ -244,7 +244,7 @@ The split the arithmetic respects is $\mathbb{B} = \mathbb{B}_{H}\oplus \mathbb{
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $Q_\mu=q_\mu+iq'_\mu$ | Complex coefficients; the eight real parameters are $q_\mu,q'_\mu$ |
+| $Q_{\imath}=q_{\imath}+iq'_{\imath}$ | Complex coefficients; the eight real parameters are $q_{\imath},q'_{\imath}$ |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | Real-quaternion and antiquaternion halves, the complex-conjugation split |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material and informational sectors, the dagger split, crossing the halves |
 | $S_1+\vec V_1$, $S_2+\vec V_2$ | Scalar and vector parts of the two factors |

@@ -268,7 +268,7 @@ B_1B_2 = \left(c^2 + s^2\cos\theta\right)
 + i\,sc\left(1+\cos\theta\right)\vec e_z .
 $$
 
-The rotation part of this product is a rotation about $\vec e_y$, the normal to the plane, so write $\tilde u_{\mathrm r} = \cos\frac{\theta_{\mathrm{wgn}}}{2} + \sin\frac{\theta_{\mathrm{wgn}}}{2}\vec u_{\mathrm r2}$ with $\vec u_{\mathrm r2} = \pm \vec e_y$. The configuration is symmetric under the reflection that fixes the $\vec e_x$–$\vec e_z$ plane and reverses $\vec e_y$, so the right polar boost carries no $\vec e_y$ component and $\tilde u_{\mathrm r}$ lies along $e_t$ and $\vec e_y$; the numerical polar decomposition below confirms both. Writing $B_{\mathrm{eff}} = B_{\mathrm{right}}(\theta_{\mathrm{rpd},\mathrm{eff}},\vec u_{\mathrm{eff}}) = \cosh\frac{\theta_{\mathrm{rpd},\mathrm{eff}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd},\mathrm{eff}}}{2}\vec u_{\mathrm{eff}}$ with $\vec u_{\mathrm{eff}}$ in the $\vec e_x$–$\vec e_z$ plane, and writing $M_\mu$ for the coefficient of $\vec e_\mu$ in a biquaternion $M$, the scalar and $\vec e_y$ components of $L = \tilde u_{\mathrm r} B_{\mathrm{eff}}$ are therefore
+The rotation part of this product is a rotation about $\vec e_y$, the normal to the plane, so write $\tilde u_{\mathrm r} = \cos\frac{\theta_{\mathrm{wgn}}}{2} + \sin\frac{\theta_{\mathrm{wgn}}}{2}\vec u_{\mathrm r2}$ with $\vec u_{\mathrm r2} = \pm \vec e_y$. The configuration is symmetric under the reflection that fixes the $\vec e_x$–$\vec e_z$ plane and reverses $\vec e_y$, so the right polar boost carries no $\vec e_y$ component and $\tilde u_{\mathrm r}$ lies along $e_t$ and $\vec e_y$; the numerical polar decomposition below confirms both. Writing $B_{\mathrm{eff}} = B_{\mathrm{right}}(\theta_{\mathrm{rpd},\mathrm{eff}},\vec u_{\mathrm{eff}}) = \cosh\frac{\theta_{\mathrm{rpd},\mathrm{eff}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd},\mathrm{eff}}}{2}\vec u_{\mathrm{eff}}$ with $\vec u_{\mathrm{eff}}$ in the $\vec e_x$–$\vec e_z$ plane, and writing $M_{\imath}$ for the coefficient of $\vec e_{\imath}$ in a biquaternion $M$, the scalar and $\vec e_y$ components of $L = \tilde u_{\mathrm r} B_{\mathrm{eff}}$ are therefore
 
 $$
 \mathrm{Sc}(L) = \cos\frac{\theta_{\mathrm{wgn}}}{2}\,\cosh\frac{\theta_{\mathrm{rpd},\mathrm{eff}}}{2},
@@ -382,7 +382,7 @@ with $\theta_{\mathrm{wgn}}\approx\tfrac{(\theta_{\mathrm{rpd}})^{2}}{2}\sin\the
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace; complex scalar line (centre) |
 | $\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t$ | Unit-norm biquaternion; Lorentz rotor |

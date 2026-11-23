@@ -6,7 +6,7 @@ The stress of a spinorial field has two parts, a symmetric part that carries the
 
 The count looks like a defeat and it is not one. The antisymmetric part of the canonical stress is, by the Belinfante relation, the divergence of the spin tensor. A total divergence carries no charge, so the antisymmetric part contributes nothing to the total energy–momentum of a localised field. The object that a fluid needs is the conserved four-vector, and one element holds exactly that: the energy density in its scalar slot and the momentum density in its vector slot. The limitation and the choice coincide.
 
-What the element holds of the spin is the density and not the current. The spin tensor $S_{\lambda\mu\nu}$ has twenty-four components, the Frenkel condition cuts it to twelve, and its time slice at a point is an antisymmetric pair with six, which the condition cuts to three. Those three are the vector slots of one Hermitian element whose scalar slot vanishes. So one element per event holds the spin density exactly, and the spin current needs three more.
+What the element holds of the spin is the density and not the current. The spin tensor $S_{\lambda\imath\jmath}$ has twenty-four components, the Frenkel condition cuts it to twelve, and its time slice at a point is an antisymmetric pair with six, which the condition cuts to three. Those three are the vector slots of one Hermitian element whose scalar slot vanishes. So one element per event holds the spin density exactly, and the spin current needs three more.
 
 The pair of laws is the rotor's equation read twice. The energy–momentum law is the conservation of the symmetric part. The spin law is the divergence of the spin current equalling a torque, and the torque is the rotor connection contracted with the spin. When the connection turns about the spin's own axis the torque vanishes, and that is the free rotor's conservation law in components.
 
@@ -20,7 +20,7 @@ It does not reconstruct the sixteen-component tensor as elements, it does not de
 
 | object | components | slot in one element |
 | --- | --- | --- |
-| general $T_{\mu\nu}$ | 16 | not available |
+| general $T_{\imath\jmath}$ | 16 | not available |
 | symmetric part | 10 | not available |
 | antisymmetric part | 6 | not available |
 | energy and momentum density | 4 | the four slots |
@@ -29,17 +29,17 @@ The four available are the conserved ones. Energy and the three momentum densiti
 
 The spatial block is recovered and not stored. The pressure is the trace of the spatial block and it enters through the equation of state; the shear enters through the transport coefficients of a dissipative theory. Neither is a slot. That is the arrangement [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) states for the scalar case and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) states as a limitation of the category.
 
-The trace part of that block is not free, and it is the mass term. The section *The Trace and the Pressure* computes it: $\sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\Omega$, with $\Omega$ the scalar bilinear. So the equation of state has exactly one line, $p=\tfrac13(\epsilon-mc^{2}\Omega)$, and it fixes the pressure once the energy density is known; the deviatoric part stays free.
+The trace part of that block is not free, and it is the mass term. The section *The Trace and the Pressure* computes it: $\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}=mc^{2}\Omega$, with $\Omega$ the scalar bilinear. So the equation of state has exactly one line, $p=\tfrac13(\epsilon-mc^{2}\Omega)$, and it fixes the pressure once the energy density is known; the deviatoric part stays free.
 
 ### Why the Count Is Not a Defeat
 
 An antisymmetric part that is a total divergence carries no charge. That is the content of the Belinfante relation: the antisymmetric part of the canonical stress equals minus one half the divergence of the spin tensor,
 
 $$
-T_{\mathrm{can},[\mu\nu]}=-\tfrac12\sum_\lambda\partial_\lambda S_{\lambda\mu\nu},
+T_{\mathrm{can},[\imath\jmath]}=-\tfrac12\sum_\lambda\partial_\lambda S_{\lambda\imath\jmath},
 $$
 
-with $S_{\lambda\mu\nu}$ antisymmetric in its last two indices and every index low. Integrating over a localised field, the divergence integrates to a boundary term and vanishes, so the antisymmetric part contributes nothing to the total energy or momentum.
+with $S_{\lambda\imath\jmath}$ antisymmetric in its last two indices and every index low. Integrating over a localised field, the divergence integrates to a boundary term and vanishes, so the antisymmetric part contributes nothing to the total energy or momentum.
 
 The relation is imported, and its convention is stated. The factor $\tfrac12$ and the sign are those of the standard treatment, quoted in [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html) §*The Belinfante improvement*. The article does not re-derive it and does not claim it as framework content.
 
@@ -69,10 +69,10 @@ The spin's antisymmetry is why the torque is a commutator. The connection's symm
 
 ### The Trace Is the Mass Density
 
-**The trace of the symmetric part is fixed by the field, and it equals the mass term.** The canonical trace is the scalar bilinear. With the Dirac equation written in the weight form, $\bigl(-i\sum_\mu\varepsilon_\mu\gamma_\mu\partial_\mu-k_m\bigr)\tilde\Xi=0$, the two terms inside the bracket of $-\tfrac i2\bigl[\sum_\mu\varepsilon_\mu\bar{\tilde\Xi}\gamma_\mu\partial_\mu\tilde\Xi-\sum_\mu\varepsilon_\mu(\partial_\mu\bar{\tilde\Xi})\gamma_\mu\tilde\Xi\bigr]$ are $+ik_m\Omega$ and $-ik_m\Omega$, so the bracket times $\tfrac i2$ is $k_m\Omega$. The Belinfante improvement leaves that alone, because the improvement is a divergence antisymmetric in its last two indices and its own trace vanishes. With $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ and $\frac{h}{2\pi} c\,k_m=mc^{2}$,
+**The trace of the symmetric part is fixed by the field, and it equals the mass term.** The canonical trace is the scalar bilinear. With the Dirac equation written in the weight form, $\bigl(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\partial_{\imath}-k_m\bigr)\tilde\Xi=0$, the two terms inside the bracket of $-\tfrac i2\bigl[\sum_{\imath}\varepsilon_{\imath}\bar{\tilde\Xi}\gamma_{\imath}\partial_{\imath}\tilde\Xi-\sum_{\imath}\varepsilon_{\imath}(\partial_{\imath}\bar{\tilde\Xi})\gamma_{\imath}\tilde\Xi\bigr]$ are $+ik_m\Omega$ and $-ik_m\Omega$, so the bracket times $\tfrac i2$ is $k_m\Omega$. The Belinfante improvement leaves that alone, because the improvement is a divergence antisymmetric in its last two indices and its own trace vanishes. With $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ and $\frac{h}{2\pi} c\,k_m=mc^{2}$,
 
 $$
-\sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\Omega .
+\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}=mc^{2}\Omega .
 $$
 
 The pressure follows from the energy density and the mass density together. In the frame the flow defines, and in the interval inertia $(+,-,-,-)$ of the corpus, $T_{00}=\epsilon$ and $\sum_jT_{jj}=3p$, so the trace is $\epsilon-3p$ and
@@ -85,23 +85,23 @@ This is the whole equation of state the framework supplies, and it is partial. I
 
 Three consequences follow at once. At $m=0$ the scalar bilinear vanishes identically and the trace is zero, so $\epsilon=3p$: the field is conformal at zero mass, and at $m\neq0$ the trace vanishes only where the interference cancels the scalar bilinear. The sign of the trace is the particle content, because $\Omega$ changes sign under charge conjugation while $\rho$ does not. And the magnitude is bounded by $mc^{2}\rho$, since $\lvert\Omega\rvert=\rho\lvert\cos\theta\rvert\le\rho$.
 
-*Check.* On the symmetrised canonical tensor, seven fields at three events each — three plane waves, one per spin and one at rest, two waves of one momentum with opposite spins, two positive-energy modes, a particle–antiparticle pair, and two negative-energy modes, twenty-one events in all — with the momentum in units of $mc$ and each spinor normalised to $\bar u\,u=2m$, the largest $\lvert\sum_\mu\varepsilon_\mu T_{\mu\mu}-\Omega\rvert$ is $2.7\times10^{-15}$ and the largest $\lvert\epsilon-3p-\sum_\mu\varepsilon_\mu T_{\mu\mu}\rvert$ is $4.7\times10^{-15}$. The two negative-energy modes have $\Omega<0$ and a trace of the same sign and the same value, so the sign statement is checked and not only asserted.
+*Check.* On the symmetrised canonical tensor, seven fields at three events each — three plane waves, one per spin and one at rest, two waves of one momentum with opposite spins, two positive-energy modes, a particle–antiparticle pair, and two negative-energy modes, twenty-one events in all — with the momentum in units of $mc$ and each spinor normalised to $\bar u\,u=2m$, the largest $\lvert\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}-\Omega\rvert$ is $2.7\times10^{-15}$ and the largest $\lvert\epsilon-3p-\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}\rvert$ is $4.7\times10^{-15}$. The two negative-energy modes have $\Omega<0$ and a trace of the same sign and the same value, so the sign statement is checked and not only asserted.
 
 ### One Mode Is a Dust
 
-The symmetric part of a single plane wave is a pressureless dust. For one mode the tensor is $\tfrac12(j_\mu P_\nu+j_\nu P_\mu)$ with $j$ the current and $P$ the momentum. For $m\neq0$ the current lies along the momentum, $j_\mu=(\Omega/m)P_\mu$, so
+The symmetric part of a single plane wave is a pressureless dust. For one mode the tensor is $\tfrac12(j_{\imath} P_{\jmath}+j_{\jmath} P_{\imath})$ with $j$ the current and $P$ the momentum. For $m\neq0$ the current lies along the momentum, $j_{\imath}=(\Omega/m)P_{\imath}$, so
 
 $$
-T_{\mu\nu}=mc^{2}\Omega\,u_\mu u_\nu,\qquad u_\mu=\frac{P_\mu}{mc},
+T_{\imath\jmath}=mc^{2}\Omega\,u_{\imath} u_{\jmath},\qquad u_{\imath}=\frac{P_{\imath}}{mc},
 $$
 
 with $u$ the unit flow. Its rest frame is the mode's own frame, and there $\epsilon=mc^{2}\Omega$, $p=0$, and every $T_{jk}$ vanishes.
 
 *Check.* Boosted to the rest frame of its own current, the spatial block has largest entry $8\times10^{-16}$, for either spin, for the rest frame and for two waves of one momentum, at three events of each field. Two waves of one momentum and opposite spins give $\epsilon=4$ at the momentum $mc$ with $\bar u\,u=2m$ per wave, $p=0$ and shear $0$: the energies add and no stress appears. So the spin does not enter the symmetric part at fixed momentum, and the dust character belongs to the momentum alone.
 
-A massless mode is a null dust. At $m=0$ the trace identity forces $\Omega=0$ and the single-mode tensor is $\epsilon k_\mu k_\nu$ with $k$ null. In the frame of the mode the spatial block is $\epsilon n_jn_k$: one eigenvalue $\epsilon$ along the direction of motion and two zero across it. The isotropised pressure is $\epsilon/3$, so the radiation equation of state is what tracelessness gives; the stress is nevertheless uniaxial, and the equation of state does not make it isotropic.
+A massless mode is a null dust. At $m=0$ the trace identity forces $\Omega=0$ and the single-mode tensor is $\epsilon k_{\imath} k_{\jmath}$ with $k$ null. In the frame of the mode the spatial block is $\epsilon n_jn_k$: one eigenvalue $\epsilon$ along the direction of motion and two zero across it. The isotropised pressure is $\epsilon/3$, so the radiation equation of state is what tracelessness gives; the stress is nevertheless uniaxial, and the equation of state does not make it isotropic.
 
-*Check.* At $m=10^{-8}$ with the momentum $(0.9,-0.4,0.3)$: $\sum_\mu\varepsilon_\mu P_\mu P_\mu=2\times10^{-16}$, $T_{jj}/\epsilon=1.000000$, the three eigenvalues of $T_{jk}$ are $(0,0,1)\epsilon$, and the trace is $3\times10^{-16}\epsilon$, for either spin.
+*Check.* At $m=10^{-8}$ with the momentum $(0.9,-0.4,0.3)$: $\sum_{\imath}\varepsilon_{\imath} P_{\imath} P_{\imath}=2\times10^{-16}$, $T_{jj}/\epsilon=1.000000$, the three eigenvalues of $T_{jk}$ are $(0,0,1)\epsilon$, and the trace is $3\times10^{-16}\epsilon$, for either spin.
 
 What the two results say together is that the pressure of a massive field is interference. A massive single mode carries none, and a massless one carries a third of its energy density by tracelessness. So on the massive side every pressure is a property of the superposition and not of the particles, and none of it comes from the spin. That is the precise sense of the count's remark that the pressure enters through the equation of state: the equation is the trace identity, the identity is the mass term, and the mass term is the scalar bilinear.
 
@@ -113,8 +113,8 @@ What the two results say together is that the pressure of a massive field is int
 
 | stage | object | components |
 | --- | --- | --- |
-| the tensor | $S_{\lambda\mu\nu}$, antisymmetric in $\mu\nu$ | 24 |
-| the Frenkel condition | $\sum_\nu S_{\lambda\mu\nu}v_{\Phi,\nu}=0$ | 12 |
+| the tensor | $S_{\lambda\imath\jmath}$, antisymmetric in $\mu\jmath$ | 24 |
+| the Frenkel condition | $\sum_{\jmath} S_{\lambda\imath\jmath}v_{\Phi,\jmath}=0$ | 12 |
 | the time slice at an event | $S^{0ij}$ | 3 |
 | the polar element | $\rho\tfrac{h}{4\pi}i\hat s$ | 3 |
 
@@ -149,9 +149,9 @@ The law is one real equation and the element has four slots, so three of the fou
 **The divergence of the spin current is a torque, and the torque is the rotor connection contracted with the spin.** With the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$, a real vector part,
 
 $$
-\sum_\eta\partial_\eta S_{\Psi,\eta,\lambda\nu}=\tau_{\lambda\nu},
+\sum_\eta\partial_\eta S_{\Psi,\eta,\lambda\jmath}=\tau_{\lambda\jmath},
 \qquad
-\tau_{\lambda\nu}=\tfrac12\Bigl(\sum_\rho\varepsilon_\rho\,\Omega_{\lambda\rho}S_{\rho\nu}-\sum_\rho\varepsilon_\rho\,\Omega_{\nu\rho}S_{\rho\lambda}\Bigr).
+\tau_{\lambda\jmath}=\tfrac12\Bigl(\sum_\rho\varepsilon_\rho\,\Omega_{\lambda\rho}S_{\rho\jmath}-\sum_\rho\varepsilon_\rho\,\Omega_{\jmath\rho}S_{\rho\lambda}\Bigr).
 $$
 
 The display is the rotor's own equation in components. The rotor's equation is $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$, and differentiating the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ gives the commutator of the connection with the spin. The conservation law is that statement with the indices put back. [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) derives it and this article quotes it.
@@ -167,14 +167,14 @@ It establishes that the source of the spin law is a commutator and that its kern
 The Gordon decomposition splits the current into a convection part and a spin part, and the spin part is a bound current. The identity is
 
 $$
-J_{\Phi,\mu}=\frac{\rho}{m}P_{\Phi,\mu}+\frac{1}{k_m}\partial_\nu\bigl(\bar{\tilde\Xi}\Sigma_{\mu\nu}\tilde\Xi\bigr),
+J_{\Phi,\imath}=\frac{\rho}{m}P_{\Phi,\imath}+\frac{1}{k_m}\partial_{\jmath}\bigl(\bar{\tilde\Xi}\Sigma_{\imath\jmath}\tilde\Xi\bigr),
 $$
 
-with the second term a total divergence by construction and $\Sigma_{\mu\nu}$ the spin generator of the algebra. [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html) proves the identity on shell, in position space and in momentum space, and states that the spin term's own divergence vanishes identically because a symmetric derivative meets an antisymmetric object.
+with the second term a total divergence by construction and $\Sigma_{\imath\jmath}$ the spin generator of the algebra. [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html) proves the identity on shell, in position space and in momentum space, and states that the spin term's own divergence vanishes identically because a symmetric derivative meets an antisymmetric object.
 
 **A bound current is one whose divergence is zero, so it circulates.** The spin term is a curl of the spin density: it is non-zero exactly where the spin density varies from event to event, and its lines close on themselves. That is what makes it a magnetisation rather than a transport: it carries no charge from one place to another, and it is the current that a varying spin magnetisation produces.
 
-The vorticity is a different object and the two are not the same. The vorticity 2-form $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is the antisymmetrised gradient of the *frame*, and it is non-zero where the velocity varies; the spin term is the divergence of the *spin density*, non-zero where the spin varies. The two have different sources in the word: the vorticity is the gradient of the boost, which is what the velocity is built from, and the spin term is the gradient of the rotor, which is what the spin direction is built from. [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) carries the split: the frame element that squares to the velocity is the boost and the rotor does not enter it at all, so a varying rotor produces a varying spin and no vorticity.
+The vorticity is a different object and the two are not the same. The vorticity 2-form $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ is the antisymmetrised gradient of the *frame*, and it is non-zero where the velocity varies; the spin term is the divergence of the *spin density*, non-zero where the spin varies. The two have different sources in the word: the vorticity is the gradient of the boost, which is what the velocity is built from, and the spin term is the gradient of the rotor, which is what the spin direction is built from. [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) carries the split: the frame element that squares to the velocity is the boost and the rotor does not enter it at all, so a varying rotor produces a varying spin and no vorticity.
 
 Where they meet is the antisymmetric part of the stress. The stress's antisymmetric part is the divergence of the spin tensor, and the spin tensor is built from the velocity and the spin direction together. So the antisymmetric part is where the varying frame and the varying spin are contracted, and its vanishing is the statement that the spin is transported without torque.
 
@@ -184,9 +184,9 @@ The strongest objection is that this is bookkeeping. The objection says that the
 
 **The Frenkel condition says the spin has no component along the flow, and in the element it says the scalar slot is zero.** With the spin element $\tilde S_{\Psi}=\rho\tfrac{h}{4\pi}i\hat s$ and $\hat s$ a real vector, the scalar part is $\rho\tfrac{h}{4\pi}i\,\hat s_t$, which vanishes exactly when $\hat s$ has no temporal component.
 
-*Proposition.* $\mathrm{Sc}\,\tilde S_{\Psi}=0$ if and only if $\sum_\nu S_{\mu\nu}v_{\Phi,\nu}=0$ in the flow's rest frame.
+*Proposition.* $\mathrm{Sc}\,\tilde S_{\Psi}=0$ if and only if $\sum_{\jmath} S_{\imath\jmath}v_{\Phi,\jmath}=0$ in the flow's rest frame.
 
-*Proof.* In the rest frame $v_{\Phi}=e_t$, and the spin tensor of a spin vector $\hat s$ is $S_{\mu\nu}=\sum_{\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}v_{\Phi,\rho}\hat s_{\sigma}$, which has $S_{0i}=0$ exactly when $\hat s$ is spatial. The element's scalar part is the temporal component of $\hat s$, so the two conditions are the same condition.
+*Proof.* In the rest frame $v_{\Phi}=e_t$, and the spin tensor of a spin vector $\hat s$ is $S_{\imath\jmath}=\sum_{\rho,\sigma}\varepsilon_{\imath\jmath\rho\sigma}v_{\Phi,\rho}\hat s_{\sigma}$, which has $S_{0i}=0$ exactly when $\hat s$ is spatial. The element's scalar part is the temporal component of $\hat s$, so the two conditions are the same condition.
 
 The condition is automatic in the polar word and that is the point. The rotor is a real unit, so its image of the declared axis is a real vector with no temporal part; the scalar slot of the spin element therefore vanishes identically and the Frenkel condition is not a constraint to be imposed. That is the framework's simplification: a condition that other formulations impose is here a property of the decomposition.
 
@@ -210,27 +210,27 @@ The spin tensor's twenty-four components are cut to twelve by the Frenkel condit
 
 The pair of laws is the rotor's equation read twice: the energy–momentum law constrains the symmetric part's divergence, and the spin law equates the spin current's divergence to a torque built from the rotor connection and the spin. The torque vanishes exactly when the connection turns about the spin's own axis, which is the free rotor's conservation law.
 
-The trace of the symmetric part is the mass term, $\sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\Omega$, so the pressure is $\tfrac13(\epsilon-mc^{2}\Omega)$: the equation of state is one line, it fixes the isotropic part, and it leaves the shear to the transport coefficients. A single massive mode is a pressureless dust and a massless one a null dust, so the part of the pressure that varies from event to event is interference and not spin.
+The trace of the symmetric part is the mass term, $\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}=mc^{2}\Omega$, so the pressure is $\tfrac13(\epsilon-mc^{2}\Omega)$: the equation of state is one line, it fixes the isotropic part, and it leaves the shear to the transport coefficients. A single massive mode is a pressureless dust and a massless one a null dust, so the part of the pressure that varies from event to event is interference and not spin.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ | Energy–momentum element: energy density and flux |
-| $T_{\mu\nu}$, $T_{[\mu\nu]}$ | Stress and its antisymmetric part |
-| $S_{\lambda\mu\nu}$ | Spin current, antisymmetric in the last two indices |
-| $S_{\Psi,\eta,\lambda\nu}$ | Its components in the corpus's letters |
+| $T_{\imath\jmath}$, $T_{[\imath\jmath]}$ | Stress and its antisymmetric part |
+| $S_{\lambda\imath\jmath}$ | Spin current, antisymmetric in the last two indices |
+| $S_{\Psi,\eta,\lambda\jmath}$ | Its components in the corpus's letters |
 | $\tilde S_{\Psi}=\rho\tfrac{h}{4\pi}i\hat s$ | Spin density element |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ | Rotor connection |
-| $\tau_{\lambda\nu}$ | Torque, the spin law's source |
-| $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |
+| $\tau_{\lambda\jmath}$ | Torque, the spin law's source |
+| $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ | Vorticity 2-form |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\rho=r^{2}$ | Density |
 | $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ | Scalar bilinear, the mass density's number |
 | $\theta$ | Internal angle between mass density and particle density |
 | $\epsilon$, $p$ | Energy density ($w_{\mathrm{fl}}$ in the flow's frame) and pressure |
-| $P_\mu$, $u_\mu=P_\mu/(mc)$ | Momentum of a single mode and its unit flow |
+| $P_{\imath}$, $u_{\imath}=P_{\imath}/(mc)$ | Momentum of a single mode and its unit flow |
 
 ## Further Reading
 

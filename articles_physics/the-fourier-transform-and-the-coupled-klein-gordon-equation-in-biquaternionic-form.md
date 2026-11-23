@@ -30,9 +30,9 @@ k_t'=\frac{\omega}{c},
 \langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2}.
 $$
 
-The coordinate is $R_t=i\,r_t'$, so $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the temporal slot of the gradient's symbol is $+i(ik_t')=-k_t'$, real; the three spatial slots are $i\kappa_\eta$, imaginary. Write $\sigma_\mu$ for those four numbers, so $\sigma_t=-k_t'$ and $\sigma_\eta=i\kappa_\eta$. A reader who takes the metric signs from the slot list instead of from $\partial/\partial R_t=-i\,\partial/\partial r_t'$ will put an extra $-1$ on $\sigma_t$ and will then find an imaginary cross term that does not exist. The corpus has already spent that sign twice, once in $R_t=ir_t'$ and once in $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r_t'}^{2}$, and there is none left to spend.
+The coordinate is $R_t=i\,r_t'$, so $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the temporal slot of the gradient's symbol is $+i(ik_t')=-k_t'$, real; the three spatial slots are $i\kappa_\eta$, imaginary. Write $\sigma_{\imath}$ for those four numbers, so $\sigma_t=-k_t'$ and $\sigma_\eta=i\kappa_\eta$. A reader who takes the metric signs from the slot list instead of from $\partial/\partial R_t=-i\,\partial/\partial r_t'$ will put an extra $-1$ on $\sigma_t$ and will then find an imaginary cross term that does not exist. The corpus has already spent that sign twice, once in $R_t=ir_t'$ and once in $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r_t'}^{2}$, and there is none left to spend.
 
-With $c_\mu=\frac{2\pi i\,ϙ}{h}A_\mu$ and $\tilde A_\Phi=i a_t' e_t+\sum_\eta A_\eta\vec e_\eta$ for real $a_t'$ and real $A_\eta$, the four coefficients are
+With $c_{\imath}=\frac{2\pi i\,ϙ}{h}A_{\imath}$ and $\tilde A_\Phi=i a_t' e_t+\sum_\eta A_\eta\vec e_\eta$ for real $a_t'$ and real $A_\eta$, the four coefficients are
 
 $$
 c_t=\frac{2\pi i\,ϙ}{h}\,i a_t'=-\frac{2\pi ϙ a_t'}{h}\ \text{real},
@@ -42,7 +42,7 @@ c_\eta=\frac{2\pi i\,ϙ}{h}A_\eta=i\,a_\eta\ \text{imaginary},
 a_\eta:=\frac{2\pi ϙ}{h}A_\eta .
 $$
 
-The coefficient $c_\mu$ always carries an index and the speed of light $c$ never does; the corpus's $r_t'=ct'$ is the only place the letter appears unindexed. The writing $A_t=ia_t'$ is the parent's and it is the one the anti-Hermiticity of $\tilde A_\Phi$ produces: $\tilde A_\Phi^{*}=-\tilde A_\Phi$ holds exactly when $a_t'$ and $\vec A$ are both real.
+The coefficient $c_{\imath}$ always carries an index and the speed of light $c$ never does; the corpus's $r_t'=ct'$ is the only place the letter appears unindexed. The writing $A_t=ia_t'$ is the parent's and it is the one the anti-Hermiticity of $\tilde A_\Phi$ produces: $\tilde A_\Phi^{*}=-\tilde A_\Phi$ holds exactly when $a_t'$ and $\vec A$ are both real.
 
 The mechanical wave number is $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$, whose temporal slot is $-k_t'+c_t$ in the gradient's units. First, the transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued functions and never carries a material-sector field to an informational-sector one; the fork below is about classes of scalars and not about sectors. Second, a symbol exists only where the coefficients are constant, which is the licence used throughout and the first entry in *Limits*. Third, a Legendre transform between a field and its conjugate momentum grants no Fourier reading, and nothing below is one.
 
@@ -56,7 +56,7 @@ $$
 \text{(E1)}\qquad k_t'^{2}-c_t^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2}.
 $$
 
-The first is $\sum_\mu(\sigma_\mu+c_\mu)^{2}$, the square of the covariant derivative summed slot by slot. The second is $\sum_\mu(\sigma_\mu-\bar c_\mu)(\sigma_\mu+c_\mu)$, the two first-order symbols with opposite coefficients on the two factors. They differ by
+The first is $\sum_{\imath}(\sigma_{\imath}+c_{\imath})^{2}$, the square of the covariant derivative summed slot by slot. The second is $\sum_{\imath}(\sigma_{\imath}-\bar c_{\imath})(\sigma_{\imath}+c_{\imath})$, the two first-order symbols with opposite coefficients on the two factors. They differ by
 
 $$
 \bigl(k_t'-c_t\bigr)^{2}-k_t'^{2}+c_t^{2}=2c_t\bigl(c_t-k_t'\bigr),
@@ -70,13 +70,13 @@ Everything below concerns the temporal slot with a constant scalar potential. Th
 
 ## The Parity Lemma
 
-With $c_\mu$ constant, the symbol of the covariant d'Alembertian is real in slot $\mu$ exactly when $c_\mu$ has the reality of $\sigma_\mu$:
+With $c_{\imath}$ constant, the symbol of the covariant d'Alembertian is real in slot $\mu$ exactly when $c_{\imath}$ has the reality of $\sigma_{\imath}$:
 
 $$
 \boxed{\;
-\bigl(\sigma_\mu+c_\mu\bigr)^{2}\in\mathbb{R}
+\bigl(\sigma_{\imath}+c_{\imath}\bigr)^{2}\in\mathbb{R}
 \quad\Longleftrightarrow\quad
-\operatorname{parity}\bigl(c_\mu\bigr)=\operatorname{parity}\bigl(\sigma_\mu\bigr)
+\operatorname{parity}\bigl(c_{\imath}\bigr)=\operatorname{parity}\bigl(\sigma_{\imath}\bigr)
 \;}
 $$
 
@@ -136,7 +136,7 @@ A real $c$ in a slot with $\sigma=i\kappa$ gives the squared symbol $-\kappa^{2}
 
 In the corpus's writing a real spatial coefficient would be $c_\eta$ real, that is $A_\eta$ imaginary, that is a non-material connection. The material potential has $A_\eta$ real and $c_\eta$ imaginary, and then the spatial symbol is $-(\kappa+a)^{2}$, real, with no imaginary part at all. So the parent's complex number is not a property of a scalar potential coupled to a scalar field. It is a property of a coefficient of the wrong parity, tested in a slot where the corpus never puts one.
 
-The same passage calls the imaginary coefficient "shifts the pair together" and the real one "separates them", and both phrases are right as descriptions of those two coefficients. The paragraph immediately before it is sharper still: it states that the two operators coincide exactly when $\bar c_\mu=-c_\mu$ in every slot, that the three spatial slots satisfy this for a real vector potential, and that the temporal slot does not, because $c_t$ is real. That paragraph has the slot structure right, and the measurement two paragraphs later uses a slot the paragraph rules out. The resolution is the one above: the number is a spatial-slot number, and the material connection does not produce one.
+The same passage calls the imaginary coefficient "shifts the pair together" and the real one "separates them", and both phrases are right as descriptions of those two coefficients. The paragraph immediately before it is sharper still: it states that the two operators coincide exactly when $\bar c_{\imath}=-c_{\imath}$ in every slot, that the three spatial slots satisfy this for a real vector potential, and that the temporal slot does not, because $c_t$ is real. That paragraph has the slot structure right, and the measurement two paragraphs later uses a slot the paragraph rules out. The resolution is the one above: the number is a spatial-slot number, and the material connection does not produce one.
 
 A reader who carries $-8.8876+1.86i$ away as "the symbol of a scalar potential" will look for a complex pole in a constant electric background and will not find one. The replacement is the pair of §*The Two Shells*: two real polynomials, no imaginary part, differing by a real cross term.
 
@@ -162,11 +162,11 @@ Neither root pair has an imaginary part, so neither reading describes a state wi
 
 ## The Field Strength and the Three Benches
 
-With $\tilde F=i[D_\mu,D_\nu]$ and $D_\mu$ the per-slot covariant derivative, the commutator has no derivative left: it is pointwise multiplication by $\frac{2\pi iϙ}{h}F_{\mu\nu}$. The transform of a multiplication is the convolution of the transform of its coefficient with the transform of the field, so the coefficient's own transform decides the bench.
+With $\tilde F=i[D_{\imath},D_{\jmath}]$ and $D_{\imath}$ the per-slot covariant derivative, the commutator has no derivative left: it is pointwise multiplication by $\frac{2\pi iϙ}{h}F_{\imath\jmath}$. The transform of a multiplication is the convolution of the transform of its coefficient with the transform of the field, so the coefficient's own transform decides the bench.
 
 The first bench is $\tilde F=0$ and the operator is a multiplier. A constant connection gives a symbol and the plane wave stays a plane wave. Measured on $256$ points: the covariant derivative of a plane wave of wave number $3$ occupies one mode, and the free case occupies one mode. The count is one because the coefficient is a constant and its transform is a single coefficient.
 
-An affine coefficient is not periodic, so the periodic test cannot carry it; on a line of $4096$ points with central differences, an affine $A_y=Bx$ and a Gaussian probe, the commutator identity $[D_x,D_y]g=iBg$ holds to $1.1\times10^{-5}$ against a term of scale $0.731$, which is the second-order scheme's own error. In the transform an affine coefficient is $i\,\mathrm{d}/\mathrm{d}k$, so a single wave number is carried to a derivative of a delta: still one point of support, now a jet at that point. The Heisenberg algebra of the covariant momenta, $[\tilde\pi_\mu,\tilde\pi_\nu]=i \frac{h}{2\pi}ϙF_{\mu\nu}$ with a central constant on the right, is the reason the spectrum is a ladder there, and *Landau Levels in Biquaternionic Form* computes it; this article cites and does not recompute.
+An affine coefficient is not periodic, so the periodic test cannot carry it; on a line of $4096$ points with central differences, an affine $A_y=Bx$ and a Gaussian probe, the commutator identity $[D_x,D_y]g=iBg$ holds to $1.1\times10^{-5}$ against a term of scale $0.731$, which is the second-order scheme's own error. In the transform an affine coefficient is $i\,\mathrm{d}/\mathrm{d}k$, so a single wave number is carried to a derivative of a delta: still one point of support, now a jet at that point. The Heisenberg algebra of the covariant momenta, $[\tilde\pi_{\imath},\tilde\pi_{\jmath}]=i \frac{h}{2\pi}ϙF_{\imath\jmath}$ with a central constant on the right, is the reason the spectrum is a ladder there, and *Landau Levels in Biquaternionic Form* computes it; this article cites and does not recompute.
 
 The coefficient's transform is then a spread, the plane wave is carried into a band of modes, and there is no ladder: a convolution is an integral operator of no finite order and it has no eigenvalue problem in the algebraic sense at all. Measured with a single sinusoid in the coefficient the derivative of a plane wave occupies $3$ modes; with a random coefficient it occupies all $256$ above the threshold. The third bench is the end of the classification, and the article says so rather than reaching for an approximation to it.
 
@@ -227,15 +227,15 @@ The parent's measured complex symbol, $-8.8876+1.86i$, is reproduced exactly by 
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The four-wave number; $k_t'=\omega/c$ |
-| $\sigma_\mu$ | The free slot symbol: $\sigma_t=-k_t'$ real, $\sigma_\eta=i\kappa_\eta$ imaginary |
+| $\sigma_{\imath}$ | The free slot symbol: $\sigma_t=-k_t'$ real, $\sigma_\eta=i\kappa_\eta$ imaginary |
 | $\tilde A_\Phi=i a_t'e_t+\sum_\eta A_\eta\vec e_\eta$ | The connection, anti-Hermitian in the material writing |
-| $c_\mu=\frac{2\pi iϙ}{h}A_\mu$ | The per-slot connection coefficient; $c_t=-\frac{2\pi ϙa_t'}{h}$ real, $c_\eta=ia_\eta$ imaginary |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot connection coefficient; $c_t=-\frac{2\pi ϙa_t'}{h}$ real, $c_\eta=ia_\eta$ imaginary |
 | $a_\eta=\frac{2\pi ϙ}{h}A_\eta$ | The reduced vector potential, real |
 | $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
-| (E2), the squared reading | $\sum_\mu(\sigma_\mu+c_\mu)^{2}$; shell $(k_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}$ |
-| (E1), the paired reading | $\sum_\mu(\sigma_\mu-\bar c_\mu)(\sigma_\mu+c_\mu)$; shell $k_t'^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}+c_t^{2}$ |
+| (E2), the squared reading | $\sum_{\imath}(\sigma_{\imath}+c_{\imath})^{2}$; shell $(k_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}$ |
+| (E1), the paired reading | $\sum_{\imath}(\sigma_{\imath}-\bar c_{\imath})(\sigma_{\imath}+c_{\imath})$; shell $k_t'^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}+c_t^{2}$ |
 | $2c_t(c_t-k_t')$ | The difference of the two symbols; real, first order in the potential |
-| $\tilde F=i[D_\mu,D_\nu]$ | The field strength; a multiplication by $\frac{2\pi iϙ}{h}F_{\mu\nu}$ |
+| $\tilde F=i[D_{\imath},D_{\jmath}]$ | The field strength; a multiplication by $\frac{2\pi iϙ}{h}F_{\imath\jmath}$ |
 | $\tilde K_{\Phi,\mathrm{gco}}$ | The mechanical wave number, $\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ |
 
 ## Further Reading

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The Proca field is $A_\mu=r\,u_\mu$: a magnitude and a direction, which are a density and a velocity. So the fluid is not a reading of a polar decomposition imposed from outside — it is the field's own parameterisation, and the action written in it is the Proca action and nothing else.
+The Proca field is $A_{\imath}=r\,u_{\imath}$: a magnitude and a direction, which are a density and a velocity. So the fluid is not a reading of a polar decomposition imposed from outside — it is the field's own parameterisation, and the action written in it is the Proca action and nothing else.
 
-*First, one term of the action does two things, and they are the same thing.* The mass term $\frac{k_m^{2}}{2}r^{2}$ removes the gauge freedom and supplies the Lorenz condition; the Lorenz condition in the fluid's variables is $\sum_\mu\partial_\mu(ru_\mu)=0$, which is continuity. The spin-one fluid's continuity is the replacement for its lost gauge freedom, and both come from one term.
+*First, one term of the action does two things, and they are the same thing.* The mass term $\frac{k_m^{2}}{2}r^{2}$ removes the gauge freedom and supplies the Lorenz condition; the Lorenz condition in the fluid's variables is $\sum_{\imath}\partial_{\imath}(ru_{\imath})=0$, which is continuity. The spin-one fluid's continuity is the replacement for its lost gauge freedom, and both come from one term.
 
-*Second, the density's variation and the direction's variation are the longitudinal and transverse parts of the field equation, and the Lorenz condition is neither: it is their consequence*, by the identity $\sum_{\mu,\nu}\partial_\mu\partial_\nu F_{\nu\mu}=0$. The action therefore explains the block's phrase that the free incompressibility is the mass's gift: without the mass the identity has nothing to balance, and the condition does not arise.
+*Second, the density's variation and the direction's variation are the longitudinal and transverse parts of the field equation, and the Lorenz condition is neither: it is their consequence*, by the identity $\sum_{\imath,\jmath}\partial_{\imath}\partial_{\jmath} F_{\jmath\imath}=0$. The action therefore explains the block's phrase that the free incompressibility is the mass's gift: without the mass the identity has nothing to balance, and the condition does not arise.
 
 *Third, this is the only action in the layer with no $\frac{h}{2\pi}$ in its derivative term, and correspondingly the only fluid in the block whose acceleration law has no quantum force.* The polar decomposition of a vector field produces no second derivative of the magnitude, and the action says why: $A=ru$ has one derivative and the Lagrangian is quadratic in it.
 
@@ -14,16 +14,16 @@ Position in the block. This is the variational companion of [The Spin-One Fluid]
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. $A_\mu=r\,u_\mu$ with $r>0$ and $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$; the temporal slot carries the $i$, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-r^{2}$. No index is raised: a contraction names its summed index, weighted by $\varepsilon_\mu$ wherever a value is displayed. $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $k_m=\frac{2\pi mc}{h}$; $\mathcal L=-\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_\nu\partial_\nu F_{\nu\mu}=k_m^{2}A_\mu$. The transverse derivative is $\nabla_\mu=\sum_\nu\mathsf{P}_{\mu\nu}\partial_\nu$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$.
+The conventions are restated here so that every sign below is checkable from this page alone. $A_{\imath}=r\,u_{\imath}$ with $r>0$ and $\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}=-1$; the temporal slot carries the $i$, so $\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}=-r^{2}$. No index is raised: a contraction names its summed index, weighted by $\varepsilon_{\imath}$ wherever a value is displayed. $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$; $k_m=\frac{2\pi mc}{h}$; $\mathcal L=-\frac14\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}-\frac{k_m^{2}}{2}\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=k_m^{2}A_{\imath}$. The transverse derivative is $\nabla_{\imath}=\sum_{\jmath}\mathsf{P}_{\imath\jmath}\partial_{\jmath}$ with $\mathsf{P}_{\imath\jmath}=g_{\imath\jmath}+u_{\imath} u_{\jmath}$.
 
 ## The Action in the Field's Own Variables
 
 One substitution, and the field strength splits into a magnitude's part and a direction's part. Since $A=ru$,
 
 $$
-F_{\mu\nu}=r\,\omega_{\mu\nu}+\bigl(\partial_\mu r\bigr)u_\nu-\bigl(\partial_\nu r\bigr)u_\mu,
+F_{\imath\jmath}=r\,\omega_{\imath\jmath}+\bigl(\partial_{\imath} r\bigr)u_{\jmath}-\bigl(\partial_{\jmath} r\bigr)u_{\imath},
 \qquad
-\omega_{\mu\nu}=\partial_\mu u_\nu-\partial_\nu u_\mu .
+\omega_{\imath\jmath}=\partial_{\imath} u_{\jmath}-\partial_{\jmath} u_{\imath} .
 $$
 
 Three pieces, and each has a name in the fluid's language. The first is the direction's vorticity times the density; the second and third are the density's gradient wedged with the velocity. The field strength therefore carries two independent objects: the flow's vorticity and the density's gradient, and the spin-one fluid is the only one in this layer whose field strength is made of the fluid's own derivatives rather than of a potential's.
@@ -31,28 +31,28 @@ Three pieces, and each has a name in the fluid's language. The first is the dire
 The Lagrangian, with the mass term expanded.
 
 $$
-\mathcal L=\frac{1}{2}\Bigl[\sum_\mu\bigl(\partial_\mu r\bigr)^{2}-\bigl(\sum_\mu\varepsilon_\mu u_\mu\partial_\mu r\bigr)^{2}\Bigr]-\frac{r^{2}}{4}\sum_{\mu,\nu}\omega_{\mu\nu}\omega_{\mu\nu}-\sum_{\mu,\nu}\varepsilon_\mu\,r\,\omega_{\mu\nu}\bigl(\partial_\mu r\bigr)u_\nu+\frac{k_m^{2}}{2}r^{2},
+\mathcal L=\frac{1}{2}\Bigl[\sum_{\imath}\bigl(\partial_{\imath} r\bigr)^{2}-\bigl(\sum_{\imath}\varepsilon_{\imath} u_{\imath}\partial_{\imath} r\bigr)^{2}\Bigr]-\frac{r^{2}}{4}\sum_{\imath,\jmath}\omega_{\imath\jmath}\omega_{\imath\jmath}-\sum_{\imath,\jmath}\varepsilon_{\imath}\,r\,\omega_{\imath\jmath}\bigl(\partial_{\imath} r\bigr)u_{\jmath}+\frac{k_m^{2}}{2}r^{2},
 $$
 
 obtained by expanding $-\frac14F^{2}$ and using $u^{2}=-1$. Four terms: the density's gradient energy, the vorticity's energy, a cross term, and the mass.
 
-**The cross term is what makes the free spin-one fluid's acceleration law as short as the block's.** $a_\mu=-\nabla_\mu\ln r-r^{-1}E_\mu$ has no quantum force because the two pieces of $F$ are first derivatives and no second derivative of $r$ survives the variation; the cross term is where the density's gradient and the vorticity meet, and it is the term that turns the field equation into a statement about the flow's acceleration.
+**The cross term is what makes the free spin-one fluid's acceleration law as short as the block's.** $a_{\imath}=-\nabla_{\imath}\ln r-r^{-1}E_{\imath}$ has no quantum force because the two pieces of $F$ are first derivatives and no second derivative of $r$ survives the variation; the cross term is where the density's gradient and the vorticity meet, and it is the term that turns the field equation into a statement about the flow's acceleration.
 
 There is no $\frac{h}{2\pi}$ anywhere in the derivative terms. The only place the quantum of action appears is inside $k_m$. So this rung's fluid is not a Madelung fluid: it is a classical field read as a medium, and the block's article says as much by giving an acceleration law with no quantum potential.
 
 ## The Variation: The Two Variations and the Multiplier
 
-The density's variation is the field equation contracted with the flow, and the direction's variation is its transverse part. That is the cleanest way to state the pair, and it follows from the split of $\delta A_\mu=u_\mu\,\delta r+r\,\delta u_\mu$ into a longitudinal and a transverse piece.
+The density's variation is the field equation contracted with the flow, and the direction's variation is its transverse part. That is the cleanest way to state the pair, and it follows from the split of $\delta A_{\imath}=u_{\imath}\,\delta r+r\,\delta u_{\imath}$ into a longitudinal and a transverse piece.
 
-The $r$ variation gives $\sum_\mu\varepsilon_\mu u_\mu(\sum_\nu\partial_\nu F_{\nu\mu}-k_m^{2}A_\mu)=0$, since $\partial F/\partial r$ along $u$ is the contraction; the $\delta u$ variation, restricted to $u\cdot\delta u=0$, gives the transverse part, $\sum_\nu\mathsf{P}_{\mu\nu}(\sum_\lambda\partial_\lambda F_{\lambda\nu}-k_m^{2}A_\nu)=0$. The two together are the field equation and neither alone is.
+The $r$ variation gives $\sum_{\imath}\varepsilon_{\imath} u_{\imath}(\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}-k_m^{2}A_{\imath})=0$, since $\partial F/\partial r$ along $u$ is the contraction; the $\delta u$ variation, restricted to $u\cdot\delta u=0$, gives the transverse part, $\sum_{\jmath}\mathsf{P}_{\imath\jmath}(\sum_\lambda\partial_\lambda F_{\lambda\jmath}-k_m^{2}A_{\jmath})=0$. The two together are the field equation and neither alone is.
 
-**The unit condition is the one place in this layer where a multiplier is genuinely needed.** The word's parameterisation absorbs the unit conditions of the boost and the rotor — a unit element is invertible for every value of its parameters — but the Proca direction is invertible by declaration and not by parameterisation: $u_\mu$ is three functions subject to one constraint, and the constraint must be imposed. Written with a multiplier,
+**The unit condition is the one place in this layer where a multiplier is genuinely needed.** The word's parameterisation absorbs the unit conditions of the boost and the rotor — a unit element is invertible for every value of its parameters — but the Proca direction is invertible by declaration and not by parameterisation: $u_{\imath}$ is three functions subject to one constraint, and the constraint must be imposed. Written with a multiplier,
 
 $$
-\mathcal L_{\lambda}=\mathcal L+\lambda\bigl(\sum_\mu\varepsilon_\mu u_\mu u_\mu+1\bigr),
+\mathcal L_{\lambda}=\mathcal L+\lambda\bigl(\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}+1\bigr),
 $$
 
-and the multiplier enters the direction's equation as $\lambda u_\mu$, which is a force along the flow. It plays the part a pressure plays in an incompressible fluid, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.
+and the multiplier enters the direction's equation as $\lambda u_{\imath}$, which is a force along the flow. It plays the part a pressure plays in an incompressible fluid, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.
 
 The contrast with the spin article is worth recording. There the parameterisation removed the need for a multiplier and the constraints appeared as vanishing momenta; here the parameterisation cannot remove it and the constraints appear as a projection. The difference is that a unit rotor has three parameters and a unit vector has two plus one constraint: the word's frame is a group element, and a direction is a coset.
 
@@ -71,28 +71,28 @@ The contrast with the spin article is why the section exists. There the paramete
 The Euler–Lagrange equation is the field equation, and its divergence is an identity on one side.
 
 $$
-\sum_\nu\partial_\nu F_{\nu\mu}=k_m^{2}A_\mu
+\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=k_m^{2}A_{\imath}
 \qquad\Longrightarrow\qquad
-0=\sum_{\mu,\nu}\partial_\mu\partial_\nu F_{\nu\mu}=k_m^{2}\sum_\mu\partial_\mu A_\mu,
+0=\sum_{\imath,\jmath}\partial_{\imath}\partial_{\jmath} F_{\jmath\imath}=k_m^{2}\sum_{\imath}\partial_{\imath} A_{\imath},
 $$
 
 because $F$ is antisymmetric. **The Lorenz condition is therefore a consequence of the equation and not a condition imposed on it, and it exists exactly when $k_m\ne0$.**
 
-The same term removes the gauge freedom. With $k_m=0$ the action is invariant under $A_\mu\mapsto A_\mu+\partial_\mu\Gamma$; with $k_m\ne0$ it is not, because the mass term is not. One term supplies the condition and destroys the freedom the condition replaces, and the two statements are the same statement seen from two sides: a massless vector has a redundancy and no condition, a massive one has a condition and no redundancy, and the count of physical components is the same in both cases.
+The same term removes the gauge freedom. With $k_m=0$ the action is invariant under $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$; with $k_m\ne0$ it is not, because the mass term is not. One term supplies the condition and destroys the freedom the condition replaces, and the two statements are the same statement seen from two sides: a massless vector has a redundancy and no condition, a massive one has a condition and no redundancy, and the count of physical components is the same in both cases.
 
-In the fluid's variables the condition is continuity. With $A_\mu=r\,u_\mu$,
+In the fluid's variables the condition is continuity. With $A_{\imath}=r\,u_{\imath}$,
 
 $$
-\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=0
+\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} A_{\imath}=0
 \qquad\Longleftrightarrow\qquad
-\sum_\mu\varepsilon_\mu\partial_\mu\bigl(r\,u_\mu\bigr)=0,
+\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}\bigl(r\,u_{\imath}\bigr)=0,
 $$
 
-which is the continuity equation for a density $r$ and a velocity $u_\mu$. The spin-one fluid therefore has a continuity equation that is not an equation of motion: it is the integrability of the field equation, and it disappears with the mass.
+which is the continuity equation for a density $r$ and a velocity $u_{\imath}$. The spin-one fluid therefore has a continuity equation that is not an equation of motion: it is the integrability of the field equation, and it disappears with the mass.
 
-The block's phrase is exact and the action explains it. [The Spin-One Fluid](the-spin-one-fluid.html) finds that the fluid's free incompressibility is the mass's gift. The action's version: nothing in the derivative terms forces $\sum_\mu\partial_\mu(ru_\mu)$ to vanish, and the identity $\sum_{\mu,\nu}\partial_\mu\partial_\nu F_{\nu\mu}=0$ has no right-hand side to balance until the mass supplies one. The incompressibility is not a property of the flow; it is a property of the pair $(r,u)$ and of the mass.
+The block's phrase is exact and the action explains it. [The Spin-One Fluid](the-spin-one-fluid.html) finds that the fluid's free incompressibility is the mass's gift. The action's version: nothing in the derivative terms forces $\sum_{\imath}\partial_{\imath}(ru_{\imath})$ to vanish, and the identity $\sum_{\imath,\jmath}\partial_{\imath}\partial_{\jmath} F_{\jmath\imath}=0$ has no right-hand side to balance until the mass supplies one. The incompressibility is not a property of the flow; it is a property of the pair $(r,u)$ and of the mass.
 
-And the flow's own expansion is not zero. Differentiating $ru_\mu$ gives $\sum_\mu\varepsilon_\mu\partial_\mu u_\mu=-\sum_\mu\varepsilon_\mu u_\mu\partial_\mu\ln r$, so the velocity's divergence is the density's logarithmic derivative along the flow. The divergence-free object is the field, and reading it as continuity is what makes the density and the velocity into a fluid's.
+And the flow's own expansion is not zero. Differentiating $ru_{\imath}$ gives $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} u_{\imath}=-\sum_{\imath}\varepsilon_{\imath} u_{\imath}\partial_{\imath}\ln r$, so the velocity's divergence is the density's logarithmic derivative along the flow. The divergence-free object is the field, and reading it as continuity is what makes the density and the velocity into a fluid's.
 
 ## The Noether Currents: Stress, Spin and No Charge
 
@@ -110,7 +110,7 @@ Three statements, and the block makes each of them in the equations' language.
 
 *The vorticity is the direction's, and it is not the field strength.* $\omega=\mathrm{d}u$ and $F=r\,\mathrm{d}u+\mathrm{d}r\wedge u$, so the field strength carries the vorticity plus the density's gradient, and only in a region of constant density are the two the same object. The block's article states the vorticity and the self-dual split; the action states the decomposition that produces both.
 
-*The rank of $\omega$ is two, and the reason is the dimension of the rest space.* The vorticity of a congruence is the curl projected onto the plane orthogonal to the flow, $\omega^{\perp}_{\mu\nu}=\sum_{\alpha,\beta}\mathsf{P}_{\mu\alpha}\mathsf{P}_{\nu\beta}\omega_{\alpha\beta}$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$: $\omega^{\perp}$ annihilates $u$ by construction, and a two-form supported on three dimensions is simple, so its rank is at most two and is two wherever the vorticity is non-zero. The raw curl is a different object, and its contraction with the flow is the acceleration: $\sum_\nu\varepsilon_\nu\omega_{\mu\nu}u_\nu=-a_\mu$, so $\mathrm{d}u$ is neither transverse nor always simple — the block's sentence that $\omega\wedge\omega=0$ for every invertible element timelike flow holds for $\omega^{\perp}$ and not for $\mathrm{d}u$. The first-order charged fluid has rank two for the other reason, that a three-vector curl cannot make a four-dimensional two-form; the spinor fluid's is rank two for every solution, as its own article establishes.
+*The rank of $\omega$ is two, and the reason is the dimension of the rest space.* The vorticity of a congruence is the curl projected onto the plane orthogonal to the flow, $\omega^{\perp}_{\imath\jmath}=\sum_{\alpha,\beta}\mathsf{P}_{\imath\alpha}\mathsf{P}_{\jmath\beta}\omega_{\alpha\beta}$ with $\mathsf{P}_{\imath\jmath}=g_{\imath\jmath}+u_{\imath} u_{\jmath}$: $\omega^{\perp}$ annihilates $u$ by construction, and a two-form supported on three dimensions is simple, so its rank is at most two and is two wherever the vorticity is non-zero. The raw curl is a different object, and its contraction with the flow is the acceleration: $\sum_{\jmath}\varepsilon_{\jmath}\omega_{\imath\jmath}u_{\jmath}=-a_{\imath}$, so $\mathrm{d}u$ is neither transverse nor always simple — the block's sentence that $\omega\wedge\omega=0$ for every invertible element timelike flow holds for $\omega^{\perp}$ and not for $\mathrm{d}u$. The first-order charged fluid has rank two for the other reason, that a three-vector curl cannot make a four-dimensional two-form; the spinor fluid's is rank two for every solution, as its own article establishes.
 
 *The equation of state is the mass term's, and the action shows it as the only term without a derivative.* The mass term $\frac{k_m^{2}}{2}r^{2}$ is the one term in the action that carries the density and no gradient, and it fixes the pressure in one line: the energy density it contributes is $\epsilon=\frac{k_m^{2}}{2}r^{2}$ and the force it exerts is $-\vec\nabla_\Phi\ln r$, so $\mathrm{d}p/(\epsilon+p)=\mathrm{d}\ln r$ and $p=\epsilon$. **A spin-one fluid is stiff, and the stiffness is the mass's**, which is the block's reading of the acceleration law; the action's addition is that no other law is available, because no other term of the action is free of derivatives.
 
@@ -118,7 +118,7 @@ Three statements, and the block makes each of them in the equations' language.
 
 Adds. The mass term's double role, stated once: it removes the gauge freedom and supplies the condition that replaces it, and in the fluid's variables that condition is continuity. The pair of variations as the field equation's longitudinal and transverse parts, with the Lorenz condition as their consequence by an identity. The multiplier's necessity and its reading as a pressure. The decomposition of the field strength into vorticity and density gradient. And the reason this rung has no quantum force: the action has no second derivative of the magnitude.
 
-Does not add. No new equation: the four components are the field's. No new current: the Proca current is $k_m^{2}A_\mu$ up to the normalisation, and it is the field. No gauge invariance to discuss, because the mass removed it. No thermodynamics, and no quantum potential, since this rung has none. And no statement about the massless limit's fluid reading, which the block's article explicitly denies.
+Does not add. No new equation: the four components are the field's. No new current: the Proca current is $k_m^{2}A_{\imath}$ up to the normalisation, and it is the field. No gauge invariance to discuss, because the mass removed it. No thermodynamics, and no quantum potential, since this rung has none. And no statement about the massless limit's fluid reading, which the block's article explicitly denies.
 
 The one thing the action says that the equations cannot. The Lorenz condition, the loss of gauge freedom, the continuity equation and the stiffness of the flow are four statements about four different objects, and in the action they are one term. That is the strongest case in the layer for writing the fluid's Lagrangian: not a new result, but the location of four results in one coefficient.
 
@@ -146,9 +146,9 @@ The multiplier's sign. $\lambda$ is determined by the equations and its sign is 
 
 ## Summary
 
-The action. $\mathcal L=\frac12[(\partial r)^{2}-(u\cdot\partial r)^{2}]-\frac{r^{2}}{4}\omega^{2}-\sum_{\mu,\nu}\varepsilon_\mu r\,\omega_{\mu\nu}\partial_\mu r\,u_\nu+\frac{k_m^{2}}{2}r^{2}$, with $A=ru$ and $u^{2}=-1$.
+The action. $\mathcal L=\frac12[(\partial r)^{2}-(u\cdot\partial r)^{2}]-\frac{r^{2}}{4}\omega^{2}-\sum_{\imath,\jmath}\varepsilon_{\imath} r\,\omega_{\imath\jmath}\partial_{\imath} r\,u_{\jmath}+\frac{k_m^{2}}{2}r^{2}$, with $A=ru$ and $u^{2}=-1$.
 
-The mass term. It removes the gauge freedom, supplies the Lorenz condition, and in the fluid's variables that condition is continuity $\sum_\mu\partial_\mu(ru_\mu)=0$. One term, four statements.
+The mass term. It removes the gauge freedom, supplies the Lorenz condition, and in the fluid's variables that condition is continuity $\sum_{\imath}\partial_{\imath}(ru_{\imath})=0$. One term, four statements.
 
 The variations. The density's is the field equation's longitudinal part, the direction's its transverse part, and the Lorenz condition is their consequence by $\partial\partial F=0$.
 
@@ -160,16 +160,16 @@ The quantum sector. Absent: no $\frac{h}{2\pi}$ in the derivative terms, no quan
 
 | Symbol | Meaning |
 |---|---|
-| $A_\mu=r\,u_\mu$ | The field in the fluid's variables; $r$ the density, $u$ the velocity |
+| $A_{\imath}=r\,u_{\imath}$ | The field in the fluid's variables; $r$ the density, $u$ the velocity |
 | $r>0$ | Density; the field's magnitude |
-| $u_\mu$, $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$ | Unit four-velocity; three functions and one constraint |
-| $\omega_{\mu\nu}=\partial_\mu u_\nu-\partial_\nu u_\mu$ | The raw curl, whose contraction with $u$ is $-a_\mu$; its projection $\omega^{\perp}$ is the vorticity and is rank two |
-| $F_{\mu\nu}=r\omega_{\mu\nu}+\partial_\mu r\,u_\nu-\partial_\nu r\,u_\mu$ | The field strength; vorticity plus density gradient |
+| $u_{\imath}$, $\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}=-1$ | Unit four-velocity; three functions and one constraint |
+| $\omega_{\imath\jmath}=\partial_{\imath} u_{\jmath}-\partial_{\jmath} u_{\imath}$ | The raw curl, whose contraction with $u$ is $-a_{\imath}$; its projection $\omega^{\perp}$ is the vorticity and is rank two |
+| $F_{\imath\jmath}=r\omega_{\imath\jmath}+\partial_{\imath} r\,u_{\jmath}-\partial_{\jmath} r\,u_{\imath}$ | The field strength; vorticity plus density gradient |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number; the only place $\frac{h}{2\pi}$ appears |
-| $\nabla_\mu=\sum_\nu\mathsf{P}_{\mu\nu}\partial_\nu$ | Transverse derivative; $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$ |
+| $\nabla_{\imath}=\sum_{\jmath}\mathsf{P}_{\imath\jmath}\partial_{\jmath}$ | Transverse derivative; $\mathsf{P}_{\imath\jmath}=g_{\imath\jmath}+u_{\imath} u_{\jmath}$ |
 | $\lambda$ | Multiplier of the unit condition; a pressure |
-| $E_\mu=\sum_\nu\varepsilon_\nu F_{\mu\nu}u_\nu$ | The electric part along the flow |
-| $a_\mu=\sum_\nu\varepsilon_\nu u_\nu\partial_\nu u_\mu$ | The flow's acceleration |
+| $E_{\imath}=\sum_{\jmath}\varepsilon_{\jmath} F_{\imath\jmath}u_{\jmath}$ | The electric part along the flow |
+| $a_{\imath}=\sum_{\jmath}\varepsilon_{\jmath} u_{\jmath}\partial_{\jmath} u_{\imath}$ | The flow's acceleration |
 | $\mathcal L$ | The Proca Lagrangian in the fluid variables |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 

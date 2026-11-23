@@ -4,7 +4,7 @@
 
 The polar parent has a table of what the chart shows and what it hides, and one row of that table is wrong. *The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables* writes, at §*What the Chart Shows and What It Hides*, that "$\tilde F$ does not appear in the pair at all", and calls this "the sharpest statement of what a coordinate system can and cannot show". The chart does show the field strength: its own §*The Current, the Vorticity and the Flux* computes $\vec\nabla_\Phi\times(\vec p-q\vec A)=ϙ\vec B$ exactly. What the chart cannot show is the fork between the two coupled equations, and that is a different property with a different reason.
 
-The polar form's second-order object is a modulus squared, $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big]$, and a modulus squared differentiates to one covariant derivative composed with its own adjoint. That is the squared reading of the covariant square, with the same charge in both factors. The paired reading needs two opposite charges once each, and a modulus cannot supply two charges: it has one.
+The polar form's second-order object is a modulus squared, $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\big]$, and a modulus squared differentiates to one covariant derivative composed with its own adjoint. That is the squared reading of the covariant square, with the same charge in both factors. The paired reading needs two opposite charges once each, and a modulus cannot supply two charges: it has one.
 
 So the chart is the chart of one equation, and the article says which. Its dispersion is the mass shell in the mechanical four-momentum, and in the mechanical variables the squared reading is *exactly* free while the paired reading keeps a residual linear in the frequency. Measured at $k_t'=2.770584$: the mechanical variable is $3.080584$, the squared reading's residual at that point is $0.0$, and the paired reading's residual is $-1.909962$, which is $2c_t$ times the mechanical frequency.
 
@@ -26,13 +26,13 @@ $$
 \tilde K_\Phi=ik_t'e_t+\vec k_\Phi .
 $$
 
-$c_\mu=\frac{2\pi iϙ}{h}A_\mu$ gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_\eta=i\frac{2\pi ϙ}{h}A_\eta$ imaginary; the free slot symbols are $\sigma_t=-k_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary; and the mechanical four-momentum is $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$, whose temporal slot is $E+ϙc\,a_t'$ and whose spatial slots are $\vec p-q\vec A$.
+$c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_\eta=i\frac{2\pi ϙ}{h}A_\eta$ imaginary; the free slot symbols are $\sigma_t=-k_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary; and the mechanical four-momentum is $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$, whose temporal slot is $E+ϙc\,a_t'$ and whose spatial slots are $\vec p-q\vec A$.
 
 The transform does not carry a material-sector field to an informational-sector one. A symbol exists only at constant coefficients. **And a Legendre transform is not a Fourier transform**: the polar variational parent's four momenta are conjugates to the field's own parameters at each event, so they are not wave numbers, and nothing below reads them as one. This is the only place the third denial is stated.
 
 ## The Bracket Is One Charge Squared
 
-The parent's identity is $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{2\pi iϙ}{h}A_\mu$, so on a central field the bracket is $(\partial_\mu\ln \varrho)+i(\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\mu)$ and the two real equations are its real and imaginary parts. The modulus of that bracket is the density times the mechanical four-momentum, and the square of the modulus is the kinetic term of every functional in the family.
+The parent's identity is $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi+\frac{2\pi iϙ}{h}A_{\imath}$, so on a central field the bracket is $(\partial_{\imath}\ln \varrho)+i(\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath})$ and the two real equations are its real and imaginary parts. The modulus of that bracket is the density times the mechanical four-momentum, and the square of the modulus is the kinetic term of every functional in the family.
 
 Varying $\int\bigl\lvert(\partial_{R_t}+c_t)\Xi\bigr\rvert^{2}$ with respect to $\Xi^{*}$ returns $(\partial_{R_t}+c_t)^{2}\Xi$; that is the squared reading, and it is a statement about differentiation and not about the chart's coordinates. Whatever coordinates the field is written in, the functional that the chart's bracket belongs to produces the same operator, because the operator is the functional's own variation and the coordinates are a bijection.
 
@@ -43,7 +43,7 @@ Writing $S_{\mathrm{p}}$ for the chart's kinetic functional,
 $$
 \boxed{\;
 \frac{\delta S_{\mathrm{p}}}{\delta\tilde\Xi^{*}}
-=\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\tilde\Xi
+=\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\tilde\Xi
 \;}
 $$
 
@@ -124,10 +124,10 @@ What the chart is silent on, it is silent on for one reason: its functionals are
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word; on a central field, $\varrho\,e^{i\theta_{\mathrm{pha}}}$ |
-| $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ | The covariant bracket: one additive central term |
+| $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$ | The covariant bracket: one additive central term |
 | $S_{\mathrm{p}}$ | The chart's kinetic functional, a modulus squared |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\tilde\Xi$ | The operator $S_{\mathrm{p}}$ produces: the squared reading |
-| $c_\mu=\frac{2\pi iϙ}{h}A_\mu$ | The per-slot coefficient; $c_t$ real, $c_\eta$ imaginary |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\tilde\Xi$ | The operator $S_{\mathrm{p}}$ produces: the squared reading |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot coefficient; $c_t$ real, $c_\eta$ imaginary |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | The mechanical four-momentum; the chart's variable |
 | $\vec\nabla_\Phi\times(\vec p-q\vec A)=ϙ\vec B$ | The vorticity: the field strength the chart shows |
 | $k_t'^{\mathrm{mech}}=k_t'-c_t$ | The mechanical frequency; the squared shell is free in it |

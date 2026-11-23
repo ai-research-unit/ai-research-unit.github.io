@@ -26,7 +26,7 @@ What this article does not do, stated in the first section because it is the fir
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector, where the potential lives; the gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=ir'_t$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector, where the potential lives; the gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=ir'_t$.
 
 The medium enters through two constants. The permittivity is $\epsilon$ and the permeability $\mu$, both positive, and $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, so the vacuum is the case $\epsilon=\epsilon_0$, $\mu=\mu_0$. The field strength carries the normalisation
 
@@ -143,7 +143,7 @@ Why there is no charge. A central phase rotation $\tilde A_\Phi\mapsto e^{i\thet
 
 Where the charge and its sign come from. From the source. Once a charged matter action is added, the total action is invariant under the local phase only if the connection shifts, and the current is what the connection multiplies. Its sign is then the sign of the matter field's charge, fixed once in the coupled article that derives it, and the field equation's sign is fixed by the same constant. The free field has no sign to fix, and saying so is more useful than manufacturing one.
 
-The stress's conservation. $\partial_\mu T_{\mu\nu}=0$ on solutions is the divergence of the field equation contracted with $\tilde F$, the standard identity; it holds for the free field and it is not an extra assumption.
+The stress's conservation. $\partial_{\imath} T_{\imath\jmath}=0$ on solutions is the divergence of the field equation contracted with $\tilde F$, the standard identity; it holds for the free field and it is not an extra assumption.
 
 ## What the Principle Adds and What It Relabels
 
@@ -168,18 +168,18 @@ $$
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $\mathbb{B}_\Phi$ | Anti-Hermitian sector, where the potential lives |
 | $^{*},\ ^{\natural}$ | Hermitian and quaternion conjugation |
 | $\mathrm{Sc},\ \mathrm{Vect}$ | Scalar part; pure-vector part |
 | $\epsilon,\ \mu$ | Permittivity and permeability of the medium |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
-| $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ | Four-potential, anti-Hermitian |
+| $\tilde A_\Phi=\sum_{\imath} A_{\imath} e_{\imath}$ | Four-potential, anti-Hermitian |
 | $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field strength, pure vector |
 | $\tilde J_\Phi=ic\rho\,e_t+\vec J$ | Four-current |
 | $\vec D=\epsilon\vec E,\ \vec B=\mu\vec H$ | Displacement and induction |
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |
-| $T_{\mu\nu}$ | Energy–momentum tensor |
+| $T_{\imath\jmath}$ | Energy–momentum tensor |
 | $\Lambda$ | Gauge parameter, a real scalar |
 
 ## Further Reading

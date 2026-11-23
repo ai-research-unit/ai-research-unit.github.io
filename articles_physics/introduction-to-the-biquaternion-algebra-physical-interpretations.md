@@ -387,8 +387,8 @@
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, of complex dimension four and real dimension eight |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the quaternion basis, $e_t$ the unit and $\vec e_x,\vec e_y,\vec e_z$ the vector units |
 | $i$ | the central imaginary unit, $i^{2}=-1$ |
-| $\tilde Q=\sum_\mu Q_\mu e_\mu$ | a general element, with complex coefficients $Q_\mu$ |
-| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the quaternionic norm, the form that carries the interval |
+| $\tilde Q=\sum_{\imath} Q_{\imath} e_{\imath}$ | a general element, with complex coefficients $Q_{\imath}$ |
+| $\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$ | the quaternionic norm, the form that carries the interval |
 | $\tilde Q^{*}$ | the Hermitian conjugation, the anti-automorphism of the plain product |
 | $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the N norm, the form whose vanishing is N degeneracy |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the material and the informational sectors, the anti-Hermitian and the Hermitian halves |

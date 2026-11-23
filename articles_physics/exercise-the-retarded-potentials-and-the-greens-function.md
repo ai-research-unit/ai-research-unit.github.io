@@ -220,7 +220,7 @@ A word on the two retarded-time Jacobians, because the exercise's first trap and
 $$
 S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c}\partial/\partial r'_t\,\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A,
 $$
-which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial R_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}_{\Phi}$ solves $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ and $\Box_\Phi = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$, applying $(\tilde\nabla_\Phi)^{\natural}$ and taking the scalar part gives
+which is the biquaternionic form of $\sum_{\imath}\partial A_{\imath}/\partial R_{\imath}$ and whose vanishing is the Lorenz condition. Since $\tilde{A}_{\Phi}$ solves $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ and $\Box_\Phi = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$, applying $(\tilde\nabla_\Phi)^{\natural}$ and taking the scalar part gives
 $$
 \Box_\Phi S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\,\Box_\Phi\tilde{A}_{\Phi}\right) = -\mu\,\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\right) = -\mu\left(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J\right) = 0,
 $$
@@ -312,7 +312,7 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |

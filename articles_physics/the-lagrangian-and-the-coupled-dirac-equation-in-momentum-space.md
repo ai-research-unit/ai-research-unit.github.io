@@ -208,7 +208,7 @@ The free article's reason is that $\langle\tilde K_\Phi\rangle_{\natural}$ is in
 The number is $\langle i\tilde K_{\Phi,\mathrm{gco}}\rangle_{\natural}-k_m^{2}=\pi^{2}-k_m^{2}$. The norm is $\pi^{2}$ with
 
 $$
-\pi_\mu=\frac{h}{2\pi} k_\mu+ϙA_\mu ,
+\pi_{\imath}=\frac{h}{2\pi} k_{\imath}+ϙA_{\imath} ,
 \qquad
 \pi^{2}=\pi_t^{2}-\vec\pi^{2}=\frac{(2\pi)^{2} p'^{2}}{h^{2}},
 $$
@@ -294,9 +294,9 @@ A pairing of a field with its conjugate is invariant under any phase; a square o
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
-=\sum_\mu\tilde\nabla_{\Phi,\mathrm{gco},\mu}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F ,
+=\sum_{\imath}\tilde\nabla_{\Phi,\mathrm{gco},\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F ,
 \qquad
-\bigl[\tilde\nabla_{\mathrm{gco},\Phi,\mu},\tilde\nabla_{\mathrm{gco},\Phi,\nu}\bigr]=\frac{2\pi i\,ϙ}{h}\tilde F_{\mu\nu},
+\bigl[\tilde\nabla_{\mathrm{gco},\Phi,\imath},\tilde\nabla_{\mathrm{gco},\Phi,\jmath}\bigr]=\frac{2\pi i\,ϙ}{h}\tilde F_{\imath\jmath},
 $$
 
 and it is the parent's, checked there to $1.1\times10^{-5}$ on a test function.
@@ -312,7 +312,7 @@ measured as a residual of $0.0\times10^{0}$. **A pure vector is $\natural$-antis
 With $\tilde F=0$ the operator is a multiple of the identity, as §*The Second Variation: One Number, for a New Reason* measures. With $\tilde F\neq0$ it is not, and the compatibility condition
 
 $$
-\Bigl(\sum_\mu\tilde\nabla_{\Phi,\mathrm{gco},\mu}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
+\Bigl(\sum_{\imath}\tilde\nabla_{\Phi,\mathrm{gco},\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
 $$
 
 is an equation between elements and not an equation between numbers. That is the precise sense in which the zero-pole relation stops: the free article's relation is between a number and its inverse, and here one of the two is not a number.
@@ -371,7 +371,7 @@ On the shell the mode form vanishes — $3.6\times10^{-15}$ against $-32.554945$
 | $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The symbol of the gradient; temporal slot $+ik_t'$ |
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ | The shifted element; its symbol is $i\tilde K_{\Phi,\mathrm{gco}}$ |
 | $\tilde P'_\Phi=\frac{h}{2\pi}\tilde K_{\Phi,\mathrm{gco}}$ | The kinetic four-momentum |
-| $\pi_\mu=\frac{h}{2\pi} k_\mu+ϙA_\mu$ | The shifted four-momentum; $\pi^{2}=p'^{2}/\frac{h^{2}}{4\pi^{2}}$ |
+| $\pi_{\imath}=\frac{h}{2\pi} k_{\imath}+ϙA_{\imath}$ | The shifted four-momentum; $\pi^{2}=p'^{2}/\frac{h^{2}}{4\pi^{2}}$ |
 | $\mathcal{Q}$ | The mode form: four terms, no derivative, real for every field |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$ | The $\natural$-square; central for every element |
 | $N=\pi^{2}-k_m^{2}$ | The second variation at a mode; one central number |
@@ -401,7 +401,7 @@ On the shell the mode form vanishes — $3.6\times10^{-15}$ against $-32.554945$
 
 With $\tilde\Xi=\tilde\Xi_0e^{i\theta_{\mathrm{pha}}}$ and $\theta_{\mathrm{pha}}=\vec k_\Phi\cdot\vec r-k_t'r_t'$, every product of the field with itself, or with its conjugate, is a constant element times a phase that cancels. So the naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ and the conserved current agree on a single mode in the only respect the test can see: both have zero divergence.
 
-The parent's choice of a superposition is therefore forced and not a preference. The parent evaluates the divergence on "a superposition of two plane waves, so that the cross terms do not vanish by symmetry", and reports that the naive bilinear's divergence is nonzero at the same order as the current. In momentum space the same sentence is a statement about mode pairs: with $\tilde\Xi=\sum_j a_j\tilde\Xi^{(j)}$ the divergence carries, for each pair, the factor $(k^{(j)}-k^{(i)})_\mu$ times the bilinear, so conservation is the statement that every pair's factor times its bilinear vanishes, and a single mode has no pairs.
+The parent's choice of a superposition is therefore forced and not a preference. The parent evaluates the divergence on "a superposition of two plane waves, so that the cross terms do not vanish by symmetry", and reports that the naive bilinear's divergence is nonzero at the same order as the current. In momentum space the same sentence is a statement about mode pairs: with $\tilde\Xi=\sum_j a_j\tilde\Xi^{(j)}$ the divergence carries, for each pair, the factor $(k^{(j)}-k^{(i)})_{\imath}$ times the bilinear, so conservation is the statement that every pair's factor times its bilinear vanishes, and a single mode has no pairs.
 
 That is the momentum-space content of the Ward identity for this theory, and the article states it as a location rather than a formula. The charge's conservation is not a property of any mode; it is a property of the *transition* between two modes. A reader who looks for the conservation in the mode form will not find it, and the reason is structural rather than a gap in the computation.
 

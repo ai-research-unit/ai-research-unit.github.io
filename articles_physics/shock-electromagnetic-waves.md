@@ -81,10 +81,10 @@ where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides o
 The distributional derivative of a discontinuous function acquires a surface term. Let $\tilde U_{\mathrm n}$ be the unit normal to $S$ in the $i r'_t$ convention, $\tilde U_{\mathrm n} = i\digamma_{\mathrm{wav},t}\,e_t + \vec u$ with $\digamma_{\mathrm{wav},t}^2 + \lvert\vec u\rvert^2 = 1$, and let $\delta_S$ be the surface delta distribution. For a spatial surface $\digamma_{\mathrm{wav},t} = 0$, and the normal is the pure $\vec u$. Then
 
 $$
-\partial/\partial R_\mu \tilde{F} = \{\partial/\partial R_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
+\partial/\partial R_{\imath} \tilde{F} = \{\partial/\partial R_{\imath} \tilde{F}\} + [\tilde{F}]_S\, n_{\imath}\, \delta_S,
 $$
 
-where $\{\partial/\partial R_\mu \tilde{F}\}$ denotes the classical derivative away from $S$.
+where $\{\partial/\partial R_{\imath} \tilde{F}\}$ denotes the classical derivative away from $S$.
 
 ### The Jump Condition
 
@@ -404,7 +404,7 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 |---|---|
 | $c = 1/\sqrt{\epsilon\mu}$ | **Speed of light in the medium** (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** (global constant) |
-| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu \partial/\partial R_\mu$ | Biquaternionic gradient |
+| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\imath} \vec e_{\imath} \partial/\partial R_{\imath}$ | Biquaternionic gradient |
 | $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian |
 | $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\digamma_{\mathrm{wav},t} e_t + \vec u$ in the $i r'_t$ convention; the spatial case is the pure $\vec u$ |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |

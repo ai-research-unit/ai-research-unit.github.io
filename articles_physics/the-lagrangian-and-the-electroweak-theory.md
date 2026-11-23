@@ -10,15 +10,15 @@ Why both phases in one article. Because the breaking is a classical statement ab
 
 ## Conventions
 
-The conventions are the corpus's, and they are the ones the menu's convention articles fix. The gauge group is $SU(2)_L\times U(1)_Y$ with couplings $g$ and $g_{\mathrm Y}$; the gauge fields are $W_{\mu,a}$ for $a=1,2,3$ and $B_\mu$; the field strengths are $W_{a,\mu\nu}=\partial_\mu W_{a,\nu}-\partial_\nu W_{a,\mu}+g\epsilon_{abc}W_{b,\mu} W_{c,\nu}$ and $B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu$. The doublet is $\Phi$, a complex two-component column with hypercharge $Y_{\mathrm{hch}}=+\tfrac12$; its covariant derivative is
+The conventions are the corpus's, and they are the ones the menu's convention articles fix. The gauge group is $SU(2)_L\times U(1)_Y$ with couplings $g$ and $g_{\mathrm Y}$; the gauge fields are $W_{\imath,a}$ for $a=1,2,3$ and $B_{\imath}$; the field strengths are $W_{a,\imath\jmath}=\partial_{\imath} W_{a,\jmath}-\partial_{\jmath} W_{a,\imath}+g\epsilon_{abc}W_{b,\imath} W_{c,\jmath}$ and $B_{\imath\jmath}=\partial_{\imath} B_{\jmath}-\partial_{\jmath} B_{\imath}$. The doublet is $\Phi$, a complex two-component column with hypercharge $Y_{\mathrm{hch}}=+\tfrac12$; its covariant derivative is
 
 $$
-D_\mu\Phi=\Bigl(\partial_\mu+i\,g\,\tau_{a}W_{a,\mu}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_\mu\Bigr)\Phi ,
+D_{\imath}\Phi=\Bigl(\partial_{\imath}+i\,g\,\tau_{a}W_{a,\imath}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath}\Bigr)\Phi ,
 $$
 
-with $\tau_{a}=\sigma_{a}/2$ the generators in the doublet, so that $T_3$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T_3+Y$. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\lambda>0$. The measure is $\mathrm{d}^{4}x$; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $(D_\mu\Phi)^{\dagger}D_\mu\Phi=\sum_\mu\varepsilon_\mu(D_\mu\Phi)^{\dagger}D_\mu\Phi$ carries the sign the mostly-minus literature carries; and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
+with $\tau_{a}=\sigma_{a}/2$ the generators in the doublet, so that $T_3$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T_3+Y$. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\lambda>0$. The measure is $\mathrm{d}^{4}x$; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi=\sum_{\imath}\varepsilon_{\imath}(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi$ carries the sign the mostly-minus literature carries; and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
 
-Two conventions, both settled by the corpus. The hypercharge here is $Y$, not the reference tables' $Y_W=2Y$: the corpus writes $Q=T_3+Y$ with $Y_{\mathrm{hch}}=+\tfrac12$, as [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) fixes it and as [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) uses it. Only the product $g_{\mathrm Y}Y$ enters any display, so a reader who arrives with $Y_W$ must halve every hypercharge and change no physical statement. The sign of the coupling in $D_\mu$ is likewise the corpus's, $+ig$; the opposite choice, $-ig$, is the same theory with $g\mapsto-g$, and every mass below is quadratic in $g$ and unchanged.
+Two conventions, both settled by the corpus. The hypercharge here is $Y$, not the reference tables' $Y_W=2Y$: the corpus writes $Q=T_3+Y$ with $Y_{\mathrm{hch}}=+\tfrac12$, as [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) fixes it and as [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) uses it. Only the product $g_{\mathrm Y}Y$ enters any display, so a reader who arrives with $Y_W$ must halve every hypercharge and change no physical statement. The sign of the coupling in $D_{\imath}$ is likewise the corpus's, $+ig$; the opposite choice, $-ig$, is the same theory with $g\mapsto-g$, and every mass below is quadratic in $g$ and unchanged.
 
 **One convention is a warning.** The corpus's biquaternion algebra carries the $U(1)$ connection exactly, and it carries the $SU(2)$ group exactly too: the compact factor is $SU(2)$ itself, the unit real quaternions $\mathrm{Spin}(3)=S^{3}$, so the connection the algebra writes is the one electroweak theory needs. What it does not carry is the way electroweak theory uses that group — a doublet chosen independently of the spin, and a chiral action on one letter. The electroweak articles state both halves. So the displays below are in the component dictionary, which is exact, and the biquaternionic translation is claimed only where the electroweak articles claim it.
 
@@ -27,7 +27,7 @@ Two conventions, both settled by the corpus. The hypercharge here is $Y$, not th
 The unbroken action, in four terms.
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14 W_{a,\mu\nu}W_{a,\mu\nu}-\tfrac14 B_{\mu\nu}B_{\mu\nu}+(D_\mu\Phi)^{\dagger}D_{\mu}\Phi-V(\Phi)+\mathcal{L}_{\mathrm{matter}}\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14 W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14 B_{\imath\jmath}B_{\imath\jmath}+(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi-V(\Phi)+\mathcal{L}_{\mathrm{matter}}\Bigr\},
 $$
 
 with $\mathcal{L}_{\mathrm{matter}}$ the fermion kinetic terms with their covariant derivatives and the Yukawa couplings, which this article names and does not expand.
@@ -39,7 +39,7 @@ The two phases, and why the same action has them. The potential's minimum is at 
 The broken phase, written in the unitary chart. Choose the vacuum $\Phi=\frac{1}{\sqrt{2}}\binom{0}{v+h}$ with $h$ the physical scalar. Then the scalar's gradient term becomes
 
 $$
-(D_\mu\Phi)^{\dagger}D_{\mu}\Phi\supset\frac{v^{2}}{8}\Bigl[g^{2}\bigl((W_{1,\mu})^{2}+(W_{2,\mu})^{2}\bigr)+(gW_{3,\mu}-g_{\mathrm Y}B_\mu)^{2}\Bigr]+\frac{g^{2}v}{2}h\,W^{+}W^{-}+\cdots ,
+(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi\supset\frac{v^{2}}{8}\Bigl[g^{2}\bigl((W_{1,\imath})^{2}+(W_{2,\imath})^{2}\bigr)+(gW_{3,\imath}-g_{\mathrm Y}B_{\imath})^{2}\Bigr]+\frac{g^{2}v}{2}h\,W^{+}W^{-}+\cdots ,
 $$
 
 which is a mass term for the combinations $W^{\pm}=(W_1\mp iW_2)/\sqrt2$ and $Z=(gW_3-g_{\mathrm Y}B)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, and none for $A=(g_{\mathrm Y}B+gW_3)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$. The masses are $m_W=gv/2$, $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}\,v/2$ and $m_A=0$.
@@ -48,23 +48,23 @@ which is a mass term for the combinations $W^{\pm}=(W_1\mp iW_2)/\sqrt2$ and $Z=
 
 ## The Variation
 
-Three variations and the constraint each produces. Varying $W_{a,\mu}$ and $B_\mu$ gives the Yang–Mills and Maxwell equations with the currents of the doublet and the fermions as sources,
+Three variations and the constraint each produces. Varying $W_{a,\imath}$ and $B_{\imath}$ gives the Yang–Mills and Maxwell equations with the currents of the doublet and the fermions as sources,
 
 $$
-D_\mu W_{a,\mu\nu}=J_{a,\nu},
+D_{\imath} W_{a,\imath\jmath}=J_{a,\jmath},
 \qquad
-\partial_\mu B_{\mu\nu}=J^{Y}_{\nu},
+\partial_{\imath} B_{\imath\jmath}=J^{Y}_{\jmath},
 $$
 
 with the covariant divergence on the left because the field strength is non-Abelian. Varying $\Phi^{\dagger}$ gives the covariant Klein–Gordon equation with the potential's derivative,
 
 $$
-D_\mu D_{\mu}\Phi=-\frac{\partial V}{\partial\Phi^{\dagger}} ,
+D_{\imath} D_{\imath}\Phi=-\frac{\partial V}{\partial\Phi^{\dagger}} ,
 $$
 
 and varying the fermions gives their covariant Dirac equations.
 
-The constraint. Take the time component of the gauge equations and the divergence of their spatial part. The $\mu=0$ components are Gauss's law for each generator, four constraints and not evolution equations; the divergence of the spatial equations reproduces them, because the currents are covariantly conserved by the matter equations. The non-Abelian case adds a term: the current's conservation is $D_\mu J_{a,\mu}=0$ with the connection in the derivative, and the constraint's consistency uses exactly that.
+The constraint. Take the time component of the gauge equations and the divergence of their spatial part. The $\mu=0$ components are Gauss's law for each generator, four constraints and not evolution equations; the divergence of the spatial equations reproduces them, because the currents are covariantly conserved by the matter equations. The non-Abelian case adds a term: the current's conservation is $D_{\imath} J_{a,\imath}=0$ with the connection in the derivative, and the constraint's consistency uses exactly that.
 
 The boundary term. Each variation is first or second order as its parent is; the gauge variations are second order and their surface terms are killed by holding the field and its normal derivative fixed. The scalar's variation is second order and the same condition applies.
 
@@ -84,7 +84,7 @@ Why the constraint is not the gauge choice. As in the Maxwell article, the const
 
 The claim. $m_W=gv/2$ and $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}\,v/2$ are not free parameters of the broken action. They are the coefficients that the scalar's gradient term produces when the doublet is expanded about its minimum, and each is a product of one coupling and one number.
 
-The hand check. Expand $\Phi=\frac{1}{\sqrt2}\binom{0}{v}$ in the gradient term. The term is $(D_\mu\Phi)^{\dagger}D_{\mu}\Phi$, with the $1/\sqrt2$ already inside $\Phi$; the $W$ parts give $\frac{g^{2}v^{2}}{8}[(W_1)^{2}+(W_2)^{2}]$, which is $\frac12 m_W^{2}(W_1W_1+W_2W_2)$ with $m_W=gv/2$; the neutral part gives $\frac{v^{2}}{8}(gW_3-g_{\mathrm Y}B)^{2}=\frac12 m_Z^{2}Z^{2}$ with $m_Z^{2}=(g^{2}+g_{\mathrm Y}^{2})v^{2}/4$. The massless combination is orthogonal to $Z$ and reads $A=(g_{\mathrm Y}B+gW_3)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, the photon.
+The hand check. Expand $\Phi=\frac{1}{\sqrt2}\binom{0}{v}$ in the gradient term. The term is $(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi$, with the $1/\sqrt2$ already inside $\Phi$; the $W$ parts give $\frac{g^{2}v^{2}}{8}[(W_1)^{2}+(W_2)^{2}]$, which is $\frac12 m_W^{2}(W_1W_1+W_2W_2)$ with $m_W=gv/2$; the neutral part gives $\frac{v^{2}}{8}(gW_3-g_{\mathrm Y}B)^{2}=\frac12 m_Z^{2}Z^{2}$ with $m_Z^{2}=(g^{2}+g_{\mathrm Y}^{2})v^{2}/4$. The massless combination is orthogonal to $Z$ and reads $A=(g_{\mathrm Y}B+gW_3)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, the photon.
 
 What follows without a further assumption. The ratio $m_W/m_Z=\cos\theta_W$ with $\tan\theta_W=g_{\mathrm Y}/g$; the photon's masslessness, because $A$ is the direction the doublet does not see; and the $W$'s and $Z$'s coupling to the scalar, $\frac{g^{2}v}{2}hW^{+}W^{-}=2M_W^{2}hW^{+}W^{-}/v$, which is the same $v$ and therefore the same $g$.
 
@@ -92,7 +92,7 @@ What follows without a further assumption. The ratio $m_W/m_Z=\cos\theta_W$ with
 
 ## The Noether Currents and the Sign of the Charge
 
-Three currents and one combination that survives the breaking. The $SU(2)$ currents $J_{a,\mu}$ and the hypercharge current $J_{Y,\mu}$ are conserved in the unbroken phase; after breaking, the three combinations that correspond to the broken generators are not conserved, and the combination
+Three currents and one combination that survives the breaking. The $SU(2)$ currents $J_{a,\imath}$ and the hypercharge current $J_{Y,\imath}$ are conserved in the unbroken phase; after breaking, the three combinations that correspond to the broken generators are not conserved, and the combination
 
 $$
 Q=T_3+Y
@@ -121,7 +121,7 @@ The honest sentence. This family's electroweak content is a classical gauge theo
 The electroweak Lagrangian is the $SU(2)\times U(1)$ gauge action with one complex doublet and its potential. Its variation gives the Yang–Mills equations with the doublet's currents, the covariant scalar equation and four Gauss constraints. At the potential's minimum the doublet's gradient term gives $m_W=gv/2$, $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}v/2$ and $m_A=0$, and the count eight-plus-four becomes nine-plus-two-plus-one without loss. The surviving current is the electric one, $Q=T_3+Y$. Nothing is quantised, and the article says so.
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14W_{a,\mu\nu}W_{a,\mu\nu}-\tfrac14B_{\mu\nu}B_{\mu\nu}+(D_\mu\Phi)^{\dagger}D_{\mu}\Phi-V(\Phi)\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14B_{\imath\jmath}B_{\imath\jmath}+(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi-V(\Phi)\Bigr\},
 \qquad
 V=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}.
 $$
@@ -131,10 +131,10 @@ $$
 | Symbol | Meaning |
 |---|---|
 | $g,\ g_{\mathrm Y}$ | $SU(2)_L$ and $U(1)_Y$ couplings |
-| $W_{a,\mu},\ B_\mu$ | Gauge fields of the two factors |
-| $W_{a,\mu\nu},\ B_{\mu\nu}$ | Field strengths, the first non-Abelian |
+| $W_{a,\imath},\ B_{\imath}$ | Gauge fields of the two factors |
+| $W_{a,\imath\jmath},\ B_{\imath\jmath}$ | Field strengths, the first non-Abelian |
 | $\Phi$ | Complex doublet, hypercharge $Y_{\mathrm{hch}}=+\tfrac12$ |
-| $D_\mu\Phi$ | Covariant derivative with both connections |
+| $D_{\imath}\Phi$ | Covariant derivative with both connections |
 | $V(\Phi)$ | $-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ |
 | $v=\sqrt{\mu^{2}/\lambda}$ | Vacuum expectation value |
 | $W^{\pm},\ Z,\ A$ | Mass eigenstates of the neutral and charged sectors |

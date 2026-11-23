@@ -16,11 +16,11 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd
 
 **Three things are established.**
 
-*First, the connection enters the chart as one additive central term in the covariant bracket, and nothing else.* Because each $A_\mu$ is a complex scalar, it commutes with the whole word, so
+*First, the connection enters the chart as one additive central term in the covariant bracket, and nothing else.* Because each $A_{\imath}$ is a complex scalar, it commutes with the whole word, so
 
 $$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
-=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{2\pi i\,ϙ}{h}A_\mu ,
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi
+=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi+\frac{2\pi i\,ϙ}{h}A_{\imath} ,
 $$
 
 with the connection's term added after the word has been differentiated and with no factor of $\tilde\Xi$ or $\tilde\Xi^{-1}$ attached to it. The separability is not an approximation: it is the algebraic mark of the abelian gauge group, whose parameter lies in the centre.
@@ -39,7 +39,7 @@ where $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ is the action and $\ti
 
 **Scope.** The connection is treated as an external field with a constant or a varying profile, and the equation is the component equation of the element companion — the one that decouples, that the action produces, and that the current belongs to. The element companion's other equation, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$, is the subject of §*What the Chart Cannot Carry*, where the chart shows why it is not a two-function system. The operator setting, in which the amplitude and the action are functions of the coordinates and the equation becomes a PDE, is the Madelung problem of the standard literature and is cited rather than re-derived.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=\frac{2\pi mc}{h}$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, and the coupling is $ϙ$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=\frac{2\pi mc}{h}$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, and the coupling is $ϙ$.
 
 ## The Word and Its Domain
 
@@ -54,10 +54,10 @@ with the three parameters $(\varrho,\theta_{\mathrm{pha}},\varepsilon)$ a biject
 
 **The coupling does not enlarge or shrink the domain.** The word needs $\varrho>0$; the connection is a set of functions and contributes no condition on the field, so the parameter domain is the free article's and the word's bijection is unaffected. Whether the *flow* stays inside that domain is a separate question, and it is the free second-order article's: the covariant operator is the free one with central coefficients, so the coupling adds lower-order terms and no new mechanism, and the article inherits the free statement rather than proving it. What the coupling does add is a motion of the phase by a function, which is a reparameterisation and not a motion of the field.
 
-**The one coefficient and the one pair.** The spin-zero field is central, so it has one coefficient and the polar pair describes the whole of it rather than a slice. A value that leaves the centre has four coefficients obeying four independent equations, and the pair would then describe one of them, the mixed case being the constant-polarization case $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$. The coupling preserves that structure exactly: $A_\mu$ is central, it commutes with the constant $\tilde Q_{\mathrm{amp}}$, and
+**The one coefficient and the one pair.** The spin-zero field is central, so it has one coefficient and the polar pair describes the whole of it rather than a slice. A value that leaves the centre has four coefficients obeying four independent equations, and the pair would then describe one of them, the mixed case being the constant-polarization case $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$. The coupling preserves that structure exactly: $A_{\imath}$ is central, it commutes with the constant $\tilde Q_{\mathrm{amp}}$, and
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi,\mu}\big(\tilde Q_{\mathrm{amp}}g\big)=\tilde Q_{\mathrm{amp}}\,\tilde\nabla_{\mathrm{gco},\Phi,\mu}g ,
+\tilde\nabla_{\mathrm{gco},\Phi,\imath}\big(\tilde Q_{\mathrm{amp}}g\big)=\tilde Q_{\mathrm{amp}}\,\tilde\nabla_{\mathrm{gco},\Phi,\imath}g ,
 $$
 
 so the polarized field solves the coupled equation exactly when the scalar $g$ does. The polar chart of the coupled theory is therefore the chart of one charged scalar, and the fourfold multiplicity is a constant factor that the chart carries without seeing.
@@ -67,11 +67,11 @@ so the polarized field solves the coupled equation exactly when the scalar $g$ d
 **The identity.** Differentiate the word, divide by it, add the connection:
 
 $$
-\mathcal A^{\mathrm{gco}}_\mu:=\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
-=\underbrace{\frac{\partial_\mu \varrho}{\varrho}+i\,\partial_\mu\theta_{\mathrm{pha}}
-+\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
-+\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}}_{\text{the free bracket }\mathcal A_\mu}
-+\frac{2\pi i\,ϙ}{h}A_\mu .
+\mathcal A^{\mathrm{gco}}_{\imath}:=\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi
+=\underbrace{\frac{\partial_{\imath} \varrho}{\varrho}+i\,\partial_{\imath}\theta_{\mathrm{pha}}
++\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
++\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}}_{\text{the free bracket }\mathcal A_{\imath}}
++\frac{2\pi i\,ϙ}{h}A_{\imath} .
 $$
 
 The four bracketed terms have four different algebraic types — a real central scalar, a central imaginary number, a Hermitian vector conjugated by the rotor, and a real vector part — and the connection's term is a fifth object of a fifth-and-a-half type: a complex central scalar, which is the sum of the first two types.
@@ -118,11 +118,11 @@ $$
 
 so the gauge transformation is the translation of $\theta_{\mathrm{pha}}$ by $\frac{2\pi ϙ\Lambda}{h}$ with the other seven parameters fixed, and the identity is exact because a central unit passes to the left through the whole word and the phase factor is the leftmost factor.
 
-**What it says about the connection.** For a pure-gauge connection $A_\mu=\partial_\mu\Lambda$ the added term is $\frac{2\pi iϙ}{h}\partial_\mu\Lambda$, so
+**What it says about the connection.** For a pure-gauge connection $A_{\imath}=\partial_{\imath}\Lambda$ the added term is $\frac{2\pi iϙ}{h}\partial_{\imath}\Lambda$, so
 
 $$
-i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{2\pi i\,ϙ}{h}A_\mu
-=i\frac{\partial}{\partial R_\mu}\Bigl(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda\Bigr),
+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath}
+=i\frac{\partial}{\partial R_{\imath}}\Bigl(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda\Bigr),
 $$
 
 and the whole effect of the potential is absorbed by a reparameterisation of one coordinate. That is the polar statement of gauge invariance: the connection's content in the chart is that one coordinate is not physical.
@@ -136,15 +136,15 @@ and the whole effect of the potential is absorbed by a reparameterisation of one
 **The factorisation.** For a central field the covariant derivative factors exactly:
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi,\mu}\bigl(\varrho\,e^{i\theta_{\mathrm{pha}}}e_t\bigr)
-=e^{i\theta_{\mathrm{pha}}}\Bigl(\partial_\mu \varrho+i\,\varrho\,\kappa^{\mathrm{kin}}_\mu\Bigr)e_t ,
+\tilde\nabla_{\mathrm{gco},\Phi,\imath}\bigl(\varrho\,e^{i\theta_{\mathrm{pha}}}e_t\bigr)
+=e^{i\theta_{\mathrm{pha}}}\Bigl(\partial_{\imath} \varrho+i\,\varrho\,\kappa^{\mathrm{kin}}_{\imath}\Bigr)e_t ,
 \qquad
-\kappa^{\mathrm{kin}}_\mu:=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\mu .
+\kappa^{\mathrm{kin}}_{\imath}:=\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath} .
 $$
 
 The parenthesis is a central element, so it commutes with $e_t$ and the whole factorisation is at the level of scalars. The identity is exact for every connection, not only for a material one; the material case enters only when the two slots are read as the four-momentum.
 
-**The pair.** Applying the operator twice and separating real and imaginary parts — which the free article does once and which the coupling does not disturb, because $\kappa^{\mathrm{kin}}_\mu$ is the only place the potential appears and it appears inside the same square — gives
+**The pair.** Applying the operator twice and separating real and imaginary parts — which the free article does once and which the coupling does not disturb, because $\kappa^{\mathrm{kin}}_{\imath}$ is the only place the potential appears and it appears inside the same square — gives
 
 $$
 \boxed{\;
@@ -229,7 +229,7 @@ and the second term is the field strength conjugated by the field.
 
 **The honest conclusion.** The chart carries the coupled theory exactly when the curvature term is absent or when it is projected away, and those are the same condition: the chart carries the component equation, whose curvature term is zero by construction, and it cannot carry the algebra's equation, whose curvature term is the obstruction. This is the polar face of the element companion's prohibition: a central field is forbidden wherever the field strength is nonzero, and a two-function chart is a central field's chart.
 
-**What the chart does carry for a general element.** The component equation itself, with a general element and a general connection. The covariant bracket is $\mathcal A_\mu+\frac{2\pi iϙ}{h}A_\mu$, the frame density is $\tilde\Xi^{*}\tilde\Xi$, the kinetic Lagrangian is $\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_\mu(\mathcal A^{\mathrm{gco}}_\mu)^{*}\big]$, and the eight parameter equations are the Jacobian image of the component equation, which is exact because the word is a bijection with a smooth inverse. No constraint appears and no multiplier is needed, because the parameterisation of the invertibles is exact; the two-function pair is a restriction of this chart and not a different chart. The variational companion computes the metric of the eight-parameter chart; this article's subject is the two-function pair, which is the central case and the constant-polarization case.
+**What the chart does carry for a general element.** The component equation itself, with a general element and a general connection. The covariant bracket is $\mathcal A_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$, the frame density is $\tilde\Xi^{*}\tilde\Xi$, the kinetic Lagrangian is $\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_{\imath}(\mathcal A^{\mathrm{gco}}_{\imath})^{*}\big]$, and the eight parameter equations are the Jacobian image of the component equation, which is exact because the word is a bijection with a smooth inverse. No constraint appears and no multiplier is needed, because the parameterisation of the invertibles is exact; the two-function pair is a restriction of this chart and not a different chart. The variational companion computes the metric of the eight-parameter chart; this article's subject is the two-function pair, which is the central case and the constant-polarization case.
 
 ## What the Chart Shows and What It Hides
 
@@ -262,10 +262,10 @@ and the second term is the field strength conjugated by the field.
 The coupled Klein–Gordon equation in polar variables is the free pair with the mechanical momentum. The word is the parent's, its domain is unchanged, and the connection enters the logarithmic derivative as one additive central term,
 
 $$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{2\pi i\,ϙ}{h}A_\mu ,
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi+\frac{2\pi i\,ϙ}{h}A_{\imath} ,
 $$
 
-so it touches the scale bracket in the temporal slot and the phase bracket in the spatial ones and cannot reach the boost or the rotor. For a central field the covariant derivative factors exactly, $\tilde\nabla_{\mathrm{gco},\Phi,\mu}(\varrho e^{i\theta}e_t)=e^{i\theta}(\partial_\mu \varrho+i\varrho\kappa^{\mathrm{kin}}_\mu)e_t$, and the pair becomes
+so it touches the scale bracket in the temporal slot and the phase bracket in the spatial ones and cannot reach the boost or the rotor. For a central field the covariant derivative factors exactly, $\tilde\nabla_{\mathrm{gco},\Phi,\imath}(\varrho e^{i\theta}e_t)=e^{i\theta}(\partial_{\imath} \varrho+i\varrho\kappa^{\mathrm{kin}}_{\imath})e_t$, and the pair becomes
 
 $$
 \bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-q\vec A\bigr\rvert^{2}=m^{2}c^{2}-\frac{h^{2}}{4\pi^{2}}\frac{\Box_\Phi \varrho}{\varrho},
@@ -284,12 +284,12 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ is the action |
 | $\theta_{\mathrm{rpd}}\ge0,\ \hat u_{\mathrm b}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}}\in[0,2\pi],\ \hat u_{\mathrm r}$ | Angle and axis of the rotor |
-| $\mathcal A_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ | The free bracket, four types |
-| $\mathcal A^{\mathrm{gco}}_\mu=\mathcal A_\mu+\frac{2\pi iϙ}{h}A_\mu$ | The covariant bracket |
+| $\mathcal A_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$ | The free bracket, four types |
+| $\mathcal A^{\mathrm{gco}}_{\imath}=\mathcal A_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The covariant bracket |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t$ and $\vec A$ real |
 | $ϙ$ | The coupling |
 | $\frac{h}{2\pi} cP_t=E+ϙca'_t$, $\frac{h}{2\pi}\vec P=\vec p-q\vec A$ | The mechanical four-momentum |
-| $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\mu$ | The covariant bracket's coefficient; $\kappa^{\mathrm{kin}}_t=-iP_t$ |
+| $\kappa^{\mathrm{kin}}_{\imath}=\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}$ | The covariant bracket's coefficient; $\kappa^{\mathrm{kin}}_t=-iP_t$ |
 | $E=-\frac{h}{2\pi} c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ | The free four-momentum |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho}$ | The quantum potential; unchanged by the coupling |
 | $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec p-q\vec A)$ | The mechanical current |

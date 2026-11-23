@@ -188,11 +188,11 @@ Substituting the word into a first-order equation means differentiating it, and 
 *Proposition.* For $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$,
 
 $$
-\frac{\partial\tilde\Xi}{\partial R_\mu}
-=\tilde\Xi\left[\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
-+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
-+\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
-+\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu}\right].
+\frac{\partial\tilde\Xi}{\partial R_{\imath}}
+=\tilde\Xi\left[\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_{\imath}}
++i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}
++\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_{\imath}}\Bigr)\tilde u_{\mathrm r}
++\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_{\imath}}\right].
 $$
 
 *Proof.* Differentiate the product and divide by it. The two central factors give the first two brackets. The derivative of the boost is $\tilde U_{\Psi,\mathrm b}(\tilde U_{\Psi,\mathrm b}^{-1}\partial\tilde U_{\Psi,\mathrm b})$ and the derivative of the rotor is $\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}(\tilde u_{\mathrm r}^{-1}\partial\tilde u_{\mathrm r})$; the boost cancels against itself in the first and passes the rotor in the second, which gives the two frame terms as written.
@@ -201,14 +201,14 @@ The four brackets are of four different types, and that is the content of the di
 
 | term | type | zero when |
 | --- | --- | --- |
-| $\tfrac12\partial_\mu\ln \varrho^{2}$ | real central scalar | the density is constant |
-| $i\partial_\mu\theta_{\mathrm{pha}}$ | central imaginary | the angle is constant |
-| $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the boost is constant |
-| $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | the rotor is constant |
+| $\tfrac12\partial_{\imath}\ln \varrho^{2}$ | real central scalar | the density is constant |
+| $i\partial_{\imath}\theta_{\mathrm{pha}}$ | central imaginary | the angle is constant |
+| $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the boost is constant |
+| $\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}$ | real vector part | the rotor is constant |
 
 **The four brackets are the spin-half-fluid equations.** In the fluid reading each bracket is one transport law: the scale bracket is the continuity equation for $\rho_{\mathrm{num}}$, the phase bracket is the guidance equation, $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$, the boost connection is the transport of the velocity, and the rotor connection is the transport of the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. That is the structure of the spin-half fluid of Takabayasi and Holland, written in the algebra's letters: continuity, guidance, velocity transport and spin transport. It is not the Madelung fluid, which has the first two and no spin, and which closes because there the equation is second order in one central function. Here the four are coupled and the equation constrains them without closing them.
 
-A plane wave is the case in which the last three vanish: the frame is constant and the density is constant, so the derivative is the phase term alone. Then $\partial_\mu\tilde\Xi=i(\partial_\mu\theta_{\mathrm{pha}})\tilde\Xi$, and the equation becomes algebraic in the frame. That is why a plane wave can be solved exactly and why the general case cannot be read off it.
+A plane wave is the case in which the last three vanish: the frame is constant and the density is constant, so the derivative is the phase term alone. Then $\partial_{\imath}\tilde\Xi=i(\partial_{\imath}\theta_{\mathrm{pha}})\tilde\Xi$, and the equation becomes algebraic in the frame. That is why a plane wave can be solved exactly and why the general case cannot be read off it.
 
 Note what the first bracket is not. The scale enters the derivative only through $\ln\rho_{\mathrm{num}}$, so a constant density contributes nothing and a field of uniform density carries no scale term at all. The scale is a multiplier, not a source.
 
@@ -495,7 +495,7 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$; $\vec e_z$ is the frame's third direction |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$; $\vec e_z$ is the frame's third direction |
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ | The field, one element of $\mathbb{B}$; the letters name the two parts |
 | $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$ |

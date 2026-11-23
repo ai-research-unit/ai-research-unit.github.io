@@ -8,7 +8,7 @@ This article develops the biquaternionic interpretation of both. The square of t
 
 Three boundaries are respected. The Klein–Gordon path integral and the scalar propagator belong to the spin-$0$ subcategory and are cited, not re-derived. The spin-half path integral and the fermionic field path integral are different objects: the former is the non-relativistic spinning path integral and the latter is the quantised-field integral belonging to *Biquaternion Quantum Fields*; neither is the single-particle Dirac path integral treated here. The general apparatus of the d'Alembertian and its Green's functions belongs to *the generalities*.
 
-The conventions are the series conventions, and they are cited here and not developed. The algebra, its four units and the central scalar imaginary are those of *Algebra and Element Conventions*, §*The Algebra and Its Basis* and §*The Base and Its Units*: $e_t$ is the unit of the algebra and $i$ is central. The gradient $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box_\Phi$ are those of *Operator and Calculus Conventions*, §*The Gradient*. The chiral pair is written as the two first-order lines of §*The Two First-Order Equations and Their Symbol*, each composed with the conjugate of the other giving $\Box_\Phi$, and no letter gathers the two. The coordinates $x_\mu=(x_0,x_1,x_2,x_3)$, the material sector $\mathbb{B}_{\Phi}$ and its interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$, are those of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the four-momentum element $\tilde{P}_{\Phi}$ is that of *Algebra and Element Conventions*, §*The Four-Vectors and the Currents*.
+The conventions are the series conventions, and they are cited here and not developed. The algebra, its four units and the central scalar imaginary are those of *Algebra and Element Conventions*, §*The Algebra and Its Basis* and §*The Base and Its Units*: $e_t$ is the unit of the algebra and $i$ is central. The gradient $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box_\Phi$ are those of *Operator and Calculus Conventions*, §*The Gradient*. The chiral pair is written as the two first-order lines of §*The Two First-Order Equations and Their Symbol*, each composed with the conjugate of the other giving $\Box_\Phi$, and no letter gathers the two. The coordinates $x_{\imath}=(x_0,x_1,x_2,x_3)$, the material sector $\mathbb{B}_{\Phi}$ and its interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$, are those of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the four-momentum element $\tilde{P}_{\Phi}$ is that of *Algebra and Element Conventions*, §*The Four-Vectors and the Currents*.
 
 The dynamics is the chiral pair.
 
@@ -102,7 +102,7 @@ $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\mathcal S_L = \Box_\Phi\,\mathcal S_L,
 $$
 
-the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = -N/\frac{h^{2}}{4\pi^{2}}$; the operator is $\Box_\Phi=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, it is $\Delta_\Phi - \partial^2/\partial x_0^2$, with $\Delta_\Phi$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
+the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = -N/\frac{h^{2}}{4\pi^{2}}$; the operator is $\Box_\Phi=\sum_{\imath}\partial^2/\partial R_{\imath}^2$, and on the material reading, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, it is $\Delta_\Phi - \partial^2/\partial x_0^2$, with $\Delta_\Phi$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
 
 This is standard relativistic quantum physics (see the Further Reading); the companion article *The Feynman Propagator in Biquaternionic Form* treats the same object in the biquaternion framework. Two structural facts are needed here.
 
@@ -147,19 +147,19 @@ $$
 \mathcal{G}_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
 \exp(i\theta_{\mathrm{act}}),
 \qquad
-S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \frac{h^{2}}{4\pi^{2}}k_m^{2}\right),
+S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau} - \frac{h^{2}}{4\pi^{2}}k_m^{2}\right),
 \qquad  \frac{h^{2}}{4\pi^{2}}k_m^{2}=m^{2}c^{2},
 $$
 
 up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so that for a straight worldline
 
 $$
-\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} = -\frac{(x-x_2)^2}{T^2},
+\sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau} = -\frac{(x-x_2)^2}{T^2},
 \qquad
 (x-x_2)^2 = (x_0-x_2^0)^2 - \left|\vec r-\vec r_2\right|^2 ,
 $$
 
-**The sign in the time slot is not a convention.** $R_t=ir'_t$ gives $\dot R_t^{2}=-(\dot r'_t)^{2}$, so the time direction enters the sum with the sign opposite to the three spatial ones, and $\sum_\mu\dot R_\mu\dot R_\mu$ is minus the Lorentzian square of the tangent. The kinetic term is negative along the time direction because the temporal coordinate is the imaginary one, and that is the whole of the sign bookkeeping of the proper-time exponent.
+**The sign in the time slot is not a convention.** $R_t=ir'_t$ gives $\dot R_t^{2}=-(\dot r'_t)^{2}$, so the time direction enters the sum with the sign opposite to the three spatial ones, and $\sum_{\imath}\dot R_{\imath}\dot R_{\imath}$ is minus the Lorentzian square of the tangent. The kinetic term is negative along the time direction because the temporal coordinate is the imaginary one, and that is the whole of the sign bookkeeping of the proper-time exponent.
 
 writing $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-\frac{2\pi i}{h}\left[\frac{(x-x_2)^2}{4T} + \frac{h^{2}}{4\pi^{2}}k_m^{2} T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ in the first component and $\left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$ in the second. The worldline is a curve in the material sector $\mathbb{B}_{\Phi}$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
 
@@ -195,12 +195,12 @@ Two limits are read in the polar companion. At $k_m=0$ the components reduce to 
 
 ## The Spinning Worldline and the Spin Factor
 
-The worldline that generates the Dirac propagator itself, rather than the Klein–Gordon kernel it acts on, carries an additional odd (Grassmann) degree of freedom $\tilde{Ξ}_{\mu}(\tau)$ at each point. The standard supersymmetric worldline action is
+The worldline that generates the Dirac propagator itself, rather than the Klein–Gordon kernel it acts on, carries an additional odd (Grassmann) degree of freedom $\tilde{Ξ}_{\imath}(\tau)$ at each point. The standard supersymmetric worldline action is
 
 $$
 S[x,\tilde{Ξ}] = \int_0^T d\tau\left[
-\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau}
-+ \frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}
+\frac{1}{4}\sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau}
++ \frac{i}{2}\sum_{\imath}\tilde{Ξ}_{\imath}\frac{d\tilde{Ξ}_{\imath}}{d\tau}
 - k_m^{2}
 \right],
 $$
@@ -210,7 +210,7 @@ with both quadratic terms read on the same four slots and carrying the same sign
 The odd pair carries the anticommutation of the worldline. The odd variables are fixed by the symmetric pairing of the worldline action,
 
 $$
-\tilde{Ξ}_{\mu}\tilde{Ξ}_{\nu} + \tilde{Ξ}_{\nu}\tilde{Ξ}_{\mu} = -\tfrac12 \varepsilon_\mu\delta_{\mu\nu}\,e_t ,
+\tilde{Ξ}_{\imath}\tilde{Ξ}_{\jmath} + \tilde{Ξ}_{\jmath}\tilde{Ξ}_{\imath} = -\tfrac12 \varepsilon_{\imath}\delta_{\imath\jmath}\,e_t ,
 $$
 
 with the unit $e_t$ of the algebra in place of the identity of the older display, and this is the whole of their definition: the right-hand side carries the weight and the unit and nothing else. The central $i$ sits in the kinetic term of the worldline action and not in this relation, so the odd sector carries the signs of the bosonic sector, the time slot negative and the three spatial slots positive, written as the negative of the plain weight.
@@ -227,10 +227,10 @@ with the spin factor
 
 $$
 \mathcal{F}[x] = \int_{\text{b.c.}}\mathcal{D}\tilde{Ξ}\;
-\exp\left(-\frac{1}{2}\int_0^T d\tau\;\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}\right).
+\exp\left(-\frac{1}{2}\int_0^T d\tau\;\sum_{\imath}\tilde{Ξ}_{\imath}\frac{d\tilde{Ξ}_{\imath}}{d\tau}\right).
 $$
 
-The exponent of $\mathcal{F}$ carries no $i$, and the reason is the product of two of them: the action contributes $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}$, the weight is the exponential of $i$ times the action, and $i\cdot i = -1$. Written with the two $i$'s kept apart, the spin factor is $\exp\left(i\int_0^T d\tau\,\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}\right)$; multiplied out, it is $\exp\left(-\frac{1}{2}\int_0^T d\tau\,\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}\right)$, which is real. It is bilinear in the odd variables, so its expansion is a sum of products of pairs, and a pair corresponds to an element of the algebra, a product of two units being an invertible element up to sign: the weight the odd integral produces is an element of $\mathbb{B}$.
+The exponent of $\mathcal{F}$ carries no $i$, and the reason is the product of two of them: the action contributes $\frac{i}{2}\sum_{\imath}\tilde{Ξ}_{\imath}\frac{d\tilde{Ξ}_{\imath}}{d\tau}$, the weight is the exponential of $i$ times the action, and $i\cdot i = -1$. Written with the two $i$'s kept apart, the spin factor is $\exp\left(i\int_0^T d\tau\,\frac{i}{2}\sum_{\imath}\tilde{Ξ}_{\imath}\frac{d\tilde{Ξ}_{\imath}}{d\tau}\right)$; multiplied out, it is $\exp\left(-\frac{1}{2}\int_0^T d\tau\,\sum_{\imath}\tilde{Ξ}_{\imath}\frac{d\tilde{Ξ}_{\imath}}{d\tau}\right)$, which is real. It is bilinear in the odd variables, so its expansion is a sum of products of pairs, and a pair corresponds to an element of the algebra, a product of two units being an invertible element up to sign: the weight the odd integral produces is an element of $\mathbb{B}$.
 
 The complete worldline path integral, with the correct measure, reproduces the propagator $\mathcal S$; this is the Berezin–Marinov / Brink–Di Vecchia–Howe construction, and it is standard. The same construction in a background electromagnetic field replaces the free kinetic term by the minimally coupled one and produces the spin factor quoted in the literature, with the sign conventions of the cited works; twice the scalar part of the same object is the closed-worldline weight and belongs to the next section.
 
@@ -246,10 +246,10 @@ The square of the operator is the scalar path integral. The worldline action has
 
 ## The Spin Factor in a Background Field
 
-The spin factor earns its name in a background electromagnetic field, and the calculation shows how the algebra organises the result. Minimal coupling adds the gauge term $\sum_\mu qA_\mu(x)\frac{dx_\mu}{d\tau}$ to the worldline action,
+The spin factor earns its name in a background electromagnetic field, and the calculation shows how the algebra organises the result. Minimal coupling adds the gauge term $\sum_{\imath} qA_{\imath}(x)\frac{dx_{\imath}}{d\tau}$ to the worldline action,
 
 $$
-S[x] = \int_0^T d\tau\left[\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - k_m^{2} + \sum_\mu qA_\mu(x)\frac{dx_\mu}{d\tau}\right],
+S[x] = \int_0^T d\tau\left[\frac{1}{4}\sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau} - k_m^{2} + \sum_{\imath} qA_{\imath}(x)\frac{dx_{\imath}}{d\tau}\right],
 $$
 
 and the odd kinetic term is unchanged. The coupling is through the pair of two units, contracted with the field strength. The six generators are written once, the three of a time index and a spatial one and the three of two spatial indices:
@@ -259,30 +259,30 @@ $$
 \qquad
 \tilde\Sigma_{\Psi,jk} = \vec e_j\vec e_\eta,
 \qquad
-\tilde\Sigma_{\Psi,\nu\mu} = -\tilde\Sigma_{\Psi,\mu\nu} .
+\tilde\Sigma_{\Psi,\jmath\imath} = -\tilde\Sigma_{\Psi,\imath\jmath} .
 $$
 
-The six generators are the two labels of the Lorentz action. On the field they act by left multiplication, and the six split by the index: with $\mu=t$ the element $i\vec e_\eta$ is a boost generator and lies in $\mathbb{B}_{\Psi}$, and with both indices spatial the element $\vec e_j\vec e_\eta$ is a rotation generator and lies in the real quaternion sector. The two families are the two labels of *Algebra and Element Conventions*, §*The Remarkable Subspaces of Biquaternions*, so a boost and a rotation are read on the same line with no second structure.
+The six generators are the two labels of the Lorentz action. On the field they act by left multiplication, and the six split by the index: with ${\imath}=t$ the element $i\vec e_\eta$ is a boost generator and lies in $\mathbb{B}_{\Psi}$, and with both indices spatial the element $\vec e_j\vec e_\eta$ is a rotation generator and lies in the real quaternion sector. The two families are the two labels of *Algebra and Element Conventions*, §*The Remarkable Subspaces of Biquaternions*, so a boost and a rotation are read on the same line with no second structure.
 
 **The six elements are two triples and not six directions.** A boost and a rotation sharing the same direction differ by one factor of $i$: $\vec e_x\vec e_y$ and $i\vec e_z$ are the same direction, and the six elements therefore occupy the three directions twice. This is the coarsest reading of the six, and it is enough for the exponent below, which is linear in the generators. An identity that separates $\vec e_x\vec e_y$ from $i\vec e_z$ — the vanishing of the traced weight at a given order, for instance — is an identity of the two-sided generators and is read where those are written out.
 
 The weight is the path-ordered exponential of an element. The path integral over the odd variables produces the path-ordered exponential of the contraction:
 
 $$
-\boxed{\;\mathcal{F}[x] = \mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\mu\neq\nu}\tilde\Sigma_{\Psi,\mu\nu}F_{\mu\nu}(x(\tau))\right)\;}
+\boxed{\;\mathcal{F}[x] = \mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\imath\neq\jmath}\tilde\Sigma_{\Psi,\imath\jmath}F_{\imath\jmath}(x(\tau))\right)\;}
 $$
 
 for the open worldline that computes the propagator, and for the worldline closed into a loop it is the traced weight
 
 $$
-\mathcal{F}_{\mathrm{loop}}[x] = \mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\mu\neq\nu}\tilde\Sigma_{\Psi,\mu\nu}F_{\mu\nu}(x(\tau))\right).
+\mathcal{F}_{\mathrm{loop}}[x] = \mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\imath\neq\jmath}\tilde\Sigma_{\Psi,\imath\jmath}F_{\imath\jmath}(x(\tau))\right).
 $$
 
 Closing the worldline into a loop turns the weight into a trace, and that is the antiperiodic case of the odd integral above: the fermionic variables are antiperiodic around the circle, as every fermionic trace requires. The contractions pair the electric components with the boost generators and the magnetic components with the rotation generators, so the exponent carries both labels at once.
 
 This is the standard Berezin–Marinov spin factor, and the path ordering is required in both cases because the elements at different times do not commute. The same structure is what produces the anomalous magnetic moment in the worldline computation of the electron's form factors, and it is the worldline form of the spin–field coupling that the companion articles *The Electron in Biquaternionic Form* and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* treat from the operator side.
 
-On the closed worldline the weight is traced. The trace is that of the multiplication, four times the scalar part of the element: the unit contributes four and each vector unit zero, because multiplication by a vector unit permutes the four units up to sign with no fixed point (*Matrix Representations Conventions*, §*The Left Family*). A single generator is pure, so the term linear in the field strength vanishes and the loop weight begins with the quadratic term, built from $F_{\mu\nu}F_{\mu\nu}$. Which invariants of the field strength survive at each order is an identity of the two-sided generators, where the fifth basis operator is of zero array trace, and it is not restated here. The open weight is an element at each end, and it multiplies the field at the two ends of the worldline. The path-ordered exponential is the worldline image of the algebra's rotor construction: at each instant the field is carried by one generator, and the product of all the carries is the spin factor.
+On the closed worldline the weight is traced. The trace is that of the multiplication, four times the scalar part of the element: the unit contributes four and each vector unit zero, because multiplication by a vector unit permutes the four units up to sign with no fixed point (*Matrix Representations Conventions*, §*The Left Family*). A single generator is pure, so the term linear in the field strength vanishes and the loop weight begins with the quadratic term, built from $F_{\imath\jmath}F_{\imath\jmath}$. Which invariants of the field strength survive at each order is an identity of the two-sided generators, where the fifth basis operator is of zero array trace, and it is not restated here. The open weight is an element at each end, and it multiplies the field at the two ends of the worldline. The path-ordered exponential is the worldline image of the algebra's rotor construction: at each instant the field is carried by one generator, and the product of all the carries is the spin factor.
 
 ## Feynman's Checkerboard
 
@@ -354,13 +354,13 @@ It is worth stating what the square does not do in this setting. It does not rem
 The worldline integrals above are written with a proper-time parameter $T$ that has already been gauge-fixed, and the fixing is worth stating because it is the reason the four-dimensional propagator carries a proper-time integral at all. A relativistic worldline is reparametrisation invariant: the action
 
 $$
-S[x,e] = \int_0^1 d\tau\left[\frac{1}{4e(\tau)}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \frac{h^{2}}{4\pi^{2}}e(\tau)\,k_m^{2}\right]
+S[x,e] = \int_0^1 d\tau\left[\frac{1}{4e(\tau)}\sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau} - \frac{h^{2}}{4\pi^{2}}e(\tau)\,k_m^{2}\right]
 $$
 
 depends on the worldline only through its image, the auxiliary field $e(\tau)$ (the einbein) transforming as a density; the parameter $\tau$ has no physical meaning. In the path integral one does not fix $e$ but integrates over it, and the integral over the constant modes of $e$ is precisely the proper-time integral: writing $e(\tau) = T$ for the constant mode, the other modes can be gauged to zero and divide out the volume of the reparametrisation group, and the action becomes
 
 $$
-S = \frac{1}{4T}\int_0^1 \sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau}\,d\tau - \frac{h^{2}}{4\pi^{2}}k_m^{2} T ,
+S = \frac{1}{4T}\int_0^1 \sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau}\,d\tau - \frac{h^{2}}{4\pi^{2}}k_m^{2} T ,
 $$
 
 which is the proper-time exponent of the previous sections, with $T$ identified as the total proper time. The fluctuations of the material trajectory about the straight line — equivalently, in the Fourier form used above, the four-dimensional Gaussian integral over $p$ — produce the $T^{-2}$ prefactor $\mathcal{N}(T)$ of the free kernel.
@@ -371,7 +371,7 @@ The algebraic interpretation is a statement about the two sectors. The einbein i
 
 The two constructions of the Dirac path integral can be expressed in one biquaternionic statement, and it is worth writing it explicitly because it is the point at which this article meets the rest of the subcategory.
 
-A worldline carries two structures at once: a material trajectory $x_\mu(\tau)$, whose tangent is a four-velocity in $\mathbb{B}_{\Phi}$, and a spin transport, whose generator is the odd variable $\tilde{Ξ}_{\mu}$. The material trajectory is the object the scalar path integral sums over; the spin transport is the object the spin factor sums over. Squaring the first-order operator pairs them: the square of the Dirac operator is central and acts only on the material trajectory, while the spin is carried along by the element that multiplies the field. The chiral pair
+A worldline carries two structures at once: a material trajectory $x_{\imath}(\tau)$, whose tangent is a four-velocity in $\mathbb{B}_{\Phi}$, and a spin transport, whose generator is the odd variable $\tilde{Ξ}_{\imath}$. The material trajectory is the object the scalar path integral sums over; the spin transport is the object the spin factor sums over. Squaring the first-order operator pairs them: the square of the Dirac operator is central and acts only on the material trajectory, while the spin is carried along by the element that multiplies the field. The chiral pair
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad
@@ -386,7 +386,7 @@ There is a further consistency check that ties this article to *Klein–Gordon f
 
 The Feynman propagator, the proper-time representation, the worldline supersymmetric action, the spin factor and the checkerboard limit are all standard results, transcribed here and cited. The biquaternion interpretation contributes three placements:
 
-- The spin variable is the odd variable $\tilde{Ξ}_{\mu}$, whose pairs are elements of $\mathbb{B}$: the even products of odd variables span an algebra of real dimension eight, and that algebra is the biquaternion algebra. The biquaternion algebra is not an auxiliary description of spin; it is the algebra the pairs generate.
+- The spin variable is the odd variable $\tilde{Ξ}_{\imath}$, whose pairs are elements of $\mathbb{B}$: the even products of odd variables span an algebra of real dimension eight, and that algebra is the biquaternion algebra. The biquaternion algebra is not an auxiliary description of spin; it is the algebra the pairs generate.
 - The Dirac propagator is the Dirac operator applied to the scalar propagator, and the reason is the Dirac square: the first-order operator's square is the central Klein–Gordon operator, whose path integral is the spin-0 object of the companion subcategory. The first-order path integral is thus a "square root" of the scalar one, in the same sense as the Dirac equation itself.
 - The checkerboard is the chiral pair on a lattice. Its two directions are the two components of the pair, and its corners are the mass insertions that join them; the continuum limit is the biquaternion mass pair.
 
@@ -394,7 +394,7 @@ The worldline and the checkerboard are complementary descriptions of the same ob
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C}) = M_4(\mathbb{C})$, not a different algebra; here $L_aR_b$ is the two-sided multiplication $\tilde{Ξ}\mapsto a\tilde{Ξ} b$. The five are the frame basis operators under the gammas' own letters, so that the dictionary between the two writings is the identity on the operators:
 
@@ -424,52 +424,52 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 The identities the bodies cite. In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}
++\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
-The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_{\imath}$, so that $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_{\imath}=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
 The basis operator is $-R_{\mathrm{pau},\vec e_z}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, the same operator written in the two displays, and the product $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$ is the display's way of returning it from the four arrays.
 
 The four contraction sums are the sums in which one gamma is contracted against a fixed string of $n$ gammas,
 
 $$
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu ,
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath},\qquad
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath},\qquad
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath},\qquad
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_{\imath} ,
 $$
 
 and one rule produces all four: for a string of distinct indices,
 
 $$
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_{\alpha_1}\cdots\gamma_{\alpha_n}\gamma_\mu = -(-1)^{n+1}(4-2n)\,\gamma_{\alpha_1}\cdots\gamma_{\alpha_n},
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\alpha_1}\cdots\gamma_{\alpha_n}\gamma_{\imath} = -(-1)^{n+1}(4-2n)\,\gamma_{\alpha_1}\cdots\gamma_{\alpha_n},
 $$
 
-so that the four values are $4I_4$, $-2\gamma_\alpha$, $0$ and $2\gamma_\alpha\gamma_\beta\gamma_\gamma$. The two-gamma entry with distinct indices is the one that vanishes, and it is where the dimension enters: the two contracted gammas are moved past the $n$ fixed ones, which gives the $(-1)^n$, and what is left is the contraction of the string with itself, which counts $4-2n$. The two-gamma entry is diagonal and carries the weight, $-4I_4$ on the time direction and $+4I_4$ on the three spatial ones, and the last is the rule with the three indices reversed. With no weight the rule changes, because then the square of a generator is not uniform: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$ and $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2(1+\varepsilon_\alpha)\gamma_\alpha$, which is $4\gamma_0$ for the time direction and vanishes for the three spatial ones. The one-gamma sum is uniform in the index only when the weight is carried.
+so that the four values are $4I_4$, $-2\gamma_\alpha$, $0$ and $2\gamma_\alpha\gamma_\beta\gamma_\gamma$. The two-gamma entry with distinct indices is the one that vanishes, and it is where the dimension enters: the two contracted gammas are moved past the $n$ fixed ones, which gives the $(-1)^n$, and what is left is the contraction of the string with itself, which counts $4-2n$. The two-gamma entry is diagonal and carries the weight, $-4I_4$ on the time direction and $+4I_4$ on the three spatial ones, and the last is the rule with the three indices reversed. With no weight the rule changes, because then the square of a generator is not uniform: $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=-2I_4$ and $\sum_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=2(1+\varepsilon_\alpha)\gamma_\alpha$, which is $4\gamma_0$ for the time direction and vanishes for the three spatial ones. The one-gamma sum is uniform in the index only when the weight is carried.
 
-The display. Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+The display. Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
-The Dirac path integral is the sum over worldlines that computes the propagator, the pair of element-valued kernels $\mathcal S_L$, $\mathcal S_R$ satisfying $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$ and $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the proper-time way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operators: $\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ and $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$, the identity following because each line composed with the conjugate of the other is $\Box_\Phi$. In the spinning-worldline way, an odd Grassmann variable $\tilde{Ξ}_{\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mu}\tilde{Ξ}_{\nu} + \tilde{Ξ}_{\nu}\tilde{Ξ}_{\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}$ is the algebra-valued spin factor $\mathcal{F}[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
+The Dirac path integral is the sum over worldlines that computes the propagator, the pair of element-valued kernels $\mathcal S_L$, $\mathcal S_R$ satisfying $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$ and $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the proper-time way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operators: $\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ and $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$, the identity following because each line composed with the conjugate of the other is $\Box_\Phi$. In the spinning-worldline way, an odd Grassmann variable $\tilde{Ξ}_{\imath}$ is added at each point with kinetic term $\frac{i}{2}\sum_{\imath}\tilde{Ξ}_{\imath}\frac{d\tilde{Ξ}_{\imath}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\imath}\tilde{Ξ}_{\jmath} + \tilde{Ξ}_{\jmath}\tilde{Ξ}_{\imath} = -\frac12\varepsilon_{\imath}\delta_{\imath\jmath}e_t$; the path integral over $\tilde{Ξ}$ is the algebra-valued spin factor $\mathcal{F}[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
 In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is invertible up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\mathcal S_L = (\tilde{P}_{\Phi}-i\,mc)/(N+m^{2}c^{2})$ and $\mathcal S_R = (\tilde{P}_{\Phi}^{\natural}-i\,mc)/(N+m^{2}c^{2})$, and the identity that the two lines compose to $\Box_\Phi-k_m^{2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two components of the pair, the corners carry the weight $i\epsilon\,k_m$ and are the mass insertions that join them, and the continuum limit is the two-dimensional propagator.
 
@@ -481,11 +481,11 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; the worldline position $\tilde R_\Phi$ |
 | $i$ | Central scalar imaginary |
 | $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$, $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$ | The pair as two first-order lines with a source; each composed with the conjugate of the other is $\Box_\Phi$ |
-| $\Box_\Phi$ | Series d'Alembertian, $\sum_\mu\partial^2/\partial R_\mu^2$; $\Delta_\Phi-\partial^2/\partial x_0^2$ on the material reading |
+| $\Box_\Phi$ | Series d'Alembertian, $\sum_{\imath}\partial^2/\partial R_{\imath}^2$; $\Delta_\Phi-\partial^2/\partial x_0^2$ on the material reading |
 | $\Delta_\Phi$ | Laplacian in the three real spatial coordinates |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four slots, the one metric of the series; the interval is $\sum_\mu Q_\mu^2$ |
+| $\delta_{\imath\jmath}=(1,1,1,1)$ | The unit metric on the four slots, the one metric of the series; the interval is $\sum_{\imath} Q_{\imath}^2$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Plain weight, the sign of each squared unit: positive on the time slot, negative on the three spatial ones |
-| $x_\mu$ | Real coordinates of the material sector, $x_0 = r'_{t}$ |
+| $x_{\imath}$ | Real coordinates of the material sector, $x_0 = r'_{t}$ |
 | $\tilde{P}_{\Phi} = ip_0e_t+\vec p$ | Four-momentum element, $\langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = N$ |
 | $N = -p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$ | Mass-shell scalar of the momentum, with $p_0 = E/c$ |
 | $i\tilde{P}_{\Phi}$, $i\tilde{P}_{\Phi}^{\natural}$ | Symbols of $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ on a plane wave |
@@ -495,10 +495,10 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\mathcal{G}_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator, $\left(\Box_\Phi-k_m^{2}\right)\mathcal{G}_F = i\delta^{(4)}$ |
 | $\mathcal S_L = \left(\tilde\nabla_\Phi+k_m\right)\mathcal{G}_F$, $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+k_m\right)\mathcal{G}_F$ | Dirac propagator as the scalar kernel acted on |
 | $T$ | Proper time (Schwinger parameter) |
-| $x(\tau)$, $dR_\mu/d\tau$ | Worldline and its tangent, summed over the four slots |
+| $x(\tau)$, $dR_{\imath}/d\tau$ | Worldline and its tangent, summed over the four slots |
 | $S_0[x]$ | Scalar worldline action |
-| $\tilde{Ξ}_{\mu}(\tau)$ | Odd (Grassmann) worldline variable; a single one is not an element of the algebra |
-| $\tilde{Ξ}_{\mu}\tilde{Ξ}_{\nu}+\tilde{Ξ}_{\nu}\tilde{Ξ}_{\mu} = -\tfrac12\varepsilon_\mu\delta_{\mu\nu}e_t$ | The pair of odd variables, an element of the algebra |
+| $\tilde{Ξ}_{\imath}(\tau)$ | Odd (Grassmann) worldline variable; a single one is not an element of the algebra |
+| $\tilde{Ξ}_{\imath}\tilde{Ξ}_{\jmath}+\tilde{Ξ}_{\jmath}\tilde{Ξ}_{\imath} = -\tfrac12\varepsilon_{\imath}\delta_{\imath\jmath}e_t$ | The pair of odd variables, an element of the algebra |
 | $\mathcal{F}[x]$ | Spin factor, the algebra-valued path-ordered weight |
 | $\tilde\Sigma_{\Psi,0\eta}=i\vec e_\eta$, $\tilde\Sigma_{\Psi,jk}=\vec e_j\vec e_\eta$ | The six Lorentz generators, boosts in $\mathbb{B}_{\Psi}$ and rotations in the real quaternion sector |
 | $G_{\mathrm{ctp},++}$, $G_{\mathrm{ctp},+-}$, $G_{\mathrm{ctp},-+}$, $G_{\mathrm{ctp},--}$ | Checkerboard propagator amplitudes |

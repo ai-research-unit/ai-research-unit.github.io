@@ -15,29 +15,29 @@ The article is organized as follows. The holonomy is defined for the abelian and
 
 ## The Holonomy of the Connection
 
-Throughout, $\varepsilon=(1,-1,-1,-1)$ is the plain weight of the algebra, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, and a paired index is written low with its weight: $\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ is the one-form $A_0\,dx_0-\sum_\eta A_\eta\,dx_k$. Every exponent below carries the factor $\frac{2\pi ϙ}{h}$, the product of the charge $ϙ$ and the inverse action $\frac{2\pi}{h}=k_m/(m\,c)$, so that the exponential of a loop integral is a phase and each exponent is a pure number on its own; no unit and no charge is set to one.
+Throughout, $\varepsilon=(1,-1,-1,-1)$ is the plain weight of the algebra, $\mathrm{Sc}(e_{\imath} e_{\jmath})=\varepsilon_{\imath}\delta_{\imath\jmath}$, and a paired index is written low with its weight: $\sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath}$ is the one-form $A_0\,dx_0-\sum_\eta A_\eta\,dx_k$. Every exponent below carries the factor $\frac{2\pi ϙ}{h}$, the product of the charge $ϙ$ and the inverse action $\frac{2\pi}{h}=k_m/(m\,c)$, so that the exponential of a loop integral is a phase and each exponent is a pure number on its own; no unit and no charge is set to one.
 
 ### The Abelian Wilson Loop
 
 For an abelian connection the holonomy around a closed curve $C$ is the exponential of the line integral of the potential,
 
 $$
-W(C) = \exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)
-= \exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_\mu\varepsilon_\mu\,\mathrm{Sc}\!\left(\tilde{A}_{\Phi,\mu}\right)dx_\mu\right),
+W(C) = \exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath}\,dx_{\imath}\right)
+= \exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath}\,\mathrm{Sc}\!\left(\tilde{A}_{\Phi,\imath}\right)dx_{\imath}\right),
 $$
 
-where the second form records that the $i$ of the phase is carried by the material sector itself: for the abelian field the potential is taken along the scalar direction, $\tilde{A}_{\Phi,\mu}=iA_\mu e_t$, so that $\mathrm{Sc}(\tilde{A}_{\Phi,\mu})=iA_\mu$ and the line integral is a central imaginary scalar whose exponential is a phase. The definition is a functional of the curve and a functional of the connection, and it is an element of $\mathrm{U}(1)$ — a phase. Its gauge transformation is the content of the following section.
+where the second form records that the $i$ of the phase is carried by the material sector itself: for the abelian field the potential is taken along the scalar direction, $\tilde{A}_{\Phi,\imath}=iA_{\imath} e_t$, so that $\mathrm{Sc}(\tilde{A}_{\Phi,\imath})=iA_{\imath}$ and the line integral is a central imaginary scalar whose exponential is a phase. The definition is a functional of the curve and a functional of the connection, and it is an element of $\mathrm{U}(1)$ — a phase. Its gauge transformation is the content of the following section.
 
 ### The Non-Abelian Wilson Loop
 
 For a non-abelian connection the potential is a Lie-algebra-valued one-form, and the holonomy is the path-ordered exponential
 
 $$
-W(C) = \mathrm{Tr}\,\mathcal{P}\exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)
-= \mathrm{Tr}\,\mathcal{P}\exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_{\mu,a}\varepsilon_\mu A_{\mu a} T_a\,dx_\mu\right),
+W(C) = \mathrm{Tr}\,\mathcal{P}\exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath}\,dx_{\imath}\right)
+= \mathrm{Tr}\,\mathcal{P}\exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath,a}\varepsilon_{\imath} A_{\imath a} T_a\,dx_{\imath}\right),
 $$
 
-where the generators $T_a$ are realized in the informational sector of the algebra. Without the trace, the holonomy is a group element $U(C)=\mathcal{P}\exp(\frac{2\pi ϙ}{h}\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; with the trace it is a gauge-invariant number. In the quaternion realization the generators are the imaginary units $i\vec e_a$, the group element is a unit quaternion $Q$, and the trace is $2Q_t$ — twice the scalar part. The Wilson loop is therefore, in the framework's own terms, the scalar part of the holonomy element of the informational sector, and the connection whose holonomy it is lies in the material sector. The loop is a bilinear object that joins the two sectors.
+where the generators $T_a$ are realized in the informational sector of the algebra. Without the trace, the holonomy is a group element $U(C)=\mathcal{P}\exp(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath})$; with the trace it is a gauge-invariant number. In the quaternion realization the generators are the imaginary units $i\vec e_a$, the group element is a unit quaternion $Q$, and the trace is $2Q_t$ — twice the scalar part. The Wilson loop is therefore, in the framework's own terms, the scalar part of the holonomy element of the informational sector, and the connection whose holonomy it is lies in the material sector. The loop is a bilinear object that joins the two sectors.
 
 ## Gauge Invariance and Stokes' Theorem
 
@@ -46,26 +46,26 @@ where the generators $T_a$ are realized in the informational sector of the algeb
 Under a gauge transformation $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, the line integral changes by
 
 $$
-\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu \;\longmapsto\; \oint_C \sum_\mu\varepsilon_\mu\left(A_\mu-\partial/\partial x_\mu\Gamma\right)dx_\mu
-= \oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu-\oint_C d\Gamma
-= \oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu ,
+\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath}\,dx_{\imath} \;\longmapsto\; \oint_C \sum_{\imath}\varepsilon_{\imath}\left(A_{\imath}-\partial/\partial x_{\imath}\Gamma\right)dx_{\imath}
+= \oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath}\,dx_{\imath}-\oint_C d\Gamma
+= \oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath}\,dx_{\imath} ,
 $$
 
 because the integral of a total derivative around a closed curve vanishes. Hence $W(C)$ is invariant. This was verified numerically on a rectangular lattice loop: with random link potentials and random gauge functions at the sites, the loop integral was unchanged to machine precision under the gauge transformation, exactly zero difference.
 
-The same computation in a different form is Stokes' theorem. For a curve $C$ bounding a surface $S$, with $d\Sigma_{\mu\nu}=dx_\mu\wedge dx_\nu$ the oriented area element,
+The same computation in a different form is Stokes' theorem. For a curve $C$ bounding a surface $S$, with $d\Sigma_{\imath\jmath}=dx_{\imath}\wedge dx_{\jmath}$ the oriented area element,
 
 $$
-\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu = \frac12\int_S \sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}\,d\Sigma_{\mu\nu},
+\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath}\,dx_{\imath} = \frac12\int_S \sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}\,d\Sigma_{\imath\jmath},
 \qquad
-W(C) = \exp\left(\frac{i}{2}\int_S \sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}\,d\Sigma_{\mu\nu}\right),
+W(C) = \exp\left(\frac{i}{2}\int_S \sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}\,d\Sigma_{\imath\jmath}\right),
 $$
 
-so the abelian Wilson loop is the exponential of the enclosed flux. The factor $\frac12$ is the one that counts each plane once: for a planar loop the antisymmetric $d\Sigma_{\mu\nu}$ contributes twice the enclosed area, and the pairing with the antisymmetric $F_{\mu\nu}$ converts the pair into the single physical flux. This was verified for a single small plaquette of side $h$: the closed-loop integral equaled $h^2F$ to a relative accuracy of $10^{-16}$, where $F$ was the constant field strength of the chosen potential. The two statements — gauge invariance and Stokes' theorem — are the same fact seen from the two ends: the loop sees only the enclosed field strength, and the field strength is gauge invariant.
+so the abelian Wilson loop is the exponential of the enclosed flux. The factor $\frac12$ is the one that counts each plane once: for a planar loop the antisymmetric $d\Sigma_{\imath\jmath}$ contributes twice the enclosed area, and the pairing with the antisymmetric $F_{\imath\jmath}$ converts the pair into the single physical flux. This was verified for a single small plaquette of side $h$: the closed-loop integral equaled $h^2F$ to a relative accuracy of $10^{-16}$, where $F$ was the constant field strength of the chosen potential. The two statements — gauge invariance and Stokes' theorem — are the same fact seen from the two ends: the loop sees only the enclosed field strength, and the field strength is gauge invariant.
 
 ### The Non-Abelian Case
 
-Under a gauge transformation $A_\mu\mapsto Q A_\mu Q^{-1}+(i/g)Q\partial/\partial x_\mu Q^{-1}$, the group element transforms by conjugation at the endpoints of the curve,
+Under a gauge transformation $A_{\imath}\mapsto Q A_{\imath} Q^{-1}+(i/g)Q\partial/\partial x_{\imath} Q^{-1}$, the group element transforms by conjugation at the endpoints of the curve,
 
 $$
 U(C) \;\longmapsto\; Q(x_{\mathrm{start}})\,U(C)\,Q^{-1}(x_{\mathrm{end}}) ,
@@ -81,13 +81,13 @@ The trace is invariant under conjugation, and the Wilson loop is therefore gauge
 
 ## The Small Loop and the Field Strength
 
-A small loop is the local probe of the field strength. For a loop of area $\ell^2$ in the $\mu\nu$ plane, the holonomy expands as
+A small loop is the local probe of the field strength. For a loop of area $\ell^2$ in the $\mu\jmath$ plane, the holonomy expands as
 
 $$
-\boxed{\;W(C) = 1 + i\,\ell^2 F_{\mu\nu} + O(\ell^4)\;}
+\boxed{\;W(C) = 1 + i\,\ell^2 F_{\imath\jmath} + O(\ell^4)\;}
 $$
 
-in the abelian case, and in the non-abelian case as $W=1+i\ell^2\sum_a F_{\mu\nu a}T_a+O(\ell^4)$, so the loop exponentiates the field strength. This was verified for a small abelian plaquette of side $\ell=10^{-3}$: the ratio of the deviation of the plaquette from unity to $\ell^2F$ was unity to six significant figures. The small loop is therefore an algebraic probe of $\tilde{F}$, and the two gauge-invariant scalars that can be built from $\tilde{F}$ in the framework are visible in the loop at second order.
+in the abelian case, and in the non-abelian case as $W=1+i\ell^2\sum_a F_{\imath\jmath a}T_a+O(\ell^4)$, so the loop exponentiates the field strength. This was verified for a small abelian plaquette of side $\ell=10^{-3}$: the ratio of the deviation of the plaquette from unity to $\ell^2F$ was unity to six significant figures. The small loop is therefore an algebraic probe of $\tilde{F}$, and the two gauge-invariant scalars that can be built from $\tilde{F}$ in the framework are visible in the loop at second order.
 
 Those scalars are the biquaternion content of the Maxwell field. Writing the field strength as $\tilde{F}=\sum_\eta(iE_\eta-H_\eta)\vec e_\eta$, its square is a central element,
 
@@ -99,35 +99,35 @@ so that the two Lorentz invariants of the Maxwell field — the difference of th
 
 ### The Constant Field
 
-The small-loop expansion becomes exact for a constant field strength, and the exact loop shows which components of $\tilde{F}$ a given loop measures. For constant $F_{\mu\nu}$ the loop integral is the flux through the enclosed surface,
+The small-loop expansion becomes exact for a constant field strength, and the exact loop shows which components of $\tilde{F}$ a given loop measures. For constant $F_{\imath\jmath}$ the loop integral is the flux through the enclosed surface,
 
 $$
-\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu = \frac12 \sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}\Sigma_{\mu\nu},
+\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath}\,dx_{\imath} = \frac12 \sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}\Sigma_{\imath\jmath},
 \qquad
-W(C) = \exp\left(\frac{i}{2}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}\Sigma_{\mu\nu}\right),
+W(C) = \exp\left(\frac{i}{2}\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}\Sigma_{\imath\jmath}\right),
 $$
 
-with $\Sigma_{\mu\nu}$ the (oriented) area bivector of the loop. A loop in the $xy$ plane of area $\mathcal{A}$ measures only the magnetic component, $W=\exp(iB_3\mathcal{A})$; a loop in the $xr'_t$ plane measures only the electric component, with the sign fixed by the orientation of the loop; and a loop tilted into a general plane measures the combination $\vec B\cdot\vec u\,\mathcal{A}$ for a spacelike plane and $\vec E\cdot\vec u\,\mathcal{A}$ for a timelike one. This was verified for the plaquette of the preceding paragraph, where the enclosed flux was exactly $h^2F$. In the biquaternion language the exponent is the scalar part of the product of the area bivector with the field strength, and the electric and magnetic parts of $\tilde{F}$ are measured by timelike and spacelike loops respectively. The two invariants of $\tilde{F}^2$ are what remain when the loop is allowed to explore both kinds of plane; a single loop sees only one component.
+with $\Sigma_{\imath\jmath}$ the (oriented) area bivector of the loop. A loop in the $xy$ plane of area $\mathcal{A}$ measures only the magnetic component, $W=\exp(iB_3\mathcal{A})$; a loop in the $xr'_t$ plane measures only the electric component, with the sign fixed by the orientation of the loop; and a loop tilted into a general plane measures the combination $\vec B\cdot\vec u\,\mathcal{A}$ for a spacelike plane and $\vec E\cdot\vec u\,\mathcal{A}$ for a timelike one. This was verified for the plaquette of the preceding paragraph, where the enclosed flux was exactly $h^2F$. In the biquaternion language the exponent is the scalar part of the product of the area bivector with the field strength, and the electric and magnetic parts of $\tilde{F}$ are measured by timelike and spacelike loops respectively. The two invariants of $\tilde{F}^2$ are what remain when the loop is allowed to explore both kinds of plane; a single loop sees only one component.
 
 ## The Gaussian Average of the Loop
 
-The loop's expectation value is Gaussian in the free theory, and the Gaussian average is the direct transcription of the generating functional of the preceding article. With the source $J_\mu$ replaced by the line current carried by the loop,
+The loop's expectation value is Gaussian in the free theory, and the Gaussian average is the direct transcription of the generating functional of the preceding article. With the source $J_{\imath}$ replaced by the line current carried by the loop,
 
 $$
-J_\mu(x) = \oint_C dx_\mu\;\delta^{(4)}(x-z(\tau)),
+J_{\imath}(x) = \oint_C dx_{\imath}\;\delta^{(4)}(x-z(\tau)),
 $$
 
 the gauge-fixed Gaussian average gives
 
 $$
-\langle W(C)\rangle = \left\langle\exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu\right)\right\rangle
-= \exp\left(-\frac{i}{2}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\oint_C dx_\mu\oint_C dy_\nu\;D_{\mu\nu}(x-y)\right),
+\langle W(C)\rangle = \left\langle\exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath}\right)\right\rangle
+= \exp\left(-\frac{i}{2}\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\oint_C dx_{\imath}\oint_C dy_{\jmath}\;D_{\imath\jmath}(x-y)\right),
 $$
 
-the double integral of the propagator along the loop, with the same $-\frac{i}{2}$ of the generating functional of the preceding article and $D_{\mu\nu}$ its inverse quadratic form. This is the free-field content of the loop: the quantum effect is the self-interaction of the loop's line current through the propagator of the preceding article, and the gauge-parameter cancellation of that article is what makes the result well defined, since the line current is conserved and the longitudinal part of $D_{\mu\nu}$ cannot contribute. For a large smooth loop the argument is dominated by the short-distance behaviour of $D_{\mu\nu}$, which grows as $1/(x-y)^2$, and the double integral has a linear divergence proportional to the perimeter,
+the double integral of the propagator along the loop, with the same $-\frac{i}{2}$ of the generating functional of the preceding article and $D_{\imath\jmath}$ its inverse quadratic form. This is the free-field content of the loop: the quantum effect is the self-interaction of the loop's line current through the propagator of the preceding article, and the gauge-parameter cancellation of that article is what makes the result well defined, since the line current is conserved and the longitudinal part of $D_{\imath\jmath}$ cannot contribute. For a large smooth loop the argument is dominated by the short-distance behaviour of $D_{\imath\jmath}$, which grows as $1/(x-y)^2$, and the double integral has a linear divergence proportional to the perimeter,
 
 $$
--\frac{i}{2}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\oint_C dx_\mu\oint_C dy_\nu\,D_{\mu\nu}(x-y)
+-\frac{i}{2}\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\oint_C dx_{\imath}\oint_C dy_{\jmath}\,D_{\imath\jmath}(x-y)
 \;\sim\; -\frac{i\,\kappa_{\mathrm{div}}}{2}\,\mathrm{perim}(C),
 $$
 
@@ -135,7 +135,7 @@ with $\kappa_{\mathrm{div}}$ a real divergent coefficient, so that the divergent
 
 ## The Aharonov–Bohm Phase
 
-For an abelian loop that encircles a region of confined flux, the loop integral equals the enclosed flux by Stokes' theorem, whether or not the field vanishes on the loop itself. If the flux $Ξ=\frac12\int_S \sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}d\Sigma_{\mu\nu}$ is confined to a tube that the loop encloses but does not touch, then $W(C)=\exp(i\theta_{\mathrm{flx}})$, with the flux angle $\theta_{\mathrm{flx}}=Ξ$ real because it is a flux through a real surface, even though $\tilde{F}=0$ at every point of the loop. This is the Aharonov–Bohm phase, and it shows that the connection carries physical information that the field strength at the loop does not: the holonomy is the primary observable and the field strength is its local density. In the framework the loop's phase is the exponential of a scalar-part integral of the material connection, and the flux it measures is the integral of the field strength biquaternion over the enclosed surface.
+For an abelian loop that encircles a region of confined flux, the loop integral equals the enclosed flux by Stokes' theorem, whether or not the field vanishes on the loop itself. If the flux $Ξ=\frac12\int_S \sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}d\Sigma_{\imath\jmath}$ is confined to a tube that the loop encloses but does not touch, then $W(C)=\exp(i\theta_{\mathrm{flx}})$, with the flux angle $\theta_{\mathrm{flx}}=Ξ$ real because it is a flux through a real surface, even though $\tilde{F}=0$ at every point of the loop. This is the Aharonov–Bohm phase, and it shows that the connection carries physical information that the field strength at the loop does not: the holonomy is the primary observable and the field strength is its local density. In the framework the loop's phase is the exponential of a scalar-part integral of the material connection, and the flux it measures is the integral of the field strength biquaternion over the enclosed surface.
 
 ## The Non-Abelian Loop and the Surface
 
@@ -144,7 +144,7 @@ For the non-abelian theory there is a surface form of the holonomy, but it is no
 $$
 U(\partial S) = \mathcal{P}_S\exp\left(i\int_S \mathcal{F}\right),
 \qquad
-\mathcal{F}(r_x) = U(r_{0x},r_x)\,F_{\mu\nu}(r_x)\,U(r_x,r_{0x})\,dx_\mu\wedge dx_\nu ,
+\mathcal{F}(r_x) = U(r_{0x},r_x)\,F_{\imath\jmath}(r_x)\,U(r_x,r_{0x})\,dx_{\imath}\wedge dx_{\jmath} ,
 $$
 
 where the field strength is transported back to a common base point $r_{0x}$ before being integrated, and the path ordering is along the surface. The trace of the holonomy is independent of the choice of base point and of the transport, which is why the Wilson loop is well defined. In the framework the transport factors are elements of the informational realization of the group, and the statement is that the loop measures the field strength dressed by the adjoint action — the same adjoint action that the article on integer-spin quantization identifies as the rotation.
@@ -188,17 +188,17 @@ so that the loop is the worldline of a pair of static sources separated by $L$ a
 In the framework the order parameter is the expectation of the scalar part of the holonomy of a material-sector connection, taken around a closed curve,
 
 $$
-\langle W(C)\rangle = \left\langle \mathrm{Tr}\,\mathcal{P}\exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_\mu\varepsilon_\mu\tilde{A}_{\Phi,\mu} dx_\mu\right)\right\rangle ,
+\langle W(C)\rangle = \left\langle \mathrm{Tr}\,\mathcal{P}\exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath}\tilde{A}_{\Phi,\imath} dx_{\imath}\right)\right\rangle ,
 $$
 
 with the trace over the informational realization of the gauge group and the average over the material-sector configurations. The two fixed-point sectors appear in the two operations: the average is over $\mathbb{B}_{\Phi}$ configurations, and the trace is over the $\mathbb{B}_{\Psi}$ realization of the group. The order parameter is thus the expectation of a two-sector bilinear, and the confinement transition is a statement about its long-distance behaviour.
 
 ### The Loop as the Phase of a Charged Worldline
 
-The loop is not only an abstract observable; it is the phase of a charged particle's worldline. Coupling a charge to the connection by the minimal prescription $D_\mu=\partial/\partial x_\mu+igA_\mu$, the amplitude for a particle to propagate along a worldline acquires a factor
+The loop is not only an abstract observable; it is the phase of a charged particle's worldline. Coupling a charge to the connection by the minimal prescription $D_{\imath}=\partial/\partial x_{\imath}+igA_{\imath}$, the amplitude for a particle to propagate along a worldline acquires a factor
 
 $$
-\exp\left(ig\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right),
+\exp\left(ig\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath}\,dx_{\imath}\right),
 $$
 
 so that the Wilson loop is the closed-worldline phase — the sum of the phases accumulated along the worldline. The statement is the gauge-covariance of the minimal coupling: the phase is what a gauge transformation shifts away, and the closed loop is the smallest worldline on which the shift cancels. In the framework the coupling is between a material-sector connection and the worldline of a charged field, and the phase is the exponential of the scalar-part integral of the connection; the loop therefore measures the material sector along a closed curve, and its gauge invariance is the statement that only closed curves give gauge-invariant phases.
@@ -209,11 +209,11 @@ For a particle of spin, the worldline carries an internal precession in addition
 
 ## The Loop Equation
 
-The quantum Wilson loop is constrained by the Schwinger–Dyson equation of the gauge-field path integral. Varying the connection in the integral and using the definition of the loop, one obtains the **loop equation**, in which the area derivative of $\langle W(C)\rangle$ is expressed through the loop self-intersection. The derivation is short enough to indicate: the variation of the loop under $A_\mu\to A_\mu+\delta A_\mu$ gives $i\oint_C\delta \sum_\mu\varepsilon_\mu A_\mu dx_\mu$ times the loop, and the variation of the action gives the field equation; integrating by parts and using the equation of motion expresses the result through the area derivative
+The quantum Wilson loop is constrained by the Schwinger–Dyson equation of the gauge-field path integral. Varying the connection in the integral and using the definition of the loop, one obtains the **loop equation**, in which the area derivative of $\langle W(C)\rangle$ is expressed through the loop self-intersection. The derivation is short enough to indicate: the variation of the loop under $A_{\imath}\to A_{\imath}+\delta A_{\imath}$ gives $i\oint_C\delta \sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath}$ times the loop, and the variation of the action gives the field equation; integrating by parts and using the equation of motion expresses the result through the area derivative
 
 $$
-\frac{\delta}{\delta\sigma_{\mu\nu}(x)}\langle W(C)\rangle
-= \left\langle \mathrm{Tr}\,\mathcal{P}\left(F_{\mu\nu}(x)\,\exp(\frac{2\pi ϙ}{h}\oint_C A)\right)\right\rangle ,
+\frac{\delta}{\delta\sigma_{\imath\jmath}(x)}\langle W(C)\rangle
+= \left\langle \mathrm{Tr}\,\mathcal{P}\left(F_{\imath\jmath}(x)\,\exp(\frac{2\pi ϙ}{h}\oint_C A)\right)\right\rangle ,
 $$
 
 the statement that the area derivative inserts the field strength at a point of the loop. Iterating and using the field equation produces the loop equation. For the abelian theory the content is the free-field equation for the field strength; for the non-abelian theory the equation couples loops with different numbers of windings, and closing it requires an additional assumption such as the factorization of the large-$N$ limit. These equations are standard and are cited below; their biquaternion rendition adds nothing beyond the observation already made, that the loop is twice the scalar part of a holonomy of a material connection over an informational realization, and that the loop equation is the statement that this holonomy is a functional of the field strength obeying the nonlinear field equation of the companion articles.
@@ -222,7 +222,7 @@ the statement that the area derivative inserts the field strength at a point of 
 
 The constructions of this article can be collected into a single statement about the framework. A Wilson loop is built from three operations, and each of them is an operation the algebra already provides.
 
-The first is the integration of a **material** one-form along a curve: the holonomy's logarithm, $\oint\sum_\mu\varepsilon_\mu\tilde{A}_{\Phi,\mu} dx_\mu$, is an element built from the material sector. The second is the **exponentiation** of that element into the group generated by the informational realization of the gauge algebra; for $\mathrm{SU}(2)$ that group is the unit quaternions, and the exponentiation is the usual exponential of an imaginary quaternion, an element of $\mathbb{B}_{\Psi}$. The third is the **trace**, which in the quaternion realization is twice the scalar part; it is the operation that turns the group element into a gauge-invariant number. The loop is therefore the scalar part of the holonomy of a material connection in an informational group element, and its gauge invariance is the invariance of the scalar part under the adjoint action.
+The first is the integration of a **material** one-form along a curve: the holonomy's logarithm, $\oint\sum_{\imath}\varepsilon_{\imath}\tilde{A}_{\Phi,\imath} dx_{\imath}$, is an element built from the material sector. The second is the **exponentiation** of that element into the group generated by the informational realization of the gauge algebra; for $\mathrm{SU}(2)$ that group is the unit quaternions, and the exponentiation is the usual exponential of an imaginary quaternion, an element of $\mathbb{B}_{\Psi}$. The third is the **trace**, which in the quaternion realization is twice the scalar part; it is the operation that turns the group element into a gauge-invariant number. The loop is therefore the scalar part of the holonomy of a material connection in an informational group element, and its gauge invariance is the invariance of the scalar part under the adjoint action.
 
 Three consequences are worth stating separately. The untraced holonomy is an element of $\mathbb{B}_{\Psi}$ — a unit quaternion — and is not gauge invariant; it transforms by the adjoint action, which is the conjugation of a quaternion by another. The traced loop is invariant because the scalar part is what the adjoint action preserves. And the abelian loop is the degenerate case in which the group element lies in the centre, so that the holonomy is a phase and the trace is trivial. The framework thus orders the three cases — central, adjoint, and the general representation — by the sector in which the group element lies, and the Wilson loop of a given gauge theory is a trace over exactly one of them.
 
@@ -252,9 +252,9 @@ Three consequences are worth stating separately. The untraced holonomy is an ele
 
 The Wilson loop is twice the scalar part of the holonomy of the gauge connection around a closed curve. In the biquaternion framework the connection is a material-sector one-form, $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, and the holonomy is an element of the gauge group realized in the informational sector $\mathbb{B}_{\Psi}$ — for $\mathrm{SU}(2)$ a unit quaternion — so that the loop is the scalar part of that element and couples the two fixed-point sectors.
 
-For the abelian theory the loop is $\exp(\frac{2\pi ϙ}{h}\oint \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; it is invariant under the gradient shift because the integral of a total derivative around a closed curve vanishes, and Stokes' theorem makes it the exponential of the enclosed flux. For the non-abelian theory the holonomy is a path-ordered exponential transforming by conjugation at the base point, and twice its scalar part is invariant; this was verified for the quaternion realization, where the real part of the trace was unchanged under random site gauge transformations while the untraced holonomy changed by conjugation.
+For the abelian theory the loop is $\exp(\frac{2\pi ϙ}{h}\oint \sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath})$; it is invariant under the gradient shift because the integral of a total derivative around a closed curve vanishes, and Stokes' theorem makes it the exponential of the enclosed flux. For the non-abelian theory the holonomy is a path-ordered exponential transforming by conjugation at the base point, and twice its scalar part is invariant; this was verified for the quaternion realization, where the real part of the trace was unchanged under random site gauge transformations while the untraced holonomy changed by conjugation.
 
-For a small loop the holonomy expands as $W=1+i\ell^2F_{\mu\nu}+O(\ell^4)$, verified to six significant figures on a plaquette, so that the loop exponentiates the field strength. Writing $\tilde{F}=\sum_\eta(iE_\eta-H_\eta)\vec e_\eta$, the square of the field strength is central,
+For a small loop the holonomy expands as $W=1+i\ell^2F_{\imath\jmath}+O(\ell^4)$, verified to six significant figures on a plaquette, so that the loop exponentiates the field strength. Writing $\tilde{F}=\sum_\eta(iE_\eta-H_\eta)\vec e_\eta$, the square of the field strength is central,
 
 $$
 \tilde{F}^2=\left(|\vec E|^2-|\vec H|^2\right)e_t+2i\,\vec E\cdot\vec H\,e_t ,
@@ -267,15 +267,15 @@ verified in the $2\times2$ representation, so that the two Lorentz invariants of
 | Symbol | Meaning |
 |---|---|
 | $C$ | Closed curve (loop); $S$ a surface it bounds |
-| $\tilde{A}_{\Phi}=\sum_\mu\varepsilon_\mu\tilde{A}_{\Phi,\mu} dx_\mu$ | Connection one-form; $\tilde{A}_{\Phi,\mu}\in\mathbb{B}_{\Phi}$ |
-| $W(C)=\exp(\frac{2\pi ϙ}{h}\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Abelian Wilson loop; a phase |
-| $U(C)=\mathcal{P}\exp(\frac{2\pi ϙ}{h}\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Holonomy (group element), non-abelian |
-| $W(C)=\mathrm{Tr}\,\mathcal{P}\exp(\frac{2\pi ϙ}{h}\oint_C \sum_{\mu,a}\varepsilon_\mu A_{\mu a}T_a dx_\mu)$ | Non-abelian Wilson loop |
+| $\tilde{A}_{\Phi}=\sum_{\imath}\varepsilon_{\imath}\tilde{A}_{\Phi,\imath} dx_{\imath}$ | Connection one-form; $\tilde{A}_{\Phi,\imath}\in\mathbb{B}_{\Phi}$ |
+| $W(C)=\exp(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath})$ | Abelian Wilson loop; a phase |
+| $U(C)=\mathcal{P}\exp(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath})$ | Holonomy (group element), non-abelian |
+| $W(C)=\mathrm{Tr}\,\mathcal{P}\exp(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath,a}\varepsilon_{\imath} A_{\imath a}T_a dx_{\imath})$ | Non-abelian Wilson loop |
 | $\mathcal{P}$ | Path ordering |
 | $T_a=i\vec e_a\in\mathbb{B}_{\Psi}$ | Gauge generators realized in the informational sector |
 | $U(C)\mapsto Q\,U(C)\,Q^{-1}$ | Conjugation of the holonomy; trace invariant |
-| $\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu=\frac12\int_S \sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}d\Sigma_{\mu\nu}$ | Stokes' theorem; loop equals enclosed flux |
-| $W=1+i \ell^2F_{\mu\nu}+O(\ell^4)$ | Small-loop expansion; exponentiated field strength |
+| $\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath}=\frac12\int_S \sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}d\Sigma_{\imath\jmath}$ | Stokes' theorem; loop equals enclosed flux |
+| $W=1+i \ell^2F_{\imath\jmath}+O(\ell^4)$ | Small-loop expansion; exponentiated field strength |
 | $\tilde{F}=\sum_\eta(iE_\eta-H_\eta)\vec e_\eta$ | Field strength biquaternion |
 | $\tilde{F}^2=(E^2-H^2)e_t+2i(E\cdot H)e_t$ | Central element; its two scalar parts are the Maxwell invariants (verified) |
 | $\langle W(C)\rangle\sim \exp(-\kappa\,\mathrm{perim})$ / $\exp(-\sigma\,\mathrm{area})$ | Perimeter law (screening) / area law (confinement) |

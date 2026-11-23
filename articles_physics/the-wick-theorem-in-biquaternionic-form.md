@@ -258,7 +258,7 @@ For a field the theorem is standard and transcribed: time-ordered products equal
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Scalar imaginary, central |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material and informational sectors |
 | $\vec\Pi_{\mathrm{nil},x}=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Pi_{\mathrm{nil},y}=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode ladder |

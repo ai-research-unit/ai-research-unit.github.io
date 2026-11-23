@@ -28,7 +28,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 
 ## Conventions
 
-**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace, the observables, and $\mathbb{B}_{\Phi}$ the anti-Hermitian one, the generators. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The variable is $r'_t=c\,t'$ throughout; where a formula is more familiar in $t'$, the substitution $\mathrm{d}r'_t=c\,\mathrm{d}t'$ and $i \frac{h}{2\pi}\,c\,\partial/\partial r'_t=i \frac{h}{2\pi}\,\partial/\partial t'$ is exact and is not repeated.
+**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace, the observables, and $\mathbb{B}_{\Phi}$ the anti-Hermitian one, the generators. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The variable is $r'_t=c\,t'$ throughout; where a formula is more familiar in $t'$, the substitution $\mathrm{d}r'_t=c\,\mathrm{d}t'$ and $i \frac{h}{2\pi}\,c\,\partial/\partial r'_t=i \frac{h}{2\pi}\,\partial/\partial t'$ is exact and is not repeated.
 
 ## The Action in Element Form
 
@@ -109,7 +109,7 @@ $$
 \qquad\text{for every }\delta\tilde\Xi^{*}\in\mathbb{B},
 $$
 
-and the bracket vanishes as an element of $\mathbb{B}$. The implication uses the non-degeneracy of the pairing $(X,Y)\mapsto\mathrm{Sc}(XY)$ on $\mathbb{B}$, which is the plain pairing of $\mathbb{B}\cong M_2(\mathbb{C})$: if $\mathrm{Sc}(XE)=0$ for every $X\in\mathbb{B}$, then $E=0$, as one sees by taking $X=E^{*}$, which gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum that vanishes only for $E=0$. Hence
+and the bracket vanishes as an element of $\mathbb{B}$. The implication uses the non-degeneracy of the pairing $(X,Y)\mapsto\mathrm{Sc}(XY)$ on $\mathbb{B}$, which is the plain pairing of $\mathbb{B}\cong M_2(\mathbb{C})$: if $\mathrm{Sc}(XE)=0$ for every $X\in\mathbb{B}$, then $E=0$, as one sees by taking $X=E^{*}$, which gives $\mathrm{Sc}(E^{*}E)=\sum_{\imath}\lvert E_{\imath}\rvert^{2}$, a sum that vanishes only for $E=0$. Hence
 
 $$
 i \frac{h}{2\pi}\,c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi.
@@ -167,7 +167,7 @@ $$
 
 which is the parent's second writing. Equivalently $\frac{h}{2\pi}\,c\,\partial\tilde\Xi=-i\tilde H_\Psi\tilde\Xi$. So the second writing is available from the same action, and the only thing that changed is which factor of the coupling carries the $i$.
 
-**What would break it.** If $i$ were replaced by a non-central root $\tilde Z$ of $-e_t$, the generator $-\frac{2\pi \tilde Z\tilde H_\Psi}{h\,c}$ need not be anti-Hermitian, and the second writing need not exist. The action inherits the parent's verdict, and the verdict has two steps rather than one. **Reality costs only anti-Hermiticity.** The kinetic bracket $K=\tilde\Xi^{*}\partial\tilde\Xi-(\partial\tilde\Xi^{*})\tilde\Xi$ is anti-Hermitian, and $\mathrm{Sc}(\tilde ZK)$ is real for every anti-Hermitian $\tilde Z$, because $(\tilde ZK)^{*}=K\tilde Z$ and $\mathrm{Sc}(K\tilde Z)=\mathrm{Sc}(\tilde ZK)$. The roots used in this article — $\pm i$, the units $\pm\vec e_\mu$ and the real unit vectors $\vec u$ — are all anti-Hermitian, so the reality of the action does not by itself select the central one. **Centrality is what the rest costs.** The generator $-\frac{2\pi \tilde Z\tilde H_\Psi}{h\,c}$ must be anti-Hermitian for *every* Hermitian $\tilde H_\Psi$, which holds exactly when $\tilde Z$ commutes with $\tilde H_\Psi$; and the phase rotation $\tilde\Xi\mapsto\exp(\tilde Z\alpha)\tilde\Xi$ leaves the potential term invariant under the same condition. Only a central $\tilde Z$ meets it for all $\tilde H_\Psi$. Unitarity, the second writing and the phase symmetry are what the central unit buys; the reality of the action is the weakest of the four requirements.
+**What would break it.** If $i$ were replaced by a non-central root $\tilde Z$ of $-e_t$, the generator $-\frac{2\pi \tilde Z\tilde H_\Psi}{h\,c}$ need not be anti-Hermitian, and the second writing need not exist. The action inherits the parent's verdict, and the verdict has two steps rather than one. **Reality costs only anti-Hermiticity.** The kinetic bracket $K=\tilde\Xi^{*}\partial\tilde\Xi-(\partial\tilde\Xi^{*})\tilde\Xi$ is anti-Hermitian, and $\mathrm{Sc}(\tilde ZK)$ is real for every anti-Hermitian $\tilde Z$, because $(\tilde ZK)^{*}=K\tilde Z$ and $\mathrm{Sc}(K\tilde Z)=\mathrm{Sc}(\tilde ZK)$. The roots used in this article — $\pm i$, the units $\pm\vec e_{\imath}$ and the real unit vectors $\vec u$ — are all anti-Hermitian, so the reality of the action does not by itself select the central one. **Centrality is what the rest costs.** The generator $-\frac{2\pi \tilde Z\tilde H_\Psi}{h\,c}$ must be anti-Hermitian for *every* Hermitian $\tilde H_\Psi$, which holds exactly when $\tilde Z$ commutes with $\tilde H_\Psi$; and the phase rotation $\tilde\Xi\mapsto\exp(\tilde Z\alpha)\tilde\Xi$ leaves the potential term invariant under the same condition. Only a central $\tilde Z$ meets it for all $\tilde H_\Psi$. Unitarity, the second writing and the phase symmetry are what the central unit buys; the reality of the action is the weakest of the four requirements.
 
 **The counterexample.** The parent's counterexample is the sharp one: with $\tilde Z=\vec e_z$ and $\tilde H_\Psi=i\vec e_x$,
 
@@ -237,7 +237,7 @@ $$
 **The factor of two.** $N$ is the parent's density up to a factor of two,
 
 $$
-\rho=2\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=2\sum_\mu\lvert\Xi_\mu\rvert^{2}=2N\;\ge\;0,
+\rho=2\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=2\sum_{\imath}\lvert\Xi_{\imath}\rvert^{2}=2N\;\ge\;0,
 $$
 
 and the factor is the scalar-part convention, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$, not a physical normalisation. So $N=\rho/2$, and the factor is stated once. In the word of the companion article, $N=r^{2}\cosh\theta_{\mathrm{rpd}}$, so the charge reads the scale and the rapidity, and the phase rotation leaves both alone, as it must.
@@ -304,7 +304,7 @@ The article adds a compact statement, one derivation of the two currents, and a 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $\mathbb{B}_{C}$ | Centre, $\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace, the observables |
@@ -318,7 +318,7 @@ The article adds a compact statement, one derivation of the two currents, and a 
 | $S$ | The action; $L$ its Lagrangian density |
 | $\partial_{r'_t}$ | Derivative with respect to the material time |
 | $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | Phase Noether charge; $\rho=2N$ |
-| $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\sum_\mu\lvert\Xi_\mu\rvert^{2}\ge0$ | The parent's density |
+| $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\sum_{\imath}\lvert\Xi_{\imath}\rvert^{2}\ge0$ | The parent's density |
 | $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)$ | Energy; the time-translation charge |
 | $\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$ | Propagator of the constant setting; $\theta_{\mathrm{evo}}=\frac{2\pi h_t r'_t}{h\,c}$, $\theta=\frac{2\pi \lvert\vec h_\Psi\rvert r'_t}{h\,c}$ |
 | $h_t,\ \vec h_\Psi$ | Scalar and vector parts of $\tilde H_\Psi$, numbers in the constant setting |

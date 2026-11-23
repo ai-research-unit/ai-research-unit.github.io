@@ -183,7 +183,7 @@ where $\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$ runs over the four sign 
 *Idempotency.* The square of $\tilde\Pi_{\mathrm{id},\epsilon}$ is
 
 $$
-\tilde\Pi_{\mathrm{id},\epsilon}^2 = \frac{1}{16}\sum_{\mu,\mu_2\in\{t,x,y,z\}}\epsilon_\mu\epsilon_{\mu_2}\,(e_\mu e_{\mu_2})\otimes(e_\mu e_{\mu_2}),
+\tilde\Pi_{\mathrm{id},\epsilon}^2 = \frac{1}{16}\sum_{\imath,\imath_2\in\{t,x,y,z\}}\epsilon_{\imath}\epsilon_{\imath_2}\,(e_{\imath} e_{\imath_2})\otimes(e_{\imath} e_{\imath_2}),
 $$
 
 with $\epsilon_t \equiv 1$. We group the sixteen pairs $(m,m_2)$ into three classes.
@@ -235,7 +235,7 @@ $$
 We compute the pairing term by term. Multiplying $\tilde\Pi_{\mathrm{id},\epsilon}$ by $\tilde{H}_{\Psi,ab}$,
 
 $$
-\tilde\Pi_{\mathrm{id},\epsilon}\tilde{H}_{\Psi,ab} = \frac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\epsilon_\mu\,(e_\mu \cdot i\vec u_x)\otimes(e_\mu \cdot i\vec u_y),
+\tilde\Pi_{\mathrm{id},\epsilon}\tilde{H}_{\Psi,ab} = \frac{1}{4}\sum_{\imath\in\{t,x,y,z\}}\epsilon_{\imath}\,(e_{\imath} \cdot i\vec u_x)\otimes(e_{\imath} \cdot i\vec u_y),
 $$
 
 with $\epsilon_t \equiv 1$.
@@ -245,19 +245,19 @@ with $\epsilon_t \equiv 1$.
 **Terms $m \in \{x,y,z\}$.** We have
 
 $$
-e_\mu\cdot i\vec u_x = i\,e_\mu \vec u_x = i\left(-a_\mu e_t + \text{vector}\right),
+e_{\imath}\cdot i\vec u_x = i\,e_{\imath} \vec u_x = i\left(-a_{\imath} e_t + \text{vector}\right),
 $$
 
-using $e_\mu \vec u_x = -a_\mu e_t + \sum_{\eta \neq \mu} a_\eta e_\mu \vec e_\eta$. The scalar part is $-i a_\mu$, and similarly $\mathrm{Sc}(e_\mu\cdot i\vec u_y) = -i b_\mu$. The product of the two scalar parts is
+using $e_{\imath} \vec u_x = -a_{\imath} e_t + \sum_{\eta \neq \imath} a_\eta e_{\imath} \vec e_\eta$. The scalar part is $-i a_{\imath}$, and similarly $\mathrm{Sc}(e_{\imath}\cdot i\vec u_y) = -i b_{\imath}$. The product of the two scalar parts is
 
 $$
-(-i a_\mu)(-i b_\mu) = i^2\, a_\mu b_\mu = -a_\mu b_\mu.
+(-i a_{\imath})(-i b_{\imath}) = i^2\, a_{\imath} b_{\imath} = -a_{\imath} b_{\imath}.
 $$
 
 **Assembly.** Substituting, the factor $\frac14$ carried by the product and the factor $4$ carried by the pairing cancel,
 
 $$
-E(\vec u_x, \vec u_y) = \sum_{\mu\in\{x,y,z\}}\epsilon_\mu\,(-a_\mu b_\mu) = -\sum_{\mu\in\{x,y,z\}}\epsilon_\mu\,a_\mu b_\mu.
+E(\vec u_x, \vec u_y) = \sum_{\imath\in\{x,y,z\}}\epsilon_{\imath}\,(-a_{\imath} b_{\imath}) = -\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath}\,a_{\imath} b_{\imath}.
 $$
 
 So the correlation function is

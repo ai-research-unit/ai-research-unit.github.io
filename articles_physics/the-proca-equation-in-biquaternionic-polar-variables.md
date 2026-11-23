@@ -27,10 +27,10 @@ with $\varrho>0$ the modulus of the quaternionic norm, $\varepsilon=\pm1$ the si
 *Second, the logarithmic derivative has two brackets and not four.* For a timelike field value
 
 $$
-\tilde A_\Phi^{-1}\frac{\partial\tilde A_\Phi}{\partial R_\mu}
-=\frac{\partial\ln \varrho}{\partial R_\mu}+\Gamma_\mu,
+\tilde A_\Phi^{-1}\frac{\partial\tilde A_\Phi}{\partial R_{\imath}}
+=\frac{\partial\ln \varrho}{\partial R_{\imath}}+\Gamma_{\imath},
 \qquad
-\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu},
+\Gamma_{\imath}=\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_{\imath}},
 $$
 
 and for a spacelike one the same expression with the frame conjugated by $\hat u$ and one term added. The central bracket of the Dirac word is absent identically in both branches, and the scalar bracket is exactly the gradient of $\ln \varrho$. That absence is the polar form of the source article's central statement that the Proca field is real: a real four-vector has no phase to differentiate.
@@ -38,12 +38,12 @@ and for a spacelike one the same expression with the frame conjugated by $\hat u
 *Third, the equation separates into a scale equation and a transport equation.* Multiplying the Proca equation by $\tilde A_\Phi^{-1}$ and splitting into scalar and scalar-free parts gives
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0,
+\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0,
 \qquad
-\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2-\mathrm{Sc}(\Gamma_\mu^2)\Bigr)+2\sum_\mu\frac{\partial\ln \varrho}{\partial R_\mu}\Gamma_\mu=0,
+\sum_{\imath}\Bigl(\frac{\partial\Gamma_{\imath}}{\partial R_{\imath}}+\Gamma_{\imath}^2-\mathrm{Sc}(\Gamma_{\imath}^2)\Bigr)+2\sum_{\imath}\frac{\partial\ln \varrho}{\partial R_{\imath}}\Gamma_{\imath}=0,
 $$
 
-the second in the traceless part. The first is a Klein–Gordon equation for the scale with a source built from the frame's Maurer–Cartan form; the second is the transport of the frame. For a fixed boost axis they reduce to a pair with a conservation-law structure, $\partial_\mu(\varrho^2\partial_\mu\theta_{\mathrm{rpd}})=0$.
+the second in the traceless part. The first is a Klein–Gordon equation for the scale with a source built from the frame's Maurer–Cartan form; the second is the transport of the frame. For a fixed boost axis they reduce to a pair with a conservation-law structure, $\partial_{\imath}(\varrho^2\partial_{\imath}\theta_{\mathrm{rpd}})=0$.
 
 **What is not available.** There is no Madelung pair, no guidance equation and no quantum potential, because there is no phase and therefore no phase gradient. The polar form of the material sector is a magnitude–direction decomposition of a real four-vector, and the Lorenz condition in these variables is one scalar equation, not the continuity equation of a fluid.
 
@@ -148,27 +148,27 @@ $$
 **The timelike branch.** Differentiate $\tilde A_\Phi=\varepsilon i \varrho\tilde U$ and divide by $\tilde A_\Phi$. Since $\tilde A_\Phi^{-1}=(-\varepsilon i/\varrho)\tilde U^{-1}$,
 
 $$
-\tilde A_\Phi^{-1}\frac{\partial\tilde A_\Phi}{\partial R_\mu}
-=-\frac{\varepsilon i}{\varrho}\tilde U^{-1}\,\varepsilon i\Bigl(\frac{\partial \varrho}{\partial R_\mu}\tilde U+\varrho\frac{\partial\tilde U}{\partial R_\mu}\Bigr)
-=\frac{\partial\ln \varrho}{\partial R_\mu}+\tilde U^{-1}\frac{\partial\tilde U}{\partial R_\mu}.
+\tilde A_\Phi^{-1}\frac{\partial\tilde A_\Phi}{\partial R_{\imath}}
+=-\frac{\varepsilon i}{\varrho}\tilde U^{-1}\,\varepsilon i\Bigl(\frac{\partial \varrho}{\partial R_{\imath}}\tilde U+\varrho\frac{\partial\tilde U}{\partial R_{\imath}}\Bigr)
+=\frac{\partial\ln \varrho}{\partial R_{\imath}}+\tilde U^{-1}\frac{\partial\tilde U}{\partial R_{\imath}}.
 $$
 
-Write $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$ for the frame bracket, with $\partial_\mu=\partial/\partial R_\mu$. Its decomposition is fixed by the two elementary derivatives of the boost,
+Write $\Gamma_{\imath}=\tilde U^{-1}\partial_{\imath}\tilde U$ for the frame bracket, with $\partial_{\imath}=\partial/\partial R_{\imath}$. Its decomposition is fixed by the two elementary derivatives of the boost,
 
 $$
-\Gamma_\mu=\tfrac12\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\,i\hat u_{\mathrm b}
-+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,\frac{\partial\hat u_{\mathrm b}}{\partial R_\mu}
-+\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\,\hat u_{\mathrm b}\frac{\partial\hat u_{\mathrm b}}{\partial R_\mu},
+\Gamma_{\imath}=\tfrac12\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}\,i\hat u_{\mathrm b}
++i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,\frac{\partial\hat u_{\mathrm b}}{\partial R_{\imath}}
++\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\,\hat u_{\mathrm b}\frac{\partial\hat u_{\mathrm b}}{\partial R_{\imath}},
 $$
 
-in which the first term is a Hermitian vector, the second is a Hermitian vector because $i$ times a real vector is Hermitian, and the third is a real vector because $\hat u_{\mathrm b}\partial_\mu\hat u_{\mathrm b}$ has no scalar part. So the frame bracket carries two types and no more, and its scalar part vanishes identically.
+in which the first term is a Hermitian vector, the second is a Hermitian vector because $i$ times a real vector is Hermitian, and the third is a real vector because $\hat u_{\mathrm b}\partial_{\imath}\hat u_{\mathrm b}$ has no scalar part. So the frame bracket carries two types and no more, and its scalar part vanishes identically.
 
 **The spacelike branch.** Differentiate $\tilde A_\Phi=\varrho\tilde U\hat u$ and divide by it. Since $\tilde A_\Phi^{-1}=(1/\varrho)\hat u^{-1}\tilde U^{-1}=-(1/\varrho)\hat u\tilde U^{-1}$,
 
 $$
-\tilde A_\Phi^{-1}\frac{\partial\tilde A_\Phi}{\partial R_\mu}
-=\frac{\partial\ln \varrho}{\partial R_\mu}
--\hat u\,\Gamma_\mu\,\hat u-\hat u\frac{\partial\hat u}{\partial R_\mu},
+\tilde A_\Phi^{-1}\frac{\partial\tilde A_\Phi}{\partial R_{\imath}}
+=\frac{\partial\ln \varrho}{\partial R_{\imath}}
+-\hat u\,\Gamma_{\imath}\,\hat u-\hat u\frac{\partial\hat u}{\partial R_{\imath}},
 $$
 
 where the conjugation by $\hat u$ acts on the boost generator and returns a boost generator with its axis reflected, and the last term is a real vector because a unit vector field is orthogonal to its own derivative. The two identities are exact and are checked by finite differences on a smooth configuration at the level of $10^{-11}$.
@@ -177,10 +177,10 @@ where the conjugation by $\hat u$ acts on the boost generator and returns a boos
 
 | bracket | type | timelike branch | spacelike branch |
 | --- | --- | --- | --- |
-| scale | real central scalar | $\partial_\mu\ln \varrho$ | $\partial_\mu\ln \varrho$ |
+| scale | real central scalar | $\partial_{\imath}\ln \varrho$ | $\partial_{\imath}\ln \varrho$ |
 | phase | central imaginary | $0$ identically | $0$ identically |
-| frame, rapidity part | Hermitian vector | $\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ | $-\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u$ |
-| frame, axis part | real vector | $\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}\partial_\mu\hat u_{\mathrm b}$ | $-\hat u\partial_\mu\hat u$ and the conjugated rapidity term |
+| frame, rapidity part | Hermitian vector | $\tfrac12\partial_{\imath}\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ | $-\tfrac12\partial_{\imath}\theta_{\mathrm{rpd}}\,i\hat u$ |
+| frame, axis part | real vector | $\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}\partial_{\imath}\hat u_{\mathrm b}$ | $-\hat u\partial_{\imath}\hat u$ and the conjugated rapidity term |
 
 **The absence of the central bracket is the whole difference.** In the spinor case the central bracket is the gradient of the angle and it is the guidance equation: $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$. In the material sector there is no central bracket at all, so there is no phase gradient, no guidance, and no Madelung pair. What replaces it is a direction $\hat u$ carried by the frame, and the transport of that direction is a real-vector bracket, which the spinor's rotor also has. The material sector keeps the scale, the boost and the rotor's rôle, and it loses the phase. That is the polar form of "the Proca field is real".
 
@@ -197,52 +197,52 @@ $$
 and on the Lorenz surface it is the componentwise Klein–Gordon equation $\Box_\Phi\tilde A_\Phi=k_m^2\tilde A_\Phi$. Substituting the timelike word and using the product rule,
 
 $$
-\Box_\Phi\tilde A_\Phi=\varepsilon i\Bigl[(\Box_\Phi \varrho)\tilde U+2\sum_\mu\frac{\partial \varrho}{\partial R_\mu}\frac{\partial\tilde U}{\partial R_\mu}+\varrho\,\Box_\Phi\tilde U\Bigr],
+\Box_\Phi\tilde A_\Phi=\varepsilon i\Bigl[(\Box_\Phi \varrho)\tilde U+2\sum_{\imath}\frac{\partial \varrho}{\partial R_{\imath}}\frac{\partial\tilde U}{\partial R_{\imath}}+\varrho\,\Box_\Phi\tilde U\Bigr],
 $$
 
 and multiplying on the left by $\tilde A_\Phi^{-1}$ gives the exact identity
 
 $$
 \tilde A_\Phi^{-1}\bigl(\Box_\Phi-k_m^2\bigr)\tilde A_\Phi
-=\frac{\Box_\Phi \varrho}{\varrho}+2\sum_\mu\frac{\partial\ln \varrho}{\partial R_\mu}\Gamma_\mu
+=\frac{\Box_\Phi \varrho}{\varrho}+2\sum_{\imath}\frac{\partial\ln \varrho}{\partial R_{\imath}}\Gamma_{\imath}
 +\tilde U^{-1}\Box_\Phi\tilde U-k_m^2 .
 $$
 
-The last term before the mass is a Maurer–Cartan identity, $\tilde U^{-1}\Box_\Phi\tilde U=\sum_\mu\bigl(\partial_\mu\Gamma_\mu+\Gamma_\mu^2\bigr)$, which is the statement that the frame's curvature is the derivative of its connection plus its square.
+The last term before the mass is a Maurer–Cartan identity, $\tilde U^{-1}\Box_\Phi\tilde U=\sum_{\imath}\bigl(\partial_{\imath}\Gamma_{\imath}+\Gamma_{\imath}^2\bigr)$, which is the statement that the frame's curvature is the derivative of its connection plus its square.
 
-**The two equations.** Taking the scalar part, and using $\mathrm{Sc}\,\Gamma_\mu=0$ so that the cross term drops,
+**The two equations.** Taking the scalar part, and using $\mathrm{Sc}\,\Gamma_{\imath}=0$ so that the cross term drops,
 
 $$
-\boxed{\;\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0\;}
+\boxed{\;\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0\;}
 $$
 
 and taking the traceless part,
 
 $$
-\boxed{\;\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2-\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)\Bigr)+2\sum_\mu\frac{\partial\ln \varrho}{\partial R_\mu}\Gamma_\mu=0\;}
+\boxed{\;\sum_{\imath}\Bigl(\frac{\partial\Gamma_{\imath}}{\partial R_{\imath}}+\Gamma_{\imath}^2-\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)\Bigr)+2\sum_{\imath}\frac{\partial\ln \varrho}{\partial R_{\imath}}\Gamma_{\imath}=0\;}
 $$
 
 where the second display is an equation in the scalar-free part of $\mathbb{B}$, that is, a Hermitian-vector equation with three real components, and the first is one real equation. Four real equations in all, for four parameters: the count is exact, and that is the sense in which the polar form of the material sector is a chart and not a reduction.
 
-**Why the scalar-free equation subtracts a trace.** The Maurer–Cartan term $\sum_\mu(\partial_\mu\Gamma_\mu+\Gamma_\mu^2)$ is not scalar-free: its scalar part is $\sum_\mu\mathrm{Sc}(\Gamma_\mu^2)$, and that piece is already the source of the first equation. Splitting the identity into scalar and scalar-free parts therefore requires the subtraction, and the second display without it would carry a scalar component that duplicates the first. The cross term needs no correction, because $\mathrm{Sc}(\Gamma_\mu)=0$ identically. The two displays together are the identity, and neither alone is.
+**Why the scalar-free equation subtracts a trace.** The Maurer–Cartan term $\sum_{\imath}(\partial_{\imath}\Gamma_{\imath}+\Gamma_{\imath}^2)$ is not scalar-free: its scalar part is $\sum_{\imath}\mathrm{Sc}(\Gamma_{\imath}^2)$, and that piece is already the source of the first equation. Splitting the identity into scalar and scalar-free parts therefore requires the subtraction, and the second display without it would carry a scalar component that duplicates the first. The cross term needs no correction, because $\mathrm{Sc}(\Gamma_{\imath})=0$ identically. The two displays together are the identity, and neither alone is.
 
-**The subtraction is empty on a fixed axis.** For $\Gamma_\mu=\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ the square is $\Gamma_\mu^2=\tfrac14(\partial_\mu\theta_{\mathrm{rpd}})^{2}(i\hat u_{\mathrm b})^{2}=\tfrac14(\partial_\mu\theta_{\mathrm{rpd}})^{2}$, a central element, so $\mathrm{Sc}(\Gamma_\mu^2)=\Gamma_\mu^2$ and the subtraction removes nothing. That is why the fixed-axis reduction below is unaffected, and why a form derived only on a fixed axis cannot reveal the missing term.
+**The subtraction is empty on a fixed axis.** For $\Gamma_{\imath}=\tfrac12\partial_{\imath}\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ the square is $\Gamma_{\imath}^2=\tfrac14(\partial_{\imath}\theta_{\mathrm{rpd}})^{2}(i\hat u_{\mathrm b})^{2}=\tfrac14(\partial_{\imath}\theta_{\mathrm{rpd}})^{2}$, a central element, so $\mathrm{Sc}(\Gamma_{\imath}^2)=\Gamma_{\imath}^2$ and the subtraction removes nothing. That is why the fixed-axis reduction below is unaffected, and why a form derived only on a fixed axis cannot reveal the missing term.
 
-**The first equation is a Klein–Gordon equation with a source.** The source is $\sum_\mu\mathrm{Sc}(\Gamma_\mu^2)$, the trace of the square of the frame's Maurer–Cartan form. It vanishes when the frame is constant, and it is positive for a pure rapidity gradient, because $\Gamma_\mu=\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ gives $\Gamma_\mu^2=\tfrac14(\partial_\mu\theta_{\mathrm{rpd}})^2(i\hat u_{\mathrm b})^2=\tfrac14(\partial_\mu\theta_{\mathrm{rpd}})^2$ using $(i\hat u_{\mathrm b})^2=+e_t$. So
+**The first equation is a Klein–Gordon equation with a source.** The source is $\sum_{\imath}\mathrm{Sc}(\Gamma_{\imath}^2)$, the trace of the square of the frame's Maurer–Cartan form. It vanishes when the frame is constant, and it is positive for a pure rapidity gradient, because $\Gamma_{\imath}=\tfrac12\partial_{\imath}\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ gives $\Gamma_{\imath}^2=\tfrac14(\partial_{\imath}\theta_{\mathrm{rpd}})^2(i\hat u_{\mathrm b})^2=\tfrac14(\partial_{\imath}\theta_{\mathrm{rpd}})^2$ using $(i\hat u_{\mathrm b})^2=+e_t$. So
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\tfrac14\,\varrho\sum_\mu\Bigl(\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\Bigr)^2=0
+\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\tfrac14\,\varrho\sum_{\imath}\Bigl(\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}\Bigr)^2=0
 \qquad\text{(axis fixed)} .
 $$
 
 This is the closest analogue in this sector to the quantum potential of the scalar case: a term quadratic in the gradient of an angular parameter, added to the mass equation of the modulus. It is not the same object, because there is no phase and the term is built from the rapidity, not from the phase.
 
-**The second equation is a transport law with a conservation form.** With the axis fixed, the frame bracket is $\Gamma_\mu=\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ and $\Gamma_\mu^2$ is central, so the traceless part of the second display reduces to
+**The second equation is a transport law with a conservation form.** With the axis fixed, the frame bracket is $\Gamma_{\imath}=\tfrac12\partial_{\imath}\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ and $\Gamma_{\imath}^2$ is central, so the traceless part of the second display reduces to
 
 $$
-\tfrac12 i\hat u_{\mathrm b}\Bigl(\Box_\Phi\theta_{\mathrm{rpd}}+2\sum_\mu\frac{\partial\ln \varrho}{\partial R_\mu}\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\Bigr)=0
+\tfrac12 i\hat u_{\mathrm b}\Bigl(\Box_\Phi\theta_{\mathrm{rpd}}+2\sum_{\imath}\frac{\partial\ln \varrho}{\partial R_{\imath}}\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}\Bigr)=0
 \qquad\Longleftrightarrow\qquad
-\sum_\mu\frac{\partial}{\partial R_\mu}\Bigl(\varrho^2\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\Bigr)=0 .
+\sum_{\imath}\frac{\partial}{\partial R_{\imath}}\Bigl(\varrho^2\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}\Bigr)=0 .
 $$
 
 The rapidity flows with density $\varrho^2$, and the conservation is exact. This is the polar form of the statement that the boost is the velocity: in the spinor case the velocity is the boost, $\tilde V_\Phi=ic\tilde U^{-2}$, and its transport is the third bracket; here the same object appears as a conserved flux with the modulus as its density. The identity is verified on a smooth configuration at the level of $10^{-9}$.
@@ -266,7 +266,7 @@ $$
 
 The display is the divergence of the four-vector written in the word's variables, and nothing more: the first two terms are $\partial_{r'_t}(\varepsilon rc)$ and the last three are $-\vec\nabla_\Phi\cdot(\varepsilon rs\hat u_{\mathrm b})$. It is one equation on four parameters, and on shell it removes one of them, leaving the three polarizations of the source article's count.
 
-**What it is.** The divergence of the four-potential is a continuity equation outright, because on the timelike branch the four-potential is the current: with $\varrho=\sqrt{-\langle\tilde A_\Phi\rangle_\natural}$ and $u_\mu=A_\mu/\varrho$ one has $A_\mu=\varrho u_\mu$ and $S=\sum_\mu\partial_\mu(ru_\mu)$, so the Lorenz condition is the conservation of the field's own current in the flow's own density. That reading is [The Spin-One Fluid](the-spin-one-fluid.html)'s, and it is exact.
+**What it is.** The divergence of the four-potential is a continuity equation outright, because on the timelike branch the four-potential is the current: with $\varrho=\sqrt{-\langle\tilde A_\Phi\rangle_\natural}$ and $u_{\imath}=A_{\imath}/\varrho$ one has $A_{\imath}=\varrho u_{\imath}$ and $S=\sum_{\imath}\partial_{\imath}(ru_{\imath})$, so the Lorenz condition is the conservation of the field's own current in the flow's own density. That reading is [The Spin-One Fluid](the-spin-one-fluid.html)'s, and it is exact.
 
 **What it is not.** It is not the first member of a *pair*. In the scalar Madelung case the phase equation is the continuity equation for $\rho_{\mathrm{num}}=\varrho^2$ and the modulus equation is the Hamilton–Jacobi equation with the quantum potential, and the pair closes because the field is one complex function. Here the field is a real four-vector: its modulus and its direction are not a complex function, the divergence stands alone, and there is no second conserved density to pair it with — the modulus equation carries the rapidity's gradient as a source and not a potential's gradient as a guidance term. The polar form makes that explicit rather than assuming it.
 
@@ -296,8 +296,8 @@ so the boost is fixed by the amplitude and the whole spacetime dependence sits i
 
 - A word for the material sector with the exact count: four parameters for four components on each branch, so no condition, no multiplier and no constraint analysis.
 - The two brackets that survive, and the proof that the central bracket is absent identically. The absence is the polar form of the reality of the field.
-- The separation of the Proca equation into a scale equation with a source quadratic in the frame's connection and a transport equation for the frame, with the fixed-axis reduction to $\partial_\mu(\varrho^2\partial_\mu\theta_{\mathrm{rpd}})=0$.
-- The polar reading of the Lorenz condition as one divergence, which on the timelike branch is the continuity equation of the current $A_\mu=ru_\mu$, and the reason there is no Madelung pair to go with it.
+- The separation of the Proca equation into a scale equation with a source quadratic in the frame's connection and a transport equation for the frame, with the fixed-axis reduction to $\partial_{\imath}(\varrho^2\partial_{\imath}\theta_{\mathrm{rpd}})=0$.
+- The polar reading of the Lorenz condition as one divergence, which on the timelike branch is the continuity equation of the current $A_{\imath}=ru_{\imath}$, and the reason there is no Madelung pair to go with it.
 - The statement that the branch is a spacetime region for a solution, with the lightlike set of field values as the boundary of the chart.
 
 **Does not add.**
@@ -321,15 +321,15 @@ so the boost is fixed by the amplitude and the whole spacetime dependence sits i
 
 The Proca potential is an element of the material sector, and the material sector's polar word is piecewise. On timelike field values $\tilde A_\Phi=\varepsilon i\varrho\tilde U_{\Psi,\mathrm b}$ with four parameters and a sign; on spacelike ones $\tilde A_\Phi=\varrho\tilde U_{\Psi,\mathrm b}\hat u$ with four parameters, the boost axis locked to $\hat u$; on lightlike values there is no word. The branches are the two signs of the Minkowski form of the real four-vector, obtained by polar decomposition and not by restricting the eight-parameter Schrödinger word: no central angle makes that word anti-Hermitian except for the rotor $\pm e_t$, at the excluded endpoint of the phase range.
 
-The logarithmic derivative is $\tilde A_\Phi^{-1}\partial_\mu\tilde A_\Phi=\partial_\mu\ln \varrho+\Gamma_\mu$ with $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$, and the central bracket vanishes identically. The Proca equation separates into
+The logarithmic derivative is $\tilde A_\Phi^{-1}\partial_{\imath}\tilde A_\Phi=\partial_{\imath}\ln \varrho+\Gamma_{\imath}$ with $\Gamma_{\imath}=\tilde U^{-1}\partial_{\imath}\tilde U$, and the central bracket vanishes identically. The Proca equation separates into
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0,
+\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0,
 \qquad
-\sum_\mu\Bigl(\partial_\mu\Gamma_\mu+\Gamma_\mu^2-\mathrm{Sc}(\Gamma_\mu^2)\Bigr)+2\sum_\mu\partial_\mu\ln \varrho\,\Gamma_\mu=0
+\sum_{\imath}\Bigl(\partial_{\imath}\Gamma_{\imath}+\Gamma_{\imath}^2-\mathrm{Sc}(\Gamma_{\imath}^2)\Bigr)+2\sum_{\imath}\partial_{\imath}\ln \varrho\,\Gamma_{\imath}=0
 $$
 
-with the second in the traceless part; for a fixed axis they reduce to a massive scale equation with a rapidity-gradient source and to $\partial_\mu(\varrho^2\partial_\mu\theta_{\mathrm{rpd}})=0$. The Lorenz condition is one divergence — the continuity equation of the current $A_\mu=ru_\mu$ — and there is no Madelung pair because there is no phase. For a solution the branch is a spacetime region, bounded by the set where the local four-vector is lightlike.
+with the second in the traceless part; for a fixed axis they reduce to a massive scale equation with a rapidity-gradient source and to $\partial_{\imath}(\varrho^2\partial_{\imath}\theta_{\mathrm{rpd}})=0$. The Lorenz condition is one divergence — the continuity equation of the current $A_{\imath}=ru_{\imath}$ — and there is no Madelung pair because there is no phase. For a solution the branch is a spacetime region, bounded by the set where the local four-vector is lightlike.
 
 ## Summary of Notation
 
@@ -349,7 +349,7 @@ with the second in the traceless part; for a fixed axis they reduce to a massive
 | $\theta_{\mathrm{rpd}}$, $\hat u_{\mathrm b}$ | Rapidity and boost axis |
 | $\hat u$ | Real unit vector, the direction of $\vec A$ on the spacelike branch |
 | $\varepsilon=\pm1$ | Sign of $a'_t$ on the timelike branch |
-| $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$ | Frame bracket, the Maurer–Cartan form |
+| $\Gamma_{\imath}=\tilde U^{-1}\partial_{\imath}\tilde U$ | Frame bracket, the Maurer–Cartan form |
 | $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | Lorenz scalar |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 

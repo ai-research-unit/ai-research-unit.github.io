@@ -18,7 +18,7 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd
 
 **Three things are established.**
 
-*First, the coupling enters the logarithmic derivative as one central scalar per slot.* Because each component of the connection is a central scalar, $\frac{2\pi iϙ}{h}A_\mu$ passes through $\tilde A^{-1}$ and joins the logarithmic derivative without disturbing its types. It merges with the two central brackets — the scale and the phase — and it cannot reach either of the two frame brackets. That is a statement of type and not of size: a central scalar cannot produce a real vector part and cannot produce a Hermitian vector.
+*First, the coupling enters the logarithmic derivative as one central scalar per slot.* Because each component of the connection is a central scalar, $\frac{2\pi iϙ}{h}A_{\imath}$ passes through $\tilde A^{-1}$ and joins the logarithmic derivative without disturbing its types. It merges with the two central brackets — the scale and the phase — and it cannot reach either of the two frame brackets. That is a statement of type and not of size: a central scalar cannot produce a real vector part and cannot produce a Hermitian vector.
 
 *Second, the gauge transformation is a translation of one parameter.* Multiplication of the field by a central unit multiplies the word and acts on $\theta_{\mathrm{pha}}$ alone. Infinitesimally that is exact with every other parameter fixed; the check is exact to machine precision. The chart therefore linearises the gauge group, and the connection's whole content in the chart is that one coordinate is not physical.
 
@@ -65,22 +65,22 @@ exactly, for every value of the other six parameters. The check is exact to mach
 **The identity.** Differentiate the word and divide by it, and add the connection:
 
 $$
-\tilde A^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A
-=\tilde A^{-1}\frac{\partial\tilde A}{\partial R_\mu}+\frac{2\pi i\,ϙ}{h}A_\mu
-=\frac{\partial\ln \varrho}{\partial R_\mu}
-+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
-+\tilde A^{-1}\frac{\partial\tilde A}{\partial R_\mu}\Big|_{\text{frame}}
-+\frac{2\pi i\,ϙ}{h}A_\mu .
+\tilde A^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A
+=\tilde A^{-1}\frac{\partial\tilde A}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath}
+=\frac{\partial\ln \varrho}{\partial R_{\imath}}
++i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}
++\tilde A^{-1}\frac{\partial\tilde A}{\partial R_{\imath}}\Big|_{\text{frame}}
++\frac{2\pi i\,ϙ}{h}A_{\imath} .
 $$
 
 The last written term is the frame's share, and the point of the display is that the connection's term is separable: it is one central scalar per component, added after the word has been differentiated, with no factor of $\tilde A$ or $\tilde A^{-1}$ attached to it. That separability is not an approximation. It follows from $\tilde A_\Phi$ having central scalar coefficients, which is the abelian case, and it fails the moment the connection's coefficients are elements rather than scalars.
 
-**The frame's share in the four-factor word.** Write $\tilde U$ for the boost and $\tilde u$ for the rotor, and $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$, $\rho_\mu=\tilde u^{-1}\partial_\mu\tilde u$. Then
+**The frame's share in the four-factor word.** Write $\tilde U$ for the boost and $\tilde u$ for the rotor, and $\Gamma_{\imath}=\tilde U^{-1}\partial_{\imath}\tilde U$, $\rho_{\imath}=\tilde u^{-1}\partial_{\imath}\tilde u$. Then
 
 $$
-\tilde A^{-1}\partial_\mu\tilde A
-=\frac{\partial_\mu \varrho}{\varrho}+i\partial_\mu\theta_{\mathrm{pha}}
-+\tilde u^{-1}\Gamma_\mu\tilde u+\rho_\mu .
+\tilde A^{-1}\partial_{\imath}\tilde A
+=\frac{\partial_{\imath} \varrho}{\varrho}+i\partial_{\imath}\theta_{\mathrm{pha}}
++\tilde u^{-1}\Gamma_{\imath}\tilde u+\rho_{\imath} .
 $$
 
 The four terms have four different algebraic types: a real central scalar; a central imaginary number; a Hermitian vector conjugated by the rotor; a real vector part. Those are the four brackets of the polar corpus, and the word's four factors produce them one for one.
@@ -115,11 +115,11 @@ so the gauge transformation is the translation of $\theta_{\mathrm{pha}}$ by $\v
 
 **Why it is exact.** $\lambda$ is central, so it passes to the left through the whole word and multiplies the leftmost factor; and the leftmost factor is the phase factor, whose argument is additive. No other factor is touched, because no other factor carries a central scalar.
 
-**What it says about the connection.** For a pure-gauge connection, $A_\mu=\partial_\mu\Lambda$, the added term is $\frac{2\pi iϙ}{h}\partial_\mu\Lambda$, so
+**What it says about the connection.** For a pure-gauge connection, $A_{\imath}=\partial_{\imath}\Lambda$, the added term is $\frac{2\pi iϙ}{h}\partial_{\imath}\Lambda$, so
 
 $$
-i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{2\pi i\,ϙ}{h}A_\mu
-=i\frac{\partial}{\partial R_\mu}\Bigl(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda\Bigr),
+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath}
+=i\frac{\partial}{\partial R_{\imath}}\Bigl(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda\Bigr),
 $$
 
 and the whole effect of the potential is absorbed by a reparameterisation of one coordinate. That is the polar statement of gauge invariance, and it is a statement about the angle and not about the field.
@@ -134,12 +134,12 @@ and the whole effect of the potential is absorbed by a reparameterisation of one
 
 $$
 \tilde A^{-1}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde A
-=\sum_\mu\bigl(\tilde A^{-1}e_\mu^{\natural}\tilde A\bigr)\,
-\tilde\nabla_{\mathrm{gco},\Phi,\mu}\Bigl(\tilde A^{-1}\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\Bigr)
+=\sum_{\imath}\bigl(\tilde A^{-1}e_{\imath}^{\natural}\tilde A\bigr)\,
+\tilde\nabla_{\mathrm{gco},\Phi,\imath}\Bigl(\tilde A^{-1}\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\Bigr)
 +\text{(the frame's derivative terms)} ,
 $$
 
-that is: the second-order operator becomes the first-order brackets contracted with the units as the field's own frame sees them, $\tilde A^{-1}e_\mu^{\natural}\tilde A$. The identity is exact and it is the chart's version of the element form's statement that the covariant derivatives are central: the invertibles are conjugated by the field, the derivatives are not.
+that is: the second-order operator becomes the first-order brackets contracted with the units as the field's own frame sees them, $\tilde A^{-1}e_{\imath}^{\natural}\tilde A$. The identity is exact and it is the chart's version of the element form's statement that the covariant derivatives are central: the invertibles are conjugated by the field, the derivatives are not.
 
 **What the frame conjugation does.** The four units conjugated by $\tilde A$ are the field's own tetrad. The contraction is therefore a contraction with a *field-dependent* frame, and that is the chart's real content: the equation is the free one written in the field's frame, with the connection shifted. The free article's two displays — one real equation for the modulus and one traceless equation for the frame — are the two halves of that contraction, and the coupling shifts both.
 
@@ -215,9 +215,9 @@ The connection is central per slot, so it merges with the scale and the phase br
 | $\theta_{\mathrm{axr}}\in[0,2\pi],\ \hat u_{\mathrm r}\in S^{2}$ | Angle and axis of the rotor |
 | $\mathbb{B}$, $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$ | The algebra, its material and informational sectors |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | The connection; $A_t=i a'_t$ imaginary, $A_\eta$ real in the material case |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ | The central per-component covariant derivative |
-| $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$, $\rho_\mu=\tilde u^{-1}\partial_\mu\tilde u$ | The frame's two logarithmic derivatives |
-| $\tilde A^{-1}\partial_\mu\tilde A$ | The four brackets: scale, phase, boost, rotor |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The central per-component covariant derivative |
+| $\Gamma_{\imath}=\tilde U^{-1}\partial_{\imath}\tilde U$, $\rho_{\imath}=\tilde u^{-1}\partial_{\imath}\tilde u$ | The frame's two logarithmic derivatives |
+| $\tilde A^{-1}\partial_{\imath}\tilde A$ | The four brackets: scale, phase, boost, rotor |
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; the one substitution |
 | $\kappa_t,\vec\kappa$ | Its components; $\frac{h}{2\pi} c\kappa_t=E+ϙca'_t$, $\frac{h}{2\pi}\vec\kappa=\vec p-q\vec A$ |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ |

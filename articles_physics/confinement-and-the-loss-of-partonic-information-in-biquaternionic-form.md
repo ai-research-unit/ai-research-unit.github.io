@@ -16,7 +16,7 @@ Four qualifications discipline the article, and they are stated at the outset be
 The article proceeds as follows. The order parameter is reviewed and the two laws are given their information-theoretic interpretation, with the scaling of the loop's "information cost" recomputed. The loss of the partonic labels is then formulated as a superselection statement and made precise with the relative entropy of the accessible restrictions, recomputed on generic states. The scale-dependence of the parton picture is stated as an ultraviolet-to-infrared coarse-graining, and confinement is modelled as an effectively lossy channel onto the colour-neutral algebra, with the decoherence article as the closest written model. The other confinement picture — the bag as a linear boundary condition, the two Dirac equations it uses (the one-sided chiral pair and the two-sided equation the dictionary produces), and its reduction to a boundary equation in the algebra — is then given, because it is the part of confinement the framework houses. The framework's own objects are then separated from the imports in a ledger, and the ceiling that makes the colour group a no-route obstacle is recorded there.
 
 $$
-U(C) = \mathcal{P}\exp\!\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right),
+U(C) = \mathcal{P}\exp\!\left(i\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath}\,dx_{\imath}\right),
 \qquad
 W(C) = 2\,\mathrm{Sc}\,U(C),
 $$
@@ -238,7 +238,7 @@ It is worth being exact about what is not claimed. Whether the relative entropy 
 
 ### The Loop in the Two Sectors
 
-The order parameter is the framework's own construction. The connection integrated along the curve is a material one-form, $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$; the group element it exponentiates into is an element of the informational realization of the gauge group; and the trace is twice the scalar part. The loop is therefore a $\mathbb{B}_{\Psi}$ reading of an object whose logarithm lies in $\mathbb{B}_{\Phi}$, and its gauge invariance is the invariance of the scalar part under the adjoint action. The small-loop expansion, $W = 1 + i\ell^2F_{\mu\nu} + O(\ell^4)$ for a loop of area $\ell^2$ in the $\mu\nu$ plane, and the centrality of $\tilde{F}^2$, whose two scalar parts are the two Lorentz invariants of the field strength, are established in the Wilson-loop companion and are not repeated. What this gives the present article is a place to put the order parameter and, consequently, a place to put the information-theoretic interpretation of its two laws.
+The order parameter is the framework's own construction. The connection integrated along the curve is a material one-form, $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$; the group element it exponentiates into is an element of the informational realization of the gauge group; and the trace is twice the scalar part. The loop is therefore a $\mathbb{B}_{\Psi}$ reading of an object whose logarithm lies in $\mathbb{B}_{\Phi}$, and its gauge invariance is the invariance of the scalar part under the adjoint action. The small-loop expansion, $W = 1 + i\ell^2F_{\imath\jmath} + O(\ell^4)$ for a loop of area $\ell^2$ in the $\mu\jmath$ plane, and the centrality of $\tilde{F}^2$, whose two scalar parts are the two Lorentz invariants of the field strength, are established in the Wilson-loop companion and are not repeated. What this gives the present article is a place to put the order parameter and, consequently, a place to put the information-theoretic interpretation of its two laws.
 
 ### The Ceiling: No Colour
 
@@ -472,7 +472,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $i$ | The central scalar imaginary |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | The gradient, its quaternion conjugate and the d'Alembertian, *Operator and Calculus Conventions* |
 | $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Informational and material sectors |
-| $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu\in\mathbb{B}_{\Phi}$ | Gauge connection (material sector) |
+| $\tilde{A}_{\Phi} = \sum_{\imath} A_{\imath} e_{\imath}\in\mathbb{B}_{\Phi}$ | Gauge connection (material sector) |
 | $T_a = i\vec e_a\in\mathbb{B}_{\Psi}$ | Generators realized in the informational sector |
 | $U(C) = \mathcal{P}\exp(i\theta_{\mathrm{gau}})$ | Holonomy |
 | $W(C) = 2\,\mathrm{Sc}\,U(C)$ | Wilson loop; order parameter |

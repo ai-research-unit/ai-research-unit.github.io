@@ -135,15 +135,15 @@ and three cases follow that are easily read as one. For a **purely electric** po
 
 **Why that asymmetry is not a decomposition.** It is tempting to read the electric part and the magnetic part as two couplings that happen to share the coefficient, since each is self-conjugate up to a sign. The gauge transformation rules this out: the entry absorbs $-\tilde\nabla_\Phi\Gamma$, and $\tilde\nabla_\Phi\Gamma$ has a time part and a space part, so **a purely electric potential does not stay purely electric under a general gauge function**. Purity is a property of a gauge and not of the entry, and the equal-or-opposite alternative above is correspondingly gauge-dependent. Only the whole covector is covariant, which is why the second member of the pair is not the first with $ϙ\to-ϙ$.
 
-**Component form.** Write the potential as $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$ — the abelian case, in which the connection coefficients are central scalars and commute with one another and with the units. Since each $A_\mu$ is central, the covariant derivative separates into components:
+**Component form.** Write the potential as $\tilde{A}_{\Phi} = \sum_{\imath} A_{\imath} e_{\imath}$ with complex scalar coefficients $A_{\imath}$ — the abelian case, in which the connection coefficients are central scalars and commute with one another and with the units. Since each $A_{\imath}$ is central, the covariant derivative separates into components:
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\mu\in\{t,x,y,z\}}  e_\mu\,\tilde\nabla_{\mathrm{gco},\Phi,\mu},
+\tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath\in\{t,x,y,z\}}  e_{\imath}\,\tilde\nabla_{\mathrm{gco},\Phi,\imath},
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi,\mu} = \partial/\partial R_\mu +\frac{2\pi i\,ϙ}{h}A_\mu,
+\tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath},
 $$
 
-with $\partial/\partial R_t = -i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta = \partial/\partial x_\eta$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. With the action in units of $\frac{h}{2\pi}$ this gives $\tilde\nabla_{\mathrm{gco},\Phi,\mu} = \partial/\partial R_\mu + iϙA_\mu$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.
+with $\partial/\partial R_t = -i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta = \partial/\partial x_\eta$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. With the action in units of $\frac{h}{2\pi}$ this gives $\tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} + iϙA_{\imath}$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.
 
 **The connection is a material-sector object.** The gauge principle article shows that a **real** gauge function $\Gamma$ keeps $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ in $\mathbb{B}_{\Phi}$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ in $\tilde\nabla_{\mathrm{gco},\Phi}$ is Hermitian:
 
@@ -153,7 +153,7 @@ $$
 
 since $\tilde{A}_{\Phi}^{*} = -\tilde{A}_{\Phi}$ on $\mathbb{B}_{\Phi}$. The factor $i$ is what converts the anti-Hermitian connection into a Hermitian coupling. This is inherited, not rederived.
 
-**Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ with the phase $\lambda = \exp(i\theta_{\mathrm{gau}})$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{2\pi iϙA_{\mu}}{h}$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}_{\Phi}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
+**Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ with the phase $\lambda = \exp(i\theta_{\mathrm{gau}})$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial R_{\imath} \to \partial/\partial R_{\imath} -\frac{2\pi iϙA_{\imath}}{h}$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}_{\Phi}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
 
 Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
@@ -254,7 +254,7 @@ It holds in every gauge when it holds in one, and the phase of the field is not 
 **The second-order consequence.** The covariant derivative of the companion article satisfies the operator identity
 
 $$
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\mu\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2} +\frac{2\pi i\,ϙ}{h}\tilde{F}
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2} +\frac{2\pi i\,ϙ}{h}\tilde{F}
 $$
 
 (*The Covariant Derivative and Gauge Connection in Biquaternionic Form*), the scalar part being the covariant d'Alembertian and the vector part the curvature. Applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the first member of the massive pair and using the second gives
@@ -266,7 +266,7 @@ $$
 that is,
 
 $$
-\left(\sum_{\mu\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2} +\frac{2\pi i\,ϙ}{h}\tilde{F} - k_m^{2}\right)\tilde{Ξ}_{R} = 0 ,
+\left(\sum_{\imath\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2} +\frac{2\pi i\,ϙ}{h}\tilde{F} - k_m^{2}\right)\tilde{Ξ}_{R} = 0 ,
 $$
 
 a covariant wave equation with a curvature term. The corresponding statement for $\tilde{Ξ}_{L}$ carries $\tilde\nabla_{\mathrm{gco},\Phi}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ in place of $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$. The curvature term is the algebra element $\frac{2\pi i\,ϙ}{h}\tilde{F}$ multiplying the field; no further object is introduced, and the comparison of this second-order operator with the one of the older literature is a matter of display and is not made in this article.
@@ -274,10 +274,10 @@ a covariant wave equation with a curvature term. The corresponding statement for
 **The constant-potential case, evaluated.** For constant $\tilde{A}_{\Phi}$ the curvature term vanishes, $\tilde{F}=0$, and the second-order operator is the free one with every component shifted at once,
 
 $$
-k_{\Phi,\mu}\ \longmapsto\ k_{\Phi,\mu}+\frac{2\pi ϙ}{h}A_\mu ,
+k_{\Phi,\imath}\ \longmapsto\ k_{\Phi,\imath}+\frac{2\pi ϙ}{h}A_{\imath} ,
 $$
 
-so the mass shell is **translated and not resized**. A uniform $A_t$ moves every level by $qA_t$ and leaves every spacing unchanged, and no constant $\tilde{A}_{\Phi}$ opens a gap: **the translation is the potential's, the gap is $k_m$'s**, and this is the shortest place to see that the two numbers in the equation do different jobs. Checked on a plane wave with $k=(1.3,\,0.9,\,-0.6,\,0.5)$ and $\frac{2\pi ϙ}{h}A=(0.35,\,0.14,\,-0.21,\,0.28)$: free part $3.11$, cross term $1.694$, quadratic part $0.2646$, total $5.0686$, equal to $\sum_\mu\left(k_{\Phi,\mu}+\frac{2\pi ϙ}{h}A_\mu\right)^2$ to machine precision, and the vector part of $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$ vanishes below $10^{-16}$. A gap needs the off-diagonal $k_m$, which is why the mass is not an addition to the gradient at all.
+so the mass shell is **translated and not resized**. A uniform $A_t$ moves every level by $qA_t$ and leaves every spacing unchanged, and no constant $\tilde{A}_{\Phi}$ opens a gap: **the translation is the potential's, the gap is $k_m$'s**, and this is the shortest place to see that the two numbers in the equation do different jobs. Checked on a plane wave with $k=(1.3,\,0.9,\,-0.6,\,0.5)$ and $\frac{2\pi ϙ}{h}A=(0.35,\,0.14,\,-0.21,\,0.28)$: free part $3.11$, cross term $1.694$, quadratic part $0.2646$, total $5.0686$, equal to $\sum_{\imath}\left(k_{\Phi,\imath}+\frac{2\pi ϙ}{h}A_{\imath}\right)^2$ to machine precision, and the vector part of $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$ vanishes below $10^{-16}$. A gap needs the off-diagonal $k_m$, which is why the mass is not an addition to the gradient at all.
 
 ## The Massive Case: Gauge Covariance and the Broken Relative Phase
 
@@ -375,11 +375,11 @@ $$
 
 where $\vec E_g = -\vec\nabla_\Phi\xi_g - \partial/\partial r'_t\,\vec A_g$ and $\vec B_g = \vec\nabla_\Phi\times\vec A_g$ are the boson's own electric and magnetic fields. The source cites its eqs. (5) and (8) for the elimination, and the residual form given below shows what the identity rests on, namely the whole four-equation system, the Ampère-like equation included. The identity is recorded as the source states it and is not re-derived here.
 
-**What the identity says.** The left-hand side is a mixed invariant: the cross-contraction $\tfrac12\sum_{\mu,\nu}F_{g,\mu\nu}F_{\tilde{\nabla_{\mathrm{gco}}},\mu\nu}$ of the two field strengths. Written on the fields it is $\vec B_g\cdot\vec B_{\tilde\nabla_{\mathrm{gco}},\Phi} - \vec E_g\cdot\vec E_{\tilde\nabla_{\mathrm{gco}},\Phi}/c^2$, which is $-I_{\mathrm{cross},1}/c^2$ with $I_{\mathrm{cross},1} = \vec E_g\cdot\vec E_{\tilde\nabla_{\mathrm{gco}},\Phi} - c^2\vec B_g\cdot\vec B_{\tilde\nabla_{\mathrm{gco}},\Phi}$ — the two-field analogue of the corpus's $I_1 = \vec E^2 - c^2\vec B^2$, which contracts one field strength with itself.
+**What the identity says.** The left-hand side is a mixed invariant: the cross-contraction $\tfrac12\sum_{\imath,\jmath}F_{g,\imath\jmath}F_{\tilde{\nabla_{\mathrm{gco}}},\imath\jmath}$ of the two field strengths. Written on the fields it is $\vec B_g\cdot\vec B_{\tilde\nabla_{\mathrm{gco}},\Phi} - \vec E_g\cdot\vec E_{\tilde\nabla_{\mathrm{gco}},\Phi}/c^2$, which is $-I_{\mathrm{cross},1}/c^2$ with $I_{\mathrm{cross},1} = \vec E_g\cdot\vec E_{\tilde\nabla_{\mathrm{gco}},\Phi} - c^2\vec B_g\cdot\vec B_{\tilde\nabla_{\mathrm{gco}},\Phi}$ — the two-field analogue of the corpus's $I_1 = \vec E^2 - c^2\vec B^2$, which contracts one field strength with itself.
 
 The right-hand side is the pairing of the boson potential with the matter source. The identity therefore says that once two fields are coupled, their mixed invariant is not free: it is fixed by the source, and fixed by a source built linearly from the potential and the four-current. It is a constraint on the source, not an independent field equation, and it is the shape of answer that Open Question 4 asks for.
 
-The source notes the two-field coincidence, where the identity reads $\epsilon_0\vec E^2 - \vec B^2/\mu_0 = \xi\rho - \vec A\cdot\vec J$, that is, $\frac{1}{2\mu_0}\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = -\sum_\nu A_\nu J_\nu$ in the $({+}{-}{-}{-})$ sign convention, the minus being that convention's; the mixed form above is the general one.
+The source notes the two-field coincidence, where the identity reads $\epsilon_0\vec E^2 - \vec B^2/\mu_0 = \xi\rho - \vec A\cdot\vec J$, that is, $\frac{1}{2\mu_0}\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath} = -\sum_{\jmath} A_{\jmath} J_{\jmath}$ in the $({+}{-}{-}{-})$ sign convention, the minus being that convention's; the mixed form above is the general one.
 
 **Domain.** The matter fields of the source are built from its own biquaternion Dirac field, in its own conventions, and are read off a Maxwell-like system that costs one of the field's four coefficient components: the source fixes that component by a linear relation to the other three, and its Appendix B gives the modified system that replaces the relation, with an extra real field appearing in all four equations. The identity is therefore stated on the constrained system, and it concerns the source's field strengths, not the corpus's $\tilde{Ξ}$ or its $\sqrt{\mu}\,\tilde{J}_{\Phi}$.
 
@@ -402,8 +402,8 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 
 - *A canonical abelian coupling.* The gauge group is the $*$-unitary part of the centre, and the centre is the only place a central phase can live. The $\mathrm{U}(1)$ that minimal coupling gauges is attached to the algebra without a choice of representation, as the gauge principle article establishes.
 - *The covariant derivative as the localization of the phase.* The interaction term $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$ is not added by hand: it is the term the localized phase forces, and the connection it forces is exactly the potential biquaternion of the Maxwell article.
-- *Exact covariance of the coupled equation*, in the massive case as well as the massless one, with the component operators $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$ and the phase law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ inherited unchanged.
-- *The second-order equation with its curvature term.* The operator identity $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi} = \sum_\mu  \tilde\nabla_{\mathrm{gco},\Phi,\mu}^2 +\frac{2\pi i\,ϙ}{h}\tilde{F}$ turns the coupled pair into a covariant wave equation carrying $\frac{2\pi i\,ϙ}{h}\tilde{F}$ as a term, the curvature entering as an element and not as an extra structure.
+- *Exact covariance of the coupled equation*, in the massive case as well as the massless one, with the component operators $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ and the phase law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ inherited unchanged.
+- *The second-order equation with its curvature term.* The operator identity $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 +\frac{2\pi i\,ϙ}{h}\tilde{F}$ turns the coupled pair into a covariant wave equation carrying $\frac{2\pi i\,ϙ}{h}\tilde{F}$ as a term, the curvature entering as an element and not as an extra structure.
 - *A material-sector connection.* For a real gauge function the connection stays in $\mathbb{B}_{\Phi}$, so the coupling respects the sector decomposition the framework is built on.
 - *One addition, and it is this one.* Read as an entry of the array rather than as a term in an equation, the coupling is a single element in the diagonal slot, $B_{RR}=\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ and $B_{LL}=\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}^{\natural}$, with the mass in the off-diagonal pair. Of all the elements that can be placed in those slots, this is the only one a measurement requires: the potential is tested by the two Aharonov–Bohm phases, by the Josephson frequency, by the Landau degeneracy and by the Coulomb spectrum, while every other candidate shape is algebra without a measurement. The count is made here rather than cited: the shapes that fail the test — a real scalar in the diagonal slot, an imaginary spatial bivector, an imaginary pseudoscalar and an axial vector — are exact algebra and unmeasured physics, and they are not additions to the gradient in the sense of this article.
 
@@ -435,7 +435,7 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and they are used only in this section, as the frame in which the basis operators can be compared with the standard matrices.
 
@@ -457,10 +457,10 @@ $\gamma_5$ is the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a p
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The conserved current of the older literature.** The object that the previous sections cannot build is written here, once, in this display. The conserved current is the bilinear built with the generator basis operator of the coordinate $x_\mu$ — the basis operator $iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}$, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$ — and with the adjoint row $\tilde{Ξ}^{\dagger}iR_{\vec e_x}$:
+**The conserved current of the older literature.** The object that the previous sections cannot build is written here, once, in this display. The conserved current is the bilinear built with the generator basis operator of the coordinate $x_{\imath}$ — the basis operator $iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}$, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$ — and with the adjoint row $\tilde{Ξ}^{\dagger}iR_{\vec e_x}$:
 
 $$
-j_\mu = \tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}}\,\tilde{Ξ} ,
+j_{\imath} = \tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}\,\tilde{Ξ} ,
 $$
 
 whose time component is $\tilde{Ξ}^{\dagger}\tilde{Ξ}$ and whose spatial components are $\tilde{Ξ}^{\dagger}\alpha_\eta\tilde{Ξ}$ with $\alpha_\eta = L_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_z}$. The ingredient that the algebra's own bilinears cannot supply is the adjoint row, which is built on the one-sided basis operator $iR_{\vec e_x}$ and lies outside the algebra. That is why $i\tilde{Ξ}\tilde{Ξ}^*$ cannot be the conserved current, and why the current is recorded in this section and nowhere else.
@@ -469,34 +469,34 @@ whose time component is $\tilde{Ξ}^{\dagger}\tilde{Ξ}$ and whose spatial compo
 
 **The identities the corpus cites.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}
++\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
-The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_{\imath}$, so that $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_{\imath}=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
 ## Summary
 
 The minimal coupling of the biquaternion Dirac field to electromagnetism is the replacement of the gradient by the covariant derivative of the gauge principle,
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,\mu} = \frac{\partial}{\partial R_\mu} +\frac{2\pi i\,ϙ}{h}A_\mu,
+\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,\imath} = \frac{\partial}{\partial R_{\imath}} +\frac{2\pi i\,ϙ}{h}A_{\imath},
 $$
 
 acting by left multiplication on the field. The coupled equation is
@@ -523,7 +523,7 @@ $$
 the same factor $\lambda$ for either member, and the parent's linear mass term acquires that same factor, so $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$ holds in every gauge when it holds in one. The continuous $\mathrm{U}(1)$ of the massless theory survives the mass; what the mass breaks is the relative phase that multiplies the two parts oppositely. Squaring the pair gives the covariant wave equation
 
 $$
-\left(\sum_{\mu\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2} +\frac{2\pi i\,ϙ}{h}\tilde{F} - k_m^{2}\right)\tilde{Ξ}_{R} = 0 .
+\left(\sum_{\imath\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2} +\frac{2\pi i\,ϙ}{h}\tilde{F} - k_m^{2}\right)\tilde{Ξ}_{R} = 0 .
 $$
 
 The prescription attaches to the one-sided pair and not to the parent's two-sided form, because the two-sided form's mass term is a conjugation and a right multiplication and carries no continuous central phase to localize.
@@ -557,8 +557,8 @@ One external result is recorded on the source side, and it is not a development 
 | $ϙ$ | Charge (coupling constant), not fixed by the algebra |
 | $\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ | Covariant derivative (left action) |
 | $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} = (\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}^{\natural}$ | Its $\natural$-image; the operator of the second member of the pair |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu} = \partial/\partial R_\mu +\frac{2\pi i\,ϙ}{h}A_\mu$ | Components; $\partial/\partial R_t = -i\,\partial/\partial r'_t$ |
-| $\tilde{F}$ | Field-strength biquaternion; $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi} = \sum_\mu  \tilde\nabla_{\mathrm{gco},\Phi,\mu}^2 +\frac{2\pi i\,ϙ}{h}\tilde{F}$ |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath}$ | Components; $\partial/\partial R_t = -i\,\partial/\partial r'_t$ |
+| $\tilde{F}$ | Field-strength biquaternion; $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 +\frac{2\pi i\,ϙ}{h}\tilde{F}$ |
 | $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | Minimally coupled Dirac equation |
 | $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$ | Interaction term |
 | $\exp(2i\theta_{\mathrm{gau}})$ | Phase that an antilinear mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |

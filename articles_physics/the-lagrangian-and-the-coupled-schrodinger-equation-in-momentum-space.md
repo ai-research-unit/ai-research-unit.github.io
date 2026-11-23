@@ -71,7 +71,7 @@ The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the three terms below are its 
 
 The antisymmetrised covariant kinetic density is real exactly when the root is anti-Hermitian, by the free article's computation, and the covariant derivative's connection part is central so it does not change the type. The coupling adds a real number to a real quantity.
 
-$\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)=\sum_\mu\lvert(D_\eta\tilde\Xi)_\mu\rvert^{2}$, a sum of four moduli, which is real and non-negative. The term is a norm and not a form, and its positivity is what makes the kinetic energy of the field positive for every configuration.
+$\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)=\sum_{\imath}\lvert(D_\eta\tilde\Xi)_{\imath}\rvert^{2}$, a sum of four moduli, which is real and non-negative. The term is a norm and not a form, and its positivity is what makes the kinetic energy of the field positive for every configuration.
 
 $\omicron_{\mathrm{pot}}$ is real, so $ϙ\omicron_{\mathrm{pot}}\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ is real and its sign is the sign of $ϙ\omicron_{\mathrm{pot}}$. The term is the only one whose sign is not fixed, and that is the standard statement that a potential can lower the energy without bound.
 
@@ -231,7 +231,7 @@ The symbol is gauge invariant in the invariant coordinates: the four shifts canc
 | $E=-\sigma_{\mathrm{gco}}(0,\vec k)$ | The energy as minus the symbol at zero frequency |
 | $\partial\sigma_{\mathrm{gco}}/\partial\omega=\frac{h}{2\pi}$ | The Legendre slope; unchanged by the coupling |
 | $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$ | The vanishing mixed derivative; the class's mark |
-| $\sum_\mu\lvert(D_\eta\tilde\Xi)_\mu\rvert^{2}$ | The gradient term; real and non-negative |
+| $\sum_{\imath}\lvert(D_\eta\tilde\Xi)_{\imath}\rvert^{2}$ | The gradient term; real and non-negative |
 
 ## Further Reading
 

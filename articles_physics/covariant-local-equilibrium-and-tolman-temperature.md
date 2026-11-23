@@ -2,17 +2,17 @@
 
 ## Introduction
 
-Covariant local equilibrium is one equation on the fluid's velocity, and the pointwise temperature of the corpus satisfies it. The equation is the rigidity condition, written on the component spelling of the element on the pattern of $k_{\Phi,\mu}$:
+Covariant local equilibrium is one equation on the fluid's velocity, and the pointwise temperature of the corpus satisfies it. The equation is the rigidity condition, written on the component spelling of the element on the pattern of $k_{\Phi,\imath}$:
 
 $$
-\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}+\frac{\partial v_{\Phi,\mu}}{\partial R_\nu}=0 .
+\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}+\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}}=0 .
 $$
 
 The pointwise temperature that [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) constructs satisfies this condition at each event, in the frame in which the local complex structure is constant, and Tolman's law $T\,c=\text{const}$ is quoted from that article and not re-derived here.
 
 This is standard relativistic thermodynamics in the corpus's letters, with no framework interpretation.
 
-The article is a transcription. It takes three results that exist — the rigidity condition of the relativistic theory of fluids, the pointwise temperature of the local thermal structure, and Tolman's law — and writes them in the letters this category uses: the velocity as an element with a low index, the derivative as the algebra's own, the metric $\delta_{\mu\nu}$ with every coefficient $+1$. It adds no new physics and claims none. What it adds is the spelling, and the spelling is what the articles that follow depend on. Where this article and its neighbours cite a bare number, the number is the ledger's, counted in [The Thermodynamics of a Quantum Fluid: Status of the Derivation](the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.html).
+The article is a transcription. It takes three results that exist — the rigidity condition of the relativistic theory of fluids, the pointwise temperature of the local thermal structure, and Tolman's law — and writes them in the letters this category uses: the velocity as an element with a low index, the derivative as the algebra's own, the metric $\delta_{\imath\jmath}$ with every coefficient $+1$. It adds no new physics and claims none. What it adds is the spelling, and the spelling is what the articles that follow depend on. Where this article and its neighbours cite a bare number, the number is the ledger's, counted in [The Thermodynamics of a Quantum Fluid: Status of the Derivation](the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.html).
 
 The verdict on the gate. The rigidity condition is satisfiable, and the pointwise temperature satisfies it in the sense that article 11 gives that temperature: pointwise, in the local frame, with the qualification that a medium whose local complex structure varies admits local and not global equilibrium. A local temperature is therefore available, and it carries an index that stays low. Articles 18 to 24 may proceed on that basis. The rest of this article is the argument for the verdict.
 
@@ -34,20 +34,20 @@ Why the third condition is the algebraic one. The first two are statements about
 
 ### The rigidity condition
 
-**The condition is that the symmetric part of the velocity's gradient vanishes.** With $v_{\Phi,\mu}$ the component spelling of the velocity element, on the pattern of $k_{\Phi,\mu}$ and with the index low,
+**The condition is that the symmetric part of the velocity's gradient vanishes.** With $v_{\Phi,\imath}$ the component spelling of the velocity element, on the pattern of $k_{\Phi,\imath}$ and with the index low,
 
 $$
-\boxed{\;\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}+\frac{\partial v_{\Phi,\mu}}{\partial R_\nu}=0\;}
+\boxed{\;\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}+\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}}=0\;}
 $$
 
-This is symmetric in the pair $(\mu,\nu)$, so it is ten equations on four functions. It is the Killing equation for the velocity field, and its solutions are the unit Killing fields of the flat frame: the ten equations are not ten independent conditions on four functions, because the normalisation $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ and the integrability identities cut them down, and the flatness of the frame is what makes the surviving solutions few.
+This is symmetric in the pair $(\imath,\jmath)$, so it is ten equations on four functions. It is the Killing equation for the velocity field, and its solutions are the unit Killing fields of the flat frame: the ten equations are not ten independent conditions on four functions, because the normalisation $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ and the integrability identities cut them down, and the flatness of the frame is what makes the surviving solutions few.
 
-The letters. $R_\mu$ runs over $r'_t$ and the three $r_\eta$. The derivative is the algebra's own, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the material sector and $\partial/\partial R_\eta=\partial/\partial r_\eta$, exactly as [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) uses it. No Christoffel symbol appears, and none is needed: the frame is flat, the metric is $\delta_{\mu\nu}$, and the index is a label of a direction. The curved-spacetime bookkeeping is the subject of [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), and this article stays in the flat frame on purpose.
+The letters. $R_{\imath}$ runs over $r'_t$ and the three $r_\eta$. The derivative is the algebra's own, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the material sector and $\partial/\partial R_\eta=\partial/\partial r_\eta$, exactly as [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) uses it. No Christoffel symbol appears, and none is needed: the frame is flat, the metric is $\delta_{\imath\jmath}$, and the index is a label of a direction. The curved-spacetime bookkeeping is the subject of [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), and this article stays in the flat frame on purpose.
 
 The relation to the vorticity. [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) defines the vorticity 2-form as the *antisymmetric* part of the same gradient,
 
 $$
-\omega_{\mu\nu}=\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}-\frac{\partial v_{\Phi,\mu}}{\partial R_\nu},
+\omega_{\imath\jmath}=\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}-\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}},
 $$
 
 and observes that the scalar flow is closed, so that its velocity one-form has zero curl. The present condition is the vanishing of the *symmetric* part. The two conditions are independent: a flow can be closed and not rigid, rigid and not closed, both, or neither. A flow that is both is a flow whose velocity is constant, and that is the trivial case. A reader who takes the two conditions for one will read this article and the spin-half-fluid article as contradicting each other; they are the two halves of one gradient.
@@ -106,7 +106,7 @@ What survives globally is uniform translation. With $\gamma$ and $\vec u_{\mathr
 
 The condition was evaluated on two flows, and the numbers separate them. With $c=2$, the component spelling above, and central differences of step $10^{-6}$ at the event $(r'_t,r_x,r_y,r_z)=(0.3,0.5,0.7,1.1)$:
 
-- Uniform translation, $\theta_{\mathrm{rpd}}=0.4$ and $\vec u_{\mathrm b}=\vec e_y$ everywhere: the largest of the sixteen entries of $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}$ was $0$, exactly, in double precision.
+- Uniform translation, $\theta_{\mathrm{rpd}}=0.4$ and $\vec u_{\mathrm b}=\vec e_y$ everywhere: the largest of the sixteen entries of $\partial_{\imath} v_{\Phi,\jmath}+\partial_{\jmath} v_{\Phi,\imath}$ was $0$, exactly, in double precision.
 - The transverse shear flow of the spin-half-fluid article, $\theta_{\mathrm{rpd}}(r_x)=0.4+0.2\sin(1.3r_x)$ with $\vec u_{\mathrm b}=\vec e_y$: the largest entry was $0.471\,438$, attained at the $(r_x,r_y)$ pair, and it equals the single derivative $\partial_{r_x}(\gamma v_y)=c\cosh\theta\,\partial_{r_x}\theta$ computed independently at that event. The entries with $\eta$ along the flow vanish, because nothing in the flow depends on $r_y$; the entry with $\eta$ across the flow does not, because the rapidity and with it $\gamma$ vary with $r_x$, and the $(t,r_x)$ entry carries $c\,\partial_{r_x}\gamma=c\sinh\theta\,\partial_{r_x}\theta=0.225\,583$ at the same event. That second failure is the content of paragraph (c): a stationary flow whose Lorentz factor varies in space is not rigid either, and the shear entry is only the larger of the two violations.
 
 The second flow therefore fails the rigidity condition in two of its families of entries — the no-shear part and the acceleration part — and the first satisfies both. The condition is not vacuous: it separates exactly the flows that the classical theory calls rigid from those it does not.
@@ -137,7 +137,7 @@ $$
 T\propto\frac{1}{c}\propto n\;}
 $$
 
-with its own check: a reference $T_0=300\,\mathrm{K}$ at $c_1=1$ and a point at $c_2=1.5$ carries $T=200\,\mathrm{K}$, and $Tc=300$ at both points. This article quotes the display and the check. It does not re-derive Tolman's law, and it does not write the metric component the law is usually stated with: in the corpus's letters the law is a relation between the temperature and the local complex structure, and the local complex structure is the scale $c=1/\sqrt{\epsilon\mu}$ and not a coefficient of $\delta_{\mu\nu}$.
+with its own check: a reference $T_0=300\,\mathrm{K}$ at $c_1=1$ and a point at $c_2=1.5$ carries $T=200\,\mathrm{K}$, and $Tc=300$ at both points. This article quotes the display and the check. It does not re-derive Tolman's law, and it does not write the metric component the law is usually stated with: in the corpus's letters the law is a relation between the temperature and the local complex structure, and the local complex structure is the scale $c=1/\sqrt{\epsilon\mu}$ and not a coefficient of $\delta_{\imath\jmath}$.
 
 What the law says in words. Where the medium is optically denser, the local temperature is higher, and it is higher by exactly the factor by which the local light speed is lower. The relation is pointwise and it is the thermodynamic counterpart of the local complex structure: $c$ is the scale attached to the algebraic imaginary-time direction by the medium, $\beta$ is the scale attached to the same direction by the state, and Tolman's law is the statement that the two scales move together.
 
@@ -161,7 +161,7 @@ v_{\Phi,\eta}=0,
 T(x)\,c(x)=\text{const},
 $$
 
-with $c$ and $T$ evaluated at $x$. The six components with both labels spatial vanish identically, because the spatial current is zero throughout the frame and not only at $x$. The four components that carry the temporal slot do not: each is $2\partial_\mu v_{\Phi,t}=2i\,\partial_\mu c(x)$, in a static medium the $tt$ entry vanishes with $\partial_t c=0$, and the three $t\eta$ entries vanish exactly when the medium is uniform at $x$.
+with $c$ and $T$ evaluated at $x$. The six components with both labels spatial vanish identically, because the spatial current is zero throughout the frame and not only at $x$. The four components that carry the temporal slot do not: each is $2\partial_{\imath} v_{\Phi,t}=2i\,\partial_{\imath} c(x)$, in a static medium the $tt$ entry vanishes with $\partial_t c=0$, and the three $t\eta$ entries vanish exactly when the medium is uniform at $x$.
 
 The qualification is that the frame is local, and the four temporal components are the whole of the failure. In a medium whose $c$ varies, the velocity's temporal slot is $ic(x)$, and the rigidity condition fails by
 
@@ -194,23 +194,23 @@ The third row is the one the corpus takes. Its consequence for the articles that
 The covariant form of the equilibrium condition in the literature is the same equation written on the velocity divided by the temperature. It reads
 
 $$
-\frac{\partial}{\partial R_\mu}\!\left(\frac{v_{\Phi,\nu}}{T}\right)+\frac{\partial}{\partial R_\nu}\!\left(\frac{v_{\Phi,\mu}}{T}\right)=0,
+\frac{\partial}{\partial R_{\imath}}\!\left(\frac{v_{\Phi,\jmath}}{T}\right)+\frac{\partial}{\partial R_{\jmath}}\!\left(\frac{v_{\Phi,\imath}}{T}\right)=0,
 $$
 
-and it is the statement that the thermal vector $v_{\Phi,\mu}/T$ is a Killing field. Expanding the derivative,
+and it is the statement that the thermal vector $v_{\Phi,\imath}/T$ is a Killing field. Expanding the derivative,
 
 $$
-\frac{1}{T}\left(\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}+\frac{\partial v_{\Phi,\mu}}{\partial R_\nu}\right)
--\frac{1}{T^{2}}\left(v_{\Phi,\nu}\frac{\partial T}{\partial R_\mu}+v_{\Phi,\mu}\frac{\partial T}{\partial R_\nu}\right)=0 ,
+\frac{1}{T}\left(\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}+\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}}\right)
+-\frac{1}{T^{2}}\left(v_{\Phi,\jmath}\frac{\partial T}{\partial R_{\imath}}+v_{\Phi,\imath}\frac{\partial T}{\partial R_{\jmath}}\right)=0 ,
 $$
 
 so the thermal form is the mechanical form plus a correction proportional to the temperature gradient. When $T$ is constant the two coincide exactly, and when it is not they differ by the second term of the display.
 
 ### Why the flat frame cannot carry the difference
 
-**The difference is a Christoffel symbol in disguise, and the flat frame of this article has none.** In a curved background the acceleration of the flow is a Christoffel term, and the temperature gradient cancels it by Tolman's law; that is the content of the statement that the product of the temperature with the lapse is constant in a static background. In the corpus's flat frame the metric is $\delta_{\mu\nu}$ with every coefficient $+1$ and there is no Christoffel symbol to cancel anything against. What plays the metric's role is the local complex structure, and the local complex structure is a property of the *medium*, not of the frame.
+**The difference is a Christoffel symbol in disguise, and the flat frame of this article has none.** In a curved background the acceleration of the flow is a Christoffel term, and the temperature gradient cancels it by Tolman's law; that is the content of the statement that the product of the temperature with the lapse is constant in a static background. In the corpus's flat frame the metric is $\delta_{\imath\jmath}$ with every coefficient $+1$ and there is no Christoffel symbol to cancel anything against. What plays the metric's role is the local complex structure, and the local complex structure is a property of the *medium*, not of the frame.
 
-So the two statements — mechanical rigidity in the flat frame, and the Killing property of $v_{\Phi,\mu}/T$ in a curved background — are not two spellings of one equation in this corpus. They are the same equation in two settings, and the setting decides which correction is present. This article uses the mechanical form, and [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html) uses the thermal one, with $\beta=\beta(x)$ on the horizon and the Christoffel bookkeeping explicit. A reader who tries to obtain Tolman's law by differentiating the mechanical form in the flat frame will fail, and the failure is not an error of this article: it is the statement that a flat frame with a medium is not a curved spacetime.
+So the two statements — mechanical rigidity in the flat frame, and the Killing property of $v_{\Phi,\imath}/T$ in a curved background — are not two spellings of one equation in this corpus. They are the same equation in two settings, and the setting decides which correction is present. This article uses the mechanical form, and [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html) uses the thermal one, with $\beta=\beta(x)$ on the horizon and the Christoffel bookkeeping explicit. A reader who tries to obtain Tolman's law by differentiating the mechanical form in the flat frame will fail, and the failure is not an error of this article: it is the statement that a flat frame with a medium is not a curved spacetime.
 
 ### What the corpus quotes instead
 
@@ -228,9 +228,9 @@ The division is worth stating as a rule, because it protects the articles that f
 
 What the transcription supplies is a set of letters that the seven articles after it can use without arguing about conventions. Four of them:
 
-- The velocity is an element and its index stays low. $v_{\Phi,\mu}$ is the fourth coefficient of an element, on the pattern of $k_{\Phi,\mu}$; no velocity carries a raised index anywhere in the display, and the letter $u$ is not used for the velocity at all. The index labels a direction of the frame and is not a tensor slot, which is the third of the eight rules of *Frame and Metric Conventions*.
+- The velocity is an element and its index stays low. $v_{\Phi,\imath}$ is the fourth coefficient of an element, on the pattern of $k_{\Phi,\imath}$; no velocity carries a raised index anywhere in the display, and the letter $u$ is not used for the velocity at all. The index labels a direction of the frame and is not a tensor slot, which is the third of the eight rules of *Frame and Metric Conventions*.
 - The derivative is the algebra's own. $\partial/\partial R_t=-i\partial/\partial r'_t$ on the material sector, and the factor $c$ is the algebra's statement and not a convention. So the condition's $(t,\eta)$ pair carries an $i$ and its real form is the display of §*The three consequences*.
-- The metric is $\delta_{\mu\nu}$. One metric, all coefficients $+1$, and the local complex structure is a scale and not a coefficient. This is why the Tolman law appears as $Tc=\text{const}$ and not as a lapse.
+- The metric is $\delta_{\imath\jmath}$. One metric, all coefficients $+1$, and the local complex structure is a scale and not a coefficient. This is why the Tolman law appears as $Tc=\text{const}$ and not as a lapse.
 - The condition is symmetric and the vorticity is antisymmetric. The two are the two halves of one gradient, and a reader who keeps them apart will not confuse this article's condition with the spin-half-fluid article's closure.
 
 ### The two conditions of the category, side by side
@@ -239,7 +239,7 @@ The category now has two conditions on the velocity, and they answer different q
 
 | | Closure | Rigidity |
 |---|---|---|
-| Equation | $\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}=0$ | $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0$ |
+| Equation | $\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}=0$ | $\partial_{\imath} v_{\Phi,\jmath}+\partial_{\jmath} v_{\Phi,\imath}=0$ |
 | Part of the gradient | antisymmetric | symmetric |
 | What it forbids | vorticity | expansion, shear, acceleration |
 | Which flows satisfy it | gradient flows; the scalar field | uniform translation; inertial observers |
@@ -261,14 +261,14 @@ Not claimed. That a pointwise metric exists — article 11's answer is that the 
 Covariant local equilibrium in this category is the rigidity condition,
 
 $$
-\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}+\frac{\partial v_{\Phi,\mu}}{\partial R_\nu}=0,
+\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}+\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}}=0,
 $$
 
 written on the component spelling of the velocity element, with the index low and the derivative the algebra's own. It is the vanishing of the symmetric part of the velocity's gradient, and it has three consequences: the Lorentz factor does not vary in time, the spatial current density has neither expansion nor shear, and the flow's acceleration is locked to the rapidity gradient so that a static rigid flow is inertial. Vorticity is unconstrained, but the relativistic rigid rotation fails the acceleration condition, so the only global rigid flow in the flat frame is a uniform translation. The condition was checked at one event with central differences of step $10^{-6}$: a uniform translation gave a residual of exactly $0$ in all sixteen entries, and the transverse shear flow gave $0.471\,438$ at the spatial pair, matching $\partial_{r_x}(\gamma v_y)$ computed independently, while satisfying the acceleration pair exactly.
 
-The pointwise temperature of [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) is $\beta=mc/(k_mk_BT)$, an imaginary-time circumference and therefore a length, with $c\beta=mc^{2}/(k_mk_BT)$ for the material sector's circumference; both are quoted, with that article's check at $2.725$, $300$ and $1000\,\mathrm{K}$. Tolman's law is quoted as $Tc=\text{const}$, so $T\propto1/c\propto n$, with that article's two-point check $T_0=300\,\mathrm{K}$ at $c=1$ and $T=200\,\mathrm{K}$ at $c=1.5$. A fluid at rest in the local frame satisfies the six purely spatial components of the rigidity condition identically, and the four components that carry the temporal slot are $2i\partial_\mu c$: they vanish where the medium is uniform and in a varying medium the condition fails by $i c\,\partial\ln c/\partial r_\eta=-i c\,\partial\ln T/\partial r_\eta$, the logarithmic gradient of the Tolman temperature. The medium therefore admits local and not global equilibrium, which is article 11's own answer.
+The pointwise temperature of [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) is $\beta=mc/(k_mk_BT)$, an imaginary-time circumference and therefore a length, with $c\beta=mc^{2}/(k_mk_BT)$ for the material sector's circumference; both are quoted, with that article's check at $2.725$, $300$ and $1000\,\mathrm{K}$. Tolman's law is quoted as $Tc=\text{const}$, so $T\propto1/c\propto n$, with that article's two-point check $T_0=300\,\mathrm{K}$ at $c=1$ and $T=200\,\mathrm{K}$ at $c=1.5$. A fluid at rest in the local frame satisfies the six purely spatial components of the rigidity condition identically, and the four components that carry the temporal slot are $2i\partial_{\imath} c$: they vanish where the medium is uniform and in a varying medium the condition fails by $i c\,\partial\ln c/\partial r_\eta=-i c\,\partial\ln T/\partial r_\eta$, the logarithmic gradient of the Tolman temperature. The medium therefore admits local and not global equilibrium, which is article 11's own answer.
 
-The verdict on the gate is that a local temperature is available, and that the pointwise thermal state is rigid at the events where the medium is uniform and fails the condition by the Tolman gradient at the rest. It is a pointwise period on the field of states and not a pointwise metric, as article 11 establishes; this article adopts that answer and does not reopen it. The mechanical form of the condition is the one the flat frame can carry, and the thermal form — the Killing property of $v_{\Phi,\mu}/T$ — belongs to the curved bookkeeping of [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), where the lapse supplies the Christoffel term the flat frame lacks.
+The verdict on the gate is that a local temperature is available, and that the pointwise thermal state is rigid at the events where the medium is uniform and fails the condition by the Tolman gradient at the rest. It is a pointwise period on the field of states and not a pointwise metric, as article 11 establishes; this article adopts that answer and does not reopen it. The mechanical form of the condition is the one the flat frame can carry, and the thermal form — the Killing property of $v_{\Phi,\imath}/T$ — belongs to the curved bookkeeping of [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), where the lapse supplies the Christoffel term the flat frame lacks.
 
 **This is standard relativistic thermodynamics in the corpus's letters, with no framework interpretation.**
 
@@ -280,19 +280,19 @@ The verdict on the gate is that a local temperature is available, and that the p
 | $\mathbb{B}_{\Phi}$ | Material sector, in which the fluid lives |
 | $e_t,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, with $\vec e_\eta^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\delta_{\mu\nu}$ | The one metric, all coefficients $+1$; indices stay low |
+| $\delta_{\imath\jmath}$ | The one metric, all coefficients $+1$; indices stay low |
 | $r'_t$ | Temporal coordinate of the material sector, a length |
-| $R_\mu$ | The four frame directions, $R_t=r'_t$ and $R_\eta=r_\eta$ |
+| $R_{\imath}$ | The four frame directions, $R_t=r'_t$ and $R_\eta=r_\eta$ |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | The derivative on the material sector |
-| $v_{\Phi,\mu}$ | Component spelling of the velocity element, index low |
+| $v_{\Phi,\imath}$ | Component spelling of the velocity element, index low |
 | $v_{\Phi,t}=ic\gamma$, $v_{\Phi,\eta}=\gamma v_\eta$ | The two families of components |
 | $\tilde V_{\Phi}$ | The velocity as an element, with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ |
 | $\theta_{\mathrm{rpd}}$ | Rapidity |
 | $\gamma=\cosh\theta_{\mathrm{rpd}}$ | Lorentz factor |
 | $\vec u_{\mathrm b}$ | Unit vector of the flow's axis |
 | $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ | Three-velocity |
-| $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity, the antisymmetric half of the gradient |
-| $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}$ | Rigidity, the symmetric half of the gradient |
+| $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ | Vorticity, the antisymmetric half of the gradient |
+| $\partial_{\imath} v_{\Phi,\jmath}+\partial_{\jmath} v_{\Phi,\imath}$ | Rigidity, the symmetric half of the gradient |
 | $\beta=\frac{m\,c}{k_m\,k_B\,T}$ | Inverse temperature: the imaginary-time circumference, a length |
 | $c\beta=\frac{h\,c}{2\pi k_B\,T}$ | The same circumference in the material sector's units |
 | $T$ | Temperature |

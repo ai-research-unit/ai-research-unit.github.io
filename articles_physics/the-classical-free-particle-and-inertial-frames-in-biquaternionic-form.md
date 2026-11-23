@@ -59,7 +59,7 @@ $$
 \boxed{\;\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2\;},
 $$
 
-which is the biquaternion form of the relativistic normalization $\sum_\mu\varepsilon_\mu v_\mu v_\mu = -c^2$. The normalization is a **constraint**, not an identity: it selects the four-velocities of physical particles from among all elements of $\mathbb{B}_{\Phi}$.
+which is the biquaternion form of the relativistic normalization $\sum_{\imath}\varepsilon_{\imath} v_{\imath} v_{\imath} = -c^2$. The normalization is a **constraint**, not an identity: it selects the four-velocities of physical particles from among all elements of $\mathbb{B}_{\Phi}$.
 
 The four-momentum is the mass times the four-velocity,
 
@@ -97,7 +97,7 @@ $$
 \tilde{\mathcal F}_{\Phi,\mathrm{frc}}\,\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\,\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0 ,
 $$
 
-which is the biquaternion form of $\sum_\mu\varepsilon_\mu f_\mu p_\mu = 0$. For the free particle both terms vanish separately; for a forced particle the identity says that a four-force can turn the four-momentum but cannot change its norm, and hence cannot change the rest mass.
+which is the biquaternion form of $\sum_{\imath}\varepsilon_{\imath} f_{\imath} p_{\imath} = 0$. For the free particle both terms vanish separately; for a forced particle the identity says that a four-force can turn the four-momentum but cannot change its norm, and hence cannot change the rest mass.
 
 ### The Causal Character of the Free Worldline
 
@@ -251,13 +251,13 @@ The transcription is transparent under the isomorphism $\mathsf{M}_2$ of the alg
 
 | Standard object | Biquaternion object | Location |
 |---|---|---|
-| Event $x_\mu = (r'_{t}, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | $\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $\mathbb{B}_{\Phi}$ |
-| Interval $\sum_\mu\varepsilon_\mu dx_\mu dx_\mu$ | $\langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi(d\tilde R_\Phi)^{\natural}$ | biquaternion norm on $\mathbb{B}_{\Phi}$ |
-| Four-velocity $v_\mu$ | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | $\mathbb{B}_{\Phi}$ |
-| Mass shell $\sum_\mu\varepsilon_\mu v_\mu v_\mu = -c^2$ | $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$ | constraint in $\mathbb{B}_{\Phi}$ |
-| Four-momentum $p_\mu = (E/c, \vec p)$ | $\tilde{P}_{\Phi} = i(E/c)e_t + \vec p$ | $\mathbb{B}_{\Phi}$ |
-| Four-force $f_\mu$ | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$ | $\mathbb{B}_{\Phi}$ |
-| Lorentz transformation $\Lambda_{\mu\nu}$ | rotor conjugation $\tilde U_{\mathrm{lor}}(\cdot)\tilde U_{\mathrm{lor}}{}^{*}$ | rotor in $\mathbb{B}$ |
+| Event $x_{\imath} = (r'_{t}, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | $\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $\mathbb{B}_{\Phi}$ |
+| Interval $\sum_{\imath}\varepsilon_{\imath} dx_{\imath} dx_{\imath}$ | $\langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi(d\tilde R_\Phi)^{\natural}$ | biquaternion norm on $\mathbb{B}_{\Phi}$ |
+| Four-velocity $v_{\imath}$ | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | $\mathbb{B}_{\Phi}$ |
+| Mass shell $\sum_{\imath}\varepsilon_{\imath} v_{\imath} v_{\imath} = -c^2$ | $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$ | constraint in $\mathbb{B}_{\Phi}$ |
+| Four-momentum $p_{\imath} = (E/c, \vec p)$ | $\tilde{P}_{\Phi} = i(E/c)e_t + \vec p$ | $\mathbb{B}_{\Phi}$ |
+| Four-force $f_{\imath}$ | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$ | $\mathbb{B}_{\Phi}$ |
+| Lorentz transformation $\Lambda_{\imath\jmath}$ | rotor conjugation $\tilde U_{\mathrm{lor}}(\cdot)\tilde U_{\mathrm{lor}}{}^{*}$ | rotor in $\mathbb{B}$ |
 | Boost | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\mathbb{B}_{\Psi}$ |
 | Spatial rotation | $R(\cdot)R^{*}$ | $\mathbb{B}_{H}$ |
 | Galilean boost (NR limit) | $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \mapsto (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \tfrac{\vec V}{c}r'_t$, $r'_t \mapsto r'_t$ | shear of $\mathbb{B}_{\Phi}$ |

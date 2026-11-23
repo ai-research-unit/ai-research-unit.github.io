@@ -198,7 +198,7 @@ $$
 
 so that $\mathcal{O}$ is odd, $i(\mathcal{O}\tilde Q)\vec e_x=-\mathcal{O}(i\tilde Q\vec e_x)$, and carries the large part onto the small one and back.
 
-**Minimal coupling.** Minimal coupling replaces the four-momentum by $p_\mu-ϙA_\mu$, with $A_\mu=(Ξ,-\vec A)$ and $ϙ$ the charge of the field: $E\to E-ϙΞ$ in the even term and $p_\eta\to\pi_\eta=p_\eta-ϙA_\eta$ in $\mathcal{O}$. The equation keeps its shape, and the pair reads, on the two parts,
+**Minimal coupling.** Minimal coupling replaces the four-momentum by $p_{\imath}-ϙA_{\imath}$, with $A_{\imath}=(Ξ,-\vec A)$ and $ϙ$ the charge of the field: $E\to E-ϙΞ$ in the even term and $p_\eta\to\pi_\eta=p_\eta-ϙA_\eta$ in $\mathcal{O}$. The equation keeps its shape, and the pair reads, on the two parts,
 
 $$
 (E-ϙΞ-m\,c^{2})\tilde{Ξ}=-\mathcal{O}\tilde{Ξ},\qquad
@@ -273,7 +273,7 @@ The mass term is the only term that relates the two parts, and it is the reason 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -297,27 +297,27 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}
++\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
-The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_{\imath}$, so that $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_{\imath}=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
 ## Summary
 

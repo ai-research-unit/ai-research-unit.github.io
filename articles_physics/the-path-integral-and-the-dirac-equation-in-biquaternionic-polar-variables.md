@@ -20,7 +20,7 @@ What the article does not do it says at once. It does not build a second integra
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The conjugations are $*$ and $\natural$, and the pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$, as in both Lagrangian articles. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated here: $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$; $\theta_{\mathrm{axr}}\in[0,2\pi]$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ real unit vectors; $\rho_{\mathrm{num}}=\varrho^{2}$; $\gamma=\cosh\theta_{\mathrm{rpd}}$; $\varrho\,e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$; $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$. The word exists exactly on the $N$-regular elements, that is on $N\neq0$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The conjugations are $*$ and $\natural$, and the pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$, as in both Lagrangian articles. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated here: $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$; $\theta_{\mathrm{axr}}\in[0,2\pi]$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ real unit vectors; $\rho_{\mathrm{num}}=\varrho^{2}$; $\gamma=\cosh\theta_{\mathrm{rpd}}$; $\varrho\,e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$; $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$. The word exists exactly on the $N$-regular elements, that is on $N\neq0$.
 
 The kernel is the companion's. The dynamics is the pair $\tilde\nabla_\Phi\tilde\Xi_{R}=k_m\tilde\Xi_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_m\tilde\Xi_{R}$ with $k_m=\frac{2\pi mc}{h}$, and its Green kernel in momentum space has the two components
 
@@ -215,7 +215,7 @@ In position space the boost is read at the saddle, where the momentum is the cla
 The constant of the kernel's angle is the argument of the Gaussian prefactor. A $d$-dimensional Fresnel integral gives
 
 $$
-\int_{\mathbb{R}^{d}}\exp\Bigl(-i\lambda\sum_\mu x_\mu^{2}\Bigr)\mathrm{d}^{d}x
+\int_{\mathbb{R}^{d}}\exp\Bigl(-i\lambda\sum_{\imath} x_{\imath}^{2}\Bigr)\mathrm{d}^{d}x
 =\Bigl(\frac{\pi}{i\lambda}\Bigr)^{d/2},
 \qquad \lambda=\frac{1}{4\frac{h}{2\pi} T},
 $$

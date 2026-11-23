@@ -30,7 +30,7 @@ What is not here. The element-form companion owns the field term's normalization
 
 ## Conventions
 
-The conventions are the free chart's, restated for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the word is $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde u$, with $\varrho>0$ and $\tilde u$ a unit element of the frame; the connection is $\tilde A_\Phi$ with real components $A_\mu$ and the coupling is $ϙ$. The pairing and the measure are those of the free chart, $k_m=\frac{2\pi mc}{h}$, and the two settings are the parent's.
+The conventions are the free chart's, restated for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the word is $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde u$, with $\varrho>0$ and $\tilde u$ a unit element of the frame; the connection is $\tilde A_\Phi$ with real components $A_{\imath}$ and the coupling is $ϙ$. The pairing and the measure are those of the free chart, $k_m=\frac{2\pi mc}{h}$, and the two settings are the parent's.
 
 ## The Action in Polar Variables
 
@@ -51,7 +51,7 @@ The field term is a quadratic form in the gradients. Because the action is secon
 
 $$
 \tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)
-=\tfrac12\sum_{\mu}(G^{-1})_{ab}(q)\,\partial_\mu q_a\,\partial_\mu q_b
+=\tfrac12\sum_{\imath}(G^{-1})_{ab}(q)\,\partial_{\imath} q_a\,\partial_{\imath} q_b
 +\text{(terms linear in the gradients and in the connection)},
 $$
 
@@ -62,7 +62,7 @@ Why the connection cannot change the metric. The covariant derivative adds one c
 The connection's only entry. The action depends on the connection through the shift of the four-momentum, so in the chart
 
 $$
-\partial_\mu\theta_{\mathrm{pha}}\longmapsto\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\mu
+\partial_{\imath}\theta_{\mathrm{pha}}\longmapsto\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}
 $$
 
 in the phase slot and in the phase slot alone, with the other seven parameters' gradients untouched. That is one substitution, in one coordinate, and it is what the classical $E\mapsto E+ϙc\,a'_t$, $\vec p\mapsto\vec p-q\vec A$ becomes when the phase is a coordinate. The polar companion states the same thing as the identity $\frac{h}{2\pi} c\kappa_t=E+ϙca'_t$, $\frac{h}{2\pi}\vec\kappa=\vec p-q\vec A$.
@@ -216,9 +216,9 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the gauge coordinate |
 | $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})=R\,\varrho^{2}$, $R(0)=1$ | The mass term in the chart; $R$ the frame's scalar |
 | $(G^{-1})_{ab}(q)$ | The inverse of the chart's metric; the coefficient of the kinetic form |
-| $\tilde A_\Phi$, $A_\mu$ | The connection and its central components |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ | The covariant derivative in the chart |
-| $\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\mu$ | The one gradient the connection shifts |
+| $\tilde A_\Phi$, $A_{\imath}$ | The connection and its central components |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The covariant derivative in the chart |
+| $\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}$ | The one gradient the connection shifts |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; translates $\theta_{\mathrm{pha}}$ |
 | $\rho_{\mathrm{chg}}=\partial\mathcal{L}/\partial(\partial_{r'_t}\theta_{\mathrm{pha}})$ | Charge density as the phase's conjugate momentum |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |

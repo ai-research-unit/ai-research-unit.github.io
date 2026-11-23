@@ -18,7 +18,7 @@ which is the positive-definite Hilbert–Schmidt form on the algebra; the sign s
 $$
 S[\tilde{Ξ}] = \int d^4r\; \Big\langle \tilde{Ξ}, W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle,
 \qquad
-\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2 .
+\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \sum_{\imath}\partial^2/\partial R_{\imath}^2 .
 $$
 The plain form, read as the plain pairing, is what makes the exponent a number and not a biquaternion. Because $W_{\mathrm{kinetic}}$ is central it preserves each sector, and the sectors are **orthogonal** under the real form,
 $$
@@ -63,7 +63,7 @@ $$
 \qquad
 \tilde{Ξ}(r_x) = Ξ_t(r_x)\,e_t + Ξ_x(r_x)\,\vec e_x + Ξ_y(r_x)\,\vec e_y + Ξ_z(r_x)\,\vec e_z,
 $$
-with complex coefficients $Ξ_\mu(x)$. The field decomposes along the sectors,
+with complex coefficients $Ξ_{\imath}(x)$. The field decomposes along the sectors,
 $$
 \tilde{Ξ} = \tilde{Ξ}_- + \tilde{Ξ}_+ ,
 \qquad
@@ -134,7 +134,7 @@ $$
 \qquad\text{for all } \tilde{Ξ}_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} .
 $$
 
-**Proof.** It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i q'_t$ and $Q_\eta=q_\eta$, in the informational sector $Q_t=q_t$ and $Q_\eta=i q'_\eta$, and each elementary term is $2\,\mathrm{Re}\,\mathrm{Sc}(e_\mu^{*}W_{\mathrm{kinetic}}e_\nu)$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i r'_t\cdot h_t$ on the time slot and $x_\eta\cdot i h'_{x_\eta}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
+**Proof.** It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i q'_t$ and $Q_\eta=q_\eta$, in the informational sector $Q_t=q_t$ and $Q_\eta=i q'_\eta$, and each elementary term is $2\,\mathrm{Re}\,\mathrm{Sc}(e_{\imath}^{*}W_{\mathrm{kinetic}}e_{\jmath})$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i r'_t\cdot h_t$ on the time slot and $x_\eta\cdot i h'_{x_\eta}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
 
 **Consequence: factorisation.** With the source split as $\tilde J_{\Phi}=\tilde J_{\Phi,-}+\tilde J_{\Phi,+}$, the free functional integral is
 $$
@@ -157,10 +157,10 @@ The cleanest explicit case is the free scalar field, which the scalar example be
 
 **The Euclidean action.** After the Wick rotation of the next section, the free action of a real scalar of mass $m$ is
 $$
-S_E[\xi] = \int d^4r_E\;\tfrac12\Big(\partial/\partial R_\mu\xi\,\partial/\partial R_\mu\xi + m^2\xi^2\Big)
+S_E[\xi] = \int d^4r_E\;\tfrac12\Big(\partial/\partial R_{\imath}\xi\,\partial/\partial R_{\imath}\xi + m^2\xi^2\Big)
 = \tfrac12\int d^4r_E\;\xi\big(-\Box_\Phi + m^2\big)\xi ,
 $$
-with $\Box_\Phi$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_{\mathrm{eu}}^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box_\Phi+k_m^{2}$ continued to the Euclidean case, with $\Box_\Phi=\sum_\mu\partial^2/\partial R_\mu^2$; the wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ has biquaternion norm $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$, which becomes $k_{\mathrm{eu}}^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$.
+with $\Box_\Phi$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_{\mathrm{eu}}^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box_\Phi+k_m^{2}$ continued to the Euclidean case, with $\Box_\Phi=\sum_{\imath}\partial^2/\partial R_{\imath}^2$; the wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ has biquaternion norm $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$, which becomes $k_{\mathrm{eu}}^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$.
 
 **The Gaussian result.** The free generating functional is
 $$
@@ -189,7 +189,7 @@ $$
 i r'_t\,e_t \;\longmapsto\; c\tau\,e_t ,
 $$
 i.e. the relabeling of the imaginary-time coefficient as a real one, $ic(-i\tau)=c\tau$, as *Interpretation of the Wick Rotation in the Biquaternion Universe* establishes.
-Under this identification the time coefficient $Q_t=i q'_t$ becomes the real $Q_t=c\tau$, so the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ becomes the sum of squares $\sum_\mu Q_\mu^2$, the biquaternion norm with every coefficient $+1$, and the oscillatory weight becomes a decaying one:
+Under this identification the time coefficient $Q_t=i q'_t$ becomes the real $Q_t=c\tau$, so the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ becomes the sum of squares $\sum_{\imath} Q_{\imath}^2$, the biquaternion norm with every coefficient $+1$, and the oscillatory weight becomes a decaying one:
 $$
 \exp(\,iS[\tilde{Ξ}]) \;\longrightarrow\; \exp(-S_E[\tilde{Ξ}]),
 \qquad
@@ -221,9 +221,9 @@ The functional integral requires an integration measure, and the measure is the 
 
 **What the measure is.** In the regulated theory the measure is a product over lattice sites or over modes,
 $$
-\mathcal{D}\tilde{Ξ} = \prod_{x}\prod_{\mu\in\{t,x,y,z\}}dΞ_\mu(x)
+\mathcal{D}\tilde{Ξ} = \prod_{x}\prod_{\imath\in\{t,x,y,z\}}dΞ_{\imath}(x)
 \quad\text{or}\quad
-\mathcal{D}\tilde{Ξ} = \prod_{\eta}\prod_{\mu\in\{t,x,y,z\}}dΞ_\mu(k),
+\mathcal{D}\tilde{Ξ} = \prod_{\eta}\prod_{\imath\in\{t,x,y,z\}}dΞ_{\imath}(k),
 $$
 a product of Lebesgue measures on the coefficients, one per biquaternion component. The algebra fixes the *number* of components — four complex coefficients, two per sector — and the fact that the measure is the volume form of the module; it does nothing else.
 
@@ -259,7 +259,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 
 ## Summary
 
-The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box_\Phi-k_m^{2}$ with $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$,
+The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box_\Phi-k_m^{2}$ with $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\partial^2/\partial R_{\imath}^2$,
 $$
 S[\tilde{Ξ}]=\int d^4r\;\Big\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle,
 \qquad
@@ -286,7 +286,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ | Biquaternion field and its sector parts |
 | $\mathrm{Sc}(\tilde{Q})=Q_t$ (complex scalar part) | Scalar extraction; the scalar part converts a biquaternion into a number |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form of the action; sector-orthogonal |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$ | d'Alembertian, series convention |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\partial^2/\partial R_{\imath}^2$ | d'Alembertian, series convention |
 | $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$ | Wave biquaternion; Euclidean $k_{\mathrm{eu}}^2$ |
 | $S[\tilde{Ξ}]=\int d^4r\,\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle$ | Quadratic biquaternion action; $W_{\mathrm{kinetic}}=\Box_\Phi-k_m^{2}$ |
 | $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(-\frac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ | Functional integral with source |
@@ -297,7 +297,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ | Wedge modular Hamiltonian (the worked causally complete region) |
 | $\det\mathcal{F}$, $\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\ \mathcal{F}_L&-k_m\end{pmatrix}$ | Fermionic Gaussian result (Grassmann integral) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

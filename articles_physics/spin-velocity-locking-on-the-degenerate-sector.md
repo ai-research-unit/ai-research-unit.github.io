@@ -165,7 +165,7 @@ What sits at the far end is a transverse spin at the speed of light. At $\theta_
 
 ### It Does Not Impose the Frenkel Condition
 
-**The lock says nothing about the spin's transversality to the flow, and on this sector the spin is generally not transverse.** The corpus's Frenkel condition is a statement about the spin tensor, $\sum_\nu S_{\mu\nu}v_{\Phi,\nu}=0$, and it is automatic for a spin carried by a real vector: it constrains the tensor and not the vector. A different condition, that the spin vector be orthogonal to the four-velocity, is sometimes given the same name, and it is not the corpus's condition.
+**The lock says nothing about the spin's transversality to the flow, and on this sector the spin is generally not transverse.** The corpus's Frenkel condition is a statement about the spin tensor, $\sum_{\jmath} S_{\imath\jmath}v_{\Phi,\jmath}=0$, and it is automatic for a spin carried by a real vector: it constrains the tensor and not the vector. A different condition, that the spin vector be orthogonal to the four-velocity, is sometimes given the same name, and it is not the corpus's condition.
 
 Under that other condition the sector would be almost empty. With the spin along the motion at $\theta_{\mathrm{axr}}=\pi/2$ the vector is parallel to the velocity and the orthogonality would fail, so the other condition would exclude every sector element except $\theta_{\mathrm{axr}}=0$ and $\pi$. The sector's existence therefore depends on which condition is meant, and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) fixes which one the corpus uses.
 
@@ -174,8 +174,8 @@ Under that other condition the sector would be almost empty. With the spin along
 The lock fixes the values of the rapidity and the spin angle and leaves their gradients free. The four brackets of the polar derivative are still four, and the field equation still constrains them jointly without closing them. On the sector they collapse by one, because the rapidity's gradient is the spin angle's gradient times $\pm\sec(\theta_{\mathrm{axr}}/2)$,
 
 $$
-\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}
-=\pm\sec\frac{\theta_{\mathrm{axr}}}{2}\,\frac{\partial\theta_{\mathrm{axr}}}{\partial R_\mu},
+\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}
+=\pm\sec\frac{\theta_{\mathrm{axr}}}{2}\,\frac{\partial\theta_{\mathrm{axr}}}{\partial R_{\imath}},
 $$
 
 with the sign the branch's, so the velocity's transport is tied to the spin's — but the spin's transport equation is still missing, and the sector does not supply it.

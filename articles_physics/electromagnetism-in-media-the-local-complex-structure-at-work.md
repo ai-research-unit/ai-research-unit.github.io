@@ -408,12 +408,12 @@ $$
 \vec{\mu}:=\frac{\mathrm{grad}\sqrt{\mu}}{\sqrt{\mu}}=\frac{1}{2}\frac{\mathrm{grad}\,\mu}{\mu},
 $$
 
-and $\ell_\epsilon:=\mathrm{grad}\,\epsilon/\epsilon=2\vec{\epsilon}$, with $\ell_\mu$ defined the same way. Combining the two divergence equations with the two curl equations gives the pair
+and $\ell_\epsilon:=\mathrm{grad}\,\epsilon/\epsilon=2\vec{\epsilon}$, with $\ell_{\imath}$ defined the same way. Combining the two divergence equations with the two curl equations gives the pair
 
 $$
 D\,\vec E=\langle \ell_\epsilon,\vec E\rangle-\mu\,\partial/\partial r'_t\,\vec H-\frac{\rho}{\epsilon},
 \qquad
-D\,\vec H=\langle \ell_\mu,\vec H\rangle+\epsilon\,\partial/\partial r'_t\,\vec E+\vec J,
+D\,\vec H=\langle \ell_{\imath},\vec H\rangle+\epsilon\,\partial/\partial r'_t\,\vec E+\vec J,
 $$
 
 and the scalar-product identity turns each of them into a gradient-corrected operator. For the electric field, adding $\vec{\epsilon}\,\vec E$ and using $\langle \ell_\epsilon,\vec E\rangle=-(\vec{\epsilon}\,\vec E+\vec E\,\vec{\epsilon})$,
@@ -427,7 +427,7 @@ and for the magnetic field
 
 $$
 D\,\vec H+\vec{\mu}\,\vec H
-=-\tfrac{1}{2}\,\vec H\,\ell_\mu+\epsilon\,\partial/\partial r'_t\,\vec E+\vec J,
+=-\tfrac{1}{2}\,\vec H\,\ell_{\imath}+\epsilon\,\partial/\partial r'_t\,\vec E+\vec J,
 $$
 
 where the coefficient stands on the **left** of the field as written, while the two corrections on the right-hand sides are **right** products. The order is not cosmetic: exchanging $\vec E\ell_\epsilon$ for $\ell_\epsilon\vec E$ changes the remainder by $2\,\vec E\times \ell_\epsilon$.
@@ -677,7 +677,7 @@ $$
 r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| .
 $$
 
-The authors remark that it is not clear how to obtain this result directly for the Maxwell operators $\mathcal{D}_{\vec{\mu}}$ and $\mathcal{D}_{\vec{\epsilon}}$ by other known methods.
+The authors remark that it is not clear how to obtain this result directly for the Maxwell operators $\mathcal{D}_{\vec{\imath}}$ and $\mathcal{D}_{\vec{\epsilon}}$ by other known methods.
 
 **The recipe is the chiral recipe; the kernel is not the chiral kernel.** The bracketed factor has already appeared in this article, and it is worth saying exactly how far the resemblance goes. The fundamental solution of the chiral operator in *A Chiral Medium: One Quaternionic Equation* is
 
@@ -894,7 +894,7 @@ The third case is realized by the non-commutative vacuum of *Maxwell's Theory on
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 Every two-sided action in this article has been written out as a product, $a\,\tilde{Ξ}\,b$, with the side carried by position. The fermion articles of the corpus write the same operators as products of Dirac gammas. The two descriptions are related by a fixed dictionary and not by a change of algebra, and this section states the dictionary once so that a reader can move between them. Afterwards it is dropped: outside this section the article contains no gamma.
 
@@ -921,7 +921,7 @@ $$
 Basis operators compose by composing their factors, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, and in that product the four satisfy the basis operator relation of the Minkowski metric while the fifth closes the frame on the chirality basis operator,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,
 \qquad
 \varepsilon=(1,-1,-1,-1),
 $$
@@ -942,7 +942,7 @@ The product of the four is taken in the order in which the basis operators stand
 
 **Why the basis operators stay primary.** The dictionary is complex-linear, and the two real forms behind it are not the same: over $\mathbb{R}$ the gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, while the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The biquaternion algebra is the complex one, so both readings are available in it, but only the basis operators are defined without a choice of frame. The article keeps the basis operators for that reason, and uses the gammas as the frame in which the fermion articles are written.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -1035,7 +1035,7 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $n_\tau(\omega)=1/(1-\tau\beta\omega/c),\ \tau=\pm1$ | The two refractive indices of the chiral medium |
 | $\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Inhomogeneous permittivity and permeability |
 | $\vec{\epsilon}=\tfrac12\mathrm{grad}\,\epsilon/\epsilon,\ \vec{\mu}=\tfrac12\mathrm{grad}\,\mu/\mu$ | Half-gradients of the two medium parameters |
-| $\ell_\epsilon=\mathrm{grad}\,\epsilon/\epsilon=2\vec{\epsilon}$, $\ell_\mu$ likewise | Full gradients of the two medium parameters, twice the half-gradients |
+| $\ell_\epsilon=\mathrm{grad}\,\epsilon/\epsilon=2\vec{\epsilon}$, $\ell_{\imath}$ likewise | Full gradients of the two medium parameters, twice the half-gradients |
 | $\vec{\mathcal E}=\sqrt{\epsilon}\,\vec E,\ \vec{\mathcal H}=\sqrt{\mu}\,\vec H$ | Fields normalised by the carrier functions |
 | $\mathcal{F}=\vec{\mathcal E}+i\vec{\mathcal H}$ | Field of the Vekua equation; $\tilde{F}=i\mathcal{F}$ |
 | $\bar{\mathcal{F}}$ | Coefficientwise complex conjugation of $\mathcal{F}$; the corpus's ${}^{*}$ is the Hermitian conjugation, a different involution |

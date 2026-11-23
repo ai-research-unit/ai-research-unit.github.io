@@ -35,20 +35,20 @@ The article is organised as follows. The gradient and the d'Alembertian are esta
 The gradient is the material four-vector operator assembled from the basis,
 $$
 \tilde\nabla_\Phi = e_t\,\partial/\partial R_t + \vec e_x\,\partial/\partial R_x + \vec e_y\,\partial/\partial R_y + \vec e_z\,\partial/\partial R_z
-= \sum_{\mu\in\{t,x,y,z\}} e_\mu\,\partial/\partial R_\mu ,
+= \sum_{\imath\in\{t,x,y,z\}} e_{\imath}\,\partial/\partial R_{\imath} ,
 \qquad
 \partial/\partial R_t = -i\partial/\partial r'_t ,
 $$
 with the spatial derivatives real and the time derivative carrying the $i r'_t$ factor. Its quaternion conjugate reverses the vector part and leaves the scalar part,
 $$
 (\tilde\nabla_\Phi)^{\natural} = e_t\,\partial/\partial R_t - \vec e_x\,\partial/\partial R_x - \vec e_y\,\partial/\partial R_y - \vec e_z\,\partial/\partial R_z
-= \sum_{\mu\in\{t,x,y,z\}} e_\mu^{*}\,\partial/\partial R_\mu ,
+= \sum_{\imath\in\{t,x,y,z\}} e_{\imath}^{*}\,\partial/\partial R_{\imath} ,
 $$
-where the second equality uses $e_t^{*} = e_t$ and $\vec e_\eta^{*} = -\vec e_\eta$, that is, Hermitian conjugation of the basis. The identity $(\tilde\nabla_\Phi)^{\natural} = \sum_\mu e_\mu^{*} \partial/\partial R_\mu$ is the only algebraic input the operator theory needs, and it is the reason the adjoint of the operator is a conjugation of the operator.
+where the second equality uses $e_t^{*} = e_t$ and $\vec e_\eta^{*} = -\vec e_\eta$, that is, Hermitian conjugation of the basis. The identity $(\tilde\nabla_\Phi)^{\natural} = \sum_{\imath} e_{\imath}^{*} \partial/\partial R_{\imath}$ is the only algebraic input the operator theory needs, and it is the reason the adjoint of the operator is a conjugation of the operator.
 
-Two warnings about reading $\tilde\nabla_\Phi$ as an element of $\mathbb{B}$ are needed, because they govern every manipulation that follows. The coefficients $\partial/\partial R_\mu$ are **operators**, not complex numbers, so $\tilde\nabla_\Phi$ is not an element of the algebra but an algebra-valued differential operator; statements about it are statements about its action. And the coefficients do not commute with the basis in the naive way, because the time coefficient $\partial/\partial R_t$ is imaginary while the basis is not: the product rule fixes the order, and $\tilde\nabla_\Phi$ acts by left multiplication on the field,
+Two warnings about reading $\tilde\nabla_\Phi$ as an element of $\mathbb{B}$ are needed, because they govern every manipulation that follows. The coefficients $\partial/\partial R_{\imath}$ are **operators**, not complex numbers, so $\tilde\nabla_\Phi$ is not an element of the algebra but an algebra-valued differential operator; statements about it are statements about its action. And the coefficients do not commute with the basis in the naive way, because the time coefficient $\partial/\partial R_t$ is imaginary while the basis is not: the product rule fixes the order, and $\tilde\nabla_\Phi$ acts by left multiplication on the field,
 $$
-\tilde\nabla_\Phi\tilde{Ξ} = \sum_\mu e_\mu\,\partial/\partial R_\mu\,\tilde{Ξ} .
+\tilde\nabla_\Phi\tilde{Ξ} = \sum_{\imath} e_{\imath}\,\partial/\partial R_{\imath}\,\tilde{Ξ} .
 $$
 Nothing else in the construction depends on the choice of left or right action, because the d'Alembertian will turn out to be central; the first-order kernel will not be, and there the order is the content.
 
@@ -59,13 +59,13 @@ Nothing else in the construction depends on the choice of left or right action, 
 The two second-order operators built from the gradient are equal, and each is the scalar Laplacian in the $i r'_t$ coordinate. Composing,
 $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}
-= \sum_{\mu,\nu} e_\mu e_\nu^{*}\,\partial^2/\partial R_\mu\partial R_\nu
-= \sum_{\mu} e_\mu e_\mu^{*}\,\partial^2/\partial R_\mu^2
-+ \sum_{\mu \neq \nu} e_\mu e_\nu^{*}\,\partial^2/\partial R_\mu\partial R_\nu .
+= \sum_{\imath,\jmath} e_{\imath} e_{\jmath}^{*}\,\partial^2/\partial R_{\imath}\partial R_{\jmath}
+= \sum_{\imath} e_{\imath} e_{\imath}^{*}\,\partial^2/\partial R_{\imath}^2
++ \sum_{\imath \neq \jmath} e_{\imath} e_{\jmath}^{*}\,\partial^2/\partial R_{\imath}\partial R_{\jmath} .
 $$
-On the diagonal $e_\mu e_\mu^{*} = e_t$ for every $\mu$: for $\mu = 0$ this is $e_t e_t = e_t$, and for $\mu = k$ it is $\vec e_\eta(-\vec e_\eta) = -\vec e_\eta^2 = e_t$. On the off-diagonal the products are basis bivectors, $e_t \vec e_\eta^{*} = -\vec e_\eta$ and $\vec e_j \vec e_\eta^{*} = -\vec e_j \vec e_\eta$ for $j \neq k$, and the coefficient $\partial^2/\partial R_\mu\partial R_\nu$ is symmetric in $\mu,\nu$ while the bivector part is antisymmetric. The off-diagonal sum therefore vanishes, and
+On the diagonal $e_{\imath} e_{\imath}^{*} = e_t$ for every $\mu$: for $\mu = 0$ this is $e_t e_t = e_t$, and for $\mu = k$ it is $\vec e_\eta(-\vec e_\eta) = -\vec e_\eta^2 = e_t$. On the off-diagonal the products are basis bivectors, $e_t \vec e_\eta^{*} = -\vec e_\eta$ and $\vec e_j \vec e_\eta^{*} = -\vec e_j \vec e_\eta$ for $j \neq k$, and the coefficient $\partial^2/\partial R_{\imath}\partial R_{\jmath}$ is symmetric in ${\imath},\jmath$ while the bivector part is antisymmetric. The off-diagonal sum therefore vanishes, and
 $$
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = e_t\sum_{\mu}\partial^2/\partial R_\mu^2 = e_t\left(\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2\right).
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = e_t\sum_{\imath}\partial^2/\partial R_{\imath}^2 = e_t\left(\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2\right).
 $$
 The same computation with the factors exchanged gives $(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi = e_t(\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2)$, so the two orders agree. Writing $e_t$ as the identity and dropping it, the series convention is
 $$
@@ -79,7 +79,7 @@ $$
 $$
 Every later statement about the scalar Green's function follows from this centrality, and every departure from it will be a statement about the first-order operator instead.
 
-The verification of the composition was made on a random real symbol vector $s$, for which the two ordered sums $\sum_{\mu\nu} e_\mu e_\nu^{*} s_\mu s_\nu$ and $\sum_{\mu\nu} e_\mu^{*} e_\nu s_\mu s_\nu$ each reduce to $(s_0^2 + s_1^2 + s_2^2 + s_3^2)e_t$ exactly, in integer and rational arithmetic with no floating-point tolerance. It is the algebraic form of the statement that no bivector survives the symmetrisation.
+The verification of the composition was made on a random real symbol vector $s$, for which the two ordered sums $\sum_{\imath\jmath} e_{\imath} e_{\jmath}^{*} s_{\imath} s_{\jmath}$ and $\sum_{\imath\jmath} e_{\imath}^{*} e_{\jmath} s_{\imath} s_{\jmath}$ each reduce to $(s_0^2 + s_1^2 + s_2^2 + s_3^2)e_t$ exactly, in integer and rational arithmetic with no floating-point tolerance. It is the algebraic form of the statement that no bivector survives the symmetrisation.
 
 ### The symbol, and the sign convention
 
@@ -107,19 +107,19 @@ The adjoint of the gradient is computed with the Hermitian pairing on fields,
 $$
 \langle \tilde{F}, \tilde Q\rangle = \int 2\,\mathrm{Sc}\!\left(\tilde{F}^{*} \tilde Q\right) d^4r ,
 $$
-the integration running over real time and space. Integrating by parts and using $\bigl(\partial/\partial R_\mu\,\tilde{F}\bigr)^\dagger = \partial/\partial R_\mu\,\tilde{F}^{*}$ for the real differential operators,
+the integration running over real time and space. Integrating by parts and using $\bigl(\partial/\partial R_{\imath}\,\tilde{F}\bigr)^\dagger = \partial/\partial R_{\imath}\,\tilde{F}^{*}$ for the real differential operators,
 $$
 \langle \tilde{F}, \tilde\nabla_\Phi\tilde Q\rangle
-= \int 2\,\mathrm{Sc}\!\left(\tilde{F}^{*}\, \sum_\mu\,e_\mu\,\partial/\partial R_\mu\,\tilde Q\right) d^4r
-= -\int 2\,\mathrm{Sc}\!\left(\bigl(\partial/\partial R_\mu \tilde{F}^{*}\bigr) e_\mu \tilde Q\right) d^4r .
+= \int 2\,\mathrm{Sc}\!\left(\tilde{F}^{*}\, \sum_{\imath}\,e_{\imath}\,\partial/\partial R_{\imath}\,\tilde Q\right) d^4r
+= -\int 2\,\mathrm{Sc}\!\left(\bigl(\partial/\partial R_{\imath} \tilde{F}^{*}\bigr) e_{\imath} \tilde Q\right) d^4r .
 $$
 The algebraic identity
 $$
-\sum_\mu \bigl(\partial/\partial R_\mu\,\tilde{F}\bigr)^\dagger e_\mu
-= \left(\sum_\mu e_\mu^{*}\,\partial/\partial R_\mu\,\tilde{F}\right)^\dagger
+\sum_{\imath} \bigl(\partial/\partial R_{\imath}\,\tilde{F}\bigr)^\dagger e_{\imath}
+= \left(\sum_{\imath} e_{\imath}^{*}\,\partial/\partial R_{\imath}\,\tilde{F}\right)^\dagger
 = \bigl((\tilde\nabla_\Phi)^{\natural}\tilde{F}\bigr)^\dagger
 $$
-uses only the antilinearity of ${}^{*}$ and $(e_\mu^{*})^{*} = e_\mu$; it was verified on random complex biquaternion coefficients. Substituting,
+uses only the antilinearity of ${}^{*}$ and $(e_{\imath}^{*})^{*} = e_{\imath}$; it was verified on random complex biquaternion coefficients. Substituting,
 $$
 \langle \tilde{F}, \tilde\nabla_\Phi\tilde Q\rangle = -\langle (\tilde\nabla_\Phi)^{\natural}\tilde{F}, \tilde Q\rangle ,
 \qquad\text{that is,}\qquad
@@ -166,7 +166,7 @@ $$
 $$
 the Minkowski interval continued to imaginary time. Read as a quadratic form in the four coordinates $(x_0, x_1, x_2, x_3)$ with $x_0 = i r'_t$ and $x_\eta = r_\eta$, the operator $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is *exactly* the four-dimensional Laplacian,
 $$
-\Box_\Phi = \sum_{\mu\in\{t,x,y,z\}} \partial^2/\partial R_\mu^2 = \Delta_\Phi ,
+\Box_\Phi = \sum_{\imath\in\{t,x,y,z\}} \partial^2/\partial R_{\imath}^2 = \Delta_\Phi ,
 $$
 so that the inversion of the wave operator is the classical inversion of the Laplacian. This is the point of the $i r'_t$ convention, and it is why the framework's Green's functions are the standard ones of potential theory.
 
@@ -404,7 +404,7 @@ a central scalar operator whose symbol is $\omega^2/c^2 - \vec k_\Phi^2$ and who
 $$
 \Box_\Phi^{*} = \Box_\Phi ,
 $$
-the two minus signs cancelling. The adjoint statement was verified through the algebraic identity $\sum_\mu(\partial/\partial R_\mu\,\tilde{F})^\dagger e_\mu = ((\tilde\nabla_\Phi)^{\natural}\tilde{F})^\dagger$ on random complex coefficients, and the composition $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ was verified exactly on a random symbol.
+the two minus signs cancelling. The adjoint statement was verified through the algebraic identity $\sum_{\imath}(\partial/\partial R_{\imath}\,\tilde{F})^\dagger e_{\imath} = ((\tilde\nabla_\Phi)^{\natural}\tilde{F})^\dagger$ on random complex coefficients, and the composition $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ was verified exactly on a random symbol.
 
 The Green's functions are the boundary conditions on one equation, $-\Box_\Phi G = \delta^{(4)}$. The invariant kernel is
 $$
@@ -438,8 +438,8 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\nabla_\Phi = \sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient, $\partial/\partial R_t = \partial/\partial R_t = -i\partial/\partial r'_t$ |
-| $(\tilde\nabla_\Phi)^{\natural} = \sum_\mu e_\mu^{*}\partial/\partial R_\mu$ | Quaternion-conjugate gradient, $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ |
+| $\tilde\nabla_\Phi = \sum_{\imath} e_{\imath}\partial/\partial R_{\imath}$ | Biquaternionic gradient, $\partial/\partial R_t = \partial/\partial R_t = -i\partial/\partial r'_t$ |
+| $(\tilde\nabla_\Phi)^{\natural} = \sum_{\imath} e_{\imath}^{*}\partial/\partial R_{\imath}$ | Quaternion-conjugate gradient, $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Series d'Alembertian; central scalar; $\Box_\Phi \to \omega^2/c^2 - \vec k_\Phi^2$ |
 | $\tilde\nabla_\Phi^{*} = -(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi^{*} = \Box_\Phi$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int2\,\mathrm{Sc}(\tilde{F}^{*}\tilde Q)$ |
 | $\Box_\Phi^\flat = -\Box_\Phi$, $G_{\Box,\Phi}^\flat = -G_{\Box,\Phi}$, $\tilde{G}_{\Phi,\tilde\nabla_\Phi}^\flat = \tilde{G}_{\Phi,\tilde\nabla_\Phi}$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_{\Phi,\tilde\nabla_\Phi} \in \mathbb{B}_{\Psi}$ |
@@ -458,7 +458,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $D^+_FD^-_F = -\Box_\Phi + 2f\partial/\partial\tau + 2i(F,\vec\nabla_\Phi) + f^2 + (F,F)$ | Square of the mutual MD-operators; the wave operator of the source's time is $-\Box_\Phi$, because $\partial^2/\partial\tau^2-\Delta_\Phi = -\Box_\Phi$ |
 | $\tilde{Ξ} = \frac{1}{4\pi r}\exp(\pm i\theta_{\mathrm{spa}})\exp(-\kappa_{\mathrm{dmp}})\delta(\tau-r)$ | Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\vec\nabla_\Phi)$ coefficient |
 | $\mathrm{H}_{\mathrm{hvs}}(r'_t)$ | Step function selecting the future cone |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ (not used in $\Box_\Phi$) |
+| $\delta_{\imath\jmath}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ (not used in $\Box_\Phi$) |
 
 ## Further Reading
 

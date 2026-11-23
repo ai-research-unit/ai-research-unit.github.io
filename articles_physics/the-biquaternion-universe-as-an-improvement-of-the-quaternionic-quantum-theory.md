@@ -166,7 +166,7 @@ $$
 $$
 Its elements are written
 $$
-\tilde Q=Q_{t}e_{t}+Q_{x}\vec e_{x}+Q_{y}\vec e_{y}+Q_{z}\vec e_{z},\qquad Q_{\mu}\in\mathbb{C},
+\tilde Q=Q_{t}e_{t}+Q_{x}\vec e_{x}+Q_{y}\vec e_{y}+Q_{z}\vec e_{z},\qquad Q_{\imath}\in\mathbb{C},
 $$
 with $e_t=1$, $\vec e_\eta^{2}=-e_t$ for $\eta=x,y,z$, and $\vec e_x\vec e_y=\vec e_z$ together with its cyclic companions. The algebra is associative, and it is not commutative.
 
@@ -176,7 +176,7 @@ What the complexification changes, in three items.
 - The algebra is central simple over its centre. The isomorphism $\mathbb{B}\cong M_{2}(\mathbb{C})$ is an isomorphism of complex algebras, so $\mathbb{B}$ is a full matrix algebra over $\mathbb{C}$. This is precisely the property that quaternionic scalars lack, and the whole of Part II turns on it.
 - The units survive as elements and cease to be scalars. The elements $\vec e_x,\vec e_y,\vec e_z$ remain, with $\vec e_\eta^{2}=-e_t$ and the rotation bracket, but they commute with the scalars $i$ and do not commute with one another. They are elements of the algebra over $\mathbb{C}$, not the field of scalars.
 
-The conjugations and the sectors. Three operations act on $\mathbb{B}$: the coefficientwise conjugation $\overline{\cdot}$, which conjugates the complex coordinates; the quaternion conjugation ${}^{\natural}$, which fixes $e_t$, negates $\vec e_x,\vec e_y,\vec e_z$ and is $\mathbb{C}$-linear; and the Hermitian conjugation ${}^{*}={}^{\natural}\circ\overline{\cdot}$, so that $Q^{*}_{\nu}=\varepsilon_{\nu}\overline{Q_{\nu}}$ with $\varepsilon=(1,-1,-1,-1)$. The Hermitian conjugation splits the algebra into its two fixed spaces,
+The conjugations and the sectors. Three operations act on $\mathbb{B}$: the coefficientwise conjugation $\overline{\cdot}$, which conjugates the complex coordinates; the quaternion conjugation ${}^{\natural}$, which fixes $e_t$, negates $\vec e_x,\vec e_y,\vec e_z$ and is $\mathbb{C}$-linear; and the Hermitian conjugation ${}^{*}={}^{\natural}\circ\overline{\cdot}$, so that $Q^{*}_{\jmath}=\varepsilon_{\jmath}\overline{Q_{\jmath}}$ with $\varepsilon=(1,-1,-1,-1)$. The Hermitian conjugation splits the algebra into its two fixed spaces,
 $$
 \mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi},
 $$
@@ -197,7 +197,7 @@ $$
 $$
 Two of them are the metric and the probability. The form $\langle\cdot\rangle_{\natural}$ is the biquaternion norm, and on the material sector it is the **Minkowski interval**. The form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is the Hermitian form,
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu}Q_{1\mu}\overline{Q_{2\mu}},
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\imath}Q_{1\imath}\overline{Q_{2\imath}},
 $$
 which is linear in the first slot, conjugate-linear in the second, and **positive definite**; its group of invertibles is $\mathrm{U}(2)$, its inertia is $(8,0)$ on $\mathbb{B}$ and $(4,0)$ on $\mathbb{B}_{\Phi}$, and it is the internal Hilbert-space structure that the Born rule and the $*$-unitary evolution use. On the material sector all four forms are real and $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=-\langle\tilde Q_1,\tilde Q_2\rangle$, so the definite form and the indefinite form meet there in the way that the quaternionic conjugation and the quaternionic norm met.
 
@@ -397,7 +397,7 @@ Quaternionic quantum theory is the theory obtained by making the quaternion alge
 | $\mathsf{M}_2(e_t)=I_{2}$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_{\eta}$ | The matrix model of $\mathbb{B}$ onto the $2\times2$ complex matrices |
 | $\mathrm{Sc}$ | The scalar part, the coefficient of $e_t$, and the reduction convention |
 | $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | The four forms: $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ |
-| $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu}Q_{1\mu}\overline{Q_{2\mu}}$ | The Hermitian form; positive definite, linear in the first slot and conjugate-linear in the second |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\imath}Q_{1\imath}\overline{Q_{2\imath}}$ | The Hermitian form; positive definite, linear in the first slot and conjugate-linear in the second |
 | $\langle\cdot\rangle_{\natural}$ | The biquaternion norm; the Minkowski interval on $\mathbb{B}_{\Phi}$ |
 | $S\cong\mathbb{C}^{2}$ | The defining state module, with $\mathbb{B}\cong\mathrm{End}(S)$ |
 | $\tilde S_{\Psi,\eta}=\frac{h}{4\pi}i\vec e_\eta$ | The spin generators, with $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{\eta}\epsilon_{ij\eta}\tilde S_{\Psi,\eta}$ |

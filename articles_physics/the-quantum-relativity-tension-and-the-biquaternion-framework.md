@@ -51,7 +51,7 @@ The relativistic transformations are the unit-norm biquaternions, $\tilde{U}\til
 | Object | Relativistic face | Quantum face |
 |---|---|---|
 | Involution | ${}^{\natural}$ (quaternion): the metric | ${}^{*}$ (Hermitian): the Hilbert structure |
-| Form on an element | General quaternionic bilinear $\sum_\mu Q_{1,\mu}^{2}$, indefinite | Sesquilinear $\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$, positive definite |
+| Form on an element | General quaternionic bilinear $\sum_{\imath} Q_{1,\imath}^{2}$, indefinite | Sesquilinear $\sum_{\imath}\lvert Q_{1,\imath}\rvert^{2}$, positive definite |
 | Distinguished group | Unit norm $\tilde{U}\tilde{U}^{\natural}=e_t$: $SL(2,\mathbb{C})$ | $*$-Unitary $\tilde{Q}_2\tilde{Q}_2^{*}=e_t$: the quantum operations |
 | Distinguished real form | $\mathbb{B}_{\Phi}$: the four-vectors, interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | $\mathbb{B}_{\Psi}$: the Bloch ball, $2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi}=1$, $\tilde{Ϛ}_{\Psi}\geq0$ |
 | Action | $\Gamma_{\tilde{U}}$ on $\mathbb{B}_{\Phi}$ | $\Gamma_{\tilde{Q}_2}$ on $\mathbb{B}_{\Psi}$, and $\tilde{Q}_2$ on the spinor module |
@@ -86,7 +86,7 @@ Seven ideas. Six are numbered against the difficulties — ideas 3 and 4 both ag
 
 **The idea.** Make the Lorentzian sign pattern a consequence of the algebra rather than a postulate about a metric.
 
-**The mechanism.** In the material sector the time coordinate is $i r'_t$. The interval is the quaternion norm of a material element, $\langle\tilde{Q}_1\rangle_{\natural}=\tilde{Q}_1\tilde{Q}_1^{\natural}=\sum_\mu Q_{1,\mu}^2$ with $Q_{1t}=i r'_t$, and the single relation $i^2=-1$ turns $\sum_\mu Q_{1,\mu}^2$ into $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$. The sign that distinguishes time from space is the sign of the square of the algebra's own central imaginary, not an independent assumption about a metric.
+**The mechanism.** In the material sector the time coordinate is $i r'_t$. The interval is the quaternion norm of a material element, $\langle\tilde{Q}_1\rangle_{\natural}=\tilde{Q}_1\tilde{Q}_1^{\natural}=\sum_{\imath} Q_{1,\imath}^2$ with $Q_{1t}=i r'_t$, and the single relation $i^2=-1$ turns $\sum_{\imath} Q_{1,\imath}^2$ into $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$. The sign that distinguishes time from space is the sign of the square of the algebra's own central imaginary, not an independent assumption about a metric.
 
 **The edge.** The derived signs fix the arena. It does not by itself settle the problem of time, which is a statement about dynamics and constraints: the Hamiltonian constraint of canonical quantum gravity and the absence of a preferred time are not addressed by making the time coordinate algebraic. Ideas 3 and 4 share difficulty 1 and each answers a different part of it.
 
@@ -136,7 +136,7 @@ The ideas, collected by difficulty.
 
 | Difficulty | Idea | The mechanism |
 |---|---|---|
-| 1 Time a parameter | 3, the signs from $i^2=-1$ | $\langle\tilde{Q}_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^2$ with $Q_{1t}=i r'_t$ |
+| 1 Time a parameter | 3, the signs from $i^2=-1$ | $\langle\tilde{Q}_1\rangle_{\natural}=\sum_{\imath} Q_{1,\imath}^2$ with $Q_{1t}=i r'_t$ |
 | 1 Problem of time | 4, the time as a coordinate | $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$; the exchange as an internal clock |
 | 2 Born rule an axiom | 1, states and observables in one subspace | $\langle\tilde H_\Psi\rangle_{\tilde{Ϛ}_{\Psi},*}=\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=h_t+\vec s_{\Psi}\cdot\vec h_\Psi$; for $\tilde H_\Psi=\tilde\Pi_{\mathrm{id},1,2}(\vec u)$ this is $\tfrac12(1\pm\vec u\cdot\vec s_{\Psi})$ |
 | 3 Spin–statistics | 6, two classes of representation | $-e_t$ acts as $\pm\mathrm{id}$ by module |
@@ -233,8 +233,8 @@ Three interpretations cut across the difficulties. The arrow of process is the s
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$, $\lvert\vec s_{\Psi}\rvert\leq1$ | State (Bloch ball), Bloch vector $\vec s_{\Psi}$ |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Idempotent (pure state) |
 | $\langle\tilde H_\Psi\rangle_{\tilde{Ϛ}_{\Psi},*}=\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=h_t+\vec s_{\Psi}\cdot\vec h_\Psi$ | Born rule, the normalised Hermitian form; for $\tilde H_\Psi=\tilde\Pi_{\mathrm{id},1,2}(\vec u)$, $\tfrac12(1\pm\vec u\cdot\vec s_{\Psi})$ |
-| $\langle\tilde{Q}_1\rangle_{\natural}=\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}=\tilde{Q}_1\tilde{Q}_1^{\natural}=\sum_\mu Q_{1,\mu}^{2}$ | Biquaternion norm; indefinite, complex in general; $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ on $\mathbb{B}_{\Phi}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$ | Sesquilinear form; real, positive definite; the Hilbert structure |
+| $\langle\tilde{Q}_1\rangle_{\natural}=\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}=\tilde{Q}_1\tilde{Q}_1^{\natural}=\sum_{\imath} Q_{1,\imath}^{2}$ | Biquaternion norm; indefinite, complex in general; $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ on $\mathbb{B}_{\Phi}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_{\imath}\lvert Q_{1,\imath}\rvert^{2}$ | Sesquilinear form; real, positive definite; the Hilbert structure |
 | $\langle\tilde H_\Psi\rangle_{\natural}=h_t^2-\lvert\vec h_\Psi\rvert^2$ | Biquaternion norm on a Hermitian element $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ |
 | $\langle\tilde{Q}_1\rangle_{\natural}=0$ | Zero-divisor cone; its material real slice is the light cone, and the unit-weight slice of its informational real slice is the Bloch sphere |
 | $\tilde\Pi_{\mathrm{id}}^{\natural}=e_t-\tilde\Pi_{\mathrm{id}}$, $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural}=0$ | On a Hermitian idempotent: conjugation returns the complement, and the norm vanishes |

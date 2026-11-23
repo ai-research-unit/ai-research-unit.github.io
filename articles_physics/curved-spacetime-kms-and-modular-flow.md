@@ -57,7 +57,7 @@ $$
 \ell\to1\ \text{at infinity}.
 $$
 
-The corpus writes its metric as $\delta_{\mu\nu}$ with every coefficient $+1$, and a horizon is not a coefficient of that metric: it is a surface on which the imported geometry's lapse vanishes. So the lapse enters this article as an imported scalar — a number attached to each event by the geometry that the corpus imports — and the algebra carries only the local tangent structure at each point, which is the zero-divisor cone. [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html) states that division of labour and this article adopts it.
+The corpus writes its metric as $\delta_{\imath\jmath}$ with every coefficient $+1$, and a horizon is not a coefficient of that metric: it is a surface on which the imported geometry's lapse vanishes. So the lapse enters this article as an imported scalar — a number attached to each event by the geometry that the corpus imports — and the algebra carries only the local tangent structure at each point, which is the zero-divisor cone. [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html) states that division of labour and this article adopts it.
 
 Why the lapse and not the light speed. In a medium the local complex structure supplies the scale $c$ and Tolman's law ties the temperature to it. On a horizon the light speed is the vacuum's and it is constant; the scale that varies is the lapse, and Tolman's law ties the temperature to that instead. The two cases are the same law with different varying scales, which is why a reader who has understood article 11 can read this one directly.
 
@@ -156,7 +156,7 @@ and the regularity of the Euclidean section is the same statement as the KMS per
 The transcription supplies a spelling and nothing else, and the spelling is short. Four items:
 
 - The width is a function. $\beta(x)=\beta_H\,\ell(x)$ is written with the same symbol as the flat width and differs only in bearing an argument. This is the whole of the "$\beta=\beta(x)$" bookkeeping: the letter keeps its meaning and gains a dependence.
-- The lapse is a scalar, not a coefficient. It enters as an imported number per event and never as a component of $\delta_{\mu\nu}$. The consequence is that every display in this article is a relation among scalars, and none of them needs an index.
+- The lapse is a scalar, not a coefficient. It enters as an imported number per event and never as a component of $\delta_{\imath\jmath}$. The consequence is that every display in this article is a relation among scalars, and none of them needs an index.
 - The generator is Hermitian and informational. $H_{\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ lies in $\mathbb{B}_{\Psi}$, while the imaginary direction of the strip is the material sector's. The split is the same one the local-thermal-structure article makes, and it is the corpus's way of saying that a thermal state has an informational generator and a material direction.
 - The modular parameter is a Killing time divided by the width. $s=r'_t/\beta_H$ is the one equation that connects the operator formalism's parameter to the geometry's coordinate, and it is a ratio of two lengths, as the corpus's units require.
 
@@ -252,7 +252,7 @@ This is standard relativistic thermodynamics in the corpus's letters, with no fr
 | $G,\ M$ | Gravitational constant and mass |
 | $k_B$, $k_m=\frac{2\pi mc}{h}$ | Boltzmann's constant and mass wave number |
 | $c$ | Speed of light |
-| $\delta_{\mu\nu}$ | The one metric of the corpus, all coefficients $+1$ |
+| $\delta_{\imath\jmath}$ | The one metric of the corpus, all coefficients $+1$ |
 
 ## Further Reading
 

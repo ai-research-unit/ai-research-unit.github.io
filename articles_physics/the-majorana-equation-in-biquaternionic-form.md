@@ -20,7 +20,7 @@ Every display below is an element, a product of elements, or a conjugation of on
 
 ## Frame and Notation
 
-**The coordinates.** An element is written $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients $Q_\mu$; the scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$ (*Algebra and Element Conventions*). The invertibles satisfy $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and $e_t$ is the unit of the algebra.
+**The coordinates.** An element is written $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients $Q_{\imath}$; the scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$ (*Algebra and Element Conventions*). The invertibles satisfy $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and $e_t$ is the unit of the algebra.
 
 **The frame.** Every display is written in the $\mathbb{B}_{\Phi}$ frame, where $Q_t=i q'_t$ and $r'_t$ is a length, the time carried with the constant kept, $r'_t=c\,t'$; the metric coefficient of the seconds $t'$ is $g_{tt}=-c^{2}$ and the quadratic form in $r'_t$ is $\langle\tilde Q\rangle_{\natural}=-{r'_{t}}^{2}+r_x^{2}+r_y^{2}+r_z^{2}$ (*Frame and Metric Conventions*). The constant $c$ is carried in every display below, and none of them sets it to one.
 
@@ -193,7 +193,7 @@ The last two rows are the gaps the article leaves visible, and they are of diffe
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -209,7 +209,7 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-In the notation of the body the dictionary is one line: $\gamma_\mu=i c_\mu$ and $\gamma_5=\Gamma$. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+In the notation of the body the dictionary is one line: $\gamma_{\imath}=i c_{\imath}$ and $\gamma_5=\Gamma$. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 $\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
@@ -217,27 +217,27 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}
++\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
-The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_{\imath}$, so that $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_{\imath}=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
 ## Summary
 

@@ -16,7 +16,7 @@ This article is the worked radiative application of the spin-$\tfrac12$ subcateg
 $$\bar w_2\,X:=\mathrm{Sc}\big(w_2^{*}\,i\,X\,\vec e_x\big),$$
 a scalar part of a product of three factors, written here as in the companion *The Gordon Decomposition of the Dirac Current in Biquaternionic Form*. The one datum of the frame it carries is the right multiplier $\vec e_x$, the adjoint's unit. Plane waves are $e^{+i\theta_{\mathrm{pwp}}}$ with $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}$ a real angle, so the on-shell condition below carries the sign it carries; a change of that convention flips the sign of the mass in the second display of §*The Vertex Function and the Form Factors* and the sign of the bivector term with it.
 
-**The directions.** A direction of the frame acts on a state by a product on both sides. That is a derived form of the frame's four directions of *Matrix Representations Conventions*, used throughout: the timelike direction carries $X$ to $iX\vec e_x$, and the direction $\vec k_\Phi$ carries it to $i\vec e_\eta X\vec e_y$. The two multipliers are $\vec e_x$ and $\vec e_y$, and $\vec e_z$ is their product, $\vec e_x\vec e_y=\vec e_z$; the frame is the canonical one of the companion articles, and the two multipliers are what declares it. The weight is $\varepsilon=(1,-1,-1,-1)$, one and the same for the directions and for the states: a paired index is written low and carries that weight, so a contraction over $\nu$ carries $\varepsilon_\nu$, and no index is ever raised.
+**The directions.** A direction of the frame acts on a state by a product on both sides. That is a derived form of the frame's four directions of *Matrix Representations Conventions*, used throughout: the timelike direction carries $X$ to $iX\vec e_x$, and the direction $\vec k_\Phi$ carries it to $i\vec e_\eta X\vec e_y$. The two multipliers are $\vec e_x$ and $\vec e_y$, and $\vec e_z$ is their product, $\vec e_x\vec e_y=\vec e_z$; the frame is the canonical one of the companion articles, and the two multipliers are what declares it. The weight is $\varepsilon=(1,-1,-1,-1)$, one and the same for the directions and for the states: a paired index is written low and carries that weight, so a contraction over ${\jmath}$ carries $\varepsilon_{\jmath}$, and no index is ever raised.
 
 **The factor $i$ and the two signs.** Every direction carries one factor $i$, and the two families square to opposite signs on a state:
 $$\big(i\,X\,\vec e_x\big)^2=+X ,\qquad \big(i\,\vec e_\eta\,X\,\vec e_y\big)^2=-X .$$
@@ -38,12 +38,12 @@ with $N=-p_0^{2}+\sum_\eta p_\eta^{2}$. The factor $i$ of the numerator is what 
 
 ## The Vertex Function and the Form Factors
 
-**The vertex.** The electromagnetic vertex is the one-particle-irreducible three-point function, written $-ie\Gamma_\mu(p_2,p)$, with $p$ the incoming and $p_2$ the outgoing fermion momentum and $k_\Phi=p_2-p$ the momentum transferred by the photon. Lorentz invariance, the on-shell condition of the state,
+**The vertex.** The electromagnetic vertex is the one-particle-irreducible three-point function, written $-ie\Gamma_{\imath}(p_2,p)$, with $p$ the incoming and $p_2$ the outgoing fermion momentum and $k_\Phi=p_2-p$ the momentum transferred by the photon. Lorentz invariance, the on-shell condition of the state,
 $$i\,p_0\,w\,\vec e_x-\sum_\eta i\,p_\eta\,\vec e_\eta\,w\,\vec e_y=m\,w ,$$
-the same condition carried by the adjoint, whose equation the companion writes with the mass on the other side, and the discrete symmetries reduce $\Gamma_\mu$ to two independent structures multiplied by functions of the single invariant $k_\Phi^2$. The timelike and the spacelike components are written separately, because they act differently:
+the same condition carried by the adjoint, whose equation the companion writes with the mass on the other side, and the discrete symmetries reduce $\Gamma_{\imath}$ to two independent structures multiplied by functions of the single invariant $k_\Phi^2$. The timelike and the spacelike components are written separately, because they act differently:
 $$\Gamma_0\,w=i\,w\,\vec e_x\,F_1(k_\Phi^2)+\frac{1}{2\,m\,c}\sum_\eta  k_{\Phi\eta}\,\vec e_\eta\,w\,\vec e_z\,F_2(k_\Phi^2) ,$$
 $$\Gamma_j\,w=i\,\vec e_j\,w\,\vec e_y\,F_1(k_\Phi^2)+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{\eta\ne j} k_{\Phi\eta}\,\vec e_j\vec e_\eta\,w\Big)F_2(k_\Phi^2) .$$
-The first term of each line is the direction $\mu$ acting on the state; the second is the bivector of the pair $(\mu,\nu)$, and its shape is the content of the Gordon decomposition below.
+The first term of each line is the direction $\mu$ acting on the state; the second is the bivector of the pair $(\imath,\jmath)$, and its shape is the content of the Gordon decomposition below.
 
 Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
@@ -57,25 +57,25 @@ At tree level only the first term of each line is present, so $F_1=1$, $F_2=0$ a
 
 The split is a property of the product of two directions. Two distinct directions multiply to a single direction of the algebra, the signs from $i^2$ and from $\vec e_y^2$ combining to $+$,
 $$i\vec e_j\big(i\vec e_\eta X\vec e_y\big)\vec e_y=\vec e_j\vec e_\eta X ,\qquad \vec e_j\vec e_\eta=\pm\vec e_m ,$$
-and the bivector of the pair is that product with one further factor $i$. For a pair of two spatial directions it is the single element $i\vec e_m$, a left multiplication; for a timelike pair it is two-sided, because the timelike direction supplies a right multiplier $\vec e_x$ and the spatial one supplies $\vec e_y$, whose product is the third unit. Nothing else appears in the product: the metric part is $\varepsilon_\mu$ on the diagonal, it is zero off it, and it is the central direction $e_t$, one number per pair.
+and the bivector of the pair is that product with one further factor $i$. For a pair of two spatial directions it is the single element $i\vec e_m$, a left multiplication; for a timelike pair it is two-sided, because the timelike direction supplies a right multiplier $\vec e_x$ and the spatial one supplies $\vec e_y$, whose product is the third unit. Nothing else appears in the product: the metric part is $\varepsilon_{\imath}$ on the diagonal, it is zero off it, and it is the central direction $e_t$, one number per pair.
 
-**The Gordon decomposition.** Write $w$ for the incoming state and $w_2$ for the outgoing one, both on shell, and write $\mathcal G_{\mu\nu}:=-i\,c_\mu c_\nu$ for the bivector of the pair, $c_\mu$ being the direction $\mu$; the minus is the reversal of the right multipliers, $\vec e_y\vec e_x=-\vec e_z$, and it is the whole of the sign. The identity is
-$$\bar w_2\big(c_\mu w\big)=\frac{(p+p_2)_{\mu}}{2m\,c}\,\bar w_2w+\frac{i}{2\,m\,c}\sum_{\nu\neq\mu}\varepsilon_\nu\,k_\nu\,\bar w_2\big(\mathcal  G_{\mu\nu}w\big),$$
+**The Gordon decomposition.** Write $w$ for the incoming state and $w_2$ for the outgoing one, both on shell, and write $\mathcal G_{\imath\jmath}:=-i\,c_{\imath} c_{\jmath}$ for the bivector of the pair, $c_{\imath}$ being the direction $\mu$; the minus is the reversal of the right multipliers, $\vec e_y\vec e_x=-\vec e_z$, and it is the whole of the sign. The identity is
+$$\bar w_2\big(c_{\imath} w\big)=\frac{(p+p_2)_{\imath}}{2m\,c}\,\bar w_2w+\frac{i}{2\,m\,c}\sum_{\jmath\neq\imath}\varepsilon_{\jmath}\,k_{\jmath}\,\bar w_2\big(\mathcal  G_{\imath\jmath}w\big),$$
 the coefficient of the second term carrying the $i$ by which the bivector differs from the plain product of its two directions. Written out in the two families it reads, for the timelike component,
 $$\bar w_2\big(i\,w\,\vec e_x\big)=\frac{(p+p_2)_{0}}{2m\,c}\,\bar w_2w+\frac{1}{2\,m\,c}\sum_\eta  k_{\Phi\eta}\,\bar w_2\big(\vec e_\eta\,w\,\vec e_z\big),$$
 and for the spacelike component $j$,
 $$\bar w_2\big(i\,\vec e_j\,w\,\vec e_y\big)=\frac{(p+p_2)_{j}}{2m\,c}\,\bar w_2w+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\bar w_2\big(\vec e_j\,w\,\vec e_z\big)+\sum_{\eta\ne j} k_{\Phi\eta}\,\bar w_2\big(\vec e_j\vec e_\eta\,w\big)\Big),$$
 where the $i$ of the generic form has been absorbed: $\frac{i}{2\,m\,c}\varepsilon_\eta\mathcal  G_{0\eta}=\frac{1}{2\,m\,c}\vec e_\eta$ on the right, and $\frac{i}{2\,m\,c}\varepsilon_\eta\mathcal  G_{j\eta}=\frac{1}{2\,m\,c}\vec e_j\vec e_\eta$. The three were verified on random on-shell pairs at $m=0.7$, with a deviation of order $10^{-15}$.
 
-Read the right-hand sides. The first term is the convection: the momentum sum $(p+p_2)_\mu$ multiplies the central direction, and it is the term the charge multiplies. The second is the bivector: the momentum difference $k_\nu$ multiplies a product of two directions, and it is the term the magnetic moment multiplies. There is no third term, and the split is exact, not an approximation.
+Read the right-hand sides. The first term is the convection: the momentum sum $(p+p_2)_{\imath}$ multiplies the central direction, and it is the term the charge multiplies. The second is the bivector: the momentum difference $k_{\jmath}$ multiplies a product of two directions, and it is the term the magnetic moment multiplies. There is no third term, and the split is exact, not an approximation.
 
-The coefficient $1/2mc$ is the same one that fixes $g=2$ at the tree level, and it is untouched by the renormalisation. The Ward identity $k_\mu\Gamma_\mu=0$ is gauge invariance at the vertex. It forces the divergent part of $\Gamma_\mu$ to be proportional to the first structure, so nothing divergent reaches the second, and the anomaly is finite: no counterterm is needed for it.
+The coefficient $1/2mc$ is the same one that fixes $g=2$ at the tree level, and it is untouched by the renormalisation. The Ward identity $k_{\imath}\Gamma_{\imath}=0$ is gauge invariance at the vertex. It forces the divergent part of $\Gamma_{\imath}$ to be proportional to the first structure, so nothing divergent reaches the second, and the anomaly is finite: no counterterm is needed for it.
 
 **What this transcription does and does not do.** It names *which* object the anomaly multiplies: the bivector of the pair, hence the element $i\vec e_m$ for a rotation pair and the two-sided operator for a timelike one, hence a sector. It exhibits the Gordon split as the symmetric-versus-antisymmetric split of a product of two directions. It does not compute the loop integral, and it does not fix $\alpha$.
 
 ## The Six Directions
 
-**The bivectors.** The six bivectors are $\mathcal G_{\mu\nu}=-i\,c_\mu c_\nu$: $i$ times the product of the two directions, with the sign that the reversed right multipliers give. On a state the two families act differently, and the difference is the frame's:
+**The bivectors.** The six bivectors are $\mathcal G_{\imath\jmath}=-i\,c_{\imath} c_{\jmath}$: $i$ times the product of the two directions, with the sign that the reversed right multipliers give. On a state the two families act differently, and the difference is the frame's:
 $$X\longmapsto i\vec e_m\,X\quad\text{(rotations)},\qquad X\longmapsto i\vec e_\eta\,X\,\vec e_z\quad\text{(boosts)} ,$$
 with $\vec e_m$ the third spatial unit of the pair $\{j,k\}$, $\vec e_j\vec e_\eta=\pm\vec e_m$, and $\vec e_x\vec e_y=\vec e_z$ supplying the right multiplier of a timelike pair. The rotation bivector is a left multiplication by one direction; the boost bivector is a left multiplication by one direction and a right multiplication by the third. All six were verified direction by direction, and none of the six is a single element except the three rotations.
 
@@ -93,23 +93,23 @@ The magnetic coupling to an external field is a rotation-type structure, and its
 
 ## The Reduction of a Numerator
 
-**Why operators here.** The algebraic work behind the loop computation is the reduction of the numerator, and it is a statement about the operators that act on the state rather than about the elements. This section therefore writes them as basis operators, $L_aR_b$ with $L_aR_b\,X=aXb$, and the basis operator of the direction $\mu$ as $iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$. It is the one section of the article that does, and the reason is that the operators are its subject; in the algebra's own objects the same four sums are read off the products of the invertibles, and the correspondence between the two readings is stated in the closing section.
+**Why operators here.** The algebraic work behind the loop computation is the reduction of the numerator, and it is a statement about the operators that act on the state rather than about the elements. This section therefore writes them as basis operators, $L_aR_b$ with $L_aR_b\,X=aXb$, and the basis operator of the direction $\mu$ as $iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$. It is the one section of the article that does, and the reason is that the operators are its subject; in the algebra's own objects the same four sums are read off the products of the invertibles, and the correspondence between the two readings is stated in the closing section.
 
 **The closure.** The generator of the pair is half the operator of the pair,
-$$S_{\mu\nu}=\tfrac{i}{2}\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)\big(iL_{e_\nu}R_{\vec e_{\mathrm{spt}(\nu)}}\big),$$
+$$S_{\imath\jmath}=\tfrac{i}{2}\big(iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\big)\big(iL_{e_{\jmath}}R_{\vec e_{\mathrm{spt}(\jmath)}}\big),$$
 and the six close on the Lorentz algebra, with residual $0$:
-$$\big[S_{\mu\nu},S_{\rho\sigma}\big]
-=i\big(g_{\nu\rho}S_{\mu\sigma}-g_{\mu\rho}S_{\nu\sigma}-g_{\nu\sigma}S_{\mu\rho}+g_{\mu\sigma}S_{\nu\rho}\big).$$
-The sign is the one the normalisation carries: the conventions' generator is half the commutator of the two basis operators, and this section's is $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}$, which is that generator times $-i$; the extra $i$ is accounted for in the closing section.
+$$\big[S_{\imath\jmath},S_{\rho\sigma}\big]
+=i\big(g_{\jmath\rho}S_{\imath\sigma}-g_{\imath\rho}S_{\jmath\sigma}-g_{\jmath\sigma}S_{\imath\rho}+g_{\imath\sigma}S_{\jmath\rho}\big).$$
+The sign is the one the normalisation carries: the conventions' generator is half the commutator of the two basis operators, and this section's is $S_{\imath\jmath}=\tfrac12\mathcal G_{\imath\jmath}$, which is that generator times $-i$; the extra $i$ is accounted for in the closing section.
 
 **The four contractions.** The reduction rests on four sums over the direction index, verified with residual $0$ on every index combination:
-$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)=4e_t ,$$
-$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}}\big)\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)=-2\,iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}} ,$$
-$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}}\big)\big(iL_{e_\beta}R_{\vec e_{\mathrm{spt}(\beta)}}\big)\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)=4\varepsilon_\alpha\delta_{\alpha\beta}\,e_t ,$$
-$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}}\big)\big(iL_{e_\beta}R_{\vec e_{\mathrm{spt}(\beta)}}\big)\big(iL_{e_\rho}R_{\vec e_{\mathrm{spt}(\rho)}}\big)\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)=-2\,iL_{e_\rho}R_{\vec e_{\mathrm{spt}(\rho)}}\,iL_{e_\beta}R_{\vec e_{\mathrm{spt}(\beta)}}\,iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}} .$$
+$$\sum_{\imath}\varepsilon_{\imath}\,\big(iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\big)\big(iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\big)=4e_t ,$$
+$$\sum_{\imath}\varepsilon_{\imath}\,\big(iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}}\big)\big(iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\big)=-2\,iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}} ,$$
+$$\sum_{\imath}\varepsilon_{\imath}\,\big(iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}}\big)\big(iL_{e_\beta}R_{\vec e_{\mathrm{spt}(\beta)}}\big)\big(iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\big)=4\varepsilon_\alpha\delta_{\alpha\beta}\,e_t ,$$
+$$\sum_{\imath}\varepsilon_{\imath}\,\big(iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}}\big)\big(iL_{e_\beta}R_{\vec e_{\mathrm{spt}(\beta)}}\big)\big(iL_{e_\rho}R_{\vec e_{\mathrm{spt}(\rho)}}\big)\big(iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\big)=-2\,iL_{e_\rho}R_{\vec e_{\mathrm{spt}(\rho)}}\,iL_{e_\beta}R_{\vec e_{\mathrm{spt}(\beta)}}\,iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}} .$$
 Read off in order: the basis operator of a direction squares to the weight, $+1$ timelike and $-1$ spacelike; placing one basis operator between the two factors gives minus twice that basis operator, the minus being the reversal of a product of odd length; placing two between the factors gives the metric and nothing else; placing between the factors three gives the three in reverse order. The unit $e_t$ on the right of the first and the third is the identity on every state. The four are what convert a one-loop numerator, which is a product of an even number of directions, into sums of metric factors and bivectors: precisely the two structures of the vertex.
 
-**The traces of the operators.** Since a product of two-sided operators is again a two-sided operator, the trace factorizes at every length, $\mathrm{tr}(c_{\mu_1}\cdots c_{\mu_n})=4\mathrm{Sc}(a_{\mu_1}\cdots a_{\mu_n})\mathrm{Sc}(b_{\mu_n}\cdots b_{\mu_1})$ for $c_\mu=L_{a_\mu}R_{b_\mu}$, a convention of *Matrix Representations Conventions*. Two consequences are used under every numerator: $\mathrm{tr}\big((iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}})(iL_{e_\nu}R_{\vec e_{\mathrm{spt}(\nu)}})\big)=4g_{\mu\nu}$, and a single direction is of zero array trace, one of its two multipliers being a vector unit of vanishing scalar part.
+**The traces of the operators.** Since a product of two-sided operators is again a two-sided operator, the trace factorizes at every length, $\mathrm{tr}(c_{\imath_1}\cdots c_{\imath_n})=4\mathrm{Sc}(a_{\imath_1}\cdots a_{\imath_n})\mathrm{Sc}(b_{\imath_n}\cdots b_{\imath_1})$ for $c_{\imath}=L_{a_{\imath}}R_{b_{\imath}}$, a convention of *Matrix Representations Conventions*. Two consequences are used under every numerator: $\mathrm{tr}\big((iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}})(iL_{e_{\jmath}}R_{\vec e_{\mathrm{spt}(\jmath)}})\big)=4g_{\imath\jmath}$, and a single direction is of zero array trace, one of its two multipliers being a vector unit of vanishing scalar part.
 
 ## The One-Loop Correction
 
@@ -119,7 +119,7 @@ $$F_2(k_\Phi^2)=\frac{\alpha}{2\pi}\int_0^1\!dx\,dy\,dz\;\delta(x+y+z-1)\;
 \frac{2m^2c^2z(1-z)}{m^2c^2(1-z)^2-xy\,k_\Phi^2} ,$$
 in the standard Feynman-parameter representation. The sign of the $k_\Phi^2$ term is fixed by analyticity: the denominator vanishes first at $k_\Phi^2=4m^2$, the pair-production threshold, and with the opposite sign the branch point would sit at $k_\Phi^2=-4m^2$, where there is no threshold. Two features make the anomaly the clean test it is.
 
-- **The divergence stays in $F_1$.** The Ward identity $k_\mu\Gamma_\mu=0$ is gauge invariance at the vertex, and it forces the divergent part of $\Gamma_\mu$ to be proportional to the tree vertex, that is to the $F_1$ structure. The divergence of the vertex is the same one the fermion self-energy carries, $Z_1=Z_2$, and the same counterterm removes both. Nothing divergent reaches $F_2$, so the anomaly is *finite*: no counterterm is needed for it, and it is a prediction of the theory rather than a parameter of it. This argument is standard and is not supplied by the algebra.
+- **The divergence stays in $F_1$.** The Ward identity $k_{\imath}\Gamma_{\imath}=0$ is gauge invariance at the vertex, and it forces the divergent part of $\Gamma_{\imath}$ to be proportional to the tree vertex, that is to the $F_1$ structure. The divergence of the vertex is the same one the fermion self-energy carries, $Z_1=Z_2$, and the same counterterm removes both. Nothing divergent reaches $F_2$, so the anomaly is *finite*: no counterterm is needed for it, and it is a prediction of the theory rather than a parameter of it. This argument is standard and is not supplied by the algebra.
 - **The mass drops out at leading order.** At $k_\Phi^2=0$ the parameter integral is independent of $m$ after the $m^2$ factors cancel, so the leading anomaly is universal: every charged lepton has the same leading $a=\alpha/2\pi$, and every charged fermion does after the appropriate QCD corrections.
 
 **The $k_\Phi^2=0$ integral.** At $k_\Phi^2=0$ the denominator is $m^2(1-z)^2$, the mass cancels, and the parameter integral collapses:
@@ -169,7 +169,7 @@ against the measured $1.15965218073\times10^{-3}$: agreement to $5\times10^{-11}
 
 ## Verification
 
-All numerics are machine-precision arithmetic in the biquaternion algebra, with the four directions $X\mapsto i\vec e_\mu X\vec e_{\mathrm{spt}(\mu)}$ of §*The Six Directions*, and in the four-by-four operators where a section is about the operators.
+All numerics are machine-precision arithmetic in the biquaternion algebra, with the four directions $X\mapsto i\vec e_{\imath} X\vec e_{\mathrm{spt}(\imath)}$ of §*The Six Directions*, and in the four-by-four operators where a section is about the operators.
 
 | Claim | Value / result |
 |---|---|
@@ -179,13 +179,13 @@ All numerics are machine-precision arithmetic in the biquaternion algebra, with 
 | On-shell condition | $ip_0w\vec e_x-\sum_\eta ip_\eta\vec e_\eta w\vec e_y=mw$ on states built as $w=i\,p_0\,w_0\vec e_x-\sum_\eta i\,p_\eta\,\vec e_\eta\,w_0\vec e_y+m\,w_0$: residual $\sim10^{-16}$ |
 | Pairing | $\bar wX=\mathrm{Sc}(w^{*}iX\vec e_x)$: linear in $X$ and conjugate-linear in $w$, residual $0$; the bra mass relation needs the frame multipliers moved, so it is not restated here |
 | Vertex | the two lines of §*The Vertex Function and the Form Factors* against the direction plus the bivector sums: residual $\sim10^{-16}$ |
-| Gordon identity | the generic form with $\mathcal G_{\mu\nu}$ and the two branches, over thirty random on-shell momentum pairs at $m=0.7$: deviation $\le4\times10^{-15}$ |
+| Gordon identity | the generic form with $\mathcal G_{\imath\jmath}$ and the two branches, over thirty random on-shell momentum pairs at $m=0.7$: deviation $\le4\times10^{-15}$ |
 | Six bivectors | $\mathcal G_{12}$ acts as left multiplication by $i\vec e_z$, $\mathcal G_{23}$ by $i\vec e_x$, $\mathcal G_{31}$ by $i\vec e_y$; $\mathcal G_{01}$, $\mathcal G_{02}$, $\mathcal G_{03}$ act as $i\vec e_x(\cdot)\vec e_z$, $i\vec e_y(\cdot)\vec e_z$, $i\vec e_z(\cdot)\vec e_z$: residual $0$ |
 | Hermiticity | $(i\vec e_m)^{*}=i\vec e_m$ and $\vec e_z^{*}=-\vec e_z$, so the rotations are Hermitian and the timelike pairs anti-Hermitian: residual $0$ |
-| Bivector algebra | $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}$ and $\big[S_{\mu\nu},S_{\rho\sigma}\big]=i(g_{\nu\rho}S_{\mu\sigma}-g_{\mu\rho}S_{\nu\sigma}-g_{\nu\sigma}S_{\mu\rho}+g_{\mu\sigma}S_{\nu\rho})$: residual $0$ |
+| Bivector algebra | $S_{\imath\jmath}=\tfrac12\mathcal G_{\imath\jmath}$ and $\big[S_{\imath\jmath},S_{\rho\sigma}\big]=i(g_{\jmath\rho}S_{\imath\sigma}-g_{\imath\rho}S_{\jmath\sigma}-g_{\jmath\sigma}S_{\imath\rho}+g_{\imath\sigma}S_{\jmath\rho})$: residual $0$ |
 | Contractions | the four weighted sums of §*The Reduction of a Numerator*: residual $0$ on every index combination |
 | Traces | $\mathrm{tr}L_aR_b=4\mathrm{Sc}(a)\mathrm{Sc}(b)$ and $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$: residual $\le10^{-12}$ at word lengths one to four |
-| Trace of two directions | the operator of the direction $\mu$ is of zero array trace, and the operator of two directions has trace $4g_{\mu\nu}$: residual $0$ |
+| Trace of two directions | the operator of the direction $\mu$ is of zero array trace, and the operator of two directions has trace $4g_{\imath\jmath}$: residual $0$ |
 | $k_\Phi^2=0$ integral | $\int_0^1dz\int_0^{1-z}dy\,\frac{2z(1-z)}{(1-z)^2}=\int_0^12z\,dz=1$ |
 | Leading anomaly | $a=\alpha/2\pi=1.1614097329\times10^{-3}$ for $\alpha=1/137.035999084$ |
 | Two-loop coefficient | $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ |
@@ -204,9 +204,9 @@ The on-shell states were built as $w=i\,p_0\,w_0\vec e_x-\sum_\eta i\,p_\eta\,\v
 
 ## The Legacy Pauli Gamma Formulation
 
-**The older names.** A reader of the gamma literature meets the same operators under other names, and the translation is worth one paragraph, here, in the one place where this article writes them. The four directions of the frame are the four gammas of *Frame and Metric Conventions*, $\gamma_\mu=iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}$, and the chirality basis operator is $\gamma_5=-iR_{\vec e_z}$; the arrays themselves are printed in *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*, and this article prints none, because the object is the operator and the array is one display of it.
+**The older names.** A reader of the gamma literature meets the same operators under other names, and the translation is worth one paragraph, here, in the one place where this article writes them. The four directions of the frame are the four gammas of *Frame and Metric Conventions*, $\gamma_{\imath}=iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}$, and the chirality basis operator is $\gamma_5=-iR_{\vec e_z}$; the arrays themselves are printed in *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*, and this article prints none, because the object is the operator and the array is one display of it.
 
-**The normalisation of the bivector.** The conventions article writes the Lorentz generator as half the commutator of the two basis operators, $\sigma_{\mu\nu}=\tfrac14\big[\gamma_\mu,\gamma_\nu\big]=\tfrac12c_\mu c_\nu$, and it takes twice that for the bivector of the pair. This article writes $\mathcal G_{\mu\nu}=-i\,c_\mu c_\nu=-2i\,\sigma_{\mu\nu}$ and $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}=-i\,\sigma_{\mu\nu}$: the conventions' objects times $-2i$ and $-i$, the minus being the reversal of the two right multipliers. What the factor buys is the Hermiticity of the class, $\mathcal G_{j\eta}=i\vec e_m$ fixed by the star, and it is what fixes the sign of the closure in §*The Reduction of a Numerator*. The two tables of six entries are one table read twice, the arithmetic of §*The Six Directions* reading the rotations against $i\vec e_m$ and the timelike pairs against $i\vec e_\eta$ on the left and $\vec e_z$ on the right.
+**The normalisation of the bivector.** The conventions article writes the Lorentz generator as half the commutator of the two basis operators, $\sigma_{\imath\jmath}=\tfrac14\big[\gamma_{\imath},\gamma_{\jmath}\big]=\tfrac12c_{\imath} c_{\jmath}$, and it takes twice that for the bivector of the pair. This article writes $\mathcal G_{\imath\jmath}=-i\,c_{\imath} c_{\jmath}=-2i\,\sigma_{\imath\jmath}$ and $S_{\imath\jmath}=\tfrac12\mathcal G_{\imath\jmath}=-i\,\sigma_{\imath\jmath}$: the conventions' objects times $-2i$ and $-i$, the minus being the reversal of the two right multipliers. What the factor buys is the Hermiticity of the class, $\mathcal G_{j\eta}=i\vec e_m$ fixed by the star, and it is what fixes the sign of the closure in §*The Reduction of a Numerator*. The two tables of six entries are one table read twice, the arithmetic of §*The Six Directions* reading the rotations against $i\vec e_m$ and the timelike pairs against $i\vec e_\eta$ on the left and $\vec e_z$ on the right.
 
 **Why the display is not used.** The reason is the one given in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*: the gammas are a frame of one display and not a second algebra, the four directions are elements of one algebra, and every identity of this article is an identity of that algebra, unchanged by the display the reader writes it in.
 
@@ -232,17 +232,17 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $iX\vec e_x$, $i\vec e_\eta X\vec e_y$ | The direction $t$ and the direction $\vec k_\Phi$ acting on a state $X$ |
 | $(iX\vec e_x)^2=+X$, $(i\vec e_\eta X\vec e_y)^2=-X$ | The two signs of the frame, from $i^2=-1$ and $\vec e_x^2=\vec e_\eta^2=\vec e_y^2=-e_t$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Plain weight, the index rule; no index is raised |
-| $\Gamma_\mu(p_2,p)$ | Electromagnetic vertex; $-ie\Gamma_\mu$ is the amplitude |
+| $\Gamma_{\imath}(p_2,p)$ | Electromagnetic vertex; $-ie\Gamma_{\imath}$ is the amplitude |
 | $F_1(k_\Phi^2),F_2(k_\Phi^2)$ | Charge and magnetic form factors |
 | $g=2(1+F_2(0))$, $a=F_2(0)=(g-2)/2$ | Gyromagnetic ratio and anomaly |
-| $\mathcal G_{\mu\nu}=-i\,c_\mu c_\nu$ | Bivector of the pair $(\mu,\nu)$: $i$ times the product of the two directions, with the sign of the reversed right multipliers. $\mathcal G_{j\eta}$ is left multiplication by $i\vec e_m$; $\mathcal G_{0\eta}$ is two-sided, $i\vec e_\eta$ left and $\vec e_z$ right. $\mathcal G_{\mu\nu}=-2i\sigma_{\mu\nu}$ |
+| $\mathcal G_{\imath\jmath}=-i\,c_{\imath} c_{\jmath}$ | Bivector of the pair $(\imath,\jmath)$: $i$ times the product of the two directions, with the sign of the reversed right multipliers. $\mathcal G_{j\eta}$ is left multiplication by $i\vec e_m$; $\mathcal G_{0\eta}$ is two-sided, $i\vec e_\eta$ left and $\vec e_z$ right. $\mathcal G_{\imath\jmath}=-2i\sigma_{\imath\jmath}$ |
 | $X\mapsto i\vec e_mX$, $X\mapsto i\vec e_\eta X\vec e_z$ | The two actions of the six bivectors, rotations and timelike pairs |
-| $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}=-i\sigma_{\mu\nu}$ | Lorentz generator of the pair, half the bivector; the six close on the Lorentz algebra |
-| Product of two directions | the metric $\varepsilon_\mu$ on the diagonal and nothing off it, plus the bivector |
+| $S_{\imath\jmath}=\tfrac12\mathcal G_{\imath\jmath}=-i\sigma_{\imath\jmath}$ | Lorentz generator of the pair, half the bivector; the six close on the Lorentz algebra |
+| Product of two directions | the metric $\varepsilon_{\imath}$ on the diagonal and nothing off it, plus the bivector |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The two sectors, and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |
 | $\tilde S_{\Psi,m}=\frac{h}{4\pi}i\vec e_m$ | Spin generator; $\mathcal G_{12}$ acts as $\frac{2\pi 2\,\tilde{S}_{\Psi,3}}{h}$ |
 | $L_aR_b$, $L_aR_bX=aXb$ | The operator of the two multipliers, used in §*The Reduction of a Numerator* only |
-| $iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$ | The operator of the direction $\mu$ |
+| $iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$ | The operator of the direction $\mu$ |
 | $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$ | Operator trace, factorized into the two multipliers |
 | $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace on the algebra, the plain form |
 | Four contraction identities of §*The Reduction of a Numerator* | The four weighted sums (residual $0$) |

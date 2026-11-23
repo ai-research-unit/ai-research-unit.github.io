@@ -59,9 +59,9 @@ The honest summary is this: "the biquaternion vacuum" is not a biquaternion. For
 
 **From the mode expansion.** The free Maxwell potential expands in four covariant polarisations,
 $$
-A_\mu(x)=\int\!\frac{d^{3}k_\Phi}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
-\Big(a_{\mathrm{fop},r}(\vec k_\Phi)\,\epsilon^{(r)}_\mu(\vec k_\Phi)\,\exp(-ik\cdot x)
-+a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)\,\epsilon^{(r)*}_\mu(\vec k_\Phi)\,\exp(+ik\cdot x)\Big),
+A_{\imath}(x)=\int\!\frac{d^{3}k_\Phi}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
+\Big(a_{\mathrm{fop},r}(\vec k_\Phi)\,\epsilon^{(r)}_{\imath}(\vec k_\Phi)\,\exp(-ik\cdot x)
++a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)\,\epsilon^{(r)*}_{\imath}(\vec k_\Phi)\,\exp(+ik\cdot x)\Big),
 \qquad
 \big[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(\vec k_\Phi-\vec k_2),
 $$
@@ -330,7 +330,7 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $\vert 0\rangle\langle 0\vert=\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)$ | One-mode vacuum idempotent (in $\mathbb{B}_{\Psi}$) |
 | $(-1)^F=i\vec e_z$ | Fermion parity (single mode) |
 | $\vert 0\rangle_{*}$ | Field vacuum, degree-zero term of the Fock space |
-| $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$, $\epsilon^{(r)}_\mu$ | Covariant mode operators and polarization vectors |
+| $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$, $\epsilon^{(r)}_{\imath}$ | Covariant mode operators and polarization vectors |
 | $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ | Indefinite metric; biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\lvert\vec q\rvert^2-q_t^2$ of $\mathbb{B}_{\Phi}$ |
 | $\vec u_\Phi$ | Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$ |
 | $a$, $A$ | Plate separation and area |

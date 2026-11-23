@@ -23,8 +23,8 @@ What also fails is that a fluid has no orientation. Euler's equation describes a
 Every velocity one-form that carries a vorticity can still be written with potentials, and the representation is classical. In the form used by Clebsch and by Lin, a velocity one-form is
 
 $$
-v_{\Phi,\mu}=\frac{\partial\phi_{\mathrm{clb}}}{\partial R_\mu}
-+\alpha_{\mathrm{clb}}\frac{\partial\beta_{\mathrm{clb}}}{\partial R_\mu},
+v_{\Phi,\imath}=\frac{\partial\phi_{\mathrm{clb}}}{\partial R_{\imath}}
++\alpha_{\mathrm{clb}}\frac{\partial\beta_{\mathrm{clb}}}{\partial R_{\imath}},
 $$
 
 with three functions in place of the one function of a gradient. The three names are the Clebsch scalar and the Clebsch pair, and the label $\mathrm{clb}$ distinguishes them from the scalar potential of the electrostatic and Higgs sections, which writes $\phi$.
@@ -32,14 +32,14 @@ with three functions in place of the one function of a gradient. The three names
 The vorticity of a Clebsch field is the wedge of the pair, and this is the whole content of the representation. Taking the exterior derivative,
 
 $$
-\omega_{\mu\nu}=\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}-\frac{\partial v_{\Phi,\mu}}{\partial R_\nu}
-=\frac{\partial\alpha_{\mathrm{clb}}}{\partial R_\mu}\frac{\partial\beta_{\mathrm{clb}}}{\partial R_\nu}
--\frac{\partial\alpha_{\mathrm{clb}}}{\partial R_\nu}\frac{\partial\beta_{\mathrm{clb}}}{\partial R_\mu},
+\omega_{\imath\jmath}=\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}-\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}}
+=\frac{\partial\alpha_{\mathrm{clb}}}{\partial R_{\imath}}\frac{\partial\beta_{\mathrm{clb}}}{\partial R_{\jmath}}
+-\frac{\partial\alpha_{\mathrm{clb}}}{\partial R_{\jmath}}\frac{\partial\beta_{\mathrm{clb}}}{\partial R_{\imath}},
 $$
 
 so $\omega=\mathrm{d}\alpha_{\mathrm{clb}}\wedge\mathrm{d}\beta_{\mathrm{clb}}$ and the scalar $\phi_{\mathrm{clb}}$ drops out. The Clebsch scalar carries no vorticity and the pair carries all of it. A gradient is the case in which the pair is constant, and irrotationality is therefore not the absence of the representation but a degenerate value of its two potentials.
 
-**The pair is not a computational trick, it is the general solution of the closure question.** Asking for $v_{\Phi,\mu}=\partial_\mu S$ is asking that a one-form be exact, which is one function's worth of data. Asking for the Clebsch form is asking nothing: it is available wherever the flow is defined, and it costs two functions at each event. The count is the point of the next section.
+**The pair is not a computational trick, it is the general solution of the closure question.** Asking for $v_{\Phi,\imath}=\partial_{\imath} S$ is asking that a one-form be exact, which is one function's worth of data. Asking for the Clebsch form is asking nothing: it is available wherever the flow is defined, and it costs two functions at each event. The count is the point of the next section.
 
 ## The Rank of the Vorticity
 
@@ -71,11 +71,11 @@ The hierarchy is a table, and the last column is the number of functions the vel
 | $2$ | $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}=0$ | $\phi_{\mathrm{clb}}$, $\alpha_{\mathrm{clb}}$, $\beta_{\mathrm{clb}}$ | three functions |
 | $4$ | $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}\ne0$ | two pairs | five functions |
 
-A potential flow is the first row and nothing else is. Its velocity is $\partial_\mu\Phi$, a closed one-form, so it is rank zero exactly and its vorticity vanishes identically — the statement [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) proves. A rotational flow is the second row, and a flow whose vorticity is not simple is the third.
+A potential flow is the first row and nothing else is. Its velocity is $\partial_{\imath}\Phi$, a closed one-form, so it is rank zero exactly and its vorticity vanishes identically — the statement [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) proves. A rotational flow is the second row, and a flow whose vorticity is not simple is the third.
 
 In three spatial dimensions the third row does not occur, and this is why a Galilean fluid cannot show the effect. A two-form on a three-dimensional space has three independent components and its four-form vanishes identically, so every Galilean vorticity is simple: $\vec\omega_{\mathrm{vrt}}$ is always the curl of something and a Clebsch pair always exists. A Galilean fluid therefore cannot exhibit the rank-four case, and the whole hierarchy collapses to its first two rows.
 
-The rank is one scalar of the flow, it is decidable on any solution, and for a vorticity it is decided in advance. Split the velocity's derivative into its vorticity and its acceleration, $\omega_{\mu\nu}=\omega_{\mathrm{vrt},\mu\nu}+v_{\Phi,\mu}a_\nu-v_{\Phi,\nu}a_\mu$ with $a_\nu=v_{\Phi}^{\ \mu}\partial_\mu v_{\Phi,\nu}$. The vorticity proper annihilates the velocity, $v_{\Phi}^{\ \mu}\omega_{\mathrm{vrt},\mu\nu}=0$, so it is a two-form on the three dimensions of the rest space, and every two-form on three dimensions is simple. So $\omega_{\mathrm{vrt}}\wedge\omega_{\mathrm{vrt}}=0$ identically, for every flow in four dimensions as much as in three, and the rank of a vorticity is always two.
+The rank is one scalar of the flow, it is decidable on any solution, and for a vorticity it is decided in advance. Split the velocity's derivative into its vorticity and its acceleration, $\omega_{\imath\jmath}=\omega_{\mathrm{vrt},\imath\jmath}+v_{\Phi,\imath}a_{\jmath}-v_{\Phi,\jmath}a_{\imath}$ with $a_{\jmath}=v_{\Phi}^{\ \imath}\partial_{\imath} v_{\Phi,\jmath}$. The vorticity proper annihilates the velocity, $v_{\Phi}^{\ \imath}\omega_{\mathrm{vrt},\imath\jmath}=0$, so it is a two-form on the three dimensions of the rest space, and every two-form on three dimensions is simple. So $\omega_{\mathrm{vrt}}\wedge\omega_{\mathrm{vrt}}=0$ identically, for every flow in four dimensions as much as in three, and the rank of a vorticity is always two.
 
 The rank-four row therefore belongs to the raw derivative and to the acceleration, not to the vorticity. Since the projected part is simple, the four-form of the whole derivative is proportional to $v_{\Phi}\wedge a\wedge\omega_{\mathrm{vrt}}$, and it vanishes exactly when the acceleration has no component along the vorticity axis: for an irrotational flow, for a geodesic one, and for any flow whose acceleration is orthogonal to its vorticity. A relativistic flow that accelerates about an axis it also rotates about reaches the third row and costs two pairs of potentials; a flow that does either alone does not. The checked example is the unit field with rapidity $r_xr_z$ and direction angles $r_y+r'_t$ and $r_zr_x$, where the rest-frame product $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}$ of the projected vorticity was $10^{-19}$ and the same product for the raw derivative was $-0.106$.
 
@@ -86,10 +86,10 @@ A medium that carries an orientation at each material point is a Cosserat medium
 **It has two vorticities and the classical fluid has one.** The first is the curl of the velocity, the same object as before. The second is the curl of the orientation field, the *wryness*, the continuum-mechanics name for the density of disclinations:
 
 $$
-\kappa_{\mu\nu}=\frac{\partial\chi_{\mathrm{mic},\nu}}{\partial R_\mu}-\frac{\partial\chi_{\mathrm{mic},\mu}}{\partial R_\nu},
+\kappa_{\imath\jmath}=\frac{\partial\chi_{\mathrm{mic},\jmath}}{\partial R_{\imath}}-\frac{\partial\chi_{\mathrm{mic},\imath}}{\partial R_{\jmath}},
 $$
 
-with $\chi_{\mathrm{mic},\mu}$ the infinitesimal rotation vector of the triad. A medium whose triad is constant in space and time is a classical fluid; a medium whose triad varies has a second vorticity that the velocity knows nothing about.
+with $\chi_{\mathrm{mic},\imath}$ the infinitesimal rotation vector of the triad. A medium whose triad is constant in space and time is a classical fluid; a medium whose triad varies has a second vorticity that the velocity knows nothing about.
 
 Its stress is not symmetric, and the antisymmetry is a torque and not a force. For a Cosserat medium the force balance is the usual one and the moment balance is separate. Writing $\sigma_{ij}$ for the stress, $\mu_{\mathrm{cpl},ij}$ for the couple stress, and
 
@@ -107,7 +107,7 @@ With no couple stress the stress is symmetric and the fluid is classical. With a
 
 The count of a Cosserat medium is seven data at a point, and eight with the energy. A mass density, a velocity and an orientation triad give $1+3+3=7$; the eighth is the internal energy per unit mass. So the medium's kinematics and its thermodynamics close at eight, which is the same total an element of the algebra carries — a scale, an angle, a boost and a rotor — and the coincidence is the reason the field reading can be stated in this vocabulary.
 
-The wryness is what a triad contributes and a velocity cannot. A medium can be at rest and carry a non-zero $\kappa_{\mu\nu}$: a solid with a density of disclinations does, and so does a liquid crystal with a twist. The macro-vorticity is blind to it. So the second vorticity is not a rewriting of the first, and a medium that carries it needs one more equation than a classical fluid does — the moment balance above.
+The wryness is what a triad contributes and a velocity cannot. A medium can be at rest and carry a non-zero $\kappa_{\imath\jmath}$: a solid with a density of disclinations does, and so does a liquid crystal with a twist. The macro-vorticity is blind to it. So the second vorticity is not a rewriting of the first, and a medium that carries it needs one more equation than a classical fluid does — the moment balance above.
 
 ## The Classical Fluid as the Constrained Case
 
@@ -176,10 +176,10 @@ The invariant changes with the rank. A rank-zero flow has a circulation that is 
 | Symbol | Meaning |
 | --- | --- |
 | $\phi_{\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | the Clebsch scalar and pair |
-| $\omega_{\mu\nu}$ | the vorticity two-form |
+| $\omega_{\imath\jmath}$ | the vorticity two-form |
 | $\vec E_{\mathrm{vrt}},\vec B_{\mathrm{vrt}}$ | its electric and magnetic parts |
-| $\kappa_{\mu\nu}$ | the wryness, the curl of the orientation field |
-| $\chi_{\mathrm{mic},\mu}$ | the infinitesimal rotation vector of the triad |
+| $\kappa_{\imath\jmath}$ | the wryness, the curl of the orientation field |
+| $\chi_{\mathrm{mic},\imath}$ | the infinitesimal rotation vector of the triad |
 | $\vec e_{\mathrm{mic},i}$ | the orientation triad |
 | $\sigma_{ij}$ | the stress |
 | $\mu_{\mathrm{cpl},ij}$ | the couple stress |

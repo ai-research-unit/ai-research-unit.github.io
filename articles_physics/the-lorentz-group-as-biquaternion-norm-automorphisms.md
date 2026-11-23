@@ -9,7 +9,7 @@ The Lorentz group of the biquaternion framework has so far been introduced in tw
 The point of the automorphism interpretation is that the biquaternion norm is not an extra structure laid on the algebra. It is the algebra's own multiplicative quadratic form,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^2,
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath\in\{t,x,y,z\}}Q_{\imath}^2,
 $$
 
 and it satisfies
@@ -47,7 +47,7 @@ $$
 In the coordinate basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ its matrix is the identity,
 
 $$
-\langle\tilde{Q},\tilde Q_1\rangle = \sum_\mu Q_\mu R_\mu ,
+\langle\tilde{Q},\tilde Q_1\rangle = \sum_{\imath} Q_{\imath} R_{\imath} ,
 \qquad
 G = \mathrm{diag}(+1,+1,+1,+1) ,
 $$
@@ -129,7 +129,7 @@ $$
 Preservation of $\langle\cdot\rangle_{\natural}$ therefore requires $\det A\,\overline{\det B} = 1$, and one may normalise both factors to unit determinant; the surviving pairs are $(A,B)\in SL(2,\mathbb{C})\times SL(2,\mathbb{C})$. The kernel of the assignment $(A,B)\mapsto L_{A}R_{B}$ is the set of pairs acting trivially, $L_{A}R_{B} = \mathrm{id}$, which is
 
 $$
-\ker = \{\,(\lambda I_2,\mu I_2) : \lambda,\mu\in\mathbb{C}^\times,\ \lambda\bar\mu=1\,\},
+\ker = \{\,(\lambda I_2,\imath I_2) : \lambda,\imath\in\mathbb{C}^\times,\ \lambda\bar\imath=1\,\},
 \qquad
 \lambda^2=\mu^2=1 \ \text{ under the determinant normalization},
 \qquad
@@ -171,7 +171,7 @@ The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read
 
 | Slice | General element | $\langle\cdot\rangle_{\natural}$ | Inertia |
 |---|---|---|---|
-| $\mathbb{B}_{H}$ | $a_0e_t + \vec a$, $a_\mu\in\mathbb{R}$ | $a_0^2+\vec a^2$ | $(4,0)$, positive definite |
+| $\mathbb{B}_{H}$ | $a_0e_t + \vec a$, $a_{\imath}\in\mathbb{R}$ | $a_0^2+\vec a^2$ | $(4,0)$, positive definite |
 | $\mathbb{B}_{iH}$ | $i(a_0e_t+\vec a)$ | $-(a_0^2+\vec a^2)$ | $(0,4)$, negative definite |
 | $\mathbb{B}_{\Phi}$ | $i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $-{r'_t}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$, timelike $r'_t$ direction |
 | $\mathbb{B}_{\Psi}$ | $h_t\,e_t+i\vec h_\Psi$ | $h_t^2-\vec h_\Psi^{2}$ | $(1,3)$, the mirror of $\mathbb{B}_{\Phi}$ |
@@ -315,7 +315,7 @@ z_1+iz_2 & z_0-z_3
 \det = z_0^2-z_1^2-z_2^2-z_3^2 ,
 $$
 
-whose determinant is the source's form rather than $N=\sum_\mu Q_\mu^2$. The two forms are $\mathbb{C}$-equivalent — over $\mathbb{C}$ the substitution $z_a\mapsto iz_a$ carries one to the other, and all nondegenerate complex forms of a given dimension are equivalent — so the group, the invariant $\sigma$ and the action are the same objects as those above. Only $(\mathbb{C}^3,\sigma)$ enters what follows.
+whose determinant is the source's form rather than $N=\sum_{\imath} Q_{\imath}^2$. The two forms are $\mathbb{C}$-equivalent — over $\mathbb{C}$ the substitution $z_a\mapsto iz_a$ carries one to the other, and all nondegenerate complex forms of a given dimension are equivalent — so the group, the invariant $\sigma$ and the action are the same objects as those above. Only $(\mathbb{C}^3,\sigma)$ enters what follows.
 
 **Bilinear real coordinates.** Write $z_a=p_a+iq_a$ with $\vec p,\vec q$ real 3-vectors, and set
 
@@ -420,14 +420,14 @@ $$
 \mathrm{SL}(2,\mathbb{C}) = \mathrm{span}_\mathbb{R}\{\,\vec e_x,\vec e_y,\vec e_z,\ i\vec e_x,i\vec e_y,i\vec e_z\,\}.
 $$
 
-This is the Lie algebra of the automorphism group, and it splits into **rotation** generators $\mathcal{J}_\mu = \vec e_\mu$ (real quaternion directions) and **boost** generators $\mathcal{K}_\mu = i\vec e_\mu$ (imaginary vector directions). Their brackets are computed directly from the quaternion multiplication rule; the commutator is $[A,B] = AB-BA$, and
+This is the Lie algebra of the automorphism group, and it splits into **rotation** generators $\mathcal{J}_{\imath} = \vec e_{\imath}$ (real quaternion directions) and **boost** generators $\mathcal{K}_{\imath} = i\vec e_{\imath}$ (imaginary vector directions). Their brackets are computed directly from the quaternion multiplication rule; the commutator is $[A,B] = AB-BA$, and
 
 $$
-[\mathcal{J}_\mu,\mathcal{J}_\nu] = 2\varepsilon_{\mu\nu\lambda}\mathcal{J}_\lambda,
+[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmath\lambda}\mathcal{J}_\lambda,
 \qquad
-[\mathcal{J}_\mu,\mathcal{K}_\nu] = 2\varepsilon_{\mu\nu\lambda}\mathcal{K}_\lambda,
+[\mathcal{J}_{\imath},\mathcal{K}_{\jmath}] = 2\varepsilon_{\imath\jmath\lambda}\mathcal{K}_\lambda,
 \qquad
-[\mathcal{K}_\mu,\mathcal{K}_\nu] = -2\varepsilon_{\mu\nu\lambda}\mathcal{J}_\lambda .
+[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}] = -2\varepsilon_{\imath\jmath\lambda}\mathcal{J}_\lambda .
 $$
 
 The first two say that the rotations close and that the boosts transform as a vector under them; the third, with its minus sign, is the algebraic statement that two boosts do not close into a boost but into a rotation. This is the infinitesimal form of the Thomas–Wigner rotation, and the sign is the one that makes the boost directions a vector and the rotation directions an axial vector.
@@ -435,20 +435,20 @@ The first two say that the rotations close and that the boosts transform as a ve
 **The complexification and the two factors.** Complexifying the real Lie algebra and forming
 
 $$
-\mathcal{N}^{\pm}_\mu = \tfrac14\left(\mathcal{J}_\mu \pm \mathrm{i}\,\mathcal{K}_\mu\right),
+\mathcal{N}^{\pm}_{\imath} = \tfrac14\left(\mathcal{J}_{\imath} \pm \mathrm{i}\,\mathcal{K}_{\imath}\right),
 $$
 
 where $\mathrm{i}$ is the complexification unit — distinct from the algebra's own central $i$ — gives two commuting copies of the rotation algebra,
 
 $$
-[\mathcal{N}^{+}_\mu,\mathcal{N}^{+}_\nu] = \varepsilon_{\mu\nu\lambda}\mathcal{N}^{+}_\lambda,
+[\mathcal{N}^{+}_{\imath},\mathcal{N}^{+}_{\jmath}] = \varepsilon_{\imath\jmath\lambda}\mathcal{N}^{+}_\lambda,
 \qquad
-[\mathcal{N}^{-}_\mu,\mathcal{N}^{-}_\nu] = \varepsilon_{\mu\nu\lambda}\mathcal{N}^{-}_\lambda,
+[\mathcal{N}^{-}_{\imath},\mathcal{N}^{-}_{\jmath}] = \varepsilon_{\imath\jmath\lambda}\mathcal{N}^{-}_\lambda,
 \qquad
-[\mathcal{N}^{+}_\mu,\mathcal{N}^{-}_\nu] = 0 .
+[\mathcal{N}^{+}_{\imath},\mathcal{N}^{-}_{\jmath}] = 0 .
 $$
 
-The factor $\tfrac14$ is forced by the normalization $[\mathcal{J}_\mu,\mathcal{J}_\nu] = 2\varepsilon_{\mu\nu\lambda}\mathcal{J}_\lambda$. With $\mathcal{K}_\mu = i\vec e_\mu$ and $\mathrm{i}$ a second central imaginary unit, the combination can be written $\mathcal{N}^{\pm}_\mu = \tfrac14\left(1 \pm \mathrm{i} i\right)\vec e_\mu$, and its central factor is idempotent up to a factor two,
+The factor $\tfrac14$ is forced by the normalization $[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmath\lambda}\mathcal{J}_\lambda$. With $\mathcal{K}_{\imath} = i\vec e_{\imath}$ and $\mathrm{i}$ a second central imaginary unit, the combination can be written $\mathcal{N}^{\pm}_{\imath} = \tfrac14\left(1 \pm \mathrm{i} i\right)\vec e_{\imath}$, and its central factor is idempotent up to a factor two,
 
 $$
 \left(1 \pm \mathrm{i} i\right)^2 = 2\left(1 \pm \mathrm{i} i\right),
@@ -456,7 +456,7 @@ $$
 (\mathrm{i} i)^2 = \mathrm{i}^2 i^2 = +e_t .
 $$
 
-This is what makes each combination close on itself with the same structure constants, and what makes the two commute: $\left(1 + \mathrm{i} i\right)\left(1 - \mathrm{i} i\right) = 1 - (\mathrm{i} i)^2 = 0$. For $[\mathcal{N}^{+}_\mu,\mathcal{N}^{+}_\nu]$ the central factor contributes $(1+\mathrm{i} i)^2 = 2(1+\mathrm{i} i)$ and the quaternion commutator contributes $[\vec e_\mu,\vec e_\nu] = 2\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, so the product is $4\varepsilon_{\mu\nu\lambda}\left(1+\mathrm{i} i\right)\vec e_\lambda/16 = \varepsilon_{\mu\nu\lambda}\mathcal{N}^{+}_\lambda$, as displayed. The combinations are the ones that diagonalize the adjoint action of the complexified boost generator. This is the Lie-algebra shadow of the group isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$ of the complex section: the two factors are the two commuting copies of the complexified rotation algebra. The care needed here is that $\mathrm{i}$ is the complexification unit and not the algebra's scalar imaginary; the latter already appears in $\mathcal{K}_\mu = i\vec e_\mu$, and conflating the two would be a notational error. The distinction is the same one that separates the real form $\mathrm{SO}(1,3)$ from its complexification.
+This is what makes each combination close on itself with the same structure constants, and what makes the two commute: $\left(1 + \mathrm{i} i\right)\left(1 - \mathrm{i} i\right) = 1 - (\mathrm{i} i)^2 = 0$. For $[\mathcal{N}^{+}_{\imath},\mathcal{N}^{+}_{\jmath}]$ the central factor contributes $(1+\mathrm{i} i)^2 = 2(1+\mathrm{i} i)$ and the quaternion commutator contributes $[\vec e_{\imath},\vec e_{\jmath}] = 2\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$, so the product is $4\varepsilon_{\imath\jmath\lambda}\left(1+\mathrm{i} i\right)\vec e_\lambda/16 = \varepsilon_{\imath\jmath\lambda}\mathcal{N}^{+}_\lambda$, as displayed. The combinations are the ones that diagonalize the adjoint action of the complexified boost generator. This is the Lie-algebra shadow of the group isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$ of the complex section: the two factors are the two commuting copies of the complexified rotation algebra. The care needed here is that $\mathrm{i}$ is the complexification unit and not the algebra's scalar imaginary; the latter already appears in $\mathcal{K}_{\imath} = i\vec e_{\imath}$, and conflating the two would be a notational error. The distinction is the same one that separates the real form $\mathrm{SO}(1,3)$ from its complexification.
 
 ## What the Algebra Supplies and What Is Standard
 
@@ -491,7 +491,7 @@ The conventions of the construction are those of the following companion article
 
 ## Summary
 
-The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a nondegenerate multiplicative quadratic form on $\mathbb{B}\cong\mathbb{C}^4$, with polarization matrix the identity and with
+The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ is a nondegenerate multiplicative quadratic form on $\mathbb{B}\cong\mathbb{C}^4$, with polarization matrix the identity and with
 
 $$
 \langle\tilde{Q}\tilde Q_1\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural},
@@ -521,14 +521,14 @@ SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1,
 $$
 
-the map being two-to-one with kernel $\{\pm e_t\}$. Infinitesimally, the algebra is $\mathfrak{sl}(2,\mathbb{C}) = \{X : \mathrm{Sc}(X)=0\}$, spanned by the rotation generators $\mathcal{J}_\mu = \vec e_\mu$ and the boost generators $\mathcal{K}_\mu = i\vec e_\mu$, with
+the map being two-to-one with kernel $\{\pm e_t\}$. Infinitesimally, the algebra is $\mathfrak{sl}(2,\mathbb{C}) = \{X : \mathrm{Sc}(X)=0\}$, spanned by the rotation generators $\mathcal{J}_{\imath} = \vec e_{\imath}$ and the boost generators $\mathcal{K}_{\imath} = i\vec e_{\imath}$, with
 
 $$
-[\mathcal{J}_\mu,\mathcal{J}_\nu] = 2\varepsilon_{\mu\nu\lambda}\mathcal{J}_\lambda,
+[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmath\lambda}\mathcal{J}_\lambda,
 \qquad
-[\mathcal{J}_\mu,\mathcal{K}_\nu] = 2\varepsilon_{\mu\nu\lambda}\mathcal{K}_\lambda,
+[\mathcal{J}_{\imath},\mathcal{K}_{\jmath}] = 2\varepsilon_{\imath\jmath\lambda}\mathcal{K}_\lambda,
 \qquad
-[\mathcal{K}_\mu,\mathcal{K}_\nu] = -2\varepsilon_{\mu\nu\lambda}\mathcal{J}_\lambda,
+[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}] = -2\varepsilon_{\imath\jmath\lambda}\mathcal{J}_\lambda,
 $$
 
 whose complexification splits into two commuting rotation algebras. The Lorentz group, in this interpretation, is what the biquaternion norm's automorphisms become when they are required to respect the algebra's real structure.
@@ -556,11 +556,11 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion basis ($\vec e_\mu^2=-e_t$); central scalar imaginary |
-| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
-| $\langle\tilde{Q},\tilde Q_1\rangle = \sum_\mu Q_\mu R_\mu$ | Polar (symmetric bilinear) form, matrix $G=I_4$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion basis ($\vec e_{\imath}^2=-e_t$); central scalar imaginary |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
+| $\langle\tilde{Q},\tilde Q_1\rangle = \sum_{\imath} Q_{\imath} R_{\imath}$ | Polar (symmetric bilinear) form, matrix $G=I_4$ |
 | $O(4,\mathbb{C}),\ SO(4,\mathbb{C})$ | Complex automorphism group of $\langle\cdot\rangle_{\natural}$; its identity component |
-| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $N=\det\mathsf{M}_2$ | Matrix realization; biquaternion norm is the determinant |
+| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $N=\det\mathsf{M}_2$ | Matrix realization; biquaternion norm is the determinant |
 | $L_{A}R_{B}:\tilde{Q}\mapsto A\tilde{Q}B^{*}$, $\det A\,\overline{\det B}=1$ | General norm-preserving complex map |
 | $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$ | Complex group |
 | $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ | Algebra automorphism group; the subfamily $AB^{*}=I$ of $SO(4,\mathbb{C})$; as a real group $SO^+(1,3)$ |
@@ -575,11 +575,11 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Hermitian pair; the automorphism of the slice |
 | $\pi:SL(2,\mathbb{C})\to SO^+(1,3)$, $\ker\pi=\{\pm e_t\}$ | Two-to-one covering homomorphism |
-| $\mathfrak{sl}(2,\mathbb{C}) = \{X:\mathrm{Sc}(X)=0\}$ | Lie algebra; $\mathcal{J}_\mu=\vec e_\mu$ (rotations), $\mathcal{K}_\mu=i\vec e_\mu$ (boosts) |
-| $[\mathcal{K}_\mu,\mathcal{K}_\nu]=-2\varepsilon_{\mu\nu\lambda}\mathcal{J}_\lambda$ | Boosts do not close; infinitesimal Wigner rotation |
+| $\mathfrak{sl}(2,\mathbb{C}) = \{X:\mathrm{Sc}(X)=0\}$ | Lie algebra; $\mathcal{J}_{\imath}=\vec e_{\imath}$ (rotations), $\mathcal{K}_{\imath}=i\vec e_{\imath}$ (boosts) |
+| $[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}]=-2\varepsilon_{\imath\jmath\lambda}\mathcal{J}_\lambda$ | Boosts do not close; infinitesimal Wigner rotation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

@@ -2,10 +2,10 @@
 
 ## Introduction
 
-**The object.** A mass term $-\tfrac12\mu^2 A_\mu A_\mu$ is not invariant under an abelian gauge transformation $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$. A massive vector is therefore either a gauge field whose symmetry has been broken by hand, or a gauge field whose mass is carried by an extra field. The **Stueckelberg mechanism** is the second route: a scalar is introduced that shifts under the same transformation, the combination
+**The object.** A mass term $-\tfrac12\mu^2 A_{\imath} A_{\imath}$ is not invariant under an abelian gauge transformation $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$. A massive vector is therefore either a gauge field whose symmetry has been broken by hand, or a gauge field whose mass is carried by an extra field. The **Stueckelberg mechanism** is the second route: a scalar is introduced that shifts under the same transformation, the combination
 
 $$
-A_{\mu,\mathrm u}=A_\mu-\partial_\mu\xi
+A_{\imath,\mathrm u}=A_{\imath}-\partial_{\imath}\xi
 $$
 
 is invariant, and the mass term written in that combination costs no symmetry.
@@ -27,7 +27,7 @@ $$
 
 is not invariant under $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$, because the mass term is quadratic in the connection while the transformation is affine. The obstruction is not a technicality of notation: a mass term is a length, and a gauge symmetry forbids one.
 
-**The consequences that follow from the obstruction.** The propagator of the Proca field has the form $(-g_{\mu\nu}+k_\mu k_\nu/\mu^2)/(k^2-\mu^2)$, whose longitudinal part grows with energy; the theory is not renormalisable by power counting; and the longitudinal mode is put in by hand as a third polarisation rather than arising from a field.
+**The consequences that follow from the obstruction.** The propagator of the Proca field has the form $(-g_{\imath\jmath}+k_{\imath} k_{\jmath}/\mu^2)/(k^2-\mu^2)$, whose longitudinal part grows with energy; the theory is not renormalisable by power counting; and the longitudinal mode is put in by hand as a third polarisation rather than arising from a field.
 
 ## The Invariant Mass Term
 

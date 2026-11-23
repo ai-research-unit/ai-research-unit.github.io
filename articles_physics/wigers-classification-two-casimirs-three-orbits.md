@@ -12,7 +12,7 @@ The article assumes *$P$, $T$ and the Representation Labels* for the Casimirs' d
 
 ### Momentum Space
 
-Momentum space is the dual of the translation space: four real components $p_\mu$, with the norm $N=-\sum_\mu\varepsilon_\mu p_\mu p_\mu$. The Poincaré group acts by
+Momentum space is the dual of the translation space: four real components $p_{\imath}$, with the norm $N=-\sum_{\imath}\varepsilon_{\imath} p_{\imath} p_{\imath}$. The Poincaré group acts by
 
 $$
 p\longmapsto\Lambda p,
@@ -63,7 +63,7 @@ $$
 $N=\mu^{2}>0$: the one-sheeted hyperboloid, again three-dimensional: with $p_0=\mu\sinh s$ and $\lvert\vec p\rvert=\mu\cosh s$ it is $S^{2}\times\mathbb{R}$. It is not the momentum space of a physical particle, but it is a perfectly good orbit and its representations are used for tachyons, for spacelike separations in Euclidean field theory, and as a mathematical object.
 
 $$
-\mathcal{O}_{\mu}=\{p:N=\mu^{2}\}\cong S^{2}\times\mathbb{R},
+\mathcal{O}_{\imath}=\{p:N=\mu^{2}\}\cong S^{2}\times\mathbb{R},
 $$
 
 ### The Count
@@ -78,7 +78,7 @@ $C_1=-N$ takes the same value everywhere on an orbit, and it takes different val
 
 ### The Second Casimir Is Not an Orbit Invariant
 
-$C_2=-\sum_\mu\varepsilon_\mu W_\mu W_\mu$ is also constant on an orbit, because it is a Casimir. But it does not distinguish orbits from one another: it is constant on the orbit *and* on the fibre, and its value depends on which little-group representation sits over the orbit. So the correct statement is:
+$C_2=-\sum_{\imath}\varepsilon_{\imath} W_{\imath} W_{\imath}$ is also constant on an orbit, because it is a Casimir. But it does not distinguish orbits from one another: it is constant on the orbit *and* on the fibre, and its value depends on which little-group representation sits over the orbit. So the correct statement is:
 
 $$
 C_1\ \text{labels the orbit};\qquad C_2\ \text{labels the fibre};\qquad (C_1,C_2)\ \text{labels the representation}.
@@ -216,7 +216,7 @@ Wigner's classification reduces a particle to an orbit of the Lorentz group in m
 
 | symbol | meaning |
 |---|---|
-| $\mathcal{O}_{m},\mathcal{O}_{0},\mathcal{O}_{\mu}$ | the three orbits |
+| $\mathcal{O}_{m},\mathcal{O}_{0},\mathcal{O}_{\imath}$ | the three orbits |
 | $G_{p}$ | the little group of $p$ |
 | $s(p)$ | a section of the orbit |
 | $W(\Lambda,p)$ | the Wigner rotation, the cocycle |

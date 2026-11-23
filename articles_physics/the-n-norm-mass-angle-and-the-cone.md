@@ -47,7 +47,7 @@ Nothing here is new mathematics. The norm, its multiplicativity, the two cases, 
 
 ## The Results in Brief
 
-- The quaternionic norm is $N(\tilde Q)=Q_t^{2}+B^{2}=\sum_\mu Q_\mu^{2}$, with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$; it is the only one of the four algebraic norms that is multiplicative.
+- The quaternionic norm is $N(\tilde Q)=Q_t^{2}+B^{2}=\sum_{\imath} Q_{\imath}^{2}$, with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$; it is the only one of the four algebraic norms that is multiplicative.
 - $N(\tilde Q_2\tilde Q_1)=N(\tilde Q_2)N(\tilde Q_1)$, and the inverse of an invertible element is $\tilde Q^{\natural}/N$; the norm is the determinant in the matrix model.
 - The algebra is the disjoint union of the group of invertibles $\mathbb B^{\times}=\{N\neq0\}$ and the null cone $\mathcal N=\{N=0\}$; the group is open and dense, the cone is closed of real codimension two and is its boundary.
 - The cone is the origin, the pure stratum of nilpotents of index two, and the non-pure stratum of complex multiples of idempotents; the split is by the scalar part.
@@ -94,7 +94,7 @@ $$
 
 The proof is the identity read twice. $(\tilde Q_2\tilde Q_1)(\tilde Q_2\tilde Q_1)^{\natural}=\tilde Q_2\tilde Q_1\tilde Q_1^{\natural}\tilde Q_2^{\natural}=N(\tilde Q_1)\tilde Q_2\tilde Q_2^{\natural}=N(\tilde Q_1)N(\tilde Q_2)e_t$, and the left side is $N(\tilde Q_2\tilde Q_1)e_t$ by the identity. The same argument fails for the Hermitian norm because the $\star$-conjugate of a product reverses the order but the Hermitian norm is a sum of squared moduli and not a product of conjugates; it fails for the plain and the Krein forms for the same reason.
 
-The norm is not additive, and the failure is the physics. For two elements $X,Y$ the cross term is $2\langle X,Y\rangle$ with $\langle X,Y\rangle=\sum_\mu X_\mu Y_\mu$ the bilinear pairing, so
+The norm is not additive, and the failure is the physics. For two elements $X,Y$ the cross term is $2\langle X,Y\rangle$ with $\langle X,Y\rangle=\sum_{\imath} X_{\imath} Y_{\imath}$ the bilinear pairing, so
 
 $$
 N(X+Y)=N(X)+N(Y)+2\langle X,Y\rangle .
@@ -595,7 +595,7 @@ The quaternionic norm is the multiplicative measure of the algebra; its vanishin
 
 | item | result |
 | --- | --- |
-| the norm | $N(\tilde Q)=Q_t^{2}+B^{2}=\sum_\mu Q_\mu^{2}=\langle\tilde Q\rangle_{\natural}$ |
+| the norm | $N(\tilde Q)=Q_t^{2}+B^{2}=\sum_{\imath} Q_{\imath}^{2}=\langle\tilde Q\rangle_{\natural}$ |
 | multiplicativity | $N(\tilde Q_2\tilde Q_1)=N(\tilde Q_2)N(\tilde Q_1)$, the only one of the four |
 | the identity and the inverse | $\tilde Q\tilde Q^{\natural}=Ne_t$, $\tilde Q^{-1}=\tilde Q^{\natural}/N$, $\det\mathsf M_2(\tilde Q)=N$ |
 | the split | $\mathbb B=\mathbb B^{\times}\uplus\mathcal N$, open and dense against closed of real codimension two |

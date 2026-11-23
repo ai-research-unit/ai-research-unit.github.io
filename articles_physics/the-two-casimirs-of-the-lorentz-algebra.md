@@ -207,14 +207,14 @@ On $(\tfrac12,0)$ the direct computation with the $2\times2$ images gives $\math
 The Poincaré algebra has two Casimirs as well,
 
 $$
-P^{2}=\sum_\mu\varepsilon_\mu P_\mu P_\mu,\qquad W^{2}=\sum_\mu\varepsilon_\mu W_\mu W_\mu,
+P^{2}=\sum_{\imath}\varepsilon_{\imath} P_{\imath} P_{\imath},\qquad W^{2}=\sum_{\imath}\varepsilon_{\imath} W_{\imath} W_{\imath},
 $$
 
-with $\tilde W_\mu=\tfrac12\sum_{\nu,\sigma}\varepsilon_\nu\varepsilon_\sigma\,\epsilon_{\mu\nu\rho\sigma}\tilde P_\nu\tilde M_{\rho\sigma}$ the Pauli–Lubanski vector. On a massive one-particle space $\tilde P^{2}=m^{2}c^{2}$ and $\tilde W^{2}=-\frac{h^{2}}{4\pi^{2}}m^{2}c^{2}s(s+1)$, so the pair is the mass and the spin.
+with $\tilde W_{\imath}=\tfrac12\sum_{\jmath,\sigma}\varepsilon_{\jmath}\varepsilon_\sigma\,\epsilon_{\imath\jmath\rho\sigma}\tilde P_{\jmath}\tilde M_{\rho\sigma}$ the Pauli–Lubanski vector. On a massive one-particle space $\tilde P^{2}=m^{2}c^{2}$ and $\tilde W^{2}=-\frac{h^{2}}{4\pi^{2}}m^{2}c^{2}s(s+1)$, so the pair is the mass and the spin.
 
 ### Why They Are Different Objects
 
-The Poincaré Casimirs cannot be built from the Lorentz generators alone, because $P_\mu$ is not in the Lorentz algebra. They are Casimirs of a larger algebra, and their eigenvalues label orbits of a larger group. So:
+The Poincaré Casimirs cannot be built from the Lorentz generators alone, because $P_{\imath}$ is not in the Lorentz algebra. They are Casimirs of a larger algebra, and their eigenvalues label orbits of a larger group. So:
 
 | | Lorentz Casimirs | Poincaré Casimirs |
 |---|---|---|

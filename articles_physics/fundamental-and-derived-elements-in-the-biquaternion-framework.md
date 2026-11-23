@@ -60,10 +60,10 @@ $$
 (Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z)^{*}=Q_{1t}^{*}e_t+Q_{1x}^{*}\vec e_x+Q_{1y}^{*}\vec e_y+Q_{1z}^{*}\vec e_z,
 $$
 
-where $Q_{1,\mu}^{*}$ is the complex conjugate of the coefficient. This is the **real structure**: the unique $\mathbb{C}$-antilinear algebra involution that fixes $\mathbb{B}_{H}$ pointwise and negates $i$. Its fixed-point set is the real quaternion subspace
+where $Q_{1,\imath}^{*}$ is the complex conjugate of the coefficient. This is the **real structure**: the unique $\mathbb{C}$-antilinear algebra involution that fixes $\mathbb{B}_{H}$ pointwise and negates $i$. Its fixed-point set is the real quaternion subspace
 
 $$
-\mathbb{B}_{H}=\{q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\ :\ q_\mu\in\mathbb{R}\},
+\mathbb{B}_{H}=\{q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\ :\ q_{\imath}\in\mathbb{R}\},
 $$
 
 a real form of the complex algebra, isomorphic to $\mathbb{H}$. Given the complexification (B2), the real structure is canonical: it is the complex conjugation of the scalar factor. The posit is the complexification, and the real structure is the certificate of that posit.
@@ -142,7 +142,7 @@ $$
 
 Both are derived: they are the eigenspaces of the derived involution ${}^{*}$, and they are preserved by every automorphism of the base (which commutes with ${}^{\natural}$ and $\bar{\cdot}$, hence with ${}^{*}$). The coordinate forms are obtained by solving the eigen-equations, and this is a derivation, so it is written out.
 
-**Solving for $\mathbb{B}_{\Psi}$.** Write $\tilde Q_1=\sum_\mu Q_{1,\mu} e_\mu$. The condition $\tilde Q_1^{*}=\tilde Q_1$ reads
+**Solving for $\mathbb{B}_{\Psi}$.** Write $\tilde Q_1=\sum_{\imath} Q_{1,\imath} e_{\imath}$. The condition $\tilde Q_1^{*}=\tilde Q_1$ reads
 
 $$
 Q_{1t}^{*}e_t-Q_{1x}^{*}\vec e_x-Q_{1y}^{*}\vec e_y-Q_{1z}^{*}\vec e_z=Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z.
@@ -350,7 +350,7 @@ The one gap is left visible rather than closed. The complexification — equival
 | $\mathbb{B}_{C}$ | Complex subspace; centre; fixed set of ${}^{\natural}$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace: real scalar, imaginary vector |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace: imaginary scalar, real vector |
-| $\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}=\sum_\mu Q_{1,\mu}^2$ | Biquaternion norm; derived |
+| $\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}=\sum_{\imath} Q_{1,\imath}^2$ | Biquaternion norm; derived |
 | $f(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Scalar-part functional; rigidly derived |
 | $f(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Bilinear form; derived |
 | $\mathcal{S}$ | The base: (B1) $\mathbb{H}$, (B2) the complexification |

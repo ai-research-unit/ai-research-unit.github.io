@@ -14,7 +14,7 @@ The relation to the two subspaces is the conceptual thread. States live in $\mat
 
 Two cautionary notes, in the spirit of the companion articles. First, the mathematics is **standard quantum information theory** transcribed into biquaternion notation; no result below depends on the physical hypothesis that $\mathbb{B}_{\Psi}$ is a distinct sector of the world. Second, the reformulation **reframes** the dichotomy without resolving the conceptual problems that attend it in standard quantum physics — the position taken in *Entangled Subsystems in the Biquaternion Framework*, that the framework changes the language and not the physics, applies here too.
 
-The conventions are those of the companion articles: the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; the central scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian); a general element $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu \in \mathbb{C}$; and the scalar part $\mathrm{Sc}(\tilde{Q})$, which every statement below uses directly.
+The conventions are those of the companion articles: the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; the central scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian); a general element $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_{\imath} \in \mathbb{C}$; and the scalar part $\mathrm{Sc}(\tilde{Q})$, which every statement below uses directly.
 
 ## The State Space and the Plain Form
 
@@ -338,7 +338,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $J(Ξ) = \sum_{j\eta}\tilde Q_{j\eta}\otimesΞ(\tilde Q_{j\eta})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J(Ξ)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

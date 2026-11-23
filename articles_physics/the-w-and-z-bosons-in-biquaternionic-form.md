@@ -15,7 +15,7 @@ $$
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi} ,
 $$
 of real dimension four, with the commutator $[e_a,e_b]$ read from the multiplication table of *Algebra and Element Conventions* and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$; and in the Hermitian-generator realization $T_a=ie_a\in\mathbb{B}_{\Psi}$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12\vec e_z$, whose Hermitian partner is $iT_3=\tfrac12i\vec e_z$; the charge operator is the adjoint action $\tilde S_{\Psi,\mathrm{adj},3}=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below.
-Spacetime indices are written low and every contraction is an explicit sum, in the $i r'_t$ device of *Physics Units and Common Elements Conventions*; with that device the plain sum $\sum_\mu W_\mu W_\mu$ is already the invariant. The one metric a display needs is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ of *Frame and Metric Conventions*, the same in both frames, and the polarization sums below use it; the one minus of the interval is the square of the $i$ in $Q_t=i q'_t$. Every framework formula carries $c$ and $\kappa=\frac{2\pi ϙ}{h}$ explicitly, and no unit is set to one; in the electroweak formulae the standard symbols $g,g_{\mathrm Y},v,\theta_W$ carry the standard normalization, while the framework's coupling is $\kappa=\frac{2\pi ϙ}{h}$ where it appears in the algebra's expressions.
+Spacetime indices are written low and every contraction is an explicit sum, in the $i r'_t$ device of *Physics Units and Common Elements Conventions*; with that device the plain sum $\sum_{\imath} W_{\imath} W_{\imath}$ is already the invariant. The one metric a display needs is the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$ of *Frame and Metric Conventions*, the same in both frames, and the polarization sums below use it; the one minus of the interval is the square of the $i$ in $Q_t=i q'_t$. Every framework formula carries $c$ and $\kappa=\frac{2\pi ϙ}{h}$ explicitly, and no unit is set to one; in the electroweak formulae the standard symbols $g,g_{\mathrm Y},v,\theta_W$ carry the standard normalization, while the framework's coupling is $\kappa=\frac{2\pi ϙ}{h}$ where it appears in the algebra's expressions.
 
 - Companion article *Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall*, for the boundary statement and the list of open problems.
 - Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the placement of the electroweak sector in the larger structure.
@@ -37,19 +37,19 @@ Spacetime indices are written low and every contraction is an explicit sum, in t
 
 ### The Gauge Fields and the Mixing
 
-The electroweak gauge sector is the product group $SU(2)_L\times \mathrm{U}(1)_Y$, with three gauge fields $W_{\mu a}$ $(a=1,2,3)$ of coupling $g$ and one field $B_\mu$ of coupling $g_{\mathrm Y}$. The action for the sector — the two curvatures, the scalar doublet's covariant kinetic term and potential, and the mass matrix that the vacuum produces from it — is written, varied and diagonalized in [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html). That article obtains $M_W=gv/2$ and $M_Z=M_W/\cos\theta_W$ as the nonzero eigenvalues of a rank-three mass matrix and reads the photon's masslessness as the zero eigenvalue; it also states why no mass term may be written by hand. This article does not repeat the functional. It takes the two masses, the mixing and the masses' relation as its data and asks what the algebra does with them.
+The electroweak gauge sector is the product group $SU(2)_L\times \mathrm{U}(1)_Y$, with three gauge fields $W_{\imath a}$ $(a=1,2,3)$ of coupling $g$ and one field $B_{\imath}$ of coupling $g_{\mathrm Y}$. The action for the sector — the two curvatures, the scalar doublet's covariant kinetic term and potential, and the mass matrix that the vacuum produces from it — is written, varied and diagonalized in [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html). That article obtains $M_W=gv/2$ and $M_Z=M_W/\cos\theta_W$ as the nonzero eigenvalues of a rank-three mass matrix and reads the photon's masslessness as the zero eigenvalue; it also states why no mass term may be written by hand. This article does not repeat the functional. It takes the two masses, the mixing and the masses' relation as its data and asks what the algebra does with them.
 
 The W fields are charged under the electromagnetic subgroup and the physical charged combinations are
 $$
-W^\pm_\mu=\frac{1}{\sqrt{2}}\left(W_{\mu 1}\mp i W_{\mu 2}\right),
+W^\pm_{\imath}=\frac{1}{\sqrt{2}}\left(W_{\imath 1}\mp i W_{\imath 2}\right),
 \qquad
-W^-_\mu=(W^+_\mu)^\dagger ,
+W^-_{\imath}=(W^+_{\imath})^\dagger ,
 $$
 with electric charge $\pm1$. The two neutral fields mix through the **Weinberg angle** $\theta_W$,
 $$
-Z_\mu=\cos\theta_W\,W_{\mu 3}-\sin\theta_W\,B_\mu,
+Z_{\imath}=\cos\theta_W\,W_{\imath 3}-\sin\theta_W\,B_{\imath},
 \qquad
-A_\mu=\sin\theta_W\,W_{\mu 3}+\cos\theta_W\,B_\mu,
+A_{\imath}=\sin\theta_W\,W_{\imath 3}+\cos\theta_W\,B_{\imath},
 \qquad
 \tan\theta_W=\frac{g_{\mathrm Y}}{g},
 $$
@@ -65,7 +65,7 @@ $$
 \qquad
 v=246.22\ \mathrm{GeV},
 $$
-gives, through the covariant kinetic term $|D_\mu\xi_{\mathrm{scl}}|^2$, the squared norm summed over the two components, with $D_\mu=\partial/\partial R_\mu+ig\sum_a T_aW_{\mu a}+i\,g_{\mathrm Y}Y_{\mathrm{scl},\xi} B_\mu$, the mass terms
+gives, through the covariant kinetic term $|D_{\imath}\xi_{\mathrm{scl}}|^2$, the squared norm summed over the two components, with $D_{\imath}=\partial/\partial R_{\imath}+ig\sum_a T_aW_{\imath a}+i\,g_{\mathrm Y}Y_{\mathrm{scl},\xi} B_{\imath}$, the mass terms
 $$
 M_W=\frac{gv}{2},
 \qquad
@@ -93,7 +93,7 @@ $$
 $$
 which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; the measured value, $\rho=1.00038\pm0.00020$, defined with the on-shell mixing angle, is consistent with it. The measured masses are $M_W=80.377\pm0.012$ GeV and $M_Z=91.1876\pm0.0021$ GeV, and the measured weak mixing angle is $\sin^2\theta_W=0.23122\pm0.00004$ in the $\overline{\mathrm{MS}}$ scheme. These values are the empirical input of the sector; the tree-level relations above are identities, and the difference between the tree-level expressions and the measured masses is the radiative correction $\delta r$, which is standard.
 
-The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi_{\mathrm{scl}})^*(D_\nu\xi_{\mathrm{scl}})$ with $D_\mu=\partial/\partial R_\mu+i\kappa A_\mu$ and $\langle|\xi_{\mathrm{scl}}|\rangle=v/\sqrt2$, is
+The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-\sum_{\imath,\jmath}g_{\imath\jmath}(D_{\imath}\xi_{\mathrm{scl}})^*(D_{\jmath}\xi_{\mathrm{scl}})$ with $D_{\imath}=\partial/\partial R_{\imath}+i\kappa A_{\imath}$ and $\langle|\xi_{\mathrm{scl}}|\rangle=v/\sqrt2$, is
 $$
 \boxed{\;M_A=\frac{2\pi ϙ\,v}{h}=\kappa v\;},
 $$
@@ -119,9 +119,9 @@ the effective angle being the asymmetry result, the second the $\overline{\mathr
 
 ### The Currents and the Self-Couplings
 
-The currents below are written with the action of the frame on the field and with the two values of the chirality subscript. The generator of the coordinate $x_\mu$ acts by
+The currents below are written with the action of the frame on the field and with the two values of the chirality subscript. The generator of the coordinate $x_{\imath}$ acts by
 $$
-\tilde{Ξ}\longmapsto i\,\tilde{Ξ}\,\vec e_\mu\,\vec e_{\mathrm{spt}(\mu)},
+\tilde{Ξ}\longmapsto i\,\tilde{Ξ}\,\vec e_{\imath}\,\vec e_{\mathrm{spt}(\imath)},
 \qquad
 \mathrm{spt}(t)=x,\quad \mathrm{spt}(\eta)=y ,
 $$
@@ -131,50 +131,50 @@ $$
 \qquad
 \tilde{Ξ}_{\mathrm R}=\tfrac12\big(\tilde{Ξ}-i\tilde{Ξ}\vec e_z\big),
 \qquad
-i\vec e_\mu\,\tilde{Ξ}_{\mathrm L}\,\vec e_{\mathrm{spt}(\mu)}\ \text{is of letter } R,
+i\vec e_{\imath}\,\tilde{Ξ}_{\mathrm L}\,\vec e_{\mathrm{spt}(\imath)}\ \text{is of letter } R,
 \qquad
-i\vec e_\mu\,\tilde{Ξ}_{\mathrm R}\,\vec e_{\mathrm{spt}(\mu)}\ \text{is of letter } L .
+i\vec e_{\imath}\,\tilde{Ξ}_{\mathrm R}\,\vec e_{\mathrm{spt}(\imath)}\ \text{is of letter } L .
 $$
 A frame basis operator therefore carries each part of a field into the other, and the $L$ part of a frame basis operator applied to an $L$ field is zero. A term built from one field alone is consequently not chiral; the coupling of the W is chiral because it reads one part of one of the two fields of a doublet. The two letter statements were verified on the four frame basis operators as maps of the algebra.
 
 The charged current interaction is
 $$
-\mathcal{L}_{\mathrm{cc}}=-\frac{g}{\sqrt{2}}\Big(\sum_\mu W^+_\mu J^{+}_\mu+\mathrm{h.c.}\Big),
+\mathcal{L}_{\mathrm{cc}}=-\frac{g}{\sqrt{2}}\Big(\sum_{\imath} W^+_{\imath} J^{+}_{\imath}+\mathrm{h.c.}\Big),
 \qquad
-J^+_\mu=\sum_{\text{doublets}}\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm u}^*\,i\,\big(i\vec e_\mu\,\tilde{Ξ}_{\mathrm d,\mathrm L}\,\vec e_{\mathrm{spt}(\mu)}\big)\vec e_x\Big),
+J^+_{\imath}=\sum_{\text{doublets}}\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm u}^*\,i\,\big(i\vec e_{\imath}\,\tilde{Ξ}_{\mathrm d,\mathrm L}\,\vec e_{\mathrm{spt}(\imath)}\big)\vec e_x\Big),
 $$
 with the sum running over the lepton and quark doublets with the appropriate quark mixing matrix, $\tilde{Ξ}_{\mathrm u}$ and $\tilde{Ξ}_{\mathrm d}$ the up and down members of a doublet, and $\tilde{Ξ}_{\mathrm d,\mathrm L}$ the $L$ part of the down field. The selection is what makes the coupling chiral: it is applied to the down field, so that of the two parts of that field only the $L$ one reaches the W. The neutral current interaction is
 $$
-\mathcal{L}_{\mathrm{nc}}=-\frac{g}{\cos\theta_W}\sum_\mu Z_\mu J_{Z\mu} ,
+\mathcal{L}_{\mathrm{nc}}=-\frac{g}{\cos\theta_W}\sum_{\imath} Z_{\imath} J_{Z\imath} ,
 \qquad
-J_{Z\mu}=\sum_f\mathrm{Sc}\Big(f^{*}\,i\,\big(i\vec e_\mu\,(T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_W\,f)\,\vec e_{\mathrm{spt}(\mu)}\big)\vec e_x\Big),
+J_{Z\imath}=\sum_f\mathrm{Sc}\Big(f^{*}\,i\,\big(i\vec e_{\imath}\,(T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_W\,f)\,\vec e_{\mathrm{spt}(\imath)}\big)\vec e_x\Big),
 $$
 where $T_{3f}$ is the weak isospin of the fermion and $Q_f$ its electric charge. The bracket is the Z-pole combination of the previous section written on the two parts, $\tfrac12(v_f+a_f)f_{\mathrm L}+\tfrac12(v_f-a_f)f_{\mathrm R}$ with $v_f$ and $a_f$ the vector and axial couplings, so the two sections use one set of couplings. The coupling of the photon is $eQ_f$, with $Q_f=T_{3f}+Y_f$. The non-abelian structure produces the gauge self-couplings, whose Lorentz structure is standard:
 $$
-\mathcal{L}_{3}=ig\cos\theta_W\Big[\big(W^+_{\mu\nu}W^-_\mu-W^-_{\mu\nu}W^+_\mu\big)Z_\nu+W^+_\mu W^-_\nu Z_{\mu\nu}\Big]
-+ie\Big[\big(W^+_{\mu\nu}W^-_\mu-W^-_{\mu\nu}W^+_\mu\big)A_\nu+W^+_\mu W^-_\nu A_{\mu\nu}\Big],
+\mathcal{L}_{3}=ig\cos\theta_W\Big[\big(W^+_{\imath\jmath}W^-_{\imath}-W^-_{\imath\jmath}W^+_{\imath}\big)Z_{\jmath}+W^+_{\imath} W^-_{\jmath} Z_{\imath\jmath}\Big]
++ie\Big[\big(W^+_{\imath\jmath}W^-_{\imath}-W^-_{\imath\jmath}W^+_{\imath}\big)A_{\jmath}+W^+_{\imath} W^-_{\jmath} A_{\imath\jmath}\Big],
 $$
 $$
-W^\pm_{\mu\nu}=\frac{\partial W^\pm_\nu}{\partial R_\mu}-\frac{\partial W^\pm_\mu}{\partial R_\nu},
+W^\pm_{\imath\jmath}=\frac{\partial W^\pm_{\jmath}}{\partial R_{\imath}}-\frac{\partial W^\pm_{\imath}}{\partial R_{\jmath}},
 \qquad
-Z_{\mu\nu}=\frac{\partial Z_\nu}{\partial R_\mu}-\frac{\partial Z_\mu}{\partial R_\nu},
+Z_{\imath\jmath}=\frac{\partial Z_{\jmath}}{\partial R_{\imath}}-\frac{\partial Z_{\imath}}{\partial R_{\jmath}},
 \qquad
-A_{\mu\nu}=\frac{\partial A_\nu}{\partial R_\mu}-\frac{\partial A_\mu}{\partial R_\nu},
+A_{\imath\jmath}=\frac{\partial A_{\jmath}}{\partial R_{\imath}}-\frac{\partial A_{\imath}}{\partial R_{\jmath}},
 $$
 $$
-\mathcal{L}_{4}=-\frac{g^2}{4}\Big[\big(\sum_{a,\mu}W_{a,\mu} W_{a,\mu}\big)^2-\sum_{a,b}\big(\sum_\mu W_{a,\mu} W_{b,\mu}\big)^2\Big],
+\mathcal{L}_{4}=-\frac{g^2}{4}\Big[\big(\sum_{a,\imath}W_{a,\imath} W_{a,\imath}\big)^2-\sum_{a,b}\big(\sum_{\imath} W_{a,\imath} W_{b,\imath}\big)^2\Big],
 $$
 $$
-=-\frac{g^2}{2}\Big[\big(\sum_\mu W^+_\mu W^-_\mu\big)^2-\big(\sum_\mu W^+_\mu W^+_\mu\big)\big(\sum_\nu W^-_\nu W^-_\nu\big)\Big]
--g^2\Big[\big(\sum_\mu W^+_\mu W^-_\mu\big)\big(\sum_\nu W_{3,\nu} W_{3,\nu}\big)-\big(\sum_\mu W^+_\mu W_{3,\mu}\big)\big(\sum_\nu W^-_\nu W_{3,\nu}\big)\Big],
+=-\frac{g^2}{2}\Big[\big(\sum_{\imath} W^+_{\imath} W^-_{\imath}\big)^2-\big(\sum_{\imath} W^+_{\imath} W^+_{\imath}\big)\big(\sum_{\jmath} W^-_{\jmath} W^-_{\jmath}\big)\Big]
+-g^2\Big[\big(\sum_{\imath} W^+_{\imath} W^-_{\imath}\big)\big(\sum_{\jmath} W_{3,\jmath} W_{3,\jmath}\big)-\big(\sum_{\imath} W^+_{\imath} W_{3,\imath}\big)\big(\sum_{\jmath} W^-_{\jmath} W_{3,\jmath}\big)\Big],
 $$
-every index is summed where it is written, and the second form splits the first into the four-charged-W piece and the piece that carries the neutral field. Both forms were checked against the direct expansion of $-\tfrac14\sum_{a,\mu,\nu}W_{a,\mu\nu}W_{a,\mu\nu}$ to machine precision. With $W_{3,\mu}=\cos\theta_W Z_\mu+\sin\theta_W A_\mu$ the second bracket gives the $WWZZ$ vertex with coefficient $-g^2\cos^2\theta_W$, the $WW\gamma\gamma$ vertex with $-g^2\sin^2\theta_W=-e^2$, and the $WWZ\gamma$ vertex with $-2g^2\sin\theta_W\cos\theta_W=-2eg\cos\theta_W$. Two features of the trilinear term are worth naming, because a compact writing of it loses one of them. The neutral field enters once through its field strength $Z_{\mu\nu}$, not only through the derivative $\partial Z$: the two are different tensors, and only the antisymmetric one reproduces the vertex that the field strength $W_{\mu\nu a}$ generates — with the bare derivative the identity fails. And the photon couples with $e=g\sin\theta_W$, the same structure constants reduced by the mixing, so the $WW\gamma$ vertex is the $Z$ vertex with $\cos\theta_W$ replaced by $\sin\theta_W$ and the neutral field by the photon. The vertices are of the same $f_{abc}$ type as the ones the framework's non-abelian structure supplies; this is the part of the electroweak sector that the algebra reaches without qualification.
+every index is summed where it is written, and the second form splits the first into the four-charged-W piece and the piece that carries the neutral field. Both forms were checked against the direct expansion of $-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\jmath}$ to machine precision. With $W_{3,\imath}=\cos\theta_W Z_{\imath}+\sin\theta_W A_{\imath}$ the second bracket gives the $WWZZ$ vertex with coefficient $-g^2\cos^2\theta_W$, the $WW\gamma\gamma$ vertex with $-g^2\sin^2\theta_W=-e^2$, and the $WWZ\gamma$ vertex with $-2g^2\sin\theta_W\cos\theta_W=-2eg\cos\theta_W$. Two features of the trilinear term are worth naming, because a compact writing of it loses one of them. The neutral field enters once through its field strength $Z_{\imath\jmath}$, not only through the derivative $\partial Z$: the two are different tensors, and only the antisymmetric one reproduces the vertex that the field strength $W_{\imath\jmath a}$ generates — with the bare derivative the identity fails. And the photon couples with $e=g\sin\theta_W$, the same structure constants reduced by the mixing, so the $WW\gamma$ vertex is the $Z$ vertex with $\cos\theta_W$ replaced by $\sin\theta_W$ and the neutral field by the photon. The vertices are of the same $f_{abc}$ type as the ones the framework's non-abelian structure supplies; this is the part of the electroweak sector that the algebra reaches without qualification.
 
 ## The Charged and Neutral Directions in the Algebra
 
 ### The Cartan Decomposition of $\mathrm{U}(2)$
 
-The compact factor of the algebra is $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, of real dimension four, matching the four electroweak gauge fields; at the level of Lie algebras $\mathfrak{u}(2)=\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ is the electroweak algebra, and the global quotient that separates $\mathrm{U}(2)$ from $\mathrm{SU}(2)\times\mathrm{U}(1)$ is invisible to the algebra, which is why the group is listed as imported. Its Cartan subalgebra is two-dimensional, spanned by the central $ie_t$ and the material $\vec e_z$ (or $i\vec e_z$); the two commuting generators correspond to the two neutral fields, $B_\mu$ and $W_{\mu 3}$, before mixing. The off-diagonal generators are the charged combinations
+The compact factor of the algebra is $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, of real dimension four, matching the four electroweak gauge fields; at the level of Lie algebras $\mathfrak{u}(2)=\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ is the electroweak algebra, and the global quotient that separates $\mathrm{U}(2)$ from $\mathrm{SU}(2)\times\mathrm{U}(1)$ is invisible to the algebra, which is why the group is listed as imported. Its Cartan subalgebra is two-dimensional, spanned by the central $ie_t$ and the material $\vec e_z$ (or $i\vec e_z$); the two commuting generators correspond to the two neutral fields, $B_{\imath}$ and $W_{\imath 3}$, before mixing. The off-diagonal generators are the charged combinations
 $$
 \boxed{\;W^\pm\;\longleftrightarrow\; \vec e_x\pm i \vec e_y\in\mathbb{B}\;},
 $$
@@ -184,15 +184,15 @@ $$
 \qquad
 \tilde S_{\Psi,\mathrm{adj},3}(\vec e_x\pm i\vec e_y)=\pm (\vec e_x\pm i\vec e_y)\;},
 $$
-where the coefficients are the double-$i$ collapse and nothing else: $[i\vec e_z,\vec e_x]=i[\vec e_z,\vec e_x]=2i\vec e_y$ on one side, and $i^2[\vec e_z,\vec e_y]=-[\vec e_z,\vec e_y]=2\vec e_x$ on the other, since $[\vec e_z,\vec e_y]=-2\vec e_x$. The charged generators therefore carry the eigenvalues $\pm1$ of the adjoint $\tilde S_{\Psi,\mathrm{adj},3}$. This is the same computation the companion article *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form* performs for the spin-one representation, and it identifies the W as the spin-one excitation of the material sector: the connection $\mathcal{A}_\mu$ is $\mathfrak{su}(2)$-valued, its two off-diagonal components are the charged W's, and its diagonal component is the neutral $W_3$.
+where the coefficients are the double-$i$ collapse and nothing else: $[i\vec e_z,\vec e_x]=i[\vec e_z,\vec e_x]=2i\vec e_y$ on one side, and $i^2[\vec e_z,\vec e_y]=-[\vec e_z,\vec e_y]=2\vec e_x$ on the other, since $[\vec e_z,\vec e_y]=-2\vec e_x$. The charged generators therefore carry the eigenvalues $\pm1$ of the adjoint $\tilde S_{\Psi,\mathrm{adj},3}$. This is the same computation the companion article *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form* performs for the spin-one representation, and it identifies the W as the spin-one excitation of the material sector: the connection $\mathcal{A}_{\imath}$ is $\mathfrak{su}(2)$-valued, its two off-diagonal components are the charged W's, and its diagonal component is the neutral $W_3$.
 
 ### The W and Z as Proca Fields
 
-A free W or Z of mass $M$ is the Proca field $\tilde A_{\Phi}\in\mathbb{B}_{\Phi}$ of the companion articles; its component vector is written $V_\mu$ here, so that $A_\mu$ stays the photon of the mixing,
+A free W or Z of mass $M$ is the Proca field $\tilde A_{\Phi}\in\mathbb{B}_{\Phi}$ of the companion articles; its component vector is written $V_{\imath}$ here, so that $A_{\imath}$ stays the photon of the mixing,
 $$
-\mathcal{L}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12 M^2 \sum_\mu V_\mu V_\mu,
+\mathcal{L}=-\tfrac14\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}-\tfrac12 M^2 \sum_{\imath} V_{\imath} V_{\imath},
 \qquad
-F_{\mu\nu}=\frac{\partial V_\nu}{\partial R_\mu}-\frac{\partial V_\mu}{\partial R_\nu},
+F_{\imath\jmath}=\frac{\partial V_{\jmath}}{\partial R_{\imath}}-\frac{\partial V_{\imath}}{\partial R_{\jmath}},
 $$
 $$
 \tilde\nabla_\Phi\tilde F-M^2\tilde A_{\Phi}=0,
@@ -201,15 +201,15 @@ $$
 $$
 the second line being the Lorenz condition, which follows from the equation and is not a gauge choice in the massive theory. Its canonical quantization yields three polarizations, two transverse and one longitudinal, with the transverse sum $\mathcal{P}$,
 $$
-\sum_{r=1}^{3}\varepsilon_{r\mu}\varepsilon_{r\nu}=\mathcal{P}_{\mu\nu},
+\sum_{r=1}^{3}\varepsilon_{r\imath}\varepsilon_{r\jmath}=\mathcal{P}_{\imath\jmath},
 \qquad
-\mathcal{P}_{\mu\nu}=\delta_{\mu\nu}+\frac{p_\mu p_\nu}{M^2},
+\mathcal{P}_{\imath\jmath}=\delta_{\imath\jmath}+\frac{p_{\imath} p_{\jmath}}{M^2},
 \qquad
-\sum_\rho \mathcal{P}_{\mu\rho}\mathcal{P}_{\rho\nu}=\mathcal{P}_{\mu\nu},
+\sum_\rho \mathcal{P}_{\imath\rho}\mathcal{P}_{\rho\jmath}=\mathcal{P}_{\imath\jmath},
 \qquad
-\sum_\nu \mathcal{P}_{\mu\nu}p_\nu=0 .
+\sum_{\jmath} \mathcal{P}_{\imath\jmath}p_{\jmath}=0 .
 $$
-The metric contraction $\sum_{\mu,\nu}\delta_{\mu\nu}\mathcal{P}_{\mu\nu}=3$ counts the polarizations, and the timelike sign $\sum_\mu p_\mu p_\mu=-M^2$ on shell, whose one minus is the square of the $i$ that $p_t$ carries, is what makes the sum reproduce itself, so that the three polarizations are complete.
+The metric contraction $\sum_{\imath,\jmath}\delta_{\imath\jmath}\mathcal{P}_{\imath\jmath}=3$ counts the polarizations, and the timelike sign $\sum_{\imath} p_{\imath} p_{\imath}=-M^2$ on shell, whose one minus is the square of the $i$ that $p_t$ carries, is what makes the sum reproduce itself, so that the three polarizations are complete.
 
 In the framework the massive vector is an element of the material sector, $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, whose massive wave equation is $(\Box_\Phi-\mu^2)\tilde{A}_{\Phi}=0$ in the Lorenz gauge; the Proca companion writes it in that form. The W and Z are therefore carried by the same object as the photon — a material vector — with the mass term added; the difference between the photon and the Z is that the photon is the massless (self-dual) combination and the Z the massive one, and the difference between the Z and the W is the charge eigenvalue of the adjoint action.
 
@@ -217,9 +217,9 @@ In the framework the massive vector is an element of the material sector, $\tild
 
 The two commuting directions of $\mathrm{U}(2)$ are the central $ie_t$ and the Cartan material direction $\vec e_z$. Any two independent neutral combinations are a rotation of this plane,
 $$
-Z_\mu=\cos\theta_W\,W_{\mu 3}-\sin\theta_W\,B_\mu,
+Z_{\imath}=\cos\theta_W\,W_{\imath 3}-\sin\theta_W\,B_{\imath},
 \qquad
-A_\mu=\sin\theta_W\,W_{\mu 3}+\cos\theta_W\,B_\mu ,
+A_{\imath}=\sin\theta_W\,W_{\imath 3}+\cos\theta_W\,B_{\imath} ,
 $$
 and the rotation angle is the Weinberg angle. The algebra contains the plane and therefore contains the rotation; what it does not contain is a *principle* that fixes the angle. The angle is fixed in the standard theory by the requirement that the photon be massless, that is by the mass matrix of the neutral sector, and the mass matrix is generated by the Higgs doublet. In the framework the rotation is available and the mechanism that determines it is imported, exactly as the mass is.
 
@@ -248,7 +248,7 @@ A massive vector has three polarizations, and the third — the longitudinal mod
 
 ## The Currents and the Vector-Like Obstruction
 
-The charged current interaction is chiral: the W couples to $J^{+}_\mu$ of §*The Currents and the Self-Couplings*, which reads the down field on its $L$ part only, and the neutral current has the parity-violating combination $T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_W\,f$. The framework's gauge action on the algebra is the adjoint action, which is real and preserves the sector: it acts on the material sector as a rotation, and it is a difference of a left multiplication and a right multiplication by the same Cartan unit, each of which keeps the letter, so it acts on the two parts of a field alike. The companion article *Chiral Fermions in the Biquaternion Framework* shows that a gauge group drawn from the centre acts as a scalar and is therefore vector-like, and that chirality requires a non-central action. The non-central actions the framework possesses are the adjoint action on the material sector and left multiplication on the algebra; the adjoint is real, and left multiplication keeps the letter, so it carries an $L$ part and an $R$ part the same way; neither produces the asymmetric assignment the W requires. Two possibilities are recorded in the companion and are not resolved here: a chiral action built on a module that is not the material sector, and a real structure that pairs the two chiralities. Neither is supplied by the algebra as it stands. The result for the vector bosons is that the framework transcribes the charged and neutral currents but does not derive their chirality.
+The charged current interaction is chiral: the W couples to $J^{+}_{\imath}$ of §*The Currents and the Self-Couplings*, which reads the down field on its $L$ part only, and the neutral current has the parity-violating combination $T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_W\,f$. The framework's gauge action on the algebra is the adjoint action, which is real and preserves the sector: it acts on the material sector as a rotation, and it is a difference of a left multiplication and a right multiplication by the same Cartan unit, each of which keeps the letter, so it acts on the two parts of a field alike. The companion article *Chiral Fermions in the Biquaternion Framework* shows that a gauge group drawn from the centre acts as a scalar and is therefore vector-like, and that chirality requires a non-central action. The non-central actions the framework possesses are the adjoint action on the material sector and left multiplication on the algebra; the adjoint is real, and left multiplication keeps the letter, so it carries an $L$ part and an $R$ part the same way; neither produces the asymmetric assignment the W requires. Two possibilities are recorded in the companion and are not resolved here: a chiral action built on a module that is not the material sector, and a real structure that pairs the two chiralities. Neither is supplied by the algebra as it stands. The result for the vector bosons is that the framework transcribes the charged and neutral currents but does not derive their chirality.
 
 The electromagnetic current is a different case, and it is reached. The unbroken generator of the electroweak group is $Ϙ=T_3+Y$, its gauge field is the photon, and the coupling is $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$. The abelian gauge principle of the companion articles is the central phase, and the photon is the massless central-material combination. The framework reaches the photon exactly; it reaches the Z as a massive neutral material vector with a mixing angle that is imported; and it reaches the W as a massive charged adjoint excitation with a mass and a chiral coupling that are imported.
 
@@ -256,15 +256,15 @@ The electromagnetic current is a different case, and it is reached. The unbroken
 
 The trilinear and quartic vertices of the electroweak vector bosons come from the non-abelian curvature, and here the framework's structure is sufficient in form. The previous part writes the two vertices in their electroweak form, with the charged and neutral combinations already made; this section writes them in the general non-abelian form from which that specialization follows, so that the structure constants that appear are visibly the ones of the compact factor. Writing the curvature as
 $$
-F_{\mu\nu}=\frac{\partial\mathcal{A}_\nu}{\partial R_\mu}-\frac{\partial\mathcal{A}_\mu}{\partial R_\nu}+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu],
+F_{\imath\jmath}=\frac{\partial\mathcal{A}_{\jmath}}{\partial R_{\imath}}-\frac{\partial\mathcal{A}_{\imath}}{\partial R_{\jmath}}+i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}],
 $$
 the cubic term in the action is linear in the commutator and the quartic term quadratic, so that
 $$
-\mathcal{L}_{3}\sim\kappa\sum_{a,b,c}f_{abc}\Big(\frac{\partial\mathcal{A}_{\nu a}}{\partial R_\mu}-\frac{\partial\mathcal{A}_{\mu a}}{\partial R_\nu}\Big)\mathcal{A}_{\mu b}\mathcal{A}_{\nu c},
+\mathcal{L}_{3}\sim\kappa\sum_{a,b,c}f_{abc}\Big(\frac{\partial\mathcal{A}_{\jmath a}}{\partial R_{\imath}}-\frac{\partial\mathcal{A}_{\imath a}}{\partial R_{\jmath}}\Big)\mathcal{A}_{\imath b}\mathcal{A}_{\jmath c},
 \qquad
-\mathcal{L}_{4}\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\mu a}\mathcal{A}_{\nu b}\mathcal{A}_{\mu c}\mathcal{A}_{\nu d},
+\mathcal{L}_{4}\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\imath a}\mathcal{A}_{\jmath b}\mathcal{A}_{\imath c}\mathcal{A}_{\jmath d},
 $$
-with the repeated $\mu,\nu$ summed, which are the three- and four-gauge-boson vertices with the structure constants $f_{abc}=2\varepsilon_{abc}$ of the compact factor in the unnormalized basis $e_a$. The derivative pair in the cubic term is the field strength of the curvature, and it is written antisymmetrized for a reason visible only in the electroweak form: there the neutral field enters through its field strength and not through a bare derivative, and only the antisymmetrized pair reproduces the vertex that the curvature generates. In this general form the antisymmetrization costs nothing, because $f_{abc}$ is antisymmetric in $b,c$ and the two orderings give the same vertex. For the charged and neutral combinations these become the $WWZ$ and $WW\gamma$ vertices, with the couplings $g\cos\theta_W$ and $e$ respectively, and the quartic $WWZZ$, $WW\gamma\gamma$, $WWZ\gamma$ vertices. The algebra supplies the Lorentz and Lie-algebraic structure of these vertices; the identification of the neutral combination with the Z and the photon, and the numerical values of the couplings, are imported, as is the mixing angle. Two points are specific to the framework.
+with the repeated ${\imath},\jmath$ summed, which are the three- and four-gauge-boson vertices with the structure constants $f_{abc}=2\varepsilon_{abc}$ of the compact factor in the unnormalized basis $e_a$. The derivative pair in the cubic term is the field strength of the curvature, and it is written antisymmetrized for a reason visible only in the electroweak form: there the neutral field enters through its field strength and not through a bare derivative, and only the antisymmetrized pair reproduces the vertex that the curvature generates. In this general form the antisymmetrization costs nothing, because $f_{abc}$ is antisymmetric in $b,c$ and the two orderings give the same vertex. For the charged and neutral combinations these become the $WWZ$ and $WW\gamma$ vertices, with the couplings $g\cos\theta_W$ and $e$ respectively, and the quartic $WWZZ$, $WW\gamma\gamma$, $WWZ\gamma$ vertices. The algebra supplies the Lorentz and Lie-algebraic structure of these vertices; the identification of the neutral combination with the Z and the photon, and the numerical values of the couplings, are imported, as is the mixing angle. Two points are specific to the framework.
 
 - **The vertices are those of the adjoint action.** The structure constants $f_{abc}$ of the compact factor are the ones read from the quaternion commutator, and the four-point vertex is built from their products. In the algebra the cubic and quartic interactions are the expansion of the commutator, so the gauge self-couplings are a direct consequence of the non-commutativity of the generators in the material basis $e_a$.
 - **The abelian factor does not self-couple.** The central direction has vanishing structure constants, so the abelian hypercharge field has no self-coupling; the $BBB$ and $BBBB$ vertices are absent. This is the algebra's statement of the abelian nature of the hypercharge factor.
@@ -273,7 +273,7 @@ with the repeated $\mu,\nu$ summed, which are the three- and four-gauge-boson ve
 $$
 \vec e_\pm=\tfrac12\bigl(\vec e_x\pm i\vec e_y\bigr),
 $$
-which satisfy $[\vec e_z,\vec e_\pm]=\mp i\,\vec e_\pm$ and $[\vec e_+,\vec e_-]=-i\,\vec e_z$ — the ladder of a spin-one multiplet, with $\vec e_z$ the neutral direction. Then $W^\pm_\mu$ **is** the coefficient of $\vec e_\pm$ in the connection and $Z_\mu$ is the coefficient along the neutral combination; the factor $\sqrt2$ that appears in the charged current is the normalisation of these generators, $\vec e_+\vec e_-+\vec e_-\vec e_+=\tfrac12(\vec e_x^2+\vec e_y^2)= -e_t$, and nothing else. The names and the display-free form of the same three objects are fixed in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html). With that reading in place, the four-boson vertices below are the Jacobi identity of the rotor's algebra written out and not a separate computation.
+which satisfy $[\vec e_z,\vec e_\pm]=\mp i\,\vec e_\pm$ and $[\vec e_+,\vec e_-]=-i\,\vec e_z$ — the ladder of a spin-one multiplet, with $\vec e_z$ the neutral direction. Then $W^\pm_{\imath}$ **is** the coefficient of $\vec e_\pm$ in the connection and $Z_{\imath}$ is the coefficient along the neutral combination; the factor $\sqrt2$ that appears in the charged current is the normalisation of these generators, $\vec e_+\vec e_-+\vec e_-\vec e_+=\tfrac12(\vec e_x^2+\vec e_y^2)= -e_t$, and nothing else. The names and the display-free form of the same three objects are fixed in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html). With that reading in place, the four-boson vertices below are the Jacobi identity of the rotor's algebra written out and not a separate computation.
 
 **The vertices are frame-connection vertices, and the identification is not decorative.** The compact factor is $SU(2)$, the rotation group $\mathrm{Spin}(3)=\mathrm{SU}(2)$, so its structure constants are those of the spatial rotations and the cubic vertex is a term in which two vector fields are acted on by the third through the rotation algebra. That is the shape of a spin connection: the field in the adjoint of $\mathrm{Spin}(3)$ is the spatial part of the tetrad spin connection, as [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) records and [Torsion, Contorsion and the Spin Connection in Biquaternionic Form](torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html) constructs. Read that way, the agreement of the self-couplings with the standard ones is not a coincidence of normalization: both are the same vertex, written once as a Yang–Mills interaction and once as a connection.
 
@@ -289,7 +289,7 @@ which satisfy $[\vec e_z,\vec e_\pm]=\mp i\,\vec e_\pm$ and $[\vec e_+,\vec e_-]
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -307,13 +307,13 @@ $$
 
 Each of the four generator basis operators is one factor of $i$ times a plain two-sided basis operator,
 $$
-i\,\gamma_\mu=-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}} ,
+i\,\gamma_{\imath}=-L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\imath)}} ,
 $$
 
 In the axis-free display:
 
 $$
-i\,\gamma_\mu=-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}} ,
+i\,\gamma_{\imath}=-L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}} ,
 $$
 
 so that a product of two frame basis operators carries $i^2=-1$ and nothing further.
@@ -326,39 +326,39 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The identities the body cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}+\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
 
 **The four contraction sums.** The bodies of the corpus use four contraction sums of frame basis operators. With every index contracted through the sign vector $\varepsilon$,
 $$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\mu=4I_4,
+\sum_{\imath}\varepsilon_{\imath}\,\gamma_{\imath}\gamma_{\imath}=4I_4,
 \qquad
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,
+\sum_{\imath}\varepsilon_{\imath}\,\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha,
 $$
 $$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,
+\sum_{\imath}\varepsilon_{\imath}\,\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,
 \qquad
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=+2\gamma_\alpha\gamma_\beta\gamma_\gamma .
+\sum_{\imath}\varepsilon_{\imath}\,\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_{\imath}=+2\gamma_\alpha\gamma_\beta\gamma_\gamma .
 $$
-They are fixed by the weight, because a basis operator's square is: with $i^2=-1$, $\left(iL_aR_b\right)^2=-L_{a^2}R_{b^2}$, and each of $a^2$ and $b^2$ is $\pm e_t$. Without the weight only the first keeps a closed form, the unweighted sum of the four squares being $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, one $+1$ and three $-1$.
+They are fixed by the weight, because a basis operator's square is: with $i^2=-1$, $\left(iL_aR_b\right)^2=-L_{a^2}R_{b^2}$, and each of $a^2$ and $b^2$ is $\pm e_t$. Without the weight only the first keeps a closed form, the unweighted sum of the four squares being $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=-2I_4$, one $+1$ and three $-1$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -376,7 +376,7 @@ e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W ,
 $$
 all hold in the standard theory and were verified as identities with the standard inputs ($v=246.22$ GeV from $G_F$); the measured masses, $M_W=80.377$ GeV and $M_Z=91.1876$ GeV, differ from the tree-level expressions by the radiative correction. The framework's abelian Higgs mechanism gives a mass $M_A=\kappa v$ to the central direction, and the Stueckelberg mechanism gives an invariant mass to the abelian direction without a potential; neither reaches the charged W's, because the framework's scalar is central and its covariant kinetic term carries no adjoint action on the charged directions. An adjoint scalar would give a mass of order $gv$, not $gv/2$; the observed factor of one-half requires the doublet, that is a Lorentz scalar in the fundamental of the compact factor, and the algebra's Lorentz-scalar carriers hold only the singlet and the adjoint, so the doublet is not available.
 
-The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Couplings*, which reads the down field on its $L$ part only, and the framework's gauge actions — the central phase, the adjoint action on the material sector, and left multiplication — are vector-like, so none of them supplies the asymmetric assignment; the companion article on chiral fermions establishes the obstruction for a central action and records the non-central case as the open question. The W's mass and its chiral coupling are therefore imported, while its carrier, its charge, its polarizations and its self-couplings are supplied.
+The charged current is chiral, $J^{+}_{\imath}$ of §*The Currents and the Self-Couplings*, which reads the down field on its $L$ part only, and the framework's gauge actions — the central phase, the adjoint action on the material sector, and left multiplication — are vector-like, so none of them supplies the asymmetric assignment; the companion article on chiral fermions establishes the obstruction for a central action and records the non-central case as the open question. The W's mass and its chiral coupling are therefore imported, while its carrier, its charge, its polarizations and its self-couplings are supplied.
 
 ## Summary of Notation
 
@@ -387,7 +387,7 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}$ | The centre of the algebra; the abelian factor |
-| $\tilde{Ξ}\mapsto i\tilde{Ξ}\vec e_x$; $\tilde{Ξ}\mapsto i\tilde{Ξ}\vec e_\mu\vec e_{\mathrm{spt}(\mu)}$ with $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$; $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ | The frame basis operators, written as actions on a field: the time basis operator, a generator basis operator, and the fifth basis operator whose two values are the chirality |
+| $\tilde{Ξ}\mapsto i\tilde{Ξ}\vec e_x$; $\tilde{Ξ}\mapsto i\tilde{Ξ}\vec e_{\imath}\vec e_{\mathrm{spt}(\imath)}$ with $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$; $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ | The frame basis operators, written as actions on a field: the time basis operator, a generator basis operator, and the fifth basis operator whose two values are the chirality |
 | $\tilde{Ξ}_{\mathrm L}=\tfrac12(\tilde{Ξ}+i\tilde{Ξ}\vec e_z)$, $\tilde{Ξ}_{\mathrm R}=\tfrac12(\tilde{Ξ}-i\tilde{Ξ}\vec e_z)$ | The two values of the chirality subscript: $L$ is the $-1$ value of $\mathsf{V}_{\mathrm{vol}}$, $R$ the $+1$ value |
 | $\tilde{Ξ}^{\dagger}i\vec e_x$, and $\mathrm{Sc}(\tilde{Ξ}^*iX\vec e_x)$ for its pairing with an element $X$ | Dirac adjoint; a pairing of two fields, with its right factor written in position |
 | $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ | Compact factor, real dimension four |
@@ -397,21 +397,21 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $\kappa=\frac{2\pi ϙ}{h}$ | Framework gauge coupling |
 | $\tilde S_{\Psi,\mathrm{adj},3}=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, $iT_3=\tfrac12i\vec e_z$ | Cartan generator of the adjoint action |
 | $W^\pm\leftrightarrow \vec e_x\pm i\vec e_y$, $\tilde S_{\Psi,\mathrm{adj},3} W^\pm=\pm W^\pm$ | Charged directions and their eigenvalues |
-| $Z_\mu=\cos\theta_W W_{\mu 3}-\sin\theta_W B_\mu$, $A_\mu=\sin\theta_W W_{\mu 3}+\cos\theta_W B_\mu$ | Neutral mixing |
+| $Z_{\imath}=\cos\theta_W W_{\imath 3}-\sin\theta_W B_{\imath}$, $A_{\imath}=\sin\theta_W W_{\imath 3}+\cos\theta_W B_{\imath}$ | Neutral mixing |
 | $\tan\theta_W=g_{\mathrm Y}/g$ | Weinberg angle |
 | $M_W=gv/2$, $M_Z=M_W/\cos\theta_W$, $M_\gamma=0$ | Tree-level masses |
 | $\rho=M_W^2/(M_Z^2\cos^2\theta_W)=1$ | Tree-level relation for a doublet |
 | $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ | Electromagnetic coupling |
 | $v=( \sqrt{2}G_F)^{-1/2}=246.22$ GeV | Electroweak scale |
 | $M_A=\kappa v=\frac{2\pi ϙ\,v}{h}$ | Framework abelian mass from the central scalar |
-| $J^{+}_\mu=\sum_{\text{doublets}}\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm u}^*\,i\,(i\vec e_\mu\tilde{Ξ}_{\mathrm d,\mathrm L}\vec e_{\mathrm{spt}(\mu)})\vec e_x\big)$ | Charged current (chiral) |
-| $J_{Z\mu}=\sum_f\mathrm{Sc}\big(f^{*}\,i\,(i\vec e_\mu(T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_Wf)\vec e_{\mathrm{spt}(\mu)})\vec e_x\big)$ | Neutral current |
-| $\mathcal{L}_3\sim\kappa\sum_{a,b,c}f_{abc}(\partial\mathcal{A}_{\nu a}/\partial R_\mu-\partial\mathcal{A}_{\mu a}/\partial R_\nu)\mathcal{A}_{\mu b}\mathcal{A}_{\nu c}$, $\mathcal{L}_4\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\mu a}\mathcal{A}_{\nu b}\mathcal{A}_{\mu c}\mathcal{A}_{\nu d}$ | Trilinear and quartic self-couplings, derivative pair antisymmetrized |
-| $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12M^2\sum_\mu V_\mu V_\mu$ | Proca Lagrangian of a massive vector $V$; $\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}=0$ |
-| $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\mathcal{P}_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/M^2$ | Polarization completeness, $\mathcal{P}$ the transverse sum |
-| $\delta_{\mu\nu}$ | The unit metric of *Frame and Metric Conventions*, $(1,1,1,1)$ on the four $Q_\mu$, the one metric the displays use |
-| $W^\pm_{\mu\nu}$, $Z_{\mu\nu}$, $A_{\mu\nu}$ | Field strengths of the charged, neutral massive and electromagnetic fields |
-| $a,b,c$; $\mu,\nu$ | Internal isospin and spacetime indices, written low; every contraction over them is an explicit sum |
+| $J^{+}_{\imath}=\sum_{\text{doublets}}\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm u}^*\,i\,(i\vec e_{\imath}\tilde{Ξ}_{\mathrm d,\mathrm L}\vec e_{\mathrm{spt}(\imath)})\vec e_x\big)$ | Charged current (chiral) |
+| $J_{Z\imath}=\sum_f\mathrm{Sc}\big(f^{*}\,i\,(i\vec e_{\imath}(T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_Wf)\vec e_{\mathrm{spt}(\imath)})\vec e_x\big)$ | Neutral current |
+| $\mathcal{L}_3\sim\kappa\sum_{a,b,c}f_{abc}(\partial\mathcal{A}_{\jmath a}/\partial R_{\imath}-\partial\mathcal{A}_{\imath a}/\partial R_{\jmath})\mathcal{A}_{\imath b}\mathcal{A}_{\jmath c}$, $\mathcal{L}_4\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\imath a}\mathcal{A}_{\jmath b}\mathcal{A}_{\imath c}\mathcal{A}_{\jmath d}$ | Trilinear and quartic self-couplings, derivative pair antisymmetrized |
+| $-\tfrac14\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}-\tfrac12M^2\sum_{\imath} V_{\imath} V_{\imath}$ | Proca Lagrangian of a massive vector $V$; $\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}=0$ |
+| $\sum_r\varepsilon_{r\imath}\varepsilon_{r\jmath}=\mathcal{P}_{\imath\jmath}=\delta_{\imath\jmath}+p_{\imath} p_{\jmath}/M^2$ | Polarization completeness, $\mathcal{P}$ the transverse sum |
+| $\delta_{\imath\jmath}$ | The unit metric of *Frame and Metric Conventions*, $(1,1,1,1)$ on the four $Q_{\imath}$, the one metric the displays use |
+| $W^\pm_{\imath\jmath}$, $Z_{\imath\jmath}$, $A_{\imath\jmath}$ | Field strengths of the charged, neutral massive and electromagnetic fields |
+| $a,b,c$; ${\imath},\jmath$ | Internal isospin and spacetime indices, written low; every contraction over them is an explicit sum |
 
 ## Further Reading
 

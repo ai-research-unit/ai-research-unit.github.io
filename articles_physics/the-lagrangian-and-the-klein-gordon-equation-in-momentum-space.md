@@ -32,7 +32,7 @@ $$
 
 The phase carries the sign and the sign is quoted. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\omega r_t'-\vec k_\Phi\cdot\vec r$. On it $\partial/\partial r_t'\mapsto-i\omega$ and $\partial/\partial r_\eta\mapsto ik_\eta$, so $\Box_\Phi\mapsto k_t'^{2}-k_\Phi^{2}$, which is the parent's own computation and is used here without alteration.
 
-The potential is a constant element. Throughout, $\tilde M$ is a constant element of $\mathbb{B}$: Hermitian, $\tilde M=a\,e_t+i\vec v\cdot\vec e$ with $a$ and $\vec v$ real, or anti-Hermitian, $\tilde M=i\,a\,e_t+\vec v\cdot\vec e$. Its left multiplication $L(\tilde M)$ is complex-linear on the four-dimensional complex space $\mathbb{B}$, because $i$ is central, so it is a $4\times4$ complex matrix in the basis $e_\mu$ and its eigenvalues are ordinary complex eigenvalues.
+The potential is a constant element. Throughout, $\tilde M$ is a constant element of $\mathbb{B}$: Hermitian, $\tilde M=a\,e_t+i\vec v\cdot\vec e$ with $a$ and $\vec v$ real, or anti-Hermitian, $\tilde M=i\,a\,e_t+\vec v\cdot\vec e$. Its left multiplication $L(\tilde M)$ is complex-linear on the four-dimensional complex space $\mathbb{B}$, because $i$ is central, so it is a $4\times4$ complex matrix in the basis $e_{\imath}$ and its eigenvalues are ordinary complex eigenvalues.
 
 ### The Constant-Coefficient Licence
 

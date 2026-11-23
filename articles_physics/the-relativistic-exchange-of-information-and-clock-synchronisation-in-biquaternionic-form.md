@@ -362,12 +362,12 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector) |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$ | Speed of light (its vacuum value in the numbers quoted here) |
 | $\tilde R_\Phi = i r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
 | $\tilde{Q}_{BA} = \tilde{Q}_B-\tilde{Q}_A$ | Displacement from $A$ to $B$ |
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |
 | $\mathrm{Sc}$ | Scalar projection |
 | $\vec u_{\mathrm s}$ | Propagation direction |
 | $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{\mathrm{adv},t} = r'_t+\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |

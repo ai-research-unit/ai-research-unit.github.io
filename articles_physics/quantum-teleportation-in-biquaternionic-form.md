@@ -358,7 +358,7 @@ The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsi
 | $2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id},\epsilon})=2\,\mathrm{Sc}_1(\tilde\Pi_{\mathrm{id},\epsilon})=\tfrac12 e_t$ | Maximally mixed reduction |
 | $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}$ | The Born weight, as a scalar part |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

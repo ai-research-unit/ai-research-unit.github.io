@@ -12,7 +12,7 @@ Position in the block. This is the charged companion of [The Fourier Transform a
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_\mu+\frac{2\pi i\varkappa}{h}A_\mu$, and the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
+The charged companion's: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_{\imath}+\frac{2\pi i\varkappa}{h}A_{\imath}$, and the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
 
 $$
 \vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,

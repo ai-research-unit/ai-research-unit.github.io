@@ -15,9 +15,9 @@ Five problems are worked:
 **The operators, fixed once.** Every derivative in this exercise is the biquaternionic gradient
 
 $$
-\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
+\tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial R_{\imath}},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath\in\{t,x,y,z\}}\varepsilon_{\imath} e_{\imath}\frac{\partial}{\partial R_{\imath}},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 $$
@@ -38,7 +38,7 @@ $$
 \Box_\Phi=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2},
 $$
 
-and the pure part of the gradient is written $D_3=\sum_\eta\vec e_\eta\partial/\partial r_\eta$. Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{2\pi iqA_{\mu}}{h}$, and with it the gradient:
+and the pure part of the gradient is written $D_3=\sum_\eta\vec e_\eta\partial/\partial r_\eta$. Minimal coupling shifts each derivative, $\partial/\partial R_{\imath}\to\partial/\partial R_{\imath}-\frac{2\pi iqA_{\imath}}{h}$, and with it the gradient:
 
 $$
 \tilde\nabla_\Phi\longmapsto\tilde\nabla_\Phi-\frac{2\pi i\,q}{h}\tilde A_{\Phi},
@@ -279,12 +279,12 @@ which is the Pauli equation exactly as the parent reports it. The coefficient $1
 
 **Solution.**
 
-*Step 1: the substitution.* The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{2\pi iqA_{\mu}}{h}$; on the gradient it is $\tilde\nabla_\Phi\to\tilde\nabla_\Phi-\frac{2\pi i\,q\,\tilde{A}_{\Phi}}{h}$, with $A_\mu=(Ξ,-\vec A)$ in this mostly-minus metric, so that $\tilde A_{\Phi}=Ξ e_t-\vec A$. The time component gives
+*Step 1: the substitution.* The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial R_{\imath}\to\partial/\partial R_{\imath}-\frac{2\pi iqA_{\imath}}{h}$; on the gradient it is $\tilde\nabla_\Phi\to\tilde\nabla_\Phi-\frac{2\pi i\,q\,\tilde{A}_{\Phi}}{h}$, with $A_{\imath}=(Ξ,-\vec A)$ in this mostly-minus metric, so that $\tilde A_{\Phi}=Ξ e_t-\vec A$. The time component gives
 
 $$i\,\frac{h}{2\pi}\,c\frac{\partial}{\partial  r'_t}\ \longrightarrow\ i\,\frac{h}{2\pi}\,c\frac{\partial}{\partial  r'_t}-qΞ ,
 $$
 
-and the spatial components give $\vec\pi=p-q\vec A$, that is the pure part of the gradient becomes $D_3^A$ with $\sum_\eta\vec e_\eta\pi_\eta=-i\,\frac{h}{2\pi}\,D_{3}^{A}$. The electrostatic energy is collected in $V=qΞ$. The sign of the coupling is tied to the metric and to the convention for $A_\mu$; the mostly-plus convention often writes the opposite sign. Within this article the statement above is used throughout.
+and the spatial components give $\vec\pi=p-q\vec A$, that is the pure part of the gradient becomes $D_3^A$ with $\sum_\eta\vec e_\eta\pi_\eta=-i\,\frac{h}{2\pi}\,D_{3}^{A}$. The electrostatic energy is collected in $V=qΞ$. The sign of the coupling is tied to the metric and to the convention for $A_{\imath}$; the mostly-plus convention often writes the opposite sign. Within this article the statement above is used throughout.
 
 *Step 2: the commutator of the kinetic momenta.* With $p=-i\,\frac{h}{2\pi}\nabla$ and $\vec\nabla_\Phi=\sum_\eta\vec e_\eta\partial/\partial r_\eta$ the pure part of the gradient,
 

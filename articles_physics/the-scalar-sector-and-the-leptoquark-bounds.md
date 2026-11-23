@@ -35,7 +35,7 @@ Not established. The third field's potential is not under control, and *The Diqu
 
 1.1 The corpus's own result. A spin-zero field is a line in the state module, not an element of the algebra's vector part: [Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module](spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.html). The corpus's scalar is therefore a central object — it commutes with the rotors, it multiplies from both sides identically, and it is the one field whose two-sidedness is free.
 
-1.2 The frame. A generator is an element of $\operatorname{End}_{\mathbb C}(\mathbb B)$, a sum of the words $L_{e_\mu}R_{e_\nu}$; and the group acts on the carrier, the only space a $4\times4$ matrix acts on. The structures the frame's arguments use are the carrier, the canonical split $\mathbf 4=\mathbf 1\oplus\mathbf 3$, and the two-sided action. The scalar sector uses the first two and not the third. The $(\mathbf4,\mathbf1,\mathbf2)$ sits on the carrier's four dimensions and its vacuum points along the canonical line, which is why the leptoquarks and the $B-L$ direction appear in it at all. But its $\mathrm{SU}(2)_R$ index is a copy index, not an element of $\mathbb B$: nothing in the algebra distinguishes the two components of that doublet from any other pair. So the scalar sector is admitted exactly as far as the carrier and the split reach, and no further.
+1.2 The frame. A generator is an element of $\operatorname{End}_{\mathbb C}(\mathbb B)$, a sum of the words $L_{e_{\imath}}R_{e_{\jmath}}$; and the group acts on the carrier, the only space a $4\times4$ matrix acts on. The structures the frame's arguments use are the carrier, the canonical split $\mathbf 4=\mathbf 1\oplus\mathbf 3$, and the two-sided action. The scalar sector uses the first two and not the third. The $(\mathbf4,\mathbf1,\mathbf2)$ sits on the carrier's four dimensions and its vacuum points along the canonical line, which is why the leptoquarks and the $B-L$ direction appear in it at all. But its $\mathrm{SU}(2)_R$ index is a copy index, not an element of $\mathbb B$: nothing in the algebra distinguishes the two components of that doublet from any other pair. So the scalar sector is admitted exactly as far as the carrier and the split reach, and no further.
 
 1.3 The consequence. Every other sector has a partial translation: fermions as the sixteen, gauge fields as the twenty-one, scalars as the carrier and the split. No sector has the third item, the two-sided action, for its matter content — that is the chiral wall, and it is why every matter sector is written rather than derived. What the corpus adds here is a classification rather than a construction: it can say exactly which of the three structures each sector uses, and the scalar sector turns out to use two of them.
 
@@ -122,7 +122,7 @@ Three vertices. The third is the one that is measured.
 6.1 Quarks into leptons. A leptoquark couples one quark leg to one lepton leg:
 
 $$
-X_{\mu}:\quad q\to \ell,\qquad \bar q\to\bar\ell ,
+X_{\imath}:\quad q\to \ell,\qquad \bar q\to\bar\ell ,
 $$
 
 with the quantum numbers forcing $|\Delta B|=\tfrac13$ and $|\Delta L|=1$ per fermion leg. On the legs alone $B-L$ would change by $\mp\tfrac43$, and it does not: the $X$ carries that same $B-L=\pm\tfrac43$. So every vertex conserves $B-L$ exactly, which it must, because $\mathrm{U}(1)_{B-L}$ survives the first breaking and is still a gauge symmetry. The leptoquark violates $B$ and violates $L$ and conserves $B-L$ — exactly what a $B-L$ gauge boson does, since a boson of a gauged charge carries that charge and cannot change the total.
@@ -134,10 +134,10 @@ with the quantum numbers forcing $|\Delta B|=\tfrac13$ and $|\Delta L|=1$ per fe
 $$
 \mathcal M\propto\frac{g_4^2}{M_X^2},
 \qquad
-\mathcal B(K_L\to\mu e)\ \propto\ \frac{g_4^{4}\,\lvert U_{de}U_{s\mu}\rvert^{2}}{M_X^{4}}f_K^2m_K .
+\mathcal B(K_L\to\mu e)\ \propto\ \frac{g_4^{4}\,\lvert U_{de}U_{s\imath}\rvert^{2}}{M_X^{4}}f_K^2m_K .
 $$
 
-Because it is a tree-level flavour-changing process in a neutral meson with no loop suppression, the bound is severe, and it is a coupling statement. The measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ is converted into a bound on $M_X$ using $g_4^2=4\pi\alpha_s(M_X)$, a kaon decay constant, the generator normalisation $\operatorname{tr}T^{A}T^{B}=\tfrac12\delta^{AB}$ and the rate $g_4^{4}\lvert U_{de}U_{s\mu}\rvert^{2}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$.
+Because it is a tree-level flavour-changing process in a neutral meson with no loop suppression, the bound is severe, and it is a coupling statement. The measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ is converted into a bound on $M_X$ using $g_4^2=4\pi\alpha_s(M_X)$, a kaon decay constant, the generator normalisation $\operatorname{tr}T^{A}T^{B}=\tfrac12\delta^{AB}$ and the rate $g_4^{4}\lvert U_{de}U_{s\imath}\rvert^{2}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$.
 
 Not derived here. It depends on the leptoquark chirality and on the hadronic matrix element, and it is a number produced by a coupling. It is quoted, with its inputs and its spread, in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html); what this article supplies is the channel, its quantum numbers, and the reason the channel is not loop-suppressed.
 
@@ -193,7 +193,7 @@ The suppression is $M_X^{-6}$ and not $M_X^{-2}$, and that is six powers of a sc
 
 9.1 The chirality of the coupling. A vector leptoquark couples to both chiralities and a scalar one to one; the $K_L\to\mu e$ amplitude depends on which, and the bound moves by a factor of about two.
 
-9.2 The hadronic matrix element. $\langle\mu e|(\bar s\gamma^\mu d)|K_L\rangle$ is a lattice-and-decay-constant object, and its uncertainty propagates as a fourth root into $M_X$.
+9.2 The hadronic matrix element. $\langle\mu e|(\bar s\gamma^{\imath} d)|K_L\rangle$ is a lattice-and-decay-constant object, and its uncertainty propagates as a fourth root into $M_X$.
 
 9.3 First-generation coupling. In the minimal frame it does, because the $\mathrm{SU}(4)$ is generation-blind. A frame with generation-dependent leptoquark couplings could suppress $K_L\to\mu e$ and evade the bound — and that is a modification of the frame, not of its group.
 

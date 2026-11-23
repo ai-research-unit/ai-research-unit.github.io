@@ -291,7 +291,7 @@ The one genuinely new object in the source's programme is not a change of basis 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas of this section are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and they are **basis operators**, not elements. The section of the same name in *The Number Systems as Clifford Algebras* uses the word for the **elements** $i\vec e_\eta$; here it names the basis operators that represent those elements on the Dirac module. The module is what tells the two apart, and the basis operators act on it while the elements are multiplied. In the corpus's notation they are
 
@@ -316,13 +316,13 @@ $$
 Their anticommutation relations, their chirality and their volume product are
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t},
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 \qquad
 \gamma_5^{2}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t},
 \qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 \qquad
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}.
 $$
@@ -330,13 +330,13 @@ $$
 In the axis-free display:
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t},
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 \qquad
 \gamma_5^{2}=L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t},
 \qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 \qquad
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}.
 $$
@@ -383,7 +383,7 @@ a single equation on $\mathbb{B}$ whose left side is one-sided and whose mass te
 
 The paravector reading supplies the one-sided half: a paravector multiplying from the left is a basis operator $L_p$, and the whole of the boost rule is one-sided. What it does not supply is the doubling. A chirality is a side, and a sign is available on any carrier a basis operator acts on: a basis operator separates that carrier into two eigenspaces when it squares to the identity, and it does so because it is an involution, not because it anticommutes with anything. Anticommutation is a property of a pair of basis operators and not a condition a chirality has to meet, and as a criterion it is empty: it would have to hold against $L(e_t)=\mathrm I$, and only the zero operator anticommutes with the identity. The pseudoscalar of the algebra of physical space is the central $i$; it squares to $-1$, multiplies every element by the same scalar, and separates nothing. The two objects are often confused, and the confusion has a visible cause: in the basis operator formulation $\gamma_5^{2}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ while $\gamma_5$ anticommutes with the four generating basis operators, and in the element formulation $i^2=-e_t$ while $i$ commutes with everything. A central scalar and a side cannot be the same object, and it is the reason the paravector literature writes one Dirac equation where the basis operator formulation writes two. The full account is in *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, §*The Two Equations of the Corpus*.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

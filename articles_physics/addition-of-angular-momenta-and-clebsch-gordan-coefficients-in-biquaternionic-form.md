@@ -60,7 +60,7 @@ $$
 \tilde S_{\Psi,\eta}=\frac{h}{4\pi}\,i\vec e_\eta\in\mathbb{B}_{\Psi},
 $$
 
-with $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}$ following from the quaternion product rule $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\sum_\lambda\epsilon_{\mu\nu\lambda}\vec e_\lambda$ together with $i^2=-1$. The ladder combinations are
+with $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}$ following from the quaternion product rule $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\sum_\lambda\epsilon_{\imath\jmath\lambda}\vec e_\lambda$ together with $i^2=-1$. The ladder combinations are
 
 $$
 \tilde S_{\Psi,\pm}=\tilde S_{\Psi,1}\pm  i\tilde S_{\Psi,2}=\frac{h}{4\pi}\left(i\vec e_x\mp  \vec e_y\right),
@@ -129,7 +129,7 @@ so that $\mathrm{Tr}\bigl(\mathsf M_2(e_t)\otimes\mathsf M_2(e_t)\bigr)=4$. A pr
 
 $$
 P_{\vec u_m}\otimes P_{\vec u}
-=\tfrac14\left(e_t\otimes e_t+i\vec u_{m,\mu}\vec e_\mu\otimes e_t+i e_t\otimes\vec u_\nu\vec e_\nu-\vec u_{m,\mu}\vec u_\nu\,\vec e_\mu\otimes\vec e_\nu\right),
+=\tfrac14\left(e_t\otimes e_t+i\vec u_{m,\imath}\vec e_{\imath}\otimes e_t+i e_t\otimes\vec u_{\jmath}\vec e_{\jmath}-\vec u_{m,\imath}\vec u_{\jmath}\,\vec e_{\imath}\otimes\vec e_{\jmath}\right),
 $$
 
 which is Hermitian of trace one; the four product idempotents of the spin-$\tfrac12$ basis are $\tilde\Pi_{\mathrm{id}}(\pm\vec u_z)\otimes \tilde\Pi_{\mathrm{id}}(\pm\vec u_z)$.

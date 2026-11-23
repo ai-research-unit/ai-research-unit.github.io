@@ -101,18 +101,18 @@ $$
 They satisfy the Clifford relations, with the sign vector $\varepsilon=(1,-1,-1,-1)$.
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}\mathrm I_4,\qquad
 (\gamma_k)^2=-\mathrm I_4,\qquad
 \gamma_5^2=\mathrm I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 
 $$
-\operatorname{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\operatorname{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma} .
+\operatorname{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\operatorname{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma} .
 $$
 
-**The frame is not canonical.** If the generators satisfy the anticommutation relations and $S\in GL_4(\mathbb{C})$, then $S\gamma_\mu S^{-1}$ satisfy the same relations, so the frames form a homogeneous space under $GL_4(\mathbb{C})$, and the subgroup that preserves the span of the generators is the Clifford group, which acts on the frame by Lorentz transformations. The gamma set is one frame among a bundle of them.
+**The frame is not canonical.** If the generators satisfy the anticommutation relations and $S\in GL_4(\mathbb{C})$, then $S\gamma_{\imath} S^{-1}$ satisfy the same relations, so the frames form a homogeneous space under $GL_4(\mathbb{C})$, and the subgroup that preserves the span of the generators is the Clifford group, which acts on the frame by Lorentz transformations. The gamma set is one frame among a bundle of them.
 
 ### The Switch Between the Two Displays
 
@@ -352,7 +352,7 @@ The gamma section is a dictionary and not a derivation. The five operators are i
 | $\varepsilon=i\sigma_2$ | the conjugating matrix of the transpose at size two |
 | $C_{\Pi}$ | the switch to the axis-free frame, $\det C_{\Pi}=-\tfrac14$ |
 | $\gamma_0,\gamma_1,\gamma_2,\gamma_3,\gamma_5$ | the five frame operators of the gamma set |
-| $\varepsilon_\mu$ | the sign vector $(1,-1,-1,-1)$ of the frame operators |
+| $\varepsilon_{\imath}$ | the sign vector $(1,-1,-1,-1)$ of the frame operators |
 | $N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | the quaternionic norm |
 | $\mathsf C_Q$ | the diagonalising matrix of the element $\tilde Q$ |
 | $\rho_\pm$ | the spectral projectors of the element |

@@ -128,7 +128,7 @@ The direct sum is a statement about the **complexified** algebra. The real Loren
 
 ### Bivectors
 
-A Lorentz transformation's infinitesimal generator is a bivector $M_{\mu\nu}=-M_{\nu\mu}$, with six independent components: three $M_{0i}$ and three $M_{ij}$. The dictionary to the generators of this block is
+A Lorentz transformation's infinitesimal generator is a bivector $M_{\imath\jmath}=-M_{\jmath\imath}$, with six independent components: three $M_{0i}$ and three $M_{ij}$. The dictionary to the generators of this block is
 
 $$
 M_{0i}\longleftrightarrow K_i,\qquad M_{ij}\longleftrightarrow\epsilon_{ijk}J_k,
@@ -231,7 +231,7 @@ The two triples $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ each close with structu
 |---|---|
 | $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ | the two complex triples |
 | $J_{+\eta}$, $J_{-\eta}$ | their components |
-| $M_{\mu\nu}$ | the bivector generators, $M_{0i}=K_i$, $M_{ij}=\epsilon_{ijk}J_k$ |
+| $M_{\imath\jmath}$ | the bivector generators, $M_{0i}=K_i$, $M_{ij}=\epsilon_{ijk}J_k$ |
 | $\star$ | the Hodge star on bivectors, $\star^{2}=-1$ |
 | $\Pi_\pm=\tfrac12(1\mp i\star)$ | the self-dual and anti-self-dual projectors |
 | $(m,n)$ | the pair of half-integers labelling a representation |

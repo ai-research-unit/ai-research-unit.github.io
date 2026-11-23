@@ -26,18 +26,18 @@ The classical statement is fixed first, because the anomaly is the deviation fro
 
 ### The One Metric and the Declared Arena
 
-**The series has one metric.** It is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and it is the form of the algebra: the quaternionic norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ is its quadratic form. *Frame and Metric Conventions* fixes it, and no article of the series introduces a second one.
+**The series has one metric.** It is the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$ on the four $Q_{\imath}$, and it is the form of the algebra: the quaternionic norm $\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^2$ is its quadratic form. *Frame and Metric Conventions* fixes it, and no article of the series introduces a second one.
 
-**This article writes a second object, and declares it once.** A response to a local rescaling is a statement about a geometry that varies from point to point, and the unit metric is one geometry. The article therefore carries $g_{\mu\nu}$, the metric of the arena, written with no tilde and with both indices low. It enters the transcribed formulas and nothing else. It is not the algebra's form, it is not a second convention of the series, and no claim the framework makes in this article is a claim about $g$: every framework claim is a claim about the fibre of a biquaternion field or about the level-1 form. The declaration is the one *Conceptual Conventions* requires of an unpreferred object, and it is made here, before the first formula that carries $g$.
+**This article writes a second object, and declares it once.** A response to a local rescaling is a statement about a geometry that varies from point to point, and the unit metric is one geometry. The article therefore carries $g_{\imath\jmath}$, the metric of the arena, written with no tilde and with both indices low. It enters the transcribed formulas and nothing else. It is not the algebra's form, it is not a second convention of the series, and no claim the framework makes in this article is a claim about $g$: every framework claim is a claim about the fibre of a biquaternion field or about the level-1 form. The declaration is the one *Conceptual Conventions* requires of an unpreferred object, and it is made here, before the first formula that carries $g$.
 
 ### The Response
 
 **The response.** For an action $S[Ξ;g]$, a **rescaling** of the arena is a local stretch
 
 $$
-g_{\mu\nu}\;\longrightarrow\;\exp(2\sigma(x))\,g_{\mu\nu},
+g_{\imath\jmath}\;\longrightarrow\;\exp(2\sigma(x))\,g_{\imath\jmath},
 \qquad
-\delta_\sigma g_{\mu\nu}=2\sigma\,g_{\mu\nu},
+\delta_\sigma g_{\imath\jmath}=2\sigma\,g_{\imath\jmath},
 $$
 
 and the response is the coefficient of the stretch in the variation of the action,
@@ -45,12 +45,12 @@ and the response is the coefficient of the stretch in the variation of the actio
 $$
 \delta_\sigma S=\int d^dx\,\sqrt{|g|}\;\sigma\,\mathcal{A}_{\mathrm{cfa}},
 \qquad
-\mathcal{A}_{\mathrm{cfa}}=\sum_{\mu,\nu}g_{\mu\nu}T_{\mu\nu},
+\mathcal{A}_{\mathrm{cfa}}=\sum_{\imath,\jmath}g_{\imath\jmath}T_{\imath\jmath},
 $$
 
-with $T_{\mu\nu}$ the stress tensor, taken with both indices low and varying the components $g_{\mu\nu}$ with no index raised. On an arena whose metric is diagonal in the coordinates in use, the second display is the sum of the four diagonal entries, $\sum_\mu g_{\mu\mu}T_{\mu\mu}$, each carrying its own weight.
+with $T_{\imath\jmath}$ the stress tensor, taken with both indices low and varying the components $g_{\imath\jmath}$ with no index raised. On an arena whose metric is diagonal in the coordinates in use, the second display is the sum of the four diagonal entries, $\sum_{\imath} g_{\imath\imath}T_{\imath\imath}$, each carrying its own weight.
 
-**The same number has a matrix name, and it is not used here.** The diagonal sum of the matrix of components $T_{\mu\nu}$ is what a text trained on matrices calls the trace of the stress tensor. That use is admitted by *Algebra and Element Conventions*, because the carrier there is a matrix of components and the matrix stands in the same formula. This article writes the sum instead: the object it varies is an action, the arena's metric is diagonal in the coordinates it uses, so the sum reduces to the four diagonal weights, and it names them. No trace of an element of $\mathbb{B}$ is written anywhere in these pages, nor of an operator, nor of a state: an element is read in $\mathrm{Sc}$, and the state pairing is written $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde H_\Psi)$.
+**The same number has a matrix name, and it is not used here.** The diagonal sum of the matrix of components $T_{\imath\jmath}$ is what a text trained on matrices calls the trace of the stress tensor. That use is admitted by *Algebra and Element Conventions*, because the carrier there is a matrix of components and the matrix stands in the same formula. This article writes the sum instead: the object it varies is an action, the arena's metric is diagonal in the coordinates it uses, so the sum reduces to the four diagonal weights, and it names them. No trace of an element of $\mathbb{B}$ is written anywhere in these pages, nor of an operator, nor of a state: an element is read in $\mathrm{Sc}$, and the state pairing is written $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde H_\Psi)$.
 
 **Weyl invariance is the vanishing of the response.** So $\mathcal{A}_{\mathrm{cfa}}=0$ is the statement that the classical action is invariant under the stretch, and the anomaly is the statement that the quantum effective action is not.
 
@@ -61,18 +61,18 @@ with $T_{\mu\nu}$ the stress tensor, taken with both indices low and varying the
 **The improvement term.** For a scalar the canonical tensor is not response-free even for the massless action at the conformal coupling, and the improvement term
 
 $$
-T_{\mathrm{imp},\mu\nu}=T_{\mathrm{can},\mu\nu}+\zeta\big(g_{\mu\nu}\Box_\Phi-\nabla_\mu\nabla_\nu\big)\xi^2,
+T_{\mathrm{imp},\imath\jmath}=T_{\mathrm{can},\imath\jmath}+\zeta\big(g_{\imath\jmath}\Box_\Phi-\nabla_{\imath}\nabla_{\jmath}\big)\xi^2,
 \qquad
 \zeta=\frac{d-2}{4(d-1)},
 $$
 
-produces $\mathcal{A}_{\mathrm{cfa}}=0$ on shell, the bracket reducing in flat coordinates to $\delta_{\mu\nu}\Box_\Phi-\partial^2/\partial R_\mu\partial R_\nu$, with $\Box_\Phi$ read on the flat arena. The arithmetic is short. The added response is $\zeta(d-1)\Box_\Phi\xi^2$, which on shell is $2\zeta(d-1)\sum_\mu(\partial\xi/\partial R_\mu)^2$, because $\Box_\Phi\xi^2=2\sum_\mu(\partial\xi/\partial R_\mu)^2+2\xi\,\Box_\Phi\xi$ and the second term vanishes for a massless field, while the canonical response is $-\tfrac{d-2}{2}\sum_\mu(\partial\xi/\partial R_\mu)^2$. The value $\zeta=(d-2)/(4(d-1))$ cancels the two, and gives $\zeta=\tfrac16$ at $d=4$.
+produces $\mathcal{A}_{\mathrm{cfa}}=0$ on shell, the bracket reducing in flat coordinates to $\delta_{\imath\jmath}\Box_\Phi-\partial^2/\partial R_{\imath}\partial R_{\jmath}$, with $\Box_\Phi$ read on the flat arena. The arithmetic is short. The added response is $\zeta(d-1)\Box_\Phi\xi^2$, which on shell is $2\zeta(d-1)\sum_{\imath}(\partial\xi/\partial R_{\imath})^2$, because $\Box_\Phi\xi^2=2\sum_{\imath}(\partial\xi/\partial R_{\imath})^2+2\xi\,\Box_\Phi\xi$ and the second term vanishes for a massless field, while the canonical response is $-\tfrac{d-2}{2}\sum_{\imath}(\partial\xi/\partial R_{\imath})^2$. The value $\zeta=(d-2)/(4(d-1))$ cancels the two, and gives $\zeta=\tfrac16$ at $d=4$.
 
 **Why the improvement is recorded.** It fixes the normalisation against which the quantum response is measured. A calculation that omits the improvement reports the canonical value and calls it the anomaly, and the two differ by a term fixed by the action.
 
 ### The Material Reading of the Flat Arena
 
-**The flat arena.** The flat metric is $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and the level-2 reading of the level-1 form is the material one, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, as *Frame and Metric Conventions* fixes. The response $\mathcal{A}_{\mathrm{cfa}}$ is then a level-2 number, four diagonal entries summed with their weights, while the statement it makes is level-1: the form was stretched.
+**The flat arena.** The flat metric is $\delta_{\imath\jmath}=(1,1,1,1)$ on the four $Q_{\imath}$, and the level-2 reading of the level-1 form is the material one, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, as *Frame and Metric Conventions* fixes. The response $\mathcal{A}_{\mathrm{cfa}}$ is then a level-2 number, four diagonal entries summed with their weights, while the statement it makes is level-1: the form was stretched.
 
 **Two operations that are not one.** A rescaling of the level-1 form is not a change of the $i r'_t$ assignment. The first multiplies the form by a function of the point. The second writes the time coefficient on the material sector, once, and the minus of the interval is $i^2=-1$ in that coefficient. The section on the three levels makes the distinction precise, and it is the place where the two are most easily mixed.
 
@@ -93,7 +93,7 @@ with $S^{(2)}$ the second variation of the classical action about the background
 **The response of the one-loop action.** Its response to a stretch is
 
 $$
-\mathcal{A}_{\mathrm{cfa}}\big|_{\text{one loop}}=\frac{2}{\sqrt{|g|}}\sum_{\mu,\nu}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}},
+\mathcal{A}_{\mathrm{cfa}}\big|_{\text{one loop}}=\frac{2}{\sqrt{|g|}}\sum_{\imath,\jmath}g_{\imath\jmath}\frac{\delta\Gamma_1}{\delta g_{\imath\jmath}},
 $$
 
 and the anomaly is the statement that this is non-zero for a classically invariant theory. In the path-integral language the same statement is that the measure $\mathcal{D}Ξ$ is not invariant under the stretch, or equivalently that the regulated determinant is not. The two languages agree, and both are standard (Capper and Duff 1974; Deser, Duff and Isham 1976; Duff 1994).
@@ -194,7 +194,7 @@ $$
 \boxed{\;\mathcal{A}_{\mathrm{cfa}}=\frac{1}{(4\pi)^{2}}\bigl(c\,W^{2}-a\,E_{4}+b\,\Box_\Phi R\bigr)\;},
 $$
 
-with $E_4=\sum_{\mu,\nu,\rho,\sigma}R_{\mu\nu\rho\sigma}R_{\mu\nu\rho\sigma}-4\sum_{\mu,\nu}R_{\mu\nu}R_{\mu\nu}+R^{2}$ the Euler density and $W^2=\sum_{\mu,\nu,\rho,\sigma}W_{\mu\nu\rho\sigma}W_{\mu\nu\rho\sigma}$ the Weyl square. The minus on the Euler density is the convention of Duff's review, and a text that writes $+aE_4$ defines $a$ with the opposite sign.
+with $E_4=\sum_{\imath,\jmath,\rho,\sigma}R_{\imath\jmath\rho\sigma}R_{\imath\jmath\rho\sigma}-4\sum_{\imath,\jmath}R_{\imath\jmath}R_{\imath\jmath}+R^{2}$ the Euler density and $W^2=\sum_{\imath,\jmath,\rho,\sigma}W_{\imath\jmath\rho\sigma}W_{\imath\jmath\rho\sigma}$ the Weyl square. The minus on the Euler density is the convention of Duff's review, and a text that writes $+aE_4$ defines $a$ with the opposite sign.
 
 **The coefficients.** In that convention the coefficients are rational functions of the field content,
 
@@ -228,7 +228,7 @@ The one metric is read at three levels in the series, and the rescaling is where
 
 ### Level 1
 
-**The form.** The level-1 form is the biquaternion norm of *Frame and Metric Conventions*, whose metric is $\delta_{\mu\nu}$. A rescaling is a change of its normalisation, and the response measures the change. The stretch is not a change of the algebra, of the basis or of the sector split: it changes the one form, and that form is the only object the definition of the anomaly varies.
+**The form.** The level-1 form is the biquaternion norm of *Frame and Metric Conventions*, whose metric is $\delta_{\imath\jmath}$. A rescaling is a change of its normalisation, and the response measures the change. The stretch is not a change of the algebra, of the basis or of the sector split: it changes the one form, and that form is the only object the definition of the anomaly varies.
 
 ### Level 2
 
@@ -270,7 +270,7 @@ Two details of the derivation and one structural fact about the mass are recorde
 
 ### The Chiral Pair
 
-**The derivatives.** The gradient and its quaternion conjugate are fixed in *Operator and Calculus Conventions*, §*The Gradient*, and $\Box_\Phi$ is the scalar composition of the two. The massive dynamics is the chiral pair of *The Dirac Equation in Biquaternionic Form*, and its two letters are the two values of the chirality: $\tilde{Ξ}_{L}$ is the $-1$ part and $\tilde{Ξ}_{R}$ the $+1$ part. No one-field first-order massive equation stands beside the pair, because the square of the gradient is not scalar. In the coordinates $Q_\mu$ it is
+**The derivatives.** The gradient and its quaternion conjugate are fixed in *Operator and Calculus Conventions*, §*The Gradient*, and $\Box_\Phi$ is the scalar composition of the two. The massive dynamics is the chiral pair of *The Dirac Equation in Biquaternionic Form*, and its two letters are the two values of the chirality: $\tilde{Ξ}_{L}$ is the $-1$ part and $\tilde{Ξ}_{R}$ the $+1$ part. No one-field first-order massive equation stands beside the pair, because the square of the gradient is not scalar. In the coordinates $Q_{\imath}$ it is
 
 $$
 \tilde\nabla_\Phi^{2}=\frac{\partial^{2}}{\partial R_t^{2}}-\Delta_\Phi+2\sum_\eta\vec e_\eta\frac{\partial^{2}}{\partial R_t\,\partial R_\eta},
@@ -301,7 +301,7 @@ where the mixed term survives because $e_t$ commutes with the spatial units, and
 
 **Standard, and transcribed.**
 
-- The definition of $T_{\mu\nu}$ as the variation of the action, the improvement term, and the classical vanishing of the response.
+- The definition of $T_{\imath\jmath}$ as the variation of the action, the improvement term, and the classical vanishing of the response.
 - The one-loop response as the variation of $\log\det S^{(2)}$; the heat-kernel expansion; the identification of $a_{d/2}$ as the anomalous coefficient.
 - The values $c_{\mathrm{2d}}=1$ per real scalar in two dimensions, and the four-dimensional coefficients $a$ and $c$ for scalar, fermion and vector fields.
 - The relation $\mathcal{A}_{\mathrm{cfa}}\supset\frac{\beta}{2g}O$, the scheme dependence of $\Box_\Phi R$, and the one-loop exactness of the anomaly.
@@ -323,7 +323,7 @@ where the mixed term survives because $e_t$ commutes with the spatial units, and
 The conformal anomaly in biquaternionic form is the standard anomaly with the framework's count of the fibre. The classical response vanishes for an invariant action, and the one-loop effective action $\Gamma_1=\tfrac12\log\det S^{(2)}[\xi;g]$ has the conformal variation
 
 $$
-\boxed{\;\mathcal{A}_{\mathrm{cfa}}\big|_{\text{one loop}}=\frac{2}{\sqrt{|g|}}\sum_{\mu,\nu}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}}=\frac{1}{(4\pi)^{d/2}}\,a_{d/2}\;},
+\boxed{\;\mathcal{A}_{\mathrm{cfa}}\big|_{\text{one loop}}=\frac{2}{\sqrt{|g|}}\sum_{\imath,\jmath}g_{\imath\jmath}\frac{\delta\Gamma_1}{\delta g_{\imath\jmath}}=\frac{1}{(4\pi)^{d/2}}\,a_{d/2}\;},
 $$
 
 proportional to the Seeley–DeWitt coefficient, which is local and one-loop exact. In two dimensions the response is $\frac{c_{\mathrm{2d}}}{24\pi}R$ with $c_{\mathrm{2d}}$ counting real components; in four dimensions it is $\frac{1}{(4\pi)^2}(cW^2-aE_4+b\Box_\Phi R)$ with $a$ and $c$ fixed by the field content. The framework's contribution is the dimension of the fibre: four complex, eight real, four per sector, with the leading coefficient four times the scalar one and the count checked by $\partial/\partial s\,\log\det(\mathrm{e}^{s}K)|_{s=0}=\dim K$. A rescaling rescales the level-1 form and nothing else. The regulation of the determinant, the curvature invariants and the coefficients of $E_4$ and $W^2$ are standard and transcribed.
@@ -338,18 +338,18 @@ The response is written as a sum over the diagonal of the matrix of components o
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^{2}=-e_t$ |
 | $i$ | Central scalar imaginary, $i^{2}=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric, the one metric of the series |
-| $g_{\mu\nu}$ | The arena's metric, declared once in this article; carried by the transcribed formulas and by nothing else |
-| $\sigma$ | The local parameter of a rescaling, $g_{\mu\nu}\to\exp(2\sigma)g_{\mu\nu}$ |
+| $\delta_{\imath\jmath}=(1,1,1,1)$ | The unit metric, the one metric of the series |
+| $g_{\imath\jmath}$ | The arena's metric, declared once in this article; carried by the transcribed formulas and by nothing else |
+| $\sigma$ | The local parameter of a rescaling, $g_{\imath\jmath}\to\exp(2\sigma)g_{\imath\jmath}$ |
 | $\mathcal{A}_{\mathrm{cfa}}$ | The conformal response, the coefficient of $\sigma$ in the variation of the action |
-| $T_{\mu\nu}=\frac{2}{\sqrt{|g|}}\frac{\delta S}{\delta g_{\mu\nu}}$ | Stress tensor, both indices low |
-| $\mathcal{A}_{\mathrm{cfa}}\big|_{\text{class}}=\sum_{\mu,\nu}g_{\mu\nu}T_{\mu\nu}$ | The classical response, the diagonal sum of the matrix of components |
+| $T_{\imath\jmath}=\frac{2}{\sqrt{|g|}}\frac{\delta S}{\delta g_{\imath\jmath}}$ | Stress tensor, both indices low |
+| $\mathcal{A}_{\mathrm{cfa}}\big|_{\text{class}}=\sum_{\imath,\jmath}g_{\imath\jmath}T_{\imath\jmath}$ | The classical response, the diagonal sum of the matrix of components |
 | $\Gamma_1=\tfrac12\log\det S^{(2)}$ | One-loop effective action whose variation is the anomaly |
 | $\lambda$ | An eigenvalue of $S^{(2)}$ on the field space, counted with its multiplicity |
 | $\sum_{\lambda}\mathrm{e}^{-\tau\lambda}$ | The heat kernel of $S^{(2)}$, as a sum over the spectrum |
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous response |
 | $\zeta=(d-2)/(4(d-1))$ | Improvement coupling; $\zeta=1/6$ at $d=4$ |
-| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | Quaternionic norm; $\dim_{\mathbb{C}}\mathbb{B}=4$ |
+| $\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$ | Quaternionic norm; $\dim_{\mathbb{C}}\mathbb{B}=4$ |
 | $\det L(a)=\langle a\rangle_{\natural}^{2}$ | Determinant of the left regular matrix; the count of the fibre is the exponent four |
 | $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde H_\Psi)$ | The state-and-observable pairing; a scalar part, not a determinant and not a count |
 | $2\,\mathrm{Sc}\tilde Q=2Q_t$ | The scalar part of one element with the factor of the $2\times2$ image |

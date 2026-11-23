@@ -137,10 +137,10 @@ Two structural remarks do belong to the model. The right-handed neutrino slot ex
 
 ## Lifetime: the One Relation Phase Space Computes
 
-A lifetime is the inverse width, $\tau=\frac{h}{2\pi \Gamma}$, and the width is fixed by the mass and by the open channels. For the muon and the tau the final state is the same, $\ell\to e\bar\nu_{\mathrm{neu},e}\nu_\ell$, and the parent mass is far above every threshold. The width then scales as the fifth power of the parent mass:
+A lifetime is the inverse width, $\tau=\frac{h}{2\pi \Gamma}$, and the width is fixed by the mass and by the open channels. For the muon and the tau the final state is the same, $\ell\to e\bar\nu_{\mathrm{neu},e}\jmath_\ell$, and the parent mass is far above every threshold. The width then scales as the fifth power of the parent mass:
 
 $$
-\frac{\Gamma(\tau\to e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\tau})}{\Gamma(\mu\to e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\mu})}=\left(\frac{m_\tau}{m_\mu}\right)^{5}.
+\frac{\Gamma(\tau\to e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\tau})}{\Gamma(\mu\to e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\imath})}=\left(\frac{m_\tau}{m_\mu}\right)^{5}.
 $$
 
 This is a statement the model predicts without knowing anything, and it is exact enough to fail, which is why it is worth checking.
@@ -157,7 +157,7 @@ $$
 =1.3486\times10^{6}.
 $$
 
-The numerator is a partial width and the denominator a total width, which is legitimate only because the muon has one channel, so its total width is its partial width to $e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\mu}$. The check uses the full precision values; the table rounds them to three figures.
+The numerator is a partial width and the denominator a total width, which is legitimate only because the muon has one channel, so its total width is its partial width to $e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\imath}$. The check uses the full precision values; the table rounds them to three figures.
 
 The two agree to $0.26$ parts in a thousand. The fifth power is confirmed, and what it confirms is that the lifetime difference between the muon and the tau is nothing but the mass difference. Two of the three handles are one handle.
 
@@ -181,7 +181,7 @@ A decay pattern is the mass column filtered through the conservation laws. Charg
 
 | particle | open channels | why so few, or so many |
 |---|---|---|
-| $\mu$ | $e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\mu}$ only | $m_\mu$ lies below every hadronic threshold |
+| $\mu$ | $e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\imath}$ only | $m_\mu$ lies below every hadronic threshold |
 | $\tau$ | $e\bar\nu_{\mathrm{neu}}\nu_{\mathrm{neu}}$, $\mu\bar\nu_{\mathrm{neu}}\nu_{\mathrm{neu}}$, $\pi\nu_{\mathrm{neu}}$, $\rho\nu_{\mathrm{neu}}$, $a_1\nu_{\mathrm{neu}}$, and more | $m_\tau$ lies above the two-pion threshold |
 | $t$ | $Wb$ only | the charged current is the only route, and $m_t>m_W+m_b$ |
 
@@ -229,7 +229,7 @@ This is the model's only sharp prediction in this sector, and it is a prediction
 Neutrino oscillation is the only measured change of flavour, and it exists because the neutrino mass matrix cannot be rotated away. For the charged leptons the rotation $V$ in $Y=U\operatorname{diag}(y)V^{\dagger}$ is a field redefinition of the Standard Model's own currents; in this frame it is one factor of the leptoquark mixing $K$. For the neutrinos the mass term is Majorana, so the same rotation leaves a physical residue:
 
 $$
-P(\nu_{\mathrm{neu},e}\to\nu_{\mathrm{neu},\mu})=\sin^{2}2\theta\,\sin^{2}\!\left(\frac{\Delta m^{2}L}{4E}\right).
+P(\nu_{\mathrm{neu},e}\to\nu_{\mathrm{neu},\imath})=\sin^{2}2\theta\,\sin^{2}\!\left(\frac{\Delta m^{2}L}{4E}\right).
 $$
 
 Read as a statement about this article's subject, the formula needs two things: a non-degenerate mass column, $\Delta m^{2}\neq0$, and a misaligned basis, $\theta\neq0$. Both are properties of the Yukawa matrix and of nothing else. Oscillation is therefore not an exception to the model's flavour blindness but the sharpest confirmation of it, since the blindness is exactly what makes the misalignment the only available source.

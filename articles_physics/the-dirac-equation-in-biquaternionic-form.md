@@ -47,7 +47,7 @@ $$
 \;}
 $$
 
-for a field of mass $m$. The gradient differentiates with respect to the coordinates $R_\mu$ and carries the unit of an inverse length, so the term it is equated to carries that unit as well: $m$ alone carries a mass, and $k_m$ carries the inverse length. The length $1/k_m=\frac{h}{2\pi (m\,c)}$ is the Compton length of the mass. The parameter $\alpha$ of the harmonic amplitude equation is an inverse length in both entries, and it writes them as $k_{t}^{\prime}$ and $k_m$. Here $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$ is the energy length.
+for a field of mass $m$. The gradient differentiates with respect to the coordinates $R_{\imath}$ and carries the unit of an inverse length, so the term it is equated to carries that unit as well: $m$ alone carries a mass, and $k_m$ carries the inverse length. The length $1/k_m=\frac{h}{2\pi (m\,c)}$ is the Compton length of the mass. The parameter $\alpha$ of the harmonic amplitude equation is an inverse length in both entries, and it writes them as $k_{t}^{\prime}$ and $k_m$. Here $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$ is the energy length.
 
 The field is one element $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ of $\mathbb{B}$, and its two parts are the two components that the subscript names. Each line applies the gradient to one component and equates the result to a multiple of the other: the gradient is off-diagonal in the pair, and $k_m$ is the coefficient that relates the two. The mass multiplies on the left and is central, so it keeps the value: it relates the two components without moving anything across.
 
@@ -123,7 +123,7 @@ The test is made on the coefficients of the element and returns a letter. Two va
 
 The gradient is an element of $\mathbb{B}$, and an element acts on the algebra by multiplication. Nothing about that action needs a basis: the equation says what the gradient does to the field, and the answer is another element. A basis enters only when numbers are wanted, and then the choice of basis is a coordinate choice that changes nothing in the operator — two bases give two lists of numbers for one action. The equation of this article is written in neither.
 
-The place where a basis does make a difference is the diagonal. An operator is diagonal in a basis when each basis element is carried into a multiple of itself. Of the sixteen basis operators $L_{e_\mu}R_{e_\nu}$ of the coefficient basis exactly four are diagonal, the four with $\mu=\nu$. The three spatial basis operators $L_{e_\eta}R_{e_\eta}$ send each basis element to a multiple of itself, $e_\nu\mapsto\pm e_\nu$, with the sign $-1$ where $e_\nu$ commutes with $e_\eta$ and $+1$ where it anticommutes; that is the eigenvalue $-1$ on $e_t$ and on the basis operator's own unit, and $+1$ on the other two. The fourth, $L_{e_t}R_{e_t}$, is the identity. No other basis operator carries all four basis elements into multiples of themselves. The set is $\{L_{e_\eta}R_{e_\eta}\}$, so a permutation of the three spatial units permutes the last three members of the set and leaves the set unchanged.
+The place where a basis does make a difference is the diagonal. An operator is diagonal in a basis when each basis element is carried into a multiple of itself. Of the sixteen basis operators $L_{e_{\imath}}R_{e_{\jmath}}$ of the coefficient basis exactly four are diagonal, the four with $\mu=\jmath$. The three spatial basis operators $L_{e_\eta}R_{e_\eta}$ send each basis element to a multiple of itself, $e_{\jmath}\mapsto\pm e_{\jmath}$, with the sign $-1$ where $e_{\jmath}$ commutes with $e_\eta$ and $+1$ where it anticommutes; that is the eigenvalue $-1$ on $e_t$ and on the basis operator's own unit, and $+1$ on the other two. The fourth, $L_{e_t}R_{e_t}$, is the identity. No other basis operator carries all four basis elements into multiples of themselves. The set is $\{L_{e_\eta}R_{e_\eta}\}$, so a permutation of the three spatial units permutes the last three members of the set and leaves the set unchanged.
 
 The set therefore names no direction. An axis is not a property of the algebra; it is a property of the frame that is declared, and the frame and its metric are fixed in *Frame and Metric Conventions*. This article states the point once, here, and does not use it again: the equation names no unit and no axis, and the five basis operators printed in *The Legacy Pauli Gamma Formulation* are printed there for comparison with the older display.
 
@@ -232,7 +232,7 @@ One quaternionic solution therefore carries two Dirac solutions. This doubling i
 
 $$
 \partial/\partial r'_t|F|^2 = -\frac{h}{2\pi}\bigl[(\vec\nabla_\Phi F^{\natural})F + \bar{F}\,(\vec\nabla_\Phi F)\bigr],
-\qquad |F|^2 := \langle  F\rangle_{*}  = \sum_{\mu=0}^{3}|F_\mu|^2,
+\qquad |F|^2 := \langle  F\rangle_{*}  = \sum_{\imath=0}^{3}|F_{\imath}|^2,
 $$
 
 printed there in its own normalization, with $\frac{h}{2\pi}$ restored, and with the source's $\dagger$ read as the quaternionic conjugate $\natural$ and its $*$ as the coefficient bar. The equation of this section carries no $\frac{h}{2\pi}$, and the same pair gives the law in the units of this section,
@@ -242,7 +242,7 @@ $$
 = F\,\vec e_x\,(\vec\nabla_\Phi F)^{\natural} - (\vec\nabla_\Phi F)\,\vec e_x\,F^{\natural},
 $$
 
-which is the quaternionic form of the current-conservation equation of the Dirac field: the time derivative of the density on the left, and on the right the two terms that carry the spatial derivative, with the direction $\vec e_x$ of the operator in the place the source's $M_{i_1}$ occupies. Writing $A=F\,\vec e_x\,(\vec\nabla_\Phi F)^{\natural}$, the second term is $A^{\natural}$, so the right side is $A+A^{\natural}$ and is scalar. The mass cancels between the two terms: the operator gives the time derivative the mass part $-k_mF\vec e_z$, and $\vec e_z^{\natural}=-\vec e_z$ transmits it to $-k_mF\vec e_zF^{\natural}+k_mF\vec e_zF^{\natural}=0$. The law is therefore the same at $m=0$, and it was checked at residual $1.1\times10^{-15}$ over $100$ random real fields and again symbolically on a polynomial field. The density is the modulus $FF^{\natural}$. On the real representative it coincides with the Hermitian norm, $FF^{\natural}=\langle F\rangle_{*}=\sum_\mu F_\mu^2$, and that shared value is indefinite: what the pair conserves is a density, not a probability density. The definite Hermitian norm carries the probability reading only on the complex field, where the two norms differ.
+which is the quaternionic form of the current-conservation equation of the Dirac field: the time derivative of the density on the left, and on the right the two terms that carry the spatial derivative, with the direction $\vec e_x$ of the operator in the place the source's $M_{i_1}$ occupies. Writing $A=F\,\vec e_x\,(\vec\nabla_\Phi F)^{\natural}$, the second term is $A^{\natural}$, so the right side is $A+A^{\natural}$ and is scalar. The mass cancels between the two terms: the operator gives the time derivative the mass part $-k_mF\vec e_z$, and $\vec e_z^{\natural}=-\vec e_z$ transmits it to $-k_mF\vec e_zF^{\natural}+k_mF\vec e_zF^{\natural}=0$. The law is therefore the same at $m=0$, and it was checked at residual $1.1\times10^{-15}$ over $100$ random real fields and again symbolically on a polynomial field. The density is the modulus $FF^{\natural}$. On the real representative it coincides with the Hermitian norm, $FF^{\natural}=\langle F\rangle_{*}=\sum_{\imath} F_{\imath}^2$, and that shared value is indefinite: what the pair conserves is a density, not a probability density. The definite Hermitian norm carries the probability reading only on the complex field, where the two norms differ.
 
 ### The One-Sided and the Two-Sided Equation
 
@@ -339,7 +339,7 @@ $$
 \tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = \gamma^2\big(-c^2 + \vec v^2\big) = -c^2.
 $$
 
-This is the biquaternion form of the standard relativistic normalization $\sum_\mu\varepsilon_\mu v_\mu v_\mu = -c^2$.
+This is the biquaternion form of the standard relativistic normalization $\sum_{\imath}\varepsilon_{\imath} v_{\imath} v_{\imath} = -c^2$.
 
 ### The Four-Momentum
 
@@ -367,7 +367,7 @@ which is obtained by expanding $-m^{2}\,c^{2}= -(E/c)^2 + \vec p^2$.
 
 ### The Four-Acceleration and Four-Force
 
-The **four-acceleration biquaternion** is $\tilde{A}_{\Phi} = d\tilde{V}_{\Phi}/d\tau$, where $\tau$ is the proper time. The **four-force biquaternion** is $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau =m\,\tilde{A}_{\Phi}$. The four-acceleration satisfies $\tilde{A}_{\Phi}\tilde{V}_{\Phi}^{\natural} + \tilde{V}_{\Phi}\tilde{A}_{\Phi}^{\natural} = 0$, which is the biquaternion form of the orthogonality condition $\sum_\mu\varepsilon_\mu a_\mu v_\mu = 0$.
+The **four-acceleration biquaternion** is $\tilde{A}_{\Phi} = d\tilde{V}_{\Phi}/d\tau$, where $\tau$ is the proper time. The **four-force biquaternion** is $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau =m\,\tilde{A}_{\Phi}$. The four-acceleration satisfies $\tilde{A}_{\Phi}\tilde{V}_{\Phi}^{\natural} + \tilde{V}_{\Phi}\tilde{A}_{\Phi}^{\natural} = 0$, which is the biquaternion form of the orthogonality condition $\sum_{\imath}\varepsilon_{\imath} a_{\imath} v_{\imath} = 0$.
 
 ### Summary of Relativistic Kinematics
 
@@ -476,7 +476,7 @@ in agreement with the companion article on the Klein–Gordon equation. This is 
 
 The Dirac equations of this article so far are free. The standard Dirac potentials — the **electric** (the time component of a four-vector), the **magnetic** (its spatial part), the **scalar**, and the **pseudoscalar** — are usually attached one at a time in the matrix formalism, each changing the operator differently. Kravchenko's monograph attaches all four in one place, and the result is a statement about the algebra rather than about the potentials. The free quaternionic operator and the free classical Dirac operator are related by **one constant linear transformation** — a change of basis; the monograph's Lemma 3 — and the *same* transformation, together with one permutation of the index labels, carries each of the four potentials into the corresponding quaternionic operator. The four potentials therefore do not enlarge the formalism. Each is an explicit coefficient function multiplying one of the algebra's basis directions, and the quaternionic Dirac equation with any one of them is the same first-order equation with a different coefficient.
 
-The four directions are the four the algebra distinguishes. The scalar potential multiplies the identity $e_t$; the pseudoscalar potential multiplies the scalar imaginary $i$, the algebra's central pseudoscalar; the electric potential multiplies the timelike direction; and the magnetic potential enters through the spatial vector $\sum_\mu A_\mu \vec e_\mu$. This is the same fourfold list that Gürsey reads as the degenerate cases of the Lanczos system, and here it is the list of the algebra's carrier directions for a *coupling* rather than for a field.
+The four directions are the four the algebra distinguishes. The scalar potential multiplies the identity $e_t$; the pseudoscalar potential multiplies the scalar imaginary $i$, the algebra's central pseudoscalar; the electric potential multiplies the timelike direction; and the magnetic potential enters through the spatial vector $\sum_{\imath} A_{\imath} \vec e_{\imath}$. This is the same fourfold list that Gürsey reads as the degenerate cases of the Lanczos system, and here it is the list of the algebra's carrier directions for a *coupling* rather than for a field.
 
 **The pseudoscalar potential.** Of the four, the pseudoscalar case is the one that reaches machinery the corpus already has. It is the coupling of the field to the central imaginary $i$ — a coupling that changes the value of the field, not the minimal coupling of the companion article, which multiplies by a four-vector direction. Write $\vec r:=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the position vector. For a time-harmonic field the pseudoscalar-potential equation reduces to
 
@@ -534,17 +534,17 @@ $$
 k_m\,\tilde\Xi^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde\Xi = \tilde\Xi^{\dagger}iR_{\mathrm{axf},\vec e_x}\bigl(iK_t\,e_t\tilde\Xi \vec e_x + i\sum_\eta B_{\mathrm{boost},\eta}\,\vec e_\eta\tilde\Xi \vec e_y\bigr),
 $$
 
-with $\tilde\Xi^{\dagger}iR_{\mathrm{axf},\vec e_x}$ the Dirac adjoint, written in the frame basis operator $iR_{\mathrm{axf},\vec e_x}$, and $U_{\mathrm{vec},\mu}$ a unit complex four-vector. The corpus records the display as the source's and does not restate it in basis operators: what the display carries is the shape, a four-vector built from the field and multiplying it from the right, and the shape survives the transcription while the array does not. The phase is **non-integrable**: if $U_{\mathrm{vec},\mu} = \partial/\partial R_\mu\,\theta_{\mathrm{cen}}$ were a gradient, the change of variable $\tilde\Xi \mapsto \exp(i\theta_{\mathrm{cen}})\tilde\Xi$ would remove it and the field would be massless; the mass is exactly the statement that $K$ is not a gradient, and the obstruction is the field strength $\partial U_{\mathrm{vec},\mu}/\partial R_\nu - \partial U_{\mathrm{vec},\nu}/\partial R_\mu$.
+with $\tilde\Xi^{\dagger}iR_{\mathrm{axf},\vec e_x}$ the Dirac adjoint, written in the frame basis operator $iR_{\mathrm{axf},\vec e_x}$, and $U_{\mathrm{vec},\imath}$ a unit complex four-vector. The corpus records the display as the source's and does not restate it in basis operators: what the display carries is the shape, a four-vector built from the field and multiplying it from the right, and the shape survives the transcription while the array does not. The phase is **non-integrable**: if $U_{\mathrm{vec},\imath} = \partial/\partial R_{\imath}\,\theta_{\mathrm{cen}}$ were a gradient, the change of variable $\tilde\Xi \mapsto \exp(i\theta_{\mathrm{cen}})\tilde\Xi$ would remove it and the field would be massless; the mass is exactly the statement that $K$ is not a gradient, and the obstruction is the field strength $\partial U_{\mathrm{vec},\imath}/\partial R_{\jmath} - \partial U_{\mathrm{vec},\jmath}/\partial R_{\imath}$.
 
 Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
-The on-shell content of the interpretation is verified and simple: for a plane wave of momentum $p_\mu$ satisfying the mass shell $N = -m^{2}$, the vector
+The on-shell content of the interpretation is verified and simple: for a plane wave of momentum $p_{\imath}$ satisfying the mass shell $N = -m^{2}$, the vector
 
 $$
-U_{\mathrm{vec},\mu} = \frac{p_\mu}{m}
+U_{\mathrm{vec},\imath} = \frac{p_{\imath}}{m}
 $$
 
-satisfies $\sum_\mu\varepsilon_\mu U_{\mathrm{vec},\mu} U_{\mathrm{vec},\mu} = 1$. The momentum per unit mass is a unit vector, and the source reads it as the unit vector that carries the mass term. The condition is this article's own mass shell and not a new one: dividing $\langle\tilde K_\Phi\rangle_{\natural}=-k_m^{2}$ by $k_m^{2}$ gives $-(k'_t/k_m)^{2}+|\vec k_\Phi/k_m|^{2}=1$, and the two brackets are $U_{\mathrm{vec},t}=E/(mc^{2})$ and $U_{\mathrm{vec},\eta}=p_\eta/(mc)$, the slots of $\tilde V_\Phi/c$ for a plane wave. What the source adds is the reading of that unit vector as the carrier of the mass term, and the reading is a statement about the equation of §*The Biquaternionic Dirac Equation* and not about a different one.
+satisfies $\sum_{\imath}\varepsilon_{\imath} U_{\mathrm{vec},\imath} U_{\mathrm{vec},\imath} = 1$. The momentum per unit mass is a unit vector, and the source reads it as the unit vector that carries the mass term. The condition is this article's own mass shell and not a new one: dividing $\langle\tilde K_\Phi\rangle_{\natural}=-k_m^{2}$ by $k_m^{2}$ gives $-(k'_t/k_m)^{2}+|\vec k_\Phi/k_m|^{2}=1$, and the two brackets are $U_{\mathrm{vec},t}=E/(mc^{2})$ and $U_{\mathrm{vec},\eta}=p_\eta/(mc)$, the slots of $\tilde V_\Phi/c$ for a plane wave. What the source adds is the reading of that unit vector as the carrier of the mass term, and the reading is a statement about the equation of §*The Biquaternionic Dirac Equation* and not about a different one.
 
 This interpretation is the origin of the *triality construction* recorded in the companion articles. The two parts of the field, the vector they combine into, and the unit vector $K$ are the three objects that the order-three map permutes; the mass term is the coupling that the order-three (cubic) form expresses. The reader who wants the construction itself is referred to *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form*, *Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form*, and *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*. The present article records only the origin: the mass is a unit vector, a non-integrable phase, and it is the object the triality construction is built on.
 
@@ -671,7 +671,7 @@ These questions are open.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -699,7 +699,7 @@ $\gamma_5$ is the fifth basis operator of the frame, one operator that realises 
 
 The dictionary of basis operators is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -731,7 +731,7 @@ has coefficients in the real quaternions. The real and imaginary parts of a solu
 
 The dictionary between the massive equation and the static Maxwell medium, the mass shell read as the condition on that correspondence, and the Lanczos feedback reading of the two equations are in *The Dirac–Maxwell Correspondence in Biquaternionic Form*. The four potentials — scalar, pseudoscalar, electric and magnetic — are coefficients on four distinguished directions of the algebra, and the pseudoscalar one is the shifted operator that the corpus already solves.
 
-The mass can be written as a non-integrable phase: $U_{\mathrm{vec},\mu} = p_\mu/m$ is invertible four-vector on shell, and the mass term is the statement that $K$ is not a gradient. That observation is the origin of the triality construction of the companion articles.
+The mass can be written as a non-integrable phase: $U_{\mathrm{vec},\imath} = p_{\imath}/m$ is invertible four-vector on shell, and the mass term is the statement that $K$ is not a gradient. That observation is the origin of the triality construction of the companion articles.
 
 The biquaternion framework provides a compact and unified language for the Maxwell and Dirac equations, but it does not by itself derive the mass term or the electroweak structure. Those require additional physics beyond the algebraic framework.
 
@@ -761,7 +761,7 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian, central scalar |
 | $\tilde\Xi = \tilde\Xi_{L} + \tilde\Xi_{R}$ | The field: one element of $\mathbb{B}$, one part per letter of the pair |
 | $\tilde\Xi^{\flat} = -\tilde\Xi^*$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
-| $\bar{\cdot}$, written $C$ by the source | Componentwise complex conjugation, $Q_\mu\mapsto\bar Q_\mu$ on the coefficients: an automorphism, $\mathbb{C}$-antilinear and not an anti-automorphism |
+| $\bar{\cdot}$, written $C$ by the source | Componentwise complex conjugation, $Q_{\imath}\mapsto\bar Q_{\imath}$ on the coefficients: an automorphism, $\mathbb{C}$-antilinear and not an anti-automorphism |
 | $\vec\nabla_\Phi = \sum_{\eta=1}^{3}\vec e_\eta\,\partial/\partial R_\eta$ | The spatial gradient, pure, $\vec\nabla_\Phi^2=-\Delta_\Phi$ and $\lvert\vec\nabla_\Phi\rvert^2=\Delta_\Phi$, with real quaternion coefficients on the material sector; the source writes it $D$ |
 | $D = i\vec\nabla_\Phi$ | The corpus's spatial operator of *Biquaternion Regular Functions*, $D^2=\Delta_\Phi$ |
 | $\mathcal{N} = i\partial/\partial r'_t + \vec\nabla_\Phi - i\,\overline{\cdot}\,\vec e_z\,k_m$ | The two-sided Dirac operator with the conjugation in the mass term; its free part is $-(\tilde\nabla_\Phi)^{\natural}$ |
@@ -771,9 +771,9 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $\tfrac12(e_t\pm\alpha/\sqrt{\alpha^2})$ | The two complementary projections of the harmonic field, multiplying on the right; they split it into the two signs of the frequency, and in the source's reading the two helicities |
 | $\mathcal{C}_{\mathrm{cau},\omega}$ | The Cauchy-type operator of the amplitude equation; the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion $\tilde\Xi = \mathcal{C}_{\mathrm{cau},\omega}\tilde\Xi$ on $\Gamma$ hold for it |
 | $\tilde{K}_{\Phi}=\frac{2\pi \tilde{P}_{\Phi}}{h}=i k_{t}^{\prime}e_t+\vec k_\Phi$ | Wave biquaternion; $k_{t}^{\prime}=\omega/c$ |
-| $U_{\mathrm{vec},\mu}$ | Unit complex four-vector carrying the mass term, $k_m\tilde\Xi^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde\Xi=\tilde\Xi^{\dagger}iR_{\mathrm{axf},\vec e_x}(iK_t\,e_t\tilde\Xi \vec e_x+i\sum_\eta B_{\mathrm{boost},\eta}\,\vec e_\eta\tilde\Xi \vec e_y)$; $U_{\mathrm{vec},\mu}=\frac{p_{\mu}}{m}$ on shell, $\sum_\mu\varepsilon_\mu U_{\mathrm{vec},\mu} U_{\mathrm{vec},\mu}=1$ |
+| $U_{\mathrm{vec},\imath}$ | Unit complex four-vector carrying the mass term, $k_m\tilde\Xi^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde\Xi=\tilde\Xi^{\dagger}iR_{\mathrm{axf},\vec e_x}(iK_t\,e_t\tilde\Xi \vec e_x+i\sum_\eta B_{\mathrm{boost},\eta}\,\vec e_\eta\tilde\Xi \vec e_y)$; $U_{\mathrm{vec},\imath}=\frac{p_{\imath}}{m}$ on shell, $\sum_{\imath}\varepsilon_{\imath} U_{\mathrm{vec},\imath} U_{\mathrm{vec},\imath}=1$ |
 | $iR_{\mathrm{axf},\vec e_x}$ | The timelike basis operator, the Dirac adjoint in the bilinear covariants |
-| $\lvert F\rvert^2 = \langle F\rangle_{*} = \sum_\mu\lvert F_\mu\rvert^2$ | Hermitian norm of the biquaternion field, the definite one; the probability density of a complex field |
+| $\lvert F\rvert^2 = \langle F\rangle_{*} = \sum_{\imath}\lvert F_{\imath}\rvert^2$ | Hermitian norm of the biquaternion field, the definite one; the probability density of a complex field |
 | $m$ | Fermion mass; in the equations of this article it enters only through the length, so a display writes $k_m$ and never $m$ |
 
 ## Further Reading

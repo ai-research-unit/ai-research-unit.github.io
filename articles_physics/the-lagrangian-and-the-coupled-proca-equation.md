@@ -36,7 +36,7 @@ with $\mathrm{Sc}$ the scalar part, ${}^{*}$ the Hermitian conjugation, and $\na
 
 ## Conventions
 
-**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the potential $\tilde A$ is a general element and the connection $\tilde A_\Phi$ is anti-Hermitian. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)$, a pure vector in the free case and half of a complex bivector in the coupled one, which is the difference the article's fourth section is about. The pairing is $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term and $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ for the mass term, the measure is $\mathrm{d}^4r$, and $k_m=\frac{2\pi mc}{h}$.
+**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the potential $\tilde A$ is a general element and the connection $\tilde A_\Phi$ is anti-Hermitian. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)$, a pure vector in the free case and half of a complex bivector in the coupled one, which is the difference the article's fourth section is about. The pairing is $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term and $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ for the mass term, the measure is $\mathrm{d}^4r$, and $k_m=\frac{2\pi mc}{h}$.
 
 ## The Action in Element Form
 
@@ -47,7 +47,7 @@ $$
 =\mathcal{L}_{\mathrm{field}}+\mathcal{L}_{\mathrm{mass}} .
 $$
 
-**The mass term is the invariant length, and it is real.** For any element of $\mathbb{B}$ with components $A_\mu$,
+**The mass term is the invariant length, and it is real.** For any element of $\mathbb{B}$ with components $A_{\imath}$,
 
 $$
 \mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)
@@ -153,27 +153,27 @@ to $10^{-15}$ over random draws, because both halves acquire the same $\lambda$ 
 **The charge current.** Under $\tilde A\mapsto e^{i\alpha}\tilde A$, $\tilde A^{*}\mapsto e^{-i\alpha}\tilde A^{*}$ with $\alpha$ a constant central angle, the Lagrangian is invariant: the mass term by the computation above, the field term because it is quadratic in the field and the two factors carry opposite phases *in the material sector*, where $\tilde F$ is a real slice object. The Noether charge is
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A\bigr)
+j_{\imath}=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A\bigr)
 $$
 
 with the covariant derivative in the charge, and its conservation,
 
 $$
-\frac{\partial j_\mu}{\partial R_\mu}=0
+\frac{\partial j_{\imath}}{\partial R_{\imath}}=0
 \qquad\text{on solutions,}
 $$
 
 follows from the equation and its conjugate. The current is the source of the inhomogeneous Maxwell equation, which is the free article's "source that the free equation does not have".
 
-**The energy–momentum.** Under a translation $R_\mu\mapsto R_\mu+\epsilon_\mu$ with constant connection, the action is invariant and the stress tensor is
+**The energy–momentum.** Under a translation $R_{\imath}\mapsto R_{\imath}+\epsilon_{\imath}$ with constant connection, the action is invariant and the stress tensor is
 
 $$
-T_{\mu\nu}=\mathrm{Re}\,\mathrm{Sc}\Bigl(\tilde F^{\natural}\,\tilde\nabla_{\mathrm{gco},\Phi,\nu}\tilde A\Bigr)-\eta_{\mu\nu}\mathcal{L},
+T_{\imath\jmath}=\mathrm{Re}\,\mathrm{Sc}\Bigl(\tilde F^{\natural}\,\tilde\nabla_{\mathrm{gco},\Phi,\jmath}\tilde A\Bigr)-\eta_{\imath\jmath}\mathcal{L},
 $$
 
 symmetric on solutions, conserved on solutions, and positive in energy for the free slice. The article does not re-derive the standard algebra of it; the free article does, and the coupling changes only the derivatives in it.
 
-**The trace.** On the material slice the trace is the mass term and nothing else: the field term's contribution is scalar-free there, so $\sum_\mu T_{\mu\mu}$ is proportional to $k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ and vanishes only where the invariant length vanishes. The article leaves the overall sign to the free article's convention, which fixes it once. That proportionality is the field-theoretic form of the statement that the mass is the only scale in the theory. For a general complex field with a general connection the trace acquires the connection's contribution and the article does not state a closed form.
+**The trace.** On the material slice the trace is the mass term and nothing else: the field term's contribution is scalar-free there, so $\sum_{\imath} T_{\imath\imath}$ is proportional to $k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ and vanishes only where the invariant length vanishes. The article leaves the overall sign to the free article's convention, which fixes it once. That proportionality is the field-theoretic form of the statement that the mass is the only scale in the theory. For a general complex field with a general connection the trace acquires the connection's contribution and the article does not state a closed form.
 
 **What is absent.** There is no spin current, and its absence is not an oversight: the Proca field is a four-vector, its frame's brackets carry the direction and not a spin, and the free polar article states that the material sector has no rotor bracket to build one from. The Dirac spin current belongs to the Dirac articles. The coupled Proca field's rotor, which the complex carrier restores, is the frame's internal rotation and not a spin density, and the polar companion is where that distinction is drawn.
 
@@ -231,8 +231,8 @@ The constraint is the trace of the equation and the curvature does not enter it.
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter |
 | $\mathcal{L}_{\mathrm{field}},\ \mathcal{L}_{\mathrm{mass}}$ | The two terms of the Lagrangian density |
-| $j_\mu=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A)$ | Charge current |
-| $T_{\mu\nu}$ | Stress tensor; trace $-k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ on the material slice |
+| $j_{\imath}=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A)$ | Charge current |
+| $T_{\imath\jmath}$ | Stress tensor; trace $-k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ on the material slice |
 | $S$ | The action |
 
 ## Further Reading
@@ -246,7 +246,7 @@ The constraint is the trace of the equation and the curvature does not enter it.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the four-current and the inhomogeneous equation.
-- [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), for the operator reading of $T_{\mu\nu}$.
+- [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), for the operator reading of $T_{\imath\jmath}$.
 - Alexandru Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," *Journal de Physique et le Radium* **7** (1936) 347–353.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the standard coupled massive vector field.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the Lagrangian and the stress tensor in geometric algebra.

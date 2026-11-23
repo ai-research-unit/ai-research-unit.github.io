@@ -29,7 +29,7 @@ $$
 -\overleftarrow{\frac{\partial}{\partial p_\eta}}\overrightarrow{\frac{\partial}{\partial r_\eta}},
 $$
 
-with the summation over the spatial index $\eta$ understood and every index low, as the corpus's metric $\delta_{\mu\nu}$ requires. The operator $\Lambda$ is antisymmetric and it acts on the product $HW$, differentiating the first factor to the left and the second to the right.
+with the summation over the spatial index $\eta$ understood and every index low, as the corpus's metric $\delta_{\imath\jmath}$ requires. The operator $\Lambda$ is antisymmetric and it acts on the product $HW$, differentiating the first factor to the left and the second to the right.
 
 The structure of the display is worth reading before the expansion. The sine is what makes the equation exact: it is the whole of the difference between quantum and classical transport, written as a power series in $\frac{h}{2\pi}\Lambda/2$. Expanding the sine gives the series whose first term is the Poisson bracket and whose next term is the order-$\frac{h^{2}}{4\pi^{2}}$ correction. Nothing is dropped in the display; what is dropped later is dropped explicitly and with a stated reason.
 
@@ -92,7 +92,7 @@ $$
 
 The three terms are one statement written three ways. The first is the rate of change at a fixed phase-space point; the second is the transport of the density by the flow's velocity $\vec p/m$; the third is the change produced by the force. Their sum being zero says that the density at a point moving with the flow does not change — the statement that the flow of a collisionless fluid in phase space is incompressible.
 
-Why incompressible, in one line. The phase-space velocity is $(\vec p/m,-\vec\nabla_\Phi V)$, and its divergence is $\partial_\eta(p_\eta/m)+\partial(-\partial_\eta V)/\partial p_\eta=0$ because the first term has no $r_\eta$ and the second no $p_\eta$. So Liouville's theorem is not an extra assumption; it is the observation that the drift vector field is divergenceless, which the corpus's $\delta_{\mu\nu}$ with all coefficients $+1$ makes manifest: the phase-space metric is flat and the flow is a rotation of it.
+Why incompressible, in one line. The phase-space velocity is $(\vec p/m,-\vec\nabla_\Phi V)$, and its divergence is $\partial_\eta(p_\eta/m)+\partial(-\partial_\eta V)/\partial p_\eta=0$ because the first term has no $r_\eta$ and the second no $p_\eta$. So Liouville's theorem is not an extra assumption; it is the observation that the drift vector field is divergenceless, which the corpus's $\delta_{\imath\jmath}$ with all coefficients $+1$ makes manifest: the phase-space metric is flat and the flow is a rotation of it.
 
 ### The characteristics, and the corpus's flow
 
@@ -223,10 +223,10 @@ It is not a thermal pressure either. The correction redistributes momentum at fi
 
 ### The flow, in the corpus's letters
 
-Relativistically the drift is the contraction of the flow element with the gradient, and the mass shell is a constraint rather than an equation. With the velocity element of the polar form, $\tilde V_{\Phi,\nu}=p_{\Phi,\nu}/m$ and $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, the drift term becomes
+Relativistically the drift is the contraction of the flow element with the gradient, and the mass shell is a constraint rather than an equation. With the velocity element of the polar form, $\tilde V_{\Phi,\jmath}=p_{\Phi,\jmath}/m$ and $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, the drift term becomes
 
 $$
-p_{\Phi,\nu}\,\frac{\partial W}{\partial R_\nu}
+p_{\Phi,\jmath}\,\frac{\partial W}{\partial R_{\jmath}}
 =\frac{E}{c}\,\frac{\partial W}{\partial r'_t}+p_{\Phi,\eta}\,\frac{\partial W}{\partial r_\eta},
 $$
 
@@ -241,14 +241,14 @@ whose rest-frame value is $mc\,\partial/\partial r'_t=m\,\partial/\partial t$, s
 The mass shell is the corpus's modified relation, and it enters as a constraint on the support. The states populate the shell
 
 $$
-p_{\Phi,\nu}p_{\Phi,\nu}+m^{2}c^{2}+2m\,Q_{\mathrm{qnt}}=0,
+p_{\Phi,\jmath}p_{\Phi,\jmath}+m^{2}c^{2}+2m\,Q_{\mathrm{qnt}}=0,
 $$
 
-in the corpus's $\delta_{\mu\nu}$ form with the index low, and $Q_{\mathrm{qnt}}$ is the quantum potential with its minus sign. The constraint is not an equation of motion: it restricts where $\tilde W_\Xi$ has support, and the kinetic equation moves that support. The two equations together are the relativistic pair: a constraint that fixes the shell and a transport equation that moves the distribution along it.
+in the corpus's $\delta_{\imath\jmath}$ form with the index low, and $Q_{\mathrm{qnt}}$ is the quantum potential with its minus sign. The constraint is not an equation of motion: it restricts where $\tilde W_\Xi$ has support, and the kinetic equation moves that support. The two equations together are the relativistic pair: a constraint that fixes the shell and a transport equation that moves the distribution along it.
 
 ### Off-shell, and why the corpus keeps it so
 
-A relativistic Wigner element cannot be supported on the shell alone if it is to carry a finite spread, and the corpus's off-shell emphasis is the honest bookkeeping of that fact. In the non-relativistic case the drift equation alone determines the evolution and the energy is whatever the Hamiltonian says. In the relativistic case the four components of $p_{\Phi,\nu}$ are not independent: the shell ties the energy to the momentum, and a distribution with a momentum spread has an energy spread tied to it by the shell relation. The tie is the $2mQ_{\mathrm{qnt}}$ term. A state with zero quantum potential sits exactly on the classical shell and has a delta-supported energy; a state with a finite width has $Q_{\mathrm{qnt}}\neq0$ and a shell broadened by it.
+A relativistic Wigner element cannot be supported on the shell alone if it is to carry a finite spread, and the corpus's off-shell emphasis is the honest bookkeeping of that fact. In the non-relativistic case the drift equation alone determines the evolution and the energy is whatever the Hamiltonian says. In the relativistic case the four components of $p_{\Phi,\jmath}$ are not independent: the shell ties the energy to the momentum, and a distribution with a momentum spread has an energy spread tied to it by the shell relation. The tie is the $2mQ_{\mathrm{qnt}}$ term. A state with zero quantum potential sits exactly on the classical shell and has a delta-supported energy; a state with a finite width has $Q_{\mathrm{qnt}}\neq0$ and a shell broadened by it.
 
 The consequence for the kinetic equation is that the drift term's temporal component is not independent of its spatial components. Writing $p_{\Phi,t}$ from the shell,
 
@@ -283,7 +283,7 @@ One thing this article should not be read as claiming. It does not claim that th
 
 ## What Is Established and What Is Interpretation
 
-Established. The Moyal-bracket equation for the Wigner element, and the exact identity $\Lambda^{3}(H,W)=V'''\partial_{p}^{3}W$ for a Hamiltonian at most quadratic in momentum, verified in a computer algebra system. The expansion $\frac{2\pi 2}{h}\sin(\frac{h}{2\pi}\Lambda/2)=\Lambda-\tfrac{h^{2}}{96\pi^{2}}\Lambda^{3}+\cdots$ and the resulting kinetic equation with its order-$\frac{h^{2}}{4\pi^{2}}$ term. The vanishing of the zeroth, first and second moments of that term, hence the exactness of the continuity equation, and the value $-6\rho_{\mathrm{num}}$ of its third moment. The exactness of the classical drift equation for a quadratic potential, checked analytically on the oscillator ground state with the numbers $\sigma^{2}=\sigma_{p}^{2}=1/2$, $1/(m\sigma^{2})=2$, $m\omega^{2}/\sigma_{p}^{2}=2$. The relativistic drift as a contraction with the flow element, and the shell relation $p_{\Phi,\nu}p_{\Phi,\nu}+m^{2}c^{2}+2mQ_{\mathrm{qnt}}=0$ with every index low.
+Established. The Moyal-bracket equation for the Wigner element, and the exact identity $\Lambda^{3}(H,W)=V'''\partial_{p}^{3}W$ for a Hamiltonian at most quadratic in momentum, verified in a computer algebra system. The expansion $\frac{2\pi 2}{h}\sin(\frac{h}{2\pi}\Lambda/2)=\Lambda-\tfrac{h^{2}}{96\pi^{2}}\Lambda^{3}+\cdots$ and the resulting kinetic equation with its order-$\frac{h^{2}}{4\pi^{2}}$ term. The vanishing of the zeroth, first and second moments of that term, hence the exactness of the continuity equation, and the value $-6\rho_{\mathrm{num}}$ of its third moment. The exactness of the classical drift equation for a quadratic potential, checked analytically on the oscillator ground state with the numbers $\sigma^{2}=\sigma_{p}^{2}=1/2$, $1/(m\sigma^{2})=2$, $m\omega^{2}/\sigma_{p}^{2}=2$. The relativistic drift as a contraction with the flow element, and the shell relation $p_{\Phi,\jmath}p_{\Phi,\jmath}+m^{2}c^{2}+2mQ_{\mathrm{qnt}}=0$ with every index low.
 
 Interpretation. That the $\frac{h^{2}}{4\pi^{2}}$ term is the phase-space form of the quantum force. The term is a fact of the expansion; its identification with $-\vec\nabla_\Phi Q_{\mathrm{qnt}}$ is a reading of it in the hydrodynamic variables, and the two are related by the moments — precisely, by the third moment and beyond, since the lower ones vanish. The article states the reading and marks it as one.
 
@@ -314,10 +314,10 @@ Relativistically the drift is a contraction with the flow element and the shell 
 | $k_m$ | Mass wave number |
 | $r_\eta$, $p_\eta$ | Spatial components of position and momentum; indices low |
 | $r'_t$ | Temporal coordinate of the material sector, a length |
-| $R_\mu$, $\partial/\partial R_\mu$ | Derivative coordinate, with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ |
+| $R_{\imath}$, $\partial/\partial R_{\imath}$ | Derivative coordinate, with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ |
 | $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ | Energy |
-| $p_{\Phi,\nu}$ | Components of the flow momentum element |
-| $\tilde V_{\Phi,\nu}=p_{\Phi,\nu}/m$ | Components of the velocity element |
+| $p_{\Phi,\jmath}$ | Components of the flow momentum element |
+| $\tilde V_{\Phi,\jmath}=p_{\Phi,\jmath}/m$ | Components of the velocity element |
 | $\Lambda$ | The bidifferential operator of the Moyal bracket |
 | $H$ | Hamiltonian symbol, $\lvert\vec p\rvert^{2}/(2m)+V$ |
 | $V$ | Potential; $V'''$ its third derivative |
@@ -327,7 +327,7 @@ Relativistically the drift is a contraction with the flow element and the shell 
 | $W_0$ | Wigner element of the oscillator ground state |
 | $\rho_{\mathrm{num}}=\int d^{3}p\,W$ | Proper density as a marginal |
 | $j_\eta=\int d^{3}p\,(p_\eta/m)W$ | Current density as a first moment |
-| $\delta_{\mu\nu}$ | The metric; no raised indices |
+| $\delta_{\imath\jmath}$ | The metric; no raised indices |
 | $\mathcal{O}(\frac{h^{4}}{(2\pi)^{4}})$ | The remainder of the sine expansion; for a separable Hamiltonian the next explicit term is the $\frac{h^{4}}{(2\pi)^{4}}$ one, $\frac{h^{4}}{30720\pi^{4}}V^{(5)}\partial_{p_\eta}^{5}W$ |
 
 ## Further Reading

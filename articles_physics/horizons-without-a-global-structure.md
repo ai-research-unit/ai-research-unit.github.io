@@ -27,10 +27,10 @@ In the Newman–Penrose convention of the companion article — $l\cdot n=-1$, $
 $$
 \theta \;=\; \rho+\bar\rho ,
 \qquad
-\rho \;=\; \sum_{\mu,\nu}\eta_{\mu\mu}\eta_{\nu\nu}\,l_{\mu;\nu}\,m_{\mu}\bar m_{\nu},
+\rho \;=\; \sum_{\imath,\jmath}\eta_{\imath\imath}\eta_{\jmath\jmath}\,l_{\imath;\jmath}\,m_{\mu}\bar m_{\jmath},
 $$
 
-and the shear is the imaginary part of the same object, $\sigma=\sum_{\mu,\nu}\eta_{\mu\mu}\eta_{\nu\nu}l_{\mu;\nu}m_{\mu}m_{\nu}$. Both were checked against explicit congruences. For the outgoing radial congruence $l=(1,\hat r)$ in flat space the Christoffel symbols give $\rho=1/r$ exactly — the two angular contributions are $1/(2r)$ each — and the divergence gives $\theta=2/r$, so $\theta=\rho+\bar\rho$ holds identically; at $r=2$ both sides are $1$. For the incoming congruence $l=(1,-\hat r)$ the signs reverse on both sides, $\theta=-2/r$ and $\rho=-1/r$, and the identity survives. For the comoving congruence of a flat FLRW metric with $a=1+\tfrac12 t$ the expansion computed from the connection is $3\dot a/a=1$, which is the standard value.
+and the shear is the imaginary part of the same object, $\sigma=\sum_{\imath,\jmath}\eta_{\imath\imath}\eta_{\jmath\jmath}l_{\imath;\jmath}m_{\mu}m_{\jmath}$. Both were checked against explicit congruences. For the outgoing radial congruence $l=(1,\hat r)$ in flat space the Christoffel symbols give $\rho=1/r$ exactly — the two angular contributions are $1/(2r)$ each — and the divergence gives $\theta=2/r$, so $\theta=\rho+\bar\rho$ holds identically; at $r=2$ both sides are $1$. For the incoming congruence $l=(1,-\hat r)$ the signs reverse on both sides, $\theta=-2/r$ and $\rho=-1/r$, and the identity survives. For the comoving congruence of a flat FLRW metric with $a=1+\tfrac12 t$ the expansion computed from the connection is $3\dot a/a=1$, which is the standard value.
 
 Two consequences follow, and they are the whole of the framework's reach here.
 
@@ -39,7 +39,7 @@ Two consequences follow, and they are the whole of the framework's reach here.
 **The focusing equation is the same object's derivative.** For an affinely parametrised null geodesic congruence the Raychaudhuri equation reads
 
 $$
-\frac{d\theta}{d\lambda} \;=\; -\frac{\theta^{2}}{2}-\sigma\bar\sigma+\omega\bar\omega-\sum_{\mu,\nu}\eta_{\mu\mu}\eta_{\nu\nu}R_{\mu\nu}l_{\mu}l_{\nu},
+\frac{d\theta}{d\lambda} \;=\; -\frac{\theta^{2}}{2}-\sigma\bar\sigma+\omega\bar\omega-\sum_{\imath,\jmath}\eta_{\imath\imath}\eta_{\jmath\jmath}R_{\imath\jmath}l_{\imath}l_{\jmath},
 $$
 
 with $\omega$ the twist. For the flat radial congruence $\lambda=r$, $\theta=2/r$ and $d\theta/d\lambda=-2/r^{2}=-\theta^{2}/2$ exactly, with shear, twist and curvature all zero, so the equation is satisfied by the one term that survives. Raychaudhuri's equation is therefore reachable in the same sense as $\rho$: it is a differential identity among objects the algebra hosts, and it needs the connection but not the manifold's global structure.
@@ -48,7 +48,7 @@ What is *not* reachable in this half is surface gravity. The definition $\nabla_
 
 ## What the Frame Route Adds: Loci
 
-Once the frame field $\tilde E_{\Phi,\mu}(x)$ is placed on a manifold, the framework acquires what the algebra lacks — a space of points — and with it a second layer of statements becomes available.
+Once the frame field $\tilde E_{\Phi,\imath}(x)$ is placed on a manifold, the framework acquires what the algebra lacks — a space of points — and with it a second layer of statements becomes available.
 
 **A horizon can be defined as a locus.** The set of points where $\mathrm{Re}\,\rho=0$ is a well-defined subset of the manifold, defined by a diffeomorphism-covariant equation. The framework can write it, and the equation is the one a horizon finder solves.
 

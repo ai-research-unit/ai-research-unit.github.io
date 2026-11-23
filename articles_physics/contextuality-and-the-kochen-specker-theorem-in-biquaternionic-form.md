@@ -113,7 +113,7 @@ Within each row and each column the three entries commute, so their product is u
 | **row 3** | $\tilde Q_x\otimes\tilde Q_z$ | $\tilde Q_z\otimes\tilde Q_x$ | $\tilde Q_y\otimes\tilde Q_y$ | $\prod = e_t\otimes e_t$ |
 | **column product** | $\prod = e_t\otimes e_t$ | $\prod = e_t\otimes e_t$ | $\prod = -e_t\otimes e_t$ |  |
 
-That is: the product of every row is $+e_t\otimes e_t$, the products of the first two columns are $+e_t\otimes e_t$, and the product of the third column is $-e_t\otimes e_t$. Each of these statements was verified by explicit multiplication in the algebra of the sixteen basis elements $e_\mu\otimes e_\nu$, and each row and column was verified to be a commuting set.
+That is: the product of every row is $+e_t\otimes e_t$, the products of the first two columns are $+e_t\otimes e_t$, and the product of the third column is $-e_t\otimes e_t$. Each of these statements was verified by explicit multiplication in the algebra of the sixteen basis elements $e_{\imath}\otimes e_{\jmath}$, and each row and column was verified to be a commuting set.
 
 ### Why multiplicativity holds on a context
 

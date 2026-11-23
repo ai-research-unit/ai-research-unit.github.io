@@ -50,7 +50,7 @@ $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural},
 $$
 
-with $ϙ$ the charge, $k_m=\frac{2\pi mc}{h}$ the mass wave number, and $\tilde A_\Phi$ the connection of the gauge principle. In the abelian component form the parent uses, $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ with complex scalar coefficients, and each component of the covariant derivative is a central scalar operator. That sentence is the parent's and its consequences are the polar companion's; this article uses only that the coefficients are central.
+with $ϙ$ the charge, $k_m=\frac{2\pi mc}{h}$ the mass wave number, and $\tilde A_\Phi$ the connection of the gauge principle. In the abelian component form the parent uses, $\tilde A_\Phi=\sum_{\imath} A_{\imath} e_{\imath}$ with complex scalar coefficients, and each component of the covariant derivative is a central scalar operator. That sentence is the parent's and its consequences are the polar companion's; this article uses only that the coefficients are central.
 
 The four sector statements. $\tilde K_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $i\tilde K_\Phi\in\mathbb{B}_\Psi$ and Hermitian; $\tilde A_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian, which is the parent's own writing; $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi\in\mathbb{B}_\Psi$ and Hermitian. The last is a consequence of the third and of the centrality of $i$, and nothing else in the article turns on a sector question.
 

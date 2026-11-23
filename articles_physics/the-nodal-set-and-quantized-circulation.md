@@ -26,9 +26,9 @@ The consequence for this article's charge is a limit. The circulation's quantiza
 $$
 \tilde V_{\Phi}=\frac{\tilde\nabla_\Phi S_{\tilde\Xi}}{m},
 \qquad
-v_{\Phi,\mu}=\frac{1}{m}\frac{\partial S_{\tilde\Xi}}{\partial R_\mu},
+v_{\Phi,\imath}=\frac{1}{m}\frac{\partial S_{\tilde\Xi}}{\partial R_{\imath}},
 \qquad
-\omega_{\mu\nu}=\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}-\frac{\partial v_{\Phi,\mu}}{\partial R_\nu}=0 .
+\omega_{\imath\jmath}=\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}-\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}}=0 .
 $$
 
 The vanishing is a statement about mixed partial derivatives and it needs nothing from the field equation: any twice differentiable action gives it. What it needs is that the action exist, and the action exists wherever the amplitude is non-zero, because it is defined by
@@ -234,7 +234,7 @@ Under a gauge transformation the field multiplies by a unit central element and 
 
 ## The Cone, with an Example That Is Not Zero
 
-**For a field of general value the node can sit on the cone away from the apex, and the Dirac sector exhibits it.** The quaternionic norm is the sum of the squares of the four coefficients, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, and it vanishes on the complex null cone of the algebra. The central scalar field has one non-zero coefficient, so it can vanish only at the apex. An element with two coefficients can do better:
+**For a field of general value the node can sit on the cone away from the apex, and the Dirac sector exhibits it.** The quaternionic norm is the sum of the squares of the four coefficients, $\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$, and it vanishes on the complex null cone of the algebra. The central scalar field has one non-zero coefficient, so it can vanish only at the apex. An element with two coefficients can do better:
 
 $$
 \tilde Q=\tfrac{1}{2}\bigl(e_t+i\vec e_x\bigr),
@@ -279,10 +279,10 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density |
 | $S_{\tilde\Xi}$ | The action, in $\mathrm{J\,s}$ |
 | $\theta_{\mathrm{phs}}=\frac{2\pi S_{\tilde\Xi}}{h}$ | The phase angle, dimensionless |
-| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | Quaternionic norm, vanishing on the cone |
+| $\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$ | Quaternionic norm, vanishing on the cone |
 | $\tilde V_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}/m$ | Four-velocity of the scalar flow |
-| $v_{\Phi,\mu}$ | Its components, index low |
-| $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |
+| $v_{\Phi,\imath}$ | Its components, index low |
+| $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ | Vorticity 2-form |
 | $\tilde J_{\Phi}$ | Number current |
 | $\kappa=\oint\tilde V_\Phi\cdot d\vec l$ | Circulation |
 | $\kappa_1=h/m=2\pi c/k_m$ | Quantum of circulation |
@@ -296,8 +296,8 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Quantum potential |
 | $w_{\mathrm{qnt}}$ | Quantum energy density |
 | $\Box_\Phi$ | D'Alembertian of the material sector |
-| $\delta_{\mu\nu}$ | The one metric, all coefficients $+1$; indices stay low |
-| $\varepsilon_\mu$ | Sign weight, $+1$ temporal and $-1$ spatial |
+| $\delta_{\imath\jmath}$ | The one metric, all coefficients $+1$; indices stay low |
+| $\varepsilon_{\imath}$ | Sign weight, $+1$ temporal and $-1$ spatial |
 | $\frac{h}{2\pi},\ m,\ c$ | Action quantum, mass, speed of light |
 
 ## Further Reading

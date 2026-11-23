@@ -15,7 +15,7 @@ This article develops the identification in detail. It is not an article about n
 
 The article is organized as follows. First the two-state system of quantum physics is recalled. Then the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is stated explicitly. Then the identification of $\mathbb{B}_{\Psi}$ with the observables is given, and the idempotents with the states. Then the plain form is stated as the Born rule, with the pairing formula as its $2\times2$ reading. Then the relation to the four-vector space $\mathbb{B}_{\Phi}$ is discussed. The article closes with a summary of what the biquaternion framework does and does not contain.
 
-The conventions are those of the companion articles: the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the four fixed-point subspaces are $\mathbb{C}_\mathbb{B}, \mathbb{H}_\mathbb{B}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$.
+The conventions are those of the companion articles: the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_{\imath}^2 = -e_t$, the scalar imaginary is $i$, and the four fixed-point subspaces are $\mathbb{C}_\mathbb{B}, \mathbb{H}_\mathbb{B}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$.
 
 ## The Two-State System in Quantum Physics
 
@@ -95,10 +95,10 @@ $$
 
 where $i$ on the left is the scalar imaginary of $\mathbb{B}$ and $i$ on the right is the complex unit in $M_2(\mathbb{C})$.
 
-It is useful to verify that this is indeed an isomorphism of algebras. The quaternion units satisfy $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda} \vec e_\lambda$ for $\mu \neq \nu$. Under the map:
+It is useful to verify that this is indeed an isomorphism of algebras. The quaternion units satisfy $\vec e_{\imath}^2 = -e_t$ and $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda} \vec e_\lambda$ for ${\imath} \neq \jmath$. Under the map:
 
 $$
-\vec e_\mu^2 \mapsto (-i\sigma_\eta)^2 = -\sigma_\eta^2 = -I_2 = -e_t,
+\vec e_{\imath}^2 \mapsto (-i\sigma_\eta)^2 = -\sigma_\eta^2 = -I_2 = -e_t,
 $$
 
 $$
@@ -351,7 +351,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 6. The Dirac equation. The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field, expressed in terms of a pair of Weyl spinors.
 
-7. Maxwell's equations. The biquaternion framework contains Maxwell's equations in the form $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{2\pi iqA_{\mu}}{h}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
+7. Maxwell's equations. The biquaternion framework contains Maxwell's equations in the form $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_{\imath} \to \partial/\partial R_{\imath} -\frac{2\pi iqA_{\imath}}{h}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
 
 ### Does Not Contain
 
@@ -408,18 +408,18 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $\mathbb{B} \cong M_2(\mathbb{C})$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace = observables |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace = generators |
-| $e_t, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\mu^2 = -e_t$ |
+| $e_t, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\sigma_1, \sigma_2, \sigma_3$ | Pauli matrices |
 | $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ | Idempotent (pure spin state) |
-| $\tilde H_\Psi = h_t e_t + ih_\mu \vec e_\mu$ | Hermitian element (observable) |
+| $\tilde H_\Psi = h_t e_t + ih_{\imath} \vec e_{\imath}$ | Hermitian element (observable) |
 | $\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi_{\mathrm{id}},e_t\rangle_{*} = 2\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ | Born-rule expectation value; scalar-part image $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L},\ (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | Biquaternionic Dirac equation (linear chiral pair) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

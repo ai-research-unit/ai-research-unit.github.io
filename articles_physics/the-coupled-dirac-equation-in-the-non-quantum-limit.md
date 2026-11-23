@@ -30,7 +30,7 @@ The restriction. The word is defined where $N(\tilde\Xi)\neq0$; the equation and
 
 The signs. The parent writes the coupling as $ϙ$ with $ϙ=-q$. Every display here uses $q$, the electric charge, $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\omicron_{\mathrm{pot}}$; the parent's $\frac{h}{2\pi} c\kappa_t=E+ϙcA_t$ is $E-q\omicron_{\mathrm{pot}}$ in these letters.
 
-Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$; $\tilde K_{\Phi,\mathrm{gco}}$ the mechanical wavevector; $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ the kinetic four-velocity; $k_m=\frac{2\pi mc}{h}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
+Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$; $\tilde K_{\Phi,\mathrm{gco}}$ the mechanical wavevector; $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ the kinetic four-velocity; $k_m=\frac{2\pi mc}{h}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
 
 ## One Addition and Two Frames
 
@@ -50,7 +50,7 @@ so the rapidity is the kinetic one and the four-velocity is the trajectory's. Th
 
 The two frames and their relations. The canonical wavevector is $\tilde K_\Phi=i(\frac{2\pi E}{h\,c})e_{t}+\frac{2\pi \vec p}{h}$; the mechanical one is $i(\frac{2\pi \mathcal E}{h\,c})e_{t}+\frac{2\pi \vec\pi}{h}$; and the two differ by the potential's slots. **The word's boost is the mechanical one's inverse square, the canonical one's is not**, and the difference is the whole content of the coupled polar chart.
 
-The gauge statement, in the parent's sharpest form. For a pure gauge potential $A_\mu=\partial_\mu\Lambda$, the coupled derivative acts as $i\partial_\mu(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda)$: the entire effect of the potential is a reparameterisation of one coordinate. That is why the criterion must live on the invariant combination and why the chart's gauge group is a translation.
+The gauge statement, in the parent's sharpest form. For a pure gauge potential $A_{\imath}=\partial_{\imath}\Lambda$, the coupled derivative acts as $i\partial_{\imath}(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda)$: the entire effect of the potential is a reparameterisation of one coordinate. That is why the criterion must live on the invariant combination and why the chart's gauge group is a translation.
 
 ## The Criterion on the Mechanical Wavevector
 

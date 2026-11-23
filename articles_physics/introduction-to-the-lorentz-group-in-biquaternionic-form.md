@@ -8,7 +8,7 @@ Every element of the group is a boost times a rotation. The same group sits insi
 
 ## The Lorentz Group
 
-The interval. Write an event as $x_\mu=(x_0,\mathbf{x})$ with $x_0=ct$, and let
+The interval. Write an event as $x_{\imath}=(x_0,\mathbf{x})$ with $x_0=ct$, and let
 
 $$
 \eta=\operatorname{diag}(1,-1,-1,-1),\qquad
@@ -38,7 +38,7 @@ Six parameters. The matrix $\Lambda$ has sixteen entries and the conditions form
 $$
 \omega^{\mathsf T}\eta+\eta\,\omega=0
 \quad\Longleftrightarrow\quad
-\omega_{\mu\nu}=-\omega_{\nu\mu},
+\omega_{\imath\jmath}=-\omega_{\jmath\imath},
 $$
 
 an antisymmetric array with $\binom{4}{2}=6$ entries. The six belong to $\mathrm{SO}^{+}(1,3)$, since a neighbourhood of the identity lies in it, and they are three planes containing the time axis and one space direction, the boosts, and three containing two space directions, the rotations.

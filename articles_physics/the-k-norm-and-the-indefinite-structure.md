@@ -98,7 +98,7 @@ The first row owns the partition. The other rows supply what the entry uses and 
 The K norm is the diagonal of the general quaternionic sesquilinear form.
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu},
+\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_{\imath}\varepsilon_{\imath} P_{\imath}\overline{Q_{\imath}},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 \qquad

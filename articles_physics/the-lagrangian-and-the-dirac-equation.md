@@ -28,7 +28,7 @@ One convention, used throughout. The two parts are written $\tilde\Xi_L$ and $\t
 
 ## Conventions
 
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central. $\mathrm{Sc}$ is the coefficient of $e_t$. The conjugations are $*$ (Hermitian, $\tilde X^{*}=\bar{\tilde X}^{\natural}$) and $\natural$ (quaternion). The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ with $R_t=ir'_t$, so that $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and $(\tilde\nabla_\Phi)^{\natural}$ is the same operator with the spatial part reversed. The four-position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. The material time is $r'_t=ct'$, a length, and the action below is integrated with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$ so that the constant multiplying the derivative is $\frac{h}{2\pi} c$ and not $\frac{h}{2\pi}$.
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central. $\mathrm{Sc}$ is the coefficient of $e_t$. The conjugations are $*$ (Hermitian, $\tilde X^{*}=\bar{\tilde X}^{\natural}$) and $\natural$ (quaternion). The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ with $R_t=ir'_t$, so that $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and $(\tilde\nabla_\Phi)^{\natural}$ is the same operator with the spatial part reversed. The four-position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. The material time is $r'_t=ct'$, a length, and the action below is integrated with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$ so that the constant multiplying the derivative is $\frac{h}{2\pi} c$ and not $\frac{h}{2\pi}$.
 
 ## The Action in Element Form
 
@@ -63,13 +63,13 @@ The pairing. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian form, t
 The quaternion pairing makes every kinetic density a total derivative. The form $\mathrm{Sc}(X^{\natural}Y)$ is complex-bilinear and symmetric, $\mathrm{Sc}(X^{\natural}Y)=\mathrm{Sc}(Y^{\natural}X)$, and it conjugates no coefficient: $\natural$ reverses the units and leaves the central $i$ alone. So the identity
 
 $$
-\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\partial_\mu\tilde\Xi\bigr)=\tfrac12\partial_\mu\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\tilde\Xi\bigr)
+\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\partial_{\imath}\tilde\Xi\bigr)=\tfrac12\partial_{\imath}\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\tilde\Xi\bigr)
 $$
 
 holds exactly, and multiplying by a central constant changes nothing, because the constant passes through the product and through the derivative:
 
 $$
-\mathrm{Sc}\bigl(\tilde\Xi^{\natural}i \frac{h}{2\pi} c\,\partial_\mu\tilde\Xi\bigr)=\tfrac{i h c}{4\pi}\partial_\mu\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\tilde\Xi\bigr).
+\mathrm{Sc}\bigl(\tilde\Xi^{\natural}i \frac{h}{2\pi} c\,\partial_{\imath}\tilde\Xi\bigr)=\tfrac{i h c}{4\pi}\partial_{\imath}\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\tilde\Xi\bigr).
 $$
 
 A kinetic density that is a total derivative on every field carries no equation of motion. This is the whole defect of the $\natural$ pairing, and it is why the same symbol, used to conjugate the gradient, does not also serve to pair the action.
@@ -83,10 +83,10 @@ Without the $i$ the candidate is not empty. $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^
 With the $i$ it is empty. $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}i \frac{h}{2\pi} c\,\tilde\nabla_\Phi\tilde\Xi]$ vanishes identically, because $i \frac{h}{2\pi} c\tilde\nabla_\Phi$ is anti-self-adjoint: $\langle\tilde\Xi,i \frac{h}{2\pi} c\tilde\nabla_\Phi\tilde\Xi\rangle$ is purely imaginary up to a boundary term, so its real part is zero for every field. The identity that states this correctly carries the real part on the left,
 
 $$
-\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\partial_\mu\tilde\Xi\bigr)=\tfrac12\partial_\mu\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr),
+\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\partial_{\imath}\tilde\Xi\bigr)=\tfrac12\partial_{\imath}\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr),
 $$
 
-and without the real part it is false: the imaginary part of $\mathrm{Sc}(\tilde\Xi^{*}\partial_\mu\tilde\Xi)$ is a current and not a derivative. The distinction is worth keeping, because it says exactly how much has been shown. The real part of the $i$-inserted functional is a boundary term; its imaginary part is not.
+and without the real part it is false: the imaginary part of $\mathrm{Sc}(\tilde\Xi^{*}\partial_{\imath}\tilde\Xi)$ is a current and not a derivative. The distinction is worth keeping, because it says exactly how much has been shown. The real part of the $i$-inserted functional is a boundary term; its imaginary part is not.
 
 What the emptiness does and does not prove. It does not prove that no real first-order action on one element exists. The standard Dirac action is a one-field action and is not empty, because its bilinear carries one element more than the candidate above: the Dirac adjoint's $\gamma_{0}$, which in this algebra is a right multiplication by $i\vec e_\eta$. The same repair is available here — a Hermitian right multiplier inside the bilinear makes the operator self-adjoint and the functional non-empty — and it gives the one-element equation $\tilde\nabla_\Phi\tilde\Xi=k_m\tilde\Xi$, which is one equation on one element and is not the pair.
 
@@ -178,7 +178,7 @@ J^{t}=\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\t
 J_{\eta}=\mathrm{Re}\,\mathrm{Sc}\bigl[i\bigl(\tilde\Xi_R^{*}\vec e_\eta\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_\eta\tilde\Xi_L\bigr)\bigr],
 $$
 
-with conservation $\sum_\mu\partial_\mu J_\mu=0$ on solutions, by the standard argument: the variation of the action under a local angle is $-\int\sum_\mu(\partial_\mu\alpha)J_\mu$ plus the equations of motion.
+with conservation $\sum_{\imath}\partial_{\imath} J_{\imath}=0$ on solutions, by the standard argument: the variation of the action under a local angle is $-\int\sum_{\imath}(\partial_{\imath}\alpha)J_{\imath}$ plus the equations of motion.
 
 The two components have different structures and both are right. The time component is a sum over the parts; the spatial component is a difference. The difference is not an error: the two parts carry conjugate spatial derivatives, $-\vec e_\eta\partial_\eta$ on the left and $+\vec e_\eta\partial_\eta$ on the right, and the current inherits that relative sign. In the two-component language this is the statement that one part uses $\bar\sigma$ and the other $\sigma$.
 
@@ -197,7 +197,7 @@ which is the polar parent's current $\tilde J_\Phi=\rho\tilde V_\Phi$ divided by
 Energy and momentum. The Lagrangian does not depend on the coordinates explicitly, so translation in $r'_t$ and in the three $r_\eta$ gives four conserved charges. The canonical expressions are
 
 $$
-T_{\mu\nu}=\sum_{p}\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_p^{*}\,s_\mu e_\mu\,\partial_\nu\tilde\Xi_p\Bigr]-\delta_{\mu\nu}\,\mathcal{L},
+T_{\imath\jmath}=\sum_{p}\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_p^{*}\,s_{\imath} e_{\imath}\,\partial_{\jmath}\tilde\Xi_p\Bigr]-\delta_{\imath\jmath}\,\mathcal{L},
 \qquad
 E=T^{t}{}_{t},
 $$
@@ -245,7 +245,7 @@ The two-sided display is the same equation in a different right frame — a cons
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $*$ | Hermitian conjugation, $\tilde X^{*}=\bar{\tilde X}^{\natural}$ |
 | $\natural$ | Quaternion conjugation; $\tilde U^{\natural}=\tilde U^{-1}$ for an invertible element |
@@ -258,8 +258,8 @@ The two-sided display is the same equation in a different right frame — a cons
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $S$ | The action; $\mathcal{L}$ its integrand |
 | $r_L,r_R$ | The two residuals, whose vanishing is the pair |
-| $J_\mu$ | Electric Noether current |
-| $T_{\mu\nu}$ | Canonical energy-momentum |
+| $J_{\imath}$ | Electric Noether current |
+| $T_{\imath\jmath}$ | Canonical energy-momentum |
 | $\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | Frame idempotents; $\Pi_\pm^{*}=\Pi_\pm$, $\Pi_\pm^{\natural}=\Pi_\mp$, $\Pi_+\Pi_-=0$ |
 | $\vec v$ | The fixed unit direction of the two-sided display |
 
@@ -269,7 +269,7 @@ The two-sided display is the same equation in a different right frame — a cons
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the polar word, the four brackets, the current and the spin.
 - [The Lagrangian and the Dirac Equation in Polar Variables](the-lagrangian-and-the-dirac-equation-in-polar-variables.html), the companion, for the same action substituted with the word.
 - [The Lagrangian and the Schrödinger Equation](the-lagrangian-and-the-schrodinger-equation.html), for the second-order case, where the split is not forced.
-- [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the symmetric improvement of $T_{\mu\nu}$ and its conservation.
+- [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the symmetric improvement of $T_{\imath\jmath}$ and its conservation.
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, §8, for the tensor formulation of the same variational principle, whose unit-vector constraints need Lagrange multipliers.
 - Julian Schwinger, "The theory of quantized fields I," *Physical Review* **82** (1951) 914, for the action principle in the fermionic case.
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the standard action and its symmetries.

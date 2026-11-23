@@ -10,7 +10,7 @@ is, in this interpretation, the sign of $i^2$; it is not put into the metric by 
 
 The parent of this article is *Electromagnetism in Media — The Local Complex Structure at Work*, where the local structure is used in a material medium. There the medium supplies the general case and the vacuum is its limit. Here the subject is the structure itself and its relation to the speed of light; the medium appears only as the setting in which the local structure is seen to vary from point to point. The distinction between the global and the local statement is the organising theme, and every step below says which of the two is being claimed.
 
-Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $e_t^2=e_t$ and $\vec e_\eta^2=-e_t$ for $\eta=x,y,z$, and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{B}_{\Psi}$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$. The real-quaternion subspace is $\mathbb{B}_{H}$, the scalar subspace is $\mathbb{B}_{C}$, and the reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. Two symbols are introduced here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.
+Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $e_t^2=e_t$ and $\vec e_\eta^2=-e_t$ for $\eta=x,y,z$, and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{B}_{\Psi}$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$. The real-quaternion subspace is $\mathbb{B}_{H}$, the scalar subspace is $\mathbb{B}_{C}$, and the reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\imath} Q_{\imath}^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. Two symbols are introduced here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.
 
 ## Two Senses of "Complex Structure"
 
@@ -105,9 +105,9 @@ the unit form on the four coefficients. The signs are produced by the complex st
 The sentence "the complex structure produces the metric" has two parts, and it is worth separating them.
 
 1. **The signs are algebraic.** The sign of the coefficient on $d{r'_{t}}^2$ is $(i)^2$. It comes from the scalar imaginary and is the same at every point and in every medium, whatever the conversion is. In the metric formalism the signs are an input; here they are a consequence of the algebra.
-2. **The magnitude is the conversion.** In the length coordinate the coefficient is $-1$, and the metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$:
+2. **The magnitude is the conversion.** In the length coordinate the coefficient is $-1$, and the metric is the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$ on the four $Q_{\imath}$:
 $$
-ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}\,dR_\mu dQ_\nu=(i\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2 .
+ds^2=\sum_{\imath,\jmath}\delta_{\imath\jmath}\,dR_{\imath} dQ_{\jmath}=(i\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2 .
 $$
 The coefficient becomes $-c^2$ when the temporal slot is read in seconds, by $dr'_t=c\,dt'$.
 
@@ -192,12 +192,12 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $\mathbb{B}_{C},\mathbb{B}_{H}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian (informational), anti-Hermitian (material) subspaces |
 | $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | Sector decomposition; $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ |
-| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; zero divisors where $\langle\tilde{Q}\rangle_{\natural}=0$ |
+| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\imath} Q_{\imath}^2$ | Biquaternion norm; zero divisors where $\langle\tilde{Q}\rangle_{\natural}=0$ |
 | $J^2=-I$ | Abstract complex structure |
 | $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ | Complex structure of the algebra |
 | $\tilde R_\Phi=i r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position of the material sector |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The one metric, on the four $Q_\mu$ |
-| $ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}dR_\mu dQ_\nu=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ | Interval in the length coordinate; null cone $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=1$ |
+| $\delta_{\imath\jmath}=(1,1,1,1)$ | The one metric, on the four $Q_{\imath}$ |
+| $ds^2=\sum_{\imath,\jmath}\delta_{\imath\jmath}dR_{\imath} dQ_{\jmath}=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ | Interval in the length coordinate; null cone $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=1$ |
 | $t'=r'_t/c$, $g_{tt}=-c^2$ | The temporal slot in seconds; the interval there is $-c^2dt'^2+d\vec r^2$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium speed (the local temporal conversion), vacuum speed |
 | $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |

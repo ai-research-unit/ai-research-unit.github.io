@@ -82,7 +82,7 @@ where the right-hand side uses only $i^2=-1$ and $e_t=1$: expanding the exponent
 The free biquaternion Dirac equation contains no charge. Charge enters only through the coupling of the field to the four-potential $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A\in\mathbb{B}_{\Phi}$. In the intrinsic form this is the minimal substitution
 
 $$
-\tilde P_{\Phi} \to \tilde P_{\Phi} - ϙ\tilde A_{\Phi}, \qquad\text{equivalently}\qquad p_\mu \to p_\mu - ϙA_\mu,
+\tilde P_{\Phi} \to \tilde P_{\Phi} - ϙ\tilde A_{\Phi}, \qquad\text{equivalently}\qquad p_{\imath} \to p_{\imath} - ϙA_{\imath},
 $$
 
 with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ by the gauge-covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}$ of *Operator and Calculus Conventions* and its conjugate $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$, both carrying $+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$, and derives the coupled equation
@@ -116,7 +116,7 @@ The electron's spin is where the framework is strongest and where the distinctio
 
 **Derived: the representation.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique irreducible left action, on a complex space of dimension two, and the group of unit elements of the quaternionic norm is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group (*Norm and Pairing Conventions*). A field in that space carries the representation $(\tfrac12,0)$; the field of this article splits by the chirality into two such parts and carries $(\tfrac12,0)\oplus(0,\tfrac12)$. In either case the spin is $\tfrac12$: a rotation by $2\pi$ acts as $-e_t$ on the two-dimensional space and as $+e_t$ on the four-vectors of $\mathbb{B}_{\Phi}$. The twofold, double-valued character of electron spin is therefore a consequence of where the field lives, not an independent postulate. The spin rotations are the real unit quaternions, forming $SU(2)$.
 
-**Derived: the state and observable structure.** The electron's spin state along a declared unit direction $\vec u$ is the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ of *Algebra and Element Conventions*, and its spin observables are the Hermitian elements $i \sum_\eta h_\eta\vec e_\eta\in\mathbb{B}_{\Psi}$. With the Born pairing of *Norm and Pairing Conventions* the state along $\vec u$ returns the weight $n_\nu h_\nu$ on $\tilde H_\Psi = i\sum_\eta h_\eta\vec e_\eta$; in particular the state along $\vec e_z$ returns $1$ on $i\vec e_z$ and $0$ on $i\vec e_x$, the values the spin along $z$ requires.
+**Derived: the state and observable structure.** The electron's spin state along a declared unit direction $\vec u$ is the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ of *Algebra and Element Conventions*, and its spin observables are the Hermitian elements $i \sum_\eta h_\eta\vec e_\eta\in\mathbb{B}_{\Psi}$. With the Born pairing of *Norm and Pairing Conventions* the state along $\vec u$ returns the weight $n_{\jmath} h_{\jmath}$ on $\tilde H_\Psi = i\sum_\eta h_\eta\vec e_\eta$; in particular the state along $\vec e_z$ returns $1$ on $i\vec e_z$ and $0$ on $i\vec e_x$, the values the spin along $z$ requires.
 
 **Inserted: the magnitude.** The spin element is $\tilde S_{\Psi,\eta} =\frac{h}{4\pi}(i\vec e_\eta)$. The element $i\vec e_\eta$ is Hermitian and squares to $+e_t$, so it is the algebra's spin component and has the two eigenvalues $\pm1$. The factor $\frac{h}{4\pi}$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\frac{h}{2\pi}$ is physics inserted from outside.
 
@@ -254,7 +254,7 @@ Two gaps are structural and cannot be closed by better notation: the mass value 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The sections above are written in basis operators; this section writes the same basis operators as gamma matrices, for readers who want the standard notation. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -272,31 +272,31 @@ $$
 
 $\gamma_5$ is the basis operator of the chirality operator $\Gamma:\tilde{Ξ}\mapsto -i\,e_t\,\tilde{Ξ}\,\vec e_z = -iR_{\mathrm{pau},\vec e_z}$, which acts on the Dirac module. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, where $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of $-1$ that complexifies the real subalgebra $\mathbb{B}_{\mathbb{R}}=\mathbb{B}_{H}$ ($\tilde{Ζ}_{\mathrm{ad}}^2=-1$, $[\tilde{Ζ}_{\mathrm{ad}},i]=0$), is the difference of the two central idempotents of the complexified algebra, so $\xi^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-1)=e_t$. The grading $\xi$ is central and belongs to the algebra, $\Gamma$ is its representative on the module, and $\gamma_5$ is that representative written as a basis operator.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The four generator basis operators of the older display are these gammas, $\gamma_\mu$, and the charge-conjugation basis operator is $C = -iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z} = i\gamma_2\gamma_0$, the antisymmetric matrix with $C^2=-I_4$ that reverses all four gammas under transposition.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The four generator basis operators of the older display are these gammas, $\gamma_{\imath}$, and the charge-conjugation basis operator is $C = -iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z} = i\gamma_2\gamma_0$, the antisymmetric matrix with $C^2=-I_4$ that reverses all four gammas under transposition.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}
++\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
-The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_{\imath}$, so that $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_{\imath}=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
 ## Summary
 

@@ -56,7 +56,7 @@ and conversely every idempotent of $\mathbb{B}_{\Psi}$ has this form. The comple
 
 ### The Biquaternion Norm of a State
 
-The biquaternion norm of the algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On the state it evaluates to a scalar multiple of the identity:
+The biquaternion norm of the algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$. On the state it evaluates to a scalar multiple of the identity:
 
 $$
 \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}^{\natural} = \left(\tfrac{1}{2}\right)^2 + \left(\tfrac{i r_1}{2}\right)^2 + \left(\tfrac{i r_2}{2}\right)^2 + \left(\tfrac{i r_3}{2}\right)^2 = \tfrac{1}{4}\left(1 - |\vec s_{\Psi}|^2\right)e_t .
@@ -429,7 +429,7 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, rank one) |
 | $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec s_{\Psi}|)$ | Eigenvalues (pointer probabilities) of the state |
 | $2\,\mathrm{Sc}(\tilde{Q})$, $2\,\mathrm{Sc}(e_t)=2$ | Doubled scalar part |
-| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec s_{\Psi}|^2)e_t$ | Biquaternion norm of a state |
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac{1}{4}(|\vec s_{\Psi}|^2-1)e_t$ | Deviation from idempotency (mixedness) |
 | $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+|\vec s_{\Psi}|^2)$ | Purity |
@@ -448,7 +448,7 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $\tilde Q(r'_t)$, $\tilde Q\tilde Q^{*} = e_t$ | Matrix-$*$-unitary rotor (reversible flow) |
 | $H(w) = -\sum_a w_a\log w_a$ | Preparation entropy |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

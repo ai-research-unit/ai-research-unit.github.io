@@ -23,7 +23,7 @@ The order. Kinematics, then the tensor decomposition, then scaling, then the par
 
 ## Kinematics: What Is Measured
 
-The metric, stated once. $g_{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$ throughout, so a spacelike exchange has $q^2=-Q^2<0$ and the transverse projector below is the one these signs give. No vertex is computed in this article, so the incoming-momentum convention of [the QCD article](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html) does not enter; where a trace is taken, it is the Dirac trace of a massless line and carries no sign ambiguity.
+The metric, stated once. $g_{\imath\jmath}=\mathrm{diag}(1,-1,-1,-1)$ throughout, so a spacelike exchange has $q^2=-Q^2<0$ and the transverse projector below is the one these signs give. No vertex is computed in this article, so the incoming-momentum convention of [the QCD article](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html) does not enter; where a trace is taken, it is the Dirac trace of a massless line and carries no sign ambiguity.
 
 The process and the variables. An electron of momentum $k_\Phi$ scatters off a proton of momentum $p$ and emerges with momentum $k'$. The exchanged photon (or $Z$) carries
 
@@ -60,7 +60,7 @@ The measured range. At HERA, $E_e=27.5$ GeV against $E_p=920$ GeV gives $s=4E_eE
 
 ## The Hadronic Tensor and the Two Structure Functions
 
-**The cross section factorises into a lepton tensor and a hadron tensor.** With $L_{\mu\nu}=2\left(k_\mu k'_\nu+k_\nu k'_\mu-g_{\mu\nu}k\cdot k'\right)$ for an unpolarised lepton, the cross section is the contraction of $L$ with $W$, and carrying out the contraction leaves two independent coefficients:
+**The cross section factorises into a lepton tensor and a hadron tensor.** With $L_{\imath\jmath}=2\left(k_{\imath} k'_{\jmath}+k_{\jmath} k'_{\imath}-g_{\imath\jmath}k\cdot k'\right)$ for an unpolarised lepton, the cross section is the contraction of $L$ with $W$, and carrying out the contraction leaves two independent coefficients:
 
 $$
 \frac{d^2\sigma}{dx\,dQ^2}=\frac{4\pi\alpha^2}{xQ^4}\left[\left(1-y-\frac{M^2x^2y^2}{Q^2}\right)F_2(x,Q^2)+y^2x\,F_1(x,Q^2)\right] ,
@@ -71,7 +71,7 @@ and the two coefficients are what the experiment separates. The combination in b
 The tensor decomposition. Lorentz invariance and parity fix the hadronic tensor to two independent structures for an unpolarised target:
 
 $$
-W_{\mu\nu}=-W_1\left(g_{\mu\nu}-\frac{q_\mu q_\nu}{q^2}\right)+\frac{W_2}{M^2}\left(p_\mu-\frac{p\cdot q}{q^2}q_\mu\right)\left(p_\nu-\frac{p\cdot q}{q^2}q_\nu\right) ,
+W_{\imath\jmath}=-W_1\left(g_{\imath\jmath}-\frac{q_{\imath} q_{\jmath}}{q^2}\right)+\frac{W_2}{M^2}\left(p_{\imath}-\frac{p\cdot q}{q^2}q_{\imath}\right)\left(p_{\jmath}-\frac{p\cdot q}{q^2}q_{\jmath}\right) ,
 $$
 
 with the two scalar functions $W_1$ and $W_2$. The reason there are exactly two is a count: the available vectors are $p$ and $q$, the metric is one more tensor, and the antisymmetric $\epsilon$ is excluded by parity for an unpolarised target. Two structures, two functions, and no more.
@@ -84,7 +84,7 @@ F_1(x,Q^2)=M\,W_1 ,
 F_2(x,Q^2)=\digamma_{\mathrm{str}}\,W_2 ,
 $$
 
-and the factors of $M$ and $\nu$ are chosen so that both are dimensionless and, in the scaling limit, functions of $x$ alone. A third function $F_3$ exists and is measured with neutrinos; it is parity-odd and requires a weak exchange, which is [the neutral-current article's](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html) territory rather than this one's.
+and the factors of $M$ and ${\jmath}$ are chosen so that both are dimensionless and, in the scaling limit, functions of $x$ alone. A third function $F_3$ exists and is measured with neutrinos; it is parity-odd and requires a weak exchange, which is [the neutral-current article's](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html) territory rather than this one's.
 
 ## Bjorken Scaling
 
@@ -127,18 +127,18 @@ and the reason the struck parton's fraction equals $x$ is the elastic condition 
 The partonic tensor. For a massless spin-$\tfrac12$ parton of charge $e$ and momentum $k_\Phi$,
 
 $$
-W^{(0)}_{\mu\nu}=e^2\,\delta\!\left((k+q)^2\right)\mathrm{Tr}\!\left[\not k\,\gamma_\mu(\not k+\not q)\gamma_\nu\right] ,
+W^{(0)}_{\imath\jmath}=e^2\,\delta\!\left((k+q)^2\right)\mathrm{Tr}\!\left[\not k\,\gamma_{\imath}(\not k+\not q)\gamma_{\jmath}\right] ,
 $$
 
 up to an overall constant. The trace is standard,
 
 $$
-\mathrm{Tr}\!\left[\not k\,\gamma_\mu\not l\,\gamma_\nu\right]=4\left[k_\mu l_\nu+k_\nu l_\mu-g_{\mu\nu}\,k\cdot l\right] ,
+\mathrm{Tr}\!\left[\not k\,\gamma_{\imath}\not l\,\gamma_{\jmath}\right]=4\left[k_{\imath} l_{\jmath}+k_{\jmath} l_{\imath}-g_{\imath\jmath}\,k\cdot l\right] ,
 \qquad
 l=k+q .
 $$
 
-The three lines. Contract with $q_\mu$, and use $k^2=l^2=0$ together with $l=k+q$:
+The three lines. Contract with $q_{\imath}$, and use $k^2=l^2=0$ together with $l=k+q$:
 
 $$
 q\cdot k=\frac{l^2-k^2-q^2}{2}=\frac{Q^2}{2} ,
@@ -151,7 +151,7 @@ $$
 so that
 
 $$
-\sum_\mu\varepsilon_\mu q_\mu W^{(0)}_{\mu\nu}\propto 4\left[\frac{Q^2}{2}l_\nu-\frac{Q^2}{2}k_\nu-\frac{Q^2}{2}q_\nu\right]=\frac{4Q^2}{2}\left[l_\nu-k_\nu-q_\nu\right]=0 .
+\sum_{\imath}\varepsilon_{\imath} q_{\imath} W^{(0)}_{\imath\jmath}\propto 4\left[\frac{Q^2}{2}l_{\jmath}-\frac{Q^2}{2}k_{\jmath}-\frac{Q^2}{2}q_{\jmath}\right]=\frac{4Q^2}{2}\left[l_{\jmath}-k_{\jmath}-q_{\jmath}\right]=0 .
 $$
 
 What the vanishing means. The partonic tensor is transverse to $q$, so it contains no longitudinal structure, so the coefficient of the $q$-longitudinal projector vanishes, so the longitudinal structure function vanishes, $F_L=0$ — which is
@@ -162,7 +162,7 @@ $$
 
 the Callan–Gross relation. It is not an extra assumption about the proton. It is the Dirac trace of a massless spin-$\tfrac12$ line, and it holds whenever the struck object has spin $\tfrac12$, is massless, and is on shell. The relation is between the $F$'s and not between the $W$'s: with $F_1=MW_1$ and $F_2=\digamma_{\mathrm{str}} W_2$ as defined above, $F_2=2xF_1$ is $W_2=(2xM/\digamma_{\mathrm{bjk}})W_1$, so the frequently quoted $W_2=2xW_1$ is the same relation in a different normalisation of $W$, not another one.
 
-**The contrast with spin zero, which is the reason the relation is a spin measurement.** For a scalar constituent the electromagnetic vertex is $(2k+q)_\mu$ and the tensor is proportional to $(2k+q)_\mu(2k+q)_\nu$. That tensor has no transverse part at all — $W_1=0$ and $W_2\neq0$ — so $F_1=0$ and the Callan–Gross relation fails maximally. A measurement of the ratio of the two structure functions is therefore a measurement of the constituents' spin, and the fact that $2xF_1/F_2$ comes out one, where a scalar constituent would give zero, is the discovery that the charged constituents of the proton have spin $\tfrac12$.
+**The contrast with spin zero, which is the reason the relation is a spin measurement.** For a scalar constituent the electromagnetic vertex is $(2k+q)_{\imath}$ and the tensor is proportional to $(2k+q)_{\imath}(2k+q)_{\jmath}$. That tensor has no transverse part at all — $W_1=0$ and $W_2\neq0$ — so $F_1=0$ and the Callan–Gross relation fails maximally. A measurement of the ratio of the two structure functions is therefore a measurement of the constituents' spin, and the fact that $2xF_1/F_2$ comes out one, where a scalar constituent would give zero, is the discovery that the charged constituents of the proton have spin $\tfrac12$.
 
 ## R, and What Its Nonzero Value Says
 
@@ -361,9 +361,9 @@ The ledger.
 
 | Item | Status |
 |---|---|
-| $Q^2$, $x$, $y$, $\nu$ and their relations | **Standard kinematics**; $x$ invariant under the algebra's collinear dilation |
+| $Q^2$, $x$, $y$, ${\jmath}$ and their relations | **Standard kinematics**; $x$ invariant under the algebra's collinear dilation |
 | The null direction and its unipotent exponential | **Derived in the algebra**; the light-cone structure's carrier |
-| The two-structure decomposition of $W_{\mu\nu}$ | **Imported.** Lorentz invariance and parity |
+| The two-structure decomposition of $W_{\imath\jmath}$ | **Imported.** Lorentz invariance and parity |
 | Bjorken scaling | **Imported.** Dimensional analysis plus pointlike constituents |
 | The impulse approximation and the infinite-momentum frame | **Imported.** An approximation, with $\alpha_s$ corrections |
 | $F_2=2xF_1$ | **Derived here** from the Dirac trace of a massless spin-$\tfrac12$ line |
@@ -383,7 +383,7 @@ What this article does not do. It does not compute a cross section, does not fit
 
 Deep inelastic scattering measures two functions of two variables, and the parton model is the statement that at large $Q^2$ they collapse to functions of one: $F_2(x)=\sum_fe_f^2x(q_f+\bar q_f)$. The collapse is dimensional analysis plus the elastic condition $2xp\cdot q=Q^2$, and the variable $x$ is the fraction of null momentum, invariant under the collinear boost because the denominator $2p\cdot q$ is.
 
-The two structure functions are related by the Dirac trace. Contracting the massless spin-$\tfrac12$ partonic tensor with $q_\mu$ gives zero, using $q\cdot k=Q^2/2$, $q\cdot l=-Q^2/2$ and $k\cdot l=Q^2/2$, so the tensor is purely transverse and $F_2=2xF_1$. For a scalar constituent the tensor has no transverse part at all and $F_1=0$, so the ratio is a spin measurement. The measured $R\approx0.18$ says the spin-$\tfrac12$ picture is right, with one $\alpha_s$ source of violation and one power correction behind the residual.
+The two structure functions are related by the Dirac trace. Contracting the massless spin-$\tfrac12$ partonic tensor with $q_{\imath}$ gives zero, using $q\cdot k=Q^2/2$, $q\cdot l=-Q^2/2$ and $k\cdot l=Q^2/2$, so the tensor is purely transverse and $F_2=2xF_1$. For a scalar constituent the tensor has no transverse part at all and $F_1=0$, so the ratio is a spin measurement. The measured $R\approx0.18$ says the spin-$\tfrac12$ picture is right, with one $\alpha_s$ source of violation and one power correction behind the residual.
 
 The densities are functions, not numbers: this is the one place in the series where the corpus imports something it cannot even in principle compute. Three sum rules constrain them, and only two of the three are tests. Momentum is imposed rather than tested, and baryon number holds. Gottfried fails: $0.235\pm0.026$ against $\tfrac13$, which measures an excess of $\bar d$ over $\bar u$ of $0.147\pm0.039$.
 
@@ -405,13 +405,13 @@ The framework supplies the null direction, and with it the light-cone decomposit
 | $x=Q^2/(2p\cdot q)$ | Bjorken variable; the parton's fraction of null momentum |
 | $y=p\cdot q/(p\cdot k)$ | Inelasticity, $Q^2=sxy$; $s=2ME$ fixed target, $4E_eE_p$ collider |
 | $e_f$ | Quark charge in units of $e$; the weight $e_f^2$ in $F_2$ |
-| $L_{\mu\nu}$ | Lepton tensor, $2(k_\mu k'_\nu+k_\nu k'_\mu-g_{\mu\nu}k\cdot k')$ |
+| $L_{\imath\jmath}$ | Lepton tensor, $2(k_{\imath} k'_{\jmath}+k_{\jmath} k'_{\imath}-g_{\imath\jmath}k\cdot k')$ |
 | $p^\pm=(p^0\pm p^3)/\sqrt2$ | Light-cone components; $x=k^+/p^+$ |
 | $F_L=F_2\left(1+\tfrac{4M^2x^2}{Q^2}\right)-2xF_1$ | Longitudinal structure function; $R=F_L/(2xF_1)$, and $F_L=0$ for massless spin-$\tfrac12$ at leading order |
 | $z$, $\xi$ | Momentum fraction in the splitting ($z$) and in the convolution ($\xi$) |
 | $c_2$ | Two-loop coefficient of the Gross–Llewellyn Smith sum rule, $\tfrac{55}{12}-\tfrac13N_f$ |
-| $g_{\mu\nu}$ | Metric, $\mathrm{diag}(1,-1,-1,-1)$ |
-| $W_{\mu\nu}$ | Hadronic tensor |
+| $g_{\imath\jmath}$ | Metric, $\mathrm{diag}(1,-1,-1,-1)$ |
+| $W_{\imath\jmath}$ | Hadronic tensor |
 | $W_1$, $W_2$ | Its two scalar coefficients |
 | $F_1=MW_1$, $F_2=\digamma_{\mathrm{str}} W_2$ | Dimensionless structure functions |
 | $F_3$ | Parity-odd structure function, measured with neutrinos |

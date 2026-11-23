@@ -18,7 +18,7 @@ The fourth is that **the plane-wave amplitude is strictly spacelike**. For a pla
 
 **A note on the sector names.** The subscripts of $\Sigma_{01}$ and $\Sigma_{00}$ are the corpus's two predicates, $N=0$ and $B^2\neq0$, and not a count of anything. The Dirac article fixes the notation, and this article uses it unchanged.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\mu^2=-e_t$ and central scalar imaginary $i$; the material sector is $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and the vector part is $\mathbb{B}_V=\mathrm{span}_\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$; the quaternionic norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, real on $\mathbb{B}_\Phi$; the gradient is $\tilde\nabla_\Phi$ with conjugate $(\tilde\nabla_\Phi)^{\natural}$ and $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and $k_m=\frac{2\pi mc}{h}$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_{\imath}^2=-e_t$ and central scalar imaginary $i$; the material sector is $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and the vector part is $\mathbb{B}_V=\mathrm{span}_\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$; the quaternionic norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, real on $\mathbb{B}_\Phi$; the gradient is $\tilde\nabla_\Phi$ with conjugate $(\tilde\nabla_\Phi)^{\natural}$ and $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and $k_m=\frac{2\pi mc}{h}$.
 
 ## The Equation and the Field
 
@@ -43,14 +43,14 @@ $$
 which is real, and which is the Minkowski square of the four-vector $(a'_t,\vec A)$. Write $\tilde F=f_x\vec e_x+f_y\vec e_y+f_z\vec e_z$ with complex coefficients. Then
 
 $$
-\langle\tilde F\rangle_\natural=\sum_\mu f_\mu^2 ,
+\langle\tilde F\rangle_\natural=\sum_{\imath} f_{\imath}^2 ,
 $$
 
 which is complex in general, and which is $-F^2$ because a pure vector satisfies $\tilde F^{\natural}=-\tilde F$.
 
 **Definition.** A field is **degenerate** at a point when its norm vanishes there; it is degenerate when the condition holds at every point of its domain. For the potential that is the light cone of field values; for the field strength it is $\tilde F^2=0$.
 
-**A reading of the definition.** The norm that decides degeneracy is the quaternionic one, $\langle\cdot\rangle_\natural$. The definite form $\langle\cdot\rangle_*=\sum_\mu\lvert Q_\mu\rvert^2$ measures the size and never vanishes off the apex. A degenerate field has a size and no $\natural$ norm, and the two statements are not in conflict: they are two different forms, and only the indefinite one has a cone.
+**A reading of the definition.** The norm that decides degeneracy is the quaternionic one, $\langle\cdot\rangle_\natural$. The definite form $\langle\cdot\rangle_*=\sum_{\imath}\lvert Q_{\imath}\rvert^2$ measures the size and never vanishes off the apex. A degenerate field has a size and no $\natural$ norm, and the two statements are not in conflict: they are two different forms, and only the indefinite one has a cone.
 
 ## The Lightlike Set of the Potential
 
@@ -112,7 +112,7 @@ which is Hermitian, idempotent and null. The sector therefore keeps a null direc
 
 *Proposition.* $\Sigma_{01}\cap\mathbb{B}_V=\{0\}$.
 
-*Proof.* Let $\tilde F$ be a pure vector and suppose $\tilde F^2=\lambda\tilde F$ with $\lambda\neq0$. A pure vector squares to a scalar, because the cross terms $\vec e_\mu\vec e_\nu+\vec e_\nu\vec e_\mu$ vanish for $\mu\neq\nu$; and $\lambda\tilde F$ is a pure vector. A scalar equal to a pure vector vanishes, so $\lambda\tilde F=0$, and since $\lambda\neq0$ the field vanishes.
+*Proof.* Let $\tilde F$ be a pure vector and suppose $\tilde F^2=\lambda\tilde F$ with $\lambda\neq0$. A pure vector squares to a scalar, because the cross terms $\vec e_{\imath}\vec e_{\jmath}+\vec e_{\jmath}\vec e_{\imath}$ vanish for ${\imath}\neq\jmath$; and $\lambda\tilde F$ is a pure vector. A scalar equal to a pure vector vanishes, so $\lambda\tilde F=0$, and since $\lambda\neq0$ the field vanishes.
 
 **The trace decides.** The two results above are one result read twice. The sector is fixed by the trace: $\Sigma_{01}$ needs $\lambda=2Q_t\neq0$ and $\Sigma_{00}$ needs a vanishing trace. The material sector's trace is $2i\,a'_t$, which is non-zero for every non-zero lightlike potential; the vector part's trace is zero identically, because a pure vector has no scalar component. So each carrier can hold exactly one of the two sectors, and which one is decided before any field is chosen.
 
@@ -122,11 +122,11 @@ The table collects the comparison.
 | --- | --- | --- |
 | carrier | $\mathbb{B}_\Phi$ | $\mathbb{B}_V$ |
 | real dimension | $4$ | $6$ |
-| norm | $-(a'_t)^2+\vec A^2$, real | $\sum_\mu f_\mu^2$, complex |
+| norm | $-(a'_t)^2+\vec A^2$, real | $\sum_{\imath} f_{\imath}^2$, complex |
 | cone, in equations | one real | two real |
 | cone, dimension and codimension | $3$, and $1$ | $4$, and $2$ |
 | trace $2Q_t$ | $2i\,a'_t$ | $0$ |
-| $B^2$ | $\vec A^2$ | $\sum_\mu f_\mu^2$ |
+| $B^2$ | $\vec A^2$ | $\sum_{\imath} f_{\imath}^2$ |
 | sector of the cone | $\Sigma_{01}$ | $\Sigma_{00}$ |
 
 **One sector per object.** In the Dirac case one object, the field, contains both sectors: the kernel of a null multiplier carries one line of each. In the Proca case the two sectors are separated between the two objects, and no single element of the Proca field contains both. That is the sharpest structural difference from the Dirac article, and it is a consequence of the trace and of nothing else.
@@ -288,7 +288,7 @@ Degenerate values of the potential therefore arise from superpositions, which cr
 | $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ | Four-potential, $a'_t$ and $\vec A$ real |
 | $\tilde F=\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | Field strength, a pure vector |
 | $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; real on $\mathbb{B}_\Phi$ |
-| $\langle\tilde Q\rangle_*=\sum_\mu\lvert Q_\mu\rvert^2$ | Definite norm; the size, never zero off the apex |
+| $\langle\tilde Q\rangle_*=\sum_{\imath}\lvert Q_{\imath}\rvert^2$ | Definite norm; the size, never zero off the apex |
 | $\mathcal N$ | The cone $\langle\tilde Q\rangle_\natural=0$, the zero divisors |
 | $\Sigma_{01}$, $\Sigma_{00}$ | The sectors $Q^2=\lambda Q$ with $\lambda\neq0$, and $Q^2=0$ |
 | $\lambda=2Q_t$ | The non-zero eigenvalue of a $\Sigma_{01}$ element |

@@ -358,7 +358,7 @@ Three gaps are left visible. First, the framework supplies no action, so the bet
 | $\tilde{P}_{\Phi} = i(E/c)\,e_t + \vec p$ | Wave biquaternion; material for real $E$ |
 | $\tilde{P}_{\Phi,E} = ik_{\mathrm{eu},0}\,e_t + \vec p \in \mathbb{B}_{\Phi}$ | Euclidean wave biquaternion of the form route |
 | $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = N$ | Biquaternion norm; central; cutoff invariant |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | Hermitian form; real, positive definite; carries the positivity of the cutoff |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_{\imath} Q_{1\imath}\overline{Q_{2\imath}}$ | Hermitian form; real, positive definite; carries the positivity of the cutoff |
 | $k_{\mathrm{eu}}^2 = \langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*} = \langle -k_{\mathrm{eu},0}\,e_t+\vec p\rangle_{\natural}$ (Euclidean) | Euclidean momentum squared; the two routes agree |
 | $\Lambda$, $b$, $\delta\ell = \log b$ | Cutoff, shell ratio, RG step toward the IR |
 | $\mu$ | Renormalization scale |

@@ -18,7 +18,7 @@ $$
 \mathsf{M}_2(i \vec e_\eta) = \sigma_\eta, \qquad \mathsf{M}_2\bigl(h_t e_t + i \sum_\eta h_\eta \vec e_\eta\bigr) = h_t I_2 + \sum_\eta h_\eta \sigma_\eta .
 $$
 
-The scalar imaginary is $i$, the quaternion basis satisfies $e_t=1$, $\vec e_\eta^2=-e_t$, and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\,\vec e_\lambda$ for $\mu\neq\nu$. The reduced Planck constant $\frac{h}{2\pi}$ is written explicitly; the algebra literature often measures the action in units of $\frac{h}{2\pi}$, and the commutation relation quoted in the scope, $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$, is the form of the relations below with the action in units of $\frac{h}{2\pi}$.
+The scalar imaginary is $i$, the quaternion basis satisfies $e_t=1$, $\vec e_\eta^2=-e_t$, and $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda}\,\vec e_\lambda$ for ${\imath}\neq\jmath$. The reduced Planck constant $\frac{h}{2\pi}$ is written explicitly; the algebra literature often measures the action in units of $\frac{h}{2\pi}$, and the commutation relation quoted in the scope, $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$, is the form of the relations below with the action in units of $\frac{h}{2\pi}$.
 
 ## The Angular-Momentum Algebra
 
@@ -72,10 +72,10 @@ $$
 g_\eta = -\tfrac{1}{2} \vec e_\eta \in \mathbb{B}_{\Phi} , \qquad \eta = 1, 2, 3 .
 $$
 
-Using $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$ — the commutator form of the quaternion multiplication rule $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ — we obtain
+Using $[\vec e_{\imath},\vec e_{\jmath}] = 2\epsilon_{\imath\jmath\lambda}\vec e_\lambda$ for ${\imath}\neq\jmath$ — the commutator form of the quaternion multiplication rule $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ — we obtain
 
 $$
-[g_\mu,g_\nu] = \tfrac{1}{4}[\vec e_\mu,\vec e_\nu] = \tfrac{1}{2}\epsilon_{\mu\nu\lambda} \vec e_\lambda = -\epsilon_{\mu\nu\lambda} g_\lambda .
+[g_{\imath},g_{\jmath}] = \tfrac{1}{4}[\vec e_{\imath},\vec e_{\jmath}] = \tfrac{1}{2}\epsilon_{\imath\jmath\lambda} \vec e_\lambda = -\epsilon_{\imath\jmath\lambda} g_\lambda .
 $$
 
 This is the standard **anti-Hermitian** convention for the generators of $SU(2)$, familiar from $\mathrm{SU}(2)$ in its matrix form $g_\eta \leftrightarrow \tfrac{i}{2}\sigma_\eta$. Exponentiating a generator with the standard sign of the rotation operator gives the rotation through $\theta_{\mathrm{rat}}$ about $\vec u$:
@@ -185,19 +185,19 @@ This is the content of the parent article, expressed in the notation needed belo
 
 ## Commutation Relations as Biquaternion Commutators
 
-The spin commutation relations are computed entirely inside the algebra. From $(i\vec e_\mu)(i\vec e_\nu) = i^2 \vec e_\mu \vec e_\nu = -\vec e_\mu \vec e_\nu$ we get
+The spin commutation relations are computed entirely inside the algebra. From $(i\vec e_{\imath})(i\vec e_{\jmath}) = i^2 \vec e_{\imath} \vec e_{\jmath} = -\vec e_{\imath} \vec e_{\jmath}$ we get
 
 $$
-[i\vec e_\mu, i\vec e_\nu] = -[\vec e_\mu,\vec e_\nu] = -2\epsilon_{\mu\nu\lambda}\vec e_\lambda = 2i\,\epsilon_{\mu\nu\lambda}\,(i\vec e_\lambda),
+[i\vec e_{\imath}, i\vec e_{\jmath}] = -[\vec e_{\imath},\vec e_{\jmath}] = -2\epsilon_{\imath\jmath\lambda}\vec e_\lambda = 2i\,\epsilon_{\imath\jmath\lambda}\,(i\vec e_\lambda),
 $$
 
 where the last step uses $\vec e_\eta = -i\,(i\vec e_\eta)$. Multiplying by $(\frac{h}{4\pi})^2$,
 
 $$
-\boxed{\;[\tilde{S}_{\Psi,\mu},\tilde{S}_{\Psi,\nu}] =\frac{h^{2}}{16\pi^{2}}\,[i\vec e_\mu,i\vec e_\nu] =\frac{i\,h^{2}}{8\pi^{2}}\,\epsilon_{\mu\nu\lambda}\,(i\vec e_\lambda) =i\,\frac{h}{2\pi}\,\epsilon_{\mu\nu\lambda}\,\tilde{S}_{\Psi,\lambda}}.
+\boxed{\;[\tilde{S}_{\Psi,\imath},\tilde{S}_{\Psi,\jmath}] =\frac{h^{2}}{16\pi^{2}}\,[i\vec e_{\imath},i\vec e_{\jmath}] =\frac{i\,h^{2}}{8\pi^{2}}\,\epsilon_{\imath\jmath\lambda}\,(i\vec e_\lambda) =i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\lambda}\,\tilde{S}_{\Psi,\lambda}}.
 $$
 
-The only inputs are the multiplication rule $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$, the square $\vec e_\eta^2 = -e_t$, and $i^2=-1$. Reading the result backwards, the angular-momentum algebra in the biquaternion setting is the statement that the Hermitian basis elements $i\vec e_\eta$ close under commutation with a structure constant proportional to $i$ — a fact that follows from the quaternion product and from the sign $i^2=-1$ that makes $i\vec e_\eta$ Hermitian.
+The only inputs are the multiplication rule $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda}\vec e_\lambda$, the square $\vec e_\eta^2 = -e_t$, and $i^2=-1$. Reading the result backwards, the angular-momentum algebra in the biquaternion setting is the statement that the Hermitian basis elements $i\vec e_\eta$ close under commutation with a structure constant proportional to $i$ — a fact that follows from the quaternion product and from the sign $i^2=-1$ that makes $i\vec e_\eta$ Hermitian.
 
 The Casimir is likewise immediate. Since $(i\vec e_\eta)^2 = i^2 \vec e_\eta^2 = (-1)(-e_t) = +e_t$,
 
@@ -378,7 +378,7 @@ It is useful to separate the two kinds of result that the article contains.
 **Genuinely algebraic consequences of the biquaternion setting.**
 
 - The rotation generators sit in the Lie algebra $\mathbb{B}_{\Phi}$ of the $*$-unitary group; the compact generators are $-\tfrac12 \vec e_\eta$ inside the real quaternion subspace $\mathbb{B}_{H}$, and the rotation group is the group of unit real quaternions.
-- The spin commutation relations $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}$ follow from the quaternion product rule $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$, the square $\vec e_\eta^2=-e_t$, and $i^2=-1$; the Hermiticity of $i\vec e_\eta$ is what places the observables in $\mathbb{B}_{\Psi}$.
+- The spin commutation relations $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}$ follow from the quaternion product rule $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmath\lambda}\vec e_\lambda$, the square $\vec e_\eta^2=-e_t$, and $i^2=-1$; the Hermiticity of $i\vec e_\eta$ is what places the observables in $\mathbb{B}_{\Psi}$.
 - The commutator of two Hermitian observables is $-2(\vec h_\Psi\times\vec k_\Phi)$, a pure real quaternion in $\mathbb{B}_{\Phi}\cap\mathbb{B}_{H}$: the commutator of observables is a rotation generator.
 - The pure-spin Casimir $\tilde S_{\Psi}^2=\frac{3\,h^{2}}{16\pi^{2}}e_t$ is a central element of $\mathbb{B}$, and its value $\frac{h^{2}}{4\pi^{2}}\,s\,(s+1)$ with $s=\tfrac12$ follows from $(i\vec e_\eta)^2=+e_t$.
 - The spin eigenstates are the idempotents $\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, and $\sum_\eta \vec u_\eta\tilde S_{\Psi,\eta}$ has eigenvalues $\pm\frac{h}{4\pi}$ on them.
@@ -413,7 +413,7 @@ The spin ladder operators are nilpotent and null in the biquaternion norm, and h
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq \nu)$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmath\lambda}\vec e_\lambda$ $(\imath\neq \jmath)$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace, Lie algebra of the $*$-unitary group |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace, observables and states |

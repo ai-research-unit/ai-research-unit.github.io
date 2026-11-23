@@ -399,7 +399,7 @@ What the framework does **not** supply is the dynamics. The Thomson cross-sectio
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Each generator is one basis operator,
 $$
@@ -424,7 +424,7 @@ with the interval and the orientation
 $$
 -{r'_{t}}^2+r_x^2+r_y^2+r_z^2,\qquad \epsilon_{0123}=+1 .
 $$
-The four directions carry the unit metric $\delta_{\mu\nu}$, and the one minus of the interval is the square of the $i$ in $Q_t=i q'_t$. The time generator is a **right** multiplication, the three spatial ones are **left-times-right**, and the mass unit $L_{\mathrm{pau},e_t}$ is the identity: the asymmetry is the frame, not a choice, and it is why the gradient $\tilde\nabla_\Phi$ and the momentum $\tilde P_{\Phi}$ enter the basis operator formulation with one generator of each type.
+The four directions carry the unit metric $\delta_{\imath\jmath}$, and the one minus of the interval is the square of the $i$ in $Q_t=i q'_t$. The time generator is a **right** multiplication, the three spatial ones are **left-times-right**, and the mass unit $L_{\mathrm{pau},e_t}$ is the identity: the asymmetry is the frame, not a choice, and it is why the gradient $\tilde\nabla_\Phi$ and the momentum $\tilde P_{\Phi}$ enter the basis operator formulation with one generator of each type.
 
 Every factor of $i$ in these basis operators is the same central unit, so $i^2=-1$; the squares then come out with the weight's signs, and the two minus signs involved are distinct. For the time generator,
 $$
@@ -458,43 +458,43 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}
++\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
-The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_{\imath}$, so that $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_{\imath}=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
 The fifth basis operator is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-R_{\mathrm{pau},\vec e_z}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, the same basis operator written in the two displays.
 
-The four contraction sums are statements about the squares, because a basis operator's square is. For generators that all square to $+I_4$ (written $\Gamma_\mu$ here), they take the textbook values,
+The four contraction sums are statements about the squares, because a basis operator's square is. For generators that all square to $+I_4$ (written $\Gamma_{\imath}$ here), they take the textbook values,
 $$
-\sum_\mu\Gamma_\mu\Gamma_\mu=4I_4,\qquad
-\sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\mu=-2\Gamma_\alpha,\qquad
-\sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\beta\Gamma_\mu=4\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\beta\Gamma_\gamma\Gamma_\mu=-2\Gamma_\gamma\Gamma_\beta\Gamma_\alpha .
+\sum_{\imath}\Gamma_{\imath}\Gamma_{\imath}=4I_4,\qquad
+\sum_{\imath}\Gamma_{\imath}\Gamma_\alpha\Gamma_{\imath}=-2\Gamma_\alpha,\qquad
+\sum_{\imath}\Gamma_{\imath}\Gamma_\alpha\Gamma_\beta\Gamma_{\imath}=4\delta_{\alpha\beta}I_4,\qquad
+\sum_{\imath}\Gamma_{\imath}\Gamma_\alpha\Gamma_\beta\Gamma_\gamma\Gamma_{\imath}=-2\Gamma_\gamma\Gamma_\beta\Gamma_\alpha .
 $$
-For the basis operators of this article only the even one is a plain trace: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, since $\gamma_0^2=+I_4$ and the three spatial squares are $-I_4$. The odd ones depend on the signs as written, and the two that follow from the weight are worth recording, because the weight is not $\delta_{\mu\nu}$: with all indices down,
+For the basis operators of this article only the even one is a plain trace: $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=-2I_4$, since $\gamma_0^2=+I_4$ and the three spatial squares are $-I_4$. The odd ones depend on the signs as written, and the two that follow from the weight are worth recording, because the weight is not $\delta_{\imath\jmath}$: with all indices down,
 $$
-\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=4\gamma_0,\qquad
-\sum_\mu\gamma_\mu\gamma_\eta\gamma_\mu=0 ,
+\sum_{\imath}\gamma_{\imath}\gamma_0\gamma_{\imath}=4\gamma_0,\qquad
+\sum_{\imath}\gamma_{\imath}\gamma_\eta\gamma_{\imath}=0 ,
 $$
-verified for the four directions. The weight forms follow the same way, with no index raised, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, also verified.
+verified for the four directions. The weight forms follow the same way, with no index raised, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha$, also verified.
 
 **The two Dirac equations.** Two equations carry the name in this series, and the frame is what separates them. The first is the corpus's **one-sided** chiral pair,
 $$
@@ -536,7 +536,7 @@ where $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ is the three-dimensio
 
 The two are related by the dictionary and are not the same operator; the scattering problem uses only the first, with the second entering exclusively through the identity of the basis operator.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

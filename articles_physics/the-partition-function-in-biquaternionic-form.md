@@ -51,7 +51,7 @@ $$
 e_t\mapsto I_2,\qquad \vec e_x\mapsto -i\sigma_1,\qquad \vec e_y\mapsto -i\sigma_2,\qquad \vec e_z\mapsto -i\sigma_3,
 $$
 
-and the scalar imaginary $i$ maps to $iI_2$. The **scalar part** of a general biquaternion $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, with $Q_\mu\in\mathbb{C}$, is the coefficient of $e_t$,
+and the scalar imaginary $i$ maps to $iI_2$. The **scalar part** of a general biquaternion $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, with $Q_{\imath}\in\mathbb{C}$, is the coefficient of $e_t$,
 
 $$
 \mathrm{Sc}(\tilde Q)=Q_t,\qquad 2\,\mathrm{Sc}(\tilde Q)=\operatorname{tr}\mathsf M_2(\tilde Q).
@@ -265,7 +265,7 @@ The algebra does not force a modification. A genuine modification appears only i
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm |
 | $\beta=1/(k_BT)$ | Inverse temperature |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

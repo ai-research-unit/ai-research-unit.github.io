@@ -139,7 +139,7 @@ With the spectrum and the projectors fixed there is still the order (which eigen
 
 | data | real parameters | what it fixes |
 |---|---|---|
-| spectrum $\{\mu,\mu^{-1}\}$ | $2$ | the boost magnitude and the rotation angle |
+| spectrum $\{\imath,\mu^{-1}\}$ | $2$ | the boost magnitude and the rotation angle |
 | eigenprojectors $\{\Pi_+,\Pi_-\}$ | $2$ | the axis |
 | order | $1$ bit | which eigenvalue is associated with which projector |
 | sheet | $1$ bit | the sign of the rotor, invisible to the Lorentz transformation |

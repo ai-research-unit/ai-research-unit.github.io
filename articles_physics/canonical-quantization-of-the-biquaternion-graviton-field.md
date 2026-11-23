@@ -6,7 +6,7 @@ The graviton is the quantum of the metric's deviation from flatness: the massles
 
 The framework's account of the graviton is the cleanest illustration of how it builds a higher-spin field. The graviton's carrier is the **symmetric trace-free square of the material vector**, and its decomposition is the framework's own:
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_\mu$ and the coefficients $Q_\mu=q_\mu+iq'_\mu$, written out in full as $Q_t=q_t+i q'_t$ and $Q_\eta=q_\eta+i q'_{\eta}$, with $q_t=h_t$, $q'_t=r'_t$, $q_\eta=x_\eta$ and $q'_{\eta}=h'_{x_\eta}$. The reading used below is the material one, $Q_t=i q'_t$ and $Q_\eta=q_\eta$: the labels are summed directly with the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the d'Alembertian is $\Box_\Phi=\sum_\mu\partial^2/\partial R_\mu^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a declared sign.
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_{\imath}$ and the coefficients $Q_{\imath}=q_{\imath}+iq'_{\imath}$, written out in full as $Q_t=q_t+i q'_t$ and $Q_\eta=q_\eta+i q'_{\eta}$, with $q_t=h_t$, $q'_t=r'_t$, $q_\eta=x_\eta$ and $q'_{\eta}=h'_{x_\eta}$. The reading used below is the material one, $Q_t=i q'_t$ and $Q_\eta=q_\eta$: the labels are summed directly with the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, and the d'Alembertian is $\Box_\Phi=\sum_{\imath}\partial^2/\partial R_{\imath}^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a declared sign.
 
 $$
 \boxed{\;\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
@@ -21,27 +21,27 @@ The article is organized as follows. The linearized field and its gauge symmetry
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the massless gauge field and the subsidiary condition that the graviton's covariant quantization parallels.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation and the covariant derivative.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the bosonic statistics of integer-spin fields.
-- Companion article *The Dirac Equation in Biquaternionic Form*, for the unit metric $\delta_{\mu\nu}$ and the spinor carrier used in the spin-$\tfrac32$ comparison.
+- Companion article *The Dirac Equation in Biquaternionic Form*, for the unit metric $\delta_{\imath\jmath}$ and the spinor carrier used in the spin-$\tfrac32$ comparison.
 
 ## The Linearized Field and Its Gauge Symmetry
 
 ### The Field and the Quadratic Action
 
-The linearized theory is the expansion of the Einstein–Hilbert action to second order in the perturbation. With $g_{\mu\nu}=\delta_{\mu\nu}+h_{\mu\nu}$, the action is
+The linearized theory is the expansion of the Einstein–Hilbert action to second order in the perturbation. With $g_{\imath\jmath}=\delta_{\imath\jmath}+h_{\imath\jmath}$, the action is
 
 $$
-S = \frac12\int d^4r\left(\sum_{\mu,\nu,\rho}\partial/\partial R_\mu h_{\nu\rho}\partial/\partial R_\mu h_{\nu\rho}
--2\sum_{\mu,\nu,\rho}\partial/\partial R_\mu h_{\mu\nu}\partial/\partial R_\rho h_{\nu\rho}
-+2\sum_{\mu,\nu}\partial/\partial R_\mu h_{\mu\nu}\partial/\partial R_\nu h
--\sum_\mu\partial/\partial R_\mu h\,\partial/\partial R_\mu h\right),
+S = \frac12\int d^4r\left(\sum_{\imath,\jmath,\rho}\partial/\partial R_{\imath} h_{\jmath\rho}\partial/\partial R_{\imath} h_{\jmath\rho}
+-2\sum_{\imath,\jmath,\rho}\partial/\partial R_{\imath} h_{\imath\jmath}\partial/\partial R_\rho h_{\jmath\rho}
++2\sum_{\imath,\jmath}\partial/\partial R_{\imath} h_{\imath\jmath}\partial/\partial R_{\jmath} h
+-\sum_{\imath}\partial/\partial R_{\imath} h\,\partial/\partial R_{\imath} h\right),
 $$
 
-with $h=\sum_{\mu,\nu}\delta_{\mu\nu}h_{\mu\nu}$ the trace, and the field equation is the linearized Einstein equation
+with $h=\sum_{\imath,\jmath}\delta_{\imath\jmath}h_{\imath\jmath}$ the trace, and the field equation is the linearized Einstein equation
 
 $$
-\Box_\Phi h_{\mu\nu}-2\sum_\rho\partial/\partial R_{(\mu}\,\partial/\partial R_\rho h_{\nu)\rho}+\partial/\partial R_\mu\,\partial/\partial R_\nu h
--\delta_{\mu\nu}\left(\Box_\Phi h-\sum_{\rho,\sigma}\partial^2/\partial R_\rho\partial R_\sigma h_{\rho\sigma}\right)
-= -\kappa^2\,T_{\mu\nu} .
+\Box_\Phi h_{\imath\jmath}-2\sum_\rho\partial/\partial R_{(\imath}\,\partial/\partial R_\rho h_{\jmath)\rho}+\partial/\partial R_{\imath}\,\partial/\partial R_{\jmath} h
+-\delta_{\imath\jmath}\left(\Box_\Phi h-\sum_{\rho,\sigma}\partial^2/\partial R_\rho\partial R_\sigma h_{\rho\sigma}\right)
+= -\kappa^2\,T_{\imath\jmath} .
 $$
 
 The equation is the linearization of the Einstein equation about flat space, and its solutions are the gravitational waves.
@@ -51,33 +51,33 @@ The equation is the linearization of the Einstein equation about flat space, and
 The linearized theory is invariant under the gauge transformation
 
 $$
-h_{\mu\nu}\;\longmapsto\;h_{\mu\nu}+\partial/\partial R_\mu\,\zeta_\nu+\partial/\partial R_\nu\,\zeta_\mu ,
+h_{\imath\jmath}\;\longmapsto\;h_{\imath\jmath}+\partial/\partial R_{\imath}\,\zeta_{\jmath}+\partial/\partial R_{\jmath}\,\zeta_{\imath} ,
 $$
 
-with $\zeta_\mu$ an arbitrary vector field. The transformation is the linearization of a diffeomorphism, and it is the spin-two analogue of the abelian gauge transformation: the parameter is a vector rather than a scalar, and the field shifts by its symmetric gradient. The gauge-invariant content of the linearized field is the linearized Riemann tensor
+with $\zeta_{\imath}$ an arbitrary vector field. The transformation is the linearization of a diffeomorphism, and it is the spin-two analogue of the abelian gauge transformation: the parameter is a vector rather than a scalar, and the field shifts by its symmetric gradient. The gauge-invariant content of the linearized field is the linearized Riemann tensor
 
 $$
-\mathrm{Riem}_{\mu\nu\rho\sigma} = \tfrac12\left(\partial/\partial R_\nu\,\partial/\partial R_\rho h_{\mu\sigma}+\partial/\partial R_\mu\,\partial/\partial R_\sigma h_{\nu\rho}
--\partial/\partial R_\nu\,\partial/\partial R_\sigma h_{\mu\rho}-\partial/\partial R_\mu\,\partial/\partial R_\rho h_{\nu\sigma}\right),
+\mathrm{Riem}_{\imath\jmath\rho\sigma} = \tfrac12\left(\partial/\partial R_{\jmath}\,\partial/\partial R_\rho h_{\imath\sigma}+\partial/\partial R_{\imath}\,\partial/\partial R_\sigma h_{\jmath\rho}
+-\partial/\partial R_{\jmath}\,\partial/\partial R_\sigma h_{\imath\rho}-\partial/\partial R_{\imath}\,\partial/\partial R_\rho h_{\jmath\sigma}\right),
 $$
 
-which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\delta_{\mu\nu}h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\sum_\mu\partial/\partial R_\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box_\Phi\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.
+which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\imath\jmath}=h_{\imath\jmath}-\tfrac12\delta_{\imath\jmath}h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\sum_{\imath}\partial/\partial R_{\imath}\bar{h}_{\imath\jmath}=0$ reduces it to the wave equation $\Box_\Phi\bar{h}_{\imath\jmath}=-\kappa^2 T_{\imath\jmath}$, exactly as the Lorentz gauge reduces the Maxwell equation.
 
 ### The Gauge Symmetry as Coordinate Freedom
 
-The graviton's gauge symmetry has an interpretation that the vector case does not share. The parameter $\zeta_\mu$ is the infinitesimal displacement of a coordinate transformation, $x_\mu\mapsto x_\mu+\zeta_\mu$, so that the transformation of $h_{\mu\nu}$ is not a symmetry of a physical field but a relabeling of the coordinates: two tensor fields related by the shift describe the same geometry. The gauge redundancy is therefore the statement that the metric's components overcount the geometry by the freedom to choose coordinates, and the equivalence principle — the statement that the gravitational field can be transformed away locally — is the physical content of the redundancy.
+The graviton's gauge symmetry has an interpretation that the vector case does not share. The parameter $\zeta_{\imath}$ is the infinitesimal displacement of a coordinate transformation, $x_{\imath}\mapsto x_{\imath}+\zeta_{\imath}$, so that the transformation of $h_{\imath\jmath}$ is not a symmetry of a physical field but a relabeling of the coordinates: two tensor fields related by the shift describe the same geometry. The gauge redundancy is therefore the statement that the metric's components overcount the geometry by the freedom to choose coordinates, and the equivalence principle — the statement that the gravitational field can be transformed away locally — is the physical content of the redundancy.
 
 The framework's interpretation is that the gauge parameter is a **material vector**: the coordinate displacement lies in the same representation as the field's indices, and the transformation is the symmetric gradient of that vector. This is the structural difference from the vector field's gauge symmetry, whose parameter is a scalar function, and from the non-abelian case, whose parameter is a Lie-algebra element; for the graviton the parameter and the field live in the same material representation, which is why the gauge structure is the one of diffeomorphisms rather than of an internal group. What the framework does not supply is the interpretation: that the redundancy is coordinate freedom, and that it is the equivalence principle, are imported statements about gravity, not algebraic consequences.
 
 ### The Residual Gauge and the Physical Content
 
-The de Donder gauge does not exhaust the gauge freedom: transformations with $\Box_\Phi\zeta_\mu=0$ preserve it, and the residual gauge can be used to remove further components. The physical content is what survives both the gauge and the constraints, and it is identified most cleanly in the transverse-traceless decomposition, to which the next section turns.
+The de Donder gauge does not exhaust the gauge freedom: transformations with $\Box_\Phi\zeta_{\imath}=0$ preserve it, and the residual gauge can be used to remove further components. The physical content is what survives both the gauge and the constraints, and it is identified most cleanly in the transverse-traceless decomposition, to which the next section turns.
 
 ## The Count of Degrees of Freedom
 
 ### The Component Count
 
-A symmetric tensor $h_{\mu\nu}$ has ten independent components. The gauge transformation $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial R_\mu\,\zeta_\nu+\partial/\partial R_\nu\,\zeta_\mu$ removes four, the four components of $\zeta_\mu$, leaving six. The field equation is second order and the gauge conditions are the constraints that remove four more on shell — the four components of the de Donder condition, one of which is the Hamiltonian constraint and three of which are the momentum constraints — leaving
+A symmetric tensor $h_{\imath\jmath}$ has ten independent components. The gauge transformation $h_{\imath\jmath}\mapsto h_{\imath\jmath}+\partial/\partial R_{\imath}\,\zeta_{\jmath}+\partial/\partial R_{\jmath}\,\zeta_{\imath}$ removes four, the four components of $\zeta_{\imath}$, leaving six. The field equation is second order and the gauge conditions are the constraints that remove four more on shell — the four components of the de Donder condition, one of which is the Hamiltonian constraint and three of which are the momentum constraints — leaving
 
 $$
 \boxed{\;10-4-4 = 2\;}
@@ -172,7 +172,7 @@ The Fock space is built by acting on the vacuum with $a_r^\dagger$, and each app
 
 ### The Non-Transverse States and the Gauge Fixing
 
-Covariant quantization cannot use the transverse-traceless gauge, because that gauge is not manifestly Lorentz covariant. In a covariant gauge the field has ten components, and the non-transverse and trace modes are removed by the gauge structure: the de Donder condition $\sum_\mu\partial/\partial R_\mu\bar{h}_{\mu\nu}=0$ and the trace condition are imposed as constraints, and the indefinite-metric states that the covariant expansion introduces are removed by the subsidiary condition, as in the vector case. The gauge fixing requires Faddeev–Popov **vector** ghosts — one anticommuting vector field, in the vector representation of the gauge algebra, in contrast to the abelian vector case where the determinant is a constant and there are no ghosts. The BRST structure is the standard one, with the gauge parameter a vector; the ghost and antighost are vector fields, and the physical states are the ghost-number-zero cohomology.
+Covariant quantization cannot use the transverse-traceless gauge, because that gauge is not manifestly Lorentz covariant. In a covariant gauge the field has ten components, and the non-transverse and trace modes are removed by the gauge structure: the de Donder condition $\sum_{\imath}\partial/\partial R_{\imath}\bar{h}_{\imath\jmath}=0$ and the trace condition are imposed as constraints, and the indefinite-metric states that the covariant expansion introduces are removed by the subsidiary condition, as in the vector case. The gauge fixing requires Faddeev–Popov **vector** ghosts — one anticommuting vector field, in the vector representation of the gauge algebra, in contrast to the abelian vector case where the determinant is a constant and there are no ghosts. The BRST structure is the standard one, with the gauge parameter a vector; the ghost and antighost are vector fields, and the physical states are the ghost-number-zero cohomology.
 
 ### The Constraints and the Canonical Structure
 
@@ -187,11 +187,11 @@ The quantization therefore proceeds as for any first-class system. One introduce
 In the de Donder gauge the quadratic form is inverted by the graviton propagator, whose numerator is the standard de Donder structure
 
 $$
-\mathcal{P}_{\mu\nu,\rho\sigma} = \tfrac12\left(\delta_{\mu\rho}\delta_{\nu\sigma}+\delta_{\mu\sigma}\delta_{\nu\rho}\right)
--\frac{1}{D-2}\delta_{\mu\nu}\delta_{\rho\sigma} ,
+\mathcal{P}_{\imath\jmath,\rho\sigma} = \tfrac12\left(\delta_{\imath\rho}\delta_{\jmath\sigma}+\delta_{\imath\sigma}\delta_{\jmath\rho}\right)
+-\frac{1}{D-2}\delta_{\imath\jmath}\delta_{\rho\sigma} ,
 $$
 
-in $D$ dimensions, with the coefficient of the trace term determined by the gauge-fixing procedure; the propagator is $\mathcal{P}_{\mu\nu,\rho\sigma}/(-N)$ with the $i\epsilon$ prescription, together with the gauge-dependent terms that the de Donder condition fixes. The detailed form, with the gauge-fixing parameter and the dimensional dependence, is standard and is cited below. What the framework contributes is the observation that the trace term of the numerator is the trace that the bilinear form removes from the symmetric square: the numerator is the symmetric metric pairing minus a term proportional to $\delta_{\mu\nu}\delta_{\rho\sigma}$, and the trace removal of $V\odot V$ is the algebraic form of that subtraction of the trace direction.
+in $D$ dimensions, with the coefficient of the trace term determined by the gauge-fixing procedure; the propagator is $\mathcal{P}_{\imath\jmath,\rho\sigma}/(-N)$ with the $i\epsilon$ prescription, together with the gauge-dependent terms that the de Donder condition fixes. The detailed form, with the gauge-fixing parameter and the dimensional dependence, is standard and is cited below. What the framework contributes is the observation that the trace term of the numerator is the trace that the bilinear form removes from the symmetric square: the numerator is the symmetric metric pairing minus a term proportional to $\delta_{\imath\jmath}\delta_{\rho\sigma}$, and the trace removal of $V\odot V$ is the algebraic form of that subtraction of the trace direction.
 
 ### The Massive Case and the Discontinuity
 
@@ -199,7 +199,7 @@ A massive spin-two field, described by the Fierz–Pauli theory, has five polari
 
 ### The Coupled Theory
 
-The graviton couples to matter through the energy–momentum tensor, with the universal coupling that follows from the equivalence of the linearized gauge symmetry with the freedom to choose coordinates. The coupling is what makes the theory a theory of gravity rather than a theory of a spin-two field, and it is imported rather than derived: the framework supplies the carrier, the gauge symmetry, and the count, and the identification of the conserved current with $T_{\mu\nu}$ is the input of the equivalence principle. The quantization of the coupled theory — the loop corrections, the nonrenormalizability, and the effective-field-theory treatment — is the standard story and is cited below.
+The graviton couples to matter through the energy–momentum tensor, with the universal coupling that follows from the equivalence of the linearized gauge symmetry with the freedom to choose coordinates. The coupling is what makes the theory a theory of gravity rather than a theory of a spin-two field, and it is imported rather than derived: the framework supplies the carrier, the gauge symmetry, and the count, and the identification of the conserved current with $T_{\imath\jmath}$ is the input of the equivalence principle. The quantization of the coupled theory — the loop corrections, the nonrenormalizability, and the effective-field-theory treatment — is the standard story and is cited below.
 
 Two further features of the coupled theory distinguish the graviton from the other higher-spin fields, and both are worth recording. The first is that the coupling is **universal**: the equivalence principle requires all matter to couple to the same symmetric tensor with the same strength, and it is this universality, not the spin alone, that makes the linearized gauge symmetry the linearization of diffeomorphism invariance rather than a symmetry of an internal group. The second is that the graviton's **self-coupling is fixed** by the gauge symmetry: the requirement that the nonlinear theory preserve the symmetry order by order determines the cubic and all higher self-interactions uniquely, and the resulting theory is general relativity, up to the cosmological constant. Neither property holds for a generic higher-spin field in a flat background, and this is the graviton's uniqueness among the fields of this subcategory. The framework organizes the carrier, the constraint, and the count; the uniqueness of the dynamics is imported, and it is the reason the massless spin-two field is gravity rather than merely a field of spin two.
 
@@ -217,7 +217,7 @@ V\ (\text{spin }1) ,
 V\odot V\ (\text{spin }2) ,
 $$
 
-where $S$ is the left-ideal spinor carrier. The projections are the trace removal with the general quaternionic bilinear form $\mathrm{Sc}(\cdot{}^{\natural})$ for the integer cases and the $\gamma$-trace for the half-integer case; the graviton's projector, $\mathcal{P}_{\mu\nu,\rho\sigma}$ in the propagator and $P_{ij,\eta l}$ in the physical-state count, is the trace removal of the symmetric square. The counts then follow: the vector has three massive and two massless states, the Rarita–Schwinger field four massive and two massless, the graviton five massive and two massless — the massive count $2s+1$, the massless count two, in every case.
+where $S$ is the left-ideal spinor carrier. The projections are the trace removal with the general quaternionic bilinear form $\mathrm{Sc}(\cdot{}^{\natural})$ for the integer cases and the $\gamma$-trace for the half-integer case; the graviton's projector, $\mathcal{P}_{\imath\jmath,\rho\sigma}$ in the propagator and $P_{ij,\eta l}$ in the physical-state count, is the trace removal of the symmetric square. The counts then follow: the vector has three massive and two massless states, the Rarita–Schwinger field four massive and two massless, the graviton five massive and two massless — the massive count $2s+1$, the massless count two, in every case.
 
 What is genuinely algebraic in this account is the trace removal. The bilinear form of the algebra provides a canonical contraction, and the symmetric square of the material vector splits into the trace and the trace-free part relative to that form. The framework therefore does not need to postulate which combination of components is the spin-two field: the spin-two field is the trace-free part of the symmetric square, and the trace is the spin-zero field, and both are determined once the algebra's bilinear form is fixed. This is the same mechanism that made the spin-one field the adjoint action on the vector part and the spin-$\tfrac32$ field the $\gamma$-traceless part of the material four-vector tensored with the spinor $S$, of dimension twelve; the graviton is the case in which the tensor product is the symmetric square of the vector itself.
 
@@ -241,7 +241,7 @@ of dimension five. The decomposition $6=1+5$ is therefore the statement that the
 
 **Supplied by the algebra, and recomputed here.** The material triplet $V$ and its adjoint spin-one action; the symmetric square $V\odot V$ with dimension six; the decomposition $V\odot V=0\oplus2$ with $6=1+5$, the trace removal being performed with the general quaternionic bilinear form $\mathrm{Sc}(\cdot{}^{\natural})$; the transverse-traceless projector and its four defining properties, verified on the six-dimensional space of symmetric tensors, together with the rank count $6-4=2$ and the two polarizations as fixed points; and the identification of the propagator's numerator with the trace-free projector structure.
 
-**Imported, and left visible.** The linearized Einstein–Hilbert action and the linearized Einstein equation, which belong to the classical theory of the relativistic field; the identification of the gauge symmetry with infinitesimal diffeomorphisms; the component count $10-4-4=2$; the covariant gauge fixing, the de Donder condition, and the associated Faddeev–Popov vector ghosts; the BRST structure, cited to the standard literature; the graviton propagator and its gauge-fixing dependence; the Fierz–Pauli massive theory and the van Dam–Veltman–Zakharov discontinuity; the universal coupling to $T_{\mu\nu}$ and the equivalence principle; and the nonrenormalizability of the quantum theory.
+**Imported, and left visible.** The linearized Einstein–Hilbert action and the linearized Einstein equation, which belong to the classical theory of the relativistic field; the identification of the gauge symmetry with infinitesimal diffeomorphisms; the component count $10-4-4=2$; the covariant gauge fixing, the de Donder condition, and the associated Faddeev–Popov vector ghosts; the BRST structure, cited to the standard literature; the graviton propagator and its gauge-fixing dependence; the Fierz–Pauli massive theory and the van Dam–Veltman–Zakharov discontinuity; the universal coupling to $T_{\imath\jmath}$ and the equivalence principle; and the nonrenormalizability of the quantum theory.
 
 **Not supplied.** The value of Newton's constant; the choice of gauge; the odd ghost coordinates; the existence of the graviton as a physical particle; and any empirical content. The framework organizes the field and counts its polarizations; it does not derive the field or its coupling.
 
@@ -261,22 +261,22 @@ of dimension five. The decomposition $6=1+5$ is therefore the statement that the
 
 ## Summary
 
-The graviton is the massless spin-two field of the linearized Einstein theory, with the gauge symmetry $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial R_\mu\,\zeta_\nu+\partial/\partial R_\nu\,\zeta_\mu$ and the linearized Riemann tensor as its gauge-invariant field strength. A symmetric tensor has ten components; the gauge removes four and the constraints four more, leaving the two transverse-traceless polarizations of helicity $\pm2$. The transverse-traceless projector $P_{ij,\eta l}=\tfrac12(\Pi_{i\eta}\Pi_{jl}+\Pi_{il}\Pi_{j\eta})-\tfrac12\Pi_{ij}\Pi_{\eta l}$ is idempotent, has trace two, kills the pure-gauge and trace modes, and has a transverse-traceless complement of dimension two; all of these were verified to machine precision, and the two polarizations were verified to be its fixed points.
+The graviton is the massless spin-two field of the linearized Einstein theory, with the gauge symmetry $h_{\imath\jmath}\mapsto h_{\imath\jmath}+\partial/\partial R_{\imath}\,\zeta_{\jmath}+\partial/\partial R_{\jmath}\,\zeta_{\imath}$ and the linearized Riemann tensor as its gauge-invariant field strength. A symmetric tensor has ten components; the gauge removes four and the constraints four more, leaving the two transverse-traceless polarizations of helicity $\pm2$. The transverse-traceless projector $P_{ij,\eta l}=\tfrac12(\Pi_{i\eta}\Pi_{jl}+\Pi_{il}\Pi_{j\eta})-\tfrac12\Pi_{ij}\Pi_{\eta l}$ is idempotent, has trace two, kills the pure-gauge and trace modes, and has a transverse-traceless complement of dimension two; all of these were verified to machine precision, and the two polarizations were verified to be its fixed points.
 
 In the biquaternion framework the carrier is the symmetric square of the material vector, $V\odot V$, whose decomposition is $0\oplus2$ with $6=1+5$: the trace is the spin-zero singlet and the trace-free part is the spin-two carrier of dimension five, the trace being removed with the algebra's bilinear form. The massless gauge then removes three of the five, leaving the two helicities $\pm2$. The canonical quantization gives the transverse-traceless mode expansion with two polarizations, the bosonic commutators $[a_r(\vec p),a_s^\dagger(\vec p^{\,\prime})]=h^{3}\delta_{rs}\delta^{(3)}$, and the Fock space; the covariant quantization requires the de Donder gauge fixing and Faddeev–Popov vector ghosts, with the standard BRST structure. The propagator's numerator is the standard de Donder structure, and the massive Fierz–Pauli theory has five polarizations whose massless limit exhibits the van Dam–Veltman–Zakharov discontinuity.
 
-The framework's statement about the graviton is therefore the same as its statement about the other higher spins: the field is the top component of a tensor product of the material vector with a lower-spin carrier, selected by a projector built from the algebra's invariant form. The graviton is the symmetric-square case, the trace-free part of $V\odot V$; and the count, five massive and two massless, follows from the decomposition and the gauge. What the framework does not supply is the coupling to $T_{\mu\nu}$, the equivalence principle, Newton's constant, the odd coordinates, or any empirical content.
+The framework's statement about the graviton is therefore the same as its statement about the other higher spins: the field is the top component of a tensor product of the material vector with a lower-spin carrier, selected by a projector built from the algebra's invariant form. The graviton is the symmetric-square case, the trace-free part of $V\odot V$; and the count, five massive and two massless, follows from the decomposition and the gauge. What the framework does not supply is the coupling to $T_{\imath\jmath}$, the equivalence principle, Newton's constant, the odd coordinates, or any empirical content.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four $Q_\mu$: diagonal, all four coefficients $+1$ |
-| $g_{\mu\nu}=\delta_{\mu\nu}+h_{\mu\nu}$, $\kappa^2=16\pi G$ | Metric perturbation and the coupling of its source |
-| $h=\sum_{\mu,\nu}\delta_{\mu\nu}h_{\mu\nu}$, $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\delta_{\mu\nu}h$ | Trace and trace-reversed field |
-| $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial R_\mu\,\zeta_\nu+\partial/\partial R_\nu\,\zeta_\mu$ | Linearized gauge symmetry |
-| $\mathrm{Riem}_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor; gauge-invariant field strength |
-| $\sum_\mu\partial/\partial R_\mu\bar{h}_{\mu\nu}=0$ | de Donder (harmonic, Lorentz-type) gauge |
+| $\delta_{\imath\jmath}=(1,1,1,1)$ | The unit metric on the four $Q_{\imath}$: diagonal, all four coefficients $+1$ |
+| $g_{\imath\jmath}=\delta_{\imath\jmath}+h_{\imath\jmath}$, $\kappa^2=16\pi G$ | Metric perturbation and the coupling of its source |
+| $h=\sum_{\imath,\jmath}\delta_{\imath\jmath}h_{\imath\jmath}$, $\bar{h}_{\imath\jmath}=h_{\imath\jmath}-\tfrac12\delta_{\imath\jmath}h$ | Trace and trace-reversed field |
+| $h_{\imath\jmath}\mapsto h_{\imath\jmath}+\partial/\partial R_{\imath}\,\zeta_{\jmath}+\partial/\partial R_{\jmath}\,\zeta_{\imath}$ | Linearized gauge symmetry |
+| $\mathrm{Riem}_{\imath\jmath\rho\sigma}$ | Linearized Riemann tensor; gauge-invariant field strength |
+| $\sum_{\imath}\partial/\partial R_{\imath}\bar{h}_{\imath\jmath}=0$ | de Donder (harmonic, Lorentz-type) gauge |
 | $10-4-4=2$ | Components, gauge removal, constraint removal, physical polarizations |
 | $\Pi_{ij}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$ | Transverse metric |
 | $P_{ij,\eta l}=\tfrac12(\Pi_{i\eta}\Pi_{jl}+\Pi_{il}\Pi_{j\eta})-\tfrac12\Pi_{ij}\Pi_{\eta l}$ | Transverse-traceless projector; $P^2=P$, $\mathrm{tr}P=2$ (verified) |
@@ -284,7 +284,7 @@ The framework's statement about the graviton is therefore the same as its statem
 | $V\odot V=0\oplus2$, $6=1+5$ | Symmetric square of the material vector and its decomposition |
 | $h_{ij}^{\mathrm{TT}}(x)$ | Transverse-traceless mode expansion |
 | $[a_r(\vec p),a_s^\dagger(\vec p^{\,\prime})]=h^{3}\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ | Bosonic mode algebra |
-| $\mathcal{P}_{\mu\nu,\rho\sigma}=\tfrac12(\delta_{\mu\rho}\delta_{\nu\sigma}+\delta_{\mu\sigma}\delta_{\nu\rho})-\tfrac{1}{D-2}\delta_{\mu\nu}\delta_{\rho\sigma}$ | Propagator numerator in the de Donder gauge; the coefficient of the trace term is fixed by the gauge fixing |
+| $\mathcal{P}_{\imath\jmath,\rho\sigma}=\tfrac12(\delta_{\imath\rho}\delta_{\jmath\sigma}+\delta_{\imath\sigma}\delta_{\jmath\rho})-\tfrac{1}{D-2}\delta_{\imath\jmath}\delta_{\rho\sigma}$ | Propagator numerator in the de Donder gauge; the coefficient of the trace term is fixed by the gauge fixing |
 | Fierz–Pauli | Massive spin-two theory; five polarizations; vDVZ discontinuity |
 
 ## Further Reading

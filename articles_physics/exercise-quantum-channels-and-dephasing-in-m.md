@@ -321,7 +321,7 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u_x) = \tfrac{1}{2}(e_t \pm i\vec u_x)$ | Idempotents along $\vec u_x$ |
 | $Ξ(\tilde{Q}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Q}\tilde M_{\mathrm{kraus},l}^{*}$ | Kraus representation |
 | $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$ | Trace-preservation condition |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $J(Ξ) = \sum_{j\eta}\tilde Q_{j\eta}\otimesΞ(\tilde Q_{j\eta})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J$ |
 | $Ξ_{\mathrm{deph},p}$ | Dephasing channel along $\vec u_x$ |
 | $\vec s_{\Psi} \mapsto (1-p)\vec s_{\Psi} + p(\vec u_x\cdot\vec s_{\Psi})\vec u_x$ | Dephasing Bloch map |

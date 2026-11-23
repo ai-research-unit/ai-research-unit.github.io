@@ -175,7 +175,7 @@ The factor $\tfrac12$ is not inserted by hand: it is the limit of $\gamma^2/(\ga
 
 Only the **transverse** acceleration precesses the frame. Since $\vec a\times\vec v=\vec a_\perp\times\vec v$, a purely longitudinal acceleration gives $\vec\omega_T=0$: it changes the rapidity but not the direction of the velocity, and a boost along the instantaneous direction generates no rotation. This is the first sign that a collinear configuration cannot test the direction of $\vec\omega_T$.
 
-The interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ is formed directly as a $2\times2$ complex matrix in the representation $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$, and its polar decomposition $\tilde U_{\mathrm{int}}=\tilde U_{\Psi,\mathrm b}\tilde{u}$, $\tilde U_{\Psi,\mathrm b}=\sqrt{\tilde U_{\mathrm{int}}\tilde U_{\mathrm{int}}^{*}}$, $\tilde{u}=\tilde U_{\Psi,\mathrm b}^{-1}\tilde U_{\mathrm{int}}$, is carried out at $dr'_t=10^{-5}\,c$ for random non-collinear pairs $(\vec v,\vec a)$ with $|\vec v|<c$. The rotation vector of $\tilde{u}$ agrees with $\vec\omega_T\,dr'_t/c$ in both magnitude and direction to better than $10^{-10}$ in the units of the check; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\vec a\times\vec v$ that the exact product selects.
+The interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ is formed directly as a $2\times2$ complex matrix in the representation $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$, and its polar decomposition $\tilde U_{\mathrm{int}}=\tilde U_{\Psi,\mathrm b}\tilde{u}$, $\tilde U_{\Psi,\mathrm b}=\sqrt{\tilde U_{\mathrm{int}}\tilde U_{\mathrm{int}}^{*}}$, $\tilde{u}=\tilde U_{\Psi,\mathrm b}^{-1}\tilde U_{\mathrm{int}}$, is carried out at $dr'_t=10^{-5}\,c$ for random non-collinear pairs $(\vec v,\vec a)$ with $|\vec v|<c$. The rotation vector of $\tilde{u}$ agrees with $\vec\omega_T\,dr'_t/c$ in both magnitude and direction to better than $10^{-10}$ in the units of the check; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\vec a\times\vec v$ that the exact product selects.
 
 ## One Angle at Two Separations
 
@@ -222,7 +222,7 @@ The precession can be written as a rotor conjugation in the same half-angle form
 $$
 \frac{d\vec r}{dr'_t}=\frac{1}{c}\,\vec\omega_T\times\vec r,
 \qquad
-\vec r=\sum_\mu r_\mu \vec e_\mu\in\mathbb{B}_{H},
+\vec r=\sum_{\imath} r_{\imath} \vec e_{\imath}\in\mathbb{B}_{H},
 $$
 
 and, for constant $\vec\omega_T$, the solution is the rotor conjugation
@@ -230,7 +230,7 @@ and, for constant $\vec\omega_T$, the solution is the rotor conjugation
 $$
 \vec r(r'_t)=\tilde{u}_T(r'_t)\,\vec r(0)\,\tilde{u}_T(r'_t)^{*},
 \qquad
-\tilde{u}_T(r'_t)=\exp\!\left(\frac{\theta_T(r'_t)}{2}\,\vec u_{\omega,\mu}\vec e_\mu\right),
+\tilde{u}_T(r'_t)=\exp\!\left(\frac{\theta_T(r'_t)}{2}\,\vec u_{\omega,\imath}\vec e_{\imath}\right),
 $$
 
 with $\tilde{u}_T$ a unit real quaternion. The frame turns through $\theta_T$ while the rotor turns through half that angle: this is the double-cover half-angle of the algebra, the same one that appears in the Larmor rotor and in the spin-$\tfrac12$ evolution. The generator form is the commutator
@@ -238,7 +238,7 @@ with $\tilde{u}_T$ a unit real quaternion. The frame turns through $\theta_T$ wh
 $$
 \frac{d\vec r}{dr'_t}=\tfrac{1}{2c}\left[\vec r,\vec\omega_T\right],
 \qquad
-\vec\omega_T=-\omega_{T,\mu}\vec e_\mu ,
+\vec\omega_T=-\omega_{T,\imath}\vec e_{\imath} ,
 $$
 
 the sign being the one that makes the generator the negative of the physical angular velocity, exactly as in the Larmor equation.
@@ -305,7 +305,7 @@ It is useful to separate the algebraic content of the derivation from the standa
 
 - The boost rotor is a Hermitian unit-norm biquaternion in $\mathbb{B}_{\Psi}$, and a **single** boost contains no rotation; the rotation is created by composition.
 - The product of two boost rotors admits a unique polar decomposition $\tilde U_{\Psi,\mathrm b}\tilde{u}$ into a pure boost and a rotation of $\mathbb{B}_{H}$, and the rotation factor is the Wigner rotation.
-- The exact Wigner angle and its axis follow from the quaternion product with $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ and $\vec e_\mu^{2}=-e_t$, without any matrix or tensor apparatus; the whole of the Thomas precession is the first-order term of that product.
+- The exact Wigner angle and its axis follow from the quaternion product with $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmath\lambda}\vec e_\lambda$ and $\vec e_{\imath}^{2}=-e_t$, without any matrix or tensor apparatus; the whole of the Thomas precession is the first-order term of that product.
 - The interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ is the rotor between neighbouring rest frames, and its rotation factor is the Thomas–Wigner rotor.
 - The half-angle rotor $\tilde{u}_T$ that carries the frame, and its double-valued sign, are the same rotor that acts one-sidedly on the spinor module.
 
@@ -366,14 +366,14 @@ $$
 \vec\omega_T\approx\frac{1}{2c^{2}}\,\vec a\times\vec v\quad(v\ll c),
 $$
 
-along $\vec a\times\vec v$, with only the transverse acceleration contributing. The two are one function at two separations: the rate is the derivative of the Wigner angle with respect to the separation of the pair of boosts, the accumulated angle around a closed orbit is the integral of the rate — summed interval by interval, $4.188790016$ against $2\pi(\gamma-1)=4.188790205$ at twenty thousand steps — and the axis is the normal to the plane of $\vec v$ and $\vec a$ at every separation, from $0.5$ down to $10^{-3}$. The precession is realised by the half-angle rotor $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\mu}\vec e_\mu)$ acting by conjugation on the rest-frame triad, with the same double-cover half-angle that acts one-sidedly on the spinor. For uniform circular motion the frame is retrograde, $\vec\omega_T=-(\gamma-1)\vec\Omega$, turning through $-2\pi(\gamma-1)$ per orbit; in the non-relativistic limit this is half of the orbital rate times $v^{2}/c^{2}$, opposite in sense. The kinematic precession is the origin of the factor $\tfrac12$ in the spin–orbit coupling, and it is the free-field piece of the general spin equation of motion treated in the companion article on the Bargmann–Michel–Telegdi equation.
+along $\vec a\times\vec v$, with only the transverse acceleration contributing. The two are one function at two separations: the rate is the derivative of the Wigner angle with respect to the separation of the pair of boosts, the accumulated angle around a closed orbit is the integral of the rate — summed interval by interval, $4.188790016$ against $2\pi(\gamma-1)=4.188790205$ at twenty thousand steps — and the axis is the normal to the plane of $\vec v$ and $\vec a$ at every separation, from $0.5$ down to $10^{-3}$. The precession is realised by the half-angle rotor $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\imath}\vec e_{\imath})$ acting by conjugation on the rest-frame triad, with the same double-cover half-angle that acts one-sidedly on the spinor. For uniform circular motion the frame is retrograde, $\vec\omega_T=-(\gamma-1)\vec\Omega$, turning through $-2\pi(\gamma-1)$ per orbit; in the non-relativistic limit this is half of the orbital rate times $v^{2}/c^{2}$, opposite in sense. The kinematic precession is the origin of the factor $\tfrac12$ in the spin–orbit coupling, and it is the free-field piece of the general spin equation of motion treated in the companion article on the Bargmann–Michel–Telegdi equation.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmath\lambda}\vec e_\lambda$ $(\imath\neq\jmath)$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | Real-quaternion subspace; central scalar subspace |
@@ -394,12 +394,12 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ | Interval rotor between neighbouring rest frames |
 | $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
 | $\vec\Omega$ | Orbital angular velocity (circular motion) |
-| $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\mu}\vec e_\mu)$ | Thomas rotor (half-angle) |
-| $\vec r=\sum_\mu r_\mu\vec e_\mu$ | Material spatial vector |
+| $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\imath}\vec e_{\imath})$ | Thomas rotor (half-angle) |
+| $\vec r=\sum_{\imath} r_{\imath}\vec e_{\imath}$ | Material spatial vector |
 | $g$, $\gamma_g=gq/2m$ | Gyromagnetic factor and ratio |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, twice the scalar part; $2\,\mathrm{Sc}(\tilde P_{\Phi}\tilde H_\Psi) = 2\langle\tilde{P}_{\Phi},\tilde H_\Psi\rangle$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

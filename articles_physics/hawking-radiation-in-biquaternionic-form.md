@@ -51,7 +51,7 @@ f(r) = 1-\frac{r_s}{r},
 r_s = \frac{2GM}{c^2}.
 $$
 
-The metric is **imported**: nothing in the biquaternion algebra produces it. *Curved Spacetime and the Biquaternion Framework* records that the framework's own local-scale route is too rigid to contain black-hole exteriors (within its metric class Ricci-flatness forces flatness), and that a general metric can be carried only by a frame field $\tilde E_{\Phi,\mu}(x)\in\mathbb{B}_{\Phi}$, with $g_{\mu\nu}=\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$, which the algebra accepts but does not determine. What the algebra carries at each point is the local tangent structure — the light cone of $\mathbb{B}_{\Phi}$ in that point's frame, the zero-divisor cone — and the four-vector kinematics of the field. It does not carry the global horizon.
+The metric is **imported**: nothing in the biquaternion algebra produces it. *Curved Spacetime and the Biquaternion Framework* records that the framework's own local-scale route is too rigid to contain black-hole exteriors (within its metric class Ricci-flatness forces flatness), and that a general metric can be carried only by a frame field $\tilde E_{\Phi,\imath}(x)\in\mathbb{B}_{\Phi}$, with $g_{\imath\jmath}=\langle\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}$, which the algebra accepts but does not determine. What the algebra carries at each point is the local tangent structure — the light cone of $\mathbb{B}_{\Phi}$ in that point's frame, the zero-divisor cone — and the four-vector kinematics of the field. It does not carry the global horizon.
 
 The horizon is the surface
 
@@ -72,7 +72,7 @@ which is tangent to the horizon, null on it, time-translation outside it, and no
 A static observer outside the horizon has four-velocity proportional to $\zeta$,
 
 $$
-v_\mu \propto \delta_{\mu t}, \qquad \sum_\mu\varepsilon_\mu v_\mu v_\mu = -c^2,
+v_{\imath} \propto \delta_{\imath t}, \qquad \sum_{\imath}\varepsilon_{\imath} v_{\imath} v_{\imath} = -c^2,
 $$
 
 with proper time $d\tau = \sqrt f\,dr'_t$. Its proper acceleration is

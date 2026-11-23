@@ -32,10 +32,10 @@ $$\boxed{\;H^2 \equiv \left(\frac{da/dt'}{a}\right)^2 = \frac{8\pi G}{3}\rho - \
 \qquad
 \frac{d^2a/dt'^2}{a} = -\frac{4\pi G}{3}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3}\;},$$
 
-where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is **closed by an equation of state**, usually $p = w\rho$, together with the conservation law $\sum_\mu\nabla_\mu T_{\mu\nu} = 0$. The source is the perfect-fluid stress–energy tensor
+where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is **closed by an equation of state**, usually $p = w\rho$, together with the conservation law $\sum_{\imath}\nabla_{\imath} T_{\imath\jmath} = 0$. The source is the perfect-fluid stress–energy tensor
 
 $$
-T_{\mu\nu} = \left(\rho + p\right)\frac{v_\mu v_\nu}{c^2} + p\,g_{\mu\nu},
+T_{\imath\jmath} = \left(\rho + p\right)\frac{v_{\imath} v_{\jmath}}{c^2} + p\,g_{\imath\jmath},
 $$
 
 a **symmetric rank-two tensor** of ten independent components. The framework's relation to this object is the second theme of the article.
@@ -46,10 +46,10 @@ a **symmetric rank-two tensor** of ten independent components. The framework's r
 
 ### The FLRW metric is carried by a frame, and nothing selects it
 
-The frame route of *Curved Spacetime and the Biquaternion Framework* carries an arbitrary Lorentzian metric: four fields $\tilde{E}_{\Phi,\mu} \in \mathbb{B}_{\Phi}$ with
+The frame route of *Curved Spacetime and the Biquaternion Framework* carries an arbitrary Lorentzian metric: four fields $\tilde{E}_{\Phi,\imath} \in \mathbb{B}_{\Phi}$ with
 
 $$
-g_{\mu\nu} = \langle\tilde{E}_{\Phi,\mu},\tilde{E}_{\Phi,\nu}\rangle_{\natural},
+g_{\imath\jmath} = \langle\tilde{E}_{\Phi,\imath},\tilde{E}_{\Phi,\jmath}\rangle_{\natural},
 $$
 
 and any Lorentzian metric is representable locally, because a $g$-orthonormal frame can be mapped into $\mathbb{B}_{\Phi}$ by a pointwise linear isometry of quadratic spaces of the same inertia. An FLRW metric is a Lorentzian metric, so it is representable. The representation is explicit for the flat-slice case. With a lapse $N(r'_t)$ and scale $a(r'_t)$,
@@ -58,10 +58,10 @@ $$
 \tilde{E}_{\Phi,0} = i\,N(r'_t)\,e_t, \qquad \tilde{E}_{\Phi,i} = a(r'_t)\,\sigma_i(r_x),
 $$
 
-where $\sigma_i$ spans $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$, one has $g_{\mu\nu} = \mathrm{diag}(-N^2, a^2\gamma_{ij})$. For the flat spatial slice $\gamma_{ij} = \delta_{ij}$ and the choice $\tilde{E}_{\Phi,0} = ie_t$, $\tilde{E}_{\Phi,i} = a\,\vec e_i$, the Gram matrix is exactly
+where $\sigma_i$ spans $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$, one has $g_{\imath\jmath} = \mathrm{diag}(-N^2, a^2\gamma_{ij})$. For the flat spatial slice $\gamma_{ij} = \delta_{ij}$ and the choice $\tilde{E}_{\Phi,0} = ie_t$, $\tilde{E}_{\Phi,i} = a\,\vec e_i$, the Gram matrix is exactly
 
 $$
-\boxed{\;\langle\tilde{E}_{\Phi,\mu},\tilde{E}_{\Phi,\nu}\rangle_{\natural} = \mathrm{diag}\left(-1, a^2, a^2, a^2\right)\;},
+\boxed{\;\langle\tilde{E}_{\Phi,\imath},\tilde{E}_{\Phi,\jmath}\rangle_{\natural} = \mathrm{diag}\left(-1, a^2, a^2, a^2\right)\;},
 $$
 
 recomputed here from the inherited bilinear form. This is the FLRW metric with $k=0$ and arbitrary scale factor, carried in the algebra's own operations.
@@ -69,7 +69,7 @@ recomputed here from the inherited bilinear form. This is the FLRW metric with $
 Three qualifications belong to the statement, and they are the whole of its content.
 
 - **Carrying is not deriving.** The scale factor $a(r'_t)$ is a function the frame is *given*; the algebra produces no value for it, no equation for it, and no reason to prefer the FLRW form over any other metric. Every Lorentzian metric is representable, so the construction excludes nothing and selects nothing.
-- **The scale factor is not computed.** The verified identity $\langle\tilde{E}_{\Phi,\mu},\tilde{E}_{\Phi,\nu}\rangle_{\natural} = \mathrm{diag}(-1,a^2,a^2,a^2)$ is a consistency check on the carrier. It is a statement about the algebra's bilinear form, not a cosmological prediction.
+- **The scale factor is not computed.** The verified identity $\langle\tilde{E}_{\Phi,\imath},\tilde{E}_{\Phi,\jmath}\rangle_{\natural} = \mathrm{diag}(-1,a^2,a^2,a^2)$ is a consistency check on the carrier. It is a statement about the algebra's bilinear form, not a cosmological prediction.
 - **The curved spatial slice is a separate step.** For $k \neq 0$ the spatial metric $a^2\gamma_{ij}$ is not flat, and the frame $\sigma_i$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$ must be built pointwise by a linear isometry from the constant-curvature tangent space into $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$. This is a finite-dimensional linear-algebra construction at each point, and it is the first item of the next section.
 
 ### Isotropy has a home in the algebra; homogeneity does not
@@ -85,7 +85,7 @@ The FLRW assumptions are imposed symmetries, and the two of them have different 
 The framework's own proposal for locality is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis, not the frame. In its derivative-rule interpretation (Reading B of *Curved Spacetime and the Biquaternion Framework*) it produces
 
 $$
-g_{\mu\nu} = \mathrm{diag}\left(-c_{\mathrm{loc}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)^2, 1, 1, 1\right), \qquad c_{\mathrm{loc}} = c,
+g_{\imath\jmath} = \mathrm{diag}\left(-c_{\mathrm{loc}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)^2, 1, 1, 1\right), \qquad c_{\mathrm{loc}} = c,
 $$
 
 a class with one free function, no shift, and **flat spatial slices** $g_{ij} = \delta_{ij}$. Two consequences were recomputed here.
@@ -129,7 +129,7 @@ Each route is stated with what is known, whether it is closed, and the computati
 
 ### Obstacle with a known route: transcribing the Friedmann equations
 
-*Known:* the Einstein equations are the framework's central open question, treated in the companion article; the Friedmann equations are that question on a homogeneous and isotropic ansatz, and the algebraic steps from the ansatz to the equations are standard. *Open:* whether the framework reproduces them, which it cannot do more strongly than it reproduces the Einstein equations themselves. *Would settle it:* the object is the same action of the field-equations article, restricted to the FLRW ansatz; the computation is to evaluate its variation on that ansatz and check the two equations, including the conservation law $\sum_\mu\nabla_\mu T_{\mu\nu} = 0$ that closes them. Until that action exists, the Friedmann equations in this framework can only be *transcribed* — written in the framework's notation on a carried FLRW metric — and a transcription is not a derivation. Stating them as derived would be exactly the promotion the field-equations article exists to prevent.
+*Known:* the Einstein equations are the framework's central open question, treated in the companion article; the Friedmann equations are that question on a homogeneous and isotropic ansatz, and the algebraic steps from the ansatz to the equations are standard. *Open:* whether the framework reproduces them, which it cannot do more strongly than it reproduces the Einstein equations themselves. *Would settle it:* the object is the same action of the field-equations article, restricted to the FLRW ansatz; the computation is to evaluate its variation on that ansatz and check the two equations, including the conservation law $\sum_{\imath}\nabla_{\imath} T_{\imath\jmath} = 0$ that closes them. Until that action exists, the Friedmann equations in this framework can only be *transcribed* — written in the framework's notation on a carried FLRW metric — and a transcription is not a derivation. Stating them as derived would be exactly the promotion the field-equations article exists to prevent.
 
 This obstacle inherits a hard ceiling: because the framework has not derived the Einstein equations, it has not derived the Friedmann equations, and no cosmological result can be reported as a framework result while that remains so. The article's contribution is to say where the cosmological case sits in that structure, not to break the ceiling.
 
@@ -140,12 +140,12 @@ This is the obstacle specific to cosmology, and it is where the framework's inva
 The Friedmann equations require the **perfect-fluid stress–energy tensor**, a symmetric rank-two tensor with two independent thermal functions $\rho$ and $p$ and a four-velocity. The framework's objects are different in kind. The algebra has no faithful rank-two object, and the reason is a count: $\mathrm{Sym}^{2}$ of the four-dimensional material space has ten real components against the algebra's eight, so no injective linear map from a rank-two tensor into a single biquaternion exists, whatever formula is chosen. The bilinear sum
 
 $$
-\boxed{\;\sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\sum_{\mu}T_{\mu\mu}\right) e_t\;}
+\boxed{\;\sum_{\imath\jmath} T_{\imath\jmath}\,\varepsilon_{\imath}\bar{\varepsilon}_{\jmath} = \left(\sum_{\imath}T_{\imath\imath}\right) e_t\;}
 $$
 
 collapses the whole tensor to its trace, and that collapse is the framework's most important structural limitation for cosmology: for a traceless symmetric object the packaging vanishes identically. The consequences for the cosmological source are immediate and sharp.
 
-- **A perfect fluid collapses to its trace.** In the fluid rest frame, $T_{\mu\nu} = \mathrm{diag}(\rho, p, p, p)$, so the packaging gives $(-\rho + 3p)\,e_t$. The separate functions $\rho$ and $p$ — which the Friedmann equations need as independent inputs — are replaced by the single combination $-\rho + 3p$, and the fluid's four-velocity and any anisotropic stress are discarded.
+- **A perfect fluid collapses to its trace.** In the fluid rest frame, $T_{\imath\jmath} = \mathrm{diag}(\rho, p, p, p)$, so the packaging gives $(-\rho + 3p)\,e_t$. The separate functions $\rho$ and $p$ — which the Friedmann equations need as independent inputs — are replaced by the single combination $-\rho + 3p$, and the fluid's four-velocity and any anisotropic stress are discarded.
 - **A radiation source vanishes.** For radiation, $p = \rho/3$, and $-\rho + 3p = 0$. The framework's natural packaging of a radiation-dominated cosmological source is **zero**, by the same collapse that annihilates the transverse-traceless amplitudes and the traceless quadrupole moment in the field-equations article. A radiation era is exactly what a hot early universe is made of.
 
 *Open:* a carrier for the symmetric rank-two content that does not collapse to the trace, **or** a dynamics that produces one — the two halves are not the same question, and the first half is closed. A frame carries any nondegenerate symmetric $T$ as its Gram matrix, and for a perfect fluid the frame is explicit: one informational leg and three material ones give $\mathrm{diag}(\rho,p,p,p)$ exactly, with $\rho$ and $p$ as independent squared leg norms. *The Action Problem* writes that construction and its boost. So what is missing is not a place to put the two functions but a matter action that fixes the frame, which is why this row stays open while its first clause is settled — the same missing object the field-equations article names for the quadrupole moment and the transverse-traceless amplitudes. *Would settle it:* a matter action whose variation produces the source frame, or, if the stronger demand is kept, an equivariant bilinear map from the fields the framework can carry into the representation $(1,1)\oplus(0,0)$ of the Lorentz group, with the trace part and the traceless part carried separately; the computation is to construct it and check that (i) it is equivariant under the local rotor action, (ii) its trace reduces to the packaging above, and (iii) its traceless part reproduces a supplied $\rho$ and $p$ rather than annihilating them. A no-go — a proof that no such map exists within the algebra's operations — would be an equally complete result, and would mean that a homogeneous cosmology cannot be sourced from within $\mathbb{B}$ at all.
@@ -160,8 +160,8 @@ The rank-two limitation is worth stating in its full generality, because it is t
 
 Standard cosmology treats $\Lambda$ in two ways, and the distinction matters because an article that blurred them would be making a claim the evidence does not support.
 
-- **As a parameter.** $\Lambda$ is a term in the field equation, $G_{\mu\nu} + \Lambda g_{\mu\nu} = \tfrac{8\pi G}{c^4}T_{\mu\nu}$, with a value fixed by observation. In this interpretation it is an input, not a prediction.
-- **As a constant of integration.** In the trace-free (unimodular) formulation, the trace-free part of the field equations does not involve $\Lambda$ at all; $\Lambda$ is an integration constant of the remaining trace equation, and its value is not determined by the local dynamics. In this interpretation $g_{\mu\nu}$ and $\Lambda$ are unchanged by a shift of the source's trace, which is the standard route by which the "cosmological-constant problem" is reformulated as a problem of initial data rather than of vacuum energy.
+- **As a parameter.** $\Lambda$ is a term in the field equation, $G_{\imath\jmath} + \Lambda g_{\imath\jmath} = \tfrac{8\pi G}{c^4}T_{\imath\jmath}$, with a value fixed by observation. In this interpretation it is an input, not a prediction.
+- **As a constant of integration.** In the trace-free (unimodular) formulation, the trace-free part of the field equations does not involve $\Lambda$ at all; $\Lambda$ is an integration constant of the remaining trace equation, and its value is not determined by the local dynamics. In this interpretation $g_{\imath\jmath}$ and $\Lambda$ are unchanged by a shift of the source's trace, which is the standard route by which the "cosmological-constant problem" is reformulated as a problem of initial data rather than of vacuum energy.
 
 The framework has **neither interpretation available**, and this is a statement about what is built, not a judgement about which interpretation is right.
 
@@ -179,9 +179,9 @@ It is important to state what this is: **a speculation with no derivation.** It 
 
 1. **The framework supplies no coupling.** *The Informational Sector: States, Observables and Probability* and *Introduction to the Biquaternion Universe* both state that beyond the Lorentz coupling by rotor conjugation there is no specified coupling between the sectors, and no equation of motion for $\mathbb{B}_{\Psi}$-valued fields. *Curved Spacetime and the Biquaternion Framework* adds that on a curved background even the pointwise trace has no integral analogue. A coupling that sources geometry would have to be an equation of motion for fields in both sectors; none exists.
 2. **The only coupling that exists is kinematic and does no cosmological work.** The rotor conjugation $\tilde{Q} \mapsto \tilde{U}\tilde{Q}\tilde{U}^{*}$ is a Lorentz transformation of the material sector by a unit-norm biquaternion; it preserves the metric and moves no energy, so it cannot source an expansion. Using it as a "coupling" would be a category error: it is a symmetry, not a source.
-3. **A one-sector-sources-the-other mechanism would be visible if it existed.** Any genuine coupling would contribute to an effective $T_{\mu\nu}$ and hence to the Friedmann equations. Its absence is the absence of that contribution.
+3. **A one-sector-sources-the-other mechanism would be visible if it existed.** Any genuine coupling would contribute to an effective $T_{\imath\jmath}$ and hence to the Friedmann equations. Its absence is the absence of that contribution.
 
-**What would settle the speculation.** Not a reinterpretation of existing structure, but a construction. The object is an action coupling an $\mathbb{B}_{\Phi}$-valued field to an $\mathbb{B}_{\Psi}$-valued field through an algebra-built term — a term that is not the Lorentz action and does not reduce to it — together with the computation of the stress–energy tensor it produces when varied with respect to the frame. The check is whether that $T_{\mu\nu}$ is (i) non-zero, (ii) of perfect-fluid form on the cosmological ansatz, and (iii) such that the induced Friedmann equations differ from the standard ones. If the induced source is proportional to the trace of an already-present fluid, the speculation adds nothing; if it is independent, it is a genuine cosmological prediction and should be computed and confronted with observation. A no-go — a proof that no such coupling term can be built, or that any such term is a total derivative — would settle it in the negative and would be as valuable as a construction. Note that the obstacle of the rank-two source stands in the way of this speculation as it stands in the way of everything else: any energy–momentum produced would still have to be carried in a form the algebra can hold.
+**What would settle the speculation.** Not a reinterpretation of existing structure, but a construction. The object is an action coupling an $\mathbb{B}_{\Phi}$-valued field to an $\mathbb{B}_{\Psi}$-valued field through an algebra-built term — a term that is not the Lorentz action and does not reduce to it — together with the computation of the stress–energy tensor it produces when varied with respect to the frame. The check is whether that $T_{\imath\jmath}$ is (i) non-zero, (ii) of perfect-fluid form on the cosmological ansatz, and (iii) such that the induced Friedmann equations differ from the standard ones. If the induced source is proportional to the trace of an already-present fluid, the speculation adds nothing; if it is independent, it is a genuine cosmological prediction and should be computed and confronted with observation. A no-go — a proof that no such coupling term can be built, or that any such term is a total derivative — would settle it in the negative and would be as valuable as a construction. Note that the obstacle of the rank-two source stands in the way of this speculation as it stands in the way of everything else: any energy–momentum produced would still have to be carried in a form the algebra can hold.
 
 ## Two Overclaims That Would Not Help
 
@@ -222,7 +222,7 @@ This article records what the biquaternion framework carries of cosmology, what 
 | Cosmological source in rank-two form | **No route yet** | An equivariant bilinear into $(1,1)\oplus(0,0)$ that does not collapse to the trace; the present packaging sends a perfect fluid to $(-\rho+3p)e_t$ and a radiation source to zero |
 | Thermodynamic quantities (densities, equation of state) | **No route yet** | A trace with a measure, or an $\mathbb{B}_{\Psi}$-valued field with an action, giving extensive densities and a $p(\rho)$ relation; the present invariants are rank-two and bounded by $\log 2$ |
 | Cosmological constant | **No route yet** | An algebra-built $\Lambda$-term, with its trace-shift status fixed; the framework offers neither the parameter nor the integration-constant interpretation |
-| Two-sector cosmological coupling | **No route yet, and a speculation** | An algebra-built coupling term whose induced $T_{\mu\nu}$ is independent of any existing fluid; or a no-go |
+| Two-sector cosmological coupling | **No route yet, and a speculation** | An algebra-built coupling term whose induced $T_{\imath\jmath}$ is independent of any existing fluid; or a no-go |
 
 **The article's central finding** is that the framework's cosmological difficulty is not merely the missing dynamics. It is also a mismatch of invariant structure: the framework's scalars are traces over a two-dimensional fibre, while cosmology's are densities and integrals over a three-manifold; and its natural packaging of a rank-two source collapses to the trace, so the two functions $\rho$ and $p$ that close the Friedmann equations are not carried, and a radiation fluid is annihilated entirely. The framework's own thermodynamics reaches the quantities a homogeneous cosmology does not use, and stops at $\log 2$, which is the entropy of a two-state system.
 
@@ -237,13 +237,13 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $i$ | scalar imaginary, commuting with every $\vec e_\eta$ | inherited |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | informational and material sectors, $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | inherited |
 | $\mathbb{B}_{C}$, $\mathbb{B}_{H}$ | centre $\mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; real-quaternion subspace | inherited |
-| $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_\eta = \vec e_\eta$ | inherited |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = -\varepsilon_\mu\delta_{\mu\nu}$, the material tuple $(-1,+1,+1,+1)$ | inherited |
+| $\varepsilon_{\imath}$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_\eta = \vec e_\eta$ | inherited |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, $\langle\varepsilon_{\imath},\varepsilon_{\jmath}\rangle_{\natural} = -\varepsilon_{\imath}\delta_{\imath\jmath}$, the material tuple $(-1,+1,+1,+1)$ | inherited |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | biquaternionic gradient, its conjugate, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | inherited |
-| $\tilde{E}_{\Phi,\mu} \in \mathbb{B}_{\Phi}$, $g_{\mu\nu} = \langle\tilde{E}_{\Phi,\mu},\tilde{E}_{\Phi,\nu}\rangle_{\natural}$ | frame field and the metric it carries | inherited |
+| $\tilde{E}_{\Phi,\imath} \in \mathbb{B}_{\Phi}$, $g_{\imath\jmath} = \langle\tilde{E}_{\Phi,\imath},\tilde{E}_{\Phi,\jmath}\rangle_{\natural}$ | frame field and the metric it carries | inherited |
 | $a(r'_t)$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
 | $H = \left(da/dt'\right)/a = c\left(da/dr'_t\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
-| $\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\sum_{\mu}T_{\mu\mu})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |
+| $\sum_{\imath\jmath}T_{\imath\jmath}\varepsilon_{\imath}\bar{\varepsilon}_{\jmath}=(\sum_{\imath}T_{\imath\imath})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |
 | $Z = 2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
 | $c_{\mathrm{loc}} = c = 1/\sqrt{\epsilon\mu}$ | local scale of the imaginary time axis, Reading B of the local-scale route | inherited |
 

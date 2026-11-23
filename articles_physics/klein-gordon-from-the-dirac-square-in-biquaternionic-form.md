@@ -87,7 +87,7 @@ $$
 
 Three features of this reduction deserve to be named, because they are what the algebra contributes and not merely what it transcribes.
 
-First, the reduction uses the **two different gradients**. It is the passage from $\tilde\nabla_\Phi$ to $(\tilde\nabla_\Phi)^{\natural}$ that produces a central scalar, as the previous section showed: $\tilde\nabla_\Phi$ alone squares to a non-central element, and only the product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central. The square of the Dirac pair is the biquaternion norm $\langle\tilde\nabla_\Phi\rangle_{\natural} = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, exactly as $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the biquaternion norm of an element — the observation the Klein–Gordon article makes about its own operator.
+First, the reduction uses the **two different gradients**. It is the passage from $\tilde\nabla_\Phi$ to $(\tilde\nabla_\Phi)^{\natural}$ that produces a central scalar, as the previous section showed: $\tilde\nabla_\Phi$ alone squares to a non-central element, and only the product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central. The square of the Dirac pair is the biquaternion norm $\langle\tilde\nabla_\Phi\rangle_{\natural} = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, exactly as $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ is the biquaternion norm of an element — the observation the Klein–Gordon article makes about its own operator.
 
 Second, the reduction eliminates **both** members of the pair at once. It is not that one chiral half obeys Klein–Gordon and the other does not; the mass couples them, so that squaring forces each half onto the same second-order shell. A mass that acted within each half alone would leave two separate first-order equations, each of which squares to a mass term beside a non-central $\tilde\nabla_\Phi^2$; the coupling is what puts $\tilde\nabla_\Phi$ on one half and $(\tilde\nabla_\Phi)^{\natural}$ on the other, so that the second member converts the first-order left-hand side into the central $\Box_\Phi$.
 
@@ -116,7 +116,7 @@ $$
 The cancellation of the mixed terms uses the quaternion multiplication table twice: the spacelike ones cancel because $\{\vec e_j,\vec e_\eta\} = 0$ for $j\neq k$, the timelike ones because the scalar part commutes with the vector part. This is why $\Box_\Phi$ is scalar and central, and why it acts on a biquaternion field coefficient by coefficient,
 
 $$
-\Box_\Phi\tilde{Ξ} = \sum_{\nu\in\{t,x,y,z\}}(\Box_\PhiΞ_\nu)\,e_\nu ,
+\Box_\Phi\tilde{Ξ} = \sum_{\jmath\in\{t,x,y,z\}}(\Box_\PhiΞ_{\jmath})\,e_{\jmath} ,
 $$
 
 with no mixing of components. The spin-$0$ article records this as the reason its equation decouples into four complex scalars; here the same centrality is what lets the square of the Dirac pair produce a single second-order equation rather than a system.
@@ -422,13 +422,13 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $\vec\nabla_\Phi = \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$ | Vector part of the gradient, $\lvert\vec\nabla_\Phi\rvert^2 = \Delta_\Phi$ |
 | $\tilde\nabla_\Phi^2 = \left(\partial^2/\partial R_t^2 - \lvert\vec\nabla_\Phi\rvert^2\right)e_t + 2\,\partial/\partial R_t\,\vec\nabla_\Phi$ | Square of the gradient alone; non-central, with a vector remainder |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |
 | $\tilde P_{\Phi} =\frac{h}{2\pi}\,(i\omega/c\,e_t + \vec k_\Phi)$ | Four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
 | $\tilde R_\Phi = i r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot\vec r - \omega r'_t/c$ |
 | $1/k_m$ | The mass length of the operator pair, $\frac{h}{2\pi mc}$ (inverse reduced Compton wavelength) |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | The one-sided pair; linear, with the mass the same scalar in each half |
 | $\tilde{Ξ}_{L} =\frac{1}{k_m}\tilde\nabla_\Phi\tilde{Ξ}_{R}$ | The second half as the gradient of the first; the pair's equivalent form, exact whenever $(\Box_\Phi-k_m^{2})\tilde{Ξ}_{R} = 0$ |
-| $\langle\tilde{Ξ}\rangle_{*} = \sum_\mu\lvert\tilde{Ξ}_{\mu}\rvert^2$ | Hermitian norm of a field, positive definite; the Dirac density of the pair |
+| $\langle\tilde{Ξ}\rangle_{*} = \sum_{\imath}\lvert\tilde{Ξ}_{\imath}\rvert^2$ | Hermitian norm of a field, positive definite; the Dirac density of the pair |
 | $\tilde{Ξ} = (\tilde{Ξ}_{L},\tilde{Ξ}_{R})$ | The chiral pair as an ordered pair of elements |
 | $E^2 = \vec p^2c^2 + m^2c^4$ | Dispersion relation |
 

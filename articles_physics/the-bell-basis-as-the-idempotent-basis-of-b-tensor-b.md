@@ -20,7 +20,7 @@ One caveat is stated at the outset and revisited in the closing remark. Everythi
 
 ## The Two-Qubit Algebra and Idempotent Bases
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_\mu^2=-e_t$ and the cyclic relations $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, with $\vec e_\nu \vec e_\mu=-\vec e_\mu \vec e_\nu$ for distinct $\nu,\mu\in\{x,y,z\}$, and with $i$ the scalar imaginary, $i^2=-1$. The two-qubit algebra is the tensor product
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_{\imath}^2=-e_t$ and the cyclic relations $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, with $\vec e_{\jmath} \vec e_{\imath}=-\vec e_{\imath} \vec e_{\jmath}$ for distinct ${\jmath},\imath\in\{x,y,z\}$, and with $i$ the scalar imaginary, $i^2=-1$. The two-qubit algebra is the tensor product
 
 $$
 \mathbb{B}\otimes\mathbb{B}\;\cong\; M_4(\mathbb{C}),
@@ -32,7 +32,7 @@ $$
 \mathrm{Sc}(x\otimes y)=\mathrm{Sc}(x)\cdot\mathrm{Sc}(y),
 $$
 
-where $\mathrm{Sc}(e_t)=1$ and $\mathrm{Sc}(\vec e_\mu)=0$ for $\mu\in\{x,y,z\}$. A full contraction of the two factors pays $4$, a partial one pays $2$, and the partial scalar parts are
+where $\mathrm{Sc}(e_t)=1$ and $\mathrm{Sc}(\vec e_{\imath})=0$ for $\mu\in\{x,y,z\}$. A full contraction of the two factors pays $4$, a partial one pays $2$, and the partial scalar parts are
 
 $$
 \mathrm{Sc}_2(a\otimes b)=a\,\mathrm{Sc}(b),\qquad
@@ -47,7 +47,7 @@ $$
 e_t\mapsto I_2,\qquad \vec e_x\mapsto -i\sigma_1,\qquad \vec e_y\mapsto -i\sigma_2,\qquad \vec e_z\mapsto -i\sigma_3,
 $$
 
-with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. Equivalently, $\sigma_\mu$ is the image of $i\vec e_\mu$. Under this isomorphism the single-qubit idempotent $\tfrac{1}{2}(e_t+i\vec u)$ corresponds to the spin-up projector along the unit vector $\vec u$. We shall use this correspondence to identify the four Bell idempotents with the standard Bell states.
+with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. Equivalently, $\sigma_{\imath}$ is the image of $i\vec e_{\imath}$. Under this isomorphism the single-qubit idempotent $\tfrac{1}{2}(e_t+i\vec u)$ corresponds to the spin-up projector along the unit vector $\vec u$. We shall use this correspondence to identify the four Bell idempotents with the standard Bell states.
 
 The scalar part gives a symmetric bilinear form $4\,\mathrm{Sc}(XY)$ on $\mathbb{B}\otimes\mathbb{B}$, and the four Bell idempotents below will be orthonormal with respect to it. It is therefore natural to ask for an **idempotent basis**: a family of idempotents that play, for the algebra and its module, the role that an orthonormal basis plays for a Hilbert space.
 
@@ -89,13 +89,13 @@ This is a **vector-space** identification only: the algebra product on $\mathbb{
 | $\lvert\tilde{Ξ}^+\rangle$ | $\tfrac{1}{\sqrt2}(\lvert01\rangle+\lvert10\rangle)$ | $\tfrac{1}{\sqrt2}(\vec e_x+\vec e_y)$ |
 | $\lvert\tilde{Ξ}^-\rangle$ | $\tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$ | $\tfrac{1}{\sqrt2}(\vec e_x-\vec e_y)$ |
 
-At the level of state vectors the four Bell states are therefore the four combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the unit pairs $\{e_t,\vec e_z\}$ and $\{\vec e_x,\vec e_y\}$. This is the form in which they arise from the division of one particle in the mereological interpretation of the companion article *Entangled Subsystems in the Biquaternion Framework*, where the state is created by a split and the split is a division in the sense of *Mereology and Collective Set Theory*.
+At the level of state vectors the four Bell states are therefore the four combinations $\tfrac{1}{\sqrt2}(e_{\imath}\pm e_{\jmath})$ for the unit pairs $\{e_t,\vec e_z\}$ and $\{\vec e_x,\vec e_y\}$. This is the form in which they arise from the division of one particle in the mereological interpretation of the companion article *Entangled Subsystems in the Biquaternion Framework*, where the state is created by a split and the split is a division in the sense of *Mereology and Collective Set Theory*.
 
 Two cautions follow from the identification, and both are used by the literature that motivates this section.
 
-**The vector is not the state.** The combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ are elements of $\mathbb{B}$ and are in general neither Hermitian nor idempotent; they are not elements of $\mathbb{B}_{\Psi}$ and they are not states in the framework's sense. The state *object* is the idempotent $\tilde\Pi_{\mathrm{id},\epsilon}$ of $\mathbb{B}\otimes\mathbb{B}$ whose module-theoretic image is the line spanned by the corresponding vector. The passage is from a state vector in the four-dimensional module to a rank-one idempotent in the sixteen-dimensional algebra, and the two must not be identified. The framework's convention, fixed by the companion articles, is that a pure state **is** the idempotent; the vector is the module element on which it acts. The two descriptions agree on every prediction, because both are interpretations of the same tensor-product state, but only the second is a state in the algebra.
+**The vector is not the state.** The combinations $\tfrac{1}{\sqrt2}(e_{\imath}\pm e_{\jmath})$ are elements of $\mathbb{B}$ and are in general neither Hermitian nor idempotent; they are not elements of $\mathbb{B}_{\Psi}$ and they are not states in the framework's sense. The state *object* is the idempotent $\tilde\Pi_{\mathrm{id},\epsilon}$ of $\mathbb{B}\otimes\mathbb{B}$ whose module-theoretic image is the line spanned by the corresponding vector. The passage is from a state vector in the four-dimensional module to a rank-one idempotent in the sixteen-dimensional algebra, and the two must not be identified. The framework's convention, fixed by the companion articles, is that a pure state **is** the idempotent; the vector is the module element on which it acts. The two descriptions agree on every prediction, because both are interpretations of the same tensor-product state, but only the second is a state in the algebra.
 
-**A single quaternion is not an entangled state.** The temptation created by the identification $\mathbb{C}^4\cong\mathbb{B}$ is to take one element of $\mathbb{B}$ and read it as an entangled two-qubit state. This fails on the standard test. Write an element of $\mathbb{B}$ as $Q=Q_t e_t+\sum_\mu Q_\mu \vec e_\mu$ and let $\mathbf c=(c_1,c_2,c_3,c_4)$ be its components in the basis order above. The corresponding two-qubit vector is a product state exactly when
+**A single quaternion is not an entangled state.** The temptation created by the identification $\mathbb{C}^4\cong\mathbb{B}$ is to take one element of $\mathbb{B}$ and read it as an entangled two-qubit state. This fails on the standard test. Write an element of $\mathbb{B}$ as $Q=Q_t e_t+\sum_{\imath} Q_{\imath} \vec e_{\imath}$ and let $\mathbf c=(c_1,c_2,c_3,c_4)$ be its components in the basis order above. The corresponding two-qubit vector is a product state exactly when
 
 $$
 c_1c_4-c_2c_3=0 ,
@@ -135,29 +135,29 @@ There are exactly four such triples, and they correspond to the four Bell states
 
 The first row is the singlet idempotent $\tilde\Pi_{\mathrm{id,singlet}}$ already fixed by the entangled-subsystems article; the other three rows are its companions. *Exercise: The Correlation Function of the Bell States* verified that each $\tilde\Pi_{\mathrm{id},\epsilon}$ with $\epsilon_1\epsilon_2\epsilon_3=+1$ is idempotent and of unit weight, so we do not repeat that computation. Two further properties are worth recording.
 
-**The $\tilde\Pi_{\mathrm{id},\epsilon}$ are Hermitian.** For $\mu\in\{x,y,z\}$ the Hermitian conjugate of $\vec e_\mu$ is $-\vec e_\mu$, so
+**The $\tilde\Pi_{\mathrm{id},\epsilon}$ are Hermitian.** For $\mu\in\{x,y,z\}$ the Hermitian conjugate of $\vec e_{\imath}$ is $-\vec e_{\imath}$, so
 
 $$
-(\vec e_\mu\otimes \vec e_\mu)^{*}=(-\vec e_\mu)\otimes(-\vec e_\mu)=\vec e_\mu\otimes \vec e_\mu .
+(\vec e_{\imath}\otimes \vec e_{\imath})^{*}=(-\vec e_{\imath})\otimes(-\vec e_{\imath})=\vec e_{\imath}\otimes \vec e_{\imath} .
 $$
 
-The tensor terms are therefore individually Hermitian, the coefficients $\epsilon_\mu$ and $\tfrac14$ are real, and $\tilde\Pi_{\mathrm{id},\epsilon}^{*}=\tilde\Pi_{\mathrm{id},\epsilon}$. Each $\tilde\Pi_{\mathrm{id},\epsilon}$ is a legitimate state, not merely an algebraic idempotent.
+The tensor terms are therefore individually Hermitian, the coefficients $\epsilon_{\imath}$ and $\tfrac14$ are real, and $\tilde\Pi_{\mathrm{id},\epsilon}^{*}=\tilde\Pi_{\mathrm{id},\epsilon}$. Each $\tilde\Pi_{\mathrm{id},\epsilon}$ is a legitimate state, not merely an algebraic idempotent.
 
 **The $\tilde\Pi_{\mathrm{id},\epsilon}$ lie in the physical subspace.** The Hermitian subspace $\mathbb{B}_{\Psi}$ has real basis $e_t,i\vec e_x,i\vec e_y,i\vec e_z$. Hence
 
 $$
-\vec e_\mu\otimes \vec e_\mu=-(i\vec e_\mu)\otimes(i\vec e_\mu)\in\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi} .
+\vec e_{\imath}\otimes \vec e_{\imath}=-(i\vec e_{\imath})\otimes(i\vec e_{\imath})\in\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi} .
 $$
 
-So every $\tilde\Pi_{\mathrm{id},\epsilon}$ is an element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, the space of two-qubit states and observables, as required. That space is the whole Hermitian part of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$ and not half of it: the two aligned corners coincide, since $i\vec e_\mu\otimes i\vec e_\mu=-\vec e_\mu\otimes\vec e_\mu$ in the quotient. The four idempotents therefore span a slice of the algebra, which is [The Multi-Qubit Split, I](the-multi-qubit-split-i-the-antilinear-obstruction-and-the-corner-collapse.html).
+So every $\tilde\Pi_{\mathrm{id},\epsilon}$ is an element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, the space of two-qubit states and observables, as required. That space is the whole Hermitian part of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$ and not half of it: the two aligned corners coincide, since $i\vec e_{\imath}\otimes i\vec e_{\imath}=-\vec e_{\imath}\otimes\vec e_{\imath}$ in the quotient. The four idempotents therefore span a slice of the algebra, which is [The Multi-Qubit Split, I](the-multi-qubit-split-i-the-antilinear-obstruction-and-the-corner-collapse.html).
 
-**Identification with the standard Bell states.** Under the isomorphism, $\vec e_\mu$ corresponds to $-i\sigma_\mu$, so $\vec e_\mu\otimes \vec e_\mu$ corresponds to $-\sigma_\mu\otimes\sigma_\mu$. Writing $\tilde\Pi_{\mathrm{id},\epsilon}$ in the Pauli-string basis gives
+**Identification with the standard Bell states.** Under the isomorphism, $\vec e_{\imath}$ corresponds to $-i\sigma_{\imath}$, so $\vec e_{\imath}\otimes \vec e_{\imath}$ corresponds to $-\sigma_{\imath}\otimes\sigma_{\imath}$. Writing $\tilde\Pi_{\mathrm{id},\epsilon}$ in the Pauli-string basis gives
 
 $$
 \tilde\Pi_{\mathrm{id},\epsilon}\;\longmapsto\;\tfrac{1}{4}\left(I\otimes I-\epsilon_1\,\sigma_1\otimes\sigma_1-\epsilon_2\,\sigma_2\otimes\sigma_2-\epsilon_3\,\sigma_3\otimes\sigma_3\right),
 $$
 
-which is exactly the standard Bell projector for the sign pattern in the table. For example, the singlet $\epsilon=(+1,+1,+1)$ gives $\tfrac14(I\otimes I-\sum_\mu\sigma_\mu\otimes\sigma_\mu)$, the projector onto $|\tilde{Ξ}^-\rangle$, in agreement with the entangled-subsystems article. The general idempotency condition $\epsilon_1\epsilon_2\epsilon_3=+1$ is the algebraic reflection of the fact that there are exactly four Bell states.
+which is exactly the standard Bell projector for the sign pattern in the table. For example, the singlet $\epsilon=(+1,+1,+1)$ gives $\tfrac14(I\otimes I-\sum_{\imath}\sigma_{\imath}\otimes\sigma_{\imath})$, the projector onto $|\tilde{Ξ}^-\rangle$, in agreement with the entangled-subsystems article. The general idempotency condition $\epsilon_1\epsilon_2\epsilon_3=+1$ is the algebraic reflection of the fact that there are exactly four Bell states.
 
 ## Orthogonality and Completeness
 
@@ -173,15 +173,15 @@ $$
 
 They have three elementary properties, each a direct computation.
 
-**Hermiticity.** As in the previous section, $(\vec e_\mu\otimes \vec e_\mu)^{*}=\vec e_\mu\otimes \vec e_\mu$, so $S_1^{*}=S_1$ and $S_3^{*}=S_3$.
+**Hermiticity.** As in the previous section, $(\vec e_{\imath}\otimes \vec e_{\imath})^{*}=\vec e_{\imath}\otimes \vec e_{\imath}$, so $S_1^{*}=S_1$ and $S_3^{*}=S_3$.
 
-**Involution.** Using $(\vec e_\mu\otimes \vec e_\mu)^2=\vec e_\mu^2\otimes \vec e_\mu^2=(-e_t)\otimes(-e_t)=e_t\otimes e_t$, we get
+**Involution.** Using $(\vec e_{\imath}\otimes \vec e_{\imath})^2=\vec e_{\imath}^2\otimes \vec e_{\imath}^2=(-e_t)\otimes(-e_t)=e_t\otimes e_t$, we get
 
 $$
 S_1^2=S_3^2=e_t\otimes e_t .
 $$
 
-**Commutativity.** Using $\vec e_x\vec e_z=-\vec e_y$ and $\vec e_z\vec e_x=\vec e_y$, together with $(\vec e_\nu\otimes \vec e_\nu)(\vec e_\mu\otimes \vec e_\mu)=(\vec e_\nu \vec e_\mu)\otimes(\vec e_\nu \vec e_\mu)$, we get
+**Commutativity.** Using $\vec e_x\vec e_z=-\vec e_y$ and $\vec e_z\vec e_x=\vec e_y$, together with $(\vec e_{\jmath}\otimes \vec e_{\jmath})(\vec e_{\imath}\otimes \vec e_{\imath})=(\vec e_{\jmath} \vec e_{\imath})\otimes(\vec e_{\jmath} \vec e_{\imath})$, we get
 
 $$
 S_1S_3=(-\vec e_x\otimes \vec e_x)(-\vec e_z\otimes \vec e_z)=(\vec e_x\vec e_z)\otimes(\vec e_x\vec e_z)=(-\vec e_y)\otimes(-\vec e_y)=\vec e_y\otimes \vec e_y,
@@ -201,7 +201,7 @@ $$
 =\tfrac{1}{4}\left(e_t\otimes e_t+s_1S_1+s_3S_3+s_1s_3\,S_1S_3\right)
 $$
 
-is the joint spectral projector onto the common eigenspace with eigenvalues $(s_1,s_3)\in\{\pm1\}^2$. Each factor $\tfrac12(e_t\otimes e_t+s_\mu S_\mu)$ is idempotent and Hermitian because $S_\mu$ is an involution, and the two factors commute; hence the product is idempotent and Hermitian as well. Summing over the four sign pairs,
+is the joint spectral projector onto the common eigenspace with eigenvalues $(s_1,s_3)\in\{\pm1\}^2$. Each factor $\tfrac12(e_t\otimes e_t+s_{\imath} S_{\imath})$ is idempotent and Hermitian because $S_{\imath}$ is an involution, and the two factors commute; hence the product is idempotent and Hermitian as well. Summing over the four sign pairs,
 
 $$
 \boxed{\;\sum_{s_1,s_3=\pm1}\tilde\Pi_{\mathrm{id},(s_1,s_3)}=e_t\otimes e_t\;} .
@@ -223,7 +223,7 @@ The identity $\epsilon_1\epsilon_2\epsilon_3=(-s_1)(s_1s_3)(-s_3)=s_1^2s_3^2=+1$
 
 - **Orthogonality:** $\tilde\Pi_{\mathrm{id},\epsilon} \tilde\Pi_{\mathrm{id},\varkappa}=\delta_{\epsilon\varkappa}\tilde\Pi_{\mathrm{id},\epsilon}$, because distinct joint spectral projectors of a family of commuting Hermitian operators are orthogonal.
 - **Completeness:** $\sum_\epsilon \tilde\Pi_{\mathrm{id},\epsilon}=e_t\otimes e_t$, the resolution of the identity.
-- **Scalar normalisation:** $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\epsilon})=\tfrac14\,\mathrm{Sc}(e_t\otimes e_t)=\tfrac14$, because $\mathrm{Sc}(\vec e_\mu\otimes \vec e_\mu)=\mathrm{Sc}(\vec e_\mu)^2=0$; hence $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\epsilon})=1$.
+- **Scalar normalisation:** $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\epsilon})=\tfrac14\,\mathrm{Sc}(e_t\otimes e_t)=\tfrac14$, because $\mathrm{Sc}(\vec e_{\imath}\otimes \vec e_{\imath})=\mathrm{Sc}(\vec e_{\imath})^2=0$; hence $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\epsilon})=1$.
 - **Scalar orthonormality:** $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\epsilon} \tilde\Pi_{\mathrm{id},\varkappa})=\delta_{\epsilon\varkappa}$, combining orthogonality with scalar normalisation.
 
 Together with Hermiticity and the fact that the Peirce components $\tilde\Pi_{\mathrm{id},\epsilon}(\mathbb{B}\otimes\mathbb{B})\tilde\Pi_{\mathrm{id},\varkappa}$ are one-dimensional, these four properties say precisely that $\{\tilde\Pi_{\mathrm{id},\epsilon}\}$ is an idempotent basis in the sense of the definition above. Its linear span is the four-dimensional maximal commutative subalgebra generated by $S_1$ and $S_3$, a Cartan subalgebra of $\mathbb{B}\otimes\mathbb{B}$.
@@ -245,7 +245,7 @@ $$
 \sum_{\epsilon}\epsilon_\rho\,\epsilon_\sigma=4\,\delta_{\rho,\sigma} .
 $$
 
-Thus $HH^{T}=H^{T}H=4I_4$, i.e. $H$ is a Hadamard matrix. The first relation says that the four sign vectors are pairwise orthogonal of squared length four; the second says that the four columns are also orthogonal and that, in particular, $\sum_\epsilon\epsilon_\mu=0$ for each $\mu\in\{x,y,z\}$. The first relation is the algebraic content of operator orthogonality — the mixed terms cancel exactly — and the vanishing column sums are the reason the mixed terms cancel in the resolution of the identity $\sum_\epsilon \tilde\Pi_{\mathrm{id},\epsilon}=e_t\otimes e_t$. The Bell idempotents are, in this sense, the operator form of a Hadamard matrix.
+Thus $HH^{T}=H^{T}H=4I_4$, i.e. $H$ is a Hadamard matrix. The first relation says that the four sign vectors are pairwise orthogonal of squared length four; the second says that the four columns are also orthogonal and that, in particular, $\sum_\epsilon\epsilon_{\imath}=0$ for each $\mu\in\{x,y,z\}$. The first relation is the algebraic content of operator orthogonality — the mixed terms cancel exactly — and the vanishing column sums are the reason the mixed terms cancel in the resolution of the identity $\sum_\epsilon \tilde\Pi_{\mathrm{id},\epsilon}=e_t\otimes e_t$. The Bell idempotents are, in this sense, the operator form of a Hadamard matrix.
 
 It is worth noting what the Hadamard structure does **not** yet show. The relations above concern the four sign patterns with $\epsilon_1\epsilon_2\epsilon_3=+1$; they do not by themselves exclude the existence of a diagonal-form idempotent with some other pattern, or with non-invertible coefficients. We settle that question in the section on maximal entanglement, where the diagonal-form idempotents are classified.
 
@@ -270,7 +270,7 @@ The four eigenvalue pairs $(-\epsilon_1,-\epsilon_3)$ are all distinct, so the j
 
 Two immediate consequences complete the picture.
 
-**Conjugation stabilisation.** Because $S_\mu$ is an involution and $S_\mu\tilde\Pi_{\mathrm{id},\epsilon}=\pm \tilde\Pi_{\mathrm{id},\epsilon}$, multiplying on the right by $S_\mu$ gives $S_\mu\tilde\Pi_{\mathrm{id},\epsilon} S_\mu=\tilde\Pi_{\mathrm{id},\epsilon}$. Thus each Bell idempotent is invariant under conjugation by either stabiliser operator, $S_1\tilde\Pi_{\mathrm{id},\epsilon} S_1=S_3\tilde\Pi_{\mathrm{id},\epsilon} S_3=\tilde\Pi_{\mathrm{id},\epsilon}$.
+**Conjugation stabilisation.** Because $S_{\imath}$ is an involution and $S_{\imath}\tilde\Pi_{\mathrm{id},\epsilon}=\pm \tilde\Pi_{\mathrm{id},\epsilon}$, multiplying on the right by $S_{\imath}$ gives $S_{\imath}\tilde\Pi_{\mathrm{id},\epsilon} S_{\imath}=\tilde\Pi_{\mathrm{id},\epsilon}$. Thus each Bell idempotent is invariant under conjugation by either stabiliser operator, $S_1\tilde\Pi_{\mathrm{id},\epsilon} S_1=S_3\tilde\Pi_{\mathrm{id},\epsilon} S_3=\tilde\Pi_{\mathrm{id},\epsilon}$.
 
 **The stabiliser group.** For a fixed $\epsilon$, the four elements
 
@@ -280,7 +280,7 @@ $$
 
 form a Klein four-group, and each acts on $\tilde\Pi_{\mathrm{id},\epsilon}$ with eigenvalue $+1$. Indeed $-\epsilon_1S_1 \tilde\Pi_{\mathrm{id},\epsilon}=(-\epsilon_1)(-\epsilon_1)\tilde\Pi_{\mathrm{id},\epsilon}=\tilde\Pi_{\mathrm{id},\epsilon}$, and similarly for the other generators; the product acts with eigenvalue $(-\epsilon_1)(-\epsilon_3)=\epsilon_1\epsilon_3$, which is compensated by the explicit sign in front. This is the standard stabiliser group of a Bell state, expressed in the algebra $\mathbb{B}\otimes\mathbb{B}$.
 
-The stabiliser eigenvalues are also the entries of the correlation matrix of *Exercise: The Correlation Function of the Bell States*. That article defined $T_{\nu\mu}=\langle\tilde{Ξ}|\sigma_\nu\otimes\sigma_\mu|\tilde{Ξ}\rangle$ and found $T_{\nu\nu}=-\epsilon_\nu$ with vanishing off-diagonal entries. Since $S_\nu=-\vec e_\nu\otimes \vec e_\nu$ corresponds to $\sigma_\nu\otimes\sigma_\nu$, the diagonal entry $T_{\nu\nu}$ is exactly the eigenvalue of $S_\nu$ on $\tilde\Pi_{\mathrm{id},\epsilon}$. The correlation data and the stabiliser data are the same data, read in two ways.
+The stabiliser eigenvalues are also the entries of the correlation matrix of *Exercise: The Correlation Function of the Bell States*. That article defined $T_{\jmath\imath}=\langle\tilde{Ξ}|\sigma_{\jmath}\otimes\sigma_{\imath}|\tilde{Ξ}\rangle$ and found $T_{\jmath\jmath}=-\epsilon_{\jmath}$ with vanishing off-diagonal entries. Since $S_{\jmath}=-\vec e_{\jmath}\otimes \vec e_{\jmath}$ corresponds to $\sigma_{\jmath}\otimes\sigma_{\jmath}$, the diagonal entry $T_{\jmath\jmath}$ is exactly the eigenvalue of $S_{\jmath}$ on $\tilde\Pi_{\mathrm{id},\epsilon}$. The correlation data and the stabiliser data are the same data, read in two ways.
 
 ## Maximal Entanglement and the Diagonal Tensor Structure
 
@@ -301,16 +301,16 @@ The Bell idempotents satisfy this, as we compute in the next section. This is th
 The distinguishing structural feature of the Bell idempotents is visible directly in their definition. Expanding an arbitrary element of $\mathbb{B}\otimes\mathbb{B}$ in the tensor basis,
 
 $$
-\tilde{Q}=\sum_{\mu,\nu\in\{t,x,y,z\}}Q_{\mu\nu}\,e_\mu\otimes e_\nu,
+\tilde{Q}=\sum_{\imath,\jmath\in\{t,x,y,z\}}Q_{\imath\jmath}\,e_{\imath}\otimes e_{\jmath},
 $$
 
-the Bell idempotents are precisely those **idempotents of unit weight** whose expansion contains only the **diagonal** terms $e_\mu\otimes e_\mu$:
+the Bell idempotents are precisely those **idempotents of unit weight** whose expansion contains only the **diagonal** terms $e_{\imath}\otimes e_{\imath}$:
 
 $$
-\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\epsilon_\mu\,e_\mu\otimes e_\mu,\qquad \epsilon_t=1 .
+\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac{1}{4}\sum_{\imath\in\{t,x,y,z\}}\epsilon_{\imath}\,e_{\imath}\otimes e_{\imath},\qquad \epsilon_t=1 .
 $$
 
-There are no cross terms $e_\mu\otimes e_\nu$ with $\mu\neq\nu$. This is the "particular tensor structure" of the Bell states: the two tensor factors carry matched indices throughout, so the element is a sum of correlated pairs rather than of arbitrary products. In particular, $\tilde\Pi_{\mathrm{id},\epsilon}$ is invariant under the tensor flip $\tau(e_\mu\otimes e_\nu)=e_\nu\otimes e_\mu$.
+There are no cross terms $e_{\imath}\otimes e_{\jmath}$ with ${\imath}\neq\jmath$. This is the "particular tensor structure" of the Bell states: the two tensor factors carry matched indices throughout, so the element is a sum of correlated pairs rather than of arbitrary products. In particular, $\tilde\Pi_{\mathrm{id},\epsilon}$ is invariant under the tensor flip $\tau(e_{\imath}\otimes e_{\jmath})=e_{\jmath}\otimes e_{\imath}$.
 
 A natural question is how many idempotents of this diagonal form **of unit weight** there are. Let
 
@@ -318,7 +318,7 @@ $$
 \tilde\Pi_{\mathrm{id}}=\tfrac{1}{4}\left(\lambda_0\,e_t\otimes e_t+\lambda_1\,\vec e_x\otimes \vec e_x+\lambda_2\,\vec e_y\otimes \vec e_y+\lambda_3\,\vec e_z\otimes \vec e_z\right).
 $$
 
-Imposing $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ and $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}})=1$ determines the coefficients completely. The scalar part gives $\lambda_0=1$. The coefficient of $e_t\otimes e_t$ in $\tilde\Pi_{\mathrm{id}}^2$ is $\tfrac{1}{16}\sum_\mu\lambda_\mu^2$, which must equal $\tfrac14\lambda_0=\tfrac14$, so $\sum_\mu\lambda_\mu^2=4$. The coefficient of $\vec e_\lambda\otimes \vec e_\lambda$ (for $\lambda\in\{x,y,z\}$, where $\{\nu,\mu,\lambda\}=\{x,y,z\}$) is $\tfrac{1}{16}\left(2\lambda_\lambda+2\lambda_\nu\lambda_\mu\right)$, which must equal $\tfrac14\lambda_\lambda$, so $\lambda_\nu\lambda_\mu=\lambda_\lambda$. Multiplying the three relations by $\lambda_1,\lambda_2,\lambda_3$ respectively gives $\lambda_1^2=\lambda_2^2=\lambda_3^2=\lambda_1\lambda_2\lambda_3$; combined with $\lambda_0=1$ and $\sum_\mu\lambda_\mu^2=4$ this yields $\lambda_1^2=\lambda_2^2=\lambda_3^2=1$. Hence each $\lambda_\mu=\pm1$ and $\lambda_1\lambda_2\lambda_3=+1$. (For the four sign patterns, the direct verification of idempotency is the computation in *Exercise: The Correlation Function of the Bell States*.) So there are exactly **four** diagonal-form idempotents **of unit weight**, and they are the four Bell idempotents. No other diagonal idempotent of unit weight exists.
+Imposing $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ and $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}})=1$ determines the coefficients completely. The scalar part gives $\lambda_0=1$. The coefficient of $e_t\otimes e_t$ in $\tilde\Pi_{\mathrm{id}}^2$ is $\tfrac{1}{16}\sum_{\imath}\lambda_{\imath}^2$, which must equal $\tfrac14\lambda_0=\tfrac14$, so $\sum_{\imath}\lambda_{\imath}^2=4$. The coefficient of $\vec e_\lambda\otimes \vec e_\lambda$ (for $\lambda\in\{x,y,z\}$, where $\{\jmath,\imath,\lambda\}=\{x,y,z\}$) is $\tfrac{1}{16}\left(2\lambda_\lambda+2\lambda_{\jmath}\lambda_{\imath}\right)$, which must equal $\tfrac14\lambda_\lambda$, so $\lambda_{\jmath}\lambda_{\imath}=\lambda_\lambda$. Multiplying the three relations by $\lambda_1,\lambda_2,\lambda_3$ respectively gives $\lambda_1^2=\lambda_2^2=\lambda_3^2=\lambda_1\lambda_2\lambda_3$; combined with $\lambda_0=1$ and $\sum_{\imath}\lambda_{\imath}^2=4$ this yields $\lambda_1^2=\lambda_2^2=\lambda_3^2=1$. Hence each $\lambda_{\imath}=\pm1$ and $\lambda_1\lambda_2\lambda_3=+1$. (For the four sign patterns, the direct verification of idempotency is the computation in *Exercise: The Correlation Function of the Bell States*.) So there are exactly **four** diagonal-form idempotents **of unit weight**, and they are the four Bell idempotents. No other diagonal idempotent of unit weight exists.
 
 ### The Bell idempotents inside the continuum of maximally entangled states
 
@@ -351,7 +351,7 @@ $$
 
 The local action of the quaternion group therefore organises the Bell basis into a single orbit, while the global sign pattern $\epsilon$ labels the members.
 
-A final observation is that the four Bell idempotents are **locally indistinguishable**. Since every one of them has the same reduction $\tfrac{1}{2}e_t$ on each factor, no measurement on a single qubit can reveal which Bell state was prepared. The entire distinction between them resides in the correlated, tensor-product terms $\vec e_\mu\otimes \vec e_\mu$ — that is, in the signs $\epsilon$, which determine the stabiliser eigenvalues and the diagonal correlation entries. The local data are constant across the basis; the correlation data are what vary.
+A final observation is that the four Bell idempotents are **locally indistinguishable**. Since every one of them has the same reduction $\tfrac{1}{2}e_t$ on each factor, no measurement on a single qubit can reveal which Bell state was prepared. The entire distinction between them resides in the correlated, tensor-product terms $\vec e_{\imath}\otimes \vec e_{\imath}$ — that is, in the signs $\epsilon$, which determine the stabiliser eigenvalues and the diagonal correlation entries. The local data are constant across the basis; the correlation data are what vary.
 
 ## A Claimed Enumeration of the Maximally Entangled States
 
@@ -395,11 +395,11 @@ has $C=1$ and is of none of the twelve forms: its relative phase lies outside th
 
 We now compute the reduction of each Bell idempotent and confirm the maximal-entanglement condition used above.
 
-Because $\tilde\Pi_{\mathrm{id},\epsilon}$ is a sum of diagonal tensor terms, the partial scalar part in the second factor is immediate. Applying $2\,\mathrm{Sc}_2(e_\mu\otimes e_\nu)=e_\mu\,2\,\mathrm{Sc}(e_\nu)$ term by term,
+Because $\tilde\Pi_{\mathrm{id},\epsilon}$ is a sum of diagonal tensor terms, the partial scalar part in the second factor is immediate. Applying $2\,\mathrm{Sc}_2(e_{\imath}\otimes e_{\jmath})=e_{\imath}\,2\,\mathrm{Sc}(e_{\jmath})$ term by term,
 
 $$
 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id},\epsilon})
-=\tfrac{1}{4}\left(2\,\mathrm{Sc}(e_t)\,e_t+\sum_{\mu\in\{x,r_y,r_z\}}\epsilon_\mu\,2\,\mathrm{Sc}(\vec e_\mu)\,\vec e_\mu\right)
+=\tfrac{1}{4}\left(2\,\mathrm{Sc}(e_t)\,e_t+\sum_{\imath\in\{x,r_y,r_z\}}\epsilon_{\imath}\,2\,\mathrm{Sc}(\vec e_{\imath})\,\vec e_{\imath}\right)
 =\tfrac{1}{4}\left(2\,e_t+0\right)
 =\tfrac{1}{2}\,e_t .
 $$
@@ -410,7 +410,7 @@ $$
 \boxed{\;2\,\mathrm{Sc}_1(\tilde\Pi_{\mathrm{id},\epsilon})=\tfrac{1}{2}\,e_t\;} .
 $$
 
-The reason is exactly the one identified in the entangled-subsystems article: the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \neq t$ have no scalar part in each factor, so the reduction keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.
+The reason is exactly the one identified in the entangled-subsystems article: the entangled terms $\vec e_{\imath}\otimes \vec e_{\imath}$ with $\mu \neq t$ have no scalar part in each factor, so the reduction keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.
 
 The reduced state $\tilde{Ϛ}_{\Psi,1}=\tilde{Ϛ}_{\Psi,2}=\tfrac{1}{2}e_t$ is the maximally mixed qubit state, the centre of the Bloch ball. Its purity and entropy are the standard ones:
 
@@ -450,9 +450,9 @@ The article established the following structure.
 
 - **Idempotent basis.** The four $\tilde\Pi_{\mathrm{id},\epsilon}$ are Hermitian idempotents of unit weight, pairwise orthogonal, summing to the identity: $\tilde\Pi_{\mathrm{id},\epsilon} \tilde\Pi_{\mathrm{id},\varkappa}=\delta_{\epsilon\varkappa}\tilde\Pi_{\mathrm{id},\epsilon}$ and $\sum_\epsilon \tilde\Pi_{\mathrm{id},\epsilon}=e_t\otimes e_t$. They form a maximal orthogonal family of minimal idempotents — an idempotent basis — of the two-qubit algebra, whose span is a Cartan subalgebra of dimension four.
 - **Stabiliser eigenbasis.** The commuting Hermitian involutions $S_1=-\vec e_x\otimes \vec e_x$ and $S_3=-\vec e_z\otimes \vec e_z$ (corresponding to $\sigma_1\otimes\sigma_1$ and $\sigma_3\otimes\sigma_3$) form a complete set of commuting observables whose joint spectrum is non-degenerate; the $\tilde\Pi_{\mathrm{id},\epsilon}$ are its joint eigen-idempotents, with eigenvalues $(-\epsilon_1,-\epsilon_3)$. Each $\tilde\Pi_{\mathrm{id},\epsilon}$ is conjugation-invariant under $S_1$ and $S_3$, and its stabiliser group is the Klein four-group generated by the sign-corrected $S_1$ and $S_3$.
-- **Diagonal tensor structure.** The Bell idempotents are exactly the idempotents of diagonal tensor form $\tfrac14\sum_\mu\epsilon_\mu\,e_\mu\otimes e_\mu$. There are exactly four of them, and the sign matrix whose rows are $(1,\epsilon_1,\epsilon_2,\epsilon_3)$ is Hadamard. A generic maximally entangled state is a continuum and is not diagonal; the Bell basis is the discrete, canonical family selected by the diagonal structure.
+- **Diagonal tensor structure.** The Bell idempotents are exactly the idempotents of diagonal tensor form $\tfrac14\sum_{\imath}\epsilon_{\imath}\,e_{\imath}\otimes e_{\imath}$. There are exactly four of them, and the sign matrix whose rows are $(1,\epsilon_1,\epsilon_2,\epsilon_3)$ is Hadamard. A generic maximally entangled state is a continuum and is not diagonal; the Bell basis is the discrete, canonical family selected by the diagonal structure.
 - **Maximal mixedness.** The reduction of every Bell idempotent is the maximally mixed state, $2\,\mathrm{Sc}_1(\tilde\Pi_{\mathrm{id},\epsilon})=2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id},\epsilon})=\tfrac12 e_t$, of purity $\tfrac12$ and entropy $\log 2$. The four states are locally indistinguishable; their distinction resides entirely in the correlated tensor terms, i.e. in the signs $\epsilon$.
-- **State vector versus state operator.** The Bell states also have a vector form in $\mathbb{C}^4\cong\mathbb{B}$, where they are the combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the unit pairs $\{e_t,\vec e_z\}$ and $\{\vec e_x,\vec e_y\}$. The vector is not the state: it is an element of the four-dimensional module, while the state object is the rank-one idempotent of the sixteen-dimensional algebra. In particular a single quaternion, read as a two-qubit vector, is a product state — $Q=\tfrac12(e_t-\vec e_x-\vec e_y+\vec e_z)$ has concurrence zero — and never carries entanglement.
+- **State vector versus state operator.** The Bell states also have a vector form in $\mathbb{C}^4\cong\mathbb{B}$, where they are the combinations $\tfrac{1}{\sqrt2}(e_{\imath}\pm e_{\jmath})$ for the unit pairs $\{e_t,\vec e_z\}$ and $\{\vec e_x,\vec e_y\}$. The vector is not the state: it is an element of the four-dimensional module, while the state object is the rank-one idempotent of the sixteen-dimensional algebra. In particular a single quaternion, read as a two-qubit vector, is a product state — $Q=\tfrac12(e_t-\vec e_x-\vec e_y+\vec e_z)$ has concurrence zero — and never carries entanglement.
 - **Maximal entanglement is a continuum, not a finite list.** A claimed enumeration of twelve patterns of maximally entangled states, obtained under an extra quotient rule, fails its exhaustiveness corollary: the family $\lvert\tilde{Ξ}_{\theta_{\mathrm{pha}}}\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+\exp(i\theta_{\mathrm{pha}})\lvert11\rangle)$ is maximally entangled for every $\theta_{\mathrm{pha}}$, while the twelve forms fix the relative phase to $\{0,\pm\pi/2,\pi\}$. The maximally entangled rays have real dimension three, so no finite union of one-parameter families covers them; any discrete family among them is selected by additional structure.
 
 All of this is standard finite-dimensional algebra, expressed in the conventions of the companion articles. The construction presupposes the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$; whether that algebra is canonical for the framework is an open question inherited from the companion articles and is left unresolved.
@@ -467,22 +467,22 @@ All of this is standard finite-dimensional algebra, expressed in the conventions
 | $\tfrac{1}{\sqrt2}(e_t\pm \vec e_z),\ \tfrac{1}{\sqrt2}(\vec e_x\pm \vec e_y)$ | Bell vectors written in the algebra basis |
 | $C=2\lvert c_1c_4-c_2c_3\rvert$ | Concurrence of a two-qubit pure state |
 | $\lvert\tilde{Ξ}_{\theta_{\mathrm{pha}}}\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+\exp(i\theta_{\mathrm{pha}})\lvert11\rangle)$ | Maximally entangled family, $C=1$ for every $\theta_{\mathrm{pha}}$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, cyclic products |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace: real scalar, imaginary vector |
-| $\mathrm{Sc}$ | Scalar part on a single factor: $\mathrm{Sc}(e_t)=1$, $\mathrm{Sc}(\vec e_\mu)=0$ |
+| $\mathrm{Sc}$ | Scalar part on a single factor: $\mathrm{Sc}(e_t)=1$, $\mathrm{Sc}(\vec e_{\imath})=0$ |
 | $\mathrm{Sc}(x\otimes y)=\mathrm{Sc}(x)\mathrm{Sc}(y)$ | Scalar part on the tensor product; a full contraction pays $4$ |
 | $\mathrm{Sc}_1,\mathrm{Sc}_2$ | Partial scalar parts; the reductions are $2\,\mathrm{Sc}_1$ and $2\,\mathrm{Sc}_2$ |
-| $\tilde\Pi_{\mathrm{id,singlet}}=\tfrac14(e_t\otimes e_t+\sum_\mu \vec e_\mu\otimes \vec e_\mu)$ | Singlet idempotent |
-| $\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14(e_t\otimes e_t+\sum_\mu\epsilon_\mu \vec e_\mu\otimes \vec e_\mu)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
+| $\tilde\Pi_{\mathrm{id,singlet}}=\tfrac14(e_t\otimes e_t+\sum_{\imath} \vec e_{\imath}\otimes \vec e_{\imath})$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14(e_t\otimes e_t+\sum_{\imath}\epsilon_{\imath} \vec e_{\imath}\otimes \vec e_{\imath})$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $\epsilon=(\epsilon_1,\epsilon_2,\epsilon_3)$ | Sign pattern labelling a Bell state |
 | $S_1=-\vec e_x\otimes \vec e_x,\ S_3=-\vec e_z\otimes \vec e_z$ | Stabiliser involutions ($\leftrightarrow\sigma_1\otimes\sigma_1,\ \sigma_3\otimes\sigma_3$) |
 | $S_1S_3=\vec e_y\otimes \vec e_y$ | Product of the stabiliser involutions |
-| $S_\mu\tilde\Pi_{\mathrm{id},\epsilon}=-\epsilon_\mu\tilde\Pi_{\mathrm{id},\epsilon}$ | Eigenvalue relation |
+| $S_{\imath}\tilde\Pi_{\mathrm{id},\epsilon}=-\epsilon_{\imath}\tilde\Pi_{\mathrm{id},\epsilon}$ | Eigenvalue relation |
 | $2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id},\epsilon})=2\,\mathrm{Sc}_1(\tilde\Pi_{\mathrm{id},\epsilon})=\tfrac12 e_t$ | Maximally mixed reduced state |
-| $T_{\nu\nu}=-\epsilon_\nu$ | Diagonal correlation matrix entry |
-| $e_t\mapsto I_2,\ \vec e_\mu\mapsto-i\sigma_\mu$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $T_{\jmath\jmath}=-\epsilon_{\jmath}$ | Diagonal correlation matrix entry |
+| $e_t\mapsto I_2,\ \vec e_{\imath}\mapsto-i\sigma_{\imath}$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

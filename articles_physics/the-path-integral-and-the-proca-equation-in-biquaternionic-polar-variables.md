@@ -95,14 +95,14 @@ and each piece has a chart reading. The first is a quadratic form in the four gr
 
 The mass term's sign is the branch's and its magnitude is the scale's. On the timelike branch the scale enters with the sign of a positive mass term and the scale equation has the massive form; on the spacelike branch the sign is reversed. Nothing in the element form displays this, because the element form's mass term is indefinite and the branch is not a thing the element form can name.
 
-The first piece is where the frame's rapidity enters. The quadratic form's coefficients are built from $\tilde U_{\Psi,\mathrm b}$ and its derivatives, so the exponent depends on $u$ through the Maurer–Cartan form $\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}$ and through nothing else. The chart separates the scale's dependence, which is polynomial and explicit, from the frame's, which is geometric, and that separation is the reason the two saddles below are two different equations and not one.
+The first piece is where the frame's rapidity enters. The quadratic form's coefficients are built from $\tilde U_{\Psi,\mathrm b}$ and its derivatives, so the exponent depends on $u$ through the Maurer–Cartan form $\Gamma_{\imath}=\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}$ and through nothing else. The chart separates the scale's dependence, which is polynomial and explicit, from the frame's, which is geometric, and that separation is the reason the two saddles below are two different equations and not one.
 
 ## The Two Saddles Are the Companion's Pair
 
 Stationarity in the scale gives the scale equation. Varying $\varrho$ in the chart's exponent gives
 
 $$
-\bigl(\Box_\Phi-k_m^{2}\bigr)\varrho+\varrho\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^{2}\bigr)=0 ,
+\bigl(\Box_\Phi-k_m^{2}\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^{2}\bigr)=0 ,
 $$
 
 which is the polar equation article's first equation, with the branch's sign absorbed in the mass term's sign. It is a Klein–Gordon equation for the scale with a source built from the frame's Maurer–Cartan form.
@@ -110,7 +110,7 @@ which is the polar equation article's first equation, with the branch's sign abs
 Stationarity in the frame gives the transport equation.
 
 $$
-\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^{2}-\mathrm{Sc}(\Gamma_\mu^{2})\Bigr)+2\sum_\mu\frac{\partial\ln \varrho}{\partial R_\mu}\Gamma_\mu=0 ,
+\sum_{\imath}\Bigl(\frac{\partial\Gamma_{\imath}}{\partial R_{\imath}}+\Gamma_{\imath}^{2}-\mathrm{Sc}(\Gamma_{\imath}^{2})\Bigr)+2\sum_{\imath}\frac{\partial\ln \varrho}{\partial R_{\imath}}\Gamma_{\imath}=0 ,
 $$
 
 which is the companion's second equation, in the traceless part.
@@ -196,7 +196,7 @@ The divergence's square is a displayed term of the exponent and its saddle is th
 | $\varrho^{3}\cosh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega_{2}$ | Spacelike volume element |
 | $\int_0^\infty \varrho^{3}\mathrm{d}\varrho\,e^{-a\varrho^{2}}=\frac{1}{2a^{2}}$ | The radial integral; four components' worth |
 | $-\frac12S^{2}$, $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | The displayed Lorenz term; its saddle is $S=0$ |
-| $\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}$ | The frame's Maurer–Cartan form |
+| $\Gamma_{\imath}=\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}$ | The frame's Maurer–Cartan form |
 | $\langle\tilde A_\Phi(x)\tilde A_\Phi(y)\rangle=i \frac{h}{2\pi} P^{-1}$ | The kernel; a bivector, outside the chart |
 
 ## Further Reading

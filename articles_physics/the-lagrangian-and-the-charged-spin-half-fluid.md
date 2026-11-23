@@ -6,7 +6,7 @@ The connection is a central element, and a central element decomposes into two o
 
 *First, the coupling's decomposition fixes its reach.* The connection is Hermitian, so in the bracket decomposition it contributes a central imaginary in its time slot and a Hermitian element in its spatial slots. Those are the phase's bracket and the boost's. It contributes nothing to the real scalar, which is the scale's, and nothing to the real vector, which is the rotor's. The density and the spin are therefore outside the coupling's reach by type, and not by cancellation.
 
-*Second, the same decomposition is why there is no torque.* A torque would have to enter the rotor's bracket; the connection has no real-vector part, so it cannot. The action states this as the absence of a term, and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html) states it as a computation: the force equation gains $-ϙ\sum_\nu F_{\mu\nu}J_\nu$ and the spin's transport law gains nothing.
+*Second, the same decomposition is why there is no torque.* A torque would have to enter the rotor's bracket; the connection has no real-vector part, so it cannot. The action states this as the absence of a term, and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html) states it as a computation: the force equation gains $-ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}$ and the spin's transport law gains nothing.
 
 *Third, every norm in the spinor case survives, and the reason is that a connection transports and does not measure.* The velocity is a unit element's square, so its norm is fixed by the frame and no added connection can move it. At the scalar rung the velocity is a gradient, and there the shell's right-hand side carries the quantum potential; here it carries nothing.
 
@@ -14,7 +14,7 @@ This is the variational companion of [The Charged Spin-Half Fluid](the-charged-s
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})\in\mathbb{C}$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})\in\mathbb{C}$, $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$.
 
 ## The Action in the Fluid Variables: The Kinetic Term and the Two Rates
 
@@ -61,12 +61,12 @@ $$
 \frac{2\pi iϙ}{h}\tilde A_\Phi=\frac{2\pi iϙ}{h}a'_t\,e_t+\frac{2\pi iϙ}{h}\vec A,
 $$
 
-and the first term is central imaginary while the second is Hermitian with a real vector coefficient. In the bracket decomposition of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$,
+and the first term is central imaginary while the second is Hermitian with a real vector coefficient. In the bracket decomposition of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$,
 
 | bracket | type | what the free bracket reads | what the connection adds |
 | --- | --- | --- | --- |
-| scale | real scalar | $\partial_\mu\ln \varrho$ | $0$ |
-| phase | central imaginary | $\partial_\mu\theta_{\mathrm{pha}}$ | $-\frac{2\pi ϙ a'_t}{h}$ in the time slot |
+| scale | real scalar | $\partial_{\imath}\ln \varrho$ | $0$ |
+| phase | central imaginary | $\partial_{\imath}\theta_{\mathrm{pha}}$ | $-\frac{2\pi ϙ a'_t}{h}$ in the time slot |
 | boost | Hermitian | the rapidity's connection | $\frac{2\pi ϙ\vec A}{h}$ in the spatial slots |
 | rotor | real vector | $\vec\omega_{\mathrm r}$'s connection | $0$ |
 
@@ -77,16 +77,16 @@ This is the type argument of the block's charged articles, in its most economica
 With $\tilde\Xi\mapsto\tilde\Xi\lambda$ and $\lambda\in\mathbb{C}$ central,
 
 $$
-\tilde\Xi^{-1}\bigl(\partial_\mu+\frac{2\pi iϙ}{h}A_\mu\bigr)\tilde\Xi
+\tilde\Xi^{-1}\bigl(\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}\bigr)\tilde\Xi
 \longmapsto
-\tilde\Xi^{-1}\bigl(\partial_\mu+\frac{2\pi iϙ}{h}A_\mu\bigr)\tilde\Xi+\lambda^{-1}\partial_\mu\lambda,
+\tilde\Xi^{-1}\bigl(\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}\bigr)\tilde\Xi+\lambda^{-1}\partial_{\imath}\lambda,
 $$
 
-and $\lambda^{-1}\partial_\mu\lambda=\frac{2\pi iϙ\partial_\mu\Gamma}{h}$ is central, so it cancels against the transformed connection. The frame's brackets do not see the shift at all, because it is added on the left of the element and the frame's factors are to the right, and because a central element commutes past every one of them.
+and $\lambda^{-1}\partial_{\imath}\lambda=\frac{2\pi iϙ\partial_{\imath}\Gamma}{h}$ is central, so it cancels against the transformed connection. The frame's brackets do not see the shift at all, because it is added on the left of the element and the frame's factors are to the right, and because a central element commutes past every one of them.
 
 A gauge transformation is a multiplication of the word by a central factor; the word's factors are the phase's and the frame's; a central multiplication can be absorbed into the phase's factor — which is what a phase shift is — and cannot be absorbed into the frame's, because the frame's factors are not central. So the shift is entirely the phase's, and the boost's bracket's apparent change is the connection's cancellation. **The coupling's reach and the gauge group's reach coincide, and both are the central direction of the algebra.**
 
-The global subgroup supplies the charge current $ϙ\tilde J_\Phi$; translation invariance supplies the stress, whose divergence is $-ϙ\sum_\nu F_{\mu\nu}J_\nu$ plus the free spin term; and the canonical tensor computed with the phase as the variable is gauge dependent by a total derivative, while the tensor written in the frame's brackets is not.
+The global subgroup supplies the charge current $ϙ\tilde J_\Phi$; translation invariance supplies the stress, whose divergence is $-ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}$ plus the free spin term; and the canonical tensor computed with the phase as the variable is gauge dependent by a total derivative, while the tensor written in the frame's brackets is not.
 
 ## The Structural Consequence: Norms Survive and the Vorticity Stays the Frame's
 
@@ -164,7 +164,7 @@ Gauge invariance. Exact, and exact because the gauge group is central and theref
 | $\mathcal R_{\mathrm{pha}}$, $\mathcal R_{\mathrm{rpd}}$ | The two covariant rates |
 | $\vec p_{\mathrm{spin}}=-\frac{h}{2\pi} c\rho_{\mathrm{chg}}\beta\vec n_{\mathrm{rot}}$ | The spin's momentum; unchanged by the coupling |
 | $p_{\varrho}=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$ | The four vanishing momenta |
-| $\omega_{\mu\nu}$ | The vorticity; the frame's, not $ϙ F/m$ |
+| $\omega_{\imath\jmath}$ | The vorticity; the frame's, not $ϙ F/m$ |
 | $\mathcal L_{\mathrm{kin}}^{\mathrm{gco}}$ | The kinetic Lagrangian density with the connection |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 

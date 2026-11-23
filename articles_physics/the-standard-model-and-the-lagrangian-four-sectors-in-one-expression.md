@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The claim. The Standard Model is one Lagrangian, and it is the sum of four sectors. This article writes the four, then the sum. It writes them in the corpus's coordinates, with the unit metric and the derivative $\partial/\partial R_\mu$, and it fixes once the one rule by which a display in this bookkeeping equals a display in the standard bookkeeping.
+The claim. The Standard Model is one Lagrangian, and it is the sum of four sectors. This article writes the four, then the sum. It writes them in the corpus's coordinates, with the unit metric and the derivative $\partial/\partial R_{\imath}$, and it fixes once the one rule by which a display in this bookkeeping equals a display in the standard bookkeeping.
 
 The standing. The expression is standard theory. It is transcribed, not derived, and no term in it follows from the biquaternion algebra. What the article adds to a textbook display is three things: one notation, one sign rule stated and proved, and one audit of gauge invariance carried out term by term.
 
@@ -10,7 +10,7 @@ Why assembling is not a transcription exercise. A reader may object that the sum
 
 Two results, stated now. The assembly yields two quantitative results that no single-sector article states.
 
-- The sign rule. The corpus's bookkeeping and the standard one differ by one identity, $\sum_\mu X_\mu Y_\mu = -X\cdot Y$, and with it every display below is the standard display. The dot is the text's contraction, written without an index placement; the series never prints it as a raised index. The scalar kinetic term carries a minus sign in the corpus and a plus sign in a standard text, and both are the same term.
+- The sign rule. The corpus's bookkeeping and the standard one differ by one identity, $\sum_{\imath} X_{\imath} Y_{\imath} = -X\cdot Y$, and with it every display below is the standard display. The dot is the text's contraction, written without an index placement; the series never prints it as a raised index. The scalar kinetic term carries a minus sign in the corpus and a plus sign in a standard text, and both are the same term.
 - The redundancy. Written out, the four sectors and the vacuum-angle term carry sixty real parameters. Physical content is nineteen. Forty-one parameters are removed by field redefinitions that change no physics, and the removal is graded: twenty-six in the quark sector, fifteen in the lepton sector.
 
 The order. The four sectors and why there are four, then the dictionary, then the sectors one at a time, then the sum, then the audit, then the count, then what the expression omits, then the corpus's own action beside the standard one.
@@ -23,7 +23,7 @@ The order. The four sectors and why there are four, then the dictionary, then th
 |---|---|---|---|
 | Strong | $\mathcal{L}_{\mathrm{QCD}}$ | the colour connection | $g_s$, $\theta_{\mathrm{QCD}}$, six quark masses through the Yukawa sector |
 | Electroweak gauge and kinetic | $\mathcal{L}_{\mathrm{EW}}$ | the weak and hypercharge connections | $g$, $g_{\mathrm Y}$, and the fermion kinetic normalisations |
-| Scalar | $\mathcal{L}_{H}$ | all three connections, through $D_\mu\omicron_{\mathrm{hgs}}$ | $\mu^2$, $\lambda$ |
+| Scalar | $\mathcal{L}_{H}$ | all three connections, through $D_{\imath}\omicron_{\mathrm{hgs}}$ | $\mu^2$, $\lambda$ |
 | Yukawa | $\mathcal{L}_{\mathrm{Yuk}}$ | no connection | the three coupling matrices |
 
 Why the fourth is not part of the third. The scalar potential $V(\omicron_{\mathrm{hgs}})$ is invariant on its own, since it depends only on $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$. The Yukawa couplings are invariant only in combination with the fermions and the scalar together. The two are separated because they are fixed by different measurements: the potential by the boson masses, the couplings by the fermion masses and mixings.
@@ -32,39 +32,39 @@ The counting of sectors is a choice of grouping, and a conventional one. The fou
 
 ## The Dictionary
 
-One rule governs every display of this article. The corpus writes coordinates $R_\mu$ with $R_t=Q_t=i q'_t$ on the four components, so the coefficient of the temporal basis element carries the central imaginary and the three spatial coefficients do not. Two consequences follow, and both are proved in one line.
+One rule governs every display of this article. The corpus writes coordinates $R_{\imath}$ with $R_t=Q_t=i q'_t$ on the four components, so the coefficient of the temporal basis element carries the central imaginary and the three spatial coefficients do not. Two consequences follow, and both are proved in one line.
 
-**The rule.** For two sets of four coefficients $X_\mu$, $Y_\mu$ written this way,
+**The rule.** For two sets of four coefficients $X_{\imath}$, $Y_{\imath}$ written this way,
 
 $$
--\sum_\mu X_\mu Y_\mu = X\cdot Y ,
+-\sum_{\imath} X_{\imath} Y_{\imath} = X\cdot Y ,
 $$
 
 where the right-hand side is contracted with the metric $(+,-,-,-)$ of the interval, $X_0$ is the physical temporal component, and $X_t=iX_0$.
 
-The proof. The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial ones are $\sum_\eta X_kY_k$, so the sum $\sum_\mu X_\mu Y_\mu$ equals $-X_0Y_0+\sum_\eta X_kY_k$ and the leading minus makes the left-hand side $X_0Y_0-\sum_\eta X_kY_k$. On the right, the text's contraction carries the metric $(+,-,-,-)$, which puts a minus on each spatial term, so $X\cdot Y=X_0Y_0-\sum_\eta X_kY_k$. The two sides are the same expression.
+The proof. The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial ones are $\sum_\eta X_kY_k$, so the sum $\sum_{\imath} X_{\imath} Y_{\imath}$ equals $-X_0Y_0+\sum_\eta X_kY_k$ and the leading minus makes the left-hand side $X_0Y_0-\sum_\eta X_kY_k$. On the right, the text's contraction carries the metric $(+,-,-,-)$, which puts a minus on each spatial term, so $X\cdot Y=X_0Y_0-\sum_\eta X_kY_k$. The two sides are the same expression.
 
 The two places it bites. The rule fixes the sign of a kinetic term and nothing else in this article.
 
-- The scalar. A text in the standard metric writes $+\tfrac12\partial\xi\cdot\partial\xi$ for a real scalar. The rule turns it into $-\tfrac12\sum_\mu\partial_\mu\xi\,\partial_\mu\xi$, which is exactly the corpus's scalar Lagrangian of [Stress–Energy Conservation Laws and the Field Action](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), whose expansion $-\tfrac12[-\left(\partial\xi/\partial r'_t\right)^2+(\vec\nabla_\Phi\xi)^2]$ is the standard $\tfrac12\dot\xi^2-\tfrac12(\vec\nabla_\Phi\xi)^2$.
-- The gauge field. A text writes $-\tfrac14F\cdot F$. The rule turns it into $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$, which is the corpus's display. Here the sign is unchanged, because the weight over the two indices cancels the flip.
+- The scalar. A text in the standard metric writes $+\tfrac12\partial\xi\cdot\partial\xi$ for a real scalar. The rule turns it into $-\tfrac12\sum_{\imath}\partial_{\imath}\xi\,\partial_{\imath}\xi$, which is exactly the corpus's scalar Lagrangian of [Stress–Energy Conservation Laws and the Field Action](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), whose expansion $-\tfrac12[-\left(\partial\xi/\partial r'_t\right)^2+(\vec\nabla_\Phi\xi)^2]$ is the standard $\tfrac12\dot\xi^2-\tfrac12(\vec\nabla_\Phi\xi)^2$.
+- The gauge field. A text writes $-\tfrac14F\cdot F$. The rule turns it into $-\tfrac14\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}$, which is the corpus's display. Here the sign is unchanged, because the weight over the two indices cancels the flip.
 
-The check that the two writings are one Lagrangian. With $A_t=iA_0$ and $F_{\mu\nu}=\partial A_\nu/\partial R_\mu-\partial A_\mu/\partial R_\nu$, the temporal components are $F_{t\eta}=iE_\eta$ and the spatial ones are $F_{\eta l}=\epsilon_{\eta l\,n_{\mathrm{idx}}}B_m$. Then $\sum_{\mu\nu}F_{\mu\nu}F_{\mu\nu}=2\sum_\eta F_{t\eta}F_{t\eta}+\sum_{\eta l}F_{\eta l}F_{\eta l}=-2E^2+2B^2$, and $-\tfrac14$ of that is $\tfrac12(E^2-B^2)$, which is the standard $-\tfrac14F\cdot F$ evaluated on the same fields. The energy comes out positive in both writings; the corpus's own stress–energy article fixes the sign on that requirement.
+The check that the two writings are one Lagrangian. With $A_t=iA_0$ and $F_{\imath\jmath}=\partial A_{\jmath}/\partial R_{\imath}-\partial A_{\imath}/\partial R_{\jmath}$, the temporal components are $F_{t\eta}=iE_\eta$ and the spatial ones are $F_{\eta l}=\epsilon_{\eta l\,n_{\mathrm{idx}}}B_m$. Then $\sum_{\imath\jmath}F_{\imath\jmath}F_{\imath\jmath}=2\sum_\eta F_{t\eta}F_{t\eta}+\sum_{\eta l}F_{\eta l}F_{\eta l}=-2E^2+2B^2$, and $-\tfrac14$ of that is $\tfrac12(E^2-B^2)$, which is the standard $-\tfrac14F\cdot F$ evaluated on the same fields. The energy comes out positive in both writings; the corpus's own stress–energy article fixes the sign on that requirement.
 
-The derivative. The corpus writes $\partial/\partial R_\mu$, and the time derivative of a material coordinate is $\partial/\partial r'_t=-i\,\partial/\partial R_t$. The two are never mixed in one display. A fermion bilinear's sign, which the rule does not fix because the bilinear carries the spin structure, is the subject of [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) and is quoted there rather than restated here.
+The derivative. The corpus writes $\partial/\partial R_{\imath}$, and the time derivative of a material coordinate is $\partial/\partial r'_t=-i\,\partial/\partial R_t$. The two are never mixed in one display. A fermion bilinear's sign, which the rule does not fix because the bilinear carries the spin structure, is the subject of [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) and is quoted there rather than restated here.
 
 ## The Gauge Sector
 
 The field strengths. Each factor of the product carries one,
 
 $$
-G_{a,\mu\nu}=\frac{\partial G_{a,\nu}}{\partial R_\mu}-\frac{\partial G_{a,\mu}}{\partial R_\nu}+g_s\sum_{b,c}f_{abc}G_{b,\mu} G_{c,\nu} ,
+G_{a,\imath\jmath}=\frac{\partial G_{a,\jmath}}{\partial R_{\imath}}-\frac{\partial G_{a,\imath}}{\partial R_{\jmath}}+g_s\sum_{b,c}f_{abc}G_{b,\imath} G_{c,\jmath} ,
 $$
 
 $$
-W_{a,\mu\nu}=\frac{\partial W_{a,\nu}}{\partial R_\mu}-\frac{\partial W_{a,\mu}}{\partial R_\nu}+g\sum_{b,c}\varepsilon_{abc}W_{b,\mu} W_{c,\nu} ,
+W_{a,\imath\jmath}=\frac{\partial W_{a,\jmath}}{\partial R_{\imath}}-\frac{\partial W_{a,\imath}}{\partial R_{\jmath}}+g\sum_{b,c}\varepsilon_{abc}W_{b,\imath} W_{c,\jmath} ,
 \qquad
-B_{\mu\nu}=\frac{\partial B_\nu}{\partial R_\mu}-\frac{\partial B_\mu}{\partial R_\nu} .
+B_{\imath\jmath}=\frac{\partial B_{\jmath}}{\partial R_{\imath}}-\frac{\partial B_{\imath}}{\partial R_{\jmath}} .
 $$
 
 The colour structure constants are $f_{abc}$ and the weak ones are $\varepsilon_{abc}$ in the normalised basis. The two non-abelian curvatures carry the same commutator term in the same form; the abelian one does not, because its structure constants vanish.
@@ -72,12 +72,12 @@ The colour structure constants are $f_{abc}$ and the weak ones are $\varepsilon_
 The kinetic terms. Three, one per factor,
 
 $$
-\mathcal{L}_{\mathrm{gauge}}=-\tfrac14\sum_{a,\mu,\nu}G_{a,\mu\nu}G_{a,\mu\nu}-\tfrac14\sum_{a,\mu,\nu}W_{a,\mu\nu}W_{a,\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu} .
+\mathcal{L}_{\mathrm{gauge}}=-\tfrac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14\sum_{\imath,\jmath}B_{\imath\jmath}B_{\imath\jmath} .
 $$
 
 The three coefficients are equal because each factor's gauge field is normalised so that its kinetic term has unit coefficient. That normalisation is what makes the three couplings independent numbers; a rescaling of any one field moves a constant between the kinetic term and the coupling, and the product $g_sF$ is what the physics sees.
 
-**Three, not one.** The three kinetic terms do not mix. A term $G_{\mu\nu}W_{\mu\nu}$ would be forbidden by the product structure, since the two fields carry different quantum numbers and no invariant contraction exists. Mixing of the neutral fields happens at the level of the mass matrix and the currents, not at the level of the kinetic terms, and the mixing is a rotation of $W_{3,\mu}$ and $B_\mu$ that leaves the kinetic terms in the form above.
+**Three, not one.** The three kinetic terms do not mix. A term $G_{\imath\jmath}W_{\imath\jmath}$ would be forbidden by the product structure, since the two fields carry different quantum numbers and no invariant contraction exists. Mixing of the neutral fields happens at the level of the mass matrix and the currents, not at the level of the kinetic terms, and the mixing is a rotation of $W_{3,\imath}$ and $B_{\imath}$ that leaves the kinetic terms in the form above.
 
 ## The Fermion Sector
 
@@ -114,9 +114,9 @@ $$
 with the potential and the kinetic term
 
 $$
-\mathcal{L}_{H}=-\sum_\mu\left(D_\mu\omicron_{\mathrm{hgs}}\right)^{\dagger}\left(D_\mu\omicron_{\mathrm{hgs}}\right)+\mu^2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\lambda\left(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}\right)^2 ,
+\mathcal{L}_{H}=-\sum_{\imath}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)^{\dagger}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)+\mu^2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\lambda\left(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}\right)^2 ,
 \qquad
-D_\mu\omicron_{\mathrm{hgs}}=\frac{\partial\omicron_{\mathrm{hgs}}}{\partial R_\mu}+i\frac{g}{2}\sum_a\tau_aW_{a,\mu}\omicron_{\mathrm{hgs}}+i\frac{g_{\mathrm Y}}{2}B_\mu\omicron_{\mathrm{hgs}} .
+D_{\imath}\omicron_{\mathrm{hgs}}=\frac{\partial\omicron_{\mathrm{hgs}}}{\partial R_{\imath}}+i\frac{g}{2}\sum_a\tau_aW_{a,\imath}\omicron_{\mathrm{hgs}}+i\frac{g_{\mathrm Y}}{2}B_{\imath}\omicron_{\mathrm{hgs}} .
 $$
 
 The signs are the corpus's, by the rule of §*The Dictionary*: the kinetic term carries the minus, and the potential appears with $+\mu^2$ and $-\lambda$ because $\mathcal{L}\supset -V$.
@@ -186,16 +186,16 @@ The sum. The four sectors add to
 $$
 \boxed{\;
 \begin{aligned}
-\mathcal{L}_{\mathrm{SM}}={}&-\tfrac14\sum_{a,\mu,\nu}G_{a,\mu\nu}G_{a,\mu\nu}-\tfrac14\sum_{a,\mu,\nu}W_{a,\mu\nu}W_{a,\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu}\\[2pt]
+\mathcal{L}_{\mathrm{SM}}={}&-\tfrac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14\sum_{\imath,\jmath}B_{\imath\jmath}B_{\imath\jmath}\\[2pt]
 &+\sum_{\psi}\bar{\tilde\Xi}_{\psi}\,i\,\tilde\nabla_{\mathrm{gco},\Phi}\,\tilde\Xi_{\psi}\\[2pt]
-&-\sum_\mu\left(D_\mu\omicron_{\mathrm{hgs}}\right)^{\dagger}\left(D_\mu\omicron_{\mathrm{hgs}}\right)+\mu^2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\lambda\left(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}\right)^2\\[2pt]
+&-\sum_{\imath}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)^{\dagger}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)+\mu^2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\lambda\left(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}\right)^2\\[2pt]
 &-\sum_{a,b}\Bigl(\bar Q_{L,a}\omicron_{\mathrm{hgs}}\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\omicron_{\mathrm{hgs}}\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\omicron_{\mathrm{hgs}}\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.}\\[2pt]
-&+\frac{\theta_{\mathrm{QCD}}}{32\pi^2}\sum_{\mu,\nu,a}G_{a,\mu\nu}G_{a,\mathrm{dual},\mu\nu} .
+&+\frac{\theta_{\mathrm{QCD}}}{32\pi^2}\sum_{\imath,\jmath,a}G_{a,\imath\jmath}G_{a,\mathrm{dual},\imath\jmath} .
 \end{aligned}
 \;}
 $$
 
-The fifth line. The vacuum-angle term belongs to the strong sector and is separated for a reason: it is a total derivative, so it changes no equation of motion, and its effect is entirely quantum. It is written in the normalisation of [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html), with $G_{a,\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}G_{a,\rho\sigma}$.
+The fifth line. The vacuum-angle term belongs to the strong sector and is separated for a reason: it is a total derivative, so it changes no equation of motion, and its effect is entirely quantum. It is written in the normalisation of [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html), with $G_{a,\mathrm{dual},\imath\jmath}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}G_{a,\rho\sigma}$.
 
 What the display is. It is a Lagrangian density of dimension four, and every term in it is either a kinetic term or a term of the same dimension. That is not an accident of the list; it is the definition of renormalisability, and the next section counts what the condition permits.
 
@@ -208,22 +208,22 @@ What is checked. Each term of the sum is checked separately, under the three loc
 $$
 \psi\mapsto e^{iY_\psi\alpha(x)}\,U_c(x)\,U_L(x)\,\psi ,
 \qquad
-G_\mu\mapsto U_cG_\mu U_c^{\dagger}+\frac{i}{g_s}U_c\frac{\partial U_c^{\dagger}}{\partial R_\mu} ,
+G_{\imath}\mapsto U_cG_{\imath} U_c^{\dagger}+\frac{i}{g_s}U_c\frac{\partial U_c^{\dagger}}{\partial R_{\imath}} ,
 $$
 
-and the analogous laws for $W_\mu$ with $U_L$ and for $B_\mu$ with the phase alone. $U_L$ acts as the identity on right-handed fields.
+and the analogous laws for $W_{\imath}$ with $U_L$ and for $B_{\imath}$ with the phase alone. $U_L$ acts as the identity on right-handed fields.
 
 | Term | How it transforms | Why it is invariant |
 |---|---|---|
-| $-\tfrac14G_{a,\mu\nu}G_{a,\mu\nu}$ | $G_{\mu\nu}\mapsto U_cG_{\mu\nu}U_c^{\dagger}$ | the trace of a product is cyclic, and $U_c^{\dagger}U_c=1$ |
-| $-\tfrac14W_{a,\mu\nu}W_{a,\mu\nu}$ | $W_{\mu\nu}\mapsto U_LW_{\mu\nu}U_L^{\dagger}$ | the same |
-| $-\tfrac14B_{\mu\nu}B_{\mu\nu}$ | $B_{\mu\nu}\mapsto B_{\mu\nu}$ | the abelian curvature is a derivative of a scalar phase |
+| $-\tfrac14G_{a,\imath\jmath}G_{a,\imath\jmath}$ | $G_{\imath\jmath}\mapsto U_cG_{\imath\jmath}U_c^{\dagger}$ | the trace of a product is cyclic, and $U_c^{\dagger}U_c=1$ |
+| $-\tfrac14W_{a,\imath\jmath}W_{a,\imath\jmath}$ | $W_{\imath\jmath}\mapsto U_LW_{\imath\jmath}U_L^{\dagger}$ | the same |
+| $-\tfrac14B_{\imath\jmath}B_{\imath\jmath}$ | $B_{\imath\jmath}\mapsto B_{\imath\jmath}$ | the abelian curvature is a derivative of a scalar phase |
 | fermion kinetic | $\bar{\tilde\Xi}\mapsto\bar{\tilde\Xi}U^{\dagger}$, $\tilde\nabla_\Phi\tilde\Xi\mapsto U\tilde\nabla_\Phi\tilde\Xi$ | $U^{\dagger}U=1$, and the derivative is covariant |
-| scalar kinetic | $D_\mu\omicron_{\mathrm{hgs}}\mapsto U_{\omicron_{\mathrm{hgs}}} D_\mu\omicron_{\mathrm{hgs}}$ | the same, with the scalar's representation |
+| scalar kinetic | $D_{\imath}\omicron_{\mathrm{hgs}}\mapsto U_{\omicron_{\mathrm{hgs}}} D_{\imath}\omicron_{\mathrm{hgs}}$ | the same, with the scalar's representation |
 | potential $\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\lambda(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$ | $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}\mapsto\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$ | the invariant is the modulus squared, a singlet |
 | Yukawa, down type | the three factors transform by $U_Q^{\dagger}$, $U_{\omicron_{\mathrm{hgs}}}$, $U_d$ | the product is $U_Q^{\dagger}U_{\omicron_{\mathrm{hgs}}} U_d$, and the $SU(2)$ contraction is the singlet |
 | Yukawa, up type | the same with $U_{\tilde\omicron_{\mathrm{hgs}}}$ | $U_{\tilde\omicron_{\mathrm{hgs}}}$ is the conjugate of $U_{\omicron_{\mathrm{hgs}}}$, and the phase is opposite |
-| $\theta$ term | invariant | $G_{\mu\nu}$ is adjoint-valued, and the epsilon contraction is a colour singlet |
+| $\theta$ term | invariant | $G_{\imath\jmath}$ is adjoint-valued, and the epsilon contraction is a colour singlet |
 
 The three places where the audit could fail and does not.
 
@@ -289,10 +289,10 @@ Three sectors out of four. The corpus writes a gauge action, a scalar action and
 
 | Standard object | Corpus object | Identity |
 |---|---|---|
-| $-\tfrac14F\cdot F$ | $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$ | the same, by §*The Dictionary* |
-| $+\tfrac12\partial\xi\cdot\partial\xi$ | $-\tfrac12\sum_\mu\partial_\mu\xi\,\partial_\mu\xi$ | the same, by §*The Dictionary* |
-| $\lvert D_\mu\omicron_{\mathrm{hgs}}\rvert^2$ | $-\sum_\mu(D_\mu\omicron_{\mathrm{hgs}})^\dagger(D_\mu\omicron_{\mathrm{hgs}})$ | the same |
-| the Dirac kinetic term, $\bar\psi\,iD_\mu\psi$ | $\bar{\tilde\Xi}\,i\tilde\nabla_\Phi\tilde\Xi$ | the Dirac article's pair; a central shift, if wanted, is added as $\kappa$ and never carried in the glyph |
+| $-\tfrac14F\cdot F$ | $-\tfrac14\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}$ | the same, by §*The Dictionary* |
+| $+\tfrac12\partial\xi\cdot\partial\xi$ | $-\tfrac12\sum_{\imath}\partial_{\imath}\xi\,\partial_{\imath}\xi$ | the same, by §*The Dictionary* |
+| $\lvert D_{\imath}\omicron_{\mathrm{hgs}}\rvert^2$ | $-\sum_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^\dagger(D_{\imath}\omicron_{\mathrm{hgs}})$ | the same |
+| the Dirac kinetic term, $\bar\psi\,iD_{\imath}\psi$ | $\bar{\tilde\Xi}\,i\tilde\nabla_\Phi\tilde\Xi$ | the Dirac article's pair; a central shift, if wanted, is added as $\kappa$ and never carried in the glyph |
 | $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$ | $\tilde\Xi\tilde\Xi^{\natural}$ | the norm of an element |
 
 The dictionary is a dictionary and not a theory. Each row is an identity between two writings of one object, and none of them is a derivation. The corpus's contribution is that the objects have homes: the connection is a material-sector element, the curvature is its vector part under $\natural$, the scalar is an element and its modulus squared is the norm.
@@ -303,9 +303,9 @@ The parameter ledger, stated once. Three of the four sectors are writable in the
 
 ## Summary
 
-The Standard Model Lagrangian is the sum of four sectors plus the vacuum-angle term: the three gauge kinetic terms $-\tfrac14\sum G G$, $-\tfrac14\sum W W$, $-\tfrac14\sum BB$; one fermion kinetic term per Weyl field, fifteen per generation, each built on the covariant gradient carrying the connection in that field's representation; the scalar kinetic term and the potential $-\sum_\mu(D_\mu\omicron_{\mathrm{hgs}})^\dagger(D_\mu\omicron_{\mathrm{hgs}})+\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\lambda(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$; and the three Yukawa matrices with the conjugate doublet $\tilde\omicron_{\mathrm{hgs}}$ of hypercharge $-\tfrac12$ in the up-type term. The assembly is one notation and one sign rule.
+The Standard Model Lagrangian is the sum of four sectors plus the vacuum-angle term: the three gauge kinetic terms $-\tfrac14\sum G G$, $-\tfrac14\sum W W$, $-\tfrac14\sum BB$; one fermion kinetic term per Weyl field, fifteen per generation, each built on the covariant gradient carrying the connection in that field's representation; the scalar kinetic term and the potential $-\sum_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^\dagger(D_{\imath}\omicron_{\mathrm{hgs}})+\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\lambda(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$; and the three Yukawa matrices with the conjugate doublet $\tilde\omicron_{\mathrm{hgs}}$ of hypercharge $-\tfrac12$ in the up-type term. The assembly is one notation and one sign rule.
 
-The sign rule is $\sum_\mu X_\mu Y_\mu=-X\cdot Y$, proved in one line from $X_t=iX_0$ and the metric of the interval. It converts the corpus's $-\tfrac12\sum\partial\xi\partial\xi$ into the standard $+\tfrac12\partial\xi\cdot\partial\xi$, converts its $-\tfrac14\sum FF$ into the standard $-\tfrac14F\cdot F$ with no change of sign, and leaves the two writings one Lagrangian: the abelian check gives $\sum_{\mu\nu}F_{\mu\nu}F_{\mu\nu}=2(B^2-E^2)$ and hence $\tfrac12(E^2-B^2)$ on both sides.
+The sign rule is $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$, proved in one line from $X_t=iX_0$ and the metric of the interval. It converts the corpus's $-\tfrac12\sum\partial\xi\partial\xi$ into the standard $+\tfrac12\partial\xi\cdot\partial\xi$, converts its $-\tfrac14\sum FF$ into the standard $-\tfrac14F\cdot F$ with no change of sign, and leaves the two writings one Lagrangian: the abelian check gives $\sum_{\imath\jmath}F_{\imath\jmath}F_{\imath\jmath}=2(B^2-E^2)$ and hence $\tfrac12(E^2-B^2)$ on both sides.
 
 The audit is term by term and it passes. The three kinetic terms are invariant because each curvature transforms in the adjoint; the fermion and scalar kinetic terms because each covariant derivative transforms with the same unitary that acts on its field; the potential because it depends only on the singlet $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$; the Yukawa terms because the total hypercharge vanishes in each of the three, $-1/6+1/2-1/3$, $-1/6-1/2+2/3$ and $+1/2+1/2-1$; and the vacuum-angle term because it is a colour singlet. A bare fermion mass fails the audit, and its absence is a result and not an omission.
 
@@ -318,8 +318,8 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{L}_{\mathrm{QCD}}$, $\mathcal{L}_{\mathrm{EW}}$, $\mathcal{L}_{H}$, $\mathcal{L}_{\mathrm{Yuk}}$ | The four sectors |
-| $G_{a,\mu}$, $W_{a,\mu}$, $B_\mu$ | Colour, weak and hypercharge gauge fields |
-| $G_{a,\mu\nu}$, $W_{a,\mu\nu}$, $B_{\mu\nu}$ | Their field strengths |
+| $G_{a,\imath}$, $W_{a,\imath}$, $B_{\imath}$ | Colour, weak and hypercharge gauge fields |
+| $G_{a,\imath\jmath}$, $W_{a,\imath\jmath}$, $B_{\imath\jmath}$ | Their field strengths |
 | $f_{abc}$, $\varepsilon_{abc}$ | Colour and weak structure constants |
 | $\tilde\nabla_{\mathrm{gco},\Phi}$ | The gauge-covariant gradient; the representation is that of the field it acts on |
 | $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ | The Dirac adjoint |
@@ -330,9 +330,9 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 | $v^2=\mu^2/\lambda$ | The vacuum expectation value, $246.22$ GeV |
 | $M_H=\sqrt{2\lambda}\,v$ | The scalar mass |
 | $\theta_{\mathrm{QCD}}$ | The vacuum angle |
-| $G_{a,\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}G_{a,\rho\sigma}$ | The dual field strength |
-| $\sum_\mu X_\mu Y_\mu=-X\cdot Y$ | The sign rule of §*The Dictionary* |
-| $\partial/\partial R_\mu$ | The corpus derivative, with $\partial/\partial r'_t=-i\partial/\partial R_t$ |
+| $G_{a,\mathrm{dual},\imath\jmath}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}G_{a,\rho\sigma}$ | The dual field strength |
+| $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ | The sign rule of §*The Dictionary* |
+| $\partial/\partial R_{\imath}$ | The corpus derivative, with $\partial/\partial r'_t=-i\partial/\partial R_t$ |
 
 ## Further Reading
 

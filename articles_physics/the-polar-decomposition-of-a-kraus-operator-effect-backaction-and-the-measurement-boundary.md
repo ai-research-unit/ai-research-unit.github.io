@@ -412,7 +412,7 @@ The channel-level statement is the correction that the polar programme makes to 
 | $Ξ(\tilde{Ϛ}_{\Psi})=\sum_l\tilde M_{\mathrm{kraus},l}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},l}^{*}$ | channel |
 | $Z=i\vec e_z$ | the $*$-unitary Pauli-$z$ element, $Z^{2}=e_t$ |
 | $2\,\mathrm{Sc}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$ | reduction convention |
-| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | biquaternion norm |
+| $\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$ | biquaternion norm |
 
 ## Further Reading
 

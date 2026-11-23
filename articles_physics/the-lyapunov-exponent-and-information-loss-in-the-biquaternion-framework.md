@@ -24,7 +24,7 @@ The article also states what the framework does **not** produce: positive Lyapun
 
 The treatment is classical and non-relativistic. The exponents are those of a classical flow on a state space, measured with the algebra's biquaternion norm. The tools imported are the standard ones of smooth dynamical systems: the multiplicative ergodic theorem, the contraction of completely positive trace-preserving maps, Pesin's formula, and the integrability of two-dimensional Hamiltonian flows. The connexion to the notion of information used elsewhere in the subcategory is direct: the entropy functional of the companion article *Coarse-Graining and the Biquaternion Entropy Functional* is a function of the biquaternion norm, and the Lyapunov exponent is the rate of decay of the logarithm of the biquaternion norm of a tangent vector; the two are the same quantity read at a point and along a flow.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$ is central; the sectors are $\mathbb{B}_{\Psi}$ (Hermitian, informational) and $\mathbb{B}_{\Phi}$ (anti-Hermitian, material); the doubled scalar part is $2\,\mathrm{Sc}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $2\,\mathrm{Sc}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and a state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_{\imath}^2 = -e_t$; the scalar imaginary $i$ is central; the sectors are $\mathbb{B}_{\Psi}$ (Hermitian, informational) and $\mathbb{B}_{\Phi}$ (anti-Hermitian, material); the doubled scalar part is $2\,\mathrm{Sc}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $2\,\mathrm{Sc}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$; and a state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$.
 
 ## Lyapunov Exponents: The Standard Setting
 
@@ -267,10 +267,10 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t+i\vec s_{\Psi})$ | State, Bloch vector $\vec s_{\Psi}$, $|\vec s_{\Psi}|\le1$ |
-| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |
 | $\delta\tilde{Ϛ}_{\Psi} = \tfrac{i}{2}\delta\vec s_{\Psi}$ | Tangent vector (scalar-free element of $\mathbb{B}_{\Psi}$) |
 | $\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec s_{\Psi}|^2 e_t$ | Biquaternion norm of a tangent vector (negative definite) |
 | $\lambda(v) = \lim_t \tfrac{1}{2r'_t}\log|\langle\delta\tilde{Ϛ}_{\Psi}(r'_t)\rangle_{\natural}/\langle\delta\tilde{Ϛ}_{\Psi}(0)\rangle_{\natural}|$ | Lyapunov exponent in the biquaternion norm |
@@ -289,7 +289,7 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 | $d\mathcal{S}/dr'_t = \Gamma(s_\perp(r'_t)^2/s(r'_t))\,\mathrm{artanh}\,s(r'_t)$ | Entropy production rate (instantaneous $s_\perp$) |
 | $h_{\rm KS} = \sum_{\lambda_k>0}\lambda_k$ | Pesin's formula (standard) |
 | $|\vec S| = \text{const}$ | Coadjoint orbit (Bloch sphere); Hamiltonian flows integrable |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

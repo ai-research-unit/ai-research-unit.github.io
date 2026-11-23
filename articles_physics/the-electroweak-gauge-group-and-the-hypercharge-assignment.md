@@ -57,12 +57,12 @@ What the group does not say. Three things are outside the group and inside the m
 The covariant derivative carries both. Its action on a field of hypercharge $Y$ in the representation $\tau$ of $SU(2)_L$ is
 
 $$
-D_\mu\psi=\frac{\partial\psi}{\partial R_\mu}+i\,g\sum_a\tau_aW_{a,\mu}\psi+i\,g_{\mathrm Y}Y B_\mu\psi ,
+D_{\imath}\psi=\frac{\partial\psi}{\partial R_{\imath}}+i\,g\sum_a\tau_aW_{a,\imath}\psi+i\,g_{\mathrm Y}Y B_{\imath}\psi ,
 $$
 
 and the product $g_{\mathrm Y}Y$ is what appears. That product is the reason the overall scale of $Y$ is not a physical quantity, as §*What the Conditions Do Not Fix* shows.
 
-The canonical normalisation. A theory is normally written with the kinetic terms $-\tfrac14\sum W_{a}W_{a}$ and $-\tfrac14\sum BB$ both of unit coefficient. That fixes the normalisation of the two gauge fields and hence splits the product $g_{\mathrm Y}Y$ into a coupling and a charge. The split is a convention: the covariant derivative carries the product $g_{\mathrm Y}Y$ and not the two factors separately, so the rescaling $Y\mapsto\lambda Y$ with $g_{\mathrm Y}\mapsto g_{\mathrm Y}/\lambda$ moves a number between the coupling and the charge and changes nothing else. $B_\mu$ is not rescaled in that operation, which is why the field strength $B_{\mu\nu}$ and the kinetic term $-\tfrac14\sum BB$ come through untouched. Rescaling $B_\mu$ as well would rescale the kinetic term by $\lambda^{-2}$ and would have to be undone by changing its coefficient, which is exactly the freedom the canonical normalisation removes.
+The canonical normalisation. A theory is normally written with the kinetic terms $-\tfrac14\sum W_{a}W_{a}$ and $-\tfrac14\sum BB$ both of unit coefficient. That fixes the normalisation of the two gauge fields and hence splits the product $g_{\mathrm Y}Y$ into a coupling and a charge. The split is a convention: the covariant derivative carries the product $g_{\mathrm Y}Y$ and not the two factors separately, so the rescaling $Y\mapsto\lambda Y$ with $g_{\mathrm Y}\mapsto g_{\mathrm Y}/\lambda$ moves a number between the coupling and the charge and changes nothing else. $B_{\imath}$ is not rescaled in that operation, which is why the field strength $B_{\imath\jmath}$ and the kinetic term $-\tfrac14\sum BB$ come through untouched. Rescaling $B_{\imath}$ as well would rescale the kinetic term by $\lambda^{-2}$ and would have to be undone by changing its coefficient, which is exactly the freedom the canonical normalisation removes.
 
 ## The Three Labels and the Charge
 
@@ -225,7 +225,7 @@ The number of generations. The conditions are satisfied generation by generation
 
 The quantisation. The conditions constrain the hypercharges but do not force them to be rational, let alone multiples of $\tfrac16$. The sixths are a consequence of the standard normalisation convention together with the measured charges; the anomaly system alone would admit irrational solutions on each ray, and no experiment distinguishes a rational assignment from an irrational one rescaled.
 
-The mixed $\mathrm{U}(1)$ question. If the model contained a second abelian factor, its kinetic term could mix with $B_\mu$, and the anomaly system would have more unknowns. The Standard Model has one, and the absence of kinetic mixing is a property of the content rather than a derived fact.
+The mixed $\mathrm{U}(1)$ question. If the model contained a second abelian factor, its kinetic term could mix with $B_{\imath}$, and the anomaly system would have more unknowns. The Standard Model has one, and the absence of kinetic mixing is a property of the content rather than a derived fact.
 
 ## The Witten Condition
 

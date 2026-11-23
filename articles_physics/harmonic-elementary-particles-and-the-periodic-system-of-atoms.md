@@ -111,15 +111,15 @@ $$
 = \omega\,\tilde{Ξ}_{nm}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) - \mathrm{grad}\,\tilde{Ξ}_{nm}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega),
 $$
 
-because for a scalar potential the pure-vector gradient acts as the ordinary gradient. Taking the potential to be a **vector** directed along a coordinate axis, $\tilde{Ξ} = \tilde{Ξ}_{nm}\vec e_\mu$, gives a **spinor**,
+because for a scalar potential the pure-vector gradient acts as the ordinary gradient. Taking the potential to be a **vector** directed along a coordinate axis, $\tilde{Ξ} = \tilde{Ξ}_{nm}\vec e_{\imath}$, gives a **spinor**,
 
 $$
 \tilde J_{\Phi,\mathrm{eg},nm}^{\,j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)
-= \left(\omega - \vec\nabla_\Phi\right)\circ\left(\tilde{Ξ}_{nm}\vec e_\mu\right)
-= \mathrm{div}\!\left(\tilde{Ξ}_{nm}\vec e_\mu\right) + \omega\,\tilde{Ξ}_{nm}\vec e_\mu - \mathrm{rot}\!\left(\tilde{Ξ}_{nm}\vec e_\mu\right),
+= \left(\omega - \vec\nabla_\Phi\right)\circ\left(\tilde{Ξ}_{nm}\vec e_{\imath}\right)
+= \mathrm{div}\!\left(\tilde{Ξ}_{nm}\vec e_{\imath}\right) + \omega\,\tilde{Ξ}_{nm}\vec e_{\imath} - \mathrm{rot}\!\left(\tilde{Ξ}_{nm}\vec e_{\imath}\right),
 $$
 
-where the three terms on the right are the scalar part, the vector part and the vector part coming from the curl, as the expansion of the biquaternion product gives them. One interpretation caution applies to the source here. Its intermediate line for the spinor prints $\omega\,\frac{dj_0}{dz}(\omega r)\vec e_\mu$ where the expansion gives $\omega j_0(\omega r)\vec e_\mu$; the results the paper then states use $j_0$, so the prime is a slip of the transcription and is not carried below.
+where the three terms on the right are the scalar part, the vector part and the vector part coming from the curl, as the expansion of the biquaternion product gives them. One interpretation caution applies to the source here. Its intermediate line for the spinor prints $\omega\,\frac{dj_0}{dz}(\omega r)\vec e_{\imath}$ where the expansion gives $\omega j_0(\omega r)\vec e_{\imath}$; the results the paper then states use $j_0$, so the prime is a slip of the transcription and is not carried below.
 
 The two classes are not on the same footing, and the difference is exactly the behaviour at the origin that the Bessel asymptotics fixes. For a pulsar the gradient term is finite or vanishing at $r = 0$ while the $\omega\tilde{Ξ}_{nm}$ term survives whenever $n = 0$; for $n \geq 1$ the potential itself vanishes there, so the pulsar's density vanishes too. For a spinor the scalar part is built from the divergence, which carries the factor $j_1$ and vanishes at the origin, while the vector part carries $j_0$ and does not. So:
 
@@ -370,7 +370,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\tilde{Ξ}_{nm} = j_n(\omega r)P_{nm}(\cos\theta)\exp(im\lambda)$ | Regular spherical Helmholtz solutions |
 | $j_n$ | Spherical Bessel function of order $n$ |
 | $\tilde J_{\Phi,\mathrm{eg},nm}^{\,0} = (\omega-\vec\nabla_\Phi)\circ\,\tilde{Ξ}_{nm}$ | Pulsar (scalar potential) |
-| $\tilde J_{\Phi,\mathrm{eg},nm}^{\,j} = (\omega-\vec\nabla_\Phi)\circ(\tilde{Ξ}_{nm}\vec e_\mu)$ | Spinor (vector potential) |
+| $\tilde J_{\Phi,\mathrm{eg},nm}^{\,j} = (\omega-\vec\nabla_\Phi)\circ(\tilde{Ξ}_{nm}\vec e_{\imath})$ | Spinor (vector potential) |
 | $\vec u_x = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Radial unit vector |
 | $r_{,\eta} = r_\eta/r$ | Direction cosines; $\sum_\eta r_{,\eta}^2 = 1$ |
 | $\tilde{\Sigma}_{\Psi} = \tfrac12\tilde J_{\Phi,\mathrm{eg}}\circ\tilde J_{\Phi,\mathrm{eg}}^{*}$ | Energy–momentum biquaternion |

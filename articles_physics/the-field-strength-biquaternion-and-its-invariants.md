@@ -48,7 +48,7 @@ This is the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ divi
 In tensor language the same object is the antisymmetric rank-two tensor
 
 $$
-F_{\mu\nu} = \frac{\partial A_\nu}{\partial R_\mu} - \frac{\partial A_\mu}{\partial R_\nu},
+F_{\imath\jmath} = \frac{\partial A_{\jmath}}{\partial R_{\imath}} - \frac{\partial A_{\imath}}{\partial R_{\jmath}},
 \qquad
 F_{0\eta} = \frac{iE_\eta}{c},
 \qquad
@@ -347,7 +347,7 @@ $$
 
 with $\star(F \pm i\star F) = \mp i\,(F \pm i\star F)$. The $\vec N$ part ($\star F = -iF$) is the **self-dual** half and the $\vec N^*$ part ($\star F = +iF$) the **anti-self-dual** half; the two halves are the two helicities of the radiation field. For a real field the two parts are complex conjugates of one another, so $\vec N^*$ adds no new data: $\vec N$ alone already carries the six real field components of $(\vec E,\vec B)$. On the complexified field space they are instead independent, and each carries one of the two three-dimensional complex representations of the Lorentz group, one at each value read by the test of an element, $L$ and $R$. The biquaternion proof uses the antisymmetric-tensor action of the Lorentz group, not the four-vector rotor conjugation.
 
-*Convention.* The dual is defined here by its action on $(\vec E,\vec B)$, with $\star^2=-1$. This is the real-time convention, and it is the $\theta_{\mathrm{dua}}=\pi/2$ case of the duality rotation below, $\star\vec N=-i\vec N$. With this definition the **self-dual** half is $F+i\star F$ ($\star$-eigenvalue $-i$) and the **anti-self-dual** half is $F-i\star F$ ($\star$-eigenvalue $+i$). Reversing the orientation density, $\epsilon_{\mu\nu\rho\sigma}\mapsto-\epsilon_{\mu\nu\rho\sigma}$, exchanges the two names and changes nothing else. The component-wise dual read off from the $i r'_t$ tensor, $(\star_{i r'_t}F)_{0\eta}=B_\eta$, is $-i\star$ and has $\star_{i r'_t}^2=+1$; it is the same decomposition, with the two parts appearing as the eigenfields $F\pm\star_{i r'_t}F$ of eigenvalue $\pm1$ instead of the eigenfields $F\pm i\star F$ of eigenvalue $\mp i$.
+*Convention.* The dual is defined here by its action on $(\vec E,\vec B)$, with $\star^2=-1$. This is the real-time convention, and it is the $\theta_{\mathrm{dua}}=\pi/2$ case of the duality rotation below, $\star\vec N=-i\vec N$. With this definition the **self-dual** half is $F+i\star F$ ($\star$-eigenvalue $-i$) and the **anti-self-dual** half is $F-i\star F$ ($\star$-eigenvalue $+i$). Reversing the orientation density, $\epsilon_{\imath\jmath\rho\sigma}\mapsto-\epsilon_{\imath\jmath\rho\sigma}$, exchanges the two names and changes nothing else. The component-wise dual read off from the $i r'_t$ tensor, $(\star_{i r'_t}F)_{0\eta}=B_\eta$, is $-i\star$ and has $\star_{i r'_t}^2=+1$; it is the same decomposition, with the two parts appearing as the eigenfields $F\pm\star_{i r'_t}F$ of eigenvalue $\pm1$ instead of the eigenfields $F\pm i\star F$ of eigenvalue $\mp i$.
 
 ## Duality Rotation
 
@@ -590,7 +590,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 | $\tilde u_{\mathrm r}$ | Unit factor of the phase $\tilde F_0$, the polarization rotor |
 | $\gamma = 1/\sqrt{1-v^2/c^2}$ | Lorentz factor (a number, not an element of the algebra) |
 | $\vec v$ | Boost velocity, speed $v=\lvert\vec v\rvert$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | The Hermitian form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | The Hermitian form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | The plain form, the scalar part of the plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

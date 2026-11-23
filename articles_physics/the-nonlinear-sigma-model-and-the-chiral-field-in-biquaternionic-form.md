@@ -40,15 +40,15 @@ The decay constant. The scale of the freezing is a parameter, $f$, with dimensio
 The leading term. With $\tilde U$ group-valued and the trace written as $2\,\mathrm{Sc}$,
 
 $$
-\boxed{\;\mathcal{L}_2 = -\,\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial_\mu\tilde U}\,\partial_\mu\tilde U\right)\;}
+\boxed{\;\mathcal{L}_2 = -\,\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial_{\imath}\tilde U}\,\partial_{\imath}\tilde U\right)\;}
 $$
 
 which at quadratic order is the canonical kinetic term for the Goldstones.
 
-The currents. The left and right currents $j_\mu=\tilde U^{\dagger}\partial_\mu\tilde U$ and $\tilde U\partial_\mu\tilde U^{\dagger}$ are pure gauge connections, so their field strength vanishes:
+The currents. The left and right currents $j_{\imath}=\tilde U^{\dagger}\partial_{\imath}\tilde U$ and $\tilde U\partial_{\imath}\tilde U^{\dagger}$ are pure gauge connections, so their field strength vanishes:
 
 $$
-\boxed{\;\partial_\mu j_\nu-\partial_\nu j_\mu+\left[j_\mu,j_\nu\right]=0\;}
+\boxed{\;\partial_{\imath} j_{\jmath}-\partial_{\jmath} j_{\imath}+\left[j_{\imath},j_{\jmath}\right]=0\;}
 $$
 
 The identity is algebraic, not dynamical: the dynamics of a group-valued field is that of a connection constrained to be pure gauge, and the equation of motion is the conservation of the flat current.
@@ -84,7 +84,7 @@ Where the applications are. [The Chiral Theory and the Lagrangian: The Pion and 
 | $\tilde U$ | the group-valued chiral field |
 | $G,H$ | the symmetry group and the unbroken subgroup |
 | $f$ | the decay constant |
-| $j_\mu$ | the flat current |
+| $j_{\imath}$ | the flat current |
 | $\Lambda$ | the scale of the integrated-out physics |
 
 ## Further Reading

@@ -100,7 +100,7 @@ $$
 a derived form: $Ϙ=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)$, the two chirality states at the axis of the previous section. The element $Ϙ$ is Hermitian, and it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. The covariant derivative carries it,
 
 $$
-D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+\frac{2\pi i}{h}A_\mu\,\tilde{Ξ}Ϙ .
+D_{\imath}\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_{\imath}}+\frac{2\pi i}{h}A_{\imath}\,\tilde{Ξ}Ϙ .
 $$
 
 The framework's own abelian gauge structure — the one drawn from the central line $\mathbb{B}_{C}$ — is the specialization $ϙ_L=ϙ_R$: a central phase multiplies the two values alike, so it is vector-like by construction, and an axial coupling would have to sit outside the centre.
@@ -259,7 +259,7 @@ The table sorts the proton's properties by the status they have in the framework
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 No gamma appears in the sections above, and this section is where it does. Its purpose is to give the same basis operators their standard names, for a reader who wants the Dirac notation, and to state once the identities that notation carries. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -277,7 +277,7 @@ $$
 
 Because $L_{\mathrm{pau},e_t}$ is the identity of the module, the first and the last simplify: $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$. In this frame $\gamma_0$ and $\gamma_5$ are Hermitian and $\gamma_1,\gamma_2,\gamma_3$ are anti-Hermitian — the standard Dirac pattern for $\varepsilon=(1,-1,-1,-1)$ — and that is why the Dirac adjoint of the charge section is built with $G_t=\gamma_0$ alone. Each gamma is one basis operator and not a sum of basis operators, which the coefficient matrix $c(\gamma)$ records by having rank one; a general element is a sum of such products, they form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and the least number of products summing to $M$ is $\operatorname{rank}c(M)$, at most four.
 
-The generator basis operators $G_\mu$ of the charge section are exactly these gammas, $G_\mu=\gamma_\mu$: $G_t=\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $G_\eta=\gamma_\eta=iL_{\mathrm{pau},\vec e_\eta}R_{\mathrm{pau},\vec e_y}$. The anticommutator of the notation table is therefore the Clifford relation below.
+The generator basis operators $G_{\imath}$ of the charge section are exactly these gammas, $G_{\imath}=\gamma_{\imath}$: $G_t=\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $G_\eta=\gamma_\eta=iL_{\mathrm{pau},\vec e_\eta}R_{\mathrm{pau},\vec e_y}$. The anticommutator of the notation table is therefore the Clifford relation below.
 
 **Chirality, three objects and one representative.** $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$ *is* the chirality basis operator $\Gamma$ of the charge section, so the fifth basis operator and the fifth gamma are one object in two readings. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object: it is central, it belongs to the double $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_\mathbb{R}$, and it is not an element of $\mathbb{B}$. The chain is $\xi$ in the double, $\Gamma=\mathrm{diag}(-I_2,I_2)$ its representative on the Dirac module, and $\gamma_5$ that representative written as a basis operator.
 
@@ -286,38 +286,38 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The identities the body and the notation table cite.** Here $\mathrm{tr}$ is the $4\times4$ matrix trace, $I_4$ the identity of $M_4(\mathbb{C})$, $\varepsilon=(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$.
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}+\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
 
 **The contraction sums depend on the frame, because a basis operator's square does.** In $\mathbb{B}_{\Phi}$, with the plain weight $\varepsilon=(1,-1,-1,-1)$,
 
 $$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,
+\sum_{\imath}\varepsilon_{\imath}\,\gamma_{\imath}\gamma_{\imath}=4I_4,\qquad
+\sum_{\imath}\varepsilon_{\imath}\,\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha,
 $$
 
 $$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\rho\gamma_\mu=+2\gamma_\alpha\gamma_\beta\gamma_\rho .
+\sum_{\imath}\varepsilon_{\imath}\,\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
+\sum_{\imath}\varepsilon_{\imath}\,\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_\rho\gamma_{\imath}=+2\gamma_\alpha\gamma_\beta\gamma_\rho .
 $$
 
-Without the weight only the first keeps a closed form: the sum of the four squares is $\sum_\mu\gamma_\mu\gamma_\mu=(1-1-1-1)I_4=-2I_4$, one $+1$ and three $-1$.
+Without the weight only the first keeps a closed form: the sum of the four squares is $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=(1-1-1-1)I_4=-2I_4$, one $+1$ and three $-1$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -350,7 +350,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\tilde{Ξ}^{\flat}=-\tilde{Ξ}^*$ | The algebra's real structure |
 | $\tilde\Pi_{\mathrm{id},\pm}(\vec e_z)$ | The two chirality states at the axis; $\tilde\Pi_{\mathrm{id},+}$ the L state, $\tilde\Pi_{\mathrm{id},-}$ the R state |
 | $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by it |
-| $D_\mu\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_\mu+\frac{2\pi i}{h}A_\mu\tilde{Ξ}Ϙ$ | Covariant derivative of the chiral charge |
+| $D_{\imath}\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_{\imath}+\frac{2\pi i}{h}A_{\imath}\tilde{Ξ}Ϙ$ | Covariant derivative of the chiral charge |
 | $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); a massive field forces $ϙ_L=ϙ_R$ |
 | $Ϙ=ϙ\,e_t$, $ϙ_p=+1$ | Vector-like charge element; the proton's value (inserted, not derived) |
 | $m_p$ | Proton mass (a parameter) |
@@ -375,7 +375,7 @@ What the framework does not supply is everything that makes the proton a proton.
 - [The Spin–Statistics Theorem in Biquaternionic Form](the-spin-statistics-theorem-in-biquaternionic-form.html) — half-integer weights as native to the algebra, and the sense in which the spin–statistics theorem is transcribed rather than derived.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) — the two values of the field and the Lorentz action that fixes the spin-$\tfrac12$ content.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian gauge group as the $*$-unitary part of the centre, on which the electric-charge identification rests.
-- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin operators $\tilde{S}_{\Psi,\mu}=\frac{h}{4\pi} i\vec e_\mu$ and the state structure used implicitly here.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin operators $\tilde{S}_{\Psi,\imath}=\frac{h}{4\pi} i\vec e_{\imath}$ and the state structure used implicitly here.
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) — the real structure and the Majorana-versus-Dirac interpretation that bears on charge conservation.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) and [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the two sectors, their bases and the normalised Hermitian form, with its trace reading, inherited unchanged.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html) — the two first-order equations, the square on each line, and the reading of the massive equation on one element, taken over unchanged.

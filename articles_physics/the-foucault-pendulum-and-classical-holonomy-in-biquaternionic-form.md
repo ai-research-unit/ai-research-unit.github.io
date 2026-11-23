@@ -297,7 +297,7 @@ The effect is the purely geometric end of the spin-zero subcategory: it involves
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\theta_{\mathrm{foc}}}\vec e_{\mathrm{foc},\theta}$ $(\mu\neq\nu)$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\theta_{\mathrm{foc}}}\vec e_{\mathrm{foc},\theta}$ $(\imath\neq\jmath)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_t$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian), informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subalgebra (rotation rotors) |

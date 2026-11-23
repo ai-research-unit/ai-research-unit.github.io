@@ -5,7 +5,7 @@
 **This entry reads the analysis block of the mathematical category.** Ten articles, one construction.
 
 $$
-\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
+\tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial R_{\imath}},
 \qquad
 \Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}
 =e_t\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi ,
@@ -33,7 +33,7 @@ $$
 
 **A fourth objection is that Fueter's construction needs an axis, and on this algebra an axis is not canonical.** That is correct and it is the sharpest limit of the section. On $\mathbb{B}_{H}$ the roots of $-1$ form a two-sphere and the axial construction is axis-free. On $\mathbb{B}$ the roots of $-1$ form a three-parameter family that is not a sphere, so the slice must be chosen, one root at a time. The construction is therefore a family indexed by a root, exactly as the minimal left ideals are a family indexed by an axis, and the corpus states the dependence instead of hiding it.
 
-**The letters.** The variable is $\tilde R=\sum_\mu R_\mu e_\mu$ with $R_\mu=r_\mu+ir'_\mu$, and on a four-dimensional subspace the coefficients are real or purely imaginary and the derivative with respect to them is an ordinary real derivative. The field is $\tilde\Xi$, a biquaternion-valued function of $\tilde R$. The gradient is $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, and the d'Alembertian $\Box_\Phi$. The fundamental solution is $G_{\mathrm{fn}}$, and the Cauchy kernel is the same object read as a kernel. The two semi-derivatives of the two-sided condition are $L$ and $R$, and the coefficient function of a solution is $\Sigma$. The sector subscripts are $\Phi$ for the anti-Hermitian, material half and $\Psi$ for the Hermitian, informational half; the subspace subscripts are $H$ for the quaternion and $iH$ for the anti-quaternion subspace. The conventions are *Operator and Calculus Conventions*, and this entry uses them and defines none of them.
+**The letters.** The variable is $\tilde R=\sum_{\imath} R_{\imath} e_{\imath}$ with $R_{\imath}=r_{\imath}+ir'_{\imath}$, and on a four-dimensional subspace the coefficients are real or purely imaginary and the derivative with respect to them is an ordinary real derivative. The field is $\tilde\Xi$, a biquaternion-valued function of $\tilde R$. The gradient is $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, and the d'Alembertian $\Box_\Phi$. The fundamental solution is $G_{\mathrm{fn}}$, and the Cauchy kernel is the same object read as a kernel. The two semi-derivatives of the two-sided condition are $L$ and $R$, and the coefficient function of a solution is $\Sigma$. The sector subscripts are $\Phi$ for the anti-Hermitian, material half and $\Psi$ for the Hermitian, informational half; the subspace subscripts are $H$ for the quaternion and $iH$ for the anti-quaternion subspace. The conventions are *Operator and Calculus Conventions*, and this entry uses them and defines none of them.
 
 **Boundaries.** The algebra and its conjugations are *The Algebraic Vocabulary: Element, Conjugations, Six Subspaces and Two Ledgers*; the operators are *The Operators of the Algebra*; the cone is *The Zero Divisors and the Invertibles* and *The Topology of the Zero-Divisor Cone*; the topology of the group of invertibles is *The Group of Invertibles, the Cone and the Orders*; the transform theory proper is the next section, *The Harmonic Analysis: The Transform as a Change of Description*. The physical reading of the two-sided derivative is the companion *The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe*, and the external programme it records is *The Algebrodynamical Programme*. No dynamics, no action principle and no quantum postulate appear.
 
@@ -56,9 +56,9 @@ $$
 
 ## The Results in Brief
 
-**The derivative.** $\tilde\nabla_\Phi=\sum_\mu e_\mu\partial/\partial R_\mu$ is the one element-valued derivative. The quotient definition reduces to the affine maps, and the operator definition has an infinite-dimensional solution space. The derivative is a sum of left multiplications by the four units, so it is one of the operators of the preceding section used on a field.
+**The derivative.** $\tilde\nabla_\Phi=\sum_{\imath} e_{\imath}\partial/\partial R_{\imath}$ is the one element-valued derivative. The quotient definition reduces to the affine maps, and the operator definition has an infinite-dimensional solution space. The derivative is a sum of left multiplications by the four units, so it is one of the operators of the preceding section used on a field.
 
-**The characteristic set.** The symbol of the gradient is $S(\xi)=\sum_\mu\xi_\mu\mathsf M_2(e_\mu)$, and $\det S(\xi)=\sum_\mu\xi_\mu^{2}=N(\xi)$. The characteristic set is the zero-divisor cone, so the operator is elliptic at a real covector exactly when the covector is not null.
+**The characteristic set.** The symbol of the gradient is $S(\xi)=\sum_{\imath}\xi_{\imath}\mathsf M_2(e_{\imath})$, and $\det S(\xi)=\sum_{\imath}\xi_{\imath}^{2}=N(\xi)$. The characteristic set is the zero-divisor cone, so the operator is elliptic at a real covector exactly when the covector is not null.
 
 **The root.** $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ has no first-order root by left multiplication alone. The root exists in the operator algebra of the regular module, $\mathsf D^{2}=\Box_\Phi I$, and a shift by the pseudoscalar gives $\mathsf D_\lambda=\mathsf D+c\gamma_5$ with $c^{2}=-\lambda$ and $\det\mathsf D_\lambda=(\Box_\Phi-\lambda)^{2}$.
 
@@ -83,7 +83,7 @@ $$
 **What survives is the operator.** Write
 
 $$
-\tilde\nabla_\Phi\tilde\Xi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial\tilde\Xi}{\partial R_\mu},
+\tilde\nabla_\Phi\tilde\Xi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial\tilde\Xi}{\partial R_{\imath}},
 $$
 
 an element of $\mathbb{B}$ obtained from four derivatives of the field and the four units. No inverse is taken, no division occurs, and a zero divisor in the field or in the derivative is harmless. The price is that the construction is not the unique derivative of the function: it is one of several first-order conditions that an element-valued function can satisfy, and the others are the subject of §*The Two-Sided Derivative and the Eikonal*.
@@ -91,22 +91,22 @@ an element of $\mathbb{B}$ obtained from four derivatives of the field and the f
 **It is linear, and it is left multiplication.** For central $\alpha,\beta$ and differentiable fields, $\tilde\nabla_\Phi(\alpha\tilde\Xi+\beta\tilde\Pi_{\mathrm{nil}})=\alpha\tilde\nabla_\Phi\tilde\Xi+\beta\tilde\nabla_\Phi\tilde\Pi_{\mathrm{nil}}$, and the derivative is the sum of four left multiplications, one per coordinate,
 
 $$
-\tilde\nabla_\Phi\tilde\Xi=\sum_\mu L_{e_\mu}\bigl(\partial_\mu\tilde\Xi\bigr).
+\tilde\nabla_\Phi\tilde\Xi=\sum_{\imath} L_{e_{\imath}}\bigl(\partial_{\imath}\tilde\Xi\bigr).
 $$
 
 So the analysis of this section is a chapter of the operator section that precedes it: the same left multiplication, applied to a field instead of to an element, with the parameter replaced by a derivative.
 
-**The symbol, and the cone.** Replace $\partial/\partial R_\mu$ by a covector $\xi_\mu$ and the gradient becomes the two-by-two matrix
+**The symbol, and the cone.** Replace $\partial/\partial R_{\imath}$ by a covector $\xi_{\imath}$ and the gradient becomes the two-by-two matrix
 
 $$
-S(\xi)=\sum_{\mu}\xi_\mu\mathsf M_2(e_\mu),
+S(\xi)=\sum_{\imath}\xi_{\imath}\mathsf M_2(e_{\imath}),
 \qquad
-\det S(\xi)=\sum_{\mu}\xi_\mu^{2}=N(\xi).
+\det S(\xi)=\sum_{\imath}\xi_{\imath}^{2}=N(\xi).
 $$
 
 The determinant of the symbol is the norm of the covector. Hence the characteristic set of the first-order condition — the covectors at which the operator is not elliptic — is the zero divisor cone, and it is the same set for the second-order operator, whose symbol is $N(\xi)$ itself. Three names, one set: the null cone of the norm, the characteristic set of the gradient and the set of the zero divisors.
 
-**The two coordinate systems.** The derivative with respect to a complex coordinate is the difference of two real derivatives, $\partial/\partial R_\mu=\partial/\partial r_\mu-i\,\partial/\partial r'_\mu$. On a four-dimensional subspace one of the two vanishes at each slot, so the same glyph denotes a real derivative on the real coefficients and $-i$ times a real derivative on the purely imaginary ones. That one arithmetic fact is the whole of the difference between the four sign patterns of §*The Four Sign Patterns*, and it is why the analysis is done on subspaces and not on the full algebra.
+**The two coordinate systems.** The derivative with respect to a complex coordinate is the difference of two real derivatives, $\partial/\partial R_{\imath}=\partial/\partial r_{\imath}-i\,\partial/\partial r'_{\imath}$. On a four-dimensional subspace one of the two vanishes at each slot, so the same glyph denotes a real derivative on the real coefficients and $-i$ times a real derivative on the purely imaginary ones. That one arithmetic fact is the whole of the difference between the four sign patterns of §*The Four Sign Patterns*, and it is why the analysis is done on subspaces and not on the full algebra.
 
 **The reading.** One element, one derivative, and no second object called the field. In the transcription of a physical theory the field and its derivative are different kinds of thing: a section of a bundle and a connection on it. Here they are two elements of one algebra, and the derivative is obtained from the field by the algebra's own product. That is a genuine simplification and a genuine restriction: it is available only because the algebra is non-commutative and finite-dimensional, and the price of it is that differentiability is one condition among several rather than a theorem about limits.
 
@@ -116,8 +116,8 @@ The determinant of the symbol is the norm of the covector. Hence the characteris
 
 $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}
-=\sum_{\mu}e_\mu e_\mu^{\natural}\frac{\partial^{2}}{\partial R_\mu^{2}}
-=\sum_{\mu}\frac{\partial^{2}}{\partial R_\mu^{2}}
+=\sum_{\imath}e_{\imath} e_{\imath}^{\natural}\frac{\partial^{2}}{\partial R_{\imath}^{2}}
+=\sum_{\imath}\frac{\partial^{2}}{\partial R_{\imath}^{2}}
 =e_t\frac{\partial^{2}}{\partial R_t^{2}}+\Delta_\Phi
 =(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi ,
 $$
@@ -130,7 +130,7 @@ $$
 
 a minus on the time term and a plus on the three space terms.
 
-**There is no root inside the algebra.** A first-order operator $D$ with $D^{2}=\Box_\Phi I$ cannot be built from the four units alone. The algebra is four-dimensional over $\mathbb{C}$, and the attempt fails at the fourth generator: three of them exist inside $\mathbb{B}$, namely $i\vec e_x$, $i\vec e_y$, $i\vec e_z$, which square to $e_t$ and anticommute in pairs, and the fourth has no left multiplication to supply it. The obstruction is the dimension of the minimal module: the Clifford relation $\{\gamma_\mu,\gamma_\nu\}=2\delta_{\mu\nu}I$ needs a carrier of complex dimension four, while a minimal left ideal of $\mathbb{B}$ has complex dimension two.
+**There is no root inside the algebra.** A first-order operator $D$ with $D^{2}=\Box_\Phi I$ cannot be built from the four units alone. The algebra is four-dimensional over $\mathbb{C}$, and the attempt fails at the fourth generator: three of them exist inside $\mathbb{B}$, namely $i\vec e_x$, $i\vec e_y$, $i\vec e_z$, which square to $e_t$ and anticommute in pairs, and the fourth has no left multiplication to supply it. The obstruction is the dimension of the minimal module: the Clifford relation $\{\gamma_{\imath},\gamma_{\jmath}\}=2\delta_{\imath\jmath}I$ needs a carrier of complex dimension four, while a minimal left ideal of $\mathbb{B}$ has complex dimension two.
 
 **What does work.** The root exists in the operator algebra of the regular module, $\operatorname{End}(\mathbb{B})\cong M_4(\mathbb{C})$. The two minimal left ideals $S_{\pm}=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ are exchanged by an element $u$ with $u^{2}=e_t$, the grading $G=R_{\tilde\Pi_{\mathrm{id},+}}-R_{\tilde\Pi_{\mathrm{id},-}}$ anticommutes with $R_u$, and the two-sided generators
 
@@ -254,14 +254,14 @@ $$
 is real-analytic on the ball, by continuity at $\rho=0$, and is both left- and right-regular there. The second-order operator is the whole of the difference between a holomorphic seed and a regular field: the identity map is slice-regular and not regular, since
 
 $$
-\tilde\nabla_\Phi\tilde Q=\sum_\mu e_\mu e_\mu=e_t-\vec e_x^{2}-\vec e_y^{2}-\vec e_z^{2}=-2e_t\neq0 ,
+\tilde\nabla_\Phi\tilde Q=\sum_{\imath} e_{\imath} e_{\imath}=e_t-\vec e_x^{2}-\vec e_y^{2}-\vec e_z^{2}=-2e_t\neq0 ,
 $$
 
 while the completed seed is regular by construction: the square completes to the constant field $\Box_\Phi\tilde Q^{2}=-4e_t$, whose gradient vanishes identically. The completion of a seed of degree $n$ has degree $n-2$, and two consequences follow at once. The affine seeds complete to zero, so the map has the affine kernel and is injective only modulo it. And the first seed that produces a field at all is the quadratic one, which produces a constant. Recomputed here in double precision on a generic point, the Laplacian is $-3.99999999\,e_t$, the gradient of $\tilde Q^{2}$ itself being $-4Q_te_t$ and not zero.
 
 **The odd dimension.** The generalisation, the Fueter–Sce theorem, takes $n$ odd and applies $\Delta_\Phi^{(n-1)/2}$ to the axial extension on $\mathbb{R}^{n+1}$. Three hypotheses are needed and none can be dropped: the seed must be holomorphic, the affine kernel must be quotiented out, and the exponent must be a non-negative integer. The parity condition is the reason the construction is stated for the quaternion and biquaternion case at $n=3$ and not for an arbitrary dimension.
 
-**The axis.** On $\mathbb{B}_{H}$ the imaginary units form the two-sphere of unit pure imaginary quaternions, every element with nonzero vector part is $\tilde Q=q_t+I\rho$ with $I$ on that sphere, and the slices meet only in the real line. On $\mathbb{B}$ the roots of $-1$ are the larger family $\pm i$, $\pm\mu$ and $b\mu+d\nu i$ with $\mu,\nu$ perpendicular unit pure real quaternions and $b^{2}-d^{2}=1$, which is not a sphere. There is therefore no single imaginary sphere on which to base the theory, and the axial construction must select one root, hence one slice, at a time.
+**The axis.** On $\mathbb{B}_{H}$ the imaginary units form the two-sphere of unit pure imaginary quaternions, every element with nonzero vector part is $\tilde Q=q_t+I\rho$ with $I$ on that sphere, and the slices meet only in the real line. On $\mathbb{B}$ the roots of $-1$ are the larger family $\pm i$, $\pm\mu$ and $b\mu+d\jmath i$ with ${\imath},\jmath$ perpendicular unit pure real quaternions and $b^{2}-d^{2}=1$, which is not a sphere. There is therefore no single imaginary sphere on which to base the theory, and the axial construction must select one root, hence one slice, at a time.
 
 **The reading.** The Fueter extension is the axial completion. A holomorphic function of one complex variable is two real functions of two real variables; its completion is a field on four real dimensions, and the completion operator is the second-order operator of the theory. Three statements follow, and each is a statement about physics as much as about algebra. First, the minimal data of an axially symmetric regular field is one complex function of one complex variable, so the four-dimensional field contains no more information than a two-dimensional one. Second, the reconstruction is unique only modulo the affine seeds, which is exactly what a second-order operator cannot see: a constant and a linear function are invisible to $\Box_\Phi$. Third, the axis is a parameter of the family and not a datum of the algebra, the same way the axis of the idempotents $\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ is a parameter. A configuration with an axis is therefore a choice of slice, and a theory that admits every axis at once is a family of theories indexed by a point of the root set.
 
@@ -394,7 +394,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 ### III.1.e — The Characteristic Cone Is the Light Cone
 
-**The object.** The symbol $S(\xi)=\sum_\mu\xi_\mu\mathsf M_2(e_\mu)$ and its determinant $\det S(\xi)=N(\xi)$.
+**The object.** The symbol $S(\xi)=\sum_{\imath}\xi_{\imath}\mathsf M_2(e_{\imath})$ and its determinant $\det S(\xi)=N(\xi)$.
 
 **The warrant.** The determinant of a sum of scaled units is the norm of the covector, so the characteristic set of the gradient is the set of null covectors, which is the zero-divisor cone. The same computation gives the characteristic set of the second-order operator, whose symbol is the norm itself.
 
@@ -476,7 +476,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 ## Summary
 
-**The derivative of this algebra is an element.** $\tilde\nabla_\Phi=\sum_\mu e_\mu\partial/\partial R_\mu$ takes no inverse, survives the zero divisors and acts by left multiplication. Its coefficients are the four coordinate derivatives, so the derivative and the field are two elements of one algebra, and the operator section that precedes this one is the chapter of which this is the application.
+**The derivative of this algebra is an element.** $\tilde\nabla_\Phi=\sum_{\imath} e_{\imath}\partial/\partial R_{\imath}$ takes no inverse, survives the zero divisors and acts by left multiplication. Its coefficients are the four coordinate derivatives, so the derivative and the field are two elements of one algebra, and the operator section that precedes this one is the chapter of which this is the application.
 
 **Its square is the d'Alembertian, and the square splits by sector.** $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is the Laplacian on the quaternion subspace, minus the Laplacian on the anti-quaternion subspace, and the wave operator of inertias $(1,3)$ and $(3,1)$ on the two Hermitian sectors. The restriction of $\Box_\Phi$ to a remarkable subspace is the operator of that subspace's norm, so the type of the equation is the inertia of the norm and ellipticity is the absence of zero divisors.
 
@@ -499,15 +499,15 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 | object | notation | content |
 | --- | --- | --- |
 | the algebra | $\mathbb{B}$ | $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, units $e_t,\vec e_x,\vec e_y,\vec e_z$ |
-| the variable | $\tilde R$ | $\sum_\mu R_\mu e_\mu$, with $R_\mu=r_\mu+ir'_\mu$ |
+| the variable | $\tilde R$ | $\sum_{\imath} R_{\imath} e_{\imath}$, with $R_{\imath}=r_{\imath}+ir'_{\imath}$ |
 | the field | $\tilde\Xi$ | a biquaternion-valued function of $\tilde R$ |
-| the gradient | $\tilde\nabla_\Phi$ | $\sum_\mu e_\mu\partial/\partial R_\mu$ |
-| the conjugate gradient | $(\tilde\nabla_\Phi)^{\natural}$ | $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$, $\varepsilon=(1,-1,-1,-1)$ |
+| the gradient | $\tilde\nabla_\Phi$ | $\sum_{\imath} e_{\imath}\partial/\partial R_{\imath}$ |
+| the conjugate gradient | $(\tilde\nabla_\Phi)^{\natural}$ | $\sum_{\imath}\varepsilon_{\imath} e_{\imath}\partial/\partial R_{\imath}$, $\varepsilon=(1,-1,-1,-1)$ |
 | the d'Alembertian | $\Box_\Phi$ | $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_\Phi$ |
 | the spatial Laplacian | $\Delta_\Phi$ | $\sum_\eta\partial^2/\partial R_\eta^2$ |
-| the Euclidean Laplacian | $\Box_\Phi$ | $\sum_\mu\partial^2/\partial q_\mu^2$ on $\mathbb{B}_{H}$ |
+| the Euclidean Laplacian | $\Box_\Phi$ | $\sum_{\imath}\partial^2/\partial q_{\imath}^2$ on $\mathbb{B}_{H}$ |
 | the norm of an element | $N=\langle\tilde Q\rangle_{\natural}$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
-| the symbol | $S(\xi)$ | $\sum_\mu\xi_\mu\mathsf M_2(e_\mu)$, with $\det S=N(\xi)$ |
+| the symbol | $S(\xi)$ | $\sum_{\imath}\xi_{\imath}\mathsf M_2(e_{\imath})$, with $\det S=N(\xi)$ |
 | the regular field | $\tilde\nabla_\Phi\tilde\Xi=0$ | the free field equation |
 | the right-regular field | $\tilde\Xi\tilde\nabla_\Phi=0$ | the same system with $+\operatorname{rot}$ |
 | the two-sided derivative | $dF=L\,dZ\,R$ | the semi-derivatives $L$ and $R$, defined up to a central scalar |

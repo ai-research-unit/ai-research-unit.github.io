@@ -55,7 +55,7 @@ $$
 becomes, with $Q_t=i q'_t$,
 
 $$
-\boxed{\;\Box_\Phi = \sum_\mu\partial^2/\partial R_\mu^2\;},
+\boxed{\;\Box_\Phi = \sum_{\imath}\partial^2/\partial R_{\imath}^2\;},
 $$
 
 which is the ordinary Euclidean Laplacian in four dimensions. Maxwell's equations and the wave equation take their simplest possible form.
@@ -66,7 +66,7 @@ which is the ordinary Euclidean Laplacian in four dimensions. Maxwell's equation
 
 The switch away from $i r'_t$ happened for good technical reasons, and it is worth being precise about them before asking whether the insight survives.
 
-**1. Curved spacetime.** In general relativity, the metric $g_{\mu\nu}$ is a dynamical field. There is no global coordinate transformation that makes it Euclidean in the way $Q_t=i q'_t$ does for flat spacetime. The $i r'_t$ convention is tied to the existence of a global inertial frame.
+**1. Curved spacetime.** In general relativity, the metric $g_{\imath\jmath}$ is a dynamical field. There is no global coordinate transformation that makes it Euclidean in the way $Q_t=i q'_t$ does for flat spacetime. The $i r'_t$ convention is tied to the existence of a global inertial frame.
 
 **2. Quantum field theory.** The Wick rotation $r'_t \to -i\tau$ connects Lorentzian QFT to Euclidean statistical mechanics. In the modern formulation, this is understood as a deformation of the metric, not a change of coordinates. Writing $i r'_t$ makes the rotation look like a coordinate change, which obscures the fact that it is really a change in the causal structure.
 
@@ -109,7 +109,7 @@ $$
 with complex coefficients
 
 $$
-R_\mu = r_\mu + i\,r'_\mu, \qquad r_\mu, r'_\mu \in \mathbb{R}.
+R_{\imath} = r_{\imath} + i\,r'_{\imath}, \qquad r_{\imath}, r'_{\imath} \in \mathbb{R}.
 $$
 
 The material sector is described by the real coordinates $r_\eta$ for $\eta = x, y, z$ — the spatial parameters $r_x, r_y, r_z$ — together with the imaginary time part $r'_t$. The informational sector — the sector whose elements carry the operator algebra of quantum physics — is described by the imaginary coordinates $h'_\eta$ for $\eta = x, y, z$ — the spatial parameters $h'_{x}, h'_{y}, h'_{z}$ — together with the real time part $h_t$. The time coefficient carries the $i r'_t$ structure explicitly, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $i r'_t$ form is recovered.
@@ -128,7 +128,7 @@ $$
 
 which differs from $c_0$. If the complex structure is determined by the local electromagnetic properties, then the correct time coefficient is $r'_t = r'_t$, not $r'_t$. In vacuum, $c = c_0$ and the two coincide. In a medium, they differ.
 
-This is the local version of the $i r'_t$ convention. It makes the complex structure a **field**, varying from point to point, in the same way that the metric $g_{\mu\nu}(x)$ varies in general relativity. The $i r'_t$ convention becomes the vacuum limit of a more general local structure, just as special relativity is the local limit of general relativity.
+This is the local version of the $i r'_t$ convention. It makes the complex structure a **field**, varying from point to point, in the same way that the metric $g_{\imath\jmath}(x)$ varies in general relativity. The $i r'_t$ convention becomes the vacuum limit of a more general local structure, just as special relativity is the local limit of general relativity.
 
 The d'Alembertian argument supports this interpretation. In a medium with speed of light $c$, the wave operator is
 

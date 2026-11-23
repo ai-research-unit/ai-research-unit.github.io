@@ -26,7 +26,7 @@ The **non-quantum limit** is the second statement. When a sum over trajectories 
 
 ## Conventions
 
-**The algebra.** $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\eta^2=-e_t$ and $\vec e_\mu\vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (imaginary scalar, real vector) is the material sector, the Hermitian subspace $\mathbb{B}_{\Psi}$ (real scalar, imaginary vector) is the informational sector, and $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$. The real-quaternion subspace is $\mathbb{B}_{H}$.
+**The algebra.** $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\eta^2=-e_t$ and $\vec e_{\imath}\vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (imaginary scalar, real vector) is the material sector, the Hermitian subspace $\mathbb{B}_{\Psi}$ (real scalar, imaginary vector) is the informational sector, and $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$. The real-quaternion subspace is $\mathbb{B}_{H}$.
 
 **The configuration and its conjugates.** The configuration is a real quaternion $\tilde q\in\mathbb{B}_{H}$, with the physical three-space as its pure-vector part and $r'_t$ the time of the read list. Its conjugate momentum is
 
@@ -34,7 +34,7 @@ $$
 \tilde p=\frac{\partial \mathrm{Lag}}{\partial\left(d\tilde q/dt'\right)},
 $$
 
-the phase-space biquaternion is $\tilde Q_3=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\tilde q_3^{\natural}\tilde q_4)=\sum_\mu q_{3\mu}q_{4\mu}$. The quaternion gradient of a central-valued function is $\partial \mathrm{Lag}/\partial\tilde q=\sum_\mu e_\mu\,\partial \mathrm{Lag}/\partial q_\mu$.
+the phase-space biquaternion is $\tilde Q_3=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\tilde q_3^{\natural}\tilde q_4)=\sum_{\imath} q_{3\imath}q_{4\imath}$. The quaternion gradient of a central-valued function is $\partial \mathrm{Lag}/\partial\tilde q=\sum_{\imath} e_{\imath}\,\partial \mathrm{Lag}/\partial q_{\imath}$.
 
 **The companion articles.** The pieces are supplied as follows.
 
@@ -133,29 +133,29 @@ $$
 \tilde q=q_t\,e_t+q_x\,\vec e_x+q_y\,\vec e_y+q_z\,\vec e_z\in\mathbb{B}_{H} ,
 $$
 
-with real components $q_\mu$. The physical three-space is the pure real part $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$, and the central coordinate $q_te_t\in\mathbb{B}_{C}\cap\mathbb{B}_{H}$ is a fourth, scalar degree of freedom. A system with three degrees of freedom is the special case $q_t=0$; the pure-vector configuration is the one that carries the spatial interpretation.
+with real components $q_{\imath}$. The physical three-space is the pure real part $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$, and the central coordinate $q_te_t\in\mathbb{B}_{C}\cap\mathbb{B}_{H}$ is a fourth, scalar degree of freedom. A system with three degrees of freedom is the special case $q_t=0$; the pure-vector configuration is the one that carries the spatial interpretation.
 
 For a central-valued function $F(\tilde q)$ — a function taking values in $\mathbb{B}_{C}$ — define the **quaternion gradient** componentwise,
 
 $$
-\partial F/\partial\tilde q=\sum_{\mu\in\{t,x,y,z\}}e_\mu\,\frac{\partial F}{\partial q_\mu}.
+\partial F/\partial\tilde q=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\,\frac{\partial F}{\partial q_{\imath}}.
 $$
 
 Because $F$ is central, this gradient is unambiguous: the quaternion product does not enter the definition, and the left and right derivatives of a central-valued function of real quaternion variables agree. The pairing that makes it a derivative is the scalar pairing,
 
 $$
 dF=\mathrm{Sc}\!\left((\partial F/\partial\tilde q)^{\natural}\,d\tilde q\right)
-=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial F}{\partial q_\mu}\,dq_\mu ,
+=\sum_{\imath\in\{t,x,y,z\}}\frac{\partial F}{\partial q_{\imath}}\,dq_{\imath} ,
 $$
 
-which uses $\mathrm{Sc}(e_\mu^{\natural}e_\nu)=\delta_{\mu\nu}$. This is the statement, in the algebra, that the natural scalar product on the real-quaternion subspace is the scalar part of a quaternion product.
+which uses $\mathrm{Sc}(e_{\imath}^{\natural}e_{\jmath})=\delta_{\imath\jmath}$. This is the statement, in the algebra, that the natural scalar product on the real-quaternion subspace is the scalar part of a quaternion product.
 
 ### The Kinetic Energy Is the Biquaternion Norm
 
 Let $\tilde q(r'_t)$ be a trajectory and $d\tilde q/dt'$ its velocity. The **kinetic energy** of a particle of mass $m$ is
 
 $$
-\boxed{\;T=\tfrac{1}{2}m\,\langle\,d\tilde q/dt'\rangle_{\natural}=\tfrac{1}{2}m\,d\tilde q/dt'\,(d\tilde q/dt')^{\natural}=\tfrac{1}{2}m\sum_{\mu\in\{t,x,y,z\}}\left(dq_{\mu}/dt'\right)^{2}\;}.
+\boxed{\;T=\tfrac{1}{2}m\,\langle\,d\tilde q/dt'\rangle_{\natural}=\tfrac{1}{2}m\,d\tilde q/dt'\,(d\tilde q/dt')^{\natural}=\tfrac{1}{2}m\sum_{\imath\in\{t,x,y,z\}}\left(dq_{\imath}/dt'\right)^{2}\;}.
 $$
 
 For a pure-vector configuration the central term is absent and $T=\tfrac{1}{2}m|d\vec q/dt'|^2$, the familiar kinetic energy. The kinetic energy is therefore the **biquaternion norm** of the velocity, and this is the first structural fact of the biquaternion formulation of mechanics: the algebra's own quadratic form is the free kinetic energy. The biquaternion norm on $\mathbb{B}_{H}$ is positive definite, so $T\ge0$ with equality only for $d\tilde q/dt'=0$; no sign choice has to be made.
@@ -192,11 +192,11 @@ The endpoint term vanishes because $\delta\tilde q(t'_1)=\delta\tilde q(t'_2)=0$
 $$
 \boxed{\;\frac{d}{dt'}\frac{\partial \mathrm{Lag}}{\partial\left(d\tilde q/dt'\right)}-\frac{\partial \mathrm{Lag}}{\partial\tilde q}=0\;}
 \qquad\text{with}\qquad
-\frac{\partial \mathrm{Lag}}{\partial\left(d\tilde q/dt'\right)}=\sum_\mu e_\mu\frac{\partial \mathrm{Lag}}{\partial\left(dq_{\mu}/dt'\right)},\quad
-\frac{\partial \mathrm{Lag}}{\partial\tilde q}=\sum_\mu e_\mu\frac{\partial \mathrm{Lag}}{\partial q_\mu}.
+\frac{\partial \mathrm{Lag}}{\partial\left(d\tilde q/dt'\right)}=\sum_{\imath} e_{\imath}\frac{\partial \mathrm{Lag}}{\partial\left(dq_{\imath}/dt'\right)},\quad
+\frac{\partial \mathrm{Lag}}{\partial\tilde q}=\sum_{\imath} e_{\imath}\frac{\partial \mathrm{Lag}}{\partial q_{\imath}}.
 $$
 
-This single quaternion equation is the four real Euler–Lagrange equations, one for each component $q_\mu$.
+This single quaternion equation is the four real Euler–Lagrange equations, one for each component $q_{\imath}$.
 
 **Free particle.** For $L_0=\tfrac{1}{2}m\langle d\tilde q/dt'\rangle_{\natural}$ the gradient is $\partial L_0/\partial\left(d\tilde q/dt'\right)=m\,d\tilde q/dt'$ and $\partial L_0/\partial\tilde q=0$, so the equation is $md^2\tilde q/d{r'_{t}}^2=0$: straight-line motion at constant velocity, as it must be.
 
@@ -215,22 +215,22 @@ When $V$ is a function of the real-quaternion modulus $\langle\tilde q\rangle_{\
 The **conjugate momentum** is the real quaternion
 
 $$
-\tilde p=\frac{\partial \mathrm{Lag}}{\partial\left(d\tilde q/dt'\right)}=\sum_\mu e_\mu p_\mu,\qquad p_\mu=\frac{\partial \mathrm{Lag}}{\partial\left(dq_{\mu}/dt'\right)}.
+\tilde p=\frac{\partial \mathrm{Lag}}{\partial\left(d\tilde q/dt'\right)}=\sum_{\imath} e_{\imath} p_{\imath},\qquad p_{\imath}=\frac{\partial \mathrm{Lag}}{\partial\left(dq_{\imath}/dt'\right)}.
 $$
 
 For the free particle $\tilde p=m\,d\tilde q/dt'$. The **Hamiltonian** is the Legendre transform
 
 $$
 H(\tilde q,\tilde p)=\mathrm{Sc}\!\left(\tilde p^{\natural}\,d\tilde q/dt'\right)-\mathrm{Lag}(\tilde q,d\tilde q/dt')
-=\sum_\mu p_\mu\,dq_{\mu}/dt'-\mathrm{Lag} ,
+=\sum_{\imath} p_{\imath}\,dq_{\imath}/dt'-\mathrm{Lag} ,
 $$
 
-with $d\tilde q/dt'$ eliminated in favour of $\tilde p$ using the inverse of $\tilde p=\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)$. The scalar pairing $\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')=\sum_\mu p_\mu\,dq_{\mu}/dt'$ is the quaternion form of the contraction $p_i\,dq_{i}/dt'$; the conjugate is required, because $\mathrm{Sc}(\tilde pd\tilde q/dt')$ reverses the sign of the vector-part contribution.
+with $d\tilde q/dt'$ eliminated in favour of $\tilde p$ using the inverse of $\tilde p=\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)$. The scalar pairing $\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')=\sum_{\imath} p_{\imath}\,dq_{\imath}/dt'$ is the quaternion form of the contraction $p_i\,dq_{i}/dt'$; the conjugate is required, because $\mathrm{Sc}(\tilde pd\tilde q/dt')$ reverses the sign of the vector-part contribution.
 
 **Free particle.** With $\tilde p=m\,d\tilde q/dt'$ one has $\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')=m\langle d\tilde q/dt'\rangle_{\natural}=2T$, and
 
 $$
-H_0=\frac{\langle\tilde p\rangle_{\natural}h/(mc) c}{4\pi  \frac{h}{2\pi}}=\frac{\tilde p\,\tilde p^{\natural}h/(mc) c}{4\pi  \frac{h}{2\pi}}=\frac{h/(mc) c}{4\pi  \frac{h}{2\pi}}\sum_{\mu\in\{t,x,y,z\}}p_\mu^2 ,
+H_0=\frac{\langle\tilde p\rangle_{\natural}h/(mc) c}{4\pi  \frac{h}{2\pi}}=\frac{\tilde p\,\tilde p^{\natural}h/(mc) c}{4\pi  \frac{h}{2\pi}}=\frac{h/(mc) c}{4\pi  \frac{h}{2\pi}}\sum_{\imath\in\{t,x,y,z\}}p_{\imath}^2 ,
 $$
 
 Here $\frac{h}{2\pi mc}$ is the mass length.
@@ -245,15 +245,15 @@ $$
 
 The Hamiltonian is a sum of two biquaternion norms with positive coefficients, one in the momentum and one in the coordinate. Its level sets $H=E$ are ellipsoids in the eight-dimensional real phase space.
 
-**When is the Hamiltonian the energy?** The identification of $H$ with $T+V$ is not automatic, and the condition is one this transcription satisfies by construction. If the kinetic energy is a **homogeneous function of degree two** in the generalized velocities, $T(\lambda\,dq/dt')=\lambda^2T(dq/dt')$, then Euler's theorem on homogeneous functions gives $dq_{\mu}/dt'\partial T/\partial\left(dq_{\mu}/dt'\right)=2T$. When the potential depends on the coordinates alone, $p_\mu=\partial T/\partial\left(dq_{\mu}/dt'\right)$, and therefore
+**When is the Hamiltonian the energy?** The identification of $H$ with $T+V$ is not automatic, and the condition is one this transcription satisfies by construction. If the kinetic energy is a **homogeneous function of degree two** in the generalized velocities, $T(\lambda\,dq/dt')=\lambda^2T(dq/dt')$, then Euler's theorem on homogeneous functions gives $dq_{\imath}/dt'\partial T/\partial\left(dq_{\imath}/dt'\right)=2T$. When the potential depends on the coordinates alone, $p_{\imath}=\partial T/\partial\left(dq_{\imath}/dt'\right)$, and therefore
 
 $$
-\mathrm{Sc}\!\left(\tilde p^{\natural}\,d\tilde q/dt'\right)=p_\mu\,dq_{\mu}/dt'=2T,\qquad H=2T-(T-V)=T+V ,
+\mathrm{Sc}\!\left(\tilde p^{\natural}\,d\tilde q/dt'\right)=p_{\imath}\,dq_{\imath}/dt'=2T,\qquad H=2T-(T-V)=T+V ,
 $$
 
 so $H$ is the total energy, and it is conserved when $\mathrm{Lag}$ has no explicit time dependence. For the systems of this article the hypothesis is not an assumption but a property of the kinetic term: $T=\tfrac12 m\langle d\tilde q/dt'\rangle_{\natural}$ is a quadratic form in the velocities and hence homogeneous of degree two. The condition can fail — a relativistic kinetic energy is not homogeneous of degree two — and where it fails $H$ remains the Legendre transform of $\mathrm{Lag}$ but is no longer the energy.
 
-Explicit time dependence, by contrast, is preserved by the transform. Differentiating $H=p_\mu\,dq_{\mu}/dt'-\mathrm{Lag}$ with respect to $r'_t$ at fixed coordinates and momenta, the terms in $\partial\left(dq_{\mu}/dt'\right)/\partial r'_t$ cancel against $p_\mu=\partial \mathrm{Lag}/\partial\left(dq_{\mu}/dt'\right)$, leaving
+Explicit time dependence, by contrast, is preserved by the transform. Differentiating $H=p_{\imath}\,dq_{\imath}/dt'-\mathrm{Lag}$ with respect to $r'_t$ at fixed coordinates and momenta, the terms in $\partial\left(dq_{\imath}/dt'\right)/\partial r'_t$ cancel against $p_{\imath}=\partial \mathrm{Lag}/\partial\left(dq_{\imath}/dt'\right)$, leaving
 
 $$
 \frac{\partial H}{\partial r'_t}=-\frac{\partial \mathrm{Lag}}{\partial r'_t}.
@@ -270,11 +270,11 @@ $$
 \,d\tilde q/dt'=\frac{\partial H}{\partial\tilde p},
 $$
 
-provided the Hessian $\partial^2\mathrm{Lag}/\partial\left(dq_{\mu}/dt'\right)\partial\left(dq_{\nu}/dt'\right)$ is non-singular, which for $\mathrm{Lag}=\tfrac{1}{2}m\langle d\tilde q/dt'\rangle_{\natural}-V$ it is: the Hessian is $m\delta_{\mu\nu}$.
+provided the Hessian $\partial^2\mathrm{Lag}/\partial\left(dq_{\imath}/dt'\right)\partial\left(dq_{\jmath}/dt'\right)$ is non-singular, which for $\mathrm{Lag}=\tfrac{1}{2}m\langle d\tilde q/dt'\rangle_{\natural}-V$ it is: the Hessian is $m\delta_{\imath\jmath}$.
 
 ### Hamilton's Equations
 
-Differentiating $H(\tilde q,\tilde p)=\sum_\mu p_\mu\,dq_{\mu}/dt'-\mathrm{Lag}(\tilde q,d\tilde q/dt')$ and using the definition of $\tilde p$ gives **Hamilton's equations** in quaternion form,
+Differentiating $H(\tilde q,\tilde p)=\sum_{\imath} p_{\imath}\,dq_{\imath}/dt'-\mathrm{Lag}(\tilde q,d\tilde q/dt')$ and using the definition of $\tilde p$ gives **Hamilton's equations** in quaternion form,
 
 $$
 \boxed{\;d\tilde q/dt'=\frac{\partial H}{\partial\tilde p},\qquad \,d\tilde p/dt'=-\frac{\partial H}{\partial\tilde q}\;}.
@@ -356,7 +356,7 @@ $$
 \tilde\nabla_\Phi S = i\Pi ,
 $$
 
-that is, the four-Hamiltonian derives from a single invariant scalar $S$, the action. In the corpus's vocabulary the content of the postulate is that $\Pi$ is, up to the central factor $-i$, a gradient: the components satisfy $\partial/\partial R_\mu\Pi_\nu=\partial/\partial R_\nu\Pi_\mu$, which is the statement that the one-form $\Pi$ is **closed** and therefore locally exact. The source writes the same condition as $\tilde\nabla_\Phi\wedge\Pi=0$, and reads it as $d\Pi$ being a total differential, equivalently
+that is, the four-Hamiltonian derives from a single invariant scalar $S$, the action. In the corpus's vocabulary the content of the postulate is that $\Pi$ is, up to the central factor $-i$, a gradient: the components satisfy $\partial/\partial R_{\imath}\Pi_{\jmath}=\partial/\partial R_{\jmath}\Pi_{\imath}$, which is the statement that the one-form $\Pi$ is **closed** and therefore locally exact. The source writes the same condition as $\tilde\nabla_\Phi\wedge\Pi=0$, and reads it as $d\Pi$ being a total differential, equivalently
 
 $$
 \oint dX\circ\Pi = 0 ,
@@ -375,11 +375,11 @@ which for two fixed endpoints is Hamilton's principle, $\delta\int_{X_1}^{X_2} d
 For central-valued observables $f(\tilde q,\tilde p)$, $g(\tilde q,\tilde p)$, the Poisson bracket is the scalar part of a quaternion expression. Define the gradients
 
 $$
-\nabla_{\tilde q}f=\sum_\mu e_\mu\frac{\partial f}{\partial q_\mu},\qquad
-\nabla_{\tilde p}f=\sum_\mu e_\mu\frac{\partial f}{\partial p_\mu}.
+\nabla_{\tilde q}f=\sum_{\imath} e_{\imath}\frac{\partial f}{\partial q_{\imath}},\qquad
+\nabla_{\tilde p}f=\sum_{\imath} e_{\imath}\frac{\partial f}{\partial p_{\imath}}.
 $$
 
-Using $\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=\sum_\mu q_{1\mu} q_{2\mu}$ for real quaternions, the bracket is
+Using $\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=\sum_{\imath} q_{1\imath} q_{2\imath}$ for real quaternions, the bracket is
 
 $$
 \boxed{\;\{f,g\}=\mathrm{Sc}\!\left((\nabla_{\tilde q}f)^{\natural}\,\nabla_{\tilde p}g\right)
@@ -392,10 +392,10 @@ Because the bracket is built from scalar parts of quaternion products, it is aut
 
 ### Canonical Brackets
 
-For the coordinate and momentum functions $q_\mu$, $p_\nu$ one has $\nabla_{\tilde q}q_\mu=e_\mu$, $\nabla_{\tilde q}p_\nu=0$, and so
+For the coordinate and momentum functions $q_{\imath}$, $p_{\jmath}$ one has $\nabla_{\tilde q}q_{\imath}=e_{\imath}$, $\nabla_{\tilde q}p_{\jmath}=0$, and so
 
 $$
-\{q_\mu,q_\nu\}=0,\qquad \{p_\mu,p_\nu\}=0,\qquad \{q_\mu,p_\nu\}=\delta_{\mu\nu}.
+\{q_{\imath},q_{\jmath}\}=0,\qquad \{p_{\imath},p_{\jmath}\}=0,\qquad \{q_{\imath},p_{\jmath}\}=\delta_{\imath\jmath}.
 $$
 
 These are the standard canonical brackets, written with the algebra's basis rather than with an index list. Hamilton's equations take the bracket form
@@ -404,14 +404,14 @@ $$
 df/dt'=\{f,H\},
 $$
 
-which for $f=q_\mu,p_\nu$ reproduces $dq_{\mu}/dt'=\partial H/\partial p_\mu$, $dp_{\nu}/dt'=-\partial H/\partial q_\nu$.
+which for $f=q_{\imath},p_{\jmath}$ reproduces $dq_{\imath}/dt'=\partial H/\partial p_{\imath}$, $dp_{\jmath}/dt'=-\partial H/\partial q_{\jmath}$.
 
 ### Canonical Transformations
 
 A change of phase-space variables $(\tilde q,\tilde p)\to(\tilde Q,\tilde P_{\Phi})$ that preserves the form of Hamilton's equations is a **canonical transformation**, and the test is a statement about the bracket alone:
 
 $$
-\{Q_\mu,Q_\nu\}=0,\qquad \{P_\mu,P_\nu\}=0,\qquad \{Q_\mu,P_\nu\}=\delta_{\mu\nu},
+\{Q_{\imath},Q_{\jmath}\}=0,\qquad \{P_{\imath},P_{\jmath}\}=0,\qquad \{Q_{\imath},P_{\jmath}\}=\delta_{\imath\jmath},
 $$
 
 evaluated with the original bracket. A transformation satisfying these is canonical; one that fails any of them is not. The criterion is worth recording for a reason specific to this article: it is **scalar**. It never asks what the discarded vector part of the quaternion product does. That is the sharpest support for the claim made below in *What the Bracket Is Not*: the classical structure of the theory, including which changes of variable are permitted, lives entirely in the scalar projection of the quaternion product, while the vector part carries the rotations. Such transformations have generating functions, and the freedom in the Hamiltonian noted in the Standard Formulation is of the same kind: the Hamiltonian is fixed only up to the partial time derivative of an arbitrary function of coordinates, momenta and time.
@@ -682,12 +682,12 @@ is the energy of a curve in the positive-definite metric that the biquaternion n
 The geodesic interpretation has a Hamiltonian form, and it is the same statement. On the cotangent bundle the biquaternion-norm metric induces the Hamiltonian
 
 $$
-H(\tilde q,\tilde p)=\frac{1}{2\,m}\sum_\mu  p_\mu p_\mu=\frac{\langle\tilde p\rangle_{\natural} c}{2\,m\,c},
+H(\tilde q,\tilde p)=\frac{1}{2\,m}\sum_{\imath}  p_{\imath} p_{\imath}=\frac{\langle\tilde p\rangle_{\natural} c}{2\,m\,c},
 $$
 
 Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
-the two forms agreeing because the biquaternion-norm metric is Euclidean in the basis $e_\mu$, so that the inverse metric is the metric itself. Hamilton's equations for it are $d\tilde q/dt'=\partial H/\partial\tilde p=\tilde p/m$ and $d\tilde p/dt'=0$, whose solutions are the straight lines found above: the geodesic flow of the biquaternion norm **is** a Hamiltonian flow, its Hamiltonian is the Legendre transform of the free action, and $H=\langle\tilde p\rangle_{\natural}/2m$ is conserved along it. This is the flat case of the general statement that a geodesic flow is the Hamiltonian flow of the quadratic form built from the inverse metric. It is the abelian counterpart of the correspondence the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes on the coadjoint orbit: the free particle is the case in which the carrier is abelian and the metric flat.
+the two forms agreeing because the biquaternion-norm metric is Euclidean in the basis $e_{\imath}$, so that the inverse metric is the metric itself. Hamilton's equations for it are $d\tilde q/dt'=\partial H/\partial\tilde p=\tilde p/m$ and $d\tilde p/dt'=0$, whose solutions are the straight lines found above: the geodesic flow of the biquaternion norm **is** a Hamiltonian flow, its Hamiltonian is the Legendre transform of the free action, and $H=\langle\tilde p\rangle_{\natural}/2m$ is conserved along it. This is the flat case of the general statement that a geodesic flow is the Hamiltonian flow of the quadratic form built from the inverse metric. It is the abelian counterpart of the correspondence the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes on the coadjoint orbit: the free particle is the case in which the carrier is abelian and the metric flat.
 
 The biquaternion norm is positive definite on $\mathbb{B}_{H}$, so its metric is Riemannian and there are no null directions. The **biquaternion-norm cone** $\langle\tilde{Q}\rangle_{\natural}=0$ is trivial on the real-quaternion sector; it becomes nontrivial on the material sector $\mathbb{B}_{\Phi}$ of the complexified algebra, where the four-vector $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ has the indefinite norm $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose zero set is the light cone. The two statements are consistent: the indefinite norm appears when the central coordinate is imaginary, $q_t=i r'_t$, which is exactly the passage from a real quaternion to a material-sector four-vector. The cone and its role in the symplectic geometry are the subject of the next article.
 
@@ -799,7 +799,7 @@ $$
 In the coordinates of the algebra,
 
 $$
-\frac{\partial W}{\partial\tilde q}=\sum_\mu e_\mu\frac{\partial W}{\partial q_\mu},
+\frac{\partial W}{\partial\tilde q}=\sum_{\imath} e_{\imath}\frac{\partial W}{\partial q_{\imath}},
 $$
 
 so the Hamilton–Jacobi equation is a single scalar equation for the central-valued function $W$.
@@ -823,7 +823,7 @@ The Lagrangian and Hamiltonian formulations, and the action principle they serve
 - The Legendre transform may be applied to a subset of the coordinates. The partial transform is the **Routhian**, which puts the transformed coordinates — conventionally the cyclic ones, whose momenta are conserved — in Hamiltonian form and the rest in Lagrangian form; for a central potential it produces the centrifugal term as a transformed potential.
 - In the Hamiltonian description coordinates, velocities and momenta are **mutually independent** variables; the relation $\tilde p=\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)$ is used only to eliminate the velocity. This is what makes the transform a change of variables and $\tilde Q_3=\tilde q+i\tilde p$ a coordinate.
 - $H=T+V$ is not automatic. It requires $T$ homogeneous of degree two in the velocities, which $T=\tfrac12m\langle d\tilde q/dt'\rangle_{\natural}$ satisfies by construction; with $\mathrm{Lag}$ time-independent, $H$ is then the conserved energy. Explicit time dependence is preserved by the transform, $\partial H/\partial r'_t=-\partial \mathrm{Lag}/\partial r'_t$.
-- A change of phase-space variables is **canonical** exactly when it preserves the brackets $\{Q_\mu,P_\nu\}=\delta_{\mu\nu}$. The criterion is scalar, so the permitted changes of variable live in the scalar projection of the quaternion product alone.
+- A change of phase-space variables is **canonical** exactly when it preserves the brackets $\{Q_{\imath},P_{\jmath}\}=\delta_{\imath\jmath}$. The criterion is scalar, so the permitted changes of variable live in the scalar projection of the quaternion product alone.
 
 The formulation is a transcription, exact for configurations that fit in a real quaternion. It introduces no commutator and no $\frac{h}{2\pi}$; the canonical Heisenberg structure is absent from the finite-dimensional algebra, and the classical bracket that the algebra does carry is the scalar part of a quaternion product.
 
@@ -860,8 +860,8 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $R=\mathrm{Sc}(p^{\natural}\,dq/dt')-\mathrm{Lag}$ (over the transformed block) | Routhian: the partial Legendre transform, shown in the general case, of which this article uses $s=n$ |
 | $T(\lambda\,d\tilde q/dt')=\lambda^2T(d\tilde q/dt')$ | Homogeneity of the kinetic energy; gives $\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')=2T$ and $H=T+V$ |
 | $\partial H/\partial r'_t=-\partial \mathrm{Lag}/\partial r'_t$ | Explicit time dependence is preserved with reversed sign |
-| $\{Q_\mu,P_\nu\}=\delta_{\mu\nu}$ | Canonical-transformation criterion (scalar) |
-| $\partial \mathrm{Lag}/\partial\tilde q=\sum_\mu e_\mu\partial \mathrm{Lag}/\partial q_\mu$ | Quaternion gradient of a central-valued function |
+| $\{Q_{\imath},P_{\jmath}\}=\delta_{\imath\jmath}$ | Canonical-transformation criterion (scalar) |
+| $\partial \mathrm{Lag}/\partial\tilde q=\sum_{\imath} e_{\imath}\partial \mathrm{Lag}/\partial q_{\imath}$ | Quaternion gradient of a central-valued function |
 | $\tilde p=\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)$ | Conjugate momentum (real quaternion) |
 | $H=\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-\mathrm{Lag}$ | Hamiltonian (Legendre transform) |
 | $\tilde Q_3=\tilde q+i\tilde p$ | Phase-space biquaternion |
@@ -869,7 +869,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $\{f,g\}$ | Poisson bracket |
 | $\vec L=\vec q\times\vec p$ | Angular momentum |
 | $\tilde u\in\mathbb{B}_{H}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Rotation rotor |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $S[\tilde q]=\int \mathrm{Lag}\,dt'$ | Action (central-valued); in Herglotz's form it solves $dS/dt'=\mathrm{Lag}$ and is state-dependent |
 | $\omega_0$, $\gamma$ | Oscillator frequency and damping coefficient |
 | $\mathcal{L}$, $u$, $\rho$, $\mathcal{T}$ | Lagrangian density; string displacement, density and tension of the continuum example |

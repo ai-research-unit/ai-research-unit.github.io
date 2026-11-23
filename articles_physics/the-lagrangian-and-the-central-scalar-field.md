@@ -21,7 +21,7 @@ Three things are established.
 *First, the action.* With $\xi$ the single real function and $\rho$ a prescribed source,
 
 $$
-S[\xi]=\int d^4r\;\Bigl[-\tfrac12\sum_\mu\frac{\partial\xi}{\partial R_\mu}\frac{\partial\xi}{\partial R_\mu}-\tfrac12k_m^2\xi^2+g\rho\,\xi\Bigr],
+S[\xi]=\int d^4r\;\Bigl[-\tfrac12\sum_{\imath}\frac{\partial\xi}{\partial R_{\imath}}\frac{\partial\xi}{\partial R_{\imath}}-\tfrac12k_m^2\xi^2+g\rho\,\xi\Bigr],
 $$
 
 the Euler–Lagrange equation is the parent's equation. The action is the standard real scalar action, and the corpus's contribution is the statement that the operator in it is the biquaternion norm of the gradient.
@@ -62,7 +62,7 @@ The source term. $g\rho\,\mathrm{Sc}(\tilde\Xi)=g\rho\,\xi$ couples the field to
 
 What the action does not contain. No cubic or quartic term in $\xi$ built from the algebra, because there is no invariant of the algebra of that degree in a central element; no derivative coupling, because there is no gauge field in this sector; and no spin term, because a central scalar carries no vector index. Each absence is a statement about the algebra and not an omission.
 
-**The pairing. The pairing is the scalar part of the element product, and in the centre it is ordinary multiplication.** $\mathrm{Sc}(\tilde\Xi^{\natural}\tilde\Xi)=\xi^2$ and $\mathrm{Sc}((\tilde\nabla_\Phi\tilde\Xi)^{\natural}\tilde\nabla_\Phi\tilde\Xi)=\sum_\mu(\partial_\mu\xi)^2$, both real. There is no imaginary part to cancel and no conjugation to choose, because a central element is its own conjugate up to sign in the imaginary centre.
+**The pairing. The pairing is the scalar part of the element product, and in the centre it is ordinary multiplication.** $\mathrm{Sc}(\tilde\Xi^{\natural}\tilde\Xi)=\xi^2$ and $\mathrm{Sc}((\tilde\nabla_\Phi\tilde\Xi)^{\natural}\tilde\nabla_\Phi\tilde\Xi)=\sum_{\imath}(\partial_{\imath}\xi)^2$, both real. There is no imaginary part to cancel and no conjugation to choose, because a central element is its own conjugate up to sign in the imaginary centre.
 
 Why the scalar case is the degenerate case of the family's reality question. Every other article in the family has to argue that a pairing is real and that the argument is not circular. Here the question does not arise: the field is real and the pairing is multiplication. The contrast is informative, because it isolates what the family's other reality arguments are doing.
 
@@ -123,7 +123,7 @@ What the structure predicts. That a real scalar's action needs no constraint, th
 Energy–momentum. Translation invariance gives
 
 $$
-T_{\mu\nu}=\frac{\partial\xi}{\partial R_\mu}\frac{\partial\xi}{\partial R_\nu}-g_{\mu\nu}\mathcal{L},
+T_{\imath\jmath}=\frac{\partial\xi}{\partial R_{\imath}}\frac{\partial\xi}{\partial R_{\jmath}}-g_{\imath\jmath}\mathcal{L},
 $$
 
 whose time–time component is the energy density $\tfrac12(\dot\xi^2+\sum_j(\partial_j\xi)^2+k_m^2\xi^2)-g\rho\xi$. The tensor is symmetric by construction, because the field is a single scalar and there is no spin part.
@@ -132,7 +132,7 @@ Why there is no vector current. A real field has no phase symmetry, so there is 
 
 Why there is no topological current. A single scalar with no winding has no topological charge. The Skyrme and gauge articles have one because their fields are group-valued; the central scalar is not.
 
-The trace. $\sum_\mu\epsilon_\mu T_{\mu\mu}=k_m^2\xi^2-g\rho\xi$ up to a total derivative, nonzero for a massive field. The classical trace is the mass's measure, and the quantum trace anomaly is the quantum field theory articles'.
+The trace. $\sum_{\imath}\epsilon_{\imath} T_{\imath\imath}=k_m^2\xi^2-g\rho\xi$ up to a total derivative, nonzero for a massive field. The classical trace is the mass's measure, and the quantum trace anomaly is the quantum field theory articles'.
 
 What there is not. **No second current, no central phase, no spin current.** The sector's current content is one tensor, and that is the minimum any relativistic field can have.
 
@@ -157,7 +157,7 @@ Is a $\xi^4$ term the algebra's or an addition? The corpus treats the quartic sc
 
 ## Summary
 
-The action. $S=\int d^4r\,[-\tfrac12\sum_\mu\partial_\mu\xi\partial_\mu\xi-\tfrac12k_m^2\xi^2+g\rho\xi]$, whose Euler–Lagrange equation is $(\Box_\Phi-k_m^2)\xi=-g\rho$. The operator is the biquaternion norm of the gradient and is central.
+The action. $S=\int d^4r\,[-\tfrac12\sum_{\imath}\partial_{\imath}\xi\partial_{\imath}\xi-\tfrac12k_m^2\xi^2+g\rho\xi]$, whose Euler–Lagrange equation is $(\Box_\Phi-k_m^2)\xi=-g\rho$. The operator is the biquaternion norm of the gradient and is central.
 
 The three findings. The action is unconstrained and the field has one degree of freedom. Centrality makes the operator act componentwise, which is why the four-component case is four decoupled scalars. The only current is the energy–momentum tensor, and the absence of a phase symmetry is the field's reality.
 
@@ -172,7 +172,7 @@ The boundary. The operator, the pairing and the componentwise reading are the al
 | $k_m$ | mass |
 | $g$ | source coupling |
 | $\rho$ | prescribed real source density |
-| $T_{\mu\nu}$ | energy–momentum tensor |
+| $T_{\imath\jmath}$ | energy–momentum tensor |
 
 ## Further Reading
 

@@ -21,7 +21,7 @@ $$
 with a lapse $N$ and a scale factor $a$, both functions of the time coordinate only. The four legs are elements of $\mathbb{B}_{\Phi}$, the first with a scale on the time axis and the three with a common scale on the space axes. Their Gram matrix is immediate from the form,
 
 $$
-g_{\mu\nu}=\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}
+g_{\imath\jmath}=\langle\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}
 =\mathrm{diag}\bigl(-N^{2},\,a^{2},\,a^{2},\,a^{2}\bigr),
 $$
 
@@ -65,7 +65,7 @@ With the frame in hand, the kinematic quantities of a cosmology are ordinary com
 The comoving congruence is the time leg, $u=\tilde E_{\Phi,0}$, normalised so that $u\cdot u=-1$ when $N=1$. Its expansion is
 
 $$
-\theta=\sum_{\mu}(g^{-1})_{\mu\mu}\,\nabla_{\mu}u_{\mu}
+\theta=\sum_{\imath}(g^{-1})_{\imath\imath}\,\nabla_{\imath}u_{\imath}
 =\frac{1}{N a^{3}}\,\partial_{t}\bigl(N a^{3}\bigr),
 $$
 

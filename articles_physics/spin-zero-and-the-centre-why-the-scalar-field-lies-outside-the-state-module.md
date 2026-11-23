@@ -62,11 +62,11 @@ A scalar field is the opposite. It has no axis, and no rotation may move it. The
 
 ### The Centralizer of the Rotations
 
-Consider a general element $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ and ask which elements are fixed by the **conjugation action** $\tilde{Q}\mapsto\tilde r\tilde{Q}\tilde r^{*}$ of every rotation. Equivalently, ask for which $\tilde{Q}$ the infinitesimal condition
+Consider a general element $\tilde{Q}=\sum_{\imath\in\{t,x,y,z\}}Q_{\imath} e_{\imath}$ and ask which elements are fixed by the **conjugation action** $\tilde{Q}\mapsto\tilde r\tilde{Q}\tilde r^{*}$ of every rotation. Equivalently, ask for which $\tilde{Q}$ the infinitesimal condition
 
 $$
-[\vec e_\nu,\tilde{Q}]=\vec e_\nu\tilde{Q}-\tilde{Q}\vec e_\nu=0,
-\qquad \nu\in\{x,y,z\},
+[\vec e_{\jmath},\tilde{Q}]=\vec e_{\jmath}\tilde{Q}-\tilde{Q}\vec e_{\jmath}=0,
+\qquad \jmath\in\{x,y,z\},
 $$
 
 holds. Evaluating the first of these with $\vec e_x^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and $\vec e_x\vec e_z=-\vec e_y$, one finds
@@ -79,7 +79,7 @@ so $[\vec e_x,\tilde{Q}]=0$ forces $Q_y=Q_z=0$. The condition $[\vec e_y,\tilde{
 
 $$
 \boxed{\;
-\{\tilde{Q}\in\mathbb{B}:[\vec e_\nu,\tilde{Q}]=0,\ \nu\in\{x,y,z\}\}
+\{\tilde{Q}\in\mathbb{B}:[\vec e_{\jmath},\tilde{Q}]=0,\ \jmath\in\{x,y,z\}\}
 =\mathbb{B}_{C}\;},
 $$
 
@@ -270,7 +270,7 @@ The distinction between the two routes is why the scalar field lies outside the 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The body writes no $\gamma$: the letter appears only in this closing dictionary.
 
@@ -292,13 +292,13 @@ $\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma$. The 
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
 A scalar field carries the trivial action of the Lorentz group: the transformation moves the argument and leaves the value alone. The carrier of states in the biquaternion framework is an element of $\mathbb{B}$, split into an L part and an R part by a label that takes two values; left multiplication keeps the label, and the L part is a carrier of the left action. The left action of the rotation generators $\tilde S_{\Psi,\eta}$ has Casimir $\frac{3\,h^{2}}{16\pi^{2}}e_t$ on every element, so every irreducible piece of the left action carries spin $\tfrac{1}{2}$. No nonzero state is rotation-invariant: the rotation by $-e_t$ negates it.
 
-The rotationally invariant subspace of largest dimension in $\mathbb{B}$ is the centre $\mathbb{B}_{C}$, obtained as the centralizer of the quaternion units: $[\vec e_\nu,\tilde{Q}]=0$ for $\nu\in\{x,y,z\}$ forces $\tilde{Q}=Q_te_t$. The centre is a subalgebra isomorphic to $\mathbb{C}$, it is not stable under left multiplication, and it meets the states only at zero. This gives three reasons why the spin-$0$ value escapes the carrier of states. No one-dimensional subspace is carried into itself by every left multiplication, so the trivial action has no carrier. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the centre. And the trivial action is not a part of either label: under the rotation subgroup it appears in the product of the two labels, while the Lorentz-scalar channels are the antisymmetric pairing of two states of one label and the mixed pairing of two states of opposite labels. A scalar is a product of two states, not a value of the state action.
+The rotationally invariant subspace of largest dimension in $\mathbb{B}$ is the centre $\mathbb{B}_{C}$, obtained as the centralizer of the quaternion units: $[\vec e_{\jmath},\tilde{Q}]=0$ for ${\jmath}\in\{x,y,z\}$ forces $\tilde{Q}=Q_te_t$. The centre is a subalgebra isomorphic to $\mathbb{C}$, it is not stable under left multiplication, and it meets the states only at zero. This gives three reasons why the spin-$0$ value escapes the carrier of states. No one-dimensional subspace is carried into itself by every left multiplication, so the trivial action has no carrier. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the centre. And the trivial action is not a part of either label: under the rotation subgroup it appears in the product of the two labels, while the Lorentz-scalar channels are the antisymmetric pairing of two states of one label and the mixed pairing of two states of opposite labels. A scalar is a product of two states, not a value of the state action.
 
 For the sector split, the centre meets each sector in one real direction: the real scalar direction $e_t$ lies in $\mathbb{B}_{\Psi}$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{B}_{\Phi}$. The sector decomposition of a complex scalar is therefore its decomposition into real and imaginary parts, which is the algebraic reason behind the companion article's finding that the second-order scalar structure does not organize itself by the sector split. Multiplication by $i$ exchanges the sectors and quarter-turns the scalar line; complex conjugation preserves each sector and reflects the scalar line, and is the operation that produces the conjugate solution. The scalar field itself is $\Xi=\xi_{\mathrm{scl}} e_t$ with $\xi_{\mathrm{scl}}$ complex, obeying $(\Box_\Phi-k_m^{2})\Xi=0$ with $\Box_\Phi$ central and scalar; no non-central operator of the framework acts on it.
 

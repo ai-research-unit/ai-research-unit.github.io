@@ -153,7 +153,7 @@ The mass shell's two Casimirs, $N=-m^{2}c^{2}$ and the Pauli–Lubanski scalar, 
 
 ### The Two Halves Separate
 
-The massless limit is where the two chiral halves of the fermion carrier stop talking to each other. On the cone the Pauli–Lubanski vector is proportional to the momentum, $W_\mu=hP_\mu$, so the helicity is Lorentz invariant; and because the two chiral projectors both reduce to the helicity projectors, chirality and helicity coincide. A mass term is the only term in the Dirac equation that couples the two halves, so at $m=0$ the pair $(\tfrac12,0)\oplus(0,\tfrac12)$ degenerates into two independent carriers, one per helicity.
+The massless limit is where the two chiral halves of the fermion carrier stop talking to each other. On the cone the Pauli–Lubanski vector is proportional to the momentum, $W_{\imath}=hP_{\imath}$, so the helicity is Lorentz invariant; and because the two chiral projectors both reduce to the helicity projectors, chirality and helicity coincide. A mass term is the only term in the Dirac equation that couples the two halves, so at $m=0$ the pair $(\tfrac12,0)\oplus(0,\tfrac12)$ degenerates into two independent carriers, one per helicity.
 
 That is the representation-theoretic content of "the two halves separate", and it is why the massless fermion's two helicities may be described by separate Weyl fields while the massive one may not: the coupling that would have to be removed is exactly the mass. *The Dirac Pair and the Mass Term* proves the corresponding statement for $m\neq0$.
 

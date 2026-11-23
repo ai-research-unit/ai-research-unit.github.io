@@ -6,7 +6,7 @@ The whole of the coupling's action on a mode is a translation of its label, in a
 
 The charged fluid's loop invariant is a Lorentz transformation times a phase; at a mode the frame is constant, so the Lorentz factor is the identity and the invariant is the phase alone. The product $\mathbb{C}^{*}\times SL(2,\mathbb{C})$ is therefore an inter-mode object: one factor is the diagonal's and the other is not, and no single mode exhibits both.
 
-A mode's label is a constant, so a mode does not accelerate and the Lorentz force vanishes at a mode identically. The force $ϙ\sum_\nu F_{\mu\nu}J_\nu$ is the statement about how the label responds to a curvature, and a curvature is exactly what a mode's connection does not have.
+A mode's label is a constant, so a mode does not accelerate and the Lorentz force vanishes at a mode identically. The force $ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}$ is the statement about how the label responds to a curvature, and a curvature is exactly what a mode's connection does not have.
 
 This is the charged companion of [The Fourier Transform and the Spin-Half Fluid](the-fourier-transform-and-the-spin-half-fluid-one-mode-occupies-one-bracket-of-four.html) and the Fourier companion of [The Charged Spin-Half Fluid: Charge Couples to the Lorentz Force, Spin Does Not](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html). The charged Schrödinger rung's Fourier article makes the same curvature argument with no frame, and §*The Four Rungs' One Invariant* says what the four share.
 
@@ -62,12 +62,12 @@ The objection is that a general connection is not constant, so its action is a c
 The companion's loop invariant is a Lorentz transformation times a phase, and the article asks which factor a mode supplies.
 
 $$
-\mathcal H=\mathrm{P}\exp\oint\Bigl(\Gamma_\mu+\frac{2\pi iϙ}{h}A_\mu\Bigr)\mathrm{d}x_\mu
+\mathcal H=\mathrm{P}\exp\oint\Bigl(\Gamma_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}\Bigr)\mathrm{d}x_{\imath}
 =\underbrace{\mathcal H_{SL(2,\mathbb{C})}}_{\text{the frame's}}\cdot
 \underbrace{\exp\Bigl(\frac{2\pi iϙ\Phi_B}{h}\Bigr)}_{\text{the phase's}} .
 $$
 
-At a mode the frame is constant, so $\Gamma_\mu=0$ and the first factor is the identity.
+At a mode the frame is constant, so $\Gamma_{\imath}=0$ and the first factor is the identity.
 
 $$
 \mathcal H_{\text{mode}}=\exp\Bigl(\frac{2\pi iϙ\Phi_B}{h}\Bigr),
@@ -92,10 +92,10 @@ $$
 \quad\text{with}\quad
 \tilde U_{\Psi,\mathrm b}\ \text{constant}
 \qquad\Longrightarrow\qquad
-a_\mu=\sum_\nu\varepsilon_\nu u_\nu\partial_\nu u_\mu=0 .
+a_{\imath}=\sum_{\jmath}\varepsilon_{\jmath} u_{\jmath}\partial_{\jmath} u_{\imath}=0 .
 $$
 
-The companion's momentum balance $\sum_\nu\partial_\nu T_{\mu\nu}=ϙ\sum_\nu F_{\mu\nu}J_\nu+$ the free spin term is an equation between quantities that a mode holds constant, so at a mode it reads $0=0$. What it constrains is the off-diagonal part of the field, and the article's claim is that the phrase "the force takes the charge and the spin does not" is, in the momentum space, the statement that the label is shifted and the rotor is not.
+The companion's momentum balance $\sum_{\jmath}\partial_{\jmath} T_{\imath\jmath}=ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}+$ the free spin term is an equation between quantities that a mode holds constant, so at a mode it reads $0=0$. What it constrains is the off-diagonal part of the field, and the article's claim is that the phrase "the force takes the charge and the spin does not" is, in the momentum space, the statement that the label is shifted and the rotor is not.
 
 "The force takes the charge" is a statement about the label: the charge is a coefficient of the potential, the potential shifts the label, and the label is the frame, so the force moves the velocity. "The spin does not" is a statement about the carrier: the rotor is not in the label, so nothing that acts on the label can move it. One half is dynamics and the other is bookkeeping, and the momentum-space reading separates them for the first time.
 
@@ -110,7 +110,7 @@ At a mode the connection is constant, so $\tilde F=0$ and the companion's vortic
 | Schrödinger | $\frac{h}{2\pi}\vec k$ | shifts it | $\vec B$ |
 | Klein–Gordon | $\frac{h}{2\pi}\tilde K_\Phi$ | shifts it | $\tilde F$ |
 | spinor | $ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ | shifts it | $\tilde F$ |
-| vector | $\varrho\,u_\mu$ with $u$ constant | shifts it and turns the chart | the coupled field strength |
+| vector | $\varrho\,u_{\imath}$ with $u$ constant | shifts it and turns the chart | the coupled field strength |
 
 The scalar label has four numbers and no frame; the spinor label has four numbers and is the frame; the vector label has four numbers and *is* the field. So the spinor rung is the one rung whose label is exactly the frame, and that is why the rotor's independence of the gauge is a counting statement there and an algebraic one elsewhere.
 

@@ -21,7 +21,7 @@ The article is organized as follows. The next section fixes the classical field 
 
 The next section gives the Hamiltonian, the normal-ordering constant, and the four-momentum and charge. A section on spin and statistics records why anticommutation is forced here, without developing the full spin–statistics theorem, which the companion article *The Spin–Statistics Theorem in Biquaternionic Form* treats on its own. A section relates the result to the KMS thermal-state framework. The article then gives an explicit accounting of what is standard and what is open. It closes with the summary, the notation table, and further reading.
 
-Every derivative of the field in this article is the corpus gradient $\tilde\nabla_\Phi$ or its conjugate $(\tilde\nabla_\Phi)^{\natural}$, defined once in §*The Two First-Order Equations and Their Symbol*: $\tilde\nabla_\Phi=\sum_\mu e_\mu\,\partial/\partial R_\mu$ and $(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ with $\varepsilon=(1,-1,-1,-1)$. No other derivative operator is written. No operator below is a basis operator named by an abstract glyph: each is an element of $\mathbb{B}$, an action written out with its sides in position — the element multiplied on the left and the element multiplied on the right, both visible — or a number. Where an operator is two-sided, the two elements are named in the sentence that introduces it.
+Every derivative of the field in this article is the corpus gradient $\tilde\nabla_\Phi$ or its conjugate $(\tilde\nabla_\Phi)^{\natural}$, defined once in §*The Two First-Order Equations and Their Symbol*: $\tilde\nabla_\Phi=\sum_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$ and $(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\varepsilon_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$ with $\varepsilon=(1,-1,-1,-1)$. No other derivative operator is written. No operator below is a basis operator named by an abstract glyph: each is an element of $\mathbb{B}$, an action written out with its sides in position — the element multiplied on the left and the element multiplied on the right, both visible — or a number. Where an operator is two-sided, the two elements are named in the sentence that introduces it.
 
 ## The Classical Field and Its Conjugate Momentum
 
@@ -64,8 +64,8 @@ whose solutions, normalizations, and spin sums are established in the parent art
 The gradient and its conjugate are the two derivative operators of the article, and they are fixed here once:
 
 $$
-\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
-(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
+\tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial R_{\imath}},\qquad
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath\in\{t,x,y,z\}}\varepsilon_{\imath} e_{\imath}\frac{\partial}{\partial R_{\imath}},\qquad
 \Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi,
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
@@ -97,7 +97,7 @@ $$
 \qquad\text{whose square is } -N ,
 $$
 
-with $p_0=E_{\vec p}/c$ and $p_\eta$ the physical momentum components, and $N=\langle\tilde P_\Phi\rangle_{\natural}=-p_0^{2}+\lvert\vec p\rvert^{2}$ the norm of the four-momentum, so that $N=-m^{2}\,c^{2}$ on the mass shell. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $\exp(-i\theta_{\mathrm{pwp}})$ the time derivative gives $-\frac{2\pi iE_{\vec p}}{h\,c}$ and the spatial derivatives $+\frac{2\pi ip_\eta}{h}$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_\eta\vec e_\eta\tilde X\vec e_y$. On the material sector the derivative action and the momentum action square to $\Box_\Phi$ and to $-N$ respectively, the second equal to $-m^{2}c^{2}$ on the mass shell.
+with $p_0=E_{\vec p}/c$ and $p_\eta$ the physical momentum components, and $N=\langle\tilde P_\Phi\rangle_{\natural}=-p_0^{2}+\lvert\vec p\rvert^{2}$ the norm of the four-momentum, so that $N=-m^{2}\,c^{2}$ on the mass shell. The lower index of $p_{\imath}$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $\exp(-i\theta_{\mathrm{pwp}})$ the time derivative gives $-\frac{2\pi iE_{\vec p}}{h\,c}$ and the spatial derivatives $+\frac{2\pi ip_\eta}{h}$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_\eta\vec e_\eta\tilde X\vec e_y$. On the material sector the derivative action and the momentum action square to $\Box_\Phi$ and to $-N$ respectively, the second equal to $-m^{2}c^{2}$ on the mass shell.
 
 Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
@@ -142,10 +142,10 @@ The step is worth displaying, because it is the origin of the entire fermionic s
 
 $$
 i\,\mathrm{Sc}\Big(\tilde{Ξ}^*\frac{\partial\tilde{Ξ}}{\partial r'_t}\Big)
-=i\sum_\mu\bar{\tilde{Ξ}}_{\mu}\frac{\partial\tilde{Ξ}_{\mu}}{\partial r'_t},
+=i\sum_{\imath}\bar{\tilde{Ξ}}_{\imath}\frac{\partial\tilde{Ξ}_{\imath}}{\partial r'_t},
 $$
 
-the scalar part of $\tilde{Ξ}^*$ times the derivative being the coefficient sum, so that differentiation with respect to $\partial\tilde{Ξ}_{\mu}/\partial r'_t$ returns $i\bar{\tilde{Ξ}}_{\mu}$ and therefore $\pi=i\tilde{Ξ}^*$.
+the scalar part of $\tilde{Ξ}^*$ times the derivative being the coefficient sum, so that differentiation with respect to $\partial\tilde{Ξ}_{\imath}/\partial r'_t$ returns $i\bar{\tilde{Ξ}}_{\imath}$ and therefore $\pi=i\tilde{Ξ}^*$.
 
 The momentum is not the time derivative of the field. The Dirac equation is first order in time, so the momentum is algebraically tied to the field by the primary constraint
 
@@ -175,20 +175,20 @@ $$
 for the two spatial points. For the Dirac field the brackets are **anticommutators**, imposed on the four coefficients of the element:
 
 $$
-\boxed{\;\{\tilde{Ξ}_{\mathrm{fop},\mu}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}(Y,r'_t)\}=\delta_{\mu\nu}\,\delta^{(3)}(X-Y)\;}
+\boxed{\;\{\tilde{Ξ}_{\mathrm{fop},\imath}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\jmath}^{\dagger}(Y,r'_t)\}=\delta_{\imath\jmath}\,\delta^{(3)}(X-Y)\;}
 $$
 
 together with
 
 $$
-\{\tilde{Ξ}_{\mathrm{fop},\mu}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\nu}(Y,r'_t)\}=0,\qquad
-\{\tilde{Ξ}_{\mathrm{fop},\mu}^{\dagger}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}(Y,r'_t)\}=0,
+\{\tilde{Ξ}_{\mathrm{fop},\imath}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\jmath}(Y,r'_t)\}=0,\qquad
+\{\tilde{Ξ}_{\mathrm{fop},\imath}^{\dagger}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\jmath}^{\dagger}(Y,r'_t)\}=0,
 $$
 
-where $\mu,\nu$ run over the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ and label the coefficients of the element. In terms of the conjugate momentum $\pi_{\mathrm{fop}}=i\tilde{Ξ}_{\mathrm{fop}}^*$, the first relation reads
+where ${\imath},\jmath$ run over the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ and label the coefficients of the element. In terms of the conjugate momentum $\pi_{\mathrm{fop}}=i\tilde{Ξ}_{\mathrm{fop}}^*$, the first relation reads
 
 $$
-\{\tilde{Ξ}_{\mathrm{fop},\mu}(X,r'_t),\pi_{\mathrm{fop},\nu}(Y,r'_t)\}=i\,\delta_{\mu\nu}\,\delta^{(3)}(X-Y),
+\{\tilde{Ξ}_{\mathrm{fop},\imath}(X,r'_t),\pi_{\mathrm{fop},\jmath}(Y,r'_t)\}=i\,\delta_{\imath\jmath}\,\delta^{(3)}(X-Y),
 $$
 
 which is the fermionic analogue of the canonical relation $[\xi_{\mathrm{fop}},\pi_{\mathrm{fop}}]=i\delta^{(3)}$ of a scalar field. These are the standard canonical relations, and they are imposed rather than derived.
@@ -300,10 +300,10 @@ These are the standard anticommutation relations of the free Dirac field, in the
 It is worth verifying that these relations reproduce the boxed equal-time relation, because the verification exposes a point of care about the relative phases of the two branches. Write $\vec r_{12}:=X-Y$ for the separation of the two points. Inserting the expansions and using the mode algebra gives, at equal times,
 
 $$
-\{\tilde{Ξ}_{\mathrm{fop},\mu}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}(Y,r'_t)\}
+\{\tilde{Ξ}_{\mathrm{fop},\imath}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\jmath}^{\dagger}(Y,r'_t)\}
 =\int\!\frac{d^3p}{h^{3}}\frac{1}{2E_{\vec p}}
-\Big[\sum_r\big(\tilde{Ξ}_{+}^{(r)}\big)_\mu\big(\tilde{Ξ}_{+}^{(r)*}\big)_\nu\,e^{+i\theta_{\mathrm{spa}}}
-+\sum_r\big(\tilde{Ξ}_{-}^{(r)}\big)_\mu\big(\tilde{Ξ}_{-}^{(r)*}\big)_\nu\,e^{-i\theta_{\mathrm{spa}}}\Big].
+\Big[\sum_r\big(\tilde{Ξ}_{+}^{(r)}\big)_{\imath}\big(\tilde{Ξ}_{+}^{(r)*}\big)_{\jmath}\,e^{+i\theta_{\mathrm{spa}}}
++\sum_r\big(\tilde{Ξ}_{-}^{(r)}\big)_{\imath}\big(\tilde{Ξ}_{-}^{(r)*}\big)_{\jmath}\,e^{-i\theta_{\mathrm{spa}}}\Big].
 $$
 
 The two phases are **opposite**: the positive-frequency term carries $e^{+i\theta_{\mathrm{spa}}}$ and the negative-frequency term $e^{-i\theta_{\mathrm{spa}}}$. The bracket carries untwisted outer products, while the spin sums of the preceding section are statements about the pairing; moving the right multiplication by $i\vec e_x$ that the pairing carries onto the argument, the same operator identities read
@@ -396,8 +396,8 @@ Here $V$ is the volume in which the theory is placed, and $h^{3}\delta^{(3)}(\ve
 The same mode algebra gives the other conserved charges. The normal-ordered four-momentum is
 
 $$
-:\!P_{\mathrm{fop},\mu}\!:\;=\sum_{r}\int\!\frac{d^3p}{h^{3}}\,p_\mu
-\Big(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r}\Big),\qquad p_\mu=(E_{\vec p},\vec p),
+:\!P_{\mathrm{fop},\imath}\!:\;=\sum_{r}\int\!\frac{d^3p}{h^{3}}\,p_{\imath}
+\Big(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r}\Big),\qquad p_{\imath}=(E_{\vec p},\vec p),
 $$
 
 and the normal-ordered electric charge, from the density $j_0=\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{fop}}^*\tilde{Ξ}_{\mathrm{fop}}\big)$, which is positive for every element, is
@@ -518,7 +518,7 @@ The extension attempted here is therefore **not canonical** in the framework: th
 The biquaternion Dirac field is quantized by promoting its element-valued classical field to an operator-valued field. The equation quantized is the one-sided chiral pair, which on the element is the two first-order equations of §*The Two First-Order Equations and the Map They Define*, built from the corpus gradient and its conjugate; Kravchenko's two-sided equation is a different operator and is not quantized here. The classical theory has the Lagrangian of those two lines and conjugate momentum $\pi=i\tilde{Ξ}^*$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators on the four coefficients of the element,
 
 $$
-\{\tilde{Ξ}_{\mathrm{fop},\mu}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}(Y,r'_t)\}=\delta_{\mu\nu}\delta^{(3)}(X-Y)
+\{\tilde{Ξ}_{\mathrm{fop},\imath}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\jmath}^{\dagger}(Y,r'_t)\}=\delta_{\imath\jmath}\delta^{(3)}(X-Y)
 $$
 
 with all other equal-time anticommutators vanishing; anticommutation rather than commutation is forced by the boundedness of the energy, by microcausality, and by positivity of the norm, all three being consequences of the spinor character of the field.
@@ -545,20 +545,20 @@ The extension is a transcription of standard canonical quantization onto the par
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator) |
-| $(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its quaternion conjugate, $\varepsilon=(+1,-1,-1,-1)$ |
+| $(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\varepsilon_{\imath} e_{\imath}\partial/\partial R_{\imath}$ | Its quaternion conjugate, $\varepsilon=(+1,-1,-1,-1)$ |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, $\Delta_\Phi=\sum_\eta\partial^2/\partial R_\eta^2$; in $r'_t$ it is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | Classical Dirac field, an element of $\mathbb{B}$, in its two chiral halves |
 | $\tilde{Ξ}^{\flat}=-\tilde{Ξ}^*$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\bar{\tilde{Ξ}}X=\mathrm{Sc}(\tilde{Ξ}^*iX\vec e_x)$ | Dirac adjoint: Hermitian conjugate, then right multiplication by $i\vec e_x$ |
 | $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x)$ | Dirac pairing; equals $\bar{\tilde{Ξ}}\tilde{Ξ}$ |
-| $e_\mu$ | Basis unit: $e_t$ for $\mu=t$, $\vec e_\eta$ for $\mu=k$ |
+| $e_{\imath}$ | Basis unit: $e_t$ for ${\imath}=t$, $\vec e_\eta$ for $\mu=k$ |
 | $\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$ | Massless action of the pair read on one element; its square is $\Box_\Phi$ |
 | $\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$ | The same action on a plane wave; its square is $-N$ |
 | $\mathcal{L}$ | Dirac Lagrangian density of the two lines |
 | $\pi=\partial\mathcal{L}/\partial(\partial\tilde{Ξ}/\partial r'_t)=i\tilde{Ξ}^*$ | Conjugate momentum; $\pi-i\tilde{Ξ}^*\approx0$ is second class |
 | $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency element amplitudes |
 | $X,Y,\vec r_{12}=X-Y$ | Spatial points and their separation |
-| $p_\mu=(E_{\vec p},\vec p)$, $N=-p_0^{2}+\vec p^{2}=-m^{2}\,c^{2}$ | Four-momentum, mass shell; the index labels, $\varepsilon$ carries the signs |
+| $p_{\imath}=(E_{\vec p},\vec p)$, $N=-p_0^{2}+\vec p^{2}=-m^{2}\,c^{2}$ | Four-momentum, mass shell; the index labels, $\varepsilon$ carries the signs |
 | $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the momentum label in the plane-wave action |
 | $\tilde P_{\Phi}$, $\tilde R_\Phi$ | Wave biquaternion and four-position biquaternion of the parent article |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |
@@ -569,7 +569,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $n_{\mathrm F}$, $n_{\mathrm B}$ | Fermi and Bose occupation numbers, $1/(\exp(\beta(E-\mu))\pm1)$ |
 | $(-1)^F$ | Fermion-parity grading |
 | $ϙ$, $Ϙ_{\mathrm{fop}}$ | Field charge unit, and the charge operator counting charge in those units |
-| $\mu$ | Chemical potential of the thermal state; elsewhere the same letter is an index, as in $p_\mu$ and $\vec e_\mu$ |
+| $\mu$ | Chemical potential of the thermal state; elsewhere the same letter is an index, as in $p_{\imath}$ and $\vec e_{\imath}$ |
 | $\beta=\frac{h}{2\pi k_{B}\,T}$, $\omega_\beta$, $\alpha_{r'_{t}}$ | Inverse temperature, thermal state, the evolution generated by the state's Hamiltonian |
 | $F_{A B}(r'_t+i\beta)=F_{B A}(-r'_t)$ | KMS condition |
 | $H_{\mathrm{modular}}=-\log\rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{B}_{\Psi}$) |

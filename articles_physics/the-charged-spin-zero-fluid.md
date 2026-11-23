@@ -5,7 +5,7 @@
 The coupling changes one property of the scalar fluid and leaves the rest, and the one it changes it changes exactly. The free fluid is irrotational identically, and that is not an approximation: its velocity is a gradient, so its vorticity two-form vanishes for every solution. The charged fluid's vorticity is the field strength divided by the mass,
 
 $$
-\omega_{\mu\nu}=\frac{ϙ}{m}F_{\mu\nu},
+\omega_{\imath\jmath}=\frac{ϙ}{m}F_{\imath\jmath},
 $$
 
 again identically, again for every solution, and with no quantum correction. **So the coupling does not give the scalar fluid a vorticity dynamics; it gives it a vorticity.** The free fluid had none because there was nothing to have; the charged fluid has one because the field strength is there, and in both cases the vorticity is read off the data and never transported. That distinction is the article's spine, and the two companion articles sharpen it from their own sides.
@@ -20,11 +20,11 @@ $$
 \tilde A_\Phi=i\,a'_t\,e_t+\vec A,
 $$
 
-with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the material sector $\mathbb{B}_\Phi$ and its four coefficients are the scalar and the vector potential. The connection is central per component in the abelian case, which is the fact the whole article turns on: $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ is a central operator, it commutes with the complete polar decomposition, and it adds one scalar to each bracket of the logarithmic derivative without disturbing the bracket's type.
+with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the material sector $\mathbb{B}_\Phi$ and its four coefficients are the scalar and the vector potential. The connection is central per component in the abelian case, which is the fact the whole article turns on: $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ is a central operator, it commutes with the complete polar decomposition, and it adds one scalar to each bracket of the logarithmic derivative without disturbing the bracket's type.
 
 Three things are established.
 
-*First, the density is untouched and the velocity becomes mechanical.* The word is the free article's, $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon$, and the scale is still $\varrho$, so $\rho_{\mathrm{num}}=\varrho^{2}$. What the coupling changes is the momentum the phase rate names: the phase gradient is replaced by $\partial_\mu S_{\tilde\Xi}+ϙA_\mu$, and the velocity the fluid carries is that over the mass. The free velocity was a gradient and was not gauge invariant; the mechanical velocity is not a gradient and is gauge invariant.
+*First, the density is untouched and the velocity becomes mechanical.* The word is the free article's, $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon$, and the scale is still $\varrho$, so $\rho_{\mathrm{num}}=\varrho^{2}$. What the coupling changes is the momentum the phase rate names: the phase gradient is replaced by $\partial_{\imath} S_{\tilde\Xi}+ϙA_{\imath}$, and the velocity the fluid carries is that over the mass. The free velocity was a gradient and was not gauge invariant; the mechanical velocity is not a gradient and is gauge invariant.
 
 *Second, the vorticity becomes the field strength.* Because the mechanical one-form is a gradient plus a potential, its exterior derivative is the potential's alone, and that is $ϙF$. Everything the free article proved about the vanishing of $\omega$ survives as the statement $\vec E=\vec B=0$.
 
@@ -34,28 +34,28 @@ What is not here. No new solution, no new prediction, no new particle. The artic
 
 Position in the block. This article is the charged companion of [The Spin-Zero Fluid](the-spin-zero-fluid.html). Its siblings are [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), and the three are compared side by side in §*The Three Charged Fluids*. The free article's own table of the three free fluids is in that article and in the two free companions, and the present table is its charged counterpart.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=\frac{2\pi mc}{h}$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the action is $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, and $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=\frac{2\pi mc}{h}$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the action is $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, and $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
 
 ## The Bracket the Connection Reaches
 
 The coupling enters the logarithmic derivative as one added central element, and the type table says where it can land. Differentiating the word, dividing by it and adding the connection gives
 
 $$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
-=\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
-+i\Bigl(\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{2\pi ϙ}{h}A_\mu\Bigr)
-+\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
-+\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu},
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi
+=\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_{\imath}}
++i\Bigl(\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}+\frac{2\pi ϙ}{h}A_{\imath}\Bigr)
++\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_{\imath}}\Bigr)\tilde u_{\mathrm r}
++\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_{\imath}},
 $$
 
 and the four terms are the free article's four brackets with the connection's share inside the second. The share is a central scalar in every slot, and a central scalar can produce neither a real vector part nor a Hermitian vector. So it can add to the scale bracket and to the phase bracket and to nothing else.
 
 | bracket | type | the connection's share |
 | --- | --- | --- |
-| $\tfrac12\partial_\mu\ln \varrho^{2}$ | real central scalar | none |
-| $i\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_\mu$ | central imaginary, with a real part | the whole slot |
-| $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | none |
-| $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | none |
+| $\tfrac12\partial_{\imath}\ln \varrho^{2}$ | real central scalar | none |
+| $i\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_{\imath}$ | central imaginary, with a real part | the whole slot |
+| $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | none |
+| $\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}$ | real vector part | none |
 
 The third and fourth rows are rows of zeros on the central field, and that is why the scalar case is the clean one. The boost has no rapidity to carry and the rotor no axis, so both frame brackets vanish identically and the connection has only the two central brackets to reach. On the central field the coupling is therefore exactly a shift of the phase rate, and nothing else of it survives in the kinematics.
 
@@ -110,10 +110,10 @@ A gauge transformation moves the two terms and not the sum. The angle and the po
 The vorticity is the field strength over the mass, and the computation is one line. With $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$ and $\tilde P^{\mathrm{mech}}_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}+ϙ\tilde A_\Phi$,
 
 $$
-\omega_{\mu\nu}=\partial_\mu V_\nu-\partial_\nu V_\mu
-=\frac{1}{m}\Bigl(\partial_\mu\partial_\nu S_{\tilde\Xi}-\partial_\nu\partial_\mu S_{\tilde\Xi}\Bigr)
-+\frac{ϙ}{m}\Bigl(\partial_\mu A_\nu-\partial_\nu A_\mu\Bigr)
-=\frac{ϙ}{m}F_{\mu\nu}.
+\omega_{\imath\jmath}=\partial_{\imath} V_{\jmath}-\partial_{\jmath} V_{\imath}
+=\frac{1}{m}\Bigl(\partial_{\imath}\partial_{\jmath} S_{\tilde\Xi}-\partial_{\jmath}\partial_{\imath} S_{\tilde\Xi}\Bigr)
++\frac{ϙ}{m}\Bigl(\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}\Bigr)
+=\frac{ϙ}{m}F_{\imath\jmath}.
 $$
 
 The first bracket vanishes because the action is a function and not a one-form, and the second is the definition of the field strength. No term is dropped, no order is taken, and no quantum correction appears: the quantum potential enters the *norm* of the velocity and not its curl, because it is a function of the density and the density cancels out of the velocity.
@@ -163,7 +163,7 @@ $$
 and differentiating it and contracting with the velocity gives, in four-vector form,
 
 $$
-m\frac{\mathrm{d}V_\mu}{\mathrm{d}\tau}=-ϙ\sum_\nu\varepsilon_\nu F_{\mu\nu}V_\nu-\partial_\mu Q_{\mathrm{qnt}},
+m\frac{\mathrm{d}V_{\imath}}{\mathrm{d}\tau}=-ϙ\sum_{\jmath}\varepsilon_{\jmath} F_{\imath\jmath}V_{\jmath}-\partial_{\imath} Q_{\mathrm{qnt}},
 $$
 
 whose spatial slots are the display a reader expects:
@@ -175,12 +175,12 @@ $$
 \vec p^{\mathrm{mech}}=\vec p-q\vec A .
 $$
 
-The sign of the four-vector form is the metric's and the spatial form is the check. With all the indices low, the Lorentz term is $-ϙ\sum_\nu\varepsilon_\nu F_{\mu\nu}V_\nu$, whose spatial slots are $-ϙE_i\gamma-ϙ(\vec v\times\vec B)_i\gamma$; dividing by the $\gamma$ that converts $\mathrm{d}/\mathrm{d}\tau$ to $\mathrm{d}/\mathrm{d}t$ leaves the display above with both of its sub-terms at order zero in $\gamma$. With $ϙ$ the negative of the electric charge the display reads $q(\vec E+\vec v\times\vec B)-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, which is the standard force on a charge $q$: the sign is the coupling's, and the mass shell is what fixes it, because the potential energy is $-ϙ\omicron_{\mathrm{pot}}$. The free article's $-ϙ\to0$ case is its own acceleration law, term for term.
+The sign of the four-vector form is the metric's and the spatial form is the check. With all the indices low, the Lorentz term is $-ϙ\sum_{\jmath}\varepsilon_{\jmath} F_{\imath\jmath}V_{\jmath}$, whose spatial slots are $-ϙE_i\gamma-ϙ(\vec v\times\vec B)_i\gamma$; dividing by the $\gamma$ that converts $\mathrm{d}/\mathrm{d}\tau$ to $\mathrm{d}/\mathrm{d}t$ leaves the display above with both of its sub-terms at order zero in $\gamma$. With $ϙ$ the negative of the electric charge the display reads $q(\vec E+\vec v\times\vec B)-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, which is the standard force on a charge $q$: the sign is the coupling's, and the mass shell is what fixes it, because the potential energy is $-ϙ\omicron_{\mathrm{pot}}$. The free article's $-ϙ\to0$ case is its own acceleration law, term for term.
 
-The check was carried out symbolically and it is exact. Taking an arbitrary action $S$ and an arbitrary potential $A_\mu$ in one time and one space dimension, defining $Q_{\mathrm{qnt}}$ by the mass shell above and $V=\tilde P^{\mathrm{mech}}/m$, the identity
+The check was carried out symbolically and it is exact. Taking an arbitrary action $S$ and an arbitrary potential $A_{\imath}$ in one time and one space dimension, defining $Q_{\mathrm{qnt}}$ by the mass shell above and $V=\tilde P^{\mathrm{mech}}/m$, the identity
 
 $$
-\sum_\nu\varepsilon_\nu V_\nu\partial_\nu P^{\mathrm{mech}}_\mu+ϙ\sum_\nu\varepsilon_\nu F_{\mu\nu}V_\nu+\partial_\mu Q_{\mathrm{qnt}}=0
+\sum_{\jmath}\varepsilon_{\jmath} V_{\jmath}\partial_{\jmath} P^{\mathrm{mech}}_{\imath}+ϙ\sum_{\jmath}\varepsilon_{\jmath} F_{\imath\jmath}V_{\jmath}+\partial_{\imath} Q_{\mathrm{qnt}}=0
 $$
 
 was verified to hold in both slots with no residual term. Each of the three terms has a reading: the first is the acceleration, the second is the Lorentz force with the sign the metric gives a lower index, and the third is the free article's quantum gradient, unchanged.
@@ -303,15 +303,15 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gaug
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The phase coordinate; moves under a gauge transformation |
 | $\varepsilon$ | The branch; untouched by the connection |
 | $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ | The connection; $a'_t$ and $\vec A$ real, so $\tilde A_\Phi\in\mathbb{B}_\Phi$ |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ | The covariant derivative; central per component |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The covariant derivative; central per component |
 | $ϙ$ | The coupling |
 | $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The action |
 | $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | The canonical momentum; $E=-\frac{h}{2\pi} c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | The mechanical momentum; gauge invariant |
 | $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$ | The four-velocity; $\tilde V_\Phi\tilde V_\Phi^{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ |
 | $\rho_{\mathrm{chg}}$ | The conserved density; $c\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}(E+ϙca'_t)/m$ |
-| $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | The field strength; $\det F$ is $(\vec E\cdot\vec B)^{2}$ up to a factor |
-| $\omega_{\mu\nu}$ | The vorticity; $\omega=ϙF/m$ |
+| $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$ | The field strength; $\det F$ is $(\vec E\cdot\vec B)^{2}$ up to a factor |
+| $\omega_{\imath\jmath}$ | The vorticity; $\omega=ϙF/m$ |
 | $\Phi_B$ | The flux through a loop; $\oint\vec A\cdot\mathrm{d}\vec l$ |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; untouched by the coupling |
 | $k_m=\frac{2\pi mc}{h}$ | The mass wave number |

@@ -124,10 +124,10 @@ $$
 \qquad
 \partial/\partial R_j\,\tilde{Q} = d\tilde{Q}/dt'_{\mathrm{ret}}\,\partial/\partial R_j\,t'_{\mathrm{ret}} = -\frac{\vec u_{R_j}}{c\kappa}d\tilde{Q}/dt'_{\mathrm{ret}} .
 $$
-Multiplying the spatial derivatives by $\vec e_\mu$ and subtracting,
+Multiplying the spatial derivatives by $\vec e_{\imath}$ and subtracting,
 $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Q}
-= \left(\partial/\partial R_t\,t'_{\mathrm{ret}}\,e_t - \sum_\mu \partial/\partial R_\mu\,t'_{\mathrm{ret}}\,\vec e_\mu\right)d\tilde{Q}/dt'_{\mathrm{ret}}
+= \left(\partial/\partial R_t\,t'_{\mathrm{ret}}\,e_t - \sum_{\imath} \partial/\partial R_{\imath}\,t'_{\mathrm{ret}}\,\vec e_{\imath}\right)d\tilde{Q}/dt'_{\mathrm{ret}}
 = \left(-\frac{i}{c\kappa}e_t + \frac{\vec u_R}{c\kappa}\right)d\tilde{Q}/dt'_{\mathrm{ret}}
 = \tilde\Lambda_{\Phi,\mathrm{ret}}d\tilde{Q}/dt'_{\mathrm{ret}} .
 $$
@@ -325,7 +325,7 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 
 **1. The differentiation is asserted, not displayed.** The parent states that "differentiating the Liénard–Wiechert potential is the standard computation" and records the two component results, with the normalization caveat that fixes $\tilde{F} = i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ as the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$. It does not carry out the differentiation, and in particular it does not display the two biquaternion brackets of Problem 2 or the role of the null gradient $(\tilde\nabla_\Phi)^{\natural}t'_{\mathrm{ret}}$. This exercise supplies the missing computation; nothing in the parent's results is changed.
 
-**2. The field transformation law is not given, and rotor conjugation is not it.** The parent's remark that the uniformly moving field is "equivalently ... obtained by applying the boost rotor $\tilde U_{\Psi,\mathrm b}$ of the Maxwell article to the Coulomb field of the charge at rest" is correct in content but silent on the law. The framework's rotor conjugation is defined for four-vectors in $\mathbb{B}_{\Phi}$; the field strength is a rank-two object and transforms by the similarity $\tilde U_{\Psi,\mathrm b}^{\natural}\tilde{F}\tilde U_{\Psi,\mathrm b} = \tilde U_{\Psi,\mathrm b}^{-1}\tilde{F}\tilde U_{\Psi,\mathrm b}$ (Problem 5). The Lorentz-transformation article's "Open Questions", item 1, asks precisely how the biquaternion formulation extends to higher-rank tensors such as $F_{\mu\nu}$; this exercise supplies the answer for the field strength and a pure boost, so it is a recognized boundary and not a defect introduced here. We record it because a reader who reaches for $\tilde U_{\Psi,\mathrm b}\tilde{F}\tilde U_{\Psi,\mathrm b}^{*}$ will get a wrong field.
+**2. The field transformation law is not given, and rotor conjugation is not it.** The parent's remark that the uniformly moving field is "equivalently ... obtained by applying the boost rotor $\tilde U_{\Psi,\mathrm b}$ of the Maxwell article to the Coulomb field of the charge at rest" is correct in content but silent on the law. The framework's rotor conjugation is defined for four-vectors in $\mathbb{B}_{\Phi}$; the field strength is a rank-two object and transforms by the similarity $\tilde U_{\Psi,\mathrm b}^{\natural}\tilde{F}\tilde U_{\Psi,\mathrm b} = \tilde U_{\Psi,\mathrm b}^{-1}\tilde{F}\tilde U_{\Psi,\mathrm b}$ (Problem 5). The Lorentz-transformation article's "Open Questions", item 1, asks precisely how the biquaternion formulation extends to higher-rank tensors such as $F_{\imath\jmath}$; this exercise supplies the answer for the field strength and a pure boost, so it is a recognized boundary and not a defect introduced here. We record it because a reader who reaches for $\tilde U_{\Psi,\mathrm b}\tilde{F}\tilde U_{\Psi,\mathrm b}^{*}$ will get a wrong field.
 
 **3. The subluminal restriction and the caustic.** The retarded formulas assume $\kappa>0$. As $\vec u_R\cdot\vec\beta\to1$, the denominator $\kappa\to0$ and the field diverges; this is the caustic where the retarded-time equation has a double root. For superluminal worldlines the construction fails outright, and a naive numerical retarded-time solver can return a spurious root. The parent does not state the restriction, and it is not inferable from the displayed formulas. The exercise leaves the caustic and the superluminal case open.
 
@@ -364,7 +364,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |

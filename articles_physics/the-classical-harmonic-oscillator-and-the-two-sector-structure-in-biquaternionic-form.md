@@ -111,7 +111,7 @@ $$
 
 and the sector exchange that $i$ performs is exactly the map that interchanges the two quadratures.
 
-Two remarks fix the interpretation. First, the assignment of $x$ to the Hermitian direction and $\varpi$ to the anti-Hermitian one is a **phase convention**, not a dynamical fact: replacing $a$ by $-ia$ swaps the roles of the two quadratures and exchanges the sector assignments, and this is the quarter-period shift of the oscillation. What is convention-independent is that the two quadratures occupy the two central directions, and those two directions lie in different sectors. Second, the decomposition uses only the **central** part of the sector split: $\mathbb{B}_{\Psi} \cap \mathbb{B}_{C}$ is the real axis $e_t\mathbb{R}$ and $\mathbb{B}_{\Phi} \cap \mathbb{B}_{C}$ the imaginary axis $ie_t\mathbb{R}$. The vector directions $i\vec e_\mu$ of $\mathbb{B}_{\Psi}$ and $\vec e_\mu$ of $\mathbb{B}_{\Phi}$ are not involved. The oscillator's sector structure is the one-dimensional-per-sector structure of the centre, and it is the simplest case of the general split.
+Two remarks fix the interpretation. First, the assignment of $x$ to the Hermitian direction and $\varpi$ to the anti-Hermitian one is a **phase convention**, not a dynamical fact: replacing $a$ by $-ia$ swaps the roles of the two quadratures and exchanges the sector assignments, and this is the quarter-period shift of the oscillation. What is convention-independent is that the two quadratures occupy the two central directions, and those two directions lie in different sectors. Second, the decomposition uses only the **central** part of the sector split: $\mathbb{B}_{\Psi} \cap \mathbb{B}_{C}$ is the real axis $e_t\mathbb{R}$ and $\mathbb{B}_{\Phi} \cap \mathbb{B}_{C}$ the imaginary axis $ie_t\mathbb{R}$. The vector directions $i\vec e_{\imath}$ of $\mathbb{B}_{\Psi}$ and $\vec e_{\imath}$ of $\mathbb{B}_{\Phi}$ are not involved. The oscillator's sector structure is the one-dimensional-per-sector structure of the centre, and it is the simplest case of the general split.
 
 ### Contrast with the Quantum Oscillator
 
@@ -268,7 +268,7 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq \nu)$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ $(\imath\neq \jmath)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector: $iq'_te_t + \vec q$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector: $h_t\,e_t + i\vec h_\Psi$ |
@@ -291,7 +291,7 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | $\{x, p\} = 1$ | Poisson bracket; bracket conventions of the companion article |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

@@ -20,7 +20,7 @@ $$
 \tilde Q=Q_t e_t+\vec Q=Q_t e_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,
 $$
 
-with the four coefficients complex. Writing each as a real part plus $i$ times a real part gives eight real parameters, and the split of those eight is the framework's first structural statement. The four $q_\mu$ are the coefficients of $e_\mu$; the four $q'_\mu$ are the coefficients of $ie_\mu$. The prime marks the parameter that carries the $i$.
+with the four coefficients complex. Writing each as a real part plus $i$ times a real part gives eight real parameters, and the split of those eight is the framework's first structural statement. The four $q_{\imath}$ are the coefficients of $e_{\imath}$; the four $q'_{\imath}$ are the coefficients of $ie_{\imath}$. The prime marks the parameter that carries the $i$.
 
 The basis multiplies as the quaternions do, with $e_t=1$ and
 
@@ -72,7 +72,7 @@ The Lorentzian minus is $i^{2}$. Nothing else supplies it. The norm is the algeb
 The series carries one metric on this account,
 
 $$
-\delta_{\mu\nu}=(1,1,1,1),
+\delta_{\imath\jmath}=(1,1,1,1),
 $$
 
 diagonal with all four coefficients $+1$, the matrix of the sum of squares. It is the same in both frames, and it is read off the multiplication table rather than postulated ([The Unit Metric in the Biquaternion Universe](the-unit-metric-in-the-biquaternion-universe.html)). No index is raised, and the Lorentzian minus appears once, in the square of the temporal direction, instead of being carried by the metric and remembered at every contraction.
@@ -200,21 +200,21 @@ Where the other side of the multiplication does appear is the mass, and only the
 With the field written in the complete polar decomposition, the derivative takes the form
 
 $$
-\frac{\partial\tilde\Xi}{\partial R_\mu}
-=\tilde\Xi\left[\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
-+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
-+\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
-+\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu}\right],
+\frac{\partial\tilde\Xi}{\partial R_{\imath}}
+=\tilde\Xi\left[\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_{\imath}}
++i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}
++\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_{\imath}}\Bigr)\tilde u_{\mathrm r}
++\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_{\imath}}\right],
 $$
 
 and the four brackets are of four different types.
 
 | Bracket | Type | Zero when |
 |---|---|---|
-| $\tfrac12\partial_\mu\ln\rho_{\mathrm{num}}$ | real central scalar | the density is constant |
-| $i\,\partial_\mu\theta_{\mathrm{pha}}$ | central imaginary | the angle is constant |
-| $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the boost is constant |
-| $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | the rotor is constant |
+| $\tfrac12\partial_{\imath}\ln\rho_{\mathrm{num}}$ | real central scalar | the density is constant |
+| $i\,\partial_{\imath}\theta_{\mathrm{pha}}$ | central imaginary | the angle is constant |
+| $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the boost is constant |
+| $\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}$ | real vector part | the rotor is constant |
 
 The types are the four transport laws of the fluid. The first is the continuity equation for the density. The second is the guidance equation, since the gradient of the phase is the momentum element $\tilde K_{\Phi}=\tilde\nabla_{\Phi}\theta_{\mathrm{pha}}$. The third is the transport of the velocity, which is the logarithmic derivative of the boost, the element whose inverse square is the four-velocity. The fourth is the transport of the spin direction, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
 
@@ -241,19 +241,19 @@ So the three data of the fluid are three factors of one element, and the reading
 The current of a solution splits into a convection part and a spin part,
 
 $$
-j_\mu=j^{\mathrm{conv}}_\mu+j^{\mathrm{spin}}_\mu,
+j_{\imath}=j^{\mathrm{conv}}_{\imath}+j^{\mathrm{spin}}_{\imath},
 $$
 
 the first the orbital current of the momentum and the second the divergence of a spin density ([The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html)). The second term fixes the tree-level gyromagnetic factor at $g=2$, and its radiative correction is the anomalous moment.
 
-The algebra writes the split without a spinor bilinear list. The current is the pairing of the field with the element the generator carries into it, $j_\mu=\bar{\tilde\Xi}\,i e_\mu\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}$, a scalar part of a product of elements. The algebra also says where the two terms sit. The convection term is the central direction, and the spin term is the bivector direction, with its magnetic part in the informational sector. The identity holds on solutions because the equation is used once for the field and once for its adjoint, and the mass divides both terms, which is why the covariant form needs $m\neq0$ and the massless case has its own reading.
+The algebra writes the split without a spinor bilinear list. The current is the pairing of the field with the element the generator carries into it, $j_{\imath}=\bar{\tilde\Xi}\,i e_{\imath}\tilde\Xi\,\vec e_{\mathrm{spt}(\imath)}$, a scalar part of a product of elements. The algebra also says where the two terms sit. The convection term is the central direction, and the spin term is the bivector direction, with its magnetic part in the informational sector. The identity holds on solutions because the equation is used once for the field and once for its adjoint, and the mass divides both terms, which is why the covariant form needs $m\neq0$ and the massless case has its own reading.
 
 ### The vorticity and the nodal set
 
 The velocity of the Dirac field is a unit element squared, not a gradient, so its one-form is not closed in general. The obstruction is the vorticity 2-form
 
 $$
-\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu},
+\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath},
 $$
 
 which is the antisymmetrised gradient of the frame element and vanishes exactly where the frame is constant ([The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html)). A spatially varying rapidity is enough to make it nonzero.
@@ -417,7 +417,7 @@ The strongest objection is that this is a reformulation. It is, and the corpus a
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, eight real dimensions |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Basis, $e_t=1$, $\vec e_\eta^{2}=-e_t$, products cyclic |
 | $i$ | Central scalar imaginary |
-| $q_\mu$, $q'_\mu$ | Real and imaginary parts of the coefficient $Q_\mu$; the prime marks the parameter that carries the $i$ |
+| $q_{\imath}$, $q'_{\imath}$ | Real and imaginary parts of the coefficient $Q_{\imath}$; the prime marks the parameter that carries the $i$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde Q^{\natural}$ | Quaternion conjugate |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm |
@@ -426,7 +426,7 @@ The strongest objection is that this is a reformulation. It is, and the corpus a
 | $\tilde\nabla_{\Phi}(\tilde\nabla_{\Phi})^{\natural}=\Box_{\Phi}$ | The wave operator, central and scalar |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $r'_t$ | Material time coordinate, with $e_t=1$ and temporal direction $ie_t$ |
-| $R_\mu$ | The four coordinates of the material frame; indices stay low |
+| $R_{\imath}$ | The four coordinates of the material frame; indices stay low |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word: scale, phase, boost, rotor |
 | $\rho_{\mathrm{num}}$ | The number density, $\rho_{\mathrm{num}}=\varrho^{2}=\lvert\langle\tilde\Xi\rangle_{\natural}\rvert$; the scale is $\varrho$, and $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. Not the Hermitian density $\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})$, which stays positive on the cone |
 | $\tilde U_{\Psi,\mathrm b}$ | Boost factor, Hermitian positive |

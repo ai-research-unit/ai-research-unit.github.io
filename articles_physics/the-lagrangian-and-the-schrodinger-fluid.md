@@ -20,7 +20,7 @@ This is the variational companion of [The Schrödinger Fluid](the-schrodinger-fl
 
 ## Conventions
 
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $^{\natural}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The field is the central one, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varrho>0$ and $\varepsilon=\pm1$, so $\rho_{\mathrm{num}}=\varrho^{2}$ and $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$. The time variable is $t'$ and the material time is $r'_t=ct'$; at this rung only $t'$ appears, because the equation has one time derivative. The action is a functional of two real fields over $(t',\vec r)$, and the domain is $\varrho>0$, which excludes the nodal set.
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $^{\natural}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The field is the central one, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varrho>0$ and $\varepsilon=\pm1$, so $\rho_{\mathrm{num}}=\varrho^{2}$ and $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$. The time variable is $t'$ and the material time is $r'_t=ct'$; at this rung only $t'$ appears, because the equation has one time derivative. The action is a functional of two real fields over $(t',\vec r)$, and the domain is $\varrho>0$, which excludes the nodal set.
 
 ## The Action in the Fluid Variables
 

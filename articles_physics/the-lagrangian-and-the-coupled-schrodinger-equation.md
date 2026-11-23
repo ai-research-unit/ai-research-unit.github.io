@@ -41,10 +41,10 @@ so $K$ is Hermitian and $\mathrm{Sc}(K)$ is real. The antisymmetrisation is what
 **The gradient term is positive and real.** For each $\eta$,
 
 $$
-\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)=\sum_{\mu=0}^{3}\big|(D_\eta\tilde\Xi)_\mu\big|^{2}\ \ge 0,
+\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)=\sum_{\imath=0}^{3}\big|(D_\eta\tilde\Xi)_{\imath}\big|^{2}\ \ge 0,
 $$
 
-a sum of four moduli. This is the one place where the coupling changes the action's *sign structure* rather than its letters: the free gradient term is $\sum_\mu|\partial_\eta\tilde\Xi_\mu|^{2}$, also positive, and the covariant version is positive because $D_\eta$'s added term is anti-Hermitian and therefore does not disturb the modulus. The consequence is that the action's kinetic part is bounded below by zero and the energy is bounded below whenever $ϙ\omicron_{\mathrm{pot}}$ is, which is the diamagnetic statement in its variational form.
+a sum of four moduli. This is the one place where the coupling changes the action's *sign structure* rather than its letters: the free gradient term is $\sum_{\imath}|\partial_\eta\tilde\Xi_{\imath}|^{2}$, also positive, and the covariant version is positive because $D_\eta$'s added term is anti-Hermitian and therefore does not disturb the modulus. The consequence is that the action's kinetic part is bounded below by zero and the energy is bounded below whenever $ϙ\omicron_{\mathrm{pot}}$ is, which is the diamagnetic statement in its variational form.
 
 **The potential term is Hermitian.** $ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi$ satisfies $[\cdot]^{*}=ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi$ because $ϙ\omicron_{\mathrm{pot}}$ is real and $\tilde\Xi^{*}\tilde\Xi$ is Hermitian; its $\mathrm{Sc}$ is $ϙ\omicron_{\mathrm{pot}}\,n$ with $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)\ge0$. The sign is the companions': $+$ in the action, so that the variation gives $-ϙ\omicron_{\mathrm{pot}}$ in the equation, which is the Hamiltonian with the potential energy subtracted.
 
@@ -177,7 +177,7 @@ and the temporal component is the density $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)
 
 $$
 -\frac{\partial L}{\partial A_\eta}
-=\frac{h^{2}}{8\pi^{2}m}\cdot 2\,\mathrm{Re}\sum_\mu\frac{2\pi iϙ}{h}\,\overline{\big(D_\eta\tilde\Xi\big)_\mu}\,\tilde\Xi_\mu
+=\frac{h^{2}}{8\pi^{2}m}\cdot 2\,\mathrm{Re}\sum_{\imath}\frac{2\pi iϙ}{h}\,\overline{\big(D_\eta\tilde\Xi\big)_{\imath}}\,\tilde\Xi_{\imath}
 =-\frac{h ϙ}{2\pi m}\,\mathrm{Im}\,\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}\tilde\Xi\big)
 =ϙ\,j_\eta,
 $$
@@ -231,7 +231,7 @@ The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t,\ \vec e_\mu$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
+| $e_t,\ \vec e_{\imath}$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $*$, $\natural$ | Hermitian conjugation, quaternion conjugation |
 | $\mathrm{Sc}$ | Scalar part |

@@ -102,15 +102,15 @@ For a purely electric potential $\tilde A_{\Phi}^{\natural}=+\tilde A_{\Phi}$, s
 
 **The asymmetry is not a decomposition.** It is tempting to read the electric and magnetic parts as two couplings sharing a coefficient, since each is self-conjugate up to a sign. The gauge law rules this out: the entry absorbs $-\tilde\nabla_\Phi\Gamma$, which has a time part and a space part, so a purely electric potential does not stay purely electric under a general gauge function. Purity is a property of a gauge and not of the entry. Only the whole covector is covariant.
 
-**Component form.** Write $\tilde A_{\Phi}=\sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$ — the abelian case, in which the connection coefficients are central scalars and commute with one another and with the units. Since each $A_\mu$ is central, the covariant derivative separates:
+**Component form.** Write $\tilde A_{\Phi}=\sum_{\imath} A_{\imath} e_{\imath}$ with complex scalar coefficients $A_{\imath}$ — the abelian case, in which the connection coefficients are central scalars and commute with one another and with the units. Since each $A_{\imath}$ is central, the covariant derivative separates:
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu e_\mu\,\tilde\nabla_{\mathrm{gco},\Phi,\mu},
+\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\imath} e_{\imath}\,\tilde\nabla_{\mathrm{gco},\Phi,\imath},
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\frac{\partial}{\partial R_\mu}+\frac{2\pi i\,ϙ}{h}A_\mu,
+\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\frac{\partial}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath},
 $$
 
-with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial x_\eta$. Each $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$ is a central scalar operator: the derivative acts on the coefficients only and the $A_\mu$ are complex numbers, so every component commutes with every element of $\mathbb{B}$ and with every invertible element.
+with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial x_\eta$. Each $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ is a central scalar operator: the derivative acts on the coefficients only and the $A_{\imath}$ are complex numbers, so every component commutes with every element of $\mathbb{B}$ and with every invertible element.
 
 **That one line is the whole of the polar reading.** Because each component is central, the interaction term passes through the field and can be written on either side of it. It cannot rotate a non-central factor; it multiplies the whole word. The polar companion draws every consequence of that sentence, and this article uses it once, in §*Larmor Precession and the Gyromagnetic Ratio*.
 
@@ -128,7 +128,7 @@ $$
 \theta_{\mathrm{gau}}:=\frac{2\pi ϙ\,\Gamma}{h}
 $$
 
-is the gauge angle. The parent's open question writes the standard physics convention $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{2\pi i\,ϙA_\mu}{h}$, with the opposite sign; that is the same coupling with the opposite sign of $ϙ$, and this article inherits the gauge principle's sign and does not flip it. *Relativistic Mechanics from the Dirac Wave* writes $\vec p-q\vec A$ for the same reason, and the two writings are one coupling.
+is the gauge angle. The parent's open question writes the standard physics convention $\partial/\partial R_{\imath}\to\partial/\partial R_{\imath}-\frac{2\pi i\,ϙA_{\imath}}{h}$, with the opposite sign; that is the same coupling with the opposite sign of $ϙ$, and this article inherits the gauge principle's sign and does not flip it. *Relativistic Mechanics from the Dirac Wave* writes $\vec p-q\vec A$ for the same reason, and the two writings are one coupling.
 
 **Left action, and the mirror through $\natural$.** Every coupling used here acts on the left. The mirror — derivative and connection both on the right — is not a second prescription. The renaming theorem gives
 
@@ -230,13 +230,13 @@ The common factor follows from $\lambda$ being a central *scalar*: $\natural$ ne
 **The second-order consequence.** The covariant derivative satisfies the operator identity
 
 $$
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\mu}\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F
 $$
 
 (*The Covariant Derivative and Gauge Connection in Biquaternionic Form*), the scalar part being the covariant d'Alembertian and the vector part the curvature. Applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the first member and using the second gives
 
 $$
-\Bigl(\sum_{\mu}\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
+\Bigl(\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
 $$
 
 a covariant wave equation with a curvature term. The corresponding statement for $\tilde\Xi_L$ carries $\tilde\nabla_{\mathrm{gco},\Phi}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ in place of $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$. The curvature is the part of the connection that no phase can absorb: a gradient can be gauged away and a field strength cannot.
@@ -261,10 +261,10 @@ because a linear mass term carries the same factor. The two sides transform iden
 
 A constant potential is the one background in which the coupled equation is solved in closed form, and it settles the two things a solution is asked to settle: what the spectrum does and what it does not do.
 
-**A constant potential is pure gauge.** On flat space, constant $A_\mu$ is a gradient: with $\Gamma=-\sum_\mu A_\mu R_\mu$ one has $\partial_\mu\Gamma=-A_\mu$, so $\tilde A_{\Phi}=-\tilde\nabla_\Phi\Gamma$ up to the constant part that adds nothing. Hence the coupled equation with constant $\tilde A_{\Phi}$ is carried to the free equation by the transformation
+**A constant potential is pure gauge.** On flat space, constant $A_{\imath}$ is a gradient: with $\Gamma=-\sum_{\imath} A_{\imath} R_{\imath}$ one has $\partial_{\imath}\Gamma=-A_{\imath}$, so $\tilde A_{\Phi}=-\tilde\nabla_\Phi\Gamma$ up to the constant part that adds nothing. Hence the coupled equation with constant $\tilde A_{\Phi}$ is carried to the free equation by the transformation
 
 $$
-\tilde\Xi\longmapsto\exp\Bigl(-i\frac{2\pi ϙ}{h}\sum_\mu A_\mu R_\mu\Bigr)\tilde\Xi,
+\tilde\Xi\longmapsto\exp\Bigl(-i\frac{2\pi ϙ}{h}\sum_{\imath} A_{\imath} R_{\imath}\Bigr)\tilde\Xi,
 $$
 
 which is a multiplication by one central phase with a linear argument.
@@ -372,7 +372,7 @@ A single basis operator is a tensor $a\otimes b$ read through $L_aR_b$, so its c
 **The current in the older spelling.** The conserved current of the older literature is the bilinear built with the generator of the coordinate and with the adjoint row,
 
 $$
-j_\mu=\tilde\Xi^{\dagger}iR_{\vec e_x}\,iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\tilde\Xi,
+j_{\imath}=\tilde\Xi^{\dagger}iR_{\vec e_x}\,iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\tilde\Xi,
 \qquad
 \mathrm{spt}(t)=x,\ \mathrm{spt}(\eta)=y .
 $$
@@ -382,7 +382,7 @@ Its time component is $\tilde\Xi^{\dagger}\tilde\Xi$ and its spatial components 
 **The dictionary, and the point of making it.** Every ingredient of that display is a basis operator of the algebra except one: the adjoint row is built on $iR_{\vec e_x}$, a one-sided operator. Read as a pairing, the same object is
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x\bigr),
+j_{\imath}=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_{\imath}\tilde\Xi\,\vec e_{\mathrm{spt}(\imath)}\bigr)\vec e_x\bigr),
 $$
 
 a scalar part of three factors: the field, an invertible element, the field again. **The adjoint row and the right multiplier $\vec e_x$ are the same datum in two spellings.** The older form hides it inside the adjoint; the pairing shows it as the last factor, and the last factor is a frame unit and not a field.
@@ -392,17 +392,17 @@ a scalar part of three factors: the field, an invertible element, the field agai
 **The identities the corpus cites.** With $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,
 \qquad
 (\gamma_\eta)^{2}=-I_4,
 \qquad
 \gamma_5^{2}=I_4,
 \qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\ \ (\mu\ne\nu),
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\ \ (\imath\ne\jmath),
 \qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,
 \qquad
@@ -410,19 +410,19 @@ S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},
 \qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}
++\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
 
-With every index low and each slot carrying the interval's weight $\varepsilon_\mu$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$, and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+With every index low and each slot carrying the interval's weight $\varepsilon_{\imath}$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$, and $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_{\imath}=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
 **What this section does not do.** It does not use the gammas as a tool. The coupled equation, its covariance and its solutions are stated in the algebra throughout; the gammas appear here so that a reader who knows them can place the algebra's objects, and nowhere else.
 
@@ -463,7 +463,7 @@ The magnetic moment sits in the same factor as the velocity, so the Larmor rate 
 The conserved current is not a product of the field with its conjugate. It is a pairing with two fixed frame units, which is the older literature's adjoint row in the algebra's spelling:
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x\bigr).
+j_{\imath}=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_{\imath}\tilde\Xi\,\vec e_{\mathrm{spt}(\imath)}\bigr)\vec e_x\bigr).
 $$
 
 The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, and the two parts enter it with the same sign, so it is not conserved. The variational companion proves the positive statement and exhibits the failure.
@@ -486,16 +486,16 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 | $\lambda=\exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ |
 | $ϙ$ | Charge; the algebra fixes neither its value nor its sign |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$ | Covariant derivative, left action |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial/\partial R_\mu+\frac{2\pi i\,ϙ}{h}A_\mu$ | Components; central scalars |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial/\partial R_{\imath}+\frac{2\pi i\,ϙ}{h}A_{\imath}$ | Components; central scalars |
 | $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}^{\natural}$ | Its $\natural$-image; the operator of the second member |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | Material time derivative |
-| $\tilde F$ | Field strength; $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F$ |
+| $\tilde F$ | Field strength; $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F$ |
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ | Covariant wavevector; gauge invariant; in $\mathbb{B}_{\Phi}$ |
 | $\kappa_t,\vec\kappa$ | Components of $\tilde K_{\Phi,\mathrm{gco}}$; $\kappa_t^{2}-|\vec\kappa|^{2}=k_m^{2}$ |
 | $\pi_t,\vec\pi$ | Components of the canonical $\tilde K_\Phi$; the mass shell is displaced by $-\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ |
-| $j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}i(i e_\mu\tilde\Xi\vec e_{\mathrm{spt}(\mu)})\vec e_x\bigr)$ | The conserved current; two fixed frame units |
+| $j_{\imath}=\mathrm{Sc}\bigl(\tilde\Xi^{*}i(i e_{\imath}\tilde\Xi\vec e_{\mathrm{spt}(\imath)})\vec e_x\bigr)$ | The conserved current; two fixed frame units |
 | $\tilde J_{\Phi,\mathrm{sp}}=i\tilde\Xi\tilde\Xi^{*}$ | The naive bilinear; gauge invariant, of the density sign, **not conserved** |
-| $\gamma_\mu,\ \gamma_5$ | Basis operators of the legacy frame; used in one section only |
+| $\gamma_{\imath},\ \gamma_5$ | Basis operators of the legacy frame; used in one section only |
 
 ## Further Reading
 

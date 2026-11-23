@@ -8,7 +8,7 @@ Why leptons are not the quarks again. The two mixing matrices are the same kind 
 
 The claim, in four parts.
 
-- **The matrix is a change of basis, and it is the same operator as CKM.** The weak interaction is generation-universal, the mass operators are not, and the matrix is the relative rotation $U=U_e^{\dagger}U_\nu$. The framework supplies the arena $\mathrm{U}(3)$ and the label on which it acts; it does not supply the point in the arena.
+- **The matrix is a change of basis, and it is the same operator as CKM.** The weak interaction is generation-universal, the mass operators are not, and the matrix is the relative rotation $U=U_e^{\dagger}U_{\jmath}$. The framework supplies the arena $\mathrm{U}(3)$ and the label on which it acts; it does not supply the point in the arena.
 - **Two angles are near maximal and one is not small.** $\theta_{23}=49^\circ$ is $4^\circ$ from maximal, $\theta_{12}=33.4^\circ$ is $12^\circ$ from maximal but only $2^\circ$ from the tribimaximal value, and $\theta_{13}=8.6^\circ$ — the reactor angle — is the one that broke the symmetrical patterns. Its measurement in 2012 is why the tribimaximal ansatz is dead, and why the only pattern that survives is the one that predicted a nonzero reactor angle from a charged-lepton rotation.
 - **The CP asymmetry is large because the angles are large.** $J$ is a product of four angle factors — $c_{12}s_{12}$, $c_{13}^2$, $s_{13}$, $c_{23}s_{23}$ — and one sine of the phase. The quark sector has small angles, so $J$ is small whatever the phase does. Here $J=-0.026$ at the fit value, with a ceiling of $\pm0.033$ at maximal CP violation, which is $850$ times the quark value.
 - **Two of the six parameters are invisible in oscillation.** Every oscillation probability is built from products $U_{\alpha i}U^{*}_{\beta i}U^{*}_{\alpha j}U_{\beta j}$, in which a column phase appears once and its conjugate once, so the Majorana phases cancel identically — not approximately, and not because oscillation "measures mass-squared differences", but because of the shape of the observable. They are visible only in lepton-number violation, where the amplitude carries $U_{ei}^2$ and the phases add rather than cancel, and that is why neutrinoless double beta decay is the experiment that decides whether the neutrino is its own antiparticle.
@@ -20,12 +20,12 @@ The order. The matrix and its placement, then the parameterisation and the count
 The definition. The charged-current interaction in the mass basis carries
 
 $$
-\mathcal{L}_{W}\supset\frac{g}{\sqrt2}\sum_\mu\varepsilon_\mu W^-_\mu\,\bar e_{L}\gamma_\mu U_{\mathrm{PMNS}}\,\nu_{\mathrm{neu},L}+\text{h.c.},
+\mathcal{L}_{W}\supset\frac{g}{\sqrt2}\sum_{\imath}\varepsilon_{\imath} W^-_{\imath}\,\bar e_{L}\gamma_{\imath} U_{\mathrm{PMNS}}\,\nu_{\mathrm{neu},L}+\text{h.c.},
 \qquad
-U_{\mathrm{PMNS}}=U_e^{\dagger}U_\nu ,
+U_{\mathrm{PMNS}}=U_e^{\dagger}U_{\jmath} ,
 $$
 
-where $U_e$ and $U_\nu$ are the unitary matrices that diagonalise the charged-lepton and neutrino mass matrices. It is the same construction as CKM's $V=X_u^{\dagger}X_d$, with the neutrino playing the role of the up-type quark.
+where $U_e$ and $U_{\jmath}$ are the unitary matrices that diagonalise the charged-lepton and neutrino mass matrices. It is the same construction as CKM's $V=X_u^{\dagger}X_d$, with the neutrino playing the role of the up-type quark.
 
 The framework's placement. [The CKM article](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) established that the mixing term factorises into the algebra's own charged-current generator and a $*$-unitary operator $V$ on the flavour factor $\mathcal{F}$; the generator is supplied exactly, the operator is an arbitrary element of $\mathrm{U}(N_g)$, and the only requirement is unitarity, which the norm-preserving group of the multiplicity factor provides. The leptonic case is the same term with the down-type field replaced by the neutrino field. The neutrino field's label structure — including the $L$ label on the charged current and the two values of the chirality — is [the Majorana article's](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) subject.
 
@@ -51,7 +51,7 @@ $$
 3\ \text{angles}+1\ \text{Dirac phase}+2\ \text{Majorana phases}.
 $$
 
-So the number of PMNS parameters depends on the neutrino's nature: six for Majorana, four for Dirac. That is a test only in the sense that a sixth number can exist; it is not a test oscillation can perform, because oscillation is blind to the two extra phases and counts four either way. What could count them is a lepton-number-violating process, and even there the count is indirect — the rate of $\beta\beta_{0\nu}$ is one number depending on both phases, so measuring it constrains the pair without resolving them. The parameter count is exact and the observables are fewer than the parameters.
+So the number of PMNS parameters depends on the neutrino's nature: six for Majorana, four for Dirac. That is a test only in the sense that a sixth number can exist; it is not a test oscillation can perform, because oscillation is blind to the two extra phases and counts four either way. What could count them is a lepton-number-violating process, and even there the count is indirect — the rate of $\beta\beta_{0\jmath}$ is one number depending on both phases, so measuring it constrains the pair without resolving them. The parameter count is exact and the observables are fewer than the parameters.
 
 The standard form. In the PDG convention,
 
@@ -65,7 +65,7 @@ s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & -c_{12}s_{23}-s_{12}
 \times\mathrm{diag}\!\left(1,e^{i\theta_{\mathrm{mjr},21}/2},e^{i\theta_{\mathrm{mjr},31}/2}\right) .
 $$
 
-The three angles are written as $s_{ij}=\sin\theta_{ij}$, $c_{ij}=\cos\theta_{ij}$; the Dirac phase $\delta$ sits in one place and only one; and the two Majorana phases $\theta_{\mathrm{mjr},21}$, $\theta_{\mathrm{mjr},31}$ multiply the second and third columns, real because each is the argument of a unit complex number. The factor $\mathrm{diag}(1,\cdot,\cdot)$ is what makes the last two phases unobservable in oscillation and observable in $\beta\beta_{0\nu}$.
+The three angles are written as $s_{ij}=\sin\theta_{ij}$, $c_{ij}=\cos\theta_{ij}$; the Dirac phase $\delta$ sits in one place and only one; and the two Majorana phases $\theta_{\mathrm{mjr},21}$, $\theta_{\mathrm{mjr},31}$ multiply the second and third columns, real because each is the argument of a unit complex number. The factor $\mathrm{diag}(1,\cdot,\cdot)$ is what makes the last two phases unobservable in oscillation and observable in $\beta\beta_{0\jmath}$.
 
 A convention that matters. The Majorana-phase normalisation is not universal: some texts write $e^{i\theta_{\mathrm{mjr}}}$ rather than $e^{i\theta_{\mathrm{mjr}}/2}$, which shifts every quoted $\alpha$ by a factor of two. This article uses the half-angle form and says so, and any comparison with a table elsewhere must check which is in use. The same discipline that [the parton-model article](the-parton-model-and-deep-inelastic-scattering.html) imposed on the plus prescription applies here: the convention belongs in the display, not in a footnote.
 
@@ -94,10 +94,10 @@ The atmospheric angle is $4^\circ$ above maximal; the solar angle is $12^\circ$ 
 
 The magnitudes of the matrix itself, which is what oscillation experiments actually constrain:
 
-| | $\nu_1$ | $\nu_2$ | $\nu_3$ |
+| | ${\jmath}_1$ | ${\jmath}_2$ | ${\jmath}_3$ |
 |---|---|---|---|
 | $\nu_{\mathrm{neu},e}$ | $0.825$ | $0.544$ | $0.149$ |
-| $\nu_{\mathrm{neu},\mu}$ | $0.312$ | $0.588$ | $0.747$ |
+| $\nu_{\mathrm{neu},\imath}$ | $0.312$ | $0.588$ | $0.747$ |
 | $\nu_{\mathrm{neu},\tau}$ | $0.470$ | $0.599$ | $0.648$ |
 
 Each row and each column has unit norm to the accuracy of three printed digits, and the check is worth making explicit: the matrix was assembled from the four parameters above and $\max\lvert (UU^{\dagger}-1)_{ij}\rvert$ came out at $2.2\times10^{-16}$, which is one unit of double-precision rounding — the matrix is unitary to machine precision, not to a stated tolerance. A mixing matrix that fails this test has a missing or doubled phase.
@@ -117,7 +117,7 @@ The ratio is $33.8$, so the two oscillation lengths differ by a factor of thirty
 The statement. A neutrino produced in a flavour eigenstate is a superposition of mass eigenstates. Each mass eigenstate accumulates a phase $e^{-iE_it}$ at its own rate, so the superposition's flavour content changes with distance:
 
 $$
-P(\nu_\alpha\to\nu_\beta)=\delta_{\alpha\beta}-4\sum_{i>j}\mathrm{Re}\left(U_{\alpha i}U^{*}_{\beta i}U^{*}_{\alpha j}U_{\beta j}\right)\sin^2\frac{\delta m^2_{ij}L}{4E}
+P(\jmath_\alpha\to\jmath_\beta)=\delta_{\alpha\beta}-4\sum_{i>j}\mathrm{Re}\left(U_{\alpha i}U^{*}_{\beta i}U^{*}_{\alpha j}U_{\beta j}\right)\sin^2\frac{\delta m^2_{ij}L}{4E}
 +2\sum_{i>j}\mathrm{Im}\left(\dots\right)\sin\frac{\delta m^2_{ij}L}{2E} .
 $$
 
@@ -159,7 +159,7 @@ Both numbers are measured: roughly $0.55$ for the low-energy $pp$ neutrinos and 
 The invariant. The rephasing-invariant measure of CP violation is
 
 $$
-J=\mathrm{Im}\left(U_{e2}U_{\mu3}U^{*}_{e3}U^{*}_{\mu2}\right)
+J=\mathrm{Im}\left(U_{e2}U_{\imath3}U^{*}_{e3}U^{*}_{\imath2}\right)
 =c_{12}s_{12}c_{13}^{2}s_{13}c_{23}s_{23}\sin\delta .
 $$
 
@@ -260,10 +260,10 @@ Why the range matters more than the value. For the normal ordering the three ter
 
 ## CP Violation in the Lepton Sector and Leptogenesis
 
-The asymmetry, in the oscillation channel. For $\nu_{\mathrm{neu},\mu}\to\nu_{\mathrm{neu},e}$ against $\bar\nu_{\mathrm{neu},\mu}\to\bar e$, the difference is proportional to $J$ times a product of three $\sin$ factors:
+The asymmetry, in the oscillation channel. For $\nu_{\mathrm{neu},\imath}\to\nu_{\mathrm{neu},e}$ against $\bar\nu_{\mathrm{neu},\imath}\to\bar e$, the difference is proportional to $J$ times a product of three $\sin$ factors:
 
 $$
-\delta P\equiv P(\nu_{\mathrm{neu},\mu}\to\nu_{\mathrm{neu},e})-P(\bar\nu_{\mathrm{neu},\mu}\to\bar e)=-16J\sin\frac{\delta m^2_{21}L}{4E}\sin\frac{\delta m^2_{31}L}{4E}\sin\frac{\delta m^2_{32}L}{4E} ,
+\delta P\equiv P(\nu_{\mathrm{neu},\imath}\to\nu_{\mathrm{neu},e})-P(\bar\nu_{\mathrm{neu},\imath}\to\bar e)=-16J\sin\frac{\delta m^2_{21}L}{4E}\sin\frac{\delta m^2_{31}L}{4E}\sin\frac{\delta m^2_{32}L}{4E} ,
 $$
 
 and this is an identity, not a parametrisation: it follows from the interference term above with $\sin(2x)=2\sin x\cos x$ and the three-mass-difference closure $\delta m^2_{31}=\delta m^2_{32}+\delta m^2_{21}$. The argument is $\delta m^2L/(4E)$ in all three factors — the same argument the $\sin^2$ term carries — and writing it as $\delta m^2L/(2E)$ as well would square the wrong function. So the asymmetry requires three nonzero mass differences, three nonzero angles, and a phase. All four conditions hold, and the asymmetry is at the per-cent to per-ten-cent level for a well-chosen baseline. That is why the current generation of long-baseline experiments is designed around it.
@@ -294,7 +294,7 @@ The ledger.
 
 | Item | Status |
 |---|---|
-| $U_{\mathrm{PMNS}}=U_e^{\dagger}U_\nu$ | **Imported** structure; **placed** on the flavour factor by the CKM article |
+| $U_{\mathrm{PMNS}}=U_e^{\dagger}U_{\jmath}$ | **Imported** structure; **placed** on the flavour factor by the CKM article |
 | The charged-current term with $U$ | **Framework**: the generator is exact, $U$ is a $*$-unitary element |
 | $\mathrm{U}(3)$ and its parameter count $4$ or $6$ | **Framework supplies the group**; the count is group theory |
 | The three angles and $\delta$ | **Imported** measurements |
@@ -314,7 +314,7 @@ The ledger.
 
 ## Summary
 
-The PMNS matrix is the lepton analogue of CKM and the same kind of object: a $*$-unitary operator on the generation label, $U=U_e^{\dagger}U_\nu$, placed by the same construction. The framework supplies the arena $\mathrm{U}(3)$, and it does not supply the point.
+The PMNS matrix is the lepton analogue of CKM and the same kind of object: a $*$-unitary operator on the generation label, $U=U_e^{\dagger}U_{\jmath}$, placed by the same construction. The framework supplies the arena $\mathrm{U}(3)$, and it does not supply the point.
 
 The parameter count depends on the neutrino's nature: four if Dirac, six if Majorana, the difference being two phases that only a lepton-number-violating process can see. Oscillation cannot tell the two cases apart, so the count is a statement about the matrix and not an observable.
 
@@ -334,8 +334,8 @@ The framework supplies the arena and transcribes the rest: no mechanism for the 
 
 | Symbol | Meaning |
 |---|---|
-| $U_{\mathrm{PMNS}}$ | The lepton mixing matrix, $U_e^{\dagger}U_\nu$ |
-| $U_e$, $U_\nu$ | Diagonalisations of the charged-lepton and neutrino mass matrices |
+| $U_{\mathrm{PMNS}}$ | The lepton mixing matrix, $U_e^{\dagger}U_{\jmath}$ |
+| $U_e$, $U_{\jmath}$ | Diagonalisations of the charged-lepton and neutrino mass matrices |
 | $\theta_{12}$ | Solar angle, $33.4^\circ$ |
 | $\theta_{13}$ | Reactor angle, $8.58^\circ$ |
 | $\theta_{23}$ | Atmospheric angle, $49.0^\circ$ |
@@ -351,7 +351,7 @@ The framework supplies the arena and transcribes the rest: no mechanism for the 
 | $\theta_C$ | Cabibbo angle, $13.0^\circ$, used by the trimaximal relation |
 | $P_{ee}$ | Electron-neutrino survival probability |
 | $\bar P_{ee}$ | The same, averaged over rapid oscillations, as the solar data are |
-| $m_{\beta\beta}$ | Effective Majorana mass for $\beta\beta_{0\nu}$ |
+| $m_{\beta\beta}$ | Effective Majorana mass for $\beta\beta_{0\jmath}$ |
 | $m_\beta$ | Effective mass in tritium decay |
 | $\mathrm{U}(3)$ | The group of $*$-unitary mixing operators |
 

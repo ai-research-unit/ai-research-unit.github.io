@@ -159,7 +159,7 @@ $$
 \tilde\Pi_{\mathrm{id}} = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
 $$
 
-and a spinor phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ cancels between $\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}}) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
+and a spinor phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ cancels between $\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}}) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
 
 ### The Rotor and Its Two Faces
 

@@ -56,7 +56,7 @@ The two shifts are the canonical-to-kinetic dictionary of the older literature, 
 
 **One setting is not the other.** The free article distinguishes a constant-element setting, in which the equation is an ordinary differential equation with the closed-form propagator, from an operator setting, in which it is the ordinary Schrödinger equation. The coupling has a different face in each: a shift of two numbers in the first, a covariant Laplacian in the second. The two are kept apart below, and no result is transferred between them.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$; the density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ and the free article's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. Time is $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and $i \frac{h}{2\pi} c\,\partial_{r'_t}=i \frac{h}{2\pi}\,\partial_{t'}$; the article uses $t'$ and never mixes the two. The charge $ϙ$ is the gauge principle's coupling constant, a parameter the algebra does not fix; its value and its sign are inserted, as *The Electron in Biquaternionic Form* records.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$; the density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ and the free article's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. Time is $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and $i \frac{h}{2\pi} c\,\partial_{r'_t}=i \frac{h}{2\pi}\,\partial_{t'}$; the article uses $t'$ and never mixes the two. The charge $ϙ$ is the gauge principle's coupling constant, a parameter the algebra does not fix; its value and its sign are inserted, as *The Electron in Biquaternionic Form* records.
 
 ## Conventions and the Sign Bookkeeping
 
@@ -230,7 +230,7 @@ The element has the same form as $\tilde H_\Psi$, with two real numbers shifted,
 
 **The statement.** The coupled Schrödinger system is the non-relativistic limit of the coupled Klein–Gordon system — scalar electrodynamics — in the same sense in which the free Schrödinger equation is the non-relativistic limit of the free Klein–Gordon equation. The free statement is the free article's open question 4 and this article does not close it either; what the coupling adds is a check that the two limiting procedures agree.
 
-**The two slots must agree.** Write the coupled Klein–Gordon equation in the component form of its companion, $\big(\sum_\mu D_\mu^{2}-k_m^{2}\big)\tilde\Xi=0$, and set $\tilde\Xi=e^{-ik_m r'_t}\tilde\Xi_{\mathrm{nr}}$ with $k_m=\frac{2\pi mc}{h}$. The temporal slot then produces a term linear in $k_m$, which is the mass, and the balance of that term against the spatial covariant Laplacian gives
+**The two slots must agree.** Write the coupled Klein–Gordon equation in the component form of its companion, $\big(\sum_{\imath} D_{\imath}^{2}-k_m^{2}\big)\tilde\Xi=0$, and set $\tilde\Xi=e^{-ik_m r'_t}\tilde\Xi_{\mathrm{nr}}$ with $k_m=\frac{2\pi mc}{h}$. The temporal slot then produces a term linear in $k_m$, which is the mass, and the balance of that term against the spatial covariant Laplacian gives
 
 $$
 i \frac{h}{2\pi}\,D_t\tilde\Xi_{\mathrm{nr}}\simeq\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi_{\mathrm{nr}},
@@ -291,7 +291,7 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $*,\ \natural$ | Hermitian conjugation, quaternion conjugation |
 | $\mathrm{Sc}$ | Scalar part |

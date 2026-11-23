@@ -86,12 +86,12 @@ The algebra's own bilinear is not this current, and the polar article proves why
 The current separates into a transport part and a magnetisation part. The Gordon article proves, for a solution,
 
 $$
-\bar{\tilde\Xi}\,i\,e_\mu\,\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}
-=\frac{i}{2k_m}\Big(\bar{\tilde\Xi}\,\partial_\mu\tilde\Xi-\overline{\partial_\mu\tilde\Xi}\,\tilde\Xi\Big)
-+\frac{1}{k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde\Xi}\,\Sigma_{\mu\nu}\tilde\Xi\Big),
+\bar{\tilde\Xi}\,i\,e_{\imath}\,\tilde\Xi\,\vec e_{\mathrm{spt}(\imath)}
+=\frac{i}{2k_m}\Big(\bar{\tilde\Xi}\,\partial_{\imath}\tilde\Xi-\overline{\partial_{\imath}\tilde\Xi}\,\tilde\Xi\Big)
++\frac{1}{k_m}\sum_{\jmath}\varepsilon_{\jmath}\,\partial_{\jmath}\Big(\bar{\tilde\Xi}\,\Sigma_{\imath\jmath}\tilde\Xi\Big),
 $$
 
-with $\Sigma_{\mu\nu}$ the spin generator. The first term is the convection current and carries the field's own first derivative; the second is the divergence of the antisymmetric spin density and is a bound current: it is conserved by antisymmetry alone, contributes nothing to the total charge, and cannot be removed from the magnetic moment. The article's own words are that the split separates a transport current from a magnetisation current, and not a conserved piece from a non-conserved piece.
+with $\Sigma_{\imath\jmath}$ the spin generator. The first term is the convection current and carries the field's own first derivative; the second is the divergence of the antisymmetric spin density and is a bound current: it is conserved by antisymmetry alone, contributes nothing to the total charge, and cannot be removed from the magnetic moment. The article's own words are that the split separates a transport current from a magnetisation current, and not a conserved piece from a non-conserved piece.
 
 For the fluid this is the statement that the density times the frame element is not the whole story. Part of what flows is the spin's own bound current, and the next sections say where that current meets the frame's vorticity and where the two parts company.
 
@@ -106,23 +106,23 @@ $$
 \qquad
 \tilde V_{\Phi}=\frac{\tilde P_{\Phi}}{m},
 \qquad
-v_{\Phi,\mu}=\frac{1}{m}\frac{\partial S_{\tilde\Xi}}{\partial R_\mu},
+v_{\Phi,\imath}=\frac{1}{m}\frac{\partial S_{\tilde\Xi}}{\partial R_{\imath}},
 $$
 
-and the last display is the component spelling of the element, on the pattern of $k_{\Phi,\mu}$. The index stays low and labels a direction. Since partial derivatives commute,
+and the last display is the component spelling of the element, on the pattern of $k_{\Phi,\imath}$. The index stays low and labels a direction. Since partial derivatives commute,
 
 $$
-\frac{\partial v_{\Phi,\mu}}{\partial R_\nu}-\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}
-=\frac{1}{m}\left(\frac{\partial^{2}S_{\tilde\Xi}}{\partial R_\nu\partial R_\mu}-\frac{\partial^{2}S_{\tilde\Xi}}{\partial R_\mu\partial R_\nu}\right)=0 .
+\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}}-\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}
+=\frac{1}{m}\left(\frac{\partial^{2}S_{\tilde\Xi}}{\partial R_{\jmath}\partial R_{\imath}}-\frac{\partial^{2}S_{\tilde\Xi}}{\partial R_{\imath}\partial R_{\jmath}}\right)=0 .
 $$
 
 The scalar flow is therefore closed: it is the gradient of a single function, and every closed-loop integral of it is fixed by the winding of the action. That is the fact [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) uses, and it is exact for every solution and not only for a plane wave. The qualification the scalar article carries is that the four-velocity is invertible only where the quantum potential vanishes; the closure does not depend on that qualification and holds everywhere the action is defined.
 
 ### The Dirac case is a frame
 
-**The Dirac velocity is a unit element squared, and the square of a unit element is not the derivative of anything.** The display quoted above says $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$. There is no scalar function whose gradient this is, for a reason of counting: a unit timelike element has three independent parameters, the rapidity and the two angles of its axis, and a gradient $\partial_\mu S$ has one function of the four coordinates. Four equations cannot be solved by one function unless the four are tied by three conditions, and the conditions are exactly the vanishing of the vorticity.
+**The Dirac velocity is a unit element squared, and the square of a unit element is not the derivative of anything.** The display quoted above says $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$. There is no scalar function whose gradient this is, for a reason of counting: a unit timelike element has three independent parameters, the rapidity and the two angles of its axis, and a gradient $\partial_{\imath} S$ has one function of the four coordinates. Four equations cannot be solved by one function unless the four are tied by three conditions, and the conditions are exactly the vanishing of the vorticity.
 
-The counting is worth writing out because it is the whole obstruction. A closed one-form on four coordinates has, at each event, four components subject to the six conditions $\partial_\mu v_\nu=\partial_\nu v_\mu$; the solution set is one function. The velocity of the word has four components subject to one condition, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, so it has three functions of the four coordinates. The gap between three and one is two functions at each event, and those two functions are what the word "spin fluid" names. The scalar field has one function, its action, and no gap.
+The counting is worth writing out because it is the whole obstruction. A closed one-form on four coordinates has, at each event, four components subject to the six conditions $\partial_{\imath} v_{\jmath}=\partial_{\jmath} v_{\imath}$; the solution set is one function. The velocity of the word has four components subject to one condition, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, so it has three functions of the four coordinates. The gap between three and one is two functions at each event, and those two functions are what the word "spin fluid" names. The scalar field has one function, its action, and no gap.
 
 The two functions have a classical name and the medium has a classical type. Two functions beyond a gradient is the count of a Clebsch pair: a velocity that is not a gradient reads $\vec\nabla_\Phi\phi_{\mathrm{clb}}/m+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}/m$, and its vorticity is the wedge of the pair — in the case where that wedge is the whole vorticity, which is the rank-two case and the only rotational case three dimensions allows. The rank question is settled two paragraphs below, in §*What the Clebsch reading tells*: the vorticity proper is rank two for every solution, and only the raw derivative reaches higher, through the acceleration. What no pair supplies is the orientation, which the Dirac field carries as the rotor and which a classical fluid does not have at all. A medium with a velocity and an independent orientation is a Cosserat medium, a micropolar fluid, and in its relativistic form the Weyssenhoff–Raabe spin fluid; the classical fluid is its constrained case, in which the orientation is locked to the velocity gradient and the stress is symmetric. The kinematics of the spin-half fluid are those of the general member, and [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) carries the identification with the count.
 
@@ -149,24 +149,24 @@ A rigid flow is closed. If $\tilde U$ is constant then $\tilde V_\Phi$ is consta
 The vorticity is the antisymmetrised gradient of the velocity's component spelling. Define
 
 $$
-\omega_{\mu\nu}=\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}-\frac{\partial v_{\Phi,\mu}}{\partial R_\nu},
+\omega_{\imath\jmath}=\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}-\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}},
 $$
 
-with both indices low, as the frame conventions require, and with the four directions the four coordinates. The definition is the component spelling of the element and not a tensor's slot: the four numbers $v_{\Phi,\mu}$ are the four coefficients read in the frame, and $\omega$ is their curl. The three purely spatial components are the curl of the current density $\gamma\vec v$ up to the sign of the metric, and the three mixed components are the time derivative of the current density less the spatial gradient of the energy slot $ic\gamma$.
+with both indices low, as the frame conventions require, and with the four directions the four coordinates. The definition is the component spelling of the element and not a tensor's slot: the four numbers $v_{\Phi,\imath}$ are the four coefficients read in the frame, and $\omega$ is their curl. The three purely spatial components are the curl of the current density $\gamma\vec v$ up to the sign of the metric, and the three mixed components are the time derivative of the current density less the spatial gradient of the energy slot $ic\gamma$.
 
-The vorticity vanishes for the scalar flow and need not vanish for the Dirac flow. For the scalar field the first display of the previous section gives $\omega_{\mu\nu}=0$ identically. For the Dirac field the general field gives $\omega\ne0$, and the content of this section is to name its source.
+The vorticity vanishes for the scalar flow and need not vanish for the Dirac flow. For the scalar field the first display of the previous section gives $\omega_{\imath\jmath}=0$ identically. For the Dirac field the general field gives $\omega\ne0$, and the content of this section is to name its source.
 
 ### The frame's gradient is the source
 
 **The vorticity is the frame element's logarithmic derivative, read through the velocity.** Write $\tilde V_{\Phi}=ic\tilde U^{-2}$ with $\tilde U$ the boost factor. Differentiating,
 
 $$
-\frac{\partial\tilde V_{\Phi}}{\partial R_\mu}
-=-ic\left(\tilde U^{-1}\frac{\partial\tilde U}{\partial R_\mu}\tilde U^{-2}
-+\tilde U^{-2}\frac{\partial\tilde U}{\partial R_\mu}\tilde U^{-1}\right),
+\frac{\partial\tilde V_{\Phi}}{\partial R_{\imath}}
+=-ic\left(\tilde U^{-1}\frac{\partial\tilde U}{\partial R_{\imath}}\tilde U^{-2}
++\tilde U^{-2}\frac{\partial\tilde U}{\partial R_{\imath}}\tilde U^{-1}\right),
 $$
 
-using $\partial_\mu\tilde U^{-1}=-\tilde U^{-1}(\partial_\mu\tilde U)\tilde U^{-1}$ twice. Each bracket is a product of the frame element with its own logarithmic derivative $\tilde U^{-1}\partial_\mu\tilde U$, which is the object a connection is made of. So the gradient of the velocity is built from the frame's connection and nothing else: where the frame is constant, the velocity is constant and the vorticity vanishes; where the frame varies, the vorticity is the antisymmetrised image of that variation.
+using $\partial_{\imath}\tilde U^{-1}=-\tilde U^{-1}(\partial_{\imath}\tilde U)\tilde U^{-1}$ twice. Each bracket is a product of the frame element with its own logarithmic derivative $\tilde U^{-1}\partial_{\imath}\tilde U$, which is the object a connection is made of. So the gradient of the velocity is built from the frame's connection and nothing else: where the frame is constant, the velocity is constant and the vorticity vanishes; where the frame varies, the vorticity is the antisymmetrised image of that variation.
 
 That is the precise sense in which the vorticity is sourced by the frame's gradients. The source is not the density — the density cancels out of the velocity entirely — and it is not the central angle, which no bilinear reads. It is the variation of the frame element, and the frame element carries the rapidity and the direction between them.
 
@@ -203,13 +203,13 @@ It is not the magnetic field. The Gordon spin term is a magnetisation current an
 The rank question the fluid layer leaves open is answered, and the answer removes it rather than settling it in the field's favour. The vorticity displayed above is the raw exterior derivative of the velocity, and the raw derivative of a unit timelike field is not only a vorticity: it also carries the acceleration. In the flow's rest frame the derivative splits as
 
 $$
-\omega_{\mu\nu}=\omega_{\mathrm{vrt},\mu\nu}
-+\bigl(v_{\Phi,\mu}a_\nu-v_{\Phi,\nu}a_\mu\bigr),
+\omega_{\imath\jmath}=\omega_{\mathrm{vrt},\imath\jmath}
++\bigl(v_{\Phi,\imath}a_{\jmath}-v_{\Phi,\jmath}a_{\imath}\bigr),
 \qquad
-a_\nu=v_{\Phi}^{\ \mu}\partial_\mu v_{\Phi,\nu},
+a_{\jmath}=v_{\Phi}^{\ \imath}\partial_{\imath} v_{\Phi,\jmath},
 $$
 
-with $a$ the acceleration and $\sum_\mu\varepsilon_\mu v_{\Phi,\mu}\omega_{\mathrm{vrt},\mu\nu}=0$. The projected part annihilates the velocity, so it is a two-form on the three dimensions the rest space carries, and every two-form on three dimensions is simple: $\omega_{\mathrm{vrt}}\wedge\omega_{\mathrm{vrt}}=0$ identically. **The vorticity proper is therefore rank two for every solution, one Clebsch pair always represents it, and the rank-four row of [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) is not a property of the Dirac field.**
+with $a$ the acceleration and $\sum_{\imath}\varepsilon_{\imath} v_{\Phi,\imath}\omega_{\mathrm{vrt},\imath\jmath}=0$. The projected part annihilates the velocity, so it is a two-form on the three dimensions the rest space carries, and every two-form on three dimensions is simple: $\omega_{\mathrm{vrt}}\wedge\omega_{\mathrm{vrt}}=0$ identically. **The vorticity proper is therefore rank two for every solution, one Clebsch pair always represents it, and the rank-four row of [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) is not a property of the Dirac field.**
 
 What can reach rank four is the raw derivative, and it reaches it through the acceleration and not through the spin. Because the projected part is simple, the four-form of the raw derivative is proportional to $v_{\Phi}\wedge a\wedge\omega_{\mathrm{vrt}}$, so it vanishes for an irrotational flow, for a geodesic one, and for any flow whose acceleration is orthogonal to its vorticity — and it does not vanish otherwise. The test was run on an invertible element field with rapidity $r_xr_z$ and direction angles $r_y+r'_t$ and $r_zr_x$: the rest-frame product $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}$ of the projected part came out at $10^{-19}$, and the same product for the raw derivative at $-0.106$.
 
@@ -221,7 +221,7 @@ The second is that the invariant of a loop is a Lorentz transformation and not a
 
 ### Freezing the frame
 
-Set the frame element to a constant and the spin-half fluid degenerates to a rigid flow. With $\tilde U$ constant, $\tilde V_\Phi$ is constant, $\omega_{\mu\nu}=0$, the spin direction is constant, and the Gordon spin term is a divergence whose bilinear is constant. What remains is a dust: a density and a constant velocity, with a spin direction that does not vary. Every statement of the previous sections is then either trivially satisfied or trivially false: the vorticity vanishes, the circulation vanishes, and the current is a constant times the density.
+Set the frame element to a constant and the spin-half fluid degenerates to a rigid flow. With $\tilde U$ constant, $\tilde V_\Phi$ is constant, $\omega_{\imath\jmath}=0$, the spin direction is constant, and the Gordon spin term is a divergence whose bilinear is constant. What remains is a dust: a density and a constant velocity, with a spin direction that does not vary. Every statement of the previous sections is then either trivially satisfied or trivially false: the vorticity vanishes, the circulation vanishes, and the current is a constant times the density.
 
 The degeneration is not a physical limit in which interesting physics is lost. It is the kinematic statement that a spin fluid whose frame does not vary has nothing left that a scalar fluid lacks. The spin element is still there — it is a constant direction — but a constant spin direction is a property of the state and not of the flow, and it enters no equation of motion. That is why the corpus's polar form gives the spin a whole section and the scalar article gives it none.
 
@@ -297,13 +297,13 @@ The three relativistic fluid articles of the block can be put side by side, and 
 | parameters | $2$ | $4$ | $8$ |
 | real equations | $2$ | $4$ | $8$ |
 | density | $\rho_{\mathrm{num}}=\varrho^{2}$, a bilinear | $\varrho=\sqrt{-A^{2}}$, the field's own norm | $\rho_{\mathrm{num}}$, a factor of the word |
-| velocity | $\partial_\mu S/m$, a gradient | $A_\mu/\varrho$, the field's direction | $ic\tilde U^{-2}$, the frame |
+| velocity | $\partial_{\imath} S/m$, a gradient | $A_{\imath}/\varrho$, the field's direction | $ic\tilde U^{-2}$, the frame |
 | continuity | the imaginary part of the wave equation | the Lorenz condition | the conservation of $\tilde J$, a separate statement |
-| force | $-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, a gradient | $-\vec\nabla_\Phi\ln \varrho-E_\mu/\varrho$ | the divergence of the stress, antisymmetric part included |
+| force | $-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, a gradient | $-\vec\nabla_\Phi\ln \varrho-E_{\imath}/\varrho$ | the divergence of the stress, antisymmetric part included |
 | vorticity | zero identically | $\varrho\,\omega=F-\mathrm{d}\varrho\wedge u$ | the antisymmetrised frame gradient |
 | spin in the word | none | none | the rotor |
 | equation of state | none; a Korteweg stress | $p=\epsilon=\tfrac12m^{2}\varrho^{2}$ | none; the spin's transport closes the system |
-| reverse condition | barotropic, irrotational and inviscid | none; closure is $J_\mu=m^{2}A_\mu$ | the Frenkel condition, or a free constitutive law |
+| reverse condition | barotropic, irrotational and inviscid | none; closure is $J_{\imath}=m^{2}A_{\imath}$ | the Frenkel condition, or a free constitutive law |
 | classical medium | a Korteweg fluid | a London plasma | a Cosserat medium |
 | degenerate set | $\varrho=0$, codimension two | the lightlike set, codimension one | $\varrho=0$, codimension two |
 
@@ -355,7 +355,7 @@ Compared with the block's other two fluids, this one is the only one whose word 
 
 The Dirac field's fluid is a triple at each event: the proper density $\rho_{\mathrm{num}}$, the frame element $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic e_t+\vec v)$ with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the spin direction $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The current is the density times the frame element, the spin is the density's square root times $(\frac{h}{2\pi 2})i\vec s$, and the central angle is read by neither. The Gordon decomposition splits the current into a convection part and a bound spin part, which is a magnetisation current and contributes nothing to the total charge.
 
-The flow is not a gradient. The scalar field's velocity is $\tilde\nabla_\Phi S_{\tilde\Xi}/m$, so its one-form is closed identically; the Dirac field's velocity is a unit element squared, so its one-form is closed only when the frame is constant. The counting makes the obstruction visible: a unit timelike element carries three functions of the coordinates and a gradient carries one, so two functions at each event are unaccounted for, and those two are the frame's variation. The vorticity $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is the antisymmetrised gradient of the frame element, read through the velocity; it vanishes for the scalar flow, it is non-zero for a shear flow with a varying rapidity, and the check gave a circulation of $0.434\,555\,977\,568\,337$ against the same closed form to fifteen digits.
+The flow is not a gradient. The scalar field's velocity is $\tilde\nabla_\Phi S_{\tilde\Xi}/m$, so its one-form is closed identically; the Dirac field's velocity is a unit element squared, so its one-form is closed only when the frame is constant. The counting makes the obstruction visible: a unit timelike element carries three functions of the coordinates and a gradient carries one, so two functions at each event are unaccounted for, and those two are the frame's variation. The vorticity $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ is the antisymmetrised gradient of the frame element, read through the velocity; it vanishes for the scalar flow, it is non-zero for a shear flow with a varying rapidity, and the check gave a circulation of $0.434\,555\,977\,568\,337$ against the same closed form to fifteen digits.
 
 The Clebsch reading adds little to the rank and something to the structure. The vorticity proper is rank two for every solution, because a projected vorticity is a two-form on three dimensions and every such two-form is simple; the rank-four row belongs to the raw derivative and to the acceleration, and it is reached only when the flow accelerates about an axis it also rotates about. What the reading adds is that the vorticity is a function of the boost's gradient and obeys no transport law, so the classical invariants of a rotational flow have no counterpart, and that the invariant of a loop is the frame's holonomy, an element of the Lorentz group, of which the scalar's $h/m$ is the central factor.
 
@@ -369,7 +369,7 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | $e_t,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, with $\vec e_\eta^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\delta_{\mu\nu}$ | The one metric, all coefficients $+1$; indices stay low |
+| $\delta_{\imath\jmath}$ | The one metric, all coefficients $+1$; indices stay low |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ | The Dirac field as complex modulus times frame element |
 | $\varrho=\lvert\langle\tilde\Xi\rangle_{\natural}\rvert^{1/2}$ | The scale |
 | $\tilde U$ | The frame element, a unit element of $\mathbb{B}$ |
@@ -384,14 +384,14 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction, with $\vec s^{2}=-e_t$ |
 | $\tilde S_{\Psi}=\rho_{\mathrm{num}}^{1/2}\frac{h}{4\pi}i\vec s$ | Spin element, Hermitian |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Number current |
-| $v_{\Phi,\mu}$ | Components of $\tilde V_\Phi$, index low |
-| $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |
+| $v_{\Phi,\imath}$ | Components of $\tilde V_\Phi$, index low |
+| $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ | Vorticity 2-form |
 | $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$ | Four-momentum of the scalar field |
 | $S_{\tilde\Xi}$ | Action of the scalar field |
 | $\theta_{\mathrm{phs}}$ | $\frac{2\pi S_{\tilde\Xi}}{h}$, the spinor phase that the exponential carries |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
-| $\Sigma_{\mu\nu}$ | Spin generator of the Gordon decomposition |
-| $\varepsilon_\mu$ | Sign weight, $+1$ temporal and $-1$ spatial |
+| $\Sigma_{\imath\jmath}$ | Spin generator of the Gordon decomposition |
+| $\varepsilon_{\imath}$ | Sign weight, $+1$ temporal and $-1$ spatial |
 | $\langle\tilde Q\rangle_{\natural}$ | Quaternionic norm |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 | $c$ | Speed of light in the medium |

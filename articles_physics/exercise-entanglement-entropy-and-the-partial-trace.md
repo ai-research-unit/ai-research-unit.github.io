@@ -136,7 +136,7 @@ Since $h$ is strictly concave on $[0,1]$, its maximum over the admissible range 
 
 The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\tilde{Ξ}_{\theta}\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_{\mathrm{id},\theta}$ of unit weight. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$. Equivalently, $\sigma_\eta\mapsto i \vec e_\eta$.
 
-For the state $|\tilde{Ξ}_{\theta}\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle$, the Pauli-string coefficients $\mathrm{Ric}_{\mu\nu}=\langle\sigma_\mu\otimes\sigma_\nu\rangle$, with $\sigma_t=I_2$ and $\mu,\nu\in\{t,x,y,z\}$, are
+For the state $|\tilde{Ξ}_{\theta}\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle$, the Pauli-string coefficients $\mathrm{Ric}_{\imath\jmath}=\langle\sigma_{\imath}\otimes\sigma_{\jmath}\rangle$, with $\sigma_t=I_2$ and ${\imath},\jmath\in\{t,x,y,z\}$, are
 
 $$
 R_{tt}=1,\qquad R_{tz}=R_{zt}=\cos 2\theta,\qquad R_{zz}=1,
@@ -145,7 +145,7 @@ $$
 R_{xx}=\sin 2\theta,\qquad R_{yy}=-\sin 2\theta,
 $$
 
-and all other $\mathrm{Ric}_{\mu\nu}$ vanish. The entries are recomputed directly: the diagonal weights give $R_{tz}=R_{zt}=\cos^2\theta-\sin^2\theta=\cos2\theta$ and $R_{zz}=\cos^2\theta+\sin^2\theta=1$; the only off-diagonal coherence is $\langle\uparrow\uparrow|\tilde{Ξ}_{\theta}\rangle\langle\tilde{Ξ}_{\theta}|\downarrow\downarrow\rangle$, which produces $R_{xx}=\sin2\theta$ via $\sigma_1\otimes\sigma_1$ and $R_{yy}=-\sin2\theta$ via $\sigma_2\otimes\sigma_2$. Translating $\sigma_\mu\otimes\sigma_\nu\mapsto(ie_\mu)\otimes(ie_\nu)$ (with $ie_t\mapsto e_t$) gives
+and all other $\mathrm{Ric}_{\imath\jmath}$ vanish. The entries are recomputed directly: the diagonal weights give $R_{tz}=R_{zt}=\cos^2\theta-\sin^2\theta=\cos2\theta$ and $R_{zz}=\cos^2\theta+\sin^2\theta=1$; the only off-diagonal coherence is $\langle\uparrow\uparrow|\tilde{Ξ}_{\theta}\rangle\langle\tilde{Ξ}_{\theta}|\downarrow\downarrow\rangle$, which produces $R_{xx}=\sin2\theta$ via $\sigma_1\otimes\sigma_1$ and $R_{yy}=-\sin2\theta$ via $\sigma_2\otimes\sigma_2$. Translating $\sigma_{\imath}\otimes\sigma_{\jmath}\mapsto(ie_{\imath})\otimes(ie_{\jmath})$ (with $ie_t\mapsto e_t$) gives
 
 $$
 \tilde\Pi_{\mathrm{id},\theta}=\tfrac14\Bigl(e_t\otimes e_t-\vec e_z\otimes \vec e_z
@@ -160,8 +160,8 @@ At $\theta=0$ this reduces to $\tilde\Pi_{\mathrm{id},1}\otimes \tilde\Pi_{\math
 The partial scalar part in the second factor acts on the tensor basis by
 
 $$
-2\,\mathrm{Sc}_2(e_\mu\otimes e_\nu)=e_\mu\,2\,\mathrm{Sc}(e_\nu)
-=2\,\delta_{\nu t}\,e_\mu,
+2\,\mathrm{Sc}_2(e_{\imath}\otimes e_{\jmath})=e_{\imath}\,2\,\mathrm{Sc}(e_{\jmath})
+=2\,\delta_{\jmath t}\,e_{\imath},
 $$
 
 because $\mathrm{Sc}(e_t)=1$ and $\mathrm{Sc}(\vec e_\eta)=0$ for $\eta\in\{x,y,z\}$. Term by term:
@@ -185,7 +185,7 @@ $$
 \vec s_{\Psi}=\cos2\theta\,\vec e_z,\qquad |\vec s_{\Psi}|=|\cos2\theta| .
 $$
 
-The mechanism is worth naming precisely, because it corrects an interpretation that the Bell case invites. The terms that survive the reduction are those with $e_t$ in the **second** factor. For the Bell idempotents the only such term is $e_t\otimes e_t$, which is why their reduced state is scalar; but the general entangled state also carries terms $e_\mu\otimes e_t$ with $\mu\in\{x,y,z\}$, and those survive and make the reduced state non-scalar. Here the term $i\cos2\theta\,\vec e_z\otimes e_t$ is exactly what turns $\tfrac12 e_t$ into $\tfrac12(e_t+i\cos2\theta\,\vec e_z)$. The rule is not "only $e_t\otimes e_t$ survives"; it is "only terms with $e_t$ in the collapsed factor survive".
+The mechanism is worth naming precisely, because it corrects an interpretation that the Bell case invites. The terms that survive the reduction are those with $e_t$ in the **second** factor. For the Bell idempotents the only such term is $e_t\otimes e_t$, which is why their reduced state is scalar; but the general entangled state also carries terms $e_{\imath}\otimes e_t$ with $\mu\in\{x,y,z\}$, and those survive and make the reduced state non-scalar. Here the term $i\cos2\theta\,\vec e_z\otimes e_t$ is exactly what turns $\tfrac12 e_t$ into $\tfrac12(e_t+i\cos2\theta\,\vec e_z)$. The rule is not "only $e_t\otimes e_t$ survives"; it is "only terms with $e_t$ in the collapsed factor survive".
 
 ### The entropy from the single-qubit formula
 

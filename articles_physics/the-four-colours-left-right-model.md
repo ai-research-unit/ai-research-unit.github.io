@@ -211,12 +211,12 @@ and its conjugate gives $+\tfrac29$ with the signs reversed. The cancellation is
 **The whole gauge content is one line.**
 
 $$
-D_\mu=\partial_\mu-ig_4\sum_{a=1}^{15}A_{a,\mu}T_{a}
--ig_L\sum_{i=1}^{3}W_{L,i,\mu}\tau_i
--ig_R\sum_{i=1}^{3}W_{R,i,\mu}\tau_i .
+D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}T_{a}
+-ig_L\sum_{i=1}^{3}W_{L,i,\imath}\tau_i
+-ig_R\sum_{i=1}^{3}W_{R,i,\imath}\tau_i .
 $$
 
-Every index is low, because the metric is the identity. The corpus has one metric, $\delta_{\mu\nu}=(1,1,1,1)$, so a raised index names the same index and the caret carries none. The labels $a$ and $i$ are labels and not frame slots: they count the fifteen $\mathrm{SU}(4)$ generators and the three of each $\mathrm{SU}(2)$, so they stand in the subscript like every other name. The sums are written, because no index is summed by convention — an index that appears twice is summed only where a $\sum$ names it and its range.
+Every index is low, because the metric is the identity. The corpus has one metric, $\delta_{\imath\jmath}=(1,1,1,1)$, so a raised index names the same index and the caret carries none. The labels $a$ and $i$ are labels and not frame slots: they count the fifteen $\mathrm{SU}(4)$ generators and the three of each $\mathrm{SU}(2)$, so they stand in the subscript like every other name. The sums are written, because no index is summed by convention — an index that appears twice is summed only where a $\sum$ names it and its range.
 
 Twenty-one gauge fields, and three couplings that the frame does not tie. The line above carries three symbols, $g_4$, $g_L$ and $g_R$, and the frame fixes none of them. It fixes what each one multiplies: the fifteen $\mathrm{SU}(4)$ generators, the three left $\mathrm{SU}(2)$ generators, the three right ones.
 
@@ -226,11 +226,11 @@ There is no group above the three factors, and no equality among the three coupl
 
 | block | count | $SU(3)$ | $SU(2)_L$ | $SU(2)_R$ | fate |
 |---|---|---|---|---|---|
-| $A_{a,\mu}$, $a$ in the $\mathfrak{su}(3)$ corner | $8$ | $\mathbf 8$ | $\mathbf 1$ | $\mathbf 1$ | the gluons |
-| $A_{15,\mu}$ | $1$ | $\mathbf 1$ | $\mathbf 1$ | $\mathbf 1$ | the $B-L$ boson, mixes into $\gamma$ and $Z$ |
-| $A_{a,\mu}$, $a$ in $\mathfrak m$ | $6$ | $\mathbf 3+\bar{\mathbf3}$ | $\mathbf 1$ | $\mathbf 1$ | the leptoquarks |
-| $W_{L,i,\mu}$ | $3$ | $\mathbf 1$ | $\mathbf 3$ | $\mathbf 1$ | $W_{L,\pm}$, one neutral |
-| $W_{R,i,\mu}$ | $3$ | $\mathbf 1$ | $\mathbf 1$ | $\mathbf 3$ | $W_{R,\pm}$, one neutral |
+| $A_{a,\imath}$, $a$ in the $\mathfrak{su}(3)$ corner | $8$ | $\mathbf 8$ | $\mathbf 1$ | $\mathbf 1$ | the gluons |
+| $A_{15,\imath}$ | $1$ | $\mathbf 1$ | $\mathbf 1$ | $\mathbf 1$ | the $B-L$ boson, mixes into $\gamma$ and $Z$ |
+| $A_{a,\imath}$, $a$ in $\mathfrak m$ | $6$ | $\mathbf 3+\bar{\mathbf3}$ | $\mathbf 1$ | $\mathbf 1$ | the leptoquarks |
+| $W_{L,i,\imath}$ | $3$ | $\mathbf 1$ | $\mathbf 3$ | $\mathbf 1$ | $W_{L,\pm}$, one neutral |
+| $W_{R,i,\imath}$ | $3$ | $\mathbf 1$ | $\mathbf 1$ | $\mathbf 3$ | $W_{R,\pm}$, one neutral |
 
 The table is most of the boson spectrum. Its three group columns are the reason the spectrum counts $9$ massless against $12$ massive: the eight gluons and the photon survive, and the six leptoquarks, $W_{L,\pm}$, $Z$, $W_{R,\pm}$ and $Z_R$ acquire mass. The two neutral entries in the last two rows join the $B$-$L$ boson in the mixing that produces the photon and the $Z$.
 
@@ -251,11 +251,11 @@ The fourth row is the declaration (A) and the fifth is the chiral wall. Neither 
 
 The criterion of legitimacy is stated once, because every other article in this family quotes it. The corpus carried an implicit test: a gauge group is legitimate only if its generators are elements of the algebra, $X\in\mathbb B$. That test is the old habit, and in this frame it must go. It is also refuted by the corpus's own later notes, which place $\mathfrak{su}(3)$ and $\mathfrak{su}(4)$ in the endomorphisms of $\mathbb B$ and never in $\mathbb B$.
 
-The replacement is an address rather than a filter. A generator is an element of $\operatorname{End}_{\mathbb C}(\mathbb B)$, and the sixteen words $e_\mu[\,]e_\nu=L_{e_\mu}R_{e_\nu}$ are a basis of it. The length is the rank of the coefficient array, and Conway's bound is $\ell\le4$:
+The replacement is an address rather than a filter. A generator is an element of $\operatorname{End}_{\mathbb C}(\mathbb B)$, and the sixteen words $e_{\imath}[\,]e_{\jmath}=L_{e_{\imath}}R_{e_{\jmath}}$ are a basis of it. The length is the rank of the coefficient array, and Conway's bound is $\ell\le4$:
 
 $$
-M=\sum_{\mu,\nu}c_{\mu\nu}\,L_{e_\mu}R_{e_\nu},\qquad
-\ell(M)=\operatorname{rank}\bigl(c_{\mu\nu}\bigr)\le4 .
+M=\sum_{\imath,\jmath}c_{\imath\jmath}\,L_{e_{\imath}}R_{e_{\jmath}},\qquad
+\ell(M)=\operatorname{rank}\bigl(c_{\imath\jmath}\bigr)\le4 .
 $$
 
 The bound is four because a single two-sided product has a rank-one array. $L_bR_c$ corresponds to $bc^{\mathsf T}$, so a sum of $k$ products has array of rank at most $k$ and every endomorphism of $\mathbb B$ is a sum of at most four. This is stated and verified in [The Meaning of $\mathrm{SU}(4)$ in the Endomorphisms of the Biquaternion Algebra](../articles_internal/structure/structure-SU4-meaning.html), §*The Carrier, the Six Words, and the Condition*.

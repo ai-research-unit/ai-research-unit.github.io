@@ -12,7 +12,7 @@ It is worth separating this article from the companion that shares the name Bhab
 
 Displayed formulae are written with their imaginary units reduced whenever the algebra allows it; where the source's own conventions leave a reduction undecided, the display is transcribed as printed and the undecided step is flagged rather than silently repaired.
 
-**Which fields the gradient acts on.** The gradient is the derivative of every field valued in $\mathbb{B}$, and the Dirac field of the fourth section is one: it is an element of the algebra, so left multiplication by the gradient acts on it. The source's fields at a general $\tau^{l\bar l}$ are not elements of $\mathbb{B}$ — they are the carriers of the representation — so their derivative, $\partial/\partial x_\mu$ in Minkowski space and $\partial/\partial a_j$ in $\mathbb{R}^6$, is quoted as printed rather than rewritten as a gradient. Every equation of this article is written from the left; a right action on an element is the same equation on its conjugate, so nothing is lost.
+**Which fields the gradient acts on.** The gradient is the derivative of every field valued in $\mathbb{B}$, and the Dirac field of the fourth section is one: it is an element of the algebra, so left multiplication by the gradient acts on it. The source's fields at a general $\tau^{l\bar l}$ are not elements of $\mathbb{B}$ — they are the carriers of the representation — so their derivative, $\partial/\partial x_{\imath}$ in Minkowski space and $\partial/\partial a_j$ in $\mathbb{R}^6$, is quoted as printed rather than rewritten as a gradient. Every equation of this article is written from the left; a right action on an element is the same equation on its conjugate, so nothing is lost.
 
 **The order of the article.** A first section fixes the spintensors and the spin chains. A second states the wave equations and the determinant argument. A third gives the bivector-space reduction and settles its metric and its index order. A fourth works the proton chain and writes the Dirac limit as two equations on one element, and states why one equation will not do. A fifth states the biquaternion interpretation and separates what is established from what is transcribed.
 
@@ -65,10 +65,10 @@ The usual spin is recovered only on the restriction $\tau^{l\bar l}\to\tau^{l,0}
 
 ### The Equation and Its Determinant
 
-The equations are written with the generator matrices $M^{l\bar l}_\mu$ of the representation $\tau^{l\bar l}$, one for each of the four coordinates, and read, for the field $\tilde{Ξ}$ of the representation,
+The equations are written with the generator matrices $M^{l\bar l}_{\imath}$ of the representation $\tau^{l\bar l}$, one for each of the four coordinates, and read, for the field $\tilde{Ξ}$ of the representation,
 
 $$
-iM^{l\bar l}_\mu\frac{\partial\tilde{Ξ}}{\partial x_\mu}+k_m\tilde{Ξ}=0,
+iM^{l\bar l}_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}+k_m\tilde{Ξ}=0,
 \qquad\text{that is}\qquad
 M(p)\tilde{Ξ}=-k_m\tilde{Ξ},
 $$
@@ -349,7 +349,7 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 | $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)$ | Degree of the representation |
 | $s=\lvert l-\bar l\rvert$ | Generalised spin of the field type $(l,\bar l)\oplus(\bar l,l)$ |
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two parts of the Dirac element named by the subscript; one equation per part |
-| $M^{l\bar l}_\mu$, $M(p)$ | Generator matrices of the representation and the momentum matrix |
+| $M^{l\bar l}_{\imath}$, $M(p)$ | Generator matrices of the representation and the momentum matrix |
 | $D(p)=\det(M(p)+mE)$ | Determinant whose roots are the masses |
 | $\mu_0$, $\lambda_i$ | Mass scale and eigenvalues of $M_0$ |
 | $g_{ab}$, order $10,20,30,23,31,12$ | Bivector-space metric and its boost-first collective order |

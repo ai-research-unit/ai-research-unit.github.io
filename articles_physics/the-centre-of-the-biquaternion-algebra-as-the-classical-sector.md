@@ -33,9 +33,9 @@ Equivalently, since $\mathbb{B}$ is generated as a real algebra by $e_t,\vec e_x
 
 Computation. Write $\tilde{Q}=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. For $\eta=1,2,3$,
 $$
-[\tilde{Q},\vec e_\mu]=[\vec Q,\vec e_\mu]=2\,\vec Q\times \vec e_\mu ,
+[\tilde{Q},\vec e_{\imath}]=[\vec Q,\vec e_{\imath}]=2\,\vec Q\times \vec e_{\imath} ,
 $$
-where the cross product is that of $\mathbb{R}^3$ under the identification $\vec e_\mu\leftrightarrow$ the $\mu$-th basis vector. If $\tilde{Q}$ is central then $[\tilde{Q},\vec e_\mu]=0$ for all $\mu$, so $\vec Q\times \vec e_\mu=0$ for $\mu=1,2,3$. Since $\vec e_x,\vec e_y,\vec e_z$ span $\mathbb{R}^3$, this forces $\vec Q=0$. Hence a central element is a complex multiple of the unit,
+where the cross product is that of $\mathbb{R}^3$ under the identification $\vec e_{\imath}\leftrightarrow$ the $\mu$-th basis vector. If $\tilde{Q}$ is central then $[\tilde{Q},\vec e_{\imath}]=0$ for all $\mu$, so $\vec Q\times \vec e_{\imath}=0$ for $\mu=1,2,3$. Since $\vec e_x,\vec e_y,\vec e_z$ span $\mathbb{R}^3$, this forces $\vec Q=0$. Hence a central element is a complex multiple of the unit,
 $$
 \boxed{\ Z(\mathbb{B})=\mathbb{B}_{C}=\bigl\{Q_te_t:\ Q_t\in\mathbb{C}\bigr\}=\mathbb{C}e_t\cong\mathbb{C}.\ }
 $$
@@ -53,7 +53,7 @@ Z(\mathbb{B})\cap\mathbb{B}_{\Phi}=\mathrm{span}_\mathbb{R}\{ie_t\}=\mathbb{R}\,
 $$
 of real dimension one each, and $Z(\mathbb{B})$ is their direct sum. The Hermitian part is the real line of Hermitian central observables; the anti-Hermitian part carries the complex structure. The split reflects the decomposition $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ restricted to the centre: it is the same decomposition, intersected with the scalars.
 
-The centre of the matrix model. Under $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, which $\mathbb{C}$-linearity extends by $\mathsf{M}_2(i)=iI_2$, the algebra is represented by all complex $2\times2$ matrices, $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$, and the centre corresponds to the scalar matrices,
+The centre of the matrix model. Under $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, which $\mathbb{C}$-linearity extends by $\mathsf{M}_2(i)=iI_2$, the algebra is represented by all complex $2\times2$ matrices, $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$, and the centre corresponds to the scalar matrices,
 $$
 \mathsf{M}_2\bigl(Z(\mathbb{B})\bigr)=\mathbb{C}\,I_2 .
 $$
@@ -295,7 +295,7 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
@@ -307,10 +307,10 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $\mathrm{ad}_{\tilde{Q}}(\tilde{Q}_1)=[\tilde{Q},\tilde{Q}_1]$ | Inner derivation |
 | $\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi_{\mathrm{id}}(\vec u),e_t-\tilde\Pi_{\mathrm{id}}(\vec u)\}$ | Maximal commutative subalgebra (MASA) |
 | $\tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure-state idempotent, $|\vec u|=1$ |
-| $M_2(\mathbb{C})$ | Matrix model; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ |
+| $M_2(\mathbb{C})$ | Matrix model; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$ |
 | $\mathrm{U}(2)=\mathbb{B}_{\Phi}$ | Lie algebra of the $*$-unitary group |
 | $C(\{\ast\})$ | Gelfand character algebra of the centre |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

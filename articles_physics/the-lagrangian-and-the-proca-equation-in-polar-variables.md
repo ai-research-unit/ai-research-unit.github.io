@@ -50,7 +50,7 @@ The conventions are those of the two companion articles: $\mathbb{B}=\mathbb{C}\
 
 ## Conventions
 
-The conventions are the corpus's, restated here for the chart. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\varrho>0$ is the scale, $\theta_{\mathrm{rpd}}\ge0$ the rapidity and $\hat u_{\mathrm b}$ the boost axis, so that $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ on the branch. The measure is $\mathrm{d}^4r$, the pairing is $\mathrm{Sc}(\cdot)$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term, $k_m=\frac{2\pi mc}{h}$, and the chart's velocities are the material-time derivatives. The branch is the timelike one; the spacelike branch is named where it matters and is not followed here.
+The conventions are the corpus's, restated here for the chart. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\varrho>0$ is the scale, $\theta_{\mathrm{rpd}}\ge0$ the rapidity and $\hat u_{\mathrm b}$ the boost axis, so that $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ on the branch. The measure is $\mathrm{d}^4r$, the pairing is $\mathrm{Sc}(\cdot)$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term, $k_m=\frac{2\pi mc}{h}$, and the chart's velocities are the material-time derivatives. The branch is the timelike one; the spacelike branch is named where it matters and is not followed here.
 
 ## The Action in Polar Variables
 
@@ -110,26 +110,26 @@ The singularity bounds the argument, and it is the chart's. On the timelike bran
 The explicit form. Performing the differentiation gives the two displays of the polar article. The scalar part of the transformed equation is
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0,
+\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0,
 \qquad
-\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu},
+\Gamma_{\imath}=\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_{\imath}},
 $$
 
 and the scalar-free part is
 
 $$
-\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2-\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)\Bigr)
-+2\sum_\mu\frac{\partial\ln \varrho}{\partial R_\mu}\Gamma_\mu=0 ,
+\sum_{\imath}\Bigl(\frac{\partial\Gamma_{\imath}}{\partial R_{\imath}}+\Gamma_{\imath}^2-\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)\Bigr)
++2\sum_{\imath}\frac{\partial\ln \varrho}{\partial R_{\imath}}\Gamma_{\imath}=0 ,
 $$
 
-the subtraction of $\mathrm{Sc}(\Gamma_\mu^2)$ being what makes the display traceless: without it the term $\sum_\mu\Gamma_\mu^2$ would repeat the source of the scalar equation.
+the subtraction of $\mathrm{Sc}(\Gamma_{\imath}^2)$ being what makes the display traceless: without it the term $\sum_{\imath}\Gamma_{\imath}^2$ would repeat the source of the scalar equation.
 
 Both are exactly the equations that the direct substitution of the word into the field equation gives, which is the content of the change-of-variables argument: the variational route and the substitution route are the same route. For a fixed boost axis the pair reduces to
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\tfrac14\varrho\sum_\mu\Bigl(\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\Bigr)^2=0,
+\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\tfrac14\varrho\sum_{\imath}\Bigl(\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}\Bigr)^2=0,
 \qquad
-\sum_\mu\frac{\partial}{\partial R_\mu}\Bigl(\varrho^2\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\Bigr)=0 ,
+\sum_{\imath}\frac{\partial}{\partial R_{\imath}}\Bigl(\varrho^2\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}\Bigr)=0 ,
 $$
 
 which is the form the polar article verifies numerically. The mass term enters the first with the sign $+k_m^2\varrho$ on the timelike branch, as the branch's sign of the mass term requires.
@@ -268,7 +268,7 @@ The chart is a diffeomorphism onto the branch, so its Euler–Lagrange equations
 | $\tilde A_\Phi=\varrho\tilde U_{\Psi,\mathrm b}\hat u$ | Spacelike branch, boost axis locked to $\hat u$ |
 | $\varrho>0$, $\theta_{\mathrm{rpd}}$, $\hat u_{\mathrm b}$, $\hat u$ | Modulus, rapidity, boost axis, direction |
 | $\varepsilon=\pm1$ | Sign of the scalar potential, timelike branch |
-| $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$ | Frame bracket (Maurer–Cartan form) |
+| $\Gamma_{\imath}=\tilde U^{-1}\partial_{\imath}\tilde U$ | Frame bracket (Maurer–Cartan form) |
 | $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | Lorenz scalar |
 | $\mathcal{L}$ | Lagrangian density in the chart |
 | $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$ | d'Alembertian of the corpus |

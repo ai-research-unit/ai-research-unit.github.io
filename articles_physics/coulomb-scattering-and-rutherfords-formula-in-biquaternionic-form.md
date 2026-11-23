@@ -14,7 +14,7 @@ This article treats the continuum of the same central potential whose bound stat
 
 The article is organised as follows. The next section states the Coulomb problem in the biquaternion framework and fixes the Coulomb parameter. The third section carries out the partial-wave decomposition, writes the radial equation, and exhibits the regular Coulomb function and the Coulomb phase. The fourth obtains the scattering amplitude and Rutherford's formula. The fifth gives the Born approximation, evaluates the first Born amplitude, and explains why its modulus is already exact. The sixth treats the long-range tail and the energy dependence of the Coulomb phase. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$; the Hamiltonian is $H=[-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi+V(r)]e_t$, central; and $2\,\mathrm{Sc}(\tilde H_\Psi)$. The coordinate $r$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, central $i$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$; the Hamiltonian is $H=[-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi+V(r)]e_t$, central; and $2\,\mathrm{Sc}(\tilde H_\Psi)$. The coordinate $r$ is the argument of the field.
 
 Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
@@ -308,7 +308,7 @@ The biquaternion content is centrality: the potential couples only to the scalar
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{C}$ | Centre; home of the amplitude and the phases |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |

@@ -266,7 +266,7 @@ The process is standard scalar quantum field theory in an external background, t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; value space of the background |
 | $\tilde{Ξ}=\xi_{\mathrm{scl}}\,e_t$, $\tilde Q_5=\xi\,e_t$ | Scalar field and central background |

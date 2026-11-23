@@ -143,7 +143,7 @@ That chain is a structural interpretation of the algebra, not a derivation of an
 
 ## Why the Central Imaginary, and Not a Quaternion Unit
 
-The phase could be written with any root of $-1$ in place of $i$. The alternatives among the real roots are the non-central ones: the unit pure real quaternions $\vec u$, of which the quaternion units $\vec e_\mu$ are the coordinate cases. Writing the phase with such a root $J$ gives, per path, the element $\exp(\frac{2\pi J\,S}{h})$, a unit real quaternion when $J=\vec u$; and the three reasons the Schrödinger article gave for rejecting $J$ in the state-vector equation apply here as well.
+The phase could be written with any root of $-1$ in place of $i$. The alternatives among the real roots are the non-central ones: the unit pure real quaternions $\vec u$, of which the quaternion units $\vec e_{\imath}$ are the coordinate cases. Writing the phase with such a root $J$ gives, per path, the element $\exp(\frac{2\pi J\,S}{h})$, a unit real quaternion when $J=\vec u$; and the three reasons the Schrödinger article gave for rejecting $J$ in the state-vector equation apply here as well.
 
 **The generator need not be anti-Hermitian.** Taking $J\tilde H_\Psi$ in place of $i\tilde H_\Psi$ changes the generator of the flow from $-\frac{2\pi i\,H}{h}$ (anti-Hermitian, hence norm-preserving) to $-\frac{2\pi J\,\tilde{H}_{\Psi}}{h}$, which is anti-Hermitian only if $J$ commutes with $\tilde H_\Psi$. With $J=\vec e_z$ and $\tilde H_\Psi=i\vec e_x$ one has, using $\vec e_z \vec e_x=\vec e_y$,
 $$J\tilde H_\Psi=\vec e_z(i\vec e_x)=i\,\vec e_y,$$
@@ -151,7 +151,7 @@ which is Hermitian, not anti-Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$. The f
 $$\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}=\exp(-i\pi \vec e_y)=\cosh(\pi)\,e_t-i\sinh(\pi)\,\vec e_y\neq e_t,$$
 so the norm is not preserved. A path integral built on this phase would not reproduce a $*$-unitary evolution.
 
-**The phase is not a global phase.** Even where a fixed non-central root gives a $*$-unitary one-parameter group — as $J=\vec e_z$ does — the phase it produces is not shared by the two spin components. Under the isomorphism $\vec e_\mu\mapsto-i\sigma_\mu$ of the companion articles, the phase $\exp(\vec e_z\theta_{\mathrm{rat}})$ of the rotation by $\theta_{\mathrm{rat}}$ about that axis, a real angle, maps to
+**The phase is not a global phase.** Even where a fixed non-central root gives a $*$-unitary one-parameter group — as $J=\vec e_z$ does — the phase it produces is not shared by the two spin components. Under the isomorphism $\vec e_{\imath}\mapsto-i\sigma_{\imath}$ of the companion articles, the phase $\exp(\vec e_z\theta_{\mathrm{rat}})$ of the rotation by $\theta_{\mathrm{rat}}$ about that axis, a real angle, maps to
 $$\exp(\vec e_z\theta_{\mathrm{rat}})\;\longmapsto\;\cos\theta_{\mathrm{rat}}\,I_2-i\sin\theta_{\mathrm{rat}}\,\sigma_3=\operatorname{diag}\!\big(\exp(-i\theta_{\mathrm{rat}}),\,\exp(+i\theta_{\mathrm{rat}})\big),$$
 so it multiplies the two components by opposite phases. It is a **relative** phase, that is, a spin rotation, not the single global phase a path is supposed to contribute. A genuinely global phase must be central.
 
@@ -363,7 +363,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-e_t$ |
 | $\mathbb{B}_{C}=\operatorname{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; home of the path-integral phase |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; home of the phase exponent $\frac{2\pi i\,S}{h}$ |
@@ -390,7 +390,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $\exp(i\theta_{\mathrm{act}})=\exp(-\frac{2\pi S_{E}}{h})$ | Oscillatory phase becomes decaying weight |
 | $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$ | Wick rotation as identification of subspaces |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

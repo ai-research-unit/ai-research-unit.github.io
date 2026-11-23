@@ -33,13 +33,13 @@ Since $\tilde p$ has a purely imaginary vector part, it is Hermitian and lies in
 The kinetic energy requires care with the quaternion square. The components $p_j$ commute, so the cross terms in the product $\tilde p\circ\tilde p$ cancel pairwise:
 
 $$
-\tilde p^{\,2} = \sum_{\mu,\nu} \vec e_\mu \vec e_\nu\,p_\mu p_\nu
+\tilde p^{\,2} = \sum_{\imath,\jmath} \vec e_{\imath} \vec e_{\jmath}\,p_{\imath} p_{\jmath}
 = \sum_\eta \vec e_\eta^2p_\eta^{\,2}
 = -\Big(\sum_\eta p_\eta^{\,2}\Big)e_t
 = -p^{\,2}e_t ,
 $$
 
-because $\vec e_\mu \vec e_\nu+\vec e_\nu \vec e_\mu=0$ for $\mu\neq\nu$. Here $p^{\,2}=p\cdot p=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and
+because $\vec e_{\imath} \vec e_{\jmath}+\vec e_{\jmath} \vec e_{\imath}=0$ for ${\imath}\neq\jmath$. Here $p^{\,2}=p\cdot p=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and
 
 $$
 \tilde p\,\tilde p^{\natural} = \langle\tilde p\rangle_{\natural}  = -\tilde p^{\,2} = p^{\,2}e_t = -\frac{h^{2}}{4\pi^{2}}\Delta_\Phi\,e_t .
@@ -312,7 +312,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmath\lambda}\vec e_\lambda$ $(\imath\neq\jmath)$ |
 | $i$ | Central scalar imaginary, $i^2=-e_t$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material): generators; $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational): observables and states |

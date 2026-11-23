@@ -135,7 +135,7 @@ The three parameters are two. The pair $(\mu^2,\lambda)$ and the pair $(v,M_H)$ 
 The derivative. With the normalisation of article 2,
 
 $$
-D_\mu\omicron_{\mathrm{pot}}=\frac{\partial\omicron_{\mathrm{pot}}}{\partial R_\mu}+i\,g\sum_a\tau_aW_{a,\mu}\omicron_{\mathrm{pot}}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_\mu\omicron_{\mathrm{pot}} ,
+D_{\imath}\omicron_{\mathrm{pot}}=\frac{\partial\omicron_{\mathrm{pot}}}{\partial R_{\imath}}+i\,g\sum_a\tau_aW_{a,\imath}\omicron_{\mathrm{pot}}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath}\omicron_{\mathrm{pot}} ,
 \qquad
 \tau_a=\tfrac12\sigma_a ,
 $$
@@ -156,10 +156,10 @@ $$
 
 where $\omicron_{\mathrm{pot},0}^{\uparrow}=\frac{1}{\sqrt2}\binom{v}{0}$ is the same doublet with the entries exchanged. The first two produce the charged directions, and the last two produce the neutral one with opposite signs.
 
-The kinetic term at the vacuum. The corpus's sign rule makes the term $-\sum_\mu(D_\mu\omicron_{\mathrm{pot}})^\dagger(D_\mu\omicron_{\mathrm{pot}})$, and at the vacuum the derivative carries no spacetime index of its own, so the term is a quadratic form in the four gauge fields,
+The kinetic term at the vacuum. The corpus's sign rule makes the term $-\sum_{\imath}(D_{\imath}\omicron_{\mathrm{pot}})^\dagger(D_{\imath}\omicron_{\mathrm{pot}})$, and at the vacuum the derivative carries no spacetime index of its own, so the term is a quadratic form in the four gauge fields,
 
 $$
-\mathcal{L}_{\mathrm{mass}}=-\frac{v^2}{8}\left[g^2\left(W_{1,\mu}\right)^2+g^2\left(W_{2,\mu}\right)^2+\left(gW_{3,\mu}-g_{\mathrm Y}B_\mu\right)^2\right] .
+\mathcal{L}_{\mathrm{mass}}=-\frac{v^2}{8}\left[g^2\left(W_{1,\imath}\right)^2+g^2\left(W_{2,\imath}\right)^2+\left(gW_{3,\imath}-g_{\mathrm Y}B_{\imath}\right)^2\right] .
 $$
 
 **The third bracket is the whole mechanism in one expression.** The combination $gW_3-g_{\mathrm Y}B$ is not zero and not one of the original fields; it is a specific linear combination whose orthogonal partner, $g_{\mathrm Y}W_3+gB$, is absent. The absence is the masslessness of the photon, and the presence is the mass of the $Z$.
@@ -201,9 +201,9 @@ $$
 The eigenvectors. The zero eigenvector is proportional to $(g_{\mathrm Y},g)$ in the $(W_3,B)$ basis, and the other to $(g,-g_{\mathrm Y})$. Normalising,
 
 $$
-A_\mu=\sin\theta_W\,W_{3,\mu}+\cos\theta_W\,B_\mu ,
+A_{\imath}=\sin\theta_W\,W_{3,\imath}+\cos\theta_W\,B_{\imath} ,
 \qquad
-Z_\mu=\cos\theta_W\,W_{3,\mu}-\sin\theta_W\,B_\mu ,
+Z_{\imath}=\cos\theta_W\,W_{3,\imath}-\sin\theta_W\,B_{\imath} ,
 \qquad
 \tan\theta_W=\frac{g_{\mathrm Y}}{g} ,
 $$
@@ -277,7 +277,7 @@ $$
 \omicron_{\mathrm{pot}}=\exp\left(i\sum_a\theta_{\mathrm{gld},a}\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
-and the three fields $\xi_a$ are the would-be Goldstones. The angle is $\theta_{\mathrm{gld},a}=\xi_a/v$, a real Goldstone field over the real vacuum expectation value. A gauge transformation with parameter $\Gamma_a=-\frac{2}{gv}\xi_a$ removes them, at the price of shifting the gauge fields by $\partial\xi/\partial R_\mu$. The combination that is gauge invariant is $W_{a,\mu}+\frac{2}{gv}\partial\xi_a/\partial R_\mu$, and it is that combination which carries the mass. The Goldstone is not destroyed: it becomes the longitudinal part of the field that absorbed it.
+and the three fields $\xi_a$ are the would-be Goldstones. The angle is $\theta_{\mathrm{gld},a}=\xi_a/v$, a real Goldstone field over the real vacuum expectation value. A gauge transformation with parameter $\Gamma_a=-\frac{2}{gv}\xi_a$ removes them, at the price of shifting the gauge fields by $\partial\xi/\partial R_{\imath}$. The combination that is gauge invariant is $W_{a,\imath}+\frac{2}{gv}\partial\xi_a/\partial R_{\imath}$, and it is that combination which carries the mass. The Goldstone is not destroyed: it becomes the longitudinal part of the field that absorbed it.
 
 Why this is a statement about a field and not about a particle. The Goldstone mode never appears in the physical spectrum, and at the same time it is present in every gauge but the unitary one. The two statements are consistent because the mode is a gauge artefact: its presence or absence is a choice of coordinates on field space, and no observable depends on the choice. What is observable is the three polarisations of the massive vector, and those are counted in the second table.
 
@@ -306,7 +306,7 @@ g_{hhWW}=\frac{2M_W^2}{v^2}=\frac{g^2}{2} ,
 g_{hhZZ}=\frac{2M_Z^2}{v^2}=\frac{g^2+g_{\mathrm Y}^2}{2} .
 $$
 
-The proportionality is not an extra assumption. It follows from the fact that the mass and the coupling both come from the same term $|D_\mu\omicron_{\mathrm{pot}}|^2$, expanded to different orders in $h$: the mass is the second-order term at $h=0$, and the coupling is the third-order term. The identity $g_{hWW}=g_{\mathrm{os}}M_W$ holds with the coupling $g_{\mathrm{os}}=2M_W/v=0.6529$ that belongs to the same scheme as $M_W$, and not with the $\overline{\mathrm{MS}}$ value $0.6517$ of §*The Numbers*; the two differ in the third digit, and the table below uses the measured mass.
+The proportionality is not an extra assumption. It follows from the fact that the mass and the coupling both come from the same term $|D_{\imath}\omicron_{\mathrm{pot}}|^2$, expanded to different orders in $h$: the mass is the second-order term at $h=0$, and the coupling is the third-order term. The identity $g_{hWW}=g_{\mathrm{os}}M_W$ holds with the coupling $g_{\mathrm{os}}=2M_W/v=0.6529$ that belongs to the same scheme as $M_W$, and not with the $\overline{\mathrm{MS}}$ value $0.6517$ of §*The Numbers*; the two differ in the third digit, and the table below uses the measured mass.
 
 The scalar's self-couplings. Expanding the potential to fourth order,
 
@@ -506,7 +506,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 | $\tau_a=\sigma_a/2$ | Weak-isospin generators in the doublet |
 | $M^2$ | The $4\times4$ squared-mass matrix in the basis $(W_1,W_2,W_3,B)$ |
 | $M_W$, $M_Z$, $M_H$ | The three masses; $M_Z=M_W/\cos\theta_W$, $M_H=\sqrt{2\lambda}\,v$ |
-| $A_\mu$, $Z_\mu$ | The photon and the neutral massive field |
+| $A_{\imath}$, $Z_{\imath}$ | The photon and the neutral massive field |
 | $\theta_W$ | $\tan\theta_W=g_{\mathrm Y}/g$ |
 | $e$ | $g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ |
 | $g_{hWW}$, $g_{hZZ}$, $g_{hhh}$, $g_{hhhh}$ | Scalar couplings, fixed by the masses |

@@ -30,22 +30,22 @@ $$
 e_t=1\otimes1,\qquad \vec e_x=1\otimes\vec e_x,\qquad \vec e_y=1\otimes\vec e_y,\qquad \vec e_z=1\otimes\vec e_z,
 $$
 
-the element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu=q_\mu+iq'_\mu$. The two names for this basis are *coefficient basis*, which names the coordinates, and *axis-free*, which names what the frame does not do.
+the element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}=q_{\imath}+iq'_{\imath}$. The two names for this basis are *coefficient basis*, which names the coordinates, and *axis-free*, which names what the frame does not do.
 
 **The product is the table, and the table is the algebra.**
 
 $$
-e_\mu e_\nu=\sum_\rho\varepsilon_{\mu\nu}^{\ \ \rho}\,e_\rho,\qquad \varepsilon_{\mu\nu}^{\ \ \rho}\in\{0,+1,-1\} .
+e_{\imath} e_{\jmath}=\sum_\rho\varepsilon_{\imath\jmath}^{\ \ \rho}\,e_\rho,\qquad \varepsilon_{\imath\jmath}^{\ \ \rho}\in\{0,+1,-1\} .
 $$
 
 No complex number appears in it: $i$ is central and is carried by the coefficients.
 
 ### The Array
 
-**The $\nu$-th column is the product with the $\nu$-th unit.**
+**The ${\jmath}$-th column is the product with the ${\jmath}$-th unit.**
 
 $$
-L_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qe_\nu\bigr]_\mu,
+L_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=\bigl[\tilde Qe_{\jmath}\bigr]_{\imath},
 \qquad
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
@@ -58,7 +58,7 @@ $$
 
 **The first column recovers the element,** because $\tilde Qe_t=\tilde Q$, so the assignment is injective and multiplicative, and its image is a four-complex-dimensional subalgebra $\mathbb{B}_L$ with unit $\mathrm I_4$.
 
-**The right family is the same rule on the other side,** $R_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=[\vec e_\nu\tilde Q]_\mu$, it is anti-multiplicative, and it commutes with the left family.
+**The right family is the same rule on the other side,** $R_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=[\vec e_{\jmath}\tilde Q]_{\imath}$, it is anti-multiplicative, and it commutes with the left family.
 
 ### The Ten Properties
 
@@ -72,10 +72,10 @@ $$
 | (d) | the entries are the structure constants, read by columns |
 | (e) | the transpose is the quaternion conjugation, $L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural})$ |
 | (f) | the stitch is real and diagonal, $R=DL^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$ |
-| (g) | the eight matrices $\pm L_{\mathrm{axf},e_\mu}$ are the quaternion group $Q_8$ |
+| (g) | the eight matrices $\pm L_{\mathrm{axf},e_{\imath}}$ are the quaternion group $Q_8$ |
 | (h) | a cyclic relabelling of the three directions conjugates every matrix by a permutation matrix |
 | (i) | the real slice is preserved: $\mathbb{H}\subset\mathbb{B}$ lands in $M_4(\mathbb{R})$ |
-| (j) | $\det L_{\mathrm{axf},e_\mu}=1$ and $2\,\mathrm{Sc}L_{\mathrm{axf},e_\mu}=4\delta_{\mu t}$ |
+| (j) | $\det L_{\mathrm{axf},e_{\imath}}=1$ and $2\,\mathrm{Sc}L_{\mathrm{axf},e_{\imath}}=4\delta_{\imath t}$ |
 
 **Ten readings of one fact.** Properties (b) and (d) are the root: the basis is multiplicative, so each column of a matrix is a signed basis vector. The rest follow, and each of them is a property of this frame and not of the algebra.
 
@@ -86,7 +86,7 @@ $$
 $$
 R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D,
 \qquad
-R_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=s_\mu s_\nu\,L_{\mathrm{axf}}(\tilde Q)_{\nu\mu},
+R_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=s_{\imath} s_{\jmath}\,L_{\mathrm{axf}}(\tilde Q)_{\jmath\imath},
 \qquad s_t=1,\quad s_x=s_y=s_z=-1 .
 $$
 
@@ -123,7 +123,7 @@ $$
 | --- | --- | --- | --- | --- |
 | plain $P$ | $Q_t^2-B^2$ | $\tfrac142\,\mathrm{Sc}(M^2)$ | $\mathbb{C}$ | no |
 | quaternionic $N$ | $Q_t^2+B^2$ | $\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$ | $\mathbb{C}$ | no |
-| Hermitian $H$ | $\sum_\mu\lvert Q_\mu\rvert^2$ | $\tfrac142\,\mathrm{Sc}(M^{\dagger}M)$ | $\mathbb{R}$ | yes |
+| Hermitian $H$ | $\sum_{\imath}\lvert Q_{\imath}\rvert^2$ | $\tfrac142\,\mathrm{Sc}(M^{\dagger}M)$ | $\mathbb{R}$ | yes |
 | Krein $K$ | $\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$ | $\tfrac14\operatorname{Tr}(M^{\mathsf T}M^{\dagger})$ | $\mathbb{R}$ | no |
 
 **The second and the fourth rows use the transpose identity,** $M^{\mathsf T}=M^{\natural}$, and that identity is a property of this basis. In another frame the words have to be written with the conjugation, and $\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$ is then none of the four norms.
@@ -191,11 +191,11 @@ So the matrices of one element over all frames are one conjugacy class and not o
 
 **Read:** the display carries the asymmetry the algebra has and invents no other.
 
-**The three vector units enter by one rule.** The $\nu$-th column is the product with the $\nu$-th unit, and the three vector columns are produced from the same table by the same substitution. No coefficient is singled out by its position: $Q_x$, $Q_y$ and $Q_z$ appear with one sign each and no sum, in the same shape.
+**The three vector units enter by one rule.** The ${\jmath}$-th column is the product with the ${\jmath}$-th unit, and the three vector columns are produced from the same table by the same substitution. No coefficient is singled out by its position: $Q_x$, $Q_y$ and $Q_z$ appear with one sign each and no sum, in the same shape.
 
 **The symmetry of the display is the cyclic one.** The relabelling $x\mapsto y\mapsto z\mapsto x$ is an algebra automorphism, and its permutation matrix conjugates every array into itself. A transposition reverses the orientation and flips the sign of the table, because $\vec e_x\vec e_y=\vec e_z$ becomes $\vec e_y\vec e_x=-\vec e_z$. That sign belongs to the quaternion product and not to a preference of the basis.
 
-**Time is different, and the difference is in the object.** The signs are carried by the squares, $e_t^2=+e_t$ and $\vec e_\eta^2=-e_t$, and the display inherits it without a sentence: the scalar unit occupies the first slot and the trace is $4\delta_{\mu t}$. Physical space is isotropic and spacetime is not, and the array shows the first as a symmetry of the entries and the second as a sign.
+**Time is different, and the difference is in the object.** The signs are carried by the squares, $e_t^2=+e_t$ and $\vec e_\eta^2=-e_t$, and the display inherits it without a sentence: the scalar unit occupies the first slot and the trace is $4\delta_{\imath t}$. Physical space is isotropic and spacetime is not, and the array shows the first as a symmetry of the entries and the second as a sign.
 
 **The boundary.** This is a statement about a frame and not about a canonical basis. The axis-free family is one representative of a conjugacy class, and nothing in the physics selects it; what it does is decline to add a direction the algebra does not contain.
 
@@ -430,10 +430,10 @@ $$
 \gamma_5[\mathbb{B}_{\Phi}]=-iR_{\vec e_z}.
 $$
 
-The frame is named in brackets and it is $\mathbb{B}_{\Phi}$ throughout this article; below the label is dropped, and every $\gamma_\mu[\mathbb{B}_{\Phi}]$ is $\gamma_\mu[\mathbb{B}_{\Phi}]$. Two of the five are single multipliers, because $L_{e_t}$ is the identity of the operator algebra: $e_t$ is the unit of $\mathbb{B}$. The five satisfy the basis operator relation of that frame, with $\delta_{\mu\nu}=(1,1,1,1)$ the unit metric,
+The frame is named in brackets and it is $\mathbb{B}_{\Phi}$ throughout this article; below the label is dropped, and every $\gamma_{\imath}[\mathbb{B}_{\Phi}]$ is $\gamma_{\imath}[\mathbb{B}_{\Phi}]$. Two of the five are single multipliers, because $L_{e_t}$ is the identity of the operator algebra: $e_t$ is the unit of $\mathbb{B}$. The five satisfy the basis operator relation of that frame, with $\delta_{\imath\jmath}=(1,1,1,1)$ the unit metric,
 
 $$
-\{\gamma_\mu[\mathbb{B}_{\Phi}],\gamma_\nu[\mathbb{B}_{\Phi}]\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm I_4,\qquad
+\{\gamma_{\imath}[\mathbb{B}_{\Phi}],\gamma_{\jmath}[\mathbb{B}_{\Phi}]\}=2\varepsilon_{\imath}\delta_{\imath\jmath}\,\mathrm I_4,\qquad
 \varepsilon=(1,-1,-1,-1),$$
 
 so that $\gamma_0[\mathbb{B}_{\Phi}]^2=+\mathrm I_4$ and $\gamma_\eta[\mathbb{B}_{\Phi}]^2=-\mathrm I_4$; their product is the fifth, $\gamma_5[\mathbb{B}_{\Phi}]=i\gamma_0[\mathbb{B}_{\Phi}]\gamma_1[\mathbb{B}_{\Phi}]\gamma_2[\mathbb{B}_{\Phi}]\gamma_3[\mathbb{B}_{\Phi}]$, with $\gamma_5[\mathbb{B}_{\Phi}]^2=\mathrm I_4$. All of this was verified on the arrays.
@@ -636,7 +636,7 @@ The order of preference is therefore four-level: the action first, a basis opera
 An article written in the Pauli framework does not have to be rewritten at once. The move has three passes, and each pass is mechanical enough to be checked.
 
 #### The First Pass: From Arrays to Operators
-Replace every array by the basis operator it displays. A basis operator is written $L_{e_\mu}R_{e_\nu}$, and its array is read in whichever frame the sentence needs. The pass removes the frame from the algebra and leaves it in the notation, where it can be seen.
+Replace every array by the basis operator it displays. A basis operator is written $L_{e_{\imath}}R_{e_{\jmath}}$, and its array is read in whichever frame the sentence needs. The pass removes the frame from the algebra and leaves it in the notation, where it can be seen.
 
 A basis operator with a time slot collapses, because $e_t$ is the unit of the algebra: $L_{e_t}$ and $R_{e_t}$ are the identity operator, and a basis operator with two time slots is the identity. Two of the five gammas are single multipliers for exactly this reason.
 
@@ -746,8 +746,8 @@ Put the gamma form in one closing section, with the dictionary and no derivation
 ## Summary
 
 - The AXF matrices are the family of left and right matrices in the coefficient basis, whose vectors are the four units.
-- Its columns are products: the $\nu$-th column of the left matrix is the coordinate column of $\tilde Qe_\nu$, so the array is the multiplication table read aloud.
-- Ten properties hold at once: integer entries, signed permutations, orthogonality, entries equal to the structure constants, the transpose as the quaternion conjugation, a real diagonal stitch, the quaternion group on $\mathbb{R}^4$, cyclic symmetry, the real slice preserved, determinant one and trace $4\delta_{\mu t}$.
+- Its columns are products: the ${\jmath}$-th column of the left matrix is the coordinate column of $\tilde Qe_{\jmath}$, so the array is the multiplication table read aloud.
+- Ten properties hold at once: integer entries, signed permutations, orthogonality, entries equal to the structure constants, the transpose as the quaternion conjugation, a real diagonal stitch, the quaternion group on $\mathbb{R}^4$, cyclic symmetry, the real slice preserved, determinant one and trace $4\delta_{\imath t}$.
 - The stitch is $R=DL^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, which is at once the switch, the Gram matrix of $\beta$ and the matrix of the quaternion conjugation.
 - The invariants are $4Q_t$, $N^2$, the squared characteristic polynomial and a spectrum of two modes counted twice; the rank is even.
 - The four norms are the four quarter-traces, and two of them use the transpose identity, which is a property of this basis.
@@ -763,16 +763,16 @@ Put the gamma form in one closing section, with the dictionary and no derivation
 | $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ | the coefficient basis, called AXF in this entry |
 | $\mathrm{axf}$ | the label of the family, $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$ |
 | $L_{\mathrm{axf}}(\tilde Q)$, $R_{\mathrm{axf}}(\tilde Q)$ | the left and right matrices of $\tilde Q$ |
-| $L_{\mathrm{axf},e_\mu}$, $R_{\mathrm{axf},e_\mu}$ | the left and right matrices of the four units |
+| $L_{\mathrm{axf},e_{\imath}}$, $R_{\mathrm{axf},e_{\imath}}$ | the left and right matrices of the four units |
 | $\mathbb{B}_L$, $\mathbb{B}_R$ | the two four-dimensional families inside $M_4(\mathbb{C})$ |
-| $\varepsilon_{\mu\nu}^{\ \ \rho}$ | the structure constants, the multiplication table of the units |
+| $\varepsilon_{\imath\jmath}^{\ \ \rho}$ | the structure constants, the multiplication table of the units |
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | the stitch, the Gram matrix of $\beta$, the matrix of $\natural$ |
-| $s_\mu$ | the sign of $e_\mu^{\natural}=s_\mu e_\mu$ |
+| $s_{\imath}$ | the sign of $e_{\imath}^{\natural}=s_{\imath} e_{\imath}$ |
 | $\mathsf C$ | the matrix of a change of frame |
 | $\mathsf W$ | the switch of a general frame, $\mathsf W'=\mathsf C^{\mathsf T}D\mathsf C$ |
 | $N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | the quaternionic norm |
 | $B^2$ | $Q_x^2+Q_y^2+Q_z^2$ |
-| $q_\mu$, $q'_\mu$ | the real and imaginary parts of $Q_\mu$ |
+| $q_{\imath}$, $q'_{\imath}$ | the real and imaginary parts of $Q_{\imath}$ |
 | $P$, $N$, $H$, $K$ | the four norms, as quarter-traces of the four words |
 
 ## Further Reading

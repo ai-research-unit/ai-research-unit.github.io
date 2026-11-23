@@ -18,11 +18,11 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd
 
 Three results are established, and each is a computation.
 
-**The polar action.** The kinetic term is $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi\,\sum_\mu\mathcal{A}_\mu\mathcal{A}_\mu^{*})$ with $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$, which is the frame density times the square of the bracket. Written in parameters it is a quadratic form with a metric that depends on the point, and the metric is computed exactly for the four scalar parameters with the two axes held fixed. The rapidity enters it twice: as the factor $\cosh\theta_{\mathrm{rpd}}$ on all four squares, and as the factor $\sinh\theta_{\mathrm{rpd}}$ on two cross terms.
+**The polar action.** The kinetic term is $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi\,\sum_{\imath}\mathcal{A}_{\imath}\mathcal{A}_{\imath}^{*})$ with $\mathcal{A}_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$, which is the frame density times the square of the bracket. Written in parameters it is a quadratic form with a metric that depends on the point, and the metric is computed exactly for the four scalar parameters with the two axes held fixed. The rapidity enters it twice: as the factor $\cosh\theta_{\mathrm{rpd}}$ on all four squares, and as the factor $\sinh\theta_{\mathrm{rpd}}$ on two cross terms.
 
 **The Euler–Lagrange equations.** For the central field they are the parent's pair, exactly: the transport equation and the quantum Hamilton–Jacobi equation. For the general element they are the Klein–Gordon equation pulled back to the parameters, and the equivalence is exact because the word is a bijection with a smooth inverse. There is no constraint and no Lagrange multiplier, and §*The General Element* says why the first-order case differs.
 
-**The relation to the four brackets.** The bracket $\mathcal{A}_\mu$ is the natural variable: the Lagrangian is quadratic in it with an algebraic weight, and the eight parameter equations are its Jacobian image. The parameter equations are not a simpler form and are not a different system.
+**The relation to the four brackets.** The bracket $\mathcal{A}_{\imath}$ is the natural variable: the Lagrangian is quadratic in it with an algebraic weight, and the eight parameter equations are its Jacobian image. The parameter equations are not a simpler form and are not a different system.
 
 **Scope.** The coefficient is the constant mass wave number $k_m$ throughout, as in the parent's §*The Equation in Polar Variables*, and §*The Potential Term* states the generalisation to a Hermitian coefficient in one line. The operator case, in which the coefficient varies in space and time, is the standard Madelung problem of the parent's non-relativistic limit and is not re-derived here.
 
@@ -30,7 +30,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 
 ## Conventions
 
-**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the element-form companion: the quaternionic pairing gives $\mathrm{Sc}(A^{\natural}A)=\sum_\mu a_\mu^{2}$ for complex coefficients, which is not real, and it is not used. The d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ with $r'_t=c\,t'$, the four-position is $\tilde R_\Phi=i r'_t e_t+\vec r$, and $k_m=\frac{2\pi mc}{h}$. The action is a functional of the eight parameters over four-dimensional space, and the material time is $r'_t=c\,t'$ throughout, so every temporal derivative below is a derivative in a length. Every symbol is defined where it first appears, and §*Summary of Notation* collects the letters with their domains.
+**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the element-form companion: the quaternionic pairing gives $\mathrm{Sc}(A^{\natural}A)=\sum_{\imath} a_{\imath}^{2}$ for complex coefficients, which is not real, and it is not used. The d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ with $r'_t=c\,t'$, the four-position is $\tilde R_\Phi=i r'_t e_t+\vec r$, and $k_m=\frac{2\pi mc}{h}$. The action is a functional of the eight parameters over four-dimensional space, and the material time is $r'_t=c\,t'$ throughout, so every temporal derivative below is a derivative in a length. Every symbol is defined where it first appears, and §*Summary of Notation* collects the letters with their domains.
 
 ## The Action in Polar Variables
 
@@ -44,14 +44,14 @@ The substitution is a change of variables in this functional. The subsections be
 
 **The bracket form of the kinetic term.**
 
-Every derivative of the word factors through one object. With $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$,
+Every derivative of the word factors through one object. With $\mathcal{A}_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$,
 
 $$
-\partial_\mu\tilde\Xi=\tilde\Xi\,\mathcal{A}_\mu,
+\partial_{\imath}\tilde\Xi=\tilde\Xi\,\mathcal{A}_{\imath},
 \qquad
-(\partial_\mu\tilde\Xi)^{*}\partial_\mu\tilde\Xi=\mathcal{A}_\mu^{*}\tilde\Xi^{*}\tilde\Xi\,\mathcal{A}_\mu,
+(\partial_{\imath}\tilde\Xi)^{*}\partial_{\imath}\tilde\Xi=\mathcal{A}_{\imath}^{*}\tilde\Xi^{*}\tilde\Xi\,\mathcal{A}_{\imath},
 \qquad
-\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}\partial_\mu\tilde\Xi\big]=\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\,\mathcal{A}_\mu\mathcal{A}_\mu^{*}\big],
+\mathrm{Sc}\big[(\partial_{\imath}\tilde\Xi)^{*}\partial_{\imath}\tilde\Xi\big]=\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\,\mathcal{A}_{\imath}\mathcal{A}_{\imath}^{*}\big],
 $$
 
 the last step by $\mathrm{Sc}(XYZ)=\mathrm{Sc}(ZXY)$, which moves the frame density to the front. The identity is exact and it is the reason the polar form is legible: the kinetic Lagrangian is the square of the bracket, weighted by the frame density $\tilde\Xi^{*}\tilde\Xi$.
@@ -59,13 +59,13 @@ the last step by $\mathrm{Sc}(XYZ)=\mathrm{Sc}(ZXY)$, which moves the frame dens
 **The bracket, split into its four types.** Substituting the word,
 
 $$
-\mathcal{A}_\mu=\partial_\mu\ln \varrho+i\,\partial_\mu\theta_{\mathrm{pha}}+\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}+\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r},
+\mathcal{A}_{\imath}=\partial_{\imath}\ln \varrho+i\,\partial_{\imath}\theta_{\mathrm{pha}}+\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}+\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r},
 $$
 
-which is four objects of four algebraic types: a real scalar, a central imaginary, a Hermitian element along the boost axis, and a real vector. With the axes fixed, $\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}=\tfrac{i}{2}\partial_\mu\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}=\tfrac12\partial_\mu\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}$, so
+which is four objects of four algebraic types: a real scalar, a central imaginary, a Hermitian element along the boost axis, and a real vector. With the axes fixed, $\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}=\tfrac{i}{2}\partial_{\imath}\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}=\tfrac12\partial_{\imath}\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}$, so
 
 $$
-\mathcal{A}_\mu=\partial_\mu\ln \varrho+i\,\partial_\mu\theta_{\mathrm{pha}}+\tfrac{i}{2}\partial_\mu\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}'+\tfrac12\partial_\mu\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}
+\mathcal{A}_{\imath}=\partial_{\imath}\ln \varrho+i\,\partial_{\imath}\theta_{\mathrm{pha}}+\tfrac{i}{2}\partial_{\imath}\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}'+\tfrac12\partial_{\imath}\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}
 $$
 
 with $\vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ the boost axis carried into the rotor's frame. The dot product $\vec u_{\mathrm b}'\cdot\vec u_{\mathrm r}=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ is the one invariant the two axes have.
@@ -111,7 +111,7 @@ $$
 
 so the amplitude and the rapidity mix without changing the volume, and the block is invertible for every rapidity. The identity $\cosh^{2}-\sinh^{2}=1$ appears here as a property of the parameter metric, which is why the Legendre transform of §*The Variation: The Euler–Lagrange Equations* is regular.
 
-**The metric is the induced one.** Writing $g_{ab}(p)=\mathrm{Sc}\big[(\partial\tilde\Xi/\partial p_{a})^{*}(\partial\tilde\Xi/\partial p_{b})\big]$ for the eight parameters $p_{a}$, the kinetic Lagrangian is $g_{ab}\sum_\mu\partial_\mu p_{a}\partial_\mu p_{b}$ with the metric signs of the action, and $g$ is the pull-back of the flat Hermitian metric of $\mathbb{C}^{4}$ by the word. Since $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ is a sum of squares, $g$ is positive semi-definite in every direction, and it is positive definite wherever the word's Jacobian has full rank, which is everywhere on the $N$-regular set.
+**The metric is the induced one.** Writing $g_{ab}(p)=\mathrm{Sc}\big[(\partial\tilde\Xi/\partial p_{a})^{*}(\partial\tilde\Xi/\partial p_{b})\big]$ for the eight parameters $p_{a}$, the kinetic Lagrangian is $g_{ab}\sum_{\imath}\partial_{\imath} p_{a}\partial_{\imath} p_{b}$ with the metric signs of the action, and $g$ is the pull-back of the flat Hermitian metric of $\mathbb{C}^{4}$ by the word. Since $\mathrm{Sc}(A^{*}A)=\sum_{\imath}\lvert a_{\imath}\rvert^{2}$ is a sum of squares, $g$ is positive semi-definite in every direction, and it is positive definite wherever the word's Jacobian has full rank, which is everywhere on the $N$-regular set.
 
 **The check.** Six random parameter sets with random axes, all four angles varying, were compared against the boxed formula: the two agree to a relative $4\times10^{-10}$, which is the truncation of the difference quotient. Each term was also isolated separately: with only the amplitude, only the rapidity, only the phase or only the rotor varying, the value is $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ times the square of that rate, and the two cross terms appear only when both of their parameters vary.
 
@@ -157,12 +157,12 @@ which is Madelung's relativistic action for the pair $(\varrho,S_{\tilde\Xi})$ w
 **The pairing. Inherited, and the substitution cannot disturb it.** The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$ and carries $\mathrm{Sc}\bigl[(\partial\tilde\Xi)^{*}\partial\tilde\Xi-k_m^{2}\tilde\Xi^{*}\tilde\Xi\bigr]$. The chart writes the two real fields $\varrho$ and $\theta_{\mathrm{pha}}$, and the pair becomes a sum of two squares with the weights the metric fixes:
 
 $$
-\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\,(\mathcal A_\mu\mathcal A_\mu^{*})\bigr]=\varrho^{2}\bigl[(\partial_\mu\ln\varrho)^{2}+(\partial_\mu\theta_{\mathrm{pha}})^{2}\bigr],
+\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\,(\mathcal A_{\imath}\mathcal A_{\imath}^{*})\bigr]=\varrho^{2}\bigl[(\partial_{\imath}\ln\varrho)^{2}+(\partial_{\imath}\theta_{\mathrm{pha}})^{2}\bigr],
 $$
 
 which is what the spin-zero fluid article prints as its starting point. Both squares are real, so the density is real in the chart for the same reason it was real in the element form: the scalar part of a product of conjugates is real.
 
-**The type of the coefficient. Two coefficients, and both are fixed by the metric and not chosen.** In the element form the type question is asked of the mass and of the operator. In the chart the kinetic term's coefficients are $\pm1$ times $\varrho^{2}$, read off the sign weights $\varepsilon_\mu$, so no coefficient there is free to be the wrong type. The mass enters as $-k_m^{2}\varrho^{2}$, with $k_m^{2}$ real, which is the parent's statement in the chart's variables.
+**The type of the coefficient. Two coefficients, and both are fixed by the metric and not chosen.** In the element form the type question is asked of the mass and of the operator. In the chart the kinetic term's coefficients are $\pm1$ times $\varrho^{2}$, read off the sign weights $\varepsilon_{\imath}$, so no coefficient there is free to be the wrong type. The mass enters as $-k_m^{2}\varrho^{2}$, with $k_m^{2}$ real, which is the parent's statement in the chart's variables.
 
 **The selection rule. Declared, and argued once elsewhere.** The rule needs a potential general enough to hold an inadmissible sector. The free scalar's potential is the mass term alone, so the rule is a statement about the potentials the parent's action admits at all, and the free Klein–Gordon momentum article is where it is argued, with the anti-Hermitian sector excluded by a complex frequency $\omega^{2}/c^{2}=k_\Phi^{2}+i\lambda$. A chart cannot admit a potential the element form did not have.
 
@@ -220,17 +220,17 @@ The equivalence holds on the $N$-regular set, and only there. At $\varrho=0$ the
 
 At a point of the $N$-regular set the tangent space of the field values is eight-dimensional, and it has two natural bases.
 
-**The bracket basis** is the decomposition of $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ into its four algebraic types: a real scalar, a central imaginary, a Hermitian element along the boost axis, and a real vector along the rotor's axis. Each type carries one physical role, and each is one object and not one number.
+**The bracket basis** is the decomposition of $\mathcal{A}_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$ into its four algebraic types: a real scalar, a central imaginary, a Hermitian element along the boost axis, and a real vector along the rotor's axis. Each type carries one physical role, and each is one object and not one number.
 
 **The parameter basis** is the set of eight derivatives $\partial\tilde\Xi/\partial p_{a}$. These are eight elements of $\mathbb{B}$, not eight numbers, and they are the Jacobian columns of the word.
 
-The two are related by $\mathcal{A}_\mu=\sum_a\mathcal{A}_a\,\partial_\mu p_{a}$ with $\mathcal{A}_a=\tilde\Xi^{-1}\partial\tilde\Xi/\partial p_{a}$, so the bracket basis is the parameter basis multiplied by one more factor of $\tilde\Xi^{-1}$. The metric of the polar action is the same in both readings,
+The two are related by $\mathcal{A}_{\imath}=\sum_a\mathcal{A}_a\,\partial_{\imath} p_{a}$ with $\mathcal{A}_a=\tilde\Xi^{-1}\partial\tilde\Xi/\partial p_{a}$, so the bracket basis is the parameter basis multiplied by one more factor of $\tilde\Xi^{-1}$. The metric of the polar action is the same in both readings,
 
 $$
 g_{ab}=\mathrm{Sc}\big[\mathcal{A}_a^{*}\,\tilde\Xi^{*}\tilde\Xi\,\mathcal{A}_b\big],
 $$
 
-which is the parameter form, and $\mathrm{Sc}(\mathcal{A}^{*}\tilde\Xi^{*}\tilde\Xi\,\mathcal{A})$ with $\mathcal{A}=\mathcal{A}_a\partial_\mu p_{a}$, which is the bracket form. The two differ by where the sum over the parameters is taken.
+which is the parameter form, and $\mathrm{Sc}(\mathcal{A}^{*}\tilde\Xi^{*}\tilde\Xi\,\mathcal{A})$ with $\mathcal{A}=\mathcal{A}_a\partial_{\imath} p_{a}$, which is the bracket form. The two differ by where the sum over the parameters is taken.
 
 ### The central field's Jacobian, worked
 
@@ -254,7 +254,7 @@ so the Jacobian is diagonal and the metric is $(1,\varrho^{2})$. The two paramet
 
 ### Which is the natural form
 
-**The bracket form is the natural one.** The Lagrangian is one quadratic form in one object, the bracket $\mathcal{A}_\mu$, weighted by one density factor; the bracket is four objects of four types, and the four types are the four things an element of the algebra can be. The equation is the vanishing of eight residuals, and the four brackets are the four types those residuals fall into.
+**The bracket form is the natural one.** The Lagrangian is one quadratic form in one object, the bracket $\mathcal{A}_{\imath}$, weighted by one density factor; the bracket is four objects of four types, and the four types are the four things an element of the algebra can be. The equation is the vanishing of eight residuals, and the four brackets are the four types those residuals fall into.
 
 **The parameter form is the Jacobian image of it.** It is the form in which the variational principle is stated over eight real functions with no auxiliary object, and it is the form in which the count is right: eight functions, eight equations, no constraint. But it is not simpler, and the parameter equations are not four equations plus four conditions; they are eight equations whose content is the brackets'.
 
@@ -312,7 +312,7 @@ j_{r'_t}=2\,\mathrm{Re}\,\mathrm{Sc}\big[i(\partial_{r'_t}\tilde\Xi)^{*}\tilde\X
 j_\eta=-2\varrho^{2}\,\partial_{r_\eta}\theta_{\mathrm{pha}},
 $$
 
-because $\mathcal{A}_\mu=\partial_\mu\ln \varrho+i\partial_\mu\theta_{\mathrm{pha}}$, so that $i\mathcal{A}_\mu^{*}$ has scalar part $\partial_\mu\theta_{\mathrm{pha}}$. The charge density is therefore the density times the phase rate, and the phase rate is minus the energy over $\frac{h}{2\pi} c$,
+because $\mathcal{A}_{\imath}=\partial_{\imath}\ln \varrho+i\partial_{\imath}\theta_{\mathrm{pha}}$, so that $i\mathcal{A}_{\imath}^{*}$ has scalar part $\partial_{\imath}\theta_{\mathrm{pha}}$. The charge density is therefore the density times the phase rate, and the phase rate is minus the energy over $\frac{h}{2\pi} c$,
 
 $$
 j_{r'_t}=2\rho_{\mathrm{num}}\frac{2\pi \partial_{r'_t}S_{\tilde\Xi}}{h}
@@ -383,7 +383,7 @@ $$
 =\varrho^{2}\Bigl\{\cosh\theta_{\mathrm{rpd}}\Bigl[(\partial\ln \varrho)^{2}+(\partial\theta_{\mathrm{pha}})^{2}+\frac{(\partial\theta_{\mathrm{rpd}})^{2}}{4}+\frac{(\partial\theta_{\mathrm{axr}})^{2}}{4}\Bigr]+\sinh\theta_{\mathrm{rpd}}\Bigl[(\partial\ln \varrho)(\partial\theta_{\mathrm{rpd}})-(\partial\theta_{\mathrm{pha}})(\partial\theta_{\mathrm{axr}})\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\Bigr]\Bigr\}
 $$
 
-for fixed axes, whose metric $g_{ab}$ is read off by replacing each $\partial p_{a}$ with the parameter derivative, and with the potential $V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}(\vec h_\Psi\cdot\vec u_{\mathrm b})$ for a Hermitian coefficient $h_t e_t+i\vec h_\Psi$. The kinetic Lagrangian is $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi\,\sum_\mu\mathcal{A}_\mu\mathcal{A}_\mu^{*})$ with $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$: the frame density times the square of the bracket. The density factor is $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, and it is the coefficient of every square.
+for fixed axes, whose metric $g_{ab}$ is read off by replacing each $\partial p_{a}$ with the parameter derivative, and with the potential $V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}(\vec h_\Psi\cdot\vec u_{\mathrm b})$ for a Hermitian coefficient $h_t e_t+i\vec h_\Psi$. The kinetic Lagrangian is $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi\,\sum_{\imath}\mathcal{A}_{\imath}\mathcal{A}_{\imath}^{*})$ with $\mathcal{A}_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$: the frame density times the square of the bracket. The density factor is $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, and it is the coefficient of every square.
 
 The rapidity enters in two ways and both are needed. It multiplies all four squares through $\cosh\theta_{\mathrm{rpd}}$, and it multiplies two cross terms through $\sinh\theta_{\mathrm{rpd}}$: one between the amplitude gradient and the rapidity gradient, one between the phase gradient and the rotor's angular rate, and the second carries the cosine between the two axes. The amplitude–rapidity block has determinant $\tfrac14$, the identity $\cosh^{2}-\sinh^{2}=1$ appearing as a unit-determinant mixing. The first-order Schrödinger action has the same cosh multiplying a single velocity, because its kinetic term is one bracket; the second-order action has two brackets and the same factor becomes a metric entry.
 
@@ -396,7 +396,7 @@ For the general element the equivalence with the Klein–Gordon equation is exac
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{C},\ \mathbb{B}_{\Psi},\ \mathbb{B}_{\Phi}$ | Centre, Hermitian subspace, anti-Hermitian subspace |
 | $^{*},\ ^{\natural}$ | Hermitian conjugation, quaternion conjugation |
@@ -409,7 +409,7 @@ For the general element the equivalence with the Klein–Gordon equation is exac
 | $\theta_{\mathrm{axr}}\in[0,2\pi]$ | Angle of the rotor $\tilde u_{\mathrm r}$ |
 | $\vec u_{\mathrm b},\ \vec u_{\mathrm r}$ | Real unit axes of the boost and the rotor |
 | $\vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ | Boost axis in the rotor's frame |
-| $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ | The bracket; four algebraic types |
+| $\mathcal{A}_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$ | The bracket; four algebraic types |
 | $\tilde\Xi^{*}\tilde\Xi=\varrho^{2}(\cosh\theta_{\mathrm{rpd}}+i\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}')$ | Frame density |
 | $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density ratio that weights every square |
 | $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The parent's density |

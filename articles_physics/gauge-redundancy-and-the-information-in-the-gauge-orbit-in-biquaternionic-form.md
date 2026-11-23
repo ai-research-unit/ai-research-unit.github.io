@@ -30,7 +30,7 @@ $$
 \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r'_t}^2 ,
 $$
 
-the series convention. The connection is $\tilde{A}_{\Phi} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$, with $A_0 = i\,a'_t$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa =\frac{2\pi ϙ}{h}$, so that $D = \tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi}$ and $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The plain form, read as the reduction formula $2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.
+the series convention. The connection is $\tilde{A}_{\Phi} = \sum_{\imath\in\{t,x,y,z\}}A_{\imath} e_{\imath} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$, with $A_0 = i\,a'_t$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa =\frac{2\pi ϙ}{h}$, so that $D = \tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi}$ and $D_{\imath} = \partial/\partial R_{\imath} + i\kappa A_{\imath}$. The gauge scalar is $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The plain form, read as the reduction formula $2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.
 
 ## The Gauge Orbit as a Torsor
 
@@ -65,7 +65,7 @@ These two facts are the whole geometry of the orbit: it is a flat affine space m
 The local structure is read off mode by mode. Let a single Fourier mode of the connection carry wavevector $k = (k_{t}^{\prime},k_1,k_2,k_3)$ on the $i r'_t$ coordinates, so that a gradient acts as left multiplication by $iK$ with
 
 $$
-K = \sum_{\mu\in\{t,x,y,z\}}k_{\Phi,\mu} e_\mu .
+K = \sum_{\imath\in\{t,x,y,z\}}k_{\Phi,\imath} e_{\imath} .
 $$
 
 A pure-gauge mode with real scalar amplitude $g$ contributes $iKg$, so its image is the **real line spanned by $iK$** inside the four-dimensional fibre. The linear map from gauge functions to connections therefore has rank one per mode (rank zero only for the constant mode $k = 0$, on which there is no gauge freedom). This was checked numerically: for generic wavevectors and a generic real amplitude, the four ratios of the components of $iKg$ to those of $K$ agreed to $2\times10^{-16}$.
@@ -132,31 +132,31 @@ $$
 
 so $S$ is pure gauge: its value can be changed at will along the orbit, and the Lorenz condition $S = 0$ is a choice of representative, not a physical statement. The two statements — $\tilde{F}$ invariant, $S$ pure gauge — are the two halves of a single fact: the orbit is the fibre, the curvature is the base, and the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ is the coordinate along the fibre.
 
-Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_\mu$ with $x_0 = i r'_t$ and no restriction on the mode wavevectors. The vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ was unchanged by a gauge transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box_\Phi\Gamma$, to within $9\times10^{-16}$. The identity
+Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_{\imath}$ with $x_0 = i r'_t$ and no restriction on the mode wavevectors. The vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ was unchanged by a gauge transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box_\Phi\Gamma$, to within $9\times10^{-16}$. The identity
 
 $$
-\tilde{F} = \frac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu ,
-\qquad F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu ,
+\tilde{F} = \frac{1}{2}\sum_{\imath,\jmath}F_{\imath\jmath}\,\bar{e}_{\imath} e_{\jmath} ,
+\qquad F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath} ,
 $$
 
 was checked against the direct evaluation of $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ on a generic connection and wavevector, agreeing to $5\times10^{-16}$. A connection on the orbit through zero, $\tilde{A}_{\Phi} = -\tilde\nabla_\Phi\Gamma$, is flat in the same sense: its vector part came out zero to $2\times10^{-16}$, while its scalar part equalled $-\Box_\Phi\Gamma$ to $2\times10^{-16}$, which is the shift that carries the member of the orbit with $S = 0$ to this one. For $\tilde{A}_{\Phi} = +\tilde\nabla_\Phi\Gamma$ the scalar part is $+\Box_\Phi\Gamma$; the sign is carried by the direction of the shift, and the orbit's definition $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ fixes it.
 
 ### Local Triviality and the Degree-of-Freedom Count
 
-Any connection can be removed at a single point. Fix a point $\tilde{Q}_0$ and let $A_\mu$ be the components of $\tilde{A}_{\Phi}(\tilde{Q}_0)$, with $A_0$ imaginary and $\vec A$ real. Define
+Any connection can be removed at a single point. Fix a point $\tilde{Q}_0$ and let $A_{\imath}$ be the components of $\tilde{A}_{\Phi}(\tilde{Q}_0)$, with $A_0$ imaginary and $\vec A$ real. Define
 
 $$
-\Gamma(\tilde{Q}) = \sum_{\mu\in\{t,x,y,z\}} A_\mu\,(x_\mu - x_{0\mu}),
+\Gamma(\tilde{Q}) = \sum_{\imath\in\{t,x,y,z\}} A_{\imath}\,(x_{\imath} - x_{0\imath}),
 $$
 
-treating the $x_\mu$ as independent coordinates. Then $\partial/\partial R_\mu\,\Gamma = A_\mu$, so $\tilde\nabla_\Phi\Gamma = \tilde{A}_{\Phi}(\tilde{Q}_0)$ and the transformed connection $\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ vanishes at $\tilde{Q}_0$. The connection can therefore be gauged to zero at any one point, and consequently **no gauge-invariant local function of $\tilde{A}_{\Phi}$ exists**: every such function would have to be constant along the orbit, and the orbit passes through zero at the point. The first non-trivial gauge-invariant object is the curvature, and it is the obstruction to extending the elimination from a point to a neighbourhood.
+treating the $x_{\imath}$ as independent coordinates. Then $\partial/\partial R_{\imath}\,\Gamma = A_{\imath}$, so $\tilde\nabla_\Phi\Gamma = \tilde{A}_{\Phi}(\tilde{Q}_0)$ and the transformed connection $\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ vanishes at $\tilde{Q}_0$. The connection can therefore be gauged to zero at any one point, and consequently **no gauge-invariant local function of $\tilde{A}_{\Phi}$ exists**: every such function would have to be constant along the orbit, and the orbit passes through zero at the point. The first non-trivial gauge-invariant object is the curvature, and it is the obstruction to extending the elimination from a point to a neighbourhood.
 
 The count of physical degrees of freedom now follows from the rank of the pure-gauge map.
 
 - The connection has **four real components** per point: the material-sector condition $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ makes $A_0 = i\,a'_t$ purely imaginary and $A_1, A_2, A_3$ real, so the field carries four real functions, not four complex ones, and its Fourier data is correspondingly four real amplitudes rather than four complex ones.
 - The gauge function is one real function, and its gradient removes one real direction from the four per mode, as the rank of the pure-gauge map established above.
 - Off shell the physical content is therefore $4 - 1 = 3$ real components per mode.
-- The field equation supplies one further constraint. The $\nu = 0$ component of $\sum_\mu\varepsilon_\mu\,\partial F_{\mu\nu}/\partial R_\mu = J_\nu$ — the Gauss law — contains no second time derivative, so it constrains the initial data rather than evolving it, and it removes one of the three components, leaving $4 - 1 - 1 = 2$ per mode: the two transverse polarizations.
+- The field equation supplies one further constraint. The ${\jmath} = 0$ component of $\sum_{\imath}\varepsilon_{\imath}\,\partial F_{\imath\jmath}/\partial R_{\imath} = J_{\jmath}$ — the Gauss law — contains no second time derivative, so it constrains the initial data rather than evolving it, and it removes one of the three components, leaving $4 - 1 - 1 = 2$ per mode: the two transverse polarizations.
 
 This is the standard $4 \to 3 \to 2$ counting of a massless vector field, and it is reproduced here by the rank of the biquaternion orbit. The count is stated for real components, which is the count the material-sector reality condition makes available; a connection with four unconstrained complex components would carry eight real ones and the arithmetic would not close on two. The point of reproducing the count is that it is a statement about the **fibre**: the gauge orbit is exactly the one direction per mode that the count discards.
 
@@ -214,7 +214,7 @@ The orbit is locally trivial — a single point can always be gauged away — bu
 **Local elimination is always possible; global elimination is not.** As shown above, a connection can be gauged to zero at any point. It can be gauged to zero on a neighbourhood precisely when its curvature vanishes there, because a flat connection is locally a gradient. Globally, a flat connection need not be a gradient: its **holonomy** around a non-contractible loop is the obstruction. The holonomy is the path-ordered exponential of the connection around a closed curve,
 
 $$
-\boxed{\;\tilde U(C) = \mathcal{P}\exp\!\left(\frac{2\pi i\,ϙ}{h}\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)\;},
+\boxed{\;\tilde U(C) = \mathcal{P}\exp\!\left(\frac{2\pi i\,ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath}\,dx_{\imath}\right)\;},
 $$
 
 and twice its scalar part is the Wilson loop, $W(C) = 2\,\mathrm{Sc}\,\tilde U(C)$. The coupling $\frac{2\pi ϙ}{h}$ is the one of the covariant derivative above, so the exponent is a pure number; it is invariant under the gradient shift because the loop integral of a total derivative vanishes. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.
@@ -281,7 +281,7 @@ The boundary is drawn as in the companion articles.
 
 1. **A gauge-fixing principle.** The orbit is a torsor, so no member is preferred. Is there an algebraic principle that selects a representative — a condition natural to $\mathbb{B}$ rather than imported — or is the choice irreducibly extrinsic, as the canonical-quantization article suggests?
 
-2. **The non-abelian orbit.** For a non-central gauge group the orbit is the adjoint orbit of the connection, $A_\mu\mapsto \tilde Q A_\mu \tilde Q^{-1} + (i/\kappa)(\partial/\partial R_\mu \tilde Q)\tilde Q^{-1}$, and it is no longer a torsor of an abelian group but a coadjoint-type space. Does the orbit still have a clean fibre interpretation, and does the relative-entropy invariance survive with the appropriate $*$-unitary?
+2. **The non-abelian orbit.** For a non-central gauge group the orbit is the adjoint orbit of the connection, $A_{\imath}\mapsto \tilde Q A_{\imath} \tilde Q^{-1} + (i/\kappa)(\partial/\partial R_{\imath} \tilde Q)\tilde Q^{-1}$, and it is no longer a torsor of an abelian group but a coadjoint-type space. Does the orbit still have a clean fibre interpretation, and does the relative-entropy invariance survive with the appropriate $*$-unitary?
 
 3. **The orbit and the local complex structure.** The framework makes the complex structure local through the speed of light $c = 1/\sqrt{\epsilon\mu}$. Is the gauge orbit — a local shift by a gradient — related to that local complex structure, or are the two local structures independent? No relation is established here.
 
@@ -317,16 +317,16 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient |
 | $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ | Quaternion-conjugate gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
-| $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection, a material-sector one-form |
+| $\tilde{A}_{\Phi} = \sum_{\imath} A_{\imath} e_{\imath} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection, a material-sector one-form |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(i\theta_{\mathrm{gau}})$ | Local central phase |
 | $\kappa =\frac{2\pi ϙ}{h}$ | Coupling |
 | $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$ | The gauge orbit |
 | $\mathcal{G}/\mathbb{R}$ | Group of real gauge functions modulo constants; the orbit's torsor group |
-| $K = \sum_\mu k_{\Phi,\mu} e_\mu$ | Wavevector biquaternion of the mode $k = (k_{t}^{\prime},k_1,k_2,k_3)$; pure-gauge image is the real line $\mathbb{R}(iK)$ |
+| $K = \sum_{\imath} k_{\Phi,\imath} e_{\imath}$ | Wavevector biquaternion of the mode $k = (k_{t}^{\prime},k_1,k_2,k_3)$; pure-gauge image is the real line $\mathbb{R}(iK)$ |
 | $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A$ | Gauge scalar, pure gauge: $S_2 = S - \Box_\Phi\Gamma$ |
-| $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Field strength = curvature, orbit-invariant |
-| $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | Abelian curvature components |
+| $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\imath\jmath}F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$ | Field strength = curvature, orbit-invariant |
+| $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath}$ | Abelian curvature components |
 | $\tilde U(C) = \mathcal{P}\exp(i\theta_{\mathrm{gau}})$ | Holonomy; global obstruction |
 | $W(C) = 2\,\mathrm{Sc}\,\tilde U(C)$ | Wilson loop; two-sector bilinear |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$, $|\vec s_{\Psi}|\leq1$ | State of the informational sector (Bloch ball) |

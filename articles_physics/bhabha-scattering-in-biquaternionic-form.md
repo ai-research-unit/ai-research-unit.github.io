@@ -63,7 +63,7 @@ Each frame basis operator carries exactly one factor of the central $i$, so a sq
 $$
 \Gamma_t^2=1,\qquad
 \Gamma_\eta^2=-1,\qquad
-\Gamma_\mu\Gamma_\nu+\Gamma_\nu\Gamma_\mu=0\quad(\mu\neq\nu),
+\Gamma_{\imath}\Gamma_{\jmath}+\Gamma_{\jmath}\Gamma_{\imath}=0\quad(\imath\neq\jmath),
 $$
 
 the $1$ being the identity action and the $0$ the zero action. The anticommutation comes from the quaternion rule of two different spatial units. The time basis operator is a right multiplication alone, the three spatial basis operators carry a factor on each side, and the fifth is a right multiplication alone; that side is what makes it a chirality, and its anticommutation with the four frame basis operators is a separate property of the list.
@@ -133,11 +133,11 @@ with $a$ the element of the outgoing line and $b$ that of the incoming one. The 
 Two currents contract with the sign vector,
 
 $$
-J(a,b)\cdot J(c,d)=\sum_{\mu\in\{t,1,2,3\}}\varepsilon_\mu\,J_\mu(a,b)\,J_\mu(c,d),
+J(a,b)\cdot J(c,d)=\sum_{\imath\in\{t,1,2,3\}}\varepsilon_{\imath}\,J_{\imath}(a,b)\,J_{\imath}(c,d),
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
 
-the time component entering with $+$ and the three spatial ones with $-$. The positron line uses the same four numbers with the order of the two elements reversed, $J_\mu(k,k_2)$, because there the conjugated element is the incoming one.
+the time component entering with $+$ and the three spatial ones with $-$. The positron line uses the same four numbers with the order of the two elements reversed, $J_{\imath}(k,k_2)$, because there the conjugated element is the incoming one.
 
 With this notation the $t$-channel and $s$-channel amplitudes are
 
@@ -167,20 +167,20 @@ $$
 with the three trace combinations
 
 $$
-T_t:=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,
-\operatorname{Tr}\bigl[\Gamma_\mu P(p)\Gamma_\nu P(p_2)\bigr]\,
-\operatorname{Tr}\bigl[\Gamma_\mu P(k_2)\Gamma_\nu P(k)\bigr],
+T_t:=\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,
+\operatorname{Tr}\bigl[\Gamma_{\imath} P(p)\Gamma_{\jmath} P(p_2)\bigr]\,
+\operatorname{Tr}\bigl[\Gamma_{\imath} P(k_2)\Gamma_{\jmath} P(k)\bigr],
 $$
 
 $$
-T_s:=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,
-\operatorname{Tr}\bigl[\Gamma_\mu P(p)\Gamma_\nu P(k)\bigr]\,
-\operatorname{Tr}\bigl[\Gamma_\mu P(k_2)\Gamma_\nu P(p_2)\bigr],
+T_s:=\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,
+\operatorname{Tr}\bigl[\Gamma_{\imath} P(p)\Gamma_{\jmath} P(k)\bigr]\,
+\operatorname{Tr}\bigl[\Gamma_{\imath} P(k_2)\Gamma_{\jmath} P(p_2)\bigr],
 $$
 
 $$
-T_{ts}:=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,
-\operatorname{Tr}\bigl[\Gamma_\mu P(p)\Gamma_\nu P(k)\Gamma_\mu P(k_2)\Gamma_\nu P(p_2)\bigr],
+T_{ts}:=\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,
+\operatorname{Tr}\bigl[\Gamma_{\imath} P(p)\Gamma_{\jmath} P(k)\Gamma_{\imath} P(k_2)\Gamma_{\jmath} P(p_2)\bigr],
 $$
 
 where $\varepsilon=(1,-1,-1,-1)$ is the sign vector and $\operatorname{Tr}$ is the trace of the action on the four-dimensional complex space $\mathbb{B}$.
@@ -300,7 +300,7 @@ The framework supplies the two currents, the photon propagator, the external Foc
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 This section fixes the dictionary that the traces above reproduce, and nothing here is needed outside it.
 
@@ -316,7 +316,7 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-Each $\gamma_\mu$ carries one factor of $i$, so a square spends $i^2=-1$ once; the signs of the squares are the metric signs. The fifth basis operator is not independent, since
+Each $\gamma_{\imath}$ carries one factor of $i$, so a square spends $i^2=-1$ once; the signs of the squares are the metric signs. The fifth basis operator is not independent, since
 
 $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
@@ -327,23 +327,23 @@ These are the body's own basis operators — $\Gamma_t=\gamma_0$, $\Gamma_\eta=\
 **The trace identities.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr),
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}+\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr),
 $$
 
 $$
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma}.
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma}.
 $$
 
-The traces of an odd number of $\gamma_\mu$'s vanish. The three trace combinations of the body are then
+The traces of an odd number of $\gamma_{\imath}$'s vanish. The three trace combinations of the body are then
 
 $$
 \frac14 T_t=2(s^2+u^2),\qquad
@@ -357,7 +357,7 @@ The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ is a differen
 
 Read over $\mathbb{R}$ rather than $\mathbb{C}$, the basis operators generate a real Clifford algebra of sixteen dimensions, and its complexification is the whole of $M_4(\mathbb{C})$. The algebra $\mathbb{B}$ itself is the eight-dimensional real algebra $M_2(\mathbb{C})$, the complexified quaternions. That complexification is what lets the basis operators and the gammas be the same objects, and it is why no larger algebra is needed.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -381,8 +381,8 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 | $\Gamma_t: X\mapsto iX\vec e_x$, $\Gamma_\eta: X\mapsto i\vec e_\eta X\vec e_y$ | Four frame basis operators |
 | $\mathsf{V}_{\mathrm{vol}}: X\mapsto -iX\vec e_z$ | Volume basis operator of the frame |
 | $P(p): X\mapsto p_0iX\vec e_x-\sum_\eta p_ki\vec e_\eta X\vec e_y$ | Momentum basis operator; $P(p)^2=p_0^2-\vec p^2$ |
-| $J_\mu(a,b)$ | Current of a line, $J_t=\mathrm{Sc}(a^*b)$, $J_\eta=\mathrm{Sc}(a^*\vec e_\eta b\vec e_z)$ |
-| $J(a,b)\cdot J(c,d)$ | Contraction with the sign vector, $\sum_\mu\varepsilon_\mu J_\mu(a,b)J_\mu(c,d)$ |
+| $J_{\imath}(a,b)$ | Current of a line, $J_t=\mathrm{Sc}(a^*b)$, $J_\eta=\mathrm{Sc}(a^*\vec e_\eta b\vec e_z)$ |
+| $J(a,b)\cdot J(c,d)$ | Contraction with the sign vector, $\sum_{\imath}\varepsilon_{\imath} J_{\imath}(a,b)J_{\imath}(c,d)$ |
 | $\tilde u(p)$, $\tilde v(k)$ | Electron and positron state elements |
 | $\mathcal M_t,\mathcal M_s$ | Exchange and annihilation amplitudes |
 | $\mathcal M=\mathcal M_t+\mathcal M_s$ | Total amplitude with the relative sign |

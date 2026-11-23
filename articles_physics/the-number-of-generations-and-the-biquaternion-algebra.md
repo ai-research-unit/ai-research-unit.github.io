@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Standard Model's fermions come in three generations (families), each an identical copy of the same gauge quantum numbers with different masses: $(e,\nu_{\mathrm{neu},e},\mathrm u,d)$, $(\mu,\nu_{\mathrm{neu},\mu},c,s)$, $(\tau,\nu_{\mathrm{neu},\tau},t,b)$. The number of generations is a free parameter of the renormalisable Standard Model — the theory can be written with any number of copies — and it is fixed to three by experiment, chiefly by the measured width of the $Z$ boson, which counts the light neutrino species, and by the observation of the top quark. Why there are three, and whether the number is fixed by some deeper principle, is the flavour puzzle in its counting aspect.
+The Standard Model's fermions come in three generations (families), each an identical copy of the same gauge quantum numbers with different masses: $(e,\nu_{\mathrm{neu},e},\mathrm u,d)$, $(\imath,\nu_{\mathrm{neu},\imath},c,s)$, $(\tau,\nu_{\mathrm{neu},\tau},t,b)$. The number of generations is a free parameter of the renormalisable Standard Model — the theory can be written with any number of copies — and it is fixed to three by experiment, chiefly by the measured width of the $Z$ boson, which counts the light neutrino species, and by the observation of the top quark. Why there are three, and whether the number is fixed by some deeper principle, is the flavour puzzle in its counting aspect.
 
 This article asks what the biquaternion framework says about the number. The answer is short and is stated at the outset.
 
@@ -25,7 +25,7 @@ The framework results used here are those of the companion articles:
 What experiment fixes. The number of light neutrino species is measured from the invisible width of the $Z$ boson,
 
 $$
-N_{\nu_{\mathrm{neu}}} = \frac{\Gamma_{\mathrm{inv}}}{\Gamma_{\mathrm{theor}}(Z\to\nu_{\mathrm{neu}}\bar{\nu})} = 2.984\pm0.008 ,
+N_{\nu_{\mathrm{neu}}} = \frac{\Gamma_{\mathrm{inv}}}{\Gamma_{\mathrm{theor}}(Z\to\nu_{\mathrm{neu}}\bar{\jmath})} = 2.984\pm0.008 ,
 $$
 
 which excludes a fourth light neutrino at high significance; the direct observation of the top quark completes the third generation, and the absence of a fourth chiral generation follows from the same $Z$ width and from Higgs-boson production rates. The Standard Model therefore has $N_g=3$ experimentally, with no theoretical principle selecting the value.

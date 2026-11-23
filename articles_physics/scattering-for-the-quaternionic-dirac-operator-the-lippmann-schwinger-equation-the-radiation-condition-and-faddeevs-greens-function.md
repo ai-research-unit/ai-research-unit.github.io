@@ -15,7 +15,7 @@ The interpretation list for the parts the corpus already owns is short: *Biquate
 The setting is three-dimensional and the operator is the spatial Moisil–Teodoresco operator of *Biquaternion Regular Functions*,
 
 $$
-D_3 = \sum_{\mu=1}^{3} \vec e_\mu\,\partial/\partial R_\mu, \qquad D_3^2 = -\Delta_\Phi .
+D_3 = \sum_{\imath=1}^{3} \vec e_{\imath}\,\partial/\partial R_{\imath}, \qquad D_3^2 = -\Delta_\Phi .
 $$
 
 Its action on a pure-vector field is the classical pair of operations. Writing $u = u_x\vec e_x+u_y\vec e_y+u_z\vec e_z$ for a vector field identified with its biquaternion,
@@ -34,7 +34,7 @@ $$
 L_\eta q = kq \quad(\text{left multiplication}), \qquad R_\eta q = qk \quad(\text{right multiplication}), \qquad q\in\mathbb{B}.
 $$
 
-The source writes the same pair with a single letter $M$, the side carried by the height: a superscript for the left multiplier and a subscript for the right one. The corpus's own shift is the right one: the $\alpha$-shift of *Biquaternion Regular Functions* is $q\mapsto q\alpha$, written $R_\alpha$ here. The distinction matters twice in what follows. It matters algebraically, because the two operators have different symbols and different kernels; and it matters in the factorisations below, where the *same* second-order operator is produced by either side, so that a source that switches between the two sides without comment is not in error, only terse. The source does switch: its section on the factorisation writes the vector shift with the left multiplier $L_\eta$, and its scattering problem is posed on $D_3+R_\eta$, and both are correct because a constant parameter commutes with $D_3$. What the two sides genuinely do not share is the fate of a *variable* coefficient: right multiplication by a function of $x$ does not commute with $\partial/\partial R_\mu$, and the force-free case below is of that kind.
+The source writes the same pair with a single letter $M$, the side carried by the height: a superscript for the left multiplier and a subscript for the right one. The corpus's own shift is the right one: the $\alpha$-shift of *Biquaternion Regular Functions* is $q\mapsto q\alpha$, written $R_\alpha$ here. The distinction matters twice in what follows. It matters algebraically, because the two operators have different symbols and different kernels; and it matters in the factorisations below, where the *same* second-order operator is produced by either side, so that a source that switches between the two sides without comment is not in error, only terse. The source does switch: its section on the factorisation writes the vector shift with the left multiplier $L_\eta$, and its scattering problem is posed on $D_3+R_\eta$, and both are correct because a constant parameter commutes with $D_3$. What the two sides genuinely do not share is the fate of a *variable* coefficient: right multiplication by a function of $x$ does not commute with $\partial/\partial R_{\imath}$, and the force-free case below is of that kind.
 
 ### Notation for the function spaces
 
@@ -69,7 +69,7 @@ With the normalised fields $\vec E\mapsto\sqrt{\epsilon}\,\vec E$ and $\vec H\ma
 
 $$
 D_\epsilon \vec E = -ik\vec H - \frac{\rho}{\sqrt{\epsilon}}, \qquad
-D_\mu \vec H = ik\vec E + \sqrt{\mu}\,\vec j, \qquad
+D_{\imath} \vec H = ik\vec E + \sqrt{\mu}\,\vec j, \qquad
 D_\alpha = D_3 + \operatorname{grad}\log\sqrt{\alpha},
 $$
 
@@ -89,7 +89,7 @@ $$
 D_\alpha \vec B = 0, \qquad D_\alpha = D_3 + R_{\alpha(x)} .
 $$
 
-This is the source's Remark 5.1, attributing the relation to a paper of Kravchenko's on force-free fields. It is worth separating from the corpus's constant-parameter shift by more than a footnote: *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* and *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* treat the **constant-coefficient** Beltrami case, where $\alpha$ commutes with $D_3$ and the second-order companion is the scalar $\Delta_\Phi+\alpha^2$, whereas here $\alpha$ is a function and right multiplication by it does not commute with $\partial/\partial R_\mu$, so the companion is not a scalar operator and the theory of *Biquaternion Regular Functions* does not apply to it unchanged. Three objects are written $D_\alpha$ in play — the constant-parameter shift of *Biquaternion Regular Functions*, the gradient-coefficient operator $D\pm L_{\vec\alpha_f}$ of the electromagnetic articles, and this variable scalar-coefficient one — and this article names the distinction once so that they are not read for one another.
+This is the source's Remark 5.1, attributing the relation to a paper of Kravchenko's on force-free fields. It is worth separating from the corpus's constant-parameter shift by more than a footnote: *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* and *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* treat the **constant-coefficient** Beltrami case, where $\alpha$ commutes with $D_3$ and the second-order companion is the scalar $\Delta_\Phi+\alpha^2$, whereas here $\alpha$ is a function and right multiplication by it does not commute with $\partial/\partial R_{\imath}$, so the companion is not a scalar operator and the theory of *Biquaternion Regular Functions* does not apply to it unchanged. Three objects are written $D_\alpha$ in play — the constant-parameter shift of *Biquaternion Regular Functions*, the gradient-coefficient operator $D\pm L_{\vec\alpha_f}$ of the electromagnetic articles, and this variable scalar-coefficient one — and this article names the distinction once so that they are not read for one another.
 
 ## The Two Factorisations of the Helmholtz Equation
 
@@ -415,7 +415,7 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | Symbol | Meaning |
 |---|---|
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Basis of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; $\vec e_\eta^2=-e_t$; central scalar imaginary $i$ |
-| $D_3=\sum_{\mu=1}^3 \vec e_\mu\,\partial/\partial R_\mu$ | Spatial Moisil–Teodoresco operator of *Biquaternion Regular Functions*; $D_3^2=-\Delta_\Phi$; the source's $D$ |
+| $D_3=\sum_{\imath=1}^3 \vec e_{\imath}\,\partial/\partial R_{\imath}$ | Spatial Moisil–Teodoresco operator of *Biquaternion Regular Functions*; $D_3^2=-\Delta_\Phi$; the source's $D$ |
 | $D=iD_3$ | The corpus's other square root of the Laplacian, $D^2=\Delta_\Phi$; distinct from the source's $D$ |
 | $D_3u=-\operatorname{div}u+\operatorname{curl}u$ | The action on a pure-vector field, the bridge to Maxwell's equations |
 | $L_kq=kq$, $R_kq=qk$ | Left and right multiplication; the letter names the side |

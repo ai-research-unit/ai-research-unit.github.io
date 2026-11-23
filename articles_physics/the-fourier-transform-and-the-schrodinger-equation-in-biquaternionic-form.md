@@ -67,7 +67,7 @@ The frequency-space propagator is the inverse symbol. The parent's flow $\tilde 
 
 The scalar symbol is scalar because the scalar equation is one equation. Four complex coefficients obey four copies of the same equation with the same scalar symbol, so one function of $\omega$ describes all of them. Here the symbol multiplies on the left, so it acts on the four coefficients as one array, and the array is not diagonal in the coefficient basis.
 
-Diagonalising the array is not an operation of the algebra. The array is Hermitian and can be diagonalised by a unitary change of basis. That change of basis is a complex-linear map mixing $e_t$ with $\vec e_\mu$, and it is not multiplication by an element. The diagonal form is available for calculation and unavailable for interpretation, which is why the article keeps the element and reads its two invariants instead.
+Diagonalising the array is not an operation of the algebra. The array is Hermitian and can be diagonalised by a unitary change of basis. That change of basis is a complex-linear map mixing $e_t$ with $\vec e_{\imath}$, and it is not multiplication by an element. The diagonal form is available for calculation and unavailable for interpretation, which is why the article keeps the element and reads its two invariants instead.
 
 Two invariants, and they are the whole spectrum. A change of basis preserves the trace and the determinant, so those are the canonical scalars of the symbol. The trace fixes the mean $(hf_{\mathrm{frq}}-h_t)$ and the determinant fixes the gap $\lvert\vec h_\Psi\rvert$. The symbol's spectrum is a mean and a gap, and every display below is a statement about those two numbers.
 

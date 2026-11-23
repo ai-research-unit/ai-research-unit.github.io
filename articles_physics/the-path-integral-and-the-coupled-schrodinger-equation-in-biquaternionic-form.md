@@ -41,7 +41,7 @@ and the integral is $\int\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}\exp(\fra
 **The gradient term is a sum of moduli and stays a sum of moduli.** For each $\eta$,
 
 $$
-\mathrm{Sc}\bigl((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\bigr)=\sum_{\mu=0}^{3}\bigl|(D_\eta\tilde\Xi)_\mu\bigr|^{2}\ \ge 0,
+\mathrm{Sc}\bigl((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\bigr)=\sum_{\imath=0}^{3}\bigl|(D_\eta\tilde\Xi)_{\imath}\bigr|^{2}\ \ge 0,
 $$
 
 so the coupled gradient term is positive for the same reason as the free one: the added term is anti-Hermitian and the modulus of an element is unchanged by adding to it an anti-Hermitian multiple of itself. **The consequence is the diamagnetic inequality in its variational form**: the action's kinetic part is bounded below by zero, and the energy is bounded below whenever $ϙ\omicron_{\mathrm{pot}}$ is. The integral inherits the bound, and the Fresnel convergence factor has to fight the potential and not the gradient.

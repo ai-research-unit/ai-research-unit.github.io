@@ -264,9 +264,9 @@ Since the emission is isotropic in the source frame, the hemisphere $\theta\ge\p
 
 **Statement.** (a) For a spectral line of rest wavelength $\lambda_0 = 656.281$ nm (H$\alpha$) and $\beta = 0.10$, tabulate the observed wavelength in the four configurations of Problems 3 and 4. (b) For $\beta = 0.05$, give the Ives–Stilwell fractional shift and compare $1-1/\gamma$ with $\beta^2/2$. (c) Expand the general formula for $\beta\ll1$ and identify the classical and the second-order terms.
 
-**Solution (a).** With $\nu_t = c_0/\lambda_0 = 4.568050\times10^{14}$ Hz and $\beta = 0.10$ (so $\gamma = 1.0050378$), $\lambda_2 = \lambda_0\,\nu_t/\nu_2$:
+**Solution (a).** With ${\jmath}_t = c_0/\lambda_0 = 4.568050\times10^{14}$ Hz and $\beta = 0.10$ (so $\gamma = 1.0050378$), $\lambda_2 = \lambda_0\,\jmath_t/\jmath_2$:
 
-| Configuration | $\nu_2/\nu_t$ | $\lambda_2$ (nm) | Shift (nm) |
+| Configuration | ${\jmath}_2/\jmath_t$ | $\lambda_2$ (nm) | Shift (nm) |
 |---|---|---|---|
 | Receding, $\theta = 0$ | $0.9045340337$ | $725.545945$ | $+\,69.264945$ |
 | Approaching, $\theta = \pi$ | $1.1055415968$ | $593.628500$ | $-\,62.652500$ |
@@ -277,7 +277,7 @@ The two transverse frequency ratios differ by $\gamma^2 = 1.0101$: their ratio i
 
 **Solution (b).** For a circular source observed from the centre of its orbit — the Ives–Stilwell geometry — the emission is perpendicular to the line of sight in the observer frame at every instant, so case B applies and
 $$
-\frac{\nu_2}{\nu_0} = \frac{1}{\gamma} = \sqrt{1-\beta^2} .
+\frac{\jmath_2}{\jmath_0} = \frac{1}{\gamma} = \sqrt{1-\beta^2} .
 $$
 At $\beta = 0.05$, $1 - 1/\gamma = 1.250782\times10^{-3}$, against the leading approximation $\beta^2/2 = 1.250000\times10^{-3}$: the exact transverse shift is $0.063\%$ larger than the leading term, the correction being the $\beta^4/8$ term of the expansion. In the Ives–Stilwell experiment the shift is measured as a displacement of spectral lines, and this is the "second-order Doppler shift".
 

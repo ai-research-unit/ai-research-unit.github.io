@@ -50,7 +50,7 @@ What the kernel cannot do. It cannot change a scale or a rapidity, because it ha
 
 The symbol has a word because it is an element. At each real $\omega$ the symbol $\sigma(\omega)=hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$ is an element of $\mathbb{B}$, so it has a scale, a phase, a boost and a rotor whenever it is off the cone.
 
-Its quaternionic norm is the elementary determinant. With $\sigma=c_t\,e_t+\sum c_\mu\vec e_\mu$ the norm is $c_t^{2}+c_x^{2}+c_y^{2}+c_z^{2}$, and here $c_t=hf_{\mathrm{frq}}-h_t$ and $c_\mu=-ih_\mu$, so
+Its quaternionic norm is the elementary determinant. With $\sigma=c_t\,e_t+\sum c_{\imath}\vec e_{\imath}$ the norm is $c_t^{2}+c_x^{2}+c_y^{2}+c_z^{2}$, and here $c_t=hf_{\mathrm{frq}}-h_t$ and $c_{\imath}=-ih_{\imath}$, so
 
 $$
 \langle\sigma(\omega)\rangle_\natural=\big(hf_{\mathrm{frq}}-h_t\big)^{2}-\lvert\vec h_\Psi\rvert^{2},

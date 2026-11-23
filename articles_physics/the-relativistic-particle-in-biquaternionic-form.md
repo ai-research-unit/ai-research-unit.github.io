@@ -354,12 +354,12 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$ |
+| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace; complex scalar line (centre) |
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*}=({}^{\natural})^{\,*},\ {}^\flat=-{}^{*}$ | Quaternion, complex, Hermitian, anti-Hermitian conjugations |
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, in $\mathbb{B}_{\Phi}$ |
 | $d\tau^2 = -\langle d\tilde R_\Phi\rangle_{\natural}/c^2$ | Proper time |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$, $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ | Four-velocity, unit timelike |

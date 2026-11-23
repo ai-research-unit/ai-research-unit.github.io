@@ -158,7 +158,7 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 **6.2 The frame adds a second description of the same field**, and the two must be compatible. The category's description says the photon is a $\mathrm{U}(1)$ connection; the frame's says the $\mathrm{U}(1)$ is a stabiliser of three vacua and its connection is a combination. **They are compatible because a linear combination of connections is a connection**, and the stabiliser's generator is $Q$.
 
-**6.3 The compatibility as a test.** Take the frame's $A_\mu$ and compute its field strength. It is $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ with no extra term, because a linear combination adds no term to the exterior derivative. **So the category's bivector construction applies to the mixture verbatim**, which is why the section's other articles need no edit.
+**6.3 The compatibility as a test.** Take the frame's $A_{\imath}$ and compute its field strength. It is $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$ with no extra term, because a linear combination adds no term to the exterior derivative. **So the category's bivector construction applies to the mixture verbatim**, which is why the section's other articles need no edit.
 
 **6.4 What would break the compatibility.** A coefficient that varied in spacetime. **It does not: the coefficients are numbers.** A number that depends on the renormalisation scale is still constant in spacetime, so the scale dependence of *Direction and Coordinates: Where This Article Stops* leaves $F=\mathrm dA$ untouched, and the compatibility is not hostage to the coupling sector.
 
@@ -174,7 +174,7 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 | the direction is the coefficient vector of $Q$, hence null on both vacua, hence forced | one paragraph |
 | the direction is algebra and the coefficients in the three fields are dynamics, which the coupling article owns | one sentence and a forward reference |
 
-**7.2 What is unchanged.** Maxwell's equations, the wave equation, the gauge invariance $A_\mu\to A_\mu+\partial_\mu\chi$, the field strength, the stress tensor, the Lagrangian $-\tfrac14F^{2}$, the quantisation, the Feynman rules, the Coulomb potential, the radiation formulae, the article titles, the exercises. **Every equation in the section is the same equation.**
+**7.2 What is unchanged.** Maxwell's equations, the wave equation, the gauge invariance $A_{\imath}\to A_{\imath}+\partial_{\imath}\chi$, the field strength, the stress tensor, the Lagrangian $-\tfrac14F^{2}$, the quantisation, the Feynman rules, the Coulomb potential, the radiation formulae, the article titles, the exercises. **Every equation in the section is the same equation.**
 
 **7.3 The one sentence whose meaning changes.** Where a category article says *the photon is the gauge boson of $\mathrm{U}(1)_{\mathrm{em}}$*, it can now also say *the $\mathrm{U}(1)_{\mathrm{em}}$ whose generator is $Q$, and whose gauge field is this mixture*. **The sentence was not wrong before; it was incomplete**, and this article completes it once rather than in every article.
 

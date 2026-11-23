@@ -302,12 +302,12 @@ The framework's contribution is the centrality of the configuration space, the b
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the configuration space's value space |
 | $\tilde{Ξ}=\xi_{\mathrm{scl}}\,e_t$, $\tilde J_{\Phi}=J\,e_t$, $\xi_{\mathrm{scl}}=(\xi_{\mathrm{scl},1}+i\xi_{\mathrm{scl},2})/\sqrt2$ | Scalar field and central source; real components |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
-| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ | Gradient and d'Alembertian |
+| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath} \vec e_{\imath}\,\partial/\partial R_{\imath}$, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ | Gradient and d'Alembertian |
 | $S[\tilde{Ξ}]$ | Central scalar action |
 | $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(\,iS+i\int[\mathrm{Sc}(\tilde J_{\Phi}^{*}\tilde{Ξ})+\mathrm{Sc}(\tilde{Ξ}^{*}\tilde J_{\Phi})])$ | Generating functional |
 | $\mathcal{D}\tilde{Ξ}$ | Functional measure on central-valued configurations |

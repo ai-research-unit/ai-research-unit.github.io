@@ -19,7 +19,7 @@ The article is organised as follows. A section fixes what antilinear means in th
 The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, and a scalar imaginary $i$ commuting with every invertible element, $i^2 = -1$. That relation is used all through the article: every sign produced by two imaginary factors is $i^2 = -1$ read once. An element is a sum with complex coefficients,
 
 $$
-\tilde{Q} = (a_0 + i b_0)e_t + (a_1 + i b_1)\vec e_x + (a_2 + i b_2)\vec e_y + (a_3 + i b_3)\vec e_z , \qquad a_\mu, b_\mu \in \mathbb{R},
+\tilde{Q} = (a_0 + i b_0)e_t + (a_1 + i b_1)\vec e_x + (a_2 + i b_2)\vec e_y + (a_3 + i b_3)\vec e_z , \qquad a_{\imath}, b_{\imath} \in \mathbb{R},
 $$
 
 so $\mathbb{B}$ has real dimension $8$ and complex dimension $4$.
@@ -81,7 +81,7 @@ $$
 \mathcal{D}\tilde{Ξ} = \text{(mass term)},
 $$
 
-where $\mathcal{D}$ is first order and carries the gradient. The mass term is defined as the part of the equation that survives when every derivative is dropped. Being non-derivative, it cannot pair the field with $\partial/\partial R_\mu\tilde{Ξ}$; being bilinear and built from a single field, it must pair $\tilde{Ξ}$ with something constructed from $\tilde{Ξ}$ itself. The only constructions available that do not reintroduce a derivative are the involutions of the previous section.
+where $\mathcal{D}$ is first order and carries the gradient. The mass term is defined as the part of the equation that survives when every derivative is dropped. Being non-derivative, it cannot pair the field with $\partial/\partial R_{\imath}\tilde{Ξ}$; being bilinear and built from a single field, it must pair $\tilde{Ξ}$ with something constructed from $\tilde{Ξ}$ itself. The only constructions available that do not reintroduce a derivative are the involutions of the previous section.
 
 So a mass term has the shape
 
@@ -387,12 +387,12 @@ The algebra's real structure is retained, and the companion articles use the ant
 
 **The $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split itself.** The material and informational sectors are the fixed spaces of $\flat$ and ${}^{*}$, and the framework's identification of $\mathbb{B}_{\Phi}$ with material space is the statement that the field is anti-Hermitian. The sign convention by which $\flat$ acts as $+$ on $\mathbb{B}_{\Phi}$ and $-$ on $\mathbb{B}_{\Psi}$ *is* the convention that makes $\mathbb{B}_{\Phi}$ the material sector; the two are one convention seen twice.
 
-**Bilinear pairings and the trace.** The invariant pairings of the series are built on $\flat$, and the reason is a one-line computation with the real part of the scalar part $\mathrm{Sc}$ — the coefficient of $e_t$, whose real part is what the form takes. For $\tilde{Q}=\sum_\mu(a_\mu+ib_\mu)e_\mu$ and $\tilde{P}_{\Phi}=\sum_\mu(a'_\mu+ib'_\mu)e_\mu$,
+**Bilinear pairings and the trace.** The invariant pairings of the series are built on $\flat$, and the reason is a one-line computation with the real part of the scalar part $\mathrm{Sc}$ — the coefficient of $e_t$, whose real part is what the form takes. For $\tilde{Q}=\sum_{\imath}(a_{\imath}+ib_{\imath})e_{\imath}$ and $\tilde{P}_{\Phi}=\sum_{\imath}(a'_{\imath}+ib'_{\imath})e_{\imath}$,
 
 $$
-\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Q}^{*}\tilde{P}_{\Phi}\big)=\sum_\mu\big(a_\mu a'_\mu+b_\mu b'_\mu\big),
+\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Q}^{*}\tilde{P}_{\Phi}\big)=\sum_{\imath}\big(a_{\imath} a'_{\imath}+b_{\imath} b'_{\imath}\big),
 \qquad
-\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Q}^{\flat}\tilde{P}_{\Phi}\big)=-\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Q}^{*}\tilde{P}_{\Phi}\big)=-\sum_\mu\big(a_\mu a'_\mu+b_\mu b'_\mu\big),
+\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Q}^{\flat}\tilde{P}_{\Phi}\big)=-\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Q}^{*}\tilde{P}_{\Phi}\big)=-\sum_{\imath}\big(a_{\imath} a'_{\imath}+b_{\imath} b'_{\imath}\big),
 $$
 
 so the $\flat$ pairing is the negative of the Euclidean inner product of $\mathbb{R}^8$ and the ${}^{*}$ pairing is the inner product itself. The plus sign in the first line is $i^2=-1$ read once: it is the scalar part of $(-i)(i)=+1$ in $\tilde Q{}^{*}\tilde P_{\Phi}$, the one place where the two imaginary factors meet, and $\flat$ reverses it in the second line. So $-\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Q}^{\flat}\tilde{P}_{\Phi}\big)$ is a positive-definite inner product on the algebra, and the choice between $\flat$ and ${}^{*}$ is the choice of which sign is called positive — that is, of which sector is the material one. The linear involution gives no form at all: $\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Q}^{\natural}\tilde{Q}\big)$ is not proportional to $|\tilde{Q}|^2$.
@@ -405,7 +405,7 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -472,41 +472,41 @@ The dictionary is complex-linear; over $\mathbb{R}$ the gammas span $\mathrm{Cl}
 **The identities used in the body.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$ and every trace taken on the module $\mathcal{S}_{\mathrm{rep}}$, of complex dimension four,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,\qquad
+\{\gamma_{\imath},\gamma_5\}=0,\qquad
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}+\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
 
 The contraction sums are frame statements, because their signs are the signs of the basis operators' squares. The four are
 
 $$
-\sum_\mu\gamma_\mu\gamma_\mu,\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu,\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu,\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\delta\gamma_\mu .
+\sum_{\imath}\gamma_{\imath}\gamma_{\imath},\qquad
+\sum_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath},\qquad
+\sum_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath},\qquad
+\sum_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_\delta\gamma_{\imath} .
 $$
 
-With the weight on the summed index they are $4I_4$, $-2\gamma_\alpha$, $4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $2\gamma_\alpha\gamma_\beta\gamma_\delta$. Without the weight only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the other three are index-dependent and are computed, not transcribed.
+With the weight on the summed index they are $4I_4$, $-2\gamma_\alpha$, $4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $2\gamma_\alpha\gamma_\beta\gamma_\delta$. Without the weight only the first keeps a closed form, $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=-2I_4$; the other three are index-dependent and are computed, not transcribed.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

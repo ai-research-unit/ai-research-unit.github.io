@@ -61,8 +61,8 @@ $$
 The point of the arrangement is that the left action is the full $SU(2)_L$ and the right action is an $SU(2)_R$ whose $T_3^R$ is the hypercharge. With this normalisation the kinetic term is the framework's biquaternion norm of the derivative,
 
 $$
--\,\mathrm{Sc}\!\left(\partial/\partial R_\mu H^\dagger\,\partial/\partial R_\mu H\right)
-= -\,\partial/\partial R_\mu\xi^{0*}\partial/\partial R_\mu{\xi_{\mathrm{scl}}}^0 - \partial/\partial R_\mu\xi^{+*}\partial/\partial R_\mu\xi^{+*} ,
+-\,\mathrm{Sc}\!\left(\partial/\partial R_{\imath} H^\dagger\,\partial/\partial R_{\imath} H\right)
+= -\,\partial/\partial R_{\imath}\xi^{0*}\partial/\partial R_{\imath}{\xi_{\mathrm{scl}}}^0 - \partial/\partial R_{\imath}\xi^{+*}\partial/\partial R_{\imath}\xi^{+*} ,
 $$
 
 canonical for the two complex components, and if the hypercharge coupling is ignored it is invariant under the full $SU(2)_L\times SU(2)_R$, acting as $H\mapsto g_LHg_R^{*}$. This is the **custodial group**. The hypercharge interaction gauges the $T_3^R$ direction and therefore breaks $SU(2)_R$ explicitly, but only as a subgroup: $\mathrm{U}(1)_Y\subset SU(2)_R$, and the breaking is proportional to the hypercharge coupling $g_{\mathrm Y}$.
@@ -190,7 +190,7 @@ The value of $\rho$ is read off the gauge-boson mass matrix, and the custodial i
 **The mass matrix from the kinetic term.** The gauge fields of the two factors couple to the scalar through the covariant derivative, and at the vacuum the kinetic term produces the quadratic form
 
 $$
-\mathcal{L}_\text{mass} = \frac{v^2}{8}\left[g^2\left(\sum_\mu W_{1,\mu} W_{1,\mu} + \sum_\mu W_{2,\mu} W_{2,\mu}\right) + \left(gW_{3,\mu} - g_{\mathrm Y}B_\mu\right)^2\right] + \cdots ,
+\mathcal{L}_\text{mass} = \frac{v^2}{8}\left[g^2\left(\sum_{\imath} W_{1,\imath} W_{1,\imath} + \sum_{\imath} W_{2,\imath} W_{2,\imath}\right) + \left(gW_{3,\imath} - g_{\mathrm Y}B_{\imath}\right)^2\right] + \cdots ,
 $$
 
 which is the standard result in the standard normalisation of the doublet. The charged combination $W^\pm = (W_1\mp iW_2)/\sqrt2$ obtains
@@ -300,7 +300,7 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $SU(2)_V = \{g_L = g_R\}$ | Custodial (diagonal) subgroup |
 | $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ | Central vacuum; custodial invariant |
 | $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{B}_{C}$ | Framework's actual scalar; a singlet |
-| $-\mathrm{Sc}(\partial/\partial R_\mu H^\dagger\partial/\partial R_\mu H)$ | Custodial-invariant kinetic term of the doublet matrix $H$ (biquaternion norm of the derivative) |
+| $-\mathrm{Sc}(\partial/\partial R_{\imath} H^\dagger\partial/\partial R_{\imath} H)$ | Custodial-invariant kinetic term of the doublet matrix $H$ (biquaternion norm of the derivative) |
 | $M_W^2 = g^2v^2/4$ | Charged weak-boson mass (standard) |
 | $M_Z^2 = (g^2+g_{\mathrm Y}^2)v^2/4$ | Neutral weak-boson mass (standard) |
 | $\cos^2\theta_W = g^2/(g^2+g_{\mathrm Y}^2)$ | Weak mixing angle (standard) |
@@ -309,11 +309,11 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $g, g_{\mathrm Y}$ | Weak and hypercharge couplings (standard notation; framework couplings are $\kappa$ and $ϙ$) |
 | $T, T_3, Y$ | Isospin, third component, hypercharge (standard; not framework objects) |
 | $a$ | weak-isospin index, written low; the sum over it is explicit |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\imath\jmath}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ | Reduction convention |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

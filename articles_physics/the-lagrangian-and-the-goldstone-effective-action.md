@@ -7,7 +7,7 @@ This article writes the Goldstone field's effective action as an extremum of a f
 The equation. The parent's equation is the free wave equation for the phase, corrected by the derivative interactions,
 
 $$
-\Box_\Phi\vartheta_{\mathrm{fld}}-\frac{4c_4}{f^4}\frac{\partial}{\partial R_\mu}\Bigl(\bigl(\partial_\nu\vartheta_{\mathrm{fld}}\partial_\nu\vartheta_{\mathrm{fld}}\bigr)\frac{\partial\vartheta_{\mathrm{fld}}}{\partial R_\mu}\Bigr)+\cdots=0 ,
+\Box_\Phi\vartheta_{\mathrm{fld}}-\frac{4c_4}{f^4}\frac{\partial}{\partial R_{\imath}}\Bigl(\bigl(\partial_{\jmath}\vartheta_{\mathrm{fld}}\partial_{\jmath}\vartheta_{\mathrm{fld}}\bigr)\frac{\partial\vartheta_{\mathrm{fld}}}{\partial R_{\imath}}\Bigr)+\cdots=0 ,
 $$
 
 which at leading order is $\Box_\Phi\vartheta_{\mathrm{fld}}=0$, the massless equation the theorem guarantees.
@@ -17,7 +17,7 @@ Three things are established.
 *First, the action.* With $\vartheta_{\mathrm{fld}}$ the canonically normalized phase,
 
 $$
-S_{\mathrm{eff}}[\vartheta_{\mathrm{fld}}]=\int d^4r\;\Bigl[\frac12\sum_\mu\frac{\partial\vartheta_{\mathrm{fld}}}{\partial R_\mu}\frac{\partial\vartheta_{\mathrm{fld}}}{\partial R_\mu}+\frac{c_4}{f^4}\Bigl(\sum_\mu\frac{\partial\vartheta_{\mathrm{fld}}}{\partial R_\mu}\frac{\partial\vartheta_{\mathrm{fld}}}{\partial R_\mu}\Bigr)^{2}+\cdots\Bigr],
+S_{\mathrm{eff}}[\vartheta_{\mathrm{fld}}]=\int d^4r\;\Bigl[\frac12\sum_{\imath}\frac{\partial\vartheta_{\mathrm{fld}}}{\partial R_{\imath}}\frac{\partial\vartheta_{\mathrm{fld}}}{\partial R_{\imath}}+\frac{c_4}{f^4}\Bigl(\sum_{\imath}\frac{\partial\vartheta_{\mathrm{fld}}}{\partial R_{\imath}}\frac{\partial\vartheta_{\mathrm{fld}}}{\partial R_{\imath}}\Bigr)^{2}+\cdots\Bigr],
 $$
 
 the stationarity condition is the parent's equation, and every term in the integrand contains a derivative of the field.
@@ -45,10 +45,10 @@ The sign convention. The kinetic term enters with $+\tfrac12$ and the interactio
 The derivative series. The effective action is the most general functional of $\vartheta_{\mathrm{fld}}$ invariant under $\vartheta_{\mathrm{fld}}\mapsto\vartheta_{\mathrm{fld}}+\text{const}$, and invariance under a constant shift means that only derivatives appear:
 
 $$
-\mathcal{L}_{\mathrm{eff}}=\frac12\sum_\mu\partial_\mu\vartheta_{\mathrm{fld}}\partial_\mu\vartheta_{\mathrm{fld}}+\frac{c_4}{f^4}\Bigl(\sum_\mu\partial_\mu\vartheta_{\mathrm{fld}}\partial_\mu\vartheta_{\mathrm{fld}}\Bigr)^{2}+\frac{c_6}{f^8}(\cdots)^{3}+\cdots .
+\mathcal{L}_{\mathrm{eff}}=\frac12\sum_{\imath}\partial_{\imath}\vartheta_{\mathrm{fld}}\partial_{\imath}\vartheta_{\mathrm{fld}}+\frac{c_4}{f^4}\Bigl(\sum_{\imath}\partial_{\imath}\vartheta_{\mathrm{fld}}\partial_{\imath}\vartheta_{\mathrm{fld}}\Bigr)^{2}+\frac{c_6}{f^8}(\cdots)^{3}+\cdots .
 $$
 
-Each term is a power of the same invariant $X=\sum_\mu\partial_\mu\vartheta_{\mathrm{fld}}\partial_\mu\vartheta_{\mathrm{fld}}$, and that is not a choice of basis: in four dimensions the only invariants of a single scalar built from derivatives are the powers of $X$, because any other contraction needs more than one index per factor.
+Each term is a power of the same invariant $X=\sum_{\imath}\partial_{\imath}\vartheta_{\mathrm{fld}}\partial_{\imath}\vartheta_{\mathrm{fld}}$, and that is not a choice of basis: in four dimensions the only invariants of a single scalar built from derivatives are the powers of $X$, because any other contraction needs more than one index per factor.
 
 Why the first term is fixed and the rest are not. The coefficient of $X$ is fixed by the canonical normalization: it must be $\tfrac12$ for the field to have the standard kinetic term. The coefficients of $X^2,X^3,\dots$ are not fixed by anything in the low-energy theory; they are determined by whatever the radial sector was, and that is exactly the sense in which the effective action trades predictability for generality.
 
@@ -56,7 +56,7 @@ Why no mass term and no potential. A term $V(\vartheta_{\mathrm{fld}})$ would br
 
 The two normalizations, and why both are used. In the canonical normalization the kinetic term is $\tfrac12(\partial\vartheta)^2$ and the interaction is $c_4(\partial\vartheta)^4/f^4$; in the dimensionless normalization the kinetic term is $\tfrac{f^2}{2}(\partial\vartheta)^2$ and the interaction is $c_4(\partial\vartheta)^4$. The two differ by $\vartheta\to f\vartheta$, and each makes a different fact look simple: the first makes the canonical field obvious, the second makes the decay constant's role as a normalization obvious.
 
-The pairing. The pairing is the real gradient norm, and it is real because the phase is real. $\sum_\mu\partial_\mu\vartheta_{\mathrm{fld}}\partial_\mu\vartheta_{\mathrm{fld}}$ is a real number with the corpus's sign rule, and every power of it is real. No conjugation is needed and no imaginary part arises, because the field is a phase and not an element with a phase.
+The pairing. The pairing is the real gradient norm, and it is real because the phase is real. $\sum_{\imath}\partial_{\imath}\vartheta_{\mathrm{fld}}\partial_{\imath}\vartheta_{\mathrm{fld}}$ is a real number with the corpus's sign rule, and every power of it is real. No conjugation is needed and no imaginary part arises, because the field is a phase and not an element with a phase.
 
 Why the complex writing gives the same answer. If the field is written as $\tilde\Xi=v\,e^{i\vartheta/v}$-type, the kinetic term $|D\tilde\Xi|^2$ contains the phase's gradient and the radial field's, and integrating out the radial field leaves exactly the phase's gradient term. The two writings agree because the modulus is fixed by the constraint and only the phase fluctuates.
 
@@ -84,7 +84,7 @@ $$
 
 which is the massless wave equation. The field propagates at the speed of light, has no mass, and has one degree of freedom.
 
-The correction. Varying the four-derivative term gives a contribution proportional to $\partial_\mu(X\,\partial_\mu\vartheta_{\mathrm{fld}})$, which is quartic in the field and vanishes on a constant or a plane wave at leading order. The exact equation is the parent's, and it differs from the free one only at second order in the amplitude.
+The correction. Varying the four-derivative term gives a contribution proportional to $\partial_{\imath}(X\,\partial_{\imath}\vartheta_{\mathrm{fld}})$, which is quartic in the field and vanishes on a constant or a plane wave at leading order. The exact equation is the parent's, and it differs from the free one only at second order in the amplitude.
 
 Why the correction's order matters for the soft limit. The interaction's vertex carries four derivatives, so a process with one extra Goldstone is suppressed by $k^2/f^2$ at the amplitude level rather than by $k/f$. That suppression is stronger than the minimal one a Goldstone could have, and it follows from the interaction term's derivative count.
 
@@ -113,16 +113,16 @@ What the structure does not give. **It does not give the coefficients, it does n
 The current. The shift symmetry gives
 
 $$
-j_\mu=f\,\partial_\mu\vartheta_{\mathrm{fld}} ,
+j_{\imath}=f\,\partial_{\imath}\vartheta_{\mathrm{fld}} ,
 $$
 
-and its conservation, $\partial_\mu j_\mu=f\,\Box_\Phi\vartheta_{\mathrm{fld}}=0$, is the equation of motion. The current's normalization is the decay constant, and that is why $f$ is called the decay constant: a single Goldstone carries $f$ units of the broken charge.
+and its conservation, $\partial_{\imath} j_{\imath}=f\,\Box_\Phi\vartheta_{\mathrm{fld}}=0$, is the equation of motion. The current's normalization is the decay constant, and that is why $f$ is called the decay constant: a single Goldstone carries $f$ units of the broken charge.
 
-The matrix element. $\langle0\rvert j_\mu(0)\lvert\vartheta(k)\rangle=ifk_\mu$, which is the statement that the current creates the Goldstone with strength $f$. The relation is the definition of $f$ and the reason the decay constant appears in every weak decay rate.
+The matrix element. $\langle0\rvert j_{\imath}(0)\lvert\vartheta(k)\rangle=ifk_{\imath}$, which is the statement that the current creates the Goldstone with strength $f$. The relation is the definition of $f$ and the reason the decay constant appears in every weak decay rate.
 
-The improved current. With the higher-derivative terms the current acquires corrections proportional to $c_4\partial_\mu X/f^3$, and the corrections are what make the current's matrix element exact beyond leading order. The corrections do not change the leading statement.
+The improved current. With the higher-derivative terms the current acquires corrections proportional to $c_4\partial_{\imath} X/f^3$, and the corrections are what make the current's matrix element exact beyond leading order. The corrections do not change the leading statement.
 
-Energy–momentum. Translation invariance gives $T_{\mu\nu}$ with contributions from each term; the two-derivative part is traceless, so the leading theory is conformally invariant, and the four-derivative part breaks the trace at order $p^4/f^4$.
+Energy–momentum. Translation invariance gives $T_{\imath\jmath}$ with contributions from each term; the two-derivative part is traceless, so the leading theory is conformally invariant, and the four-derivative part breaks the trace at order $p^4/f^4$.
 
 What there is not. **No topological current, no second independent current beyond the shift's, and no central phase.** The sector has one broken current and one tensor.
 
@@ -162,8 +162,8 @@ The boundary. The kinetic term's biquaternionic form is the algebra's; the coeff
 | $f=\sqrt2\,v$ | decay constant |
 | $\Lambda=\sqrt{2\lambda}\,v$ | radial mass, the expansion's scale |
 | $c_4,c_6,\dots$ | dimensionless matching coefficients |
-| $X=\sum_\mu\partial_\mu\vartheta\partial_\mu\vartheta$ | the invariant whose powers form the series |
-| $j_\mu=f\partial_\mu\vartheta_{\mathrm{fld}}$ | shift current |
+| $X=\sum_{\imath}\partial_{\imath}\vartheta\partial_{\imath}\vartheta$ | the invariant whose powers form the series |
+| $j_{\imath}=f\partial_{\imath}\vartheta_{\mathrm{fld}}$ | shift current |
 
 ## Further Reading
 

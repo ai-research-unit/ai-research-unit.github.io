@@ -8,7 +8,7 @@ The order is the order of the definitions. The four general products come first,
 
 The article states conventions only. The properties, the proofs and the namesake theorems belong to *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and the physical interpretations belong to the articles that own them. The last subsection separates what is forced from what is chosen, and a reader must not turn a choice into a theorem.
 
-No contravariant index appears in this article, and none appears anywhere in the series. The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
+No contravariant index appears in this article, and none appears anywhere in the series. The one metric is the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_{\imath}\varepsilon_{\imath}$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
 
 ## The Twelve Products and Their Names
 
@@ -135,7 +135,7 @@ The four maps. The tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is 
 | Map | Mark | Action | As a ring map | Over $\mathbb{C}$ |
 |---|---|---|---|---|
 | Identity | — | $\tilde{Q} \mapsto \tilde{Q}$ | Automorphism | $\mathbb{C}$-**linear** |
-| Complex conjugation | $\bar{\cdot}$ | $Q_\mu \mapsto \bar{Q}_\mu$ | **Automorphism**: conjugation on the scalars, identity on the quaternion factor | $\mathbb{C}$-**antilinear** |
+| Complex conjugation | $\bar{\cdot}$ | $Q_{\imath} \mapsto \bar{Q}_{\imath}$ | **Automorphism**: conjugation on the scalars, identity on the quaternion factor | $\mathbb{C}$-**antilinear** |
 | Quaternion conjugation | ${}^{\natural}$ | $Q_te_t - Q_x\vec e_x - Q_y\vec e_y - Q_z\vec e_z$ | **Anti-automorphism**: identity on the scalars, conjugation on the quaternion factor | $\mathbb{C}$-**linear** |
 | Hermitian conjugation | ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ | $\bar{Q}_te_t - \bar{Q}_x\vec e_x - \bar{Q}_y\vec e_y - \bar{Q}_z\vec e_z$ | **Anti-automorphism** | $\mathbb{C}$-**antilinear** |
 | Anti-Hermitian conjugation | ${}^{\flat} = -{}^{*}$ | $-\tilde{Q}^{*}$ | **Neither** | $\mathbb{C}$-**antilinear** |
@@ -236,13 +236,13 @@ The biquaternion layer. The four brackets and their norms on $\mathbb{B}$ are th
 The Hermitian form, its norm, the unit, the normalisation and the weight. The order is fixed once for the series. The form is
 
 $$
-\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\bar Q_{2\mu},
+\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_{\imath} Q_{1\imath}\bar Q_{2\imath},
 $$
 
 its diagonal is the Hermitian norm,
 
 $$
-\langle\tilde{Q}\rangle_{*} = \langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^{2},
+\langle\tilde{Q}\rangle_{*} = \langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_{\imath}\lvert Q_{\imath}\rvert^{2},
 $$
 
 and the unit is normalised by it, $\langle e_t\rangle_{*} = 1$. The form is positive definite on the whole algebra. Its restriction to $\mathbb{B}_{\Psi}$ is the plain form,
@@ -301,7 +301,7 @@ $$
 \langle\lambda\tilde{Q}_1,\tilde{Q}_2\rangle = \lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle, \qquad \langle\lambda\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} .
 $$
 
-Throughout the series an inertia is written $(n,m)$ with the positive directions counted first, so that a form with four negative directions is $(0,4)$. An inertia here belongs to a form. The series has one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and being the identity it has no signs to state.
+Throughout the series an inertia is written $(n,m)$ with the positive directions counted first, so that a form with four negative directions is $(0,4)$. An inertia here belongs to a form. The series has one metric, the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, and being the identity it has no signs to state.
 
 Where the four are proved and named. The classification of the four, their Gram matrices, their inertias, their isometry groups, their Witt classes, and their reading as Hermitian forms over the algebra with respect to their own involutions are *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, with its twin *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*.
 

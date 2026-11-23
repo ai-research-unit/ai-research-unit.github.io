@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The Proca action has a derivative term and an algebraic one; the coupling replaces $\partial_\mu$ by $D_\mu$ in the first and cannot touch the second, because the second is the magnitude's and a connection reaches derivatives. So the charged spin-one fluid keeps its pressure and loses its continuity, which is the reverse of what the other charged articles of this layer do.
+The Proca action has a derivative term and an algebraic one; the coupling replaces $\partial_{\imath}$ by $D_{\imath}$ in the first and cannot touch the second, because the second is the magnitude's and a connection reaches derivatives. So the charged spin-one fluid keeps its pressure and loses its continuity, which is the reverse of what the other charged articles of this layer do.
 
-*First, the free decomposition of the field strength survives with one word changed.* $F=r\,\omega+\mathrm{d}r\wedge u$ becomes $F=r\,\Omega+\mathrm{d}r\wedge u$ with $\Omega_{\mu\nu}=D_\mu u_\nu-D_\nu u_\mu$: the vorticity becomes the covariant one, the density's gradient's term is untouched, and the rank stays two. The substitution is $\mathrm{d}\to D$ in one place and the structure is preserved.
+*First, the free decomposition of the field strength survives with one word changed.* $F=r\,\omega+\mathrm{d}r\wedge u$ becomes $F=r\,\Omega+\mathrm{d}r\wedge u$ with $\Omega_{\imath\jmath}=D_{\imath} u_{\jmath}-D_{\jmath} u_{\imath}$: the vorticity becomes the covariant one, the density's gradient's term is untouched, and the rank stays two. The substitution is $\mathrm{d}\to D$ in one place and the structure is preserved.
 
-*Second, the Lorenz condition ceases to be continuity and this is the article's main statement.* At the free rung $\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=0$ is $\sum_\mu\varepsilon_\mu\partial_\mu(ru_\mu)=0$, the conservation of a real density by a real flow. Charged, the condition is $\sum_\mu\varepsilon_\mu D_\mu A_\mu=0$, and written with the ordinary divergence it carries a source that is phase-carrying and imaginary. The condition survives and its fluid reading does not: the density is no longer conserved by the flow alone, and the fluid is compressible by the field's action.
+*Second, the Lorenz condition ceases to be continuity and this is the article's main statement.* At the free rung $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} A_{\imath}=0$ is $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}(ru_{\imath})=0$, the conservation of a real density by a real flow. Charged, the condition is $\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath}=0$, and written with the ordinary divergence it carries a source that is phase-carrying and imaginary. The condition survives and its fluid reading does not: the density is no longer conserved by the flow alone, and the fluid is compressible by the field's action.
 
 *Third, the mass term is coupling-blind, so the four statements it carried at the free rung become three.* It still removes the field's own shift freedom, still supplies the condition, still fixes the pressure to a constant. What it can no longer do is make that condition a conservation law.
 
@@ -14,33 +14,33 @@ Position in the block. This is the variational companion of [The Charged Spin-On
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{2\pi iϙ}{h}A^{\mathrm{ext}}_\mu$, $k_m=\frac{2\pi mc}{h}$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
+The conventions are restated here so that every sign below is checkable from this page alone. $A_{\imath}$ is complex, $F_{\imath\jmath}=D_{\imath} A_{\jmath}-D_{\jmath} A_{\imath}$, $D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A^{\mathrm{ext}}_{\imath}$, $k_m=\frac{2\pi mc}{h}$; $\mathcal L=-\frac14\sum_{\imath,\jmath}F^{*}_{\imath\jmath}F_{\imath\jmath}-\frac{k_m^{2}}{2}\sum_{\imath}\varepsilon_{\imath} A^{*}_{\imath} A_{\imath}$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
 
 ## The Action in the Fluid Variables
 
 The derivative term is rebuilt and the algebraic term is not.
 
 $$
-\mathcal L=-\frac{1}{4}\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}
+\mathcal L=-\frac{1}{4}\sum_{\imath,\jmath}F^{*}_{\imath\jmath}F_{\imath\jmath}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}
 \;\longrightarrow\;
-\mathcal L_{\mathrm{gco}}=-\frac{1}{4}F^{\mathrm{gco}*}_{\mu\nu}F^{\mathrm{gco}}_{\mu\nu}-\frac{k_m^{2}}{2}\lvert A\rvert^{2},
+\mathcal L_{\mathrm{gco}}=-\frac{1}{4}F^{\mathrm{gco}*}_{\imath\jmath}F^{\mathrm{gco}}_{\imath\jmath}-\frac{k_m^{2}}{2}\lvert A\rvert^{2},
 \qquad
-F^{\mathrm{gco}}_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu .
+F^{\mathrm{gco}}_{\imath\jmath}=D_{\imath} A_{\jmath}-D_{\jmath} A_{\imath} .
 $$
 
 $\lvert A\rvert^{2}$ carries no derivative, so no substitution reaches it; the connection is in $D$ and there is no $D$ there. This is the layer's one constant: in all four charged articles the coupling reaches derivatives and not magnitudes, and here the magnitude is the whole of the algebraic term.
 
-Writing $A_\mu$ as a magnitude and a direction, $F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$ with
+Writing $A_{\imath}$ as a magnitude and a direction, $F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$ with
 
 $$
-\Omega_{\mu\nu}=D_\mu u_\nu-D_\nu u_\mu,
+\Omega_{\imath\jmath}=D_{\imath} u_{\jmath}-D_{\jmath} u_{\imath},
 $$
 
 and the identity behind the split is algebraic: $F(D)(r u)=r\,(Du)+\mathrm{d}r\wedge u$ for every connection. The free article's three pieces therefore survive: the covariant vorticity times the density, the density's gradient wedged with the velocity, and the cross term.
 
 At the free rung $\omega=\mathrm{d}u$ and the vorticity is the direction's curl; here $\Omega=Du$ and the vorticity carries the connection. The fluid's rotation is no longer a property of the direction alone, and the difference is the field strength's contribution to it — which is the opposite of what happens at the scalar rung, where the coupling *is* the vorticity. The two are not in contradiction: the scalar velocity is a gradient and the vector velocity is a direction, so a connection shifts the first into the field and folds itself into the second.
 
-The covariant vorticity of the congruence is the projected curl, $\Omega^{\perp}_{\mu\nu}=\sum_{\alpha,\beta}\mathsf{P}_{\mu\alpha}\mathsf{P}_{\nu\beta}\Omega_{\alpha\beta}$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$, and it annihilates $u$ by construction; a two-form on three dimensions is simple, so the rank is two wherever $\vec\Omega\ne0$. **The raw covariant curl is not transverse, and compatibility with the norm is not what would make it so**: $\sum_\nu\varepsilon_\nu\Omega_{\mu\nu}u_\nu=-\sum_\nu\varepsilon_\nu u_\nu D_\nu u_\mu$, the covariant acceleration, which is orthogonal to the flow because the norm is preserved and not because the curl is.
+The covariant vorticity of the congruence is the projected curl, $\Omega^{\perp}_{\imath\jmath}=\sum_{\alpha,\beta}\mathsf{P}_{\imath\alpha}\mathsf{P}_{\jmath\beta}\Omega_{\alpha\beta}$ with $\mathsf{P}_{\imath\jmath}=g_{\imath\jmath}+u_{\imath} u_{\jmath}$, and it annihilates $u$ by construction; a two-form on three dimensions is simple, so the rank is two wherever $\vec\Omega\ne0$. **The raw covariant curl is not transverse, and compatibility with the norm is not what would make it so**: $\sum_{\jmath}\varepsilon_{\jmath}\Omega_{\imath\jmath}u_{\jmath}=-\sum_{\jmath}\varepsilon_{\jmath} u_{\jmath} D_{\jmath} u_{\imath}$, the covariant acceleration, which is orthogonal to the flow because the norm is preserved and not because the curl is.
 
 ## The Variation
 
@@ -55,19 +55,19 @@ The mass block has no derivative, so the scalar part of the connection's equatio
 Taking the covariant divergence of the field equation,
 
 $$
-\sum_\nu\varepsilon_\nu D_\nu F_{\mathrm{gco},\nu\mu}=k_m^{2}A_\mu
+\sum_{\jmath}\varepsilon_{\jmath} D_{\jmath} F_{\mathrm{gco},\jmath\imath}=k_m^{2}A_{\imath}
 \qquad\Longrightarrow\qquad
-0=\sum_\nu\varepsilon_\nu D_\mu D_\nu F_{\mathrm{gco},\nu\mu}=k_m^{2}\,\sum_\mu\varepsilon_\mu D_\mu A_\mu,
+0=\sum_{\jmath}\varepsilon_{\jmath} D_{\imath} D_{\jmath} F_{\mathrm{gco},\jmath\imath}=k_m^{2}\,\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath},
 $$
 
-the first equality being the antisymmetry of $F$ and the second the field equation. So the condition is $\sum_\mu\varepsilon_\mu D_\mu A_\mu=0$, exactly as at the free rung with $\partial\to D$.
+the first equality being the antisymmetry of $F$ and the second the field equation. So the condition is $\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath}=0$, exactly as at the free rung with $\partial\to D$.
 
 Written with the ordinary divergence, the condition has a source.
 
 $$
-\sum_\mu\varepsilon_\mu D_\mu A_\mu=0
+\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath}=0
 \qquad\Longleftrightarrow\qquad
-\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=-\frac{2\pi iϙ}{h}\sum_\mu\varepsilon_\mu A_{\mathrm{ext},\mu}A_\mu,
+\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} A_{\imath}=-\frac{2\pi iϙ}{h}\sum_{\imath}\varepsilon_{\imath} A_{\mathrm{ext},\imath}A_{\imath},
 $$
 
 and the right-hand side is not zero, is imaginary, and carries the carrier's phase. **That is the precise sense in which the condition ceases to be continuity**: the left-hand side is the divergence of the field and would be the flow's density balance, and the right-hand side is a source the flow does not supply.
@@ -76,7 +76,7 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 *The free rung's cleanest result is gone.* There the Lorenz condition was continuity and the fluid's continuity was the mass's gift; here the condition is a constraint that the flow cannot satisfy alone.
 
-*The compressibility's origin is now visible and it is not the mass's.* At the free rung $\sum_\mu\varepsilon_\mu\partial_\mu(ru_\mu)=0$; charged, $\sum_\mu\varepsilon_\mu\partial_\mu A_\mu$ is the source. The difference is the connection's, so **the free fluid's incompressibility is the mass's gift and the charged fluid's compressibility is the charge's.**
+*The compressibility's origin is now visible and it is not the mass's.* At the free rung $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}(ru_{\imath})=0$; charged, $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} A_{\imath}$ is the source. The difference is the connection's, so **the free fluid's incompressibility is the mass's gift and the charged fluid's compressibility is the charge's.**
 
 *The count of equations changes in one place.* The free rung had four field components, four equations, and one of them a consequence of the others through an identity. The charged rung has the same four and the same identity, and the consequence is now a condition with a source rather than a conservation law. The count is the same and the content is not.
 
@@ -84,7 +84,7 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 Three statements, and each is unchanged.
 
-*It removes the field's own shift freedom.* $A_\mu\mapsto A_\mu+\partial_\mu\Gamma$ is not a symmetry of $\mathcal L_{\mathrm{gco}}$ at $k_m\ne0$, because $\lvert A\rvert^{2}$ is not invariant; and the coupling does not restore it, because $D\partial\Gamma\ne\partial$ unless $\Gamma$ is constant in the gauge-covariant sense.
+*It removes the field's own shift freedom.* $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$ is not a symmetry of $\mathcal L_{\mathrm{gco}}$ at $k_m\ne0$, because $\lvert A\rvert^{2}$ is not invariant; and the coupling does not restore it, because $D\partial\Gamma\ne\partial$ unless $\Gamma$ is constant in the gauge-covariant sense.
 
 *It supplies the condition.* The derivation above uses the mass term's coefficient: with $k_m=0$ the identity $\partial\partial F=0$ stands alone and says nothing about $A$.
 
@@ -92,7 +92,7 @@ Three statements, and each is unchanged.
 
 What the mass term no longer does is make the condition a conservation law. That is the fourth statement of the free rung and it is not available, for the reason the previous section gives: the source is there whether or not the mass is.
 
-And the coupling does not break the external gauge symmetry. Under $A\mapsto\lambda A$ with $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $A^{\mathrm{ext}}_\mu\mapsto A^{\mathrm{ext}}_\mu-\partial_\mu\Gamma$, both terms are invariant: the derivative term because $D$ is, the algebraic term because $\lvert\lambda\rvert^{2}=1$. Two different freedoms must be kept apart: the field's own shift, which the mass breaks at both rungs, and the external group's phase rotation, which is a symmetry at the charged rung and is what makes the carrier complex.
+And the coupling does not break the external gauge symmetry. Under $A\mapsto\lambda A$ with $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $A^{\mathrm{ext}}_{\imath}\mapsto A^{\mathrm{ext}}_{\imath}-\partial_{\imath}\Gamma$, both terms are invariant: the derivative term because $D$ is, the algebraic term because $\lvert\lambda\rvert^{2}=1$. Two different freedoms must be kept apart: the field's own shift, which the mass breaks at both rungs, and the external group's phase rotation, which is a symmetry at the charged rung and is what makes the carrier complex.
 
 ## The Structural Consequence: What the Carrier's Doubling Costs
 
@@ -142,7 +142,7 @@ The action. $\mathcal L_{\mathrm{gco}}=-\frac14F^{\mathrm{gco}*}F^{\mathrm{gco}}
 
 The decomposition. $F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$ with $\Omega=Du$; the vorticity is covariant and rank two, its transversality being the projection's and not the curl's; the density's gradient's term is unchanged.
 
-The condition. $\sum_\mu\varepsilon_\mu D_\mu A_\mu=0$ still follows from the field equation, and written with the ordinary divergence it has a phase-carrying imaginary source. Continuity is lost and the fluid is compressible by the field's action.
+The condition. $\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath}=0$ still follows from the field equation, and written with the ordinary divergence it has a phase-carrying imaginary source. Continuity is lost and the fluid is compressible by the field's action.
 
 The mass. Three of its four free statements survive: it breaks the field's own shift, supplies the condition, fixes the pressure. It no longer makes the condition a conservation law.
 
@@ -152,11 +152,11 @@ The carrier. Eight real parameters against the fluid's four; the action puts the
 
 | Symbol | Meaning |
 |---|---|
-| $A_\mu$ | The complex Proca field; eight real parameters |
-| $D_\mu=\partial_\mu+\frac{2\pi iϙ}{h}A^{\mathrm{ext}}_\mu$ | The covariant derivative; abelian |
-| $F^{\mathrm{gco}}_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$ | The covariant field strength |
-| $r$, $u_\mu$ | Magnitude and direction; $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$ |
-| $\Omega_{\mu\nu}=D_\mu u_\nu-D_\nu u_\mu$ | Covariant curl, contracting to minus the covariant acceleration; its projection is the vorticity and is rank two |
+| $A_{\imath}$ | The complex Proca field; eight real parameters |
+| $D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A^{\mathrm{ext}}_{\imath}$ | The covariant derivative; abelian |
+| $F^{\mathrm{gco}}_{\imath\jmath}=D_{\imath} A_{\jmath}-D_{\jmath} A_{\imath}$ | The covariant field strength |
+| $r$, $u_{\imath}$ | Magnitude and direction; $\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}=-1$ |
+| $\Omega_{\imath\jmath}=D_{\imath} u_{\jmath}-D_{\jmath} u_{\imath}$ | Covariant curl, contracting to minus the covariant acceleration; its projection is the vorticity and is rank two |
 | $F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$ | The decomposition of the field strength |
 | $\lvert A\rvert^{2}$ | The algebraic term's argument; coupling-blind |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |

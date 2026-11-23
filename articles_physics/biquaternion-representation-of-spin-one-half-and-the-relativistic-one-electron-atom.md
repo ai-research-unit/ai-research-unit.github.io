@@ -10,7 +10,7 @@ Two objects of the source are the reason it is recorded. The first is an explici
 
 The apparatus is the corpus's and is named, not restated. The element, its units and its four conjugations are those of *Algebra and Element Conventions*; the products and the forms are those of *Product and Form Conventions*; the two norms, the Hermitian form and the Born weight are those of *Norm and Pairing Conventions* and of *Spin-1/2 Quantum Physics in Biquaternionic Form*; the spin operators and the pure states are those of *Angular Momentum and Spin in Biquaternionic Form*; the rotors are those of *Biquaternion Rotations and Lorentz Transformations*; the radial Dirac–Coulomb problem is that of *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*; and the complex-linear map from the algebra to the two-by-two arrays is $\mathsf{M}_2$ of *Matrix Representations Conventions*, §*The $2\times2$ Pauli Representation*. No symbol of those files is defined here.
 
-Two identifiers of the source are kept. The coefficient labels $q_1 := q_x$ and $q_3 := q_z$, and the source's square of an element, $|q|^2 = \sum_\mu\lvert q_\mu\rvert^2$. That square is the corpus's Hermitian norm $H$ and not the algebra norm $\langle\cdot\rangle_{\natural}$; the difference is used below and is not a notational one.
+Two identifiers of the source are kept. The coefficient labels $q_1 := q_x$ and $q_3 := q_z$, and the source's square of an element, $|q|^2 = \sum_{\imath}\lvert q_{\imath}\rvert^2$. That square is the corpus's Hermitian norm $H$ and not the algebra norm $\langle\cdot\rangle_{\natural}$; the difference is used below and is not a notational one.
 
 The body of the article prints no array. The assignment the source quotes is described by its entries and by what it does to the two components, because in that section the array is the object of the sentence. The one place where the older formulation is written out is §*The Legacy Pauli Gamma Formulation*, which this article keeps as the record.
 
@@ -116,7 +116,7 @@ The entry worth pausing on is the one for $S_x$ on $q_-$. The source displays th
 
 ### The Two States as Elements
 
-The source's square is the corpus's Hermitian norm. $|q|^2 = \sum_\mu\lvert q_\mu\rvert^2$ is the diagonal of the Hermitian form of *Norm and Pairing Conventions*, $H$, and it is $1$ on both states. The algebra norm is $0$ on both:
+The source's square is the corpus's Hermitian norm. $|q|^2 = \sum_{\imath}\lvert q_{\imath}\rvert^2$ is the diagonal of the Hermitian form of *Norm and Pairing Conventions*, $H$, and it is $1$ on both states. The algebra norm is $0$ on both:
 
 $$
 \boxed{\;\langle q_+\rangle_{\natural} = 0, \qquad \langle q_-\rangle_{\natural} = 0\;}.
@@ -328,7 +328,7 @@ The corpus's side of the same correspondence is in *Matrix Representations Conve
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -373,7 +373,7 @@ which is the second member of the pair with its left field read as $-i\overline{
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-The display. Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+The display. Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -400,7 +400,7 @@ The older formulation appears once, in §*The Legacy Pauli Gamma Formulation*. T
 | $A(q)$ | The source's assignment, its equation (8); not complex-linear, not multiplicative, not injective |
 | $\ker A$ | $\mathrm{span}_\mathbb{R}\{-ie_t + \vec e_x,\ -i\vec e_y + \vec e_z,\ \vec e_y + i\vec e_z\}$, containing the down-state line |
 | $z, w$ | $z = q_t + iq_1$ and $w = q_y + iq_3$ in the classical assignment $q = z + w\vec e_y$ |
-| $\lvert q\rvert^2 = \sum_\mu\lvert q_\mu\rvert^2$ | The source's square, the Hermitian norm $H$; $1$ on both states |
+| $\lvert q\rvert^2 = \sum_{\imath}\lvert q_{\imath}\rvert^2$ | The source's square, the Hermitian norm $H$; $1$ on both states |
 | $q_1, q_3$ | The source's coefficient labels, $q_x$ and $q_z$ |
 | $S_x, S_y, S_z$ | The source's spin operators; equal to $-\tilde S_{\Psi,3}, -\tilde S_{\Psi,2}, -\tilde S_{\Psi,1}$ |
 | $\tilde S_{\Psi,\eta} =\frac{h}{4\pi}i\vec e_\eta$ | The corpus's spin operators |

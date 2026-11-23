@@ -89,7 +89,7 @@ For every biquaternion the quaternion conjugate multiplies to a central value:
 
 $$
 \boxed{\;\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t,\qquad
-\langle\tilde Q\rangle_{\natural}=\sum_{\mu}Q_\mu^{2}\;}.
+\langle\tilde Q\rangle_{\natural}=\sum_{\imath}Q_{\imath}^{2}\;}.
 $$
 
 For a material element $\tilde R=\tilde R_\Phi=i r'_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ the value is
@@ -224,7 +224,7 @@ The algebra splits into the material and the informational sectors, the eigenspa
 | ${}^{*}$ | Hermitian conjugation, with $\vec e_\eta^{*}=-\vec e_\eta$ and $i^{*}=-i$ |
 | $\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ | The material ($-$) and informational ($+$) sectors |
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat=-{}^{*}$ | Quaternion conjugation, coefficient conjugation and the real structure |
-| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | The biquaternion norm |
+| $\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$ | The biquaternion norm |
 | $\tilde R=\tilde R_\Phi=i r'_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | A material element, the anti-Hermitian part |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | An informational element, the Hermitian part |
 | $\operatorname{Sc}$ | The scalar part of a biquaternion |

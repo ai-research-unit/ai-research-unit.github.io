@@ -552,7 +552,7 @@ The remaining physical items are recorded as the author's claims. The boost, the
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The basis operators are named here and nowhere else, with $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$:
 
@@ -579,10 +579,10 @@ $$
 The four frame basis operators satisfy the basis operator relation of $\varepsilon=(1,-1,-1,-1)$, and their squares are $\pm I_4$:
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad (\gamma_0)^2=I_4,\qquad (\gamma_\eta)^2=-I_4\quad(\eta = 1, 2, 3),
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad (\gamma_0)^2=I_4,\qquad (\gamma_\eta)^2=-I_4\quad(\eta = 1, 2, 3),
 \qquad \varepsilon=(1,-1,-1,-1),$$
 
-The squares spend the central unit once, $i^2=-1$: the plain basis operators $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$ and $L_{\mathrm{pau},\vec e_\eta}R_{\mathrm{pau},\vec e_y}$ square to $I_4$, and the factor $i$ turns the second family into $-I_4$. The basis operator of the frame along $\vec e_z$ is the fifth basis operator of *Operator Chirality on the Biquaternion Algebra*, $\mathsf{V}_{\mathrm{vol}}=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$; the literature prints it as $\xi$, the glyph of this section and not of the body, and it is $\gamma_5$: $\xi^2=I_4$ and $\{\gamma_\mu,\xi\}=0$; $L_{\mathrm{pau},e_t}$ is the identity, so the basis operator is a pure right multiplication, written in full to keep the frame uniform. It is the basis operator that the two-sided equation of *The Two Dirac Equations, and Where the Cyclic Form Sits* multiplies on the right. The body's longitudinal boost operator $L=N\exp(\theta)+\bar N\exp(-\theta)$ is a different symbol from the left basis operator $L_a$; the subscript distinguishes them, and no formula in the body mixes the two.
+The squares spend the central unit once, $i^2=-1$: the plain basis operators $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$ and $L_{\mathrm{pau},\vec e_\eta}R_{\mathrm{pau},\vec e_y}$ square to $I_4$, and the factor $i$ turns the second family into $-I_4$. The basis operator of the frame along $\vec e_z$ is the fifth basis operator of *Operator Chirality on the Biquaternion Algebra*, $\mathsf{V}_{\mathrm{vol}}=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$; the literature prints it as $\xi$, the glyph of this section and not of the body, and it is $\gamma_5$: $\xi^2=I_4$ and $\{\gamma_{\imath},\xi\}=0$; $L_{\mathrm{pau},e_t}$ is the identity, so the basis operator is a pure right multiplication, written in full to keep the frame uniform. It is the basis operator that the two-sided equation of *The Two Dirac Equations, and Where the Cyclic Form Sits* multiplies on the right. The body's longitudinal boost operator $L=N\exp(\theta)+\bar N\exp(-\theta)$ is a different symbol from the left basis operator $L_a$; the subscript distinguishes them, and no formula in the body mixes the two.
 
 A single product $L_aR_b$ is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -590,7 +590,7 @@ The central grading is a different object from the chirality basis operator. $\x
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

@@ -68,20 +68,20 @@ $$
 
 acting from the left. The sign pair is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\lambda=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$.
 
-The connection is central per component in the abelian case. With $A_\mu$ scalar coefficients that commute with the units and with one another, the covariant derivative separates:
+The connection is central per component in the abelian case. With $A_{\imath}$ scalar coefficients that commute with the units and with one another, the covariant derivative separates:
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu e_\mu\,\tilde\nabla_{\mathrm{gco},\Phi,\mu},
+\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\imath} e_{\imath}\,\tilde\nabla_{\mathrm{gco},\Phi,\imath},
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\frac{\partial}{\partial R_\mu}+\frac{2\pi i\,ϙ}{h}A_\mu .
+\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\frac{\partial}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath} .
 $$
 
-Each $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$ is a *central* operator: it multiplies every element of $\mathbb{B}$ from either side without changing its type. That centality is the single fact on which everything in the two coupled Proca articles turns, and it is the reason the polar companion can state the coupling as a shift of four scalar slots.
+Each $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ is a *central* operator: it multiplies every element of $\mathbb{B}$ from either side without changing its type. That centality is the single fact on which everything in the two coupled Proca articles turns, and it is the reason the polar companion can state the coupling as a shift of four scalar slots.
 
-The two forms of the operator agree. The per-component display and the element display are the same operator, because $A_\mu$ is central:
+The two forms of the operator agree. The per-component display and the element display are the same operator, because $A_{\imath}$ is central:
 
 $$
-\sum_\mu e_\mu\frac{2\pi i\,ϙ}{h}A_\mu=\frac{2\pi i\,ϙ}{h}\sum_\mu A_\mu e_\mu=\frac{2\pi i\,ϙ}{h}\tilde A_\Phi .
+\sum_{\imath} e_{\imath}\frac{2\pi i\,ϙ}{h}A_{\imath}=\frac{2\pi i\,ϙ}{h}\sum_{\imath} A_{\imath} e_{\imath}=\frac{2\pi i\,ϙ}{h}\tilde A_\Phi .
 $$
 
 The equality is the reason the article can use the per-component form for computations and the element form for covariance.
@@ -170,12 +170,12 @@ F_{0\eta}=D_0A_\eta-D_\eta A_0,
 \qquad
 F_{\eta\kappa}=D_\eta A_\kappa-D_\kappa A_\eta,
 \qquad
-D_\mu=\frac{\partial}{\partial R_\mu}+\frac{2\pi i\,ϙ}{h}A_\mu .
+D_{\imath}=\frac{\partial}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath} .
 $$
 
 The six real components of $\tilde F$ are the six field-strength components, and the $\sqrt{\epsilon}$, $\sqrt{\mu}$ normalization of the free article's display $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ is carried by the coefficients.
 
-**The connection does not cancel, and this is the structural difference from the ordinary abelian curl.** For a neutral field strength built from a potential that shifts by a gradient, the connection terms cancel in the antisymmetric combination, because $D_\mu A_\nu$ and $D_\nu A_\mu$ carry the *same* connection coefficient. Here the potential is charged: it multiplies by $\lambda$ and the connection shifts, so the two statements are independent, and
+**The connection does not cancel, and this is the structural difference from the ordinary abelian curl.** For a neutral field strength built from a potential that shifts by a gradient, the connection terms cancel in the antisymmetric combination, because $D_{\imath} A_{\jmath}$ and $D_{\jmath} A_{\imath}$ carry the *same* connection coefficient. Here the potential is charged: it multiplies by $\lambda$ and the connection shifts, so the two statements are independent, and
 
 $$
 \tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)+\frac{2\pi i\,ϙ}{h}\mathrm{Vect}\bigl(\tilde A_\Phi^{\natural}\tilde A\bigr).
@@ -183,7 +183,7 @@ $$
 
 The second term is nonzero. Its size runs from $0.7$ to $12$ over a hundred random draws of a material connection and a general element, and its structure is a product of two potentials, linear in each.
 
-What the extra term is. It is the algebra's form of the term that distinguishes a non-abelian field strength from an abelian one. In components the commutator of two covariant derivatives on a charged field is $[D_\mu,D_\nu]=-iϙF^{(\Phi)}_{\mu\nu}$, and the field strength built from the covariant curl is not the ordinary curl. The algebra produces the same structure from the non-commutativity of the units alone: since the connection multiplies the field as one element and the gradient's units multiply it as units, the two orders differ, and the difference is $\frac{2\pi i\,ϙ}{h}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$.
+What the extra term is. It is the algebra's form of the term that distinguishes a non-abelian field strength from an abelian one. In components the commutator of two covariant derivatives on a charged field is $[D_{\imath},D_{\jmath}]=-iϙF^{(\Phi)}_{\imath\jmath}$, and the field strength built from the covariant curl is not the ordinary curl. The algebra produces the same structure from the non-commutativity of the units alone: since the connection multiplies the field as one element and the gradient's units multiply it as units, the two orders differ, and the difference is $\frac{2\pi i\,ϙ}{h}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$.
 
 The Bianchi identity is not available in the same form. For a neutral field strength the antisymmetric part of the gradient of the field strength vanishes identically, because partial derivatives commute. With the connection the corresponding statement carries the curvature, and this article does not need it: the Proca equation is first order in $\tilde F$ and does not use a Bianchi identity.
 
@@ -195,17 +195,17 @@ The operator identity. The covariant d'Alembertian splits into a scalar part and
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
-=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F^{(\Phi)},
+=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F^{(\Phi)},
 $$
 
-with $\tilde F^{(\Phi)}$ the curvature of the connection. The first term is scalar — each $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$ is central, so the four squares are central operators and their sum multiplies every element uniformly. The second term is a pure vector, and a pure vector has no scalar part.
+with $\tilde F^{(\Phi)}$ the curvature of the connection. The first term is scalar — each $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ is central, so the four squares are central operators and their sum multiplies every element uniformly. The second term is a pure vector, and a pure vector has no scalar part.
 
 The scalar part of the equation therefore forces the constraint. Applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the equation and taking the scalar part,
 
 $$
 k_m^2\,\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)
 =\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde F\bigr)
-=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\,\mathrm{Sc}\bigl(\tilde F\bigr)=0,
+=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\,\mathrm{Sc}\bigl(\tilde F\bigr)=0,
 $$
 
 since $\tilde F$ is a pure vector. The constraint is exact, it holds for every configuration that solves the equation, and it is *covariant*:
@@ -219,7 +219,7 @@ $$
 
 The two readings of that line. The left reading is the covariant Lorenz condition, and it is the one the equation forces. The right reading is the ordinary divergence, and it is *not* zero: it is fixed by the potential, slot by slot, since $\mathrm{Sc}(\tilde A_\Phi^{\natural}\tilde A)$ is one scalar built from the two potentials. For a purely electric constant potential the right side is $\frac{2\pi ϙ a}{h}a'_t$ in the article's units, so even a constant electrostatic potential moves the ordinary divergence.
 
-**Why the curvature does not spoil it.** The naive expectation is that a background field strength should source the constraint, as it does for a non-abelian massive vector. The algebra's answer is precise and different: the curvature term in the operator identity is scalar-free. The trace sees only $\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$, the four operators commute with each other as central operators, and the commutator's contribution is confined to the scalar-free part of the equation. The constraint is untouched; the *transport of the frame* is what the curvature moves, and that is the polar companion's subject.
+**Why the curvature does not spoil it.** The naive expectation is that a background field strength should source the constraint, as it does for a non-abelian massive vector. The algebra's answer is precise and different: the curvature term in the operator identity is scalar-free. The trace sees only $\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}$, the four operators commute with each other as central operators, and the commutator's contribution is confined to the scalar-free part of the equation. The constraint is untouched; the *transport of the frame* is what the curvature moves, and that is the polar companion's subject.
 
 A check on a lattice. Applying the composite to a random pure-vector field on a periodic lattice gives a scalar part of size $3\times10^{-13}$ in the free case and $4\times10^{-13}$ in a background with constant field strength — the same number, which is the numerical form of the statement that the curvature does not enter the trace. The same computation with the cross terms of the composite deleted — that is, with the algebra's units treated as commuting — gives zero identically, which locates the whole effect in the non-commutativity of the units.
 
@@ -255,7 +255,7 @@ The phase symmetry exists now. The free article's §*No Second Current* argues t
 The Noether current.
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A\bigr)
+j_{\imath}=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A\bigr)
 $$
 
 in the article's pairing, one real number per component, and it is the object the inhomogeneous Maxwell equation needs. Two statements about it are exact and are the article's reason for stating it at all: it is invariant under the gauge group, and it is conserved on solutions by the equation and its conjugate.
@@ -317,10 +317,10 @@ The equation is standard. The algebra's contribution is the closure argument, th
 | $\mathrm{Sc}$ | Scalar part |
 | $\mathbb{B}_\Phi,\ \mathbb{B}_\Psi,\ \mathbb{B}_V$ | Material, informational, and pure-vector sectors |
 | $\tilde A=i\,a'_t\,e_t+\vec A$ | The coupled Proca potential, an element of $\mathbb{B}$; $a'_t$ and $\vec A$ complex |
-| $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | The connection, an element of $\mathbb{B}_\Phi$; $A_\mu$ central in the abelian case |
+| $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | The connection, an element of $\mathbb{B}_\Phi$; $A_{\imath}$ central in the abelian case |
 | $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$ | Its $\natural$-image; the conjugate derivative's connection |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, left action |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial/\partial R_\mu+\frac{2\pi iϙ}{h}A_\mu$ | Its central per-component form |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial/\partial R_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | Its central per-component form |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | Material time derivative |
 | $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; covariant with $\lambda$ |
 | $\tilde F^{(\Phi)}$ | Curvature of the connection |
@@ -328,7 +328,7 @@ The equation is standard. The algebra's contribution is the closure argument, th
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter of the framework |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Central gauge phase; $\Gamma$ real |
-| $j_\mu=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A)$ | The charge current |
+| $j_{\imath}=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A)$ | The charge current |
 
 ## Further Reading
 

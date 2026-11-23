@@ -17,7 +17,7 @@ The plan is the operator, then its kernel, then its Fourier symbol, then its inv
 The **Moisil–Teodorescu operator** is the three-dimensional Dirac-type operator
 
 $$
-D = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z = \sum_{\mu=1}^{3} \vec e_\mu\,\partial/\partial R_\mu,
+D = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z = \sum_{\imath=1}^{3} \vec e_{\imath}\,\partial/\partial R_{\imath},
 $$
 
 with $\vec e_x, \vec e_y, \vec e_z$ the quaternion units of the algebra $\mathbb{B}$ of *Algebra and Element Conventions*, and $i$ the scalar imaginary unit commuting with them. The source's first statement is the **factorization of the wave operator**
@@ -29,14 +29,14 @@ $$
 
 where $\Delta_\Phi = \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2$ is the three-dimensional Laplacian. The two orderings agree because $D$ and $\partial/\partial r'_t$ commute. The operators $D \pm i\partial/\partial r'_t$ are the **parabolic Dirac operators** of the source; the name is inherited from the quaternionic-analysis literature that uses these first-order perturbations of $D$, and it refers to the first-order perturbation, not to a parabolic (heat-type) symbol: the factorisation is of the **hyperbolic** wave operator.
 
-The mechanism is the sign of the quaternion square. With $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$ for $\mu \neq \nu$, the square of $D$ is a scalar,
+The mechanism is the sign of the quaternion square. With $\vec e_{\imath}^2 = -e_t$ and $\vec e_{\imath} \vec e_{\jmath} = -\vec e_{\jmath} \vec e_{\imath}$ for ${\imath} \neq \jmath$, the square of $D$ is a scalar,
 
 $$
-D^2 = \sum_{\mu,\nu=1}^{3} \vec e_\mu \vec e_\nu\,\partial^2/\partial R_\mu\partial R_\nu = -\sum_{\mu=1}^{3}\partial^2/\partial R_\mu^2 e_t = -\Delta_\Phi e_t,
+D^2 = \sum_{\imath,\jmath=1}^{3} \vec e_{\imath} \vec e_{\jmath}\,\partial^2/\partial R_{\imath}\partial R_{\jmath} = -\sum_{\imath=1}^{3}\partial^2/\partial R_{\imath}^2 e_t = -\Delta_\Phi e_t,
 \tag{2}
 $$
 
-because the antisymmetric part $\sum_{\mu\neq \nu} \vec e_\mu \vec e_\nu\,\partial^2/\partial R_\mu\partial R_\nu$ vanishes by the symmetry of the mixed partials. The two sign choices of the first-order factor then produce the second time derivative, $(i\partial/\partial r'_t)(-i\partial/\partial r'_t) = +\partial^2/\partial {r'_{t}}^2$, and (1) follows. Formulas (1) and (2) were recomputed exactly; see the closing section.
+because the antisymmetric part $\sum_{\imath\neq \jmath} \vec e_{\imath} \vec e_{\jmath}\,\partial^2/\partial R_{\imath}\partial R_{\jmath}$ vanishes by the symmetry of the mixed partials. The two sign choices of the first-order factor then produce the second time derivative, $(i\partial/\partial r'_t)(-i\partial/\partial r'_t) = +\partial^2/\partial {r'_{t}}^2$, and (1) follows. Formulas (1) and (2) were recomputed exactly; see the closing section.
 
 ### The Dictionary with the Corpus
 
@@ -292,7 +292,7 @@ The source's wave-operator factorisation $-\Delta_\Phi + \partial^2/\partial {r'
 
 | Symbol | Meaning |
 |---|---|
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis; $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$ for $\mu \neq \nu$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis; $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = -\vec e_{\jmath} \vec e_{\imath}$ for ${\imath} \neq \jmath$ |
 | $i$ | Scalar imaginary unit, $i^2 = -1$, central |
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\Omega$, $\mathcal{C} = \Omega \times (0,\infty)$ | Bounded spatial domain and the space-time domain of the source |

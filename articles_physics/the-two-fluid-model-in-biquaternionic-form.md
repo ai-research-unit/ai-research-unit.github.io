@@ -53,7 +53,7 @@ an element whose norm is not fixed by the two normalisations alone. The identity
 $$
 \langle\tilde W_\Phi\rangle_{\natural}
 =\langle\tilde V_{\Phi,\mathrm{nrm}}\rangle_{\natural}+\langle\tilde V_{\Phi,\mathrm{sup}}\rangle_{\natural}
--2\sum_\mu v_{\Phi,\mathrm{nrm},\mu}\,v_{\Phi,\mathrm{sup},\mu}
+-2\sum_{\imath} v_{\Phi,\mathrm{nrm},\imath}\,v_{\Phi,\mathrm{sup},\imath}
 =2c^{2}\left(\gamma_{\mathrm{nrm}}\gamma_{\mathrm{sup}}\left(1-\vec\beta_{\mathrm{nrm}}\cdot\vec\beta_{\mathrm{sup}}\right)-1\right),
 $$
 
@@ -61,7 +61,7 @@ the cross term being $\mathrm{Sc}(\tilde V_1\tilde V_2^{\natural})$ and not $\ma
 
 The coincidence is the equilibrium condition and the model's most important special case. When $\tilde V_{\Phi,\mathrm{sup}}=\tilde V_{\Phi,\mathrm{nrm}}$ the two fluids move together, no exchange occurs, and the entropy production of the mutual-friction channel vanishes; the two-fluid system in that state is one fluid with an entropy density that is the normal component's. Every laboratory two-fluid state is a small departure from this one.
 
-The components, low. Writing $v_{\Phi,\mathrm{sup},\mu}$ and $v_{\Phi,\mathrm{nrm},\mu}$ for the components and $w_{\mu}=v_{\Phi,\mathrm{nrm},\mu}-v_{\Phi,\mathrm{sup},\mu}$ for the relative one, every index is low and the metric is $\delta_{\mu\nu}$, exactly as in the single-fluid articles. The relative component $w_\mu$ is the only new vector in the article, and the dissipation is written on it.
+The components, low. Writing $v_{\Phi,\mathrm{sup},\imath}$ and $v_{\Phi,\mathrm{nrm},\imath}$ for the components and $w_{\imath}=v_{\Phi,\mathrm{nrm},\imath}-v_{\Phi,\mathrm{sup},\imath}$ for the relative one, every index is low and the metric is $\delta_{\imath\jmath}$, exactly as in the single-fluid articles. The relative component $w_{\imath}$ is the only new vector in the article, and the dissipation is written on it.
 
 ### Why two flows and not two temperatures
 
@@ -98,10 +98,10 @@ The consequence for the second law, which [The Local Entropy Current](the-local-
 The condensate's flow is the gradient of the phase, and this is the polar form's statement quoted. From [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), with the phase $S_{\tilde\Xi}$ of the field,
 
 $$
-m\,v_{\Phi,\mathrm{sup},\mu}=\partial_\mu S_{\tilde\Xi}+\frac{h}{2\pi}\,\chi_{\mu},
+m\,v_{\Phi,\mathrm{sup},\imath}=\partial_{\imath} S_{\tilde\Xi}+\frac{h}{2\pi}\,\chi_{\imath},
 $$
 
-where $\chi_\mu$ is the part the rotor contributes — zero for the scalar field and non-zero for the spinor, which is why [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) is a different article. For the scalar condensate the flow is a pure gradient, so its vorticity $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\mathrm{sup},\nu}-\partial_\nu v_{\Phi,\mathrm{sup},\mu}$ vanishes identically.
+where $\chi_{\imath}$ is the part the rotor contributes — zero for the scalar field and non-zero for the spinor, which is why [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) is a different article. For the scalar condensate the flow is a pure gradient, so its vorticity $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\mathrm{sup},\jmath}-\partial_{\jmath} v_{\Phi,\mathrm{sup},\imath}$ vanishes identically.
 
 The vanishing vorticity is the definition of superfluidity in this formalism, and it is the reason the two-fluid model has a superfluid at all. A flow that is a gradient cannot be brought to rest by a boundary, because a gradient with a non-zero circulation is quantised and cannot decay continuously. The circulation is [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html)'s subject, and the article cites it rather than re-deriving the quantisation.
 
@@ -285,11 +285,11 @@ The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\r
 |---|---|
 | $\tilde V_{\Phi,\mathrm{sup}}=\tilde P_{\Phi,\mathrm{sup}}/m$ | Condensate flow element |
 | $\tilde V_{\Phi,\mathrm{nrm}}=\tilde P_{\Phi,\mathrm{nrm}}/m$ | Normal-component flow element |
-| $\chi_\mu$ | Rotor contribution to the superfluid momentum, zero for the scalar field |
+| $\chi_{\imath}$ | Rotor contribution to the superfluid momentum, zero for the scalar field |
 | $e_t$ | Unit temporal direction |
 | $\tilde W_\Phi$ | Relative flow element |
-| $v_{\Phi,\mathrm{sup},\mu}$, $v_{\Phi,\mathrm{nrm},\mu}$ | Components of the two flows, low |
-| $w_\mu=v_{\Phi,\mathrm{nrm},\mu}-v_{\Phi,\mathrm{sup},\mu}$ | Relative component, low; its temporal entry $w_t$ is imaginary |
+| $v_{\Phi,\mathrm{sup},\imath}$, $v_{\Phi,\mathrm{nrm},\imath}$ | Components of the two flows, low |
+| $w_{\imath}=v_{\Phi,\mathrm{nrm},\imath}-v_{\Phi,\mathrm{sup},\imath}$ | Relative component, low; its temporal entry $w_t$ is imaginary |
 | $w^{2}=\lvert\vec v_{\mathrm{nrm}}-\vec v_{\mathrm{sup}}\rvert^{2}$ | Squared relative speed, the literature's variable; not $\lvert\vec w\rvert^{2}$ |
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density |
 | $\rho_{\mathrm{num,sup}}$, $\rho_{\mathrm{num,nrm}}$ | Its condensate and normal parts |

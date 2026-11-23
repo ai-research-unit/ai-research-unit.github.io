@@ -71,7 +71,7 @@ $$
 $$
 where $\mathsf{M}_2$ is the isomorphism onto $M_2(\mathbb{C})$ and $\langle\cdot\rangle_{\natural}$ is the biquaternion norm.
 
-**Proof.** Both sides are polynomial functions of the four coefficients of $\tilde Q$, so it suffices to check on a basis. On $\mathsf{M}_2(e_t)=I_2$ both sides are $1$; on $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\det(-i\sigma_\mu)=1$ while $\langle \vec e_\mu\rangle_{\natural}=\vec e_\mu \vec e_\mu^{\natural}=-\vec e_\mu^2=e_t$, giving $1$; and both sides are multiplicative, $\det(\mathsf{M}_2(\tilde Q_3)\mathsf{M}_2(\tilde Q_1))=\det\mathsf{M}_2(\tilde Q_3)\det\mathsf{M}_2(\tilde Q_1)$ and $\langle\tilde Q_3\tilde Q_1\rangle_{\natural}=\tilde Q_3\tilde Q_1(\tilde Q_3\tilde Q_1)^{\natural}=\tilde Q_3\,\langle\tilde Q_1\rangle_{\natural}\,\tilde Q_3^{\natural}=\tilde Q_3\tilde Q_3^{\natural}\,\langle\tilde Q_1\rangle_{\natural}=\langle\tilde Q_3\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural}$ using the centrality of $\langle\tilde Q_1\rangle_{\natural}$. A basis check plus multiplicativity on a generating set establishes the identity on the whole algebra.
+**Proof.** Both sides are polynomial functions of the four coefficients of $\tilde Q$, so it suffices to check on a basis. On $\mathsf{M}_2(e_t)=I_2$ both sides are $1$; on $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\det(-i\sigma_{\imath})=1$ while $\langle \vec e_{\imath}\rangle_{\natural}=\vec e_{\imath} \vec e_{\imath}^{\natural}=-\vec e_{\imath}^2=e_t$, giving $1$; and both sides are multiplicative, $\det(\mathsf{M}_2(\tilde Q_3)\mathsf{M}_2(\tilde Q_1))=\det\mathsf{M}_2(\tilde Q_3)\det\mathsf{M}_2(\tilde Q_1)$ and $\langle\tilde Q_3\tilde Q_1\rangle_{\natural}=\tilde Q_3\tilde Q_1(\tilde Q_3\tilde Q_1)^{\natural}=\tilde Q_3\,\langle\tilde Q_1\rangle_{\natural}\,\tilde Q_3^{\natural}=\tilde Q_3\tilde Q_3^{\natural}\,\langle\tilde Q_1\rangle_{\natural}=\langle\tilde Q_3\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural}$ using the centrality of $\langle\tilde Q_1\rangle_{\natural}$. A basis check plus multiplicativity on a generating set establishes the identity on the whole algebra.
 
 The determinant of its $2\times2$ image is thus the **biquaternion norm**, the same object that supplies the Minkowski interval of *The Material Sector: Four-Vectors, Interval and Lorentz Action*.
 
@@ -197,11 +197,11 @@ a spectral asymmetry counted by the heat-kernel regularized sum of signs of eige
 
 The determinant responds to a Weyl rescaling of the background, and its response is the conformal anomaly; this is worth stating here because it is where the determinant and the energy-momentum trace meet.
 
-Under a local rescaling of the metric, $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$, the quadratic operator and hence the determinant change. For a classically conformally invariant theory the classical action is invariant, but the regularized determinant is not:
+Under a local rescaling of the metric, $g_{\imath\jmath}\to \exp(2\sigma)g_{\imath\jmath}$, the quadratic operator and hence the determinant change. For a classically conformally invariant theory the classical action is invariant, but the regularized determinant is not:
 $$
 \delta_\sigma\log\det S^{(2)} \ne 0 ,
 \qquad
-\big\langle \sum_\mu\varepsilon_\mu T_{\mu\mu}\big\rangle = -\frac{1}{\sqrt{g}}\sum_{\mu,\nu}g_{\mu\nu}\frac{\delta\,\Gamma_1}{\delta g_{\mu\nu}} ,
+\big\langle \sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}\big\rangle = -\frac{1}{\sqrt{g}}\sum_{\imath,\jmath}g_{\imath\jmath}\frac{\delta\,\Gamma_1}{\delta g_{\imath\jmath}} ,
 $$
 the trace of the energy-momentum tensor being the conformal variation of the one-loop effective action. That this is non-vanishing for a conformally invariant classical theory is the **conformal anomaly**, and it is the statement that the regularization of the determinant breaks the classical symmetry. Its coefficient is the Seeley–DeWitt coefficient $a_{d/2}$, and in the biquaternion framework that coefficient carries the module's dimension and the sector structure. The computation and the interpretation of the anomaly are in *The Conformal Anomaly in Biquaternionic Form*; this article records the determinant-side origin.
 
@@ -241,7 +241,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ | Isomorphism onto $M_2(\mathbb{C})$ |
+| $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$ | Isomorphism onto $M_2(\mathbb{C})$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm (central); equals the fundamental determinant |
 | $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$ | Determinant of an algebra element |
 | $L_{\tilde Q},R_{\tilde Q}$ | Left and right multiplication on the algebra |

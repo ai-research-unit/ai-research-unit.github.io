@@ -77,7 +77,7 @@ a **unipotent** element: the exponential of a null generator. This is the class 
 
 ### Loxodromic
 
-$\tau$ not real. Then the eigenvalues are a complex pair $\mu,\mu^{-1}$ with $\mu$ neither real nor of unit modulus:
+$\tau$ not real. Then the eigenvalues are a complex pair ${\imath},\mu^{-1}$ with $\mu$ neither real nor of unit modulus:
 
 $$
 \mu=re^{i\theta_{\mathrm{axr}}/2},\qquad r>0,\ r\neq1,\ \theta_{\mathrm{axr}}\notin\{0,2\pi\},
@@ -87,7 +87,7 @@ and the element is conjugate to a boost times a rotation about the *same* axis, 
 
 ### Why These Are All
 
-A conjugacy class of $SL_2(\mathbb{C})$ is determined by its eigenvalues, which are determined by $\tau$ up to the discrete choice of which is which. The four boxes above exhaust the possible positions of a pair $\{\mu,\mu^{-1}\}$: on the unit circle, on the positive or negative real axis, at the double point $\pm1$, or elsewhere in the complex plane. So the classification is a partition and not a list of examples.
+A conjugacy class of $SL_2(\mathbb{C})$ is determined by its eigenvalues, which are determined by $\tau$ up to the discrete choice of which is which. The four boxes above exhaust the possible positions of a pair $\{\imath,\mu^{-1}\}$: on the unit circle, on the positive or negative real axis, at the double point $\pm1$, or elsewhere in the complex plane. So the classification is a partition and not a list of examples.
 
 ## The Eigenvalues of Each Type
 

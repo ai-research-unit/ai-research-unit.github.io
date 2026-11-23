@@ -40,7 +40,7 @@ The equation carries one symbol that squares to minus one, and that symbol is $i
 
 ### The scalar imaginary
 
-The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu,\nu \in \{x,y,z\}$, $\mu \neq \nu$. The **scalar imaginary** $i$ is the image of the imaginary unit of the complexifying factor $\mathbb{C}$. It satisfies $i^2 = -e_t$ and is **central**: it commutes with every element of $\mathbb{B}$.
+The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_{\imath}^2 = -e_t$ and $\vec e_{\imath} \vec e_{\jmath} = \varepsilon_{\imath\jmath\lambda}\vec e_\lambda$ for ${\imath},\jmath \in \{x,y,z\}$, ${\imath} \neq \jmath$. The **scalar imaginary** $i$ is the image of the imaginary unit of the complexifying factor $\mathbb{C}$. It satisfies $i^2 = -e_t$ and is **central**: it commutes with every element of $\mathbb{B}$.
 
 The central elements are exactly the complex scalars,
 
@@ -52,7 +52,7 @@ a copy of the complex line embedded as the scalar part, and it is the centre of 
 
 ### The quaternion units and the non-central roots
 
-Each quaternion unit satisfies $\vec e_\mu^2 = -e_t$, but the $\vec e_\mu$ do not commute: $\vec e_x \vec e_y = \vec e_z = -\vec e_y \vec e_x$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -e_t$: either $\tilde{Ζ} = \pm i$ (the central roots), or $\tilde{Ζ} = \vec Q$ is a complex vector with $(\vec Q,\vec Q) := Q_x^2 + Q_y^2 + Q_z^2 = 1$ (the non-central roots). The real members of the second family are the **unit pure real quaternions** $\vec u \in \mathbb{B}_{H}$ (the real quaternion subalgebra $\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$), with $|\vec u| = 1$, so $\vec u^2 = -e_t$ and $\vec u^{*} = -\vec u \in \mathbb{B}_{\Phi}$. They are the roots of $-1$ that the algebra itself carries, and each is the axis a rotor turns about. Both $\vec u$ and $i$ square to $-e_t$ and are anti-Hermitian, but $i$ is central and $\vec u$ is not.
+Each quaternion unit satisfies $\vec e_{\imath}^2 = -e_t$, but the $\vec e_{\imath}$ do not commute: $\vec e_x \vec e_y = \vec e_z = -\vec e_y \vec e_x$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -e_t$: either $\tilde{Ζ} = \pm i$ (the central roots), or $\tilde{Ζ} = \vec Q$ is a complex vector with $(\vec Q,\vec Q) := Q_x^2 + Q_y^2 + Q_z^2 = 1$ (the non-central roots). The real members of the second family are the **unit pure real quaternions** $\vec u \in \mathbb{B}_{H}$ (the real quaternion subalgebra $\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$), with $|\vec u| = 1$, so $\vec u^2 = -e_t$ and $\vec u^{*} = -\vec u \in \mathbb{B}_{\Phi}$. They are the roots of $-1$ that the algebra itself carries, and each is the axis a rotor turns about. Both $\vec u$ and $i$ square to $-e_t$ and are anti-Hermitian, but $i$ is central and $\vec u$ is not.
 
 The two appear side by side in the complete polar decomposition of the field,
 
@@ -81,7 +81,7 @@ so $i$ carries $\mathbb{B}_{\Psi}$ out of itself; it is not an operator on $\mat
 | Object | Where it lives | Central? | Role |
 |---|---|---|---|
 | Scalar imaginary $i$ | $\mathbb{B}_{C}$, the centre | Yes | Complex structure of the carrier $\mathbb{B}$; the $i$ of the Schrödinger equation |
-| Quaternion units $\vec e_\mu$ | $\mathbb{B}_{H} \cap \mathbb{B}_{\Phi}$ (pure real) | No | Rotation generators, rotor axes |
+| Quaternion units $\vec e_{\imath}$ | $\mathbb{B}_{H} \cap \mathbb{B}_{\Phi}$ (pure real) | No | Rotation generators, rotor axes |
 | Non-central roots $\vec u$ | $\mathbb{B}_{H} \cap \mathbb{B}_{\Phi}$, unit sphere | No | Rotation axes of the rotor |
 | Complex structure of the carrier | Acts on $\mathbb{B}$, of complex dimension four | — | Left multiplication by the central $i$; not a structure on $\mathbb{B}_{\Psi}$ |
 
@@ -128,7 +128,7 @@ so the symbol $L_{\tilde H_\Psi}$ is Hermitian for that form, and the flow it ge
 
 ### The four coefficients, and the central field
 
-The field carries one complex coefficient of $e_t$ and three of $\vec e_\mu$, that is $2+6$ real numbers. A field with only the scalar coefficient nonzero,
+The field carries one complex coefficient of $e_t$ and three of $\vec e_{\imath}$, that is $2+6$ real numbers. A field with only the scalar coefficient nonzero,
 
 $$
 \tilde\Xi(r'_t)=\Xi_t(r'_t)\,e_t,
@@ -265,7 +265,7 @@ $$
 \quad\text{for all Hermitian } \tilde H_\Psi.
 $$
 
-Taking $\tilde H_\Psi = e_t$ gives $\tilde{Ζ}^{*} = -\tilde{Ζ}$, so $\tilde{Ζ}$ must be anti-Hermitian; the condition then becomes $\tilde H_\Psi\tilde{Ζ} = \tilde{Ζ}\tilde H_\Psi$ for every Hermitian $\tilde H_\Psi$. Take $\tilde H_\Psi = i\,\vec e_\mu$ with $\mu = x,y,z$, which is Hermitian: since $i$ is central, the condition reads $\vec e_\mu \tilde{Ζ} = \tilde{Ζ}\vec e_\mu$, so $\tilde{Ζ}$ commutes with the quaternion units. Writing $\tilde{Ζ} = q_t e_t + \sum_\mu q_\mu \vec e_\mu$ with $\mu=x,y,z$, the relation with $\vec e_x$ gives $q_y = q_z = 0$, and the relation with $\vec e_z$ then gives $q_x = 0$, leaving $\tilde{Ζ} = q_te_t$ with $q_t \in \mathbb{C}$. The centralizer of the quaternion units is therefore the centre $\mathbb{B}_{C} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$: $\tilde{Ζ}$ is central. Then $\tilde{Ζ}^2 = -e_t$ gives $q_t^2 = -1$, so $q_t = \pm i$. Thus the scalar imaginary is the *unique* root of $-e_t$, up to sign, that keeps the second writing in the material sector for every Hermitian Hamiltonian, and with it keeps the flow norm-preserving. A real multiple $\lambda\,i$ keeps the sector as well, and it is not a second choice: it is the same equation read with $r'_t$ measured in units $\lambda$ times smaller. The same computation is the flow theorem of *Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem*, stated there for the general unit.
+Taking $\tilde H_\Psi = e_t$ gives $\tilde{Ζ}^{*} = -\tilde{Ζ}$, so $\tilde{Ζ}$ must be anti-Hermitian; the condition then becomes $\tilde H_\Psi\tilde{Ζ} = \tilde{Ζ}\tilde H_\Psi$ for every Hermitian $\tilde H_\Psi$. Take $\tilde H_\Psi = i\,\vec e_{\imath}$ with $\mu = x,y,z$, which is Hermitian: since $i$ is central, the condition reads $\vec e_{\imath} \tilde{Ζ} = \tilde{Ζ}\vec e_{\imath}$, so $\tilde{Ζ}$ commutes with the quaternion units. Writing $\tilde{Ζ} = q_t e_t + \sum_{\imath} q_{\imath} \vec e_{\imath}$ with $\mu=x,y,z$, the relation with $\vec e_x$ gives $q_y = q_z = 0$, and the relation with $\vec e_z$ then gives $q_x = 0$, leaving $\tilde{Ζ} = q_te_t$ with $q_t \in \mathbb{C}$. The centralizer of the quaternion units is therefore the centre $\mathbb{B}_{C} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$: $\tilde{Ζ}$ is central. Then $\tilde{Ζ}^2 = -e_t$ gives $q_t^2 = -1$, so $q_t = \pm i$. Thus the scalar imaginary is the *unique* root of $-e_t$, up to sign, that keeps the second writing in the material sector for every Hermitian Hamiltonian, and with it keeps the flow norm-preserving. A real multiple $\lambda\,i$ keeps the sector as well, and it is not a second choice: it is the same equation read with $r'_t$ measured in units $\lambda$ times smaller. The same computation is the flow theorem of *Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem*, stated there for the general unit.
 
 **A counterexample for a quaternion unit.** Take $\vec{Ζ} = \vec e_z$ (a root of $-1$) and the Hermitian $\tilde H_\Psi = i\,\vec e_x$. Then
 
@@ -333,7 +333,7 @@ The uniqueness of $i$ up to sign is what makes both writings available simultane
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -e_t$ |
 | $\frac{h}{2\pi}$ | Reduced Planck constant; the constant of the equation, $i \frac{h}{2\pi}\,c\,\partial/\partial r'_t\tilde\Xi=\tilde H_\Psi\tilde\Xi$ |
 | $\mathbb{B}_{C}$ | Complex subspace $\operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$; the centre |
@@ -348,8 +348,8 @@ The uniqueness of $i$ up to sign is what makes both writings available simultane
 | $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{*}/2\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ | Density matrix associated to the field |
 | $\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$ | $*$-Unitary evolution, $\tilde{Ξ}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}(0)$; $\theta_{\mathrm{evo}}=\frac{2\pi h_t r'_t}{h\,c}$, $\theta=\frac{2\pi \lvert\vec h_\Psi\rvert r'_t}{h\,c}$ |
 | $\langle\tilde H_\Psi\rangle_{\tilde{Ξ}} = \mathrm{Sc}(\tilde H_\Psi\tilde{Ξ}\tilde{Ξ}^{*})/\mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^{*})$ | Mean of the observable in the field |
-| $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, $\mu \neq \nu$ | Quaternion multiplication |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | The general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\vec e_{\imath} \vec e_{\jmath} = \varepsilon_{\imath\jmath\lambda}\vec e_\lambda$, ${\imath} \neq \jmath$ | Quaternion multiplication |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | The general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | The general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

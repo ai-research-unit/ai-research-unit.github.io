@@ -10,32 +10,32 @@ Once the Lorenz condition is available, the Proca equation collapses to the Klei
 
 **The carrier: this article works on *Introduction to the Spin-One Anti-Hermitian Subspace*.** The spin fixes the subspace: a spin-one potential needs a four-vector, and the four-vectors of the algebra are the material sector $\mathbb{B}_{\Phi}$, of real dimension four. The restriction is not a choice of taste; it is the statement that the potential is anti-Hermitian, which is what makes its quaternionic norm real and its vector square non-negative. The subspace, its two namings — the triple for the spin and the sector for the amplitude — and the counting are [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), and nothing about it is derived below. Two consequences follow, and both are proved there. First, the sector is closed under the Proca operator for **every** material potential, because the residual of the equation is a material element times a central scalar; the Lorenz condition makes that scalar vanish and is not what makes the residual material. Second, the sector is a real form, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$, so a continuous phase destroys it and the restriction is a restriction to the neutral field. The scalar-free part carries the field strength and the spin itself, and the Lorenz condition removes the time slot that separates the four-vector from the three states of the spin.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and central scalar imaginary $i$; the gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ with $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$; the potential and field strength are $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ and $\tilde{F}=(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $c=1/\sqrt{\epsilon\mu}$ and the normalization of the potential fixed so that the two expressions for $\tilde{F}$ agree; and the mass enters as the length $k_m=\frac{2\pi mc}{h}$, whose reciprocal $k_m=\frac{2\pi mc}{h}$ is the coefficient written where the dimensions have to be displayed. The mass parameter is $m=m$, written through the mass length $1/k_m$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, and central scalar imaginary $i$; the gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ with $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$; the potential and field strength are $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ and $\tilde{F}=(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $c=1/\sqrt{\epsilon\mu}$ and the normalization of the potential fixed so that the two expressions for $\tilde{F}$ agree; and the mass enters as the length $k_m=\frac{2\pi mc}{h}$, whose reciprocal $k_m=\frac{2\pi mc}{h}$ is the coefficient written where the dimensions have to be displayed. The mass parameter is $m=m$, written through the mass length $1/k_m$.
 
 ## The Standard Proca Theory
 
 ### Lagrangian and equation
 
-The Proca field is a real four-vector $A_\mu$ with the Lagrangian density
+The Proca field is a real four-vector $A_{\imath}$ with the Lagrangian density
 
 $$
-\mathcal{L} = -\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} + \tfrac12 k_m^{2}\sum_\mu A_\mu A_\mu, \qquad F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu,
+\mathcal{L} = -\tfrac14\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath} + \tfrac12 k_m^{2}\sum_{\imath} A_{\imath} A_{\imath}, \qquad F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath},
 $$
 
-where $1/k_m$ is the mass length and $k_m=\frac{2\pi mc}{h}$ is its reciprocal, and the sign of the mass term is the one that makes the energy positive. Variation with respect to $A_\nu$ gives the **Proca equation**
+where $1/k_m$ is the mass length and $k_m=\frac{2\pi mc}{h}$ is its reciprocal, and the sign of the mass term is the one that makes the energy positive. Variation with respect to $A_{\jmath}$ gives the **Proca equation**
 
 $$
 \tilde\nabla_\Phi\tilde F-k_m^{2}\tilde A_{\Phi}=0 .
 $$
 
-The equation differs from the source-free Maxwell equation by the mass term alone, and that term is what breaks the gauge symmetry: under $A_\mu \to A_\mu - \partial/\partial R_\mu\,\Gamma$ the field strength is unchanged but the mass term is not, since $\sum_\mu A_\mu A_\mu$ is not invariant. A massive vector field has no gauge freedom.
+The equation differs from the source-free Maxwell equation by the mass term alone, and that term is what breaks the gauge symmetry: under $A_{\imath} \to A_{\imath} - \partial/\partial R_{\imath}\,\Gamma$ the field strength is unchanged but the mass term is not, since $\sum_{\imath} A_{\imath} A_{\imath}$ is not invariant. A massive vector field has no gauge freedom.
 
 ### The constraint
 
-The mass term also changes the constraint structure. Contracting the equation with $\partial/\partial R_\nu$ and using the antisymmetry of $F_{\mu\nu}$,
+The mass term also changes the constraint structure. Contracting the equation with $\partial/\partial R_{\jmath}$ and using the antisymmetry of $F_{\imath\jmath}$,
 
 $$
-\sum_{\mu,\nu}\partial^2/\partial R_\mu\partial R_\nu\,F_{\mu\nu} = 0
+\sum_{\imath,\jmath}\partial^2/\partial R_{\imath}\partial R_{\jmath}\,F_{\imath\jmath} = 0
 \qquad\Longrightarrow\qquad
 k_m^{2}\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}=0
 \qquad\Longrightarrow\qquad
@@ -55,7 +55,7 @@ $$
 so that the Proca equation becomes
 
 $$
-\left(\Box_\Phi + k_m^{2}\right) A_\nu = 0
+\left(\Box_\Phi + k_m^{2}\right) A_{\jmath} = 0
 $$
 
 in the mostly-minus convention. In the series convention, whose d'Alembertian is $\Box_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$ and therefore the negative of the mostly-minus operator, the same statement is
@@ -74,7 +74,7 @@ The three polarizations are easiest to see in the rest frame, $\vec k_\Phi = \ma
 
 ### Statement
 
-The Proca system is transcribed into the framework by replacing the four-vector by the material-sector biquaternion and the gradient by the biquaternionic gradient. The replacement is a change of kind, not of notation: $\tilde A_\Phi\in\mathbb{B}_\Phi$ is an **anti-Hermitian** element of the algebra, whereas the "real four-vector" of the section above names the component field $A_\mu$ of the standard theory. Under $\mathbb{B}=\mathbb{B}_\Psi\oplus\mathbb{B}_\Phi$ the potential sits in the material summand and the field strength $\tilde F$ in its vector part, and every statement below is a statement about those summands. The single equation is
+The Proca system is transcribed into the framework by replacing the four-vector by the material-sector biquaternion and the gradient by the biquaternionic gradient. The replacement is a change of kind, not of notation: $\tilde A_\Phi\in\mathbb{B}_\Phi$ is an **anti-Hermitian** element of the algebra, whereas the "real four-vector" of the section above names the component field $A_{\imath}$ of the standard theory. Under $\mathbb{B}=\mathbb{B}_\Psi\oplus\mathbb{B}_\Phi$ the potential sits in the material summand and the field strength $\tilde F$ in its vector part, and every statement below is a statement about those summands. The single equation is
 
 $$
 \boxed{\;\tilde\nabla_\Phi\tilde{F} = k_m^{2}\,\tilde{A}_{\Phi},
@@ -103,7 +103,7 @@ $$
 k_m^{2}\,\tilde{A}_{\Phi} \;\longmapsto\; k_m^{2}\left(\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma\right),
 $$
 
-so the equation is preserved only if $\tilde\nabla_\Phi\Gamma = 0$, that is, only for a constant $\Gamma$. The transformation is therefore not a symmetry, and there is no gauge orbit to quotient by. The algebraic reason is that the mass term is the only term in the equation that is not built from the field strength: it is a term in the potential, and the potential is not gauge invariant. This is the biquaternion statement of the standard fact that the Proca Lagrangian's mass term $\sum_\mu A_\mu A_\mu$ breaks the gauge symmetry.
+so the equation is preserved only if $\tilde\nabla_\Phi\Gamma = 0$, that is, only for a constant $\Gamma$. The transformation is therefore not a symmetry, and there is no gauge orbit to quotient by. The algebraic reason is that the mass term is the only term in the equation that is not built from the field strength: it is a term in the potential, and the potential is not gauge invariant. This is the biquaternion statement of the standard fact that the Proca Lagrangian's mass term $\sum_{\imath} A_{\imath} A_{\imath}$ breaks the gauge symmetry.
 
 ## The Lorenz Condition Is Implied
 
@@ -130,43 +130,43 @@ which is the **Lorenz condition** of the companion Maxwell article, whose compon
 **Theorem.** The Proca system at $m=0$ is the Maxwell system, and each of the three statements below is an exact substitution rather than an approximation.
 
 1. The Proca Lagrangian density loses its mass term, and what remains is the Maxwell Lagrangian density, term for term.
-2. The Proca equation $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}+k_m^{2}A_\nu=0$ becomes the source-free Maxwell equation $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}=0$.
+2. The Proca equation $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} F_{\imath\jmath}+k_m^{2}A_{\jmath}=0$ becomes the source-free Maxwell equation $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} F_{\imath\jmath}=0$.
 3. The biquaternion Proca equation $\tilde\nabla_\Phi\tilde{F}=k_m^{2}\tilde{A}_{\Phi}$ becomes the source-free biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F}=0$.
 
 No approximation enters any of the three: setting a parameter to zero deletes a term and leaves the rest unchanged. What changes at $k_m=0$ is not the equation but the **constraint structure** and the **solution space**. The equation is continuous in $m$; the solution space is not, and the rest of this section separates the two.
 
 ### The Lagrangian reduction
 
-The Proca density for a real four-vector with $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ is
+The Proca density for a real four-vector with $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$ is
 
 $$
-\mathcal{L}_{P}[A]=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}+\tfrac12 k_m^{2}\sum_\mu A_\mu A_\mu ,
+\mathcal{L}_{P}[A]=-\tfrac14\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}+\tfrac12 k_m^{2}\sum_{\imath} A_{\imath} A_{\imath} ,
 \qquad k_m=\frac{2\pi mc}{h}.
 $$
 
 The first term is the Maxwell density and the second is the mass term. At $k_m=0$ the second vanishes identically and
 
 $$
-\mathcal{L}_{P}[A]\big|_{k_m=0}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}=\mathcal{L}_{M}[A],
+\mathcal{L}_{P}[A]\big|_{k_m=0}=-\tfrac14\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}=\mathcal{L}_{M}[A],
 $$
 
-which is the Maxwell density, term for term. With an external current the densities gain the same coupling $-\sum_\mu J_\mu A_\mu$ on both sides, and the coupling is untouched by the mass, so the identity survives: $\mathcal{L}_{P,J}|_{k_m=0}=\mathcal{L}_{M,J}$.
+which is the Maxwell density, term for term. With an external current the densities gain the same coupling $-\sum_{\imath} J_{\imath} A_{\imath}$ on both sides, and the coupling is untouched by the mass, so the identity survives: $\mathcal{L}_{P,J}|_{k_m=0}=\mathcal{L}_{M,J}$.
 
 Two things are worth naming. The mass term is the only term in the density that is quadratic in the **potential** rather than in the field strength, and that is exactly why it is the only term the substitution touches. And the substitution is not a limit: no sequence is taken, no term is dropped as small, and the identity is an algebraic identity between two densities at $k_m=0$.
 
 ### The equation of motion
 
-Varying the density with respect to $A_\nu$ gives $\partial\mathcal{L}_P/\partial A_\nu=k_m^{2}A_\nu$ and $\partial\mathcal{L}_P/\partial(\partial_\mu A_\nu)=-F_{\mu\nu}$, so the Euler–Lagrange equation is
+Varying the density with respect to $A_{\jmath}$ gives $\partial\mathcal{L}_P/\partial A_{\jmath}=k_m^{2}A_{\jmath}$ and $\partial\mathcal{L}_P/\partial(\partial_{\imath} A_{\jmath})=-F_{\imath\jmath}$, so the Euler–Lagrange equation is
 
 $$
-\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}+k_m^{2}A_\nu=0 .
+\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} F_{\imath\jmath}+k_m^{2}A_{\jmath}=0 .
 $$
 
-At $k_m=0$ this is $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}=0$, the source-free Maxwell equation; with the current it is $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}=J_\nu$, the sourced one.
+At $k_m=0$ this is $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} F_{\imath\jmath}=0$, the source-free Maxwell equation; with the current it is $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} F_{\imath\jmath}=J_{\jmath}$, the sourced one.
 
-**The mass sits in the zeroth-order term, and that is the whole content of the continuity.** The principal symbol of the Proca operator — the part that decides the characteristics and therefore the propagation — is $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}$ and does not contain $k_m$ at all. There is no singular perturbation: the differential operator is not deformed, a lower-order term is deleted. That is the precise sense in which the equation depends continuously on the mass, and it is what licenses the substitution at the level of the equation.
+**The mass sits in the zeroth-order term, and that is the whole content of the continuity.** The principal symbol of the Proca operator — the part that decides the characteristics and therefore the propagation — is $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} F_{\imath\jmath}$ and does not contain $k_m$ at all. There is no singular perturbation: the differential operator is not deformed, a lower-order term is deleted. That is the precise sense in which the equation depends continuously on the mass, and it is what licenses the substitution at the level of the equation.
 
-The claim was checked on plane waves rather than asserted. With $k_m=1.3$ and $\vec k_\Phi=(0.4,-0.9,1.1)$, so that $\omega^{2}=\vec k_\Phi^{2}+k_m^{2}$, one hundred random real amplitudes projected on the Lorenz surface satisfy the Proca equation with a maximum residual of $2.7\times10^{-15}$ in units of the amplitude; at $k_m=0$ the same amplitudes, on the null shell $\omega=\lvert\vec k_\Phi\rvert$, satisfy $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}=0$ with a maximum residual of $1.5\times10^{-15}$.
+The claim was checked on plane waves rather than asserted. With $k_m=1.3$ and $\vec k_\Phi=(0.4,-0.9,1.1)$, so that $\omega^{2}=\vec k_\Phi^{2}+k_m^{2}$, one hundred random real amplitudes projected on the Lorenz surface satisfy the Proca equation with a maximum residual of $2.7\times10^{-15}$ in units of the amplitude; at $k_m=0$ the same amplitudes, on the null shell $\omega=\lvert\vec k_\Phi\rvert$, satisfy $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} F_{\imath\jmath}=0$ with a maximum residual of $1.5\times10^{-15}$.
 
 ### The biquaternion reduction
 
@@ -208,16 +208,16 @@ The third of these is the one that matters for the framework, because it is the 
 
 ### What is discontinuous, first: the constraint changes status
 
-Contract the sourced equation with $\partial_\nu$. The first term vanishes identically, because $\partial_\nu\partial_\mu$ is symmetric in the pair while $F_{\mu\nu}$ is antisymmetric, so
+Contract the sourced equation with $\partial_{\jmath}$. The first term vanishes identically, because $\partial_{\jmath}\partial_{\imath}$ is symmetric in the pair while $F_{\imath\jmath}$ is antisymmetric, so
 
 $$
-k_m^{2}\,\sum_\nu\varepsilon_\nu\partial_\nu A_\nu=\sum_\nu\varepsilon_\nu\partial_\nu J_\nu .
+k_m^{2}\,\sum_{\jmath}\varepsilon_{\jmath}\partial_{\jmath} A_{\jmath}=\sum_{\jmath}\varepsilon_{\jmath}\partial_{\jmath} J_{\jmath} .
 $$
 
 The antisymmetry was checked on one hundred random amplitudes and wavevectors to $2.9\times10^{-15}$. Two cases follow, and they are different statements.
 
-- **For $k_m\neq0$ and $J=0$:** the identity forces $\sum_\nu\varepsilon_\nu\partial_\nu A_\nu=0$. The Lorenz condition is a **consequence of the equation of motion**, not a choice of gauge.
-- **For $k_m=0$:** the identity reads $\sum_\nu\varepsilon_\nu\partial_\nu J_\nu=0$, which is the conservation of the source and the integrability condition of the Maxwell equation. The Lorenz condition is **not** forced; it becomes a **choice of gauge**.
+- **For $k_m\neq0$ and $J=0$:** the identity forces $\sum_{\jmath}\varepsilon_{\jmath}\partial_{\jmath} A_{\jmath}=0$. The Lorenz condition is a **consequence of the equation of motion**, not a choice of gauge.
+- **For $k_m=0$:** the identity reads $\sum_{\jmath}\varepsilon_{\jmath}\partial_{\jmath} J_{\jmath}=0$, which is the conservation of the source and the integrability condition of the Maxwell equation. The Lorenz condition is **not** forced; it becomes a **choice of gauge**.
 
 The biquaternion form of the same dichotomy is the boxed identity of the section above, $0=k_m^{2}S$. The mass is the coefficient that converts an identity into a constraint, and at $k_m=0$ the identity carries no information at all.
 
@@ -233,11 +233,11 @@ The two numbers were checked. On the null shell $\lvert k^{2}\rvert=2.3\times10^
 
 ### Third: gauge invariance emerges
 
-The mass term is the only non-invariant piece of the density. Under $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$ the field strength is unchanged and the mass term moves by
+The mass term is the only non-invariant piece of the density. Under $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$ the field strength is unchanged and the mass term moves by
 
 $$
-\tfrac12 k_m^{2}\sum_\mu A_\mu A_\mu \longmapsto \tfrac12 k_m^{2}\sum_\mu A_\mu A_\mu
-+m^{2}\left(-2\sum_\mu A_\mu\,\partial_\mu\Gamma+\sum_\mu\partial_\mu\Gamma\,\partial_\mu\Gamma\right),
+\tfrac12 k_m^{2}\sum_{\imath} A_{\imath} A_{\imath} \longmapsto \tfrac12 k_m^{2}\sum_{\imath} A_{\imath} A_{\imath}
++m^{2}\left(-2\sum_{\imath} A_{\imath}\,\partial_{\imath}\Gamma+\sum_{\imath}\partial_{\imath}\Gamma\,\partial_{\imath}\Gamma\right),
 $$
 
 which is $3.45$ at $k_m=1\ \mathrm{fm^{-1}}$ for a random configuration of order one and **exactly zero** at $m=0$. The biquaternion statement is the same and shorter: $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is invariant under $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ for a scalar $\Gamma$, verified to $4.1\times10^{-15}$ on one hundred random elements, while $k_m^{2}\tilde{A}_{\Phi}$ is not, because the potential is not gauge invariant.
@@ -500,7 +500,7 @@ The massless limit is an exact reduction and not an approximation. At $k_m=0$ th
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{V}$ | Complex three-dimensional vector part |
@@ -515,7 +515,7 @@ The massless limit is an exact reduction and not an approximation. At $k_m=0$ th
 | $\star\tilde{F} = -i\tilde{F}$ | Hodge dual on the field strength (companion article) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

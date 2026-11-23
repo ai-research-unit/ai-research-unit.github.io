@@ -96,7 +96,7 @@ The abelian case is the exception, and it is the one the corpus has. A right mul
 
 ## The Vector Row: Why It Matches
 
-**The carrier is the vector part, and it is the adjoint.** The action of the group on its own algebra is conjugation, and the vector part is stable under it. The gauge field therefore transforms in the adjoint, as a connection must, and the covariant derivative $D_\mu\tilde\Xi=\partial/\partial R_\mu\tilde\Xi+i\kappa\,\mathcal{A}_\mu\tilde\Xi$ writes the coupling without a choice.
+**The carrier is the vector part, and it is the adjoint.** The action of the group on its own algebra is conjugation, and the vector part is stable under it. The gauge field therefore transforms in the adjoint, as a connection must, and the covariant derivative $D_{\imath}\tilde\Xi=\partial/\partial R_{\imath}\tilde\Xi+i\kappa\,\mathcal{A}_{\imath}\tilde\Xi$ writes the coupling without a choice.
 
 This is the corpus's unusual strength and its ceiling at once. The one row where the algebra is exactly what the model needs is the row the model uses for its carriers, and that is why the sector's kinematics, its self-couplings and its gauge algebra are all correct while its matter and its scalar are not.
 

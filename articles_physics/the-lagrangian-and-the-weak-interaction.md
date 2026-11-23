@@ -9,25 +9,25 @@ Its place in the sector. The action here is the charged-current term of the sect
 The equation. The parent's equation is the $W$'s own equation with the charged current as source,
 
 $$
-D_\nu W^{+}_{\mu\nu}-M_W^2 W^{+}_\mu=\frac{g}{2\sqrt2}J^{+}_\mu ,
+D_{\jmath} W^{+}_{\imath\jmath}-M_W^2 W^{+}_{\imath}=\frac{g}{2\sqrt2}J^{+}_{\imath} ,
 $$
 
 together with its conjugate, in a gauge where the kinetic term is the Proca one. The article asks what action has this equation and what becomes of it below the $W$'s mass.
 
 Three things are established.
 
-*First, the action.* With $J^{+}_\mu=\bar{\tilde\Xi}_{\mathrm u}\,\gamma_\mu(1-\gamma_5)\tilde\Xi_{\mathrm d}$,
+*First, the action.* With $J^{+}_{\imath}=\bar{\tilde\Xi}_{\mathrm u}\,\gamma_{\imath}(1-\gamma_5)\tilde\Xi_{\mathrm d}$,
 
 $$
-S=\int d^4r\;\Bigl[-\tfrac12\sum_{\mu,\nu}W^{+}_{\mu\nu}W^{-}_{\mu\nu}+M_W^2\sum_\mu W^{+}_\mu W^{-}_\mu-\frac{g}{2\sqrt2}\sum_\mu\bigl(W^{+}_\mu J^{+}_\mu+W^{-}_\mu J^{-}_\mu\bigr)\Bigr],
+S=\int d^4r\;\Bigl[-\tfrac12\sum_{\imath,\jmath}W^{+}_{\imath\jmath}W^{-}_{\imath\jmath}+M_W^2\sum_{\imath} W^{+}_{\imath} W^{-}_{\imath}-\frac{g}{2\sqrt2}\sum_{\imath}\bigl(W^{+}_{\imath} J^{+}_{\imath}+W^{-}_{\imath} J^{-}_{\imath}\bigr)\Bigr],
 $$
 
 the stationarity conditions are the parent's equations, and the vertex is the third term.
 
-*Second, the variation eliminates the field.* Varying $W^{+}_\mu$ gives its equation; solving it at low momentum and substituting back gives the contact action
+*Second, the variation eliminates the field.* Varying $W^{+}_{\imath}$ gives its equation; solving it at low momentum and substituting back gives the contact action
 
 $$
-S_{\mathrm{eff}}=-\frac{G_F}{\sqrt2}\int d^4r\;\sum_\mu J^{+}_\mu J^{-}_\mu ,
+S_{\mathrm{eff}}=-\frac{G_F}{\sqrt2}\int d^4r\;\sum_{\imath} J^{+}_{\imath} J^{-}_{\imath} ,
 \qquad
 \frac{G_F}{\sqrt2}=\frac{g^2}{8M_W^2} .
 $$
@@ -42,9 +42,9 @@ What is not new. The charged current, its $V-A$ form and every rate in the paren
 
 The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the fermions are elements $\tilde\Xi\in\mathbb{B}$ and the bilinear pairing is $\bar{\tilde\Xi}=\tilde\Xi^{\dagger}iC_0$.
 
-The current. $J^{+}_\mu=\bar{\tilde\Xi}_{\mathrm u}iR_{\vec e_z}\gamma_\mu(1-\gamma_5)\tilde\Xi_{\mathrm d}$, with $\mathrm u$ the upper and $\mathrm d$ the lower member of a doublet; $J^{-}_\mu=(J^{+}_\mu)^{\dagger}$. The right multiplication by $\vec e_z$ is the corpus's chirality insertion, and the factor $(1-\gamma_5)$ is its component form.
+The current. $J^{+}_{\imath}=\bar{\tilde\Xi}_{\mathrm u}iR_{\vec e_z}\gamma_{\imath}(1-\gamma_5)\tilde\Xi_{\mathrm d}$, with $\mathrm u$ the upper and $\mathrm d$ the lower member of a doublet; $J^{-}_{\imath}=(J^{+}_{\imath})^{\dagger}$. The right multiplication by $\vec e_z$ is the corpus's chirality insertion, and the factor $(1-\gamma_5)$ is its component form.
 
-The $W$. $W^{\pm}_\mu$ are complex vector fields with mass $M_W=80.377$ GeV; the curvature is $W^{+}_{\mu\nu}=\partial_\mu W^{+}_\nu-\partial_\nu W^{+}_\mu$. The coupling is $g$, and the Fermi constant is $G_F=1.1663787\times10^{-5}$ GeV$^{-2}$.
+The $W$. $W^{\pm}_{\imath}$ are complex vector fields with mass $M_W=80.377$ GeV; the curvature is $W^{+}_{\imath\jmath}=\partial_{\imath} W^{+}_{\jmath}-\partial_{\jmath} W^{+}_{\imath}$. The coupling is $g$, and the Fermi constant is $G_F=1.1663787\times10^{-5}$ GeV$^{-2}$.
 
 The sign convention. The mass term enters with a plus sign after the corpus's sign rule and the curvature term with $-\tfrac12$; the interaction term carries the minus of the coupling. Every sign below follows from that choice.
 
@@ -55,20 +55,20 @@ The three pieces. The $W$'s kinetic and mass terms and one interaction term,
 $$
 \mathcal{L}=\mathcal{L}_{W}+\mathcal{L}_{\mathrm{int}},
 \qquad
-\mathcal{L}_W=-\tfrac12\sum_{\mu,\nu}W^{+}_{\mu\nu}W^{-}_{\mu\nu}+M_W^2\sum_\mu W^{+}_\mu W^{-}_\mu ,
+\mathcal{L}_W=-\tfrac12\sum_{\imath,\jmath}W^{+}_{\imath\jmath}W^{-}_{\imath\jmath}+M_W^2\sum_{\imath} W^{+}_{\imath} W^{-}_{\imath} ,
 \qquad
-\mathcal{L}_{\mathrm{int}}=-\frac{g}{2\sqrt2}\sum_\mu\bigl(W^{+}_\mu J^{+}_\mu+W^{-}_\mu J^{-}_\mu\bigr).
+\mathcal{L}_{\mathrm{int}}=-\frac{g}{2\sqrt2}\sum_{\imath}\bigl(W^{+}_{\imath} J^{+}_{\imath}+W^{-}_{\imath} J^{-}_{\imath}\bigr).
 $$
 
 The interaction is a product of a gauge field and a current and nothing else: no derivative of the $W$, no derivative of the current. That absence is what makes the elimination of the next section so simple.
 
-Why the current carries the $V-A$ structure. In the algebra the projection is the right multiplication by a unit imaginary vector, and the two chiral parts of $\tilde\Xi$ are the two eigenspaces of that insertion. The corpus's Dirac bilinear $\bar{\tilde\Xi}\gamma_\mu(1-\gamma_5)\tilde\Xi$ is the component form of the object, and the algebraic statement is that the weak vertex selects one of the two chiral halves. The selection is exact: it is a projection in the algebra and not an approximation to one.
+Why the current carries the $V-A$ structure. In the algebra the projection is the right multiplication by a unit imaginary vector, and the two chiral parts of $\tilde\Xi$ are the two eigenspaces of that insertion. The corpus's Dirac bilinear $\bar{\tilde\Xi}\gamma_{\imath}(1-\gamma_5)\tilde\Xi$ is the component form of the object, and the algebraic statement is that the weak vertex selects one of the two chiral halves. The selection is exact: it is a projection in the algebra and not an approximation to one.
 
-Why the $W$ is charged. $W^{+}_\mu$ carries one unit of electric charge and one unit of the weak ladder; its conjugate carries the opposite. The action is real because the two terms are conjugates of each other, and the factor $1/\sqrt2$ is the normalization of the ladder operators $\tau^{\pm}=(\tau_1\pm i\tau_2)/\sqrt2$.
+Why the $W$ is charged. $W^{+}_{\imath}$ carries one unit of electric charge and one unit of the weak ladder; its conjugate carries the opposite. The action is real because the two terms are conjugates of each other, and the factor $1/\sqrt2$ is the normalization of the ladder operators $\tau^{\pm}=(\tau_1\pm i\tau_2)/\sqrt2$.
 
 The gauge-fixed form. The mass term breaks the local $SU(2)_L$ of the $W$'s own sector, so the action above is written in the unitary gauge, where the $W$'s longitudinal mode is its third polarization and there is no Goldstone. In a covariant gauge the Goldstone returns and the same physics is distributed differently; that is the gauge-fixing article's, and this article uses the unitary form throughout because the vertex does not depend on the choice.
 
-The pairing. The pairing is the Dirac bilinear, and its reality is what makes the contact real. $J^{+}_\mu J^{-}_\mu=\lvert J^{+}_\mu\rvert^{2}$ is a squared modulus, real and non-negative term by term, so the contact action is real with a definite sign. The full action is real because the interaction term is a sum of a term and its conjugate.
+The pairing. The pairing is the Dirac bilinear, and its reality is what makes the contact real. $J^{+}_{\imath} J^{-}_{\imath}=\lvert J^{+}_{\imath}\rvert^{2}$ is a squared modulus, real and non-negative term by term, so the contact action is real with a definite sign. The full action is real because the interaction term is a sum of a term and its conjugate.
 
 Why the current is a vector and not a bilinear of two independent fields. The current is bilinear in the fermions and linear in each; the action is quartic in the fermions after the elimination, which is the defining feature of a four-fermion theory. The quartic form is real because it is the modulus squared of the current.
 
@@ -86,22 +86,22 @@ The selection rule. The selection rule is $SU(2)_L$ and it selects one chirality
 
 ## The Variation: Solving for $W$ Gives the Contact
 
-The variation with respect to $W^{+}_\mu$. In the unitary gauge the equation is algebraic in momentum space,
+The variation with respect to $W^{+}_{\imath}$. In the unitary gauge the equation is algebraic in momentum space,
 
 $$
-\bigl(-k^2+M_W^2\bigr)W^{+}_\mu(k)=\frac{g}{2\sqrt2}J^{+}_\mu(k),
+\bigl(-k^2+M_W^2\bigr)W^{+}_{\imath}(k)=\frac{g}{2\sqrt2}J^{+}_{\imath}(k),
 $$
 
 where the sign of the mass term makes the kernel invertible for every $k$ and the transverse projector is trivial because the mass term is a Stueckelberg term in this gauge. The solution is
 
 $$
-W^{+}_\mu(k)=\frac{g}{2\sqrt2}\frac{J^{+}_\mu(k)}{M_W^2-k^2}.
+W^{+}_{\imath}(k)=\frac{g}{2\sqrt2}\frac{J^{+}_{\imath}(k)}{M_W^2-k^2}.
 $$
 
 **The substitution, exact.** Inserting the solution back into the action gives the non-local effective action
 
 $$
-S_{\mathrm{eff}}=-\frac{g^2}{8}\int d^4r\,d^4r'\;\sum_\mu J^{+}_\mu(r)\,G(r-r')\,J^{-}_\mu(r'),
+S_{\mathrm{eff}}=-\frac{g^2}{8}\int d^4r\,d^4r'\;\sum_{\imath} J^{+}_{\imath}(r)\,G(r-r')\,J^{-}_{\imath}(r'),
 $$
 
 with $G$ the propagator of the massive vector, $G(k)=1/(M_W^2-k^2)$. The Gaussian integration is exact; no approximation has entered.
@@ -109,14 +109,14 @@ with $G$ the propagator of the massive vector, $G(k)=1/(M_W^2-k^2)$. The Gaussia
 The momentum expansion, and where it is justified. For $|k^2|\ll M_W^2$, $G(k)=M_W^{-2}(1+k^2/M_W^2+\cdots)$, and the leading term gives the contact
 
 $$
-\boxed{\;S_{\mathrm{eff}}=-\frac{G_F}{\sqrt2}\int d^4r\;\sum_\mu J^{+}_\mu J^{-}_\mu+O\!\left(\frac{\partial^2}{M_W^2}\right),
+\boxed{\;S_{\mathrm{eff}}=-\frac{G_F}{\sqrt2}\int d^4r\;\sum_{\imath} J^{+}_{\imath} J^{-}_{\imath}+O\!\left(\frac{\partial^2}{M_W^2}\right),
 \qquad
 \frac{G_F}{\sqrt2}=\frac{g^2}{8M_W^2}\;}
 $$
 
 with the second term of the expansion suppressed by $k^2/M_W^2$. At a momentum transfer of $100$ MeV the ratio is $1.55\times10^{-6}$, so the contact is accurate to a part per million for nuclear beta decay, and this is why the $W$ is never seen as a propagating degree of freedom in that setting.
 
-The coefficient, counted from the action and not remembered. The interaction carries $\frac{g}{2\sqrt2}$; squaring it gives $\frac{g^2}{8}$, and the eliminated mass supplies $M_W^{-2}$, so the contact is $-\frac{g^2}{8M_W^2}J^{+}J^{-}$ and the coefficient is $\frac{G_F}{\sqrt2}$ with no further factor. A reader who meets $\frac{4G_F}{\sqrt2}$ in a textbook is reading a current written $\bar\psi\gamma_\mu P_L\psi$: the projector $P_L$ halves the current, so the product of two such currents is four times smaller and the coefficient four times larger. With the full $(1-\gamma_5)$ current used here, the $\frac{4G_F}{\sqrt2}$ form would be wrong by that factor and the muon rate too large by sixteen. The rate computed from the coefficient above, $\Gamma=G_F^2m_\mu^5/(192\pi^3)=3.009\times10^{-19}$ GeV, is $\tau_\mu=2.187\times10^{-6}$ s against the measured $2.197\times10^{-6}$ s — $0.44\%$ short, which is the size of the radiative correction the tree-level formula omits — and that agreement is the check on the coefficient.
+The coefficient, counted from the action and not remembered. The interaction carries $\frac{g}{2\sqrt2}$; squaring it gives $\frac{g^2}{8}$, and the eliminated mass supplies $M_W^{-2}$, so the contact is $-\frac{g^2}{8M_W^2}J^{+}J^{-}$ and the coefficient is $\frac{G_F}{\sqrt2}$ with no further factor. A reader who meets $\frac{4G_F}{\sqrt2}$ in a textbook is reading a current written $\bar\psi\gamma_{\imath} P_L\psi$: the projector $P_L$ halves the current, so the product of two such currents is four times smaller and the coefficient four times larger. With the full $(1-\gamma_5)$ current used here, the $\frac{4G_F}{\sqrt2}$ form would be wrong by that factor and the muon rate too large by sixteen. The rate computed from the coefficient above, $\Gamma=G_F^2m_\mu^5/(192\pi^3)=3.009\times10^{-19}$ GeV, is $\tau_{\imath}=2.187\times10^{-6}$ s against the measured $2.197\times10^{-6}$ s — $0.44\%$ short, which is the size of the radiative correction the tree-level formula omits — and that agreement is the check on the coefficient.
 
 ## The Constraints the Action Imposes: The Contact Is a Limit with a Scale
 
@@ -140,13 +140,13 @@ What the structure predicts. The ratio $\Gamma(\pi\to e\nu_{\mathrm{neu}})/\Gamm
 
 ## The Noether Currents: The Charged Current Is the Ladder Current
 
-The current's origin. Before breaking, the fermion sector is invariant under global $SU(2)_L$, and the Noether currents are $J_{a,\mu}=\bar{\tilde\Xi}\gamma_\mu\tau_{a}\tilde\Xi$. The ladder combinations $J^{\pm}_\mu=J_{1,\mu}\mp iJ_{2,\mu}$ are the charged currents, and the $W$'s interaction term is the gauging of exactly these.
+The current's origin. Before breaking, the fermion sector is invariant under global $SU(2)_L$, and the Noether currents are $J_{a,\imath}=\bar{\tilde\Xi}\gamma_{\imath}\tau_{a}\tilde\Xi$. The ladder combinations $J^{\pm}_{\imath}=J_{1,\imath}\mp iJ_{2,\imath}$ are the charged currents, and the $W$'s interaction term is the gauging of exactly these.
 
 Conservation and its failure. The charged current is conserved in the massless limit and fails to be conserved when the fermions have mass, because a mass term couples the two chiralities and the current is one of them. The divergence is proportional to the mass, and that proportionality is the statement that the axial part alone is the one with the anomaly.
 
 The anomaly. The axial current's divergence contains the triangle anomaly, which cancels between the doublet's members in the Standard Model; the cancellation is the anomaly article's, and this article's contribution is that the current whose anomaly is at issue is the one the action gauges.
 
-Energy–momentum. Translation invariance gives $T_{\mu\nu}$ with the fermion and $W$ contributions; its trace is nonzero because of the mass, and the trace anomaly is again the quantum part.
+Energy–momentum. Translation invariance gives $T_{\imath\jmath}$ with the fermion and $W$ contributions; its trace is nonzero because of the mass, and the trace anomaly is again the quantum part.
 
 **What there is not.** No conserved charge that survives the breaking except the electric charge; the weak isospin current is not conserved by the vacuum, which is the same statement as the $W$'s mass.
 
@@ -183,8 +183,8 @@ The three findings. The contact is an exact Gaussian elimination followed by a m
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Xi_{\mathrm u}$, $\tilde\Xi_{\mathrm d}$ | upper and lower doublet fermions |
-| $J^{+}_\mu=\bar{\tilde\Xi}_{\mathrm u}\gamma_\mu(1-\gamma_5)\tilde\Xi_{\mathrm d}$ | charged current |
-| $W^{\pm}_\mu$ | charged vector fields, mass $M_W$ |
+| $J^{+}_{\imath}=\bar{\tilde\Xi}_{\mathrm u}\gamma_{\imath}(1-\gamma_5)\tilde\Xi_{\mathrm d}$ | charged current |
+| $W^{\pm}_{\imath}$ | charged vector fields, mass $M_W$ |
 | $g$ | weak coupling |
 | $G_F$ | Fermi constant, $1.1663787\times10^{-5}$ GeV$^{-2}$ |
 | $G(k)$ | massive-vector propagator $1/(M_W^2-k^2)$ |

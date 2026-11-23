@@ -10,7 +10,7 @@ What is not done. No scattering amplitude, no perturbation series, no Feynman ru
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$ with four complex coefficients; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian one, for the reasons the free article gives; the measure is $\mathrm{d}^{4}r$; $k_m=\frac{2\pi mc}{h}$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$ with four complex coefficients; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian one, for the reasons the free article gives; the measure is $\mathrm{d}^{4}r$; $k_m=\frac{2\pi mc}{h}$.
 
 The addition is the coupling $\lambda$, a real number with the dimensions that make $\lambda N$ a squared wave number, and the density
 
@@ -98,7 +98,7 @@ What follows from the shift. For $\lambda>0$ the shift is positive and a denser 
 **The current is the free one, exactly.** The global phase leaves the interaction invariant, and the interaction carries no derivative, so it contributes nothing to the current:
 
 $$
-j_\mu=2\,\mathrm{Im}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\partial_\mu\tilde\Xi\bigr],
+j_{\imath}=2\,\mathrm{Im}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\partial_{\imath}\tilde\Xi\bigr],
 $$
 
 the free article's bilinear, with the same sign convention. Its conservation on solutions is the statement that the equation's right side, $\lambda N\tilde\Xi$, transforms the same way as the left side under the phase: both are multiplied by $e^{i\theta}$, so the phase of the equation is not fixed and the current is conserved.
@@ -106,7 +106,7 @@ the free article's bilinear, with the same sign convention. Its conservation on 
 The stress gains one term. Translation invariance gives the free stress plus the interaction's contribution, which is the term $+\frac{\lambda}{4}N^{2}$ in the energy density, since the interaction is a function of the field and not of its derivatives: the canonical energy density is
 
 $$
-T_{00}=\sum_\mu\bigl\lvert\partial_\mu\tilde\Xi\bigr\rvert^{2}+k_m^{2}N+\frac{\lambda}{4}N^{2},
+T_{00}=\sum_{\imath}\bigl\lvert\partial_{\imath}\tilde\Xi\bigr\rvert^{2}+k_m^{2}N+\frac{\lambda}{4}N^{2},
 $$
 
 in the flat notation, with the metric signs of the display. For $\lambda>0$ every term is positive and the energy is bounded below by zero.
@@ -137,14 +137,14 @@ $$
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_\mu^{2}=-e_t$ | Basis and its squares |
+| $e_t=1,\ \vec e_{\imath}^{2}=-e_t$ | Basis and its squares |
 | $\mathrm{Sc}$ | Coefficient of $e_t$ |
 | $\tilde\Xi$ | The scalar field, four complex coefficients |
 | $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}$ | Density, real and non-negative |
 | $\lambda$ | Quartic coupling, real, dimension of a squared wave number per density |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ | d'Alembertian on the material sector |
-| $j_\mu$ | Phase current, the free bilinear |
+| $j_{\imath}$ | Phase current, the free bilinear |
 | $T_{00}$ | Energy density |
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |
 

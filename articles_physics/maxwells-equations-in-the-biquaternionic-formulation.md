@@ -75,10 +75,10 @@ The scalar part $A_0 = i\,a'_t$ is purely imaginary, matching the complex time c
 The coordinate representation of $\tilde{A}_{\Phi}$ as a four-vector potential is
 
 $$
-\tilde{A}_{\Phi} = \sum_{\mu\in\{t,x,y,z\}} A_\mu e_\mu \;\longleftrightarrow\; A_\mu = (A_0, A_1, A_2, A_3),
+\tilde{A}_{\Phi} = \sum_{\imath\in\{t,x,y,z\}} A_{\imath} e_{\imath} \;\longleftrightarrow\; A_{\imath} = (A_0, A_1, A_2, A_3),
 $$
 
-with the four $e_\mu$ the coefficient basis of *Algebra and Element Conventions*, §*The Base and Its Units*, and
+with the four $e_{\imath}$ the coefficient basis of *Algebra and Element Conventions*, §*The Base and Its Units*, and
 
 $$
 A_0 = i\,a'_t, \qquad (A_1, A_2, A_3) = \vec A.
@@ -169,13 +169,13 @@ $$
 
 In Heaviside–Lorentz units, where the two medium factors are absorbed in the definition of $\tilde F$, the factor $\sqrt\mu$ is absent and the relation reads $\tilde{F}=(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, the form quoted in the companion articles; in a medium whose relative permeability differs from one the factor is required, and dropping it would make the two sides differ in dimension. No sign convention is left open: the choice $A_0=+i\,a'_t$ fixes the imaginary electric part, and the opposite choice would reverse it.
 
-**The same object in tensor language.** The four-potential has components $A_\mu$, and the field tensor is
+**The same object in tensor language.** The four-potential has components $A_{\imath}$, and the field tensor is
 
 $$
-F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu ,
+F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath} ,
 $$
 
-antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, with $F_{0\eta}=-(i/c)(c\,\partial A_\eta/\partial r'_t+\partial \xi_{\mathrm{scp}}/\partial r_\eta)=iE_\eta/c$ and $F_{j\eta}=\epsilon_{j\eta l}B_l$. The six independent components are the six of $\vec F$: three in the imaginary electric part and three in the real magnetic part.
+antisymmetric, $F_{\imath\jmath}=-F_{\jmath\imath}$, with $F_{0\eta}=-(i/c)(c\,\partial A_\eta/\partial r'_t+\partial \xi_{\mathrm{scp}}/\partial r_\eta)=iE_\eta/c$ and $F_{j\eta}=\epsilon_{j\eta l}B_l$. The six independent components are the six of $\vec F$: three in the imaginary electric part and three in the real magnetic part.
 
 The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by **Ludwik Silberstein** in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the **Riemann–Silberstein vector** $\vec N = \vec E + ic\vec B$. The biquaternionic field strength is that vector with one constant phase and one normalisation,
 
@@ -288,7 +288,7 @@ $$
 
 So the boxed solution is a pure vector exactly when $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}) = 0$, and when that condition fails the field it returns carries a scalar whose value is the retarded average of the violation. The constraint is therefore not an extra condition imposed beside the formula: it is the statement that the formula's output lies in the space in which $\tilde F$ is defined.
 
-The retarded Green's function is distinct from the **Cauchy kernel** $\tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ of the elliptic theory (companion articles on biquaternion integration and biquaternion analysis on subspaces). The difference is which reading of one operator is inverted. The Cauchy kernel is the fundamental solution of $\Box_\Phi=\partial^2/\partial R_t^2+\Delta_\Phi$ read with the four real coordinates $Q_\mu$ of the $\mathbb{B}$ frame, where all four coefficients have the same sign; the retarded kernel is the fundamental solution of the same $\Box_\Phi$ read on $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$ turns it into $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. There is one d'Alembertian, not two: the substitution is a change of coordinate, and it changes the signs. The two kernels are related by the **Wick rotation** $r'_t \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.
+The retarded Green's function is distinct from the **Cauchy kernel** $\tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ of the elliptic theory (companion articles on biquaternion integration and biquaternion analysis on subspaces). The difference is which reading of one operator is inverted. The Cauchy kernel is the fundamental solution of $\Box_\Phi=\partial^2/\partial R_t^2+\Delta_\Phi$ read with the four real coordinates $Q_{\imath}$ of the $\mathbb{B}$ frame, where all four coefficients have the same sign; the retarded kernel is the fundamental solution of the same $\Box_\Phi$ read on $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$ turns it into $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. There is one d'Alembertian, not two: the substitution is a change of coordinate, and it changes the signs. The two kernels are related by the **Wick rotation** $r'_t \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.
 
 ## The Three-Vector Form
 
@@ -362,7 +362,7 @@ $$
 \tilde{A}_{\Phi,\mathrm g} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi \Gamma,
 $$
 
-where $\Gamma$ is an arbitrary scalar function. This is the biquaternionic form of the standard gauge transformation $A_\mu \to A_\mu - \partial/\partial R_\mu \Gamma$.
+where $\Gamma$ is an arbitrary scalar function. This is the biquaternionic form of the standard gauge transformation $A_{\imath} \to A_{\imath} - \partial/\partial R_{\imath} \Gamma$.
 
 Under this transformation, the field-strength biquaternion is invariant:
 
@@ -400,7 +400,7 @@ S=\frac{\partial A_0}{\partial R_t} + \mathrm{div}\,\vec A
 =\frac{1}{c}\frac{\partial\xi_{\mathrm{scp}}}{\partial r'_t}+\mathrm{div}\,\vec A=0,
 $$
 
-where the two factors of $i$ give $i^2=-1$, $a'_t=\xi_{\mathrm{scp}}/c$ restores the potential, and the sign of the second term follows. This is the biquaternionic form of the standard Lorenz condition $\sum_\mu \partial A_\mu/\partial R_\mu = 0$, written in the familiar three-vector shape. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation
+where the two factors of $i$ give $i^2=-1$, $a'_t=\xi_{\mathrm{scp}}/c$ restores the potential, and the sign of the second term follows. This is the biquaternionic form of the standard Lorenz condition $\sum_{\imath} \partial A_{\imath}/\partial R_{\imath} = 0$, written in the familiar three-vector shape. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation
 
 $$
 \Box_\Phi \tilde{A}_{\Phi} = -\mu \tilde J_{\Phi},
@@ -412,7 +412,7 @@ $$
 \tilde J_{\Phi} = ic\rho\,e_t + \vec J.
 $$
 
-This is the biquaternionic wave equation for the potential. The factor of $\mu$ is explicit, because the potential equation in the tensor formulation is $\Box_\Phi A_\mu = -\mu J_\mu$ with $J_\mu = (ic\rho, \vec J)$. Note that the wave equation has a solution if and only if the four-current satisfies the conservation law $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}) = 0$, which is equivalent to the charge conservation constraint on $\rho$ and $\vec J$.
+This is the biquaternionic wave equation for the potential. The factor of $\mu$ is explicit, because the potential equation in the tensor formulation is $\Box_\Phi A_{\imath} = -\mu J_{\imath}$ with $J_{\imath} = (ic\rho, \vec J)$. Note that the wave equation has a solution if and only if the four-current satisfies the conservation law $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}) = 0$, which is equivalent to the charge conservation constraint on $\rho$ and $\vec J$.
 
 The scalar field $S$ has no independent physical meaning. It is a gauge artifact, and the Lorenz gauge is the physical choice that sets it to zero. In the future, if a **physical interpretation** of $S$ is found, it would have to arise from a coupling to a sector of the theory that is not gauge-invariant. For the classical electromagnetic field, $S$ is not physical.
 
@@ -537,7 +537,7 @@ both recomputed at the finite-difference floor, and the second is the paper's de
 
 **What the matrix route says about the algebra.** The correspondence with the algebra is exact, and it is a change of basis of *The Element and Operator Representations*: those $4 \times 4$ matrices are the biquaternion algebra in the basis $e_t, x, y, z$ with $x = i\vec e_x$, $y = i\vec e_y$, $z = i\vec e_z$, whose vector units square to $+e_t$; in that basis the left regular matrix of an element is $a I + cF$ with $cF$ the matrix above, the right regular matrix is **exactly its transpose** with no sign matrix, and $c\nabla$ is the same construction with the components of $\vec\nabla_\Phi$ in place of the field. The consequence for the question this section is about is not a confirmation but a reversal of direction: the one-equation compactness, with full equivalence and no elimination, is available in a purely matrix setting, so it settles nothing about the algebra; what the algebra supplies here is the *explanation* of the matrix identities, since the commutation that makes the dual pair agree is the commutation of the left and the right regular representations, and the field matrix is the left regular matrix in a basis. An author working in matrices and counting equations is led back to the algebra as the reason his identities are true. That is a stronger statement for the corpus than another confirmation of compactness, and it is consistent with the position taken in the section *The Question of What Is Fundamental* below: the algebra supplies the home in which relations become structural, not a claim that no other language can write the equation once.
 
-Two further items of the paper belong to other articles. The three matrices $cF$ of the coordinate units $\vec e_x,\vec e_y,\vec e_z$ just defined — $cF$ evaluated at $(1,0,0)$, $(0,1,0)$, $(0,0,1)$ — anticommute pairwise, square to $+I$, and satisfy $cF(\vec e_x)cF(\vec e_y) = i\,cF(\vec e_z)$, while the sixteen matrices $I$, $cF(\vec e_\mu)$, their conjugates and their products form a Hermitian basis of $M_4(\mathbb{C})$ of which the four $\{I, cF(\vec e_\mu)\}$ span the biquaternions — same matrices, in the same basis, as the sixteen of the second realization recorded in *The Element and Operator Representations*, where they are listed and where the transposition identity these matrices satisfy is stated. The tensor $\frac{1}{2}cF\,\overline{cF}$ is real, traceless and carries the energy density, the Poynting vector and the Maxwell stress, and its divergence is the four-force density; that balance, and the matrix proof of it from the Leibniz rule, are recorded beside the corpus's own derivation in *Exercise: The Electromagnetic Energy–Momentum Tensor*. The exponential of the real anti-Hermitian $F$ factors as $\exp(F) = \exp(cF/2)\exp(\overline{cF}/2)$ and is a proper Lorentz transformation, recomputed to $1.4 \times 10^{-14}$ over $100$ random fields; the corpus has no separate article for this exponential as an element of the field theory, and it is recorded here only as a property of $cF$ rather than adopted as a route to the Lorentz group, which the two-sided action of *The Element and Operator Representations* already supplies.
+Two further items of the paper belong to other articles. The three matrices $cF$ of the coordinate units $\vec e_x,\vec e_y,\vec e_z$ just defined — $cF$ evaluated at $(1,0,0)$, $(0,1,0)$, $(0,0,1)$ — anticommute pairwise, square to $+I$, and satisfy $cF(\vec e_x)cF(\vec e_y) = i\,cF(\vec e_z)$, while the sixteen matrices $I$, $cF(\vec e_{\imath})$, their conjugates and their products form a Hermitian basis of $M_4(\mathbb{C})$ of which the four $\{I, cF(\vec e_{\imath})\}$ span the biquaternions — same matrices, in the same basis, as the sixteen of the second realization recorded in *The Element and Operator Representations*, where they are listed and where the transposition identity these matrices satisfy is stated. The tensor $\frac{1}{2}cF\,\overline{cF}$ is real, traceless and carries the energy density, the Poynting vector and the Maxwell stress, and its divergence is the four-force density; that balance, and the matrix proof of it from the Leibniz rule, are recorded beside the corpus's own derivation in *Exercise: The Electromagnetic Energy–Momentum Tensor*. The exponential of the real anti-Hermitian $F$ factors as $\exp(F) = \exp(cF/2)\exp(\overline{cF}/2)$ and is a proper Lorentz transformation, recomputed to $1.4 \times 10^{-14}$ over $100$ random fields; the corpus has no separate article for this exponential as an element of the field theory, and it is recorded here only as a property of $cF$ rather than adopted as a route to the Lorentz group, which the two-sided action of *The Element and Operator Representations* already supplies.
 
 ## The Author's Reading: the Objection, the Modification, and Closure
 
@@ -546,7 +546,7 @@ The biquaternionic form is the corpus's own statement of Maxwell's equations, de
 **The objection.** In Alexeyeva's account the classical system has three faults: the two vector equations are not connected to the two scalar equations; the resulting system is "of a mixed hyperbolic–elliptic type", which she holds to contradict the wave nature of electromagnetic propagation; and it does not describe the longitudinal electromagnetic waves she takes to be observed. The first two are precise and reproducible. The vector pair's characteristic equation is
 
 $$
-\nu_\tau^2\left(\frac{\nu_\tau^2}{c^2} - \|\tilde\Omega\|^2\right)^2 = 0,
+\jmath_\tau^2\left(\frac{\jmath_\tau^2}{c^2} - \|\tilde\Omega\|^2\right)^2 = 0,
 $$
 
 so the vector system is hyperbolic with the light cone for its characteristics, while the scalar pair $\epsilon\,\mathrm{div}\,\vec E = \rho_E$, $\mathrm{div}\,\vec H = 0$ is purely spatial and elliptic; its Coulomb potential solves $\Delta_\Phi \xi_{\mathrm{scp}} = \rho_E$, whose solution decays at infinity, which the author reads as incompatible with propagation. The corpus's own interpretation is the standard one: the vector equations are the **evolution** system and the scalar equations are **constraints** on its initial data, and the two are not meant to be joined by further dynamics. That the constraint sector is elliptic is a feature of the $3+1$ split, not a defect of the four-dimensional equation. The disagreement is one of interpretation, and the corpus records it only because the modification is built on it.
@@ -589,7 +589,7 @@ The author calls it the **Maxwell–Dirac** system because its differential oper
 
 The three-vector form in *Maxwell's Equations in a Material Medium* above is the corpus's derivation; the modified system above and the objection that motivates it are recorded from the author's 2016 paper, and the corpus's own equation is not altered by them.
 
-**A counter-claim, from a formulation arranged differently.** One external formulation claims the opposite outcome, and it belongs beside the modification. E. P. J. de Haas (*Biquaternion Formulation of Relativistic Tensor Dynamics*, arXiv:1401.4470v1, 2013) states that his biquaternion tensor calculus "lacks the extra terms that usually arise in biquaternionic electrodynamics", and he gives the condition in the body: the electromagnetic force biquaternion matches the standard field only if the **Lorenz gauge** holds, that is the divergence of the potential vanishes — he writes $F_0 = 0$ for it, which in the corpus's convention is $\sum_\mu\partial A_\mu/\partial R_\mu = 0$; off that gauge the usual biquaternion expressions for the Lorentz force and for the two inhomogeneous Maxwell equations carry extra terms which his arrangement does not, the terms arising from rearranging the tensor indices into biquaternion slots, an operation he calls external to his system. So the contrast with the $\alpha$-modification is exact and worth stating plainly: the corpus's own Maxwell equations, and the corpus's *Gauge Structure* section, are reached with no added scalar, and the gauge is fixed by construction; the modification adds a scalar to the field strength because the reduction is held to fail without it; and the counter-claim says the extra terms are an artefact of the mapping and the gauge rather than of the algebra. Both external positions are recorded, attributed, and neither alters the corpus's equation. The full accounting is in *Relativistic Mechanics in Biquaternionic Form* and *Curved Spacetime and the Biquaternion Framework*.
+**A counter-claim, from a formulation arranged differently.** One external formulation claims the opposite outcome, and it belongs beside the modification. E. P. J. de Haas (*Biquaternion Formulation of Relativistic Tensor Dynamics*, arXiv:1401.4470v1, 2013) states that his biquaternion tensor calculus "lacks the extra terms that usually arise in biquaternionic electrodynamics", and he gives the condition in the body: the electromagnetic force biquaternion matches the standard field only if the **Lorenz gauge** holds, that is the divergence of the potential vanishes — he writes $F_0 = 0$ for it, which in the corpus's convention is $\sum_{\imath}\partial A_{\imath}/\partial R_{\imath} = 0$; off that gauge the usual biquaternion expressions for the Lorentz force and for the two inhomogeneous Maxwell equations carry extra terms which his arrangement does not, the terms arising from rearranging the tensor indices into biquaternion slots, an operation he calls external to his system. So the contrast with the $\alpha$-modification is exact and worth stating plainly: the corpus's own Maxwell equations, and the corpus's *Gauge Structure* section, are reached with no added scalar, and the gauge is fixed by construction; the modification adds a scalar to the field strength because the reduction is held to fail without it; and the counter-claim says the extra terms are an artefact of the mapping and the gauge rather than of the algebra. Both external positions are recorded, attributed, and neither alters the corpus's equation. The full accounting is in *Relativistic Mechanics in Biquaternionic Form* and *Curved Spacetime and the Biquaternion Framework*.
 
 ## The Biquaternionic Energy–Momentum
 
@@ -605,7 +605,7 @@ $$
 W = \frac{1}{2}\left(\epsilon\,\vec E\cdot\vec E + \mu\,\vec H\cdot\vec H\right), \qquad \vec S = \vec E\times\vec H.
 $$
 
-The scalar part of $\tilde\Sigma_{\Psi}$ is the energy density, real; the vector part is $(i/c)\vec S$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{B}_{\Psi}$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $i r'_t$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\sqrt{\mu}\,\tilde{J}_{\Phi}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in *The Field-Strength Biquaternion and Its Invariants*; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum **tensor** $T_{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde\Sigma_{\Psi}$ carries its energy density and its energy flux.
+The scalar part of $\tilde\Sigma_{\Psi}$ is the energy density, real; the vector part is $(i/c)\vec S$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{B}_{\Psi}$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $i r'_t$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\sqrt{\mu}\,\tilde{J}_{\Phi}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in *The Field-Strength Biquaternion and Its Invariants*; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum **tensor** $T_{\imath\jmath}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde\Sigma_{\Psi}$ carries its energy density and its energy flux.
 
 The energy law is the scalar part of the biquaternionic equation
 
@@ -737,7 +737,7 @@ The distinction matters because the field's derived quantities come with slots. 
 
 **The single-term form and spatial reversal.** Gsponer and Hurni record a caveat about the *writing* of the equation rather than about the field. The widely used quaternion form of Maxwell's second set carries a single term — the gradient of the field strength proportional to the current — and the source contrasts it with the two-term form in which the field equation is the reversal-symmetric half of a pair. The two agree only when the reversed term vanishes, and the source identifies that term with the source-free relation recorded above; the single-term form is therefore covariant under spatial reversal exactly when the potential and the current are reversion invariant, which is the ordinal-invariance assumption of the paragraph above, and not otherwise.
 
-In the corpus's conventions the separation is explicit, and it was checked. For a pure-vector field strength $\tilde{F}=\sum_\mu F_\mu \vec e_\mu$ the two order-parities of $\tilde\nabla_\Phi\tilde{F}$ are
+In the corpus's conventions the separation is explicit, and it was checked. For a pure-vector field strength $\tilde{F}=\sum_{\imath} F_{\imath} \vec e_{\imath}$ the two order-parities of $\tilde\nabla_\Phi\tilde{F}$ are
 
 $$
 \tfrac12\left(\tilde\nabla_\Phi\tilde{F}+\tilde{F}^{\sim}\tilde\nabla_\Phi\right)=\partial/\partial R_t\,\vec F-\mathrm{div}\,\vec F\,e_t,
@@ -745,7 +745,7 @@ $$
 \tfrac12\left(\tilde\nabla_\Phi\tilde{F}-\tilde{F}^{\sim}\tilde\nabla_\Phi\right)=\mathrm{rot}\,\vec F,
 $$
 
-where the second product is read with the derivative acting on the reversed field strength and the unit standing on the right, $\tilde{F}^{\sim}\tilde\nabla_\Phi=\sum_\mu(\partial/\partial R_\mu\tilde{F}^{\sim})\,e_\mu$. The first line carries the time derivative and the divergence, a biquaternion whose scalar part is $-\mathrm{div}\,\vec F$ and whose vector part is $\partial/\partial R_t\,\vec F$; the second line is the spatial curl. The one-term equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ therefore fixes the *sum* of the two halves and neither half separately, and the divergence half is not identically zero: on a test field of mixed polynomial structure both its scalar and its vector part are nonzero. So the compact equation is a statement about the sum; its spatial-reversal covariance rests on the two halves coinciding, and the source reads that coincidence as the source-free condition rather than as a property the writing inherits from the equation.
+where the second product is read with the derivative acting on the reversed field strength and the unit standing on the right, $\tilde{F}^{\sim}\tilde\nabla_\Phi=\sum_{\imath}(\partial/\partial R_{\imath}\tilde{F}^{\sim})\,e_{\imath}$. The first line carries the time derivative and the divergence, a biquaternion whose scalar part is $-\mathrm{div}\,\vec F$ and whose vector part is $\partial/\partial R_t\,\vec F$; the second line is the spatial curl. The one-term equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ therefore fixes the *sum* of the two halves and neither half separately, and the divergence half is not identically zero: on a test field of mixed polynomial structure both its scalar and its vector part are nonzero. So the compact equation is a statement about the sum; its spatial-reversal covariance rests on the two halves coinciding, and the source reads that coincidence as the source-free condition rather than as a property the writing inherits from the equation.
 
 ## Maxwell's Vacuum Equation as a Cauchy–Riemann Condition
 
@@ -802,7 +802,7 @@ The corpus records the invariance and the three interpretations as the source's 
 
 Up to this point the potential has been taken in the **anti-Hermitian subspace** $\mathbb{B}_{\Phi}$ (the material sector): with $A_0 = i\,a'_t$ and $\vec A$ real, the time coefficient is purely imaginary and the three spatial coefficients are real. The field strength is in neither subspace, and its two halves are the two physical halves of $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$.
 
-The electric half $i\sqrt{\epsilon}\,\vec E$ is the Hermitian part of the field and the magnetic half $-\sqrt{\mu}\,\vec H$ the anti-Hermitian part, which is the sector split of *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*, read on $\tilde F$. In the full biquaternion algebra $\mathbb{B}$, the coefficients $A_\mu$ are arbitrary complex numbers, and the potential and field-strength biquaternions become **fully complexified**
+The electric half $i\sqrt{\epsilon}\,\vec E$ is the Hermitian part of the field and the magnetic half $-\sqrt{\mu}\,\vec H$ the anti-Hermitian part, which is the sector split of *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*, read on $\tilde F$. In the full biquaternion algebra $\mathbb{B}$, the coefficients $A_{\imath}$ are arbitrary complex numbers, and the potential and field-strength biquaternions become **fully complexified**
 
 $$
 \tilde{A}_{\Phi} = A_0 + \vec A, \qquad \tilde{F} = \vec F,
@@ -816,7 +816,7 @@ This is the natural generalization of the $i r'_t$ structure. The electromagneti
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The body writes its operators as basis operators $L_aR_b$, a left multiplication followed by a right one: $L_a$ multiplies on the left by $a$ and $R_b$ on the right by $b$. The gamma names are the names of the frame basis operators. Two basis operators multiply by multiplying the left factors and the right factors, the right factors in reverse order,
 
@@ -844,7 +844,7 @@ $$
 \gamma_0^2=+I_4,\qquad \gamma_1^2=\gamma_2^2=\gamma_3^2=-I_4,\qquad \gamma_5^2=+I_4,
 $$
 
-with $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $\varepsilon=(1,-1,-1,-1)$, and $\{\gamma_5,\gamma_\mu\}=0$. The four frame basis operators multiply to $-i\gamma_5$, that is, $\gamma_5$ is $i$ times their product,
+with $\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4$, $\varepsilon=(1,-1,-1,-1)$, and $\{\gamma_5,\gamma_{\imath}\}=0$. The four frame basis operators multiply to $-i\gamma_5$, that is, $\gamma_5$ is $i$ times their product,
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5,
@@ -855,13 +855,13 @@ $$
 The single $i$ in a generator is also what makes a doubled $i$ collapse: multiplying a generator by $i$ returns a plain basis operator,
 
 $$
-i\gamma_\mu=-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}},
+i\gamma_{\imath}=-L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\imath)}},
 $$
 
 In the axis-free display:
 
 $$
-i\gamma_\mu=-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}},
+i\gamma_{\imath}=-L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}},
 $$
 
 with $\vec e_{\mathrm{spt}(t)}=\vec e_x$ and $\vec e_{\mathrm{spt}(\eta)}=\vec e_y$, together with $i\gamma_5=+L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, the sign there being the opposite one because $\gamma_5$ was defined with the opposite sign of $i$. Every product of two imaginary units is therefore a sign, and no display in this article carries a doubled $i$.
@@ -878,7 +878,7 @@ $\gamma_5$ is the reference-frame basis operator of the chirality operator. The 
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -894,7 +894,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
-| $i$ | Scalar imaginary, $i^2 = -1$, commutes with $\vec e_\mu$ |
+| $i$ | Scalar imaginary, $i^2 = -1$, commutes with $\vec e_{\imath}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector) |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector) |
 | $\tilde{A}_{\Phi}$ | Potential biquaternion |
@@ -926,7 +926,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $\vec v_f$ | Fluid velocity |
 | $\vec v_b$ | Boost velocity |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

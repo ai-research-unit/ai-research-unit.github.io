@@ -151,7 +151,7 @@ Identifying the vector $\pi(\tilde{Q}_3)\Omega=\tilde{Q}_3e_t$ with the algebra 
 $$
 S_0(\tilde{Q}_3) = \tilde{Q}_3^{*} .
 $$
-**The Tomita operator of the biquaternion algebra is its Hermitian conjugation.** It is anti-linear because ${}^{*}$ conjugates the coefficients: for $\tilde{Q}_3=\sum_\mu Q_\mu e_\mu$ one has $\tilde{Q}_3^{*}=\bar Q_te_t-\sum_{\eta=1}^{3}\bar Q_\eta\vec e_\eta$, using $e_t^\dagger=e_t$ and $\vec e_\eta^{*}=-\vec e_\eta$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.
+**The Tomita operator of the biquaternion algebra is its Hermitian conjugation.** It is anti-linear because ${}^{*}$ conjugates the coefficients: for $\tilde{Q}_3=\sum_{\imath} Q_{\imath} e_{\imath}$ one has $\tilde{Q}_3^{*}=\bar Q_te_t-\sum_{\eta=1}^{3}\bar Q_\eta\vec e_\eta$, using $e_t^\dagger=e_t$ and $\vec e_\eta^{*}=-\vec e_\eta$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.
 
 The Hilbert-space adjoint of the anti-linear $S_0$, defined by
 $$

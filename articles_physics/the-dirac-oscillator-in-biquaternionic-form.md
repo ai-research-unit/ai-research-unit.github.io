@@ -25,9 +25,9 @@ The article derives the substitution, the split of a state into its two frame pa
 **The gradient and the d'Alembertian.** Every derivative in this article is the corpus gradient. The conventions are stated once, here, and used without restatement:
 
 $$
-\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\,\frac{\partial}{\partial R_\mu},
+\tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\,\frac{\partial}{\partial R_{\imath}},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\,\frac{\partial}{\partial R_\mu},
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath\in\{t,x,y,z\}}\varepsilon_{\imath} e_{\imath}\,\frac{\partial}{\partial R_{\imath}},
 \qquad
 \Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi ,
 $$

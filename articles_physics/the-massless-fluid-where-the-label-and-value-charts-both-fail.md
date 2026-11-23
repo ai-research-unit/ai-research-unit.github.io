@@ -14,7 +14,7 @@ What is proved here is that at $k_m=0$ the label's null cone and the pole set ar
 
 ## Conventions and Notation
 
-The element and its two norms. $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_k^{2}=-e_t$, with $i$ central. $N(\tilde Q)=\sum_\mu Q_\mu^{2}$ is the **quaternionic norm**, complex and multiplicative, vanishing exactly on the zero divisors; $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ is the **Euclidean size**, real and definite. The modulus is the invariant and the size is the frame-dependent number [The Two Scales of the Field](../articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.html).
+The element and its two norms. $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_k^{2}=-e_t$, with $i$ central. $N(\tilde Q)=\sum_{\imath} Q_{\imath}^{2}$ is the **quaternionic norm**, complex and multiplicative, vanishing exactly on the zero divisors; $\langle\tilde Q\rangle_{*}=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ is the **Euclidean size**, real and definite. The modulus is the invariant and the size is the frame-dependent number [The Two Scales of the Field](../articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.html).
 
 The label. The corpus writes a four-vector with an imaginary time coefficient, $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$, so that
 
@@ -167,7 +167,7 @@ At $m=0$ the amplitude is not driven to zero by a path: it is forced into the ke
 What survives is three data and none of them is a density: a unit direction $\vec u$, an intensity $\lvert\varkappa\rvert^{2}$, and the sign of the energy. That is the data of a current,
 
 $$
-j_\mu=\frac{c}{2}\lvert\varkappa\rvert^{2}\bigl(1,\vec u\bigr),
+j_{\imath}=\frac{c}{2}\lvert\varkappa\rvert^{2}\bigl(1,\vec u\bigr),
 $$
 
 so the object at the corner is a null current, and the word "fluid" is a shorthand that stops being true at $m=0$. A current has a direction and a flux and no state; a fluid has a state, a stress and a quantum potential, and none of those exists here.
@@ -194,7 +194,7 @@ $$
 
 so the kernel is $\tilde\Pi_{\mathrm{id}}\,\mathbb{B}$, the set of right multiples of $\tilde\Pi_{\mathrm{id}}$: four real parameters, two complex. The wrong chirality is not annihilated at all — it is passed through unchanged, which is a stronger statement than "not in the kernel": the mirror projector leaves the symbol's action untouched. The mirror label annihilates the mirror idempotent and nothing else, which is the algebraic form of the statement that helicity is locked to momentum [Spin-Velocity Locking on the Degenerate Sector](spin-velocity-locking-on-the-degenerate-sector.html).
 
-At $k=1$ and $k=2.7$ the singular values of $L_{\tilde K_\Phi}$ are $\{2,2,2,2,0,0,0,0\}$ and $\{5.4,5.4,5.4,5.4,0,0,0,0\}$; the span of the four generators $\tilde\Pi_{\mathrm{id}}\vec e_\mu$ has rank four and is annihilated to zero; and the mirror product $\tilde K_\Phi\tilde\Pi_{\mathrm{id},-}$ equals $\tilde K_\Phi$ to $0$ exactly. *Proof and residuals: §*Appendix: The Algebra*.*
+At $k=1$ and $k=2.7$ the singular values of $L_{\tilde K_\Phi}$ are $\{2,2,2,2,0,0,0,0\}$ and $\{5.4,5.4,5.4,5.4,0,0,0,0\}$; the span of the four generators $\tilde\Pi_{\mathrm{id}}\vec e_{\imath}$ has rank four and is annihilated to zero; and the mirror product $\tilde K_\Phi\tilde\Pi_{\mathrm{id},-}$ equals $\tilde K_\Phi$ to $0$ exactly. *Proof and residuals: §*Appendix: The Algebra*.*
 
 ## The Inverse It Keeps
 
@@ -362,8 +362,8 @@ The label chart's failure is a projection and not a divergence. Its least-square
 
 | symbol | meaning |
 | --- | --- |
-| $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, $\sum_\mu Q_\mu^{2}$, complex, multiplicative |
-| $\langle\tilde Q\rangle_{*}$ | the Euclidean size, $\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, $\sum_{\imath} Q_{\imath}^{2}$, complex, multiplicative |
+| $\langle\tilde Q\rangle_{*}$ | the Euclidean size, $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ |
 | $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | the label, with imaginary time coefficient |
 | $k_m$ | the mass in wave-number units, the block's $\frac{2\pi mc}{h}$ |
 | $N(\tilde K_\Phi)=-k_t'^{2}+\lvert\vec k_\Phi\rvert^{2}$ | the label's norm (plain $N$); the mass shell is $-k_m^{2}$ |
@@ -375,7 +375,7 @@ The label chart's failure is a projection and not a divergence. Its least-square
 | $\vec u$ | the unit direction of the null momentum, $-\vec u_p$; the only spatial axis used, named so that every statement rotates |
 | $\vec u_p=\vec k_\Phi/\lvert\vec k_\Phi\rvert$ | the direction of the momentum |
 | $\gamma=E/(mc^{2})$ | the time-dilation factor; finite at $m>0$, absent at the cone |
-| $j_\mu$ | the current; $\tfrac{c}{2}\lvert\varkappa\rvert^{2}(1,\vec u)$ at the corner |
+| $j_{\imath}$ | the current; $\tfrac{c}{2}\lvert\varkappa\rvert^{2}(1,\vec u)$ at the corner |
 | $\rho_{\mathrm{num}}=\lvert N\rvert$ | the proper density, the invariant length over $c$ |
 | $j_0=c\langle\tilde\Xi\rangle_{*}$ | the current's time component |
 

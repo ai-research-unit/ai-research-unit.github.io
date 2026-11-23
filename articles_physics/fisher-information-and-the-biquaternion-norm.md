@@ -18,7 +18,7 @@ The article proceeds as follows. First the biquaternion norm is set down as a qu
 
 The treatment is **classical**. The Fisher information used here is the classical one of a family of probability distributions, and the distributions are the outcomes of a fixed classical measurement on the state. The quantum Fisher information appears only at the end, as the upper bound over all measurements; it is a standard result, it is cited as such, and its biquaternion development belongs to the sibling quantum category rather than here.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary is $i$ and is central; the informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$ and the material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$; the reduction is $2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$, with $2\,\mathrm{Sc}(e_t) = 2$; and a state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ with $|\vec s_{\Psi}|\le 1$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_{\imath}^2 = -e_t$; the scalar imaginary is $i$ and is central; the informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$ and the material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$; the reduction is $2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$, with $2\,\mathrm{Sc}(e_t) = 2$; and a state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ with $|\vec s_{\Psi}|\le 1$.
 
 ## The Biquaternion Norm on States
 
@@ -30,7 +30,7 @@ $$
 \tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\left(e_t + i\,\vec s_{\Psi}\right), \qquad \vec s_{\Psi} \in \mathbb{R}^3, \quad |\vec s_{\Psi}| \le 1 ,
 $$
 
-with $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$ and purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+|\vec s_{\Psi}|^2)$. Its biquaternion norm is the quadratic form $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ evaluated on it,
+with $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$ and purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+|\vec s_{\Psi}|^2)$. Its biquaternion norm is the quadratic form $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ evaluated on it,
 
 $$
 \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec s_{\Psi}|^2\right)e_t .
@@ -308,11 +308,11 @@ The classical metric is the radial shadow of the full quantum Fisher information
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t+i\vec s_{\Psi})$ | State, Bloch vector $\vec s_{\Psi}$, $|\vec s_{\Psi}|\le1$ |
 | $2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$ | Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$ |
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec s_{\Psi}|^2)e_t$ | Biquaternion norm of a state |
 | $\tfrac{1}{4}(1-|\vec s_{\Psi}|^2)$ | Biquaternion-norm defect |
 | $\langle\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\rangle_{\natural} = -\tfrac{1}{4}|\vec s_{\Psi}-\vec s|^2 e_t$ | Biquaternion norm of a difference (metric) |

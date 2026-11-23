@@ -63,10 +63,10 @@ The model's own candidates fail one by one.
 The neutrino row can be quantified. The cosmological bound on the sum of neutrino masses is $\Sigma m_{\nu_{\mathrm{neu}}}<0.12$ eV, and the relic density is
 
 $$
-\Omega_\nu h^2=\frac{\Sigma m_{\nu_{\mathrm{neu}}}}{93.14\ \mathrm{eV}} ,
+\Omega_{\jmath} h^2=\frac{\Sigma m_{\nu_{\mathrm{neu}}}}{93.14\ \mathrm{eV}} ,
 $$
 
-so at the bound $\Omega_\nu h^2=0.00129$, which is $1.1\%$ of $\Omega_{\mathrm{DM}}h^2$. So [the neutrino article](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) settles the question in the negative with a number: neutrinos are a $1\%$ correction to the dark component and cannot be it. This is also why "hot dark matter" was abandoned in the 1980s — the same calculation, with the same conclusion, before the oscillations were measured.
+so at the bound $\Omega_{\jmath} h^2=0.00129$, which is $1.1\%$ of $\Omega_{\mathrm{DM}}h^2$. So [the neutrino article](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) settles the question in the negative with a number: neutrinos are a $1\%$ correction to the dark component and cannot be it. This is also why "hot dark matter" was abandoned in the 1980s — the same calculation, with the same conclusion, before the oscillations were measured.
 
 The real obstacle is a symmetry problem. Even a new neutral particle is not automatically stable. Stability requires a conserved quantum number, and the model's only exact global symmetries are $B-L$ (non-perturbatively conserved) and the accidental ones. So a dark matter candidate requires either a new symmetry or an accidental one, and an accidental symmetry is a statement about which operators are allowed by the gauge quantum numbers — which is a statement about a content the model does not have.
 
@@ -188,9 +188,9 @@ The lesson is the one [the parameter-count article](the-parameter-count-as-the-m
 The identity is exact and non-perturbative.
 
 $$
-\sum_\mu\varepsilon_\mu\partial_\mu j_{B,\mu}=\sum_\mu\varepsilon_\mu\partial_\mu j_{L,\mu}=\frac{N_g g^2}{32\pi^2}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{a,\mu\nu}\tilde F_{a,\mu\nu} ,
+\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} j_{B,\imath}=\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} j_{L,\imath}=\frac{N_g g^2}{32\pi^2}\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{a,\imath\jmath}\tilde F_{a,\imath\jmath} ,
 \qquad
-\sum_\mu\varepsilon_\mu\partial_\mu\left(j_{B,\mu}-j_{L,\mu}\right)=0 .
+\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}\left(j_{B,\imath}-j_{L,\imath}\right)=0 .
 $$
 
 The identity has three readings.
@@ -322,7 +322,7 @@ GUT baryogenesis needs a leptoquark, which the ceiling forbids. Affleck–Dine n
 
 The framework supplies four items.
 
-- The anomaly identity. The reason $B$ and $L$ are not conserved — [the anomalies](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) and [Fujikawa](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) articles derive the non-invariance of the measure, which is the whole content of $\sum_\mu\varepsilon_\mu\partial_\mu j_{B,\mu}\propto F\tilde F$.
+- The anomaly identity. The reason $B$ and $L$ are not conserved — [the anomalies](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) and [Fujikawa](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) articles derive the non-invariance of the measure, which is the whole content of $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} j_{B,\imath}\propto F\tilde F$.
 - The quantisation. [The $\theta$-vacuum article](the-theta-vacuum-in-biquaternionic-form.html) supplies the integer winding number from the biquaternion index, which is what makes $\delta B=3$ discrete.
 - The instanton gas. [The semiclassical article](the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html) supplies the Euclidean sum over sectors, which gives the $\theta$ dependence of the vacuum energy.
 - The Majorana condition, which is the only $B-L$ violation available here, and therefore the only route to leptogenesis.
@@ -339,13 +339,13 @@ The table gives each number the article uses and says whether it was imported or
 | Item | Status |
 |---|---|
 | $\Omega_{\mathrm{DM}}h^2=0.1200$, $\Omega_b h^2=0.02237$, ratio $5.36$ | Imported; ratio computed here |
-| $\Omega_\nu h^2<0.00129$, $1.1\%$ of the dark density | Computed here from $\Sigma m_{\nu_{\mathrm{neu}}}<0.12$ eV |
+| $\Omega_{\jmath} h^2<0.00129$, $1.1\%$ of the dark density | Computed here from $\Sigma m_{\nu_{\mathrm{neu}}}<0.12$ eV |
 | $N_{\nu_{\mathrm{neu}}}=2.9963\pm0.0074$ | Imported |
 | $\sigma_{\mathrm{SI}}<2.6\times10^{-47}$ cm$^2$, $1.5\times10^{14}$ below weak | Imported limit; ratio computed here |
 | $\eta=6.1\times10^{-10}$ | Imported |
 | $J=3.13\times10^{-5}$ | Computed here from $\lambda$, $A$, $\bar\rho$, $\bar\eta$, $\delta$ |
 | $\eta\sim10^{-20}$ from $J$, eleven orders short | Imported estimate; the gap computed here |
-| $\sum_\mu\varepsilon_\mu\partial_\mu j_{B,\mu}=N_g g^2F\tilde F/32\pi^2$ | Imported; derived in the corpus's anomaly articles |
+| $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} j_{B,\imath}=N_g g^2F\tilde F/32\pi^2$ | Imported; derived in the corpus's anomaly articles |
 | $\delta B=\delta L=3$, $\delta(B-L)=0$ | Imported; the integer from the $\theta$-vacuum article |
 | $E_{\mathrm{sph}}=9.0$ TeV, $B=1.90$ | Imported energy; $B$ recomputed here |
 | $\exp(-E_{\mathrm{sph}}/T)=10^{-39}$ at $100$ GeV | Computed here |
@@ -376,7 +376,7 @@ The one route it can build is leptogenesis, with $B=28L/79$, and that route exis
 | $\eta$ | Baryon-to-photon ratio, $6.1\times10^{-10}$ |
 | $N_{\nu_{\mathrm{neu}}}$ | Number of light neutrino species, $2.9963\pm0.0074$ |
 | $J$ | Jarlskog invariant, $3.13\times10^{-5}$ |
-| $j_{B,\mu}$, $j_{L,\mu}$ | Baryon and lepton number currents |
+| $j_{B,\imath}$, $j_{L,\imath}$ | Baryon and lepton number currents |
 | $F\tilde F$ | Topological charge density |
 | $E_{\mathrm{sph}}$ | Sphaleron energy, $9.0$ TeV |
 | $B(\lambda/g^2)$ | Sphaleron energy function, $1.90$ |

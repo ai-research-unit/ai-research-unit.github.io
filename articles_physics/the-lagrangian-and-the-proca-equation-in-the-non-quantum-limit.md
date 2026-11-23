@@ -6,10 +6,10 @@ The finding, in one sentence. The variational route confirms the local-form comp
 The action and the two terms that decide the article.
 
 $$
-S=\int\mathrm{d}^{4}\varrho\;\Bigl\{\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partial_\mu \varrho\bigr)^{2}-\tfrac12k_m^{2}\varrho^{2}+\text{(the frame's terms)}\Bigr\},
+S=\int\mathrm{d}^{4}\varrho\;\Bigl\{\tfrac12\sum_{\imath}\varepsilon_{\imath}\bigl(\partial_{\imath} \varrho\bigr)^{2}-\tfrac12k_m^{2}\varrho^{2}+\text{(the frame's terms)}\Bigr\},
 $$
 
-in the timelike branch's word $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, with $\varepsilon_\mu$ the metric signs of the material sector. The first and second terms are the amplitude's kinetic term and the mass term, and the frame's terms carry the boost's connection.
+in the timelike branch's word $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, with $\varepsilon_{\imath}$ the metric signs of the material sector. The first and second terms are the amplitude's kinetic term and the mass term, and the frame's terms carry the boost's connection.
 
 Why the two terms are the same size, in one line. For a real plane wave $\varrho=\lvert\vec A_0\rvert\lvert\cos(\omega t')\rvert$ with $\omega^{2}-\lvert\vec k\rvert^{2}=k_m^{2}$, the kinetic term is $\omega^{2}\varrho^{2}\tan^{2}$ and the mass term is $k_m^{2}\varrho^{2}$, so their ratio is $\omega^{2}/k_m^{2}$ up to the tangent. The ratio is of order one, so neither term dominates and no truncation of the pair is controlled.
 
@@ -23,13 +23,13 @@ What is not new. The Proca action's decomposition into an amplitude and a frame,
 
 The restriction. The word is defined for $\varrho>0$ on one branch; the boundary is the lightlike set where the norm vanishes.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the polar parent and its variational companion: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ real; $\Gamma_\mu$ the frame's connection; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=\frac{2\pi mc}{h}$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the polar parent and its variational companion: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ real; $\Gamma_{\imath}$ the frame's connection; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=\frac{2\pi mc}{h}$.
 ## The Action in the Non-Quantum Limit
 The blocks.
 
 | block | derivative count | order in $k_m$ |
 |---|---|---|
-| $\tfrac12\sum_\mu\varepsilon_\mu(\partial_\mu \varrho)^{2}$ | two, on the amplitude | $k_m^{2}$ |
+| $\tfrac12\sum_{\imath}\varepsilon_{\imath}(\partial_{\imath} \varrho)^{2}$ | two, on the amplitude | $k_m^{2}$ |
 | $-\tfrac12k_m^{2}\varrho^{2}$ | none | $k_m^{2}$ |
 | the frame's terms | two, on the boost's connection | $k_m^{2}$ |
 
@@ -104,7 +104,7 @@ The claim. In this chart no non-quantum limit exists as an approximation, and th
 Why the coefficients settle it. The amplitude's sector of the action is read off the display of *The Action in the Word*:
 
 $$
-\mathcal{L}_{\varrho}=\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partial_\mu\varrho\bigr)^{2}-\tfrac12k_m^{2}\varrho^{2},
+\mathcal{L}_{\varrho}=\tfrac12\sum_{\imath}\varepsilon_{\imath}\bigl(\partial_{\imath}\varrho\bigr)^{2}-\tfrac12k_m^{2}\varrho^{2},
 $$
 
 and the two blocks are the two terms of $(\Box_\Phi-k_m^{2})\varrho$. The first carries two derivatives and the second carries the mass squared, and for a solution both are of order $k_m^{2}$, because the dispersion relation puts $\omega^{2}-\lvert\vec k\rvert^{2}$ at $k_m^{2}$. Deleting the first leaves an algebraic amplitude with the frame still dynamical; that is a different action, not a smaller one.
@@ -154,8 +154,8 @@ The comparison with the other families is the ledger: the Klein–Gordon and Dir
 | $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ | The real material four-vector |
 | $\varrho>0$ | The scale; $\varrho^{2}=\mp\langle\tilde A_\Phi\rangle_\natural$ by branch |
 | $\tilde U_{\Psi,\mathrm b}$ | The boost |
-| $\Gamma_\mu$ | The frame's connection |
-| $\varepsilon_\mu$ | The metric signs of the material sector |
+| $\Gamma_{\imath}$ | The frame's connection |
+| $\varepsilon_{\imath}$ | The metric signs of the material sector |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
 | $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 | $\omega$ | The real plane wave's frequency, $\omega^{2}-\lvert\vec k\rvert^{2}=k_m^{2}$ |

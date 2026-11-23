@@ -19,7 +19,7 @@ Why this matters for the corpus. The bound $M_X\gtrsim2.3\times10^{2}$ TeV, repe
 1.1 The operator. Integrating out the six leptoquarks gives one four-fermion operator per chirality. The left-handed fields sit in $(\mathbf4,\mathbf2,\mathbf1)$ and the right-handed in $(\bar{\mathbf4},\mathbf1,\mathbf2)$, and the frame gauges both with the same $g_4$, so the two chiralities come with equal coefficients:
 
 $$
-\frac{g_4^{2}}{2M_X^{2}}\Bigl[(\bar q\,\gamma^{\mu}P_L\ell)(\bar q'\,\gamma_{\mu}P_L\ell')+(L\to R)\Bigr].
+\frac{g_4^{2}}{2M_X^{2}}\Bigl[(\bar q\,\gamma^{\imath}P_L\ell)(\bar q'\,\gamma_{\imath}P_L\ell')+(L\to R)\Bigr].
 $$
 
 There is no $LR$ term. The operator is $V\pm A$ and nothing else, and that is a statement about the two multiplets, not about the generation index.
@@ -105,10 +105,10 @@ A lepton can then change generation, at a size set by the $\mathbf{15}$'s coupli
 4.2 If $U$ is not. The tree channel is $s\bar d\to X\to\mu\bar e$, and its rate is
 
 $$
-\Gamma(K_L\to\mu e)=\frac{g_4^{4}\,\lvert U_{de}U_{s\mu}\rvert^{2}f_K^{2}m_\mu^{2}m_K}{128\pi\,M_X^{4}} .
+\Gamma(K_L\to\mu e)=\frac{g_4^{4}\,\lvert U_{de}U_{s\imath}\rvert^{2}f_K^{2}m_\mu^{2}m_K}{128\pi\,M_X^{4}} .
 $$
 
-At $M_X=250$ TeV with $|U_{de}U_{s\mu}|=1$ this is $3.5\times10^{-12}$, against the measured limit $4.7\times10^{-12}$: the corner of parameter space where the matrix is maximal sits at the limit, which is why the number $2.3\times10^{2}$ TeV appears in the corpus. Any smaller entry moves the curve down and moves the bound down with it, and an entry of $10^{-2}$ removes the bound entirely.
+At $M_X=250$ TeV with $|U_{de}U_{s\imath}|=1$ this is $3.5\times10^{-12}$, against the measured limit $4.7\times10^{-12}$: the corner of parameter space where the matrix is maximal sits at the limit, which is why the number $2.3\times10^{2}$ TeV appears in the corpus. Any smaller entry moves the curve down and moves the bound down with it, and an entry of $10^{-2}$ removes the bound entirely.
 
 4.3 The scale is not fixed either way. Both branches leave $M_X$ a free parameter with only the $W_R$ floor. The difference is whether a kaon measurement also constrains it.
 
@@ -117,9 +117,9 @@ At $M_X=250$ TeV with $|U_{de}U_{s\mu}|=1$ this is $3.5\times10^{-12}$, against 
 5.1 The selection rule. For a pseudoscalar meson only the axial part of the operator acts, because the vector matrix element vanishes by parity:
 
 $$
-\langle0\rvert\bar d\gamma^{\mu}s\lvert K^{0}\rangle=0,
+\langle0\rvert\bar d\gamma^{\imath}s\lvert K^{0}\rangle=0,
 \qquad
-\langle0\rvert\bar d\gamma^{\mu}\gamma^{5}s\lvert K^{0}\rangle=if_Kp^{\mu}.
+\langle0\rvert\bar d\gamma^{\imath}\gamma^{5}s\lvert K^{0}\rangle=if_Kp^{\imath}.
 $$
 
 The axial matrix element is odd under $K^{0}\leftrightarrow\bar K^{0}$, so with $K_S$ the symmetric and $K_L$ the odd combination, $K_S$ cancels and $K_L$ does not. In the second branch the frame predicts $K_L\to\mu e$ and forbids $K_S\to\mu e$ at leading order, with a residue at the $|\epsilon_K|^{2}$ level near $10^{-20}$.
@@ -131,7 +131,7 @@ That argument is about the operator's chirality, and it holds whether or not the
 5.3 The loop channels. $\mu\to e\gamma$, $\mu\to eee$ and $\mu$–$e$ conversion need two leptoquark vertices, so they need a loop, and the dipole carries a chirality flip:
 
 $$
-C_{\mathrm{dip}}\sim\frac{e\,g_4^{2}}{16\pi^{2}}\cdot\frac{m_\mu}{M_X^{2}}\sum_q U_{qe}U_{q\mu}^{*}f\!\left(\frac{m_q^{2}}{M_X^{2}}\right).
+C_{\mathrm{dip}}\sim\frac{e\,g_4^{2}}{16\pi^{2}}\cdot\frac{m_\mu}{M_X^{2}}\sum_q U_{qe}U_{q\imath}^{*}f\!\left(\frac{m_q^{2}}{M_X^{2}}\right).
 $$
 
 In the first branch the sum vanishes identically, because $U$ is the identity and the loop function is the same for every internal quark. In the second it is a GIM sum, suppressed by the internal mass splitting as well as by the mixing. Either way the muon channels are far below their limits at any scale the kaon channel could reach, and that ranking is the article's second firm statement.
@@ -140,7 +140,7 @@ In the first branch the sum vanishes identically, because $U$ is the identity an
 
 ## How the Question Gets Settled
 
-6.1 A $K_L\to\mu e$ signal. It settles it at once: the vertex carries generation structure, $|U_{de}U_{s\mu}|$ is measured, and the rate fixes $M_X$ for that entry pair. This is the sharpest measurement in the sector, and the experiments are running.
+6.1 A $K_L\to\mu e$ signal. It settles it at once: the vertex carries generation structure, $|U_{de}U_{s\imath}|$ is measured, and the rate fixes $M_X$ for that entry pair. This is the sharpest measurement in the sector, and the experiments are running.
 
 6.2 A null result settles nothing. This is the correction the corpus most needs. If $U$ is the identity, the rate is zero at every mass, so a null result is exactly what the first branch predicts. A bound on $M_X$ follows only after $U$ is assumed maximal, and an assumption is not a measurement.
 
@@ -160,13 +160,13 @@ In the first branch the sum vanishes identically, because $U$ is the identity an
 | nothing turns the lepton | $15=8+1+6$, no generator returns another direction on the line | the only action on $\mathbb C e_t$ is a phase |
 | the phase's eigenvalues | $D=\operatorname{diag}(-3,1,1,1)$ | trace $0$; $B-L=D/3$ gives $(-1,\tfrac13,\tfrac13,\tfrac13)$ |
 | the vector matrix element | parity, pseudoscalar to vacuum | $0$ |
-| the axial matrix element | $\langle0\rvert\bar d\gamma^{\mu}\gamma^{5}s\lvert K^{0}\rangle$ | $if_Kp^{\mu}$ |
+| the axial matrix element | $\langle0\rvert\bar d\gamma^{\imath}\gamma^{5}s\lvert K^{0}\rangle$ | $if_Kp^{\imath}$ |
 | the eigenstate selected | odd against even under $K^{0}\leftrightarrow\bar K^{0}$ | $K_L$, with $K_S$ at $|\epsilon_K|^{2}$ |
 | the minimal Yukawa | one $Y$, contraction $\delta^{a}{}_{b}$ | $M_d=M_e$ entry by entry, so $U=\mathbb 1$ |
 | the mass ratios | $m_d/m_e$, $m_s/m_\mu$, $m_b/m_\tau$ against $1$ | $9.1$, $0.88$, $2.4$ — minimal sector falsified |
 | the $\mathbf{15}$ split | traceless on the quartet | singlet contribution $-\tfrac13$ of the triplet, so $U\neq\mathbb 1$ |
-| the two-body rate | $g_4^{4}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$ at $250$ TeV | $3.5\times10^{-12}$ for $|U_{de}U_{s\mu}|=1$ |
-| the spin sum | $p\!\!/=p\!\!/_e+p\!\!/_\mu$, Dirac equations | $m_K^{2}(m_e^{2}+m_\mu^{2})$, helicity suppressed |
+| the two-body rate | $g_4^{4}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$ at $250$ TeV | $3.5\times10^{-12}$ for $|U_{de}U_{s\imath}|=1$ |
+| the spin sum | $p\!\!/=p\!\!/_e+p\!\!/_{\imath}$, Dirac equations | $m_K^{2}(m_e^{2}+m_\mu^{2})$, helicity suppressed |
 | the normalisation | the same form applied to $K\to\mu\nu_{\mathrm{neu}}$ | $0.63$ against the measured $0.635$ |
 
 ## Distinctions That Are Easy to Lose

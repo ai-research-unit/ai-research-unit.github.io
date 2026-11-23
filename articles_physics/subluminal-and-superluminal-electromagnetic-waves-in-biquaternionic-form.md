@@ -19,11 +19,11 @@ The source's conventions are close to the corpus's, and the places where they pa
 **The calculus.** Everything below is written with the biquaternionic gradient of *Operator and Calculus Conventions*,
 
 $$
-\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu}
+\tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial R_{\imath}}
 =e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 $$
 
-with its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ and the d'Alembertian $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, which on the material sector reads $\Delta_\Phi-\partial^2/\partial{r'_{t}}^2$. The gradient is an element with derivative coefficients. It acts by left multiplication, on one field, and it uses no matrix and no second side.
+with its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\varepsilon_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$ and the d'Alembertian $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, which on the material sector reads $\Delta_\Phi-\partial^2/\partial{r'_{t}}^2$. The gradient is an element with derivative coefficients. It acts by left multiplication, on one field, and it uses no matrix and no second side.
 
 The free field equation is the corpus's Maxwell equation of *Maxwell's Equations in the Biquaternionic Formulation*,
 
@@ -210,7 +210,7 @@ $$
 +\frac{1}{2\rho}\exp(\omega\theta_{\mathrm{dua}})J\,\tilde{Ξ} ,
 $$
 
-with $\Lambda=\Omega\cdot S$ and $\mathcal{Q}_{\mathrm{sig}}=\Omega\cdot(\omega S)$ built from the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ and the spin bivector $S=-\tfrac12\tilde{Ξ}\vec e_z\tilde{Ξ}^{-1}=-\tfrac12R\vec e_zR^{-1}$, in which the phase cancels. The bivectors $\Omega_\mu$ are those of the rotor's derivative, $\partial \tilde{Ξ}/\partial x_\mu=\tfrac12(\partial/\partial x_\mu\ln\rho+\omega\,\partial \theta_{\mathrm{dua}}/\partial x_\mu+\Omega_\mu)\tilde{Ξ}$ with $\Omega_\mu=2(\partial R/\partial x_\mu)R^{-1}$, so $\Omega$ is the directional derivative of the rotor along the four-velocity. The source prints the two scalar terms separately; they are one, because both multiply the same product on the right, and they add into the single coefficient $\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}$, a complex number in $\omega$.
+with $\Lambda=\Omega\cdot S$ and $\mathcal{Q}_{\mathrm{sig}}=\Omega\cdot(\omega S)$ built from the bivector $\Omega=\sum_{\imath} g_{\imath\imath}v_{\imath}\Omega_{\imath}$ and the spin bivector $S=-\tfrac12\tilde{Ξ}\vec e_z\tilde{Ξ}^{-1}=-\tfrac12R\vec e_zR^{-1}$, in which the phase cancels. The bivectors $\Omega_{\imath}$ are those of the rotor's derivative, $\partial \tilde{Ξ}/\partial x_{\imath}=\tfrac12(\partial/\partial x_{\imath}\ln\rho+\omega\,\partial \theta_{\mathrm{dua}}/\partial x_{\imath}+\Omega_{\imath})\tilde{Ξ}$ with $\Omega_{\imath}=2(\partial R/\partial x_{\imath})R^{-1}$, so $\Omega$ is the directional derivative of the rotor along the four-velocity. The source prints the two scalar terms separately; they are one, because both multiply the same product on the right, and they add into the single coefficient $\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}$, a complex number in $\omega$.
 
 The source also carries the pair $(\lambda,\kappa)$, with $\lambda=\Lambda\cos\theta_{\mathrm{dua}}+\mathcal{Q}_{\mathrm{sig}}\sin\theta_{\mathrm{dua}}$ and $\kappa=\mathcal{Q}_{\mathrm{sig}}\cos\theta_{\mathrm{dua}}-\Lambda\sin\theta_{\mathrm{dua}}$, and writes the same equation with it and no phase in front: the phase-free display is the same equation, because
 $$
@@ -294,9 +294,9 @@ $$
 T=m\,\bigl\langle\tilde{Ξ}\,\tilde{Ξ}^{\natural}\exp(-\omega\theta_{\mathrm{dua}})\bigr\rangle_0=m\rho ,
 $$
 
-positive for every solution, so every solution has positive energy; the linear equation gives $T_{\mathrm{Dirac}}=m\rho\cos\theta_{\mathrm{dua}}$, and the two differ by the factor $\cos\theta_{\mathrm{dua}}$, coinciding only at the two endpoints. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form is a kind of **square root** of the Maxwell energy–momentum one-form $S_\mu=\tfrac12\,i\,Fe_\mu F\vec e_{\mathrm{spt}(\mu)}$. The overall sign is not fixed by the print: a 2-form reverses to minus itself, $\tilde F=-F$, so the same object written with the reverse in the middle differs only in that sign.
+positive for every solution, so every solution has positive energy; the linear equation gives $T_{\mathrm{Dirac}}=m\rho\cos\theta_{\mathrm{dua}}$, and the two differ by the factor $\cos\theta_{\mathrm{dua}}$, coinciding only at the two endpoints. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form is a kind of **square root** of the Maxwell energy–momentum one-form $S_{\imath}=\tfrac12\,i\,Fe_{\imath} F\vec e_{\mathrm{spt}(\imath)}$. The overall sign is not fixed by the print: a 2-form reverses to minus itself, $\tilde F=-F$, so the same object written with the reverse in the middle differs only in that sign.
 
-Here $e_\mu$ and $\vec e_{\mathrm{spt}(\mu)}$ are the unit of the coordinate $x_\mu$ and its partner, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$, and the two act on the middle factor of $F$.
+Here $e_{\imath}$ and $\vec e_{\mathrm{spt}(\imath)}$ are the unit of the coordinate $x_{\imath}$ and its partner, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$, and the two act on the middle factor of $F$.
 
 ### The projection operators
 
@@ -482,12 +482,12 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $\omega=-\vec e_z$ | Volume element, the pseudoscalar; $\omega^2=-e_t$; the source's "$i$", its duality generator, not the corpus's central $i$ |
 | $-\vec e_z$ | Fixed spin-plane bivector; as the element $\omega$ it multiplies the spinor on the right |
 | $\tilde\nabla_\Phi$ | The biquaternionic gradient, $e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$; an element with derivative coefficients, acting on the left |
-| $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | The quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$, and the d'Alembertian $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_{t}}^2$ |
+| $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | The quaternion conjugate, $\sum_{\imath}\varepsilon_{\imath} e_{\imath}\partial/\partial R_{\imath}$, and the d'Alembertian $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_{t}}^2$ |
 | $\tilde F$, $\tilde F_0$, $\tilde F_e$, $\tilde F_+$ | Field biquaternion; the stationary subluminal solution; the electron field; the field of the $+$ branch |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
 | $f$, $\tilde K_{\Phi}$, $x$ | Constant 2-form; propagation vector ($N=0$); position |
 | $\vec E_0,\vec B_0,\vec W$ | Fields of the stationary solution and their common vector, $\mathrm{curl}\,\vec W=+\Omega\vec W$ in the corpus's gradient |
-| $\Omega$ | Intrinsic frequency of the subluminal solution ($\Omega$ in the Helmholtz equation $\vec\nabla_\Phi^2\xi+\Omega^2\xi=0$); the letter is reused, as in the source, for the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ of the spinorial section |
+| $\Omega$ | Intrinsic frequency of the subluminal solution ($\Omega$ in the Helmholtz equation $\vec\nabla_\Phi^2\xi+\Omega^2\xi=0$); the letter is reused, as in the source, for the bivector $\Omega=\sum_{\imath} g_{\imath\imath}v_{\imath}\Omega_{\imath}$ of the spinorial section |
 | $\varpi,\ q,\ \zeta_<$ | Frequency and axial wavenumber of the moving subluminal solution, with $\varpi^2-q^2=\Omega^2$ and group velocity $v=d\varpi/dq$; $\zeta_<$ is its oblate radial coordinate |
 | $Ξ_{X_n},\ Ξ_{XBB_n}$ | Scalar X-wave seed and its closed form, with $\theta_{\mathrm{axc}}$ the axicon angle and $a_0$ the constant that regularises the seed |
 | $\tilde{Ξ}$, $\tilde{Ξ}^{\natural}$ | The spinor, an element of $\mathbb{B}$, and its reverse, the corpus's $\natural$ conjugation; the source writes the reverse $\tilde{Ξ}$ |
@@ -500,7 +500,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $q_{\mathrm{m}}$, $\alpha$ | Magnetic charge, $q_{\mathrm{m}}=en/2\alpha$ from the Dirac quantisation condition $\frac{2\pi eq_{\mathrm{m}}}{h\,c}=n/2$; $\alpha=\frac{2\pi e^{2}}{h\,c}$ the fine-structure constant |
 | $j$, $g$, $J=J_{\mathrm{e}}-\omega J_{\mathrm{m}}$ | Vector current, axial current, total current with electric and magnetic parts; the contractions $\langle\tilde\nabla_\Phi,\tilde j\rangle$ and $\langle\tilde\nabla_\Phi,\tilde g\rangle$ are the series' contractions of the gradient with the two currents |
 | $\tilde{Ξ}_{\mathrm{dua},\theta}$ | The family of the source, $\tfrac12(\tilde{Ξ}+e^{\omega\theta_{\mathrm{dua}}}i\vec e_x\,\tilde{Ξ}\,i\vec e_x)$, which is the projection at $\theta_{\mathrm{dua}}$ in a duality-rotated frame; $\tilde{Ξ}_{\mathrm{dua},\theta}+\tilde{Ξ}_{\theta_{\mathrm{dua}}+\pi}=\tilde{Ξ}$ replaces the printed $\Lambda_{\mathrm{dua},\theta}=\Lambda_{\theta_{\mathrm{dua}}+\pi}$ |
-| $S=-\tfrac12\tilde{Ξ}\vec e_z\tilde{Ξ}^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12\,i\,Fe_\mu F\vec e_{\mathrm{spt}(\mu)}$ the Maxwell energy–momentum one-form, $e_\mu$ the unit of the coordinate $x_\mu$ |
+| $S=-\tfrac12\tilde{Ξ}\vec e_z\tilde{Ξ}^{-1}$ | Bivector of the canonical analysis; $S_{\imath}=\tfrac12\,i\,Fe_{\imath} F\vec e_{\mathrm{spt}(\imath)}$ the Maxwell energy–momentum one-form, $e_{\imath}$ the unit of the coordinate $x_{\imath}$ |
 | $\Lambda,\ \mathcal{Q}_{\mathrm{sig}}$ | The two scalars of the spinorial Maxwell equation, $\Lambda=\Omega\cdot S$ and $\mathcal{Q}_{\mathrm{sig}}=\Omega\cdot(\omega S)$, projections of $\Omega$ on the spin bivector; they add into the single coefficient $\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}=\lambda e^{\omega\theta_{\mathrm{dua}}}$ |
 | $\lambda,\ \kappa$ | The source's rotated pair, $\lambda=\Lambda\cos\theta_{\mathrm{dua}}+\mathcal{Q}_{\mathrm{sig}}\sin\theta_{\mathrm{dua}}$ and $\kappa=\mathcal{Q}_{\mathrm{sig}}\cos\theta_{\mathrm{dua}}-\Lambda\sin\theta_{\mathrm{dua}}$, with $\lambda+\omega\kappa=(\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}})e^{-\omega\theta_{\mathrm{dua}}}$; the constraints force $\kappa=0$ and $\lambda=\Lambda/\cos\theta_{\mathrm{dua}}$ real, and $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle=0$ then makes $\lambda$ a constant mass |
 

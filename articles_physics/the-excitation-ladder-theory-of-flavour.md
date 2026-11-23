@@ -147,7 +147,7 @@ $$
 
 so the upper rungs are rare when the bath is cold and common when it is hot. For the charged leptons:
 
-| $T$ | $n_\mu/n_e$ | $n_\tau/n_e$ |
+| $T$ | $n_{\imath}/n_e$ | $n_\tau/n_e$ |
 |---|---|---|
 | 2 MeV | $0$ | $0$ |
 | 50 MeV | $0.122$ | $3.7\times10^{-16}$ |

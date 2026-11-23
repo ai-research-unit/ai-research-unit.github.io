@@ -15,10 +15,10 @@ The article also fixes which curl is meant. A flow can be read on the three-velo
 **The vorticity is a two-form in the relativistic reading and a three-vector in the Galilean one.** The relativistic object is
 
 $$
-\omega_{\mu\nu}=\partial_\mu u_{\nu}-\partial_\nu u_{\mu},
+\omega_{\imath\jmath}=\partial_{\imath} u_{\jmath}-\partial_{\jmath} u_{\imath},
 $$
 
-the exterior derivative of the four-velocity one-form, with $u_{\mu}$ the components of the normalised four-velocity. The Galilean object is
+the exterior derivative of the four-velocity one-form, with $u_{\imath}$ the components of the normalised four-velocity. The Galilean object is
 
 $$
 \vec\omega_{\mathrm{vrt}}=\vec\nabla_\Phi\times\vec v,
@@ -26,7 +26,7 @@ $$
 
 the curl of the three-velocity of [The Euler and Continuity Equations in Biquaternionic Form](the-euler-and-continuity-equations-in-biquaternionic-form.html).
 
-The two-form is the closure condition and the three-vector is its three-dimensional shadow. A one-form is closed exactly when its exterior derivative vanishes, and $\omega_{\mu\nu}$ is that derivative; so $\omega_{\mu\nu}=0$ is the statement that $u_{\mu}$ is locally a gradient, which is the Poincaré lemma in four dimensions. In three dimensions the same lemma reads $\vec v=\vec\nabla_\Phi S/m$ exactly when $\vec\omega_{\mathrm{vrt}}=0$ on a simply connected domain.
+The two-form is the closure condition and the three-vector is its three-dimensional shadow. A one-form is closed exactly when its exterior derivative vanishes, and $\omega_{\imath\jmath}$ is that derivative; so $\omega_{\imath\jmath}=0$ is the statement that $u_{\imath}$ is locally a gradient, which is the Poincaré lemma in four dimensions. In three dimensions the same lemma reads $\vec v=\vec\nabla_\Phi S/m$ exactly when $\vec\omega_{\mathrm{vrt}}=0$ on a simply connected domain.
 
 The 2-form is built on the four-velocity, which has four components, and the three-vector on the three-velocity. That is the whole of the difference between them, and the next section computes it.
 
@@ -40,7 +40,7 @@ $$
 
 which is the product rule for the curl applied to the product of a scalar and a vector. It is checked by expanding both sides in components, and it is exact for every differentiable pair $(\gamma,\vec v)$.
 
-**So a flow that is irrotational in one reading need not be irrotational in the other.** The two curls agree only where $\vec\nabla_\Phi\gamma$ is parallel to $\vec v$, and a flow accelerated from rest has $\vec\nabla_\Phi\gamma$ transverse to $\vec v$ in general. The curl of $\vec v$ need not vanish even though $\omega_{\mu\nu}=0$, because $\gamma\vec v$ and not $\vec v$ is the spatial part of a four-vector.
+**So a flow that is irrotational in one reading need not be irrotational in the other.** The two curls agree only where $\vec\nabla_\Phi\gamma$ is parallel to $\vec v$, and a flow accelerated from rest has $\vec\nabla_\Phi\gamma$ transverse to $\vec v$ in general. The curl of $\vec v$ need not vanish even though $\omega_{\imath\jmath}=0$, because $\gamma\vec v$ and not $\vec v$ is the spatial part of a four-vector.
 
 The classical fluid's vorticity is the Galilean one, and that is a choice with a cost. An ordinary fluid's Euler equation is written on $\vec v$, not on $\gamma\vec v$, so the fluid's vorticity is $\vec\nabla_\Phi\times\vec v$ and the obstruction to a potential is $\vec\nabla_\Phi\times\vec v\ne0$. The cost is that the statement is frame-dependent: a change of frame changes $\gamma$ and therefore changes the Galilean curl. A covariant statement needs the 2-form, and a covariant fluid theory uses it.
 
@@ -120,7 +120,7 @@ Not claimed. It is not claimed that irrotational flows are the only flows a flui
 
 A flow is irrotational when its curl vanishes, and on a simply connected domain that is exactly the condition for the velocity to be the gradient of a potential, $\vec v=\vec\nabla_\Phi\Phi$.
 
-The relativistic vorticity is the 2-form $\omega_{\mu\nu}$ of the normalised four-velocity; the Galilean vorticity is the curl of $\vec v$. They differ by $\vec\nabla_\Phi\gamma\times\vec v$, so a flow can be irrotational in one reading and not in the other. The fluid of this section uses the Galilean one.
+The relativistic vorticity is the 2-form $\omega_{\imath\jmath}$ of the normalised four-velocity; the Galilean vorticity is the curl of $\vec v$. They differ by $\vec\nabla_\Phi\gamma\times\vec v$, so a flow can be irrotational in one reading and not in the other. The fluid of this section uses the Galilean one.
 
 The obstruction is a count. A general velocity has three components; a gradient has one; the two that remain are the transverse part, and the Helmholtz decomposition exhibits them.
 
@@ -136,8 +136,8 @@ A rotational flow is the generic case, and its vorticity is conserved in two dim
 |---|---|
 | $\vec v$ | Three-velocity |
 | $\vec\omega_{\mathrm{vrt}}=\vec\nabla_\Phi\times\vec v$ | Galilean vorticity, the curl |
-| $\omega_{\mu\nu}=\partial_\mu u_{\nu}-\partial_\nu u_{\mu}$ | Relativistic vorticity 2-form |
-| $u_{\mu}$ | Components of the normalised four-velocity |
+| $\omega_{\imath\jmath}=\partial_{\imath} u_{\jmath}-\partial_{\jmath} u_{\imath}$ | Relativistic vorticity 2-form |
+| $u_{\imath}$ | Components of the normalised four-velocity |
 | $\gamma=1/\sqrt{1-\lvert\vec v\rvert^{2}/c^{2}}$ | Lorentz factor |
 | $\Phi$ | Velocity potential; $\vec v=\vec\nabla_\Phi\Phi$ |
 | $\vec A$ | Vector potential of the rotational part |

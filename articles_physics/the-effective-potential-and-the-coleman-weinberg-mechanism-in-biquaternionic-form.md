@@ -272,7 +272,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $V_0(\rho) = \frac{\lambda}{4}(\rho - v_0^2)^2$ | Tree-level invariant potential |
 | $\lambda, v_0$ | Quartic coupling; tree-level vacuum parameter; $v_0 = v/\sqrt2$, $\lambda = 4\beta$ against the Higgs companion's $V = \beta(\rho-v^2/2)^2$ |
 | $m_h^2 = \lambda v_0^2$, $m_\theta^2 = 0$ | Radial and angular (Goldstone) masses at tree level |
-| $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$, $\kappa =\frac{2\pi ϙ}{h}$ | Covariant derivative of the central phase |
+| $D_{\imath} = \partial/\partial R_{\imath} + i\kappa A_{\imath}$, $\kappa =\frac{2\pi ϙ}{h}$ | Covariant derivative of the central phase |
 | $ϙ$ | Gauge charge (parameter) |
 | $\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle\tilde{J}_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}_{\Phi}]$ | Effective action (Legendre transform) |
 | $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | One-loop effective action (determinant) |
@@ -286,7 +286,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$ | Coleman–Weinberg minimum |
 | $\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\langle \rho\rangle) = 2B$, $m_h^2 = 4B\langle \rho\rangle$ | Curvature and radial mass at the radiative minimum |
 | $\beta_\lambda, \beta_ϙ, \gamma_\rho$ | Beta functions and anomalous dimension of the invariant $\rho$ (companion) |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\imath\jmath}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ | Reduction convention |
 
 ## Further Reading

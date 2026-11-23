@@ -67,7 +67,7 @@ $$
 The four are real: the coefficient conjugation fixes each of them, because it fixes the invertibles and negates only $i$, and none of the four carries an $i$. Two squares and six anticommutators are all that is used below,
 
 $$
-c_0^{2}=-1,\qquad c_k^{2}=+1,\qquad \{c_\mu,c_\nu\}=0\quad(\mu\neq\nu),
+c_0^{2}=-1,\qquad c_k^{2}=+1,\qquad \{c_{\imath},c_{\jmath}\}=0\quad(\imath\neq\jmath),
 $$
 
 and they are read at once: $c_0^{2}$ is $\vec e_x^{2}=-1$, $c_k^{2}$ is $\vec e_\eta^{2}\vec e_y^{2}=(-1)(-1)=+1$, and a pair anticommutes because one quaternion unit passes the other and $\vec e_y$ passes $\vec e_y$.
@@ -75,9 +75,9 @@ and they are read at once: $c_0^{2}$ is $\vec e_x^{2}=-1$, $c_k^{2}$ is $\vec e_
 **The operator.** With $x_0=r'_t$ and $x_\eta$ the three spatial coordinates, and with $Q_t=i q'_t$, $Q_\eta=q_\eta$ the material reading of the four coordinates,
 
 $$
-D=\sum_\mu \varepsilon_\mu\, c_\mu\,\frac{\partial}{\partial x_\mu},\qquad
+D=\sum_{\imath} \varepsilon_{\imath}\, c_{\imath}\,\frac{\partial}{\partial x_{\imath}},\qquad
 \varepsilon=(1,-1,-1,-1),\qquad
-D^{2}=\Box_\Phi=\sum_\mu\frac{\partial^{2}}{\partial R_\mu^{2}}=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi .
+D^{2}=\Box_\Phi=\sum_{\imath}\frac{\partial^{2}}{\partial R_{\imath}^{2}}=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi .
 $$
 
 The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_k^{2}=+1$. The minus on the time term of $\Box_\Phi$ is the square of the $i$ in $Q_t=i q'_t$: the derivative is taken with respect to a coefficient that is imaginary, and $i^{2}=-1$ is the whole of the sign. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.
@@ -113,7 +113,7 @@ because every coefficient of $D$ is real and the central $i$ passes through the 
 **What the conjugation reverses.** The operator is real, and its symbol at fixed momentum is not. On a plane wave $\exp(-i\theta_{\mathrm{pwp}})$ the operator acts as the multiplier
 
 $$
-D_p=-i\sum_\mu\varepsilon_\mu\,p_\mu\,c_\mu ,
+D_p=-i\sum_{\imath}\varepsilon_{\imath}\,p_{\imath}\,c_{\imath} ,
 $$
 
 Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
@@ -193,8 +193,8 @@ The two combine, and the second is what makes the commuting case the mirror of t
 | Bilinear | Parity under the conjugation | Anticommuting self-conjugate field | Commuting element of the same fixed space |
 |---|---|---|---|
 | scalar pairing, built from $c_0$ | even | nonzero: the mass term is permitted | zero |
-| vector current, built from $c_\mu$ | odd | zero for every $\mu$ | nonzero |
-| axial current, built from $c_\mu$ and $\xi$ | even | nonzero | zero |
+| vector current, built from $c_{\imath}$ | odd | zero for every $\mu$ | nonzero |
+| axial current, built from $c_{\imath}$ and $\xi$ | even | nonzero | zero |
 
 The vanishing of the vector current is the statement that a self-conjugate field carries no fermion number. The two surviving bilinears are what such a field can couple to: the scalar, which is the mass, and the axial current, which is the spin density. The mass of a Majorana field is exactly the pairing of the field with its own conjugate, and the barrier that forbids it for a Weyl field does not exist here.
 
@@ -318,7 +318,7 @@ The framework transcribes both facts, and neither is a derivation.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. In basis operators they are
 
@@ -326,9 +326,9 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$. Each of these is one product of a left and a right multiplication, so its coefficient matrix $c(\gamma_\mu)$ is a pure tensor: the single products fill the seven-dimensional cone $\operatorname{rank}c(M)\le1$ inside the sixteen-dimensional basis operator algebra, a general element is a sum of at most four of them, and the least number of products needed is $\ell(M)=\operatorname{rank}c(M)$.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$. Each of these is one product of a left and a right multiplication, so its coefficient matrix $c(\gamma_{\imath})$ is a pure tensor: the single products fill the seven-dimensional cone $\operatorname{rank}c(M)\le1$ inside the sixteen-dimensional basis operator algebra, a general element is a sum of at most four of them, and the least number of products needed is $\ell(M)=\operatorname{rank}c(M)$.
 
-The four multipliers of the body are the real parts of these basis operators: $c_\mu=-i\gamma_\mu$, and the operator $D=\sum_\mu\varepsilon_\mu c_\mu\partial/\partial x_\mu$ is the one the conjugation commutes with. That is the whole content of the statement that the $i$ belongs to the generator and not to the operator, and the two displays are two readings of one frame.
+The four multipliers of the body are the real parts of these basis operators: $c_{\imath}=-i\gamma_{\imath}$, and the operator $D=\sum_{\imath}\varepsilon_{\imath} c_{\imath}\partial/\partial x_{\imath}$ is the one the conjugation commutes with. That is the whole content of the statement that the $i$ belongs to the generator and not to the operator, and the two displays are two readings of one frame.
 
 $\gamma_5$ is the reference-frame basis operator of the chirality; the chirality operator of the body is its axis-free form, $\xi=-iR_{\mathrm{axf},\vec e_z}$.
 
@@ -336,27 +336,27 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}
++\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
-The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_{\imath}$, so that $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_{\imath}=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
 ## Summary
 
@@ -375,7 +375,7 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The field, an element, and its two values |
 | $\xi=-iR_{\mathrm{axf},\vec e_z}$ | One basis operator that carries the split, a pure right multiplier; $\xi\tilde{Ξ}_{L}=-\tilde{Ξ}_{L}$, $\xi\tilde{Ξ}_{R}=+\tilde{Ξ}_{R}$ |
@@ -385,7 +385,7 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*}=({}^{\natural})^{\,*}$ | Quaternion, complex and Hermitian conjugations |
 | $Q^{\flat}=-Q^{*}$ | Algebra's real structure; fixed space $\mathbb{B}_{\Phi}$ |
 | $c_0:\tilde{Ξ}\mapsto\tilde{Ξ}\vec e_x$; $c_k:\tilde{Ξ}\mapsto\vec e_\eta\tilde{Ξ}\vec e_y$ | The four real multipliers of the frame; $c_0^2=-1$, $c_k^2=+1$, pairwise anticommuting |
-| $D=\sum_\mu\varepsilon_\mu c_\mu\partial/\partial x_\mu$ | Kinetic operator; $D^2=\Box_\Phi$; $D_p=-i\sum_\mu\varepsilon_\mu p_\mu c_\mu$ |
+| $D=\sum_{\imath}\varepsilon_{\imath} c_{\imath}\partial/\partial x_{\imath}$ | Kinetic operator; $D^2=\Box_\Phi$; $D_p=-i\sum_{\imath}\varepsilon_{\imath} p_{\imath} c_{\imath}$ |
 | $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ | d'Alembertian; $\Delta_\Phi$ is the material Laplacian |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
 | $\mathcal{C}:\tilde{Ξ}\mapsto i\bar{\tilde{Ξ}}$ | Charge conjugation; $\mathcal{C}^2=1$, $\xi\mathcal{C}=-\mathcal{C}\xi$, $\mathcal{C}D=D\mathcal{C}$ |

@@ -12,14 +12,14 @@ Four consequences follow, and each is stated exactly or checked.
 
 - The split is an algebraic identity, exact for every connection and every field, checked to $6\times10^{-15}$.
 - The gauge transformation of the integration variable is a rotation of the two real components at each point, so the measure is invariant with no Jacobian, and on a lattice the invariance requires the phase to be carried in an exponential link and not in a linear one.
-- The Gaussian inverts the paired operator $\sum_\mu(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)-k_m^{2}$, which is the equation's operator for a purely vector connection and is not the equation's operator for a scalar potential.
+- The Gaussian inverts the paired operator $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})-k_m^{2}$, which is the equation's operator for a purely vector connection and is not the equation's operator for a scalar potential.
 - The current is the first variation of the integral with respect to the connection, and its conservation is the differentiated form of the measure's invariance.
 
 It does not produce a new prediction: the integral is the standard charged scalar's. It does not construct the continuum measure. It does not resolve the sign question that the variational companion records; it locates that question at the pole of the propagator, where it is observable, and stops there.
 
 ## Conventions
 
-The algebra and the pairing are the free companion's: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}(\cdot^{*}\cdot)$ Hermitian. The covariant derivative and its conjugate are
+The algebra and the pairing are the free companion's: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}(\cdot^{*}\cdot)$ Hermitian. The covariant derivative and its conjugate are
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
@@ -27,7 +27,7 @@ $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural},
 $$
 
-with $\natural$ on the invertibles and never on the connection's coefficients, which are scalars. Write $c_\mu=\frac{2\pi iϙ}{h}A_\mu$ for the slot's coefficient, so that the covariant derivative is $\partial_\mu+c_\mu$ acting coefficient-wise. The material convention of the coupled companions is $A_t=i a'_t$ with $a'_t$ real and $\vec A$ real, so $c_t$ is real and the three $c_\eta$ are imaginary.
+with $\natural$ on the invertibles and never on the connection's coefficients, which are scalars. Write $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ for the slot's coefficient, so that the covariant derivative is $\partial_{\imath}+c_{\imath}$ acting coefficient-wise. The material convention of the coupled companions is $A_t=i a'_t$ with $a'_t$ real and $\vec A$ real, so $c_t$ is real and the three $c_\eta$ are imaginary.
 
 The action and the weight. The variational companion's matter action,
 
@@ -37,36 +37,36 @@ $$
 
 is the exponent, in the free companion's normalisation and with the covariant derivative in every slot, with the weight $\exp(\frac{2\pi iS_{\mathrm{gco}}}{h})$. The temporal slot enters with $+$ and the three spatial ones with $-$, which is the material metric written out. The connection is held fixed in the integral over the field, and the field is held fixed in the integral over the connection; this article treats the first.
 
-Which operator the exponent gives. The variational companion shows that the covariant square of a central field is not central: $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)=\bigl(\sum_\mu D_\mu^{2}\xi\bigr)e_t+\frac{2\pi iϙ}{h}\xi\tilde F$, with a vector part that no central field can carry. The action's kinetic term avoids that difficulty by being a sum of squared moduli of one slot each, $\sum_\mu\mathrm{Sc}\bigl[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr]$, and this is the form the exponent carries. The exponent's form fixes the quadratic form, and a Gaussian inverts its quadratic form: by parts that is the paired operator of §*The Quadratic Form and the Operator It Inverts*, whereas the companion's stated equation is built on $\Box_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$, and the two operators differ whenever $\bar c_\mu\ne-c_\mu$. The article follows the exponent and records the difference.
+Which operator the exponent gives. The variational companion shows that the covariant square of a central field is not central: $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)=\bigl(\sum_{\imath} D_{\imath}^{2}\xi\bigr)e_t+\frac{2\pi iϙ}{h}\xi\tilde F$, with a vector part that no central field can carry. The action's kinetic term avoids that difficulty by being a sum of squared moduli of one slot each, $\sum_{\imath}\mathrm{Sc}\bigl[(\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\bigr]$, and this is the form the exponent carries. The exponent's form fixes the quadratic form, and a Gaussian inverts its quadratic form: by parts that is the paired operator of §*The Quadratic Form and the Operator It Inverts*, whereas the companion's stated equation is built on $\Box_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}$, and the two operators differ whenever $\bar c_{\imath}\ne-c_{\imath}$. The article follows the exponent and records the difference.
 
 ## The Exponent Splits into Three Terms
 
 The identity. For one slot and one central coefficient,
 
 $$
-\bigl\lvert\partial_\mu\Xi+c_\mu\Xi\bigr\rvert^{2}
-=\bigl\lvert\partial_\mu\Xi\bigr\rvert^{2}
-+2\,\mathrm{Re}\bigl(\bar c_\mu\,\Xi^{*}\partial_\mu\Xi\bigr)
-+\lvert c_\mu\rvert^{2}\lvert\Xi\rvert^{2},
+\bigl\lvert\partial_{\imath}\Xi+c_{\imath}\Xi\bigr\rvert^{2}
+=\bigl\lvert\partial_{\imath}\Xi\bigr\rvert^{2}
++2\,\mathrm{Re}\bigl(\bar c_{\imath}\,\Xi^{*}\partial_{\imath}\Xi\bigr)
++\lvert c_{\imath}\rvert^{2}\lvert\Xi\rvert^{2},
 $$
 
 which is the expansion of a squared modulus and holds for every field and every connection. Summed over the four slots it gives
 
 $$
-S_{\mathrm{gco}}=S_{0}+\int\mathrm{d}^{4}x\;\Bigl[2\,\mathrm{Re}\sum_\mu\bar c_\mu\,\Xi^{*}\partial_\mu\Xi+\sum_\mu\lvert c_\mu\rvert^{2}\lvert\Xi\rvert^{2}\Bigr],
+S_{\mathrm{gco}}=S_{0}+\int\mathrm{d}^{4}x\;\Bigl[2\,\mathrm{Re}\sum_{\imath}\bar c_{\imath}\,\Xi^{*}\partial_{\imath}\Xi+\sum_{\imath}\lvert c_{\imath}\rvert^{2}\lvert\Xi\rvert^{2}\Bigr],
 $$
 
 with $S_0$ the free action. **The three terms are the free action, the current times the potential, and the potential squared.**
 
 The split is checked as an identity. On a seven-site chain with a random complex field and random coefficients of the material signs, the difference of the two sides, slot by slot and summed over the four slots, is $4\times10^{-16}$ relative to the sum, which is the arithmetic of the same quantity computed twice. The identity is exact and the number only locates it.
 
-The middle term is the current. The variational companion writes the current as $J_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr]$, and for a central field with the covariant derivative's coefficient $c_\mu$ the comparison gives
+The middle term is the current. The variational companion writes the current as $J_{\imath}=2\,\mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\bigr]$, and for a central field with the covariant derivative's coefficient $c_{\imath}$ the comparison gives
 
 $$
-2\,\mathrm{Re}\bigl(\bar c_\mu\Xi^{*}\partial_\mu\Xi\bigr)=-\frac{2\pi ϙ}{h}A_\mu J_\mu
+2\,\mathrm{Re}\bigl(\bar c_{\imath}\Xi^{*}\partial_{\imath}\Xi\bigr)=-\frac{2\pi ϙ}{h}A_{\imath} J_{\imath}
 $$
 
-up to the term that carries $c_\mu$ twice, which is the third. The interaction is therefore the current times the potential plus the potential squared, and no other object appears.
+up to the term that carries $c_{\imath}$ twice, which is the third. The interaction is therefore the current times the potential plus the potential squared, and no other object appears.
 
 The third term has no derivative, and that is its function. It is the term a "current times potential" presentation omits. It is also the term that makes the exponent invariant: the current's term alone changes by a total derivative under a gauge transformation, and the potential-squared term is what supplies the rest. The gauge invariance of the exponent is a cancellation between the second and third terms, and the article states the cancellation before it states the consequence, because the consequence is the next section.
 
@@ -87,7 +87,7 @@ What it does not buy. The integral is not invariant under a transformation that 
 The operator. Integrating by parts once per slot moves the derivative onto the first factor and leaves
 
 $$
-S_{\mathrm{gco}}=\frac{h}{4\pi}\int\mathrm{d}^{4}x\;\mathrm{Sc}\Bigl[\tilde\Xi^{*}\Bigl(\sum_\mu\bigl(\partial_\mu-\bar c_\mu\bigr)\bigl(\partial_\mu+c_\mu\bigr)-k_m^{2}\Bigr)\tilde\Xi\Bigr]
+S_{\mathrm{gco}}=\frac{h}{4\pi}\int\mathrm{d}^{4}x\;\mathrm{Sc}\Bigl[\tilde\Xi^{*}\Bigl(\sum_{\imath}\bigl(\partial_{\imath}-\bar c_{\imath}\bigr)\bigl(\partial_{\imath}+c_{\imath}\bigr)-k_m^{2}\Bigr)\tilde\Xi\Bigr]
 $$
 
 up to a boundary term, so the Gaussian's inverse is the paired operator's Green's function. The free companion's statement that the two-point function is the inverse of the quadratic form survives the coupling with the paired operator in place of the d'Alembertian.
@@ -95,12 +95,12 @@ up to a boundary term, so the Gaussian's inverse is the paired operator's Green'
 The two operators differ, and by one term. The paired operator and the square of the covariant derivative are related by
 
 $$
-\sum_\mu\bigl(\partial_\mu-\bar c_\mu\bigr)\bigl(\partial_\mu+c_\mu\bigr)
--\sum_\mu\bigl(\partial_\mu+c_\mu\bigr)^{2}
-=-\sum_\mu\bigl(\bar c_\mu+c_\mu\bigr)\bigl(\partial_\mu+c_\mu\bigr),
+\sum_{\imath}\bigl(\partial_{\imath}-\bar c_{\imath}\bigr)\bigl(\partial_{\imath}+c_{\imath}\bigr)
+-\sum_{\imath}\bigl(\partial_{\imath}+c_{\imath}\bigr)^{2}
+=-\sum_{\imath}\bigl(\bar c_{\imath}+c_{\imath}\bigr)\bigl(\partial_{\imath}+c_{\imath}\bigr),
 $$
 
-which is exact as a composition of operators. **The two coincide exactly when $\bar c_\mu=-c_\mu$ in every slot**, which is the case of a purely imaginary coefficient.
+which is exact as a composition of operators. **The two coincide exactly when $\bar c_{\imath}=-c_{\imath}$ in every slot**, which is the case of a purely imaginary coefficient.
 
 Which slots satisfy the condition. The three spatial slots satisfy it for a real vector potential, because $\bar c_\eta=-i\frac{2\pi ϙ}{h}A_\eta=-c_\eta$. The temporal slot does not, because $c_t=-\frac{2\pi ϙ}{h}a'_t$ is real and $\bar c_t=c_t$. A purely vector connection gives one operator and a scalar potential gives two, and this is the variational companion's bookkeeping point reached from the integral's side.
 
@@ -120,18 +120,18 @@ What this does to the open question. The variational companion records the discr
 
 ## The Current Is the First Variation, and Its Conservation Is an Identity
 
-The derivative of the integral. Because the connection appears in the exponent, differentiating the generating functional with respect to $A_\mu(x)$ brings down the current. For a fixed source,
+The derivative of the integral. Because the connection appears in the exponent, differentiating the generating functional with respect to $A_{\imath}(x)$ brings down the current. For a fixed source,
 
 $$
-\frac{\delta}{\delta A_\mu(x)}\ln Z[J,\tilde A]=i\,\frac{2\pi ϙ}{h}\,\bigl\langle J_\mu(x)\bigr\rangle ,
+\frac{\delta}{\delta A_{\imath}(x)}\ln Z[J,\tilde A]=i\,\frac{2\pi ϙ}{h}\,\bigl\langle J_{\imath}(x)\bigr\rangle ,
 $$
 
-with $J_\mu$ the variational companion's current. **The current is not a separate construction in the integral's language: it is the response of the integral to the connection.**
+with $J_{\imath}$ the variational companion's current. **The current is not a separate construction in the integral's language: it is the response of the integral to the connection.**
 
 The conservation is the measure's invariance, differentiated. Rotate the integration variable locally and use the measure's invariance; the exponent's change is a total divergence plus the field equation's terms, and the identity that survives is
 
 $$
-\partial_\mu\bigl\langle J_\mu(x)\bigr\rangle=0 ,
+\partial_{\imath}\bigl\langle J_{\imath}(x)\bigr\rangle=0 ,
 $$
 
 in every correlation function and not only on the solutions. This is the Ward identity of the central phase symmetry, and it is the integral's form of the variational companion's second-Noether argument. The companion derives the conservation from the equations; the integral derives it from the measure, and the integral's version is the stronger one because it does not require the field to be on shell.
@@ -146,7 +146,7 @@ The fork, restated as a choice of measure. The coupled equation article distingu
 
 The measure over the centre inverts the paired scalar operator. That is the previous section, and it is the standard charged scalar. The carrier fixes the measure, and this is where the propagation reaches the path integral. The spin-zero field is central, so the measure runs over the complex functions of $\mathbb{B}_C$ and the integral is the standard one for a charged scalar. An integral over all of $\mathbb{B}$ would be four decoupled copies of it, with the same operator in each and no curvature coupling, because a measure that is a product of four copies cannot mix them; that is the four-scalar theory, and the carrier is what keeps the block from it.
 
-The curvature coupling needs a measure that does not factorise. The covariant square's vector part is $\frac{2\pi iϙ}{h}\xi\tilde F$, linear in the field and in the field strength. Its scalar part is exactly $\sum_\mu D_\mu^{2}\xi$ and its vector part is the field strength term: on a grid with a constant field strength the scalar part agrees with $\sum_\mu D_\mu^{2}\xi$ to $1.8\times10^{-16}$ and the vector part agrees with $\frac{2\pi ϙ}{h}\xi\,\mathrm{Vect}\tilde F$ to $5\times10^{-4}$, the residual being the difference scheme. The vector part is not small and it is not central, so a theory that carries it must integrate over the non-central directions.
+The curvature coupling needs a measure that does not factorise. The covariant square's vector part is $\frac{2\pi iϙ}{h}\xi\tilde F$, linear in the field and in the field strength. Its scalar part is exactly $\sum_{\imath} D_{\imath}^{2}\xi$ and its vector part is the field strength term: on a grid with a constant field strength the scalar part agrees with $\sum_{\imath} D_{\imath}^{2}\xi$ to $1.8\times10^{-16}$ and the vector part agrees with $\frac{2\pi ϙ}{h}\xi\,\mathrm{Vect}\tilde F$ to $5\times10^{-4}$, the residual being the difference scheme. The vector part is not small and it is not central, so a theory that carries it must integrate over the non-central directions.
 
 What the article concludes about the fork. The integral over central fields is the standard theory and it is the one the action selects. The integral over $\mathbb{B}$ with the covariant square in the exponent would be a different theory, and whether it is admissible is the equation companion's open question, not this article's. **The integral's contribution is to say that the two theories differ in their measure and not only in their operator.**
 
@@ -156,7 +156,7 @@ The classical field and the source. With a source the stationary point of the ex
 
 Everything remains central. The classical field is central, the fluctuation operator's coefficients are central, the determinant is a central scalar, and the effective action is the Legendre transform of a central functional. **The coupling changes no object's type**, which is the free companion's verdict and the coupled companion's, and the integral adds no exception.
 
-The background-field reading. The determinant depends on the connection only through the covariant operator, so its variation with respect to $A_\mu$ is the current's two-point function and the same Ward identity holds at every order. The article states this and does not compute it; the one-loop determinant of a charged scalar in a background is a standard object and the algebra adds nothing to it.
+The background-field reading. The determinant depends on the connection only through the covariant operator, so its variation with respect to $A_{\imath}$ is the current's two-point function and the same Ward identity holds at every order. The article states this and does not compute it; the one-loop determinant of a charged scalar in a background is a standard object and the algebra adds nothing to it.
 
 ## What the Integral Adds and Does Not Add
 
@@ -197,17 +197,17 @@ The current is the first variation of the integral with respect to the connectio
 | Symbol | Meaning |
 |---|---|
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The covariant derivative; coefficients central |
-| $c_\mu=\frac{2\pi iϙ}{h}A_\mu$ | The slot's coefficient; $c_t$ real and $c_\eta$ imaginary for a material connection |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The slot's coefficient; $c_t$ real and $c_\eta$ imaginary for a material connection |
 | $S_{\mathrm{gco}}$ | The coupled matter action; the exponent's numerator |
 | $\exp(\frac{2\pi iS_{\mathrm{gco}}}{h})$ | The weight; central, $*$-unitary, invariant under a gauge transformation |
 | $S_0$ | The free action |
-| $J_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr]$ | The current; the coefficient of the exponent's linear term |
-| $\sum_\mu\lvert c_\mu\rvert^{2}\lvert\Xi\rvert^{2}$ | The potential-squared term; no derivative |
+| $J_{\imath}=2\,\mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\bigr]$ | The current; the coefficient of the exponent's linear term |
+| $\sum_{\imath}\lvert c_{\imath}\rvert^{2}\lvert\Xi\rvert^{2}$ | The potential-squared term; no derivative |
 | $\prod_x\mathrm{d}\Xi_1\mathrm{d}\Xi_2$ | The flat measure; invariant under a local phase |
 | $U_j=e^{i(\Lambda_j-\Lambda_{j+1})}$ | The Wilson link; exact gauge invariance on the lattice |
-| $\sum_\mu(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)-k_m^{2}$ | The paired operator; the Gaussian's inverse |
-| $\Box_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$ | The equation's operator; the squared reading |
-| $\bar c_\mu=-c_\mu$ | The condition for the two operators to coincide; holds for a vector connection |
+| $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})-k_m^{2}$ | The paired operator; the Gaussian's inverse |
+| $\Box_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}$ | The equation's operator; the squared reading |
+| $\bar c_{\imath}=-c_{\imath}$ | The condition for the two operators to coincide; holds for a vector connection |
 | $\vec\kappa=\vec k+\frac{2\pi ϙ}{h}\vec A$ | The shifted wave number; the shell for a purely vector connection |
 | $\tilde F$ | The field strength; the vector part of the covariant square is $\frac{2\pi iϙ}{h}\xi\tilde F$ |
 | $k_m=\frac{2\pi mc}{h}$ | The mass parameter |

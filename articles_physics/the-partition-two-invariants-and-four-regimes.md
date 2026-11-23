@@ -189,7 +189,7 @@ The interval is the whole content of the theorem, and the sign of $s$ is not the
 **The norm is the multiplicative quadratic form of the entry before this one, and its vanishing is the wall of invertibility.**
 
 $$
-N(\tilde Q)=Q_t^{2}+B^{2}=\sum_{\mu}Q_\mu^{2},\qquad N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q),\qquad \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N}.
+N(\tilde Q)=Q_t^{2}+B^{2}=\sum_{\imath}Q_{\imath}^{2},\qquad N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q),\qquad \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N}.
 $$
 
 On the material sector the norm is the interval. With $\tilde P=ip_0e_t+\vec p$ and real $p_0,\vec p$, with the momentum in units of $mc$ and $p_0$ in units of $mc$,

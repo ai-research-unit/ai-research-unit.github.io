@@ -13,9 +13,9 @@ The scope is the transformation itself: its generator, its free-particle closed 
 **Conventions.** Every derivative in this article is the biquaternionic gradient of *Operator and Calculus Conventions*,
 
 $$
-\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
+\tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial R_{\imath}},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath\in\{t,x,y,z\}}\varepsilon_{\imath} e_{\imath}\frac{\partial}{\partial R_{\imath}},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 $$
@@ -38,7 +38,7 @@ $$
 D_3=\sum_\eta\vec e_\eta\frac{\partial}{\partial q_\eta}.
 $$
 
-Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{2\pi iϙA_{\mu}}{h}$, so the pure part becomes $D_3^A=\sum_\eta\vec e_\eta(\partial/\partial q_\eta-\frac{2\pi iϙA_{\eta}}{h})$, and $\sum_\eta\vec e_\eta\pi_\eta=-i\,\frac{h}{2\pi}\,D_{3}^{A}$ with $\pi_\eta=p_\eta-ϙA_\eta$ and $p_\eta=-i\,\frac{h}{2\pi}\partial/\partial q_\eta$. The charge is $ϙ$ and the four-potential is $A_\mu=(A_0,-\vec A)$.
+Minimal coupling shifts each derivative, $\partial/\partial R_{\imath}\to\partial/\partial R_{\imath}-\frac{2\pi iϙA_{\imath}}{h}$, so the pure part becomes $D_3^A=\sum_\eta\vec e_\eta(\partial/\partial q_\eta-\frac{2\pi iϙA_{\eta}}{h})$, and $\sum_\eta\vec e_\eta\pi_\eta=-i\,\frac{h}{2\pi}\,D_{3}^{A}$ with $\pi_\eta=p_\eta-ϙA_\eta$ and $p_\eta=-i\,\frac{h}{2\pi}\partial/\partial q_\eta$. The charge is $ϙ$ and the four-potential is $A_{\imath}=(A_0,-\vec A)$.
 
 **The two involutions.** The reduction needs two right multiplications of the algebra, written by position. The **mass grading** and the **chirality** are
 
@@ -475,8 +475,8 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{B}_{\Phi}$ is the material sector |
-| $\tilde\nabla_\Phi=\sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; every derivative in the article |
-| $(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
+| $\tilde\nabla_\Phi=\sum_{\imath} e_{\imath}\partial/\partial R_{\imath}$ | Biquaternionic gradient; every derivative in the article |
+| $(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\varepsilon_{\imath} e_{\imath}\partial/\partial R_{\imath}$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | The d'Alembertian, $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ on the material sector |
 | $D_3=\sum_\eta\vec e_\eta\partial/\partial q_\eta$ | Pure part of the gradient; $D_3^A$ its minimally coupled form |
 | $\beta F=iF\vec e_x$ | Mass grading, the right multiplication by $i\vec e_x$; $\beta^2=e_t$ |

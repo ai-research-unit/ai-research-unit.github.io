@@ -198,7 +198,7 @@ where the entries are the eigenvalues of $(T_{3L},\,T_{3R},\,T^{15})$ on the fie
 $$
 a_1\times a_2\ \propto\ -\bigl(\sqrt{\tfrac38},\ \sqrt{\tfrac38},\ \tfrac12\bigr)
 \qquad\Longrightarrow\qquad
-A_\mu\ \propto\ W^3_{L\mu}+W^3_{R\mu}+\sqrt{\tfrac23}\,B_\mu .
+A_{\imath}\ \propto\ W^3_{L\imath}+W^3_{R\imath}+\sqrt{\tfrac23}\,B_{\imath} .
 $$
 
 The coefficients are $(1,\,1,\,\sqrt{2/3})$ up to the overall sign, which is free because a photon is a line. The $\sqrt{2/3}$ is a normalisation rather than a dynamical number. It is the fifteenth Cartan's eigenvalue on the unit line, and it is fixed by $\operatorname{tr}(T^{15})^2=\tfrac12$ — the same identity that makes the $B-L$ generator proportional to $(-1,\tfrac13,\tfrac13,\tfrac13)$.

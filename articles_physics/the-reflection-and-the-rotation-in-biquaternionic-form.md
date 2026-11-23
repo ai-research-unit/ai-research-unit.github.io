@@ -12,8 +12,8 @@ The article runs as follows. §*One Operator, Two Readings* separates the basis 
 
 The conventions are the series'. The algebra, the invertibles, the sectors and the metric are those of *Algebra and Element Conventions* and *Frame and Metric Conventions*; the basis operators and their multiplication are those of *Matrix Representations Conventions*, and the comparison of the biquaternion algebra with the even half is the dictionary of the same article. None of them is restated here. A basis operator enters by its two multipliers, and the short names used later — the frame basis operator, the chirality basis operator, $\omega$, the three $\eta$ factors — are bound to those multipliers where they are introduced; no basis operator is named without its product being written at least once. The derivatives are the series' gradient, written once here and never as a basis operator,
 $$
-\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
-(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
+\tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial R_{\imath}},\qquad
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath\in\{t,x,y,z\}}\varepsilon_{\imath} e_{\imath}\frac{\partial}{\partial R_{\imath}},\qquad
 \Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi,
 $$
 with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so that there $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$. No basis operator of this article carries a derivative.
@@ -305,7 +305,7 @@ The claims of this article, in order.
 | $-iR_{\mathrm{axf},\vec e_z} = i\omega = -iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | Chirality basis operator, $(-iR_{\mathrm{axf},\vec e_z})^{2} = I_4$ |
 | the $L$ part, the $R$ part | The two parts of an element: the value $-1$ and the value $+1$ of the chirality basis operator |
 | $\tilde{Ξ}_{L,R}$ | The two parts of a field |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$; the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, whose subscripts name the two members |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The biquaternion gradient $\sum_{\imath} e_{\imath}\partial/\partial R_{\imath}$ and its quaternion conjugate $\sum_{\imath}\varepsilon_{\imath} e_{\imath}\partial/\partial R_{\imath}$; $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$; the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, whose subscripts name the two members |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair as two lines, off-diagonal in the two slots |
 | $iR_{\mathrm{axf},\vec e_x}$ | The frame basis operator; the reflection whose normal is $e_t$ |
 | $\rho(u) : x\mapsto -\epsilon(u)\,u x u$ | Action of an odd element on the vectors; $u^2=\epsilon(u)I_4$ |

@@ -14,9 +14,9 @@ A local action in four dimensions needs four things.
 
 **A scalar density.** Something whose integral is coordinate-independent. The algebra has a canonical scalar, the scalar part $\mathrm{Sc}$ of an element, and it has a canonical bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ which returns a scalar from two elements.
 
-**A volume element.** $\sqrt{|g|}$ in the metric language. In the frame route $g_{\mu\nu}=\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$, so $\sqrt{|g|}=\sqrt{|\det G|}$ with $G$ the Gram matrix of the four frame legs. That is an algebraic quantity: a determinant of an array of scalars the algebra produced.
+**A volume element.** $\sqrt{|g|}$ in the metric language. In the frame route $g_{\imath\jmath}=\langle\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}$, so $\sqrt{|g|}=\sqrt{|\det G|}$ with $G$ the Gram matrix of the four frame legs. That is an algebraic quantity: a determinant of an array of scalars the algebra produced.
 
-**A connection.** The corpus constructs one: a $\mathbb{B}$-valued one-form $\vec\Gamma_\mu$ taking values in the six-real-dimensional scalar-free subspace, with a curvature two-form and a torsion. This is the object Route Three of the parent article builds, and it is the one place where the algebra makes a positive contribution rather than merely hosting.
+**A connection.** The corpus constructs one: a $\mathbb{B}$-valued one-form $\vec\Gamma_{\imath}$ taking values in the six-real-dimensional scalar-free subspace, with a curvature two-form and a torsion. This is the object Route Three of the parent article builds, and it is the one place where the algebra makes a positive contribution rather than merely hosting.
 
 **A space of fields to vary over, and a boundary term.** The frame, the connection, or both. The boundary term is required for a well-posed variational principle, and it is a technical demand the corpus has never addressed.
 
@@ -24,7 +24,7 @@ So the ingredients are all present, and the absence of an action is not an absen
 
 ## The Derivative Is Not an Algebra Operation
 
-Here is the structural point, and it is short. Every operation the algebra owns is algebraic: products, the natural involution, the scalar part, the determinant of the matrix image. A derivative is not among them. Differentiation is an operation of the manifold, acting on the frame field $\tilde E_{\Phi,\mu}(x)$, and it appears in the theory only because the frame is a *field* — a function of position — not because it is a biquaternion.
+Here is the structural point, and it is short. Every operation the algebra owns is algebraic: products, the natural involution, the scalar part, the determinant of the matrix image. A derivative is not among them. Differentiation is an operation of the manifold, acting on the frame field $\tilde E_{\Phi,\imath}(x)$, and it appears in the theory only because the frame is a *field* — a function of position — not because it is a biquaternion.
 
 That has a consequence which is easy to miss because it looks like a technicality. The algebra can constrain the *algebraic shape* of an integrand — it can say that the scalar must be built from $\mathrm{Sc}$, that the bilinear pairings must respect the two sectors, that a wedge product must be a $\mathbb{B}$-valued two-form — and it cannot constrain the *number of derivatives*. A functional with one derivative per field, with two, and with four are all equally algebraic in shape. The algebra is blind to the difference, and the difference is precisely what distinguishes Yang–Mills from general relativity from higher-derivative gravity.
 
@@ -35,9 +35,9 @@ So the selection problem is not "which algebraic combination" but "which derivat
 The functional the algebra suggests most strongly is the quadratic one,
 
 $$
-S_{\mathrm{YM}}[\vec\Gamma]=\int d^{4}x\,\sqrt{|\det G|}\;\mathrm{Sc}\bigl(\tilde F_{\mu\nu}\tilde F_{\mu\nu}^{\natural}\bigr),
+S_{\mathrm{YM}}[\vec\Gamma]=\int d^{4}x\,\sqrt{|\det G|}\;\mathrm{Sc}\bigl(\tilde F_{\imath\jmath}\tilde F_{\imath\jmath}^{\natural}\bigr),
 \qquad
-\tilde F_{\mu\nu}=\partial_{\mu}\vec\Gamma_{\nu}-\partial_{\nu}\vec\Gamma_{\mu}+[\vec\Gamma_{\mu},\vec\Gamma_{\nu}],
+\tilde F_{\imath\jmath}=\partial_{\imath}\vec\Gamma_{\jmath}-\partial_{\jmath}\vec\Gamma_{\imath}+[\vec\Gamma_{\imath},\vec\Gamma_{\jmath}],
 $$
 
 with $\tilde F$ the curvature two-form. It is the exact analogue of the Maxwell action the corpus already varies — the biquaternion Maxwell equation follows from it, with the caveat the corpus records that the Lorentz generator does not commute with the basis operator, so the varied form differs from the substituted form by a term. Its equations are second order in the connection, its principal symbol is the wave operator on each component, and its content is a gauge field, not a metric.
@@ -65,7 +65,7 @@ There is one place in the corpus where a curvature scalar appears as an algebrai
 The companion article proves the Lichnerowicz identity for the biquaternion Dirac operator on a curved background,
 
 $$
-(\tilde F_{\mu}D_{\mu})^{2}=-\Box_{g,\Phi}+\tfrac14 R ,
+(\tilde F_{\imath}D_{\imath})^{2}=-\Box_{g,\Phi}+\tfrac14 R ,
 $$
 
 where $\Box_{g,\Phi}$ is the connection Laplacian and $R$ the scalar curvature of the Gram metric. The identity holds of the basis operator, that is, of the left-regular representation of the algebra on itself as a four-dimensional complex vector space, and that qualification is the article's own headline caveat.
@@ -73,7 +73,7 @@ where $\Box_{g,\Phi}$ is the connection Laplacian and $R$ the scalar curvature o
 Read it backwards, and it gives the scalar curvature as a trace:
 
 $$
-R=\mathrm{tr}\bigl[(\tilde F_{\mu}D_{\mu})^{2}+\Box_{g,\Phi}\bigr],
+R=\mathrm{tr}\bigl[(\tilde F_{\imath}D_{\imath})^{2}+\Box_{g,\Phi}\bigr],
 $$
 
 because the constant term contributes $\tfrac14R$ on each of the four basis elements and $4\cdot\tfrac14=1$. So the Einstein–Hilbert action can be written without ever naming the Riemann tensor:
@@ -90,13 +90,13 @@ The route is therefore recorded as the better of the two candidates, not as a re
 
 An action needs a matter part, and the matter part needs a source. The framework's difficulty here is independent of the gravitational one and is recorded in the cosmology article: the natural algebra packaging of a rank-two tensor collapses to its trace.
 
-For a symmetric tensor $T_{\mu\nu}$ the framework's natural object is the bilinear sum
+For a symmetric tensor $T_{\imath\jmath}$ the framework's natural object is the bilinear sum
 
 $$
-\tilde{\mathcal T}=\sum_{\mu,\nu}T_{\mu\nu}\,\tilde E_{\Phi,\mu}\tilde E_{\Phi,\nu}^{\natural}\in\mathbb{B},
+\tilde{\mathcal T}=\sum_{\imath,\jmath}T_{\imath\jmath}\,\tilde E_{\Phi,\imath}\tilde E_{\Phi,\jmath}^{\natural}\in\mathbb{B},
 $$
 
-and its scalar part is the trace, $\mathrm{Sc}\,\tilde{\mathcal T}=\sum_\mu T_{\mu\mu}$. For a perfect fluid in its rest frame $T=\mathrm{diag}(\rho,p,p,p)$ this gives $(-\rho+3p)e_t$: the two independent functions $\rho$ and $p$ are replaced by the single combination $-\rho+3p$, and the four-velocity and any anisotropic stress are discarded. A radiation fluid, for which $p=\rho/3$, is annihilated entirely.
+and its scalar part is the trace, $\mathrm{Sc}\,\tilde{\mathcal T}=\sum_{\imath} T_{\imath\imath}$. For a perfect fluid in its rest frame $T=\mathrm{diag}(\rho,p,p,p)$ this gives $(-\rho+3p)e_t$: the two independent functions $\rho$ and $p$ are replaced by the single combination $-\rho+3p$, and the four-velocity and any anisotropic stress are discarded. A radiation fluid, for which $p=\rho/3$, is annihilated entirely.
 
 That is the second half of the action problem. Even with a gravitational action in hand, the variation would need a source, and the source object the algebra naturally forms does not carry the two functions a source has. The trace-free part would have to be carried by a different map, and no map *into a single biquaternion* can exist: ten components do not fit in eight. A frame does carry it, and that is the qualification the next paragraph supplies.
 
@@ -118,7 +118,7 @@ $$
 \langle\mathfrak U_0,\mathfrak U_\eta\rangle_{\natural}=0,
 $$
 
-so the Gram matrix is exactly $\mathrm{diag}(\rho,p,p,p)$: the two functions are the squared leg norms and are independent, and the traceless part lives in the *shape* of the frame rather than in a trace. The sector assignment is forced, not chosen: a material time leg $\sqrt\rho\,e_t$ has norm $-\rho$, which is negative energy, and the sign is restored only by the informational leg — the same factor of $i$ that carries a projector out of $\mathbb{B}_{\Psi}$ into a real null leg, run in reverse. Under a boost rotor the legs transform by congruence and the tensor goes to its standard form; at $\rho=1.7$, $p=0.4$ and rapidity $0.9$ the reconstructed $T$ agrees with $(\rho+p)u_\mu u_\nu+p\,\eta_{\mu\nu}$ to $9\times10^{-16}$.
+so the Gram matrix is exactly $\mathrm{diag}(\rho,p,p,p)$: the two functions are the squared leg norms and are independent, and the traceless part lives in the *shape* of the frame rather than in a trace. The sector assignment is forced, not chosen: a material time leg $\sqrt\rho\,e_t$ has norm $-\rho$, which is negative energy, and the sign is restored only by the informational leg — the same factor of $i$ that carries a projector out of $\mathbb{B}_{\Psi}$ into a real null leg, run in reverse. Under a boost rotor the legs transform by congruence and the tensor goes to its standard form; at $\rho=1.7$, $p=0.4$ and rapidity $0.9$ the reconstructed $T$ agrees with $(\rho+p)u_{\imath} u_{\jmath}+p\,\eta_{\imath\jmath}$ to $9\times10^{-16}$.
 
 What this does and does not settle. It settles the objection that the algebra cannot carry the traceless part: a frame carries it, exactly, and the count $10>8$ forbids only the single-element carrier, not the frame. It does not supply a source, because the frame is ten free functions — as much data as $T$ itself — and nothing in the algebra fixes them. The matter half of the action problem is therefore not a problem of *where to put* the two functions; it is the problem of a matter action whose variation produces that frame.
 

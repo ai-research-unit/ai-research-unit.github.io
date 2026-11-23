@@ -28,19 +28,19 @@ What is not here. No new solution, no derivation of a spin equation in a backgro
 
 Position in the block. This article is the charged companion of [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), and §*The Three Charged Fluids* compares the three.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $k_m=\frac{2\pi mc}{h}$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $k_m=\frac{2\pi mc}{h}$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
 
 ## The Two Brackets the Charge Can Reach
 
 The logarithmic derivative of the coupled word has four brackets, and the connection's whole contribution is one central element per slot. Dividing the covariant derivative of the word by the word,
 
 $$
-\tilde\Xi_{\mathrm D}^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi_{\mathrm D}
-=\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
-+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
-+\frac{2\pi iϙ}{h}A_\mu
-+\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
-+\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu},
+\tilde\Xi_{\mathrm D}^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi_{\mathrm D}
+=\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_{\imath}}
++i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}
++\frac{2\pi iϙ}{h}A_{\imath}
++\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_{\imath}}\Bigr)\tilde u_{\mathrm r}
++\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_{\imath}},
 $$
 
 and the added term decomposes by its own slots:
@@ -55,10 +55,10 @@ The temporal slot is a central imaginary number and the spatial slots are Hermit
 
 | bracket | type | the connection's share | what it moves in the fluid |
 | --- | --- | --- | --- |
-| $\tfrac12\partial_\mu\ln\rho_{\mathrm{num}}$ | real central scalar | none | the density: nothing |
-| $i\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_\mu$ | central imaginary | the whole temporal slot | the momentum |
-| $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the whole spatial slot | the rapidity and the axis |
-| $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | none | the spin direction: nothing |
+| $\tfrac12\partial_{\imath}\ln\rho_{\mathrm{num}}$ | real central scalar | none | the density: nothing |
+| $i\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_{\imath}$ | central imaginary | the whole temporal slot | the momentum |
+| $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the whole spatial slot | the rapidity and the axis |
+| $\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}$ | real vector part | none | the spin direction: nothing |
 
 The third row is the row the scalar case does not have, and it is the article's hinge. In the scalar fluid the frame brackets vanish identically, so the connection's spatial slots have nowhere to land and the only effect is a shift of the phase rate. Here the spatial slots land in the boost bracket, so the field changes the rapidity of the flow as well as its momentum — and in doing that it changes the velocity twice over: once by shifting the wavevector the rapidity is read from, and once by turning the frame's axis through the transport.
 
@@ -109,20 +109,20 @@ The objection, and the answer. The objection is that the covariant wavevector is
 
 ## The Vorticity Is Still the Frame's
 
-The vorticity is the antisymmetrised gradient of the frame, and the coupling changes its value only through the equation. With $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ and $\Gamma_\mu:=\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}$ the frame's logarithmic derivative,
+The vorticity is the antisymmetrised gradient of the frame, and the coupling changes its value only through the equation. With $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ and $\Gamma_{\imath}:=\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}$ the frame's logarithmic derivative,
 
 $$
-\frac{\partial\tilde U_{\Psi,\mathrm b}^{-2}}{\partial R_\mu}
-=-\Gamma_\mu\tilde U_{\Psi,\mathrm b}^{-2}-\tilde U_{\Psi,\mathrm b}^{-2}\Gamma_\mu,
+\frac{\partial\tilde U_{\Psi,\mathrm b}^{-2}}{\partial R_{\imath}}
+=-\Gamma_{\imath}\tilde U_{\Psi,\mathrm b}^{-2}-\tilde U_{\Psi,\mathrm b}^{-2}\Gamma_{\imath},
 $$
 
 $$
-\omega_{\mu\nu}
-=-ic\Bigl[\Gamma_\mu\tilde U_{\Psi,\mathrm b}^{-2}+\tilde U_{\Psi,\mathrm b}^{-2}\Gamma_\mu\Bigr]_{\nu}
-+ic\Bigl[\Gamma_\nu\tilde U_{\Psi,\mathrm b}^{-2}+\tilde U_{\Psi,\mathrm b}^{-2}\Gamma_\nu\Bigr]_{\mu},
+\omega_{\imath\jmath}
+=-ic\Bigl[\Gamma_{\imath}\tilde U_{\Psi,\mathrm b}^{-2}+\tilde U_{\Psi,\mathrm b}^{-2}\Gamma_{\imath}\Bigr]_{\jmath}
++ic\Bigl[\Gamma_{\jmath}\tilde U_{\Psi,\mathrm b}^{-2}+\tilde U_{\Psi,\mathrm b}^{-2}\Gamma_{\jmath}\Bigr]_{\imath},
 $$
 
-where $[\,\cdot\,]_\nu$ is the coefficient of $e_\nu$. Every term is built from $\Gamma$ and $\tilde U$, and no term contains the connection. The potential appears in the equation of motion, the equation fixes the word, and the word fixes the frame; the chain has three links and is not a one-line identity.
+where $[\,\cdot\,]_{\jmath}$ is the coefficient of $e_{\jmath}$. Every term is built from $\Gamma$ and $\tilde U$, and no term contains the connection. The potential appears in the equation of motion, the equation fixes the word, and the word fixes the frame; the chain has three links and is not a one-line identity.
 
 The contrast with the scalar fluid is exact and it is worth a table.
 
@@ -151,7 +151,7 @@ $$
 \oint\tilde V_\Phi\cdot\mathrm{d}\vec l
 =C\bigl[H_{\mathrm{loop}}\bigr],
 \qquad
-H_{\mathrm{loop}}=\mathcal{P}\exp\oint\sum_\mu\Gamma_\mu\,\mathrm{d}x_\mu\in SL(2,\mathbb{C}),
+H_{\mathrm{loop}}=\mathcal{P}\exp\oint\sum_{\imath}\Gamma_{\imath}\,\mathrm{d}x_{\imath}\in SL(2,\mathbb{C}),
 $$
 
 with $\mathcal{P}$ the path ordering and $C$ the linear functional that reads the components of the algebra element. The loop's datum is $H_{\mathrm{loop}}$, a Lorentz transformation, and the circulation is one number read off it; the scalar fluid's loop datum is a phase and its circulation is the whole of it.
@@ -191,9 +191,9 @@ $$
 which is the density times the velocity and nothing else. The Gordon decomposition of [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html) splits the current into that convection part and a magnetisation part which is the divergence of the antisymmetric spin density,
 
 $$
-J_\mu=J_{\mathrm{conv},\mu}+J_{\mathrm{mag},\mu},
+J_{\imath}=J_{\mathrm{conv},\imath}+J_{\mathrm{mag},\imath},
 \qquad
-J_{\mathrm{mag},\mu}=\sum_\nu\partial_\nu\bigl(\text{the spin bilinear}\bigr)_{\nu\mu},
+J_{\mathrm{mag},\imath}=\sum_{\jmath}\partial_{\jmath}\bigl(\text{the spin bilinear}\bigr)_{\jmath\imath},
 $$
 
 and the second is conserved by antisymmetry alone and carries no total charge.
@@ -209,7 +209,7 @@ What the split does to the charge conservation. The conservation of the total cu
 The coupling adds a force and no torque, and the two statements have different reasons. The momentum balance of the free article is that the divergence of the stress is the divergence of the spin's antisymmetric part. With the coupling it is
 
 $$
-\sum_\nu\partial_\nu T_{\mu\nu}=-ϙ\sum_\nu F_{\mu\nu}J_\nu+(\text{the free article's spin term}),
+\sum_{\jmath}\partial_{\jmath} T_{\imath\jmath}=-ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}+(\text{the free article's spin term}),
 $$
 
 so the field acts on the charge current and the spin term is the free one's. The force is longitudinal in the sense that it acts where the charge flows; the torque is the antisymmetric part of the stress and the field has no term in it, because a torque would have to be written in the rotor bracket and the connection cannot write there.
@@ -244,7 +244,7 @@ Twelve statements, each one line, and each with its reason. This is what the cha
 8. The loop invariant is a Lorentz transformation times a phase. Nothing about it is quantised, and the scalar's $h/m$ is the central factor of the transformation.
 9. The Gordon split survives. The convection part is the chart's current; the bound magnetisation current has no explicit dependence on the connection.
 10. The spin direction is gauge invariant and coupling-blind. $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$; the chart shows no rotor torque, and the Larmor precession is second order, through the frame.
-11. The coupling adds a force and not a torque. $\sum_\nu\partial_\nu T_{\mu\nu}=-ϙ\sum_\nu F_{\mu\nu}J_\nu+$ the free article's spin term, and the second is unchanged.
+11. The coupling adds a force and not a torque. $\sum_{\jmath}\partial_{\jmath} T_{\imath\jmath}=-ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}+$ the free article's spin term, and the second is unchanged.
 12. The degenerate set is $\varrho=0$ and the closure is still underdetermined. The charge does not supply the missing spin-transport law, and the reason is that the missing law lives in the bracket the connection cannot reach.
 
 ## The Three Charged Fluids
@@ -307,7 +307,7 @@ The velocity is the kinetic one: the boost is named by the covariant wavevector,
 
 The vorticity is the frame's logarithmic derivative and contains no connection. Its proper part is rank two for every solution, and its raw derivative reaches rank four through the acceleration; it is not $ϙF/m$, and the sum of the two is a two-form of a different kind. It is closed by Maurer–Cartan flatness and obeys no transport law.
 
-The loop invariant is a Lorentz transformation times a phase, and nothing about it is quantised. The Gordon split survives, and the bound magnetisation current has no explicit dependence on the connection. The coupling adds a force and no torque: $\sum_\nu\partial_\nu T_{\mu\nu}=ϙ\sum_\nu F_{\mu\nu}J_\nu+$ the free spin term.
+The loop invariant is a Lorentz transformation times a phase, and nothing about it is quantised. The Gordon split survives, and the bound magnetisation current has no explicit dependence on the connection. The coupling adds a force and no torque: $\sum_{\jmath}\partial_{\jmath} T_{\imath\jmath}=ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}+$ the free spin term.
 
 The spin direction is gauge invariant and coupling-blind, and the Larmor precession is second order, through the frame. The free article's three open items — no vorticity transport, no closure, no spin dynamics in a background — survive, and the charge does not close them.
 
@@ -322,10 +322,10 @@ The spin direction is gauge invariant and coupling-blind, and the Larmor precess
 | $\theta_{\mathrm{axr}},\ \text{axis}$ | Angle and axis of the rotor |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction; gauge invariant, coupling-blind |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The four-velocity; $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ |
-| $\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}$ | The frame's logarithmic derivative |
+| $\Gamma_{\imath}=\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}$ | The frame's logarithmic derivative |
 | $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ | The covariant wavevector |
 | $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi ϙ}{h}\tilde A_\Phi$ | The canonical wavevector |
-| $\omega_{\mu\nu}$ | The vorticity; the frame's gradient, proper part rank two |
+| $\omega_{\imath\jmath}$ | The vorticity; the frame's gradient, proper part rank two |
 | $\Phi_B$ | The flux through a loop |
 | $ϙ$ | The coupling |
 | $k_m=\frac{2\pi mc}{h}$ | The mass wave number |

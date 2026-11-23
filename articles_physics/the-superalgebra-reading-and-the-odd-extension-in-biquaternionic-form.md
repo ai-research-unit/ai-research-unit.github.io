@@ -45,14 +45,14 @@ $$
 
 **Proof.** A product of $i$ and of $j$ frame vectors is a sum of terms of grades $i+j$, $i+j-2$, $\dots$, all of the same parity $i+j$; so the product of an even and an even element is even, of an even and an odd element is odd, and of two odd elements is even, which gives the three inclusions. The bracket is the commutator unless both elements are odd, in which case it is the anticommutator, and the parity of a commutator or an anticommutator is the sum of the parities.
 
-**The grades and their parity.** The ambient algebra is filtered by the number of vector factors, and the parity is that number reduced modulo two; the filtration is not a grading, because a product of two vectors is a scalar plus a bivector. The four generators satisfy $\{v_\mu,v_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}e_t$ with $\varepsilon=(1,-1,-1,-1)$, so $v_0^2=e_t$ and $v_k^2=-e_t$. The table gives the five grades with a basis, the dimension and the part of the ambient algebra that each occupies. The superscript of $A^i$ is the **parity** and not the grade: $A^0=\mathbb{B}$ collects the grades $0$, $2$ and $4$, and $A^1$ collects the grades $1$ and $3$.
+**The grades and their parity.** The ambient algebra is filtered by the number of vector factors, and the parity is that number reduced modulo two; the filtration is not a grading, because a product of two vectors is a scalar plus a bivector. The four generators satisfy $\{v_{\imath},v_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}e_t$ with $\varepsilon=(1,-1,-1,-1)$, so $v_0^2=e_t$ and $v_k^2=-e_t$. The table gives the five grades with a basis, the dimension and the part of the ambient algebra that each occupies. The superscript of $A^i$ is the **parity** and not the grade: $A^0=\mathbb{B}$ collects the grades $0$, $2$ and $4$, and $A^1$ collects the grades $1$ and $3$.
 
 | Grade | A basis | Dimension | Parity | Part |
 |---|---|---|---|---|
 | $0$ | $1$ | $1$ | even | $\mathbb{B}$ |
-| $1$ | $v_\mu$ | $4$ | odd | $A^1$ |
-| $2$ | $v_\mu v_\nu$, $\mu<\nu$ | $6$ | even | $\mathbb{B}$ |
-| $3$ | $v_\mu v_\nu v_\rho$ | $4$ | odd | $A^1$ |
+| $1$ | $v_{\imath}$ | $4$ | odd | $A^1$ |
+| $2$ | $v_{\imath} v_{\jmath}$, ${\imath}<\jmath$ | $6$ | even | $\mathbb{B}$ |
+| $3$ | $v_{\imath} v_{\jmath} v_\rho$ | $4$ | odd | $A^1$ |
 | $4$ | $\omega=v_0v_1v_2v_3$ | $1$ | even | $\mathbb{B}$ |
 
 The even part has dimension $1+6+1=8$ and the odd part $4+4=8$; the odd slot is therefore the sum of the vector and the trivector grades, and it is not a single grade.
@@ -111,7 +111,7 @@ $$
 \end{cases}
 $$
 
-*Proof.* Apply the anti-automorphism to the definition: $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=(ab)^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}(ba)^{*}=b^{*}a^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}a^{*}b^{*}$. Since $\lvert a^{*}\rvert=\lvert a\rvert$ and $\lvert b^{*}\rvert=\lvert b\rvert$, the same exponent occurs in $\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}=a^{*}b^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$, and the two expressions differ by the factor $-(-1)^{\lvert a\rvert\lvert b\rvert}$; for $a,b$ both odd the factor is $+1$, and otherwise it is $-1$. The identity was checked on the sixteen basis elements of the ambient algebra, hence on all $256$ of their products, and separately on the four frame vectors $v_\mu$ and on the products of two of them, for all four parity pairs.
+*Proof.* Apply the anti-automorphism to the definition: $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=(ab)^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}(ba)^{*}=b^{*}a^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}a^{*}b^{*}$. Since $\lvert a^{*}\rvert=\lvert a\rvert$ and $\lvert b^{*}\rvert=\lvert b\rvert$, the same exponent occurs in $\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}=a^{*}b^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$, and the two expressions differ by the factor $-(-1)^{\lvert a\rvert\lvert b\rvert}$; for $a,b$ both odd the factor is $+1$, and otherwise it is $-1$. The identity was checked on the sixteen basis elements of the ambient algebra, hence on all $256$ of their products, and separately on the four frame vectors $v_{\imath}$ and on the products of two of them, for all four parity pairs.
 
 **Remark (the same rule in the actions).** In the actions the statement is the one of §*The Module and the Action*, the adjoint of $Q\mapsto aQb$ being $Q\mapsto a^{*}Qb^{*}$, and it is consistent with the element rule because $(ab)^{*}=b^{*}a^{*}$: the two multipliers reverse under the star in the same order as the two factors of a product. An action preserves the parity when its two multipliers have the same parity and exchanges it when they differ, and the star preserves the parity of each multiplier, so the adjoint preserves the parity of the action.
 
@@ -137,7 +137,7 @@ $$
 \{\mathcal{Q},\mathcal{Q}\}=2\mathcal{Q}^{2}=2H,\qquad [\mathcal{Q},H]_{\mathrm{gr}}=0 ,
 $$
 
-so that the square is a bosonic element commuting with $\mathcal{Q}$, and it is Hermitian as well when $\mathcal{Q}$ is, since $(\mathcal{Q}^{2})^{*}=(\mathcal{Q}^{*})^{2}$. This needs $\mathcal{Q}^{2}\neq0$. In the parity of the ambient algebra it is the relation of $A$, where the square of a frame vector is central, $v_\mu^{2}=g_{\mu\mu}e_t$; in the reading of the supersymmetry article the odd object is the gradient, and its square is the central scalar, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, which is the $H$ of that reading.
+so that the square is a bosonic element commuting with $\mathcal{Q}$, and it is Hermitian as well when $\mathcal{Q}$ is, since $(\mathcal{Q}^{2})^{*}=(\mathcal{Q}^{*})^{2}$. This needs $\mathcal{Q}^{2}\neq0$. In the parity of the ambient algebra it is the relation of $A$, where the square of a frame vector is central, $v_{\imath}^{2}=g_{\imath\imath}e_t$; in the reading of the supersymmetry article the odd object is the gradient, and its square is the central scalar, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, which is the $H$ of that reading.
 
 **(ii) The star.** In the Hermitian interpretation the physical pairing is the one with the **star** rather than with the element itself,
 
@@ -252,7 +252,7 @@ the third step using $u^{2}=q(u)e_t$, which is central and may be moved past $s$
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the basis operators of the actions above written as letters, and this section is the only place in the article where they appear: every section above is written in actions.
 
@@ -276,7 +276,7 @@ $$
 \end{aligned}
 $$
 
-The four $\gamma_\mu$ are the images of the frame vectors $v_\mu$ in the representation, and $\gamma_5$ is not a fifth frame vector but the image of their product, the pseudoscalar: $\gamma_5=i\omega$ with $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$. The squares follow from $(L_aR_b)^2=L_{a^2}R_{b^2}$ and $\vec e_\eta^2=-e_t$,
+The four $\gamma_{\imath}$ are the images of the frame vectors $v_{\imath}$ in the representation, and $\gamma_5$ is not a fifth frame vector but the image of their product, the pseudoscalar: $\gamma_5=i\omega$ with $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$. The squares follow from $(L_aR_b)^2=L_{a^2}R_{b^2}$ and $\vec e_\eta^2=-e_t$,
 
 $$
 \gamma_0^2=i^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x^{2}}=i^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},-e_t}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I_4,\qquad
@@ -293,8 +293,8 @@ $$
 Each square is the product of $i^{2}=-1$ with one minus for every spacelike multiplier: one such multiplier for $\gamma_0$, two for each $\gamma_\eta$. The products are $(-1)(-1)=+1$ and $(-1)(-1)(-1)=-1$, which is the metric sign. So the four carry the signs $\varepsilon=(1,-1,-1,-1)$, and
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
+\{\gamma_{\imath},\gamma_5\}=0,\qquad
 \gamma_5^2=I_4 .
 $$
 
@@ -347,7 +347,7 @@ which is the second member of the pair with its left field read as $-i\overline{
 
 **The basis operators and the cone.** A single product is a pure tensor. Writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -376,7 +376,7 @@ The matrix frame is the frame of the actions written as letters, and it is confi
 | $[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$ | Graded commutator; anticommutator for two odd elements |
 | graded Jacobi identity | The super-Jacobi identity of a Lie superalgebra |
 | $A=\mathbb{B}\oplus A^1$ | Lie superalgebra, even part the biquaternion algebra |
-| $u$, $q(u)$, $v_\mu$ | The odd unit, its quadratic form and the frame vectors of the ambient algebra: $A^1=\mathbb{B}u$, $u^2=q(u)e_t$, $v_0^2=e_t$, $v_k^2=-e_t$ |
+| $u$, $q(u)$, $v_{\imath}$ | The odd unit, its quadratic form and the frame vectors of the ambient algebra: $A^1=\mathbb{B}u$, $u^2=q(u)e_t$, $v_0^2=e_t$, $v_k^2=-e_t$ |
 | $Q\mapsto aQb$, $Q\mapsto aQ$, $Q\mapsto Qb$ | The two-sided and the one-sided actions of the algebra on itself |
 | $Q\mapsto a^{*}Qb^{*}$ | The adjoint of the action $Q\mapsto aQb$, for the Hermitian form of the corpus |
 | $\langle s,t\rangle_{*}$ | The Hermitian form of the module, definite |
@@ -390,7 +390,7 @@ The matrix frame is the frame of the actions written as letters, and it is confi
 | $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(u)(ss^{*}+s^{*}s)$ | Its pairing when $s^{*}s$ has no part of $u$-parity $-1$, in particular for an even $s$ of definite $u$-parity |
 | $\langle su,tu\rangle_{*}=-q(u)\langle s,t\rangle_{*}$, $\langle s,tu\rangle_{*}=0$ | The Hermitian form on the odd slot |
 | $(-1)^F=i\vec e_z\in\mathbb{B}_{\Psi}$, $((-1)^F)^2=e_t$ | The one fermionic mode the algebra hosts natively |
-| $\gamma_\mu$, $\gamma_5$ | The frame basis operators of *The Legacy Pauli Gamma Formulation*: letters for the basis operators, used in that section only |
+| $\gamma_{\imath}$, $\gamma_5$ | The frame basis operators of *The Legacy Pauli Gamma Formulation*: letters for the basis operators, used in that section only |
 | $\Gamma=-iR_{\mathrm{axf},\vec e_z}$ | The chirality basis operator of the module; equal to the fifth frame basis operator in the frame |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame basis operator |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The one-sided Dirac equation, the chiral pair |

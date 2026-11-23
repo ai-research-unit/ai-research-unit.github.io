@@ -15,7 +15,7 @@ What is not new. The relativistic Madelung action, the Lagrange-multiplier form 
 
 The restriction is the parent's. The central field is $\theta_{\mathrm{rpd}}=0$ with the rotor a sign, and the parent proves that class is invariant only under a central Hamiltonian. The limit is defined there, as in the other families.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=\frac{2\pi mc}{h}$; $\epsilon=1/(k_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=\frac{2\pi mc}{h}$; $\epsilon=1/(k_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
 ## The Action in the Non-Quantum Limit: The Three Blocks
 The parent's central action.
 
@@ -103,7 +103,7 @@ $$
 
 which with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ is $\left(\partial_{r'_{t}}S\right)^{2}-\lvert\vec\nabla_\Phi S\rvert^{2}=m^{2}c^{2}$, the mass shell.
 
-On the full action the same variation carries the quantum potential. Keeping the scale's block, $\partial L/\partial(\partial_\mu \varrho)$ is nonzero and the Euler–Lagrange equation gains the divergence:
+On the full action the same variation carries the quantum potential. Keeping the scale's block, $\partial L/\partial(\partial_{\imath} \varrho)$ is nonzero and the Euler–Lagrange equation gains the divergence:
 
 $$
 2\varrho\Bigl[\bigl(\partial\theta_{\mathrm{pha}}\bigr)^{2}-k_{m}^{2}\Bigr]-2\Box_\Phi \varrho=0 ,
@@ -136,7 +136,7 @@ which is $\partial_{r'_{t}}(\rho_{\mathrm{num}}\partial_{r'_{t}}S)-\vec\nabla_\P
 
 It is identical on the full action, because the deleted block has no $\theta_{\mathrm{pha}}$. Both derivatives of the Lagrangian with respect to the phase are the same expression before and after the deletion, so no rearrangement is needed. **The transport equation is not an order of an expansion**; it is invariant under a deletion that removes a whole block.
 
-The current follows from the same variation. Differentiating $\varrho^{2}(\partial\theta)^{2}$ with respect to $\partial_\mu\theta$ returns $2\varrho^{2}\partial_\mu\theta$, so the current is $\rho_{\mathrm{num}}\partial_\mu S$, which is the parent's $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde P_\Phi/m$ up to the mass factor. The truncated action already knows the current, and the transport equation is its conservation.
+The current follows from the same variation. Differentiating $\varrho^{2}(\partial\theta)^{2}$ with respect to $\partial_{\imath}\theta$ returns $2\varrho^{2}\partial_{\imath}\theta$, so the current is $\rho_{\mathrm{num}}\partial_{\imath} S$, which is the parent's $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde P_\Phi/m$ up to the mass factor. The truncated action already knows the current, and the transport equation is its conservation.
 
 The pair the limit produces, in the parent's words. Relativistic irrotational dust: a pressureless flow along the phase gradient, with the density carried by the flow and the four-velocity normalised to $mc$. The parent states that with the quantum term the fluid is not dust, and that without it the pair is dust. This article supplies the action of the dust and nothing more.
 ## The Noether Currents: Density, Charge and Energy

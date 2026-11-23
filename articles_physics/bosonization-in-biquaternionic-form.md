@@ -22,7 +22,7 @@ The article proceeds as follows. The next section reduces the framework to the t
 
 Bosonization lives in two dimensions, and the framework must be reduced before it can be stated.
 
-**The frame.** The arena is the material frame of *Frame and Metric Conventions* read in two slots, $Q_t$ and $Q_x$, reached from the four-slot frame by dropping the two spatial directions $Q_y$ and $Q_z$. The two directions of the arena are $e_t$ and $\vec e_x$. Every display below contracts with the plain weight $\varepsilon=(1,-1)$ of *Frame and Metric Conventions*, §*The Rules*, read in the arena's two slots, and every coordinate derivative is written $\partial/\partial R_\mu$ as *Operator and Calculus Conventions* fixes it. Nothing else of the frame is restated here.
+**The frame.** The arena is the material frame of *Frame and Metric Conventions* read in two slots, $Q_t$ and $Q_x$, reached from the four-slot frame by dropping the two spatial directions $Q_y$ and $Q_z$. The two directions of the arena are $e_t$ and $\vec e_x$. Every display below contracts with the plain weight $\varepsilon=(1,-1)$ of *Frame and Metric Conventions*, §*The Rules*, read in the arena's two slots, and every coordinate derivative is written $\partial/\partial R_{\imath}$ as *Operator and Calculus Conventions* fixes it. Nothing else of the frame is restated here.
 
 **The two generator actions.** The two directions act on an element by multiplication on the two sides. The timelike direction is the action $A_t:Q\mapsto iQ\vec e_x$, and the spacelike direction is the action $A_x:Q\mapsto i\vec e_xQ\vec e_y$. Both are the frame's two basis operators read in the arena, and their products are derived here. Composing each with itself,
 $$
@@ -69,8 +69,8 @@ The reduction is a derived form. In the timelike component the basis operator $i
 **The standard dictionary.** For a massless field $\tilde{Ξ}$ and a real scalar $\xi_{\mathrm{scl}}$, with a normalisation constant $\alpha$ setting the short-distance cutoff and with the convention $\epsilon_{01}=+1$,
 $$
 \boxed{\;
-j_\mu \;\longleftrightarrow\;
--\frac{1}{\sqrt{\pi}}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\frac{\partial\xi_{\mathrm{scl}}}{\partial R_\nu} ,
+j_{\imath} \;\longleftrightarrow\;
+-\frac{1}{\sqrt{\pi}}\sum_{\jmath}\epsilon_{\imath\jmath}\varepsilon_{\jmath}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_{\jmath}} ,
 \qquad
 \mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\bigr) \;\longleftrightarrow\;
 -\frac{1}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\xi_{\mathrm{scl}}\big)\;},
@@ -79,10 +79,10 @@ whose components are $j_t\leftrightarrow\frac{1}{\sqrt\pi}\partial\xi_{\mathrm{s
 
 **The two divergences.** The vector current is conserved and the axial current is not:
 $$
-\sum_\mu\varepsilon_\mu\frac{\partial j_\mu}{\partial R_\mu} = 0 ,
+\sum_{\imath}\varepsilon_{\imath}\frac{\partial j_{\imath}}{\partial R_{\imath}} = 0 ,
 \qquad
-\sum_\mu\varepsilon_\mu\frac{\partial j_{5\mu}}{\partial R_\mu}
-= -\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\xi_{\mathrm{scl}}}{\partial R_\mu^2} ,
+\sum_{\imath}\varepsilon_{\imath}\frac{\partial j_{5\imath}}{\partial R_{\imath}}
+= -\frac{1}{\sqrt\pi}\sum_{\imath}\varepsilon_{\imath}\frac{\partial^2\xi_{\mathrm{scl}}}{\partial R_{\imath}^2} ,
 $$
 the plain weight sitting inside the divergence. The operator on the right is the quaternionic norm of the gradient of *Operator and Calculus Conventions*, §*The Gradient*, and not the d'Alembertian of the same section: the two differ in the sign of the spatial part, and the anomaly carries the first. The second relation is the anomaly.
 
@@ -96,7 +96,7 @@ j_{5,h_t}=-\frac{1}{\sqrt\pi}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_t},
 \qquad
 j_{5,r_x}=-\frac{1}{\sqrt\pi}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_x} :
 $$
-the axial current is a gradient. The plain exchange $\sum_\nu\epsilon_{\mu\nu}j_\nu$, with no weight in the sum, is not a gradient: its two components have opposite relative signs, and the weighted dual is the one the anomaly uses. These are standard (Coleman 1975; Mandelstam 1975; von Delft and Schoeller 1998), and the framework does not alter them.
+the axial current is a gradient. The plain exchange $\sum_{\jmath}\epsilon_{\imath\jmath}j_{\jmath}$, with no weight in the sum, is not a gradient: its two components have opposite relative signs, and the weighted dual is the one the anomaly uses. These are standard (Coleman 1975; Mandelstam 1975; von Delft and Schoeller 1998), and the framework does not alter them.
 
 **What the dictionary identifies.** The correspondence is a map
 $$
@@ -172,7 +172,7 @@ The equivalence is exact only with the anomaly included, and the framework's cou
 
 **The anomaly's role.** The dictionary's current relation and mass relation cannot both hold with the free-field stress tensor: the fermionic stress tensor and the bosonic one differ by a c-number, and the difference is the anomaly. Equivalently, the two-point function of the fermion current has a contact term that the boson's two-derivative two-point function reproduces only with the correct normalisation, and that normalisation is the central charge. In two dimensions the anomalous trace is
 $$
-\sum_\mu\varepsilon_\mu T_{\mu\mu} = \frac{c}{24\pi}R
+\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath} = \frac{c}{24\pi}R
 $$
 from *The Conformal Anomaly in Biquaternionic Form*, and the matching of $c$ on the two sides is the consistency condition the dictionary must satisfy.
 
@@ -190,11 +190,11 @@ The framework supplies the factor $2$ as the two Majorana fields into which one 
 
 The fermionic side of the dictionary is built from vertex operators, and their dimensions are the sharpest arithmetic of the equivalence.
 
-**The current algebra.** In the bosonized language the current is $j_\mu=-\frac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial\xi_{\mathrm{scl}}/\partial R_\nu$ (the dictionary above), whose components are $j_t=\frac{1}{\sqrt\pi}\partial\xi_{\mathrm{scl}}/\partial R_x$ and $j_x=\frac{1}{\sqrt\pi}\partial\xi_{\mathrm{scl}}/\partial R_t$, and the equal-time commutator of the two lower-index components in the arena is
+**The current algebra.** In the bosonized language the current is $j_{\imath}=-\frac{1}{\sqrt\pi}\sum_{\jmath}\epsilon_{\imath\jmath}\varepsilon_{\jmath}\partial\xi_{\mathrm{scl}}/\partial R_{\jmath}$ (the dictionary above), whose components are $j_t=\frac{1}{\sqrt\pi}\partial\xi_{\mathrm{scl}}/\partial R_x$ and $j_x=\frac{1}{\sqrt\pi}\partial\xi_{\mathrm{scl}}/\partial R_t$, and the equal-time commutator of the two lower-index components in the arena is
 $$
 \bigl[j_t(Q_x),j_x(Q_y)\bigr] = \frac{i}{\pi}\,\frac{d\delta}{dQ_x}(Q_x-Q_y),
 $$
-the **Schwinger term**. The sign and the coefficient are the canonical commutator's: the commutator $[\xi_{\mathrm{scl}},\partial\xi_{\mathrm{scl}}/\partial R_t]=i\delta$ in units of $\frac{h}{2\pi}$, the corpus's convention, gives $\frac{1}{\pi}[\partial\xi_{\mathrm{scl}}/\partial R_x,\partial\xi_{\mathrm{scl}}/\partial R_t]$, which is $\frac{i}{\pi}$ times the derivative of the delta written in the display above. Both indices are low, so no metric sign enters this commutator; the signs are already carried by the dictionary's $\epsilon_{\mu\nu}\varepsilon_\nu$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being the second relation of the dictionary section.
+the **Schwinger term**. The sign and the coefficient are the canonical commutator's: the commutator $[\xi_{\mathrm{scl}},\partial\xi_{\mathrm{scl}}/\partial R_t]=i\delta$ in units of $\frac{h}{2\pi}$, the corpus's convention, gives $\frac{1}{\pi}[\partial\xi_{\mathrm{scl}}/\partial R_x,\partial\xi_{\mathrm{scl}}/\partial R_t]$, which is $\frac{i}{\pi}$ times the derivative of the delta written in the display above. Both indices are low, so no metric sign enters this commutator; the signs are already carried by the dictionary's $\epsilon_{\imath\jmath}\varepsilon_{\jmath}$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being the second relation of the dictionary section.
 
 **Vertex operators.** The bosonized fermion is an exponential of the boson field, the **vertex operator**
 $$
@@ -247,7 +247,7 @@ The non-abelian extension is stated and its status fixed.
 
 **Standard, and transcribed.**
 
-- The abelian dictionary: $j_\mu\leftrightarrow-\tfrac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial\xi_{\mathrm{scl}}/\partial R_\nu$, $\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ} i\vec e_x)\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\xi_{\mathrm{scl}})$; the axial anomaly $\sum_\mu\varepsilon_\mu\partial j_{5\mu}/\partial R_\mu=-\tfrac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\partial^2\xi_{\mathrm{scl}}/\partial R_\mu^2$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
+- The abelian dictionary: $j_{\imath}\leftrightarrow-\tfrac{1}{\sqrt\pi}\sum_{\jmath}\epsilon_{\imath\jmath}\varepsilon_{\jmath}\partial\xi_{\mathrm{scl}}/\partial R_{\jmath}$, $\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ} i\vec e_x)\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\xi_{\mathrm{scl}})$; the axial anomaly $\sum_{\imath}\varepsilon_{\imath}\partial j_{5\imath}/\partial R_{\imath}=-\tfrac{1}{\sqrt\pi}\sum_{\imath}\varepsilon_{\imath}\partial^2\xi_{\mathrm{scl}}/\partial R_{\imath}^2$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
 - The Schwinger term $[j_t,j_x]=\tfrac{i}{\pi}\delta'$, $\delta'$ being the derivative of the delta, with both indices low; the vertex operators with $\mathsf{d}_{\mathrm{ch}}=\beta^2/8\pi$ at $\beta=2\sqrt\pi$; the Sugawara stress tensor and its $c=1$.
 - The Coleman–Mandelstam equivalence of the massive Thirring model and sine-Gordon; the soliton–fermion correspondence.
 - The central charge $c=1$ for a complex fermion and for a real boson, and $c=\tfrac12$ for a Majorana field.
@@ -266,7 +266,7 @@ The non-abelian extension is stated and its status fixed.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gamma symbols are used only in this section; every other section writes the same objects as basis operators. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$ with $L_{a}R_{b}$, and the two-dimensional chirality is their product, the basis operator $L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}$, not the four-dimensional $\gamma_5$.
 
@@ -307,34 +307,34 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The standard gamma identities.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$ and $\varepsilon=(1,-1,-1,-1)$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}+\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
-The four contraction sums, with the index $\mu$ summed over the frame and the weight $\varepsilon_\mu$ carried on the sum, are
+The four contraction sums, with the index $\mu$ summed over the frame and the weight $\varepsilon_{\imath}$ carried on the sum, are
 $$
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu A\gamma_\mu=-(-1)^{n+1}(4-2n)A ,
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4,\qquad
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha,\qquad
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} A\gamma_{\imath}=-(-1)^{n+1}(4-2n)A ,
 $$
-the general rule being $\sum_\mu\varepsilon_\mu\gamma_\mu A\gamma_\mu=-(-1)^{n+1}(4-2n)A$ for $A$ a product of $n$ distinct generators. The weight sits in the sum and nowhere else: with no weight the sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spacelike sums vanish, $\sum_\mu\gamma_\mu\gamma_\eta\gamma_\mu=0$.
+the general rule being $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} A\gamma_{\imath}=-(-1)^{n+1}(4-2n)A$ for $A$ a product of $n$ distinct generators. The weight sits in the sum and nowhere else: with no weight the sums read $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=-2I_4$, $\sum_{\imath}\gamma_{\imath}\gamma_0\gamma_{\imath}=+4\gamma_0$, and the spacelike sums vanish, $\sum_{\imath}\gamma_{\imath}\gamma_\eta\gamma_{\imath}=0$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -347,7 +347,7 @@ $$
 $$
 \mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\bigr)\longleftrightarrow-\frac{1}{\pi\alpha}\cos\big(2\sqrt\pi\,\xi_{\mathrm{scl}}\big),
 \qquad
-\sum_\mu\varepsilon_\mu\frac{\partial j_{5\mu}}{\partial R_\mu}=-\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\xi_{\mathrm{scl}}}{\partial R_\mu^2},
+\sum_{\imath}\varepsilon_{\imath}\frac{\partial j_{5\imath}}{\partial R_{\imath}}=-\frac{1}{\sqrt\pi}\sum_{\imath}\varepsilon_{\imath}\frac{\partial^2\xi_{\mathrm{scl}}}{\partial R_{\imath}^2},
 $$
 and the framework's contribution is to name the two sides: the fermion is an element of the algebra, read in one value for the count, and the boson is a central scalar, so that the equivalence is a correspondence between the algebra's operator algebra and the centre's exponentiated algebra. The counting $c_{\text{Dirac}}=2\times\tfrac12=1=c_{\text{boson}}$ matches the central charges, the framework's linear mass — the exchange of the two values, carried in the arena by the right factor $\vec e_y$ — bosonizes to the cosine, and the mass's central phase $\exp(i\theta_{\mathrm{cen}})$ bosonizes to a shift of the boson field, the same central phase that weights the $\theta_{\mathrm{vac}}$ vacuum. The dictionary, the sine-Gordon equivalence, the Schwinger model, and the non-abelian case with its Wess–Zumino term are standard and transcribed.
 
@@ -367,14 +367,14 @@ and the framework's contribution is to name the two sides: the fermion is an ele
 | $j_t$, $j_x$ | The two current components, the scalar parts $\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ and $\mathrm{Sc}(\tilde{Ξ}^*\vec e_x\tilde{Ξ}\vec e_z)$ |
 | $j_{5,t}$, $j_{5,x}$ | The axial components, $-j_x$ and $-j_t$ |
 | $\varepsilon=(1,-1)$ | The plain weight of the arena's two slots (*Frame and Metric Conventions*, §*The Rules*) |
-| $\epsilon_{\mu\nu}$ | Antisymmetric symbol, $\epsilon_{01}=+1$ |
+| $\epsilon_{\imath\jmath}$ | Antisymmetric symbol, $\epsilon_{01}=+1$ |
 | $\xi_{\mathrm{scl}}$ | The real boson field, central |
 | $\alpha$ | Short-distance cutoff in the dictionary |
 | $\theta_{\mathrm{cen}}$ | Phase of the mass, $m=|m|e^{i\theta_{\mathrm{cen}}}$; also the $\theta_{\mathrm{vac}}$-vacuum angle |
 | $\Box_\Phi$ | The d'Alembertian (*Operator and Calculus Conventions*); the boson's free equation is $\Box_\Phi\xi_{\mathrm{scl}}=0$ |
 | $\beta=2\sqrt\pi$ | Sine-Gordon coupling |
 | $:\!\exp(i\theta_{\mathrm{cen}}\xi_{\mathrm{scl}})\!:$ | Vertex operator; dimension $\theta_{\mathrm{cen}}^2/4\pi$ on the full field and $\theta_{\mathrm{cen}}^2/8\pi$ on one half |
-| $T_{\mu\nu}$ | Stress tensor of the boson |
+| $T_{\imath\jmath}$ | Stress tensor of the boson |
 | $c$ | Central charge; $c=1$ for a Dirac fermion or a real boson |
 
 ## Further Reading

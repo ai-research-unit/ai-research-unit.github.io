@@ -66,7 +66,7 @@ $$
 **The transmutation.** Combining the classical factor with the prefactor replaces the coupling by a scale,
 
 $$
-\boxed{\;\Lambda=\mu\,e^{-8\pi^2/(b_0g^2(\mu))}\;}
+\boxed{\;\Lambda=\mu\,e^{-8\pi^2/(b_0g^2(\imath))}\;}
 $$
 
 so the theory trades a dimensionless coupling for a dimensionful parameter. This is dimensional transmutation, and it is the reason a theory with no mass parameter can have a mass gap.

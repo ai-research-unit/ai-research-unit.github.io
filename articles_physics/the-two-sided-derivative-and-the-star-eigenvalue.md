@@ -5,7 +5,7 @@
 A frame field that carries a curved metric needs a derivative before anything can be computed with it, and the derivative the framework uses is two-sided:
 
 $$
-D_{\mu}\tilde Q=\partial_{\mu}\tilde Q+\vec\Gamma_{\mu}\tilde Q+\tilde Q\vec\Gamma_{\mu}^{*}.
+D_{\imath}\tilde Q=\partial_{\imath}\tilde Q+\vec\Gamma_{\imath}\tilde Q+\tilde Q\vec\Gamma_{\imath}^{*}.
 $$
 
 Two products instead of one. This article explains why there are two, and what the two-sided form buys that a one-sided or commutator form does not. It is the article a reader needs before any calculation with a curved connection, and it exists because that explanation is scattered across the gravitational articles of the series and is nowhere stated once.
@@ -58,7 +58,7 @@ $$
 \tilde Q\longmapsto \vec G\tilde Q+\tilde Q\vec G^{*}.
 $$
 
-**The derivative's shape is now forced.** A connection with values $\vec\Gamma_{\mu}$ in the same subspace must subtract this generator, and it must subtract it **on both sides**, because the generator has two products. A prescription that compensates only on the left cannot be covariant: the right product $\tilde Q\vec\Gamma^{*}$ is not a left multiplication by any algebra element, so no choice of a left connection removes it. This is the entire content of the "two-sided" in the derivative's name, and it is a consequence of the action rather than a design choice.
+**The derivative's shape is now forced.** A connection with values $\vec\Gamma_{\imath}$ in the same subspace must subtract this generator, and it must subtract it **on both sides**, because the generator has two products. A prescription that compensates only on the left cannot be covariant: the right product $\tilde Q\vec\Gamma^{*}$ is not a left multiplication by any algebra element, so no choice of a left connection removes it. This is the entire content of the "two-sided" in the derivative's name, and it is a consequence of the action rather than a design choice.
 
 **The test case that separates the candidates.** Take $\vec G=i\vec e_x$, a boost, and $\tilde Q=i q'_t e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ a general material element. Then
 
@@ -85,10 +85,10 @@ $$
 and every connection value decomposes accordingly:
 
 $$
-\vec\Gamma_{\mu}=\vec\omega_{\mu}+\vec\beta_{\mu},\qquad \vec\omega_{\mu}^{*}=-\vec\omega_{\mu},\qquad \vec\beta_{\mu}^{*}=+\vec\beta_{\mu}.
+\vec\Gamma_{\imath}=\vec\omega_{\imath}+\vec\beta_{\imath},\qquad \vec\omega_{\imath}^{*}=-\vec\omega_{\imath},\qquad \vec\beta_{\imath}^{*}=+\vec\beta_{\imath}.
 $$
 
-The names are the physical ones: $\vec\omega_\mu$ is the **rotation part** of the connection and $\vec\beta_\mu$ the **boost part**. The eigenvalues are real and the decomposition is canonical — it is not a choice of basis, since an eigenspace decomposition of a linear map is invariant — so the split of a connection into its rotation and boost halves is well defined for every connection and no convention enters.
+The names are the physical ones: $\vec\omega_{\imath}$ is the **rotation part** of the connection and $\vec\beta_{\imath}$ the **boost part**. The eigenvalues are real and the decomposition is canonical — it is not a choice of basis, since an eigenspace decomposition of a linear map is invariant — so the split of a connection into its rotation and boost halves is well defined for every connection and no convention enters.
 
 **The identity.** Let $\vec G$ be scalar-free with $\vec G^{*}=\sigma\vec G$, $\sigma=\pm1$. Then
 
@@ -103,7 +103,7 @@ $$
 This is the whole of the article's technical content, and it is one line: the two-sided prescription is a commutator on one eigenspace and an anticommutator on the other. Applying the identity component by component gives the decomposition of the derivative itself,
 
 $$
-\boxed{\;D_{\mu}\tilde Q=\partial_{\mu}\tilde Q+[\vec\omega_{\mu},\tilde Q]+\{\vec\beta_{\mu},\tilde Q\}\;},
+\boxed{\;D_{\imath}\tilde Q=\partial_{\imath}\tilde Q+[\vec\omega_{\imath},\tilde Q]+\{\vec\beta_{\imath},\tilde Q\}\;},
 $$
 
 which was checked on a hundred random connections and material elements with no residual. The two-sided derivative is a **commutator plus an anticommutator**, and the two terms are the two halves of the local Lorentz group.
@@ -124,31 +124,31 @@ Both were checked on explicit rotors, and the two statements are the rotor-level
 
 ## Why the Commutator Prescription Fails, and What It Would Be Right For
 
-The commutator prescription is a real prescription: it is the covariant derivative of the adjoint action. It is correct, and it is the right derivative, for a field that transforms in the adjoint representation — for a bivector, for a connection, for anything whose transformation law is $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$. The frame field does not transform that way. It transforms by conjugation, $\tilde E_{\Phi,\mu}\mapsto\tilde U\tilde E_{\Phi,\mu}\tilde U^{*}$, and the two agree only when $\tilde U^{*}=\tilde U^{-1}$, that is, only on the rotation subgroup.
+The commutator prescription is a real prescription: it is the covariant derivative of the adjoint action. It is correct, and it is the right derivative, for a field that transforms in the adjoint representation — for a bivector, for a connection, for anything whose transformation law is $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$. The frame field does not transform that way. It transforms by conjugation, $\tilde E_{\Phi,\imath}\mapsto\tilde U\tilde E_{\Phi,\imath}\tilde U^{*}$, and the two agree only when $\tilde U^{*}=\tilde U^{-1}$, that is, only on the rotation subgroup.
 
 So the failure is not an algebraic slip that a factor could repair. It is a representation-theoretic mismatch: the commutator derivative is the derivative for the adjoint representation and the frame is in the vector representation. Written as a table,
 
 | Field | Transformation | Correct derivative |
 |---|---|---|
-| frame $\tilde E_{\Phi,\mu}$, four-vector | $\tilde U\tilde E\tilde U^{*}$ | $\partial_\mu\tilde E+\vec\Gamma_\mu\tilde E+\tilde E\vec\Gamma_\mu^{*}$ |
-| bivector, connection | $\tilde U\tilde Q\tilde U^{-1}$ | $\partial_\mu\tilde Q+[\vec\Gamma_\mu,\tilde Q]$ |
-| rotation-only field | $\tilde U\tilde Q\tilde U^{-1}$, $\tilde U$ compact | $\partial_\mu\tilde Q+[\vec\omega_\mu,\tilde Q]$ |
+| frame $\tilde E_{\Phi,\imath}$, four-vector | $\tilde U\tilde E\tilde U^{*}$ | $\partial_{\imath}\tilde E+\vec\Gamma_{\imath}\tilde E+\tilde E\vec\Gamma_{\imath}^{*}$ |
+| bivector, connection | $\tilde U\tilde Q\tilde U^{-1}$ | $\partial_{\imath}\tilde Q+[\vec\Gamma_{\imath},\tilde Q]$ |
+| rotation-only field | $\tilde U\tilde Q\tilde U^{-1}$, $\tilde U$ compact | $\partial_{\imath}\tilde Q+[\vec\omega_{\imath},\tilde Q]$ |
 
 The third line is a special case of the second and is not available for a boost. This is the table that the recurring external summary should have had.
 
-**A second, independent check that a one-sided derivative cannot work.** Count the connection components needed to make each prescription covariant on the material sector. Under a position-dependent rotor the derivative must transform as $\tilde U(D_\mu\tilde Q)\tilde U^{*}$, which requires six real compensatory parameters per direction. The left connection $\vec\Gamma_\mu$ supplies six; the right connection $\vec\Gamma_\mu^{*}$ supplies the same six again, since $\vec\Gamma\mapsto\vec\Gamma^{*}$ is a linear isomorphism of the six-dimensional subspace onto itself. So the two-sided form has exactly the twelve real parameters per direction that a covariant derivative on the vector representation needs, and the one-sided form has six. The count is not a coincidence and it is not an argument by analogy: it is the dimension of the representation.
+**A second, independent check that a one-sided derivative cannot work.** Count the connection components needed to make each prescription covariant on the material sector. Under a position-dependent rotor the derivative must transform as $\tilde U(D_{\imath}\tilde Q)\tilde U^{*}$, which requires six real compensatory parameters per direction. The left connection $\vec\Gamma_{\imath}$ supplies six; the right connection $\vec\Gamma_{\imath}^{*}$ supplies the same six again, since $\vec\Gamma\mapsto\vec\Gamma^{*}$ is a linear isomorphism of the six-dimensional subspace onto itself. So the two-sided form has exactly the twelve real parameters per direction that a covariant derivative on the vector representation needs, and the one-sided form has six. The count is not a coincidence and it is not an argument by analogy: it is the dimension of the representation.
 
 ## The Logarithmic Derivative Is Scalar-Free
 
-A frame built from a rotor field, $\tilde E_{\Phi,\mu}=\tilde U\vec e_\mu\tilde U^{*}$ with $\vec e_0=ie_t$, needs a connection that makes it constant. The candidate is the rotor's logarithmic derivative, and it has the property that makes the construction work.
+A frame built from a rotor field, $\tilde E_{\Phi,\imath}=\tilde U\vec e_{\imath}\tilde U^{*}$ with $\vec e_0=ie_t$, needs a connection that makes it constant. The candidate is the rotor's logarithmic derivative, and it has the property that makes the construction work.
 
-**Claim.** If $\tilde U$ is a unit-norm biquaternion field, then $\tilde U^{\natural}\partial_\mu\tilde U$ is scalar-free.
+**Claim.** If $\tilde U$ is a unit-norm biquaternion field, then $\tilde U^{\natural}\partial_{\imath}\tilde U$ is scalar-free.
 
-**Proof.** Differentiate $\tilde U^{\natural}\tilde U=e_t$: $(\partial_\mu\tilde U^{\natural})\tilde U+\tilde U^{\natural}\partial_\mu\tilde U=0$. Let $\vec A=\tilde U^{\natural}\partial_\mu\tilde U$. Then $\vec A^{\natural}=(\partial_\mu\tilde U^{\natural})\tilde U=-\vec A$, and $\mathrm{Sc}$ is invariant under ${}^{\natural}$, so $\mathrm{Sc}(\vec A)=\mathrm{Sc}(\vec A^{\natural})=-\mathrm{Sc}(\vec A)$, hence $\mathrm{Sc}(\vec A)=0$.
+**Proof.** Differentiate $\tilde U^{\natural}\tilde U=e_t$: $(\partial_{\imath}\tilde U^{\natural})\tilde U+\tilde U^{\natural}\partial_{\imath}\tilde U=0$. Let $\vec A=\tilde U^{\natural}\partial_{\imath}\tilde U$. Then $\vec A^{\natural}=(\partial_{\imath}\tilde U^{\natural})\tilde U=-\vec A$, and $\mathrm{Sc}$ is invariant under ${}^{\natural}$, so $\mathrm{Sc}(\vec A)=\mathrm{Sc}(\vec A^{\natural})=-\mathrm{Sc}(\vec A)$, hence $\mathrm{Sc}(\vec A)=0$.
 
-The same argument gives $\partial_\mu\tilde U\,\tilde U^{\natural}$ scalar-free, and the two are related by conjugation. So both natural one-sided logarithmic derivatives live in the six-dimensional Lie subspace, which is exactly what a connection needs, and the derivative's value is $\mathbb{B}$-valued with no scalar leakage.
+The same argument gives $\partial_{\imath}\tilde U\,\tilde U^{\natural}$ scalar-free, and the two are related by conjugation. So both natural one-sided logarithmic derivatives live in the six-dimensional Lie subspace, which is exactly what a connection needs, and the derivative's value is $\mathbb{B}$-valued with no scalar leakage.
 
-This was checked numerically along an explicit one-parameter rotation rotor with a finite-difference derivative: the scalar part of $\tilde U^{\natural}\partial_\mu\tilde U$ came out at the $10^{-11}$ level, which is the finite-difference noise floor, while the vector part was $\tfrac12\vec e_x$ as expected for a rotor of angle $t$ about $x$.
+This was checked numerically along an explicit one-parameter rotation rotor with a finite-difference derivative: the scalar part of $\tilde U^{\natural}\partial_{\imath}\tilde U$ came out at the $10^{-11}$ level, which is the finite-difference noise floor, while the vector part was $\tfrac12\vec e_x$ as expected for a rotor of angle $t$ about $x$.
 
 **What the logarithmic derivative is not.** It is not a connection for an arbitrary frame, only for a frame that is pure rotor gauge of the rigid frame. For a general frame the logarithmic derivative of the frame does not exist as a single biquaternion, because the frame is four elements rather than one, and the connection must be supplied by a separate field. This is the precise content of the statement, repeated in the companion articles, that **the algebra supplies the home of the connection and not the connection**.
 
@@ -158,13 +158,13 @@ The derivative's shape is not a choice, but everything else about a connection i
 
 **The shape is a consequence.** Two-sidedness follows from the conjugacy of the action. Nothing is assumed, and no alternative is available for a four-vector.
 
-**The values are not determined.** $\vec\Gamma_\mu$ is an independent field with six real components per direction. The algebra supplies the six-dimensional space it lives in and does not choose a point of it: there is no algebraic condition that a connection must satisfy.
+**The values are not determined.** $\vec\Gamma_{\imath}$ is an independent field with six real components per direction. The algebra supplies the six-dimensional space it lives in and does not choose a point of it: there is no algebraic condition that a connection must satisfy.
 
-**Metric compatibility is a condition on the values.** Requiring $D_\mu g_{\nu\rho}=0$ for the Gram metric forces the connection coefficients to be antisymmetric in the frame's own index pair, which is what reduces the sixty-four components of a general linear connection to the twenty-four of a Lorentz connection. It is imposed rather than derived: the algebra does not prefer an antisymmetric pair to any other, it supplies the six-dimensional space in which the antisymmetry lives.
+**Metric compatibility is a condition on the values.** Requiring $D_{\imath} g_{\jmath\rho}=0$ for the Gram metric forces the connection coefficients to be antisymmetric in the frame's own index pair, which is what reduces the sixty-four components of a general linear connection to the twenty-four of a Lorentz connection. It is imposed rather than derived: the algebra does not prefer an antisymmetric pair to any other, it supplies the six-dimensional space in which the antisymmetry lives.
 
 **Torsion-freedom is a second, separate condition.** A connection can be metric-compatible and carry torsion, and the framework has no preference between those cases, because it has no action that would break the tie. Torsion is a frame-index object with twenty-four components, so imposing its vanishing fixes the remaining twenty-four parameters and leaves the unique Levi-Civita connection; the framework inherits that solution and not the reason for it.
 
-**The curvature is the ordinary one.** With the connection valued in $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, the curvature is a $\mathbb{B}$-valued two-form with the usual expression $\vec F_{\mu\nu}=\partial_\mu\vec\Gamma_\nu-\partial_\nu\vec\Gamma_\mu+[\vec\Gamma_\mu,\vec\Gamma_\nu]$, and its action on a material element is by the two-sided prescription with $\vec F_{\mu\nu}$ in place of $\vec\Gamma_\mu$. The commutator appears here for the connection and the two-sided form appears for the field, and there is no inconsistency: the connection transforms in the adjoint representation and the frame in the vector representation, which is the table above read at the level of curvature.
+**The curvature is the ordinary one.** With the connection valued in $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, the curvature is a $\mathbb{B}$-valued two-form with the usual expression $\vec F_{\imath\jmath}=\partial_{\imath}\vec\Gamma_{\jmath}-\partial_{\jmath}\vec\Gamma_{\imath}+[\vec\Gamma_{\imath},\vec\Gamma_{\jmath}]$, and its action on a material element is by the two-sided prescription with $\vec F_{\imath\jmath}$ in place of $\vec\Gamma_{\imath}$. The commutator appears here for the connection and the two-sided form appears for the field, and there is no inconsistency: the connection transforms in the adjoint representation and the frame in the vector representation, which is the table above read at the level of curvature.
 
 **Where the framework stops.** The path-ordered exponential is the single operation in the chain connection–curvature–holonomy that $\mathbb{B}$ does not generate. A holonomy is an element of $SL(2,\mathbb{C})$ obtained by integrating a connection along a curve, and the integral is not an algebra operation. Everything up to the curvature is pointwise and therefore native; the holonomy is not, and the programme's accounting says so.
 
@@ -182,7 +182,7 @@ The alternative proposal that a commutative connection suffices has a defensible
 
 The two-sided derivative is forced by the conjugacy of the rotor action: the infinitesimal generator is $\vec G\tilde Q+\tilde Q\vec G^{*}$, so a connection must compensate on both sides, and no left connection can absorb the right product.
 
-Star acts on the six-dimensional scalar-free subspace with eigenvalues $-1$ on the rotation generators $\vec e_\eta$ and $+1$ on the boost generators $i\vec e_\eta$. Consequently the two-sided derivative is a commutator on the rotation half and an anticommutator on the boost half, $D_\mu\tilde Q=\partial_\mu\tilde Q+[\vec\omega_\mu,\tilde Q]+\{\vec\beta_\mu,\tilde Q\}$, and this was checked on a hundred random cases with no residual.
+Star acts on the six-dimensional scalar-free subspace with eigenvalues $-1$ on the rotation generators $\vec e_\eta$ and $+1$ on the boost generators $i\vec e_\eta$. Consequently the two-sided derivative is a commutator on the rotation half and an anticommutator on the boost half, $D_{\imath}\tilde Q=\partial_{\imath}\tilde Q+[\vec\omega_{\imath},\tilde Q]+\{\vec\beta_{\imath},\tilde Q\}$, and this was checked on a hundred random cases with no residual.
 
 The rotor-level twin states the same thing: a rotation rotor satisfies $\tilde U^{*}=\tilde U^{-1}$ and a boost rotor satisfies $\tilde U^{*}=\tilde U$. The commutator prescription is therefore the derivative of the adjoint action, correct for bivectors and for connections, and correct for the frame only on the compact subgroup, where the two actions coincide.
 
@@ -200,13 +200,13 @@ What the derivative does not supply is the connection. Metric compatibility and 
 | $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}=\{\vec G:\mathrm{Sc}(\vec G)=0\}$ | the six-real-dimensional Lie subspace of $SU(2)$ |
 | $\vec e_x,\vec e_y,\vec e_z$ | rotation generators; $^{*}$-eigenvalue $\sigma=-1$ |
 | $i\vec e_x,i\vec e_y,i\vec e_z$ | boost generators; $^{*}$-eigenvalue $\sigma=+1$ |
-| $\vec\Gamma_\mu=\vec\omega_\mu+\vec\beta_\mu$ | connection; rotation part plus boost part |
-| $D_\mu\tilde Q=\partial_\mu\tilde Q+\vec\Gamma_\mu\tilde Q+\tilde Q\vec\Gamma_\mu^{*}$ | the two-sided covariant derivative |
+| $\vec\Gamma_{\imath}=\vec\omega_{\imath}+\vec\beta_{\imath}$ | connection; rotation part plus boost part |
+| $D_{\imath}\tilde Q=\partial_{\imath}\tilde Q+\vec\Gamma_{\imath}\tilde Q+\tilde Q\vec\Gamma_{\imath}^{*}$ | the two-sided covariant derivative |
 | $[\vec G,\tilde Q]=\vec G\tilde Q-\tilde Q\vec G$ | commutator; the $\sigma=-1$ form |
 | $\{\vec G,\tilde Q\}=\vec G\tilde Q+\tilde Q\vec G$ | anticommutator; the $\sigma=+1$ form |
 | $\sigma$ | star eigenvalue of a generator; $-1$ rotation, $+1$ boost |
-| $\vec F_{\mu\nu}=\partial_\mu\vec\Gamma_\nu-\partial_\nu\vec\Gamma_\mu+[\vec\Gamma_\mu,\vec\Gamma_\nu]$ | curvature two-form |
-| $\tilde U^{\natural}\partial_\mu\tilde U$ | logarithmic derivative of a rotor field; scalar-free |
+| $\vec F_{\imath\jmath}=\partial_{\imath}\vec\Gamma_{\jmath}-\partial_{\jmath}\vec\Gamma_{\imath}+[\vec\Gamma_{\imath},\vec\Gamma_{\jmath}]$ | curvature two-form |
+| $\tilde U^{\natural}\partial_{\imath}\tilde U$ | logarithmic derivative of a rotor field; scalar-free |
 
 ## Further Reading
 

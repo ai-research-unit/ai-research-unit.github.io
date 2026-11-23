@@ -31,7 +31,7 @@ The same integral in the other coordinates is the polar companion. *The Path Int
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The material position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, with $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_t}^{2}+|\vec r|^{2}$. The mass parameter is $k_m=\frac{2\pi mc}{h}$. The worldline parameter is $\tau$ and the proper time $T$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The material position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, with $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_t}^{2}+|\vec r|^{2}$. The mass parameter is $k_m=\frac{2\pi mc}{h}$. The worldline parameter is $\tau$ and the proper time $T$.
 
 The one-form of the connection. The potential is written $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ with real coefficients in the abelian case. Its pairing with the worldline tangent is the **real** pairing
 
@@ -47,7 +47,7 @@ $$
 S_{\mathrm{gco}}[x]=-\!ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi ,
 $$
 
-and this is the corpus's sign and not the textbook sign. *The Coupled Dirac Equation in Biquaternionic Form* records the reason: the parent's opposite convention $\partial_\mu-\frac{2\pi iϙ}{h}A_\mu$ is the same coupling with the opposite sign of $ϙ$, and this article inherits the gauge principle's sign and does not flip it. A reader who carries $+q\!\int\!A\cdot\mathrm{d}x$ from a textbook has the same physics and the opposite charge, and the free article's §*The Spin Factor in a Background Field* writes exactly that with a generic $q$: it is this article's term with $q=-ϙ$.
+and this is the corpus's sign and not the textbook sign. *The Coupled Dirac Equation in Biquaternionic Form* records the reason: the parent's opposite convention $\partial_{\imath}-\frac{2\pi iϙ}{h}A_{\imath}$ is the same coupling with the opposite sign of $ϙ$, and this article inherits the gauge principle's sign and does not flip it. A reader who carries $+q\!\int\!A\cdot\mathrm{d}x$ from a textbook has the same physics and the opposite charge, and the free article's §*The Spin Factor in a Background Field* writes exactly that with a generic $q$: it is this article's term with $q=-ϙ$.
 
 The two kernels. The propagator is the pair $\mathcal S_L,\mathcal S_R$ of *The Path Integral and the Dirac Equation in Biquaternionic Form*, now satisfying the two lines with the covariant operators,
 
@@ -64,7 +64,7 @@ Each is an element of $\mathbb{B}$ and not a scalar, and the two are the conjuga
 The action. The worldline action of the free article gains one term,
 
 $$
-S[x,\tilde\Xi_{\mu}]=S_0[x]+S_{\mathrm{spin}}[\tilde\Xi_{\mu}]+S_{\mathrm{gco}}[x],
+S[x,\tilde\Xi_{\imath}]=S_0[x]+S_{\mathrm{spin}}[\tilde\Xi_{\imath}]+S_{\mathrm{gco}}[x],
 \qquad
 S_{\mathrm{gco}}[x]=-\!ϙ\!\int_0^T\tilde A_\Phi\bigl(x(\tau)\bigr)\cdot\mathrm{d}\tilde R_\Phi(\tau),
 $$
@@ -129,11 +129,11 @@ What the three regimes say together. The gauge field has exactly two ways to cha
 The identity. For a constant potential the covariant derivative is removed by a phase,
 
 $$
-\Bigl(\frac{\partial}{\partial R_\mu}+\frac{2\pi iϙ}{h}A_\mu\Bigr)\Bigl(e^{-\frac{2\pi iϙ\tilde A_\Phi\cdot\tilde R_\Phi}{h}}f\Bigr)
-=e^{-\frac{2\pi iϙ\tilde A_\Phi\cdot\tilde R_\Phi}{h}}\frac{\partial f}{\partial R_\mu},
+\Bigl(\frac{\partial}{\partial R_{\imath}}+\frac{2\pi iϙ}{h}A_{\imath}\Bigr)\Bigl(e^{-\frac{2\pi iϙ\tilde A_\Phi\cdot\tilde R_\Phi}{h}}f\Bigr)
+=e^{-\frac{2\pi iϙ\tilde A_\Phi\cdot\tilde R_\Phi}{h}}\frac{\partial f}{\partial R_{\imath}},
 $$
 
-because each component of the connection is a central scalar and the two connection terms cancel. The identity is checked by finite differences to $2\times10^{-11}$ over the four slots, and it is exact by the centality of $A_\mu$: a central number passes through the field and cannot produce a commutator to cancel.
+because each component of the connection is a central scalar and the two connection terms cancel. The identity is checked by finite differences to $2\times10^{-11}$ over the four slots, and it is exact by the centality of $A_{\imath}$: a central number passes through the field and cannot produce a commutator to cancel.
 
 The kernel. Applying the identity to both lines of the pair gives
 
@@ -154,12 +154,12 @@ The limit of the statement. It holds for a potential that is constant on the reg
 The stationary phase is the Lorentz path. Stationarity of $S_0+S_{\mathrm{gco}}$ with respect to the trajectory, with the odd variables integrated out, gives
 
 $$
-\tfrac12\sum_\nu\eta_{\mu\nu}\ddot R_\nu=-ϙ\sum_\nu F_{\mu\nu}\dot R_\nu,
+\tfrac12\sum_{\jmath}\eta_{\imath\jmath}\ddot R_{\jmath}=-ϙ\sum_{\jmath} F_{\imath\jmath}\dot R_{\jmath},
 \qquad
-F_{\mu\nu}=\frac{\partial A_\nu}{\partial R_\mu}-\frac{\partial A_\mu}{\partial R_\nu},
+F_{\imath\jmath}=\frac{\partial A_{\jmath}}{\partial R_{\imath}}-\frac{\partial A_{\imath}}{\partial R_{\jmath}},
 $$
 
-which is the Lorentz equation with every index low, $\ddot R_\mu=-2ϙ\sum_\nu F_{\mu\nu}\dot R_\nu$. The factor two is the normalisation of the kinetic term, $\tfrac14\sum_\mu\dot R_\mu\dot R_\mu$ rather than $\tfrac12$, and it is the same factor that makes a straight line give $-\langle\tilde R_\Phi-\tilde R_{\Phi,2}\rangle_{\natural}/4T$ in the free kernel.
+which is the Lorentz equation with every index low, $\ddot R_{\imath}=-2ϙ\sum_{\jmath} F_{\imath\jmath}\dot R_{\jmath}$. The factor two is the normalisation of the kinetic term, $\tfrac14\sum_{\imath}\dot R_{\imath}\dot R_{\imath}$ rather than $\tfrac12$, and it is the same factor that makes a straight line give $-\langle\tilde R_\Phi-\tilde R_{\Phi,2}\rangle_{\natural}/4T$ in the free kernel.
 
 The check distinguishes the coefficient from its half. On a two-dimensional model with a constant field strength and a Euclidean metric, where the stationary point is a minimum and the comparison is unambiguous, the Euler–Lagrange residual of the path satisfying $\ddot R=-2ϙF\dot R$ falls as $1.7\times10^{-3}$, $4.3\times10^{-4}$, $1.1\times10^{-4}$, $2.7\times10^{-5}$ for ten, twenty, forty and eighty steps, which is second order. The path satisfying $\ddot R=-ϙF\dot R$ keeps a residual of $4.0\times10^{-1}$ at every resolution. The stationary path is the first and not the second, and the Euclidean case is used for the check only: the equation displayed above is the same algebra in the corpus's metric, and the coefficient two is independent of the signs.
 
@@ -171,7 +171,7 @@ $$
 
 and the gauge term's contribution is $-ϙ\!\int\!\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ evaluated on the Lorentz path. For an exact potential it is a boundary term and the phase is the free one plus the endpoint phases. For a field strength it is the flux through the surface between the Lorentz path and the straight line, and it is the part of the phase that the classical motion adds.
 
-The determinant has no term linear in the field strength. The Gaussian fluctuations about the Lorentz path give the van Vleck factor, which is the inverse square root of the determinant of the second variation. That operator is the free one plus a term linear in $F$, the term being $-ϙ\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}\dot R_\nu\delta R_\mu$ after integration by parts: a potential term and not a derivative one. Its contribution to the determinant's logarithm is $-\mathrm{tr}(GV)$, with $G$ the free Jacobi kernel, and $G$ is symmetric under the exchange of the two worldline times while $F$ is antisymmetric in its two indices, so the trace vanishes. **The determinant is even in the field strength**, and the amplitude has no first-order response to a weak field.
+The determinant has no term linear in the field strength. The Gaussian fluctuations about the Lorentz path give the van Vleck factor, which is the inverse square root of the determinant of the second variation. That operator is the free one plus a term linear in $F$, the term being $-ϙ\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}\dot R_{\jmath}\delta R_{\imath}$ after integration by parts: a potential term and not a derivative one. Its contribution to the determinant's logarithm is $-\mathrm{tr}(GV)$, with $G$ the free Jacobi kernel, and $G$ is symmetric under the exchange of the two worldline times while $F$ is antisymmetric in its two indices, so the trace vanishes. **The determinant is even in the field strength**, and the amplitude has no first-order response to a weak field.
 
 The check is the evenness itself. On the two-dimensional model, at a fixed path, the ratio of the second-variation determinant in field strength $B$ to the free determinant is $-6.0\times10^{-4}$, $-2.4\times10^{-3}$, $-9.6\times10^{-3}$ and $-3.8\times10^{-2}$ for $B=0.05$, $0.10$, $0.20$ and $0.40$, and the same values for $-B$: the ratio of the two determinants is unity to $10^{-8}$ over the four field strengths. Divided by $B^{2}$ the deviation is $-0.240$, $-0.240$, $-0.239$, $-0.237$, constant to one percent, so the leading response is quadratic and the linear one is absent. This agrees with the exact constant-field determinant of the standard theory, which is a product of $\sinh(ϙF\tau)/(ϙF\tau)$ factors and is likewise even.
 
@@ -261,14 +261,14 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 | $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$ | Its conjugate; equal for a purely electric potential, opposite for a purely magnetic one |
 | $\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi=A_t\mathrm{d}r'_t+\sum_\eta A_\eta\mathrm{d}r_\eta$ | The real one-form; the algebra product is not used |
 | $S_{\mathrm{gco}}[x]=-ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ | The gauge term of the worldline action; its sign follows the covariant derivative's |
-| $F_{\mu\nu}=\partial A_\nu/\partial R_\mu-\partial A_\mu/\partial R_\nu$ | Field strength; the curvature, and the only object that reaches the spin factor |
+| $F_{\imath\jmath}=\partial A_{\jmath}/\partial R_{\imath}-\partial A_{\imath}/\partial R_{\jmath}$ | Field strength; the curvature, and the only object that reaches the spin factor |
 | $\Phi$ | Flux through the loop two histories enclose |
 | $\mathcal S_L,\mathcal S_R$ | The two components of the coupled propagator, elements of $\mathbb{B}$ |
 | $\mathcal S^{A},\mathcal S^{0}$ | The kernels in a constant potential and in no potential |
 | $\mathcal{F}[x]$ | Spin factor, the path-ordered algebra-valued weight |
 | $\Gamma$ | Real gauge function; $\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$ for an exact potential |
 | $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Gauge angle |
-| $\eta_{\mu\nu}$ | The metric on the four slots, used in the Lorentz equation and in the kinetic normalisation |
+| $\eta_{\imath\jmath}$ | The metric on the four slots, used in the Lorentz equation and in the kinetic normalisation |
 | $T$ | Proper time; $x(\tau)$ the worldline |
 | $k_m=\frac{2\pi mc}{h}$ | Mass parameter |
 

@@ -26,7 +26,7 @@ $$
 
 that is, one scalar direction for time and three real vector directions for space. This is the algebra's realization of $\mathbb{R} \times \mathbb{R}^3$, and it is the setting of every classical problem in this subcategory.
 
-The scalar direction is the imaginary $ie_t$, so the time coordinate appears as the imaginary scalar $i r'_{t}$; the spatial directions are the real $\vec e_\mu$, so the position is a real pure quaternion. The velocity, acceleration, momentum and force are then all real pure quaternions,
+The scalar direction is the imaginary $ie_t$, so the time coordinate appears as the imaginary scalar $i r'_{t}$; the spatial directions are the real $\vec e_{\imath}$, so the position is a real pure quaternion. The velocity, acceleration, momentum and force are then all real pure quaternions,
 
 $$
 \vec v = d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt', \qquad \vec a = d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{t'}^2, \qquad \vec p = m\vec v, \qquad \vec F = m\vec a ,
@@ -54,7 +54,7 @@ $$
 T = -\tfrac12 m\,\vec v^2 = \tfrac12 m\,\langle \vec v\rangle_{\natural} = \tfrac12 m|\vec v|^2 e_t ,
 $$
 
-which is the biquaternion norm of the velocity, up to the mass. The sign is the same algebraic fact — $\vec e_\mu^2 = -e_t$ — that gives the real three-space its Euclidean-square norm and the material sector its Lorentzian sign pattern. In the central-scalar limit, where the velocities are small and the vectors are real, the biquaternion norm of a vector is its positive Euclidean square, and the kinetic energy is a positive central scalar.
+which is the biquaternion norm of the velocity, up to the mass. The sign is the same algebraic fact — $\vec e_{\imath}^2 = -e_t$ — that gives the real three-space its Euclidean-square norm and the material sector its Lorentzian sign pattern. In the central-scalar limit, where the velocities are small and the vectors are real, the biquaternion norm of a vector is its positive Euclidean square, and the kinetic energy is a positive central scalar.
 
 ## The Definition of the Central-Scalar Limit
 
@@ -209,7 +209,7 @@ with the general solution $u = 1/p + C\cos(\theta - \theta_0)$, hence $r = p/(1 
 The rotations of the real three-space are the adjoint actions of the unit real quaternions $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$, acting by $\vec a \mapsto R\vec aR^{*}$. The group is $SU(2)$, the double cover of $SO(3)$, and its Lie algebra is the three-dimensional real space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}$ closed under the commutator, since
 
 $$
-[\vec e_\mu, \vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda .
+[\vec e_{\imath}, \vec e_{\jmath}] = 2\epsilon_{\imath\jmath\lambda}\vec e_\lambda .
 $$
 
 The rotation generators are the real vector directions themselves, up to the factor of two, and this is the vector part of the material sector. The biquaternion algebra thus carries the rotation algebra in the same subspace that carries the position and momentum: the rotations and the rotated objects share the three real directions, and the rotations act on the objects by conjugation.
@@ -268,14 +268,14 @@ $$
 
 whose inverse-square solution is the conic section $r = p/(1 + e\cos(\theta-\theta_0))$ with $p = L^2/(m\kappa)$.
 
-The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{*}$, with Lie algebra $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ in the real three-space; the components of $\vec L$ satisfy $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ under the Poisson bracket, which is a phase-space operation and is not the quaternion commutator. The limit excludes internal vectors (spin), noncentral scalars, and noncentral vector couplings; those structures are the subjects of the sibling subcategories.
+The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{*}$, with Lie algebra $[\vec e_{\imath},\vec e_{\jmath}] = 2\epsilon_{\imath\jmath\lambda}\vec e_\lambda$ in the real three-space; the components of $\vec L$ satisfy $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ under the Poisson bracket, which is a phase-space operation and is not the quaternion commutator. The limit excludes internal vectors (spin), noncentral scalars, and noncentral vector couplings; those structures are the subjects of the sibling subcategories.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ $(\imath\neq\jmath)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector |
@@ -293,7 +293,7 @@ The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{
 | $u = 1/r$ | Binet variable |
 | $\frac{d^2u}{d\theta^2} + u = -F(1/u)/(mh^2u^2)$ | Binet's equation for a central force |
 | $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$ | Rotation rotor; $\vec a\mapsto R\vec aR^{*}$ |
-| $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ | Rotation algebra in the real three-space |
+| $[\vec e_{\imath},\vec e_{\jmath}] = 2\epsilon_{\imath\jmath\lambda}\vec e_\lambda$ | Rotation algebra in the real three-space |
 | $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ | Poisson-bracket angular-momentum algebra |
 | $\{x_i,p_j\} = \delta_{ij}$ | Canonical Poisson brackets |
 

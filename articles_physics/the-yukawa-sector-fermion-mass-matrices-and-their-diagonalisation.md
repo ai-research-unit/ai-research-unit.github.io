@@ -39,7 +39,7 @@ Written out. A term $m\,\bar Q_Ld_R$ is not a singlet, and the arithmetic shows 
 | $m_u\bar Q_Lu_R$ | $Y=-1/6+2/3\neq0$ | $Y_{u}$ with $\tilde\omicron_{\mathrm{hgs}}$ |
 | $m_d\bar Q_Ld_R$ | $Y=-1/6-1/3\neq0$ | $Y_{d}$ with $\omicron_{\mathrm{hgs}}$ |
 | $m_e\bar L_Le_R$ | $Y=+1/2-1\neq0$ | $Y_{e}$ with $\omicron_{\mathrm{hgs}}$ |
-| $m_{\nu_{\mathrm{neu}}}\bar L_L\nu_{\mathrm{neu},R}$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y_{\nu}$ with $\tilde\omicron_{\mathrm{hgs}}$ |
+| $m_{\nu_{\mathrm{neu}}}\bar L_L\nu_{\mathrm{neu},R}$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y_{\jmath}$ with $\tilde\omicron_{\mathrm{hgs}}$ |
 
 The last row differs in kind, and not in its quantum numbers. All four fail the same two tests. Every left-handed field here is a doublet and every right-handed one a singlet, so no bare term is an $SU(2)_L$ singlet. And every bare term has non-zero hypercharge — the neutrino's is $+1/2$, since $\bar L_L$ carries $+1/2$ and $\nu_{\mathrm{neu},R}$ carries $0$. What separates the last row is that $\nu_{\mathrm{neu},R}$ is absent from the minimal model: the other three right-handed fields are in the spectrum and their mass terms are forbidden, while the neutrino's mass term is not forbidden so much as unavailable with the field. §*Neutrinos* records what the distinction changes.
 
@@ -151,12 +151,12 @@ $$
 
 with the lepton sector rotated by $W_e$ and $V_e$. In the primed basis each mass matrix is diagonal, by construction: substituting into $-\bar u_LM_uu_R$ gives $-\bar u_L'\left(W_u^{\dagger}M_uV_u\right)u_R'=-\bar u_L'D_uu_R'$. The daggers matter and point this way. Inserting $u_L=W_u^{\dagger}u_L'$ instead would leave $W_uM_uV_u^{\dagger}=W_u^{2}D_u\left(V_u^{\dagger}\right)^{2}$, which is not diagonal, and would give the charged current $W_uW_d^{\dagger}$ in place of the $W_u^{\dagger}W_d$ derived two paragraphs below.
 
-The neutral current is unchanged. The $Z$ couples to $-\sum_\mu\varepsilon_\mu\bar f\gamma_\mu f$ with the same rotation on the field and its conjugate, so $W^{\dagger}W=\mathrm I$ and the coupling stays diagonal and flavour-blind. The same holds for the photon and the gluon. That is the tree-level form of the Glashow–Iliopoulos–Maiani mechanism, and it is why flavour-changing neutral currents are absent at this order.
+The neutral current is unchanged. The $Z$ couples to $-\sum_{\imath}\varepsilon_{\imath}\bar f\gamma_{\imath} f$ with the same rotation on the field and its conjugate, so $W^{\dagger}W=\mathrm I$ and the coupling stays diagonal and flavour-blind. The same holds for the photon and the gluon. That is the tree-level form of the Glashow–Iliopoulos–Maiani mechanism, and it is why flavour-changing neutral currents are absent at this order.
 
 **The charged current is not.** The $W$ couples $u_L$ to $d_L$, and the two are rotated by *different* unitaries:
 
 $$
-\mathcal{L}_{\mathrm{cc}}=-\frac{g}{\sqrt2}\sum_\mu\varepsilon_\mu W^{+}_\mu\bar u_{L}'\gamma_\mu\left(W_u^{\dagger}W_d\right)d_{L}'+\text{h.c.}
+\mathcal{L}_{\mathrm{cc}}=-\frac{g}{\sqrt2}\sum_{\imath}\varepsilon_{\imath} W^{+}_{\imath}\bar u_{L}'\gamma_{\imath}\left(W_u^{\dagger}W_d\right)d_{L}'+\text{h.c.}
 $$
 
 The CKM matrix is that product. Define
@@ -167,7 +167,7 @@ $$
 
 It is unitary, being a product of unitaries. It is the only place where the misalignment of the two bases appears, and it appears because the $W$ is the only gauge boson that changes flavour.
 
-Where the right-handed rotations went, and why not for the reason one expects. Each gauge coupling is flavour universal: it acts as $-\sum_\mu\varepsilon_\mu\bar f\gamma_\mu f$ with the same rotation on the field and on its conjugate, so the rotation cancels against its inverse, $V_f^{\dagger}V_f=\mathrm I$. That is the reason $V_u$ and $V_d$ do not appear — and it is a different reason from the fact that no gauge boson in the model couples a left-handed field to a right-handed one, which is true and would matter only if some gauge coupling were flavour-changing. They survive only in the Yukawa coupling to $h$, which is diagonal in the mass basis by construction. So the object that carries the misalignment is one $3\times3$ unitary and not a pair of rotations, which is why the next section counts its physical parameters rather than assuming nine.
+Where the right-handed rotations went, and why not for the reason one expects. Each gauge coupling is flavour universal: it acts as $-\sum_{\imath}\varepsilon_{\imath}\bar f\gamma_{\imath} f$ with the same rotation on the field and on its conjugate, so the rotation cancels against its inverse, $V_f^{\dagger}V_f=\mathrm I$. That is the reason $V_u$ and $V_d$ do not appear — and it is a different reason from the fact that no gauge boson in the model couples a left-handed field to a right-handed one, which is true and would matter only if some gauge coupling were flavour-changing. They survive only in the Yukawa coupling to $h$, which is diagonal in the mass basis by construction. So the object that carries the misalignment is one $3\times3$ unitary and not a pair of rotations, which is why the next section counts its physical parameters rather than assuming nine.
 
 The singular-value reading, stated plainly. $W_u$ and $W_d$ are the left singular bases of the two mass matrices. The masses are the singular values. The mixing is the angle between the two left bases. Nothing else about the matrices is observable, and the two statements "the masses are the singular values" and "the mixing is the misalignment" are one statement: they are the two halves of the singular-value decomposition.
 
@@ -383,9 +383,9 @@ What a deviation would mean. A measured $g_{hf\bar f}$ different from $m_f/v$ wo
 
 The two questions. A neutrino mass requires either a right-handed singlet, and then the same Yukawa structure applies, or a Majorana mass term for the left doublet. The second is forbidden twice over: the symmetric pair $\nu_{\mathrm{neu},L}^{T}C\nu_{\mathrm{neu},L}$ carries hypercharge $-1$ — each $\nu_{\mathrm{neu},L}$ has $-\tfrac12$ in the convention $Y=Ϙ-T_3$ that article 1 uses — where a mass term needs $0$, so no gauge-invariant contraction exists, and it has dimension three, so it is not renormalisable either. A scalar triplet of hypercharge $+1$ would supply the missing charge — that is the type-II route — and the dimension-five operator below is the general low-energy statement, with the singlet and the fermion triplet integrated out.
 
-The Dirac route. Add $\nu_{\mathrm{neu},R}$, a singlet of all three groups. Then $Y_{\nu}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
+The Dirac route. Add $\nu_{\mathrm{neu},R}$, a singlet of all three groups. Then $Y_{\jmath}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
 
-The Majorana route. A term $\overline{L_{L,c}}\,\tilde\omicron_{\mathrm{hgs}}^{*}\,\lambda\,\tilde\omicron_{\mathrm{hgs}}^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_\nu=\lambda v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
+The Majorana route. A term $\overline{L_{L,c}}\,\tilde\omicron_{\mathrm{hgs}}^{*}\,\lambda\,\tilde\omicron_{\mathrm{hgs}}^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_{\jmath}=\lambda v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
 
 The counts.
 
@@ -399,7 +399,7 @@ What is measured. The two mass-squared differences $\delta m_{21}^{2}=7.42\times
 
 The orderings. The sign of $\delta m_{31}^{2}$ is not known, so the spectrum is either the normal ordering above or the inverted one with two nearly degenerate heavy states. The two differ in the mass of the lightest state and in the rate of neutrinoless double beta decay, which is the experiment that would settle the Majorana question.
 
-**Why the same analysis applies, stated once.** The PMNS matrix is $W_\nu^{\dagger}W_e$ — the misalignment of the neutrino and charged-lepton bases, in exact analogy with $W_u^{\dagger}W_d$. The difference is that the neutrino masses are at most a few tens of millielectronvolts — seven orders of magnitude below the electron, twelve below the top — and that the mixing is large rather than hierarchical. The leptonic sector is the sector above with different numbers in it.
+**Why the same analysis applies, stated once.** The PMNS matrix is $W_{\jmath}^{\dagger}W_e$ — the misalignment of the neutrino and charged-lepton bases, in exact analogy with $W_u^{\dagger}W_d$. The difference is that the neutrino masses are at most a few tens of millielectronvolts — seven orders of magnitude below the electron, twelve below the top — and that the mixing is large rather than hierarchical. The leptonic sector is the sector above with different numbers in it.
 
 The link to the framework. *The Seesaw Mechanism and Majorana Mass in Biquaternionic Form* carries the construction and the counting of states; this article only records where the parameters come from.
 
@@ -415,7 +415,7 @@ that is, the commutant of the algebra's action. So the framework says something 
 
 **What the framework does not supply is the coupling itself.** The chiral-fermion article's mass selection rule says a bare Dirac mass is invariant if and only if $ϙ_L=ϙ_R$. The compensating scalar must therefore carry the difference $ϙ_L-ϙ_R$, and a scalar that carries it is non-central. The framework's scalar is central, and a central charge acts identically on both parts, so it cannot compensate a chiral mass term at all.
 
-The chain is not a chain, and saying so is part of the accounting. **Three statements are in play and only the first leads to the third.** The framework establishes that a chiral fermion needs a compensating scalar, and the selection rule shows that the scalar must be non-central. It also constructs an abelian mechanism for a *central* scalar — but that mechanism masses the gauge boson and not the fermion: the field that acquires an expectation value is central, the mass comes from the $|D_\mu\omicron_{\mathrm{hgs}}|^{2}$ term, and no Yukawa coupling of that field to the two chiralities is constructed or constructible, since a central charge acts identically on both. So the middle statement is a *different* mechanism, not a partial version of the missing one, and calling it "established for the abelian case" would credit the framework with half a step it has not taken. The missing link is the coupling of a non-central scalar to the two parts of the fermion, and it is absent.
+The chain is not a chain, and saying so is part of the accounting. **Three statements are in play and only the first leads to the third.** The framework establishes that a chiral fermion needs a compensating scalar, and the selection rule shows that the scalar must be non-central. It also constructs an abelian mechanism for a *central* scalar — but that mechanism masses the gauge boson and not the fermion: the field that acquires an expectation value is central, the mass comes from the $|D_{\imath}\omicron_{\mathrm{hgs}}|^{2}$ term, and no Yukawa coupling of that field to the two chiralities is constructed or constructible, since a central charge acts identically on both. So the middle statement is a *different* mechanism, not a partial version of the missing one, and calling it "established for the abelian case" would credit the framework with half a step it has not taken. The missing link is the coupling of a non-central scalar to the two parts of the fermion, and it is absent.
 
 The strongest objection, and the answer. A reader may say that the commutant statement is empty, since any framework with a multiplicity factor would say the same. That is correct as far as it goes, and it is the reason the statement is presented as a consistency rather than as a derivation. Its content is negative and useful: it explains why no algebraic principle will ever fix the Yukawa entries, and it locates the missing physics precisely — not in the algebra but in the coupling of a non-central scalar.
 
@@ -465,7 +465,7 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 | $N_g$ | The number of generations, three in the observed world |
 | $\theta$, $\bar\theta$ | The QCD vacuum angle and $\theta+\arg\det\left(M_uM_d\right)$ |
 | $ϙ_L$, $ϙ_R$ | The framework's chiral abelian charges |
-| $V_{\mathrm{PMNS}}$ | $W_\nu^{\dagger}W_e$, the leptonic analogue of the CKM matrix |
+| $V_{\mathrm{PMNS}}$ | $W_{\jmath}^{\dagger}W_e$, the leptonic analogue of the CKM matrix |
 
 ## Further Reading
 

@@ -12,19 +12,19 @@ What the article still does. It states the action's standard form by name; it li
 
 ## Conventions
 
-The conventions are the parent's, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is a family $\tilde\Xi_\mu\in\mathbb{B}$ with $\mu=0,1,2,3$, each split into its two chiral parts; the gradient is $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, the d'Alembertian $\Box_\Phi$; $k_m=\frac{2\pi mc}{h}$; the sign vector of the frame is $\varepsilon=(1,-1,-1,-1)$; the fixed direction of the trace constraint is $\vec e_z$.
+The conventions are the parent's, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is a family $\tilde\Xi_{\imath}\in\mathbb{B}$ with $\mu=0,1,2,3$, each split into its two chiral parts; the gradient is $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, the d'Alembertian $\Box_\Phi$; $k_m=\frac{2\pi mc}{h}$; the sign vector of the frame is $\varepsilon=(1,-1,-1,-1)$; the fixed direction of the trace constraint is $\vec e_z$.
 
 One symbol is used and not defined by this article. The literature's action is written with matrices that act on the spinor index. The parent's equation has no matrix, because the algebra's left and right multiplication supplies the action of the frame directly. Where this article names the standard action, it does so in the literature's notation and marks the matrices as unnamed, since their biquaternionic counterparts are the object the corpus has not built.
 
 ## The Action in Element Form: Named and Not Written
 
-The standard action, named. In the literature the massive spin-$\tfrac32$ field's action is written with a vector-spinor $\psi_\mu$, the Dirac matrices, and the object $\gamma_{\mu\nu}=\frac{i}{2}[\gamma_\mu,\gamma_\nu]$:
+The standard action, named. In the literature the massive spin-$\tfrac32$ field's action is written with a vector-spinor $\psi_{\imath}$, the Dirac matrices, and the object $\gamma_{\imath\jmath}=\frac{i}{2}[\gamma_{\imath},\gamma_{\jmath}]$:
 
 $$
-S_{\mathrm{RS}}=\int\mathrm{d}^{4}x\;\bar\psi_\mu\Bigl(i\gamma_{\mu\nu\rho}\partial_\rho-m\,\gamma_{\mu\nu}\Bigr)\psi_\nu ,
+S_{\mathrm{RS}}=\int\mathrm{d}^{4}x\;\bar\psi_{\imath}\Bigl(i\gamma_{\imath\jmath\rho}\partial_\rho-m\,\gamma_{\imath\jmath}\Bigr)\psi_{\jmath} ,
 $$
 
-with the antisymmetrised product $\gamma_{\mu\nu\rho}$. The literature prints these matrices with the index raised and this article prints every index low: the metric is the identity, so the two spellings name the same array and the action is the same functional. It is not written here in the algebra, and the box is a quotation of the literature's form rather than a formula of this corpus. The biquaternionic counterpart would replace $\psi_\mu$ by $\tilde\Xi_\mu$, $\partial_\rho$ by $\tilde\nabla_\Phi$, and the matrices by elements of the algebra acting by multiplication — and it is the last replacement that has not been made.
+with the antisymmetrised product $\gamma_{\imath\jmath\rho}$. The literature prints these matrices with the index raised and this article prints every index low: the metric is the identity, so the two spellings name the same array and the action is the same functional. It is not written here in the algebra, and the box is a quotation of the literature's form rather than a formula of this corpus. The biquaternionic counterpart would replace $\psi_{\imath}$ by $\tilde\Xi_{\imath}$, $\partial_\rho$ by $\tilde\nabla_\Phi$, and the matrices by elements of the algebra acting by multiplication — and it is the last replacement that has not been made.
 
 What the action must contain for the parent's results to follow.
 
@@ -32,7 +32,7 @@ What the action must contain for the parent's results to follow.
 
 *Second, two multipliers.* The parent's trace constraint and its divergence constraint are primary and secondary conditions of the equation; an action that reproduces them must carry a multiplier for each, and the multipliers are the object the corpus has not built.
 
-*Third, the massless invariance.* The parent records the gauge freedom $\tilde\Xi_\mu\mapsto\tilde\Xi_\mu+\partial_\mu\epsilon$ at $k_m=0$. An action for the massless field must be invariant under it, which requires the field's trace to be absent from the action or removed by the first multiplier.
+*Third, the massless invariance.* The parent records the gauge freedom $\tilde\Xi_{\imath}\mapsto\tilde\Xi_{\imath}+\partial_{\imath}\epsilon$ at $k_m=0$. An action for the massless field must be invariant under it, which requires the field's trace to be absent from the action or removed by the first multiplier.
 
 **What is missing, precisely.** One object: an element or a pair of elements of $\mathbb{B}$ that contracts the vector index with the field's chiral structure and is not simply the frame. The frame gives $\vec e_\eta$, which contracts a vector index with a direction; the trace constraint needs a contraction that mixes the two chiralities of the vector index itself, and this family has not exhibited one.
 
@@ -48,7 +48,7 @@ Why the check is not optional. The spin-$\tfrac32$ equation has the well-known p
 
 ## The Constraints the Action Imposes: The Constraints the Action Would Impose
 
-**Two constraints, and they are the parent's.** The trace constraint $\tilde\Xi_0+\sum_\eta\vec e_\eta\tilde\Xi_k\vec e_z=0$ and the divergence constraint $\sum_\mu\varepsilon_\mu\partial_\mu\tilde\Xi_\mu=0$ are the parent's statements. This section records what they do to the count, because the action's job is to produce them.
+**Two constraints, and they are the parent's.** The trace constraint $\tilde\Xi_0+\sum_\eta\vec e_\eta\tilde\Xi_k\vec e_z=0$ and the divergence constraint $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}\tilde\Xi_{\imath}=0$ are the parent's statements. This section records what they do to the count, because the action's job is to produce them.
 
 The count, in one line. Four vector components, each with two chiralities: eight complex data. The trace constraint removes two, the divergence constraint removes two, and the pair of first-order equations removes half of the rest; the rest frame leaves four complex parameters, the quartet the parent exhibits. An action that produced only the pair would leave the quartet's neighbours in place, and the count would be four higher.
 
@@ -91,9 +91,9 @@ What would close it. One construction: an element of $\mathbb{B}$ that contracts
 This family has the Rarita–Schwinger equation and not its action. The standard action is named; its three debts are the index-chirality contraction, the two multipliers and the massless invariance; and the count of degrees of freedom is what those debts control. The currents survive in form and not in normalisation, and the spin-$\tfrac32$ field is neutral. The absence is the article's content, and it marks the boundary of the family's variational method at spin $\tfrac32$.
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_{\mu,R}=k_m\tilde\Xi_{\mu,L},
+\tilde\nabla_\Phi\tilde\Xi_{\imath,R}=k_m\tilde\Xi_{\imath,L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\mu,L}=k_m\tilde\Xi_{\mu,R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\imath,L}=k_m\tilde\Xi_{\imath,R},
 \qquad
 \tilde\Xi_0+\sum_\eta\vec e_\eta\tilde\Xi_k\vec e_z=0 .
 $$
@@ -103,13 +103,13 @@ $$
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_\mu^{2}=-e_t$ | Basis and its squares |
-| $\tilde\Xi_\mu$ | Rarita–Schwinger field, four elements of $\mathbb{B}$ |
-| $\tilde\Xi_{\mu,R},\ \tilde\Xi_{\mu,L}$ | The two chiral parts of each component |
+| $e_t=1,\ \vec e_{\imath}^{2}=-e_t$ | Basis and its squares |
+| $\tilde\Xi_{\imath}$ | Rarita–Schwinger field, four elements of $\mathbb{B}$ |
+| $\tilde\Xi_{\imath,R},\ \tilde\Xi_{\imath,L}$ | The two chiral parts of each component |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\vec e_z$ | Fixed direction of the trace constraint |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
-| $\psi_\mu,\ \gamma_\mu,\ \gamma_{\mu\nu}$ | The literature's matrices, printed low and not adopted |
+| $\psi_{\imath},\ \gamma_{\imath},\ \gamma_{\imath\jmath}$ | The literature's matrices, printed low and not adopted |
 | $S_{\mathrm{RS}}$ | The standard action, named and not written |
 
 ## Further Reading

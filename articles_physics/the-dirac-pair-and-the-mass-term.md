@@ -70,7 +70,7 @@ with the $2\times2$ blocks acting on the two spinors. The chiral basis is the on
 
 ### The Verification
 
-The chiral algebra is checked directly: $\{\gamma_5,\gamma_\mu\}=0$ for all four $\mu$, $\gamma^{5\,2}=1$, and $\gamma^{5}$ is diagonal with eigenvalues $(-1,-1,+1,+1)$ — the upper block of $\Psi$ carrying $-1$ and the lower block $+1$ in the convention of this article. All three statements hold exactly in the $4\times4$ realisation.
+The chiral algebra is checked directly: $\{\gamma_5,\gamma_{\imath}\}=0$ for all four $\mu$, $\gamma^{5\,2}=1$, and $\gamma^{5}$ is diagonal with eigenvalues $(-1,-1,+1,+1)$ — the upper block of $\Psi$ carrying $-1$ and the lower block $+1$ in the convention of this article. All three statements hold exactly in the $4\times4$ realisation.
 
 ## The Mass Term
 

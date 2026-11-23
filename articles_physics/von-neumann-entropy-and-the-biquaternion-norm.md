@@ -50,7 +50,7 @@ whose eigenvalues are $\tfrac12(1\pm|\vec s_{\Psi}|)$. Positivity, $M(\tilde{Ϛ}
 
 ### Purity and the deviation from idempotency
 
-Squaring the state gives, using $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ and the vanishing of the cross terms for the pure scalar part,
+Squaring the state gives, using $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ and the vanishing of the cross terms for the pure scalar part,
 
 $$
 \tilde{Ϛ}_{\Psi}^2 = \tfrac{1}{4}\bigl(e_t + i\vec s_{\Psi}\bigr)^2
@@ -75,7 +75,7 @@ The state is pure, $\tilde{Ϛ}_{\Psi}^2 = \tilde{Ϛ}_{\Psi}$, exactly when $|\ve
 
 ### The biquaternion norm on $\mathbb{B}_{\Psi}$
 
-The biquaternion norm of the algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On a Hermitian element $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with real coefficients it is the real scalar
+The biquaternion norm of the algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$. On a Hermitian element $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with real coefficients it is the real scalar
 
 $$
 \langle\tilde H_\Psi\rangle_{\natural} = h_t^2 - |\vec h_\Psi|^2 ,
@@ -277,7 +277,7 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u_s) = \tfrac12(e_t\pm i\vec u_s)$ | Spectral idempotents of the state |
 | $\lambda_\pm = \tfrac12(1\pm|\vec s_{\Psi}|)$ | Eigenvalues |
 | $2\,\mathrm{Sc}(\tilde{Q})$ | Twice the scalar part |
-| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |
 | $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = h_t^2 - |\vec h_\Psi|^2 = \det M(\tilde H_\Psi)$ | Biquaternion norm of a Hermitian element |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec s_{\Psi}|^2)e_t$ | Biquaternion norm of a state |
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = -\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}e_t$ | Deviation from idempotency |
@@ -286,7 +286,7 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 | $S(\tilde{Ϛ}_{\Psi}) = -2\langle\tilde{Ϛ}_{\Psi},\log\tilde{Ϛ}_{\Psi}\rangle_{*}$ | Von Neumann entropy |
 | $S = H(N) = h\!\left(\tfrac{1+\sqrt{1-4N}}{2}\right)$ | Entropy as a function of the biquaternion norm |
 | $0 \le S \le \log 2$ | Entropy bounds |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

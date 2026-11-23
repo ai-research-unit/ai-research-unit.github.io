@@ -60,10 +60,10 @@ Every one of the four is two mixed terms and a cross term. The mixed terms carry
 The four scalar parts are the four forms. They are written on the coordinates in the four possible ways,
 
 $$
-\sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu},\qquad
-\sum_\mu Q_{1\mu}Q_{2\mu},\qquad
-\sum_\mu Q_{1\mu}\overline{Q_{2\mu}},\qquad
-\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}},
+\sum_{\imath}\varepsilon_{\imath} Q_{1\imath}Q_{2\imath},\qquad
+\sum_{\imath} Q_{1\imath}Q_{2\imath},\qquad
+\sum_{\imath} Q_{1\imath}\overline{Q_{2\imath}},\qquad
+\sum_{\imath}\varepsilon_{\imath} Q_{1\imath}\overline{Q_{2\imath}},
 $$
 
 with $\varepsilon=(1,-1,-1,-1)$, and they are what the next entry of the category treats as the four forms and the four norms.
@@ -98,10 +98,10 @@ The other three settings do not. At the plain setting $e_t+\vec e_x$ squares to 
 The second square is Hermitian and positive semidefinite.
 
 $$
-\tilde Q\tilde Q^{*}=\Bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\Bigr)e_t+\text{a Hermitian vector part},
+\tilde Q\tilde Q^{*}=\Bigl(\sum_{\imath}\lvert Q_{\imath}\rvert^{2}\Bigr)e_t+\text{a Hermitian vector part},
 $$
 
-of trace $2\sum_\mu\lvert Q_\mu\rvert^{2}$ in the matrix model, of rank two off the zero-divisor cone and of rank at most one on it.
+of trace $2\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ in the matrix model, of rank two off the zero-divisor cone and of rank at most one on it.
 
 The two squares are not two computations of one object. One is central and signed, with values in $\mathbb{C}$ and a null set that is a cone; the other is Hermitian and positive, with values in the centre of the Hermitian sector and a null set that is the origin alone. Everything that follows about causality and probability is a consequence of that difference.
 
@@ -256,7 +256,7 @@ Read: the plain sesquilinear product has the Hermitian form as its scalar part, 
 Its square is the rank-bearing Hermitian element.
 
 $$
-\tilde Q\tilde Q^{*}=\sum_\mu\lvert Q_\mu\rvert^{2}e_t+\text{Hermitian vector part},\qquad
+\tilde Q\tilde Q^{*}=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}e_t+\text{Hermitian vector part},\qquad
 \operatorname{rank}\mathsf M_2(\tilde Q\tilde Q^{*})=2\ \text{off the cone},\ \le1\ \text{on it}.
 $$
 

@@ -21,14 +21,14 @@ which is the dynamics of *Operator and Calculus Conventions*, §*The Gradient*. 
 **The gradient.** It is the element-valued operator of *Operator and Calculus Conventions*, §*The Gradient*, and it is written out here once, because the exercise uses no other derivative:
 
 $$
-\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu}
+\tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial R_{\imath}}
 =e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 $$
 
 with its quaternion conjugate and the d'Alembertian,
 
 $$
-(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu}
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath\in\{t,x,y,z\}}\varepsilon_{\imath} e_{\imath}\frac{\partial}{\partial R_{\imath}}
 =e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
@@ -46,7 +46,7 @@ $$
 \tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta},
 $$
 
-because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_\eta$ is $e_te_\eta-\vec e_\eta e_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box_\Phi$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
+because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_\eta$ is $e_te_\eta-\vec e_\eta e_t=0$, and the coefficient of $\partial^2/\partial R_{\imath}^2$ is $\varepsilon_{\imath} e_{\imath}^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box_\Phi$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
 
 **The wave element.** A plane wave is $\tilde{Ξ}=\tilde{Ξ}_{0}\exp(i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\vec k_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
 
@@ -404,8 +404,8 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\tilde\nabla_\Phi$ | The biquaternionic gradient, $\sum_\mu e_\mu\,\partial/\partial R_\mu$, four components |
-| $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
+| $\tilde\nabla_\Phi$ | The biquaternionic gradient, $\sum_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$, four components |
+| $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, $\sum_{\imath}\varepsilon_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$ |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_\Phi$ |
 | $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The action that reads the value; spectrum $+1,+1,-1,-1$ |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The Dirac field and its two parts, values $-1$ and $+1$ |

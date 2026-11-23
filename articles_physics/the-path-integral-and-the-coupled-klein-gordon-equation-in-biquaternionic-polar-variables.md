@@ -13,26 +13,26 @@ Four consequences follow, and each is stated exactly or checked.
 - The element form's three-term split is the expansion of the chart's single shifted square, and the two interaction terms have the shapes $2c\varrho^{2}\partial\theta_{\mathrm{pha}}$ and $c^{2}\varrho^{2}$ and no other.
 - The measure is untouched, because its Jacobian is the scale and the scale is gauge invariant, so the chart's invariance needs no link variable and no argument.
 - The amplitude equation keeps the connection out of its quantum term, and the transport equation becomes the mechanical one; both are the two saddles, exactly as in the free article.
-- The chart's bracket is a squared modulus and therefore real for every connection, so its symbol is real; the equation's squared operator has an imaginary part wherever $\bar c_\mu\ne-c_\mu$. The chart carries the action's reading of the fork and cannot carry the equation's, and the reason is that the cross term the equation's reading needs has no chart counterpart.
+- The chart's bracket is a squared modulus and therefore real for every connection, so its symbol is real; the equation's squared operator has an imaginary part wherever $\bar c_{\imath}\ne-c_{\imath}$. The chart carries the action's reading of the fork and cannot carry the equation's, and the reason is that the cross term the equation's reading needs has no chart counterpart.
 
 What the article does not do. It does not produce a second integral, does not define the continuum measure, and does not decide the pole question of the element companion. It reads one integral in another coordinate system and states what the coordinate system can and cannot show.
 
 ## Conventions
 
-The algebra, the pairing and the word are the free polar article's: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}(\cdot^{*}\cdot)$, and $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the ranges of *The Klein–Gordon Equation in Biquaternionic Polar Variables*, §*The Word*.
+The algebra, the pairing and the word are the free polar article's: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}(\cdot^{*}\cdot)$, and $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the ranges of *The Klein–Gordon Equation in Biquaternionic Polar Variables*, §*The Word*.
 
-The covariant derivative and its coefficient. With $c_\mu=\frac{2\pi iϙ}{h}A_\mu$ the covariant derivative is $\partial_\mu+c_\mu$ on the coefficients, and for a central field
+The covariant derivative and its coefficient. With $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ the covariant derivative is $\partial_{\imath}+c_{\imath}$ on the coefficients, and for a central field
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi,\mu}\bigl(\varrho e^{i\theta_{\mathrm{pha}}}e_t\bigr)
-=e^{i\theta_{\mathrm{pha}}}\Bigl(\partial_\mu \varrho+i\,\varrho\,\kappa_{\mu}^{\mathrm{kin}}\Bigr)e_t,
+\tilde\nabla_{\mathrm{gco},\Phi,\imath}\bigl(\varrho e^{i\theta_{\mathrm{pha}}}e_t\bigr)
+=e^{i\theta_{\mathrm{pha}}}\Bigl(\partial_{\imath} \varrho+i\,\varrho\,\kappa_{\imath}^{\mathrm{kin}}\Bigr)e_t,
 \qquad
-\kappa_{\mu}^{\mathrm{kin}}=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}A_\mu ,
+\kappa_{\imath}^{\mathrm{kin}}=\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}A_{\imath} ,
 $$
 
 which is the coupled polar companion's factorisation. The derivative of the word is one real number and one shifted phase rate, and the shift is the whole of the connection's presence in the derivative.
 
-The factorisation is checked and it converges at the second order. On a nine-site chain with a smooth scale, a smooth angle and one coefficient per slot, the two sides of $\mathrm{Sc}\bigl[(D_\mu\tilde\Xi)^{*}D_\mu\tilde\Xi\bigr]=(\partial_\mu \varrho)^{2}+\varrho^{2}(\kappa^{\mathrm{kin}}_\mu)^{2}$ differ by $2.2\times10^{-2}$, $5.6\times10^{-3}$, $1.4\times10^{-3}$ and $3.5\times10^{-4}$ relative, at steps $10^{-1}$, $5\times10^{-2}$, $2.5\times10^{-2}$ and $1.25\times10^{-2}$, falling by four at each halving. The identity is exact in the continuum and is a product rule away from it on a grid, which is the same status as the free article's $\lvert\partial\xi\rvert^{2}$ identity.
+The factorisation is checked and it converges at the second order. On a nine-site chain with a smooth scale, a smooth angle and one coefficient per slot, the two sides of $\mathrm{Sc}\bigl[(D_{\imath}\tilde\Xi)^{*}D_{\imath}\tilde\Xi\bigr]=(\partial_{\imath} \varrho)^{2}+\varrho^{2}(\kappa^{\mathrm{kin}}_{\imath})^{2}$ differ by $2.2\times10^{-2}$, $5.6\times10^{-3}$, $1.4\times10^{-3}$ and $3.5\times10^{-4}$ relative, at steps $10^{-1}$, $5\times10^{-2}$, $2.5\times10^{-2}$ and $1.25\times10^{-2}$, falling by four at each halving. The identity is exact in the continuum and is a product rule away from it on a grid, which is the same status as the free article's $\lvert\partial\xi\rvert^{2}$ identity.
 
 The exponent. The weight is $\exp(\frac{2\pi iS_{\mathrm{gco}}}{h})$ with the element companion's action, and in the chart
 
@@ -93,7 +93,7 @@ which is the polar equation companion's amplitude equation with the mechanical b
 
 The quantum potential is untouched. It is $-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi \varrho/\varrho$, a functional of the scale alone, and the connection does not appear in it because the connection does not appear in the amplitude's terms. This is the chart's sharpest statement about the coupling: the coupling changes the relation between the phase's rate and the momentum, and it changes nothing about the curvature of the density.
 
-Stationarity in the angle gives the mechanical transport equation. Varying $\theta_{\mathrm{pha}}$ gives $\sum_\mu\partial_\mu\bigl(\varrho^{2}\kappa_{\mathrm{kin},\mu}\bigr)=0$, which is the divergence of the density times the mechanical four-velocity. The free article's saddle is the same equation with the free rate, so the coupling's whole effect on the constraint is to replace the phase's gradient by the mechanical one.
+Stationarity in the angle gives the mechanical transport equation. Varying $\theta_{\mathrm{pha}}$ gives $\sum_{\imath}\partial_{\imath}\bigl(\varrho^{2}\kappa_{\mathrm{kin},\imath}\bigr)=0$, which is the divergence of the density times the mechanical four-velocity. The free article's saddle is the same equation with the free rate, so the coupling's whole effect on the constraint is to replace the phase's gradient by the mechanical one.
 
 The check is the free check with a link phase. On the same one-dimensional chain as the free article's, with the same weights and the same endpoints, adding link phases $-0.61$ and $0.29$ leaves the angle's integral equal to its saddle times the Fresnel factor to $1.2\times10^{-13}$, and the saddle satisfies the discrete divergence condition to $4\times10^{-16}$ against a link current of $0.28$. The phase integral is its saddle times a Fresnel factor, and the saddle is the mechanical transport equation.
 
@@ -101,11 +101,11 @@ What the saddle is not. It is not the current's conservation in the sense of the
 
 ## Which Reading the Chart Carries
 
-The fork, in one sentence. The element companion distinguishes two operators: the action's paired operator $\sum_\mu(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)$ and the equation's squared operator $\sum_\mu(\partial_\mu+c_\mu)^{2}$, which coincide exactly when $\bar c_\mu=-c_\mu$ in every slot, hence for a purely vector connection, and not for a scalar potential.
+The fork, in one sentence. The element companion distinguishes two operators: the action's paired operator $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})$ and the equation's squared operator $\sum_{\imath}(\partial_{\imath}+c_{\imath})^{2}$, which coincide exactly when $\bar c_{\imath}=-c_{\imath}$ in every slot, hence for a purely vector connection, and not for a scalar potential.
 
-The chart's bracket is the action's. It is a squared modulus, $\lvert(\partial_\mu+c_\mu)\Xi\rvert^{2}=(\partial_\mu \varrho)^{2}+\varrho^{2}(\kappa^{\mathrm{kin}}_\mu)^{2}$, so the exponent is real for every connection and the quadratic form is real. **The chart writes the action's object and nothing else**, and the reason is that a chart of a modulus can write a squared modulus and cannot write a square of an operator.
+The chart's bracket is the action's. It is a squared modulus, $\lvert(\partial_{\imath}+c_{\imath})\Xi\rvert^{2}=(\partial_{\imath} \varrho)^{2}+\varrho^{2}(\kappa^{\mathrm{kin}}_{\imath})^{2}$, so the exponent is real for every connection and the quadratic form is real. **The chart writes the action's object and nothing else**, and the reason is that a chart of a modulus can write a squared modulus and cannot write a square of an operator.
 
-The equation's reading needs a term the chart does not have. The squared operator's real part carries a term proportional to $c_\mu\partial_\mu \varrho$, the amplitude–potential cross term, and §*The Two Interaction Terms and Their Shapes* shows that the chart's exponent has no such term: its two interaction terms are $2c\varrho^{2}\partial\theta_{\mathrm{pha}}$ and $c^{2}\varrho^{2}$. **The absence is exact and it is not an approximation**: the chart has two variables and one of them, the angle, carries the whole of the connection, so a term multiplying the potential by the other variable's gradient cannot appear.
+The equation's reading needs a term the chart does not have. The squared operator's real part carries a term proportional to $c_{\imath}\partial_{\imath} \varrho$, the amplitude–potential cross term, and §*The Two Interaction Terms and Their Shapes* shows that the chart's exponent has no such term: its two interaction terms are $2c\varrho^{2}\partial\theta_{\mathrm{pha}}$ and $c^{2}\varrho^{2}$. **The absence is exact and it is not an approximation**: the chart has two variables and one of them, the angle, carries the whole of the connection, so a term multiplying the potential by the other variable's gradient cannot appear.
 
 The consequence is measured. On a periodic grid the symbol of the action's form is real for every coefficient, its imaginary part $1.6\times10^{-17}$; the symbol of the squared form has an imaginary part $2\Sigma c$ in the slot where $\bar c\ne-c$, measured $1.86$ against $2\times2.9973\times0.31=1.858$. **A complex symbol is not a dispersion relation**, so the squared reading's slot is the one that needs the total-derivative bookkeeping the element companion records as an open question.
 
@@ -142,7 +142,7 @@ The honest ledger. The chart contributes one sentence about where the connection
 
 2. The winding sectors with a connection. The angle is compact and the mechanical bracket contains the potential, so a loop's winding and the enclosed flux enter the same term. Whether the polar integral in a fixed winding sector with a connection is a distinct object, and whether the theta-angle structure of a compact scalar follows, is not treated.
 
-3. The constraint's determinant with a connection. The angle's integral produces the inverse square root of the determinant of $-\partial_\mu \varrho^{2}\partial_\mu$ with the connection inside. Whether that determinant's scale dependence cancels against the radial integral, as the free article's does, is not shown.
+3. The constraint's determinant with a connection. The angle's integral produces the inverse square root of the determinant of $-\partial_{\imath} \varrho^{2}\partial_{\imath}$ with the connection inside. Whether that determinant's scale dependence cancels against the radial integral, as the free article's does, is not shown.
 
 4. The interaction. A central interaction $\lambda \varrho^{4}$ leaves the chart's structure and the connection's address unchanged. The article does not pursue it.
 
@@ -161,18 +161,18 @@ The chart carries the action's reading of the covariant square and cannot carry 
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ | The word on a central field |
-| $c_\mu=\frac{2\pi iϙ}{h}A_\mu$ | The slot's coefficient; $c_t$ real, $c_\eta$ imaginary |
-| $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}A_\mu$ | The mechanical phase rate; the connection's only address |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}(\varrho e^{i\theta_{\mathrm{pha}}}e_t)=e^{i\theta_{\mathrm{pha}}}\bigl(\partial_\mu \varrho+i \varrho\kappa^{\mathrm{kin}}_\mu\bigr)e_t$ | The exact factorisation of the covariant derivative |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The slot's coefficient; $c_t$ real, $c_\eta$ imaginary |
+| $\kappa^{\mathrm{kin}}_{\imath}=\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}A_{\imath}$ | The mechanical phase rate; the connection's only address |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\imath}(\varrho e^{i\theta_{\mathrm{pha}}}e_t)=e^{i\theta_{\mathrm{pha}}}\bigl(\partial_{\imath} \varrho+i \varrho\kappa^{\mathrm{kin}}_{\imath}\bigr)e_t$ | The exact factorisation of the covariant derivative |
 | $\prod_x \varrho\,\mathrm{d}\varrho\,\mathrm{d}\theta_{\mathrm{pha}}$ | The polar measure; unchanged by a gauge transformation |
 | $2c\varrho^{2}\partial\theta_{\mathrm{pha}}$ | The linear interaction term; the current's slot |
 | $c^{2}\varrho^{2}$ | The quadratic interaction term; no derivative |
 | $\frac{(2\pi)^{2} ϛ^{2}\varrho^{2}}{h^{2}}\bigl((a'_t)^{2}-\lvert\vec A\rvert^{2}\bigr)$ | The quadratic term in the material slots; the relative sign is the metric's |
 | $\kappa^{\mathrm{kin}}\!\cdot\kappa^{\mathrm{kin}}=k_m^{2}-\Box_\Phi \varrho/\varrho$ | The amplitude equation; the scale's saddle |
-| $\sum_\mu\partial_\mu\bigl(\varrho^{2}\kappa_{\mathrm{kin},\mu}\bigr)=0$ | The mechanical transport equation; the angle's saddle |
+| $\sum_{\imath}\partial_{\imath}\bigl(\varrho^{2}\kappa_{\mathrm{kin},\imath}\bigr)=0$ | The mechanical transport equation; the angle's saddle |
 | $-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi \varrho/\varrho$ | The quantum potential; independent of the connection |
-| $\sum_\mu(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)$ | The action's paired operator; the chart's object |
-| $\sum_\mu(\partial_\mu+c_\mu)^{2}$ | The equation's squared operator; needs a cross term the chart lacks |
+| $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})$ | The action's paired operator; the chart's object |
+| $\sum_{\imath}(\partial_{\imath}+c_{\imath})^{2}$ | The equation's squared operator; needs a cross term the chart lacks |
 | $2\Sigma c$ | The squared operator's symbol's imaginary part where $\bar c\ne-c$ |
 | $k_m=\frac{2\pi mc}{h}$ | The mass parameter |
 

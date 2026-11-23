@@ -22,7 +22,7 @@ $$
 Q_t-iQ_z & -iQ_x-Q_y\\
 -iQ_x+Q_y & Q_t+iQ_z
 \end{pmatrix},
-\qquad \tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\quad Q_\mu\in\mathbb{C}.
+\qquad \tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\quad Q_{\imath}\in\mathbb{C}.
 $$
 
 Two readings of this array must be distinguished from the start. The **entries** are complex numbers determined by the four coefficients. The **element** is a biquaternion. The map relates them, and no statement about one is a statement about the other until it is translated.

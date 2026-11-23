@@ -97,13 +97,13 @@ A superselection structure in its algebraic form requires the sectors to be the 
 $$
 \tilde{Q}_1, \tilde{Q}_2\in\mathbb{B}_{\Psi} \ \Longrightarrow\ (\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}_1 = \tilde{Q}_1\tilde{Q}_2 \iff [\tilde{Q}_1,\tilde{Q}_2] = 0 ,
 $$
-and the idempotents provide an elementary counterexample. For the two pure-state idempotents $\tilde\Pi_{\mathrm{id}}(\vec u) = \tfrac12(e_t+i\vec u)$ and $\tilde\Pi_{\mathrm{id}}(\vec u_\nu) = \tfrac12(e_t+i\vec u_\nu)$ with $\vec u\cdot\vec u_\nu = 0$,
+and the idempotents provide an elementary counterexample. For the two pure-state idempotents $\tilde\Pi_{\mathrm{id}}(\vec u) = \tfrac12(e_t+i\vec u)$ and $\tilde\Pi_{\mathrm{id}}(\vec u_{\jmath}) = \tfrac12(e_t+i\vec u_{\jmath})$ with $\vec u\cdot\vec u_{\jmath} = 0$,
 $$
-4\,\tilde\Pi_{\mathrm{id}}(\vec u)\tilde\Pi_{\mathrm{id}}(\vec u_\nu) = e_t + i(\vec u+\vec u_\nu) - (i\vec u)(i\vec u_\nu),
+4\,\tilde\Pi_{\mathrm{id}}(\vec u)\tilde\Pi_{\mathrm{id}}(\vec u_{\jmath}) = e_t + i(\vec u+\vec u_{\jmath}) - (i\vec u)(i\vec u_{\jmath}),
 $$
 whose Hermitian conjugate differs: the commutator is
 $$
-[\tilde\Pi_{\mathrm{id}}(\vec u),\,\tilde\Pi_{\mathrm{id}}(\vec u_\nu)] = -\tfrac12\,\vec u\times\vec u_\nu,
+[\tilde\Pi_{\mathrm{id}}(\vec u),\,\tilde\Pi_{\mathrm{id}}(\vec u_{\jmath})] = -\tfrac12\,\vec u\times\vec u_{\jmath},
 $$
 a non-zero element of the anti-Hermitian sector. The product of two informational elements is therefore not informational; it has a material component. Equivalently,
 $$
@@ -115,7 +115,7 @@ The sectors are a grading of the vector space and not a splitting of the algebra
 
 The standard route asks for central projections, so the centre must be computed.
 
-**The centre.** An element $\tilde Q_4 = Q_{4t}e_t + Q_{4x}\vec e_x + Q_{4y}\vec e_y + Q_{4z}\vec e_z$ is central if and only if $[\tilde Q_4, \vec e_\eta] = 0$ for $\eta = 1,2,3$. Using $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu,\nu\in\{1,2,3\}$, the bracket with $\vec e_x$ gives
+**The centre.** An element $\tilde Q_4 = Q_{4t}e_t + Q_{4x}\vec e_x + Q_{4y}\vec e_y + Q_{4z}\vec e_z$ is central if and only if $[\tilde Q_4, \vec e_\eta] = 0$ for $\eta = 1,2,3$. Using $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ for ${\imath},\jmath\in\{1,2,3\}$, the bracket with $\vec e_x$ gives
 $$
 [\tilde Q_4, \vec e_x] = 2Q_{4z}\vec e_y - 2Q_{4y}\vec e_z ,
 $$
@@ -230,7 +230,7 @@ $$
 $$
 with $\mathbb{B}_{\Psi}^{0}$ Hermitian (scalar-free) and $\mathbb{B}_{\Phi}^{0}$ anti-Hermitian (scalar-free).
 
-**The brackets.** With $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu,\nu\in\{1,2,3\}$ and $\mu\neq\nu$, the commutators close on the two summands as
+**The brackets.** With $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ for ${\imath},\jmath\in\{1,2,3\}$ and ${\imath}\neq\jmath$, the commutators close on the two summands as
 $$
 \boxed{\;[\mathbb{B}_{\Phi}^{0}, \mathbb{B}_{\Phi}^{0}]\subseteq\mathbb{B}_{\Phi}^{0}, \qquad
 [\mathbb{B}_{\Phi}^{0}, \mathbb{B}_{\Psi}^{0}]\subseteq\mathbb{B}_{\Psi}^{0}, \qquad
@@ -238,9 +238,9 @@ $$
 $$
 Explicitly, the rotation generators and the boost generators satisfy
 $$
-[\vec e_\mu, \vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\,\vec e_\lambda, \qquad
-[i\vec e_\mu, i\vec e_\nu] = -2\epsilon_{\mu\nu\lambda}\,\vec e_\lambda, \qquad
-[\vec e_\mu, i\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\,i\vec e_\lambda .
+[\vec e_{\imath}, \vec e_{\jmath}] = 2\epsilon_{\imath\jmath\lambda}\,\vec e_\lambda, \qquad
+[i\vec e_{\imath}, i\vec e_{\jmath}] = -2\epsilon_{\imath\jmath\lambda}\,\vec e_\lambda, \qquad
+[\vec e_{\imath}, i\vec e_{\jmath}] = 2\epsilon_{\imath\jmath\lambda}\,i\vec e_\lambda .
 $$
 The first line says that the **material** traceless sector is closed under commutation: it is the compact subalgebra $\mathrm{SU}(2)$ of rotations. The second says that the **informational** traceless sector is a symmetric complement: the bracket of two boosts is a rotation, and the bracket of a rotation with a boost is a boost. The split is therefore a $\mathbb{Z}_2$ grading of the Lorentz Lie algebra,
 $$
@@ -305,7 +305,7 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $\mathbb{B}_{\Phi}^{0}\cong\mathrm{SU}(2)$ | Material scalar-free part, compact rotations |
 | $\mathbb{B}_{\Psi}^{0}$ | Informational scalar-free part, non-compact boosts |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

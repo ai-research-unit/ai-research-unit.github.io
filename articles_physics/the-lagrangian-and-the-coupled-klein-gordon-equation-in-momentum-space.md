@@ -26,7 +26,7 @@ $$
 \tilde K_\Phi=ik_t'e_t+\vec k_\Phi .
 $$
 
-The bookkeeping is the main article's and is quoted once. With $c_\mu=\frac{2\pi i\,ϙ}{h}A_\mu$ the material connection gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_\eta=i\frac{2\pi ϙ}{h}A_\eta$ imaginary, and the free slot symbols are $\sigma_t=-k_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary. The temporal slot is the only one where the two readings of the covariant square differ, so the article states everything in that slot and adds the spatial slots only where they change a conclusion.
+The bookkeeping is the main article's and is quoted once. With $c_{\imath}=\frac{2\pi i\,ϙ}{h}A_{\imath}$ the material connection gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_\eta=i\frac{2\pi ϙ}{h}A_\eta$ imaginary, and the free slot symbols are $\sigma_t=-k_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary. The temporal slot is the only one where the two readings of the covariant square differ, so the article states everything in that slot and adds the spatial slots only where they change a conclusion.
 
 The denials are the main article's, restated once. The transform does not exchange sectors; a symbol exists only at constant coefficients; and a Legendre transform between a field and its conjugate momentum is not a Fourier transform, so the parent's four canonical momenta are not wave numbers and no display below reads them as one.
 
@@ -59,7 +59,7 @@ The correction is an attribution and not an equation. Nothing in the parent's di
 
 ### The Source's Symbol
 
-The connection's equation is algebraic only in the constant setting, and there its symbol is the current's transform. Varying the matter action with respect to $A_\mu$ gives $\delta S_{\mathrm{c}}/\delta A_\mu=-\frac{2\pi ϙ}{h}J_\mu$, and the transform of that equation replaces the derivative by $i\tilde K_\Phi$; the current is a bilinear, so its transform is a convolution and the connection's equation is algebraic only where the current is a single mode. The source's symbol is therefore the transform of the current, and it is a convolution in every other case.
+The connection's equation is algebraic only in the constant setting, and there its symbol is the current's transform. Varying the matter action with respect to $A_{\imath}$ gives $\delta S_{\mathrm{c}}/\delta A_{\imath}=-\frac{2\pi ϙ}{h}J_{\imath}$, and the transform of that equation replaces the derivative by $i\tilde K_\Phi$; the current is a bilinear, so its transform is a convolution and the connection's equation is algebraic only where the current is a single mode. The source's symbol is therefore the transform of the current, and it is a convolution in every other case.
 
 The constant setting is the one the article uses and the one the parent uses. There the current's transform is a coefficient at one wave number, the connection's equation is algebraic, and the fork of §*The Action in Momentum Space: The Ordering Ambiguity Is the Cross Term* is the fork between two polynomials in the same variable. Nothing in the source's structure decides which polynomial is the operator's, and the article states this rather than reading a decision into the variation.
 
@@ -95,11 +95,11 @@ So the variational principle's role here is narrower than it looks. It supplies 
 
 The pairing. Settled once and inherited. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the kinetic term here is its modulus squared. The alternative was rejected in the element article and the rejection is unchanged by the connection.
 
-The type of the coefficient. The symbol is real only in the corpus's writing, and the difference is the whole content. Applying the parity lemma of the main article, the squared symbol $\sum_\mu(\sigma_\mu+c_\mu)^{2}$ is real in the temporal slot when $c_t$ is real — that is, when $A_t$ is imaginary — and real in a spatial slot when $c_\eta$ is imaginary — that is, when $A_\eta$ is real. Both conditions together are $\tilde A_\Phi^{*}=-\tilde A_\Phi$. A modulus squared is real for every $c$; a symbol is real for the anti-Hermitian $c$ and for no other.
+The type of the coefficient. The symbol is real only in the corpus's writing, and the difference is the whole content. Applying the parity lemma of the main article, the squared symbol $\sum_{\imath}(\sigma_{\imath}+c_{\imath})^{2}$ is real in the temporal slot when $c_t$ is real — that is, when $A_t$ is imaginary — and real in a spatial slot when $c_\eta$ is imaginary — that is, when $A_\eta$ is real. Both conditions together are $\tilde A_\Phi^{*}=-\tilde A_\Phi$. A modulus squared is real for every $c$; a symbol is real for the anti-Hermitian $c$ and for no other.
 
 The selection rule. Not examined here. A connection is not a potential: it enters the gradient, not the potential's slot, so there is no admissible sector to exclude. What the connection does do to the symbol is the next subsection's question.
 
-What reality does not buy. The action is real for every connection, and that is an identity rather than a measurement. The kinetic term is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big]$, a modulus squared summed over four slots, and a modulus squared is real for any complex coefficient whatsoever. No choice of connection can make the action complex, so no argument from the reality of the action can select a connection, and the parent's care over the temporal slot is not about the reality of $S$.
+What reality does not buy. The action is real for every connection, and that is an identity rather than a measurement. The kinetic term is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\big]$, a modulus squared summed over four slots, and a modulus squared is real for any complex coefficient whatsoever. No choice of connection can make the action complex, so no argument from the reality of the action can select a connection, and the parent's care over the temporal slot is not about the reality of $S$.
 
 ## The Variation
 
@@ -125,7 +125,7 @@ What is lost, and it must be said. The variation at a mode cannot see a boundary
 
 The zero of the symbol is the pole of the propagator. The mode action's kernel is the symbol, so the propagator at that wave number is the symbol's inverse, and the inverse does not exist exactly where the symbol vanishes. The zero of the symbol and the pole of the propagator are one locus, read from two sides, and the article treats them as one object rather than two.
 
-Why the identification matters here. The coupled scalar's symbol is the free one with a translated argument, so its zero is the free zero moved by the connection: $k_\mu\to k_\mu-\frac{2\pi q}{h}A_\mu$. The coupling does not create a new zero and does not remove one; it moves the existing one, and every statement about the spectrum in the coupled theory is the free statement translated.
+Why the identification matters here. The coupled scalar's symbol is the free one with a translated argument, so its zero is the free zero moved by the connection: $k_{\imath}\to k_{\imath}-\frac{2\pi q}{h}A_{\imath}$. The coupling does not create a new zero and does not remove one; it moves the existing one, and every statement about the spectrum in the coupled theory is the free statement translated.
 
 The on-shell action. On a solution the amplitude is a null vector of the symbol, so the quadratic form $\langle\tilde X,\sigma\tilde X\rangle$ is zero. **The mode action vanishes on shell**, and that is not a coincidence: the action is the form, the equation is the kernel, and a kernel vector is annihilated by the form. A reader who expects the on-shell action to equal the energy has imported a non-degenerate Lagrangian from another reading; here the form is the action and its value on a solution is zero.
 
@@ -211,8 +211,8 @@ Both readings are real in the corpus's writing, so the reality of the symbol can
 | --- | --- |
 | $S_{\mathrm{c}}$ | The parent's slot-summed matter action |
 | $\delta S_{\mathrm{c}}/\delta\tilde\Xi^{*}$ | The Euler–Lagrange operator; $-\bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\bigr)\tilde\Xi$ |
-| $c_\mu=\frac{2\pi iϙ}{h}A_\mu$ | The per-slot connection coefficient; $c_t=-\frac{2\pi ϙa_t'}{h}$ real, $c_\eta$ imaginary |
-| $\sigma_\mu$ | The free slot symbol; $\sigma_t=-k_t'$ real, $\sigma_\eta=i\kappa_\eta$ imaginary |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot connection coefficient; $c_t=-\frac{2\pi ϙa_t'}{h}$ real, $c_\eta$ imaginary |
+| $\sigma_{\imath}$ | The free slot symbol; $\sigma_t=-k_t'$ real, $\sigma_\eta=i\kappa_\eta$ imaginary |
 | $(\partial_{R_t}+c_t)^{2}$ | The squared reading; one charge twice |
 | $(\partial_{R_t}-\bar c_t)(\partial_{R_t}+c_t)$ | The paired reading; the two opposite charges once each |
 | $2c_t(\partial_{R_t}+c_t)$ | Their difference as operators; symbol $2c_t(c_t-k_t')=2.0522$ |

@@ -12,7 +12,7 @@ No new prediction, no new solution, no new particle. The functional integral is 
 
 The two settings are kept apart. The parent distinguishes a constant-element setting, in which the Hamiltonian is a fixed element $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$, from an operator setting, in which it is $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/2m+V$. The integral below is written in both, but every closed-form kernel is a kernel of the operator setting, where the Hamiltonian is central, and no result is transferred from one setting to the other. The general constant element is treated once, in §*The Kernel and Its Centrality*, because its kernel is the central kernel times a rotor and that exception states the rule.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$. $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian fixed subspaces. The asterisk is Hermitian conjugation, $\natural$ quaternion conjugation, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The variable is $r'_t=c\,t'$, and $i \frac{h}{2\pi} c\,\partial_{r'_t}=i \frac{h}{2\pi}\,\partial_{t'}$; $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the parent's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. The step variables are lengths along $r'_t$, and $\mathrm{Lag}$ is the Lagrangian per unit $r'_t$, that is $L/c$.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$. $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian fixed subspaces. The asterisk is Hermitian conjugation, $\natural$ quaternion conjugation, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The variable is $r'_t=c\,t'$, and $i \frac{h}{2\pi} c\,\partial_{r'_t}=i \frac{h}{2\pi}\,\partial_{t'}$; $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the parent's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. The step variables are lengths along $r'_t$, and $\mathrm{Lag}$ is the Lagrangian per unit $r'_t$, that is $L/c$.
 
 ## The Integral and Its Weight
 
@@ -183,7 +183,7 @@ The saddle of the field integral is source-fixed rather than boundary-fixed, whi
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_\mu^{2}=-e_t$ | Quaternion units |
+| $e_t=1,\ \vec e_{\imath}^{2}=-e_t$ | Quaternion units |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{C},\ \mathbb{B}_{\Psi},\ \mathbb{B}_{\Phi}$ | Centre, Hermitian sector, anti-Hermitian sector |
 | $\tilde\Xi$ | The Schrödinger field, one element of $\mathbb{B}$ |

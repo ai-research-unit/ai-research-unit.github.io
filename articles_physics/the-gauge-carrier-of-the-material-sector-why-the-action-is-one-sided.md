@@ -22,7 +22,7 @@ The rotor picture: turning a frame and carrying a module. A unit real quaternion
 
 The statement. For elements $a,b$ of the algebra, $L_a\circ L_b=L_{ab}$. The map $a\mapsto L_a$ is therefore multiplicative: it is a representation of the algebra on itself, the regular one.
 
-Why it matters. A gauge transformation must compose as the group composes. Because the parameter multiplies, a product of two gauge transformations is the gauge transformation of the product parameter, and the coupling can be written as a single element multiplying the field. This is what makes $D_\mu\tilde\Xi=\partial/\partial R_\mu\tilde\Xi+i\kappa\,\mathcal{A}_\mu\tilde\Xi$ a covariant derivative rather than a formal symbol.
+Why it matters. A gauge transformation must compose as the group composes. Because the parameter multiplies, a product of two gauge transformations is the gauge transformation of the product parameter, and the coupling can be written as a single element multiplying the field. This is what makes $D_{\imath}\tilde\Xi=\partial/\partial R_{\imath}\tilde\Xi+i\kappa\,\mathcal{A}_{\imath}\tilde\Xi$ a covariant derivative rather than a formal symbol.
 
 **What it does not say.** That the left family is multiplicative does not make it an *algebra* endomorphism. The two statements are different, and the difference is the second result.
 

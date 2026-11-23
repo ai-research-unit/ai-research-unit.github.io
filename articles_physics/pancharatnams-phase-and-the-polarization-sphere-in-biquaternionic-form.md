@@ -13,7 +13,7 @@ The Poincaré sphere is a level set of the biquaternion norm of the biquaternion
 
 The article is classical optics in the algebra. The "state" of a beam is its classical coherence matrix, the connection lives on the classical ray space, and the interference is classical. The companion article on the Berry phase develops the quantum two-level system, which shares the geometry; here the physics is a light beam, two polarizers, and an interferometer.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central, $i^2=-1$; ${}^{*}$ is Hermitian conjugation; $\mathbb{B}_{\Psi}$ is the Hermitian sector, $\mathbb{B}_{\Phi}$ the anti-Hermitian one; $\mathbb{B}_{H}$ is the real-quaternion subspace. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. The Poincaré sphere is parametrised by the unit Stokes vector $\vec u=(\sin\theta\cos\theta_{\mathrm{azm}},\sin\theta\sin\theta_{\mathrm{azm}},\cos\theta)$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$; $i$ is central, $i^2=-1$; ${}^{*}$ is Hermitian conjugation; $\mathbb{B}_{\Psi}$ is the Hermitian sector, $\mathbb{B}_{\Phi}$ the anti-Hermitian one; $\mathbb{B}_{H}$ is the real-quaternion subspace. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. The Poincaré sphere is parametrised by the unit Stokes vector $\vec u=(\sin\theta\cos\theta_{\mathrm{azm}},\sin\theta\sin\theta_{\mathrm{azm}},\cos\theta)$.
 
 The companion articles are:
 - Companion article *The Symplectic Form and the Biquaternion Norm Cone*, for the biquaternion-norm cone and its role as a level set.
@@ -66,7 +66,7 @@ $$
 \qquad \tilde{Ϛ}_{\Psi}=\tilde{Ϛ}_{\Psi}^{*} .
 $$
 
-The factor $i$ on the vector part is what makes the vector part Hermitian: the units $\vec e_\mu$ are anti-Hermitian, so $i\vec e_\mu$ is Hermitian, and the coefficients $S_\mu$ are real. The scalar part $S_0/2$ is real.
+The factor $i$ on the vector part is what makes the vector part Hermitian: the units $\vec e_{\imath}$ are anti-Hermitian, so $i\vec e_{\imath}$ is Hermitian, and the coefficients $S_{\imath}$ are real. The scalar part $S_0/2$ is real.
 
 ### The Biquaternion Norm
 
@@ -329,7 +329,7 @@ The phase is classical: it is measured by the shift of interference fringes of a
 | $\gamma_{\mathrm{Panch}}=-\frac12\theta_{\mathrm{sol}}$ | Pancharatnam phase (half-solid-angle rule) |
 | $\theta_{\mathrm{sol},ABC}=\theta_{\mathrm{stk}}+\beta+\gamma-\pi$ | Signed solid angle of a spherical triangle (Girard's theorem) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

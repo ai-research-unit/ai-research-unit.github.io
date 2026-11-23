@@ -26,7 +26,7 @@ $$
 
 The parent writes it in $r'_t$ with a factor $c$; the substitution $i \frac{h}{2\pi}\,c\,\partial_{r'_t}=i \frac{h}{2\pi}\,\partial_{t'}$ is exact and is used here once.
 
-The two kinds of coefficient. A *Hermitian coefficient* is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with real numbers. A *root* is $\tilde Z$ with $\tilde Z^{2}=-e_t$; the four used below are $i$, $\vec e_z$, $\vec e_x$ and $(\vec e_x+\vec e_z)/\sqrt2$. Every root is anti-Hermitian, because $\vec e_\mu^{*}=-\vec e_\mu$ and $i^{*}=-i$.
+The two kinds of coefficient. A *Hermitian coefficient* is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with real numbers. A *root* is $\tilde Z$ with $\tilde Z^{2}=-e_t$; the four used below are $i$, $\vec e_z$, $\vec e_x$ and $(\vec e_x+\vec e_z)/\sqrt2$. Every root is anti-Hermitian, because $\vec e_{\imath}^{*}=-\vec e_{\imath}$ and $i^{*}=-i$.
 
 ### The Constant-Coefficient Licence
 
@@ -128,7 +128,7 @@ What the identity is not. It is not a proof that the equation is variational for
 
 The vanishing of the bracket is the equation. Since the pairing $\mathrm{Sc}(XY)$ is non-degenerate on $\mathbb{B}$, the bracket vanishes as an element. The non-degeneracy is the parent's, and it is not the same as the definiteness of the Hermitian form: it is a Hermitian pairing, and it needs no positivity.
 
-Why the Hermitian pairing is enough. For $X=E^{*}$ the pairing gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum of moduli, so it vanishes only for $E=0$. The argument is the parent's and it is quoted once here.
+Why the Hermitian pairing is enough. For $X=E^{*}$ the pairing gives $\mathrm{Sc}(E^{*}E)=\sum_{\imath}\lvert E_{\imath}\rvert^{2}$, a sum of moduli, so it vanishes only for $E=0$. The argument is the parent's and it is quoted once here.
 
 ### Zero, Pole and the On-Shell Action
 

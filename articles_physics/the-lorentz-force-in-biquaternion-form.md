@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A charged particle moving in an electromagnetic field is acted on by the **Lorentz force**. In the four-dimensional language of relativity this force is the contraction of the field-strength tensor with the four-velocity, $F_{\mathrm{lor},\mu} = ϙ\sum_\nu F_{\mu\nu}v_\nu$; in three-vector language it reads $ϙ(\vec E + \vec v\times\vec B)$ for the spatial part, together with the power $ϙ\,\vec E\cdot\vec v$ in the time part. The companion article *Relativistic Mechanics in Biquaternionic Form* recorded the biquaternion component form of this four-force and identified it as an element of the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. That article also recorded, explicitly and twice, an open problem: the expression of the same four-force as a **biquaternion product** of the field-strength biquaternion $\tilde{F}$ and the four-velocity $\tilde{V}_{\Phi}$ is *not* simply the real part of $\tilde{F}\circ\tilde{V}_{\Phi}$, the correct expression "involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$", and it "remains to be worked out cleanly".
+A charged particle moving in an electromagnetic field is acted on by the **Lorentz force**. In the four-dimensional language of relativity this force is the contraction of the field-strength tensor with the four-velocity, $F_{\mathrm{lor},\imath} = ϙ\sum_{\jmath} F_{\imath\jmath}v_{\jmath}$; in three-vector language it reads $ϙ(\vec E + \vec v\times\vec B)$ for the spatial part, together with the power $ϙ\,\vec E\cdot\vec v$ in the time part. The companion article *Relativistic Mechanics in Biquaternionic Form* recorded the biquaternion component form of this four-force and identified it as an element of the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. That article also recorded, explicitly and twice, an open problem: the expression of the same four-force as a **biquaternion product** of the field-strength biquaternion $\tilde{F}$ and the four-velocity $\tilde{V}_{\Phi}$ is *not* simply the real part of $\tilde{F}\circ\tilde{V}_{\Phi}$, the correct expression "involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$", and it "remains to be worked out cleanly".
 
 This article carries out that work. The result is a two-term product formula, bilinear in the field and the four-velocity, that reproduces the component form exactly. In its most compact shape the formula is a single projection:
 
@@ -33,7 +33,7 @@ $$
 
 and the field strength keeps the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the field-strength article.
 
-The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The quaternion conjugate of a biquaternion $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ is $\tilde{Q}^{\natural} = Q_te_t - \vec Q$, its complex conjugate is $\bar{\tilde{Q}} = \sum_\mu \bar{Q}_\mu e_\mu$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{\tilde{Q}}^{\natural} = \sum_\mu \bar{Q}_\mu e_\mu$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec v_b$ is a frame (boost) velocity, and $\vec B = \mu\vec H$ is the magnetic induction.
+The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The quaternion conjugate of a biquaternion $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ is $\tilde{Q}^{\natural} = Q_te_t - \vec Q$, its complex conjugate is $\bar{\tilde{Q}} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{\tilde{Q}}^{\natural} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec v_b$ is a frame (boost) velocity, and $\vec B = \mu\vec H$ is the magnetic induction.
 
 ## The Lorentz Four-Force in Component Form
 
@@ -55,12 +55,12 @@ $$
 \tilde{\mathcal F}_{\Phi,\mathrm{frc}} = i\,\frac{\gamma P_{\text{mech}}}{c}\,e_t + \gamma\,\vec f.
 $$
 
-This is the biquaternion transcription of the Minkowski force $F_{\mathrm{lor},\mu} = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $i r'_t$ convention, so the coefficient of $e_t$ is the $i r'_t$ time component $K_0$.
+This is the biquaternion transcription of the Minkowski force $F_{\mathrm{lor},\imath} = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $i r'_t$ convention, so the coefficient of $e_t$ is the $i r'_t$ time component $K_0$.
 
-**Origin in the field tensor.** The component form is the contraction $F_{\mathrm{lor},\mu} = ϙ\sum_\nu F_{\mu\nu}v_\nu$. In the $i r'_t$ convention the metric is Euclidean, so no metric factor arises and $v_\nu = (i\gamma c,\ \gamma\vec v)$. The field tensor is the one fixed by the field-strength article,
+**Origin in the field tensor.** The component form is the contraction $F_{\mathrm{lor},\imath} = ϙ\sum_{\jmath} F_{\imath\jmath}v_{\jmath}$. In the $i r'_t$ convention the metric is Euclidean, so no metric factor arises and $v_{\jmath} = (i\gamma c,\ \gamma\vec v)$. The field tensor is the one fixed by the field-strength article,
 
 $$
-F_{\mu\nu} =
+F_{\imath\jmath} =
 \begin{pmatrix}
 0 & iE_x/c & iE_y/c & iE_z/c \\
 -iE_x/c & 0 & B_z & -B_y \\
@@ -109,7 +109,7 @@ $$
 \tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0,
 $$
 
-the biquaternion form of the Minkowski orthogonality $\sum_\mu F_{\mathrm{lor},\mu} P_\mu = 0$. The four-force changes the direction of the four-momentum but not its norm. This is examined further in the section on invariants.
+the biquaternion form of the Minkowski orthogonality $\sum_{\imath} F_{\mathrm{lor},\imath} P_{\imath} = 0$. The four-force changes the direction of the four-momentum but not its norm. This is examined further in the section on invariants.
 
 ## The Product Problem
 
@@ -354,7 +354,7 @@ The four-force is thus built from the same ingredients as the four-momentum — 
 
 Three consequences follow at once.
 
-**Orthogonality.** Differentiating the mass shell, $\frac{d}{d\tau}(\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}) = \tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0$. In components this is the familiar $\sum_\mu F_{\mathrm{lor},\mu} P_\mu = 0$, which for the Lorentz force reads
+**Orthogonality.** Differentiating the mass shell, $\frac{d}{d\tau}(\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}) = \tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0$. In components this is the familiar $\sum_{\imath} F_{\mathrm{lor},\imath} P_{\imath} = 0$, which for the Lorentz force reads
 
 $$
 \left(i\frac{\gamma P_{\text{mech}}}{c}\right)\left(i\gamma mc\right) + \left(\gamma\vec f\right)\cdot\left(\gamma m\vec v\right)
@@ -439,10 +439,10 @@ The invariants do not determine the force, because the force also depends on the
 There is one further sense in which the field invariants govern the motion, and it is the sharpest one. For a particle in a **uniform** field the equation of motion is linear,
 
 $$
-\frac{dP_\mu}{d\tau} = \frac{ϙ}{m}\sum_\nu F_{\mu\nu}P_\nu,
+\frac{dP_{\imath}}{d\tau} = \frac{ϙ}{m}\sum_{\jmath} F_{\imath\jmath}P_{\jmath},
 $$
 
-so the proper-time motion is a superposition of exponentials whose rates are $(ϙ/m)$ times the eigenvalues of the field matrix $F_{\mu\nu}$. In the $i r'_t$ convention those eigenvalues are determined by the two invariants: the characteristic polynomial is
+so the proper-time motion is a superposition of exponentials whose rates are $(ϙ/m)$ times the eigenvalues of the field matrix $F_{\imath\jmath}$. In the $i r'_t$ convention those eigenvalues are determined by the two invariants: the characteristic polynomial is
 
 $$
 \det\!\left(\lambda\,\mathbb{1} - F\right)
@@ -459,17 +459,17 @@ In the frame in which $\vec E$ and $\vec B$ are parallel these reduce to $\lambd
 
 ### A null-field invariant
 
-One genuine extra invariant of the motion exists in the null case. A null field is radiative: its field matrix has a null eigenvector $\vec k_\Phi$ (the propagation direction), satisfying $\sum_\mu k_{\Phi,\mu} F_{\mu\nu} = 0$. Then
+One genuine extra invariant of the motion exists in the null case. A null field is radiative: its field matrix has a null eigenvector $\vec k_\Phi$ (the propagation direction), satisfying $\sum_{\imath} k_{\Phi,\imath} F_{\imath\jmath} = 0$. Then
 
 $$
 \frac{d}{d\tau}\left(k\cdot P\right)
-= \sum_\mu k_{\Phi,\mu}\,\frac{dP_\mu}{d\tau}
-= \frac{ϙ}{m}\sum_{\mu,\nu}k_{\Phi,\mu} F_{\mu\nu}P_\nu = 0,
+= \sum_{\imath} k_{\Phi,\imath}\,\frac{dP_{\imath}}{d\tau}
+= \frac{ϙ}{m}\sum_{\imath,\jmath}k_{\Phi,\imath} F_{\imath\jmath}P_{\jmath} = 0,
 $$
 
 so $k\cdot P$ is constant along the worldline. This is the invariant of the motion associated with the degenerate (radiative) type of the field, and it exists precisely when $I_1 = I_2 = 0$. For non-null fields the mass shell is the only invariant of this simple kind.
 
-**The exponentials are themselves a Lorentz transformation, and the invariants fix its type.** The field is an element of the Lorentz Lie algebra, so its matrix image $F_{\mu\nu}$, scaled by the scalar $ϙ/m$, generates a one-parameter subgroup: $\exp((ϙ/m)\tau F_{\mu\nu})$ is a Lorentz transformation, and the four cases of the eigenvalues above are its four types — a boost for the electric type, a rotation for the magnetic type, a null rotation for the null type, and a boost composed with a rotation for the generic one. The classification, the two rates that the trace of the flow displays, and the boundary between this flow and the field it exponentiates are recorded in *The Field-Strength Biquaternion and Its Invariants*, §*The Flow the Field Generates: The Four Types*.
+**The exponentials are themselves a Lorentz transformation, and the invariants fix its type.** The field is an element of the Lorentz Lie algebra, so its matrix image $F_{\imath\jmath}$, scaled by the scalar $ϙ/m$, generates a one-parameter subgroup: $\exp((ϙ/m)\tau F_{\imath\jmath})$ is a Lorentz transformation, and the four cases of the eigenvalues above are its four types — a boost for the electric type, a rotation for the magnetic type, a null rotation for the null type, and a boost composed with a rotation for the generic one. The classification, the two rates that the trace of the flow displays, and the boundary between this flow and the field it exponentiates are recorded in *The Field-Strength Biquaternion and Its Invariants*, §*The Flow the Field Generates: The Four Types*.
 
 ## The Transformation of the Force under Boosts
 
@@ -620,7 +620,7 @@ $$
 \tilde{\mathcal F}_{\Phi,\mathrm{frc}} = i\,\frac{\gamma ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
 $$
 
-which is the contraction $F_{\mathrm{lor},\mu} = ϙ\sum_\nu F_{\mu\nu}v_\nu$ written in the biquaternion basis, and it lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. Its expression as a biquaternion product of the field strength and the four-velocity is not the real part of $\tilde{F}\tilde{V}_{\Phi}$ — that object has the wrong reality structure and lies outside $\mathbb{B}_{\Phi}$ — but the anti-Hermitian projection of $\tilde{V}_{\Phi}\tilde{F}$:
+which is the contraction $F_{\mathrm{lor},\imath} = ϙ\sum_{\jmath} F_{\imath\jmath}v_{\jmath}$ written in the biquaternion basis, and it lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. Its expression as a biquaternion product of the field strength and the four-velocity is not the real part of $\tilde{F}\tilde{V}_{\Phi}$ — that object has the wrong reality structure and lies outside $\mathbb{B}_{\Phi}$ — but the anti-Hermitian projection of $\tilde{V}_{\Phi}\tilde{F}$:
 
 $$
 \boxed{\;\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
@@ -669,7 +669,7 @@ At the level of densities the companion programme replaces the per-particle forc
 | $I_2 = \vec E\cdot\vec B$ | Second field invariant |
 | $\tilde U = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | Boost biquaternion (Hermitian, unit norm) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

@@ -21,7 +21,7 @@ $$
 \tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 $$
 
-with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}_{\Phi}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}_{\mathrm{lor}}\tilde{Q}\tilde{U}_{\mathrm{lor}}^{*}$, and the material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$.
+with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}_{\Phi}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath}$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}_{\mathrm{lor}}\tilde{Q}\tilde{U}_{\mathrm{lor}}^{*}$, and the material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$.
 
 The companion articles, and what each supplies, are the following.
 
@@ -57,7 +57,7 @@ The dimension count is worth recording because it is the whole content of the sp
 
 ### The vector part is the bivector space
 
-An element of $\mathbb{B}$ is written in components as $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ with $Q_\mu \in \mathbb{C}$. The **vector part** is the space of elements with vanishing scalar part,
+An element of $\mathbb{B}$ is written in components as $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ with $Q_{\imath} \in \mathbb{C}$. The **vector part** is the space of elements with vanishing scalar part,
 
 $$
 \mathbb{B}_{V} = \{\,Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z\,\},
@@ -145,7 +145,7 @@ $$
 \star\tilde{F} = -i\tilde{F} = \tilde{F}(-i),
 $$
 
-the scalar imaginary being central, so that left and right multiplication agree. The statement is intrinsic: no Clifford generator, no gamma matrix (no basis operator $T_{\mu\nu}$), and no choice of representation enters. The Hodge dual of the framework's field strength is the scalar imaginary acting on the vector part of the algebra.
+the scalar imaginary being central, so that left and right multiplication agree. The statement is intrinsic: no Clifford generator, no gamma matrix (no basis operator $T_{\imath\jmath}$), and no choice of representation enters. The Hodge dual of the framework's field strength is the scalar imaginary acting on the vector part of the algebra.
 
 ## The Self-Dual and Anti-Self-Dual Split
 
@@ -234,7 +234,7 @@ so that the antisymmetric tensor is **pure** integer spin. This is the algebraic
 
 The count is realised concretely, and the realisation is the one constructed in the maths article [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html), §*The Anti-Hermitian Space*.
 
-The rotation algebra inside $\mathbb{B}$ is the real span of the three pure quaternions, $\mathfrak{g}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, with bracket $[\vec e_\mu,\vec e_\nu]=2\epsilon_{\mu\nu\lambda}\vec e_\lambda$. Its Hermitian normalisation is $\tilde S_k=\tfrac12 i\vec e_k$, with $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$ and $\tilde S_k^{*}=\tilde S_k$. The factor $i$ is the only difference between the two normalisations.
+The rotation algebra inside $\mathbb{B}$ is the real span of the three pure quaternions, $\mathfrak{g}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, with bracket $[\vec e_{\imath},\vec e_{\jmath}]=2\epsilon_{\imath\jmath\lambda}\vec e_\lambda$. Its Hermitian normalisation is $\tilde S_k=\tfrac12 i\vec e_k$, with $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$ and $\tilde S_k^{*}=\tilde S_k$. The factor $i$ is the only difference between the two normalisations.
 
 The carrier is the vector part itself, of complex dimension three, with the adjoint action $\tilde{Q}\mapsto[\tilde S_k,\tilde{Q}]$. A weight basis is
 

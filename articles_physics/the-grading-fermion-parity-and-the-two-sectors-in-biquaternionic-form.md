@@ -39,7 +39,7 @@ $$
 \text{odd}\cdot\text{odd}=\text{even},
 $$
 
-that is, the parity of a product is the sum of the parities. The generator of the coordinate $x_\mu$ is odd. A product of two generators is even: the composite multiplies on the left by $e_\mu e_\rho$ and on the right by the product of the two right-hand units, with the one factor $i^2=-1$ in front, so it is the action of a bivector; the volume element, the product of the four, is even as well; and the square of one generator is $\pm e_t$, a scalar, hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic; a product of an even number is bosonic.
+that is, the parity of a product is the sum of the parities. The generator of the coordinate $x_{\imath}$ is odd. A product of two generators is even: the composite multiplies on the left by $e_{\imath} e_\rho$ and on the right by the product of the two right-hand units, with the one factor $i^2=-1$ in front, so it is the action of a bivector; the volume element, the product of the four, is even as well; and the square of one generator is $\pm e_t$, a scalar, hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic; a product of an even number is bosonic.
 
 **Remark.** The identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is therefore not merely "$\mathbb{B}$ is a subalgebra"; it says *which* slot of the ambient graded algebra the biquaternion algebra is. The whole physics series computes in the bosonic sector, and this is why the parity sign of the section after next is invisible in it.
 
@@ -186,7 +186,7 @@ The Hermitian conjugation of the basis elements is the basis table of *Biquatern
 
 The $*$-unitary slice $\mathcal{U}=\{x:x^{*}x=e_t\}$ of the dagger is a group: a left inverse in a finite-dimensional algebra is an inverse, so $x^{*}x=e_t$ gives $x^{-1}=x^{*}$ and the slice is closed under multiplication. It contains more than the unit quaternions: the unit quaternions (real coefficients with $\langle x\rangle_{\natural}=1$), the unit complex scalars of the centre, and the boosts $i\vec e_\eta$ all satisfy $x^{*}x=e_t$. Its Lie algebra, by the sector decomposition, is $\mathbb{B}_{\Phi}$: the anti-Hermitian elements are exactly those for which $\exp$ lands in $\mathcal{U}$, because $(\exp u)^{*}=\exp(u^{*})=\exp(-u)=\exp(u)^{-1}$.
 
-The slice is compact, and the algebra says so without a matrix: on it the scalar part of $x^{*}x$ is fixed, and $\mathrm{Sc}(x^{*}x)=\sum_\mu\lvert Q_\mu\rvert^{2}$, so $x^{*}x=e_t$ forces $\sum_\mu\lvert Q_\mu\rvert^{2}=1$ and the four complex coefficients lie on the unit sphere of $\mathbb{C}^{4}$; a closed subset of a compact set is compact. Its real dimension is four — the eight real coordinates less the four real conditions of $x^{*}x=e_t$, which are independent at a regular point of the slice. The **inverse** slice is the other one, the group of invertibles of the algebra, and it is non-compact: this is the difference between the adjoint interpretation and the inverse interpretation in one line — the dagger selects the compact group, the inverse the group of invertibles, and the Lorentz group of the corpus is reached by the inverse.
+The slice is compact, and the algebra says so without a matrix: on it the scalar part of $x^{*}x$ is fixed, and $\mathrm{Sc}(x^{*}x)=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$, so $x^{*}x=e_t$ forces $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}=1$ and the four complex coefficients lie on the unit sphere of $\mathbb{C}^{4}$; a closed subset of a compact set is compact. Its real dimension is four — the eight real coordinates less the four real conditions of $x^{*}x=e_t$, which are independent at a regular point of the slice. The **inverse** slice is the other one, the group of invertibles of the algebra, and it is non-compact: this is the difference between the adjoint interpretation and the inverse interpretation in one line — the dagger selects the compact group, the inverse the group of invertibles, and the Lorentz group of the corpus is reached by the inverse.
 
 ### The Norm Factor on a Boost
 
@@ -207,7 +207,7 @@ so the two odd parameters have multiplied to the even element $\vec e_z$, and th
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -231,36 +231,36 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The identities the body cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}+\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
-The four contraction sums, with the index $\mu$ summed over the frame and the weight $\varepsilon_\mu$ carried on the sum, are, for $A$ a product of $n$ distinct generators,
+The four contraction sums, with the index $\mu$ summed over the frame and the weight $\varepsilon_{\imath}$ carried on the sum, are, for $A$ a product of $n$ distinct generators,
 
 $$
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu A\gamma_\mu=-(-1)^{n+1}(4-2n)A ,
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4,\qquad
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha,\qquad
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} A\gamma_{\imath}=-(-1)^{n+1}(4-2n)A ,
 $$
 
-The weight sits in the sum and nowhere else: with no weight the same sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spacelike sums vanish, $\sum_\mu\gamma_\mu\gamma_\eta\gamma_\mu=0$.
+The weight sits in the sum and nowhere else: with no weight the same sums read $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=-2I_4$, $\sum_{\imath}\gamma_{\imath}\gamma_0\gamma_{\imath}=+4\gamma_0$, and the spacelike sums vanish, $\sum_{\imath}\gamma_{\imath}\gamma_\eta\gamma_{\imath}=0$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -275,11 +275,11 @@ The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the gra
 | Symbol | Meaning |
 |---|---|
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | The graded ambient algebra; $\mathrm{Cl}^0=\mathbb{B}$ |
-| $Q\mapsto ie_\mu Q\vec e_{\mathrm{spt}(\mu)}$ | The generator of the coordinate $x_\mu$, odd; two of them compose to a bivector, even |
+| $Q\mapsto ie_{\imath} Q\vec e_{\mathrm{spt}(\imath)}$ | The generator of the coordinate $x_{\imath}$, odd; two of them compose to a bivector, even |
 | $x^{*}=\sigma(\alpha(x^{r}))$ | The Hermitian dagger; even, anti-involution |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Fixed and anti-fixed loci of the dagger; informational and material sectors |
 | $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | The eigen-decomposition of the dagger; not an algebra grading |
-| $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ | The quaternionic norm; $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$ |
+| $\langle\tilde{Q}\rangle_{\natural}=\sum_{\imath} Q_{\imath}^2$ | The quaternionic norm; $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$ |
 | $\mathcal{U}=\{x:x^{*}x=e_t\}$ | The $*$-unitary slice; compact, real dimension four, Lie algebra $\mathbb{B}_{\Phi}$ |
 | $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$, $\varepsilon_x=(-1)^{\lvert x\rvert}$ | The grade involution as a scalar sign |
 | $\mathrm{Sd}_x(y)=x\,y\,x^{*}$ | The Hermitian pair, the only operator used |

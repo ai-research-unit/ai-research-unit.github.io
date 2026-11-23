@@ -26,7 +26,7 @@ $$
 \;}
 $$
 
-with $k_m=\frac{2\pi mc}{h}$ the mass wave number, that is the reciprocal reduced Compton length. The field is one element $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ of $\mathbb{B}$. The gradient differentiates with respect to the coordinates $R_\mu$ and is an element of the algebra that multiplies on the left; the mass is a central coefficient. No column, no anticommuting array, no separate state space and no idempotent enters the statement.
+with $k_m=\frac{2\pi mc}{h}$ the mass wave number, that is the reciprocal reduced Compton length. The field is one element $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ of $\mathbb{B}$. The gradient differentiates with respect to the coordinates $R_{\imath}$ and is an element of the algebra that multiplies on the left; the mass is a central coefficient. No column, no anticommuting array, no separate state space and no idempotent enters the statement.
 
 At $k_m=0$ the pair decouples into two one-sided equations,
 

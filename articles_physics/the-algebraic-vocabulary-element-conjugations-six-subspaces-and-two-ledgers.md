@@ -34,7 +34,7 @@ $$
 \tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z=\vec q+i\vec q'=\tilde q+i\tilde q' ,
 $$
 
-with $Q_\mu=q_\mu+iq'_\mu$. The first writing is four complex coordinates on the four units; the second is eight real coordinates on the eight basis elements $e_\mu,ie_\mu$; the third is two real quaternions. The **scalar part** is $Q_te_t$, the **vector part** is $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and the **complex length** of the vector part is $B$, with
+with $Q_{\imath}=q_{\imath}+iq'_{\imath}$. The first writing is four complex coordinates on the four units; the second is eight real coordinates on the eight basis elements $e_{\imath},ie_{\imath}$; the third is two real quaternions. The **scalar part** is $Q_te_t$, the **vector part** is $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and the **complex length** of the vector part is $B$, with
 
 $$
 B^2=Q_x^2+Q_y^2+Q_z^2=(\vec Q,\vec Q) .
@@ -43,7 +43,7 @@ $$
 The quaternionic norm is the sum of the four squares.
 
 $$
-N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+B^2 .
+N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^2=Q_t^2+B^2 .
 $$
 
 It is a complex quadratic form, not a positive one, and its vanishing is a condition and not a wall.
@@ -56,7 +56,7 @@ Four maps act on the algebra.
 
 | map | formula | $\mathbb{C}$-linearity | fixed space | anti-fixed space |
 | --- | --- | --- | --- | --- |
-| $\bar{\cdot}$ | $Q_\mu\mapsto\bar Q_\mu$ | antilinear | $\mathbb{B}_{H}$ | $\mathbb{B}_{iH}$ |
+| $\bar{\cdot}$ | $Q_{\imath}\mapsto\bar Q_{\imath}$ | antilinear | $\mathbb{B}_{H}$ | $\mathbb{B}_{iH}$ |
 | ${}^{\natural}$ | $Q_te_t-\sum_\eta Q_\eta\vec e_\eta$ | linear | $\mathbb{B}_{C}$ | $\mathbb{B}_{V}$ |
 | ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | $\bar Q_te_t-\sum_\eta\bar Q_\eta\vec e_\eta$ | antilinear | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
 | $\flat=-{}^{*}$ | $-\bar Q_te_t+\sum_\eta\bar Q_\eta\vec e_\eta$ | antilinear | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\Psi}$ |
@@ -366,7 +366,7 @@ The physical names are those of the corpus's conventions. The choice of the anti
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the quaternion basis |
 | $i$ | the central imaginary unit, $i^2=-1$ |
 | $J(\tilde Q)=i\tilde Q$ | multiplication by the central unit, $J^2=-\mathrm{id}$ |
-| $\tilde Q=Q_te_t+\vec Q$ | the scalar–vector split, $Q_\mu=q_\mu+iq'_\mu$ |
+| $\tilde Q=Q_te_t+\vec Q$ | the scalar–vector split, $Q_{\imath}=q_{\imath}+iq'_{\imath}$ |
 | $B^2=(\vec Q,\vec Q)=Q_x^2+Q_y^2+Q_z^2$ | the complex length squared of the vector part |
 | $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | the quaternionic norm |
 | $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}$, $\flat=-{}^{*}$ | complex, quaternion, Hermitian and anti-Hermitian conjugation |

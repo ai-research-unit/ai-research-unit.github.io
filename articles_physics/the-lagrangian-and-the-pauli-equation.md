@@ -7,7 +7,7 @@ The answer in three sentences. Expand the Dirac field about its rest phase, $\ti
 What this article is not. It is not a derivation of the anomalous moment, which needs the quantised theory; it is not a discussion of the fine structure, which is the next order; and it is not a replacement for the polar companion, which writes the same limit in the chart's variables. It is the element-form limit, with its error term stated.
 
 ## Conventions
-The conventions are the Dirac and Schrödinger parents', and the limit is what makes them meet. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$; the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iq}{h}\tilde A_\Phi$; $k_m=\frac{2\pi mc}{h}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the measure $\mathrm{d}^{4}r$.
+The conventions are the Dirac and Schrödinger parents', and the limit is what makes them meet. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$; the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iq}{h}\tilde A_\Phi$; $k_m=\frac{2\pi mc}{h}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the measure $\mathrm{d}^{4}r$.
 
 Two symbols are specific to the limit. The rest phase is $\exp(-ik_m r'_t)$, and the residual field $\tilde\chi$ is defined by $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$; it varies on the slow scale $r'_t$ and its time derivative is of order $1/m$ relative to the mass term. The spin direction is $\vec n_{\mathrm{rot}}$, the rotor's axis, and the spin vector is $\vec S=\frac{h}{4\pi}\vec n_{\mathrm{rot}}$. The magnetic field is the vector part of $\tilde F$, $\vec B=\mu\vec H$.
 ## The Action in Element Form
@@ -120,7 +120,7 @@ $$
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_\mu^{2}=-e_t$ | Basis and its squares |
+| $e_t=1,\ \vec e_{\imath}^{2}=-e_t$ | Basis and its squares |
 | $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$ | Rest-phase decomposition |
 | $\tilde\chi$ | Residual (non-relativistic) field |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |

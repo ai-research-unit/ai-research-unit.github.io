@@ -75,7 +75,7 @@ This is the precise content of the remark that the quaternions were "not enough"
 The quaternions form a four-dimensional real division algebra. Making them complex produces the biquaternions: the four coefficients are allowed to be complex,
 
 $$
-\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu \in \mathbb{C},
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_{\imath} \in \mathbb{C},
 $$
 
 with the quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ multiplying as in $\mathbb{H}$ and commuting with every complex scalar. Hamilton himself took this step and named the result: the **biquaternion** is the complex quaternion, and its fullest treatment in his own work is in the *Lectures on Quaternions* (1853). His motive was the algebraic one set out above: in the treatment of general quadratic equations with quaternion coefficients, the resolution called for complex coefficients. The word is his, and so is the surrounding vocabulary — he introduced *bivector*, *biconjugate*, *bitensor*, and *biversor* alongside it. His notation for the unit part of a quaternion was $Uq$ — the **versor**, from the Latin *versari*, to turn — and his word for the norm $|q|$ was the tensor, so that every quaternion is the product of its tensor and its versor, $q = Tq\,Uq$. Because the quaternion units were written $i, j, k$, Hamilton used the letter $h$ — not $i$ — for the square root of $-1$ in the coefficient field, to keep the two imaginary units apart, and Arthur W. Conway later followed the same convention. The companion articles write the quaternion units as $\vec e_x, \vec e_y, \vec e_z$ and reserve $i$ for the scalar imaginary, which removes the clash that $h$ was introduced to avoid. The translation is
@@ -115,7 +115,7 @@ The algebra and its subspaces are established in the companion articles and are 
 $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its four conjugations have as fixed-point sets the remarkable real subspaces used throughout the corpus: the complex subspace $\mathbb{B}_{C}$ (the complex scalars, the centre of $\mathbb{B}$), the quaternion subspace $\mathbb{B}_{H}$ (the real quaternions), the Hermitian subspace $\mathbb{B}_{\Psi}$ (real scalar part, imaginary vector part, the informational sector), and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part, the material sector). The quadratic form of the layer is the biquaternion norm
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 ,
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath\in\{t,x,y,z\}} Q_{\imath}^2 ,
 $$
 
 whose indefinite signs on $\mathbb{B}_{\Phi}$ arises algebraically from $i^2 = -1$ in the imaginary temporal coordinate $i r'_t$. The null elements $\langle\tilde{Q}\rangle_{\natural} = 0$, $\tilde{Q} \neq 0$, are the zero divisors; on $\mathbb{B}_{\Phi}$ they are the light cone.
@@ -312,7 +312,7 @@ The word "rotor" is Clifford's, coined in 1873 for a quantity having position �
 | $\mathbb{B}_{H}$ | Quaternion subspace (real quaternions; norm $(4,0)$) |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector; norm $(1,3)$) |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector; norm $(3,1)$) |
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (zero divisors where $\langle\tilde{Q}\rangle_{\natural}=0$) |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm (zero divisors where $\langle\tilde{Q}\rangle_{\natural}=0$) |
 | $\mathbb{B} \cong M_2(\mathbb{C}) \cong Cl_{3,0}(\mathbb{R})$ | Pauli algebra; $\mathsf{M}_2(\vec e_\eta) = -i\sigma_\eta$ |
 | $SL(2,\mathbb{C}) = \{\tilde U : \tilde U\tilde U^{\natural} = e_t\}$ | Unit-norm biquaternions; Lorentz double cover |
 | $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$ | Rotor conjugation on $\mathbb{B}_{\Phi}$ |

@@ -13,9 +13,9 @@ The algebra and the sign conventions are those of the corpus's field-strength ar
 ### The Two-Form
 
 $$
-F=\tfrac12\sum_{\mu,\nu}F_{\mu\nu}\,dR_{\mu}\wedge dR_{\nu},
+F=\tfrac12\sum_{\imath,\jmath}F_{\imath\jmath}\,dR_{\imath}\wedge dR_{\jmath},
 \qquad
-F_{\mu\nu}=\frac{\partial A_\nu}{\partial R_\mu}-\frac{\partial A_\mu}{\partial R_\nu},
+F_{\imath\jmath}=\frac{\partial A_{\jmath}}{\partial R_{\imath}}-\frac{\partial A_{\imath}}{\partial R_{\jmath}},
 $$
 
 with the six independent components organised into the electric and magnetic three-vectors:
@@ -51,7 +51,7 @@ They are not a four-vector and not a pair of three-vectors glued together by han
 In four dimensions the Hodge dual of a two-form is a two-form:
 
 $$
-\star F_{\mu\nu}=\tfrac12\sum_{\rho,\sigma}\varepsilon_\rho\varepsilon_\sigma\,\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma},
+\star F_{\imath\jmath}=\tfrac12\sum_{\rho,\sigma}\varepsilon_\rho\varepsilon_\sigma\,\epsilon_{\imath\jmath\rho\sigma}F_{\rho\sigma},
 $$
 
 and on the $(\vec E,\vec B)$ pair it acts as
@@ -238,10 +238,10 @@ and $d^{2}=0$ is the statement that mixed partial derivatives commute. So the sh
 A one-form $A$ assigns to each direction of a curve a rate: $A(\dot x)$ is the component of $A$ along the motion. That is what a connection does, and the field strength is its curvature, the antisymmetric part of the derivative of the connection:
 
 $$
-F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu .
+F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath} .
 $$
 
-For an abelian connection the curvature is gauge invariant, which is the calculation of the previous subsection; for a non-abelian one the curvature would acquire a commutator $[A_\mu,A_\nu]$ and would transform in the adjoint. The abelian case is the one the block uses, and the absence of the commutator is the reason the field strength's carrier is the bivector and not a tensor product of two vector carriers.
+For an abelian connection the curvature is gauge invariant, which is the calculation of the previous subsection; for a non-abelian one the curvature would acquire a commutator $[A_{\imath},A_{\jmath}]$ and would transform in the adjoint. The abelian case is the one the block uses, and the absence of the commutator is the reason the field strength's carrier is the bivector and not a tensor product of two vector carriers.
 
 ### Why the Two Carriers Behave Differently Under the Shift
 

@@ -7,7 +7,7 @@ This article writes the Skyrme model as an extremum of an action in the algebra,
 The equation. The parent's equation is the pair
 
 $$
-\frac{\partial}{\partial R_\mu}\Bigl(\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_\mu}\Bigr)+\frac{1}{e^2}\frac{\partial}{\partial R_\mu}\bigl[\tilde U^{\natural}\partial_\mu\tilde U,[\tilde U^{\natural}\partial_\nu\tilde U,\tilde U^{\natural}\partial_\nu\tilde U]\bigr]=0 ,
+\frac{\partial}{\partial R_{\imath}}\Bigl(\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_{\imath}}\Bigr)+\frac{1}{e^2}\frac{\partial}{\partial R_{\imath}}\bigl[\tilde U^{\natural}\partial_{\imath}\tilde U,[\tilde U^{\natural}\partial_{\jmath}\tilde U,\tilde U^{\natural}\partial_{\jmath}\tilde U]\bigr]=0 ,
 \qquad
 \tilde U\tilde U^{\natural}=e_t ,
 $$
@@ -16,17 +16,17 @@ the stationarity of the two-term action over group-valued fields. The article as
 
 Three things are established.
 
-*First, the action.* With $j_\mu=\tilde U^{\natural}\partial_\mu\tilde U$ and $\mathrm{Sc}(\cdot)$ the scalar part,
+*First, the action.* With $j_{\imath}=\tilde U^{\natural}\partial_{\imath}\tilde U$ and $\mathrm{Sc}(\cdot)$ the scalar part,
 
 $$
-S[\tilde U]=\int d^4r\;\Bigl[-\frac{f^2}{2}\,\mathrm{Sc}\bigl(\bar j_\mu j_\mu\bigr)+\frac{1}{16e^2}\,\mathrm{Sc}\bigl([j_\mu,j_\nu][j_\mu,j_\nu]\bigr)\Bigr],
+S[\tilde U]=\int d^4r\;\Bigl[-\frac{f^2}{2}\,\mathrm{Sc}\bigl(\bar j_{\imath} j_{\imath}\bigr)+\frac{1}{16e^2}\,\mathrm{Sc}\bigl([j_{\imath},j_{\jmath}][j_{\imath},j_{\jmath}]\bigr)\Bigr],
 $$
 
 the Euler–Lagrange condition is the parent's equation. The first term is the sigma model's; the second is the Skyrme term, and it is the unique four-derivative invariant that is at most quadratic in time derivatives.
 
 *Second, one term has no soliton.* A static configuration of the two-derivative action is scale invariant in three dimensions: shrinking it lowers its energy without bound, because a two-derivative energy in $d=3$ scales as $1/L$ and the target's topology gives no gap. The Derrick argument is re-derived here as a statement about the action, and it is the reason the second term exists.
 
-*Third, the second term is a commutator because the current is flat.* $[j_\mu,j_\nu]$ vanishes for a pure gauge field and it is precisely the flatness of $j_\mu$ that makes the commutator a measure of curvature rather than of the field's definition. The algebra gives the term its form; the standard classification gives it its uniqueness.
+*Third, the second term is a commutator because the current is flat.* $[j_{\imath},j_{\jmath}]$ vanishes for a pure gauge field and it is precisely the flatness of $j_{\imath}$ that makes the commutator a measure of curvature rather than of the field's definition. The algebra gives the term its form; the standard classification gives it its uniqueness.
 
 What is not new. The Skyrme model is standard, and its soliton, its topological charge and its baryon identification are imported. What the algebra supplies is that both terms are norms of one algebra-valued current and that the four-derivative combination is the norm of that current's commutator.
 
@@ -45,13 +45,13 @@ The sign convention. The overall sign is the one that makes the static energy po
 The current, and its flatness. The Maurer–Cartan form
 
 $$
-j_\mu=\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_\mu}\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi
+j_{\imath}=\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_{\imath}}\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi
 $$
 
 is flat,
 
 $$
-\frac{\partial j_\nu}{\partial R_\mu}-\frac{\partial j_\mu}{\partial R_\nu}+[j_\mu,j_\nu]=0 ,
+\frac{\partial j_{\jmath}}{\partial R_{\imath}}-\frac{\partial j_{\imath}}{\partial R_{\jmath}}+[j_{\imath},j_{\jmath}]=0 ,
 $$
 
 and flatness is what the second term of the action measures the failure of. In the static frame $j_i=\tilde U^{\natural}\partial_i\tilde U$ and $[j_i,j_j]$ is the curvature of the spatial connection, nonzero for every non-constant $\tilde U$.
@@ -59,12 +59,12 @@ and flatness is what the second term of the action measures the failure of. In t
 The two terms.
 
 $$
-\mathcal{L}_2=-\frac{f^2}{2}\,\mathrm{Sc}\bigl(\bar j_\mu j_\mu\bigr),
+\mathcal{L}_2=-\frac{f^2}{2}\,\mathrm{Sc}\bigl(\bar j_{\imath} j_{\imath}\bigr),
 \qquad
-\mathcal{L}_4=\frac{1}{16e^2}\,\mathrm{Sc}\bigl([j_\mu,j_\nu][j_\mu,j_\nu]\bigr).
+\mathcal{L}_4=\frac{1}{16e^2}\,\mathrm{Sc}\bigl([j_{\imath},j_{\jmath}][j_{\imath},j_{\jmath}]\bigr).
 $$
 
-Both are norms: the first of the current, the second of its commutator. The second is negative-definite before the overall sign is applied, because $[j_\mu,j_\nu]$ is anti-Hermitian, so $\mathrm{Sc}([j,j][j,j])=-\langle[j,j]\rangle_\natural\le 0$, and the coefficient carries the sign that makes the energy positive.
+Both are norms: the first of the current, the second of its commutator. The second is negative-definite before the overall sign is applied, because $[j_{\imath},j_{\jmath}]$ is anti-Hermitian, so $\mathrm{Sc}([j,j][j,j])=-\langle[j,j]\rangle_\natural\le 0$, and the coefficient carries the sign that makes the energy positive.
 
 Why there are exactly two terms at this order. At two derivatives the target admits one invariant; at four it admits two, of which the second is a total derivative and contributes nothing. The Skyrme combination is the one that is at most quadratic in time derivatives, which is the condition that a Hamiltonian exists and that the soliton has finite energy; the alternative, four time derivatives, would give Ostrogradsky ghosts and no stable configuration. The selection is therefore the physics of the Hamiltonian and not a convention.
 
@@ -76,7 +76,7 @@ $$
 
 is a total derivative and an integer; adding it to the action multiplies the path integral by a phase and changes no classical equation. It is a parameter of the quantum theory, not a term of the classical action, and the $\theta$ angle it defines is the same object as the QCD vacuum angle.
 
-The pairing. Both pairings are the real scalar part, and both integrands are real. $\mathrm{Sc}(\bar j_\mu j_\mu)$ is real because $j_\mu$ is anti-Hermitian; $\mathrm{Sc}([j_\mu,j_\nu][j_\mu,j_\nu])$ is real because the commutator of two anti-Hermitian elements is anti-Hermitian, and the square of an anti-Hermitian element is negative-Hermitian with a real scalar part. No reality condition is imposed; both follow from the carrier.
+The pairing. Both pairings are the real scalar part, and both integrands are real. $\mathrm{Sc}(\bar j_{\imath} j_{\imath})$ is real because $j_{\imath}$ is anti-Hermitian; $\mathrm{Sc}([j_{\imath},j_{\jmath}][j_{\imath},j_{\jmath}])$ is real because the commutator of two anti-Hermitian elements is anti-Hermitian, and the square of an anti-Hermitian element is negative-Hermitian with a real scalar part. No reality condition is imposed; both follow from the carrier.
 
 Why the same pairing serves both terms. The two terms differ in the object whose norm is taken — the current, and the current's commutator — and not in the pairing. That uniformity is what allows the two coefficients $f^2$ and $1/e^2$ to be compared, and it is the reason the model has one metric and not two.
 
@@ -84,7 +84,7 @@ The type of the coefficient. Two coefficients of different dimension, one dimens
 
 Neither coefficient is a coupling in the perturbative sense. Both multiply the whole action and both cancel from the classical equation; the equation depends on $e$ and $f$ only through $1/(ef)^2$, which is the scale. This is the same structural fact the sigma model's article records, now with two coefficients instead of one.
 
-**The selection rule. Invariance under $\tilde U\mapsto g_L\tilde U g_R^{*}$ leaves exactly these two terms at this order.** The current transforms as $j_\mu\mapsto g_R^{*}j_\mu g_R$, the commutator as $[j_\mu,j_\nu]\mapsto g_R^{*}[j_\mu,j_\nu]g_R$, and the scalar part of either square is invariant because the trace is cyclic. Everything the group allows at two and four derivatives is here, and nothing else is.
+**The selection rule. Invariance under $\tilde U\mapsto g_L\tilde U g_R^{*}$ leaves exactly these two terms at this order.** The current transforms as $j_{\imath}\mapsto g_R^{*}j_{\imath} g_R$, the commutator as $[j_{\imath},j_{\jmath}]\mapsto g_R^{*}[j_{\imath},j_{\jmath}]g_R$, and the scalar part of either square is invariant because the trace is cyclic. Everything the group allows at two and four derivatives is here, and nothing else is.
 
 What reality does not buy. Reality does not buy stability; the topology and the scaling do. Three things the reality of the action does not supply:
 
@@ -94,9 +94,9 @@ What reality does not buy. Reality does not buy stability; the topology and the 
 
 ## The Variation: Two Terms, One Equation
 
-The variation. Write $\delta\tilde U=\tilde U\tilde\alpha$ with $\tilde\alpha\in\mathfrak{su}(2)$ vanishing at the boundary. Then $\delta j_\mu=\partial_\mu\tilde\alpha+[j_\mu,\tilde\alpha]$ and $\delta[j_\mu,j_\nu]=[\partial_\mu\tilde\alpha+[j_\mu,\tilde\alpha],j_\nu]+[j_\mu,\partial_\nu\tilde\alpha+[j_\nu,\tilde\alpha]]$, a Jacobi-identity rearrangement.
+The variation. Write $\delta\tilde U=\tilde U\tilde\alpha$ with $\tilde\alpha\in\mathfrak{su}(2)$ vanishing at the boundary. Then $\delta j_{\imath}=\partial_{\imath}\tilde\alpha+[j_{\imath},\tilde\alpha]$ and $\delta[j_{\imath},j_{\jmath}]=[\partial_{\imath}\tilde\alpha+[j_{\imath},\tilde\alpha],j_{\jmath}]+[j_{\imath},\partial_{\jmath}\tilde\alpha+[j_{\jmath},\tilde\alpha]]$, a Jacobi-identity rearrangement.
 
-**The two contributions.** The two-derivative term gives, after one integration by parts, the term $\partial_\mu\bar j_\mu$ of the parent's equation. The four-derivative term gives the divergence of the double commutator, $-\frac{1}{4e^2}\partial_\mu[\bar j_\nu,[\bar j_\mu,\bar j_\nu]]$-type contributions, and the two together are the boxed equation of the parent. Neither vanishes alone, and the equation is not the sum of two independent equations: the two terms couple through the same current.
+**The two contributions.** The two-derivative term gives, after one integration by parts, the term $\partial_{\imath}\bar j_{\imath}$ of the parent's equation. The four-derivative term gives the divergence of the double commutator, $-\frac{1}{4e^2}\partial_{\imath}[\bar j_{\jmath},[\bar j_{\imath},\bar j_{\jmath}]]$-type contributions, and the two together are the boxed equation of the parent. Neither vanishes alone, and the equation is not the sum of two independent equations: the two terms couple through the same current.
 
 The check that would catch a sign. For a hedgehog configuration $\tilde U=\cos F(r)e_t+\sin F(r)\,\vec r/|\vec r|$ with $F(0)=\pi$ and $F(\infty)=0$, the two-derivative energy is proportional to $\int dr\,(r^2F'^2+2\sin^2F)$ and the four-derivative energy to $\int dr\,(\sin^2F/r^2)(2r^2F'^2+\sin^2F)$. Both are positive, and the Euler–Lagrange equation for $F$ has the two terms with opposite signs under scaling, which is what makes the minimiser exist.
 
@@ -151,12 +151,12 @@ The chiral currents. The two terms are both invariant under $\tilde U\mapsto g_L
 The topological current. The winding density
 
 $$
-B_\mu=\frac{1}{24\pi^2}\varepsilon_{\mu\nu\lambda\rho}\,\mathrm{Sc}\bigl(j_\nu[j_\lambda,j_\rho]\bigr)
+B_{\imath}=\frac{1}{24\pi^2}\varepsilon_{\imath\jmath\lambda\rho}\,\mathrm{Sc}\bigl(j_{\jmath}[j_\lambda,j_\rho]\bigr)
 $$
 
 is conserved identically, not on shell, because it is a total derivative. Its conservation is a Bianchi identity and not a symmetry's consequence; it holds for every field, whether or not the equation of motion is satisfied. The distinction between a conserved current that follows from an equation and one that follows from an identity is the sharpest structural point of this section.
 
-Energy–momentum. Translation invariance gives $T_{\mu\nu}$ with contributions from both terms, and the static energy is its time–time component. The virial identity $E_4=E_2$ is the statement that the trace of the spatial part vanishes for the minimiser, which is the scale invariance of the two-term action restored by the balance of the two terms.
+Energy–momentum. Translation invariance gives $T_{\imath\jmath}$ with contributions from both terms, and the static energy is its time–time component. The virial identity $E_4=E_2$ is the statement that the trace of the spatial part vanishes for the minimiser, which is the scale invariance of the two-term action restored by the balance of the two terms.
 
 **What there is not.** No $\mathrm{U}(1)$ current, no central phase, no second independent current beyond the chiral pair and the topological one.
 
@@ -182,7 +182,7 @@ Is the fourth-order coefficient fixed by the algebra? $e$ is a parameter of the 
 
 ## Summary
 
-The action. $S=\int d^4r\,[-\frac{f^2}{2}\mathrm{Sc}(\bar j_\mu j_\mu)+\frac{1}{16e^2}\mathrm{Sc}([j_\mu,j_\nu][j_\mu,j_\nu])]$ with $j_\mu=\tilde U^{\natural}\partial_\mu\tilde U$ flat on $\mathbb{H}^1$. Varying inside the constraint gives the parent's equation.
+The action. $S=\int d^4r\,[-\frac{f^2}{2}\mathrm{Sc}(\bar j_{\imath} j_{\imath})+\frac{1}{16e^2}\mathrm{Sc}([j_{\imath},j_{\jmath}][j_{\imath},j_{\jmath}])]$ with $j_{\imath}=\tilde U^{\natural}\partial_{\imath}\tilde U$ flat on $\mathbb{H}^1$. Varying inside the constraint gives the parent's equation.
 
 The three findings. One term is solitonless by the Derrick identity, and the second term is exactly what cancels the obstruction. The second term is a commutator because the current is flat, and the "at most quadratic in time" condition selects it among the four-derivative invariants. Stability at the level of the action is the bound $E\ge 6\pi^2(f/e)|N|$.
 
@@ -193,11 +193,11 @@ The three findings. One term is solitonless by the Derrick identity, and the sec
 | Symbol | Meaning |
 |---|---|
 | $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ | Skyrme field, unit real quaternion, pure gauge at infinity |
-| $j_\mu=\tilde U^{\natural}\partial_\mu\tilde U$ | flat Maurer–Cartan current |
+| $j_{\imath}=\tilde U^{\natural}\partial_{\imath}\tilde U$ | flat Maurer–Cartan current |
 | $f=f_\pi$ | decay constant |
 | $e$ | dimensionless Skyrme parameter |
 | $N$ | winding number, $\pi_3(\mathbb{S}^3)=\mathbb{Z}$ |
-| $B_\mu$ | topological (baryon) current, conserved identically |
+| $B_{\imath}$ | topological (baryon) current, conserved identically |
 | $E_2,E_4$ | two- and four-derivative energies |
 | $\lambda$ | scale factor of a configuration |
 

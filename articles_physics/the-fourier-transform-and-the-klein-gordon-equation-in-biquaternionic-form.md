@@ -58,7 +58,7 @@ $$
 
 so the two ranks differ by two and no product of two linear forms reaches four.
 
-This is the parent's anticommutation argument and not a rival to it. The parent shows that $B=-A$ and $A\vec e_\mu+\vec e_\mu A=0$ for all three units force $A=0$, and then the constant term $AB=-A^{2}$ cannot equal $-k_m^{2}$. The rank argument says the same thing in the language of the symbol: the composition of two first-order operators has the product of their symbols as its principal symbol, and a product of two central linear symbols is a product of two linear forms, hence of rank at most two. Neither argument is stronger; they are one fact seen from two sides, and the parent's is cited rather than repeated.
+This is the parent's anticommutation argument and not a rival to it. The parent shows that $B=-A$ and $A\vec e_{\imath}+\vec e_{\imath} A=0$ for all three units force $A=0$, and then the constant term $AB=-A^{2}$ cannot equal $-k_m^{2}$. The rank argument says the same thing in the language of the symbol: the composition of two first-order operators has the product of their symbols as its principal symbol, and a product of two central linear symbols is a product of two linear forms, hence of rank at most two. Neither argument is stronger; they are one fact seen from two sides, and the parent's is cited rather than repeated.
 
 The zero set says what a factorization would have to look like. The hyperboloid has two sheets, and the two sheets are the two frequency branches $\omega=\pm c\sqrt{k_\Phi^{2}+k_m^{2}}$. A factorization would cut the quadric into two *hyperplanes*, not into two sheets. The sheet count is not the factor count, and that distinction is the reason a second-order scalar equation can have two branches and still no square root.
 

@@ -54,7 +54,7 @@ with $A\!\cdot\!A=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the material fo
 
 The sign is the parent's and the article keeps it. Its normalisation fixes the relative sign of the two terms by requiring positive energy, and the overall sign of an action does not change its extremum. Every statement below is about a coefficient and a vanishing, so the overall sign drops out; the relative sign is the parent's and is not renegotiated.
 
-$\partial\mathcal{Q}/\partial A_\nu=-(\sigma A)_\nu$ with $(\sigma A)_\nu=(k^{2}-k_m^{2})A_\nu-k_\nu(k\cdot A)$, verified to $2.1\times10^{-11}$ at $k_t'=1.2$, $\vec k_\Phi=(0.3,0.2,0.1)$, $k_m=0.7$ on a random complex amplitude. So the momentum-space variational principle is $\sigma A=0$, and the form companion's matrix is this form's Hessian.
+$\partial\mathcal{Q}/\partial A_{\jmath}=-(\sigma A)_{\jmath}$ with $(\sigma A)_{\jmath}=(k^{2}-k_m^{2})A_{\jmath}-k_{\jmath}(k\cdot A)$, verified to $2.1\times10^{-11}$ at $k_t'=1.2$, $\vec k_\Phi=(0.3,0.2,0.1)$, $k_m=0.7$ on a random complex amplitude. So the momentum-space variational principle is $\sigma A=0$, and the form companion's matrix is this form's Hessian.
 
 ### The Constant-Coefficient Licence
 
@@ -125,16 +125,16 @@ The transform is taken before the equation is imposed. On shell the form vanishe
 The derivative in the direction of the wave number is
 
 $$
-\sum_\mu\frac{\partial\mathcal{Q}}{\partial A_\mu}\,k_\mu
+\sum_{\imath}\frac{\partial\mathcal{Q}}{\partial A_{\imath}}\,k_{\imath}
 =[kA]\,k^{2}-\bigl(k^{2}-k_m^{2}\bigr)\bigl(A\!\cdot\!k\bigr)
 =k_m^{2}\,[kA] ,
 $$
 
-because $A\cdot k=[kA]$ and the two $k^{2}$ terms cancel. **So the directional derivative along $k_\mu$ is the mass times the Lorenz form**, and stationarity in every direction gives $k_m^{2}[kA]=0$, which is the parent's $k_m^{2}S=0$ with $S$'s symbol in place.
+because $A\cdot k=[kA]$ and the two $k^{2}$ terms cancel. **So the directional derivative along $k_{\imath}$ is the mass times the Lorenz form**, and stationarity in every direction gives $k_m^{2}[kA]=0$, which is the parent's $k_m^{2}S=0$ with $S$'s symbol in place.
 
 The parent derives the constraint by differentiating the equation; the article derives it by varying along one direction. Both give one condition because the form has one direction in which its coefficient is the mass, and neither needs the notion of a gauge transformation.
 
-At $k_m=0$ the form is $\tfrac12([kA]^{2}-k^{2}A\!\cdot\!A)$, whose longitudinal coefficient is zero identically, so the variation along $k_\mu$ produces no condition and the amplitude along $k_\mu$ is free. That freedom is the gauge freedom, and in the form's language it is the freedom of a null direction rather than the orbit of a group.
+At $k_m=0$ the form is $\tfrac12([kA]^{2}-k^{2}A\!\cdot\!A)$, whose longitudinal coefficient is zero identically, so the variation along $k_{\imath}$ produces no condition and the amplitude along $k_{\imath}$ is free. That freedom is the gauge freedom, and in the form's language it is the freedom of a null direction rather than the orbit of a group.
 
 A gauge freedom is a freedom, and a quadratic form that has a null direction does not select one. The parent's statement that in the massless theory $S=0$ can be reached from any potential by a gauge transformation is the statement that the null direction can be removed by a shift, and the form's version is that the kernel of the Hessian contains the wave number. The two agree and neither is deeper.
 
@@ -156,7 +156,7 @@ The three spatial coefficients move because they are the propagating ones. Their
 
 ## The Structural Consequence: The Longitudinal Coefficient Is the Mass Alone
 
-Put $A\parallel k_\mu$, so that $A=\lambda k_\mu$ and $[kA]=\lambda k^{2}$. Then
+Put $A\parallel k_{\imath}$, so that $A=\lambda k_{\imath}$ and $[kA]=\lambda k^{2}$. Then
 
 $$
 \mathcal{Q}\bigl(\lambda k\bigr)
@@ -179,13 +179,13 @@ Nine entries, three frequencies, one column. The value does not depend on $k_t'$
 
 The transverse coefficient is the contrast, and it depends on both. On the Lorenz plane $[kA]=0$ and $\mathcal{Q}=-\tfrac12(k^{2}-k_m^{2})A\!\cdot\!A$, which moves with $k^{2}$ and therefore with the frequency and the wave vector. So the form is one constant direction and three moving ones, and the constant direction is the one the constraint removes. That is the sense in which the constraint's cost is fixed and the propagating modes' cost is not.
 
-The variation along $k_\mu$ is $\partial\mathcal{Q}/\partial\lambda=2\lambda\tfrac12k_m^{2}(A\!\cdot\!A)$, which vanishes for every $\lambda$ when $k_m=0$. **A coefficient that is proportional to the mass is a constraint that exists in proportion to the mass**, and that is a sharper statement than "the mass breaks the symmetry": nothing is broken, one coefficient is zero.
+The variation along $k_{\imath}$ is $\partial\mathcal{Q}/\partial\lambda=2\lambda\tfrac12k_m^{2}(A\!\cdot\!A)$, which vanishes for every $\lambda$ when $k_m=0$. **A coefficient that is proportional to the mass is a constraint that exists in proportion to the mass**, and that is a sharper statement than "the mass breaks the symmetry": nothing is broken, one coefficient is zero.
 
 ## The Structural Consequence: The Trace Is the Mass
 
 $\mathrm{tr}\,\sigma=4(k^{2}-k_m^{2})-k^{2}=3k^{2}-4k_m^{2}$, which at $k^{2}=k_m^{2}$ is $-k_m^{2}$ exactly. So on the mass shell the symbol's trace is the mass and nothing else, independent of the wave vector, the frequency and the direction.
 
-The variational parent proves $T_{\mu\mu}=-k_m^{2}\langle\tilde A_\Phi\rangle_\natural$ exactly, and observes that the field terms' contributions cancel because $\delta_{\mu\mu}=4$. The symbol's trace carries the same cancellation: the four diagonal entries of $k^{2}-k_m^{2}$ minus the one from the rank-one part give three of the former and one of the latter, which is the four-minus-one count in the trace.
+The variational parent proves $T_{\imath\imath}=-k_m^{2}\langle\tilde A_\Phi\rangle_\natural$ exactly, and observes that the field terms' contributions cancel because $\delta_{\imath\imath}=4$. The symbol's trace carries the same cancellation: the four diagonal entries of $k^{2}-k_m^{2}$ minus the one from the rank-one part give three of the former and one of the latter, which is the four-minus-one count in the trace.
 
 The parent traces over the spacetime indices of a tensor; the article traces over the amplitude directions of a Hessian. Both give the mass, and the agreement is the reason the trace statements are not two coincidences: the mass is the only term in the action that is a multiple of the identity in the amplitude space.
 
@@ -219,11 +219,11 @@ At a wave number the Proca action is one quadratic form, $\mathcal{Q}=\tfrac12\{
 
 Along the four-wave-number the form is $\tfrac12k_m^{2}(A\!\cdot\!A)$ exactly, because the $k^{4}$ of the field term cancels against the $k^{4}$ inside the second term. Measured on a unit-norm longitudinal amplitude, the coefficient is $0.245000000$ at $k_m=0.7$ and $0.045000000$ at $k_m=0.3$, at every frequency from $k_t'=0.5$ to $2.0$. The longitudinal coefficient is a function of the mass alone.
 
-The constraint is that coefficient. Varying along $k_\mu$ gives $k_m^{2}[kA]=0$, which is the parent's $k_m^{2}S=0$; at $k_m=0$ the coefficient vanishes identically and the direction is free. Gauge freedom is a zero coefficient in the quadratic form, and the massless theory's $S=0$ is a null direction of the Hessian rather than the orbit of a group.
+The constraint is that coefficient. Varying along $k_{\imath}$ gives $k_m^{2}[kA]=0$, which is the parent's $k_m^{2}S=0$; at $k_m=0$ the coefficient vanishes identically and the direction is free. Gauge freedom is a zero coefficient in the quadratic form, and the massless theory's $S=0$ is a null direction of the Hessian rather than the orbit of a group.
 
 The coefficient of $A_0^{2}$ is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$, with no $\omega^{2}$: $0.315000000$ at all three frequencies, while the three spatial coefficients move from $-0.145$ to $+0.45$ to $+1.73$. The absent power is the primary constraint, and the coupling cannot add one because $F_{0\eta}$ contains no $\partial_0A_0$.
 
-The form degenerates exactly where the symbol is singular and where the propagator has its pole, and the degeneracy is partial: rank one on the shell, which is the three polarisations. On the shell the symbol's trace is $3k^{2}-4k_m^{2}=-k_m^{2}$, the same mass the parent's $T_{\mu\mu}=-k_m^{2}\langle\tilde A_\Phi\rangle_\natural$ carries, and it vanishes only at $k^{2}=\tfrac43k_m^{2}$, which is not physical.
+The form degenerates exactly where the symbol is singular and where the propagator has its pole, and the degeneracy is partial: rank one on the shell, which is the three polarisations. On the shell the symbol's trace is $3k^{2}-4k_m^{2}=-k_m^{2}$, the same mass the parent's $T_{\imath\imath}=-k_m^{2}\langle\tilde A_\Phi\rangle_\natural$ carries, and it vanishes only at $k^{2}=\tfrac43k_m^{2}$, which is not physical.
 
 ## Summary of Notation
 

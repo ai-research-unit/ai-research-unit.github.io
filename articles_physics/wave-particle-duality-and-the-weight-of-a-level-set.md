@@ -78,7 +78,7 @@ The factor that is not the weight is worth naming, because it is the one that is
 
 ## The Weight Checked
 
-On a lattice the histogram is the definition, not an approximation to it. A finite lattice has finitely many labels, so "the number of labels per unit energy" is a count over a bin, and the coarea formula is a claim about what that count converges to. Take the nearest-neighbour square-lattice dispersion $\sigma(k_x,k_y)=-2(\cos k_x+\cos k_y)$ on a grid of $16000^{2}$ points of the zone $[-\pi,\pi]^{2}$, and compare the bin count with the line integral of the box. This is the tight-binding dispersion and not the lattice gradient's own symbol: the latter is $a^{-1}\sum_\mu\sin(p_\mu a)e_\mu$ in *Fermion Doubling*, whose norm $a^{-2}\sum_\mu\sin^{2}(p_\mu a)$ is a different function with its own critical points, and the counting below is about the dispersion on the left:
+On a lattice the histogram is the definition, not an approximation to it. A finite lattice has finitely many labels, so "the number of labels per unit energy" is a count over a bin, and the coarea formula is a claim about what that count converges to. Take the nearest-neighbour square-lattice dispersion $\sigma(k_x,k_y)=-2(\cos k_x+\cos k_y)$ on a grid of $16000^{2}$ points of the zone $[-\pi,\pi]^{2}$, and compare the bin count with the line integral of the box. This is the tight-binding dispersion and not the lattice gradient's own symbol: the latter is $a^{-1}\sum_{\imath}\sin(p_{\imath} a)e_{\imath}$ in *Fermion Doubling*, whose norm $a^{-2}\sum_{\imath}\sin^{2}(p_{\imath} a)$ is a different function with its own critical points, and the counting below is about the dispersion on the left:
 
 | energy $E$ | bin count | shell integral | relative difference |
 |---|---|---|---|

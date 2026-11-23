@@ -7,7 +7,7 @@ This article writes the axion as the extremum of an action whose interaction ter
 The equation. The parent's equation is
 
 $$
-\Box_\Phi a+\frac{\partial V}{\partial a}=\frac{g_s^2}{32\pi^2 f_a}\sum_{\mu,\nu,a'}F_{a'\mu\nu}F^{a'}_{\mathrm{dual},\mu\nu} ,
+\Box_\Phi a+\frac{\partial V}{\partial a}=\frac{g_s^2}{32\pi^2 f_a}\sum_{\imath,\jmath,a'}F_{a'\imath\jmath}F^{a'}_{\mathrm{dual},\imath\jmath} ,
 $$
 
 the massive wave equation with a source that is itself a total derivative. The article asks what action has this equation and what the periodicity of $a$ requires of it.
@@ -17,7 +17,7 @@ Three things are established.
 *First, the action.* With $a$ the axion field and $V$ its periodic potential,
 
 $$
-S[a]=\int d^4r\;\Bigl[\frac12\sum_\mu\frac{\partial a}{\partial R_\mu}\frac{\partial a}{\partial R_\mu}-V(a)+\frac{a}{f_a}\frac{g_s^2}{32\pi^2}\sum_{\mu,\nu,a'}F_{a'\mu\nu}F^{a'}_{\mathrm{dual},\mu\nu}\Bigr],
+S[a]=\int d^4r\;\Bigl[\frac12\sum_{\imath}\frac{\partial a}{\partial R_{\imath}}\frac{\partial a}{\partial R_{\imath}}-V(a)+\frac{a}{f_a}\frac{g_s^2}{32\pi^2}\sum_{\imath,\jmath,a'}F_{a'\imath\jmath}F^{a'}_{\mathrm{dual},\imath\jmath}\Bigr],
 $$
 
 the stationarity condition is the parent's equation, and the interaction term is a total derivative because $F\tilde F$ is one.
@@ -34,7 +34,7 @@ The conventions are restated here so that every sign below is checkable from thi
 
 The field. $a$ is real and periodic, $a\equiv a+2\pi f_a$; $f_a$ is the axion decay constant, with dimension of mass. The dimensionless angle is $\theta=a/f_a$.
 
-The gauge sector. $F_{a'\mu\nu}$ are the colour field strengths, $g_s$ the strong coupling, and $\tilde F$ the dual; the density $F\tilde F=\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ is a total derivative.
+The gauge sector. $F_{a'\imath\jmath}$ are the colour field strengths, $g_s$ the strong coupling, and $\tilde F$ the dual; the density $F\tilde F=\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}$ is a total derivative.
 
 The potential. $V(a)=\Lambda^4\bigl(1-\cos(a/f_a+\bar\theta)\bigr)$ at leading order, with $\Lambda^4$ the topological susceptibility and $\bar\theta$ the vacuum angle.
 
@@ -45,17 +45,17 @@ The potential. $V(a)=\Lambda^4\bigl(1-\cos(a/f_a+\bar\theta)\bigr)$ at leading o
 The three pieces. Kinetic, potential and anomalous coupling,
 
 $$
-\mathcal{L}=\tfrac12\sum_\mu\partial_\mu a\,\partial_\mu a-\Lambda^4\Bigl(1-\cos\frac{a}{f_a}\Bigr)+\frac{a}{f_a}\frac{g_s^2}{32\pi^2}\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu} ,
+\mathcal{L}=\tfrac12\sum_{\imath}\partial_{\imath} a\,\partial_{\imath} a-\Lambda^4\Bigl(1-\cos\frac{a}{f_a}\Bigr)+\frac{a}{f_a}\frac{g_s^2}{32\pi^2}\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath} ,
 $$
 
 after absorbing $\bar\theta$ into the origin of $a$. Each piece has a different status: the kinetic term is exact and canonical, the potential is generated at low energy and is the leading term of a series, and the coupling is a dimension-five operator suppressed by $f_a$.
 
 Why the coupling is dimension five. $a$ has dimension one, $F\tilde F$ has dimension four, and $f_a$ has dimension one, so the term has dimension five and is non-renormalizable by power counting. That is not a defect: the axion is an effective field, and $f_a$ is the scale of the physics that produced it.
 
-Why the coupling can be written as a derivative coupling. Because $F\tilde F$ is a total derivative, $F\tilde F=\partial_\mu J_{\mathrm{CS},\mu}$ with $J_{\mathrm{CS}}$ the Chern–Simons current, the interaction is equivalent, up to a boundary term, to
+Why the coupling can be written as a derivative coupling. Because $F\tilde F$ is a total derivative, $F\tilde F=\partial_{\imath} J_{\mathrm{CS},\imath}$ with $J_{\mathrm{CS}}$ the Chern–Simons current, the interaction is equivalent, up to a boundary term, to
 
 $$
-\mathcal{L}_{aGG}=\frac{1}{f_a}\sum_\mu\partial_\mu a\,J_{\mathrm{CS},\mu} ,
+\mathcal{L}_{aGG}=\frac{1}{f_a}\sum_{\imath}\partial_{\imath} a\,J_{\mathrm{CS},\imath} ,
 $$
 
 which is a derivative coupling and therefore has the same soft behaviour as a Goldstone's. The equivalence is exact on a closed manifold and fails only when the boundary term matters, which is the instanton's contribution.
@@ -131,22 +131,22 @@ The consequence for the mass. The mass is $\Lambda^2/f_a$, so the axion is light
 The current. The shift symmetry's Noether current is
 
 $$
-j_{\mathrm{PQ},\mu}=f_a\,\partial_\mu a ,
+j_{\mathrm{PQ},\imath}=f_a\,\partial_{\imath} a ,
 $$
 
 and its divergence is the anomaly,
 
 $$
-\sum_\mu\epsilon_\mu\frac{\partial j_{\mathrm{PQ},\mu}}{\partial R_\mu}=\frac{g_s^2}{32\pi^2}\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu} ,
+\sum_{\imath}\epsilon_{\imath}\frac{\partial j_{\mathrm{PQ},\imath}}{\partial R_{\imath}}=\frac{g_s^2}{32\pi^2}\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath} ,
 $$
 
 which is the statement that the current is conserved classically and not quantum mechanically. The divergence is exactly the source in the equation of motion, and that identity is the reason the axion's potential exists.
 
 Why the anomaly is not a defect. An anomalous current is one whose conservation fails at one loop, and the failure is the term that generates the potential. The axion's mechanism requires the anomaly; a non-anomalous Peccei–Quinn symmetry would give a massless axion and no solution to the strong CP problem.
 
-The topological current. The Chern–Simons current $J_{\mathrm{CS},\mu}$ is conserved identically, and the axion's coupling is its divergence contracted with $a$. The two currents' divergences are the same object, and that is the precise sense in which the anomaly and the coupling are one term.
+The topological current. The Chern–Simons current $J_{\mathrm{CS},\imath}$ is conserved identically, and the axion's coupling is its divergence contracted with $a$. The two currents' divergences are the same object, and that is the precise sense in which the anomaly and the coupling are one term.
 
-Energy–momentum. Translation invariance gives $T_{\mu\nu}$ with the scalar and gauge contributions; the trace is nonzero because of the potential, and the potential's contribution is the vacuum energy.
+Energy–momentum. Translation invariance gives $T_{\imath\jmath}$ with the scalar and gauge contributions; the trace is nonzero because of the potential, and the potential's contribution is the vacuum energy.
 
 **What there is not.** No second independent current; the axion's current is the shift's, and its anomaly is the gauge sector's.
 
@@ -187,8 +187,8 @@ The three findings. The periodicity is consistent with the anomaly because the t
 | $\theta=a/f_a$ | the dimensionless angle |
 | $\Lambda^4$ | topological susceptibility, the potential's height |
 | $\bar\theta$ | vacuum angle |
-| $j_{\mathrm{PQ},\mu}=f_a\partial_\mu a$ | Peccei–Quinn current |
-| $J_{\mathrm{CS},\mu}$ | Chern–Simons current |
+| $j_{\mathrm{PQ},\imath}=f_a\partial_{\imath} a$ | Peccei–Quinn current |
+| $J_{\mathrm{CS},\imath}$ | Chern–Simons current |
 
 ## Further Reading
 

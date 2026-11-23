@@ -81,8 +81,8 @@ is invariant under $F_{\mathrm{dual}}\mapsto \exp(-i\theta_{\mathrm{dua}})F_{\ma
 The continuous rotation is only half of the duality structure once the theory has a theta angle. The Euclidean action
 
 $$
-S \;=\; \frac{1}{2g^2}\int\mathrm{Tr}\bigl(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\bigr)
-\;+\;\frac{i\theta_{\mathrm{dua}}}{16\pi^2}\int\mathrm{Tr}\bigl(\sum_{\mu,\nu}F_{\mu\nu}(\star F)_{\mu\nu}\bigr)
+S \;=\; \frac{1}{2g^2}\int\mathrm{Tr}\bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\bigr)
+\;+\;\frac{i\theta_{\mathrm{dua}}}{16\pi^2}\int\mathrm{Tr}\bigl(\sum_{\imath,\jmath}F_{\imath\jmath}(\star F)_{\imath\jmath}\bigr)
 $$
 
 is assembled into the complex coupling by
@@ -91,7 +91,7 @@ $$
 S \;=\; \frac{1}{g^2}\int\mathrm{Tr}(F\wedge\star F)\;+\;\frac{i\theta_{\mathrm{dua}}}{8\pi^2}\int\mathrm{Tr}(F\wedge F) ,
 $$
 
-which is the real and imaginary part of a single complex number multiplying the (anti-)self-dual parts of the curvature. The two forms agree, using $\int\mathrm{Tr}(F\wedge\star F)=\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ and $\int\mathrm{Tr}(F\wedge F)=\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu})$: the theta term is $\frac{i\theta_{\mathrm{dua}}}{16\pi^2}\int d^4r\,\mathrm{Tr}(FF_{\mathrm{dual}})$ in the first display and $\frac{i\theta_{\mathrm{dua}}}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ in the second, the two differing by the factor two that relates $F\wedge F$ to $FF_{\mathrm{dual}}$, and both equal $i\theta_{\mathrm{dua}} Ϙ$ after the normalisation $\int\mathrm{Tr}(F\wedge F)=8\pi^2Ϙ$. The natural variable is therefore
+which is the real and imaginary part of a single complex number multiplying the (anti-)self-dual parts of the curvature. The two forms agree, using $\int\mathrm{Tr}(F\wedge\star F)=\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ and $\int\mathrm{Tr}(F\wedge F)=\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath})$: the theta term is $\frac{i\theta_{\mathrm{dua}}}{16\pi^2}\int d^4r\,\mathrm{Tr}(FF_{\mathrm{dual}})$ in the first display and $\frac{i\theta_{\mathrm{dua}}}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ in the second, the two differing by the factor two that relates $F\wedge F$ to $FF_{\mathrm{dual}}$, and both equal $i\theta_{\mathrm{dua}} Ϙ$ after the normalisation $\int\mathrm{Tr}(F\wedge F)=8\pi^2Ϙ$. The natural variable is therefore
 
 $$
 \tau=\frac{\theta_{\mathrm{dua}}}{2\pi}+\frac{4\pi i}{g^2},

@@ -122,10 +122,10 @@ $$
 so every positive spinor has a unique intrinsic form
 
 $$
-\psi_+=a\tilde\Pi_{\mathrm{id},++}\nu_+,\qquad a\in\mathbb{C},\quad \nu_+\in\mathbb{B}_{-+},
+\psi_+=a\tilde\Pi_{\mathrm{id},++}\jmath_+,\qquad a\in\mathbb{C},\quad \jmath_+\in\mathbb{B}_{-+},
 $$
 
-and every negative spinor the mirror form $\psi_-=\nu_-+d\tilde\Pi_{\mathrm{id},-}$. The coefficient $a$ is the diagonal part and $\nu_+$ is the nilpotent part; both are intrinsic, and the coordinate $c$ of $\nu_+$ in a chosen basis is not.
+and every negative spinor the mirror form $\psi_-=\jmath_-+d\tilde\Pi_{\mathrm{id},-}$. The coefficient $a$ is the diagonal part and ${\jmath}_+$ is the nilpotent part; both are intrinsic, and the coordinate $c$ of ${\jmath}_+$ in a chosen basis is not.
 
 The ladder has two rungs.
 
@@ -343,7 +343,7 @@ This is the kinematics of the ladder and not the dynamics. It does not say when 
 
 ### I.4.i — The Amplitude Is One Complex Number and a Direction
 
-Read: a spinor has an intrinsic form $a\tilde\Pi_{\mathrm{id},++}\nu_+$ and the coordinate description $(a,c)$ is not intrinsic. Only the diagonal coefficient and the nilpotent element are.
+Read: a spinor has an intrinsic form $a\tilde\Pi_{\mathrm{id},++}\jmath_+$ and the coordinate description $(a,c)$ is not intrinsic. Only the diagonal coefficient and the nilpotent element are.
 
 The gauge makes the difference exact.
 
@@ -351,9 +351,9 @@ $$
 a'=a,\qquad c'=t^{-1}c ,
 $$
 
-so $a$ is invariant and $c$ is not; the vanishing of $c$ is invariant, since $c=0$ exactly when $\nu_+=0$, but the value of a nonzero $c$ is not. Reading the pair $(a,c)$ as two amplitudes is therefore reading a coordinate.
+so $a$ is invariant and $c$ is not; the vanishing of $c$ is invariant, since $c=0$ exactly when ${\jmath}_+=0$, but the value of a nonzero $c$ is not. Reading the pair $(a,c)$ as two amplitudes is therefore reading a coordinate.
 
-The physical reading is that a state has one invariant magnitude and one dirigible part. The diagonal coefficient is a complex number attached to the idempotent; the mixed part is an element of a line, which is a direction with a magnitude that the gauge can absorb. What is invariant is the magnitude of $a$ and the ray of $\nu_+$, not the two numbers of a column.
+The physical reading is that a state has one invariant magnitude and one dirigible part. The diagonal coefficient is a complex number attached to the idempotent; the mixed part is an element of a line, which is a direction with a magnitude that the gauge can absorb. What is invariant is the magnitude of $a$ and the ray of ${\jmath}_+$, not the two numbers of a column.
 
 The probabilities are invariant only after the gauge is cut. The Hermitian norm $\tfrac12(|a|^{2}+|c|^{2})$ is invariant under the circle $|t|=1$ and not under the full $\mathbb{C}^{\times}$. So the two entries of a column carry the two probabilities in the Hermitian gauge, and in that gauge only. The modulus of the gauge is not a symmetry of the norm, and a computation that uses the full gauge and the norm together is inconsistent.
 
@@ -431,7 +431,7 @@ The carrier of the module is not yet a field. A field is an element of the carri
 | $V=\mathbb{B}$ | the carrier of the regular module |
 | $L(\tilde Q)$, $R(\tilde Q)$ | left and right multiplication by $\tilde Q$ |
 | $\Pi_u=\tfrac12(e_t+iu\cdot\vec e)$ | the rank-one idempotent at $u\in\mathbb{C}^{3}$, $u\cdot u=1$ |
-| $\psi_+=a\tilde\Pi_{\mathrm{id},++}\nu_+$ | the intrinsic form of a positive spinor |
+| $\psi_+=a\tilde\Pi_{\mathrm{id},++}\jmath_+$ | the intrinsic form of a positive spinor |
 | $a,c,b,d$ | Peirce coordinates of the two spinors |
 | $t\in\mathbb{C}^{\times}$ | the gauge parameter of a Peirce basis |
 | $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ | the trace form on the carrier |

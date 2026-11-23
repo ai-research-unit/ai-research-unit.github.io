@@ -39,9 +39,9 @@ Together the two asymmetries forbid a bare fermion mass. A term of the form $m\b
 
 | Factor | Group | Real dimension | Coupling | Gauge fields | Acts on |
 |---|---|---|---|---|---|
-| Colour | $SU(3)_c$ | $8$ | $g_s$ | eight gluons $G_{a,\mu}$, $a=1,\dots,8$ | colour triplets only |
-| Weak isospin | $SU(2)_L$ | $3$ | $g$ | $W_{a,\mu}$, $a=1,2,3$ | left-handed doublets only |
-| Hypercharge | $\mathrm{U}(1)_Y$ | $1$ | $g_{\mathrm Y}$ | $B_\mu$ | every field, with charge $Y$ |
+| Colour | $SU(3)_c$ | $8$ | $g_s$ | eight gluons $G_{a,\imath}$, $a=1,\dots,8$ | colour triplets only |
+| Weak isospin | $SU(2)_L$ | $3$ | $g$ | $W_{a,\imath}$, $a=1,2,3$ | left-handed doublets only |
+| Hypercharge | $\mathrm{U}(1)_Y$ | $1$ | $g_{\mathrm Y}$ | $B_{\imath}$ | every field, with charge $Y$ |
 
 The three couplings are written $g_s$, $g$ and $g_{\mathrm Y}$ throughout the corpus. The reference checklist calls them $g_3$, $g_2$ and $g_1$. The symbol $g_1$ is avoided in the series because the GUT-normalised convention gives it the value $\sqrt{5/3}\,g_{\mathrm Y}$.
 
@@ -149,12 +149,12 @@ The cubic term is the one worth displaying, because it vanishes by cancellation 
 
 | Field | Multiplicity | Representation | Mass after breaking |
 |---|---|---|---|
-| gluons $G_{a,\mu}$ | $8$ | adjoint of $SU(3)_c$ | $0$, confined |
-| $W^\pm_\mu$ | $2$ | off-diagonal of $SU(2)_L$ | $M_W$ |
-| $Z_\mu$ | $1$ | neutral mixture | $M_Z$ |
-| $A_\mu$ (photon) | $1$ | the orthogonal mixture | $0$ |
+| gluons $G_{a,\imath}$ | $8$ | adjoint of $SU(3)_c$ | $0$, confined |
+| $W^\pm_{\imath}$ | $2$ | off-diagonal of $SU(2)_L$ | $M_W$ |
+| $Z_{\imath}$ | $1$ | neutral mixture | $M_Z$ |
+| $A_{\imath}$ (photon) | $1$ | the orthogonal mixture | $0$ |
 
-The two neutral fields mix through the Weinberg angle, $Z_\mu=\cos\theta_W W_{\mu 3}-\sin\theta_W B_\mu$ and $A_\mu=\sin\theta_W W_{\mu 3}+\cos\theta_W B_\mu$, with $\tan\theta_W=g_{\mathrm Y}/g$. The mixing is the subject of [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html).
+The two neutral fields mix through the Weinberg angle, $Z_{\imath}=\cos\theta_W W_{\imath 3}-\sin\theta_W B_{\imath}$ and $A_{\imath}=\sin\theta_W W_{\imath 3}+\cos\theta_W B_{\imath}$, with $\tan\theta_W=g_{\mathrm Y}/g$. The mixing is the subject of [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html).
 
 **The scalar.** The scalar sector is one complex doublet of $SU(2)_L$, of hypercharge $Y=\tfrac12$. As a doublet of complex fields it carries four real components: two of charge $+1$, the real and imaginary parts of $\omicron_{\mathrm{hgs}}^+$, and two of charge $0$, the real and imaginary parts of $\omicron_{\mathrm{hgs}}^0$. The conjugate of $\omicron_{\mathrm{hgs}}^+$ is not a fifth component; it carries charge $-1$ and is the antiparticle of the same field.
 
@@ -260,8 +260,8 @@ The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$
 | $T_3$ | Third weak-isospin eigenvalue, $\pm\tfrac12$ in a doublet, $0$ in a singlet |
 | $Ϙ$ | Electric charge in units of the elementary charge |
 | $ϙ$ | The framework's charge parameter of the gauge principle; the charge glyph of [Physics Units](physics-units-and-common-elements-conventions.html) |
-| $W_{a,\mu}$, $B_\mu$, $G_{a,\mu}$ | Weak, hypercharge and colour gauge fields |
-| $W^\pm_\mu$, $Z_\mu$, $A_\mu$ | Charged, neutral massive and electromagnetic fields after mixing |
+| $W_{a,\imath}$, $B_{\imath}$, $G_{a,\imath}$ | Weak, hypercharge and colour gauge fields |
+| $W^\pm_{\imath}$, $Z_{\imath}$, $A_{\imath}$ | Charged, neutral massive and electromagnetic fields after mixing |
 | $\theta_W$ | Weinberg angle, $\tan\theta_W=g_{\mathrm Y}/g$ |
 | $v$, $M_W$, $M_Z$, $M_H$ | Electroweak scale and the three boson masses |
 | $\omicron_{\mathrm{hgs}}^\pm$, $\omicron_{\mathrm{hgs}}^0$ | Components of the scalar doublet of hypercharge $\tfrac12$ |

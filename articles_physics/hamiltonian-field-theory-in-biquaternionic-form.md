@@ -104,7 +104,7 @@ the mass terms cancel between the time derivative of $k_m^{2}|\xi|^2$ and the eq
 Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec k_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.
 
 $$
-P_\nu=\frac{1}{c}\int T_{t\nu}\,d^3r
+P_{\jmath}=\frac{1}{c}\int T_{t\jmath}\,d^3r
 $$
 
 time-independent, the statement that the flux of the companion stress–energy article is a conserved current.
@@ -142,7 +142,7 @@ $$
 \ \ \text{on shell}.
 $$
 
-The scalar part of the biquaternion divergence is the continuity equation. This is the *same packaging* that the companion article on stress–energy gives the electromagnetic field, $\tilde\Sigma_{\Psi}=\frac{1}{2}\tilde F\tilde F^{*}=W\,e_t+\frac{i}{c}\vec S$, whose scalar part is the Poynting theorem; the scalar field's energy density sits in the scalar direction of the informational sector and its flux in the three vector directions $i\vec e_\mu$, so the two fields' energy–momentum biquaternions are elements of the same sector in the same arrangement. The one difference is that the electromagnetic $\tilde\Sigma_{\Psi}$ is bilinear in the field strength whereas the scalar $\tilde\Sigma_{\Psi}$ is bilinear in the gradient of the field, which is the field-theoretic way of saying that the scalar field carries no spin and its energy comes entirely from the derivatives.
+The scalar part of the biquaternion divergence is the continuity equation. This is the *same packaging* that the companion article on stress–energy gives the electromagnetic field, $\tilde\Sigma_{\Psi}=\frac{1}{2}\tilde F\tilde F^{*}=W\,e_t+\frac{i}{c}\vec S$, whose scalar part is the Poynting theorem; the scalar field's energy density sits in the scalar direction of the informational sector and its flux in the three vector directions $i\vec e_{\imath}$, so the two fields' energy–momentum biquaternions are elements of the same sector in the same arrangement. The one difference is that the electromagnetic $\tilde\Sigma_{\Psi}$ is bilinear in the field strength whereas the scalar $\tilde\Sigma_{\Psi}$ is bilinear in the gradient of the field, which is the field-theoretic way of saying that the scalar field carries no spin and its energy comes entirely from the derivatives.
 
 The static limit makes the arrangement visible. For a time-independent field the flux vanishes, $\tilde\Sigma_{\Psi}=\mathcal{H}e_t$, and the conservation law reduces to $\vec\nabla_\Phi\cdot\vec S=0$, which is empty; the energy is conserved trivially. For a running wave it is the other way: $\mathcal{H}$ and $|\vec S|/c$ are equal and the biquaternion has the null-field pattern of a single travelling wave, exactly as the companion stress–energy article records for the massless scalar and for the electromagnetic wave.
 
@@ -176,12 +176,12 @@ the sum of the two sectors' kinetic, gradient and mass terms. Three features of 
 
 The formalism so far is the **instantaneous** one: it singles out a time direction, differentiates with respect to it, and conjugate to the field there is one momentum field. It is the formalism in which the equal-time brackets of the quantization article are written, and it is the one in which the constraint analysis of the gauge field can be performed at all. It is not, however, the only Hamiltonian formalism for a field, and its relation to the covariant one is worth stating here because the gauge fields' Hamiltonian structure lives on the other side.
 
-In the **covariant** formalism, all four derivatives of the field are treated on the same footing and conjugate to the field there is a *quadruple* of momenta, the **polymomentum** $p_\mu=\partial\mathcal{L}/\partial(\partial/\partial R_\mu\,\xi)$, one per direction of differentiation. The Legendre transform is performed on the quadruple, and the resulting **De Donder–Weyl Hamiltonian** is $H=\sum_\mu p_\mu\partial/\partial R_\mu\,\xi-\mathcal{L}$, a function of the field and the four momenta. For the scalar field the polymomentum is the gradient, $p_\mu=\partial/\partial R_\mu\xi$, and the De Donder–Weyl Hamiltonian is $\frac12\sum_\mu p_\mu p_\mu+\frac12k_m^{2}\xi^2$, so the covariant equations
+In the **covariant** formalism, all four derivatives of the field are treated on the same footing and conjugate to the field there is a *quadruple* of momenta, the **polymomentum** $p_{\imath}=\partial\mathcal{L}/\partial(\partial/\partial R_{\imath}\,\xi)$, one per direction of differentiation. The Legendre transform is performed on the quadruple, and the resulting **De Donder–Weyl Hamiltonian** is $H=\sum_{\imath} p_{\imath}\partial/\partial R_{\imath}\,\xi-\mathcal{L}$, a function of the field and the four momenta. For the scalar field the polymomentum is the gradient, $p_{\imath}=\partial/\partial R_{\imath}\xi$, and the De Donder–Weyl Hamiltonian is $\frac12\sum_{\imath} p_{\imath} p_{\imath}+\frac12k_m^{2}\xi^2$, so the covariant equations
 
 $$
-\partial/\partial R_\mu\,\xi=\frac{\partial H}{\partial p_\mu},
+\partial/\partial R_{\imath}\,\xi=\frac{\partial H}{\partial p_{\imath}},
 \qquad
-\sum_\mu\partial/\partial R_\mu\,p_\mu=-\frac{\partial H}{\partial\xi}
+\sum_{\imath}\partial/\partial R_{\imath}\,p_{\imath}=-\frac{\partial H}{\partial\xi}
 $$
 
 are the four-fold statement of the Klein–Gordon equation. Nothing is singled out and nothing is split, which is the formalism's virtue and its price: there is no unique pairing of the momenta with a single time, so there is **no covariant Poisson bracket**. The bracket of this article is the instantaneous one, and it exists because a time direction was chosen. The polymomentum formalism is the multisymplectic one; its geometry, its relation to the instantaneous formalism, and the theorem that its equations agree with the Euler–Lagrange equations for a hyperregular density belong to the mathematical corpus, in *Multisymplectic and Covariant Hamiltonian Field Theory*, and the present article only records the point of contact: the instantaneous Hamiltonian density is the time component of the conserved multimomentum current of the covariant formalism, $\mathcal{H}=J_{00}$, which is why the two descriptions agree on the energy.
@@ -224,10 +224,10 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 | $\{A,B\}$ | The field Poisson bracket on functionals, the integral over space of the local canonical bracket |
 | $\vec S=-(\left(\partial\xi/\partial r'_t\right)^{\,*}\vec\nabla_\Phi\xi+\partial\xi/\partial r'_t\nabla\xi^{\,*})=-c^2(\pi\nabla\xi+\pi^\dagger\nabla\xi^{\,*})$ | The energy flux; $\partial/\partial r'_t\mathcal{H}+\vec\nabla_\Phi\cdot\vec S=0$ |
 | $\tilde\Sigma_{\Psi}=\mathcal{H}e_t+\frac{i}{c}\vec S\in\mathbb{B}_{\Psi}$ | The energy–momentum biquaternion of the field, with $\tilde\nabla_\Phi\tilde\Sigma_{\Psi}=0$ on shell |
-| $p_\mu=\partial\mathcal{L}/\partial(\partial/\partial R_\mu\,\xi)=\partial/\partial R_\mu\xi$ | The polymomentum of the covariant (De Donder–Weyl) formalism |
-| $H_{DW}=\sum_\mu p_\mu\partial/\partial R_\mu\,\xi-\mathcal{L}=\frac12\sum_\mu p_\mu p_\mu+\frac12k_m^{2}\xi^2$ | The De Donder–Weyl Hamiltonian of the scalar field |
+| $p_{\imath}=\partial\mathcal{L}/\partial(\partial/\partial R_{\imath}\,\xi)=\partial/\partial R_{\imath}\xi$ | The polymomentum of the covariant (De Donder–Weyl) formalism |
+| $H_{DW}=\sum_{\imath} p_{\imath}\partial/\partial R_{\imath}\,\xi-\mathcal{L}=\frac12\sum_{\imath} p_{\imath} p_{\imath}+\frac12k_m^{2}\xi^2$ | The De Donder–Weyl Hamiltonian of the scalar field |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

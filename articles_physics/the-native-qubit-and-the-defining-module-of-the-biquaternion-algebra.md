@@ -29,7 +29,7 @@ $$
 and the scalar imaginary is central and is written $i$, with $i^2 = -1$. A general element is
 
 $$
-\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu \in \mathbb{C},
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_{\imath} \in \mathbb{C},
 $$
 
 
@@ -63,7 +63,7 @@ $$
 M(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix},
 $$
 
-so that the Hermitian element $\tilde H_\Psi = h_t\,e_t + i(h'_x\vec e_x + h'_y\vec e_y + h'_z\vec e_z)$ with real $h_\mu$ maps to
+so that the Hermitian element $\tilde H_\Psi = h_t\,e_t + i(h'_x\vec e_x + h'_y\vec e_y + h'_z\vec e_z)$ with real $h_{\imath}$ maps to
 
 $$
 M(\tilde H_\Psi) = \begin{pmatrix} h_t + h'_z & h'_x - ih'_y \ h'_x + ih'_y & h_t - h'_z \end{pmatrix}
@@ -188,7 +188,7 @@ when $\vec s_{\Psi}\neq0$, and is the maximally mixed state $\tfrac12 e_t$ when 
 The biquaternion norm of the algebra is
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 .
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\imath\in\{t,x,y,z\}} Q_{\imath}^2 .
 $$
 
 On $\mathbb{B}_{\Psi}$, writing $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with real $h_t,\vec h_\Psi$, it evaluates to
@@ -329,7 +329,7 @@ What the module does not supply is the composition rule for several qubits: the 
 | $S = \mathbb{C}^2$ | Defining (spinor) module of $\mathbb{B}$ |
 | $\rho_S$ | The defining representation of $\mathbb{B}$ on $S$ |
 | $\tilde{Q}^{*}$ | Hermitian conjugate (anti-linear involution) |
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents (pure states) |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$ | State with Bloch vector $\vec s_{\Psi}$, $|\vec s_{\Psi}|\le1$ |
 | $2\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*}) = \langle u|H|u\rangle_{*}$ | Born weight; the module expectation value |

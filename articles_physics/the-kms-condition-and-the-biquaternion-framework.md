@@ -247,7 +247,7 @@ The reformulation is an interpretation, not a derivation. The KMS condition is e
 | $F_{AB}(r'_t)$ | Thermal correlation function (complex-valued) |
 | $F_{AB}(r'_t + i\beta) = F_{BA}(-r'_t)$ | KMS condition |
 | $\tilde{P}_{\Phi,E} = i\omega_n e_t+\vec p \in \mathbb{B}_{\Phi}$ | Euclidean wave biquaternion of the material (no-rotation) route |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | Hermitian form; carries the thermal positivity without a rotation |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_{\imath} Q_{1\imath}\overline{Q_{2\imath}}$ | Hermitian form; carries the thermal positivity without a rotation |
 | $H_{\mathrm{modular}}=-\log\rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{B}_{\Psi}$) |
 | $\omega_n = 2\pi n/\beta$ | Bosonic Matsubara frequencies |
 | $\omega_n = (2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |

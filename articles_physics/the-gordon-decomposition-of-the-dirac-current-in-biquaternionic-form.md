@@ -6,9 +6,9 @@ The **Gordon decomposition** is an identity for the conserved current of a solut
 
 The decomposition is **on shell**. It uses the Dirac equation for the field and for its adjoint, so it holds for solutions and not for arbitrary fields. It also needs a nonzero mass in its covariant form, because the mass divides both terms. The massless case has a separate reading, in which the spin term survives as the curl of the spin density and only the scale changes, from $m$ to $E$.
 
-The field of this article is an element of $\mathbb{B}$ at each point, and its four coefficients are its four components. The current is the **pairing** of the field with the element the generator carries into it, $j_\mu=\bar{\tilde{Ξ}}\,i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}$, where the pairing $\bar{\tilde{Ξ}}X=\operatorname{Sc}(\tilde{Ξ}^*iX\vec e_x)$ is a scalar part of a product of elements. No carrier is added to the algebra and no list of components is used: an element, a product and its scalar part.
+The field of this article is an element of $\mathbb{B}$ at each point, and its four coefficients are its four components. The current is the **pairing** of the field with the element the generator carries into it, $j_{\imath}=\bar{\tilde{Ξ}}\,i\,e_{\imath}\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}$, where the pairing $\bar{\tilde{Ξ}}X=\operatorname{Sc}(\tilde{Ξ}^*iX\vec e_x)$ is a scalar part of a product of elements. No carrier is added to the algebra and no list of components is used: an element, a product and its scalar part.
 
-This article states the identity, proves it, gives its momentum-space form and its massless limit, and reports the two companion objects — the angular-momentum (Belinfante–Rosenfeld) split and the stress tensor. It then gives the biquaternion reading. The contribution here is a matter of **naming the two structures**: the split of a product of two generators into its symmetric part, which is the central direction of the algebra, and its antisymmetric part, which is a bivector and lies in the algebra's six directions $\vec e_\eta$ and $i\vec e_\eta$. The convection current is the central direction; the spin current is the bivector. What the framework does **not** supply is a bilinear in the field and its conjugate alone: the current is a scalar part of three factors, and the third, the frame's unit $\vec e_{\mathrm{spt}(\mu)}$, is not carried by the field. The older spelling hides that datum in the adjoint; written as a pairing it is visible as the last factor.
+This article states the identity, proves it, gives its momentum-space form and its massless limit, and reports the two companion objects — the angular-momentum (Belinfante–Rosenfeld) split and the stress tensor. It then gives the biquaternion reading. The contribution here is a matter of **naming the two structures**: the split of a product of two generators into its symmetric part, which is the central direction of the algebra, and its antisymmetric part, which is a bivector and lies in the algebra's six directions $\vec e_\eta$ and $i\vec e_\eta$. The convection current is the central direction; the spin current is the bivector. What the framework does **not** supply is a bilinear in the field and its conjugate alone: the current is a scalar part of three factors, and the third, the frame's unit $\vec e_{\mathrm{spt}(\imath)}$, is not carried by the field. The older spelling hides that datum in the adjoint; written as a pairing it is visible as the last factor.
 
 The article is organised as follows. The next section fixes the conventions: the field and its value, the frame, the pairing, the two Dirac equations and the current. The section after it states the identity and proves it. A section gives the momentum-space form used in scattering. A section reads the two terms physically. A section gives the massless limit and says what survives it. A section records the angular-momentum and stress-tensor relatives and the electromagnetic consequence. A section gives the biquaternion reading. The closing sections are the open questions, the standard Greek names of the same objects, the summary, the notation table and the literature.
 
@@ -27,7 +27,7 @@ The **value** of an element is a letter with two possibilities, and it is the su
 The four **generators** are the actions
 
 $$
-\tilde Q\longmapsto i\,e_\mu\,\tilde Q\,\vec e_{\mathrm{spt}(\mu)},
+\tilde Q\longmapsto i\,e_{\imath}\,\tilde Q\,\vec e_{\mathrm{spt}(\imath)},
 \qquad
 \mathrm{spt}(t)=x,\quad\mathrm{spt}(\eta)=y .
 $$
@@ -64,10 +64,10 @@ The pairing is written on the right of the bar, and it takes the whole product t
 The **field equation** is
 
 $$
-\sum_\mu\varepsilon_\mu\,e_\mu\,\partial_\mu\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}=-k_m\,\tilde{Ξ} .
+\sum_{\imath}\varepsilon_{\imath}\,e_{\imath}\,\partial_{\imath}\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}=-k_m\,\tilde{Ξ} .
 $$
 
-Every factor is written out: the derivative acts on the field, the unit $e_\mu$ multiplies from the left, the frame's unit $\vec e_{\mathrm{spt}(\mu)}$ from the right, and the plain weight $\varepsilon_\mu$ of *Frame and Metric Conventions* raises the index of the generator. The weight is not a second metric factor; it is the sign that makes the four generators obey one anticommutation rule.
+Every factor is written out: the derivative acts on the field, the unit $e_{\imath}$ multiplies from the left, the frame's unit $\vec e_{\mathrm{spt}(\imath)}$ from the right, and the plain weight $\varepsilon_{\imath}$ of *Frame and Metric Conventions* raises the index of the generator. The weight is not a second metric factor; it is the sign that makes the four generators obey one anticommutation rule.
 
 The component form displays the two families at once, because the temporal generator is a single right multiplication and the three spatial generators share their right multiplier:
 
@@ -90,7 +90,7 @@ which acts by left multiplication on the algebra (*Algebra and Element Conventio
 The second equation is the **adjoint**. Conjugating the field equation and pairing both sides with an arbitrary element $X$ gives
 
 $$
-\sum_\mu\varepsilon_\mu\,\overline{\partial_\mu\tilde{Ξ}}\,e_\mu X\vec e_{\mathrm{spt}(\mu)}=m\,\bar{\tilde{Ξ}}\,X
+\sum_{\imath}\varepsilon_{\imath}\,\overline{\partial_{\imath}\tilde{Ξ}}\,e_{\imath} X\vec e_{\mathrm{spt}(\imath)}=m\,\bar{\tilde{Ξ}}\,X
 \qquad\text{for every }X .
 $$
 
@@ -101,13 +101,13 @@ The mass carries the other sign than in the field equation, because the conjugat
 The **number current** of a solution is
 
 $$
-j_\mu=\bar{\tilde{Ξ}}\,i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}
-=\operatorname{Sc}\big(\tilde{Ξ}^*\,e_\mu\,\tilde{Ξ}\,c_\mu\big),
+j_{\imath}=\bar{\tilde{Ξ}}\,i\,e_{\imath}\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}
+=\operatorname{Sc}\big(\tilde{Ξ}^*\,e_{\imath}\,\tilde{Ξ}\,c_{\imath}\big),
 \qquad
 c_t=e_t,\quad c_k=\vec e_z .
 $$
 
-The second form is derived from the first at the place of use. The two imaginary units multiply to $-1$, so $j_\mu=-\operatorname{Sc}(\tilde{Ξ}^*e_\mu\tilde{Ξ}\vec e_{\mathrm{spt}(\mu)}\vec e_x)$, and the frame's unit is $c_\mu:=-\vec e_{\mathrm{spt}(\mu)}\vec e_x$, with $-\vec e_x\vec e_x=e_t$ in the temporal family and $-\vec e_y\vec e_x=\vec e_z$ in the spatial one.
+The second form is derived from the first at the place of use. The two imaginary units multiply to $-1$, so $j_{\imath}=-\operatorname{Sc}(\tilde{Ξ}^*e_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)}\vec e_x)$, and the frame's unit is $c_{\imath}:=-\vec e_{\mathrm{spt}(\imath)}\vec e_x$, with $-\vec e_x\vec e_x=e_t$ in the temporal family and $-\vec e_y\vec e_x=\vec e_z$ in the spatial one.
 
 The temporal component is the density, and it needs no frame unit at all:
 
@@ -121,49 +121,49 @@ That is why the density is positive rather than a sign of the frame. The three s
 
 ### Statement
 
-Let $\tilde{Ξ}$ be a solution of the field equation of §*The Two Dirac Equations*. The Gordon decomposition splits the current into two terms of different character: a **convection** part, which carries the first derivative of the field itself, and a **spin** part, which is the divergence of the antisymmetric density $\bar{\tilde{Ξ}}\,\Sigma_{\mu\nu}\tilde{Ξ}$ built from the spin generator defined below.
+Let $\tilde{Ξ}$ be a solution of the field equation of §*The Two Dirac Equations*. The Gordon decomposition splits the current into two terms of different character: a **convection** part, which carries the first derivative of the field itself, and a **spin** part, which is the divergence of the antisymmetric density $\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ}$ built from the spin generator defined below.
 
 $$
 \boxed{\;
-\bar{\tilde{Ξ}}\,i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}
-=\frac{i}{2\,k_m}\Big(\bar{\tilde{Ξ}}\,\partial_\mu\tilde{Ξ}-\overline{\partial_\mu\tilde{Ξ}}\,\tilde{Ξ}\Big)
-+\frac{1}{k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}\,\Sigma_{\mu\nu}\tilde{Ξ}\Big)\;}
+\bar{\tilde{Ξ}}\,i\,e_{\imath}\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}
+=\frac{i}{2\,k_m}\Big(\bar{\tilde{Ξ}}\,\partial_{\imath}\tilde{Ξ}-\overline{\partial_{\imath}\tilde{Ξ}}\,\tilde{Ξ}\Big)
++\frac{1}{k_m}\sum_{\jmath}\varepsilon_{\jmath}\,\partial_{\jmath}\Big(\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ}\Big)\;}
 $$
 
-The spin generator $\Sigma_{\mu\nu}$ is $\frac{i}{4}$ times the commutator of the $\mu$-th and $\nu$-th generators, antisymmetric in its two indices; its action on an element is written $\Sigma_{\mu\nu}\tilde{Ξ}$. The $i$ is the one the generator already carries. It is $i$ times the Lorentz generator of *Matrix Representations Conventions*, which is half the bivector of the pair; written out, $\Sigma_{23}$ is the left multiplication by $\frac{i}{2}\vec e_x$, and $\Sigma_{01}$ multiplies by $\frac{i}{2}\vec e_x$ on the left and by $\vec e_z$ on the right. The spin term is a total divergence, and the antisymmetry of $\Sigma_{\mu\nu}$ is what makes it one.
+The spin generator $\Sigma_{\imath\jmath}$ is $\frac{i}{4}$ times the commutator of the $\mu$-th and ${\jmath}$-th generators, antisymmetric in its two indices; its action on an element is written $\Sigma_{\imath\jmath}\tilde{Ξ}$. The $i$ is the one the generator already carries. It is $i$ times the Lorentz generator of *Matrix Representations Conventions*, which is half the bivector of the pair; written out, $\Sigma_{23}$ is the left multiplication by $\frac{i}{2}\vec e_x$, and $\Sigma_{01}$ multiplies by $\frac{i}{2}\vec e_x$ on the left and by $\vec e_z$ on the right. The spin term is a total divergence, and the antisymmetry of $\Sigma_{\imath\jmath}$ is what makes it one.
 
 ### Proof
 
-The proof uses the two equations, one factor on each side of the current. Pair the field equation from the left with the generator, that is, act on it with $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\mathrm{spt}(\mu)}$ and then pair with $\tilde{Ξ}$:
+The proof uses the two equations, one factor on each side of the current. Pair the field equation from the left with the generator, that is, act on it with $\tilde Q\mapsto ie_{\imath}\tilde Q\vec e_{\mathrm{spt}(\imath)}$ and then pair with $\tilde{Ξ}$:
 
 $$
--m\,j_\mu=\sum_\nu\varepsilon_\nu\,\bar{\tilde{Ξ}}\,\big(ie_\mu\big(e_\nu\,\partial_\nu\tilde{Ξ}\,\vec e_{\mathrm{spt}(\nu)}\big)\vec e_{\mathrm{spt}(\mu)}\big).
+-m\,j_{\imath}=\sum_{\jmath}\varepsilon_{\jmath}\,\bar{\tilde{Ξ}}\,\big(ie_{\imath}\big(e_{\jmath}\,\partial_{\jmath}\tilde{Ξ}\,\vec e_{\mathrm{spt}(\jmath)}\big)\vec e_{\mathrm{spt}(\imath)}\big).
 $$
 
-The product of the two left multipliers is $e_\mu e_\nu$ and the product of the two right multipliers is $\vec e_{\mathrm{spt}(\nu)}\vec e_{\mathrm{spt}(\mu)}$; by the split of a product of two actions in the conventions, the result is $-i$ times the plain weight, less twice the spin generator. Pairing gives
+The product of the two left multipliers is $e_{\imath} e_{\jmath}$ and the product of the two right multipliers is $\vec e_{\mathrm{spt}(\jmath)}\vec e_{\mathrm{spt}(\imath)}$; by the split of a product of two actions in the conventions, the result is $-i$ times the plain weight, less twice the spin generator. Pairing gives
 
 $$
--m\,j_\mu=\sum_\nu\varepsilon_\nu\Big(-i\,\varepsilon_\mu\delta_{\mu\nu}\,\bar{\tilde{Ξ}}\,\partial_\nu\tilde{Ξ}-2\,\bar{\tilde{Ξ}}\,\Sigma_{\mu\nu}\partial_\nu\tilde{Ξ}\Big),
+-m\,j_{\imath}=\sum_{\jmath}\varepsilon_{\jmath}\Big(-i\,\varepsilon_{\imath}\delta_{\imath\jmath}\,\bar{\tilde{Ξ}}\,\partial_{\jmath}\tilde{Ξ}-2\,\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\partial_{\jmath}\tilde{Ξ}\Big),
 $$
 
-with $\varepsilon_\mu\delta_{\mu\nu}$ the plain weight of *Frame and Metric Conventions*, that is, the scalar part of $e_\mu e_\nu$, which is $1$ at $\nu=\mu$ and $0$ otherwise. Put $X=ie_\mu\tilde{Ξ}\vec e_{\mathrm{spt}(\mu)}$ in the adjoint equation, so that the generator acts on the field and not on the conjugated factor:
+with $\varepsilon_{\imath}\delta_{\imath\jmath}$ the plain weight of *Frame and Metric Conventions*, that is, the scalar part of $e_{\imath} e_{\jmath}$, which is $1$ at ${\jmath}=\mu$ and $0$ otherwise. Put $X=ie_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)}$ in the adjoint equation, so that the generator acts on the field and not on the conjugated factor:
 
 $$
-m\,j_\mu=\sum_\nu\varepsilon_\nu\Big(-i\,\varepsilon_\mu\delta_{\mu\nu}\,\overline{\partial_\nu\tilde{Ξ}}\,\tilde{Ξ}+2\,\overline{\partial_\nu\tilde{Ξ}}\,\Sigma_{\mu\nu}\tilde{Ξ}\Big).
+m\,j_{\imath}=\sum_{\jmath}\varepsilon_{\jmath}\Big(-i\,\varepsilon_{\imath}\delta_{\imath\jmath}\,\overline{\partial_{\jmath}\tilde{Ξ}}\,\tilde{Ξ}+2\,\overline{\partial_{\jmath}\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ}\Big).
 $$
 
 Subtracting the second from the first, the mass terms cancel and the two bivector pieces combine into one derivative:
 
 $$
--2m\,j_\mu=\sum_\nu\varepsilon_\nu\Big[-i\,\varepsilon_\mu\delta_{\mu\nu}\Big(\bar{\tilde{Ξ}}\,\partial_\nu\tilde{Ξ}-\overline{\partial_\nu\tilde{Ξ}}\,\tilde{Ξ}\Big)
--2\,\partial_\nu\Big(\bar{\tilde{Ξ}}\,\Sigma_{\mu\nu}\tilde{Ξ}\Big)\Big].
+-2m\,j_{\imath}=\sum_{\jmath}\varepsilon_{\jmath}\Big[-i\,\varepsilon_{\imath}\delta_{\imath\jmath}\Big(\bar{\tilde{Ξ}}\,\partial_{\jmath}\tilde{Ξ}-\overline{\partial_{\jmath}\tilde{Ξ}}\,\tilde{Ξ}\Big)
+-2\,\partial_{\jmath}\Big(\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ}\Big)\Big].
 $$
 
-The weight collapses the sum, because $\varepsilon_\nu\varepsilon_\mu\delta_{\mu\nu}$ is $\varepsilon_\mu^2=1$ at $\nu=\mu$ and $0$ otherwise, so only the term $\nu=\mu$ survives and the coefficient of the convection bracket is the same $-i$ for all four components. The bivector part is a total derivative because $\Sigma_{\mu\nu}$ is a constant action and is antisymmetric in its two indices: the derivative of the bilinear is the sum of the two bivector pieces, one with the derivative on each factor. Dividing by $2m$,
+The weight collapses the sum, because $\varepsilon_{\jmath}\varepsilon_{\imath}\delta_{\imath\jmath}$ is $\varepsilon_{\imath}^2=1$ at ${\jmath}=\mu$ and $0$ otherwise, so only the term ${\jmath}=\mu$ survives and the coefficient of the convection bracket is the same $-i$ for all four components. The bivector part is a total derivative because $\Sigma_{\imath\jmath}$ is a constant action and is antisymmetric in its two indices: the derivative of the bilinear is the sum of the two bivector pieces, one with the derivative on each factor. Dividing by $2m$,
 
 $$
-j_\mu=\frac{i}{2\,k_m}\Big(\bar{\tilde{Ξ}}\,\partial_\mu\tilde{Ξ}-\overline{\partial_\mu\tilde{Ξ}}\,\tilde{Ξ}\Big)
-+\frac{1}{k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}\,\Sigma_{\mu\nu}\tilde{Ξ}\Big),
+j_{\imath}=\frac{i}{2\,k_m}\Big(\bar{\tilde{Ξ}}\,\partial_{\imath}\tilde{Ξ}-\overline{\partial_{\imath}\tilde{Ξ}}\,\tilde{Ξ}\Big)
++\frac{1}{k_m}\sum_{\jmath}\varepsilon_{\jmath}\,\partial_{\jmath}\Big(\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ}\Big),
 $$
 
 which is the identity as stated. The spin term is the divergence of a bilinear and not the bilinear times a divergence, and that is the content of the last step: the two bivector contributions add into one derivative.
@@ -172,7 +172,7 @@ The algebra was checked numerically, on at most a hundred elements. The sixteen 
 
 ### A note on the total divergence
 
-The spin term is a total divergence, and its own divergence vanishes identically: $\partial_\mu\partial_\nu$ is symmetric in the two indices while $\Sigma_{\mu\nu}$ is antisymmetric, so the spin current is conserved without the field equation being used. It is a **bound** current rather than a transport current. It can be removed from the current at the price of a surface term, it contributes nothing to the total charge, and it cannot be removed from the magnetic moment, which is the integral of the spin density. The convection term is separately conserved on shell, by the two Dirac equations. What the decomposition separates is therefore not a conserved piece and a non-conserved piece, but a transport current and a magnetisation current.
+The spin term is a total divergence, and its own divergence vanishes identically: $\partial_{\imath}\partial_{\jmath}$ is symmetric in the two indices while $\Sigma_{\imath\jmath}$ is antisymmetric, so the spin current is conserved without the field equation being used. It is a **bound** current rather than a transport current. It can be removed from the current at the price of a surface term, it contributes nothing to the total charge, and it cannot be removed from the magnetic moment, which is the integral of the spin density. The convection term is separately conserved on shell, by the two Dirac equations. What the decomposition separates is therefore not a conserved piece and a non-conserved piece, but a transport current and a magnetisation current.
 
 ## The Momentum-Space Form
 
@@ -182,21 +182,21 @@ $$
 \tilde{Ξ}=\tilde w(p)\,\exp\Big(-i\theta_{\mathrm{pwp}}),
 $$
 
-so that $\partial_\mu\tilde{Ξ}=-ip_\mu\tilde{Ξ}$, and the field equation becomes the on-shell condition
+so that $\partial_{\imath}\tilde{Ξ}=-ip_{\imath}\tilde{Ξ}$, and the field equation becomes the on-shell condition
 
 $$
-\sum_\mu\varepsilon_\mu\,p_\mu\,i\,e_\mu\,\tilde w(p)\,\vec e_{\mathrm{spt}(\mu)}=m\,\tilde w(p).
+\sum_{\imath}\varepsilon_{\imath}\,p_{\imath}\,i\,e_{\imath}\,\tilde w(p)\,\vec e_{\mathrm{spt}(\imath)}=m\,\tilde w(p).
 
 $$
 
 The angle is $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real.
 
-The exponent carries no weight $\varepsilon_\mu$. The weight belongs to the contraction of the generator with the momentum, where it raises the generator's index, and the derivative returns $p_\mu$ with the same sign for all four components. A weight in the exponent would flip the sign of the three spatial derivatives and would make the position-space and the momentum-space identities disagree on the sign of the spatial convection current.
+The exponent carries no weight $\varepsilon_{\imath}$. The weight belongs to the contraction of the generator with the momentum, where it raises the generator's index, and the derivative returns $p_{\imath}$ with the same sign for all four components. A weight in the exponent would flip the sign of the three spatial derivatives and would make the position-space and the momentum-space identities disagree on the sign of the spatial convection current.
 
 Write $\bar w_2$ for the pairing of *The Pairing* read at the on-shell momentum $p_2$. It obeys the same condition on the other side,
 
 $$
-\sum_\mu\varepsilon_\mu\,p_{2,\mu}\,\overline{\tilde w(p_2)}\,i\,e_\mu\,X\,\vec e_{\mathrm{spt}(\mu)}=m\,\bar w_2\,X
+\sum_{\imath}\varepsilon_{\imath}\,p_{2,\imath}\,\overline{\tilde w(p_2)}\,i\,e_{\imath}\,X\,\vec e_{\mathrm{spt}(\imath)}=m\,\bar w_2\,X
 \qquad\text{for every }X .
 $$
 
@@ -204,20 +204,20 @@ Between such solutions the Gordon decomposition reads
 
 $$
 \boxed{\;
-\bar w_2\,i\,e_\mu\,w\,\vec e_{\mathrm{spt}(\mu)}
-= \frac{(p+p_2)_\mu}{2\,m\,c}\,\bar w_2w
-+ \frac{i}{m\,c}\sum_\nu\varepsilon_\nu\,(p_2-p)_\nu\,\bar w_2\,\Sigma_{\mu\nu}w\;}
+\bar w_2\,i\,e_{\imath}\,w\,\vec e_{\mathrm{spt}(\imath)}
+= \frac{(p+p_2)_{\imath}}{2\,m\,c}\,\bar w_2w
++ \frac{i}{m\,c}\sum_{\jmath}\varepsilon_{\jmath}\,(p_2-p)_{\jmath}\,\bar w_2\,\Sigma_{\imath\jmath}w\;}
 $$
 
-Equivalently, with the momentum transfer $k_\nu=(p_2-p)_\nu$ and the average momentum $P_\mu=\tfrac12(p+p_2)_\mu$,
+Equivalently, with the momentum transfer $k_{\jmath}=(p_2-p)_{\jmath}$ and the average momentum $P_{\imath}=\tfrac12(p+p_2)_{\imath}$,
 
 $$
-\bar w_2\,i\,e_\mu\,w\,\vec e_{\mathrm{spt}(\mu)}
-=\frac{1}{m\,c}\Big(P_\mu\,\bar w_2w
-+ i\sum_\nu\varepsilon_\nu\,k_\nu\,\bar w_2\Sigma_{\mu\nu}w\Big).
+\bar w_2\,i\,e_{\imath}\,w\,\vec e_{\mathrm{spt}(\imath)}
+=\frac{1}{m\,c}\Big(P_{\imath}\,\bar w_2w
++ i\sum_{\jmath}\varepsilon_{\jmath}\,k_{\jmath}\,\bar w_2\Sigma_{\imath\jmath}w\Big).
 $$
 
-The first term is proportional to the scalar bilinear $\bar w_2w$, the second to the tensor bilinear $\bar w_2\Sigma_{\mu\nu}w$, and the two coefficients are fixed: $P_\mu/m$ and $ik_\nu/m$. This is the form in which the vertex decomposition of the companion article on the anomalous magnetic moment is stated.
+The first term is proportional to the scalar bilinear $\bar w_2w$, the second to the tensor bilinear $\bar w_2\Sigma_{\imath\jmath}w$, and the two coefficients are fixed: $P_{\imath}/m$ and $ik_{\jmath}/m$. This is the form in which the vertex decomposition of the companion article on the anomalous magnetic moment is stated.
 
 ### The parent identity
 
@@ -225,31 +225,31 @@ Both momentum-space statements are consequences of the simpler **parent identity
 
 $$
 2m\,\bar w_2\,a\,w\,b
-= \bar w_2\Big(\sum_\mu\varepsilon_\mu\,p_{2,\mu}\,i\,e_\mu\,a\,w\,b\,\vec e_{\mathrm{spt}(\mu)}\Big)
-+ \bar w_2\Big(a\sum_\mu\varepsilon_\mu\,p_\mu\,i\,e_\mu\,w\,\vec e_{\mathrm{spt}(\mu)}\,b\Big),
+= \bar w_2\Big(\sum_{\imath}\varepsilon_{\imath}\,p_{2,\imath}\,i\,e_{\imath}\,a\,w\,b\,\vec e_{\mathrm{spt}(\imath)}\Big)
++ \bar w_2\Big(a\sum_{\imath}\varepsilon_{\imath}\,p_{\imath}\,i\,e_{\imath}\,w\,\vec e_{\mathrm{spt}(\imath)}\,b\Big),
 $$
 
-with $a=e_\mu$ and $b=\vec e_{\mathrm{spt}(\mu)}$ it gives the Gordon form above. Each parenthesis is a product of elements, and the whole statement is a scalar part of products: it carries no operator symbol.
+with $a=e_{\imath}$ and $b=\vec e_{\mathrm{spt}(\imath)}$ it gives the Gordon form above. Each parenthesis is a product of elements, and the whole statement is a scalar part of products: it carries no operator symbol.
 
 The two products of the parent identity are read off from the split of a product of two actions, with the momentum contracted into the actions and the imaginary units multiplied out:
 
 $$
-\Big(\sum_\rho\varepsilon_\rho\,p_{2,\rho}\,i\,e_\rho\,\cdot\,\vec e_{\mathrm{spt}(\rho)}\Big)\,\big(ie_\mu\,\cdot\,\vec e_{\mathrm{spt}(\mu)}\big)
-=p_{2,\mu}+2i\sum_\nu\varepsilon_\nu\,\Sigma_{\mu\nu}\,p_{2,\nu},
+\Big(\sum_\rho\varepsilon_\rho\,p_{2,\rho}\,i\,e_\rho\,\cdot\,\vec e_{\mathrm{spt}(\rho)}\Big)\,\big(ie_{\imath}\,\cdot\,\vec e_{\mathrm{spt}(\imath)}\big)
+=p_{2,\imath}+2i\sum_{\jmath}\varepsilon_{\jmath}\,\Sigma_{\imath\jmath}\,p_{2,\jmath},
 \qquad
-\big(ie_\mu\,\cdot\,\vec e_{\mathrm{spt}(\mu)}\big)\,\Big(\sum_\rho\varepsilon_\rho\,p_\rho\,i\,e_\rho\,\cdot\,\vec e_{\mathrm{spt}(\rho)}\Big)
-=p_\mu-2i\sum_\nu\varepsilon_\nu\,\Sigma_{\mu\nu}\,p_\nu.
+\big(ie_{\imath}\,\cdot\,\vec e_{\mathrm{spt}(\imath)}\big)\,\Big(\sum_\rho\varepsilon_\rho\,p_\rho\,i\,e_\rho\,\cdot\,\vec e_{\mathrm{spt}(\rho)}\Big)
+=p_{\imath}-2i\sum_{\jmath}\varepsilon_{\jmath}\,\Sigma_{\imath\jmath}\,p_{\jmath}.
 $$
 
-Each product is a scalar plus a bivector, and the scalar part is the momentum component of the action that was not contracted. The sum of the two is $(p+p_2)_\mu+2i\sum_\nu\varepsilon_\nu\Sigma_{\mu\nu}(p_2-p)_\nu$, which is $2m$ times the bracket of the momentum-space identity, because the on-shell conditions replace the contracted momenta by $m$.
+Each product is a scalar plus a bivector, and the scalar part is the momentum component of the action that was not contracted. The sum of the two is $(p+p_2)_{\imath}+2i\sum_{\jmath}\varepsilon_{\jmath}\Sigma_{\imath\jmath}(p_2-p)_{\jmath}$, which is $2m$ times the bracket of the momentum-space identity, because the on-shell conditions replace the contracted momenta by $m$.
 
 ### The axial companion
 
-The **axial companion** takes the product of a generator with the chirality basis operator: the action $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\mathrm{spt}(\mu)}$ followed by $\tilde Q\mapsto-i\tilde Q\vec e_z$. Two features are worth stating before the algebra. First, it is a **real action**: the two imaginary units multiply to $+1$, so
+The **axial companion** takes the product of a generator with the chirality basis operator: the action $\tilde Q\mapsto ie_{\imath}\tilde Q\vec e_{\mathrm{spt}(\imath)}$ followed by $\tilde Q\mapsto-i\tilde Q\vec e_z$. Two features are worth stating before the algebra. First, it is a **real action**: the two imaginary units multiply to $+1$, so
 
 $$
-\big(ie_\mu\,\cdot\,\vec e_{\mathrm{spt}(\mu)}\big)\big(-i\,\cdot\,\vec e_z\big)
-=e_\mu\,\cdot\,\vec e_z\vec e_{\mathrm{spt}(\mu)},
+\big(ie_{\imath}\,\cdot\,\vec e_{\mathrm{spt}(\imath)}\big)\big(-i\,\cdot\,\vec e_z\big)
+=e_{\imath}\,\cdot\,\vec e_z\vec e_{\mathrm{spt}(\imath)},
 $$
 
 and the axial vertex carries no imaginary unit at all. Second, each generator exchanges the value while a product of two generators keeps it, because the two units $\vec e_x$ and $\vec e_y$ exchange the value and their products are $\pm e_t$ and $\pm\vec e_z$, which keep it. So the chirality basis operator reverses the sign of the weight part of a product and leaves the bivector part alone. That reversal is what exchanges the two slots.
@@ -257,9 +257,9 @@ and the axial vertex carries no imaginary unit at all. Second, each generator ex
 With both products expanded as above and the chirality basis operator moved to the front of each, the sum divided by $2m$ gives
 
 $$
-\bar w_2\,e_\mu\,w\,\vec e_z\vec e_{\mathrm{spt}(\mu)}
-= \frac{(p_2-p)_\mu}{2\,m\,c}\,\bar w_2\big(-i\,w\,\vec e_z\big)
-+ \frac{i}{m\,c}\sum_\nu\varepsilon_\nu\,(p_2+p)_\nu\,\bar w_2\big(-i\,\Sigma_{\mu\nu}w\,\vec e_z\big).
+\bar w_2\,e_{\imath}\,w\,\vec e_z\vec e_{\mathrm{spt}(\imath)}
+= \frac{(p_2-p)_{\imath}}{2\,m\,c}\,\bar w_2\big(-i\,w\,\vec e_z\big)
++ \frac{i}{m\,c}\sum_{\jmath}\varepsilon_{\jmath}\,(p_2+p)_{\jmath}\,\bar w_2\big(-i\,\Sigma_{\imath\jmath}w\,\vec e_z\big).
 $$
 
 The vector identity has the average momentum in the convection slot and the transfer in the spin slot; the axial identity has the transfer in the convection slot and the average momentum in the spin slot. The exchange is not an extra fact about the algebra: it is the minus sign that the exchange of the value puts on the weight term and withholds from the bivector term.
@@ -270,25 +270,25 @@ The vector identity has the average momentum in the convection slot and the tran
 
 The two terms of the momentum-space identity have a direct interpretation, and that is why the decomposition is useful.
 
-The **convection term** is $\frac{(p+p_2)_\mu}{2\,m\,c}\bar w_2w$. It is the current of a charged scalar of mass $m$ and momentum $\tfrac12(p+p_2)$: the orbital part. It depends on the average four-momentum, it reduces to $\bar w_2w\,v_\mu$ in the non-relativistic limit, and it is the piece protected by gauge invariance.
+The **convection term** is $\frac{(p+p_2)_{\imath}}{2\,m\,c}\bar w_2w$. It is the current of a charged scalar of mass $m$ and momentum $\tfrac12(p+p_2)$: the orbital part. It depends on the average four-momentum, it reduces to $\bar w_2w\,v_{\imath}$ in the non-relativistic limit, and it is the piece protected by gauge invariance.
 
-The **spin term** is $\frac{i}{m\,c}\sum_\nu\varepsilon_\nu(p_2-p)_\nu\bar w_2\Sigma_{\mu\nu}w$. It depends on the momentum **transfer** and on the tensor bilinear, and it is the piece that carries the magnetic moment: a spin density produces a current only where its density varies, and the variation is what the transfer measures.
+The **spin term** is $\frac{i}{m\,c}\sum_{\jmath}\varepsilon_{\jmath}(p_2-p)_{\jmath}\bar w_2\Sigma_{\imath\jmath}w$. It depends on the momentum **transfer** and on the tensor bilinear, and it is the piece that carries the magnetic moment: a spin density produces a current only where its density varies, and the variation is what the transfer measures.
 
-The identification of the second term with the spin density is not a metaphor. In position space it is $\frac1{k_m}\sum_\nu\varepsilon_\nu\partial_\nu(\bar{\tilde{Ξ}}\Sigma_{\mu\nu}\tilde{Ξ})$, a total divergence of an antisymmetric bilinear, and in three dimensions the spatial indices of that bilinear pair into the spin three-vector. The bilinear $\bar{\tilde{Ξ}}\Sigma_{\mu\nu}\tilde{Ξ}$ is the density whose integral is the spin of the state.
+The identification of the second term with the spin density is not a metaphor. In position space it is $\frac1{k_m}\sum_{\jmath}\varepsilon_{\jmath}\partial_{\jmath}(\bar{\tilde{Ξ}}\Sigma_{\imath\jmath}\tilde{Ξ})$, a total divergence of an antisymmetric bilinear, and in three dimensions the spatial indices of that bilinear pair into the spin three-vector. The bilinear $\bar{\tilde{Ξ}}\Sigma_{\imath\jmath}\tilde{Ξ}$ is the density whose integral is the spin of the state.
 
 ### The magnetic moment and $g=2$
 
-Contract the spin term with the photon field. The interaction is $-\sum_\mu\varepsilon_\mu A_\mu j_\mu$, and the spin-dependent part contributes, up to a total divergence,
+Contract the spin term with the photon field. The interaction is $-\sum_{\imath}\varepsilon_{\imath} A_{\imath} j_{\imath}$, and the spin-dependent part contributes, up to a total divergence,
 
 $$
--\frac{e}{2\,k_m}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\partial_\nu  A_\mu\,\bar{\tilde{Ξ}}\,\Sigma_{\nu\mu}\tilde{Ξ}
-= -\frac{e}{2\,k_m}\cdot\tfrac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,F_{\mu\nu}\,\bar{\tilde{Ξ}}\,\Sigma_{\mu\nu}\tilde{Ξ},
+-\frac{e}{2\,k_m}\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,\partial_{\jmath}  A_{\imath}\,\bar{\tilde{Ξ}}\,\Sigma_{\jmath\imath}\tilde{Ξ}
+= -\frac{e}{2\,k_m}\cdot\tfrac12\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,F_{\imath\jmath}\,\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ},
 $$
 
 which is an effective **Pauli moment term**, of the form $-\frac{e}{2\,k_m}\vec B\cdot\vec S$ with $\vec S$ the spin density of the previous subsection. Its coefficient is the Dirac value $g=2$. The companion article on the anomalous magnetic moment writes the vertex as
 
 $$
-i\,e_\mu\,\cdot\,\vec e_{\mathrm{spt}(\mu)}\;F_1(k^2)+\frac{2i\sum_\nu\varepsilon_\nu\,\Sigma_{\mu\nu}k_\nu}{2m}\,F_2(k^2),
+i\,e_{\imath}\,\cdot\,\vec e_{\mathrm{spt}(\imath)}\;F_1(k^2)+\frac{2i\sum_{\jmath}\varepsilon_{\jmath}\,\Sigma_{\imath\jmath}k_{\jmath}}{2m}\,F_2(k^2),
 \qquad
 g=2\big(1+F_2(0)\big),
 $$
@@ -318,11 +318,11 @@ The same split appears in the energy–momentum tensor, and the comparison is in
 The symmetric **Belinfante–Rosenfeld** tensor is
 
 $$
-T_{\mu\nu}^{\rm BR}
-= -\frac14\Big(\bar{\tilde{Ξ}}\,e_\mu\,\partial_\nu\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}
-- \overline{\partial_\nu\tilde{Ξ}}\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}
-+ \bar{\tilde{Ξ}}\,e_\nu\,\partial_\mu\tilde{Ξ}\,\vec e_{\mathrm{spt}(\nu)}
-- \overline{\partial_\mu\tilde{Ξ}}\,e_\nu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\nu)}\Big),
+T_{\imath\jmath}^{\rm BR}
+= -\frac14\Big(\bar{\tilde{Ξ}}\,e_{\imath}\,\partial_{\jmath}\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}
+- \overline{\partial_{\jmath}\tilde{Ξ}}\,e_{\imath}\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}
++ \bar{\tilde{Ξ}}\,e_{\jmath}\,\partial_{\imath}\tilde{Ξ}\,\vec e_{\mathrm{spt}(\jmath)}
+- \overline{\partial_{\imath}\tilde{Ξ}}\,e_{\jmath}\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\jmath)}\Big),
 $$
 
 where the coefficient is $-\frac14$ rather than $\frac{i}{4}$ because the two imaginary units of the conventional form multiply to $-1$, the one inside the generator and the one in front. On shell its time component is the energy density,
@@ -342,9 +342,9 @@ Compare this with the spin term of the Gordon identity: the spin contribution to
 The canonical (non-symmetric) tensor is the same expression with one pair of terms instead of two,
 
 $$
-T_{\mu\nu}^{\rm canonical}
-= -\frac12\Big(\bar{\tilde{Ξ}}\,e_\mu\,\partial_\nu\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}
-- \overline{\partial_\nu\tilde{Ξ}}\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\Big),
+T_{\imath\jmath}^{\rm canonical}
+= -\frac12\Big(\bar{\tilde{Ξ}}\,e_{\imath}\,\partial_{\jmath}\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}
+- \overline{\partial_{\jmath}\tilde{Ξ}}\,e_{\imath}\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}\Big),
 $$
 
 and it does not contain the bound spin-momentum term; that term is restored by the antisymmetric part of the Belinfante improvement. Integrating, the spin contribution to the total angular momentum is
@@ -369,13 +369,13 @@ The comparison map of *Matrix Representations Conventions* reads the eight real 
 
 ### What the framework does not supply
 
-The current is not a bilinear in the field and its conjugate alone. Written as a pairing it is a scalar part of three factors, $\tilde{Ξ}^*$, the generator, and the frame's unit $c_\mu$; and $c_\mu$ is not determined by the field. For the temporal component the unit cancels and the density is a scalar part of two factors; for the three spatial components it does not, and the unit $\vec e_z$ stands in the product. The older spelling puts the same datum in the adjoint, in a right multiplication that the field alone does not supply; the derived form of this article puts it in the last factor. Read from the operator side, as in the companion article on minimal coupling, the datum is a multiplication that the adjoint carries and the field does not. Either way the current needs one datum of the frame that the field does not carry, and that is the sense in which the framework does not derive this identity from a product inside the algebra. It transcribes the identity, names its two structures in the algebra's own sectors, and verifies the algebra of the split. The same caveat applies to the axial companion, which carries the chirality basis operator in addition to the frame's units.
+The current is not a bilinear in the field and its conjugate alone. Written as a pairing it is a scalar part of three factors, $\tilde{Ξ}^*$, the generator, and the frame's unit $c_{\imath}$; and $c_{\imath}$ is not determined by the field. For the temporal component the unit cancels and the density is a scalar part of two factors; for the three spatial components it does not, and the unit $\vec e_z$ stands in the product. The older spelling puts the same datum in the adjoint, in a right multiplication that the field alone does not supply; the derived form of this article puts it in the last factor. Read from the operator side, as in the companion article on minimal coupling, the datum is a multiplication that the adjoint carries and the field does not. Either way the current needs one datum of the frame that the field does not carry, and that is the sense in which the framework does not derive this identity from a product inside the algebra. It transcribes the identity, names its two structures in the algebra's own sectors, and verifies the algebra of the split. The same caveat applies to the axial companion, which carries the chirality basis operator in addition to the frame's units.
 
 What the algebra does supply is the location of the two terms: the convection term is the central direction, and the spin term is the bivector direction, with its magnetic part in the informational sector. That placement is a real bookkeeping statement, and it is the framework's contribution to this identity.
 
 ## Open Questions
 
-1. **A current with no frame unit.** Is there an element of $\mathbb{B}$, built from the field and its conjugations alone, whose symmetric and antisymmetric parts reproduce the Gordon split without the unit $c_\mu$? This is the same question the minimal-coupling article leaves open for the current itself, and a positive answer here would be a positive answer there.
+1. **A current with no frame unit.** Is there an element of $\mathbb{B}$, built from the field and its conjugations alone, whose symmetric and antisymmetric parts reproduce the Gordon split without the unit $c_{\imath}$? This is the same question the minimal-coupling article leaves open for the current itself, and a positive answer here would be a positive answer there.
 
 2. **The massless form.** In the massless case the spin term is a curl and the transport term is an energy-weighted derivative. Does the algebra, whose two values are carried by one element, write the massless decomposition more directly than the standard formulation does, and does it fix the locked moment of a one-valued field without going through the massive identity?
 
@@ -389,7 +389,7 @@ What the algebra does supply is the location of the two terms: the convection te
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 This section, and only this section, names the generator basis operators and the chirality basis operator by their standard Greek letters. Nothing above depends on the names: they are a change of typography for a reader who knows the Clifford notation, and every formula of the article is stated in the basis operator spelling.
 
@@ -413,7 +413,7 @@ $$
 \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-These are the basis operators of the conventions under their usual names: $\gamma_\mu$ is $iL_{\mathrm{pau},e_\mu}R_{\delta_\mu}$ and $\gamma_5$ is the chirality basis operator, so the dictionary between the two spellings is a subscript — $\delta_t=\vec e_x$ and $\delta_k=\vec e_y$ — together with a factor of $i$. In these names the relations read $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$, $\gamma_\mu\gamma_\nu=g_{\mu\nu}-i\sigma_{\mu\nu}$, $\{\gamma_\mu,\gamma_5\}=0$, the equation $i\sum_\mu\varepsilon_\mu\gamma_\mu\nabla_\mu\tilde{Ξ}=k_m\tilde{Ξ}$, and the current $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\tilde{Ξ}$ with $\tilde{Ξ}^{\dagger}\gamma_0$. The mixed products of the proof are $\gamma_\mu L_{\mathrm{pau},e_\nu}R_{\delta_\nu}=-ig_{\mu\nu}-\sigma_{\mu\nu}$ and $L_{\mathrm{pau},e_\nu}R_{\delta_\nu}\gamma_\mu=-ig_{\mu\nu}+\sigma_{\mu\nu}$, and the axial vertex is $\gamma_\mu\gamma_5$, the product that the collapse $i\cdot(-i)=1$ writes as the real basis operator $L_{\mathrm{pau},e_\mu}R_{\delta_\mu}R_{\mathrm{pau},\vec e_z}$.
+These are the basis operators of the conventions under their usual names: $\gamma_{\imath}$ is $iL_{\mathrm{pau},e_{\imath}}R_{\delta_{\imath}}$ and $\gamma_5$ is the chirality basis operator, so the dictionary between the two spellings is a subscript — $\delta_t=\vec e_x$ and $\delta_k=\vec e_y$ — together with a factor of $i$. In these names the relations read $\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}$, $\gamma_{\imath}\gamma_{\jmath}=g_{\imath\jmath}-i\sigma_{\imath\jmath}$, $\{\gamma_{\imath},\gamma_5\}=0$, the equation $i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\nabla_{\imath}\tilde{Ξ}=k_m\tilde{Ξ}$, and the current $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_{\imath}\tilde{Ξ}$ with $\tilde{Ξ}^{\dagger}\gamma_0$. The mixed products of the proof are $\gamma_{\imath} L_{\mathrm{pau},e_{\jmath}}R_{\delta_{\jmath}}=-ig_{\imath\jmath}-\sigma_{\imath\jmath}$ and $L_{\mathrm{pau},e_{\jmath}}R_{\delta_{\jmath}}\gamma_{\imath}=-ig_{\imath\jmath}+\sigma_{\imath\jmath}$, and the axial vertex is $\gamma_{\imath}\gamma_5$, the product that the collapse $i\cdot(-i)=1$ writes as the real basis operator $L_{\mathrm{pau},e_{\imath}}R_{\delta_{\imath}}R_{\mathrm{pau},\vec e_z}$.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -421,27 +421,27 @@ The reference-frame basis operator of the chirality operator is $\gamma_5$; the 
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
 The Gordon decomposition splits the on-shell current of the field as
 
 $$
-\bar{\tilde{Ξ}}\,i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}
-=\frac{i}{2\,k_m}\Big(\bar{\tilde{Ξ}}\,\partial_\mu\tilde{Ξ}-\overline{\partial_\mu\tilde{Ξ}}\,\tilde{Ξ}\Big)
-+\frac{1}{k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}\,\Sigma_{\mu\nu}\tilde{Ξ}\Big),
+\bar{\tilde{Ξ}}\,i\,e_{\imath}\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}
+=\frac{i}{2\,k_m}\Big(\bar{\tilde{Ξ}}\,\partial_{\imath}\tilde{Ξ}-\overline{\partial_{\imath}\tilde{Ξ}}\,\tilde{Ξ}\Big)
++\frac{1}{k_m}\sum_{\jmath}\varepsilon_{\jmath}\,\partial_{\jmath}\Big(\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ}\Big),
 $$
 
-into a convection part and the divergence of a spin density, $\Sigma_{\mu\nu}$ being $i$ times the conventions' Lorentz generator, half the bivector of the pair. The field is an element of $\mathbb{B}$ and the current is a pairing, a scalar part of a product of elements whose last factor is the frame's unit $c_\mu$. In momentum space the same statement is
+into a convection part and the divergence of a spin density, $\Sigma_{\imath\jmath}$ being $i$ times the conventions' Lorentz generator, half the bivector of the pair. The field is an element of $\mathbb{B}$ and the current is a pairing, a scalar part of a product of elements whose last factor is the frame's unit $c_{\imath}$. In momentum space the same statement is
 
 $$
-\bar w_2\,i\,e_\mu\,w\,\vec e_{\mathrm{spt}(\mu)}
-= \frac{(p+p_2)_\mu}{2\,m\,c}\,\bar w_2w
-+ \frac{i}{m\,c}\sum_\nu\varepsilon_\nu\,(p_2-p)_\nu\,\bar w_2\Sigma_{\mu\nu}w,
+\bar w_2\,i\,e_{\imath}\,w\,\vec e_{\mathrm{spt}(\imath)}
+= \frac{(p+p_2)_{\imath}}{2\,m\,c}\,\bar w_2w
++ \frac{i}{m\,c}\sum_{\jmath}\varepsilon_{\jmath}\,(p_2-p)_{\jmath}\,\bar w_2\Sigma_{\imath\jmath}w,
 $$
 
-where the first term is the current of a charged scalar and the second is the spin term whose coefficient gives $g=2$. The decomposition requires $m\neq0$ because both terms carry $1/m$; in the massless regime the energy $E$ replaces the mass as the scale of both terms, the spin term remains the curl of the spin density, and the locked moment of a one-valued field is what remains of the Dirac moment when the rest frame is lost. The Belinfante–Rosenfeld tensor contains the same spin term with coefficient $\tfrac12$ in the momentum density, and the mismatch between that $\tfrac12$ and the current's $1$ is the angular-momentum face of $g=2$. The axial companion is the same parent identity at the real action $e_\mu\cdot\vec e_z\vec e_{\mathrm{spt}(\mu)}$, and there the transfer and the average momentum exchange their slots.
+where the first term is the current of a charged scalar and the second is the spin term whose coefficient gives $g=2$. The decomposition requires $m\neq0$ because both terms carry $1/m$; in the massless regime the energy $E$ replaces the mass as the scale of both terms, the spin term remains the curl of the spin density, and the locked moment of a one-valued field is what remains of the Dirac moment when the rest frame is lost. The Belinfante–Rosenfeld tensor contains the same spin term with coefficient $\tfrac12$ in the momentum density, and the mismatch between that $\tfrac12$ and the current's $1$ is the angular-momentum face of $g=2$. The axial companion is the same parent identity at the real action $e_{\imath}\cdot\vec e_z\vec e_{\mathrm{spt}(\imath)}$, and there the transfer and the average momentum exchange their slots.
 
 The biquaternion interpretation is a naming of the two structures: the split of the generator product is the split into its central part and its bivector part, so the convection current is central and the spin current is a bivector whose rotation-type part lies in the informational sector $\mathbb{B}_{\Psi}$ and whose boost-type part lies in $\mathbb{B}_{\Phi}$. The identity is not a bilinear in the field and its conjugate alone; the current carries one unit of the frame that the field does not carry, and that is the datum the framework transcribes rather than derives.
 
@@ -450,24 +450,24 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 | Symbol | Meaning |
 |---|---|
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field, an element of $\mathbb{B}$; the value is the subscript, $L$ the minus one and $R$ the plus one |
-| $e_\mu$, $\varepsilon_\mu$, $\delta_{\mu\nu}$ | The four units, $e_t$ and $\vec e_\eta$; the plain weight of the conventions, and the Kronecker delta |
-| $\vec e_{\mathrm{spt}(\mu)}$ | The frame's right multipliers, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$ |
-| $ie_\mu\,\cdot\,\vec e_{\mathrm{spt}(\mu)}$, the action $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\mathrm{spt}(\mu)}$ | The four generators of the frame; each exchanges the value |
+| $e_{\imath}$, $\varepsilon_{\imath}$, $\delta_{\imath\jmath}$ | The four units, $e_t$ and $\vec e_\eta$; the plain weight of the conventions, and the Kronecker delta |
+| $\vec e_{\mathrm{spt}(\imath)}$ | The frame's right multipliers, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$ |
+| $ie_{\imath}\,\cdot\,\vec e_{\mathrm{spt}(\imath)}$, the action $\tilde Q\mapsto ie_{\imath}\tilde Q\vec e_{\mathrm{spt}(\imath)}$ | The four generators of the frame; each exchanges the value |
 | $-i\,\cdot\,\vec e_z$, the action $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The chirality basis operator, named once; it keeps the value |
 | $\bar{\tilde{Ξ}}\,X=\operatorname{Sc}(\tilde{Ξ}^*iX\vec e_x)$ | The pairing: a scalar part of a product of elements; a derived form of this article |
-| $c_\mu$ | The frame's unit in the current, $c_t=e_t$ and $c_k=\vec e_z$ |
-| $\Sigma_{\mu\nu}$ | The spin generator, $\frac{i}{4}$ times the commutator of the two generators, antisymmetric; $i$ times the Lorentz generator of the conventions, which is half the bivector of the pair |
-| $\sum_\mu\varepsilon_\mu e_\mu\partial_\mu\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}=-k_m\tilde{Ξ}$ | The field equation, every factor written out |
-| $\sum_\mu\varepsilon_\mu\overline{\partial_\mu\tilde{Ξ}}\,e_\mu X\vec e_{\mathrm{spt}(\mu)}=m\bar{\tilde{Ξ}}X$ | The adjoint equation, for every element $X$; the mass carries the other sign |
+| $c_{\imath}$ | The frame's unit in the current, $c_t=e_t$ and $c_k=\vec e_z$ |
+| $\Sigma_{\imath\jmath}$ | The spin generator, $\frac{i}{4}$ times the commutator of the two generators, antisymmetric; $i$ times the Lorentz generator of the conventions, which is half the bivector of the pair |
+| $\sum_{\imath}\varepsilon_{\imath} e_{\imath}\partial_{\imath}\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}=-k_m\tilde{Ξ}$ | The field equation, every factor written out |
+| $\sum_{\imath}\varepsilon_{\imath}\overline{\partial_{\imath}\tilde{Ξ}}\,e_{\imath} X\vec e_{\mathrm{spt}(\imath)}=m\bar{\tilde{Ξ}}X$ | The adjoint equation, for every element $X$; the mass carries the other sign |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The chiral pair, the same operator content by left multiplication |
-| $j_\mu=\bar{\tilde{Ξ}}\,ie_\mu\tilde{Ξ}\vec e_{\mathrm{spt}(\mu)}=\operatorname{Sc}(\tilde{Ξ}^*e_\mu\tilde{Ξ} c_\mu)$, $j_0=\operatorname{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ | The number current and its density |
-| $p$, $p_2$, $k_\nu=(p_2-p)_\nu$, $P_\mu=\tfrac12(p+p_2)_\mu$ | Momenta, transfer and average |
-| $\bar w_2\,ie_\mu w\,\vec e_{\mathrm{spt}(\mu)}$ | The momentum-space bilinear |
+| $j_{\imath}=\bar{\tilde{Ξ}}\,ie_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)}=\operatorname{Sc}(\tilde{Ξ}^*e_{\imath}\tilde{Ξ} c_{\imath})$, $j_0=\operatorname{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ | The number current and its density |
+| $p$, $p_2$, $k_{\jmath}=(p_2-p)_{\jmath}$, $P_{\imath}=\tfrac12(p+p_2)_{\imath}$ | Momenta, transfer and average |
+| $\bar w_2\,ie_{\imath} w\,\vec e_{\mathrm{spt}(\imath)}$ | The momentum-space bilinear |
 | $a$, $b$ | The two multipliers of the parent identity |
-| $e_\mu\,\cdot\,\vec e_z\vec e_{\mathrm{spt}(\mu)}$ | The axial vertex, a real action |
+| $e_{\imath}\,\cdot\,\vec e_z\vec e_{\mathrm{spt}(\imath)}$ | The axial vertex, a real action |
 | $\vec S=(\bar{\tilde{Ξ}}\Sigma_{23}\tilde{Ξ},\bar{\tilde{Ξ}}\Sigma_{31}\tilde{Ξ},\bar{\tilde{Ξ}}\Sigma_{12}\tilde{Ξ})$ | The spin density three-vector |
-| $T_{\mu\nu}^{\rm BR}$, $T_{\mu\nu}^{\rm canonical}$ | The Belinfante–Rosenfeld and canonical stress tensors |
-| $\frac{e}{2\,k_m}\cdot\frac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}\bar{\tilde{Ξ}}\Sigma_{\mu\nu}\tilde{Ξ}$ | The effective Pauli moment term, $g=2$ |
+| $T_{\imath\jmath}^{\rm BR}$, $T_{\imath\jmath}^{\rm canonical}$ | The Belinfante–Rosenfeld and canonical stress tensors |
+| $\frac{e}{2\,k_m}\cdot\frac12\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}\bar{\tilde{Ξ}}\Sigma_{\imath\jmath}\tilde{Ξ}$ | The effective Pauli moment term, $g=2$ |
 
 ## Further Reading
 

@@ -7,11 +7,11 @@ This article writes the non-abelian gauge field as the extremum of the Yang–Mi
 The equation. The parent's equation is the Yang–Mills equation without sources,
 
 $$
-D_\mu F_{\mu\nu}=0 ,
+D_{\imath} F_{\imath\jmath}=0 ,
 \qquad
-D_\mu=\frac{\partial}{\partial R_\mu}+[A_\mu,\cdot\,],
+D_{\imath}=\frac{\partial}{\partial R_{\imath}}+[A_{\imath},\cdot\,],
 \qquad
-F_{\mu\nu}=\frac{\partial A_\nu}{\partial R_\mu}-\frac{\partial A_\mu}{\partial R_\nu}+[A_\mu,A_\nu] ,
+F_{\imath\jmath}=\frac{\partial A_{\jmath}}{\partial R_{\imath}}-\frac{\partial A_{\imath}}{\partial R_{\jmath}}+[A_{\imath},A_{\jmath}] ,
 $$
 
 with both the connection and the field strength valued in the $\mathrm{SU}(2)$ factor of the algebra. The article asks what action has this equation as its stationarity condition.
@@ -21,10 +21,10 @@ Three things are established.
 *First, the action.* With $\mathrm{Tr}$ the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ restricted to the $\mathrm{SU}(2)$ factor,
 
 $$
-S_{\mathrm{YM}}=-\frac12\int d^4r\;\mathrm{Tr}\Bigl(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\Bigr),
+S_{\mathrm{YM}}=-\frac12\int d^4r\;\mathrm{Tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr),
 $$
 
-the stationarity condition is $D_\mu F_{\mu\nu}=0$. The coefficient $\tfrac12$ and the sign are the standard ones once the generators are normalized so that $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$.
+the stationarity condition is $D_{\imath} F_{\imath\jmath}=0$. The coefficient $\tfrac12$ and the sign are the standard ones once the generators are normalized so that $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$.
 
 *Second, the trace is not the corpus's pairing.* The invariance of the density needs $\mathrm{Tr}(\tilde QF\tilde Q^{-1}\tilde QF\tilde Q^{-1})=\mathrm{Tr}(FF)$, which is the cyclicity of the matrix trace. The corpus's informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a different functional, and it does not have that property. Using it would give an action that is not gauge invariant, and the distinction is the sharpest technical point of this article.
 
@@ -38,7 +38,7 @@ The conventions are restated here so that every sign below is checkable from thi
 
 The two traces. $\mathrm{Tr}$ is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$; $\mathrm{Sc}$ is the coefficient of $e_t$ in the element; and $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is the corpus's informational reduction, which is not used in this article's action and is the subject of the reality section.
 
-The connection and the curvature. $A_\mu\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi$, anti-Hermitian, with $A_\mu=A_{a,\mu} T_a$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+[A_\mu,A_\nu]$, also anti-Hermitian and in $\mathfrak{su}(2)$.
+The connection and the curvature. $A_{\imath}\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi$, anti-Hermitian, with $A_{\imath}=A_{a,\imath} T_a$; $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}+[A_{\imath},A_{\jmath}]$, also anti-Hermitian and in $\mathfrak{su}(2)$.
 
 The normalization. $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$, so that $T_a=-\tfrac{i}{2}\sigma_a$ in the fundamental representation. With that normalization the coefficient of the action is $\tfrac12$ and the coupling is the one that appears in the covariant derivative.
 
@@ -49,42 +49,42 @@ The sign convention. The action enters with $-\tfrac12$, so that the energy is p
 The action and its invariance. The density is the trace of the curvature's square,
 
 $$
-\mathcal{L}=-\frac12\,\mathrm{Tr}\Bigl(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\Bigr),
+\mathcal{L}=-\frac12\,\mathrm{Tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr),
 \qquad
 S_{\mathrm{YM}}=\int d^4r\;\mathcal{L},
 $$
 
-and its invariance under $A_\mu\mapsto \tilde Q A_\mu\tilde Q^{-1}+\tilde Q\partial_\mu\tilde Q^{-1}$ follows from the curvature's transformation $F_{\mu\nu}\mapsto\tilde QF_{\mu\nu}\tilde Q^{-1}$ and the cyclicity of the trace. The verification is one line:
+and its invariance under $A_{\imath}\mapsto \tilde Q A_{\imath}\tilde Q^{-1}+\tilde Q\partial_{\imath}\tilde Q^{-1}$ follows from the curvature's transformation $F_{\imath\jmath}\mapsto\tilde QF_{\imath\jmath}\tilde Q^{-1}$ and the cyclicity of the trace. The verification is one line:
 
 $$
-\mathrm{Tr}\Bigl(\sum_{\mu,\nu}F_{\mathrm g,\mu\nu}F_{\mathrm g,\mu\nu}\Bigr)=\mathrm{Tr}\Bigl(\sum_{\mu,\nu}\tilde QF_{\mu\nu}\tilde Q^{-1}\tilde QF_{\mu\nu}\tilde Q^{-1}\Bigr)=\mathrm{Tr}\Bigl(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\Bigr).
+\mathrm{Tr}\Bigl(\sum_{\imath,\jmath}F_{\mathrm g,\imath\jmath}F_{\mathrm g,\imath\jmath}\Bigr)=\mathrm{Tr}\Bigl(\sum_{\imath,\jmath}\tilde QF_{\imath\jmath}\tilde Q^{-1}\tilde QF_{\imath\jmath}\tilde Q^{-1}\Bigr)=\mathrm{Tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr).
 $$
 
 Why the quadratic invariant and not another. At dimension four the only invariant built from the curvature alone is its square; a cubic term does not exist because the trace of an odd number of generators vanishes, and a term with derivatives of the curvature has dimension five. The action is therefore the unique one at this order, and its coefficient is fixed by the normalization of the generators and by no other choice.
 
-Why the commutator term makes the theory interacting. In the abelian case $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ is linear in the potential and the action is quadratic. Here the commutator makes $F$ quadratic in $A$, so the action contains cubic and quartic terms, and those terms are the gauge field's self-coupling. Nothing was added: the self-coupling is the square of a curvature that is itself nonlinear, and that nonlinearity is the statement that the gauge group is non-abelian.
+Why the commutator term makes the theory interacting. In the abelian case $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$ is linear in the potential and the action is quadratic. Here the commutator makes $F$ quadratic in $A$, so the action contains cubic and quartic terms, and those terms are the gauge field's self-coupling. Nothing was added: the self-coupling is the square of a curvature that is itself nonlinear, and that nonlinearity is the statement that the gauge group is non-abelian.
 
 The components. Expanding in generators gives
 
 $$
-\mathcal{L}=-\frac14\sum_{a,\mu,\nu}F_{a,\mu\nu}F_{a,\mu\nu},
+\mathcal{L}=-\frac14\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath},
 \qquad
-F_{a,\mu\nu}=\partial_\mu A_{a,\nu}-\partial_\nu A_{a,\mu}+g\sum_{b,c}\varepsilon_{abc}A_{b,\mu} A_{c,\nu} ,
+F_{a,\imath\jmath}=\partial_{\imath} A_{a,\jmath}-\partial_{\jmath} A_{a,\imath}+g\sum_{b,c}\varepsilon_{abc}A_{b,\imath} A_{c,\jmath} ,
 $$
 
-which is the standard form, with $g$ absorbed into the normalization of $A_{a,\mu}$. The two forms are the same action; the element form makes the invariance one line and the component form makes the vertices explicit.
+which is the standard form, with $g$ absorbed into the normalization of $A_{a,\imath}$. The two forms are the same action; the element form makes the invariance one line and the component form makes the vertices explicit.
 
 The pairing. The pairing is the matrix trace, and it is not the informational reduction. $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on $\mathbb{B}\cong M_2(\mathbb{C})$ is a bilinear form invariant under $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{-1}$, $\tilde Q_2\mapsto\tilde Q\tilde Q_2\tilde Q^{-1}$; the corpus's reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a different functional, and it is not invariant under that pair of transformations.
 
 Why the difference matters. If the action used the reduction, its density would change under a gauge transformation and the theory would not be a gauge theory. The action works because of the trace's cyclicity, and the reduction does not have it. The two agree only in special cases — when one of the factors is a scalar — and the field strength is not a scalar.
 
-The reality of the trace. For anti-Hermitian $F_{\mu\nu}$, $\mathrm{Tr}(F_{\mu\nu}F_{\mu\nu})$ is real and non-positive, so $-\tfrac12\mathrm{Tr}(FF)$ is real and non-negative. The reality follows from the anti-Hermiticity and not from an extra condition, and the positivity is what makes the energy bounded below.
+The reality of the trace. For anti-Hermitian $F_{\imath\jmath}$, $\mathrm{Tr}(F_{\imath\jmath}F_{\imath\jmath})$ is real and non-positive, so $-\tfrac12\mathrm{Tr}(FF)$ is real and non-negative. The reality follows from the anti-Hermiticity and not from an extra condition, and the positivity is what makes the energy bounded below.
 
-The type of the coefficient. One dimensionless coupling, and its place is in the commutator. With the generators normalized as above the coefficient of the action is $\tfrac12$ and the coupling $g$ sits in $F_{\mu\nu}$'s commutator term. Rescaling $A_\mu\to A_\mu/g$ moves $g$ into the action's overall coefficient as $1/g^2$, and the two placements are the same theory.
+The type of the coefficient. One dimensionless coupling, and its place is in the commutator. With the generators normalized as above the coefficient of the action is $\tfrac12$ and the coupling $g$ sits in $F_{\imath\jmath}$'s commutator term. Rescaling $A_{\imath}\to A_{\imath}/g$ moves $g$ into the action's overall coefficient as $1/g^2$, and the two placements are the same theory.
 
 Why the coupling cannot be removed. In the abelian case the coupling multiplies the whole action and cancels from the equation; here it does not, because the commutator term has one power of $g$ and the derivative term has none. The ratio of the two is physical, and it is the coupling. That is the sharpest structural difference between the abelian and non-abelian cases, and it is why the non-abelian theory has a running coupling and the abelian one has a free one.
 
-The selection rule. The selection rule is local $\mathrm{SU}(2)$ invariance and dimension four, and they leave exactly one term. The invariant must be built from $F_{\mu\nu}$ alone, must be a scalar under the trace, and must have dimension four. The square is the only candidate, and its coefficient is fixed by the normalization.
+The selection rule. The selection rule is local $\mathrm{SU}(2)$ invariance and dimension four, and they leave exactly one term. The invariant must be built from $F_{\imath\jmath}$ alone, must be a scalar under the trace, and must have dimension four. The square is the only candidate, and its coefficient is fixed by the normalization.
 
 **What reality does not buy. Reality does not buy $\mathrm{SU}(3)$, asymptotic freedom, or a mass gap.** Three things the reality of the action does not supply:
 
@@ -96,7 +96,7 @@ The selection rule. The selection rule is local $\mathrm{SU}(2)$ invariance and 
 
 The element setting. The action written as $-\tfrac12\mathrm{Tr}(FF)$ with $F$ an element of $\mathfrak{su}(2)\subset\mathbb{B}$. The invariance is one line, and the trace-versus-pairing distinction is visible.
 
-The component setting. The action written as $-\tfrac14\sum_aF_{a,\mu\nu}F_{a,\mu\nu}$ with the structure constants explicit. The vertices are visible, and the coupling's place in the commutator is visible.
+The component setting. The action written as $-\tfrac14\sum_aF_{a,\imath\jmath}F_{a,\imath\jmath}$ with the structure constants explicit. The vertices are visible, and the coupling's place in the commutator is visible.
 
 Why the two settings are not a choice of notation. They differ in what they display and in what they hide. The element form makes the gauge invariance obvious and the vertices obscure; the component form does the reverse. A reader who knows only one has a partial view of the same object, and the corpus uses both deliberately.
 
@@ -104,10 +104,10 @@ What the comparison shows. The passage between the two is the passage between th
 
 ## The Variation: The Yang–Mills Equation from the Curvature's Square
 
-The variation. Vary $A_\mu\mapsto A_\mu+\delta A_\mu$ with $\delta A_\mu$ in $\mathfrak{su}(2)$ and vanishing at the boundary. The curvature's variation is the covariant derivative of the variation,
+The variation. Vary $A_{\imath}\mapsto A_{\imath}+\delta A_{\imath}$ with $\delta A_{\imath}$ in $\mathfrak{su}(2)$ and vanishing at the boundary. The curvature's variation is the covariant derivative of the variation,
 
 $$
-\delta F_{\mu\nu}=D_\mu\delta A_\nu-D_\nu\delta A_\mu ,
+\delta F_{\imath\jmath}=D_{\imath}\delta A_{\jmath}-D_{\jmath}\delta A_{\imath} ,
 $$
 
 which is the statement that the curvature is a tensor and its variation is a tensor.
@@ -115,21 +115,21 @@ which is the statement that the curvature is a tensor and its variation is a ten
 The variation of the action. Substituting and integrating by parts,
 
 $$
-\delta S=-\int d^4r\;\mathrm{Tr}\Bigl(\sum_{\mu,\nu}\delta F_{\mu\nu}F_{\mu\nu}\Bigr)
-=2\int d^4r\;\mathrm{Tr}\Bigl(\sum_\mu\delta A_\mu\,D_\nu F_{\mu\nu}\Bigr),
+\delta S=-\int d^4r\;\mathrm{Tr}\Bigl(\sum_{\imath,\jmath}\delta F_{\imath\jmath}F_{\imath\jmath}\Bigr)
+=2\int d^4r\;\mathrm{Tr}\Bigl(\sum_{\imath}\delta A_{\imath}\,D_{\jmath} F_{\imath\jmath}\Bigr),
 $$
 
-where the antisymmetry of $F$ and the cyclicity of the trace give the factor two, and the boundary term vanishes because $\delta A_\mu$ does. Stationarity for every $\delta A_\mu$ gives
+where the antisymmetry of $F$ and the cyclicity of the trace give the factor two, and the boundary term vanishes because $\delta A_{\imath}$ does. Stationarity for every $\delta A_{\imath}$ gives
 
 $$
-\boxed{\;D_\mu F_{\mu\nu}=0\;}
+\boxed{\;D_{\imath} F_{\imath\jmath}=0\;}
 $$
 
 which is the parent's equation. The covariant derivative in it is the same object that appeared in the curvature's variation, and that coincidence is the statement that the equation is gauge covariant.
 
-Why the equation is not gauge invariant and the action is. $F_{\mu\nu}$ transforms homogeneously, so $D_\mu F_{\mu\nu}$ does too, and the equation is covariant; the action is invariant because the trace is cyclic. The difference between covariance and invariance is the difference between the field strength's transformation and the trace's, and both are needed: the action must be invariant to be a number, and the equation must be covariant to be consistent.
+Why the equation is not gauge invariant and the action is. $F_{\imath\jmath}$ transforms homogeneously, so $D_{\imath} F_{\imath\jmath}$ does too, and the equation is covariant; the action is invariant because the trace is cyclic. The difference between covariance and invariance is the difference between the field strength's transformation and the trace's, and both are needed: the action must be invariant to be a number, and the equation must be covariant to be consistent.
 
-**The Bianchi identity, and why it is not the equation.** $D_\lambda F_{\mu\nu}+D_\mu F_{\nu\lambda}+D_\nu F_{\lambda\mu}=0$ holds identically for any $A_\mu$, because the curvature is a commutator. It is not the equation of motion; it is the integrability condition, and the two are related as the Jacobi identity is related to the structure constants. The equation is the statement that the theory is on shell; the identity is the statement that the curvature exists.
+**The Bianchi identity, and why it is not the equation.** $D_\lambda F_{\imath\jmath}+D_{\imath} F_{\jmath\lambda}+D_{\jmath} F_{\lambda\imath}=0$ holds identically for any $A_{\imath}$, because the curvature is a commutator. It is not the equation of motion; it is the integrability condition, and the two are related as the Jacobi identity is related to the structure constants. The equation is the statement that the theory is on shell; the identity is the statement that the curvature exists.
 
 ## The Constraints the Action Imposes: Gauss's Law and Two Polarizations
 
@@ -139,7 +139,7 @@ $$
 D_j F_{j0}=0 ,
 $$
 
-the non-abelian Gauss law, which is first class because the gauge symmetry is unbroken. It removes one component of $A_\mu$ per generator, and the residual gauge freedom removes another, leaving two physical polarizations per generator.
+the non-abelian Gauss law, which is first class because the gauge symmetry is unbroken. It removes one component of $A_{\imath}$ per generator, and the residual gauge freedom removes another, leaving two physical polarizations per generator.
 
 The count. Four components per generator, minus two, gives two; times three generators gives six physical modes for the $\mathrm{SU}(2)$ field. The counting is the same as in the abelian case per generator, and the difference is that the constraint is now non-linear in the potential.
 
@@ -162,16 +162,16 @@ What the structure predicts. That the non-abelian sector's gauge invariance is e
 The current. The action's invariance under the global $\mathrm{SU}(2)$ gives the current
 
 $$
-j_{a,\mu}=\sum_{b,c}\varepsilon_{abc}F_{b,\mu\nu}A_{c,\nu} ,
+j_{a,\imath}=\sum_{b,c}\varepsilon_{abc}F_{b,\imath\jmath}A_{c,\jmath} ,
 $$
 
-which is the standard non-abelian current. It is conserved on shell, $D_\mu j_{a,\mu}=0$, and its conservation is the equation of motion contracted with the structure constants.
+which is the standard non-abelian current. It is conserved on shell, $D_{\imath} j_{a,\imath}=0$, and its conservation is the equation of motion contracted with the structure constants.
 
 Why the current carries the field. The current is bilinear in the gauge field and contains $A$ explicitly, not only $F$. That is the statement that the gauge field carries the charge it couples to, and it is the difference from the abelian current, which contains only $F$.
 
-Why the conservation is covariant and not ordinary. $\partial_\mu j_{a,\mu}=0$ fails; $D_\mu j_{a,\mu}=0$ holds. The ordinary divergence differs from the covariant one by a term proportional to the connection, and that term is the statement that the current is not gauge invariant by itself.
+Why the conservation is covariant and not ordinary. $\partial_{\imath} j_{a,\imath}=0$ fails; $D_{\imath} j_{a,\imath}=0$ holds. The ordinary divergence differs from the covariant one by a term proportional to the connection, and that term is the statement that the current is not gauge invariant by itself.
 
-Energy–momentum. Translation invariance gives $T_{\mu\nu}=\mathrm{Tr}(F_{\mu\lambda}F_{\nu\lambda})-\tfrac14g_{\mu\nu}\mathrm{Tr}(F^2)$-type expression, symmetric and traceless at the classical level. The tracelessness is the classical scale invariance, and its quantum violation is the beta function.
+Energy–momentum. Translation invariance gives $T_{\imath\jmath}=\mathrm{Tr}(F_{\imath\lambda}F_{\jmath\lambda})-\tfrac14g_{\imath\jmath}\mathrm{Tr}(F^2)$-type expression, symmetric and traceless at the classical level. The tracelessness is the classical scale invariance, and its quantum violation is the beta function.
 
 **What there is not.** No topological current in the classical action — the $\theta$ term is a separate total derivative — and no central phase.
 
@@ -197,7 +197,7 @@ Is the trace the only pairing that works? For the action's invariance, yes at th
 
 ## Summary
 
-The action. $S_{\mathrm{YM}}=-\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ with $F$ the $\mathfrak{su}(2)$-valued curvature. The variation gives $D_\mu F_{\mu\nu}=0$; the density is invariant because the matrix trace is cyclic.
+The action. $S_{\mathrm{YM}}=-\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ with $F$ the $\mathfrak{su}(2)$-valued curvature. The variation gives $D_{\imath} F_{\imath\jmath}=0$; the density is invariant because the matrix trace is cyclic.
 
 The three findings. The trace is the matrix trace and not the corpus's informational reduction, and using the reduction would break the invariance. The coupling survives in the equation because the commutator carries one power of it, which is why the non-abelian coupling runs. The construction stops at the algebra's $\mathrm{U}(2)$, so $\mathrm{SU}(2)$ is exact and $\mathrm{SU}(3)$ is not reachable.
 
@@ -207,13 +207,13 @@ The three findings. The trace is the matrix trace and not the corpus's informati
 
 | Symbol | Meaning |
 |---|---|
-| $A_\mu=A_{a,\mu} T_a$ | $\mathfrak{su}(2)$-valued connection |
-| $F_{\mu\nu}$ | curvature, $\partial_\mu A_\nu-\partial_\nu A_\mu+[A_\mu,A_\nu]$ |
+| $A_{\imath}=A_{a,\imath} T_a$ | $\mathfrak{su}(2)$-valued connection |
+| $F_{\imath\jmath}$ | curvature, $\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}+[A_{\imath},A_{\jmath}]$ |
 | $\mathrm{Tr}$ | matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $2\,\mathrm{Sc}(\cdot)$ | informational reduction, not used in the action |
 | $T_a$ | anti-Hermitian generators, $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$ |
 | $g$ | coupling, in the commutator's normalization |
-| $j_{a,\mu}$ | non-abelian current |
+| $j_{a,\imath}$ | non-abelian current |
 
 ## Further Reading
 

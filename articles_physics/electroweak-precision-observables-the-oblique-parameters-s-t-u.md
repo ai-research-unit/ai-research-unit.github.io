@@ -45,25 +45,25 @@ $\rho$ appears elsewhere as the tree-level number $1$ and as the custodial invar
 The one-particle-irreducible two-point function of two gauge fields, in momentum space, carries two Lorentz indices and is written
 
 $$
-i\Pi_{VV',\mu\nu}(q)=i\left(\delta_{\mu\nu}-\frac{q_\mu q_\nu}{q^2}\right)\Pi_{VV'}(q^2)+\text{(terms proportional to }q_\mu\text{ or }q_\nu\text{)} .
+i\Pi_{VV',\imath\jmath}(q)=i\left(\delta_{\imath\jmath}-\frac{q_{\imath} q_{\jmath}}{q^2}\right)\Pi_{VV'}(q^2)+\text{(terms proportional to }q_{\imath}\text{ or }q_{\jmath}\text{)} .
 $$
 
 The second piece never contributes to a physical amplitude: a conserved external current annihilates it. What matters is the transverse function $\Pi_{VV'}(q^2)$.
 
-For the photon the transverse structure is forced. Electromagnetic gauge invariance requires $\sum_\mu q_\mu\Pi_{\gamma\gamma,\mu\nu}=0$. With the projectors
+For the photon the transverse structure is forced. Electromagnetic gauge invariance requires $\sum_{\imath} q_{\imath}\Pi_{\gamma\gamma,\imath\jmath}=0$. With the projectors
 
 $$
-P_{\mu\nu}=\delta_{\mu\nu}+\frac{q_\mu q_\nu}{\Pi} ,
+P_{\imath\jmath}=\delta_{\imath\jmath}+\frac{q_{\imath} q_{\jmath}}{\Pi} ,
 \qquad
-L_{\mu\nu}=-\frac{q_\mu q_\nu}{\Pi} ,
+L_{\imath\jmath}=-\frac{q_{\imath} q_{\jmath}}{\Pi} ,
 \qquad
-\Pi\equiv-\sum_\mu q_\mu q_\mu ,
+\Pi\equiv-\sum_{\imath} q_{\imath} q_{\imath} ,
 $$
 
-the only symmetric tensor built from $\delta$ and $q$ that is annihilated by $q_\mu$ is $P_{\mu\nu}$, since $\sum_\mu q_\mu P_{\mu\nu}=0$ and $\sum_\mu q_\mu L_{\mu\nu}=-q_\nu$. So
+the only symmetric tensor built from $\delta$ and $q$ that is annihilated by $q_{\imath}$ is $P_{\imath\jmath}$, since $\sum_{\imath} q_{\imath} P_{\imath\jmath}=0$ and $\sum_{\imath} q_{\imath} L_{\imath\jmath}=-q_{\jmath}$. So
 
 $$
-\Pi_{\gamma\gamma,\mu\nu}(q)=P_{\mu\nu}\,\Pi_{\gamma\gamma}(q^2) ,
+\Pi_{\gamma\gamma,\imath\jmath}(q)=P_{\imath\jmath}\,\Pi_{\gamma\gamma}(q^2) ,
 $$
 
 and the longitudinal projector is absent identically. "The photon self-energy is transverse" and "the longitudinal projector is invisible to a conserved current" are the same statement, and both are the Ward identity.
@@ -330,8 +330,8 @@ The framework supplies the transversality of the self-energy through the gauge-f
 |---|---|
 | $\Pi_{VV'}(q^2)$ | Transverse part of the $VV'$ self-energy |
 | $\Pi'_{VV'}(0)$ | Its derivative in $q^2$ at zero momentum |
-| $P_{\mu\nu}$, $L_{\mu\nu}$ | The transverse and longitudinal projectors |
-| $\Pi$ | $-\sum_\mu q_\mu q_\mu$, the positive momentum invariant |
+| $P_{\imath\jmath}$, $L_{\imath\jmath}$ | The transverse and longitudinal projectors |
+| $\Pi$ | $-\sum_{\imath} q_{\imath} q_{\imath}$, the positive momentum invariant |
 | $s_W$, $c_W$ | $\sin\theta_W$, $\cos\theta_W$ |
 | $\alpha$ | $1/137.036$ inside $S$, $T$ and $U$ — the definitions' normalisation; $\alpha(M_Z)=1/127.95$ elsewhere in the corpus |
 | $\rho$ | $M_W^2/(M_Z^2c_W^2)$, equal to $1+\alpha T$ at leading order |

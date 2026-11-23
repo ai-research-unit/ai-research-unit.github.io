@@ -19,7 +19,7 @@ The article runs in eight steps: the two operations, the identity and its four c
 Write a general element as a complex scalar times the identity plus a complex three-vector along the quaternion units,
 
 $$
-\tilde Q=Q_t\,e_t+Q_x\,\vec e_x+Q_y\,\vec e_y+Q_z\,\vec e_z,\qquad Q_\mu\in\mathbb{C},
+\tilde Q=Q_t\,e_t+Q_x\,\vec e_x+Q_y\,\vec e_y+Q_z\,\vec e_z,\qquad Q_{\imath}\in\mathbb{C},
 $$
 
 with $e_t=1$ and $\vec e_\eta^2=-e_t$. The algebra attaches two numbers to it. The **scalar part** is $Q_t$, and twice it is the sum of the two eigenvalues. The **quaternionic norm** is the product with the quaternion conjugate $\tilde Q^\natural=Q_t e_t-\vec Q$:

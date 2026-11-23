@@ -12,7 +12,7 @@ Four results are established.
 
 - **The field equation in the centre.** The classical action
 $$
-S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\,\xi\right]d^4r
+S=\int\left[-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\,\xi\right]d^4r
 $$
 has the Euler–Lagrange equation $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ and range $\frac{h}{2\pi mc}$. Here $\frac{h}{2\pi mc}$ is the mass length.
 - **The static central solution.** A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-r/\frac{h}{2\pi mc})/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
@@ -28,7 +28,7 @@ The article closes by identifying why a central scalar field carries no intrinsi
 The centre is the centralizer of the quaternion units,
 
 $$
-\mathbb{B}_{C}=\{\tilde{Q}\in\mathbb{B} : [\tilde{Q},\vec e_\mu]=0,\ \mu=1,2,3\}=\{Q_te_t : Q_t\in\mathbb{C}\}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}.
+\mathbb{B}_{C}=\{\tilde{Q}\in\mathbb{B} : [\tilde{Q},\vec e_{\imath}]=0,\ \mu=1,2,3\}=\{Q_te_t : Q_t\in\mathbb{C}\}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}.
 $$
 
 It is a subalgebra isomorphic to $\mathbb{C}$, it is two-dimensional over $\mathbb{R}$, and it meets the two sectors in one real direction each:
@@ -68,7 +68,7 @@ The classical action of a real central scalar field coupled to a prescribed sour
 
 $$
 S=\int\mathcal{L}\,d^4r, \qquad
-\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\,\xi,
+\mathcal{L}=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\,\xi,
 \qquad d^4r=c\,dr'_t\,dr_x\,dr_y\,dr_z .
 $$
 
@@ -79,7 +79,7 @@ The first two terms are the standard kinetic and mass terms of a relativistic sc
 The Euler–Lagrange equation for the single component $\xi$ is
 
 $$
-\frac{\partial\mathcal{L}}{\partial\xi}-\partial/\partial R_\mu\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\xi)}=0
+\frac{\partial\mathcal{L}}{\partial\xi}-\partial/\partial R_{\imath}\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_{\imath}\,\xi)}=0
 \quad\Longrightarrow\quad
 -(k_m)^{2}\xi+g\rho+\Box_\Phi\xi=0 ,
 $$
@@ -131,8 +131,8 @@ $$
 The operator $\Delta_\Phi-(k_m)^{2}$ is the inverse of a screened Poisson operator, and its Green's function decays exponentially:
 
 $$
-G_\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{\exp(-r/h/(mc))}{8\pi \pi r}, \qquad
-\left(\Delta_\Phi-(\frac{2\pi mc}{h})^{2}\right)G_\mu=-\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
+G_{\imath}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{\exp(-r/h/(mc))}{8\pi \pi r}, \qquad
+\left(\Delta_\Phi-(\frac{2\pi mc}{h})^{2}\right)G_{\imath}=-\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
 $$
 
 with $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$. The scale $\frac{h}{2\pi mc}$ is the **range** of the field: beyond a few $\frac{h}{2\pi mc}$ the field is exponentially suppressed, while in the massless case $\frac{2\pi mc}{h}=0$ the decay is only $1/r$ and the range is infinite. This is the classical reason a massive scalar exchange produces a short-range force and a massless one a long-range force, and it is why the inverse-square law is singled out by the massless central scalar.
@@ -144,7 +144,7 @@ with $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$. The scale $\frac{h}{2\pi m
 Let the source be a point of strength $Ϙ$ at the origin, $\rho(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=Ϙ\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$. The static field is
 
 $$
-\boxed{\ \xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=gQ\,G_\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{gQ\,\exp(-r/h/(mc))}{8\pi \pi r}\ },
+\boxed{\ \xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=gQ\,G_{\imath}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{gQ\,\exp(-r/h/(mc))}{8\pi \pi r}\ },
 \qquad\text{that is}\qquad
 \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{gQ\,\exp(-r/h/(mc))}{8\pi \pi r}\,e_t ,
 $$
@@ -183,7 +183,7 @@ $$
 T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\tfrac12(\vec\nabla_\Phi\xi)^2+\tfrac12(k_m)^{2}\xi^2>0 ,
 $$
 
-positive for every field configuration, and its conservation is the statement $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial x_\mu=0$ on shell, in the $\mathbb{B}_{\Phi}$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
+positive for every field configuration, and its conservation is the statement $\sum_{\imath}\varepsilon_{\imath}\,\partial T_{\imath\jmath}/\partial x_{\imath}=0$ on shell, in the $\mathbb{B}_{\Phi}$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
 
 ### The Energy of the Static Field
 
@@ -261,7 +261,7 @@ which acts on the single complex component by multiplication. Because $i$ is cen
 The complex Lagrangian
 
 $$
-\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}|\xi|^2
+\mathcal{L}=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi^*\,\partial/\partial R_{\imath}\,\xi-\tfrac12(k_m)^{2}|\xi|^2
 $$
 
 is invariant under the central phase, and Noether's theorem gives the conserved current
@@ -274,7 +274,7 @@ $$
 
 whose conservation was checked on a superposition of two on-shell plane waves of different momenta. The time component $j_t$ is the charge density and its integral is the charge; the spatial components are the current. The current vanishes identically for a real field, which is the classical statement that a real scalar is its own antiparticle and carries no charge.
 
-That the current's normalization is a convention, while its conservation is not, is worth stating: any multiple of $j_\nu$ is conserved, and the unit of charge fixes the multiple. What the framework supplies here is not the normalization but the identification of the symmetry with the algebra's central phase.
+That the current's normalization is a convention, while its conservation is not, is worth stating: any multiple of $j_{\jmath}$ is conserved, and the unit of charge fixes the multiple. What the framework supplies here is not the normalization but the identification of the symmetry with the algebra's central phase.
 
 ## Why There Is No Intrinsic Magnetism
 
@@ -337,7 +337,7 @@ $$
 a single complex scalar component. Because it is central it commutes with the biquaternionic gradient and with every rotation, so it is a Lorentz scalar and a rotational scalar, and its classical action
 
 $$
-S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(\frac{2\pi mc}{h})^{2}\xi^2+g\rho\,\xi\right]d^4r,
+S=\int\left[-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(\frac{2\pi mc}{h})^{2}\xi^2+g\rho\,\xi\right]d^4r,
 \qquad \frac{h}{2\pi mc},
 $$
 
@@ -375,10 +375,10 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $\xi_1,\xi_2$ | Real and imaginary parts of $\xi$ |
 | $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
 | $\frac{h}{2\pi mc}$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $k_m$ is the inverse range, and classically only $\frac{h}{2\pi mc}$ matters |
-| $\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\xi$ | Real scalar Lagrangian |
+| $\mathcal{L}=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\xi$ | Real scalar Lagrangian |
 | $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=-g\rho e_t$ | Field equation with source |
 | $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ | Dispersion relation of the free field |
-| $G_{\frac{h}{2\pi mc}}=\exp(-r/\frac{h}{2\pi mc})/(4\pi r)$ | Screened Green's function; $(\Delta_\Phi-(k_m)^{2})G_\mu=-\delta^{(3)}$ |
+| $G_{\frac{h}{2\pi mc}}=\exp(-r/\frac{h}{2\pi mc})/(4\pi r)$ | Screened Green's function; $(\Delta_\Phi-(k_m)^{2})G_{\imath}=-\delta^{(3)}$ |
 | $Ϙ,\rho,g,g_{\mathrm t}$ | Source strength, source density, field coupling, test coupling |
 | $\tilde{Ξ}=gQ\exp(-r/\frac{h}{2\pi mc})/(4\pi r)\,e_t$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $\frac{2\pi mc}{h}=0$ |
 | $\vec\beta$, $R$, $r'_{\mathrm{ret},t}$ | Source velocity over $c$, retarded distance, retarded time |

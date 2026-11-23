@@ -102,7 +102,7 @@ with $T_{3}=T_{3L}+T_{3R}$ the total third component of weak isospin. The left-h
 
 | state | $T_{3L}$ | $T_{3R}$ | $B-L$ | $Q$ |
 |---|---|---|---|---|
-| $\nu_L$ | $+\tfrac12$ | $0$ | $-1$ | $0$ |
+| ${\jmath}_L$ | $+\tfrac12$ | $0$ | $-1$ | $0$ |
 | $e_L$ | $-\tfrac12$ | $0$ | $-1$ | $-1$ |
 | $u_L$ | $+\tfrac12$ | $0$ | $+\tfrac13$ | $+\tfrac23$ |
 | $d_L$ | $-\tfrac12$ | $0$ | $+\tfrac13$ | $-\tfrac13$ |

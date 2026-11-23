@@ -68,7 +68,7 @@ The pure state has no entropy. The condensate's current vanishes, the second law
 
 The temperature is a length and not a frequency. $\beta=mc/(k_mk_BT)$ with $c\beta=mc^{2}/(k_mk_BT)$; the corpus never writes the inverse temperature as the reciprocal of a frequency, and the identity with that reciprocal is the special case $k_m=\frac{2\pi mc}{h}$ — which is the statement that the field is on its shell, not a definition of $\beta$.
 
-The flow is an element with a low index. $\tilde V_\Phi=\tilde P_\Phi/m$, components $v_{\Phi,\mu}$ only where a component is unavoidable. The metric is $\delta_{\mu\nu}$ and the index labels a direction and not a tensor slot, which is why no display in the category raises one.
+The flow is an element with a low index. $\tilde V_\Phi=\tilde P_\Phi/m$, components $v_{\Phi,\imath}$ only where a component is unavoidable. The metric is $\delta_{\imath\jmath}$ and the index labels a direction and not a tensor slot, which is why no display in the category raises one.
 
 Five identifications, one declaration, one sign, one length. That is what the framework adds to the standard theory — the flow identifications among them made in the hydrodynamics block, the thermal ones here — and the list is the ledger's answer to the question the category was built to ask.
 
@@ -78,9 +78,9 @@ Five identifications, one declaration, one sign, one length. That is what the fr
 
 ### Article 6: the partition function in a moving frame
 
-Transcribed: that $Z$ is a trace and that the thermal state is specified by a four-vector. The article's thermal element is $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma(ie_t+\vec\beta_{\mathrm{vel}})$ with norm $-\beta^{2}$, and the exponent is the contraction $-\beta_{\Phi,\nu}\frac{2\pi p_{\Phi,\nu}}{h}$, which is $\beta k_m$ and is independent of $\gamma$ and of $\vec v$.
+Transcribed: that $Z$ is a trace and that the thermal state is specified by a four-vector. The article's thermal element is $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma(ie_t+\vec\beta_{\mathrm{vel}})$ with norm $-\beta^{2}$, and the exponent is the contraction $-\beta_{\Phi,\jmath}\frac{2\pi p_{\Phi,\jmath}}{h}$, which is $\beta k_m$ and is independent of $\gamma$ and of $\vec v$.
 
-Added: the statement that the frame dependence is in the element and not in the trace. $Z(\beta,\vec\beta_{\mathrm{vel}})=Z(\beta,\vec 0)$, so the moving frame has no partition function of its own; the observed period is $\beta_{\mathrm{obs}}=\gamma\beta$ and the observed temperature $T_{\mathrm{obs}}=T/\gamma$, with $\beta_{\mathrm{obs}}T_{\mathrm{obs}}$ constant to twelve decimal places at three velocities. Added: the Matsubara condition tilts — periodicity along $\tilde\beta_\Phi$, with the invariant statement $k_{\Phi,\nu}\beta_{\Phi,\nu}=2\pi n$ and not the spacing.
+Added: the statement that the frame dependence is in the element and not in the trace. $Z(\beta,\vec\beta_{\mathrm{vel}})=Z(\beta,\vec 0)$, so the moving frame has no partition function of its own; the observed period is $\beta_{\mathrm{obs}}=\gamma\beta$ and the observed temperature $T_{\mathrm{obs}}=T/\gamma$, with $\beta_{\mathrm{obs}}T_{\mathrm{obs}}$ constant to twelve decimal places at three velocities. Added: the Matsubara condition tilts — periodicity along $\tilde\beta_\Phi$, with the invariant statement $k_{\Phi,\jmath}\beta_{\Phi,\jmath}=2\pi n$ and not the spacing.
 
 The article's closing sentence says so.
 
@@ -94,7 +94,7 @@ Not added: a curved-spacetime extension of the algebra. The article says plainly
 
 ### Article 14: covariant local equilibrium and Tolman temperature
 
-Transcribed: the rigidity condition, $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0$, written on the velocity's components on the pattern of $k_{\Phi,\mu}$, with its three consequences — constant Lorentz factor in time, no expansion or shear in the current, acceleration locked to the rapidity gradient.
+Transcribed: the rigidity condition, $\partial_{\imath} v_{\Phi,\jmath}+\partial_{\jmath} v_{\Phi,\imath}=0$, written on the velocity's components on the pattern of $k_{\Phi,\imath}$, with its three consequences — constant Lorentz factor in time, no expansion or shear in the current, acceleration locked to the rapidity gradient.
 
 Added: the check that the corpus's pointwise temperature satisfies it, and the quotation of Tolman's law from [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) rather than its re-derivation. Added: the answer to whether a local temperature is available here — yes, as a pointwise period on the field of states, and this article adopts that answer and does not reopen it. The article is the category's gate: articles 15 to 21 stand on it, and it was written before them for that reason.
 
@@ -221,7 +221,7 @@ Ten questions are open, and the ledger names them so that the next article need 
 | $\tilde W_\Xi$ | Wigner element |
 | $Z$ | Partition function |
 | $\tilde K$, $\tilde H_{\Psi,\mathrm{modular}}$ | Modular Hamiltonian |
-| $\omega^{\mathrm{vrt}}_{\mu\nu}$ | Vorticity |
+| $\omega^{\mathrm{vrt}}_{\imath\jmath}$ | Vorticity |
 | $v_{\mathrm{frt}}=\sqrt{D_{\mathrm{th}}/\tau_q}$ | Causal front speed |
 | $\tau_q$, $\tau_\pi$, $\tau_\Pi$ | Relaxation times |
 | $\beta_{\mathrm{vel}}=\vec v/c$, $\gamma$ | Velocity and boost factor |

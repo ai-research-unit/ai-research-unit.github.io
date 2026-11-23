@@ -236,11 +236,11 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $m=k_m$ | Scalar mass parameter, inverse-length units |
 | $\tilde m_{\mathrm{fld}}$ | Einstein–Mayer mass biquaternion |
 | $\tilde Q_3$ | Petiau spin-0 field, closing the system |
-| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; $N=0$ defines the singular elements |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\imath} Q_{\imath}^2$ | Biquaternion norm; $N=0$ defines the singular elements |
 | $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ | Hermitian conjugation (the source's biconjugation) |
 | $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*},\ \tilde m_{\mathrm{fld}}^{*}\tilde m_{\mathrm{fld}}$ | Mass-squared operators of $\tilde Q_1$ and $\tilde Q_2$ |
 | $\det\mathsf{M}_2(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})=|\langle\tilde m_{\mathrm{fld}}\rangle_{\natural}|^2$ | Determinant identity; vanishing forces a massless mode |
-| $\sigma=\tfrac12(e_t+i\vec u_\nu)$ | Idempotent (nullquat), $\sigma^2=\sigma$, $\langle \sigma\rangle_{\natural}=0$ |
+| $\sigma=\tfrac12(e_t+i\vec u_{\jmath})$ | Idempotent (nullquat), $\sigma^2=\sigma$, $\langle \sigma\rangle_{\natural}=0$ |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Hermitian idempotents; mass eigenvalues $1,0$ |
 | $\vec e_x+i\vec e_y$ | Singular mass field; mass-squareds $4,0$ |
 | $\mathrm{sn}(z,k),\ \mathrm{cn}(z,k)$ | Jacobi elliptic functions of modulus $k$ |
@@ -251,7 +251,7 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $\alpha\approx1/137$ | Fine-structure constant |
 | $[\sin(\pi/4)/\sin(\pi/12)]^2=7.464$ | Harmonic-to-equianharmonic moduli ratio (source) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

@@ -19,7 +19,7 @@ The parent's action splits into orders $0$ and $2$ and no term of order $1$. The
 
 What is not new. That the semiclassical limit of a wave equation is a truncation of its action, that the leading-order action is the Hamilton–Jacobi action, and that the transport equation is its phase variation are standard results of semiclassical mechanics. Added here: the identification of the deleted term with one factor of the complete polar decomposition, the exact statement that the phase variation is invariant under the deletion, and the reading of the truncated action as a pressureless fluid's.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with its eight real parameters; the central field $\theta_{\mathrm{rpd}}=0$, $\tilde u_{\mathrm r}=\varepsilon e_{t}$; the operator setting $\tilde H_\Psi=\hat H e_{t}$ with $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/2m+V_{\mathrm{op}}(\vec x)$; $\Delta_\Phi$ the Laplacian of the material sector; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with its eight real parameters; the central field $\theta_{\mathrm{rpd}}=0$, $\tilde u_{\mathrm r}=\varepsilon e_{t}$; the operator setting $\tilde H_\Psi=\hat H e_{t}$ with $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/2m+V_{\mathrm{op}}(\vec x)$; $\Delta_\Phi$ the Laplacian of the material sector; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$.
 ## The Action in the Non-Quantum Limit: The Two Orders
 The parent's action for the central field in the operator setting.
 
@@ -91,7 +91,7 @@ Where the density vanishes the quantum potential diverges, so the truncated theo
 One block is deleted and four are kept, so the truncated theory is the eikonal plus the transport plus the currents. That is the whole of the non-quantum limit of the Schrödinger family, and the article's summary says exactly that in one line.
 
 ## The Variation: Varying the Scale: the Eikonal
-With $\partial L_{\mathrm{cl}}/\partial(\partial_\mu \varrho)=0$ because no term of $L_{\mathrm{cl}}$ carries a derivative of $\varrho$, the Euler–Lagrange equation is algebraic:
+With $\partial L_{\mathrm{cl}}/\partial(\partial_{\imath} \varrho)=0$ because no term of $L_{\mathrm{cl}}$ carries a derivative of $\varrho$, the Euler–Lagrange equation is algebraic:
 
 $$
 -2\varrho\Bigl(\frac{h}{2\pi}\,\dot\theta_{\mathrm{pha}}+\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}+V_{\mathrm{op}}\Bigr)=0 ,
@@ -148,7 +148,7 @@ $$
 
 the transport equation, a conservation law for the density $\varrho^{2}$ carried by the velocity $\vec\nabla_\Phi S/m$.
 
-**This equation is identical on the full action, term for term, and that is the article's sharpest statement.** The deleted term carries no $\theta_{\mathrm{pha}}$, so $\partial L/\partial\theta_{\mathrm{pha}}$ and $\partial L/\partial(\partial_\mu\theta_{\mathrm{pha}})$ are the same on $L$ and on $L_{\mathrm{cl}}$. The transport equation is not an order of an expansion: it is invariant under the deletion, which is the variational form of the companion's statement that the imaginary line survives the limit untouched.
+**This equation is identical on the full action, term for term, and that is the article's sharpest statement.** The deleted term carries no $\theta_{\mathrm{pha}}$, so $\partial L/\partial\theta_{\mathrm{pha}}$ and $\partial L/\partial(\partial_{\imath}\theta_{\mathrm{pha}})$ are the same on $L$ and on $L_{\mathrm{cl}}$. The transport equation is not an order of an expansion: it is invariant under the deletion, which is the variational form of the companion's statement that the imaginary line survives the limit untouched.
 
 Varying the scale returns the constraint, which is the deleted order's equation; varying the phase returns the conservation law, which no order touches. In the equation route the same two statements are a real line and an imaginary line of one complex equation. The variational route makes the pairing a consequence of which variable appears in the deleted term, and that is the whole of its gain.
 

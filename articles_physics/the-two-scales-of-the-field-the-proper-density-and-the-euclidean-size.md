@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The fluid block calls one number the density and never asks what the field's size is. The polar word writes $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and every article of the block reads the scale $\varrho$ as the density, $\rho_{\mathrm{num}}=\varrho^{2}$. The element also has a second number, the Euclidean size $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$, which the algebra supplies without a chart and which no article of the block uses.
+The fluid block calls one number the density and never asks what the field's size is. The polar word writes $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and every article of the block reads the scale $\varrho$ as the density, $\rho_{\mathrm{num}}=\varrho^{2}$. The element also has a second number, the Euclidean size $\langle\tilde\Xi\rangle_{*}=\sum_{\imath}\lvert\Xi_{\imath}\rvert^{2}$, which the algebra supplies without a chart and which no article of the block uses.
 
 The two numbers are not equal, and their ratio is the boost. Off the null cone,
 
@@ -22,9 +22,9 @@ The identities are proved in §*Appendix: The Algebra* from the eight real coord
 
 ## Conventions and Notation
 
-The element. $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^{2}=-e_t$, the scalar $i$ central. The symbol $e_t$ is the algebra's unit, not a time coordinate; $E$ and $t$ are reserved for energy and coordinate time, so no confusion arises.
+The element. $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^{2}=-e_t$, the scalar $i$ central. The symbol $e_t$ is the algebra's unit, not a time coordinate; $E$ and $t$ are reserved for energy and coordinate time, so no confusion arises.
 
-The two norms. $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ is the **quaternionic norm**: complex-valued, multiplicative, vanishing on the zero-divisor cone $\mathcal N$. $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ is the **Euclidean size**, also called the Hermitian norm $H$: real, non-negative, definite. $\mathrm{Sc}\,\tilde Q=Q_t$ is the scalar part and $\vec Q$ the vector part, so $\tilde Q=Q_t+\vec Q$.
+The two norms. $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$ is the **quaternionic norm**: complex-valued, multiplicative, vanishing on the zero-divisor cone $\mathcal N$. $\langle\tilde Q\rangle_{*}=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ is the **Euclidean size**, also called the Hermitian norm $H$: real, non-negative, definite. $\mathrm{Sc}\,\tilde Q=Q_t$ is the scalar part and $\vec Q$ the vector part, so $\tilde Q=Q_t+\vec Q$.
 
 The two cases. An element is **$N$-regular** when $N(\tilde Q)\neq0$, which is exactly when it is invertible; it is $N$-degenerate when $N(\tilde Q)=0$ with $\tilde Q\neq0$, which is a zero divisor [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html). The degenerate set is the null cone $\mathcal N$, one complex equation and therefore two real equations, of real codimension two.
 
@@ -80,13 +80,13 @@ $$
 
 with equality exactly when the four coefficients have a common argument modulo $\pi$, that is when $\tilde Q=\varkappa\tilde R$ with $\varkappa$ a complex unit and $\tilde R$ real.
 
-*Proof.* $\lvert\sum_\mu Q_\mu^{2}\rvert\le\sum_\mu\lvert Q_\mu\rvert^{2}$ is the triangle inequality, since $\lvert Q_\mu^{2}\rvert=\lvert Q_\mu\rvert^{2}$. Equality in the triangle inequality needs the summands to be non-negative real multiples of one another, $Q_\mu^{2}=\varkappa^{2}r_\mu^{2}$ with $\varkappa$ a fixed unit and $r_\mu\ge0$; then $Q_\mu=\varkappa\,\epsilon_\mu r_\mu$ with $\epsilon_\mu=\pm1$, and the signs are absorbed into real coefficients. The full derivation, including the sign bookkeeping, is §*Appendix: The Algebra*, §*The Triangle Inequality*.
+*Proof.* $\lvert\sum_{\imath} Q_{\imath}^{2}\rvert\le\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ is the triangle inequality, since $\lvert Q_{\imath}^{2}\rvert=\lvert Q_{\imath}\rvert^{2}$. Equality in the triangle inequality needs the summands to be non-negative real multiples of one another, $Q_{\imath}^{2}=\varkappa^{2}r_{\imath}^{2}$ with $\varkappa$ a fixed unit and $r_{\imath}\ge0$; then $Q_{\imath}=\varkappa\,\epsilon_{\imath} r_{\imath}$ with $\epsilon_{\imath}=\pm1$, and the signs are absorbed into real coefficients. The full derivation, including the sign bookkeeping, is §*Appendix: The Algebra*, §*The Triangle Inequality*.
 
 So the inequality is the statement that a boost costs Euclidean size at fixed modulus. The word's scale is a modulus and its velocity a direction, and the Euclidean size charges for the direction. That is why the ratio can be read as a kinematic quantity at all: it is not an arbitrary function of eight real numbers, it is the price of the velocity, and §*Transformation Properties* shows that the price transforms as a time component.
 
 ## The Gap Is the Boost
 
-Write the element as two real four-vectors. Put $Q_\mu=a_\mu+ib_\mu$ with $a,b\in\mathbb{R}^{4}$. Then
+Write the element as two real four-vectors. Put $Q_{\imath}=a_{\imath}+ib_{\imath}$ with $a,b\in\mathbb{R}^{4}$. Then
 
 $$
 N(\tilde Q)=\bigl(\lvert a\rvert^{2}-\lvert b\rvert^{2}\bigr)+2i\,a\cdot b,
@@ -149,7 +149,7 @@ $$
 \langle\tilde\Xi'\rangle_{*}=\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi\Bigr),
 $$
 
-which is $\gamma_\phi\bigl(u_{t}+\beta_\phi\,\vec u_{\phi}\cdot\vec u\bigr)$ for the four-velocity $u_{\mu}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$, its temporal component first and all indices low, scaled by $\varrho^{2}$. The two special cases are the memorable ones: for a boost along the flow, $\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\cosh(\theta_{\mathrm{rpd}}+\phi)$, the rapidity adding; for a boost perpendicular to it, $\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}\cosh\phi$, the two Lorentz factors multiplying. *Proof and residuals: §*Appendix: The Algebra*, §*The Boost Composition*.*
+which is $\gamma_\phi\bigl(u_{t}+\beta_\phi\,\vec u_{\phi}\cdot\vec u\bigr)$ for the four-velocity $u_{\imath}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$, its temporal component first and all indices low, scaled by $\varrho^{2}$. The two special cases are the memorable ones: for a boost along the flow, $\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\cosh(\theta_{\mathrm{rpd}}+\phi)$, the rapidity adding; for a boost perpendicular to it, $\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}\cosh\phi$, the two Lorentz factors multiplying. *Proof and residuals: §*Appendix: The Algebra*, §*The Boost Composition*.*
 
 So the ratio is the flow's Lorentz factor and transforms as one. $\langle\tilde\Xi\rangle_{*}/\lvert N\rvert=\cosh\theta_{\mathrm{rpd}}$ is the time component of the four-velocity, and the sentence "the Euclidean size is the coordinate density" is the statement that a coordinate density is a time component. $\lvert N\rvert$ is a scalar of the theory; $\langle\cdot\rangle_{*}$ is not, and the phrase "the field's size" is therefore misleading wherever it appears in the block: the field has no Lorentz-invariant Euclidean size, it has an invariant modulus and a frame-dependent time component.
 
@@ -252,7 +252,7 @@ $$
 N(\tilde A_\Phi)=-m^{2}c^{2},\qquad \varrho=mc=\sqrt{-N(\tilde A_\Phi)},\qquad \langle\tilde A_\Phi\rangle_{*}=m^{2}c^{2}\cosh2\theta_{\mathrm{rpd}},
 $$
 
-so the modulus is the mass and the density is the mass, $\varrho^{2}=m^{2}c^{2}$, while the Euclidean size is the energy squared over $c^{2}$ at that rapidity. **The sign in $\sqrt{-N(\tilde A_\Phi)}$ is what makes $\varrho$ real and positive on the timelike branch**, where the norm is negative [The Spin-One Fluid](the-spin-one-fluid.html); writing $\sqrt{-A^{2}}$ with the corpus's shorthand $A^{2}=\sum_\mu\varepsilon_\mu A_\mu A_\mu$ invites a collision with the area and is not used here. Each middle column is an exact identity for its carrier; the difference between the rows is the action of the boost on that carrier, and not a hierarchy of accuracy.
+so the modulus is the mass and the density is the mass, $\varrho^{2}=m^{2}c^{2}$, while the Euclidean size is the energy squared over $c^{2}$ at that rapidity. **The sign in $\sqrt{-N(\tilde A_\Phi)}$ is what makes $\varrho$ real and positive on the timelike branch**, where the norm is negative [The Spin-One Fluid](the-spin-one-fluid.html); writing $\sqrt{-A^{2}}$ with the corpus's shorthand $A^{2}=\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}$ invites a collision with the area and is not used here. Each middle column is an exact identity for its carrier; the difference between the rows is the action of the boost on that carrier, and not a hierarchy of accuracy.
 
 ### The Factor of Two, and the Two Carriers
 
@@ -312,8 +312,8 @@ On the cone the ratio has no value and the pair does. $\rho_{\mathrm{num}}\to0$,
 
 | symbol | meaning |
 | --- | --- |
-| $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, $\sum_\mu Q_\mu^{2}$, complex, multiplicative |
-| $\langle\tilde Q\rangle_{*}$ | the Euclidean size, $\sum_\mu\lvert Q_\mu\rvert^{2}$, the Hermitian norm |
+| $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, $\sum_{\imath} Q_{\imath}^{2}$, complex, multiplicative |
+| $\langle\tilde Q\rangle_{*}$ | the Euclidean size, $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$, the Hermitian norm |
 | $\mathrm{Sc}\,\tilde Q$ | the scalar part $Q_t$ |
 | $\varrho$ | the word's scale, with $\varrho^{2}=\lvert N(\tilde\Xi)\rvert$ |
 | $\theta_{\mathrm{pha}}$ | the central phase of the word |
@@ -333,11 +333,11 @@ On the cone the ratio has no value and the pair does. $\rho_{\mathrm{num}}\to0$,
 
 Claim. $\lvert N(\tilde Q)\rvert\le\langle\tilde Q\rangle_{*}$ for every $\tilde Q$, with equality if and only if $\tilde Q=\varkappa\tilde R$, $\varkappa$ a complex unit and $\tilde R$ real.
 
-*Proof.* With $Q_\mu=r_\mu e^{i\omicron_{\mathrm{pot},\mu}}$ and $r_\mu\ge0$, $N=\sum_\mu r_\mu^{2}e^{2i\omicron_{\mathrm{pot},\mu}}$ and $\langle\cdot\rangle_{*}=\sum_\mu r_\mu^{2}$. The modulus of a sum is at most the sum of the moduli, each modulus being $r_\mu^{2}$. Equality holds exactly when the summands $r_\mu^{2}e^{2i\omicron_{\mathrm{pot},\mu}}$ are non-negative real multiples of one another, so that $2\omicron_{\mathrm{pot},\mu}\equiv2\varkappa_0$ modulo $2\pi$ for a single angle $\varkappa_0$ and every $\mu$ with $r_\mu\neq0$. That is $\omicron_{\mathrm{pot},\mu}\equiv\varkappa_0/2$ modulo $\pi$, so $Q_\mu=\varkappa\,\epsilon_\mu r_\mu$ with $\varkappa=e^{i\varkappa_0/2}$ and $\epsilon_\mu=\pm1$, and the signs are carried by the real coefficients of $\tilde R$. Conversely a real element has all $Q_\mu$ real, its summands $Q_\mu^{2}\ge0$ real non-negative, and equality. The case of a real element is the case of a trivial boost, since $\theta_{\mathrm{rpd}}=0$ exactly when $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ has real coefficients up to the central phase.
+*Proof.* With $Q_{\imath}=r_{\imath} e^{i\omicron_{\mathrm{pot},\imath}}$ and $r_{\imath}\ge0$, $N=\sum_{\imath} r_{\imath}^{2}e^{2i\omicron_{\mathrm{pot},\imath}}$ and $\langle\cdot\rangle_{*}=\sum_{\imath} r_{\imath}^{2}$. The modulus of a sum is at most the sum of the moduli, each modulus being $r_{\imath}^{2}$. Equality holds exactly when the summands $r_{\imath}^{2}e^{2i\omicron_{\mathrm{pot},\imath}}$ are non-negative real multiples of one another, so that $2\omicron_{\mathrm{pot},\imath}\equiv2\varkappa_0$ modulo $2\pi$ for a single angle $\varkappa_0$ and every $\mu$ with $r_{\imath}\neq0$. That is $\omicron_{\mathrm{pot},\imath}\equiv\varkappa_0/2$ modulo $\pi$, so $Q_{\imath}=\varkappa\,\epsilon_{\imath} r_{\imath}$ with $\varkappa=e^{i\varkappa_0/2}$ and $\epsilon_{\imath}=\pm1$, and the signs are carried by the real coefficients of $\tilde R$. Conversely a real element has all $Q_{\imath}$ real, its summands $Q_{\imath}^{2}\ge0$ real non-negative, and equality. The case of a real element is the case of a trivial boost, since $\theta_{\mathrm{rpd}}=0$ exactly when $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ has real coefficients up to the central phase.
 
 ### The Lagrange Identity
 
-Claim. $\langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2}$ with $Q_\mu=a_\mu+ib_\mu$ and
+Claim. $\langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2}$ with $Q_{\imath}=a_{\imath}+ib_{\imath}$ and
 
 $$
 A^{2}=\sum_{j\lt k}\bigl(a_jb_k-a_kb_j\bigr)^{2}=\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2},
@@ -345,7 +345,7 @@ $$
 
 the sum over the six pairs $1\le j\lt k\le 4$.
 
-*Proof.* From $Q_\mu^{2}=a_\mu^{2}-b_\mu^{2}+2ia_\mu b_\mu$,
+*Proof.* From $Q_{\imath}^{2}=a_{\imath}^{2}-b_{\imath}^{2}+2ia_{\imath} b_{\imath}$,
 
 $$
 N=\bigl(\lvert a\rvert^{2}-\lvert b\rvert^{2}\bigr)+2i\,(a\cdot b),
@@ -371,7 +371,7 @@ the sum over the six coordinate planes. Substituting gives the claim. The bracke
 
 Claim. $\langle\tilde\Xi\rangle_{*}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and $\lvert N(\tilde\Xi)\rvert=\varrho^{2}$ for an $N$-regular element.
 
-*Proof.* The Euclidean size is not multiplicative in general — $e_t+i\vec e_x$ and $e_t-i\vec e_x$ each have size $2$ and their product is $0$ — so the factors are handled one at a time. Multiplication by the central phase multiplies every coefficient by a unit complex number and leaves $\sum_\mu\lvert Q_\mu\rvert^{2}$ fixed. Right multiplication by the real unit $\tilde u_{\mathrm r}$ acts on the four complex coefficients by the same real orthogonal $4\times4$ matrix that it induces on $\mathbb{R}^{4}$, and an orthogonal real matrix preserves $\sum_\mu\lvert Q_\mu\rvert^{2}$; the same holds for left multiplication, since the real unit quaternions act orthogonally on both sides. What remains is the boost factor alone, whose two coefficients are $\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $i\sinh\frac{\theta_{\mathrm{rpd}}}{2}u_k$, so
+*Proof.* The Euclidean size is not multiplicative in general — $e_t+i\vec e_x$ and $e_t-i\vec e_x$ each have size $2$ and their product is $0$ — so the factors are handled one at a time. Multiplication by the central phase multiplies every coefficient by a unit complex number and leaves $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ fixed. Right multiplication by the real unit $\tilde u_{\mathrm r}$ acts on the four complex coefficients by the same real orthogonal $4\times4$ matrix that it induces on $\mathbb{R}^{4}$, and an orthogonal real matrix preserves $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$; the same holds for left multiplication, since the real unit quaternions act orthogonally on both sides. What remains is the boost factor alone, whose two coefficients are $\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $i\sinh\frac{\theta_{\mathrm{rpd}}}{2}u_k$, so
 
 $$
 \langle\tilde U_{\Psi,\mathrm b}\rangle_{*}=\cosh^{2}\frac{\theta_{\mathrm{rpd}}}{2}+\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\sum_ku_k^{2}=\cosh^{2}+\sinh^{2}=\cosh\theta_{\mathrm{rpd}} .
@@ -407,7 +407,7 @@ $$
 \frac{\langle\tilde U_{\mathrm b}\tilde\Xi\rangle_{*}}{\varrho^{2}}=(c_hc_\phi+s_hs_\phi\cos\chi)^{2}+s_h^{2}s_\phi^{2}\sin^{2}\chi+\bigl(c_h^{2}s_\phi^{2}+s_h^{2}c_\phi^{2}+2c_hs_hc_\phi s_\phi\cos\chi\bigr).
 $$
 
-Adding the $\cos^{2}\chi$ and $\sin^{2}\chi$ terms, the first and third pieces give $c_h^{2}(c_\phi^{2}+s_\phi^{2})+s_h^{2}(c_\phi^{2}+s_\phi^{2})=(c_h^{2}+s_h^{2})\cosh\phi$, and the two cross terms give $4c_hs_hc_\phi s_\phi\cos\chi$. With $c_h^{2}+s_h^{2}=\cosh\theta_{\mathrm{rpd}}$ and $2c_hs_h=\sinh\theta_{\mathrm{rpd}}$, $2c_\phi s_\phi=\sinh\phi$, the total is $\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi$. That is the time component of $u_{\mu}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$ under a boost of rapidity $\phi$ about $\vec u_{\phi}$, multiplied by $\varrho^{2}$.
+Adding the $\cos^{2}\chi$ and $\sin^{2}\chi$ terms, the first and third pieces give $c_h^{2}(c_\phi^{2}+s_\phi^{2})+s_h^{2}(c_\phi^{2}+s_\phi^{2})=(c_h^{2}+s_h^{2})\cosh\phi$, and the two cross terms give $4c_hs_hc_\phi s_\phi\cos\chi$. With $c_h^{2}+s_h^{2}=\cosh\theta_{\mathrm{rpd}}$ and $2c_hs_h=\sinh\theta_{\mathrm{rpd}}$, $2c_\phi s_\phi=\sinh\phi$, the total is $\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi$. That is the time component of $u_{\imath}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$ under a boost of rapidity $\phi$ about $\vec u_{\phi}$, multiplied by $\varrho^{2}$.
 
 ### The Scalar Part of the Current
 

@@ -99,9 +99,9 @@ $$
 a derived form: $b=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)$, the two chirality states at the axis of the previous section. The element $b$ is Hermitian; it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. That is why the parent's left-multiplied connection arises exactly for a vector-like fermion. The covariant derivative and its curvature carry the same element,
 
 $$
-D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+\frac{2\pi i}{h}A_\mu\,\tilde{Ξ} b,
+D_{\imath}\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_{\imath}}+\frac{2\pi i}{h}A_{\imath}\,\tilde{Ξ} b,
 \qquad
-[D_\mu,D_\nu]\tilde{Ξ}=\frac{2\pi i}{h}F_{\mu\nu}\,\tilde{Ξ} b
+[D_{\imath},D_{\jmath}]\tilde{Ξ}=\frac{2\pi i}{h}F_{\imath\jmath}\,\tilde{Ξ} b
 $$
 
 for commuting potentials.
@@ -191,7 +191,7 @@ Finally, the standing **empirical-contact** gap applies with full force. Nothing
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame basis operators of the body written as letters, and this section is the only place in the article where they appear: every section above is written in basis operators.
 
@@ -223,7 +223,7 @@ $$
 \gamma_\eta^{2}=i^{2}(L_{\mathrm{axf},\vec e_\eta}a)^{2}(R_{\mathrm{axf},\vec e_y})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(\eta=1,2,3).
 $$
 
-The time gamma has one multiplier, and its minus cancels $i^{2}=-1$; the spatial gammas have two, whose two minus signs multiply to $+I_4$ and leave $i^{2}=-1$ standing. The products of distinct gammas anticommute, so the frame obeys $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$.
+The time gamma has one multiplier, and its minus cancels $i^{2}=-1$; the spatial gammas have two, whose two minus signs multiply to $+I_4$ and leave $i^{2}=-1$ standing. The products of distinct gammas anticommute, so the frame obeys $\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4$ with $\varepsilon=(1,-1,-1,-1)$.
 
 The fifth gamma is not a fifth frame vector but their product. The four defining $i$'s contribute $i^{4}=1$ and the basis operators contribute $\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\mathrm{pau},\vec e_z}$, so
 
@@ -247,7 +247,7 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -276,10 +276,10 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ | The algebra's real structure |
 | $\tilde\Pi_{\mathrm{id},\pm}(\vec e_z)$ | The two states at the axis; $\tilde\Pi_{\mathrm{id},+}$ the L state, $\tilde\Pi_{\mathrm{id},-}$ the R state |
 | $b=ϙ_L\tilde\Pi_{\mathrm{id},++}ϙ_R\tilde\Pi_{\mathrm{id},-}=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by $b$ |
-| $D_\mu\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_\mu+\frac{2\pi i}{h}A_\mu\tilde{Ξ} b$ | Covariant derivative of the chiral charge; the curvature is $\frac{2\pi i}{h}F_{\mu\nu}\tilde{Ξ} b$ |
+| $D_{\imath}\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_{\imath}+\frac{2\pi i}{h}A_{\imath}\tilde{Ξ} b$ | Covariant derivative of the chiral charge; the curvature is $\frac{2\pi i}{h}F_{\imath\jmath}\tilde{Ξ} b$ |
 | $\tilde{Ξ} b=0$ | Neutrality constraint; no nonzero solution unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $(i\partial/\partial r'_t+\vec\nabla_\Phi)F-k_{m_n} i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
-| $\gamma_\mu[\mathbb{B}_{\Phi}]$, $\gamma_5$ | The gamma frame of the legacy section; used only in §*The Legacy Pauli Gamma Formulation* |
+| $\gamma_{\imath}[\mathbb{B}_{\Phi}]$, $\gamma_5$ | The gamma frame of the legacy section; used only in §*The Legacy Pauli Gamma Formulation* |
 | $G_N = \sigma\exp(i\theta_{\mathrm{cen}})+\bar{\sigma}\exp(i\theta_{\mathrm{axr}})$, $\sigma=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm{ls}})$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |
 | $m_n$, $\mu_n = -1.9130427\,\mu_N$ | Neutron mass (input) and measured magnetic moment (outside) |

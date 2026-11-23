@@ -159,7 +159,7 @@ $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 =: \Box_\Phi ,
 $$
 
-because the cross terms cancel and the spatial part gives $+\sum_{\mu\in\{x,r_y,r_z\}}\partial^2/\partial R_\mu^2$, the minus sign in $(\tilde\nabla_\Phi)^{\natural}$ combining with $\vec e_\mu^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
+because the cross terms cancel and the spatial part gives $+\sum_{\imath\in\{x,r_y,r_z\}}\partial^2/\partial R_{\imath}^2$, the minus sign in $(\tilde\nabla_\Phi)^{\natural}$ combining with $\vec e_{\imath}^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
 
 Now let $\tilde P_{\Phi}$ be a four-wavevector, meaning an element of $\mathbb{B}_{\Phi}$ written as
 
@@ -180,7 +180,7 @@ $$
 so that
 
 $$
-\Box_\Phi f(s) = \left[(\partial/\partial R_t\,s)^2 + \sum_{\mu\in\{x,r_y,r_z\}}(\partial/\partial R_\mu s)^2\right] \frac{d^2f}{ds^2}(s)
+\Box_\Phi f(s) = \left[(\partial/\partial R_t\,s)^2 + \sum_{\imath\in\{x,r_y,r_z\}}(\partial/\partial R_{\imath} s)^2\right] \frac{d^2f}{ds^2}(s)
 + \bigl(\Box_\Phi s\bigr) \frac{df}{ds}(s)
 = \left[-\frac{\omega^2}{c^2} + \vec k_\Phi^2\right] \frac{d^2f}{ds^2}(s)
 = \langle\tilde P_{\Phi}\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
@@ -275,7 +275,7 @@ The **physical interpretation** of this algebraic boundary is the content of the
 
 4. **The nilpotent family in physics.** The real light cone is entirely of the idempotent type; the nilpotent family requires genuinely complex spatial components. Are there classical configurations — complexified momenta, geometric-optics rays, Regge-type constructions — for which the nilpotent branch of $\mathcal{Z}$ is the physically relevant one?
 
-5. **The cone and the metric levels.** The cone is the zero set of the level-1 identity form on $\mathbb{C}$, whose restriction to the real material slice is the Minkowski interval in the $i r'_t$ coordinate, $Q_t=i q'_t$. A reader moving to the level-3 tetrad metric $g_{\mu\nu}(x)$ must not conflate the three; whether the Clifford translation of the cone adds anything to its algebraic definition is an open question of the series rather than of this article.
+5. **The cone and the metric levels.** The cone is the zero set of the level-1 identity form on $\mathbb{C}$, whose restriction to the real material slice is the Minkowski interval in the $i r'_t$ coordinate, $Q_t=i q'_t$. A reader moving to the level-3 tetrad metric $g_{\imath\jmath}(x)$ must not conflate the three; whether the Clifford translation of the cone adds anything to its algebraic definition is an open question of the series rather than of this article.
 
 The conventions of the construction are those of the following companion articles:
 
@@ -288,7 +288,7 @@ The conventions of the construction are those of the following companion article
 
 ## Summary
 
-The biquaternion norm of the biquaternion algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. Its vanishing set is the zero-divisor set $\mathcal{Z}$, a complex cone of complex dimension three, stratified into a **pure** family ($Q_t = 0$, nilpotent, $\tilde{Q}^2 = 0$) and a **non-pure** family ($Q_t\neq 0$, idempotent multiple, $\tilde{Q}^2 = 2Q_t\tilde{Q}$). On the real material slice $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ the form restricts to
+The biquaternion norm of the biquaternion algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$. Its vanishing set is the zero-divisor set $\mathcal{Z}$, a complex cone of complex dimension three, stratified into a **pure** family ($Q_t = 0$, nilpotent, $\tilde{Q}^2 = 0$) and a **non-pure** family ($Q_t\neq 0$, idempotent multiple, $\tilde{Q}^2 = 2Q_t\tilde{Q}$). On the real material slice $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ the form restricts to
 
 $$
 \langle\tilde R_\Phi\rangle_{\natural} = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2 ,
@@ -304,9 +304,9 @@ The light cone is the set on which elements of the biquaternion algebra cease to
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$ |
+| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
 | $\mathcal{Z} = \{\tilde{Q}\neq0 : \langle\tilde{Q}\rangle_{\natural}=0\}$ | Zero-divisor set: the cone |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}, \mathbb{B}_{H}$ | Division subalgebras: complex scalar line (centre); real quaternions |
@@ -321,7 +321,7 @@ The light cone is the set on which elements of the biquaternion algebra cease to
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Rotor conjugation; preserves the cone |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

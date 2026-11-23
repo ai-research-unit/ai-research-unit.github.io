@@ -46,7 +46,7 @@ in the constant setting, and the same with $V(\vec x)$ in place of $h_t$ in the 
 
 The connection is central, so it multiplies the word and cannot act inside a factor. That is the reason the two identities are so short: a central element passes through $e^{i\theta_{\mathrm{pha}}}$ and through $\varrho$, so its only effect is on the derivative of the exponent, and the derivative of the exponent is the rate. The polar variational companion states the same fact and calls the result the covariant bracket.
 
-The rates are the chart's entire vocabulary for the connection. There are two of them, one temporal and one spatial, and they are the mechanical phase rates: $\frac{h}{2\pi}\kappa_\mu$ is the mechanical momentum's $\mu$-th slot, up to the metric's sign. Everything the connection does in the chart is done to these two objects, and the rest of the article is their consequences.
+The rates are the chart's entire vocabulary for the connection. There are two of them, one temporal and one spatial, and they are the mechanical phase rates: $\frac{h}{2\pi}\kappa_{\imath}$ is the mechanical momentum's $\mu$-th slot, up to the metric's sign. Everything the connection does in the chart is done to these two objects, and the rest of the article is their consequences.
 
 ## The Four Terms and Their Shapes
 

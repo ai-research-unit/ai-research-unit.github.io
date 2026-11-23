@@ -74,7 +74,7 @@ The velocity is the vector part and not the spatial part of a four-vector. This 
 
 ## The Material Derivative Is a Pairing
 
-With the material gradient $\tilde\nabla_\Phi=-i e_t\,\partial_{r'_t}+\vec\nabla_\Phi$ and the general quaternionic bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{1\mu}Q_{2\mu}$, the identity is
+With the material gradient $\tilde\nabla_\Phi=-i e_t\,\partial_{r'_t}+\vec\nabla_\Phi$ and the general quaternionic bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_{\imath} Q_{1\imath}Q_{2\imath}$, the identity is
 
 $$
 \bigl\langle\tilde V_\Phi,\tilde\nabla_\Phi f\bigr\rangle_{\natural}=c\,\partial_{r'_t}f+\vec v\cdot\nabla f
@@ -185,7 +185,7 @@ The complex structure is unused. The temporal slot holds the constant $ic$, so n
 | $\gamma=1/\sqrt{1-\lvert\vec v\rvert^{2}/c^{2}}$ | Lorentz factor |
 | $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ | Current element |
 | $\tilde\nabla_\Phi=-i e_t\partial_{r'_t}+\vec\nabla_\Phi$ | Material gradient |
-| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{1\mu}Q_{2\mu}$ | General quaternionic bilinear form |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_{\imath} Q_{1\imath}Q_{2\imath}$ | General quaternionic bilinear form |
 | $\mathrm{D}_{\mathrm{mat}}=c\partial_{r'_t}+\vec v\cdot\nabla$ | Material derivative |
 | $r'_t=c t'$ | Material time coordinate, a length |
 | $m$ | Mass of one marker |

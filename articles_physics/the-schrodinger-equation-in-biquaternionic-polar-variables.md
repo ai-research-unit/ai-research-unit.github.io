@@ -40,7 +40,7 @@ and it fails on every $N$-degenerate element. The three conditions are one condi
 
 **The condition is the whole of the qualification, and it is weak.** The cone is a set of measure zero and it is not the carrier: a generic element of $\mathbb{B}$ is invertible, and the flow preserves the cone, so a field is invertible at every event or at none (§*The Domain*). Nothing has to be excluded in advance and no carrier has to be declared. The polar word of this equation is therefore a parametrisation of the field itself, with no ideal, no projector and no axis behind it.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces; $\natural$ is quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ is the coefficient of $e_t$. Time is written $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and the parent's $i \frac{h}{2\pi} c\,\partial/\partial r'_t$ is $i \frac{h}{2\pi}\,\partial/\partial t'$; the two forms are used interchangeably and $\frac{h}{2\pi}$ is written explicitly in both.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces; $\natural$ is quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ is the coefficient of $e_t$. Time is written $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and the parent's $i \frac{h}{2\pi} c\,\partial/\partial r'_t$ is $i \frac{h}{2\pi}\,\partial/\partial t'$; the two forms are used interchangeably and $\frac{h}{2\pi}$ is written explicitly in both.
 
 **No wave number is used in this article, and that is deliberate.** A letter $k$ earns its place only where a mass, a momentum or an energy is absorbed by it, as $k_m=\frac{2\pi mc}{h}$ absorbs the mass in the Dirac and Klein–Gordon equations. Here nothing is absorbed: the constant that multiplies the time derivative is $\frac{h}{2\pi}$, and the mass enters only through the operator $\tilde H_\Psi$ and, in the central case, through the kinetic term $|\vec\nabla_\Phi S|^{2}/2m$. Writing $k_m$ would require the composite $mc^{2}/k_m$, in which $m$ cancels and only $\frac{h}{2\pi} c$ survives, so the letter would hide the constant instead of naming a physical wave number. Every $\frac{h}{2\pi}$ below is therefore the reduced Planck constant and nothing else.
 
@@ -330,7 +330,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde\Xi$ | The field: one element of $\mathbb{B}$ |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian |

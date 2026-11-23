@@ -9,21 +9,21 @@ The framework's contribution to this subject is unusually direct, and it rests o
 **Frame.** Displays are read in the $\mathbb{B}$ frame of *Frame and Metric Conventions*, with the $i r'_t$ convention for sums over indices: the labels are summed directly, and the four-index symbol is the all-low orientation density of *Operator and Calculus Conventions*.
 
 $$
-\tfrac14\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
-=\tfrac12\,\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}
+\tfrac14\sum_{\imath,\jmath,\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}
+=\tfrac12\,\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}
 =\frac{2i}{c}\,I_2 \quad(\text{Lorentzian}),
 \qquad
 I_2=\vec E\cdot\vec B ,
 $$
 
-as *Instantons and Solitons in Biquaternionic Form* recomputed from the component conventions of *The Field-Strength Biquaternion and Its Invariants*. The quarter-density is one half of the full density $\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\frac{4i}{c}I_2$ used below, because the $\tfrac12$ in the definition of the dual is counted once there and twice in $\tfrac14\sum\epsilon FF$. Both displays are written out, so that neither is read as the other. The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the **parity-odd** invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.
+as *Instantons and Solitons in Biquaternionic Form* recomputed from the component conventions of *The Field-Strength Biquaternion and Its Invariants*. The quarter-density is one half of the full density $\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}=\frac{4i}{c}I_2$ used below, because the $\tfrac12$ in the definition of the dual is counted once there and twice in $\tfrac14\sum\epsilon FF$. Both displays are written out, so that neither is read as the other. The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the **parity-odd** invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.
 
 $$
 Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
 \qquad
-S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu} ,
+S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int \sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath} ,
 \qquad
-F_{\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma} ,
+F_{\mathrm{dual},\imath\jmath}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}F_{\rho\sigma} ,
 $$
 
 with all indices summed in the $i r'_t$ convention as in the companion gauge articles. A quantisation statement carries the factor $\frac{2\pi}{h}$ beside the charge product. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T_{a}T_{b})=\tfrac12\delta_{ab}$; that normalization is what makes $Ϙ$ an integer.
@@ -53,28 +53,28 @@ both acting from the left, and each half satisfies $\Box_\Phi\tilde{Ξ}=k_m^{2}\
 The theta term of a non-abelian gauge theory is
 
 $$
-\boxed{\;S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int d^4r\,\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}
+\boxed{\;S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int d^4r\,\sum_{\imath,\jmath,a}F_{\imath\jmath a}F_{\mathrm{dual},\imath\jmath a}
 =\frac{\theta_{\mathrm{vac}}}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\;},
 $$
 
-so that $S_\theta=\theta_{\mathrm{vac}}\,Ϙ$ with the charge normalisation used here, since $\int\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,
+so that $S_\theta=\theta_{\mathrm{vac}}\,Ϙ$ with the charge normalisation used here, since $\int\sum_{\imath,\jmath,a}F_{\imath\jmath a}F_{\mathrm{dual},\imath\jmath a}=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,
 
 $$
-\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}
+\sum_{\imath,\jmath,a}F_{\imath\jmath a}F_{\mathrm{dual},\imath\jmath a}
 =\langle\tilde\nabla_\Phi,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural} ,
 \qquad
-J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\sum_a\epsilon_{\mu\nu\rho\sigma}\Bigl(A_{\nu a}F_{\rho\sigma a}
--\tfrac{g}{3}\sum_{b,c}f_{abc}A_{\nu a}A_{\rho b}A_{\sigma c}\Bigr),
+J_{\mathrm{CS},\imath}=\sum_{\jmath,\rho,\sigma}\sum_a\epsilon_{\imath\jmath\rho\sigma}\Bigl(A_{\jmath a}F_{\rho\sigma a}
+-\tfrac{g}{3}\sum_{b,c}f_{abc}A_{\jmath a}A_{\rho b}A_{\sigma c}\Bigr),
 $$
 
-the standard non-abelian Chern–Simons current, whose abelian part is the primitive $J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$ of *Instantons and Solitons in Biquaternionic Form* and whose form identity $F\wedge F=d\Omega_{\mathrm{CS}}$ is that article's. Two consequences of the total-derivative property are stated there and are used here: the integral depends only on the boundary data, hence on the instanton number, and the local equations of motion are unaffected by the theta term, so its effects are topological and quantum-mechanical rather than classical.
+the standard non-abelian Chern–Simons current, whose abelian part is the primitive $J_{\mathrm{CS},\imath}=\sum_{\jmath,\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}A_{\jmath} F_{\rho\sigma}$ of *Instantons and Solitons in Biquaternionic Form* and whose form identity $F\wedge F=d\Omega_{\mathrm{CS}}$ is that article's. Two consequences of the total-derivative property are stated there and are used here: the integral depends only on the boundary data, hence on the instanton number, and the local equations of motion are unaffected by the theta term, so its effects are topological and quantum-mechanical rather than classical.
 
 **The abelian density is the framework's invariant.** In the Maxwell sector the density collapses to the second invariant,
 
 $$
-\boxed{\;\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\frac{4i}{c}I_2\ \ (\text{Lorentzian}),
+\boxed{\;\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}=\frac{4i}{c}I_2\ \ (\text{Lorentzian}),
 \qquad
-\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=4I_2\ \ (\text{Euclidean}),
+\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}=4I_2\ \ (\text{Euclidean}),
 \qquad
 I_2=\vec E\cdot\vec B\;},
 $$
@@ -94,7 +94,7 @@ $$
 I_2=-\tfrac12\,\mathrm{Im}\,\langle\tilde F\rangle_{\natural}\qquad(\text{vacuum}),
 $$
 
-and the theta density is a component of the norm of one element. The reading needs no array: the entries of $F_{\mu\nu}$ and the four coefficients of $\tilde F$ carry the same number, and the second carries it as the imaginary component of $\langle\tilde F\rangle_{\natural}$, the norm of the field element.
+and the theta density is a component of the norm of one element. The reading needs no array: the entries of $F_{\imath\jmath}$ and the four coefficients of $\tilde F$ carry the same number, and the second carries it as the imaginary component of $\langle\tilde F\rangle_{\natural}$, the norm of the field element.
 
 **Parity.** Under parity $\vec E\mapsto-\vec E$ and $\vec B\mapsto+\vec B$, and under time reversal $\vec E\mapsto+\vec E$ and $\vec B\mapsto-\vec B$, so $I_2=\vec E\cdot\vec B\mapsto-I_2$ in both cases. Under either transformation the theta action changes sign, $S_\theta\mapsto-S_\theta$. A term linear in a parity-odd density with a real coefficient $\theta_{\mathrm{vac}}$ is therefore not invariant under parity unless $\theta_{\mathrm{vac}}=0$ or $\theta_{\mathrm{vac}}=\pi$ (mod $2\pi$), where the theta weight $\exp(i\theta_{\mathrm{vac}} Ϙ)$ is real for every integer $Ϙ$. For generic $\theta_{\mathrm{vac}}$ the theory violates $P$ and $T$, and by CPT it violates $CP$. The statement is purely algebraic in the abelian sector: the framework has one parity-even and one parity-odd derivative-free invariant, and the theta term is the integral of the odd one.
 
@@ -179,12 +179,12 @@ This is why $\bar\theta$ is the renormalisation-invariant physical parameter, an
 
 ## Summary
 
-The theta term $S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ is the integral of a total derivative, hence depends only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\vec E\cdot\vec B$:
+The theta term $S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int \sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}$ is the integral of a total derivative, hence depends only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\vec E\cdot\vec B$:
 
 $$
-\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\frac{4i}{c}\,I_2 \quad(\text{Lorentzian}),
+\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}=\frac{4i}{c}\,I_2 \quad(\text{Lorentzian}),
 \qquad
-\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=4\,I_2 \quad(\text{Euclidean}),
+\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}=4\,I_2 \quad(\text{Euclidean}),
 \qquad
 I_2=-\tfrac12\,\mathrm{Im}\,\langle\tilde F\rangle_{\natural}\ \ (\text{vacuum}).
 $$
@@ -200,14 +200,14 @@ The field content is carried by the gradient and by the chirality subscript: the
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B$ | The biquaternion algebra, as fixed in *Algebra and Element Conventions* |
-| $\tilde F$ | Field strength, the one fixed field of *Algebra and Element Conventions*; an element, not the tensor $F_{\mu\nu}$ |
+| $\tilde F$ | Field strength, the one fixed field of *Algebra and Element Conventions*; an element, not the tensor $F_{\imath\jmath}$ |
 | $I_1=\vec E^2-c^2\vec B^2$ | First invariant (parity-even, scalar) |
 | $I_2=\vec E\cdot\vec B$ | Second invariant (parity-odd); the theta density; in vacuum $I_2=-\tfrac12\mathrm{Im}\langle\tilde F\rangle_{\natural}$ |
 | $\theta_{\mathrm{vac}}$ | Theta angle; coefficient of the topological term |
-| $S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ | Theta term of the action |
-| $F_{\mathrm{dual},\mu\nu}=\frac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |
+| $S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}$ | Theta term of the action |
+| $F_{\mathrm{dual},\imath\jmath}=\frac12\sum_{\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge, $Ϙ\in\mathbb Z$ |
-| $J_{\mathrm{CS},\mu}$ | Chern–Simons current, $\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\langle\tilde\nabla_\Phi,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural}$ |
+| $J_{\mathrm{CS},\imath}$ | Chern–Simons current, $\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}=\langle\tilde\nabla_\Phi,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural}$ |
 | $Z(\theta_{\mathrm{vac}})=\sum_Ϙ \exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
 | $\bar\theta=\theta_{\mathrm{vac}}+\arg\det M_q$ | Physical CP-violating parameter |
 | $M_q$ | Quark mass matrix in flavour space (imported); not a display of the algebra |

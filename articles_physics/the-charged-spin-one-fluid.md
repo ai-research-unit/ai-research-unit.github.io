@@ -25,7 +25,7 @@ Three things are established.
 
 *First, the carrier doubles and the free branches are the real slice.* The free word was a scale, a direction and a discrete sign; the coupled word is a scale, a continuous phase, a boost and a rotor. The discrete sign of the free fluid is the real slice of the continuous phase, and the rotor is a parameter the free word had no room for.
 
-*Second, the density decouples from the field's norm.* The free article could write $\varrho=\sqrt{-\sum_\mu\varepsilon_\mu A_\mu A_\mu}$ because the field was real; here the invariant $\tilde A\tilde A^{\natural}$ is the complex number $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $\varrho^{2}$ only where the rotor is trivial. The scale is a coordinate of the chart and not a property of the field, and the density the fluid carries is a choice of the chart's normalisation.
+*Second, the density decouples from the field's norm.* The free article could write $\varrho=\sqrt{-\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}}$ because the field was real; here the invariant $\tilde A\tilde A^{\natural}$ is the complex number $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $\varrho^{2}$ only where the rotor is trivial. The scale is a coordinate of the chart and not a property of the field, and the density the fluid carries is a choice of the chart's normalisation.
 
 *Third, the constraint and the divergence are two different statements.* The scalar part of the coupled equation forces the covariant Lorenz condition, exactly and blindly to the frame; the *ordinary* divergence is then not zero, and its value is the field's own amplitude.
 
@@ -43,11 +43,11 @@ What is not here. No new solution and no new particle. The article's subject is 
 
 Position in the block. This article is the charged companion of [The Spin-One Fluid](the-spin-one-fluid.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html), and §*The Three Charged Fluids* compares the three.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The material sector is $\mathbb{B}_\Phi=\{i a'_t e_t+\vec A\}$ with $a'_t$ and $\vec A$ real, and the connection is $\tilde A_\Phi\in\mathbb{B}_\Phi$. The coupling is $ϙ$, $k_m=\frac{2\pi mc}{h}$, and $\langle\tilde A\rangle_\natural:=\tilde A\tilde A^{\natural}$ is the natural norm, a central complex number. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The material sector is $\mathbb{B}_\Phi=\{i a'_t e_t+\vec A\}$ with $a'_t$ and $\vec A$ real, and the connection is $\tilde A_\Phi\in\mathbb{B}_\Phi$. The coupling is $ϙ$, $k_m=\frac{2\pi mc}{h}$, and $\langle\tilde A\rangle_\natural:=\tilde A\tilde A^{\natural}$ is the natural norm, a central complex number. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
 
 ## The Word and the Two Restorations
 
-The free word is the coupled word's real slice, and the slice's discreteness is the phase's collapse. The free article's decomposition is a scale, a direction and a sign, $A_\mu=\varepsilon\,\varrho\,u_\mu$ with $\varrho=\sqrt{-A^{2}}$ and $\varepsilon=\pm1$; the coupled one is
+The free word is the coupled word's real slice, and the slice's discreteness is the phase's collapse. The free article's decomposition is a scale, a direction and a sign, $A_{\imath}=\varepsilon\,\varrho\,u_{\imath}$ with $\varrho=\sqrt{-A^{2}}$ and $\varepsilon=\pm1$; the coupled one is
 
 $$
 \tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
@@ -91,7 +91,7 @@ A note on what the shrinking does not buy. It does not make the fluid globally a
 
 ## The Density Is Not the Invariant Length
 
-**The free article's density was the field's own norm, and the charged field has no norm that could play the part.** The free article writes $\varrho=\sqrt{-\sum_\mu\varepsilon_\mu A_\mu A_\mu}$, positive by construction, and reads it as the fluid's density. In the coupled case there are three candidate objects and none of them is that:
+**The free article's density was the field's own norm, and the charged field has no norm that could play the part.** The free article writes $\varrho=\sqrt{-\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}}$, positive by construction, and reads it as the fluid's density. In the coupled case there are three candidate objects and none of them is that:
 
 | candidate | what it is | its behaviour |
 | --- | --- | --- |
@@ -107,15 +107,15 @@ The scale is still what the fluid is normalised by, and the article says so with
 
 The check that the identification must fail. On the free word the charge current vanishes identically, because the field is real and its conjugate is itself; on the coupled word it does not. A quantity that is zero on the free slice cannot become the density under a coupling that does not change the word's meaning, and the free article's "the field is the current" is therefore not a statement that survives as an approximation — it is a statement about the real slice.
 
-What survives. The velocity's normalisation survives in a modified form: the free article's $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$ becomes the statement that $\tilde A/\varrho$ is invertible *element* of the algebra, and its four-vector reading is the boost's. The free velocity's unit character is the boost's and not the field's, which the coupled word makes visible because the boost is a separate factor.
+What survives. The velocity's normalisation survives in a modified form: the free article's $\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}=-1$ becomes the statement that $\tilde A/\varrho$ is invertible *element* of the algebra, and its four-vector reading is the boost's. The free velocity's unit character is the boost's and not the field's, which the coupled word makes visible because the boost is a separate factor.
 
 ## Three Currents
 
 **The coupled fluid carries three distinct currents where the free one carried a single object, and only one of them is conserved.** The three are the response, the direction and the charge.
 
-The response is $m^{2}\tilde A$, and it is what the free article's current became. In the free case the equation $\sum_\nu\partial_\nu F_{\nu\mu}=m^{2}A_\mu$ made $m^{2}A_\mu$ the source of the field strength's divergence, and the Lorenz condition made it conserved; the article therefore identified the field, the current and the response. With the coupling the equation sources $m^{2}\tilde A$ by the *covariant* divergence, $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^{2}\tilde A$, so the response is no longer conserved by the Lorenz condition alone: the connection's own term sits between them. The fluid's own field acts on its own current, and that is the self-interaction the free case could not have.
+The response is $m^{2}\tilde A$, and it is what the free article's current became. In the free case the equation $\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=m^{2}A_{\imath}$ made $m^{2}A_{\imath}$ the source of the field strength's divergence, and the Lorenz condition made it conserved; the article therefore identified the field, the current and the response. With the coupling the equation sources $m^{2}\tilde A$ by the *covariant* divergence, $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^{2}\tilde A$, so the response is no longer conserved by the Lorenz condition alone: the connection's own term sits between them. The fluid's own field acts on its own current, and that is the self-interaction the free case could not have.
 
-The direction is $\tilde A/\varrho$, and it is the generalisation of the free velocity. In the free case $A_\mu/\varrho=u_\mu$ was the unit flow and the current at once. Here $\tilde A/\varrho=e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ is a unit element whose boost is the flow, and it is conserved by nothing: its divergence is the divergence of the word, which is the constraint plus whatever the frame contributes.
+The direction is $\tilde A/\varrho$, and it is the generalisation of the free velocity. In the free case $A_{\imath}/\varrho=u_{\imath}$ was the unit flow and the current at once. Here $\tilde A/\varrho=e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ is a unit element whose boost is the flow, and it is conserved by nothing: its divergence is the divergence of the word, which is the constraint plus whatever the frame contributes.
 
 The charge current is the bilinear, and it is the only one of the three the free case did not have. It is the current the phase symmetry of the complex field guarantees, and it vanishes identically on the real slice, which is why the free article never met it. The parent's ledger says the chart's expression for it is longer than the element form's without being more informative, and the article takes that as given: what matters for the fluid is that it exists and that it is the conserved one.
 
@@ -125,20 +125,20 @@ What a reader should take from the count. A fluid whose current is its field nee
 
 ## The Lorenz Condition Is No Longer the Continuity Equation
 
-The free article's identification was exact: the Lorenz condition and the divergence of the current were the same equation. With $A_\mu=ru_\mu$, the condition $\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=0$ is $\sum_\mu\varepsilon_\mu\partial_\mu(\varrho u_\mu)=0$, and the article's sentence is that the condition "is not an analogue of continuity; it is continuity". The coupled case separates them, and the separation is exact and computable.
+The free article's identification was exact: the Lorenz condition and the divergence of the current were the same equation. With $A_{\imath}=ru_{\imath}$, the condition $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} A_{\imath}=0$ is $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}(\varrho u_{\imath})=0$, and the article's sentence is that the condition "is not an analogue of continuity; it is continuity". The coupled case separates them, and the separation is exact and computable.
 
 The identity. The natural divergence of the covariant derivative differs from the ordinary one by the sum of the squares of the coefficients:
 
 $$
 \mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde A\bigr)
 =\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)
-+\frac{2\pi iϙ}{h}\sum_\mu A_\mu^{2},
++\frac{2\pi iϙ}{h}\sum_{\imath} A_{\imath}^{2},
 $$
 
 and for a four-vector element the sum of the squares is the natural norm,
 
 $$
-\sum_\mu A_\mu^{2}=A_te_t\cdot A_te_t+\sum_\eta A_\eta\vec e_\eta\cdot A_\eta\vec e_\eta
+\sum_{\imath} A_{\imath}^{2}=A_te_t\cdot A_te_t+\sum_\eta A_\eta\vec e_\eta\cdot A_\eta\vec e_\eta
 =A_t^{2}+\sum_\eta A_\eta^{2}
 =\tilde A\tilde A^{\natural},
 $$
@@ -174,8 +174,8 @@ The honest summary of the section. The free fluid was incompressible in the prec
 The free article's stress decomposes into a stiff perfect-fluid part and a field-strength part, and the coupling does not change the decomposition. The free stress is
 
 $$
-T_{\mu\nu}=-\sum_\alpha\varepsilon_\alpha F_{\mu\alpha}F_{\nu\alpha}+\tfrac14g_{\mu\nu}\sum_{\alpha,\beta}F_{\alpha\beta}F_{\alpha\beta}
-+m^{2}\bigl(A_\mu A_\nu-\tfrac12 g_{\mu\nu}A^{2}\bigr),
+T_{\imath\jmath}=-\sum_\alpha\varepsilon_\alpha F_{\imath\alpha}F_{\jmath\alpha}+\tfrac14g_{\imath\jmath}\sum_{\alpha,\beta}F_{\alpha\beta}F_{\alpha\beta}
++m^{2}\bigl(A_{\imath} A_{\jmath}-\tfrac12 g_{\imath\jmath}A^{2}\bigr),
 $$
 
 and the free article's two results are that the mass term is a perfect fluid with
@@ -197,7 +197,7 @@ What the coupling does add is the self-interaction term in the field strength. T
 
 ## The Massless Limit
 
-The free article's massless limit removes the fluid, and the reason is that the Lorenz condition was the mass's gift. With $A_\mu=ru_\mu$ the free condition is continuity, and continuity came from taking the divergence of $\sum_\nu\partial_\nu F_{\nu\mu}=m^{2}A_\mu$: at $m=0$ there is nothing on the right and the Lorenz condition is a gauge choice rather than a constraint. So the free fluid's incompressibility evaporates at $m=0$ and the fluid reading goes with it.
+The free article's massless limit removes the fluid, and the reason is that the Lorenz condition was the mass's gift. With $A_{\imath}=ru_{\imath}$ the free condition is continuity, and continuity came from taking the divergence of $\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=m^{2}A_{\imath}$: at $m=0$ there is nothing on the right and the Lorenz condition is a gauge choice rather than a constraint. So the free fluid's incompressibility evaporates at $m=0$ and the fluid reading goes with it.
 
 The coupled case has the same limit and a different residue. For $m>0$ the scalar part of the equation forces the covariant Lorenz condition and the ordinary divergence is the amplitude of §*The Lorenz Condition Is No Longer the Continuity Equation*. At $m=0$ the equation is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=0$, whose divergence gives no constraint on the potential; the covariant Lorenz condition becomes one gauge choice among many. The compressibility statement therefore degrades in the same way as the free one: it is a statement about a gauge, and a gauge is not a fluid property.
 
@@ -268,7 +268,7 @@ What the correspondence supports and what it does not. It supports the claim tha
 
 ## What Is Established and What Is Interpretation
 
-Established. The word's eight parameters and the real slice. The two invariants: $\tilde A\tilde A^{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ exactly, checked to machine precision, and the parent's numbers for $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$. The three-current split, with the charge current vanishing on the real slice. The identity $\sum_\mu A_\mu^{2}=\tilde A\tilde A^{\natural}$, checked symbolically in all sixteen products and against random draws of the eight parameters. The divergence statement $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{2\pi iϙ}{h}\tilde A\tilde A^{\natural}$ on the constraint surface, with its two real parts. The failure of the free incompressibility, which is that statement with $ϙ\ne0$. The survival of the stiff formula on the $F=0$ sector and its failure as a law. The massless limit's structure.
+Established. The word's eight parameters and the real slice. The two invariants: $\tilde A\tilde A^{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ exactly, checked to machine precision, and the parent's numbers for $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$. The three-current split, with the charge current vanishing on the real slice. The identity $\sum_{\imath} A_{\imath}^{2}=\tilde A\tilde A^{\natural}$, checked symbolically in all sixteen products and against random draws of the eight parameters. The divergence statement $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{2\pi iϙ}{h}\tilde A\tilde A^{\natural}$ on the constraint surface, with its two real parts. The failure of the free incompressibility, which is that statement with $ϙ\ne0$. The survival of the stiff formula on the $F=0$ sector and its failure as a law. The massless limit's structure.
 
 Interpretation. That $\varrho$ is an amplitude rather than a density is a reading of the homogeneity of the fluid formulas, and it is a reading and not a theorem. That the three currents "separate one object into three" is a way of describing the real slice's collapse, and the collapse itself is the fact. That the self-interaction term is what makes the vector fluid the block's richest medium is an assessment and not a result.
 

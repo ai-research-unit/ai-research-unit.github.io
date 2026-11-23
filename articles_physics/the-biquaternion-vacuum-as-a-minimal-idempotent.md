@@ -264,11 +264,11 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_\mu \vec e_\nu=\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H},\mathbb{B}_{C}$ | Real-quaternion subspace; centre $\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ |
-| $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\mathsf{M}_2(\tilde Q)$ | Biquaternion norm |
+| $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\imath} Q_{\imath}^2=\det\mathsf{M}_2(\tilde Q)$ | Biquaternion norm |
 | $2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$, $2\,\mathrm{Sc}(e_t)=2$ | Scalar-part reading of the Hermitian form |
 | $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism |
 | $\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, $\vec u\in S^2$ | Minimal idempotents; vacuum idempotents |
@@ -280,7 +280,7 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | $\mathcal{M}_{\text{vac}}\cong S^2$ | Vacuum manifold |
 | $\omega_{\tilde\Pi_{\mathrm{id}}}(\tilde Q_3)=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde Q_3^{*})$ | Pure state defined by a minimal idempotent |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

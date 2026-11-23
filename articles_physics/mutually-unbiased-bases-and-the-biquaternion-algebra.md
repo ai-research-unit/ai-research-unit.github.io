@@ -50,10 +50,10 @@ $$
 = \tfrac{1}{2}\bigl(1 - \vec u\cdot\vec v\bigr),
 $$
 
-using $2\,\mathrm{Sc}(e_t)=2$, $2\,\mathrm{Sc}(i\vec e_\mu)=0$ and $2\,\mathrm{Sc}((i\vec e_\mu)(i\vec e_\nu)) = 2\delta_{\mu\nu}$. In Hilbert-space terms this is the squared overlap
+using $2\,\mathrm{Sc}(e_t)=2$, $2\,\mathrm{Sc}(i\vec e_{\imath})=0$ and $2\,\mathrm{Sc}((i\vec e_{\imath})(i\vec e_{\jmath})) = 2\delta_{\imath\jmath}$. In Hilbert-space terms this is the squared overlap
 
 $$
-\bigl|\langle \tilde{Ξ}(\vec u)|\tilde{Ξ}(\vec u_\nu)\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\vec u\cdot\vec v\bigr),
+\bigl|\langle \tilde{Ξ}(\vec u)|\tilde{Ξ}(\vec u_{\jmath})\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\vec u\cdot\vec v\bigr),
 $$
 
 which vanishes for antipodal directions and equals one for coincident directions. The normalised Hermitian form, read through the scalar part, is thus a measure of the distinguishability of two rays, and it is the object that the mutual-unbiasedness condition constrains.
@@ -84,11 +84,11 @@ Take two distinct coordinate bases, $j\neq k$. Then for any signs $s,s_2\in\{+1,
 
 $$
 \tilde\Pi_{\mathrm{id},s}(\vec u_j)\,\tilde\Pi_{\mathrm{id},s_2}(\vec u_\eta)
-= \tfrac{1}{4}\bigl(e_t + s_2 i\vec e_\nu + s i\vec e_\mu + ss_2 (i\vec e_\mu)(i\vec e_\nu)\bigr)
-= \tfrac{1}{4}\bigl(e_t + s_2 i\vec e_\nu + s i\vec e_\mu - ss_2 \vec e_\mu \vec e_\nu\bigr),
+= \tfrac{1}{4}\bigl(e_t + s_2 i\vec e_{\jmath} + s i\vec e_{\imath} + ss_2 (i\vec e_{\imath})(i\vec e_{\jmath})\bigr)
+= \tfrac{1}{4}\bigl(e_t + s_2 i\vec e_{\jmath} + s i\vec e_{\imath} - ss_2 \vec e_{\imath} \vec e_{\jmath}\bigr),
 $$
 
-and taking the scalar part, the three crossed terms vanish and the last contributes $-2\,\mathrm{Sc}(\vec e_\mu\vec e_\nu) = 0$ for $\mu\neq \nu$ because distinct quaternion units are orthogonal under the scalar part. Hence
+and taking the scalar part, the three crossed terms vanish and the last contributes $-2\,\mathrm{Sc}(\vec e_{\imath}\vec e_{\jmath}) = 0$ for ${\imath}\neq \jmath$ because distinct quaternion units are orthogonal under the scalar part. Hence
 
 $$
 2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},s}(\vec u_j)\tilde\Pi_{\mathrm{id},s_2}(\vec u_\eta)\bigr) = \tfrac{1}{4}\cdot 2 = \tfrac{1}{2}
@@ -110,7 +110,7 @@ Within one basis, $j=k$, the same computation gives
 
 $$
 2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},s}(\vec u_\eta)\tilde\Pi_{\mathrm{id},s_2}(\vec u_\eta)\bigr)
-= \tfrac{1}{4}\cdot 2\,\mathrm{Sc}\bigl(e_t + (s+s_2)i\vec e_\mu + ss_2(i\vec e_\mu)^2\bigr)
+= \tfrac{1}{4}\cdot 2\,\mathrm{Sc}\bigl(e_t + (s+s_2)i\vec e_{\imath} + ss_2(i\vec e_{\imath})^2\bigr)
 = \tfrac{1}{4}\bigl(2 - 2ss_2\bigr)
 = \begin{cases}1 & s=s_2,\ 0 & s=-s_2.\end{cases}
 $$
@@ -273,7 +273,7 @@ The overlap matrix of the six pure states has identity blocks on the diagonal an
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and observables) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\mu^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents along $\vec u$ |
 | $\tilde\Pi_{\mathrm{id},i}\tilde\Pi_{\mathrm{id},j} = \delta_{ij}\tilde\Pi_{\mathrm{id},i}$, $\sum_i\tilde\Pi_{\mathrm{id},i} = e_t$ | Idempotent basis |

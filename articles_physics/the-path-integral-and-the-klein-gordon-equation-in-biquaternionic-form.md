@@ -49,13 +49,13 @@ The Klein–Gordon action for the complex scalar field is the standard relativis
 
 $$
 S[\tilde{Ξ}]
-=\frac{h}{2\pi}\int d^4r\left[-\frac{1}{2}\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\frac{1}{2}\,k_m^{2}\,|\xi|^2\right],
+=\frac{h}{2\pi}\int d^4r\left[-\frac{1}{2}\sum_{\imath}\partial/\partial R_{\imath}\,\xi^*\,\partial/\partial R_{\imath}\,\xi-\frac{1}{2}\,k_m^{2}\,|\xi|^2\right],
 $$
 
 with the index summed over the same $Q$ coordinate; in biquaternion form, using $\tilde{Ξ}^{*}=\xi^*e_t$ and $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=|\xi|^2$, this is a central scalar functional,
 
 $$
-S[\tilde{Ξ}]=\int d^4r\left[-\frac{1}{2}\sum_\mu\mathrm{Sc}\!\left(\partial/\partial R_\mu\,\tilde{Ξ}^{*}\,\partial/\partial R_\mu\,\tilde{Ξ}\right)-\frac{1}{2}\,k_m^{2}\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\right]\in\mathbb{B}_{C} .
+S[\tilde{Ξ}]=\int d^4r\left[-\frac{1}{2}\sum_{\imath}\mathrm{Sc}\!\left(\partial/\partial R_{\imath}\,\tilde{Ξ}^{*}\,\partial/\partial R_{\imath}\,\tilde{Ξ}\right)-\frac{1}{2}\,k_m^{2}\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\right]\in\mathbb{B}_{C} .
 $$
 
 The action is central because every ingredient in it is: the field is central, the derivatives act coefficient-wise, the metric contraction is a real number, and the trace is the pairing formula's scalar projection. It is also real, since the kinetic and mass terms are Hermitian.
@@ -64,7 +64,7 @@ The equation of motion follows by variation. For a variation $\delta\tilde{Ξ}$ 
 
 $$
 \delta S
-=\frac{1}{2}\int d^4r\left[-\sum_\mu\partial/\partial R_\mu\,\delta\xi^*\,\partial/\partial R_\mu\,\xi-k_m^{2}\,\delta\xi^*\,\xi\right]
+=\frac{1}{2}\int d^4r\left[-\sum_{\imath}\partial/\partial R_{\imath}\,\delta\xi^*\,\partial/\partial R_{\imath}\,\xi-k_m^{2}\,\delta\xi^*\,\xi\right]
 =\frac{1}{2}\int d^4r\;\delta\xi^*\left[\left(\Box_\Phi-k_m^{2}\right)\xi\right],
 $$
 
@@ -288,7 +288,7 @@ The Klein–Gordon path integral is the functional integral over central-valued 
 
 $$
 S[\tilde{Ξ}]=\frac{1}{2}\int d^4r\;\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}\right)
-=\int d^4r\left[-\frac{1}{2}\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\frac{1}{2}\,k_m^{2}|\xi|^2\right].
+=\int d^4r\left[-\frac{1}{2}\sum_{\imath}\partial/\partial R_{\imath}\,\xi^*\,\partial/\partial R_{\imath}\,\xi-\frac{1}{2}\,k_m^{2}|\xi|^2\right].
 $$
 
 Its variation gives the Klein–Gordon equation $(\Box_\Phi-k_m^{2})\xi=0$, verified on a superposition of three on-shell modes to a residual of order $10^{-7}$. The generating functional is defined with a central source, and the free Gaussian is evaluated exactly on a finite lattice,
@@ -326,7 +326,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $Z[J]$ | Generating functional; $\tilde{J}_{\Phi}=Je_t$ a central source |
 | $G$, $G_E$ | Two-point kernels, $(\Box_\Phi-k_m^{2})G=-\delta^{(4)}$ and $(-\Box_\Phi+k_m^{2})G_E=\delta^{(4)}$ |
 | $A$, $A^{-1}$ | Lattice quadratic form and its inverse (lattice propagator) |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\imath\jmath}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Pairing formula |
 
 ## Further Reading

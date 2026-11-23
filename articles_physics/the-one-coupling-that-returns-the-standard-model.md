@@ -110,11 +110,11 @@ and the solution exists only while the bracket is positive. Two consequences fol
 
 ### The One Number a Coupling Produces
 
-**One contact with a measurement.** Above the $W_R$ floor, the model's single contact with data is $K_L\to\mu e$. The operator is $g_4^2/(2M_X^2)$ times $U_{de}U_{s\mu}^{*}$ times a hadronic matrix element, the rate scales as $M_X^{-4}$, and the coupling is fixed by the first matching relation $g_3=g_4$ at $M_C$:
+**One contact with a measurement.** Above the $W_R$ floor, the model's single contact with data is $K_L\to\mu e$. The operator is $g_4^2/(2M_X^2)$ times $U_{de}U_{s\imath}^{*}$ times a hadronic matrix element, the rate scales as $M_X^{-4}$, and the coupling is fixed by the first matching relation $g_3=g_4$ at $M_C$:
 
 $$
 g_4^2=4\pi\,\alpha_s(M_X),\qquad
-\Gamma(K_L\to\mu e)=\frac{g_4^{4}\,\lvert U_{de}U_{s\mu}\rvert^{2}f_K^{2}m_\mu^{2}m_K}{128\pi\,M_X^{4}} .
+\Gamma(K_L\to\mu e)=\frac{g_4^{4}\,\lvert U_{de}U_{s\imath}\rvert^{2}f_K^{2}m_\mu^{2}m_K}{128\pi\,M_X^{4}} .
 $$
 
 **Three rows.** The shape is sharp.
@@ -125,7 +125,7 @@ $$
 | $233$ TeV | $0.730$ | $4.7\times10^{-12}$ | at the limit |
 | $300$ TeV | $0.718$ | $1.7\times10^{-12}$ | allowed, margin $2.8$ |
 
-The table takes $|U_{de}U_{s\mu}|=1$, the largest value; a smaller entry multiplies every rate by its fourth power and lowers the bound by its square root, and the identity branch gives zero at every mass. The bound is $M_X\gtrsim2.3\times10^{2}$ TeV for that largest value and under that assumption, and it is a band of a factor of two rather than an order of magnitude, because the rate carries the fourth power of the mass. This is the only number in the model that a search can contradict, and it is a coupling's number: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$. The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are structural and are in [Lepton Flavour in the Four-Colours Model](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html); the substitution that turns the channel into a mass bound is what this section adds.
+The table takes $|U_{de}U_{s\imath}|=1$, the largest value; a smaller entry multiplies every rate by its fourth power and lowers the bound by its square root, and the identity branch gives zero at every mass. The bound is $M_X\gtrsim2.3\times10^{2}$ TeV for that largest value and under that assumption, and it is a band of a factor of two rather than an order of magnitude, because the rate carries the fourth power of the mass. This is the only number in the model that a search can contradict, and it is a coupling's number: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$. The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are structural and are in [Lepton Flavour in the Four-Colours Model](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html); the substitution that turns the channel into a mass bound is what this section adds.
 
 ## The Boundary Condition, and Why It Fails
 
@@ -181,7 +181,7 @@ The gauge couplings are not the only ones that carry a scale. The Yukawa sector 
 **6.1 Two relations.** Two relations, and both were written with a scale attached:
 
 $$
-m_d=m_e,\qquad m_u=m_\nu\qquad\text{at }M_{U} .
+m_d=m_e,\qquad m_u=m_{\jmath}\qquad\text{at }M_{U} .
 $$
 
 Neither survives as a statement about this model's couplings. They are the one-bidoublet boundary conditions, and their status is the interesting part: the first is falsified by data, the second is falsified by data by seven orders of magnitude.
@@ -203,7 +203,7 @@ and that is a statement about the number of matrices, not about any value. One m
 | $m_d/m_e$ | $9.1$ | fails by a factor $9$ |
 | $m_s/m_\mu$ | $0.88$ | holds to $12\%$ |
 | $m_b/m_\tau$ | $2.35$ at $m_b$ | converges to unity once the running from $M_{U}$ to $m_b$ is included |
-| $m_u/m_\nu$ | about $4\times10^{7}$ | fails outright |
+| $m_u/m_{\jmath}$ | about $4\times10^{7}$ | fails outright |
 
 The last column is where the scale enters, and it enters twice: once in the ratio "at $m_b$", and once in the phrase "once the running is included".
 
@@ -260,7 +260,7 @@ The unified case fails, and it fails as arithmetic. $\tfrac38$ is exact where co
 
 The three-scale repair does not rescue it, for a reason that is a symmetry and not a number. Parity makes the two $\mathrm{SU}(2)$ coefficients equal, so the extra scale moves the meeting of colour and leaves the meeting of the two chiral factors where it was.
 
-The Yukawa sector answers the same question by counting. The one-bidoublet conditions $m_d=m_e$ and $m_u=m_\nu$ are scale-bearing and falsified; the argument they supported survives without them, because one matrix for two sectors is a statement about counting, and counting needs no scale.
+The Yukawa sector answers the same question by counting. The one-bidoublet conditions $m_d=m_e$ and $m_u=m_{\jmath}$ are scale-bearing and falsified; the argument they supported survives without them, because one matrix for two sectors is a statement about counting, and counting needs no scale.
 
 ## Summary of Notation
 

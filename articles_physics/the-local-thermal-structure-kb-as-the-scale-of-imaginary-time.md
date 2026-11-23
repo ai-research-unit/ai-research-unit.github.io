@@ -16,7 +16,7 @@ The resulting question is whether $k_B$ is a scale of the same kind as $c$:
 
 This article answers that question. The answer has two halves, and they point in opposite directions. **Yes**: $k_B$ is a scale attached to the same fixed algebraic direction, of the same local character as $c$, and the parallel can be made precise as a *local thermal structure* on the field of states. **No**: it is not the same kind of scale as $c$, because $c$ is required by the algebra and $k_B$ is required by no algebraic structure. The framework's thermal scale is a scale of a state, not of the algebra, and that difference is the content of the interpretation.
 
-Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with central $i$, the material sector is $\mathbb{B}_{\Phi}$ with $\tilde R_\Phi=i r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and norm $\langle\tilde R_\Phi\rangle_{\natural}=\sum_\mu Q_\mu^2$, and the framework's local metric is $g=\mathrm{diag}(-c^2,1,1,1)$. $\frac{h}{2\pi}$ is the reduced Planck constant, $k_B$ Boltzmann's constant, $T$ the temperature and $\beta=\frac{h}{2\pi k_{B}\,T}$ the inverse temperature.
+Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with central $i$, the material sector is $\mathbb{B}_{\Phi}$ with $\tilde R_\Phi=i r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and norm $\langle\tilde R_\Phi\rangle_{\natural}=\sum_{\imath} Q_{\imath}^2$, and the framework's local metric is $g=\mathrm{diag}(-c^2,1,1,1)$. $\frac{h}{2\pi}$ is the reduced Planck constant, $k_B$ Boltzmann's constant, $T$ the temperature and $\beta=\frac{h}{2\pi k_{B}\,T}$ the inverse temperature.
 
 ## The Local Complex Structure, Recalled
 
@@ -92,7 +92,7 @@ The thermal structure and the framework's Euclidean continuation are two reading
 
 Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
-**The alternative route, which needs no rotation.** The construction can stay in the material sector, because the direction is already imaginary there and the positivity is the Hermitian form's. The wave biquaternion is kept as $\tilde{P}_{\Phi,E} = i\omega_n e_t+\vec p\in\mathbb{B}_{\Phi}$, where the Hermitian form is $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, and $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*} = \omega_n^2+\vec p^2 = k_{\mathrm{eu}}^2 \ge 0$, where the biquaternion norm of the same element is indefinite; the two routes agree by the identity $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*} = \langle -\omega_n e_t+\vec p\rangle_{\natural}$ (*The Matsubara Thermal Formalism in Biquaternionic Form*). What the temperature fixes is then not a rotation but a period.
+**The alternative route, which needs no rotation.** The construction can stay in the material sector, because the direction is already imaginary there and the positivity is the Hermitian form's. The wave biquaternion is kept as $\tilde{P}_{\Phi,E} = i\omega_n e_t+\vec p\in\mathbb{B}_{\Phi}$, where the Hermitian form is $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_{\imath} Q_{1\imath}\overline{Q_{2\imath}}$, and $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*} = \omega_n^2+\vec p^2 = k_{\mathrm{eu}}^2 \ge 0$, where the biquaternion norm of the same element is indefinite; the two routes agree by the identity $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*} = \langle -\omega_n e_t+\vec p\rangle_{\natural}$ (*The Matsubara Thermal Formalism in Biquaternionic Form*). What the temperature fixes is then not a rotation but a period.
 
 The interpretation is that the thermal structure is the **compactification** of the same algebraic direction that the local complex structure leaves open, and that the scale of the compactification is $\frac{h}{2\pi k_{B}\,T}$. In the medium, the sign of $\epsilon\mu$ decides whether the direction is Lorentzian or Euclidean (*The Effective Optical Metric of the Local Complex Structure*); in the state, the temperature decides the period. The two are independent, and they meet in one algebra.
 
@@ -125,7 +125,7 @@ The disanalogy is decided by the algebra's own requirement. The biquaternion nor
 | $\mathbb{B}_{\Phi}$ | Material sector, $\tilde R_\Phi=i r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
 | $\langle\tilde R_\Phi\rangle_{\natural}=(i r'_{t})^2+r_x^2+r_y^2+r_z^2$ | Biquaternion norm; needs the scale $c$ to have a length |
 | $c=1/\sqrt{\epsilon\mu}$ | Local speed of light: the algebra's scale |
-| $g_{\mu\nu}=\mathrm{diag}(-c^2,1,1,1)$ | Framework's local metric |
+| $g_{\imath\jmath}=\mathrm{diag}(-c^2,1,1,1)$ | Framework's local metric |
 | $\beta=\frac{h}{2\pi k_{B}\,T}$ | Inverse temperature: the state's scale |
 | $c\beta=\frac{h\,c}{2\pi k_{B}\,T}$ | Thermal circle in the material sector's units |
 | $Tc=\text{const}$ | Tolman's law on the framework's metric; $T\propto1/c\propto n$ |
@@ -133,7 +133,7 @@ The disanalogy is decided by the algebra's own requirement. The biquaternion nor
 | $T_H=\frac{h\,c^{3}}{16\pi \,\pi\,G\,M\,k_{B}}$ | Hawking temperature: a local temperature |
 | $\omega_n=2\pi n/\beta$, $(2n+1)\pi/\beta$ | Bosonic and fermionic Matsubara frequencies |
 | $\tilde{P}_{\Phi,E} = i\omega_n e_t+\vec p\in\mathbb{B}_{\Phi}$ | Euclidean wave biquaternion; the material-sector route |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | Hermitian form; carries the thermal positivity without a rotation |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_{\imath} Q_{1\imath}\overline{Q_{2\imath}}$ | Hermitian form; carries the thermal positivity without a rotation |
 
 ## Further Reading
 

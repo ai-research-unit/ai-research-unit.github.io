@@ -185,10 +185,10 @@ $$
 The time part of $\mathcal{D}_p$ gives $i\frac{E_{\vec p}}{c}(\tilde{Ξ} i\vec e_x)\vec e_x=\frac{E_{\vec p}}{c}\tilde{Ξ}$, because $i\vec e_x\,i\vec e_x=i^2\vec e_x^2=e_t$; it is even in $\vec p$, and so is $\cos\theta_{\mathrm{pwp}}$. The spatial part $-i\sum_\eta p_\eta\vec e_\eta(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta_{\mathrm{pwp}}(\tilde{Ξ} i\vec e_x)$ are odd, because $\sin\theta_{\mathrm{pwp}}$ and $p_\eta$ are. The odd terms vanish under symmetric integration. Division by $2E_{\vec p}$ leaves $\cos\theta_{\mathrm{pwp}}$ times the identity on the test element, which integrates to $\delta^{(3)}(\vec r_{12})$, so the equal-time relation is the component statement
 
 $$
-\boxed{\;\{\tilde{Ξ}_{\mathrm{fop},\mu}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}(Y,r'_t)\}=\delta_{\mu\nu}\,\delta^{(3)}(\vec r_{12})\;},
+\boxed{\;\{\tilde{Ξ}_{\mathrm{fop},\imath}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\jmath}^{\dagger}(Y,r'_t)\}=\delta_{\imath\jmath}\,\delta^{(3)}(\vec r_{12})\;},
 $$
 
-the indices $\mu,\nu$ running over the four units, and the anticommutator is local. Parity in $\vec p$ decides what survives: the time part of $\mathcal{D}_p$ is even and remains, the spatial part and the mass term are odd and cancel.
+the indices ${\imath},\jmath$ running over the four units, and the anticommutator is local. Parity in $\vec p$ decides what survives: the time part of $\mathcal{D}_p$ is even and remains, the spatial part and the mass term are odd and cancel.
 
 **The commutator (Bose choice for the same field).** Replacing the plus between the branches by a minus, the same completeness identities give
 
@@ -268,7 +268,7 @@ The table also displays what the framework does and does not explain. The *spin 
 - Under the rotor action, the half-integer-spin representations live on the odd tensor powers of the defining module, where $-e_t$ acts as $(-1)^{2s}=-1$, while the integer-spin representations live on the material sector $\mathbb{B}_{\Phi}$ and on the even tensor powers, where $-e_t$ acts as $+1$. The algebra affords $s=\tfrac12$ as a module, $s=0$ on the centre under conjugation, and $s=1$ through the adjoint action on the three vector units $\vec e_\eta$, the spatial part of $\mathbb{B}_{\Phi}$.
 - The single-mode ladder operators are the spin ladder operators, $\vec\Pi_{\mathrm{nil},x}=\frac{2\pi \tilde{S}_{\Psi,+}}{h}$, and satisfy $\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t$; the number operator is $\tilde\Pi_{\mathrm{id},-}$, with $\tilde\Pi_{\mathrm{id},-}^2=\tilde\Pi_{\mathrm{id},-}$; and the fermion-parity grading is the inner automorphism by $(-1)^F=i\vec e_z=\frac{2\pi 2\,\tilde{S}_{\Psi,z}}{h}$, an element of $\mathbb{B}_{\Psi}$.
 - No bosonic mode exists in $\mathbb{B}$. The target relation $[\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}]=e_t$ has $\mathrm{Sc}=1$, while the scalar part of any commutator is $0$; and the computed commutator $i\vec e_z$ is not central, so no rescaling of it can produce a central value either.
-- For the free spin-$\tfrac12$ field built on the algebra, the equal-time anticommutator is $\delta_{\mu\nu}\delta^{(3)}(\vec r_{12})$ and the equal-time commutator is a nonzero kernel at every $\vec r_{12}\ne 0$. The spatial part of $\mathcal{D}_p$ and the mass term are odd in $\vec p$ and cancel, while the time part is even and survives.
+- For the free spin-$\tfrac12$ field built on the algebra, the equal-time anticommutator is $\delta_{\imath\jmath}\delta^{(3)}(\vec r_{12})$ and the equal-time commutator is a nonzero kernel at every $\vec r_{12}\ne 0$. The spatial part of $\mathcal{D}_p$ and the mass term are odd in $\vec p$ and cancel, while the time part is even and survives.
 - The sign in $\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y}=e_t\mp\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}$ is the sign of the antiparticle term in the Hamiltonian and the sign that decides positivity of the norm.
 
 **Transcribed, not derived.**
@@ -300,7 +300,7 @@ The table also displays what the framework does and does not explain. The *spin 
 
 The spin–statistics theorem pairs half-integer spin with anticommutators and integer spin with commutators. In the biquaternion framework the spin half of the theorem is algebraic and exact: $SU(2)$ of unit real quaternions is the double cover of the rotation group, the rotor through $2\pi$ is $-e_t$, half-integer-spin representations live on the odd tensor powers of the defining module, where $-e_t$ acts as $-\mathrm{id}$, and integer-spin representations live on the material sector $\mathbb{B}_{\Phi}$ and on the even tensor powers, where it acts as $+\mathrm{id}$. The framework's finite algebra also contains one fermionic mode, whose ladder operators are the spin ladder operators, $\vec\Pi_{\mathrm{nil},x}=\frac{2\pi \tilde{S}_{\Psi,+}}{h}$, and whose parity grading is the Hermitian element $(-1)^F=i\vec e_z=\frac{2\pi 2\,\tilde{S}_{\Psi,z}}{h}$; no bosonic mode exists, because a canonical commutator would be central and scalar-free.
 
-The statistics half is transcribed with the parents' field. For the free spin-$\tfrac12$ field, the equal-time anticommutator is $\delta_{\mu\nu}\delta^{(3)}(\vec r_{12})$, the spatial part of $\mathcal{D}_p$ and the mass term cancelling as odd functions of $\vec p$; the equal-time commutator, by contrast, leaves the kernel $i\,mF(\vec r_{12})\,\vec e_x-i\sum_\eta\vec e_\eta\vec e_z\,\nabla_\eta F(\vec r_{12})$ and fails to vanish at any spatial separation. The same sign that selects the anticommutator selects the positive sign in $\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y}=e_t-\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}$, and hence a bounded Hamiltonian and a positive-definite norm.
+The statistics half is transcribed with the parents' field. For the free spin-$\tfrac12$ field, the equal-time anticommutator is $\delta_{\imath\jmath}\delta^{(3)}(\vec r_{12})$, the spatial part of $\mathcal{D}_p$ and the mass term cancelling as odd functions of $\vec p$; the equal-time commutator, by contrast, leaves the kernel $i\,mF(\vec r_{12})\,\vec e_x-i\sum_\eta\vec e_\eta\vec e_z\,\nabla_\eta F(\vec r_{12})$ and fails to vanish at any spatial separation. The same sign that selects the anticommutator selects the positive sign in $\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y}=e_t-\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}$, and hence a bounded Hamiltonian and a positive-definite norm.
 
 What the framework establishes is that the two pairings which survive the theorem are the two inequivalent structures the algebra actually carries, and that the $2\pi$ sign which distinguishes them is an element of the algebra. What it does not establish is that the algebra forces the pairing; spin–statistics is exhibited in biquaternionic form, not derived from it. The one-mode coincidence is the visible edge of the question, and it is left as the article's central open problem.
 
@@ -330,13 +330,13 @@ What the framework establishes is that the two pairings which survive the theore
 | $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ | Positive- and negative-frequency amplitudes, elements of $\mathbb{B}$ (from the parents) |
 | $\sum_r\tilde{Ξ}_{\pm}^{(r)}\mathrm{Sc}(\tilde{Ξ}_{\pm}^{(r)*}\tilde{Ξ})=(\mathcal{D}_p\pm m)(\tilde{Ξ}\,i\vec e_x)$ | Spin sums as completeness identities, for every $\tilde{Ξ}\in\mathbb{B}$ |
 | $\theta_{\mathrm{pwp}}=\vec p\cdot\vec r_{12}$, $\vec r_{12}=X-Y$, $X=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Phase and spatial separation in the equal-time brackets |
-| $\{\tilde{Ξ}_{\mathrm{fop},\mu},\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}\}=\delta_{\mu\nu}\delta^{(3)}(\vec r_{12})$ | Local equal-time anticommutator |
+| $\{\tilde{Ξ}_{\mathrm{fop},\imath},\tilde{Ξ}_{\mathrm{fop},\jmath}^{\dagger}\}=\delta_{\imath\jmath}\delta^{(3)}(\vec r_{12})$ | Local equal-time anticommutator |
 | $[\tilde{Ξ}_{\mathrm{fop}},\tilde{Ξ}_{\mathrm{fop}}^{\dagger}]\,\tilde{Ξ}=i\,mF\,\tilde{Ξ}\vec e_x-i\sum_\eta\vec e_\eta\,\tilde{Ξ}\vec e_z\,\nabla_\eta F$ | Nonlocal equal-time commutator acting on a test element $\tilde{Ξ}$ |
 | $F(\vec r_{12})=\frac{m}{2\pi^2|\vec r_{12}|}\mathrm{Ki}_{1}(m|\vec r_{12}|)$ | Surviving commutator kernel ($m>0$) |
 | $\mathcal{G}_{\mathrm A}(x-y)$, $G_{\mathrm{S}}(x-y)$ | Antisymmetric (Pauli–Jordan-type) and symmetric two-point kernels |
 | $H=\sum_r\int\frac{d^3p}{h^{3}}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})+E_0$ | Normal-ordered Hamiltonian (Fermi choice) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_\mu\lvert Q_{1\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_{\imath}\lvert Q_{1\imath}\rvert^{2}$ |
 
 ## Further Reading
 

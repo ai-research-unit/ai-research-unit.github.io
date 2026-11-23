@@ -109,7 +109,7 @@ $$
 
 **So the map moves the $i$ and flips the time.** The material coordinate carries the imaginary unit on the temporal coefficient; the image carries it on the three spatial coefficients and carries the temporal coefficient real. This is the corpus's Wick rotation stated as a map of elements rather than as a substitution, and the sign on $c t'$ is the sign of the norm flip computed above, not a separate convention.
 
-The inertias are the two signatures. With $\delta_{\mu\nu}=(1,1,1,1)$ the interval is a contraction with the unit metric on each side, and the two readings are
+The inertias are the two signatures. With $\delta_{\imath\jmath}=(1,1,1,1)$ the interval is a contraction with the unit metric on each side, and the two readings are
 
 $$
 \langle\tilde R_\Phi\rangle_\natural=-c^{2}{t'}^{2}+r_x^{2}+r_y^{2}+r_z^{2},
@@ -153,7 +153,7 @@ The two slices are the fixed spaces of the star, and multiplication by $i$ is th
 | $H(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | the Hermitian form, the weight |
 | $2\,\mathrm{Sc}$ | the trace of the $2\times2$ image |
 | $\tilde R_\Phi=i\,r'_t e_t+\vec r$ | the material coordinate |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | the unit metric, read off the multiplication |
+| $\delta_{\imath\jmath}=(1,1,1,1)$ | the unit metric, read off the multiplication |
 
 ## Further Reading
 

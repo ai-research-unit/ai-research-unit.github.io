@@ -18,7 +18,7 @@ The article assumes the base of *Algebra and Element Conventions*, the products 
 
 **The rule.** No Pauli matrix and no gamma matrix is written in the body of an article. The two formulations are legacy, and they appear in two places only: in a legacy section of an article, and in this article, which states them once so that a legacy section has something to refer to.
 
-**What the rule forbids.** The arrays $\sigma_\eta$ and $\gamma_\mu$. A symbol built on them and used as an object of the algebra, such as $\gamma_5$ or $\sigma_3$. A sentence that reads a biquaternion off such an array by name.
+**What the rule forbids.** The arrays $\sigma_\eta$ and $\gamma_{\imath}$. A symbol built on them and used as an object of the algebra, such as $\gamma_5$ or $\sigma_3$. A sentence that reads a biquaternion off such an array by name.
 
 **What the rule allows.** The names of the frames. The Pauli frame and the gamma frame are bases and not arrays, and the names stay. A reference to a legacy section stays, and so does a historical remark inside one.
 
@@ -44,15 +44,15 @@ $$
 $$
 Both families and their products are written here because the object displayed is an operator of that family, and the matrix is what a computation multiplies.
 
-**The sixteen basis operators are the sixteen two-sided products.** The pair $(\mu,\nu)$ names the basis two-sided operator $e_\mu[\,]e_\nu$, $X\mapsto e_\mu Xe_\nu$, and its matrix is the basis operator $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ in the axis-free frame and $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ in the Peirce one. The sixteen basis operators are the matrices of a basis: by the generation theorem of that article, §*The Sixteen Products as a Basis*, they are linearly independent and they span the ambient $\operatorname{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$, of complex dimension sixteen. Every operator of $\mathbb{B}$ is a complex combination of the sixteen basis operators, and the sixteen coefficients are its coordinates in that basis.
+**The sixteen basis operators are the sixteen two-sided products.** The pair $(\imath,\jmath)$ names the basis two-sided operator $e_{\imath}[\,]e_{\jmath}$, $X\mapsto e_{\imath} Xe_{\jmath}$, and its matrix is the basis operator $L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}}$ in the axis-free frame and $L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}$ in the Peirce one. The sixteen basis operators are the matrices of a basis: by the generation theorem of that article, §*The Sixteen Products as a Basis*, they are linearly independent and they span the ambient $\operatorname{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$, of complex dimension sixteen. Every operator of $\mathbb{B}$ is a complex combination of the sixteen basis operators, and the sixteen coefficients are its coordinates in that basis.
 
 **The coefficients of a two-sided operator are an outer product.** Expanding in the basis operators,
 $$
-L_{\tilde Q}R_{\tilde P,\Phi}=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}R_{e_\nu},
+L_{\tilde Q}R_{\tilde P,\Phi}=\sum_{\imath,\jmath}Q_{\imath} P_{\jmath}\,L_{e_{\imath}}R_{e_{\jmath}},
 \qquad
 c\bigl(L_{\tilde Q}R_{\tilde P,\Phi}\bigr)=QP^{\mathsf T},
 $$
-so the coefficient array $c(T)$ of the operator, in the basis of the sixteen basis operators, has rank one and its length is $\ell(T)=\operatorname{rank}c(T)=1$. A general operator has $1\le\ell\le4$; a sum of two products is one product exactly when the two outer products add to a rank-one array; and the linear space of the sixteen coefficients is the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$, the basis operator $L_{e_\mu}R_{e_\nu}$ being the image of $e_\mu\otimes e_{\mathrm{opp},\nu}$.
+so the coefficient array $c(T)$ of the operator, in the basis of the sixteen basis operators, has rank one and its length is $\ell(T)=\operatorname{rank}c(T)=1$. A general operator has $1\le\ell\le4$; a sum of two products is one product exactly when the two outer products add to a rank-one array; and the linear space of the sixteen coefficients is the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$, the basis operator $L_{e_{\imath}}R_{e_{\jmath}}$ being the image of $e_{\imath}\otimes e_{\mathrm{opp},\jmath}$.
 
 | object | writing | meaning |
 |---|---|---|
@@ -78,7 +78,7 @@ The subscript names the copy: $M_4(\mathbb{C})_{\mathbb{B}_L}$ is the left copy,
 
 **The copy is named, the ambient is not.** The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B}_L}$, and the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B}_R}$. Each is a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$, and each is the commutant of the other. $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the ambient operator algebra and is never called a biquaternion algebra. The subscript names the copy, so $M_4(\mathbb{C})_{\mathbb{B}_L}$ is $\mathbb{B}_L$ and $M_4(\mathbb{C})_{\mathbb{B}_R}$ is $\mathbb{B}_R$; a subscript $L$ or $R$ alone names no algebra.
 
-**The frame label names the display.** $\mathsf{M}_{4L}$ names the operator and carries no frame. The array of that operator is written with the frame low, $L_{\mathrm{axf}}(\tilde Q)$ and $L_{\mathrm{pau}}(\tilde Q)$, or with the frame named in the sentence; an array of no named frame is not written. A bare $\mathsf{M}_4$ is written for neither the operator's family nor the frame. The two symbols $L_{e_\mu}$ and $L_{\mathrm{axf},e_\mu}$ are the multiplication and its matrix, and they are separated by the frame label alone.
+**The frame label names the display.** $\mathsf{M}_{4L}$ names the operator and carries no frame. The array of that operator is written with the frame low, $L_{\mathrm{axf}}(\tilde Q)$ and $L_{\mathrm{pau}}(\tilde Q)$, or with the frame named in the sentence; an array of no named frame is not written. A bare $\mathsf{M}_4$ is written for neither the operator's family nor the frame. The two symbols $L_{e_{\imath}}$ and $L_{\mathrm{axf},e_{\imath}}$ are the multiplication and its matrix, and they are separated by the frame label alone.
 
 ## The $M_4(\mathbb{C})$ Axis-Free Representation
 
@@ -94,13 +94,13 @@ e_t=1\otimes1,\qquad \vec e_x=1\otimes\vec e_x,\qquad \vec e_y=1\otimes\vec e_y,
 $$
 the vector units on the right being those of $\mathbb{H}$, and the scalar imaginary $i=i\otimes1$ being central and occurring only as a coefficient. The four are a $\mathbb{C}$-basis, and the element is
 $$
-\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_\mu=q_\mu+iq'_\mu,
+\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_{\imath}=q_{\imath}+iq'_{\imath},
 $$
 the developed form of *Algebra and Element Conventions*, §*The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. This basis is called the **coefficient basis**, because its four coordinates are the coefficients of the developed form, and it is called **axis-free**, because no one of the three vector directions enters by a rule of its own.
 
 **The multiplication table.** Every matrix below is read from this table and from nothing else:
 
-| $e_\mu e_\nu$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
+| $e_{\imath} e_{\jmath}$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
 | $e_t$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 | $\vec e_x$ | $\vec e_x$ | $-e_t$ | $\vec e_z$ | $-\vec e_y$ |
@@ -109,23 +109,23 @@ the developed form of *Algebra and Element Conventions*, §*The Element, the Coo
 
 Each of the sixteen products is $\pm$ one of the four basis elements, and the signs are those of the quaternion algebra, $\vec e_\eta^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. No complex number appears in the table, because $i$ is central and is carried by the coefficients. In the compact form,
 $$
-e_\mu e_\nu=\sum_\rho\varepsilon_{\mu\nu}^{\ \ \rho}\,e_\rho,\qquad
-\varepsilon_{\mu\nu}^{\ \ \rho}\in\{0,+1,-1\},
+e_{\imath} e_{\jmath}=\sum_\rho\varepsilon_{\imath\jmath}^{\ \ \rho}\,e_\rho,\qquad
+\varepsilon_{\imath\jmath}^{\ \ \rho}\in\{0,+1,-1\},
 $$
 and the array $\varepsilon$ is the algebra: the table is that array written out.
 
 **Why this frame is first, and why the physics articles print it.** The construction uses the multiplication of the algebra and nothing else: no idempotent is chosen, no direction is singled out, no root is fixed. The display is therefore unique once the basis is, and the basis is the one the algebra comes with. That is why it is the first display of the article, and why a computation that must not favour an axis starts here. The physics articles of the series print it for the same reason: a formula of general physics distinguishes no spatial direction, and a display that distinguishes one would carry a datum the formula does not contain. *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused* makes that argument in full.
 
-**The label.** Write $L_{\mathrm{axf}}(\tilde Q)$ and $L_{\mathrm{axf},e_\mu}$, and $R_{\mathrm{axf}}(\tilde Q)$ and $R_{\mathrm{axf},e_\mu}$. The label is a name in lowercase roman letters, like $\mathrm{opp}$ and $\mathrm{fop}$, not an exponent: $L_{\mathrm{axf},\vec e_x}$ is the left matrix of $\vec e_x$, and its square is written $(L_{\mathrm{axf},\vec e_x})^2$. The label is carried by the family and not by the entry, because the frame is a property of the carrier and the side is a property of the action.
+**The label.** Write $L_{\mathrm{axf}}(\tilde Q)$ and $L_{\mathrm{axf},e_{\imath}}$, and $R_{\mathrm{axf}}(\tilde Q)$ and $R_{\mathrm{axf},e_{\imath}}$. The label is a name in lowercase roman letters, like $\mathrm{opp}$ and $\mathrm{fop}$, not an exponent: $L_{\mathrm{axf},\vec e_x}$ is the left matrix of $\vec e_x$, and its square is written $(L_{\mathrm{axf},\vec e_x})^2$. The label is carried by the family and not by the entry, because the frame is a property of the carrier and the side is a property of the action.
 
 ### The Left Family
 
-**The definition.** The $\nu$-th column of the left matrix is the coordinate column of the product $\tilde Qe_\nu$,
+**The definition.** The ${\jmath}$-th column of the left matrix is the coordinate column of the product $\tilde Qe_{\jmath}$,
 $$
-L_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qe_\nu\bigr]_{\mu},\qquad
+L_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=\bigl[\tilde Qe_{\jmath}\bigr]_{\imath},\qquad
 L_{\mathrm{axf}}(\tilde Q):=\bigl(\bigl[\tilde Qe_t\bigr]\;\bigl[\tilde Q\vec e_x\bigr]\;\bigl[\tilde Q\vec e_y\bigr]\;\bigl[\tilde Q\vec e_z\bigr]\bigr),
 $$
-which is the definition of *Element and Operator Representations: The Three Actions*, §*The Two Sides*, read in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The four matrices of the units are $L_{\mathrm{axf},e_\mu}:=L_{\mathrm{axf}}(e_\mu)$.
+which is the definition of *Element and Operator Representations: The Three Actions*, §*The Two Sides*, read in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The four matrices of the units are $L_{\mathrm{axf},e_{\imath}}:=L_{\mathrm{axf}}(e_{\imath})$.
 
 **The display.** For $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$,
 $$
@@ -158,20 +158,20 @@ Each is a column of the multiplication table written as an array: the $z$ matrix
 $$
 L_{\mathrm{axf}}(\tilde Q_1\tilde Q_2)=L_{\mathrm{axf}}(\tilde Q_1)L_{\mathrm{axf}}(\tilde Q_2),
 $$
-which is associativity and nothing else: the $\nu$-th column of the left side is the coordinate column of $(\tilde Q_1\tilde Q_2)e_\nu=\tilde Q_1(\tilde Q_2e_\nu)$, and the $\nu$-th column of the right side is $\tilde Q_1$ applied to the coordinate column of $\tilde Q_2e_\nu$. The first column recovers $\tilde Q$, so the assignment is injective, and its image is the four-dimensional complex subalgebra $\mathbb{B}_L$ of $M_4(\mathbb{C})$ whose unit is $\mathrm I_4$.
+which is associativity and nothing else: the ${\jmath}$-th column of the left side is the coordinate column of $(\tilde Q_1\tilde Q_2)e_{\jmath}=\tilde Q_1(\tilde Q_2e_{\jmath})$, and the ${\jmath}$-th column of the right side is $\tilde Q_1$ applied to the coordinate column of $\tilde Q_2e_{\jmath}$. The first column recovers $\tilde Q$, so the assignment is injective, and its image is the four-dimensional complex subalgebra $\mathbb{B}_L$ of $M_4(\mathbb{C})$ whose unit is $\mathrm I_4$.
 
 **The transpose is the conjugation.** In this frame,
 $$
 L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural}),\qquad
 \tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z,
 $$
-because transposing swaps the $(\mu,\nu)$ and the $(\nu,\mu)$ entries, and those two carry opposite signs exactly when $s_\mu s_\nu=-1$, with $s_t=1$ and $s_x=s_y=s_z=-1$; multiplying the three vector coefficients by $-1$ produces that sign pattern. The dagger gives the star conjugate, $L_{\mathrm{axf}}(\tilde Q)^{\dagger}=L_{\mathrm{axf}}(\tilde Q^{*})$, because the entrywise conjugate of the display is the display of the element with $\overline{Q_\mu}$ in place of $Q_\mu$. Both identities are properties of this frame and not of the operator: the Peirce frame has neither, §*The Two Tensor Factors*.
+because transposing swaps the $(\imath,\jmath)$ and the $(\jmath,\imath)$ entries, and those two carry opposite signs exactly when $s_{\imath} s_{\jmath}=-1$, with $s_t=1$ and $s_x=s_y=s_z=-1$; multiplying the three vector coefficients by $-1$ produces that sign pattern. The dagger gives the star conjugate, $L_{\mathrm{axf}}(\tilde Q)^{\dagger}=L_{\mathrm{axf}}(\tilde Q^{*})$, because the entrywise conjugate of the display is the display of the element with $\overline{Q_{\imath}}$ in place of $Q_{\imath}$. Both identities are properties of this frame and not of the operator: the Peirce frame has neither, §*The Two Tensor Factors*.
 
 ### The Right Family
 
-**The definition.** The $\nu$-th column of the right matrix is the coordinate column of $\vec e_\nu\tilde Q$,
+**The definition.** The ${\jmath}$-th column of the right matrix is the coordinate column of $\vec e_{\jmath}\tilde Q$,
 $$
-R_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\vec e_\nu\tilde Q\bigr]_{\mu},\qquad
+R_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=\bigl[\vec e_{\jmath}\tilde Q\bigr]_{\imath},\qquad
 R_{\mathrm{axf}}(\tilde Q):=\bigl(\bigl[e_t\tilde Q\bigr]\;\bigl[\vec e_x\tilde Q\bigr]\;\bigl[\vec e_y\tilde Q\bigr]\;\bigl[\vec e_z\tilde Q\bigr]\bigr),
 $$
 the same construction with the order of the two factors exchanged.
@@ -197,13 +197,13 @@ $$
 R_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 R_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$
-Each is a signed permutation matrix of determinant $1$ and trace $4\delta_{\mu t}$, and the four are a basis of $\mathbb{B}_R$.
+Each is a signed permutation matrix of determinant $1$ and trace $4\delta_{\imath t}$, and the four are a basis of $\mathbb{B}_R$.
 
 **The law is reversed.** For all $\tilde Q_1,\tilde Q_2$,
 $$
 R_{\mathrm{axf}}(\tilde Q_1\tilde Q_2)=R_{\mathrm{axf}}(\tilde Q_2)R_{\mathrm{axf}}(\tilde Q_1),
 $$
-because associativity turns $\vec e_\nu(\tilde Q_1\tilde Q_2)$ into $(\vec e_\nu\tilde Q_1)\tilde Q_2$, so the columns compose in the reverse order. Powers and inverses are not reversed, since they involve one element only: $R_{\mathrm{axf}}(\tilde Q^n)=R_{\mathrm{axf}}(\tilde Q)^n$ and $R_{\mathrm{axf}}(\tilde Q^{-1})=R_{\mathrm{axf}}(\tilde Q)^{-1}$. The products of the unit matrices follow the reverse order too, $R_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}=R_{\mathrm{axf},e_\nu e_\mu}$, so $R_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}=-R_{\mathrm{axf},\vec e_z}$, the opposite sign to the left family.
+because associativity turns $\vec e_{\jmath}(\tilde Q_1\tilde Q_2)$ into $(\vec e_{\jmath}\tilde Q_1)\tilde Q_2$, so the columns compose in the reverse order. Powers and inverses are not reversed, since they involve one element only: $R_{\mathrm{axf}}(\tilde Q^n)=R_{\mathrm{axf}}(\tilde Q)^n$ and $R_{\mathrm{axf}}(\tilde Q^{-1})=R_{\mathrm{axf}}(\tilde Q)^{-1}$. The products of the unit matrices follow the reverse order too, $R_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}}=R_{\mathrm{axf},e_{\jmath} e_{\imath}}$, so $R_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}=-R_{\mathrm{axf},\vec e_z}$, the opposite sign to the left family.
 
 **The two families commute.** For all $\tilde Q_1,\tilde Q_2$,
 $$
@@ -219,7 +219,7 @@ R(\tilde Q)=\mathsf W^{-1}L(\tilde Q)^{\mathsf T}\mathsf W,
 $$
 where $\mathsf W$ is the Gram matrix of the symmetric form $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ on the frame (*Element and Operator Representations: The Three Actions*, §*The Two Sides*).
 
-**The switch of this frame.** On the four units, $\beta(e_\mu,e_\nu)=\operatorname{Sc}(e_\mu e_\nu)$ is $+1$ on $e_t$, $-1$ on the three vector units and $0$ off the diagonal, so
+**The switch of this frame.** On the four units, $\beta(e_{\imath},e_{\jmath})=\operatorname{Sc}(e_{\imath} e_{\jmath})$ is $+1$ on $e_t$, $-1$ on the three vector units and $0$ off the diagonal, so
 $$
 \mathsf W=D=\operatorname{diag}(1,-1,-1,-1),
 \qquad
@@ -262,7 +262,7 @@ and the same values hold for $R$, since the stitch changes neither a trace nor a
 
 ### The Sixteen Products in This Frame
 
-**They are real.** The sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are real signed permutation matrices: four entries $\pm1$, one in each row and each column, of determinant $1$, of Hilbert–Schmidt norm two, and mutually orthogonal. Their entries are the structure constants themselves, so the product table of the algebra and the multiplication of the sixteen arrays are one table.
+**They are real.** The sixteen products $L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}}$ are real signed permutation matrices: four entries $\pm1$, one in each row and each column, of determinant $1$, of Hilbert–Schmidt norm two, and mutually orthogonal. Their entries are the structure constants themselves, so the product table of the algebra and the multiplication of the sixteen arrays are one table.
 
 **The sixteen, one by one.** Each is a signed permutation matrix, with four entries $\pm1$, and each is written here with both factors named:
 
@@ -308,8 +308,8 @@ $$
 
 **The product closes on the basis operator.** They multiply by multiplying the left factors together and the right factors together,
 $$
-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}\,L_{\mathrm{axf},e_\rho}R_{\mathrm{axf},e_\sigma}
-=L_{\mathrm{axf},e_\mu e_\rho}R_{\mathrm{axf},e_\sigma e_\nu},
+L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}}\,L_{\mathrm{axf},e_\rho}R_{\mathrm{axf},e_\sigma}
+=L_{\mathrm{axf},e_{\imath} e_\rho}R_{\mathrm{axf},e_\sigma e_{\jmath}},
 $$
 which is again a basis operator, so the sixteen span a sixteen-dimensional algebra: the whole ambient $M_4(\mathbb{C})$, as §*The Clifford Structure* reads it.
 
@@ -326,20 +326,20 @@ which is again a basis operator, so the sixteen span a sixteen-dimensional algeb
 | $L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$ | $(\vec e_z,-\vec e_y,-\vec e_x,e_t)$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ | $(-\vec e_x,-e_t,-\vec e_z,-\vec e_y)$ |
 | $L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_z}$ | $(-\vec e_y,-\vec e_z,-e_t,-\vec e_x)$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}$ | $(-e_t,\vec e_x,\vec e_y,-\vec e_z)$ |
 
-A column records where one basis unit goes, so the table is the multiplication table read column by column: the first column of $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, for instance, is the coordinate column of $e_\mu e_\nu$.
+A column records where one basis unit goes, so the table is the multiplication table read column by column: the first column of $L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}}$, for instance, is the coordinate column of $e_{\imath} e_{\jmath}$.
 
-**The same sixteen basis operators in the Pauli frame.** A basis operator does not change with the frame: the pair $(\mu,\nu)$ names one basis two-sided operator $e_\mu[\,]e_\nu$ in both displays, so the sixteen basis operators correspond one to one and index for index,
+**The same sixteen basis operators in the Pauli frame.** A basis operator does not change with the frame: the pair $(\imath,\jmath)$ names one basis two-sided operator $e_{\imath}[\,]e_{\jmath}$ in both displays, so the sixteen basis operators correspond one to one and index for index,
 $$
-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}\;\longleftrightarrow\;L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu},
-\qquad \mu,\nu\in\{t,x,y,z\},
+L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}}\;\longleftrightarrow\;L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}},
+\qquad \imath,\jmath\in\{t,x,y,z\},
 $$
-and the coefficients $Q_\mu P_\nu$ of a two-sided operator are the same sixteen numbers in both frames. Only the arrays differ: here real signed permutations, in the Peirce frame complex arrays with entries in $\{0,\pm1,\pm i\}$. §*The Switch Between the Two Frames* writes the sixteen expressions one by one, each an equality of the Pauli basis operator with its axis-free partner conjugated, and §*The Legacy Pauli Gamma Formulation* reads the same sixteen as the products of the five frame basis operators.
+and the coefficients $Q_{\imath} P_{\jmath}$ of a two-sided operator are the same sixteen numbers in both frames. Only the arrays differ: here real signed permutations, in the Peirce frame complex arrays with entries in $\{0,\pm1,\pm i\}$. §*The Switch Between the Two Frames* writes the sixteen expressions one by one, each an equality of the Pauli basis operator with its axis-free partner conjugated, and §*The Legacy Pauli Gamma Formulation* reads the same sixteen as the products of the five frame basis operators.
 
 **The cost.** No $2\times2$ block appears, no Peirce idempotent is visible, and the sixteen arrays are all of one kind, so no five of them are singled out. The frame that gives the transpose dictionary takes away the block and the gamma frame; the next sections buy them back.
 
 **No gamma set is chosen here.** In the Peirce display the five frame basis operators are selected by hand from the sixteen products, and that selection is what writes a Clifford algebra and a gamma map that look like the printed ones. In the axis-free display the sixteen products are all real signed permutations of determinant $1$, and no five of them are marked out: the gamma map is a choice of frame, not a structure of the algebra. The metric sign vector $\varepsilon$ and the substitution $Q_t=i q'_t$ on the material sector are untouched by a change of frame, because a change of frame is a change of display.
 
-**The index is written low in both frames.** The label of a frame basis operator is the coordinate index of its left multiplier, written low as in $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}}$, and the index is never raised or lowered, in either frame.
+**The index is written low in both frames.** The label of a frame basis operator is the coordinate index of its left multiplier, written low as in $iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}$, and the index is never raised or lowered, in either frame.
 
 **The two articles of the frame.** *$M_4(\mathbb{C})$ Axis-Free Representation* gives the matrices, the product, the trace, the determinant and the six subspaces as matrix conditions; *$M_4(\mathbb{C})$ Axis-Free Representation : Operators* gives the operators at the three levels, the sixteen basis operators and the coefficient matrix.
 
@@ -433,7 +433,7 @@ $$
 symmetric and involutive, $\mathsf S^{\mathsf T}=\mathsf S=\mathsf S^{-1}$, of trace $2$ and determinant $-1$; in the coefficient basis the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$. It is a linear involution of the carrier, not an algebra map, not one of the sixteen basis operators and not a one-sided multiplication. Then
 $$
 \mathsf M_{4R}(\tilde Q)=\mathsf S\,\mathsf M_{4L}(\tilde Q)^{\mathsf T}\mathsf S^{-1},\qquad
-R_{\mathrm{pau},e_\nu}=\mathsf S\,{L_{\mathrm{pau},e_\nu}}^{\mathsf T}\,\mathsf S^{-1},
+R_{\mathrm{pau},e_{\jmath}}=\mathsf S\,{L_{\mathrm{pau},e_{\jmath}}}^{\mathsf T}\,\mathsf S^{-1},
 \qquad
 \mathsf{M}_{\mathrm{pau},4R}(\tilde Q)=R_{\mathrm{pau}}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2 .
 $$
@@ -495,10 +495,10 @@ so the algebra acts on each Peirce component by the same $2\times2$ matrix, and 
 ### The Sixteen Basis Operators in the Peirce Frame
 **The sixteen basis operators, entry by entry.** The basis operators multiply left multipliers with left multipliers and right with right,
 $$
-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}\,L_{\mathrm{pau},e_\rho}R_{\mathrm{pau},e_\sigma}
-=L_{\mathrm{pau},e_\mu e_\rho}R_{\mathrm{pau},e_\sigma e_\nu},
+L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}\,L_{\mathrm{pau},e_\rho}R_{\mathrm{pau},e_\sigma}
+=L_{\mathrm{pau},e_{\imath} e_\rho}R_{\mathrm{pau},e_\sigma e_{\jmath}},
 $$
-so each basis operator is fixed by its left unit $e_\mu$ and its right unit $e_\nu$, and the four left matrices and the four right matrices generate all sixteen. In blocks of $2\times2$,
+so each basis operator is fixed by its left unit $e_{\imath}$ and its right unit $e_{\jmath}$, and the four left matrices and the four right matrices generate all sixteen. In blocks of $2\times2$,
 $$
 L_{\mathrm{pau},e_t}=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
 L_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
@@ -511,16 +511,16 @@ R_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
 R_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
 R_{\mathrm{pau},\vec e_z}=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
 $$
-each a $2\times2$ block repeated twice, $I_2\otimes\mathsf{M}_2(e_\mu)=\operatorname{diag}\bigl(\mathsf{M}_2(e_\mu),\mathsf{M}_2(e_\mu)\bigr)$ for the left matrices and $\mathsf{M}_2(e_\nu)^{\mathsf T}\otimes I_2=\operatorname{diag}\bigl(\mathsf{M}_2(e_\nu)^{\mathsf T},\mathsf{M}_2(e_\nu)^{\mathsf T}\bigr)$ for the right ones.
+each a $2\times2$ block repeated twice, $I_2\otimes\mathsf{M}_2(e_{\imath})=\operatorname{diag}\bigl(\mathsf{M}_2(e_{\imath}),\mathsf{M}_2(e_{\imath})\bigr)$ for the left matrices and $\mathsf{M}_2(e_{\jmath})^{\mathsf T}\otimes I_2=\operatorname{diag}\bigl(\mathsf{M}_2(e_{\jmath})^{\mathsf T},\mathsf{M}_2(e_{\jmath})^{\mathsf T}\bigr)$ for the right ones.
 
 **The sixteen basis operators are Kronecker products.** Combining the two tensor forms,
 $$
-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}=\bigl(I_2\otimes\mathsf{M}_2(e_\mu)\bigr)\bigl(\mathsf{M}_2(e_\nu)^{\mathsf T}\otimes I_2\bigr)
-=\mathsf{M}_2(e_\nu)^{\mathsf T}\otimes\mathsf{M}_2(e_\mu),
+L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}=\bigl(I_2\otimes\mathsf{M}_2(e_{\imath})\bigr)\bigl(\mathsf{M}_2(e_{\jmath})^{\mathsf T}\otimes I_2\bigr)
+=\mathsf{M}_2(e_{\jmath})^{\mathsf T}\otimes\mathsf{M}_2(e_{\imath}),
 $$
-so each basis operator is a Kronecker product: the right unit's matrix, transposed, in the first slot, and the left unit's matrix in the second. The left factor fixes the second slot and the right factor the first, and the basis operator is the pair $(\mu,\nu)$ read in the two slots:
+so each basis operator is a Kronecker product: the right unit's matrix, transposed, in the first slot, and the left unit's matrix in the second. The left factor fixes the second slot and the right factor the first, and the basis operator is the pair $(\imath,\jmath)$ read in the two slots:
 
-| basis operator | $\mathsf{M}_2(e_\nu)^{\mathsf T}\otimes \mathsf{M}_2(e_\mu)$ | basis operator | $\mathsf{M}_2(e_\nu)^{\mathsf T}\otimes \mathsf{M}_2(e_\mu)$ |
+| basis operator | $\mathsf{M}_2(e_{\jmath})^{\mathsf T}\otimes \mathsf{M}_2(e_{\imath})$ | basis operator | $\mathsf{M}_2(e_{\jmath})^{\mathsf T}\otimes \mathsf{M}_2(e_{\imath})$ |
 |---|---|---|---|
 | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ | $I_2\otimes I_2$ | $L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},e_t}$ | $I_2\otimes \mathsf{M}_2(\vec e_y)$ |
 | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$ | $\mathsf{M}_2(\vec e_x)^{\mathsf T}\otimes I_2$ | $L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_x}$ | $\mathsf{M}_2(\vec e_x)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_y)$ |
@@ -531,7 +531,7 @@ so each basis operator is a Kronecker product: the right unit's matrix, transpos
 | $L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$ | $\mathsf{M}_2(\vec e_y)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_x)$ | $L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$ | $\mathsf{M}_2(\vec e_y)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_z)$ |
 | $L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}$ | $\mathsf{M}_2(\vec e_z)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_x)$ | $L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}$ | $\mathsf{M}_2(\vec e_z)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_z)$ |
 
-All sixteen are invertible, of rank four and of Hilbert–Schmidt norm two, because $\langle X\otimes Y\rangle_*^{1/2}=\langle X\rangle_*^{1/2}\langle Y\rangle_*^{1/2}$ and every $\mathsf{M}_2(e_\mu)$ has norm $\sqrt2$; the only one of trace $4$ is $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I_4$, and the other fifteen have trace $0$.
+All sixteen are invertible, of rank four and of Hilbert–Schmidt norm two, because $\langle X\otimes Y\rangle_*^{1/2}=\langle X\rangle_*^{1/2}\langle Y\rangle_*^{1/2}$ and every $\mathsf{M}_2(e_{\imath})$ has norm $\sqrt2$; the only one of trace $4$ is $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I_4$, and the other fifteen have trace $0$.
 
 **The sixteen, one by one.** Written out in full:
 
@@ -599,7 +599,7 @@ $$
 \boxed{\;L_{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,L_{\mathrm{pau}}(\tilde Q)\,C_{\Pi}^{-1},\qquad
 R_{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,R_{\mathrm{pau}}(\tilde Q)\,C_{\Pi}^{-1}\;}
 $$
-and inversely $L_{\mathrm{pau}}(\tilde Q)=C_{\Pi}^{-1}L_{\mathrm{axf}}(\tilde Q)C_{\Pi}$, $R_{\mathrm{pau}}(\tilde Q)=C_{\Pi}^{-1}R_{\mathrm{axf}}(\tilde Q)C_{\Pi}$. The reason is one line: the $\nu$-th column of a regular matrix is the coordinate column of a product, and a change of basis rewrites every coordinate column by the same matrix. Neither side changes, and both displays change by the same conjugation. The direction is the one used throughout the series: the axis-free display is the one on the left of the equality and the Peirce display is its conjugate, so a formula written in $\mathrm{axf}$ and a formula written in $\mathrm{pau}$ are carried into each other without a second convention.
+and inversely $L_{\mathrm{pau}}(\tilde Q)=C_{\Pi}^{-1}L_{\mathrm{axf}}(\tilde Q)C_{\Pi}$, $R_{\mathrm{pau}}(\tilde Q)=C_{\Pi}^{-1}R_{\mathrm{axf}}(\tilde Q)C_{\Pi}$. The reason is one line: the ${\jmath}$-th column of a regular matrix is the coordinate column of a product, and a change of basis rewrites every coordinate column by the same matrix. Neither side changes, and both displays change by the same conjugation. The direction is the one used throughout the series: the axis-free display is the one on the left of the equality and the Peirce display is its conjugate, so a formula written in $\mathrm{axf}$ and a formula written in $\mathrm{pau}$ are carried into each other without a second convention.
 
 **The inverse.** The inverse is
 $$
@@ -621,7 +621,7 @@ C_{\Pi}^{-1}=\begin{pmatrix}
 $$
 and the two off-diagonal blocks are equal in each matrix: the switch does not mix the two Peirce components independently, it pairs them symmetrically. The block form is what makes the switch two $2\times2$ computations and not one $4\times4$ one.
 
-**The eight unit matrices.** Apply the switch to each unit matrix, using $C_{\Pi}L_{\mathrm{axf},e_\mu}C_{\Pi}^{-1}=L_{\mathrm{pau},e_\mu}$ and $C_{\Pi}R_{\mathrm{axf},e_\mu}C_{\Pi}^{-1}=R_{\mathrm{pau},e_\mu}$. In the axis-free frame the four left matrices are real signed permutations and the four right ones are real signed permutations, and after the switch,
+**The eight unit matrices.** Apply the switch to each unit matrix, using $C_{\Pi}L_{\mathrm{axf},e_{\imath}}C_{\Pi}^{-1}=L_{\mathrm{pau},e_{\imath}}$ and $C_{\Pi}R_{\mathrm{axf},e_{\imath}}C_{\Pi}^{-1}=R_{\mathrm{pau},e_{\imath}}$. In the axis-free frame the four left matrices are real signed permutations and the four right ones are real signed permutations, and after the switch,
 $$
 L_{\mathrm{axf},e_t}\mapsto L_{\mathrm{pau},e_t}=\mathrm I_4,\qquad
 L_{\mathrm{axf},\vec e_x}\mapsto L_{\mathrm{pau},\vec e_x},\qquad
@@ -701,7 +701,7 @@ $$
 L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}=C_{\Pi}^{-1}\,L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}\,C_{\Pi}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}
 $$
 
-The sixteen equalities were checked by multiplying the three matrices of each line; the middle expression is the axis-free display of §*The Sixteen Products in This Frame* conjugated by $C_{\Pi}^{-1}$ on the left and $C_{\Pi}$ on the right, and the right-hand array is the Pauli display of §*The Sixteen Basis Operators in the Peirce Frame*. The pair $(\mu,\nu)$ is the same operator on both sides of each line, $e_\mu[\,]e_\nu$, so the list is a dictionary of arrays and not a table of operators. Two of the sixteen have the same array in both frames, $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=\mathrm I_4$ and $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}=L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}=\operatorname{diag}(-1,1,1,-1)$, two more differ by the single sign $L_{\mathrm{axf}}=-L_{\mathrm{pau}}$ at $(t,y)$ and $(z,x)$, and the other twelve differ in their entries. The explanation is commutation: $L_{e_t}R_{e_t}=\mathrm I_4$ commutes with everything, and $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}=\operatorname{diag}(-1,1,1,-1)$ commutes with $C_{\Pi}$, since both fix the two $2\times2$ blocks that $C_{\Pi}$ pairs. The two basis operators at $(t,y)$ and $(z,x)$ are the ones that anticommute with $C_{\Pi}$, which is why their two displays differ by $-1$ and not in their entries.
+The sixteen equalities were checked by multiplying the three matrices of each line; the middle expression is the axis-free display of §*The Sixteen Products in This Frame* conjugated by $C_{\Pi}^{-1}$ on the left and $C_{\Pi}$ on the right, and the right-hand array is the Pauli display of §*The Sixteen Basis Operators in the Peirce Frame*. The pair $(\imath,\jmath)$ is the same operator on both sides of each line, $e_{\imath}[\,]e_{\jmath}$, so the list is a dictionary of arrays and not a table of operators. Two of the sixteen have the same array in both frames, $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=\mathrm I_4$ and $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}=L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}=\operatorname{diag}(-1,1,1,-1)$, two more differ by the single sign $L_{\mathrm{axf}}=-L_{\mathrm{pau}}$ at $(t,y)$ and $(z,x)$, and the other twelve differ in their entries. The explanation is commutation: $L_{e_t}R_{e_t}=\mathrm I_4$ commutes with everything, and $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}=\operatorname{diag}(-1,1,1,-1)$ commutes with $C_{\Pi}$, since both fix the two $2\times2$ blocks that $C_{\Pi}$ pairs. The two basis operators at $(t,y)$ and $(z,x)$ are the ones that anticommute with $C_{\Pi}$, which is why their two displays differ by $-1$ and not in their entries.
 
 **A worked element.** Take $\tilde Q=e_t+\vec e_x$, so that $Q_t=Q_x=1$ and $Q_y=Q_z=0$. In the axis-free frame,
 $$
@@ -720,12 +720,12 @@ which is the block $\mathsf{M}_2(e_t+\vec e_x)=\begin{pmatrix}1&-i\\-i&1\end{pma
 
 ## The Clifford Structure
 
-**The Clifford algebra is the basis operator algebra.** The sixteen basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ are linearly independent, and their complex span is all of $M_4(\mathbb{C})$. They multiply by multiplying the left multipliers together and the right multipliers together,
+**The Clifford algebra is the basis operator algebra.** The sixteen basis operators $L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}$ are linearly independent, and their complex span is all of $M_4(\mathbb{C})$. They multiply by multiplying the left multipliers together and the right multipliers together,
 $$
-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}\,L_{\mathrm{pau},e_\rho}R_{\mathrm{pau},e_\sigma}
-=L_{\mathrm{pau},e_\mu e_\rho}R_{\mathrm{pau},e_\sigma e_\nu};
+L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}\,L_{\mathrm{pau},e_\rho}R_{\mathrm{pau},e_\sigma}
+=L_{\mathrm{pau},e_{\imath} e_\rho}R_{\mathrm{pau},e_\sigma e_{\jmath}};
 $$
-the result is again a left multiplication and a right multiplication, so the assignment $e_\mu\otimes e_{\mathrm{opp},\nu}\mapsto L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ is an algebra isomorphism
+the result is again a left multiplication and a right multiplication, so the assignment $e_{\imath}\otimes e_{\mathrm{opp},\jmath}\mapsto L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}$ is an algebra isomorphism
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$
@@ -739,17 +739,17 @@ iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\qquad
 iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\qquad
 -iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}\;}
 $$
-Each is an invertible multiple of a basis operator; the left factor is invertible and the right factor a spatial unit, written $\vec e_{\mathrm{spt}(\mu)}$ with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$. The order is timelike, the three spatial, chirality. For the first and the last the left factor is $e_t$, so the basis operator collapses to a single right multiplication, $iR_{\mathrm{pau},\vec e_x}$ and $-iR_{\mathrm{pau},\vec e_z}$, and the two spellings are the same operator. In the Peirce frame the five are monomial matrices, written out in §*The Legacy Pauli Gamma Formulation*; in the axis-free frame they are $i$ times real signed permutation matrices, displayed there too, and the conjugation of §*The Switch Between the Two Frames* carries the whole basis operator algebra with it.
+Each is an invertible multiple of a basis operator; the left factor is invertible and the right factor a spatial unit, written $\vec e_{\mathrm{spt}(\imath)}$ with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$. The order is timelike, the three spatial, chirality. For the first and the last the left factor is $e_t$, so the basis operator collapses to a single right multiplication, $iR_{\mathrm{pau},\vec e_x}$ and $-iR_{\mathrm{pau},\vec e_z}$, and the two spellings are the same operator. In the Peirce frame the five are monomial matrices, written out in §*The Legacy Pauli Gamma Formulation*; in the axis-free frame they are $i$ times real signed permutation matrices, displayed there too, and the conjugation of §*The Switch Between the Two Frames* carries the whole basis operator algebra with it.
 
 **The anticommutation relations.**
 $$
-\{iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}},iL_{\mathrm{pau},e_\nu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\nu)}}\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{iL_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\imath)}},iL_{\mathrm{pau},e_{\jmath}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\jmath)}}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (iL_{\mathrm{pau},\vec e_\eta}R_{\mathrm{pau},\vec e_y})^2=-I_4,
 $$
 $$
 -iR_{\mathrm{pau},\vec e_z}=i\,(iR_{\mathrm{pau},\vec e_x})(iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y})(iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y})(iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}),
 $$
-with $\varepsilon=(1,-1,-1,-1)$ the plain weight. No index is raised or lowered, and a contravariant index is not allowed: the metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, which is the identity, and the sign is carried by the weight inside the product. The relations are unchanged by the conjugation, so the same six lines hold with the label $\mathrm{axf}$ throughout, and that is the spelling the physics articles print.
+with $\varepsilon=(1,-1,-1,-1)$ the plain weight. No index is raised or lowered, and a contravariant index is not allowed: the metric is the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, which is the identity, and the sign is carried by the weight inside the product. The relations are unchanged by the conjugation, so the same six lines hold with the label $\mathrm{axf}$ throughout, and that is the spelling the physics articles print.
 
 **The sixteen products are the sixteen basis operators.** The five frame basis operators are five basis operators up to a factor $i$, and the sixteen products of the five are the sixteen basis operators:
 
@@ -763,7 +763,7 @@ with $\varepsilon=(1,-1,-1,-1)$ the plain weight. No index is raised or lowered,
 
 Each row lists the basis operators of one grade, and the counts are $1+4+6+4+1=16$. The same sixteen lines with the label $\mathrm{axf}$ list the same sixteen operators: the grade is a property of the product and not of the display, and the physics articles read the table with $\mathrm{axf}$ labels. The frame is one frame among many: another orthogonal pair $(\beta,\delta)$ gives another five basis operators, the relations survive, and the basis operator labels do not. The proof, and the freedom in the choice of frame, are in *Operators Acting on Two Sides*, §*Composition and the Two Closures*.
 
-**A basis operator is written as its two multipliers, never as a letter.** The basis operator is $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$, for two unit indices, and the frame basis operator of the coordinate $x_\mu$ is $iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}}$ with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$; the chirality basis operator is $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$. The arrow follows the index: $\mathrm{spt}(\mu)$ is spatial for every $\mu$, so the right multiplier of a frame basis operator always carries one, $R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}}$; the left multiplier carries one only when its index is written out as spatial, as in $L_{\mathrm{pau},\vec e_\eta}$, while the generic $L_{\mathrm{pau},e_\mu}$ stays plain because $\mu=t$ is the scalar unit $e_t=1$. No single letter stands for a frame basis operator in either part of the corpus: a letter there collides with the basis operators and with the gauge generators $T_a=\tfrac12\vec e_a$ of the unification articles. The factor $i$ belongs to the basis operator, so a product of two basis operators multiplies the two multipliers on each side, $iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}}\,iL_{\mathrm{pau},e_\nu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\nu)}}=-L_{\mathrm{pau},e_\mu}L_{\mathrm{pau},e_\nu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\nu)}}$, and the sign is carried by the product, not by a symbol.
+**A basis operator is written as its two multipliers, never as a letter.** The basis operator is $L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}$, for two unit indices, and the frame basis operator of the coordinate $x_{\imath}$ is $iL_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\imath)}}$ with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$; the chirality basis operator is $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$. The arrow follows the index: $\mathrm{spt}(\imath)$ is spatial for every $\mu$, so the right multiplier of a frame basis operator always carries one, $R_{\mathrm{pau},\vec e_{\mathrm{spt}(\imath)}}$; the left multiplier carries one only when its index is written out as spatial, as in $L_{\mathrm{pau},\vec e_\eta}$, while the generic $L_{\mathrm{pau},e_{\imath}}$ stays plain because ${\imath}=t$ is the scalar unit $e_t=1$. No single letter stands for a frame basis operator in either part of the corpus: a letter there collides with the basis operators and with the gauge generators $T_a=\tfrac12\vec e_a$ of the unification articles. The factor $i$ belongs to the basis operator, so a product of two basis operators multiplies the two multipliers on each side, $iL_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\imath)}}\,iL_{\mathrm{pau},e_{\jmath}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\jmath)}}=-L_{\mathrm{pau},e_{\imath}}L_{\mathrm{pau},e_{\jmath}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\imath)}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\jmath)}}$, and the sign is carried by the product, not by a symbol.
 
 **The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot_{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}_{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is not used at all, neither for the opposite algebra nor for the operator norm, which is written $\lVert A\rVert$ (*Index and Notation Conventions*, mathematical corpus, §*The Labels*). The competing norms keep their own labels, $\langle A\rangle_*^{1/2}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\langle A\rangle_*^{1/2}$, $\lVert A\rVert_{*}$.
 
@@ -775,7 +775,7 @@ e_t\mapsto L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t},\qquad
 \vec e_z\mapsto L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},e_t},\qquad
 i\mapsto L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
 $$
-Its image is the real span of the eight basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_t}$ and $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_z}$, of real dimension $8$, and it satisfies $\iota_{\mathrm{Cl}}(i\tilde Q)=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}\,\iota_{\mathrm{Cl}}(\tilde Q)$. It is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: it is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, not a second representation of $\mathbb{B}$. It agrees with left multiplication on the four real units and sends the scalar imaginary to right multiplication by $\vec e_z$. In the axis-free frame the same map reads $\iota_{\mathrm{Cl}}(e_\mu)=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_t}$ and $\iota_{\mathrm{Cl}}(i)=L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, because the conjugation carries the whole basis operator algebra with it, and that is the spelling the physics articles print.
+Its image is the real span of the eight basis operators $L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_t}$ and $L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},\vec e_z}$, of real dimension $8$, and it satisfies $\iota_{\mathrm{Cl}}(i\tilde Q)=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}\,\iota_{\mathrm{Cl}}(\tilde Q)$. It is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: it is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, not a second representation of $\mathbb{B}$. It agrees with left multiplication on the four real units and sends the scalar imaginary to right multiplication by $\vec e_z$. In the axis-free frame the same map reads $\iota_{\mathrm{Cl}}(e_{\imath})=L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_t}$ and $\iota_{\mathrm{Cl}}(i)=L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, because the conjugation carries the whole basis operator algebra with it, and that is the spelling the physics articles print.
 
 **The basis, read in basis operators.** On the eight real units the reading is
 
@@ -790,9 +790,9 @@ The three quaternion units become the three spacelike bivectors and the three im
 
 **The odd part.** The reading lands in the even part. Multiplication by the fixed basis operator $iR_{\mathrm{axf},\vec e_x}$ reaches the odd part, and the two real sectors separate: $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Psi}$ is the vector space, and $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Phi}$ the trivector space. So a four-vector is $iR_{\mathrm{axf},\vec e_x}$ times the image of $w\in\mathbb{B}_{\Psi}$, and a trivector is $iR_{\mathrm{axf},\vec e_x}$ times the image of $w\in\mathbb{B}_{\Phi}$. The basis operator $iR_{\mathrm{axf},\vec e_x}$ is the one choice in the odd half of the reading, and it is fixed by the representation. The same holds with the Peirce label, $iR_{\mathrm{pau},\vec e_x}$ times the image of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.
 
-**Lorentz generators.** For $\mu\neq\nu$ the two frame basis operators anticommute, $\{iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}},iL_{\mathrm{axf},e_\nu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\nu)}}\}=0$, so the commutator is twice the product, and
+**Lorentz generators.** For ${\imath}\neq\jmath$ the two frame basis operators anticommute, $\{iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}},iL_{\mathrm{axf},e_{\jmath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\jmath)}}\}=0$, so the commutator is twice the product, and
 $$
-\sigma_{\mu\nu}=\tfrac14\bigl[iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}},iL_{\mathrm{axf},e_\nu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\nu)}}\bigr]=\tfrac12\,iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}}\,iL_{\mathrm{axf},e_\nu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\nu)}}=-\tfrac12\,L_{\mathrm{axf},e_\mu}L_{\mathrm{axf},e_\nu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\nu)}}
+\sigma_{\imath\jmath}=\tfrac14\bigl[iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}},iL_{\mathrm{axf},e_{\jmath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\jmath)}}\bigr]=\tfrac12\,iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}\,iL_{\mathrm{axf},e_{\jmath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\jmath)}}=-\tfrac12\,L_{\mathrm{axf},e_{\imath}}L_{\mathrm{axf},e_{\jmath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\jmath)}}
 $$
 is half a bivector. Read in basis operators and in biquaternions,
 
@@ -815,13 +815,13 @@ $$
 $$
 The identity uses $\operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the reduction formula of §*The Isomorphism*. Both were checked on a general element with complex coefficients.
 
-**A matrix frame is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $\mathsf X\,(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}})\,\mathsf X^{-1}$ with $\mathsf X$ invertible. A change of frame is a change of basis, and the normal forms are those of §*The Operator $L_{\tilde Q}R_{\tilde P,\Phi}$* in *Operators Acting on Two Sides*. No statement of the corpus depends on the basis written.
+**A matrix frame is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $\mathsf X\,(iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}})\,\mathsf X^{-1}$ with $\mathsf X$ invertible. A change of frame is a change of basis, and the normal forms are those of §*The Operator $L_{\tilde Q}R_{\tilde P,\Phi}$* in *Operators Acting on Two Sides*. No statement of the corpus depends on the basis written.
 
 **The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by a chosen matrix frame. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}\mathsf M_2(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen time generator. The two real sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and the $i r'_t$ metric are part of the data. The frame is internal: it is a set of basis operators, not an array of matrices carried from outside. The Clifford algebra is recovered from these data; the data are not recovered from the algebra.
 
-**Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{B}_{\Phi}$).** The series has exactly two coordinate frames, and they are not to be mixed. Both are fixed, with their coordinate and their interval, in *Frame and Metric Conventions*, and neither is a matrix frame. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, the same in both.
+**Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{B}_{\Phi}$).** The series has exactly two coordinate frames, and they are not to be mixed. Both are fixed, with their coordinate and their interval, in *Frame and Metric Conventions*, and neither is a matrix frame. There is one metric, the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, the same in both.
 
-- The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$; on the material case $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so $Q_t^2=-(r'_{t})^2$. Its metric is the unit metric, $(1,1,1,1)$ on the four $Q_\mu$, and every basis operator of this display squares to $+I_4$.
+- The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_{\imath}\in\mathbb{C}$; on the material case $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so $Q_t^2=-(r'_{t})^2$. Its metric is the unit metric, $(1,1,1,1)$ on the four $Q_{\imath}$, and every basis operator of this display squares to $+I_4$.
 - The **$\mathbb{B}_{\Phi}$ frame** is the material real frame, $x_0=r'_{t}$ and $x_\eta=q_\eta$, with $Q_t=i q'_t$. Its metric is the same unit metric; the interval reads $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and the plain weight of the basis operators is $(1,-1,-1,-1)$, which is not a metric.
 
 The five frame basis operators are the ones of §*The Clifford Structure* in the $\mathbb{B}_{\Phi}$ frame, and their three spatial squares are $-I_4$ there. In the $\mathbb{B}$ frame the four basis operators that all square to $+I_4$ are
@@ -833,15 +833,15 @@ and §*The Legacy Pauli Gamma Formulation* prints the $\mathbb{B}_{\Phi}$ arrays
 
 The d'Alembertian is one operator, $\Box_\Phi=\partial^2/\partial R_t^2+\Delta_\Phi=\Delta_\Phi-\partial^2/\partial x_0^2$, and only its reading in the frame changes. A frame display in the series is in the $\mathbb{B}_{\Phi}$ frame unless it says otherwise. The other uses of the word are not coordinate frames: the five generators are the image of the Clifford map and are not a coordinate frame, the **axis-free** and **Peirce** frames are the two bases that fix the matrix display, and a **rest frame** is a physical observer.
 
-**The slash is not used.** The Dirac slash is not part of the notation of the corpus. A contraction is written out with the index repeated in the same position, as the basis operator sum below for a momentum. No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and $Q_t=i q'_t$ is substituted only on the material sector $\mathbb{B}_{\Phi}$. A multi-slot object is written with every slot low, in the order of its definition: row or output first, column or input second; a tetrad is frame first, world second, and a structure constant is output first. An inverse matrix is written $X^{-1}$, so the inverse metric is $(g^{-1})_{\mu\nu}$ and never a second symbol $g_{\mu\nu}$. In both frames the momentum contraction is a basis operator sum,
+**The slash is not used.** The Dirac slash is not part of the notation of the corpus. A contraction is written out with the index repeated in the same position, as the basis operator sum below for a momentum. No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and $Q_t=i q'_t$ is substituted only on the material sector $\mathbb{B}_{\Phi}$. A multi-slot object is written with every slot low, in the order of its definition: row or output first, column or input second; a tetrad is frame first, world second, and a structure constant is output first. An inverse matrix is written $X^{-1}$, so the inverse metric is $(g^{-1})_{\imath\jmath}$ and never a second symbol $g_{\imath\jmath}$. In both frames the momentum contraction is a basis operator sum,
 $$
-\sum_\mu iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}}p_\mu=i\bigl(L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}p_t+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}p_x+L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}p_y+L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}p_z\bigr),
+\sum_{\imath} iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}p_{\imath}=i\bigl(L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}p_t+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}p_x+L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}p_y+L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}p_z\bigr),
 $$
 so the frame is visible in the formula.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, $Q_\mu$ or $x_\mu$, not to the array. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, $Q_{\imath}$ or $x_{\imath}$, not to the array. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.
 
 The gammas are the five frame basis operators of §*The Clifford Structure* written as arrays, and the section writes them in both frames: first the Peirce arrays, which are the ones the gamma literature prints, and then the axis-free ones, which are the display of the body.
 
@@ -864,7 +864,7 @@ $$
 \gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
-They satisfy $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $(\gamma_\eta)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. In the Pauli form the same five are
+They satisfy $\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4$, $(\gamma_\eta)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. In the Pauli form the same five are
 $$
 \gamma_0=\sigma_1\otimes I_2,\qquad
 \gamma_\eta=i\,\sigma_2\otimes\sigma_\eta,\qquad
@@ -886,8 +886,8 @@ The entries are $\pm i$ or $0$ in both frames, and the axis-free arrays are exac
 
 **The display, and the relation between the two.** Both arrays of each of the five are printed above, and the reason is the same for both: the Peirce array is the one a reader can compare with a textbook, and the axis-free array is the one the physics articles multiply. The two arrays of one operator are conjugates,
 $$
-\gamma_{\mathrm{axf},\mu}=C_{\Pi}\,\gamma_{\mathrm{pau},\mu}\,C_{\Pi}^{-1},\qquad
-\gamma_{\mathrm{pau},\mu}=C_{\Pi}^{-1}\,\gamma_{\mathrm{axf},\mu}\,C_{\Pi},
+\gamma_{\mathrm{axf},\imath}=C_{\Pi}\,\gamma_{\mathrm{pau},\imath}\,C_{\Pi}^{-1},\qquad
+\gamma_{\mathrm{pau},\imath}=C_{\Pi}^{-1}\,\gamma_{\mathrm{axf},\imath}\,C_{\Pi},
 $$
 with $C_{\Pi}$ the change of §*The Switch Between the Two Frames*, $\det C_{\Pi}=-\tfrac14$ and $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$. Every identity of this section holds in both displays, because a conjugation preserves products, anticommutators, traces, determinants and spectra; what it does not preserve is the reading of a single entry. In the axis-free display $\gamma_0$ is $iR_{\mathrm{axf},\vec e_x}$ and the four others are four more signed permutations times $i$, so the printed array shows nothing of the Pauli structure. The gamma map is therefore a display of the five basis operators and not the five basis operators themselves.
 
@@ -895,7 +895,7 @@ with $C_{\Pi}$ the change of §*The Switch Between the Two Frames*, $\det C_{\Pi
 
 **The three uses of the two letters.** $L_a$ and $R_b$ are the left and the right multiplier, an operator. $\mathsf M_4^{L}$ and $\mathsf M_4^{R}$ are the left and the right regular matrix, an array. $\tilde Q_L$, $\tilde Q_R$, $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ are the chirality of an element, and only the third applies to every element of the algebra.
 
-**The frames do not touch the five.** These matrices are one set, the same in both coordinate frames: $\gamma_0^2=+I_4$ and $\gamma_\eta^2=-I_4$, with $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$. What a frame changes is the coordinate that feeds the derivative and the interval it forms. A formula that mixes the two metrics belongs to neither frame; the matrices carry no such label.
+**The frames do not touch the five.** These matrices are one set, the same in both coordinate frames: $\gamma_0^2=+I_4$ and $\gamma_\eta^2=-I_4$, with $\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4$. What a frame changes is the coordinate that feeds the derivative and the interval it forms. A formula that mixes the two metrics belongs to neither frame; the matrices carry no such label.
 
 **The sixteen products.** The five frame basis operators are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen basis operators:
 
@@ -918,7 +918,7 @@ with $C_{\Pi}$ the change of §*The Switch Between the Two Frames*, $\det C_{\Pi
 | $3$ | $\gamma_1\gamma_2\gamma_3$ | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$ | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}=i\,\gamma_1\gamma_2\gamma_3$ | $L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_y}$ |
 | $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$ | $L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
 
-Each row reads the basis operator as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$. The last column is the same operator in the axis-free frame, and it is the one the body writes: the pair $(\mu,\nu)$ is the same in both columns, and only the array changes.
+Each row reads the basis operator as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$. The last column is the same operator in the axis-free frame, and it is the one the body writes: the pair $(\imath,\jmath)$ is the same in both columns, and only the array changes.
 
 **The Clifford reading in gammas.**
 $$
@@ -932,37 +932,37 @@ The only minus sits on $i$ itself, and it fixes the sign of the last four rows o
 
 **Lorentz generators and reversal.**
 $$
-\sigma_{\mu\nu}=\tfrac14[\gamma_\mu,\gamma_\nu]=\tfrac12\gamma_\mu\gamma_\nu\quad(\mu\neq\nu),
+\sigma_{\imath\jmath}=\tfrac14[\gamma_{\imath},\gamma_{\jmath}]=\tfrac12\gamma_{\imath}\gamma_{\jmath}\quad(\imath\neq\jmath),
 $$
-and Clifford reversal, $\mathrm{rev}(\gamma_{\mu_1}\cdots\gamma_{\mu_\eta})=\gamma_{\mu_\eta}\cdots\gamma_{\mu_1}$, is quaternion conjugation under the reading.
+and Clifford reversal, $\mathrm{rev}(\gamma_{\imath_1}\cdots\gamma_{\imath_\eta})=\gamma_{\imath_\eta}\cdots\gamma_{\imath_1}$, is quaternion conjugation under the reading.
 
-**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}p_t+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}p_x+L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}p_y+L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and the same contraction in the $\mathbb{B}$ coordinate is $\sum_\mu \gamma_\mu\partial/\partial R_\mu$. The two differ by the coordinate, $Q_t=i q'_t$, and not by the matrices: $\partial/\partial x_\mu$ and $\partial/\partial R_\mu$ already name the frame, so the array needs no label to say which is meant. The axis-free spelling of the same sums is the one with the $\mathrm{axf}$ basis operators, and it is the one the body writes.
+**The contractions.** In gamma notation a momentum contraction is $\sum_{\imath} \gamma_{\imath} p_{\imath}=i(L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}p_t+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}p_x+L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}p_y+L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}p_z)$, a derivative contraction is $i\sum_{\imath} \gamma_{\imath}\partial/\partial x_{\imath}$ with $x_0=q'_t$, and the same contraction in the $\mathbb{B}$ coordinate is $\sum_{\imath} \gamma_{\imath}\partial/\partial R_{\imath}$. The two differ by the coordinate, $Q_t=i q'_t$, and not by the matrices: $\partial/\partial x_{\imath}$ and $\partial/\partial R_{\imath}$ already name the frame, so the array needs no label to say which is meant. The axis-free spelling of the same sums is the one with the $\mathrm{axf}$ basis operators, and it is the one the body writes.
 
 Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}
++\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
-The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_{\imath}$, so that $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha$, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_{\imath}=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## The $2\times2$ Pauli Representation
 
 **Read last, and not because it is small.** The $2\times2$ display is the algebra itself, not an operator on it. It is placed last because it is best read after both $4\times4$ displays have shown what a matrix of an operator is, and because its matrices are the block of the Pauli display: the object it displays is the one the other two displays act on.
@@ -1063,17 +1063,17 @@ Q_z&Q_y&-Q_x&Q_t
 $$
 Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, its transpose is the conjugation, and its sixteen products are real. Nothing is chosen but the basis the algebra already carries. This is the display of record for the physics articles of the series, because a formula of general physics distinguishes no spatial direction.
 
-**The Pauli representation comes second.** Its frame is the Peirce basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S L(\tilde Q)^{\mathsf T}\mathsf S^{-1}$. The four left matrices $L_{\mathrm{pau},e_\mu}$, the four right matrices $R_{\mathrm{pau},e_\nu}$ and the sixteen basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ are written out. It is the display the gamma literature prints: $\gamma_0=\sigma_1\otimes I_2$, $\gamma_\eta=i\sigma_2\otimes\sigma_\eta$ and $\gamma_5=-\sigma_3\otimes I_2$, five basis operators of the frame, written in both frames in §*The Legacy Pauli Gamma Formulation*.
+**The Pauli representation comes second.** Its frame is the Peirce basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S L(\tilde Q)^{\mathsf T}\mathsf S^{-1}$. The four left matrices $L_{\mathrm{pau},e_{\imath}}$, the four right matrices $R_{\mathrm{pau},e_{\jmath}}$ and the sixteen basis operators $L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}$ are written out. It is the display the gamma literature prints: $\gamma_0=\sigma_1\otimes I_2$, $\gamma_\eta=i\sigma_2\otimes\sigma_\eta$ and $\gamma_5=-\sigma_3\otimes I_2$, five basis operators of the frame, written in both frames in §*The Legacy Pauli Gamma Formulation*.
 
 **The switch comes between them, and belongs to both.** It is $C_{\Pi}$ and its inverse, of determinant $-\tfrac14$ and normalisation $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12I_4$, with $L_{\mathrm{axf}}=C_{\Pi}L_{\mathrm{pau}}C_{\Pi}^{-1}$ and $R_{\mathrm{axf}}=C_{\Pi}R_{\mathrm{pau}}C_{\Pi}^{-1}$. It is two $2\times2$ blocks, it carries the eight unit matrices and the sixteen basis operators, and it leaves the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ alone. What it does not carry is a single entry: the transpose dictionary, the reality of the sixteen arrays and the disappearance of the cross blocks are properties of the axis-free frame, the block form and the monomial five are properties of the Peirce frame.
 
-**The Clifford structure is the algebra of the two-sided operators.** $e_\mu\otimes e_{\mathrm{opp},\nu}\mapsto L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame basis operators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five frame basis operators are $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$, $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ and $-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, and a change of frame is a change of basis. The Clifford reading is the $\mathbb{R}$-linear comparison with the even subalgebra; in the axis-free frame $e_\mu\mapsto L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_t}$ and $i\mapsto L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed basis operator: $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Psi}$ is the vector space, and $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Phi}$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma_{\mu\nu}=\tfrac12\,iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}}\,iL_{\mathrm{axf},e_\nu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\nu)}}$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace has real part $2\,\mathrm{Re}\operatorname{Tr}\mathsf M_2(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q)$, twice the real part of the $2\times2$ trace.
+**The Clifford structure is the algebra of the two-sided operators.** $e_{\imath}\otimes e_{\mathrm{opp},\jmath}\mapsto L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame basis operators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five frame basis operators are $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$, $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ and $-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, and a change of frame is a change of basis. The Clifford reading is the $\mathbb{R}$-linear comparison with the even subalgebra; in the axis-free frame $e_{\imath}\mapsto L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_t}$ and $i\mapsto L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed basis operator: $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Psi}$ is the vector space, and $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Phi}$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma_{\imath\jmath}=\tfrac12\,iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}\,iL_{\mathrm{axf},e_{\jmath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\jmath)}}$ for ${\imath}\neq\jmath$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace has real part $2\,\mathrm{Re}\operatorname{Tr}\mathsf M_2(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q)$, twice the real part of the $2\times2$ trace.
 
-**No five of the sixteen products are singled out in the axis-free display**, so the gamma map is a display and not a structure of the algebra; §*The Switch Between the Two Frames* pairs each of the sixteen with its Peirce array through $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}=C_{\Pi}^{-1}L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}C_{\Pi}$.
+**No five of the sixteen products are singled out in the axis-free display**, so the gamma map is a display and not a structure of the algebra; §*The Switch Between the Two Frames* pairs each of the sixteen with its Peirce array through $L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}=C_{\Pi}^{-1}L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}}C_{\Pi}$.
 
 **The $2\times2$ isomorphism comes last.** It is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ and $\mathsf{M}_2(i)=iI_2$, forced by $\vec e_\eta^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$. It needs no frame, and it is the block of the Pauli display: the change of frame moves the block and never the image. Conjugating entries on its own is not an involution of the algebra, a bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.
 
-**The coordinate frames are two, and neither is a matrix frame.** The $\mathbb{B}$ frame reads $Q_\mu$ with $Q_t=i q'_t$; the $\mathbb{B}_{\Phi}$ frame reads $x_0=r'_{t}$ and carries the printed gammas. The metric is one, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, in both. A contraction stays in one frame, and the d'Alembertian is one operator in both.
+**The coordinate frames are two, and neither is a matrix frame.** The $\mathbb{B}$ frame reads $Q_{\imath}$ with $Q_t=i q'_t$; the $\mathbb{B}_{\Phi}$ frame reads $x_0=r'_{t}$ and carries the printed gammas. The metric is one, the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, in both. A contraction stays in one frame, and the d'Alembertian is one operator in both.
 
 **The subscript names the copy, and a bare $\mathsf{M}_4$ is not written.** A regular matrix carries the family letter $L$ or $R$ in its subscript and the frame label $\mathrm{axf}$ or $\mathrm{pau}$ in its caret.
 
@@ -1086,22 +1086,22 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 | $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
 | $\rho_L,\rho_R$ | Left and right multiplication as linear maps, $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$, $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$ |
 | $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
-| $L_{\mathrm{axf}}(\tilde Q)$, $L_{\mathrm{axf},e_\mu}$ | The left regular matrix and the matrix of the unit $e_\mu$ in the axis-free frame, the display of record |
-| $R_{\mathrm{axf}}(\tilde Q)$, $R_{\mathrm{axf},e_\mu}$ | The right regular matrix in the axis-free frame |
+| $L_{\mathrm{axf}}(\tilde Q)$, $L_{\mathrm{axf},e_{\imath}}$ | The left regular matrix and the matrix of the unit $e_{\imath}$ in the axis-free frame, the display of record |
+| $R_{\mathrm{axf}}(\tilde Q)$, $R_{\mathrm{axf},e_{\imath}}$ | The right regular matrix in the axis-free frame |
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | The stitch of the axis-free frame, $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$; the Gram matrix of $\operatorname{Sc}(XY)$ there |
 | $L_{\mathrm{pau}}(\tilde Q)=\mathsf{M}_{4L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the Peirce display |
 | $R_{\mathrm{pau}}(\tilde Q)=\mathsf{M}_{4R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S\mathsf{M}_{4L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$ | The right regular matrix in the Peirce display |
 | $\mathsf S$ | The exchange of $\vec\Pi_{\mathrm{nil},+}$ and $\vec\Pi_{\mathrm{nil},-}$ fixing $\tilde\Pi_{\mathrm{id},\pm}$; the swap of the second and third Peirce coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
-| $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ | The sixteen basis operators in the two frames; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
-| $e_\mu[\,]e_\nu$, $L_{e_\mu}R_{e_\nu}$ | The basis two-sided operator $X\mapsto e_\mu Xe_\nu$ and its matrix, the basis operator |
+| $L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}}$, $L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}$ | The sixteen basis operators in the two frames; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
+| $e_{\imath}[\,]e_{\jmath}$, $L_{e_{\imath}}R_{e_{\jmath}}$ | The basis two-sided operator $X\mapsto e_{\imath} Xe_{\jmath}$ and its matrix, the basis operator |
 | $c(T)$, $\ell(T)=\operatorname{rank}c(T)$ | The coefficient array of an operator $T$ in the basis of the sixteen basis operators and its length; $c(L_{\tilde Q}R_{\tilde P,\Phi})=QP^{\mathsf T}$ |
 | $C_{\Pi}$ | The change between the two displays, $L_{\mathrm{axf}}=C_{\Pi}L_{\mathrm{pau}}C_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$ |
 | $\tilde\Pi_{\mathrm{id},\pm}$, $\vec\Pi_{\mathrm{nil},\pm}$ | The standard pair and its two mixed units, which fix the Peirce frame |
 | $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$, $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$, $-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | The five frame basis operators, timelike, three spatial, chirality; the gammas in the axis-free spelling |
 | $\gamma_0,\gamma_1,\gamma_2,\gamma_3,\gamma_5$ | The same five as arrays, $iR_{\mathrm{pau},\vec e_x}$, $iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$, $-iR_{\mathrm{pau},\vec e_z}$ |
 | $\tilde Q_L$, $\tilde Q_R$ | The two parts of an element, $\tfrac12(\mathrm I\mp\mathsf{V}_{\mathrm{vol}})\tilde Q$, of dimension two each; the Dirac subscript $\tilde{Ξ}_{L},\tilde{Ξ}_{R}$, available on every element |
-| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_t}$, $\iota_{\mathrm{Cl}}(i)=L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
-| $\sigma_{\mu\nu}=\tfrac12\,iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}}\,iL_{\mathrm{axf},e_\nu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\nu)}}$ ($\mu\neq\nu$) | The Lorentz generators; half the bivectors of the table |
+| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_{\imath})=L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_t}$, $\iota_{\mathrm{Cl}}(i)=L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
+| $\sigma_{\imath\jmath}=\tfrac12\,iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}\,iL_{\mathrm{axf},e_{\jmath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\jmath)}}$ (${\imath}\neq\jmath$) | The Lorentz generators; half the bivectors of the table |
 
 ## Further Reading
 

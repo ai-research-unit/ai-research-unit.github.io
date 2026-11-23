@@ -8,7 +8,7 @@ The order follows the reading. The four norms are named by one letter each, with
 
 The article states conventions only; the existence and uniqueness of the word are proved in *The Complete Polar Decomposition of an N-Regular Biquaternion*, and the pairings in *The Polar Decomposition and Its Three Pairings*.
 
-**No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
+**No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_{\imath}\varepsilon_{\imath}$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
 
 ## The Four Algebraic Norms and the Unitary Convention
 
@@ -26,7 +26,7 @@ $$
 \lvert Q\rvert=\sqrt{Q\bar Q}=\sqrt{q^2+q'^2},
 $$
 
-a real and non-negative number. The bars are the modulus and not a bracket of the layer: the algebraic norms keep their bracket, $\langle Q\rangle=Q^2$ and $\langle Q\rangle_{*}=Q\bar Q$. The same bars apply to a complex coefficient of a biquaternion, $\lvert Q_\mu\rvert=\sqrt{q_\mu^2+{q'_\mu}^2}$; over $\mathbb{C}$ the square of the modulus is the Hermitian norm, $\lvert Q\rvert^2=\langle Q\rangle_{*}$.
+a real and non-negative number. The bars are the modulus and not a bracket of the layer: the algebraic norms keep their bracket, $\langle Q\rangle=Q^2$ and $\langle Q\rangle_{*}=Q\bar Q$. The same bars apply to a complex coefficient of a biquaternion, $\lvert Q_{\imath}\rvert=\sqrt{q_{\imath}^2+{q'_{\imath}}^2}$; over $\mathbb{C}$ the square of the modulus is the Hermitian norm, $\lvert Q\rvert^2=\langle Q\rangle_{*}$.
 
 **The argument of a complex element is written $\arg Q_t$.** For $Q_t\neq0$ it is the angle of the polar form, the register angle $\theta_{\mathrm{pha}}=\arg Q_t$,
 
@@ -34,7 +34,7 @@ $$
 Q_t=\lvert Q_t\rvert\,e^{i\theta_{\mathrm{pha}}},
 $$
 
-defined modulo $2\pi$; the angle is real because it is an argument, and the branch is stated where the argument is used, and the principal argument in $(-\pi,\pi]$ is written $\operatorname{Arg}Q_t$. The same letter applies to a complex coefficient of a biquaternion, $\arg Q_\mu$, with $\lvert Q_\mu\rvert$ the modulus above.
+defined modulo $2\pi$; the angle is real because it is an argument, and the branch is stated where the argument is used, and the principal argument in $(-\pi,\pi]$ is written $\operatorname{Arg}Q_t$. The same letter applies to a complex coefficient of a biquaternion, $\arg Q_{\imath}$, with $\lvert Q_{\imath}\rvert$ the modulus above.
 
 **The four algebraic norms.** Each pair gives one norm, the diagonal of its form. **One bracket, two arities:** the bracket names the form when it carries two arguments and the algebraic norm when it carries one, so the plain bracket is the form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ and the norm $\langle\tilde{Q}\rangle = \langle\tilde{Q},\tilde{Q}\rangle$, and the same holds for the Hermitian, the quaternionic and the Krein. Read with one argument, the value lies in $\mathbb{C}$ for the two bilinear norms and in $\mathbb{R}$ for the two sesquilinear norms, because a sesquilinear form has a real diagonal. The quaternionic norm has a second spelling, as the central element $\tilde{Q}\tilde{Q}^{\natural}=\langle\tilde{Q}\rangle_{\natural}e_t$; an article that writes $\langle\tilde{Q}\rangle_{\natural}=c\,e_t$ uses that spelling, with $\langle\tilde{Q}\rangle_{\natural}$ still the scalar coefficient $c$, and the two spellings name one value. The four names are those of the four forms with *norm* in place of *form*:
 
@@ -56,10 +56,10 @@ The quaternionic norm is the determinant in the $2\times2$ image and is the mult
 | the general plain sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | $H$ | the Hermitian norm $\langle\tilde{Q}\rangle_{*}$ |
 | the general quaternionic sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}$ | $\mathrm{Kr}$ | the Krein norm $\langle\tilde{Q}\rangle_{\natural*}$ |
 
-**The base bar is the square root of the Hermitian norm.** Of the four norms one is real and non-negative on every element, the Hermitian norm $H(\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}$ of inertia $(8,0)$. Its root is the base norm of the corpus:
+**The base bar is the square root of the Hermitian norm.** Of the four norms one is real and non-negative on every element, the Hermitian norm $H(\tilde{Q})=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ of inertia $(8,0)$. Its root is the base norm of the corpus:
 
 $$
-\lVert\tilde{Q}\rVert=\bigl(\langle\tilde{Q}\rangle_{*}\bigr)^{1/2}=\Bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\Bigr)^{1/2}.
+\lVert\tilde{Q}\rVert=\bigl(\langle\tilde{Q}\rangle_{*}\bigr)^{1/2}=\Bigl(\sum_{\imath}\lvert Q_{\imath}\rvert^{2}\Bigr)^{1/2}.
 $$
 
 The bars are not a fifth object beside the four. They are the Hermitian norm under a root, and the other three never take them: the plain and the quaternionic norms are complex, $P(e_t+(1+i)\vec e_x)=1-2i$ and $N(e_t+(1+i)\vec e_x)=1+2i$, and the Krein norm takes both signs, $\mathrm{Kr}(e_t+\vec e_x)=0$ and $\mathrm{Kr}(\vec e_x+e_y+e_z)=-3$. A root of such a value is not a norm.
@@ -134,7 +134,7 @@ A boost is a unit element and is not $*$-unitary: $\tilde U_{\Psi,\mathrm b}$ is
 
 **The case rule splits the glyph**, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.
 
-**The coordinates carry the letter of the unit element**: in $\mathbb{B}$ it is $\tilde U = U_te_t + U_x\vec e_x + U_y\vec e_y + U_z\vec e_z$ with $U_\mu = u_\mu + iu'_\mu$ and vector part $\vec U = \vec u + i\vec u'$; in $\mathbb{H}$ it is $\tilde u = u_te_t + u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$ with real $u_\mu$. **A coordinate carries the label of its direction**, as the base does: the scalar coordinate is $U_t$ and the vector coordinates are $U_x, U_y, U_z$, and likewise $u_t, u_x, u_y, u_z$ for the quaternion-layer element $\tilde u$; a role label is written in the upright roman where the statement names a role. **It is allowed to add subscripts when several unit elements are used**, $\tilde U_1, \tilde U_2$.
+**The coordinates carry the letter of the unit element**: in $\mathbb{B}$ it is $\tilde U = U_te_t + U_x\vec e_x + U_y\vec e_y + U_z\vec e_z$ with $U_{\imath} = u_{\imath} + iu'_{\imath}$ and vector part $\vec U = \vec u + i\vec u'$; in $\mathbb{H}$ it is $\tilde u = u_te_t + u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$ with real $u_{\imath}$. **A coordinate carries the label of its direction**, as the base does: the scalar coordinate is $U_t$ and the vector coordinates are $U_x, U_y, U_z$, and likewise $u_t, u_x, u_y, u_z$ for the quaternion-layer element $\tilde u$; a role label is written in the upright roman where the statement names a role. **It is allowed to add subscripts when several unit elements are used**, $\tilde U_1, \tilde U_2$.
 
 **The letter $u$ names a unit element and nothing else.** A velocity, a speed, a Lorentz factor and a rapidity are never written $u$ or $U$: the letter of a motion is $v$, and the four-velocity is the element $\tilde V_{\Phi}$. A $*$-unitary group is written $\mathrm{U}(1)$, $SU(2)$, $SU(3)$, and its Lie algebra in the upright roman, $\mathrm{u}(1)$, $\mathrm{su}(2)$, $\mathrm{su}(3)$.
 
@@ -181,7 +181,7 @@ The modulus is the square root of the **quaternionic** norm, and it is not the s
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | quaternionic norm | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, complex | the modulus, $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch; multiplicative; vanishing is the cone |
 | $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | Hermitian norm | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$, real and non-negative | the total size; it carries the topology and never enters the existence condition of the word |
 
-**Two warnings.** First, a square root of the Hermitian norm is the **topological norm**, not the polar modulus: the polar modulus is complex and the topological norm is real, so the two are not interchangeable. Second, the polar articles write $E^2=\sum_\mu\lvert Q_\mu\rvert^2$ for the Hermitian norm. That $E$ is not the physical energy: for a four-momentum it is $m^2c^2\cosh 2\theta_{\mathrm{rpd}}$ in the notation below, not $m^2c^4\cosh^2\theta_{\mathrm{rpd}}$. A formula that needs the energy takes it from the four-momentum, not from this $E^2$.
+**Two warnings.** First, a square root of the Hermitian norm is the **topological norm**, not the polar modulus: the polar modulus is complex and the topological norm is real, so the two are not interchangeable. Second, the polar articles write $E^2=\sum_{\imath}\lvert Q_{\imath}\rvert^2$ for the Hermitian norm. That $E$ is not the physical energy: for a four-momentum it is $m^2c^2\cosh 2\theta_{\mathrm{rpd}}$ in the notation below, not $m^2c^4\cosh^2\theta_{\mathrm{rpd}}$. A formula that needs the energy takes it from the four-momentum, not from this $E^2$.
 
 ### The Four Objects Called a Boost
 

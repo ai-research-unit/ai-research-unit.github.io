@@ -30,7 +30,7 @@ The endpoint $2\pi$. At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $\natural$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in both element articles. Every symbol is defined where it first appears, and the table at the end collects them. The time variable is $t'$, so the derivative term is $\frac{h}{2\pi} c\,\partial_{r'_t}=\frac{h}{2\pi}\,\partial_{t'}$; the element-form companion uses $r'_t$ and the two are the same equation.
+The conventions are restated here so that every sign below is checkable from this page alone. $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $\natural$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in both element articles. Every symbol is defined where it first appears, and the table at the end collects them. The time variable is $t'$, so the derivative term is $\frac{h}{2\pi} c\,\partial_{r'_t}=\frac{h}{2\pi}\,\partial_{t'}$; the element-form companion uses $r'_t$ and the two are the same equation.
 
 The parts, and their idempotents. The frame declares one direction, $\vec e_z$, in order to read the value of an element. The idempotents built from it are
 
@@ -214,7 +214,7 @@ The parent's flow, at rest. At $\theta_{\mathrm{rpd}}=0$ the two rate equations 
 
 The parameter basis and the four brackets. Two bases of the eight-dimensional tangent space at an invertible element, and one change of basis.
 
-The bracket basis. The parent decomposes $\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ into a real scalar, a central imaginary, a Hermitian element and a real vector: four objects of four different algebraic types, each carrying one physical role — scale, phase, boost connection, rotor connection.
+The bracket basis. The parent decomposes $\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$ into a real scalar, a central imaginary, a Hermitian element and a real vector: four objects of four different algebraic types, each carrying one physical role — scale, phase, boost connection, rotor connection.
 
 The parameter basis. The eight derivatives $\partial\tilde\Xi/\partial \varrho$, $\partial\tilde\Xi/\partial\theta_{\mathrm{pha}}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{rpd}}$, $\partial\tilde\Xi/\partial u_{\mathrm b}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{axr}}$, $\partial\tilde\Xi/\partial u_{\mathrm r}$ span the same eight directions.
 
@@ -232,7 +232,7 @@ What the polar action adds to this. Nothing about the equation. The E-L equation
 
 The action is first order, so not every Euler–Lagrange equation is an evolution equation. The momentum conjugate to a parameter is the coefficient multiplying that parameter's rate in the density. A parameter that appears without a rate has no momentum at all, and its equation is a relation among the remaining variables rather than a rule for its own motion.
 
-Which parameters those are is the type table's answer, and nothing else supplies it. The temporal bracket carries the momentum and the boost bracket carries the velocity; the scale and the phase carry their own rates through $\mathcal A_\mu$; the potential joins the phase bracket and the boost bracket only. So the directions the potential does not reach are the directions whose rates the density omits, and those are where the action constrains.
+Which parameters those are is the type table's answer, and nothing else supplies it. The temporal bracket carries the momentum and the boost bracket carries the velocity; the scale and the phase carry their own rates through $\mathcal A_{\imath}$; the potential joins the phase bracket and the boost bracket only. So the directions the potential does not reach are the directions whose rates the density omits, and those are where the action constrains.
 
 The count is a count of rates and not of equations. Eight parameters and eight equations, and fewer than eight rates: the difference is the number of primary constraints, read off the coefficients rather than argued. That is why the count is stated here and not derived: it is a fact about the density's linear structure.
 
@@ -369,7 +369,7 @@ What the revision of this article rests on. The three vanishing momenta and the 
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $*,\ \natural$ | Hermitian and quaternion conjugation; $\Pi_\pm^{*}=\Pi_\pm$, $\Pi_\pm^{\natural}=\Pi_\mp$ |
 | $\mathrm{Sc}$ | Scalar part |

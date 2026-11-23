@@ -6,13 +6,13 @@ The same deletion that fails in the free Proca action succeeds in the coupled on
 The covariant Proca action with the complex word substituted,
 
 $$
-S=\int\mathrm{d}^{4}\varrho\;\Bigl\{\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partial_\mu \varrho\bigr)^{2}
-+\tfrac12\varrho^{2}\sum_\mu\varepsilon_\mu\bigl(\kappa^{\mathrm{kin}}_\mu\bigr)^{2}
+S=\int\mathrm{d}^{4}\varrho\;\Bigl\{\tfrac12\sum_{\imath}\varepsilon_{\imath}\bigl(\partial_{\imath} \varrho\bigr)^{2}
++\tfrac12\varrho^{2}\sum_{\imath}\varepsilon_{\imath}\bigl(\kappa^{\mathrm{kin}}_{\imath}\bigr)^{2}
 -\tfrac12k_m^{2}\varrho^{2}\,\mathcal{V}
 +\text{(the frame's terms)}\Bigr\},
 $$
 
-with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi q}{h}A_\mu$ the mechanical phase gradient and $\mathcal V$ the invariant length's frame factor. Three blocks and the same four brackets as the Dirac chart.
+with $\kappa^{\mathrm{kin}}_{\imath}=\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi q}{h}A_{\imath}$ the mechanical phase gradient and $\mathcal V$ the invariant length's frame factor. Three blocks and the same four brackets as the Dirac chart.
 
 The amplitude's kinetic term is order two; the mass term is order zero; the phase's bracket is order zero. **So the deletion of the amplitude's kinetic term is a deletion across two orders**, which is what makes it controlled.
 
@@ -26,12 +26,12 @@ The covariant Proca action, the minimal substitution, the transverse polarisatio
 
 The word is defined for $\varrho>0$; the limit is a statement on the chart's domain; the cone is $\varrho=0$.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iq\tilde A_\mu}{h}$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iq\tilde A_{\imath}}{h}$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_{\imath}$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$.
 ## The Action in the Non-Quantum Limit: The Blocks
 | block | derivative count | order |
 |---|---|---|
-| $\tfrac12\sum_\mu\varepsilon_\mu(\partial_\mu \varrho)^{2}$ | two on the amplitude | $2$ |
-| $\tfrac12\varrho^{2}\sum_\mu\varepsilon_\mu(\kappa^{\mathrm{kin}}_\mu)^{2}$ | two on the phase | $0$ |
+| $\tfrac12\sum_{\imath}\varepsilon_{\imath}(\partial_{\imath} \varrho)^{2}$ | two on the amplitude | $2$ |
+| $\tfrac12\varrho^{2}\sum_{\imath}\varepsilon_{\imath}(\kappa^{\mathrm{kin}}_{\imath})^{2}$ | two on the phase | $0$ |
 | $-\tfrac12k_m^{2}\varrho^{2}\mathcal V$ | none, but depends on the frame | $0$ |
 | the frame's terms | two on the frame's connections | $2$ |
 
@@ -90,7 +90,7 @@ the continuity equation for the charge density and the mechanical current. It is
 Varying the amplitude. With the kinetic block deleted,
 
 $$
-\sum_\mu\varepsilon_\mu\bigl(\kappa^{\mathrm{kin}}_\mu\bigr)^{2}+k_m^{2}\mathcal V=0
+\sum_{\imath}\varepsilon_{\imath}\bigl(\kappa^{\mathrm{kin}}_{\imath}\bigr)^{2}+k_m^{2}\mathcal V=0
 \qquad\Longleftrightarrow\qquad
 \frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V ,
 $$
@@ -158,7 +158,7 @@ The three variations give the covariant transport, the mass shell with the frame
 |---|---|
 | $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The coupled word on the complex carrier |
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the density |
-| $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi qA_\mu}{h}$ | The mechanical phase gradient |
+| $\kappa^{\mathrm{kin}}_{\imath}=\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi qA_{\imath}}{h}$ | The mechanical phase gradient |
 | $\frac{h}{2\pi}\vec\kappa=\vec\pi$, $\frac{h}{2\pi} c\kappa_t=\mathcal E$ | Mechanical momentum and energy |
 | $\mathcal V$ | The invariant length's frame factor; not closed in the six angles |
 | $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
@@ -173,10 +173,10 @@ The three variations give the covariant transport, the mass shell with the frame
 ## Verification
 The amplitude's kinetic term carries two derivatives on $\varrho$; the phase's bracket carries two on the phase and none on the scale; the mass term carries none. The counts are an inspection and they are exact.
 
-For constant $A_0$ and constant $\tilde U$ the word's scale is $\varrho=\lvert A_0\rvert$, so $\partial_\mu \varrho=0$ and the block vanishes identically. The truncated action is then the full action, which is the exactness claim.
+For constant $A_0$ and constant $\tilde U$ the word's scale is $\varrho=\lvert A_0\rvert$, so $\partial_{\imath} \varrho=0$ and the block vanishes identically. The truncated action is then the full action, which is the exactness claim.
 
 The deleted block contains no phase and no potential, so both functional derivatives with respect to $\theta_{\mathrm{pha}}$ are the same expression. No rearrangement is needed.
 
-With the kinetic block deleted, the variation gives $\sum_\mu\varepsilon_\mu(\kappa^{\mathrm{kin}}_\mu)^{2}+k_m^{2}\mathcal V=0$, which is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V$; keeping the block adds $\Box_\Phi \varrho/\varrho$. The two differ by the deleted block and by nothing else.
+With the kinetic block deleted, the variation gives $\sum_{\imath}\varepsilon_{\imath}(\kappa^{\mathrm{kin}}_{\imath})^{2}+k_m^{2}\mathcal V=0$, which is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V$; keeping the block adds $\Box_\Phi \varrho/\varrho$. The two differ by the deleted block and by nothing else.
 
 No closed form for $\mathcal V$ in the six angles was derived, and no solution of the order-one system was integrated. The first omission is the parent's and is recorded as such.

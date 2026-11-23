@@ -24,7 +24,7 @@ The article reads three objects and their topology: the group, its boundary and 
 
 The norm that decides invertibility is the general quaternionic bilinear algebraic norm
 $$
-\langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},
+\langle\tilde Q\rangle_{\natural}=\sum_{\imath\in\{t,x,y,z\}}Q_{\imath}^{2},
 $$
 An element is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and its inverse is then
 $$

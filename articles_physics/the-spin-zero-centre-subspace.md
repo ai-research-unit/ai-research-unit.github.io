@@ -22,7 +22,7 @@ The second objection is that the norm should be $\lvert\lambda\rvert^{2}$ and th
 
 The third objection is that spin zero is a gap in the classification rather than a member of it. It is a member, and the algebra says so twice: the centre is a copy of $\mathbb{C}$ inside $\mathbb{B}$, and the trivial module of any group is its identity object. A gap would be a value the algebra cannot carry; spin zero is the value it carries most cheaply.
 
-The letters. The algebra is $\mathbb{B}$, real of dimension eight, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^{2}=-e_t$. The central imaginary is $i$, commuting with the units and satisfying $i^{2}=-e_t$; an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $\mathrm{Sc}$ is the scalar part. The centre is $\mathbb{B}_C=\mathbb{C}e_t$; the carrier is the real line $\mathbb{R}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$, the second being the material sector. The group of invertibles is $G=\{u:uu^{*}=e_t\}\cong\mathrm{U}(2)$, a unit real axis is $\vec u$, the generator is $A(\vec u)=\tfrac12\vec u$, and a rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A scalar field value is $\xi e_t$ with $\xi$ complex, and its polar form is $\xi=re^{i\vartheta}$.
+The letters. The algebra is $\mathbb{B}$, real of dimension eight, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^{2}=-e_t$. The central imaginary is $i$, commuting with the units and satisfying $i^{2}=-e_t$; an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_{\imath}$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $\mathrm{Sc}$ is the scalar part. The centre is $\mathbb{B}_C=\mathbb{C}e_t$; the carrier is the real line $\mathbb{R}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$, the second being the material sector. The group of invertibles is $G=\{u:uu^{*}=e_t\}\cong\mathrm{U}(2)$, a unit real axis is $\vec u$, the generator is $A(\vec u)=\tfrac12\vec u$, and a rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A scalar field value is $\xi e_t$ with $\xi$ complex, and its polar form is $\xi=re^{i\vartheta}$.
 
 Boundaries. The carrier, the closure, the character theorem, the two numbers and the multiplicity are *Introduction to the Spin-Zero Centre Subspace*; the norm, the two real forms, the isotropic lines and the polar form are *The Spin-Zero Centre Subspace and N Norm Regularity*; the double eigenvalue, the degenerate cone and the sector placement are *The Spin-Zero Centre Subspace and Spectral Regularity*; the list of three carriers and the four closure rules are *From the Spin to the Carriers and the Closures*; the two predicates and the four sectors are *Relations between the N Norm and Spectral Regularity and Degeneracy*; the multiplicativity of the norm and its vanishing on the non-invertible elements are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. The physics is read from *Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module*, *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre*, *The Centre of the Biquaternion Algebra as the Classical Sector*, *The Gauge Extension of the Central Phase: The Centre Bounds the Gauge Group* and *The Higgs Mechanism in Biquaternionic Form*. The other two carriers are read in *Introduction to the Spin-Half Bispinors Spaces* and *Introduction to the Spin-One Anti-Hermitian Subspace*, and the doubling of the phase belongs to *The Quadratic Map and the Singular Sets*. No dynamics, no potential, no mass value and no quantum postulate appear below.
 
@@ -260,13 +260,13 @@ What the restriction discards. Three of the four complex coefficients. They are 
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
-=\Big(\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\xi\Big)e_t+\frac{2\pi i\,ϙ}{h}\,\xi\,\tilde F ,
+=\Big(\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\xi\Big)e_t+\frac{2\pi i\,ϙ}{h}\,\xi\,\tilde F ,
 $$
 
 and the second term is a pure vector, so the centre is not invariant under that operator whenever the field strength does not vanish. The component form
 
 $$
-\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\tilde\Xi=k_m^{2}\tilde\Xi
+\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\tilde\Xi=k_m^{2}\tilde\Xi
 $$
 
 does preserve the centre, because each derivative is central. The two writings, which agree identically when no connection is present, are separated by the coupling, and the carrier keeps the component form.

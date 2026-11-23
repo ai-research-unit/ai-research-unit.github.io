@@ -16,7 +16,7 @@ The article reads the consequence twice. Read on the **material** sector, where 
 
 The two halves of the article are of different standing, and the difference is kept throughout. The algebraic facts — that $e_t$ is the identity, that the temporal direction is the centre, that the material coefficient is imaginary and the informational one real — are established and are verified in the companion articles. The material reading is the interpretation already recorded in *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The **storage reading** of $h_t$ is an interpretation offered here, subject to the standing hypothesis that the informational sector is physically realised, and it is stated as a reading and not as a result.
 
-The conventions are those of the series. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\eta^2 = -e_t$; the conjugations are the complex conjugation $\bar{\cdot}$, the quaternion conjugation ${}^{\natural}$, the Hermitian conjugation ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the anti-Hermitian conjugation ${}^{\flat} = -{}^{*}$. The biquaternionic gradient is $\tilde\nabla_\Phi = \sum_{\mu\in\{t,x,y,z\}} e_\mu\,\partial/\partial R_\mu$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$.
+The conventions are those of the series. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\eta^2 = -e_t$; the conjugations are the complex conjugation $\bar{\cdot}$, the quaternion conjugation ${}^{\natural}$, the Hermitian conjugation ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the anti-Hermitian conjugation ${}^{\flat} = -{}^{*}$. The biquaternionic gradient is $\tilde\nabla_\Phi = \sum_{\imath\in\{t,x,y,z\}} e_{\imath}\,\partial/\partial R_{\imath}$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$.
 
 ## The Unit That Is the Identity
 
@@ -74,7 +74,7 @@ $$
 \boxed{\;\bigl\langle \tilde U\tilde Q_3\tilde U^{*} \bigr\rangle_{\natural} = \langle \tilde Q_3\rangle_{\natural}\;},
 $$
 
-so the invariant the action carries is the norm $\sum_\mu Q_\mu^2$ and not the temporal coefficient. A boost changes the temporal coefficient $Q_t$ by mixing it with the spatial ones, which is what a Lorentz transformation of a four-vector does. The temporal coordinate is a coordinate, and it transforms; the interval built from the four coefficients is what stays.
+so the invariant the action carries is the norm $\sum_{\imath} Q_{\imath}^2$ and not the temporal coefficient. A boost changes the temporal coefficient $Q_t$ by mixing it with the spatial ones, which is what a Lorentz transformation of a four-vector does. The temporal coordinate is a coordinate, and it transforms; the interval built from the four coefficients is what stays.
 
 **4. The signs are carried by the coefficients and not by the invertibles.** The biquaternion norm is
 
@@ -216,7 +216,7 @@ All of the mathematics the article uses is verified: $e_t$ is the identity and c
 | $\mathbb{B}_{\Phi} = \{\tilde Q : \tilde Q^{\flat} = \tilde Q\}$ | Anti-Hermitian subspace, the material sector |
 | $\mathbb{B}_{\Psi} = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ | Hermitian subspace, the informational sector |
 | $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$ | Biquaternion norm; $(1,3)$ on $\mathbb{B}_{\Psi}$, the temporal direction positive |
-| $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian (probability) form; positive definite, $\sum_\mu\lvert Q_\mu\rvert^2$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian (probability) form; positive definite, $\sum_{\imath}\lvert Q_{\imath}\rvert^2$ |
 | $\mathrm{Sc}(\tilde Q) = Q_t$ | Scalar part, the temporal coefficient of the element |
 | $\tilde U \in \mathbb{B}^\times_1$, $\langle\tilde U\rangle_{\natural} = e_t$ | Rotor of the Lorentz action $\tilde Q \mapsto \tilde U\tilde Q\tilde U^{*}$, which preserves $\langle\tilde Q\rangle_{\natural}$ |
 | $B(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u$ | Boost rotor of rapidity $\theta_{\mathrm{rpd}}$ along the unit real vector $\vec u$; the rotation fixes $e_t$ and the boost carries it into $\mathbb{B}_{\Psi}$ |

@@ -16,7 +16,7 @@ $$
 E_\eta=-C_{0\eta},\qquad B_\eta=\tfrac12\sum_{j,l}\varepsilon_{j\eta l}C_{jl},
 $$
 
-with $\varepsilon_{123}=+1$ and $\varepsilon_{0123}=-1$. That last sign is fixed by the dual, which is the Hodge dual of the field-strength article, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, with $\star^2=-1$: the contraction $\tfrac12\sum_{\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}C_{\rho\sigma}$ with $\varepsilon_{0123}=-1$ reproduces exactly this pair. With the other sign of $\varepsilon_{0123}$ the same contraction returns $-\star C$, which exchanges the two names below and leaves every equation otherwise intact. **The corpus's articles attach the name "self-dual" to opposite signs.** The programme writes $\vec E+i\vec H=0$ and calls that condition weakly (anti)self-dual; the split article and the invariants article call $\star=-i$, that is $\vec E-i\vec B=0$, the self-dual half. The names are fixed in the next section, and every statement below carries its equation.
+with $\varepsilon_{123}=+1$ and $\varepsilon_{0123}=-1$. That last sign is fixed by the dual, which is the Hodge dual of the field-strength article, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, with $\star^2=-1$: the contraction $\tfrac12\sum_{\rho,\sigma}\varepsilon_{\imath\jmath\rho\sigma}C_{\rho\sigma}$ with $\varepsilon_{0123}=-1$ reproduces exactly this pair. With the other sign of $\varepsilon_{0123}$ the same contraction returns $-\star C$, which exchanges the two names below and leaves every equation otherwise intact. **The corpus's articles attach the name "self-dual" to opposite signs.** The programme writes $\vec E+i\vec H=0$ and calls that condition weakly (anti)self-dual; the split article and the invariants article call $\star=-i$, that is $\vec E-i\vec B=0$, the self-dual half. The names are fixed in the next section, and every statement below carries its equation.
 
 ## The Null Field in the Algebra
 
@@ -56,10 +56,10 @@ $$
 \partial\alpha\cdot\partial\alpha=0,\qquad \partial\beta\cdot\partial\beta=0,\qquad \partial\alpha\cdot\partial\beta=0,
 $$
 
-where the product is $\partial\alpha\cdot\partial\beta=\sum_\mu\partial/\partial R_\mu\alpha\,\partial/\partial R_\mu\beta$, that is $-\partial\alpha/\partial r'_t\,\partial\beta/\partial r'_t+\sum_\eta\partial\alpha/\partial x_\eta\,\partial\beta/\partial x_\eta$, the minus being the square of the $i$ in $Q_t=i q'_t$. The **Bateman field** is the exterior product of the two gradients,
+where the product is $\partial\alpha\cdot\partial\beta=\sum_{\imath}\partial/\partial R_{\imath}\alpha\,\partial/\partial R_{\imath}\beta$, that is $-\partial\alpha/\partial r'_t\,\partial\beta/\partial r'_t+\sum_\eta\partial\alpha/\partial x_\eta\,\partial\beta/\partial x_\eta$, the minus being the square of the $i$ in $Q_t=i q'_t$. The **Bateman field** is the exterior product of the two gradients,
 
 $$
-C=d\alpha\wedge d\beta,\qquad C_{\mu\nu}=\frac{\partial\alpha}{\partial x_\mu}\frac{\partial\beta}{\partial x_\nu}-\frac{\partial\alpha}{\partial x_\nu}\frac{\partial\beta}{\partial x_\mu}.
+C=d\alpha\wedge d\beta,\qquad C_{\imath\jmath}=\frac{\partial\alpha}{\partial x_{\imath}}\frac{\partial\beta}{\partial x_{\jmath}}-\frac{\partial\alpha}{\partial x_{\jmath}}\frac{\partial\beta}{\partial x_{\imath}}.
 $$
 
 Three properties follow, and all three are exact statements about the algebra, not approximations. First, $C$ is **closed**, $dC=0$, and this needs no eikonal condition at all: an exterior product of two gradients is an exterior derivative. Second, $C$ is **null**. Writing $k_\alpha$ and $k_\beta$ for the two vectors obtained from the gradients, the invariants of $C$ are built from $k_\alpha\cdot k_\alpha$, $k_\beta\cdot k_\beta$ and $k_\alpha\cdot k_\beta$, and the eikonal conditions make all three vanish. Third, $C$ is **duality-pure**, and this too needs only the eikonal conditions: orthogonality of two null vectors forces them to share one of their two spinor factors, and a two-form built from two null vectors that share a spinor is an eigenform of $\star$, the chirality of the shared factor fixing the eigenvalue, $+i$ or $-i$. What fails is the extension to null two-forms in general: the one with a spacelike second leg, which is the counterexample of the preceding section, is null and is neither eigenform. It is the presence of two *null* orthogonal legs, not nullness alone, that forces duality-purity. The implication does not run back either: a duality-pure two-form need not be simple, since the sum of two forms of this type is still an eigenform with the same eigenvalue and is generically not simple, and its invariants then do not vanish. With both conditions imposed the equivalence is exact — a non-zero complex two-form is simple with two *orthogonal* null legs if and only if it is null and duality-pure — and that conjunction is the row of the table in which the example lies. The word orthogonal is not decoration: the exterior product of two null legs that are not orthogonal is simple and has $I_1\ne0$, as $\vec u_t+\vec e_x$ with $\vec u_t+\vec e_y$ shows, and it is not an eigenform either.
@@ -75,14 +75,14 @@ Three properties follow, and all three are exact statements about the algebra, n
 A null two-form is **decomposable**: it is the exterior product of two one-forms, and its contraction with either of them vanishes. For the Bateman field this is immediate. With $k_\alpha$ and $k_\beta$ the two null vectors dual to the gradients,
 
 $$
-\sum_\nu C_{\mu\nu}\,k_\alpha^{\ \nu}=0,\qquad \sum_\nu C_{\mu\nu}\,k_\beta^{\ \nu}=0,
+\sum_{\jmath} C_{\imath\jmath}\,k_\alpha^{\ \jmath}=0,\qquad \sum_{\jmath} C_{\imath\jmath}\,k_\beta^{\ \jmath}=0,
 $$
 
 for every $\mu$, as one line of algebra shows: each term contains either $k_\alpha\cdot k_\alpha$, $k_\beta\cdot k_\beta$ or $k_\alpha\cdot k_\beta$, and the three vanish. The two vectors are the **legs** of $C$, and a two-form with two legs is said to be simple or decomposable.
 
 **What the annihilator is, and what "principal" means.** The vectors annihilated by $C$ form the two-plane spanned by the two legs. For a real null field that plane carries one real null vector and one real spacelike vector orthogonal to it, and no second null direction: two real null vectors that are orthogonal in the interval are proportional, so a real two-plane of this type cannot carry two of them. Only one direction in it is null, and that direction is the **principal null direction** of the field, defined up to a scalar. The field is transverse to it: the electric and magnetic vectors span a spacelike two-plane orthogonal to it, and the contraction of the field with it vanishes. This is the object to which the Mariot–Robinson theorem applies.
 
-**In the complex case the two legs are distinct and both are null**, and the statement is weaker: the annihilator is two-dimensional over $\mathbb{C}$, and every vector in it is null in the complexified sense, because a combination $\mu k_\alpha+\nu k_\beta$ has norm $2\mu\nu\,k_\alpha\cdot k_\beta=0$. No direction is therefore singled out by the algebra, and which leg is called the principal direction is a choice.
+**In the complex case the two legs are distinct and both are null**, and the statement is weaker: the annihilator is two-dimensional over $\mathbb{C}$, and every vector in it is null in the complexified sense, because a combination $\mu k_\alpha+\jmath k_\beta$ has norm $2\mu\jmath\,k_\alpha\cdot k_\beta=0$. No direction is therefore singled out by the algebra, and which leg is called the principal direction is a choice.
 
 **The real part of such a field has a definite principal direction, and it is one of the legs.** Taking the real part of $C=k_\alpha\wedge k_\beta$ with $k_\beta$ real leaves the simple form $(\mathrm{Re}\,k_\alpha)\wedge k_\beta$, whose two legs are $k_\beta$ and $\mathrm{Re}\,k_\alpha$; this second leg is spacelike, because a vector orthogonal to a real null vector and not proportional to it has positive norm, so the unique null direction among the two is $k_\beta$. The exceptional case is $\mathrm{Re}\,k_\alpha$ proportional to $k_\beta$, which forces $k_\alpha$ to be a complex multiple of $k_\beta$ and hence $C$ to vanish: there the complex field is pure imaginary and its real part is zero. The example below is not of that kind: its two legs are not proportional, and the surviving real leg is the radial null vector $\vec u_t+\vec u_r$.
 
@@ -170,7 +170,7 @@ The worked example, $C=dG\wedge d\beta$ with $G$ the stereographic coordinate an
 
 | Symbol | Meaning |
 |---|---|
-| $C$, $C_{\mu\nu}$ | The null two-form, $C=d\alpha\wedge d\beta$, and its components |
+| $C$, $C_{\imath\jmath}$ | The null two-form, $C=d\alpha\wedge d\beta$, and its components |
 | $\alpha$, $\beta$ | The two eikonal functions of Bateman's representation, mutually orthogonal |
 | $k_\alpha$, $k_\beta$ | The two null vectors obtained from their gradients; the legs of $C$, whose directions are its null directions |
 | $Ξ_2$, $\kappa$, $\sigma$ | The one surviving Maxwell scalar in a tetrad adapted to the principal direction, and the spin coefficients of geodesy and shear |

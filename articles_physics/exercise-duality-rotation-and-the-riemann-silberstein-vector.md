@@ -4,7 +4,7 @@
 
 This is an exercise in the electromagnetism series. It applies *The Field-Strength Biquaternion and Its Invariants* and its parent *Maxwell's Equations in the Biquaternionic Formulation*: the field-strength biquaternion, the Riemann–Silberstein vector, the two invariants, the duality rotation, the energy density and the Poynting vector are inherited from those articles unchanged. The universal three — *Introduction to the Biquaternion Universe*, *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability* — supply the algebra and the fixed-point subspace names.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$ and the product rule $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$; the scalar imaginary $i$, $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (material) and the Hermitian subspace $\mathbb{B}_{\Psi}$ (informational), with $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$; the real-quaternion subspace $\mathbb{B}_{H}$ and the complex-scalar subspace $\mathbb{B}_{C}$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex) and ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$; the field-strength biquaternion
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_{\imath}^2 = -e_t$ and the product rule $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath\lambda}\vec e_\lambda$; the scalar imaginary $i$, $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (material) and the Hermitian subspace $\mathbb{B}_{\Psi}$ (informational), with $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$; the real-quaternion subspace $\mathbb{B}_{H}$ and the complex-scalar subspace $\mathbb{B}_{C}$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex) and ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$; the field-strength biquaternion
 $$
 \tilde F = \vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 \qquad \mathrm{Sc}(\tilde F)=0,
@@ -337,7 +337,7 @@ The boost is therefore reproduced by $\tilde U^{-1}\tilde F\tilde U$, while the 
 
 2. **Duality and the gauge $\mathrm{U}(1)$.** The gauge principle article identifies the centre of $\mathbb B$ as $\mathbb C_{\mathbb B}$ and its $*$-unitary part as the abelian gauge group of the biquaternionic Maxwell field. The duality rotation here is multiplication by an element $\exp(-i\theta_{\mathrm{dua}})$ of that same $\mathrm{U}(1)$. Is the duality symmetry the same $\mathrm{U}(1)$, a different one, or the same group acting on a different representation? The parent does not ask this; the answer is not obvious, because duality acts on the field strength and the gauge phase on the potential.
 
-3. **Duality and the energy–momentum tensor.** Using the construction of the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, show that $T_{\mu\nu}$ is invariant under duality, and explain why this is consistent with the invariance of $W$ and $\vec S$ but does not follow from it component by component.
+3. **Duality and the energy–momentum tensor.** Using the construction of the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, show that $T_{\imath\jmath}$ is invariant under duality, and explain why this is consistent with the invariance of $W$ and $\vec S$ but does not follow from it component by component.
 
 4. **Duality and the invariant classification.** Show that duality preserves the type of the field (null, electric, magnetic, generic) determined by $(I_1,I_2)$ in the parent's classification, and compute the orbit of the generic magnitudes $(E_0,B_0)$ under the doubled-angle rotation. Identify the duality angle that maps a purely electric field to a purely magnetic one, and the angle that leaves a given non-null field's type but reverses the sign of $I_1$.
 
@@ -364,7 +364,7 @@ One defect in the parent is recorded, and one earlier reading of it is withdrawn
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace; complex-scalar subspace (centre) |
@@ -385,7 +385,7 @@ One defect in the parent is recorded, and one earlier reading of it is withdrawn
 | $\tilde\nabla_\Phi\tilde F = -\sqrt{\mu}\,\tilde J_{\Phi}$ | Biquaternionic Maxwell equation |
 | $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ | Scalar-part reading at normalisation (Born rule) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

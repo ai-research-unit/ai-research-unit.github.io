@@ -28,7 +28,7 @@ The two settings. The action is stated for a connection that may depend on the c
 
 ## Conventions
 
-The conventions are the free companion's, restated here for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is the pair $(\tilde\Xi_R,\tilde\Xi_L)$ of elements of $\mathbb{B}$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the mass term is the only term that couples the two parts. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with the connection in $\mathbb{B}_\Phi$, and it is central, so it multiplies from either side without a choice. The measure is $\mathrm{d}^4r$, the mass is $k_m=\frac{2\pi mc}{h}$, and the two settings — constant and varying connection — are the parent's and are kept apart throughout.
+The conventions are the free companion's, restated here for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is the pair $(\tilde\Xi_R,\tilde\Xi_L)$ of elements of $\mathbb{B}$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the mass term is the only term that couples the two parts. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with the connection in $\mathbb{B}_\Phi$, and it is central, so it multiplies from either side without a choice. The measure is $\mathrm{d}^4r$, the mass is $k_m=\frac{2\pi mc}{h}$, and the two settings — constant and varying connection — are the parent's and are kept apart throughout.
 
 ## The Action in Element Form, Coupled
 
@@ -104,7 +104,7 @@ The coefficient, once. Varying $\tilde\Xi_R^{*}$ gives $\frac{h c}{4\pi}\mathrm{
 **The count.** Each residual is an element of $\mathbb{B}$ with eight real components, so the pair is sixteen real equations on sixteen real unknowns. The compatibility condition is obtained by applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the first residual and using the second:
 
 $$
-\Bigl(\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
+\Bigl(\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
 $$
 
 the covariant wave equation with the curvature term. The coupling therefore changes the compatibility condition in exactly one place, the curvature, and nowhere else.
@@ -154,7 +154,7 @@ What it does not settle. The repair is unique *within the abelian class* and up 
 
 The local phase is a symmetry of the coupled action, so it has a Noether current. This section states the current, states what the algebra does *not* hand over with it, and states the repair.
 
-The Noether computation. Take $\tilde\Xi\mapsto e^{i\alpha(R)}\tilde\Xi$ with $\alpha$ a local central angle and with the connection held fixed. The mass term contributes nothing, as §*The Structural Consequence: Why the Coupling Is Forced* shows. The kinetic terms contribute $-\int\sum_\mu(\partial_\mu\alpha)J_\mu$, and the current is the parent's:
+The Noether computation. Take $\tilde\Xi\mapsto e^{i\alpha(R)}\tilde\Xi$ with $\alpha$ a local central angle and with the connection held fixed. The mass term contributes nothing, as §*The Structural Consequence: Why the Coupling Is Forced* shows. The kinetic terms contribute $-\int\sum_{\imath}(\partial_{\imath}\alpha)J_{\imath}$, and the current is the parent's:
 
 $$
 J^{t}=\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\Xi_R\Bigr],
@@ -162,12 +162,12 @@ J^{t}=\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\t
 J_{\eta}=\mathrm{Re}\,\mathrm{Sc}\Bigl[i\Bigl(\tilde\Xi_R^{*}\vec e_\eta\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_\eta\tilde\Xi_L\Bigr)\Bigr],
 $$
 
-with $\sum_\mu\partial_\mu J_\mu=0$ on solutions. **The time component is a sum over the parts and the spatial component is a difference.** The difference is not an error and it is not a convention: the two parts carry conjugate spatial derivatives, and a current built from them inherits the relative sign.
+with $\sum_{\imath}\partial_{\imath} J_{\imath}=0$ on solutions. **The time component is a sum over the parts and the spatial component is a difference.** The difference is not an error and it is not a convention: the two parts carry conjugate spatial derivatives, and a current built from them inherits the relative sign.
 
 The three writings are one object. The display above, the polar reading $J_{t}=\rho\cosh\theta_{\mathrm{rpd}}$, $J_{\eta}=\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$, and the Gordon pairing
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x\bigr),
+j_{\imath}=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_{\imath}\tilde\Xi\,\vec e_{\mathrm{spt}(\imath)}\bigr)\vec e_x\bigr),
 \qquad
 \mathrm{spt}(t)=x,\ \mathrm{spt}(\eta)=y,
 $$
@@ -191,23 +191,23 @@ Why it fails, in one sentence. The product $\tilde\Xi\tilde\Xi^{*}$ carries the 
 The repair, and what it costs. The conserved current is not a product of the field with its conjugate. It is a pairing with one unit inserted between the two fields and one fixed frame unit on the right:
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x\bigr).
+j_{\imath}=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_{\imath}\tilde\Xi\,\vec e_{\mathrm{spt}(\imath)}\bigr)\vec e_x\bigr).
 $$
 
-The inner unit $e_\mu$ is what turns the product into a current, and the right multipliers are what give the two parts opposite signs: $\vec e_x$ maps one value sector to the other, and $\vec e_{\mathrm{spt}(\mu)}$ is the generator's own unit. Read in the older language, this is the adjoint row of the gamma formulation, and the Gordon companion shows the dictionary. The current is a triple product, and the algebra supplies every factor of it. No object outside $\mathbb{B}$ is needed and no second carrier is added.
+The inner unit $e_{\imath}$ is what turns the product into a current, and the right multipliers are what give the two parts opposite signs: $\vec e_x$ maps one value sector to the other, and $\vec e_{\mathrm{spt}(\imath)}$ is the generator's own unit. Read in the older language, this is the adjoint row of the gamma formulation, and the Gordon companion shows the dictionary. The current is a triple product, and the algebra supplies every factor of it. No object outside $\mathbb{B}$ is needed and no second carrier is added.
 
 **The residual gap, stated exactly.** What the action does not supply is the *choice of the two frame units*. The algebra contains the units and the scalar part, and it does not single out $\vec e_x$ and $\vec e_y$ as the ones the current uses. That choice is the frame's, made once with the basis, and inherited by every article in the corpus. It is a datum of the framework and not a consequence of its algebra: a different basis would give a different presentation of the same numbers, and the numbers would be the same. This is the honest residue of the current question, and it is smaller than the question the earlier version of this article recorded.
 
 Energy and momentum. The Lagrangian does not depend explicitly on the coordinates when the connection is constant, so the four translations give four conserved charges with
 
 $$
-T_{\mu\nu}=\sum_{p}\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_p^{*}\,s_\mu e_\mu\,\tilde\nabla_{\mathrm{gco},\Phi,\nu}\tilde\Xi_p\Bigr]-\delta_{\mu\nu}\,\mathcal{L},
+T_{\imath\jmath}=\sum_{p}\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_p^{*}\,s_{\imath} e_{\imath}\,\tilde\nabla_{\mathrm{gco},\Phi,\jmath}\tilde\Xi_p\Bigr]-\delta_{\imath\jmath}\,\mathcal{L},
 $$
 
 and the gradient in the current is the covariant one. When the connection depends on position the conservation is modified: the divergence of the stress tensor is not zero but the Lorentz force density,
 
 $$
-\sum_\mu\partial_\mu T_{\mu\nu}=\frac{ϙ}{2}\,\mathrm{Re}\,\mathrm{Sc}\bigl[\sum_\mu\tilde F_{\nu\mu}\,j_\mu\bigr],
+\sum_{\imath}\partial_{\imath} T_{\imath\jmath}=\frac{ϙ}{2}\,\mathrm{Re}\,\mathrm{Sc}\bigl[\sum_{\imath}\tilde F_{\jmath\imath}\,j_{\imath}\bigr],
 $$
 
 up to the normalization of the current, which is the statement that the matter stress tensor alone is not conserved in a background and that the field's own stress tensor takes up the difference. For a *static* background the total energy is conserved because the background does not change; for a general background only the total of matter and field is.
@@ -270,12 +270,12 @@ The constant setting is closed — a finite product of exponentials up to the ga
 | $r_L,r_R$ | The two residuals; $r_L=r_R=0$ is the coupled pair |
 | $\mathcal{L}$ | The Lagrangian density: the integrand of $S$ |
 | $J^{t},J_\eta$ | Noether current of the local phase; sum over parts, difference over parts |
-| $j_\mu$ | The same current as a pairing with two frame units |
+| $j_{\imath}$ | The same current as a pairing with two frame units |
 | $\tilde J_{\Phi,\mathrm{sp}}=i\tilde\Xi\tilde\Xi^{*}$ | The naive bilinear: gauge invariant, density sign, **not conserved** |
-| $T_{\mu\nu}$ | Stress tensor; covariant gradient in the current |
+| $T_{\imath\jmath}$ | Stress tensor; covariant gradient in the current |
 | $\rho$ | Density; $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$ in the chart |
 | $\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | The frame's idempotents; $\tilde\Xi_R=\tilde\Xi\Pi_-$, $\tilde\Xi_L=\tilde\Xi\Pi_+$ |
-| $s_\mu$ | Sign of the basis operator in the stress tensor's slot |
+| $s_{\imath}$ | Sign of the basis operator in the stress tensor's slot |
 
 ## Further Reading
 

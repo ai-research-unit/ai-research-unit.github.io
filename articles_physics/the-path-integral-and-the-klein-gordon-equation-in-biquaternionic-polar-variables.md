@@ -20,7 +20,7 @@ The article does not produce a second integral, does not define the continuum me
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The word is $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\tilde U_{\Psi,\mathrm b}$ the boost and $\tilde u_{\mathrm r}$ the rotor; the ranges are those of the polar equation article and are not restated.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The word is $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\tilde U_{\Psi,\mathrm b}$ the boost and $\tilde u_{\mathrm r}$ the rotor; the ranges are those of the polar equation article and are not restated.
 
 The action and the weight. The companion's action is
 
@@ -28,7 +28,7 @@ $$
 S[\tilde\Xi]=\frac{h}{4\pi}\int d^{4}r\;\Bigl[\mathrm{Sc}\bigl(\partial_{r'_t}\tilde\Xi^{*}\,\partial_{r'_t}\tilde\Xi\bigr)-\sum_{\eta=1}^{3}\mathrm{Sc}\bigl(\partial_{\eta}\tilde\Xi^{*}\,\partial_{\eta}\tilde\Xi\bigr)-k_m^{2}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)\Bigr],
 $$
 
-with the metric of the material coordinate written out: the temporal slot enters with $+$ and the three spatial ones with $-$, which is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ in explicit form. This is the free companion's action with the same convention; the companion's $\frac12\int\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ differs from it by a boundary term, and the polar bracket below follows from this display through the identity $\mathrm{Sc}(\partial_\mu\tilde\Xi^{*}\partial_\mu\tilde\Xi)=(\partial_\mu \varrho)^{2}+\varrho^{2}(\partial_\mu\theta_{\mathrm{pha}})^{2}$. The weight of one configuration is $\exp(\frac{2\pi iS}{h})$, central and $*$-unitary. On a central field $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ the weight becomes
+with the metric of the material coordinate written out: the temporal slot enters with $+$ and the three spatial ones with $-$, which is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ in explicit form. This is the free companion's action with the same convention; the companion's $\frac12\int\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ differs from it by a boundary term, and the polar bracket below follows from this display through the identity $\mathrm{Sc}(\partial_{\imath}\tilde\Xi^{*}\partial_{\imath}\tilde\Xi)=(\partial_{\imath} \varrho)^{2}+\varrho^{2}(\partial_{\imath}\theta_{\mathrm{pha}})^{2}$. The weight of one configuration is $\exp(\frac{2\pi iS}{h})$, central and $*$-unitary. On a central field $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ the weight becomes
 
 $$
 \frac{2\pi i}{h}S=\frac{i}{2}\int d^{4}r\;\Bigl[(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}
@@ -39,7 +39,7 @@ The factor two, stated once. The bracket is the Madelung functional of the varia
 
 ## The Word on a Central Field
 
-One block of the metric survives. The polar variational companion writes the kinetic Lagrangian as $g_{ab}(p)\partial_\mu p_{a}\partial_\mu p_{b}$ over eight parameters with the pull-back metric of the word. On a central field the rapidity vanishes, the axes are frozen and the rotor is a sign, so the metric is diagonal with $g_{r\varrho}=1$ and $g_{\theta\theta}=\varrho^{2}$ and every other entry zero. The exponent is therefore one diagonal quadratic form in two real functions.
+One block of the metric survives. The polar variational companion writes the kinetic Lagrangian as $g_{ab}(p)\partial_{\imath} p_{a}\partial_{\imath} p_{b}$ over eight parameters with the pull-back metric of the word. On a central field the rapidity vanishes, the axes are frozen and the rotor is a sign, so the metric is diagonal with $g_{r\varrho}=1$ and $g_{\theta\theta}=\varrho^{2}$ and every other entry zero. The exponent is therefore one diagonal quadratic form in two real functions.
 
 The sign is bookkeeping and not a parameter. The chart holds the angle in $(-\pi/2,\pi/2]$ and deposits the half turn in the rotor's sign, so the pair $(\varrho,\theta_{\mathrm{pha}},\varepsilon)$ with $\varepsilon=\pm1$ is a bijection onto the nonzero complex scalars. The measure below integrates the angle over a full turn; the two halves of the turn with the two signs are the same domain written twice. The sign is a chart of the circle and contributes no factor to the measure, and the count of parameters at each point is two.
 
@@ -93,7 +93,7 @@ The check is exact in one direction. Take one interior point of a chain with two
 
 ## The Phase Is a Constraint and Not a Field
 
-The angle's integral is a Gaussian and its content is a determinant and a condition. Because the exponent is quadratic in $\partial\theta_{\mathrm{pha}}$ and free of $\theta_{\mathrm{pha}}$, integrating the angle gives the inverse square root of the determinant of $-\partial_\mu \varrho^{2}\partial_\mu$ and, whenever the integrand carries an insertion that depends on the angle, a factor supported on configurations whose current is conserved. **The transport equation is not an equation of motion in this reading; it is what the phase leaves behind.**
+The angle's integral is a Gaussian and its content is a determinant and a condition. Because the exponent is quadratic in $\partial\theta_{\mathrm{pha}}$ and free of $\theta_{\mathrm{pha}}$, integrating the angle gives the inverse square root of the determinant of $-\partial_{\imath} \varrho^{2}\partial_{\imath}$ and, whenever the integrand carries an insertion that depends on the angle, a factor supported on configurations whose current is conserved. **The transport equation is not an equation of motion in this reading; it is what the phase leaves behind.**
 
 What the insertion costs. The companion's generating functional couples a central source, and in the chart that source is $J^{*}\varrho e^{i\theta_{\mathrm{pha}}}$ plus its conjugate. The source multiplies the phase's exponential, so it is the one object in the article that sees the value of the angle and not its gradient. With a source the angle's integral stops being Gaussian. The chart's statement of what a source does is that it couples to the coordinate whose gradient the free theory conserves, which is the functional form of the statement that a source changes the charge.
 
@@ -140,7 +140,7 @@ The angle is compact and the weight is its measure. In the Euclidean chart the p
 
 ## The Semiclassical Word
 
-The saddle is the classical field and the second variation is the parameter metric. Expanding the bracket about a solution of the pair, the quadratic term is $g_{ab}(p)\partial_\mu\delta p_{a}\partial_\mu\delta p_{b}$ evaluated at the solution, with $g$ the polar variational companion's metric. The prefactor is the inverse square root of that operator's determinant. The chart's one-loop factor is the determinant of the metric's operator, and it is central because $g$ is built from $\varrho$ and $\theta_{\mathrm{pha}}$ alone.
+The saddle is the classical field and the second variation is the parameter metric. Expanding the bracket about a solution of the pair, the quadratic term is $g_{ab}(p)\partial_{\imath}\delta p_{a}\partial_{\imath}\delta p_{b}$ evaluated at the solution, with $g$ the polar variational companion's metric. The prefactor is the inverse square root of that operator's determinant. The chart's one-loop factor is the determinant of the metric's operator, and it is central because $g$ is built from $\varrho$ and $\theta_{\mathrm{pha}}$ alone.
 
 The chart's determinant is the Cartesian one times the Jacobian's square. That is the previous section's cancellation at the level of the fluctuation operator, and it is what makes the prefactor transform correctly: the amplitude gains $\prod \varrho^{-1}$ from the determinant, the measure contributes $\prod \varrho$, and the leftover $\prod \varrho^{-1}$ is exactly the Jacobian of the change of variables in the amplitude.
 
@@ -176,7 +176,7 @@ The honest ledger. The chart contributes one object the element form does not ex
 
 2. The winding sectors. The angle is compact, so the field space splits by the winding of $\theta_{\mathrm{pha}}$ on a closed surface. Whether the polar integral in a fixed winding sector is a distinct object, and whether the sectors are summed with phases, is not treated. The variational companion's circulation is the classical shadow of the same question.
 
-3. The constraint's determinant. The angle's integral produces the inverse square root of the determinant of $-\partial_\mu \varrho^{2}\partial_\mu$, which depends on the scale and is therefore not a constant. Whether that determinant has a closed form on a lattice, and whether its scale dependence cancels against the radial integral, is not shown.
+3. The constraint's determinant. The angle's integral produces the inverse square root of the determinant of $-\partial_{\imath} \varrho^{2}\partial_{\imath}$, which depends on the scale and is therefore not a constant. Whether that determinant has a closed form on a lattice, and whether its scale dependence cancels against the radial integral, is not shown.
 
 4. The interaction. A central interaction $\lambda \varrho^{4}$ adds one term to the bracket and leaves the chart's structure unchanged; the exponent stays free of $\theta_{\mathrm{pha}}$'s value, so the phase remains a constraint. The article does not pursue it, and the statement is a conjecture about the chart and not a computation.
 
@@ -211,7 +211,7 @@ The placement table is the reading. The scale sits in the measure and in the exp
 | $g_{ab}$ | The parameter metric of the polar variational companion; $g_{r\varrho}=1$, $g_{\theta\theta}=\varrho^{2}$ on the centre |
 | $S_{\mathrm{Madelung}}$ | The variational companion's polar action; the weight is $\exp(\tfrac{i}{2}S_{\mathrm{Madelung}})$ |
 | $\Box_\Phi \varrho=\varrho\bigl[k_m^{2}-(\partial_{r'_t}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr]$ | The amplitude equation; the scale's saddle |
-| $\sum_\mu\partial_\mu(\rho_{\mathrm{num}}\partial_\mu\theta_{\mathrm{pha}})=0$ | The transport equation; the angle's saddle |
+| $\sum_{\imath}\partial_{\imath}(\rho_{\mathrm{num}}\partial_{\imath}\theta_{\mathrm{pha}})=0$ | The transport equation; the angle's saddle |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | The density |
 | $S_{E}$ | The Euclidean bracket; four squares |
 | $k_m=\frac{2\pi mc}{h}$ | The mass parameter |

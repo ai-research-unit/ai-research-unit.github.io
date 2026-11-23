@@ -131,7 +131,7 @@ The programme's own position is less absolute than that: the primary system admi
 
 ### No Superposition
 
-The eikonal is quadratic, so the sum of two solutions is not a solution: for two null gradients the norm of the sum is twice their polar form, which does not vanish. On 100 random pairs of complex null gradients normalised to $\sum_\mu\lvert g_\mu\rvert^2=1$ the smallest value of $\lvert N(g_1+g_2)\rvert$ was $0.063$ against a median of $0.96$, so the failure is generic and neither rare nor small. The solution set is not a vector space.
+The eikonal is quadratic, so the sum of two solutions is not a solution: for two null gradients the norm of the sum is twice their polar form, which does not vanish. On 100 random pairs of complex null gradients normalised to $\sum_{\imath}\lvert g_{\imath}\rvert^2=1$ the smallest value of $\lvert N(g_1+g_2)\rvert$ was $0.063$ against a median of $0.96$, so the failure is generic and neither rare nor small. The solution set is not a vector space.
 
 The cost is narrower than that sentence suggests, and the eikonal section says why. Every solution the programme constructs is harmonic, so the class sits **inside** a linear space, the solutions of $\Box_\Phi\Sigma=0$, and the nonlinear condition is an algebraic selection within it. The harmonicity is a property of the constructed class and not of the eikonal: a function can solve the eikonal without being harmonic, and the mathematics article carries the witness. What fails is additivity of the class, not the existence of a linear ambient space. A formalism built on the harmonic space would have the right linearity; what it would not have is the assurance that a superposition of two states is a state.
 
@@ -205,15 +205,15 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 | $\mathbb{B}$ | The biquaternion algebra, isomorphic to $M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The informational and material sectors, the fixed spaces of ${}^{*}$ and $\flat$ |
 | $\natural$ | The quaternion conjugation, $\mathbb{C}$-linear, fixing $\mathbb{B}_{H}$ |
-| $\tilde\nabla_\Phi$ | The biquaternionic gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ |
-| $N(\tilde Q)$ | The biquaternion norm $\sum_\mu Q_\mu^2$, zero on the cone |
+| $\tilde\nabla_\Phi$ | The biquaternionic gradient $\sum_{\imath} e_{\imath}\partial/\partial R_{\imath}$ |
+| $N(\tilde Q)$ | The biquaternion norm $\sum_{\imath} Q_{\imath}^2$, zero on the cone |
 | $\Sigma$ | One component of a differentiable function |
 | $\mathsf D\Sigma$ | The two-by-two array of its four coordinate derivatives |
 | $L$, $R$ | The left and right semi-derivatives in $dF=L\,dZ\,R$ |
 | $Ξ$ | The left semi-derivative in the spinor splitting $d\eta=Ξ\,dZ\,\zeta$ |
 | $\eta$, $\zeta$ | The two $SL(2,\mathbb{C})$-spinors of that splitting |
 | $\Pi$, $G$ | The generating function and the projective coordinate it resolves |
-| $F_{\mu\nu}$, $A_\mu$ | The curvature and the potential of the connection the condition carries |
+| $F_{\imath\jmath}$, $A_{\imath}$ | The curvature and the potential of the connection the condition carries |
 | $q$ | The electric charge, $q=N/4$ in the programme's units, $N$ the winding number and not the norm |
 | $\sigma$ | The automorphism invariant $z_1^2+z_2^2+z_3^2$ of the complex three-vector |
 | $T$, $\vec X$ | The induced time $\vec z\cdot\vec z^{*}$ and space $i\,\vec z\times\vec z^{*}$ |

@@ -16,7 +16,7 @@ The parent's pair is exact and its two lines are ordered differently: the real l
 
 The amplitude–phase decomposition, the two real equations, the Hamilton–Jacobi equation, the method of characteristics, the optical–mechanical analogy, the transport equation, the WKB amplitude, the van Vleck determinant and the quantum potential are standard, and each is in every textbook on semiclassical mechanics. Added here: the ordering of the parent's own terms against one parameter, the norm reading of the eikonal, the identification of the limit's amplitude and density with two specific factors of the polar word, and the statement that the limit is defined only on the central class.
 
-Conventions. Those of the polar parent, unchanged: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $i$ central; $\mathbb{B}_{C}$ the centre, $\mathbb{B}_{H}$ the real-quaternion subspace, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian sectors; $\natural$ quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ the coefficient of $e_{t}$; time is $t'$ and $r'_{t}=ct'$. The word is the parent's, with its eight real parameters, and the action is $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$.
+Conventions. Those of the polar parent, unchanged: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $i$ central; $\mathbb{B}_{C}$ the centre, $\mathbb{B}_{H}$ the real-quaternion subspace, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian sectors; $\natural$ quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ the coefficient of $e_{t}$; time is $t'$ and $r'_{t}=ct'$. The word is the parent's, with its eight real parameters, and the action is $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$.
 
 No mass shell is produced, and the parent says why. The equation is first order in time, so its symbol constrains no second time derivative and the dispersion relation defines the frequency rather than restricting the field. The limit therefore lands on a Hamilton–Jacobi equation and a conservation law and on nothing else. That is a property of the family and not a shortfall of the treatment.
 
@@ -93,7 +93,7 @@ $$
 
 the Hamilton–Jacobi equation for a particle of energy $E$ in the potential $V$. In the parent's letters the real line is $\partial_{t'}S+\lvert\vec\nabla_\Phi S\rvert^{2}/2m+V+Q=0$ with $S$ carrying the time dependence, and for a stationary state $S=-Et'+W$ the two forms are one.
 
-The phase gradient is the real quaternion $\vec\nabla_\Phi S=\sum_\mu(\partial S/\partial R_\mu)\vec e_\mu$, and $\langle\vec\nabla_\Phi S\rangle_{\natural}=\lvert\vec\nabla_\Phi S\rvert^{2}$ because $\vec\nabla_\Phi S\,\vec\nabla_\Phi S^{\natural}=\lvert\vec\nabla_\Phi S\rvert^{2}e_{t}$. The eikonal is then one line in the centre,
+The phase gradient is the real quaternion $\vec\nabla_\Phi S=\sum_{\imath}(\partial S/\partial R_{\imath})\vec e_{\imath}$, and $\langle\vec\nabla_\Phi S\rangle_{\natural}=\lvert\vec\nabla_\Phi S\rvert^{2}$ because $\vec\nabla_\Phi S\,\vec\nabla_\Phi S^{\natural}=\lvert\vec\nabla_\Phi S\rvert^{2}e_{t}$. The eikonal is then one line in the centre,
 
 $$
 \boxed{\ \frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V\ },

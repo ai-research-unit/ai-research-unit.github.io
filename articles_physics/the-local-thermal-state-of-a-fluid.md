@@ -62,41 +62,41 @@ The entropy density is not independent — it is what the thermodynamic identity
 
 ### The element and its components
 
-The flow is an element of the material sector, and when a component is unavoidable it is written with a low index on the pattern of $k_{\Phi,\mu}$. With $\tilde P_\Phi$ the flow momentum element,
+The flow is an element of the material sector, and when a component is unavoidable it is written with a low index on the pattern of $k_{\Phi,\imath}$. With $\tilde P_\Phi$ the flow momentum element,
 
 $$
 \tilde V_\Phi=\frac{\tilde P_\Phi}{m},
 \qquad
 \langle\tilde V_\Phi\rangle_{\natural}=-c^{2},
 \qquad
-v_{\Phi,\mu}\ \text{the components, index low.}
+v_{\Phi,\imath}\ \text{the components, index low.}
 $$
 
-The metric is $\delta_{\mu\nu}$ and the index labels a direction; it is not a tensor slot, because the element is not a tensor and the algebra's product is not a tensor product. A raised index would be a category error and not a notational preference, and the corpus's frame-and-metric rules say so in the third rule.
+The metric is $\delta_{\imath\jmath}$ and the index labels a direction; it is not a tensor slot, because the element is not a tensor and the algebra's product is not a tensor product. A raised index would be a category error and not a notational preference, and the corpus's frame-and-metric rules say so in the third rule.
 
 The normalisation is the corpus's $-c^{2}$ and not $-1$. The velocity element is dimensionless in the sense that its norm is a squared speed; the corpus does not set $c=1$, so the norm is $-c^{2}$ and the components carry the speed explicitly. A reader who divides by $c$ everywhere gets the same physics with different letters, and the letters in this article are the ones the neighbouring articles use.
 
 ### The three projections, with low indices
 
-With $\partial_\mu=\partial/\partial R_\mu$,
+With $\partial_{\imath}=\partial/\partial R_{\imath}$,
 
 $$
-\theta=\partial_\mu v_{\Phi,\mu},
+\theta=\partial_{\imath} v_{\Phi,\imath},
 \qquad
-\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu},
+\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath},
 \qquad
-a_{\Phi,\nu}=v_{\Phi,\mu}\,\partial_\mu v_{\Phi,\nu},
+a_{\Phi,\jmath}=v_{\Phi,\imath}\,\partial_{\imath} v_{\Phi,\jmath},
 $$
 
-the expansion, the vorticity and the acceleration. The three are the standard decomposition and the letters are the corpus's: no index is raised, the contraction is the $\delta_{\mu\nu}$ one, and the acceleration is an element component and not a vector.
+the expansion, the vorticity and the acceleration. The three are the standard decomposition and the letters are the corpus's: no index is raised, the contraction is the $\delta_{\imath\jmath}$ one, and the acceleration is an element component and not a vector.
 
 From the gate article,
 
 $$
-\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0,
+\partial_{\imath} v_{\Phi,\jmath}+\partial_{\jmath} v_{\Phi,\imath}=0,
 $$
 
-which is exactly the statement that the symmetric part of the gradient vanishes — so $\theta=0$ and the shear vanishes, while the antisymmetric part $\omega_{\mu\nu}$ is untouched by it. **The condition does not by itself admit a rotation**, and the gate article says why: the unit norm forces $\gamma$ to vary with the radius for a rotating flow, which breaks the diagonal entries of the condition, and a rotating equilibrium is carried instead by the *thermal* form $\partial_\mu(v_{\Phi,\nu}/T)+\partial_\nu(v_{\Phi,\mu}/T)=0$, in which the temperature gradient absorbs the rotation's acceleration. This article quotes that division and does not reopen it.
+which is exactly the statement that the symmetric part of the gradient vanishes — so $\theta=0$ and the shear vanishes, while the antisymmetric part $\omega_{\imath\jmath}$ is untouched by it. **The condition does not by itself admit a rotation**, and the gate article says why: the unit norm forces $\gamma$ to vary with the radius for a rotating flow, which breaks the diagonal entries of the condition, and a rotating equilibrium is carried instead by the *thermal* form $\partial_{\imath}(v_{\Phi,\jmath}/T)+\partial_{\jmath}(v_{\Phi,\imath}/T)=0$, in which the temperature gradient absorbs the rotation's acceleration. This article quotes that division and does not reopen it.
 
 A rigid flow is one whose neighbouring worldlines keep their proper distances, so the fluid element's shape and size are not changed by the motion, so the only thing that changes the state is the temperature — and that is what allows a pointwise equation of state to exist at all, as the next section shows.
 
@@ -104,7 +104,7 @@ A rigid flow is one whose neighbouring worldlines keep their proper distances, s
 
 A velocity written as a raised vector needs the metric twice — once to lower the index for the derivative and once to contract — and each use is an opportunity for a sign error in a theory whose temporal slot carries an $i$. Written as an element, the normalisation $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ is a single scalar identity, and the projections above are contractions of the algebra's own derivative.
 
-The element's temporal coefficient is imaginary, $v_{\Phi,t}=i\gamma c$, so the temporal component of the flow is $i$ times a speed and the contraction $v_{\Phi,\mu}v_{\Phi,\mu}$ is real because two $i$'s multiply. A reader who writes a real temporal component has silently set the imaginary unit to one, and the contraction then comes out with the wrong sign. The corpus's insistence on the low index and the imaginary temporal slot is a single rule with a single purpose: the signs come out right without being tracked by hand.
+The element's temporal coefficient is imaginary, $v_{\Phi,t}=i\gamma c$, so the temporal component of the flow is $i$ times a speed and the contraction $v_{\Phi,\imath}v_{\Phi,\imath}$ is real because two $i$'s multiply. A reader who writes a real temporal component has silently set the imaginary unit to one, and the contraction then comes out with the wrong sign. The corpus's insistence on the low index and the imaginary temporal slot is a single rule with a single purpose: the signs come out right without being tracked by hand.
 
 The energy-momentum element is $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$, and its contraction with $\tilde V_\Phi$ gives the energy density in the flow's frame. Because both objects are elements, the contraction is a product and not a bilinear form, and the factor $i$ in the spatial slot of $\tilde\Sigma_\Psi$ cancels against the factor $i$ in the temporal slot of $\tilde V_\Phi$. This cancellation is the reason the corpus writes the energy-momentum element with the $i$ where it is, and it is worth stating because it looks like an arbitrary convention until the contraction is done.
 
@@ -231,7 +231,7 @@ The three requirements are stated in a form that can be checked on any candidate
 
 The local thermal state of the fluid is the triple $\bigl(\rho_{\mathrm{num}}(x),p_{\mathrm{th}}(x),\tilde V_\Phi(x)\bigr)$ at the pointwise period $\beta(x)=\frac{h}{2\pi k_BT(x)}$, with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$, $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, and $\tilde V_\Phi=\tilde P_\Phi/m$, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, every component written with a low index and never raised. The temperature is a field at each event — a pointwise period, not a pointwise metric — and the article uses the gate article's verdict without reopening it.
 
-The flow's gradient decomposes into $\theta=\partial_\mu v_{\Phi,\mu}$, $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ and $a_{\Phi,\nu}=v_{\Phi,\mu}\partial_\mu v_{\Phi,\nu}$; the rigidity condition $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0$ makes the first two vanish and leaves the vorticity free, so rigid flows may rotate.
+The flow's gradient decomposes into $\theta=\partial_{\imath} v_{\Phi,\imath}$, $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ and $a_{\Phi,\jmath}=v_{\Phi,\imath}\partial_{\imath} v_{\Phi,\jmath}$; the rigidity condition $\partial_{\imath} v_{\Phi,\jmath}+\partial_{\jmath} v_{\Phi,\imath}=0$ makes the first two vanish and leaves the vorticity free, so rigid flows may rotate.
 
 A local equation of state must be determinate, $p_{\mathrm{th}}(x)=\mathfrak{F}(\rho_{\mathrm{num}}(x),\beta(x))$ with no gradient on the right; must satisfy Euler's and Gibbs–Duhem's relations at each event, with $s_{\mathrm{ent}}=-(\beta/T)\partial p_{\mathrm{th}}/\partial\beta$ the chain-rule form of the second; and must come from one potential per unit proper volume, $p_{\mathrm{th}}=-\;f+\mu_{\mathrm{chm}}n_{\mathrm{num}}$, $s_{\mathrm{ent}}=-\partial f/\partial T$. Determinacy needs the rigid flow, because an expanding flow adds $-\zeta\theta$ to the pressure. Integrability is the requirement most often skipped, and it is the one that fails silently when a pressure is written down without a potential.
 
@@ -256,19 +256,19 @@ The quantum part violates determinacy at second order: $p_{\mathrm{qnt}}=\rho_{\
 | $T(x)$ | Local temperature |
 | $k_B$, $k_m$ | Boltzmann's constant, mass wave number |
 | $\tilde V_\Phi=\tilde P_\Phi/m$ | Flow element, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ |
-| $v_{\Phi,\mu}$ | Its components, index low |
+| $v_{\Phi,\imath}$ | Its components, index low |
 | $\tilde P_\Phi$ | Flow momentum element |
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ | Energy–momentum element |
-| $\theta=\partial_\mu v_{\Phi,\mu}$ | Expansion |
-| $\omega_{\mu\nu}$ | Vorticity |
-| $a_{\Phi,\nu}$ | Acceleration |
+| $\theta=\partial_{\imath} v_{\Phi,\imath}$ | Expansion |
+| $\omega_{\imath\jmath}$ | Vorticity |
+| $a_{\Phi,\jmath}$ | Acceleration |
 | $\zeta$ | Bulk viscosity |
 | $f=F/V_{0}$ | Free energy per unit proper volume |
 | $V_{0}$ | Proper volume |
 | $\mu_{\mathrm{chm}}n_{\mathrm{num}}$ | The chemical term of Euler's relation |
 | $\mathfrak{F}$ | The equation-of-state function |
-| $\partial_\mu=\partial/\partial R_\mu$ | The algebra's derivative |
-| $\delta_{\mu\nu}$ | The metric; no raised index |
+| $\partial_{\imath}=\partial/\partial R_{\imath}$ | The algebra's derivative |
+| $\delta_{\imath\jmath}$ | The metric; no raised index |
 | $\mathrm{Sc}$ | Scalar part |
 | $\langle\ \rangle_{\natural}$ | Quaternionic norm |
 

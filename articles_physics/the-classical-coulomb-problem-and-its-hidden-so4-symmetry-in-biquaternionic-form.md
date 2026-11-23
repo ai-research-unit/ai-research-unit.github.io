@@ -173,9 +173,9 @@ The bracket algebra was verified by central-difference evaluation of the Poisson
 The algebra statements of the closing section were checked at the same time on the elements themselves. The material sector was confirmed closed under the commutator, with $[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}] \subseteq \mathbb{B}_{\Phi}$ and every element of $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]$ again anti-Hermitian; the scalar-free part was confirmed to close exactly on
 
 $$
-\left[\tfrac{\vec e_\mu}{2},\tfrac{\vec e_\nu}{2}\right] = \epsilon_{\mu\nu\lambda}\tfrac{\vec e_\lambda}{2}, \qquad
-\left[\tfrac{\vec e_\mu}{2},\tfrac{i\vec e_\nu}{2}\right] = \epsilon_{\mu\nu\lambda}\tfrac{i\vec e_\lambda}{2}, \qquad
-\left[\tfrac{i\vec e_\mu}{2},\tfrac{i\vec e_\nu}{2}\right] = -\epsilon_{\mu\nu\lambda}\tfrac{\vec e_\lambda}{2} ;
+\left[\tfrac{\vec e_{\imath}}{2},\tfrac{\vec e_{\jmath}}{2}\right] = \epsilon_{\imath\jmath\lambda}\tfrac{\vec e_\lambda}{2}, \qquad
+\left[\tfrac{\vec e_{\imath}}{2},\tfrac{i\vec e_{\jmath}}{2}\right] = \epsilon_{\imath\jmath\lambda}\tfrac{i\vec e_\lambda}{2}, \qquad
+\left[\tfrac{i\vec e_{\imath}}{2},\tfrac{i\vec e_{\jmath}}{2}\right] = -\epsilon_{\imath\jmath\lambda}\tfrac{\vec e_\lambda}{2} ;
 $$
 
 The six maps $q\mapsto\vec e_\eta q$ and $q\mapsto q\vec e_\eta$ of left and right multiplication were confirmed antisymmetric on $\mathbb{H}$. The commutator of two left maps is $2\epsilon_{ij\eta}$ times the third left map, the commutator of two right maps is $-2\epsilon_{ij\eta}$ times the third right map, and a left map commutes with a right map. Applying the three left maps in turn and summing sends every element of $\mathbb{H}$ to $-3$ times itself, and the same holds for the three right maps. The last identity is the statement of equal Casimirs, and its value divided by the square of the generator normalization gives $\tfrac34$, that is $s(s+1)$ at $s = \tfrac12$.
@@ -216,12 +216,12 @@ The quantum companion article *The Hydrogen Atom in Biquaternionic Form — The 
 
 **What remains open.** The generators $\vec L$ and $\vec A$ are functions on the phase space, not elements of $\mathbb{B}$, and the algebra $\mathrm{SO}(4)$ is six-dimensional. Why the algebra cannot host it is worth stating exactly, because the exact statement is sharper than the count of dimensions. Under the commutator the material sector is closed, $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}] \subseteq \mathbb{B}_{\Phi}$ and $[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}] \subseteq \mathbb{B}_{\Phi}$, and $\mathbb{B}_{\Phi}$ is the algebra $\mathrm{U}(2) \cong \mathrm{U}(1)\oplus\mathrm{SU}(2)$ of real dimension four, whose scalar-free part $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ is the $\mathrm{SU}(2)$ of rotations. Since the maximal compact subalgebra of $\mathrm{GL}(2,\mathbb{C})$ is $\mathrm{U}(2)$, of dimension four, no compact subalgebra of dimension six lies in $\mathbb{B}$: the compact algebra $\mathrm{SO}(4) \cong \mathrm{SU}(2)\oplus\mathrm{SU}(2)$ is not a commutator subalgebra of the biquaternions, and that is the reason, rather than a count of rotation generators.
 
-What $\mathbb{B}$ does contain at dimension six is its scalar-free part, which is $\mathrm{SL}(2,\mathbb{C})$ as a real Lie algebra, spanned by the rotations $\vec e_\mu/2$ — the vector directions of the material sector — together with the boosts $i\vec e_\mu/2$ — the vector directions of the informational sector:
+What $\mathbb{B}$ does contain at dimension six is its scalar-free part, which is $\mathrm{SL}(2,\mathbb{C})$ as a real Lie algebra, spanned by the rotations $\vec e_{\imath}/2$ — the vector directions of the material sector — together with the boosts $i\vec e_{\imath}/2$ — the vector directions of the informational sector:
 
 $$
-\left[\tfrac{\vec e_\mu}{2},\tfrac{\vec e_\nu}{2}\right] = \epsilon_{\mu\nu\lambda}\tfrac{\vec e_\lambda}{2}, \qquad
-\left[\tfrac{\vec e_\mu}{2},\tfrac{i\vec e_\nu}{2}\right] = \epsilon_{\mu\nu\lambda}\tfrac{i\vec e_\lambda}{2}, \qquad
-\left[\tfrac{i\vec e_\mu}{2},\tfrac{i\vec e_\nu}{2}\right] = -\epsilon_{\mu\nu\lambda}\tfrac{\vec e_\lambda}{2} .
+\left[\tfrac{\vec e_{\imath}}{2},\tfrac{\vec e_{\jmath}}{2}\right] = \epsilon_{\imath\jmath\lambda}\tfrac{\vec e_\lambda}{2}, \qquad
+\left[\tfrac{\vec e_{\imath}}{2},\tfrac{i\vec e_{\jmath}}{2}\right] = \epsilon_{\imath\jmath\lambda}\tfrac{i\vec e_\lambda}{2}, \qquad
+\left[\tfrac{i\vec e_{\imath}}{2},\tfrac{i\vec e_{\jmath}}{2}\right] = -\epsilon_{\imath\jmath\lambda}\tfrac{\vec e_\lambda}{2} .
 $$
 
 This is the Lorentz algebra of the corpus's rotors, and it is $\mathrm{SO}(3,1)$: the split real form of the same complexification whose compact real form is $\mathrm{SO}(4)$. The algebra therefore carries a six-dimensional symmetry algebra of exactly the right complexification, and the real form it carries is the one belonging to the **unbound** case of the brackets above; the bound case's compact $\mathrm{SO}(4)$ is its compact form. An algebraic account of the bound-state degeneracy **inside $\mathbb{B}$** is still not available, and the open question of the hydrogen article is not resolved by the present article. What is established is that the symmetry is classical, that it lives in the phase space, and that the algebra's own six-dimensional structure is the continuation of the bound-state symmetry to the other sign of the energy.
@@ -234,11 +234,11 @@ The biquaternion algebra contains the following objects of the Coulomb problem.
 
 **The real three-space.** The vectors $\vec r, \vec p, \vec L, \vec A$ all lie in $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{B}_{\Phi}$, which is the configuration three-space. The angular momentum is the vector part of the product $\vec r\vec p$, $\vec L = \operatorname{Vect}(\vec r\vec p)$, and its conservation is the vanishing of the commutator $[\vec r,\vec F]$.
 
-**The rotation group.** The unit real quaternions $\tilde u$, for which $\tilde u^{*}=\tilde u^{-1}$, act by the Hermitian pair $\tilde u(\cdot)\tilde u^{*}$ and rotate all six generators as vectors: $\tilde u\vec L\tilde u^{*}$ is the rotated angular momentum, and the same for $\vec A$. The algebra carries the $\mathrm{SU}(2)$ of spatial rotations in its own commutator, $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$.
+**The rotation group.** The unit real quaternions $\tilde u$, for which $\tilde u^{*}=\tilde u^{-1}$, act by the Hermitian pair $\tilde u(\cdot)\tilde u^{*}$ and rotate all six generators as vectors: $\tilde u\vec L\tilde u^{*}$ is the rotated angular momentum, and the same for $\vec A$. The algebra carries the $\mathrm{SU}(2)$ of spatial rotations in its own commutator, $[\vec e_{\imath},\vec e_{\jmath}] = 2\epsilon_{\imath\jmath\lambda}\vec e_\lambda$.
 
 **The central scalars.** The energy, the potential and the coupling are real multiples of $e_t$; the Casimir value $m\kappa^2/(8|E|)$ and the energy–eccentricity relation are scalar statements.
 
-**The Lorentz algebra.** The scalar-free part of $\mathbb{B}$ is closed under the commutator and is six-dimensional; generated by the rotations $\vec e_\mu/2$ and the boosts $i\vec e_\mu/2$, it is $\mathrm{SO}(3,1) \cong \mathrm{SL}(2,\mathbb{C})$, the Lorentz algebra of the corpus's rotors. It is the compact form $\mathrm{SO}(4)$ that is absent, not the six-dimensional complexification.
+**The Lorentz algebra.** The scalar-free part of $\mathbb{B}$ is closed under the commutator and is six-dimensional; generated by the rotations $\vec e_{\imath}/2$ and the boosts $i\vec e_{\imath}/2$, it is $\mathrm{SO}(3,1) \cong \mathrm{SL}(2,\mathbb{C})$, the Lorentz algebra of the corpus's rotors. It is the compact form $\mathrm{SO}(4)$ that is absent, not the six-dimensional complexification.
 
 ### The Symmetry of the Algebra on Itself
 
@@ -256,7 +256,7 @@ Under this action $\mathbb{B}$ is a single balanced representation. The two Casi
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The five generators are basis operators, each a pure tensor, and the six multipliers of the symmetry section are read in the same frame:
 
@@ -280,7 +280,7 @@ $$
 
 **The boundary the gammas make plain.** The $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$ of the symmetry section is the pair of multipliers, left against right, and the gamma dictionary shows that the two copies are of different kinds: the left multipliers are bivectors, and the right ones are not, $R_{\vec e_x}$ being the vector $\gamma_0$ up to $-i$, $R_{\vec e_y}$ a trivector and $R_{\vec e_z}$ the product of all four. The bivector space is six-dimensional over $\mathbb{C}$ and closed under the commutator, so the two $\mathrm{su}(2)$'s are not its self-dual and anti-self-dual halves; reading them so replaces the action of the algebra on itself by a split of the Lorentz generators, which is a different object. What the algebra reaches is the $\mathrm{so}(3,1)$ of its bivectors together with the $\mathrm{so}(4)$ of its own module structure, and the hidden symmetry of the Coulomb problem is in neither.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -321,7 +321,7 @@ The framework supplies the real three-space in which all six generators take the
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ $(\imath\neq\jmath)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_t$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian), informational (Hermitian) sectors |
 | $\vec r, \vec p$ | Position, momentum: real vectors in $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ |

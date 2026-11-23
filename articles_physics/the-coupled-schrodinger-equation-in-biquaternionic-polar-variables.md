@@ -40,7 +40,7 @@ with $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ the material connect
 
 ## The Covariant Logarithmic Derivative
 
-**The object.** The free article's bracket is $\mathcal A_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ in the spatial slots and $\mathcal A_t=\tilde\Xi^{-1}\partial_{t'}\tilde\Xi$ in the temporal one. The covariant version is the same object with the connection added inside the derivative,
+**The object.** The free article's bracket is $\mathcal A_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$ in the spatial slots and $\mathcal A_t=\tilde\Xi^{-1}\partial_{t'}\tilde\Xi$ in the temporal one. The covariant version is the same object with the connection added inside the derivative,
 
 $$
 \mathcal A^{\mathrm{gco}}_t=\tilde\Xi^{-1}D_t\tilde\Xi=\mathcal A_t-\frac{2\pi i\,ϙ}{h}\omicron_{\mathrm{pot}},
@@ -239,8 +239,8 @@ the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The central phase; the coordinate the gauge group translates |
 | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_b$ | The rapidity and axis of the Hermitian boost |
 | $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_r$ | The angle and axis of the rotor |
-| $\mathcal A_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ | The free logarithmic derivative |
-| $\mathcal A^{\mathrm{gco}}_\mu$ | The covariant one: $\mathcal A_t-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ and $\mathcal A_\eta+\frac{2\pi iϙ}{h}A_\eta$ |
+| $\mathcal A_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$ | The free logarithmic derivative |
+| $\mathcal A^{\mathrm{gco}}_{\imath}$ | The covariant one: $\mathcal A_t-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ and $\mathcal A_\eta+\frac{2\pi iϙ}{h}A_\eta$ |
 | $ϙ$ | The coupling; minus the electric charge of the older convention |
 | $\omicron_{\mathrm{pot}}$, $\vec A$ | The electric potential, $\omicron_{\mathrm{pot}}=c\,a'_t$, and the vector potential |
 | $\vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A$ | The kinetic momentum |

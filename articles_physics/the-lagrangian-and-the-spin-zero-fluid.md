@@ -2,11 +2,11 @@
 
 ## Introduction
 
-At the rung above, the velocity is on a shell, and the action makes the shell an equation rather than a hypothesis. [The Spin-Zero Fluid](the-spin-zero-fluid.html) derives the flow from a mass shell that it states as a constraint: $\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}=-c^{2}-2Q_{\mathrm{qnt}}/m$. Here the same relation is the Euler–Lagrange equation of the density, so the fluid's kinematics is a consequence of varying an action and not a condition imposed on it.
+At the rung above, the velocity is on a shell, and the action makes the shell an equation rather than a hypothesis. [The Spin-Zero Fluid](the-spin-zero-fluid.html) derives the flow from a mass shell that it states as a constraint: $\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}=-c^{2}-2Q_{\mathrm{qnt}}/m$. Here the same relation is the Euler–Lagrange equation of the density, so the fluid's kinematics is a consequence of varying an action and not a condition imposed on it.
 
 Three results.
 
-*First, the action has two terms and both are energies per proper volume.* A dust term, $-\frac{m\rho_{\mathrm{num}}}{2}[\sum_\mu V_\mu V_\mu+c^{2}]$, which is the mass shell multiplied by a density, and a gradient energy, $-\frac{h^{2}}{8\pi^{2}m}\sum_\mu(\partial_\mu \varrho)^{2}$, which is the quantum term. The first term's bracket vanishes on shell, so the action's dust part measures the departure from the shell; the second term does not vanish anywhere.
+*First, the action has two terms and both are energies per proper volume.* A dust term, $-\frac{m\rho_{\mathrm{num}}}{2}[\sum_{\imath} V_{\imath} V_{\imath}+c^{2}]$, which is the mass shell multiplied by a density, and a gradient energy, $-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}$, which is the quantum term. The first term's bracket vanishes on shell, so the action's dust part measures the departure from the shell; the second term does not vanish anywhere.
 
 *Second, the two variations give continuity and the shell, and the acceleration law is the shell's gradient.* Two real fields, $\varrho$ and $S_{\tilde\Xi}$, two equations, and no constraint. That is the count the block's article asserts and this article derives: the third equation is the second's gradient, and it is not independent.
 
@@ -16,25 +16,25 @@ Position in the block. This is the variational companion of [The Spin-Zero Fluid
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}=i(E/c)e_t+\vec p$, $\tilde V_\Phi=\tilde P_\Phi/m$, $k_m=\frac{2\pi mc}{h}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$ with $r'_t=ct$. The temporal slot carries the $i$, so $\sum_\mu p_\mu p_\mu=-m^{2}c^{2}$ on the free shell. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the conjugations are $*$ and $^{\natural}$. The action is a functional over four-dimensional space with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$.
+The conventions are restated here so that every sign below is checkable from this page alone. $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}=i(E/c)e_t+\vec p$, $\tilde V_\Phi=\tilde P_\Phi/m$, $k_m=\frac{2\pi mc}{h}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$ with $r'_t=ct$. The temporal slot carries the $i$, so $\sum_{\imath} p_{\imath} p_{\imath}=-m^{2}c^{2}$ on the free shell. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the conjugations are $*$ and $^{\natural}$. The action is a functional over four-dimensional space with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$.
 
 ## The Action in the Fluid Variables
 
-The polar action is quadratic in the bracket, and in the scalar case the bracket is the phase's and the amplitude's derivatives. With $\mathcal A_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi=\partial_\mu\ln \varrho+i\partial_\mu\theta_{\mathrm{pha}}$,
+The polar action is quadratic in the bracket, and in the scalar case the bracket is the phase's and the amplitude's derivatives. With $\mathcal A_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi=\partial_{\imath}\ln \varrho+i\partial_{\imath}\theta_{\mathrm{pha}}$,
 
 $$
-\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\,\sum_\mu\varepsilon_\mu\mathcal A_\mu\mathcal A_\mu^{*}\bigr)=\rho_{\mathrm{fr}}\bigl[(\partial_\mu\ln \varrho)^{2}+(\partial_\mu\theta_{\mathrm{pha}})^{2}\bigr],
+\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\,\sum_{\imath}\varepsilon_{\imath}\mathcal A_{\imath}\mathcal A_{\imath}^{*}\bigr)=\rho_{\mathrm{fr}}\bigl[(\partial_{\imath}\ln \varrho)^{2}+(\partial_{\imath}\theta_{\mathrm{pha}})^{2}\bigr],
 $$
 
 with $\rho_{\mathrm{fr}}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\varrho^{2}$ the scalar part of the frame density, the frame's rapidity being trivial at this rung, so the frame density and $\rho_{\mathrm{num}}$ are the same number. The two squares are separate because the bracket's real and imaginary parts are of different types and do not mix under the scalar part. Substituting $\rho_{\mathrm{fr}}=\rho_{\mathrm{num}}$ and multiplying by $\frac{h^{2}}{4\pi^{2}}/2m$ to put the terms in the fluid's units,
 
 $$
-\boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}\Bigr]-\frac{h^{2}}{8\pi^{2}m}\sum_\mu(\partial_\mu \varrho)^{2}\;}
+\boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}\Bigr]-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}\;}
 $$
 
-with $V_{\Phi,\mu}=\partial_\mu S_{\tilde\Xi}/m=\partial_\mu\theta_{\mathrm{pha}}/k_m$.
+with $V_{\Phi,\imath}=\partial_{\imath} S_{\tilde\Xi}/m=\partial_{\imath}\theta_{\mathrm{pha}}/k_m$.
 
-The dust term's bracket is the shell's left-hand side. That is not a coincidence of notation: the bracket is $\sum_\mu V_\mu V_\mu+c^{2}$, which the block's article sets equal to $-2Q_{\mathrm{qnt}}/m$, so the first term is $-\frac{m\rho_{\mathrm{num}}}{2}\cdot(-2Q_{\mathrm{qnt}}/m)=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ on shell. **The dust term is not zero on shell and the action is not a constraint generator in disguise**: what vanishes on the free shell is the bracket at $Q_{\mathrm{qnt}}=0$, and the quantum potential is exactly what the bracket measures.
+The dust term's bracket is the shell's left-hand side. That is not a coincidence of notation: the bracket is $\sum_{\imath} V_{\imath} V_{\imath}+c^{2}$, which the block's article sets equal to $-2Q_{\mathrm{qnt}}/m$, so the first term is $-\frac{m\rho_{\mathrm{num}}}{2}\cdot(-2Q_{\mathrm{qnt}}/m)=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ on shell. **The dust term is not zero on shell and the action is not a constraint generator in disguise**: what vanishes on the free shell is the bracket at $Q_{\mathrm{qnt}}=0$, and the quantum potential is exactly what the bracket measures.
 
 The two terms are energies per proper volume, and the current is not. $\rho_{\mathrm{num}}$ is the proper density and the action is written against proper volume; the current's temporal component is $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, the charge density, and it is measured against lab volume. The factor $\gamma$ between them is a Jacobian and not a dynamical statement, and it is why the block's notation table carries two densities with one action. At the rung below there is one density because there is no norm for a $\gamma$.
 
@@ -42,26 +42,26 @@ There is no term in $\rho_{\mathrm{num}}$ alone apart from the mass term, and th
 
 ## The Variation: Two of Them
 
-Varying the phase gives continuity of the current. $\mathcal L_{\mathrm{fl}}$ depends on $S_{\tilde\Xi}$ only through $\sum_\mu V_\mu V_\mu$, so
+Varying the phase gives continuity of the current. $\mathcal L_{\mathrm{fl}}$ depends on $S_{\tilde\Xi}$ only through $\sum_{\imath} V_{\imath} V_{\imath}$, so
 
 $$
-\partial_\mu\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_\mu S_{\tilde\Xi})}=0
+\partial_{\imath}\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_{\imath} S_{\tilde\Xi})}=0
 \qquad\Longrightarrow\qquad
-\partial_\mu\bigl(\rho_{\mathrm{num}}V_{\Phi,\mu}\bigr)=0,
+\partial_{\imath}\bigl(\rho_{\mathrm{num}}V_{\Phi,\imath}\bigr)=0,
 $$
 
-which is $\partial_\mu J_{\Phi,\mu}=0$ with $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$. The current is the Noether current of the phase shift and the continuity equation is its conservation, and the shift is global: nothing here is a gauge redundancy, so the current is a charge.
+which is $\partial_{\imath} J_{\Phi,\imath}=0$ with $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$. The current is the Noether current of the phase shift and the continuity equation is its conservation, and the shift is global: nothing here is a gauge redundancy, so the current is a charge.
 
 Varying the amplitude gives the mass shell, and the shell contains the quantum potential through the d'Alembertian. The gradient term varies as
 
 $$
-\delta\int-\frac{h^{2}}{8\pi^{2}m}\sum_\mu(\partial_\mu \varrho)^{2}=+\frac{h^{2}}{(2\pi)^{2} m}\int\Box_\Phi \varrho\,\delta \varrho,
+\delta\int-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}=+\frac{h^{2}}{(2\pi)^{2} m}\int\Box_\Phi \varrho\,\delta \varrho,
 $$
 
-and $\delta \varrho=\delta\rho_{\mathrm{num}}/(2\varrho)$, so the contribution per unit $\delta\rho_{\mathrm{num}}$ is $\frac{h^{2}\Box_\Phi \varrho}{8\pi^{2}m\varrho}=-Q_{\mathrm{qnt}}$. The dust term contributes $-\frac{m}{2}[\sum_\mu V_\mu V_\mu+c^{2}]$. Hence
+and $\delta \varrho=\delta\rho_{\mathrm{num}}/(2\varrho)$, so the contribution per unit $\delta\rho_{\mathrm{num}}$ is $\frac{h^{2}\Box_\Phi \varrho}{8\pi^{2}m\varrho}=-Q_{\mathrm{qnt}}$. The dust term contributes $-\frac{m}{2}[\sum_{\imath} V_{\imath} V_{\imath}+c^{2}]$. Hence
 
 $$
-\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}=-c^{2}-\frac{2Q_{\mathrm{qnt}}}{m},
+\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}=-c^{2}-\frac{2Q_{\mathrm{qnt}}}{m},
 $$
 
 which is the block's display, arrived at as an equation of motion.
@@ -83,7 +83,7 @@ The count is therefore two and two, with nothing left over. No multiplier, no su
 The sign of the second term is not uniform, and the reason is the operator's. With the corpus's conventions the temporal component of a four-gradient carries an $i$, so
 
 $$
-\sum_\mu(\partial_\mu \varrho)^{2}=\sum_j(\partial_jr)^{2}-\bigl(\partial_{r'_t}\varrho\bigr)^{2},
+\sum_{\imath}(\partial_{\imath} \varrho)^{2}=\sum_j(\partial_jr)^{2}-\bigl(\partial_{r'_t}\varrho\bigr)^{2},
 $$
 
 and the quadratic form is a difference and not a sum. The gradient energy is therefore bounded neither above nor below, and the fluid has no positive-definite energy functional.
@@ -92,7 +92,7 @@ Three consequences, and the block states each of them in another language.
 
 *The quantum potential changes sign.* $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ with an indefinite $\Box_\Phi$, so a density that varies in time contributes with the opposite sign to one that varies in space. The non-relativistic quantum potential is $\Delta_\Phi$'s and is negative at a maximum of $\varrho$; this one is not sign-definite at all.
 
-*The action cannot see the sign $\varepsilon$.* The block's charged article names the density's indefinite sign as the free article's defect which the coupling moves and does not repair. In the action it is one line: $\varepsilon$ is central and $\varepsilon^{2}=1$, so it cancels in $\tilde\Xi^{*}\tilde\Xi$ and in $\mathcal A_\mu$, and the two branches $\varepsilon=\pm1$ give the same Lagrangian. The action is blind to the branch and the charge density's sign is what blindness costs.
+*The action cannot see the sign $\varepsilon$.* The block's charged article names the density's indefinite sign as the free article's defect which the coupling moves and does not repair. In the action it is one line: $\varepsilon$ is central and $\varepsilon^{2}=1$, so it cancels in $\tilde\Xi^{*}\tilde\Xi$ and in $\mathcal A_{\imath}$, and the two branches $\varepsilon=\pm1$ give the same Lagrangian. The action is blind to the branch and the charge density's sign is what blindness costs.
 
 *The functional has no ground state, and that is not a defect of the fluid reading.* A field theory with an indefinite quadratic form has no lowest configuration, which is why the relativistic object of this block is a field and not a fluid with a rest state. The action says this before any quantization, and the second category's Fock space is where the two signs become particles and antiparticles.
 
@@ -112,7 +112,7 @@ What the section does not claim. It does not claim the fluid equals the element 
 
 **The article's claim is a count, and the count is exact.** Two real fields, $\varrho$ and $S_{\tilde\Xi}$, give two Euler–Lagrange equations: continuity, from the phase, and the mass shell, from the density. There is no constraint, because no momentum vanishes: both fields are canonical. The acceleration law that the block's article states as a separate equation is not a third equation here — it is the gradient of the shell.
 
-The hand check. The shell is $\sum_\mu V_\mu V_\mu=-c^{2}-2Q_{\mathrm{qnt}}/m$ with $V_\mu=\partial_\mu S/m$. Differentiating it with respect to the spatial coordinates and using $\partial_{r'_t}V_\mu=\partial_\mu V_{r'_t}$ gives
+The hand check. The shell is $\sum_{\imath} V_{\imath} V_{\imath}=-c^{2}-2Q_{\mathrm{qnt}}/m$ with $V_{\imath}=\partial_{\imath} S/m$. Differentiating it with respect to the spatial coordinates and using $\partial_{r'_t}V_{\imath}=\partial_{\imath} V_{r'_t}$ gives
 
 $$
 \frac{\partial\vec V}{\partial r'_t}+(\vec V\cdot\vec\nabla_\Phi)\vec V=-\vec\nabla_\Phi\Bigl(\frac{Q_{\mathrm{qnt}}}{m}\Bigr),
@@ -127,10 +127,10 @@ Why the count matters. A Lagrangian with two fields and two equations is not ove
 The action is invariant under translations, so it has a stress, and the stress is the block's up to an improvement. The canonical tensor is
 
 $$
-T_{\mu\nu}=\bigl(\partial_\nu S_{\tilde\Xi}\bigr)\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_\mu S_{\tilde\Xi})}+\bigl(\partial_\nu \varrho\bigr)\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_\mu \varrho)}-\eta_{\mu\nu}\mathcal L_{\mathrm{fl}},
+T_{\imath\jmath}=\bigl(\partial_{\jmath} S_{\tilde\Xi}\bigr)\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_{\imath} S_{\tilde\Xi})}+\bigl(\partial_{\jmath} \varrho\bigr)\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_{\imath} \varrho)}-\eta_{\imath\jmath}\mathcal L_{\mathrm{fl}},
 $$
 
-and it splits into the two terms the action has. The first is the dust's: $\partial\mathcal L_{\mathrm{fl}}/\partial(\partial_\mu S_{\tilde\Xi})=-\rho_{\mathrm{num}}V_{\Phi,\mu}$, so that term is $-m\rho_{\mathrm{num}}V_{\Phi,\mu}V_{\Phi,\nu}$, the stress of a pressureless flow, whose time–time component is $\gamma^{2}\rho_{\mathrm{num}}mc^{2}$ because the density and the energy are both boosted. The second is the gradient energy's, and it is the block's $\sigma^{Q}_{ij}$ extended to four dimensions. Two cautions about the sum. It is the canonical tensor, and the block's $w_{\mathrm{fl}}$ is the improved one: the two differ by an improvement term, so the comparison below is of structure and not of normalisation. And it is not the fluid's stress in the sense of a one-particle distribution, because the dust term is quadratic in the velocity where a fluid's action is linear in a density.
+and it splits into the two terms the action has. The first is the dust's: $\partial\mathcal L_{\mathrm{fl}}/\partial(\partial_{\imath} S_{\tilde\Xi})=-\rho_{\mathrm{num}}V_{\Phi,\imath}$, so that term is $-m\rho_{\mathrm{num}}V_{\Phi,\imath}V_{\Phi,\jmath}$, the stress of a pressureless flow, whose time–time component is $\gamma^{2}\rho_{\mathrm{num}}mc^{2}$ because the density and the energy are both boosted. The second is the gradient energy's, and it is the block's $\sigma^{Q}_{ij}$ extended to four dimensions. Two cautions about the sum. It is the canonical tensor, and the block's $w_{\mathrm{fl}}$ is the improved one: the two differ by an improvement term, so the comparison below is of structure and not of normalisation. And it is not the fluid's stress in the sense of a one-particle distribution, because the dust term is quadratic in the velocity where a fluid's action is linear in a density.
 
 What the action adds here is the reason the block's identity holds. [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) proves $\partial_j\sigma^{Q}_{j\eta}=-\rho_{\mathrm{num}}\partial_\eta Q_{\mathrm{qnt}}$ by a direct computation on the wave equation, and it records the caveat that the identity needs an amplitude stationary in the material time. Here the same identity is the translation invariance's conservation law together with the shell, and the caveat is visible: the four-dimensional stress is the divergence-free object, and the three-by-three block is a projection of it whose divergence carries the temporal derivative only when that derivative vanishes. **The action does not repair the caveat; it explains where it comes from.**
 
@@ -166,13 +166,13 @@ The nodal set in four dimensions. The chart fails at $\varrho=0$, and at this ru
 
 ## Summary
 
-The action. $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}]-\frac{h^{2}}{8\pi^{2}m}\sum_\mu(\partial_\mu \varrho)^{2}$, a dust term and a gradient energy, both per proper volume.
+The action. $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}]-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}$, a dust term and a gradient energy, both per proper volume.
 
-The variations. The phase gives $\partial_\mu(\rho_{\mathrm{num}}V_{\Phi,\mu})=0$; the amplitude gives $\sum_\mu V_\mu V_\mu=-c^{2}-2Q_{\mathrm{qnt}}/m$; the gradient of the second is $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$.
+The variations. The phase gives $\partial_{\imath}(\rho_{\mathrm{num}}V_{\Phi,\imath})=0$; the amplitude gives $\sum_{\imath} V_{\imath} V_{\imath}=-c^{2}-2Q_{\mathrm{qnt}}/m$; the gradient of the second is $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$.
 
 The shell. An equation of motion and not a hypothesis; two fields, two equations, no constraint.
 
-The energy. Indefinite, because $\sum_\mu(\partial_\mu \varrho)^{2}$ is a difference; hence no ground state; and $\varepsilon$ absent from every term, so the two branches are one functional — the action's version of what the block states about the density and what the second category states about the vacuum.
+The energy. Indefinite, because $\sum_{\imath}(\partial_{\imath} \varrho)^{2}$ is a difference; hence no ground state; and $\varepsilon$ absent from every term, so the two branches are one functional — the action's version of what the block states about the density and what the second category states about the vacuum.
 
 The stress. The translation current, dust plus gradient; the block's three-by-three identity is its conservation projected, and the static caveat is the projection's.
 
@@ -185,11 +185,11 @@ The stress. The translation current, dust plus gradient; the block's three-by-th
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Charge density; the current's temporal component |
 | $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | Phase; the current's potential |
 | $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}$ | Four-momentum; $\tilde P_\Phi=i(E/c)e_t+\vec p$ |
-| $\tilde V_\Phi=\tilde P_\Phi/m$ | Four-velocity; on shell $\sum_\mu V_\mu V_\mu=-c^{2}-2Q_{\mathrm{qnt}}/m$ |
+| $\tilde V_\Phi=\tilde P_\Phi/m$ | Four-velocity; on shell $\sum_{\imath} V_{\imath} V_{\imath}=-c^{2}-2Q_{\mathrm{qnt}}/m$ |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential; indefinite |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$ | Central d'Alembertian; $r'_t=ct$ |
-| $\mathcal E_{\mathrm{grad}}=-\frac{h^{2}}{8\pi^{2}m}\int\sum_\mu(\partial_\mu \varrho)^{2}$ | Gradient energy; indefinite |
-| $T_{\mu\nu}$ | Canonical stress; $T_{00}=\rho_{\mathrm{chg}}mc^{2}$ on shell |
+| $\mathcal E_{\mathrm{grad}}=-\frac{h^{2}}{8\pi^{2}m}\int\sum_{\imath}(\partial_{\imath} \varrho)^{2}$ | Gradient energy; indefinite |
+| $T_{\imath\jmath}$ | Canonical stress; $T_{00}=\rho_{\mathrm{chg}}mc^{2}$ on shell |
 | $\gamma=E/(mc^{2})$ | Signed Lorentz factor; the Jacobian between the two densities |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\varepsilon=\pm1$ | The branch; the action does not select it |

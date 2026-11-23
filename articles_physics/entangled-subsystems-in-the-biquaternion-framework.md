@@ -8,7 +8,7 @@ This article asks that question for the biquaternion framework developed in the 
 
 The article is organized as follows. First, the biquaternion description of an entangled subsystem is recalled: the singlet as a single algebraic object, the reduced state as a reduction, the correlation function as a bilinear pairing, and no-signaling as an identity satisfied by the reduction. Then the five debates are revisited one by one, with a clear statement of what the framework does and does not contribute to each. Then the structural features of the framework that are genuinely new — as structure, not as physics — are collected. The article closes with the open questions that would have to be answered before the framework could be said to bring more than a change of notation.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the scalar part $\mathrm{Sc}(x\otimes y) = \mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$, so that a full contraction of the two factors pays $4$ and a partial one pays $2$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_{\imath}^2 = -e_t$, and $i$ is the scalar imaginary. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the scalar part $\mathrm{Sc}(x\otimes y) = \mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$, so that a full contraction of the two factors pays $4$ and a partial one pays $2$.
 
 ## The Entangled Subsystem in the Biquaternion Language
 
@@ -20,7 +20,7 @@ $$
 \boxed{\;\tilde\Pi_{\mathrm{id,singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right)\;}.
 $$
 
-This is the same object viewed in a different language, but the language matters for how the correlations are read. The singlet is not a pair of systems that then has to be correlated; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product terms $\vec e_\mu\otimes \vec e_\mu$. There is no pair of "two separate things" whose correlation has to be explained; the algebraic object itself is not separable.
+This is the same object viewed in a different language, but the language matters for how the correlations are read. The singlet is not a pair of systems that then has to be correlated; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product terms $\vec e_{\imath}\otimes \vec e_{\imath}$. There is no pair of "two separate things" whose correlation has to be explained; the algebraic object itself is not separable.
 
 The same is true in Hilbert-space language, since $|\tilde{Ξ}^-\rangle$ is also a single vector. But the biquaternion formulation makes the point more vivid, because the idempotents are the canonical objects of the algebra and the tensor product is the algebraic operation that carries the state. In the biquaternion interpretation, the entanglement is a fact about the *pairing structure* of the algebra, not about a dynamical influence passing between two systems.
 
@@ -56,7 +56,7 @@ $$
 \boxed{\;\rho_1 = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id,singlet}}) = \tfrac{1}{2}e_t\;}.
 $$
 
-This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_\mu\otimes e_t$ with $\mu \in \{x,y,z\}$, and the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \in \{x,y,z\}$ have vanishing scalar part in the second factor: $2\,\mathrm{Sc}_2(\vec e_\mu\otimes \vec e_\mu) = \vec e_\mu\,2\,\mathrm{Sc}(\vec e_\mu) = 0$. So the reduction keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic shadow of the entanglement of the joint state.
+This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_{\imath}\otimes e_t$ with $\mu \in \{x,y,z\}$, and the entangled terms $\vec e_{\imath}\otimes \vec e_{\imath}$ with $\mu \in \{x,y,z\}$ have vanishing scalar part in the second factor: $2\,\mathrm{Sc}_2(\vec e_{\imath}\otimes \vec e_{\imath}) = \vec e_{\imath}\,2\,\mathrm{Sc}(\vec e_{\imath}) = 0$. So the reduction keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic shadow of the entanglement of the joint state.
 
 ### The correlation function as a bilinear pairing
 
@@ -76,7 +76,7 @@ $$
 \bigl(\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{id,singlet}}\circ\bigl(\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes e_t\bigr),
 $$
 
-where $\tilde\Pi_{\mathrm{id}}(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. Computing directly, using $\tilde\Pi_{\mathrm{id}}(\vec u_a)\,\vec e_\mu\,\tilde\Pi_{\mathrm{id}}(\vec u_a) = \tfrac{1}{2}a_\mu(\vec u_a - ie_t)$ for $\mu\in\{x,y,z\}$ and $\vec u_a - ie_t = -2i\tilde\Pi_{\mathrm{id}}(\vec u_a)$, gives
+where $\tilde\Pi_{\mathrm{id}}(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. Computing directly, using $\tilde\Pi_{\mathrm{id}}(\vec u_a)\,\vec e_{\imath}\,\tilde\Pi_{\mathrm{id}}(\vec u_a) = \tfrac{1}{2}a_{\imath}(\vec u_a - ie_t)$ for $\mu\in\{x,y,z\}$ and $\vec u_a - ie_t = -2i\tilde\Pi_{\mathrm{id}}(\vec u_a)$, gives
 
 $$
 \boxed{\;\bigl(\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{id,singlet}}\circ\bigl(\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes e_t\bigr) = \tfrac{1}{2}\,\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes \tilde\Pi_{\mathrm{id}}(-\vec u_a)\;},
@@ -258,9 +258,9 @@ The honest position is this. The framework makes certain structural features of 
 | $\mathbb{B}_{\Phi}$ | Material sector (anti-Hermitian): four-vectors of relativity |
 | $\mathbb{B}_{\Psi}$ | Informational sector (Hermitian): states and observables |
 | $\mathbb{B}\otimes\mathbb{B}$ | Two-qubit tensor product, $\cong M_4(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\tilde\Pi_{\mathrm{id,singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\mu \vec e_\mu\otimes \vec e_\mu)$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{id,singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_{\imath} \vec e_{\imath}\otimes \vec e_{\imath})$ | Singlet idempotent |
 | $\tilde\Pi_{\mathrm{id}}(\pm\vec u_a) = \tfrac{1}{2}(e_t \pm i\vec u_a)$ | Single-qubit idempotents along $\vec u_a$ |
 | $\mathrm{Sc}_2(a\otimes b) = a\,\mathrm{Sc}(b)$ | Partial scalar part over the second factor; the reduction is $2\,\mathrm{Sc}_2$ |
 | $\tilde{Ϛ}_{\Psi,1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id,singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
@@ -269,7 +269,7 @@ The honest position is this. The framework makes certain structural features of 
 | $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$ | Idempotent element (irreversible projection) |
 | $\mathrm{Sc}(x\otimes y) = \mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$ | Tensor-product scalar part; a contraction pays $4$ |
 | $2\sqrt{2}$ | Tsirelson bound for the CHSH combination |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

@@ -48,7 +48,7 @@ where $\cdot$ is the general quaternionic bilinear form $\langle\cdot,\cdot\rang
 
 Two features of (1) are worth naming because they are the source of most sign errors in this subject. First, the tetrad is **not** an orthonormal frame: its legs are null, so the metric in tetrad components is off-diagonal, and the completeness relation that inverts (1) carries the off-diagonal signs. Second, $l$ and $n$ are real four-vectors while $m$ and $\bar m$ are complex conjugates; the tetrad is a basis of the complexified material sector, of complex dimension four, not of the real $\mathbb{B}_{\Phi}$.
 
-The tetrad legs are labelled in the order $(e_1, e_2, e_3, e_4) = (l, n, m, \bar m)$ when a tetrad index is needed. Greek letters $\mu,\nu,\dots$ run over the coordinate directions of the material sector, and tetrad indices $a,b,\dots$ over the four legs. The components of a leg in the tetrad carry the same low index, $l_a, n_a, m_a, \bar m_a$, and every contraction over tetrad or spinor indices is written as an explicit sum.
+The tetrad legs are labelled in the order $(e_1, e_2, e_3, e_4) = (l, n, m, \bar m)$ when a tetrad index is needed. Greek letters ${\imath},\jmath,\dots$ run over the coordinate directions of the material sector, and tetrad indices $a,b,\dots$ over the four legs. The components of a leg in the tetrad carry the same low index, $l_a, n_a, m_a, \bar m_a$, and every contraction over tetrad or spinor indices is written as an explicit sum.
 
 ## The Null Tetrad as a Frame of Zero Divisors
 
@@ -230,16 +230,16 @@ $$
 \tag{6}
 $$
 
-and, writing $l_\mu,n_\mu,m_\mu,\bar m_\mu$ for the components of the legs in the orthonormal coordinate basis of the material sector, the interval's coefficients are
+and, writing $l_{\imath},n_{\imath},m_\mu,\bar m_\mu$ for the components of the legs in the orthonormal coordinate basis of the material sector, the interval's coefficients are
 
 $$
-\boxed{\;g_{\mu\nu} = -l_\mu n_\nu - n_\mu l_\nu + m_\mu\bar m_\nu + \bar m_\mu m_\nu\;}.
+\boxed{\;g_{\imath\jmath} = -l_{\imath} n_{\jmath} - n_{\imath} l_{\jmath} + m_\mu\bar m_{\jmath} + \bar m_\mu m_{\jmath}\;}.
 \tag{7}
 $$
 
 Substituting (2), the right-hand side of (7) reproduces the interval $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$: the four zero divisors rebuild the material-sector interval, and its one minus is the square of the $i$ in $Q_t=i q'_t$. No other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde{Q}$ with all four coefficients arbitrary, and (7) on the explicit legs.
 
-Equation (7) is the null-tetrad counterpart of the frame relation $g_{\mu\nu} = \langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$ of the parent article. There the frame was orthonormal and its legs lay in $\mathbb{B}_{\Phi}$; here the frame is null and complex, and its legs are zero divisors. At each point the two are related by the local Lorentz transformation that carries one basis to the other, so the parent's remark — that the algebra supplies the local Lorentz group and the home of the frame, but not the frame itself — applies here verbatim.
+Equation (7) is the null-tetrad counterpart of the frame relation $g_{\imath\jmath} = \langle\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}$ of the parent article. There the frame was orthonormal and its legs lay in $\mathbb{B}_{\Phi}$; here the frame is null and complex, and its legs are zero divisors. At each point the two are related by the local Lorentz transformation that carries one basis to the other, so the parent's remark — that the algebra supplies the local Lorentz group and the home of the frame, but not the frame itself — applies here verbatim.
 
 ## The Spinor Dyad Behind the Tetrad
 
@@ -277,7 +277,7 @@ $$
 Metric compatibility, $\nabla_a(e_b\cdot e_c)=0$, gives $\Gamma_{abc}+\Gamma_{acb}=0$, so the coefficients are antisymmetric in the last two tetrad indices. For each $a$ this is a $4\times4$ antisymmetric matrix with six independent entries, the connection being real, so $\Gamma_{abc}$ has $4\times6=24$ real independent components — that is, **twelve complex** ones. These twelve complex numbers, written in the standard names, are the **spin coefficients**:
 
 $$
-\kappa,\ \sigma,\ \rho,\ \tau; \qquad \pi,\ \lambda,\ \mu,\ \nu; \qquad \varepsilon,\ \gamma,\ \beta,\ \alpha .
+\kappa,\ \sigma,\ \rho,\ \tau; \qquad \pi,\ \lambda,\ \mu,\ \jmath; \qquad \varepsilon,\ \gamma,\ \beta,\ \alpha .
 $$
 
 The first four are the contractions of $\vec\nabla_\Phi l$ with the tetrad legs,
@@ -443,7 +443,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $g_{ab}[\mathrm{NP}]$ | tetrad metric, off-diagonal, (5) |
 | $\varepsilon(o,o')$ | symplectic pairing of the spinor module |
 | $\Gamma_{abc}=(\nabla_a e_b)\cdot e_c$ | connection coefficients in the tetrad |
-| $\kappa,\sigma,\rho,\tau,\pi,\lambda,\mu,\nu,\varepsilon,\gamma,\beta,\alpha$ | the twelve spin coefficients |
+| $\kappa,\sigma,\rho,\tau,\pi,\lambda,\imath,\jmath,\varepsilon,\gamma,\beta,\alpha$ | the twelve spin coefficients |
 | $D,\mathcal{N}_{\mathrm{NP}},\delta,\bar\delta$ | directional derivatives along $l,n,m,\bar m$ |
 | $C_{abcd}$ | Weyl tensor |
 | $\tilde{Ξ}_{0},\dots,\tilde{Ξ}_{4}$ | Weyl scalars, (9) |

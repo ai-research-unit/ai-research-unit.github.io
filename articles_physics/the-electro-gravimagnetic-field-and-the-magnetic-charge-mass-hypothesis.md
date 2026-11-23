@@ -76,7 +76,7 @@ $$
 
 which the source calls $*$-unitary because each is fixed by the algebra's involution, $(D^\pm)^* = D^\pm$ — the elements with $F^* = F$ are the source's **$*$-unitary** biquaternions, exactly those of the form $f_1 + iF_2$, and they are the corpus's Hermitian subspace $\mathbb{B}_{\Psi}$. Applied repeatedly to the potential biquaternion in the Lorenz gauge they generate the field strength, the charge–current, the conservation law and the wave equation; the first-order equation $D^+\tilde F = -i\tilde J_{\Phi,\mathrm{eg}}$ is the source's symmetrized Maxwell system, and it reads the charge–current as the complex gradient of the field strength — charges and currents are, on this interpretation, simply the physical manifestation of that gradient.
 
-The pair is not a new operator for the corpus; it is the corpus gradient in another sign convention. With the corpus's gradient $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$,
+The pair is not a new operator for the corpus; it is the corpus gradient in another sign convention. With the corpus's gradient $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\imath} \vec e_{\imath}\partial/\partial R_{\imath}$ and its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$,
 
 | Source operator | Corpus operator | Composition |
 |---|---|---|
@@ -147,7 +147,7 @@ The first pair says that in a free field the electric and the gravimagnetic char
 
 The source draws two further consequences for a free field, and the corpus records them as the programme's. The electric and the gravimagnetic charge density can each be of either sign; and under a **stationary vibration** — the monochromatic free solutions of the same law, developed in *Harmonic Elementary Particles and the Periodic System of Atoms* — the electric charge is said to pass into the gravimagnetic charge and back. The second claim sits in visible tension with the two separate conservation laws displayed just above, which forbid such an interchange in a free field; the source does not reconcile the two, and it gives no rate and no selection rule for the transfer.
 
-The source also writes the free charge–current as a **spinor**, $\tilde J_{\Phi,\mathrm{eg}} = D^-\theta_{\mathrm{rpd},0} + i\sum_\mu D^-(\theta_{\mathrm{rpd},\mu} \vec e_\mu)$ with $\Box_\Phi\theta_{\mathrm{rpd},j} = 0$, naming a **pulsar** for a scalar potential and a **spinor** for a vector potential, and adding convolutions it calls **fibers**, **tissue** and **body** for matter on a line, on a surface and over a volume. That construction, its closed forms and its particle interpretation are developed in *Harmonic Elementary Particles and the Periodic System of Atoms*, which builds them from the same free-field law; the physical content of the free field recorded here is the pair of equations above.
+The source also writes the free charge–current as a **spinor**, $\tilde J_{\Phi,\mathrm{eg}} = D^-\theta_{\mathrm{rpd},0} + i\sum_{\imath} D^-(\theta_{\mathrm{rpd},\imath} \vec e_{\imath})$ with $\Box_\Phi\theta_{\mathrm{rpd},j} = 0$, naming a **pulsar** for a scalar potential and a **spinor** for a vector potential, and adding convolutions it calls **fibers**, **tissue** and **body** for matter on a line, on a surface and over a volume. That construction, its closed forms and its particle interpretation are developed in *Harmonic Elementary Particles and the Periodic System of Atoms*, which builds them from the same free-field law; the physical content of the free field recorded here is the pair of equations above.
 
 ### The second law: the interaction equation
 
@@ -513,10 +513,10 @@ with the convolution taken over the spatial variables only and $H$ the Heaviside
 The charge–current field has its own shock waves, distinct from the field-strength shocks of *Shock Electromagnetic Waves*. The free-field system above is hyperbolic. In the source's interpretation its characteristic equation is read off the three-vector part, the scalar part entering as a constraint on the divergence, and is
 
 $$
-\nu_t\left(\nu_t^2 - c^2\|\vec u_{\mathrm{eg}}\|^2\right) = 0 :
+\jmath_t\left(\jmath_t^2 - c^2\|\vec u_{\mathrm{eg}}\|^2\right) = 0 :
 $$
 
-the two speeds $\nu_t = \pm c\|\vec u_{\mathrm{eg}}\|$ and the **simple** null root $\nu_t = 0$, so the stationary surfaces are characteristic and the characteristic cone is the same as Maxwell's. The source prints the equation as $\nu_4(\nu_4^2-\nu_x^2-\nu_y^2-\nu_z^2)=0$ in the Hamiltonian-form paper it cites; the 2016 paper's restatement carries a squared time factor, which the corpus's recomputation does not support — the determinant of the $3\times3$ symbol $\nu_t I + i[\vec u_{\mathrm{eg}}]_\times$ is exactly $\nu_t(\nu_t^2-\|\vec u_{\mathrm{eg}}\|^2)$, checked numerically, a simple root and not a double one. On a wave front $F_\tau$ with unit normal $\vec m$, the jump conditions of the system are
+the two speeds ${\jmath}_t = \pm c\|\vec u_{\mathrm{eg}}\|$ and the **simple** null root ${\jmath}_t = 0$, so the stationary surfaces are characteristic and the characteristic cone is the same as Maxwell's. The source prints the equation as ${\jmath}_4(\jmath_4^2-\jmath_x^2-\jmath_y^2-\jmath_z^2)=0$ in the Hamiltonian-form paper it cites; the 2016 paper's restatement carries a squared time factor, which the corpus's recomputation does not support — the determinant of the $3\times3$ symbol ${\jmath}_t I + i[\vec u_{\mathrm{eg}}]_\times$ is exactly ${\jmath}_t(\jmath_t^2-\|\vec u_{\mathrm{eg}}\|^2)$, checked numerically, a simple root and not a double one. On a wave front $F_\tau$ with unit normal $\vec m$, the jump conditions of the system are
 
 $$
 [\rho]_{F_\tau} = \big(\vec m, [\vec J]_{F_\tau}\big),
@@ -611,7 +611,7 @@ The corpus's relation to the programme is the same as to every external completi
 | $\tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion |
 | $D^\pm = \partial/\partial \tau \pm i\nabla$ | Mutual complex gradients |
 | $\Box_\Phi = D^-D^+ = D^+D^-$ | Wave operator of the programme |
-| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ | Corpus gradient ($D^+ = i\tilde\nabla_\Phi$, $D^- = i(\tilde\nabla_\Phi)^{\natural}$) |
+| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\imath} \vec e_{\imath}\partial/\partial R_{\imath}$ | Corpus gradient ($D^+ = i\tilde\nabla_\Phi$, $D^- = i(\tilde\nabla_\Phi)^{\natural}$) |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= -D^-D^+$ | Corpus d'Alembertian (sign-convention difference) |
 | $\tilde{\mathcal F}$ | Power–force biquaternion of the programme |
 | $W = \tfrac{1}{2}\|\tilde F\|^2$ | Energy density |

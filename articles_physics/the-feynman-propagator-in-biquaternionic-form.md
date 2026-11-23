@@ -84,7 +84,7 @@ The energy enters on the right through $\vec e_x$; each momentum component enter
 **The four squares do not share a sign.** The signs of $G_t$ and $G_\eta$ are read from one application followed by another, and they are the plain weight $\varepsilon$ of *Frame and Metric Conventions*:
 
 $$
-G_t^2=\mathrm{id},\qquad G_\eta^2=-\mathrm{id},\qquad \{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id},
+G_t^2=\mathrm{id},\qquad G_\eta^2=-\mathrm{id},\qquad \{G_{\imath},G_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}\,\mathrm{id},
 $$
 
 with $\mathrm{id}$ the identity. The energy term squares to $+1$ because two minus signs meet, $i^2=-1$ from the central unit and $\vec e_x^2=-e_t$ from the quaternion,
@@ -224,7 +224,7 @@ Three things are conflated in the phrase "the $i\epsilon$ does the time ordering
 2. The overall $i$ fixes the normalization of the amplitude relative to the two $\mathrm{H}_{\mathrm{hvs}}$ terms.
 3. The minus in front of $W_-$ is carried by the numerator, through the two numerators $\mathcal{A}_p+mc$ and $\mathcal{A}_p-mc$. It is the two-point form of the anticommutation, and it has no counterpart in the scalar case, where the two residues share one numerator and the time-ordered combination is $\mathrm{H}_{\mathrm{hvs}}W_++\mathrm{H}_{\mathrm{hvs}}W_-$.
 
-**A recomputation on a case chosen for it.** Take $m\,c^{2}=0.7$ and $\vec p=(0.3,-0.9,1.1)\,m\,c$, so that $|\vec p|=1.4525839046\,m\,c$ and $E_{\vec p}=1.6124515497\,m\,c^{2}$; every momentum below is quoted in units of $m\,c$ and every energy in units of $m\,c^{2}$. Applying the four coordinate actions twice on a hundred random elements, the identity $\mathcal{A}_p^2=-N(\tilde Q_{\Phi})\,\mathrm{id}$ holds to better than $10^{-14}$ and $(\mathcal{A}_p-mc)(\mathcal{A}_p+mc)=-\big(N(\tilde Q_{\Phi})+m^{2}\,c^{2}\big)\,\mathrm{id}=-\mathcal{M}(\tilde Q_{\Phi})\,\mathrm{id}$ to the same, the anticommutator $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ holds exactly on the grid tested, and $\mathcal{A}_{-p}=-\mathcal{A}_p$ exactly. The identity
+**A recomputation on a case chosen for it.** Take $m\,c^{2}=0.7$ and $\vec p=(0.3,-0.9,1.1)\,m\,c$, so that $|\vec p|=1.4525839046\,m\,c$ and $E_{\vec p}=1.6124515497\,m\,c^{2}$; every momentum below is quoted in units of $m\,c$ and every energy in units of $m\,c^{2}$. Applying the four coordinate actions twice on a hundred random elements, the identity $\mathcal{A}_p^2=-N(\tilde Q_{\Phi})\,\mathrm{id}$ holds to better than $10^{-14}$ and $(\mathcal{A}_p-mc)(\mathcal{A}_p+mc)=-\big(N(\tilde Q_{\Phi})+m^{2}\,c^{2}\big)\,\mathrm{id}=-\mathcal{M}(\tilde Q_{\Phi})\,\mathrm{id}$ to the same, the anticommutator $\{G_{\imath},G_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}\,\mathrm{id}$ holds exactly on the grid tested, and $\mathcal{A}_{-p}=-\mathcal{A}_p$ exactly. The identity
 
 $$
 (\mathcal{A}_p-mc)(\mathcal{A}_p+mc)=\mathcal{A}_p^2-m^{2}c^{2}\,\mathrm{id}=-\big(N(\tilde Q_{\Phi})+m^{2}\,c^{2}\big)\,\mathrm{id}
@@ -354,7 +354,7 @@ At finite temperature the time-ordered two-point function is not given by a vacu
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -385,12 +385,12 @@ $$
 the spatial signs being those of $\varepsilon=(1,-1,-1,-1)$. The frame satisfies the Clifford relation
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf{1},
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}\mathbf{1},
 $$
 
-which is the anticommutator of the body, in its named form: $\gamma_\mu$ *is* the basis operator $iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}}$, so this is the same statement. It is not an extra input. For $\mu\neq\nu$ the two products $\gamma_\mu\gamma_\nu$ and $\gamma_\nu\gamma_\mu$ differ by a single transposition — on the left when one index is $t$, on the right when both are spatial — and a transposition reverses a quaternion sign, so they cancel; for $\mu=\nu$ each square is $\pm\mathbf{1}$, the sign coming from $e_t^2=e_t$ and $\vec e_\eta^2=-e_t$.
+which is the anticommutator of the body, in its named form: $\gamma_{\imath}$ *is* the basis operator $iL_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\imath)}}$, so this is the same statement. It is not an extra input. For ${\imath}\neq\jmath$ the two products $\gamma_{\imath}\gamma_{\jmath}$ and $\gamma_{\jmath}\gamma_{\imath}$ differ by a single transposition — on the left when one index is $t$, on the right when both are spatial — and a transposition reverses a quaternion sign, so they cancel; for $\mu=\jmath$ each square is $\pm\mathbf{1}$, the sign coming from $e_t^2=e_t$ and $\vec e_\eta^2=-e_t$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -428,7 +428,7 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}$ | The centre of $\mathbb{B}$ (*Algebra and Element Conventions*) |
 | $\mathrm{id}$ | The identity, as an action on $\mathbb{B}$ |
-| $G_t$, $G_\eta$ | The four frame basis operators written as actions, $\tilde Q\mapsto i\tilde Q\vec e_x$ and $\tilde Q\mapsto i\vec e_\eta\tilde Q\vec e_y$; $G_t^2=\mathrm{id}$, $G_\eta^2=-\mathrm{id}$, $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm{id}$ |
+| $G_t$, $G_\eta$ | The four frame basis operators written as actions, $\tilde Q\mapsto i\tilde Q\vec e_x$ and $\tilde Q\mapsto i\vec e_\eta\tilde Q\vec e_y$; $G_t^2=\mathrm{id}$, $G_\eta^2=-\mathrm{id}$, $\{G_{\imath},G_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}\mathrm{id}$ |
 | $\varepsilon$ | The plain weight of the four directions, the square of the units (*Frame and Metric Conventions*) |
 | $\mathcal{A}_p$ | The momentum action, $p_0G_t-\sum_\eta p_kG_\eta$, written out as $\tilde Q\mapsto ip_0\tilde Q\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde Q\vec e_y$; $\mathcal{A}_p^2=-N\mathrm{id}$ |
 | $\tilde\nabla_\Phi$ | Biquaternionic gradient (*Operator and Calculus Conventions*); $Q_t$ is the time coordinate, $i r'_t$ on $\mathbb{B}_{\Phi}$ |

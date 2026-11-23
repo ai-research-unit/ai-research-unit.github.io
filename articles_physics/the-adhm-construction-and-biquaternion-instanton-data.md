@@ -94,10 +94,10 @@ $$
 realised by an explicit linear-algebra construction: from the data one forms a matrix $\mathcal{A}_{\mathrm{ADHM}}(x)$, linear in the quaternionic coordinate $x$, whose kernel is the relevant space; a normalised basis $v(x)$ of that kernel gives the connection through
 
 $$
-\mathcal A_\mu \;=\; \bar v\,\partial/\partial x_\mu v ,
+\mathcal A_{\imath} \;=\; \bar v\,\partial/\partial x_{\imath} v ,
 $$
 
-which is a pure-gauge-like expression in the $x$-dependent kernel; the self-duality of $\mathcal A$ is a consequence of the two ADHM equations, and a computation shows that the curvature is $F_{\mu\nu}=\bar v\,\tilde F_{\mu\nu}v$ with $\tilde F$ built from the data. The construction is the standard one and is cited rather than re-derived; its algebraic content is the pair of equations and the quotient, which are what the framework's quaternionic structure makes natural.
+which is a pure-gauge-like expression in the $x$-dependent kernel; the self-duality of $\mathcal A$ is a consequence of the two ADHM equations, and a computation shows that the curvature is $F_{\imath\jmath}=\bar v\,\tilde F_{\imath\jmath}v$ with $\tilde F$ built from the data. The construction is the standard one and is cited rather than re-derived; its algebraic content is the pair of equations and the quotient, which are what the framework's quaternionic structure makes natural.
 
 ## The Dimension of the Moduli Space
 
@@ -139,7 +139,7 @@ $$
 both verified exactly. The single real parameter $\rho$ is the instanton scale. The construction applied to this datum yields the BPST configuration of the companion article,
 
 $$
-\mathcal A_{\mu a}(x)=2\sum_\nu\eta_{\mu\nu a}\,\frac{x_\nu}{r^2+\rho^2} ,
+\mathcal A_{\imath a}(x)=2\sum_{\jmath}\eta_{\imath\jmath a}\,\frac{x_{\jmath}}{r^2+\rho^2} ,
 $$
 
 which that article verified to be self-dual and to satisfy the equation of motion. The five moduli of the physical $k=1$ solution are recovered as the four translations of the origin, which are not part of the ADHM data at all but appear in the reconstruction from $\mathcal{A}_{\mathrm{ADHM}}(x)$, and the scale $\rho$, which is the datum; the three global $SU(2)$ orientations are the quotient by the global symmetry. For $k>1$ the matrices $B_1,B_2$ carry the relative positions and orientations of the individual instantons, and their non-commutativity $[B_1,B_2]$ is what the complex equation constrains.
@@ -209,8 +209,8 @@ Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal 
 | $\mathcal M_k=\mu^{-1}(0)/\mathrm{U}(k)$ | Instanton moduli space (hyperkähler quotient) |
 | $\dim_{\mathbb R}\mathcal M_k=8k$ | Moduli dimension; physical $8k-3$ |
 | $\mathcal{A}_{\mathrm{ADHM}}(x)$ | ADHM linear operator; kernel gives the connection |
-| $\mathcal A_\mu=\bar v\,\partial/\partial x_\mu v$ | Reconstruction of the self-dual connection |
-| $\eta_{\mu\nu a}$ | Self-dual 't Hooft symbols |
+| $\mathcal A_{\imath}=\bar v\,\partial/\partial x_{\imath} v$ | Reconstruction of the self-dual connection |
+| $\eta_{\imath\jmath a}$ | Self-dual 't Hooft symbols |
 | $a$ | colour index of the instanton connection, written low |
 | $\rho$ | Instanton scale; the $k=1$ datum |
 | $T(R)$, defining module | Dynkin index $\tfrac12$; the two-dimensional simple module of $\mathbb B$ |

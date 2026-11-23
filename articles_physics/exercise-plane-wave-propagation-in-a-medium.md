@@ -51,7 +51,7 @@ An exercise built on parents tests them. The parent states the conditions above 
 
 The parent's plane-wave section fixes the conventions and quotes the consequences. The problem here is to *apply* them: to take the single biquaternionic Maxwell equation with no source, substitute the plane-wave ansatz, and obtain every downstream statement by computation rather than by quotation. The natural objects are the ones the parent fixes — the field-strength biquaternion $\tilde{F}$, the medium speed $c$, the impedance $Z$, the Riemann–Silberstein vector $\vec N$ — and the natural operator is $\tilde\nabla_\Phi$ with its medium entry $\partial/\partial R_t = -i\partial/\partial r'_t$.
 
-The calculation is an eigenvalue problem. A plane wave is an eigenfunction of every $\partial/\partial R_\mu$, so $\tilde\nabla_\Phi$ acts on it by left multiplication by a constant biquaternion, and $\tilde\nabla_\Phi\tilde{F} = 0$ becomes a purely algebraic annihilation condition. That condition is what the exercise solves, and the four conditions and the dispersion relation fall out of its scalar and vector parts.
+The calculation is an eigenvalue problem. A plane wave is an eigenfunction of every $\partial/\partial R_{\imath}$, so $\tilde\nabla_\Phi$ acts on it by left multiplication by a constant biquaternion, and $\tilde\nabla_\Phi\tilde{F} = 0$ becomes a purely algebraic annihilation condition. That condition is what the exercise solves, and the four conditions and the dispersion relation fall out of its scalar and vector parts.
 
 Two points of discipline are kept in view. First, the field strength is a pure vector with **complex** amplitude components, so every condition must be read as a complex equation and every amplitude relation as a modulus relation; checking only a linearly polarised real wave would test a case narrower than the algebra. Second, the parent is treated as a source of assertions until the computation has been done, and the computation is run on a case other than the one that suggested the statement.
 
@@ -403,7 +403,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $\tilde\Sigma_{\Psi} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Energy–momentum biquaternion, in $\mathbb{B}_{\Psi}$ |
 | $v_p = \omega/k_\Phi = c(\omega)$, $v_g = c_0/(n + \omega\,dn/d\omega)$ | Phase and group velocities |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

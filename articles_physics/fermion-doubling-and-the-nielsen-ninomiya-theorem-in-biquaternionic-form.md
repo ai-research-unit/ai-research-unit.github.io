@@ -9,9 +9,9 @@ This article treats fermion doubling in the biquaternion framework. The framewor
 **One operator, and it is the gradient.** Every derivative of the article is the biquaternionic gradient of *Operator and Calculus Conventions*, §*The Gradient*, with its quaternion conjugate and its d'Alembertian,
 
 $$
-\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
+\tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial R_{\imath}},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath\in\{t,x,y,z\}}\varepsilon_{\imath} e_{\imath}\frac{\partial}{\partial R_{\imath}},
 \qquad
 \Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi ,
 $$
@@ -38,18 +38,18 @@ with massless limit $\tilde\nabla_\Phi\tilde{Ξ}=0$; the subscript is the chiral
 
 **The chirality is a right action.** $\xi\tilde Q=-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$ and of the two values $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*). The side is part of the definition: the left action $\tilde Q\mapsto-i\vec e_z\tilde Q$ is a different operator — the two differ by conjugation by $\vec e_z$ — and it is not the chirality. Neither operator is two-sided; each is a single multiplication, written out.
 
-**The lattice.** A lattice of spacing $a$ has sites indexed by integer vectors $n=(n_1,n_2,n_3,n_4)$, and $\vec u_\mu$ is the unit lattice vector in the direction $\mu$. The index $\mu=1,\dots,4$ labels the four coordinate directions. The field becomes a Grassmann-valued element $\tilde{Ξ}_{n}$ at each site, with $\tilde{Ξ}_{n}^*$ an independent Grassmann variable and not its conjugate, and each coordinate derivative is replaced by the **symmetric difference**
+**The lattice.** A lattice of spacing $a$ has sites indexed by integer vectors $n=(n_1,n_2,n_3,n_4)$, and $\vec u_{\imath}$ is the unit lattice vector in the direction $\mu$. The index $\mu=1,\dots,4$ labels the four coordinate directions. The field becomes a Grassmann-valued element $\tilde{Ξ}_{n}$ at each site, with $\tilde{Ξ}_{n}^*$ an independent Grassmann variable and not its conjugate, and each coordinate derivative is replaced by the **symmetric difference**
 
 $$
-D_\mu\tilde{Ξ}_{n}=\frac{\tilde{Ξ}_{n+\vec u_\mu}-\tilde{Ξ}_{n-\vec u_\mu}}{2a},
+D_{\imath}\tilde{Ξ}_{n}=\frac{\tilde{Ξ}_{n+\vec u_{\imath}}-\tilde{Ξ}_{n-\vec u_{\imath}}}{2a},
 \qquad
-D_\mu\ \text{replaces}\ \frac{\partial}{\partial R_\mu}.
+D_{\imath}\ \text{replaces}\ \frac{\partial}{\partial R_{\imath}}.
 $$
 
 The lattice gradient is the same gradient with these differences in place of the four derivatives,
 
 $$
-\tilde\nabla_\Phi^{L}=\sum_{\mu}e_\mu D_\mu ,
+\tilde\nabla_\Phi^{L}=\sum_{\imath}e_{\imath} D_{\imath} ,
 $$
 
 and the naive action is the scalar part of the field contracted with it,
@@ -58,16 +58,16 @@ $$
 S_F^L[\tilde{Ξ}] = a^4\sum_n \mathrm{Sc}\bigl[\tilde{Ξ}_{n}^*\,\tilde\nabla_\Phi^{L}\tilde{Ξ}_{n}\bigr],
 $$
 
-the action whose equation of motion is the massless limit of the pair. The mass is not a term of this one-field action: it is the second line of the pair, and its lattice form is the pair's. Each $D_\mu$ is anti-Hermitian up to the boundary term of summation by parts, exactly as $\partial/\partial R_\mu$ is, so the kinetic kernel meets the hermiticity hypothesis of §*The Nielsen–Ninomiya Theorem* in the same form as the standard discretization. The action reduces to $\int d^4r\,\mathrm{Sc}\bigl[\tilde{Ξ}^*\,\tilde\nabla_\Phi\tilde{Ξ}\bigr]$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
+the action whose equation of motion is the massless limit of the pair. The mass is not a term of this one-field action: it is the second line of the pair, and its lattice form is the pair's. Each $D_{\imath}$ is anti-Hermitian up to the boundary term of summation by parts, exactly as $\partial/\partial R_{\imath}$ is, so the kinetic kernel meets the hermiticity hypothesis of §*The Nielsen–Ninomiya Theorem* in the same form as the standard discretization. The action reduces to $\int d^4r\,\mathrm{Sc}\bigl[\tilde{Ξ}^*\,\tilde\nabla_\Phi\tilde{Ξ}\bigr]$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
 
-**The coordinates are the frame's own.** The four $Q_\mu$ are the $\mathbb{B}$ frame's coordinates, and the frame's form is $\sum_\mu Q_\mu^2$ with all four coefficients equal: the lattice is imposed on a Euclidean coordinate, and nothing has to be rotated before discretizing. The fourth coordinate is $Q_t=i q'_t$ with $x_0=r'_{t}$, so a lattice momentum $p_t$ is read at $p_t=i\omega/c$ for a frequency $\omega$, and in lattice units $a=1$ at $p_t=i\omega$. The doubling count depends on $\sin(p_\mu a)$ alone and not on the signs.
+**The coordinates are the frame's own.** The four $Q_{\imath}$ are the $\mathbb{B}$ frame's coordinates, and the frame's form is $\sum_{\imath} Q_{\imath}^2$ with all four coefficients equal: the lattice is imposed on a Euclidean coordinate, and nothing has to be rotated before discretizing. The fourth coordinate is $Q_t=i q'_t$ with $x_0=r'_{t}$, so a lattice momentum $p_t$ is read at $p_t=i\omega/c$ for a frequency $\omega$, and in lattice units $a=1$ at $p_t=i\omega$. The doubling count depends on $\sin(p_{\imath} a)$ alone and not on the signs.
 
 ### The propagator and the doubler poles
 
-**The symbol.** On a plane wave $\tilde{Ξ}_{n}\propto e^{i\theta_{\mathrm{pwp}}}$ with the plane-wave angle $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}$ real because the momentum and the position are real, the symmetric difference carries $i\sin(p_\mu a)/a$, so the lattice gradient acquires the element symbol
+**The symbol.** On a plane wave $\tilde{Ξ}_{n}\propto e^{i\theta_{\mathrm{pwp}}}$ with the plane-wave angle $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}$ real because the momentum and the position are real, the symmetric difference carries $i\sin(p_{\imath} a)/a$, so the lattice gradient acquires the element symbol
 
 $$
-\tilde K_{\Phi}(p)=a^{-1}\sum_{\mu}\sin(p_\mu a)\,e_\mu ,
+\tilde K_{\Phi}(p)=a^{-1}\sum_{\imath}\sin(p_{\imath} a)\,e_{\imath} ,
 \qquad
 \tilde\nabla_\Phi^{L}\ \longrightarrow\ i\tilde K_{\Phi}(p),
 $$
@@ -75,7 +75,7 @@ $$
 displayed again in §*Discretizing the biquaternion gradient*. Left multiplication by a nonzero element of $\mathbb{B}$ is invertible over $\mathbb{C}$ unless the element is a **zero divisor**, and the test is the quaternion norm,
 
 $$
-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=a^{-2}\sum_{\mu}\sin^2(p_\mu a),
+\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=a^{-2}\sum_{\imath}\sin^2(p_{\imath} a),
 $$
 
 a scalar. Verified: the identity at residual $5\times10^{-15}$ over $200$ random real momenta, and the rank four of left multiplication by $\tilde K_{\Phi}$ wherever the norm is nonzero.
@@ -85,24 +85,24 @@ a scalar. Verified: the identity at residual $5\times10^{-15}$ over $200$ random
 $$
 \mathcal P(p)=\begin{pmatrix}-m & i\tilde K_{\Phi}(p)\ i\tilde K_{\Phi}(p)^{\natural} & -m\end{pmatrix},
 \qquad
-\det\mathcal P(p)=\Bigl(m^2+a^{-2}\sum_{\mu}\sin^2(p_\mu a)\Bigr)^{4},
+\det\mathcal P(p)=\Bigl(m^2+a^{-2}\sum_{\imath}\sin^2(p_{\imath} a)\Bigr)^{4},
 $$
 
 so the propagator is the inverse block,
 
 $$
-\boxed{\;\mathcal S(p) = -\frac{1}{\,m^{2}+a^{-2}\sum_{\mu}\sin^{2}(p_\mu a)}\begin{pmatrix} m & i\tilde K_{\Phi}(p)\ i\tilde K_{\Phi}(p)^{\natural} & m\end{pmatrix}\;}.
+\boxed{\;\mathcal S(p) = -\frac{1}{\,m^{2}+a^{-2}\sum_{\imath}\sin^{2}(p_{\imath} a)}\begin{pmatrix} m & i\tilde K_{\Phi}(p)\ i\tilde K_{\Phi}(p)^{\natural} & m\end{pmatrix}\;}.
 $$
 
 Both identities verified by direct inversion, at residual $0$ for the inverse and $1\times10^{-12}$ for the determinant; the massless inverse, the inverse of left multiplication by $i\tilde K_{\Phi}$, is $\mathcal S_0(p)=-i\tilde K_{\Phi}^{\natural}/(\tilde K_{\Phi}\tilde K_{\Phi}^{\natural})$ at the same residual. The scalar denominator is exactly the one the single-column form of the literature carries. The block is the price of the mass, and it is the block of the chiral pair, not a second dynamics.
 
-**The poles.** The denominator vanishes at $m=0$ when $\sin(p_\mu a) = 0$ for every $\mu$, that is, at the points
+**The poles.** The denominator vanishes at $m=0$ when $\sin(p_{\imath} a) = 0$ for every $\mu$, that is, at the points
 
 $$
-\boxed{\;a p_\mu = \pi_{A\mu}\;},
+\boxed{\;a p_{\imath} = \pi_{A\imath}\;},
 $$
 
-where the sixteen vectors $\pi_A$ have entries $0$ or $\pi$. Taking the zone as $[0,2\pi/a)^4$, these sixteen points are its corners: one is the origin, the other **fifteen are the doublers**, and each is a distinct fermion species. Verified: a grid of $64^4$ momenta in the zone has exactly sixteen zeros, distinct. For $m\ne0$ the denominator is bounded below by $m^2$ on the real zone, so no pole lies there at all; all sixteen species reappear as $m\to0$. The mechanism is the symbol: over one period of length $2\pi/a$, $\sin(p_\mu a)$ has two zeros, at $p_\mu=0$ and $p_\mu=\pi/a$, whereas the bosonic symbol built from $\sin(p_\mu a/2)$ has one.
+where the sixteen vectors $\pi_A$ have entries $0$ or $\pi$. Taking the zone as $[0,2\pi/a)^4$, these sixteen points are its corners: one is the origin, the other **fifteen are the doublers**, and each is a distinct fermion species. Verified: a grid of $64^4$ momenta in the zone has exactly sixteen zeros, distinct. For $m\ne0$ the denominator is bounded below by $m^2$ on the real zone, so no pole lies there at all; all sixteen species reappear as $m\to0$. The mechanism is the symbol: over one period of length $2\pi/a$, $\sin(p_{\imath} a)$ has two zeros, at $p_{\imath}=0$ and $p_{\imath}=\pi/a$, whereas the bosonic symbol built from $\sin(p_{\imath} a/2)$ has one.
 
 The doubling also shows in the dispersion relation. In lattice units $a=1$, the pole condition with $p_t=i\omega$ gives
 
@@ -112,7 +112,7 @@ $$
 
 Its minima sit at the zeros of the spatial sines, eight in all. The temporal direction doubles each of them: $\sin^2(p_ta)$ has period $\pi/a$, so $p_t=0$ and $p_t=\pi/a$ give the same branch, and the sixteen poles are the eight spatial corners times the two temporal choices.
 
-The same count follows from the symbol alone. At $m=0$ the inverse propagator is the element $i\tilde K_{\Phi}(p)$, an **odd** periodic function of $p$. Each of the sixteen points $\pi_A/a$ equals its own negative modulo $2\pi/a$, so oddness forces the symbol to vanish at all sixteen: a lone zero at the origin is impossible. A scalar boson escapes, because its symbol $\sin(p_\mu a/2)$ is even about the origin.
+The same count follows from the symbol alone. At $m=0$ the inverse propagator is the element $i\tilde K_{\Phi}(p)$, an **odd** periodic function of $p$. Each of the sixteen points $\pi_A/a$ equals its own negative modulo $2\pi/a$, so oddness forces the symbol to vanish at all sixteen: a lone zero at the origin is impossible. A scalar boson escapes, because its symbol $\sin(p_{\imath} a/2)$ is even about the origin.
 
 **What the doublers are in the algebra.** The sixteen are the momenta at which the symbol is the zero element. Off the real zone the symbol can instead be a nonzero zero divisor, and there left multiplication by $\tilde K_{\Phi}$ has rank two and a kernel of complex dimension two — verified at three null momenta, rank $2$ and kernel $2$ each. On the real zone the symbol vanishes outright and the propagator has a simple pole. The doubling is thus a property of the difference operator read through the quaternion norm; the algebra supplies the norm and nothing else.
 
@@ -120,15 +120,15 @@ The same count follows from the symbol alone. At $m=0$ the inverse propagator is
 
 **There are no sixteen species of the field to permute.** The field is one element and its symbol is one element, so no transformation of the field permutes sixteen spinor species, and none is claimed. What the naive action carries is a degeneracy of the pole set, and the degeneracy is exact in the free theory.
 
-**The pole condition is one scalar equation**, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=0$, and it depends on $\sin^2(p_\mu a)$ alone. Hence the shift $p_\mu\mapsto p_\mu+\pi/a$ on any subset $A$ of the four directions leaves it unchanged, and the sixteen corners are one orbit under the sixteen shifts. The symbol itself is multiplied by the sign pattern $(-1)^{\delta_{\mu\in A}}$,
+**The pole condition is one scalar equation**, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=0$, and it depends on $\sin^2(p_{\imath} a)$ alone. Hence the shift $p_{\imath}\mapsto p_{\imath}+\pi/a$ on any subset $A$ of the four directions leaves it unchanged, and the sixteen corners are one orbit under the sixteen shifts. The symbol itself is multiplied by the sign pattern $(-1)^{\delta_{\imath\in A}}$,
 
 $$
-\tilde K_{\Phi}(p+\pi_A/a)=a^{-1}\sum_{\mu}(-1)^{\delta_{\mu\in A}}\sin(p_\mu a)\,e_\mu ,
+\tilde K_{\Phi}(p+\pi_A/a)=a^{-1}\sum_{\imath}(-1)^{\delta_{\imath\in A}}\sin(p_{\imath} a)\,e_{\imath} ,
 $$
 
 so the shift reverses the sign of some of the four units and does nothing else.
 
-**Which sign patterns the algebra supplies.** Conjugation by the unit $\vec e_\eta$, the map $x\mapsto\vec e_\eta x\vec e_\eta^{-1}$ — the only two-sided product in the article, and it acts on the units, never on the field or on a derivative — reverses the two spatial units perpendicular to it and fixes the other two: $\vec e_z x\vec e_z^{-1}$ sends $\vec e_x,\vec e_y$ to their negatives and fixes $\vec e_z$. So the four even sign patterns on the three spatial units are realized by inner automorphisms of $\mathbb{B}$. The quaternion conjugation $\natural$ reverses all three spatial units and supplies the four odd patterns. The temporal unit is central: no automorphism of $\mathbb{B}$ reverses it, and no element anticommutes with all four units — verified, the null space of the four equations $e_\mu a=-ae_\mu$ is zero. The temporal sign is reached by the shift alone.
+**Which sign patterns the algebra supplies.** Conjugation by the unit $\vec e_\eta$, the map $x\mapsto\vec e_\eta x\vec e_\eta^{-1}$ — the only two-sided product in the article, and it acts on the units, never on the field or on a derivative — reverses the two spatial units perpendicular to it and fixes the other two: $\vec e_z x\vec e_z^{-1}$ sends $\vec e_x,\vec e_y$ to their negatives and fixes $\vec e_z$. So the four even sign patterns on the three spatial units are realized by inner automorphisms of $\mathbb{B}$. The quaternion conjugation $\natural$ reverses all three spatial units and supplies the four odd patterns. The temporal unit is central: no automorphism of $\mathbb{B}$ reverses it, and no element anticommutes with all four units — verified, the null space of the four equations $e_{\imath} a=-ae_{\imath}$ is zero. The temporal sign is reached by the shift alone.
 
 **What follows.** The sixteen poles are exactly degenerate in the free theory, and the degeneracy is a property of the difference operator, not of the algebra. They cannot be discarded in an interacting theory: the lattice conserves momentum only modulo $2\pi/a$, so a hard virtual gauge boson can transfer $\pi/a$ and connect the tastes.
 
@@ -148,12 +148,12 @@ The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubli
 **Euclidean form.** The statement is then about the $R$ part alone, with a biquaternion-valued kernel, one component per coordinate direction,
 
 $$
-\tilde F(x,y)=\sum_{\mu}F_\mu(x,y)\,e_\mu ,
+\tilde F(x,y)=\sum_{\imath}F_{\imath}(x,y)\,e_{\imath} ,
 \qquad
 S=\sum_{x,y}\mathrm{Sc}\bigl[\tilde{Ξ}_{R}^*(x)\,\tilde F(x,y)\,\tilde{Ξ}_{R}(y)\bigr],
 $$
 
-under the same three hypotheses, translation invariance, locality, and hermiticity of the operator the kernel generates; here $\tilde{Ξ}_{R}$ is the $R$ part of the field, the chirality subscript of *Matrix Representations Conventions*, and no $L$ part is present. The kernel is an element of $\mathbb{B}$: the four $F_\mu$ are its coordinates, and the four coordinate directions are the invertibles.
+under the same three hypotheses, translation invariance, locality, and hermiticity of the operator the kernel generates; here $\tilde{Ξ}_{R}$ is the $R$ part of the field, the chirality subscript of *Matrix Representations Conventions*, and no $L$ part is present. The kernel is an element of $\mathbb{B}$: the four $F_{\imath}$ are its coordinates, and the four coordinate directions are the invertibles.
 
 **General form, all regularizations.** No regularized chiral fermion theory can simultaneously have the correct global symmetry, unequal numbers of $L$ and $R$ Weyl species, the correct chiral anomaly, and an action bilinear in the Weyl fields. The Standard Model therefore cannot be put on a lattice without violating one of these conditions, and a chirally invariant regularization makes the chiral anomaly vanish, which is wrong.
 
@@ -161,7 +161,7 @@ under the same three hypotheses, translation invariance, locality, and hermitici
 
 ### The proof idea
 
-The Euclidean proof uses the **Poincaré–Hopf theorem**, and it has three steps. Locality makes the Fourier transform of the kernel, $\tilde F(k)=\sum_\mu F_\mu(k)e_\mu$, a continuous $\mathbb{B}$-valued field on the Brillouin zone, and that field is the inverse propagator. Its isolated zeros are the particle species; around each zero the field is a source, a sink or a saddle, and its **index** there is $\pm1$, the two signs being the two values $L$ and $R$. Poincaré–Hopf then says that the sum of the indices equals the Euler characteristic of the manifold the field lives on, and the Brillouin zone is a four-torus, whose Euler characteristic is **zero**.
+The Euclidean proof uses the **Poincaré–Hopf theorem**, and it has three steps. Locality makes the Fourier transform of the kernel, $\tilde F(k)=\sum_{\imath} F_{\imath}(k)e_{\imath}$, a continuous $\mathbb{B}$-valued field on the Brillouin zone, and that field is the inverse propagator. Its isolated zeros are the particle species; around each zero the field is a source, a sink or a saddle, and its **index** there is $\pm1$, the two signs being the two values $L$ and $R$. Poincaré–Hopf then says that the sum of the indices equals the Euler characteristic of the manifold the field lives on, and the Brillouin zone is a four-torus, whose Euler characteristic is **zero**.
 
 Hence the numbers of $L$ and $R$ species are equal, and the doublers are unavoidable: the count is a topological identity, not a property of any one difference operator.
 
@@ -184,13 +184,13 @@ What survives all of this is the part with experimental consequences: the correc
 
 ### Discretizing the biquaternion gradient
 
-The framework's gradient is $\tilde\nabla_\Phi$, the one of *Operator and Calculus Conventions*, and it is the only derivative operator of the article. A lattice discretization replaces each of its four partial derivatives by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial R_\mu$ is $i\sin(p_\mu a)/a$ in each direction, and on plane waves the biquaternion gradient acquires the symbol
+The framework's gradient is $\tilde\nabla_\Phi$, the one of *Operator and Calculus Conventions*, and it is the only derivative operator of the article. A lattice discretization replaces each of its four partial derivatives by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial R_{\imath}$ is $i\sin(p_{\imath} a)/a$ in each direction, and on plane waves the biquaternion gradient acquires the symbol
 
 $$
 \boxed{\;\tilde\nabla_\Phi \;\longrightarrow\; e_t\,\frac{i\sin(p_ta)}{a}+\sum_{\eta=x,y,z}\vec e_\eta\,\frac{i\sin(p_ka)}{a}\;},
 $$
 
-that is, $i\tilde K_{\Phi}(p)$ with $\tilde K_{\Phi}$ of §*The propagator and the doubler poles*. The denominator of the lattice propagator is then the scalar $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=\sum_\mu\sin^2(p_\mu a)/a^2$, which has the sixteen zeros identified above.
+that is, $i\tilde K_{\Phi}(p)$ with $\tilde K_{\Phi}$ of §*The propagator and the doubler poles*. The denominator of the lattice propagator is then the scalar $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=\sum_{\imath}\sin^2(p_{\imath} a)/a^2$, which has the sixteen zeros identified above.
 
 ### The doubling is a property of the difference operator, not of the algebra
 
@@ -224,7 +224,7 @@ The framework supplies a continuum equation and a multivector structure whose na
 
 ## Summary
 
-Naive discretization of the Dirac action on a $d$-dimensional lattice gives $2^d$ tastes — sixteen in four dimensions — because the difference operator's symbol $\sin(p_\mu a)$ has two zeros per period. The doublers appear as extra poles of the propagator at the Brillouin-zone corners, all sixteen are poles of the one scalar denominator $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$, and they are exactly degenerate in the free theory, so an interacting lattice theory cannot simply drop them. The Nielsen–Ninomiya theorem states the obstruction: a local, hermitian, translation-invariant lattice bilinear has equal numbers of $L$ and $R$ species; the Euclidean proof is a Poincaré–Hopf index count on the Brillouin-zone torus, whose Euler characteristic vanishes. Every resolution — Wilson, staggered, Ginsparg–Wilson, overlap, domain-wall, twisted-mass, symmetric mass generation, non-local, one-sided — gives up one of the theorem's hypotheses, and symmetric mass generation gives up the bilinear form of the action rather than a hypothesis.
+Naive discretization of the Dirac action on a $d$-dimensional lattice gives $2^d$ tastes — sixteen in four dimensions — because the difference operator's symbol $\sin(p_{\imath} a)$ has two zeros per period. The doublers appear as extra poles of the propagator at the Brillouin-zone corners, all sixteen are poles of the one scalar denominator $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$, and they are exactly degenerate in the free theory, so an interacting lattice theory cannot simply drop them. The Nielsen–Ninomiya theorem states the obstruction: a local, hermitian, translation-invariant lattice bilinear has equal numbers of $L$ and $R$ species; the Euclidean proof is a Poincaré–Hopf index count on the Brillouin-zone torus, whose Euler characteristic vanishes. Every resolution — Wilson, staggered, Ginsparg–Wilson, overlap, domain-wall, twisted-mass, symmetric mass generation, non-local, one-sided — gives up one of the theorem's hypotheses, and symmetric mass generation gives up the bilinear form of the action rather than a hypothesis.
 
 The biquaternion framework does not evade the obstruction. The doubling argument uses only locality, hermiticity, translation invariance and the oddness of the massless symbol, all of which the discretized biquaternion gradient shares; the algebra is not a lattice and supplies no alternative difference operator. The one positive structural point is that the framework's multivector field is contained in the **Dirac–Kähler** multivector, whose simplicial discretization is the **staggered fermion** formulation — a mitigation, not a solution. Two index-theoretic facts reach the framework as companions: the anomalous half-integer quantum Hall effect of graphene and the harmonic-form zero modes of the Dirac–Kähler operator.
 
@@ -232,11 +232,11 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 
 | Symbol | Meaning |
 |+-|+-|
-| $a$, $n$, $\vec u_\mu$ | Lattice spacing, site index, unit lattice vector in the direction $\mu$ |
+| $a$, $n$, $\vec u_{\imath}$ | Lattice spacing, site index, unit lattice vector in the direction $\mu$ |
 | $\tilde{Ξ}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}$ its four-component coordinate column |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | The biquaternionic gradient, its quaternion conjugate and the d'Alembertian, of *Operator and Calculus Conventions* |
-| $\tilde\nabla_\Phi^{L}$, $D_\mu$ | The lattice gradient $\sum_\mu e_\mu D_\mu$ and the symmetric difference replacing $\partial/\partial R_\mu$ |
-| $\tilde K_{\Phi}(p)$ | The element symbol of the lattice gradient, $a^{-1}\sum_\mu\sin(p_\mu a)e_\mu$; the symbol of $\tilde\nabla_\Phi^{L}$ is $i\tilde K_{\Phi}(p)$ |
+| $\tilde\nabla_\Phi^{L}$, $D_{\imath}$ | The lattice gradient $\sum_{\imath} e_{\imath} D_{\imath}$ and the symmetric difference replacing $\partial/\partial R_{\imath}$ |
+| $\tilde K_{\Phi}(p)$ | The element symbol of the lattice gradient, $a^{-1}\sum_{\imath}\sin(p_{\imath} a)e_{\imath}$; the symbol of $\tilde\nabla_\Phi^{L}$ is $i\tilde K_{\Phi}(p)$ |
 | $\xi$ | The chirality, $\xi\tilde Q=-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$ |
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two values of the chirality subscript; these letters label chirality, not the multiplications $L_b$ and $R_b$ |
 | $S_F^L$ | Naive lattice fermion action |
@@ -244,7 +244,7 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 | $\pi_A$ | The sixteen sign patterns with entries $0$ or $\pi$ |
 | $D$ | Lattice Dirac operator of the Ginsparg–Wilson relation |
 | $\omega(\vec p)$ | Lattice dispersion relation |
-| $F(x,y)$, $F_\mu(k)$ | Lattice kernel and its Fourier transform (vector field on the zone) |
+| $F(x,y)$, $F_{\imath}(k)$ | Lattice kernel and its Fourier transform (vector field on the zone) |
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | The Hermitian and anti-Hermitian sectors, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$, with $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |
 
 ## Further Reading

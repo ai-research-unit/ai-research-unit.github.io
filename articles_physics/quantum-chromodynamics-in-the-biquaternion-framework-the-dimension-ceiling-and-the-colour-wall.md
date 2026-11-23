@@ -22,7 +22,7 @@ The four obstacles the article treats are the colour group (§"The Colour Group"
 
 Colour is now a residual: $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$, so the group this article calls unreachable is the stabiliser of a line the larger group does contain. **The wall is restated, and it is not removed.** Of the three obstructions the article records, only the dimension one moves, because $\dim\mathfrak{su}(3)=8<15=\dim\mathfrak{su}(4)$; the carrier obstruction stands, because $\mathfrak{su}(4)\cap\operatorname{Comm}L(\mathbb H)=\mathfrak{su}(2)$ at the larger group exactly as at the smaller. Every low-energy statement below — confinement, asymptotic freedom, the running — is untouched. The tier is T3.
 
-What "unreachable" means, layer by layer. The three obstructions are Layer-A statements and they remain exactly true: no colour generator is an element of $\mathbb B$, and none can act $\mathbb B$-linearly on a $\mathbb B$-module. The frame's claim is a different claim, and it is Layer B: $\mathrm{SU}(3)$ is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_t)$ acting on a formal copy of the carrier, and its generators are endomorphisms of $\mathbb B$ and not elements of it — each of the eight is a sum of two or three Conway words $e_\mu[\,]e_\nu$ — two on the six off-diagonal, two or three on the Cartan — and none of them is a single product. So the group has an address and the algebra is not entered. *Reached* in this article means *contained*, and a reader who keeps that meaning will find the sentence "colour is now a residual" contradictory when it is not.
+What "unreachable" means, layer by layer. The three obstructions are Layer-A statements and they remain exactly true: no colour generator is an element of $\mathbb B$, and none can act $\mathbb B$-linearly on a $\mathbb B$-module. The frame's claim is a different claim, and it is Layer B: $\mathrm{SU}(3)$ is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_t)$ acting on a formal copy of the carrier, and its generators are endomorphisms of $\mathbb B$ and not elements of it — each of the eight is a sum of two or three Conway words $e_{\imath}[\,]e_{\jmath}$ — two on the six off-diagonal, two or three on the Cartan — and none of them is a single product. So the group has an address and the algebra is not entered. *Reached* in this article means *contained*, and a reader who keeps that meaning will find the sentence "colour is now a residual" contradictory when it is not.
 
 ## What the Framework Already Reaches
 
@@ -40,20 +40,20 @@ $$
 The gauge group is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{B}_{H} : \tilde U\bar{\tilde U} = e_t\}$, acting on a matter field by left multiplication. A local transformation $\tilde U(\tilde{Q})$ forces the connection
 
 $$
-\mathcal{A}_{2,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_\mu \tilde U)\,\tilde U^{-1},
+\mathcal{A}_{2,\imath} = \tilde U\,\mathcal{A}_{\imath}\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_{\imath} \tilde U)\,\tilde U^{-1},
 $$
 
 which reduces to the abelian law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Lambda$ when $\tilde U=e^{i\theta_{\mathrm{gau}}}$, with the gauge angle $\theta_{\mathrm{gau}}=\kappa\Lambda$ real because the charge and the parameter are real, is central. The field strength
 
 $$
-F_{\mu\nu} = \partial/\partial R_\mu \mathcal{A}_\nu - \partial/\partial R_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu],
+F_{\imath\jmath} = \partial/\partial R_{\imath} \mathcal{A}_{\jmath} - \partial/\partial R_{\jmath} \mathcal{A}_{\imath} + i\kappa\,[\mathcal{A}_{\imath}, \mathcal{A}_{\jmath}],
 \qquad
 F = d\mathcal{A} + i\kappa\,\mathcal{A}\wedge\mathcal{A},
 \qquad
-[D_\mu,D_\nu] = i\kappa F_{\mu\nu},
+[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath},
 $$
 
-is not gauge invariant but transforms in the adjoint representation, $F_{2,\mu\nu} = \tilde U F_{\mu\nu} \tilde U^{-1}$; it satisfies the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$; and $-\tfrac12\mathrm{Tr}\bigl(\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}\bigr)$ is a gauge-invariant density, with the trace taken on the $\mathrm{SU}(2)$ factor.
+is not gauge invariant but transforms in the adjoint representation, $F_{2,\imath\jmath} = \tilde U F_{\imath\jmath} \tilde U^{-1}$; it satisfies the Bianchi identity $D_\lambda F_{\imath\jmath} + D_{\imath} F_{\jmath\lambda} + D_{\jmath} F_{\lambda\imath} = 0$; and $-\tfrac12\mathrm{Tr}\bigl(\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}\bigr)$ is a gauge-invariant density, with the trace taken on the $\mathrm{SU}(2)$ factor.
 
 What this construction is, for the purposes of this article, is the **general machinery of a non-abelian gauge theory**: everything that depends only on having a compact simple factor and a non-commuting connection is present. What it is not is a *colour* theory, because the factor it uses is $\mathrm{SU}(2)$ and the connection is $\mathrm{SU}(2)$-valued. The whole question of QCD is whether the framework can replace that factor by colour; the next section shows where that step stops.
 
@@ -121,7 +121,7 @@ and it is odd under the exchange of the two values: it changes sign when $\tilde
 Two further results of that article are the ones that bear on QCD.
 
 - The canonically available gauge group is vector-like. The framework's own abelian gauge group is the $*$-unitary part of the centre $\mathbb{B}_{C}$, which acts as a *scalar* on $M_2(\mathbb{C})$; every part of the field receives the same charge. A chiral gauge group requires a non-central action, hence a non-abelian gauge structure — the structure the non-abelian article supplies for $\mathrm{SU}(2)$ but does not dress with matter.
-- The framework's mass term relates the two parts. The mass is the off-diagonal coefficient of the chiral pair, and it is the real-form expression of an ordinary Dirac mass. An axial rotation turns the two parts by opposite phases and the mass is the term that relates them, so the rotation cannot pass through it: that is the breaking of the axial symmetry. The vector phase $\mathrm{U}(1)$ — fermion number — turns both parts by one phase and passes through the linear mass, and is exact for the massive field. The mass moves no value: it is a central coefficient and keeps the value of each part. The value is exchanged by a right multiplication perpendicular to the axis, or by the coefficient conjugation, and those are the two moves the two-sided form uses. With the axial current $j_{5\mu}$,
+- The framework's mass term relates the two parts. The mass is the off-diagonal coefficient of the chiral pair, and it is the real-form expression of an ordinary Dirac mass. An axial rotation turns the two parts by opposite phases and the mass is the term that relates them, so the rotation cannot pass through it: that is the breaking of the axial symmetry. The vector phase $\mathrm{U}(1)$ — fermion number — turns both parts by one phase and passes through the linear mass, and is exact for the massive field. The mass moves no value: it is a central coefficient and keeps the value of each part. The value is exchanged by a right multiplication perpendicular to the axis, or by the coefficient conjugation, and those are the two moves the two-sided form uses. With the axial current $j_{5\imath}$,
 
     $$
     j_{50}=\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,(-i\vec e_z)\bigr),
@@ -132,7 +132,7 @@ Two further results of that article are the ones that bear on QCD.
     the time component multiplying on the right and the three spatial ones on the left, and
 
     $$
-    \sum_\mu\frac{\partial j_{5\mu}}{\partial R_\mu}=2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,\vec e_y\bigr),
+    \sum_{\imath}\frac{\partial j_{5\imath}}{\partial R_{\imath}}=2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,\vec e_y\bigr),
     $$
 
     a plain sum, because the signs are carried by the units inside the bilinears and not by the sum. The insertion is $\vec e_y$ where the mass bilinear carries $i\vec e_x$. The density $\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ}\vec e_y)$ is imaginary, so the $i$ of the coefficient makes the product real. It vanishes only at $m=0$. A genuinely antilinear Majorana-type pairing lives instead on the algebra's real structure $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus.
@@ -203,13 +203,13 @@ The global chiral sector of QCD is a further, distinct obstacle. Beyond the gaug
 The anomaly is now partly supplied, and the position has to be stated carefully because it has moved. The chiral-fermion article attempted no biquaternion formulation of it; the companion *Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None* does. It writes the Adler–Bell–Jackiw divergence in the framework's own objects,
 
 $$
-\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_\mu\frac{\partial j_{5\mu}}{\partial R_\mu}
-=2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,\vec e_y\bigr)-\frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_{\imath}\frac{\partial j_{5\imath}}{\partial R_{\imath}}
+=2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,\vec e_y\bigr)-\frac{e^2}{16\pi^2}\,\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma},
 $$
 
 identifies the anomaly density with the second biquaternion invariant $I_2=\vec E\cdot\vec B$, exhibits the 't Hooft vertex as a product of the bilinears the framework already carries, and verifies the Standard Model's cancellation conditions generation by generation. What is imported there is the coefficient, quoted from standard field theory rather than derived, and the triangle coefficient $\mathrm{Tr}_R[T_a\{T_b,T_c\}]$ runs over the representation $R$ of whatever gauge group is supplied — for colour, a group the framework does not own. The $\theta$-angle and strong $CP$ lie outside that article by its own statement. So the QCD-specific gap is narrower than it was and is still real: the anomaly is formulated at the level of a single abelian current, and the colour-dressed coefficient, the flavour-singlet $\mathrm{U}(1)_A$ at $N_f$ flavours, and the strong $CP$ question remain unbuilt.
 
-The framework's mass term interacts with both. The mass is the off-diagonal pairing of the chiral pair written in §"The chiral-fermion issue"; it is the real-form expression of an ordinary Dirac mass, so the interpretation is settled. The framework therefore carries a conserved fermion number — the central phase passes through the linear mass and the vector $\mathrm{U}(1)$ is exact for the massive field — and what the mass breaks is the axial charge, with the divergence $\sum_\mu\partial j_{5\mu}/\partial R_\mu=2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,\vec e_y\bigr)$ established there, which vanishes only at $m=0$. That is the framework's transcription of exactly the chiral-symmetry breaking that organises the light-hadron spectrum. The companion article *The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form* takes the next step and identifies the condensate with a dynamically generated coefficient of this same linear pair, but it transcribes the gap equation, and the scale, the interaction and the Goldstone counting are standard input rather than framework results. The genuinely antilinear pairing lives on the algebra's real structure $\flat$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus; that is a different equation from the gradient equation, and it is not the framework's mass term.
+The framework's mass term interacts with both. The mass is the off-diagonal pairing of the chiral pair written in §"The chiral-fermion issue"; it is the real-form expression of an ordinary Dirac mass, so the interpretation is settled. The framework therefore carries a conserved fermion number — the central phase passes through the linear mass and the vector $\mathrm{U}(1)$ is exact for the massive field — and what the mass breaks is the axial charge, with the divergence $\sum_{\imath}\partial j_{5\imath}/\partial R_{\imath}=2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,\vec e_y\bigr)$ established there, which vanishes only at $m=0$. That is the framework's transcription of exactly the chiral-symmetry breaking that organises the light-hadron spectrum. The companion article *The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form* takes the next step and identifies the condensate with a dynamically generated coefficient of this same linear pair, but it transcribes the gap equation, and the scale, the interaction and the Goldstone counting are standard input rather than framework results. The genuinely antilinear pairing lives on the algebra's real structure $\flat$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus; that is a different equation from the gradient equation, and it is not the framework's mass term.
 
 What would settle it. Three computations, in order of dependence:
 
@@ -288,10 +288,10 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair as two first-order lines (*Operator and Calculus Conventions*); each line composed with its partner is $\Box_\Phi$ |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field and its two values, $L$ of value $-1$ and $R$ of value $+1$ (*Special Element Conventions*) |
 | $B(\tilde{Ξ})$ | The mass bilinear of the read list; odd under the exchange of the two values |
-| $j_{5\mu}$, $Ϙ$, $ϙ_L$, $ϙ_R$ | The axial current and the charge values on the two parts (read list) |
+| $j_{5\imath}$, $Ϙ$, $ϙ_L$, $ϙ_R$ | The axial current and the charge values on the two parts (read list) |
 | $\tilde{Ξ}^{\flat}$ | The algebra's real structure (*Algebra and Element Conventions*); the single-field equation built on it is not the mass |
 | $\tilde Q\tilde Q^{\natural}$ | The central quaternionic-norm invariant; the cutoff is imposed on it |
-| $\mathcal{A}_\mu$, $F_{\mu\nu}$, $\kappa$ | The non-abelian connection, its field strength and the coupling (read list) |
+| $\mathcal{A}_{\imath}$, $F_{\imath\jmath}$, $\kappa$ | The non-abelian connection, its field strength and the coupling (read list) |
 | $[e_a,e_b]$, $T_a$ | The commutator and the generators of the $\mathrm{SU}(2)$ factor at the material sector (read list) |
 | $\beta_g$, $b_0$, $C_2(G)$, $T(r)$ | The one-loop beta function and its coefficients, transcribed (*The Renormalization Group in Biquaternionic Form*) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium, and in vacuum |

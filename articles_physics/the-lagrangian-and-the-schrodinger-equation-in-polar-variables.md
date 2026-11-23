@@ -50,7 +50,7 @@ so that the potential term of the Lagrangian is $\varrho^{2}V$. Both symbols are
 
 ## Conventions
 
-**The conventions are restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
+**The conventions are restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
 ## The Action in Polar Variables
 
@@ -454,7 +454,7 @@ The parameterisation absorbs the unit conditions, so no multiplier is needed for
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $*,\ \natural$ | Hermitian conjugation, quaternion conjugation |
 | $\mathrm{Sc}$ | Scalar part |

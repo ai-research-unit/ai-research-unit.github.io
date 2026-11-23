@@ -41,9 +41,9 @@ $$
 **The evaluation.** The heat kernel of $\not D^2$ is known to second order, and the trace over Dirac indices of $\gamma_5$ times the identity vanishes while the second-order term does not. The surviving term is proportional to the field strength contracted with its dual:
 
 $$
-\boxed{\;\partial_\mu j_{5,\mu}=\frac{1}{16\pi^2}\,\mathrm{Tr}\!\left(F_{\mu\nu}\tilde F_{\mu\nu}\right),
+\boxed{\;\partial_{\imath} j_{5,\imath}=\frac{1}{16\pi^2}\,\mathrm{Tr}\!\left(F_{\imath\jmath}\tilde F_{\imath\jmath}\right),
 \qquad
-\tilde F_{\mu\nu}=\tfrac12\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma}\;}
+\tilde F_{\imath\jmath}=\tfrac12\epsilon_{\imath\jmath\rho\sigma}F_{\rho\sigma}\;}
 $$
 
 with the trace over the gauge representation. The numerical coefficient is fixed by the heat-kernel expansion and by the dimension of the representation; no diagram is drawn, and no loop integral is performed.
@@ -53,7 +53,7 @@ with the trace over the gauge representation. The numerical coefficient is fixed
 **The index relation.** Integrating the density over a closed manifold relates the anomaly to the index of the Dirac operator,
 
 $$
-\int d^4x\ \partial_\mu j_{5,\mu}=\frac{1}{8\pi^2}\int\mathrm{Tr}\left(F\wedge F\right)=2\,n,
+\int d^4x\ \partial_{\imath} j_{5,\imath}=\frac{1}{8\pi^2}\int\mathrm{Tr}\left(F\wedge F\right)=2\,n,
 $$
 
 so the change in the fermion number under a chiral rotation is an integer, and the anomaly is the local form of an index theorem. The same total derivative that makes the topological charge an integer makes the anomaly exact.
@@ -76,7 +76,7 @@ The algebra enters at two points, and neither is the coefficient.
 | $\mathcal{A}(x)$ | the anomaly density, the Jacobian per unit angle |
 | $\lambda_n$, $\omicron_{\mathrm{pot},n}$ | eigenvalues and eigenfunctions of the regulating operator |
 | $M$ | the regulator mass |
-| $\tilde F_{\mu\nu}$ | the dual field strength |
+| $\tilde F_{\imath\jmath}$ | the dual field strength |
 | $n$ | the topological charge, an integer |
 
 ## Further Reading

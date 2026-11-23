@@ -21,7 +21,7 @@ The article records this formula, its derivation from the determinant of the Bha
 
 ## The Bhabha Equation and Its Determinant
 
-The spinor-structure route starts from the finite-dimensional wave equation of Bhabha–Gel'fand–Yaglom. In a representation $\tau$ of the Lorentz group, of dimension $N$, with generators $\Gamma_{\mu}$, a field $\tilde{Ξ}$ of $N$ components satisfies
+The spinor-structure route starts from the finite-dimensional wave equation of Bhabha–Gel'fand–Yaglom. In a representation $\tau$ of the Lorentz group, of dimension $N$, with generators $\Gamma_{\imath}$, a field $\tilde{Ξ}$ of $N$ components satisfies
 
 $$
 \bigl(\Gamma_{0}p_0-\Gamma_{1}p_1-\Gamma_{2}p_2-\Gamma_{3}p_3\bigr)\tilde{Ξ} + m\tilde{Ξ} = 0,
@@ -182,7 +182,7 @@ What is transcribed is the formula, the chains, and the assignments; what is est
 | $\deg\tau^{l\bar l}=(2l+1)(2\bar l+1)$ | Degree (dimension) of the representation |
 | $m^{(s)}=\mu_0(l+\frac12)(\bar l+\frac12)=\frac{\mu_0}{4}\deg$ | The spin–mass formula |
 | $\mu_0$ | Mass scale; the electron's anchor is $m_e=\mu_0/2$ |
-| $\Gamma_{\mu}$, $\Gamma(p)$ | Generators and the momentum matrix of the Bhabha equation |
+| $\Gamma_{\imath}$, $\Gamma(p)$ | Generators and the momentum matrix of the Bhabha equation |
 | $\lambda_i$, $\bar\lambda_i$ | Eigenvalues of $\Gamma_{0}$; $m_i=\mu_0\lambda_i\bar\lambda_i$ |
 | $D(p)=\det(\Gamma(p)+mE)$ | The determinant whose roots are the masses |
 | Interlocking | $l_2=l\pm\frac12$, $\bar l_2=\bar l\pm\frac12$ |

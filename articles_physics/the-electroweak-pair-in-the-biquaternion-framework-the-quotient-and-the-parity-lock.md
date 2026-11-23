@@ -63,7 +63,7 @@ The observed table passes the check. Take the central charge to be $q=6Y$, the l
 | $d_L$ | $-\tfrac12$ | $+\tfrac16$ | $-\tfrac13$ | $+1$ | $1$ | yes |
 | $u_R$ | $0$ | $+\tfrac23$ | $+\tfrac23$ | $+4$ | $0$ | yes |
 | $d_R$ | $0$ | $-\tfrac13$ | $-\tfrac13$ | $-2$ | $0$ | yes |
-| $\nu_L$ | $+\tfrac12$ | $-\tfrac12$ | $0$ | $-3$ | $1$ | yes |
+| ${\jmath}_L$ | $+\tfrac12$ | $-\tfrac12$ | $0$ | $-3$ | $1$ | yes |
 | $e_L$ | $-\tfrac12$ | $-\tfrac12$ | $-1$ | $-3$ | $1$ | yes |
 | $e_R$ | $0$ | $-1$ | $-1$ | $-6$ | $0$ | yes |
 

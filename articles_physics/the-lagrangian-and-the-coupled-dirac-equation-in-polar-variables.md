@@ -34,7 +34,7 @@ The two settings. The connection is taken constant, with constant coefficients, 
 
 ## Conventions
 
-The conventions are the free chart's, restated for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is the pair of parts, each written in the word $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}\tilde U_{\Psi,\mathrm b}$, with $\varrho>0$ and the rotor on the left, which is the free chart's ordering. The connection is central, the coupling is $ϙ$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4r$, and $k_m=\frac{2\pi mc}{h}$.
+The conventions are the free chart's, restated for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is the pair of parts, each written in the word $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}\tilde U_{\Psi,\mathrm b}$, with $\varrho>0$ and the rotor on the left, which is the free chart's ordering. The connection is central, the coupling is $ϙ$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4r$, and $k_m=\frac{2\pi mc}{h}$.
 
 ## The Action in Polar Variables
 
@@ -137,15 +137,15 @@ What the variation does not do. It does not produce the constraint algebra. The 
 The four brackets, with the coupling. For each component,
 
 $$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
-=\frac{1}{2}\partial_\mu\ln\rho_{\mathrm{num}}
-+i\Bigl(\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\mu^{\,t}\Bigr)
-+\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
-+\frac{2\pi i\,ϙ}{h}A_\mu^{\,\eta}\vec e_\eta
-+\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r},
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi
+=\frac{1}{2}\partial_{\imath}\ln\rho_{\mathrm{num}}
++i\Bigl(\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}^{\,t}\Bigr)
++\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
++\frac{2\pi i\,ϙ}{h}A_{\imath}^{\,\eta}\vec e_\eta
++\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r},
 $$
 
-where $A_\mu^{\,t}$ and $A_\mu^{\,\eta}$ are the temporal and spatial slots of the component's potential, and where the two added terms have been written beside the brackets they join.
+where $A_{\imath}^{\,t}$ and $A_{\imath}^{\,\eta}$ are the temporal and spatial slots of the component's potential, and where the two added terms have been written beside the brackets they join.
 
 The type table.
 

@@ -82,17 +82,17 @@ $$
 
 and similarly $C_{\Psi\Phi}$, $C_{\Phi\Psi}$, $C_{\Phi\Phi}$, each a real subspace of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$. If the split composed, these would be four independent sectors, of real dimension eight each, and their direct sum would be the whole algebra; as spans they have dimension sixteen each and they overlap, which is the content of the theorem below.
 
-The identity. Let $\vec e_\mu$ be a quaternion unit. It is a material element, $x^{*}=-x$ for $x=\vec e_\mu$, and $i\vec e_\mu$ is the informational element it generates. In the quotient,
+The identity. Let $\vec e_{\imath}$ be a quaternion unit. It is a material element, $x^{*}=-x$ for $x=\vec e_{\imath}$, and $i\vec e_{\imath}$ is the informational element it generates. In the quotient,
 
 $$
-(i\vec e_\mu)\otimes(i\vec e_\mu)\;=\;(i\otimes i)\,\bigl(\vec e_\mu\otimes\vec e_\mu\bigr)\;=\;-(\vec e_\mu\otimes\vec e_\mu),
+(i\vec e_{\imath})\otimes(i\vec e_{\imath})\;=\;(i\otimes i)\,\bigl(\vec e_{\imath}\otimes\vec e_{\imath}\bigr)\;=\;-(\vec e_{\imath}\otimes\vec e_{\imath}),
 $$
 
 because $i\otimes i$ has class $i^{2}=-1$. The left side lies in $C_{\Psi\Psi}$, being informational in both slots, and the right side in $C_{\Phi\Phi}$.
 
 **The theorem (the two aligned corners coincide).** $C_{\Psi\Psi}=C_{\Phi\Phi}$.
 
-*Proof.* The identity shows $C_{\Phi\Phi}\subseteq C_{\Psi\Psi}$: the material sector has basis $ie_t,\vec e_x,\vec e_y,\vec e_z$, so $C_{\Phi\Phi}$ is spanned by the products of pairs drawn from that basis, and the identity rewrites each such product as minus a product of two informational tensors. The converse is the same identity read backwards. For general elements the identity extends by bilinearity: if $a=\sum_\mu a_\mu u_\mu$ and $b=\sum_\nu b_\nu u_\nu$ with $u_\mu\in\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the informational basis, then the same computation in each pair of slots gives $(\mathrm i a)\otimes(\mathrm i b)=-(a\otimes b)$.
+*Proof.* The identity shows $C_{\Phi\Phi}\subseteq C_{\Psi\Psi}$: the material sector has basis $ie_t,\vec e_x,\vec e_y,\vec e_z$, so $C_{\Phi\Phi}$ is spanned by the products of pairs drawn from that basis, and the identity rewrites each such product as minus a product of two informational tensors. The converse is the same identity read backwards. For general elements the identity extends by bilinearity: if $a=\sum_{\imath} a_{\imath} u_{\imath}$ and $b=\sum_{\jmath} b_{\jmath} u_{\jmath}$ with $u_{\imath}\in\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the informational basis, then the same computation in each pair of slots gives $(\mathrm i a)\otimes(\mathrm i b)=-(a\otimes b)$.
 
 The two cross corners coincide as well, and with each other. The mixed tensors $a\otimes b$ with $a$ informational and $b$ material satisfy $(\mathrm i a)\otimes b=-(a\otimes\mathrm i b)$, so $C_{\Psi\Phi}=C_{\Phi\Psi}$, and this common space is the anti-Hermitian part of $M_4(\mathbb{C})$.
 
@@ -153,7 +153,7 @@ The check. In the Pauli model $e_t=\mathrm I_2$ and $i\vec e_k=-\sigma_k$, so th
 
 The anti-Hermitian part is the same computation with one sign. Replacing one factor by a material element multiplies the tensor by $-1$ times a Hermitian tensor, hence the odd spans are the anti-Hermitian part, of dimension sixteen, and the two together exhaust the algebra.
 
-A numerical confirmation. The statement was checked on random real combinations: a random element of $C_{\Psi\Psi}$ and a random element of $C_{\Phi\Phi}$ were formed, and each was verified Hermitian to machine precision, with the two spans agreeing on a random sample of sixteen independent vectors. The identity $\vec e_\mu\otimes\vec e_\mu=-(i\vec e_\mu)\otimes(i\vec e_\mu)$ held to $10^{-16}$.
+A numerical confirmation. The statement was checked on random real combinations: a random element of $C_{\Psi\Psi}$ and a random element of $C_{\Phi\Phi}$ were formed, and each was verified Hermitian to machine precision, with the two spans agreeing on a random sample of sixteen independent vectors. The identity $\vec e_{\imath}\otimes\vec e_{\imath}=-(i\vec e_{\imath})\otimes(i\vec e_{\imath})$ held to $10^{-16}$.
 
 ## What the Definition Does and Does Not Assert
 

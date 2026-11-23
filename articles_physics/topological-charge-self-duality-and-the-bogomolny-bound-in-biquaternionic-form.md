@@ -13,12 +13,12 @@
 
 ## The Density and Its Primitivity
 
-**The density.** For a gauge field with field strength $F_{\mu\nu}$,
+**The density.** For a gauge field with field strength $F_{\imath\jmath}$,
 
 $$
-\varrho=\frac{1}{16\pi^2}\,\mathrm{Tr}\left(F_{\mu\nu}\tilde F_{\mu\nu}\right),
+\varrho=\frac{1}{16\pi^2}\,\mathrm{Tr}\left(F_{\imath\jmath}\tilde F_{\imath\jmath}\right),
 \qquad
-\tilde F_{\mu\nu}=\tfrac12\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma},
+\tilde F_{\imath\jmath}=\tfrac12\epsilon_{\imath\jmath\rho\sigma}F_{\rho\sigma},
 $$
 
 and the charge is its integral, $Q=\int d^4x\ \varrho$.
@@ -34,9 +34,9 @@ with $\Omega_{\mathrm{CS}}$ the Chern–Simons form. The identity is what makes 
 **The abelian case.** For an abelian field the density reduces to the divergence of a four-vector,
 
 $$
-\varrho=\partial_\mu J_{\mathrm{CS},\mu},
+\varrho=\partial_{\imath} J_{\mathrm{CS},\imath},
 \qquad
-J_{\mathrm{CS},\mu}=\tfrac14\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma},
+J_{\mathrm{CS},\imath}=\tfrac14\epsilon_{\imath\jmath\rho\sigma}A_{\jmath} F_{\rho\sigma},
 $$
 
 and $J_{\mathrm{CS}}$ is gauge dependent while $\varrho$ is not. The primitive is therefore a computational device, not an invariant, and this distinction matters when the question is whether the framework can write the density at all.
@@ -65,8 +65,8 @@ with equality exactly when $F=\pm\star F$. The self-dual configurations are ther
 
 ## What the Framework Supplies
 
-- **Supplied.** Two invariants of the abelian field, $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, and the identity $\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=4I_2$ in the Euclidean case, so the imaginary part of the biquaternion norm **is** the abelian density.
-- **Not supplied.** The non-abelian density. $\mathrm{Tr}(F\wedge F)$ needs a matrix trace over the gauge algebra, and the biquaternion norm is a rank-two bilinear with a single algebra slot; the norm of the biquaternion representative is not gauge invariant under $F_{\mu\nu}\mapsto\tilde UF_{\mu\nu}\tilde U^{-1}$. This is a recorded gap, not an oversight.
+- **Supplied.** Two invariants of the abelian field, $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, and the identity $\sum_{\imath,\jmath}F_{\imath\jmath}\star F_{\imath\jmath}=4I_2$ in the Euclidean case, so the imaginary part of the biquaternion norm **is** the abelian density.
+- **Not supplied.** The non-abelian density. $\mathrm{Tr}(F\wedge F)$ needs a matrix trace over the gauge algebra, and the biquaternion norm is a rank-two bilinear with a single algebra slot; the norm of the biquaternion representative is not gauge invariant under $F_{\imath\jmath}\mapsto\tilde UF_{\imath\jmath}\tilde U^{-1}$. This is a recorded gap, not an oversight.
 - **Imported.** The star, the bound and the Chern–Simons primitive.
 
 **Where the application is.** [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html) applies every statement above to the framework's compact factor: it writes the density for both cases, verifies the total-derivative identity symbolically, checks the non-invariance numerically, and exhibits the BPST solution with its charge and action.
@@ -75,12 +75,12 @@ with equality exactly when $F=\pm\star F$. The self-dual configurations are ther
 
 | Symbol | Meaning |
 |---|---|
-| $F_{\mu\nu}$ | the field strength |
-| $\tilde F_{\mu\nu}$ | its dual |
+| $F_{\imath\jmath}$ | the field strength |
+| $\tilde F_{\imath\jmath}$ | its dual |
 | $\varrho$ | the topological density |
 | $Q$ | the topological charge, an integer |
 | $\Omega_{\mathrm{CS}}$ | the Chern–Simons form |
-| $J_{\mathrm{CS},\mu}$ | the abelian Chern–Simons current |
+| $J_{\mathrm{CS},\imath}$ | the abelian Chern–Simons current |
 | $g$ | the gauge coupling |
 
 ## Further Reading

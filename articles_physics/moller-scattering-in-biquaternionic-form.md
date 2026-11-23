@@ -23,7 +23,7 @@ $$
 Ξ_k:\ Q\mapsto i\vec e_\eta Q\vec e_y\quad(\eta=1,2,3),
 $$
 
-with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$ and one or two vector units, so its square is read from the unit squares and the unit products of *Algebra and Element Conventions*: $Ξ^{2}_t$ is the identity, $Ξ^{2}_\eta$ is minus the identity, and $Ξ_\muΞ_\nu+Ξ_\nuΞ_\mu$ is $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$. Those three derived forms are what every identity below uses. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
+with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$ and one or two vector units, so its square is read from the unit squares and the unit products of *Algebra and Element Conventions*: $Ξ^{2}_t$ is the identity, $Ξ^{2}_\eta$ is minus the identity, and $Ξ_{\imath}Ξ_{\jmath}+Ξ_{\jmath}Ξ_{\imath}$ is $2\varepsilon_{\imath}\delta_{\imath\jmath}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$. Those three derived forms are what every identity below uses. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
 
 **The momentum insertion.** The insertion of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the action
 
@@ -103,12 +103,12 @@ on an element of momentum $p$: the insertion $P(p)$ applied to $\tilde{Ξ}$ give
 The vertex current of an electron of incoming momentum $p_{\mathrm{in}}$ and outgoing momentum $p_{\mathrm{out}}$ is the scalar
 
 $$
-J_\mu(p_{\mathrm{out}},p_{\mathrm{in}}):=\mathrm{Sc}\bigl(\bar{\tilde{Ξ}}(p_{\mathrm{out}})\,Ξ_\mu\tilde{Ξ}(p_{\mathrm{in}})\bigr),
+J_{\imath}(p_{\mathrm{out}},p_{\mathrm{in}}):=\mathrm{Sc}\bigl(\bar{\tilde{Ξ}}(p_{\mathrm{out}})\,Ξ_{\imath}\tilde{Ξ}(p_{\mathrm{in}})\bigr),
 \qquad
 \bar{\tilde{Ξ}}:=\tilde{Ξ}^*i\vec e_x,
 $$
 
-with $Ξ_\mu$ the insertion of the Lorentz index $\mu$ and $\bar{\tilde{Ξ}}$ the Dirac adjoint, the product of the star of the element with the fixed element $i\vec e_x$, the one factor of the adjoint that lies outside $\mathbb{B}$. The product $\bar{\tilde{Ξ}}\,Ξ_\mu\tilde{Ξ}$ is an element of $\mathbb{B}$ and its scalar part is a single complex number, so every $J_\mu$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
+with $Ξ_{\imath}$ the insertion of the Lorentz index $\mu$ and $\bar{\tilde{Ξ}}$ the Dirac adjoint, the product of the star of the element with the fixed element $i\vec e_x$, the one factor of the adjoint that lies outside $\mathbb{B}$. The product $\bar{\tilde{Ξ}}\,Ξ_{\imath}\tilde{Ξ}$ is an element of $\mathbb{B}$ and its scalar part is a single complex number, so every $J_{\imath}$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
 
 $$
 \mathcal M_t=\frac{e^2}{t}\Bigl[J_t(p_3,p_1)J_t(p_4,p_2)-\sum_{\eta=1}^3 J_\eta(p_3,p_1)J_\eta(p_4,p_2)\Bigr],
@@ -154,17 +154,17 @@ $$
 the left string read in the order of the factors and the right string in reverse, and the trace is additive over sums of actions. With $Ξ^{t}=Ξ_t$ and $Ξ^{\eta}=-Ξ_\eta$, the three trace combinations are
 
 $$
-L_t:=\operatorname{tr}\bigl[Ξ_{\mu} D(p_1)Ξ_{\nu} D(p_3)\bigr]\,
-\operatorname{tr}\bigl[Ξ_\mu D(p_2)Ξ_\nu D(p_4)\bigr],
+L_t:=\operatorname{tr}\bigl[Ξ_{\imath} D(p_1)Ξ_{\jmath} D(p_3)\bigr]\,
+\operatorname{tr}\bigl[Ξ_{\imath} D(p_2)Ξ_{\jmath} D(p_4)\bigr],
 $$
 
 $$
-L_u:=\operatorname{tr}\bigl[Ξ_{\mu} D(p_2)Ξ_{\nu} D(p_3)\bigr]\,
-\operatorname{tr}\bigl[Ξ_\mu D(p_1)Ξ_\nu D(p_4)\bigr],
+L_u:=\operatorname{tr}\bigl[Ξ_{\imath} D(p_2)Ξ_{\jmath} D(p_3)\bigr]\,
+\operatorname{tr}\bigl[Ξ_{\imath} D(p_1)Ξ_{\jmath} D(p_4)\bigr],
 $$
 
 $$
-L_{tu}:=\operatorname{tr}\bigl[D(p_3)Ξ_{\mu} D(p_1)Ξ_{\nu} D(p_4)Ξ_{\mu} D(p_2)Ξ_{\nu}\bigr],
+L_{tu}:=\operatorname{tr}\bigl[D(p_3)Ξ_{\imath} D(p_1)Ξ_{\jmath} D(p_4)Ξ_{\imath} D(p_2)Ξ_{\jmath}\bigr],
 $$
 
 with the sum over the two repeated Lorentz indices, and the trace of an odd number of insertions vanishes. Then
@@ -177,9 +177,9 @@ $$
 The traces are evaluated with the standard four-dimensional identities, which follow from the anticommutation relations of the insertions alone,
 
 $$
-\operatorname{tr}(Ξ_\muΞ_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\operatorname{tr}(Ξ_\muΞ_\nuΞ_\rhoΞ_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr),
+\operatorname{tr}(Ξ_{\imath}Ξ_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\operatorname{tr}(Ξ_{\imath}Ξ_{\jmath}Ξ_\rhoΞ_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}+\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr),
 $$
 
 with odd traces vanishing; *The Legacy Pauli Gamma Formulation* records them with the rest of the dictionary. Evaluating the three traces gives the closed form, in which the factor $\tfrac14$ of the spin average is already included:
@@ -242,7 +242,7 @@ $$
 
 where $\sigma_L$ and $\sigma_R$ are the cross sections for left- and right-handed incident electrons.
 
-The $Z$ couples to the electron with $g_{V,e}=-\tfrac12Q_{W,e}$ and $g_{A,e}=-\tfrac12$. At $Q^2\ll M_Z^2$ its propagator collapses to $-1/M_Z^2$, so the $Z$ amplitude is $-\sqrt2G_{\mathrm F}$ times the same two currents with the insertion replaced by the combination $g_{V,e}Ξ_\mu$ minus $g_{A,e}$ times the same insertion followed by the chirality action $Q\mapsto-iQ\vec e_z$: the vector term keeps both values of the chirality, and the axial term carries one value into the other. The asymmetry is twice the interference of the $Z$ amplitude with the photon amplitude, divided by the photon amplitude squared. Three facts follow at once, and they are the anatomy of the boxed result below: the interference carries exactly one power of $G_{\mathrm F}$ and one factor $1/\alpha$ from the two photon vertices; it is proportional to the product $g_{V,e}g_{A,e}=\tfrac14Q_{W,e}$, so a parity-symmetric $Z$ coupling would give nothing; and the kinematic factor is $Q^2$, which in a fixed-target experiment is $Q^2=2m_eE_{\mathrm{beam}}y$, hence the $m_eE_{\mathrm{beam}}$ in front and the $y$-dependence behind.
+The $Z$ couples to the electron with $g_{V,e}=-\tfrac12Q_{W,e}$ and $g_{A,e}=-\tfrac12$. At $Q^2\ll M_Z^2$ its propagator collapses to $-1/M_Z^2$, so the $Z$ amplitude is $-\sqrt2G_{\mathrm F}$ times the same two currents with the insertion replaced by the combination $g_{V,e}Ξ_{\imath}$ minus $g_{A,e}$ times the same insertion followed by the chirality action $Q\mapsto-iQ\vec e_z$: the vector term keeps both values of the chirality, and the axial term carries one value into the other. The asymmetry is twice the interference of the $Z$ amplitude with the photon amplitude, divided by the photon amplitude squared. Three facts follow at once, and they are the anatomy of the boxed result below: the interference carries exactly one power of $G_{\mathrm F}$ and one factor $1/\alpha$ from the two photon vertices; it is proportional to the product $g_{V,e}g_{A,e}=\tfrac14Q_{W,e}$, so a parity-symmetric $Z$ coupling would give nothing; and the kinematic factor is $Q^2$, which in a fixed-target experiment is $Q^2=2m_eE_{\mathrm{beam}}y$, hence the $m_eE_{\mathrm{beam}}$ in front and the $y$-dependence behind.
 
 At tree level the asymmetry is therefore
 
@@ -273,12 +273,12 @@ It was measured at SLAC (E158), which finds $A_{\mathrm{PV}}=-131\pm14\pm10$ par
 The framework's minimal-coupling article writes the electromagnetic coupling of the biquaternion Dirac field through the four-potential and identifies the conserved current as the pairing
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\vec e_x\,Ξ_\mu\tilde{Ξ}\bigr),
+j_{\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\vec e_x\,Ξ_{\imath}\tilde{Ξ}\bigr),
 \qquad
 \bar{\tilde{Ξ}}=\tilde{Ξ}^*i\vec e_x,
 $$
 
-where $Ξ_\mu$ are the four insertions of §*Kinematics*. The current is the material-sector four-current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ of *Algebra and Element Conventions*, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde{Ξ}\tilde{Ξ}^*$ is in $\mathbb{B}_{\Phi}$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
+where $Ξ_{\imath}$ are the four insertions of §*Kinematics*. The current is the material-sector four-current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ of *Algebra and Element Conventions*, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde{Ξ}\tilde{Ξ}^*$ is in $\mathbb{B}_{\Phi}$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_{\imath}(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
 
 ### The relative minus sign is the mode algebra's antisymmetry
 
@@ -310,7 +310,7 @@ The framework supplies the two vertex currents, the photon propagator, the Fock 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.
 
 This section fixes the dictionary that the traces above use, and nothing here is needed outside it.
 
@@ -337,26 +337,26 @@ The dictionary $M\mapsto c(M)$ is complex-linear; over $\mathbb{R}$ the products
 **The identities the body cites.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
 (\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_{\imath},\gamma_5\}=0,
 $$
 
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_{\imath},\gamma_{\jmath}]=2\gamma_{\imath}\gamma_{\jmath}\quad(\imath\ne\jmath),\qquad
 [\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath})=4\varepsilon_{\imath}\delta_{\imath\jmath},\qquad
+\mathrm{tr}(\gamma_5\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\imath\jmath\rho\sigma},
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_{\imath}\gamma_{\jmath}\gamma_\rho\gamma_\sigma)
+=4\bigl(\varepsilon_{\imath}\delta_{\imath\jmath}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_{\imath}\delta_{\imath\rho}\varepsilon_{\jmath}\delta_{\jmath\sigma}+\varepsilon_{\imath}\delta_{\imath\sigma}\varepsilon_{\jmath}\delta_{\jmath\rho}\bigr).
 $$
 
 Each $\gamma$ is a basis operator with one factor of $i$; the squares use $i^2=-1$.
@@ -364,18 +364,18 @@ Each $\gamma$ is a basis operator with one factor of $i$; the squares use $i^2=-
 The contraction sums are fixed by the metric, because the sign of a basis operator's square is. With the weight on the summed index,
 
 $$
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_{\imath}=4I_4,\qquad
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_{\imath}=-2\gamma_\alpha,
 $$
 
 $$
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=2\gamma_\alpha\gamma_\beta\gamma_\gamma .
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
+\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_{\imath}=2\gamma_\alpha\gamma_\beta\gamma_\gamma .
 $$
 
-Without the weight only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the other three are index-dependent and are computed, not transcribed.
+Without the weight only the first keeps a closed form, $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=-2I_4$; the other three are index-dependent and are computed, not transcribed.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -399,7 +399,7 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $D(p)=P(p)+m$ | Spin-sum action of the momentum shell |
 | $\tilde{Ξ}^{(r)}(p)$, $\bar{\tilde{Ξ}}=\tilde{Ξ}^*i\vec e_x$ | Positive-frequency element and its Dirac adjoint |
 | $\tilde{Ξ}_{L},\tilde{Ξ}_{R}$ | The two values of the chirality: $L$ the minus one, $R$ the plus one |
-| $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})=\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{out}}Ξ_\mu\tilde{Ξ}_{\mathrm{in}})$ | Vertex current |
+| $J_{\imath}(p_{\mathrm{out}},p_{\mathrm{in}})=\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{out}}Ξ_{\imath}\tilde{Ξ}_{\mathrm{in}})$ | Vertex current |
 | $\mathcal M_t,\mathcal M_u$ | $t$- and $u$-channel amplitudes |
 | $\mathcal M=\mathcal M_t-\mathcal M_u$ | Total amplitude with the exchange sign |
 | $\overline{|\mathcal M|^2}$ | Spin-averaged squared matrix element, factor $\tfrac14$ included |

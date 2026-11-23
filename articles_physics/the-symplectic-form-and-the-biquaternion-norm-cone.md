@@ -4,7 +4,7 @@
 
 Hamiltonian mechanics is symplectic geometry. The phase space carries a closed, non-degenerate two-form $\omega$, the Hamiltonian vector field of a function $f$ is defined by $\omega(X_f,\,\cdot\,)=df$, and the Poisson bracket is $\{f,g\}=\omega(X_f,X_g)$. When the phase space is linear and the form is constant, the same data can be presented as a triple: a positive-definite metric $g$, an antisymmetric form $\omega$, and a complex structure $J$ compatible with both, with $g(JQ_x,JQ_y)=g(Q_x,Q_y)$ and $\omega(Q_x,Q_y)=g(JQ_x,Q_y)$. This is the **Kähler** presentation, and it is the one the biquaternion algebra reproduces.
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries two canonical quadratic structures: the **Hermitian form** $\vec Z^{*}\vec W$ with its scalar part $\mathrm{Sc}(\vec Z^{*}\vec W)$, and the **holomorphic biquaternion norm** $\langle\vec Z\rangle_{\natural} = \langle\vec Z,\vec Z\rangle_{\natural}=\vec Z\vec Z^{\natural}=\sum_\mu Z_\mu^2$. The first is positive definite; the second is a general plain bilinear form whose vanishing set is a complex cone — the **biquaternion-norm cone**. The thesis of this article is that these two structures are the two faces of one object:
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries two canonical quadratic structures: the **Hermitian form** $\vec Z^{*}\vec W$ with its scalar part $\mathrm{Sc}(\vec Z^{*}\vec W)$, and the **holomorphic biquaternion norm** $\langle\vec Z\rangle_{\natural} = \langle\vec Z,\vec Z\rangle_{\natural}=\vec Z\vec Z^{\natural}=\sum_{\imath} Z_{\imath}^2$. The first is positive definite; the second is a general plain bilinear form whose vanishing set is a complex cone — the **biquaternion-norm cone**. The thesis of this article is that these two structures are the two faces of one object:
 
 1. The Hermitian pairing, read on the phase-space biquaternion $\vec Z=\vec q+i\vec p$, has a real part that is the Euclidean metric $g$ and an imaginary part that is the symplectic form $\omega$. The algebra's complex structure $i$ is the Kähler $J$.
 2. The holomorphic biquaternion norm is the symmetric general plain bilinear form of the same complex structure; its isotropic cone is the biquaternion-norm cone. On the material sector that cone is the light cone, and it is the characteristic cone of the d'Alembertian.
@@ -12,7 +12,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ car
 
 The article is classical throughout. The Hermitian pairing is the form that the companion articles on $\mathbb{B}_{\Psi}$ write as the Born pairing; here it is read as a phase-space metric and a symplectic form, and no measurement postulate is involved. No commutator appears.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central with $i^2=-1$; conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian sectors. The phase-space biquaternion is $\vec Z=\vec q+i\vec p$ with $\vec q,\vec p$ pure real quaternions, identified with a point of the six-dimensional real phase space; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$, and the d'Alembertian of the series is $\Box_\Phi=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$; $i$ is central with $i^2=-1$; conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian sectors. The phase-space biquaternion is $\vec Z=\vec q+i\vec p$ with $\vec q,\vec p$ pure real quaternions, identified with a point of the six-dimensional real phase space; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$, and the d'Alembertian of the series is $\Box_\Phi=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$.
 
 The companion articles are:
 - Companion article *The Lagrangian and Hamiltonian Mechanics*, for the phase-space biquaternion and the Poisson bracket.
@@ -91,7 +91,7 @@ $$
 The form $g$ is symmetric and positive definite: $g(\vec Z,\vec Z)=|\vec q|^2+|\vec p|^2$, the Euclidean norm of the phase-space point, vanishing only at the origin. The form $\omega$ is antisymmetric, because exchanging $\vec Z$ and $\vec W$ exchanges $\vec q\cdot\vec s$ with $\vec r\cdot\vec p=\vec p\cdot\vec r$ and reverses the sign; and it is non-degenerate, since $\omega(\vec Z,\vec W)=0$ for all $\vec W$ forces $\vec q=\vec p=0$. As a two-form in coordinates,
 
 $$
-\omega=\sum_{\mu=1}^{3}dq_\mu\wedge dp_\mu ,
+\omega=\sum_{\imath=1}^{3}dq_{\imath}\wedge dp_{\imath} ,
 $$
 
 which is the standard symplectic form. The identity above is therefore the statement that **the symplectic form is the imaginary part of the Hermitian scalar pairing, and the Euclidean metric is its real part.**
@@ -161,8 +161,8 @@ The symplectic form can also be written as the scalar part of a biquaternion two
 
 $$
 \mathrm{Sc}\!\left(d\vec Z\wedge d\vec Z^{*}\right),
-\qquad d\vec Z=\sum_\mu(dq_\mu+i\,dp_\mu)\,\vec e_\mu,\qquad
-d\vec Z^{*}=-\sum_\mu(dq_\mu-i\,dp_\mu)\,\vec e_\mu ,
+\qquad d\vec Z=\sum_{\imath}(dq_{\imath}+i\,dp_{\imath})\,\vec e_{\imath},\qquad
+d\vec Z^{*}=-\sum_{\imath}(dq_{\imath}-i\,dp_{\imath})\,\vec e_{\imath} ,
 $$
 
 and using the antisymmetry of the wedge together with the anticommutativity of the quaternion units, the only terms that survive are the scalar ones, and they give
@@ -195,17 +195,17 @@ because the quaternion units anticommute while the wedge is antisymmetric, so th
 The same Hermitian pairing that gives $g$ and $\omega$ gives the Poisson bracket directly. For a real function $f(\vec q,\vec p)$ define the **phase-space biquaternion gradient**
 
 $$
-\tilde\nabla_\Phi f=\sum_{\mu\in\{t,x,y,z\}}e_\mu\left(\frac{\partial f}{\partial q_\mu}+i\frac{\partial f}{\partial p_\mu}\right).
+\tilde\nabla_\Phi f=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\left(\frac{\partial f}{\partial q_{\imath}}+i\frac{\partial f}{\partial p_{\imath}}\right).
 $$
 
 Then
 
 $$
 \mathrm{Sc}\!\left((\tilde\nabla_\Phi f)^{*}\,\tilde\nabla_\Phi g\right)
-=\sum_\mu\left(\frac{\partial f}{\partial q_\mu}\frac{\partial g}{\partial q_\mu}
-+\frac{\partial f}{\partial p_\mu}\frac{\partial g}{\partial p_\mu}\right)
-+i\sum_\mu\left(\frac{\partial f}{\partial q_\mu}\frac{\partial g}{\partial p_\mu}
--\frac{\partial f}{\partial p_\mu}\frac{\partial g}{\partial q_\mu}\right),
+=\sum_{\imath}\left(\frac{\partial f}{\partial q_{\imath}}\frac{\partial g}{\partial q_{\imath}}
++\frac{\partial f}{\partial p_{\imath}}\frac{\partial g}{\partial p_{\imath}}\right)
++i\sum_{\imath}\left(\frac{\partial f}{\partial q_{\imath}}\frac{\partial g}{\partial p_{\imath}}
+-\frac{\partial f}{\partial p_{\imath}}\frac{\partial g}{\partial q_{\imath}}\right),
 $$
 
 whose imaginary part is the Poisson bracket:
@@ -214,7 +214,7 @@ $$
 \boxed{\;\{f,g\}=\mathrm{Im}\,\mathrm{Sc}\!\left((\tilde\nabla_\Phi f)^{*}\,\tilde\nabla_\Phi g\right)\;}.
 $$
 
-The conjugate here must be the **Hermitian** one, $(\tilde\nabla_\Phi f)^{*}$, and not the quaternion conjugate alone: the gradient is a complex biquaternion, and conjugating only its quaternion structure would flip the relative sign between the two terms of the real part and symmetrise the imaginary part. With the Hermitian conjugate the real part is the positive-definite metric pairing of the two gradients and the imaginary part is the antisymmetric symplectic pairing. The bracket is thus the imaginary part of the same Hermitian pairing, evaluated on gradients, and the identity displays the Kähler structure in the bracket itself: the metric and the bracket are two projections of one complex pairing. This is verified directly on the canonical functions, where $\tilde\nabla_\Phi q_\mu=e_\mu$ and $\tilde\nabla_\Phi p_\mu=ie_\mu$, giving $\{q_\mu,p_\nu\}=\delta_{\mu\nu}$.
+The conjugate here must be the **Hermitian** one, $(\tilde\nabla_\Phi f)^{*}$, and not the quaternion conjugate alone: the gradient is a complex biquaternion, and conjugating only its quaternion structure would flip the relative sign between the two terms of the real part and symmetrise the imaginary part. With the Hermitian conjugate the real part is the positive-definite metric pairing of the two gradients and the imaginary part is the antisymmetric symplectic pairing. The bracket is thus the imaginary part of the same Hermitian pairing, evaluated on gradients, and the identity displays the Kähler structure in the bracket itself: the metric and the bracket are two projections of one complex pairing. This is verified directly on the canonical functions, where $\tilde\nabla_\Phi q_{\imath}=e_{\imath}$ and $\tilde\nabla_\Phi p_{\imath}=ie_{\imath}$, giving $\{q_{\imath},p_{\jmath}\}=\delta_{\imath\jmath}$.
 
 ## The Biquaternion Norm and Its Cone
 
@@ -223,10 +223,10 @@ The conjugate here must be the **Hermitian** one, $(\tilde\nabla_\Phi f)^{*}$, a
 The Hermitian form of the previous section is one of two canonical quadratic structures. The other is the **biquaternion norm**
 
 $$
-\langle\vec Z\rangle_{\natural} = \langle\vec Z,\vec Z\rangle_{\natural}=\vec Z\vec Z^{\natural}=\sum_{\mu\in\{t,x,y,z\}}Z_\mu^2 ,
+\langle\vec Z\rangle_{\natural} = \langle\vec Z,\vec Z\rangle_{\natural}=\vec Z\vec Z^{\natural}=\sum_{\imath\in\{t,x,y,z\}}Z_{\imath}^2 ,
 $$
 
-where $Z_\mu$ are the $\mathbb{C}$-coefficients in the basis $e_\mu$. For the phase-space biquaternion with pure-vector components this is
+where $Z_{\imath}$ are the $\mathbb{C}$-coefficients in the basis $e_{\imath}$. For the phase-space biquaternion with pure-vector components this is
 
 $$
 \langle\vec Z\rangle_{\natural}=Z_1^2+Z_2^2+Z_3^2 .
@@ -315,7 +315,7 @@ The biquaternion norm enters in two ways. First, the orbits are the level sets o
 
 ## Darboux Coordinates and the Canonical Frame
 
-In the biquaternion phase space the coordinates $\vec q,\vec p$ are already Darboux coordinates: the form $\omega=\sum_\mu dq_\mu\wedge dp_\mu$ is constant, and the Poisson brackets are the canonical ones, $\{q_\mu,p_\nu\}=\delta_{\mu\nu}$. A rotor conjugation $\vec Z\mapsto\tilde u\vec Z\tilde u^{*}$ with $\langle\tilde u\rangle_{\natural}=e_t$, restricted to the phase space, is a rotation of the phase-space coordinates; it preserves $\langle\cdot,\cdot\rangle_{\natural}$ and $g$ and, when it acts as an algebra automorphism commuting with $i$, it preserves $\omega$ as well. The cubic terms that would obstruct Darboux coordinates in a curved symplectic manifold are absent here because the phase space is linear; the only non-triviality is the noncommutativity of the quaternion product, which affects the interpretation of the coordinates but not the constancy of the form.
+In the biquaternion phase space the coordinates $\vec q,\vec p$ are already Darboux coordinates: the form $\omega=\sum_{\imath} dq_{\imath}\wedge dp_{\imath}$ is constant, and the Poisson brackets are the canonical ones, $\{q_{\imath},p_{\jmath}\}=\delta_{\imath\jmath}$. A rotor conjugation $\vec Z\mapsto\tilde u\vec Z\tilde u^{*}$ with $\langle\tilde u\rangle_{\natural}=e_t$, restricted to the phase space, is a rotation of the phase-space coordinates; it preserves $\langle\cdot,\cdot\rangle_{\natural}$ and $g$ and, when it acts as an algebra automorphism commuting with $i$, it preserves $\omega$ as well. The cubic terms that would obstruct Darboux coordinates in a curved symplectic manifold are absent here because the phase space is linear; the only non-triviality is the noncommutativity of the quaternion product, which affects the interpretation of the coordinates but not the constancy of the form.
 
 A point worth stating precisely: the phase-space biquaternion $\vec Z=\vec q+i\vec p$ is a complexification of the phase-space point, and the symplectic form is the imaginary part of the Hermitian pairing on that complexification. The complexification is not an extra structure added to mechanics; it is the algebra's own complex structure, the same $i$ that appears in the sector decomposition $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ and that exchanges the sectors.
 
@@ -337,11 +337,11 @@ The material of this article divides as follows.
 
 The symplectic form and the biquaternion-norm cone are the two canonical quadratic structures of the biquaternion algebra, and this article relates them.
 
-- For the phase-space biquaternion $\vec Z=\vec q+i\vec p$, the Hermitian scalar pairing satisfies $\mathrm{Sc}(\vec Z^{*}\vec W)=g(\vec Z,\vec W)+i\omega(\vec Z,\vec W)$, with $g$ the Euclidean metric of phase space and $\omega$ the symplectic form $\omega=\sum_\mu dq_\mu\wedge dp_\mu$.
+- For the phase-space biquaternion $\vec Z=\vec q+i\vec p$, the Hermitian scalar pairing satisfies $\mathrm{Sc}(\vec Z^{*}\vec W)=g(\vec Z,\vec W)+i\omega(\vec Z,\vec W)$, with $g$ the Euclidean metric of phase space and $\omega$ the symplectic form $\omega=\sum_{\imath} dq_{\imath}\wedge dp_{\imath}$.
 - The algebra's complex structure $i$ is the Kähler $J$: $g(i\vec Z,\vec W)=\omega(\vec Z,\vec W)$ and $g(i\vec Z,i\vec W)=g(\vec Z,\vec W)$.
 - The symplectic potential is $\varpi=\frac12\mathrm{Im}\,\mathrm{Sc}(\vec Z^{*} d\vec Z)$, with $d\varpi=\omega$; equivalently $\omega=\frac{i}{2}\mathrm{Sc}(d\vec Z\wedge d\vec Z^{*})$, while $d\vec Z\wedge d\vec Z=0$.
-- The Poisson bracket is the imaginary part of the same pairing: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\tilde\nabla_\Phi f)^{*}\tilde\nabla_\Phi g)$ with $\tilde\nabla_\Phi f=\sum_\mu e_\mu(\partial/\partial q_\mu\,f+i\partial/\partial p_\mu\,f)$.
-- The holomorphic companion of the Hermitian pairing is the biquaternion norm $\langle\vec Z\rangle_{\natural} = \langle\vec Z,\vec Z\rangle_{\natural}=\sum_\mu Z_\mu^2$, whose zero set is the biquaternion-norm cone. On the material sector the cone is the light cone $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$ and the characteristic cone $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ of the d'Alembertian; in the algebra it is the zero-divisor cone; on the coadjoint orbit it is the degenerate level $S=0$ of a family whose non-degenerate members carry the Souriau form.
+- The Poisson bracket is the imaginary part of the same pairing: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\tilde\nabla_\Phi f)^{*}\tilde\nabla_\Phi g)$ with $\tilde\nabla_\Phi f=\sum_{\imath} e_{\imath}(\partial/\partial q_{\imath}\,f+i\partial/\partial p_{\imath}\,f)$.
+- The holomorphic companion of the Hermitian pairing is the biquaternion norm $\langle\vec Z\rangle_{\natural} = \langle\vec Z,\vec Z\rangle_{\natural}=\sum_{\imath} Z_{\imath}^2$, whose zero set is the biquaternion-norm cone. On the material sector the cone is the light cone $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$ and the characteristic cone $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ of the d'Alembertian; in the algebra it is the zero-divisor cone; on the coadjoint orbit it is the degenerate level $S=0$ of a family whose non-degenerate members carry the Souriau form.
 
 The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairing, the metric is its symmetric (real) part, the algebra's complex structure is the compatible $J$, and the biquaternion-norm cone is the isotropic cone of the holomorphic form of the same complex structure. Nothing in this article is quantum: the Hermitian pairing is read as a classical phase-space form, and the cone is the classical light and wave cone.
 
@@ -353,17 +353,17 @@ The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairi
 | $\vec Z^{*}=-\vec q+i\vec p$ | Hermitian conjugate for pure real $\vec q,\vec p$ |
 | $\mathrm{Sc}(\vec Z^{*}\vec W)$ | Hermitian scalar pairing |
 | $g(\vec Z,\vec W)=\vec q\cdot\vec r+\vec p\cdot\vec s$ | Euclidean metric of phase space |
-| $\omega(\vec Z,\vec W)=\vec q\cdot\vec s-\vec p\cdot\vec r$ | Symplectic form, $\omega=\sum_\mu dq_\mu\wedge dp_\mu$ |
+| $\omega(\vec Z,\vec W)=\vec q\cdot\vec s-\vec p\cdot\vec r$ | Symplectic form, $\omega=\sum_{\imath} dq_{\imath}\wedge dp_{\imath}$ |
 | $i$ | Central scalar imaginary; the Kähler $J$ |
 | $\varpi=\frac12\mathrm{Im}\,\mathrm{Sc}(\vec Z^{*} d\vec Z)$ | Symplectic potential, $d\varpi=\omega$ |
-| $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm (holomorphic) |
+| $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\imath} Q_{\imath}^2$ | Biquaternion norm (holomorphic) |
 | $\langle\vec Z,\vec W\rangle=\mathrm{Sc}(\vec Z\vec W^{\natural}) = \langle\vec Z,\vec W\rangle_{\natural}$ | Symmetric general plain bilinear form of $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $\langle\tilde R_\Phi\rangle_{\natural}=0$, $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Light cone of the material sector |
 | $\langle\tilde P_{\Phi}\rangle_{\natural}=0$, $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k_\Phi$ | Characteristic cone of $\Box_\Phi$ |
 | $\langle\vec S\rangle_{\natural}=S^2$ | Coadjoint-orbit level set; $S=0$ is the cone |
 | $\omega_{\mathrm S}=\frac{1}{S}\Omega_S,\ \ \Omega_S=\frac{1}{2S}\varepsilon_{ij\eta}S_i dS_j\wedge dS_\eta$ | Souriau–Kirillov form on the orbit (area form divided by $S$) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 
 ## Further Reading
 

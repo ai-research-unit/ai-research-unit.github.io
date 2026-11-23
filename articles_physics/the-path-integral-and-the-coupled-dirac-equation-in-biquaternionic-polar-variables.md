@@ -27,7 +27,7 @@ It does not build a second integral, does not construct a measure, and does not 
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^2=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated: $\rho_{\mathrm{num}}=\varrho^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$, and $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$. The word exists exactly on the $N$-regular elements.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_{\imath}^2=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated: $\rho_{\mathrm{num}}=\varrho^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$, and $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$. The word exists exactly on the $N$-regular elements.
 
 The coupled pair and its covariant wavevector.
 
@@ -58,7 +58,7 @@ The gauge term is a real number. For a history $x(\tau)$ the added term is the i
 $$
 w\,e_t=e^{i\theta_{\mathrm{act}}}e_t,
 \qquad
-\theta_{\mathrm{act}}=\frac{2\pi}{h}\Bigl(S_0[x]+S_{\mathrm{spin}}[\tilde\Xi_\mu]+S_{\mathrm{gco}}[x]\Bigr),
+\theta_{\mathrm{act}}=\frac{2\pi}{h}\Bigl(S_0[x]+S_{\mathrm{spin}}[\tilde\Xi_{\imath}]+S_{\mathrm{gco}}[x]\Bigr),
 $$
 
 and the reduction into the word's range applies exactly as in the free article: $\theta_{\mathrm{pha}}$ is $\theta_{\mathrm{act}}$ reduced into $(-\pi/2,\pi/2]$, and the residue is a sign in the rotor.

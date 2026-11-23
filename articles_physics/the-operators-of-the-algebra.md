@@ -77,7 +77,7 @@ The regimes. On the four sectors the operators have rank $4$ with a doubled spec
 
 The operator space is the algebra's endomorphism algebra. A complex-linear map $F:\mathbb{B}\to\mathbb{B}$ is determined by its values on the four units, so it is a $4\times4$ complex matrix, and the space of such maps has complex dimension sixteen. Written as an algebra under composition it is the full matrix algebra $M_4(\mathbb{C})$.
 
-The sixteen products are a basis. For a basis $e_\mu$ of the algebra, the sixteen operators $T_{e_\mu,e_\nu}$ are linearly independent, hence a basis of the sixteen-dimensional operator space. The proof is cleanest in a basis of matrix units $E_{jk}$, where
+The sixteen products are a basis. For a basis $e_{\imath}$ of the algebra, the sixteen operators $T_{e_{\imath},e_{\jmath}}$ are linearly independent, hence a basis of the sixteen-dimensional operator space. The proof is cleanest in a basis of matrix units $E_{jk}$, where
 
 $$
 T_{E_{jk},E_{l\,n_{\mathrm{idx}}}}(E_{rs})=\delta_{kr}\delta_{ls}E_{j\,n_{\mathrm{idx}}},
@@ -158,7 +158,7 @@ The set is closed under composition and is closed under no other operation. The 
 
 Not a subspace. The sum of two two-sided operators is two-sided only in degenerate cases. The sum $T_{\tilde Q,\tilde P}+T_{\tilde R,\tilde S}$ collapses to a single product exactly when the coefficient matrix of the sum has rank one, and for a generic sum it has rank two. So the two-sided set is a cone: closed under multiplication by a scalar and under composition, and not under addition.
 
-**The generation theorem.** The sixteen products $T_{e_\mu,e_\nu}$ are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. Hence every endomorphism of the algebra is a finite sum of two-sided operators, and the two-sided set generates the operator space as a linear space. The two statements belong together and they are not in tension: the cone is not a subspace, and it spans the space.
+**The generation theorem.** The sixteen products $T_{e_{\imath},e_{\jmath}}$ are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. Hence every endomorphism of the algebra is a finite sum of two-sided operators, and the two-sided set generates the operator space as a linear space. The two statements belong together and they are not in tension: the cone is not a subspace, and it spans the space.
 
 The rank. A two-sided operator multiplies the image of one factor by the other, so its rank is bounded by the two ranks. The exact formula in the two-dimensional model is a product,
 
@@ -193,10 +193,10 @@ so $T_{\tilde Q,\tilde P}^{\approx}=T_{\tilde P,\tilde Q}$. The one-sided famili
 
 Why a number is needed. The rank of an operator measures the size of its image. It does not measure how many products are needed. Two operators of the same rank can need one term and four.
 
-The coefficient matrix. Relative to the basis $T_{e_\mu,e_\nu}$, an endomorphism $F$ has a coefficient matrix $c(F)$, a $4\times4$ matrix of complex numbers:
+The coefficient matrix. Relative to the basis $T_{e_{\imath},e_{\jmath}}$, an endomorphism $F$ has a coefficient matrix $c(F)$, a $4\times4$ matrix of complex numbers:
 
 $$
-F=\sum_{\mu,\nu}c(F)_{\mu\nu}\,T_{e_\mu,e_\nu}.
+F=\sum_{\imath,\jmath}c(F)_{\imath\jmath}\,T_{e_{\imath},e_{\jmath}}.
 $$
 
 The length theorem. The least number of two-sided operators whose sum is $F$ is the rank of $c(F)$:
@@ -594,7 +594,7 @@ One operator, three tasks. A change of frame when the second slot holds the inve
 | the quaternion conjugation | $\natural$ | the reversal, $\natural L_{\tilde Q}\natural=R_{\natural\tilde Q}$ |
 | the Hermitian conjugation | $*$ | $\tilde X^{*}=\overline{\tilde X^{\natural}}$ |
 | the four adjoints | $\approx,\natural,*,\natural*$ | plain bilinear, quaternionic, Hermitian, signed Hermitian |
-| the coefficient matrix | $c(F)$ | the coordinates of $F$ in the basis $T_{e_\mu,e_\nu}$ |
+| the coefficient matrix | $c(F)$ | the coordinates of $F$ in the basis $T_{e_{\imath},e_{\jmath}}$ |
 | the length | $\ell(F)$ | $\operatorname{rank}c(F)\in\{0,1,2,3,4\}$ |
 | the algebraic norm | $N=\langle\tilde Q\rangle_{\natural}$ | $Q_t^{2}+B^{2}$ |
 | the vector form | $B^{2}$ | $Q_x^{2}+Q_y^{2}+Q_z^{2}$ |

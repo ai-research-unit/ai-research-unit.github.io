@@ -275,15 +275,15 @@ and the six weak generators sit inside the fifteen. So $15+6=21$ is a double cou
 
 | name | where it appears | what it names |
 |---|---|---|
-| $B'_\mu$ | the spectrum, this article | the field |
-| $C_\mu$ | proposed here as the unambiguous symbol | the field |
-| $A_{15,\mu}$ | the covariant derivative, the fifteenth $\mathrm{SU}(4)$ field | the field |
-| $X^0_\mu$ | the $X$-boson notation of the literature, with charge zero | the field |
+| $B'_{\imath}$ | the spectrum, this article | the field |
+| $C_{\imath}$ | proposed here as the unambiguous symbol | the field |
+| $A_{15,\imath}$ | the covariant derivative, the fifteenth $\mathrm{SU}(4)$ field | the field |
+| $X^0_{\imath}$ | the $X$-boson notation of the literature, with charge zero | the field |
 | $iD$, or $D$ | the algebra articles, $\operatorname{diag}(-3,1,1,1)$ | the generator |
 | "$B-L$ boson" | prose everywhere | the charge it carries |
 | $B$ | the spectrum table | the field, and this is the collision |
 
-**The collision is with hypercharge.** In the electroweak literature $B_\mu$ is the hypercharge field, a different object, mixed into the photon by a different coefficient. The frame's $B$ is the $(t,t)$ cell. They are not the same field and they do not even have the same charge: the frame's is $B-L$, the literature's is $Y$. **Write $B'$ or $C$ for the frame's field, and keep $B$ for hypercharge**; no number in any article changes.
+**The collision is with hypercharge.** In the electroweak literature $B_{\imath}$ is the hypercharge field, a different object, mixed into the photon by a different coefficient. The frame's $B$ is the $(t,t)$ cell. They are not the same field and they do not even have the same charge: the frame's is $B-L$, the literature's is $Y$. **Write $B'$ or $C$ for the frame's field, and keep $B$ for hypercharge**; no number in any article changes.
 
 ## The Sextet, Which Is the Six Cells of the Mixed Band
 
@@ -600,7 +600,7 @@ $1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So t
 |---|---|
 | $t,r,g,b$ | the four labels of the quartet: the lepton line and three colours |
 | $(i,j)$ | a cell of the $4\times4$ grid, the direction moving $j$ into $i$ |
-| $B'_\mu$, also $C_\mu$ | the $(t,t)$ cell; $A^{15}_\mu$ in the covariant derivative, $iD$ as a generator |
+| $B'_{\imath}$, also $C_{\imath}$ | the $(t,t)$ cell; $A^{15}_{\imath}$ in the covariant derivative, $iD$ as a generator |
 | $X^{\alpha}$, $\bar X^{\alpha}$ | the $t$ column and the $t$ row, $\alpha=r,g,b$, $Q=\pm\tfrac23$ |
 | $g_{1}\dots g_{8}$ | the $3\times3$ colour block |
 | $T^{c}_{3}$, $T^{c}_{8}$ | the colour block's Cartan directions |
