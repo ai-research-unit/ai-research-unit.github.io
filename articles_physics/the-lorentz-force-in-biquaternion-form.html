@@ -74,23 +74,23 @@
 <p>A charged particle moving in an electromagnetic field is acted on by the <strong>Lorentz force</strong>. In the four-dimensional language of relativity this force is the contraction of the field-strength tensor with the four-velocity, $F_{\mathrm{lor},\imath} = ϙ\sum_{\jmath} F_{\imath\jmath}v_{\jmath}$; in three-vector language it reads $ϙ(\vec E + \vec v\times\vec B)$ for the spatial part, together with the power $ϙ\,\vec E\cdot\vec v$ in the time part. The companion article <em>Relativistic Mechanics in Biquaternionic Form</em> recorded the biquaternion component form of this four-force and identified it as an element of the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. That article also recorded, explicitly and twice, an open problem: the expression of the same four-force as a <strong>biquaternion product</strong> of the field-strength biquaternion $\tilde{F}$ and the four-velocity $\tilde{V}_{\Phi}$ is <em>not</em> simply the real part of $\tilde{F}\circ\tilde{V}_{\Phi}$, the correct expression "involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$", and it "remains to be worked out cleanly".</p>
 <p>This article carries out that work. The result is a two-term product formula, bilinear in the field and the four-velocity, that reproduces the component form exactly. In its most compact shape the formula is a single projection:</p>
 <p>$$
-\boxed{\;\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\,\tilde{F}\right),\qquad
+\boxed{\;\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{c}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\,\tilde{F}\right),\qquad
 P_{\mathbb{B}_{\Phi}}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right)\;}.
 $$</p>
 <p>The projection $P_{\mathbb{B}_{\Phi}}$ is the anti-Hermitian part, and it lands in the material sector $\mathbb{B}_{\Phi}$ automatically. Written out, the formula is</p>
 <p>$$
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}_{\Phi}\,\tilde{F} + \tilde{F}^{*}\,\tilde{V}_{\Phi}\right),
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{2c}\left(\tilde{V}_{\Phi}\,\tilde{F} + \tilde{F}^{*}\,\tilde{V}_{\Phi}\right),
 $$</p>
 <p>or, since $\tilde{F}^{*} = -\bar{\tilde F}$,</p>
 <p>$$
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}_{\Phi}\,\tilde{F} - \bar{\tilde F}\,\tilde{V}_{\Phi}\right).
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{2c}\left(\tilde{V}_{\Phi}\,\tilde{F} - \bar{\tilde F}\,\tilde{V}_{\Phi}\right).
 $$</p>
 <p>Here $\tilde{F}^{*}$ is the Hermitian conjugate of the field strength and $\bar{\tilde F}$ its complex conjugate. The appearance of the conjugate field is not a technicality: $\tilde{F}$ and $\tilde{F}^{*}$ are (up to constant factors) the self-dual and anti-self-dual halves of the field tensor, and the formula pairs the four-velocity with both halves. This is the sense in which the result "involves the representation theory of $\mathbb{B}$" — but, as the derivation below shows, the formula itself lives entirely inside $\mathbb{B}$ and needs no Clifford algebra beyond the identification $\mathbb{B}\cong\mathbb{C}\ell_{1,3}^{+}$.</p>
 <p><strong>A note on notation.</strong> The companion article <em>The Field-Strength Biquaternion and Its Invariants</em> fixes the symbol $\tilde{F}$ for the field-strength biquaternion "once and for all". The companion article <em>Relativistic Mechanics in Biquaternionic Form</em> writes $\tilde{F}_{\text{EM}}$ for the field. To keep the collision out of the corpus, this article and the corpus use the letter $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ for the <strong>four-force biquaternion</strong> (the Minkowski force), reserving $\tilde{F}$ for the field strength. Thus</p>
 <p>$$
 \tilde{\mathcal F}_{\Phi,\mathrm{frc}} = \frac{d\tilde{P}_{\Phi}}{d\tau}, \qquad \tilde{P}_{\Phi} = m\tilde{V}_{\Phi},
 $$</p>
-<p>and the field strength keeps the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the field-strength article.</p>
+<p>and the field strength keeps the canonical form $\tilde{F} = i\vec E - c\vec B$ of the field-strength article.</p>
 <p>The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_{\imath}^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The quaternion conjugate of a biquaternion $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ is $\tilde{Q}^{\natural} = Q_te_t - \vec Q$, its complex conjugate is $\bar{\tilde{Q}} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{\tilde{Q}}^{\natural} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec v_b$ is a frame (boost) velocity, and $\vec B = \mu\vec H$ is the magnetic induction.</p>
 <h2 id="the-lorentz-four-force-in-component-form">The Lorentz Four-Force in Component Form</h2>
 <p>The component form is the established result, and it is the starting point of everything that follows. For a particle of charge $ϙ$ and velocity $\vec v$ in fields $\vec E$ and $\vec B$, the <strong>Lorentz four-force biquaternion</strong> is</p>
@@ -145,7 +145,7 @@ $$</p>
 <p>the biquaternion form of the Minkowski orthogonality $\sum_{\imath} F_{\mathrm{lor},\imath} P_{\imath} = 0$. The four-force changes the direction of the four-momentum but not its norm. This is examined further in the section on invariants.</p>
 <h2 id="the-product-problem">The Product Problem</h2>
 <p>The natural first guess is that the four-force is obtained by multiplying the field strength by the four-velocity and taking a real or imaginary part, in analogy with the way the field energy is obtained from $\tilde{F}\tilde{F}^{*}$. That guess fails, and it is worth seeing exactly why, because the failure dictates the shape of the correct formula.</p>
-<p>The field strength is a pure-vector biquaternion, $\tilde{F} = \vec F$ with $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, so its quaternion conjugate is $\tilde{F}^{\natural} = -\tilde{F}$. For a pure vector $\vec a$ and the four-velocity $\tilde{V}_{\Phi} = i\gamma c + \gamma\vec v$, the quaternion product rule $\vec a\vec b = -\vec a\cdot\vec b + \vec a\times\vec b$ gives</p>
+<p>The field strength is a pure-vector biquaternion, $\tilde{F} = \vec F$ with $\vec F = i\vec E - c\vec B$, so its quaternion conjugate is $\tilde{F}^{\natural} = -\tilde{F}$. For a pure vector $\vec a$ and the four-velocity $\tilde{V}_{\Phi} = i\gamma c + \gamma\vec v$, the quaternion product rule $\vec a\vec b = -\vec a\cdot\vec b + \vec a\times\vec b$ gives</p>
 <p>$$
 \tilde{F}\tilde{V}_{\Phi} = i\gamma c\,\tilde{F} - \gamma\left(\tilde{F}\cdot\vec v\right) + \gamma\left(\tilde{F}\times\vec v\right),
 \qquad
@@ -158,13 +158,13 @@ $$</p>
 \tilde{F}\tilde{V}_{\Phi} - \tilde{V}_{\Phi}\tilde{F} = 2\gamma\left(\tilde{F}\times\vec v\right).
 $$</p>
 <p>The product $\tilde{F}\tilde{V}_{\Phi}$ has scalar part $-\gamma\,\tilde{F}\cdot\vec v$, which is a <strong>complex</strong> number in general, and vector part $i\gamma c\,\tilde{F} + \gamma\,\tilde{F}\times\vec v$. Its real part therefore has a <strong>real</strong> scalar part, whereas the four-force has a <strong>purely imaginary</strong> scalar part. Consequently $\operatorname{Re}(\tilde{F}\tilde{V}_{\Phi})$ does not lie in $\mathbb{B}_{\Phi}$ at all: it cannot be the four-force, for the elementary reason that it is the wrong kind of biquaternion. This is the precise content of the statement in the relativistic-mechanics article that the four-force is "not simply the real part of $\tilde{F}\circ\tilde{V}_{\Phi}$".</p>
-<p>There is a second obstruction. The field strength mixes $\vec E$ and $\vec B$ with the fixed weights $\sqrt{\epsilon}$, $\sqrt{\mu}$ and with opposite reality properties — the electric part imaginary, the magnetic part real — whereas the four-force requires $\vec E$ and the magnetic force $\vec v\times\vec B$ to enter with the <em>same</em> coefficient $\gamma ϙ$. A single product of $\tilde{F}$ with $\tilde{V}_{\Phi}$ keeps these weights locked together. Separating them requires the conjugate field $\tilde{F}^{*}$, in which the relative sign of the electric and magnetic parts is reversed:</p>
+<p>There is a second obstruction. The field strength mixes $\vec E$ and $\vec B$ with the fixed weights $i$ and $-c$ and with opposite reality properties — the electric part imaginary, the magnetic part real — whereas the four-force requires $\vec E$ and the magnetic force $\vec v\times\vec B$ to enter with the <em>same</em> coefficient $\gamma ϙ$. A single product of $\tilde{F}$ with $\tilde{V}_{\Phi}$ keeps these weights locked together. Separating them requires the conjugate field $\tilde{F}^{*}$, in which the relative sign of the electric and magnetic parts is reversed:</p>
 <p>$$
-\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
+\tilde{F} = i\vec E - c\vec B,
 \qquad
-\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H.
+\tilde{F}^{*} = i\vec E + c\vec B.
 $$</p>
-<p>The combination that extracts $\vec E$ is $\tilde{F} + \tilde{F}^{*} = 2i\sqrt{\epsilon}\,\vec E$; the combination that extracts $\vec B$ is $\tilde{F}^{*} - \tilde{F} = 2\sqrt{\mu}\,\vec H = 2\vec B/\sqrt{\mu}$. So the correct product formula must involve both $\tilde{F}$ and $\tilde{F}^{*}$. This is the technical reason the earlier article anticipated "the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$": the two objects $\tilde{F}$ and $\tilde{F}^{*}$ are the self-dual and anti-self-dual halves of the field tensor, and the Lorentz force pairs the four-velocity with both.</p>
+<p>The combination that extracts $\vec E$ is $\tilde{F} + \tilde{F}^{*} = 2i\vec E$; the combination that extracts $\vec B$ is $\tilde{F}^{*} - \tilde{F} = 2c\vec B$. So the correct product formula must involve both $\tilde{F}$ and $\tilde{F}^{*}$. This is the technical reason the earlier article anticipated "the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$": the two objects $\tilde{F}$ and $\tilde{F}^{*}$ are the self-dual and anti-self-dual halves of the field tensor, and the Lorentz force pairs the four-velocity with both.</p>
 <p><strong>A different route.</strong> The obstruction above is real but it is not the only way to the force. If one lets the boost rotor of the particle depend on proper time — the <strong>eigenspinor</strong> $\tilde U(\tau)$ of <em>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</em> — then the force arises from a <strong>linear</strong> source rather than a product: $d\tilde U/d\tau = \tfrac12\vec\Omega_{\mathrm{LT}}\tilde U$ with $\vec\Omega_{\mathrm{LT}} = -(ϙ/m)\tilde{F}^{*}$, and the equation of motion is $d\tilde{P}_{\Phi}/d\tau = P_{\mathbb{B}_{\Phi}}(\vec\Omega_{\mathrm{LT}}\tilde{P}_{\Phi})$. The force is still not a single product of $\tilde{F}$ with $\tilde{V}_{\Phi}$, so the finding of this section stands; what the eigenspinor shows is that the product formula of the next section is a <em>derived</em> corollary of a linear evolution, not the primitive statement of the law. The two routes agree on every configuration, and the agreement was checked in the eigenspinor article.</p>
 <h2 id="the-biquaternion-product-formula">The Biquaternion Product Formula</h2>
 <p>We now derive the formula. The derivation is elementary: invert the product identities above to obtain the electric and magnetic fields in terms of the symmetrized and antisymmetrized products of $\tilde{F}$ and $\tilde{V}_{\Phi}$, substitute into the component form, and collect terms.</p>
@@ -176,15 +176,15 @@ $$</p>
 $$</p>
 <p>(Here $\tilde{F}\cdot\vec v$ is the scalar biquaternion $\sum_{\imath\in\{x,y,z\}} F_{\imath} v_{\imath}$ and $\tilde{F}\times\vec v$ the pure-vector biquaternion with components $\epsilon_{j\imath l}F_j v_l$.) The electric and magnetic fields are recovered from</p>
 <p>$$
-\vec E = \frac{\tilde{F} + \tilde{F}^{*}}{2i\sqrt{\epsilon}},
+\vec E = \frac{\tilde{F} + \tilde{F}^{*}}{2i},
 \qquad
-\vec B = \mu\vec H = \frac{\sqrt{\mu}}{2}\left(\tilde{F}^{*} - \tilde{F}\right).
+\vec B = \frac{1}{2c}\left(\tilde{F}^{*} - \tilde{F}\right).
 $$</p>
 <p><strong>Step 2: the scalar part.</strong> The scalar part of the four-force is</p>
 <p>$$
 \operatorname{Sc}(\tilde{\mathcal F}_{\Phi,\mathrm{frc}}) = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v
-= \frac{\gamma ϙ}{2c\sqrt{\epsilon}}\left(\tilde{F} + \tilde{F}^{*}\right)\cdot\vec v
-= -\,\frac{ϙ}{4c\sqrt{\epsilon}}\,
+= \frac{\gamma ϙ}{2c}\left(\tilde{F} + \tilde{F}^{*}\right)\cdot\vec v
+= -\,\frac{ϙ}{4c}\,
 \operatorname{Sc}\!\left(S + S^{*}\right),
 $$</p>
 <p>where</p>
@@ -199,45 +199,34 @@ Here $S^{*}$ denotes the expression obtained from $S$ by the replacement $\tilde
 $$</p>
 <p>The first term is</p>
 <p>$$
-\gamma ϙ\,\vec E = \frac{\gamma ϙ}{2i\sqrt{\epsilon}}\left(\tilde{F} + \tilde{F}^{*}\right)
-= -\,\frac{ϙ}{4c\sqrt{\epsilon}}\operatorname{Vect}\!\left(S + S^{*}\right),
+\gamma ϙ\,\vec E = \frac{\gamma ϙ}{2i}\left(\tilde{F} + \tilde{F}^{*}\right)
+= -\,\frac{ϙ}{4c}\operatorname{Vect}\!\left(S + S^{*}\right),
 $$</p>
 <p>using $\operatorname{Vect}(S + S^{*}) = 2i\gamma c\,(\tilde{F} + \tilde{F}^{*})$, and the second is</p>
 <p>$$
 \gamma ϙ\,\vec v\times\vec B
-= \frac{\gamma ϙ\sqrt{\mu}}{2}\,\vec v\times\left(\tilde{F}^{*} - \tilde{F}\right)
-= \frac{ϙ\sqrt{\mu}}{4}\left(A - A^\dagger\right),
+= \frac{\gamma ϙ}{2c}\,\vec v\times\left(\tilde{F}^{*} - \tilde{F}\right)
+= \frac{ϙ}{4c}\left(A - A^\dagger\right),
 $$</p>
 <p>where</p>
 <p>$$
 A = \tilde{F}\tilde{V}_{\Phi} - \tilde{V}_{\Phi}\tilde{F}, \qquad
 A^\dagger = \tilde{F}^{*}\tilde{V}_{\Phi} - \tilde{V}_{\Phi}\tilde{F}^{*} .
 $$</p>
-<p><strong>Step 4: collect.</strong> Adding the scalar and vector parts gives the <strong>master identity</strong></p>
+<p><strong>Step 4: collect.</strong> Adding the scalar and vector parts gives</p>
 <p>$$
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{4c\sqrt{\epsilon}}\left(S + S^{*}\right)
-+ \frac{ϙ\sqrt{\mu}}{4}\left(A - A^\dagger\right),
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}}
+= -\,\frac{ϙ}{4c}\left(S + S^{*}\right) + \frac{ϙ}{4c}\left(A - A^\dagger\right),
 $$</p>
-<p>which, expanded in the four general products, is</p>
+<p>and since $S + S^{*} - \left(A - A^\dagger\right) = 2\left(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi}\right)$ this is the one-bracket formula</p>
 <p>$$
 \boxed{\;
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = \frac{ϙ}{4}\!\left(\sqrt{\mu} - \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{F}\tilde{V}_{\Phi} + \tilde{V}_{\Phi}\tilde{F}^{*}\right)
-- \frac{ϙ}{4}\!\left(\sqrt{\mu} + \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi}\right)\;}.
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{2c}\left(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi}\right)\;}.
 $$</p>
-<p>This is the general form, valid for the symbols $c, \epsilon, \mu$ taken independently.</p>
-<p><strong>Step 5: use the medium relation.</strong> In the biquaternion framework the speed of light in the medium is not independent of the electromagnetic properties: $c = 1/\sqrt{\epsilon\mu}$. Equivalently,</p>
+<p>No relation between $c$, $\epsilon$ and $\mu$ enters here: the two half-coefficients are the same constant $1/c$, so the bracket that mixes the two orderings cancels identically. With the earlier normalisation, in which the two halves of the field carry the roots of the permittivity and of the permeability as weights, the two coefficients differ until the medium relation is imposed and the collected form has to carry both; the normalisation $i\vec E - c\vec B$ removes that intermediate case.</p>
+<p>Since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may also be written</p>
 <p>$$
-\frac{1}{c\sqrt{\epsilon}} = \frac{\sqrt{\epsilon\mu}}{\sqrt{\epsilon}} = \sqrt{\mu}.
-$$</p>
-<p>With this relation the coefficient of the first bracket vanishes identically, and the master identity collapses to a one-bracket formula:</p>
-<p>$$
-\boxed{\;
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi}\right)
-= -\,\frac{ϙ}{2c\sqrt{\epsilon}}\left(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi}\right)\;}.
-$$</p>
-<p>The two coefficients are equal, $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$, so either may be used. Since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may also be written</p>
-<p>$$
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}_{\Phi}\tilde{F} - \bar{\tilde F}\tilde{V}_{\Phi}\right).
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{2c}\left(\tilde{V}_{\Phi}\tilde{F} - \bar{\tilde F}\tilde{V}_{\Phi}\right).
 $$</p>
 <p><strong>Step 6: the projection form.</strong> Because $\tilde{V}_{\Phi}\in\mathbb{B}_{\Phi}$ and $\tilde{V}_{\Phi}^{*} = -\tilde{V}_{\Phi}$, the Hermitian conjugate of the product is</p>
 <p>$$
@@ -251,17 +240,17 @@ $$</p>
 $$</p>
 <p>and the formula becomes the single statement</p>
 <p>$$
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right),
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{c}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right),
 \qquad
 P_{\mathbb{B}_{\Phi}}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right).
 $$</p>
-<p>This is the cleanest form of the result. It says that the Lorentz four-force is, up to the constant $ϙ\sqrt{\mu}$, the <strong>projection of the product $\tilde{V}_{\Phi}\tilde{F}$ onto the material sector</strong> $\mathbb{B}_{\Phi}$. No real part is taken, and no Clifford algebra outside $\mathbb{B}$ is needed.</p>
+<p>This is the cleanest form of the result. It says that the Lorentz four-force is, up to the constant $ϙ/c$, the <strong>projection of the product $\tilde{V}_{\Phi}\tilde{F}$ onto the material sector</strong> $\mathbb{B}_{\Phi}$. No real part is taken, and no Clifford algebra outside $\mathbb{B}$ is needed.</p>
 <p><strong>Reading by sector.</strong> The projection form has a transparent <strong>physical interpretation</strong>. Split the field strength into its Hermitian and anti-Hermitian parts,</p>
 <p>$$
-\tilde{F}^{(+)} = \tfrac{1}{2}\left(\tilde{F} + \tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E
+\tilde{F}^{(+)} = \tfrac{1}{2}\left(\tilde{F} + \tilde{F}^{*}\right) = i\vec E
 \;\in\;\mathbb{B}_{\Psi},
 \qquad
-\tilde{F}^{(-)} = \tfrac{1}{2}\left(\tilde{F} - \tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H
+\tilde{F}^{(-)} = \tfrac{1}{2}\left(\tilde{F} - \tilde{F}^{*}\right) = -c\vec B
 \;\in\;\mathbb{B}_{\Phi},
 $$</p>
 <p>the electric part in the informational (Hermitian) sector and the magnetic part in the material (anti-Hermitian) sector. Then</p>
@@ -271,28 +260,27 @@ $$</p>
 $$</p>
 <p>where $\{,\}$ is the anticommutator and $[,]$ the commutator, so that</p>
 <p>$$
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{2c\sqrt{\epsilon}}
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{2c}
 \left(\left\{\tilde{V}_{\Phi}, \tilde{F}^{(+)}\right\} + \left[\tilde{V}_{\Phi}, \tilde{F}^{(-)}\right]\right).
 $$</p>
 <p>The electric field couples to the four-velocity through the <strong>anticommutator</strong>, the magnetic field through the <strong>commutator</strong>. This asymmetry is the algebraic origin of the different roles the two fields play in the force: the electric field does work and changes the energy, the magnetic field does not.</p>
 <p><strong>Checks.</strong> The formula is verified by direct substitution. Two special cases are instructive.</p>
 <p><em>Particle at rest.</em> With $\vec v = 0$ we have $\gamma = 1$ and $\tilde{V}_{\Phi} = ic$. Then</p>
 <p>$$
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(ic\,\tilde{F} + \tilde{F}^{*} ic\right)
-= -\,\frac{iϙ\sqrt{\mu}c}{2}\left(\tilde{F} + \tilde{F}^{*}\right)
-= -\,\frac{iϙ\sqrt{\mu}c}{2}\left(2i\sqrt{\epsilon}\,\vec E\right)
-= ϙ\sqrt{\mu}\,c\sqrt{\epsilon}\,\vec E = ϙ\,\vec E,
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{2c}\left(ic\,\tilde{F} + \tilde{F}^{*} ic\right)
+= -\,\frac{iϙ}{2}\left(\tilde{F} + \tilde{F}^{*}\right)
+= -\,\frac{iϙ}{2}\left(2i\vec E\right)
+= ϙ\,\vec E,
 $$</p>
-<p>since $c\sqrt{\epsilon\mu} = 1$. The scalar part vanishes, as it must for a particle at rest.</p>
-<p><em>Pure magnetic field.</em> With $\vec E = 0$ we have $\tilde{F}^{*} = -\tilde{F} = \sqrt{\mu}\,\vec H$, and</p>
+<p>The scalar part vanishes, as it must for a particle at rest.</p>
+<p><em>Pure magnetic field.</em> With $\vec E = 0$ we have $\tilde{F}^{*} = -\tilde{F} = c\vec B$, and</p>
 <p>$$
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(-\sqrt{\mu}\,\tilde{V}_{\Phi}\vec H + \sqrt{\mu}\,\vec H\tilde{V}_{\Phi}\right)
-= \frac{ϙ\mu}{2}\left(\tilde{V}_{\Phi}\vec H - \vec H\tilde{V}_{\Phi}\right)
-= ϙ\mu\,\gamma\left(\vec v\times\vec H\right)
-= \gamma ϙ\left(\vec v\times\vec B\right),
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{2c}\left(-c\,\tilde{V}_{\Phi}\vec B + c\vec B\tilde{V}_{\Phi}\right)
+= \frac{ϙ}{2}\left(\tilde{V}_{\Phi}\vec B - \vec B\tilde{V}_{\Phi}\right)
+= ϙ\gamma\left(\vec v\times\vec B\right),
 $$</p>
 <p>which is the magnetic part of the component form, with vanishing scalar part: a pure magnetic field does no work.</p>
-<p><em>General case.</em> For arbitrary $\vec E$, $\vec B$, $\vec v$, the identity $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -ϙ\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}(\tilde{V}_{\Phi}\tilde{F})$ was checked numerically against the component form at random field configurations, with agreement to machine precision (maximum discrepancy of order $10^{-15}$ relative to terms of order unity). It is an algebraic identity, not an approximation.</p>
+<p><em>General case.</em> For arbitrary $\vec E$, $\vec B$, $\vec v$, the identity $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -ϙ\,P_{\mathbb{B}_{\Phi}}(\tilde{V}_{\Phi}\tilde{F})/c$ was checked numerically against the component form at random field configurations, with agreement to machine precision (maximum discrepancy of order $10^{-15}$ relative to terms of order unity). It is an algebraic identity, not an approximation.</p>
 <h2 id="the-force-the-four-velocity-and-the-four-momentum">The Force, the Four-Velocity, and the Four-Momentum</h2>
 <p>The product formula makes the relation between the four-force and the kinematic four-vectors of $\mathbb{B}_{\Phi}$ explicit.</p>
 <p>The four-velocity and four-momentum are</p>
@@ -309,8 +297,8 @@ $$</p>
 $$</p>
 <p>The four-force is the proper-time derivative $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$, and the product formula expresses it directly in terms of $\tilde{V}_{\Phi}$ and the field:</p>
 <p>$$
-\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
-= -\,\frac{ϙ}{2c\sqrt{\epsilon}}\left(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi}\right).
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{c}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
+= -\,\frac{ϙ}{2c}\left(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi}\right).
 $$</p>
 <p>The four-force is thus built from the same ingredients as the four-momentum — the four-velocity and the field — and inherits its membership in $\mathbb{B}_{\Phi}$ from the projection.</p>
 <p>Three consequences follow at once.</p>
@@ -428,8 +416,8 @@ $$</p>
 <p>and it is this bivector rule — not the vector rule — that leaves the field invariants $I_1$ and $I_2$ unchanged. The distinction between the vector and bivector transformation laws is the algebraic expression of the fact that four-vectors live in $\mathbb{B}_{\Phi}$ while the field strength does not.</p>
 <p><strong>Covariance of the product formula.</strong> The product formula is manifestly covariant under pure boosts, in the following precise sense. Apply the vector rule to the four-velocity, $\tilde{V}_{\Phi,2} = \tilde U\tilde{V}_{\Phi}\tilde U^{*}$, and the bivector rule to the field, $\tilde{F}_2 = \tilde U^{\natural}\tilde{F}\tilde U$. Then the right-hand side of the product formula transforms into the right-hand side computed with the transformed fields, and equals $\tilde U\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde U^{*}$:</p>
 <p>$$
--ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi,2}\tilde{F}_2\right)
-= \tilde U\left[-ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)\right]\tilde U^{*}
+-ϙ\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi,2}\tilde{F}_2\right)/c
+= \tilde U\left[-ϙ\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)/c\right]\tilde U^{*}
 = \tilde{\mathcal F}_{\mathrm{frc},2}.
 $$</p>
 <p>In this sense the product formula is not merely a frame-dependent identity but a covariant statement: transforming the ingredients and transforming the result give the same answer.</p>
@@ -445,7 +433,7 @@ $$</p>
 $$</p>
 <p>where $\rho_E = \mathrm{div}\,\vec D$ and $\rho_H = -\mathrm{div}\,\vec B$ are the electric and magnetic charge densities, $\vec j_E$ and $\vec j_H$ the corresponding currents, $\vec D = \epsilon\vec E$, and $\vec B = \mu\vec H$. Let a second field have field strength</p>
 <p>$$
-\tilde F_2 = i\sqrt{\epsilon}\,\vec E_2 - \sqrt{\mu}\,\vec H_2,
+\tilde F_2 = i\vec E_2 - c\vec B_2,
 $$</p>
 <p>the field strength of <em>The Magnetic-Charge–Mass Hypothesis</em>, in that article's sign convention. The programme's <strong>power–force biquaternion</strong> is the product</p>
 <p>$$
@@ -496,10 +484,10 @@ $$</p>
 $$</p>
 <p>which is the contraction $F_{\mathrm{lor},\imath} = ϙ\sum_{\jmath} F_{\imath\jmath}v_{\jmath}$ written in the biquaternion basis, and it lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. Its expression as a biquaternion product of the field strength and the four-velocity is not the real part of $\tilde{F}\tilde{V}_{\Phi}$ — that object has the wrong reality structure and lies outside $\mathbb{B}_{\Phi}$ — but the anti-Hermitian projection of $\tilde{V}_{\Phi}\tilde{F}$:</p>
 <p>$$
-\boxed{\;\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
-= -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi}\right)\;}.
+\boxed{\;\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\,\frac{ϙ}{c}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
+= -\,\frac{ϙ}{2c}\left(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi}\right)\;}.
 $$</p>
-<p>Equivalently, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\frac{ϙ}{2c\sqrt{\epsilon}}(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may be written $-\frac{ϙ\sqrt{\mu}}{2}(\tilde{V}_{\Phi}\tilde{F} - \bar{\tilde F}\tilde{V}_{\Phi})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$, while $\tilde{F}$ is reserved for the field strength.</p>
+<p>Equivalently, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\frac{ϙ}{2c}(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi})$; and since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may be written $-\frac{ϙ}{2c}(\tilde{V}_{\Phi}\tilde{F} - \bar{\tilde F}\tilde{V}_{\Phi})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$, while $\tilde{F}$ is reserved for the field strength.</p>
 <p>The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0$, so the mass shell $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $\langle\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\rangle_{\natural}$ is a Lorentz scalar equal to $ϙ^2\vec E_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\eta^4 - (I_1/c^2)\eta^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $\vec\nu_\Phi$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{\mathcal F}_{\mathrm{frc},2} = \tilde U\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde U^{*}$, while the field transforms in the bivector representation, $\tilde{F}_2 = \tilde U^{\natural}\tilde{F}\tilde U$, and the product formula is covariant under the pair.</p>
 <p>At the level of densities the companion programme replaces the per-particle force by the power–force biquaternion $\tilde{\mathcal F} = i\tilde J_{\Phi,\mathrm{eg}}\circ\tilde F_2$, whose scalar part is a power density and whose vector part splits into a Coulomb, a gravitational, a Lorentz and an electromass term; it is the density counterpart of the same product, with the per-particle $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ and the per-volume $\tilde{\mathcal F}$ kept strictly apart.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -540,11 +528,11 @@ $$</p>
 <td>Projection onto $\mathbb{B}_{\Phi}$ (anti-Hermitian part)</td>
 </tr>
 <tr>
-<td>$\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$</td>
+<td>$\tilde{F} = i\vec E - c\vec B$</td>
 <td>Field-strength biquaternion (pure vector)</td>
 </tr>
 <tr>
-<td>$\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H$</td>
+<td>$\tilde{F}^{*} = i\vec E + c\vec B$</td>
 <td>Hermitian conjugate of the field strength</td>
 </tr>
 <tr>

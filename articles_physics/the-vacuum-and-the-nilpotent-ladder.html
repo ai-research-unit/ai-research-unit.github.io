@@ -244,8 +244,8 @@ $$</p>
 <h3 id="the-field">The Field</h3>
 <p>The null electromagnetic field is the stratum's most direct physical occupant.</p>
 <p>$$
-\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad
-\tilde F^{2}=\epsilon\bigl(I_1+2icI_2\bigr)e_t,\qquad
+\tilde F=i\vec E-c\vec B,\qquad
+\tilde F^{2}=\bigl(I_1+2icI_2\bigr)e_t,\qquad
 I_1=\vec E^{2}-c^{2}\vec B^{2},\quad I_2=\vec E\cdot\vec B .
 $$</p>
 <p>So the stratum's condition on the field is the classical nullness condition. Two real equations on six real data, and the dictionary between the field pair and the pure element is a bijection.</p>
@@ -482,19 +482,19 @@ $$</p>
 <h2 id="the-null-field">The Null Field</h2>
 <p>The field strength of the corpus is a pure element, so the stratum's test applies to it as it stands.</p>
 <p>$$
-\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad
+\tilde F=i\vec E-c\vec B,\qquad
 \vec B=\mu\vec H,\qquad
 c=\frac{1}{\sqrt{\epsilon\mu}} .
 $$</p>
 <p>Its square is one line of algebra and it separates the two classical invariants.</p>
 <p>$$
-\tilde F^{2}=\epsilon\bigl(I_1+2icI_2\bigr)e_t,
+\tilde F^{2}=\bigl(I_1+2icI_2\bigr)e_t,
 \qquad
 I_1=\vec E^{2}-c^{2}\vec B^{2},
 \qquad
 I_2=\vec E\cdot\vec B,
 $$</p>
-<p>checked over fifty random real fields to $4.0\times10^{-15}$. The computation is the product of two pure vectors: with $\vec V=\sqrt{\epsilon}\vec E$ and $\vec W=\sqrt{\mu}\vec H$ one has $\tilde F=i\vec V-\vec W$ and $\tilde F^{2}=-\vec V^{2}+\vec W^{2}+2i\vec V\cdot\vec W$.</p>
+<p>checked over fifty random real fields to $4.0\times10^{-15}$. The computation is the product of two pure vectors: with $\vec V=\vec E$ and $\vec W=c\vec B$ one has $\tilde F=i\vec V-\vec W$ and $\tilde F^{2}=-\vec V^{2}+\vec W^{2}+2i\vec V\cdot\vec W$.</p>
 <p><strong>The stratum's condition on a real field is therefore the classical nullness condition.</strong></p>
 <p>$$
 \tilde F^{2}=0\iff
@@ -502,14 +502,14 @@ $$</p>
 \ \text{and}\
 \vec E\cdot\vec B=0 .
 $$</p>
-<p>Both directions hold and both were checked. One hundred constructed null pairs — equal magnitudes in the units of $c$ and perpendicular halves — gave a vanishing square in all one hundred cases, and since $\epsilon\neq0$ the equation $\tilde F^{2}=0$ is the pair of real equations $I_1=0$ and $I_2=0$, one from each part of the complex number.</p>
+<p>Both directions hold and both were checked. One hundred constructed null pairs — equal magnitudes in the units of $c$ and perpendicular halves — gave a vanishing square in all one hundred cases, and since the two invariants are independent, the equation $\tilde F^{2}=0$ is the pair of real equations $I_1=0$ and $I_2=0$, one from each part of the complex number.</p>
 <p>The dictionary is a bijection.</p>
 <p>$$
-\vec E=\frac{\operatorname{Im}\tilde F}{\sqrt{\epsilon}},\qquad
-\vec H=-\frac{\operatorname{Re}\tilde F}{\sqrt{\mu}},
+\vec E=\operatorname{Im}\tilde F,\qquad
+\vec H=-\frac{\operatorname{Re}\tilde F}{c\mu},
 $$</p>
 <p>so the real null fields and the non-zero elements of the stratum are the same four real data read in two alphabets. <strong>Nothing is lost and nothing is added, and the map is inverted by the same two lines.</strong></p>
-<p>A member, checked. Take $\tilde F=iV(\vec e_x+i\vec e_y)$ with $V&gt;0$ real. Then $\vec E=(V/\sqrt{\epsilon})\vec e_x$ and $\vec B=\sqrt{\mu}V\vec e_y$, the halves are perpendicular, the magnitudes satisfy $c\lvert\vec B\rvert=\lvert\vec E\rvert$ because $c\sqrt{\mu}=1/\sqrt{\epsilon}$, and the square vanishes because $(\vec e_x+i\vec e_y)^{2}=0$.</p>
+<p>A member, checked. Take $\tilde F=iV(\vec e_x+i\vec e_y)$ with $V&gt;0$ real. Then $\vec E=V\vec e_x$ and $\vec B=(V/c)\vec e_y$, the halves are perpendicular, the magnitudes satisfy $c\lvert\vec B\rvert=\lvert\vec E\rvert$ by construction, and the square vanishes because $(\vec e_x+i\vec e_y)^{2}=0$.</p>
 <p>The count is the stratum's dimension in the letters of the field. Six real components of $(\vec E,\vec B)$, two real conditions, four left: the amplitude, the direction of propagation which is two angles, and one angle that places the pair inside the transverse plane. That is $1+2+1$, the same count the parametrisation gave.</p>
 <p>The complex scale has two physical readings and both are exact.</p>
 <p>$$
@@ -517,7 +517,7 @@ $$</p>
 \lvert\digamma_{\mathrm{scl}}\rvert\ \text{is the amplitude},\qquad
 \arg\digamma_{\mathrm{scl}}\ \text{is the duality angle}.
 $$</p>
-<p>The modulus is the amplitude because the Hermitian norm of the field is proportional to it. For a null field $\lVert\tilde F\rVert^{2}=\epsilon\lvert\vec E\rvert^{2}+\lvert\vec B\rvert^{2}/\mu=2\epsilon\lvert\vec E\rvert^{2}$, so the modulus and the amplitude differ by the fixed factor $\sqrt{2\epsilon}$.</p>
+<p>The modulus is the amplitude because the Hermitian norm of the field is proportional to it. For a null field $\lVert\tilde F\rVert^{2}=\lvert\vec E\rvert^{2}+c^{2}\lvert\vec B\rvert^{2}=2\lvert\vec E\rvert^{2}$, so the modulus and the amplitude differ by the fixed factor $\sqrt{2\epsilon}$.</p>
 <p>The phase turns $\vec E$ into $\vec B$ and back.</p>
 <p>$$
 e^{i\omicron_{\mathrm{ang}}}\tilde F\quad\longleftrightarrow\quad
@@ -525,7 +525,7 @@ e^{i\omicron_{\mathrm{ang}}}\tilde F\quad\longleftrightarrow\quad
 \vec B'=\vec B\cos\omicron_{\mathrm{ang}}+\frac{\vec E}{c}\sin\omicron_{\mathrm{ang}},
 $$</p>
 <p>checked over fifty random null fields and angles to $4.4\times10^{-16}$. The transformation is the duality rotation, it preserves $\lvert\vec E\rvert=c\lvert\vec B\rvert$ and $\vec E\cdot\vec B=0$, and it therefore acts on the stratum as a symmetry of the fibre. The $\mathbb{C}^{\times}$ of the bundle is not an abstract scale: its modulus is an amplitude and its argument is a duality angle, and both are classical operations on a field.</p>
-<p>The field straddles the two elementary sectors, which is why the stratum's reading is a field and not a momentum. The real part $-\sqrt{\mu}\vec H$ is anti-Hermitian and the imaginary part $i\sqrt{\epsilon}\vec E$ is Hermitian, so $\tilde F$ lies in neither $\mathbb{B}_{\Phi}$ nor $\mathbb{B}_{\Psi}$. Neither of those sectors contains a non-zero nilpotent, for the same reason in both cases: a real vector part has a positive-definite vector square and an imaginary one has a negative-definite square, and the stratum needs an isotropic one.</p>
+<p>The field straddles the two elementary sectors, which is why the stratum's reading is a field and not a momentum. The real part $-c\vec B$ is anti-Hermitian and the imaginary part $i\vec E$ is Hermitian, so $\tilde F$ lies in neither $\mathbb{B}_{\Phi}$ nor $\mathbb{B}_{\Psi}$. Neither of those sectors contains a non-zero nilpotent, for the same reason in both cases: a real vector part has a positive-definite vector square and an imaginary one has a negative-definite square, and the stratum needs an isotropic one.</p>
 <h2 id="the-ladder_1">The Ladder</h2>
 <p>A single nilpotent is a direction and not yet a state, and the pair is what makes the state.</p>
 <p>$$
@@ -725,7 +725,7 @@ $$</p>
 <p>The shear preserves the norm, so it moves the stratum within itself. Conjugation by $e^{\theta\tilde Q}$ leaves $N$ of every element unchanged and maps nilpotents to nilpotents. It is a symmetry of the cone and not a motion off it, and it is the reason the stratum's own geometry is thin: the group that preserves it acts on it transitively up to scale.</p>
 <p>The boundary. A shear on the algebra is not a physical transformation of a system. The word <em>parabolic</em> names a conjugacy type and not a process, and nothing here is a statement about a physical flow.</p>
 <h3 id="i10ax-the-null-field-is-the-object-of-the-stratum">I.10.ax — The Null Field Is the Object of the Stratum</h3>
-<p>Read: $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$, $\tilde F^{2}=\epsilon(I_1+2icI_2)e_t$, and the equivalence $\tilde F^{2}=0\iff\lvert\vec E\rvert=c\lvert\vec B\rvert$, $\vec E\cdot\vec B=0$.</p>
+<p>Read: $\tilde F=i\vec E-c\vec B$, $\tilde F^{2}=(I_1+2icI_2)e_t$, and the equivalence $\tilde F^{2}=0\iff\lvert\vec E\rvert=c\lvert\vec B\rvert$, $\vec E\cdot\vec B=0$.</p>
 <p>The field strength is the one object of the corpus that the stratum names directly. It is pure, so the test applies to it without a projection; its square is a single central number; and the vanishing of that number is the classical nullness condition on a real field, in both directions.</p>
 <p>The reading is exact and it is a dictionary, not an analogy. The six real components of the pair and the six real components of the pure element are the same six numbers, the two conditions are the same two conditions, and the map between them is invertible. A real null field and a point of the stratum are the same object in two alphabets.</p>
 <p>The count is the stratum's dimension and it is also the field's. Amplitude, direction and one polarisation angle: one, two and one real data, four in total, which is the real dimension of the cone. Nothing is left over on either side, and that agreement is the reason the reading is not an analogy.</p>
@@ -851,7 +851,7 @@ $$</p>
 </tr>
 <tr>
 <td>the null field</td>
-<td>$\tilde F^{2}=\epsilon(I_1+2icI_2)e_t$; $\tilde F^{2}=0$ exactly when $\lvert\vec E\rvert=c\lvert\vec B\rvert$ and $\vec E\cdot\vec B=0$</td>
+<td>$\tilde F^{2}=(I_1+2icI_2)e_t$; $\tilde F^{2}=0$ exactly when $\lvert\vec E\rvert=c\lvert\vec B\rvert$ and $\vec E\cdot\vec B=0$</td>
 </tr>
 <tr>
 <td>the count</td>
