@@ -101,9 +101,9 @@ $$</p>
 <h3 id="the-single-qubit-no-obstruction">The single qubit: no obstruction</h3>
 <p>For the native qubit the module has complex dimension two, and every context contains at most two orthogonal rank-one idempotents, $\tilde\Pi_{\mathrm{id},1}(\vec u_z)$ and $\tilde\Pi_{\mathrm{id},2}(\vec u_z)$. Two orthogonal rank-one idempotents of a qubit are the only possible pair, and a $\{0,1\}$ assignment to them consistent with $\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2} = e_t$ is immediate. Extending to all observables, one may assign to each direction $\vec u_z$ the value</p>
 <p>$$
-v_\lambda\bigl(\tilde\Pi_{\mathrm{id},1,2}(\vec u_z)\bigr) = \begin{cases}1 & \pm\,\vec u_z\cdot\vec u_\lambda > 0,\ 0 & \text{otherwise,}\end{cases}
+v_{\upsilon_{\mathrm{hdd}}}\bigl(\tilde\Pi_{\mathrm{id},1,2}(\vec u_z)\bigr) = \begin{cases}1 & \pm\,\vec u_z\cdot\vec u_{\upsilon_{\mathrm{hdd}}} > 0,\ 0 & \text{otherwise,}\end{cases}
 $$</p>
-<p>for a fixed hidden direction $\vec u_\lambda$, with a convention on the measure-zero equator. Every context of the qubit is a pair of antipodal idempotents, and the assignment is consistent within each; there is no constraint linking two different directions, because two non-collinear rank-one idempotents of a qubit are not orthogonal and therefore do not lie in a common context. Hence <strong>no Kochen–Specker obstruction exists for a single qubit</strong>, which is the familiar statement that the theorem requires dimension at least three. The single-qubit noncontextual model is due to Bell (1966).</p>
+<p>for a fixed hidden direction $\vec u_{\upsilon_{\mathrm{hdd}}}$, with a convention on the measure-zero equator. Every context of the qubit is a pair of antipodal idempotents, and the assignment is consistent within each; there is no constraint linking two different directions, because two non-collinear rank-one idempotents of a qubit are not orthogonal and therefore do not lie in a common context. Hence <strong>no Kochen–Specker obstruction exists for a single qubit</strong>, which is the familiar statement that the theorem requires dimension at least three. The single-qubit noncontextual model is due to Bell (1966).</p>
 <p>The conclusion for the framework is structural: the obstruction cannot be exhibited by the native unit alone. It requires a composite, or a system of dimension at least three, and the smallest composite the framework supplies is the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, whose module has dimension four.</p>
 <p><strong>Why the single-qubit model cannot be extended.</strong> The reason is the scarcity of contexts. Two rank-one idempotents of a qubit lie in a common context only if they are orthogonal, and for a qubit orthogonality of $\tilde\Pi_{\mathrm{id}}(\vec u_z)$ and $\tilde\Pi_{\mathrm{id}}(\vec u_w)$ means the directions are antipodal. Consequently every context of the qubit is the pair $\{\tilde\Pi_{\mathrm{id},1}(\vec u_z),\tilde\Pi_{\mathrm{id},2}(\vec u_z)\}$ for a single direction, and the value assignment of Bell is consistent on each such context by construction. Noncontextuality is then trivially satisfied, because no observable belongs to two distinct contexts: an observable's ray determines its context uniquely. In dimension $d\geq3$ this fails — a rank-one projector belongs to a continuum of orthogonal resolutions, and those resolutions impose incompatible constraints — and it is the sharing of observables among many contexts that drives the obstruction. In the two-qubit algebra the sharing is realized by the magic square: each of the nine entries belongs to one row context and one column context simultaneously, and it is precisely that double membership — for instance $e_t\otimes\tilde Q_z$ sitting in row $2$ and column $1$ at once — that the parity argument exploits.</p>
 <h2 id="the-kochenspecker-theorem">The Kochen–Specker Theorem</h2>
@@ -148,7 +148,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Each entry is Hermitian and squares to $e_t\otimes e_t$, so each has spectrum $\{\pm1\}$; this is why the array is called a <strong>magic square</strong>. The entries are the framework's transcription of the standard Mermin–Peres observables built from $\sigma_1,\sigma_2,\sigma_3$ and the identity, using the identification $\sigma_k\leftrightarrow i\vec e_k$.</p>
+<p>Each entry is Hermitian and squares to $e_t\otimes e_t$, so each has spectrum $\{\pm1\}$; this is why the array is called a <strong>magic square</strong>. The entries are the framework's transcription of the standard Mermin–Peres observables built from $\sigma_1,\sigma_2,\sigma_3$ and the identity, using the identification $\sigma_\imath\leftrightarrow i\vec e_\imath$.</p>
 <h3 id="the-product-relations">The product relations</h3>
 <p>Within each row and each column the three entries commute, so their product is unambiguous. Direct computation in the biquaternion algebra — using $(x\otimes y)(x_2\otimes y_2) = (xx_2)\otimes(yy_2)$ and the products of the invertibles — gives</p>
 <div class="table-scroll"><table>
@@ -287,7 +287,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion units, $\vec e_k^2 = -e_t$</td>
+<td>Quaternion units, $\vec e_\imath^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>

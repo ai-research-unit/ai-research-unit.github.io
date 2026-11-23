@@ -81,20 +81,20 @@
 </ul>
 <p>The article is organized as follows. The next section fixes what the RG is and states the exact flow equation, taking care to distinguish the <em>functional</em> trace from the biquaternion trace. The following section describes the regulator and the shell, and what each costs. Two sections then perform the shell integration explicitly — the scalar quartic coupling, and the non-abelian gauge coupling — and fix the <strong>sign</strong> of each beta function. A section checks the fixed points against the flow equation on independent cases. A section addresses the two-sector question directly. A section separates what the algebra supplies from what it only transcribes. The article closes with open questions.</p>
 <h2 id="the-scale-dependence-of-the-effective-action">The Scale Dependence of the Effective Action</h2>
-<p>The <strong>effective action</strong> $\Gamma[\xi]$ is the generating functional of one-particle-irreducible correlation functions: with $Z[J] = \int\mathcal{D}\xi\, \exp(-S[\xi] + \int J\xi)$ and $W[J] = \log Z[J]$ (the Euclidean case throughout this article), $\Gamma$ is the Legendre transform of $W$. Its expansion in powers of the field and of derivatives defines the couplings of the theory. In this article we work with the <strong>Wilsonian</strong> effective action $\Gamma_k$, defined at a sliding scale $k$: $\Gamma_k$ is obtained from the microscopic action by integrating out all modes with Euclidean momenta larger than $k$. The dependence of $\Gamma_k$ on $k$ is what the RG computes.</p>
+<p>The <strong>effective action</strong> $\Gamma[\xi]$ is the generating functional of one-particle-irreducible correlation functions: with $Z[J] = \int\mathcal{D}\xi\, \exp(-S[\xi] + \int J\xi)$ and $W[J] = \log Z[J]$ (the Euclidean case throughout this article), $\Gamma$ is the Legendre transform of $W$. Its expansion in powers of the field and of derivatives defines the couplings of the theory. In this article we work with the <strong>Wilsonian</strong> effective action $\Gamma_\imath$, defined at a sliding scale $k$: $\Gamma_\imath$ is obtained from the microscopic action by integrating out all modes with Euclidean momenta larger than $k$. The dependence of $\Gamma_\imath$ on $k$ is what the RG computes.</p>
 <p>The exact statement of that dependence is the <strong>Wetterich equation</strong>,</p>
 <p>$$
-\boxed{\;\partial/\partial r'_t \Gamma_k[\xi] = \mathrm{Sc}\!\left[\Big(\Gamma_k^{(2)}[\xi] + R_k\Big)^{-1}\,\partial/\partial r'_t R_k\right],
+\boxed{\;\partial/\partial r'_t \Gamma_\imath[\xi] = \mathrm{Sc}\!\left[\Big(\Gamma_\imath^{(2)}[\xi] + R_\imath\Big)^{-1}\,\partial/\partial r'_t R_\imath\right],
 \qquad r'_t = \log\frac{k}{\Lambda}\;},
 $$</p>
-<p>where $\Gamma_k^{(2)}$ is the second functional derivative of $\Gamma_k$ with respect to $\xi$, $R_k$ is a <strong>regulator</strong> that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.</p>
+<p>where $\Gamma_\imath^{(2)}$ is the second functional derivative of $\Gamma_\imath$ with respect to $\xi$, $R_\imath$ is a <strong>regulator</strong> that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.</p>
 <ol>
 <li><strong>The doubled scalar part is a functional trace.</strong> The symbol $\mathrm{Tr}$ here is the trace over the infinite-dimensional field space: it stands for $\int \frac{d^4p}{h^{4}}\sum_{\text{internal indices}}$ with the argument evaluated on the field configuration. It is <strong>not</strong> the biquaternion reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of the read list. The biquaternion trace is taken over the two-dimensional fiber of $\mathbb{B}$; the functional trace is taken over the space of modes. They must not be conflated, and when the flow equation is read in the biquaternion framework the two appear side by side: the <em>fiber</em> trace is the algebra's, and the <em>mode</em> trace is analytic.</li>
-<li><strong>The regulator is an input.</strong> The equation is exact for any admissible $R_k$, but $R_k$ is not determined by the theory. Different choices give different <em>trajectories</em> $\Gamma_k$ and the same <em>physics</em> at the fixed point, up to scheme-dependent redefinitions of the couplings. The regulator is the analytic datum the algebra does not supply.</li>
+<li><strong>The regulator is an input.</strong> The equation is exact for any admissible $R_\imath$, but $R_\imath$ is not determined by the theory. Different choices give different <em>trajectories</em> $\Gamma_\imath$ and the same <em>physics</em> at the fixed point, up to scheme-dependent redefinitions of the couplings. The regulator is the analytic datum the algebra does not supply.</li>
 </ol>
-<p>If $\Gamma_k$ is expanded in a basis of local operators with couplings $g_i(k)$,</p>
+<p>If $\Gamma_\imath$ is expanded in a basis of local operators with couplings $g_i(k)$,</p>
 <p>$$
-\Gamma_k[\xi] = \int d^4r \sum_i g_i(k)\, \mathcal{O}_i[\xi],
+\Gamma_\imath[\xi] = \int d^4r \sum_i g_i(k)\, \mathcal{O}_i[\xi],
 $$</p>
 <p>then the flow equation is equivalent to a set of ordinary differential equations,</p>
 <p>$$
@@ -149,12 +149,12 @@ and the shell is $\Lambda/b < \sqrt{\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}
 <h2 id="integrating-out-a-shell-the-scalar-quartic-coupling">Integrating Out a Shell: The Scalar Quartic Coupling</h2>
 <p>The cleanest case is a single real scalar with a quartic self-interaction,</p>
 <p>$$
-S[\xi] = \int d^4r\left[\tfrac12(\partial\xi)^2 + \tfrac12 m^2\xi^2 + \frac{\lambda}{4!}\xi^4\right],
+S[\xi] = \int d^4r\left[\tfrac12(\partial\xi)^2 + \tfrac12 m^2\xi^2 + \frac{\varpi_{\mathrm{cpl}}}{4!}\xi^4\right],
 $$</p>
-<p>whose coupling $\lambda$ is marginal in $d = 4$ and whose beta function is the textbook one. The point of redoing it here is to show the shell integration explicitly, since a beta function stated without it is exactly the failure mode this subject invites.</p>
-<p>Split the field into slow and fast modes, $\xi = \xi_< + \xi_>$, where $\xi_>$ carries only momenta in the shell $\Lambda/b < |k| < \Lambda$. Integrating out $\xi_>$ at one loop gives the correction to the four-point function from the bubble diagram: with two vertices $-(\lambda)$ from $(\lambda/4!)\xi^4$, the one-loop 1PI four-point function in the $s$, $r'_t$, and $u$ channels is</p>
+<p>whose coupling $\varpi_{\mathrm{cpl}}$ is marginal in $d = 4$ and whose beta function is the textbook one. The point of redoing it here is to show the shell integration explicitly, since a beta function stated without it is exactly the failure mode this subject invites.</p>
+<p>Split the field into slow and fast modes, $\xi = \xi_< + \xi_>$, where $\xi_>$ carries only momenta in the shell $\Lambda/b < |k| < \Lambda$. Integrating out $\xi_>$ at one loop gives the correction to the four-point function from the bubble diagram: with two vertices $-(\varpi_{\mathrm{cpl}})$ from $(\varpi_{\mathrm{cpl}}/4!)\xi^4$, the one-loop 1PI four-point function in the $s$, $r'_t$, and $u$ channels is</p>
 <p>$$
-\Gamma^{(4)}_{\text{1-loop}}(p) = \frac{1}{2}\cdot 3\,(-\lambda)^2\, I_>(p),
+\Gamma^{(4)}_{\text{1-loop}}(p) = \frac{1}{2}\cdot 3\,(-\varpi_{\mathrm{cpl}})^2\, I_>(p),
 \qquad
 I_>(p) = \int_{\text{shell}}\!\frac{d^4k}{(2\pi)^4}\,\frac{1}{\big(k^2+m^2\big)\big((k+p)^2+m^2\big)},
 $$</p>
@@ -168,17 +168,17 @@ $$</p>
 I_>(0) = \frac{1}{8\pi^2}\log b \;+\; O\!\left(\frac{m^2}{\Lambda^2}\right).
 $$</p>
 <p>The coefficient $1/(8\pi^2)$ of the logarithm is the whole content of the one-loop renormalization of the quartic coupling, and it is <strong>mass-independent</strong>: the mass appears only in the power-suppressed terms. This is why the beta function of the marginal coupling is universal and why it is insensitive to the detailed spectrum.</p>
-<p>The effective coupling, defined from the 1PI function by $\lambda_{\text{eff}} = -\Gamma^{(4)}(0)$, therefore shifts by</p>
+<p>The effective coupling, defined from the 1PI function by $\varpi_{\mathrm{cpl},\text{eff}} = -\Gamma^{(4)}(0)$, therefore shifts by</p>
 <p>$$
-\delta\lambda = -\frac{3}{2}\,\lambda^2\, I_>(0) = -\frac{3\lambda^2}{16\pi^2}\,\log b .
+\delta\varpi_{\mathrm{cpl}} = -\frac{3}{2}\,\varpi_{\mathrm{cpl}}^2\, I_>(0) = -\frac{3\varpi_{\mathrm{cpl}}^2}{16\pi^2}\,\log b .
 $$</p>
-<p>Writing $\delta\ell = \log b$ and reading the equation as the change of $\lambda$ as the cutoff is lowered from $\Lambda$ to $\Lambda/b$ — that is, toward the infrared — the flow is</p>
+<p>Writing $\delta\ell = \log b$ and reading the equation as the change of $\varpi_{\mathrm{cpl}}$ as the cutoff is lowered from $\Lambda$ to $\Lambda/b$ — that is, toward the infrared — the flow is</p>
 <p>$$
-\boxed{\;\frac{d\lambda}{d\ell} = -\frac{3\lambda^2}{16\pi^2},
+\boxed{\;\frac{d\varpi_{\mathrm{cpl}}}{d\ell} = -\frac{3\varpi_{\mathrm{cpl}}^2}{16\pi^2},
 \qquad\text{equivalently}\qquad
-\beta_\lambda = \mu\frac{d\lambda}{d\mu} = +\frac{3\lambda^2}{16\pi^2}\;}.
+\beta_{\varpi_{\mathrm{cpl}}} = \mu\frac{d\varpi_{\mathrm{cpl}}}{d\mu} = +\frac{3\varpi_{\mathrm{cpl}}^2}{16\pi^2}\;}.
 $$</p>
-<p>The relative sign is fixed by $\ell = \log(\Lambda_0/\Lambda)$: increasing $\ell$ lowers the cutoff, so $\mu\,d/d\mu = -d/d\ell$. The sign of the beta function is therefore <strong>positive</strong>, and its consequences are immediate. For $\lambda > 0$, the coupling <em>grows</em> toward the ultraviolet and <em>shrinks</em> toward the infrared; the Gaussian fixed point $\lambda^* = 0$ is infrared-attractive, and the coupling reaches a Landau pole at a finite ultraviolet scale, at $\ell = \ell_0 - 16\pi^2/(3\lambda_0)$ measured from any reference point $\ell_0$. The one-loop formula is not to be continued past that pole toward the ultraviolet, and a careless continuation through it produces an artifact; toward the infrared the coupling decreases monotonically to zero, which is the same statement as the infrared-attractiveness of the Gaussian fixed point.</p>
+<p>The relative sign is fixed by $\ell = \log(\Lambda_0/\Lambda)$: increasing $\ell$ lowers the cutoff, so $\mu\,d/d\mu = -d/d\ell$. The sign of the beta function is therefore <strong>positive</strong>, and its consequences are immediate. For $\varpi_{\mathrm{cpl}} > 0$, the coupling <em>grows</em> toward the ultraviolet and <em>shrinks</em> toward the infrared; the Gaussian fixed point $\varpi_{\mathrm{cpl}}^* = 0$ is infrared-attractive, and the coupling reaches a Landau pole at a finite ultraviolet scale, at $\ell = \ell_0 - 16\pi^2/(3\varpi_{\mathrm{cpl},0})$ measured from any reference point $\ell_0$. The one-loop formula is not to be continued past that pole toward the ultraviolet, and a careless continuation through it produces an artifact; toward the infrared the coupling decreases monotonically to zero, which is the same statement as the infrared-attractiveness of the Gaussian fixed point.</p>
 <p>The same coefficient is obtained from <strong>dimensional regularisation</strong>, which is a useful cross-check of the regulator: the massless bubble in $d = 4-\epsilon$ is</p>
 <p>$$
 \int\!\frac{d^dk}{(2\pi)^d}\frac{1}{(k^2)^2}
@@ -187,13 +187,13 @@ $$</p>
 $$</p>
 <p>so the $1/\epsilon$ pole carries the same coefficient $1/(8\pi^2)$ as the sharp-cutoff logarithm $\log b$. The two regulators agree on the universal part, as they must.</p>
 <h3 id="the-beta-function-in-math141">The beta function in $d = 4-\epsilon$</h3>
-<p>In $d = 4 - \epsilon$ the coupling acquires a classical scaling dimension $[\lambda] = \epsilon$, and the beta function acquires a term $-\epsilon\lambda$ from the engineering dimension:</p>
+<p>In $d = 4 - \epsilon$ the coupling acquires a classical scaling dimension $[\varpi_{\mathrm{cpl}}] = \epsilon$, and the beta function acquires a term $-\epsilon\varpi_{\mathrm{cpl}}$ from the engineering dimension:</p>
 <p>$$
-\beta_\lambda = -\epsilon\lambda + \frac{3\lambda^2}{16\pi^2} + O(\lambda^3).
+\beta_{\varpi_{\mathrm{cpl}}} = -\epsilon\varpi_{\mathrm{cpl}} + \frac{3\varpi_{\mathrm{cpl}}^2}{16\pi^2} + O(\varpi_{\mathrm{cpl}}^3).
 $$</p>
-<p>Besides the Gaussian fixed point $\lambda^* = 0$, this beta function has the <strong>Wilson–Fisher fixed point</strong></p>
+<p>Besides the Gaussian fixed point $\varpi_{\mathrm{cpl}}^* = 0$, this beta function has the <strong>Wilson–Fisher fixed point</strong></p>
 <p>$$
-\boxed{\;\lambda^* = \frac{16\pi^2}{3}\,\epsilon\;},
+\boxed{\;\varpi_{\mathrm{cpl}}^* = \frac{16\pi^2}{3}\,\epsilon\;},
 $$</p>
 <p>at which the two competing terms balance. We check this in the next section, rather than assert it.</p>
 <h2 id="the-non-abelian-gauge-coupling">The Non-Abelian Gauge Coupling</h2>
@@ -223,13 +223,13 @@ $$</p>
 <p>The abelian case is the third sign, and it falls on the scalar side. For quantum electrodynamics with one Dirac fermion, $b_0 = -\frac{4}{3}$ in the same normalization, so $\beta_e = +e^3/(12\pi^2) > 0$: the abelian gauge coupling grows in the ultraviolet, like the scalar quartic coupling and unlike the non-abelian one. The distinction is a property of the gauge group's adjoint Casimir, not of the algebra $\mathbb{B}$: nothing in the biquaternion framework selects $SU(N)$ over $\mathrm{U}(1)$, and the beta-function signs are those of the gauge groups one chooses to write down.</p>
 <h2 id="fixed-points-and-the-flow-equation">Fixed Points and the Flow Equation</h2>
 <p>The fixed points must be checked against the flow equation, not asserted. We do it on the two independent cases just computed.</p>
-<p><strong>Wilson–Fisher.</strong> With $\beta_\lambda = -\epsilon\lambda + 3\lambda^2/(16\pi^2)$, substituting the candidate fixed point gives</p>
+<p><strong>Wilson–Fisher.</strong> With $\beta_{\varpi_{\mathrm{cpl}}} = -\epsilon\varpi_{\mathrm{cpl}} + 3\varpi_{\mathrm{cpl}}^2/(16\pi^2)$, substituting the candidate fixed point gives</p>
 <p>$$
-\beta_\lambda\!\left(\frac{16\pi^2}{3}\epsilon\right)
+\beta_{\varpi_{\mathrm{cpl}}}\!\left(\frac{16\pi^2}{3}\epsilon\right)
 = -\epsilon\cdot\frac{16\pi^2}{3}\epsilon + \frac{3}{16\pi^2}\left(\frac{16\pi^2}{3}\epsilon\right)^2
 = -\frac{16\pi^2}{3}\epsilon^2 + \frac{16\pi^2}{3}\epsilon^2 = 0 .
 $$</p>
-<p>The candidate is a fixed point. Its stability is fixed by the derivative, $\frac{d\beta_\lambda}{d\lambda}(\lambda^*) = -\epsilon + 6\lambda^*/(16\pi^2) = +\epsilon > 0$: because the eigenvalue is positive, the Wilson–Fisher fixed point is <strong>infrared-attractive</strong> in $d = 4-\epsilon$, while the Gaussian fixed point has eigenvalue $-\epsilon < 0$ and is ultraviolet-attractive. In exactly $d = 4$, $\epsilon = 0$, the Gaussian eigenvalue vanishes at one loop and the only fixed point of the one-loop flow is the Gaussian one, which is infrared-attractive for $\lambda > 0$; this is the statement of triviality of $\xi^4$ in four dimensions.</p>
+<p>The candidate is a fixed point. Its stability is fixed by the derivative, $\frac{d\beta_{\varpi_{\mathrm{cpl}}}}{d\varpi_{\mathrm{cpl}}}(\varpi_{\mathrm{cpl}}^*) = -\epsilon + 6\varpi_{\mathrm{cpl}}^*/(16\pi^2) = +\epsilon > 0$: because the eigenvalue is positive, the Wilson–Fisher fixed point is <strong>infrared-attractive</strong> in $d = 4-\epsilon$, while the Gaussian fixed point has eigenvalue $-\epsilon < 0$ and is ultraviolet-attractive. In exactly $d = 4$, $\epsilon = 0$, the Gaussian eigenvalue vanishes at one loop and the only fixed point of the one-loop flow is the Gaussian one, which is infrared-attractive for $\varpi_{\mathrm{cpl}} > 0$; this is the statement of triviality of $\xi^4$ in four dimensions.</p>
 <p><strong>Banks–Zaks.</strong> At two loops the gauge beta function is</p>
 <p>$$
 \beta_g = -\frac{b_0}{16\pi^2}g^3 - \frac{b_1}{(16\pi^2)^2}g^5,
@@ -260,15 +260,15 @@ $$</p>
 <tbody>
 <tr>
 <td>$\xi^4$, $d=4$</td>
-<td>$\beta_\lambda = +\dfrac{3\lambda^2}{16\pi^2}$</td>
-<td>$\lambda^*=0$, IR-attractive</td>
+<td>$\beta_{\varpi_{\mathrm{cpl}}} = +\dfrac{3\varpi_{\mathrm{cpl}}^2}{16\pi^2}$</td>
+<td>$\varpi_{\mathrm{cpl}}^*=0$, IR-attractive</td>
 <td>none (Landau pole in UV)</td>
 </tr>
 <tr>
 <td>$\xi^4$, $d=4-\epsilon$</td>
-<td>$\beta_\lambda = -\epsilon\lambda + \dfrac{3\lambda^2}{16\pi^2}$</td>
-<td>$\lambda^*=0$, UV-attractive</td>
-<td>$\lambda^* = \dfrac{16\pi^2}{3}\epsilon$, IR-attractive</td>
+<td>$\beta_{\varpi_{\mathrm{cpl}}} = -\epsilon\varpi_{\mathrm{cpl}} + \dfrac{3\varpi_{\mathrm{cpl}}^2}{16\pi^2}$</td>
+<td>$\varpi_{\mathrm{cpl}}^*=0$, UV-attractive</td>
+<td>$\varpi_{\mathrm{cpl}}^* = \dfrac{16\pi^2}{3}\epsilon$, IR-attractive</td>
 </tr>
 <tr>
 <td>$\mathrm{U}(1)$ gauge</td>
@@ -337,11 +337,11 @@ $$</p>
 <p>$$
 I_>(0) = \frac{1}{8\pi^2}\log b + O\!\left(\frac{m^2}{\Lambda^2}\right),
 \qquad
-\delta\lambda = -\frac{3\lambda^2}{16\pi^2}\log b,
+\delta\varpi_{\mathrm{cpl}} = -\frac{3\varpi_{\mathrm{cpl}}^2}{16\pi^2}\log b,
 \qquad
-\beta_\lambda = +\frac{3\lambda^2}{16\pi^2} > 0,
+\beta_{\varpi_{\mathrm{cpl}}} = +\frac{3\varpi_{\mathrm{cpl}}^2}{16\pi^2} > 0,
 $$</p>
-<p>so the Gaussian fixed point is infrared-attractive and the ultraviolet flow ends at a Landau pole. Dimensional regularisation gives the same $1/(8\pi^2)$ coefficient from the $1/\epsilon$ pole, a cross-check of the regulator. In $d = 4-\epsilon$ the beta function acquires $-\epsilon\lambda$, and the <strong>Wilson–Fisher</strong> fixed point $\lambda^* = 16\pi^2\epsilon/3$ satisfies $\beta_\lambda(\lambda^*) = 0$ by direct substitution, with $\frac{d\beta_\lambda}{d\lambda}(\lambda^*) = +\epsilon > 0$ making it infrared-attractive. For a non-abelian gauge coupling the one-loop beta function is</p>
+<p>so the Gaussian fixed point is infrared-attractive and the ultraviolet flow ends at a Landau pole. Dimensional regularisation gives the same $1/(8\pi^2)$ coefficient from the $1/\epsilon$ pole, a cross-check of the regulator. In $d = 4-\epsilon$ the beta function acquires $-\epsilon\varpi_{\mathrm{cpl}}$, and the <strong>Wilson–Fisher</strong> fixed point $\varpi_{\mathrm{cpl}}^* = 16\pi^2\epsilon/3$ satisfies $\beta_{\varpi_{\mathrm{cpl}}}(\varpi_{\mathrm{cpl}}^*) = 0$ by direct substitution, with $\frac{d\beta_{\varpi_{\mathrm{cpl}}}}{d\varpi_{\mathrm{cpl}}}(\varpi_{\mathrm{cpl}}^*) = +\epsilon > 0$ making it infrared-attractive. For a non-abelian gauge coupling the one-loop beta function is</p>
 <p>$$
 \beta_g = -\frac{g^3}{16\pi^2}\,b_0,
 \qquad
@@ -364,7 +364,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_k^2 = -e_t$</td>
+<td>Quaternion basis, $\vec e_\imath^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -411,15 +411,15 @@ $$</p>
 <td>Renormalization scale</td>
 </tr>
 <tr>
-<td>$\Gamma_k[\xi]$, $\Gamma_k^{(2)}$</td>
+<td>$\Gamma_\imath[\xi]$, $\Gamma_\imath^{(2)}$</td>
 <td>Wilsonian effective action and its second functional derivative</td>
 </tr>
 <tr>
-<td>$R_k$</td>
+<td>$R_\imath$</td>
 <td>Regulator function</td>
 </tr>
 <tr>
-<td>$\partial/\partial r'_t\,\Gamma_k = \mathrm{Sc}[(\Gamma_k^{(2)}+R_k)^{-1}\partial/\partial r'_t R_k]$</td>
+<td>$\partial/\partial r'_t\,\Gamma_\imath = \mathrm{Sc}[(\Gamma_\imath^{(2)}+R_\imath)^{-1}\partial/\partial r'_t R_\imath]$</td>
 <td>Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace</td>
 </tr>
 <tr>
@@ -431,8 +431,8 @@ $$</p>
 <td>Fixed point, $\beta(g^*) = 0$</td>
 </tr>
 <tr>
-<td>$\lambda$</td>
-<td>Scalar quartic coupling, $(\lambda/4!)\xi^4$</td>
+<td>$\varpi_{\mathrm{cpl}}$</td>
+<td>Scalar quartic coupling, $(\varpi_{\mathrm{cpl}}/4!)\xi^4$</td>
 </tr>
 <tr>
 <td>$\epsilon = 4-d$</td>
@@ -459,7 +459,7 @@ $$</p>
 <td>Number of Dirac quark flavours</td>
 </tr>
 <tr>
-<td>$\lambda^* = 16\pi^2\epsilon/3$</td>
+<td>$\varpi_{\mathrm{cpl}}^* = 16\pi^2\epsilon/3$</td>
 <td>Wilson–Fisher fixed point</td>
 </tr>
 <tr>

@@ -110,7 +110,7 @@ $$</p>
 <h3 id="the-three-coordinate-bases">The three coordinate bases</h3>
 <p>The algebra singles out three directions — the axes $\vec u_x,\vec u_y,\vec u_z$ of the imaginary units — and with them three idempotent bases:</p>
 <p>$$
-\mathcal{B}_k = \bigl\{\tilde\Pi_{\mathrm{id},1}(\vec u_k),\ \tilde\Pi_{\mathrm{id},2}(\vec u_k)\bigr\}, \qquad k=1,2,3 .
+\mathcal{B}_\imath = \bigl\{\tilde\Pi_{\mathrm{id},1}(\vec u_\imath),\ \tilde\Pi_{\mathrm{id},2}(\vec u_\imath)\bigr\}, \qquad k=1,2,3 .
 $$</p>
 <p>Explicitly, using $\tilde Q_x=i\vec e_x$, $\tilde Q_y=i\vec e_y$, $\tilde Q_z=i\vec e_z$,</p>
 <p>$$
@@ -123,32 +123,32 @@ $$</p>
 <h3 id="the-overlap-between-different-bases">The overlap between different bases</h3>
 <p>Take two distinct coordinate bases, $j\neq k$. Then for any signs $s,s_2\in\{+1,-1\}$,</p>
 <p>$$
-\tilde\Pi_{\mathrm{id},s}(\vec u_j)\,\tilde\Pi_{\mathrm{id},s_2}(\vec u_k)
+\tilde\Pi_{\mathrm{id},s}(\vec u_j)\,\tilde\Pi_{\mathrm{id},s_2}(\vec u_\imath)
 = \tfrac{1}{4}\bigl(e_t + s_2 i\vec e_{\jmath} + s i\vec e_{\imath} + ss_2 (i\vec e_{\imath})(i\vec e_{\jmath})\bigr)
 = \tfrac{1}{4}\bigl(e_t + s_2 i\vec e_{\jmath} + s i\vec e_{\imath} - ss_2 \vec e_{\imath} \vec e_{\jmath}\bigr),
 $$</p>
 <p>and taking the scalar part, the three crossed terms vanish and the last contributes $-2\,\mathrm{Sc}(\vec e_{\imath}\vec e_{\jmath}) = 0$ for ${\imath}\neq \jmath$ because distinct quaternion units are orthogonal under the scalar part. Hence</p>
 <p>$$
-2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},s}(\vec u_j)\tilde\Pi_{\mathrm{id},s_2}(\vec u_k)\bigr) = \tfrac{1}{4}\cdot 2 = \tfrac{1}{2}
+2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},s}(\vec u_j)\tilde\Pi_{\mathrm{id},s_2}(\vec u_\imath)\bigr) = \tfrac{1}{4}\cdot 2 = \tfrac{1}{2}
 \qquad (j\neq k),
 $$</p>
 <p>independently of the signs. In the Hilbert-space language,</p>
 <p>$$
-\bigl|\langle \tilde{Ξ}_{s}(\vec u_j)|\tilde{Ξ}_{s_2}(\vec u_k)\rangle\bigr|^2 = \tfrac{1}{2} = \frac{1}{d},
+\bigl|\langle \tilde{Ξ}_{s}(\vec u_j)|\tilde{Ξ}_{s_2}(\vec u_\imath)\rangle\bigr|^2 = \tfrac{1}{2} = \frac{1}{d},
 \qquad d=2 ,
 $$</p>
 <p>so <strong>the three coordinate bases are pairwise mutually unbiased</strong>. The derivation used only the algebra's product rules and the scalar part; unbiasedness is a property of the three imaginary units and their orthogonality, not an additional geometric input.</p>
 <h3 id="orthogonality-within-a-basis">Orthogonality within a basis</h3>
 <p>Within one basis, $j=k$, the same computation gives</p>
 <p>$$
-2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},s}(\vec u_k)\tilde\Pi_{\mathrm{id},s_2}(\vec u_k)\bigr)
+2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},s}(\vec u_\imath)\tilde\Pi_{\mathrm{id},s_2}(\vec u_\imath)\bigr)
 = \tfrac{1}{4}\cdot 2\,\mathrm{Sc}\bigl(e_t + (s+s_2)i\vec e_{\imath} + ss_2(i\vec e_{\imath})^2\bigr)
 = \tfrac{1}{4}\bigl(2 - 2ss_2\bigr)
 = \begin{cases}1 & s=s_2,\ 0 & s=-s_2.\end{cases}
 $$</p>
 <p>The two cases are exactly the normalization and orthogonality of the basis. Thus the same formula produces orthogonality within a basis and unbiasedness across bases, the sign of the unit's square being responsible for the difference. This is the algebraic statement that the three bases are as correlated as possible internally and as uncorrelated as possible externally.</p>
 <h3 id="maximality">Maximality</h3>
-<p>For the qubit the maximum number of mutually unbiased bases is $d+1 = 3$, and the three coordinate bases attain it. No fourth basis can be unbiased with all three: a fourth direction $\vec u$ would need $\vec u\cdot\vec u_k = 0$ for $k=1,2,3$, which is impossible for a unit vector in $\mathbb{R}^3$. The algebra thus supplies a <strong>complete</strong> set of mutually unbiased bases, and it does so through the three pairwise orthogonal directions singled out by the imaginary units. The completeness is not merely a counting statement; it is what makes the three coordinate measurements tomographically sufficient.</p>
+<p>For the qubit the maximum number of mutually unbiased bases is $d+1 = 3$, and the three coordinate bases attain it. No fourth basis can be unbiased with all three: a fourth direction $\vec u$ would need $\vec u\cdot\vec u_\imath = 0$ for $k=1,2,3$, which is impossible for a unit vector in $\mathbb{R}^3$. The algebra thus supplies a <strong>complete</strong> set of mutually unbiased bases, and it does so through the three pairwise orthogonal directions singled out by the imaginary units. The completeness is not merely a counting statement; it is what makes the three coordinate measurements tomographically sufficient.</p>
 <h3 id="the-overlap-matrix">The overlap matrix</h3>
 <p>Arrange the six pure states as columns in the order</p>
 <p>$$
@@ -168,33 +168,33 @@ $$</p>
 $$</p>
 <p>for a state of unit trace (the matrix normalisation; for the qubit this is $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$), so the $d(d+1)$ probabilities determine the state linearly. For the qubit this is the statement that three measurements, each with two outcomes, fix the three Bloch components: the six probabilities determine $\tilde{Ϛ}_{\Psi}$, and the formula above reconstructs it.</p>
 <h3 id="verification-for-the-qubit">Verification for the qubit</h3>
-<p>Let $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$ and let $r_k = \vec s_{\Psi}\cdot\vec u_k$. In basis $\mathcal{B}_k$ the two outcome probabilities are $p_\pm^{(k)} = \tfrac12(1\pm r_k)$. The contribution of basis $k$ to the sum is</p>
+<p>Let $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$ and let $r_\imath = \vec s_{\Psi}\cdot\vec u_\imath$. In basis $\mathcal{B}_\imath$ the two outcome probabilities are $p_\pm^{(k)} = \tfrac12(1\pm r_\imath)$. The contribution of basis $k$ to the sum is</p>
 <p>$$
-p_+^{(k)}\tilde\Pi_{\mathrm{id},1}(\vec u_k) + p_-^{(k)}\tilde\Pi_{\mathrm{id},2}(\vec u_k)
-= \tfrac12\bigl(e_t + i r_k\vec u_k\bigr),
+p_+^{(k)}\tilde\Pi_{\mathrm{id},1}(\vec u_\imath) + p_-^{(k)}\tilde\Pi_{\mathrm{id},2}(\vec u_\imath)
+= \tfrac12\bigl(e_t + i r_\imath\vec u_\imath\bigr),
 $$</p>
 <p>as follows by expanding the two terms. Summing over the three bases gives</p>
 <p>$$
-\sum_{k\in\{x,y,z\}}\tfrac12\bigl(e_t + i r_k\vec u_k\bigr)
+\sum_{\imath\in\{x,y,z\}}\tfrac12\bigl(e_t + i r_\imath\vec u_\imath\bigr)
 = \tfrac{3}{2}e_t + \tfrac12 i\vec s_{\Psi}
 = e_t + \tfrac12\bigl(e_t + i\vec s_{\Psi}\bigr)
 = e_t + \tilde{Ϛ}_{\Psi} ,
 $$</p>
 <p>which rearranges to the reconstruction formula. Every step was verified numerically on a generic state with all three Bloch components non-zero; the reconstruction returned the input state to machine precision. The identity is the tomographic statement anticipated in the article on the native qubit: the three coordinate measurements determine the state, and no fourth measurement is needed.</p>
 <h3 id="complementarity-and-information">Complementarity and information</h3>
-<p>The information content of the MUB structure is that the three bases are <strong>maximally complementary</strong>: certainty in one is total ignorance in the others. If the state is one of the two idempotents of $\mathcal{B}_k$, the outcome in that basis is certain, while in either other basis it is $\tfrac12$ for each outcome. The mutual information between the outcomes of measurements in two different bases is therefore zero for every state, which is the operational content of unbiasedness. The three bases are the measurements that reveal the three independent components of the state, and none of them reveals anything about the others' outcomes.</p>
+<p>The information content of the MUB structure is that the three bases are <strong>maximally complementary</strong>: certainty in one is total ignorance in the others. If the state is one of the two idempotents of $\mathcal{B}_\imath$, the outcome in that basis is certain, while in either other basis it is $\tfrac12$ for each outcome. The mutual information between the outcomes of measurements in two different bases is therefore zero for every state, which is the operational content of unbiasedness. The three bases are the measurements that reveal the three independent components of the state, and none of them reveals anything about the others' outcomes.</p>
 <h3 id="entropic-uncertainty">Entropic uncertainty</h3>
 <p>Complementarity can be quantified. For two bases with maximum overlap $c = \max_{a,b}|\langle a|b\rangle_{*}|^2 = 1/2$, the Maassen–Uffink inequality bounds the sum of the Shannon entropies of the two outcome distributions:</p>
 <p>$$
 H(A) + H(B) \ \geq\ \log_2\frac{1}{c} = \log_2 2 = 1 \ \text{bit} .
 $$</p>
-<p>The bound is attained at the eigenstates of one of the two bases: for the eigenstate $\tilde\Pi_{\mathrm{id},1}(\vec u_x)$ of the first basis, the first measurement is certain, $H(A) = 0$, while the second measurement is uniform, $H(B) = h_2(\tfrac12) = 1$ bit, so the sum is exactly one bit. The algebra supplies the interpretation: the overlap of an idempotent of one basis with an idempotent of another is the normalised Hermitian form, read through the scalar part, $\tfrac12$, and a uniform two-outcome distribution carries exactly one bit. Two complementary bases therefore cannot both be known, and the minimum ignorance is one bit — the qubit cannot carry the information of two complementary observables at once. This is the entropic restatement of the algebraic fact that $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},s}(\vec u_j)\tilde\Pi_{\mathrm{id},s_2}(\vec u_k)^{*}) = \tfrac12$ across bases.</p>
+<p>The bound is attained at the eigenstates of one of the two bases: for the eigenstate $\tilde\Pi_{\mathrm{id},1}(\vec u_x)$ of the first basis, the first measurement is certain, $H(A) = 0$, while the second measurement is uniform, $H(B) = h_2(\tfrac12) = 1$ bit, so the sum is exactly one bit. The algebra supplies the interpretation: the overlap of an idempotent of one basis with an idempotent of another is the normalised Hermitian form, read through the scalar part, $\tfrac12$, and a uniform two-outcome distribution carries exactly one bit. Two complementary bases therefore cannot both be known, and the minimum ignorance is one bit — the qubit cannot carry the information of two complementary observables at once. This is the entropic restatement of the algebraic fact that $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},s}(\vec u_j)\tilde\Pi_{\mathrm{id},s_2}(\vec u_\imath)^{*}) = \tfrac12$ across bases.</p>
 <h3 id="the-frame-identity">The frame identity</h3>
-<p>Summing the idempotents of a complete set of bases gives a resolution of the identity that underlies the reconstruction formula below. Each basis resolves the identity on its own, $\sum_{s}\tilde\Pi_{\mathrm{id},s}(\vec u_k) = e_t$, so summing over the three bases gives</p>
+<p>Summing the idempotents of a complete set of bases gives a resolution of the identity that underlies the reconstruction formula below. Each basis resolves the identity on its own, $\sum_{s}\tilde\Pi_{\mathrm{id},s}(\vec u_\imath) = e_t$, so summing over the three bases gives</p>
 <p>$$
-\sum_{k\in\{x,y,z\}}\sum_{s=\pm}\tilde\Pi_{\mathrm{id},s}(\vec u_k) = 3\,e_t ,
+\sum_{\imath\in\{x,y,z\}}\sum_{s=\pm}\tilde\Pi_{\mathrm{id},s}(\vec u_\imath) = 3\,e_t ,
 \qquad\text{equivalently}\qquad
-\sum_{k\in\{x,y,z\}}\sum_{s=\pm}\frac{1}{3}\tilde\Pi_{\mathrm{id},s}(\vec u_k) = e_t ,
+\sum_{\imath\in\{x,y,z\}}\sum_{s=\pm}\frac{1}{3}\tilde\Pi_{\mathrm{id},s}(\vec u_\imath) = e_t ,
 $$</p>
 <p>and in general a complete set of $d+1$ mutually unbiased bases satisfies $\sum_{b=1}^{d+1}\sum_{i=1}^{d}\tilde\Pi_{\mathrm{id},i}^{(b)} = (d+1)e_t$, with uniform weight $1/(d+1)$. The identity was verified by explicit computation for the qubit. It is the operator statement that the six coordinate idempotents form a tight frame; the weight $1/(d+1)$ is not the same as the overlap $1/d$, and the difference between the two numbers is the reason the reconstruction formula above is an affine rather than a linear combination of the outcome probabilities.</p>
 <h2 id="the-two-qubit-case">The Two-Qubit Case</h2>
@@ -216,7 +216,7 @@ $$</p>
 <p><strong>What it does.</strong></p>
 <ul>
 <li>It identifies a basis of the defining module with an idempotent basis $\{\tilde\Pi_{\mathrm{id},i}\}$, $\tilde\Pi_{\mathrm{id},i}\tilde\Pi_{\mathrm{id},j} = \delta_{ij}\tilde\Pi_{\mathrm{id},i}$, $\sum_i\tilde\Pi_{\mathrm{id},i} = e_t$, and the overlap between rays with the normalised Hermitian form of idempotents, read as the scalar pairing.</li>
-<li>It derives mutual unbiasedness of the three qubit bases directly from the pairwise orthogonality of the imaginary units, giving $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},s}(\vec u_j)\tilde\Pi_{\mathrm{id},s_2}(\vec u_k)^{*}) = \tfrac12$ for $j\neq k$.</li>
+<li>It derives mutual unbiasedness of the three qubit bases directly from the pairwise orthogonality of the imaginary units, giving $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},s}(\vec u_j)\tilde\Pi_{\mathrm{id},s_2}(\vec u_\imath)^{*}) = \tfrac12$ for $j\neq k$.</li>
 <li>It exhibits the maximal set: three bases for the qubit, with the explicit block-form overlap matrix.</li>
 <li>It gives the reconstruction formula $\tilde{Ϛ}_{\Psi} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_{\mathrm{id},i}^{(b)} - e_t$ and verifies it for the qubit.</li>
 <li>It shows that the tensor product does not preserve maximality of MUB sets, and that the Bell basis is not unbiased with respect to the product basis.</li>
@@ -237,14 +237,14 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>A basis of the defining module is an idempotent basis of $\mathbb{B}_{\Psi}$: a complete orthogonal family of rank-one idempotents, $\tilde\Pi_{\mathrm{id},i}\tilde\Pi_{\mathrm{id},j} = \delta_{ij}\tilde\Pi_{\mathrm{id},i}$ and $\sum_i\tilde\Pi_{\mathrm{id},i} = e_t$. Two bases are mutually unbiased when the normalised Hermitian form of any idempotent of one with any idempotent of the other equals $1/d$; equivalently, when every ray of one has squared overlap $1/d$ with every ray of the other. For the native qubit the maximum number of mutually unbiased bases is $d+1 = 3$, and they are the eigenbases of the three imaginary units:</p>
 <p>$$
-\mathcal{B}_k = \bigl\{\tfrac12(e_t+i\vec u_k),\ \tfrac12(e_t-i\vec u_k)\bigr\}, \qquad k=1,2,3 .
+\mathcal{B}_\imath = \bigl\{\tfrac12(e_t+i\vec u_\imath),\ \tfrac12(e_t-i\vec u_\imath)\bigr\}, \qquad k=1,2,3 .
 $$</p>
 <p>The unbiasedness is derived from the algebra alone: for $j\neq k$ the crossed terms vanish and the invertibles' orthogonality gives</p>
 <p>$$
-2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},s}(\vec u_j)\tilde\Pi_{\mathrm{id},s_2}(\vec u_k)\bigr) = \tfrac12 , \qquad
-2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},s}(\vec u_k)\tilde\Pi_{\mathrm{id},s_2}(\vec u_k)\bigr) = \delta_{ss_2} .
+2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},s}(\vec u_j)\tilde\Pi_{\mathrm{id},s_2}(\vec u_\imath)\bigr) = \tfrac12 , \qquad
+2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},s}(\vec u_\imath)\tilde\Pi_{\mathrm{id},s_2}(\vec u_\imath)\bigr) = \delta_{ss_2} .
 $$</p>
-<p>The overlap matrix of the six pure states has identity blocks on the diagonal and constant blocks $\tfrac12 J_2$ off it. The three measurements are tomographically complete: $\tilde{Ϛ}_{\Psi} = \sum_{k\in\{x,y,z\}}\sum_{s=\pm} p_s^{(k)}\tilde\Pi_{\mathrm{id},s}(\vec u_k) - e_t$, verified on a generic state. For two qubits the maximum is $d+1=5$ bases; the tensor product of qubit MUB sets supplies only three, and the Bell basis is not unbiased with respect to the product basis, its overlap being $\tfrac12$ rather than $\tfrac14$. The framework thus supplies the qubit's complete MUB set natively, from the three imaginary units, and exhibits the failure of naive tensoring.</p>
+<p>The overlap matrix of the six pure states has identity blocks on the diagonal and constant blocks $\tfrac12 J_2$ off it. The three measurements are tomographically complete: $\tilde{Ϛ}_{\Psi} = \sum_{\imath\in\{x,y,z\}}\sum_{s=\pm} p_s^{(k)}\tilde\Pi_{\mathrm{id},s}(\vec u_\imath) - e_t$, verified on a generic state. For two qubits the maximum is $d+1=5$ bases; the tensor product of qubit MUB sets supplies only three, and the Bell basis is not unbiased with respect to the product basis, its overlap being $\tfrac12$ rather than $\tfrac14$. The framework thus supplies the qubit's complete MUB set natively, from the three imaginary units, and exhibits the failure of naive tensoring.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -283,7 +283,7 @@ $$</p>
 <td>Mutual unbiasedness</td>
 </tr>
 <tr>
-<td>$\mathcal{B}_k = \{\tilde\Pi_{\mathrm{id},1,2}(\vec u_k)\}$</td>
+<td>$\mathcal{B}_\imath = \{\tilde\Pi_{\mathrm{id},1,2}(\vec u_\imath)\}$</td>
 <td>The three coordinate bases</td>
 </tr>
 <tr>
@@ -291,7 +291,7 @@ $$</p>
 <td>Hermitian involutions defining the bases</td>
 </tr>
 <tr>
-<td>$2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},s}(\vec u_j)\tilde\Pi_{\mathrm{id},s_2}(\vec u_k)^{*}) = \tfrac12$ ($j\neq k$)</td>
+<td>$2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},s}(\vec u_j)\tilde\Pi_{\mathrm{id},s_2}(\vec u_\imath)^{*}) = \tfrac12$ ($j\neq k$)</td>
 <td>Unbiasedness of the coordinate bases</td>
 </tr>
 <tr>

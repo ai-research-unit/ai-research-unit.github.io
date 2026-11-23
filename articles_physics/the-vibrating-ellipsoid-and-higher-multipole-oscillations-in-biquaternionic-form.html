@@ -79,7 +79,7 @@
 - Companion article <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>, for the four-vectors and the vector part.
 - Companion article <em>Algebra and Element Conventions</em>, for the trace, the metric (its three levels are ruled on in <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>), and the conventions of presentation.
 - Companion article <em>The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form</em>, for the multipole series, the dipole as a vector element, and the quadrupole as a symmetric traceless tensor.</p>
-<p>Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{B}_{H}$, the material sector is $\mathbb{B}_{\Phi}$ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, and the biquaternionic gradient is $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec\nabla_\Phi$ with $\vec\nabla_\Phi = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a <strong>mass</strong> density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{Ϛ}_{\Psi}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.</p>
+<p>Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\imath^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{B}_{H}$, the material sector is $\mathbb{B}_{\Phi}$ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, and the biquaternionic gradient is $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec\nabla_\Phi$ with $\vec\nabla_\Phi = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a <strong>mass</strong> density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{Ϛ}_{\Psi}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.</p>
 <h2 id="the-rigid-body-rotor">The Rigid-Body Rotor</h2>
 <p>The rotor algebra used below is stated explicitly, from first principles.</p>
 <h3 id="rotors">Rotors</h3>
@@ -109,7 +109,7 @@ $$</p>
 <h3 id="rotation-of-a-rank-two-tensor">Rotation of a Rank-Two Tensor</h3>
 <p>The quadrupole moment is a rank-two symmetric traceless tensor, and it transforms under the rotation as a bilinear form rather than as a vector. Writing $\mathcal{Q}^{(b)}$ for the body-frame components, the lab-frame components are</p>
 <p>$$
-\mathcal{Q}^{(lab)}_{ij} = R_{ik}R_{jl}\mathcal{Q}^{(b)}_{k l} ,
+\mathcal{Q}^{(lab)}_{ij} = R_{i\imath}R_{jl}\mathcal{Q}^{(b)}_{\imath l} ,
 $$</p>
 <p>equivalently $\mathcal{Q}^{(lab)} = R\,\mathcal{Q}^{(b)}R^{\mathsf{T}}$. In rotor language the same statement is that the associated bilinear form is evaluated on body-frame components,</p>
 <p>$$
@@ -182,7 +182,7 @@ $$</p>
 <h3 id="body-frame-and-lab-frame">Body Frame and Lab Frame</h3>
 <p>A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $\mathcal{Q}^{(b)} = \mathrm{diag}(\lambda_1, \lambda_2, \lambda_3)$ with $\lambda_1+\lambda_2+\lambda_3 = 0$, and let the body rotate about the $\vec e_z$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,</p>
 <p>$$
-\mathcal{Q}^{(lab)}_{ij}(r'_t) = R_{ik}(r'_t)\,R_{jl}(r'_t)\,\mathcal{Q}^{(b)}_{k l},
+\mathcal{Q}^{(lab)}_{ij}(r'_t) = R_{i\imath}(r'_t)\,R_{jl}(r'_t)\,\mathcal{Q}^{(b)}_{\imath l},
 \qquad
 \tilde U(r'_t) = \cos\frac{\Omega r'_t}{2} + \sin\frac{\Omega r'_t}{2}\,\vec e_z .
 $$</p>
@@ -226,7 +226,7 @@ $$</p>
 <p>$$
 \mathrm{Sc}\!\left(\vec\nabla_\Phi\vec v\right) = -\sum_{\imath}\partial/\partial R_{\imath}\,v_{\imath} = -\vec\nabla_\Phi\cdot\vec v,
 $$</p>
-<p>obtained from $\vec\nabla_\Phi\vec v = \sum_{\imath,\jmath}\vec e_{\imath} \vec e_{\jmath}\,\partial/\partial R_{\imath}\,v_{\jmath}$: only the terms with $\mu = \jmath$ contribute to the centre, and $\vec e_k^2 = -e_t$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla_\Phi\vec v$, a scalar statement, while the remainder of $\vec\nabla_\Phi\vec v$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
+<p>obtained from $\vec\nabla_\Phi\vec v = \sum_{\imath,\jmath}\vec e_{\imath} \vec e_{\jmath}\,\partial/\partial R_{\imath}\,v_{\jmath}$: only the terms with $\mu = \jmath$ contribute to the centre, and $\vec e_\imath^2 = -e_t$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla_\Phi\vec v$, a scalar statement, while the remainder of $\vec\nabla_\Phi\vec v$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
 - Companion article <em>Similitudes Between the Poisson Bracket and the Quantum Commutator</em>, for the vector-part algebra and the commutator $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ used in these manipulations.</p>
 <h3 id="the-energy-of-a-mode">The Energy of a Mode</h3>
 <p>For small oscillations the energy of a mode is the sum of a kinetic term and a potential term, each quadratic in the amplitude. For a surface-tension drop of density $\rho_m$ and equilibrium radius $R_0$, the potential energy of an $l$-th mode of amplitude $a_l$ is proportional to the change in surface area, and the kinetic energy is proportional to $\rho_m R_0^5\left(da_{l}/dt'\right)^{2}$. Writing $E = \frac12 M_l\left(da_{l}/dt'\right)^{2} + \frac12 K_l a_l^2$ and identifying the frequency from $\omega_l^2 = K_l/M_l$ gives the Rayleigh value quoted above; the coefficients $M_l$ and $K_l$ follow from the standard surface-area and kinetic-energy integrals of an incompressible mode, and their ratio is the standard result. Each mode is then an independent harmonic oscillator, and the total energy is the sum over the tower,</p>
@@ -238,7 +238,7 @@ $$</p>
 <p>It is worth stating exactly where the tower sits in the framework, because this is the point that the rotating and vibrating body makes concrete. The tower of mode amplitudes $a_{l\,n_{\mathrm{mag}}}(r'_t)$ is a set of functions labelled by the irreducible representations $D^{(l)}$ of the rotation group, and the space they span is the space of functions on the sphere — infinite-dimensional. The algebraic objects that appear are the rotor $\tilde U(r'_t)$ and the vector fields $\vec v$ of the medium, both of which are elements of the finite-dimensional algebra. The rotor acts on the tower because every $D^{(l)}$ is a representation of the same rotation group; the vector fields are the $D^{(1)}$ representation, the one non-trivial representation the algebra contains. Nothing in the algebra grows with $l$. This is the structural situation that the final article of the sequence examines in general terms.</p>
 <h2 id="the-oscillating-moments-as-sources">The Oscillating Moments as Sources</h2>
 <h3 id="time-dependent-multipole-fields">Time-Dependent Multipole Fields</h3>
-<p>The moments $\mathrm{Sd}_{ij}(r'_t)$, $\mathrm{Sd}_{ijk}(r'_t), \dots$ are the sources of a time-dependent field. In the non-relativistic, long-wavelength limit — the wavelength large compared with the body, so that the source may be treated as a single oscillating moment — the field far from the source is the retarded multipole field, and its leading $l$-pole contribution falls off as $r^{-(l+1)}$ with an oscillatory factor at the source frequency. This is the standard multipole radiation of classical field theory, and it is imported here rather than re-derived.</p>
+<p>The moments $\mathrm{Sd}_{ij}(r'_t)$, $\mathrm{Sd}_{\imath\jmath\ell}(r'_t), \dots$ are the sources of a time-dependent field. In the non-relativistic, long-wavelength limit — the wavelength large compared with the body, so that the source may be treated as a single oscillating moment — the field far from the source is the retarded multipole field, and its leading $l$-pole contribution falls off as $r^{-(l+1)}$ with an oscillatory factor at the source frequency. This is the standard multipole radiation of classical field theory, and it is imported here rather than re-derived.</p>
 <h3 id="power-scaling">Power Scaling</h3>
 <p>The radiated power from a time-varying multipole of order $l$ scales with the frequency as a high power. For an electric quadrupole, the standard long-wavelength result gives $P\propto|d^3Q/d{r'_{t}}^3|^2$; for a moment oscillating as $\mathcal{Q}\propto\cos(\omega r'_t/c)$ this gives $d^3Q/d{r'_{t}}^3\propto\omega^3$ and</p>
 <p>$$
@@ -266,7 +266,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_k^2 = -e_t$</td>
+<td>Quaternion basis, $\vec e_\imath^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>

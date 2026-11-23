@@ -526,15 +526,15 @@ a\ge\lvert\vec w\rvert\ \ \text{and}\ \ 1-a\ge\lvert\vec w\rvert
 $$</p>
 <p>The two inequalities are the two conditions $\tilde{\mathcal E}_{\Psi}\ge0$ and $e_t-\tilde{\mathcal E}_{\Psi}\ge0$, each of them the cone condition of the observable section applied to one of the two elements. The interval is a double cone with apexes at zero and at the unit, and its widest cross-section is at $a=\tfrac12$.</p>
 <p>The projections are the extreme points. At $a=\tfrac12$ and $\lvert\vec w\rvert=\tfrac12$ the effect is $\tilde\Pi_{\mathrm{id},1}(\vec u)=\tfrac12(e_t+i\vec u)$, an idempotent, and no idempotent lies in the interior of the interval. The interval is therefore the convex hull of the projections plus the two endpoints, and the projections are the measurements with a definite outcome. The effect algebra of the sector is the interval of its own order, and the projection lattice is the two-sphere of axes together with zero and the unit.</p>
-<p>A general resolution of the unit is a measurement. A finite family $\{\tilde{\mathcal E}_{\Psi,k}\}$ with $\tilde{\mathcal E}_{\Psi,k}\ge0$ and $\sum_k\tilde{\mathcal E}_{\Psi,k}=e_t$ is a POVM, and the weight of the $k$-th outcome is</p>
+<p>A general resolution of the unit is a measurement. A finite family $\{\tilde{\mathcal E}_{\Psi,k}\}$ with $\tilde{\mathcal E}_{\Psi,k}\ge0$ and $\sum_\imath\tilde{\mathcal E}_{\Psi,k}=e_t$ is a POVM, and the weight of the $k$-th outcome is</p>
 <p>$$
-p_k=\frac{\mathrm{Sc}\bigl(\tilde{\mathcal E}_{\Psi,k}\tilde{Ϛ}_\Psi\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)}=a_k+\vec w_k\cdot\vec s_{\Psi},
+p_\imath=\frac{\mathrm{Sc}\bigl(\tilde{\mathcal E}_{\Psi,k}\tilde{Ϛ}_\Psi\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)}=a_\imath+\vec w_\imath\cdot\vec s_{\Psi},
 \qquad
-\sum_k a_k=1,
+\sum_\imath a_\imath=1,
 \qquad
-\sum_k\vec w_k=0 .
+\sum_\imath\vec w_\imath=0 .
 $$</p>
-<p>The two sums are the single condition $\sum_k\tilde{\mathcal E}_{\Psi,k}=e_t$ split into its two blocks. Normalisation of the weights follows, positivity follows from the interval, and the projective case is the one in which the effects are idempotents and pairwise orthogonal.</p>
+<p>The two sums are the single condition $\sum_\imath\tilde{\mathcal E}_{\Psi,k}=e_t$ split into its two blocks. Normalisation of the weights follows, positivity follows from the interval, and the projective case is the one in which the effects are idempotents and pairwise orthogonal.</p>
 <p>An effect is a measurement with a finite resolution, and the resolution is a number. The one-parameter family</p>
 <p>$$
 \tilde{\mathcal E}_{\Psi,\pm}=\tfrac12\bigl(e_t\pm\eta\,i\vec u\bigr),
@@ -550,13 +550,13 @@ $$</p>
 <p>which vanishes exactly at the endpoint. The number $\eta$ is the sharpness of the measurement: at $\eta=1$ the analyser passes one axis and blocks the other, and at $\eta=0$ the two effects are both $\tfrac12e_t$ and the outcome carries no information about the state at all. <strong>Every intermediate value is a measurement whose two outcomes overlap, and the overlap is what the interval's interior contains.</strong></p>
 <p>Three outcomes show that the projection lattice is not the whole story. With three unit vectors $\vec u_0,\vec u_1,\vec u_2$ at $120^\circ$ apart, so that $\vec u_0+\vec u_1+\vec u_2=0$, the three effects</p>
 <p>$$
-\tilde{\mathcal E}_{\Psi,k}=\tfrac13\bigl(e_t+i\vec u_k\bigr)=\tfrac23\,\tilde\Pi_{\mathrm{id},1}(\vec u_k),
+\tilde{\mathcal E}_{\Psi,k}=\tfrac13\bigl(e_t+i\vec u_\imath\bigr)=\tfrac23\,\tilde\Pi_{\mathrm{id},1}(\vec u_\imath),
 \qquad
 k=0,1,2,
 $$</p>
-<p>are a POVM with weights $p_k=\tfrac13(1+\vec u_k\cdot\vec s_{\Psi})$. No two of them are orthogonal and none of them is a projection, so the measurement has three outcomes and no orthonormal basis. The projection lattice of a two-dimensional carrier cannot supply three orthogonal alternatives, and the interval supplies them without an enlargement.</p>
-<p><strong>What the interval does not supply is the state after the measurement.</strong> The weight is a statistic of the preparation and the effect alone. The update of the state requires a family of maps, $\tilde{Ϛ}_\Psi\mapsto\sum_k\tilde M_{\mathrm{kraus},k}\tilde{Ϛ}_\Psi\tilde M_{\mathrm{kraus},k}^{*}$ with $\sum_k\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}=e_t$, and the Kraus operators are not determined by the effect they implement. Two instruments with the same POVM can update the state differently, so the interval answers "how often" and not "what then".</p>
-<p>The dilation is the algebraic reason the interval is enough. Every POVM on this carrier has a projective realisation on a larger algebra, $\mathbb{B}\otimes_{\mathbb{C}}M_k(\mathbb{C})\cong M_{2k}(\mathbb{C})$, and the enlargement is by a factor that the tensor product supplies. The interval of the small algebra is therefore not an approximation to a projective measurement on the same algebra; it is the shadow of a projective measurement on a larger one, and the shadow is exact.</p>
+<p>are a POVM with weights $p_\imath=\tfrac13(1+\vec u_\imath\cdot\vec s_{\Psi})$. No two of them are orthogonal and none of them is a projection, so the measurement has three outcomes and no orthonormal basis. The projection lattice of a two-dimensional carrier cannot supply three orthogonal alternatives, and the interval supplies them without an enlargement.</p>
+<p><strong>What the interval does not supply is the state after the measurement.</strong> The weight is a statistic of the preparation and the effect alone. The update of the state requires a family of maps, $\tilde{Ϛ}_\Psi\mapsto\sum_\imath\tilde M_{\mathrm{kraus},k}\tilde{Ϛ}_\Psi\tilde M_{\mathrm{kraus},k}^{*}$ with $\sum_\imath\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}=e_t$, and the Kraus operators are not determined by the effect they implement. Two instruments with the same POVM can update the state differently, so the interval answers "how often" and not "what then".</p>
+<p>The dilation is the algebraic reason the interval is enough. Every POVM on this carrier has a projective realisation on a larger algebra, $\mathbb{B}\otimes_{\mathbb{C}}M_\imath(\mathbb{C})\cong M_{2k}(\mathbb{C})$, and the enlargement is by a factor that the tensor product supplies. The interval of the small algebra is therefore not an approximation to a projective measurement on the same algebra; it is the shadow of a projective measurement on a larger one, and the shadow is exact.</p>
 <h2 id="the-geometry-of-the-slice">The Geometry of the Slice</h2>
 <p>The boundary carries two metric structures, and both come from the algebra. The pure states are a two-sphere, and the two forms of the sector restrict to it as a metric and as a two-form. The Hermitian form gives the transition probability between two pure states, and the quaternionic norm gives the line element. The two are different functions of the same pair of axes, and the entry states both.</p>
 <p>The transition probability is the Hermitian pairing of two idempotents. For two pure states on the axes $\vec u_1$ and $\vec u_2$,</p>

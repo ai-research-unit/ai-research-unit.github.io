@@ -258,9 +258,9 @@ $$</p>
 <h3 id="the-velocity-and-the-heat-flow">The velocity and the heat flow</h3>
 <p>His velocity is the current's direction, and the standard name for that choice is the Eckart frame. Relativistic hydrodynamics fixes the fluid's velocity in one of two ways. The Eckart frame takes the particle flux, and that is his, by definition: $S_{\imath}=\rho v_{\imath}$. The Landau frame takes the energy flux, the timelike eigenvector of the stress. The two coincide exactly when the energy flux vanishes in the Eckart frame, and that flux is the heat flow,</p>
 <p>$$
-q_{\imath}=\sum_\lambda\varepsilon_\lambda T_{\imath\lambda}u_\lambda-\epsilon\,u_{\imath},
+q_{\imath}=\sum_\imath\varepsilon_\imath T_{\imathk}u_\imath-\epsilon\,u_{\imath},
 \qquad
-\epsilon=\sum_{\lambda,\rho}\varepsilon_\lambda\varepsilon_\rho T_{\lambda\rho}u_\lambda u_\rho,
+\epsilon=\sum_{k,\rho}\varepsilon_\imath\varepsilon_\rho T_{k\rho}u_\imath u_\rho,
 $$</p>
 <p>with $u$ the Eckart velocity, a unit timelike vector, and $\epsilon$ the energy density it sees.</p>
 <p>A plane wave has none, and a superposition has some. Computed on the Belinfante stress — the symmetrised canonical tensor, whose divergence vanishes to $2\times10^{-16}$ on every case checked — a single plane wave has $\lVert q\rVert/\lvert\epsilon\rvert\le6\times10^{-16}$. The two-mode superposition has it at $0.31$ and $0.34$ of the energy density at two events, and the particle–antiparticle superposition at $18$ and $15$. The angle and the flux move together: $\lvert\cos\theta\rvert=1$ with $q=0$, and $\lvert\cos\theta\rvert<1$ with $q\neq0$.</p>
@@ -277,7 +277,7 @@ $$</p>
 p=\tfrac13\bigl(\epsilon-mc^{2}\rho\cos\theta\bigr).
 $$</p>
 <p>The isotropic part is a function of the state, since $\epsilon$ and $\cos\theta$ are. The deviatoric part is not, and the next computation shows by how much it is not.</p>
-<p><strong>At fixed density and fixed angle the rest of the stress is not fixed.</strong> Two positive-energy modes, the first at momentum $(0.7,0.3,0)$ and the second at $(-\lambda,0.4,0.2)$, both of amplitude one, at one event, with the momentum in units of $mc$ and $\pi^{j}{}_{k}$ the traceless part of the spatial block:</p>
+<p><strong>At fixed density and fixed angle the rest of the stress is not fixed.</strong> Two positive-energy modes, the first at momentum $(0.7,0.3,0)$ and the second at $(-\lambda,0.4,0.2)$, both of amplitude one, at one event, with the momentum in units of $mc$ and $\pi^{j}{}_{\imath}$ the traceless part of the spatial block:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -450,7 +450,7 @@ $$</p>
 <td>Trace of the stress; the mass term</td>
 </tr>
 <tr>
-<td>$p$, $\pi^{j}{}_{k}$</td>
+<td>$p$, $\pi^{j}{}_{\imath}$</td>
 <td>Pressure and the traceless part of the spatial block</td>
 </tr>
 <tr>

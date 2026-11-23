@@ -73,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The stress of a spinorial field has two parts, a symmetric part that carries the energy and momentum and an antisymmetric part that carries the spin, and only the first of them is a conserved density. That division is the article's subject. The symmetric part has ten independent components, the antisymmetric part six, the general tensor sixteen. An element of $\mathbb{B}$ has eight real components and can hold four of them.</p>
 <p>The count looks like a defeat and it is not one. The antisymmetric part of the canonical stress is, by the Belinfante relation, the divergence of the spin tensor. A total divergence carries no charge, so the antisymmetric part contributes nothing to the total energy–momentum of a localised field. The object that a fluid needs is the conserved four-vector, and one element holds exactly that: the energy density in its scalar slot and the momentum density in its vector slot. The limitation and the choice coincide.</p>
-<p>What the element holds of the spin is the density and not the current. The spin tensor $S_{\lambda\imath\jmath}$ has twenty-four components, the Frenkel condition cuts it to twelve, and its time slice at a point is an antisymmetric pair with six, which the condition cuts to three. Those three are the vector slots of one Hermitian element whose scalar slot vanishes. So one element per event holds the spin density exactly, and the spin current needs three more.</p>
+<p>What the element holds of the spin is the density and not the current. The spin tensor $S_{k\imath\jmath}$ has twenty-four components, the Frenkel condition cuts it to twelve, and its time slice at a point is an antisymmetric pair with six, which the condition cuts to three. Those three are the vector slots of one Hermitian element whose scalar slot vanishes. So one element per event holds the spin density exactly, and the spin current needs three more.</p>
 <p>The pair of laws is the rotor's equation read twice. The energy–momentum law is the conservation of the symmetric part. The spin law is the divergence of the spin current equalling a torque, and the torque is the rotor connection contracted with the spin. When the connection turns about the spin's own axis the torque vanishes, and that is the free rotor's conservation law in components.</p>
 <p>It does not reconstruct the sixteen-component tensor as elements, it does not derive the Belinfante relation, and it does not compute the value of the spin. The relation is a theorem of the standard theory and is imported with its convention stated; what the article adds is where each object lands among the algebra's slots and what the slots cannot hold.</p>
 <h2 id="the-count">The Count</h2>
@@ -116,9 +116,9 @@
 <h3 id="why-the-count-is-not-a-defeat">Why the Count Is Not a Defeat</h3>
 <p>An antisymmetric part that is a total divergence carries no charge. That is the content of the Belinfante relation: the antisymmetric part of the canonical stress equals minus one half the divergence of the spin tensor,</p>
 <p>$$
-T_{\mathrm{can},[\imath\jmath]}=-\tfrac12\sum_\lambda\partial_\lambda S_{\lambda\imath\jmath},
+T_{\mathrm{can},[\imath\jmath]}=-\tfrac12\sum_\imath\partial_\imath S_{k\imath\jmath},
 $$</p>
-<p>with $S_{\lambda\imath\jmath}$ antisymmetric in its last two indices and every index low. Integrating over a localised field, the divergence integrates to a boundary term and vanishes, so the antisymmetric part contributes nothing to the total energy or momentum.</p>
+<p>with $S_{k\imath\jmath}$ antisymmetric in its last two indices and every index low. Integrating over a localised field, the divergence integrates to a boundary term and vanishes, so the antisymmetric part contributes nothing to the total energy or momentum.</p>
 <p>The relation is imported, and its convention is stated. The factor $\tfrac12$ and the sign are those of the standard treatment, quoted in <a href="the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a> §<em>The Belinfante improvement</em>. The article does not re-derive it and does not claim it as framework content.</p>
 <p>What the relation means for the algebra is that the missing six are missing from the charge and not from the description. A fluid's energy and momentum are the symmetric part's conserved four-vector; the antisymmetric part describes a redistribution inside the field and no transport of charge. So an element that holds four and not sixteen holds everything a fluid conserves, and the rest is either a divergence or a transport coefficient.</p>
 <p>The polar word separates the orbital part of the angular momentum into the boost and the intrinsic part into the rotor, so the two are separated by construction and there is no improvement to make. That is the Frenkel article's observation, and this article's count is its arithmetic form.</p>
@@ -149,10 +149,10 @@ $$</p>
 <p>$$
 T_{\imath\jmath}=mc^{2}\Omega\,u_{\imath} u_{\jmath},\qquad u_{\imath}=\frac{P_{\imath}}{mc},
 $$</p>
-<p>with $u$ the unit flow. Its rest frame is the mode's own frame, and there $\epsilon=mc^{2}\Omega$, $p=0$, and every $T_{jk}$ vanishes.</p>
+<p>with $u$ the unit flow. Its rest frame is the mode's own frame, and there $\epsilon=mc^{2}\Omega$, $p=0$, and every $T_{j\imath}$ vanishes.</p>
 <p><em>Check.</em> Boosted to the rest frame of its own current, the spatial block has largest entry $8\times10^{-16}$, for either spin, for the rest frame and for two waves of one momentum, at three events of each field. Two waves of one momentum and opposite spins give $\epsilon=4$ at the momentum $mc$ with $\bar u\,u=2m$ per wave, $p=0$ and shear $0$: the energies add and no stress appears. So the spin does not enter the symmetric part at fixed momentum, and the dust character belongs to the momentum alone.</p>
-<p>A massless mode is a null dust. At $m=0$ the trace identity forces $\Omega=0$ and the single-mode tensor is $\epsilon \nu_{\imath} \nu_{\jmath}$ with $k$ null. In the frame of the mode the spatial block is $\epsilon n_jn_k$: one eigenvalue $\epsilon$ along the direction of motion and two zero across it. The isotropised pressure is $\epsilon/3$, so the radiation equation of state is what tracelessness gives; the stress is nevertheless uniaxial, and the equation of state does not make it isotropic.</p>
-<p><em>Check.</em> At $m=10^{-8}$ with the momentum $(0.9,-0.4,0.3)$: $\sum_{\imath}\varepsilon_{\imath} P_{\imath} P_{\imath}=2\times10^{-16}$, $T_{jj}/\epsilon=1.000000$, the three eigenvalues of $T_{jk}$ are $(0,0,1)\epsilon$, and the trace is $3\times10^{-16}\epsilon$, for either spin.</p>
+<p>A massless mode is a null dust. At $m=0$ the trace identity forces $\Omega=0$ and the single-mode tensor is $\epsilon \nu_{\imath} \nu_{\jmath}$ with $k$ null. In the frame of the mode the spatial block is $\epsilon n_jn_\imath$: one eigenvalue $\epsilon$ along the direction of motion and two zero across it. The isotropised pressure is $\epsilon/3$, so the radiation equation of state is what tracelessness gives; the stress is nevertheless uniaxial, and the equation of state does not make it isotropic.</p>
+<p><em>Check.</em> At $m=10^{-8}$ with the momentum $(0.9,-0.4,0.3)$: $\sum_{\imath}\varepsilon_{\imath} P_{\imath} P_{\imath}=2\times10^{-16}$, $T_{jj}/\epsilon=1.000000$, the three eigenvalues of $T_{j\imath}$ are $(0,0,1)\epsilon$, and the trace is $3\times10^{-16}\epsilon$, for either spin.</p>
 <p>What the two results say together is that the pressure of a massive field is interference. A massive single mode carries none, and a massless one carries a third of its energy density by tracelessness. So on the massive side every pressure is a property of the superposition and not of the particles, and none of it comes from the spin. That is the precise sense of the count's remark that the pressure enters through the equation of state: the equation is the trace identity, the identity is the mass term, and the mass term is the scalar bilinear.</p>
 <h2 id="the-spin-tensor-as-one-element">The Spin Tensor as One Element</h2>
 <h3 id="twenty-four-twelve-and-three">Twenty-Four, Twelve and Three</h3>
@@ -168,12 +168,12 @@ $$</p>
 <tbody>
 <tr>
 <td>the tensor</td>
-<td>$S_{\lambda\imath\jmath}$, antisymmetric in $\mu\jmath$</td>
+<td>$S_{k\imath\jmath}$, antisymmetric in $\mu\jmath$</td>
 <td>24</td>
 </tr>
 <tr>
 <td>the Frenkel condition</td>
-<td>$\sum_{\jmath} S_{\lambda\imath\jmath}v_{\Phi,\jmath}=0$</td>
+<td>$\sum_{\jmath} S_{k\imath\jmath}v_{\Phi,\jmath}=0$</td>
 <td>12</td>
 </tr>
 <tr>
@@ -203,16 +203,16 @@ $$</p>
 <p>which is $\partial_t w_{\mathrm{fl}}+\vec\nabla_\Phi\cdot\vec S_{\mathrm P}=0$ in the flat case: an energy density whose rate of change is the divergence of its flux. The quantum stress article proves that on solutions the flux carries the quantum potential and that the divergence of the quantum part is the quantum force.</p>
 <p>The law is one real equation and the element has four slots, so three of the four are not constrained by it. That is not a defect: a conservation law constrains the four-vector's divergence and leaves its curl free, and the curl is the dynamics that the field equation supplies. The same division appears in the scalar fluid, where the continuity equation constrains the density and the mass shell supplies the momentum.</p>
 <h3 id="the-spin-law">The Spin Law</h3>
-<p><strong>The divergence of the spin current is a torque, and the torque is the rotor connection contracted with the spin.</strong> With the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_k\tilde u_{\mathrm r}=\tfrac12\vec\Omega_k$, a real vector part,</p>
+<p><strong>The divergence of the spin current is a torque, and the torque is the rotor connection contracted with the spin.</strong> With the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_\imath\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\imath$, a real vector part,</p>
 <p>$$
-\sum_{k\in\{x,y,z\}}\partial_k S_{\Psi,k,\lambda\jmath}=\tau_{\lambda\jmath},
+\sum_{\imath\in\{x,y,z\}}\partial_\imath S_{\Psi,k,k\jmath}=\tau_{k\jmath},
 \qquad
-\tau_{\lambda\jmath}=\tfrac12\Bigl(\sum_\rho\varepsilon_\rho\,\Omega_{\lambda\rho}S_{\rho\jmath}-\sum_\rho\varepsilon_\rho\,\Omega_{\jmath\rho}S_{\rho\lambda}\Bigr).
+\tau_{k\jmath}=\tfrac12\Bigl(\sum_\rho\varepsilon_\rho\,\Omega_{k\rho}S_{\rho\jmath}-\sum_\rho\varepsilon_\rho\,\Omega_{\jmath\rho}S_{\rhok}\Bigr).
 $$</p>
-<p>The display is the rotor's own equation in components. The rotor's equation is $\partial_k\tilde u_{\mathrm r}=\tfrac12\vec\Omega_k\tilde u_{\mathrm r}$, and differentiating the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ gives the commutator of the connection with the spin. The conservation law is that statement with the indices put back. <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a> derives it and this article quotes it.</p>
+<p>The display is the rotor's own equation in components. The rotor's equation is $\partial_\imath\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\imath\tilde u_{\mathrm r}$, and differentiating the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ gives the commutator of the connection with the spin. The conservation law is that statement with the indices put back. <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a> derives it and this article quotes it.</p>
 <p>The torque vanishes when the connection turns about the spin's own axis. That is the free rotor's conservation, and it is a statement about the geometry of the rotation and not about the field equation.</p>
 <p><em>Check.</em> At rest, with the flow $v_{\Phi}=e_t$ and the spin along $\vec e_z$, the spin tensor is $S_{12}=+1$ and the rest of its components vanish. Take the connection's spatial part $\vec\Omega_{0}$ and compute all six components of $\tau$. For $\vec\Omega_{0}=(0,0,2)$ the maximum modulus of $\tau$ is $0.000000$; for $\vec\Omega_{0}=(1,0,0)$ it is $0.500000$; for the mixed $\vec\Omega_{0}=(1,0,1)$ it is $0.500000$. So the torque vanishes exactly when the connection is along the spin and not otherwise.</p>
-<p>It establishes that the source of the spin law is a commutator and that its kernel is the connection along the spin. It does not establish that the connection is derivable from the field equation: $\vec\Omega_k$ is what the polar form's fourth bracket supplies, and the equation for it is the corpus's open question.</p>
+<p>It establishes that the source of the spin law is a commutator and that its kernel is the connection along the spin. It does not establish that the connection is derivable from the field equation: $\vec\Omega_\imath$ is what the polar form's fourth bracket supplies, and the equation for it is the corpus's open question.</p>
 <h2 id="the-gordon-spin-term-and-the-vorticity">The Gordon Spin Term and the Vorticity</h2>
 <p>The Gordon decomposition splits the current into a convection part and a spin part, and the spin part is a bound current. The identity is</p>
 <p>$$
@@ -257,11 +257,11 @@ $$</p>
 <td>Stress and its antisymmetric part</td>
 </tr>
 <tr>
-<td>$S_{\lambda\imath\jmath}$</td>
+<td>$S_{k\imath\jmath}$</td>
 <td>Spin current, antisymmetric in the last two indices</td>
 </tr>
 <tr>
-<td>$S_{\Psi,k,\lambda\jmath}$</td>
+<td>$S_{\Psi,k,k\jmath}$</td>
 <td>Its components in the corpus's letters</td>
 </tr>
 <tr>
@@ -273,11 +273,11 @@ $$</p>
 <td>Spin direction</td>
 </tr>
 <tr>
-<td>$\tilde u_{\mathrm r}^{-1}\partial_k\tilde u_{\mathrm r}=\tfrac12\vec\Omega_k$</td>
+<td>$\tilde u_{\mathrm r}^{-1}\partial_\imath\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\imath$</td>
 <td>Rotor connection</td>
 </tr>
 <tr>
-<td>$\tau_{\lambda\jmath}$</td>
+<td>$\tau_{k\jmath}$</td>
 <td>Torque, the spin law's source</td>
 </tr>
 <tr>

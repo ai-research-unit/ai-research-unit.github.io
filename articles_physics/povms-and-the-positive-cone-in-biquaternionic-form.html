@@ -101,7 +101,7 @@ $$</p>
 $$</p>
 <p>where $\tilde{\mathcal E}_{\Psi} = a_te_t + i\vec a$, and the doubled pairing $2\langle\tilde H_\Psi,\tilde{\mathcal E}_{\Psi}\rangle_{*}$ is the matrix trace of the $2\times2$ image. Direct computation of the Hermitian form on the Hermitian basis gives</p>
 <p>$$
-\langle e_t,e_t\rangle = 1, \qquad \langle e_t,i\vec e_k\rangle = 0, \qquad \langle i\vec e_j,i\vec e_k\rangle = \delta_{jk},
+\langle e_t,e_t\rangle = 1, \qquad \langle e_t,i\vec e_\imath\rangle = 0, \qquad \langle i\vec e_j,i\vec e_\imath\rangle = \delta_{j\imath},
 $$</p>
 <p>so the Hermitian form is the positive definite Euclidean form of inertia $(4,0)$ in the coefficients. The <strong>dual cone</strong> is</p>
 <p>$$
@@ -190,19 +190,19 @@ $$</p>
 <p>This is <strong>Naimark's dilation theorem</strong>, the measurement analogue of Stinespring's dilation for channels. In the framework's language, the dilation adjoins an ancillary factor and replaces the general effects by orthogonal idempotents; the price is that the ancillary factor must be reduced over, which is precisely the information loss that a non-projective measurement represents. The dilation is standard; it is cited, not derived, and it belongs to the same circle of ideas as the Kraus representation of channels. It also shows why the framework's general measurement theory does not require abandoning the idempotent picture of a projective measurement: it embeds it in a larger algebra.</p>
 <h2 id="two-worked-examples">Two Worked Examples</h2>
 <h3 id="the-trine-povm">The trine POVM</h3>
-<p>Let $\vec u_k$, $k=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_{k\in\{x,y,z\}}\vec u_k = 0$ and $\sum_{k\in\{x,y,z\}}\tilde\Pi_{\mathrm{id},1}(\vec u_k) = \tfrac32 e_t$. Define</p>
+<p>Let $\vec u_\imath$, $k=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_{\imath\in\{x,y,z\}}\vec u_\imath = 0$ and $\sum_{\imath\in\{x,y,z\}}\tilde\Pi_{\mathrm{id},1}(\vec u_\imath) = \tfrac32 e_t$. Define</p>
 <p>$$
-\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\,\tilde\Pi_{\mathrm{id},1}(\vec u_k), \qquad k=1,2,3 .
+\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\,\tilde\Pi_{\mathrm{id},1}(\vec u_\imath), \qquad k=1,2,3 .
 $$</p>
 <p>Each $\tilde{\mathcal E}_{\Psi,k}$ is an effect — its coefficients are $a_t = \tfrac13$ and $|\vec a| = \tfrac13$, on the boundary of the interval — and they resolve the identity:</p>
 <p>$$
-\sum_{k\in\{x,y,z\}}\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\sum_{k\in\{x,y,z\}}\tilde\Pi_{\mathrm{id},1}(\vec u_k) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_t = e_t .
+\sum_{\imath\in\{x,y,z\}}\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\sum_{\imath\in\{x,y,z\}}\tilde\Pi_{\mathrm{id},1}(\vec u_\imath) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_t = e_t .
 $$</p>
-<p>The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{Ϛ}_{\Psi,k} = \tilde\Pi_{\mathrm{id},1}(\vec u_k)$, the probability of correctly identifying the state is</p>
+<p>The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{Ϛ}_{\Psi,k} = \tilde\Pi_{\mathrm{id},1}(\vec u_\imath)$, the probability of correctly identifying the state is</p>
 <p>$$
-P_{\mathrm{succ}} = \frac{1}{3}\sum_{k\in\{x,y,z\}}2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,k}\tilde{\mathcal E}_{\Psi,k}^{*})
-= \frac{1}{3}\sum_{k\in\{x,y,z\}}2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi,k}\,\tfrac23\tilde{Ϛ}_{\Psi,k}\right)
-= \frac{1}{3}\sum_{k\in\{x,y,z\}}\frac{2}{3} = \frac{2}{3},
+P_{\mathrm{succ}} = \frac{1}{3}\sum_{\imath\in\{x,y,z\}}2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,k}\tilde{\mathcal E}_{\Psi,k}^{*})
+= \frac{1}{3}\sum_{\imath\in\{x,y,z\}}2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi,k}\,\tfrac23\tilde{Ϛ}_{\Psi,k}\right)
+= \frac{1}{3}\sum_{\imath\in\{x,y,z\}}\frac{2}{3} = \frac{2}{3},
 $$</p>
 <p>since $\tilde{Ϛ}_{\Psi,k}^2 = \tilde{Ϛ}_{\Psi,k}$ and $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,k}) = 1$. A projective measurement of a qubit has only two outcomes and cannot separate three symmetric states as well; the trine POVM is the standard example of a genuinely non-projective measurement, and it is expressed here purely in terms of the idempotents and the plain form of the algebra.</p>
 <h3 id="unambiguous-discrimination">Unambiguous discrimination</h3>
@@ -274,7 +274,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion units, $\vec e_k^2 = -e_t$</td>
+<td>Quaternion units, $\vec e_\imath^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -337,7 +337,7 @@ $$</p>
 <td>Naimark dilation</td>
 </tr>
 <tr>
-<td>$\tilde{\mathcal E}_{\Psi,k} = \tfrac23\tilde\Pi_{\mathrm{id},1}(\vec u_k)$</td>
+<td>$\tilde{\mathcal E}_{\Psi,k} = \tfrac23\tilde\Pi_{\mathrm{id},1}(\vec u_\imath)$</td>
 <td>Trine POVM</td>
 </tr>
 <tr>

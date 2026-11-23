@@ -143,8 +143,8 @@ $$</p>
 <p>where $k$ is the number of material factors.</p>
 <p><strong>The theorem (parity, not position, is what survives).</strong> The real span of the decomposable tensors with exactly $k$ material factors is the eigenspace of $*\otimes n$ for the eigenvalue $(-1)^{k}$. Consequently the $2^{n}$ corners collapse onto two spaces:</p>
 <p>$$
-\bigoplus_{k\text{ even}}C_{k}=\mathrm{Herm}\bigl(M_{2^{n}}(\mathbb{C})\bigr),\qquad
-\bigoplus_{k\text{ odd}}C_{k}=\mathrm{anti\text{-}Herm}\bigl(M_{2^{n}}(\mathbb{C})\bigr),
+\bigoplus_{k\text{ even}}C_{\imath}=\mathrm{Herm}\bigl(M_{2^{n}}(\mathbb{C})\bigr),\qquad
+\bigoplus_{k\text{ odd}}C_{\imath}=\mathrm{anti\text{-}Herm}\bigl(M_{2^{n}}(\mathbb{C})\bigr),
 $$</p>
 <p>each of real dimension $4^{n}/2=2^{2n-1}$.</p>
 <p><em>Proof.</em> The eigenvalue statement is the computation above. A tensor with $k$ material factors lies in the span indexed by $k$, and the spans for the same parity of $k$ are all equal to the corresponding eigenspace by the corner identity applied slot by slot: replacing a factor $x_j$ by $\mathrm i x_j$ moves one slot between sectors and multiplies the tensor by $-\mathrm i\cdot\mathrm i=-1$... more directly, replacing an informational factor $u$ by the material factor $\mathrm i u$ maps a tensor with $k$ material factors to the negative of a tensor with $k+1$; hence the spans for $k$ and for $k+2$ coincide, and only the parity remains. The dimensions follow from $\dim_{\mathbb{R}}M_{2^{n}}(\mathbb{C})=2\cdot4^{n}$ split evenly by the involution.</p>
@@ -154,10 +154,10 @@ $$</p>
 <h2 id="the-rank-computation">The Rank Computation</h2>
 <p>What has to be checked. The identity $C_{\Psi\Psi}=C_{\Phi\Phi}$ is a statement about spans, and a span can be smaller than the count of its generators suggests. The check is that the sixteen tensors</p>
 <p>$$
-e_t\otimes e_t,\quad (i\vec e_k)\otimes e_t,\quad e_t\otimes(i\vec e_k),\quad (i\vec e_k)\otimes(i\vec e_\ell),
+e_t\otimes e_t,\quad (i\vec e_\imath)\otimes e_t,\quad e_t\otimes(i\vec e_\imath),\quad (i\vec e_\imath)\otimes(i\vec e_\ell),
 $$</p>
 <p>with $k,\ell\in\{x,y,z\}$, are linearly independent and span the Hermitian part.</p>
-<p>The check. In the Pauli model $e_t=\mathrm I_2$ and $i\vec e_k=-\sigma_k$, so the sixteen tensors are $\mathrm I\otimes\mathrm I$, $-\sigma_k\otimes\mathrm I$, $-\mathrm I\otimes\sigma_k$ and $\sigma_k\otimes\sigma_\ell$. All are Hermitian. Since $\{\mathrm I,\sigma_x,\sigma_y,\sigma_z\}$ is a real basis of $\mathrm{Herm}(2)$, the sixteen products form a real basis of $\mathrm{Herm}(2)\otimes_{\mathbb{R}}\mathrm{Herm}(2)$, which maps isomorphically onto $\mathrm{Herm}(4)$ because both have real dimension sixteen and the products span. So the rank is sixteen, which is half of thirty-two.</p>
+<p>The check. In the Pauli model $e_t=\mathrm I_2$ and $i\vec e_\imath=-\sigma_\imath$, so the sixteen tensors are $\mathrm I\otimes\mathrm I$, $-\sigma_\imath\otimes\mathrm I$, $-\mathrm I\otimes\sigma_\imath$ and $\sigma_\imath\otimes\sigma_\ell$. All are Hermitian. Since $\{\mathrm I,\sigma_x,\sigma_y,\sigma_z\}$ is a real basis of $\mathrm{Herm}(2)$, the sixteen products form a real basis of $\mathrm{Herm}(2)\otimes_{\mathbb{R}}\mathrm{Herm}(2)$, which maps isomorphically onto $\mathrm{Herm}(4)$ because both have real dimension sixteen and the products span. So the rank is sixteen, which is half of thirty-two.</p>
 <p>The anti-Hermitian part is the same computation with one sign. Replacing one factor by a material element multiplies the tensor by $-1$ times a Hermitian tensor, hence the odd spans are the anti-Hermitian part, of dimension sixteen, and the two together exhaust the algebra.</p>
 <p>A numerical confirmation. The statement was checked on random real combinations: a random element of $C_{\Psi\Psi}$ and a random element of $C_{\Phi\Phi}$ were formed, and each was verified Hermitian to machine precision, with the two spans agreeing on a random sample of sixteen independent vectors. The identity $\vec e_{\imath}\otimes\vec e_{\imath}=-(i\vec e_{\imath})\otimes(i\vec e_{\imath})$ held to $10^{-16}$.</p>
 <h2 id="what-the-definition-does-and-does-not-assert">What the Definition Does and Does Not Assert</h2>

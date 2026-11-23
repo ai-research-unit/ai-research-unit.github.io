@@ -109,7 +109,7 @@
 <p>The Peirce frame comes first, then its compression, then the general theory, then the gamma frame built on the same sixteen operators.</p>
 <h2 id="the-results-in-brief">The Results in Brief</h2>
 <h3 id="the-root-and-the-peirce-frame">The Root and the Peirce Frame</h3>
-<p>A root of the unit fixes a frame. For $\vec Z=\sum_{k\in\{x,y,z\}}a_k\vec e_k$ with</p>
+<p>A root of the unit fixes a frame. For $\vec Z=\sum_{\imath\in\{x,y,z\}}a_\imath\vec e_\imath$ with</p>
 <p>$$
 \vec Z^{2}=-\bigl(a_x^2+a_y^2+a_z^2\bigr)e_t=e_t ,
 $$</p>
@@ -197,13 +197,13 @@ $$</p>
 <td>yes</td>
 </tr>
 <tr>
-<td>$\vec e_k$</td>
-<td>$-i\sigma_k$</td>
+<td>$\vec e_\imath$</td>
+<td>$-i\sigma_\imath$</td>
 <td>no</td>
 </tr>
 <tr>
-<td>$i\vec e_k$</td>
-<td>$\sigma_k$</td>
+<td>$i\vec e_\imath$</td>
+<td>$\sigma_\imath$</td>
 <td>yes</td>
 </tr>
 </tbody>
@@ -221,7 +221,7 @@ $$</p>
 <p>They satisfy the Clifford relations, with the sign vector $\varepsilon=(1,-1,-1,-1)$.</p>
 <p>$$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}\mathrm I_4,\qquad
-(\gamma_k)^2=-\mathrm I_4,\qquad
+(\gamma_\imath)^2=-\mathrm I_4,\qquad
 \gamma_5^2=\mathrm I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$</p>
@@ -261,7 +261,7 @@ $$</p>
 <h3 id="the-relabelling-test">The Relabelling Test</h3>
 <p>Apply the automorphism that exchanges two spatial units, re-read the statement, and compare.</p>
 <p>$$
-\vec e_k^{2}=-e_t
+\vec e_\imath^{2}=-e_t
 $$</p>
 <p>returns itself, with the index renamed: it is a fact about $\mathbb{B}$.</p>
 <p>$$
@@ -272,7 +272,7 @@ $$</p>
 <h3 id="the-defect-is-the-unmarked-direction">The Defect Is the Unmarked Direction</h3>
 <p>The defect is not that the display has a direction. A frame is legitimate whenever the physics supplies one: a Stern–Gerlach apparatus has an axis, a beam has an axis, a background field breaks isotropy, and in each case the frame is a datum and the correct practice is to name it and use it.</p>
 <p><strong>The defect is that the direction is unmarked.</strong> A sentence $\sigma_3[\vec u]$, with $\vec u$ the axis, would be complete and could be rotated. The sentence $\sigma_3$, with no axis, is incomplete and cannot be rotated, and the notation supplies no place to put the missing name. A formula of general physics is then printed with a datum it does not contain, and the reader has no way to subtract the datum.</p>
-<p>The signs are the model of the other case. Time is distinguished from space by the squares, $e_t^2=+e_t$ and $\vec e_k^2=-e_t$, and that asymmetry is carried by an object of the algebra, where it cannot be lost and needs no declaration. An asymmetry that the physics has belongs in an object; a direction that the physics does not have belongs nowhere.</p>
+<p>The signs are the model of the other case. Time is distinguished from space by the squares, $e_t^2=+e_t$ and $\vec e_\imath^2=-e_t$, and that asymmetry is carried by an object of the algebra, where it cannot be lost and needs no declaration. An asymmetry that the physics has belongs in an object; a direction that the physics does not have belongs nowhere.</p>
 <h3 id="what-is-not-claimed">What Is Not Claimed</h3>
 <p><strong>No computation done in the Pauli or gamma display is wrong.</strong> The Clifford relations hold in every display, every trace and every determinant is invariant, and an amplitude computed with gammas is correct. The Dirac equation written with the five gammas is a correct equation, and it is the equation of the literature.</p>
 <p>The claim is about the page. A fundamental equation should not be written in a form that privileges a direction the physical reality does not contain, because the privilege then travels with the formula and cannot be distinguished from the physics. The remedy is not a correction of any result; it is a rule of writing, and the display that obeys it is <em>The AXF Matrices: Axis-Free, Integer Entries</em>.</p>
@@ -303,9 +303,9 @@ $$</p>
 <h3 id="i2l-the-factor-math100-separates-the-generators-from-the-observables">I.2.l — The Factor $i$ Separates the Generators from the Observables</h3>
 <p>Read: the algebra's own basis maps to minus $i$ times the Pauli matrices, and the Hermitian basis maps to the Pauli matrices. The two rows differ by one factor and by nothing else.</p>
 <p>$$
-\vec e_k\longmapsto-i\sigma_k\ \ (\text{anti-Hermitian, generates}),\qquad i\vec e_k\longmapsto\sigma_k\ \ (\text{Hermitian, is measured}) .
+\vec e_\imath\longmapsto-i\sigma_\imath\ \ (\text{anti-Hermitian, generates}),\qquad i\vec e_\imath\longmapsto\sigma_\imath\ \ (\text{Hermitian, is measured}) .
 $$</p>
-<p>The factor is forced, and the sign is forced. A real $2\times2$ matrix of square $-\mathrm I_2$ is a complex structure on $\mathbb{R}^2$; three of them, anticommuting, are the quaternionic structure. The algebra whose vectors square to $-e_t$ needs the coefficient field to supply the $i$ that turns $\sigma_k$ into $-i\sigma_k$. The alternative assignment $\vec e_k\mapsto-\mathsf M_2(\vec e_k)$ keeps the squares and fails the products.</p>
+<p>The factor is forced, and the sign is forced. A real $2\times2$ matrix of square $-\mathrm I_2$ is a complex structure on $\mathbb{R}^2$; three of them, anticommuting, are the quaternionic structure. The algebra whose vectors square to $-e_t$ needs the coefficient field to supply the $i$ that turns $\sigma_\imath$ into $-i\sigma_\imath$. The alternative assignment $\vec e_\imath\mapsto-\mathsf M_2(\vec e_\imath)$ keeps the squares and fails the products.</p>
 <p>So $i$ is not bookkeeping. It is the statement that the three directions of the algebra are generators of rotations and not observables, and that the same three directions multiplied by $i$ are observables and not generators. The complexification is what allows one algebra to hold both.</p>
 <p>The boundary. The argument explains why the factor is present in the model. It does not derive the complex numbers from anything physical, and it does not say that a measured quantity must be Hermitian; that is a separate postulate which the image makes convenient.</p>
 <h3 id="i2m-the-doubling-is-where-the-factors-of-two-live">I.2.m — The Doubling Is Where the Factors of Two Live</h3>
@@ -316,7 +316,7 @@ $$</p>
 <h3 id="i2n-the-element-stores-half-the-rapidity">I.2.n — The Element Stores Half the Rapidity</h3>
 <p>Read: a boost rotor of rapidity $\eta$ has a matrix with eigenvalues $e^{\pmk/2}$, and its two-sided operator has eigenvalues $e^k,1,1,e^{-k}$.</p>
 <p>$$
-\tilde B_k=\cosh\tfrac{\eta}{2}\,e_t+\sinh\tfrac{\eta}{2}\,i\vec e_z,\qquad \mathsf M_2(\tilde B_k)=\operatorname{diag}\bigl(e^{k/2},e^{-k/2}\bigr) .
+\tilde B_\imath=\cosh\tfrac{\eta}{2}\,e_t+\sinh\tfrac{\eta}{2}\,i\vec e_z,\qquad \mathsf M_2(\tilde B_\imath)=\operatorname{diag}\bigl(e^{k/2},e^{-k/2}\bigr) .
 $$</p>
 <p>The half is the double cover, read on the spectrum. The element acts on the spinor, so it carries half of the rapidity; the congruence acts on the four-vector, so it carries the whole of it. The two middle eigenvalues of the operator are the transverse directions, which the boost fixes.</p>
 <p>The same factor appears for a rotation, with a sign that is observable. For a rotation of angle $\theta$ the element has eigenvalues $e^{\pm i\theta/2}$ and the operator has $e^{\pm i\theta}$ beside two ones. At $\theta=2\pi$ the element eigenvalues are $-1$ and the operator eigenvalues are $1$: the spinor returns with a sign and the vector returns unchanged.</p>

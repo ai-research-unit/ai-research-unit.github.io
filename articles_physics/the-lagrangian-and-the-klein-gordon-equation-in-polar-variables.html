@@ -92,7 +92,7 @@ $$</p>
 <h2 id="the-action-in-polar-variables">The Action in Polar Variables</h2>
 <p>The element-form action of the companion is</p>
 <p>$$
-S[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Big[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\sum_{k\in\{x,y,z\}}(\partial_{r_k}\tilde\Xi)^{*}\partial_{r_k}\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi^{*}\tilde\Xi\Big].
+S[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Big[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\sum_{\imath\in\{x,y,z\}}(\partial_{r_k}\tilde\Xi)^{*}\partial_{r_k}\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi^{*}\tilde\Xi\Big].
 $$</p>
 <p>The substitution is a change of variables in this functional. The subsections below compute the two terms, record where the rapidity sits in each of them, and assemble the action.</p>
 <p><strong>The bracket form of the kinetic term.</strong></p>
@@ -161,7 +161,7 @@ $$</p>
 <p><strong>The action, assembled.</strong></p>
 <p>$$
 \boxed{\;
-S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p_{a}\partial_{r'_t}p_{b}-\sum_{k\in\{x,y,z\}}g_{ab}(p)\,\partial_{r_k}p_{a}\partial_{r_k}p_{b}-\varrho^{2}V(p)\Bigr\}\;}
+S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p_{a}\partial_{r'_t}p_{b}-\sum_{\imath\in\{x,y,z\}}g_{ab}(p)\,\partial_{r_k}p_{a}\partial_{r_k}p_{b}-\varrho^{2}V(p)\Bigr\}\;}
 $$</p>
 <p>with $p_{a}=(\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})$ and $g$ known on the slice of fixed axes, which is the boxed metric above. The functional is the element-form action in other coordinates: no term was added, no term was dropped, and the only object that changed is the measure of the parameter space.</p>
 <p><strong>The central field is the case of one block.</strong> With $\theta_{\mathrm{rpd}}=0$ and the axes frozen, $g_{r\varrho}=1$, $g_{\theta\theta}=\varrho^{2}$, and all other entries vanish, so</p>
@@ -261,7 +261,7 @@ $$</p>
 j_{r'_t}=2\,\mathrm{Re}\,\mathrm{Sc}\big[i(\partial_{r'_t}\tilde\Xi)^{*}\tilde\Xi\big]
 =2\varrho^{2}\,\partial_{r'_t}\theta_{\mathrm{pha}}=\frac{2\pi 2\varrho^{2}}{h}\,\partial_{r'_t}S_{\tilde\Xi},
 \qquad
-j_k=-2\varrho^{2}\,\partial_{r_k}\theta_{\mathrm{pha}},
+j_\imath=-2\varrho^{2}\,\partial_{r_k}\theta_{\mathrm{pha}},
 $$</p>
 <p>because $\mathcal{A}_{\imath}=\partial_{\imath}\ln \varrho+i\partial_{\imath}\theta_{\mathrm{pha}}$, so that $i\mathcal{A}_{\imath}^{*}$ has scalar part $\partial_{\imath}\theta_{\mathrm{pha}}$. The charge density is therefore the density times the phase rate, and the phase rate is minus the energy over $\frac{h}{2\pi} c$,</p>
 <p>$$
@@ -277,7 +277,7 @@ $$</p>
 <p>which is the companion's $-2\nu_m\rho_{\mathrm{chg}}$ with the parent's $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})$ and $E$ the sheet's energy. The sign of the charge is the sign of $\partial_{r'_t}\theta_{\mathrm{pha}}$ and nothing else: the amplitude is positive and carries no sign, and the factor $2\rho_{\mathrm{num}}$ is positive.</p>
 <p><strong>Conservation is one of the two Euler–Lagrange equations.</strong> Taking the divergence,</p>
 <p>$$
-\partial_{r'_t}j_{r'_t}+\sum_{k\in\{x,y,z\}}\partial_{r_k}j_k
+\partial_{r'_t}j_{r'_t}+\sum_{\imath\in\{x,y,z\}}\partial_{r_k}j_\imath
 =2\Bigl[\partial_{r'_t}\bigl(\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)-\vec\nabla_\Phi\cdot\bigl(\varrho^{2}\vec\nabla_\Phi\theta_{\mathrm{pha}}\bigr)\Bigr],
 $$</p>
 <p>whose bracket is the transport equation. So the conservation of the charge is the Euler–Lagrange equation of the phase, exactly, and not merely a consequence of it. In the element form the same statement needs the equation and its conjugate; here it needs one variation.</p>
@@ -301,7 +301,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The polar action is the element-form action in the coordinates of the word,</p>
 <p>$$
-S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p_{a}\partial_{r'_t}p_{b}-\sum_{k\in\{x,y,z\}}g_{ab}(p)\,\partial_{r_k}p_{a}\partial_{r_k}p_{b}-\varrho^{2}V(p)\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p_{a}\partial_{r'_t}p_{b}-\sum_{\imath\in\{x,y,z\}}g_{ab}(p)\,\partial_{r_k}p_{a}\partial_{r_k}p_{b}-\varrho^{2}V(p)\Bigr\},
 $$</p>
 <p>with the kinetic Lagrangian of one direction</p>
 <p>$$
@@ -410,7 +410,7 @@ $$</p>
 <td>$\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)/\varrho^{2}$, real, a function of rapidity and axis</td>
 </tr>
 <tr>
-<td>$j_{r'_t},\ j_k$</td>
+<td>$j_{r'_t},\ j_\imath$</td>
 <td>Charge current; $j_{r'_t}=2\rho_{\mathrm{num}}\partial_{r'_t}\theta_{\mathrm{pha}}$</td>
 </tr>
 <tr>

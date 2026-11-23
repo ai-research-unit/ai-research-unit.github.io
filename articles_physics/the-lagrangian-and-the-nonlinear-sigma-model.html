@@ -95,7 +95,7 @@ $$</p>
 <p><em>Third, the action's only content is the derivative expansion.</em> Every invariant of the target that can be written is a power of $\partial\tilde U$, so the classical action is the first term of a series whose successive terms are suppressed by $f$. That is why the model is predictive below $4\pi f$ and silent above it.</p>
 <p>What is not new. The model, its target, its current and its power counting are standard. The physics is imported whole. What the algebra supplies is the carrier: the target is a submanifold of $\mathbb{H}$, the metric on it is the biquaternion norm, and the current is an algebra-valued one-form whose flatness is a commutator identity of the algebra.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_k^{2}=-e_t$ for $k=x,y,z$, and central scalar imaginary $i$. The material sector is $\mathbb{B}_\Phi$; the group-valued field takes values in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$.</p>
+<p>The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_\imath^{2}=-e_t$ for $k=x,y,z$, and central scalar imaginary $i$. The material sector is $\mathbb{B}_\Phi$; the group-valued field takes values in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$.</p>
 <p>The two products used. $\mathrm{Sc}(X)$ is the coefficient of $e_t$ in $X$; $\langle X\rangle_\natural=\mathrm{Sc}(X X^{\natural})$ is the Minkowski square of $X$. The spatial sum $\sum_{\imath}$ runs over $t,x,y,z$ with the corpus's sign rule $\sum_{\imath} X_{\imath} X_{\imath}=X_t^{2}-\sum_j X_j^{2}$.</p>
 <p>The gradient. $\tilde\nabla_\Phi$ is the corpus's gradient, $\tilde\nabla_\Phi=e_t\partial/\partial r'_t+\sum_j\vec e_j\partial/\partial R_j$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is the central scalar d'Alembertian. The volume element is $d^4r=c\,dr'_t\,dr_x\,dr_y\,dr_z$.</p>
 <p>The sign convention. The overall sign of the action is fixed once by requiring that the energy computed from it be positive, exactly as in the Skyrme article; with that sign the time derivative enters the kinetic term with a positive coefficient and the spatial gradients with a negative one. Every sign below follows from it and is not re-chosen.</p>
@@ -104,7 +104,7 @@ $$</p>
 <p>$$
 \tilde U=\exp\!\left(\frac{\vec\pi}{f}\right),
 \qquad
-\vec\pi=\sum_{k\in\{x,y,z\}} \pi_k\vec e_k ,
+\vec\pi=\sum_{\imath\in\{x,y,z\}} \pi_\imath\vec e_\imath ,
 \qquad
 \vec\pi^{\natural}=-\vec\pi ,
 $$</p>
@@ -112,9 +112,9 @@ $$</p>
 <p>$$
 \tilde U=\cos\frac{|\pi|}{f}\,e_t+\frac{\sin(|\pi|/f)}{|\pi|}\,\vec\pi ,
 \qquad
-|\pi|=\sqrt{\sum_{k\in\{x,y,z\}}\pi_k\pi_k},
+|\pi|=\sqrt{\sum_{\imath\in\{x,y,z\}}\pi_\imath\pi_\imath},
 $$</p>
-<p>the second form showing that the three $\pi_k$ are coordinates on the group and not linear fields.</p>
+<p>the second form showing that the three $\pi_\imath$ are coordinates on the group and not linear fields.</p>
 <p>The current. The Maurer–Cartan form is</p>
 <p>$$
 j_{\imath}=\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_{\imath}}\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi ,
@@ -132,7 +132,7 @@ $$</p>
 <p>$$
 j_{\imath}=\frac{1}{f}\frac{\partial \vec\pi}{\partial R_{\imath}}+O(\pi^2),
 \qquad
--\frac{f^2}{2}\mathrm{Sc}(j_{\imath} j_{\imath})=-\frac12\sum_{k\in\{x,y,z\}}\frac{\partial \pi_k}{\partial R_{\imath}}\frac{\partial \pi_k}{\partial R_{\imath}}+O(\pi^4),
+-\frac{f^2}{2}\mathrm{Sc}(j_{\imath} j_{\imath})=-\frac12\sum_{\imath\in\{x,y,z\}}\frac{\partial \pi_\imath}{\partial R_{\imath}}\frac{\partial \pi_\imath}{\partial R_{\imath}}+O(\pi^4),
 $$</p>
 <p>so that the quadratic part is the canonical kinetic term of three real fields with coefficient exactly one and no free parameter. The constant $f$ has cancelled between the coefficient and the current, and that cancellation is the statement that $f$ is the decay constant and not a coupling.</p>
 <p>Why no potential term. A term $V(\tilde U)$ would have to be invariant under $\tilde U\mapsto g_L\tilde U g_R^{*}$, and the only invariant function of a unit quaternion is a constant. The absence of a potential is therefore not a choice of the model but a consequence of the target: on $\mathbb{H}^1$ there is no invariant to build one from, and a mass term for $\vec\pi$ requires a source outside the chiral group, which is the explicit breaking the Goldstone article treats.</p>

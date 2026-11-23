@@ -82,7 +82,7 @@
 <p>$$
 D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
-D_k=\partial_k+\frac{2\pi iϙ}{h}A_k,
+D_\imath=\partial_\imath+\frac{2\pi iϙ}{h}A_\imath,
 \qquad
 \vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A,
 $$</p>
@@ -90,19 +90,19 @@ $$</p>
 <h2 id="the-exponent">The Exponent</h2>
 <p>The action is the coupled variational companion's. In the operator setting,</p>
 <p>$$
-S=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{hc}{8\pi^{2}\nu_m}\sum_{k\in\{x,y,z\}}\bigl(D_k\tilde\Xi\bigr)^{*}\bigl(D_k\tilde\Xi\bigr)+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Bigr],
+S=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\bigl(D_\imath\tilde\Xi\bigr)^{*}\bigl(D_\imath\tilde\Xi\bigr)+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Bigr],
 $$</p>
 <p>and the integral is $\int\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}\exp(\frac{2\pi iS}{h})$ with the free measure. The kinetic term is the free one and that is the metric's doing: the temporal connection is absorbed in $D_t$ and the kinetic term uses $\partial_{t'}$, so the antisymmetrisation that makes it Hermitian is untouched by the coupling.</p>
 <p><strong>The gradient term is a sum of moduli and stays a sum of moduli.</strong> For each $\eta$,</p>
 <p>$$
-\mathrm{Sc}\bigl((D_k\tilde\Xi)^{*}(D_k\tilde\Xi)\bigr)=\sum_{\imath=0}^{3}\bigl|(D_k\tilde\Xi)_{\imath}\bigr|^{2}\ \ge 0,
+\mathrm{Sc}\bigl((D_\imath\tilde\Xi)^{*}(D_\imath\tilde\Xi)\bigr)=\sum_{\imath=0}^{3}\bigl|(D_\imath\tilde\Xi)_{\imath}\bigr|^{2}\ \ge 0,
 $$</p>
 <p>so the coupled gradient term is positive for the same reason as the free one: the added term is anti-Hermitian and the modulus of an element is unchanged by adding to it an anti-Hermitian multiple of itself. <strong>The consequence is the diamagnetic inequality in its variational form</strong>: the action's kinetic part is bounded below by zero, and the energy is bounded below whenever $ϙ\omicron_{\mathrm{pot}}$ is. The integral inherits the bound, and the Fresnel convergence factor has to fight the potential and not the gradient.</p>
 <p>The three-term split is the coupling's whole content in the exponent. Written out,</p>
 <p>$$
--\frac{hc}{8\pi^{2}\nu_m}\sum_{k\in\{x,y,z\}}\bigl(D_k\tilde\Xi\bigr)^{*}\bigl(D_k\tilde\Xi\bigr)
-=-\frac{hc}{8\pi^{2}\nu_m}\sum_{k\in\{x,y,z\}}(\partial_k\tilde\Xi)^{*}(\partial_k\tilde\Xi)
--\frac{c}{2\pi\nu_m}\sum_{k\in\{x,y,z\}} ϙA_k\,\mathrm{Sc}\bigl(\tilde\Xi^{*}i\partial_k\tilde\Xi\bigr)
+-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\bigl(D_\imath\tilde\Xi\bigr)^{*}\bigl(D_\imath\tilde\Xi\bigr)
+=-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}(\partial_\imath\tilde\Xi)^{*}(\partial_\imath\tilde\Xi)
+-\frac{c}{2\pi\nu_m}\sum_{\imath\in\{x,y,z\}} ϙA_\imath\,\mathrm{Sc}\bigl(\tilde\Xi^{*}i\partial_\imath\tilde\Xi\bigr)
 -\frac{ϙ^{2}}{2m}|\vec A|^{2}\,\tilde\Xi^{*}\tilde\Xi .
 $$</p>
 <p>The first term is the free one, the second is linear in the connection and carries the phase current, the third is quadratic. The three are one square's expansion and not three rules, and the polar companion reads them as the chart's single shifted bracket. The identity was checked on analytic fields at four points against the modulus form, to a relative $2.1\times10^{-16}$.</p>
@@ -121,7 +121,7 @@ $$</p>
 \qquad
 \vec A\mapsto\vec A+\vec\nabla_\Phi\Gamma,
 $$</p>
-<p>which is the standard transformation with the sign convention of $D_t$ and $D_k$ above.</p>
+<p>which is the standard transformation with the sign convention of $D_t$ and $D_\imath$ above.</p>
 <p>The measure is invariant because the Jacobian is one. At each point the transformation multiplies the two real coordinates of the central field by a rotation matrix of unit determinant, so $\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}$ is unchanged. This is the sharpest difference from a lattice formulation: the phase is a modulus-one number at every point, so a finite transformation costs an invertible element Jacobian and nothing else.</p>
 <p>The exponent is invariant term by term. The kinetic term gains $-ϙ\,\partial_{t'}\Gamma\,n$, the potential term gains $+ϙ\,\partial_{t'}\Gamma\,n$, and the two cancel; the gradient term is invariant by covariance. The variational companion states the same cancellation and calls it the clearest statement of why the covariant derivative and the potential are one object. <strong>The integral's invariance is therefore exact and is not a boundary-term statement</strong>, because the two gains are equal and opposite inside the exponent at every point.</p>
 <p>The determinant is gauge invariant. The operator transforms by a similarity, $A_{\mathrm{gco}}\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}A_{\mathrm{gco}}e^{-\frac{2\pi iϙ\Gamma}{h}}$, on top of the shift that the potential supplies; the shift is what makes the similarity exact rather than approximate, and a similarity leaves the determinant unchanged. Since the measure's Jacobian is one, $Z$ is invariant, and so is every correlator of gauge-invariant insertions.</p>
@@ -198,7 +198,7 @@ $$</p>
 <td>Covariant temporal derivative</td>
 </tr>
 <tr>
-<td>$D_k=\partial_k+\frac{2\pi iϙ}{h}A_k$</td>
+<td>$D_\imath=\partial_\imath+\frac{2\pi iϙ}{h}A_\imath$</td>
 <td>Covariant spatial derivative</td>
 </tr>
 <tr>

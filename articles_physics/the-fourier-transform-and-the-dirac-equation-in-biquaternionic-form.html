@@ -161,7 +161,7 @@ $$</p>
 <p>The other form is not preserved, and its failure is not a normalization. The scalar part of the quaternionic norm of a field is $\mathrm{Sc}(ff^{\natural})=\sum_\alpha c_\alpha^{2}$ — a holomorphic quadratic form in the complex coefficients, with no conjugate anywhere. A unitary transform on coefficients preserves $\sum\bar c_\alpha c_\alpha$ and not $\sum c_\alpha^{2}$, because it mixes $c$ with $\bar c$.</p>
 <p>The numbers are unambiguous. On the same 64 samples the summed scalar part of the quaternionic norm went from $-16.861768-42.722374\,i$ in position space to $-15.112387-17.526486\,i$ in momentum space: the real part moved by a tenth and the imaginary part changed by more than a factor of two. For a field with real coefficients the failure is starkest, because the quaternionic norm is then real and the transform's value is not. One 64-sample real field gave $56.651597$ before the transform and $-6.686526$ after, and the exact identity behind the number is</p>
 <p>$$
-\sum_k\hat c_k^{2}=\sum_n c_nc_{-n},
+\sum_\imath\hat c_\imath^{2}=\sum_n c_nc_{-n},
 $$</p>
 <p>which held to $1.6\times10^{-13}$. <strong>The transform of the norm is the reflected overlap of the field with itself</strong>, not the norm, and the two agree only for a field symmetric under reflection.</p>
 <h3 id="why-they-differ">Why They Differ</h3>
@@ -187,7 +187,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>In position space the Dirac operator is mixed: the gradient is anti-Hermitian and the mass coefficient is Hermitian, and the two stand in one pair with opposite characters. Under the transform each derivative becomes multiplication by the central $i$ times the wave-number element, and multiplication by $i$ carries the anti-Hermitian symbol to a Hermitian one. The momentum-space operator is therefore Hermitian in every entry, and that is what a pure $\mathbb{B}_\Psi$ symbol means.</p>
 <p>The light cone is exactly the locus where $\tilde\Upsilon_\Phi/(2i\nu_t')$ is idempotent. The defect of idempotency is $-\frac{\nu_t'^{2}-\nu_{\Phi}^{2}}{4\nu_t'^{2}}e_t$, a central multiple of the interval, and on the cone the projector is $\tfrac12(e_t-i\hat n\cdot\vec e)$ of trace one, with the other sign of $\hat n$ giving the orthogonal partner. The two members of the massless pair have the two complementary minimal left ideals for their solution spaces, and the sign of the momentum's direction selects which is which.</p>
-<p>The transform preserves the Hermitian form, by Plancherel, and breaks the quaternionic norm, whose scalar part is a holomorphic quadratic form: the summed scalar part of the norm of a real 64-sample field went from $56.651597$ to $-6.686526$, with the exact identity $\sum_k\hat c_k^{2}=\sum_nc_nc_{-n}$ holding to $1.6\times10^{-13}$. So the indefinite quadratic structure lives on the symbol, where it is a level set: the Dirac shell is the level $-\nu_m^{2}$, and at $\nu_m=0$ that level set is the idempotent variety.</p>
+<p>The transform preserves the Hermitian form, by Plancherel, and breaks the quaternionic norm, whose scalar part is a holomorphic quadratic form: the summed scalar part of the norm of a real 64-sample field went from $56.651597$ to $-6.686526$, with the exact identity $\sum_\imath\hat c_\imath^{2}=\sum_nc_nc_{-n}$ holding to $1.6\times10^{-13}$. So the indefinite quadratic structure lives on the symbol, where it is a level set: the Dirac shell is the level $-\nu_m^{2}$, and at $\nu_m=0$ that level set is the idempotent variety.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -238,7 +238,7 @@ $$</p>
 <td>The quaternionic norm's scalar part; not preserved</td>
 </tr>
 <tr>
-<td>$\sum_k\hat c_k^{2}=\sum_nc_nc_{-n}$</td>
+<td>$\sum_\imath\hat c_\imath^{2}=\sum_nc_nc_{-n}$</td>
 <td>What the transform makes of it; the reflected overlap</td>
 </tr>
 <tr>
