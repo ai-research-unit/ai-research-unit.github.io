@@ -7,7 +7,7 @@ The **weak interaction** is the interaction that changes flavour. A neutron beco
 This article treats the process level, and not the bosons. The companion *The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form* settles what the framework reaches for the carriers — the Proca kinematics, the charges as eigenvalues of the adjoint action, the neutral mixing, the self-couplings — and states plainly that it stops at the chiral coupling. The present article starts there, asks what the framework has for the **current** itself and for the contact built from two of them, and answers in the three categories the corpus uses.
 
 - **Established, and derived below.** On the Dirac module the vector vertex $\Gamma_{\imath}$ and the axial vertex $\Gamma_{\imath}\xi$ are each a single basis operator. Their combination $\Gamma_{\imath}(g_V-g_A\xi)$ is again a single basis operator, with a right multiplier that is the sum of the two, $g_Vi\vec e_x-g_A\vec e_y$ in the time component and $g_Vi\vec e_y+g_A\vec e_x$ in a spatial one, and the square of the whole operator is $(g_V^2-g_A^2)\Gamma_{\imath}^2$. It follows that the chiral vertex is **nilpotent exactly at $|g_A|=|g_V|$**, that is exactly for the two chiral mixtures $V-A$ and $V+A$, and invertible for every other pair of weights; and that at $g_A=+g_V$ and $g_A=-g_V$ the right multiplier is exactly $2\vec\Pi_{\mathrm{nil},1}$ and $2\vec\Pi_{\mathrm{nil},2}$, the two standard Peirce nilpotents of the algebra. The $V-A$ structure, which the Standard Model takes as input, is therefore one of the only two weight assignments that make the weak vertex a **null** element, the other being $V+A$, which differs from it only in the sign of the axial half; and the framework states the same identity that the Dirac matrices satisfy.
-- **Transcribed, and recomputed here.** The contact coefficient, $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$; the contact's accuracy at low momentum transfer; the muon lifetime, $2.1873$ microseconds at the tree level against the measured $2.1969811$; and the ratio of the two pion decay rates, $1.2833\times10^{-4}$ at the tree level against the measured $1.2300\times10^{-4}$, the difference being the radiative correction. These are standard results, and the framework neither improves nor spoils them.
+- **Transcribed, and recomputed here.** The contact coefficient, $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$; the contact's accuracy at low momentum transfer; the muon lifetime, $2.1873\times10^{-6}$ s at the tree level against the measured $2.1969811\times10^{-6}$ s; and the ratio of the two pion decay rates, $1.2833\times10^{-4}$ at the tree level against the measured $1.2300\times10^{-4}$, the difference being the radiative correction. These are standard results, and the framework neither improves nor spoils them.
 - **Not supplied, and left visible as a gap.** The framework does not derive the coupling, does not select the left-handed half, has no generation structure and no mixing matrix, and its own gauge group, the $*$-unitary part of the centre, acts as a scalar and is therefore vector-like on the module, a chiral gauge group requiring a non-central action that *Chiral Fermions in the Biquaternion Framework* records as the gap. The algebra supplies the *shape* of the vertex and not the *strength* with which nature uses it.
 
 The article is organised as follows. The next section transcribes the process, the contact and the rates. A section then writes the charged current as a basis operator, derives the multiplier table, and proves the square identity and the nilpotency criterion. A section turns the criterion on the neutral current and shows that the measured $Z$ coupling sits away from the null point, with the parity-violating asymmetry as the size of the departure. A section treats parity, the mass bilinear and what nilpotency means for a fermion line. A closing section separates what the framework supplies from what it imports, and names the one gauge construction that would close the gap. The summary, the notation table and the literature follow.
@@ -38,13 +38,13 @@ $$
 \frac{G_{\mathrm F}}{\sqrt2}=\frac{g^2}{8M_W^2}.
 $$
 
-What this article uses from that result is the coefficient and nothing else. The framework's companion article on Møller scattering uses the same elimination on the neutral current, and the parity-violating asymmetry computed there is the neutral counterpart of what follows. With the standard inputs $G_{\mathrm F}=1.1663787\times10^{-5}$ GeV$^{-2}$ and $M_W=80.3692$ GeV, the relation was verified to give $g=0.65283$, the accepted value to four figures, and it inverts to $v=(\sqrt2\,G_{\mathrm F})^{-1/2}=246.22$ GeV.
+What this article uses from that result is the coefficient and nothing else. The framework's companion article on Møller scattering uses the same elimination on the neutral current, and the parity-violating asymmetry computed there is the neutral counterpart of what follows. With the standard inputs $G_{\mathrm F}=4.544\times10^{14}$ J$^{-2}$ and $M_W=1.4328\times10^{-25}$ kg, the relation was verified to give $g=0.65283$, the accepted value to four figures, and it inverts to $v=(\sqrt2\,G_{\mathrm F})^{-1/2}=3.9449\times10^{-8}$ J.
 
 **The current in the algebra's own generators.** The charged current is $\bar\Xi\,\vec e_+\,\Xi$ up to normalisation, and the factor $\sqrt2$ in the contact coefficient is not a convention that has to be looked up: with $\vec e_\pm=\tfrac12(\vec e_x\pm i\vec e_y)$ the ladder moves the neutral label by one unit, $[\vec e_z,\vec e_\pm]=\mp i\,\vec e_\pm$, and the normalisation the current needs is the one for which the pair has unit scalar part, $\mathrm{Sc}(\sqrt2\vec e_+\cdot\sqrt2\vec e_-)=2\cdot(-\tfrac12)=-1$, the sign being carried by the metric as everywhere in the corpus. So a current normalised to unit charge carries the $\sqrt2$ and the contact coefficient $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$ follows from it. The group is the one the standard theory calls $SU(2)$, and in this algebra it is $\mathrm{SU}(2)=\mathrm{Spin}(3)$: the objects in the current are two elements of its triple, $\vec e_\pm$, and the $\sqrt2$ is their length. No matrix display of the group is used anywhere in the computation. The ladder and the naming are fixed in [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html).
 
 ### The contact is a very good approximation, and that is the point
 
-The eliminated propagator was expanded at $q^2/M_W^2$. For a momentum transfer of $100$ MeV the ratio is $1.55\times10^{-6}$, so the contact is accurate to a part per million for nuclear beta decay, and the W never appears as a propagating degree of freedom. That fact fixes the shape of the question this article asks: whatever the framework does or does not supply for the W's mass, the process does not see it, so a framework that could supply the current exactly would be tested by the contact and not by the carrier. What the process exhibits directly is the **vertex**, and the vertex is what the algebra can be asked about.
+The eliminated propagator was expanded at $q^2/M_W^2$. For a momentum transfer of $1.602\times10^{-11}$ J the ratio is $1.55\times10^{-6}$, so the contact is accurate to a part per million for nuclear beta decay, and the W never appears as a propagating degree of freedom. That fact fixes the shape of the question this article asks: whatever the framework does or does not supply for the W's mass, the process does not see it, so a framework that could supply the current exactly would be tested by the contact and not by the carrier. What the process exhibits directly is the **vertex**, and the vertex is what the algebra can be asked about.
 
 ### What the rates say
 
@@ -53,16 +53,16 @@ Two rates are worth recomputing, because between them they exhibit the two faces
 $$
 \Gamma(\mu\to e\xi_{\mathrm{neu},e}\bar\xi_{\mathrm{neu},\imath})=\frac{G_{\mathrm F}^2m_\mu^5}{192\pi^3},
 \qquad
-\tau_{\imath}=\frac{1}{\Gamma(\mu\to e\xi_{\mathrm{neu},e}\bar\xi_{\mathrm{neu},\imath})}=2.1873\ \mu\mathrm{s},
+\tau_{\imath}=\frac{1}{\Gamma(\mu\to e\xi_{\mathrm{neu},e}\bar\xi_{\mathrm{neu},\imath})}=2.1873\times10^{-6}\ \mathrm{s},
 $$
 
-against the measured $2.1969811\ \mu\mathrm{s}$, the residual $0.44\%$ being the radiative and electron-mass corrections. The charged pion decays to a lepton and a neutrino through the same contact, and the rate is
+against the measured $2.1969811\times10^{-6}\ \mathrm{s}$, the residual $0.44\%$ being the radiative and electron-mass corrections. The charged pion decays to a lepton and a neutrino through the same contact, and the rate is
 
 $$
 \Gamma(\pi\to l\xi_{\mathrm{neu},l})=\frac{G_{\mathrm F}^2f_\pi^2m_\pi m_l^2}{8\pi}\Big(1-\frac{m_l^2}{m_\pi^2}\Big)^{2},
 $$
 
-with $f_\pi=130.2$ MeV. The factor $m_l^2$ is the whole content of the chiral structure: the pion is spinless and the antineutrino is right-handed, so angular momentum forces the charged lepton into the wrong helicity, which the $V-A$ vertex meets with one power of the mass for the one chirality flip, hence a factor $m_l^2$ in the rate. The measurable consequence is the ratio of the two rates,
+with $f_\pi=2.086\times10^{-11}$ J. The factor $m_l^2$ is the whole content of the chiral structure: the pion is spinless and the antineutrino is right-handed, so angular momentum forces the charged lepton into the wrong helicity, which the $V-A$ vertex meets with one power of the mass for the one chirality flip, hence a factor $m_l^2$ in the rate. The measurable consequence is the ratio of the two rates,
 
 $$
 \frac{\Gamma(\pi\to e\xi_{\mathrm{neu},e})}{\Gamma(\pi\to\mu\xi_{\mathrm{neu},\imath})}=\frac{m_e^2}{m_\mu^2}\frac{\big(1-m_e^2/m_\pi^2\big)^2}{\big(1-m_\mu^2/m_\pi^2\big)^2}=1.2833\times10^{-4},
@@ -240,13 +240,13 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $\tilde{Ξ}^{\dagger}iR_{\vec e_x}$ | Dirac adjoint |
 | $\mathcal{L}_{\mathrm{eff}}=-\frac{4G_{\mathrm F}}{\sqrt2}\sum_{\imath}\varepsilon_{\imath} J^{+}_{\imath} J^{-}_{\imath}$ | Four-fermion contact |
 | $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$ | Contact coefficient |
-| $G_{\mathrm F}=1.1663787\times10^{-5}$ GeV$^{-2}$ | Fermi constant |
-| $v=(\sqrt2\,G_{\mathrm F})^{-1/2}=246.22$ GeV | Electroweak scale |
+| $G_{\mathrm F}=4.544\times10^{14}$ J$^{-2}$ | Fermi constant |
+| $v=(\sqrt2\,G_{\mathrm F})^{-1/2}=3.9449\times10^{-8}$ J | Electroweak scale |
 | $g_V=T_3-2ϙ\sin^2\theta_W$, $g_A=T_3$ | Neutral current weights; the charged current has $g_V=g_A=1$ |
 | $\varsigma_{\mathrm{pty}}=iR_{\vec e_x}$ | Internal parity factor, $\varsigma_{\mathrm{pty}}^2=I_4$, $\varsigma_{\mathrm{pty,P}}P_R=P_L\varsigma_{\mathrm{pty}}$, $\varsigma_{\mathrm{pty}}\xi\varsigma_{\mathrm{pty}}=-\xi$ |
 | $Q_W=1-4\sin^2\theta_W$ | Weak charge of the electron; **its measured value is an input, and this article carries the symbol** |
 | $\tau_{\imath}=192\pi^3/(G_{\mathrm F}^2m_\mu^5)$ | Muon lifetime at the tree level |
-| $\Gamma(\pi\to l\xi_{\mathrm{neu},l})=G_{\mathrm F}^2f_\pi^2m_\pi m_l^2(1-m_l^2/m_\pi^2)^2/(8\pi)$ | Pion decay rate, $f_\pi=130.2$ MeV |
+| $\Gamma(\pi\to l\xi_{\mathrm{neu},l})=G_{\mathrm F}^2f_\pi^2m_\pi m_l^2(1-m_l^2/m_\pi^2)^2/(8\pi)$ | Pion decay rate, $f_\pi=2.086\times10^{-11}$ J |
 
 ## Further Reading
 

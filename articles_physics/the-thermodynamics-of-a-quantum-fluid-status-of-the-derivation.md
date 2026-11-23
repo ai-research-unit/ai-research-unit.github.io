@@ -4,8 +4,6 @@
 
 The category's question is whether a quantum field has a thermodynamics, and its answer is a ledger: four of its twenty-two articles transcribe standard relativistic thermodynamics into the corpus's letters, and the remaining eighteen add something the letters make available and the standard formulation does not.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 $$
 \text{category}=\underbrace{\text{framework content}}_{17\ \text{articles}}\ \cup\ \underbrace{\text{transcription}}_{6,\ 13,\ 14,\ 21},
 $$

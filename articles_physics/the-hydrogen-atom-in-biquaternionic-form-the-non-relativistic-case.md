@@ -178,7 +178,7 @@ $$
 \qquad n=1,2,3,\dots,
 $$
 
-where $a_0=\frac{h^{2}}{(2\pi)^{2} m\,\kappa}$ is the Bohr radius. For hydrogen, $a_0=0.529\,\text{Å}$ and $E_1=-13.6\,\text{eV}$. The principal quantum number is $n=n_r+l+1$ with radial quantum number $n_r=0,1,2,\dots$, so that for a given $n$,
+where $a_0=\frac{h^{2}}{(2\pi)^{2} m\,\kappa}$ is the Bohr radius. For hydrogen, $a_0=5.29\times10^{-11}\,\text{m}$ and $E_1=-2.18\times10^{-18}\,\text{J}$. The principal quantum number is $n=n_r+l+1$ with radial quantum number $n_r=0,1,2,\dots$, so that for a given $n$,
 
 $$
 l=0,1,\dots,n-1, \qquad l_z=-l,\dots,+l, \qquad s_z=\pm\tfrac12 .

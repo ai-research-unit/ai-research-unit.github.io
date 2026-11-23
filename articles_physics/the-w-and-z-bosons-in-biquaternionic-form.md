@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In the electricity-and-magnetism subcategory the framework reaches the photon exactly: the massless, neutral, spin-one field is the self-dual part of the material bivector, and the companion article *The Photon in Biquaternionic Form* identifies it with the propagating solution of the biquaternionic Maxwell system. The W and Z are the other half of the same multiplet structure. They are the **massive** spin-one fields of the weak interaction: the charged $W^\pm$ and the neutral $Z$, with masses of order $80$ and $91$ GeV, plus the massless photon with which the Z mixes in the neutral sector. This article asks what the framework has for them.
+In the electricity-and-magnetism subcategory the framework reaches the photon exactly: the massless, neutral, spin-one field is the self-dual part of the material bivector, and the companion article *The Photon in Biquaternionic Form* identifies it with the propagating solution of the biquaternionic Maxwell system. The W and Z are the other half of the same multiplet structure. They are the **massive** spin-one fields of the weak interaction: the charged $W^\pm$ and the neutral $Z$, with masses of order $1.43\times10^{-25}$ and $1.62\times10^{-25}$ kg, plus the massless photon with which the Z mixes in the neutral sector. This article asks what the framework has for them.
 
 The answer has three layers, and the article is organised around them. The first layer is **kinematic, and the framework reaches it.** A single W or Z is a massive spin-one field with three polarizations, and the massive spin-one field is the Proca field of the companion articles; its carrier in the framework is the material sector and its quantization is the Proca quantization. The charged and neutral *labels* are the eigenvalues of the Cartan generator of the compact factor acting by the adjoint action, so the framework's adjoint action on the material sector realizes the charges $\pm1$ and $0$ that the W and Z carry. The mixing of the Z with the photon is a rotation of the two commuting directions of $\mathrm{U}(2)$, which the algebra contains. The second layer is **mass generation, and the framework reaches only part of it.** The standard mass relations, $M_W=gv/2$ and $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}\,v/2$, follow from a scalar multiplet that is a doublet of $SU(2)$ with hypercharge $1/2$; the framework's scalars are central, hence singlets, and the abelian Higgs mechanism it does support generates a mass only in the neutral, central direction. The third layer is **the chiral coupling, and the framework does not reach it.** The W couples to the $L$ part of a fermion field and not to the $R$ part, and the framework's gauge actions on a field that carries a gauge index are the central phase, the adjoint action on the material sector, and left multiplication on the algebra — none of which separates the two parts named by the subscript, because the adjoint is real and left multiplication keeps the letter, so the two parts of a field sit in one and the same representation: the rotor's spinor carrier is pseudoreal, $2\cong\bar 2$, and $\mathrm{SU}(2)$ has no independent conjugate spinor. The companion article *Chiral Fermions in the Biquaternion Framework* establishes that a central gauge action cannot be chiral and records the non-central case as the open question; what the framework's available non-central actions do not supply is the asymmetric left/right assignment that the W requires.
 
@@ -63,7 +63,7 @@ $$
 \qquad
 \langle{\xi_{\mathrm{scl}}}^0\rangle=\frac{v}{\sqrt2},
 \qquad
-v=246.22\ \mathrm{GeV},
+v=3.9449\times10^{-8}\ \mathrm{J},
 $$
 gives, through the covariant kinetic term $|D_{\imath}\xi_{\mathrm{scl}}|^2$, the squared norm summed over the two components, with $D_{\imath}=\partial/\partial R_{\imath}+ig\sum_a T_aW_{\imath a}+i\,g_{\mathrm Y}Y_{\mathrm{scl},\xi} B_{\imath}$, the mass terms
 $$
@@ -83,15 +83,15 @@ and the Fermi constant fixes the scale,
 $$
 \frac{G_F}{\sqrt{2}}=\frac{g^2}{8M_W^2}=\frac{1}{2v^2},
 \qquad
-G_F=1.1663787\times 10^{-5}\ \mathrm{GeV}^{-2},
+G_F=4.544\times10^{14}\ \mathrm{J}^{-2},
 \qquad
-v=( \sqrt{2}\,G_F )^{-1/2}=246.22\ \mathrm{GeV}.
+v=( \sqrt{2}\,G_F )^{-1/2}=3.9449\times10^{-8}\ \mathrm{J}.
 $$
 The masses obey the tree-level relation
 $$
 \rho\equiv\frac{M_W^2}{M_Z^2\cos^2\theta_W}=1 ,
 $$
-which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; the measured value, $\rho=1.00038\pm0.00020$, defined with the on-shell mixing angle, is consistent with it. The measured masses are $M_W=80.377\pm0.012$ GeV and $M_Z=91.1876\pm0.0021$ GeV, and the measured weak mixing angle is $\sin^2\theta_W=0.23122\pm0.00004$ in the $\overline{\mathrm{MS}}$ scheme. These values are the empirical input of the sector; the tree-level relations above are identities, and the difference between the tree-level expressions and the measured masses is the radiative correction $\delta r$, which is standard.
+which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; the measured value, $\rho=1.00038\pm0.00020$, defined with the on-shell mixing angle, is consistent with it. The measured masses are $M_W=1.4329\times10^{-25}\pm2.1\times10^{-29}$ kg and $M_Z=1.6256\times10^{-25}\pm3.7\times10^{-30}$ kg, and the measured weak mixing angle is $\sin^2\theta_W=0.23122\pm0.00004$ in the $\overline{\mathrm{MS}}$ scheme. These values are the empirical input of the sector; the tree-level relations above are identities, and the difference between the tree-level expressions and the measured masses is the radiative correction $\delta r$, which is standard.
 
 The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-\sum_{\imath,\jmath}g_{\imath\jmath}(D_{\imath}\xi_{\mathrm{scl}})^*(D_{\jmath}\xi_{\mathrm{scl}})$ with $D_{\imath}=\partial/\partial R_{\imath}+i\kappa A_{\imath}$ and $\langle|\xi_{\mathrm{scl}}|\rangle=v/\sqrt2$, is
 $$
@@ -374,7 +374,7 @@ M_Z=\frac{\sqrt{g^2+g_{\mathrm Y}^2}\,v}{2}=\frac{M_W}{\cos\theta_W},
 \qquad
 e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W ,
 $$
-all hold in the standard theory and were verified as identities with the standard inputs ($v=246.22$ GeV from $G_F$); the measured masses, $M_W=80.377$ GeV and $M_Z=91.1876$ GeV, differ from the tree-level expressions by the radiative correction. The framework's abelian Higgs mechanism gives a mass $M_A=\kappa v$ to the central direction, and the Stueckelberg mechanism gives an invariant mass to the abelian direction without a potential; neither reaches the charged W's, because the framework's scalar is central and its covariant kinetic term carries no adjoint action on the charged directions. An adjoint scalar would give a mass of order $gv$, not $gv/2$; the observed factor of one-half requires the doublet, that is a Lorentz scalar in the fundamental of the compact factor, and the algebra's Lorentz-scalar carriers hold only the singlet and the adjoint, so the doublet is not available.
+all hold in the standard theory and were verified as identities with the standard inputs ($v=3.9449\times10^{-8}$ J from $G_F$); the measured masses, $M_W=1.4329\times10^{-25}$ kg and $M_Z=1.6256\times10^{-25}$ kg, differ from the tree-level expressions by the radiative correction. The framework's abelian Higgs mechanism gives a mass $M_A=\kappa v$ to the central direction, and the Stueckelberg mechanism gives an invariant mass to the abelian direction without a potential; neither reaches the charged W's, because the framework's scalar is central and its covariant kinetic term carries no adjoint action on the charged directions. An adjoint scalar would give a mass of order $gv$, not $gv/2$; the observed factor of one-half requires the doublet, that is a Lorentz scalar in the fundamental of the compact factor, and the algebra's Lorentz-scalar carriers hold only the singlet and the adjoint, so the doublet is not available.
 
 The charged current is chiral, $J^{+}_{\imath}$ of §*The Currents and the Self-Couplings*, which reads the down field on its $L$ part only, and the framework's gauge actions — the central phase, the adjoint action on the material sector, and left multiplication — are vector-like, so none of them supplies the asymmetric assignment; the companion article on chiral fermions establishes the obstruction for a central action and records the non-central case as the open question. The W's mass and its chiral coupling are therefore imported, while its carrier, its charge, its polarizations and its self-couplings are supplied.
 
@@ -402,7 +402,7 @@ The charged current is chiral, $J^{+}_{\imath}$ of §*The Currents and the Self-
 | $M_W=gv/2$, $M_Z=M_W/\cos\theta_W$, $M_\gamma=0$ | Tree-level masses |
 | $\rho=M_W^2/(M_Z^2\cos^2\theta_W)=1$ | Tree-level relation for a doublet |
 | $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ | Electromagnetic coupling |
-| $v=( \sqrt{2}G_F)^{-1/2}=246.22$ GeV | Electroweak scale |
+| $v=( \sqrt{2}G_F)^{-1/2}=3.9449\times10^{-8}$ J | Electroweak scale |
 | $M_A=\kappa v=\frac{2\pi ϙ\,v}{h}$ | Framework abelian mass from the central scalar |
 | $J^{+}_{\imath}=\sum_{\text{doublets}}\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm u}^*\,i\,(i\vec e_{\imath}\tilde{Ξ}_{\mathrm d,\mathrm L}\vec e_{\mathrm{spt}(\imath)})\vec e_x\big)$ | Charged current (chiral) |
 | $J_{Z\imath}=\sum_f\mathrm{Sc}\big(f^{*}\,i\,(i\vec e_{\imath}(T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_Wf)\vec e_{\mathrm{spt}(\imath)})\vec e_x\big)$ | Neutral current |

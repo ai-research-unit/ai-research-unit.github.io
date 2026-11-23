@@ -4,8 +4,6 @@
 
 The claim. Three questions about the Standard Model's validity at high energy have one common source: the running of $\varpi_{\mathrm{cpl}}$ and of $g_{\mathrm Y}$. Asked separately they look like three separate worries. Asked together they are one calculation, and the three answers have the same shape — a scale, a bound, and a lifetime.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 **Units.** A mass in this article is a fraction of the vacuum value, $n_i=m_i/m_{\mathrm{vev}}$ with $E_{\mathrm{vev}}=3.9449\times10^{-8}\ \mathrm{J}$. A cutoff, a running scale and a decay rate stay in joules, because those quantities are energies and the joule is their unit. The two are never mixed: a fraction is a pure number, a joule value is an energy.
 
 The three questions.

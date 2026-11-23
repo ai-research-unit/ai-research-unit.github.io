@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article closes the series with the marks that are read on a glyph rather than on the object: what the caret carries, the labels that stand in the subscript, the subscript rules and their admitted forms, the working conventions of the corpus and the typography of the source. It assumes the eight companions, whose glyphs it indexes.
+This article states the marks that are read on a glyph rather than on the object: what the caret carries, the labels that stand in the subscript, the subscript rules and their admitted forms, the working conventions of the corpus and the typography of the source. It assumes the eight companions, whose glyphs it indexes, and it is followed by *Reserved Letters Conventions*, which gathers the five letters that are spent once.
 
 The caret comes first, because it carries four things and nothing else; the labels follow, because every one of them stands in one slot and the order and the separators of that slot are fixed there; the subscripts come next, because their rule depends on the derivation convention fixed in *Operator and Calculus Conventions*. The working conventions of the corpus follow — the menus, the groups inside a category, the article files, the skeleton and the boundaries — and the typography closes the article.
 

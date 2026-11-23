@@ -194,7 +194,7 @@ $$
 
 the AC case. The frequency is fixed by the chemical potential difference and by nothing else, and it is the cleanest experimental mark that the two components are two states of one field rather than two fluids.
 
-A number, for scale. With a chemical potential difference of $1\,\mathrm{meV}$, $\omega_{\mathrm{Jsn}}=1.5193\times10^{12}\,\mathrm{s^{-1}}$, using $h=4.135\,667\,697\times10^{-15}\,\mathrm{eV\,s}$. At $1\,\mu\mathrm{eV}$ the frequency is $1.5193\times10^{9}\,\mathrm{s^{-1}}$ and at $1\,\mathrm{neV}$ it is $1.5193\times10^{6}\,\mathrm{s^{-1}}$; the three span the range from microwave to radio, which is why the effect is measured electrically.
+A number, for scale. With a chemical potential difference of $1.602\times10^{-22}\,\mathrm{J}$, $\omega_{\mathrm{Jsn}}=1.5193\times10^{12}\,\mathrm{s^{-1}}$, using $h=6.626\,070\,15\times10^{-34}\,\mathrm{J\,s}$. At $1.602\times10^{-25}\,\mathrm{J}$ the frequency is $1.5193\times10^{9}\,\mathrm{s^{-1}}$ and at $1.602\times10^{-28}\,\mathrm{J}$ it is $1.5193\times10^{6}\,\mathrm{s^{-1}}$; the three span the range from microwave to radio, which is why the effect is measured electrically.
 
 ### What the coupling does to the entropy
 
@@ -275,7 +275,7 @@ The condensate carries no entropy, $s_{\mathrm{ent,sup}}=0$, because it is a pur
 
 Mutual friction is $\tilde F_{\Phi,\mathrm{fr}}=(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}\tilde W_\Phi$, with the exact production $\sigma_{\mathrm{ent}}=-T^{-1}\mathrm{Sc}(\tilde F_{\Phi,\mathrm{fr}}\tilde W_\Phi)=T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}(\lvert\vec w\rvert^{2}-w_t^{2})\ge0$, which reduces to $T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}w^{2}$ to leading order in the relative speed. Evaluated once at $\rho_{\mathrm{num,sup}}=0.7$, $\rho_{\mathrm{num,nrm}}=0.3$, $B_{\mathrm{frc}}=0.1$, $w=0.2$ and $T=2$, the force is $0.004\,200\,000\,000$ and the production is $0.000\,420\,000\,000$.
 
-The phase coupling is $e_{\mathrm{cpl}}=-E_{J}\cos(\frac{2\pi \delta S}{h})$, an exchange current $J_{\mathrm{c}}\sin(\frac{2\pi \delta S}{h})$ and an AC frequency $\omega_{\mathrm{Jsn}}=\frac{2\pi \delta\mu_{\mathrm{chm}}}{h}$, which is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ for $1\,\mathrm{meV}$. The coupling is conservative and produces no entropy; the friction does, and the two meet only through the chemical potential difference that the friction changes.
+The phase coupling is $e_{\mathrm{cpl}}=-E_{J}\cos(\frac{2\pi \delta S}{h})$, an exchange current $J_{\mathrm{c}}\sin(\frac{2\pi \delta S}{h})$ and an AC frequency $\omega_{\mathrm{Jsn}}=\frac{2\pi \delta\mu_{\mathrm{chm}}}{h}$, which is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ for $1.602\times10^{-22}\,\mathrm{J}$. The coupling is conservative and produces no entropy; the friction does, and the two meet only through the chemical potential difference that the friction changes.
 
 The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\rho_{\mathrm{num,sup}}$, $s_{\mathrm{ent}}\to0$, $\tilde F_{\Phi,\mathrm{fr}}\to0$ so that $(\tilde\nabla_\Phi)^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=0$, and $\tilde J_{\Phi,\mathrm{ent}}\to0$ with the second law saturated. The normal flow does not tend to the condensate's flow; it ceases to exist. The remaining flow is the polar-form article's, and the two-fluid model is its finite-temperature extension.
 

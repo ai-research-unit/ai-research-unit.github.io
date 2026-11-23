@@ -2,17 +2,17 @@
 
 ## Introduction
 
-**One anchor, four quantities.** The vacuum value is one number. Written as an energy it is $E_{\mathrm{vev}}=246.22\ \mathrm{GeV}$; written as a mass it is $m_{\mathrm{vev}}=4.3893\times10^{-25}\ \mathrm{kg}$; written as a wave number it is $\nu_{\mathrm{vev}}=1.9859\times10^{17}\ \mathrm{m^{-1}}$; written as a length it is $\lambda_{\mathrm{vev}}=5.0355\times10^{-18}\ \mathrm{m}$. The four are one quantity in four dimensions, and the three equalities between them are $E=mc^{2}$, $\nu=E/(hc)$ and $\lambda=1/\nu$ — no constant set to one anywhere.
+**One anchor, four quantities.** The vacuum value is one number. Written as an energy it is $E_{\mathrm{vev}}=3.9449\times10^{-8}\ \mathrm{J}$; written as a mass it is $m_{\mathrm{vev}}=4.3893\times10^{-25}\ \mathrm{kg}$; written as a wave number it is $\nu_{\mathrm{vev}}=1.9859\times10^{17}\ \mathrm{m^{-1}}$; written as a length it is $\lambda_{\mathrm{vev}}=5.0355\times10^{-18}\ \mathrm{m}$. The four are one quantity in four dimensions, and the three equalities between them are $E=mc^{2}$, $\nu=E/(hc)$ and $\lambda=1/\nu$ — no constant set to one anywhere.
 
 **What this article does.** It defines the four anchors, computes the four numbers from the measured Fermi coupling, and states the rule by which every equation of the particle-physics corpus is written: in fractions of the anchor. The fraction is a pure number, so an equation written in fractions carries no unit and no conversion constant, and the constant that would otherwise be dropped cannot be dropped, because it is not there.
 
 **What it is not.** It is not a model, not a claim about why the vacuum value has the value it has, and not a change of the kilogram. The kilogram stays the base unit of mass. The anchors stand in a table once; the fractions stand in the equations.
 
-**The defect it repairs.** A mass written in electronvolts drops $c^{2}$ silently, because $[\mathrm{eV}]=[\text{energy}]$ and $[\text{mass}]=\mathrm{kg}$. A mass written as a bare number of MeV is a statement that $c=1$. This article is where that spelling stops: a mass is a kilogram or a fraction, never an electronvolt.
+**The defect it repairs.** A mass written in electronvolts drops $c^{2}$ silently, because the electronvolt measures energy and the corpus measures mass in kilograms. A mass written as a bare number of MeV is a statement that $c=1$, and an energy written in electronvolts is a statement that $e=1$, because the electronvolt is the elementary charge carried through one volt. This article is where both spellings stop: a mass is a kilogram or a fraction, an energy is a joule, never an electronvolt.
 
 ## What the Vacuum Value Is
 
-**A field that does not vanish in the vacuum.** The scalar doublet of the electroweak theory is a field, and its lowest-energy state is not the zero field. In the vacuum the field sits at a constant value, the same at every point and at every instant, and that constant is the number this article normalises against: $v=246.22\ \mathrm{GeV}$ in the notation of the electroweak articles, which is $E_{\mathrm{vev}}$ read as an energy, the two being one number seen from two sides.
+**A field that does not vanish in the vacuum.** The scalar doublet of the electroweak theory is a field, and its lowest-energy state is not the zero field. In the vacuum the field sits at a constant value, the same at every point and at every instant, and that constant is the number this article normalises against: $v=3.9449\times10^{-8}\ \mathrm{J}$ in the notation of the electroweak articles, which is $E_{\mathrm{vev}}$ read as an energy, the two being one number seen from two sides.
 
 **A constant field acts only through what couples to it.** A field of constant value has no gradient, so it exerts no force on a charge at rest and does no work on a charge in flight. Its presence is felt only by the particles whose equations contain it, and they feel it as inertia. A particle coupled to the background must carry the background with it when it changes its state, so a change of momentum costs more than it costs a free particle, and the extra cost is what the corpus calls the mass. The coupling is a pure number, the background supplies the scale, and the mass is the product:
 
@@ -31,13 +31,13 @@ $$
 **Where the number comes from.** The Fermi coupling is measured and is quoted in the form that carries its dimension,
 
 $$
-\frac{G_F}{\left(\frac{h}{2\pi}c\right)^{3}}=1.166\,3787\times10^{-5}\ \mathrm{GeV^{-2}},
+\frac{G_F}{\left(\frac{h}{2\pi}c\right)^{3}}=4.5443\times10^{14}\ \mathrm{J^{-2}},
 $$
 
-because the coupling itself has the dimension of a volume times an energy, $\mathrm{J\,m^{3}}$, and the division by the cube of $\frac{h}{2\pi}c$ — which is an action times a velocity, $\mathrm{J\,m}$ — leaves an inverse energy squared, $[\mathrm{GeV^{-2}}]=[\text{energy}^{-2}]$. The scale it fixes is
+because the coupling itself has the dimension of a volume times an energy, $\mathrm{J\,m^{3}}$, and the division by the cube of $\frac{h}{2\pi}c$ — which is an action times a velocity, $\mathrm{J\,m}$ — leaves an inverse energy squared, $[\mathrm{J^{-2}}]=[\text{energy}^{-2}]$. The scale it fixes is
 
 $$
-E_{\mathrm{vev}}=\left(\sqrt2\,\frac{G_F}{\left(\frac{h}{2\pi}c\right)^{3}}\right)^{-1/2}=246.2197\ \mathrm{GeV},
+E_{\mathrm{vev}}=\left(\sqrt2\,\frac{G_F}{\left(\frac{h}{2\pi}c\right)^{3}}\right)^{-1/2}=3.9449\times10^{-8}\ \mathrm{J},
 $$
 
 and the mass of that scale is
@@ -48,7 +48,7 @@ $$
 
 The division by $c^{2}$ is written and is not a convention: it is the definition of mass in the corpus's base units. The cube of $\frac{h}{2\pi}c$ is written for the same reason, and neither constant is set to one in the process.
 
-**Why this name, and what the letter is.** The corpus already carries the number, as $v$ in the electroweak articles, where it is the value the doublet takes in the vacuum and is written as an energy, $v=246.22\ \mathrm{GeV}$. What the corpus does not carry is the same number as a mass, as a wave number and as a length, nor a name for the four readings together; and the bare letter $v$ is a velocity elsewhere in the corpus, so the four readings take a subscript. The subscript $\mathrm{vev}$ names the reading and not the interaction: $E_{\mathrm{vev}}$ is the corpus's $v$, $m_{\mathrm{vev}}$ is $v/c^{2}$, and $\nu_{\mathrm{vev}}$ and $\lambda_{\mathrm{vev}}$ are the other two. Two other names were tried and refused: *Electroweak Normalization* and *Higgs Normalization*. Both are too narrow, because the anchor divides every mass in the corpus, including most of the proton's, which comes from the strong interaction. The name is provisional and the corpus may replace it.
+**Why this name, and what the letter is.** The corpus already carries the number, as $v$ in the electroweak articles, where it is the value the doublet takes in the vacuum and is written as an energy, $v=3.9449\times10^{-8}\ \mathrm{J}$. What the corpus does not carry is the same number as a mass, as a wave number and as a length, nor a name for the four readings together; and the bare letter $v$ is a velocity elsewhere in the corpus, so the four readings take a subscript. The subscript $\mathrm{vev}$ names the reading and not the interaction: $E_{\mathrm{vev}}$ is the corpus's $v$, $m_{\mathrm{vev}}$ is $v/c^{2}$, and $\nu_{\mathrm{vev}}$ and $\lambda_{\mathrm{vev}}$ are the other two. Two other names were tried and refused: *Electroweak Normalization* and *Higgs Normalization*. Both are too narrow, because the anchor divides every mass in the corpus, including most of the proton's, which comes from the strong interaction. The name is provisional and the corpus may replace it.
 
 **Fixed, not running.** The anchor is the value fixed by $G_F$. It is not the running scale, not the renormalisation scale $\mu$, and not the mass of any particle. A Yukawa coupling normalised against it is therefore normalised once and for all, and the running of a mass is carried by the fraction, not by the anchor.
 
@@ -64,18 +64,18 @@ E_{\mathrm{vev}}=m_{\mathrm{vev}}\,c^{2},\qquad
 \lambda_{\mathrm{vev}}=\frac{1}{\nu_{\mathrm{vev}}}.
 $$
 
-The constant $hc$ is the one that turns an energy into a wave number, $hc=1.239\,841\,98\times10^{-6}\ \mathrm{eV\cdot m}$, which is $1239.841\,98\ \mathrm{MeV\cdot fm}$; it is exact, because $h$ and $c$ are exact and the electronvolt is exact through the charge of the electron.
+The constant $hc$ is the one that turns an energy into a wave number, $hc=1.986\,445\,86\times10^{-25}\ \mathrm{J\cdot m}$; it is exact, because $h$ and $c$ are exact.
 
 **The four anchors, once.**
 
 | quantity | symbol | value | dimension |
 |---|---|---|---|
-| energy | $E_{\mathrm{vev}}$ | $246.22\ \mathrm{GeV}=3.9449\times10^{-8}\ \mathrm{J}$ | $\mathrm{M\,L^{2}\,T^{-2}}$ |
+| energy | $E_{\mathrm{vev}}$ | $3.9449\times10^{-8}\ \mathrm{J}$ | $\mathrm{M\,L^{2}\,T^{-2}}$ |
 | mass | $m_{\mathrm{vev}}$ | $4.3893\times10^{-25}\ \mathrm{kg}$ | $\mathrm{M}$ |
 | wave number | $\nu_{\mathrm{vev}}$ | $1.9859\times10^{17}\ \mathrm{m^{-1}}$ | $\mathrm{L^{-1}}$ |
 | length | $\lambda_{\mathrm{vev}}$ | $5.0355\times10^{-18}\ \mathrm{m}$ | $\mathrm{L}$ |
 
-The energy is quoted in GeV because an energy in electronvolts is legitimate: $[\mathrm{eV}]=[\text{energy}]$. The mass is quoted in kilograms because that is the base unit of the corpus, and because a mass in the electronvolt system cannot be written without either a $c^{2}$ that is usually dropped or a division by $c^{2}$ that is a unit conversion in disguise.
+The energy is quoted in joules because the joule is the SI unit of energy and its definition contains no constant. The mass is quoted in kilograms because that is the base unit of the corpus, and because a mass in the electronvolt system cannot be written without either a $c^{2}$ that is usually dropped or a division by $c^{2}$ that is a unit conversion in disguise.
 
 **Five figures throughout.** Every value quoted in this article is given to five significant figures, and a check that recomputes one shows the digits the arithmetic produces. A figure beyond the fifth belongs to the arithmetic and not to the measurement.
 
@@ -85,7 +85,7 @@ The energy is quoted in GeV because an energy in electronvolts is legitimate: $[
 
 **What each one measures.** The four anchors are one quantity read by four kinds of instrument, and the reading is what an instrument of that kind returns.
 
-- The **energy** is $3.9449\times10^{-8}\ \mathrm{J}$, which is $246.22\ \mathrm{GeV}$. Two statements sit in that one number. It is the rest energy of a particle whose mass is the anchor. It is also the energy a collision must reach for the weak interaction to be resolved as an exchange between currents rather than as a contact coupling: below it the $W$ is virtual and the force looks like a point.
+- The **energy** is $3.9449\times10^{-8}\ \mathrm{J}$. Two statements sit in that one number. It is the rest energy of a particle whose mass is the anchor. It is also the energy a collision must reach for the weak interaction to be resolved as an exchange between currents rather than as a contact coupling: below it the $W$ is virtual and the force looks like a point.
 - The **mass** is $4.3893\times10^{-25}\ \mathrm{kg}$. It is $262$ proton masses and $4.8\times10^{5}$ electron masses: many small masses to one anchor, which is why the fraction of a real particle is small.
 - The **wave number** is $1.9859\times10^{17}\ \mathrm{m^{-1}}$, which is $1.99\times10^{14}$ turns of phase per millimetre.
 - The **length** is $5.0355\times10^{-18}\ \mathrm{m}$, one turn of that phase: $5.04$ attometres, about one part in $170$ of a proton radius.
@@ -115,7 +115,7 @@ Each is a pure number. Because the division is by the anchor of the same dimensi
 
 **Why the equation and not the table.** The table reports and the equation relates. A table entry is read by someone who wants a number, and the number is best given with its unit; an equation is read as a relation, and a unit there does no work except to hide a $c$. A relation in fractions is true of any anchor, so its coefficients are numbers a reader checks by eye, and the mass values of the particles enter only when someone wants them and multiplies back.
 
-**Where the boundary falls.** A derived quantity is written where it is derived and in fractions where it is used. The definition $\nu_m=m\,c/h$ keeps its constants, because it is the definition; a dispersion relation, a mass relation, a coupling and a cross-section ratio are written in fractions. An exercise may quote a beam energy in MeV and must still write its invariant in fractions. The rule bites on equations, and an equation in this corpus has no electronvolt on the side of a mass.
+**Where the boundary falls.** A derived quantity is written where it is derived and in fractions where it is used. The definition $\nu_m=m\,c/h$ keeps its constants, because it is the definition; a dispersion relation, a mass relation, a coupling and a cross-section ratio are written in fractions. An exercise may quote a beam energy in joules and must still write its invariant in fractions. The rule bites on equations, and an equation in this corpus has no electronvolt on the side of a mass.
 
 **At rest, one number.** For a particle at rest the four ratios are not independent: with $E_i=m_ic^{2}$ and $\nu_i=m_ic/h$,
 
@@ -137,7 +137,7 @@ So one number $n_i$ serves for energy, mass and wave number, and its reciprocal 
 | $Z$ | $0.37035$ | $2.7001$ |
 | Higgs boson | $0.50869$ | $1.9658$ |
 
-The masses are the values the corpus quotes elsewhere: the charged leptons and the top at their pole values, the weak bosons and the Higgs at their measured values, and the fractions are computed with $E_{\mathrm{vev}}=246.22\ \mathrm{GeV}$.
+The masses are the values the corpus quotes elsewhere: the charged leptons and the top at their pole values, the weak bosons and the Higgs at their measured values, and the fractions are computed with $E_{\mathrm{vev}}=3.9449\times10^{-8}\ \mathrm{J}$.
 
 **The Yukawa vertex is the fraction.** The Yukawa coupling of a fermion is defined against this scale and no other,
 
@@ -196,13 +196,13 @@ and the common factor $m_{\mathrm{vev}}$ has cancelled. The value is $0.666\,660
 **The rules this article fixes, stated once.**
 
 1. **An equation is written in fractions.** A formula that would otherwise carry a mass, an energy, a wave number or a length carries the ratio against the anchor of the same dimension. A value with its unit belongs in a table, a measurement or a bound, and not on the side of an equation.
-2. **An energy may be quoted in electronvolts.** $[\mathrm{eV}]=[\text{energy}]$, and a number in GeV, MeV, keV or eV is correct wherever the quantity is an energy. A rest energy $m_ic^{2}$ is an energy and may be quoted so.
+2. **An energy is written in joules.** The electronvolt is refused, because its definition contains the elementary charge: a number in electronvolts is a number in units of $e$, and $e$ is a constant. An energy is quoted in joules wherever it appears, and a rest energy $m_ic^{2}$ is an energy and is quoted in joules.
 3. **A mass is a fraction, and the kilogram is its definition.** $m_i$ is written as $n_i=m_i/m_{\mathrm{vev}}$. The kilogram appears once, in the definition of $m_{\mathrm{vev}}$ above, and once in the conventions table for a pre-anchor denominator; it is not the form a table uses and it is not the result of a repair. A mass is never written as a bare number of electronvolts.
 4. **A mass divided by the square of the speed of light is not allowed.** The spelling is dimensionally correct — an electronvolt over $c^{2}$ is a mass — and it is still refused: it keeps a mass inside the electronvolt system, where the bare number is the next keystroke, and the corpus's base unit of mass is the kilogram. The rule is stated in words and the spelling is not printed, here or in any convention article, so that a search for it returns nothing but the defect it names. A mass that must be quoted absolutely is quoted in kilograms; a mass that is compared is quoted as a fraction.
 5. **A root obeys the rule of its radicand.** A root is admitted, and the unit under it is what the rule governs. $\sqrt{s}$, $\sqrt{E^{2}}$ and $\sqrt{m^{2}c^{4}+p^{2}c^{2}}$ are energies. $\sqrt{m_e}$ is $\mathrm{kg}^{1/2}$ when the mass is in the kilogram, and $\sqrt{n_e}$ is a number when it is a fraction; both are legal, because neither unit contains a constant. $\mathrm{kg}^{1/2}$ is a derived unit of one base unit, no more objectionable than $\mathrm{m\,s^{-1}}$ is of two. What is refused is a mass under a root in an **energy** unit: $\sqrt{m_e}=0.714\,842\ \mathrm{MeV}^{1/2}$ hides the $c$ of rule 3 inside the radical, where it is harder to see than in a bare number. A table that prints a root prints the parent mass beside it, in the kilogram or as a fraction, so that the root is a step and not a quantity presented on its own.
 6. **No constant is set to one.** $c$ and $h$ are carried with their units at every step, including inside the three conversions of §*The Three Conversions*. The anchors exist so that the constants never need to be dropped: the fraction divides by a quantity of the same dimension, which is the only way to remove a unit without removing a constant.
 
-**Where rule 4 bites, in one example.** The parameter table of the corpus needs the electron mass in one cell. Under the refused spelling the cell is $0.510\,999$ with the electronvolt and the division by $c^{2}$ in the column header, and the division is then a unit and not an operation. The next author to reuse the number writes $0.511\ \mathrm{MeV}$, because the column is already a mass; the third writes $0.511$ and calls it a mass; and by the fourth the table computes a Yukawa coupling from a number whose dimension was never on the page. The sequence is not a hypothesis: it is the census that this article's companion migration counts, with $708$ electronvolt lines to sort. Under rule 4 the cell is $2.0754\times10^{-6}$, and that number cannot decay into a bare electronvolt count, because its denominator is a mass.
+**Where rule 4 bites, in one example.** The parameter table of the corpus needs the electron mass in one cell. Under the refused spelling the cell is $0.510\,999$ with the electronvolt and the division by $c^{2}$ in the column header, and the division is then a unit and not an operation. The next author to reuse the number writes it in electronvolts again, because the column is already a mass; the third writes $0.511$ and calls it a mass; and by the fourth the table computes a Yukawa coupling from a number whose dimension was never on the page. The sequence is not a hypothesis: it is the census that this article's companion migration counts, with $708$ electronvolt lines to sort. Under rule 4 the cell is $2.0754\times10^{-6}$, and that number cannot decay into a bare electronvolt count, because its denominator is a mass.
 
 **What makes this spelling special is that it arrives pre-approved.** The four-step decay is not peculiar to the electronvolt; any careless writer loses a dimension in any unit. What the electronvolt has, and no other unit of mass has, is a literature that has already normalised the slip. The tables of the field are printed in electronvolts and one reads them without noticing, so the defect does not look like carelessness: it looks like the standard notation, and a copy editor with no physics would leave it in place. A rule can only remove what a reader is willing to mark as wrong, and this is the one mass spelling a referee will pass. That is the whole of the argument for refusing it, and it is why the refusal is written here rather than left to taste: a defect that a competent reader does not see is the one a corpus must name.
 
@@ -212,23 +212,23 @@ and the common factor $m_{\mathrm{vev}}$ has cancelled. The value is $0.666\,660
 
 Each is an arithmetic recomputation from the numbers above.
 
-1. **The anchor from the Fermi coupling.** $\left(\sqrt2\times1.166\,3787\times10^{-5}\right)^{-1/2}=246.2197\ \mathrm{GeV}$, against the quoted $246.22\ \mathrm{GeV}$, with the quotient $G_F/\left(\frac{h}{2\pi}c\right)^{3}$ carrying the inverse energy squared.
+1. **The anchor from the Fermi coupling.** $\left(\sqrt2\times4.544\times10^{14}\right)^{-1/2}=3.9449\times10^{-8}\ \mathrm{J}$, against the quoted $3.9449\times10^{-8}\ \mathrm{J}$, with the quotient $G_F/\left(\frac{h}{2\pi}c\right)^{3}$ carrying the inverse energy squared.
 2. **The mass from the energy.** $3.9449\times10^{-8}\ \mathrm{J}$ divided by $\left(2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}\right)^{2}$ gives $4.389\,27\times10^{-25}\ \mathrm{kg}$, quoted above as $4.3893\times10^{-25}$.
-3. **The mass times $c^{2}$.** $4.3893\times10^{-25}\ \mathrm{kg}$ times $c^{2}$ gives $3.9449\times10^{-8}\ \mathrm{J}$, which is $246.22\ \mathrm{GeV}$.
-4. **The wave number.** $246.22\times10^{9}\ \mathrm{eV}$ divided by $1.239\,841\,98\times10^{-6}\ \mathrm{eV\cdot m}$ gives $1.985\,90\times10^{17}\ \mathrm{m^{-1}}$.
+3. **The mass times $c^{2}$.** $4.3893\times10^{-25}\ \mathrm{kg}$ times $c^{2}$ gives $3.9449\times10^{-8}\ \mathrm{J}$.
+4. **The wave number.** $3.9449\times10^{-8}\ \mathrm{J}$ divided by $1.986\,445\,86\times10^{-25}\ \mathrm{J\cdot m}$ gives $1.985\,90\times10^{17}\ \mathrm{m^{-1}}$.
 5. **The length.** The reciprocal of $1.985\,90\times10^{17}\ \mathrm{m^{-1}}$ is $5.035\,51\times10^{-18}\ \mathrm{m}$.
 6. **The wave number and the length are inverse.** $1.985\,90\times10^{17}\times5.035\,51\times10^{-18}=1.0000$.
-7. **The electron's mass fraction.** $0.510\,998\,95\ \mathrm{MeV}$ divided by $246\,220\ \mathrm{MeV}$ is $2.0754\times10^{-6}$; times $m_{\mathrm{vev}}$ it gives $9.1094\times10^{-31}\ \mathrm{kg}$.
+7. **The electron's mass fraction.** $9.109\,383\,7\times10^{-31}\ \mathrm{kg}$ divided by $4.3893\times10^{-25}\ \mathrm{kg}$ is $2.0754\times10^{-6}$; times $m_{\mathrm{vev}}$ it gives $9.1094\times10^{-31}\ \mathrm{kg}$.
 8. **The electron's wave-number fraction.** $2.0754\times10^{-6}$ times $\nu_{\mathrm{vev}}$ is $4.1215\times10^{11}\ \mathrm{m^{-1}}$, the corpus's tabulated value.
 9. **The electron's length fraction.** The reciprocal of $2.0754\times10^{-6}$ is $4.8184\times10^{5}$; times $\lambda_{\mathrm{vev}}$ it is $2.4263\times10^{-12}\ \mathrm{m}$.
 10. **The top's coupling.** $n_t=0.70136$, so $y_t=\sqrt2\times0.70136=0.991\,87$, a number below one, as a perturbative vertex must be.
-11. **Koide is unchanged.** In fractions the ratio is $0.666\,660\,5$; in MeV it is $0.666\,660\,5$. The anchor cancels, which is the statement that the relation is a statement about numbers.
+11. **Koide is unchanged.** In fractions the ratio is $0.666\,660\,5$; in kilograms it is $0.666\,660\,5$. The anchor cancels, which is the statement that the relation is a statement about numbers.
 12. **The fraction is the coupling in three sectors, up to the running.** With the couplings at $M_Z$, $g/2=0.3259$ against $n_W=0.32644$, a gap of $0.13\%$; $\sqrt{g^{2}+g'{}^{2}}/2=0.3715$ against $n_Z=0.37035$, a gap of $0.32\%$; $\sqrt{2\digamma_{\mathrm{qtc}}}=\sqrt{0.2582}=0.5081$ against $n_H=0.50869$, a gap of $0.11\%$. With $g$ at $M_W$, $g/2=0.6529/2=0.32644$ and the $W$ row is exact, because the relation defines $g$ there. A gap of a part in a thousand across two scales is what a running coupling looks like, and it is not a defect of the identity.
 13. **The two tables are one table.** Every entry of §*The Fraction* multiplied by its anchor returns the value quoted in §*The Three Conversions* and in the corpus, in opposite directions; checks 8 and 9 are two instances, and the article quotes the same numbers twice on purpose.
 
 ## Summary
 
-The vacuum value is one number with four readings: an energy $246.22\ \mathrm{GeV}$, a mass $4.3893\times10^{-25}\ \mathrm{kg}$, a wave number $1.9859\times10^{17}\ \mathrm{m^{-1}}$, and a length $5.0355\times10^{-18}\ \mathrm{m}$. The three conversions between them are $E=mc^{2}$, $\nu=E/(hc)$ and $\lambda=1/\nu$, written with the constants present. Every equation of these four kinds is then written in fractions of the anchor, so that it carries pure numbers and no unit, while a table may still quote a value with its unit. At rest the four fractions are one number and its reciprocal.
+The vacuum value is one number with four readings: an energy $3.9449\times10^{-8}\ \mathrm{J}$, a mass $4.3893\times10^{-25}\ \mathrm{kg}$, a wave number $1.9859\times10^{17}\ \mathrm{m^{-1}}$, and a length $5.0355\times10^{-18}\ \mathrm{m}$. The three conversions between them are $E=mc^{2}$, $\nu=E/(hc)$ and $\lambda=1/\nu$, written with the constants present. Every equation of these four kinds is then written in fractions of the anchor, so that it carries pure numbers and no unit, while a table may still quote a value with its unit. At rest the four fractions are one number and its reciprocal.
 
 Three statements carry the physics. The anchor is a value the scalar field takes everywhere in the vacuum, and a mass is a coupling to that background multiplied by the value, so a fraction of the anchor is a coupling in units of the background. The length reading of the same number is the distance in which the mass phase completes one turn, which is the smallest distance at which the particle is one particle. And the two are reciprocal, so the heaviest particle has the largest fraction and the smallest length.
 

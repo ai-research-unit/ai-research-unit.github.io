@@ -85,15 +85,15 @@ $$
 Q=\frac{m_1+m_2+m_3}{\left(\sqrt{m_1}+\sqrt{m_2}+\sqrt{m_3}\right)^{2}}=\frac{2}{3}.
 $$
 
-With the PDG masses $m_e=0.51099895$, $m_\mu=105.6583755$ and $m_\tau=1776.86$ MeV, the amplitudes, their sums and the ratio are
+With the PDG masses $m_e=9.1094\times10^{-31}$ kg, $m_\mu=1.8835\times10^{-28}$ kg and $m_\tau=3.1677\times10^{-27}$ kg, the amplitudes, their sums and the ratio are
 
 | quantity | value |
 |---|---|
-| $\sqrt{m_e}$ | $0.714842\ \mathrm{MeV}^{1/2}$ |
-| $\sqrt{m_\mu}$ | $10.279026\ \mathrm{MeV}^{1/2}$ |
-| $\sqrt{m_\tau}$ | $42.152817\ \mathrm{MeV}^{1/2}$ |
-| $m_1+m_2+m_3$ | $1883.0294\ \mathrm{MeV}$ |
-| $(\sqrt{m_1}+\sqrt{m_2}+\sqrt{m_3})^{2}$ | $2824.5701\ \mathrm{MeV}$ |
+| $\sqrt{m_e}$ | $9.544\times10^{-16}\ \mathrm{kg}^{1/2}$ |
+| $\sqrt{m_\mu}$ | $1.3724\times10^{-14}\ \mathrm{kg}^{1/2}$ |
+| $\sqrt{m_\tau}$ | $5.628\times10^{-14}\ \mathrm{kg}^{1/2}$ |
+| $m_1+m_2+m_3$ | $3.357\times10^{-27}\ \mathrm{kg}$ |
+| $(\sqrt{m_1}+\sqrt{m_2}+\sqrt{m_3})^{2}$ | $5.035\times10^{-27}\ \mathrm{kg}$ |
 | $Q$ | $0.66666051$ |
 
 The measured $Q$ falls below $\tfrac23$ by $6.2\times10^{-6}$ in absolute value, which is $9.2$ parts per million of $\tfrac23$, on three measured numbers.
@@ -129,9 +129,9 @@ The bounds agree, and they agree on three:
 | bound | value | what it constrains |
 |---|---|---|
 | $Z$ invisible width | $N_{\xi_{\mathrm{neu}}}=2.984\pm0.008$ | light neutrinos with standard couplings |
-| big-bang nucleosynthesis | $N_{\mathrm{eff}}\approx3$ at 1 MeV | rungs light and coupled at 1 MeV |
+| big-bang nucleosynthesis | $N_{\mathrm{eff}}\approx3$ at $1.16\times10^{13}$ K | rungs light and coupled at $1.16\times10^{13}$ K |
 | $H\to gg$, $H\to\gamma\gamma$ | matches three | families at any mass |
-| direct search | none below about 1 TeV | new charged or coloured states |
+| direct search | none below about $1.6\times10^{-7}$ J | new charged or coloured states |
 
 A fourth family is excluded at any mass and not only at low mass, because it does not decouple: the Yukawa grows with the mass, so its contribution to $H\to gg$ and $H\to\gamma\gamma$ approaches a constant, and the measured Higgs rates match three.
 
@@ -149,20 +149,20 @@ so the upper rungs are rare when the bath is cold and common when it is hot. For
 
 | $T$ | $n_{\imath}/n_e$ | $n_\tau/n_e$ |
 |---|---|---|
-| 2 MeV | $0$ | $0$ |
-| 50 MeV | $0.122$ | $3.7\times10^{-16}$ |
-| 100 MeV | $0.349$ | $1.9\times10^{-8}$ |
-| 152 MeV | $0.501$ | $8.4\times10^{-6}$ |
-| 500 MeV | $0.810$ | $2.9\times10^{-2}$ |
-| 1 GeV | $0.900$ | $0.169$ |
-| 2.563 GeV | $0.960$ | $0.500$ |
-| 10 GeV | $0.990$ | $0.837$ |
+| $2.32\times10^{10}$ K | $0$ | $0$ |
+| $5.80\times10^{11}$ K | $0.122$ | $3.7\times10^{-16}$ |
+| $1.16\times10^{12}$ K | $0.349$ | $1.9\times10^{-8}$ |
+| $1.76\times10^{12}$ K | $0.501$ | $8.4\times10^{-6}$ |
+| $5.80\times10^{12}$ K | $0.810$ | $2.9\times10^{-2}$ |
+| $1.16\times10^{13}$ K | $0.900$ | $0.169$ |
+| $2.97\times10^{13}$ K | $0.960$ | $0.500$ |
+| $1.16\times10^{14}$ K | $0.990$ | $0.837$ |
 
 Heavy rungs are rare and hot baths light them. That is not a hypothesis but the measured thermal history of the universe in inverse mass order: cooling removes the heavy rungs first.
 
 Two corrections keep the reading honest. The ratio approaches parity and never passes it, so the bath stops penalising a heavy rung without ever favouring it. And detailed balance forbids accumulation, since the same agitation that builds a rung destroys it; exceeding equilibrium needs a conserved charge, a chemical potential, or a departure from equilibrium, and all three are compatible with a rung that is an elementary field.
 
-One thing temperature cannot do is change the count. At every temperature above 2 MeV there are three generations. Temperature decides how many rungs are lit, never how many exist.
+One thing temperature cannot do is change the count. At every temperature above $2.32\times10^{10}$ K there are three generations. Temperature decides how many rungs are lit, never how many exist.
 
 ## What the Theory Owes
 
@@ -206,7 +206,7 @@ $$
 \sigma=\sigma_{\mathrm{QED}}\left(1+O\!\left(\frac{s}{\Lambda^{2}}\right)\right),
 $$
 
-and present data put $\Lambda>10$ TeV. Continued absence of such a signal pushes the structure out of reach and leaves the theory indistinguishable from three fields with three masses.
+and present data put $\Lambda>1.6\times10^{-6}$ J. Continued absence of such a signal pushes the structure out of reach and leaves the theory indistinguishable from three fields with three masses.
 
 ## Checks
 
@@ -221,8 +221,8 @@ Every number below was recomputed from the measured masses before it was written
 | the amplitude gaps | $10.279-0.7148$, $42.153-10.279$ | $9.564$, $31.874$ |
 | the amplitude steps | $31.874/9.564$ | $3.333$ |
 | the logarithmic steps | $\ln 206.77$, $\ln 16.82$ | $5.332$, $2.823$ |
-| the thermal ratio at 152 MeV | $e^{-(m_\mu-m_e)/T}$ | $0.501$ |
-| the thermal ratio at 2.563 GeV | $e^{-(m_\tau-m_e)/T}$ | $0.500$ |
+| the thermal ratio at $1.76\times10^{12}$ K | $e^{-(m_\mu-m_e)c^2/k_BT}$ | $0.501$ |
+| the thermal ratio at $2.97\times10^{13}$ K | $e^{-(m_\tau-m_e)c^2/k_BT}$ | $0.500$ |
 | the width ratio against the fifth power | $1.3486\times10^{6}$ against $1.3451\times10^{6}$ | agrees to 0.26 per cent |
 | Koide's ratio | $1883.0294/2824.5701$ | $0.66666051$ against $2/3$ |
 | Koide's spread | $\sigma_a/\bar a$ from the three amplitudes | $0.9999908$ |

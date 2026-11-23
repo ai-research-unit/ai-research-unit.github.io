@@ -4,8 +4,6 @@
 
 **The two layers.** This is the frame article, so it carries both and labels them: Layer A is what the algebra does on its own carrier, and Layer B is $G_{4LR}$ acting on a formal copy of that carrier. §*Where Each Factor Comes From, and How Firmly* assigns each factor to one of the two, and the assignment is the article's main claim.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 **The title names the content, not the couplings.** Four colours, twenty-one generators, one declaration. The group, the sixteen, $21=15+3+3$, the chain, the trace checks and the declaration (A) are stated below. The three couplings enter as symbols that multiply their generators, and nothing more; a coupling value, a boundary condition at a scale, a running and a matching are in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html).
 
 **The model, in the form it is usually stated.** The lepton is read as a fourth colour: quarks and leptons sit in one multiplet of an $\mathrm{SU}(4)$ acting on four colours, with lepton number the charge that distinguishes the fourth colour from the other three. The gauge group is

@@ -242,9 +242,9 @@ T_{\mathrm{kin},1}^{\rm thr} = E_1^{\rm thr} - m_1c^2 .
 $$
 For $p+p\to p+p+\pi^0$, with $m_p = 1.6726\times10^{-27}$ kg and $m_\pi = 2.4063\times10^{-28}$ kg, the final mass sum is $2m_p+m_\pi = 3.22281\times10^{-10}\ \mathrm{J}$$/c^2$, so
 $$
-E_1^{\rm thr} = 1217.935\ \text{MeV},
+E_1^{\rm thr} = 1.95135\times10^{-10}\ \text{J},
 \qquad
-T_{\mathrm{kin},1}^{\rm thr} = 279.663\ \text{MeV}.
+T_{\mathrm{kin},1}^{\rm thr} = 4.48070\times10^{-11}\ \text{J}.
 $$
 A projectile kinetic energy of $3.20\times10^{-11}\ \mathrm{J}$ is below threshold ($\sqrt{s} = 3.1627\times10^{-10}\ \mathrm{J}$ $< 3.2228\times10^{-10}\ \mathrm{J}$), and one of $4.81\times10^{-11}\ \mathrm{J}$ is above it ($\sqrt{s} = 3.2380\times10^{-10}\ \mathrm{J}$); the threshold lies at the computed $4.4806\times10^{-11}\ \mathrm{J}$, as a direct evaluation of $s(T_{\mathrm{kin},1})$ confirms.
 

@@ -4,8 +4,6 @@
 
 The standing of this article. The mixing matrix itself, its parameterisation and its numbers are standard physics, transcribed. What the corpus contributes is the placement: the matrix is an operator on the generation label, and [the CKM article](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) already built that operator. This article uses the same construction for the leptons and then reports what the numbers do, which is not the same as what the quark numbers do.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 Why leptons are not the quarks again. The two mixing matrices are the same kind of object and their values have almost nothing in common. The quark angles are small, $13^\circ$, $2.4^\circ$, $0.2^\circ$, and their phase is not small — it is about $66^\circ$ — yet the asymmetry it produces is one part in $10^{5}$ of the mixing, because the asymmetry is the three small angles multiplied together. The lepton angles are large, $33^\circ$, $49^\circ$, $8.6^\circ$, and the CP asymmetry is $850$ times larger. An article that presented the PMNS matrix as "the CKM matrix for leptons" would be describing the formalism and missing the phenomenon: the lepton sector mixes *maximally* where the quark sector mixes *hardly at all*, and nothing in the framework explains why.
 
 The claim, in four parts.

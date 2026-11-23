@@ -25,7 +25,7 @@ $$
 
 So the minimal sector breaks the symmetry correctly, leaves twelve real scalars, and predicts six states that nobody has seen — and it still gets the fermion masses wrong.
 
-What the article establishes. That the two-step chain is done by one $(\mathbf4,\mathbf1,\mathbf2)$ and one $(\mathbf1,\mathbf2,\mathbf2)$; that they carry $24$ real components against $12$ broken generators, so $12$ survive at tree level; that the single bidoublet forces the down-type and charged-lepton mass matrices to be proportional; that the gauge sector's six leptoquarks are forced by the gauged fourth colour and are the only coloured massive states in the theory; that $M_X\gtrsim2.5\times10^{2}$ TeV from $K_L\to\mu e$; and that proton decay does not bound the gauge sector, because the leading operator is dimension nine.
+What the article establishes. That the two-step chain is done by one $(\mathbf4,\mathbf1,\mathbf2)$ and one $(\mathbf1,\mathbf2,\mathbf2)$; that they carry $24$ real components against $12$ broken generators, so $12$ survive at tree level; that the single bidoublet forces the down-type and charged-lepton mass matrices to be proportional; that the gauge sector's six leptoquarks are forced by the gauged fourth colour and are the only coloured massive states in the theory; that $M_X\gtrsim4.0\times10^{-5}$ J from $K_L\to\mu e$; and that proton decay does not bound the gauge sector, because the leading operator is dimension nine.
 
 Not established. The third field's potential is not under control, and *The Diquark Fork: Dimension Six* and *The Bidoublet and the $\rho$ Parameter* say why. The leptoquarks have not been seen. The bound is an order of magnitude rather than a precise value, and *How Firm the Bound Is* says why the literature's numbers differ by factors of a few. The corpus cannot derive the scalar content: the scalar sector is the one place in the frame with no algebraic guidance at all.
 
@@ -81,7 +81,7 @@ By component. The count is the whole content of the minimal sector.
 
 Why two. $H$ is a $2\times2$ matrix of complex fields, and its two diagonal entries are neutral while its two off-diagonal entries are charged. So the eight real numbers split evenly: four charged and four neutral. The charged four are spent on $W^{\pm}$ (two real) and leave $H^{\pm}$ (two); the neutral four are spent on $Z$ and $Z_R$ (two real) and leave two real neutral directions. Two survive because the bidoublet has two diagonal entries and the breaking eats only one neutral direction at each of the last two steps. The potential then mixes the pair, so the physical states are a lighter and a heavier neutral scalar.
 
-**Two neutral scalars.** The lighter of the two is the only candidate the model has for the observed $125$ GeV state. The minimal sector is not short of a Higgs. It is short of a second contribution to the fermion masses, and *Why a Second Scalar Is Needed* says why that is the defect.
+**Two neutral scalars.** The lighter of the two is the only candidate the model has for the observed $2.23\times10^{-25}$ kg state. The minimal sector is not short of a Higgs. It is short of a second contribution to the fermion masses, and *Why a Second Scalar Is Needed* says why that is the defect.
 
 4.3 The count. $24$ real components, $12$ eaten, $12$ surviving, and $21-9=12$ broken generators. Added up by field, the survivors are $6+2$ from $\Phi$ and $2+2$ from $H$, which is $12$. Three twelves agree, and only the first two are the same twelve.
 
@@ -127,7 +127,7 @@ $$
 
 with the quantum numbers forcing $|\Delta B|=\tfrac13$ and $|\Delta L|=1$ per fermion leg. On the legs alone $B-L$ would change by $\mp\tfrac43$, and it does not: the $X$ carries that same $B-L=\pm\tfrac43$. So every vertex conserves $B-L$ exactly, which it must, because $\mathrm{U}(1)_{B-L}$ survives the first breaking and is still a gauge symmetry. The leptoquark violates $B$ and violates $L$ and conserves $B-L$ — exactly what a $B-L$ gauge boson does, since a boson of a gauged charge carries that charge and cannot change the total.
 
-6.2 Mixing with the photon and the $Z$ Since they are charged, they contribute to the oblique parameters and to $Z\to\ell\ell$ at loop level. The corrections are suppressed by $(v/v_R)^2$ and are unobservable for $M_X$ above a few hundred TeV.
+6.2 Mixing with the photon and the $Z$ Since they are charged, they contribute to the oblique parameters and to $Z\to\ell\ell$ at loop level. The corrections are suppressed by $(v/v_R)^2$ and are unobservable for $M_X$ above about $3\times10^{-5}$ J.
 
 6.3 $K_L\to\mu e$ at tree level. That is the whole bound. The diagram is $s\bar d\to X\to\mu\bar e$, with no loop:
 
@@ -141,7 +141,7 @@ Because it is a tree-level flavour-changing process in a neutral meson with no l
 
 Not derived here. It depends on the leptoquark chirality and on the hadronic matrix element, and it is a number produced by a coupling. It is quoted, with its inputs and its spread, in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html); what this article supplies is the channel, its quantum numbers, and the reason the channel is not loop-suppressed.
 
-**The order of magnitude, and its condition.** The bound comes out at $M_X\gtrsim2.3\times10^{2}$ TeV when the generation matrix is taken of order one, so the round $2.5\times10^{2}$ used here is right to within the coefficient's band on that assumption. The assumption is not derived: the minimal Yukawa sector makes the matrix the identity and the channel vanishes, so this is a conditional bound and not the frame's model-independent statement. [Lepton Flavour in the Four-Colours Model](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html) does that calculation and carries the $K_S$ prediction that follows from the same operator. This single number is the strongest model-independent statement in the frame, and it is worth being clear what kind of statement it is: not a prediction, but a lower bound on a parameter, obtained from a measured null result. *How Firm the Bound Is* says how firm it is.
+**The order of magnitude, and its condition.** The bound comes out at $M_X\gtrsim3.69\times10^{-5}$ J when the generation matrix is taken of order one, so the round $2.5\times10^{2}$ used here is right to within the coefficient's band on that assumption. The assumption is not derived: the minimal Yukawa sector makes the matrix the identity and the channel vanishes, so this is a conditional bound and not the frame's model-independent statement. [Lepton Flavour in the Four-Colours Model](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html) does that calculation and carries the $K_S$ prediction that follows from the same operator. This single number is the strongest model-independent statement in the frame, and it is worth being clear what kind of statement it is: not a prediction, but a lower bound on a parameter, obtained from a measured null result. *How Firm the Bound Is* says how firm it is.
 
 ## The Mass, and the $\sqrt2$ That a Coupling Ratio Multiplies
 
@@ -181,11 +181,11 @@ $$
 \Gamma\propto\frac{m_p^{11}}{M_X^{12}} .
 $$
 
-The suppression is $M_X^{-6}$ and not $M_X^{-2}$, and that is six powers of a scale that is already above $10^{5}$ GeV. The rate is unobservably small, and proton decay does not constrain the gauge sector.
+The suppression is $M_X^{-6}$ and not $M_X^{-2}$, and that is six powers of a scale that is already above $1.60\times10^{-5}$ J. The rate is unobservably small, and proton decay does not constrain the gauge sector.
 
 8.3 The scalar sector. The statement above holds for the gauge sector alone. If the scalar sector contains a colour triplet that couples to two quarks — a diquark coupling — then a single scalar exchange gives a dimension-six operator and the bound is ten orders of magnitude stronger; *The Diquark Fork: Dimension Six* is that fork.
 
-8.4 Which bound is stronger. On $M_X$ the proton-decay bound, where it applies, beats $K_L\to\mu e$ by about ten orders of magnitude — $10^{15}$ GeV against $2.5\times10^{2}$ TeV. So the ordering is never in doubt; what is in doubt is whether the stronger bound applies at all, and that is a question about the scalar content rather than about the gauge sector. Quoting the proton bound as the leptoquark bound assumes diquark couplings, which is exactly the assumption *The Diquark Fork: Dimension Six* shows to be expensive.
+8.4 Which bound is stronger. On $M_X$ the proton-decay bound, where it applies, beats $K_L\to\mu e$ by about ten orders of magnitude — $1.60\times10^{5}$ J against $4.0\times10^{-5}\ \mathrm{J}$. So the ordering is never in doubt; what is in doubt is whether the stronger bound applies at all, and that is a question about the scalar content rather than about the gauge sector. Quoting the proton bound as the leptoquark bound assumes diquark couplings, which is exactly the assumption *The Diquark Fork: Dimension Six* shows to be expensive.
 
 ## How Firm the Bound Is
 
@@ -247,14 +247,14 @@ $$
 \tau(p\to e^{+}\pi^{0})\ \propto\ \frac{M_\Sigma^{4}}{\digamma_{\mathrm{yuk}}^{2}} .
 $$
 
-The measured limit $\tau>2.4\times10^{34}$ yr then requires $M_\Sigma\gtrsim10^{15}$ GeV for order-one couplings — four extra powers of the scale, and ten orders of magnitude above the leptoquark bound.
+The measured limit $\tau>2.4\times10^{34}$ yr then requires $M_\Sigma\gtrsim1.60\times10^{5}$ J for order-one couplings — four extra powers of the scale, and ten orders of magnitude above the leptoquark bound.
 
 11.3 The two branches. The choice is stated, and the model cannot make it.
 
 | branch | consequence |
 |---|---|
 | **no diquark coupling** (a discrete symmetry forbids $qq\Sigma$) | proton is stable, $M_\Sigma$ can be at the leptoquark scale, and the symmetry is unexplained |
-| **diquark coupling allowed** | $M_\Sigma\gtrsim10^{15}$ GeV, the coloured scalars are unreachable, and the leptoquark prediction of *The Mass, and the $\sqrt2$ That a Coupling Ratio Multiplies* becomes empty |
+| **diquark coupling allowed** | $M_\Sigma\gtrsim1.60\times10^{5}$ J, the coloured scalars are unreachable, and the leptoquark prediction of *The Mass, and the $\sqrt2$ That a Coupling Ratio Multiplies* becomes empty |
 
 11.4 The open question. The first branch needs a symmetry nobody derives; the second makes the model's one sharp prediction unobservable. A frame that needs an unexplained discrete symmetry to survive, and loses its predictions when it does not have one, is a frame whose status rests on that symmetry.
 
@@ -302,7 +302,7 @@ So the statement has two halves, and both are needed: the bound is satisfied by 
 
 13.5 The sector is forced. Six states with fixed charge, fixed colour and a fixed mass ratio, appearing because one line was gauged. A frame that produced six adjustable states would explain nothing; this one produces six states with no freedom beyond $v_R$.
 
-13.6 A null problem. Nothing is contradicted. Six states that should exist and have not been seen is the weakest possible form of failure and also the most persistent: it cannot be repaired by a better calculation, only by raising the scale — and raising it to $10^{15}$ GeV to satisfy a diquark bound makes the states unseeable rather than merely unseen, so that the model's one sharp prediction becomes empty.
+13.6 A null problem. Nothing is contradicted. Six states that should exist and have not been seen is the weakest possible form of failure and also the most persistent: it cannot be repaired by a better calculation, only by raising the scale — and raising it to $1.60\times10^{5}$ J to satisfy a diquark bound makes the states unseeable rather than merely unseen, so that the model's one sharp prediction becomes empty.
 
 ## The Checks
 
@@ -320,13 +320,13 @@ So the statement has two halves, and both are needed: the bound is satisfied by 
 | the coset dimension | $21-9$ | $12$ |
 | the double counting checked | $12$ eaten $=12$ coset, $12$ survive | consistent |
 | $\mathbf{15}$ under $\mathrm{SU}(3)$ | $\mathbf8+\mathbf3+\bar{\mathbf3}+\mathbf1$ | $8+3+3+1=15$ |
-| the proton bound | $\tau\propto M_\Sigma^{4}$ | $M_\Sigma\gtrsim10^{15}$ GeV |
+| the proton bound | $\tau\propto M_\Sigma^{4}$ | $M_\Sigma\gtrsim1.60\times10^{5}$ J |
 | the decomposition | $\mathbf 4\to\mathbf3\oplus\mathbf1$, so $\mathfrak m$ is $\mathbf3+\bar{\mathbf3}$ | $\dim=6$ |
 | the $B-L$ eigenvalue | $(-1)-(+\tfrac13)$ | $\pm\tfrac43$ |
 | the charge | $\tfrac12(\pm\tfrac43)$ | $\pm\tfrac23$ |
 | proton decay | three vertices per unit $B$ | dimension $9$, $M^{-6}$ |
 | diquark exchange | one vertex | dimension $6$, $M^{-2}$ |
-| the two bounds compared | $10^{15}$ GeV against $2.5\times10^{2}$ TeV | about ten orders; the stronger one applies only with diquarks |
+| the two bounds compared | $1.60\times10^{5}$ J against $4.0\times10^{-5}\ \mathrm{J}$ | about ten orders; the stronger one applies only with diquarks |
 | the vertex quantum numbers | $B-L$ on the legs against the $X$'s own $B-L$ | $\pm\tfrac43$ both, conserved |
 | the only coloured massive states | colour is a stabiliser, so only $\mathfrak m$ | six |
 
@@ -350,7 +350,7 @@ The leptoquark bound is not a measurement; it is a floor, and its coefficient is
 
 $M_X=\sqrt2M_{W_R}$ is not a group relation; it is the minimal vacuum's, and the $(\mathbf{15},\mathbf2,\mathbf2)$ moves it (*The Mass, and the $\sqrt2$ That a Coupling Ratio Multiplies*).
 
-The lower bound is not free, and the absence of a proton-decay bound is not the absence of any bound: $K_L\to\mu e$ does bind, at $250$ TeV, and the consequences fall in the hierarchy and the running (*What the Sector Leaves Open*).
+The lower bound is not free, and the absence of a proton-decay bound is not the absence of any bound: $K_L\to\mu e$ does bind, at $4.01\times10^{-5}\ \mathrm{J}$, and the consequences fall in the hierarchy and the running (*What the Sector Leaves Open*).
 
 A leptoquark vertex does not violate $B-L$: the $X$ carries $\pm\tfrac43$ and the vertex conserves it (*What the Six Do*).
 
@@ -372,7 +372,7 @@ The bound. A bound on $M_X$ and a bound on $M_{W_R}$ are the same bound up to $\
 
 The mass relation. $M_X=\sqrt2\,(g_4/g_R)\,M_{W_R}$; the $\sqrt2$ is the group's, and the coupling ratio multiplies it.
 
-Proton decay. Dimension nine from gauge exchange, therefore no proton-decay bound on the gauge sector; dimension six if the scalar sector has diquark couplings, therefore a bound of $10^{15}$ GeV that would make the leptoquarks unseeable.
+Proton decay. Dimension nine from gauge exchange, therefore no proton-decay bound on the gauge sector; dimension six if the scalar sector has diquark couplings, therefore a bound of $1.60\times10^{5}$ J that would make the leptoquarks unseeable.
 
 The $\rho$ parameter. The bidoublet's second vev breaks custodial symmetry; $\rho=1$ needs alignment or a triplet.
 

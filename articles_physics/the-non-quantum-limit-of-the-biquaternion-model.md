@@ -4,8 +4,6 @@
 
 The non-relativistic limit of *The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form* truncates one element by a ratio of its own coefficients. The element is $\tilde V_{\Phi}=\gamma\left(ic\,e_{t}+\vec v\right)$ and the ratio is $\beta=\lvert\vec v\rvert/c$. The parameter, the error and the smallness are all internal to the element.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 Can a second limit of the same kind remove the quantum? The answer has two halves.
 
 On the solutions, yes. A state written as an amplitude and a phase carries one dimensionless number, $\epsilon=1/(2\pi\nu_{\Phi}L)$, where $L$ is the length over which the amplitude varies. When it is small the phase obeys the Hamilton–Jacobi equation alone and the amplitude obeys the transport equation. The state has become a ray.

@@ -4,8 +4,6 @@
 
 A **chiral condensate** is a nonzero vacuum expectation value of a fermion bilinear, $\langle\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}\rangle\neq0$, in a theory whose Lagrangian contains no such term. It is the order parameter of a symmetry that the Lagrangian respects and the vacuum does not: the fermion field is massless as written, the vacuum pairs its two chiralities, and the fermion propagates with a mass it was never given. The mechanism is **dynamical symmetry breaking**, and it is why the pion is light: the pion is the Goldstone boson of a symmetry that the Lagrangian has and the vacuum does not.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 In the biquaternion framework the fermion is the Dirac field of the companion articles and its mass is the **linear, chirality-off-diagonal pair**
 
 $$

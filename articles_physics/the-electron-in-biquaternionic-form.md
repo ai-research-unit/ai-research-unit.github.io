@@ -4,8 +4,6 @@
 
 The electron is the object on which the relativistic quantum theory of this series is calibrated. It is the particle of Dirac's 1928 equation, the spin-$\tfrac{1}{2}$ field whose magnetic moment is measured to twelve significant figures, and the fermion whose two values of the chirality the Standard Model treats differently. In the biquaternion framework of these articles the electron is the **biquaternion Dirac field** $\tilde{Ξ}\in\mathbb{B}$: an element of the algebra whose two chirality parts satisfy the pair
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_{m_e}\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_{m_e}\tilde{Ξ}_{R},
 $$

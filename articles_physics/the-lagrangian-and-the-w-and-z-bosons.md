@@ -4,8 +4,6 @@
 
 This article writes the massive vector bosons of the electroweak sector as the extremum of one action, and shows that their masses are not parameters of that action but products of a coupling and a vacuum value. It is the action-first companion of *The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form*, which states the fields, the mixing and the masses; this article asks what functional produces the Proca-like equations of the two bosons, and where the masses in it come from.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 Its place in the sector. The functional here is the gauge and scalar part of the sector's complete action, written in [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html). That article is the sector's action; this one is the $W$–$Z$ reading of it, and it stops at the two curvatures and the scalar's gradient term.
 
 The equation. The parent's equations are the Yang–Mills equations for $W_{a,\imath}$ and $B_{\imath}$ with a source,

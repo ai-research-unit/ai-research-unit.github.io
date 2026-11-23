@@ -279,18 +279,18 @@ What each is good for. The on-shell angle is the one a tree-level calculation wa
 
 The resonance is the most precise laboratory in the sector. At $\sqrt{s}=M_Z$ the cross section is dominated by $Z$ exchange, the initial-state radiation is calculable, and the four LEP experiments collected some $1.7\times10^7$ hadronic $Z$ decays between them. The measurements that follow are the sharpest tests the Standard Model has, and they are all measurements of the couplings of the table above.
 
-The partial widths. Evaluating the width formula with the table's couplings at $\sin^2\theta_W=0.23122$, $M_Z=91.1876$ GeV and $\alpha_s(M_Z)=0.1179$, the value the rest of the corpus runs with:
+The partial widths. Evaluating the width formula with the table's couplings at $\sin^2\theta_W=0.23122$, $M_Z=1.6256\times10^{-25}$ kg and $\alpha_s(M_Z)=0.1179$, the value the rest of the corpus runs with:
 
-| Channel | Computed (MeV) | Measured (MeV) |
+| Channel | Computed (J) | Measured (J) |
 |---|---|---|
-| $\xi_{\mathrm{neu}}\bar\xi_{\mathrm{neu}}$ | $165.9$ | $167.0$ |
-| $e^+e^-$ | $83.4$ | $83.91$ |
-| $u\bar u$ and $c\bar c$, each | $296.1$ | $299.0$ |
-| $d\bar d$ and $s\bar s$, each | $381.7$ | not measured separately |
-| $b\bar b$ | $381.7$ | $377.0$ |
-| hadrons, total | $1737.3$ | $1744.4$ |
-| invisible | $497.6$ | $499.0$ |
-| total | $2485.2$ | $2495.2$ |
+| $\xi_{\mathrm{neu}}\bar\xi_{\mathrm{neu}}$ | $2.658\times10^{-11}$ | $2.676\times10^{-11}$ |
+| $e^+e^-$ | $1.336\times10^{-11}$ | $1.344\times10^{-11}$ |
+| $u\bar u$ and $c\bar c$, each | $4.744\times10^{-11}$ | $4.791\times10^{-11}$ |
+| $d\bar d$ and $s\bar s$, each | $6.116\times10^{-11}$ | not measured separately |
+| $b\bar b$ | $6.116\times10^{-11}$ | $6.040\times10^{-11}$ |
+| hadrons, total | $2.783\times10^{-10}$ | $2.795\times10^{-10}$ |
+| invisible | $7.972\times10^{-11}$ | $7.995\times10^{-11}$ |
+| total | $3.982\times10^{-10}$ | $3.998\times10^{-10}$ |
 
 The agreement is one per cent or better in every channel but the $b$. Five of the seven measured rows sit inside $0.7$ per cent and the hadronic total inside $0.4$; the up-type row sits at $0.97$ per cent and is the only one that needed the $\alpha_s$ correction to reach it. The $b$ row is $1.3$ per cent high, and it is the largest discrepancy of the set for a stated reason: its width carries the $b$-quark mass and the top quark's loop, neither of which the tree formula above contains. A tree-level calculation reproducing seven widths to that accuracy, with the one exception diagnosable, is the statement that the couplings of §*The Couplings of Every Fermion* are right.
 
@@ -299,12 +299,12 @@ Only the $d$-type row is left unfilled, and the omission is information: no expe
 The invisible width and the number of neutrinos. The neutrino's couplings are $\tfrac12$ and $\tfrac12$ whatever the angle, so the partial width per neutrino species is fixed by $G_F$ and $M_Z$ alone:
 
 $$
-\Gamma_{\xi_{\mathrm{neu}}\bar\xi_{\mathrm{neu}}}=\frac{G_FM_Z^3}{6\sqrt2\pi}\cdot\frac12=165.9\ \mathrm{MeV} ,
+\Gamma_{\xi_{\mathrm{neu}}\bar\xi_{\mathrm{neu}}}=\frac{G_FM_Z^3}{6\sqrt2\pi}\cdot\frac12=2.658\times10^{-11}\ \mathrm{J} ,
 \qquad
 N_{\xi_{\mathrm{neu}}}=\frac{\Gamma_{\mathrm{inv}}}{\Gamma_{\xi_{\mathrm{neu}}\bar\xi_{\mathrm{neu}}}}=\frac{499.0\pm1.5}{165.9}=3.008\pm0.009 .
 $$
 
-The published $2.984$ and this $3.008$, and why they are both right. The measured invisible width is $499.0\pm1.5$ MeV and it is divided, in the literature, by the *radiatively corrected* width per species, $167.2$ MeV, giving $2.984\pm0.008$, the error being the global fit's rather than the quotient's — $1.5/167.2$ would give $0.009$ — because the fit also carries the peak cross sections and $R_\ell$. This article's denominator is the tree value $165.9$, so its ratio is larger by the $0.8$ per cent that the correction supplies — the same shift visible in the first row of the table above, where $165.9$ sits against the measured $167.0$, a gap of $0.7$ per cent. Neither number is a fourth neutrino: a fourth light species would add a whole $165.9$ MeV to the invisible width, a hundred times the $1.5$ MeV error, so the species count is three to overwhelming precision and the gap between the two ratios is a bookkeeping of corrections rather than a counting of particles.
+The published $2.984$ and this $3.008$, and why they are both right. The measured invisible width is $7.995\times10^{-11}\pm2.4\times10^{-13}$ J and it is divided, in the literature, by the *radiatively corrected* width per species, $2.679\times10^{-11}$ J, giving $2.984\pm0.008$, the error being the global fit's rather than the quotient's — $1.5/167.2$ would give $0.009$ — because the fit also carries the peak cross sections and $R_\ell$. This article's denominator is the tree value $2.658\times10^{-11}$ J, so its ratio is larger by the $0.8$ per cent that the correction supplies — the same shift visible in the first row of the table above, where $2.658\times10^{-11}$ sits against the measured $2.676\times10^{-11}$, a gap of $0.7$ per cent. Neither number is a fourth neutrino: a fourth light species would add a whole $2.658\times10^{-11}$ J to the invisible width, a hundred times the $2.4\times10^{-13}$ J error, so the species count is three to overwhelming precision and the gap between the two ratios is a bookkeeping of corrections rather than a counting of particles.
 
 **That is the sharpest fact of the sector, and its sharpness is structural.** The number of light neutrinos is measured without knowing the mixing angle, the strong coupling, or any hadronic quantity, because the neutrino's $Z$ coupling contains no $Q$ and therefore no $\sin^2\theta_W$. Three is the answer, the fourth is excluded, and a fourth with a mass below $M_Z/2$ would have been seen.
 
@@ -396,7 +396,7 @@ Below the $Z$ mass the current is a contact interaction of strength $4G_F/\sqrt2
 
 Three angles carry the name. The on-shell $1-M_W^2/M_Z^2=0.22305$, the $\overline{\mathrm{MS}}$ value $0.23122$ and the effective leptonic value from the asymmetries $0.23148$ differ by the radiative corrections themselves: $\kappa_{\mathrm{OS}}=0.9647$, a $3.5$ per cent deficit that is the residue of two larger effects — the running of $\alpha$ from $137.036$ to $127.95$ would give nine per cent, and the scheme corrections give back four and a half — and $\kappa_{\mathrm{eff}}=1.0011$, one part in a thousand, from top-dominated photon–$Z$ mixing and the vertex corrections. The first difference is thirty times the second, and quoting one angle against a measurement of another is the commonest error in the sector.
 
-At the pole the widths are reproduced to one per cent or better in every channel but the $b$, which is $1.3$ per cent high: $165.9$ MeV per neutrino against $167.0$, $83.4$ against $83.91$ for electrons, $1737.3$ against $1744.4$ for hadrons, $2485.2$ against $2495.2$ in total. The invisible width gives $N_{\xi_{\mathrm{neu}}}=499.0/165.9=3.008\pm0.009$ against the published $2.984\pm0.008$, the difference being $165.9$ against the corrected $167.2$ MeV per species, and that number is sharp because the neutrino's $Z$ coupling contains no charge and therefore no mixing angle. The asymmetries $A_{FB}^{0,f}=\tfrac34A_eA_f$ and $A_{LR}=A_e$ agree for the leptons, sit $2.6$ and $1.8$ standard deviations high and low for $b$ quarks and $A_{LR}$, and differ from each other by three, which is the sector's standing tension. The ratios $R_\ell=20.83$, $R_b=0.2197$ and $R_c=0.1704$ sit against $20.767$, $0.21629$ and $0.1721$.
+At the pole the widths are reproduced to one per cent or better in every channel but the $b$, which is $1.3$ per cent high: $2.658\times10^{-11}$ J per neutrino against $2.676\times10^{-11}$, $1.336\times10^{-11}$ against $83.91$ for electrons, $1737.3$ against $1744.4$ for hadrons, $2485.2$ against $2495.2$ in total. The invisible width gives $N_{\xi_{\mathrm{neu}}}=499.0/165.9=3.008\pm0.009$ against the published $2.984\pm0.008$, the difference being $2.658\times10^{-11}$ J against the corrected $2.679\times10^{-11}$ J per species, and that number is sharp because the neutrino's $Z$ coupling contains no charge and therefore no mixing angle. The asymmetries $A_{FB}^{0,f}=\tfrac34A_eA_f$ and $A_{LR}=A_e$ agree for the leptons, sit $2.6$ and $1.8$ standard deviations high and low for $b$ quarks and $A_{LR}$, and differ from each other by three, which is the sector's standing tension. The ratios $R_\ell=20.83$, $R_b=0.2197$ and $R_c=0.1704$ sit against $20.767$, $0.21629$ and $0.1721$.
 
 The neutral current measures what the charged current cannot, because it is the only vertex in which both couplings of the product group appear: the charged current gives one number, $g$, while the neutral current gives two per channel, $g_L$ and $g_R$, whose ratio is the angle. The sector's twenty measurements against four parameters are five to one, and the five is the smaller half of the argument: any four of the twenty fix the four parameters, and the other sixteen are predictions with errors too small to absorb a change in the Lagrangian.
 

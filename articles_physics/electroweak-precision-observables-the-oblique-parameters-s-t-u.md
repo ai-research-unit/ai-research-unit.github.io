@@ -186,12 +186,12 @@ The bracket $f$ vanishes identically at $m_1=m_2$, which is the check that it mu
 
 The bracket has two regimes.
 
-- One mass much lighter: with $m_2\to0$ the bracket tends to $m_1^2$, so $\delta\rho=N_cG_Fm_1^2/(8\sqrt2\pi^2)$. The top–bottom pair is in this regime, and the number is the classical one: with $m_t=172.69$ GeV the bracket is $2.98\times10^{4}$ GeV$^2$ and $\delta\rho=9.3\times10^{-3}$, that is $T=1.27$.
+- One mass much lighter: with $m_2\to0$ the bracket tends to $m_1^2$, so $\delta\rho=N_cG_Fm_1^2/(8\sqrt2\pi^2)$. The top–bottom pair is in this regime, and the number is the classical one: with $m_t=3.0785\times10^{-25}\ \mathrm{kg}$ the bracket is $9.47\times10^{-50}\ \mathrm{kg^{2}}$ and $\delta\rho=9.3\times10^{-3}$, that is $T=1.27$.
 - Near-degenerate: with $m_2=m_1+\delta m$ the bracket tends to $(\delta m^2)^2/(3m^2)$ with $\delta m^2=m_2^2-m_1^2$, which is quadratic in $\delta m^2$ where the popular estimate is linear. A heavy pair is therefore far safer than the linear estimate suggests, and the popular formula $\delta\rho\simeq N_cG_F\delta m^2/(8\sqrt2\pi^2)$ is not valid here: it overestimates by more than two orders of magnitude in the near-degenerate regime.
 
 The exact values sit beside the linear estimate.
 
-| $m_1$, $m_2$ (GeV) | $N_c$ | $\delta\rho$ exact | $T$ exact | $T$ from the linear $\delta m^2$ estimate |
+| $m_1$, $m_2$ (kg) | $N_c$ | $\delta\rho$ exact | $T$ exact | $T$ from the linear $\delta m^2$ estimate |
 |---|---|---|---|---|
 | $300/301$ | $3$ | $4.2\times10^{-7}$ | $0.00006$ | $0.026$ |
 | $300/310$ | $3$ | $4.2\times10^{-5}$ | $0.006$ | $0.26$ |
@@ -201,13 +201,13 @@ The exact values sit beside the linear estimate.
 
 The last row is the reference, and that is the point of the whole scheme. The top–bottom contribution is not new physics: it sits inside the Standard Model prediction, and the reference top mass is defined so that it does. A reader who takes the $1.27$ of the last row as a discrepancy to be explained has forgotten what the subtraction means.
 
-With $\sigma_T=0.06$ and a colour-triplet doublet at $300$ GeV, the near-degenerate bracket gives $\delta m\lesssim30$ GeV, and the exact bracket agrees: $300/325$ gives $T=0.036$ and $300/330$ gives $T=0.052$. The bound is on the splitting relative to the mass, not on the mass, which is why a heavy degenerate multiplet survives.
+With $\sigma_T=0.06$ and a colour-triplet doublet at $5.35\times10^{-25}\ \mathrm{kg}$, the near-degenerate bracket gives $\delta m\lesssim5.3\times10^{-26}\ \mathrm{kg}$, and the exact bracket agrees: $300/325$ gives $T=0.036$ and $300/330$ gives $T=0.052$. The bound is on the splitting relative to the mass, not on the mass, which is why a heavy degenerate multiplet survives.
 
 $S$ is the harder one to estimate, because it survives only through the mixing, so it is sensitive to the difference of the two loop functions rather than to their size, and the difference is what makes the estimates scheme- and splitting-dependent. The large-$N$ number $N_c/(6\pi)$ is $0.053$ per doublet, of the order of the experimental uncertainty, which is the quantitative reason this sector is called precision physics: a single chiral doublet at the electroweak scale would be visible, and none is. The exact one-loop value for a given mass splitting is a two-line computation from the definition, and the literature's tables differ in the third digit for that reason.
 
 ## The Measured Values
 
-From the electroweak fit to the LEP and SLD data, $M_W$, $m_t$ and the $Z$-pole asymmetries, with the Higgs mass fixed at $125$ GeV:
+From the electroweak fit to the LEP and SLD data, $M_W$, $m_t$ and the $Z$-pole asymmetries, with the Higgs mass fixed at $2.23\times10^{-25}\ \mathrm{kg}$:
 
 | Parameter | Value | Uncertainty |
 |---|---|---|
@@ -238,9 +238,9 @@ $$
 
 so a factor of two in $M_H$ moves $S$ by $0.037$, about half the experimental uncertainty, and a factor of eight moves it by $0.11$. The sign is positive: a heavier Higgs pushes $S$ up.
 
-With $S$ measured to be consistent with zero, a heavy Higgs was disfavoured, and the fit with $M_H$ free gave a central value near $90$ GeV with a 95 per cent upper bound near $160$ GeV. That bound was the sector's most-quoted number for a decade.
+With $S$ measured to be consistent with zero, a heavy Higgs was disfavoured, and the fit with $M_H$ free gave a central value near $1.6\times10^{-25}\ \mathrm{kg}$ with a 95 per cent upper bound near $2.85\times10^{-25}\ \mathrm{kg}$. That bound was the sector's most-quoted number for a decade.
 
-The Higgs was found at $125$ GeV, inside the window. This is the one place in the sector where a precision fit predicted a mass before the discovery, and it is worth stating what the prediction assumed: the Standard Model particle content, the oblique truncation, and the measured top mass. Under those three assumptions the bound was a bound on one number.
+The Higgs was found at $2.23\times10^{-25}\ \mathrm{kg}$, inside the window. This is the one place in the sector where a precision fit predicted a mass before the discovery, and it is worth stating what the prediction assumed: the Standard Model particle content, the oblique truncation, and the measured top mass. Under those three assumptions the bound was a bound on one number.
 
 The same fit cannot predict the mass of a new sector, because a new sector enters with three unknown parameters rather than one. What the fit supplies for new physics is an allowed region in the $S$–$T$ plane, not a number.
 
@@ -260,7 +260,7 @@ The three parameters describe new physics that couples to the Standard Model *on
 
 A $Z'$ is the standard example: it mixes with the $Z$, so it does shift $S$ and $T$, but it also couples to fermions directly, and the direct couplings dominate the $Z$-pole observables. A fit in $S$ and $T$ alone would attribute the shift to the wrong parameter and could miss the state entirely.
 
-The oblique truncation drops terms of order $M_Z^2/M^2$ and higher. For a sector at $1$ TeV those terms are at the per-cent level, which is at the edge of the measurement; for a sector at $300$ GeV they are not small, and the three parameters are a poor summary.
+The oblique truncation drops terms of order $M_Z^2/M^2$ and higher. For a sector at $1.78\times10^{-24}$ kg those terms are at the per-cent level, which is at the edge of the measurement; for a sector at $5.35\times10^{-25}\ \mathrm{kg}$ they are not small, and the three parameters are a poor summary.
 
 If the oblique description were wrong, the fit to twenty observables with three parameters would leave residuals much larger than the quoted uncertainties. It does not, so the description holds at the current precision, and the statement has a date on it: it will fail when the $Z$-pole uncertainties improve by an order of magnitude, or when a $Z'$ is found.
 
@@ -271,12 +271,12 @@ Three choices change the numbers.
 | Choice | Options | Size of the effect |
 |---|---|---|
 | which $\alpha$ | $\alpha(M_Z)=1/127.95$ or $\alpha(0)=1/137.04$ | $7$ per cent on $S$ |
-| reference $m_t$ | $172.69$ GeV, or the fitted value | shifts $T$ by the top contribution |
-| reference $M_H$ | $125$ GeV, or free | shifts $S$ by $1/(6\pi)$ per unit $\ln$ |
+| reference $m_t$ | $3.0785\times10^{-25}\ \mathrm{kg}$, or the fitted value | shifts $T$ by the top contribution |
+| reference $M_H$ | $2.23\times10^{-25}\ \mathrm{kg}$, or free | shifts $S$ by $1/(6\pi)$ per unit $\ln$ |
 
 The prefactor of $S$ is $4s_W^2c_W^2/\alpha$, which is $91.0$ with $\alpha(M_Z)$ and $97.4$ with $\alpha(0)$. The same physical self-energy therefore gives two different values of $S$, differing by $7$ per cent — about one standard deviation. $S$ without a statement of $\alpha$ is not a number, which is the lesson the Weinberg-angle article states about $\sin^2\theta_W$.
 
-Moving the reference top mass by $1$ GeV moves $T$ by $0.0148$, since $\partial T/\partial m_t$ is the top's contribution to $\delta\rho$ differentiated. That is a quarter of the uncertainty, so the reference mass must be quoted to the GeV.
+Moving the reference top mass by $1.8\times10^{-27}\ \mathrm{kg}$ moves $T$ by $0.0148$, since $\partial T/\partial m_t$ is the top's contribution to $\delta\rho$ differentiated. That is a quarter of the uncertainty, so the reference mass must be quoted to the kilogram.
 
 What does not depend on the scheme is the physical prediction: $M_W$, the $Z$-pole asymmetries and the cross sections. The parameters are coordinates on the space of heavy sectors, and coordinates move when the axes do, which is why the content article carries a scheme column.
 
@@ -337,8 +337,8 @@ The framework supplies the transversality of the self-energy through the gauge-f
 | $\rho$ | $M_W^2/(M_Z^2c_W^2)$, equal to $1+\alpha T$ at leading order |
 | $\Pi_{33}$, $\Pi_{3Y}$, $\Pi_{YY}$ | The $W_3W_3$, $W_3B$ and $BB$ self-energies, in terms of which $\Pi_{ZZ}$, $\Pi_{Z\gamma}$ and $\Pi_{\gamma\gamma}$ are written |
 | $q^2$ | The momentum transfer squared of the self-energy |
-| $M_W$, $M_Z$ | $80.377$ and $91.1876$ GeV |
-| $G_F$ | $1.1664\times10^{-5}$ GeV$^{-2}$ |
+| $M_W$, $M_Z$ | $80.377$ and $1.62557\times10^{-25}\ \mathrm{kg}$ |
+| $G_F$ | $4.544\times10^{14}\ \mathrm{J}^{-2}$ |
 | $S$ | The $W_3$–$B$ mixing parameter |
 | $T$ | The custodial-breaking value parameter, $\alpha T=\rho-1$ |
 | $U$ | The custodial-breaking slope parameter |

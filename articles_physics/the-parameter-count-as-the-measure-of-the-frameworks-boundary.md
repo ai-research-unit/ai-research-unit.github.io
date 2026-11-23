@@ -8,7 +8,7 @@ A framework can be judged in two ways: by what it derives, or by what it leaves 
 
 Saying that a framework "does not derive the electron mass" lumps together three very different failures:
 
-- A value is a principle that returns $m_e=0.511$ MeV. No framework in existence does this for any fermion mass, so the failure is universal and uninformative.
+- A value is a principle that returns $m_e=9.11\times10^{-31}$ kg. No framework in existence does this for any fermion mass, so the failure is universal and uninformative.
 - A relation is a principle that makes one parameter a function of another, reducing the count by one. This is a weaker claim and a much more interesting one, because it is achievable and because it is falsifiable.
 - A constraint is a principle that forbids a region, such as $\theta_{\mathrm{QCD}}=0$ or $m_{\xi_{\mathrm{neu}}}=0$. Also achievable, and the corpus has two examples.
 
@@ -51,7 +51,7 @@ The regrouping does not change the count. The scalar pair can be written $(v,M_H
 $$
 \digamma_{\mathrm{qtc}}=\frac{M_H^2}{2v^2}=\frac{(125.09)^2}{2(246.22)^2}=0.1291 ,
 \qquad
-\mu=\frac{M_H}{\sqrt2}=88.5\ \mathrm{GeV} .
+\mu=\frac{M_H}{\sqrt2}=1.578\times10^{-25}\ \mathrm{kg} .
 $$
 
 Two numbers either way. The count is invariant under the choice, which is what makes it a property of the model rather than of the notation.
@@ -294,7 +294,7 @@ The table gives each item and its provenance.
 | The nineteen, with values and schemes | Imported from the content article; regrouped and re-typed here |
 | The sector split $13+3+1+2$ | Computed here |
 | The share $13/19=68.4\%$ | Computed here |
-| $\digamma_{\mathrm{qtc}}=0.1291$, $\mu=88.5$ GeV | Computed here from $M_H$ and $v$ |
+| $\digamma_{\mathrm{qtc}}=0.1291$, $\mu=1.578\times10^{-25}$ kg | Computed here from $M_H$ and $v$ |
 | The typology into five kinds | This article's classification |
 | The counts $8$, $9$, $2$ and their shares | Computed here |
 | The framework's three parameters | Imported from the gauge and massive-equation articles |
@@ -327,15 +327,15 @@ Four machines would reduce the count: a spectral principle (ten entries), a scal
 
 | Symbol | Meaning |
 |---|---|
-| $v$ | Higgs expectation value, $246.22$ GeV |
-| $M_H$ | Higgs mass, $125.09$ GeV |
+| $v$ | Higgs expectation value, $3.9449\times10^{-8}$ J |
+| $M_H$ | Higgs mass, $2.2299\times10^{-25}$ kg |
 | $\mu^2$, $\digamma_{\mathrm{qtc}}$ | The two parameters of the scalar potential |
 | $g_{\mathrm Y}$, $g$, $g_s$ | The three gauge couplings |
 | $\theta_{\mathrm{QCD}}$ | The QCD vacuum angle |
 | $\theta_{ij}$, $\delta$ | CKM angles and phase |
 | $ϙ$ | The framework's central charge parameter |
 | $m$, $\nu_m$ | Mass and constant of the massive field equation |
-| $M_{\mathrm{Pl}}$ | Planck mass, $1.22\times10^{19}$ GeV |
+| $M_{\mathrm{Pl}}$ | Planck mass, $2.18\times10^{-8}$ kg |
 | $\bar\rho$, $\bar\digamma_{\mathrm{wlf}}$ | The two parameters of the unitarity triangle |
 | $m_{\beta\beta}$ | Effective Majorana mass |
 

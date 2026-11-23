@@ -4,8 +4,6 @@
 
 This is standard physics, and one of the two places where the model is widely agreed to be incomplete from the inside. Nothing here is a framework result. The framework's contribution is stated in one section and consists of a *reason for silence*, which is worth having only because it is exact.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 The Higgs mass is the only dimensionful parameter in the model that is not protected by a symmetry, so every heavy particle that couples to the Higgs shifts its mass by an amount proportional to the heavy particle's mass squared, and the measured value requires those shifts to cancel against the bare parameter to one part in $3.0\times10^{32}$ if the cutoff is the Planck scale.
 
 Three claims are refused at the outset.

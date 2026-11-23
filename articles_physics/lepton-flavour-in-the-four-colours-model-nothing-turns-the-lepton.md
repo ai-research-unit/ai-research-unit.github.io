@@ -4,8 +4,6 @@
 
 No flavour change. The six leptoquarks do not change a lepton's generation, and no experiment has seen a lepton change its generation by any process at all. That statement rests on the data first and on the frame second.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 A word that may not apply. "Lepton flavour" is loose language. In this frame a lepton carries a generation index and nothing else: no charge distinguishes the three columns, and no boson carries a flavour quantum number away. The reason is structural and is in *Why Nothing Turns the Lepton*: the lepton is the temporal line $\mathbb C e_t$, the axis of the colour rotation, so there is no rotating multiplet for a flavour label to index. Whether the word names a property of the lepton at all — beyond "it has a mass" — the corpus cannot say. This article therefore uses it only to mean "which generation", or avoids it.
 
 The one open item. The frame fixes the leptoquark operator except for one thing: whether its vertex carries a generation index. It does not fix that, and it cannot, because the Yukawa sector that would fix it is not solved. So the corpus says what it knows, states the two possibilities, and calls neither of them the answer.

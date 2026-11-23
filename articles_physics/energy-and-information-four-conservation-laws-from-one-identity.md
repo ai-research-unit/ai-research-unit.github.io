@@ -6,8 +6,6 @@ The corpus splits the biquaternion algebra into two real four-dimensional subspa
 
 The algebra attaches two numbers to an element, the scalar part and the quaternionic norm, and the two sectors read them in opposite roles. On $\mathbb{B}_{\Phi}$ the scalar part carries the energy and the norm is the mass; on $\mathbb{B}_{\Psi}$ the scalar part carries the normalisation and the norm is the information. Conjugation by a $*$-unitary element fixes both numbers of whatever it acts on, and that one algebraic fact is the warrant of every conservation law below: energy and mass on the material side, normalisation and information on the informational side. The split is a duality of two readings of two operations, not a sum of two contributions to one number.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 
 It is not an exchange, because nothing passes from one sector to the other. It is not a decomposition either, because energy is not the sum of a mass term and an information term. Nor is it a dynamics: the article fixes what the two sectors conserve, and the one place where a probability falls is a reduced description, treated in its own section and attributed to no element of either sector.
 

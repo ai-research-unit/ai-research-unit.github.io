@@ -4,8 +4,6 @@
 
 The biquaternionic Dirac equation is first order and its solutions are waves. At short wavelength a wave stops being one in the sense that matters, and what remains is a particle with a momentum and a mass. This article carries that out: the relativistic Hamilton–Jacobi equation at leading order, the Lorentz force one step later.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 The claim, stated narrowly. The mass shell is the leading term of a short-wavelength expansion of the Dirac wave. It is not predicted by the algebra nor created by the limit: $\nu_m=\frac{m\,c}{h}$ is already there. What the limit supplies is the reading of the phase gradient as the mechanical momentum, and with it the flow.
 
 The parameter is the companion's. With $\tilde\Xi=A\exp\!\left(i\theta_{\mathrm{phs}}\right)\xi$, the spinor phase $\theta_{\mathrm{phs}}=\frac{2\pi S_{\tilde\Xi}}{h}$ real because the action of the field is real, the small quantity is $\epsilon=1/(2\pi\nu_{\Phi}L)=\frac{h}{2\pi pL}$, $L$ the length over which $A$ varies. The criterion and the error operator are established in *The Non-Quantum Limit of the Biquaternion Model* and are used here, not restated.

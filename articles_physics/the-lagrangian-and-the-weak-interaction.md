@@ -4,8 +4,6 @@
 
 This article writes the charged-current weak interaction as an extremum of an action, and shows that eliminating the $W$ from that action produces the four-fermion contact with the coefficient $G_F$ fixed. It is the action-first companion of *The Weak Interaction in Biquaternionic Form*, which states the currents and the rates; this article asks what functional produces the $V-A$ vertex, and why the contact approximation is as good as it is.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 Its place in the sector. The action here is the charged-current term of the sector's functional, [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html), with the $W$ already massive and the neutral sector dropped. The elimination below is exact only in that truncated setting, and the article says where.
 
 The equation. The parent's equation is the $W$'s own equation with the charged current as source,
@@ -188,7 +186,7 @@ The three findings. The contact is an exact Gaussian elimination followed by a m
 | $J^{+}_{\imath}=\bar{\tilde\Xi}_{\mathrm u}\gamma_{\imath}(1-\gamma_5)\tilde\Xi_{\mathrm d}$ | charged current |
 | $W^{\pm}_{\imath}$ | charged vector fields, mass $M_W$ |
 | $g$ | weak coupling |
-| $G_F$ | Fermi constant, $1.86874\times10^{-15}\ \mathrm{J}$$^{-2}$ |
+| $G_F$ | Fermi constant, $4.544\times10^{14}\ \mathrm{J^{-2}}$ |
 | $G(k)$ | massive-vector propagator $1/(M_W^2-k^2)$ |
 
 ## Further Reading

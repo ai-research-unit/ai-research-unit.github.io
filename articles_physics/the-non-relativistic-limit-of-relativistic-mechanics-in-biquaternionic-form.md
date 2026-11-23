@@ -156,14 +156,14 @@ The two slots. The first three columns are exact, and the last two are the close
 
 The fourth column over the third is the fifth, and the fifth equals $1-\frac{3}{4}\beta^{2}-\frac{1}{16}\beta^{4}$; the sixth equals $1-\frac{1}{2}\beta^{2}-\frac{1}{8}\beta^{4}$. The residual is of order $\beta^{6}$ in each case. The limit is for the first row and not for the last: at $\beta=0.5$ the temporal slot already costs nineteen per cent.
 
-With the scale attached, for the electron, $mc^{2}=510998.95\ \mathrm{MeV}$:
+With the scale attached, for the electron, $mc^{2}=8.187\times10^{-14}\ \mathrm{J}$:
 
-| $\beta$ | $E\ (\mathrm{MeV})$ | $\mathcal{E}\ (\mathrm{MeV})$ | $\frac{1}{2}mv^{2}\ (\mathrm{MeV})$ | ratio |
+| $\beta$ | $E\ (\mathrm{J})$ | $\mathcal{E}\ (\mathrm{J})$ | $\frac{1}{2}mv^{2}\ (\mathrm{J})$ | ratio |
 |---|---|---|---|---|
-| $0.01$ | $511024.50$ | $25.5519$ | $25.5499$ | $0.999925$ |
-| $0.10$ | $513573.27$ | $2574.32$ | $2554.99$ | $0.992494$ |
-| $0.50$ | $590050.76$ | $79051.81$ | $63874.87$ | $0.808013$ |
-| $0.90$ | $1172311.99$ | $661313.04$ | $206954.57$ | $0.312945$ |
+| $0.01$ | $8.1875\times10^{-14}$ | $4.0939\times10^{-18}$ | $4.0935\times10^{-18}$ | $0.999925$ |
+| $0.10$ | $8.2284\times10^{-14}$ | $4.1245\times10^{-16}$ | $4.0935\times10^{-16}$ | $0.992494$ |
+| $0.50$ | $9.4537\times10^{-14}$ | $1.2665\times10^{-14}$ | $1.0234\times10^{-14}$ | $0.808013$ |
+| $0.90$ | $1.8783\times10^{-13}$ | $1.0595\times10^{-13}$ | $3.3158\times10^{-14}$ | $0.312945$ |
 
 The ratio column is the same in the two tables, as it must be: the scale multiplies the exact and the truncated excess alike.
 

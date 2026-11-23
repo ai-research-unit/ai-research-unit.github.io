@@ -4,8 +4,6 @@
 
 **The standing of this article.** Everything below is standard theory, written in the corpus's coordinates and notation. It is **standard input**, not a framework result. Colour is the sharpest declared boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), no compact gauge algebra inside $\mathbb{B}$ has real dimension above four and no $\mathbb{B}$-module has odd complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is transcribed, and the article says so before it computes anything.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 **What this article is actually about.** The previous four articles computed things that perturbation theory can reach: a running coupling, a set of densities, a set of cross sections, and a colour count. This one computes the one number that perturbation theory cannot reach, and it explains why. The proton's mass is the cleanest demonstration in physics that a quantum field theory can generate a scale it does not contain — and the demonstration is not a metaphor, it is a computation that agrees with the measured number to one per cent.
 
 **The claim, in four parts.**

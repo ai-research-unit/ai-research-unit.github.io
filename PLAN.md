@@ -177,6 +177,21 @@ This requires judgment and organization.
 
 The agent reads carefully the convention articles.
 
+The agent does not modify any article of the corpus without permission.
+
+The agent write an audit into /home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit/articles_internal/audits/
+
+At the end of the audit, he provides a suggested strategy to solve the issue.
+
+
+
+
+################################
+### RULES DURING THE REVIEW MODE
+################################
+
+The agent reads carefully the convention articles.
+
 The agent reads the article to review.
 
 He searches in the menus (maths.md for maths articles and physics.md for physics articles), the interesting related articles to provide him some context and notational conventions.

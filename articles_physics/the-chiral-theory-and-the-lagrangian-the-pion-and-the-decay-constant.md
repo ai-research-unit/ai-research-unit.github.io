@@ -4,8 +4,6 @@
 
 The **pion** is the lightest hadron and the clearest realisation in nature of a Goldstone boson. In quantum chromodynamics with two light flavours the quark mass terms are nearly absent, and the theory possesses an approximate global chiral symmetry $SU(2)_L\times SU(2)_R$ that is spontaneously broken to the diagonal isospin $SU(2)_V$ by the quark condensate. The unbroken subgroup leaves the vacuum invariant; the broken directions would each carry a massless scalar, and the three of them appear as the pion triplet. The small quark masses break the symmetry explicitly and give the pions their small masses, and the low-energy dynamics of the three pions is captured by the **chiral Lagrangian**, an effective field theory whose field takes its values in the chiral group and whose couplings are derivatives. This is the framework's nonlinear sigma model, specialised to the coset of two-flavour chiral symmetry and to the pion quantum numbers.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 This article constructs the pion and the chiral Lagrangian in the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The framework's available compact group is the group of unit quaternions, the elements $\tilde u$ with $\langle\tilde u\rangle_\natural = e_t$, isomorphic to $SU(2)$ and to $\mathbb{S}^3$, and the pion triplet is naturally carried by the adjoint of its Lie algebra, which lies in the material sector:
 
 $$

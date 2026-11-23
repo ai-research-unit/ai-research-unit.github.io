@@ -4,8 +4,6 @@
 
 **The model.** This article classifies the particles of one model and no other: **the Four Colours Left–Right Model**, the model the corpus adopts, set out in [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The name is stated first because every name below belongs to that model and to nothing else. It is not the Standard Model's particle list, and it is not a general classification of everything the algebra could describe: it is the spectrum of this frame, under this group, with this one declaration.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 **The structure.** The frame is one group with three factors,
 
 $$

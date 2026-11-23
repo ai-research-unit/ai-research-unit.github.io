@@ -130,12 +130,12 @@ v^2=\frac{\mu^2}{\varpi_{\mathrm{cpl}}} ,
 \qquad
 \langle\omicron_{\mathrm{hgs}}\rangle=\frac{1}{\sqrt2}\begin{pmatrix}0\ v\end{pmatrix},
 \qquad
-v=246.22\ \mathrm{GeV} .
+v=3.9449\times10^{-8}\ \mathrm{J} .
 $$
 
 The value of $v$ is not computed here; it is the entry 18 of the parameter table of article 1, fixed by the Fermi constant.
 
-What the sector supplies. Three things, and they are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) rather than here: the masses $M_W=\tfrac12gv$ and $M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v$, the massless photon, and the scalar mass $M_H=\sqrt{2\varpi_{\mathrm{cpl}}}\,v$. Recomputed from the table, $\varpi_{\mathrm{cpl}}=M_H^2/(2v^2)=0.1291$ for $M_H=125.09$ GeV, and the three masses then follow from $g$, $g_{\mathrm Y}$, $v$ and $\varpi_{\mathrm{cpl}}$.
+What the sector supplies. Three things, and they are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) rather than here: the masses $M_W=\tfrac12gv$ and $M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v$, the massless photon, and the scalar mass $M_H=\sqrt{2\varpi_{\mathrm{cpl}}}\,v$. Recomputed from the table, $\varpi_{\mathrm{cpl}}=M_H^2/(2v^2)=0.1291$ for $M_H=2.2303\times10^{-25}$ kg, and the three masses then follow from $g$, $g_{\mathrm Y}$, $v$ and $\varpi_{\mathrm{cpl}}$.
 
 Four real components, three eaten. The doublet carries four real fields. Three are the Goldstones that the $W^+$, $W^-$ and $Z$ absorb as longitudinal polarisations; the fourth is the physical scalar. The degree-of-freedom count closes: twenty-eight before breaking, twenty-eight after.
 
@@ -327,7 +327,7 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 | $Y_{u}$, $Y_{d}$, $Y_{e}$ | The three Yukawa matrices, general complex $3\times3$ |
 | $M_f=vY_{f}/\sqrt2$ | The mass matrix of the fermion type $f$ |
 | $\mu^2$, $\varpi_{\mathrm{cpl}}$ | The two parameters of the potential |
-| $v^2=\mu^2/\varpi_{\mathrm{cpl}}$ | The vacuum expectation value, $246.22$ GeV |
+| $v^2=\mu^2/\varpi_{\mathrm{cpl}}$ | The vacuum expectation value, $3.9449\times10^{-8}$ J |
 | $M_H=\sqrt{2\varpi_{\mathrm{cpl}}}\,v$ | The scalar mass |
 | $\theta_{\mathrm{QCD}}$ | The vacuum angle |
 | $G_{a,\mathrm{dual},\imath\jmath}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}G_{a,\rho\sigma}$ | The dual field strength |

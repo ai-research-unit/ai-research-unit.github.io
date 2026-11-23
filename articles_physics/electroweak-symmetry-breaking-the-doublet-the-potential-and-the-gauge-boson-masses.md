@@ -4,8 +4,6 @@
 
 The claim. The electroweak sector breaks $SU(2)_L\times\mathrm{U}(1)_Y$ to $\mathrm{U}(1)_{\mathrm{em}}$ through one scalar doublet. The doublet's four real components become one massive scalar and three longitudinal polarisations, and the gauge bosons acquire the masses
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 $$
 M_W=\frac{g\,v}{2},
 \qquad
@@ -514,7 +512,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 | $g_{hWW}$, $g_{hZZ}$, $g_{hhh}$, $g_{hhhh}$ | Scalar couplings, fixed by the masses |
 | $\rho$ | $M_W^2/(M_Z^2\cos^2\theta_W)$, identically one for a doublet |
 | $\delta r$ | The correction to the tree-level mass relation, $0.0355$, computed from $\alpha(0)$ |
-| $G_F$ | $2.07926\times10^{-32}\ \mathrm{kg}$$^{-2}$, fixing $v$ |
+| $G_F$ | $4.5443\times10^{14}\ \mathrm{J}^{-2}$, fixing $v$ |
 | $\xi_a$ | The three would-be Goldstone fields |
 
 ## Further Reading

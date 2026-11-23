@@ -4,8 +4,6 @@
 
 The standing of this article. Standard physics, transcribed. But this is the article where the corpus stops reporting inputs and exhibits a consistency check, and that is a different kind of claim from everything in the four articles before it. Lattice QCD reproduces one number; the triangle reproduces a *shape* from three independent measurements that were each made for a different reason.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 
 What "closure" means here. Take three quantities measured by three different physical processes: a ratio of semileptonic decay rates, measured in tree-level decays; a ratio of oscillation frequencies, measured in loop-induced mixing; and an angle measured in a decay that involves neither mixing nor loops. Unitarily, they must satisfy a relation. They do, at the degree level. No parameter was adjusted to make them, and no new particle was needed.
 

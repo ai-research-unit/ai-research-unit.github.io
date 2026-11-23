@@ -4,8 +4,6 @@
 
 **One coupling.** The coupling that returns the Standard Model is a single equation. It is the matching of hypercharge to the two abelian factors above it:
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 $$
 \boxed{\;\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}\quad\text{at }M_R\;}
 $$

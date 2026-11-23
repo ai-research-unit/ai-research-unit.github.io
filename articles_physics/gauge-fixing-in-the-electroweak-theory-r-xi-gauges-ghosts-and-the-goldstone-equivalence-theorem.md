@@ -4,8 +4,6 @@
 
 The quadratic part of the electroweak Lagrangian is not invertible, because it is flat along the gauge orbits. A gauge-fixing functional is what makes it invertible, and the functional that is chosen here does two things at once: it gives the would-be Goldstones a mass $\zeta M^2$ and it cancels the derivative mixing between each Goldstone and the vector that ate it. Both jobs are done by one term, and that is why the choice is the one it is.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 $$
 \mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a=1,2}\left(\sum_{\imath}\frac{\partial W_{a,\imath}}{\partial R_{\imath}}-\zeta M_W\,\xi_{a}\right)^2-\frac{1}{2\zeta}\left(\sum_{\imath}\frac{\partial Z_{\imath}}{\partial R_{\imath}}-\zeta M_Z\,\xi^0\right)^2-\frac{1}{2\zeta_A}\left(\sum_{\imath}\frac{\partial A_{\imath}}{\partial R_{\imath}}\right)^2 .
 $$

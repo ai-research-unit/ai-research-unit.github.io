@@ -201,7 +201,7 @@ $$
 
 is the quantum length scale of the problem, the radius of the ground-state orbit in the sense that the ground-state wave function is Gaussian with width $\ell_B$. It is the unique length built from $\frac{h}{2\pi},ϙ,B$; the biquaternion framework records it as a central real scalar built from the same central quantities as $\omega_c$. In the correspondence limit of large quantum numbers the oscillator states become the classical circular orbits of the guiding-centre picture.
 
-For orientation, a laboratory field of $1$ T gives, with $\omega_c=|ϙ|B/m$ and $\ell_B=\sqrt{\frac{h}{2\pi \lvert ϙ\rvert B}}$, a magnetic length of $25.66$ nm, a cyclotron frequency of $1.759\times10^{11}$ rad s$^{-1}$, and a cyclotron quantum $hf_{\mathrm{frq},c}=0.116$ meV, with flux quantum $Ξ_0=h/|ϙ|=4.136\times10^{-15}$ Wb. The three scales are all central real scalars; their values are quoted for the electron charge and mass and were recomputed from the defining formulas.
+For orientation, a laboratory field of $1$ T gives, with $\omega_c=|ϙ|B/m$ and $\ell_B=\sqrt{\frac{h}{2\pi \lvert ϙ\rvert B}}$, a magnetic length of $25.66$ nm, a cyclotron frequency of $1.759\times10^{11}$ rad s$^{-1}$, and a cyclotron quantum $hf_{\mathrm{frq},c}=1.86\times10^{-23}$ J, with flux quantum $Ξ_0=h/|ϙ|=4.136\times10^{-15}$ Wb. The three scales are all central real scalars; their values are quoted for the electron charge and mass and were recomputed from the defining formulas.
 
 ## Degeneracy and the Flux Quantum
 

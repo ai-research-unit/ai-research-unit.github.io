@@ -258,7 +258,7 @@ The angle swept by the rotor in time $r'_t$ is $\gamma B r'_t/2$, while the mome
 
 ### The Sign and the Field Direction
 
-The rotor $\tilde u_L(r'_t)$ rotates by the angle $-\gamma B r'_t$ about $\vec u_B$. For a proton, whose $\gamma$ is positive, the moment precesses in the negative sense about the field — clockwise when the field points toward the viewer — which is the standard Larmor sense. The inertia of the moment, in other words, carries it past the field direction rather than dragging it back, and the motion is a precession and not an alignment. The numerical values of the Larmor frequency are the standard ones: $\gamma_p/2\pi = 42.577$ MHz T$^{-1}$ for the proton, so that a field of $1$ T gives $\omega_L = 2\pi\times 42.577$ MHz, and $\gamma_e/2\pi = 28.025$ GHz T$^{-1}$ for the electron's spin.
+The rotor $\tilde u_L(r'_t)$ rotates by the angle $-\gamma B r'_t$ about $\vec u_B$. For a proton, whose $\gamma$ is positive, the moment precesses in the negative sense about the field — clockwise when the field points toward the viewer — which is the standard Larmor sense. The inertia of the moment, in other words, carries it past the field direction rather than dragging it back, and the motion is a precession and not an alignment. The numerical values of the Larmor frequency are the standard ones: $\gamma_p/2\pi = 4.2577\times10^{7}$ s$^{-1}$ T$^{-1}$ for the proton, so that a field of $1$ T gives $\omega_L = 2.6752\times10^{8}$ s$^{-1}$, and $\gamma_e/2\pi = 2.8025\times10^{10}$ s$^{-1}$ T$^{-1}$ for the electron's spin.
 
 ## The Larmor Theorem
 

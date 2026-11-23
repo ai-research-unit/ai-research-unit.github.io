@@ -4,8 +4,6 @@
 
 This article records an external programme, that of Waldyr Alves Rodrigues Jr. and Jayme Vaz Jr. as presented in *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* (arXiv:hep-th/9607231, 1996). It works in the **bundle of differential forms** over Minkowski spacetime and studies the single equation
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 $$
 \tilde\nabla_\Phi\tilde F = 0
 $$
@@ -396,7 +394,7 @@ $$
 M_\tau=m+\frac{3}{2\alpha}m\left(1+16\right)=m\left(1+17\cdot\frac{3}{2\alpha}\right)=3495\,m_e,
 $$
 
-which is $3.184\times10^{-27}\ \mathrm{kg}$ at $m_ec^2=9.11\times10^{-31}\ \mathrm{kg}$ — the source prints $1785$ — against the measured $1777$. The distinction matters arithmetically: $16$ units alone give $3290\,m_e=2.997\times10^{-27}\ \mathrm{kg}$, which is not the tau.
+which is $3.184\times10^{-27}\ \mathrm{kg}$ at $m_e=9.11\times10^{-31}\ \mathrm{kg}$ — the source prints $1785$ — against the measured $1777$. The distinction matters arithmetically: $16$ units alone give $3290\,m_e=2.997\times10^{-27}\ \mathrm{kg}$, which is not the tau.
 
 Beyond the tau the pattern is a proposal, not a derivation, and its arithmetic does not close. The source states the spectrum as
 
@@ -415,7 +413,7 @@ and reads off $M_0=m$, $M_1=m_\mu$, $M_2=m_\tau$, $M_3=20090\,m_e=1.8345\times10
 
 Neither column matches the print. The **sum** shifts the whole sequence by one: it gives the muon where the print gives the electron, so $M_0\ne m$ and every later entry is one step ahead. The **last term** is right at the tau and wrong everywhere else, offering $412\,m_e=3.76\times10^{-28}\ \mathrm{kg}$ and $1029\,m_e=9.38\times10^{-28}\ \mathrm{kg}$ as leptons at $p=0$ and $p=1$, and $13362\,m_e=1.217\times10^{-26}\ \mathrm{kg}$ at $p=3$. The muon's own number comes from the **separate** formula $M=m(1+3n/2\alpha)$ at $n=1$, and the tau's from the last term at $p=2$; no single reading of (6.24) gives both.
 
-Two entries of the table are unreadable rather than wrong, and the table carries the corrected values. The scan shows the tau coefficient as $3845\,m_e$, where $1+17\cdot\frac{3}{2\alpha}=3495\,m_e$; the $3.182\times10^{-27}\ \mathrm{kg}$ printed beside it belongs to $3495\,m_e$, while $3845\,m_e$ is $3.503\times10^{-27}\ \mathrm{kg}$, so a digit has slipped between the two numbers and $3495$ is the intended coefficient. The $M_3$ entry, $20090\,m_e$, is $1.8301\times10^{-26}\ \mathrm{kg}$ at $m_ec^2=9.11\times10^{-31}\ \mathrm{kg}$, not the $1.8345\times10^{-26}\ \mathrm{kg}$ printed beside it — the two entries would need different electron rest energies to agree with their own kilogram figures. What the table above rests on is the **formula** rather than the digits, and the formula does not reproduce the sequence it is said to give. The hypothesis itself is called ad hoc in the paper.
+Two entries of the table are unreadable rather than wrong, and the table carries the corrected values. The scan shows the tau coefficient as $3845\,m_e$, where $1+17\cdot\frac{3}{2\alpha}=3495\,m_e$; the $3.182\times10^{-27}\ \mathrm{kg}$ printed beside it belongs to $3495\,m_e$, while $3845\,m_e$ is $3.503\times10^{-27}\ \mathrm{kg}$, so a digit has slipped between the two numbers and $3495$ is the intended coefficient. The $M_3$ entry, $20090\,m_e$, is $1.8301\times10^{-26}\ \mathrm{kg}$ at $m_e=9.11\times10^{-31}\ \mathrm{kg}$, not the $1.8345\times10^{-26}\ \mathrm{kg}$ printed beside it — the two entries would need different electron rest energies to agree with their own kilogram figures. What the table above rests on is the **formula** rather than the digits, and the formula does not reproduce the sequence it is said to give. The hypothesis itself is called ad hoc in the paper.
 
 ## Maxwell and the Massless Dirac Equation
 

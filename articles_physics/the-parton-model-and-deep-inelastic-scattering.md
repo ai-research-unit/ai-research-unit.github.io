@@ -56,7 +56,7 @@ $$
 
 so that $(k+q)^2=0$ reads $2xp\cdot q=Q^2$, which is the definition of $x$. The variable is not a bookkeeping device; it is the fraction of null momentum, and the elastic condition on a massless constituent fixes it uniquely.
 
-The measured range. At HERA, $E_e=27.5$ GeV against $E_p=920$ GeV gives $s=4E_eE_p=1.01\times10^5$ GeV$^2$, that is $\sqrt s=318$ GeV, and the reach is $Q^2$ up to $s$ and $x$ down to $Q^2/s\approx10^{-5}$ at $Q^2=1$ GeV$^2$. The range matters: the small-$x$ region is where the gluon dominates and where the rise of $F_2$ is seen, and it is a region that only a collider reaches.
+The measured range. At HERA, $E_e=4.41\times10^{-9}\ \mathrm{J}$ against $E_p=1.47\times10^{-7}\ \mathrm{J}$ gives $s=4E_eE_p=1.01\times10^1.3\times10^{-19}\ \mathrm{J^{2}}$, that is $\sqrt s=5.09\times10^{-8}\ \mathrm{J}$, and the reach is $Q^2$ up to $s$ and $x$ down to $Q^2/s\approx10^{-5}$ at $Q^2=2.6\times10^{-20}\ \mathrm{J^{2}}$. The range matters: the small-$x$ region is where the gluon dominates and where the rise of $F_2$ is seen, and it is a region that only a collider reaches.
 
 ## The Hadronic Tensor and the Two Structure Functions
 
@@ -98,7 +98,7 @@ $$
 
 with no residual $Q^2$ dependence at all. This is Bjorken scaling, and its content is that the probe resolves *pointlike, non-interacting* constituents: if the constituents were extended objects with a form factor, $F_2$ would fall with $Q^2$ the way the elastic form factor does, and if they interacted during the collision the impulse approximation would fail and the $Q^2$ dependence would be strong.
 
-The measured statement, stated carefully. Scaling holds to within about ten per cent over the range $2\lesssim Q^2\lesssim 20$ GeV$^2$, and beyond that the deviation is resolved rather than absent — it grows, but it grows logarithmically. The word *logarithmically* is the whole of the next-to-last section: the violations are not power-law, they are slow, and a slow violation is the mark of a dimensionless coupling that runs rather than of a length scale that is being resolved.
+The measured statement, stated carefully. Scaling holds to within about ten per cent over the range $2\lesssim Q^2\lesssim 5.1\times10^{-19}\ \mathrm{J^{2}}$, and beyond that the deviation is resolved rather than absent — it grows, but it grows logarithmically. The word *logarithmically* is the whole of the next-to-last section: the violations are not power-law, they are slow, and a slow violation is the mark of a dimensionless coupling that runs rather than of a length scale that is being resolved.
 
 **Why scaling is a statement about dimension counting and not about dynamics.** If the constituents are pointlike and free, the only scale in the problem is $Q$, so a dimensionless cross section can depend on $Q^2$ only through the ratio $Q^2/\mu^2$ with $\mu$ any other scale; with no other scale, there is nothing to form a ratio with, and the cross section must be $Q^2$-independent. The argument is dimensional analysis, and it is why scaling's failure *is* the discovery of a scale: the violations measure $\Lambda_{\mathrm{QCD}}$ in the same way that a form factor measures a radius.
 
@@ -174,7 +174,7 @@ $$
 
 and the Callan–Gross relation is $R=0$. The kinematic factor $4M^2x^2/Q^2$ is the target-mass correction and is negligible over most of the measured range.
 
-The measurement. $R$ is not zero. It is about $0.18$ at $Q^2\sim5$ GeV$^2$, roughly flat in $x$ up to $x\approx0.5$, rising beyond that where the higher-twist terms take over, and falling at fixed $x$ as $Q^2$ rises — which is the direction the $\alpha_s$ origin of the deviation predicts. The size is the content, and the two limits are not $0$ and $1$ but $0$ and $\infty$: $R=0$ is a massless on-shell spin-$\tfrac12$ constituent, and $R\to\infty$ is a scalar, because a scalar constituent has no transverse coupling at all and $\sigma_T$ vanishes rather than merely shrinking. A value of $0.18$ therefore says the spin-$\tfrac12$ picture is right and the deviation is a correction, and it says it without needing an upper end to compare against.
+The measurement. $R$ is not zero. It is about $0.18$ at $Q^2\sim1.3\times10^{-19}\ \mathrm{J^{2}}$, roughly flat in $x$ up to $x\approx0.5$, rising beyond that where the higher-twist terms take over, and falling at fixed $x$ as $Q^2$ rises — which is the direction the $\alpha_s$ origin of the deviation predicts. The size is the content, and the two limits are not $0$ and $1$ but $0$ and $\infty$: $R=0$ is a massless on-shell spin-$\tfrac12$ constituent, and $R\to\infty$ is a scalar, because a scalar constituent has no transverse coupling at all and $\sigma_T$ vanishes rather than merely shrinking. A value of $0.18$ therefore says the spin-$\tfrac12$ picture is right and the deviation is a correction, and it says it without needing an upper end to compare against.
 
 **Where the deviation comes from.** Two sources, and they are of different kinds. The first is order $\alpha_s$: a gluon in the proton can be resolved by the photon through $g\to q\bar q$, and the longitudinal part of that splitting is nonzero, so $R$ acquires a term proportional to $\alpha_s$ times the gluon density. The second is a power correction and not an $\alpha_s$ effect: the quarks' intrinsic transverse momentum gives the struck quark a virtuality of order $\nu_T^2/Q^2$, which breaks the on-shell condition the Callan–Gross derivation used. The first dominates at small $x$, the second at large $x$, and the fact that $R$ stays small is the quantitative statement that both are corrections rather than the leading description.
 
@@ -192,7 +192,7 @@ with $q_f(x)dx$ the number of quarks of flavour $f$ carrying a fraction between 
 
 What is known and what is fitted. The densities are not predicted. They are parameterised at a low scale — typically a form like $x^{a}(1-x)^{b}(1+c\sqrt x)$ with a normalisation — and the parameters are fitted to several thousand data points spanning many processes, then evolved to other scales with the equations of the next-to-last section. The procedure is the opposite of a derivation: the theory supplies the evolution, the data supply the input, and the fit is where the two meet.
 
-**The gross shape, and why the shape is not arbitrary.** At $Q^2\sim$ few GeV$^2$ the valence distributions peak around $x\approx0.15$ and fall at both ends, for two different reasons: $x\to1$ because a single quark cannot carry all the momentum without the others being absent, which is kinematics, and $x\to0$ as a power of $x$ that the data fit and the theory does not predict, which is where the coherent part of the proton's wave function lives. The sea is concentrated at small $x$ and rises as $x$ falls. The gluon is concentrated at small $x$ more strongly than the sea. Those three statements are qualitative, they are what any sensible parameterisation must reproduce, and they are the whole of what can be said without data.
+**The gross shape, and why the shape is not arbitrary.** At $Q^2\sim$ few $\times10^{-20}$ J$^2$ the valence distributions peak around $x\approx0.15$ and fall at both ends, for two different reasons: $x\to1$ because a single quark cannot carry all the momentum without the others being absent, which is kinematics, and $x\to0$ as a power of $x$ that the data fit and the theory does not predict, which is where the coherent part of the proton's wave function lives. The sea is concentrated at small $x$ and rises as $x$ falls. The gluon is concentrated at small $x$ more strongly than the sea. Those three statements are qualitative, they are what any sensible parameterisation must reproduce, and they are the whole of what can be said without data.
 
 ## The Sum Rules
 
@@ -224,7 +224,7 @@ that is, there is an excess of $\bar d$ over $\bar u$ of about $0.147$. This is 
 
 ## The Gluon, Which the Photon Does Not See at Leading Order
 
-The problem. The photon couples to charge, and the gluon carries none. So the gluon density enters no leading-order expression for $F_1$ or $F_2$ — the two structure functions at leading order in $\alpha_s$ are sums over charged constituents only — and yet the gluon carries about half the proton's momentum at $Q^2\sim$ few GeV$^2$. The qualification is not a quibble: $F_L$ is zero at zeroth order in $\alpha_s$ and is generated entirely by $g\to q\bar q$, which is the third route below. The gluon is the largest single component of the proton and is invisible to the cleanest probe of the proton's structure.
+The problem. The photon couples to charge, and the gluon carries none. So the gluon density enters no leading-order expression for $F_1$ or $F_2$ — the two structure functions at leading order in $\alpha_s$ are sums over charged constituents only — and yet the gluon carries about half the proton's momentum at $Q^2\sim$ few $\times10^{-20}$ J$^2$. The qualification is not a quibble: $F_L$ is zero at zeroth order in $\alpha_s$ and is generated entirely by $g\to q\bar q$, which is the third route below. The gluon is the largest single component of the proton and is invisible to the cleanest probe of the proton's structure.
 
 The three ways it is reached. Through the momentum sum rule, which fixes its normalisation. Through the scaling violations, since $\partial F_2/\partial\ln Q^2$ at small $x$ is dominated by $g\to q\bar q$ and is therefore proportional to the gluon density. And through processes where it couples at tree level: dijet and photon-plus-jet production in the hadron collider, and the longitudinal structure function $F_L$.
 
@@ -288,7 +288,7 @@ with $b_0$ the coefficient of [the running article](asymptotic-freedom-and-the-r
 
 The numbers, with $N_f=4$ held fixed across the interval.
 
-| $n$ | $A_n$ | $d_n$ | $q_n$ change, $2\to20$ GeV$^2$ | $q_n$ change, $2\to100$ GeV$^2$ |
+| $n$ | $A_n$ | $d_n$ | $q_n$ change, $2\to5.1\times10^{-19}\ \mathrm{J^{2}}$ | $q_n$ change, $2\to2.57\times10^{-18}\ \mathrm{J^{2}}$ |
 |---|---|---|---|---|
 | $1$ | $0$ | $0$ | $0.0\%$ | $0.0\%$ |
 | $2$ | $-1.7778$ | $0.2133$ | $-12.0\%$ | $-16.9\%$ |
@@ -311,7 +311,7 @@ $$
 
 with $N$ the isoscalar nucleon, and with the leading correction fixed and computable. The moment is of one structure function and not of the neutrino-plus-antineutrino sum: charge conjugation on an isoscalar target gives $F_{3,\bar\xi_{\mathrm{neu}} N}=F_{3,\xi_{\mathrm{neu}} N}$, so either measures the same number and adding them would double the right side against a measurement of $2.50$. The superscript is $N$ and not $p$: the measured target is isoscalar, and it is charge symmetry that lets the proton and neutron densities be combined into one object, so writing the moment for a proton target and the measurement for an isoscalar one would compare two different sums. The prefactor three is the number of valence quarks, that is $N_c$ read as a baryon number, and the correction is the same $\alpha_s$ that runs.
 
-The arithmetic, and the first thing it gets wrong if the scale is not matched. The measured datum is the CCFR first moment, quoted at $Q^2=3$ GeV$^2$ — that is $Q=1.73$ GeV, not $3$ GeV, and the distinction is worth one sentence because the coupling moves by twenty per cent between the two. Interpolating [the running article's](asymptotic-freedom-and-the-running-of-the-strong-coupling.html) one-loop line between its $1.5$ and $2$ GeV entries gives $\alpha_s\approx0.28$ there, and the one-loop prediction is
+The arithmetic, and the first thing it gets wrong if the scale is not matched. The measured datum is the CCFR first moment, quoted at $Q^2=7.7\times10^{-20}\ \mathrm{J^{2}}$ — that is $Q=2.77\times10^{-10}\ \mathrm{J}$, not $4.8\times10^{-10}\ \mathrm{J}$, and the distinction is worth one sentence because the coupling moves by twenty per cent between the two. Interpolating [the running article's](asymptotic-freedom-and-the-running-of-the-strong-coupling.html) one-loop line between its $1.5$ and $3.2\times10^{-10}\ \mathrm{J}$ entries gives $\alpha_s\approx0.28$ there, and the one-loop prediction is
 
 $$
 3\left(1-\frac{0.28}{\pi}\right)=3(1-0.0891)=2.733 ,
@@ -327,7 +327,7 @@ $$
 
 moves the prediction by a further sixteen per cent of the distance — $0.078$ of the $0.50$ — and leaves $0.16$ unexplained. Closing the gap with a coefficient of this shape would need $c_2\approx9.8$, three times the calculated value; so the residual is not a coefficient deficiency and cannot be argued away as one.
 
-What the residual is. The $F_3$ moments are measured down to $Q^2\approx1.3$ GeV$^2$ and extrapolated to $x=1$, and at those scales the target-mass and higher-twist corrections — of order $M^2/Q^2$ and $\Lambda_{\mathrm{QCD}}^2/Q^2$ — are not small. The comparison above includes none of them, which is why it is a demonstration of the size of the truncation and not a determination. The controlled extraction is a global next-to-next-to-leading-order fit to the same data, and it returns $\alpha_s(M_Z)=0.119\pm0.005$, consistent with the $Z$-pole value of $0.1179$ of the running article.
+What the residual is. The $F_3$ moments are measured down to $Q^2\approx3.3\times10^{-20}\ \mathrm{J^{2}}$ and extrapolated to $x=1$, and at those scales the target-mass and higher-twist corrections — of order $M^2/Q^2$ and $\Lambda_{\mathrm{QCD}}^2/Q^2$ — are not small. The comparison above includes none of them, which is why it is a demonstration of the size of the truncation and not a determination. The controlled extraction is a global next-to-next-to-leading-order fit to the same data, and it returns $\alpha_s(M_Z)=0.119\pm0.005$, consistent with the $Z$-pole value of $0.1179$ of the running article.
 
 **Why this is the cleanest coupling determination.** The first moment is protected against the parton densities: whatever the densities are, their integral is fixed by the valence count, so the sum rule has no density uncertainty. What is left is the coefficient, which is a pure perturbative calculation. Every other determination convolves a hard coefficient with densities that must be fitted; this one does not, and that is why it is quoted as a test of the coupling rather than a test of the densities.
 
@@ -389,7 +389,7 @@ The densities are functions, not numbers: this is the one place in the series wh
 
 The residual $Q^2$ dependence is the running coupling. The moment eigenvalues of the splitting function are $A_n=C_F[\tfrac32-\tfrac1n-\tfrac1{n+1}-2H_{n-1}]$, checked against four-million-point quadrature to $5\times10^{-6}$; $A_1=0$ exactly, which is quark number conservation; $A_2=-\tfrac{16}{9}$; and the moments evolve as $\alpha_s^{d_n}$ with $d_2=\tfrac{16}{75}$ and $d_3=\tfrac13$. Every moment falls and the higher ones fall faster, so the distribution softens, and the measured small-$x$ rise is the singlet and gluon sector that this article names and does not compute.
 
-One sum rule measures the coupling without densities: Gross–Llewellyn Smith, $3(1-\alpha_s/\pi)=2.733$ at $\alpha_s=0.28$, the coupling at the datum's own scale $Q^2=3$ GeV$^2$, against a measured $2.50$. The known two-loop coefficient $c_2=3.25$ moves that to $2.66$ and needs to be $9.8$ to close the gap, so the residual is the low-$Q^2$ treatment and not an unknown coefficient; the controlled NNLO extraction gives $\alpha_s(M_Z)=0.119\pm0.005$.
+One sum rule measures the coupling without densities: Gross–Llewellyn Smith, $3(1-\alpha_s/\pi)=2.733$ at $\alpha_s=0.28$, the coupling at the datum's own scale $Q^2=7.7\times10^{-20}\ \mathrm{J^{2}}$, against a measured $2.50$. The known two-loop coefficient $c_2=3.25$ moves that to $2.66$ and needs to be $9.8$ to close the gap, so the residual is the low-$Q^2$ treatment and not an unknown coefficient; the controlled NNLO extraction gives $\alpha_s(M_Z)=0.119\pm0.005$.
 
 The framework supplies the null direction, and with it the light-cone decomposition; the invariance of $x$ under the collinear dilation is a separate and ordinary fact about boosts. It does not supply the triplet, the constituents, or the densities, and the ledger says so line by line.
 

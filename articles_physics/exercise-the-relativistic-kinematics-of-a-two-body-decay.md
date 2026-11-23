@@ -278,17 +278,17 @@ and the **maximum** is $\theta = \pi$. For $\gamma \gg 1$, $\theta_{\min} \appro
 
 For $K^+ \to \pi^+\pi^0$, with $M = m_{K^+}$, $m_1 = m_{\pi^+}$, $m_2 = m_{\pi^0}$:
 $$
-Q = 219.1298\ \text{MeV},
+Q = 3.51085\times10^{-11}\ \text{J},
 $$
 $$
-E_1^* = E_{\pi^+}^* = 248.1158\ \text{MeV},
+E_1^* = E_{\pi^+}^* = 3.97525\times10^{-11}\ \text{J},
 \qquad
-E_2^* = E_{\pi^0}^* = 245.5612\ \text{MeV},
+E_2^* = E_{\pi^0}^* = 3.93432\times10^{-11}\ \text{J},
 \qquad
-E_1^* + E_2^* = 493.6770\ \text{MeV} = Mc^2,
+E_1^* + E_2^* = 7.90958\times10^{-11}\ \text{J} = Mc^2,
 $$
 $$
-p^*c = 205.1379\ \text{MeV},
+p^*c = 3.28667\times10^{-11}\ \text{J},
 \qquad
 v_{\pi^+}^*/c = 0.826783,
 \qquad
@@ -298,17 +298,17 @@ The kinetic energies are $T_{\mathrm{kin},\pi^{+}} = 1.73909\times10^{-11}\ \mat
 
 The non-relativistic approximation of Problem 6 gives, with $\mu = m_1m_2/(m_1+m_2) = 1.09938\times10^{-11}\ \mathrm{J}$,
 $$
-p^*_{\rm NR}c = \sqrt{2\mu Q} = 173.4137\ \text{MeV},
+p^*_{\rm NR}c = \sqrt{2\mu Q} = 2.77839\times10^{-11}\ \text{J},
 $$
 which is low by $15.46\%$; and the partition $T_{\mathrm{kin},1}/Q$ is $0.495348$ exactly, against the approximation $m_2/(m_1+m_2) = 0.491634$, an error of $0.75\%$. The momentum formula is poor here because $Q/(m_1+m_2) \approx 0.80$, far from the non-relativistic regime.
 
 A decay with a smaller release, $\Lambda \to p\pi^-$ ($M = 1.9889\times10^{-27}$ kg, $m_p = 1.6726\times10^{-27}$ kg, $m_{\pi^-} = 2.4881\times10^{-28}$ kg, so $Q = 6.06272\times10^{-12}\ \mathrm{J}$, only $3.51\%$ of the mass sum), illustrates the opposite regime:
 $$
-E_p^* = 943.6476\ \text{MeV},
+E_p^* = 1.51189\times10^{-10}\ \text{J},
 \qquad
-E_{\pi^-}^* = 172.0354\ \text{MeV},
+E_{\pi^-}^* = 2.75631\times10^{-11}\ \text{J},
 \qquad
-p^*c = 100.5797\ \text{MeV},
+p^*c = 1.61146\times10^{-11}\ \text{J},
 $$
 $$
 v_p^*/c = 0.106586,
@@ -323,16 +323,16 @@ Here $\sqrt{2\mu Q} = 1.53634\times10^{-11}\ \mathrm{J}$, low by $4.66\%$, and t
 
 The two limiting checks confirm the formula in the regime $\beta_a^* = 1$. For the massless decay $\pi^0 \to \gamma\gamma$ ($M = m_{\pi^0} = 2.4062\times10^{-28}$ kg),
 $$
-E_\gamma^* = p^*c = \frac{Mc^2}{2} = 67.4884\ \text{MeV},
+E_\gamma^* = p^*c = \frac{Mc^2}{2} = 1.08128\times10^{-11}\ \text{J},
 \qquad Q = Mc^2 .
 $$
 For $\pi^+ \to \mu^+\xi_{\mathrm{neu},\imath}$ with a massless neutrino ($M = m_{\pi^+} = 2.4881\times10^{-28}$ kg, $m_1 = m_\mu = 1.8835\times10^{-28}$ kg, $m_2 = 0$),
 $$
-E_{\imath}^* = 109.7782\ \text{MeV},
+E_{\imath}^* = 1.75884\times10^{-11}\ \text{J},
 \qquad
-E_{\jmath}^* = 29.7921\ \text{MeV},
+E_{\jmath}^* = 4.77322\times10^{-12}\ \text{J},
 \qquad
-p^*c = 29.7921\ \text{MeV},
+p^*c = 4.77322\times10^{-12}\ \text{J},
 \qquad
 v_{\imath}^*/c = 0.271385,
 $$

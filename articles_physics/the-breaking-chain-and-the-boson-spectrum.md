@@ -4,8 +4,6 @@
 
 **The layer.** The chain is a statement about a group breaking on a formal copy of the carrier, and the spectrum is a property of the resulting broken phase. Its Layer-A content is arithmetic at one step only: the six generators that leave at $M_{C}$ are the directions that move the canonical line, and that is why they carry no rank.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 **The question.** In what order does $G_{4LR}$ break, at what scales, by which vacuum directions, and what becomes of each of the twenty-one gauge bosons on the way down?
 
 **The answer.**

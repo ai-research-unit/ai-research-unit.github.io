@@ -4,8 +4,6 @@
 
 The paradox is a change of basis mistaken for a change of object. A quantum object is said to behave sometimes as a wave and sometimes as a particle. The two descriptions are Fourier transforms of each other, and a Fourier transform is unitary. Nothing is created and nothing is destroyed when a state is written one way or the other, so there is nothing for an object to switch between. There is one object and two bases.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 This article is the general statement, and that is why it sits in the framework section and not inside a quantum one. It contains no result about any particular particle. It states the property that the particle articles use, and it says where in the algebra the property comes from. It is filed above both quantum sections because its two cleanest instances sit on either side of the split: the Schrödinger equation is non-relativistic and the Klein–Gordon equation is not, and the transform treats them alike.
 
 What is standard. The position–momentum Fourier pair, the de Broglie identification $p=h\,\nu_{\Phi}$, the uncertainty relation as a bandwidth theorem, the plane wave and the delta function as the two extremes, and the diagonalisation of the derivative by the transform are textbook material and are flagged as such throughout. They are given in *Derivatives, Fields and Transforms*, which owns the transform and its symbol, and they are not re-derived here.

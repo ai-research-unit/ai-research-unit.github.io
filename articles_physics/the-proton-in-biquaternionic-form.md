@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The proton is the stable charged baryon: spin-$\tfrac{1}{2}$, electric charge $+1$ in units of the elementary charge, mass $938.272$ MeV, and a composite of three quarks bound by the colour interaction. In the biquaternion framework of these articles it can be placed as a massive spin-$\tfrac{1}{2}$ Dirac field, and the purpose of this article is to separate, as the corpus's discipline requires, what the framework's own structure says about it from what is imported from standard physics.
+The proton is the stable charged baryon: spin-$\tfrac{1}{2}$, electric charge $+1$ in units of the elementary charge, mass $1.6726\times10^{-27}$ kg, and a composite of three quarks bound by the colour interaction. In the biquaternion framework of these articles it can be placed as a massive spin-$\tfrac{1}{2}$ Dirac field, and the purpose of this article is to separate, as the corpus's discipline requires, what the framework's own structure says about it from what is imported from standard physics.
 
 The framework is a research programme, not a completed theory, and three of its existing results bear directly on any claim about the proton.
 
@@ -67,7 +67,7 @@ The two lines act on the element and contain no matrix generator. What the readi
 
 **The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the reciprocal length $\nu_{m_p}$ in the linear term that relates the two parts, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_{m_p}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_{m_p}\tilde{Ξ}_{R}$; it is the only mass term in the free equation. The algebra's real structure $\flat=-{}^{*}$ is a different object: for $\tilde{Ξ}=\tilde{Ξ}_{+}+\tilde{Ξ}_{-}$ with $\tilde{Ξ}_{\pm}\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$ one has $\tilde{Ξ}^{\flat}=-\tilde{Ξ}_{+}+\tilde{Ξ}_{-}$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
 
-The value $m_p=938.272$ MeV, or $1.6726\times10^{-27}$ kg, is not a consequence of the algebra or of the equation. It is a parameter, and the framework is scale-free until it is supplied. Equivalently, the free field lies on the mass shell
+The value $m_p=1.6726\times10^{-27}$ kg, is not a consequence of the algebra or of the equation. It is a parameter, and the framework is scale-free until it is supplied. Equivalently, the free field lies on the mass shell
 
 $$
 \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m_p^2c^2,
@@ -209,7 +209,7 @@ The proton is not an elementary field in nature; it is a bound state. Nothing in
 
 **No bound-state structure.** The framework has no two-body or many-body bound-state formalism on which a baryon could be built, and no action, measure or gauge-invariant regulator of the kind the QCD article names as prerequisites. The proton must therefore be represented as an *effective* elementary spin-$\tfrac12$ field, with all composite physics absorbed into imported parameters.
 
-The consequence is that the proton's compositeness — the reason its mass is 938 MeV rather than a Lagrangian parameter, the reason its magnetic moment is not the Dirac value, and the reason its charge is an integer — is entirely outside the framework. The framework can describe the effective proton; it cannot explain why there is one.
+The consequence is that the proton's compositeness — the reason its mass is $1.673\times10^{-27}$ kg rather than a Lagrangian parameter, the reason its magnetic moment is not the Dirac value, and the reason its charge is an integer — is entirely outside the framework. The framework can describe the effective proton; it cannot explain why there is one.
 
 ## Spin, Statistics and the Magnetic Moment
 
@@ -333,7 +333,7 @@ On the sharpest available test, the framework's charge gives $+1$ for the proton
 
 It was also shown that the electric charge cannot be carried by the non-abelian factor: the $\mathrm{SU}(2)$ generators $T_a=\tfrac12\vec e_a$ have square $-\tfrac14e_t$ and purely imaginary values $\pm\tfrac i2$, and their Hermitian partners $iT_a$ have square $+\tfrac14e_t$ and half-integer values $\pm\tfrac12$, so neither can be the proton's integer electric charge. The charge lives on the central line $\mathbb{B}_{C}$. This settles the "which generator" question within the present construction.
 
-What the framework does not supply is everything that makes the proton a proton. There is no colour group — the compact algebra inside $\mathbb{B}$ is at most $\mathfrak{u}(2)$, of real dimension $4$, and every carrier of $\mathbb{B}$ has even complex dimension, so no colour triplet exists. There is no confinement mechanism, no colour carrier, no quark content, no bound-state formalism, and no baryon number. The proton's mass $938.272$ MeV, its charge $+1$, the equality of its charge magnitude with the electron's, the integrality of that charge, its quark content, and its anomalous magnetic moment $g_p\approx5.586$ are all imports from standard physics. The framework represents an effective elementary proton; it does not derive one, and it cannot explain why the effective object exists.
+What the framework does not supply is everything that makes the proton a proton. There is no colour group — the compact algebra inside $\mathbb{B}$ is at most $\mathfrak{u}(2)$, of real dimension $4$, and every carrier of $\mathbb{B}$ has even complex dimension, so no colour triplet exists. There is no confinement mechanism, no colour carrier, no quark content, no bound-state formalism, and no baryon number. The proton's mass $1.6726\times10^{-27}$ kg, its charge $+1$, the equality of its charge magnitude with the electron's, the integrality of that charge, its quark content, and its anomalous magnetic moment $g_p\approx5.586$ are all imports from standard physics. The framework represents an effective elementary proton; it does not derive one, and it cannot explain why the effective object exists.
 
 ## Summary of Notation
 

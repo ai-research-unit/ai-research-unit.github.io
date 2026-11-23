@@ -4,7 +4,7 @@
 
 A framework built on a non-standard algebra, and on a non-standard choice of which part of it counts as "real", is a framework in which a reader will repeatedly find things that look wrong and are not. Two examples fix the idea. The series takes the anti-Hermitian subspace as the material sector, where the more familiar convention would take the Hermitian one. And the series' d'Alembertian carries a sign opposite to the one used in the articles on Weyl spinors. In both cases it is the "correction" that is the error.
 
-This article opens the conventions of the series. It states the conventions of the base: the algebra and its basis, the units, the element and its coefficients, the remarkable subspaces and the conjugations. The conventions of the products and the forms, of the norms and the pairings, of the special elements, of the frames, of the matrix models, of the operators and the calculus, of the indices and the notation, and of the physical units and the common elements are carried by the nine companion articles of the category, in that order, and the rule that decides which concepts the corpus uses, with the concepts it prefers and the concepts it prefers not to use, by the last of the nine. The split follows the dependency order and introduces no new convention: each article states what it needs and cites the one before it, and together they hold what one article held before.
+This article opens the conventions of the series. It states the conventions of the base: the algebra and its basis, the units, the element and its coefficients, the remarkable subspaces and the conjugations. The conventions of the products and the forms, of the norms and the pairings, of the special elements, of the frames, of the matrix models, of the operators and the calculus, of the indices and the notation, and of the physical units and the common elements are carried by the eight companion articles of the category, in that order, and the reserved letters by the last of the nine, *Reserved Letters Conventions*. The split follows the dependency order and introduces no new convention: each article states what it needs and cites the one before it, and together they hold what one article held before.
 
 It states conventions only: the proofs, the properties and the physical interpretations of the objects it names belong to the articles cited beside them. It is meant to be read before any other article is edited, and its reader is anyone writing or revising an article of the series, for whom the conventions are load-bearing — a change that looks local, a sign or a factor of $i$, generally propagates into a dozen dependent articles.
 
@@ -169,45 +169,7 @@ The letters of the physical quantities. The glyphs are fixed one to a quantity, 
 
 A logarithm carries the glyph of its element and the subscript $\log$. The logarithm is a solution of the exponential equation in the same algebra, not an object of a new kind, so it carries the glyph of the element and the subscript, and the definition reads $\exp(\tilde Q_{\log}) = \tilde Q$. The glyph is $\tilde Q_{\log}$ in this algebra, $\tilde q_{\log}$ in the quaternion and split-quaternion layers, $\breve Q_{\log}$ in the reduced biquaternions, and $Q_{\log}$ in the complex, split-complex and dual ones. The subscript is a word, so it competes neither with the direction labels, $Q_t$ and $Q_x$, nor with the counts, $Q_1$; a numbered element keeps its number in front of the subscript, $\tilde Q_{1\log}$. The subscript is dropped when the logarithm is written as an operator, $\log\tilde Q$ or $\operatorname{Log}\tilde Q$. The coordinates of a logarithm follow the coefficient rule: in the complex, split-complex and dual layers, $Q_{\log}=q_{\log}+iq'_{\log}$ has real part $q_{\log}$ and imaginary part $q'_{\log}$, with $j$ in place of $i$ in the split-complex case, and the prime marks the imaginary coordinate alone. The logarithm of a real number is the ordinary real logarithm, written $\log q$; the glyph $q_{\log}$ is the real coordinate of $Q_{\log}$, not the logarithm of $q$.
 
-## The Reserved Letters
-
-**Five letters carry five roles, and each is spent once.** An angle is $\theta$, a scale is $\varrho$, a wave number is $\nu$, a wavelength is $\lambda$, and an eigenvalue is $\eta$. None of the five carries a second sense, and no other scalar borrows one of them. A scalar that is none of the five takes $\digamma$ with a subscript that names its sense.
-
-### The Angle: $\theta$
-
-**An angle is real, and it is written $\theta$.** The central phase is $\exp(i\theta_{\mathrm{cen}} J)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{rat}}$ the rotation angle of an evolution. One glyph, one case, and no second letter spent on the imaginary reading.
-
-The central phase is the real argument. $\exp(i\theta_{\mathrm{cen}})e_t=\exp(i\theta_{\mathrm{cen}} J)$ with $\theta_{\mathrm{cen}}$ real and $J=L_{ie_t}$: the phase turns the centre by a real angle, and the rotor of a rotation is the same argument at half the angle, $\tilde u_{\mathrm r}=\cos(\theta/2)e_t+\sin(\theta/2)\vec u_{\mathrm r}$.
-
-The boost factor is the imaginary argument. The four-vector element carries $\mathcal B_{\Psi}$ with $\tilde U_{\Psi,\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $\exp(\vec U\theta)$ at the imaginary argument $\theta=-i\theta_{\mathrm{rpd}}$. The rapidity takes the angle's letter with the caret `rpd`, so that no second letter is spent on it. The sign carries the direction of the boost and the magnitude is the rapidity. A purely imaginary angle is written $i\theta_{\mathrm{rpd}}$ where it is used, and the $\theta_{\mathrm{rpd}}$ inside stays real.
-
-The circle and the hyperbola are one formula. At the imaginary argument $i\theta$,
-
-$$
-\cos(i\theta)=\cosh\theta,\qquad \sin(i\theta)=i\sinh\theta .
-$$
-
-The formula does not change between the rotation and the boost; only the value put in the slot changes.
-
-The rotor's angle is $\theta_{\mathrm{axr}}$. For the word's rotor, $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, the label names the rotation angle about the arbitrary axis $\vec u_{\mathrm r}$. Where an element is written in the parent's expansion $\cos\theta+\sin\theta\,\vec u$, the angle in the slot is the half-angle and the rotation is through $2\theta$; those occurrences keep a locally defined $\theta$ and say so.
-
-The letter carries no second role. The roles that once shared it have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}_{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta_{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.
-
-### The Scale: $\varrho$
-
-**The glyph $\varrho$ carries a scale and nothing else.** A polar decomposition writes an element as a positive real scale times a unit element, $\tilde\Xi=\varrho\,\tilde u$ with $\varrho=\lVert\tilde\Xi\rVert\ge0$ and $\lVert\tilde u\rVert=1$, and the amplitude of a wave is the same letter read as a magnitude. A subscript names which scale: $\varrho_{\mathrm{num}}$ the number density of a fluid, $\varrho_{\mathrm{chg}}$ the charge density, $\varrho_{\mathrm{ifm}}$ the coefficient of an indefinite form. The letter never carries an angle, a wave number, a wavelength or an eigenvalue.
-
-### The Wavenumber: $\nu$
-
-**The glyph $\nu$ carries a wave number and nothing else.** The wave number is the number of turns per unit length, $\nu=k/2\pi=1/\lambda$, and a particle has three of them, $\nu_m$, $\nu_{\Phi}$ and $\nu_t^{\prime}$. The letter is never an index, because the space index is $k$; never a frequency in hertz, which is $f$ or $\omega$; never a mass; and never a particle species, the neutrino carrying the field letter and the role subscript, $\xi_{\mathrm{neu}}$.
-
-### The Wavelength: $\lambda$
-
-**The glyph $\lambda$ carries a wavelength and nothing else.** It is the reciprocal of the wave number, $\lambda=1/\nu$, written $\lambda_m$, $\lambda_{\Phi}$ and $\lambda_t$ for the three of a particle. The letter never carries an eigenvalue, a coupling, a scale factor or a parameter of a family; those are $\eta$, $\digamma_{\mathrm{qtc}}$, $\digamma_{\mathrm{scl}}$ and $\digamma_{\mathrm{prm}}$.
-
-### The Eigenvalue: $\eta$
-
-**The glyph $\eta$ carries an eigenvalue and nothing else.** The spectrum is $\eta$, $\eta_\pm$, $\eta_{1,2}$, $\eta_1\dots\eta_N$, $\eta_i$ or $\eta_n$ according to how many there are, the characteristic equation is $\eta^{2}-2Q_t\eta+N=0$, and the conjugate eigenvalue is $\bar\eta$. A spectral parameter is an eigenvalue and keeps the letter. The letter is never an index, never a scale and never an indefinite form.
+The scalars that are not elements are the reserved letters, gathered in *Reserved Letters Conventions*: an angle is $\theta$, a scale is $\varrho$, a wave number is $\nu$, a wavelength is $\lambda$, an eigenvalue is $\eta$, the scalar imaginary is $i$, the two sectors are the uppercase $\Phi$ and $\Psi$, the speed of light is $c$, the proper time is $\tau$ and the mass is $m$. Every other scalar takes $\digamma$ with a subscript that names its sense. The element glyphs are reserved in the same article: $Q$ for the generic element, $Ζ$ for the roots, and $\Pi$ for the idempotent and the nilpotent.
 
 ## The Remarkable Subspaces of Biquaternions
 
@@ -422,7 +384,7 @@ The base conventions are one object read in order. The algebra is $\mathbb{B}=\m
 
 The conjugations cut the algebra into the remarkable subspaces, and the subspaces carry the two sector names. Multiplication by $i$ is the bijection between the two sectors, and it fixes the names of the two readings, the material reading on $\mathbb{B}_{\Phi}$ and the informational reading on $\mathbb{B}_{\Psi}$. **There is no dictionary**, because there is nothing to map: the parameters are the coordinates, $(q_t,\ i q'_t)$ on the time slot and $(q_x,q_y,q_z)$ with $(i q'_x,i q'_y,i q'_z)$ on the space slots, and the physical reading names them once, $q_t=h_t$, $q'_t=r'_t$, $q_{\imath}=r_{\imath}$, $q'_{\imath}=h'_{\imath}$. The only conversion in the scheme is $c$, between the length coordinate and the second. The pure elements — those with no scalar part — are written with the arrow and without the tilde, $\vec Q$. A duo-complex number is written $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$, a pair of complex coordinates with no product, and the reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is that pair together with the multiplication by $j$.
 
-The angle is real and is one letter: $\theta$, with a subscript naming it, the $i$ of a rotation sitting in the exponential; the central phase is the real argument and the boost is the imaginary one, $i\theta_{\mathrm{rpd}}$. The rest of the conventions is in the eight companion articles — products and forms, norms and pairings, special elements, frames, matrix models, operators and calculus, indices and notation, and physical units and common elements — each stated after the one it depends on.
+The angle is real and is one letter: $\theta$, with a subscript naming it, the $i$ of a rotation sitting in the exponential; the central phase is the real argument and the boost is the imaginary one, $i\theta_{\mathrm{rpd}}$. The rest of the conventions is in the nine companion articles — products and forms, norms and pairings, special elements, frames, matrix models, operators and calculus, indices and notation, physical units and common elements, and the reserved letters — each stated after the one it depends on.
 
 ## Summary of Notation
 
@@ -432,11 +394,8 @@ The angle is real and is one letter: $\theta$, with a subscript naming it, the $
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\exp(i\theta_{\mathrm{cen}})e_t=\exp(i\theta_{\mathrm{cen}} J)$ | The central phase, carried by the first coordinate $Q_t$ and extended to the four by $\mathbb{C}$-linearity |
-| $\theta$; $i\theta_{\mathrm{rpd}}$ | The angle, real, with a subscript naming it; a purely imaginary angle is written $i\theta$ at the point of use and the $\theta$ inside stays real — the central phase is the real argument and the boost the imaginary one (§*The Reserved Letters*) |
-| $\varrho$; $\varrho_{\mathrm{num}}$, $\varrho_{\mathrm{chg}}$ | The scale of a polar decomposition, $\tilde\Xi=\varrho\,\tilde u$ with $\varrho\ge0$, and the amplitude of a wave; the subscript names which scale (§*The Reserved Letters*) |
-| $\nu$; $\nu_m$, $\nu_{\Phi}$, $\nu_t^{\prime}$ | The wave number, $\nu=k/2\pi=1/\lambda$; the three of a particle; never an index, never a frequency in hertz, and never a particle species — the neutrino is $\xi_{\mathrm{neu}}$ (§*The Reserved Letters*) |
-| $\lambda$; $\lambda_m$, $\lambda_{\Phi}$, $\lambda_t$ | The wavelength, $\lambda=1/\nu$; the three of a particle; never an eigenvalue or a coupling (§*The Reserved Letters*) |
-| $\eta$; $\eta_\pm$, $\eta_{1,2}$, $\eta_i$ | The eigenvalue, a root of $\eta^{2}-2Q_t\eta+N=0$; never an index and never a scale (§*The Reserved Letters*) |
+| $\theta$, $\varrho$, $\nu$, $\lambda$, $\eta$, $i$, $c$, $\Phi$, $\Psi$, $\tau$, $m$, $\digamma$ | The reserved letters — angle, scale, wave number, wavelength, eigenvalue, scalar imaginary, speed of light, the two sectors, proper time, mass — and the fallback glyph of every other scalar (*Reserved Letters Conventions*) |
+| $Q$, $Ζ$, $\Pi$ | The reserved element glyphs — the generic element, the roots, the idempotent and the nilpotent (*Reserved Letters Conventions*) |
 | $J=L_{ie_t}$ | The one complex structure of $\mathbb{B}$, of which the phase is the exponential |
 | $S_+(\vec u)\oplus S_-(\vec u)$ | The polarization, the two planes; a frame datum, not a pair of halves |
 | $\tilde Q = \tilde q + i\tilde q'$ | The element and its split into a quaternion part and an antiquaternion part |
@@ -464,6 +423,7 @@ The angle is real and is one letter: $\theta$, with a subscript naming it, the $
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the operators and for the derivative marks, the gradient and the d'Alembertian.
 - [Physics Units and Common Elements Conventions](physics-units-and-common-elements-conventions.html), for the SI units, the two writings of the temporal slot and the catalogue of the tilde glyphs.
 - [Index and Notation Conventions](index-and-notation-conventions.html), for the two superscript tokens and the rules of the subscripts.
+- [Reserved Letters Conventions](reserved-letters-conventions.html), for the letters spent once and the fallback glyph of every other scalar.
 - [The Algebraic Vocabulary: Element, Conjugations, Six Subspaces and Two Ledgers](the-algebraic-vocabulary-element-conjugations-six-subspaces-and-two-ledgers.html), companion article, for the relations among the subspaces defined here — their coordinate blocks, intersections, spans, gradings and biquaternion norms.
 - W. R. Hamilton, *Lectures on Quaternions* (Hodges and Smith, 1853), for the original quaternion algebra and its units.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for idempotents, minimal left ideals and the conjugations of a Clifford algebra.

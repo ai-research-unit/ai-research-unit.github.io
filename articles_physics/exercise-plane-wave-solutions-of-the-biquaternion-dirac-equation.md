@@ -4,8 +4,6 @@
 
 This is a worked exercise on the biquaternion Dirac equation, written in the biquaternion algebra and on its elements. The field is one biquaternion, the derivative is the corpus gradient $\tilde\nabla_\Phi$, and every result below is a statement about elements and their products. The parent article, *The Biquaternion Dirac Equation — Solutions and the Non-Relativistic Limit*, supplies the equation, the field, the two frequency branches and the mass shell. The present exercise re-derives the parent's results in the algebra and supplies what the parent leaves implicit: the solutions written as elements, the normalisation in the biquaternion pairing, the spin sums as products of elements, the massless limit, the change of the reading of the two parts, and the helicity pieces with their determinant.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 
 **One operator, two members.** The gradient is the one first-order operator of the equation, and the mass couples two members,
 

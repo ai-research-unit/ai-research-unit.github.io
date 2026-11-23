@@ -4,8 +4,6 @@
 
 Two of the model's failures are exact and quantitative, and a third — the one usually listed with them — is neither. The article separates the three, prints the numbers behind the separation, and records that the framework contributes to one of them the mechanism that makes it possible and to the other two nothing.
 
-Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
-
 | Subject | Status | The model's answer |
 |---|---|---|
 | Dark matter | A missing *object* | Nothing in the spectrum can be it |
@@ -117,13 +115,13 @@ $$
 \sigma_{\mathrm{SI}}<2.6\times10^{-51}\ \mathrm{m^2}\ \text{at}\ n_\chi\approx0.1219 .
 $$
 
-A weak-scale cross-section is of order $4\times10^{-33}$ cm$^2$ — a few picobarns. So the limit is
+A weak-scale cross-section is of order $4\times10^{-37}\ \mathrm{m^{2}}$. So the limit is
 
 $$
-\frac{\sigma_{\mathrm{weak}}}{\sigma_{\mathrm{limit}}}=\frac{4\times10^{-33}}{2.6\times10^{-47}}=1.5\times10^{14}
+\frac{\sigma_{\mathrm{weak}}}{\sigma_{\mathrm{limit}}}=\frac{4\times10^{-37}}{2.6\times10^{-51}}=1.5\times10^{14}
 $$
 
-times below the weak scale. A WIMP whose annihilation in the early universe set the relic density has an annihilation cross-section of order a picobarn, and by detailed balance a scattering cross-section of comparable order. So the simplest WIMP is excluded by fourteen orders of magnitude, and the surviving models are either heavier, or tuned to a cancellation, or coupling through a heavy mediator.
+times below the weak scale. A WIMP whose annihilation in the early universe set the relic density has an annihilation cross-section of order $4\times10^{-37}\ \mathrm{m^{2}}$, and by detailed balance a scattering cross-section of comparable order. So the simplest WIMP is excluded by fourteen orders of magnitude, and the surviving models are either heavier, or tuned to a cancellation, or coupling through a heavy mediator.
 
 Two candidates the corpus can build.
 
@@ -345,7 +343,7 @@ The table gives each number the article uses and says whether it was imported or
 | $\Omega_{\mathrm{DM}}h^2=0.1200$, $\Omega_b h^2=0.02237$, ratio $5.36$ | Imported; ratio computed here |
 | $\Omega_{\jmath} h^2<0.00129$, $1.1\%$ of the dark density | Computed here from $\Sigma n_{\xi_{\mathrm{neu}}}<4.9\times10^{-13}$ |
 | $N_{\xi_{\mathrm{neu}}}=2.9963\pm0.0074$ | Imported |
-| $\sigma_{\mathrm{SI}}<2.6\times10^{-47}$ cm$^2$, $1.5\times10^{14}$ below weak | Imported limit; ratio computed here |
+| $\sigma_{\mathrm{SI}}<2.6\times10^{-51}\ \mathrm{m^{2}}$, $1.5\times10^{14}$ below weak | Imported limit; ratio computed here |
 | $\digamma_{\mathrm{bau}}=6.1\times10^{-10}$ | Imported |
 | $J=3.13\times10^{-5}$ | Computed here from $\digamma_{\mathrm{ckm},12}$, $A$, $\bar\rho$, $\bar\digamma_{\mathrm{bau}}$, $\delta$ |
 | $\digamma_{\mathrm{bau}}\sim10^{-20}$ from $J$, eleven orders short | Imported estimate; the gap computed here |
@@ -362,7 +360,7 @@ The table gives each number the article uses and says whether it was imported or
 
 The Standard Model fails on two of these three subjects exactly, and on the third it succeeds in a way that forbids it from being useful.
 
-The dark matter is $5.36$ times the baryon density, and the model's spectrum is closed: neutrinos are $1.1\%$ of it at the cosmological mass bound, the Higgs decays in $10^{-22}$ s, and the neutron in $880$ s. The neutral-current bound $N_{\xi_{\mathrm{neu}}}=2.9963\pm0.0074$ confirms three species and excludes a fourth with a light neutrino, so the simplest door is shut by the same measurement that opened the model. Direct detection at $2.6\times10^{-47}$ cm$^2$ has pushed the simplest WIMP $1.5\times10^{14}$ below the weak scale. The two candidates the corpus can build — the axion and the sterile neutrino — both arrive as by-products of solving other problems.
+The dark matter is $5.36$ times the baryon density, and the model's spectrum is closed: neutrinos are $1.1\%$ of it at the cosmological mass bound, the Higgs decays in $10^{-22}$ s, and the neutron in $880$ s. The neutral-current bound $N_{\xi_{\mathrm{neu}}}=2.9963\pm0.0074$ confirms three species and excludes a fourth with a light neutrino, so the simplest door is shut by the same measurement that opened the model. Direct detection at $2.6\times10^{-51}\ \mathrm{m^{2}}$ has pushed the simplest WIMP $1.5\times10^{14}$ below the weak scale. The two candidates the corpus can build — the axion and the sterile neutrino — both arrive as by-products of solving other problems.
 
 The baryon asymmetry is $\digamma_{\mathrm{bau}}=6.1\times10^{-10}$, one per $1.6\times10^{9}$ photons, and it cannot be an initial condition because inflation erases it. The model satisfies the three Sakharov conditions nominally and fails all three quantitatively: the sphaleron violates $B$, but $B-L$ is conserved exactly, so from $B-L=0$ the answer is zero and not merely small; the CKM phase has $J=3.13\times10^{-5}$ and yields $\digamma_{\mathrm{bau}}\sim10^{-20}$, eleven orders short; and the electroweak transition is a crossover for any Higgs above $1.28\times10^{-25}$ kg, so there is no departure from equilibrium at $2.23\times10^{-25}$ kg.
 
