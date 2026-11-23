@@ -97,7 +97,7 @@ The field does not thin as its mass vanishes: $\rho_{\mathrm{num}}=\varrho^{2}$ 
 
 ### The Momentum's Approach, and the Frame That Pays
 
-Family one at fixed energy, with $c=1$. Every row is a momentum at the mass it names, and no row is a limit:
+Family one at fixed energy, with the momentum in units of $mc$ and the energy in units of $mc^2$. Every row is a momentum at the mass it names, and no row is a limit:
 
 | $m$ | $\lvert N(\tilde P_\Phi)\rvert=m^{2}$ | $1/\lvert N\rvert$ | $\gamma=E/m$ | $\lvert\vec v\rvert/c$ |
 | --- | --- | --- | --- | --- |
@@ -138,7 +138,7 @@ $$
 
 which contains no mass at all. At fixed energy the rate of momentum transfer is the same at every mass: **the Bohm potential diverges and the Bohm force does not.** A reader who quotes "$Q_{\mathrm{qnt}}$ diverges" as the statement that the guidance fails near the wall has quoted the potential and not the force.
 
-The velocity defect is the fastest divergence in the block. Since $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ and $Q_{\mathrm{qnt}}\propto1/m$, the defect grows as $1/m^{2}$: $-0.021$ at $m=1$, $-0.083$ at $m=0.5$ and $-0.333$ at $m=0.25$, a factor four for each halving. So the velocity is invertible only at a mode, and its departure from the unit is the quantity that fails first.
+The velocity defect is the fastest divergence in the block. Since $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ and $Q_{\mathrm{qnt}}\propto1/m$, the defect grows as $1/m^{2}$: $-0.021$ at $k_m=1\ \mathrm{fm^{-1}}$, $-0.083$ at $2\ \mathrm{fm^{-1}}$ and $-0.333$ at $4\ \mathrm{fm^{-1}}$, a factor four for each halving. So the velocity is invertible only at a mode, and its departure from the unit is the quantity that fails first.
 
 ### What the Approach Does, Said in Fluid Words
 

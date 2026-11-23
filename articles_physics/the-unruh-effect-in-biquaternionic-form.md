@@ -266,16 +266,10 @@ $$
 Since $\beta=\frac{\hbar}{k_{B}\,T}$, the temperature is
 
 $$
-T = \frac{1}{\beta} = \frac{a}{2\pi} \quad (\hbar=k_B=1),
+\boxed{\;T = \frac{\hbar}{\beta\,k_{B}} = \frac{\hbar\,a}{2\,\pi\,c\,k_{B}}\;}
 $$
 
-and restoring the constants,
-
-$$
-\boxed{\;T =\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}\;}.
-$$
-
-This is the Unruh temperature. In the orbit parametrization used here, $a=1/\rho$, so the temperature of the orbit of radius $\rho$ is $T=\frac{\hbar}{2\pi\rho\,c\,k_B}$; the near-horizon orbits, $\rho\to0$, are the hot ones, which is the field-theoretic reason a horizon is hot. Equivalently, the same period expressed in imaginary **Rindler time** is $2\pi i$, and $\beta=2\pi/a$ follows from $\tau=\rho\eta$; the two statements are the same period in different time variables, and we have checked the conversion.
+This is the Unruh temperature. In the orbit parametrization used here, $a=1/\rho$, so the temperature of the orbit of radius $\rho$ is $T=\frac{\hbar}{2\pi\rho\,c\,k_B}$; the near-horizon orbits, $\rho\to0$, are the hot ones, which is the field-theoretic reason a horizon is hot. Equivalently, the same period expressed in imaginary **Rindler time** is $2\pi i$, and $\beta=2\pi c/a$ follows from $\tau=\rho\eta$; the two statements are the same period in different time variables, and we have checked the conversion.
 
 **A case not used to derive it.** The formulas were extracted from the massless scalar; the numerical value of the temperature is independent of that choice. For an acceleration equal to terrestrial gravity, $a=g=9.80665\ \mathrm{m\,s^{-2}}$,
 
@@ -302,11 +296,10 @@ $$
 We have checked this directly: with $\xi=a(r_x\partial/\partial r'_t+r'_t\partial/\partial r_x)$, the identity $\sum_\nu\varepsilon_\nu\,\xi_\nu\partial\xi_\mu/\partial r_\nu=\kappa\xi_\mu$ holds with $\kappa=a$ on the horizon $r_x=r'_t$. The Unruh temperature is then
 
 $$
-T=\frac{\kappa}{2\pi}=\frac{a}{2\pi}\quad(\hbar=c=k_B=1),
-\qquad\text{i.e.}\qquad T=\frac{\hbar a}{2\pi c\,k_B},
+T=\frac{\hbar\,\kappa}{2\pi\,c\,k_B}=\frac{\hbar\,a}{2\pi\,c\,k_B},
 $$
 
-in agreement with the imaginary-time route. The two computations are independent in the sense that one uses the pole structure of the two-point function and the other the normalization of the boost on its horizon; that they agree is a check on the whole construction, not a restatement. The relation between them is transparent once stated: the imaginary-time period is $2\pi$ in the boost parameter, and the boost parameter is the Rindler time whose gradient is the surface gravity. The **surface gravity is the rate of change of the boost rapidity per unit proper time**, and the imaginary-time period $\beta=2\pi/\kappa$ is the reciprocal of the temperature $T=\kappa/(2\pi)$ — equivalently, the period is $2\pi$ times the reciprocal of the surface gravity.
+in agreement with the imaginary-time route. The two computations are independent in the sense that one uses the pole structure of the two-point function and the other the normalization of the boost on its horizon; that they agree is a check on the whole construction, not a restatement. The relation between them is transparent once stated: the imaginary-time period is $2\pi$ in the boost parameter, and the boost parameter is the Rindler time whose gradient is the surface gravity. The **surface gravity is the rate of change of the boost rapidity per unit proper time**, and the imaginary-time period $\beta=2\pi c/\kappa$ fixes the temperature $T=\hbar\kappa/(2\pi c\,k_B)$ — equivalently, the period is $2\pi$ times the reciprocal of the surface gravity.
 
 ## The Polar Word at the Horizon
 
@@ -412,11 +405,10 @@ $$
 whose poles at $\delta\tau=2\pi i n/a$ and the identity $\sinh^2(z+i\pi)=\sinh^2 z$ give the strip $0<\mathrm{Im}\,\delta\tau<\beta$ and the KMS boundary relation $W(\delta\tau+i\beta)=W(-\delta\tau)$ with
 
 $$
-\boxed{\;\beta = \frac{2\pi}{a}, \qquad T=\frac{1}{\beta}=\frac{a}{2\pi}
-\quad(\hbar=k_B=1)\;},
+\boxed{\;\beta = \frac{2\pi\,c}{a}, \qquad T=\frac{\hbar}{\beta\,k_{B}}=\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}\;},
 $$
 
-or $T=\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}$ with the constants restored. The temperature is recomputed independently from the surface gravity of the redshift-normalized boost $\xi=a\zeta$, for which $\sum_\nu\varepsilon_\nu\,\xi_\nu\partial\xi_\mu/\partial r_\nu=a\xi_\mu$ on the horizon, giving $T=\kappa/(2\pi)=a/(2\pi)$.
+The temperature is recomputed independently from the surface gravity of the redshift-normalized boost $\xi=a\zeta$, for which $\sum_\nu\varepsilon_\nu\,\xi_\nu\partial\xi_\mu/\partial r_\nu=a\xi_\mu$ on the horizon, giving $T=\kappa/(2\pi)=a/(2\pi)$.
 
 The framework supplies the algebraic home: the horizon as the zero-divisor cone, the generator in the informational sector $\mathbb{B}_{\Psi}$, the thermal circle along the material time $i r'_t$, and the two-sided action that distinguishes the boost from a rotation. It does not supply the Unruh effect, the Bisognano–Wichmann theorem, or a modular operator for a field algebra; those are imported, and the gap in the parent is left visible.
 

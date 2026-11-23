@@ -171,7 +171,7 @@ $$
 s^{2}=t^{2}-x^{2}
 $$
 
-(in units with $c=1$), and every frame computes the same value. The proper length and the proper time are the interval evaluated on the appropriate slice, and the coordinate length and coordinate time are its projections.
+(with lengths in units of $c$ times a time and velocities in units of $c$), and every frame computes the same value. The proper length and the proper time are the interval evaluated on the appropriate slice, and the coordinate length and coordinate time are its projections.
 
 ### The Proper Time
 

@@ -270,11 +270,11 @@ Both statements were checked numerically on the Gaussian used for the marginal t
 | $Q_{\mathrm{qnt}}$ at the centre, from finite differences | $0.997\,781\,1$ |
 | $\mathrm{Var}(p)/m$ | $0.999\,978\,2$ |
 
-The two numerical values agree to about $2\times10^{-3}$, which is the accuracy of a second difference on a grid of spacing $0.033$; the two exact values agree identically, since both are $\hbar^{2}/(4\sigma^{2})$ with $m=1$. The agreement is the check that the Wigner normalisation and the quantum potential's sign are consistent: a plus sign on the quantum potential would give $-1$ in the third row, and the discrepancy would be visible at once.
+The two numerical values agree to about $2\times10^{-3}$, which is the accuracy of a second difference on a grid of spacing $0.033$; the two exact values agree identically, since both are $\hbar^{2}/(4\sigma^{2})$ with the position in units of $1/k_m$. The agreement is the check that the Wigner normalisation and the quantum potential's sign are consistent: a plus sign on the quantum potential would give $-1$ in the third row, and the discrepancy would be visible at once.
 
 ### Negativity, and what it forbids
 
-**The Wigner element of a non-Gaussian pure state is negative somewhere, and the negativity is the precise sense in which the fluid picture is incomplete.** For the superposition $(\lvert0\rangle+\lvert1\rangle)/\sqrt2$ of the first two oscillator levels, in units with $\hbar=m=\omega=1$:
+**The Wigner element of a non-Gaussian pure state is negative somewhere, and the negativity is the precise sense in which the fluid picture is incomplete.** For the superposition $(\lvert0\rangle+\lvert1\rangle)/\sqrt2$ of the first two oscillator levels, with lengths in units of $1/k_m$, momenta in units of $mc$ and energies in units of $\hbar\omega$:
 
 | quantity | value |
 |---|---|

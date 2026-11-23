@@ -192,7 +192,7 @@ $$
 N(\tilde Q)=Q_t^{2}+B^{2}=\sum_{\mu}Q_\mu^{2},\qquad N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q),\qquad \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N}.
 $$
 
-On the material sector the norm is the interval. With $\tilde P=ip_0e_t+\vec p$ and real $p_0,\vec p$, in units with $c=1$,
+On the material sector the norm is the interval. With $\tilde P=ip_0e_t+\vec p$ and real $p_0,\vec p$, with the momentum in units of $mc$ and $p_0$ in units of $mc$,
 
 $$
 N(\tilde P)=-p_0^{2}+\lvert\vec p\rvert^{2}=-m^{2}.
@@ -703,7 +703,7 @@ The three statements to carry away are these. The partition is by two independen
 | $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich, singular exactly on $\mathcal N$ |
 | $\mathrm{ad}_{\tilde Q}$ | the inner derivation, nilpotent exactly on $\mathcal S$ |
 | $H(\tilde Q)=\operatorname{Sc}\mathrm{Sd}_{\tilde Q}(e_t)$ | the weight of the previous entry, the amplitude |
-| $\tilde P=ip_0e_t+\vec p$ | a four-momentum on the material slice, in units with $c=1$ |
+| $\tilde P=ip_0e_t+\vec p$ | a four-momentum on the material slice, with the momentum in units of $mc$ |
 | $\mathbb B^{\times}_{1}$ | the norm-one group, isomorphic to $SL_2(\mathbb C)$ |
 
 ## Further Reading

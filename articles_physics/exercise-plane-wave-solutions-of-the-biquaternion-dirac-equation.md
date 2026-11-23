@@ -212,7 +212,7 @@ $$
 2\,\mathrm{Sc}\bigl(\tilde v_\pm^{*}\tilde v_\pm\bigr)=2E .
 $$
 
-The bilinear is a Lorentz scalar and its value $2m$ is the covariant normalisation; it is not the probability density, which is the positive quantity $2\,\mathrm{Sc}(\tilde w^{*}\tilde w)=2E$. As a numerical check, for $m=1$ and $\lvert\vec p\rvert=0.6$, hence $E=1.166190$, direct evaluation gives $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2.0000$, $\langle\tilde v,\tilde v\rangle_{\mathrm D}=-2.0000$, $\langle\tilde w,\tilde v\rangle_{\mathrm D}=0$, and $2\,\mathrm{Sc}(\tilde w^{*}\tilde w)=2\,\mathrm{Sc}(\tilde v^{*}\tilde v)=2.3324=2E$.
+The bilinear is a Lorentz scalar and its value $2m$ is the covariant normalisation; it is not the probability density, which is the positive quantity $2\,\mathrm{Sc}(\tilde w^{*}\tilde w)=2E$. As a numerical check, for the momentum in units of $mc$ and the energy in units of $mc^2$, $\lvert\vec p\rvert=0.6$, hence $E=1.166190$, direct evaluation gives $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2.0000$, $\langle\tilde v,\tilde v\rangle_{\mathrm D}=-2.0000$, $\langle\tilde w,\tilde v\rangle_{\mathrm D}=0$, and $2\,\mathrm{Sc}(\tilde w^{*}\tilde w)=2\,\mathrm{Sc}(\tilde v^{*}\tilde v)=2.3324=2E$.
 
 ## Problem 3: The spin sums
 

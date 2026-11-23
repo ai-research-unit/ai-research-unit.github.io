@@ -180,10 +180,7 @@ The Hawking statement is the same condition, stated on the same kind of flow. Fo
 $$
 \beta = \frac{2\pi c}{\kappa} = \frac{2\pi}{\kappa_\omega},
 \qquad
-T = \frac{1}{\beta} = \frac{\kappa_\omega}{2\pi} = \frac{\kappa}{2\pi c}
-\quad(\hbar=k_B=1),
-\qquad\text{i.e.}\qquad
-T = \frac{\hbar\kappa}{2\pi c\,k_B}.
+T = \frac{\hbar}{\beta\,k_B} = \frac{\hbar\,\kappa_\omega}{2\pi\,k_B} = \frac{\hbar\,\kappa}{2\pi\,c\,k_B}.
 $$
 
 The flow is the boost near the horizon established by the preceding subsection; the state is the vacuum of the imported quantization; the only differences from the Rindler case are the global metric and the value of the surface gravity. This is the precise sense in which **the Unruh effect and Hawking radiation are the same KMS statement seen in different coordinates**: Rindler coordinates cover the wedge and make the boost flow manifest; Schwarzschild coordinates cover the exterior and make $\partial/\partial r'_t$ manifest; in both, the state is KMS at inverse temperature $\beta=2\pi c/\kappa$, with $\kappa$ the acceleration-normalized surface gravity.
@@ -382,9 +379,7 @@ Both identities were checked symbolically and numerically for several values of 
 The dimensionless exponent is
 
 $$
-\frac{2\pi\omega}{\kappa}\Big|_{\hbar=c=k_B=1}
-\quad\longleftrightarrow\quad
-\frac{\hbar\omega}{k_B T},
+\frac{\hbar\,\omega}{k_B\,T} = \frac{2\pi\,\omega}{\kappa_\omega},
 $$
 
 with $T=\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}}$; equivalently, in the frequency normalization $T=\frac{\hbar\,\kappa_{\omega}}{2\,\pi\,k_{B}}$ and the exponent is $2\pi\omega/\kappa_\omega$. Thus the distribution

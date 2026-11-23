@@ -493,7 +493,7 @@ $$
 cF = \begin{pmatrix} 0 & \vec N^{\mathsf T} \ \vec N & i[\vec N]_\times \end{pmatrix}, \qquad \vec N = \vec E + i\vec B,
 $$
 
-where $\vec N$ is the Riemann–Silberstein vector of *The Field-Strength Biquaternion* above, written with $c=1$ as the paper's units require; the letter $\vec A$ is reserved in this article for the vector potential and is not used here.
+where $\vec N$ is the Riemann–Silberstein vector of *The Field-Strength Biquaternion* above, written with the constants carried, the fields in units of $\vec E$ and $\vec H$ in units of $\vec E/c$; the letter $\vec A$ is reserved in this article for the vector potential and is not used here.
 
 and with the operator column $(-\partial/\partial r'_t, \vec\nabla_\Phi)^{\mathsf T}$ read entry by entry against the matrix — each operator differentiating the matrix entry beside it — the four equations become the three statements
 

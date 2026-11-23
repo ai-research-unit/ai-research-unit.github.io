@@ -212,7 +212,7 @@ $$
 
 The isotropic part is a function of the state, since $\epsilon$ and $\cos\theta$ are. The deviatoric part is not, and the next computation shows by how much it is not.
 
-**At fixed density and fixed angle the rest of the stress is not fixed.** Two positive-energy modes, the first at momentum $(0.7,0.3,0)$ and the second at $(-\lambda,0.4,0.2)$, both of amplitude one, at one event, with $m=1$ and $\pi^{j}{}_{k}$ the traceless part of the spatial block:
+**At fixed density and fixed angle the rest of the stress is not fixed.** Two positive-energy modes, the first at momentum $(0.7,0.3,0)$ and the second at $(-\lambda,0.4,0.2)$, both of amplitude one, at one event, with the momentum in units of $mc$ and $\pi^{j}{}_{k}$ the traceless part of the spatial block:
 
 | $\lambda$ | $\rho$ | $\cos\theta$ | $\epsilon/\rho$ | $p/\rho$ | $\lVert\pi\rVert/\rho$ |
 | --- | --- | --- | --- | --- | --- |

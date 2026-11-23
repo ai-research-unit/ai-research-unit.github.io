@@ -321,7 +321,7 @@ The forms a subscript takes are these.
 **The size and the family share one subscript.** A regular matrix carries the size of its array and the letters of its family in the same subscript, the size first and the family after it with no separator: $\mathsf M_{4L}$ and $\mathsf M_{4R}$ for the one-sided families, $\mathsf M_{4LR}$ and $\mathsf M_{4LR\ast}$ for the two-sided one. The family letters keep the italic capitals of the operators $L$ and $R$, against the upright roman of a role label, and the frame closes the same subscript after a comma, $\mathsf M_{4L,\mathrm{pau}}$. A bare size, as in $M_4(\mathbb{C})$, names a matrix algebra and no family.
 
 
-The decorations that may stand in the subscript slot are these: all 451 distinct glyphs of the KaTeX 0.16.9 symbol table, one entry per glyph, with a single command written where several commands draw the same glyph. An entry that takes an argument is shown on $n$, and an entry that is text is written inside \text.
+The decorations that may stand in the subscript slot are these: all 450 distinct glyphs of the KaTeX 0.16.9 symbol table, one entry per glyph, with a single command written where several commands draw the same glyph. An entry that takes an argument is shown on $n$, and an entry that is text is written inside \text. The upper-case upsilon is left out: the letter names no object of either corpus, so a subscript that would name one is written in words.
 
 **Binary operators.** ${}_{\pm}$, ${}_{\times}$, ${}_{\div}$, ${}_{\dagger}$, ${}_{\ddagger}$, ${}_{\mp}$, ${}_{\dotplus}$, ${}_{\setminus}$, ${}_{\ast}$, ${}_{\circ}$,
 ${}_{\bullet}$, ${}_{\land}$, ${}_{\lor}$, ${}_{\cap}$, ${}_{\cup}$, ${}_{\wr}$, ${}_{\uplus}$, ${}_{\sqcap}$, ${}_{\sqcup}$, ${}_{\oplus}$,
@@ -365,7 +365,7 @@ ${}_{\Box_\Phi}$, ${}_{\blacktriangle}$, ${}_{\blacktriangledown}$, ${}_{\Diamon
 ${}_{\natural}$, ${}_{\sharp}$, ${}_{\checkmark}$, ${}_{\maltese}$, ${}_{\blacklozenge}$
 
 **Letters.** ${}_{\text{\AE}}$, ${}_{\text{\O}}$, ${}_{\text{\ss}}$, ${}_{\text{\ae}}$, ${}_{\eth}$, ${}_{\text{\o}}$, ${}_{\text{\i}}$, ${}_{\text{\OE}}$, ${}_{\text{\oe}}$, ${}_{\text{\j}}$,
-${}_{\Gamma}$, ${}_{\Delta_\Phi}$, ${}_{\Theta}$, ${}_{\Lambda}$, ${}_{Ζ}$, ${}_{\Pi_{\mathrm{id}}}$, ${}_{\Sigma}$, ${}_{\Upsilon}$, ${}_{\Phi}$, ${}_{\Psi}$,
+${}_{\Gamma}$, ${}_{\Delta_\Phi}$, ${}_{\Theta}$, ${}_{\Lambda}$, ${}_{Ζ}$, ${}_{\Pi_{\mathrm{id}}}$, ${}_{\Sigma}$, ${}_{\Phi}$, ${}_{\Psi}$,
 ${}_{\Omega}$, ${}_{\alpha}$, ${}_{\beta}$, ${}_{\gamma}$, ${}_{\delta}$, ${}_{\varepsilon}$, ${}_{\omega}$, ${}_{\eta}$, ${}_{\theta}$, ${}_{\iota}$,
 ${}_{\kappa}$, ${}_{\lambda}$, ${}_{\mu}$, ${}_{\nu}$, ${}_{\zeta}$, ${}_{\omicron}$, ${}_{\pi}$, ${}_{\rho}$, ${}_{\varsigma}$, ${}_{\sigma}$,
 ${}_{\tau}$, ${}_{\upsilon}$, ${}_{\varphi}$, ${}_{\chi}$, ${}_{\psi}$, ${}_{\omega}$, ${}_{\vartheta}$, ${}_{\phi}$, ${}_{\varpi}$, ${}_{\digamma}$,

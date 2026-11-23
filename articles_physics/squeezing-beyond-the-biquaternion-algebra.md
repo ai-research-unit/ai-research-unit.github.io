@@ -93,7 +93,7 @@ $$
 
 so the state is a minimum-uncertainty state at every $r$: squeezing redistributes the uncertainty between the quadratures but cannot reduce the product below $\frac{\hbar}{2}$. This is the algebraic reason squeezing is a legitimate operation of the framework: it is a central automorphism of the oscillator algebra, and the uncertainty product is fixed by the central commutator $[r_x,p]=i\,\hbar\,e_{t}$.
 
-The variances were verified numerically by direct quadrature in the position representation, in explicit arithmetic with $m=\hbar=\omega=1$ and the width convention $\alpha=(\frac{m\,\omega}{\hbar})\exp(2r)$. The squeezed vacuum is not a single oscillator state but a superposition of all the even-numbered states, and the computation used its position wave function in that superposition:
+The variances were verified numerically by direct quadrature in the position representation, in explicit arithmetic with lengths in units of $1/k_m$, frequencies in units of $\omega$ and actions in units of $\hbar$, and the width convention $\alpha=(\frac{m\,\omega}{\hbar})\exp(2r)$. The squeezed vacuum is not a single oscillator state but a superposition of all the even-numbered states, and the computation used its position wave function in that superposition:
 
 $$
 \begin{aligned}

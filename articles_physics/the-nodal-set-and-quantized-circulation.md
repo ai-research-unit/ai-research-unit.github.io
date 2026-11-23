@@ -152,7 +152,7 @@ w_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}
 =-\frac{\hbar^{2}A^{2}}{2m},
 $$
 
-a constant. Checked on a grid from $r=0.05$ to $r=0.5$ with $A=1.3$ and $\hbar=m=1$, so that $\hbar^{2}/2m=\tfrac12$: $Q_{\mathrm{qnt}}r^{2}$ came out as $-0.500\,000\,000$ at three radii and $w_{\mathrm{qnt}}$ as $-0.845\,000\,000$, against $-A^{2}/2=-0.845$ exactly. So the divergence of the potential and the vanishing of the density cancel, and the node carries a finite negative energy density rather than an infinite one.
+a constant. Checked on a grid from $r=0.05$ to $r=0.5$ with $A=1.3$ and the quantum potential in units of $\hbar^{2}/m$, so that $\hbar^{2}/2m=\tfrac12$: $Q_{\mathrm{qnt}}r^{2}$ came out as $-0.500\,000\,000$ at three radii and $w_{\mathrm{qnt}}$ as $-0.845\,000\,000$, against $-A^{2}/2=-0.845$ exactly. So the divergence of the potential and the vanishing of the density cancel, and the node carries a finite negative energy density rather than an infinite one.
 
 The sign is the corpus's and it is worth a sentence. A negative quantum energy density is not a negative energy: the total quantum energy of a state is the integral of a positive quantity, as the quantum-stress article shows, and what is negative here is the density's local value in a region where the classical energy is larger. The vortex core is such a region, and the cancellation between the potential's divergence and the density's vanishing is the mechanism that keeps the total finite.
 

@@ -38,7 +38,7 @@ The three displays are three different extractions of one product, and the diffe
 
 **The current is invariant under the phase and under the rotor, and the invariance is exact.** Shifting $\theta_{\mathrm{pha}}$ by any angle multiplies the element by a central phase and leaves $\tilde J_{\Phi}$ unchanged, because the current is built from the density and the frame and neither contains a central factor. Replacing the rotor by any other rotor leaves it unchanged for the same reason.
 
-At $\varrho=1.3$, $\theta_{\mathrm{pha}}=0.4$, $\theta_{\mathrm{rpd}}=0.9$, $\vec u_{\mathrm b}=\vec e_x$, $\theta_{\mathrm{axr}}=1.2$, $\vec u_{\mathrm r}=\vec e_y$ and $c=1$, the current is $\tilde J_{\Phi}=2.42192\,i\,e_t+1.73481\,\vec e_x$. A shift of the phase by $0.77$ changes every component by $0$, and a change of the rotor angle by $0.5$ changes every component by $0$. The two zeros are exact and not small.
+At $\varrho=1.3$, $\theta_{\mathrm{pha}}=0.4$, $\theta_{\mathrm{rpd}}=0.9$, $\vec u_{\mathrm b}=\vec e_x$, $\theta_{\mathrm{axr}}=1.2$, $\vec u_{\mathrm r}=\vec e_y$ and the velocity in units of $c$, the current is $\tilde J_{\Phi}=2.42192\,i\,e_t+1.73481\,\vec e_x$. A shift of the phase by $0.77$ changes every component by $0$, and a change of the rotor angle by $0.5$ changes every component by $0$. The two zeros are exact and not small.
 
 The current's own norm is fixed by the density alone. From $\tilde V_{\Phi}\tilde V_{\Phi}^{\natural}=i^{2}c^{2}\tilde U_{\Psi,\mathrm b}^{-2}\tilde U_{\Psi,\mathrm b}^{2}=-c^{2}$,
 
@@ -79,7 +79,7 @@ $$
 
 **The temporal slots agree and the spatial parts are opposite.** Comparing the two displays term by term, the temporal slot of $i\tilde\Xi\tilde\Xi^{*}$ is $i\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$ and the temporal slot of $\tilde J_{\Phi}$ is $ic\gamma\rho_{\mathrm{num}}$; they agree up to the speed $c$. The spatial slot of the first is $-\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and of the second $+c\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$; they are opposite.
 
-With $\varrho=1.3$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=0.89997$ and a trivial rotor, the display gives $i\tilde\Xi\tilde\Xi^{*}=2.42192\,i\,e_t-1.73481\,\vec e_x$ with vanishing $y$ and $z$ slots, and the current gives $2.42192\,i\,c\,e_t+1.73481\,c\,\vec e_x$ with the same two slots empty. The temporal entries are in the ratio $+1/c$ and the $x$ entries in the ratio $-1/c$; at $c=1$ the ratios are $+1$ and $-1$. The reversal is exact, and the agreement is in the slots where both objects are non-zero — a ratio taken in a slot where both vanish says nothing.
+With $\varrho=1.3$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=0.89997$ and a trivial rotor, the display gives $i\tilde\Xi\tilde\Xi^{*}=2.42192\,i\,e_t-1.73481\,\vec e_x$ with vanishing $y$ and $z$ slots, and the current gives $2.42192\,i\,c\,e_t+1.73481\,c\,\vec e_x$ with the same two slots empty. The temporal entries are in the ratio $+1/c$ and the $x$ entries in the ratio $-1/c$; with the velocity in units of $c$ the ratios are $+1$ and $-1$. The reversal is exact, and the agreement is in the slots where both objects are non-zero — a ratio taken in a slot where both vanish says nothing.
 
 The star conjugation inverts the rotor and fixes the boost, so the bilinear carries the velocity twice and the spin not at all; the outer $i$ then reverses the spatial part, because a real spatial vector times $i$ is imaginary while the temporal slot is already imaginary.
 

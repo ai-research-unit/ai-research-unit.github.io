@@ -138,7 +138,7 @@ $$
 
 For the gravitational case $\kappa = GMm$ this is $T^2 = 4\pi^2 a^3/(GM)$, independent of the mass of the orbiting body — the statement that gave Kepler's law its universality. The derivation isolates the single non-obvious input, the areal law, and it shows that the inverse-square force enters only through the elimination of $L$ in favour of $a$ via $b^2 = L^2a/(m\kappa)$.
 
-Numerically, for the dimensionless choice $m = \kappa = 1$ and the orbit with $E = -0.595$, $L = 0.9$, one has $a = 0.840336$ and $T = 2\pi a^{3/2} = 4.84016$; the orbit was integrated numerically and the measured period returning to the apsis is $4.84020$, in agreement to five decimal places. The eccentricity is $e = 0.19$ and $p/(1-e^2) = a$ to machine precision; these checks are the standard ones for the algebraic solution.
+Numerically, for the dimensionless choice $Gm=\kappa$, in units of $Gm$, and the orbit with $E = -0.595$, $L = 0.9$, one has $a = 0.840336$ and $T = 2\pi a^{3/2} = 4.84016$; the orbit was integrated numerically and the measured period returning to the apsis is $4.84020$, in agreement to five decimal places. The eccentricity is $e = 0.19$ and $p/(1-e^2) = a$ to machine precision; these checks are the standard ones for the algebraic solution.
 
 ## The Runge–Lenz Vector
 

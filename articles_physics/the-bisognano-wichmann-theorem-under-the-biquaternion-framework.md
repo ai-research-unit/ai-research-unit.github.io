@@ -55,7 +55,7 @@ J\,M(W_R)\,J=M(W_R)_{\mathrm c}=M(W_L),
 $$
 the **wedge duality** relation: the commutant of the algebra of a wedge is the algebra of the causal complement, the opposite wedge.
 
-3. **The wedge vacuum is KMS for the boost.** The restriction of the vacuum to the wedge satisfies the KMS condition with respect to the boost flow at inverse temperature $\beta=2\pi$ (in units $\hbar=c=k_B=1$). This is the link to *The KMS Condition and the Biquaternion Framework*, and it is the reason the Unruh temperature is exact.
+3. **The wedge vacuum is KMS for the boost.** The restriction of the vacuum to the wedge satisfies the KMS condition with respect to the boost flow at the inverse temperature $\beta=2\pi c/a$ that the flow's acceleration $a$ fixes, hence at $T=\hbar\,a/(2\pi\,c\,k_{B})$. This is the link to *The KMS Condition and the Biquaternion Framework*, and it is the reason the Unruh temperature is exact.
 
 **The hypotheses are load-bearing.** Two are visible and both are hypotheses in the strict sense. The first is the **state**: the theorem is a statement about the vacuum, a distinguished Poincaré-invariant state, not about an arbitrary state on the wedge algebra. The second is the **region**: the algebra and the flow are those of a wedge, and the boost Killing vector exists only there. Neither hypothesis can be dropped, and the two ways of dropping them fail differently — the state point in *The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework*, the region point in the next section.
 

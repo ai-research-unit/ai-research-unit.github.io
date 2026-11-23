@@ -179,7 +179,7 @@ is an identity rather than an estimate. A movement of $60$ MeV therefore says $\
 
 **The four steps, named.** Discretise the path integral on a four-dimensional grid with spacing $a$; evaluate it by Monte Carlo with importance sampling; extrapolate $a\to0$ and $V\to\infty$; extrapolate in the quark masses to the physical point.
 
-**Where the scale enters.** A lattice calculation produces dimensionless numbers: $m_pa$, the proton mass times the grid spacing. To convert to MeV one needs $a$, which is fixed by matching some dimensionful quantity to its measured value — a hadron mass, a decay constant, or the $\Upsilon$ spectrum. That matching is where $\Lambda$ enters, and it is the reason the calculation is a prediction of *ratios* and of $m_p$ given one scale. Nothing about this is a weakness: once the quark masses are given, and they enter only as dimensionless ratios, the theory has one overall scale, so one measured number must fix it and every other mass is then a prediction.
+**Where the scale enters.** A lattice calculation produces dimensionless numbers: $m_pa$, the proton mass times the grid spacing. To convert to MeV one needs $a$, which is fixed by matching some dimensionful quantity to its measured value — a hadron mass, a decay constant, or the bottomonium spectrum. That matching is where $\Lambda$ enters, and it is the reason the calculation is a prediction of *ratios* and of $m_p$ given one scale. Nothing about this is a weakness: once the quark masses are given, and they enter only as dimensionless ratios, the theory has one overall scale, so one measured number must fix it and every other mass is then a prediction.
 
 **The error budget, and its shape.**
 

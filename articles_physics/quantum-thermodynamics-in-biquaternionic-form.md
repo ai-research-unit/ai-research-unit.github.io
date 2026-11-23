@@ -153,16 +153,16 @@ One caveat belongs here. The functional $\mathcal F$ is defined where $\log\tild
 
 ## Legendre Structure and Thermodynamic Identities
 
-The thermodynamic potentials are not independent; they are Legendre transforms of one another, with $\log Z$ as the generating function. In the present units ($\hbar=k_B=1$, $\beta=1/T$),
+The thermodynamic potentials are not independent; they are Legendre transforms of one another, with $\log Z$ as the generating function. With $\beta=1/(k_BT)$ the inverse temperature,
 
 $$
 A(\beta):=\log Z,\qquad
 E=-\frac{\partial A}{\partial\beta},\qquad
-S=A+\beta E=A-\beta\frac{\partial A}{\partial\beta},\qquad
-F=-\frac{A}{\beta}=E-\frac{S}{\beta}.
+S=k_B\left(A+\beta E\right)=k_B\left(A-\beta\frac{\partial A}{\partial\beta}\right),\qquad
+F=-\frac{A}{\beta}=E-TS.
 $$
 
-The first two say that $A$ and $S$ are Legendre conjugates in the variables $\beta$ and $E$: from $S=A+\beta E$ and $E=-\partial A/\partial\beta$ one finds
+The first two say that $A$ and $S$ are Legendre conjugates in the variables $\beta$ and $E$: from $S=k_B(A+\beta E)$ and $E=-\partial A/\partial\beta$ one finds
 
 $$
 \frac{\partial S}{\partial E}=\beta,
@@ -334,7 +334,7 @@ The framework reproduces standard thermodynamics and claims no new law. Its addi
 | $A(\beta)=\log Z$, $S=A+\beta E$, $F=E-TS$ | Legendre structure |
 | $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi,\beta}=\beta(\tilde H_\Psi-Fe_t)$ | Modular Hamiltonian (in $\mathbb{B}_{\Psi}$) |
 | $F_{\tilde Q_2\tilde Q_1}(r'_t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-r'_t)$ | KMS boundary relation |
-| $\beta=1/T$ ($\hbar=k_B=1$) | Inverse temperature |
+| $\beta=1/(k_BT)$ | Inverse temperature |
 
 ## Further Reading
 

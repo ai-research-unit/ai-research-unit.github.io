@@ -113,7 +113,7 @@ $$
 \frac{d^{3}p}{2E}=\frac{m^{2}c^{2}}{2}\,\frac{d^{3}v}{(1-\lvert\vec v\rvert^{2})^{2}} .
 $$
 
-The check, with $m=c=1$ in the arithmetic: at $\vec v=(0.3,0.4,0.5)$ the Jacobian $\det(\partial\vec p/\partial\vec v)$ divided by $E$ is $4.000000000$, and $\frac{m^{2}c^{2}}{(1-\lvert\vec v\rvert^{2})^{2}}$ is $4.000000000$ at that velocity. The denominator is the square of the Lorentz factor's reciprocal, which is the hyperbolic volume form of the velocity ball: the ball with the metric of constant negative curvature.
+The check, with the velocity in units of $c$ and the momentum in units of $mc$: at $\vec v=(0.3,0.4,0.5)$ the Jacobian $\det(\partial\vec p/\partial\vec v)$ divided by $E$ is $4.000000000$, and $\frac{m^{2}c^{2}}{(1-\lvert\vec v\rvert^{2})^{2}}$ is $4.000000000$ at that velocity. The denominator is the square of the Lorentz factor's reciprocal, which is the hyperbolic volume form of the velocity ball: the ball with the metric of constant negative curvature.
 
 ### The Sky Form
 

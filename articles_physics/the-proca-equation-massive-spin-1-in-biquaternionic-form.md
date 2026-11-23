@@ -240,7 +240,7 @@ $$
 +m^{2}\left(-2\sum_\mu A_\mu\,\partial_\mu\Gamma+\sum_\mu\partial_\mu\Gamma\,\partial_\mu\Gamma\right),
 $$
 
-which is $3.45$ at $m=1$ for a random configuration of order one and **exactly zero** at $m=0$. The biquaternion statement is the same and shorter: $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is invariant under $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ for a scalar $\Gamma$, verified to $4.1\times10^{-15}$ on one hundred random elements, while $k_m^{2}\tilde{A}_{\Phi}$ is not, because the potential is not gauge invariant.
+which is $3.45$ at $k_m=1\ \mathrm{fm^{-1}}$ for a random configuration of order one and **exactly zero** at $m=0$. The biquaternion statement is the same and shorter: $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is invariant under $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ for a scalar $\Gamma$, verified to $4.1\times10^{-15}$ on one hundred random elements, while $k_m^{2}\tilde{A}_{\Phi}$ is not, because the potential is not gauge invariant.
 
 Gauge invariance is therefore not a property that the massive theory already has and the massless theory retains. It is a property that **appears** at $k_m=0$ and was broken at every nonzero mass, and the algebra says why in one line: the mass term is the only term in the equation built from the potential instead of from the field strength.
 

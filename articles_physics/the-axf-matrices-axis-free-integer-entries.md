@@ -705,7 +705,7 @@ The swap. The right family is the transpose of the left one between $\mathsf D$ 
 
 Five checks catch a migration that has gone wrong, and all five are mechanical.
 
-The glyph census. Count the occurrences of the array delimiters and of the symbols $\sigma$, $\gamma$, $\Pi$ and $\Upsilon$ in the body, everything before the closing block. A body with no array, no $\sigma$ and no $\gamma$ has passed the first two passes.
+The glyph census. Count the occurrences of the array delimiters and of the symbols $\sigma$, $\gamma$ and $\Pi$ in the body, everything before the closing block. A body with no array, no $\sigma$ and no $\gamma$ has passed the first two passes.
 
 The operator census. Count the occurrences of the letters $L$ and $R$ carrying a subscript, section by section. A section that has reached the third pass has none, except a basis operator the section is about.
 
