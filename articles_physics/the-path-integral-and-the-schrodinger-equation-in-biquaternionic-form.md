@@ -12,7 +12,7 @@ No new prediction, no new solution, no new particle. The functional integral is 
 
 The two settings are kept apart. The parent distinguishes a constant-element setting, in which the Hamiltonian is a fixed element $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$, from an operator setting, in which it is $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/2m+V$. The integral below is written in both, but every closed-form kernel is a kernel of the operator setting, where the Hamiltonian is central, and no result is transferred from one setting to the other. The general constant element is treated once, in §*The Kernel and Its Centrality*, because its kernel is the central kernel times a rotor and that exception states the rule.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$. $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian fixed subspaces. The asterisk is Hermitian conjugation, $\natural$ quaternion conjugation, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The variable is $r'_t=c\,t'$, and $i \frac{h}{2\pi} c\,\partial_{r'_t}=i \frac{h}{2\pi}\,\partial_{t'}$; $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the parent's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. The step variables are lengths along $r'_t$, and $\mathrm{Lag}$ is the Lagrangian per unit $r'_t$, that is $L/c$.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$. $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian fixed subspaces. The asterisk is Hermitian conjugation, $\natural$ quaternion conjugation, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The variable is $r'_t=c\,t'$, and $i \frac{h}{2\pi} c\,\partial_{r'_t}=i \frac{h}{2\pi}\,\partial_{t'}$; $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the parent's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. The step variables are lengths along $r'_t$, and $\mathrm{Lag}$ is the Lagrangian per unit $r'_t$, that is $L/c$.
 
 ## The Integral and Its Weight
 
@@ -111,7 +111,7 @@ a central phase times a real rotor. The kernel is then $K\,\tilde Q$ with $K$ th
 The free kernel, exactly. For $\hat H=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi$ the kernel is the free propagator,
 
 $$
-\boxed{\;K_0(\vec r,r'_t)=\Bigl(\frac{k_m}{2\pi i\,r'_t}\Bigr)^{3/2}\exp\Bigl(\frac{i\,k_m|\vec r|^{2}}{2\,r'_t}\Bigr),\qquad \vec r=\vec r_f-\vec r_i,\;}
+\boxed{\;K_0(\vec r,r'_t)=\Bigl(\frac{2\pi\nu_m}{2\pi i\,r'_t}\Bigr)^{3/2}\exp\Bigl(\frac{i\,2\pi\nu_m|\vec r|^{2}}{2\,r'_t}\Bigr),\qquad \vec r=\vec r_f-\vec r_i,\;}
 $$
 
 with the one-dimensional case the square root of the same expression with one power of the prefactor. Its composition law is exact, and a Euclidean quadrature of the composition of two factors on a $400001$-point grid reproduces the single factor to a relative $2.3\times10^{-12}$. The Maslov phases are the phases of the square root of the central $i$: the prefactor is $(2\pi i\,r'_t)^{-3/2}$ and the root is taken in the centre, where $i$ has two branches and the choice of branch is the choice of the kernel's overall phase.
@@ -127,7 +127,7 @@ with caustic poles where $\omega r'_t/c=n\pi$. Its composition was verified to a
 The kernel reproduces the equation, and that is the equivalence of the two formulations. Expanding the free kernel at a step $\varepsilon$,
 
 $$
-\tilde\Xi(\vec r,r'_t+\varepsilon)=\tilde\Xi-\frac{2\pi i\varepsilon}{h}V\tilde\Xi+\frac{i\,c\,\varepsilon}{2\,k_m}\Delta_\Phi\tilde\Xi+O(\varepsilon^{2}),
+\tilde\Xi(\vec r,r'_t+\varepsilon)=\tilde\Xi-\frac{i\varepsilon}{h}V\tilde\Xi+\frac{i\,c\,\varepsilon}{2\,2\pi\nu_m}\Delta_\Phi\tilde\Xi+O(\varepsilon^{2}),
 $$
 
 which is the parent's equation rearranged, with the module factor untouched on both sides. The path integral and the state-vector equation are the same statement for a central Hamiltonian, and the equivalence is a statement about the scalar envelope alone.
@@ -174,7 +174,7 @@ The continuum field measure is formal, and the algebra does not change that. The
 
 The Schrödinger field's functional integral is the sum of $\exp(\frac{2\pi iS}{h})$ over the elements of $\mathbb{B}$, with the variational companion's first-order action. Because the action carries one time derivative the integral is not a Gaussian: its value is $\det(A)^{-1}\exp(-\frac{2\pi i}{h}\int J^{*}GJ)$ with $A=i \frac{h}{2\pi}\partial_{t'}-\hat H$ and $G=A^{-1}$, so the determinant enters to the first power and the kernel is the inverse operator itself. The power counts the time derivatives and the sign counts the statistics, which places Schrödinger's $\det^{-1}$ between Klein–Gordon's $\det^{-1/2}$ and Dirac's $\det^{+1}$.
 
-The kernel is central whenever the Hamiltonian is, and only then: for the operator setting it is $K e_t$ and the integral acts on the state module as scalar multiplication; for a general constant element it is the central kernel times the parent's rotor. The free kernel is $K_0=(k_m/2\pi i r'_t)^{3/2}\exp(ik_m|\vec r|^{2}/2r'_t)$, exact, with its composition verified to $2.3\times10^{-12}$; the oscillator kernel is the standard closed form with caustics at $\omega r'_t/c=n\pi$, its composition verified to $3.3\times10^{-11}$. The semiclassical form is van Vleck's determinant times the phase of the classical action, central for the same reason as the exact kernel, with the Maslov phases read off the central square root of $i$.
+The kernel is central whenever the Hamiltonian is, and only then: for the operator setting it is $K e_t$ and the integral acts on the state module as scalar multiplication; for a general constant element it is the central kernel times the parent's rotor. The free kernel is $K_0=(2\pi\nu_m/2\pi i r'_t)^{3/2}\exp(2\pi i\nu_m|\vec r|^{2}/2r'_t)$, exact, with its composition verified to $2.3\times10^{-12}$; the oscillator kernel is the standard closed form with caustics at $\omega r'_t/c=n\pi$, its composition verified to $3.3\times10^{-11}$. The semiclassical form is van Vleck's determinant times the phase of the classical action, central for the same reason as the exact kernel, with the Maslov phases read off the central square root of $i$.
 
 The saddle of the field integral is source-fixed rather than boundary-fixed, which is the first-order structure seen in the variation, and the single-particle kernel recovers the parent's equation in the infinitesimal step. The measure is formal and the short-time product is the well-defined object. Nothing here predicts anything the standard formalism does not.
 
@@ -193,7 +193,7 @@ The saddle of the field integral is source-fixed rather than boundary-fixed, whi
 | $G=A^{-1}$ | The free two-point function; the propagator |
 | $Z[J]=\det(A)^{-1}\exp(-\frac{2\pi i}{h}\int J^{*}GJ)$ | Generating functional |
 | $K e_t$ | The position kernel; central when the Hamiltonian is |
-| $K_0=(k_m/2\pi i r'_t)^{3/2}\exp(ik_m|\vec r|^{2}/2r'_t)$ | Free kernel |
+| $K_0=(2\pi\nu_m/2\pi i r'_t)^{3/2}\exp(2\pi i\nu_m|\vec r|^{2}/2r'_t)$ | Free kernel |
 | $K_{\mathrm{osc}}$ | Oscillator kernel; poles at $\omega r'_t/c=n\pi$ |
 | $A_{\mathrm{wkb}}$ | Van Vleck amplitude, $|\det\partial^{2}S_{\mathrm{cl}}/\partial x_i\partial x_f|^{1/2}$ |
 | $\det^{-1/2},\ \det^{-1},\ \det^{+1}$ | Klein–Gordon, Schrödinger, Dirac determinants |

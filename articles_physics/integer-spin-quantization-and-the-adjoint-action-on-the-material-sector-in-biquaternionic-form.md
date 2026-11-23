@@ -234,10 +234,10 @@ Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\
 with polarization labels $\xi_r$ and mode operators satisfying
 
 $$
-\left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\right]
+\left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_\Phi)\right]
 = \delta_{rs}h^{3}\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 \qquad
-\left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}(\vec k_\Phi)\right]=0 .
+\left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}(\vec\nu_\Phi)\right]=0 .
 $$
 
 The Fock space is the symmetric (bosonic) algebra over the one-particle space, and the Hamiltonian is normal-ordered, $:H:=\int d^3p/h^{3}\,\omega_{\vec p}\sum_ra_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$, with $2s+1$ half-quanta per mode in the vacuum energy. For a massive integer-spin field the $2s+1$ polarizations all have positive norm, as in the Proca case; for a massless one the covariant description requires the indefinite metric and the subsidiary condition, and the physical polarizations are the two helicity states $\pm s$.

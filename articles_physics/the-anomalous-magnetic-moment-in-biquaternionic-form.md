@@ -9,14 +9,14 @@ This article is the worked radiative application of the spin-$\tfrac12$ subcateg
 - **The vertex and its two structures.** The one-particle vertex has two independent Lorentz structures, and the magnetic one carries $F_2$. The tree-level value $g=2$, the Dirac value, is taken as settled by the companion *The Classical Origin of $g=2$ in Biquaternionic Form*; what is at issue here is $F_2(0)=a$.
 - **The Gordon decomposition, in the algebra's own objects.** The biquaternion content of the problem is the split of the vertex into a *symmetric* part and an *antisymmetric* part. The symmetric part is the metric, one number per pair of directions and the central direction $e_t$; the antisymmetric part is the bivector of the pair, which is $i\vec e_m$ for two spatial directions and a two-sided operator for a timelike pair. The Gordon identity, which is the on-shell form of that split, was verified numerically in the algebra's own objects, with a residual of order $10^{-15}$.
 - **The sector interpretation.** The magnetic structure is the rotation-type bivector, the element $i\vec e_m$: the informational sector $\mathbb{B}_{\Psi}$, the same sector as the spin. The convection structure is the metric, central part; the electric (timelike-pair) bivector is anti-Hermitian and belongs to the material sector $\mathbb{B}_{\Phi}$.
-- **The one-loop value, transcribed and its integral verified.** The standard Feynman-parameter representation of the magnetic form factor reduces at $k_\Phi^2=0$ to an integral whose value is exactly $1$; that reduction was verified, so that $a=\alpha/2\pi$ follows from the standard representation.
+- **The one-loop value, transcribed and its integral verified.** The standard Feynman-parameter representation of the magnetic form factor reduces at $\nu_{\Phi}^2=0$ to an integral whose value is exactly $1$; that reduction was verified, so that $a=\alpha/2\pi$ follows from the standard representation.
 - **What the algebra does not supply.** It does not produce $\alpha$, and it does not by itself remove the divergence. The finiteness of the anomaly rests on the Ward identity, that is, on gauge invariance; the framework writes the vertex in its own objects and does not replace that argument.
 
-**The state.** The field of this article is an element $w$ of $\mathbb{B}$, never a list of components. The incoming state is $w$ and the outgoing one is $w_2$; their momenta are $p$ and $p_2$, and $k_\Phi=p_2-p$ is the momentum the photon carries. An amplitude is the **pairing** of the outgoing state with the element the vertex carries into the incoming one,
+**The state.** The field of this article is an element $w$ of $\mathbb{B}$, never a list of components. The incoming state is $w$ and the outgoing one is $w_2$; their momenta are $p$ and $p_2$, and $2\pi\nu_{\Phi}=p_2-p$ is the momentum the photon carries. An amplitude is the **pairing** of the outgoing state with the element the vertex carries into the incoming one,
 $$\bar w_2\,X:=\mathrm{Sc}\big(w_2^{*}\,i\,X\,\vec e_x\big),$$
 a scalar part of a product of three factors, written here as in the companion *The Gordon Decomposition of the Dirac Current in Biquaternionic Form*. The one datum of the frame it carries is the right multiplier $\vec e_x$, the adjoint's unit. Plane waves are $e^{+i\theta_{\mathrm{pwp}}}$ with $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}$ a real angle, so the on-shell condition below carries the sign it carries; a change of that convention flips the sign of the mass in the second display of §*The Vertex Function and the Form Factors* and the sign of the bivector term with it.
 
-**The directions.** A direction of the frame acts on a state by a product on both sides. That is a derived form of the frame's four directions of *Matrix Representations Conventions*, used throughout: the timelike direction carries $X$ to $iX\vec e_x$, and the direction $\vec k_\Phi$ carries it to $i\vec e_\eta X\vec e_y$. The two multipliers are $\vec e_x$ and $\vec e_y$, and $\vec e_z$ is their product, $\vec e_x\vec e_y=\vec e_z$; the frame is the canonical one of the companion articles, and the two multipliers are what declares it. The weight is $\varepsilon=(1,-1,-1,-1)$, one and the same for the directions and for the states: a paired index is written low and carries that weight, so a contraction over ${\jmath}$ carries $\varepsilon_{\jmath}$, and no index is ever raised.
+**The directions.** A direction of the frame acts on a state by a product on both sides. That is a derived form of the frame's four directions of *Matrix Representations Conventions*, used throughout: the timelike direction carries $X$ to $iX\vec e_x$, and the direction $\vec\nu_\Phi$ carries it to $i\vec e_\eta X\vec e_y$. The two multipliers are $\vec e_x$ and $\vec e_y$, and $\vec e_z$ is their product, $\vec e_x\vec e_y=\vec e_z$; the frame is the canonical one of the companion articles, and the two multipliers are what declares it. The weight is $\varepsilon=(1,-1,-1,-1)$, one and the same for the directions and for the states: a paired index is written low and carries that weight, so a contraction over ${\jmath}$ carries $\varepsilon_{\jmath}$, and no index is ever raised.
 
 **The factor $i$ and the two signs.** Every direction carries one factor $i$, and the two families square to opposite signs on a state:
 $$\big(i\,X\,\vec e_x\big)^2=+X ,\qquad \big(i\,\vec e_\eta\,X\,\vec e_y\big)^2=-X .$$
@@ -34,18 +34,18 @@ Two minus signs cancel in the second display, one from $i^2$ and one from $\vec 
 $$S_F(p):\quad w\,\longmapsto\frac{-p_0\,w\,\vec e_x+\sum_\eta  p_\eta\,\vec e_\eta\,w\,\vec e_y+im\,w}{-(N+m^{2}\,c^{2})+i\epsilon} ,$$
 with $N=-p_0^{2}+\sum_\eta p_\eta^{2}$. The factor $i$ of the numerator is what shortens it: distributing the outer $i$ of the companion's display turns $i\cdot i$ into $-1$ in each of the first two terms and leaves $i\,m$ in the third. The denominator $-(N+m^{2}\,c^{2})$ is $-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}-m^{2}$ for the wave biquaternion $\tilde P_{\Phi}=ip_0e_t+\vec p$ of that companion, whose norm is $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$.
 
-**The traces.** Two traces are used, and they are not the same one. On the algebra the trace of a product is twice the scalar part, $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the plain form. On the operators the trace is four-by-four and factorizes, $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$, the two multipliers contributing separately; both are conventions of *Matrix Representations Conventions* and are cited, not derived. The fine-structure constant is $\alpha=e^2/(4\,\pi\,\frac{h}{2\pi}\,c\,\epsilon_{0})$, and every mass enters through the mass wave number $k_m=\frac{2\pi mc}{h}$.
+**The traces.** Two traces are used, and they are not the same one. On the algebra the trace of a product is twice the scalar part, $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the plain form. On the operators the trace is four-by-four and factorizes, $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$, the two multipliers contributing separately; both are conventions of *Matrix Representations Conventions* and are cited, not derived. The fine-structure constant is $\alpha=e^2/(4\,\pi\,\frac{h}{2\pi}\,c\,\epsilon_{0})$, and every mass enters through the mass wave number $\nu_m=\frac{mc}{h}$.
 
 ## The Vertex Function and the Form Factors
 
-**The vertex.** The electromagnetic vertex is the one-particle-irreducible three-point function, written $-ie\Gamma_{\imath}(p_2,p)$, with $p$ the incoming and $p_2$ the outgoing fermion momentum and $k_\Phi=p_2-p$ the momentum transferred by the photon. Lorentz invariance, the on-shell condition of the state,
+**The vertex.** The electromagnetic vertex is the one-particle-irreducible three-point function, written $-ie\Gamma_{\imath}(p_2,p)$, with $p$ the incoming and $p_2$ the outgoing fermion momentum and $2\pi\nu_{\Phi}=p_2-p$ the momentum transferred by the photon. Lorentz invariance, the on-shell condition of the state,
 $$i\,p_0\,w\,\vec e_x-\sum_\eta i\,p_\eta\,\vec e_\eta\,w\,\vec e_y=m\,w ,$$
-the same condition carried by the adjoint, whose equation the companion writes with the mass on the other side, and the discrete symmetries reduce $\Gamma_{\imath}$ to two independent structures multiplied by functions of the single invariant $k_\Phi^2$. The timelike and the spacelike components are written separately, because they act differently:
-$$\Gamma_0\,w=i\,w\,\vec e_x\,F_1(k_\Phi^2)+\frac{1}{2\,m\,c}\sum_\eta  k_{\Phi\eta}\,\vec e_\eta\,w\,\vec e_z\,F_2(k_\Phi^2) ,$$
-$$\Gamma_j\,w=i\,\vec e_j\,w\,\vec e_y\,F_1(k_\Phi^2)+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{\eta\ne j} k_{\Phi\eta}\,\vec e_j\vec e_\eta\,w\Big)F_2(k_\Phi^2) .$$
+the same condition carried by the adjoint, whose equation the companion writes with the mass on the other side, and the discrete symmetries reduce $\Gamma_{\imath}$ to two independent structures multiplied by functions of the single invariant $\nu_{\Phi}^2$. The timelike and the spacelike components are written separately, because they act differently:
+$$\Gamma_0\,w=i\,w\,\vec e_x\,F_1(4\pi^{2}\nu_{\Phi}^2)+\frac{1}{2\,m\,c}\sum_\eta  2\pi\nu_{\Phi\eta}\,\vec e_\eta\,w\,\vec e_z\,F_2(4\pi^{2}\nu_{\Phi}^2) ,$$
+$$\Gamma_j\,w=i\,\vec e_j\,w\,\vec e_y\,F_1(4\pi^{2}\nu_{\Phi}^2)+\frac{1}{2\,m\,c}\Big(2\pi\nu_t^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{\eta\ne j} 2\pi\nu_{\Phi\eta}\,\vec e_j\vec e_\eta\,w\Big)F_2(4\pi^{2}\nu_{\Phi}^2) .$$
 The first term of each line is the direction $\mu$ acting on the state; the second is the bivector of the pair $(\imath,\jmath)$, and its shape is the content of the Gordon decomposition below.
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 $F_1(0)=1$ is the charge, and $F_2(0)$ is the anomaly. The gyromagnetic ratio is
 $$\boxed{\;g=2\big(F_1(0)+F_2(0)\big)=2\big(1+F_2(0)\big),
@@ -60,16 +60,16 @@ $$i\vec e_j\big(i\vec e_\eta X\vec e_y\big)\vec e_y=\vec e_j\vec e_\eta X ,\qqua
 and the bivector of the pair is that product with one further factor $i$. For a pair of two spatial directions it is the single element $i\vec e_m$, a left multiplication; for a timelike pair it is two-sided, because the timelike direction supplies a right multiplier $\vec e_x$ and the spatial one supplies $\vec e_y$, whose product is the third unit. Nothing else appears in the product: the metric part is $\varepsilon_{\imath}$ on the diagonal, it is zero off it, and it is the central direction $e_t$, one number per pair.
 
 **The Gordon decomposition.** Write $w$ for the incoming state and $w_2$ for the outgoing one, both on shell, and write $\mathcal G_{\imath\jmath}:=-i\,c_{\imath} c_{\jmath}$ for the bivector of the pair, $c_{\imath}$ being the direction $\mu$; the minus is the reversal of the right multipliers, $\vec e_y\vec e_x=-\vec e_z$, and it is the whole of the sign. The identity is
-$$\bar w_2\big(c_{\imath} w\big)=\frac{(p+p_2)_{\imath}}{2m\,c}\,\bar w_2w+\frac{i}{2\,m\,c}\sum_{\jmath\neq\imath}\varepsilon_{\jmath}\,k_{\jmath}\,\bar w_2\big(\mathcal  G_{\imath\jmath}w\big),$$
+$$\bar w_2\big(c_{\imath} w\big)=\frac{(p+p_2)_{\imath}}{2m\,c}\,\bar w_2w+\frac{i}{2\,m\,c}\sum_{\jmath\neq\imath}\varepsilon_{\jmath}\,2\pi\nu_{\jmath}\,\bar w_2\big(\mathcal  G_{\imath\jmath}w\big),$$
 the coefficient of the second term carrying the $i$ by which the bivector differs from the plain product of its two directions. Written out in the two families it reads, for the timelike component,
-$$\bar w_2\big(i\,w\,\vec e_x\big)=\frac{(p+p_2)_{0}}{2m\,c}\,\bar w_2w+\frac{1}{2\,m\,c}\sum_\eta  k_{\Phi\eta}\,\bar w_2\big(\vec e_\eta\,w\,\vec e_z\big),$$
+$$\bar w_2\big(i\,w\,\vec e_x\big)=\frac{(p+p_2)_{0}}{2m\,c}\,\bar w_2w+\frac{1}{2\,m\,c}\sum_\eta  2\pi\nu_{\Phi\eta}\,\bar w_2\big(\vec e_\eta\,w\,\vec e_z\big),$$
 and for the spacelike component $j$,
-$$\bar w_2\big(i\,\vec e_j\,w\,\vec e_y\big)=\frac{(p+p_2)_{j}}{2m\,c}\,\bar w_2w+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\bar w_2\big(\vec e_j\,w\,\vec e_z\big)+\sum_{\eta\ne j} k_{\Phi\eta}\,\bar w_2\big(\vec e_j\vec e_\eta\,w\big)\Big),$$
+$$\bar w_2\big(i\,\vec e_j\,w\,\vec e_y\big)=\frac{(p+p_2)_{j}}{2m\,c}\,\bar w_2w+\frac{1}{2\,m\,c}\Big(2\pi\nu_t^{\prime}\,\bar w_2\big(\vec e_j\,w\,\vec e_z\big)+\sum_{\eta\ne j} 2\pi\nu_{\Phi\eta}\,\bar w_2\big(\vec e_j\vec e_\eta\,w\big)\Big),$$
 where the $i$ of the generic form has been absorbed: $\frac{i}{2\,m\,c}\varepsilon_\eta\mathcal  G_{0\eta}=\frac{1}{2\,m\,c}\vec e_\eta$ on the right, and $\frac{i}{2\,m\,c}\varepsilon_\eta\mathcal  G_{j\eta}=\frac{1}{2\,m\,c}\vec e_j\vec e_\eta$. The three were verified on random on-shell pairs at $m=0.7$, with a deviation of order $10^{-15}$.
 
-Read the right-hand sides. The first term is the convection: the momentum sum $(p+p_2)_{\imath}$ multiplies the central direction, and it is the term the charge multiplies. The second is the bivector: the momentum difference $k_{\jmath}$ multiplies a product of two directions, and it is the term the magnetic moment multiplies. There is no third term, and the split is exact, not an approximation.
+Read the right-hand sides. The first term is the convection: the momentum sum $(p+p_2)_{\imath}$ multiplies the central direction, and it is the term the charge multiplies. The second is the bivector: the momentum difference $\nu_{\jmath}$ multiplies a product of two directions, and it is the term the magnetic moment multiplies. There is no third term, and the split is exact, not an approximation.
 
-The coefficient $1/2mc$ is the same one that fixes $g=2$ at the tree level, and it is untouched by the renormalisation. The Ward identity $k_{\imath}\Gamma_{\imath}=0$ is gauge invariance at the vertex. It forces the divergent part of $\Gamma_{\imath}$ to be proportional to the first structure, so nothing divergent reaches the second, and the anomaly is finite: no counterterm is needed for it.
+The coefficient $1/2mc$ is the same one that fixes $g=2$ at the tree level, and it is untouched by the renormalisation. The Ward identity $\nu_{\imath}\Gamma_{\imath}=0$ is gauge invariance at the vertex. It forces the divergent part of $\Gamma_{\imath}$ to be proportional to the first structure, so nothing divergent reaches the second, and the anomaly is finite: no counterterm is needed for it.
 
 **What this transcription does and does not do.** It names *which* object the anomaly multiplies: the bivector of the pair, hence the element $i\vec e_m$ for a rotation pair and the two-sided operator for a timelike one, hence a sector. It exhibits the Gordon split as the symmetric-versus-antisymmetric split of a product of two directions. It does not compute the loop integral, and it does not fix $\alpha$.
 
@@ -114,15 +114,15 @@ Read off in order: the basis operator of a direction squares to the weight, $+1$
 ## The One-Loop Correction
 
 **The diagram.** The order-$\alpha$ correction to the vertex is the one-loop diagram in which the fermion line exchanges a virtual photon with itself. Its value is standard: the numerator is reduced with the contraction identities of the previous section, and the result is
-$$F_1(k_\Phi^2)=1+\frac{\alpha}{2\pi}\Big[\text{terms vanishing at }k_\Phi^2=0\Big] ,$$
-$$F_2(k_\Phi^2)=\frac{\alpha}{2\pi}\int_0^1\!dx\,dy\,dz\;\delta(x+y+z-1)\;
-\frac{2m^2c^2z(1-z)}{m^2c^2(1-z)^2-xy\,k_\Phi^2} ,$$
-in the standard Feynman-parameter representation. The sign of the $k_\Phi^2$ term is fixed by analyticity: the denominator vanishes first at $k_\Phi^2=4m^2$, the pair-production threshold, and with the opposite sign the branch point would sit at $k_\Phi^2=-4m^2$, where there is no threshold. Two features make the anomaly the clean test it is.
+$$F_1(4\pi^{2}\nu_{\Phi}^2)=1+\frac{\alpha}{2\pi}\Big[\text{terms vanishing at }4\pi^{2}\nu_{\Phi}^2=0\Big] ,$$
+$$F_2(\nu_{\Phi}^2)=\frac{\alpha}{2\pi}\int_0^1\!dx\,dy\,dz\;\delta(x+y+z-1)\;
+\frac{2m^2c^2z(1-z)}{m^2c^2(1-z)^2-xy\,\nu_{\Phi}^2} ,$$
+in the standard Feynman-parameter representation. The sign of the $\nu_{\Phi}^2$ term is fixed by analyticity: the denominator vanishes first at $4\pi^{2}\nu_{\Phi}^2=4m^2$, the pair-production threshold, and with the opposite sign the branch point would sit at $4\pi^{2}\nu_{\Phi}^2=-4m^2$, where there is no threshold. Two features make the anomaly the clean test it is.
 
-- **The divergence stays in $F_1$.** The Ward identity $k_{\imath}\Gamma_{\imath}=0$ is gauge invariance at the vertex, and it forces the divergent part of $\Gamma_{\imath}$ to be proportional to the tree vertex, that is to the $F_1$ structure. The divergence of the vertex is the same one the fermion self-energy carries, $Z_1=Z_2$, and the same counterterm removes both. Nothing divergent reaches $F_2$, so the anomaly is *finite*: no counterterm is needed for it, and it is a prediction of the theory rather than a parameter of it. This argument is standard and is not supplied by the algebra.
-- **The mass drops out at leading order.** At $k_\Phi^2=0$ the parameter integral is independent of $m$ after the $m^2$ factors cancel, so the leading anomaly is universal: every charged lepton has the same leading $a=\alpha/2\pi$, and every charged fermion does after the appropriate QCD corrections.
+- **The divergence stays in $F_1$.** The Ward identity $\nu_{\imath}\Gamma_{\imath}=0$ is gauge invariance at the vertex, and it forces the divergent part of $\Gamma_{\imath}$ to be proportional to the tree vertex, that is to the $F_1$ structure. The divergence of the vertex is the same one the fermion self-energy carries, $Z_1=Z_2$, and the same counterterm removes both. Nothing divergent reaches $F_2$, so the anomaly is *finite*: no counterterm is needed for it, and it is a prediction of the theory rather than a parameter of it. This argument is standard and is not supplied by the algebra.
+- **The mass drops out at leading order.** At $\nu_{\Phi}^2=0$ the parameter integral is independent of $m$ after the $m^2$ factors cancel, so the leading anomaly is universal: every charged lepton has the same leading $a=\alpha/2\pi$, and every charged fermion does after the appropriate QCD corrections.
 
-**The $k_\Phi^2=0$ integral.** At $k_\Phi^2=0$ the denominator is $m^2(1-z)^2$, the mass cancels, and the parameter integral collapses:
+**The $\nu_{\Phi}^2=0$ integral.** At $\nu_{\Phi}^2=0$ the denominator is $m^2(1-z)^2$, the mass cancels, and the parameter integral collapses:
 $$\int_0^1\!dz\int_0^{1-z}\!dy\;\frac{2z(1-z)}{(1-z)^2}
 =\int_0^1\!dz\;\frac{2z}{1-z}\big[(1-z)-0\big]
 =\int_0^1\!2z\,dz=1 ,$$
@@ -186,7 +186,7 @@ All numerics are machine-precision arithmetic in the biquaternion algebra, with 
 | Contractions | the four weighted sums of §*The Reduction of a Numerator*: residual $0$ on every index combination |
 | Traces | $\mathrm{tr}L_aR_b=4\mathrm{Sc}(a)\mathrm{Sc}(b)$ and $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$: residual $\le10^{-12}$ at word lengths one to four |
 | Trace of two directions | the operator of the direction $\mu$ is of zero array trace, and the operator of two directions has trace $4g_{\imath\jmath}$: residual $0$ |
-| $k_\Phi^2=0$ integral | $\int_0^1dz\int_0^{1-z}dy\,\frac{2z(1-z)}{(1-z)^2}=\int_0^12z\,dz=1$ |
+| $\nu_{\Phi}^2=0$ integral | $\int_0^1dz\int_0^{1-z}dy\,\frac{2z(1-z)}{(1-z)^2}=\int_0^12z\,dz=1$ |
 | Leading anomaly | $a=\alpha/2\pi=1.1614097329\times10^{-3}$ for $\alpha=1/137.035999084$ |
 | Two-loop coefficient | $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ |
 | Two-loop anomaly | $a_e=1.1596374278\times10^{-3}$ |
@@ -213,12 +213,12 @@ The on-shell states were built as $w=i\,p_0\,w_0\vec e_x-\sum_\eta i\,p_\eta\,\v
 ## Summary
 
 The anomalous magnetic moment in biquaternion form is the coefficient $F_2(0)=a$ of the bivector structure of the electromagnetic vertex,
-$$\Gamma_0w=i\,w\,\vec e_xF_1+\frac{1}{2\,m\,c}\sum_\eta k_{\Phi\eta}\,\vec e_\eta\,w\,\vec e_zF_2 ,\qquad
-\Gamma_jw=i\,\vec e_j\,w\,\vec e_yF_1+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{\eta\ne j} k_{\Phi\eta}\,\vec e_j\vec e_\eta\,w\Big)F_2 ,$$
+$$\Gamma_0w=i\,w\,\vec e_xF_1+\frac{1}{2\,m\,c}\sum_\eta 2\pi\nu_{\Phi\eta}\,\vec e_\eta\,w\,\vec e_zF_2 ,\qquad
+\Gamma_jw=i\,\vec e_j\,w\,\vec e_yF_1+\frac{1}{2\,m\,c}\Big(2\pi\nu_t^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{\eta\ne j} 2\pi\nu_{\Phi\eta}\,\vec e_j\vec e_\eta\,w\Big)F_2 ,$$
 $$g=2\big(1+F_2(0)\big),\qquad a=F_2(0)=\frac{g-2}{2} ,$$
 with the tree-level $g=2$ taken from the one-particle theory. The two vertex structures are the symmetric and antisymmetric parts of a product of two directions, the metric part and the bivector; the Gordon decomposition exhibits the split on shell and was verified with a deviation of order $10^{-15}$ on on-shell states. Of the six bivectors, the three rotations are the single elements $i\vec e_m$, in the informational sector $\mathbb{B}_{\Psi}$, the same sector as the spin, and the three timelike pairs are two-sided insertions, anti-Hermitian, in the material sector $\mathbb{B}_{\Phi}$. The convection structure is central.
 
-The one-loop representation of $F_2$ reduces at $k_\Phi^2=0$ to $\int_0^12z\,dz=1$, giving Schwinger's value $a=\alpha/2\pi=1.1614097329\times10^{-3}$; the two-loop coefficient $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ was recomputed, and with $A_3=1.181241456$ the prediction $a_e=1.1596522320\times10^{-3}$ matches the measured $1.15965218073\times10^{-3}$ to $5\times10^{-11}$. The trace and contraction identities on which the reduction rests were verified, the contractions at residual $0$ and the trace identity to rounding at every word length from one to four.
+The one-loop representation of $F_2$ reduces at $\nu_{\Phi}^2=0$ to $\int_0^12z\,dz=1$, giving Schwinger's value $a=\alpha/2\pi=1.1614097329\times10^{-3}$; the two-loop coefficient $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ was recomputed, and with $A_3=1.181241456$ the prediction $a_e=1.1596522320\times10^{-3}$ matches the measured $1.15965218073\times10^{-3}$ to $5\times10^{-11}$. The trace and contraction identities on which the reduction rests were verified, the contractions at residual $0$ and the trace identity to rounding at every word length from one to four.
 
 The algebra supplies the tensor structure, the sector placement and the conventions; it does not supply $\alpha$, the coefficients, or the Ward-identity argument that makes the anomaly finite. On this problem, as on the $i\epsilon$ and the masses, the framework names the axis and physics fixes the magnitude.
 
@@ -228,12 +228,12 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 |---|---|
 | $w$, $w_2$ | Incoming and outgoing state, elements of $\mathbb{B}$ |
 | $\bar wX=\mathrm{Sc}(w^{*}iX\vec e_x)$ | The pairing: an amplitude is $\bar w_2X$, a scalar part of three factors; the right multiplier $\vec e_x$ is the adjoint's unit |
-| $p$, $p_2$, $k_\Phi=p_2-p$ | Incoming momentum, outgoing momentum, momentum transfer |
-| $iX\vec e_x$, $i\vec e_\eta X\vec e_y$ | The direction $t$ and the direction $\vec k_\Phi$ acting on a state $X$ |
+| $p$, $p_2$, $2\pi\nu_{\Phi}=p_2-p$ | Incoming momentum, outgoing momentum, momentum transfer |
+| $iX\vec e_x$, $i\vec e_\eta X\vec e_y$ | The direction $t$ and the direction $\vec\nu_\Phi$ acting on a state $X$ |
 | $(iX\vec e_x)^2=+X$, $(i\vec e_\eta X\vec e_y)^2=-X$ | The two signs of the frame, from $i^2=-1$ and $\vec e_x^2=\vec e_\eta^2=\vec e_y^2=-e_t$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Plain weight, the index rule; no index is raised |
 | $\Gamma_{\imath}(p_2,p)$ | Electromagnetic vertex; $-ie\Gamma_{\imath}$ is the amplitude |
-| $F_1(k_\Phi^2),F_2(k_\Phi^2)$ | Charge and magnetic form factors |
+| $F_1(\nu_{\Phi}^2),F_2(\nu_{\Phi}^2)$ | Charge and magnetic form factors |
 | $g=2(1+F_2(0))$, $a=F_2(0)=(g-2)/2$ | Gyromagnetic ratio and anomaly |
 | $\mathcal G_{\imath\jmath}=-i\,c_{\imath} c_{\jmath}$ | Bivector of the pair $(\imath,\jmath)$: $i$ times the product of the two directions, with the sign of the reversed right multipliers. $\mathcal G_{j\eta}$ is left multiplication by $i\vec e_m$; $\mathcal G_{0\eta}$ is two-sided, $i\vec e_\eta$ left and $\vec e_z$ right. $\mathcal G_{\imath\jmath}=-2i\sigma_{\imath\jmath}$ |
 | $X\mapsto i\vec e_mX$, $X\mapsto i\vec e_\eta X\vec e_z$ | The two actions of the six bivectors, rotations and timelike pairs |
@@ -246,7 +246,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$ | Operator trace, factorized into the two multipliers |
 | $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace on the algebra, the plain form |
 | Four contraction identities of §*The Reduction of a Numerator* | The four weighted sums (residual $0$) |
-| $F_2(k_\Phi^2)=\frac{\alpha}{2\pi}\int\!dx\,dy\,dz\,\delta(x+y+z-1)\frac{2m^2c^2z(1-z)}{m^2c^2(1-z)^2-xyk_\Phi^2}$ | One-loop parameter representation |
+| $F_2(\nu_{\Phi}^2)=\frac{\alpha}{2\pi}\int\!dx\,dy\,dz\,\delta(x+y+z-1)\frac{2m^2c^2z(1-z)}{m^2c^2(1-z)^2-xy\nu_{\Phi}^2}$ | One-loop parameter representation |
 | $a=\alpha/2\pi=1.1614097329\times10^{-3}$ | Leading (Schwinger) anomaly |
 | $A_2=-0.328478965579$ | Two-loop coefficient (recomputed) |
 | $a_{\mathrm{exp},e}=1.15965218073\times10^{-3}$ | Measured electron anomaly |

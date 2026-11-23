@@ -16,7 +16,7 @@ Position in the block. This is the variational companion of [The Spin-Zero Fluid
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}=i(E/c)e_t+\vec p$, $\tilde V_\Phi=\tilde P_\Phi/m$, $k_m=\frac{2\pi mc}{h}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$ with $r'_t=ct$. The temporal slot carries the $i$, so $\sum_{\imath} p_{\imath} p_{\imath}=-m^{2}c^{2}$ on the free shell. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the conjugations are $*$ and $^{\natural}$. The action is a functional over four-dimensional space with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$.
+The conventions are restated here so that every sign below is checkable from this page alone. $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}=i(E/c)e_t+\vec p$, $\tilde V_\Phi=\tilde P_\Phi/m$, $\nu_m=\frac{mc}{h}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$ with $r'_t=ct$. The temporal slot carries the $i$, so $\sum_{\imath} p_{\imath} p_{\imath}=-m^{2}c^{2}$ on the free shell. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the conjugations are $*$ and $^{\natural}$. The action is a functional over four-dimensional space with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$.
 
 ## The Action in the Fluid Variables
 
@@ -32,7 +32,7 @@ $$
 \boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}\Bigr]-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}\;}
 $$
 
-with $V_{\Phi,\imath}=\partial_{\imath} S_{\tilde\Xi}/m=\partial_{\imath}\theta_{\mathrm{pha}}/k_m$.
+with $V_{\Phi,\imath}=\partial_{\imath} S_{\tilde\Xi}/m=\partial_{\imath}\theta_{\mathrm{pha}}/\nu_m$.
 
 The dust term's bracket is the shell's left-hand side. That is not a coincidence of notation: the bracket is $\sum_{\imath} V_{\imath} V_{\imath}+c^{2}$, which the block's article sets equal to $-2Q_{\mathrm{qnt}}/m$, so the first term is $-\frac{m\rho_{\mathrm{num}}}{2}\cdot(-2Q_{\mathrm{qnt}}/m)=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ on shell. **The dust term is not zero on shell and the action is not a constraint generator in disguise**: what vanishes on the free shell is the bracket at $Q_{\mathrm{qnt}}=0$, and the quantum potential is exactly what the bracket measures.
 
@@ -191,7 +191,7 @@ The stress. The translation current, dust plus gradient; the block's three-by-th
 | $\mathcal E_{\mathrm{grad}}=-\frac{h^{2}}{8\pi^{2}m}\int\sum_{\imath}(\partial_{\imath} \varrho)^{2}$ | Gradient energy; indefinite |
 | $T_{\imath\jmath}$ | Canonical stress; $T_{00}=\rho_{\mathrm{chg}}mc^{2}$ on shell |
 | $\gamma=E/(mc^{2})$ | Signed Lorentz factor; the Jacobian between the two densities |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $\varepsilon=\pm1$ | The branch; the action does not select it |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |

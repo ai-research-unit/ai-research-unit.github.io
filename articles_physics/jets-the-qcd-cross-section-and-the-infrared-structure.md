@@ -65,15 +65,15 @@ The two families of algorithm, and their difference.
 | Cone | The jet is a cone of fixed opening angle containing the deposited energy | Intuitive; the boundary is set by a geometric parameter $R$ |
 | Sequential recombination | Particles are combined pairwise in order of a distance measure, until none is close enough | Infrared and collinear safe by construction; the ordering variable is the resolution |
 
-The distance measure, written once. In the generalised $k_T$ family,
+The distance measure, written once. In the generalised $\nu_T$ family,
 
 $$
-d_{ij}=\min\left(k_{Ti}^{2p},k_{Tj}^{2p}\right)\frac{\delta R_{ij}^2}{R^2} ,
+d_{ij}=\min\left(4\pi^{2}\nu_{Ti}^{2p},4\pi^{2}\nu_{Tj}^{2p}\right)\frac{\delta R_{ij}^2}{R^2} ,
 \qquad
-d_{iB}=k_{Ti}^{2p} ,
+d_{iB}=4\pi^{2}\nu_{Ti}^{2p} ,
 $$
 
-with $\delta R_{ij}^2=\delta\eta_{ij}^2+\delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $k_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$k_T$, and the last is the default at the LHC because it produces geometrically regular jets.
+with $\delta R_{ij}^2=\delta\eta_{ij}^2+\delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $\nu_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$\nu_T$, and the last is the default at the LHC because it produces geometrically regular jets.
 
 **Why the definition is part of the prediction.** The number of jets in an event is not a property of the event. It is a property of the event and the resolution: at a coarse resolution any event is two-jet, at a fine one every event is many-jet. So a cross section "for three jets" is meaningless until the resolution is given, and the resolution is a number that must be stated and, ideally, varied to show that the dependence is under control. This is not a technicality of experimental practice. It is the same statement as [the confinement article's](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) that the parton picture is a description at a resolution, made quantitative.
 
@@ -102,7 +102,7 @@ Why the logarithms are squared. One logarithm comes from the energy integration 
 
 ## Two Divergences, Named
 
-Soft. A gluon emitted with energy $E\to0$ has an amplitude proportional to $1/E$, because the emission is a classical radiation field and the field of a slowly moving charge is the Coulomb field. The squared amplitude is therefore $1/E^2$, and the three-body phase space carries a factor $E$ from $d^3k_\Phi/2E$, so the rate goes as $dE/E$: one power cancels and the other survives as the logarithm. The integral
+Soft. A gluon emitted with energy $E\to0$ has an amplitude proportional to $1/E$, because the emission is a classical radiation field and the field of a slowly moving charge is the Coulomb field. The squared amplitude is therefore $1/E^2$, and the three-body phase space carries a factor $E$ from $d^3\nu_{\Phi}/2E$, so the rate goes as $dE/E$: one power cancels and the other survives as the logarithm. The integral
 
 $$
 \int_0^{E_{\max}}\frac{dE}{E}
@@ -282,7 +282,7 @@ Two things, and both are kinematic.
 
 The null structure, again. The eikonal and the collinear factorisation both rest on a light-cone decomposition, and $\mathbb{B}$'s null objects — the nilpotent elements and their exact unipotent exponentials — host that decomposition, as [the parton-model article](the-parton-model-and-deep-inelastic-scattering.html) recorded. The unipotent element is a null rotation and not a boost: it rescales neither null component, so it is the carrier of the light-cone structure and not the dilation that makes $x$ scale invariant. The angular ordering is an interference effect between amplitudes emitted at different angles, and interference is what the algebra's two-sector structure is built to describe. So the algebra hosts the *kinematics of the emission* and the *form of the interference*, and nothing more.
 
-**The limitation, stated plainly.** The divergences are properties of a gauge theory's phase space, and the cancellation is a theorem about that phase space. Neither the phase space nor the theorem is an object of $\mathbb{B}$: the algebra has no $SU(3)$, no triplet, and no measure that would make $\int d^3k_\Phi/2E$ an algebraic operation. So the whole of this article is transcription.
+**The limitation, stated plainly.** The divergences are properties of a gauge theory's phase space, and the cancellation is a theorem about that phase space. Neither the phase space nor the theorem is an object of $\mathbb{B}$: the algebra has no $SU(3)$, no triplet, and no measure that would make $\int d^3\nu_{\Phi}/2E$ an algebraic operation. So the whole of this article is transcription.
 
 The ledger.
 
@@ -332,7 +332,7 @@ The framework supplies the null direction and the form of the interference, and 
 | $c_2$ | Second-order coefficient, $1.4092-0.0781N_f$: $1.097$ at $N_f=4$, $1.019$ at $N_f=5$ |
 | $y$ | Jet resolution parameter |
 | $d_{ij}$, $d_{iB}$ | Pairwise and beam distances in a sequential algorithm |
-| $k_T$, $\eta$, $\phi$ | Transverse momentum, pseudorapidity, azimuth |
+| $\nu_T$, $\eta$, $\phi$ | Transverse momentum, pseudorapidity, azimuth |
 | $T$ | Thrust; $\langle1-T\rangle$ an event shape |
 | $P_{qq},P_{gq},P_{qg},P_{gg}$ | Splitting functions |
 | $z$ | Momentum fraction in a splitting |

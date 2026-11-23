@@ -38,7 +38,7 @@ and for a spacelike one the same expression with the frame conjugated by $\hat u
 *Third, the equation separates into a scale equation and a transport equation.* Multiplying the Proca equation by $\tilde A_\Phi^{-1}$ and splitting into scalar and scalar-free parts gives
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0,
+\bigl(\Box_\Phi-4\pi^{2}\nu_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0,
 \qquad
 \sum_{\imath}\Bigl(\frac{\partial\Gamma_{\imath}}{\partial R_{\imath}}+\Gamma_{\imath}^2-\mathrm{Sc}(\Gamma_{\imath}^2)\Bigr)+2\sum_{\imath}\frac{\partial\ln \varrho}{\partial R_{\imath}}\Gamma_{\imath}=0,
 $$
@@ -53,7 +53,7 @@ $$
 \langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2 ,
 $$
 
-the Minkowski square in the corpus's signs. The derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the time slot and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the three space slots, so that $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$ as in the element form. The mass is the wave number $k_m=\frac{2\pi mc}{h}$.
+the Minkowski square in the corpus's signs. The derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the time slot and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the three space slots, so that $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$ as in the element form. The mass is the wave number $\nu_m=\frac{mc}{h}$.
 
 ## Why the Four-Factor Word Does Not Apply
 
@@ -189,12 +189,12 @@ where the conjugation by $\hat u$ acts on the boost generator and returns a boos
 **The operator split.** The Proca equation of the element form is
 
 $$
-\tilde\nabla_\Phi\tilde F=k_m^2\tilde A_\Phi,
+\tilde\nabla_\Phi\tilde F=4\pi^{2}\nu_m^2\tilde A_\Phi,
 \qquad
 \tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr),
 $$
 
-and on the Lorenz surface it is the componentwise Klein–Gordon equation $\Box_\Phi\tilde A_\Phi=k_m^2\tilde A_\Phi$. Substituting the timelike word and using the product rule,
+and on the Lorenz surface it is the componentwise Klein–Gordon equation $\Box_\Phi\tilde A_\Phi=4\pi^{2}\nu_m^2\tilde A_\Phi$. Substituting the timelike word and using the product rule,
 
 $$
 \Box_\Phi\tilde A_\Phi=\varepsilon i\Bigl[(\Box_\Phi \varrho)\tilde U+2\sum_{\imath}\frac{\partial \varrho}{\partial R_{\imath}}\frac{\partial\tilde U}{\partial R_{\imath}}+\varrho\,\Box_\Phi\tilde U\Bigr],
@@ -203,9 +203,9 @@ $$
 and multiplying on the left by $\tilde A_\Phi^{-1}$ gives the exact identity
 
 $$
-\tilde A_\Phi^{-1}\bigl(\Box_\Phi-k_m^2\bigr)\tilde A_\Phi
+\tilde A_\Phi^{-1}\bigl(\Box_\Phi-4\pi^{2}\nu_m^2\bigr)\tilde A_\Phi
 =\frac{\Box_\Phi \varrho}{\varrho}+2\sum_{\imath}\frac{\partial\ln \varrho}{\partial R_{\imath}}\Gamma_{\imath}
-+\tilde U^{-1}\Box_\Phi\tilde U-k_m^2 .
++\tilde U^{-1}\Box_\Phi\tilde U-4\pi^{2}\nu_m^2 .
 $$
 
 The last term before the mass is a Maurer–Cartan identity, $\tilde U^{-1}\Box_\Phi\tilde U=\sum_{\imath}\bigl(\partial_{\imath}\Gamma_{\imath}+\Gamma_{\imath}^2\bigr)$, which is the statement that the frame's curvature is the derivative of its connection plus its square.
@@ -213,7 +213,7 @@ The last term before the mass is a Maurer–Cartan identity, $\tilde U^{-1}\Box_
 **The two equations.** Taking the scalar part, and using $\mathrm{Sc}\,\Gamma_{\imath}=0$ so that the cross term drops,
 
 $$
-\boxed{\;\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0\;}
+\boxed{\;\bigl(\Box_\Phi-4\pi^{2}\nu_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0\;}
 $$
 
 and taking the traceless part,
@@ -231,7 +231,7 @@ where the second display is an equation in the scalar-free part of $\mathbb{B}$,
 **The first equation is a Klein–Gordon equation with a source.** The source is $\sum_{\imath}\mathrm{Sc}(\Gamma_{\imath}^2)$, the trace of the square of the frame's Maurer–Cartan form. It vanishes when the frame is constant, and it is positive for a pure rapidity gradient, because $\Gamma_{\imath}=\tfrac12\partial_{\imath}\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ gives $\Gamma_{\imath}^2=\tfrac14(\partial_{\imath}\theta_{\mathrm{rpd}})^2(i\hat u_{\mathrm b})^2=\tfrac14(\partial_{\imath}\theta_{\mathrm{rpd}})^2$ using $(i\hat u_{\mathrm b})^2=+e_t$. So
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\tfrac14\,\varrho\sum_{\imath}\Bigl(\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}\Bigr)^2=0
+\bigl(\Box_\Phi-4\pi^{2}\nu_m^2\bigr)\varrho+\tfrac14\,\varrho\sum_{\imath}\Bigl(\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}\Bigr)^2=0
 \qquad\text{(axis fixed)} .
 $$
 
@@ -274,7 +274,7 @@ The display is the divergence of the four-vector written in the word's variables
 
 ## Plane Waves and the Branch as a Region
 
-**A plane wave is a constant frame.** Take $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ with $\tilde A_0$ a constant timelike element and $\theta_{\mathrm{pwp}}=k'_t r'_t-\vec k_\Phi\cdot\vec r$. The word of the field is then
+**A plane wave is a constant frame.** Take $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ with $\tilde A_0$ a constant timelike element and $\theta_{\mathrm{pwp}}=k'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r$. The word of the field is then
 
 $$
 \varrho=\lvert\cos\theta_{\mathrm{pwp}}\rvert\,\sqrt{-\langle\tilde A_0\rangle_\natural},
@@ -284,7 +284,7 @@ $$
 \varepsilon=\mathrm{sign}\cos\theta_{\mathrm{pwp}} ,
 $$
 
-so the boost is fixed by the amplitude and the whole spacetime dependence sits in the scale. The frame bracket vanishes and the scale equation reduces to $(\Box_\Phi-k_m^2)\varrho=0$, which the cosine satisfies on each side of a node with the dispersion relation $k'^2_t=\vec k_\Phi^2+k_m^2$. The sign $\varepsilon$ flips at every node, and it must: the four-vector reverses through zero, and the reversal is a change of branch label and not a change of direction.
+so the boost is fixed by the amplitude and the whole spacetime dependence sits in the scale. The frame bracket vanishes and the scale equation reduces to $(\Box_\Phi-4\pi^{2}\nu_m^2)\varrho=0$, which the cosine satisfies on each side of a node with the dispersion relation $k'^2_t=2\pi\vec\nu_\Phi^2+4\pi^{2}\nu_m^2$. The sign $\varepsilon$ flips at every node, and it must: the four-vector reverses through zero, and the reversal is a change of branch label and not a change of direction.
 
 **The branch is a property of the point.** For a solution, the sign of $\langle\tilde A_\Phi\rangle_\natural$ varies in spacetime, because the field's local value varies. A timelike plane wave crosses the light cone on its nodal surfaces; a field with a spacelike component crosses it on the surfaces where the local four-vector becomes null. The word is therefore piecewise in spacetime as well as in parameter space, and the two piecewiseness are the same fact read twice. The set where the chart fails is the set where the local four-vector is lightlike, and for a plane wave that set is the nodal surfaces.
 
@@ -324,7 +324,7 @@ The Proca potential is an element of the material sector, and the material secto
 The logarithmic derivative is $\tilde A_\Phi^{-1}\partial_{\imath}\tilde A_\Phi=\partial_{\imath}\ln \varrho+\Gamma_{\imath}$ with $\Gamma_{\imath}=\tilde U^{-1}\partial_{\imath}\tilde U$, and the central bracket vanishes identically. The Proca equation separates into
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0,
+\bigl(\Box_\Phi-4\pi^{2}\nu_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0,
 \qquad
 \sum_{\imath}\Bigl(\partial_{\imath}\Gamma_{\imath}+\Gamma_{\imath}^2-\mathrm{Sc}(\Gamma_{\imath}^2)\Bigr)+2\sum_{\imath}\partial_{\imath}\ln \varrho\,\Gamma_{\imath}=0
 $$
@@ -351,7 +351,7 @@ with the second in the traceless part; for a fixed axis they reduce to a massive
 | $\varepsilon=\pm1$ | Sign of $a'_t$ on the timelike branch |
 | $\Gamma_{\imath}=\tilde U^{-1}\partial_{\imath}\tilde U$ | Frame bracket, the Maurer–Cartan form |
 | $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | Lorenz scalar |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 
 ## Further Reading
 

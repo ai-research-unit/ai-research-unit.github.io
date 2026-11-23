@@ -11,7 +11,7 @@ The restriction. The word exists where $N(\tilde\Xi)\neq0$; the action is writte
 
 The signs. The parent writes the coupling as $ϙ$ with $ϙ=-q$. The displays here keep the parent's letters and use $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\omicron_{\mathrm{pot}}$ when the mechanical variables are named.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $\nu_m=\frac{mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$.
 ## The Action in the Non-Quantum Limit
 The two displays, side by side, and their difference.
 
@@ -152,7 +152,7 @@ The surviving system is a constrained one: seven momenta zero or fixed, two evol
 | $\vec\nabla_\Phi \varrho,\ \vec\nabla_\Phi\theta_{\mathrm{rpd}},\ \vec\nabla_\Phi\theta_{\mathrm{axr}}$ | The three gradients the limit deletes |
 | $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$ | The connection; $q$ its charge, the parent's $ϙ=-q$ |
 | $\vec\pi=\vec p-q\vec A$, $\mathcal E=E-q\omicron_{\mathrm{pot}}$ | Mechanical momentum and energy |
-| $\epsilon=1/(\pi_{\Phi}L)$, $\delta=1/(k_mL)$ | The two parameters of the deleted terms' size |
+| $\epsilon=1/(\pi_{\Phi}L)$, $\delta=1/(2\pi\nu_mL)$ | The two parameters of the deleted terms' size |
 ## Further Reading
 - [The Lagrangian and the Coupled Dirac Equation in Polar Variables](the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html), the parent: the two actions, the type table, the constraint count and the reconstruction conjecture.
 - [The Coupled Dirac Equation in the Non-Quantum Limit](the-coupled-dirac-equation-in-the-non-quantum-limit.html), the companion: the one addition to the wavevector, the kinetic frame and the three laws.

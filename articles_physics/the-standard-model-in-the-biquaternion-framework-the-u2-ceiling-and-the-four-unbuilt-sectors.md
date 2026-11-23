@@ -160,12 +160,12 @@ The derivative is gauge covariant for arbitrary $ϙ_L,ϙ_R$, and the mass biline
 **The mass term is the linear pair.** The framework's mass term is the linear chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
-through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, whose current carries the chirality as a right factor of the field. The algebra's anti-linear object is the real structure $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$, whose separate conjugate pairing — Majorana-type or the real form of an ordinary Dirac mass — is the open reading treated in *The Neutrino and Majorana Fermions in Biquaternionic Form*. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, whose current carries the chirality as a right factor of the field. The algebra's anti-linear object is the real structure $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$, whose separate conjugate pairing — Majorana-type or the real form of an ordinary Dirac mass — is the open reading treated in *The Neutrino and Majorana Fermions in Biquaternionic Form*. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ## The Three Gauge Factors
 
@@ -435,7 +435,7 @@ No section assumes a Standard Model structure. The three gauge factors are each 
 | every $\mathbb{B}$-module | complex dimension $2k$; a three-dimensional internal space is not a module |
 | $-iR_{\mathrm{axf},\vec e_z}$ | The fifth basis operator of the frame: a pure right multiplication, and the source of the two parts named by the subscript |
 | $B=\mathrm{Sc}(\tilde{Ξ}^*i\,\tilde{Ξ}\,\vec e_x)$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ | Chirality-odd mass bilinear; chiral charge as one right multiplication, $\tilde{Ξ}\mapsto\tilde{Ξ} b$; selection rule $ϙ_L=ϙ_R$ |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\ (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$; $\tilde{Ξ}^{\flat}=-\tilde{Ξ}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\ (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$; $\tilde{Ξ}^{\flat}=-\tilde{Ξ}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | **Standard-model notation, not framework objects** | |

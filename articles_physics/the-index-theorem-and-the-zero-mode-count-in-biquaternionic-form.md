@@ -72,12 +72,12 @@ The square of the operator is not scalar either. What is scalar is the compositi
 **The first order, and the mass.** The free equation is first order and carries one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$. The massive equation is the chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R} ,
 $$
 
-and it is not a one-field first-order equation: $\tilde\nabla_\Phi^2$ is not scalar, so no single first-order operator on one field has a scalar square to take a mass from. The first-order form of the d'Alembertian is the pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, and each line composed with the conjugate of the other returns $\Box_\Phi$; $\tilde\nabla_\Phi^2$ is not $\Box_\Phi$, and the article states the pair and never a one-field massive form. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+and it is not a one-field first-order equation: $\tilde\nabla_\Phi^2$ is not scalar, so no single first-order operator on one field has a scalar square to take a mass from. The first-order form of the d'Alembertian is the pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, and each line composed with the conjugate of the other returns $\Box_\Phi$; $\tilde\nabla_\Phi^2$ is not $\Box_\Phi$, and the article states the pair and never a one-field massive form. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **The chirality.** Chirality is the subscript, and it takes two values. A field is written $\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$: $L$ is the minus value and $R$ the plus value, in the Dirac letters, and the split is unique, the two parts of the zero field being both zero (*Special Element Conventions*, §*The Chirality Convention* and §*The Spinor Convention*). The two values are the two eigenspaces of right multiplication by $-i\vec e_z$, the frame's chirality $\xi$; the body carries the subscript alone. A right multiplication commutes with every left multiplication, so the gradient commutes with $\xi$ and preserves each value: the frame's chirality is even on the operator, and it does not grade it.
 

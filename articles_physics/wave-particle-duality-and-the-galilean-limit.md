@@ -2,54 +2,54 @@
 
 ## Introduction
 
-The Galilean limit does not approximate a solution. It truncates the degree of the symbol in the energy, and the residue is affine. The relativistic symbol is quadratic in the energy wave number and carries the constant $-k_m^{2}$; the non-relativistic one is linear in the energy above rest. A symbol that is linear in one variable and quadratic in another is called affine, and that word is the whole content of the article. §*What Affine Means* tests the claim by scaling the two kinematic variables with the mass held fixed. §*Degree in the energy, and homogeneity* then says which scalings make either symbol homogeneous, because the naive answer is wrong: neither symbol is homogeneous in the kinematic variables alone, and the two failures are not the same failure.
+The Galilean limit does not approximate a solution. It truncates the degree of the symbol in the energy, and the residue is affine. The relativistic symbol is quadratic in the energy wave number and carries the constant $-\nu_m^{2}$; the non-relativistic one is linear in the energy above rest. A symbol that is linear in one variable and quadratic in another is called affine, and that word is the whole content of the article. §*What Affine Means* tests the claim by scaling the two kinematic variables with the mass held fixed. §*Degree in the energy, and homogeneity* then says which scalings make either symbol homogeneous, because the naive answer is wrong: neither symbol is homogeneous in the kinematic variables alone, and the two failures are not the same failure.
 
-A linear symbol vanishes at the origin of the energy variable; the Schrödinger symbol does not, and it must not. The Galilei boost law carries a quadratic term in the boost velocity, so a symbol of degree one cannot be invariant under it. Among the symbols of degree at most one in the energy and at most two in the momentum, the invariant ones form exactly a two-dimensional space, spanned by $\sigma_{\mathrm{s}}$ and the constant $1$: the energy and momentum coefficients are locked to one another by the mass, at the ratio $-2k_m$, and only the additive constant is free. Fix that constant, as fixing the zero of the energy does, and the symbol is unique up to scale. §*Why Affine and Not Linear* proves that in two lines, identifies the locking constant as the cocycle of the boost, and says why the free constant is the same freedom.
+A linear symbol vanishes at the origin of the energy variable; the Schrödinger symbol does not, and it must not. The Galilei boost law carries a quadratic term in the boost velocity, so a symbol of degree one cannot be invariant under it. Among the symbols of degree at most one in the energy and at most two in the momentum, the invariant ones form exactly a two-dimensional space, spanned by $\sigma_{\mathrm{s}}$ and the constant $1$: the energy and momentum coefficients are locked to one another by the mass, at the ratio $-2\nu_m$, and only the additive constant is free. Fix that constant, as fixing the zero of the energy does, and the symbol is unique up to scale. §*Why Affine and Not Linear* proves that in two lines, identifies the locking constant as the cocycle of the boost, and says why the free constant is the same freedom.
 
 The order in the energy, the number of sheets of the zero set, and the number of initial data are one integer. For the relativistic symbol it is two, twice over: second order in time, two sheets of the hyperbola, and a value plus a derivative at $t=0$. For the Schrödinger symbol it is one, three times: first order in time, one sheet of the paraboloid, one datum. §*The Count That the Degree Fixes* states the triangle, and §*The Rank That the Degree Does Not Fix* says what the same change does to the rank computations of the two preceding articles.
 
-The two roots in the energy variable are separated by $2\sqrt{k_m^{2}+k_\Phi^{2}}$, which is at least $2k_m$ and never vanishes. The retained root sits at $k_{\mathrm{s}}\approx k_\Phi^{2}/(2k_m)$ and the discarded one at $k_{\mathrm{s}}\approx-2k_m$, so the discarded one is outside the region $\lvert k_{\mathrm{s}}\rvert\ll2k_m$ in which the truncation holds. The gap that makes the truncation consistent is the mass. The antiparticle is excluded by the region of validity, not by a declaration.
+The two roots in the energy variable are separated by $2\sqrt{\nu_m^{2}+\nu_{\Phi}^{2}}$, which is at least $2\nu_m$ and never vanishes. The retained root sits at $\nu_{\mathrm{s}}\approx \nu_{\Phi}^{2}/(2\nu_m)$ and the discarded one at $\nu_{\mathrm{s}}\approx-2\nu_m$, so the discarded one is outside the region $\lvert \nu_{\mathrm{s}}\rvert\ll2\nu_m$ in which the truncation holds. The gap that makes the truncation consistent is the mass. The antiparticle is excluded by the region of validity, not by a declaration.
 
 *Wave–Particle Duality and the Fourier Transform* turns the operator into a multiplication by an element. *Wave–Particle Duality and the Count of Degrees of Freedom* reads the rank of that multiplication as a count of polarisations. *Wave–Particle Duality and Charge Conservation: The Cokernel of Maxwell's Symbol* reads its cokernel as a condition on the data. Each of the three is a statement about a symbol, and each presupposes a symbol of a definite shape. This article asks what fixes that shape, and the answer is the degree. Without the degree, the rank and the cokernel of the earlier articles are computations about a symbol the non-relativistic equation does not have.
 
-The strongest objection is that this is a Taylor expansion about the mass shell, and that the content is standard. The expansion is real, and the article does not deny it. What the objection misses is that the truncation is exact in closed form, that the dropped term is a single named quantity rather than an error estimate, and that three qualitative facts change with the degree and none of them is small. The zero set changes topology: a two-sheeted hyperbola becomes a one-sheeted parabola. The rank changes character: a graded three-then-two becomes an all-or-nothing two-then-zero. The invariance group changes: the Lorentz group becomes the Galilei group, and with it the mass changes from a Casimir of the Poincaré algebra to a central charge of the Galilei algebra. A correction of order $k_\Phi^{4}/k_m^{3}$ in the position of the level set is not the same statement as any of those.
+The strongest objection is that this is a Taylor expansion about the mass shell, and that the content is standard. The expansion is real, and the article does not deny it. What the objection misses is that the truncation is exact in closed form, that the dropped term is a single named quantity rather than an error estimate, and that three qualitative facts change with the degree and none of them is small. The zero set changes topology: a two-sheeted hyperbola becomes a one-sheeted parabola. The rank changes character: a graded three-then-two becomes an all-or-nothing two-then-zero. The invariance group changes: the Lorentz group becomes the Galilei group, and with it the mass changes from a Casimir of the Poincaré algebra to a central charge of the Galilei algebra. A correction of order $\nu_{\Phi}^{4}/\nu_m^{3}$ in the position of the level set is not the same statement as any of those.
 
-*Wave–Particle Duality and the Fourier Transform*, §*Worked Case: The Schrödinger Equation*, writes the non-relativistic condition as $k_{t}^{\prime}-k_m-k_{\Phi}^{2}/(2k_m)=0$, records the quartic error $-k_{\Phi}^{4}/(8k_m^{3})$, and states that no element of $\mathbb{B}$ has that symbol for a norm. *The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form* supplies the truncation rule and the statement that the limit is taken on the state and not on $c$. *The Count of Degrees of Freedom* supplies the rank of the first-order symbol. What is new here is the degree as an object: the exact identity between the two symbols, the affine variable and its two homogeneous pieces, the uniqueness of the invariant symbol, the sheet count as a count of initial data, and the collapse of the graded rank.
+*Wave–Particle Duality and the Fourier Transform*, §*Worked Case: The Schrödinger Equation*, writes the non-relativistic condition as $\nu_t^{\prime}-\nu_m-\nu_{\Phi}^{2}/(2\nu_m)=0$, records the quartic error $-\nu_{\Phi}^{4}/(8\nu_m^{3})$, and states that no element of $\mathbb{B}$ has that symbol for a norm. *The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form* supplies the truncation rule and the statement that the limit is taken on the state and not on $c$. *The Count of Degrees of Freedom* supplies the rank of the first-order symbol. What is new here is the degree as an object: the exact identity between the two symbols, the affine variable and its two homogeneous pieces, the uniqueness of the invariant symbol, the sheet count as a count of initial data, and the collapse of the graded rank.
 
 ## The Symbol of the Second-Order Operator
 
 ### One scalar, not an element
 
-The Klein–Gordon operator is second order, and its symbol is a number. Write $\mathcal{P}=\Box_\Phi-k_m^{2}$ for the operator of *The First-Order Root of the Biquaternion Klein–Gordon Operator*, with $\Box_\Phi$ the material d'Alembertian. On a plane wave the gradient is replaced by its symbol and
+The Klein–Gordon operator is second order, and its symbol is a number. Write $\mathcal{P}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ for the operator of *The First-Order Root of the Biquaternion Klein–Gordon Operator*, with $\Box_\Phi$ the material d'Alembertian. On a plane wave the gradient is replaced by its symbol and
 
 $$
-\sigma_{\mathcal{P}}(k_{t}^{\prime},\vec k_\Phi)=k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}.
+\sigma_{\mathcal{P}}(\nu_t^{\prime},\vec\nu_\Phi)=\nu_t^{\prime\,2}-\nu_{\Phi}^{2}-\nu_m^{2}.
 $$
 
-This is a complex number and not an element of $\mathbb{B}$, and the reason is one line: $\Box_\Phi$ is the composition $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, whose symbol is the norm $\tilde K_\Phi\tilde K_\Phi^{\natural}$, and the norm of a quaternion is central. The second-order symbol is left multiplication by a scalar. The first-order symbol $i\tilde K_\Phi$ is not, and that single difference is the source of everything in this article.
+This is a complex number and not an element of $\mathbb{B}$, and the reason is one line: $\Box_\Phi$ is the composition $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, whose symbol is the norm $\tilde\Upsilon_\Phi\tilde\Upsilon_\Phi^{\natural}$, and the norm of a quaternion is central. The second-order symbol is left multiplication by a scalar. The first-order symbol $i\tilde\Upsilon_\Phi$ is not, and that single difference is the source of everything in this article.
 
-Left multiplication by $\sigma$ is invertible when $\sigma\ne0$ and zero when $\sigma=0$. There is no third case and no intermediate dimension. The graded ranks of the two preceding articles — three off the light cone and two on it — belong to $L_{i\tilde K_\Phi}$, which is not scalar. The second-order symbol has rank four on the whole algebra the moment it is non-zero, and rank zero on the set where it vanishes:
+Left multiplication by $\sigma$ is invertible when $\sigma\ne0$ and zero when $\sigma=0$. There is no third case and no intermediate dimension. The graded ranks of the two preceding articles — three off the light cone and two on it — belong to $L_{i\tilde\Upsilon_\Phi}$, which is not scalar. The second-order symbol has rank four on the whole algebra the moment it is non-zero, and rank zero on the set where it vanishes:
 
-| Frequency point | $L_{i\tilde K_\Phi}$ on $\mathbb{B}_{V}$ | $L_{i\tilde K_\Phi}$ on $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ | $L_{\sigma_{\mathcal{P}}}$ on $\mathbb{B}$ | $L_{\sigma_{\mathcal{P}}}$ on $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ |
+| Frequency point | $L_{i\tilde\Upsilon_\Phi}$ on $\mathbb{B}_{V}$ | $L_{i\tilde\Upsilon_\Phi}$ on $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ | $L_{\sigma_{\mathcal{P}}}$ on $\mathbb{B}$ | $L_{\sigma_{\mathcal{P}}}$ on $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ |
 |---|---|---|---|---|
-| neither surface: $k_{t}^{\prime}\ne k_{\Phi}$ and $\sigma_{\mathcal{P}}\ne0$ | 3 | 2 | 4 | 2 |
-| light cone, $k_{t}^{\prime}=k_{\Phi}$ | 2 | 1 | 4 | 2 |
-| mass shell, $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ | 3 | 2 | 0 | 0 |
+| neither surface: $\nu_t^{\prime}\ne \nu_{\Phi}$ and $\sigma_{\mathcal{P}}\ne0$ | 3 | 2 | 4 | 2 |
+| light cone, $\nu_t^{\prime}=\nu_{\Phi}$ | 2 | 1 | 4 | 2 |
+| mass shell, $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$ | 3 | 2 | 0 | 0 |
 
-The light-cone row is not a subcase of the first row but a separate line: there $\sigma_{\mathcal{P}}=-k_m^{2}\ne0$, so the second-order symbol is still an invertible element. The two columns on the left are the previous articles' object and are reproduced here for contrast; the two on the right are this article's. The drop from three to two happens only in the first-order column, and only on the light cone. The second-order symbol knows nothing of it. On the mass shell the first-order symbol still has full rank on the vector part, while the second-order symbol has vanished entirely. The module column has a one-line derivation. Under $\mathbb{B}\cong M_2(\mathbb{C})$ with $e_t\mapsto I$ and $\vec e_{\imath}\mapsto-i\sigma_{\imath}$, the symbol $i\tilde K_\Phi$ becomes $-k_{t}^{\prime}I+\vec k_\Phi\cdot\vec\sigma$, whose determinant is $a^{2}-\lvert\vec b\rvert^{2}=k_{t}^{\prime\,2}-k_{\Phi}^{2}$. So the rank on the module is two off the light cone and one on it, the vanishing there being of rank one because the matrix itself is not zero. The light-cone row is therefore derived, and the mass-shell row follows because the scalar symbol multiplies that same matrix by zero. The remaining columns were taken by singular value decomposition at a tolerance of $10^{-9}$.
+The light-cone row is not a subcase of the first row but a separate line: there $\sigma_{\mathcal{P}}=-\nu_m^{2}\ne0$, so the second-order symbol is still an invertible element. The two columns on the left are the previous articles' object and are reproduced here for contrast; the two on the right are this article's. The drop from three to two happens only in the first-order column, and only on the light cone. The second-order symbol knows nothing of it. On the mass shell the first-order symbol still has full rank on the vector part, while the second-order symbol has vanished entirely. The module column has a one-line derivation. Under $\mathbb{B}\cong M_2(\mathbb{C})$ with $e_t\mapsto I$ and $\vec e_{\imath}\mapsto-i\sigma_{\imath}$, the symbol $i\tilde\Upsilon_\Phi$ becomes $-\nu_t^{\prime}I+\vec\nu_\Phi\cdot\vec\sigma$, whose determinant is $a^{2}-\lvert\vec b\rvert^{2}=\nu_t^{\prime\,2}-\nu_{\Phi}^{2}$. So the rank on the module is two off the light cone and one on it, the vanishing there being of rank one because the matrix itself is not zero. The light-cone row is therefore derived, and the mass-shell row follows because the scalar symbol multiplies that same matrix by zero. The remaining columns were taken by singular value decomposition at a tolerance of $10^{-9}$.
 
 The mass shell is where the non-relativistic physics lives, and the light cone is not. This is the reason the Galilean limit can keep so little of the earlier bookkeeping: the surface on which the non-relativistic equation admits a plane wave is the surface on which its symbol vanishes, and the surface on which the earlier ranks drop is a different surface, on which the non-relativistic symbol is a non-zero constant. The two degeneracies are not the same degeneracy, and only one of them survives to the non-relativistic description.
 
 ### Degree in the energy, and homogeneity
 
-$\sigma_{\mathcal{P}}$ is quadratic in $k_{t}^{\prime}$ and $\sigma_{\mathrm{s}}$ is linear in $k_{\mathrm{s}}$. That is the degree the next section uses, and it is the only degree the article needs.
+$\sigma_{\mathcal{P}}$ is quadratic in $\nu_t^{\prime}$ and $\sigma_{\mathrm{s}}$ is linear in $\nu_{\mathrm{s}}$. That is the degree the next section uses, and it is the only degree the article needs.
 
-The mass is a wave number, $k_m=\frac{2\pi mc}{h}$, and it is a coordinate of the same kind as the other two. Scaling the triple gives
+The mass is a wave number, $\nu_m=\frac{m\,c}{h}$, and it is a coordinate of the same kind as the other two. Scaling the triple gives
 
 $$
-\sigma_{\mathcal{P}}(\lambda k_{t}^{\prime},\lambda\vec k_\Phi,\lambda k_m)=\lambda^{2}\sigma_{\mathcal{P}}(k_{t}^{\prime},\vec k_\Phi,k_m),
+\sigma_{\mathcal{P}}(\lambda \nu_t^{\prime},\lambda\vec\nu_\Phi,\lambda \nu_m)=\lambda^{2}\sigma_{\mathcal{P}}(\nu_t^{\prime},\vec\nu_\Phi,\nu_m),
 \qquad
-\sigma_{\mathrm{s}}(\lambda k_{t}^{\prime},\lambda\vec k_\Phi,\lambda k_m)=\lambda\,\sigma_{\mathrm{s}}(k_{t}^{\prime},\vec k_\Phi,k_m).
+\sigma_{\mathrm{s}}(\lambda \nu_t^{\prime},\lambda\vec\nu_\Phi,\lambda \nu_m)=\lambda\,\sigma_{\mathrm{s}}(\nu_t^{\prime},\vec\nu_\Phi,\nu_m).
 $$
 
 The first is degree two and the second degree one, and both statements are exact. This is what lets the corpus treat the three numbers as coordinates of one element, and nothing here contradicts it.
@@ -57,68 +57,68 @@ The first is degree two and the second degree one, and both statements are exact
 For the relativistic symbol,
 
 $$
-\sigma_{\mathcal{P}}(\lambda k_{t}^{\prime},\lambda\vec k_\Phi)=\lambda^{2}\bigl(k_{t}^{\prime\,2}-k_{\Phi}^{2}\bigr)-k_m^{2}
-=\lambda^{2}\sigma_{\mathcal{P}}+k_m^{2}(\lambda^{2}-1),
+\sigma_{\mathcal{P}}(\lambda \nu_t^{\prime},\lambda\vec\nu_\Phi)=\lambda^{2}\bigl(\nu_t^{\prime\,2}-\nu_{\Phi}^{2}\bigr)-\nu_m^{2}
+=\lambda^{2}\sigma_{\mathcal{P}}+\nu_m^{2}(\lambda^{2}-1),
 $$
 
-so the failure is a constant, and its size is the mass squared. That is the precise sense in which the mass shell is a level set and not a zero set: the mass shell is $\{\sigma_{\mathcal{P}}=0\}$, which is $\{k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_m^{2}\}$, a level set of the homogeneous quadratic form $k_{t}^{\prime\,2}-k_{\Phi}^{2}$, and not the zero set of any homogeneous polynomial in the two kinematic variables. The quadratic form is homogeneous; the symbol is a quadratic form minus a constant; the level set of the first is the zero set of the second.
+so the failure is a constant, and its size is the mass squared. That is the precise sense in which the mass shell is a level set and not a zero set: the mass shell is $\{\sigma_{\mathcal{P}}=0\}$, which is $\{\nu_t^{\prime\,2}-\nu_{\Phi}^{2}=\nu_m^{2}\}$, a level set of the homogeneous quadratic form $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}$, and not the zero set of any homogeneous polynomial in the two kinematic variables. The quadratic form is homogeneous; the symbol is a quadratic form minus a constant; the level set of the first is the zero set of the second.
 
-Scaling the kinematic pair gives $\lambda k_{\mathrm{s}}-\lambda^{2}k_{\Phi}^{2}/(2k_m)$, which is degree one in one piece and degree two in the other. So $\sigma_{\mathrm{s}}$ is the sum of two homogeneous pieces of different degree, with no constant. That is why it is affine and not merely inhomogeneous, and it is why its zero set is a paraboloid: $\{\sigma_{\mathrm{s}}=0\}$ cannot be written as $\{$quadratic form$=0\}$ or as $\{$quadratic form$=$constant$\}$, because either would be homogeneous in the kinematic variables, and $\sigma_{\mathrm{s}}$ is not.
+Scaling the kinematic pair gives $\lambda \nu_{\mathrm{s}}-\lambda^{2}\nu_{\Phi}^{2}/(2\nu_m)$, which is degree one in one piece and degree two in the other. So $\sigma_{\mathrm{s}}$ is the sum of two homogeneous pieces of different degree, with no constant. That is why it is affine and not merely inhomogeneous, and it is why its zero set is a paraboloid: $\{\sigma_{\mathrm{s}}=0\}$ cannot be written as $\{$quadratic form$=0\}$ or as $\{$quadratic form$=$constant$\}$, because either would be homogeneous in the kinematic variables, and $\sigma_{\mathrm{s}}$ is not.
 
 A constant offset keeps the surface a level set of a quadratic form, and a quadratic form has an inertia, an axis, and two sheets. A lower-degree term does not, and its surface has one sheet and no axis of symmetry. **The single integer that separates the two is the degree in the energy: two gives a constant offset and a hyperboloid, one gives a linear term and a paraboloid.**
 
 Solving $\sigma_{\mathcal{P}}=0$ for the energy wave number gives
 
 $$
-k_{t}^{\prime}=\pm\sqrt{k_{\Phi}^{2}+k_m^{2}},
+\nu_t^{\prime}=\pm\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}},
 $$
 
-and the two signs are two sheets, related by $k_{t}^{\prime}\to-k_{t}^{\prime}$. The symbol is even in $k_{t}^{\prime}$ because it depends on $k_{t}^{\prime}$ only through the square, which is exactly the statement that its offset is of degree zero and not of degree one. That evenness is what the Galilean limit destroys, and with it the symmetry that pairs the two sheets.
+and the two signs are two sheets, related by $\nu_t^{\prime}\to-\nu_t^{\prime}$. The symbol is even in $\nu_t^{\prime}$ because it depends on $\nu_t^{\prime}$ only through the square, which is exactly the statement that its offset is of degree zero and not of degree one. That evenness is what the Galilean limit destroys, and with it the symmetry that pairs the two sheets.
 
 ## The Rest Clock and the Affine Variable
 
 Write the energy wave number as its rest value plus an excess,
 
 $$
-k_{t}^{\prime}=k_m+k_{\mathrm{s}},\qquad k_{\mathrm{s}}:=\frac{2\pi E-mc^{2}}{h c},
+\nu_t^{\prime}=\nu_m+\nu_{\mathrm{s}},\qquad \nu_{\mathrm{s}}:=\frac{E-mc^{2}}{h c},
 $$
 
-so that $k_{\mathrm{s}}$ is the energy above rest, in the units of the corpus. It is the quantity the companion article writes as $k_{t}^{\prime}-k_m$ whenever it writes the affine condition, and it deserves a name because it is the only variable in which the non-relativistic symbol is simple. It is non-negative for a physical state, vanishes at rest, and is small compared with $k_m$ in the non-relativistic regime.
+so that $\nu_{\mathrm{s}}$ is the energy above rest, in the units of the corpus. It is the quantity the companion article writes as $\nu_t^{\prime}-\nu_m$ whenever it writes the affine condition, and it deserves a name because it is the only variable in which the non-relativistic symbol is simple. It is non-negative for a physical state, vanishes at rest, and is small compared with $\nu_m$ in the non-relativistic regime.
 
 Substitute and expand:
 
 $$
-\sigma_{\mathcal{P}}=(k_m+k_{\mathrm{s}})^{2}-k_{\Phi}^{2}-k_m^{2}
-=2k_mk_{\mathrm{s}}+k_{\mathrm{s}}^{2}-k_{\Phi}^{2}
-=2k_m\bigl(k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)\bigr)+k_{\mathrm{s}}^{2}.
+\sigma_{\mathcal{P}}=(\nu_m+\nu_{\mathrm{s}})^{2}-\nu_{\Phi}^{2}-\nu_m^{2}
+=2\nu_m\nu_{\mathrm{s}}+\nu_{\mathrm{s}}^{2}-\nu_{\Phi}^{2}
+=2\nu_m\bigl(\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)\bigr)+\nu_{\mathrm{s}}^{2}.
 $$
 
 Define the bracket as the non-relativistic symbol,
 
 $$
-\sigma_{\mathrm{s}}(k_{\mathrm{s}},\vec k_\Phi)=k_{\mathrm{s}}-\frac{k_{\Phi}^{2}}{2k_m},
+\sigma_{\mathrm{s}}(\nu_{\mathrm{s}},\vec\nu_\Phi)=\nu_{\mathrm{s}}-\frac{\nu_{\Phi}^{2}}{2\nu_m},
 $$
 
 and the identity reads
 
 $$
-\sigma_{\mathcal{P}}=2k_m\,\sigma_{\mathrm{s}}+k_{\mathrm{s}}^{2}.
+\sigma_{\mathcal{P}}=2\nu_m\,\sigma_{\mathrm{s}}+\nu_{\mathrm{s}}^{2}.
 $$
 
-Both sides are polynomials with constant coefficients, so the identity is also an identity of operators: $\mathcal{P}=2k_m\,\mathcal{S}+\mathcal{R}$, where $\mathcal{S}$ has symbol $\sigma_{\mathrm{s}}$ and $\mathcal{R}$ has symbol $k_{\mathrm{s}}^{2}$. In position space,
+Both sides are polynomials with constant coefficients, so the identity is also an identity of operators: $\mathcal{P}=2\nu_m\,\mathcal{S}+\mathcal{R}$, where $\mathcal{S}$ has symbol $\sigma_{\mathrm{s}}$ and $\mathcal{R}$ has symbol $\nu_{\mathrm{s}}^{2}$. In position space,
 
 $$
-\mathcal{S}=\frac{1}{i}\frac{\partial}{\partial r'_t}-k_m+\frac{1}{2k_m}\Delta_\Phi ,
+\mathcal{S}=\frac{1}{i}\frac{\partial}{\partial r'_t}-2\pi\nu_m+\frac{1}{4\pi\nu_m}\Delta_\Phi ,
 $$
 
-with $\Delta_\Phi=\vec\nabla_\Phi^{2}$, and $\mathcal{S}\chi=0$ is the free Schrödinger equation for the envelope, after the rest clock $e^{-i\theta_{\mathrm{rst}}}$ has been divided out. The division of the rest clock and the subtraction of $k_m$ from the energy are the same operation, and they are the same operation as passing from $\mathcal{P}$ to $\mathcal{S}$ up to the coefficient $2k_m$.
+with $\Delta_\Phi=\vec\nabla_\Phi^{2}$, and $\mathcal{S}\chi=0$ is the free Schrödinger equation for the envelope, after the rest clock $e^{-i\theta_{\mathrm{rst}}}$ has been divided out. The division of the rest clock and the subtraction of $\nu_m$ from the energy are the same operation, and they are the same operation as passing from $\mathcal{P}$ to $\mathcal{S}$ up to the coefficient $2\nu_m$.
 
-The angle is $\theta_{\mathrm{rst}}=k_m r'_t$: the mass wave number and the real interval give a real angle.
+The angle is $\theta_{\mathrm{rst}}=2\pi\nu_m r'_t$: the mass wave number and the real interval give a real angle.
 
-The residue is $k_{\mathrm{s}}^{2}$ and nothing else. Its size relative to the retained linear term is
+The residue is $\nu_{\mathrm{s}}^{2}$ and nothing else. Its size relative to the retained linear term is
 
 $$
-\frac{k_{\mathrm{s}}^{2}}{2k_mk_{\mathrm{s}}}=\frac{k_{\mathrm{s}}}{2k_m}=\frac{\gamma-1}{2},
+\frac{\nu_{\mathrm{s}}^{2}}{2\nu_m\nu_{\mathrm{s}}}=\frac{\nu_{\mathrm{s}}}{2\nu_m}=\frac{\gamma-1}{2},
 $$
 
 which is $\frac{\beta^{2}}{4}$ at leading order: at $\beta=0.01$ the exact value is $2.5002\times10^{-5}$ against $\beta^{2}/4=2.5000\times10^{-5}$. The truncation is therefore specified by one number at each mode, and not by an order symbol.
@@ -126,21 +126,21 @@ which is $\frac{\beta^{2}}{4}$ at leading order: at $\beta=0.01$ the exact value
 Setting $\sigma_{\mathrm{s}}=0$ gives
 
 $$
-k_{\mathrm{s}}=\frac{k_{\Phi}^{2}}{2k_m},
+\nu_{\mathrm{s}}=\frac{\nu_{\Phi}^{2}}{2\nu_m},
 $$
 
-a single sheet, opening along the energy variable, with the momentum squared as its parameter. It is the zero set of no homogeneous polynomial in the kinematic variables, since $\sigma_{\mathrm{s}}$ has a linear term and a quadratic one, and it is therefore no level set of a quadratic form: a level set of a quadratic form is the zero set of that form minus a constant, and subtracting a constant from $\sigma_{\mathrm{s}}$ leaves the linear term in place. That is the precise sense in which the companion article's "not a norm's level set" is a statement about degree. The parabola is not a small perturbation of the hyperbola in shape. It is a different surface: one sheet against two, no asymptote against two asymptotes at the light cone, and a lowest point at $k_{\mathrm{s}}=0$ against one at $k_{t}^{\prime}=k_m$.
+a single sheet, opening along the energy variable, with the momentum squared as its parameter. It is the zero set of no homogeneous polynomial in the kinematic variables, since $\sigma_{\mathrm{s}}$ has a linear term and a quadratic one, and it is therefore no level set of a quadratic form: a level set of a quadratic form is the zero set of that form minus a constant, and subtracting a constant from $\sigma_{\mathrm{s}}$ leaves the linear term in place. That is the precise sense in which the companion article's "not a norm's level set" is a statement about degree. The parabola is not a small perturbation of the hyperbola in shape. It is a different surface: one sheet against two, no asymptote against two asymptotes at the light cone, and a lowest point at $\nu_{\mathrm{s}}=0$ against one at $\nu_t^{\prime}=\nu_m$.
 
-$\sigma_{\mathrm{s}}$ is not even in the energy variable: $\sigma_{\mathrm{s}}(-k_{\mathrm{s}},\vec k_\Phi)=-k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$ is not a multiple of $\sigma_{\mathrm{s}}(k_{\mathrm{s}},\vec k_\Phi)$. The relativistic symbol is even in $k_{t}^{\prime}$ and this one is not, so the reflection that exchanged the two sheets of the hyperbola is no longer a symmetry of the equation. Something has to be lost, and this is the first thing.
+$\sigma_{\mathrm{s}}$ is not even in the energy variable: $\sigma_{\mathrm{s}}(-\nu_{\mathrm{s}},\vec\nu_\Phi)=-\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$ is not a multiple of $\sigma_{\mathrm{s}}(\nu_{\mathrm{s}},\vec\nu_\Phi)$. The relativistic symbol is even in $\nu_t^{\prime}$ and this one is not, so the reflection that exchanged the two sheets of the hyperbola is no longer a symmetry of the equation. Something has to be lost, and this is the first thing.
 
 ## What Affine Means
 
 ### Two degrees, and no third
 
-Apply $k_{\mathrm{s}}\to\lambda k_{\mathrm{s}}$ and $\vec k_\Phi\to\lambda\vec k_\Phi$ with $\lambda>0$. Then
+Apply $\nu_{\mathrm{s}}\to\lambda \nu_{\mathrm{s}}$ and $\vec\nu_\Phi\to\lambda\vec\nu_\Phi$ with $\lambda>0$. Then
 
 $$
-\sigma_{\mathrm{s}}(\lambda k_{\mathrm{s}},\lambda\vec k_\Phi)=\lambda k_{\mathrm{s}}-\lambda^{2}\frac{k_{\Phi}^{2}}{2k_m},
+\sigma_{\mathrm{s}}(\lambda \nu_{\mathrm{s}},\lambda\vec\nu_\Phi)=\lambda \nu_{\mathrm{s}}-\lambda^{2}\frac{\nu_{\Phi}^{2}}{2\nu_m},
 $$
 
 so the first term scales as $\lambda$ and the second as $\lambda^{2}$. A homogeneous symbol of degree $n$ would scale as $\lambda^{n}$, and no $n$ does both. The symbol is the sum of one homogeneous piece of degree one and one of degree two, and that is exactly what affine means.
@@ -148,22 +148,22 @@ so the first term scales as $\lambda$ and the second as $\lambda^{2}$. A homogen
 A linear symbol vanishes when all its arguments vanish. Here
 
 $$
-\sigma_{\mathrm{s}}(0,\vec k_\Phi)=-\frac{k_{\Phi}^{2}}{2k_m}\ne0
+\sigma_{\mathrm{s}}(0,\vec\nu_\Phi)=-\frac{\nu_{\Phi}^{2}}{2\nu_m}\ne0
 $$
 
 whenever the momentum is non-zero. The symbol therefore does not come from a linear operator in the energy variable alone, and the non-vanishing offset is not an artefact of bookkeeping: it is the kinetic energy, which does not vanish at zero frequency because it does not depend on frequency at all.
 
-Replace $k_{\mathrm{s}}$ by $k_{\mathrm{s}}+\delta$ for any constant $\delta$; the symbol becomes $k_{\mathrm{s}}+\delta-k_{\Phi}^{2}/(2k_m)$, which is affine with the same slope and a different offset. A shift that depends on the momentum changes the offset by a function of the momentum, and the slope is again untouched. What is invariant under every redefinition of the zero is that the symbol is affine, and the reason is that a change of the zero can only add to the offset.
+Replace $\nu_{\mathrm{s}}$ by $\nu_{\mathrm{s}}+\delta$ for any constant $\delta$; the symbol becomes $\nu_{\mathrm{s}}+\delta-\nu_{\Phi}^{2}/(2\nu_m)$, which is affine with the same slope and a different offset. A shift that depends on the momentum changes the offset by a function of the momentum, and the slope is again untouched. What is invariant under every redefinition of the zero is that the symbol is affine, and the reason is that a change of the zero can only add to the offset.
 
 ### No element has it for a norm
 
-Since $\tilde K\tilde K^{\natural}$ is a quadratic form, no element of $\mathbb{B}$ has $\sigma_{\mathrm{s}}$ for its norm. This is the companion article's observation, and the degree makes the reason exact: the norm's scaling is $\lambda^{2}$ in every coordinate, while $\sigma_{\mathrm{s}}$ has a term of degree one in the energy. One disagreement of degree, and the question is closed. A reader who tries to find a $\tilde K$ with $\tilde K\tilde K^{\natural}=\sigma_{\mathrm{s}}$ is looking for an element whose norm is not homogeneous, and no such element exists in any dimension.
+Since $\tilde\Upsilon\tilde\Upsilon^{\natural}$ is a quadratic form, no element of $\mathbb{B}$ has $\sigma_{\mathrm{s}}$ for its norm. This is the companion article's observation, and the degree makes the reason exact: the norm's scaling is $\lambda^{2}$ in every coordinate, while $\sigma_{\mathrm{s}}$ has a term of degree one in the energy. One disagreement of degree, and the question is closed. A reader who tries to find a $\tilde\Upsilon$ with $\tilde\Upsilon\tilde\Upsilon^{\natural}=\sigma_{\mathrm{s}}$ is looking for an element whose norm is not homogeneous, and no such element exists in any dimension.
 
 A norm is homogeneous of degree two, so a symbol that is a norm has a cone for a zero set and hyperboloids for its level sets, and it is the symbol of a second-order operator with equal orders in time and space. The relativistic case is the only shape in which the wave arm of the duality is a level set of a norm, and the reason is not that the relativistic physics is special: it is that a norm is special, and only a degree-two symbol can be one.
 
 ### The operator's two orders
 
-The substitution $\partial/\partial r'_t\to i k_{t}^{\prime}$ carries degree one in the energy to one derivative in $r'_t$, and $\partial/\partial x_j\to ik_j$ carries degree two in the momentum to two derivatives. So a symbol with degrees one and two is the symbol of an operator with one time derivative and two space derivatives, and conversely. Applying the substitution to $\sigma_{\mathrm{s}}$ gives $\mathcal{S}$ above.
+The substitution $\partial/\partial r'_t\to 2\pi i\nu_t^{\prime}$ carries degree one in the energy to one derivative in $r'_t$, and $\partial/\partial x_j\to 2\pi i\nu_{\Phi,j}$ carries degree two in the momentum to two derivatives. So a symbol with degrees one and two is the symbol of an operator with one time derivative and two space derivatives, and conversely. Applying the substitution to $\sigma_{\mathrm{s}}$ gives $\mathcal{S}$ above.
 
 The Schrödinger equation is first order in $t$ and second in $x$ because its symbol has one homogeneous piece of degree one and one of degree two. Any equation whose symbol has that shape is first order in one variable and second in the others, and no equation whose symbol is homogeneous of a single degree can have the asymmetry. This is the sense in which the Galilean limit is a statement about shape rather than about size.
 
@@ -174,9 +174,9 @@ The Schrödinger equation is first order in $t$ and second in $x$ because its sy
 With boost velocity $\vec v_b=c\vec\beta_b$, the momentum and the energy above rest transform as
 
 $$
-\vec k_\Phi\longrightarrow\vec k_\Phi-k_m\vec\beta_b ,
+\vec\nu_\Phi\longrightarrow\vec\nu_\Phi-\nu_m\vec\beta_b ,
 \qquad
-k_{\mathrm{s}}\longrightarrow k_{\mathrm{s}}-\vec k_\Phi\cdot\vec\beta_b+\tfrac{1}{2}k_m\lvert\vec\beta_b\rvert^{2} ,
+\nu_{\mathrm{s}}\longrightarrow \nu_{\mathrm{s}}-\vec\nu_\Phi\cdot\vec\beta_b+\tfrac{1}{2}\nu_m\lvert\vec\beta_b\rvert^{2} ,
 $$
 
 which is the non-relativistic limit of the Lorentz transformation written in the corpus's wave numbers. The third term is the one that matters. The energy above rest does not transform linearly: it acquires a term quadratic in the boost velocity, and that term is proportional to the mass.
@@ -186,56 +186,56 @@ which is the non-relativistic limit of the Lorentz transformation written in the
 Write the transformed symbol and expand the transformed momentum squared:
 
 $$
-k_{\mathrm{s}}-\vec k_\Phi\cdot\vec\beta_b+\tfrac{1}{2}k_m\beta_b^{2}
--\frac{\lvert\vec k_\Phi-k_m\vec\beta_b\rvert^{2}}{2k_m}
-=k_{\mathrm{s}}-\frac{k_{\Phi}^{2}}{2k_m},
+\nu_{\mathrm{s}}-\vec\nu_\Phi\cdot\vec\beta_b+\tfrac{1}{2}\nu_m\beta_b^{2}
+-\frac{\lvert\vec\nu_\Phi-\nu_m\vec\beta_b\rvert^{2}}{2\nu_m}
+=\nu_{\mathrm{s}}-\frac{\nu_{\Phi}^{2}}{2\nu_m},
 $$
 
-because the cross term of the square is $-2k_m\vec k_\Phi\cdot\vec\beta_b$, whose quotient by $2k_m$ cancels the linear term, and the square of the boost is $k_m^{2}\beta_b^{2}$, whose quotient by $2k_m$ cancels the quadratic one. Both cancellations are exact and neither is an approximation. The symbol is Galilei-invariant for every momentum and every boost velocity, and a numerical check over two hundred random points gives a worst relative residual of $1.8\times10^{-15}$, which is round-off.
+because the cross term of the square is $-2\nu_m\vec\nu_\Phi\cdot\vec\beta_b$, whose quotient by $2\nu_m$ cancels the linear term, and the square of the boost is $\nu_m^{2}\beta_b^{2}$, whose quotient by $2\nu_m$ cancels the quadratic one. Both cancellations are exact and neither is an approximation. The symbol is Galilei-invariant for every momentum and every boost velocity, and a numerical check over two hundred random points gives a worst relative residual of $1.8\times10^{-15}$, which is round-off.
 
-Take the most general symbol of degree at most one in $k_{\mathrm{s}}$ and at most two in $\vec k_\Phi$,
+Take the most general symbol of degree at most one in $\nu_{\mathrm{s}}$ and at most two in $\vec\nu_\Phi$,
 
 $$
-\sigma=a\,k_{\mathrm{s}}+c\,k_{\Phi}^{2}+d,
+\sigma=a\,\nu_{\mathrm{s}}+c\,\nu_{\Phi}^{2}+d,
 $$
 
-and impose invariance. The constant $d$ is untouched by the boost, because the boost law adds to $k_{\mathrm{s}}$ a term that does not depend on $k_{\mathrm{s}}$. The difference $\sigma'-\sigma$ has a term linear in $\vec\beta_b$ with coefficient $-(a+2ck_m)\vec k_\Phi\cdot\vec\beta_b$ and a term quadratic in $\vec\beta_b$ with coefficient $\bigl(\tfrac{1}{2}ak_m+ck_m^{2}\bigr)\beta_b^{2}$. The first must vanish for every momentum, so $a=-2ck_m$; and then the second vanishes identically, since $\tfrac{1}{2}(-2ck_m)k_m+ck_m^{2}=0$. Two conditions, one free scale, one free constant, and the ratio of the two wave-number coefficients fixed by the mass.
+and impose invariance. The constant $d$ is untouched by the boost, because the boost law adds to $\nu_{\mathrm{s}}$ a term that does not depend on $\nu_{\mathrm{s}}$. The difference $\sigma'-\sigma$ has a term linear in $\vec\beta_b$ with coefficient $-(a+2c\nu_m)\vec\nu_\Phi\cdot\vec\beta_b$ and a term quadratic in $\vec\beta_b$ with coefficient $\bigl(\tfrac{1}{2}a\nu_m+c\nu_m^{2}\bigr)\beta_b^{2}$. The first must vanish for every momentum, so $a=-2c\nu_m$; and then the second vanishes identically, since $\tfrac{1}{2}(-2c\nu_m)\nu_m+c\nu_m^{2}=0$. Two conditions, one free scale, one free constant, and the ratio of the two wave-number coefficients fixed by the mass.
 
 Every Galilei-invariant symbol of the stated degrees is
 
 $$
-\sigma=c\Bigl(k_{\mathrm{s}}-\frac{k_{\Phi}^{2}}{2k_m}\Bigr)+d=c\,\sigma_{\mathrm{s}}+d,
+\sigma=c\Bigl(\nu_{\mathrm{s}}-\frac{\nu_{\Phi}^{2}}{2\nu_m}\Bigr)+d=c\,\sigma_{\mathrm{s}}+d,
 $$
 
-a two-parameter family: the scale $c$ and the additive constant $d$. The constant is not an accident of the ansatz and not a gap in the argument. A constant added to a symbol is a constant potential, and a constant potential is Galilei-invariant exactly: the boost multiplies the wave function by the phase $e^{i\theta_{\mathrm{gal}}}$, with the boost angle $\theta_{\mathrm{gal}}=m\vec v_b\cdot\vec r-\frac{1}{2}m\lvert\vec v_b\rvert^{2}h_t$ real because the mass, the boost velocity, the position and the time are real, and the cross terms it brings to $i\partial_{h_t}$ and to $-\vec\nabla_\Phi^{2}/(2k_m)$ cancel against it. The free constant of the symbol and the phase of the boost are the same freedom, seen from the two sides.
+a two-parameter family: the scale $c$ and the additive constant $d$. The constant is not an accident of the ansatz and not a gap in the argument. A constant added to a symbol is a constant potential, and a constant potential is Galilei-invariant exactly: the boost multiplies the wave function by the phase $e^{i\theta_{\mathrm{gal}}}$, with the boost angle $\theta_{\mathrm{gal}}=m\vec v_b\cdot\vec r-\frac{1}{2}m\lvert\vec v_b\rvert^{2}h_t$ real because the mass, the boost velocity, the position and the time are real, and the cross terms it brings to $i\partial_{h_t}$ and to $-\vec\nabla_\Phi^{2}/(4\pi\nu_m)$ cancel against it. The free constant of the symbol and the phase of the boost are the same freedom, seen from the two sides.
 
 Fixing the zero of the energy so that $d=0$, which is what the rest clock does, leaves the one-dimensional line spanned by $\sigma_{\mathrm{s}}$. Setting $c=0$ leaves only constants, and a constant symbol has no dispersion relation at all: its zero set is empty or the whole space. **So there is no Galilei-invariant symbol of degree one in the wave numbers other than the zero symbol, and every invariant shape of these degrees is affine. Affineness is not a choice among invariant shapes, and it is not merely one member of the family: the family is affine as a whole.**
 
 ### The mass is the cocycle
 
-The locking constant $a=-2ck_m$ and the quadratic term $\tfrac{1}{2}k_m\beta_b^{2}$ of the boost law both carry $k_m$, and they must: the one is what makes the symbol invariant and the other is what has to be cancelled for it to be. The mass appears in the symbol because it appears in the boost law, and it appears in the boost law as the cocycle.
+The locking constant $a=-2c\nu_m$ and the quadratic term $\tfrac{1}{2}\nu_m\beta_b^{2}$ of the boost law both carry $\nu_m$, and they must: the one is what makes the symbol invariant and the other is what has to be cancelled for it to be. The mass appears in the symbol because it appears in the boost law, and it appears in the boost law as the cocycle.
 
-In the Poincaré algebra the mass is a Casimir, an element built from the generators; in the Galilei algebra it is not in the algebra at all. It is a central charge of the extension, the boost acts on the wave function up to a phase rather than exactly, and the algebra closes only on the extended space. The quadratic term $\tfrac{1}{2}k_m\beta_b^{2}$ is precisely the phase, and the affine offset of the symbol is precisely its transform. The statement is an identification and not a derivation: the article computes the algebra of the symbol and the algebra of the boost, shows that the two constants coincide, and names the coincidence. What the coincidence means for the representation theory of the Galilei group is the content of the corpus's non-relativistic limit article, and nothing here adds to it.
+In the Poincaré algebra the mass is a Casimir, an element built from the generators; in the Galilei algebra it is not in the algebra at all. It is a central charge of the extension, the boost acts on the wave function up to a phase rather than exactly, and the algebra closes only on the extended space. The quadratic term $\tfrac{1}{2}\nu_m\beta_b^{2}$ is precisely the phase, and the affine offset of the symbol is precisely its transform. The statement is an identification and not a derivation: the article computes the algebra of the symbol and the algebra of the boost, shows that the two constants coincide, and names the coincidence. What the coincidence means for the representation theory of the Galilei group is the content of the corpus's non-relativistic limit article, and nothing here adds to it.
 
 ## The Count That the Degree Fixes
 
 ### One integer, three names
 
-A polynomial in $k_{\mathrm{s}}$ of degree $n$ has $n$ roots, so its zero set has $n$ sheets over the momentum; and a constant-coefficient equation that is order $n$ in $\partial/\partial r'_t$ needs $n$ data at $r'_t=0$. For $\sigma_{\mathcal{P}}$ the degree is two and all three counts are two. For $\sigma_{\mathrm{s}}$ the degree is one and all three are one. The three counts cannot disagree, because they are one count.
+A polynomial in $\nu_{\mathrm{s}}$ of degree $n$ has $n$ roots, so its zero set has $n$ sheets over the momentum; and a constant-coefficient equation that is order $n$ in $\partial/\partial r'_t$ needs $n$ data at $r'_t=0$. For $\sigma_{\mathcal{P}}$ the degree is two and all three counts are two. For $\sigma_{\mathrm{s}}$ the degree is one and all three are one. The three counts cannot disagree, because they are one count.
 
 The exact roots are
 
 $$
-k_{\mathrm{s},\pm}=-k_m\pm\sqrt{k_m^{2}+k_{\Phi}^{2}},
+\nu_{\mathrm{s},\pm}=-\nu_m\pm\sqrt{\nu_m^{2}+\nu_{\Phi}^{2}},
 $$
 
-so the two sheets are separated by $2\sqrt{k_m^{2}+k_{\Phi}^{2}}$, which tends to $2k_m$ as the momentum vanishes and grows from there. The separation never vanishes, and its minimum is the mass. The two roots are not a small perturbation of one root: they are a distance $2k_m$ apart at zero momentum, and no change of the momentum closes the gap.
+so the two sheets are separated by $2\sqrt{\nu_m^{2}+\nu_{\Phi}^{2}}$, which tends to $2\nu_m$ as the momentum vanishes and grows from there. The separation never vanishes, and its minimum is the mass. The two roots are not a small perturbation of one root: they are a distance $2\nu_m$ apart at zero momentum, and no change of the momentum closes the gap.
 
 ### The gap is the mass, and the region is the argument
 
-Expanding the positive root gives $k_{\mathrm{s},+}=k_{\Phi}^{2}/(2k_m)-k_{\Phi}^{4}/(8k_m^{3})+\cdots$, which is the affine relation plus the companion article's quartic error. The negative root gives $k_{\mathrm{s},-}=-2k_m-k_{\Phi}^{2}/(2k_m)-\cdots$, which is the mirror of the first, translated by $-2k_m$. So the discarded sheet is not at infinity and is not removed: it sits at $k_{\mathrm{s}}\approx-2k_m$.
+Expanding the positive root gives $\nu_{\mathrm{s},+}=\nu_{\Phi}^{2}/(2\nu_m)-\nu_{\Phi}^{4}/(8\nu_m^{3})+\cdots$, which is the affine relation plus the companion article's quartic error. The negative root gives $\nu_{\mathrm{s},-}=-2\nu_m-\nu_{\Phi}^{2}/(2\nu_m)-\cdots$, which is the mirror of the first, translated by $-2\nu_m$. So the discarded sheet is not at infinity and is not removed: it sits at $\nu_{\mathrm{s}}\approx-2\nu_m$.
 
-The retained term is $2k_mk_{\mathrm{s}}$ and the dropped term is $k_{\mathrm{s}}^{2}$; their ratio is $k_{\mathrm{s}}/(2k_m)$, which is small exactly in the region where $\lvert k_{\mathrm{s}}\rvert\ll2k_m$. The discarded sheet is at $\lvert k_{\mathrm{s}}\rvert\approx2k_m$, which is the boundary of that region, and the retained sheet is at $k_{\mathrm{s}}\approx k_{\Phi}^{2}/(2k_m)$, which is inside it whenever the momentum is small compared with the mass. The truncation is consistent precisely because the two sheets are far apart, and the distance between them is the mass. A massless theory would have the two sheets meeting at the origin, no region in which one is far from the other, and no Galilean limit of this kind.
+The retained term is $2\nu_m\nu_{\mathrm{s}}$ and the dropped term is $\nu_{\mathrm{s}}^{2}$; their ratio is $\nu_{\mathrm{s}}/(2\nu_m)$, which is small exactly in the region where $\lvert \nu_{\mathrm{s}}\rvert\ll2\nu_m$. The discarded sheet is at $\lvert \nu_{\mathrm{s}}\rvert\approx2\nu_m$, which is the boundary of that region, and the retained sheet is at $\nu_{\mathrm{s}}\approx \nu_{\Phi}^{2}/(2\nu_m)$, which is inside it whenever the momentum is small compared with the mass. The truncation is consistent precisely because the two sheets are far apart, and the distance between them is the mass. A massless theory would have the two sheets meeting at the origin, no region in which one is far from the other, and no Galilean limit of this kind.
 
 ### The datum that disappears
 
@@ -251,8 +251,8 @@ Left multiplication by $\sigma_{\mathrm{s}}$ on the module $\mathbb{B}\tilde\Pi_
 
 | Frequency point | rank of $L_{\sigma_{\mathrm{s}}}$ | $\dim\ker$ | $\dim\operatorname{coker}$ |
 |---|---|---|---|
-| off the paraboloid, $k_{\mathrm{s}}\ne k_{\Phi}^{2}/(2k_m)$ | 2 | 0 | 0 |
-| on the paraboloid, $k_{\mathrm{s}}=k_{\Phi}^{2}/(2k_m)$ | 0 | 2 | 2 |
+| off the paraboloid, $\nu_{\mathrm{s}}\ne \nu_{\Phi}^{2}/(2\nu_m)$ | 2 | 0 | 0 |
+| on the paraboloid, $\nu_{\mathrm{s}}=\nu_{\Phi}^{2}/(2\nu_m)$ | 0 | 2 | 2 |
 
 In the relativistic case the rank went from three to two across the light cone, and the cokernel from one to two; the step was the whole content of the count of degrees of freedom. Here there is no step: the rank is the module's dimension or it is nothing, and the cokernel is nothing or it is the module. The two-stage count of the earlier articles has no non-relativistic analogue, and this is not a defect of the limit: it is the statement that the earlier count was a property of a first-order element with a non-central symbol, and the Galilean symbol is neither first order nor non-central.
 
@@ -266,32 +266,32 @@ Rank plus cokernel equals the module's dimension at every point, exactly as rank
 
 ## The Same Shift, and What It Does to the Condition
 
-$\mathrm{Sc}(\tilde K_\Phi^{\natural}\tilde J_\Phi)=\vec k_\Phi\cdot\vec J-k_{t}^{\prime}c\rho$, so the condition is
+$\mathrm{Sc}(\tilde\Upsilon_\Phi^{\natural}\tilde J_\Phi)=\vec\nu_\Phi\cdot\vec J-\nu_t^{\prime}c\rho$, so the condition is
 
 $$
-\vec k_\Phi\cdot\vec J=k_{t}^{\prime}c\rho ,
+\vec\nu_\Phi\cdot\vec J=\nu_t^{\prime}c\rho ,
 $$
 
 which is homogeneous of degree one in the wave numbers: scale all of them and both sides scale once. There is no offset and no mass appears.
 
-Substituting $k_{t}^{\prime}=k_m+k_{\mathrm{s}}$ gives
+Substituting $\nu_t^{\prime}=\nu_m+\nu_{\mathrm{s}}$ gives
 
 $$
-\vec k_\Phi\cdot\vec J=k_mc\rho+k_{\mathrm{s}}c\rho .
+\vec\nu_\Phi\cdot\vec J=\nu_mc\rho+\nu_{\mathrm{s}}c\rho .
 $$
 
-The second term is not an offset in the condition; it is the rest frequency of the field the current belongs to. $\rho$ and $\vec J$ are bilinear in the field, and a phase cancels between the two factors, so factoring the rest clock $e^{-i\theta_{\mathrm{rst}}}$ out of the field leaves the current unchanged. A field written with the rest clock oscillates at $k_{t}^{\prime}=k_m+k_{\mathrm{s}}$ and its condition is the line above; the same field written without it oscillates at $k_{\mathrm{s}}$ and its condition is $\vec k_\Phi\cdot\vec J=k_{\mathrm{s}}c\rho$. The two lines are one equation with one current, read at two frequencies. The term $k_mc\rho$ appears only when the current of the unfactored field is paired with the frequency of the factored one, and that pairing is a mixing of conventions and not a physical term.
+The second term is not an offset in the condition; it is the rest frequency of the field the current belongs to. $\rho$ and $\vec J$ are bilinear in the field, and a phase cancels between the two factors, so factoring the rest clock $e^{-i\theta_{\mathrm{rst}}}$ out of the field leaves the current unchanged. A field written with the rest clock oscillates at $\nu_t^{\prime}=\nu_m+\nu_{\mathrm{s}}$ and its condition is the line above; the same field written without it oscillates at $\nu_{\mathrm{s}}$ and its condition is $\vec\nu_\Phi\cdot\vec J=\nu_{\mathrm{s}}c\rho$. The two lines are one equation with one current, read at two frequencies. The term $\nu_mc\rho$ appears only when the current of the unfactored field is paired with the frequency of the factored one, and that pairing is a mixing of conventions and not a physical term.
 
-The convention is the one the rest clock fixes: the phase is factored out of the field, so the density is $|\psi|^2$ of the factored field and the frequency written for it is $k_{\mathrm{s}}$. Writing $\rho=e^{-i\theta_{\mathrm{rst}}}\rho_{\mathrm{s}}$ instead, with the phase attached to the density and not to the field, would move the term to the other side with the opposite sign. The sign is a convention; the identity of the two lines is not.
+The convention is the one the rest clock fixes: the phase is factored out of the field, so the density is $|\psi|^2$ of the factored field and the frequency written for it is $\nu_{\mathrm{s}}$. Writing $\rho=e^{-i\theta_{\mathrm{rst}}}\rho_{\mathrm{s}}$ instead, with the phase attached to the density and not to the field, would move the term to the other side with the opposite sign. The sign is a convention; the identity of the two lines is not.
 
-| Variable | The symbol | The condition $\mathrm{Sc}(\tilde K_\Phi^{\natural}\tilde J_\Phi)=0$ |
+| Variable | The symbol | The condition $\mathrm{Sc}(\tilde\Upsilon_\Phi^{\natural}\tilde J_\Phi)=0$ |
 |---|---|---|
-| $k_{t}^{\prime}$, the frequency of the field with the rest clock | $k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$; quadratic in $k_{t}^{\prime}$ plus a constant | $\vec k_\Phi\cdot\vec J=k_{t}^{\prime}c\rho$; homogeneous of degree one |
-| $k_{\mathrm{s}}$, the frequency of the field without it | $k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$; linear in $k_{\mathrm{s}}$, affine | $\vec k_\Phi\cdot\vec J=k_{\mathrm{s}}c\rho$; homogeneous of degree one |
+| $\nu_t^{\prime}$, the frequency of the field with the rest clock | $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}-\nu_m^{2}$; quadratic in $\nu_t^{\prime}$ plus a constant | $\vec\nu_\Phi\cdot\vec J=\nu_t^{\prime}c\rho$; homogeneous of degree one |
+| $\nu_{\mathrm{s}}$, the frequency of the field without it | $\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$; linear in $\nu_{\mathrm{s}}$, affine | $\vec\nu_\Phi\cdot\vec J=\nu_{\mathrm{s}}c\rho$; homogeneous of degree one |
 
 The shift of the energy zero changes the operator, and with it the degree structure of the symbol: a quadratic form plus a constant becomes a linear term plus a quadratic one. The shift does not change the current, and a condition that is homogeneous on a current stays homogeneous in whatever frequency that current carries. Affineness is a property of the symbol and homogeneity is a property of the condition, and neither implies anything about the other. A reader who assumes that an affine symbol must bring an affine conservation law with it, or that a homogeneous conservation law must bring a homogeneous symbol, is wrong in the same way in either direction.
 
-The third article's result is that the condition on the source is the cokernel of the symbol, read through the scalar pairing. That is a statement about which functional acts on the source, and a shift of the frequency variable does not change which functional it is: the element $\tilde K_\Phi^{\natural}$, its pairing with $\tilde J_\Phi$, and the vanishing that defines admissibility are the same three objects in either variable. The Galilean limit changes the shape of the statement and leaves its content alone.
+The third article's result is that the condition on the source is the cokernel of the symbol, read through the scalar pairing. That is a statement about which functional acts on the source, and a shift of the frequency variable does not change which functional it is: the element $\tilde\Upsilon_\Phi^{\natural}$, its pairing with $\tilde J_\Phi$, and the vanishing that defines admissibility are the same three objects in either variable. The Galilean limit changes the shape of the statement and leaves its content alone.
 
 On the light cone the cokernel had two members, one conservation and one selection. The non-relativistic equation has no light cone to be on, and the selection member was a statement about the two circular directions of a vector-valued symbol. A scalar symbol has no circular directions to select between. The limit keeps the conserved member and drops the selection member, and the reason is again the degree: the selection member was produced by the non-central part of a first-order symbol, and the Galilean symbol has no non-central part.
 
@@ -299,7 +299,7 @@ On the light cone the cokernel had two members, one conservation and one selecti
 
 Four losses, and none follows from another. The article has met all four, and they are listed here in one place because a reader who notices one will not thereby notice the rest.
 
-The second sheet. The zero set loses a sheet, and with it the discrete reflection $k_{t}^{\prime}\to-k_{t}^{\prime}$ that exchanged the sheets. The relativistic spectrum is symmetric under it; the non-relativistic spectrum is not.
+The second sheet. The zero set loses a sheet, and with it the discrete reflection $\nu_t^{\prime}\to-\nu_t^{\prime}$ that exchanged the sheets. The relativistic spectrum is symmetric under it; the non-relativistic spectrum is not.
 
 The second initial datum. The equation is order one in time, so one datum suffices, and the datum that would have carried the negative-frequency amplitude has nowhere to go.
 
@@ -313,7 +313,7 @@ What is not lost. The dispersion relation, to the order the limit keeps, and its
 
 Everything here is at one wave number in a homogeneous medium, as in the two preceding articles. A position-dependent potential makes the symbol position-dependent, the level set a surface in a bundle, and the Galilean invariance of §*Why Affine and Not Linear* fails — a constant potential preserves both the affineness and the invariance, and a varying one preserves only the affineness.
 
-The region of validity is $\lvert k_{\mathrm{s}}\rvert\ll2k_m$, not $c\to\infty$. Setting $c\to\infty$ would contradict the Maxwell equations that supply $k_m$, as *The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form* says. The limit is taken on the state: the excess of the energy over rest is small compared with twice the rest energy, and the truncation error is exactly $\frac{\gamma-1}{2}$ relative. At $\beta=0.01$ that is $2.5\times10^{-5}$; at $\beta=0.1$ it is $2.5\times10^{-3}$; at $\beta=0.5$ it is $7.7\times10^{-2}$ and the word approximation has stopped being useful.
+The region of validity is $\lvert \nu_{\mathrm{s}}\rvert\ll2\nu_m$, not $c\to\infty$. Setting $c\to\infty$ would contradict the Maxwell equations that supply $\nu_m$, as *The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form* says. The limit is taken on the state: the excess of the energy over rest is small compared with twice the rest energy, and the truncation error is exactly $\frac{\gamma-1}{2}$ relative. At $\beta=0.01$ that is $2.5\times10^{-5}$; at $\beta=0.1$ it is $2.5\times10^{-3}$; at $\beta=0.5$ it is $7.7\times10^{-2}$ and the word approximation has stopped being useful.
 
 The dimension two quoted for the module is the two of $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^{2}$, which is the spin-$\tfrac{1}{2}$ module of *The Schrödinger Equation in Biquaternionic Form*. A scalar wave function gives dimension one and a different table; every statement about the rank is a statement about the module, and the article says so where it uses one.
 
@@ -321,32 +321,32 @@ The article shows that the reduced equation has one sheet and one datum. It does
 
 ## Summary
 
-The Klein–Gordon symbol is a scalar, $\sigma_{\mathcal{P}}=k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$: quadratic in the energy, with a constant offset, homogeneous of degree two only when the mass is scaled with it, and with a two-sheeted zero set that is a level set of the quadratic form $k_{t}^{\prime\,2}-k_{\Phi}^{2}$. The graded rank of three or two belongs to the first-order symbol $i\tilde K_\Phi$ and not to it. Written in the excess of the energy over rest, $k_{\mathrm{s}}=k_{t}^{\prime}-k_m$, it factors exactly as $\sigma_{\mathcal{P}}=2k_m\sigma_{\mathrm{s}}+k_{\mathrm{s}}^{2}$ with $\sigma_{\mathrm{s}}=k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$, and the second term is the whole of what the Galilean limit drops.
+The Klein–Gordon symbol is a scalar, $\sigma_{\mathcal{P}}=\nu_t^{\prime\,2}-\nu_{\Phi}^{2}-\nu_m^{2}$: quadratic in the energy, with a constant offset, homogeneous of degree two only when the mass is scaled with it, and with a two-sheeted zero set that is a level set of the quadratic form $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}$. The graded rank of three or two belongs to the first-order symbol $i\tilde\Upsilon_\Phi$ and not to it. Written in the excess of the energy over rest, $\nu_{\mathrm{s}}=\nu_t^{\prime}-\nu_m$, it factors exactly as $\sigma_{\mathcal{P}}=2\nu_m\sigma_{\mathrm{s}}+\nu_{\mathrm{s}}^{2}$ with $\sigma_{\mathrm{s}}=\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$, and the second term is the whole of what the Galilean limit drops.
 
-The symbol $\sigma_{\mathrm{s}}$ is affine: one homogeneous piece of degree one and one of degree two, no single degree, and a non-vanishing offset. It is not linear, and it cannot be, because the Galilei boost law carries the quadratic term $\frac{1}{2}k_m\beta_b^{2}$ and a degree-one symbol cannot absorb it. Among symbols of degree at most one in the energy and at most two in the momentum, the invariant family is two-dimensional, $c\,\sigma_{\mathrm{s}}+d$, with the two wave-number coefficients locked at $a=-2ck_m$ and the additive constant free. The constant is a constant potential, which the boost phase absorbs exactly, so it is the same freedom seen from the two sides; fixing the zero of the energy at $d=0$ leaves the line of $\sigma_{\mathrm{s}}$. Setting $c=0$ leaves only constants, which have no dispersion, so there is no invariant symbol of degree one in the wave numbers other than zero. **Every invariant shape of these degrees is affine.**
+The symbol $\sigma_{\mathrm{s}}$ is affine: one homogeneous piece of degree one and one of degree two, no single degree, and a non-vanishing offset. It is not linear, and it cannot be, because the Galilei boost law carries the quadratic term $\frac{1}{2}\nu_m\beta_b^{2}$ and a degree-one symbol cannot absorb it. Among symbols of degree at most one in the energy and at most two in the momentum, the invariant family is two-dimensional, $c\,\sigma_{\mathrm{s}}+d$, with the two wave-number coefficients locked at $a=-2c\nu_m$ and the additive constant free. The constant is a constant potential, which the boost phase absorbs exactly, so it is the same freedom seen from the two sides; fixing the zero of the energy at $d=0$ leaves the line of $\sigma_{\mathrm{s}}$. Setting $c=0$ leaves only constants, which have no dispersion, so there is no invariant symbol of degree one in the wave numbers other than zero. **Every invariant shape of these degrees is affine.**
 
-The degree fixes one integer appearing three times: the order in the energy, the number of sheets, and the number of initial data. Two for the relativistic symbol and one for the Schrödinger symbol. The two sheets are separated by $2\sqrt{k_m^{2}+k_{\Phi}^{2}}$, at least $2k_m$, so the discarded sheet sits at $k_{\mathrm{s}}\approx-2k_m$ and is excluded by the region $\lvert k_{\mathrm{s}}\rvert\ll2k_m$ in which the truncation holds rather than by a declaration. The gap is the mass, and a massless theory would have no such region.
+The degree fixes one integer appearing three times: the order in the energy, the number of sheets, and the number of initial data. Two for the relativistic symbol and one for the Schrödinger symbol. The two sheets are separated by $2\sqrt{\nu_m^{2}+\nu_{\Phi}^{2}}$, at least $2\nu_m$, so the discarded sheet sits at $\nu_{\mathrm{s}}\approx-2\nu_m$ and is excluded by the region $\lvert \nu_{\mathrm{s}}\rvert\ll2\nu_m$ in which the truncation holds rather than by a declaration. The gap is the mass, and a massless theory would have no such region.
 
 The scalar symbol has no graded rank. Its left multiplication is invertible off the paraboloid and zero on it, so the rank is the module's dimension or nothing, and the budget rank plus cokernel closes at the module's dimension instead of at four. **The polarisation count therefore changes its origin: relativistically it is the rank of a first-order element, non-relativistically it is the dimension of the module.** That is the deepest thing the limit does, and it is invisible in the two counts themselves, which are both two.
 
-The condition on the source is homogeneous in either variable, and the symbol is not. $\vec k_\Phi\cdot\vec J=k_{t}^{\prime}c\rho$ and $\vec k_\Phi\cdot\vec J=k_{\mathrm{s}}c\rho$ are one equation with one current, read at the frequency of the field with the rest clock and at the frequency of the field without it; the term $k_mc\rho$ appears only when the current of one is paired with the frequency of the other. The shift changes the operator and with it the degree of the symbol, and it does not change the current, so the affineness of the symbol and the homogeneity of the condition are independent statements and neither implies the other. What survives the shift unchanged is the identification: the functional, the element $\tilde K_\Phi^{\natural}$, and the vanishing that defines admissibility are the same objects in either variable. What does not survive is the second member of the cokernel, which needed a vector-valued and non-central symbol and has neither.
+The condition on the source is homogeneous in either variable, and the symbol is not. $\vec\nu_\Phi\cdot\vec J=\nu_t^{\prime}c\rho$ and $\vec\nu_\Phi\cdot\vec J=\nu_{\mathrm{s}}c\rho$ are one equation with one current, read at the frequency of the field with the rest clock and at the frequency of the field without it; the term $\nu_mc\rho$ appears only when the current of one is paired with the frequency of the other. The shift changes the operator and with it the degree of the symbol, and it does not change the current, so the affineness of the symbol and the homogeneity of the condition are independent statements and neither implies the other. What survives the shift unchanged is the identification: the functional, the element $\tilde\Upsilon_\Phi^{\natural}$, and the vanishing that defines admissibility are the same objects in either variable. What does not survive is the second member of the cokernel, which needed a vector-valued and non-central symbol and has neither.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\sigma_{\mathcal{P}}$ | the symbol of $\Box_\Phi-k_m^{2}$, $k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$; a complex number |
+| $\sigma_{\mathcal{P}}$ | the symbol of $\Box_\Phi-4\pi^{2}\nu_m^{2}$, $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}-\nu_m^{2}$; a complex number |
 | $\mathcal{S}$ | the operator with symbol $\sigma_{\mathrm{s}}$; first order in $r'_t$, second in space |
-| $k_{\mathrm{s}}$ | the energy above rest, $k_{t}^{\prime}-k_m=(E-mc^{2})\frac{2\pi}{h\,c}$ |
-| $\sigma_{\mathrm{s}}$ | the Schrödinger symbol, $k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$; affine |
-| $k_m$ | the mass wave number, $\frac{2\pi mc}{h}$; the gap between the two sheets at zero momentum |
-| $k_{t}^{\prime}$ | the energy wave number, $\frac{2\pi E}{h\,c}$ |
-| $k_{\Phi}$ | the modulus of the momentum wave number, $\frac{2\pi \lvert\vec p\rvert}{h}$ |
-| $\vec\beta_b$ | the boost velocity in units of $c$; its square enters the boost law with the coefficient $\frac{1}{2}k_m$ |
-| $a$, $c$, $d$ | the coefficients of $k_{\mathrm{s}}$, $k_{\Phi}^{2}$ and the constant in a trial symbol; invariance forces $a=-2ck_m$ and leaves $d$ free |
+| $\nu_{\mathrm{s}}$ | the energy above rest, $\nu_t^{\prime}-\nu_m=(E-mc^{2})\frac{2\pi}{h\,c}$ |
+| $\sigma_{\mathrm{s}}$ | the Schrödinger symbol, $\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$; affine |
+| $\nu_m$ | the mass wave number, $\frac{m\,c}{h}$; the gap between the two sheets at zero momentum |
+| $\nu_t^{\prime}$ | the energy wave number, $\frac{E}{h\,c}$ |
+| $\nu_{\Phi}$ | the modulus of the momentum wave number, $\frac{2\pi \lvert\vec p\rvert}{h}$ |
+| $\vec\beta_b$ | the boost velocity in units of $c$; its square enters the boost law with the coefficient $\frac{1}{2}\nu_m$ |
+| $a$, $c$, $d$ | the coefficients of $\nu_{\mathrm{s}}$, $\nu_{\Phi}^{2}$ and the constant in a trial symbol; invariance forces $a=-2c\nu_m$ and leaves $d$ free |
 | $\lambda$ | the scaling parameter that tests homogeneity |
 | $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ | the state module, $\cong\mathbb{C}^{2}$; the domain on which the rank statements are made |
-| $k_{\mathrm{s},\pm}$ | the two roots, $-k_m\pm\sqrt{k_m^{2}+k_{\Phi}^{2}}$ |
+| $\nu_{\mathrm{s},\pm}$ | the two roots, $-\nu_m\pm\sqrt{\nu_m^{2}+\nu_{\Phi}^{2}}$ |
 | $\rho$, $\vec J$ | the charge density and the current density of $\tilde J_\Phi=ic\rho\,e_t+\vec J$ |
 
 ## Further Reading
@@ -363,6 +363,6 @@ The condition on the source is homogeneous in either variable, and the symbol is
 
 *The First-Order Root of the Biquaternion Klein–Gordon Operator* for the operator whose symbol is $\sigma_{\mathcal{P}}$ and for the block determinant that makes it scalar.
 
-*The Three Wavenumbers of a Particle* for the relation between $k_{t}^{\prime}$, $k_{\Phi}$ and $k_m$ that the affine relation approximates.
+*The Three Wavenumbers of a Particle* for the relation between $\nu_t^{\prime}$, $\nu_{\Phi}$ and $\nu_m$ that the affine relation approximates.
 
 *Maxwell's Equations in the Biquaternionic Formulation* for the covariant continuity equation whose non-relativistic limit is the last section's linear relation.

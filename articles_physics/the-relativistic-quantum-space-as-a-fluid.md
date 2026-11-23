@@ -40,23 +40,23 @@ with the basis $e_t=1$ and $\vec e_\eta^{2}=-e_t$. Nothing stands behind the ele
 The two equations of the block are the algebra's own operators acting on that element. The scalar case is the biquaternionic Klein–Gordon equation
 
 $$
-\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi=0,
-\qquad k_m=\frac{2\pi mc}{h},
+\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde\Xi=0,
+\qquad \nu_m=\frac{mc}{h},
 $$
 
 where $\Box_\Phi$ is central with real coefficients, so the one biquaternion equation is four complex equations, one per coefficient. The spinor case is the biquaternionic Dirac equation, one element acting on another by left multiplication,
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_{R}=k_m\,\tilde\Xi_{L},
+\tilde\nabla_\Phi\tilde\Xi_{R}=2\pi\nu_m\,\tilde\Xi_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_m\,\tilde\Xi_{R}.
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=2\pi\nu_m\,\tilde\Xi_{R}.
 $$
 
 Both are the subjects of their own articles ([the Klein–Gordon equation in biquaternionic form](the-klein-gordon-equation-in-biquaternionic-form.html), [the Dirac equation in biquaternionic form](the-dirac-equation-in-biquaternionic-form.html)), and this article reads neither derivation.
 
 "Relativistic" is a property of the algebra and not an add-on. A Lorentz transformation is invertible acting by multiplication, $\tilde\Xi\mapsto\tilde M\tilde\Xi$ with $N(\tilde M)=1$, and the quaternionic norm $N=\langle\tilde\Xi\rangle_{\natural}$ is central, so it is carried into itself. The d'Alembertian is central. Nothing is added to make the equation covariant; the covariance is the multiplication.
 
-"Quantum" in this block is quantum-mechanical and not quantized. The constant $\frac{h}{2\pi}$ enters twice: through the wave number $k_m=\frac{2\pi mc}{h}$, and through the phase, which carries the action in units of $\frac{h}{2\pi}$. One field is present. There is no Fock space, no creation operator, no vacuum state and no trace. The block is first-quantized throughout, and the quantized field is the subject of *Biquaternion Quantum Fields*.
+"Quantum" in this block is quantum-mechanical and not quantized. The constant $\frac{h}{2\pi}$ enters twice: through the wave number $\nu_m=\frac{mc}{h}$, and through the phase, which carries the action in units of $\frac{h}{2\pi}$. One field is present. There is no Fock space, no creation operator, no vacuum state and no trace. The block is first-quantized throughout, and the quantized field is the subject of *Biquaternion Quantum Fields*.
 
 ## Why a Fluid Is the Right Word
 
@@ -130,11 +130,11 @@ $$
 
 The complement is the zero-divisor cone, a complex hypersurface: two real conditions, of real codimension two and of measure zero. There is no third case and no extension of the word to $N=0$.
 
-The domain is a condition at each event, not an invariant of the flow. $N(\tilde\Xi)\neq0$ is asked of the element at an event and is not conserved. The Klein–Gordon equation is second order, so a field that vanishes with a non-zero time derivative is off the nodal set at once: with $\Xi_t(0,x)=0$, $\partial_{t'}\Xi_t(0,x)$ an invertible element packet of width $2$ and $k_m=1$, the maximum modulus is $0.050$ at $t=0.05$ and $0.198$ at $t=0.2$. The Dirac field leaves the cone too, because the mass couples the two chiral pieces and a field carrying one piece alone does not keep one piece alone; [Why Biquaternions?](why-biquaternions.html) records the check, the modulus of the determinant rising from zero to $0.196$ at $t=0.2$ and $0.369$ at $t=0.4$. Only the Schrödinger flow, which is left multiplication by an invertible element, has a multiplicative norm and a preserved cone. So the word is a chart on the field at an event, and the field can leave the chart's domain without leaving the equation.
+The domain is a condition at each event, not an invariant of the flow. $N(\tilde\Xi)\neq0$ is asked of the element at an event and is not conserved. The Klein–Gordon equation is second order, so a field that vanishes with a non-zero time derivative is off the nodal set at once: with $\Xi_t(0,x)=0$, $\partial_{t'}\Xi_t(0,x)$ an invertible element packet of width $2$ and $2\pi\nu_m=1$, the maximum modulus is $0.050$ at $t=0.05$ and $0.198$ at $t=0.2$. The Dirac field leaves the cone too, because the mass couples the two chiral pieces and a field carrying one piece alone does not keep one piece alone; [Why Biquaternions?](why-biquaternions.html) records the check, the modulus of the determinant rising from zero to $0.196$ at $t=0.2$ and $0.369$ at $t=0.4$. Only the Schrödinger flow, which is left multiplication by an invertible element, has a multiplicative norm and a preserved cone. So the word is a chart on the field at an event, and the field can leave the chart's domain without leaving the equation.
 
 For the scalar field the cone is the nodal set. On the centre $\langle\tilde\Xi\rangle_{\natural}=\Xi_t^{2}$, so $N=0$ iff $\Xi_t=0$. The word fails exactly where the wave has a node, and what fails there is the differentiability of the action, not the density, which vanishes with it.
 
-For the spinor field the cone is strictly larger than the nodal set. Two families of fields lie on the cone with a density that is nowhere zero. A part of definite value, $\tilde X\vec e_z=\pm i\tilde X$, is a zero divisor at every amplitude, because $\tilde X(\vec e_z\mp ie_t)=0$ and the bracket is not zero. A one-sided plane wave, $\tilde K_{\Phi}\tilde\Xi_{0}=0$ with $\tilde K_{\Phi}$ null, has $N(\tilde\Xi_{0})=0$ everywhere: a null $\tilde K_{\Phi}$ is itself a non-zero zero divisor, it annihilates $\tilde\Xi_{0}$, and an element annihilated by a non-zero element is a zero divisor.
+For the spinor field the cone is strictly larger than the nodal set. Two families of fields lie on the cone with a density that is nowhere zero. A part of definite value, $\tilde X\vec e_z=\pm i\tilde X$, is a zero divisor at every amplitude, because $\tilde X(\vec e_z\mp ie_t)=0$ and the bracket is not zero. A one-sided plane wave, $\tilde\Upsilon_{\Phi}\tilde\Xi_{0}=0$ with $\tilde\Upsilon_{\Phi}$ null, has $N(\tilde\Xi_{0})=0$ everywhere: a null $\tilde\Upsilon_{\Phi}$ is itself a non-zero zero divisor, it annihilates $\tilde\Xi_{0}$, and an element annihilated by a non-zero element is a zero divisor.
 
 What survives on the cone is the two-factor decomposition. Every element factors as $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a partial isometry, and that factorisation is defined on the whole algebra. The four-factor word is the finer decomposition, and it is the one a fluid needs, because only it separates the velocity from the spin.
 
@@ -221,7 +221,7 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | The current |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde S_{\Psi}$ | The spin element, Hermitian |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | Sign of the scalar part against the modulus; $\pm1$ on $\Sigma_{10}$, where the scalar case sits; $\varrho\,e^{i\theta_{\mathrm{pha}}}$ |
 | $c$ | The limiting speed of the frame structure |
 

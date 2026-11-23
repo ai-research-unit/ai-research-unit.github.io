@@ -7,7 +7,7 @@ The answer in three sentences. Expand the Dirac field about its rest phase, $\ti
 What this article is not. It is not a derivation of the anomalous moment, which needs the quantised theory; it is not a discussion of the fine structure, which is the next order; and it is not a replacement for the polar companion, which writes the same limit in the chart's variables. It is the element-form limit, with its error term stated.
 
 ## Conventions
-The conventions are the Dirac and Schrödinger parents', and the limit is what makes them meet. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$; the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iq}{h}\tilde A_\Phi$; $k_m=\frac{2\pi mc}{h}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the measure $\mathrm{d}^{4}r$.
+The conventions are the Dirac and Schrödinger parents', and the limit is what makes them meet. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$; the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iq}{h}\tilde A_\Phi$; $\nu_m=\frac{mc}{h}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the measure $\mathrm{d}^{4}r$.
 
 Two symbols are specific to the limit. The rest phase is $\exp(-ik_m r'_t)$, and the residual field $\tilde\chi$ is defined by $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$; it varies on the slow scale $r'_t$ and its time derivative is of order $1/m$ relative to the mass term. The spin direction is $\vec n_{\mathrm{rot}}$, the rotor's axis, and the spin vector is $\vec S=\frac{h}{4\pi}\vec n_{\mathrm{rot}}$. The magnetic field is the vector part of $\tilde F$, $\vec B=\mu\vec H$.
 ## The Action in Element Form
@@ -19,9 +19,9 @@ $$
 
 with $\tilde\nabla_\Phi^{\mathrm{mech}}=\tilde\nabla_\Phi-\frac{2\pi iq}{h}\vec A$ the mechanical gradient restricted to the spatial part, and $\vec S=\frac{h}{4\pi}\vec n_{\mathrm{rot}}$.
 
-The first computation is the kinetic term. The cross term between the rest phase and the slow derivative is $-ik_m\mathrm{Sc}[\tilde\chi^{*}\partial_{r'_t}\tilde\chi]$, and the mass term contributes $+k_m^{2}\mathrm{Sc}[\tilde\chi^{*}\tilde\chi]$ up to the sign convention of the display. Together with the spatial gradient's $-\mathrm{Sc}[(\partial\tilde\chi)^{*}\partial\tilde\chi]$ and the factor $\frac{h^{2}}{4\pi^{2}}/2m$ obtained by dividing the sum by $2k_m$, this is the Schrödinger action of the corpus's parent.
+The first computation is the kinetic term. The cross term between the rest phase and the slow derivative is $-ik_m\mathrm{Sc}[\tilde\chi^{*}\partial_{r'_t}\tilde\chi]$, and the mass term contributes $+\nu_m^{2}\mathrm{Sc}[\tilde\chi^{*}\tilde\chi]$ up to the sign convention of the display. Together with the spatial gradient's $-\mathrm{Sc}[(\partial\tilde\chi)^{*}\partial\tilde\chi]$ and the factor $\frac{h^{2}}{4\pi^{2}}/2m$ obtained by dividing the sum by $2\nu_m$, this is the Schrödinger action of the corpus's parent.
 
-The second computation is the moment. The spatial part of the covariant derivative does not commute with the fixed spin direction: it is a rotation of $\vec n_{\mathrm{rot}}$ as well as a translation of the field, and the commutator of two such derivatives is the field strength. Eliminating the small component at order $1/k_m$ therefore produces one term proportional to the spin and to $\vec B$, with the coefficient $\frac{h}{2\pi 2m}$ from the elimination and the factor $q$ from the two covariant derivatives. Multiplying by the density and reading off the coefficient of $\vec B$ gives $\vec\mu=\frac{q h}{4\pi m}\vec n_{\mathrm{rot}}=2\frac{q}{2m}\vec S$: the moment with $g=2$.
+The second computation is the moment. The spatial part of the covariant derivative does not commute with the fixed spin direction: it is a rotation of $\vec n_{\mathrm{rot}}$ as well as a translation of the field, and the commutator of two such derivatives is the field strength. Eliminating the small component at order $1/\nu_m$ therefore produces one term proportional to the spin and to $\vec B$, with the coefficient $\frac{h}{2\pi 2m}$ from the elimination and the factor $q$ from the two covariant derivatives. Multiplying by the density and reading off the coefficient of $\vec B$ gives $\vec\mu=\frac{q h}{4\pi m}\vec n_{\mathrm{rot}}=2\frac{q}{2m}\vec S$: the moment with $g=2$.
 
 Why no other term appears. The elimination is exact to the order kept, so any additional spin-field coupling would have to come from a term the Dirac action does not have. The Dirac action has one derivative and one mass, so it has one moment, and the limit inherits exactly one.
 
@@ -35,7 +35,7 @@ The selection rule. Declared. The fields are fixed external fields, not a potent
 
 The expansion parameter is $1/m$, and the expansion is in the rest frame. Write $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$ and insert it into the Dirac action. The mass term cancels the rest phase's contribution exactly, and the derivative brings down $-ik_m$ plus $\partial_{r'_t}$, so each occurrence of $\partial_{r'_t}\tilde\Xi$ becomes $\bigl(-ik_m+\partial_{r'_t}\bigr)\tilde\chi$.
 
-What is kept. Terms of order $k_m$ — the mass term and the cross term between $-ik_m$ and the slow derivative, which is the Schrödinger kinetic term after the cancellation. Terms of order one — the spatial gradients and the connection's spatial part. Terms of order $1/k_m$ — the second time derivative of $\tilde\chi$, which is the relativistic correction and is dropped.
+What is kept. Terms of order $\nu_m$ — the mass term and the cross term between $-ik_m$ and the slow derivative, which is the Schrödinger kinetic term after the cancellation. Terms of order one — the spatial gradients and the connection's spatial part. Terms of order $1/\nu_m$ — the second time derivative of $\tilde\chi$, which is the relativistic correction and is dropped.
 
 What is dropped. Three things, and each is named because a limit that does not name its error is not a limit. The second time derivative of the residual field: order $1/m$. The negative-energy branch: it is not expanded, it is discarded, and its discarding is the content of "one particle". And the field's own back-reaction on the connection: the limit treats $\tilde A_\Phi$ as fixed, so it is a limit of the matter action at fixed field.
 
@@ -123,7 +123,7 @@ $$
 | $e_t=1,\ \vec e_{\imath}^{2}=-e_t$ | Basis and its squares |
 | $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$ | Rest-phase decomposition |
 | $\tilde\chi$ | Residual (non-relativistic) field |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $\tilde\nabla_\Phi^{\mathrm{mech}}$ | Mechanical gradient, $\tilde\nabla_\Phi-\frac{2\pi iq}{h}\vec A$ |
 | $\vec n_{\mathrm{rot}},\ \vec S=\frac{h}{4\pi}\vec n_{\mathrm{rot}}$ | Spin direction and spin vector |
 | $\vec B=\mu\vec H$ | Magnetic induction |

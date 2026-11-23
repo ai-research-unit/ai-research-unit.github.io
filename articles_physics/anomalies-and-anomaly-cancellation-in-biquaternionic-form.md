@@ -74,11 +74,11 @@ The chiral weight is settled by $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ in th
 **The current and the equation it belongs to.** The corpus's Dirac pair is
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\,\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\,\tilde{Ξ}_{L},
 $$
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\,\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\,\tilde{Ξ}_{R},
 $$
 
 one equation per chirality, both sides biquaternions; the first is the right-handed equation and the second is its quaternion conjugate. At $m=0$ the pair decouples,
@@ -91,7 +91,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0,
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 and each equation is identical in form to the source-free Maxwell equation; the mass is what ties the two chiralities together, and it is the only term that does.
 
@@ -449,7 +449,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathsf{V}_{\mathrm{vol}}:\ Q\mapsto-iQ\vec e_z$ | The basis operator; $i$ times the fifth basis operator |
 | $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}$ | Dirac adjoint; a pairing of two states, not an action |
 | $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ | The chirality-weighted trace of the identity vanishes |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The one-sided Dirac pair, one equation per chirality |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | The one-sided Dirac pair, one equation per chirality |
 | $(\tilde\nabla_\Phi)^{\natural}F=-im\bar{F}\vec e_z$ | Two-sided Dirac equation; the mass term is the basis operator applied to $\bar{F}$ |
 | $-R_{\mathrm{axf},\vec e_z}$, the four frame basis operators composed in the order $z,y,x,t$ | The fifth basis operator; the basis operator is $i$ times it |
 | $\mathrm{tr}$, $\mathrm{Tr}_R$ | The diagonal sum of a $4\times4$ matrix standing in the same display, and of the matrix of the gauge representation |

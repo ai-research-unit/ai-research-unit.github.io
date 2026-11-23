@@ -20,12 +20,12 @@ The article proceeds as follows. A section states why the time slicing fails, in
 
 The construction of the kernel is the one of *The Path Integral in Biquaternionic Form*: divide the time $T$ into $N$ steps of length $\varepsilon=T/N$, use the short-time kernel
 $$
-G_{\mathrm{prop},\varepsilon}(r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\Big(\frac{k_m}{2\pi i c\varepsilon}\Big)^{3/2}
+G_{\mathrm{prop},\varepsilon}(r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\Big(\frac{2\pi\nu_m}{2\pi i c\varepsilon}\Big)^{3/2}
 \exp(i\theta_{\mathrm{cou}})+O(\varepsilon^2),
 $$
 The display carries the short-time angle $\theta_{\mathrm{cou}}=\frac{2\pi}{h}\big(\frac{m\lvert\vec r_{\mathrm{src}}-\vec r\rvert^2}{2\varepsilon}-\varepsilon\,V(\vec r)\big)$, real because the mass, the displacement, the step and the potential are real. Take the limit $N\to\infty$ of the product with the intermediate positions integrated.
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **The failure.** For $V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\kappa/r$ the potential term is $+\kappa\varepsilon/r$ in the exponent, so for a path that passes within a distance $\lesssim\frac{2\pi \kappa\,\varepsilon}{h}$ of the origin the phase is not small, and the expansion of the potential to first order in $\varepsilon$ — the step that produces the Schrödinger equation in *The Path Integral and the Schrödinger Equation in Biquaternionic Form* — is not controlled. The Gaussian in the kinetic term has width $\sqrt{\frac{h\,\varepsilon}{2\pi m}}$, so the slices that approach the origin are precisely the ones the kinetic term does not suppress, and the naive limit is not a well-defined kernel. This is the reason the source states that the time-sliced approximation "does not exist" for the Coulomb potential.
 

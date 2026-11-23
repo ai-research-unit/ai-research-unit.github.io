@@ -87,8 +87,8 @@ The current separates into a transport part and a magnetisation part. The Gordon
 
 $$
 \bar{\tilde\Xi}\,i\,e_{\imath}\,\tilde\Xi\,\vec e_{\mathrm{spt}(\imath)}
-=\frac{i}{2k_m}\Big(\bar{\tilde\Xi}\,\partial_{\imath}\tilde\Xi-\overline{\partial_{\imath}\tilde\Xi}\,\tilde\Xi\Big)
-+\frac{1}{k_m}\sum_{\jmath}\varepsilon_{\jmath}\,\partial_{\jmath}\Big(\bar{\tilde\Xi}\,\Sigma_{\imath\jmath}\tilde\Xi\Big),
+=\frac{i}{4\pi\nu_m}\Big(\bar{\tilde\Xi}\,\partial_{\imath}\tilde\Xi-\overline{\partial_{\imath}\tilde\Xi}\,\tilde\Xi\Big)
++\frac{1}{2\pi\nu_m}\sum_{\jmath}\varepsilon_{\jmath}\,\partial_{\jmath}\Big(\bar{\tilde\Xi}\,\Sigma_{\imath\jmath}\tilde\Xi\Big),
 $$
 
 with $\Sigma_{\imath\jmath}$ the spin generator. The first term is the convection current and carries the field's own first derivative; the second is the divergence of the antisymmetric spin density and is a bound current: it is conserved by antisymmetry alone, contributes nothing to the total charge, and cannot be removed from the magnetic moment. The article's own words are that the split separates a transport current from a magnetisation current, and not a conserved piece from a non-conserved piece.
@@ -109,7 +109,7 @@ $$
 v_{\Phi,\imath}=\frac{1}{m}\frac{\partial S_{\tilde\Xi}}{\partial R_{\imath}},
 $$
 
-and the last display is the component spelling of the element, on the pattern of $k_{\Phi,\imath}$. The index stays low and labels a direction. Since partial derivatives commute,
+and the last display is the component spelling of the element, on the pattern of $\nu_{\Phi,\imath}$. The index stays low and labels a direction. Since partial derivatives commute,
 
 $$
 \frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}}-\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}
@@ -389,7 +389,7 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$ | Four-momentum of the scalar field |
 | $S_{\tilde\Xi}$ | Action of the scalar field |
 | $\theta_{\mathrm{phs}}$ | $\frac{2\pi S_{\tilde\Xi}}{h}$, the spinor phase that the exponential carries |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $\Sigma_{\imath\jmath}$ | Spin generator of the Gordon decomposition |
 | $\varepsilon_{\imath}$ | Sign weight, $+1$ temporal and $-1$ spatial |
 | $\langle\tilde Q\rangle_{\natural}$ | Quaternionic norm |

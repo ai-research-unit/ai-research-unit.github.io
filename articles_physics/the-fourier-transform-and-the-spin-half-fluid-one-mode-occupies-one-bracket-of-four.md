@@ -42,16 +42,16 @@ $$
 M_{\imath\jmath}\propto\bar\Xi\,\Sigma_{\imath\jmath}\Xi ,
 $$
 
-with the bilinear of [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), whose momentum-space form states that the magnetisation term is proportional to the momentum transfer $k_{\jmath}=(p_2-p)_{\jmath}$. The symbol rule is the scalar rung's, applied slot by slot.
+with the bilinear of [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), whose momentum-space form states that the magnetisation term is proportional to the momentum transfer $2\pi\nu_{\jmath}=(p_2-p)_{\jmath}$. The symbol rule is the scalar rung's, applied slot by slot.
 
 ## A Mode Occupies One Bracket of Four
 
 A mode is a point of the momentum space, one element of $\mathbb{B}_\Psi$ attached to it, and nothing else.
 
 $$
-\tilde\Xi(x)=\tilde w(\vec k_\Phi)\,e^{-i\theta_{\mathrm{pwp}}},
+\tilde\Xi(x)=\tilde w(2\pi\vec\nu_\Phi)\,e^{-i\theta_{\mathrm{pwp}}},
 \qquad
-\theta_{\mathrm{pwp}}=k_t'r_t'-\vec k_\Phi\cdot\vec r .
+\theta_{\mathrm{pwp}}=2\pi\nu_t'r_t'-2\pi\vec\nu_\Phi\cdot\vec r .
 $$
 
 Read through the four-factor word, the display says that three factors are constants and the fourth is the label.
@@ -87,7 +87,7 @@ The magnetisation current of a mode is the divergence of a constant bilinear, so
 
 The fluid article's vorticity 2-form is the antisymmetrised gradient of the frame element, and a constant frame has none. So a mode is irrotational and the question is what a superposition does.
 
-The measurement. On a grid of sixty-four events with lengths in units of $1/k_m$ and momenta in units of $mc$, one mode at $\vec k_\Phi=(0.6,0)$ gave $\max\lvert\nabla\times\vec v\rvert=3.8\times10^{-17}$ — machine zero. Two modes at $\vec k_\Phi=(0.6,0)$ and $(0.6,\Delta_\Phi)$, amplitudes $1.0$ and $0.8$, same spin, gave
+The measurement. On a grid of sixty-four events with lengths in units of $1/\nu_m$ and momenta in units of $mc$, one mode at $2\pi\vec\nu_\Phi=(0.6,0)$ gave $\max\lvert\nabla\times\vec v\rvert=3.8\times10^{-17}$ — machine zero. Two modes at $2\pi\vec\nu_\Phi=(0.6,0)$ and $(0.6,\Delta_\Phi)$, amplitudes $1.0$ and $0.8$, same spin, gave
 
 | $\Delta_\Phi$ | $\max\lvert\nabla\times\vec v\rvert$ | the density's range |
 | --- | --- | --- |
@@ -95,7 +95,7 @@ The measurement. On a grid of sixty-four events with lengths in units of $1/k_m$
 | $0.4$ | $1.14\times10^{-1}$ | $1.013$ to $7.563$ |
 | $0.6$ | $7.63\times10^{-1}$ | $0.171$ to $7.554$ |
 
-The vorticity and the density's modulation grow together, and both grow with the separation. That is what the Gordon form predicts: the magnetisation term carries the momentum transfer $k_{\jmath}$ as a factor, so a pair of neighbouring wave numbers has a small magnetisation and a pair of distant ones has a large one. **The vorticity of this fluid is a statement about a pair of wave numbers and about their distance**, and the article's one number, $3.8\times10^{-17}$ against $0.763$, is the difference between the diagonal and the off-diagonal.
+The vorticity and the density's modulation grow together, and both grow with the separation. That is what the Gordon form predicts: the magnetisation term carries the momentum transfer $\nu_{\jmath}$ as a factor, so a pair of neighbouring wave numbers has a small magnetisation and a pair of distant ones has a large one. **The vorticity of this fluid is a statement about a pair of wave numbers and about their distance**, and the article's one number, $3.8\times10^{-17}$ against $0.763$, is the difference between the diagonal and the off-diagonal.
 
 The objection, and the answer. The objection is that a two-mode superposition is a special field and the vorticity of a general solution is not a property of pairs. The answer is that the transform of a general solution is a measure, and the magnetisation term is bilinear in that measure, so its value at an event is an integral over pairs; a pair is the unit of the object and the general case is a sum of pairs. What the article proves is the vanishing of the diagonal, and the table is the first off-diagonal.
 
@@ -135,7 +135,7 @@ The denial. The transform carries $\mathbb{B}_\Psi$-valued fields to $\mathbb{B}
 
 ## Open Questions
 
-1. A law for the off-diagonal vorticity. Whether $\max\lvert\nabla\times\vec v\rvert$ for a pair is a function of the momentum transfer alone, at fixed amplitudes, is not settled by three rows. The Gordon form's linear factor in $k_{\jmath}$ suggests it is, and the saturation between $\Delta_\Phi=0.6$ and a larger separation suggests a bound.
+1. A law for the off-diagonal vorticity. Whether $\max\lvert\nabla\times\vec v\rvert$ for a pair is a function of the momentum transfer alone, at fixed amplitudes, is not settled by three rows. The Gordon form's linear factor in $\nu_{\jmath}$ suggests it is, and the saturation between $\Delta_\Phi=0.6$ and a larger separation suggests a bound.
 
 2. The frame's velocity against the current's. §*The Vorticity Is Inter-Mode* was measured on $\tilde J_\Phi/\rho_{\mathrm{num}}$. Whether the frame's own velocity has the same vanishing on the diagonal and the same growth off it, and whether the two differ only by a curl-free term, is not settled here.
 
@@ -147,7 +147,7 @@ A mode occupies one of the word's four brackets, the central phase, and holds th
 
 The magnetisation current of a mode is the divergence of a constant bilinear, so it vanishes. The fluid's velocity therefore equals the current over the density exactly at a mode, and the difference between them is inter-mode.
 
-The vorticity vanishes at a mode and appears at a superposition: $3.8\times10^{-17}$ at one mode, and $1.03\times10^{-2}$, $1.14\times10^{-1}$, $7.63\times10^{-1}$ at wave-number separations $0.2$, $0.4$, $0.6$ on sixty-four events. The vorticity and the density's modulation grow together, and both grow with the separation, as the Gordon form's factor $k_{\jmath}$ requires.
+The vorticity vanishes at a mode and appears at a superposition: $3.8\times10^{-17}$ at one mode, and $1.03\times10^{-2}$, $1.14\times10^{-1}$, $7.63\times10^{-1}$ at wave-number separations $0.2$, $0.4$, $0.6$ on sixty-four events. The vorticity and the density's modulation grow together, and both grow with the separation, as the Gordon form's factor $\nu_{\jmath}$ requires.
 
 The spin precession is inter-mode for the same reason and by the same table: a constant rotor does not turn, so a mode has no spin transport law. The vorticity and the spin are the closed and the open faces of one statement, and both are off-diagonal in the momentum space.
 
@@ -158,8 +158,8 @@ A mode's loop invariant is the identity. The transport's Lorentz element is ther
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The four-factor word |
-| $\theta_{\mathrm{pwp}}=k_t'r_t'-\vec k_\Phi\cdot\vec r$ | The phase of a mode |
-| $\tilde w(\vec k_\Phi)$ | The spinor carrier's element at a mode |
+| $\theta_{\mathrm{pwp}}=2\pi\nu_t'r_t'-2\pi\vec\nu_\Phi\cdot\vec r$ | The phase of a mode |
+| $\tilde w(\vec\nu_\Phi)$ | The spinor carrier's element at a mode |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | The proper density |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The four-velocity |
 | $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ | The number current |

@@ -81,10 +81,10 @@ $$
 where the third equality uses $\vec\nabla_\Phi S_{\tilde\Xi}=\frac{h}{2\pi}\nabla\theta_{\mathrm{phs}}$ and the fourth the winding. In the corpus's units the quantum of circulation is
 
 $$
-\kappa_{1}=\frac{h}{m}=\frac{2\pi c}{k_m},
+\kappa_{1}=\frac{h}{m}=\frac{2\pi c}{2\pi\nu_m},
 $$
 
-the second form using $k_m=\frac{2\pi mc}{h}$. The result is exact, it does not depend on the shape or the radius of the loop, and it does not depend on the amplitude profile: only the map's degree enters.
+the second form using $\nu_m=\frac{mc}{h}$. The result is exact, it does not depend on the shape or the radius of the loop, and it does not depend on the amplitude profile: only the map's degree enters.
 
 The object integrated is the mechanical momentum over the mass, and the three-velocity is a different integral. $\tilde V_\Phi=\tilde P_\Phi/m$ is the flow variable of the word; the physical three-velocity is $\vec v=\vec p/(m\gamma)$, so $\oint\vec v\cdot\mathrm{d}\vec l=\kappa_1 n/\gamma$ is quantised only where $\gamma$ is constant on the loop, which is [The Spin-Zero Fluid](the-spin-zero-fluid.html)'s qualification. At the first-order rung the two integrals coincide, $\vec v=\vec\nabla_\Phi S/m$ with no factor, and [The Schrödinger Fluid](the-schrodinger-fluid.html) reads the statement on $\vec v$ directly.
 
@@ -164,22 +164,22 @@ $$
 \tilde\Xi=f(r)\,e^{in\omicron_{\mathrm{ang}}}\,e^{-ik_t r'_t}\,e_t
 $$
 
-with $f$ real and positive away from the axis, $r$ the distance from the axis, $\omicron_{\mathrm{ang}}$ the angle about it and $k_t$ the temporal wave number of the ansatz, the energy being $E=\frac{h}{2\pi} c\,k_t$. The action is $S_{\tilde\Xi}=\frac{h}{2\pi}(n\omicron_{\mathrm{ang}}-k_t r'_t)$, so $\vec\nabla_\Phi S_{\tilde\Xi}=\frac{h}{2\pi} n\,\hat{\omicron_{\mathrm{azi}}}/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-\frac{h}{2\pi} k_t$.
+with $f$ real and positive away from the axis, $r$ the distance from the axis, $\omicron_{\mathrm{ang}}$ the angle about it and $\nu_t$ the temporal wave number of the ansatz, the energy being $E=\frac{h}{2\pi} c\,2\pi\nu_t$. The action is $S_{\tilde\Xi}=\frac{h}{2\pi}(n\omicron_{\mathrm{ang}}-2\pi\nu_t r'_t)$, so $\vec\nabla_\Phi S_{\tilde\Xi}=\frac{h}{2\pi} n\,\hat{\omicron_{\mathrm{azi}}}/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-h\,2\pi\nu_t$.
 
 The transport equation is satisfied identically. It reads $\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi})-\partial(\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t)/\partial r'_t=0$; the first term is the divergence of a purely azimuthal field whose magnitude depends on $r$ alone, and the second is the time derivative of a quantity that does not depend on time. Both vanish.
 
 The amplitude equation is one ordinary differential equation in $r$. With $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_t}^{2}$ and the phase above, the polar form's first equation becomes
 
 $$
-k_t^{2}-\frac{n^{2}}{r^{2}}=k_m^{2}-\frac{\Box_\Phi f}{f},
+4\pi^{2}\nu_t^{2}-\frac{n^{2}}{r^{2}}=4\pi^{2}\nu_m^{2}-\frac{\Box_\Phi f}{f},
 \qquad\text{that is}\qquad
 \frac{1}{r}\frac{\partial}{\partial r}\!\left(r\frac{\partial f}{\partial r}\right)
-=\left(k_m^{2}-k_t^{2}\right)f+\frac{n^{2}}{r^{2}}f .
+=\left(4\pi^{2}\nu_m^{2}-4\pi^{2}\nu_t^{2}\right)f+\frac{n^{2}}{r^{2}}f .
 $$
 
 The winding enters in exactly one place, the centrifugal term $+n^{2}f/r^{2}$. It is repulsive for every $n\ne0$, it forces $f$ to vanish at the axis, and the power of the vanishing is fixed by the indicial behaviour of the equation: with $f\propto r^{s}$ the balance of the two most singular terms, $s(s-1)/r^{2}$ against $n^{2}/r^{2}$, reads $s(s-1)=n^{2}$, that is $s=\lvert n\rvert$ for the regular root and $s=1-\lvert n\rvert$ for the singular one. The linear core used above is therefore the regular behaviour at $\lvert n\rvert=1$, and a core with $\lvert n\rvert\ge2$ vanishes faster.
 
-So the winding is compatible with the field equation's structure and the profile is not determined by it. The equation fixes the behaviour near the axis, fixes the decay at infinity, and leaves the constant $A$ — equivalently $k_t$ — to be selected by the condition that the two behaviours join. Whether a globally regular solution exists for given $k_t$ and $n$ is the eigenvalue question of the vortex, and for the non-relativistic case it is answered positively by the Gross–Pitaevskii literature and for the relativistic case only case by case. The corpus does not settle it and this article does not claim it.
+So the winding is compatible with the field equation's structure and the profile is not determined by it. The equation fixes the behaviour near the axis, fixes the decay at infinity, and leaves the constant $A$ — equivalently $\nu_t$ — to be selected by the condition that the two behaviours join. Whether a globally regular solution exists for given $\nu_t$ and $n$ is the eigenvalue question of the vortex, and for the non-relativistic case it is answered positively by the Gross–Pitaevskii literature and for the relativistic case only case by case. The corpus does not settle it and this article does not claim it.
 
 ## Why the Charge Is the Algebra's
 
@@ -260,7 +260,7 @@ Interpretation. That the circulation quantum $h/m$ should be read as a superflui
 
 The scalar flow is irrotational because its velocity is the gradient of the action. The closure is exact wherever the action exists, and the action fails to exist exactly where the field's value arrives on the zero-divisor set: at the cone's apex for the central scalar field, and away from the apex for a field of general value, the example $\tilde Q=\frac{1}{2}(e_t+i\vec e_x)$ having norm $\frac{1}{4}-\frac{1}{4}=0$ and not being zero. The nodal set has codimension two, so in three dimensions it is a curve and a loop can link it.
 
-Around a link the phase returns to itself up to $2\pi n$, and the circulation is $\kappa=h n/m=2\pi c n/k_m$, independent of the loop's shape and radius and of the amplitude's profile. The check at radii $0.3$, $0.8$ and $2.0$ gave the same circulation to every digit for windings $1$, $2$ and $-1$, against $2\pi n$ to $2.6\times10^{-6}$, the residual being the chord error of the polygonal loop. The integer is the degree of the field's map from the link into the central unit circle, so the charge is a class in the algebra's group of invertibles and not a property of a phase function. That is the closure of open question 2 of the scalar polar form.
+Around a link the phase returns to itself up to $2\pi n$, and the circulation is $\kappa=h n/m=2\pi c n/\nu_m$, independent of the loop's shape and radius and of the amplitude's profile. The check at radii $0.3$, $0.8$ and $2.0$ gave the same circulation to every digit for windings $1$, $2$ and $-1$, against $2\pi n$ to $2.6\times10^{-6}$, the residual being the chord error of the polygonal loop. The integer is the degree of the field's map from the link into the central unit circle, so the charge is a class in the algebra's group of invertibles and not a property of a phase function. That is the closure of open question 2 of the scalar polar form.
 
 At the node the velocity diverges as $1/r$ and the current does not: $\lvert\vec J_\Phi\rvert=A^{2}\frac{h}{2\pi}\lvert n\rvert r/m$, which vanishes there. The quantum potential diverges as $-\frac{h^{2}}{4\pi^{2}}/(2mr^{2})$ while the quantum energy density stays finite at $-A^{2}/2$, checked on a grid to nine digits. The vortex ansatz satisfies the transport equation identically, reduces the amplitude equation to one ordinary differential equation whose indicial balance $s(s-1)=n^{2}$ fixes the core's power, and leaves the existence of a globally regular solution open.
 
@@ -285,14 +285,14 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ | Vorticity 2-form |
 | $\tilde J_{\Phi}$ | Number current |
 | $\kappa=\oint\tilde V_\Phi\cdot d\vec l$ | Circulation |
-| $\kappa_1=h/m=2\pi c/k_m$ | Quantum of circulation |
+| $\kappa_1=h/m=2\pi c/\nu_m$ | Quantum of circulation |
 | $n$ | Winding number, an integer; the letter is booked here for the winding and is not the Matsubara index |
 | $r$ | Distance from the nodal axis |
 | $\omicron_{\mathrm{ang}}$ | Angle about the axis |
 | $f(r)$ | Core amplitude of the vortex ansatz |
 | $A$ | Slope of the linear core, $f=Ar$ |
-| $k_t$ | Temporal wave number of the ansatz, $E=\frac{h}{2\pi} c k_t$ |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_t$ | Temporal wave number of the ansatz, $E=\frac{h}{2\pi} c 2\pi\nu_t$ |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Quantum potential |
 | $w_{\mathrm{qnt}}$ | Quantum energy density |
 | $\Box_\Phi$ | D'Alembertian of the material sector |

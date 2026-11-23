@@ -57,9 +57,9 @@ with $\omega$ the pseudoscalar of the frame; the $i$ in front of $\omega$ is the
 **The equation.** The pair is
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
 both gradients acting from the left, with no right multiplication and no conjugation in it. The source's own equation of the transformation is a one-field equation whose operator is the gradient read with two frame factors attached, one on each side; translated once into these conventions the operator is $\tilde\nabla_\Phi$. Its square is the d'Alembertian in the source's frame factors, while the gradient's square is not scalar, so wherever a scalar square of the derivative is needed the article uses the norm $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$. No one-field first-order equation with a mass is written anywhere below.
@@ -291,10 +291,10 @@ the $\vec p^4$ term being the first relativistic correction to the kinetic energ
 **The exact form is not a differential operator.** That the identity holds exactly is a statement about the algebra, not about locality. The symbol of $\beta\sqrt{\vec p^{2}c^{2}+m^{2}c^{4}}$ is $\sqrt{k^{2}c^{2}+m^{2}c^{4}}$, which is not a polynomial in $k$ at any order, so the operator is of infinite order: written in position space it has a kernel that does not vanish off the diagonal. In one dimension the kernel is elementary,
 
 $$
-\mathcal{K}(x)=\int\!\frac{dp}{h}\;\sqrt{p^{2}c^{2}+m^{2}c^{4}}\;e^{\frac{2\pi ipx}{h}}=-\dfrac{m\,c^{2}K_{1}(k_m\lvert x\rvert)}{\pi\lvert x\rvert},
+\mathcal{K}(x)=\int\!\frac{dp}{h}\;\sqrt{p^{2}c^{2}+m^{2}c^{4}}\;e^{\frac{ipx}{h}}=-\dfrac{m\,c^{2}K_{1}(2\pi\nu_m\lvert x\rvert)}{\pi\lvert x\rvert},
 $$
 
-non-zero at every $x\neq0$ and decaying only over the reduced Compton wavelength $\dfrac{1}{k_m}$. The closed form separates the distributional part with $\frac{1}{\pi}\int_0^{\infty}k\cos(kx)\,dk=-\frac{1}{\pi x^{2}}$, what remains being conditionally convergent, and the integral was checked against it to twenty-five digits at $k_m\lvert x\rvert=0.5,1,2,3$. In three dimensions the kernel is more singular at coincidence rather than less, the difference $\sqrt{p^{2}c^{2}+m^{2}c^{4}}-pc$ falling off only as $\dfrac{m^{2}c^{3}}{2\,p}$, whose angular integral diverges. The transformation therefore trades one property for another: the Dirac Hamiltonian is local and not block-diagonal, its exact Foldy–Wouthuysen image is block-diagonal and not local, and only the truncated polynomial $\beta mc^{2}+\beta\vec p^{2}/(2m)$ is both. Locality belongs to the two ends of the chain, not to the middle. Nothing here contradicts the closed form above; it says what the closed form costs. The mean position operator below is the same non-locality read on the coordinate instead of on the Hamiltonian, since the operator that is blind to the trembling cannot itself be a multiplication by $\vec x$.
+non-zero at every $x\neq0$ and decaying only over the reduced Compton wavelength $\dfrac{1}{\nu_m}$. The closed form separates the distributional part with $\frac{1}{\pi}\int_0^{\infty}k\cos(kx)\,dk=-\frac{1}{\pi x^{2}}$, what remains being conditionally convergent, and the integral was checked against it to twenty-five digits at $2\pi\nu_m\lvert x\rvert=0.5,1,2,3$. In three dimensions the kernel is more singular at coincidence rather than less, the difference $\sqrt{p^{2}c^{2}+m^{2}c^{4}}-pc$ falling off only as $\dfrac{m^{2}c^{3}}{2\,p}$, whose angular integral diverges. The transformation therefore trades one property for another: the Dirac Hamiltonian is local and not block-diagonal, its exact Foldy–Wouthuysen image is block-diagonal and not local, and only the truncated polynomial $\beta mc^{2}+\beta\vec p^{2}/(2m)$ is both. Locality belongs to the two ends of the chain, not to the middle. Nothing here contradicts the closed form above; it says what the closed form costs. The mean position operator below is the same non-locality read on the coordinate instead of on the Hamiltonian, since the operator that is blind to the trembling cannot itself be a multiplication by $\vec x$.
 
 ## The Mean Position Operator
 
@@ -309,10 +309,10 @@ The direction of the conjugation is the content of the definition. The other ord
 The correction to each component is fixed by one commutator with the momentum. Since the right multiplication by $\vec e_y$ commutes with multiplication by a coordinate and $[\pi_\eta,Q_\eta]=-i\,\frac{h}{2\pi}$,
 
 $$
-[S_1,Q_\eta]F=-\frac{i}{2\,k_m}\,\vec e_\eta F\vec e_y,
+[S_1,Q_\eta]F=-\frac{i}{2\,2\pi\nu_m}\,\vec e_\eta F\vec e_y,
 \qquad
--i[S_1,Q_\eta]F=\frac{i^{2}}{2\,k_m}\,\vec e_\eta F\vec e_y
-=-\dfrac{1}{2\,k_m}\,\vec e_\eta F\vec e_y,
+-i[S_1,Q_\eta]F=\frac{i^{2}}{2\,2\pi\nu_m}\,\vec e_\eta F\vec e_y
+=-\dfrac{1}{2\,2\pi\nu_m}\,\vec e_\eta F\vec e_y,
 $$
 
 where $i\cdot i=-1$ once more. Hence
@@ -320,10 +320,10 @@ where $i\cdot i=-1$ once more. Hence
 $$
 \vec X=\sum_\eta X_\eta\vec e_\eta,
 \qquad
-X_kF=Q_kF-\dfrac{1}{2\,k_m}\,\vec e_\eta F\vec e_y+\cdots .
+X_kF=Q_kF-\dfrac{1}{2\,2\pi\nu_m}\,\vec e_\eta F\vec e_y+\cdots .
 $$
 
-The correction is of the order of the half reduced Compton wavelength $\dfrac{1}{2\,k_m}$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_\eta(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
+The correction is of the order of the half reduced Compton wavelength $\dfrac{1}{2\,\nu_m}$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_\eta(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
 
 $$
 \frac{d\vec X}{dr'_t}=\frac{2\pi i}{h}[H,\vec X]=U^\dagger\Bigl(\beta\frac{\vec pc^2}{E}\Bigr)U,
@@ -332,20 +332,20 @@ $$
 commutes with $H$ and therefore has no oscillatory part: in the transformed frame it is exactly the classical drift $\beta\vec pc^2/E$, and the rapid trembling of the ordinary position operator is entirely contained in the difference
 
 $$
-\vec q-\vec X=\dfrac{1}{2\,k_m}\sum_\eta\vec e_\eta(\cdot)\vec e_y+\cdots .
+\vec q-\vec X=\dfrac{1}{2\,2\pi\nu_m}\sum_\eta\vec e_\eta(\cdot)\vec e_y+\cdots .
 $$
 
-The step in the middle is one line: $UHU^\dagger=\beta E$ makes $[H,\vec X]=U^\dagger[\beta E,\vec q]U$, and $[E(\vec p),\vec q]=-\frac{i\,h\,c^{2}\,\vec p}{2\pi E}$ on a function of the momentum alone, so no derivative of the field enters. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+The step in the middle is one line: $UHU^\dagger=\beta E$ makes $[H,\vec X]=U^\dagger[\beta E,\vec q]U$, and $[E(\vec p),\vec q]=-\frac{i\,h\,c^{2}\,\vec p}{2\pi E}$ on a function of the momentum alone, so no derivative of the field enters. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the mean position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the mean position.
 
-The correction $\dfrac{1}{2\,k_m}\vec e_\eta(\cdot)\vec e_y$ is itself worth reading in the algebra. It is a frame-odd displacement: it anticommutes with $\beta$, as the generator does, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.
+The correction $\dfrac{1}{2\,\nu_m}\vec e_\eta(\cdot)\vec e_y$ is itself worth reading in the algebra. It is a frame-odd displacement: it anticommutes with $\beta$, as the generator does, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.
 
 ## The Biquaternion Reading
 
 The transformation can now be located in the two splits of the algebra, and the location is the content of the article.
 
-**The subscript is where the biquaternion pair lives.** The massive biquaternionic Dirac equation is the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$. The mass term of the Hamiltonian is $mc^2\beta$, and $\beta$ multiplies on the right by the element $\vec e_x$, which anticommutes with the chirality's $\vec e_z$; so $\beta$ reverses the value. The kinetic operator multiplies on the right by $\vec e_z$ and keeps the value. A left multiplication by a pure unit does neither: it commutes with the chirality and therefore preserves the value, and so does a right multiplication by $\vec e_z$. Only a right multiplication by $\vec e_x$ or $\vec e_y$ reverses the value. In this form the mass reverses the value and the kinetic operator keeps it; in the gradient pair of the reference article the same mass is the central coefficient $k_m$, which multiplies on the left and keeps the value. It is one coefficient read on the two sides, and the two displays are two forms of one mass, not two masses.
+**The subscript is where the biquaternion pair lives.** The massive biquaternionic Dirac equation is the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$. The mass term of the Hamiltonian is $mc^2\beta$, and $\beta$ multiplies on the right by the element $\vec e_x$, which anticommutes with the chirality's $\vec e_z$; so $\beta$ reverses the value. The kinetic operator multiplies on the right by $\vec e_z$ and keeps the value. A left multiplication by a pure unit does neither: it commutes with the chirality and therefore preserves the value, and so does a right multiplication by $\vec e_z$. Only a right multiplication by $\vec e_x$ or $\vec e_y$ reverses the value. In this form the mass reverses the value and the kinetic operator keeps it; in the gradient pair of the reference article the same mass is the central coefficient $\nu_m$, which multiplies on the left and keeps the value. It is one coefficient read on the two sides, and the two displays are two forms of one mass, not two masses.
 
 **The frame split is where the FW transformation works.** Conjugation by $\beta$ separates the mass from the kinetic term: the mass term commutes with $\beta$, and $O$ anticommutes with it. The fixed $*$-unitary of the frame is $F\mapsto Fw$ with $w=\frac{1}{\sqrt2}(i\vec e_x-i\vec e_z)$; it is its own inverse, $w^2=e_t$, and it conjugates $\beta$ into $\Gamma$ and back. The FW transformation is the momentum-dependent completion of that exchange: it conjugates the field so that the mass, which reverses the value, becomes the term that commutes with the mass grading, while the kinetic term, which keeps the value, becomes the first-order perturbation. Removing the odd part is exactly the statement that the mass is the large term and the mixing is small.
 
@@ -393,7 +393,7 @@ $$
 H_{\mathrm{Pauli}}
 &=\frac{\vec \pi^{2}}{2\,m}+ϙA_0-\frac{h\,ϙ}{4\pi \,m}\,i\vec B\\[2pt]
 &\quad-\frac{h\,ϙ}{8\pi \,m^{2}\,c^{2}}\,i(\vec E\times\vec\pi)
-+\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2(ϙA_0),
++\frac{1}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi^2(ϙA_0),
 \end{aligned}
 \;}
 $$
@@ -401,7 +401,7 @@ $$
 whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $1/(4m^2c^2)$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\bigl(\vec\pi^2-i\,\frac{h}{2\pi}\,ϙ\,\vec B\bigr)^2/(8m^3c^2)$, which is the field version of the free term $-\vec p^4/(8m^3c^2)$ displayed above. The square is taken of $O^2/c^2=\vec\pi^2-i\,\frac{h}{2\pi}\,ϙ\,\vec B$ rather than of $\vec\pi^2$, because the two differ by the Zeeman term and it is the operator the transformation actually produces. The companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework; they are quoted here as the standard content of the transformation. For the electrostatic case $\vec E=-\vec\nabla_\Phi A_0$, the Darwin term has the equivalent forms
 
 $$
-\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2(ϙA_0)=-\frac{ϙ}{8\,k_m^{2}}\vec\nabla_\Phi\cdot\vec E .
+\frac{1}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi^2(ϙA_0)=-\frac{ϙ}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi\cdot\vec E .
 $$
 
 The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, and none exchanges the two frequency parts — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
@@ -462,7 +462,7 @@ checked to machine precision by direct computation. The mean position is the ope
 $$
 \vec X=U^\dagger\vec q\,U=\sum_\eta X_\eta\vec e_\eta,
 \qquad
-X_kF=Q_kF-\dfrac{1}{2\,k_m}\,\vec e_\eta F\vec e_y+\cdots ,
+X_kF=Q_kF-\dfrac{1}{2\,2\pi\nu_m}\,\vec e_\eta F\vec e_y+\cdots ,
 $$
 
 whose Heisenberg velocity commutes with the Hamiltonian and so has no trembling term; the Zitterbewegung resides in the difference $\vec q-\vec X$.
@@ -493,7 +493,7 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $AF=i\vec u_pF\vec e_y$ | Free-particle involution, $A^2=-e_t$, $\beta A=-A\beta$ |
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |
 | $\vec q = \sum_\eta Q_\eta\vec e_\eta$ | Material position |
-| $X_kF = Q_kF-\dfrac{1}{2\,k_m}\vec e_\eta F\vec e_y+\cdots$ | Mean (Foldy–Wouthuysen) position, $k$-th component |
+| $X_kF = Q_kF-\dfrac{1}{2\,2\pi\nu_m}\vec e_\eta F\vec e_y+\cdots$ | Mean (Foldy–Wouthuysen) position, $k$-th component |
 | $w=\frac{1}{\sqrt2}(i\vec e_x-i\vec e_z)$ | Fixed $*$-unitary of the frame, the right multiplication $F\mapsto Fw$; $w^2=e_t$, and $w\beta w=\Gamma$ |
 
 ## Further Reading

@@ -96,17 +96,17 @@ the $L$ part of value $-1$ and the $R$ part of value $+1$ under the frame's chir
 The two Dirac equations. The dynamics is the chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\,\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\,\tilde{Ξ}_{L},
 $$
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\,\tilde{Ξ}_{R} .
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
-Each member is a left multiplication, and the mass is the off-diagonal pairing of the two parts. The second member is the biquaternion conjugate of the first: the conjugation exchanges the two sides, so the conjugate of a left action on $\tilde{Ξ}_{R}$ is written as a left action of $(\tilde\nabla_\Phi)^{\natural}$ on $\tilde{Ξ}_{L}$ (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*). Eliminating one part returns the mass shell, $\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$. No basis operator enters the pair itself, because both members are left multiplications.
+Each member is a left multiplication, and the mass is the off-diagonal pairing of the two parts. The second member is the biquaternion conjugate of the first: the conjugation exchanges the two sides, so the conjugate of a left action on $\tilde{Ξ}_{R}$ is written as a left action of $(\tilde\nabla_\Phi)^{\natural}$ on $\tilde{Ξ}_{L}$ (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*). Eliminating one part returns the mass shell, $\Box_\Phi\tilde{Ξ}_{R}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R}$. No basis operator enters the pair itself, because both members are left multiplications.
 
-The pair. The two members are two first-order lines on a pair of elements of $\mathbb{B}$, the pair of *Operator and Calculus Conventions*, §*The Plain Bilinear Product, Its Form and Its Norm*: $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, each line composed with its partner being $\Box_\Phi$.
+The pair. The two members are two first-order lines on a pair of elements of $\mathbb{B}$, the pair of *Operator and Calculus Conventions*, §*The Plain Bilinear Product, Its Form and Its Norm*: $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, each line composed with its partner being $\Box_\Phi$.
 
 **Why one field carries the massless case and not the massive one.** The square of the gradient is not scalar. The diagonal basis operators of the coefficient basis are the four squares, $e_te_t=e_t$ and $\vec e_\eta\vec e_\eta=-e_t$, so the diagonal part is scalar; the cross terms are the ones that do not cancel — the pairs of two distinct spatial units cancel by antisymmetry, and the time–space pairs add, because $e_t$ commutes with the three spatial units. This is a derived form, read from the multiplication here. Hence $\tilde\nabla_\Phi^2\neq\Box_\Phi$, and the square is not even scalar, while a scalar square is what a one-field first-order massive equation would need. The free equation therefore stays first order in one field; the massive equation is the chiral pair above, two fields and one mass; and a one-field first-order massive equation does not exist here. This article writes none.
 
@@ -215,7 +215,7 @@ What would settle it. Three computations, in order of dependence:
 
 1. The colour representation of the quark. Construct the matter field on the carrier that the colour-group question settles, with the covariant derivative acting on the internal colour index, and check its gauge covariance. This is the same object as obstacle 1's, and it has a known route *conditional on that carrier existing*; without the carrier it is blocked.
 2. The anomaly. The abelian divergence and the 't Hooft vertex now exist in the framework, with the coefficient quoted from the standard result. What remains is the colour-dressed computation: the triangle coefficient $\mathrm{Tr}_R[T_a\{T_b,T_c\}]$ on a module that carries colour, and the flavour-singlet $\mathrm{U}(1)_A$ at $N_f$ flavours, compared against the standard value. That is a known route, blocked on the colour carrier of item 1: the standard computation defines the target, and the framework must reproduce the coefficient or fail to.
-3. The mass interpretation. Largely settled on the parent's equation: the mass term is the linear chiral pair, the real-form expression of an ordinary Dirac mass, so the framework carries a conserved fermion number and what the mass breaks is the axial charge. What remains open is the separate question the chiral-fermion article poses — how the algebra's real structure $\flat$, and the single-field equation $\tilde\nabla_\Phi\tilde{Ξ} = k_m\tilde{Ξ}^{\flat}$ built on it, read on the real form, and whether that real-form choice is what distinguishes a Majorana from a Dirac fermion.
+3. The mass interpretation. Largely settled on the parent's equation: the mass term is the linear chiral pair, the real-form expression of an ordinary Dirac mass, so the framework carries a conserved fermion number and what the mass breaks is the axial charge. What remains open is the separate question the chiral-fermion article poses — how the algebra's real structure $\flat$, and the single-field equation $\tilde\nabla_\Phi\tilde{Ξ} = 2\pi\nu_m\tilde{Ξ}^{\flat}$ built on it, read on the real form, and whether that real-form choice is what distinguishes a Majorana from a Dirac fermion.
 
 ## The Running Coupling and Asymptotic Freedom
 
@@ -285,7 +285,7 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 | $\mathbb{B}_{C}$ | The centre of the algebra; the vector-like abelian factor |
 | $\mathbb{B}_{H}$ | The real-quaternion subspace |
 | $\tilde\nabla_\Phi$, $\Box_\Phi$ | The biquaternionic gradient and the d'Alembertian in the material reading (*Operator and Calculus Conventions*) |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair as two first-order lines (*Operator and Calculus Conventions*); each line composed with its partner is $\Box_\Phi$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | The pair as two first-order lines (*Operator and Calculus Conventions*); each line composed with its partner is $\Box_\Phi$ |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field and its two values, $L$ of value $-1$ and $R$ of value $+1$ (*Special Element Conventions*) |
 | $B(\tilde{Ξ})$ | The mass bilinear of the read list; odd under the exchange of the two values |
 | $j_{5\imath}$, $Ϙ$, $ϙ_L$, $ϙ_R$ | The axial current and the charge values on the two parts (read list) |

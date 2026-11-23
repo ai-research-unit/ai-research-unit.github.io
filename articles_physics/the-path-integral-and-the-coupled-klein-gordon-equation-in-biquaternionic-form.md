@@ -4,7 +4,7 @@
 
 This article puts the coupled scalar action into the functional integral. *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form* defines the integral over central-valued fields and evaluates the free Gaussian. *The Lagrangian and the Coupled Klein–Gordon Equation* supplies the action with the covariant derivative in every slot. Joining the two costs one substitution and produces one new structure, and the structure is the subject of the article.
 
-The substitution. Minimal coupling replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ in the kinetic term. Nothing else changes: the field stays in the centre, the measure stays flat, the mass term stays $k_m^{2}\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the phase stays central and $*$-unitary.
+The substitution. Minimal coupling replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ in the kinetic term. Nothing else changes: the field stays in the centre, the measure stays flat, the mass term stays $\nu_m^{2}\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the phase stays central and $*$-unitary.
 
 The finding is one sentence, and the article is its unfolding. The exponent splits into three terms — the free one, a term linear in the potential times the current, and a term quadratic in the potential with no derivative — and the third term is what makes the sum gauge invariant, so the integral cannot be built from the current alone.
 
@@ -12,7 +12,7 @@ Four consequences follow, and each is stated exactly or checked.
 
 - The split is an algebraic identity, exact for every connection and every field, checked to $6\times10^{-15}$.
 - The gauge transformation of the integration variable is a rotation of the two real components at each point, so the measure is invariant with no Jacobian, and on a lattice the invariance requires the phase to be carried in an exponential link and not in a linear one.
-- The Gaussian inverts the paired operator $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})-k_m^{2}$, which is the equation's operator for a purely vector connection and is not the equation's operator for a scalar potential.
+- The Gaussian inverts the paired operator $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})-\nu_m^{2}$, which is the equation's operator for a purely vector connection and is not the equation's operator for a scalar potential.
 - The current is the first variation of the integral with respect to the connection, and its conservation is the differentiated form of the measure's invariance.
 
 It does not produce a new prediction: the integral is the standard charged scalar's. It does not construct the continuum measure. It does not resolve the sign question that the variational companion records; it locates that question at the pole of the propagator, where it is observable, and stops there.
@@ -32,7 +32,7 @@ with $\natural$ on the invertibles and never on the connection's coefficients, w
 The action and the weight. The variational companion's matter action,
 
 $$
-S_{\mathrm{gco}}[\tilde\Xi,\tilde A]=\frac{h}{4\pi}\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde\Xi\Bigr]-\sum_{\eta=1}^{3}\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\eta}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\eta}\tilde\Xi\Bigr]-k_m^{2}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\},
+S_{\mathrm{gco}}[\tilde\Xi,\tilde A]=\frac{h}{4\pi}\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde\Xi\Bigr]-\sum_{\eta=1}^{3}\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\eta}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\eta}\tilde\Xi\Bigr]-4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\},
 $$
 
 is the exponent, in the free companion's normalisation and with the covariant derivative in every slot, with the weight $\exp(\frac{2\pi iS_{\mathrm{gco}}}{h})$. The temporal slot enters with $+$ and the three spatial ones with $-$, which is the material metric written out. The connection is held fixed in the integral over the field, and the field is held fixed in the integral over the connection; this article treats the first.
@@ -87,7 +87,7 @@ What it does not buy. The integral is not invariant under a transformation that 
 The operator. Integrating by parts once per slot moves the derivative onto the first factor and leaves
 
 $$
-S_{\mathrm{gco}}=\frac{h}{4\pi}\int\mathrm{d}^{4}x\;\mathrm{Sc}\Bigl[\tilde\Xi^{*}\Bigl(\sum_{\imath}\bigl(\partial_{\imath}-\bar c_{\imath}\bigr)\bigl(\partial_{\imath}+c_{\imath}\bigr)-k_m^{2}\Bigr)\tilde\Xi\Bigr]
+S_{\mathrm{gco}}=\frac{h}{4\pi}\int\mathrm{d}^{4}x\;\mathrm{Sc}\Bigl[\tilde\Xi^{*}\Bigl(\sum_{\imath}\bigl(\partial_{\imath}-\bar c_{\imath}\bigr)\bigl(\partial_{\imath}+c_{\imath}\bigr)-4\pi^{2}\nu_m^{2}\Bigr)\tilde\Xi\Bigr]
 $$
 
 up to a boundary term, so the Gaussian's inverse is the paired operator's Green's function. The free companion's statement that the two-point function is the inverse of the quadratic form survives the coupling with the paired operator in place of the d'Alembertian.
@@ -106,12 +106,12 @@ Which slots satisfy the condition. The three spatial slots satisfy it for a real
 
 The symbols, measured. Applying each operator to a plane wave on a periodic grid of $256$ points with wave number $3$, the squared operator's symbol for a real coefficient $0.31$ is $-8.8876+1.86i$ and the paired operator's is $-9.0798$, real; for an imaginary coefficient $1.30i$ both are $-18.4667$ and they agree to machine zero. The free value at the same wave number is $-8.9837$. The imaginary coefficient shifts the pair together and the real one separates them, and the separation has an imaginary part that the paired form does not have.
 
-The pole, in the two cases. For a purely vector connection the shell is the free one at the shifted wave number, $\vec\kappa=\vec k+\frac{2\pi ϙ}{h}\vec A$, exactly and with no residual. For a constant scalar potential the two operators give two different shells:
+The pole, in the two cases. For a purely vector connection the shell is the free one at the shifted wave number, $\vec\kappa=2\pi\vec\nu_{\Phi}+\frac{ϙ}{h}\vec A$, exactly and with no residual. For a constant scalar potential the two operators give two different shells:
 
 $$
-\text{squared:}\quad\bigl(\omega-c_t\bigr)^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2}=0,
+\text{squared:}\quad\bigl(\omega-c_t\bigr)^{2}-\lvert\vec\kappa\rvert^{2}-4\pi^{2}\nu_m^{2}=0,
 \qquad
-\text{paired:}\quad\omega^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2}-c_t^{2}=0 .
+\text{paired:}\quad\omega^{2}-\lvert\vec\kappa\rvert^{2}-4\pi^{2}\nu_m^{2}-c_t^{2}=0 .
 $$
 
 The first is the variational companion's $E\mapsto E+ϙ c\,a'_t$, the linear shift of the energy. The second has no linear shift and moves the mass squared by $c_t^{2}$. **The two are different physics and they are produced by two different operators from the same coupling.**
@@ -152,7 +152,7 @@ What the article concludes about the fork. The integral over central fields is t
 
 ## The Semiclassical Expansion
 
-The classical field and the source. With a source the stationary point of the exponent is $\Box_{\mathrm{gco},\Phi}\tilde\Xi-k_m^{2}\tilde\Xi=-\tilde J$, the coupled equation with a source, and the expansion about it separates into the classical action, a vanishing linear term, and the quadratic fluctuation. The one-loop factor is $[\det(\Box_{\mathrm{gco},\Phi}-k_m^{2})]^{-1/2}$ for the squared reading and $[\det(\text{paired}-k_m^{2})]^{-1/2}$ for the integral's, and the two differ by the term of §*The Quadratic Form and the Operator It Inverts*.
+The classical field and the source. With a source the stationary point of the exponent is $\Box_{\mathrm{gco},\Phi}\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi=-\tilde J$, the coupled equation with a source, and the expansion about it separates into the classical action, a vanishing linear term, and the quadratic fluctuation. The one-loop factor is $[\det(\Box_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2})]^{-1/2}$ for the squared reading and $[\det(\text{paired}-\nu_m^{2})]^{-1/2}$ for the integral's, and the two differ by the term of §*The Quadratic Form and the Operator It Inverts*.
 
 Everything remains central. The classical field is central, the fluctuation operator's coefficients are central, the determinant is a central scalar, and the effective action is the Legendre transform of a central functional. **The coupling changes no object's type**, which is the free companion's verdict and the coupled companion's, and the integral adds no exception.
 
@@ -205,12 +205,12 @@ The current is the first variation of the integral with respect to the connectio
 | $\sum_{\imath}\lvert c_{\imath}\rvert^{2}\lvert\Xi\rvert^{2}$ | The potential-squared term; no derivative |
 | $\prod_x\mathrm{d}\Xi_1\mathrm{d}\Xi_2$ | The flat measure; invariant under a local phase |
 | $U_j=e^{i(\Lambda_j-\Lambda_{j+1})}$ | The Wilson link; exact gauge invariance on the lattice |
-| $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})-k_m^{2}$ | The paired operator; the Gaussian's inverse |
+| $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})-\nu_m^{2}$ | The paired operator; the Gaussian's inverse |
 | $\Box_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}$ | The equation's operator; the squared reading |
 | $\bar c_{\imath}=-c_{\imath}$ | The condition for the two operators to coincide; holds for a vector connection |
-| $\vec\kappa=\vec k+\frac{2\pi ϙ}{h}\vec A$ | The shifted wave number; the shell for a purely vector connection |
+| $\vec\kappa=2\pi\vec\nu_{\Phi}+\frac{ϙ}{h}\vec A$ | The shifted wave number; the shell for a purely vector connection |
 | $\tilde F$ | The field strength; the vector part of the covariant square is $\frac{2\pi iϙ}{h}\xi\tilde F$ |
-| $k_m=\frac{2\pi mc}{h}$ | The mass parameter |
+| $\nu_m=\frac{mc}{h}$ | The mass parameter |
 
 ## Further Reading
 

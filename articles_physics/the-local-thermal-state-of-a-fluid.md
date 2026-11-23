@@ -43,7 +43,7 @@ A thermal pressure satisfies the Euler relation and the Gibbs–Duhem relation a
 From the local thermal structure article,
 
 $$
-\beta(x)=\frac{m\,c}{k_{m}\,k_{B}\,T(x)},
+\beta(x)=\frac{m\,c}{2\pi\nu_m\,k_{B}\,T(x)},
 \qquad
 T(x)\,c(x)=\text{const}
 $$
@@ -62,7 +62,7 @@ The entropy density is not independent — it is what the thermodynamic identity
 
 ### The element and its components
 
-The flow is an element of the material sector, and when a component is unavoidable it is written with a low index on the pattern of $k_{\Phi,\imath}$. With $\tilde P_\Phi$ the flow momentum element,
+The flow is an element of the material sector, and when a component is unavoidable it is written with a low index on the pattern of $\nu_{\Phi,\imath}$. With $\tilde P_\Phi$ the flow momentum element,
 
 $$
 \tilde V_\Phi=\frac{\tilde P_\Phi}{m},
@@ -252,9 +252,9 @@ The quantum part violates determinacy at second order: $p_{\mathrm{qnt}}=\rho_{\
 | $s_{\mathrm{ent}}$ | Entropy density |
 | $n_{\mathrm{num}}$ | Number density |
 | $\mu_{\mathrm{chm}}$ | Chemical potential |
-| $\beta(x)=\frac{m\,c}{k_{m}\,k_{B}\,T(x)}$ | Local inverse temperature, a length |
+| $\beta(x)=\frac{m\,c}{2\pi\nu_m\,k_{B}\,T(x)}$ | Local inverse temperature, a length |
 | $T(x)$ | Local temperature |
-| $k_B$, $k_m$ | Boltzmann's constant, mass wave number |
+| $k_B$, $\nu_m$ | Boltzmann's constant, mass wave number |
 | $\tilde V_\Phi=\tilde P_\Phi/m$ | Flow element, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ |
 | $v_{\Phi,\imath}$ | Its components, index low |
 | $\tilde P_\Phi$ | Flow momentum element |

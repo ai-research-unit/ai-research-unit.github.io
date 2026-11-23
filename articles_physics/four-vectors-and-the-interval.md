@@ -426,7 +426,7 @@ The sector carries the standard four-vectors, and each one is a different invari
 | four-position | $\tilde R=i r'_t e_t+\vec r$ | $(r'_t,r_x,r_y,r_z)$ | $-r_t'^{2}+\lvert\vec r\rvert^{2}$ | the squared interval |
 | four-velocity | $\tilde V_{\Phi}=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^{2}$ | the normalisation |
 | four-momentum | $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ | $(E/c,\vec p)$ | $-m^{2}c^{2}$ | the mass shell |
-| four-wavevector | $\tilde K_{\Phi}=i\frac{\omega}{c}e_t+\vec k_\Phi$ | $(\omega/c,\vec k_\Phi)$ | $0$ for light | the dispersion relation |
+| four-wavevector | $\tilde\Upsilon_{\Phi}=i\frac{\omega}{c}e_t+2\pi\vec\nu_\Phi$ | $(\omega/c,\vec\nu_\Phi)$ | $0$ for light | the dispersion relation |
 | four-potential | $\tilde A_{\Phi}=i a'_t e_t+\vec A$ | $(a'_t,\vec A)$ | gauge-dependent | not an invariant |
 | four-current | $\tilde J_{\Phi}=i c\rho\,e_t+\vec j$ | $(c\rho,\vec j)$ | not fixed | not an invariant |
 | four-force | $\tilde{\mathcal F}_{\Phi}=i\frac{\gamma\vec f\cdot\vec v}{c}e_t+\gamma\vec f$ | $(\gamma\vec f\cdot\vec v/c,\gamma\vec f)$ | not fixed | orthogonality to $\tilde V_{\Phi}$ |
@@ -651,7 +651,7 @@ The sector is a chart and the informational sector is the other chart. The ident
 | the projectors | $\tilde\Pi_{\mathrm{id},\pm}$ | $\tfrac12(e_t\mp i\vec u_p)$, Hermitian idempotents |
 | the four-velocity | $\tilde V_{\Phi}$ | $i\gamma c\,e_t+\gamma\vec v$, norm $-c^{2}$ |
 | the four-momentum | $\tilde P_{\Phi}$ | $i\frac{E}{c}e_t+\vec p$, norm $-m^{2}c^{2}$ |
-| the four-wavevector | $\tilde K_{\Phi}$ | $i\frac{\omega}{c}e_t+\vec k_\Phi$, norm zero for light |
+| the four-wavevector | $\tilde\Upsilon_{\Phi}$ | $i\frac{\omega}{c}e_t+\vec\nu_\Phi$, norm zero for light |
 | the four-potential | $\tilde A_{\Phi}$ | $i a'_t e_t+\vec A$, gauge-dependent norm |
 | the four-current | $\tilde J_{\Phi}$ | $i c\rho\,e_t+\vec j$ |
 | the four-force | $\tilde{\mathcal F}_{\Phi}$ | $i\frac{\gamma\vec f\cdot\vec v}{c}e_t+\gamma\vec f$ |

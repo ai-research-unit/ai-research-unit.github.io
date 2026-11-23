@@ -83,10 +83,10 @@ The density on this family is not zero. The Hermitian norm of the scaled element
 
 ### One-Sided Plane Waves
 
-**A null wavevector produces a field that is a zero divisor everywhere and is nowhere zero.** With $\tilde K_{\Phi}$ null, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=0$, the plane wave $\tilde\Xi=\tilde\Xi_{0}e^{i\tilde K_{\Phi}\cdot\tilde X}$ satisfies the field equation with $\tilde\Xi_{0}$ a nonzero zero divisor, and
+**A null wavevector produces a field that is a zero divisor everywhere and is nowhere zero.** With $\tilde\Upsilon_{\Phi}$ null, $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=0$, the plane wave $\tilde\Xi=\tilde\Xi_{0}e^{2\pi i\tilde\Upsilon_{\Phi}\cdot\tilde X}$ satisfies the field equation with $\tilde\Xi_{0}$ a nonzero zero divisor, and
 
 $$
-N(\tilde\Xi)=N(\tilde\Xi_{0})\,e^{2i\tilde K_{\Phi}\cdot\tilde X}=0
+N(\tilde\Xi)=N(\tilde\Xi_{0})\,e^{4\pi i\tilde\Upsilon_{\Phi}\cdot\tilde X}=0
 $$
 
 at every event, because a nonzero zero divisor multiplied by anything is a zero divisor.
@@ -123,7 +123,7 @@ The two-factor form has the scale and the partial isometry's parameters; the fou
 
 **The domain is a condition at each event and is not conserved by any of the corpus's flows except the Schrödinger one.** The Klein–Gordon flow does not preserve it because the equation is second order; the Dirac flow does not preserve it because the mass couples the two chiral pieces.
 
-The Klein–Gordon check. With $\Xi_t(0,x)=0$ and $\partial_{t'}\Xi_t(0,x)$ an invertible element packet of width $2$, $k_m=1$, and a $1+1$ evolution on a periodic grid of $4000$ points spanning $60$ with step $10^{-4}$, the field starts on the cone and its maximum modulus is $0.0500$ at $t=0.05$ and $0.1983$ at $t=0.2$. So the field leaves the cone immediately and returns to it only at isolated events.
+The Klein–Gordon check. With $\Xi_t(0,x)=0$ and $\partial_{t'}\Xi_t(0,x)$ an invertible element packet of width $2$, $2\pi\nu_m=1$, and a $1+1$ evolution on a periodic grid of $4000$ points spanning $60$ with step $10^{-4}$, the field starts on the cone and its maximum modulus is $0.0500$ at $t=0.05$ and $0.1983$ at $t=0.2$. So the field leaves the cone immediately and returns to it only at isolated events.
 
 The Dirac check. A field carrying one chiral piece alone is on the cone; after evolution the modulus of the determinant rises from zero to $0.196$ at $t=0.2$ and $0.369$ at $t=0.4$, because the mass couples the pieces and a field carrying one piece alone does not keep one piece alone. [Why Biquaternions?](why-biquaternions.html) records the check.
 
@@ -185,7 +185,7 @@ The domain is a condition at each event. The Klein–Gordon flow and the Dirac f
 | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Modulus, $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N$ |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | Density |
 | $\tilde X\vec e_z=\pm i\tilde X$ | Element of definite value |
-| $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=0$ | Null wavevector |
+| $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=0$ | Null wavevector |
 | $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ | Two-factor decomposition |
 | $\tilde U_{\Psi,\mathrm b}$, $\tilde u_{\mathrm r}$ | Boost and rotor of the four-factor word |
 

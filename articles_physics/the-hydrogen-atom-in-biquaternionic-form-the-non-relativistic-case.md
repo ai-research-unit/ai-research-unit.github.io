@@ -8,7 +8,7 @@ $$
 E_n = -\frac{m\,\kappa^{2}}{2\,\frac{h^{2}}{4\pi^{2}}\,n^{2}},
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 the eigenstates are labelled by the quantum numbers $n,l,l_z$, and each orbital level carries a two-valued spin factor.
 

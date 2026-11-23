@@ -67,7 +67,7 @@ so multiplying by $\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})+m^{2}\,c^{2}$
 
 **The biquaternion form of the amputation.** The wave operator's momentum symbol is the negative of the central mass-shell operator,
 $$
-\big(\Box_\Phi-k_m^{2}\big) \;\longrightarrow\; -\big(N(\tilde Q_{\Phi})+m^{2}\,c^{2}\big)=\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big) \;=\; -\,\mathcal{M}(\tilde Q_{\Phi}) ,
+\big(\Box_\Phi-4\pi^{2}\nu_m^{2}\big) \;\longrightarrow\; -\big(N(\tilde Q_{\Phi})+m^{2}\,c^{2}\big)=\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big) \;=\; -\,\mathcal{M}(\tilde Q_{\Phi}) ,
 $$
 so the amputation is multiplication by the inverse propagator $\mathcal{M}(\tilde Q_{\Phi})$ in momentum space, equivalently by the negative of the wave operator's symbol. The two conventions differ by a factor $-1$ per leg, which is the same sign convention on the external states; no pole and no residue is affected. The mass-shell operator $\mathcal{M}(\tilde Q_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}=N(\tilde Q_{\Phi})+m^{2}\,c^{2}$ is the object whose vanishing is the shell, $\mathcal{M}(\tilde Q_{\Phi})=0$, i.e. $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$. The remaining sections spell out the consequence: the amputation is a real central scalar for a scalar field and an action on the element for a field with spin, while the pole $\mathcal{M}(\tilde Q_{\Phi})=0$ is the same central scalar in both cases.
 
@@ -83,7 +83,7 @@ so that, off the shell and with the prescription removed,
 $$
 \boxed{\;\lim_{\epsilon\to0^{+}}\mathcal{M}(\tilde Q_{\Phi})\,D_F(\tilde Q_{\Phi}) = \lim_{\epsilon\to0^{+}}\frac{N(\tilde Q_{\Phi})+m^{2}\,c^{2}}{N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon} = 1 \qquad (\mathcal{M}\neq0)\;}
 $$
-and with the prescription kept the same product is $1$ up to $O(\epsilon/\mathcal{M})$. Multiplying a correlation function by $\mathcal{M}(\tilde Q_{\Phi})$ on a leg is precisely the inverse operation to attaching the propagator to that leg. This is the whole content of "amputation", and in the framework it is the multiplication of an algebra-valued function by the central scalar $\mathcal{M}(\tilde Q_{\Phi})$. The normalization is the propagator article's. Its Klein–Gordon Green's function is $G_F=1/(\vec p^{\,2}+m^2-p_0^2-i\epsilon)=1/(\mathcal{M}-i\epsilon)$, which satisfies $(\Box_\Phi-k_m^{2})G_F=-\delta^{(4)}$ and whose free-field residue is $+1$; the textbook normalization $-1/(N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon)$ is its negative.
+and with the prescription kept the same product is $1$ up to $O(\epsilon/\mathcal{M})$. Multiplying a correlation function by $\mathcal{M}(\tilde Q_{\Phi})$ on a leg is precisely the inverse operation to attaching the propagator to that leg. This is the whole content of "amputation", and in the framework it is the multiplication of an algebra-valued function by the central scalar $\mathcal{M}(\tilde Q_{\Phi})$. The normalization is the propagator article's. Its Klein–Gordon Green's function is $G_F=1/(\vec p^{\,2}+m^2-p_0^2-i\epsilon)=1/(\mathcal{M}-i\epsilon)$, which satisfies $(\Box_\Phi-4\pi^{2}\nu_m^{2})G_F=-\delta^{(4)}$ and whose free-field residue is $+1$; the textbook normalization $-1/(N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon)$ is its negative.
 
 **The centrality is a real centrality.** Because $\mathcal{M}(\tilde Q_{\Phi})$ is central, the amputation commutes with the left and right multiplications of the algebra and does not disturb any internal index; it multiplies every component of the field by the same complex number. On real momenta $\mathcal{M}=N(\tilde Q_{\Phi})+m^{2}\,c^{2}$ is also **real**, and a real central scalar commutes with the conjugation $\flat=-{}^{*}$,
 $$
@@ -109,7 +109,7 @@ $$
 $$
 Here $\tilde Q_{\mathrm{amp}}$ is a constant biquaternion amplitude, an element of $\mathbb{B}$ bound here, whose majuscule marks its complex scalar part. The differential operator is central and acts on the exponential as multiplication by its symbol, $\Box_\Phi\to -N=-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$, so
 $$
-\big(\Box_\Phi-k_m^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} \;\longrightarrow\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} = -\,\mathcal{M}(\tilde Q_{\Phi})\,\tilde{Ξ}_{\tilde P,\Phi},
+\big(\Box_\Phi-4\pi^{2}\nu_m^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} \;\longrightarrow\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} = -\,\mathcal{M}(\tilde Q_{\Phi})\,\tilde{Ξ}_{\tilde P,\Phi},
 $$
 which vanishes for $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$. The phase is the central scalar $\mathrm{Sc}(\tilde P_{\Phi}^{\natural}\tilde R_\Phi)=-p\cdot x$ with $p\cdot x=Er'_t-\vec p\cdot\vec r$ and the mode angles $\theta_{\mathrm{pwp},i}=p_i\cdot x_i$ real because each momentum and each position are real, the corpus's four-vector notation, so $\exp(-i\theta_{\mathrm{pwp}})=\exp(-i\theta_{\mathrm{pwp}})$ is the positive-frequency mode and the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central. Being complex, the phase is central but not real: it multiplies every component by the same complex number, and because that number is not real it re-mixes the two sectors instead of preserving them, so the sector split is a split of the field and never of the phase.
 
@@ -172,15 +172,15 @@ where the left factor of the energy term is $e_t$ and is not written. It is the 
 
 **The two Dirac equations.** The corpus carries two, and they are not the same operator (see *The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*). The **one-sided** form is the pair
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L} ,
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R} ,
 $$
 in which the gradient acts by left multiplication and the mass is the pairing of the two parts. The **two-sided** form is the single equation
 $$
--(\tilde\nabla_\Phi)^{\natural}F-k_m\,i\,\overline{F}\,\vec e_z=0 ,
+-(\tilde\nabla_\Phi)^{\natural}F-2\pi\nu_m\,i\,\overline{F}\,\vec e_z=0 ,
 $$
-in which the time derivative and the spatial gradient act by left multiplication, the mass acts by right multiplication through $\vec e_z$, and the componentwise conjugation $\bar F$ supplies an antilinear part. The reduction of this article is the one-sided pair: it is the pair whose Green element the propagator article inverts, and whose momentum symbol, in the second writing, is the action $\mathcal{A}_p$. The two-sided equation is another writing of the same one, and its mass is a multiplication together with a conjugation rather than a multiplication alone; a reduction in that form would have to carry the conjugation through every leg, and the corpus does not attempt it. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+in which the time derivative and the spatial gradient act by left multiplication, the mass acts by right multiplication through $\vec e_z$, and the componentwise conjugation $\bar F$ supplies an antilinear part. The reduction of this article is the one-sided pair: it is the pair whose Green element the propagator article inverts, and whose momentum symbol, in the second writing, is the action $\mathcal{A}_p$. The two-sided equation is another writing of the same one, and its mass is a multiplication together with a conjugation rather than a multiplication alone; a reduction in that form would have to carry the conjugation through every leg, and the corpus does not attempt it. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **The pole is central; the residue is an action.** On a central-phase plane wave the four coefficients $p_{\imath}$ are constants, so $\mathcal{A}_p$ is a constant action and $\mathcal{A}_p^2$ is multiplication by $-N$. The equation $\mathcal{A}_p\tilde{Ξ}=m\tilde{Ξ}$ then gives
 $$
@@ -188,7 +188,7 @@ $$
 $$
 so the second-order operator of the pair is the central scalar of the scalar case: the pole of every leg of the field with spin sits on the same biquaternion-norm level set $\mathcal{M}(\tilde Q_{\Phi})=0$. What is not scalar is the residue. The inverse of the action $\mathcal{A}_p-mc$ is
 $$
-\big(\mathcal{A}_p-mc\big)^{-1}=\frac{\mathcal{A}_p+mc}{-\big(N(\tilde Q_{\Phi})+\frac{h^{2}}{4\pi^{2}}k_m^2\big)}=\frac{\mathcal{A}_p+mc}{-\,\mathcal{M}(\tilde Q_{\Phi})} ,
+\big(\mathcal{A}_p-mc\big)^{-1}=\frac{\mathcal{A}_p+mc}{-\big(N(\tilde Q_{\Phi})+\frac{h^{2}}{4\pi^{2}}4\pi^{2}\nu_m^2\big)}=\frac{\mathcal{A}_p+mc}{-\,\mathcal{M}(\tilde Q_{\Phi})} ,
 $$
 so the residue of the propagator at $\mathcal{M}=0$ is the action $\mathcal{A}_p+mc$, up to the overall $-i$, the product of the $-1$ in the denominator $-(N(\tilde Q_{\Phi})+m^{2}\,c^{2})$ and the $i$ of the Feynman normalization. The spin-sum identity of the propagator article, which holds on the shell, writes that action as a sum of two terms of rank one,
 $$
@@ -362,7 +362,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | The anti-Hermitian and Hermitian sectors (*Algebra and Element Conventions*); $\tilde{Ξ}_\pm$ are the two sector parts |
 | $\flat$ | The anti-Hermitian conjugation (*Algebra and Element Conventions*), antilinear |
 | $D_F(\tilde Q_{\Phi})=1/(\mathcal{M}(\tilde Q_{\Phi})-i\epsilon)=1/(N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon)$ | Feynman propagator (momentum space) |
-| $-(N(\tilde Q_{\Phi})+m^{2}\,c^{2})=-\mathcal{M}(\tilde Q_{\Phi})$ | Symbol of the wave operator $(\Box_\Phi-k_m^{2})$; amputation uses $\mathcal{M}$ |
+| $-(N(\tilde Q_{\Phi})+m^{2}\,c^{2})=-\mathcal{M}(\tilde Q_{\Phi})$ | Symbol of the wave operator $(\Box_\Phi-4\pi^{2}\nu_m^{2})$; amputation uses $\mathcal{M}$ |
 | $Z=\lim_{N(\tilde Q_{\Phi})\to-m^{2}c^{2}}(N(\tilde Q_{\Phi})+m^{2}\,c^{2})D_F(\tilde Q_{\Phi})=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$ | Wave-function renormalization (residue) |
 | $\langle f\lvert S\rvert i\rangle$ | S-matrix element from the reduction |
 | $s_j$, $\varepsilon_j$ | The two signs of leg $j$: $s_j=\pm1$ from the Fourier phase (out/in), $\varepsilon_j=\pm1$ from the numerator ($\tilde{Ξ}$/$\tilde{Ξ}^{\natural}$); independent |
@@ -370,7 +370,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\tilde Q_{\mathrm{amp}}$ | Constant biquaternion amplitude of the central-phase plane wave; an element of $\mathbb{B}$ bound here, with a complex scalar part, hence the majuscule |
 | $L_a$, $R_b$, $L_aR_b$ | Left multiplication, right multiplication and the basis operator (closing section only) |
 | $\mathcal{A}_p\tilde{Ξ}=i p_0\tilde{Ξ}\vec e_x-\sum_\eta i p_\eta\vec e_\eta\tilde{Ξ}\vec e_y$ | Momentum action, the second writing of the momentum symbol of the pair; $\mathcal{A}_p^2\tilde{Ξ}=-N\tilde{Ξ}$ |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair, as two first-order lines; each line composed with its partner is $\Box_\Phi$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | The pair, as two first-order lines; each line composed with its partner is $\Box_\Phi$ |
 | $L$, $R$ | The two values of the chirality subscript; $L$ the minus value, $R$ the plus one |
 | $\tilde w^{(r)},\tilde v^{(r)}$ | External spin amplitudes, elements of $\mathbb{B}$; $\sum_r \tilde w^{(r)}\bar{\tilde w}^{(r)}=\mathcal{A}_p+mc$ and $\sum_r \tilde v^{(r)}\bar{\tilde v}^{(r)}=\mathcal{A}_p-mc$ on the shell, each product read as the action $\tilde{Ξ}\mapsto \tilde w\tilde{Ξ}\bar{\tilde w}$ |
 | $\ell_x,\ell_y$ | The two ladders of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, $\ell_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\ell_y=\tfrac12(i\vec e_x+\vec e_y)$; $\ell_x\ell_y+\ell_y\ell_x=e_t$, and the two orderings multiply to $0$ |

@@ -13,7 +13,7 @@ $$
 the action is the free polar action with the bracket replaced:
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\Bigl[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_{\imath}\bigl(\mathcal A^{\mathrm{gco}}_{\imath}\bigr)^{*}\Bigr]-\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\,k_m^{2}\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\Bigl[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_{\imath}\bigl(\mathcal A^{\mathrm{gco}}_{\imath}\bigr)^{*}\Bigr]-\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\,4\pi^{2}\nu_m^{2}\Bigr\},
 $$
 
 summed over the four slots with the metric signs of the corpus's convention. The connection's term is additive and central, so it adds to the bracket and multiplies nothing; this is the same identity the polar companion of the element article displays, and here it is the whole of the substitution.
@@ -32,7 +32,7 @@ The endpoint $2\pi$. At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ central; $^{*}$ Hermitian conjugation, $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ the coefficient of $e_t$, ; the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The word's parameters are $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\hat u_{\mathrm b}$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\hat u_{\mathrm r}$, and $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ is the action. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the material time is $r'_t=c\,t'$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=\frac{2\pi mc}{h}$.
+The conventions are restated here so that every sign below is checkable from this page alone. $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ central; $^{*}$ Hermitian conjugation, $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ the coefficient of $e_t$, ; the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The word's parameters are $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\hat u_{\mathrm b}$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\hat u_{\mathrm r}$, and $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ is the action. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the material time is $r'_t=c\,t'$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $\nu_m=\frac{mc}{h}$.
 
 ## The Action in Polar Variables
 
@@ -69,8 +69,8 @@ In the temporal slot the connection sits with the scale; in the spatial slots it
 The action. Collecting the four slots with their metric signs and the mass term,
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{\varrho^{2}\Bigl[\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}a'_t\bigr)^{2}-\bigl\lvert\nabla\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\bigr\rvert^{2}\Bigr]
-+\bigl(\partial_{r'_t}\varrho\bigr)^{2}-\lvert\nabla \varrho\rvert^{2}-k_m^{2}\varrho^{2}\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{\varrho^{2}\Bigl[\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϙ}{h}a'_t\bigr)^{2}-\bigl\lvert\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{h}\vec A\bigr\rvert^{2}\Bigr]
++\bigl(\partial_{r'_t}\varrho\bigr)^{2}-\lvert\nabla \varrho\rvert^{2}-4\pi^{2}\nu_m^{2}\varrho^{2}\Bigr\},
 $$
 
 which is the free polar article's central action with $\partial_{r'_t}\theta_{\mathrm{pha}}\mapsto\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}a'_t$ and $\vec\nabla_\Phi\theta_{\mathrm{pha}}\mapsto\nabla\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$ and with the amplitude's two terms untouched. The signs of the two shifts are the metric's, and they are the same two signs the element companion records for the four-momentum shift.
@@ -90,7 +90,7 @@ so the interaction is a term linear in the potential multiplying the free phase 
 The bracket's shift in the eight-parameter chart. With $\mathcal A^{\mathrm{gco}}_{\imath}=\mathcal A_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ and $\mathcal A_{\imath}$ the free bracket, the action is the free polar article's
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_{\imath}(\mathcal A^{\mathrm{gco}}_{\imath})^{*}\bigr]-k_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\}
+S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_{\imath}(\mathcal A^{\mathrm{gco}}_{\imath})^{*}\bigr]-4\pi^{2}\nu_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\}
 $$
 
 with the metric unchanged. The metric is unchanged because the metric is a property of the *free* bracket's coefficients in the parameter basis, and the connection's term is not a parameter derivative; it is an additive constant in the bracket, and its contribution to the action is the two terms of §*The Action in Polar Variables*. So the frame density, the $\cosh$ and $\sinh$ structure, the amplitude–rapidity block's unit determinant and the two cross terms are all the free article's.
@@ -103,7 +103,7 @@ The Legendre transform. The kinetic matrix in the eight velocities is the free o
 
 The pairing. Inherited, and the connection is what the pairing now sees. The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$ and writes the matter kinetic term through the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$. The chart rewrites $\tilde\Xi$ as a scale and a phase and the connection as its four components, and both are real variables. The density stays real, and the reason is the one the element article gives: the scalar part of a product of conjugates is real, and the covariant derivative is a sum of an ordinary derivative and a multiplication, each of which preserves that identity.
 
-The type of the coefficient. The question moves from the mass to the connection. In the uncharged article the only coefficient is $k_m^{2}$ and it is real. Here the covariant derivative's bilinear must be real for *every* $\tilde\Xi$, and that is not a condition on one number: it is a condition on the four components of $\tilde\Gamma_{\imath}$, and the four brackets of *The Parameter Basis and the Four Brackets* are the list of what the condition permits.
+The type of the coefficient. The question moves from the mass to the connection. In the uncharged article the only coefficient is $\nu_m^{2}$ and it is real. Here the covariant derivative's bilinear must be real for *every* $\tilde\Xi$, and that is not a condition on one number: it is a condition on the four components of $\tilde\Gamma_{\imath}$, and the four brackets of *The Parameter Basis and the Four Brackets* are the list of what the condition permits.
 
 The selection rule. Declared, and here the declaration is the interesting one. The coupled scalar has a connection and not a potential. A connection is not an object the action may exclude — it is the object the action couples to — so the selection rule has nothing to select. The rule's only worked case is the free scalar's, where the potential is a free element and the anti-Hermitian sector is excluded.
 
@@ -115,7 +115,7 @@ The action. With $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $\rho_{
 
 $$
 S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{\bigl(\partial_{r'_t}\varrho\bigr)^{2}-\lvert\nabla \varrho\rvert^{2}
-+\frac{(2\pi)^{2} \rho_{\mathrm{num}}}{h^{2}}\Bigl[\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-q\vec A\bigr\rvert^{2}\Bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\},
++\frac{(2\pi)^{2} \rho_{\mathrm{num}}}{h^{2}}\Bigl[\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-q\vec A\bigr\rvert^{2}\Bigr]-4\pi^{2}\nu_m^{2}\rho_{\mathrm{num}}\Bigr\},
 $$
 
 which is Madelung's action with the mechanical four-momentum. The free polar article cites Madelung (1927) and Takabayasi (1952) for the $\vec A=0$ case; the coupled case is the standard Madelung action of a charged scalar, and the article does not claim it as new. What the biquaternionic form supplies is the *derivation*: the action is not postulated as a hydrodynamic functional but obtained by substituting the word into the element action, so the two functions are the field's scale and the field's phase and not auxiliary variables.
@@ -273,16 +273,16 @@ The $\rho_{\mathrm{chg}}^{2}A^{2}$ term's role in the chart's reading. The quadr
 The coupled Klein–Gordon action in polar variables is the free polar action with the covariant bracket,
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_{\imath}(\mathcal A^{\mathrm{gco}}_{\imath})^{*}\bigr]-k_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_{\imath}(\mathcal A^{\mathrm{gco}}_{\imath})^{*}\bigr]-4\pi^{2}\nu_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\},
 \qquad
-\mathcal A^{\mathrm{gco}}_{\imath}=\mathcal A_{\imath}+\frac{2\pi i\,ϙ}{h}A_{\imath} .
+\mathcal A^{\mathrm{gco}}_{\imath}=\mathcal A_{\imath}+\frac{i\,ϙ}{h}A_{\imath} .
 $$
 
 The connection's additive term is real in the temporal slot and central imaginary in the spatial ones, so it joins the scale bracket and the phase bracket and reaches neither the boost nor the rotor; the metric, the frame density and the amplitude–rapidity block are the free article's. For a central field the action is Madelung's with the mechanical four-momentum,
 
 $$
 S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{-(\partial_{r'_t}\varrho)^{2}+\lvert\nabla \varrho\rvert^{2}
-+\frac{(2\pi)^{2} \rho_{\mathrm{num}}}{h^{2}}\bigl[(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)^{2}-\lvert\nabla S_{\tilde\Xi}-q\vec A\rvert^{2}\bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\},
++\frac{(2\pi)^{2} \rho_{\mathrm{num}}}{h^{2}}\bigl[(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)^{2}-\lvert\nabla S_{\tilde\Xi}-q\vec A\rvert^{2}\bigr]-4\pi^{2}\nu_m^{2}\rho_{\mathrm{num}}\Bigr\},
 $$
 
 and its two equations are the transport equation and the amplitude equation of the polar companion. The interaction is a linear term in the potential times the free phase rate plus a quadratic term with no phase, and the quadratic term is what gauge invariance requires. The kinetic matrix's rank is unchanged, so no constraint appears and no multiplier is needed; the eight-parameter chart's exactness by the invertible Jacobian is the free article's and survives. The vorticity of the mechanical current is $ϙ\vec B$ and its circulation is $h n+ϙ\Phi_B$.
@@ -304,7 +304,7 @@ and its two equations are the transport equation and the amplitude equation of t
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi \varrho/\varrho$ | The quantum potential; unchanged |
 | $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A)$ | The mechanical current; $\vec\nabla_\Phi\times=\rho_{\mathrm{chg}}\vec B$ |
 | $h n+ϙ\Phi_B$ | The mechanical circulation |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
 
 ## Further Reading
 

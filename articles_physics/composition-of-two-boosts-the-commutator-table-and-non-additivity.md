@@ -51,7 +51,7 @@ $$
 \vec e_\alpha\times\vec e_\beta=\sum_\gamma\epsilon_{\alpha\beta\gamma}\vec e_\gamma .
 $$
 
-The identity is the quaternion relation $\vec i\vec j=\vec k$ written in the corpus's basis, and it holds for any two real vectors $\vec a,\vec b$:
+The identity is the quaternion relation $\vec i\vec j=2\pi\vec\nu_{\Phi}$ written in the corpus's basis, and it holds for any two real vectors $\vec a,\vec b$:
 
 $$
 [\vec a,\vec b]=2\,\vec a\times\vec b .

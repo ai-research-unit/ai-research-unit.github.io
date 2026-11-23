@@ -4,7 +4,7 @@
 
 *The Proca Equation in Biquaternionic Polar Variables* tabulates four brackets and finds the phase identically zero on both branches; *The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables* reads that emptiness as the reality of the symbol. *The Coupled Proca Equation in Biquaternionic Polar Variables* then shows that on the complex carrier the phase returns and its motion is the gauge transformation. This article's first finding is where the returned phase sits in frequency space: not in the momentum, and in the curvature.
 
-The free symbol $\sigma=(k^{2}-k_m^{2})\delta-k_{\imath} k_{\jmath}$ is a real symmetric matrix, so it commutes with complex conjugation and cannot generate a phase. The coupled symbol is $-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F^{(\Phi)}-\pi_{\imath}\pi_{\jmath}$: Hermitian with an imaginary part, and the imaginary part is the curvature. The phase slot is therefore open in the coupled theory — but only at second order and only through the field strength, never through the potential.
+The free symbol $\sigma=(k^{2}-4\pi^{2}\nu_m^{2})\delta-2\pi\nu_{\imath} 2\pi\nu_{\jmath}$ is a real symmetric matrix, so it commutes with complex conjugation and cannot generate a phase. The coupled symbol is $-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F^{(\Phi)}-\pi_{\imath}\pi_{\jmath}$: Hermitian with an imaginary part, and the imaginary part is the curvature. The phase slot is therefore open in the coupled theory — but only at second order and only through the field strength, never through the potential.
 
 The second finding is that the branch label disappears and the cone with it. The free chart's two branches are the two signs of a real indefinite invariant; the coupled field's norm is a complex number of modulus $\varrho^{2}$ and a complex number has no sign, so there is nothing to label. In frequency space the free amplitude cone — codimension one, three-dimensional — collapses to the origin of the chart, which is codimension eight. One degenerate variety becomes one point, and the article states the collapse as a transfer of codimension and not as a loss of structure.
 
@@ -21,11 +21,11 @@ The algebra, the products, the two forms, the invertibles and the sectors are th
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath}\longmapsto i\pi_{\imath} ,
 \qquad
-\pi_{\imath}=\frac{h}{2\pi} k_{\imath}-q A_{\imath} ,
+\pi_{\imath}=h\,2\pi\nu_{\imath}-q A_{\imath} ,
 \qquad
-k_t'=\frac{\omega}{c} ,
+2\pi\nu_t'=\frac{\omega}{c} ,
 \qquad
-k^{2}=k_t'^{2}-\vec k_\Phi^{2}.
+k^{2}=2\pi\nu_t'^{2}-2\pi\vec\nu_\Phi^{2}.
 $$
 
 The coupled word is the parent's:
@@ -88,7 +88,7 @@ The constraint is still one real equation among the eight, as the parent says, a
 
 The parent proves it exactly: $\mathrm{Sc}(\tilde A^{\natural}\tilde A)$ is invariant under $\tilde A\mapsto\lambda\tilde A$ for a constant central unit $\lambda$, and the identity holds to fifteen digits. In the chart the invariance is the statement that the mass term is a function of the scale and of the frame angles and of nothing else, which is why the phase can be a coordinate when the mass is present.
 
-The mass term's symbol is $-k_m^{2}\delta_{\imath\jmath}$, which is a multiple of the identity in the amplitude space; a multiple of the identity commutes with every unitary and is annihilated by every generator of the phase rotation. **So the mass cannot break the phase symmetry and cannot supply the phase's equation**, and the parent's exact identity is the position-space face of that one sentence.
+The mass term's symbol is $-\nu_m^{2}\delta_{\imath\jmath}$, which is a multiple of the identity in the amplitude space; a multiple of the identity commutes with every unitary and is annihilated by every generator of the phase rotation. **So the mass cannot break the phase symmetry and cannot supply the phase's equation**, and the parent's exact identity is the position-space face of that one sentence.
 
 The mass does see the frame, and the parent's formula says how much. $\mathrm{Sc}(\tilde A^{\natural}\tilde A)$ reduces to $\varrho^{2}\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$, so the mass's value is the scale squared times a function of the rotor's axis and the boost's axis. The frame's non-Lorentz part is seen only through the angle between the two axes, and the parent states that as the mass term's one frame dependence.
 
@@ -164,7 +164,7 @@ The gauge transformation is the phase coordinate's motion, and on the symbol it 
 
 | Symbol | Meaning |
 | --- | --- |
-| $\pi_{\imath}=\frac{h}{2\pi} k_{\imath}-q A_{\imath}$ | The shifted four-momentum; the symbol's argument |
+| $\pi_{\imath}=h\,2\pi\nu_{\imath}-q A_{\imath}$ | The shifted four-momentum; the symbol's argument |
 | $\varkappa$ | The coupling |
 | $\varrho,\ \theta_{\mathrm{pha}},\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \phi_{\mathrm{rot}},\ \hat n_{\mathrm{ax}}$ | Scale, phase, rapidity, boost axis, rotor angle, rotor axis |
 | $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F-\pi_{\imath}\pi_{\jmath}$ | The coupled symbol; Hermitian, complex |

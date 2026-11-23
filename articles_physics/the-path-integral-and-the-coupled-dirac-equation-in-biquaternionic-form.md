@@ -7,11 +7,11 @@
 The coupled pair, and the covariant derivative.
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi,
 $$
 
 with $\tilde A_\Phi$ the potential biquaternion in the material sector $\mathbb{B}_\Phi$, central per component in the abelian case, and $ϙ$ the charge. The action that produces this pair is *The Lagrangian and the Coupled Dirac Equation*, and the solutions in a constant potential are *The Coupled Dirac Equation in Biquaternionic Form*. Neither is re-derived here. This article takes the action as its input and asks what the exponential does with it.
@@ -31,7 +31,7 @@ The same integral in the other coordinates is the polar companion. *The Path Int
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The material position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, with $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_t}^{2}+|\vec r|^{2}$. The mass parameter is $k_m=\frac{2\pi mc}{h}$. The worldline parameter is $\tau$ and the proper time $T$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The material position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, with $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_t}^{2}+|\vec r|^{2}$. The mass parameter is $\nu_m=\frac{mc}{h}$. The worldline parameter is $\tau$ and the proper time $T$.
 
 The one-form of the connection. The potential is written $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ with real coefficients in the abelian case. Its pairing with the worldline tangent is the **real** pairing
 
@@ -52,9 +52,9 @@ and this is the corpus's sign and not the textbook sign. *The Coupled Dirac Equa
 The two kernels. The propagator is the pair $\mathcal S_L,\mathcal S_R$ of *The Path Integral and the Dirac Equation in Biquaternionic Form*, now satisfying the two lines with the covariant operators,
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)},
+\tilde\nabla_{\mathrm{gco},\Phi}\mathcal S_R-2\pi\nu_m\mathcal S_L=i\delta^{(4)},
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)} .
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\mathcal S_L-2\pi\nu_m\mathcal S_R=i\delta^{(4)} .
 $$
 
 Each is an element of $\mathbb{B}$ and not a scalar, and the two are the conjugates of each other in the sense of the free article. The kernel is B-valued in the coupled case for the same reason as in the free case, and nothing about that changes here.
@@ -201,7 +201,7 @@ The flux is what composes additively in the amplitude. For two histories differi
 
 ## The Checkerboard With a Connection
 
-The discrete model takes the coupling without approximation. In Feynman's checkerboard, described in *The Path Integral and the Dirac Equation in Biquaternionic Form*, a path is a sequence of lightlike steps and corners, with a phase for each step and a factor $i\epsilon k_m$ for each corner. Minimal coupling adds one factor per step,
+The discrete model takes the coupling without approximation. In Feynman's checkerboard, described in *The Path Integral and the Dirac Equation in Biquaternionic Form*, a path is a sequence of lightlike steps and corners, with a phase for each step and a factor $i\epsilon \nu_m$ for each corner. Minimal coupling adds one factor per step,
 
 $$
 \exp\Bigl(-\frac{2\pi iϙ}{h}\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi\Bigr)
@@ -270,7 +270,7 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 | $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Gauge angle |
 | $\eta_{\imath\jmath}$ | The metric on the four slots, used in the Lorentz equation and in the kinetic normalisation |
 | $T$ | Proper time; $x(\tau)$ the worldline |
-| $k_m=\frac{2\pi mc}{h}$ | Mass parameter |
+| $\nu_m=\frac{mc}{h}$ | Mass parameter |
 
 ## Further Reading
 

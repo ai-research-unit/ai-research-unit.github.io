@@ -72,10 +72,10 @@ The $\varrho^{3}$ was checked pointwise and the checks are exact. The $4\times4$
 
 The four pieces sum to the Cartesian integral, and the sum was checked twice. In two dimensions, where the chart is the hyperbolic analogue of polar coordinates and the axis is a point, the four pieces — timelike with $\varepsilon=\pm1$, spacelike with $\hat u=\pm\vec e_z$ — reproduce $\pi=\int\!\!\int e^{-(a^{2}+b^{2})}\mathrm{d}a\,\mathrm{d}b$ to a relative $7.5\times10^{-11}$. In four dimensions the two branches reproduce $\pi^{2}/a^{2}=\int\mathrm{d}^{4}A\,e^{-a(a_t'^{2}+\vec A^{2})}$ to $1.6\times10^{-9}$, with the timelike part contributing $1.061070739$ and the spacelike part $4.778931874$ of the total $5.840002613$.
 
-The measure does not cancel against the exponent, and the reason is the order in time. The mass term is $\mp\frac12k_m^{2}\varrho^{2}$ on the two branches, so it is a function of $\varrho^{2}$ alone, and the radial integral is
+The measure does not cancel against the exponent, and the reason is the order in time. The mass term is $\mp\frac12\nu_m^{2}\varrho^{2}$ on the two branches, so it is a function of $\varrho^{2}$ alone, and the radial integral is
 
 $$
-\int_0^{\infty}\varrho^{3}\mathrm{d}\varrho\,e^{\mp\frac{i}{2\frac{h}{2\pi}}k_m^{2}\varrho^{2}}\ \propto\ \frac{1}{(k_m^{2})^{2}} ,
+\int_0^{\infty}\varrho^{3}\mathrm{d}\varrho\,e^{\mp\frac{i}{2\frac{h}{2\pi}}\nu_m^{2}\varrho^{2}}\ \propto\ \frac{1}{(\nu_m^{2})^{2}} ,
 $$
 
 which is the $a^{-2}$ a four-component Gaussian carries. The Jacobian's three powers and the exponent's one power of $\varrho^{2}$ together give exactly the four components' worth of Gaussian weight. In the scalar chart the opposite happened: the exponent was linear in $n=\varrho^{2}$, the Jacobian $\varrho\,\mathrm{d}\varrho=\frac12\mathrm{d}n$ cancelled it exactly, and the measure left no trace. A linear exponent cancels the Jacobian; a quadratic one is completed by it.
@@ -87,11 +87,11 @@ The rapidity's integral is not convergent on the mass term alone, and the kineti
 The exponent's three pieces are the full square, the divergence's square, and the mass. In the chart the action is
 
 $$
-S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^{2}\Bigr]-\tfrac12S^{2}-\tfrac12k_m^{2}\langle\tilde A_\Phi\rangle_\natural\Bigr],
+S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^{2}\Bigr]-\tfrac12S^{2}-\tfrac124\pi^{2}\nu_m^{2}\langle\tilde A_\Phi\rangle_\natural\Bigr],
 \qquad S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr),
 $$
 
-and each piece has a chart reading. The first is a quadratic form in the four gradients with a metric the frame builds; the second is a square of a scalar; the third is $\mp\frac12k_m^{2}\varrho^{2}$.
+and each piece has a chart reading. The first is a quadratic form in the four gradients with a metric the frame builds; the second is a square of a scalar; the third is $\mp\frac12\nu_m^{2}\varrho^{2}$.
 
 The mass term's sign is the branch's and its magnitude is the scale's. On the timelike branch the scale enters with the sign of a positive mass term and the scale equation has the massive form; on the spacelike branch the sign is reversed. Nothing in the element form displays this, because the element form's mass term is indefinite and the branch is not a thing the element form can name.
 
@@ -102,7 +102,7 @@ The first piece is where the frame's rapidity enters. The quadratic form's coeff
 Stationarity in the scale gives the scale equation. Varying $\varrho$ in the chart's exponent gives
 
 $$
-\bigl(\Box_\Phi-k_m^{2}\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^{2}\bigr)=0 ,
+\bigl(\Box_\Phi-4\pi^{2}\nu_m^{2}\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^{2}\bigr)=0 ,
 $$
 
 which is the polar equation article's first equation, with the branch's sign absorbed in the mass term's sign. It is a Klein–Gordon equation for the scale with a source built from the frame's Maurer–Cartan form.
@@ -133,7 +133,7 @@ The classical field is readable, and it is the saddle. The saddle of the sourced
 
 The kernel is not readable, and the count is the reason. The two-point function $\langle\tilde A_\Phi(x)\tilde A_\Phi(y)\rangle=i \frac{h}{2\pi} P^{-1}(x-y)$ is a bivector-valued distribution: sixteen real components at each pair of points, symmetric in the pair. A bivector is not a four-vector, so the two-branch word has nothing to act on. **The chart's carrier is four; the kernel's carrier is sixteen; the chart cannot be applied to an object that is not in its carrier.**
 
-What can be read is the kernel's action on a fixed direction. For a fixed real unit $\hat e$ the object $P^{-1}\hat e$ is a material-sector element at each point, and the chart reads it. So the chart reads a column of the propagator and not the propagator, and the column is enough for the statements about a source that points one way — the transverse and longitudinal responses, the $1/k_m^{2}$ term and its divergence — but not for a statement about the kernel's own structure.
+What can be read is the kernel's action on a fixed direction. For a fixed real unit $\hat e$ the object $P^{-1}\hat e$ is a material-sector element at each point, and the chart reads it. So the chart reads a column of the propagator and not the propagator, and the column is enough for the statements about a source that points one way — the transverse and longitudinal responses, the $1/\nu_m^{2}$ term and its divergence — but not for a statement about the kernel's own structure.
 
 The propagator's split has a chart reading through the column, and it is the branch's. A transverse source's response is a spacelike-dominated value and a longitudinal source's is not, so the two projector images fall on the two sides of the lightlike cone in the leading case. The chart therefore displays the three–one split as a split between the branches, not as a split of a bivector; the count is the same three plus one, and the presentation is the carrier's.
 
@@ -177,7 +177,7 @@ Does not add a value. Every closed form quoted is the element companion's; the d
 
 The polar reading of the Proca functional integral is the substitution of the two-branch word into the element companion's integral, and its content is four statements about where the chart stops. The weight is central and the chart is anti-Hermitian, so the weight has no chart coordinate: the scale-one sentence and the Maslov phase belong to the scalar pair and not to this one.
 
-The measure is $\varrho^{3}\sinh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega$ on the timelike branch and $\varrho^{3}\cosh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega$ on the spacelike one, checked pointwise to $5.6\times10^{-10}$ and summed to the Cartesian integral to $7.5\times10^{-11}$ in two dimensions and $1.6\times10^{-9}$ in four. The radial power is the carrier's dimension less one, and the mass term's $\mp\frac12k_m^{2}\varrho^{2}$ completes the Gaussian: $\varrho^{3}$ and $\varrho^{2}$ give $a^{-2}$, which is four components' worth. The scalar chart's cancellation is the linear-exponent special case.
+The measure is $\varrho^{3}\sinh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega$ on the timelike branch and $\varrho^{3}\cosh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega$ on the spacelike one, checked pointwise to $5.6\times10^{-10}$ and summed to the Cartesian integral to $7.5\times10^{-11}$ in two dimensions and $1.6\times10^{-9}$ in four. The radial power is the carrier's dimension less one, and the mass term's $\mp\frac12\nu_m^{2}\varrho^{2}$ completes the Gaussian: $\varrho^{3}$ and $\varrho^{2}$ give $a^{-2}$, which is four components' worth. The scalar chart's cancellation is the linear-exponent special case.
 
 The divergence's square is a displayed term of the exponent and its saddle is the Lorenz condition, so the constraint is an equation and not a delta. The two saddles are the companion's scale equation and transport equation. The classical field is readable; the kernel is not, because it is a bivector and the carrier is a four-vector; and the product of two field values leaves the sector, so the chart has no composition law to offer.
 
@@ -191,7 +191,7 @@ The divergence's square is a displayed term of the exponent and its saddle is th
 | $\hat u$ | Axis of the boost, or the direction of $\vec A$ on the spacelike branch |
 | $\langle\tilde A_\Phi\rangle_\natural=-\varrho^{2}$ | Timelike branch |
 | $\langle\tilde A_\Phi\rangle_\natural=+\varrho^{2}$ | Spacelike branch |
-| $\mp\frac12k_m^{2}\varrho^{2}$ | The mass term; the sign is the branch's |
+| $\mp\frac12\nu_m^{2}\varrho^{2}$ | The mass term; the sign is the branch's |
 | $\varrho^{3}\sinh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega_{2}$ | Timelike volume element |
 | $\varrho^{3}\cosh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega_{2}$ | Spacelike volume element |
 | $\int_0^\infty \varrho^{3}\mathrm{d}\varrho\,e^{-a\varrho^{2}}=\frac{1}{2a^{2}}$ | The radial integral; four components' worth |

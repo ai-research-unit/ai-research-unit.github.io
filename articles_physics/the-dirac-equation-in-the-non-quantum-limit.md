@@ -16,11 +16,11 @@ and that the four brackets are of four types. The limit is an ordering of these 
 
 What makes this family different from the two scalar ones. The Klein–Gordon limit produces one equation and one transport law; here the classical object is a fluid with a velocity *and* a spin, and order one carries three transport laws — the density, the velocity and the spin. The limit's output is a spinning fluid, and the spin's law is the one the corpus's *Relativistic Mechanics from the Dirac Wave* derives.
 
-Order zero is not only a mass shell, and that is the family's characteristic statement. In the scalar case the eikonal fixes a relation among the four components of the phase gradient. Here, once the phase bracket dominates, the equation becomes algebraic in the frame, and its content is the mass shell *plus* a polarisation condition: given the momentum, the pair $i\tilde K_\Phi\tilde\Xi_0^{R}=k_m\tilde\Xi_0^{L}$ fixes the frame up to the two branches. The Dirac eikonal fixes the momentum and the spin's polarisation together.
+Order zero is not only a mass shell, and that is the family's characteristic statement. In the scalar case the eikonal fixes a relation among the four components of the phase gradient. Here, once the phase bracket dominates, the equation becomes algebraic in the frame, and its content is the mass shell *plus* a polarisation condition: given the momentum, the pair $2\pi i\tilde\Upsilon_\Phi\tilde\Xi_0^{R}=2\pi\nu_m\tilde\Xi_0^{L}$ fixes the frame up to the two branches. The Dirac eikonal fixes the momentum and the spin's polarisation together.
 
-The parent is honest about how much of that is a result, and this article repeats the honesty. The mass-shell relation $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$ is, in the parent's words, *a restatement and not a result*: the hypothesis defines $\tilde K_\Phi$ as $ik_m$ times an invertible element, so the conclusion repeats the definition. What survives the objection is the geometric content, and that content is what the limit uses.
+The parent is honest about how much of that is a result, and this article repeats the honesty. The mass-shell relation $\tilde\Upsilon_\Phi\tilde\Upsilon_\Phi^{\natural}=-\nu_m^{2}$ is, in the parent's words, *a restatement and not a result*: the hypothesis defines $\tilde\Upsilon_\Phi$ as $ik_m$ times an invertible element, so the conclusion repeats the definition. What survives the objection is the geometric content, and that content is what the limit uses.
 
-The frame's ordering is a hypothesis and it is stated here as one. The scale's derivative is order $\epsilon$ by the criterion; the boost's must be too, because the velocity field of a slowly varying fluid varies on the fluid's own length. The rotor's is order one for a different reason: the spin changes only as the momentum changes, since a boost and a rotor that are functions of $\tilde K_\Phi$ change at the rate $\tilde K_\Phi$ changes, and that rate is order one. No article in the corpus states either assignment, and this one states both.
+The frame's ordering is a hypothesis and it is stated here as one. The scale's derivative is order $\epsilon$ by the criterion; the boost's must be too, because the velocity field of a slowly varying fluid varies on the fluid's own length. The rotor's is order one for a different reason: the spin changes only as the momentum changes, since a boost and a rotor that are functions of $\tilde\Upsilon_\Phi$ change at the rate $\tilde\Upsilon_\Phi$ changes, and that rate is order one. No article in the corpus states either assignment, and this one states both.
 
 What the article establishes, in five sentences. The logarithmic derivative is exact and its four brackets are the parent's. The limit assigns order zero to the phase bracket and order one to the other three, and order zero of the equation is the algebraic frame system plus the mass shell. Order one carries three transport laws — the continuity equation, the velocity's transport, and the spin's transport — and the last two are the Lorentz force and the precession. The current and the spin are exact in the parent and the limit does not touch them: $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ and $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\hat s$. The equation is first order, so the family has no amplitude-curvature term, and its order-two content is the product of two order-one brackets, of which the scalar part reproduces the Klein–Gordon quantum potential on iteration and the spin-dependent part is not derived anywhere in the corpus.
 
@@ -28,7 +28,7 @@ What is not new. The semiclassical Dirac equation's WKB structure, the polarisat
 
 The restriction. The complete polar decomposition exists only for an $N$-regular element, $N(\tilde\Xi)\neq0$, and the parent's boxed statement says so. The limit is defined on that domain and nowhere else, and a node is where both the word and the spin's axis lose their meaning.
 
-Conventions. Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$ and the boost and rotor real units; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $\tilde K_\Phi=i(\frac{2\pi E}{h\,c})e_{t}+\frac{2\pi \vec p}{h}$; $\tilde P_\Phi=imc\,\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde V_\Phi=\tilde P_\Phi/m=\gamma(ic\,e_{t}+\vec v)$; $k_m=\frac{2\pi mc}{h}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $\epsilon=1/(k_{\Phi}L)$ with $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$ and $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
+Conventions. Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$ and the boost and rotor real units; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $\tilde\Upsilon_\Phi=i(\frac{E}{h\,c})e_{t}+\frac{\vec p}{h}$; $\tilde P_\Phi=imc\,\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde V_\Phi=\tilde P_\Phi/m=\gamma(ic\,e_{t}+\vec v)$; $\nu_m=\frac{mc}{h}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $\epsilon=1/(2\pi\nu_{\Phi}L)$ with $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$ and $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
 
 ## The Word and the Four Brackets
 
@@ -39,14 +39,14 @@ The four brackets and their types, from the parent.
 | term | type | what it is |
 |---|---|---|
 | $\tfrac12\partial_{\imath}\ln \varrho^{2}$ | real central scalar | the density's transport |
-| $i\partial_{\imath}\theta_{\mathrm{pha}}$ | central imaginary | the momentum, $\tilde K_\Phi$ |
+| $i\partial_{\imath}\theta_{\mathrm{pha}}$ | central imaginary | the momentum, $\tilde\Upsilon_\Phi$ |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the velocity's transport |
 | $\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}$ | real vector part | the spin's transport |
 
 The second bracket is the four-momentum, exactly. $\partial/\partial R_t=-i\partial/\partial r'_{t}$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, so
 
 $$
-\tilde\nabla_\Phi\theta_{\mathrm{pha}}=-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_{t}}e_{t}+\vec\nabla_\Phi\theta_{\mathrm{pha}}=i\frac{2\pi E}{h c}e_{t}+\frac{2\pi \vec p}{h}=\tilde K_\Phi ,
+\tilde\nabla_\Phi\theta_{\mathrm{pha}}=-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_{t}}e_{t}+\vec\nabla_\Phi\theta_{\mathrm{pha}}=i\frac{E}{h c}e_{t}+\frac{\vec p}{h}=\tilde\Upsilon_\Phi ,
 $$
 
 with $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ and $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_{t}$. No factor is inserted by hand: the two temporal slots match because both are $i$ times a rate.
@@ -69,7 +69,7 @@ The structure that matters for the limit. The first bracket is a gradient of a s
 
 ## The Ordering
 
-The criterion. $\epsilon=1/(k_{\Phi}L)$, one power per derivative of a slowly varying quantity, with the phase the only fast one. The table is the article's premise.
+The criterion. $\epsilon=1/(2\pi\nu_{\Phi}L)$, one power per derivative of a slowly varying quantity, with the phase the only fast one. The table is the article's premise.
 
 | bracket | order | reason |
 |---|---|---|
@@ -89,16 +89,16 @@ What the ordering does not use. It does not use the potential's strength, becaus
 Keep the phase bracket alone. Then $\partial_{\imath}\tilde\Xi=i(\partial_{\imath}\theta_{\mathrm{pha}})\tilde\Xi$, the derivative is a left multiplication by the momentum, and the equation becomes algebraic:
 
 $$
-i\tilde K_\Phi\tilde\Xi_0^{R}=k_m\tilde\Xi_0^{L},
+2\pi i\tilde\Upsilon_\Phi\tilde\Xi_0^{R}=2\pi\nu_m\tilde\Xi_0^{L},
 \qquad
-i\tilde K_\Phi^{\natural}\tilde\Xi_0^{L}=k_m\tilde\Xi_0^{R},
+2\pi i\tilde\Upsilon_\Phi^{\natural}\tilde\Xi_0^{L}=2\pi\nu_m\tilde\Xi_0^{R},
 \qquad
-\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}.
+\tilde\Upsilon_\Phi\tilde\Upsilon_\Phi^{\natural}=-4\pi^{2}\nu_m^{2}.
 $$
 
-The third relation is not independent and the parent says so. With $\tilde K_\Phi=ik_m\tilde M$ and $N(\tilde M)=1$ the norm follows, and conversely every element of that norm is of that form. The mass shell is the statement that the four-wavevector over $k_m$ is invertible, that is the image of the time axis under a Lorentz transformation — and in the word it holds identically, because $\tilde K_\Phi=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$.
+The third relation is not independent and the parent says so. With $\tilde\Upsilon_\Phi=i\nu_m\tilde M$ and $N(\tilde M)=1$ the norm follows, and conversely every element of that norm is of that form. The mass shell is the statement that the four-wavevector over $\nu_m$ is invertible, that is the image of the time axis under a Lorentz transformation — and in the word it holds identically, because $\tilde\Upsilon_\Phi=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$.
 
-What order zero therefore contains, stated exactly. One relation among the four components of $\tilde K_\Phi$ — the mass shell — and one relation between the two chiral halves that fixes the frame given the momentum,
+What order zero therefore contains, stated exactly. One relation among the four components of $\tilde\Upsilon_\Phi$ — the mass shell — and one relation between the two chiral halves that fixes the frame given the momentum,
 
 $$
 \boxed{\ \tilde\Xi_0^{L}=-\mathcal B_\Psi\,\tilde\Xi_0^{R},\qquad \mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}\ }
@@ -172,7 +172,7 @@ The brackets' types were checked against the parent's table. The boost's contrib
 
 The two norms were checked. $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ follows from $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ and the inverse of an invertible element, and $\hat s^{2}=-e_{t}$ from $\tilde u_{\mathrm r}\vec e_z^{2}\tilde u_{\mathrm r}^{-1}$. Both are identities and neither uses a plane wave.
 
-The mass-shell restatement was checked to be a restatement. With $\tilde K_\Phi=ik_m\tilde M$ and $N(\tilde M)=1$, $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$ follows in one line, and the converse holds with $\tilde M=\tilde K_\Phi/(ik_m)$. The parent's own objection is accepted and repeated: this is a definition read backwards, not a derived relation.
+The mass-shell restatement was checked to be a restatement. With $\tilde\Upsilon_\Phi=i\nu_m\tilde M$ and $N(\tilde M)=1$, $\tilde\Upsilon_\Phi\tilde\Upsilon_\Phi^{\natural}=-\nu_m^{2}$ follows in one line, and the converse holds with $\tilde M=\tilde\Upsilon_\Phi/(2\pi i\nu_m)$. The parent's own objection is accepted and repeated: this is a definition read backwards, not a derived relation.
 
 **What was not checked.** No solution of the Dirac equation was integrated, no precession rate was computed numerically, and no order-two spin term was derived. The claims are about identities and term counts, and the identities were verified.
 
@@ -180,7 +180,7 @@ The mass-shell restatement was checked to be a restatement. With $\tilde K_\Phi=
 
 The word has four factors and the derivative has four brackets: the scale's, the phase's, the boost's and the rotor's. The limit assigns order zero to the phase's and order one to the other three.
 
-Order zero is the algebraic frame system plus the mass shell: $i\tilde K_\Phi\tilde\Xi_0^{R}=k_m\tilde\Xi_0^{L}$ with $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$, and the two halves are related by the boost, $\tilde\Xi_0^{L}=-\mathcal B_\Psi\tilde\Xi_0^{R}$. The Dirac eikonal fixes the momentum and the polarisation together, which no scalar eikonal does.
+Order zero is the algebraic frame system plus the mass shell: $2\pi i\tilde\Upsilon_\Phi\tilde\Xi_0^{R}=2\pi\nu_m\tilde\Xi_0^{L}$ with $\tilde\Upsilon_\Phi\tilde\Upsilon_\Phi^{\natural}=-\nu_m^{2}$, and the two halves are related by the boost, $\tilde\Xi_0^{L}=-\mathcal B_\Psi\tilde\Xi_0^{R}$. The Dirac eikonal fixes the momentum and the polarisation together, which no scalar eikonal does.
 
 Order one carries three transport laws: the density's, the velocity's and the spin's. The first is the continuity equation, the second is the Lorentz force in the coupled case, and the third is the precession including Thomas's, and the corpus derives the last two in *Relativistic Mechanics from the Dirac Wave*.
 
@@ -198,12 +198,12 @@ Order two is not a term of this equation at all: it is first order, so the quadr
 | $\tilde U_{\Psi,\mathrm b}$ | The boost, a real unit |
 | $\tilde u_{\mathrm r}$ | The rotor, a real unit |
 | $\mathcal A_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$ | The logarithmic derivative; four brackets |
-| $\tilde K_\Phi=i(\frac{2\pi E}{h\,c})e_{t}+\frac{2\pi \vec p}{h}$ | The four-wavevector; the phase bracket |
+| $\tilde\Upsilon_\Phi=i(\frac{E}{h\,c})e_{t}+\frac{\vec p}{h}$ | The four-wavevector; the phase bracket |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The four-velocity |
 | $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$ | The boost's inverse square; the chiral link |
 | $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ | The current, exact |
 | $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\hat s$, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin, exact |
-| $\epsilon=1/(k_{\Phi}L)$ | The parameter; one power per derivative of a slow quantity |
+| $\epsilon=1/(2\pi\nu_{\Phi}L)$ | The parameter; one power per derivative of a slow quantity |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The scalar quantum potential |
 
 ## Further Reading

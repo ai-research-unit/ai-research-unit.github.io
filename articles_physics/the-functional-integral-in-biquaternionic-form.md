@@ -14,7 +14,7 @@ The contributions divide cleanly, and the division is the content of the article
 $$
 \langle \tilde{Q},\tilde{Q}_1\rangle = 2\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Q}^{*}\tilde{Q}_1\big),
 $$
-which is the positive-definite Hilbert–Schmidt form on the algebra; the sign split belongs to the biquaternion norm $\langle\cdot\rangle_{\natural}$, not to this pairing. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box_\Phi-k_m^{2}$ the quadratic action is
+which is the positive-definite Hilbert–Schmidt form on the algebra; the sign split belongs to the biquaternion norm $\langle\cdot\rangle_{\natural}$, not to this pairing. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ the quadratic action is
 $$
 S[\tilde{Ξ}] = \int d^4r\; \Big\langle \tilde{Ξ}, W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle,
 \qquad
@@ -80,7 +80,7 @@ $$
 S[\tilde{Ξ}] = \int d^4r\;\Big\langle \tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle
 + S_{\mathrm{int}}[\tilde{Ξ}],
 \qquad
-W_{\mathrm{kinetic}} = \Box_\Phi-k_m^{2} ,
+W_{\mathrm{kinetic}} = \Box_\Phi-4\pi^{2}\nu_m^{2} ,
 $$
 where $W_{\mathrm{kinetic}}$ is built from the central d'Alembertian and a central mass, and $S_{\mathrm{int}}$ collects interactions. Three properties of this action are the algebra's.
 
@@ -88,7 +88,7 @@ where $W_{\mathrm{kinetic}}$ is built from the central d'Alembertian and a centr
 2. **It is invariant under the biquaternion-norm isometries.** The quadratic term with $W_{\mathrm{kinetic}}$ central is unchanged by left multiplication $\tilde{Ξ}\mapsto\tilde U\tilde{Ξ}$ and right multiplication $\tilde{Ξ}\mapsto\tilde{Ξ}\tilde u$ by unit real quaternions, $\langle\tilde U\rangle_{\natural} = \langle\tilde U,\tilde U\rangle_{\natural}=\langle\tilde u\rangle_{\natural}=e_t$, since $\tilde U^{*}\tilde U=\tilde u\tilde u^{*}=e_t$. The free biquaternion field therefore carries an $SU(2)\times SU(2)$ global symmetry at the level of the quadratic action. Which part of it survives interactions is a question about $S_{\mathrm{int}}$, not about the quadratic term.
 3. **It is sector-blind when $W_{\mathrm{kinetic}}$ is central.** A central $W_{\mathrm{kinetic}}$ commutes with the projections onto $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, so it does not mix the sectors. The consequences are computed in the next two sections.
 
-The mass term requires a word of care, because the framework's **Dirac** mass is not central. As *The Dirac Equation in Biquaternionic Form* records, the Dirac mass term is linear and chirality-off-diagonal, $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$, and it acts as a *right* multiplication, which is what allows it to relate the two minimal left ideals (the chiralities). For a **scalar** example, the mass is the central $m^2$ above and the quadratic operator is sector-diagonal. Both cases are handled by the Gaussian formula; the difference is whether $W_{\mathrm{kinetic}}$ is central. The scalar case is taken as the explicit example below, and the fermionic case is remarked on where the structure differs. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+The mass term requires a word of care, because the framework's **Dirac** mass is not central. As *The Dirac Equation in Biquaternionic Form* records, the Dirac mass term is linear and chirality-off-diagonal, $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$, and it acts as a *right* multiplication, which is what allows it to relate the two minimal left ideals (the chiralities). For a **scalar** example, the mass is the central $m^2$ above and the quadratic operator is sector-diagonal. Both cases are handled by the Gaussian formula; the difference is whether $W_{\mathrm{kinetic}}$ is central. The scalar case is taken as the explicit example below, and the fermionic case is remarked on where the structure differs. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ## The Gaussian Functional Integral
 
@@ -110,7 +110,7 @@ $$
 \boxed{\;\int \mathcal{D}\tilde{Ξ}\; \exp(-\frac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle + \langle\tilde J_{\Phi},\tilde{Ξ}\rangle)
 = \big(\det W_{\mathrm{kinetic}}\big)^{-1/2}\, \exp(\frac12\langle\tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\rangle)\;},
 $$
-where $\langle\tilde{Ξ},\tilde{Ξ}\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ is the real bilinear form of the action, the determinant is taken on the module, and each mode contributes its two complex dimensions. In the Euclidean reading used for the Gaussian the operator $K$ is the kinetic operator $-\Box_\Phi+k_m^{2}$, whose momentum symbol is the mass-shell operator $\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+m^{2}\,c^{2}$ on the free element $\tilde Q_{\Phi}\in\mathbb{B}_{\Phi}$; the Lorentzian action's operator $W_{\mathrm{kinetic}}=\Box_\Phi-k_m^{2}$ is its negative, a sign that leaves the determinant unchanged on the two-complex-dimensional module but fixes the sign of the kernel $W_{\mathrm{kinetic}}{}^{-1}$. The determinant is the object that *The Functional Determinant in Biquaternionic Form* computes; this article records only that the Gaussian integral reduces to it.
+where $\langle\tilde{Ξ},\tilde{Ξ}\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ is the real bilinear form of the action, the determinant is taken on the module, and each mode contributes its two complex dimensions. In the Euclidean reading used for the Gaussian the operator $K$ is the kinetic operator $-\Box_\Phi+4\pi^{2}\nu_m^{2}$, whose momentum symbol is the mass-shell operator $\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+m^{2}\,c^{2}$ on the free element $\tilde Q_{\Phi}\in\mathbb{B}_{\Phi}$; the Lorentzian action's operator $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ is its negative, a sign that leaves the determinant unchanged on the two-complex-dimensional module but fixes the sign of the kernel $W_{\mathrm{kinetic}}{}^{-1}$. The determinant is the object that *The Functional Determinant in Biquaternionic Form* computes; this article records only that the Gaussian integral reduces to it.
 
 **Finite-dimensional verification.** The **real** form of the identity was checked as follows, on a real symmetric — hence Hermitian — matrix $K$, with complex arithmetic carried through the elimination. For
 $$
@@ -160,15 +160,15 @@ $$
 S_E[\xi] = \int d^4r_E\;\tfrac12\Big(\partial/\partial R_{\imath}\xi\,\partial/\partial R_{\imath}\xi + m^2\xi^2\Big)
 = \tfrac12\int d^4r_E\;\xi\big(-\Box_\Phi + m^2\big)\xi ,
 $$
-with $\Box_\Phi$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_{\mathrm{eu}}^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box_\Phi+k_m^{2}$ continued to the Euclidean case, with $\Box_\Phi=\sum_{\imath}\partial^2/\partial R_{\imath}^2$; the wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ has biquaternion norm $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$, which becomes $k_{\mathrm{eu}}^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$.
+with $\Box_\Phi$ the Euclidean Laplacian, and in momentum space the kinetic operator is $\nu_{\mathrm{eu}}^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box_\Phi+4\pi^{2}\nu_m^{2}$ continued to the Euclidean case, with $\Box_\Phi=\sum_{\imath}\partial^2/\partial R_{\imath}^2$; the wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ has biquaternion norm $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$, which becomes $\nu_{\mathrm{eu}}^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$.
 
 **The Gaussian result.** The free generating functional is
 $$
-Z_0[J] = \exp\left(\frac12\int\frac{d^4k_{\mathrm{eu}}}{(2\pi)^4}\,\frac{J(-k)J(k)}{k_{\mathrm{eu}}^2+m^2}\right),
+Z_0[J] = \exp\left(\frac12\int\frac{d^42\pi\nu_{\mathrm{eu}}}{(2\pi)^4}\,\frac{J(-k)J(k)}{4\pi^{2}\nu_{\mathrm{eu}}^2+m^2}\right),
 $$
 and the two-point function is the propagator
 $$
-\big\langle \xi(x)\xi(y)\big\rangle = \frac{1}{k_{\mathrm{eu}}^2+m^2}
+\big\langle \xi(x)\xi(y)\big\rangle = \frac{1}{4\pi^{2}\nu_{\mathrm{eu}}^2+m^2}
 \;\longrightarrow\;
 D_F(x-y) \quad\text{(Lorentzian)},
 $$
@@ -229,11 +229,11 @@ a product of Lebesgue measures on the coefficients, one per biquaternion compone
 
 **The gap.** The algebra does not supply: the space of field configurations (infinite-dimensional, and outside the finite-dimensional algebra); the action functional beyond its quadratic part; the choice of regulator; and the definition of the continuum measure. These are the analytic data of the theory, and they are transcribed from the standard treatment. The path-integral article's gap for the space of paths is the same gap in one fewer dimension. What the algebra *does* supply is the scalar extraction that turns a biquaternion Lagrangian into an action, the two-sector structure that factorizes the free theory, the central character of the kinetic operator, and the identification of the Euclidean rotation with a sector relabeling.
 
-**Fermionic fields.** On the spinor-module representative of the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, written as the two-by-two array of its two lines with the mass on the diagonal, the functional integral is over Grassmann-valued spinors, and the Gaussian integral returns a determinant rather than an inverse square root,
+**Fermionic fields.** On the spinor-module representative of the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, written as the two-by-two array of its two lines with the mass on the diagonal, the functional integral is over Grassmann-valued spinors, and the Gaussian integral returns a determinant rather than an inverse square root,
 $$
 \int\mathcal{D}\tilde{Ξ}^{\dagger}\,\mathcal{D}\tilde{Ξ}\;\exp\big(\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,\mathcal{F}\,\tilde{Ξ}\big) = \det\mathcal{F},
 \qquad
-\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\ \mathcal{F}_L&-k_m\end{pmatrix},
+\mathcal{F}=\begin{pmatrix}-2\pi\nu_m&\mathcal{F}_R\ \mathcal{F}_L&-2\pi\nu_m\end{pmatrix},
 $$
 with the spinor structure carried by the module and the mass term linear and chirality-off-diagonal as the conventions require. The Grassmann integral and the determinant are standard; the biquaternion content is the spinor module on which the operator acts and the mass term's right-multiplication form. The fermionic path integral is developed in its own place in the corpus and is not rebuilt here.
 
@@ -259,7 +259,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 
 ## Summary
 
-The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box_\Phi-k_m^{2}$ with $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\partial^2/\partial R_{\imath}^2$,
+The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ with $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\partial^2/\partial R_{\imath}^2$,
 $$
 S[\tilde{Ξ}]=\int d^4r\;\Big\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle,
 \qquad
@@ -287,15 +287,15 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $\mathrm{Sc}(\tilde{Q})=Q_t$ (complex scalar part) | Scalar extraction; the scalar part converts a biquaternion into a number |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form of the action; sector-orthogonal |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\partial^2/\partial R_{\imath}^2$ | d'Alembertian, series convention |
-| $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$ | Wave biquaternion; Euclidean $k_{\mathrm{eu}}^2$ |
-| $S[\tilde{Ξ}]=\int d^4r\,\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle$ | Quadratic biquaternion action; $W_{\mathrm{kinetic}}=\Box_\Phi-k_m^{2}$ |
+| $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$ | Wave biquaternion; Euclidean $\nu_{\mathrm{eu}}^2$ |
+| $S[\tilde{Ξ}]=\int d^4r\,\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle$ | Quadratic biquaternion action; $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ |
 | $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(-\frac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ | Functional integral with source |
 | $Z_0=(\det W_{\mathrm{kinetic}})^{-1/2}\exp(\frac12\langle\tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\rangle)$ | Gaussian result; $\prod_k(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2})^{-1}$ per mode for the free central operator |
 | $W[\tilde J_{\Phi}]=\log Z[\tilde J_{\Phi}]$, $W-W_0=\tfrac12\langle\tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\rangle$ | Free energy |
 | $r'_t\mapsto-i\tau$, $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$ | Wick rotation; $\exp(iS)\to \exp(-S_E)$ |
 | $O$, $O_{\mathrm c}$, $O_{\mathrm{cc}}=O$ | Region, causal complement, causal completeness (localisation) |
 | $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ | Wedge modular Hamiltonian (the worked causally complete region) |
-| $\det\mathcal{F}$, $\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\ \mathcal{F}_L&-k_m\end{pmatrix}$ | Fermionic Gaussian result (Grassmann integral) |
+| $\det\mathcal{F}$, $\mathcal{F}=\begin{pmatrix}-2\pi\nu_m&\mathcal{F}_R\ \mathcal{F}_L&-2\pi\nu_m\end{pmatrix}$ | Fermionic Gaussian result (Grassmann integral) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

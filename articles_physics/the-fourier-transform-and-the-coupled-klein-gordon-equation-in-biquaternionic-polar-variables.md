@@ -6,7 +6,7 @@ The polar parent has a table of what the chart shows and what it hides, and one 
 
 The polar form's second-order object is a modulus squared, $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\big]$, and a modulus squared differentiates to one covariant derivative composed with its own adjoint. That is the squared reading of the covariant square, with the same charge in both factors. The paired reading needs two opposite charges once each, and a modulus cannot supply two charges: it has one.
 
-So the chart is the chart of one equation, and the article says which. Its dispersion is the mass shell in the mechanical four-momentum, and in the mechanical variables the squared reading is *exactly* free while the paired reading keeps a residual linear in the frequency. Measured at $k_t'=2.770584$: the mechanical variable is $3.080584$, the squared reading's residual at that point is $0.0$, and the paired reading's residual is $-1.909962$, which is $2c_t$ times the mechanical frequency.
+So the chart is the chart of one equation, and the article says which. Its dispersion is the mass shell in the mechanical four-momentum, and in the mechanical variables the squared reading is *exactly* free while the paired reading keeps a residual linear in the frequency. Measured at $2\pi\nu_t'=2.770584$: the mechanical variable is $3.080584$, the squared reading's residual at that point is $0.0$, and the paired reading's residual is $-1.909962$, which is $2c_t$ times the mechanical frequency.
 
 A curl is a derivative of a vector field, and the chart carries vector fields, so the chart shows the curl. A cross term is a product of two different first-order factors, and the chart carries one factor squared, so the chart cannot show the cross term. Visibility of $\tilde F$ and ability to distinguish the two equations are not the same thing, and the chart has the first without the second.
 
@@ -19,14 +19,14 @@ This article is the polar reading of the main article's symbols. It states the c
 The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The word is the polar parent's, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and on a central field it collapses to $\varrho\,e^{i\theta_{\mathrm{pha}}}$. The connection is written anti-Hermitially, $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, and the symbol rule is quoted in its derived form:
 
 $$
-\tilde\nabla_\Phi\longmapsto i\tilde K_\Phi,
+\tilde\nabla_\Phi\longmapsto 2\pi i\tilde\Upsilon_\Phi,
 \qquad
-\Box_\Phi\longmapsto-\langle\tilde K_\Phi\rangle_\natural,
+\Box_\Phi\longmapsto-\langle\tilde\Upsilon_\Phi\rangle_\natural,
 \qquad
-\tilde K_\Phi=ik_t'e_t+\vec k_\Phi .
+\tilde\Upsilon_\Phi=2\pi i\nu_t'e_t+2\pi\vec\nu_\Phi .
 $$
 
-$c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_\eta=i\frac{2\pi ϙ}{h}A_\eta$ imaginary; the free slot symbols are $\sigma_t=-k_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary; and the mechanical four-momentum is $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$, whose temporal slot is $E+ϙc\,a_t'$ and whose spatial slots are $\vec p-q\vec A$.
+$c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_\eta=i\frac{2\pi ϙ}{h}A_\eta$ imaginary; the free slot symbols are $\sigma_t=-2\pi\nu_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary; and the mechanical four-momentum is $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$, whose temporal slot is $E+ϙc\,a_t'$ and whose spatial slots are $\vec p-q\vec A$.
 
 The transform does not carry a material-sector field to an informational-sector one. A symbol exists only at constant coefficients. **And a Legendre transform is not a Fourier transform**: the polar variational parent's four momenta are conjugates to the field's own parameters at each event, so they are not wave numbers, and nothing below reads them as one. This is the only place the third denial is stated.
 
@@ -53,9 +53,9 @@ The word is a bijection from eight parameters to the invertibles, so a substitut
 
 ## The Chart's Operator and the Two Readings
 
-The difference is $2c_t(\partial_{R_t}+c_t)$ as operators, or $2c_t(c_t-k_t')$ in momentum space, and both are products of one factor with the *difference* between the two factors. A modulus is blind to the difference between its factors, since it is symmetric in them; so a chart of a modulus cannot represent a term proportional to that difference.
+The difference is $2c_t(\partial_{R_t}+c_t)$ as operators, or $2c_t(c_t-\nu_t')$ in momentum space, and both are products of one factor with the *difference* between the two factors. A modulus is blind to the difference between its factors, since it is symmetric in them; so a chart of a modulus cannot represent a term proportional to that difference.
 
-The element form's fork is the cross term $2c_t(c_t-k_t')$, and a cross term is antisymmetric in the two factors while a modulus is symmetric. **The chart is not a worse description of the fork; it is a description of an object that has no fork**, and the parent's remark that the chart is where the coupling looks like classical mechanics is exactly right for that reason.
+The element form's fork is the cross term $2c_t(c_t-\nu_t')$, and a cross term is antisymmetric in the two factors while a modulus is symmetric. **The chart is not a worse description of the fork; it is a description of an object that has no fork**, and the parent's remark that the chart is where the coupling looks like classical mechanics is exactly right for that reason.
 
 What the chart does show is the fork's shadow, in the mass shell. In the mechanical four-momentum the squared reading's shell is the free one and the paired reading's is not, so the residual is visible even in the chart — as a residual of the *paired* reading, not of the chart's own. The chart therefore reports the fork as an error term in a foreign equation, which is the polite form of saying that it cannot report it at all.
 
@@ -73,9 +73,9 @@ $\oint(\vec p-q\vec A)\cdot\mathrm{d}\vec l=h n+ϙ\Phi_B$ is the curl's integral
 
 ## The Polar Variable Is the Mechanical One
 
-The parent's substitution is $\partial_{r_t'}S_{\tilde\Xi}\mapsto\partial_{r_t'}S_{\tilde\Xi}-ϙa_t'$ and $\vec\nabla_\Phi S_{\tilde\Xi}\mapsto\nabla S_{\tilde\Xi}-q\vec A$, so the variable the transform pairs with the coordinate is $\tilde K_{\Phi,\mathrm{gco}}$ and not $\tilde K_\Phi$. A chart whose variable already contains the potential has diagonalised the potential away, and what it diagonalises is the reading whose shell is free in that variable.
+The parent's substitution is $\partial_{r_t'}S_{\tilde\Xi}\mapsto\partial_{r_t'}S_{\tilde\Xi}-ϙa_t'$ and $\vec\nabla_\Phi S_{\tilde\Xi}\mapsto\nabla S_{\tilde\Xi}-q\vec A$, so the variable the transform pairs with the coordinate is $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ and not $\tilde\Upsilon_\Phi$. A chart whose variable already contains the potential has diagonalised the potential away, and what it diagonalises is the reading whose shell is free in that variable.
 
-The shell $(k_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}$ becomes $k_t'^{\mathrm{mech}\,2}=\lvert\vec\kappa^{\mathrm{mech}}\rvert^{2}+k_m^{2}$ with $k_t'^{\mathrm{mech}}=k_t'-c_t$ and $\vec\kappa^{\mathrm{mech}}=\vec\kappa+\vec a$. Measured at $k_t'=2.770584$, the mechanical value is $3.080584$ and the residual is $0.0$. **The chart's free-looking dispersion is the squared reading's, exactly.**
+The shell $(2\pi\nu_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}$ becomes $2\pi\nu_t'^{\mathrm{mech}\,2}=\lvert\vec\kappa^{\mathrm{mech}}\rvert^{2}+4\pi^{2}\nu_m^{2}$ with $2\pi\nu_t'^{\mathrm{mech}}=2\pi\nu_t'-c_t$ and $\vec\kappa^{\mathrm{mech}}=\vec\kappa+\vec a$. Measured at $2\pi\nu_t'=2.770584$, the mechanical value is $3.080584$ and the residual is $0.0$. **The chart's free-looking dispersion is the squared reading's, exactly.**
 
 The paired reading keeps a residual linear in the mechanical frequency. At the same point its residual is $-1.909962$, and that number is $2c_t$ times $3.080584$: a term linear in the frequency rather than a constant. So the chart's variable does not merely prefer one reading; it puts the squared reading in free form and leaves the paired reading with a term that grows with the energy, which is the shape a chart can report.
 
@@ -115,7 +115,7 @@ The chart's second-order object is a modulus squared, and a modulus squared diff
 
 The parent's table has one row to correct. The chart does not hide the field strength: its own vorticity section computes $\vec\nabla_\Phi\times(\vec p-q\vec A)=ϙ\vec B$ exactly, and measured on a $256^{2}$ grid with a periodic potential the discrepancy is $1.1\times10^{-13}$ against a field strength of $3.200$. The chart shows $\tilde F$ because $\tilde F$ is a derivative, and it cannot show the fork because the fork is an antisymmetrisation; a chart can be good at one and bad at the other.
 
-The chart's variable is the mechanical momentum, and in it the squared reading is exactly free: at $k_t'=2.770584$ the mechanical value is $3.080584$ with residual $0.0$, while the paired reading keeps a residual of $-1.909962$, which is $2c_t$ times the mechanical frequency. So the chart does not merely prefer one reading; it puts that reading in free form and leaves the other with a term linear in the energy.
+The chart's variable is the mechanical momentum, and in it the squared reading is exactly free: at $2\pi\nu_t'=2.770584$ the mechanical value is $3.080584$ with residual $0.0$, while the paired reading keeps a residual of $-1.909962$, which is $2c_t$ times the mechanical frequency. So the chart does not merely prefer one reading; it puts that reading in free form and leaves the other with a term linear in the energy.
 
 What the chart is silent on, it is silent on for one reason: its functionals are moduli, and a modulus has no room for a cross term. The fork is a cross term and the parity failure is a cross term, and both are the element form's objects.
 
@@ -130,8 +130,8 @@ What the chart is silent on, it is silent on for one reason: its functionals are
 | $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot coefficient; $c_t$ real, $c_\eta$ imaginary |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | The mechanical four-momentum; the chart's variable |
 | $\vec\nabla_\Phi\times(\vec p-q\vec A)=ϙ\vec B$ | The vorticity: the field strength the chart shows |
-| $k_t'^{\mathrm{mech}}=k_t'-c_t$ | The mechanical frequency; the squared shell is free in it |
-| $2c_t(c_t-k_t')$ | The cross term the chart cannot carry |
+| $2\pi\nu_t'^{\mathrm{mech}}=2\pi\nu_t'-c_t$ | The mechanical frequency; the squared shell is free in it |
+| $2c_t(c_t-\nu_t')$ | The cross term the chart cannot carry |
 
 ## Further Reading
 

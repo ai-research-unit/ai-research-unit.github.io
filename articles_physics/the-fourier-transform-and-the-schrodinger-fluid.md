@@ -24,25 +24,25 @@ $$
 The transform is the transform of [The Derivative, the Field and the Transform](the-derivative-the-field-and-the-transform.html), with the symbol rule of [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html):
 
 $$
-\vec\nabla_\Phi\longmapsto i\vec k,
+\vec\nabla_\Phi\longmapsto 2\pi i\vec\nu_{\Phi},
 \qquad
 \frac{\partial}{\partial t'}\longmapsto-i\omega,
 \qquad
-\text{a plane wave }e^{i(\vec k\cdot\vec r-\omega t')}.
+\text{a plane wave }e^{i(2\pi\vec\nu_{\Phi}\cdot\vec r-\omega t')}.
 $$
 
-The wave number is $\vec k=\frac{2\pi \vec p}{h}$ and the frequency is $\omega=\frac{2\pi E}{h}$, so no new symbol is introduced and no fourth use is made of a wave number. Time is $t'$ and $\frac{h}{2\pi}$ is written explicitly.
+The wave number is $2\pi\vec\nu_{\Phi}=\frac{\vec p}{h}$ and the frequency is $\omega=\frac{2\pi E}{h}$, so no new symbol is introduced and no fourth use is made of a wave number. Time is $t'$ and $\frac{h}{2\pi}$ is written explicitly.
 
 ## The Mode, and the One Bracket It Occupies
 
 A mode is a point of the wave-number space and one complex amplitude attached to it.
 
 $$
-\tilde\Xi=a\,e^{i(\vec k\cdot\vec r-\omega t')}\,e_t,
+\tilde\Xi=a\,e^{i(2\pi\vec\nu_{\Phi}\cdot\vec r-\omega t')}\,e_t,
 \qquad
 \varrho=\lvert a\rvert,
 \qquad
-\theta_{\mathrm{pha}}=\vec k\cdot\vec r-\omega t'+\arg a .
+\theta_{\mathrm{pha}}=2\pi\vec\nu_{\Phi}\cdot\vec r-\omega t'+\arg a .
 $$
 
 **The word of the mode separates the two questions, and the separation is exact.** The scale is $\lvert a\rvert$, a constant. The angle carries the whole of the wave number. So
@@ -50,7 +50,7 @@ $$
 $$
 \rho_{\mathrm{num}}=\lvert a\rvert^{2},
 \qquad
-\vec v=\frac{h\vec k}{2\pi m},
+\vec v=\frac{h\vec\nu_{\Phi}}{m},
 \qquad
 Q=0,
 \qquad
@@ -69,7 +69,7 @@ $$
 
 So no loop links a nodal line, and the circulation of $\vec v$ around every loop is zero twice over: because $\vec v$ is constant, so that $\oint\vec v\cdot\mathrm{d}\vec l=\vec v\cdot\oint\mathrm{d}\vec l=0$ for a closed loop, and because there is no node whose winding could contribute the quantum of circulation.
 
-What the transform of a mode is. A delta at $\vec k$ carrying the amplitude $a$, and nothing else. The mode's own word is therefore three constants and one label: the modulus $\lvert a\rvert$, the argument $\arg a$, the branch $\varepsilon$, and the point $\vec k$. The four factors of the position-space word have become one label, one amplitude and one sign, in the sense of [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html) §*What the Transform Leaves of the Word*.
+What the transform of a mode is. A delta at $\vec\nu_{\Phi}$ carrying the amplitude $a$, and nothing else. The mode's own word is therefore three constants and one label: the modulus $\lvert a\rvert$, the argument $\arg a$, the branch $\varepsilon$, and the point $\vec\nu_{\Phi}$. The four factors of the position-space word have become one label, one amplitude and one sign, in the sense of [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html) §*What the Transform Leaves of the Word*.
 
 ## The Cross Term
 
@@ -81,7 +81,7 @@ $$
 \rho_{\mathrm{num}}=\sum_n\lvert a_n\rvert^{2}+2\sum_{n_{\mathrm{mode}}<n}\lvert a_{n_{\mathrm{mode}}}\rvert\lvert a_n\rvert\cos(\theta_{n_{\mathrm{mode}}}-\theta_n),
 $$
 
-with $\theta_n=\vec k_n\cdot\vec r-\omega_n t'+\arg a_n$. The first sum is the incoherent part and the second is the interference part.
+with $\theta_n=2\pi\vec\nu_n\cdot\vec r-\omega_n t'+\arg a_n$. The first sum is the incoherent part and the second is the interference part.
 
 **The quantum potential is a function of the sum, so it is not the sum of the quantum potentials.**
 
@@ -170,7 +170,7 @@ The denial. The transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-
 
 ## Summary
 
-A mode has a constant scale, so its density is a constant, its velocity is the constant $\frac{h}{2\pi}\vec k/m$, and its quantum potential and quantum stress vanish. The density is blind to the wave number and the velocity is read from the wave number alone, because the two are functionals of different factors of the word.
+A mode has a constant scale, so its density is a constant, its velocity is the constant $h\,\vec\nu_{\Phi}/m$, and its quantum potential and quantum stress vanish. The density is blind to the wave number and the velocity is read from the wave number alone, because the two are functionals of different factors of the word.
 
 The quantum potential is a functional of the scale and is homogeneous of degree zero in the amplitude, so it is not additive in the density. On one hundred events a single mode gave $\max\lvert Q\rvert=4.2\times10^{-16}$ and a two-mode superposition gave $4.36$ at the same wave numbers.
 
@@ -186,16 +186,16 @@ The momentum of a mode lives in the phase bracket and the quantum data live in t
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
 | $a$ | The complex amplitude of a mode |
-| $\vec k=\frac{2\pi \vec p}{h}$, $\omega=\frac{2\pi E}{h}$ | The label of a mode |
+| $2\pi\vec\nu_{\Phi}=\frac{\vec p}{h}$, $\omega=\frac{2\pi E}{h}$ | The label of a mode |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | The density; constant at a mode |
-| $\vec v=\vec\nabla_\Phi S/m=\frac{h}{2\pi}\vec k/m$ | The velocity; constant at a mode |
+| $\vec v=\vec\nabla_\Phi S/m=h\,2\pi\vec\nu_{\Phi}/m$ | The velocity; constant at a mode |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
 | $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | The quantum stress; zero at a mode |
 | $2\sqrt{\rho_1\rho_2}\cos(\theta_1-\theta_2)$ | The interference term of a superposition |
 | $\eta$, $\Delta k$ | The second amplitude relative to the first, and the separation of the two labels; the mean curvature they add is $\tfrac12\eta^{2}(\Delta k)^{2}$ |
 | $\varepsilon=\pm1$ | The branch; the datum the transform does not read |
 | $n$ | The winding of a loop around a nodal line |
-| $\vec\nabla_\Phi\mapsto i\vec k$, $\partial_{t'}\mapsto-i\omega$ | The symbol rule |
+| $\vec\nabla_\Phi\mapsto 2\pi i\vec\nu_{\Phi}$, $\partial_{t'}\mapsto-i\omega$ | The symbol rule |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

@@ -20,7 +20,7 @@ $$
 \qquad
 \Box_\Phi=\mathrm{Sc}\bigl(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\bigr)=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi ,
 $$
-which on the material sector reads $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, and $\tilde\nabla_\Phi^2$ is **not** $\Box_\Phi$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order. Here $\frac{h}{2\pi mc}$ is the mass length.
+which on the material sector reads $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, and $\tilde\nabla_\Phi^2$ is **not** $\Box_\Phi$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order. Here $\frac{h}{2\pi mc}$ is the mass length.
 
 The source's four generators act on the field, and they are written here as the actions they are:
 $$
@@ -135,8 +135,8 @@ That is a sign convention rather than an arithmetic slip, and it is the more awk
 
 **The composite tetrad vanishes on the free Dirac solutions.** This is the decisive failure of the section. For a plane wave $\tilde{Ξ}=\tilde{Ξ}\exp(ik\cdot x)$ with constant $\tilde{Ξ}$, the derivative gives $\partial \tilde{Ξ}/\partial x_{\imath}=ik_{\Phi,\imath}\tilde{Ξ}$, so, with $n$ the dimension of the trace,
 $$
-e_{a,\imath}=\kappa^{-1}\,\mathrm{ReTr}\bigl\langle\tilde{Ξ},\,C_a\,ik_{\Phi,\imath}\tilde{Ξ}\bigr\rangle
-=n\,\kappa^{-1}k_{\Phi,\imath}\,\mathrm{Re}\bigl(i\,\langle\tilde{Ξ},C_a\tilde{Ξ}\rangle\bigr)=0 ,
+e_{a,\imath}=\kappa^{-1}\,\mathrm{ReTr}\bigl\langle\tilde{Ξ},\,C_a\,2\pi i\nu_{\Phi,\imath}\tilde{Ξ}\bigr\rangle
+=n\,\kappa^{-1}2\pi\nu_{\Phi,\imath}\,\mathrm{Re}\bigl(i\,\langle\tilde{Ξ},C_a\tilde{Ξ}\rangle\bigr)=0 ,
 $$
 and the vanishing is independent of whether $n$ is $2$ or $4$.
 The bilinear $\langle\tilde{Ξ},C_a\tilde{Ξ}\rangle=\tilde{Ξ}^{\dagger} C_tC_a\tilde{Ξ}$ is real for any field, because $C_tC_a$ is Hermitian for all four actions — and the pairing is exactly $C_t$ in the adjoint, $\langle\tilde{Ξ},Ξ\rangle=\tilde{Ξ}^{\dagger} C_tΞ$ — so $\langle\tilde{Ξ},C_a\tilde{Ξ}\rangle$ times the unit $i$ is pure imaginary and its real part vanishes. The composite tetrad is therefore **zero** for every plane wave, verified to $4\times10^{-16}$ on random fields, and the induced metric $g_{\imath\jmath}=\delta_{ab}\exp(a){}_{\imath}\exp(b){}_{\jmath}$ is the zero metric. The construction does not merely fail to be a tetrad — it assigns no geometry at all to the free Dirac field, which is the only field the paper's action contains before the constraints are imposed. No check in the paper detects this, and Section 4.2's "Example verification" does not evaluate Eq. (4).
@@ -198,20 +198,20 @@ $$
 $$
 and on the solutions of the equation it is $m^2$, which is the Klein–Gordon shell the signs of $g$ require. The square is scalar, and it is scalar for the source's operator and not for the gradient: on a generic wavevector the source's square departs from a multiple of the identity by $9\times10^{-16}$, while $\tilde\nabla_\Phi^2$ departs from one by $0.9$. That $\tilde\nabla_\Phi^2$ is not $\Box_\Phi$ is why the corpus carries no one-field first-order massive equation and why its mass sits in the off-diagonal pair of the next display. The source's equation is
 $$
-i\sum_a\varepsilon_a C_a\frac{\partial\tilde{Ξ}}{\partial x_a}=k_m\tilde{Ξ}.
+i\sum_a\varepsilon_a C_a\frac{\partial\tilde{Ξ}}{\partial x_a}=2\pi\nu_m\tilde{Ξ}.
 $$
 
 The corpus's equation is the **one-sided** pair
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 \qquad
 \tilde\nabla_\Phi=\sum_{\imath}  e_{\imath}\,\partial/\partial R_{\imath} ,
 $$
 in which the gradient is an element acting by left multiplication on the algebra, and the mass is the off-diagonal pairing, $L$ with $R$. The gradient is primary there and the source's operator is a frame-dependent contraction, as *The Dirac Equation in Biquaternionic Form* states; it is not obtainable by rewriting the gradient.
 
-The difference is one line, and it is a difference in side. The letter of an element is the value of the chirality action on it, written $L$ for the minus value and $R$ for the plus value, and two facts carry every display below: a product takes the letter of its right factor, and left multiplication keeps the letter. Right multiplication by $e_t$ and by $\vec e_z$ therefore keeps the letter, right multiplication by $\vec e_x$ and by $\vec e_y$ exchanges the two, and a left multiplier never changes it. Every term of the source's kinetic operator carries a right multiplier — $C_t$ by $\vec e_x$, $C_\eta$ by $\vec e_y$ — so the whole kinetic term exchanges $L$ and $R$, while the mass term $k_m\tilde{Ξ}$ is left multiplication by a constant and keeps the letter. In the corpus's pair the gradient $\tilde\nabla_\Phi$ is left multiplication and keeps the letter, while the mass is the off-diagonal pairing, which is the exchange: the gradient preserves and the mass is the flip. Neither display is a rewriting of the other: they differ in the operator, in the field it acts on and in the letter, and the two forms are kept side by side in the corpus's own Dirac article for exactly this reason.
+The difference is one line, and it is a difference in side. The letter of an element is the value of the chirality action on it, written $L$ for the minus value and $R$ for the plus value, and two facts carry every display below: a product takes the letter of its right factor, and left multiplication keeps the letter. Right multiplication by $e_t$ and by $\vec e_z$ therefore keeps the letter, right multiplication by $\vec e_x$ and by $\vec e_y$ exchanges the two, and a left multiplier never changes it. Every term of the source's kinetic operator carries a right multiplier — $C_t$ by $\vec e_x$, $C_\eta$ by $\vec e_y$ — so the whole kinetic term exchanges $L$ and $R$, while the mass term $\nu_m\tilde{Ξ}$ is left multiplication by a constant and keeps the letter. In the corpus's pair the gradient $\tilde\nabla_\Phi$ is left multiplication and keeps the letter, while the mass is the off-diagonal pairing, which is the exchange: the gradient preserves and the mass is the flip. Neither display is a rewriting of the other: they differ in the operator, in the field it acts on and in the letter, and the two forms are kept side by side in the corpus's own Dirac article for exactly this reason.
 
 **The Einstein equation does not follow.** Variation with respect to the tetrad gives, in the source's own notation,
 $$
@@ -325,9 +325,9 @@ written here with every index low; the sign that a raising of the free index wou
 
 **The wave equation itself is not derived.** The chain that produces $\Box_\Phi T=0$ runs: apply $\sum_{\jmath}\varepsilon_{\jmath} D_{\jmath} D_{\jmath}$ to the Dirac equation, obtain
 $$
-(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=-\tfrac14 \mathrm{Riem}_{\imath\jmath\alpha\beta}\,C_{\imath\jmath}\sigma_{\alpha\beta}\tilde{Ξ}-\tfrac12\sum_\rho\varepsilon_\rho T_{\rho\imath\jmath}\,C_{\imath} D_\rho\tilde{Ξ} ,
+(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=-\tfrac14 \mathrm{Riem}_{\imath\jmath\alpha\beta}\,C_{\imath\jmath}\sigma_{\alpha\beta}\tilde{Ξ}-\tfrac12\sum_\rho\varepsilon_\rho T_{\rho\imath\jmath}\,C_{\imath} D_\rho\tilde{Ξ} ,
 $$
-pair the result with $C_\lambda\tilde{Ξ}$, and invoke the Fierz relation $\langle\tilde{Ξ},C_\lambda C_{\imath\jmath}\tilde{Ξ}\rangle=2\kappa T_{\lambda\imath\jmath}$. Two things go wrong at once. The curvature term is set to zero by the teleparallel condition, which leaves the single term $-\tfrac12\sum_\rho\varepsilon_\rho T_{\rho\imath\jmath}\langle\tilde{Ξ},C_\lambda C_{\imath} D_\rho\tilde{Ξ}\rangle$ — one power of $T$ multiplying a derivative bilinear, not a wave operator acting on $T$. And on the left there is $\langle\tilde{Ξ},C_\lambda(\Box_\Phi-(k_m)^{2})\tilde{Ξ}\rangle$, which is not $\Box_\Phi$ of any bilinear either; $\Box_\Phi T$ would be $2\sum_\alpha\varepsilon_\alpha\partial_\alpha\langle\tilde{Ξ},\partial_\alpha\tilde{Ξ}\rangle$ at leading order, the outer derivative acting on both slots, and what Eq. (24) supplies for $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}\partial_{\imath}\tilde{Ξ}$ is a term proportional to $T\,\partial_{\imath}\tilde{Ξ}$. Substituting gives $\Box_\Phi T$ proportional to $T\,\partial_{\imath}\tilde{Ξ}\,\tilde{Ξ}$ and to $(\partial_{\imath}\tilde{Ξ})^2$, neither of which vanishes. The source's footnote, "up to total derivatives", does not bridge the gap: a total derivative changes the action, not an order in $T$. So $\Box_\Phi T=0$ is asserted at the point where the derivation should be, and the three results built on it — light-speed torsion waves, the conserved entropy current, and the pulse-propagation estimate — inherit the assertion.
+pair the result with $C_\lambda\tilde{Ξ}$, and invoke the Fierz relation $\langle\tilde{Ξ},C_\lambda C_{\imath\jmath}\tilde{Ξ}\rangle=2\kappa T_{\lambda\imath\jmath}$. Two things go wrong at once. The curvature term is set to zero by the teleparallel condition, which leaves the single term $-\tfrac12\sum_\rho\varepsilon_\rho T_{\rho\imath\jmath}\langle\tilde{Ξ},C_\lambda C_{\imath} D_\rho\tilde{Ξ}\rangle$ — one power of $T$ multiplying a derivative bilinear, not a wave operator acting on $T$. And on the left there is $\langle\tilde{Ξ},C_\lambda(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}\rangle$, which is not $\Box_\Phi$ of any bilinear either; $\Box_\Phi T$ would be $2\sum_\alpha\varepsilon_\alpha\partial_\alpha\langle\tilde{Ξ},\partial_\alpha\tilde{Ξ}\rangle$ at leading order, the outer derivative acting on both slots, and what Eq. (24) supplies for $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}\partial_{\imath}\tilde{Ξ}$ is a term proportional to $T\,\partial_{\imath}\tilde{Ξ}$. Substituting gives $\Box_\Phi T$ proportional to $T\,\partial_{\imath}\tilde{Ξ}\,\tilde{Ξ}$ and to $(\partial_{\imath}\tilde{Ξ})^2$, neither of which vanishes. The source's footnote, "up to total derivatives", does not bridge the gap: a total derivative changes the action, not an order in $T$. So $\Box_\Phi T=0$ is asserted at the point where the derivation should be, and the three results built on it — light-speed torsion waves, the conserved entropy current, and the pulse-propagation estimate — inherit the assertion.
 
 The implication does not hold, and the failure is an index count. The divergence is an epsilon contraction of the gradient,
 $$

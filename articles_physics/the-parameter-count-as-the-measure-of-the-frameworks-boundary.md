@@ -147,7 +147,7 @@ The framework's own constructions carry three continuous parameters:
 |---|---|---|
 | $ϙ$ | The central charge of the gauge principle | No |
 | $m$ | The mass in the massive field equation | No |
-| $k_m$ | The constant of the massive equation | No |
+| $\nu_m$ | The constant of the massive equation | No |
 
 If a reader counts "framework plus Standard Model" as one theory, the count is
 
@@ -315,7 +315,7 @@ The framework fixes none of the nineteen values, produces one relation of a rest
 
 The shares are $42.1\%$ arena, $47.4\%$ eigenvalue, $10.5\%$ nothing. Flavour is $68.4\%$ of the count, so the boundary is concentrated where the algebra is emptiest.
 
-The framework's own list is three — $ϙ$, $m$, $k_m$ — and it overlaps none of the nineteen. The total is twenty-two and the imported share $86.4\%$. A reformulation that adds parameters and fixes none is not more parsimonious; its defence is that its objects are geometric, not that its list is short.
+The framework's own list is three — $ϙ$, $m$, $\nu_m$ — and it overlaps none of the nineteen. The total is twenty-two and the imported share $86.4\%$. A reformulation that adds parameters and fixes none is not more parsimonious; its defence is that its objects are geometric, not that its list is short.
 
 A neutrino mass costs seven or eight, taking the count to $26$ or $27$, and that difference is a physical discriminator rather than a convention.
 
@@ -334,7 +334,7 @@ Four machines would reduce the count: a spectral principle (ten entries), a scal
 | $\theta_{\mathrm{QCD}}$ | The QCD vacuum angle |
 | $\theta_{ij}$, $\delta$ | CKM angles and phase |
 | $ϙ$ | The framework's central charge parameter |
-| $m$, $k_m$ | Mass and constant of the massive field equation |
+| $m$, $\nu_m$ | Mass and constant of the massive field equation |
 | $M_{\mathrm{Pl}}$ | Planck mass, $1.22\times10^{19}$ GeV |
 | $\bar\rho$, $\bar\eta$ | The two parameters of the unitarity triangle |
 | $m_{\beta\beta}$ | Effective Majorana mass |

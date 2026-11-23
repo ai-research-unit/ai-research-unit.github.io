@@ -19,7 +19,7 @@ The findings are six, and each is one sentence.
 - A path's weight gains the gauge term as a real number, so it gains an angle and nothing else: every history keeps scale one, no boost, and a rotor that is a sign.
 - In a field-free potential the kernel's word is the free word with its angle shifted by $-\frac{2\pi ϙ\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi}{h}$, and its scale, boost and rotor untouched.
 - The shift wraps: an angle beyond a quarter turn returns into the word's range and leaves a sign in the rotor, so a large constant potential flips the sign of the kernel's rotor.
-- In momentum space the kernel is the free one at the covariant wavevector, so the boost in the word is named by $\tilde K_{\Phi,\mathrm{gco}}$ and not by $\tilde K_\Phi$.
+- In momentum space the kernel is the free one at the covariant wavevector, so the boost in the word is named by $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ and not by $\tilde\Upsilon_\Phi$.
 - The scale is the van Vleck determinant of the Lorentz path, and it has no first-order response to the field strength; the amplitude is blind to a weak field.
 - The rotor is the transport along the Lorentz path, so the charge enters the angle and the scale while the spin enters the rotor, and the two never exchange roles.
 
@@ -32,14 +32,14 @@ The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=
 The coupled pair and its covariant wavevector.
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi,
 $$
 
-with $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ the covariant wavevector of *The Coupled Dirac Equation in Biquaternionic Polar Variables*. The potential is $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ with real coefficients in the abelian case, and every component is central. That centality is the single fact the article turns on, and it is the reason the connection multiplies the word instead of acting inside it.
+with $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ the covariant wavevector of *The Coupled Dirac Equation in Biquaternionic Polar Variables*. The potential is $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ with real coefficients in the abelian case, and every component is central. That centality is the single fact the article turns on, and it is the reason the connection multiplies the word instead of acting inside it.
 
 The gauge term of the worldline. The companion's action carries
 
@@ -112,21 +112,21 @@ Why the sign is not a counterexample to the invariance. A transformation with a 
 The momentum-space kernel is the free one at the covariant wavevector. Because each component of the connection is central, the coupled Green's function in a constant potential is the free one evaluated at shifted argument,
 
 $$
-\mathcal S_L^{\mathrm{gco}}(\tilde K_\Phi)=\mathcal S_L^{0}\bigl(\tilde K_{\Phi,\mathrm{gco}}\bigr)
-=\frac{\tilde K_{\Phi,\mathrm{gco}}-ik_m}{k_m^{2}+\langle\tilde K_{\Phi,\mathrm{gco}}\rangle_{\natural}},
+\mathcal S_L^{\mathrm{gco}}(\tilde\Upsilon_\Phi)=\mathcal S_L^{0}\bigl(\tilde\Upsilon_{\Phi,\mathrm{gco}}\bigr)
+=\frac{\tilde\Upsilon_{\Phi,\mathrm{gco}}-i\nu_m}{\nu_m^{2}+\langle\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_{\natural}},
 $$
 
-with $\langle\tilde K_{\Phi,\mathrm{gco}}\rangle_{\natural}=|\vec\kappa|^{2}-\kappa_t^{2}$ and $\frac{h}{2\pi} c\kappa_t=E+ϙcA_t$, $\frac{h}{2\pi}\vec\kappa=\vec p-q\vec A$. This is the polar coupled article's kinetic momentum, and the integral gives it without a separate argument: the shift of the denominator's argument is the shift of the wavevector, and nothing else changes.
+with $\langle\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_{\natural}=|\vec\kappa|^{2}-\kappa_t^{2}$ and $\frac{h}{2\pi} c\kappa_t=E+ϙcA_t$, $\frac{h}{2\pi}\vec\kappa=\vec p-q\vec A$. This is the polar coupled article's kinetic momentum, and the integral gives it without a separate argument: the shift of the denominator's argument is the shift of the wavevector, and nothing else changes.
 
-The boost in the word is named by the covariant wavevector. On the mass shell $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$, so the parent's mass-shell proposition gives
+The boost in the word is named by the covariant wavevector. On the mass shell $\tilde\Upsilon_{\Phi,\mathrm{gco}}\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}=-\nu_m^{2}$, so the parent's mass-shell proposition gives
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=ik_m\,\tilde U_{\Psi,\mathrm b}^{-2},
+\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\,\tilde U_{\Psi,\mathrm b}^{-2},
 $$
 
 and the boost factor of the kernel's word is the one the covariant wavevector names, at the reversed axis, which is the free article's proposition applied to the shifted wavevector. **The velocity is kinetic and the potential sits in the canonical wavevector**, which is the polar coupled article's statement and here a consequence of where the integral puts the shift.
 
-The angle stays one of two values. The numerator's norm is $\langle\tilde K_{\Phi,\mathrm{gco}}-ik_m\rangle_{\natural}$, a real indefinite quadratic in the shifted components, so the kernel's angle in momentum space is $0$ or $\pi/2$ exactly as in the free case. The coupling shifts the argument of a real-valued norm; it cannot make that norm complex, and it therefore introduces no third value. A background with a constant potential changes which value a given momentum has and does not enlarge the set of values, and that is the sense in which the Dirac kernel's angle is a label and not a phase.
+The angle stays one of two values. The numerator's norm is $\langle\tilde\Upsilon_{\Phi,\mathrm{gco}}-i\nu_m\rangle_{\natural}$, a real indefinite quadratic in the shifted components, so the kernel's angle in momentum space is $0$ or $\pi/2$ exactly as in the free case. The coupling shifts the argument of a real-valued norm; it cannot make that norm complex, and it therefore introduces no third value. A background with a constant potential changes which value a given momentum has and does not enlarge the set of values, and that is the sense in which the Dirac kernel's angle is a label and not a phase.
 
 The two arenas, kept apart. Position space and momentum space say different things about the same kernel and they must not be mixed. In position space the kernel is the free one times a central phase, so the angle moves and the boost is the free one's. In momentum space the kernel is the free one at a shifted argument, so the boost is the covariant wavevector's and the angle is a label. The two statements are consistent because the position-space kernel is an integral over all momenta: the word of an integral is not the word of its integrand, and the shift reappears as the argument of the transform rather than as a factor.
 
@@ -217,7 +217,7 @@ The division of labour is the polar form's contribution: the charge enters the a
 | $\tilde A_\Phi$, $\tilde A_\Phi^{\natural}$ | Potential biquaternion and its conjugate; equal for electric, opposite for magnetic |
 | $\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ | The real one-form of the potential along the worldline |
 | $S_{\mathrm{gco}}[x]=-ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ | The gauge term of the worldline action |
-| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; the one that names the boost |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; the one that names the boost |
 | $\Phi$ | Flux through the loop two histories enclose |
 | $\mathcal S^{A}$, $\mathcal S^{0}$ | Kernel in a constant potential, and free kernel |
 | $\mathcal{F}[x]$ | Spin factor, the path-ordered algebra-valued weight |
@@ -225,7 +225,7 @@ The division of labour is the polar form's contribution: the charge enters the a
 | $\theta_{\mathrm{act}}$ | Action over $\frac{h}{2\pi}$, reduced into the word's range |
 | $\arg(i^{-d/2})=-d\pi/4$ | Central Maslov constant; unchanged by the coupling |
 | $-e_t$ at $2\pi$ | Spin Maslov constant, the rotor's double cover; unchanged by the coupling |
-| $k_m=\frac{2\pi mc}{h}$ | Mass parameter |
+| $\nu_m=\frac{mc}{h}$ | Mass parameter |
 
 ## Further Reading
 

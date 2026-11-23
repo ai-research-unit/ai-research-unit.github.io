@@ -85,7 +85,7 @@ A non-negative norm is a statement about the field. Write $w_{\mathrm{fl}}=\lver
 
 **A single traveling wave has a stress element on the zero-divisor cone.** For a massless field of the form $f(r_x-r'_t)$ the energy density and the flux satisfy $w_{\mathrm{fl}}=\lvert\vec S_{\mathrm P}\rvert/c$ identically, so the norm vanishes at every event and the element is a zero divisor. That is not a pathology: it is the algebra's way of saying that a null field carries no rest frame. The corpus's algebraic account of the cone is in [Zero Divisors as a Physical Locus in Biquaternionic Form](zero-divisors-as-a-physical-locus-in-biquaternionic-form.html), and the stress element is one more member of that locus, this one built from a physical density rather than from a field value.
 
-The statement is checkable in one line. Take $\xi=f(k r_x-\omega r'_t/c)$ with $\omega=ck$ so that the mode is massless. Then $\partial\xi/\partial r'_t=-k f'$ and $\vec\nabla_\Phi\xi=kf'\,\vec e_x$, so $w_{\mathrm{fl}}=\tfrac12 k^{2}f'^{2}+\tfrac12 k^{2}f'^{2}=k^{2}f'^{2}$ and $\vec S_{\mathrm P}=-c\,(\partial\xi/\partial r'_t)\vec\nabla_\Phi\xi=c k^{2}f'^{2}\vec e_x$. Hence $\lvert\vec S_{\mathrm P}\rvert=c\,w_{\mathrm{fl}}$ and $\langle\tilde\Sigma_\Psi\rangle_{\natural}=0$. For a massive mode the same computation gives $w_{\mathrm{fl}}=k^{2}f'^{2}+\tfrac12 k_m^{2}f^{2}$ against $\lvert\vec S_{\mathrm P}\rvert=c\,k\lvert f'\rvert^{2}\sqrt{k^{2}+k_m^{2}}$, and the norm is positive for every amplitude that is not identically zero. The cone is reached by the massless case and by no other.
+The statement is checkable in one line. Take $\xi=f(k r_x-\omega r'_t/c)$ with $\omega=ck$ so that the mode is massless. Then $\partial\xi/\partial r'_t=-k f'$ and $\vec\nabla_\Phi\xi=kf'\,\vec e_x$, so $w_{\mathrm{fl}}=\tfrac12 k^{2}f'^{2}+\tfrac12 k^{2}f'^{2}=k^{2}f'^{2}$ and $\vec S_{\mathrm P}=-c\,(\partial\xi/\partial r'_t)\vec\nabla_\Phi\xi=c k^{2}f'^{2}\vec e_x$. Hence $\lvert\vec S_{\mathrm P}\rvert=c\,w_{\mathrm{fl}}$ and $\langle\tilde\Sigma_\Psi\rangle_{\natural}=0$. For a massive mode the same computation gives $w_{\mathrm{fl}}=k^{2}f'^{2}+\tfrac12 4\pi^{2}\nu_m^{2}f^{2}$ against $\lvert\vec S_{\mathrm P}\rvert=c\,k\lvert f'\rvert^{2}\sqrt{k^{2}+4\pi^{2}\nu_m^{2}}$, and the norm is positive for every amplitude that is not identically zero. The cone is reached by the massless case and by no other.
 
 ## The Imported Tensor in Polar Variables
 
@@ -94,14 +94,14 @@ The statement is checkable in one line. Take $\xi=f(k r_x-\omega r'_t/c)$ with $
 The canonical tensor of the real scalar component $\xi$ is derived in [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), with the sign that makes the energy density positive. Read in the one length unit of the material sector, where the temporal derivative is $\partial/\partial r'_t$ and no power of $c$ multiplies it, its three relevant entries are
 
 $$
-w_{\mathrm{fl}}=\tfrac12\left(\frac{\partial\xi}{\partial r'_t}\right)^{2}+\tfrac12\lvert\nabla\xi\rvert^{2}+\tfrac12 k_m^{2}\xi^{2},
+w_{\mathrm{fl}}=\tfrac12\left(\frac{\partial\xi}{\partial r'_t}\right)^{2}+\tfrac12\lvert\nabla\xi\rvert^{2}+\tfrac12 4\pi^{2}\nu_m^{2}\xi^{2},
 \qquad
 \vec S_{\mathrm P}=-c\,\frac{\partial\xi}{\partial r'_t}\,\vec\nabla_\Phi\xi,
 $$
 
 $$
 T_{j\eta}=\frac{\partial\xi}{\partial r_j}\frac{\partial\xi}{\partial r_\eta}
-+\delta_{j\eta}\left(\tfrac12\left(\frac{\partial\xi}{\partial r'_t}\right)^{2}-\tfrac12\lvert\nabla\xi\rvert^{2}-\tfrac12 k_m^{2}\xi^{2}\right).
++\delta_{j\eta}\left(\tfrac12\left(\frac{\partial\xi}{\partial r'_t}\right)^{2}-\tfrac12\lvert\nabla\xi\rvert^{2}-\tfrac12 4\pi^{2}\nu_m^{2}\xi^{2}\right).
 $$
 
 Three statements about this display. The energy density is a sum of three squares and is positive for every configuration. The flux carries the one $c$ of the sector, because a flux is an energy per area per time and $r'_t$ is a length. And the conservation law is
@@ -120,7 +120,7 @@ which is the content of the imported statement $\sum_{\imath}\partial T_{\imath\
 $$
 w_{\mathrm{fl}}=\tfrac12\left[\left(\frac{\partial\lVert\tilde\Xi\rVert}{\partial r'_t}\right)^{2}+\lvert\nabla\lVert\tilde\Xi\rVert\rvert^{2}\right]
 +\tfrac12\rho_{\mathrm{num}}\left[\left(\frac{\partial\theta_{\mathrm{phs}}}{\partial r'_t}\right)^{2}+\lvert\nabla\theta_{\mathrm{phs}}\rvert^{2}\right]
-+\tfrac12k_m^{2}\rho_{\mathrm{num}} .
++\tfrac124\pi^{2}\nu_m^{2}\rho_{\mathrm{num}} .
 $$
 
 The same substitution in the flux gives
@@ -139,22 +139,22 @@ $$
 
 $$
 w_{\mathrm{fl}}=\tfrac12\left[\left(\frac{\partial\lVert\tilde\Xi\rVert}{\partial r'_t}\right)^{2}+\lvert\nabla\lVert\tilde\Xi\rVert\rvert^{2}\right]
-+\frac{\rho_{\mathrm{num}}}{2\frac{h^{2}}{4\pi^{2}}}\left(\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2}\right)+\tfrac12k_m^{2}\rho_{\mathrm{num}} .
++\frac{\rho_{\mathrm{num}}}{2\frac{h^{2}}{4\pi^{2}}}\left(\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2}\right)+\tfrac124\pi^{2}\nu_m^{2}\rho_{\mathrm{num}} .
 $$
 
 The momentum term of the flux is $\rho_{\mathrm{num}}E\vec p/\frac{h^{2}}{4\pi^{2}}$, which is the momentum density $\rho_{\mathrm{num}}\vec p/\frac{h^{2}}{4\pi^{2}}$ carried at the energy $E$: the flux of a relativistic flow is the momentum density times the energy per momentum, and $E$ is that ratio up to the invertibles. The amplitude-gradient term is the one with no classical counterpart, and the next two sections read it.
 
 ### The mass shell inside the energy density
 
-Substituting the mass shell $E^{2}/c^{2}=\lvert\vec p\rvert^{2}+m^{2}c^{2}+2mQ_{\mathrm{qnt}}$ into the phase part and using $k_m=\frac{2\pi mc}{h}$ separates the energy density into three pieces:
+Substituting the mass shell $E^{2}/c^{2}=\lvert\vec p\rvert^{2}+m^{2}c^{2}+2mQ_{\mathrm{qnt}}$ into the phase part and using $\nu_m=\frac{mc}{h}$ separates the energy density into three pieces:
 
 $$
 w_{\mathrm{fl}}=\tfrac12\left[\left(\frac{\partial\lVert\tilde\Xi\rVert}{\partial r'_t}\right)^{2}+\lvert\nabla\lVert\tilde\Xi\rVert\rvert^{2}\right]
-+\rho_{\mathrm{num}}k_m^{2}+\frac{(2\pi)^{2} \rho_{\mathrm{num}}}{h^{2}}\lvert\vec p\rvert^{2}
++\rho_{\mathrm{num}}4\pi^{2}\nu_m^{2}+\frac{(2\pi)^{2} \rho_{\mathrm{num}}}{h^{2}}\lvert\vec p\rvert^{2}
 +\frac{(2\pi)^{2} \rho_{\mathrm{num}}\,m}{h^{2}}Q_{\mathrm{qnt}} .
 $$
 
-The arithmetic is: $\rho_{\mathrm{num}}(E^{2}/c^{2}+\lvert\vec p\rvert^{2})/(2\frac{h^{2}}{4\pi^{2}})=\rho_{\mathrm{num}}\lvert\vec p\rvert^{2}/\frac{h^{2}}{4\pi^{2}}+\rho_{\mathrm{num}}m^{2}c^{2}/(2\frac{h^{2}}{4\pi^{2}})+\rho_{\mathrm{num}}mQ_{\mathrm{qnt}}/\frac{h^{2}}{4\pi^{2}}$, and the middle term plus the $\tfrac12k_m^{2}\rho_{\mathrm{num}}$ of the previous display is $\rho_{\mathrm{num}}k_m^{2}$. The factor of two on the mass term is not an error: the central field has two real components and each contributes $\tfrac12 k_m^{2}\xi_i^{2}$, so the complex field's mass term carries no half.
+The arithmetic is: $\rho_{\mathrm{num}}(E^{2}/c^{2}+\lvert\vec p\rvert^{2})/(2\frac{h^{2}}{4\pi^{2}})=\rho_{\mathrm{num}}\lvert\vec p\rvert^{2}/\frac{h^{2}}{4\pi^{2}}+\rho_{\mathrm{num}}m^{2}c^{2}/(2\frac{h^{2}}{4\pi^{2}})+\rho_{\mathrm{num}}mQ_{\mathrm{qnt}}/\frac{h^{2}}{4\pi^{2}}$, and the middle term plus the $\tfrac12\nu_m^{2}\rho_{\mathrm{num}}$ of the previous display is $\rho_{\mathrm{num}}\nu_m^{2}$. The factor of two on the mass term is not an error: the central field has two real components and each contributes $\tfrac12 \nu_m^{2}\xi_i^{2}$, so the complex field's mass term carries no half.
 
 The three pieces have three different behaviours. The amplitude-gradient piece is positive and vanishes for a plane wave. The imported classical piece is what a dust of proper density $\rho_{\mathrm{num}}$ and momentum $\vec p$ would carry. The quantum piece is of indefinite sign, because $Q_{\mathrm{qnt}}$ is.
 
@@ -303,15 +303,15 @@ The distinction is not pedantic. A local equation of state fixes the sound speed
 
 ### The divergence on a two-mode superposition
 
-The energy law was checked numerically on a superposition of two on-shell modes. Take $c=2$ in the check's own units — no setting of $c$ to unity is used — $k_m=1.3$ in inverse length, and
+The energy law was checked numerically on a superposition of two on-shell modes. Take $c=2$ in the check's own units — no setting of $c$ to unity is used — $2\pi\nu_m=1.3$ in inverse length, and
 
 $$
-\xi=\cos(\vec k_1\cdot\vec r-k'_{1t}r'_t)+0.6\cos(\vec k_2\cdot\vec r-k'_{2t}r'_t),
+\xi=\cos(\vec\nu_1\cdot\vec r-k'_{1t}r'_t)+0.6\cos(\vec\nu_2\cdot\vec r-k'_{2t}r'_t),
 \qquad
-\vec k_1=(1.1,0,0),\quad \vec k_2=(0,0.9,0),
+\vec\nu_1=(1.1,0,0),\quad \vec\nu_2=(0,0.9,0),
 $$
 
-with $k'_{it}=\sqrt{\lvert\vec k_i\rvert^{2}+k_m^{2}}$, so that both modes are on shell simultaneously and the superposition is a solution. No factor of $c$ enters that dispersion, and the reason is the one the units carry: the temporal coordinate is a length, so $k'_{it}$ is a wave number in inverse length like the spatial ones, and the rest mass enters through $k_m=\frac{2\pi mc}{h}$, which already holds the $c$. Evaluating $\partial w_{\mathrm{fl}}/\partial r'_t$ and $\vec\nabla_\Phi\cdot\vec S_{\mathrm P}$ by centred differences at $r'_t=0.7$ and $(r_x,r_y,r_z)=(0.3,-0.5,0.2)$, the sum of the two was $-3.7\times10^{-5}$ at step $2.5\times10^{-3}$, $-1.5\times10^{-4}$ at step $5\times10^{-3}$, and $-5.9\times10^{-4}$ at step $10^{-2}$. The residual falls by a factor four at each halving, which is the mark of the second-order truncation of the difference and not of a failed identity. The energy density at the same event was $w_{\mathrm{fl}}=3.374$ and the flux had modulus $\lvert\vec S_{\mathrm P}\rvert=4.458$, so the dominant-energy inequality $w_{\mathrm{fl}}\ge\lvert\vec S_{\mathrm P}\rvert/c$ held with the margin $3.374$ against $2.229$.
+with $k'_{it}=\sqrt{\lvert2\pi\vec\nu_i\rvert^{2}+4\pi^{2}\nu_m^{2}}$, so that both modes are on shell simultaneously and the superposition is a solution. No factor of $c$ enters that dispersion, and the reason is the one the units carry: the temporal coordinate is a length, so $k'_{it}$ is a wave number in inverse length like the spatial ones, and the rest mass enters through $\nu_m=\frac{mc}{h}$, which already holds the $c$. Evaluating $\partial w_{\mathrm{fl}}/\partial r'_t$ and $\vec\nabla_\Phi\cdot\vec S_{\mathrm P}$ by centred differences at $r'_t=0.7$ and $(r_x,r_y,r_z)=(0.3,-0.5,0.2)$, the sum of the two was $-3.7\times10^{-5}$ at step $2.5\times10^{-3}$, $-1.5\times10^{-4}$ at step $5\times10^{-3}$, and $-5.9\times10^{-4}$ at step $10^{-2}$. The residual falls by a factor four at each halving, which is the mark of the second-order truncation of the difference and not of a failed identity. The energy density at the same event was $w_{\mathrm{fl}}=3.374$ and the flux had modulus $\lvert\vec S_{\mathrm P}\rvert=4.458$, so the dominant-energy inequality $w_{\mathrm{fl}}\ge\lvert\vec S_{\mathrm P}\rvert/c$ held with the margin $3.374$ against $2.229$.
 
 The cross terms between the two modes are the content of the check. Each mode alone satisfies the energy law identically, by the computation of §*The null case and the cone*; the superposition does not, except through the cancellation of the cross terms, and the cancellation is what the residual measures. A check on a single mode would have tested nothing.
 
@@ -370,7 +370,7 @@ The quantum stress is not a thermal pressure. It does not depend on the temperat
 | $\tilde V_{\Phi}=\tilde P_{\Phi}/m$ | Four-velocity of the fluid |
 | $E,\ \vec p$ | Energy and momentum of the flow |
 | $m$ | Mass of the field quantum |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Quantum potential, always written with the mass shell it shifts |
 | $u=\ln\lVert\tilde\Xi\rVert$ | Logarithm of the amplitude |
 | $(\partial u)^{2}$ | $\lvert\nabla u\rvert^{2}-(\partial u/\partial r'_t)^{2}$ |
@@ -387,8 +387,8 @@ The quantum stress is not a thermal pressure. It does not depend on the temperat
 | $\xi$ | A real scalar component of the central field |
 | $\xi_1,\xi_2$ | Its components, $\lVert\tilde\Xi\rVert\cos\theta_{\mathrm{phs}}$ and $\lVert\tilde\Xi\rVert\sin\theta_{\mathrm{phs}}$ |
 | $T_{j\eta}$ | Spatial block of the imported tensor |
-| $\vec k_1,\vec k_2$ | Wave vectors of the two modes of the check |
-| $k'_{it}=\sqrt{\lvert\vec k_i\rvert^{2}+k_m^{2}}$ | Temporal wave numbers of the two modes; no factor of $c$, since $k_m$ carries it |
+| $\vec\nu_1,\vec\nu_2$ | Wave vectors of the two modes of the check |
+| $k'_{it}=\sqrt{\lvert2\pi\vec\nu_i\rvert^{2}+4\pi^{2}\nu_m^{2}}$ | Temporal wave numbers of the two modes; no factor of $c$, since $\nu_m$ carries it |
 | $\sigma$ | Width of the Gaussian amplitude of the check |
 | $A$ | Its peak amplitude |
 | $c$ | Speed of light in the medium |

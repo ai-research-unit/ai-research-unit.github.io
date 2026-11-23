@@ -86,15 +86,15 @@ the gradient included. A left multiplier and a right multiplier never fail to co
 
 **The equation.** The biquaternion Dirac equation is the chiral pair
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 in which both operators act by left multiplication: the first by $\tilde\nabla_\Phi$, the second by its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$. The conjugation is what relates the two, and its identity is the one of the mathematics article,
 $$
 \mathsf C\,L(a^{\natural})\,\mathsf C=R(a),
 $$
-so the conjugate member of the pair is the same operator read on the other side. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+so the conjugate member of the pair is the same operator read on the other side. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
-**The two letters of the pair are not the two values of the basis operator.** They are written alike, and they are different objects, so the difference comes before anything about the mass. The pair is two equations for two elements, and the mass is the number that relates them: each element is the gradient of the other divided by $k_m$, which at $k_m\neq0$ is a change of variable. The two values of the basis operator are a second partition of the same algebra, cut by an operator the pair never uses. A reader who takes the letters of the pair for the values of the basis operator finds that the pair has only the zero solution, and the reason is one line: both members of every line are left multiplications, a left multiplication keeps the value, so each line would equate a field of one value with a field of the other.
+**The two letters of the pair are not the two values of the basis operator.** They are written alike, and they are different objects, so the difference comes before anything about the mass. The pair is two equations for two elements, and the mass is the number that relates them: each element is the gradient of the other divided by $\nu_m$, which at $\nu_m\neq0$ is a change of variable. The two values of the basis operator are a second partition of the same algebra, cut by an operator the pair never uses. A reader who takes the letters of the pair for the values of the basis operator finds that the pair has only the zero solution, and the reason is one line: both members of every line are left multiplications, a left multiplication keeps the value, so each line would equate a field of one value with a field of the other.
 
 **What the derivative does to the value.** A left multiplier and a right multiplier never fail to commute,
 $$
@@ -108,17 +108,17 @@ the gradient included. The derivative therefore carries each value into itself: 
 
 **The massless case, and the split.** At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. For a null gradient the solution space of either member is two-dimensional over $\mathbb{C}$, and $-iR_u$ acts on it with the two eigenvalues $+1$ and $-1$, one state each. So a massless biquaternion Dirac field carries **one state of each value**, which is the standard statement that a massless Dirac fermion has both helicities. The mechanism is the commutation above: the solution space is stable under the basis operator, so a solution of definite value may be chosen.
 
-**The mass of the pair is a number, and a number has both slots.** In the pair the mass enters as $k_m$, and $k_m$ is central: it is a left multiplier and a right multiplier at once, so it holds both slots and has no single side. That is where its physical reading comes from, and it is also where the reading stops. Being in both slots, it acts on the two values alike, and a term that acts on them alike does not move a field from one to the other. In the projectors of the basis operator the statement is one equation, with $P_\pm=\tfrac12(\mathrm I\mp iR_u)$,
+**The mass of the pair is a number, and a number has both slots.** In the pair the mass enters as $\nu_m$, and $\nu_m$ is central: it is a left multiplier and a right multiplier at once, so it holds both slots and has no single side. That is where its physical reading comes from, and it is also where the reading stops. Being in both slots, it acts on the two values alike, and a term that acts on them alike does not move a field from one to the other. In the projectors of the basis operator the statement is one equation, with $P_\pm=\tfrac12(\mathrm I\mp iR_u)$,
 $$
-P_+\,(k_m\mathrm I)\,P_-=0 ,
+P_+\,(2\pi\nu_m\mathrm I)\,P_-=0 ,
 $$
-which holds for every $k_m$: a central scalar is diagonal in the basis operator's own decomposition. The mass is the constant of proportionality that lets the pair say that each component is the derivative of the other, and a constant of proportionality is not a carrier.
+which holds for every $\nu_m$: a central scalar is diagonal in the basis operator's own decomposition. The mass is the constant of proportionality that lets the pair say that each component is the derivative of the other, and a constant of proportionality is not a carrier.
 
 | Term | Multiplier | Slot | What it does to the value |
 | --- | --- | --- | --- |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}$ | left by $\tilde\nabla_\Phi$ | left | keeps it |
 | $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}$ | left by the conjugate | left | keeps it |
-| $k_m\tilde{Ξ}$ | central scalar | both slots, hence no single side | keeps it |
+| $\nu_m\tilde{Ξ}$ | central scalar | both slots, hence no single side | keeps it |
 | $\tilde{Ξ}v$, $uv+vu=0$ | right by $v$ | right | exchanges it |
 
 **What carries a field from one value to the other.** The exchange is a right-slot operation, and its condition is anticommutation with $u$:
@@ -127,7 +127,7 @@ u v+v u=0\quad\Longrightarrow\quad R_v\,(-iR_u)=-(-iR_u)\,R_v ,
 $$
 since $R_vR_u=R_{uv}$ and $R_uR_v=R_{vu}$. Then $R_v$ carries one half into the other, and when $v$ is invertible perpendicular to $u$ it does so isometrically: $\langle R_vP_+\rangle_*^{1/2}=\langle P_+\rangle_*^{1/2}=\sqrt2$, the norm taken on the pair space, where $P_+$ is a projector of rank two. For the basis operator $-iR_{\vec e_z}$ the elements that work are the complex combinations $a\vec e_x+b\vec e_y$, and not the two units alone.
 
-**How the corpus writes the mass as an operator.** A term that does the carrying exists in the corpus, and it is not the $k_m$ of the pair. The catalogue of what the algebra cannot host states it as the reading of an obstruction: *since a left multiplication acts by the same element on the two parts and cannot couple them, a mass term is not a left multiplication but a breaking, which the conventions realise as the right multiplication by $\tfrac12(i\vec e_x-\vec e_y)$* (*What the Biquaternion Algebra Cannot Do*, §*Physical Readings*). The element $\tfrac12(i\vec e_x-\vec e_y)$ anticommutes with $\vec e_z$ and is nilpotent, $\bigl(\tfrac12(i\vec e_x-\vec e_y)\bigr)^2=0$, so the map it gives is one-way: it carries the $-1$ part onto the $+1$ part, and applying it a second time gives zero. The word *breaking* is therefore a computation: the carrier is nilpotent, so the term is one-way, and it sits in the right slot.
+**How the corpus writes the mass as an operator.** A term that does the carrying exists in the corpus, and it is not the $\nu_m$ of the pair. The catalogue of what the algebra cannot host states it as the reading of an obstruction: *since a left multiplication acts by the same element on the two parts and cannot couple them, a mass term is not a left multiplication but a breaking, which the conventions realise as the right multiplication by $\tfrac12(i\vec e_x-\vec e_y)$* (*What the Biquaternion Algebra Cannot Do*, §*Physical Readings*). The element $\tfrac12(i\vec e_x-\vec e_y)$ anticommutes with $\vec e_z$ and is nilpotent, $\bigl(\tfrac12(i\vec e_x-\vec e_y)\bigr)^2=0$, so the map it gives is one-way: it carries the $-1$ part onto the $+1$ part, and applying it a second time gives zero. The word *breaking* is therefore a computation: the carrier is nilpotent, so the term is one-way, and it sits in the right slot.
 
 **Two readings of one word, kept apart.** The pair and the operator statement are both in the corpus, and they are not the same statement: the first uses the mass as a number and leaves the value alone, the second uses it as a right multiplier and moves the value. Which one a computation needs depends on the question. A mass shell, a dispersion relation, a plane wave: the pair, because the value plays no part in them. A chiral current, an axial rotation, a condensate, an anomaly coefficient: the right multiplier, because there the value is the whole subject. The corpus keeps the two apart in the same words in *The Roots of a General Element, Mass Frames and the Mass Shell*: the mass shell is a statement of the gradient equation, and the chirality, the axial current and the condensate are statements of the field's right multiplication.
 
@@ -182,13 +182,13 @@ since $R_vR_u=R_{uv}$ and $R_uR_v=R_{vu}$. Then $R_v$ carries one half into the 
 - **No derivation of the gauge group.** The algebra supplies the sign; it does not supply the Standard Model gauge group, its representations or its breaking pattern.
 - **No second kind of field.** The two values of the basis operator belong to fields of one kind; distinguishing the left-handed field from its conjugate is not something an operator of $\mathbb{B}$ does.
 - **No matter content and no generations.** The number of copies is an input.
-- **No mass value and no spectrum.** The algebra fixes the slot of the mass term, which is the right slot, and the element that can carry it, which is any $v$ with $uv+vu=0$; the number $m$ is dynamical, and the pair says nothing about it beyond its appearance as $k_m$.
-- **No dynamics.** The algebra names the term that carries a field from one value to the other; it does not say when the term acts, nor with what coefficient beyond the $k_m$ of the pair.
+- **No mass value and no spectrum.** The algebra fixes the slot of the mass term, which is the right slot, and the element that can carry it, which is any $v$ with $uv+vu=0$; the number $m$ is dynamical, and the pair says nothing about it beyond its appearance as $\nu_m$.
+- **No dynamics.** The algebra names the term that carries a field from one value to the other; it does not say when the term acts, nor with what coefficient beyond the $\nu_m$ of the pair.
 - **The element is a choice.** The basis operator is built from one element. Another scalar-free $u$ with $u^2=-e_t$ gives another basis operator, with the same four properties and the same slot, while every label of every operator stays where it was. The choice is invisible to the physics, which uses the side.
 
 ## Summary
 
-Operator chirality is the side on which an operator multiplies: the left slot, the right slot, both slots at once for the scalars, and no single side otherwise. One basis operator realises the split, $-iR_u$ for a scalar-free $u$ with $u^2=-e_t$. It is a pure right multiplier, so it is an example of the right slot and not the definition of chirality. The Dirac operator is a pure left multiplier, and the two commute because a left multiplier never fails to commute with a right one. That commutation is why a massless field carries states of both chiralities. The mass appears twice and the two appearances are not one statement. As $k_m$ in the pair it is central, it holds both slots, and it keeps the value. As a right multiplication by an element that anticommutes with $u$ it is a one-sided term that carries the field from one value to the other. Only the second of these is a coupling of the two values, and only the second is in the right slot.
+Operator chirality is the side on which an operator multiplies: the left slot, the right slot, both slots at once for the scalars, and no single side otherwise. One basis operator realises the split, $-iR_u$ for a scalar-free $u$ with $u^2=-e_t$. It is a pure right multiplier, so it is an example of the right slot and not the definition of chirality. The Dirac operator is a pure left multiplier, and the two commute because a left multiplier never fails to commute with a right one. That commutation is why a massless field carries states of both chiralities. The mass appears twice and the two appearances are not one statement. As $\nu_m$ in the pair it is central, it holds both slots, and it keeps the value. As a right multiplication by an element that anticommutes with $u$ it is a one-sided term that carries the field from one value to the other. Only the second of these is a coupling of the two values, and only the second is in the right slot.
 
 The construction needs none of the eleven objects that usually carry the name: no root, no idempotent, no Peirce decomposition, no Peirce basis, no spectrum, no spinor, no module $S$, no ideal, no Clifford algebra, no matrix unit of a display, and no separate chirality element standing in for the definition. Each of them is a choice, and each of them is invisible in the numbers a display prints, which is why the numbers were mistaken for the notion. The basis operator prints the same in every reading, and none of those structures is needed to reach it.
 
@@ -207,7 +207,7 @@ The limit is stated once and it is not small: the two values of the basis operat
 | $-iR_u$ | the basis operator that realises the split, a pure right multiplier: an example of the right slot and not the definition |
 | $\tfrac12(\mathrm I\pm iR_u)$ | the two chiral projectors, derived from the sign |
 | $P_\pm=\tfrac12(\mathrm I\mp iR_u)$ | the projectors onto the two values |
-| $m$, $k_m=\frac{2\pi mc}{h}$ | the mass and its wave number; in the pair the coefficient is central and keeps the value |
+| $m$, $\nu_m=\frac{mc}{h}$ | the mass and its wave number; in the pair the coefficient is central and keeps the value |
 | $v$, $uv+vu=0$ | the carrier of the mass as an operator: a right multiplier that exchanges the two values |
 
 ## Further Reading

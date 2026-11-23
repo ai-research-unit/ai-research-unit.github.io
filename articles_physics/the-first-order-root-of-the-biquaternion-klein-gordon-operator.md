@@ -19,20 +19,20 @@ with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_\Phi=\partial^2/\partial R_x^2+\part
 The equation is
 
 $$
-\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}=0,
+\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde{Ξ}=0,
 \qquad
-k_m=\frac{2\pi mc}{h}.
+\nu_m=\frac{mc}{h}.
 $$
 
 The companion *The Klein–Gordon Equation in Biquaternionic Form* records that the operator is central and scalar, that the equation decouples into four scalar equations, and that no scalar first-order operator in $\mathbb{B}$ has it as its square. The companion *Klein–Gordon from the Dirac Square in Biquaternionic Form* records the other side: the first-order equation that exists is the chiral pair, its two members act on the two parts of one element, and its mass couples the two. Together they leave Open Question 3 of the Klein–Gordon article: is the pair the only first-orderisation, and why four components?
 
-There are two senses of "first-order root", and the article separates them. A **single square** is one first-order operator whose square is $\Box_\Phi-k_m^{2}$. A **factorisation** is a product of two first-order factors whose product is $\Box_\Phi-k_m^{2}$, with the physical equation one factor. The single square is the stronger notion, and the algebra does not admit it: the square of the gradient carries a vector remainder, and no constant zero-order term removes a term that the derivative part supplies. The factorisation is the weaker notion, and the algebra supplies it exactly, as $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ and, on the two parts of the field, as the two lines composed, $\Box_\Phi-k_m^{2}$ on each part, the pair of §*The Gradient*.
+There are two senses of "first-order root", and the article separates them. A **single square** is one first-order operator whose square is $\Box_\Phi-4\pi^{2}\nu_m^{2}$. A **factorisation** is a product of two first-order factors whose product is $\Box_\Phi-4\pi^{2}\nu_m^{2}$, with the physical equation one factor. The single square is the stronger notion, and the algebra does not admit it: the square of the gradient carries a vector remainder, and no constant zero-order term removes a term that the derivative part supplies. The factorisation is the weaker notion, and the algebra supplies it exactly, as $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ and, on the two parts of the field, as the two lines composed, $\Box_\Phi-4\pi^{2}\nu_m^{2}$ on each part, the pair of §*The Gradient*.
 
 Three results:
 
 - **The root is a pair, not an operator.** The product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is $\Box_\Phi$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box_\Phi-2\Delta_\Phi-\frac{2i}{c}\sum_\eta\vec e_\eta\partial^2/\partial r'_t\,\partial q_\eta$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.
 - **The free equation is first order in one field.** $\tilde\nabla_\Phi\tilde{Ξ}=0$ implies $\Box_\Phi\tilde{Ξ}=0$, and at a null momentum it selects a two-dimensional subspace of the four-dimensional solution space of the second-order equation.
-- **The mass needs the two parts.** A scalar mass commutes with the gradient, so it cannot be the zero-order term of a first-order factor. It is the coupling of the two members of the pair, and eliminating one member returns $\Box_\Phi\tilde{Ξ}=k_m^{2}\tilde{Ξ}$.
+- **The mass needs the two parts.** A scalar mass commutes with the gradient, so it cannot be the zero-order term of a first-order factor. It is the coupling of the two members of the pair, and eliminating one member returns $\Box_\Phi\tilde{Ξ}=4\pi^{2}\nu_m^{2}\tilde{Ξ}$.
 
 The four components are the four coefficients of a biquaternion. The count of sixteen maps is elementary linear algebra, and the identification of the field with an element of the algebra is the corpus's dictionary. Nothing in the article predicts a mass or a coupling.
 
@@ -46,7 +46,7 @@ $$
 
 because the substitution turns $\partial^2/\partial R_t^2$ into $-\partial^2/\partial x_0^2$ and leaves the three spatial derivatives alone. This is the form the rest of the article uses.
 
-Throughout, $c$ is the speed of light in the medium and $\frac{h}{2\pi}$ the reduced Planck constant. The mass enters as the length $k_m=\frac{2\pi mc}{h}$, and its reciprocal $k_m=\frac{2\pi mc}{h}$ is the coefficient of the pair.
+Throughout, $c$ is the speed of light in the medium and $\frac{h}{2\pi}$ the reduced Planck constant. The mass enters as the length $\nu_m=\frac{mc}{h}$, and its reciprocal $\nu_m=\frac{mc}{h}$ is the coefficient of the pair.
 
 ## The Operator and Its Symbol
 
@@ -74,25 +74,25 @@ $$
 
 ### The symbol and the mass shell
 
-On a plane wave $e^{i\theta_{\mathrm{pwp}}}$ with the plane-wave angle $\theta_{\mathrm{pwp}}=k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec r$ real because every factor is real, every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_{t}^{\prime}$ and $\partial/\partial R_\eta\mapsto-i k_{\Phi\eta}$, so the gradient becomes one fixed element of the algebra,
+On a plane wave $e^{i\theta_{\mathrm{pwp}}}$ with the plane-wave angle $\theta_{\mathrm{pwp}}=2\pi\nu_t^{\prime}x_0-2\pi\vec\nu_\Phi\cdot\vec r$ real because every factor is real, every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto \nu_t^{\prime}$ and $\partial/\partial R_\eta\mapsto-i \nu_{\Phi\eta}$, so the gradient becomes one fixed element of the algebra,
 
 $$
--i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=k_{t}^{\prime}-i\sum_\eta\vec e_\eta k_{\Phi\eta},
+-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi=2\pi\nu_t^{\prime}-i\sum_\eta\vec e_\eta 2\pi\nu_{\Phi\eta},
 \qquad
-(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2 ,
+(-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})=-\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2 ,
 $$
 
 and the second identity is the symbol of $\Box_\Phi$. The mass shell is the level set
 
 $$
-k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=k_m^{2}
+4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2=4\pi^{2}\nu_m^{2}
 \quad\Longleftrightarrow\quad
 E^2=\vec p^{\,2}c^2+m^2c^4 ,
 $$
 
-with $\vec k_\Phi=\vec p\,\frac{2\pi}{h}$. Here $k_{\Phi}=\frac{2\pi p}{h}$ and $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$ are the momentum and energy wave numbers.
+with $2\pi\vec\nu_\Phi=\vec p\,\frac{2\pi}{h}$. Here $\nu_{\Phi}=\frac{p}{h}$ and $2\pi\nu_t^{\prime}=\frac{E}{h\,c}$ are the momentum and energy wave numbers.
 
-The symbol of $\Box_\Phi$ is the interval of the wave covector, and the mass shell is that symbol set to $k_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $-i\tilde K_{\Phi}$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla_\Phi\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §*What the Root Does Not Carry* records.
+The symbol of $\Box_\Phi$ is the interval of the wave covector, and the mass shell is that symbol set to $\nu_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $-2\pi i\tilde\Upsilon_{\Phi}$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla_\Phi\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §*What the Root Does Not Carry* records.
 
 ## The Factorisation
 
@@ -124,7 +124,7 @@ that is, four elements that anticommute pairwise, one of square $+1$ and three o
 
 The zero-order term does not repair this, because it enters the second-order part not at all. It contributes $\sum_{\imath}(a_{\imath} b+ba_{\imath})\partial/\partial R_{\imath}+b^2$, first order and zeroth order, and the obstruction sits in the second order. So the single square fails for every operator of this form, and the factorisation is the strongest statement the algebra supports.
 
-**What the one-sided restriction costs, and what it does not.** The no-go is a statement about coefficients that multiply the field on one side. An earlier form of this argument let them act on the right as well, and with that freedom the obstruction lifts: the fourth coefficient is a right multiplication, its anticommutation with the other three comes from the right factor, and the zero-order term is a multiple of the right multiplication by $\vec e_z$, the pseudoscalar $\omega=-\vec e_z$, which anticommutes with all four and squares to $-k_m^{2}$. That form has a single square, and the mass it carries is parity-odd, a pseudoscalar mass rather than a scalar.
+**What the one-sided restriction costs, and what it does not.** The no-go is a statement about coefficients that multiply the field on one side. An earlier form of this argument let them act on the right as well, and with that freedom the obstruction lifts: the fourth coefficient is a right multiplication, its anticommutation with the other three comes from the right factor, and the zero-order term is a multiple of the right multiplication by $\vec e_z$, the pseudoscalar $\omega=-\vec e_z$, which anticommutes with all four and squares to $-\nu_m^{2}$. That form has a single square, and the mass it carries is parity-odd, a pseudoscalar mass rather than a scalar.
 
 The corpus's calculus has one side: every equation is written on the left, and a right multiplication is a left multiplication on the conjugate field (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*). The single square of that form therefore lies outside the calculus and is not a counterexample to the no-go above. What does not depend on the two-sided form, and what the rest of the article uses, is that the **scalar** mass has no single square and forces the pair.
 
@@ -162,7 +162,7 @@ and setting it to zero imposes four independent complex conditions, one per unit
 |+-|+-|+-|
 | One complex number | $\tilde\nabla_\Phi\xi=0$, which forces $\partial\xi/\partial R_{\imath}=0$ | no, it has no solution that propagates |
 | Element of $\mathbb{B}$, massless | $\tilde\nabla_\Phi\tilde{Ξ}=0$ | yes, one factor of $\Box_\Phi$ |
-| Element of $\mathbb{B}$, massive | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | yes, the pair |
+| Element of $\mathbb{B}$, massive | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | yes, the pair |
 
 ## The Mass and the Chiral Pair
 
@@ -170,22 +170,22 @@ and setting it to zero imposes four independent complex conditions, one per unit
 
 A physical mass is a scalar: it multiplies every element by the same constant, so it commutes with the gradient. It cannot therefore be the zero-order term of a first-order factor. No zero-order term anticommutes with all four left multiplications of the gradient: $\ell_{e_t}$ is the identity map, and a map $B$ with $\{\ell_{e_{\imath}},B\}=0$ for every $\mu$ is zero (§*Verification*).
 
-The scalar mass therefore fails as the shift of a single operator, and the factorisation of $\Box_\Phi-k_m^{2}$ into two first-order factors on one field is not available in the algebra. What is available is the square of a first-order operator that carries the two parts.
+The scalar mass therefore fails as the shift of a single operator, and the factorisation of $\Box_\Phi-4\pi^{2}\nu_m^{2}$ into two first-order factors on one field is not available in the algebra. What is available is the square of a first-order operator that carries the two parts.
 
 ### The pair
 
 Write the field as one element with two parts, $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$. The first-order equation of the series is the chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
-with the same coefficient $k_m=\frac{2\pi m\,c}{h}$ as above. Substituting the first into the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$, that is
+with the same coefficient $\nu_m=\frac{m\,c}{h}$ as above. Substituting the first into the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R}$, that is
 
 $$
-\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R} ,
+\Box_\Phi\tilde{Ξ}_{R}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R} ,
 $$
 
 and the first member then defines $\tilde{Ξ}_{L}$. Each part therefore satisfies Klein–Gordon, and the pair is a bijection with the second-order solutions of one part, not a new restriction.
@@ -193,9 +193,9 @@ and the first member then defines $\tilde{Ξ}_{L}$. Each part therefore satisfie
 The factorisation is not available on one field, and the reason is the same vector remainder. With the mass as a shift,
 
 $$
-\left((\tilde\nabla_\Phi)^{\natural}-k_m\right)\left(\tilde\nabla_\Phi+k_m\right)
-=\Box_\Phi+k_m\left((\tilde\nabla_\Phi)^{\natural}-\tilde\nabla_\Phi\right)-k_m^{2}
-=\Box_\Phi-2k_m\sum_\eta\vec e_\eta\frac{\partial}{\partial R_\eta}-k_m^{2} ,
+\left((\tilde\nabla_\Phi)^{\natural}-2\pi\nu_m\right)\left(\tilde\nabla_\Phi+2\pi\nu_m\right)
+=\Box_\Phi+2\pi\nu_m\left((\tilde\nabla_\Phi)^{\natural}-\tilde\nabla_\Phi\right)-4\pi^{2}\nu_m^{2}
+=\Box_\Phi-4\pi\nu_m\sum_\eta\vec e_\eta\frac{\partial}{\partial R_\eta}-4\pi^{2}\nu_m^{2} ,
 $$
 
 which is not scalar. The two cross terms do not cancel, because they are different operators. Only the pair removes them, by substituting one member into the other.
@@ -205,25 +205,25 @@ which is not scalar. The two cross terms do not cancel, because they are differe
 The two equations are two lines on two elements, and no single letter is written for them (*Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*). Write $\tilde{Ξ}=(\tilde{Ξ}_{L},\tilde{Ξ}_{R})$ and
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}.
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}.
 $$
 
-Composing each line with the conjugate of the other gives $\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}_{L}=0$ and $\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}_{R}=0$. This is the precise sense in which a mass needs a pair: the doubling is the carrier of the factorisation, not a doubling of particles, and the two parts are the two labelled halves of one field.
+Composing each line with the conjugate of the other gives $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde{Ξ}_{L}=0$ and $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde{Ξ}_{R}=0$. This is the precise sense in which a mass needs a pair: the doubling is the carrier of the factorisation, not a doubling of particles, and the two parts are the two labelled halves of one field.
 
 The mass term is a multiple of the identity on the two slots and cannot move between them; the gradient is the off-diagonal block, and it is the gradient that carries the mass across. A scalar mass cannot sit in a single factor, for the reason of §*No single square*; the pair supplies the second slot that the mass needs in order to appear as an equality.
 
 ### The determinant
 
-On a plane wave the two lines are the block matrix with $\ell_{i\tilde K_{\Phi}}$ and $\ell_{i\tilde K_{\Phi}^{\natural}}$ off the diagonal, where $\ell_M$ is left multiplication by $M$, and the determinant of that matrix with $-k_m$ on the diagonal is
+On a plane wave the two lines are the block matrix with $\ell_{2\pi i\tilde\Upsilon_{\Phi}}$ and $\ell_{2\pi i\tilde\Upsilon_{\Phi}^{\natural}}$ off the diagonal, where $\ell_M$ is left multiplication by $M$, and the determinant of that matrix with $-\nu_m$ on the diagonal is
 
 $$
-\det\left(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-k_m^{2}\right)
-=\left(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2-k_m^{2}\right)^4 ,
+\det\left(\ell_{2\pi i\tilde\Upsilon_{\Phi}^{\natural}}\ell_{2\pi i\tilde\Upsilon_{\Phi}}-4\pi^{2}\nu_m^{2}\right)
+=\left(4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2-4\pi^{2}\nu_m^{2}\right)^4 ,
 $$
 
-the fourth power of the symbol of $\Box_\Phi-k_m^{2}$: eliminating one block leaves the Schur complement $1/k_m\left(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2-k_m^{2}\right)$ times the four-dimensional identity.
+the fourth power of the symbol of $\Box_\Phi-4\pi^{2}\nu_m^{2}$: eliminating one block leaves the Schur complement $1/\nu_m\left(\nu_t^{\prime\,2}-\lvert\vec\nu_\Phi\rvert^2-\nu_m^{2}\right)$ times the four-dimensional identity.
 
 The determinant is a product of eigenvalues, and it is not a square root. A determinant identity says that a power of the scalar symbol is the determinant of a first-order operator; a root needs one first-order operator whose square is the scalar operator, and the power four is the evidence that this operator lives on the doubled carrier. The vanishing is a consistency check on the factorisation, and not a construction of a single root.
 
@@ -231,8 +231,8 @@ The determinant is a product of eigenvalues, and it is not a square root. A dete
 
 The classification is a statement of form, and its boundaries are part of the result.
 
-1. **It is stronger than Klein–Gordon.** The massless first-order equation selects a subspace of the second-order solution space. At a null momentum the second-order equation admits every element, four complex dimensions, while $\tilde\nabla_\Phi\tilde{Ξ}=0$ admits two: at $k=(1,1,0,0)$ left multiplication by $-i\tilde K_{\Phi}$ has rank two and kernel two, and the kernel carries one state of each value of the chirality, the right action $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$. What the root halves is the room for the field at that momentum, not the spectrum.
-2. **No mass and no coupling are predicted.** The classification says which first-order structures have the Klein–Gordon second order; it does not say which one nature uses, and it does not determine $1/k_m$. The sign of the mass carries no content either: the pair at $k_m$ and the pair at $-k_m$ are the same equations with the sign of one part flipped.
+1. **It is stronger than Klein–Gordon.** The massless first-order equation selects a subspace of the second-order solution space. At a null momentum the second-order equation admits every element, four complex dimensions, while $\tilde\nabla_\Phi\tilde{Ξ}=0$ admits two: at $k=(1,1,0,0)$ left multiplication by $-2\pi i\tilde\Upsilon_{\Phi}$ has rank two and kernel two, and the kernel carries one state of each value of the chirality, the right action $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$. What the root halves is the room for the field at that momentum, not the spectrum.
+2. **No mass and no coupling are predicted.** The classification says which first-order structures have the Klein–Gordon second order; it does not say which one nature uses, and it does not determine $1/\nu_m$. The sign of the mass carries no content either: the pair at $\nu_m$ and the pair at $-\nu_m$ are the same equations with the sign of one part flipped.
 3. **The coefficients are constant and the background flat.** A position-dependent coefficient adds a term in which the derivative acts on the coefficient, and a gauged derivative adds a field strength; the constant-coefficient classification is then the starting point rather than the answer. On a curved background the derivatives become covariant, and the classification applies in the tangent space at each point. The $x$ coordinates are flat; the algebra coordinates give the same operator and not a different root.
 4. **The real structure is open.** The article works over $\mathbb{C}$. Whether the gradient can be given a real structure, and which sign that structure carries, is the charge-conjugation question, and the article does not settle it. The index question is a different one again, and the massless kernel of §*The symbol and the mass shell* splits by the chirality without the gradient separating the two values.
 
@@ -246,25 +246,25 @@ The doubling is not a doubling of particles. The two values of the label are the
 
 ## Verification
 
-The identities were recomputed before they were written. The algebra multiplication and the left and right multiplications were built as four-dimensional complex matrices, and the symbol reductions were checked at random wave covectors. The residuals are the largest absolute difference over the stated samples, and $k_m$ is a fixed real mass coefficient.
+The identities were recomputed before they were written. The algebra multiplication and the left and right multiplications were built as four-dimensional complex matrices, and the symbol reductions were checked at random wave covectors. The residuals are the largest absolute difference over the stated samples, and $\nu_m$ is a fixed real mass coefficient.
 
 | Check | Result |
 |+-|+-|
-| $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})-(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)e_t$ on $100$ random wave covectors | $8.9\times10^{-16}$ |
-| the symbol of the square, $\tilde K_{\Phi}^2+\left(k_{t}^{\prime\,2}+\lvert\vec k_\Phi\rvert^2\right)e_t-2ik_{t}^{\prime}\vec k_\Phi$, on $100$ random wave covectors | $1.8\times10^{-15}$ |
+| $(-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})-(\nu_t^{\prime\,2}-\lvert\vec\nu_\Phi\rvert^2)e_t$ on $100$ random wave covectors | $8.9\times10^{-16}$ |
+| the symbol of the square, $\tilde\Upsilon_{\Phi}^2+\left(\nu_t^{\prime\,2}+\lvert\vec\nu_\Phi\rvert^2\right)e_t-2i\nu_t^{\prime}\vec\nu_\Phi$, on $100$ random wave covectors | $1.8\times10^{-15}$ |
 | the sixteen maps $\tilde{Ξ}\mapsto e_{\imath}\tilde{Ξ} e_{\jmath}$ are independent | rank $16$ |
 | no element anticommutes with the three spatial units | kernel dimension $0$ |
 | no map anticommutes with the four left multiplications | dimension $0$ |
 | the same for a generic quaternionic triple, over $100$ conjugates | kernel dimension $0$ |
-| $\det\ell_{-i\tilde K_{\Phi}}-(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)^2$ on $100$ random wave covectors | $5.7\times10^{-14}$ |
-| rank and kernel of $\ell_{-i\tilde K_{\Phi}}$ at five null wave covectors | rank $2$, kernel $2$ (exact) |
+| $\det\ell_{-2\pi i\tilde\Upsilon_{\Phi}}-(\nu_t^{\prime\,2}-\lvert\vec\nu_\Phi\rvert^2)^2$ on $100$ random wave covectors | $5.7\times10^{-14}$ |
+| rank and kernel of $\ell_{-2\pi i\tilde\Upsilon_{\Phi}}$ at five null wave covectors | rank $2$, kernel $2$ (exact) |
 | the same off the cone, at $k=(2,1,0,0)$ | rank $4$ |
 | the chirality on the null kernel, the eigenvalues of the right action by $\vec e_z$ | $\pm i$, one of each |
-| $\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-\Box_\Phi$ on the eight slots | $1.8\times10^{-15}$ |
-| $\det\left(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-k_m^{2}\right)-(\Box_\Phi-k_m^{2})^4$ on $100$ random wave covectors | $2.5\times10^{-11}$ |
-| the elimination, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}/k_m^{2}-\tilde{Ξ}_{R}$ on shell | $3.6\times10^{-15}$ |
+| $\ell_{2\pi i\tilde\Upsilon_{\Phi}^{\natural}}\ell_{2\pi i\tilde\Upsilon_{\Phi}}-\Box_\Phi$ on the eight slots | $1.8\times10^{-15}$ |
+| $\det\left(\ell_{2\pi i\tilde\Upsilon_{\Phi}^{\natural}}\ell_{2\pi i\tilde\Upsilon_{\Phi}}-4\pi^{2}\nu_m^{2}\right)-(\Box_\Phi-4\pi^{2}\nu_m^{2})^4$ on $100$ random wave covectors | $2.5\times10^{-11}$ |
+| the elimination, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}/\nu_m^{2}-\tilde{Ξ}_{R}$ on shell | $3.6\times10^{-15}$ |
 
-The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription. Two exact values are quoted in the text: at $k=(2,1,0,0)$ the norm $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})$ is $3$, the determinant $\det\ell_{-i\tilde K_{\Phi}}$ is $9$, and at $k_m=1$ the determinant of the two lines, $\det(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{-i\tilde K_{\Phi}}-k_m^{2})$, is $16$.
+The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription. Two exact values are quoted in the text: at $k=(2,1,0,0)$ the norm $(-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})$ is $3$, the determinant $\det\ell_{-2\pi i\tilde\Upsilon_{\Phi}}$ is $9$, and at $2\pi\nu_m=1$ the determinant of the two lines, $\det(\ell_{2\pi i\tilde\Upsilon_{\Phi}^{\natural}}\ell_{-2\pi i\tilde\Upsilon_{\Phi}}-\nu_m^{2})$, is $16$.
 
 ## Summary
 
@@ -272,7 +272,7 @@ The first-order root of the biquaternion Klein–Gordon operator exists, and it 
 
 The free equation is first order in one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$, and it implies the massless Klein–Gordon equation. At a null momentum it selects two of the four complex dimensions of the second-order solution space, one state of each value of the chirality.
 
-The mass is scalar and central. It commutes with the gradient, so it cannot be the zero-order term of a first-order factor; it is the coupling of the two parts of one element, and the two lines carry it, composing to $\Box_\Phi-k_m^{2}$ on each part. Eliminating one member returns $\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$, so the pair and the second-order equation on one part are equivalent.
+The mass is scalar and central. It commutes with the gradient, so it cannot be the zero-order term of a first-order factor; it is the coupling of the two parts of one element, and the two lines carry it, composing to $\Box_\Phi-4\pi^{2}\nu_m^{2}$ on each part. Eliminating one member returns $\Box_\Phi\tilde{Ξ}_{R}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R}$, so the pair and the second-order equation on one part are equivalent.
 
 A field whose value is one complex number has no first-order equation: the four terms of the gradient impose four independent conditions on one function. The results are a classification of form. No mass, no coupling and no dynamics are predicted. The open questions are the gauged, curved, position-dependent and real-structure extensions.
 
@@ -289,14 +289,14 @@ A field whose value is one complex number has no first-order equation: the four 
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, the second factor of $\Box_\Phi$ |
 | $\Box_\Phi$ | d'Alembertian; its Lorentz form is derived in §*The Equation* |
 | $c$ | The speed of light in the medium |
-| $1/k_m$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $k_m=\frac{2\pi mc}{h}$ is the inverse reduced Compton wavelength |
-| $k_{\Phi,\imath}$ | The wave covector of a plane wave |
+| $1/\nu_m$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $\nu_m=\frac{mc}{h}$ is the inverse reduced Compton wavelength |
+| $\nu_{\Phi,\imath}$ | The wave covector of a plane wave |
 | $\omega=-\vec e_z$ | The pseudoscalar of the algebra, $\omega^2=-e_t$ |
-| $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$ | The symbol of the gradient, an element of $\mathbb{B}$ |
+| $-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi$ | The symbol of the gradient, an element of $\mathbb{B}$ |
 | $\ell_M$ | Left multiplication by $M$ |
 | $\tilde{Ξ}$ | The field of the Klein–Gordon equation, an element of $\mathbb{B}$ |
 | $\tilde{Ξ}_{L},\tilde{Ξ}_{R}$ | The two parts of an element, the two values of the label |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair as two first-order lines; each composed with the conjugate of the other is $\Box_\Phi$ per part |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | The pair as two first-order lines; each composed with the conjugate of the other is $\Box_\Phi$ per part |
 | the label | $L$ or $R$, two values, carried by the parts of an element |
 
 ## Further Reading

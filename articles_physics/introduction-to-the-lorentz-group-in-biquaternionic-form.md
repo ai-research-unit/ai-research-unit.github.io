@@ -151,11 +151,11 @@ The product is unique. For any $\tilde U\in G$ the Hermitian positive factor is 
 
 $$
 \tilde H=\bigl(\tilde U\tilde U^{*}\bigr)^{1/2},\qquad
-\tilde K=\tilde H^{-1}\tilde U,\qquad
-\tilde U=\tilde H\tilde K ,
+\tilde\Upsilon=\tilde H^{-1}\tilde U,\qquad
+\tilde U=\tilde H\tilde\Upsilon ,
 $$
 
-with $\tilde K$ a real quaternion, so $\tilde K$ fixes the time axis. This is the left polar decomposition of the matrix; the other word exists too, with different factors, and the block's convention is this one, with the boost on the left. Three parameters in each factor, which is the $3+3=6$ of the group.
+with $\tilde\Upsilon$ a real quaternion, so $\tilde\Upsilon$ fixes the time axis. This is the left polar decomposition of the matrix; the other word exists too, with different factors, and the block's convention is this one, with the boost on the left. Three parameters in each factor, which is the $3+3=6$ of the group.
 
 Acting, it gives back the two transformations. Because the pair is two-sided, each factor acts by its own conjugation, and the rotation may be taken first,
 

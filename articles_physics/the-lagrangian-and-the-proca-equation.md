@@ -7,7 +7,7 @@ This article writes the Proca field as the extremum of an action in the algebra,
 **The equation.** The parent's equation is
 
 $$
-\tilde\nabla_\Phi\tilde F=k_m^2\tilde A_\Phi,
+\tilde\nabla_\Phi\tilde F=4\pi^{2}\nu_m^2\tilde A_\Phi,
 \qquad
 \tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr),
 \qquad
@@ -23,7 +23,7 @@ one biquaternion equation for the anti-Hermitian potential, with the field stren
 *First, the action.* With $\tilde A_\Phi$ varied over the four real components of the material sector, and with $\mathrm{Re}\,\mathrm{Sc}(\cdot)$ as the real pairing,
 
 $$
-S[\tilde A_\Phi]=\int d^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^2\,\langle\tilde A_\Phi\rangle_\natural\Bigr],
+S[\tilde A_\Phi]=\int d^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^2\,\langle\tilde A_\Phi\rangle_\natural\Bigr],
 $$
 
 the Euler–Lagrange equation is the Proca equation. The normalization is fixed by two requirements and by nothing else: the field term is the Maxwell Lagrangian density $\tfrac12(\epsilon\vec E^2-\vec B^2/\mu)$, and the mass term's sign is the one that makes the energy positive. The other relative sign gives the same equation and a negative energy, and is rejected.
@@ -34,11 +34,11 @@ the Euler–Lagrange equation is the Proca equation. The normalization is fixed 
 
 **What is not new.** The action is the standard Proca action written in the algebra's letters. Nothing in the physics is new: the equation, the Lorenz condition, the polarizations and the stress tensor are the standard ones. What the algebra supplies is a compact statement of the pairing, a one-line variation, and the two structural readings above. The polar-form variational principle is the companion article, and there the action's variables are the word's parameters rather than the four components.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; the sectors are $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{B}_\Psi=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; ${}^{*}$ is coefficient conjugation composed with the quaternion conjugation $\natural$; $\mathrm{Sc}$ is the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ is the quaternionic norm, real on $\mathbb{B}_\Phi$; the potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with real $\vec A$ and real $a'_t$, so that $\langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2$; the derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ with $c=1/\sqrt{\epsilon\mu}$. The mass is the wave number $k_m=\frac{2\pi mc}{h}$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; the sectors are $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{B}_\Psi=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; ${}^{*}$ is coefficient conjugation composed with the quaternion conjugation $\natural$; $\mathrm{Sc}$ is the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ is the quaternionic norm, real on $\mathbb{B}_\Phi$; the potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with real $\vec A$ and real $a'_t$, so that $\langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2$; the derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ with $c=1/\sqrt{\epsilon\mu}$. The mass is the wave number $\nu_m=\frac{mc}{h}$.
 
 ## Conventions
 
-**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian fixed subspace, where the potentials live; $\mathbb{B}_V$ is the pure-vector subspace, where the field strength lives; $\langle X\rangle_\natural=X^{\natural}X$ is the invariant length of an element, real whenever $X$ is; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot)$ is the real pairing the action uses. The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=ir'_t$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ carries the metric signs. The measure is $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^3r$, the units are those of the parent, and the mass is $k_m=\frac{2\pi mc}{h}$.
+**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian fixed subspace, where the potentials live; $\mathbb{B}_V$ is the pure-vector subspace, where the field strength lives; $\langle X\rangle_\natural=X^{\natural}X$ is the invariant length of an element, real whenever $X$ is; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot)$ is the real pairing the action uses. The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=ir'_t$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ carries the metric signs. The measure is $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^3r$, the units are those of the parent, and the mass is $\nu_m=\frac{mc}{h}$.
 
 ## The Action in Element Form
 
@@ -47,7 +47,7 @@ Write the action as
 $$
 S[\tilde A_\Phi]=\int d^4r\;\mathcal{L},
 \qquad
-\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^2\,\langle\tilde A_\Phi\rangle_\natural .
+\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^2\,\langle\tilde A_\Phi\rangle_\natural .
 $$
 
 **The field term is the Maxwell density.** Because $\tilde F$ is a pure vector, $\mathrm{Sc}(\tilde F\tilde F)$ is its negative squared length, and with $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$,
@@ -59,7 +59,7 @@ $$
 
 so that $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)=\tfrac12(\epsilon\vec E^2-\vec B^2/\mu)$, which is the Maxwell Lagrangian density. The imaginary part is proportional to $\vec E\cdot\vec B$, the invariant $I_2$, and it is the term whose integral is a surface term: $\vec E\cdot\vec B=-\vec\nabla_\Phi\cdot(a'_t\vec B)-\partial_{t'}(\vec A\cdot\vec B)/c$ up to the signs of the corpus's conventions. It therefore drops from the variation and contributes nothing to the equation; it is the $F\tilde F$ term of the standard theory, and its absence from the equation is why the action can be written with the real part alone.
 
-**The mass term is the invariant length.** $\langle\tilde A_\Phi\rangle_\natural$ is the Minkowski square of the four-vector and it is real, so $\tfrac12k_m^2\langle\tilde A_\Phi\rangle_\natural$ is real and quadratic in the potential. There is no other quadratic invariant of a real four-vector, so the mass term is fixed up to its coefficient.
+**The mass term is the invariant length.** $\langle\tilde A_\Phi\rangle_\natural$ is the Minkowski square of the four-vector and it is real, so $\tfrac12\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ is real and quadratic in the potential. There is no other quadratic invariant of a real four-vector, so the mass term is fixed up to its coefficient.
 
 **The action is real and the pairing is the real part of the scalar part.** Both terms are real by construction. The pairing is $\mathrm{Re}\,\mathrm{Sc}(\cdot)$, not $\mathrm{Sc}(\cdot)$ alone and not $\mathrm{Sc}(\cdot^{\natural}\cdot)$: the scalar part alone is complex on $\tilde F\tilde F$, and the quaternionic pairing would pair $\tilde F$ with its conjugate and produce the energy density rather than the Lagrangian. This is the material sector's version of the spinor article's warning about the two pairings, and the choice is forced: the pairing must be the one whose variation reproduces the equation, and only the real part of the scalar part does.
 
@@ -72,19 +72,19 @@ so that $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)=\tfrac12(\epsilon\ve
 **The variation.** Treat $\tilde A_\Phi$ as the variable and vary over the four real components of $\mathbb{B}_\Phi$: the scalar potential $a'_t$ and the three components of $\vec A$. The field strength is linear in the potential, so
 
 $$
-\delta\mathcal{L}=\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\,\delta\tilde F\bigr)-k_m^2\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde A_\Phi^{\natural}\,\delta\tilde A_\Phi\bigr)
+\delta\mathcal{L}=\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\,\delta\tilde F\bigr)-4\pi^{2}\nu_m^2\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde A_\Phi^{\natural}\,\delta\tilde A_\Phi\bigr)
 $$
 
 with $\delta\tilde F=\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\delta\tilde A_\Phi)$, and integrating by parts moves the derivative from $\delta\tilde A_\Phi$ onto $\tilde F$. The boundary term is discarded, and the result is
 
 $$
-\delta S=\int d^4r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\delta\tilde A_\Phi^{\natural}\bigl(\tilde\nabla_\Phi\tilde F-k_m^2\tilde A_\Phi\bigr)\Bigr].
+\delta S=\int d^4r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\delta\tilde A_\Phi^{\natural}\bigl(\tilde\nabla_\Phi\tilde F-4\pi^{2}\nu_m^2\tilde A_\Phi\bigr)\Bigr].
 $$
 
 **The bracket vanishes as an element, not merely in its scalar part.** The variation $\delta\tilde A_\Phi$ ranges over the four real components of the material sector, and the pairing $\mathrm{Re}\,\mathrm{Sc}(\delta\tilde A_\Phi^{\natural}X)$ is non-degenerate on that four-dimensional real space: if it vanishes for every $\delta\tilde A_\Phi$, then $X=0$ as an element of $\mathbb{B}_\Phi$. So the Euler–Lagrange equation is
 
 $$
-\boxed{\;\tilde\nabla_\Phi\tilde F-k_m^2\tilde A_\Phi=0\;}
+\boxed{\;\tilde\nabla_\Phi\tilde F-4\pi^{2}\nu_m^2\tilde A_\Phi=0\;}
 $$
 
 and it is four real equations, one per component. The count is the count of the carrier: eight components of $\mathbb{B}$ would give eight equations, and the material sector's four give four.
@@ -93,10 +93,10 @@ and it is four real equations, one per component. The count is the count of the 
 
 ## The Constraints the Action Imposes: The Lorenz Condition Is a Consequence
 
-**The divergence argument.** Apply the conjugate gradient to the equation and take the scalar part. The left side is $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde F)$, which vanishes identically for a pure-vector $\tilde F$ because the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ applied to a vector is a total divergence of an antisymmetric object; the right side is $k_m^2\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)=k_m^2S$. So
+**The divergence argument.** Apply the conjugate gradient to the equation and take the scalar part. The left side is $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde F)$, which vanishes identically for a pure-vector $\tilde F$ because the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ applied to a vector is a total divergence of an antisymmetric object; the right side is $4\pi^{2}\nu_m^2\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)=4\pi^{2}\nu_m^2S$. So
 
 $$
-k_m^2S=0
+4\pi^{2}\nu_m^2S=0
 \qquad\Longrightarrow\qquad
 S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)=\frac{\partial a'_t}{\partial r'_t}+\vec\nabla_\Phi\cdot\vec A=0 ,
 $$
@@ -118,11 +118,11 @@ and neither of the last two terms vanishes for a general $\Gamma$. So the action
 
 **The equation and its divergence are one system, and the system has three degrees of freedom.** The constraint is derived in the section above; what it establishes is a count, and the count is the article's structural claim.
 
-**The count.** The potential has four real components in the material sector. The equation is four equations, but they are not independent: applying the conjugate gradient and taking the scalar part annihilates the field term identically and leaves $k_m^{2}S=0$, where $S=\partial a'_t/\partial r'_t+\vec\nabla_\Phi\cdot\vec A$. For $k_m\neq0$ this is $S=0$, one relation among the four components.
+**The count.** The potential has four real components in the material sector. The equation is four equations, but they are not independent: applying the conjugate gradient and taking the scalar part annihilates the field term identically and leaves $\nu_m^{2}S=0$, where $S=\partial a'_t/\partial r'_t+\vec\nabla_\Phi\cdot\vec A$. For $\nu_m\neq0$ this is $S=0$, one relation among the four components.
 
 **What the relation does.** With $S=0$, the temporal component of the equation contains no second time derivative of $a'_t$: it is the statement that $a'_t$ is determined by $\vec\nabla_\Phi\cdot\vec A$ and its rate. So the four components carry three propagating modes and one determined one, and the three are the two transverse polarisations and the longitudinal one that the mass term makes physical. The massless limit is the degenerate case, where $S=0$ becomes a gauge choice rather than a determination, and the longitudinal mode decouples.
 
-**The hand check.** Put $\tilde A_\Phi=a'_t e_t$ alone, spatially constant. Then $\tilde F=0$ and the equation reads $k_m^{2}a'_t e_t=0$, so $a'_t=0$: a purely temporal, constant potential is not a solution of the massive theory, though it is a pure gauge configuration of the massless one. The mass term is what removes it, and the count above is that removal stated in general.
+**The hand check.** Put $\tilde A_\Phi=a'_t e_t$ alone, spatially constant. Then $\tilde F=0$ and the equation reads $\nu_m^{2}a'_t e_t=0$, so $a'_t=0$: a purely temporal, constant potential is not a solution of the massive theory, though it is a pure gauge configuration of the massless one. The mass term is what removes it, and the count above is that removal stated in general.
 
 ## The Noether Currents: No Second Current
 
@@ -137,7 +137,7 @@ and neither of the last two terms vanishes for a general $\Gamma$. So the action
 **Energy–momentum.** Translation invariance gives the canonical tensor, and the derivation is three lines, so it is done here rather than cited. With $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$, the action above is, in components,
 
 $$
-S=\int d^4r\;\Bigl[-\tfrac14F_{\imath\jmath}F_{\imath\jmath}+\tfrac12 k_m^2\langle\tilde A_\Phi\rangle_\natural\Bigr],
+S=\int d^4r\;\Bigl[-\tfrac14F_{\imath\jmath}F_{\imath\jmath}+\tfrac12 4\pi^{2}\nu_m^2\langle\tilde A_\Phi\rangle_\natural\Bigr],
 \qquad \langle\tilde A_\Phi\rangle_\natural=A_{\imath} A_{\imath} ,
 $$
 
@@ -148,21 +148,21 @@ T^{\mathrm{can}}_{\imath\jmath}=-F_{\imath\lambda}\,\partial_{\jmath} A_\lambda-
 =-F_{\imath\lambda}F_{\jmath\lambda}-F_{\imath\lambda}\,\partial_\lambda A_{\jmath}-\delta_{\imath\jmath}\mathcal L .
 $$
 
-The second term is a total derivative minus a piece that the equation fixes: $F_{\imath\lambda}\partial_\lambda A_{\jmath}=\partial_\lambda(F_{\imath\lambda}A_{\jmath})-(\partial_\lambda F_{\imath\lambda})A_{\jmath}$, and the equation $\partial_\lambda F_{\imath\lambda}=-k_m^2A_{\imath}$ turns the second factor into $+k_m^2A_{\imath} A_{\jmath}$. Dropping the total derivative — that step *is* the Belinfante improvement, and it is the whole of it for this field — leaves
+The second term is a total derivative minus a piece that the equation fixes: $F_{\imath\lambda}\partial_\lambda A_{\jmath}=\partial_\lambda(F_{\imath\lambda}A_{\jmath})-(\partial_\lambda F_{\imath\lambda})A_{\jmath}$, and the equation $\partial_\lambda F_{\imath\lambda}=-4\pi^{2}\nu_m^2A_{\imath}$ turns the second factor into $+\nu_m^2A_{\imath} A_{\jmath}$. Dropping the total derivative — that step *is* the Belinfante improvement, and it is the whole of it for this field — leaves
 
 $$
 T_{\imath\jmath}=-F_{\imath\lambda}F_{\jmath\lambda}+\tfrac14\,\delta_{\imath\jmath}F_{\alpha\beta}F_{\alpha\beta}
-+k_m^2\Bigl(A_{\imath} A_{\jmath}-\tfrac12\,\delta_{\imath\jmath}\langle\tilde A_\Phi\rangle_\natural\Bigr),
++4\pi^{2}\nu_m^2\Bigl(A_{\imath} A_{\jmath}-\tfrac12\,\delta_{\imath\jmath}\langle\tilde A_\Phi\rangle_\natural\Bigr),
 $$
 
 symmetric term by term: the improvement was needed to symmetrise the canonical form and is invisible in this one. Its properties are the ones that matter here, and each has a one-line proof.
 
 - **Symmetry.** $-F_{\imath\lambda}F_{\jmath\lambda}$ is symmetric because $F$ is antisymmetric and the two indices are contracted with the same index of the same matrix; the mass term is symmetric by inspection.
-- **Conservation.** $\partial_{\jmath} T_{\imath\jmath}=0$ on solutions. The derivative of the field terms produces $-(\partial_{\jmath} F_{\imath\lambda})F_{\jmath\lambda}$ together with a piece that combines with $\tfrac14\partial_{\imath} F^2$ through the Bianchi identity $\partial_{\imath} F_{\jmath\lambda}+\partial_{\jmath} F_{\lambda\imath}+\partial_\lambda F_{\imath\jmath}=0$, and the derivative of the mass term produces exactly the $k_m^2F_{\imath\lambda}A_\lambda$ the first piece needs. The identity is exact; it is also checked numerically below.
-- **Positive energy.** The energy density is $\tfrac12(\epsilon\vec E^2+\vec B^2/\mu)+\tfrac12k_m^2\bigl((a'_t)^2+\vec A^2\bigr)$, positive for the sign of the action used here.
-- **Trace.** $T_{\imath\imath}=-k_m^2\langle\tilde A_\Phi\rangle_\natural$ **exactly**: the field terms give $-F^2+F^2$ because $\delta_{\imath\imath}=4$ in four dimensions, and the mass term gives $k_m^2(A^2-2A^2)$. The trace therefore vanishes if and only if the local four-vector is lightlike.
+- **Conservation.** $\partial_{\jmath} T_{\imath\jmath}=0$ on solutions. The derivative of the field terms produces $-(\partial_{\jmath} F_{\imath\lambda})F_{\jmath\lambda}$ together with a piece that combines with $\tfrac14\partial_{\imath} F^2$ through the Bianchi identity $\partial_{\imath} F_{\jmath\lambda}+\partial_{\jmath} F_{\lambda\imath}+\partial_\lambda F_{\imath\jmath}=0$, and the derivative of the mass term produces exactly the $\nu_m^2F_{\imath\lambda}A_\lambda$ the first piece needs. The identity is exact; it is also checked numerically below.
+- **Positive energy.** The energy density is $\tfrac12(\epsilon\vec E^2+\vec B^2/\mu)+\tfrac12\nu_m^2\bigl((a'_t)^2+\vec A^2\bigr)$, positive for the sign of the action used here.
+- **Trace.** $T_{\imath\imath}=-4\pi^{2}\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ **exactly**: the field terms give $-F^2+F^2$ because $\delta_{\imath\imath}=4$ in four dimensions, and the mass term gives $\nu_m^2(A^2-2A^2)$. The trace therefore vanishes if and only if the local four-vector is lightlike.
 
-**The numerical checks.** On the plane wave of the section below, with $k'^2_t=\vec k_\Phi^2+k_m^2$ and the Lorenz condition satisfied, the divergence $\partial_{\jmath} T_{\imath\jmath}$ vanishes at the level of $10^{-5}$, which is the accuracy of the difference scheme, and the trace equals $-k_m^2\langle\tilde A_\Phi\rangle_\natural$ to machine precision ($0$ in the difference of the two sides). The two checks separate what the algebra asserts from what the equation supplies: the trace is an algebraic identity, the conservation is the equation of motion.
+**The numerical checks.** On the plane wave of the section below, with $k'^2_t=2\pi\vec\nu_\Phi^2+4\pi^{2}\nu_m^2$ and the Lorenz condition satisfied, the divergence $\partial_{\jmath} T_{\imath\jmath}$ vanishes at the level of $10^{-5}$, which is the accuracy of the difference scheme, and the trace equals $-\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ to machine precision ($0$ in the difference of the two sides). The two checks separate what the algebra asserts from what the equation supplies: the trace is an algebraic identity, the conservation is the equation of motion.
 
 **The closed form of Article 1 is the same object.** Article 1 records the current and the tensor in closed form in the algebra's letters — the Gsponer–Hurni expressions, completed by reversal. The display above is their component reading, and the reversal completion of Article 1 is the statement that the index form is already symmetric: a part added to its own reversal is reversal-even, and a symmetric two-index object is exactly that. The two writings are therefore one object, and a reader who compares them is comparing the algebra's letters with the components, not two tensors.
 
@@ -176,7 +176,7 @@ symmetric term by term: the improvement was needed to symmetrise the canonical f
 
 - One compact statement of the equation: one action, one variation, four real equations.
 - The Lorenz condition as a consequence of the equation, with the interpretation that the mass term is the obstruction to the gauge shift.
-- The energy–momentum tensor in one derivation, with the four properties (symmetry, conservation, positivity, trace) proved from the equation and the trace's exact value $-k_m^2\langle\tilde A_\Phi\rangle_\natural$ recorded.
+- The energy–momentum tensor in one derivation, with the four properties (symmetry, conservation, positivity, trace) proved from the equation and the trace's exact value $-\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ recorded.
 - The exhaustion of the currents: translations and Lorentz, and nothing else, because the carrier has no central phase.
 - The two exact-solution statements: the toroidal family, and the vanishing of the pure-gradient solutions.
 
@@ -193,12 +193,12 @@ symmetric term by term: the improvement was needed to symmetrise the canonical f
 The Proca field is the extremum of
 
 $$
-S[\tilde A_\Phi]=\int d^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^2\,\langle\tilde A_\Phi\rangle_\natural\Bigr],
+S[\tilde A_\Phi]=\int d^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^2\,\langle\tilde A_\Phi\rangle_\natural\Bigr],
 $$
 
-whose Euler–Lagrange equation is $\tilde\nabla_\Phi\tilde F=k_m^2\tilde A_\Phi$, four real equations for the four components of the material sector. The coefficient of the field term is the Maxwell normalization, the relative sign of the mass term is fixed by positivity of the energy, and the pairing is the real part of the scalar part because only that pairing is real on $\tilde F\tilde F$ and reproduces the equation.
+whose Euler–Lagrange equation is $\tilde\nabla_\Phi\tilde F=4\pi^{2}\nu_m^2\tilde A_\Phi$, four real equations for the four components of the material sector. The coefficient of the field term is the Maxwell normalization, the relative sign of the mass term is fixed by positivity of the energy, and the pairing is the real part of the scalar part because only that pairing is real on $\tilde F\tilde F$ and reproduces the equation.
 
-The divergence of the equation forces the Lorenz condition, and the variational reading of that fact is that the mass term breaks the gauge shift which the field term alone would allow. The action has no internal symmetry, so its only currents are the energy–momentum and the angular momentum: the stress tensor is symmetric, conserved, positive in energy, and its trace is $-k_m^2\langle\tilde A_\Phi\rangle_\natural$ exactly, so that it vanishes only for a null field. Plane waves extremize the action, a toroidal family does too, and no non-trivial pure gradient does — the last being the variational statement that the mass removes the gauge freedom.
+The divergence of the equation forces the Lorenz condition, and the variational reading of that fact is that the mass term breaks the gauge shift which the field term alone would allow. The action has no internal symmetry, so its only currents are the energy–momentum and the angular momentum: the stress tensor is symmetric, conserved, positive in energy, and its trace is $-\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ exactly, so that it vanishes only for a null field. Plane waves extremize the action, a toroidal family does too, and no non-trivial pure gradient does — the last being the variational statement that the mass removes the gauge freedom.
 
 ## Summary of Notation
 
@@ -216,8 +216,8 @@ The divergence of the equation forces the Lorenz condition, and the variational 
 | $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | Lorenz scalar |
 | $\mathcal{L}$ | Lagrangian density |
 | $T_{\imath\jmath}$ | Symmetric energy–momentum tensor |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
-| $\theta_{\mathrm{pwp}}=k'_t r'_t-\vec k_\Phi\cdot\vec r$ | Plane-wave phase |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
+| $\theta_{\mathrm{pwp}}=k'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r$ | Plane-wave phase |
 
 ## Further Reading
 
@@ -235,14 +235,14 @@ The divergence of the equation forces the Lorenz condition, and the variational 
 
 ## Aside: Exact Solutions and What They Show
 
-**Plane waves.** With $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ and $\theta_{\mathrm{pwp}}=k'_t r'_t-\vec k_\Phi\cdot\vec r$, the equation requires the dispersion relation $k'^2_t=\vec k_\Phi^2+k_m^2$ and the Lorenz condition requires the amplitude relation $a'_{t,0}=\vec k_\Phi\cdot\vec A_0/k'_t$. Three amplitude directions survive at each wavevector: two transverse and one longitudinal. These are the parent's modes, and the action adds only that they extremize it.
+**Plane waves.** With $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ and $\theta_{\mathrm{pwp}}=k'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r$, the equation requires the dispersion relation $k'^2_t=2\pi\vec\nu_\Phi^2+4\pi^{2}\nu_m^2$ and the Lorenz condition requires the amplitude relation $a'_{t,0}=2\pi\vec\nu_\Phi\cdot\vec A_0/k'_t$. Three amplitude directions survive at each wavevector: two transverse and one longitudinal. These are the parent's modes, and the action adds only that they extremize it.
 
-**A toroidal family.** Because the action implies the Lorenz condition and hence the componentwise Klein–Gordon equation, solutions can be built from scalar ones. Take a real scalar $\psi$ with $(\Box_\Phi-k_m^2)\psi=0$ and set
+**A toroidal family.** Because the action implies the Lorenz condition and hence the componentwise Klein–Gordon equation, solutions can be built from scalar ones. Take a real scalar $\psi$ with $(\Box_\Phi-4\pi^{2}\nu_m^2)\psi=0$ and set
 
 $$
 \vec A=\vec\nabla_\Phi\psi\times\vec r ,\qquad a'_t=0 .
 $$
 
-Then $\vec\nabla_\Phi\cdot\vec A=\vec r\cdot(\vec\nabla_\Phi\times\nabla\psi)-\vec\nabla_\Phi\psi\cdot(\vec\nabla_\Phi\times\vec r)=0$, so the Lorenz condition holds identically, and $\Box_\Phi\vec A=\vec\nabla_\Phi(\Box_\Phi\psi)\times\vec r=k_m^2\vec A$ because the curl of a gradient vanishes and $\vec r$ is static. This is an exact non-plane solution: with $\psi=j_0(\kappa r)\cos(k'_t r'_t)$ and $\kappa^2=k'^2_t-k_m^2$ it is a spherical, toroidal-vector field. The identity is verified by finite differences at the level of $10^{-7}$ on a smooth configuration, which is the accuracy of the difference scheme. The family is the corpus's first exact Proca solution that is not a superposition of plane waves.
+Then $\vec\nabla_\Phi\cdot\vec A=\vec r\cdot(\vec\nabla_\Phi\times\nabla\psi)-\vec\nabla_\Phi\psi\cdot(\vec\nabla_\Phi\times\vec r)=0$, so the Lorenz condition holds identically, and $\Box_\Phi\vec A=\vec\nabla_\Phi(\Box_\Phi\psi)\times\vec r=4\pi^{2}\nu_m^2\vec A$ because the curl of a gradient vanishes and $\vec r$ is static. This is an exact non-plane solution: with $\psi=j_0(\kappa r)\cos(k'_t r'_t)$ and $\kappa^2=k'^2_t-4\pi^{2}\nu_m^2$ it is a spherical, toroidal-vector field. The identity is verified by finite differences at the level of $10^{-7}$ on a smooth configuration, which is the accuracy of the difference scheme. The family is the corpus's first exact Proca solution that is not a superposition of plane waves.
 
-**No pure-gradient solution.** Take $\tilde A_\Phi=(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. Then $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi)\Gamma)=+\Box_\Phi\Gamma$ — the composition of the gradient with its conjugate is the d'Alembertian with a plus sign, since the two time derivatives each carry an $i$ and the two spatial ones do not — so the Lorenz condition forces $\Box_\Phi\Gamma=0$; the equation then forces $k_m^2(\tilde\nabla_\Phi)\Gamma=0$, that is, $\Gamma$ constant and the field zero. So the massive theory admits no non-trivial pure-gradient solution. This is the variational form of "there is no gauge freedom": in the massless theory the pure gradients are exactly the gauge orbit, and here the orbit has collapsed to a point. The statement is exact and needs no approximation.
+**No pure-gradient solution.** Take $\tilde A_\Phi=(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. Then $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi)\Gamma)=+\Box_\Phi\Gamma$ — the composition of the gradient with its conjugate is the d'Alembertian with a plus sign, since the two time derivatives each carry an $i$ and the two spatial ones do not — so the Lorenz condition forces $\Box_\Phi\Gamma=0$; the equation then forces $4\pi^{2}\nu_m^2(\tilde\nabla_\Phi)\Gamma=0$, that is, $\Gamma$ constant and the field zero. So the massive theory admits no non-trivial pure-gradient solution. This is the variational form of "there is no gauge freedom": in the massless theory the pure gradients are exactly the gauge orbit, and here the orbit has collapsed to a point. The statement is exact and needs no approximation.

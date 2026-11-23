@@ -51,7 +51,7 @@ $$
 \tfrac12\,\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)=-\tfrac12\bigl(\epsilon\vec E^{2}-\vec B^{2}/\mu\bigr),
 $$
 
-which is the standard Lagrangian up to one overall sign. The sign is the corpus's and is not chosen here: the Proca companion fixes it once, by requiring that the same field term, with the mass term added, give $\tilde\nabla_\Phi\tilde F=k_m^{2}\tilde A$ with the sign printed there. Flipping the sign of the field term without flipping the mass term would change the Proca equation's sign, and the corpus does not do that.
+which is the standard Lagrangian up to one overall sign. The sign is the corpus's and is not chosen here: the Proca companion fixes it once, by requiring that the same field term, with the mass term added, give $\tilde\nabla_\Phi\tilde F=4\pi^{2}\nu_m^{2}\tilde A$ with the sign printed there. Flipping the sign of the field term without flipping the mass term would change the Proca equation's sign, and the corpus does not do that.
 
 Three properties, each one line.
 

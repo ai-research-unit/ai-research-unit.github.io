@@ -206,7 +206,7 @@ The analytic continuation past the horizon is the same continuation that gives t
 
 ## What Is Established and What Is Interpretation
 
-Established (physics, imported). The KMS condition and its characterization of thermal equilibrium; the Bisognano–Wichmann theorem, so that the modular flow of a wedge is the boost; the Unruh temperature $T=m a/(2k_m\pi k_B)$ with $\beta=2\pi c/a$; the Hawking temperature with $\beta_H=2\pi c/\kappa=2\pi/\kappa_\omega$; the Euclidean regularity period $8\pi GM/c^3$; the Tolman profile $T(x)=T_H/\ell(x)$.
+Established (physics, imported). The KMS condition and its characterization of thermal equilibrium; the Bisognano–Wichmann theorem, so that the modular flow of a wedge is the boost; the Unruh temperature $T=m a/(4\pi\nu_m\pi k_B)$ with $\beta=2\pi c/a$; the Hawking temperature with $\beta_H=2\pi c/\kappa=2\pi/\kappa_\omega$; the Euclidean regularity period $8\pi GM/c^3$; the Tolman profile $T(x)=T_H/\ell(x)$.
 
 Established (this article's bookkeeping). The two widths and their relation $\beta(x)=\beta_H\ell(x)$; the modular parameter as the Killing time in units of the flow's width, $s=r'_t/\beta_H$, from $2\pi s=\kappa_\omega r'_t$; the collapse of the observer's circle and the survival of the flow's at the horizon; the numerical table for the Schwarzschild lapse at four radii, with $\beta(r)T(r)=\beta_H T_H$ at every one; the identification of the Euclidean regularity period with $\beta_H$ in the units of the table.
 
@@ -250,7 +250,7 @@ This is standard relativistic thermodynamics in the corpus's letters, with no fr
 | $a$ | Proper acceleration of a uniformly accelerated observer |
 | $r_s=2GM/c^2$ | Schwarzschild radius |
 | $G,\ M$ | Gravitational constant and mass |
-| $k_B$, $k_m=\frac{2\pi mc}{h}$ | Boltzmann's constant and mass wave number |
+| $k_B$, $\nu_m=\frac{mc}{h}$ | Boltzmann's constant and mass wave number |
 | $c$ | Speed of light |
 | $\delta_{\imath\jmath}$ | The one metric of the corpus, all coefficients $+1$ |
 

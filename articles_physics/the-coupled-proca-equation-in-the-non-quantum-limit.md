@@ -26,7 +26,7 @@ The minimal coupling of a massive vector field, the transverse polarisation of a
 
 The word is defined for $\varrho>0$; the cone is $\varrho=0$; the limit is a statement on that domain.
 
-Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iq\tilde A_{\imath}}{h}$; the word $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the frame a full unit; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
+Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iq\tilde A_{\imath}}{h}$; the word $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the frame a full unit; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $\nu_m=\frac{mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
 
 ## The Word, the Norm and the Four Brackets
 
@@ -71,7 +71,7 @@ The table, and it is the Dirac table.
 | the rotor's connection | $1$ | the polarisation's transport |
 | products of two of the above | $2$ | the curvature |
 
-The oscillation is in the phase, so the amplitude is free to be slowly varying: a plane wave with constant amplitude is a solution, $\varrho=\text{const}$ and $\theta_{\mathrm{pha}}=\vec k\cdot\vec r-\omega r'_{t}$. **In the real chart no such solution exists**, because a real field satisfying $(\Box_\Phi-k_m^{2})A=0$ must oscillate through zero, and the oscillation then falls on the amplitude.
+The oscillation is in the phase, so the amplitude is free to be slowly varying: a plane wave with constant amplitude is a solution, $\varrho=\text{const}$ and $\theta_{\mathrm{pha}}=2\pi\vec\nu_{\Phi}\cdot\vec r-\omega r'_{t}$. **In the real chart no such solution exists**, because a real field satisfying $(\Box_\Phi-4\pi^{2}\nu_m^{2})A=0$ must oscillate through zero, and the oscillation then falls on the amplitude.
 
 *A complex field's fast variable is continuous and a real field's is discrete, and only the continuous one can be differentiated into a wavevector.*
 
@@ -121,7 +121,7 @@ The contrast that closes the pair of Proca articles.
 
 | chart | carrier | fast variable | amplitude's rate | limit controlled |
 |---|---|---|---|---|
-| free Proca | real | the sign at the nodes | $k_m$ | no |
+| free Proca | real | the sign at the nodes | $\nu_m$ | no |
 | coupled Proca | complex | the phase | $1/L$ | yes |
 
 The table's second row is the article's result, and the third column is the reason for the fourth.
@@ -130,7 +130,7 @@ The table's second row is the article's result, and the third column is the reas
 
 The norm was checked to be exact. $\tilde A\tilde A^{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ for every value of the six frame angles, and the parent reports the check at machine precision on random draws. The N-regular set is therefore $\varrho>0$, since the norm vanishes only at $\varrho=0$.
 
-A complex plane wave $\tilde A=A_0e^{i(\vec k\cdot\vec r-\omega r'_{t})}\tilde U$ with constant $A_0$ and constant $\tilde U$ satisfies the equation when $\omega^{2}-\lvert\vec k\rvert^{2}=k_m^{2}$ and $\kappa\cdot A_0=0$, and its scale is constant. No real solution has a constant scale, because a real field satisfying the same equation must cross zero. The existence of a slow envelope is therefore a property of the complex carrier.
+A complex plane wave $\tilde A=A_0e^{i(2\pi\vec\nu_{\Phi}\cdot\vec r-\omega r'_{t})}\tilde U$ with constant $A_0$ and constant $\tilde U$ satisfies the equation when $\omega^{2}-\lvert2\pi\vec\nu_{\Phi}\rvert^{2}=4\pi^{2}\nu_m^{2}$ and $\kappa\cdot A_0=0$, and its scale is constant. No real solution has a constant scale, because a real field satisfying the same equation must cross zero. The existence of a slow envelope is therefore a property of the complex carrier.
 
 Real central, central imaginary, Hermitian and real vector part, in that order; the potential joins the phase bracket's temporal slot and the boost bracket's spatial slots. The types are the Dirac chart's and the limit's order structure follows.
 

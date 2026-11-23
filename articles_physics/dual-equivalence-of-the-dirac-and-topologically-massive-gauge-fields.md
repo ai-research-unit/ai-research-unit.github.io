@@ -45,7 +45,7 @@ The gradient acts on the left. The free equation is first order in one field, $\
 $$
 \tilde\nabla_\Phi^2=e_t\Bigl(\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi\Bigr)+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta},
 $$
-and the mixed term is a vector. The operator $\Box_\Phi$ has no such term because $(\tilde\nabla_\Phi)^{\natural}$ carries the spatial signs reversed, and that is why the d'Alembertian is the norm and not the square. The massive equation is the chiral pair of §*The Two Dirac Equations*, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, and this article writes no other first-order massive equation of one field. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+and the mixed term is a vector. The operator $\Box_\Phi$ has no such term because $(\tilde\nabla_\Phi)^{\natural}$ carries the spatial signs reversed, and that is why the d'Alembertian is the norm and not the square. The massive equation is the chiral pair of §*The Two Dirac Equations*, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, and this article writes no other first-order massive equation of one field. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ## The Parent Action
 
@@ -74,7 +74,7 @@ $A_{\imath}$ is the electromagnetic potential, and it enters only through the co
 $$
 \tilde\nabla_{\imath} G_\lambda=\frac{\partial G_\lambda}{\partial x_{\imath}}+ieA_{\imath}\,\epsilon_\lambda\sum_{\sigma,\jmath}\epsilon_\sigma\,\check c_{\lambda\sigma\jmath}u_{\jmath} G_\sigma .
 $$
-The second term is the chirality of the four-vector carrier, and it is written as the contraction of structure constants on the neutral vector $\vec k_\Phi$ that it is. The source prints the same object as a $4\times4$ array $c_5{}_{\imath\jmath}$, one representative of the chirality, with $c_5{}_{\imath\jmath}=-\epsilon_{\imath}\check c_{\imath\jmath\lambda}u_\lambda$ and no sum on $\mu$; the array obeys $(c_5)^2=1$ and is $\epsilon$-antisymmetric, so the chirality of the carrier takes its two values on the two chiral parts of $G$. The contraction puts $k$ on the page, where the representative had absorbed it. The derivative that the auxiliary field uses is the same object with the constant $a$ added in the manner of a second coupling, $\tilde\nabla_{\Phi,\imath,a} B_{\jmath}=\partial/\partial x_{\imath} B_{\jmath}+ia\,j_{\imath} B^*_{\jmath}$, the second term conjugating the field, so that
+The second term is the chirality of the four-vector carrier, and it is written as the contraction of structure constants on the neutral vector $\vec\nu_\Phi$ that it is. The source prints the same object as a $4\times4$ array $c_5{}_{\imath\jmath}$, one representative of the chirality, with $c_5{}_{\imath\jmath}=-\epsilon_{\imath}\check c_{\imath\jmath\lambda}u_\lambda$ and no sum on $\mu$; the array obeys $(c_5)^2=1$ and is $\epsilon$-antisymmetric, so the chirality of the carrier takes its two values on the two chiral parts of $G$. The contraction puts $k$ on the page, where the representative had absorbed it. The derivative that the auxiliary field uses is the same object with the constant $a$ added in the manner of a second coupling, $\tilde\nabla_{\Phi,\imath,a} B_{\jmath}=\partial/\partial x_{\imath} B_{\jmath}+ia\,j_{\imath} B^*_{\jmath}$, the second term conjugating the field, so that
 $$
 \tilde\nabla_{\Phi,\imath,a} B_{\jmath}-\tilde\nabla_{\Phi,\jmath,a} B_{\imath}=\partial/\partial x_{\imath} B_{\jmath}-\partial/\partial x_{\jmath} B_{\imath}+ia\,j_{\imath} B^*_{\jmath}-ia\,j_{\jmath} B^*_{\imath}=F_{\imath\jmath},
 $$
@@ -216,9 +216,9 @@ Two equations carry the name in this corpus, and they differ in which side of th
 
 **The one-sided pair.** On the Dirac module the massive equation is the pair whose mass couples the two chiral parts,
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\,\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\,\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\,\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\,\tilde{Ξ}_{R},
 $$
 both lines acting on the left, with the mass as the pairing of the two chiral parts and $\tilde\nabla_\Phi^2$ not scalar. In the s-vector carrier the same pair is the source's two chiral parts,
 $$
@@ -236,13 +236,13 @@ with no sum on $\mu$ in $\epsilon_{\imath}$. Two equations, one per value; the o
 
 **The two-sided equation.** Read on the algebra rather than on the module, the same content is one equation whose two sides are the two multiplications. In the observer frame it is
 $$
-\Bigl(-(\tilde\nabla_\Phi)^{\natural}-k_m\,i\,\overline{\;\cdot\;}\,\vec e_z\Bigr)F=0,
+\Bigl(-(\tilde\nabla_\Phi)^{\natural}-2\pi\nu_m\,i\,\overline{\;\cdot\;}\,\vec e_z\Bigr)F=0,
 $$
-with $F\in\mathbb{B}$: the gradient acts from the left, the mass from the right, and the componentwise conjugation $\overline{\;\cdot\;}$ supplies the antilinear part. This is the source's equation: in the units of the check the time part of $-(\tilde\nabla_\Phi)^{\natural}$ is $-e_t\,\partial/\partial R_t=i\,e_t\,\partial/\partial r'_t$ and its space part is $\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$. Since $\Gamma$ is the right multiplication by $-i\vec e_z$, the mass term is $k_m\,\Gamma\overline F$, and the equation can be moved to one side:
+with $F\in\mathbb{B}$: the gradient acts from the left, the mass from the right, and the componentwise conjugation $\overline{\;\cdot\;}$ supplies the antilinear part. This is the source's equation: in the units of the check the time part of $-(\tilde\nabla_\Phi)^{\natural}$ is $-e_t\,\partial/\partial R_t=i\,e_t\,\partial/\partial r'_t$ and its space part is $\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$. Since $\Gamma$ is the right multiplication by $-i\vec e_z$, the mass term is $\nu_m\,\Gamma\overline F$, and the equation can be moved to one side:
 $$
--k_m\,i\,\overline F\,\vec e_z=k_m\,(-i\overline F\,\vec e_z)=k_m\,\Gamma\,\overline F
+-2\pi\nu_m\,i\,\overline F\,\vec e_z=2\pi\nu_m\,(-i\overline F\,\vec e_z)=2\pi\nu_m\,\Gamma\,\overline F
 \qquad\Longrightarrow\qquad
-(\tilde\nabla_\Phi)^{\natural}F=k_m\,\Gamma\,\overline F ,
+(\tilde\nabla_\Phi)^{\natural}F=2\pi\nu_m\,\Gamma\,\overline F ,
 $$
 one factor of $i$ spent on $i^2=-1$. Read back, $\tilde{Ξ}_{L}=F$ and $\tilde{Ξ}_{R}=-i\overline F\,\vec e_z$ are the two chiral fields, so the display is the pair above in another variable and not a second dynamics. The mass therefore acts by right multiplication by the **chirality**, on the conjugate field, and it is the same $\Gamma$ that appears in $\tilde{Ξ}^{\dagger}iC_0\,\Gamma\,iC_{\imath}\tilde{Ξ}$ above. $\Gamma$ is a right multiplication alone, and right multiplications by orthogonal units anticommute, so it anticommutes with all four generators: it is the chirality, not a fifth generator.
 

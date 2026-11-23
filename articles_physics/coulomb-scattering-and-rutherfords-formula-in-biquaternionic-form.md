@@ -16,7 +16,7 @@ The article is organised as follows. The next section states the Coulomb problem
 
 The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, central $i$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$; the Hamiltonian is $H=[-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi+V(r)]e_t$, central; and $2\,\mathrm{Sc}(\tilde H_\Psi)$. The coordinate $r$ is the argument of the field.
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ## The Coulomb Problem in Biquaternion Form
 
@@ -40,15 +40,15 @@ is central, so the stationary equation $H\tilde{Ξ}=E\tilde{Ξ}$ reduces to the 
 
 ### The Coulomb parameter
 
-For a scattering state of energy $E=\frac{h^{2}\,k_\Phi^{2}}{8\pi^{2}\,m}>0$ the natural dimensionless coupling is the **Coulomb parameter**
+For a scattering state of energy $E=\frac{h^{2}\,4\pi^{2}\nu_{\Phi}^{2}}{8\pi^{2}\,m}>0$ the natural dimensionless coupling is the **Coulomb parameter**
 
 $$
-\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,k_\Phi}=\frac{2\pi \alpha}{h\,v},
+\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,2\pi\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v},
 \qquad
-v=c\,k_\Phi/k_m,
+v=c\,2\pi\nu_{\Phi}/\nu_m,
 $$
 
-the Coulomb energy at the de Broglie wavelength measured in units of the kinetic energy. It is the single dimensionless number that controls the whole problem: $\eta\to0$ is the high-energy or weak-coupling limit, in which the Born approximation becomes accurate, and $|\eta|\gg1$ is the semiclassical or strong-coupling regime. For like charges $\eta>0$ and the potential is repulsive; for opposite charges $\eta<0$ and it is attractive. In the biquaternion interpretation $\eta$ is a central real scalar built from the central quantities $m,\alpha,\frac{h}{2\pi},k_\Phi$; it is not an algebra-valued object, and it enters every phase below as a scalar.
+the Coulomb energy at the de Broglie wavelength measured in units of the kinetic energy. It is the single dimensionless number that controls the whole problem: $\eta\to0$ is the high-energy or weak-coupling limit, in which the Born approximation becomes accurate, and $|\eta|\gg1$ is the semiclassical or strong-coupling regime. For like charges $\eta>0$ and the potential is repulsive; for opposite charges $\eta<0$ and it is attractive. In the biquaternion interpretation $\eta$ is a central real scalar built from the central quantities $m,\alpha,\frac{h}{2\pi},\nu_{\Phi}$; it is not an algebra-valued object, and it enters every phase below as a scalar.
 
 ## Partial-Wave Decomposition
 
@@ -64,7 +64,7 @@ $$
 and with the substitution $u_l(r)=rR_l(r)$ the equation takes the one-dimensional form
 
 $$
-\frac{d^2u_l}{dr^2}(r)+\left[k_\Phi^2-\frac{(2\pi)^{2} 2\,m\,\alpha}{h^{2}\,r}-\frac{l(l+1)}{r^2}\right]u_l(r)=0 .
+\frac{d^2u_l}{dr^2}(r)+\left[4\pi^{2}\nu_{\Phi}^2-\frac{(2\pi)^{2} 2\,m\,\alpha}{h^{2}\,r}-\frac{l(l+1)}{r^2}\right]u_l(r)=0 .
 $$
 
 In the dimensionless variable $\rho=kr$ this is the **Coulomb wave equation**
@@ -72,7 +72,7 @@ In the dimensionless variable $\rho=kr$ this is the **Coulomb wave equation**
 $$
 \frac{d^2u_l}{d\rho^2}+\left[1-\frac{2\eta}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0 ,
 \qquad
-\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,k_\Phi},
+\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,2\pi\nu_{\Phi}},
 $$
 
 the same equation that the hydrogen article solves for bound states, now at positive energy. The angular momentum barrier $l(l+1)/\rho^2$ and the Coulomb term $-2\eta/\rho$ are both central scalars; the module does not enter the equation. The reduction of a three-dimensional central problem to a one-dimensional radial equation is thus a reduction of the scalar envelope, and the biquaternion state is the product of that envelope with a constant module element.
@@ -147,14 +147,14 @@ $$
 This series can be summed in closed form. The standard result, obtained from the generating function of the Coulomb phases and the Legendre expansion, is
 
 $$
-\boxed{\;f_C(\theta_{\mathrm{sct}})=-\frac{\eta}{2k_\Phi\,\sin^2(\theta_{\mathrm{sct}}/2)}
+\boxed{\;f_C(\theta_{\mathrm{sct}})=-\frac{\eta}{4\pi\nu_{\Phi}\,\sin^2(\theta_{\mathrm{sct}}/2)}
 \,\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right]\;},
 $$
 
 whose squared modulus is
 
 $$
-\left|f_C(\theta_{\mathrm{sct}})\right|^2=\frac{\eta^2}{4k_\Phi^2\sin^4(\theta_{\mathrm{sct}}/2)},
+\left|f_C(\theta_{\mathrm{sct}})\right|^2=\frac{\eta^2}{44\pi^{2}\nu_{\Phi}^2\sin^4(\theta_{\mathrm{sct}}/2)},
 $$
 
 independent of the phases. The differential cross section is $d\sigma/d\Omega=|f|^2$, and the flux factors are the standard ones for a central potential.
@@ -166,13 +166,13 @@ In the biquaternion interpretation, the amplitude $f(\theta_{\mathrm{sct}})$ is 
 The Coulomb parameter and the wave vector combine as
 
 $$
-\frac{\eta^2}{4k_\Phi^2}=\frac{m^{2}\,\alpha^{2}}{4\,\frac{h^{4}}{(2\pi)^{4}}\,k_\Phi^{4}}=\frac{\alpha^2}{16E^2},
+\frac{\eta^2}{4\nu_{\Phi}^2}=\frac{m^{2}\,\alpha^{2}}{4\,\frac{h^{4}}{(2\pi)^{4}}\,\nu_{\Phi}^{4}}=\frac{\alpha^2}{16E^2},
 $$
 
 and therefore
 
 $$
-\boxed{\;\frac{d\sigma}{d\Omega}=\frac{\eta^2}{4k_\Phi^2\sin^4(\theta_{\mathrm{sct}}/2)}
+\boxed{\;\frac{d\sigma}{d\Omega}=\frac{\eta^2}{44\pi^{2}\nu_{\Phi}^2\sin^4(\theta_{\mathrm{sct}}/2)}
 =\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta_{\mathrm{sct}}/2)}\;},
 $$
 
@@ -195,11 +195,11 @@ The classical and quantum expressions were compared numerically at $E=1,2,5$ and
 The first Born amplitude for the same potential is (next section)
 
 $$
-f_B(\theta_{\mathrm{sct}})=-\frac{2\pi 2\alpha\,k_m}{h\,c\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2}
-=-\frac{m\,\alpha}{2\,\frac{h^{2}}{4\pi^{2}}\,k_\Phi^{2}\sin^2(\theta_{\mathrm{sct}}/2)}
-=-\frac{\eta}{2k_\Phi\sin^2(\theta_{\mathrm{sct}}/2)},
+f_B(\theta_{\mathrm{sct}})=-\frac{2\pi 2\alpha\,2\pi\nu_m}{h\,c\lvert2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi\rvert^2}
+=-\frac{m\,\alpha}{2\,\frac{h^{2}}{4\pi^{2}}\,4\pi^{2}\nu_{\Phi}^{2}\sin^2(\theta_{\mathrm{sct}}/2)}
+=-\frac{\eta}{4\pi\nu_{\Phi}\sin^2(\theta_{\mathrm{sct}}/2)},
 \qquad
-\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert=2k_\Phi\sin(\theta_{\mathrm{sct}}/2),
+\lvert2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi\rvert=4\pi\nu_{\Phi}\sin(\theta_{\mathrm{sct}}/2),
 $$
 
 whose modulus is exactly the modulus of $f_C$. The two amplitudes therefore differ by a **pure phase**:
@@ -219,23 +219,23 @@ The first Born amplitude is the Fourier transform of the potential at the moment
 $$
 f_B(\theta_{\mathrm{sct}})=-\frac{(2\pi)^{2} 2\,m}{h^{2}}\frac{1}{4\pi}\int  d^3r\;\exp(i\theta_{\mathrm{trf}})\,V(r),
 \qquad
-\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert=2k_\Phi\sin(\theta_{\mathrm{sct}}/2),
+\lvert2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi\rvert=4\pi\nu_{\Phi}\sin(\theta_{\mathrm{sct}}/2),
 $$
 
-The transfer angle $\theta_{\mathrm{trf}}:=-(\vec k_{\Phi,2}-\vec k_\Phi)\cdot\vec r$ is real because the two wave vectors and the position are real, and $\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert$ is the magnitude of the momentum transfer. For the Coulomb potential the transform is the standard Coulomb kernel,
+The transfer angle $\theta_{\mathrm{trf}}:=-(2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi)\cdot\vec r$ is real because the two wave vectors and the position are real, and $\lvert\vec\nu_{\Phi,2}-\vec\nu_\Phi\rvert$ is the magnitude of the momentum transfer. For the Coulomb potential the transform is the standard Coulomb kernel,
 
 $$
-\int d^3r\;\frac{\exp(i\theta_{\mathrm{trf}})}{r}=\frac{4\pi}{\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2},
+\int d^3r\;\frac{\exp(i\theta_{\mathrm{trf}})}{r}=\frac{4\pi}{\lvert2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi\rvert^2},
 $$
 
 so
 
 $$
-f_B(\theta_{\mathrm{sct}})=-\frac{(2\pi)^{2} 2\,m}{h^{2}}\,\frac{\alpha}{\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2}
-=-\frac{2\pi 2\alpha\,k_m}{h\,c\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2},
+f_B(\theta_{\mathrm{sct}})=-\frac{(2\pi)^{2} 2\,m}{h^{2}}\,\frac{\alpha}{\lvert2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi\rvert^2}
+=-\frac{2\pi 2\alpha\,2\pi\nu_m}{h\,c\lvert2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi\rvert^2},
 $$
 
-and squaring with $\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2=4k_\Phi^2\sin^2(\theta_{\mathrm{sct}}/2)$ gives Rutherford's formula again. The Fourier transform is an integral of a central scalar; in the biquaternion interpretation the amplitude it produces is central, and the momentum transfer is a real quaternion, the difference of two real wave vectors. The Born route and the partial-wave route reach the same cross section, which is the content of the equality just stated.
+and squaring with $\lvert\vec\nu_{\Phi,2}-\vec\nu_\Phi\rvert^2=4\nu_{\Phi}^2\sin^2(\theta_{\mathrm{sct}}/2)$ gives Rutherford's formula again. The Fourier transform is an integral of a central scalar; in the biquaternion interpretation the amplitude it produces is central, and the momentum transfer is a real quaternion, the difference of two real wave vectors. The Born route and the partial-wave route reach the same cross section, which is the content of the equality just stated.
 
 ### Why the first Born amplitude is already exact in modulus
 
@@ -285,7 +285,7 @@ The logarithmic phase is the non-relativistic analogue of an infrared divergence
 
 ## Summary
 
-The Coulomb problem in the biquaternion framework is the central Hamiltonian $H=[-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi+\alpha/r]e_t$ with $\alpha=Z_1Z_2e^2$ and Coulomb parameter $\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,k_\Phi}=\frac{2\pi \alpha}{h\,v}$. The stationary equation reduces to the scalar envelope, and the partial-wave decomposition is a decomposition of that scalar; the amplitude and all phases are central. The radial equation is the Coulomb wave equation
+The Coulomb problem in the biquaternion framework is the central Hamiltonian $H=[-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi+\alpha/r]e_t$ with $\alpha=Z_1Z_2e^2$ and Coulomb parameter $\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,2\pi\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v}$. The stationary equation reduces to the scalar envelope, and the partial-wave decomposition is a decomposition of that scalar; the amplitude and all phases are central. The radial equation is the Coulomb wave equation
 
 $$
 \frac{d^2u_l}{dr^2}+\left[1-\frac{2\eta}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0,
@@ -296,10 +296,10 @@ whose regular solution is $F_l=C_l\rho^{l+1}\exp(-i\rho)M(l+1-i\eta,2l+2,2i\rho)
 The partial-wave sum gives the closed-form amplitude
 
 $$
-f_C(\theta_{\mathrm{sct}})=-\frac{\eta}{2k_\Phi\sin^2(\theta_{\mathrm{sct}}/2)}\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right],
+f_C(\theta_{\mathrm{sct}})=-\frac{\eta}{4\pi\nu_{\Phi}\sin^2(\theta_{\mathrm{sct}}/2)}\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right],
 $$
 
-whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta_{\mathrm{sct}}/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\frac{h^{2}}{4\pi^{2}}\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.
+whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta_{\mathrm{sct}}/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\frac{h^{2}}{4\pi^{2}}\lvert2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.
 
 The biquaternion content is centrality: the potential couples only to the scalar slot, the amplitude is a central complex scalar, the Coulomb phase and the logarithmic phase are central $*$-unitary elements, and the momentum transfer is a real quaternion. The bound states of the same potential are the subject of the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*. The framework supplies the algebraic location of the amplitude and the phases and the continuity between the bound and continuum problems; it does not supply the Coulomb wave functions, the closed-form sum, or Rutherford's formula, and it adds no prediction distinguishing the reformulation from scalar Coulomb scattering.
 
@@ -314,7 +314,7 @@ The biquaternion content is centrality: the potential couples only to the scalar
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$ | State module |
 | $V(r)=\alpha/r$, $\alpha=Z_1Z_2e^2$ | Coulomb potential, central |
-| $\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,k_\Phi}=\frac{2\pi \alpha}{h\,v}$ | Coulomb parameter |
+| $\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,2\pi\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v}$ | Coulomb parameter |
 | $u_l=rR_l$ | Reduced radial function |
 | $\rho=kr$ | Dimensionless radius |
 | $F_l(\eta,\rho)$ | Regular Coulomb function |
@@ -324,8 +324,8 @@ The biquaternion content is centrality: the potential couples only to the scalar
 | $\sigma_l=\arg\Gamma(l+1+i\eta)$ | Coulomb phase |
 | $f(\theta_{\mathrm{sct}})=-\frac{1}{2ik}\sum_l(2l+1)(\exp(2i\theta_{\mathrm{sct},l})-1)P_l$ | Partial-wave amplitude |
 | $f_C(\theta_{\mathrm{sct}})$ | Closed-form Coulomb amplitude |
-| $\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert=2k_\Phi\sin(\theta_{\mathrm{sct}}/2)$ | Momentum transfer |
-| $f_B=-\frac{2\pi 2\alpha\,k_m}{h\,c\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2}$ | First Born amplitude |
+| $\lvert\vec\nu_{\Phi,2}-\vec\nu_\Phi\rvert=2\nu_{\Phi}\sin(\theta_{\mathrm{sct}}/2)$ | Momentum transfer |
+| $f_B=-\frac{2\pi 2\alpha\,2\pi\nu_m}{h\,c\lvert2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi\rvert^2}$ | First Born amplitude |
 | $\frac{d\sigma}{d\Omega}=\frac{\alpha^2}{16E^2\sin^4(\theta_{\mathrm{sct}}/2)}$ | Rutherford cross section |
 | $2\,\mathrm{Sc}(\tilde H_\Psi)$ | Reduction convention |
 

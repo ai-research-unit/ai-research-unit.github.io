@@ -29,9 +29,9 @@ $$
 whose two parts are the two eigenvalues of one basis operator, $\tilde{Ξ}_{L}$ the value L and $\tilde{Ξ}_{R}$ the value R (*Special Element Conventions*, §*The Chirality Convention*). The basis operator is a choice and the values are not: another scalar-free $u$ with $u^2=-e_t$ gives another basis operator with the same two values; every element of the algebra is such a field, and only the zero element has both parts zero. This article declares the axis $\vec u=\vec e_z$, the unit at which the chirality basis operator is the fifth basis operator of the material frame $\mathbb{B}_{\Phi}$. The free propagation is the biquaternion Dirac equation
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_p}\,\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_{m_p}\,\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_p}\,\tilde{Ξ}_{R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_{m_p}\,\tilde{Ξ}_{R} .
 $$
 
 In this section we record what is structural about placing it there and what is not.
@@ -45,18 +45,18 @@ The article writes the Dirac equation once, as the pair of two first-order equat
 **The reading on one element** writes the same pair on the same element. The gradient $(\tilde\nabla_\Phi)^{\natural}$ carries the L value to the R value and $\tilde\nabla_\Phi$ carries the R value to the L value,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_p}\,\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_{m_p}\,\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_p}\,\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_{m_p}\,\tilde{Ξ}_{R},
 $$
 
-and composing the two lines gives $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{L}=0$ and $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{R}=0$. Here $1/k_{m_p}=\frac{h}{2\pi m_pc}$ is the mass length.
+and composing the two lines gives $(\Box_\Phi-4\pi^{2}\nu_{m_p}^{2})\tilde{Ξ}_{L}=0$ and $(\Box_\Phi-4\pi^{2}\nu_{m_p}^{2})\tilde{Ξ}_{R}=0$. Here $1/\nu_{m_p}=\frac{h}{2\pi m_pc}$ is the mass length.
 
 The two lines act on the element and contain no matrix generator. What the reading on one element adds is the charge and the bilinears, which are read on the element. The algebra carries the mass term and the mass shell, and the two readings are related by a change of carrier, not by a change of physics.
 
 | | On a pair of elements | On one element |
 |---|---|---|
-| Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_p}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_p}\tilde{Ξ}_{R}$ | the same two lines |
+| Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_{m_p}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_{m_p}\tilde{Ξ}_{R}$ | the same two lines |
 | Field | $(\tilde{Ξ}_{L},\tilde{Ξ}_{R})\in\mathbb{B}\oplus\mathbb{B}$, two elements | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}\in\mathbb{B}$, two values |
 | Mass | the off-diagonal coupling of the two entries | the same coefficient, off-diagonal in the two values |
 | Operator | left multiplication by the gradient and its quaternion conjugate, one on each entry | the same two, $\Box_\Phi$ on each value after the two lines are composed |
@@ -65,7 +65,7 @@ The two lines act on the element and contain no matrix generator. What the readi
 
 **The spin-$\tfrac12$ content follows from the algebra and not from the proton.** The elements of norm one, $\tilde U\tilde U^{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act on each value with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. Left multiplication by $-e_t$ carries the field to $-\tilde{Ξ}$, while the conjugation action of the same element on the four-vectors of $\mathbb{B}_{\Phi}$, $\tilde V_{\Phi}\mapsto\tilde U\tilde V_{\Phi}\tilde U^{-1}$, returns $+\tilde V_{\Phi}$. The half-integral, double-valued character of the proton's spin is therefore a consequence of where the field lives, and *not* of anything proton-specific. What the framework does **not** derive is why this composite object has spin $\tfrac12$: that is angular-momentum addition among constituents in standard physics, and the framework has no constituent structure to add. The correct statement is the conditional one — *if* the proton is modelled as an element of $\mathbb{B}$, its spin is $\tfrac12$.
 
-**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the reciprocal length $k_{m_p}$ in the linear term that relates the two parts, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_p}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_p}\tilde{Ξ}_{R}$; it is the only mass term in the free equation. The algebra's real structure $\flat=-{}^{*}$ is a different object: for $\tilde{Ξ}=\tilde{Ξ}_{+}+\tilde{Ξ}_{-}$ with $\tilde{Ξ}_{\pm}\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$ one has $\tilde{Ξ}^{\flat}=-\tilde{Ξ}_{+}+\tilde{Ξ}_{-}$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
+**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the reciprocal length $\nu_{m_p}$ in the linear term that relates the two parts, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_{m_p}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_{m_p}\tilde{Ξ}_{R}$; it is the only mass term in the free equation. The algebra's real structure $\flat=-{}^{*}$ is a different object: for $\tilde{Ξ}=\tilde{Ξ}_{+}+\tilde{Ξ}_{-}$ with $\tilde{Ξ}_{\pm}\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$ one has $\tilde{Ξ}^{\flat}=-\tilde{Ξ}_{+}+\tilde{Ξ}_{-}$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
 
 The value $m_p=938.272$ MeV, or $1.6726\times10^{-27}$ kg, is not a consequence of the algebra or of the equation. It is a parameter, and the framework is scale-free until it is supplied. Equivalently, the free field lies on the mass shell
 
@@ -75,7 +75,7 @@ $$
 
 in the corpus's four-momentum convention $\tilde{P}_{\Phi}=iE/c\,e_t+\vec p$, where the product is $-E^2/c^2+|\vec p|^2$ and the relation is $E^2=|\vec p|^2c^2+m_p^2c^4$: the *form* of the mass shell is structural, the number in it is an import.
 
-**The free equation contains no charge.** Neither the one-sided pair nor its reading on one element contains a coupling. The mass length $1/k_{m_p}$ is the only parameter, and it is central.
+**The free equation contains no charge.** Neither the one-sided pair nor its reading on one element contains a coupling. The mass length $1/\nu_{m_p}$ is the only parameter, and it is central.
 
 Charge enters only when the field is coupled to a four-potential, through minimal substitution. Two immediate consequences follow and they are the theme of the next section. First, the proton and the neutron satisfy the same free equation with the same operator; whatever distinguishes them is an inserted coupling and not a structure of the equation. Second, the framework's ability to state the proton's charge is the ability of its charge element to *carry* the value $+1$, not an ability to produce it.
 
@@ -105,7 +105,7 @@ $$
 
 The framework's own abelian gauge structure — the one drawn from the central line $\mathbb{B}_{C}$ — is the specialization $ϙ_L=ϙ_R$: a central phase multiplies the two values alike, so it is vector-like by construction, and an axial coupling would have to sit outside the centre.
 
-Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the two values: it commutes with the chirality basis operator $\Gamma=-iR_{\vec e_z}$, and it acts on the L value by $ϙ_L$ and on the R value by $ϙ_R$. Second, the **mass selection rule**. The mass term is the only term of the free pair that links the two values, so it is the only place where the two charges meet. Under a gauge transformation the L value picks up the phase $\exp(i\theta_{\mathrm{gau},L})$ and the R value the phase $\exp(i\theta_{\mathrm{gau},R})$; with $\theta_{\mathrm{gau},L}=\frac{2\pi ϙ_{L}\lambda}{h}$ and $\theta_{\mathrm{gau},R}=\frac{2\pi ϙ_{R}\lambda}{h}$ real because the charges and the parameter are real; the derivative terms are made covariant by the transformed potential, but the mass term $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_p}\tilde{Ξ}_{L}$ then carries one phase on each side, so it is invariant for every real gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge element collapses to the central element,
+Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the two values: it commutes with the chirality basis operator $\Gamma=-iR_{\vec e_z}$, and it acts on the L value by $ϙ_L$ and on the R value by $ϙ_R$. Second, the **mass selection rule**. The mass term is the only term of the free pair that links the two values, so it is the only place where the two charges meet. Under a gauge transformation the L value picks up the phase $\exp(i\theta_{\mathrm{gau},L})$ and the R value the phase $\exp(i\theta_{\mathrm{gau},R})$; with $\theta_{\mathrm{gau},L}=\frac{2\pi ϙ_{L}\lambda}{h}$ and $\theta_{\mathrm{gau},R}=\frac{2\pi ϙ_{R}\lambda}{h}$ real because the charges and the parameter are real; the derivative terms are made covariant by the transformed potential, but the mass term $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_{m_p}\tilde{Ξ}_{L}$ then carries one phase on each side, so it is invariant for every real gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge element collapses to the central element,
 
 $$
 \boxed{\;ϙ_L=ϙ_R=ϙ
@@ -215,9 +215,9 @@ The consequence is that the proton's compositeness — the reason its mass is 93
 
 **Spin.** The spin-$\tfrac12$ content is derived conditionally, as in the first section: it follows from the algebra, not from any proton-specific structure. The spin-statistics theorem is transcribed rather than derived (*The Spin–Statistics Theorem in Biquaternionic Form*), but the framework does identify the half-integer weights as native to the algebra, on which a rotation by $2\pi$ acts by left multiplication as $-e_t$, whereas the conjugation action on $\mathbb{B}_{\Phi}$, the carrier of integer spin, returns $+e_t$. The proton, written as an element, is a fermion for exactly the same structural reason as the electron; the framework does not derive that this particular composite is a fermion.
 
-**The magnetic moment.** Carrying the biquaternion Dirac equation to the non-relativistic regime produces the tree-level gyromagnetic factor $g=2$ for any structureless spin-$\tfrac12$ field with the inserted charge, exactly as for the electron (*The Electron in Biquaternionic Form*). Applied to the proton's effective field this gives a magnetic moment $\vec\mu_p=(e\,ϙ_p/m_p)\vec S$ with $ϙ_p=+1$, of one nuclear magneton $\mu_N=\dfrac{e}{2}\dfrac{c}{k_{m_p}}$ when $\vec S$ is aligned with the field. The measured proton moment is $2.7928\,\mu_N$, i.e. $g_p\approx5.586$. The deviation is *not* a small radiative correction of the kind the electron's $g-2$ is: it is a large strong-interaction and compositeness effect, produced by the quark and gluon dynamics of the bound state, and the framework supplies none of it. For the proton, therefore, even the tree-level value is not a prediction about the real object — it is the value the framework would assign to a fictitious elementary field of the same mass and charge.
+**The magnetic moment.** Carrying the biquaternion Dirac equation to the non-relativistic regime produces the tree-level gyromagnetic factor $g=2$ for any structureless spin-$\tfrac12$ field with the inserted charge, exactly as for the electron (*The Electron in Biquaternionic Form*). Applied to the proton's effective field this gives a magnetic moment $\vec\mu_p=(e\,ϙ_p/m_p)\vec S$ with $ϙ_p=+1$, of one nuclear magneton $\mu_N=\dfrac{e}{2}\dfrac{c}{2\pi\nu_{m_p}}$ when $\vec S$ is aligned with the field. The measured proton moment is $2.7928\,\mu_N$, i.e. $g_p\approx5.586$. The deviation is *not* a small radiative correction of the kind the electron's $g-2$ is: it is a large strong-interaction and compositeness effect, produced by the quark and gluon dynamics of the bound state, and the framework supplies none of it. For the proton, therefore, even the tree-level value is not a prediction about the real object — it is the value the framework would assign to a fictitious elementary field of the same mass and charge.
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ## What Is Imported from Standard Physics
 
@@ -321,7 +321,7 @@ Without the weight only the first keeps a closed form: the sum of the four squar
 
 ## Summary
 
-The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_p}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_p}\tilde{Ξ}_{R}$ and as the same pair on one element, where composing the two lines returns $\Box_\Phi$ on each value. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,
+The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_{m_p}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_{m_p}\tilde{Ξ}_{R}$ and as the same pair on one element, where composing the two lines returns $\Box_\Phi$ on each value. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,
 
 $$
 \boxed{\;Ϙ=ϙ_p\,e_t\;},

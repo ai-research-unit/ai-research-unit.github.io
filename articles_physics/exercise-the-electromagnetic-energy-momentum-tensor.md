@@ -248,9 +248,9 @@ which holds because $F = \frac12(cF + \overline{cF})$, lets the two terms of the
 
 ## Problem 5: The Free Plane Wave — a Null Field
 
-**Statement.** For the plane wave of Problem 1, compute $T_{\imath\jmath}$ explicitly and show that it is rank one, $T_{\imath\jmath}\propto k_{\Phi,\imath} k_{\Phi,\jmath}$ with $k$ the wave four-vector; verify tracelessness and conservation on this case.
+**Statement.** For the plane wave of Problem 1, compute $T_{\imath\jmath}$ explicitly and show that it is rank one, $T_{\imath\jmath}\propto \nu_{\Phi,\imath} \nu_{\Phi,\jmath}$ with $k$ the wave four-vector; verify tracelessness and conservation on this case.
 
-**Solution.** The wave four-vector of a wave propagating in the $+z$ direction at the medium speed is $k_{\Phi,\imath} = \left(\frac{\omega}{c}, 0, 0, k\right)$ with $k = \frac{\omega}{c}$. For this wave $W = \epsilon E_0^2\cos^2(kz-\omega r'_t/c)$, $S_z = cW$, and the Maxwell stress has the components
+**Solution.** The wave four-vector of a wave propagating in the $+z$ direction at the medium speed is $2\pi\nu_{\Phi,\imath} = \left(\frac{\omega}{c}, 0, 0, k\right)$ with $k = \frac{\omega}{c}$. For this wave $W = \epsilon E_0^2\cos^2(kz-\omega r'_t/c)$, $S_z = cW$, and the Maxwell stress has the components
 $$
 \sigma_{33} = \epsilon E_3^2 + \mu H_3^2 - W = -W, \qquad \sigma_{11} = \epsilon E_1^2 + \mu H_1^2 - W = \epsilon E_0^2\cos^2 - W = 0,
 $$
@@ -259,9 +259,9 @@ $$
 $$
 where $W = \epsilon E_0^2\cos^2(kz-\omega r'_t/c)$ for this wave and $1/(\mu c^2) = \epsilon$. Hence only $T_{00} = W$, $T_{03} = T_{30} = \frac{1}{c}S_z = W$, and $T_{33} = -\sigma_{33} = W$ survive:
 $$
-\boxed{\;T_{\imath\jmath} = W\begin{pmatrix} 1 & 0 & 0 & 1 \ 0 & 0 & 0 & 0 \ 0 & 0 & 0 & 0 \ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,k_{\Phi,\imath} k_{\Phi,\jmath}\;}.
+\boxed{\;T_{\imath\jmath} = W\begin{pmatrix} 1 & 0 & 0 & 1 \ 0 & 0 & 0 & 0 \ 0 & 0 & 0 & 0 \ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,2\pi\nu_{\Phi,\imath} 2\pi\nu_{\Phi,\jmath}\;}.
 $$
-The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $\vec k_\Phi$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $-T_{00} + T_{33} = -W + W = 0$, the minus on the time slot being $i^2$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} \propto \sum_{\imath}(\partial/\partial x_{\imath} W)k_{\Phi,\imath} k_{\Phi,\jmath}$ with $\sum_{\imath}(\partial/\partial x_{\imath} W)k_{\Phi,\imath} = k\left(\partial/\partial r'_t\,W + \partial/\partial r_z\,W\right) = 0$, using $\partial W/\partial r_z = -\frac{1}{c}\partial W/\partial r'_t$. The direct computation confirms $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} = 0$ and $\sum_{\imath}\Pi_{\imath\imath} = 0$ identically in $z$ and $r'_t$.
+The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $\vec\nu_\Phi$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $-T_{00} + T_{33} = -W + W = 0$, the minus on the time slot being $i^2$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} \propto \sum_{\imath}(\partial/\partial x_{\imath} W)\nu_{\Phi,\imath} \nu_{\Phi,\jmath}$ with $\sum_{\imath}(\partial/\partial x_{\imath} W)2\pi\nu_{\Phi,\imath} = k\left(\partial/\partial r'_t\,W + \partial/\partial r_z\,W\right) = 0$, using $\partial W/\partial r_z = -\frac{1}{c}\partial W/\partial r'_t$. The direct computation confirms $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} = 0$ and $\sum_{\imath}\Pi_{\imath\imath} = 0$ identically in $z$ and $r'_t$.
 
 The rank-one character is the energy–momentum expression of the vanishing biquaternion norm. A null field, $\langle\tilde F\rangle_{\natural} = 0$, is $N$-degenerate, a zero divisor of $\mathbb{B}$, and its energy–momentum tensor is built from a single null direction. The plane wave is the model case; the general null field behaves the same way pointwise, which is the content of the first further problem below.
 
@@ -271,7 +271,7 @@ The rank-one character is the energy–momentum expression of the vanishing biqu
 
 The following problems are left to the reader. They extend the construction, and some of them are open.
 
-**1. Null fields in general.** Show that if $\langle\tilde F\rangle_{\natural} = 0$ pointwise — a null or radiative field — then $T_{\imath\jmath} = \frac{2W}{\kappa}k_{\Phi,\imath} k_{\Phi,\jmath}$ for a null vector field $k$ proportional to the local energy-flow direction, so that $T_{\imath\jmath}$ has rank one and $T_{\imath\jmath}k_{\Phi,\jmath} = 0$. Conclude that a null field has no frame in which the momentum flux vanishes and that its energy–momentum is that of null dust. (The plane-wave case is Problem 5.)
+**1. Null fields in general.** Show that if $\langle\tilde F\rangle_{\natural} = 0$ pointwise — a null or radiative field — then $T_{\imath\jmath} = \frac{2W}{\kappa}2\pi\nu_{\Phi,\imath} 2\pi\nu_{\Phi,\jmath}$ for a null vector field $k$ proportional to the local energy-flow direction, so that $T_{\imath\jmath}$ has rank one and $T_{\imath\jmath}\nu_{\Phi,\jmath} = 0$. Conclude that a null field has no frame in which the momentum flux vanishes and that its energy–momentum is that of null dust. (The plane-wave case is Problem 5.)
 
 **2. The tensor formula.** Using the component form of $F_{\imath\jmath}$ given in the parent article, verify that
 $$
@@ -313,7 +313,7 @@ $$
 $$
 with $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ the energy density, $\vec S = \vec E\times\vec H$ the Poynting vector, and $\sigma_{\jmath\imath} = \epsilon E_{\jmath} E_{\imath} + \mu H_{\jmath} H_{\imath} - W\delta_{\jmath\imath}$ the Maxwell stress. Multiplying the time column by $i^2=-1$ gives the symmetric standard tensor, $T_{00} = W$, $T_{0j} = T_{j0} = \frac{1}{c}S_j$, $T_{j\eta} = -\sigma_{j\eta}$.
 
-The tensor is traceless, $\sum_{\imath}\Pi_{\imath\imath} = -W - \sum_\eta\sigma_{\eta\eta} = 0$, and it is conserved: $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath0} = -f_0 = \frac{1}{c}\vec E\cdot\vec J$ and $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\eta} = -(\rho\vec E + \vec J\times\vec B)_\eta$, equivalently $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} = -f_{\jmath}$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T_{\imath\jmath}\propto k_{\Phi,\imath} k_{\Phi,\jmath}$.
+The tensor is traceless, $\sum_{\imath}\Pi_{\imath\imath} = -W - \sum_\eta\sigma_{\eta\eta} = 0$, and it is conserved: $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath0} = -f_0 = \frac{1}{c}\vec E\cdot\vec J$ and $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\eta} = -(\rho\vec E + \vec J\times\vec B)_\eta$, equivalently $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} = -f_{\jmath}$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T_{\imath\jmath}\propto \nu_{\Phi,\imath} \nu_{\Phi,\jmath}$.
 
 The exercise also settles the form of the four-component *biquaternionic energy–momentum*. The real form $\tilde\Sigma_{\mathrm{re}} = W + \frac{1}{c}\vec S$ and its claimed conservation law $\tilde\nabla_\Phi\tilde\Sigma_{\mathrm{re}} = -\tilde{\mathcal F}$ do not survive recomputation: the time-derivative term acquires a factor $i$ from $\partial/\partial R_t$ that the divergence term does not carry, and the equation fails already on a free plane wave, where it gives $\frac{1-i}{c}\partial/\partial r'_t\,W$ instead of zero. The consistent four-component object is the Hermitian form the parents state, $\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\vec S \in \mathbb{B}_{\Psi}$, whose scalar divergence gives the energy law; but no four-component object can carry the spatial stress, which is the rank-two tensor built above.
 

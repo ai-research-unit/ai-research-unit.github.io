@@ -25,7 +25,7 @@ The order. Kinematics, then the tensor decomposition, then scaling, then the par
 
 The metric, stated once. $g_{\imath\jmath}=\mathrm{diag}(1,-1,-1,-1)$ throughout, so a spacelike exchange has $q^2=-Q^2<0$ and the transverse projector below is the one these signs give. No vertex is computed in this article, so the incoming-momentum convention of [the QCD article](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html) does not enter; where a trace is taken, it is the Dirac trace of a massless line and carries no sign ambiguity.
 
-The process and the variables. An electron of momentum $k_\Phi$ scatters off a proton of momentum $p$ and emerges with momentum $k'$. The exchanged photon (or $Z$) carries
+The process and the variables. An electron of momentum $\nu_{\Phi}$ scatters off a proton of momentum $p$ and emerges with momentum $k'$. The exchanged photon (or $Z$) carries
 
 $$
 q=k-k' ,
@@ -60,7 +60,7 @@ The measured range. At HERA, $E_e=27.5$ GeV against $E_p=920$ GeV gives $s=4E_eE
 
 ## The Hadronic Tensor and the Two Structure Functions
 
-**The cross section factorises into a lepton tensor and a hadron tensor.** With $L_{\imath\jmath}=2\left(k_{\imath} k'_{\jmath}+k_{\jmath} k'_{\imath}-g_{\imath\jmath}k\cdot k'\right)$ for an unpolarised lepton, the cross section is the contraction of $L$ with $W$, and carrying out the contraction leaves two independent coefficients:
+**The cross section factorises into a lepton tensor and a hadron tensor.** With $L_{\imath\jmath}=2\left(2\pi\nu_{\imath} k'_{\jmath}+2\pi\nu_{\jmath} k'_{\imath}-g_{\imath\jmath}k\cdot k'\right)$ for an unpolarised lepton, the cross section is the contraction of $L$ with $W$, and carrying out the contraction leaves two independent coefficients:
 
 $$
 \frac{d^2\sigma}{dx\,dQ^2}=\frac{4\pi\alpha^2}{xQ^4}\left[\left(1-y-\frac{M^2x^2y^2}{Q^2}\right)F_2(x,Q^2)+y^2x\,F_1(x,Q^2)\right] ,
@@ -124,7 +124,7 @@ and the reason the struck parton's fraction equals $x$ is the elastic condition 
 
 ## Callan–Gross, Derived in Three Lines
 
-The partonic tensor. For a massless spin-$\tfrac12$ parton of charge $e$ and momentum $k_\Phi$,
+The partonic tensor. For a massless spin-$\tfrac12$ parton of charge $e$ and momentum $\nu_{\Phi}$,
 
 $$
 W^{(0)}_{\imath\jmath}=e^2\,\delta\!\left((k+q)^2\right)\mathrm{Tr}\!\left[\not k\,\gamma_{\imath}(\not k+\not q)\gamma_{\jmath}\right] ,
@@ -133,7 +133,7 @@ $$
 up to an overall constant. The trace is standard,
 
 $$
-\mathrm{Tr}\!\left[\not k\,\gamma_{\imath}\not l\,\gamma_{\jmath}\right]=4\left[k_{\imath} l_{\jmath}+k_{\jmath} l_{\imath}-g_{\imath\jmath}\,k\cdot l\right] ,
+\mathrm{Tr}\!\left[\not k\,\gamma_{\imath}\not l\,\gamma_{\jmath}\right]=4\left[2\pi\nu_{\imath} l_{\jmath}+2\pi\nu_{\jmath} l_{\imath}-g_{\imath\jmath}\,k\cdot l\right] ,
 \qquad
 l=k+q .
 $$
@@ -151,7 +151,7 @@ $$
 so that
 
 $$
-\sum_{\imath}\varepsilon_{\imath} q_{\imath} W^{(0)}_{\imath\jmath}\propto 4\left[\frac{Q^2}{2}l_{\jmath}-\frac{Q^2}{2}k_{\jmath}-\frac{Q^2}{2}q_{\jmath}\right]=\frac{4Q^2}{2}\left[l_{\jmath}-k_{\jmath}-q_{\jmath}\right]=0 .
+\sum_{\imath}\varepsilon_{\imath} q_{\imath} W^{(0)}_{\imath\jmath}\propto 4\left[\frac{Q^2}{2}l_{\jmath}-\frac{Q^2}{2}\nu_{\jmath}-\frac{Q^2}{2}q_{\jmath}\right]=\frac{4Q^2}{2}\left[l_{\jmath}-\nu_{\jmath}-q_{\jmath}\right]=0 .
 $$
 
 What the vanishing means. The partonic tensor is transverse to $q$, so it contains no longitudinal structure, so the coefficient of the $q$-longitudinal projector vanishes, so the longitudinal structure function vanishes, $F_L=0$ — which is
@@ -176,7 +176,7 @@ and the Callan–Gross relation is $R=0$. The kinematic factor $4M^2x^2/Q^2$ is 
 
 The measurement. $R$ is not zero. It is about $0.18$ at $Q^2\sim5$ GeV$^2$, roughly flat in $x$ up to $x\approx0.5$, rising beyond that where the higher-twist terms take over, and falling at fixed $x$ as $Q^2$ rises — which is the direction the $\alpha_s$ origin of the deviation predicts. The size is the content, and the two limits are not $0$ and $1$ but $0$ and $\infty$: $R=0$ is a massless on-shell spin-$\tfrac12$ constituent, and $R\to\infty$ is a scalar, because a scalar constituent has no transverse coupling at all and $\sigma_T$ vanishes rather than merely shrinking. A value of $0.18$ therefore says the spin-$\tfrac12$ picture is right and the deviation is a correction, and it says it without needing an upper end to compare against.
 
-**Where the deviation comes from.** Two sources, and they are of different kinds. The first is order $\alpha_s$: a gluon in the proton can be resolved by the photon through $g\to q\bar q$, and the longitudinal part of that splitting is nonzero, so $R$ acquires a term proportional to $\alpha_s$ times the gluon density. The second is a power correction and not an $\alpha_s$ effect: the quarks' intrinsic transverse momentum gives the struck quark a virtuality of order $k_T^2/Q^2$, which breaks the on-shell condition the Callan–Gross derivation used. The first dominates at small $x$, the second at large $x$, and the fact that $R$ stays small is the quantitative statement that both are corrections rather than the leading description.
+**Where the deviation comes from.** Two sources, and they are of different kinds. The first is order $\alpha_s$: a gluon in the proton can be resolved by the photon through $g\to q\bar q$, and the longitudinal part of that splitting is nonzero, so $R$ acquires a term proportional to $\alpha_s$ times the gluon density. The second is a power correction and not an $\alpha_s$ effect: the quarks' intrinsic transverse momentum gives the struck quark a virtuality of order $\nu_T^2/Q^2$, which breaks the on-shell condition the Callan–Gross derivation used. The first dominates at small $x$, the second at large $x$, and the fact that $R$ stays small is the quantitative statement that both are corrections rather than the leading description.
 
 ## The Parton Densities
 
@@ -405,7 +405,7 @@ The framework supplies the null direction, and with it the light-cone decomposit
 | $x=Q^2/(2p\cdot q)$ | Bjorken variable; the parton's fraction of null momentum |
 | $y=p\cdot q/(p\cdot k)$ | Inelasticity, $Q^2=sxy$; $s=2ME$ fixed target, $4E_eE_p$ collider |
 | $e_f$ | Quark charge in units of $e$; the weight $e_f^2$ in $F_2$ |
-| $L_{\imath\jmath}$ | Lepton tensor, $2(k_{\imath} k'_{\jmath}+k_{\jmath} k'_{\imath}-g_{\imath\jmath}k\cdot k')$ |
+| $L_{\imath\jmath}$ | Lepton tensor, $2(\nu_{\imath} k'_{\jmath}+\nu_{\jmath} k'_{\imath}-g_{\imath\jmath}k\cdot k')$ |
 | $p^\pm=(p^0\pm p^3)/\sqrt2$ | Light-cone components; $x=k^+/p^+$ |
 | $F_L=F_2\left(1+\tfrac{4M^2x^2}{Q^2}\right)-2xF_1$ | Longitudinal structure function; $R=F_L/(2xF_1)$, and $F_L=0$ for massless spin-$\tfrac12$ at leading order |
 | $z$, $\xi$ | Momentum fraction in the splitting ($z$) and in the convolution ($\xi$) |

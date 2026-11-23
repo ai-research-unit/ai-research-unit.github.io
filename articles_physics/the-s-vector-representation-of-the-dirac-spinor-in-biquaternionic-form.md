@@ -141,7 +141,7 @@ $$
 (G\otimes H)\otimes K = G\otimes(H\otimes K), \qquad \sum_{\imath,\lambda}\epsilon_{\imath}\epsilon_\lambda\, u_{\imath} c_{\imath\jmath\lambda} G_\lambda = G_{\jmath} .
 $$
 
-Its realisation is the quaternion algebra. The four directions are read with $e_0=k$ as the unit, $k$ being the algebra's identity, and $e_\eta=i\vec e_\eta$, so that $e_\eta^2=e_t$ and $e_xe_y=i e_z$ cyclically: the factor $i$, through $i^2=-1$, flips both signs of the quaternion law, and those are the relations of the realisation, not of the biquaternion units themselves. The unarrowed $e_\eta$ is this rescaled direction, not the quaternion unit $\vec e_\eta$, whose square is $-e_t$ and whose product is $\vec e_x\vec e_y=+\vec e_z$. The neutral vector $\vec k_\Phi$ is hidden inside $c$: it is the unit element of the composition, the preferred time direction of the algebra.
+Its realisation is the quaternion algebra. The four directions are read with $e_0=k$ as the unit, $k$ being the algebra's identity, and $e_\eta=i\vec e_\eta$, so that $e_\eta^2=e_t$ and $e_xe_y=i e_z$ cyclically: the factor $i$, through $i^2=-1$, flips both signs of the quaternion law, and those are the relations of the realisation, not of the biquaternion units themselves. The unarrowed $e_\eta$ is this rescaled direction, not the quaternion unit $\vec e_\eta$, whose square is $-e_t$ and whose product is $\vec e_x\vec e_y=+\vec e_z$. The neutral vector $\vec\nu_\Phi$ is hidden inside $c$: it is the unit element of the composition, the preferred time direction of the algebra.
 
 ## The Two Parts as Real Four-Vectors
 
@@ -225,7 +225,7 @@ with the symmetric $r'_t$ pairing each part with itself and the antisymmetric $\
 Passing from the field to the s-vector representation turns the Dirac Lagrangian into
 
 $$
-\tfrac12\sum_{\imath}\epsilon_{\imath}\bigl[\tilde{Ξ}^{\dagger}C_0\, C_{\imath}(\partial/\partial x_{\imath} - ieA_{\imath})\tilde{Ξ} - \bigl((\partial/\partial x_{\imath} + ieA_{\imath})\tilde{Ξ}^{\dagger}C_0\bigr) C_{\imath}\tilde{Ξ}\bigr] - k_m\tilde{Ξ}^{\dagger}C_0\tilde{Ξ}
+\tfrac12\sum_{\imath}\epsilon_{\imath}\bigl[\tilde{Ξ}^{\dagger}C_0\, C_{\imath}(\partial/\partial x_{\imath} - ieA_{\imath})\tilde{Ξ} - \bigl((\partial/\partial x_{\imath} + ieA_{\imath})\tilde{Ξ}^{\dagger}C_0\bigr) C_{\imath}\tilde{Ξ}\bigr] - \nu_m\tilde{Ξ}^{\dagger}C_0\tilde{Ξ}
 $$
 
 $$
@@ -262,13 +262,13 @@ Two features are worth naming. The kinetic operator is not symmetric in $G$ and 
 
 The mass is not carried by the square of a first-order derivative operator. The derivative of the article is the gradient, and the gradient's square is not scalar, because $e_t$ commutes with the spatial units and the mixed time–space derivatives survive in $\tilde\nabla_\Phi^2=\Box_\Phi+2\sum_\eta\vec e_\eta\,\partial^2/\partial R_t\partial R_\eta$. Only the paired product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ is scalar, and it conjugates one factor instead of squaring it. The free equation is therefore first order in one field, $i\sum_{\jmath,\lambda}\epsilon_{\jmath}\epsilon_\lambda\,\check c_{\imath\jmath\lambda}\,\tilde\nabla_{\jmath} G_\lambda=0$ at $m=0$; the massive system is the pair of §The Chiral Pair, and the mass sits between the two values rather than inside one square.
 
-The pair does imply the Klein–Gordon equation, and the implication runs through the paired product. On the element, from $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, applying $(\tilde\nabla_\Phi)^{\natural}$ to the first equation and $\tilde\nabla_\Phi$ to the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$ and $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m^{2}\tilde{Ξ}_{L}$, that is
+The pair does imply the Klein–Gordon equation, and the implication runs through the paired product. On the element, from $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, applying $(\tilde\nabla_\Phi)^{\natural}$ to the first equation and $\tilde\nabla_\Phi$ to the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R}$ and $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{L}$, that is
 
 $$
-\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde{Ξ}_{R}=0,\qquad\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde{Ξ}_{L}=0,
+\bigl(\Box_\Phi-4\pi^{2}\nu_m^{2}\bigr)\tilde{Ξ}_{R}=0,\qquad\bigl(\Box_\Phi-4\pi^{2}\nu_m^{2}\bigr)\tilde{Ξ}_{L}=0,
 $$
 
-since $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ is scalar. Each value obeys the Klein–Gordon equation, and the first-order system is the pair, not the square root of a scalar operator. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+since $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ is scalar. Each value obeys the Klein–Gordon equation, and the first-order system is the pair, not the square root of a scalar operator. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The bosonization is not canonical. It depends on the choice of the neutral elements $j_{\imath}$ and $u_{\imath}$: the Lagrangian is built from $\check c$, and $\check c$ is built from $j$. Any orthogonal pair with $k\cdot k = -j\cdot j = 1$ serves, they are arbitrary but must be fixed; the remaining symbols $c_{\imath\jmath\lambda}$, $c_5{}_{\rho\sigma}$ and the rest are reconstructed once $j$ and $k$ are chosen.
 
@@ -304,9 +304,9 @@ $$
 is the compact form of the same pair at $A_{\imath}=0$: the two equations above are its two values, and every $G_{\imath}$ is their sum. Both halves are quoted in the source's letters, $\partial/\partial x_{\jmath}$ its index partial and $A_{\jmath}$ its gauge field; the compact line writes the same equation in the corpus gradient, whose ${\jmath}$-th leg stands in that slot. This is the two-value structure of the element's equation, carried to the four-vector carrier. On the element the same pair reads
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
 with the mass $me_t$ central, $e_t$ being the identity of the algebra. Nothing in the mass term flips the value by itself; the term is off-diagonal only in the sense that the two equations are written as a pair, and each value is carried into the other by the mass. The pair on $G$ and the pair on $\tilde{Ξ}$ are the same two equations in two carriers.
@@ -391,7 +391,7 @@ $$
 \bigl(\cos\theta_{\mathrm{axr}} - i c_5\sin\theta_{\mathrm{axr}}\bigr)^n = \cos n\theta_{\mathrm{axr}} - i c_5\sin n\theta_{\mathrm{axr}} .
 $$
 
-The mass term $k_m\tilde{Ξ}^{\dagger}C_0\tilde{Ξ} = -\tfrac{k_m}{2}(G^*G^* + GG) = +\tfrac{k_m}{2}\bigl[q(G)+q(G^*)\bigr]$ is invariant under $M(\theta_{\mathrm{axr}})$ for that reason, and it is *not* invariant under the ordinary phase $G_{\imath}\mapsto e^{i\theta_{\mathrm{axr}}}G_{\imath}$, which multiplies $q$ by $e^{2i\theta_{\mathrm{axr}}}$.
+The mass term $\nu_m\tilde{Ξ}^{\dagger}C_0\tilde{Ξ} = -\tfrac{\nu_m}{2}(G^*G^* + GG) = +\tfrac{\nu_m}{2}\bigl[q(G)+q(G^*)\bigr]$ is invariant under $M(\theta_{\mathrm{axr}})$ for that reason, and it is *not* invariant under the ordinary phase $G_{\imath}\mapsto e^{i\theta_{\mathrm{axr}}}G_{\imath}$, which multiplies $q$ by $e^{2i\theta_{\mathrm{axr}}}$.
 
 The source identifies $M(\theta_{\mathrm{axr}})$ with the image of the field's vector $\mathrm{U}(1)$, $\tilde{Ξ}\mapsto\tilde{Ξ}\exp(i\theta_{\mathrm{axr}})$. The dictionary is narrower than that. The exact correspondence runs through the *chiral* transformation: $\tilde{Ξ}\mapsto\exp(-ia\Gamma)\tilde{Ξ}$ becomes the ordinary phase $G_{\imath}\mapsto e^{ia}G_{\imath}$, and $\tilde{Ξ}\mapsto\exp(ia\Gamma)\tilde{Ξ}$ becomes $G_{\imath}\mapsto e^{-ia}G_{\imath}$. The vector phase does not act diagonally on $G$ at all. Since $v^{\dagger}C_0\,iC_{\imath}\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}C_0\,iC_{\imath} v$ are conjugate up to sign, $B_{\imath}$ is the real part of $X_{\imath}:=v^{\dagger}C_0\,iC_{\imath}\tilde{Ξ}$, and the phase sends
 
@@ -409,7 +409,7 @@ $$
 B \mapsto N, \qquad N \mapsto -B, \qquad m \mapsto -m
 $$
 
-leaves the quadratic form $k_m\tilde{Ξ}^{\dagger}C_0\tilde{Ξ} = k_m\sum_{\jmath}\epsilon_{\jmath}(N_{\jmath} N_{\jmath} - B_{\jmath} B_{\jmath})$, the cubic form $\sum_{\imath,\jmath,\lambda}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_\lambda V_{\imath} B_{\jmath} N_\lambda\varepsilon_{\jmath\imath\lambda}$ and hence the Lagrangian and the equation of motion invariant. The source reads this as the statement that the part of the first type is *dual* to the part of the second type, on the model of the electromagnetic duality that exchanges $\vec E$ and $\vec H$ while exchanging $e$ and a magnetic coupling. It is the first-order shadow of the parent-action duality between the Dirac Lagrangian and the second-order topologically massive gauge Lagrangian, and it is the reason the two Lagrangians can describe the same propagating modes.
+leaves the quadratic form $\nu_m\tilde{Ξ}^{\dagger}C_0\tilde{Ξ} = \nu_m\sum_{\jmath}\epsilon_{\jmath}(N_{\jmath} N_{\jmath} - B_{\jmath} B_{\jmath})$, the cubic form $\sum_{\imath,\jmath,\lambda}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_\lambda V_{\imath} B_{\jmath} N_\lambda\varepsilon_{\jmath\imath\lambda}$ and hence the Lagrangian and the equation of motion invariant. The source reads this as the statement that the part of the first type is *dual* to the part of the second type, on the model of the electromagnetic duality that exchanges $\vec E$ and $\vec H$ while exchanging $e$ and a magnetic coupling. It is the first-order shadow of the parent-action duality between the Dirac Lagrangian and the second-order topologically massive gauge Lagrangian, and it is the reason the two Lagrangians can describe the same propagating modes.
 
 ## What the Construction Does and Does Not Supply
 

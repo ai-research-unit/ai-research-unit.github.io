@@ -26,12 +26,12 @@ The transform's symbol rule is the free companion's. The curvature is $\vec B=\v
 
 ## The Mode of a Flat Connection
 
-**A constant connection leaves the mode a mode.** Take $\tilde A_\Phi$ constant, so that $\vec B=0$ and $\omicron_{\mathrm{pot}}$ is constant. A plane wave $\tilde\Xi=a\,e^{i(\vec k\cdot\vec r-\omega t')}e_t$ is a solution with the label
+**A constant connection leaves the mode a mode.** Take $\tilde A_\Phi$ constant, so that $\vec B=0$ and $\omicron_{\mathrm{pot}}$ is constant. A plane wave $\tilde\Xi=a\,e^{i(2\pi\vec\nu_{\Phi}\cdot\vec r-\omega t')}e_t$ is a solution with the label
 
 $$
-\vec\pi=\frac{h}{2\pi}\vec k-q\vec A,
+\vec\pi=h\,2\pi\vec\nu_{\Phi}-q\vec A,
 \qquad
-\vec v=\frac{h\vec k-q\vec A}{2\pi m},
+\vec v=\frac{h2\pi\vec\nu_{\Phi}-q\vec A}{2\pi m},
 \qquad
 \vec\nabla_\Phi\times\vec v=0 ,
 $$
@@ -43,7 +43,7 @@ The constant connection is a pure gradient and the mode is free in disguise. Wit
 The two labels, and which one the fluid reads.
 
 $$
-\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi \varkappa}{h}\tilde A_\Phi ,
+\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{\varkappa}{h}\tilde A_\Phi ,
 $$
 
 so the canonical label is the free one and the kinetic label is the free one plus the potential. The transform is a chart-dependent object here for the first time in this rung: transforming in the canonical variable puts the support on the free shell, transforming in the kinetic variable puts it on the translated shell, and the two differ by a gauge. §*Two Supports, One Field* of the charged Klein–Gordon Fourier companion carries the same distinction with the mass present.
@@ -145,7 +145,7 @@ The field has two supports, the free shell in the canonical variable and the tra
 | $\vec B=\vec\nabla_\Phi\times\vec A$, $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$ | The field strength |
 | $\vec\omega=\varkappa\vec B/m$ | The vorticity; the curvature |
 | $\Phi_B$ | The flux through a loop's spanning surface |
-| $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi \varkappa\tilde A_\Phi}{h}$ | The canonical label less the potential |
+| $\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{\varkappa\tilde A_\Phi}{h}$ | The canonical label less the potential |
 | $n$ | The winding of a loop around a nodal line; zero at a mode |
 | $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | The gauge element; central |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |

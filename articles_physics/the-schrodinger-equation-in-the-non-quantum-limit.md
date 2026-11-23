@@ -10,7 +10,7 @@ What the polar chart settles before any parameter appears. Three things, and non
 
 The pair is closed on the central class, $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$, and the parent proves that class is invariant exactly under a central Hamiltonian. The limit therefore takes place inside the central class. A general field's word has four brackets and its pair is not closed, so there is nothing to order; the limit is not defined on it, and no truncation of the four brackets is claimed here.
 
-The criterion. $\epsilon=1/(k_{\Phi}L)$, with $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$ and $L$ the length over which the scale varies, $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The quantum potential over the kinetic energy is $\epsilon^{2}$; the scale's gradient over the phase's is $\epsilon$. The parameter is defined in *The Non-Quantum Limit of the Biquaternion Model*, and it is the same one here, with $\varrho$ in the place of the amplitude.
+The criterion. $\epsilon=1/(2\pi\nu_{\Phi}L)$, with $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$ and $L$ the length over which the scale varies, $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The quantum potential over the kinetic energy is $\epsilon^{2}$; the scale's gradient over the phase's is $\epsilon$. The parameter is defined in *The Non-Quantum Limit of the Biquaternion Model*, and it is the same one here, with $\varrho$ in the place of the amplitude.
 
 The parent's pair is exact and its two lines are ordered differently: the real line is an expansion whose third term is the quantum potential, and the imaginary line is not an expansion at all. Order zero is the Hamilton–Jacobi equation, whose characters are the classical trajectories and whose algebra form is a norm. Order one is the transport equation, which the limit does not produce and cannot spoil, and which gives $C/\sqrt{\lvert p\rvert}$ in one dimension and the van Vleck determinant in three. Order two is the quantum potential, and its ratio to the kinetic energy is $\epsilon^{2}$ everywhere but is not bounded on any region, which is the difference between the limit and the approximation.
 
@@ -70,7 +70,7 @@ and the two terms carry different powers of $\epsilon$:
 $$
 \frac{\lvert h\vec\nabla_\Phi\ln \varrho\rvert}{2\pi \lvert\vec\nabla_\Phi S\rvert}\sim\epsilon ,
 \qquad
-\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi \varrho}{\varrho}\right\rvert\sim\epsilon^{2} .
+\frac{1}{4\pi^{2}\nu_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi \varrho}{\varrho}\right\rvert\sim\epsilon^{2} .
 $$
 
 The second ratio is the quantum potential over the kinetic energy. It is a square where the first is linear, and the two are the only ratios the pair contains: every term of the parent's boxed pair is one of the three columns below.
@@ -163,7 +163,7 @@ $$
 
 the parent's own expression, and it is the third term of the real line and the only term the limit deletes.
 
-Its ratio to the kinetic energy is $\epsilon^{2}$ but is not bounded. With $\varrho=\exp(-x^{2}/4\sigma^{2})$ and $\epsilon=1/(k_{\Phi}\sigma)$,
+Its ratio to the kinetic energy is $\epsilon^{2}$ but is not bounded. With $\varrho=\exp(-x^{2}/4\sigma^{2})$ and $\epsilon=1/(2\pi\nu_{\Phi}\sigma)$,
 
 $$
 \frac{\lvert Q\rvert}{E-V}=\epsilon^{2}\left\lvert\frac{x^{2}}{4\sigma^{2}}-\frac{1}{2}\right\rvert .
@@ -177,7 +177,7 @@ The ratio vanishes at $\sqrt{2}\,\sigma$ and grows as $x^{2}$ beyond it, so for 
 
 The *limit* needs no region and has no remainder: it is the statement of which terms survive. The *approximation* needs both, and the table is what a claim of approximation has to carry — the order kept and the place where it stops.
 
-Two plane waves of wave numbers $k_{\Phi}$ and $k_{\Phi}+\delta k$ are each semiclassical exactly, and their sum has envelope wave number $\delta k$ and parameter $1/(\delta k\,L)$, which is large when the two are close. So
+Two plane waves of wave numbers $\nu_{\Phi}$ and $\nu_{\Phi}+\delta k$ are each semiclassical exactly, and their sum has envelope wave number $\delta k$ and parameter $1/(\delta k\,L)$, which is large when the two are close. So
 
 $$
 \lim\left(\tilde\Xi_{1}+\tilde\Xi_{2}\right)\neq\lim\tilde\Xi_{1}+\lim\tilde\Xi_{2},
@@ -221,7 +221,7 @@ No numerical solution of the time-dependent problem was run: the limit is a stat
 
 ## Summary
 
-The field is the parent's polar word $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and the parent prints the exact pair its central class obeys. The limit assigns one power of $\epsilon=1/(k_{\Phi}L)$ to each spatial derivative of the scale and none to a derivative of the phase, and orders the pair's two lines by that rule.
+The field is the parent's polar word $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and the parent prints the exact pair its central class obeys. The limit assigns one power of $\epsilon=1/(2\pi\nu_{\Phi}L)$ to each spatial derivative of the scale and none to a derivative of the phase, and orders the pair's two lines by that rule.
 
 The real line has three orders. Order zero is the Hamilton–Jacobi equation, read in the algebra as $\frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V$, whose characters are the classical trajectories. Order two is the quantum potential $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$, the only term the limit deletes. Order one is present as the scale's gradient, and it is what the first correction keeps.
 
@@ -247,8 +247,8 @@ The cost is one restriction. The pair is closed on the central class, that class
 | $\langle\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ | Quaternionic norm |
 | $\rho_{\mathrm{num}}=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | Hermitian norm; the density |
 | $\vec\nabla_\Phi S$ | Phase gradient; real quaternion in $\mathbb{B}_{H}$ |
-| $\epsilon=1/(k_{\Phi}L)$ | The parameter of the limit |
-| $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$ | The phase's wave number |
+| $\epsilon=1/(2\pi\nu_{\Phi}L)$ | The parameter of the limit |
+| $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$ | The phase's wave number |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; central real scalar |
 | $\Delta_\Phi$ | The Laplacian of the material sector |
 

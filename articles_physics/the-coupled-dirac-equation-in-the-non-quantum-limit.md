@@ -7,16 +7,16 @@ The limit in one sentence. The coupling is one addition to the phase's bracket, 
 The parent's single substitution. [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html) shows that the whole of the classical coupling is one addition to the wavevector,
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi,
+\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi,
 \qquad
  \frac{h}{2\pi} c\,\kappa_t=E+ϙ cA_t,
 \qquad
- \frac{h}{2\pi}\vec\kappa=\vec p-q\vec A ,
+ h\,\vec\kappa=\vec p-q\vec A ,
 $$
 
 with $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ and $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_{t}$ the free readings. The scalar and vector potentials are the temporal and spatial slots of one element, so no second rule is needed and no sign can be chosen independently.
 
-The consequence that reorganises the whole limit. The parent's mass-shell proposition says that a wavevector with $\tilde K\tilde K^{\natural}=-k_m^{2}$ is $ik_m$ times an inverse-square boost. Applied to the *mechanical* wavevector it gives $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, so the boost in the complete polar decomposition is the kinetic one and $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ is the velocity of the trajectory. The canonical momentum is then the mechanical one plus the potential, $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi ϙ}{h}\tilde A_\Phi$, and the word's frame is a frame for the kinetic variables.
+The consequence that reorganises the whole limit. The parent's mass-shell proposition says that a wavevector with $4\pi^{2}\tilde\Upsilon\tilde\Upsilon^{\natural}=-\nu_m^{2}$ is $ik_m$ times an inverse-square boost. Applied to the *mechanical* wavevector it gives $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$, so the boost in the complete polar decomposition is the kinetic one and $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ is the velocity of the trajectory. The canonical momentum is then the mechanical one plus the potential, $\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{ϙ}{h}\tilde A_\Phi$, and the word's frame is a frame for the kinetic variables.
 
 What that does to order zero. The eikonal is the mechanical mass shell, and the polarisation condition relates the two chiral halves through the *kinetic* boost. A reader who keeps the canonical momentum in the frame's slot gets a boost that is not the trajectory's, and the error is first order in the potential.
 
@@ -30,16 +30,16 @@ The restriction. The word is defined where $N(\tilde\Xi)\neq0$; the equation and
 
 The signs. The parent writes the coupling as $ϙ$ with $ϙ=-q$. Every display here uses $q$, the electric charge, $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\omicron_{\mathrm{pot}}$; the parent's $\frac{h}{2\pi} c\kappa_t=E+ϙcA_t$ is $E-q\omicron_{\mathrm{pot}}$ in these letters.
 
-Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$; $\tilde K_{\Phi,\mathrm{gco}}$ the mechanical wavevector; $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ the kinetic four-velocity; $k_m=\frac{2\pi mc}{h}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
+Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$; $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ the mechanical wavevector; $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ the kinetic four-velocity; $\nu_m=\frac{mc}{h}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
 
 ## One Addition and Two Frames
 
-The addition. $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$. The temporal slot is $\frac{h}{2\pi} c\kappa_t=E-q\omicron_{\mathrm{pot}}$ and the spatial one is $\frac{h}{2\pi}\vec\kappa=\vec\pi$: one element's two slots give the two mechanical variables and nothing else.
+The addition. $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$. The temporal slot is $\frac{h}{2\pi} c\kappa_t=E-q\omicron_{\mathrm{pot}}$ and the spatial one is $\frac{h}{2\pi}\vec\kappa=\vec\pi$: one element's two slots give the two mechanical variables and nothing else.
 
 The frame. By the parent's proposition,
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=ik_m\,\tilde U_{\Psi,\mathrm b}^{-2}
+\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\,\tilde U_{\Psi,\mathrm b}^{-2}
 \qquad\Longrightarrow\qquad
 \tilde V_\Phi=ic\,\tilde U_{\Psi,\mathrm b}^{-2}=\gamma\bigl(ic\,e_{t}+\vec v\bigr),
 \qquad
@@ -48,7 +48,7 @@ $$
 
 so the rapidity is the kinetic one and the four-velocity is the trajectory's. The parent's display for the same statement is $\tilde P_{\Phi,\mathrm{gco}}=m\tilde V_\Phi$, with $\vec\pi=\gamma m\vec v$.
 
-The two frames and their relations. The canonical wavevector is $\tilde K_\Phi=i(\frac{2\pi E}{h\,c})e_{t}+\frac{2\pi \vec p}{h}$; the mechanical one is $i(\frac{2\pi \mathcal E}{h\,c})e_{t}+\frac{2\pi \vec\pi}{h}$; and the two differ by the potential's slots. **The word's boost is the mechanical one's inverse square, the canonical one's is not**, and the difference is the whole content of the coupled polar chart.
+The two frames and their relations. The canonical wavevector is $\tilde\Upsilon_\Phi=i(\frac{E}{h\,c})e_{t}+\frac{\vec p}{h}$; the mechanical one is $i(\frac{2\pi \mathcal E}{h\,c})e_{t}+\frac{2\pi \vec\pi}{h}$; and the two differ by the potential's slots. **The word's boost is the mechanical one's inverse square, the canonical one's is not**, and the difference is the whole content of the coupled polar chart.
 
 The gauge statement, in the parent's sharpest form. For a pure gauge potential $A_{\imath}=\partial_{\imath}\Lambda$, the coupled derivative acts as $i\partial_{\imath}(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda)$: the entire effect of the potential is a reparameterisation of one coordinate. That is why the criterion must live on the invariant combination and why the chart's gauge group is a translation.
 
@@ -62,7 +62,7 @@ The order table, which is the free table.
 
 | object | order | kept |
 |---|---|---|
-| mechanical wavevector $\tilde K_{\Phi,\mathrm{gco}}$ | $0$ | yes |
+| mechanical wavevector $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ | $0$ | yes |
 | the frame's connections | $1$ | yes, as transport |
 | $\frac{h}{2\pi}\nabla_\Phi\ln \varrho$ | $1$ | no as a source, yes as a transport |
 | products of two first-order objects | $2$ | yes, as the iteration |
@@ -74,12 +74,12 @@ Nothing in it mentions the potential's strength. A large potential moves the mec
 The mechanical mass shell.
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}
+\tilde\Upsilon_{\Phi,\mathrm{gco}}\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}=-4\pi^{2}\nu_m^{2}
 \qquad\Longleftrightarrow\qquad
 \frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2},
 $$
 
-which is the free shell with the mechanical variables in place of the canonical ones. It is one relation among four components, and it is the statement that the mechanical wavevector over $k_m$ is invertible.
+which is the free shell with the mechanical variables in place of the canonical ones. It is one relation among four components, and it is the statement that the mechanical wavevector over $\nu_m$ is invertible.
 
 The polarisation. The chiral link is the parent's,
 
@@ -141,9 +141,9 @@ It does not remove the amplitude's absence. The equation is first order, so no a
 
 ## Verification
 
-The substitution was checked to be one addition. $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ has temporal slot $i(E+ϙcA_t)\frac{2\pi}{h\,c}$ and spatial slots $(\vec p-q\vec A)\frac{2\pi}{h}$, which are $\frac{2\pi i\mathcal E}{h\,c}$ and $\frac{2\pi \vec\pi}{h}$; the two slots match the mechanical variables slot by slot, with no independent sign.
+The substitution was checked to be one addition. $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ has temporal slot $i(E+ϙcA_t)\frac{2\pi}{h\,c}$ and spatial slots $(\vec p-q\vec A)\frac{2\pi}{h}$, which are $\frac{2\pi i\mathcal E}{h\,c}$ and $\frac{2\pi \vec\pi}{h}$; the two slots match the mechanical variables slot by slot, with no independent sign.
 
-The shell's form was checked. Applying the parent's proposition to the mechanical wavevector gives $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$, whose real content is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$; the free case is recovered at $\omicron_{\mathrm{pot}}=\vec A=0$ term for term.
+The shell's form was checked. Applying the parent's proposition to the mechanical wavevector gives $\tilde\Upsilon_{\Phi,\mathrm{gco}}\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}=-\nu_m^{2}$, whose real content is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$; the free case is recovered at $\omicron_{\mathrm{pot}}=\vec A=0$ term for term.
 
 The bracket types were checked against the parent's table. The phase bracket is central imaginary and receives the potential; the boost bracket is Hermitian and receives it; the rotor bracket is a real vector part and does not. **The exclusion is by type and not by choice**, and it was verified on the four types.
 
@@ -167,8 +167,8 @@ The order structure is the free one, and the equation being first order means th
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the density |
-| $\tilde K_\Phi=i(\frac{2\pi E}{h\,c})e_{t}+\frac{2\pi \vec p}{h}$ | The canonical wavevector |
-| $\tilde K_{\Phi,\mathrm{gco}}=i(\frac{2\pi \mathcal E}{h\,c})e_{t}+\frac{2\pi \vec\pi}{h}$ | The mechanical wavevector |
+| $\tilde\Upsilon_\Phi=i(\frac{E}{h\,c})e_{t}+\frac{\vec p}{h}$ | The canonical wavevector |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i(\frac{\mathcal E}{h\,c})e_{t}+\frac{\vec\pi}{h}$ | The mechanical wavevector |
 | $\vec\pi=\vec p-q\vec A$, $\mathcal E=E-q\omicron_{\mathrm{pot}}$ | Mechanical momentum and energy |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_{t}+\vec v)$ | The kinetic four-velocity |
 | $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$ | The kinetic boost's inverse square |

@@ -30,7 +30,7 @@ a^\dagger=\sqrt{\frac{m\,\omega}{2\,\frac{h}{2\pi}}}\,r_x-i\sqrt{\frac{1}{2\,\fr
 [a,a^\dagger]=e_t .
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 Both $x$ and $p=-i\,\frac{h}{2\pi}\partial/\partial r_x$ are central operators: $x$ multiplies by a real scalar and $p$ is the central imaginary times a real derivative. Hence $a$ and $a^\dagger$ are central, and the **squeeze operator**
 
@@ -93,7 +93,7 @@ $$
 
 so the state is a minimum-uncertainty state at every $r$: squeezing redistributes the uncertainty between the quadratures but cannot reduce the product below $\frac{h}{4\pi}$. This is the algebraic reason squeezing is a legitimate operation of the framework: it is a central automorphism of the oscillator algebra, and the uncertainty product is fixed by the central commutator $[r_x,p]=i\,\frac{h}{2\pi}\,e_{t}$.
 
-The variances were verified numerically by direct quadrature in the position representation, in explicit arithmetic with lengths in units of $1/k_m$, frequencies in units of $\omega$ and actions in units of $\frac{h}{2\pi}$, and the width convention $\alpha=(\frac{2\pi m\,\omega}{h})\exp(2r)$. The squeezed vacuum is not a single oscillator state but a superposition of all the even-numbered states, and the computation used its position wave function in that superposition:
+The variances were verified numerically by direct quadrature in the position representation, in explicit arithmetic with lengths in units of $1/\nu_m$, frequencies in units of $\omega$ and actions in units of $\frac{h}{2\pi}$, and the width convention $\alpha=(\frac{2\pi m\,\omega}{h})\exp(2r)$. The squeezed vacuum is not a single oscillator state but a superposition of all the even-numbered states, and the computation used its position wave function in that superposition:
 
 $$
 \begin{aligned}

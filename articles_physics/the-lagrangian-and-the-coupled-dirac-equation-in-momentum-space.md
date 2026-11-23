@@ -7,16 +7,16 @@ The free article reduces the Dirac action to one algebraic quadratic form per wa
 The element identity
 
 $$
-i\tilde K_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi=\frac{2\pi i}{h}\tilde P'_\Phi ,
+2\pi i\tilde\Upsilon_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi=\frac{i}{h}\tilde P'_\Phi ,
 \qquad
-\tilde P'_\Phi=\frac{h}{2\pi}\tilde K_\Phi+ϙ\tilde A_\Phi ,
+\tilde P'_\Phi=h\,\tilde\Upsilon_\Phi+ϙ\tilde A_\Phi ,
 $$
 
 holds exactly, with residual $0.0\times10^{0}$ over one hundred random momenta and connections. So the coupled mode form is the free mode form composed with one translation of the four-momentum, and every statement the free article makes about the form carries over with $\pi$ in place of $\frac{h}{2\pi} k$.
 
 The free article's reason is the norm's order-independence; that reason is not available here, because the shifted element is not the symbol of a gradient. What is available is stronger and simpler: the $\natural$-square of any element is central, so the composition of the pair collapses to a scalar for every connection and not only for a symmetric one. The measured off-diagonal defect of the composed operator was $0.0\times10^{0}$ on every draw.
 
-The third finding is that the number is $\pi^{2}-k_m^{2}$, and it is computed rather than asserted. At $ϙ=0.9$, $k_m=0.7$ and $\tilde K_\Phi=(1.2,0.4,0.2,0)$, the number is $0.750000$ with no potential and $2.032500$ and $-0.127500$ at $A_t=+0.5$ and $-0.5$. A scalar potential moves the number and does not move its character, which is the momentum-space form of the parent's "no constant potential opens a gap".
+The third finding is that the number is $\pi^{2}-\nu_m^{2}$, and it is computed rather than asserted. At $ϙ=0.9$, $2\pi\nu_m=0.7$ and $\tilde\Upsilon_\Phi=(1.2,0.4,0.2,0)$, the number is $0.750000$ with no potential and $2.032500$ and $-0.127500$ at $A_t=+0.5$ and $-0.5$. A scalar potential moves the number and does not move its character, which is the momentum-space form of the parent's "no constant potential opens a gap".
 
 Beyond the constant connection the number does not exist, and the reason is the curvature, which is the one ingredient of the composed operator that cannot be a central scalar: $\tilde F$ is a pure vector, therefore $\natural$-antisymmetric, and its commutator with a generic element measured $4.43$ for a curvature component of size $0.9$. **So the zero-pole relation of the free article is available exactly where the field strength vanishes**, and nowhere else.
 
@@ -31,51 +31,51 @@ The transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued funct
 The algebra and its units are those of *Algebra and Element Conventions*, the gradient those of *Operator and Calculus Conventions*, the products those of *Product and Form Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule
 
 $$
-\tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,
+\tilde\nabla_\Phi\longmapsto 2\pi i\tilde\Upsilon_\Phi ,
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\longmapsto i\tilde K_\Phi^{\natural},
+(\tilde\nabla_\Phi)^{\natural}\longmapsto 2\pi i\tilde\Upsilon_\Phi^{\natural},
 \qquad
-\tilde K_\Phi=ik_t'e_t+\vec k_\Phi ,
+\tilde\Upsilon_\Phi=2\pi i\nu_t'e_t+2\pi\vec\nu_\Phi ,
 \qquad
-k_t'=\frac{\omega}{c}.
+2\pi\nu_t'=\frac{\omega}{c}.
 $$
 
-The temporal slot carries the sign and the sign is the sibling's. The coordinate is $R_t=ir_t'$, so the temporal derivative is $\partial/\partial R_t=-i\partial/\partial r_t'$, and the temporal slot of the symbol is $+ik_t'$ because the plane wave's phase carries $-k_t'r_t'$.
+The temporal slot carries the sign and the sign is the sibling's. The coordinate is $R_t=ir_t'$, so the temporal derivative is $\partial/\partial R_t=-i\partial/\partial r_t'$, and the temporal slot of the symbol is $+ik_t'$ because the plane wave's phase carries $-\nu_t'r_t'$.
 
 The parent's action is quoted once and not re-derived. It is
 
 $$
-S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
 with
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi ,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi ,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural},
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{h}\tilde A_\Phi^{\natural},
 \qquad
-k_m=\frac{2\pi mc}{h},
+\nu_m=\frac{mc}{h},
 $$
 
 and with $\tilde A_\Phi\in\mathbb{B}_\Phi$ anti-Hermitian, which the parent writes as $\tilde A_\Phi^{*}=-\tilde A_\Phi$.
 
 The connection's $\natural$-behaviour is the parent's and it is used below. For $\tilde A_\Phi=i a_t e_t+\vec a$ with $a_t$ and $\vec a$ real, the $\natural$-image is $\tilde A_\Phi^{\natural}=i a_t e_t-\vec a$. So a purely electric connection is $\natural$-symmetric and a purely magnetic one is $\natural$-antisymmetric, which is the parent's split read as a symmetry of the element rather than of a gauge.
 
-$\tilde K_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $i\tilde K_\Phi\in\mathbb{B}_\Psi$ and Hermitian; $\tilde A_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi\in\mathbb{B}_\Psi$ and Hermitian. The sum of two Hermitian elements is Hermitian, and that one sentence is the whole of the reality part of §*The Action*.
+$\tilde\Upsilon_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $2\pi i\tilde\Upsilon_\Phi\in\mathbb{B}_\Psi$ and Hermitian; $\tilde A_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi\in\mathbb{B}_\Psi$ and Hermitian. The sum of two Hermitian elements is Hermitian, and that one sentence is the whole of the reality part of §*The Action*.
 
 The momentum-space action is the action at one wave number, and its licence is stated here. For a constant connection,
 
 $$
-S=\frac{h c}{4\pi}\int\frac{\mathrm{d}^{4}k}{(2\pi)^{4}}\;\mathcal{Q}\bigl(\tilde\Xi_L,\tilde\Xi_R;\tilde K_{\Phi,\mathrm{gco}}\bigr),
+S=\frac{h c}{4\pi}\int\frac{\mathrm{d}^{4}k}{(2\pi)^{4}}\;\mathcal{Q}\bigl(\tilde\Xi_L,\tilde\Xi_R;\tilde\Upsilon_{\Phi,\mathrm{gco}}\bigr),
 \qquad
-\mathcal{Q}=\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,i\tilde K_{\Phi,\mathrm{gco}}^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+\mathcal{Q}=\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
 with
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi .
+\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi .
 $$
 
 No derivative appears in $\mathcal{Q}$ and none can appear, because a constant connection turns the multiplication into a multiplier and the derivative into a multiplier, and a sum of multipliers is a multiplier.
@@ -96,27 +96,27 @@ The two parts remain elements of $\mathbb{B}$, the pair remains a pair of equati
 
 ## The Action in Momentum Space, Coupled: The Free One Translated
 
-The free symbol is $i\tilde K_\Phi$; the coupled symbol is
+The free symbol is $2\pi i\tilde\Upsilon_\Phi$; the coupled symbol is
 
 $$
-i\tilde K_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi=i\Bigl(\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi\Bigr)=i\tilde K_{\Phi,\mathrm{gco}} ,
+2\pi i\tilde\Upsilon_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi=i\Bigl(\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi\Bigr)=2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}} ,
 $$
 
 and the parenthesis is a single element. So the coupling does not add a second term to the symbol; it changes the element whose symbol it is.
 
-Writing $\tilde A_\Phi=i a_t e_t+\vec a$, the four components of $\tilde K_{\Phi,\mathrm{gco}}$ are
+Writing $\tilde A_\Phi=i a_t e_t+\vec a$, the four components of $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ are
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}:\quad
-\Bigl(\;i\bigl(k_t'+\frac{2\pi ϙ}{h}a_t\bigr),\;\; k_x+\frac{2\pi ϙ}{h}a_x,\;\; k_y+\frac{2\pi ϙ}{h}a_y,\;\; k_z+\frac{2\pi ϙ}{h}a_z \;\Bigr),
+\tilde\Upsilon_{\Phi,\mathrm{gco}}:\quad
+\Bigl(\;i\bigl(\nu_t'+\frac{ϙ}{h}a_t\bigr),\;\; \nu_{x}+\frac{ϙ}{h}a_x,\;\; \nu_{y}+\frac{ϙ}{h}a_y,\;\; \nu_{z}+\frac{ϙ}{h}a_z \;\Bigr),
 $$
 
 so the element is $\frac{2\pi i}{h}\tilde P'_\Phi$ with $\tilde P'_\Phi$ the kinetic four-momentum, and the identity holds component by component with residual $0.0\times10^{0}$, checked over one hundred draws with the charge at $0.9\,ϙ$ and random momenta and connections.
 
-The functional $\mathcal{Q}$ depends on the momentum only through the element $\tilde K_{\Phi,\mathrm{gco}}$, so
+The functional $\mathcal{Q}$ depends on the momentum only through the element $\tilde\Upsilon_{\Phi,\mathrm{gco}}$, so
 
 $$
-\mathcal{Q}\bigl(\tilde\Xi_L,\tilde\Xi_R;\tilde K_{\Phi,\mathrm{gco}}\bigr)
+\mathcal{Q}\bigl(\tilde\Xi_L,\tilde\Xi_R;\tilde\Upsilon_{\Phi,\mathrm{gco}}\bigr)
 =\mathcal{Q}_{\mathrm{free}}\bigl(\tilde\Xi_L,\tilde\Xi_R;\frac{2\pi}{h}\tilde P'_\Phi\bigr),
 $$
 
@@ -124,15 +124,15 @@ with $\mathcal{Q}_{\mathrm{free}}$ the free article's form. Every exact statemen
 
 **What the relabelling is not is a gauge transformation of the field.** The translation moves the argument of the form; the field is untouched. The gauge transformation moves the field's phase and the argument together, and that is the companion's subject. The two are different operations and the article keeps them apart, because the temptation to call the translation a gauge transformation is strong and it is the one error this section exists to prevent.
 
-A functional that depends on $\tilde A_\Phi$ only through $\tilde K_{\Phi,\mathrm{gco}}$ cannot distinguish "the coupling is present and the momentum is shifted" from "the coupling is absent and the momentum is the shifted one". That is exactly right for a constant connection, which the parent proves is pure gauge: a constant potential is removable by a phase and the two descriptions are the same physical situation.
+A functional that depends on $\tilde A_\Phi$ only through $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ cannot distinguish "the coupling is present and the momentum is shifted" from "the coupling is absent and the momentum is the shifted one". That is exactly right for a constant connection, which the parent proves is pure gauge: a constant potential is removable by a phase and the two descriptions are the same physical situation.
 
 The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$; the two summands examined below are its two slots.
 
-The type of the coefficient. In the free case the real part removes nothing, because $i\tilde K_\Phi$ is Hermitian. The sibling's check covered one hundred random fields and momenta and found a largest imaginary part of $2.2\times10^{-15}$. In the coupled case there are two kinetic terms and two different operators, and the same conclusion holds for a two-line reason.
+The type of the coefficient. In the free case the real part removes nothing, because $2\pi i\tilde\Upsilon_\Phi$ is Hermitian. The sibling's check covered one hundred random fields and momenta and found a largest imaginary part of $2.2\times10^{-15}$. In the coupled case there are two kinetic terms and two different operators, and the same conclusion holds for a two-line reason.
 
-$i\tilde K_{\Phi,\mathrm{gco}}^{\natural}=i\tilde K_\Phi^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural}$ and $i\tilde K_{\Phi,\mathrm{gco}}=i\tilde K_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ are each a real linear combination of two Hermitian elements, hence Hermitian. **And $\mathrm{Sc}(\tilde\Xi^{*}H\tilde\Xi)$ is real for every Hermitian $H$ and every $\tilde\Xi$**, so the bracket is real term by term.
+$2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}=2\pi i\tilde\Upsilon_\Phi^{\natural}+\frac{i\,ϙ}{h}\tilde A_\Phi^{\natural}$ and $2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}=2\pi i\tilde\Upsilon_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi$ are each a real linear combination of two Hermitian elements, hence Hermitian. **And $\mathrm{Sc}(\tilde\Xi^{*}H\tilde\Xi)$ is real for every Hermitian $H$ and every $\tilde\Xi$**, so the bracket is real term by term.
 
-Two hundred draws of random momenta, random connections with $ϙ=0.9$ and $k_m=0.7$, and random complex $\tilde\Xi_L$ and $\tilde\Xi_R$: the largest imaginary part of $\mathcal{Q}$ was $3.6\times10^{-15}$.
+Two hundred draws of random momenta, random connections with $ϙ=0.9$ and $2\pi\nu_m=0.7$, and random complex $\tilde\Xi_L$ and $\tilde\Xi_R$: the largest imaginary part of $\mathcal{Q}$ was $3.6\times10^{-15}$.
 
 In position space the parent's reason is that a central complex number multiplies the pairing by its modulus squared in each term, so the potential's contribution cancels between the field and its conjugate. At a mode the same sentence is shorter: the potential's contribution to the symbol is a Hermitian element, and a Hermitian element's bracket is real.
 
@@ -144,16 +144,16 @@ The section's claim is that the real part is redundant twice over, which is a st
 At a wave number the coupled action is a quadratic form in the mode's amplitude, and the form's kernel is the symbol:
 
 $$
-S_{\mathrm{mode}}[\tilde X]=\bigl\langle \tilde X,\sigma(\tilde K_\Phi)\tilde X\bigr\rangle ,
+S_{\mathrm{mode}}[\tilde X]=\bigl\langle \tilde X,\sigma(\tilde\Upsilon_\Phi)\tilde X\bigr\rangle ,
 \qquad
-\sigma(\tilde K_\Phi)=i\tilde K_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi .
+\sigma(\tilde\Upsilon_\Phi)=2\pi i\tilde\Upsilon_\Phi+\frac{iϙ}{h}\tilde A_\Phi .
 $$
 
 The symbol is the operator and the form is the action, and there is nothing between them at a mode: no integration by parts, no boundary term, no choice of test field. The form is a number for each amplitude, and it is a quadratic function of that amplitude, so its stationarity is one linear condition.
 
 Stationarity is the symbol's vanishing. Varying $\tilde X$ in the form gives $2\sigma\tilde X=0$, which is the coupled Dirac equation at the wave number. The quadratic form's kernel is therefore the equation, and the reading's central identity — that the action at a mode is the symbol — is a statement about what a quadratic form's derivative is, not a computation.
 
-The only place the connection appears is inside the argument, $\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$, and at a constant connection that argument is a translated wave number. The symbol's form is the free one's; its argument is shifted. That is why the coupled article's results can be stated as translations of the free ones, and why the second variation is one number for the same reason as in the free case.
+The only place the connection appears is inside the argument, $\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$, and at a constant connection that argument is a translated wave number. The symbol's form is the free one's; its argument is shifted. That is why the coupled article's results can be stated as translations of the free ones, and why the second variation is one number for the same reason as in the free case.
 
 Each summand of the symbol is Hermitian, so the symbol is, so $\langle\tilde X,\sigma\tilde X\rangle$ is real for every amplitude. The article measures the largest imaginary part at $3.6\times10^{-15}$ over two hundred draws, which is a check on the arithmetic and not a proof. The proof is the type argument, and it is the same one the free article gives: the Hermitian part of the symbol is the whole of it.
 
@@ -164,7 +164,7 @@ It makes the "action at a mode" a defined object rather than a phrase: a quadrat
 The variation is algebraic, and that is the whole difference from position space. The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
 
 $$
-\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,\vec k)X\bigr],
+\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,2\pi\vec\nu_{\Phi})X\bigr],
 $$
 
 with no integration by parts, no surface term and no boundary condition. A boundary term appears in a variational principle because a derivative is varied; here no derivative is varied, so none appears. That is not a convenience of the calculation, it is what the transform does to the principle.
@@ -172,7 +172,7 @@ with no integration by parts, no surface term and no boundary condition. A bound
 Stationarity is the symbol equation. Vanishing for every $\delta X^{*}$ forces the bracket to vanish, by the same positivity argument as in the element article: choose $\delta X^{*}$ equal to the bracket and the scalar part becomes a sum of squared moduli. So
 
 $$
-\mathcal{S}(\omega,\vec k)\,X=0,
+\mathcal{S}(\omega,2\pi\vec\nu_{\Phi})\,X=0,
 $$
 
 the symbol equation the article solves. The passage from the action to the equation is one line and it is exact: the fixed-frequency action's stationarity and the symbol equation are the same statement.
@@ -184,15 +184,15 @@ The variation at a mode cannot see a boundary condition, a topological charge or
 **Compose the pair and the composed operator is a central multiple of the identity.** At a mode the pair is
 
 $$
-i\tilde K_{\Phi,\mathrm{gco}}\,\tilde\Xi_R=k_m\tilde\Xi_L,
+2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\,\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-i\tilde K_{\Phi,\mathrm{gco}}^{\natural}\,\tilde\Xi_L=k_m\tilde\Xi_R ,
+2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}\,\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R ,
 $$
 
 and substituting the first into the second gives
 
 $$
-i\tilde K_{\Phi,\mathrm{gco}}^{\natural}\,i\tilde K_{\Phi,\mathrm{gco}}\,\tilde\Xi_R=k_m^{2}\tilde\Xi_R .
+2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}\,2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\,\tilde\Xi_R=4\pi^{2}\nu_m^{2}\tilde\Xi_R .
 $$
 
 The left side is a scalar and the reason is the $\natural$-square. For any element $\tilde Q$,
@@ -201,14 +201,14 @@ $$
 \tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural},
 $$
 
-a central element with no vector part: the last two entries of the product cancel, because a quaternion unit anticommutes with every other unit and squares to minus the scalar. The measured off-diagonal defect of $i\tilde K_{\Phi,\mathrm{gco}}^{\natural}i\tilde K_{\Phi,\mathrm{gco}}$ against $\langle i\tilde K_{\Phi,\mathrm{gco}}\rangle_{\natural}$ times the identity was $0.0\times10^{0}$ on every draw, and the same measurement on a generic element gave $5.6\times10^{-17}$ and $4.4\times10^{-16}$.
+a central element with no vector part: the last two entries of the product cancel, because a quaternion unit anticommutes with every other unit and squares to minus the scalar. The measured off-diagonal defect of $2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}$ against $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_{\natural}$ times the identity was $0.0\times10^{0}$ on every draw, and the same measurement on a generic element gave $5.6\times10^{-17}$ and $4.4\times10^{-16}$.
 
-The free article's reason is that $\langle\tilde K_\Phi\rangle_{\natural}$ is independent of the order of the two factors; that is true and it is not what is used here. **What is used here is that a $\natural$-square is central for every element**, symmetric or not, so the collapse does not depend on the connection being of any special shape. The measured consequence is that $\langle i\tilde K_{\Phi,\mathrm{gco}}\rangle_{\natural}$ was real with zero imaginary part on every draw, which the free article's reason alone would not give.
+The free article's reason is that $\langle\tilde\Upsilon_\Phi\rangle_{\natural}$ is independent of the order of the two factors; that is true and it is not what is used here. **What is used here is that a $\natural$-square is central for every element**, symmetric or not, so the collapse does not depend on the connection being of any special shape. The measured consequence is that $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_{\natural}$ was real with zero imaginary part on every draw, which the free article's reason alone would not give.
 
-The number is $\langle i\tilde K_{\Phi,\mathrm{gco}}\rangle_{\natural}-k_m^{2}=\pi^{2}-k_m^{2}$. The norm is $\pi^{2}$ with
+The number is $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_{\natural}-4\pi^{2}\nu_m^{2}=\pi^{2}-4\pi^{2}\nu_m^{2}$. The norm is $\pi^{2}$ with
 
 $$
-\pi_{\imath}=\frac{h}{2\pi} k_{\imath}+ϙA_{\imath} ,
+\pi_{\imath}=h\,2\pi\nu_{\imath}+ϙA_{\imath} ,
 \qquad
 \pi^{2}=\pi_t^{2}-\vec\pi^{2}=\frac{(2\pi)^{2} p'^{2}}{h^{2}},
 $$
@@ -216,12 +216,12 @@ $$
 verified to $0.0\times10^{0}$. The subtraction is by a central number and not inside the norm, and the sibling's warning applies unchanged: the wrong object is
 
 $$
-\langle i\tilde K_{\Phi,\mathrm{gco}}-k_m\rangle_{\natural}=\pi^{2}+2k_m\pi_t+k_m^{2},
+\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}-2\pi\nu_m\rangle_{\natural}=\pi^{2}+4\pi\nu_m\pi_t+4\pi^{2}\nu_m^{2},
 $$
 
 checked to $2.2\times10^{-16}$ over the four rows below.
 
-| $k_t'$ | $k_x$ | $k_y$ | $A_t$ | $\pi^{2}$ | $\pi^{2}-k_m^{2}$ | $\langle i\tilde K_{\Phi,\mathrm{gco}}-k_m\rangle_{\natural}$ |
+| $\nu_t'$ | $\nu_{x}$ | $\nu_{y}$ | $A_t$ | $\pi^{2}$ | $\pi^{2}-\nu_m^{2}$ | $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}-\nu_m\rangle_{\natural}$ |
 | --- | --- | --- | --- | --- | --- | --- |
 | $1.2$ | $0.4$ | $0.2$ | $0.0$ | $1.2400$ | $0.750000$ | $3.410000$ |
 | $1.2$ | $0.4$ | $0.2$ | $+0.5$ | $2.5225$ | $2.032500$ | $5.322500$ |
@@ -230,31 +230,31 @@ checked to $2.2\times10^{-16}$ over the four rows below.
 
 The second variation is $2.032500$ and $-0.127500$, so a scalar potential of $\pm0.5$ moves the number across zero; the wrong object is $5.322500$ and $1.902500$, and it does not cross. So the number's sign is a physical statement and the wrong object's sign is not, which is why the distinction between the two is not bookkeeping.
 
-A linear gauge function translates the support of the field in momentum space and leaves $\pi$ where it was, because the shift of $\tilde A_\Phi$ and the shift of $k$ cancel in $\frac{h}{2\pi} k+ϙA$. So $\pi^{2}-k_m^{2}$ is a number attached to the mode and not to the gauge, and the free article's $\tilde K_\Phi$-dependent statement was not.
+A linear gauge function translates the support of the field in momentum space and leaves $\pi$ where it was, because the shift of $\tilde A_\Phi$ and the shift of $k$ cancel in $\frac{h}{2\pi} k+ϙA$. So $\pi^{2}-\nu_m^{2}$ is a number attached to the mode and not to the gauge, and the free article's $\tilde\Upsilon_\Phi$-dependent statement was not.
 
 ### Zero, Pole and the On-Shell Action
 
 The mode form is zero on every solution, and that is the first-order Lagrangian's vanishing read in momentum space. Substituting the pair into $\mathcal{Q}$ term by term gives
 
 $$
-\mathrm{Sc}\bigl(\tilde\Xi_L^{*}i\tilde K_{\Phi,\mathrm{gco}}^{\natural}\tilde\Xi_L\bigr)=k_m\mathrm{Sc}\bigl(\tilde\Xi_L^{*}\tilde\Xi_R\bigr),
+\mathrm{Sc}\bigl(\tilde\Xi_L^{*}2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}\tilde\Xi_L\bigr)=2\pi\nu_m\mathrm{Sc}\bigl(\tilde\Xi_L^{*}\tilde\Xi_R\bigr),
 \qquad
-\mathrm{Sc}\bigl(\tilde\Xi_R^{*}i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi_R\bigr)=k_m\mathrm{Sc}\bigl(\tilde\Xi_R^{*}\tilde\Xi_L\bigr),
+\mathrm{Sc}\bigl(\tilde\Xi_R^{*}2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\tilde\Xi_R\bigr)=2\pi\nu_m\mathrm{Sc}\bigl(\tilde\Xi_R^{*}\tilde\Xi_L\bigr),
 $$
 
 so the two kinetic terms reproduce the two mass terms and the four cancel pairwise.
 
-Taking $\tilde\Xi_L=i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi_R/k_m$ on shell, the two residuals were $2.2\times10^{-16}$, $5.0\times10^{-16}$ and $1.7\times10^{-16}$, and $\mathcal{Q}$ was $3.6\times10^{-15}$, $1.8\times10^{-15}$ and $1.8\times10^{-15}$ — zero.
+Taking $\tilde\Xi_L=2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\tilde\Xi_R/\nu_m$ on shell, the two residuals were $2.2\times10^{-16}$, $5.0\times10^{-16}$ and $1.7\times10^{-16}$, and $\mathcal{Q}$ was $3.6\times10^{-15}$, $1.8\times10^{-15}$ and $1.8\times10^{-15}$ — zero.
 
-At $k^{2}-k_m^{2}=2.740000$ the second residual was $5.58$ and $6.65$, and $\mathcal{Q}$ was $-16.908619$ and $-32.554945$. So the vanishing is the shell's and not an algebraic accident of the construction, which is what the two orders of magnitude are there to show.
+At $k^{2}-4\pi^{2}\nu_m^{2}=2.740000$ the second residual was $5.58$ and $6.65$, and $\mathcal{Q}$ was $-16.908619$ and $-32.554945$. So the vanishing is the shell's and not an algebraic accident of the construction, which is what the two orders of magnitude are there to show.
 
 The parent says that "the value of the action on a solution is the free value, because a constant potential is pure gauge and the gauge factor's contribution cancels between the field and its conjugate". At a mode the sentence has a sharper form: the value is zero, and the free value is zero, and the two zeros are the same zero. The cancellation the parent attributes to the gauge factor is the cancellation of the four terms, and it happens with or without the potential.
 
 A functional that vanishes on every solution of the free theory and on every solution of the coupled theory cannot distinguish them, and the distinguishing information is in the *operator*, not in the value. That is why the propagator and not the action is the object that knows about the potential, and it is the parent's reason for computing the propagator separately.
 
-The variational output is the zero of $N=\pi^{2}-k_m^{2}$. The compatibility condition at a constant connection is $(\pi^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions are supported exactly where the number vanishes and nowhere else. The values in the table of §*The Second Variation: One Number, for a New Reason* are that statement with numbers: $0.750000$ and $2.032500$ off the shell, and the shell is the surface where the column of $N$ crosses zero.
+The variational output is the zero of $N=\pi^{2}-4\pi^{2}\nu_m^{2}$. The compatibility condition at a constant connection is $(\pi^{2}-\nu_m^{2})\tilde\Xi_R=0$, so the solutions are supported exactly where the number vanishes and nowhere else. The values in the table of §*The Second Variation: One Number, for a New Reason* are that statement with numbers: $0.750000$ and $2.032500$ off the shell, and the shell is the surface where the column of $N$ crosses zero.
 
-The free kernel's denominator is $\langle\tilde K_\Phi\rangle_{\natural}+k_m^{2}=-(k^{2}-k_m^{2})$, the negative of the free second variation. With the coupling the same construction gives $-\pi^{2}+k_m^{2}$, the negative of the number above, so the kernel is large exactly where $\pi^{2}=k_m^{2}$.
+The free kernel's denominator is $\langle\tilde\Upsilon_\Phi\rangle_{\natural}+\nu_m^{2}=-(k^{2}-\nu_m^{2})$, the negative of the free second variation. With the coupling the same construction gives $-\pi^{2}+\nu_m^{2}$, the negative of the number above, so the kernel is large exactly where $\pi^{2}=4\pi^{2}\nu_m^{2}$.
 
 $\pi^{2}$ is one fixed quadratic form evaluated at the shifted four-momentum, so its zero set is congruent to the free one and the congruence is a translation. That is the companion's Finding 3 read at the pole, and the article states it here because the propagator is where the translation is visible as a physical statement rather than as an algebraic identity.
 
@@ -312,12 +312,12 @@ measured as a residual of $0.0\times10^{0}$. **A pure vector is $\natural$-antis
 With $\tilde F=0$ the operator is a multiple of the identity, as §*The Second Variation: One Number, for a New Reason* measures. With $\tilde F\neq0$ it is not, and the compatibility condition
 
 $$
-\Bigl(\sum_{\imath}\tilde\nabla_{\Phi,\mathrm{gco},\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
+\Bigl(\sum_{\imath}\tilde\nabla_{\Phi,\mathrm{gco},\imath}^{2}+\frac{i\,ϙ}{h}\tilde F-4\pi^{2}\nu_m^{2}\Bigr)\tilde\Xi_R=0
 $$
 
 is an equation between elements and not an equation between numbers. That is the precise sense in which the zero-pole relation stops: the free article's relation is between a number and its inverse, and here one of the two is not a number.
 
-The second variation is a central number if and only if the connection is pure gauge, and the gauge qualifier is not removable. A constant connection has $\tilde F=0$ and is removable by a phase, and in that gauge the symbol exists and the number is $\pi^{2}-k_m^{2}$. A connection with $\tilde F\neq0$ has no gauge in which the number exists, because $\tilde F$ is gauge invariant. So the number's existence and the connection's purity are one condition, and it is the same condition the companion states as "the multiplier case is the zero-curvature case".
+The second variation is a central number if and only if the connection is pure gauge, and the gauge qualifier is not removable. A constant connection has $\tilde F=0$ and is removable by a phase, and in that gauge the symbol exists and the number is $\pi^{2}-\nu_m^{2}$. A connection with $\tilde F\neq0$ has no gauge in which the number exists, because $\tilde F$ is gauge invariant. So the number's existence and the connection's purity are one condition, and it is the same condition the companion states as "the multiplier case is the zero-curvature case".
 
 What this does not say is that the coupled theory has no dispersion relation. It says that the relation is an element equation whose scalar content has to be extracted, and that the extraction is the curvature's business. The article's claim is about the *form* of the second variation and not about the existence of a spectrum, and the Landau-level article is where a nonzero curvature's spectrum is actually computed.
 
@@ -326,12 +326,12 @@ What this does not say is that the coupled theory has no dispersion relation. It
 The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,
 
 $$
-\mathcal{Q}(\vec k)=\frac{h}{2\pi}\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
+\mathcal{Q}(\vec\nu_{\Phi})=\frac{h}{2\pi}\,\mathrm{Sc}\bigl[X^{*}(\vec\nu_{\Phi})X(\vec\nu_{\Phi})\bigr],
 $$
 
 up to the normalisation the element article fixes, so that the total charge is the integral of this density over the wave numbers. The step from the position-space charge to this display is Parseval's identity and nothing else; the companion article *The Lagrangian and the Schrödinger Equation in Momentum Space* proves it in that case and the proof transfers, because it uses only the transform and the Hermitian pairing.
 
-The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,\vec k)$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
+The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,2\pi\vec\nu_{\Phi})$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
 
 The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
@@ -351,9 +351,9 @@ Whether the invisibility of the local phase at a mode has a reading in the word.
 
 ## Summary
 
-At a constant connection the coupled Dirac action at a mode is one quadratic form per wave number, and the coupling's entire effect on it is a translation of the argument: $i\tilde K_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi=\frac{2\pi i}{h}\tilde P'_\Phi$ with residual $0.0\times10^{0}$. The real part stays redundant, because both summands of the symbol are Hermitian, with a largest imaginary part of $3.6\times10^{-15}$ over two hundred draws.
+At a constant connection the coupled Dirac action at a mode is one quadratic form per wave number, and the coupling's entire effect on it is a translation of the argument: $2\pi i\tilde\Upsilon_\Phi+\frac{iϙ}{h}\tilde A_\Phi=\frac{i}{h}\tilde P'_\Phi$ with residual $0.0\times10^{0}$. The real part stays redundant, because both summands of the symbol are Hermitian, with a largest imaginary part of $3.6\times10^{-15}$ over two hundred draws.
 
-The second variation is one number, $N=\pi^{2}-k_m^{2}$, and the reason it is a number is that the $\natural$-square of *any* element is central — the composed operator's off-diagonal defect was $0.0\times10^{0}$. The number is $0.750000$, $2.032500$, $-0.127500$ and $0.518900$ at the four rows of the table, and it crosses zero when the scalar potential changes sign; the wrong object $\pi^{2}+2k_m\pi_t+k_m^{2}$ does not. The number is gauge invariant because it depends on $\pi$ and not on $k$.
+The second variation is one number, $N=\pi^{2}-4\pi^{2}\nu_m^{2}$, and the reason it is a number is that the $\natural$-square of *any* element is central — the composed operator's off-diagonal defect was $0.0\times10^{0}$. The number is $0.750000$, $2.032500$, $-0.127500$ and $0.518900$ at the four rows of the table, and it crosses zero when the scalar potential changes sign; the wrong object $\pi^{2}+2\nu_m\pi_t+\nu_m^{2}$ does not. The number is gauge invariant because it depends on $\pi$ and not on $k$.
 
 The curvature is what limits the statement. $\tilde F$ is a pure vector, hence $\natural$-antisymmetric with residual $0.0\times10^{0}$, and its commutator with a generic element measured $4.43$: a $\natural$-antisymmetric element cannot be central. So the composed operator is a central multiple of the identity exactly when the field strength vanishes, and the free article's zero-pole relation is available exactly there — which answers that article's open question negatively and precisely.
 
@@ -367,16 +367,16 @@ On the shell the mode form vanishes — $3.6\times10^{-15}$ against $-32.554945$
 | --- | --- |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ | The parent's covariant derivative |
 | $ϙ$ | The charge |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
-| $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The symbol of the gradient; temporal slot $+ik_t'$ |
-| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ | The shifted element; its symbol is $i\tilde K_{\Phi,\mathrm{gco}}$ |
-| $\tilde P'_\Phi=\frac{h}{2\pi}\tilde K_{\Phi,\mathrm{gco}}$ | The kinetic four-momentum |
-| $\pi_{\imath}=\frac{h}{2\pi} k_{\imath}+ϙA_{\imath}$ | The shifted four-momentum; $\pi^{2}=p'^{2}/\frac{h^{2}}{4\pi^{2}}$ |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
+| $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The symbol of the gradient; temporal slot $+ik_t'$ |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | The shifted element; its symbol is $2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}$ |
+| $\tilde P'_\Phi=h\,\tilde\Upsilon_{\Phi,\mathrm{gco}}$ | The kinetic four-momentum |
+| $\pi_{\imath}=h\,2\pi\nu_{\imath}+ϙA_{\imath}$ | The shifted four-momentum; $\pi^{2}=p'^{2}/\frac{h^{2}}{4\pi^{2}}$ |
 | $\mathcal{Q}$ | The mode form: four terms, no derivative, real for every field |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$ | The $\natural$-square; central for every element |
-| $N=\pi^{2}-k_m^{2}$ | The second variation at a mode; one central number |
-| $\langle i\tilde K_{\Phi,\mathrm{gco}}-k_m\rangle_{\natural}=\pi^{2}+2k_m\pi_t+k_m^{2}$ | The wrong object; the mass inside the norm |
-| $-\pi^{2}+k_m^{2}$ | The propagator's denominator; the pole |
+| $N=\pi^{2}-4\pi^{2}\nu_m^{2}$ | The second variation at a mode; one central number |
+| $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}-2\pi\nu_m\rangle_{\natural}=\pi^{2}+4\pi\nu_m\pi_t+4\pi^{2}\nu_m^{2}$ | The wrong object; the mass inside the norm |
+| $-\pi^{2}+\nu_m^{2}$ | The propagator's denominator; the pole |
 | $\tilde F$ | The curvature; a pure vector, $\tilde F^{\natural}=-\tilde F$, non-central |
 | $\tilde A_\Phi^{\natural}=i a_t e_t-\vec a$ | The connection's $\natural$-image; electric symmetric, magnetic antisymmetric |
 
@@ -399,7 +399,7 @@ On the shell the mode form vanishes — $3.6\times10^{-15}$ against $-32.554945$
 
 ## Aside: Why the Parent’s Test Field Had Two Modes
 
-With $\tilde\Xi=\tilde\Xi_0e^{i\theta_{\mathrm{pha}}}$ and $\theta_{\mathrm{pha}}=\vec k_\Phi\cdot\vec r-k_t'r_t'$, every product of the field with itself, or with its conjugate, is a constant element times a phase that cancels. So the naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ and the conserved current agree on a single mode in the only respect the test can see: both have zero divergence.
+With $\tilde\Xi=\tilde\Xi_0e^{i\theta_{\mathrm{pha}}}$ and $\theta_{\mathrm{pha}}=2\pi\vec\nu_\Phi\cdot\vec r-2\pi\nu_t'r_t'$, every product of the field with itself, or with its conjugate, is a constant element times a phase that cancels. So the naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ and the conserved current agree on a single mode in the only respect the test can see: both have zero divergence.
 
 The parent's choice of a superposition is therefore forced and not a preference. The parent evaluates the divergence on "a superposition of two plane waves, so that the cross terms do not vanish by symmetry", and reports that the naive bilinear's divergence is nonzero at the same order as the current. In momentum space the same sentence is a statement about mode pairs: with $\tilde\Xi=\sum_j a_j\tilde\Xi^{(j)}$ the divergence carries, for each pair, the factor $(k^{(j)}-k^{(i)})_{\imath}$ times the bilinear, so conservation is the statement that every pair's factor times its bilinear vanishes, and a single mode has no pairs.
 

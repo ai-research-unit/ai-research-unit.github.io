@@ -20,28 +20,28 @@ The companion's question is the spectrum, and it is not this article's. *The Lag
 
 The algebra and its units are those of *Algebra and Element Conventions*, the gradient, the d'Alembertian and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The kernel and its $i\epsilon$ prescription are those of *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*; they are cited and not re-derived.
 
-The bookkeeping is quoted once. With $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$, $k_t'=\omega/c$, $k_m=\frac{2\pi mc}{h}$ and $r_t'=ct'$,
+The bookkeeping is quoted once. With $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$, $2\pi\nu_t'=\omega/c$, $\nu_m=\frac{mc}{h}$ and $r_t'=ct'$,
 
 $$
-\tilde\nabla_\Phi\longmapsto i\tilde K_\Phi,
+\tilde\nabla_\Phi\longmapsto 2\pi i\tilde\Upsilon_\Phi,
 \qquad
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\longmapsto-\langle\tilde K_\Phi\rangle_\natural,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\longmapsto-\langle\tilde\Upsilon_\Phi\rangle_\natural,
 \qquad
-\langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2},
+\langle\tilde\Upsilon_\Phi\rangle_\natural=-2\pi\nu_t'^{2}+4\pi^{2}\nu_{\Phi}^{2},
 \qquad
 \langle\tilde P_\Phi\rangle_\natural=N.
 $$
 
-The phase convention is fixed here and used throughout. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\omega r_t'-\vec k_\Phi\cdot\vec r$, so $\partial/\partial r_t'\mapsto-i\omega$ and $\partial/\partial r_\eta\mapsto ik_\eta$. The sign of $\vec\zeta$ in every factorization display below is the sign this convention gives it; the opposite convention reverses it and changes no structural statement.
+The phase convention is fixed here and used throughout. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\omega r_t'-2\pi\vec\nu_\Phi\cdot\vec r$, so $\partial/\partial r_t'\mapsto-i\omega$ and $\partial/\partial r_\eta\mapsto ik_\eta$. The sign of $\vec\zeta$ in every factorization display below is the sign this convention gives it; the opposite convention reverses it and changes no structural statement.
 
 **The coefficient is a constant complex vector.** $\vec F$ is a constant element of the vector subspace of $\mathbb{B}$ with complex components, carrying no scalar part. It is the parent's object and it is kept in the parent's notation, including the split $\vec F=-E-iH$ for real vectors $E$ and $H$.
 
 ## The Symbol and Its Rank
 
-Finding 1. The symbol of $\Box_\Phi-k_m^{2}$ is
+Finding 1. The symbol of $\Box_\Phi-4\pi^{2}\nu_m^{2}$ is
 
 $$
--\langle\tilde K_\Phi\rangle_\natural-k_m^{2}=k_t'^{2}-k_\Phi^{2}-k_m^{2},
+-\langle\tilde\Upsilon_\Phi\rangle_\natural-4\pi^{2}\nu_m^{2}=2\pi\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}-4\pi^{2}\nu_m^{2},
 $$
 
 a scalar quadratic form of rank four whose zero set is the two-sheeted mass hyperboloid.
@@ -58,9 +58,9 @@ $$
 
 so the two ranks differ by two and no product of two linear forms reaches four.
 
-This is the parent's anticommutation argument and not a rival to it. The parent shows that $B=-A$ and $A\vec e_{\imath}+\vec e_{\imath} A=0$ for all three units force $A=0$, and then the constant term $AB=-A^{2}$ cannot equal $-k_m^{2}$. The rank argument says the same thing in the language of the symbol: the composition of two first-order operators has the product of their symbols as its principal symbol, and a product of two central linear symbols is a product of two linear forms, hence of rank at most two. Neither argument is stronger; they are one fact seen from two sides, and the parent's is cited rather than repeated.
+This is the parent's anticommutation argument and not a rival to it. The parent shows that $B=-A$ and $A\vec e_{\imath}+\vec e_{\imath} A=0$ for all three units force $A=0$, and then the constant term $AB=-A^{2}$ cannot equal $-\nu_m^{2}$. The rank argument says the same thing in the language of the symbol: the composition of two first-order operators has the product of their symbols as its principal symbol, and a product of two central linear symbols is a product of two linear forms, hence of rank at most two. Neither argument is stronger; they are one fact seen from two sides, and the parent's is cited rather than repeated.
 
-The zero set says what a factorization would have to look like. The hyperboloid has two sheets, and the two sheets are the two frequency branches $\omega=\pm c\sqrt{k_\Phi^{2}+k_m^{2}}$. A factorization would cut the quadric into two *hyperplanes*, not into two sheets. The sheet count is not the factor count, and that distinction is the reason a second-order scalar equation can have two branches and still no square root.
+The zero set says what a factorization would have to look like. The hyperboloid has two sheets, and the two sheets are the two frequency branches $\omega=\pm c\sqrt{4\pi^{2}\nu_{\Phi}^{2}+4\pi^{2}\nu_m^{2}}$. A factorization would cut the quadric into two *hyperplanes*, not into two sheets. The sheet count is not the factor count, and that distinction is the reason a second-order scalar equation can have two branches and still no square root.
 
 What the obstruction is not. It is not an obstruction to a first-order *system*. The parent's conjugate pair writes the equation as a first-order system in the field and its rate of change, and that system exists for every second-order equation. The obstruction is to a single first-order equation for a scalar amplitude, and the two statements are compatible because the system doubles the unknown.
 
@@ -85,7 +85,7 @@ The second price is the one the rank argument adds, and it is the article's stru
 
 So the two statements are one statement. "The Klein–Gordon operator does not factor into first-order scalar operators" and "a vector coefficient whose norm supplies the mass does factor" are not in tension: the first forbids central factors, the second supplies non-central ones, and the rank of the quadric decides between them. The word "scalar" in the parent's sentence is doing all the work, and the article has now said why.
 
-The compensation is visible in the symbol. In the factored case the symbol is a perfect square in the shifted variable: $(\vec\zeta-\vec F)^{2}-\omega^{2}$, the difference of two squares whose spatial part is the square of one linear form. In the unfactored case the symbol is $k_t'^{2}-k_\Phi^{2}-k_m^{2}$, which is also a difference of squares, $k_t'^{2}-(k_\Phi^{2}+k_m^{2})$, but the second square is a sum of four terms and not one. The obstruction is the plus sign inside the second square, and that is the entire content of the rank count.
+The compensation is visible in the symbol. In the factored case the symbol is a perfect square in the shifted variable: $(\vec\zeta-\vec F)^{2}-\omega^{2}$, the difference of two squares whose spatial part is the square of one linear form. In the unfactored case the symbol is $\nu_t'^{2}-\nu_{\Phi}^{2}-\nu_m^{2}$, which is also a difference of squares, $\nu_t'^{2}-(\nu_{\Phi}^{2}+\nu_m^{2})$, but the second square is a sum of four terms and not one. The obstruction is the plus sign inside the second square, and that is the entire content of the rank count.
 
 ## The Zero Set of the Factored Symbol
 
@@ -111,7 +111,7 @@ What the tabulation does not claim. It does not claim that the three values of t
 
 ## Where the Polar Form Loses Its Symbol
 
-**The polar parent's amplitude equation is not linear, and a nonlinear equation has no symbol.** The parent writes $\Box_\Phi r=r\,[k_m^{2}-(\partial_{r_t'}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}]$, and the coefficient on the right depends on the gradient of the unknown phase. A symbol is a function of the wave number alone; here the coefficient is a functional of the solution, so no function of $\tilde K_\Phi$ represents the operator.
+**The polar parent's amplitude equation is not linear, and a nonlinear equation has no symbol.** The parent writes $\Box_\Phi r=r\,[4\pi^{2}\nu_m^{2}-(\partial_{r_t'}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}]$, and the coefficient on the right depends on the gradient of the unknown phase. A symbol is a function of the wave number alone; here the coefficient is a functional of the solution, so no function of $\tilde\Upsilon_\Phi$ represents the operator.
 
 The pair is coupled in both directions, and each direction fails a different test. At fixed phase the amplitude equation is linear in $r$: superposing two amplitudes gave a residual of $1.4\times10^{-14}$ against a scale of $6.4$. At fixed amplitude it is not additive in the phase: superposing two phases gave a residual of $2.0$ against a scale of $4.0$. So the equation is linear in neither variable of the pair, taken as the pair.
 
@@ -127,7 +127,7 @@ The factorization is not a Fourier discovery, and the article does not present i
 
 Constant coefficients are the licence. A symbol exists only where the coefficients are constant, and every display above is a statement about that case. A position-dependent coefficient replaces the symbol by a convolution, its kernel being the transform of the coefficient, and there is no quadric to factor. The rank argument therefore classifies constant coefficients and nothing else, and the parent's two settings are the two cases of this licence.
 
-The abelian component form. The parent separates the covariant derivative into components because the coefficients are central scalars, and that is what makes the symbol a scalar function of $\tilde K_\Phi$ rather than a matrix. A non-abelian coefficient would make the symbol matrix-valued, the rank argument would become a statement about a matrix polynomial, and the classification would have to be redone.
+The abelian component form. The parent separates the covariant derivative into components because the coefficients are central scalars, and that is what makes the symbol a scalar function of $\tilde\Upsilon_\Phi$ rather than a matrix. A non-abelian coefficient would make the symbol matrix-valued, the rank argument would become a statement about a matrix polynomial, and the classification would have to be redone.
 
 The article does not re-derive the kernel. The light-cone $\delta$-layer, the Bessel-type kernel of the unfactored operator and the exponential weight of the factored one are the parent's, and they are cited at §*Conventions*. What is added here is the shape of the zero set, not the fundamental solution.
 
@@ -139,7 +139,7 @@ One question is left open, and it is whether the rank argument generalizes to hi
 
 ## Summary
 
-The Klein–Gordon operator's symbol is $k_t'^{2}-k_\Phi^{2}-k_m^{2}$, a scalar quadratic form of rank four whose zero set is the two-sheeted mass hyperboloid. A product of two linear forms has rank at most two, so the form is not a product of two linear forms, so no pair of first-order operators with central symbols composes to the Klein–Gordon operator. That is the parent's anticommutation obstruction read on the quadric, and the parent's proof is cited rather than repeated.
+The Klein–Gordon operator's symbol is $\nu_t'^{2}-\nu_{\Phi}^{2}-\nu_m^{2}$, a scalar quadratic form of rank four whose zero set is the two-sheeted mass hyperboloid. A product of two linear forms has rank at most two, so the form is not a product of two linear forms, so no pair of first-order operators with central symbols composes to the Klein–Gordon operator. That is the parent's anticommutation obstruction read on the quadric, and the parent's proof is cited rather than repeated.
 
 A constant complex vector coefficient does factor, and the product of the two first-order symbols is scalar: $(\vec\zeta-\vec F,\vec\zeta-\vec F)-\omega^{2}$, verified to $8.9\times10^{-16}$ over three hundred draws. The price is the parent's: the mass $(\vec F,\vec F)$ and the directional term $2i(\vec F,\vec\nabla_\Phi)$ come from one coefficient. **The price the rank argument adds is that the factors cannot be central**, because a central factor would be the scalar square root the parent forbids; the word "scalar" in the parent's sentence is what carries the whole obstruction.
 
@@ -149,8 +149,8 @@ The two parts of the coefficient then split the work: $\omega^{2}=(\vec\zeta-E)^
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The four-wavevector; $k_t'=\omega/c$ |
-| $-\langle\tilde K_\Phi\rangle_\natural-k_m^{2}$ | The scalar Klein–Gordon symbol; rank four |
+| $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The four-wavevector; $2\pi\nu_t'=\omega/c$ |
+| $-\langle\tilde\Upsilon_\Phi\rangle_\natural-\nu_m^{2}$ | The scalar Klein–Gordon symbol; rank four |
 | $\operatorname{diag}(1,-1,-1,-1)$ | Its quadric matrix; the rank count |
 | $\vec F=-E-iH$ | The constant complex vector coefficient; $E$, $H$ real |
 | $(\vec F,\vec F)=\lvert E\rvert^{2}-\lvert H\rvert^{2}+2i(E,H)$ | The coefficient's norm; the mass of the comparison operator |
@@ -158,7 +158,7 @@ The two parts of the coefficient then split the work: $\omega^{2}=(\vec\zeta-E)^
 | $\omega^{2}=(\vec\zeta-E)^{2}-\lvert H\rvert^{2}-2i(\vec\zeta-E)\cdot H$ | The dispersion of the factored symbol |
 | $(\vec\zeta-\vec F,\vec\zeta-\vec F)-\omega^{2}$ | The product of the two first-order symbols |
 | $2i(\vec F,\vec\nabla_\Phi)$ | The directional term that cannot be separated from the mass |
-| $\Box_\Phi r=r\,[k_m^{2}-(\partial_{r_t'}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}]$ | The polar amplitude equation; nonlinear, no symbol |
+| $\Box_\Phi r=r\,[4\pi^{2}\nu_m^{2}-(\partial_{r_t'}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}]$ | The polar amplitude equation; nonlinear, no symbol |
 
 ## Further Reading
 

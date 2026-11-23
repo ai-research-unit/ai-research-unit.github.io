@@ -134,8 +134,8 @@ where $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ are the parent's positive- and negative-f
 The corpus's Dirac equation is one equation per chirality, both acting from the left,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
 the mass being the off-diagonal coupling of the two halves. On the single element that carries the four complex components of the field it is one two-sided action, written with both elements in position:
@@ -144,7 +144,7 @@ $$
 \mathcal{D}:\ \tilde X\longmapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y .
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The time term carries $e_t$ on the left, and $e_t$ is the unit, so that term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_\eta$ on the left and $\vec e_y$ on the right, so the spatial part is genuinely two-sided and is the multiplication by no single element. Both elements stand in position in the display, and the operator is never written as a product of two one-sided symbols: a single glyph for the pair of one-sided factors would hide exactly the information the computation below uses. On a plane wave the same operator has the symbol
 
@@ -169,7 +169,7 @@ The field is element-valued; the biquaternion content is the algebra on which it
 
 $$
 \{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}=h^{3}\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime}),\qquad
-\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=h^{3}\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime}),
+\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(2\pi\vec\nu_\Phi)\}=h^{3}\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 $$
 
 with all other brackets vanishing, and the **Bose choice** replaces both braces by brackets.
@@ -213,14 +213,14 @@ $$
 F(\vec r_{12})=\int\!\frac{d^3p}{h^{3}}\,\frac{1}{E_{\vec p}}\cos(\vec p\cdot\vec r_{12}),
 $$
 
-with $\nabla_\eta=\partial/\partial r_{12,\eta}$. For $m>0$ the kernel is $F(\vec r_{12})=\dfrac{m}{2\pi^2|\vec r_{12}|}\,K_1\!\big(m|\vec r_{12}|\big)$, the modified Bessel function of the second kind. The identity $\int_0^\infty\frac{p}{E}\sin(p\mathcal{L}_{\mathrm{sep}})\,dp=mK_1(m\mathcal{L}_{\mathrm{sep}})$ is the derivative in $\mathcal{L}_{\mathrm{sep}}$ of $\int_0^\infty\frac{\cos(p\mathcal{L}_{\mathrm{sep}})}{E}\,dp=K_0(m\mathcal{L}_{\mathrm{sep}})$, and both were checked numerically for $k_m=1$ and $\mathcal{L}_{\mathrm{sep}}=0.5,2,5,10$ to thirty digits. Nothing cancels: $F$ is positive and decaying, and $\nabla_\eta F$ vanishes only where $r_{12,\eta}$ does, so the kernel is nonzero for **every** $\vec r_{12}\ne 0$. It decays exponentially for large separations, but it does not vanish. So at equal times and spatial separation $\vec r_{12}\ne 0$ — a spacelike separation — the commutator of the spin-$\tfrac12$ field is nonzero, while the anticommutator is zero. The Bose choice fails microcausality for a half-integer-spin field.
+with $\nabla_\eta=\partial/\partial r_{12,\eta}$. For $m>0$ the kernel is $F(\vec r_{12})=\dfrac{m}{2\pi^2|\vec r_{12}|}\,K_1\!\big(m|\vec r_{12}|\big)$, the modified Bessel function of the second kind. The identity $\int_0^\infty\frac{p}{E}\sin(p\mathcal{L}_{\mathrm{sep}})\,dp=mK_1(m\mathcal{L}_{\mathrm{sep}})$ is the derivative in $\mathcal{L}_{\mathrm{sep}}$ of $\int_0^\infty\frac{\cos(p\mathcal{L}_{\mathrm{sep}})}{E}\,dp=K_0(m\mathcal{L}_{\mathrm{sep}})$, and both were checked numerically for $2\pi\nu_m=1$ and $\mathcal{L}_{\mathrm{sep}}=0.5,2,5,10$ to thirty digits. Nothing cancels: $F$ is positive and decaying, and $\nabla_\eta F$ vanishes only where $r_{12,\eta}$ does, so the kernel is nonzero for **every** $\vec r_{12}\ne 0$. It decays exponentially for large separations, but it does not vanish. So at equal times and spatial separation $\vec r_{12}\ne 0$ — a spacelike separation — the commutator of the spin-$\tfrac12$ field is nonzero, while the anticommutator is zero. The Bose choice fails microcausality for a half-integer-spin field.
 
-The chiral pair has a compact covariant form. With the gradient and its conjugate fixed above, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$, and the mass couples the two chiralities through the pair of the preceding section. Each member is a one-sided action: $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ is the left action of the gradient on the right-handed half, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ the left action of its conjugate on the left-handed half. The pair is kept as two equations because the two act on different objects, both from the left, and the conjugate gradient $\natural$ is what separates them. Together they are the two-sided contraction $\mathcal{D}$ acting on $(\tilde{Ξ}_{R},\tilde{Ξ}_{L})$, with $\mathcal{D}^2=\Box_\Phi I$, and the mass is the off-diagonal coupling of the two halves rather than a term inside either. With the field quantized by anticommutators, the general two-point functions are
+The chiral pair has a compact covariant form. With the gradient and its conjugate fixed above, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$, and the mass couples the two chiralities through the pair of the preceding section. Each member is a one-sided action: $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ is the left action of the gradient on the right-handed half, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ the left action of its conjugate on the left-handed half. The pair is kept as two equations because the two act on different objects, both from the left, and the conjugate gradient $\natural$ is what separates them. Together they are the two-sided contraction $\mathcal{D}$ acting on $(\tilde{Ξ}_{R},\tilde{Ξ}_{L})$, with $\mathcal{D}^2=\Box_\Phi I$, and the mass is the off-diagonal coupling of the two halves rather than a term inside either. With the field quantized by anticommutators, the general two-point functions are
 
 $$
-\{\tilde{Ξ}_{\mathrm{fop}}(x),\bar{\tilde{Ξ}}_{\mathrm{fop}}(y)\}=(\mathcal{D}+k_m)\,\mathcal{G}_{\mathrm A}(x-y),
+\{\tilde{Ξ}_{\mathrm{fop}}(x),\bar{\tilde{Ξ}}_{\mathrm{fop}}(y)\}=(\mathcal{D}+2\pi\nu_m)\,\mathcal{G}_{\mathrm A}(x-y),
 \qquad
-\langle0|[\tilde{Ξ}_{\mathrm{fop}}(x),\bar{\tilde{Ξ}}_{\mathrm{fop}}(y)]|0\rangle=(\mathcal{D}+k_m)\,G_{\mathrm{S}}(x-y),
+\langle0|[\tilde{Ξ}_{\mathrm{fop}}(x),\bar{\tilde{Ξ}}_{\mathrm{fop}}(y)]|0\rangle=(\mathcal{D}+2\pi\nu_m)\,G_{\mathrm{S}}(x-y),
 $$
 
 with $\bar{\tilde{Ξ}}_{\mathrm{fop}}(y)=\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)\,i\vec e_x$ the Dirac adjoint written with its right multiplication in position. Here $\mathcal{G}_{\mathrm A}$ is the antisymmetric combination of the two branch phases — the Pauli–Jordan-type kernel, supported inside the light cone and vanishing for spacelike separation — and $G_{\mathrm{S}}$ is the symmetric combination, which does not vanish there. The anticommutator is a $c$-number and equals its own vacuum expectation; under anticommutation relations the commutator is not a $c$-number, and the second identity is its vacuum expectation, whose $c$-number part is what carries $G_{\mathrm{S}}$. The anticommutator inherits the vanishing of $\mathcal{G}_{\mathrm A}$; the commutator's vacuum expectation inherits the non-vanishing of $G_{\mathrm{S}}$. At equal times these reduce to the delta and to the Bessel kernel computed above. The exact normalizations of $\mathcal{G}_{\mathrm A}$ and $G_{\mathrm{S}}$ carry the conventional factor of $i$; the covariant form is the standard textbook identity and is recorded as such, and the equal-time form is what was recomputed here.
@@ -274,7 +274,7 @@ The table also displays what the framework does and does not explain. The *spin 
 **Transcribed, not derived.**
 
 - That the bracket is *forced* by the conjunction of locality, positivity and Lorentz invariance. The article exhibits the failure of the wrong choices; it does not prove that no other structure evades it.
-- The covariant identities $\{\tilde{Ξ}_{\mathrm{fop}},\bar{\tilde{Ξ}}_{\mathrm{fop}}\}=(\mathcal{D}+k_m)\mathcal{G}_{\mathrm A}$ and $[\tilde{Ξ}_{\mathrm{fop}},\bar{\tilde{Ξ}}_{\mathrm{fop}}]=(\mathcal{D}+k_m)G_{\mathrm{S}}$, and the Pauli–Jordan-type and symmetric kernels.
+- The covariant identities $\{\tilde{Ξ}_{\mathrm{fop}},\bar{\tilde{Ξ}}_{\mathrm{fop}}\}=(\mathcal{D}+2\pi\nu_m)\mathcal{G}_{\mathrm A}$ and $[\tilde{Ξ}_{\mathrm{fop}},\bar{\tilde{Ξ}}_{\mathrm{fop}}]=(\mathcal{D}+2\pi\nu_m)G_{\mathrm{S}}$, and the Pauli–Jordan-type and symmetric kernels.
 - The scalar-field and Maxwell-field contrast, and the standard microcausality argument for integer spin.
 
 **Gap, left visible.**

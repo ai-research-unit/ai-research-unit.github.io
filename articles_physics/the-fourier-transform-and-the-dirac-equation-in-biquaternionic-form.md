@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The Dirac operator is mixed in position space and pure in momentum space, and the transform is the difference. *The Dirac Equation in Biquaternionic Form* writes the dynamics as the chiral pair $\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$. One term of the operator there is the anti-Hermitian gradient and the other is the Hermitian mass coefficient, so the two Hermiticity characters stand in the same equation with opposite signs of character. Nothing in position space separates them, because the operator there is differential and its character is a statement about its adjoint rather than about a multiplier.
+The Dirac operator is mixed in position space and pure in momentum space, and the transform is the difference. *The Dirac Equation in Biquaternionic Form* writes the dynamics as the chiral pair $\tilde\nabla_\Phi\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R$. One term of the operator there is the anti-Hermitian gradient and the other is the Hermitian mass coefficient, so the two Hermiticity characters stand in the same equation with opposite signs of character. Nothing in position space separates them, because the operator there is differential and its character is a statement about its adjoint rather than about a multiplier.
 
-Under the transform the separation is a multiplication by one central $i$. The symbol rule of *Derivatives, Fields and Transforms* sends $\partial/\partial R_{\imath}$ to $2\pi\rho\,\omega_{\imath}$ with $\rho=i$, so the gradient becomes $i\tilde K_\Phi$ and its conjugate $i\tilde K_\Phi^{\natural}$. Multiplication by the central $i$ carries an anti-Hermitian element to a Hermitian one. The momentum-space operator is therefore Hermitian-valued everywhere, and the mixed character of the position-space operator is gone.
+Under the transform the separation is a multiplication by one central $i$. The symbol rule of *Derivatives, Fields and Transforms* sends $\partial/\partial R_{\imath}$ to $2\pi\rho\,\omega_{\imath}$ with $\rho=i$, so the gradient becomes $2\pi i\tilde\Upsilon_\Phi$ and its conjugate $2\pi i\tilde\Upsilon_\Phi^{\natural}$. Multiplication by the central $i$ carries an anti-Hermitian element to a Hermitian one. The momentum-space operator is therefore Hermitian-valued everywhere, and the mixed character of the position-space operator is gone.
 
 Three statements organise the article. The light cone is exactly the locus of idempotent momenta, and the idempotent it produces is $\tfrac12(e_t-i\hat n\cdot\vec e)$ with $\hat n$ the momentum's direction; the two signs of $\hat n$ are the two massless ideals. The transform preserves the Hermitian form and breaks the quaternionic norm, so the indefinite quadratic structure survives on the symbol as a level set and not on fields as a norm. And the mechanism behind both is one coefficient: the sector change from $\mathbb{B}_\Phi$ to $\mathbb{B}_\Psi$ is the $i$ in the multiplier, never a change in the image of a function.
 
@@ -25,20 +25,20 @@ $$
 On a plane wave the two identities used throughout are
 
 $$
-\tilde\nabla_\Phi e^{-i\theta_{\mathrm{pwp}}}=i\tilde K_\Phi e^{-i\theta_{\mathrm{pwp}}},
+\tilde\nabla_\Phi e^{-i\theta_{\mathrm{pwp}}}=2\pi i\tilde\Upsilon_\Phi e^{-i\theta_{\mathrm{pwp}}},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}e^{-i\theta_{\mathrm{pwp}}}=i\tilde K_\Phi^{\natural}e^{-i\theta_{\mathrm{pwp}}},
+(\tilde\nabla_\Phi)^{\natural}e^{-i\theta_{\mathrm{pwp}}}=2\pi i\tilde\Upsilon_\Phi^{\natural}e^{-i\theta_{\mathrm{pwp}}},
 \qquad
-\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h},
+\theta_{\mathrm{pwp}}=\frac{p\cdot x}{h},
 $$
 
-with $\tilde K_\Phi=\frac{2\pi \tilde P_\Phi}{h}=ik_t'e_t+\vec k_\Phi$ and $k_t'=\omega/c$. The four sector statements used below are $\tilde K_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian, $i\tilde K_\Phi\in\mathbb{B}_\Psi$ and Hermitian, $k_me_t\in\mathbb{B}_\Psi$ and Hermitian, and $\frac{2\pi iS}{h}\in\mathbb{B}_\Phi$ and anti-Hermitian. The transform's constant and the sign of its exponent depend on the convention, and no statement below depends on either.
+with $\tilde\Upsilon_\Phi=\frac{\tilde P_\Phi}{h}=i\nu_t'e_t+\vec\nu_\Phi$ and $2\pi\nu_t'=\omega/c$. The four sector statements used below are $\tilde\Upsilon_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian, $2\pi i\tilde\Upsilon_\Phi\in\mathbb{B}_\Psi$ and Hermitian, $\nu_me_t\in\mathbb{B}_\Psi$ and Hermitian, and $\frac{2\pi iS}{h}\in\mathbb{B}_\Phi$ and anti-Hermitian. The transform's constant and the sign of its exponent depend on the convention, and no statement below depends on either.
 
 ## The Operator's Symbol
 
 ### The Mixed Operator in Position Space
 
-The gradient's character and the mass's are opposite, and the operator of the pair holds both. The gradient is anti-Hermitian for the pairing, $(\tilde\nabla_\Phi)^{*}=-(\tilde\nabla_\Phi)^{\natural}$, so left multiplication by $\tilde\nabla_\Phi$ is anti-self-adjoint and multiplication by $(\tilde\nabla_\Phi)^{\natural}$ is self-adjoint. The mass coefficient $k_m$ is a real central number, hence Hermitian, and it multiplies the field without differentiating it.
+The gradient's character and the mass's are opposite, and the operator of the pair holds both. The gradient is anti-Hermitian for the pairing, $(\tilde\nabla_\Phi)^{*}=-(\tilde\nabla_\Phi)^{\natural}$, so left multiplication by $\tilde\nabla_\Phi$ is anti-self-adjoint and multiplication by $(\tilde\nabla_\Phi)^{\natural}$ is self-adjoint. The mass coefficient $\nu_m$ is a real central number, hence Hermitian, and it multiplies the field without differentiating it.
 
 So the position-space operator has no single Hermiticity character. A symbol is a multiplier, and a multiplier's character is decided by its sector. The position-space operator is not a multiplier at all: it is a differential operator, and its character is a statement about its adjoint. That is why the mixed character is invisible there. It is not hidden; it has no place to live.
 
@@ -47,14 +47,14 @@ So the position-space operator has no single Hermiticity character. A symbol is 
 In momentum space the operator is a multiplier, and every entry of it is Hermitian.
 
 $$
-\mathcal{D}(\tilde K_\Phi)=
+\mathcal{D}(\tilde\Upsilon_\Phi)=
 \begin{pmatrix}
--k_m & i\tilde K_\Phi\\[2pt]
-i\tilde K_\Phi^{\natural} & -k_m
+-2\pi\nu_m & 2\pi i\tilde\Upsilon_\Phi\\[2pt]
+2\pi i\tilde\Upsilon_\Phi^{\natural} & -2\pi\nu_m
 \end{pmatrix},
 $$
 
-acting on the column of the two parts. The diagonal entries are the real central number $-k_m$, Hermitian. The off-diagonal entries are $i\tilde K_\Phi$ and its $\natural$-conjugate. The first is $-k_t'e_t+i\vec k_\Phi$: its temporal coefficient is real and its spatial ones are imaginary. The coefficient conjugation reverses the imaginary ones and the quaternion conjugation reverses the spatial sign, so the two together return every coefficient to itself, $(i\tilde K_\Phi)^{*}=i\tilde K_\Phi$, and the entry equals its own star. The second entry, $-k_t'e_t-i\vec k_\Phi$, is the same case with the signs of the spatial coefficients exchanged. The check is exact rather than numerical, and it was also run: over four random momenta with $k_m=0.7$, $\lvert(i\tilde K_\Phi-k_m)^{*}-(i\tilde K_\Phi-k_m)\rvert$ came out $0.0$ at every one.
+acting on the column of the two parts. The diagonal entries are the real central number $-\nu_m$, Hermitian. The off-diagonal entries are $2\pi i\tilde\Upsilon_\Phi$ and its $\natural$-conjugate. The first is $-\nu_t'e_t+i\vec\nu_\Phi$: its temporal coefficient is real and its spatial ones are imaginary. The coefficient conjugation reverses the imaginary ones and the quaternion conjugation reverses the spatial sign, so the two together return every coefficient to itself, $(2\pi i\tilde\Upsilon_\Phi)^{*}=2\pi i\tilde\Upsilon_\Phi$, and the entry equals its own star. The second entry, $-\nu_t'e_t-i\vec\nu_\Phi$, is the same case with the signs of the spatial coefficients exchanged. The check is exact rather than numerical, and it was also run: over four random momenta with $2\pi\nu_m=0.7$, $\lvert(2\pi i\tilde\Upsilon_\Phi-\nu_m)^{*}-(2\pi i\tilde\Upsilon_\Phi-\nu_m)\rvert$ came out $0.0$ at every one.
 
 That is what "pure $\mathbb{B}_\Psi$" means. It is not that the operator is a single element of the Hermitian sector; it is that each of its entries is. The Hermitian sector is a real subspace, not an algebra, so a matrix of its elements is the only object that could be called a pure symbol, and this one is.
 
@@ -71,30 +71,30 @@ This is the mechanism the denial requires. A reader who expects the transform to
 On the light cone the wave-number element squares to twice its own temporal part times itself.
 
 $$
-\tilde K_\Phi^{2}-2ik_t'\,\tilde K_\Phi
-=\bigl(-k_t'^{2}e_t+2ik_t'\vec k_\Phi-k_\Phi^{2}e_t\bigr)-\bigl(-2k_t'^{2}e_t+2ik_t'\vec k_\Phi\bigr)
-=\bigl(k_t'^{2}-k_\Phi^{2}\bigr)e_t .
+\tilde\Upsilon_\Phi^{2}-2i\nu_t'\,\tilde\Upsilon_\Phi
+=\bigl(-\nu_t'^{2}e_t+2i\nu_t'\vec\nu_\Phi-\nu_{\Phi}^{2}e_t\bigr)-\bigl(-2\nu_t'^{2}e_t+2i\nu_t'\vec\nu_\Phi\bigr)
+=\bigl(\nu_t'^{2}-\nu_{\Phi}^{2}\bigr)e_t .
 $$
 
-The right side is the interval: it vanishes exactly where the norm $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_t'^{2}+k_\Phi^{2}$ vanishes, which is the light cone. So the identity $\tilde K_\Phi^{2}=2ik_t'\tilde K_\Phi$ holds on the cone and only there.
+The right side is the interval: it vanishes exactly where the norm $\tilde\Upsilon_\Phi\tilde\Upsilon_\Phi^{\natural}=-\nu_t'^{2}+\nu_{\Phi}^{2}$ vanishes, which is the light cone. So the identity $\tilde\Upsilon_\Phi^{2}=2i\nu_t'\tilde\Upsilon_\Phi$ holds on the cone and only there.
 
 ### The Projector
 
 Divide by the temporal part and the wave-number element becomes a projector. Put
 
 $$
-\tilde\Pi_{\mathrm{id}}=\frac{\tilde K_\Phi}{2ik_t'}=\tfrac12\bigl(e_t-i\hat n\cdot\vec e\bigr),
+\tilde\Pi_{\mathrm{id}}=\frac{\tilde\Upsilon_\Phi}{2i2\pi\nu_t'}=\tfrac12\bigl(e_t-i\hat n\cdot\vec e\bigr),
 \qquad
-\hat n=\frac{\vec k_\Phi}{k_t'},
+\hat n=\frac{2\pi\vec\nu_\Phi}{2\pi\nu_t'},
 $$
 
 where $\hat n$ is a real unit vector on the cone. The defect of idempotency is the interval, in closed form:
 
 $$
-\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{k_t'^{2}-k_\Phi^{2}}{4k_t'^{2}}\,e_t .
+\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{2\pi\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}}{42\pi\nu_t'^{2}}\,e_t .
 $$
 
-The computation is one line from the identity above, and the check covered five random null momenta: $\lvert\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}\rvert$ came out at most $5.6\times10^{-17}$, $\lvert2\,\mathrm{Sc}\,\tilde\Pi_{\mathrm{id}}-1\rvert$ at most $1.1\times10^{-16}$, and the same defect formula held off the cone to $2.8\times10^{-17}$ at five further momenta. One off-cone instance, $k_t'=1$ and $k_\Phi=0.7$, gives a defect of $0.1275$.
+The computation is one line from the identity above, and the check covered five random null momenta: $\lvert\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}\rvert$ came out at most $5.6\times10^{-17}$, $\lvert2\,\mathrm{Sc}\,\tilde\Pi_{\mathrm{id}}-1\rvert$ at most $1.1\times10^{-16}$, and the same defect formula held off the cone to $2.8\times10^{-17}$ at five further momenta. One off-cone instance, $2\pi\nu_t'=1$ and $2\pi\nu_{\Phi}=0.7$, gives a defect of $0.1275$.
 
 **A defect that is a central multiple of $e_t$ is the sharpest form the statement can take.** Off the cone the object is not a projector by an amount that is exactly the interval over four times the frequency squared. On the cone it is a projector of trace one, hence of rank one: a single surviving direction, and no more.
 
@@ -114,19 +114,19 @@ with the product checked at $5.6\times10^{-17}$ over the same five momenta. The 
 
 ### The Generalisation of a Corpus Display
 
-*Degenerate Solutions of the Biquaternionic Dirac Equation* writes a null four-vector of the material sector as $i\kappa e_t+\kappa\vec n=2i\kappa\,\tilde\Pi_{\mathrm{id}}(-\vec n)$, for a real unit $\vec n$ and a real $\kappa$, where $\tilde\Pi_{\mathrm{id}}(\pm\vec n)=\tfrac12(e_t\pm i\vec n)$ is that article's name for the two projectors written $\tilde\Pi_{\mathrm{id},\pm}$ here. That display is the case $\kappa=k_t'$ of the projector above. What the present section adds is the converse: the light cone is not merely a locus where such a display can be written, it is exactly the locus where the divided wave-number element is idempotent, and the defect off the cone is the interval.
+*Degenerate Solutions of the Biquaternionic Dirac Equation* writes a null four-vector of the material sector as $i\kappa e_t+\kappa\vec n=2i\kappa\,\tilde\Pi_{\mathrm{id}}(-\vec n)$, for a real unit $\vec n$ and a real $\kappa$, where $\tilde\Pi_{\mathrm{id}}(\pm\vec n)=\tfrac12(e_t\pm i\vec n)$ is that article's name for the two projectors written $\tilde\Pi_{\mathrm{id},\pm}$ here. That display is the case $\kappa=\nu_t'$ of the projector above. What the present section adds is the converse: the light cone is not merely a locus where such a display can be written, it is exactly the locus where the divided wave-number element is idempotent, and the defect off the cone is the interval.
 
 ### The Two Massless Ideals
 
-The two members of the pair annihilate the two complementary ideals. With $\hat n$ the direction of $\vec k_\Phi$,
+The two members of the pair annihilate the two complementary ideals. With $\hat n$ the direction of $\vec\nu_\Phi$,
 
 $$
-\tilde K_\Phi=2ik_t'\,\tilde\Pi_{\mathrm{id},-},
+\tilde\Upsilon_\Phi=2i\nu_t'\,\tilde\Pi_{\mathrm{id},-},
 \qquad
-\tilde K_\Phi^{\natural}=2ik_t'\,\tilde\Pi_{\mathrm{id},+} ,
+\tilde\Upsilon_\Phi^{\natural}=2i\nu_t'\,\tilde\Pi_{\mathrm{id},+} ,
 $$
 
-so the massless member $i\tilde K_\Phi\,w=0$ is $\tilde\Pi_{\mathrm{id},-w}=0$, whose solutions are $w=\tilde\Pi_{\mathrm{id},+}\,u$ for arbitrary $u$; and the conjugate member has the mirror statement. The check covered four null momenta: $\lvert i\tilde K_\Phi\,(\tilde\Pi_{\mathrm{id},+u})\rvert$ came out at most $1.2\times10^{-16}$ and $\lvert i\tilde K_\Phi^{\natural}(\tilde\Pi_{\mathrm{id},-u})\rvert$ at most $2.5\times10^{-16}$, while the control $\lvert i\tilde K_\Phi(\tilde\Pi_{\mathrm{id},-u})\rvert$ was $2.01$.
+so the massless member $2\pi i\tilde\Upsilon_\Phi\,w=0$ is $\tilde\Pi_{\mathrm{id},-w}=0$, whose solutions are $w=\tilde\Pi_{\mathrm{id},+}\,u$ for arbitrary $u$; and the conjugate member has the mirror statement. The check covered four null momenta: $\lvert 2\pi i\tilde\Upsilon_\Phi\,(\tilde\Pi_{\mathrm{id},+u})\rvert$ came out at most $1.2\times10^{-16}$ and $\lvert 2\pi i\tilde\Upsilon_\Phi^{\natural}(\tilde\Pi_{\mathrm{id},-u})\rvert$ at most $2.5\times10^{-16}$, while the control $\lvert 2\pi i\tilde\Upsilon_\Phi(\tilde\Pi_{\mathrm{id},-u})\rvert$ was $2.01$.
 
 The two solution spaces are the two complementary minimal left ideals of the algebra, and the sign of the momentum's direction selects which member gets which. The parent's warning about values is not in play here: a value is a right ideal, and the kernel of a left multiplication by a projector is a left ideal. These are different objects, and the article states the ideal that the kernel actually is.
 
@@ -161,14 +161,14 @@ The consequence for the algebra is exact. The quaternionic norm is indefinite �
 On the symbol both forms are evaluable, and they disagree. For a wave-number element,
 
 $$
-\langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2},
+\langle\tilde\Upsilon_\Phi\rangle_\natural=-\nu_t'^{2}+\nu_{\Phi}^{2},
 \qquad
-\mathrm{Sc}\bigl(\tilde K_\Phi^{*}\tilde K_\Phi\bigr)=k_t'^{2}+k_\Phi^{2}.
+\mathrm{Sc}\bigl(\tilde\Upsilon_\Phi^{*}\tilde\Upsilon_\Phi\bigr)=\nu_t'^{2}+\nu_{\Phi}^{2}.
 $$
 
-The first is indefinite and its level sets are hyperboloids; the second is positive and its level sets are spheres. On the mode $k_\Phi=3$, $k_t'=5$ the first is $-16$ and the second is $34$; the first takes the value $-k_m^{2}$ at $k_m=4$, so that mode lies on the shell of a particle of wave-number mass $4$, and the second form knows nothing about it. Only the hyperboloid terminates on the mass shell. *Wave–Particle Duality and the Fourier Transform* states this comparison for the general equation; the Dirac case adds the value of the level and the structure at its degenerate point.
+The first is indefinite and its level sets are hyperboloids; the second is positive and its level sets are spheres. On the mode $2\pi\nu_{\Phi}=3$, $2\pi\nu_t'=5$ the first is $-16$ and the second is $34$; the first takes the value $-\nu_m^{2}$ at $2\pi\nu_m=4$, so that mode lies on the shell of a particle of wave-number mass $4$, and the second form knows nothing about it. Only the hyperboloid terminates on the mass shell. *Wave–Particle Duality and the Fourier Transform* states this comparison for the general equation; the Dirac case adds the value of the level and the structure at its degenerate point.
 
-The Dirac addition is the value and the degeneration. The level is $-k_m^{2}$, so the shell the solutions live on is the level set of the symbol's own quaternionic norm at minus the mass squared. At $k_m=0$ the level is $0$, and the level set is the cone of the previous section, where the symbol divides into the two idempotents. **The mass shell of the Dirac equation is therefore a level set at nonzero mass and the idempotent variety at zero mass**, and the two descriptions are one description at two values of one number.
+The Dirac addition is the value and the degeneration. The level is $-\nu_m^{2}$, so the shell the solutions live on is the level set of the symbol's own quaternionic norm at minus the mass squared. At $\nu_m=0$ the level is $0$, and the level set is the cone of the previous section, where the symbol divides into the two idempotents. **The mass shell of the Dirac equation is therefore a level set at nonzero mass and the idempotent variety at zero mass**, and the two descriptions are one description at two values of one number.
 
 This is why the corpus says the interval is the symbol. A quadratic form that cannot survive as a norm on fields survives as a level set on the multiplier, and the transform is what makes the multiplier the only object it can be evaluated on.
 
@@ -190,27 +190,27 @@ Two adjacent questions belong to other articles. A symbol that depends on positi
 
 In position space the Dirac operator is mixed: the gradient is anti-Hermitian and the mass coefficient is Hermitian, and the two stand in one pair with opposite characters. Under the transform each derivative becomes multiplication by the central $i$ times the wave-number element, and multiplication by $i$ carries the anti-Hermitian symbol to a Hermitian one. The momentum-space operator is therefore Hermitian in every entry, and that is what a pure $\mathbb{B}_\Psi$ symbol means.
 
-The light cone is exactly the locus where $\tilde K_\Phi/(2ik_t')$ is idempotent. The defect of idempotency is $-\frac{k_t'^{2}-k_\Phi^{2}}{4k_t'^{2}}e_t$, a central multiple of the interval, and on the cone the projector is $\tfrac12(e_t-i\hat n\cdot\vec e)$ of trace one, with the other sign of $\hat n$ giving the orthogonal partner. The two members of the massless pair have the two complementary minimal left ideals for their solution spaces, and the sign of the momentum's direction selects which is which.
+The light cone is exactly the locus where $\tilde\Upsilon_\Phi/(2i\nu_t')$ is idempotent. The defect of idempotency is $-\frac{\nu_t'^{2}-\nu_{\Phi}^{2}}{4\nu_t'^{2}}e_t$, a central multiple of the interval, and on the cone the projector is $\tfrac12(e_t-i\hat n\cdot\vec e)$ of trace one, with the other sign of $\hat n$ giving the orthogonal partner. The two members of the massless pair have the two complementary minimal left ideals for their solution spaces, and the sign of the momentum's direction selects which is which.
 
-The transform preserves the Hermitian form, by Plancherel, and breaks the quaternionic norm, whose scalar part is a holomorphic quadratic form: the summed scalar part of the norm of a real 64-sample field went from $56.651597$ to $-6.686526$, with the exact identity $\sum_k\hat c_k^{2}=\sum_nc_nc_{-n}$ holding to $1.6\times10^{-13}$. So the indefinite quadratic structure lives on the symbol, where it is a level set: the Dirac shell is the level $-k_m^{2}$, and at $k_m=0$ that level set is the idempotent variety.
+The transform preserves the Hermitian form, by Plancherel, and breaks the quaternionic norm, whose scalar part is a holomorphic quadratic form: the summed scalar part of the norm of a real 64-sample field went from $56.651597$ to $-6.686526$, with the exact identity $\sum_k\hat c_k^{2}=\sum_nc_nc_{-n}$ holding to $1.6\times10^{-13}$. So the indefinite quadratic structure lives on the symbol, where it is a level set: the Dirac shell is the level $-\nu_m^{2}$, and at $\nu_m=0$ that level set is the idempotent variety.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The wave-number element; anti-Hermitian, in $\mathbb{B}_\Phi$ |
-| $i\tilde K_\Phi$ | The symbol of the gradient; Hermitian, in $\mathbb{B}_\Psi$ |
-| $\mathcal{D}(\tilde K_\Phi)$ | The pair's symbol; every entry Hermitian |
-| $\tilde K_\Phi^{2}-2ik_t'\tilde K_\Phi=(k_t'^{2}-k_\Phi^{2})e_t$ | The identity that holds on the light cone only |
-| $\tilde\Pi_{\mathrm{id}}=\tilde K_\Phi/(2ik_t')=\tfrac12(e_t-i\hat n\cdot\vec e)$ | The idempotent of a null momentum; rank one |
-| $\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{k_t'^{2}-k_\Phi^{2}}{4k_t'^{2}}e_t$ | The defect off the cone; the interval |
+| $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The wave-number element; anti-Hermitian, in $\mathbb{B}_\Phi$ |
+| $2\pi i\tilde\Upsilon_\Phi$ | The symbol of the gradient; Hermitian, in $\mathbb{B}_\Psi$ |
+| $\mathcal{D}(\tilde\Upsilon_\Phi)$ | The pair's symbol; every entry Hermitian |
+| $\tilde\Upsilon_\Phi^{2}-2i\nu_t'\tilde\Upsilon_\Phi=(\nu_t'^{2}-\nu_{\Phi}^{2})e_t$ | The identity that holds on the light cone only |
+| $\tilde\Pi_{\mathrm{id}}=\tilde\Upsilon_\Phi/(2i2\pi\nu_t')=\tfrac12(e_t-i\hat n\cdot\vec e)$ | The idempotent of a null momentum; rank one |
+| $\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{2\pi\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}}{42\pi\nu_t'^{2}}e_t$ | The defect off the cone; the interval |
 | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\hat n\cdot\vec e)$ | The two orthogonal projectors; $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ |
-| $\tilde K_\Phi=2ik_t'\tilde\Pi_{\mathrm{id},-}$, $\tilde K_\Phi^{\natural}=2ik_t'\tilde\Pi_{\mathrm{id},+}$ | The two massless members |
+| $\tilde\Upsilon_\Phi=2i\nu_t'\tilde\Pi_{\mathrm{id},-}$, $\tilde\Upsilon_\Phi^{\natural}=2i\nu_t'\tilde\Pi_{\mathrm{id},+}$ | The two massless members |
 | $\int\mathrm{Sc}(f^{*}g)$ | The Hermitian form; preserved by the transform |
 | $\mathrm{Sc}(ff^{\natural})=\sum_\alpha c_\alpha^{2}$ | The quaternionic norm's scalar part; not preserved |
 | $\sum_k\hat c_k^{2}=\sum_nc_nc_{-n}$ | What the transform makes of it; the reflected overlap |
-| $\langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2}$ | The indefinite form on the symbol; level sets are shells |
-| $\mathrm{Sc}(\tilde K_\Phi^{*}\tilde K_\Phi)=k_t'^{2}+k_\Phi^{2}$ | The positive form on the symbol; level sets are spheres |
+| $\langle\tilde\Upsilon_\Phi\rangle_\natural=-\nu_t'^{2}+\nu_{\Phi}^{2}$ | The indefinite form on the symbol; level sets are shells |
+| $\mathrm{Sc}(\tilde\Upsilon_\Phi^{*}\tilde\Upsilon_\Phi)=\nu_t'^{2}+\nu_{\Phi}^{2}$ | The positive form on the symbol; level sets are spheres |
 
 ## Further Reading
 

@@ -11,7 +11,7 @@ $$
 
 an element of $\mathbb{B}$ at each point of the $(r,\vec p)$ space. Its zeroth moment in $\vec p$ is $\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$, its first moment is the current density times the mass, and its $h\to0$ limit is the phase-space density of the polar-form fluid on the mass shell.
 
-The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
+The angle is $\theta_{\mathrm{spa}}=2\pi\vec\nu_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
 
 The article's claim is a claim about what is written in the letters, not about new physics. The transform, its normalisation, its marginals, its negativity and its $\frac{h}{2\pi}$-expansion are all standard. What the corpus supplies is a definition in which the Wigner object is an element and not a matrix, and a reading of its two parts as the two quadratures of one angle. The article states both and is explicit about which is which.
 
@@ -159,7 +159,7 @@ which is the four-current with the $i$ where the corpus's letters put it. A read
 
 ### The check
 
-The marginals were checked numerically on a Gaussian packet, and the residuals are of the order of the grid error. With the position in units of $1/k_m$ and the momentum in units of $mc$, position width $\sigma=0.5$, mean position $x_0=0.3$ and mean momentum $p_0=1.7$, on a grid of $241$ positions, $301$ momenta and $2001$ relative coordinates spanning $\lvert s\rvert\le10$:
+The marginals were checked numerically on a Gaussian packet, and the residuals are of the order of the grid error. With the position in units of $1/\nu_m$ and the momentum in units of $mc$, position width $\sigma=0.5$, mean position $x_0=0.3$ and mean momentum $p_0=1.7$, on a grid of $241$ positions, $301$ momenta and $2001$ relative coordinates spanning $\lvert s\rvert\le10$:
 
 | quantity | value |
 |---|---|
@@ -261,7 +261,7 @@ The identity is exact for the Gaussian only. For a general state the second mome
 
 ### The numbers
 
-Both statements were checked numerically on the Gaussian used for the marginal table. With the position in units of $1/k_m$, $\sigma=0.5$:
+Both statements were checked numerically on the Gaussian used for the marginal table. With the position in units of $1/\nu_m$, $\sigma=0.5$:
 
 | quantity | value |
 |---|---|
@@ -270,11 +270,11 @@ Both statements were checked numerically on the Gaussian used for the marginal t
 | $Q_{\mathrm{qnt}}$ at the centre, from finite differences | $0.997\,781\,1$ |
 | $\mathrm{Var}(p)/m$ | $0.999\,978\,2$ |
 
-The two numerical values agree to about $2\times10^{-3}$, which is the accuracy of a second difference on a grid of spacing $0.033$; the two exact values agree identically, since both are $\frac{h^{2}}{4\pi^{2}}/(4\sigma^{2})$ with the position in units of $1/k_m$. The agreement is the check that the Wigner normalisation and the quantum potential's sign are consistent: a plus sign on the quantum potential would give $-1$ in the third row, and the discrepancy would be visible at once.
+The two numerical values agree to about $2\times10^{-3}$, which is the accuracy of a second difference on a grid of spacing $0.033$; the two exact values agree identically, since both are $\frac{h^{2}}{4\pi^{2}}/(4\sigma^{2})$ with the position in units of $1/\nu_m$. The agreement is the check that the Wigner normalisation and the quantum potential's sign are consistent: a plus sign on the quantum potential would give $-1$ in the third row, and the discrepancy would be visible at once.
 
 ### Negativity, and what it forbids
 
-**The Wigner element of a non-Gaussian pure state is negative somewhere, and the negativity is the precise sense in which the fluid picture is incomplete.** For the superposition $(\lvert0\rangle+\lvert1\rangle)/\sqrt2$ of the first two oscillator levels, with lengths in units of $1/k_m$, momenta in units of $mc$ and energies in units of $hf_{\mathrm{frq}}$:
+**The Wigner element of a non-Gaussian pure state is negative somewhere, and the negativity is the precise sense in which the fluid picture is incomplete.** For the superposition $(\lvert0\rangle+\lvert1\rangle)/\sqrt2$ of the first two oscillator levels, with lengths in units of $1/\nu_m$, momenta in units of $mc$ and energies in units of $hf_{\mathrm{frq}}$:
 
 | quantity | value |
 |---|---|

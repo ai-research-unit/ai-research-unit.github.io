@@ -130,15 +130,15 @@ The framework's mass convention is used here rather than merely cited, because i
 
 **The series mass term.** As *The Dirac Equation in Biquaternionic Form* fixes, the Dirac mass is linear and sits on the other side of the element,
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}=k_m\,\Gamma\,\overline{\tilde{Ξ}} ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}=2\pi\nu_m\,\Gamma\,\overline{\tilde{Ξ}} ,
 $$
 with $\Gamma$ the chirality and $\overline{\tilde{Ξ}}$ the coefficient conjugate. The gradient left-multiplies, and the mass is the **exchange of the two values**: the map that carries one value into the other, scaled by $m$. The scaling cannot supply the exchange — a central scalar multiplies the two values by the same number and stays diagonal — so the exchange is a separate structure, and the display shows it on the other side of the field.
 
 **The exchange in the arena.** In the arena the chirality is a product of invertibles, and the coefficient conjugation fixes it. The exchange must therefore be carried by a right multiplication. Of the units left after the chirality's own $\vec e_x$ and $\vec e_z$, one exchanges the two values and the other keeps them: $\vec e_y$ exchanges and $\vec e_z$ keeps. The exchanging one is the right factor of the arena's second generator, which is why the arena's mass direction is $\vec e_y$. The arena's mass equation is therefore
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}=k_m\overline{\tilde{Ξ}}\,\vec e_y ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}=2\pi\nu_m\overline{\tilde{Ξ}}\,\vec e_y ,
 $$
-and the label balances. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length. The left side keeps the value of $\tilde{Ξ}$; the right side conjugates, which keeps it, and then multiplies on the right by $\vec e_y$, which exchanges it. The equation pairs the two values, and no coefficient could do the same.
+and the label balances. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length. The left side keeps the value of $\tilde{Ξ}$; the right side conjugates, which keeps it, and then multiplies on the right by $\vec e_y$, which exchanges it. The equation pairs the two values, and no coefficient could do the same.
 
 **The mass bilinear.** The mass bilinear of the dictionary is
 $$

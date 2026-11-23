@@ -4,15 +4,15 @@
 
 The coupled variational parent ends with a precise complaint and this article answers the part of it that frequency space can answer. *The Lagrangian and the Coupled Proca Equation* states the action, proves the mass term's exact invariance, states the field term's exact non-invariance, and records that the symmetric pairing $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$ is invariant under the phase "only when the phase's square is one". **The complaint is that the algebra's single field strength cannot carry a complex bivector's Lagrangian.** The article's first finding is the frequency-space form of that complaint, and it is one number.
 
-At a mode the mass term is $\tfrac12k_m^{2}A^{\dagger}A$, a sesquilinear form, invariant under $A\mapsto e^{i\alpha}A$: measured at $0.169050$ for every $\alpha$ in $\{0,\,0.7,\,1.9,\,3.1\}$. The field term is $\tfrac12[kA]^{2}$, a bilinear form, and it acquires $e^{2i\alpha}$: the ratio's argument is $1.400000$, $-2.483185$ and $-0.083185$, which is $2\alpha$ modulo $2\pi$. So the mismatch that the parent states as "the phase's square must be one" is a phase factor of $2\alpha$ on one term and $1$ on the other, and it is exact.
+At a mode the mass term is $\tfrac12\nu_m^{2}A^{\dagger}A$, a sesquilinear form, invariant under $A\mapsto e^{i\alpha}A$: measured at $0.169050$ for every $\alpha$ in $\{0,\,0.7,\,1.9,\,3.1\}$. The field term is $\tfrac12[kA]^{2}$, a bilinear form, and it acquires $e^{2i\alpha}$: the ratio's argument is $1.400000$, $-2.483185$ and $-0.083185$, which is $2\alpha$ modulo $2\pi$. So the mismatch that the parent states as "the phase's square must be one" is a phase factor of $2\alpha$ on one term and $1$ on the other, and it is exact.
 
-The parent's coupled reading is explicit: on the coupled carrier the mass term does not break the gauge symmetry, so the constraint is not the residue of a broken symmetry; it says that the longitudinal part is determined by the transverse part through the mass. In frequency space the determination is a division: $a_t'=\vec k_\Phi\cdot\vec a/k_t'$, verified to $8\times10^{-17}$ on two test amplitudes. The constraint is one amplitude expressed through three.
+The parent's coupled reading is explicit: on the coupled carrier the mass term does not break the gauge symmetry, so the constraint is not the residue of a broken symmetry; it says that the longitudinal part is determined by the transverse part through the mass. In frequency space the determination is a division: $a_t'=2\pi\vec\nu_\Phi\cdot\vec a/\nu_t'$, verified to $8\times10^{-17}$ on two test amplitudes. The constraint is one amplitude expressed through three.
 
-Along the shifted four-momentum the form is $\tfrac12k_m^{2}(A\!\cdot\!A)$, so its magnitude is $\tfrac12k_m^{2}$ — $0.245000000$ at $k_m=0.7$ — at every momentum tested, and the coupling's only effect is the sign, which follows $\pi^{2}$. The coupling cannot change what the constraint costs, and that is the frequency-space form of the parent's "the constraint is a consequence and not an imposed condition".
+Along the shifted four-momentum the form is $\tfrac12\nu_m^{2}(A\!\cdot\!A)$, so its magnitude is $\tfrac12\nu_m^{2}$ — $0.245000000$ at $2\pi\nu_m=0.7$ — at every momentum tested, and the coupling's only effect is the sign, which follows $\pi^{2}$. The coupling cannot change what the constraint costs, and that is the frequency-space form of the parent's "the constraint is a consequence and not an imposed condition".
 
-The coefficient of $A_0^{2}$ is $\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$, with no $\pi_t^{2}$: measured at $1.065000000$ for $\pi_t=0.9,\,1.6,\,2.4$ while the first spatial coefficient moves from $0.060$ to $0.935$ to $2.535$. **A covariant derivative cannot put a time derivative on $A_0$**, because $F_{0\eta}$ has none.
+The coefficient of $A_0^{2}$ is $\tfrac12(\lvert\vec\pi\rvert^{2}+\nu_m^{2})$, with no $\pi_t^{2}$: measured at $1.065000000$ for $\pi_t=0.9,\,1.6,\,2.4$ while the first spatial coefficient moves from $0.060$ to $0.935$ to $2.535$. **A covariant derivative cannot put a time derivative on $A_0$**, because $F_{0\eta}$ has none.
 
-The charge current carries no mass, because it is built from $i\tilde\nabla_{\mathrm{gco},\Phi}$ and the mass is not in the gradient; the energy carries $k_m^{2}$, because twice the scalar part is the mass term. The charge is the phase's and the energy is the scale's, and the article states the two as one sentence about which term of the action each one comes from.
+The charge current carries no mass, because it is built from $i\tilde\nabla_{\mathrm{gco},\Phi}$ and the mass is not in the gradient; the energy carries $\nu_m^{2}$, because twice the scalar part is the mass term. The charge is the phase's and the energy is the scale's, and the article states the two as one sentence about which term of the action each one comes from.
 
 No sector is exchanged. The action is real, the form at a mode is a complex number, and the phase is a coordinate. **There is no new equation and no new current**; the action, the equation and both currents are the parent's.
 
@@ -23,17 +23,17 @@ The algebra, the products, the two forms, the invertibles and the sectors are th
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath}\longmapsto i\pi_{\imath} ,
 \qquad
-\pi_{\imath}=\frac{h}{2\pi} k_{\imath}-q A_{\imath} ,
+\pi_{\imath}=h\,2\pi\nu_{\imath}-q A_{\imath} ,
 \qquad
-k_t'=\frac{\omega}{c} ,
+2\pi\nu_t'=\frac{\omega}{c} ,
 \qquad
-k^{2}=k_t'^{2}-\vec k_\Phi^{2}.
+k^{2}=2\pi\nu_t'^{2}-2\pi\vec\nu_\Phi^{2}.
 $$
 
 The parent's action is quoted once and not re-derived:
 
 $$
-S=\int\mathrm{d}^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr] ,
+S=\int\mathrm{d}^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr] ,
 \qquad
 \tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr) ,
 $$
@@ -47,7 +47,7 @@ S=\int\frac{\mathrm{d}^4k}{(2\pi)^4}\;\Bigl[\mathcal{F}(A)+\mathcal{M}(A)\Bigr] 
 \qquad
 \mathcal{F}=\tfrac12\,[\,\pi A\,]^{2} ,
 \qquad
-\mathcal{M}=\tfrac12\,k_m^{2}\,A^{\dagger}A ,
+\mathcal{M}=\tfrac12\,4\pi^{2}\nu_m^{2}\,A^{\dagger}A ,
 $$
 
 where $[\,\pi A\,]=\pi_t a_t'+\vec\pi\cdot\vec a$ is the shifted Lorenz form and $A^{\dagger}A=\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the positive amplitude norm of the complex carrier. **$\mathcal{F}$ is bilinear in $A$ and $\mathcal{M}$ is sesquilinear**, and every asymmetry in the article descends from that one fact.
@@ -85,7 +85,7 @@ What the imaginary part does is carry the phase's mismatch. A bilinear form's co
 The variation is algebraic, and that is the whole difference from position space. The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
 
 $$
-\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,\vec k)X\bigr],
+\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,2\pi\vec\nu_{\Phi})X\bigr],
 $$
 
 with no integration by parts, no surface term and no boundary condition. A boundary term appears in a variational principle because a derivative is varied; here no derivative is varied, so none appears. That is not a convenience of the calculation, it is what the transform does to the principle.
@@ -93,7 +93,7 @@ with no integration by parts, no surface term and no boundary condition. A bound
 **Stationarity is the symbol equation.** Vanishing for every $\delta X^{*}$ forces the bracket to vanish, by the same positivity argument as in the element article: choose $\delta X^{*}$ equal to the bracket and the scalar part becomes a sum of squared moduli. So
 
 $$
-\mathcal{S}(\omega,\vec k)\,X=0,
+\mathcal{S}(\omega,2\pi\vec\nu_{\Phi})\,X=0,
 $$
 
 the symbol equation the article solves. The passage from the action to the equation is one line and it is exact: the fixed-frequency action's stationarity and the symbol equation are the same statement.
@@ -102,17 +102,17 @@ The variation at a mode cannot see a boundary condition, a topological charge or
 
 ### Zero, Pole and the On-Shell Action
 
-The coupled Proca mode action is $\mathcal F+\mathcal M$ with $\mathcal F=\tfrac12[\pi A]^{2}$ and $\mathcal M=\tfrac12k_m^{2}A^{\dagger}A$, and $\pi_{\imath}=\frac{h}{2\pi} k_{\imath}-qA_{\imath}$. Its stationarity is the coupled symbol, so the kernel of the form is the symbol again; what differs from the scalar case is that **the mass term makes the form positive on the transverse directions and indefinite on the longitudinal one**, so the vanishing of the form is one condition with a different character on each subspace.
+The coupled Proca mode action is $\mathcal F+\mathcal M$ with $\mathcal F=\tfrac12[\pi A]^{2}$ and $\mathcal M=\tfrac124\pi^{2}\nu_m^{2}A^{\dagger}A$, and $\pi_{\imath}=h\,2\pi\nu_{\imath}-qA_{\imath}$. Its stationarity is the coupled symbol, so the kernel of the form is the symbol again; what differs from the scalar case is that **the mass term makes the form positive on the transverse directions and indefinite on the longitudinal one**, so the vanishing of the form is one condition with a different character on each subspace.
 
-The propagator at the wave number is the form's inverse, and the inverse fails exactly where the form is singular. For the Proca field the singularity is at the mass shell and nowhere else, because the mass term removes the longitudinal degeneracy that the massless form has: the determinant is $k_m^{2}$ times the transverse determinant, so the only zeros are the two mass-shell branches. That is the precise content of the article's observation that the two terms have different algebraic characters.
+The propagator at the wave number is the form's inverse, and the inverse fails exactly where the form is singular. For the Proca field the singularity is at the mass shell and nowhere else, because the mass term removes the longitudinal degeneracy that the massless form has: the determinant is $\nu_m^{2}$ times the transverse determinant, so the only zeros are the two mass-shell branches. That is the precise content of the article's observation that the two terms have different algebraic characters.
 
 The on-shell action vanishes, and here that is a stronger statement. On a solution the amplitude is a kernel vector, so $\mathcal F+\mathcal M=0$; but on shell $\mathcal F=-\mathcal M$ term by term, because the mass term is what the gradient term contributes at the pole. The mode action is zero because the two halves cancel, not because each is zero, and the cancellation is the Proca field's own signature.
 
-At a constant connection the shift $\pi_{\imath}=\frac{h}{2\pi} k_{\imath}-qA_{\imath}$ moves the zero exactly as in the scalar case: the mass-shell locus is translated, not deformed. The mass does not move, which is why the coupled article's section on the charge and the energy says that the charge has no mass and the energy has mass-squared.
+At a constant connection the shift $\pi_{\imath}=h\,2\pi\nu_{\imath}-qA_{\imath}$ moves the zero exactly as in the scalar case: the mass-shell locus is translated, not deformed. The mass does not move, which is why the coupled article's section on the charge and the energy says that the charge has no mass and the energy has mass-squared.
 
 It does not claim that a zero at negative frequency is a negative energy. The transform's two branches are the article's Legendre section, and the sign distinction belongs there. Zero and pole are statements about the propagator; the branch is a statement about the transform.
 
-Because the determinant carries $k_m^{2}$ as a factor, the longitudinal mode's pole is at a fixed coefficient and not at a running one. The longitudinal coefficient is the mass alone, and the article's measurement of it — $0.245$ at $k_m=0.7$ and $0.045$ at $k_m=0.3$, at every frequency in the range — is a numerical restatement of that factor.
+Because the determinant carries $\nu_m^{2}$ as a factor, the longitudinal mode's pole is at a fixed coefficient and not at a running one. The longitudinal coefficient is the mass alone, and the article's measurement of it — $0.245$ at $2\pi\nu_m=0.7$ and $0.045$ at $2\pi\nu_m=0.3$, at every frequency in the range — is a numerical restatement of that factor.
 
 ### The Legendre Transform
 
@@ -137,14 +137,14 @@ On the coupled carrier the mass term does not break the gauge symmetry, so the f
 $$
 [kA]=0
 \qquad\Longleftrightarrow\qquad
-a_t'=\frac{\vec k_\Phi\cdot\vec a}{k_t'} .
+a_t'=\frac{2\pi\vec\nu_\Phi\cdot\vec a}{2\pi\nu_t'} .
 $$
 
 Verified on two test amplitudes, $\vec a=(0.5,-0.2,0.8)$ and $(0.1,0.3,-0.4)$: the determined temporal amplitudes are $0.239377500$ and $0.062994079$, and the resulting amplitudes satisfy $[kA]=6.7\times10^{-18}$ and $3.6\times10^{-18}$ and $\lvert\sigma A\rvert=8.0\times10^{-17}$ and $3.3\times10^{-17}$.
 
-The amplitude is not zero, not lightlike and not in any special branch: it is one of four components expressed through the other three. That is what "determined by the transverse part through the mass" means when the mass is finite, and the division shows the mass's role: at $k_m=0$ the same computation gives $[kA]=0$ as a free condition on the three spatial components, and the temporal one is undetermined.
+The amplitude is not zero, not lightlike and not in any special branch: it is one of four components expressed through the other three. That is what "determined by the transverse part through the mass" means when the mass is finite, and the division shows the mass's role: at $\nu_m=0$ the same computation gives $[kA]=0$ as a free condition on the three spatial components, and the temporal one is undetermined.
 
-Along $\pi_{\imath}$ the form is $\tfrac12k_m^{2}(A\!\cdot\!A)$, so its magnitude is $\tfrac12k_m^{2}=0.245000000$ at $k_m=0.7$ for every momentum tested, the sign following $\pi^{2}$: $-0.245000000$ at $\pi_t=0.9$ and $+0.245000000$ at $\pi_t=1.6$ and $2.4$, the sign change being the crossing of the shifted cone. The translation moves the cone and does not move the coefficient's magnitude, which is the frequency-space form of "the mass is the only scale in the constraint".
+Along $\pi_{\imath}$ the form is $\tfrac12\nu_m^{2}(A\!\cdot\!A)$, so its magnitude is $\tfrac124\pi^{2}\nu_m^{2}=0.245000000$ at $2\pi\nu_m=0.7$ for every momentum tested, the sign following $\pi^{2}$: $-0.245000000$ at $\pi_t=0.9$ and $+0.245000000$ at $\pi_t=1.6$ and $2.4$, the sign change being the crossing of the shifted cone. The translation moves the cone and does not move the coefficient's magnitude, which is the frequency-space form of "the mass is the only scale in the constraint".
 
 The trace of $\sigma_{\mathrm{gco}}$ is $-4\pi^{2}$ and carries no $F$; the longitudinal coefficient carries no $\varkappa$ except through the sign. So the constraint is the one part of the coupled theory whose structure is exactly the free one's, and the parent's "the constraint holds to machine precision in a background with constant field strength" is that statement's numerical form.
 
@@ -153,14 +153,14 @@ What the constraint is not is the gauge-fixing condition of the free theory. The
 Expanding the form's diagonal,
 
 $$
-\frac{\partial^{2}S}{\partial A_0^{2}}=\tfrac12\bigl(\pi_t^{2}-\pi^{2}+k_m^{2}\bigr)=\tfrac12\bigl(\lvert\vec\pi\rvert^{2}+k_m^{2}\bigr) ,
+\frac{\partial^{2}S}{\partial A_0^{2}}=\tfrac12\bigl(\pi_t^{2}-\pi^{2}+4\pi^{2}\nu_m^{2}\bigr)=\tfrac12\bigl(\lvert\vec\pi\rvert^{2}+4\pi^{2}\nu_m^{2}\bigr) ,
 \qquad
-\frac{\partial^{2}S}{\partial A_\eta^{2}}=\tfrac12\bigl(\pi_\eta^{2}+\pi^{2}-k_m^{2}\bigr) ,
+\frac{\partial^{2}S}{\partial A_\eta^{2}}=\tfrac12\bigl(\pi_\eta^{2}+\pi^{2}-4\pi^{2}\nu_m^{2}\bigr) ,
 $$
 
-so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficients each carry $\pi_t^{2}$ through $\pi^{2}$. Measured at the unit charge, $\vec A=(0.9,0.2,0.1)$ and $\vec k_\Phi=(0.3,0.2,0.1)$, so $\vec\pi=(1.2,0.4,0.2)$ and $\lvert\vec\pi\rvert^{2}=1.64$:
+so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficients each carry $\pi_t^{2}$ through $\pi^{2}$. Measured at the unit charge, $\vec A=(0.9,0.2,0.1)$ and $2\pi\vec\nu_\Phi=(0.3,0.2,0.1)$, so $\vec\pi=(1.2,0.4,0.2)$ and $\lvert\vec\pi\rvert^{2}=1.64$:
 
-| $\pi_t$ | $\partial^{2}S/\partial A_0^{2}$ | $\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$ | $\partial^{2}S/\partial A_1^{2}$ |
+| $\pi_t$ | $\partial^{2}S/\partial A_0^{2}$ | $\tfrac12(\lvert\vec\pi\rvert^{2}+\nu_m^{2})$ | $\partial^{2}S/\partial A_1^{2}$ |
 | --- | --- | --- | --- |
 | $0.9$ | $1.065000000$ | $1.065000000$ | $+0.060000$ |
 | $1.6$ | $1.065000000$ | $1.065000000$ | $+0.935000$ |
@@ -170,7 +170,7 @@ The temporal coefficient does not move with the frequency, and the spatial ones 
 
 **So the count is four minus one in both theories, and the reason is the field strength's antisymmetry and not the mass.** The free article's absent power and the coupled article's absent power are the same absent power. That is the article's cleanest agreement with its free companion, and it is worth stating because the coupling changes almost everything else.
 
-$\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$ moves with the background potential through $\vec\pi$ and with the mass; it never vanishes for a massive field in a bounded background. **So the primary constraint is never a dynamical equation**, in the free theory or the coupled one.
+$\tfrac12(\lvert\vec\pi\rvert^{2}+\nu_m^{2})$ moves with the background potential through $\vec\pi$ and with the mass; it never vanishes for a massive field in a bounded background. **So the primary constraint is never a dynamical equation**, in the free theory or the coupled one.
 
 ## The Structural Consequence: The Two Terms Transform Differently
 
@@ -182,7 +182,7 @@ $$
 \mathcal{F}\bigl(e^{i\alpha}A\bigr)=e^{2i\alpha}\,\mathcal{F}(A) ,
 $$
 
-the first because $e^{-i\alpha}e^{i\alpha}=1$ and the second because the two factors of the square each carry one power. Measured on a random complex amplitude at $\pi_t=1.2$, $\vec\pi=(0.3,0.2,0.1)$, $k_m=0.7$:
+the first because $e^{-i\alpha}e^{i\alpha}=1$ and the second because the two factors of the square each carry one power. Measured on a random complex amplitude at $\pi_t=1.2$, $\vec\pi=(0.3,0.2,0.1)$, $2\pi\nu_m=0.7$:
 
 | $\alpha$ | $\mathcal{M}$ | $\lvert\mathcal{F}\rvert$ | $\arg\bigl(\mathcal{F}(e^{i\alpha}A)/\mathcal{F}(A)\bigr)$ | $2\alpha$ mod $2\pi$ |
 | --- | --- | --- | --- | --- |
@@ -201,7 +201,7 @@ What an invariant field term would need is a sesquilinear structure, and the alg
 
 ## The Noether Currents: The Two Conserved Quantities Per Mode
 
-The article's *The Charge Has No Mass and the Energy Has Mass-Squared* is the position-space statement; at a mode the same split appears as two functionals of the amplitude. The charge is the bilinear $ϙ\,\mathrm{Sc}[X^{*}X]$ per mode, with no $k_m$ in it, and it is conserved because the local phase is a symmetry of the coupled action. The energy is the symbol on the shell, and there the mass appears squared.
+The article's *The Charge Has No Mass and the Energy Has Mass-Squared* is the position-space statement; at a mode the same split appears as two functionals of the amplitude. The charge is the bilinear $ϙ\,\mathrm{Sc}[X^{*}X]$ per mode, with no $\nu_m$ in it, and it is conserved because the local phase is a symmetry of the coupled action. The energy is the symbol on the shell, and there the mass appears squared.
 
 The charge comes from the phase rotation, which acts on the field and not on the connection; the energy comes from the time translation, which acts on both. A quantity that came from the phase could not carry the mass, because the mass term is invariant under the phase. That is the whole reason for the split, and it survives the transform because the transform is linear and commutes with both symmetries.
 
@@ -209,11 +209,11 @@ The charge is the coefficient of the temporal connection in the mode form; the e
 
 ## The Noether Currents: The Charge Has No Mass
 
-The parent's charge current is a Noether current of the phase, and the phase is the mass term's symmetry; the parent's stress tensor is a Noether current of translations, and its trace is the mass term. In frequency space the charge current's symbol carries $\pi_{\imath}$ and is linear in one power of the amplitude, so it carries no $k_m$; the trace carries $k_m^{2}$ and nothing else on the material slice.
+The parent's charge current is a Noether current of the phase, and the phase is the mass term's symmetry; the parent's stress tensor is a Noether current of translations, and its trace is the mass term. In frequency space the charge current's symbol carries $\pi_{\imath}$ and is linear in one power of the amplitude, so it carries no $\nu_m$; the trace carries $\nu_m^{2}$ and nothing else on the material slice.
 
 $j_{\imath}=\mathrm{Sc}(\tilde A^{*}\,i\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A)$ has the coupling in the gradient and the amplitude in both slots; the mass appears in neither. So the charge's symbol is $-i\pi_{\imath}$ times the amplitude's bilinear, and the mass cannot enter because the mass is not in the operator.
 
-The parent's material-slice trace is $\sum_{\imath} T_{\imath\imath}\propto k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ exactly, and the form companion's symbol trace is $3\pi^{2}-4k_m^{2}$, which at $\pi^{2}=k_m^{2}$ is $-k_m^{2}$. So the two traces agree at the shell, and the agreement is the reason the article can state one sentence for both.
+The parent's material-slice trace is $\sum_{\imath} T_{\imath\imath}\propto \nu_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ exactly, and the form companion's symbol trace is $3\pi^{2}-4\nu_m^{2}$, which at $\pi^{2}=4\pi^{2}\nu_m^{2}$ is $-\nu_m^{2}$. So the two traces agree at the shell, and the agreement is the reason the article can state one sentence for both.
 
 A field with a mass has a conserved charge that does not carry the mass and an energy that does. The reason is that the charge is the phase's Noether current and the phase is a coordinate of the field, while the energy is the scale's and the scale is the mass's own coordinate — the parent's chart makes that division visible, and the article states it as the ledger's last row.
 
@@ -231,7 +231,7 @@ The boundary term, the varying coefficient and the operator ordering. The first 
 
 Whether a sesquilinear field term exists whose normalisation is the free one's. The frequency-space form of the question is sharp: a sesquilinear term is a function of $A$ and $A^{\dagger}$, so it is invariant under the phase; whether the algebra supplies a second field strength whose pairing with $\tilde F$ is sesquilinear *and* reduces to the Maxwell density is the question. The article's $e^{2i\alpha}$ is the arithmetic of the deficit and not a solution of it.
 
-Whether the constraint's determination has a chart reading. The division $a_t'=\vec k_\Phi\cdot\vec a/k_t'$ is a statement about amplitudes. Whether it is the frequency-space image of the chart's one real equation among eight is a question the polar companion raises jointly, and neither article answers it.
+Whether the constraint's determination has a chart reading. The division $a_t'=2\pi\vec\nu_\Phi\cdot\vec a/\nu_t'$ is a statement about amplitudes. Whether it is the frequency-space image of the chart's one real equation among eight is a question the polar companion raises jointly, and neither article answers it.
 
 Whether the charge's mass-independence survives a dynamical connection. The article's argument is that the mass is not in the operator, which holds for a background connection; with a dynamical connection the mass term would have a second variation and the argument would need redoing.
 
@@ -239,31 +239,31 @@ Whether the two-valued inversion has a reading in the currents. The charge is li
 
 ## Summary
 
-At a wave number the coupled Proca action is $\mathcal{F}+\mathcal{M}=\tfrac12[\,\pi A\,]^{2}+\tfrac12k_m^{2}A^{\dagger}A$ with $\pi_{\imath}=\frac{h}{2\pi} k_{\imath}-q A_{\imath}$, and its stationarity is the coupled symbol.
+At a wave number the coupled Proca action is $\mathcal{F}+\mathcal{M}=\tfrac12[\,\pi A\,]^{2}+\tfrac124\pi^{2}\nu_m^{2}A^{\dagger}A$ with $\pi_{\imath}=h\,2\pi\nu_{\imath}-q A_{\imath}$, and its stationarity is the coupled symbol.
 
 The two terms have different algebraic characters and transform differently under a constant phase. $\mathcal{M}$ is sesquilinear and does not move: $0.169050$ at $\alpha=0,\,0.7,\,1.9,\,3.1$. $\mathcal{F}$ is bilinear and rotates at twice the angle: the ratio's argument is $1.400000$, $-2.483185$, $-0.083185$, which is $2\alpha$ modulo $2\pi$, while its modulus stays at $0.158799$. Invariance holds only at $\alpha\in\{0,\pi\}$, which is the parent's "only when the phase's square is one" as a table.
 
-The constraint is a determination: $[kA]=0$ gives $a_t'=\vec k_\Phi\cdot\vec a/k_t'$, verified to $8\times10^{-17}$ on two amplitudes, so the temporal component is expressed through the three spatial ones and the mass is what makes the division possible. The longitudinal coefficient's magnitude is $\tfrac12k_m^{2}=0.245000000$ at every momentum tested, the sign following $\pi^{2}$, so the coupling moves the cone and not the cost.
+The constraint is a determination: $[kA]=0$ gives $a_t'=2\pi\vec\nu_\Phi\cdot\vec a/\nu_t'$, verified to $8\times10^{-17}$ on two amplitudes, so the temporal component is expressed through the three spatial ones and the mass is what makes the division possible. The longitudinal coefficient's magnitude is $\tfrac124\pi^{2}\nu_m^{2}=0.245000000$ at every momentum tested, the sign following $\pi^{2}$, so the coupling moves the cone and not the cost.
 
-The temporal coefficient is $\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$, with no $\pi_t^{2}$: $1.065000000$ at $\pi_t=0.9,\,1.6,\,2.4$ while the first spatial coefficient moves from $0.060$ to $2.535$. The primary constraint survives the coupling, because $F_{0\eta}$ contains no $\partial_0A_0$, and the count is four minus one in both theories.
+The temporal coefficient is $\tfrac12(\lvert\vec\pi\rvert^{2}+\nu_m^{2})$, with no $\pi_t^{2}$: $1.065000000$ at $\pi_t=0.9,\,1.6,\,2.4$ while the first spatial coefficient moves from $0.060$ to $2.535$. The primary constraint survives the coupling, because $F_{0\eta}$ contains no $\partial_0A_0$, and the count is four minus one in both theories.
 
-The charge carries no mass and the energy carries $k_m^{2}$: the charge's symbol is $-i\pi_{\imath}$ times a bilinear and the mass is not in the operator; the trace is $3\pi^{2}-4k_m^{2}$, which is $-k_m^{2}$ on the shell. The form is quadratic in the frequency, so the Legendre inversion is two-valued, and with a connection the two roots are reflections about $\omega=-\frac{2\pi \varkappa c\omicron_{\mathrm{pot}}}{h}$ rather than about zero.
+The charge carries no mass and the energy carries $\nu_m^{2}$: the charge's symbol is $-i\pi_{\imath}$ times a bilinear and the mass is not in the operator; the trace is $3\pi^{2}-4\nu_m^{2}$, which is $-\nu_m^{2}$ on the shell. The form is quadratic in the frequency, so the Legendre inversion is two-valued, and with a connection the two roots are reflections about $\omega=-\frac{2\pi \varkappa c\omicron_{\mathrm{pot}}}{h}$ rather than about zero.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
-| $\pi_{\imath}=\frac{h}{2\pi} k_{\imath}-q A_{\imath}$ | The shifted four-momentum |
+| $\pi_{\imath}=h\,2\pi\nu_{\imath}-q A_{\imath}$ | The shifted four-momentum |
 | $\varkappa$ | The coupling |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | $[\,\pi A\,]=\pi_t a_t'+\vec\pi\cdot\vec a$ | The shifted Lorenz form of the amplitude |
 | $\mathcal{F}=\tfrac12[\,\pi A\,]^{2}$ | The field term at a mode; bilinear, picks up $e^{2i\alpha}$ |
-| $\mathcal{M}=\tfrac12k_m^{2}A^{\dagger}A$ | The mass term at a mode; sesquilinear, invariant |
+| $\mathcal{M}=\tfrac124\pi^{2}\nu_m^{2}A^{\dagger}A$ | The mass term at a mode; sesquilinear, invariant |
 | $A^{\dagger}A=\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ | The positive amplitude norm of the complex carrier |
-| $a_t'=\vec k_\Phi\cdot\vec a/k_t'$ | The constraint as a determination |
-| $\tfrac12k_m^{2}(A\!\cdot\!A)$ | The longitudinal coefficient; magnitude $0.245000000$ at $k_m=0.7$ |
-| $\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$ | The coefficient of $A_0^{2}$; no $\pi_t^{2}$ |
-| $3\pi^{2}-4k_m^{2}$ | The symbol's trace; $-k_m^{2}$ on the shell |
+| $a_t'=2\pi\vec\nu_\Phi\cdot\vec a/\nu_t'$ | The constraint as a determination |
+| $\tfrac12\nu_m^{2}(A\!\cdot\!A)$ | The longitudinal coefficient; magnitude $0.245000000$ at $2\pi\nu_m=0.7$ |
+| $\tfrac12(\lvert\vec\pi\rvert^{2}+\nu_m^{2})$ | The coefficient of $A_0^{2}$; no $\pi_t^{2}$ |
+| $3\pi^{2}-4\nu_m^{2}$ | The symbol's trace; $-\nu_m^{2}$ on the shell |
 | $\omega\mapsto-\omega-\frac{2\pi 2\varkappa c\omicron_{\mathrm{pot}}}{h}$ | The reflection the form is even under |
 
 ## Further Reading

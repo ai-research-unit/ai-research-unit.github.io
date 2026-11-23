@@ -12,9 +12,9 @@ Four results are established.
 
 - **The field equation in the centre.** The classical action
 $$
-S=\int\left[-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\,\xi\right]d^4r
+S=\int\left[-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(2\pi\nu_m)^{2}\xi^2+g\rho\,\xi\right]d^4r
 $$
-has the Euler–Lagrange equation $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ and range $\frac{h}{2\pi mc}$. Here $\frac{h}{2\pi mc}$ is the mass length.
+has the Euler–Lagrange equation $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2}$ and range $\frac{h}{2\pi mc}$. Here $\frac{h}{2\pi mc}$ is the mass length.
 - **The static central solution.** A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-r/\frac{h}{2\pi mc})/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
 - **The field energy.** The static field's energy is positive and diverges at a point source, $E_{\text{field}}=2\pi A^2/a$ outside a sphere of radius $a$ in the massless case, with $A=gQ/(4\pi)$; the divergence is the classical self-energy of the point-source idealization.
 - **The reduction to the central-force problem.** A test source of coupling $g_{\mathrm t}$ has interaction energy $E(r)=-\kappa \exp(-r/\frac{h}{2\pi mc})/r$ with $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $E=-\kappa/r$ and the orbit is exactly the precessing conic of that article.
@@ -68,7 +68,7 @@ The classical action of a real central scalar field coupled to a prescribed sour
 
 $$
 S=\int\mathcal{L}\,d^4r, \qquad
-\mathcal{L}=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\,\xi,
+\mathcal{L}=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(2\pi\nu_m)^{2}\xi^2+g\rho\,\xi,
 \qquad d^4r=c\,dr'_t\,dr_x\,dr_y\,dr_z .
 $$
 
@@ -81,21 +81,21 @@ The Euler–Lagrange equation for the single component $\xi$ is
 $$
 \frac{\partial\mathcal{L}}{\partial\xi}-\partial/\partial R_{\imath}\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_{\imath}\,\xi)}=0
 \quad\Longrightarrow\quad
--(k_m)^{2}\xi+g\rho+\Box_\Phi\xi=0 ,
+-(2\pi\nu_m)^{2}\xi+g\rho+\Box_\Phi\xi=0 ,
 $$
 
 that is,
 
 $$
-\boxed{\;\left(\Box_\Phi-(k_m)^{2}\right)\tilde{Ξ}=-g\rho\,e_t\;}.
+\boxed{\;\left(\Box_\Phi-(2\pi\nu_m)^{2}\right)\tilde{Ξ}=-g\rho\,e_t\;}.
 $$
 
-The operator $\Box_\Phi-(k_m)^{2}$ is a **central scalar** differential operator with real coefficients, so it acts on the field by acting on the single component: the biquaternion-valued field equation and the ordinary scalar equation say the same thing. This is the first place the centre is used. For a biquaternion-valued field with all four components active, the same operator would act componentwise and produce four decoupled scalar equations, none of which mixes the components; a genuinely multi-component field requires a noncentral operator, and the framework's only such operators are the module-theoretic ones described in the companion articles. The scalar field is the case in which the central operator and the single component match.
+The operator $\Box_\Phi-(2\pi\nu_m)^{2}$ is a **central scalar** differential operator with real coefficients, so it acts on the field by acting on the single component: the biquaternion-valued field equation and the ordinary scalar equation say the same thing. This is the first place the centre is used. For a biquaternion-valued field with all four components active, the same operator would act componentwise and produce four decoupled scalar equations, none of which mixes the components; a genuinely multi-component field requires a noncentral operator, and the framework's only such operators are the module-theoretic ones described in the companion articles. The scalar field is the case in which the central operator and the single component match.
 
 The free field obeys
 
 $$
-\left(\Box_\Phi-(k_m)^{2}\right)\tilde{Ξ}=0 ,
+\left(\Box_\Phi-(2\pi\nu_m)^{2}\right)\tilde{Ξ}=0 ,
 $$
 
 the biquaternionic Klein–Gordon equation of the companion article, here read as a **classical** wave equation. Its wave operator is the biquaternion norm of the gradient, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, which is the algebraic content the biquaternion writing makes visible. Because the equation is second order in time, the field and its time derivative are the two pieces of initial data, exactly as for any classical wave field.
@@ -110,25 +110,25 @@ $$
 \tilde{Ξ}(r_x)=\tilde{Ξ}_0\,\exp(i\theta_{\mathrm{pwp}}), \qquad \tilde{Ξ}_0\in\mathbb{C},
 $$
 
-Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec k_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.
+Here $\theta_{\mathrm{pwp}}:=2\pi\vec\nu_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec\nu_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.
 
-with the central phase $\exp(i\theta_{\mathrm{pwp}})$ understood as multiplication by a central element. Because $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ acts on it as $\omega^2/c^2-k_\Phi^{2}$, the free equation requires the **dispersion relation**
+with the central phase $\exp(i\theta_{\mathrm{pwp}})$ understood as multiplication by a central element. Because $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ acts on it as $\omega^2/c^2-\nu_{\Phi}^{2}$, the free equation requires the **dispersion relation**
 
 $$
-\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}=c^2k_\Phi^{2}+c^2(k_m)^{2} .
+\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2}=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2} .
 $$
 
-The wave speed is frequency-dependent and exceeds $c$ for every finite $\frac{h}{2\pi mc}$, $\omega/k_\Phi=c\sqrt{1+(k_m)^{2}/k_\Phi^{2}}>c$: the field is dispersive, and the phase velocity is not the signal velocity. The front velocity is $c$, since the second-order hyperbolic equation has the same characteristic cone as the wave equation; the cone is the framework's zero-divisor cone, the subject of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. The classical statement is that a disturbance cannot be signalled faster than $c$, whatever the phase velocity.
+The wave speed is frequency-dependent and exceeds $c$ for every finite $\frac{h}{2\pi mc}$, $\omega/\nu_{\Phi}=c\sqrt{1+(\nu_m)^{2}/\nu_{\Phi}^{2}}>c$: the field is dispersive, and the phase velocity is not the signal velocity. The front velocity is $c$, since the second-order hyperbolic equation has the same characteristic cone as the wave equation; the cone is the framework's zero-divisor cone, the subject of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. The classical statement is that a disturbance cannot be signalled faster than $c$, whatever the phase velocity.
 
 ### The Range of the Field
 
 A static field obeys
 
 $$
-\left(\Delta_\Phi-(k_m)^{2}\right)\xi=-g\rho .
+\left(\Delta_\Phi-(2\pi\nu_m)^{2}\right)\xi=-g\rho .
 $$
 
-The operator $\Delta_\Phi-(k_m)^{2}$ is the inverse of a screened Poisson operator, and its Green's function decays exponentially:
+The operator $\Delta_\Phi-(\nu_m)^{2}$ is the inverse of a screened Poisson operator, and its Green's function decays exponentially:
 
 $$
 G_{\imath}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{\exp(-r/h/(mc))}{8\pi \pi r}, \qquad
@@ -180,7 +180,7 @@ evaluated at the retarded time $r'_{\mathrm{ret},t}=r'_t-R$. The formula is the 
 The stress–energy tensor of the central scalar field is that of a real scalar field, computed in the companion article *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*. Its energy density is
 
 $$
-T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\tfrac12(\vec\nabla_\Phi\xi)^2+\tfrac12(k_m)^{2}\xi^2>0 ,
+T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\tfrac12(\vec\nabla_\Phi\xi)^2+\tfrac12(2\pi\nu_m)^{2}\xi^2>0 ,
 $$
 
 positive for every field configuration, and its conservation is the statement $\sum_{\imath}\varepsilon_{\imath}\,\partial T_{\imath\jmath}/\partial x_{\imath}=0$ on shell, in the $\mathbb{B}_{\Phi}$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
@@ -240,7 +240,7 @@ a real vector parallel to the position, pointing inward because $\frac{d\xi}{dr}
 The reduction is exact, and it hands the problem to the two sibling articles.
 
 - **Massless central scalar.** For $\frac{2\pi mc}{h}=0$ the potential is $E=-\kappa/r$ and the relativistic orbit is exactly the precessing conic of the companion article *The Relativistic Central Force Problem in Biquaternionic Form*: $r=p/[1+e\cos\omega(\theta-\theta_0)]$ with $\omega^2=1-\kappa^2/(c^2L^2)$, bound orbits requiring $L>\kappa/c$. The non-relativistic limit is the Kepler and Coulomb orbit of the companion articles *Central Forces and the Classical Kepler Problem in Biquaternionic Form* and *The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form*.
-- **Massive central scalar.** For $k_m>0$ the potential is the Yukawa potential $E=-\kappa \exp(-r/\frac{h}{2\pi mc})/r$ and the force is $F=-\kappa \exp(-r/\frac{h}{2\pi mc})(r/\frac{h}{2\pi mc}+1)/r^2$. The relativistic Binet equation of the sibling article applies with this force, but the equation is nonlinear and the orbit is not a conic; the precessing-conic solution is special to the massless case. The field-theoretic statement is that a massive scalar exchange produces a short-range central force whose orbits are not closed, and the massless exchange produces the inverse-square force whose relativistic orbits are the exact precessing conics.
+- **Massive central scalar.** For $\nu_m>0$ the potential is the Yukawa potential $E=-\kappa \exp(-r/\frac{h}{2\pi mc})/r$ and the force is $F=-\kappa \exp(-r/\frac{h}{2\pi mc})(r/\frac{h}{2\pi mc}+1)/r^2$. The relativistic Binet equation of the sibling article applies with this force, but the equation is nonlinear and the orbit is not a conic; the precessing-conic solution is special to the massless case. The field-theoretic statement is that a massive scalar exchange produces a short-range central force whose orbits are not closed, and the massless exchange produces the inverse-square force whose relativistic orbits are the exact precessing conics.
 
 The reduction also identifies the coupling's meaning: $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ is a product of the field coupling, the test coupling and the source strength. The framework does not fix these numbers, exactly as the central-force article does not fix $\kappa$; what the framework fixes is the **form** of the force once the field is the central scalar.
 
@@ -261,7 +261,7 @@ which acts on the single complex component by multiplication. Because $i$ is cen
 The complex Lagrangian
 
 $$
-\mathcal{L}=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi^*\,\partial/\partial R_{\imath}\,\xi-\tfrac12(k_m)^{2}|\xi|^2
+\mathcal{L}=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi^*\,\partial/\partial R_{\imath}\,\xi-\tfrac12(2\pi\nu_m)^{2}|\xi|^2
 $$
 
 is invariant under the central phase, and Noether's theorem gives the conserved current
@@ -341,7 +341,7 @@ S=\int\left[-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\p
 \qquad \frac{h}{2\pi mc},
 $$
 
-has the field equation $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, with $\Box_\Phi$ central and scalar. The free field is dispersive with $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ and has range $\frac{h}{2\pi mc}$.
+has the field equation $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, with $\Box_\Phi$ central and scalar. The free field is dispersive with $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2}$ and has range $\frac{h}{2\pi mc}$.
 
 A static point source of strength $Ϙ$ produces the Yukawa field
 
@@ -351,7 +351,7 @@ $$
 \tilde{Ξ}=\frac{gQ}{4\pi r}\,e_t .
 $$
 
-The static field's energy density is $T_{tt}=\tfrac12(\vec\nabla_\Phi\xi)^2+\tfrac12(k_m)^{2}\xi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.
+The static field's energy density is $T_{tt}=\tfrac12(\vec\nabla_\Phi\xi)^2+\tfrac12(2\pi\nu_m)^{2}\xi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.
 
 A test source of coupling $g_{\mathrm t}$ has the central potential energy
 
@@ -374,15 +374,15 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $\tilde{Ξ}=\xi e_t$ | Central scalar field; $\xi$ a complex scalar function |
 | $\xi_1,\xi_2$ | Real and imaginary parts of $\xi$ |
 | $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
-| $\frac{h}{2\pi mc}$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $k_m$ is the inverse range, and classically only $\frac{h}{2\pi mc}$ matters |
-| $\mathcal{L}=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\xi$ | Real scalar Lagrangian |
-| $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=-g\rho e_t$ | Field equation with source |
-| $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ | Dispersion relation of the free field |
-| $G_{\frac{h}{2\pi mc}}=\exp(-r/\frac{h}{2\pi mc})/(4\pi r)$ | Screened Green's function; $(\Delta_\Phi-(k_m)^{2})G_{\imath}=-\delta^{(3)}$ |
+| $\frac{h}{2\pi mc}$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $\nu_m$ is the inverse range, and classically only $\frac{h}{2\pi mc}$ matters |
+| $\mathcal{L}=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(2\pi\nu_m)^{2}\xi^2+g\rho\xi$ | Real scalar Lagrangian |
+| $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=-g\rho e_t$ | Field equation with source |
+| $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2}$ | Dispersion relation of the free field |
+| $G_{\frac{h}{2\pi mc}}=\exp(-r/\frac{h}{2\pi mc})/(4\pi r)$ | Screened Green's function; $(\Delta_\Phi-(2\pi\nu_m)^{2})G_{\imath}=-\delta^{(3)}$ |
 | $Ϙ,\rho,g,g_{\mathrm t}$ | Source strength, source density, field coupling, test coupling |
 | $\tilde{Ξ}=gQ\exp(-r/\frac{h}{2\pi mc})/(4\pi r)\,e_t$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $\frac{2\pi mc}{h}=0$ |
 | $\vec\beta$, $R$, $r'_{\mathrm{ret},t}$ | Source velocity over $c$, retarded distance, retarded time |
-| $T_{tt}=\tfrac12\left(\partial\xi/\partial r'_t\right)^{2}/c^2+\tfrac12(\vec\nabla_\Phi\xi)^2+\tfrac12(k_m)^{2}\xi^2$ | Energy density, positive |
+| $T_{tt}=\tfrac12\left(\partial\xi/\partial r'_t\right)^{2}/c^2+\tfrac12(\vec\nabla_\Phi\xi)^2+\tfrac12(2\pi\nu_m)^{2}\xi^2$ | Energy density, positive |
 | $A=gQ/(4\pi)$; $E_{\text{field}}=2\pi A^2/a$ | Field amplitude; massless field energy outside radius $a$ |
 | $E(r)=-\kappa \exp(-r/\frac{h}{2\pi mc})/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
 | $\vec F=-\vec\nabla_\Phi E=g_{\mathrm h_t}\,\vec\nabla_\Phi\xi=g_{\mathrm h_t}\,(d\xi/dr)\,\vec u_r$ | Central force on the test source (inward) |

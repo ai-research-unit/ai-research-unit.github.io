@@ -42,7 +42,7 @@ Only one term is of order two, and it is the only one carrying a derivative of t
 
 The action is first order in time, so the term $-\frac{h}{2\pi} \varrho^{2}\dot\theta_{\mathrm{pha}}$ carries a time derivative of the phase and no power of $\epsilon$ at all. This is the variational form of the statement that the equation is first order in time and has no mass shell: the action's time structure is a legendre transform of a first-order system, not an expansion.
 
-In the phase, a spatial derivative brings down $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$, which is the large number. In the scale, a spatial derivative brings down $L^{-1}$, which is small against it. The ratio is the parameter, $\epsilon=1/(k_{\Phi}L)$, and the distinction is exactly the one the companion states: only derivatives of the scale are ordered.
+In the phase, a spatial derivative brings down $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$, which is the large number. In the scale, a spatial derivative brings down $L^{-1}$, which is small against it. The ratio is the parameter, $\epsilon=1/(2\pi\nu_{\Phi}L)$, and the distinction is exactly the one the companion states: only derivatives of the scale are ordered.
 
 The parent's kinetic term is the anti-Hermitian time combination, and in the limit's variables it is the real product $\frac{h}{2\pi}\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}$. The limit keeps that term and drops the block whose second derivatives of the density carry $\frac{h^{2}}{4\pi^{2}}/2m$. Both are real, so the substitution and the deletion are both harmless to the pairing.
 
@@ -196,8 +196,8 @@ Three gains over the equation route: the order is a property of a term rather th
 | $V_{\mathrm{op}}(\vec x)$ | The operator's scalar potential |
 | $S_{\mathrm{central}}$ | The parent's action |
 | $S_{\mathrm{cl}}$ | The truncated action; the classical, pressureless one |
-| $\epsilon=1/(k_{\Phi}L)$ | The parameter; one power per derivative of the scale |
-| $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$ | The phase's wave number |
+| $\epsilon=1/(2\pi\nu_{\Phi}L)$ | The parameter; one power per derivative of the scale |
+| $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$ | The phase's wave number |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | The quantum potential; the deleted term's equation |
 | $\Delta_\Phi$ | The Laplacian of the material sector |
 ## Further Reading

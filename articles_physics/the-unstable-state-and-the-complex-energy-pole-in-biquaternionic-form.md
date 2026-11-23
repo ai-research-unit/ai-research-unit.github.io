@@ -197,7 +197,7 @@ a complex number of the centre rather than a pair $(\vec U,\Theta)$. Its imagina
 **The mass scale.** The pole is an energy, so it becomes a dimensionless angle only after a scale is chosen. In units of the mass $m$ of the decaying state, $\theta_\star=z_\star/(mc^2)$ and
 
 $$
-\mathrm{H}_{\mathrm{hvs}}(r'_t)=-c\,k_m\,i\,\theta_{\star}\,r'_{t},
+\mathrm{H}_{\mathrm{hvs}}(r'_t)=-c\,2\pi\nu_m\,i\,\theta_{\star}\,r'_{t},
 $$
 
 so $\theta_\star$ is the complex angle per unit of the mass time. Its imaginary part is $-\Gamma/(2mc^2)$, the half-width in mass units, and its real part is the energy in mass units. The half-width is therefore the imaginary part of the mass-unit angle, and it appears with a minus sign in the real part of the exponent $\Theta$; the factor $-i$ between them swaps the two readings. Neither part is a Lorentz scalar; both are central, as the pole is.

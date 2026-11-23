@@ -22,15 +22,15 @@ What the article does not do it says at once. It does not build a second integra
 
 The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The conjugations are $*$ and $\natural$, and the pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$, as in both Lagrangian articles. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated here: $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$; $\theta_{\mathrm{axr}}\in[0,2\pi]$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ real unit vectors; $\rho_{\mathrm{num}}=\varrho^{2}$; $\gamma=\cosh\theta_{\mathrm{rpd}}$; $\varrho\,e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$; $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$. The word exists exactly on the $N$-regular elements, that is on $N\neq0$.
 
-The kernel is the companion's. The dynamics is the pair $\tilde\nabla_\Phi\tilde\Xi_{R}=k_m\tilde\Xi_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_m\tilde\Xi_{R}$ with $k_m=\frac{2\pi mc}{h}$, and its Green kernel in momentum space has the two components
+The kernel is the companion's. The dynamics is the pair $\tilde\nabla_\Phi\tilde\Xi_{R}=2\pi\nu_m\tilde\Xi_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=2\pi\nu_m\tilde\Xi_{R}$ with $\nu_m=\frac{mc}{h}$, and its Green kernel in momentum space has the two components
 
 $$
-\mathcal S_L=\frac{\tilde K_{\Phi}-ik_m}{k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural}},
+\mathcal S_L=\frac{\tilde\Upsilon_{\Phi}-2\pi i\nu_m}{4\pi^{2}\nu_m^{2}+\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}},
 \qquad
-\mathcal S_R=\frac{\tilde K_{\Phi}^{\natural}-ik_m}{k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural}},
+\mathcal S_R=\frac{\tilde\Upsilon_{\Phi}^{\natural}-2\pi i\nu_m}{4\pi^{2}\nu_m^{2}+\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}},
 $$
 
-with $\tilde K_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}$ the wave biquaternion and $\langle\tilde K_{\Phi}\rangle_{\natural}=N/\frac{h^{2}}{4\pi^{2}}$. The components are elements of $\mathbb{B}$ and not scalars, and that is the subject of the next three sections. The material position is $\tilde R_\Phi=ir'_{t}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, whose norm is $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^{2}+|\vec r|^{2}$.
+with $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}$ the wave biquaternion and $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=N/\frac{h^{2}}{4\pi^{2}}$. The components are elements of $\mathbb{B}$ and not scalars, and that is the subject of the next three sections. The material position is $\tilde R_\Phi=ir'_{t}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, whose norm is $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^{2}+|\vec r|^{2}$.
 
 Every statement is an identity of the word, and the number beside it is a recomputation on one hundred samples. No claim rests on a numerical accident.
 
@@ -80,44 +80,44 @@ The middle column repays one sentence of care. The spin factor of the companion 
 
 ### The kernel in momentum space
 
-Read $\mathcal S_L$ as an element. Its denominator is central and real off the mass shell, so it multiplies the scale, shifts the angle, and does nothing else. The numerator $\tilde K_{\Phi}-ik_m$ carries the frame. Its norm is a real number,
+Read $\mathcal S_L$ as an element. Its denominator is central and real off the mass shell, so it multiplies the scale, shifts the angle, and does nothing else. The numerator $\tilde\Upsilon_{\Phi}-i\nu_m$ carries the frame. Its norm is a real number,
 
 $$
-\bigl\langle\tilde K_{\Phi}-ik_m\bigr\rangle_{\natural}=|\vec k|^{2}-\bigl(k'_{t}-k_m\bigr)^{2},
+\bigl\langle\tilde\Upsilon_{\Phi}-i\nu_m\bigr\rangle_{\natural}=|\vec\nu_{\Phi}|^{2}-\bigl(k'_{t}-\nu_m\bigr)^{2},
 \qquad
-\tilde K_{\Phi}=ik'_{t}e_t+\vec k,
+\tilde\Upsilon_{\Phi}=ik'_{t}e_t+\vec\nu_{\Phi},
 $$
 
 and it is indefinite: positive far above the mass shell, negative just below it. The kernel's angle, which is half the argument of a real number, is therefore one of two values, and not a dynamical phase. Half of an argument in $(-\pi,\pi]$ lies in the word's own range $(-\pi/2,\pi/2]$, so a positive norm gives the angle $0$ and a negative norm gives $\pi/2$; the side of the mass shell decides between the two, and nothing else does.
 
 | factor | value for $\mathcal S_L$ | what fixes it |
 | --- | --- | --- |
-| scale $\varrho$ | $\bigl||\vec k|^{2}-(k'_{t}-k_m)^{2}\bigr|^{1/2}\big/\bigl|k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural}\bigr|$ | the numerator's norm and the denominator |
+| scale $\varrho$ | $\bigl||\vec\nu_{\Phi}|^{2}-(k'_{t}-\nu_m)^{2}\bigr|^{1/2}\big/\bigl|\nu_m^{2}+\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}\bigr|$ | the numerator's norm and the denominator |
 | angle $\theta_{\mathrm{pha}}$ | $0$ or $\pi/2$ | the sign of the numerator's norm times the sign of the denominator |
 | rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$ | the frame's rapidity, the axis reversed | the momentum's boost |
 | rotor angle $\theta_{\mathrm{axr}}$ and axis $\vec u_{\mathrm r}$ | non-trivial in $100$ of $100$ samples | the mass reversal composed with the frame |
 
-The second row is the sharpest difference from the Schrödinger kernel's word, and it is worth stating twice: in momentum space the free Dirac kernel carries no action phase. Its angle is a label of a region, not a time. The action's phase appears only in position space, where the pole of the denominator is crossed and the Fourier transform oscillates. The contrast with the Schrödinger kernel is exact in one respect and not in another. In both cases the momentum-space angle is fixed. Here the numerator fixes it, because the norm of $\tilde K_{\Phi}-ik_m$ is real and its sign is a label. There the denominator fixes it, because the numerator is the unit and contributes no argument. The Dirac-specific feature is that the first-order numerator has a real norm of its own, so the kernel's angle is decided before any pole is met. The check is exact: over one hundred off-shell momenta the norm of $\mathcal S_L$ is real, with relative imaginary part zero, and its argument is $0$ or $\pi$. The kernel's angle is therefore $0$ or $\pi/2$, never anything else.
+The second row is the sharpest difference from the Schrödinger kernel's word, and it is worth stating twice: in momentum space the free Dirac kernel carries no action phase. Its angle is a label of a region, not a time. The action's phase appears only in position space, where the pole of the denominator is crossed and the Fourier transform oscillates. The contrast with the Schrödinger kernel is exact in one respect and not in another. In both cases the momentum-space angle is fixed. Here the numerator fixes it, because the norm of $\tilde\Upsilon_{\Phi}-i\nu_m$ is real and its sign is a label. There the denominator fixes it, because the numerator is the unit and contributes no argument. The Dirac-specific feature is that the first-order numerator has a real norm of its own, so the kernel's angle is decided before any pole is met. The check is exact: over one hundred off-shell momenta the norm of $\mathcal S_L$ is real, with relative imaginary part zero, and its argument is $0$ or $\pi$. The kernel's angle is therefore $0$ or $\pi/2$, never anything else.
 
 ### The mass shell, and the factor that vanishes at rest
 
-On the mass shell $\tilde K_{\Phi}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, and the numerator factors exactly.
+On the mass shell $\tilde\Upsilon_{\Phi}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$, and the numerator factors exactly.
 
-*Proposition.* On the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ and $N=-m^{2}c^{2}$,
+*Proposition.* On the mass shell, $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$ and $N=-m^{2}c^{2}$,
 
 $$
-\tilde K_{\Phi}-ik_m
-=2k_m\sinh\frac{\theta_{\mathrm{rpd}}}{2}\;\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b},
+\tilde\Upsilon_{\Phi}-i\nu_m
+=2\nu_m\sinh\frac{\theta_{\mathrm{rpd}}}{2}\;\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b},
 \qquad
-\bigl\langle\tilde K_{\Phi}-ik_m\bigr\rangle_{\natural}
-=4k_m^{2}\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}.
+\bigl\langle\tilde\Upsilon_{\Phi}-i\nu_m\bigr\rangle_{\natural}
+=4\nu_m^{2}\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}.
 $$
 
-*Proof.* Writing $\tilde K_{\Phi}=ik_m\bigl(\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}\bigr)$ and subtracting $ik_m$ gives $ik_m(\cosh\theta_{\mathrm{rpd}}-1)+k_m\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $2k_m\sinh(\theta_{\mathrm{rpd}}/2)$ times $\bigl(i\sinh(\theta_{\mathrm{rpd}}/2)+\cosh(\theta_{\mathrm{rpd}}/2)\,\vec u_{\mathrm b}\bigr)$. That bracket is $\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, since $\vec u_{\mathrm b}^{2}=-e_t$. The norm follows from the same line, the two cross terms cancelling because a central element commutes.
+*Proof.* Writing $\tilde\Upsilon_{\Phi}=i\nu_m\bigl(\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}\bigr)$ and subtracting $ik_m$ gives $i\nu_m(\cosh\theta_{\mathrm{rpd}}-1)+\nu_m\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $2\nu_m\sinh(\theta_{\mathrm{rpd}}/2)$ times $\bigl(i\sinh(\theta_{\mathrm{rpd}}/2)+\cosh(\theta_{\mathrm{rpd}}/2)\,\vec u_{\mathrm b}\bigr)$. That bracket is $\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, since $\vec u_{\mathrm b}^{2}=-e_t$. The norm follows from the same line, the two cross terms cancelling because a central element commutes.
 
 The identity is checked to $4\times10^{-15}$ over one hundred boosts, and its right side has two readings. The numerator is a real scalar times an invertible element. The scalar is the mass times the half-sine of the rapidity, so it vanishes at rest; the unit is the frame's own element with its axis reversed. The kernel's word is the word of an invertible element times a real number, and the number is zero at rest.
 
-At rest the numerator is a zero divisor. $\theta_{\mathrm{rpd}}=0$ gives $\tilde K_{\Phi}=ik_me_t$ and $\tilde K_{\Phi}-ik_m=0$, so the word of the numerator does not exist there. This is not a defect of the reading. It is the rest-frame singularity the variational companion records as its second open question, met from the path-integral side: the kernel's word is a coordinate on the $N$-regular elements, and the on-shell numerator at rest is not one.
+At rest the numerator is a zero divisor. $\theta_{\mathrm{rpd}}=0$ gives $\tilde\Upsilon_{\Phi}=i\nu_me_t$ and $\tilde\Upsilon_{\Phi}-i\nu_m=0$, so the word of the numerator does not exist there. This is not a defect of the reading. It is the rest-frame singularity the variational companion records as its second open question, met from the path-integral side: the kernel's word is a coordinate on the $N$-regular elements, and the on-shell numerator at rest is not one.
 
 ### The two norms of the kernel
 
@@ -134,7 +134,7 @@ That is the path-integral form of the parent's §*What the Frame Separates*: the
 
 ### Where the word fails
 
-The massless kernel is the case in which the failure set can be named. With $k_m=0$ the two components are the two gradients applied to the scalar kernel, that kernel is $1/\langle\tilde R_\Phi\rangle_{\natural}$, and the identity
+The massless kernel is the case in which the failure set can be named. With $\nu_m=0$ the two components are the two gradients applied to the scalar kernel, that kernel is $1/\langle\tilde R_\Phi\rangle_{\natural}$, and the identity
 
 $$
 \tilde\nabla_\Phi\frac{1}{\langle\tilde R_\Phi\rangle_{\natural}}
@@ -200,7 +200,7 @@ In one sentence. The interacting kernel's rotor is the transport composed with t
 
 The boost of the kernel is the classical frame, and in momentum space the statement is exact.
 
-*Proposition.* Let $\tilde K_{\Phi}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ with $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$. Then the word of $\mathcal S_L$ has rapidity $\theta_{\mathrm{rpd}}$ and axis $-\vec u_{\mathrm b}$.
+*Proposition.* Let $\tilde\Upsilon_{\Phi}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ with $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$. Then the word of $\mathcal S_L$ has rapidity $\theta_{\mathrm{rpd}}$ and axis $-\vec u_{\mathrm b}$.
 
 *Proof.* By the factorisation of §*The mass shell* the numerator is a positive scalar times $\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, and a positive central scalar changes neither the boost nor the rotor. The star square of that unit is computed in one line and gives $\cosh\theta_{\mathrm{rpd}}+i\sinh\theta_{\mathrm{rpd}}(-\vec u_{\mathrm b})$, whose half-rapidity is $\theta_{\mathrm{rpd}}$ about $-\vec u_{\mathrm b}$.
 
@@ -248,7 +248,7 @@ Adds.
 
 - The weight's degeneracy, stated and checked: every path has scale one, trivial boost, and a rotor equal to a sign. The kernel's amplitude is therefore a property of the measure and not of the integrand.
 - The kernel's four factors, with the momentum-space angle fixed at $0$ or $\pi/2$ by the side of the mass shell. That is the structural difference from the Schrödinger kernel, whose word carries a scale and an angle and nothing else.
-- The factorisation of the on-shell numerator as $2k_m\sinh(\theta_{\mathrm{rpd}}/2)\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, and its vanishing at rest.
+- The factorisation of the on-shell numerator as $2\nu_m\sinh(\theta_{\mathrm{rpd}}/2)\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, and its vanishing at rest.
 - The massless kernel's rotor, which is the frame of the separation and not the spin of a source: a $\pi$ rotation about the spatial direction on a spacelike separation, and a sign on a timelike one.
 - The failure set: the light cone of the massless kernel is the zero-divisor cone, where the word does not exist.
 - The two constants: the central $\arg(i^{-d/2})$ and the spin sign of the double cover.
@@ -272,7 +272,7 @@ Adds.
 
 A path in the Dirac integral has weight $e^{\frac{2\pi iS}{h}}e_t$, whose word is $\varrho=1$, $\theta_{\mathrm{pha}}=\frac{2\pi S}{h}$ reduced into $(-\pi/2,\pi/2]$, trivial boost, and rotor $\pm e_t$. Every path has scale one, so the amplitude of the kernel comes from the measure and the spin from the spin factor.
 
-The kernel's word carries all four factors. Its scale is the van Vleck determinant; its angle is the action over $\frac{h}{2\pi}$ plus the Maslov constant in position space, and one of the two labels $0$ or $\pi/2$ in momentum space; its boost is the classical frame with the axis reversed; its rotor is the spin transport composed with the fixed mass reversal. The on-shell numerator factors as $2k_m\sinh(\theta_{\mathrm{rpd}}/2)\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, vanishes at rest, and has norm $4k_m^{2}\sinh^{2}(\theta_{\mathrm{rpd}}/2)$.
+The kernel's word carries all four factors. Its scale is the van Vleck determinant; its angle is the action over $\frac{h}{2\pi}$ plus the Maslov constant in position space, and one of the two labels $0$ or $\pi/2$ in momentum space; its boost is the classical frame with the axis reversed; its rotor is the spin transport composed with the fixed mass reversal. The on-shell numerator factors as $2\nu_m\sinh(\theta_{\mathrm{rpd}}/2)\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, vanishes at rest, and has norm $4\nu_m^{2}\sinh^{2}(\theta_{\mathrm{rpd}}/2)$.
 
 The two norms of the kernel read the scale with the angle and the scale with the boost, and neither reads the rotor. The massless kernel's word has scale $|\langle\tilde R_\Phi\rangle_{\natural}|^{-3/2}$, its rotor is the frame of the separation, a $\pi$ turn about $\vec r/|\vec r|$ on a spacelike separation and a sign on a timelike one, and it fails exactly on the light cone, which is the zero-divisor cone. The Maslov constants are the central $\arg(i^{-d/2})$ and the sign of the rotor's lift. The word composes at a point in scale and angle, and not at all in boost and rotor; the composition of kernels restores the law only at the leading semiclassical order.
 
@@ -292,9 +292,9 @@ None of this is a new integral. It is the companion's integral read in the coord
 | $N(\tilde X)=\langle\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ | Quaternionic norm; the word exists exactly when $N\neq0$ |
 | $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | Frame factor; a four-vector carries $\mathcal B_{\Psi}$ |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Gradient and its quaternion conjugate |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
-| $\tilde K_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}=ik'_{t}e_t+\vec k$ | Wave biquaternion |
-| $\langle\tilde K_{\Phi}\rangle_{\natural}=N/\frac{h^{2}}{4\pi^{2}}$ | Mass-shell scalar |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
+| $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}=ik'_{t}e_t+2\pi\vec\nu_{\Phi}$ | Wave biquaternion |
+| $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=N/\frac{h^{2}}{4\pi^{2}}$ | Mass-shell scalar |
 | $\mathcal S_L$, $\mathcal S_R$ | The two components of the Dirac propagator |
 | $\theta_{\mathrm{act}}=\frac{2\pi S}{h}$ | Angle of a path's weight |
 | $w=e^{i\theta_{\mathrm{act}}}e_t$ | Weight of one path |

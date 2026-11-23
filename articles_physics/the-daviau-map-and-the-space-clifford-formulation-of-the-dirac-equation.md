@@ -9,7 +9,7 @@ Daviau writes the Dirac equation as one equation for a general element of the bi
 **The equation.** For a general element $\tilde{Ξ}$ of $\mathbb{B}$ the equation is
 
 $$
-\boxed{\;\mathfrak D\,\tilde{Ξ}\,(-\vec e_x)=k_m\overline{\tilde{Ξ}}+q\,\tilde A_{\Phi}\,\tilde{Ξ}\;}
+\boxed{\;\mathfrak D\,\tilde{Ξ}\,(-\vec e_x)=2\pi\nu_m\overline{\tilde{Ξ}}+q\,\tilde A_{\Phi}\,\tilde{Ξ}\;}
 $$
 
 with the elements $\mathfrak D$ and $\tilde A_{\Phi}$ of §*The Daviau Equation*. The gradient multiplies on the left, the fixed bivector $-\vec e_x$ on the right, and the mass term is the complex conjugation of the field.
@@ -126,7 +126,7 @@ with the coefficients $(a,d,b,c,-e,f,-g,h)$ on the units $(e_t,\,i\vec e_x,\,i\v
 **Definition.** With $\tilde{Ξ}$ a general element and $\mathfrak D$, $\tilde A_{\Phi}$ the elements below, the equation is
 
 $$
-\boxed{\;\mathfrak D\,\tilde{Ξ}\,(-\vec e_x)=k_m\overline{\tilde{Ξ}}+q\,\tilde A_{\Phi}\,\tilde{Ξ}\;}
+\boxed{\;\mathfrak D\,\tilde{Ξ}\,(-\vec e_x)=2\pi\nu_m\overline{\tilde{Ξ}}+q\,\tilde A_{\Phi}\,\tilde{Ξ}\;}
 $$
 
 with
@@ -160,15 +160,15 @@ The corpus carries two Dirac equations, and the Daviau equation is a **third for
 **The one-sided equation, and chirality.** The corpus's own equation is the chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R} ,
 $$
 
-in which the gradient multiplies on the left in each line and the mass is the central coefficient that relates the two components. Chirality here is not an extra operator: it is the split of the field into its L part and its R part, and the mass is what mixes the two. The operator is one-sided, and the two lines are the two values. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+in which the gradient multiplies on the left in each line and the mass is the central coefficient that relates the two components. Chirality here is not an extra operator: it is the split of the field into its L part and its R part, and the mass is what mixes the two. The operator is one-sided, and the two lines are the two values. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **The two-sided equation, and the mass direction.** Kravchenko's equation is a single equation on $\mathbb{B}$, written $\mathcal NF=0$, with
 
 $$
-\mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-k_mi\,\overline{F}\,\vec e_z,\qquad
+\mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-2\pi\nu_mi\,\overline{F}\,\vec e_z,\qquad
 D_3=\sum_{\eta\in\{x,r_y,r_z\}}\vec e_\eta\frac{\partial}{\partial R_\eta},
 $$
 
@@ -178,10 +178,10 @@ where $r'_t$ is the physical time, related to the corpus's coordinate by $Q_t=i 
 
 | | Daviau equation | Corpus chiral pair | Kravchenko's equation |
 |---|---|---|---|
-| Equation | $\mathfrak D\tilde{Ξ}(-\vec e_x)=k_m\overline{\tilde{Ξ}}+q\tilde A_{\Phi}\tilde{Ξ}$ | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | $\mathcal NF=0$ |
+| Equation | $\mathfrak D\tilde{Ξ}(-\vec e_x)=2\pi\nu_m\overline{\tilde{Ξ}}+q\tilde A_{\Phi}\tilde{Ξ}$ | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | $\mathcal NF=0$ |
 | Multiplication | left by $\mathfrak D$, right by $-\vec e_x$ | left by $\tilde\nabla_\Phi$ and by $(\tilde\nabla_\Phi)^{\natural}$ | left by $i\partial/\partial r'_t$ and by $D_3$, right by $\vec e_z$ |
 | Field | $\tilde{Ξ}\in\mathbb{B}$, a general element | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | $F\in\mathbb{B}$ |
-| Mass | $m\overline{\tilde{Ξ}}$, conjugate-linear | the pairing of the two values | $-k_mi\overline{F}\vec e_z$ |
+| Mass | $m\overline{\tilde{Ξ}}$, conjugate-linear | the pairing of the two values | $-\nu_mi\overline{F}\vec e_z$ |
 | Chirality | the field carries both values; the right factor is a bivector | the two equations are the two values | the right factor is the fixed direction $\vec e_z$ |
 | Role in the corpus | the space formulation | the corpus's formulation | the dictionary and the Cauchy theory |
 
@@ -196,7 +196,7 @@ The other formulation writes the Dirac equation for a field of the algebra of fo
 $$
 \frac{\partial}{\partial R_t}\tilde{Ξ}\,(i\vec e_z)
 +\sum_{\eta\in\{x,r_y,r_z\}}\vec e_\eta\frac{\partial}{\partial R_\eta}\tilde{Ξ}\,(i\vec e_z)
-=-k_m\overline{\tilde{Ξ}}+q\Bigl(A_t+\sum_{\eta\in\{x,r_y,r_z\}}A_\eta\vec e_\eta\Bigr)\tilde{Ξ} .
+=-2\pi\nu_m\overline{\tilde{Ξ}}+q\Bigl(A_t+\sum_{\eta\in\{x,r_y,r_z\}}A_\eta\vec e_\eta\Bigr)\tilde{Ξ} .
 $$
 
 The time derivative carries no space vector in either formulation, and that is what puts the two equations in the same shape.
@@ -280,7 +280,7 @@ The formulation is an equivalent rewriting and carries no new physics. Its value
 | $\overline{\tilde{Ξ}}$ | The star of the source: the corpus's complex conjugation, not ${}^{*}$ |
 | $\mathfrak D=e_t\partial/\partial R_t+i\vec e_y\partial/\partial R_x+i\vec e_z\partial/\partial R_y+i\vec e_x\partial/\partial R_z$ | The cyclically permuted gradient |
 | $\tilde A_{\Phi}=A_t\,e_t+A_x\,i\vec e_y+A_y\,i\vec e_z+A_z\,i\vec e_x$ | The potential in the same basis |
-| $\mathfrak D\tilde{Ξ}(-\vec e_x)=k_m\overline{\tilde{Ξ}}+q\tilde A_{\Phi}\tilde{Ξ}$ | The Daviau equation |
+| $\mathfrak D\tilde{Ξ}(-\vec e_x)=2\pi\nu_m\overline{\tilde{Ξ}}+q\tilde A_{\Phi}\tilde{Ξ}$ | The Daviau equation |
 | $-\vec e_x$ | The fixed right factor; a bivector, even in both parities |
 | $z$ | The cyclic relabelling of the three space directions, $z^3=\mathrm{id}$ |
 | $\mathbb{B}$ | The biquaternion algebra; the algebra of the formulation |

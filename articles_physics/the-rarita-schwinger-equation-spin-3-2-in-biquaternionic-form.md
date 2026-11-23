@@ -6,18 +6,18 @@ The Proca equation carries spin one, and the Dirac equation carries spin one-hal
 
 The article writes the system in biquaternionic form and reduces it in the rest frame, where the spin-$\tfrac32$ content is visible. The carrier is a family of four elements of the algebra, $\tilde{Ξ}_{\imath}\in\mathbb{B}$ with $\mu=0,1,2,3$, and the equation is three statements. The first is the chiral pair of the companion Dirac article, written once for each component,
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\imath,R}=k_m\tilde{Ξ}_{\imath,L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\imath,R}=2\pi\nu_m\tilde{Ξ}_{\imath,L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\imath,L}=k_m\tilde{Ξ}_{\imath,R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\imath,L}=2\pi\nu_m\tilde{Ξ}_{\imath,R},
 \qquad \mu=0,1,2,3 .
 $$
 The two subscripts take the two values $L$ and $R$ of *Special Element Conventions*, §*The Chirality Convention*, and the derivative is the gradient of *Operator and Calculus Conventions*, §*The Gradient*. Neither value closes on its own: each equation carries one value into the other, so the mass is the pairing of the two. Read from either side, every component of the field is a Dirac field.
 
 The calculus is the corpus's and is cited, not restated. The first-order operator is the biquaternionic gradient $\tilde\nabla_\Phi$, its quaternion conjugate is $(\tilde\nabla_\Phi)^{\natural}$, and the d'Alembertian $\Box_\Phi$ is the quaternionic norm of the gradient, all three as fixed in *Operator and Calculus Conventions*, §*The Gradient* and §*The Quaternionic Bilinear Product, Its Form and Its Norm*. The pair of first-order equations, and the square of each line, are those of §*The Two First-Order Equations and Their Symbol* of the same article. No other letter names a derivative below.
 
-The gradient does not square to a scalar, and that is why the massive equation is a pair. With $i \frac{h}{2\pi}\tilde K_{\Phi}=-\frac{h}{2\pi} k_{t}^{\prime}\,e_t+i \frac{h}{2\pi}\vec k_\Phi$ the symbol of the gradient, the time unit commutes with the three spatial units and the mixed derivatives are symmetric, so the square keeps a vector part,
+The gradient does not square to a scalar, and that is why the massive equation is a pair. With $i h\,\tilde\Upsilon_{\Phi}=-h\,\nu_t^{\prime}\,e_t+i h\,\vec\nu_\Phi$ the symbol of the gradient, the time unit commutes with the three spatial units and the mixed derivatives are symmetric, so the square keeps a vector part,
 $$
--\frac{h^{2}}{4\pi^{2}}\tilde K_{\Phi}^{2}=\frac{h^{2}}{4\pi^{2}}\bigl(k_{t}^{\prime\,2}+\lvert\vec k_\Phi\rvert^{2}\bigr)e_t-2i \frac{h^{2}}{4\pi^{2}}k_{t}^{\prime}\vec k_\Phi .
+-\frac{h^{2}}{4\pi^{2}}\tilde\Upsilon_{\Phi}^{2}=\frac{h^{2}}{4\pi^{2}}\bigl(4\pi^{2}\nu_t^{\prime\,2}+\lvert2\pi\vec\nu_\Phi\rvert^{2}\bigr)e_t-2i \frac{h^{2}}{4\pi^{2}}2\pi\nu_t^{\prime}2\pi\vec\nu_\Phi .
 $$
 The computation is a derived form of this article. It says that $\tilde\nabla_\Phi^2$ is neither a scalar nor the d'Alembertian, so no first-order operator with scalar square exists in this algebra, and a single field carries no mass. The massless equation is one equation on one element, $\tilde\nabla_\Phi\tilde{Ξ}=0$, and the massive equation is the pair above, whose scalar square is $\Box_\Phi$.
 
@@ -134,8 +134,8 @@ with the sign of $\Gamma_{j\eta}$ fixed by the orientation $\vec e_x\vec e_y=\ve
 $$
 \boxed{\;
 \begin{aligned}
-\tilde\nabla_\Phi\tilde{Ξ}_{\imath,R}&=k_m\tilde{Ξ}_{\imath,L},\\
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\imath,L}&=k_m\tilde{Ξ}_{\imath,R},
+\tilde\nabla_\Phi\tilde{Ξ}_{\imath,R}&=2\pi\nu_m\tilde{Ξ}_{\imath,L},\\
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\imath,L}&=2\pi\nu_m\tilde{Ξ}_{\imath,R},
 \end{aligned}
 \qquad\text{for each }\mu\;}
 $$
@@ -205,7 +205,7 @@ Every number below is recorded in both languages, the algebra and a display of t
 
 *At generic lightlike momenta*: the nullity is six, the four-dimensional space of pure-gauge modes $\tilde{Ξ}_{\imath}\propto\partial/\partial x_{\imath}\epsilon$ is a subspace, the divergence vanishes on the whole solution space, the trace does not, and adjoining the trace leaves four. The trace values of the solutions span a space of dimension two, which is the space of trace shifts the gauge transformation produces.
 
-*In the algebra*: the trace map has rank four on the sixteen complex components. On a null momentum the symbol of the gradient, $i \frac{h}{2\pi}\tilde K_{\Phi}=-\frac{h}{2\pi} k_{t}^{\prime}\,e_t+i \frac{h}{2\pi}\vec k_\Phi$, is a zero divisor. The null condition is its quaternion norm, $-\frac{h^{2}}{4\pi^{2}}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=\frac{h^{2}}{4\pi^{2}}\bigl(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}\bigr)=0$, which is $k_{t}^{\prime\,2}=\lvert\vec k_\Phi\rvert^{2}$, that is $\varpi^{2}=c^{2}\vec k_\Phi^{\,2}$ at $k_m=0$, and not $k_{t}^{\prime\,2}=-\lvert\vec k_\Phi\rvert^{2}$. Then left multiplication by $i \frac{h}{2\pi}\tilde K_{\Phi}$ has rank two and a two-dimensional kernel, checked on four independent null momenta. On a non-null momentum the same left multiplication has rank four and no kernel. That kernel is where the two helicities live, and it is the algebraic reason the massless count is the count it is.
+*In the algebra*: the trace map has rank four on the sixteen complex components. On a null momentum the symbol of the gradient, $i h\,\tilde\Upsilon_{\Phi}=-h\,\nu_t^{\prime}\,e_t+i h\,\vec\nu_\Phi$, is a zero divisor. The null condition is its quaternion norm, $-\frac{h^{2}}{4\pi^{2}}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=\frac{h^{2}}{4\pi^{2}}\bigl(\nu_t^{\prime\,2}-\lvert\vec\nu_\Phi\rvert^{2}\bigr)=0$, which is $\nu_t^{\prime\,2}=\lvert\vec\nu_\Phi\rvert^{2}$, that is $\varpi^{2}=c^{2}\,2\pi\vec\nu_\Phi^{\,2}$ at $\nu_m=0$, and not $\nu_t^{\prime\,2}=-\lvert\vec\nu_\Phi\rvert^{2}$. Then left multiplication by $i h\,\tilde\Upsilon_{\Phi}$ has rank two and a two-dimensional kernel, checked on four independent null momenta. On a non-null momentum the same left multiplication has rank four and no kernel. That kernel is where the two helicities live, and it is the algebraic reason the massless count is the count it is.
 
 *The transverse map.* The map $T$ of §*The Transverse Condition on the Vector Index* was checked on fifty generic families of three components: it is unchanged by a second application to $3\times10^{-16}$, it annihilates every longitudinal family $\tilde\xi_k=\vec e_\eta\tilde\zeta$, it fixes every family with $\sum_\eta\vec e_\eta\tilde\xi_k=0$, and its rank over the vector index is two.
 
@@ -257,13 +257,13 @@ $$
 $$
 with $\tilde Q=x_0e_t+\sum_\eta x_\eta\vec e_\eta$ the coordinate element and $\tilde P_{\Phi}=p_0e_t+\sum_\eta p_\eta\vec e_\eta$ its conjugate momentum, the Dirac equation on the component requires $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ in the normalization of the companion Dirac article, that is,
 $$
-\frac{\varpi^2}{c^2} - \vec k_\Phi^2 = k_m^{2},
+\frac{\varpi^2}{c^2} - 2\pi\vec\nu_\Phi^2 = 4\pi^{2}\nu_m^{2},
 \qquad\text{i.e.}\qquad
-\varpi^2 = c^2\vec k_\Phi^2 + c^2k_m^{2},
+\varpi^2 = c^4\pi\vec\nu_\Phi^2 + c^2\,4\pi^{2}\nu_m^{2},
 $$
-the same physical massive shell as the Proca field. The trace constraint and the subsidiary conditions then reduce the sixteen components to the four states of the quartet, with the three-momentum on the shell. The dispersion relation is therefore common to the massive spin-one and spin-$\tfrac32$ fields, as it must be: the mass shell is a property of the representation's Casimir and not of the index structure. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+the same physical massive shell as the Proca field. The trace constraint and the subsidiary conditions then reduce the sixteen components to the four states of the quartet, with the three-momentum on the shell. The dispersion relation is therefore common to the massive spin-one and spin-$\tfrac32$ fields, as it must be: the mass shell is a property of the representation's Casimir and not of the index structure. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
-The angle is $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real.
+The angle is $\theta_{\mathrm{pwp}}=\frac{p\cdot x}{h}=\omega r'_t-2\pi\vec\nu_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real.
 
 ## Comparison with Spin One and Spin One-Half
 
@@ -322,8 +322,8 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The gradient and its quaternion conjugate; the only first-order operators of the article |
 | $\Box_\Phi$ | The d'Alembertian in the material reading, the quaternionic norm of the gradient |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol* |
-| $i \frac{h}{2\pi}\tilde K_{\Phi}$ | Symbol of the gradient, $-\frac{h}{2\pi} k_{t}^{\prime}\,e_t+i \frac{h}{2\pi}\vec k_\Phi$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | The pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol* |
+| $i h\,\tilde\Upsilon_{\Phi}$ | Symbol of the gradient, $-h\,\nu_t^{\prime}\,e_t+i h\,\vec\nu_\Phi$ |
 | $\omega=-\vec e_z$, $\omega^2=-e_t$ | The right multiplier that carries the source's $i$; eigenvalue $+i$ on the $L$ value and $-i$ on the $R$ value |
 | $e_t$, $i\vec e_\eta$ | The four units that square to $+e_t$; the images of the source's four generators |
 | $\tilde{Ξ}_{\imath}\in\mathbb{B}$ | Biquaternion-valued components of the field, $\mu=0,1,2,3$ |
@@ -333,7 +333,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $\varepsilon_{\imath}=-g_{\imath\imath}=(1,-1,-1,-1)$ | Sign vector of the frame; the metric weight of a contracted low index |
 | $\tilde S_{\Psi}=\tilde{Ξ}_{0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{k}\vec e_z$ | Trace element; the source's trace, four complex conditions of rank four |
 | $\operatorname{div}\tilde{Ξ}=\sum_{\imath}\varepsilon_{\imath}\partial/\partial x_{\imath}\tilde{Ξ}_{\imath}$ | Covariant divergence; a consequence of the equation for every $m$ |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\imath,R}=k_m\tilde{Ξ}_{\imath,L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\imath,L}=k_m\tilde{Ξ}_{\imath,R}$ | Chiral pair on each component; the dynamics |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\imath,R}=2\pi\nu_m\tilde{Ξ}_{\imath,L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\imath,L}=2\pi\nu_m\tilde{Ξ}_{\imath,R}$ | Chiral pair on each component; the dynamics |
 | $\tilde\xi_k$ | The three spatial components at rest |
 | $T(\tilde\xi)_k=\tilde\xi_k+\tfrac13\vec e_\eta\sum_j\vec e_j\tilde\xi_j$ | The transverse map on the vector index; unchanged by a second application, of rank two |
 | $T_{\imath\jmath\rho}$, $h_{\imath\jmath}$ | The source's antisymmetrized triple and pair, objects of one display; kinetic and mass structures |

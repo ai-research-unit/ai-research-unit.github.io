@@ -18,9 +18,9 @@ The gauge principle article derived $\tilde\nabla_{\mathrm{gco},\Phi}$ from the 
 
 Three results are established here.
 
-1. **The coupled equation.** Replacing the gradient in the free biquaternion Dirac equation by the covariant derivative gives the pair $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$. The second operator is the $\natural$-image of the first, so it carries the quaternion-conjugate gradient and the conjugate connection.
+1. **The coupled equation.** Replacing the gradient in the free biquaternion Dirac equation by the covariant derivative gives the pair $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$. The second operator is the $\natural$-image of the first, so it carries the quaternion-conjugate gradient and the conjugate connection.
 2. **Exact gauge covariance, massive as well as massless.** The pair holds in every gauge when it holds in one, because the parent's mass term is linear in the field and the local phase is one central scalar multiplying the field from the left, so the mass term acquires the same factor as the derivative term. The mass breaks the *relative* phase of the two parts, not the common one.
-3. **A negative result on the current.** The bilinear $i\tilde{Ξ}\tilde{Ξ}^*$ is a material-sector object and is gauge invariant, but it is **not conserved** on solutions of the massless equation: the exact solution written in the section on the current gives $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$. The electromagnetic current of the coupled system is therefore not a product of the field with its conjugate inside the algebra. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+3. **A negative result on the current.** The bilinear $i\tilde{Ξ}\tilde{Ξ}^*$ is a material-sector object and is gauge invariant, but it is **not conserved** on solutions of the massless equation: the exact solution written in the section on the current gives $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$. The electromagnetic current of the coupled system is therefore not a product of the field with its conjugate inside the algebra. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The division between what is established and what is interpretation is stated at the outset and kept explicit.
 
@@ -35,7 +35,7 @@ The article is organized as follows. The next section recalls the Dirac field, i
 The **biquaternion Dirac field** is an element $\tilde{Ξ}(\tilde{Q}) \in \mathbb{B}$ satisfying the free equation
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\,\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R} .
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\,\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\,\tilde{Ξ}_{R} .
 $$
 
 The two members are the **chiral pair**. The first acts on the $R$ part of the field by the gradient, the second on the $L$ part by the quaternion conjugate of the gradient. When $m = 0$ they decouple,
@@ -108,13 +108,13 @@ $$
 that is, $\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ acting by **left multiplication**. Applied to the free Dirac equation in its linear form, the prescription gives the **minimally coupled biquaternion Dirac equation**
 
 $$
-\boxed{\ \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = k_m\,\tilde{Ξ}_{L}, \qquad (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R}\ }
+\boxed{\ \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\,\tilde{Ξ}_{L}, \qquad (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\,\tilde{Ξ}_{R}\ }
 $$
 
 with $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} := (\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}^{\natural}$ — the quaternion conjugate of the operator, not the operator of the opposite charge — that is,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{2\pi i\,ϙ}{h}\,\tilde{A}_{\Phi}\,\tilde{Ξ}_{R} = k_m\,\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} +\frac{2\pi i\,ϙ}{h}\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{i\,ϙ}{h}\,\tilde{A}_{\Phi}\,\tilde{Ξ}_{R} = 2\pi\nu_m\,\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} +\frac{i\,ϙ}{h}\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{L} = 2\pi\nu_m\,\tilde{Ξ}_{R},
 $$
 
 and in the massless case the two members decouple separately,
@@ -173,7 +173,7 @@ Two forms are in circulation on the algebra, and the prescription of this articl
 **The pair.** The field is an element and $\lambda$ is one central element multiplying it from the left. Then the pair
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}
 $$
 
 is covariant for the reason computed in the next section: $\lambda$ is central, so it passes through both gradients and through the mass.
@@ -181,7 +181,7 @@ is covariant for the reason computed in the next section: $\lambda$ is central, 
 **The two-sided form.** The parent also carries Kravchenko's equation, a single equation on a general element $F$ in which the derivative acts on the left and the mass term on the right (*The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*), with $\vec u$ the declared unit of the frame:
 
 $$
-\mathcal{N}F = -(\tilde\nabla_\Phi)^{\natural}F - k_m\,i\,\overline{F}\,\vec u = 0 ,
+\mathcal{N}F = -(\tilde\nabla_\Phi)^{\natural}F - 2\pi\nu_m\,i\,\overline{F}\,\vec u = 0 ,
 $$
 
 the bar being the complex conjugation of the coefficients and not the real structure $\flat$. The mass term combines a conjugation, the central $i$ and a right multiplication by $\vec u$, and it is not a scalar multiple of the field.
@@ -191,7 +191,7 @@ the bar being the complex conjugation of the coefficients and not the real struc
 $$
 -(\tilde\nabla_\Phi)^{\natural}\left(\lambda F\right) = \lambda\left(-(\tilde\nabla_\Phi)^{\natural}F\right),
 \qquad
--k_m\,i\,\overline{\lambda F}\,\vec u = \bar\lambda\left(-k_m\,i\,\overline{F}\,\vec u\right),
+-2\pi\nu_m\,i\,\overline{\lambda F}\,\vec u = \bar\lambda\left(-2\pi\nu_m\,i\,\overline{F}\,\vec u\right),
 $$
 
 and $\bar\lambda\ne\lambda$ for a non-real $\lambda$. The two-sided form therefore has **no continuous central phase symmetry**: its symmetry group is the real rescalings $F\mapsto rF$, $r\in\mathbb{R}^{\times}$. There is no phase to localize, so the minimal-coupling prescription cannot be transferred to it by replacing the gradient with the covariant derivative; coupling that form would be a different construction, which this article does not attempt.
@@ -260,13 +260,13 @@ $$
 (*The Covariant Derivative and Gauge Connection in Biquaternionic Form*), the scalar part being the covariant d'Alembertian and the vector part the curvature. Applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the first member of the massive pair and using the second gives
 
 $$
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = k_m\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = k_m^{2}\tilde{Ξ}_{R},
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R},
 $$
 
 that is,
 
 $$
-\left(\sum_{\imath\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2} +\frac{2\pi i\,ϙ}{h}\tilde{F} - k_m^{2}\right)\tilde{Ξ}_{R} = 0 ,
+\left(\sum_{\imath\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2} +\frac{i\,ϙ}{h}\tilde{F} - 4\pi^{2}\nu_m^{2}\right)\tilde{Ξ}_{R} = 0 ,
 $$
 
 a covariant wave equation with a curvature term. The corresponding statement for $\tilde{Ξ}_{L}$ carries $\tilde\nabla_{\mathrm{gco},\Phi}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ in place of $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$. The curvature term is the algebra element $\frac{2\pi i\,ϙ}{h}\tilde{F}$ multiplying the field; no further object is introduced, and the comparison of this second-order operator with the one of the older literature is a matter of display and is not made in this article.
@@ -274,17 +274,17 @@ a covariant wave equation with a curvature term. The corresponding statement for
 **The constant-potential case, evaluated.** For constant $\tilde{A}_{\Phi}$ the curvature term vanishes, $\tilde{F}=0$, and the second-order operator is the free one with every component shifted at once,
 
 $$
-k_{\Phi,\imath}\ \longmapsto\ k_{\Phi,\imath}+\frac{2\pi ϙ}{h}A_{\imath} ,
+\nu_{\Phi,\imath}\ \longmapsto\ \nu_{\Phi,\imath}+\frac{ϙ}{h}A_{\imath} ,
 $$
 
-so the mass shell is **translated and not resized**. A uniform $A_t$ moves every level by $qA_t$ and leaves every spacing unchanged, and no constant $\tilde{A}_{\Phi}$ opens a gap: **the translation is the potential's, the gap is $k_m$'s**, and this is the shortest place to see that the two numbers in the equation do different jobs. Checked on a plane wave with $k=(1.3,\,0.9,\,-0.6,\,0.5)$ and $\frac{2\pi ϙ}{h}A=(0.35,\,0.14,\,-0.21,\,0.28)$: free part $3.11$, cross term $1.694$, quadratic part $0.2646$, total $5.0686$, equal to $\sum_{\imath}\left(k_{\Phi,\imath}+\frac{2\pi ϙ}{h}A_{\imath}\right)^2$ to machine precision, and the vector part of $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$ vanishes below $10^{-16}$. A gap needs the off-diagonal $k_m$, which is why the mass is not an addition to the gradient at all.
+so the mass shell is **translated and not resized**. A uniform $A_t$ moves every level by $qA_t$ and leaves every spacing unchanged, and no constant $\tilde{A}_{\Phi}$ opens a gap: **the translation is the potential's, the gap is $\nu_m$'s**, and this is the shortest place to see that the two numbers in the equation do different jobs. Checked on a plane wave with $k=(1.3,\,0.9,\,-0.6,\,0.5)$ and $\frac{2\pi ϙ}{h}A=(0.35,\,0.14,\,-0.21,\,0.28)$: free part $3.11$, cross term $1.694$, quadratic part $0.2646$, total $5.0686$, equal to $\sum_{\imath}\left(\nu_{\Phi,\imath}+\frac{ϙ}{h}A_{\imath}\right)^2$ to machine precision, and the vector part of $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$ vanishes below $10^{-16}$. A gap needs the off-diagonal $\nu_m$, which is why the mass is not an addition to the gradient at all.
 
 ## The Massive Case: Gauge Covariance and the Broken Relative Phase
 
 The massive equation is where the mass term's role is decided, and with the linear pair it is benign. Suppose the minimally coupled massive equation holds in one gauge:
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R} .
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R} .
 $$
 
 Because $\tilde\nabla_{\mathrm{gco},\Phi}$ is covariant, the left-hand side of the transformed first equation is
@@ -296,7 +296,7 @@ $$
 and the right-hand side is the transformed mass term, which for a **linear** mass term carries the same factor:
 
 $$
-k_m\tilde{Ξ}_{L,2} = k_m\lambda\,\tilde{Ξ}_{L} .
+\nu_m\tilde{Ξ}_{L,2} = \nu_m\lambda\,\tilde{Ξ}_{L} .
 $$
 
 The two sides transform identically, because the central phase is a scalar and the mass is one. The same holds for the second equation, and with the **same** $\lambda$ rather than its conjugate: the factor is $\lambda$ for either member. The massive coupled equation is therefore **form-invariant** under the local phase, and it holds in every gauge when it holds in one — exactly as in the massless case.
@@ -502,14 +502,14 @@ $$
 acting by left multiplication on the field. The coupled equation is
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R},
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
 that is,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}, \qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} +\frac{i\,ϙ}{h}\tilde{A}_{\Phi}^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
 with the interaction term $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$ that the localized central phase forces. In the massless case the two members decouple, $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 0$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 0$.
@@ -520,10 +520,10 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi,2}\tilde{Ξ}_{R,2} = \lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde{Ξ}_{L,2} = \lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L},
 $$
 
-the same factor $\lambda$ for either member, and the parent's linear mass term acquires that same factor, so $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$ holds in every gauge when it holds in one. The continuous $\mathrm{U}(1)$ of the massless theory survives the mass; what the mass breaks is the relative phase that multiplies the two parts oppositely. Squaring the pair gives the covariant wave equation
+the same factor $\lambda$ for either member, and the parent's linear mass term acquires that same factor, so $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$ holds in every gauge when it holds in one. The continuous $\mathrm{U}(1)$ of the massless theory survives the mass; what the mass breaks is the relative phase that multiplies the two parts oppositely. Squaring the pair gives the covariant wave equation
 
 $$
-\left(\sum_{\imath\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2} +\frac{2\pi i\,ϙ}{h}\tilde{F} - k_m^{2}\right)\tilde{Ξ}_{R} = 0 .
+\left(\sum_{\imath\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2} +\frac{i\,ϙ}{h}\tilde{F} - 4\pi^{2}\nu_m^{2}\right)\tilde{Ξ}_{R} = 0 .
 $$
 
 The prescription attaches to the one-sided pair and not to the parent's two-sided form, because the two-sided form's mass term is a conjugation and a right multiplication and carries no continuous central phase to localize.
@@ -549,7 +549,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde{Ξ}$ | Biquaternion Dirac field, an element of $\mathbb{B}$ |
 | $\tilde{Ξ}_{L}, \tilde{Ξ}_{R}$ | The two parts of the field; the subscript names one of two components and no more |
 | $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$, $\tilde{Ξ}^* = \overline{\tilde{Ξ}^{\natural}}$ | Anti-Hermitian conjugate of the field (the algebra's real structure; **not** the mass) |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | Free biquaternion Dirac equation (massive chiral pair) |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | Free biquaternion Dirac equation (massive chiral pair) |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Gauge transformation of the connection |
 | $\lambda = \exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\Gamma$ real scalar |
@@ -559,7 +559,7 @@ One external result is recorded on the source side, and it is not a development 
 | $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} = (\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}^{\natural}$ | Its $\natural$-image; the operator of the second member of the pair |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath}$ | Components; $\partial/\partial R_t = -i\,\partial/\partial r'_t$ |
 | $\tilde{F}$ | Field-strength biquaternion; $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 +\frac{2\pi i\,ϙ}{h}\tilde{F}$ |
-| $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | Minimally coupled Dirac equation |
+| $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | Minimally coupled Dirac equation |
 | $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$ | Interaction term |
 | $\exp(2i\theta_{\mathrm{gau}})$ | Phase that an antilinear mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
 | $\|\tilde{Ξ}\|^2 = \mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^*)$ | Euclidean modulus squared; real and $\ge 0$, the sum of the four squared coefficient moduli |

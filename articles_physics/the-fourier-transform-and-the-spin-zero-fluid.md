@@ -23,25 +23,25 @@ Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
 \rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}},
 \qquad
-k_m=\frac{2\pi mc}{h}.
+\nu_m=\frac{mc}{h}.
 $$
 
-The symbol rule is the Schrödinger rung's, with the temporal slot written once: a plane wave carries $e^{i(\vec k_\Phi\cdot\vec r-k_t'r_t')}$ with $k_t'=\omega/c=\frac{2\pi E}{h\,c}$, so $\partial/\partial r_t'\mapsto-ik_t'$ and $\tilde\nabla_\Phi\mapsto i\tilde K_\Phi$ with $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$.
+The symbol rule is the Schrödinger rung's, with the temporal slot written once: a plane wave carries $e^{i(\vec\nu_\Phi\cdot\vec r-\nu_t'r_t')}$ with $2\pi\nu_t'=\omega/c=\frac{E}{h\,c}$, so $\partial/\partial r_t'\mapsto-ik_t'$ and $\tilde\nabla_\Phi\mapsto 2\pi i\tilde\Upsilon_\Phi$ with $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$.
 
 ## The Mode, and the Second-Order Shell
 
-A mode is a point of $\tilde K_\Phi$ and one complex amplitude.
+A mode is a point of $\tilde\Upsilon_\Phi$ and one complex amplitude.
 
 $$
-\tilde\Xi=a\,e^{i(\vec k_\Phi\cdot\vec r-k_t'r_t')}e_t,
+\tilde\Xi=a\,e^{i(2\pi\vec\nu_\Phi\cdot\vec r-2\pi\nu_t'r_t')}e_t,
 \qquad
 \varrho=\lvert a\rvert,
 \qquad
 \rho_{\mathrm{num}}=\lvert a\rvert^{2},
 \qquad
-\vec v=\frac{h\vec k_\Phi}{2\pi m},
+\vec v=\frac{h\vec\nu_\Phi}{m},
 \qquad
-\gamma=\frac{h k_t'}{2\pi mc}.
+\gamma=\frac{h \nu_t'}{2\pi mc}.
 $$
 
 **The quantum potential vanishes at a mode for the same reason as at the rung below: the scale is constant.**
@@ -57,9 +57,9 @@ and this is not an approximation in any parameter. The amplitude equation, which
 $$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2},
 \qquad
-E=\frac{h}{2\pi} c\,k_t',
+E=\frac{h}{2\pi} c\,2\pi\nu_t',
 \qquad
-\vec p=\frac{h}{2\pi}\vec k_\Phi .
+\vec p=h\,2\pi\vec\nu_\Phi .
 $$
 
 The unit velocity is then exact.
@@ -70,7 +70,7 @@ $$
 =-c^{2}
 $$
 
-at a mode, by the display above and by nothing else. The check on the two modes $(\vec k_\Phi,k_t')=(0.7,1.220656)$ and $(0.3,1.044031)$, with lengths in units of $1/k_m$ and momenta in units of $mc$, gave $\langle\tilde V_\Phi\rangle_{\natural}=-1.000000$ in both cases.
+at a mode, by the display above and by nothing else. The check on the two modes $(2\pi\vec\nu_\Phi,2\pi\nu_t')=(0.7,1.220656)$ and $(0.3,1.044031)$, with lengths in units of $1/\nu_m$ and momenta in units of $mc$, gave $\langle\tilde V_\Phi\rangle_{\natural}=-1.000000$ in both cases.
 
 So the companion's qualification is a statement about how many modes are present. The velocity is invertible wherever the local word is a single mode, and the failure of the unit is the measure of the local admixture. That is what $Q_{\mathrm{qnt}}$ is, in the momentum-space reading: a measure of the distance between the local field and a single point of the shell.
 
@@ -83,16 +83,16 @@ A transform is a measure on a support, and the two potentials of the block act o
 | what is added | what it does to the shell | the momentum-space face |
 | --- | --- | --- |
 | the quantum potential $Q_{\mathrm{qnt}}$ | changes the radius: $m^{2}c^{2}\mapsto m^{2}c^{2}+2mQ_{\mathrm{qnt}}$ | the local support is a hyperboloid of a different size |
-| the connection $\varkappa\tilde A_\Phi$ | changes the centre: $\tilde K_\Phi\mapsto\tilde K_\Phi-\frac{2\pi \varkappa\tilde A_\Phi}{h}$ | the local support is a translated hyperboloid |
+| the connection $\varkappa\tilde A_\Phi$ | changes the centre: $\tilde\Upsilon_\Phi\mapsto\tilde\Upsilon_\Phi-\frac{\varkappa\tilde A_\Phi}{h}$ | the local support is a translated hyperboloid |
 
 The first row is this article's and the second is the charged companion's, and the comparison is the reason to state both. A radius cannot be removed by a change of variable and a centre can: a shift of a variable does not change a radius, and a translation is undone by a translation. **So the quantum potential is an intrinsic deformation of the support and the connection is a change of chart**, and the two statements are the two articles' first results in the momentum-space language.
 
 The radius reading survives the sum. For a general solution the two effects compose and the local support is a translated hyperboloid of shifted radius, which is the mass shell of the companion's equation with both terms in it. Nothing in the composition is an approximation, because the shell is an identity and not an expansion.
 
-The support of a solution is the pole set of the kernel, and that is not a coincidence of this rung. A mode at the label $\tilde K_\Phi$ solves the free equation exactly when the symbol vanishes there,
+The support of a solution is the pole set of the kernel, and that is not a coincidence of this rung. A mode at the label $\tilde\Upsilon_\Phi$ solves the free equation exactly when the symbol vanishes there,
 
 $$
-\mathcal N(\tilde K_\Phi)=k_t'^{\,2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}=0 ,
+\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'^{\,2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}=0 ,
 $$
 
 so the labels a solution's transform can occupy are the labels at which the kernel's inverse has its pole, and the residue there is the mode's weight. Two consequences follow and neither needs a calculation: the support cannot sit at a label the symbol does not vanish at, and a coupling that enters linearly moves the pole and cannot reshape it, which is the second row of the table above. At the rung below the symbol is affine rather than homogeneous, so its zero set is a paraboloid and not a hyperboloid — no shell in the sense of §*The Two Scalar Rungs*, but still a set of labels and still the support, and the identification survives with only the shape of the set changed.
@@ -120,12 +120,12 @@ The zero label is also the only label at which the action and the transform meet
 A mode lies on one sheet. The charge density is $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ with $\gamma=E/(mc^{2})$, so its sign is the sign of the mode's energy:
 
 $$
-\rho_{\mathrm{chg}}=\frac{h k_t'}{2\pi mc}\lvert a\rvert^{2}\ \text{ for the mode }(\vec k_\Phi,k_t'),
+\rho_{\mathrm{chg}}=\frac{h \nu_t'}{2\pi mc}\lvert a\rvert^{2}\ \text{ for the mode }(2\pi\vec\nu_\Phi,2\pi\nu_t'),
 $$
 
 and a negative-frequency mode carries a negative charge density. **The two sheets of the hyperboloid are two disjoint supports, so no mode can straddle them**: a point of the support is on one sheet or the other, and the transform of a mode is a delta at one point.
 
-A superposition that occupies both sheets has a density of both signs, and the amplitudes decide whether it does. On one hundred events with $\vec k_\Phi=5.0$ on the positive sheet and $\vec k_\Phi=0.1$ on the negative one, amplitudes $0.5$ and $1.0$, the charge density ran from $-1.777$ to $+2.317$. With amplitudes $1.0$ and $1.0$ the same pair gave $0.0005$ to $8.188$, of one sign. So the sign change is not automatic even when both sheets are occupied, and the reason is arithmetic: the incoherent part and the cross term have opposite signs and the cross term's magnitude is bounded by twice the geometric mean of the two incoherent parts, so the balance decides.
+A superposition that occupies both sheets has a density of both signs, and the amplitudes decide whether it does. On one hundred events with $2\pi\vec\nu_\Phi=5.0$ on the positive sheet and $2\pi\vec\nu_\Phi=0.1$ on the negative one, amplitudes $0.5$ and $1.0$, the charge density ran from $-1.777$ to $+2.317$. With amplitudes $1.0$ and $1.0$ the same pair gave $0.0005$ to $8.188$, of one sign. So the sign change is not automatic even when both sheets are occupied, and the reason is arithmetic: the incoherent part and the cross term have opposite signs and the cross term's magnitude is bounded by twice the geometric mean of the two incoherent parts, so the balance decides.
 
 The exact statement that survives every case is the per-mode one. A mode's density has the sign of its energy, exactly, and the two sheets are disjoint supports; anything beyond that is a statement about a particular pair of amplitudes. That is the honest form of the companion's two-sheetedness in momentum space, and the article claims no more.
 
@@ -138,7 +138,7 @@ The passage from this rung to the one below removes the mass from the shell, and
 | the shell | none: the Hamilton–Jacobi equation constrains nothing | $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$ |
 | the support of a solution | any set of points of the momentum space | a measure on the two-sheeted hyperboloid |
 | the sign of the density | one sign, always | the sign of the energy |
-| the velocity | $\frac{h}{2\pi}\vec k/m$, unbounded | $\frac{h}{2\pi}\vec k/m$ with $\gamma$ fixed by the shell |
+| the velocity | $h\,\vec\nu_{\Phi}/m$, unbounded | $h\,\vec\nu_{\Phi}/m$ with $\gamma$ fixed by the shell |
 | $Q$ at a mode | zero | zero |
 | what $Q$ does | deforms the density | deforms the radius of the support |
 
@@ -168,7 +168,7 @@ A mode has a constant scale, so its quantum potential vanishes exactly, and the 
 
 The quantum potential is a measure of the distance between the local field and a single point of the shell. It acts on the radius of the support; the connection acts on the centre. A radius cannot be removed by a change of variable and a centre can, so the quantum potential is an intrinsic deformation and the connection is a change of chart.
 
-The charge density of a mode is $\frac{h}{2\pi} k_t'\lvert a\rvert^{2}/(mc)$ and its sign is the sign of the energy, so a mode lies on one sheet of the two-sheeted hyperboloid and the sheets are disjoint supports. A superposition that occupies both can have a density of both signs: on one hundred events the amplitudes $0.5$ and $1.0$ gave $-1.777$ to $+2.317$, and equal amplitudes gave $0.0005$ to $8.188$.
+The charge density of a mode is $h\,\nu_t'\lvert a\rvert^{2}/(mc)$ and its sign is the sign of the energy, so a mode lies on one sheet of the two-sheeted hyperboloid and the sheets are disjoint supports. A superposition that occupies both can have a density of both signs: on one hundred events the amplitudes $0.5$ and $1.0$ gave $-1.777$ to $+2.317$, and equal amplitudes gave $0.0005$ to $8.188$.
 
 The passage to the first-order rung removes the shell and with it the radius reading, and keeps the vanishing of $Q_{\mathrm{qnt}}$ at a mode unchanged. The same functional has two pictures, one on the density and one on the radius, and the second exists only because the equation is second order.
 
@@ -177,15 +177,15 @@ The passage to the first-order rung removes the shell and with it the radius rea
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
-| $k_t'=\omega/c=\frac{2\pi E}{h\,c}$, $\vec k_\Phi=\frac{2\pi \vec p}{h}$ | The label of a mode |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
+| $2\pi\nu_t'=\omega/c=\frac{E}{h\,c}$, $2\pi\vec\nu_\Phi=\frac{\vec p}{h}$ | The label of a mode |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime 2}$ | The d'Alembertian on the material sector |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
 | $\tilde V_\Phi=\tilde P_\Phi/m=\tilde\nabla_\Phi S_{\tilde\Xi}/m$ | The four-velocity |
 | $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ | Its norm; $-c^{2}$ at a mode |
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\gamma=E/(mc^{2})$ | The conserved density |
-| $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The wave number element |
-| $\mathcal N(\tilde K_\Phi)=k_t'^{\,2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}$ | The symbol; its zero set is the mass shell, and the support of a solution is that set |
+| $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The wave number element |
+| $\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'^{\,2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}$ | The symbol; its zero set is the mass shell, and the support of a solution is that set |
 | $\varepsilon=\pm1$ | The branch |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 

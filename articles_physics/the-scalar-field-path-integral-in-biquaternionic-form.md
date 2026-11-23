@@ -62,12 +62,12 @@ $$
 Three features of this rewriting are structural rather than cosmetic. First, the integration variable is a function into the **centre**, so the path integral is an ordinary functional integral over complex functions, equivalently over pairs of real functions, and the state module on which spinor fields live is not integrated over at all. Second, the quadratic form in the exponent is the biquaternion norm shifted by the mass: the momentum-space symbol of $(\Box_\Phi-\mu^2)$ on the plane wave $\exp(-i\theta_{\mathrm{pwp}})$ is
 
 $$
-\frac{\omega^2}{c^2}-\vec k_\Phi^2-\mu^2
+\frac{\omega^2}{c^2}-2\pi\vec\nu_\Phi^2-\mu^2
 =-\left(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2\right),
 \qquad
 \langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural},
 \qquad
-\tilde P_{\Phi}=i\frac{\omega}{c}\,e_t+\vec k_\Phi,
+\tilde P_{\Phi}=i\frac{\omega}{c}\,e_t+2\pi\vec\nu_\Phi,
 $$
 
 Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
@@ -315,7 +315,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $Z_N(J)=(2\pi)^{N/2}(\det A)^{-1/2}\exp(J^{T}A^{-1}J/2)$, $Z_N\propto(\det A)^{-1}\exp(J^*A^{-1}J)$ | Finite-dimensional Gaussian identity, real and complex |
 | $\mathcal{G}_F$ | Feynman propagator; free two-point function |
 | $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation |
-| $\tilde P_{\Phi}=\frac{h}{2\pi}\,(i\omega/c\,e_t+\vec k_\Phi)$, $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ | Material four-wavevector and biquaternion norm |
+| $\tilde P_{\Phi}=\frac{h}{2\pi}\,(i\omega/c\,e_t+2\pi\vec\nu_\Phi)$, $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $\pi_{\mathrm{fop}}=-\frac{i\,h}{2\pi \xi_{\mathrm{scl}}}$ | Momentum representation; yields $[\xi_{\mathrm{fop}},\pi_{\mathrm{fop}}]=i\,\frac{h}{2\pi}\,\delta^{(3)}$ |
 | $S_E[\tilde{Ξ}]=\int\mathrm{Sc}(\tilde{Ξ}^{*}(-\Box_\Phi+\mu^2)\tilde{Ξ})$ | Euclidean action (Wick rotation) |
 | $\vert\langle0_{\mathrm{out}}\vert0_{\mathrm{in}}\rangle\vert^2=\vert Z[\tilde Q_5]\vert^2/\vert Z[0]\vert^2$ | Vacuum persistence amplitude |

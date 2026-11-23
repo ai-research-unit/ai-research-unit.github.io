@@ -299,7 +299,7 @@ The identification extends from a single spin-1/2 particle to a **spin-1/2 field
 The biquaternion Dirac equation (companion article) is the linear, chirality-off-diagonal pair
 
 $$
-\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}\;},
+\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}\;},
 $$
 
 where $\tilde{Ξ} = \tilde{Ξ}_{L} + \tilde{Ξ}_{R}$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to
@@ -308,7 +308,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ} = 0,
 $$
 
-which is a first-order equation for the field $\tilde{Ξ}$. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+which is a first-order equation for the field $\tilde{Ξ}$. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ### The Interpretation as a Spinor Field
 
@@ -322,7 +322,7 @@ The biquaternionic Dirac equation contains:
 
 - The kinematics of a relativistic spin-1/2 particle: the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ for plane-wave solutions.
 - The spin structure: the polarization biquaternion $\tilde{Ξ}_{0}$ in the plane-wave solution has two independent components, corresponding to the two spin states.
-- The mass term: the linear, chirality-off-diagonal mass term $k_m\tilde{Ξ}_{L,R}$, which couples the two chiral components of the spinor.
+- The mass term: the linear, chirality-off-diagonal mass term $\nu_m\tilde{Ξ}_{L,R}$, which couples the two chiral components of the spinor.
 
 ### What the Dirac Equation Does Not Contain
 
@@ -416,7 +416,7 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi_{\mathrm{id}},e_t\rangle_{*} = 2\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ | Born-rule expectation value; scalar-part image $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L},\ (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | Biquaternionic Dirac equation (linear chiral pair) |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L},\ (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | Biquaternionic Dirac equation (linear chiral pair) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |

@@ -17,11 +17,11 @@ The endpoint $2\pi$. At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the
 The equation. The coupled pair is
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi .
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi .
 $$
 
 Here $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ is the potential biquaternion, an element of the material sector $\mathbb{B}_\Phi$, with central scalar coefficients in the abelian case. That centality is the single fact the whole article turns on.
@@ -96,9 +96,9 @@ so a pure-gauge potential is absorbed by a reparameterisation of the angle and b
 The momentum. With $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ and $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ the free reading, the coupled reading is
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi,
+\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi,
 \qquad
-\tilde K_\Phi=i\frac{2\pi E}{h c}e_t+\frac{2\pi \vec p}{h}.
+\tilde\Upsilon_\Phi=i\frac{E}{h c}e_t+\frac{\vec p}{h}.
 $$
 
 Slot by slot this is
@@ -111,7 +111,7 @@ $$
 
 where $\kappa_t$ and $\vec\kappa$ are the components of the covariant wavevector. The whole of the classical substitution is one addition, because the scalar and vector potentials are the temporal and spatial slots of one element of $\mathbb{B}_\Phi$. No second rule is needed and no sign can be chosen independently.
 
-Which of the two is the momentum. The chart does not by itself decide whether $\tilde K_\Phi$ or $\tilde K_{\Phi,\mathrm{gco}}$ is "the" momentum; it states both and states their relation. The physical momentum is the one the velocity is built from, and the velocity is the boost's, which is §*The Kinetic Velocity*. The naming is settled there and not here.
+Which of the two is the momentum. The chart does not by itself decide whether $\tilde\Upsilon_\Phi$ or $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ is "the" momentum; it states both and states their relation. The physical momentum is the one the velocity is built from, and the velocity is the boost's, which is §*The Kinetic Velocity*. The naming is settled there and not here.
 
 The local character of the statement. The gradient of the angle is defined at each event, so the shift is a local statement and not an integrated one. This is the polar form's genuine addition over the element form: in the element form the potential appears as a term in the operator; here it appears as a shift of a gradient that can be read off at a point. The two are the same content and they are not the same display.
 
@@ -121,10 +121,10 @@ The local character of the statement. The gradient of the angle is defined at ea
 
 The boost is the velocity, and the coupling does not touch the boost.
 
-The velocity is read from the covariant wavevector. The parent's mass-shell proposition says that a field whose wavevector satisfies $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$ has $\tilde K_\Phi=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ for a boost. With the coupling the same proposition applies to the covariant wavevector:
+The velocity is read from the covariant wavevector. The parent's mass-shell proposition says that a field whose wavevector satisfies $\tilde\Upsilon_\Phi\tilde\Upsilon_\Phi^{\natural}=-\nu_m^{2}$ has $\tilde\Upsilon_\Phi=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ for a boost. With the coupling the same proposition applies to the covariant wavevector:
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=ik_m\,\tilde U_{\Psi,\mathrm b}^{-2},
+\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\,\tilde U_{\Psi,\mathrm b}^{-2},
 \qquad
 \tilde V_\Phi=ic\,\tilde U_{\Psi,\mathrm b}^{-2},
 \qquad
@@ -136,7 +136,7 @@ $$
 The boost in the word is therefore the one the *covariant* wavevector names. The canonical wavevector is the covariant one less the potential:
 
 $$
-\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi ϙ}{h}\tilde A_\Phi .
+\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{ϙ}{h}\tilde A_\Phi .
 $$
 
 What that says in one sentence. The velocity is kinetic: it is built from the wavevector the background leaves, and the potential sits entirely in the canonical wavevector. This is the classical statement $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}-ϙ\vec A$, and the chart states it as a property of which wavevector names the boost.
@@ -144,16 +144,16 @@ What that says in one sentence. The velocity is kinetic: it is built from the wa
 Why the radius does not move. The added term is central per component and of first degree in the field. It cannot rescale $\varrho$, and it cannot change the magnitude of the boost's rapidity by itself: it shifts the wavevector, and the rapidity is then read from the shifted wavevector by the same mass-shell identity. The invariant is
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2},
+\tilde\Upsilon_{\Phi,\mathrm{gco}}\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}=\kappa_t^{2}-|\vec\kappa|^{2}=-4\pi^{2}\nu_m^{2},
 $$
 
 and in canonical components it is
 
 $$
-\Bigl(\frac{2\pi E+ϙcA_t}{h c}\Bigr)^{2}-\Bigl|\frac{2\pi \vec p-q\vec A}{h}\Bigr|^{2}=-k_m^{2}.
+\Bigl(\frac{E+ϙcA_t}{h c}\Bigr)^{2}-\Bigl|\frac{\vec p-q\vec A}{h}\Bigr|^{2}=-4\pi^{2}\nu_m^{2}.
 $$
 
-The same translated hyperboloid as in the element form. The radius is $k_m$ and the potential moves the centre. A constant potential therefore shifts every level and opens no gap, and the polar reason is the one-line reason of the element form: a shift of a variable cannot change a radius.
+The same translated hyperboloid as in the element form. The radius is $\nu_m$ and the potential moves the centre. A constant potential therefore shifts every level and opens no gap, and the polar reason is the one-line reason of the element form: a shift of a variable cannot change a radius.
 
 **The velocity is invertible for every field.** $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ holds whatever the coupling, because the boost is invertible by construction and the density is a separate factor. The coupling does not enter that line at all, which is the chart's way of saying that the four-velocity is kinematical.
 
@@ -178,7 +178,7 @@ Only the angle moves. The scale, the boost and the rotor are gauge invariant by 
 The covariant wavevector is invariant.
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}\longmapsto\tilde\nabla_\Phi\Bigl(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda\Bigr)+\frac{2\pi ϙ}{h}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Lambda\bigr)=\tilde K_{\Phi,\mathrm{gco}} .
+\tilde\Upsilon_{\Phi,\mathrm{gco}}\longmapsto\tilde\nabla_\Phi\Bigl(\theta_{\mathrm{pha}}+\frac{ϙ}{h}\Lambda\Bigr)+\frac{ϙ}{h}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Lambda\bigr)=\tilde\Upsilon_{\Phi,\mathrm{gco}} .
 $$
 
 The invariant is the curvature. Define $\tilde F:=\tilde\nabla_\Phi^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$ restricted to its vector part; the operator identity of the covariant-derivative article gives
@@ -189,7 +189,7 @@ $$
 
 and $\tilde F$ is unchanged by the transformation, since a gradient can be absorbed and a field strength cannot. In the abelian case $\tilde F$ is the Maxwell biquaternion of *Maxwell's Equations in the Biquaternionic Formulation*.
 
-What the chart's invariants are, in one list. The radius $\varrho$; the rapidity $\theta_{\mathrm{rpd}}$ and the axis $\vec u_{\mathrm b}$; the rotor angle $\theta_{\mathrm{axr}}$ and its axis; the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}$; and the curvature $\tilde F$. The angle $\theta_{\mathrm{pha}}$ is a coordinate and not an invariant, and its gauge class is the physical statement.
+What the chart's invariants are, in one list. The radius $\varrho$; the rapidity $\theta_{\mathrm{rpd}}$ and the axis $\vec u_{\mathrm b}$; the rotor angle $\theta_{\mathrm{axr}}$ and its axis; the covariant wavevector $\tilde\Upsilon_{\Phi,\mathrm{gco}}$; and the curvature $\tilde F$. The angle $\theta_{\mathrm{pha}}$ is a coordinate and not an invariant, and its gauge class is the physical statement.
 
 **The field's frame factor is gauge invariant and this is the chart's cleanest sentence.** Since the gauge transformation multiplies the word by a central scalar, the frame factors $\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}$ are untouched. The three things the chart calls frame — the boost, the rotor, and their product — are therefore exactly the gauge-invariant part of the field's decomposition, and the phase is exactly the gauge-dependent part. That is a sharper statement than the element form can make, and it is the reason the polar chart is worth having.
 
@@ -243,13 +243,13 @@ The relative phase and the chart's parameter count. The mass breaks the relative
 
 ## Summary
 
-The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, and the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ substituted into it.
+The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, and the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ substituted into it.
 
 The coupling enters the logarithmic derivative as one added element, $\frac{2\pi iϙ}{h}\tilde A_\Phi$. Because that element is central per component, it lands in the phase bracket and in the boost bracket and in neither of the other two. The scale and the rotor are untouched by type, not by accident.
 
-The phase bracket carries the momentum, and the coupling shifts it: $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$, which is $E\mapsto E+ϙcA_t$ and $\vec p\mapsto\vec p-q\vec A$ in the slots. One element, one sign, no independent choice.
+The phase bracket carries the momentum, and the coupling shifts it: $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$, which is $E\mapsto E+ϙcA_t$ and $\vec p\mapsto\vec p-q\vec A$ in the slots. One element, one sign, no independent choice.
 
-The boost bracket carries the velocity, and the boost is named by the covariant wavevector, so the velocity is the kinetic one and the canonical wavevector is the covariant one less the potential. The mass shell is $\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2}$, a translated hyperboloid of unchanged radius: no constant potential opens a gap.
+The boost bracket carries the velocity, and the boost is named by the covariant wavevector, so the velocity is the kinetic one and the canonical wavevector is the covariant one less the potential. The mass shell is $\kappa_t^{2}-|\vec\kappa|^{2}=-4\pi^{2}\nu_m^{2}$, a translated hyperboloid of unchanged radius: no constant potential opens a gap.
 
 The gauge transformation moves the angle and nothing else, so the covariant wavevector and the frame factors are gauge invariant and the phase is not. The invariant is the curvature.
 
@@ -269,11 +269,11 @@ The polar equation is the free pair in variables. It closes for a plane wave in 
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | Potential biquaternion; material sector; coefficients central in the abelian case |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, left action |
 | $\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The added element: central imaginary slot plus Hermitian vector slot |
-| $\tilde K_\Phi=i\frac{2\pi E}{h c}e_t+\frac{2\pi \vec p}{h}$ | Canonical wavevector, from $\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ |
-| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; gauge invariant; names the boost |
-| $\kappa_t,\vec\kappa$ | Components of $\tilde K_{\Phi,\mathrm{gco}}$; $\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2}$ |
+| $\tilde\Upsilon_\Phi=i\frac{E}{h c}e_t+\frac{\vec p}{h}$ | Canonical wavevector, from $\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; gauge invariant; names the boost |
+| $\kappa_t,\vec\kappa$ | Components of $\tilde\Upsilon_{\Phi,\mathrm{gco}}$; $\kappa_t^{2}-|\vec\kappa|^{2}=-4\pi^{2}\nu_m^{2}$ |
 | $\tilde V_\Phi=ic\,\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ | Four-velocity; kinetic |
-| $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-vector factor; $\tilde K_{\Phi,\mathrm{gco}}=ik_m\mathcal B_\Psi$ |
+| $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-vector factor; $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\mathcal B_\Psi$ |
 | $i\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_{\imath}$ | The coupled phase bracket |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | The boost bracket; receives the Hermitian slot |
 | $\tilde F$ | Curvature; the gauge invariant |

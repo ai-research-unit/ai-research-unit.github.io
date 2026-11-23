@@ -88,15 +88,15 @@ so $i\tilde\nabla_\Phi$ is not self-adjoint for that form. The criterion is fixe
 
 **The Dirac equation in two forms.** The framework writes the Dirac equation in two forms, and the displays should be kept separate because they answer different questions. The defining form is the chiral pair,
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 with the gradient acting on the right-chirality part and its conjugate on the left-chirality part, and the mass coupling the two. The pair is two lines and no third object, and each line composed with the conjugate of the other is $\Box_\Phi$ acting on that part; the massive equation is the pair itself, one line per part. The two-sided form, from the two-sided operator theory of *The Feynman Propagator in Biquaternionic Form*, is
 $$
-\mathcal{N}\tilde{Ξ}=\Bigl(-(\tilde\nabla_\Phi)^{\natural}-k_mi\,\overline{\,\cdot}\,\vec e_z\Bigr)\tilde{Ξ}=0,
+\mathcal{N}\tilde{Ξ}=\Bigl(-(\tilde\nabla_\Phi)^{\natural}-2\pi\nu_mi\,\overline{\,\cdot}\,\vec e_z\Bigr)\tilde{Ξ}=0,
 $$
-with the mass acting on the right through conjugation. The three displays describe one physics: the first is the chirality form, the second the two lines written once each, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla_\Phi+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+with the mass acting on the right through conjugation. The three displays describe one physics: the first is the chirality form, the second the two lines written once each, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla_\Phi+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **The chirality.** The chirality is the right action by the element $-i\vec e_z$,
 $$
@@ -116,7 +116,7 @@ and the two forms are one operator read in two ways — the right action on the 
 $$
 D_F:\tilde{Ξ}\longmapsto m\,\overline{\tilde{Ξ}},
 $$
-equivalently $\xi D_F:\tilde{Ξ}\mapsto-k_mi\,\overline{\tilde{Ξ}}\,\vec e_z$, the chirality being a fixed right action. This is the framework's own mass, the one the two-sided Dirac equation carries. It is antilinear, it is not $\mathbb{B}_{\mathbb{R}}$-linear for $m\neq0$, and its square is the scalar
+equivalently $\xi D_F:\tilde{Ξ}\mapsto-\nu_mi\,\overline{\tilde{Ξ}}\,\vec e_z$, the chirality being a fixed right action. This is the framework's own mass, the one the two-sided Dirac equation carries. It is antilinear, it is not $\mathbb{B}_{\mathbb{R}}$-linear for $m\neq0$, and its square is the scalar
 $$
 D_F^2=\lvert m\rvert^2e_t,
 \qquad

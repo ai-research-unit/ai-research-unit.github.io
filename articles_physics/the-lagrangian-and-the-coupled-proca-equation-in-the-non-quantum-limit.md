@@ -8,7 +8,7 @@ The covariant Proca action with the complex word substituted,
 $$
 S=\int\mathrm{d}^{4}\varrho\;\Bigl\{\tfrac12\sum_{\imath}\varepsilon_{\imath}\bigl(\partial_{\imath} \varrho\bigr)^{2}
 +\tfrac12\varrho^{2}\sum_{\imath}\varepsilon_{\imath}\bigl(\kappa^{\mathrm{kin}}_{\imath}\bigr)^{2}
--\tfrac12k_m^{2}\varrho^{2}\,\mathcal{V}
+-\tfrac124\pi^{2}\nu_m^{2}\varrho^{2}\,\mathcal{V}
 +\text{(the frame's terms)}\Bigr\},
 $$
 
@@ -18,7 +18,7 @@ The amplitude's kinetic term is order two; the mass term is order zero; the phas
 
 There the field was real, the phase unavailable, and the oscillation in the amplitude. The amplitude's kinetic term was then of the same size as the mass term, so deleting it was not an approximation. **The two actions are the same action; the two limits differ because the two words differ.**
 
-For $\tilde A=A_0e^{i(\vec k\cdot\vec r-\omega r'_{t})}\tilde U$ with constant $A_0$ and $\tilde U$, the amplitude's kinetic term vanishes identically. The truncated action therefore reproduces every constant-envelope plane wave exactly, and its corrections are what a varying envelope costs.
+For $\tilde A=A_0e^{i(2\pi\vec\nu_{\Phi}\cdot\vec r-\omega r'_{t})}\tilde U$ with constant $A_0$ and $\tilde U$, the amplitude's kinetic term vanishes identically. The truncated action therefore reproduces every constant-envelope plane wave exactly, and its corrections are what a varying envelope costs.
 
 The coupled Proca action's amplitude block is order two and the mass and phase blocks are order zero, so the deletion is controlled by $\epsilon$. The variation of the phase returns the covariant transport equation, which is the continuity equation and is exact in the pair; the variation of the amplitude returns the mechanical mass shell as a constraint; the variation of the frame returns the polarisation's transport. On a constant-envelope plane wave the deleted term vanishes identically, so the limit is exact there and its error is the envelope's curvature. The mass term's frame factor is not displayed in closed form in the six angles, so the frame's variation is exact as a system and not as a formula.
 
@@ -26,13 +26,13 @@ The covariant Proca action, the minimal substitution, the transverse polarisatio
 
 The word is defined for $\varrho>0$; the limit is a statement on the chart's domain; the cone is $\varrho=0$.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iq\tilde A_{\imath}}{h}$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_{\imath}$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iq\tilde A_{\imath}}{h}$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_{\imath}$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $\nu_m=\frac{mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$.
 ## The Action in the Non-Quantum Limit: The Blocks
 | block | derivative count | order |
 |---|---|---|
 | $\tfrac12\sum_{\imath}\varepsilon_{\imath}(\partial_{\imath} \varrho)^{2}$ | two on the amplitude | $2$ |
 | $\tfrac12\varrho^{2}\sum_{\imath}\varepsilon_{\imath}(\kappa^{\mathrm{kin}}_{\imath})^{2}$ | two on the phase | $0$ |
-| $-\tfrac12k_m^{2}\varrho^{2}\mathcal V$ | none, but depends on the frame | $0$ |
+| $-\tfrac12\nu_m^{2}\varrho^{2}\mathcal V$ | none, but depends on the frame | $0$ |
 | the frame's terms | two on the frame's connections | $2$ |
 
 One order-two block is deleted and one is kept. The amplitude's is deleted; the frame's is kept, because the frame's connection is the velocity and the polarisation and its transport is the limit's order one. So the deletion is one block and not "the curvatures": the amplitude's curvature goes and the frame's stays.
@@ -54,7 +54,7 @@ On a constant envelope the deleted term is identically zero, so the truncated ac
 
 There is no small parameter, and the section has to say so first. The deleted block is the amplitude's kinetic term; the kept blocks are the frame's terms and the mass. At a plane wave the ratio of the deleted block to the mass term is not $\epsilon^{2}$ but a number of order one, and it is the same number at every time. **The truncation therefore has no error estimate, and the article's claim is that it has none.**
 
-Why the ratio is of order one. The amplitude's gradient is the envelope's curvature, and a real carrier has no oscillation to separate from an envelope. The two derivatives of $\varrho$ are the same size as the mass when the envelope turns on the scale $1/k_m$, which is the only scale the theory has, so there is no regime in which the deletion is small.
+Why the ratio is of order one. The amplitude's gradient is the envelope's curvature, and a real carrier has no oscillation to separate from an envelope. The two derivatives of $\varrho$ are the same size as the mass when the envelope turns on the scale $1/\nu_m$, which is the only scale the theory has, so there is no regime in which the deletion is small.
 
 What the error would be if it were small. Restoring the block adds the quantum potential to the amplitude's equation, with the density in the denominator. In the scalar family that term is the correction; here it is comparable to the term that was kept, which is the technical statement of the failure.
 
@@ -90,7 +90,7 @@ the continuity equation for the charge density and the mechanical current. It is
 Varying the amplitude. With the kinetic block deleted,
 
 $$
-\sum_{\imath}\varepsilon_{\imath}\bigl(\kappa^{\mathrm{kin}}_{\imath}\bigr)^{2}+k_m^{2}\mathcal V=0
+\sum_{\imath}\varepsilon_{\imath}\bigl(\kappa^{\mathrm{kin}}_{\imath}\bigr)^{2}+4\pi^{2}\nu_m^{2}\mathcal V=0
 \qquad\Longleftrightarrow\qquad
 \frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V ,
 $$
@@ -105,7 +105,7 @@ What the three variations give together. A constraint, a transport, and a transp
 
 The block table decides which of the three variations returns a constraint. The amplitude's order-two block is deleted, so no term of the truncated density carries a time derivative of $\varrho$. Its Euler–Lagrange equation is therefore not an evolution equation: it determines the amplitude at each instant from the phase's gradient, the frame factor $\mathcal V$ and the connection, and it advances nothing.
 
-That determination is the mass's statement. The only other place $\varrho$ appears is $-\tfrac12k_m^{2}\varrho^{2}\mathcal V$, which carries no derivative, so the amplitude is determined exactly where $k_m\neq0$. At $k_m=0$ the equation loses its right side and $\varrho$ becomes a variable that propagates: that difference is the whole distance between the massive chart's count and the massless one's.
+That determination is the mass's statement. The only other place $\varrho$ appears is $-\tfrac12\nu_m^{2}\varrho^{2}\mathcal V$, which carries no derivative, so the amplitude is determined exactly where $\nu_m\neq0$. At $\nu_m=0$ the equation loses its right side and $\varrho$ becomes a variable that propagates: that difference is the whole distance between the massive chart's count and the massless one's.
 
 The two transports are untouched, and the asymmetry is the limit's structure. The phase's transport and the frame's transport keep the terms the table marks and lose the deleted block's contribution, and both remain equations of motion. So the truncation moves the transports and leaves the constraint, and the deleted block is the only place where the two kinds of equation were mixed.
 
@@ -161,7 +161,7 @@ The three variations give the covariant transport, the mass shell with the frame
 | $\kappa^{\mathrm{kin}}_{\imath}=\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi qA_{\imath}}{h}$ | The mechanical phase gradient |
 | $\frac{h}{2\pi}\vec\kappa=\vec\pi$, $\frac{h}{2\pi} c\kappa_t=\mathcal E$ | Mechanical momentum and energy |
 | $\mathcal V$ | The invariant length's frame factor; not closed in the six angles |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | $\epsilon=1/(\pi_{\Phi}L)$ | The parameter of the amplitude's curvature |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
 ## Further Reading
@@ -177,6 +177,6 @@ For constant $A_0$ and constant $\tilde U$ the word's scale is $\varrho=\lvert A
 
 The deleted block contains no phase and no potential, so both functional derivatives with respect to $\theta_{\mathrm{pha}}$ are the same expression. No rearrangement is needed.
 
-With the kinetic block deleted, the variation gives $\sum_{\imath}\varepsilon_{\imath}(\kappa^{\mathrm{kin}}_{\imath})^{2}+k_m^{2}\mathcal V=0$, which is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V$; keeping the block adds $\Box_\Phi \varrho/\varrho$. The two differ by the deleted block and by nothing else.
+With the kinetic block deleted, the variation gives $\sum_{\imath}\varepsilon_{\imath}(\kappa^{\mathrm{kin}}_{\imath})^{2}+4\pi^{2}\nu_m^{2}\mathcal V=0$, which is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V$; keeping the block adds $\Box_\Phi \varrho/\varrho$. The two differ by the deleted block and by nothing else.
 
 No closed form for $\mathcal V$ in the six angles was derived, and no solution of the order-one system was integrated. The first omission is the parent's and is recorded as such.

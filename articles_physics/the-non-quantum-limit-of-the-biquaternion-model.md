@@ -6,15 +6,15 @@ The non-relativistic limit of *The Non-Relativistic Limit of Relativistic Mechan
 
 Can a second limit of the same kind remove the quantum? The answer has two halves.
 
-On the solutions, yes. A state written as an amplitude and a phase carries one dimensionless number, $\epsilon=1/(k_{\Phi}L)$, where $L$ is the length over which the amplitude varies. When it is small the phase obeys the Hamilton–Jacobi equation alone and the amplitude obeys the transport equation. The state has become a ray.
+On the solutions, yes. A state written as an amplitude and a phase carries one dimensionless number, $\epsilon=1/(2\pi\nu_{\Phi}L)$, where $L$ is the length over which the amplitude varies. When it is small the phase obeys the Hamilton–Jacobi equation alone and the amplitude obeys the transport equation. The state has become a ray.
 
 What that removes is a partition, not a wave. *The Quantum–Classical Divide in the Biquaternion Framework* places the divide in a count: two projective measurements make a case quantum, one makes it classical, and wave phenomena are not the criterion. A superposition of two rays is one excitation across two modes, so two partitions. A single ray is one partition carrying the excitation with no second to sort, which is the corpus's classical class, Subset III. The limit removes the second partition, and that is the sense in which it is non-quantum. Classical optics performs the same passage, so the mathematics alone does not settle it and the count does.
 
-On the algebra, no. The algebra carries no $\frac{h}{2\pi}$. It carries $k_{m}$, which is $\frac{2\pi m\,c}{h}$. A limit on $\frac{h}{2\pi}$ at fixed mass is a limit on $1/k_{m}$, which deepens the mass term instead of removing it.
+On the algebra, no. The algebra carries no $\frac{h}{2\pi}$. It carries $\nu_m$, which is $\frac{2\pi m\,c}{h}$. A limit on $\frac{h}{2\pi}$ at fixed mass is a limit on $1/\nu_m$, which deepens the mass term instead of removing it.
 
-The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, wave-number biquaternion $\tilde K_{\Phi}=ik_{t}^{\prime}e_{t}+\vec k_{\Phi}$, where $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$, $\vec k_{\Phi}=\frac{2\pi \vec p}{h}$ and $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$, the three numbers of *The Three Wavenumbers of a Particle*. Throughout, $k_m=\frac{2\pi m\,c}{h}$, and $L$ is supplied by the problem.
+The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, wave-number biquaternion $\tilde\Upsilon_{\Phi}=i\nu_t^{\prime}e_{t}+\vec\nu_{\Phi}$, where $2\pi\nu_t^{\prime}=\frac{E}{h\,c}$, $2\pi\vec\nu_{\Phi}=\frac{\vec p}{h}$ and $-\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\nu_m^{2}$, the three numbers of *The Three Wavenumbers of a Particle*. Throughout, $\nu_m=\frac{m\,c}{h}$, and $L$ is supplied by the problem.
 
-What is not new. The corpus has the formal character of the $h\to0$ limit in *Similitudes Between the Poisson Bracket and the Quantum Commutator*, the phase forms in two companions, the divide as a count in a third, and the centre as classical sector in a fourth. Added here: the separation of the limit from the approximation, why the limit must be formal, the criterion as one inverse length, the refusal of $1/k_{m}$, the partition it removes, the phase route, the derivation of the equations of motion, the ordering of the three terms, the mass-order rule for a first-order equation, and the sector in which the limit does not exist. The relativistic side of the same expansion is carried out in the companion *Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form*.
+What is not new. The corpus has the formal character of the $h\to0$ limit in *Similitudes Between the Poisson Bracket and the Quantum Commutator*, the phase forms in two companions, the divide as a count in a third, and the centre as classical sector in a fourth. Added here: the separation of the limit from the approximation, why the limit must be formal, the criterion as one inverse length, the refusal of $1/\nu_m$, the partition it removes, the phase route, the derivation of the equations of motion, the ordering of the three terms, the mass-order rule for a first-order equation, and the sector in which the limit does not exist. The relativistic side of the same expansion is carried out in the companion *Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form*.
 
 ## The Constant the Algebra Does Not Carry
 
@@ -22,39 +22,39 @@ What is not new. The corpus has the formal character of the $h\to0$ limit in *Si
 
 | where $\frac{h}{2\pi}$ appears | with the algebra's numbers | a limit on it does this |
 |---|---|---|
-| the mass term | $k_{m}=\frac{2\pi m\,c}{h}$, $\;-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$ | $k_{m}\to\infty$: the mass term diverges |
-| the phase | $\frac{2\pi S_{\tilde\Xi}}{h}=\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}\right)$ | a pure number; nothing left to move |
+| the mass term | $\nu_m=\frac{m\,c}{h}$, $\;-\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=4\pi^{2}\nu_m^{2}$ | $\nu_m\to\infty$: the mass term diverges |
+| the phase | $\frac{S_{\tilde\Xi}}{h}=\mathrm{Sc}\!\left(\tilde\Upsilon_{\Phi}\tilde R_{\Phi}^{\natural}\right)$ | a pure number; nothing left to move |
 | the bracket | $[x,p]=i\,\frac{h}{2\pi}$ | it vanishes: the Poisson bracket |
 
-The three rows do not agree, and that is the argument. The third is the classical result; the first is its opposite, since $\Box_\Phi-k_{m}^{2}$ stiffens until propagation is suppressed. One knob cannot deliver both.
+The three rows do not agree, and that is the argument. The third is the classical result; the first is its opposite, since $\Box_\Phi-4\pi^{2}\nu_m^{2}$ stiffens until propagation is suppressed. One knob cannot deliver both.
 
-At fixed wavelength it does not even leave the other family. On shell $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$, so $\frac{k_{\Phi}}{k_{m}}=\gamma\beta$ and $\frac{k_{t}^{\prime}}{k_{m}}=\gamma$. Send $h\to0$ at fixed $k_{\Phi}$: both tend to zero and to one, and the triangle collapses onto the mass side.
+At fixed wavelength it does not even leave the other family. On shell $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$, so $\frac{2\pi\nu_{\Phi}}{2\pi\nu_m}=\gamma\beta$ and $\frac{2\pi\nu_t^{\prime}}{2\pi\nu_m}=\gamma$. Send $h\to0$ at fixed $\nu_{\Phi}$: both tend to zero and to one, and the triangle collapses onto the mass side.
 
-| $\frac{h}{2\pi}$ | $k_{m}\ (\mathrm{m^{-1}})$ | $\gamma$ | $\beta$ |
+| $\frac{h}{2\pi}$ | $\nu_m\ (\mathrm{m^{-1}})$ | $\gamma$ | $\beta$ |
 |---|---|---|---|
 | $\frac{h}{2\pi}$ | $2.590\times10^{12}$ | $1.00005$ | $1.000\times10^{-2}$ |
 | $\frac{h}{2\pi 100}$ | $2.590\times10^{14}$ | $1.000000005$ | $1.000\times10^{-4}$ |
 
-The collapse is the rest frame, $\beta\to0$ at fixed $k_{\Phi}$. That is a member of the $\beta$ family, not a second limit. The naive $h\to0$ returns a kinematic limit inside the family the companion article already owns.
+The collapse is the rest frame, $\beta\to0$ at fixed $\nu_{\Phi}$. That is a member of the $\beta$ family, not a second limit. The naive $h\to0$ returns a kinematic limit inside the family the companion article already owns.
 
 ## The Criterion, and What It Is Not
 
 **A limit needs a dimensionless parameter, and the model has none of its own.** The scales the series uses are wave numbers, so the only dimensionless combination is a product with a length, and the length is not in the algebra.
 
-Every internal ratio is already one number. The three wave numbers form a right triangle with legs $k_{\Phi}$ and $k_{m}$ and hypotenuse $k_{t}^{\prime}$. A right triangle has one shape parameter, so $\frac{k_{\Phi}}{k_{m}}=\gamma\beta$, $\frac{k_{t}^{\prime}}{k_{m}}=\gamma$ and $\frac{k_{\Phi}}{k_{t}^{\prime}}=\beta$ are functions of $\beta$ alone. *The Three Wavenumbers of a Particle* says the same: the single parameter of the whole section is $k_{\Phi}/k_{m}$. No internal ratio can carry a second limit, because the triangle has no second shape.
+Every internal ratio is already one number. The three wave numbers form a right triangle with legs $\nu_{\Phi}$ and $\nu_m$ and hypotenuse $\nu_t^{\prime}$. A right triangle has one shape parameter, so $\frac{2\pi\nu_{\Phi}}{2\pi\nu_m}=\gamma\beta$, $\frac{2\pi\nu_t^{\prime}}{2\pi\nu_m}=\gamma$ and $\frac{2\pi\nu_{\Phi}}{2\pi\nu_t^{\prime}}=\beta$ are functions of $\beta$ alone. *The Three Wavenumbers of a Particle* says the same: the single parameter of the whole section is $\nu_{\Phi}/\nu_m$. No internal ratio can carry a second limit, because the triangle has no second shape.
 
 | candidate | electron, $\beta=0.01$, $L=1\ \mathrm{nm}$ | verdict |
 |---|---|---|
 | $\beta=\lvert\vec v\rvert/c$ | $10^{-2}$ | the other limit |
-| $\epsilon=1/(k_{\Phi}L)$ | $3.86\times10^{-2}$ | the non-quantum limit |
-| $1/(k_{m}L)$ | $3.86\times10^{-4}$ | a change of theory |
-| $\frac{\Omega}{k_{m}}=\gamma-1$ | $5.00\times10^{-5}$ | the other limit again |
+| $\epsilon=1/(2\pi\nu_{\Phi}L)$ | $3.86\times10^{-2}$ | the non-quantum limit |
+| $1/(\nu_mL)$ | $3.86\times10^{-4}$ | a change of theory |
+| $\frac{\Omega}{2\pi\nu_m}=\gamma-1$ | $5.00\times10^{-5}$ | the other limit again |
 
-The last row is not independent: $\frac{\Omega}{k_{m}}=\gamma-1=\frac{\beta^{2}}{2}$. Two parameters remain, one internal and one external.
+The last row is not independent: $\frac{\Omega}{2\pi\nu_m}=\gamma-1=\frac{\beta^{2}}{2}$. Two parameters remain, one internal and one external.
 
-The third row is not a limit. A small $1/(k_{m}L)$ says the region is large against the mass length, the validity of the one-particle description: a precondition of quantum mechanics, not its removal. *The Non-Quantum Limit of the Free Klein–Gordon Equation* derives the same verdict from the mass shell's sensitivity and states the nesting: $\delta=\epsilon\lvert\vec p\rvert/(mc)<\epsilon$, so the limit implies the window and the window does not imply the limit. The two criteria differ by $\frac{k_{m}}{k_{\Phi}}=\frac{1}{\gamma\beta}=99.995$, so a reader who took $1/k_{m}$ as the classicality length would put the boundary at $386\ \mathrm{fm}$ where it lies at $38.6\ \mathrm{pm}$.
+The third row is not a limit. A small $1/(\nu_mL)$ says the region is large against the mass length, the validity of the one-particle description: a precondition of quantum mechanics, not its removal. *The Non-Quantum Limit of the Free Klein–Gordon Equation* derives the same verdict from the mass shell's sensitivity and states the nesting: $\delta=\epsilon\lvert\vec p\rvert/(mc)<\epsilon$, so the limit implies the window and the window does not imply the limit. The two criteria differ by $\frac{2\pi\nu_m}{2\pi\nu_{\Phi}}=\frac{1}{\gamma\beta}=99.995$, so a reader who took $1/\nu_m$ as the classicality length would put the boundary at $386\ \mathrm{fm}$ where it lies at $38.6\ \mathrm{pm}$.
 
-The mass is not the quantum either. Setting $k_{m}=0$ gives $k_{t}^{\prime}=k_{\Phi}$, the photon: linear dispersion, exact interference, no particle scale, and more wave-like than the massive case. A plane wave is semiclassical already, so the limit acts only where $A$ varies.
+The mass is not the quantum either. Setting $\nu_m=0$ gives $\nu_t^{\prime}=\nu_{\Phi}$, the photon: linear dispersion, exact interference, no particle scale, and more wave-like than the massive case. A plane wave is semiclassical already, so the limit acts only where $A$ varies.
 
 ## The Limit and the Approximation
 
@@ -106,9 +106,9 @@ $$
 The real part keeps its leading term and the imaginary part carries the first correction. The two ratios are
 
 $$
-\frac{\lvert\vec\nabla_\Phi\ln A\rvert}{k_{\Phi}}\sim\epsilon ,
+\frac{\lvert\vec\nabla_\Phi\ln A\rvert}{2\pi\nu_{\Phi}}\sim\epsilon ,
 \qquad
-\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi A}{A}\right\rvert\sim\epsilon^{2} .
+\frac{1}{4\pi^{2}\nu_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi A}{A}\right\rvert\sim\epsilon^{2} .
 $$
 
 The second is the quantum potential over the kinetic energy.
@@ -127,10 +127,10 @@ The rule is written for the scalar problem; the criterion does not depend on tha
 
 ## The Mass Sits Below the Derivative
 
-A first-order equation needs one step before the eikonal is read. Write the Dirac operator as $\gamma\cdot\partial-k_m$. Its principal symbol is $\gamma\cdot\pi$, and the mass is a lower-order term, so the principal determinant knows nothing of the mass:
+A first-order equation needs one step before the eikonal is read. Write the Dirac operator as $\gamma\cdot\partial-\nu_m$. Its principal symbol is $\gamma\cdot\pi$, and the mass is a lower-order term, so the principal determinant knows nothing of the mass:
 
 $$
-\det\left(\gamma\cdot\pi-k_m\right)=\left(\pi^{2}-k_m^{2}\right)^{2} ,
+\det\left(\gamma\cdot\pi-\nu_m\right)=\left(\pi^{2}-\nu_m^{2}\right)^{2} ,
 \qquad
 \det\left(\gamma\cdot\pi\right)=\left(\pi^{2}\right)^{2} .
 $$
@@ -150,7 +150,7 @@ Four sectors, and the free Proca field is the one that refuses. The limit needs 
 | Dirac | yes, on the square | yes, on the square, with the spin transport |
 | Proca | no: the word is a scale and a boost | yes: the phase comes from the connection |
 
-**The refusal is structural and not a gap in a derivation.** The free Proca word has no phase slot, so the criterion $\epsilon=1/(k_{\Phi}L)$ has nothing to size and no order can be collected. That is why the twelve limit articles cover six families and not eight.
+**The refusal is structural and not a gap in a derivation.** The free Proca word has no phase slot, so the criterion $\epsilon=1/(2\pi\nu_{\Phi}L)$ has nothing to size and no order can be collected. That is why the twelve limit articles cover six families and not eight.
 
 ## The Classical Equations
 
@@ -165,7 +165,7 @@ Substitute the amplitude and the phase, $\tilde{Ξ}=Ae^{i\theta_{\mathrm{phs}}}\
 Throughout, $\theta_{\mathrm{phs}}:=\frac{2\pi S_{\tilde\Xi}}{h}$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 $$
-\partial_t S_{\tilde\Xi}+\frac{\lvert\vec\nabla_\Phi S_{\tilde\Xi}\rvert^{2}}{2m}+V-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\Delta_\Phi A}{A}=0 ,
+\partial_t S_{\tilde\Xi}+\frac{\lvert\vec\nabla_\Phi S_{\tilde\Xi}\rvert^{2}}{2m}+V-\frac{m\,c^{2}}{24\pi^{2}\nu_m^{2}}\frac{\Delta_\Phi A}{A}=0 ,
 \qquad
 \partial_t A^{2}+\vec\nabla_\Phi\cdot\left(\frac{A^{2}\vec\nabla_\Phi S_{\tilde\Xi}}{m}\right)=0 .
 $$
@@ -202,7 +202,7 @@ Two qualifications, both structural. The continuity equation was never approxima
 
 ## The Error Is an Operator
 
-A Gaussian waist gives the ratio in closed form. Take $A=\exp\left(-x^{2}/(4\sigma^{2})\right)$, $\epsilon=1/(k_{\Phi}\sigma)$. Then
+A Gaussian waist gives the ratio in closed form. Take $A=\exp\left(-x^{2}/(4\sigma^{2})\right)$, $\epsilon=1/(2\pi\nu_{\Phi}\sigma)$. Then
 
 $$
 \rho(x)=\epsilon^{2}\left\lvert\frac{x^{2}}{4\sigma^{2}}-\frac{1}{2}\right\rvert ,
@@ -220,7 +220,7 @@ The table is the argument. The ratio vanishes at $\sqrt{2}\sigma$ and grows as $
 
 It does not act on the algebra. No contraction is taken and no basis preferred. *The Centre of the Biquaternion Algebra as the Classical Sector* names the centre as the canonical classical sector, and the limit does not land there: the centre is minimal as an operator algebra. O21 of the obstruction catalogue says why from the other side, since no maximal commutative subalgebra survives a generic $*$-unitary evolution. The limit selects a state-dependent slice, the contextual mechanism O21 asks for, with $L$ as the context made quantitative.
 
-**It does not commute with superposition.** Two plane waves of wave numbers $k_{\Phi}$ and $k_{\Phi}+\delta k$ are each semiclassical exactly. Their sum has envelope wave number $\delta k$, so parameter $\frac{1}{\delta k\,L}$, large when the waves are close. So
+**It does not commute with superposition.** Two plane waves of wave numbers $\nu_{\Phi}$ and $\nu_{\Phi}+\delta k$ are each semiclassical exactly. Their sum has envelope wave number $\delta k$, so parameter $\frac{1}{\delta k\,L}$, large when the waves are close. So
 
 $$
 \lim\left(\tilde{Ξ}_{1}+\tilde{Ξ}_{2}\right)\neq\lim\tilde{Ξ}_{1}+\lim\tilde{Ξ}_{2} ,
@@ -230,15 +230,15 @@ and the difference is the interference term. Read against the count, that is the
 
 ## Case Checked
 
-The electron at $\beta=0.01$. The mass wave number is $k_{m}=2.589605\times10^{12}\ \mathrm{m^{-1}}$, so $\lambda_{m}=386.159\ \mathrm{fm}$; the momentum wave number is $k_{\Phi}=2.589735\times10^{10}\ \mathrm{m^{-1}}$.
+The electron at $\beta=0.01$. The mass wave number is $2\pi\nu_m=2.589605\times10^{12}\ \mathrm{m^{-1}}$, so $\lambda_{m}=386.159\ \mathrm{fm}$; the momentum wave number is $2\pi\nu_{\Phi}=2.589735\times10^{10}\ \mathrm{m^{-1}}$.
 
-| $L$ | $\epsilon$ | $1/(k_{m}L)$ | the limit |
+| $L$ | $\epsilon$ | $1/(\nu_mL)$ | the limit |
 |---|---|---|---|
 | $1\ \mathrm{pm}$ | $38.61$ | $0.386$ | fails |
 | $1\ \mathrm{nm}$ | $3.861\times10^{-2}$ | $3.862\times10^{-4}$ | holds to $7.5\times10^{-4}$ |
 | $1\ \mathrm{\mu m}$ | $3.861\times10^{-5}$ | $3.862\times10^{-7}$ | holds to $7.5\times10^{-10}$ |
 
-The checks. The Gaussian ratio agrees with a fourth-order difference of $\frac{1}{k_{\Phi}^{2}}\lvert\frac{\Delta_\Phi A}{A}\rvert$ at one hundred values of $x/\sigma$ to $1.4\times10^{-6}$, the sign change included. The tables follow from $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$.
+The checks. The Gaussian ratio agrees with a fourth-order difference of $\frac{1}{\nu_{\Phi}^{2}}\lvert\frac{\Delta_\Phi A}{A}\rvert$ at one hundred values of $x/\sigma$ to $1.4\times10^{-6}$, the sign change included. The tables follow from $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$.
 
 The macroscopic end is true and empty. For the Earth in its orbit, over $L=1\ \mathrm{AU}$, the parameter is $4.0\times10^{-75}$; the phase length reaches the Planck length at $6.52\ \mathrm{kg\,m\,s^{-1}}$, beyond which the criterion holds where the model cannot resolve.
 
@@ -248,20 +248,20 @@ The non-quantum limit cannot truncate an element, because the algebra holds no q
 
 The limit and the approximation are two objects and one number. The limit is the formal passage, and it yields two equations with no error. The approximation is the passage stopped at a stated order, and it yields an error that is a function of position and a region where the error is small. The third term of the expansion, the quantum potential, is order $\epsilon^{2}$ against the kinetic term, so the limit drops it and the second-order approximation puts it back.
 
-What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is small the phase obeys Hamilton–Jacobi and the amplitude obeys transport, so $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$, $\vec v=\vec p/m$ and $m\ddot{\vec r}=-\vec\nabla_\Phi V$. The error is an operator that changes sign, so the limit acts on solutions: it does not commute with superposition, does not select a subalgebra and does not produce a state. Those three refusals are one, since it takes a wave to its rays and the second partition with it, and that is why it needs no new constant.
+What remains is one external number, $\epsilon=\frac{1}{2\pi\nu_{\Phi}L}$. When it is small the phase obeys Hamilton–Jacobi and the amplitude obeys transport, so $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$, $\vec v=\vec p/m$ and $m\ddot{\vec r}=-\vec\nabla_\Phi V$. The error is an operator that changes sign, so the limit acts on solutions: it does not commute with superposition, does not select a subalgebra and does not produce a state. Those three refusals are one, since it takes a wave to its rays and the second partition with it, and that is why it needs no new constant.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\epsilon=\frac{1}{k_{\Phi}L}$ | The parameter of the limit; the only dimensionless combination the model offers |
+| $\epsilon=\frac{1}{2\pi\nu_{\Phi}L}$ | The parameter of the limit; the only dimensionless combination the model offers |
 | $L$ | The length over which the amplitude varies; supplied by the problem |
 | $\tilde{Ξ}=A\exp\!\left(i\theta_{\mathrm{phs}}\right)\xi$ | The state in amplitude and phase; $A>0$ real and central, $S_{\tilde\Xi}$ the action of the state, real and central |
-| $\rho=\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi A}{A}\right\rvert$ | The quantum potential over the kinetic energy; the error of the limit |
+| $\rho=\frac{1}{4\pi^{2}\nu_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi A}{A}\right\rvert$ | The quantum potential over the kinetic energy; the error of the limit |
 | $N$ | The order kept by the approximation; the limit keeps order $0$ in the phase equation and all orders in the continuity equation |
 | $\epsilon^{N+1}$ | The size of the remainder the approximation drops |
-| $Q=-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\Delta_\Phi A}{A}$ | The quantum potential; central, real, and the term the limit drops |
-| $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$, $k_{m}=\frac{2\pi m\,c}{h}$ | The momentum and mass wave numbers; $\frac{h}{2\pi}$ is the product $\frac{h}{2\pi}$ |
+| $Q=-\frac{m\,c^{2}}{24\pi^{2}\nu_m^{2}}\frac{\Delta_\Phi A}{A}$ | The quantum potential; central, real, and the term the limit drops |
+| $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$, $\nu_m=\frac{m\,c}{h}$ | The momentum and mass wave numbers; $\frac{h}{2\pi}$ is the product $\frac{h}{2\pi}$ |
 | $\beta=\lvert\vec v\rvert/c$ | The parameter of the other limit, internal to $\tilde V_{\Phi}$ |
 
 ## Further Reading

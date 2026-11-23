@@ -164,7 +164,7 @@ The first combines Gauss's law with the absence of magnetic charge; the second c
 
 ### The Verification
 
-The collapse is checked on a plane wave. With $\vec k=\omega\hat z/c$, a right-handed triad $\vec B=\hat k\times\vec E/c$ and the combination $\vec N=\vec E+ic\vec B$, the divergence vanishes identically, and the curl equation holds for one circular polarisation with the eigenvalue $\vec k\times\vec N=-i\omega\vec N/c$, reproducing $\vec\nabla_\Phi\times\vec N=\frac ic\partial_t\vec N$ under $\partial_t\to-i\omega$ and $\vec\nabla_\Phi\to i\vec k$.
+The collapse is checked on a plane wave. With $2\pi\vec\nu_{\Phi}=\omega\hat z/c$, a right-handed triad $\vec B=\hat k\times\vec E/c$ and the combination $\vec N=\vec E+ic\vec B$, the divergence vanishes identically, and the curl equation holds for one circular polarisation with the eigenvalue $2\pi\vec\nu_{\Phi}\times\vec N=-i\omega\vec N/c$, reproducing $\vec\nabla_\Phi\times\vec N=\frac ic\partial_t\vec N$ under $\partial_t\to-i\omega$ and $\vec\nabla_\Phi\to 2\pi i\vec\nu_{\Phi}$.
 
 For the opposite circular polarisation the same convention gives $\vec N=0$: the mode is purely anti-self-dual in this naming, and the vanishing of $\vec N$ is the statement that the self-dual half of that mode is zero.
 

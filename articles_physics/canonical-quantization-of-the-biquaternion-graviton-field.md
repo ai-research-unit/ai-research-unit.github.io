@@ -87,7 +87,7 @@ physical polarizations. These two are the transverse-traceless modes: transverse
 
 ### The Transverse-Traceless Projector
 
-The projection is performed by the transverse-traceless projector. For a wave vector $\vec k_\Phi$ with transverse metric $\Pi_{ij}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$, the projector on symmetric spatial tensors is
+The projection is performed by the transverse-traceless projector. For a wave vector $\vec\nu_\Phi$ with transverse metric $\Pi_{ij}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$, the projector on symmetric spatial tensors is
 
 $$
 P_{ij,\eta l} = \tfrac12\left(\Pi_{i\eta}\Pi_{jl}+\Pi_{il}\Pi_{j\eta}\right)-\tfrac12\,\Pi_{ij}\Pi_{\eta l} ,
@@ -100,12 +100,12 @@ $$
 \qquad
 \mathrm{tr}\,P = 2 ,
 \qquad
-P_{ij,\eta l}\left(k_k\zeta_l+k_l\zeta_k\right) = 0 ,
+P_{ij,\eta l}\left(k_k\zeta_l+2\pi\nu_{l}\zeta_k\right) = 0 ,
 \qquad
 P_{ij,\eta l}\,\delta_{\eta l} = 0\;},
 $$
 
-idempotent, of trace two, and annihilating both the pure-gauge modes $k_i\zeta_j+k_j\zeta_i$ and the trace mode $\delta_{ij}$. The rank of the space spanned by the pure-gauge modes and the trace was computed to be four, so that the transverse-traceless complement has dimension
+idempotent, of trace two, and annihilating both the pure-gauge modes $\nu_{i}\zeta_j+\nu_{j}\zeta_i$ and the trace mode $\delta_{ij}$. The rank of the space spanned by the pure-gauge modes and the trace was computed to be four, so that the transverse-traceless complement has dimension
 
 $$
 6-4 = 2 ,
@@ -162,10 +162,10 @@ with $E_p=|\vec p|$ for the massless field, $\varepsilon_{r ij}$ the two transve
 The graviton is a boson, and the field is quantized with commutators:
 
 $$
-\left[a_r(\vec p),\,a_s^\dagger(\vec k_\Phi)\right]
+\left[a_r(\vec p),\,a_s^\dagger(\vec\nu_\Phi)\right]
 = h^{3}\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec p^{\,\prime}) ,
 \qquad
-\left[a_r(\vec p),\,a_s(\vec k_\Phi)\right] = 0 .
+\left[a_r(\vec p),\,a_s(\vec\nu_\Phi)\right] = 0 .
 $$
 
 The Fock space is built by acting on the vacuum with $a_r^\dagger$, and each application adds a graviton of momentum $\vec p$ and helicity $r$. The statistics is bosonic because the spin is integer: the framework's account of the spin–statistics relation is the subject of the companion article on the theorem, and it applies here with $s=2$, so the commutators are the ones above and not anticommutators. The equal-time commutator of the field operators is the transverse-traceless projection of the naive one, in the same way that the Rarita–Schwinger anticommutator was the projected one.

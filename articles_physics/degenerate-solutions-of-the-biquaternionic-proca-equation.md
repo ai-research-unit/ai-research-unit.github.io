@@ -14,18 +14,18 @@ The second is that **only one sector appears**. Every non-zero lightlike potenti
 
 The third is that **the field strength sits in the other sector**. The field strength is a pure vector, so it has zero trace, and a pure vector's square is a scalar; the cone of its carrier is therefore entirely $\Sigma_{00}$, and $\Sigma_{01}$ does not meet that carrier at all. The two objects of the Proca field carry one sector each. The trace decides, and the trace is the one number the two carriers cannot share.
 
-The fourth is that **the plane-wave amplitude is strictly spacelike**. For a plane wave the norm of the amplitude is a transverse part plus a longitudinal part weighted by $k_m^2c^2/\omega^2$, a sum of two non-negative terms. It vanishes only when the transverse part vanishes and the longitudinal part is absent or the mass is zero. So no massive plane wave has a lightlike amplitude: a real massive wave is degenerate exactly at its nodes, and at zero mass the longitudinal mode is lightlike everywhere, where its field strength vanishes. Degenerate values are therefore a nodal or a superposition phenomenon, and not a property of a single amplitude.
+The fourth is that **the plane-wave amplitude is strictly spacelike**. For a plane wave the norm of the amplitude is a transverse part plus a longitudinal part weighted by $\nu_m^2c^2/\omega^2$, a sum of two non-negative terms. It vanishes only when the transverse part vanishes and the longitudinal part is absent or the mass is zero. So no massive plane wave has a lightlike amplitude: a real massive wave is degenerate exactly at its nodes, and at zero mass the longitudinal mode is lightlike everywhere, where its field strength vanishes. Degenerate values are therefore a nodal or a superposition phenomenon, and not a property of a single amplitude.
 
 **A note on the sector names.** The subscripts of $\Sigma_{01}$ and $\Sigma_{00}$ are the corpus's two predicates, $N=0$ and $B^2\neq0$, and not a count of anything. The Dirac article fixes the notation, and this article uses it unchanged.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_{\imath}^2=-e_t$ and central scalar imaginary $i$; the material sector is $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and the vector part is $\mathbb{B}_V=\mathrm{span}_\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$; the quaternionic norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, real on $\mathbb{B}_\Phi$; the gradient is $\tilde\nabla_\Phi$ with conjugate $(\tilde\nabla_\Phi)^{\natural}$ and $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and $k_m=\frac{2\pi mc}{h}$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_{\imath}^2=-e_t$ and central scalar imaginary $i$; the material sector is $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and the vector part is $\mathbb{B}_V=\mathrm{span}_\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$; the quaternionic norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, real on $\mathbb{B}_\Phi$; the gradient is $\tilde\nabla_\Phi$ with conjugate $(\tilde\nabla_\Phi)^{\natural}$ and $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and $\nu_m=\frac{mc}{h}$.
 
 ## The Equation and the Field
 
 **The equation.** The Proca equation is the single biquaternion equation
 
 $$
-\tilde\nabla_\Phi\tilde F=k_m^2\,\tilde A_\Phi,
+\tilde\nabla_\Phi\tilde F=4\pi^{2}\nu_m^2\,\tilde A_\Phi,
 \qquad
 \tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr),
 $$
@@ -140,9 +140,9 @@ The table collects the comparison.
 $$
 \tilde A_\Phi=\tilde A_0\exp\bigl(-i\theta_{\mathrm{pwp}}\bigr),
 \qquad
-\theta_{\mathrm{pwp}}=\frac{\omega}{c}r'_t-\vec k_\Phi\cdot\vec r,
+\theta_{\mathrm{pwp}}=\frac{\omega}{c}r'_t-2\pi\vec\nu_\Phi\cdot\vec r,
 \qquad
-\tilde P_\Phi=i\frac{\omega}{c}e_t+\vec k_\Phi ,
+\tilde P_\Phi=i\frac{\omega}{c}e_t+2\pi\vec\nu_\Phi ,
 $$
 
 with $\tilde A_0=i\,a'_t\,e_t+\vec a$ and $a'_t$, $\vec a$ real. The gradient acts as left multiplication by $i\tilde P_\Phi$ and its conjugate by $i\tilde P_\Phi^{\natural}$, so $\tilde F=\tilde F_0\exp(-i\theta_{\mathrm{pwp}})$ with $\tilde F_0=\mathrm{Vect}(i\tilde P_\Phi^{\natural}\tilde A_0)$.
@@ -150,29 +150,29 @@ with $\tilde A_0=i\,a'_t\,e_t+\vec a$ and $a'_t$, $\vec a$ real. The gradient ac
 **The two conditions.** The Klein–Gordon reduction gives the dispersion relation
 
 $$
-\frac{\omega^2}{c^2}-\vec k_\Phi^2=k_m^2 ,
+\frac{\omega^2}{c^2}-2\pi\vec\nu_\Phi^2=4\pi^{2}\nu_m^2 ,
 $$
 
 and the Lorenz condition fixes the time component of the amplitude,
 
 $$
-a'_t=\frac{c}{\omega}\,\vec k_\Phi\cdot\vec a .
+a'_t=\frac{c}{\omega}\,2\pi\vec\nu_\Phi\cdot\vec a .
 $$
 
 The amplitude data are the three real components of $\vec a$; $a'_t$ is not independent. With the momentum on the mass shell, which costs three parameters, a general massive plane wave has six.
 
-**The norm of the amplitude.** Split $\vec a=\vec a_\parallel+\vec a_\perp$ along and across $\vec k_\Phi$. Substituting the Lorenz relation,
+**The norm of the amplitude.** Split $\vec a=\vec a_\parallel+\vec a_\perp$ along and across $\vec\nu_\Phi$. Substituting the Lorenz relation,
 
 $$
-\langle\tilde A_0\rangle_\natural=\vec a^2-\frac{c^2}{\omega^2}\bigl(\vec k_\Phi\cdot\vec a\bigr)^2
-=\vec a_\perp^2+\vec a_\parallel^2\,\frac{k_m^2c^2}{\omega^2} .
+\langle\tilde A_0\rangle_\natural=\vec a^2-\frac{c^2}{\omega^2}\bigl(2\pi\vec\nu_\Phi\cdot\vec a\bigr)^2
+=\vec a_\perp^2+\vec a_\parallel^2\,\frac{4\pi^{2}\nu_m^2c^2}{\omega^2} .
 $$
 
 The display is exact, and it is a sum of two non-negative terms. Both vanish only if $\vec a_\perp=0$ and $\vec a_\parallel=0$, unless the second coefficient vanishes.
 
-**The amplitude is never lightlike.** For $k_m\neq0$ the coefficient $k_m^2c^2/\omega^2$ is positive, so the norm vanishes only for the zero amplitude, and every non-zero amplitude of a massive plane wave is spacelike. The natural guess is the opposite one, that degeneracy is a codimension-one condition on the three amplitude parameters and is therefore met on a surface of them. The condition is indeed one equation, but the mass shell and the Lorenz condition together place the amplitude strictly inside the spacelike half, where the equation has no solution.
+**The amplitude is never lightlike.** For $\nu_m\neq0$ the coefficient $\nu_m^2c^2/\omega^2$ is positive, so the norm vanishes only for the zero amplitude, and every non-zero amplitude of a massive plane wave is spacelike. The natural guess is the opposite one, that degeneracy is a codimension-one condition on the three amplitude parameters and is therefore met on a surface of them. The condition is indeed one equation, but the mass shell and the Lorenz condition together place the amplitude strictly inside the spacelike half, where the equation has no solution.
 
-**The consequence at zero mass.** For $k_m=0$ the coefficient vanishes and $\langle\tilde A_0\rangle_\natural=\vec a_\perp^2$. The norm vanishes exactly for the longitudinal amplitude, $\vec a\parallel\vec k_\Phi$, and for no other. That amplitude is the pure-gauge direction, and the next section records that its field strength is zero.
+**The consequence at zero mass.** For $\nu_m=0$ the coefficient vanishes and $\langle\tilde A_0\rangle_\natural=\vec a_\perp^2$. The norm vanishes exactly for the longitudinal amplitude, $\vec a\parallel\vec\nu_\Phi$, and for no other. That amplitude is the pure-gauge direction, and the next section records that its field strength is zero.
 
 **Two objects called a plane wave.** The element form writes $\tilde A_\Phi=\tilde A_0\exp(-i\theta_{\mathrm{pwp}})$, whose norm is $\langle\tilde A_0\rangle_\natural\exp(-2i\theta_{\mathrm{pwp}})$: a complex mode is degenerate everywhere or nowhere, and the amplitude decides. The polar form writes the real wave $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$, whose norm is
 
@@ -184,7 +184,7 @@ and which is degenerate at its nodes. The chart is a chart of $\mathbb{B}_\Phi$,
 
 **What a real massive wave degenerates to.** Its values are $\cos\theta_{\mathrm{pwp}}\tilde A_0$, spacelike wherever the cosine does not vanish and the apex where it does. So the degenerate set of a real massive plane wave is its nodal set, a family of parallel planes in spacetime, and no point of it carries a non-zero lightlike value. The polar chart's scale vanishes there and its direction survives, which is the polar article's statement that $\varepsilon$ flips at every node.
 
-**The count.** A general plane wave has six parameters: three of momentum on the mass shell and three of amplitude after the Lorenz condition. The lightlike amplitudes form the empty subfamily at $k_m\neq0$, and at $k_m=0$ the longitudinal subfamily, three parameters of momentum and one of amplitude. That is not the count of degenerate solutions, because a real wave is degenerate at its nodes whatever its amplitude: the numbers count the degenerate amplitudes, and those are the empty family or the longitudinal one.
+**The count.** A general plane wave has six parameters: three of momentum on the mass shell and three of amplitude after the Lorenz condition. The lightlike amplitudes form the empty subfamily at $\nu_m\neq0$, and at $\nu_m=0$ the longitudinal subfamily, three parameters of momentum and one of amplitude. That is not the count of degenerate solutions, because a real wave is degenerate at its nodes whatever its amplitude: the numbers count the degenerate amplitudes, and those are the empty family or the longitudinal one.
 
 **The comparison with the Dirac case.** For a massive Dirac plane wave the phase is invertible in the algebra, so the norm of the field is the norm of the polarization times an invertible element that never vanishes: degeneracy is a property of the polarization, of codimension two in the free eight, and the degenerate family has nine parameters against eleven. For the Proca wave the chart sees a real scale and not an invertible element, so degeneracy is transported as a scale and appears at the nodes. The Dirac degeneracy is a property of the polarization, and the Proca degeneracy is a property of the point.
 
@@ -194,39 +194,39 @@ $$
 N\bigl((ie_t+\vec e_z)+(ie_t+\vec e_x)\bigr)=N\bigl(2ie_t+\vec e_x+\vec e_z\bigr)=-4+2=-2 ,
 $$
 
-which is timelike. So a superposition of modes passes through the cone, and its degenerate set is a family of surfaces in spacetime. A static solution reaches the apex at its nodes: the potential $i\,a'_t(\vec r)e_t$ with $(\Delta_\Phi-k_m^2)a'_t=0$ satisfies the Lorenz condition identically and the Klein–Gordon equation, hence the Proca equation, and it is degenerate on the surface where $a'_t$ vanishes.
+which is timelike. So a superposition of modes passes through the cone, and its degenerate set is a family of surfaces in spacetime. A static solution reaches the apex at its nodes: the potential $i\,a'_t(\vec r)e_t$ with $(\Delta_\Phi-\nu_m^2)a'_t=0$ satisfies the Lorenz condition identically and the Klein–Gordon equation, hence the Proca equation, and it is degenerate on the surface where $a'_t$ vanishes.
 
-**The branch a plane wave uses.** A real plane wave's amplitude is spacelike, so its values are spacelike off the nodes: the chart uses the spacelike branch, and the timelike branch is left to other solutions. A cosine wave with a timelike amplitude satisfies the scale equation and not the Lorenz condition, whose value on that wave is $\sin\theta_{\mathrm{pwp}}(\vec k_\Phi\cdot\vec a-\frac{\omega}{c}a'_t)$; no timelike amplitude makes that vanish, because $\lvert\vec k_\Phi\cdot\vec a\rvert$ is bounded by $\frac{\omega}{c}\lvert\vec a\rvert$ and that is less than $\frac{\omega}{c}\lvert a'_t\rvert$.
+**The branch a plane wave uses.** A real plane wave's amplitude is spacelike, so its values are spacelike off the nodes: the chart uses the spacelike branch, and the timelike branch is left to other solutions. A cosine wave with a timelike amplitude satisfies the scale equation and not the Lorenz condition, whose value on that wave is $\sin\theta_{\mathrm{pwp}}(\vec\nu_\Phi\cdot\vec a-\frac{\omega}{c}a'_t)$; no timelike amplitude makes that vanish, because $\lvert\vec\nu_\Phi\cdot\vec a\rvert$ is bounded by $\frac{\omega}{c}\lvert\vec a\rvert$ and that is less than $\frac{\omega}{c}\lvert a'_t\rvert$.
 
 ## The Lightlike Field Strength at Zero Mass
 
 **The field strength's square.** A direct computation gives the amplitude's field strength in components,
 
 $$
-\tilde F_0=a'_t\,\vec k_\Phi-\frac{\omega}{c}\,\vec a-i\,\vec k_\Phi\times\vec a ,
+\tilde F_0=a'_t\,2\pi\vec\nu_\Phi-\frac{\omega}{c}\,\vec a-i\,2\pi\vec\nu_\Phi\times\vec a ,
 $$
 
-whose real part is $-\vec W$ with $\vec W=(\omega/c)\vec a-a'_t\vec k_\Phi$, and whose imaginary part is $\vec V=-\vec k_\Phi\times\vec a$; the scalar part, which the Lorenz relation makes vanish, is removed by $\mathrm{Vect}$. The cross term of the square vanishes, because $\vec V\cdot\vec W=-a'_t(\vec k_\Phi\times\vec a)\cdot\vec k_\Phi=0$, so the square is real:
+whose real part is $-\vec W$ with $\vec W=(\omega/c)\vec a-a'_t2\pi\vec\nu_\Phi$, and whose imaginary part is $\vec V=-2\pi\vec\nu_\Phi\times\vec a$; the scalar part, which the Lorenz relation makes vanish, is removed by $\mathrm{Vect}$. The cross term of the square vanishes, because $\vec V\cdot\vec W=-a'_t(2\pi\vec\nu_\Phi\times\vec a)\cdot2\pi\vec\nu_\Phi=0$, so the square is real:
 
 $$
-\tilde F_0^2=\vec V^2-\vec W^2=\lvert\vec k_\Phi\rvert^2\vec a^2-\bigl(\vec k_\Phi\cdot\vec a\bigr)^2-\frac{\omega^2}{c^2}\vec a^2+2\frac{\omega}{c}a'_t\,\vec k_\Phi\cdot\vec a-a_t^{\prime2}\lvert\vec k_\Phi\rvert^2 .
+\tilde F_0^2=\vec V^2-\vec W^2=\lvert2\pi\vec\nu_\Phi\rvert^2\vec a^2-\bigl(2\pi\vec\nu_\Phi\cdot\vec a\bigr)^2-\frac{\omega^2}{c^2}\vec a^2+2\frac{\omega}{c}a'_t\,2\pi\vec\nu_\Phi\cdot\vec a-a_t^{\prime2}\lvert2\pi\vec\nu_\Phi\rvert^2 .
 $$
 
-Two substitutions reduce it. The Lorenz relation replaces $a'_t$, and the dispersion relation replaces $\omega^2/c^2-\vec k_\Phi^2$ by $k_m^2$. The result is
+Two substitutions reduce it. The Lorenz relation replaces $a'_t$, and the dispersion relation replaces $\omega^2/c^2-\vec\nu_\Phi^2$ by $\nu_m^2$. The result is
 
 $$
-\boxed{\;\tilde F_0^2=-k_m^2\,\langle\tilde A_0\rangle_\natural\;}
+\boxed{\;\tilde F_0^2=-4\pi^{2}\nu_m^2\,\langle\tilde A_0\rangle_\natural\;}
 $$
 
 **The identity's content.** The field strength's square is minus the mass squared times the potential's norm, for every plane wave. So the two objects' degeneracies are not independent: they coincide except where the mass vanishes.
 
-**At zero mass.** For $k_m=0$ the square vanishes for every amplitude, and the field strength is a null bivector. It is non-zero for a transverse mode, since $\vec V=-\vec k_\Phi\times\vec a$ and $\vec W=(\omega/c)\vec a$ do not both vanish, so it is in $\Sigma_{00}$; and its two real vectors are perpendicular and of equal length, $\vec V^2=\vec W^2$, which is the radiative field with both invariants zero. The massless transverse modes therefore put the field strength on the cone of its carrier, in the nilpotent sector, at every momentum and every amplitude.
+**At zero mass.** For $\nu_m=0$ the square vanishes for every amplitude, and the field strength is a null bivector. It is non-zero for a transverse mode, since $\vec V=-2\pi\vec\nu_\Phi\times\vec a$ and $\vec W=(\omega/c)\vec a$ do not both vanish, so it is in $\Sigma_{00}$; and its two real vectors are perpendicular and of equal length, $\vec V^2=\vec W^2$, which is the radiative field with both invariants zero. The massless transverse modes therefore put the field strength on the cone of its carrier, in the nilpotent sector, at every momentum and every amplitude.
 
-**At zero mass, the potential.** The same limit puts the potential on its own cone only for the longitudinal amplitude, by the previous section. There the field strength vanishes: the direction $\vec k_\Phi\times\vec a$ whose imaginary part it carries is zero, and the remaining part $a'_t\vec k_\Phi-(\omega/c)\vec a$ is zero because $a'_t=(c/\omega)\lvert\vec k_\Phi\rvert\lvert\vec a\rvert$ and $\omega/c=\lvert\vec k_\Phi\rvert$ at $k_m=0$.
+**At zero mass, the potential.** The same limit puts the potential on its own cone only for the longitudinal amplitude, by the previous section. There the field strength vanishes: the direction $\vec\nu_\Phi\times\vec a$ whose imaginary part it carries is zero, and the remaining part $a'_t\vec\nu_\Phi-(\omega/c)\vec a$ is zero because $a'_t=(c/\omega)\lvert2\pi\vec\nu_\Phi\rvert\lvert\vec a\rvert$ and $\omega/c=\lvert2\pi\vec\nu_\Phi\rvert$ at $\nu_m=0$.
 
 **The two cones are not reached together.** At zero mass every mode with a non-zero field strength has a spacelike potential, and every mode with a lightlike potential has no field strength. So the sector assignment of the two objects is realised in complementary regimes: the field strength's degeneracy is generic, the potential's is confined to the gauge direction. One sentence states the pair of facts: the potential is lightlike exactly where the field strength is absent.
 
-**Why the mass is the switch.** At $k_m\neq0$ the identity gives $\tilde F_0^2=-k_m^2\langle\tilde A_0\rangle_\natural$, and the norm of the amplitude is strictly positive, so the field strength's square is strictly negative. A massive plane wave's field strength is never null, and its second invariant is the potential's norm with a sign. The mass is what moves the field strength off its cone, and it does so for every mode at once.
+**Why the mass is the switch.** At $\nu_m\neq0$ the identity gives $\tilde F_0^2=-4\pi^{2}\nu_m^2\langle\tilde A_0\rangle_\natural$, and the norm of the amplitude is strictly positive, so the field strength's square is strictly negative. A massive plane wave's field strength is never null, and its second invariant is the potential's norm with a sign. The mass is what moves the field strength off its cone, and it does so for every mode at once.
 
 **A caveat on superpositions.** Neither statement survives a sum of modes with different momenta. The field strength of a sum is not the sum of the field strengths, and its square is not the sum of the squares; a superposition of two massless modes of different momenta is generally not a null field. The sector statements of this section are statements about single modes, and the Dirac article's massless case has the same limitation: its two-sided field is generically an invertible element.
 
@@ -256,7 +256,7 @@ with $r>0$, $\varepsilon=\pm1$, $\tilde U_{\Psi,\mathrm b}$ a boost, and $\hat u
 
 **It is not a failure of the equation.** The Proca equation holds at a degenerate point as it holds anywhere, the Lorenz condition holds, and the field strength is defined. What fails is the reading of the potential in the chart's coordinates.
 
-**It is not imposed by the mass.** The mass enters the identity $\tilde F_0^2=-k_m^2\langle\tilde A_0\rangle_\natural$ as a coefficient, and it is the mass that keeps the plane-wave amplitude strictly spacelike. So the mass acts on degeneracy through the amplitude: it removes the lightlike amplitudes and leaves the nodal degeneracy untouched.
+**It is not imposed by the mass.** The mass enters the identity $\tilde F_0^2=-4\pi^{2}\nu_m^2\langle\tilde A_0\rangle_\natural$ as a coefficient, and it is the mass that keeps the plane-wave amplitude strictly spacelike. So the mass acts on degeneracy through the amplitude: it removes the lightlike amplitudes and leaves the nodal degeneracy untouched.
 
 **It is not two conditions on the potential.** On the material sector the norm is one real equation, so the degenerate set of the carrier is a hypersurface and not a codimension-two set. A reader who carries over the algebra's count looks for two conditions and finds one; the count changes because the carrier's reality does.
 
@@ -274,7 +274,7 @@ Every non-zero lightlike potential satisfies $\tilde A_\Phi^2=\lambda\tilde A_\P
 
 The field strength's carrier is the complex vector part, of six real dimensions and codimension two, and its cone is entirely $\Sigma_{00}$: a pure vector squares to a scalar, so $\Sigma_{01}$ does not meet that carrier. The trace decides both assignments — $2i\,a'_t$ for the potential, zero for the field strength — and the two objects of the Proca field therefore carry one sector each, where the Dirac field carries both in one object.
 
-For a plane wave, $\langle\tilde A_0\rangle_\natural=\vec a_\perp^2+\vec a_\parallel^2k_m^2c^2/\omega^2$, so no massive amplitude is lightlike: a real massive wave is degenerate exactly at its nodes, and at zero mass the longitudinal mode is lightlike everywhere, where the field strength vanishes. For every plane wave $\tilde F_0^2=-k_m^2\langle\tilde A_0\rangle_\natural$: at zero mass the field strength of every transverse mode is a non-zero nilpotent, in $\Sigma_{00}$, and at non-zero mass it is never null. The two cones are reached in complementary regimes, and the mass is the switch.
+For a plane wave, $\langle\tilde A_0\rangle_\natural=\vec a_\perp^2+\vec a_\parallel^2\,4\pi^{2}\nu_m^2c^2/\omega^2$, so no massive amplitude is lightlike: a real massive wave is degenerate exactly at its nodes, and at zero mass the longitudinal mode is lightlike everywhere, where the field strength vanishes. For every plane wave $\tilde F_0^2=-4\pi^{2}\nu_m^2\langle\tilde A_0\rangle_\natural$: at zero mass the field strength of every transverse mode is a non-zero nilpotent, in $\Sigma_{00}$, and at non-zero mass it is never null. The two cones are reached in complementary regimes, and the mass is the switch.
 
 Degenerate values of the potential therefore arise from superpositions, which cross the cone on surfaces, and from the nodes of real fields, where the value is the apex. For a single mode the boundary is met only at the nodes, or not left at all.
 
@@ -294,11 +294,11 @@ Degenerate values of the potential therefore arise from superpositions, which cr
 | $\lambda=2Q_t$ | The non-zero eigenvalue of a $\Sigma_{01}$ element |
 | $\tilde\Pi_{\mathrm{id}}=\tilde A_\Phi/\lambda$ | The idempotent of a lightlike potential, $\tfrac12(e_t-i\hat u)$ |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | Square of the vector part; $N=Q_t^2+B^2$ |
-| $\tilde P_\Phi=i(\omega/c)e_t+\vec k_\Phi$ | Four-wavevector biquaternion |
-| $\theta_{\mathrm{pwp}}=\omega r'_t/c-\vec k_\Phi\cdot\vec r$ | Plane-wave angle |
+| $\tilde P_\Phi=i(\omega/c)e_t+2\pi\vec\nu_\Phi$ | Four-wavevector biquaternion |
+| $\theta_{\mathrm{pwp}}=\omega r'_t/c-2\pi\vec\nu_\Phi\cdot\vec r$ | Plane-wave angle |
 | $\tilde A_0=i\,a'_t\,e_t+\vec a$ | Plane-wave amplitude of the potential |
-| $\vec a_\parallel$, $\vec a_\perp$ | The amplitude along and across $\vec k_\Phi$ |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\vec a_\parallel$, $\vec a_\perp$ | The amplitude along and across $\vec\nu_\Phi$ |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 
 ## Further Reading
 

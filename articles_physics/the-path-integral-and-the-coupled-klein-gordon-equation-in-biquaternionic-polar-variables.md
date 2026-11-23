@@ -37,9 +37,9 @@ The factorisation is checked and it converges at the second order. On a nine-sit
 The exponent. The weight is $\exp(\frac{2\pi iS_{\mathrm{gco}}}{h})$ with the element companion's action, and in the chart
 
 $$
-\frac{2\pi i}{h}S_{\mathrm{gco}}=\frac{i}{2}\int\mathrm{d}^{4}x\;\Bigl\{(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}
-+\varrho^{2}\Bigl[\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{2\pi ϛ}{h}a'_t\bigr)^{2}
--\bigl\lvert\nabla\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}\vec A\bigr\rvert^{2}\Bigr]-k_m^{2}\varrho^{2}\Bigr\},
+\frac{i}{h}S_{\mathrm{gco}}=\frac{i}{2}\int\mathrm{d}^{4}x\;\Bigl\{(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}
++\varrho^{2}\Bigl[\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϛ}{h}a'_t\bigr)^{2}
+-\bigl\lvert\nabla\theta_{\mathrm{pha}}+\frac{ϛ}{h}\vec A\bigr\rvert^{2}\Bigr]-4\pi^{2}\nu_m^{2}\varrho^{2}\Bigr\},
 $$
 
 which is the free polar article's bracket with the two substitutions of the polar variational companion, §*The Action in the Chart*, and with the $\tfrac12$ of the free article's normalisation. The material convention is $A_t=i a'_t$ with $a'_t$ and $\vec A$ real, so the temporal shift carries a minus and the spatial one a plus; the two signs are the metric's and are the same two the polar equation companion records for the four-momentum.
@@ -86,7 +86,7 @@ The two saddles, in the order of the free article. Stationarity in the scale at 
 
 $$
 \kappa^{\mathrm{kin}}\!\cdot\kappa^{\mathrm{kin}}\equiv\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}
-=k_m^{2}-\frac{\Box_\Phi \varrho}{\varrho},
+=4\pi^{2}\nu_m^{2}-\frac{\Box_\Phi \varrho}{\varrho},
 $$
 
 which is the polar equation companion's amplitude equation with the mechanical bracket in place of the free one. Read through $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ it is $(\partial_{r'_t}S_{\tilde\Xi}-ϛa'_t)^{2}-\lvert\nabla S_{\tilde\Xi}+ϛ\vec A\rvert^{2}=m^{2}c^{2}-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/\varrho$, the mass shell with the mechanical momentum and the quantum potential.
@@ -168,13 +168,13 @@ The chart carries the action's reading of the covariant square and cannot carry 
 | $2c\varrho^{2}\partial\theta_{\mathrm{pha}}$ | The linear interaction term; the current's slot |
 | $c^{2}\varrho^{2}$ | The quadratic interaction term; no derivative |
 | $\frac{(2\pi)^{2} ϛ^{2}\varrho^{2}}{h^{2}}\bigl((a'_t)^{2}-\lvert\vec A\rvert^{2}\bigr)$ | The quadratic term in the material slots; the relative sign is the metric's |
-| $\kappa^{\mathrm{kin}}\!\cdot\kappa^{\mathrm{kin}}=k_m^{2}-\Box_\Phi \varrho/\varrho$ | The amplitude equation; the scale's saddle |
+| $\kappa^{\mathrm{kin}}\!\cdot\kappa^{\mathrm{kin}}=4\pi^{2}\nu_m^{2}-\Box_\Phi \varrho/\varrho$ | The amplitude equation; the scale's saddle |
 | $\sum_{\imath}\partial_{\imath}\bigl(\varrho^{2}\kappa_{\mathrm{kin},\imath}\bigr)=0$ | The mechanical transport equation; the angle's saddle |
 | $-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi \varrho/\varrho$ | The quantum potential; independent of the connection |
 | $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})$ | The action's paired operator; the chart's object |
 | $\sum_{\imath}(\partial_{\imath}+c_{\imath})^{2}$ | The equation's squared operator; needs a cross term the chart lacks |
 | $2\Sigma c$ | The squared operator's symbol's imaginary part where $\bar c\ne-c$ |
-| $k_m=\frac{2\pi mc}{h}$ | The mass parameter |
+| $\nu_m=\frac{mc}{h}$ | The mass parameter |
 
 ## Further Reading
 

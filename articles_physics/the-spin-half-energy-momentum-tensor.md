@@ -69,7 +69,7 @@ The spin's antisymmetry is why the torque is a commutator. The connection's symm
 
 ### The Trace Is the Mass Density
 
-**The trace of the symmetric part is fixed by the field, and it equals the mass term.** The canonical trace is the scalar bilinear. With the Dirac equation written in the weight form, $\bigl(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\partial_{\imath}-k_m\bigr)\tilde\Xi=0$, the two terms inside the bracket of $-\tfrac i2\bigl[\sum_{\imath}\varepsilon_{\imath}\bar{\tilde\Xi}\gamma_{\imath}\partial_{\imath}\tilde\Xi-\sum_{\imath}\varepsilon_{\imath}(\partial_{\imath}\bar{\tilde\Xi})\gamma_{\imath}\tilde\Xi\bigr]$ are $+ik_m\Omega$ and $-ik_m\Omega$, so the bracket times $\tfrac i2$ is $k_m\Omega$. The Belinfante improvement leaves that alone, because the improvement is a divergence antisymmetric in its last two indices and its own trace vanishes. With $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ and $\frac{h}{2\pi} c\,k_m=mc^{2}$,
+**The trace of the symmetric part is fixed by the field, and it equals the mass term.** The canonical trace is the scalar bilinear. With the Dirac equation written in the weight form, $\bigl(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\partial_{\imath}-2\pi\nu_m\bigr)\tilde\Xi=0$, the two terms inside the bracket of $-\tfrac i2\bigl[\sum_{\imath}\varepsilon_{\imath}\bar{\tilde\Xi}\gamma_{\imath}\partial_{\imath}\tilde\Xi-\sum_{\imath}\varepsilon_{\imath}(\partial_{\imath}\bar{\tilde\Xi})\gamma_{\imath}\tilde\Xi\bigr]$ are $+ik_m\Omega$ and $-ik_m\Omega$, so the bracket times $\tfrac i2$ is $\nu_m\Omega$. The Belinfante improvement leaves that alone, because the improvement is a divergence antisymmetric in its last two indices and its own trace vanishes. With $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ and $\frac{h}{2\pi} c\,\nu_m=mc^{2}$,
 
 $$
 \sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}=mc^{2}\Omega .
@@ -99,7 +99,7 @@ with $u$ the unit flow. Its rest frame is the mode's own frame, and there $\epsi
 
 *Check.* Boosted to the rest frame of its own current, the spatial block has largest entry $8\times10^{-16}$, for either spin, for the rest frame and for two waves of one momentum, at three events of each field. Two waves of one momentum and opposite spins give $\epsilon=4$ at the momentum $mc$ with $\bar u\,u=2m$ per wave, $p=0$ and shear $0$: the energies add and no stress appears. So the spin does not enter the symmetric part at fixed momentum, and the dust character belongs to the momentum alone.
 
-A massless mode is a null dust. At $m=0$ the trace identity forces $\Omega=0$ and the single-mode tensor is $\epsilon k_{\imath} k_{\jmath}$ with $k$ null. In the frame of the mode the spatial block is $\epsilon n_jn_k$: one eigenvalue $\epsilon$ along the direction of motion and two zero across it. The isotropised pressure is $\epsilon/3$, so the radiation equation of state is what tracelessness gives; the stress is nevertheless uniaxial, and the equation of state does not make it isotropic.
+A massless mode is a null dust. At $m=0$ the trace identity forces $\Omega=0$ and the single-mode tensor is $\epsilon \nu_{\imath} \nu_{\jmath}$ with $k$ null. In the frame of the mode the spatial block is $\epsilon n_jn_k$: one eigenvalue $\epsilon$ along the direction of motion and two zero across it. The isotropised pressure is $\epsilon/3$, so the radiation equation of state is what tracelessness gives; the stress is nevertheless uniaxial, and the equation of state does not make it isotropic.
 
 *Check.* At $m=10^{-8}$ with the momentum $(0.9,-0.4,0.3)$: $\sum_{\imath}\varepsilon_{\imath} P_{\imath} P_{\imath}=2\times10^{-16}$, $T_{jj}/\epsilon=1.000000$, the three eigenvalues of $T_{jk}$ are $(0,0,1)\epsilon$, and the trace is $3\times10^{-16}\epsilon$, for either spin.
 
@@ -167,7 +167,7 @@ It establishes that the source of the spin law is a commutator and that its kern
 The Gordon decomposition splits the current into a convection part and a spin part, and the spin part is a bound current. The identity is
 
 $$
-J_{\Phi,\imath}=\frac{\rho}{m}P_{\Phi,\imath}+\frac{1}{k_m}\partial_{\jmath}\bigl(\bar{\tilde\Xi}\Sigma_{\imath\jmath}\tilde\Xi\bigr),
+J_{\Phi,\imath}=\frac{\rho}{m}P_{\Phi,\imath}+\frac{1}{2\pi\nu_m}\partial_{\jmath}\bigl(\bar{\tilde\Xi}\Sigma_{\imath\jmath}\tilde\Xi\bigr),
 $$
 
 with the second term a total divergence by construction and $\Sigma_{\imath\jmath}$ the spin generator of the algebra. [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html) proves the identity on shell, in position space and in momentum space, and states that the spin term's own divergence vanishes identically because a symmetric derivative meets an antisymmetric object.
@@ -225,7 +225,7 @@ The trace of the symmetric part is the mass term, $\sum_{\imath}\varepsilon_{\im
 | $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ | Rotor connection |
 | $\tau_{\lambda\jmath}$ | Torque, the spin law's source |
 | $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ | Vorticity 2-form |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $\rho=r^{2}$ | Density |
 | $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ | Scalar bilinear, the mass density's number |
 | $\theta$ | Internal angle between mass density and particle density |

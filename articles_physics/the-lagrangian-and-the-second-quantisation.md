@@ -16,7 +16,7 @@ What this article is not. It is not a derivation of the promotion — the promot
 
 ## Conventions
 
-The conventions are the family's, and one more. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the actions are the family's, element-form or chart-form as the article in question writes them; $\frac{h}{2\pi}$ is the constant that converts an action's units into a rate; $k_m=\frac{2\pi mc}{h}$; the measure is $\mathrm{d}^{4}r$; the pairing is the one the field's article uses.
+The conventions are the family's, and one more. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the actions are the family's, element-form or chart-form as the article in question writes them; $\frac{h}{2\pi}$ is the constant that converts an action's units into a rate; $\nu_m=\frac{mc}{h}$; the measure is $\mathrm{d}^{4}r$; the pairing is the one the field's article uses.
 
 The addition is the bracket's notation. For a field $\phi$ and its conjugate $\pi$ — in the corpus's terms the two members of the conjugate pair — the equal-time bracket is written $\{\phi(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')$, and the general bracket of two functionals is written $\{F,G\}$. The Green functions are $G_{R}$ (retarded: support in the forward cone) and $G_{A}$ (advanced: support in the backward cone), and the fundamental object of the Peierls construction is their difference $G=G_{R}-G_{A}$, whose support is the full light cone.
 
@@ -30,7 +30,7 @@ $$
 S[\phi]=\tfrac12\int\mathrm{d}^{4}r\;\phi\,\mathcal{D}\,\phi+\text{(linear terms in the sources)},
 $$
 
-with $\mathcal{D}$ a differential operator: $\Box_\Phi-k_m^{2}$ for the scalar, the first-order Dirac operator for the spinor, the Proca operator $\Box_\Phi-k_m^{2}$ on the transverse part for the vector, and their coupled versions with the connection inside the covariant derivative.
+with $\mathcal{D}$ a differential operator: $\Box_\Phi-4\pi^{2}\nu_m^{2}$ for the scalar, the first-order Dirac operator for the spinor, the Proca operator $\Box_\Phi-4\pi^{2}\nu_m^{2}$ on the transverse part for the vector, and their coupled versions with the connection inside the covariant derivative.
 
 What quadratic means here, and why it is the whole of the family's classical content. A quadratic action has linear equations, so its solutions superpose; it has a Green function, so its response to a source is computable; and it has a bracket, so its symplectic structure is well defined. All three are classical and all three are in the corpus. What a quadratic action does *not* have is a scattering: with no interaction there is nothing to scatter, and the corpus's interacting article stops at the exact classical equation for the same reason.
 
@@ -50,12 +50,12 @@ $$
 
 is the Peierls bracket: the difference of the two Green functions is the classical bracket of the field with itself. For a conjugate pair the same construction gives $\{\phi(x),\pi(y)\}=\partial_{y_0}G(x,y)$, and at equal times that is a delta function.
 
-The hand check for the scalar. For $\mathcal{D}=\Box_\Phi-k_m^{2}$ the difference of the Green functions is the Pauli–Jordan function,
+The hand check for the scalar. For $\mathcal{D}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ the difference of the Green functions is the Pauli–Jordan function,
 
 $$
-G(x,y)=\int\frac{\mathrm{d}^{3}k}{(2\pi)^{3}}\;\frac{\sin\bigl(\omega_k\,\Delta r'^{0}/c\bigr)}{\omega_k}\,e^{i\vec k\cdot(\vec r-\vec r')},
+G(x,y)=\int\frac{\mathrm{d}^{3}k}{(2\pi)^{3}}\;\frac{\sin\bigl(\omega_k\,\Delta r'^{0}/c\bigr)}{\omega_k}\,e^{2\pi i\vec\nu_{\Phi}\cdot(\vec r-\vec r')},
 \qquad
-\omega_k=c\sqrt{k^{2}+k_m^{2}},
+\omega_k=c\sqrt{k^{2}+4\pi^{2}\nu_m^{2}},
 $$
 
 which vanishes at $\Delta r'^{0}=0$ and whose time derivative there is $\delta^{3}(\vec r-\vec r')$. So $\{\phi(\vec r),\phi(\vec r')\}=0$ and $\{\phi(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')$: the canonical bracket is *derived* from the action's Green functions, not assumed. That derivation is the first step of the route, and it is the one the corpus's quadratic actions make available.

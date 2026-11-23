@@ -8,25 +8,25 @@ The parent prints the pair and the mass shell. [The Klein–Gordon Equation in B
 
 What the second order changes against the first-order family, in one paragraph. The Schrödinger article's eikonal is an energy balance: one condition on the three-momentum, produced by a first-order equation in time. Here the eikonal is a normalisation: one condition on the four-momentum, and it says that the flow is a unit timelike vector. The classical object the limit produces is therefore not a particle with a given energy but a congruence of timelike lines, and the difference is the order of the equation and not a choice of analysis.
 
-A second parameter appears, and it is not the first. $\epsilon=1/(k_{\Phi}L)$ measures the scale's gradient against the phase's. But the mass shell is a relation among quantities of size $mc^{2}$, and the shift produced by the quantum potential can be measured against that too, which gives
+A second parameter appears, and it is not the first. $\epsilon=1/(2\pi\nu_{\Phi}L)$ measures the scale's gradient against the phase's. But the mass shell is a relation among quantities of size $mc^{2}$, and the shift produced by the quantum potential can be measured against that too, which gives
 
 $$
-\delta=\frac{1}{k_{m}L}=\frac{h}{2\pi mcL}=\epsilon\,\frac{k_{\Phi}}{k_{m}}=\epsilon\,\gamma\beta ,
+\delta=\frac{1}{2\pi\nu_mL}=\frac{h}{2\pi mcL}=\epsilon\,\frac{2\pi\nu_{\Phi}}{2\pi\nu_m}=\epsilon\,\gamma\beta ,
 $$
 
 the Compton wavelength over the length on which the scale varies. **$\delta\ll1$ says the amplitude varies slowly on the Compton scale**, and that is the one-particle precondition: the region must be large against the length at which pairs are made.
 
 The two conditions are not the same condition, and the ordering matters. $\delta<\epsilon$ exactly when the particle is non-relativistic, $\lvert\vec p\rvert<mc$, because $\gamma\beta<1$ there; for an ultra-relativistic particle $\delta>\epsilon$. So the semiclassical limit and the one-particle limit are independent, and a statement that takes $\epsilon\to0$ while holding $\gamma\beta$ fixed says nothing about $\delta$. **Both are needed and neither implies the other.**
 
-The criterion is written on what the equation differentiates. The covariant derivative acts on the phase, so the large number is $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$ and the small one is $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. In the coupled families the same rule has to be applied to the mechanical momentum; here the potential is absent and the two coincide.
+The criterion is written on what the equation differentiates. The covariant derivative acts on the phase, so the large number is $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$ and the small one is $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. In the coupled families the same rule has to be applied to the mechanical momentum; here the potential is absent and the two coincide.
 
-What the article establishes, in five sentences. The parent's pair is exact, and its two lines are ordered differently: the amplitude line is a series whose order-two term is the quantum potential, and the transport line is a divergence and not a series. Order zero is the mass shell, read in the algebra as $\langle\tilde K_\Phi\rangle_{\natural}=-k_{m}^{2}$, whose characters are straight timelike lines and whose flow is $\vec v=c^{2}\vec p/E$. Order one is the transport equation, which the limit neither produces nor spoils, and which says the current is the density times the four-velocity. Order two is the quantum potential, and its size depends on the denominator chosen: $\delta^{2}$ against the rest energy and $\epsilon^{2}$ against the kinetic energy.
+What the article establishes, in five sentences. The parent's pair is exact, and its two lines are ordered differently: the amplitude line is a series whose order-two term is the quantum potential, and the transport line is a divergence and not a series. Order zero is the mass shell, read in the algebra as $\langle\tilde\Upsilon_\Phi\rangle_{\natural}=-\nu_m^{2}$, whose characters are straight timelike lines and whose flow is $\vec v=c^{2}\vec p/E$. Order one is the transport equation, which the limit neither produces nor spoils, and which says the current is the density times the four-velocity. Order two is the quantum potential, and its size depends on the denominator chosen: $\delta^{2}$ against the rest energy and $\epsilon^{2}$ against the kinetic energy.
 
 What is not new. The relativistic Madelung pair is Takabayasi's, the mass shell is the parent's, and the quantum potential's density-functional form is standard. Added here: the separation of the criterion from the one-particle ratio $\delta$, the window between them and the statement that neither implies the other, the norm reading of the mass shell as a normalisation rather than an energy balance, and the two denominators of the discarded term's size.
 
 The restriction is the parent's. The pair is the central field's, $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_{t}$, and the parent proves that class is invariant only under a central Hamiltonian. The limit is defined there, as in the first-order family.
 
-Conventions. Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector, with $r'_{t}=ct'$ and no setting of $c=1$; $\rho_{\mathrm{num}}=\varrho^{2}$ the proper density; $k_{m}=\frac{2\pi mc}{h}$ and $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$; $\tilde P_\Phi=i(E/c)e_{t}+\vec p$ with $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $E=-c\,\partial_{r'_{t}}S_{\tilde\Xi}$.
+Conventions. Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector, with $r'_{t}=ct'$ and no setting of $c=1$; $\rho_{\mathrm{num}}=\varrho^{2}$ the proper density; $\nu_m=\frac{mc}{h}$ and $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$; $\tilde P_\Phi=i(E/c)e_{t}+\vec p$ with $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $E=-c\,\partial_{r'_{t}}S_{\tilde\Xi}$.
 
 ## The Word, the Pair, and the Norm
 
@@ -58,9 +58,9 @@ The current is the proper density times the four-velocity, and the charge densit
 
 ## The Two Parameters
 
-The first parameter is the semiclassical one. $\epsilon=1/(k_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$, and it compares one derivative of the scale with one derivative of the phase.
+The first parameter is the semiclassical one. $\epsilon=1/(2\pi\nu_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$, and it compares one derivative of the scale with one derivative of the phase.
 
-The second is the one-particle one. $\delta=1/(k_{m}L)$, and it compares the amplitude's length with the Compton wavelength. It is the size of the quantum potential against the rest energy, and its smallness is what makes a one-particle reading possible: a region smaller than the Compton wavelength cannot be described by a single particle's wave function.
+The second is the one-particle one. $\delta=1/(2\pi\nu_mL)$, and it compares the amplitude's length with the Compton wavelength. It is the size of the quantum potential against the rest energy, and its smallness is what makes a one-particle reading possible: a region smaller than the Compton wavelength cannot be described by a single particle's wave function.
 
 The order table, with the two columns that matter.
 
@@ -163,7 +163,7 @@ It does not produce a non-relativistic theory by itself. The second truncation, 
 
 ## Verification
 
-The parent's pair was checked against the equation. With $\tilde\Xi=\varrho\exp(\frac{2\pi iS}{h})$, a real $\varrho>0$ and a real $S$, the residual of $\Box_\Phi\tilde\Xi-k_{m}^{2}\tilde\Xi$, divided by the exponential, is
+The parent's pair was checked against the equation. With $\tilde\Xi=\varrho\exp(\frac{2\pi iS}{h})$, a real $\varrho>0$ and a real $S$, the residual of $\Box_\Phi\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi$, divided by the exponential, is
 
 $$
 \frac{(2\pi)^{2} \varrho}{h^{2}}\left[\left(\frac{\partial S}{\partial r'_{t}}\right)^{2}-\lvert\nabla S\rvert^{2}-m^{2}c^{2}+\frac{h^{2}}{4\pi^{2}}\frac{\Box_\Phi \varrho}{\varrho}\right]
@@ -182,7 +182,7 @@ What was not checked. No numerical solution of the time-dependent Klein–Gordon
 
 ## Summary
 
-The parent's central field is $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$, and its boxed pair is the amplitude equation and the transport equation, exact and equivalent to the equation. The limit assigns one power of $\epsilon=1/(k_{\Phi}L)$ to each spatial derivative of the scale.
+The parent's central field is $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$, and its boxed pair is the amplitude equation and the transport equation, exact and equivalent to the equation. The limit assigns one power of $\epsilon=1/(2\pi\nu_{\Phi}L)$ to each spatial derivative of the scale.
 
 Order zero is the mass shell, and in the algebra it is the parent's statement that the phase gradient has norm $mc$, $\langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}$. The eikonal is a normalisation and not an energy balance, its characters are straight timelike lines, and its flow is $\vec v=c^{2}\vec p/E$: relativistic mechanics, not Newton's.
 
@@ -200,12 +200,12 @@ Order two is the quantum potential, a functional of the density alone and built 
 | $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The action |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
 | $r'_{t}=ct'$ | The material length |
-| $k_{m}=\frac{2\pi mc}{h}$, $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$ | Mass and momentum wave numbers |
+| $\nu_m=\frac{mc}{h}$, $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$ | Mass and momentum wave numbers |
 | $\langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}$ | The mass shell as a norm |
 | $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde P_\Phi/m$ | The conserved current |
 | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})=\gamma\rho_{\mathrm{num}}$ | The charge density |
-| $\epsilon=1/(k_{\Phi}L)$ | The semiclassical parameter |
-| $\delta=1/(k_{m}L)=\epsilon\gamma\beta$ | The one-particle parameter |
+| $\epsilon=1/(2\pi\nu_{\Phi}L)$ | The semiclassical parameter |
+| $\delta=1/(2\pi\nu_mL)=\epsilon\gamma\beta$ | The one-particle parameter |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential |
 
 ## Further Reading

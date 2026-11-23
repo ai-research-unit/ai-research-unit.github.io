@@ -349,14 +349,14 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 The two Dirac equations. The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and its conjugate $(\tilde\nabla_\Phi)^{\natural}$, the one-sided form is the chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
 two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The two-sided form writes a single field and puts the second slot on the right of the algebra element,
 
 $$
-\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-k_mi\,\overline{F}\,\vec e_z=0,
+\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-2\pi\nu_mi\,\overline{F}\,\vec e_z=0,
 \qquad
 D_3=\sum_\eta\vec e_\eta\frac{\partial}{\partial R_\eta},
 $$
@@ -367,7 +367,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}F=m\left(-i\overline{F}\vec e_z\right),
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 which is the second member of the pair with its left field read as $-i\overline{F}\vec e_z$: a conjugation and a fixed direction, nothing else. That is what the right multiplier carries — the second chirality slot, which the one-sided form holds in a second field, the two-sided form holds in the side of the action. The dictionary is recorded in *The Dirac Equation in Biquaternionic Form*. The chirality basis operator is $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, the reference-frame basis operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 

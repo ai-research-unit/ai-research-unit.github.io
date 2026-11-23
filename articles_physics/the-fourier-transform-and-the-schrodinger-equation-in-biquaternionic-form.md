@@ -6,7 +6,7 @@ The parent writes the equation and solves it. The transform is the lens that is 
 
 The replacement is exact and it costs nothing. Differentiation in $t'$ becomes multiplication by $-i\omega$, so the operator $i \frac{h}{2\pi}\,\partial_{t'}-\tilde H_\Psi$ becomes the element $hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$. That element is the symbol. Every statement below is a statement about it, and none of them is a new prediction: the symbol is the parent's equation read at one frequency.
 
-The first finding is that the symbol is not a number. In the scalar theory the symbol is a scalar function of $\omega$ and $\vec k$. Here it is an element of $\mathbb{B}$ that acts by left multiplication on a four-dimensional complex space, and its determinant is a perfect square. **The square is the carrier's dimension speaking**, and it is the first structural difference from the scalar case.
+The first finding is that the symbol is not a number. In the scalar theory the symbol is a scalar function of $\omega$ and $\vec\nu_{\Phi}$. Here it is an element of $\mathbb{B}$ that acts by left multiplication on a four-dimensional complex space, and its determinant is a perfect square. **The square is the carrier's dimension speaking**, and it is the first structural difference from the scalar case.
 
 The second finding is that centrality is the statement that the zero set is real. Left multiplication by $\tilde H_\Psi$ is a Hermitian operator exactly when $\tilde H_\Psi$ is Hermitian, and a Hermitian operator has real eigenvalues. That is one line, and it is the whole content of the parent's uniqueness theorem read in momentum space. The parent proves the uniqueness of $i$ by a commutant argument in position space; here the same fact appears as a reality statement about two points of the real line.
 
@@ -18,7 +18,7 @@ The other three readings are companions. *The Fourier Transform and the Schrödi
 
 The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*.
 
-The bookkeeping is quoted once. With $t'$ the time and $r'_t=c\,t'$ the material time, a positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+i\vec k_\Phi\cdot\vec r)$, so
+The bookkeeping is quoted once. With $t'$ the time and $r'_t=c\,t'$ the material time, a positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r)$, so
 
 $$
 \partial_{t'}\longmapsto-i\omega,
@@ -119,11 +119,11 @@ The count. Over one hundred draws: all four roots real in $32$ draws for $\vec e
 
 ## The Zero Set Is Two Points
 
-A first-order equation has no dispersion surface. The symbol depends on $\omega$ alone, because the constant setting carries no spatial derivative. Its zero set is therefore a subset of the real line, not a hypersurface in $(\omega,\vec k_\Phi)$.
+A first-order equation has no dispersion surface. The symbol depends on $\omega$ alone, because the constant setting carries no spatial derivative. Its zero set is therefore a subset of the real line, not a hypersurface in $(\omega,\vec\nu_\Phi)$.
 
-The contrast is with the second-order case. The Klein–Gordon symbol is $k_t'^{2}-k_\Phi^{2}-k_m^{2}$ with $k_t'=\omega/c$, and its zero set is a two-sheeted hyperboloid in four variables. The Dirac symbol's determinant is a power of the same quadric. Those equations have a mass shell; this one has two frequencies, and the polar companion draws the same conclusion from the absence of a second time derivative.
+The contrast is with the second-order case. The Klein–Gordon symbol is $\nu_t'^{2}-\nu_{\Phi}^{2}-\nu_m^{2}$ with $2\pi\nu_t'=\omega/c$, and its zero set is a two-sheeted hyperboloid in four variables. The Dirac symbol's determinant is a power of the same quadric. Those equations have a mass shell; this one has two frequencies, and the polar companion draws the same conclusion from the absence of a second time derivative.
 
-What replaces the shell is a definition. The dispersion relation of a first-order equation defines the frequency rather than constraining the field. Given $\vec k_\Phi$, the equation returns $\omega$; nothing is required of the initial data beyond the field's value at one time.
+What replaces the shell is a definition. The dispersion relation of a first-order equation defines the frequency rather than constraining the field. Given $\vec\nu_\Phi$, the equation returns $\omega$; nothing is required of the initial data beyond the field's value at one time.
 
 The dimension count says the same. The symbol is one element times one number: four complex conditions on four complex unknowns. A shell condition would be a fifth condition; the equation has none to spare.
 
@@ -131,7 +131,7 @@ The dimension count says the same. The symbol is one element times one number: f
 
 What the determinant is even in. $\det\sigma(\omega)$ is a quadratic in $(hf_{\mathrm{frq}}-h_t)^{2}$, so it is even about $\omega=\frac{2\pi h_t}{h}$ and not about zero. A change of the sign of the frequency is not a symmetry of the symbol unless $h_t=0$.
 
-The numbers. With $h_t=0.4$, $\lvert\vec h_\Psi\rvert=0.616441$ and the frequency in units of $k_m c$ the zeros are at $\omega=-0.2164$ and $\omega=1.0164$. At $\omega=1.2$ the elementary determinant is $0.2600$ and at $\omega=-1.2$ it is $2.1800$; the symbol's determinant, being its square, is $0.0676$ at the first and $4.7524$ at the second, a ratio of $70.3$. The two frequencies are not images of one another, and the asymmetry is the mass term's.
+The numbers. With $h_t=0.4$, $\lvert\vec h_\Psi\rvert=0.616441$ and the frequency in units of $\nu_m c$ the zeros are at $\omega=-0.2164$ and $\omega=1.0164$. At $\omega=1.2$ the elementary determinant is $0.2600$ and at $\omega=-1.2$ it is $2.1800$; the symbol's determinant, being its square, is $0.0676$ at the first and $4.7524$ at the second, a ratio of $70.3$. The two frequencies are not images of one another, and the asymmetry is the mass term's.
 
 The second-order equations are even. The Klein–Gordon and Dirac determinants are functions of $N$, so their zero sets are invariant under $\omega\mapsto-\omega$. That invariance is what makes a negative-frequency mode a solution of the same equation with the same $|p|$, and it is the kinematic half of the antiparticle statement.
 

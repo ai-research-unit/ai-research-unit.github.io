@@ -362,7 +362,7 @@ The two numbers side by side. The residuals of the identities of this section, o
 | $B^{2}(i\lambda+\vec v)=\lvert\vec v\rvert^{2}$ | $0$ |
 | $B(i\lambda,\vec v)=0$ | $0$ |
 | $\operatorname{spec}(i\lambda+\vec v)=i(\lambda\pm\lvert\vec v\rvert)$ | $1.8\times10^{-15}$ |
-| $N(i\vec k)=-\lvert\vec v\rvert^{2}$ | $0$ |
+| $N(2\pi i\vec\nu_{\Phi})=-\lvert\vec v\rvert^{2}$ | $0$ |
 | least $N$ on the unit sphere of $\mathfrak{k}$ | $1$, exactly |
 
 ## The Signs, and the Sign of One Term

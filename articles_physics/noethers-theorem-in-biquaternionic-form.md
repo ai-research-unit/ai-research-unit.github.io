@@ -27,7 +27,7 @@ $$
 
 lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = i\,\mathrm{Sc}[(\Box_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box_\Phi\tilde{Ξ})]$, which vanishes whenever the field obeys the Klein–Gordon equation, the sign of $\tilde{J}_{\Phi}$ being the one for which the charge density of a positive-frequency wave is positive; the same current for the Dirac field, whose components are $j_{\imath}=\mathrm{Sc}(\tilde{Ξ}^*e_{\imath}\tilde{Ξ}\,b_{\imath})$ with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every mass, while the axial current is conserved only at $m=0$; the free-particle four-momentum $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$ is the Noether charge of translation invariance, and the **total** four-momentum of an isolated system is conserved; and a translation acts on a plane wave by the central unit-modulus phase $\exp(-i\theta_{\mathrm{pwp}})$. What is standard, what is only transcribed, and what is interpretation is separated in its own section below.
 
-The angle is $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real.
+The angle is $\theta_{\mathrm{pwp}}=\frac{p\cdot x}{h}=\omega r'_t-2\pi\vec\nu_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real.
 
 **Two defects in the read list, handled rather than repeated.** First, the four-force of the parent is defined by the **proper**-time derivative, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$, so the sum $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}$ across bodies is *not* the rate of change of the total four-momentum unless all the Lorentz factors agree; *Exercise: Four-Momentum Conservation in a Collision* reports this, and the conservation law is stated correctly below. Second, the translation of a plane wave is by a **central phase**, $\exp(-i\theta_{\mathrm{pwp}})$, and the $i$ is not optional: the same scalar in a real exponential, $\exp(\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}))$, is a dilation and not a phase at all.
 
@@ -58,7 +58,7 @@ $$
 The relativistic scalar field of the framework is the complex biquaternion field $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t \in \mathbb{B}_{C}$, with $\xi_{\mathrm{scl}}$ a complex scalar function. Its action is $S[\tilde{Ξ}] = \int \mathcal{L}\,d^4r$ with the real Lagrangian density
 
 $$
-\mathcal{L} = +\,\mathrm{Sc}\!\left[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right] + k_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right].
+\mathcal{L} = +\,\mathrm{Sc}\!\left[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right] + 4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right].
 $$
 
 Because $\mathrm{Sc}(e_{\imath}^{\natural}e_{\jmath})=\delta_{\imath\jmath}$, the first term expands over the four coordinates with a single sign,
@@ -66,22 +66,22 @@ Because $\mathrm{Sc}(e_{\imath}^{\natural}e_{\jmath})=\delta_{\imath\jmath}$, th
 $$
 \mathcal{L} = +\frac{\partial{\xi_{\mathrm{scl}}}^{*}}{\partial R_t}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_t}
 +\sum_\eta\frac{\partial{\xi_{\mathrm{scl}}}^{*}}{\partial R_\eta}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_\eta}
-+k_m^{2}\,{\xi_{\mathrm{scl}}}^{*}\xi_{\mathrm{scl}} ,
++4\pi^{2}\nu_m^{2}\,{\xi_{\mathrm{scl}}}^{*}\xi_{\mathrm{scl}} ,
 $$
 
 the uniform signs being what the $\natural$ conjugation supplies. The time term is nevertheless negative, because $\partial/\partial R_t=\partial/\partial i r'_t$ acts on both factors and two applications of it give $-\partial^2/\partial {r'_t}^2$; in the real coordinates $x_{\imath}=(r'_{t},r_x,r_y,r_z)$ the same expression reads
 
 $$
-\mathcal{L} = -\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2 + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2 .
+\mathcal{L} = -\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2 + 4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2 .
 $$
 
 This is the form used with the energy–momentum tensor below. The Euler–Lagrange equation of $\mathcal{L}$ is the biquaternion Klein–Gordon equation
 
 $$
-\left(\Box_\Phi - k_m^{2}\right)\tilde{Ξ} = 0,
+\left(\Box_\Phi - 4\pi^{2}\nu_m^{2}\right)\tilde{Ξ} = 0,
 $$
 
-the overall sign of $\mathcal{L}$ being immaterial for the equation and fixed here by the positivity of the energy density. Both the action and the equation are those of the read list; $\mathcal{L}$ is exhibited only because a Noether current is read off a Lagrangian. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+the overall sign of $\mathcal{L}$ being immaterial for the equation and fixed here by the positivity of the energy density. Both the action and the equation are those of the read list; $\mathcal{L}$ is exhibited only because a Noether current is read off a Lagrangian. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ### Symmetries of the Action and of the Equations
 
@@ -164,7 +164,7 @@ $$
 \boxed{\ \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = i\,\mathrm{Sc}\!\left[(\Box_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box_\Phi\tilde{Ξ})\right]\ }
 $$
 
-The cross terms of each $\mu$ enter with opposite signs and cancel, so only the second derivatives survive. This is the Noether identity in biquaternion form: the scalar divergence of the current is the Klein–Gordon operator applied to the field, contracted with the symmetry variation. On shell, $\Box_\Phi\tilde{Ξ} = (k_m^{2})\tilde{Ξ}$ and the same for the conjugate, both terms become the same real multiple of $\tilde{Ξ}^{*}\tilde{Ξ}$ and cancel, so
+The cross terms of each $\mu$ enter with opposite signs and cancel, so only the second derivatives survive. This is the Noether identity in biquaternion form: the scalar divergence of the current is the Klein–Gordon operator applied to the field, contracted with the symmetry variation. On shell, $\Box_\Phi\tilde{Ξ} = (4\pi^{2}\nu_m^{2})\tilde{Ξ}$ and the same for the conjugate, both terms become the same real multiple of $\tilde{Ξ}^{*}\tilde{Ξ}$ and cancel, so
 
 $$
 \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = 0 \quad\text{on shell},
@@ -176,8 +176,8 @@ which is the continuity equation $c\,\partial/\partial r'_t\rho + \mathrm{div}\,
 
 A single plane wave is a trap: for $\tilde{Ξ} = \tilde{Ξ}_0\exp(-i\theta_{\mathrm{pwp}})$ the current is *constant*, so its divergence vanishes whether or not the field is on shell, and the plane wave that suggests the formula cannot test it. The conservation was therefore checked on three other cases:
 
-- **a superposition of on-shell plane waves.** With the wave numbers in units of $k_m$ and the frequencies in units of $k_mc$, and the momenta $(|\vec k_\Phi|,\omega) = (0,1)$, $(\tfrac34,\tfrac54)$, $(\tfrac{5}{12},\tfrac{13}{12})$ all satisfying $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^2$, and amplitudes $1, \tfrac12, \tfrac13$, the current has non-constant cross terms, and $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})$ cancels identically;
-- **a standing wave**, $\tilde{Ξ} = \sin(k_{\Phi,x}x)\cos(\omega r'_t/c) + i\sin(k_{\Phi,x}x)\sin(\omega r'_t/c)$ with $\omega^2 = c^2k_{\Phi,x}^{2} + c^2k_m^{2}$: this is on shell and is **not** a plane wave, and again $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})$ vanishes identically;
+- **a superposition of on-shell plane waves.** With the wave numbers in units of $\nu_m$ and the frequencies in units of $\nu_mc$, and the momenta $(|2\pi\vec\nu_\Phi|,\omega) = (0,1)$, $(\tfrac34,\tfrac54)$, $(\tfrac{5}{12},\tfrac{13}{12})$ all satisfying $\omega^2 = c^4\pi\vec\nu_\Phi^2 + c^2\,4\pi^{2}\nu_m^2$, and amplitudes $1, \tfrac12, \tfrac13$, the current has non-constant cross terms, and $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})$ cancels identically;
+- **a standing wave**, $\tilde{Ξ} = \sin(2\pi\nu_{\Phi,x}x)\cos(\omega r'_t/c) + i\sin(2\pi\nu_{\Phi,x}x)\sin(\omega r'_t/c)$ with $\omega^2 = c^2\,4\pi^{2}\nu_{\Phi,x}^{2} + c^2\,4\pi^{2}\nu_m^{2}$: this is on shell and is **not** a plane wave, and again $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})$ vanishes identically;
 - **an off-shell field.** A two-mode field with one mode off shell gives a divergence proportional to the field equation, explicitly nonzero. The identity above was also confirmed on a generic three-mode field, off shell: the difference $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) - i\,\mathrm{Sc}[(\Box_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box_\Phi\tilde{Ξ})]$ reduces to zero identically, and the divergence is $2\,\mathrm{Im}(\tilde{Ξ}^{*}\Box_\Phi\tilde{Ξ})$, which is what the identity gives.
 
 The last case is the honest statement of the theorem: the current is conserved **whenever** the field equation holds; off shell it need not be, and its divergence *is* the field equation.
@@ -194,8 +194,8 @@ The same phase is a symmetry of the massive Dirac field. For the Dirac field the
 
 $$
 \begin{aligned}
-\tilde\nabla_\Phi\tilde{Ξ}_{R} &= k_m\,\tilde{Ξ}_{L},\\[4pt]
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} &= k_m\,\tilde{Ξ}_{R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R} &= 2\pi\nu_m\,\tilde{Ξ}_{L},\\[4pt]
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} &= 2\pi\nu_m\,\tilde{Ξ}_{R},
 \end{aligned}
 $$
 
@@ -311,7 +311,7 @@ The naive sum of the parent's four-forces is not zero even though the total four
 
 ### What Translation Does to a Plane Wave
 
-A free field is a plane wave, and a translation acts on it by a central phase. With the series' phase convention $\tilde{Ξ} = \tilde{Ξ}_0\exp(-i\theta_{\mathrm{pwp}})$, whose phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot\vec r-\omega r'_t/c$, and with $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$ and $\tilde R_\Phi\mapsto\tilde R_\Phi+\tilde{R}_{\Phi,0}$,
+A free field is a plane wave, and a translation acts on it by a central phase. With the series' phase convention $\tilde{Ξ} = \tilde{Ξ}_0\exp(-i\theta_{\mathrm{pwp}})$, whose phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = 2\pi\vec\nu_\Phi\cdot\vec r-\omega r'_t/c$, and with $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$ and $\tilde R_\Phi\mapsto\tilde R_\Phi+\tilde{R}_{\Phi,0}$,
 
 $$
 \tilde{Ξ}\big|_{\tilde R_\Phi+\tilde{R}_{\Phi,0}} = \exp\!\bigl(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})\frac{2\pi}{h}\bigr)\,\tilde{Ξ}\big|_{\tilde R_\Phi},
@@ -319,13 +319,13 @@ $$
 \tilde{Ξ}_0\ \text{constant}.
 $$
 
-The multiplier is **central and of unit modulus**, because $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \langle\tilde P_{\Phi},\tilde{R}_{\Phi,0}\rangle_{\natural}$ is real: writing $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k_\Phi$ and $\tilde{R}_{\Phi,0} = i R_{0t} e_t + \vec R_0$, with $R_{0t} = r'_{t,0}$,
+The multiplier is **central and of unit modulus**, because $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \langle\tilde P_{\Phi},\tilde{R}_{\Phi,0}\rangle_{\natural}$ is real: writing $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + 2\pi\vec\nu_\Phi$ and $\tilde{R}_{\Phi,0} = i R_{0t} e_t + \vec R_0$, with $R_{0t} = r'_{t,0}$,
 
 $$
-\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}\right) = -\frac{\omega R_{0t}}{c} + \vec k_\Phi\cdot\vec R_0 = \vec k_\Phi\cdot\vec R_0-\omega r'_{t,0}/c .
+\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}\right) = -\frac{\omega R_{0t}}{c} + 2\pi\vec\nu_\Phi\cdot\vec R_0 = 2\pi\vec\nu_\Phi\cdot\vec R_0-\omega r'_{t,0}/c .
 $$
 
-What makes it a phase is the $i$: the same scalar in a real exponential is a dilation. For $\tilde P_{\Phi} = 2i\,e_t + 0.7\vec e_x - 0.3\vec e_y + 0.5\vec e_z$ and $\tilde{R}_{\Phi,0} = 0.4i\,e_t + 0.25\vec e_x - 0.35\vec e_y + 0.15\vec e_z$ (in the units of the check), $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = -0.445$ and the multiplier is $\exp(-0.445i)$, of modulus $1$, whereas $\exp(\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})) = e^{-0.445}$ has modulus $0.641$. The $\natural$ inside the pairing must be the one the wave itself carries; the un-conjugated $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}) = -\frac{\omega R_{0t}}{c}-\vec k_\Phi\cdot\vec R_0$ belongs to the opposite sign convention for $\vec k_\Phi$ in the phase, and mixing the two flips the sign of $\vec k_\Phi\cdot\vec R_0$ alone. This central phase is the finite, field-space form of the translation subgroup; its infinitesimal generator is the derivation $\partial/\partial R_{\imath}$, and it is not a rotor, as *The Poincaré Group and the Biquaternion Frame* establishes.
+What makes it a phase is the $i$: the same scalar in a real exponential is a dilation. For $\tilde P_{\Phi} = 2i\,e_t + 0.7\vec e_x - 0.3\vec e_y + 0.5\vec e_z$ and $\tilde{R}_{\Phi,0} = 0.4i\,e_t + 0.25\vec e_x - 0.35\vec e_y + 0.15\vec e_z$ (in the units of the check), $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = -0.445$ and the multiplier is $\exp(-0.445i)$, of modulus $1$, whereas $\exp(\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})) = e^{-0.445}$ has modulus $0.641$. The $\natural$ inside the pairing must be the one the wave itself carries; the un-conjugated $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}) = -\frac{\omega R_{0t}}{c}-2\pi\vec\nu_\Phi\cdot\vec R_0$ belongs to the opposite sign convention for $\vec\nu_\Phi$ in the phase, and mixing the two flips the sign of $\vec\nu_\Phi\cdot\vec R_0$ alone. This central phase is the finite, field-space form of the translation subgroup; its infinitesimal generator is the derivation $\partial/\partial R_{\imath}$, and it is not a rotor, as *The Poincaré Group and the Biquaternion Frame* establishes.
 
 ## The Energy–Momentum of the Field
 
@@ -340,8 +340,8 @@ $$
 with the scalar Lagrangian of the same coordinates,
 
 $$
-\mathcal{L}_{\mathrm{scl},\xi} = \sum_{\imath}\frac{\partial{\xi_{\mathrm{scl}}}^*}{\partial R_{\imath}}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_{\imath}} + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2
-= -\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2 + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2 .
+\mathcal{L}_{\mathrm{scl},\xi} = \sum_{\imath}\frac{\partial{\xi_{\mathrm{scl}}}^*}{\partial R_{\imath}}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_{\imath}} + 4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2
+= -\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2 + 4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2 .
 $$
 
 Here $x_{\imath}=(r'_{t},r_x,r_y,r_z)$ are the real coordinates, the chart of $Q_{\imath}$ with the $i$ of the time coefficient removed, $Q_t=i q'_t$: $Q_0=i q'_t$ carries the $i$, while $x_0=r'_{t}$ does not. Both indices of $T$ are low, the first the row. The coefficient of $\mathcal{L}_{\mathrm{scl},\xi}$ is the plain form of the two units, $\mathrm{Sc}(e_{\imath} e_{\jmath})=\varepsilon_{\imath}\delta_{\imath\jmath}$: plus on the time entry and minus on the three space entries. The derivative index of the conservation law carries one minus on the time direction and none on the three space directions, and that minus is the square of the $i$ in $Q_t=i q'_t$, spent once and written out. Translation invariance gives
@@ -353,7 +353,7 @@ $$
 on shell. Its time–time component is the energy density,
 
 $$
-T_{00} = \left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2 + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2 > 0,
+T_{00} = \left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2 + 4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2 > 0,
 $$
 
 positive for every configuration because each term is a square. This was checked by recomputation on an on-shell superposition of two plane waves: the four divergences $-\partial T_{0\jmath}/\partial x_0+\sum_\eta\partial T_{\eta\jmath}/\partial r_\eta$ vanish to $10^{-10}$, the tensor is symmetric, and $T_{00}$ equals the expression above.
@@ -374,7 +374,7 @@ the last equality being the Poynting theorem. The factor $i$ is uniform across t
 
 ### A Caution on the $i r'_t$ Convention
 
-The energy density is not $\mathcal{L}_{\mathrm{scl},\xi}$ and is not obtained from it by a flat sum: $T_{00}=\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2+k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$ while $\mathcal{L}_{\mathrm{scl},\xi}=-\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2+k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$, with the mass wave number $k_m=\frac{2\pi mc}{h}$ and its reciprocal $k_m=\frac{2\pi mc}{h}$. The gradient and $\Box_\Phi$ live in the $Q_{\imath}$ frame, where $Q_0=i q'_t$; the tensor lives in $x_{\imath}=(r'_{t},r_x,r_y,r_z)$, where the time component is real and the minus is written on the time derivative. Mixing the two charts produces the wrong sign on the time derivative, and the mismatch is the same $1/i^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real coordinates. This is the same caution the energy–momentum exercise records for the trace.
+The energy density is not $\mathcal{L}_{\mathrm{scl},\xi}$ and is not obtained from it by a flat sum: $T_{00}=\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2+4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$ while $\mathcal{L}_{\mathrm{scl},\xi}=-\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2+4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$, with the mass wave number $\nu_m=\frac{mc}{h}$ and its reciprocal $\nu_m=\frac{mc}{h}$. The gradient and $\Box_\Phi$ live in the $Q_{\imath}$ frame, where $Q_0=i q'_t$; the tensor lives in $x_{\imath}=(r'_{t},r_x,r_y,r_z)$, where the time component is real and the minus is written on the time derivative. Mixing the two charts produces the wrong sign on the time derivative, and the mismatch is the same $1/i^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real coordinates. This is the same caution the energy–momentum exercise records for the trace.
 
 ## Lorentz Invariance and the Angular-Momentum Bivector
 
@@ -525,9 +525,9 @@ $$
 \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = i\,\mathrm{Sc}\!\left[(\Box_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box_\Phi\tilde{Ξ})\right],
 $$
 
-zero whenever the field is on shell. This is the framework form of $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = 0$; it reproduces the current the Klein–Gordon article posits, up to the conventional constant $c/k_m/2$, with $\rho>0$ on a positive-frequency wave; and its expansion at the Maxwell source is the charge-conservation condition $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\sqrt{\mu}\,\tilde{J}_{\Phi}) = 0$.
+zero whenever the field is on shell. This is the framework form of $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = 0$; it reproduces the current the Klein–Gordon article posits, up to the conventional constant $c/\nu_m/2$, with $\rho>0$ on a positive-frequency wave; and its expansion at the Maxwell source is the charge-conservation condition $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\sqrt{\mu}\,\tilde{J}_{\Phi}) = 0$.
 
-The same phase acts on the Dirac field, whose dynamics is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, equivalently the one equation on the algebra $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}=-mi\bar{\tilde{Ξ}}\vec e_z$. The vector current has the components $j_{\imath}=\mathrm{Sc}(\tilde{Ξ}^*e_{\imath}\tilde{Ξ}\,b_{\imath})$, with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every $m$; the axial current carries the unit $\vec e_z$ inside the product and obeys $\sum_{\imath}\partial j_{5\imath}/\partial R_{\imath} = 2im\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ}\vec e_y)$, vanishing only at $m=0$. The mass therefore breaks the axial rotation and not the phase.
+The same phase acts on the Dirac field, whose dynamics is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, equivalently the one equation on the algebra $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}=-mi\bar{\tilde{Ξ}}\vec e_z$. The vector current has the components $j_{\imath}=\mathrm{Sc}(\tilde{Ξ}^*e_{\imath}\tilde{Ξ}\,b_{\imath})$, with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every $m$; the axial current carries the unit $\vec e_z$ inside the product and obeys $\sum_{\imath}\partial j_{5\imath}/\partial R_{\imath} = 2im\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ}\vec e_y)$, vanishing only at $m=0$. The mass therefore breaks the axial rotation and not the phase.
 
 For a **spacetime** symmetry, translation invariance gives the four-momentum
 
@@ -536,9 +536,9 @@ $$
 \qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v,
 $$
 
-as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\Phi,\mathrm{tot}}/dt' = c\,d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}/(c\gamma_a) = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P}_{\Phi} = \sum_{\mathrm{out}}\tilde{P}_{\Phi}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(-i\theta_{\mathrm{pwp}})$, with $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \vec k_\Phi\cdot\vec R_0-\omega r'_{t,0}/c$.
+as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\Phi,\mathrm{tot}}/dt' = c\,d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}/(c\gamma_a) = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P}_{\Phi} = \sum_{\mathrm{out}}\tilde{P}_{\Phi}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(-i\theta_{\mathrm{pwp}})$, with $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = 2\pi\vec\nu_\Phi\cdot\vec R_0-\omega r'_{t,0}/c$.
 
-The field translation current is the canonical energy–momentum, $-\partial T_{0\jmath}/\partial x_0+\sum_\eta\partial T_{\eta\jmath}/\partial r_\eta = 0$ on shell in the real coordinates, with positive energy density $T_{00} = |\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2 + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde\Sigma_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde\nabla_\Phi\tilde\Sigma_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\imath\jmath}\,e^{\natural}_{\imath} e_{\jmath}$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
+The field translation current is the canonical energy–momentum, $-\partial T_{0\jmath}/\partial x_0+\sum_\eta\partial T_{\eta\jmath}/\partial r_\eta = 0$ on shell in the real coordinates, with positive energy density $T_{00} = |\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2 + 4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde\Sigma_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde\nabla_\Phi\tilde\Sigma_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\imath\jmath}\,e^{\natural}_{\imath} e_{\jmath}$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
 
 ## Summary of Notation
 
@@ -560,7 +560,7 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi} = iE/c\,e_t + \vec p$ | Four-momentum, Noether charge of translation; real energy and momentum, so in $\mathbb{B}_{\Phi}$ |
 | $\tilde{\mathcal F}_{\mathrm{frc},a} = d\tilde{P}_{\Phi,a}/d\tau_a$ | Four-force (proper-time derivative; not summable) |
 | $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{B}_{C}$ | Complex biquaternion scalar field |
-| $\mathcal{L} = \sum_{\imath}(\partial{\xi_{\mathrm{scl}}}^{*}/\partial R_{\imath})(\partial\xi_{\mathrm{scl}}/\partial R_{\imath}) + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$ | Field Lagrangian density, $Q$ frame |
+| $\mathcal{L} = \sum_{\imath}(\partial{\xi_{\mathrm{scl}}}^{*}/\partial R_{\imath})(\partial\xi_{\mathrm{scl}}/\partial R_{\imath}) + 4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$ | Field Lagrangian density, $Q$ frame |
 | $\tilde{J}_{\Phi} = i[(\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}\tilde\nabla_\Phi\tilde{Ξ}]$ | Central-phase Noether current, in $\mathbb{B}_{\Phi}$ |
 | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = \langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = \sum_{\imath}\partial J_{\imath}/\partial R_{\imath}$ | Divergence of the current, plain sum |
 | $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Maxwell source $\sqrt{\mu}\,\tilde J_{\Phi}$; $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ is charge conservation |
@@ -572,8 +572,8 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $T_{\imath\jmath} = (\partial{\xi_{\mathrm{scl}}}^*/\partial x_{\imath})(\partial\xi_{\mathrm{scl}}/\partial x_{\jmath}) + (\partial\xi_{\mathrm{scl}}/\partial x_{\imath})(\partial{\xi_{\mathrm{scl}}}^*/\partial x_{\jmath}) + \varepsilon_{\imath}\delta_{\imath\jmath}\mathcal{L}_{\mathrm{scl},\xi}$ | Canonical energy–momentum in the real coordinates; the coefficient of $\mathcal{L}_{\mathrm{scl},\xi}$ is the plain form of the two units |
 | $\tilde\Sigma_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Maxwell energy–momentum (time row), in $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde\nabla_\Phi\tilde\Sigma_{\Psi})=\frac{i}{c}\vec J\cdot\vec E$ |
 | $L_{\imath\jmath} = x_{\imath} p_{\jmath} - x_{\jmath} p_{\imath}$, $\tilde L = \tfrac12\sum L_{\imath\jmath}\,e^{\natural}_{\imath} e_{\jmath}$ | Angular momentum and its bivector |
-| $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k_\Phi$ | Four-wavevector, in $\mathbb{B}_{\Phi}$; plane-wave phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot\vec r-\omega r'_t/c$ |
-| $\exp(-i\theta_{\mathrm{pwp}})$, $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})=\vec k_\Phi\cdot\vec R_0-\omega r'_{t,0}/c$ | Central translation multiplier on a plane wave, of unit modulus |
+| $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + 2\pi\vec\nu_\Phi$ | Four-wavevector, in $\mathbb{B}_{\Phi}$; plane-wave phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = 2\pi\vec\nu_\Phi\cdot\vec r-\omega r'_t/c$ |
+| $\exp(-i\theta_{\mathrm{pwp}})$, $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})=2\pi\vec\nu_\Phi\cdot\vec R_0-\omega r'_{t,0}/c$ | Central translation multiplier on a plane wave, of unit modulus |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\varepsilon_{\imath} Q_{1\imath}Q_{2\imath}$ | the general plain bilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

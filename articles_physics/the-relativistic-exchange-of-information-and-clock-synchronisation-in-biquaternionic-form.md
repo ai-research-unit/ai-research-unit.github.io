@@ -71,10 +71,10 @@ $$
 \langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\delta r'_{\mathrm{ret},t}\,\delta r'_{t,\mathrm{adv}} .
 $$
 
-A signal therefore satisfies $\delta r'_{\mathrm{ret},t} = 0$ or $\delta r'_{t,\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P_{\Phi} =\frac{h}{2\pi}\,(i\omega/c\,e_t + \vec k_\Phi)$ propagating along $\vec u_\Phi$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
+A signal therefore satisfies $\delta r'_{\mathrm{ret},t} = 0$ or $\delta r'_{t,\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P_{\Phi} =\frac{h}{2\pi}\,(i\omega/c\,e_t + 2\pi\vec\nu_\Phi)$ propagating along $\vec u_\Phi$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{Q}^{\natural}\right) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c = -\omega\left(r'_t - \frac{\vec u_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t}/c,
+Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{Q}^{\natural}\right) = 2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c = -\omega\left(r'_t - \frac{\vec u_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t}/c,
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.
@@ -223,10 +223,10 @@ A round trip is described by two k-factors. If $A$ emits and $B$ reflects, then 
 If a signal passes from $A$ to $B$ with factor $k_1$ and then from $B$ to $C$ with factor $k_2$, all three collinear and receding in a common sense, the total factor is the product:
 
 $$
-\boxed{\;k_{AC} = k_{AB}\,k_{BC} = k_1k_2\;}
+\boxed{\;2\pi\nu_{AC} = 2\pi\nu_{AB}\,k_{BC} = k_1k_2\;}
 $$
 
-This is because each leg multiplies the interval by its own factor. The composition law for $k$ is equivalent to the velocity-addition law. Indeed, if $k_i = \sqrt{(1+\beta_i)/(1-\beta_i)}$ and $\beta = (k_1^2k_2^2-1)/(k_1^2k_2^2+1)$, a short rearrangement gives
+This is because each leg multiplies the interval by its own factor. The composition law for $k$ is equivalent to the velocity-addition law. Indeed, if $2\pi\nu_{i} = \sqrt{(1+\beta_i)/(1-\beta_i)}$ and $\beta = (k_1^2k_2^2-1)/(k_1^2k_2^2+1)$, a short rearrangement gives
 
 $$
 \beta = \frac{\beta_1+\beta_2}{1+\beta_1\beta_2},
@@ -347,7 +347,7 @@ The exchange of information and the synchronisation of clocks are built from the
 
 3. **Einstein synchronisation is the round trip.** For emission at $r'_{t,1}$, reflection at $r'_{t,2}$, reception at $r'_{t,3}$, the null conditions give $r'_{t,2} = (r'_{t,1}+r'_{t,3})/2$ and the distance $L = c(r'_{t,3}-r'_{t,1})/2$. The split of the round trip into one-way times is fixed by the convention $r'_{t,2} = r'_{t,1}+\varepsilon(r'_{t,3}-r'_{t,1})$; the round-trip time is independent of $\varepsilon$, and only the two-way speed of light is measured.
 
-4. **The k-factor.** The ratio of received to emitted intervals is $k = 1/[\gamma(1-\beta)] = \sqrt{(1+\beta)/(1-\beta)}$ for a receding pair, with reciprocal $k^{-1}$ for an approaching pair. The velocity is recovered as $\beta = (k^2-1)/(k^2+1)$, a round trip gives the factor $k^2$, and $k$-factors multiply: $k_{AC} = k_{AB}k_{BC}$, which reproduces the relativistic velocity-addition law.
+4. **The k-factor.** The ratio of received to emitted intervals is $k = 1/[\gamma(1-\beta)] = \sqrt{(1+\beta)/(1-\beta)}$ for a receding pair, with reciprocal $k^{-1}$ for an approaching pair. The velocity is recovered as $\beta = (k^2-1)/(k^2+1)$, a round trip gives the factor $k^2$, and $k$-factors multiply: $\nu_{AC} = \nu_{AB}k_{BC}$, which reproduces the relativistic velocity-addition law.
 
 5. **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that two events simultaneous in the moving frame are separated in time in the rest frame by $\delta r'_t = \gamma v_b\,\delta x_2/c^2$. A synchronised grid in one frame is desynchronised in another.
 
@@ -371,7 +371,7 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\mathrm{Sc}$ | Scalar projection |
 | $\vec u_{\mathrm s}$ | Propagation direction |
 | $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{\mathrm{adv},t} = r'_t+\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |
-| $\tilde P_{\Phi} = i\omega/c\,e_t+\vec k_\Phi$ | Four-wavevector |
+| $\tilde P_{\Phi} = i\omega/c\,e_t+2\pi\vec\nu_\Phi$ | Four-wavevector |
 | $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = -\omega r'_{\mathrm{ret},t}/c$ | Plane-wave phase |
 | $\tau$, $\delta\tau$ | Proper time |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}_{\Phi}\rangle_{\natural}=-c^2$ | Clock four-velocity |

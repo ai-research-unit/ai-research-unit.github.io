@@ -82,7 +82,7 @@ with $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec J\in\mathbb{B}_{\Phi}$ the four-curr
 
 For a source with a single frequency $\omega$, the current is $\vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r'_t) = \vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\exp(-i\theta_{\mathrm{pwt}})$, and in the far zone $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\to\infty$ the retarded integral reduces to
 
-The full phase of the outgoing wave is the plane-wave angle $\theta_{\mathrm{pwp}}=k_{t}^{\prime}r-\omega r'_t/c$, real because the wave number, the radius and the time are real. Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.
+The full phase of the outgoing wave is the plane-wave angle $\theta_{\mathrm{pwp}}=2\pi\nu_t^{\prime}r-\omega r'_t/c$, real because the wave number, the radius and the time are real. Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.
 
 $$
 \vec A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu_0}{4\pi}\,\frac{\exp(i\theta_{\mathrm{pwp}})}{r}\,\vec F(\vec u) ,
@@ -90,10 +90,10 @@ $$
 \vec F(\vec u) = \int \vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\,\exp(-ik_{t}^{\prime}\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))\,d^3r_2 ,
 $$
 
-with the wavenumber $k_{t}^{\prime} = \omega/c$ and $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$. The whole angular and multipole content of the radiation is carried by the **radiation vector** $\vec F(\vec u)$, and the multipole expansion is the expansion of the phase factor in powers of $k_{t}^{\prime}\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)$:
+with the wavenumber $2\pi\nu_t^{\prime} = \omega/c$ and $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$. The whole angular and multipole content of the radiation is carried by the **radiation vector** $\vec F(\vec u)$, and the multipole expansion is the expansion of the phase factor in powers of $\nu_t^{\prime}\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)$:
 
 $$
-\vec F(\vec u) = \int\vec J - ik_{t}^{\prime}\int(\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))\vec J - \frac{k_{t}^{\prime\,2}}{2}\int(\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))^2\vec J + \ldots
+\vec F(\vec u) = \int\vec J - 2\pi i\nu_t^{\prime}\int(\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))\vec J - \frac{4\pi^{2}\nu_t^{\prime\,2}}{2}\int(\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))^2\vec J + \ldots
 $$
 
 Each successive term adds one order of $kr_2$ and one unit of angular momentum. The four-vector potential $\tilde{A}_{\Phi}$ and the field-strength biquaternion $\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ inherit this expansion term by term.
@@ -133,14 +133,14 @@ $$
 The antisymmetric part is the **magnetic dipole**; the symmetric part is the **electric quadrupole**. Writing the traceless quadrupole as $\mathcal{Q}_{ij} = 3D_{ij} - r_2^{\,2}\delta_{ij}\int\rho$ and dropping the trace, which is radial and radiates nothing, the two contributions to the radiation vector at first order are
 
 $$
-\vec F_{M1}(\vec u) = ik_{t}^{\prime}\,\vec u\times\vec m ,
+\vec F_{M1}(\vec u) = 2\pi i\nu_t^{\prime}\,\vec u\times\vec m ,
 \qquad
-\vec F_{E2}(\vec u) = -\frac{k_{t}^{\prime}\omega}{6}\,\vec{\mathcal{Q}}(\vec u) ,
+\vec F_{E2}(\vec u) = -\frac{2\pi\nu_t^{\prime}\omega}{6}\,\vec{\mathcal{Q}}(\vec u) ,
 \qquad
 [\vec{\mathcal{Q}}(\vec u)]_i = \mathcal{Q}_{ij}n_j .
 $$
 
-The electric quadrupole and the magnetic dipole appear together at the same order in $k_{t}^{\prime}$, and this pairing is the reason the quadrupole is a relativistic subject. A boost that converts an electric dipole into a magnetic dipole converts an electric quadrupole into a magnetic quadrupole, so that the electric and magnetic types of a given order are tied together by the boost even though they enter the radiation vector at different orders.
+The electric quadrupole and the magnetic dipole appear together at the same order in $\nu_t^{\prime}$, and this pairing is the reason the quadrupole is a relativistic subject. A boost that converts an electric dipole into a magnetic dipole converts an electric quadrupole into a magnetic quadrupole, so that the electric and magnetic types of a given order are tied together by the boost even though they enter the radiation vector at different orders.
 
 ## The Relativistic Transformation of the Quadrupole
 
@@ -246,7 +246,7 @@ This field is not a radiation field: it has no $r^{-1}$ part, and its Poynting f
 
 ### The Electric Quadrupole Radiation
 
-In the far zone the electric quadrupole produces a genuine radiation field. From the radiation vector computed above, $\vec F_{E2} = -\tfrac{k_{t}^{\prime}\omega}{6}\vec{\mathcal{Q}}(\vec u)$, and $\vec B = ik_{t}^{\prime}\,\vec u\times\vec A$ in the radiation zone, one obtains
+In the far zone the electric quadrupole produces a genuine radiation field. From the radiation vector computed above, $\vec F_{E2} = -\tfrac{2\pi\nu_t^{\prime}\omega}{6}\vec{\mathcal{Q}}(\vec u)$, and $\vec B = ik_{t}^{\prime}\,\vec u\times\vec A$ in the radiation zone, one obtains
 
 $$
 \vec B_{E2}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = -\frac{\mu_0}{4\pi}\,\frac{\exp(i\theta_{\mathrm{pwp}})}{r}\,\frac{ik_{t}^{\prime\,2}\omega}{6}\,\vec u\times\vec{\mathcal{Q}}(\vec u) .
@@ -283,7 +283,7 @@ proportional to $\sin^2 2\theta$, with the nulls on the axis and in the equatori
 
 ### The Magnetic Quadrupole
 
-The magnetic quadrupole is the companion of the electric quadrupole at the same angular order $l=2$, and it is built from the antisymmetric current structure one order higher in $k_{t}^{\prime}$. Its far field has the same $r^{-1}$ fall-off and the same power law, with the magnetic quadrupole moment in place of the electric one, and its parity is opposite: an electric $l$-pole has parity $(-1)^l$, a magnetic $l$-pole parity $(-1)^{l+1}$. The magnetic quadrupole therefore contributes to the same $D^{(2)}$ angular structure with the opposite behaviour under parity, and the two types are mixed by a boost, as the transformation derived above shows.
+The magnetic quadrupole is the companion of the electric quadrupole at the same angular order $l=2$, and it is built from the antisymmetric current structure one order higher in $\nu_t^{\prime}$. Its far field has the same $r^{-1}$ fall-off and the same power law, with the magnetic quadrupole moment in place of the electric one, and its parity is opposite: an electric $l$-pole has parity $(-1)^l$, a magnetic $l$-pole parity $(-1)^{l+1}$. The magnetic quadrupole therefore contributes to the same $D^{(2)}$ angular structure with the opposite behaviour under parity, and the two types are mixed by a boost, as the transformation derived above shows.
 
 ### Angular Momentum and the Spin-1+ Origin
 
@@ -365,7 +365,7 @@ $$
 
 with $\mathcal{Q}_{yy}$ following from the trace condition. A rest-frame sphere acquires the oblate contraction quadrupole $\mathcal{Q}_{zz} = -\tfrac{2}{3}\beta^2T_2$, $\mathcal{Q}_{xx} = \mathcal{Q}_{yy} = +\tfrac{1}{3}\beta^2T_2$, proportional to the mean-square radius $T_2 = \int\rho_2r_2^{\,2}d^3r_2$.
 
-In the radiation problem the electric quadrupole appears at first order in $k_{t}^{\prime}$ together with the magnetic dipole, and the two are the symmetric and antisymmetric parts of one current moment. The quadrupole radiation vector is $\vec F_{E2} = -\tfrac{k_{t}^{\prime}\omega}{6}\vec{\mathcal{Q}}(\vec u)$; the far field is transverse and falls off as $r^{-1}$; the angular distribution is
+In the radiation problem the electric quadrupole appears at first order in $\nu_t^{\prime}$ together with the magnetic dipole, and the two are the symmetric and antisymmetric parts of one current moment. The quadrupole radiation vector is $\vec F_{E2} = -\tfrac{2\pi\nu_t^{\prime}\omega}{6}\vec{\mathcal{Q}}(\vec u)$; the far field is transverse and falls off as $r^{-1}$; the angular distribution is
 
 $$
 \frac{dP_{E2}}{d\Omega} = \frac{\mu_0\omega^6}{1152\pi^2c^3}\left|\vec u\times\vec{\mathcal{Q}}(\vec u)\right|^2 ,
@@ -400,7 +400,7 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $\vec F(\vec u) = \int\vec J\,\exp(-ik_{t}^{\prime}\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))d^3r_2$ | Radiation vector |
 | $E_l$, $M_l$ | Electric and magnetic multipoles of order $l$ |
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ |
-| $k_{t}^{\prime} = \omega/c$ | Wavenumber of the radiated wave |
+| $2\pi\nu_t^{\prime} = \omega/c$ | Wavenumber of the radiated wave |
 | $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Unit radial vector |
 | $\gamma$, $\beta = |\vec v|/c$ | Lorentz factor and speed ratio |
 | $\tilde{U}\in\mathbb{B}_{\Psi}$ | Boost biquaternion, $\tilde{F}_2 = \tilde{U}^{\natural}\tilde{F}\tilde{U}$ |

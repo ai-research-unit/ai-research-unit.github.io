@@ -30,7 +30,7 @@ Seven articles put a state on the field: a Wigner function, a partition function
 
 The thermal core of the layer is three articles. [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html) writes $Z$ in the rest frame; [Quantum Thermodynamics in Biquaternionic Form](quantum-thermodynamics-in-biquaternionic-form.html) writes the Gibbs state as a point of the Bloch ball and the free energy as the modular Hamiltonian's scalar part; [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html) gives the imaginary-time sum. The layer's fourth thermal article is the transcription: [Equilibrium Partition Function in a Moving Frame](equilibrium-partition-function-in-a-moving-frame.html) adds the boost and finds that $Z$ does not change.
 
-What the layer establishes. That the corpus's temperature is a length, $\beta=mc/(k_mk_BT)$, computed once at $T=2.725$, $300$ and $1000\,\mathrm{K}$: $2.803\,021\times10^{-12}$, $2.546\,078\times10^{-14}$ and $7.638\,233\times10^{-15}$ metres. That $Z$ is a scalar while the thermal element $\tilde\beta_\Phi$ is a vector — so a moving frame tilts the thermal circle and does not change the trace.
+What the layer establishes. That the corpus's temperature is a length, $\beta=mc/(2\pi\nu_mk_BT)$, computed once at $T=2.725$, $300$ and $1000\,\mathrm{K}$: $2.803\,021\times10^{-12}$, $2.546\,078\times10^{-14}$ and $7.638\,233\times10^{-15}$ metres. That $Z$ is a scalar while the thermal element $\tilde\beta_\Phi$ is a vector — so a moving frame tilts the thermal circle and does not change the trace.
 
 ### The locality layer: articles 8 to 14
 
@@ -66,7 +66,7 @@ The entropy inequality is one divergence and one declaration. $\mathrm{Sc}((\til
 
 The pure state has no entropy. The condensate's current vanishes, the second law is saturated, and the $T\to0$ limit of the two-fluid model is the polar-form article's single fluid. Entropy is friction between components: mutual friction in the two-fluid model, shear and bulk dissipation in the causal model, spin diffusion in the spin model. In every case the dissipative term is a square.
 
-The temperature is a length and not a frequency. $\beta=mc/(k_mk_BT)$ with $c\beta=mc^{2}/(k_mk_BT)$; the corpus never writes the inverse temperature as the reciprocal of a frequency, and the identity with that reciprocal is the special case $k_m=\frac{2\pi mc}{h}$ — which is the statement that the field is on its shell, not a definition of $\beta$.
+The temperature is a length and not a frequency. $\beta=mc/(2\pi\nu_mk_BT)$ with $c\beta=mc^{2}/(2\pi\nu_mk_BT)$; the corpus never writes the inverse temperature as the reciprocal of a frequency, and the identity with that reciprocal is the special case $\nu_m=\frac{mc}{h}$ — which is the statement that the field is on its shell, not a definition of $\beta$.
 
 The flow is an element with a low index. $\tilde V_\Phi=\tilde P_\Phi/m$, components $v_{\Phi,\imath}$ only where a component is unavoidable. The metric is $\delta_{\imath\jmath}$ and the index labels a direction and not a tensor slot, which is why no display in the category raises one.
 
@@ -78,9 +78,9 @@ Five identifications, one declaration, one sign, one length. That is what the fr
 
 ### Article 6: the partition function in a moving frame
 
-Transcribed: that $Z$ is a trace and that the thermal state is specified by a four-vector. The article's thermal element is $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma(ie_t+\vec\beta_{\mathrm{vel}})$ with norm $-\beta^{2}$, and the exponent is the contraction $-\beta_{\Phi,\jmath}\frac{2\pi p_{\Phi,\jmath}}{h}$, which is $\beta k_m$ and is independent of $\gamma$ and of $\vec v$.
+Transcribed: that $Z$ is a trace and that the thermal state is specified by a four-vector. The article's thermal element is $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma(ie_t+\vec\beta_{\mathrm{vel}})$ with norm $-\beta^{2}$, and the exponent is the contraction $-\beta_{\Phi,\jmath}\frac{2\pi p_{\Phi,\jmath}}{h}$, which is $\beta \nu_m$ and is independent of $\gamma$ and of $\vec v$.
 
-Added: the statement that the frame dependence is in the element and not in the trace. $Z(\beta,\vec\beta_{\mathrm{vel}})=Z(\beta,\vec 0)$, so the moving frame has no partition function of its own; the observed period is $\beta_{\mathrm{obs}}=\gamma\beta$ and the observed temperature $T_{\mathrm{obs}}=T/\gamma$, with $\beta_{\mathrm{obs}}T_{\mathrm{obs}}$ constant to twelve decimal places at three velocities. Added: the Matsubara condition tilts — periodicity along $\tilde\beta_\Phi$, with the invariant statement $k_{\Phi,\jmath}\beta_{\Phi,\jmath}=2\pi n$ and not the spacing.
+Added: the statement that the frame dependence is in the element and not in the trace. $Z(\beta,\vec\beta_{\mathrm{vel}})=Z(\beta,\vec 0)$, so the moving frame has no partition function of its own; the observed period is $\beta_{\mathrm{obs}}=\gamma\beta$ and the observed temperature $T_{\mathrm{obs}}=T/\gamma$, with $\beta_{\mathrm{obs}}T_{\mathrm{obs}}$ constant to twelve decimal places at three velocities. Added: the Matsubara condition tilts — periodicity along $\tilde\beta_\Phi$, with the invariant statement $2\pi\nu_{\Phi,\jmath}\beta_{\Phi,\jmath}=2\pi n$ and not the spacing.
 
 The article's closing sentence says so.
 
@@ -94,7 +94,7 @@ Not added: a curved-spacetime extension of the algebra. The article says plainly
 
 ### Article 14: covariant local equilibrium and Tolman temperature
 
-Transcribed: the rigidity condition, $\partial_{\imath} v_{\Phi,\jmath}+\partial_{\jmath} v_{\Phi,\imath}=0$, written on the velocity's components on the pattern of $k_{\Phi,\imath}$, with its three consequences — constant Lorentz factor in time, no expansion or shear in the current, acceleration locked to the rapidity gradient.
+Transcribed: the rigidity condition, $\partial_{\imath} v_{\Phi,\jmath}+\partial_{\jmath} v_{\Phi,\imath}=0$, written on the velocity's components on the pattern of $\nu_{\Phi,\imath}$, with its three consequences — constant Lorentz factor in time, no expansion or shear in the current, acceleration locked to the rapidity gradient.
 
 Added: the check that the corpus's pointwise temperature satisfies it, and the quotation of Tolman's law from [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) rather than its re-derivation. Added: the answer to whether a local temperature is available here — yes, as a pointwise period on the field of states, and this article adopts that answer and does not reopen it. The article is the category's gate: articles 15 to 21 stand on it, and it was written before them for that reason.
 
@@ -138,7 +138,7 @@ The framework's modular operator is finite-dimensional, of type I$_2$, and **a t
 | 8 | The KMS Condition and the Biquaternion Framework | framework | the condition on the material sector |
 | 9 | The Local Thermal Structure: k_B as the Scale of Imaginary Time | framework | a pointwise period, not a pointwise metric |
 | 10 | Thermal Time and the Modular Flow in the Biquaternion Framework | framework | the modular flow and the thermal time hypothesis |
-| 11 | The Modular Hamiltonian in Biquaternionic Form | framework | $\tilde K$ generates the flow; the weight is twice the scalar part |
+| 11 | The Modular Hamiltonian in Biquaternionic Form | framework | $\tilde\Upsilon$ generates the flow; the weight is twice the scalar part |
 | 12 | The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework | framework | the construction in Hermitian data |
 | 13 | Curved-Spacetime KMS and Modular Flow | **transcription** | $\beta=\beta(x)$ on a Killing horizon |
 | 14 | Covariant Local Equilibrium and Tolman Temperature | **transcription** | the rigidity condition; Tolman quoted |
@@ -189,7 +189,7 @@ Its last substantive article is the fluid's transport, and beyond transport lies
 
 The category is twenty-two articles in three layers and a ledger: the state (1 to 7), locality (8 to 14) and the fluid (15 to 21), with this article as the ledger. Four of the twenty-two are transcriptions — 6, 13, 14 and 21 — and each carries the sentence that it is standard physics in the corpus's letters with no framework interpretation. The other eighteen add identifications the algebra makes available, several of them inherited from the hydrodynamics block: the velocity is a boost, the spin a rotor, the spin's conservation the rotor's equation, the Frenkel condition automatic, the quantum potential the mass shell's correction, the second law one divergence, the temperature a length.
 
-$\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546\,078\times10^{-14}\,\mathrm{m}$ at $300\,\mathrm{K}$ and $7.638\,233\times10^{-15}\,\mathrm{m}$ at $1000\,\mathrm{K}$, where $c\beta=mc^{2}/(k_mk_BT)$ is the same circumference in the material sector's units and not an independent number: the two displays differ by the factor $c$, so agreement between them tests the constants and not the physics. Circulation is $h n/m$, checked at three radii for three windings. The Josephson frequency is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ per meV of chemical-potential difference. The second variation of the energy density in a three-channel example is $0.033$, split $0.0125+0.0125+0.008$ across the bulk, shear and heat channels. The front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$, which is $0.4472\,c$ for $(0.1,0.5)$ and $1.4142\,c$ — acausal — for $(1.0,0.5)$. The Thomas factor is $0.503\,782$ at $\beta_{\mathrm{vel}}=0.1$.
+$\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546\,078\times10^{-14}\,\mathrm{m}$ at $300\,\mathrm{K}$ and $7.638\,233\times10^{-15}\,\mathrm{m}$ at $1000\,\mathrm{K}$, where $c\beta=mc^{2}/(2\pi\nu_mk_BT)$ is the same circumference in the material sector's units and not an independent number: the two displays differ by the factor $c$, so agreement between them tests the constants and not the physics. Circulation is $h n/m$, checked at three radii for three windings. The Josephson frequency is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ per meV of chemical-potential difference. The second variation of the energy density in a three-channel example is $0.033$, split $0.0125+0.0125+0.008$ across the bulk, shear and heat channels. The front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$, which is $0.4472\,c$ for $(0.1,0.5)$ and $1.4142\,c$ — acausal — for $(1.0,0.5)$. The Thomas factor is $0.503\,782$ at $\beta_{\mathrm{vel}}=0.1$.
 
 One Hermiticity declaration, made in [The Local Entropy Current](the-local-entropy-current.html) and inherited by every later inequality. No inequality in the category writes $\mathrm{Re}$ after it, and a reader who checks that single fact has checked the category's thermodynamic consistency.
 
@@ -215,12 +215,12 @@ Ten questions are open, and the ledger names them so that the next article need 
 | $\mu_{\mathrm{spn}}$ | Spin potential |
 | $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$ | Entropy current, Hermitian |
 | $s_{\mathrm{ent}}$ | Entropy density |
-| $\beta=mc/(k_mk_BT)$ | Inverse temperature as a length |
-| $k_m=\frac{2\pi mc}{h}$ | The field's wave number |
+| $\beta=mc/(2\pi\nu_mk_BT)$ | Inverse temperature as a length |
+| $\nu_m=\frac{mc}{h}$ | The field's wave number |
 | $T$ | Temperature |
 | $\tilde W_\Xi$ | Wigner element |
 | $Z$ | Partition function |
-| $\tilde K$, $\tilde H_{\Psi,\mathrm{modular}}$ | Modular Hamiltonian |
+| $\tilde\Upsilon$, $\tilde H_{\Psi,\mathrm{modular}}$ | Modular Hamiltonian |
 | $\omega^{\mathrm{vrt}}_{\imath\jmath}$ | Vorticity |
 | $v_{\mathrm{frt}}=\sqrt{D_{\mathrm{th}}/\tau_q}$ | Causal front speed |
 | $\tau_q$, $\tau_\pi$, $\tau_\Pi$ | Relaxation times |

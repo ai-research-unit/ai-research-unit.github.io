@@ -14,16 +14,16 @@ Position in the block. This is the variational companion of [The Charged Spin-On
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. $A_{\imath}$ is complex, $F_{\imath\jmath}=D_{\imath} A_{\jmath}-D_{\jmath} A_{\imath}$, $D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A^{\mathrm{ext}}_{\imath}$, $k_m=\frac{2\pi mc}{h}$; $\mathcal L=-\frac14\sum_{\imath,\jmath}F^{*}_{\imath\jmath}F_{\imath\jmath}-\frac{k_m^{2}}{2}\sum_{\imath}\varepsilon_{\imath} A^{*}_{\imath} A_{\imath}$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
+The conventions are restated here so that every sign below is checkable from this page alone. $A_{\imath}$ is complex, $F_{\imath\jmath}=D_{\imath} A_{\jmath}-D_{\jmath} A_{\imath}$, $D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A^{\mathrm{ext}}_{\imath}$, $\nu_m=\frac{mc}{h}$; $\mathcal L=-\frac14\sum_{\imath,\jmath}F^{*}_{\imath\jmath}F_{\imath\jmath}-\frac{4\pi^{2}\nu_m^{2}}{2}\sum_{\imath}\varepsilon_{\imath} A^{*}_{\imath} A_{\imath}$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
 
 ## The Action in the Fluid Variables
 
 The derivative term is rebuilt and the algebraic term is not.
 
 $$
-\mathcal L=-\frac{1}{4}\sum_{\imath,\jmath}F^{*}_{\imath\jmath}F_{\imath\jmath}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}
+\mathcal L=-\frac{1}{4}\sum_{\imath,\jmath}F^{*}_{\imath\jmath}F_{\imath\jmath}-\frac{4\pi^{2}\nu_m^{2}}{2}\lvert A\rvert^{2}
 \;\longrightarrow\;
-\mathcal L_{\mathrm{gco}}=-\frac{1}{4}F^{\mathrm{gco}*}_{\imath\jmath}F^{\mathrm{gco}}_{\imath\jmath}-\frac{k_m^{2}}{2}\lvert A\rvert^{2},
+\mathcal L_{\mathrm{gco}}=-\frac{1}{4}F^{\mathrm{gco}*}_{\imath\jmath}F^{\mathrm{gco}}_{\imath\jmath}-\frac{4\pi^{2}\nu_m^{2}}{2}\lvert A\rvert^{2},
 \qquad
 F^{\mathrm{gco}}_{\imath\jmath}=D_{\imath} A_{\jmath}-D_{\jmath} A_{\imath} .
 $$
@@ -55,9 +55,9 @@ The mass block has no derivative, so the scalar part of the connection's equatio
 Taking the covariant divergence of the field equation,
 
 $$
-\sum_{\jmath}\varepsilon_{\jmath} D_{\jmath} F_{\mathrm{gco},\jmath\imath}=k_m^{2}A_{\imath}
+\sum_{\jmath}\varepsilon_{\jmath} D_{\jmath} F_{\mathrm{gco},\jmath\imath}=4\pi^{2}\nu_m^{2}A_{\imath}
 \qquad\Longrightarrow\qquad
-0=\sum_{\jmath}\varepsilon_{\jmath} D_{\imath} D_{\jmath} F_{\mathrm{gco},\jmath\imath}=k_m^{2}\,\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath},
+0=\sum_{\jmath}\varepsilon_{\jmath} D_{\imath} D_{\jmath} F_{\mathrm{gco},\jmath\imath}=4\pi^{2}\nu_m^{2}\,\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath},
 $$
 
 the first equality being the antisymmetry of $F$ and the second the field equation. So the condition is $\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath}=0$, exactly as at the free rung with $\partial\to D$.
@@ -84,11 +84,11 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 Three statements, and each is unchanged.
 
-*It removes the field's own shift freedom.* $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$ is not a symmetry of $\mathcal L_{\mathrm{gco}}$ at $k_m\ne0$, because $\lvert A\rvert^{2}$ is not invariant; and the coupling does not restore it, because $D\partial\Gamma\ne\partial$ unless $\Gamma$ is constant in the gauge-covariant sense.
+*It removes the field's own shift freedom.* $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$ is not a symmetry of $\mathcal L_{\mathrm{gco}}$ at $\nu_m\ne0$, because $\lvert A\rvert^{2}$ is not invariant; and the coupling does not restore it, because $D\partial\Gamma\ne\partial$ unless $\Gamma$ is constant in the gauge-covariant sense.
 
-*It supplies the condition.* The derivation above uses the mass term's coefficient: with $k_m=0$ the identity $\partial\partial F=0$ stands alone and says nothing about $A$.
+*It supplies the condition.* The derivation above uses the mass term's coefficient: with $\nu_m=0$ the identity $\partial\partial F=0$ stands alone and says nothing about $A$.
 
-*It fixes the stiffness.* The algebraic term is $\frac{k_m^{2}}{2}\lvert A\rvert^{2}$, and the pressure is read off it as at the free rung: energy density and pressure are equal, $\epsilon=p=\frac{k_m^{2}}{2}r^{2}$. **The charged spin-one fluid is stiff at both rungs, and the coupling does not touch the stiffness**, because the algebraic term carries no derivative for the connection to enter.
+*It fixes the stiffness.* The algebraic term is $\frac{\nu_m^{2}}{2}\lvert A\rvert^{2}$, and the pressure is read off it as at the free rung: energy density and pressure are equal, $\epsilon=p=\frac{4\pi^{2}\nu_m^{2}}{2}r^{2}$. **The charged spin-one fluid is stiff at both rungs, and the coupling does not touch the stiffness**, because the algebraic term carries no derivative for the connection to enter.
 
 What the mass term no longer does is make the condition a conservation law. That is the fourth statement of the free rung and it is not available, for the reason the previous section gives: the source is there whether or not the mass is.
 
@@ -138,7 +138,7 @@ The extra four parameters. Whether the carrier's remaining freedom can be read a
 
 ## Summary
 
-The action. $\mathcal L_{\mathrm{gco}}=-\frac14F^{\mathrm{gco}*}F^{\mathrm{gco}}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}$: the derivative term rebuilt with $D$, the algebraic term untouched.
+The action. $\mathcal L_{\mathrm{gco}}=-\frac14F^{\mathrm{gco}*}F^{\mathrm{gco}}-\frac{4\pi^{2}\nu_m^{2}}{2}\lvert A\rvert^{2}$: the derivative term rebuilt with $D$, the algebraic term untouched.
 
 The decomposition. $F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$ with $\Omega=Du$; the vorticity is covariant and rank two, its transversality being the projection's and not the curl's; the density's gradient's term is unchanged.
 
@@ -159,7 +159,7 @@ The carrier. Eight real parameters against the fluid's four; the action puts the
 | $\Omega_{\imath\jmath}=D_{\imath} u_{\jmath}-D_{\jmath} u_{\imath}$ | Covariant curl, contracting to minus the covariant acceleration; its projection is the vorticity and is rank two |
 | $F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$ | The decomposition of the field strength |
 | $\lvert A\rvert^{2}$ | The algebraic term's argument; coupling-blind |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $ϙ$ | Coupling; minus the electric charge |
 | $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The external gauge element; a symmetry |
 | $\theta_{\mathrm{pha}}$ | The carrier's phase; appears squared in the divergence |

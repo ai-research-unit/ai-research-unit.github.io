@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The transform has a phase, and the polar chart has a name for every factor of it. The kernel of the transform is $e^{-i\theta_{\mathrm{pwp}}}$ with $\theta_{\mathrm{pwp}}=\omega t'-\vec k_\Phi\cdot\vec r$, so the kernel is a central unit times a sign. In the complete polar decomposition of *The Schrödinger Equation in Biquaternionic Polar Variables* that kernel is the most degenerate element there is: scale one, no boost, rotor equal to a sign. **The transform is the operation that reads a field's phase and leaves everything else in place**, and the chart shows why.
+The transform has a phase, and the polar chart has a name for every factor of it. The kernel of the transform is $e^{-i\theta_{\mathrm{pwp}}}$ with $\theta_{\mathrm{pwp}}=\omega t'-2\pi\vec\nu_\Phi\cdot\vec r$, so the kernel is a central unit times a sign. In the complete polar decomposition of *The Schrödinger Equation in Biquaternionic Polar Variables* that kernel is the most degenerate element there is: scale one, no boost, rotor equal to a sign. **The transform is the operation that reads a field's phase and leaves everything else in place**, and the chart shows why.
 
 The second object is the word of the symbol. The symbol of the companion article is an element of $\mathbb{B}$ at each frequency, so it has a word of its own: a scale, a phase, a boost and a rotor. Its quaternionic norm is $(hf_{\mathrm{frq}}-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}$, and its determinant is that norm squared. **The word of the symbol fails exactly on the spectrum**, because the norm vanishes there and the element is a zero divisor. That is the polar reading of the pole set.
 
@@ -223,7 +223,7 @@ The phase is a character and the rotor is not: $0.6$ and $0.9$ about different a
 
 | Symbol | Meaning |
 | --- | --- |
-| $\theta_{\mathrm{pwp}}=\omega t'-\vec k_\Phi\cdot\vec r$ | The plane wave's phase; the transform's exponent |
+| $\theta_{\mathrm{pwp}}=\omega t'-2\pi\vec\nu_\Phi\cdot\vec r$ | The plane wave's phase; the transform's exponent |
 | $\varrho=1$, $\tilde U_{\Psi,\mathrm b}=e_t$, $\tilde u_{\mathrm r}=\pm e_t$ | The word of the transform's kernel |
 | $\langle\sigma\rangle_\natural=(hf_{\mathrm{frq}}-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}$ | The symbol's quaternionic norm; the elementary determinant |
 | $\det\sigma=\langle\sigma\rangle_\natural^{2}$ | The determinant; its zeros are the cone, hence the spectrum |

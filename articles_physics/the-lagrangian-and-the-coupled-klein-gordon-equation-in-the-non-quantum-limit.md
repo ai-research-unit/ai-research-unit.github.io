@@ -11,7 +11,7 @@ The coupling survives the truncation entire, and that is this article's point. T
 
 The quadratic piece is not optional, and the parent says why. It is the piece that makes the action bounded below — the quadratic term in the spatial bracket is positive for every $\vec A$ — and it is the piece that makes the action invariant under a local phase translation. A truncation that dropped it would destroy both properties, which is the variational form of the statement that the coupling is not a perturbation.
 
-What the article establishes, in five sentences. The parent's central action has four blocks: the covariant phase bracket of order zero, the scale's kinetic term of order two, and the mass term of order zero, with the interaction distributed inside the first two of them. The single deletion removes the scale's kinetic term, which is a Lorentz scalar, so the truncated action is covariant. Varying the scale gives the mechanical mass shell as an algebraic constraint and varying the phase gives the covariant transport equation, unchanged term for term. The truncated action is $\varrho^{2}\left[\left(\partial_{r'_{t}}S+q\omicron_{\mathrm{pot}}/c\right)^{2}-\lvert\vec\pi\rvert^{2}-k_{m}^{2}\right]$, degenerate in the scale, and its content is charged relativistic dust.
+What the article establishes, in five sentences. The parent's central action has four blocks: the covariant phase bracket of order zero, the scale's kinetic term of order two, and the mass term of order zero, with the interaction distributed inside the first two of them. The single deletion removes the scale's kinetic term, which is a Lorentz scalar, so the truncated action is covariant. Varying the scale gives the mechanical mass shell as an algebraic constraint and varying the phase gives the covariant transport equation, unchanged term for term. The truncated action is $\varrho^{2}\left[\left(\partial_{r'_{t}}S+q\omicron_{\mathrm{pot}}/c\right)^{2}-\lvert\vec\pi\rvert^{2}-\nu_m^{2}\right]$, degenerate in the scale, and its content is charged relativistic dust.
 
 What is not new. The covariant Madelung action, the interaction's two pieces, the boundedness argument and the Lagrange-multiplier form of the mass shell are all standard. Added here: the ordering of the parent's blocks with the interaction inside them, the statement that neither interaction piece is deleted because neither carries a scale derivative, and the reading of the truncated action as charged dust with the mechanical shell as its Hamiltonian.
 
@@ -19,13 +19,13 @@ The restriction is the parent's. The central field is $\theta_{\mathrm{rpd}}=0$ 
 
 The signs. The parent writes the coupling as $ϙ$ with $ϙ=-q$; its temporal bracket is $\partial_{r'_{t}}\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}a'_{t}$ and its spatial bracket is $\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$. Every display here uses $q$, the electric charge, $\vec\pi=\vec\nabla_\Phi S-q\vec A$ and $\mathcal E=E-q\omicron_{\mathrm{pot}}$ with $E=-c\,\partial_{r'_{t}}S$, so the temporal bracket is $-\mathcal E/c$ and the free article's convention $\mathcal E=E-q\omicron_{\mathrm{pot}}$ is the one kept.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $\nu_m=\frac{mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
 ## The Action in the Non-Quantum Limit: The Blocks
 The parent's action for the central field.
 
 $$
-S_{\mathrm{cpl}}=\int\mathrm{d}^{4}x\;\Bigl\{\varrho^{2}\Bigl[\Bigl(\partial_{r'_{t}}\theta_{\mathrm{pha}}+\frac{2\pi q}{h}\frac{\omicron_{\mathrm{pot}}}{c}\Bigr)^{2}-\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{2\pi q}{h}\vec A\Bigr\rvert^{2}\Bigr]
-+\bigl(\partial_{r'_{t}}\varrho\bigr)^{2}-\lvert\vec\nabla_\Phi \varrho\rvert^{2}-k_{m}^{2}\varrho^{2}\Bigr\},
+S_{\mathrm{cpl}}=\int\mathrm{d}^{4}x\;\Bigl\{\varrho^{2}\Bigl[\Bigl(\partial_{r'_{t}}\theta_{\mathrm{pha}}+\frac{q}{h}\frac{\omicron_{\mathrm{pot}}}{c}\Bigr)^{2}-\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{q}{h}\vec A\Bigr\rvert^{2}\Bigr]
++\bigl(\partial_{r'_{t}}\varrho\bigr)^{2}-\lvert\vec\nabla_\Phi \varrho\rvert^{2}-4\pi^{2}\nu_m^{2}\varrho^{2}\Bigr\},
 $$
 
 the free action with the two covariant substitutions and the amplitude's two terms untouched.
@@ -37,7 +37,7 @@ The blocks and their orders.
 | $\varrho^{2}\bigl(\partial_{r'_{t}}\theta_{\mathrm{pha}}+\frac{2\pi q}{h}\frac{\omicron_{\mathrm{pot}}}{c}\bigr)^{2}$ | scale squared, two derivatives of the phase | $0$ |
 | $-\varrho^{2}\bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{2\pi q}{h}\vec A\bigr\rvert^{2}$ | scale squared, two derivatives of the phase | $0$ |
 | $(\partial_{r'_{t}}\varrho)^{2}-\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ | two derivatives of the scale | $2$ |
-| $-k_{m}^{2}\varrho^{2}$ | scale squared, no derivative | $0$ |
+| $-\nu_m^{2}\varrho^{2}$ | scale squared, no derivative | $0$ |
 
 The order is a property of the block and never of the potential. $q\vec A$ sits inside a bracket that carries two derivatives of the phase, and a potential does not change the bracket's derivative count. The coupling is leading and the table says so without an estimate.
 
@@ -59,7 +59,7 @@ $$
 S_{\mathrm{cl}}=\int\mathrm{d}^{4}x\;\varrho^{2}\Bigl[\Bigl(\partial_{r'_{t}}S+\frac{q\omicron_{\mathrm{pot}}}{c}\Bigr)^{2}-\lvert\vec\pi\rvert^{2}-m^{2}c^{2}\Bigr]
 $$
 
-with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $m^{2}c^{2}=\frac{h^{2}}{4\pi^{2}}k_{m}^{2}$; the bracket's first factor is $-\mathcal E/c$.
+with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $m^{2}c^{2}=\frac{h^{2}}{4\pi^{2}}4\pi^{2}\nu_m^{2}$; the bracket's first factor is $-\mathcal E/c$.
 
 The action is degenerate in the scale. No term carries a derivative of $\varrho$, so the scale's variation is algebraic and its momentum vanishes. The scale is a Lagrange multiplier of one constraint, and the constraint is the mechanical mass shell.
 
@@ -69,7 +69,7 @@ The contrast with the first-order families is one line. There the deleted term i
 
 ### The Limits and the Truncation’s Error
 
-The truncated action differs from the parent by the scale's kinetic term, which carries two derivatives and therefore two powers of the parameter. **The error is of order $\epsilon^{2}$**, and the ratio that makes it small is the amplitude's gradient against the mass term, $|\partial\varrho|^{2}/(k_m^{2}\varrho^{2})$.
+The truncated action differs from the parent by the scale's kinetic term, which carries two derivatives and therefore two powers of the parameter. **The error is of order $\epsilon^{2}$**, and the ratio that makes it small is the amplitude's gradient against the mass term, $|\partial\varrho|^{2}/(\nu_m^{2}\varrho^{2})$.
 
 Restoring it adds the quantum potential. Varying the parent with the block present gives the truncated equation plus a divergence of a gradient over the density. The correction is a quantum term with the density in its denominator, so it is large where the density is small and it is the reason the truncated theory cannot describe a nodal region.
 
@@ -183,7 +183,7 @@ The coupling survives entire: both interaction pieces are order zero, the quadra
 | $\mathcal E=E-q\omicron_{\mathrm{pot}}$ | Mechanical energy; $-\mathcal E/c$ is the temporal bracket |
 | $S_{\mathrm{cpl}}$, $S_{\mathrm{cl}}$ | The parent's action; the truncated charged-dust action |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
-| $k_{m}=\frac{2\pi mc}{h}$ | The mass wave number |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | $\epsilon=1/(\pi_{\Phi}L)$ | The parameter; one power per derivative of the scale |
 ## Further Reading
 - [The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-coupled-klein-gordon-equation-in-polar-variables.html), the parent: the covariant logarithmic derivative, the central action, and the interaction's two pieces.
@@ -201,7 +201,7 @@ Both Euler–Lagrange systems were computed, with the block and without it.
 
 The second row was compared symbolically and is equal as written. The deleted block carries no phase.
 
-The first row was checked for the sign and for the interaction's coefficients. Keeping the block, the $\varrho$-equation divided by $2\varrho$ returns the covariant bracket minus $k_{m}^{2}$ minus $\Box_\Phi \varrho/\varrho$; deleting the block removes the divergence and keeps every coefficient of $q\omicron_{\mathrm{pot}}$ and of $\lvert\vec A\rvert^{2}$ unchanged. The interaction is not touched by the deletion, which is the check the article's claim requires.
+The first row was checked for the sign and for the interaction's coefficients. Keeping the block, the $\varrho$-equation divided by $2\varrho$ returns the covariant bracket minus $\nu_m^{2}$ minus $\Box_\Phi \varrho/\varrho$; deleting the block removes the divergence and keeps every coefficient of $q\omicron_{\mathrm{pot}}$ and of $\lvert\vec A\rvert^{2}$ unchanged. The interaction is not touched by the deletion, which is the check the article's claim requires.
 
 The two interaction pieces were checked against the parent's expansion. Expanding the parent's bracket returns the free kinetic term, the term linear in the potential multiplying the free phase rate, and the term quadratic in the potential with no phase; the coefficients agree with the parent's display term for term, and all three were confirmed to carry no derivative of the scale.
 

@@ -192,23 +192,23 @@ The condition is the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\P
 The **Klein–Gordon equation** for a relativistic scalar field $\tilde{Ξ}$ of mass $m$ is
 
 $$
-\left(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (k_m)^{2}\right)\tilde{Ξ} = 0.
+\left(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (2\pi\nu_m)^{2}\right)\tilde{Ξ} = 0.
 $$
 
-Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is the d'Alembertian in the biquaternion form, and $k_m = \frac{2\pi m\,c}{h}$ is the mass wave number, with $\frac{h}{2\pi}$ the reduced Planck constant. Expanding,
+Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is the d'Alembertian in the biquaternion form, and $\nu_m = \frac{m\,c}{h}$ is the mass wave number, with $\frac{h}{2\pi}$ the reduced Planck constant. Expanding,
 
 $$
-\Box_\Phi\tilde{Ξ} = (k_m)^{2}\tilde{Ξ},
+\Box_\Phi\tilde{Ξ} = (2\pi\nu_m)^{2}\tilde{Ξ},
 $$
 
-which is the standard Klein–Gordon equation $(\Box_\Phi-k_m^{2})\tilde{Ξ}=0$, with $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$ on the material coordinate. The biquaternion form is compact and manifestly Lorentz-covariant.
+which is the standard Klein–Gordon equation $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ}=0$, with $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$ on the material coordinate. The biquaternion form is compact and manifestly Lorentz-covariant.
 
 ## The Dirac Equation
 
 The **Dirac equation** for a relativistic spinor field $\tilde{Ξ}$ of mass $m$ is the linear, chirality-off-diagonal pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
 where $\tilde{Ξ} = \tilde{Ξ}_{L} + \tilde{Ξ}_{R}$ carries one component per chirality. In the massless case ($m = 0$), the pair decouples into the two one-sided equations
@@ -217,7 +217,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R} = 0, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 0,
 $$
 
-the first of which is identical in form to the source-free biquaternion Maxwell equation. The mass term $k_m\tilde{Ξ}_{L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde\nabla_\Phi\tilde{Ξ} = k_m\tilde{Ξ}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus, so it is not a mass term. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
+the first of which is identical in form to the source-free biquaternion Maxwell equation. The mass term $\nu_m\tilde{Ξ}_{L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde\nabla_\Phi\tilde{Ξ} = 2\pi\nu_m\tilde{Ξ}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus, so it is not a mass term. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
 
 ## Summary of the Ten Formulas
 
@@ -231,8 +231,8 @@ the first of which is identical in form to the source-free biquaternion Maxwell 
 | Four-force | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$ | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0$ |
 | Action | $S = -mc\int\sqrt{-\,d\tilde R_\Phi\,d\tilde R_\Phi^{\natural}}$ | — |
 | Current | $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$ | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ |
-| Klein–Gordon | $(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (k_m)^{2})\tilde{Ξ} = 0$ | — |
-| Dirac | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | — |
+| Klein–Gordon | $(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (2\pi\nu_m)^{2})\tilde{Ξ} = 0$ | — |
+| Dirac | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | — |
 
 Here $\frac{h}{2\pi mc}$ is the mass length.
 

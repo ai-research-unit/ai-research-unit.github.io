@@ -43,7 +43,7 @@ The following table collects the quantitative results the series has obtained an
 | Single qubit | Bloch sphere and Bloch ball; $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=h_t+\vec s_{\Psi}\cdot\vec h_\Psi$; two-sided operator update | States, observables, Born rule, projective measurement |
 | Relativistic point mechanics | $\langle d\tilde R_\Phi\rangle_{\natural}=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$; four-momentum $\tilde{P}_{\Phi}$ with $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}= -m^{2}\,c^{2}$; four-force $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ orthogonal to it, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural}+\tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
-| Dirac field | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$; massless case $\tilde\nabla_\Phi\tilde{Ξ}=0$ | Dirac equation, mass term |
+| Dirac field | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$; massless case $\tilde\nabla_\Phi\tilde{Ξ}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
 | Hydrogen, relativistic | Exact Dirac–Coulomb spectrum; fine structure | Standard spectrum, quoted not derived |
 | Casimir effect | $-\frac{\pi^{2}\,h\,c}{480\pi \,a^{4}}$, attractive | Standard Casimir force, reproduced |
@@ -51,7 +51,7 @@ The following table collects the quantitative results the series has obtained an
 | CPT, Born rule, Bell/CHSH, decoherence | Standard statements | Standard results, reproduced; CPT transcribed, not established |
 | Linearized gravity and gravitational waves | Standard wave equation **assumed**; no deviation predicted | No derivation of the field equation |
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 Not one entry in the table is a difference. The agreement is exact where the algebra is used exactly (the qubit, the four-vector kinematics), and it is a faithful reproduction where the framework transcribes a standard equation (Maxwell, Dirac, hydrogen, Casimir, Unruh). The gravitational-wave row is the weakest: there the framework does not derive the field equation it uses, so even the agreement is carried by standard general relativity rather than produced by the algebra.
 

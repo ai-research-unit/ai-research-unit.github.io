@@ -314,10 +314,10 @@ $$
 where $ϙ$ and $m$ are the charge and mass of the carrier. For a purely orbital or convective current, the classical theorem of the next article gives $\gamma = ϙ/2m$, that is $g = 1$; for an intrinsic moment, the same articles give $\gamma = ϙ/m$, that is $g = 2$. The Larmor frequency is then $\omega_L = |g|\,|ϙ|B/2m$ for the spin, and one Bohr magneton,
 
 $$
-\mu_B = \frac{e c1/k_{m_e}}{2} = 9.274010\times10^{-24}\ \text{J T}^{-1},
+\mu_B = \frac{e c1/\nu_{m_e}}{2} = 9.274010\times10^{-24}\ \text{J T}^{-1},
 $$
 
-Here $1/k_{m_e}=\frac{h}{2\pi m_ec}$ is the electron mass length.
+Here $1/\nu_{m_e}=\frac{h}{2\pi m_ec}$ is the electron mass length.
 
 per unit spin for the electron.
 
@@ -394,7 +394,7 @@ The gyromagnetic ratio is $\gamma = g\,ϙ/2m$, with $g = 1$ for a convective mom
 | $\vec\mu(r'_t) = \tilde u_L\vec\mu(0)\tilde u_L^{*}$ | Precession as rotor conjugation |
 | $E = -\vec\mu\cdot\vec B = \mathrm{Sc}(\vec\mu\vec B)$ | Magnetic energy |
 | $\vec\tau = \vec\mu\times\vec B = \mathrm{Vect}(\vec\mu\vec B)$ | Magnetic torque |
-| $\mu_B = ec\dfrac{1}{2\,k_{m_e}}$ | Bohr magneton |
+| $\mu_B = ec\dfrac{1}{2\,2\pi\nu_{m_e}}$ | Bohr magneton |
 
 ## Further Reading
 

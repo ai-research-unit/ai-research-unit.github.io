@@ -68,9 +68,9 @@ The usual spin is recovered only on the restriction $\tau^{l\bar l}\to\tau^{l,0}
 The equations are written with the generator matrices $M^{l\bar l}_{\imath}$ of the representation $\tau^{l\bar l}$, one for each of the four coordinates, and read, for the field $\tilde{Ξ}$ of the representation,
 
 $$
-iM^{l\bar l}_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}+k_m\tilde{Ξ}=0,
+iM^{l\bar l}_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}+2\pi\nu_m\tilde{Ξ}=0,
 \qquad\text{that is}\qquad
-M(p)\tilde{Ξ}=-k_m\tilde{Ξ},
+M(p)\tilde{Ξ}=-2\pi\nu_m\tilde{Ξ},
 $$
 
 with $M(p)=M_0p_0-M_1p_1-M_2p_2-M_3p_3$ for a plane wave of momentum $p$. A nonzero solution requires
@@ -190,7 +190,7 @@ $$
 \boxed{\;
 \begin{aligned}
 \sum_{j=1}^{3}\Pi_j\frac{\partial\tilde{Ξ}}{\partial a_j}
-+i\sum_{j=1}^{3}\Pi_j^{*}\frac{\partial\tilde{Ξ}}{\partial a_j^{*}}+k_m\tilde{Ξ} &= 0,\\[6pt]
++i\sum_{j=1}^{3}\Pi_j^{*}\frac{\partial\tilde{Ξ}}{\partial a_j^{*}}+2\pi\nu_m\tilde{Ξ} &= 0,\\[6pt]
 \sum_{j=1}^{3}\Pi_j^{*}\frac{\partial\dot{\tilde{Ξ}}_{\mathrm{sp}}}{\partial\tilde a_j^{*}}
 -i\sum_{j=1}^{3}\Pi_j\frac{\partial\dot{\tilde{Ξ}}_{\mathrm{sp}}}{\partial\tilde a_j}+m\dot{\tilde{Ξ}}_{\mathrm{sp}} &= 0.
 \end{aligned}
@@ -230,16 +230,16 @@ On the fundamental doublet the Bhabha equation is the Dirac equation. At that me
 **The equation.** On the element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ the equation is the pair
 
 $$
-\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}\;}
+\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}\;}
 $$
 
-Each member is one left multiplication, by the gradient or by its quaternion conjugate; one equation per value; the mass is the only term that couples them. At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. Applying $(\tilde\nabla_\Phi)^{\natural}$ to the first member and using the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$, that is
+Each member is one left multiplication, by the gradient or by its quaternion conjugate; one equation per value; the mass is the only term that couples them. At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. Applying $(\tilde\nabla_\Phi)^{\natural}$ to the first member and using the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R}$, that is
 
 $$
-\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R},
+\Box_\Phi\tilde{Ξ}_{R}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R},
 $$
 
-and the same step on the other member gives $\Box_\Phi\tilde{Ξ}_{L}=k_m^{2}\tilde{Ξ}_{L}$: each value obeys the Klein–Gordon equation, both on the same element.
+and the same step on the other member gives $\Box_\Phi\tilde{Ξ}_{L}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{L}$: each value obeys the Klein–Gordon equation, both on the same element.
 
 **Why one equation will not do.** A single gradient does not square to the scalar $\Box_\Phi$. Its square is a derived form of this section, read from the multiplication of the units,
 
@@ -295,7 +295,7 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 - The spintensor degree $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)=(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$, and its non-injectivity across spin lines; for the proton's first factor $60\times59=3540$.
 - The $\pm$ pairing of the eigenvalues of $M_0$, derived from the evenness in $p_0$ of the rest-frame determinant.
 - The bivector metric's $(3,3)$ inertia, and the printed diagonal as the componentwise image in the order $10,20,30,23,31,12$; recomputed for all six collective indices.
-- The Dirac limit: the product of the gradient with its quaternion conjugate is $\Box_\Phi$, the non-scalar square $\tilde\nabla_\Phi^2=\partial^2/\partial R_t^2-\Delta_\Phi+2\sum_\eta\vec e_\eta\,\partial^2/\partial R_t\partial R_\eta$, and the elimination of the pair by which each value obeys $\Box_\Phi\tilde{Ξ}=k_m^{2}\tilde{Ξ}$; recomputed on the coefficient representation over $100$ random complex four-momenta, the product at residual $1.1\times10^{-14}$, the elimination following from the second member.
+- The Dirac limit: the product of the gradient with its quaternion conjugate is $\Box_\Phi$, the non-scalar square $\tilde\nabla_\Phi^2=\partial^2/\partial R_t^2-\Delta_\Phi+2\sum_\eta\vec e_\eta\,\partial^2/\partial R_t\partial R_\eta$, and the elimination of the pair by which each value obeys $\Box_\Phi\tilde{Ξ}=4\pi^{2}\nu_m^{2}\tilde{Ξ}$; recomputed on the coefficient representation over $100$ random complex four-momenta, the product at residual $1.1\times10^{-14}$, the elimination following from the second member.
 - The proton-to-electron mass ratio: the product $(l+\frac12)(\bar l+\frac12)$ is $30\times29.5=885$ at $(59/2,29)$ and $1\times\frac12$ at the electron's $(1/2,0)$, so the ratio is $885/\frac12=1770$.
 
 **Transcribed, not derived.**
@@ -336,7 +336,7 @@ The Bhabha–Gel'fand–Yaglom wave equations place a field in an arbitrary Lore
 
 The equations can be mapped into the six-dimensional bivector space $\mathbb{R}^6\cong\mathbb{C}^3$. The printed bivector metric is the componentwise image of the Minkowski metric under the boost-first collective order $10,20,30,23,31,12$; the order printed in the source interleaves the two classes and does not reproduce it. With the corrected order, the three boosts carry $-1$ and the three rotations $+1$, which is the $(3,3)$ split of the Lorentz parameter space. The $\mathbb{R}^6$ equation keeps the source's explicit $i$ in its second sum: the source's two relations for the conjugate coordinate are mutually inconsistent, so the reduction of that pair of imaginary units by $i^2=-1$ is stated as a consequence of one reading and left open, rather than performed silently.
 
-The first chain member is the electron's Dirac doublet, and its Dirac equation is the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, one left multiplication per member and one equation per value read by the test. The two members are two equations on one element, and the mass is the only term that couples them. The single gradient cannot do the work alone: $\tilde\nabla_\Phi^2$ is not scalar, the mixed derivatives through $e_t$ survive, so no first-order equation on one value has a scalar square, and the massive equation is necessarily a pair. The nucleon is taken at the chain member $(59/2,29)$ of degree $3540$; the ratio $m_p/m_e=1770$ is $3.6\%$ below the measured value.
+The first chain member is the electron's Dirac doublet, and its Dirac equation is the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, one left multiplication per member and one equation per value read by the test. The two members are two equations on one element, and the mass is the only term that couples them. The single gradient cannot do the work alone: $\tilde\nabla_\Phi^2$ is not scalar, the mixed derivatives through $e_t$ survive, so no first-order equation on one value has a scalar square, and the massive equation is necessarily a pair. The nucleon is taken at the chain member $(59/2,29)$ of degree $3540$; the ratio $m_p/m_e=1770$ is $3.6\%$ below the measured value.
 
 The framework's relation to this is the fundamental doublet's factor: $\mathbb{C}^2$ is the defining module of the biquaternion algebra, the bivector space is the corpus's field-strength space, and the equations' massless limit is the corpus's Weyl pair, with the Maxwell field as the programme writes it as the companion identification. The higher chain members lie outside $\mathbb{B}$, and the physical assignments are choices fixed by the mass ratio.
 
@@ -358,9 +358,9 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 | $\mathbb{C}^3\cong\mathbb{R}^6$ | Complex form of the bivector space, Lorentz parameter space |
 | $(59/2,29)$, degree $3540$ | The proton's chain member |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | The gradient, its quaternion conjugate and the d'Alembertian in the material reading, all of *Operator and Calculus Conventions* |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The Dirac pair: each member one left multiplication, one equation per value |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | The Dirac pair: each member one left multiplication, one equation per value |
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ## Further Reading
 

@@ -761,8 +761,8 @@ That is a strong statement about spinors and it is worth separating from the phy
 Why the list records $\mathbb{B}_{\Phi}$ and not $\mathbb{B}_{\Psi}$. The two are exchanged by multiplication by $i$, so they are one real four-space up to the algebra's own complex structure, and
 
 $$
-\mathbb{B}_{\Psi}=i\,\mathbb{B}_{\Phi}=\mathbb{R}e_t\oplus i\vec k,\qquad
-\vec k=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\},
+\mathbb{B}_{\Psi}=i\,\mathbb{B}_{\Phi}=\mathbb{R}e_t\oplus 2\pi i\vec\nu_{\Phi},\qquad
+2\pi\vec\nu_{\Phi}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\},
 $$
 
 whose scalar piece is a line inside the centre and whose vector piece is $i$ times the spin-one space. Recording it would list the centre and the spin-one space a second time, and the spin content would not change. The representative is $\mathbb{B}_{\Phi}$ because the material dictionary lands there: a four-momentum $i(E/c)e_t+\vec p$ has an imaginary scalar part and a real vector part, so it is anti-Hermitian and not Hermitian.

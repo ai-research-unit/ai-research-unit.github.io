@@ -2,7 +2,7 @@
 
 ## Introduction
 
-*The Coupled Klein–Gordon Equation in Biquaternionic Form* writes (E1) $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ and (E2) $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$, records that they coincide in the free limit and differ by the field strength, adopts E2, and puts E1's admissibility in its Open Questions. It also states, at §*The Two Coupled Equations*, that E2 is the equation of the corpus's action for "a connection whose coefficients are purely imaginary in every slot", and calls the electric slot's bookkeeping "the one addition". Those two sentences are the door this article walks through.
+*The Coupled Klein–Gordon Equation in Biquaternionic Form* writes (E1) $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi$ and (E2) $\Box_{\mathrm{gco},\Phi}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi$, records that they coincide in the free limit and differ by the field strength, adopts E2, and puts E1's admissibility in its Open Questions. It also states, at §*The Two Coupled Equations*, that E2 is the equation of the corpus's action for "a connection whose coefficients are purely imaginary in every slot", and calls the electric slot's bookkeeping "the one addition". Those two sentences are the door this article walks through.
 
 Wherever the connection is constant both equations have constant coefficients, so both have a symbol, and the symbols are central scalars differing by one term. Momentum space does not decide which equation the physics should use. It decides what each equation *is*, exactly, and it shows that the difference the parent defers to experiment is a difference between two real numbers rather than a difference between two kinds of number.
 
@@ -19,18 +19,18 @@ There is no new solution, no new prediction and no new equation. The symbols are
 The algebra and its units are those of *Algebra and Element Conventions*, the gradient, the d'Alembertian and the symbol rule those of *Operator and Calculus Conventions*, the four products those of *Product and Form Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The transform is the one of *Derivatives, Fields and Transforms*, whose symbol rule is quoted in its derived form and not re-derived:
 
 $$
-\tilde\nabla_\Phi\longmapsto i\tilde K_\Phi,
+\tilde\nabla_\Phi\longmapsto 2\pi i\tilde\Upsilon_\Phi,
 \qquad
-\Box_\Phi\longmapsto-\langle\tilde K_\Phi\rangle_\natural,
+\Box_\Phi\longmapsto-\langle\tilde\Upsilon_\Phi\rangle_\natural,
 \qquad
-\tilde K_\Phi=ik_t'e_t+\vec k_\Phi,
+\tilde\Upsilon_\Phi=2\pi i\nu_t'e_t+2\pi\vec\nu_\Phi,
 \qquad
-k_t'=\frac{\omega}{c},
+2\pi\nu_t'=\frac{\omega}{c},
 \qquad
-\langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2}.
+\langle\tilde\Upsilon_\Phi\rangle_\natural=-2\pi\nu_t'^{2}+4\pi^{2}\nu_{\Phi}^{2}.
 $$
 
-The coordinate is $R_t=i\,r_t'$, so $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the temporal slot of the gradient's symbol is $+i(ik_t')=-k_t'$, real; the three spatial slots are $i\kappa_\eta$, imaginary. Write $\sigma_{\imath}$ for those four numbers, so $\sigma_t=-k_t'$ and $\sigma_\eta=i\kappa_\eta$. A reader who takes the metric signs from the slot list instead of from $\partial/\partial R_t=-i\,\partial/\partial r_t'$ will put an extra $-1$ on $\sigma_t$ and will then find an imaginary cross term that does not exist. The corpus has already spent that sign twice, once in $R_t=ir_t'$ and once in $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r_t'}^{2}$, and there is none left to spend.
+The coordinate is $R_t=i\,r_t'$, so $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the temporal slot of the gradient's symbol is $+i(i\nu_t')=-\nu_t'$, real; the three spatial slots are $i\kappa_\eta$, imaginary. Write $\sigma_{\imath}$ for those four numbers, so $\sigma_t=-2\pi\nu_t'$ and $\sigma_\eta=i\kappa_\eta$. A reader who takes the metric signs from the slot list instead of from $\partial/\partial R_t=-i\,\partial/\partial r_t'$ will put an extra $-1$ on $\sigma_t$ and will then find an imaginary cross term that does not exist. The corpus has already spent that sign twice, once in $R_t=ir_t'$ and once in $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r_t'}^{2}$, and there is none left to spend.
 
 With $c_{\imath}=\frac{2\pi i\,ϙ}{h}A_{\imath}$ and $\tilde A_\Phi=i a_t' e_t+\sum_\eta A_\eta\vec e_\eta$ for real $a_t'$ and real $A_\eta$, the four coefficients are
 
@@ -44,22 +44,22 @@ $$
 
 The coefficient $c_{\imath}$ always carries an index and the speed of light $c$ never does; the corpus's $r_t'=ct'$ is the only place the letter appears unindexed. The writing $A_t=ia_t'$ is the parent's and it is the one the anti-Hermiticity of $\tilde A_\Phi$ produces: $\tilde A_\Phi^{*}=-\tilde A_\Phi$ holds exactly when $a_t'$ and $\vec A$ are both real.
 
-The mechanical wave number is $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$, whose temporal slot is $-k_t'+c_t$ in the gradient's units. First, the transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued functions and never carries a material-sector field to an informational-sector one; the fork below is about classes of scalars and not about sectors. Second, a symbol exists only where the coefficients are constant, which is the licence used throughout and the first entry in *Limits*. Third, a Legendre transform between a field and its conjugate momentum grants no Fourier reading, and nothing below is one.
+The mechanical wave number is $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$, whose temporal slot is $-\nu_t'+c_t$ in the gradient's units. First, the transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued functions and never carries a material-sector field to an informational-sector one; the fork below is about classes of scalars and not about sectors. Second, a symbol exists only where the coefficients are constant, which is the licence used throughout and the first entry in *Limits*. Third, a Legendre transform between a field and its conjugate momentum grants no Fourier reading, and nothing below is one.
 
 ## The Two Symbols
 
 The connection's coefficients are central and the field's carrier is not involved, so the symbol of either second-order operator is one complex number per wave number. For a constant connection with $\vec A=0$ the two are
 
 $$
-\text{(E2)}\qquad \bigl(k_t'-c_t\bigr)^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2},
+\text{(E2)}\qquad \bigl(\nu_t'-c_t\bigr)^{2}-\lvert\vec\kappa\rvert^{2}-\nu_m^{2},
 \qquad\qquad
-\text{(E1)}\qquad k_t'^{2}-c_t^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2}.
+\text{(E1)}\qquad \nu_t'^{2}-c_t^{2}-\lvert\vec\kappa\rvert^{2}-\nu_m^{2}.
 $$
 
 The first is $\sum_{\imath}(\sigma_{\imath}+c_{\imath})^{2}$, the square of the covariant derivative summed slot by slot. The second is $\sum_{\imath}(\sigma_{\imath}-\bar c_{\imath})(\sigma_{\imath}+c_{\imath})$, the two first-order symbols with opposite coefficients on the two factors. They differ by
 
 $$
-\bigl(k_t'-c_t\bigr)^{2}-k_t'^{2}+c_t^{2}=2c_t\bigl(c_t-k_t'\bigr),
+\bigl(2\pi\nu_t'-c_t\bigr)^{2}-2\pi\nu_t'^{2}+c_t^{2}=2c_t\bigl(c_t-2\pi\nu_t'\bigr),
 $$
 
 which is real for every real $c_t$. **The difference of the two symbols is a real number and it is first order in the potential**; at the values used below it is $2.0522$.
@@ -84,7 +84,7 @@ where parity means real or purely imaginary. The proof is the expansion: the squ
 
 The temporal symbol is real and the three spatial symbols are imaginary, so the condition is "$c_t$ real and $c_\eta$ imaginary", which by the bookkeeping of §*Conventions* is "$A_t$ imaginary and $\vec A$ real", which is $\tilde A_\Phi^{*}=-\tilde A_\Phi$. **The anti-Hermitian writing is the reality condition**, and the corpus's convention is doing physical work that its own introductions describe as bookkeeping.
 
-On a grid of $256$ points, with $k_t'=\lvert\vec\kappa\rvert=3$ and coefficients of magnitude $0.31$, the four cases are:
+On a grid of $256$ points, with $2\pi\nu_t'=\lvert\vec\kappa\rvert=3$ and coefficients of magnitude $0.31$, the four cases are:
 
 | slot | coefficient | squared symbol | paired symbol |
 | --- | --- | --- | --- |
@@ -114,7 +114,7 @@ Two independently computed symbols, one of them a composition of two operators, 
 
 The paired symbol survives an arbitrary spatial coefficient; the squared symbol does not. So the honest version of "one symbol is real always and the other only conditionally" is: *the paired symbol is real whenever the temporal coefficient is real, and the squared symbol is real only when every coefficient matches its slot.* The polarity of the usual statement is reversed, and the reason is that the corpus's temporal symbol is real rather than imaginary.
 
-Since both symbols are real in the corpus's writing, no measurement of reality and no criterion of self-adjointness can separate them; both operators are self-adjoint there. What separates them is the cross term $2c_t(c_t-k_t')$, which is a difference of two real functions of the potential. **A fork about the class of the symbol would be a fork about which numbers are real; this one is a fork about which real function the potential enters.**
+Since both symbols are real in the corpus's writing, no measurement of reality and no criterion of self-adjointness can separate them; both operators are self-adjoint there. What separates them is the cross term $2c_t(c_t-\nu_t')$, which is a difference of two real functions of the potential. **A fork about the class of the symbol would be a fork about which numbers are real; this one is a fork about which real function the potential enters.**
 
 The census says what each symbol is. The action says which operator the corpus's own functional produces, and that is the variational companion's subject. Neither statement is a verdict on which equation the physics should use, and the article keeps the two apart deliberately.
 
@@ -145,18 +145,18 @@ A reader who carries $-8.8876+1.86i$ away as "the symbol of a scalar potential" 
 Setting each symbol to zero with $\vec A=0$ gives
 
 $$
-\text{(E2)}\qquad \bigl(k_t'-c_t\bigr)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2},
+\text{(E2)}\qquad \bigl(2\pi\nu_t'-c_t\bigr)^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2},
 \qquad\qquad
-\text{(E1)}\qquad k_t'^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}+c_t^{2}.
+\text{(E1)}\qquad 2\pi\nu_t'^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}+c_t^{2}.
 $$
 
-The first is the parent's $(\omega-c_t)^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2}=0$, the second its $\omega^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2}-c_t^{2}=0$, with $\omega$ standing for $k_t'$ in the parent's letters. Both displays in the parent are correct, and no transposition of a real and an imaginary part is needed to read them.
+The first is the parent's $(\omega-c_t)^{2}-\lvert\vec\kappa\rvert^{2}-4\pi^{2}\nu_m^{2}=0$, the second its $\omega^{2}-\lvert\vec\kappa\rvert^{2}-4\pi^{2}\nu_m^{2}-c_t^{2}=0$, with $\omega$ standing for $\nu_t'$ in the parent's letters. Both displays in the parent are correct, and no transposition of a real and an imaginary part is needed to read them.
 
-Its roots are $k_t'=\pm\sqrt{\lvert\vec\kappa\rvert^{2}+k_m^{2}}+c_t$: at $k_m=0.7$ and $\lvert\vec\kappa\rvert=3$ they are $+2.770584$ and $-3.390584$ against the free $\pm3.080584$. The pair translates by $c_t=-0.310000$ and its separation stays $6.161169$. A common real displacement of both branches is a shift of the energy, since $E=\frac{h}{2\pi} c\,k_t'$: $E\mapsto E+\frac{h}{2\pi} c\,c_t=E-ϙ c\,a_t'$, which is the parent's $E\mapsto E+ϙ c\,a_t'$ with the sign of $c_t$ carried through.
+Its roots are $2\pi\nu_t'=\pm\sqrt{\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}}+c_t$: at $2\pi\nu_m=0.7$ and $\lvert\vec\kappa\rvert=3$ they are $+2.770584$ and $-3.390584$ against the free $\pm3.080584$. The pair translates by $c_t=-0.310000$ and its separation stays $6.161169$. A common real displacement of both branches is a shift of the energy, since $E=\frac{h}{2\pi} c\,2\pi\nu_t'$: $E\mapsto E+\frac{h}{2\pi} c\,c_t=E-ϙ c\,a_t'$, which is the parent's $E\mapsto E+ϙ c\,a_t'$ with the sign of $c_t$ carried through.
 
-Its roots are $\pm\sqrt{\lvert\vec\kappa\rvert^{2}+k_m^{2}+c_t^{2}}$, here $\pm3.096143$: no displacement, and a separation of $6.192286$ against the free $6.161169$. A separation that grows with the square of the potential is a shift of the mass squared, $k_m^{2}\mapsto k_m^{2}+c_t^{2}$, and the mass shift is second order where the energy shift is first.
+Its roots are $\pm\sqrt{\lvert\vec\kappa\rvert^{2}+\nu_m^{2}+c_t^{2}}$, here $\pm3.096143$: no displacement, and a separation of $6.192286$ against the free $6.161169$. A separation that grows with the square of the potential is a shift of the mass squared, $\nu_m^{2}\mapsto \nu_m^{2}+c_t^{2}$, and the mass shift is second order where the energy shift is first.
 
-At small $c_t$ the linear shell moves by $c_t$ and the quadratic shell by $c_t^{2}/2k_t'$: a factor $2k_t'/c_t$, which is twenty at the values above. That is the fork, stated as a measurement would meet it: a response linear in the potential against a response quadratic in it, in the same slot, from the same coupling.
+At small $c_t$ the linear shell moves by $c_t$ and the quadratic shell by $c_t^{2}/2\nu_t'$: a factor $2\nu_t'/c_t$, which is twenty at the values above. That is the fork, stated as a measurement would meet it: a response linear in the potential against a response quadratic in it, in the same slot, from the same coupling.
 
 Neither root pair has an imaginary part, so neither reading describes a state with a decay or growth rate. Whatever separates the two equations, it is not the existence of an asymptotic state, and an article that reported an off-axis pole here would be reporting the wrong-parity case of §*The Parent's Three Numbers* under the wrong name.
 
@@ -200,21 +200,21 @@ The spatial slots carry no fork, because there $\bar c_\eta=-c_\eta$ and the two
 
 Which of the three the corpus should drop is not decided here, and the corrected triplet is narrower than the usual one. The three assumptions are: the temporal coordinate $R_t=i\,r_t'$, the anti-Hermitian connection $\tilde A_\Phi^{*}=-\tilde A_\Phi$, and a real dispersion for a scalar potential. Any two hold and the third fails — dropping $R_t=ir_t'$ puts an extra $-i$ on $\sigma_t$ and turns the material $c_t$ into the wrong parity, dropping the anti-Hermitian writing does the same thing directly, and keeping both forces the dispersion to be real, which is what the corpus does. Whether the first two are negotiable is a question about the algebra's presentation and not about physics, and the article records the three without ranking them.
 
-Both operators of §*The Two Symbols* are self-adjoint in the corpus's writing, so both are the Euler–Lagrange operators of some real quadratic functional; the article exhibits the difference between the two functionals as the cross term $2c_t(c_t-k_t')$ and shows which one the corpus's action is, in the variational companion. What the paired functional *is* — whether it is a cross bilinear between two charge-conjugate factors, and whether it has a name in the standard literature — is open.
+Both operators of §*The Two Symbols* are self-adjoint in the corpus's writing, so both are the Euler–Lagrange operators of some real quadratic functional; the article exhibits the difference between the two functionals as the cross term $2c_t(c_t-\nu_t')$ and shows which one the corpus's action is, in the variational companion. What the paired functional *is* — whether it is a cross bilinear between two charge-conjugate factors, and whether it has a name in the standard literature — is open.
 
-The linear shell moves the energy by $ϙc\,a_t'$ and the quadratic shell by $c_t^{2}/2k_t'$, and nothing in the article says which of the two a physical scalar in a constant potential follows. That is the parent's question, restated as a question about a power rather than about a real part, and it is not answered here.
+The linear shell moves the energy by $ϙc\,a_t'$ and the quadratic shell by $c_t^{2}/2\nu_t'$, and nothing in the article says which of the two a physical scalar in a constant potential follows. That is the parent's question, restated as a question about a power rather than about a real part, and it is not answered here.
 
 ## Summary
 
 The transform of the coupled Klein–Gordon operator is a central scalar per wave number, and the two readings of the covariant square give two of them:
 
 $$
-\bigl(k_t'-c_t\bigr)^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2}
+\bigl(\nu_t'-c_t\bigr)^{2}-\lvert\vec\kappa\rvert^{2}-\nu_m^{2}
 \qquad\text{and}\qquad
-k_t'^{2}-c_t^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2},
+\nu_t'^{2}-c_t^{2}-\lvert\vec\kappa\rvert^{2}-\nu_m^{2},
 $$
 
-differing by the real cross term $2c_t(c_t-k_t')$, which is $2.0522$ at the values used throughout.
+differing by the real cross term $2c_t(c_t-\nu_t')$, which is $2.0522$ at the values used throughout.
 
 A symbol is real in a slot exactly when the connection's coefficient has the reality of that slot's gradient symbol. The temporal symbol is real and the three spatial ones are imaginary, so the condition is the anti-Hermitian writing $\tilde A_\Phi^{*}=-\tilde A_\Phi$, and the corpus's convention is the reality condition rather than a convention about signs. Measured over $500$ random material connections, both symbols are real to $8.1\times10^{-13}$; over $500$ draws with a real temporal coefficient and arbitrary complex spatial coefficients the paired symbol stays real to $8.3\times10^{-13}$ while the squared symbol reaches an imaginary part of $34.78$.
 
@@ -226,17 +226,17 @@ The parent's measured complex symbol, $-8.8876+1.86i$, is reproduced exactly by 
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The four-wave number; $k_t'=\omega/c$ |
-| $\sigma_{\imath}$ | The free slot symbol: $\sigma_t=-k_t'$ real, $\sigma_\eta=i\kappa_\eta$ imaginary |
+| $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The four-wave number; $2\pi\nu_t'=\omega/c$ |
+| $\sigma_{\imath}$ | The free slot symbol: $\sigma_t=-2\pi\nu_t'$ real, $\sigma_\eta=i\kappa_\eta$ imaginary |
 | $\tilde A_\Phi=i a_t'e_t+\sum_\eta A_\eta\vec e_\eta$ | The connection, anti-Hermitian in the material writing |
 | $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot connection coefficient; $c_t=-\frac{2\pi ϙa_t'}{h}$ real, $c_\eta=ia_\eta$ imaginary |
 | $a_\eta=\frac{2\pi ϙ}{h}A_\eta$ | The reduced vector potential, real |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
-| (E2), the squared reading | $\sum_{\imath}(\sigma_{\imath}+c_{\imath})^{2}$; shell $(k_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}$ |
-| (E1), the paired reading | $\sum_{\imath}(\sigma_{\imath}-\bar c_{\imath})(\sigma_{\imath}+c_{\imath})$; shell $k_t'^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}+c_t^{2}$ |
-| $2c_t(c_t-k_t')$ | The difference of the two symbols; real, first order in the potential |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
+| (E2), the squared reading | $\sum_{\imath}(\sigma_{\imath}+c_{\imath})^{2}$; shell $(2\pi\nu_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}$ |
+| (E1), the paired reading | $\sum_{\imath}(\sigma_{\imath}-\bar c_{\imath})(\sigma_{\imath}+c_{\imath})$; shell $2\pi\nu_t'^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}+c_t^{2}$ |
+| $2c_t(c_t-\nu_t')$ | The difference of the two symbols; real, first order in the potential |
 | $\tilde F=i[D_{\imath},D_{\jmath}]$ | The field strength; a multiplication by $\frac{2\pi iϙ}{h}F_{\imath\jmath}$ |
-| $\tilde K_{\Phi,\mathrm{gco}}$ | The mechanical wave number, $\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ | The mechanical wave number, $\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ |
 
 ## Further Reading
 

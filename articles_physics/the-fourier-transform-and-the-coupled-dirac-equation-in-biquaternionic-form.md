@@ -8,7 +8,7 @@ The finding is a classification of one term by its order. The coupling acts as a
 
 The ladder has a gauge-invariant floor. A gauge in which $\tilde A_\Phi$ is constant exists exactly when the field strength vanishes, because a constant connection is a gradient and a connection is a gradient exactly when its field strength vanishes. So the multiplier case is the zero-curvature case, and the first case that no gauge can remove is the linear one. That is why the linear bench is the interesting one: it is the first coupling that is genuinely an operator rather than a multiplier.
 
-The shift of the wave number is a translation and not an addition. At constant $\tilde A_\Phi$ the covariant wave number element is $\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$, and its quaternionic norm is $\langle i\tilde K_{\Phi,\mathrm{gco}}\rangle_\natural=p'^{2}/\frac{h^{2}}{4\pi^{2}}$ with $p'$ the kinetic four-momentum. A translation of a variable cannot change the quadratic form's shape, only its origin, and the numerical check confirms that the naive sum of the two norms misses the cross terms by an amount of order one.
+The shift of the wave number is a translation and not an addition. At constant $\tilde A_\Phi$ the covariant wave number element is $\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$, and its quaternionic norm is $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'^{2}/\frac{h^{2}}{4\pi^{2}}$ with $p'$ the kinetic four-momentum. A translation of a variable cannot change the quadratic form's shape, only its origin, and the numerical check confirms that the naive sum of the two norms misses the cross terms by an amount of order one.
 
 The sector statement is inherited and not re-derived. The connection is written anti-Hermitially in the parent, $\tilde A_\Phi^{*}=-\tilde A_\Phi$ on $\mathbb{B}_\Phi$, and the factor $i$ in $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ carries it into the Hermitian sector. The coupling element of this article is that same element. It is not a new object and it is not written loosely.
 
@@ -23,21 +23,21 @@ There is no new prediction and no new solution. The equation, its gauge law, its
 The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, the four products those of *Product and Form Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The transform is the one of *Derivatives, Fields and Transforms*, whose symbol rule is quoted in its derived form and not re-derived:
 
 $$
-\tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,
+\tilde\nabla_\Phi\longmapsto 2\pi i\tilde\Upsilon_\Phi ,
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\longmapsto i\tilde K_\Phi^{\natural},
+(\tilde\nabla_\Phi)^{\natural}\longmapsto 2\pi i\tilde\Upsilon_\Phi^{\natural},
 \qquad
-\tilde K_\Phi=ik_t'e_t+\vec k_\Phi ,
+\tilde\Upsilon_\Phi=2\pi i\nu_t'e_t+2\pi\vec\nu_\Phi ,
 \qquad
-k_t'=\frac{\omega}{c}.
+2\pi\nu_t'=\frac{\omega}{c}.
 $$
 
-The temporal slot carries the sign, and the sign is not a convention of this article. The coordinate is $R_t=ir_t'$, so the temporal derivative is $\partial/\partial R_t=-i\,\partial/\partial r_t'$, and the temporal slot of the symbol is $+ik_t'$ because the plane wave's phase carries $-k_t'r_t'$. On the plane wave $\tilde\Xi=\tilde\Xi_0\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}=\vec k_\Phi\cdot\vec r-k_t'r_t'$ the two identities used below are
+The temporal slot carries the sign, and the sign is not a convention of this article. The coordinate is $R_t=ir_t'$, so the temporal derivative is $\partial/\partial R_t=-i\,\partial/\partial r_t'$, and the temporal slot of the symbol is $+ik_t'$ because the plane wave's phase carries $-\nu_t'r_t'$. On the plane wave $\tilde\Xi=\tilde\Xi_0\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}=2\pi\vec\nu_\Phi\cdot\vec r-2\pi\nu_t'r_t'$ the two identities used below are
 
 $$
-\tilde\nabla_\Phi e^{i\theta_{\mathrm{pha}}}=i\tilde K_\Phi\,e^{i\theta_{\mathrm{pha}}},
+\tilde\nabla_\Phi e^{i\theta_{\mathrm{pha}}}=2\pi i\tilde\Upsilon_\Phi\,e^{i\theta_{\mathrm{pha}}},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}e^{i\theta_{\mathrm{pha}}}=i\tilde K_\Phi^{\natural}\,e^{i\theta_{\mathrm{pha}}},
+(\tilde\nabla_\Phi)^{\natural}e^{i\theta_{\mathrm{pha}}}=2\pi i\tilde\Upsilon_\Phi^{\natural}\,e^{i\theta_{\mathrm{pha}}},
 $$
 
 and both are the polar parent's, quoted at the temporal slot so that no sign is left to the reader.
@@ -50,43 +50,43 @@ $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural},
 $$
 
-with $ϙ$ the charge, $k_m=\frac{2\pi mc}{h}$ the mass wave number, and $\tilde A_\Phi$ the connection of the gauge principle. In the abelian component form the parent uses, $\tilde A_\Phi=\sum_{\imath} A_{\imath} e_{\imath}$ with complex scalar coefficients, and each component of the covariant derivative is a central scalar operator. That sentence is the parent's and its consequences are the polar companion's; this article uses only that the coefficients are central.
+with $ϙ$ the charge, $\nu_m=\frac{mc}{h}$ the mass wave number, and $\tilde A_\Phi$ the connection of the gauge principle. In the abelian component form the parent uses, $\tilde A_\Phi=\sum_{\imath} A_{\imath} e_{\imath}$ with complex scalar coefficients, and each component of the covariant derivative is a central scalar operator. That sentence is the parent's and its consequences are the polar companion's; this article uses only that the coefficients are central.
 
-The four sector statements. $\tilde K_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $i\tilde K_\Phi\in\mathbb{B}_\Psi$ and Hermitian; $\tilde A_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian, which is the parent's own writing; $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi\in\mathbb{B}_\Psi$ and Hermitian. The last is a consequence of the third and of the centrality of $i$, and nothing else in the article turns on a sector question.
+The four sector statements. $\tilde\Upsilon_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $2\pi i\tilde\Upsilon_\Phi\in\mathbb{B}_\Psi$ and Hermitian; $\tilde A_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian, which is the parent's own writing; $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi\in\mathbb{B}_\Psi$ and Hermitian. The last is a consequence of the third and of the centrality of $i$, and nothing else in the article turns on a sector question.
 
 ## The Symbol of the Coupled Operator
 
 ### The Two Summands
 
-In momentum space the coupled operator is the sum of a multiplier and the transform of a multiplication. On a plane wave the derivative contributes $i\tilde K_\Phi$ and the connection contributes $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ at the same wave number, so the symbol of the first member is
+In momentum space the coupled operator is the sum of a multiplier and the transform of a multiplication. On a plane wave the derivative contributes $2\pi i\tilde\Upsilon_\Phi$ and the connection contributes $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ at the same wave number, so the symbol of the first member is
 
 $$
-i\tilde K_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi
-=i\Bigl(\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi\Bigr)
-=i\tilde K_{\Phi,\mathrm{gco}} .
+2\pi i\tilde\Upsilon_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi
+=i\Bigl(\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi\Bigr)
+=2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}} .
 $$
 
 The first summand is a multiplier in every setting, and the second is a multiplier in one. The derivative is a multiplier because the transform turns it into one; that is the symbol rule and it needs no hypothesis about the coefficients. The connection is a multiplier only where its transform is supported at one point, and that is the constant case. This section states the licence under which the second statement is used, and §*When the Coupling Is a Multiplier* states what replaces it when the licence fails.
 
 The constant-$\tilde A_\Phi$ licence, stated here and used here. Throughout this section $\tilde A_\Phi$ is constant, so its transform is a central multiple of the delta at one wave number and the multiplication becomes a multiplier at every wave number. Every display in this section is a statement under that licence. The licence is dropped at §*When the Coupling Is a Multiplier*, and no result of that section assumes it.
 
-Under the licence the symbol is Hermitian in every entry, and the reason is a sum of two Hermitian elements. The check used one hundred random connections $\tilde A_\Phi$ in the material sector and one hundred random wave numbers, with the charge in units of $ϙ$: the element $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ satisfied $\lvert X^{*}-X\rvert=0.0$ at every draw, and the symbol $i\tilde K_{\Phi,\mathrm{gco}}$ satisfied the same with residual $0.0$. The statement is structural: a real linear combination of two Hermitian elements is Hermitian, and both summands are Hermitian by the sector list of the conventions.
+Under the licence the symbol is Hermitian in every entry, and the reason is a sum of two Hermitian elements. The check used one hundred random connections $\tilde A_\Phi$ in the material sector and one hundred random wave numbers, with the charge in units of $ϙ$: the element $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ satisfied $\lvert X^{*}-X\rvert=0.0$ at every draw, and the symbol $2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}$ satisfied the same with residual $0.0$. The statement is structural: a real linear combination of two Hermitian elements is Hermitian, and both summands are Hermitian by the sector list of the conventions.
 
 ### The Off-Diagonal Entries Cease to Be Conjugates
 
-**The free symbol is $\natural$-symmetric and the coupled one is not.** The free pair has the two entries $i\tilde K_\Phi$ and $i\tilde K_\Phi^{\natural}$, which are each other's natural conjugates. With a connection the entries become $i\tilde K_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ and $i\tilde K_\Phi^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural}$, and the second is the natural conjugate of the first only if $\tilde A_\Phi^{\natural}=\tilde A_\Phi$.
+**The free symbol is $\natural$-symmetric and the coupled one is not.** The free pair has the two entries $2\pi i\tilde\Upsilon_\Phi$ and $2\pi i\tilde\Upsilon_\Phi^{\natural}$, which are each other's natural conjugates. With a connection the entries become $2\pi i\tilde\Upsilon_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi$ and $2\pi i\tilde\Upsilon_\Phi^{\natural}+\frac{i\,ϙ}{h}\tilde A_\Phi^{\natural}$, and the second is the natural conjugate of the first only if $\tilde A_\Phi^{\natural}=\tilde A_\Phi$.
 
 That condition is the parent's electric-magnetic split, read as a symmetry of the symbol. For a purely electric connection $\tilde A_\Phi^{\natural}=+\tilde A_\Phi$ and the two entries are conjugates; for a purely magnetic one $\tilde A_\Phi^{\natural}=-\tilde A_\Phi$ and the two entries are conjugates up to a sign; for a general connection neither holds. The parent says that purity is a property of a gauge and not of the entry, and the same sentence applies here: the $\natural$-symmetry of the symbol is a property of a gauge, not of the operator.
 
 $$
-\mathcal{D}(\tilde K_\Phi)=
+\mathcal{D}(\tilde\Upsilon_\Phi)=
 \begin{pmatrix}
--k_m & i\tilde K_\Phi^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural}\\[2pt]
-i\tilde K_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi & -k_m
+-2\pi\nu_m & 2\pi i\tilde\Upsilon_\Phi^{\natural}+\frac{i\,ϙ}{h}\tilde A_\Phi^{\natural}\\[2pt]
+2\pi i\tilde\Upsilon_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi & -2\pi\nu_m
 \end{pmatrix}.
 $$
 
-The diagonal entries do not move. They are $-k_m$ in both slots, a real central number that the connection cannot touch, because the mass coefficient in the parent's pair is a scalar multiplying the field and the connection is inserted in the derivative. This is the structural statement that matters for the companion: the mass is diagonal in momentum and off-diagonal in the part label, in every setting, and the coupling changes neither of those facts.
+The diagonal entries do not move. They are $-\nu_m$ in both slots, a real central number that the connection cannot touch, because the mass coefficient in the parent's pair is a scalar multiplying the field and the connection is inserted in the derivative. This is the structural statement that matters for the companion: the mass is diagonal in momentum and off-diagonal in the part label, in every setting, and the coupling changes neither of those facts.
 
 ## When the Coupling Is a Multiplier
 
@@ -130,23 +130,23 @@ What the translation buys. For a linear gauge phase the covariant wave number is
 
 ## The Shift Translates and Cannot Resize
 
-Finding 3. At constant $\tilde A_\Phi$ the covariant wave number element is $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$, and its quaternionic norm is the interval at the shifted argument:
+Finding 3. At constant $\tilde A_\Phi$ the covariant wave number element is $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$, and its quaternionic norm is the interval at the shifted argument:
 
 $$
-\langle i\tilde K_{\Phi,\mathrm{gco}}\rangle_\natural
-=\Bigl(k_t'+\frac{2\pi ϙ}{h}a_t\Bigr)^{2}-\Bigl\lvert\vec k_\Phi+\frac{2\pi ϙ}{h}\vec a\Bigr\rvert^{2}
+\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural
+=\Bigl(2\pi\nu_t'+\frac{ϙ}{h}a_t\Bigr)^{2}-\Bigl\lvert2\pi\vec\nu_\Phi+\frac{ϙ}{h}\vec a\Bigr\rvert^{2}
 =\frac{(2\pi)^{2} p'^{2}}{h^{2}},
 $$
 
-with $\tilde A_\Phi=i a_t e_t+\vec a$, $a_t$ and $\vec a$ real, and $p'=\frac{h}{2\pi}\tilde K_{\Phi,\mathrm{gco}}$ the kinetic four-momentum. The $\frac{h^{2}}{4\pi^{2}}$ is where it belongs: the norm of a wave-number element is an inverse length squared, and $p'^{2}$ is that quantity multiplied by $\frac{h^{2}}{4\pi^{2}}$, so the division restores the wave-number units.
+with $\tilde A_\Phi=i a_t e_t+\vec a$, $a_t$ and $\vec a$ real, and $p'=h\,\tilde\Upsilon_{\Phi,\mathrm{gco}}$ the kinetic four-momentum. The $\frac{h^{2}}{4\pi^{2}}$ is where it belongs: the norm of a wave-number element is an inverse length squared, and $p'^{2}$ is that quantity multiplied by $\frac{h^{2}}{4\pi^{2}}$, so the division restores the wave-number units.
 
 The reason is that a translation cannot change a shape. The norm is one fixed quadratic form of four real numbers. Evaluating it at the translated numbers gives the same form at a new origin: the surface is congruent to the free one, and the congruence is a translation rather than a Lorentz transformation. What follows for the spectrum is the parent's sentence: a uniform scalar potential shifts every level by $ϙA_tc$ and changes no spacing, and no constant potential opens a gap, because a translated hyperboloid has the same radius.
 
-The guard, and why it is needed. The temptation is to write the norm of the sum as the sum of the norms. The check rejects it: over fifty random pairs of momenta and connections the correct identity held with deviation $0.0$, while the additive form $\langle i\tilde K_\Phi\rangle_\natural+\langle\frac{2\pi i\,ϙ}{h}\tilde A_\Phi\rangle_\natural$ deviated by up to $4.2$ in absolute value. **The cross terms are the whole of the difference**, and they are what makes the shift a translation instead of an addition.
+The guard, and why it is needed. The temptation is to write the norm of the sum as the sum of the norms. The check rejects it: over fifty random pairs of momenta and connections the correct identity held with deviation $0.0$, while the additive form $\langle 2\pi i\tilde\Upsilon_\Phi\rangle_\natural+\langle\frac{i\,ϙ}{h}\tilde A_\Phi\rangle_\natural$ deviated by up to $4.2$ in absolute value. **The cross terms are the whole of the difference**, and they are what makes the shift a translation instead of an addition.
 
-The same statement in the momentum variable. With $\tilde P_{\Phi,\mathrm{gco}}=\frac{h}{2\pi}\tilde K_{\Phi,\mathrm{gco}}$ the identity reads $\langle i\tilde P_{\Phi,\mathrm{gco}}\rangle_\natural/\frac{h^{2}}{4\pi^{2}}=p'^{2}/\frac{h^{2}}{4\pi^{2}}$, and the check gave deviation $0.0$: the two writings are one identity and the units carry the factor.
+The same statement in the momentum variable. With $\tilde P_{\Phi,\mathrm{gco}}=h\,\tilde\Upsilon_{\Phi,\mathrm{gco}}$ the identity reads $\langle i\tilde P_{\Phi,\mathrm{gco}}\rangle_\natural/\frac{h^{2}}{4\pi^{2}}=p'^{2}/\frac{h^{2}}{4\pi^{2}}$, and the check gave deviation $0.0$: the two writings are one identity and the units carry the factor.
 
-The clause that must travel with the finding. All of this holds at constant $\tilde A_\Phi$, under the licence stated where the multiplier was first used. For a position-dependent connection there is no $\tilde K_{\Phi,\mathrm{gco}}$ at a point, no single shifted argument, and no norm to evaluate: the operator is a convolution and the statement is empty.
+The clause that must travel with the finding. All of this holds at constant $\tilde A_\Phi$, under the licence stated where the multiplier was first used. For a position-dependent connection there is no $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ at a point, no single shifted argument, and no norm to evaluate: the operator is a convolution and the statement is empty.
 
 ## Limits
 
@@ -164,11 +164,11 @@ One question is left open, and it is about the operator setting. Whether the lad
 
 ## Summary
 
-In momentum space the coupled Dirac operator is the sum of a multiplier and the transform of a multiplication. The multiplier is always present, because the derivative is always a multiplier; the second summand is a multiplier exactly when the connection is constant, which is exactly when its transform is a delta. Under that licence the symbol is $i\tilde K_{\Phi,\mathrm{gco}}=i(\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi)$, Hermitian in every entry because both summands are Hermitian, with the temporal slot $+ik_t'$ fixed by $\partial/\partial R_t=-i\partial/\partial r_t'$.
+In momentum space the coupled Dirac operator is the sum of a multiplier and the transform of a multiplication. The multiplier is always present, because the derivative is always a multiplier; the second summand is a multiplier exactly when the connection is constant, which is exactly when its transform is a delta. Under that licence the symbol is $2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}=i(\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi)$, Hermitian in every entry because both summands are Hermitian, with the temporal slot $+ik_t'$ fixed by $\partial/\partial R_t=-i\partial/\partial r_t'$.
 
 The ladder of orders is the article's finding. A profile of degree $d$ gives an operator of order $d$: the linear bench fitted to $1.38\times10^{-16}$ with order one and failed by $4.13\times10^{-1}$ with order zero, the quadratic bench fitted to $2.35\times10^{-16}$ with order two and failed by $1.99\times10^{-1}$ with order one. The linear bench is the first rung that no gauge can remove, because a linear connection with a constant field strength is not a gradient, and its curvature was $0.9$ against $0.0$ for a constant connection.
 
-The shift of the wave number is a translation. At constant $\tilde A_\Phi$ the norm is $\langle i\tilde K_{\Phi,\mathrm{gco}}\rangle_\natural=p'^{2}/\frac{h^{2}}{4\pi^{2}}$, exact over fifty draws, while the additive form of the same quantity deviated by up to $4.2$. Gauge invariance is a translation in momentum space when the gauge phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ is linear — one mode in, one mode out, residual $4.3\times10^{-15}$ — and a convolution when it is not, where one mode became one hundred and twenty-eight.
+The shift of the wave number is a translation. At constant $\tilde A_\Phi$ the norm is $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'^{2}/\frac{h^{2}}{4\pi^{2}}$, exact over fifty draws, while the additive form of the same quantity deviated by up to $4.2$. Gauge invariance is a translation in momentum space when the gauge phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ is linear — one mode in, one mode out, residual $4.3\times10^{-15}$ — and a convolution when it is not, where one mode became one hundred and twenty-eight.
 
 ## Summary of Notation
 
@@ -176,10 +176,10 @@ The shift of the wave number is a translation. At constant $\tilde A_\Phi$ the n
 | --- | --- |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ | The parent's covariant derivative |
 | $\tilde A_\Phi=i a_t e_t+\vec a$ | The connection in the material sector; $a_t$, $\vec a$ real |
-| $i\tilde K_\Phi$, $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The symbol of the gradient; temporal slot $+ik_t'$ |
-| $i\tilde K_{\Phi,\mathrm{gco}}=i(\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi)$ | The symbol of the coupled derivative |
-| $p'=\frac{h}{2\pi}\tilde K_{\Phi,\mathrm{gco}}$ | The kinetic four-momentum |
-| $\langle i\tilde K_{\Phi,\mathrm{gco}}\rangle_\natural=p'^{2}/\frac{h^{2}}{4\pi^{2}}$ | The norm of the shifted symbol; the interval at the shifted argument |
+| $2\pi i\tilde\Upsilon_\Phi$, $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The symbol of the gradient; temporal slot $+ik_t'$ |
+| $2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}=i(\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi)$ | The symbol of the coupled derivative |
+| $p'=h\,\tilde\Upsilon_{\Phi,\mathrm{gco}}$ | The kinetic four-momentum |
+| $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'^{2}/\frac{h^{2}}{4\pi^{2}}$ | The norm of the shifted symbol; the interval at the shifted argument |
 | $d$ | The degree of the connection's profile; the order of its momentum-space operator |
 | $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ | The gauge angle |
 | $\mathcal{F}[fg]=\mathcal{F}[f]*\mathcal{F}[g]$ | The convolution theorem; cited from *Biquaternion Continuous Harmonic Analysis* |

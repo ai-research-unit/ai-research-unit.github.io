@@ -14,12 +14,12 @@ The plan. Admission is refused as a goal, and the imported classification is sta
 
 The algebra is eight-dimensional over $\mathbb{R}$ and four over $\mathbb{C}$. $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$, each sector of four real dimensions; the coefficients are complex, so $\dim_{\mathbb{C}}\mathbb{B}=4$ and $\dim_{\mathbb{R}}\mathbb{B}=8$. The real dimension is the one that matters for dilation counting below.
 
-**A state map is an affine map of the ball.** Write a state as $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$; a channel acts by $\vec s_{\Psi}\mapsto M\vec s_{\Psi}+\vec t$ with $M$ real $3\times3$ and $\vec t\in\mathbb{R}^{3}$, and complete positivity is a condition on the Choi matrix, the $4\times4$ matrix $\mathsf C=\sum_l\mathrm{vec}(\tilde K_l)\mathrm{vec}(\tilde K_l)^{\dagger}$ assembled from the Kraus operators. Everything in this paragraph is standard, it holds for $M_2(\mathbb{C})$, and it holds therefore for $\mathbb{B}$ with no change of statement.
+**A state map is an affine map of the ball.** Write a state as $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$; a channel acts by $\vec s_{\Psi}\mapsto M\vec s_{\Psi}+\vec t$ with $M$ real $3\times3$ and $\vec t\in\mathbb{R}^{3}$, and complete positivity is a condition on the Choi matrix, the $4\times4$ matrix $\mathsf C=\sum_l\mathrm{vec}(\tilde\Upsilon_l)\mathrm{vec}(\tilde\Upsilon_l)^{\dagger}$ assembled from the Kraus operators. Everything in this paragraph is standard, it holds for $M_2(\mathbb{C})$, and it holds therefore for $\mathbb{B}$ with no change of statement.
 
 Two conditions run alongside trace preservation, and they bound the affine data.
 
-- Trace preservation, $\sum_l\tilde K_l^{*}\tilde K_l=e_t$, keeps a state a state.
-- Unitality, $\sum_l\tilde K_l\tilde K_l^{*}=e_t$, keeps the centre fixed.
+- Trace preservation, $\sum_l\tilde\Upsilon_l^{*}\tilde\Upsilon_l=e_t$, keeps a state a state.
+- Unitality, $\sum_l\tilde\Upsilon_l\tilde\Upsilon_l^{*}=e_t$, keeps the centre fixed.
 
 The second is not implied by the first, and the pair is the dividing line the rest of the article uses. Dephasing satisfies both; amplitude damping satisfies only the first. Verified on the canonical Kraus sets: dephasing with $\{\sqrt{\tfrac12}e_t,\sqrt{\tfrac12}\vec e_z\}$ is trace-preserving and unital; amplitude damping is trace-preserving and not unital.
 
@@ -29,7 +29,7 @@ The classification is imported whole, and the article does not improve it. What 
 
 **$\mathbb{B}$ is simple, and that is the whole reason a channel cannot live inside it.** A nonzero algebra endomorphism of a simple algebra is injective, because its kernel is a two-sided ideal; an injective endomorphism of a finite-dimensional algebra is surjective; and a unital automorphism of $M_2(\mathbb{C})$ is inner by Skolem–Noether. So every unital multiplicative map is a conjugation.
 
-A conjugation has one Kraus operator, and trace preservation then forces it to be unitary. With $\mathcal E(\tilde Q)=\tilde U\tilde Q\tilde U^{*}$ the Kraus sum has the single term $\tilde K=\tilde U$, and $\tilde K^{*}\tilde K=e_t$ is exactly the unit-norm condition. A completely positive map that is multiplicative is a $*$-homomorphism, so the chain closes in both directions:
+A conjugation has one Kraus operator, and trace preservation then forces it to be unitary. With $\mathcal E(\tilde Q)=\tilde U\tilde Q\tilde U^{*}$ the Kraus sum has the single term $\tilde\Upsilon=\tilde U$, and $\tilde\Upsilon^{*}\tilde\Upsilon=e_t$ is exactly the unit-norm condition. A completely positive map that is multiplicative is a $*$-homomorphism, so the chain closes in both directions:
 
 $$
 \text{multiplicative}\iff\text{Choi rank }1\iff\text{conjugation by a unit}\iff N\text{ preserved}.
@@ -152,10 +152,10 @@ The Choi rank is the price: $1$ for a conjugation and $8$ real dimensions, $2$ f
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | State, with Bloch vector $\vec s_{\Psi}$ |
 | $N=\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$ | Quaternionic norm of the state |
 | $M,\vec t$ | Affine data of a channel, $\vec s_{\Psi}\mapsto M\vec s_{\Psi}+\vec t$ |
-| $\mathsf C=\sum_l\mathrm{vec}(\tilde K_l)\mathrm{vec}(\tilde K_l)^{\dagger}$ | Choi matrix |
+| $\mathsf C=\sum_l\mathrm{vec}(\tilde\Upsilon_l)\mathrm{vec}(\tilde\Upsilon_l)^{\dagger}$ | Choi matrix |
 | $\operatorname{rank}\mathsf C$ | Choi rank: minimal Kraus number, minimal environment dimension |
-| $\sum_l\tilde K_l^{*}\tilde K_l=e_t$ | Trace preservation |
-| $\sum_l\tilde K_l\tilde K_l^{*}=e_t$ | Unitality: the centre is fixed |
+| $\sum_l\tilde\Upsilon_l^{*}\tilde\Upsilon_l=e_t$ | Trace preservation |
+| $\sum_l\tilde\Upsilon_l\tilde\Upsilon_l^{*}=e_t$ | Unitality: the centre is fixed |
 | $\mathcal E_\lambda(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)e_t$ | The covariant family; $\vec s_{\Psi}\mapsto(1-\lambda)\vec s_{\Psi}$ |
 | $\Phi_c$ with $c=1-\lambda$ | The same family in depolarising form |
 | $\tfrac12(1+3c)$, $\tfrac12(1-c)$ | Choi eigenvalues of $\Phi_c$, once and three times |

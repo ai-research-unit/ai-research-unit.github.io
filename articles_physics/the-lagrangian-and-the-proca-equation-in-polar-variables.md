@@ -7,7 +7,7 @@ This article substitutes the polar word of the material sector into the Proca ac
 The substitution. The element-form action is
 
 $$
-S[\tilde A_\Phi]=\int d^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^2\,\langle\tilde A_\Phi\rangle_\natural\Bigr],
+S[\tilde A_\Phi]=\int d^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^2\,\langle\tilde A_\Phi\rangle_\natural\Bigr],
 $$
 
 and the word of the material sector is piecewise,
@@ -34,8 +34,8 @@ $$
 and the mass term is a pure power of the modulus,
 
 $$
--\tfrac12\,k_m^2\langle\tilde A_\Phi\rangle_\natural=
-\begin{cases}+\tfrac12\,k_m^2\,\varrho^2, & \text{timelike},\\[2pt] -\tfrac12\,k_m^2\,\varrho^2, & \text{spacelike}.\end{cases}
+-\tfrac12\,4\pi^{2}\nu_m^2\langle\tilde A_\Phi\rangle_\natural=
+\begin{cases}+\tfrac12\,4\pi^{2}\nu_m^2\,\varrho^2, & \text{timelike},\\[2pt] -\tfrac12\,4\pi^{2}\nu_m^2\,\varrho^2, & \text{spacelike}.\end{cases}
 $$
 
 The sign of the mass term in the chart is the branch: it is the causal character of the four-vector, read as the sign of the term. This is the article's cleanest new statement.
@@ -46,11 +46,11 @@ The sign of the mass term in the chart is the branch: it is the causal character
 
 What is at stake in the contrast. The Schrödinger polar article's action is first order in the time derivative, and its momenta vanish identically, so six of the eight are constraints and the closure needs Dirac analysis. The Proca action is second order, its Hessian has rank three out of four, and its single constraint is the standard one of a massive vector field. So the two polar variational principles are not the same kind of object, and the difference is the order of the Lagrangian, not the algebra.
 
-The conventions are those of the two companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with central $i$; the material sector $\mathbb{B}_\Phi$ anti-Hermitian; $\mathrm{Sc}$ the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ the quaternionic norm, real on $\mathbb{B}_\Phi$; $\partial/\partial R_t=-i\,\partial/\partial r'_t$; $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; $k_m=\frac{2\pi mc}{h}$.
+The conventions are those of the two companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with central $i$; the material sector $\mathbb{B}_\Phi$ anti-Hermitian; $\mathrm{Sc}$ the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ the quaternionic norm, real on $\mathbb{B}_\Phi$; $\partial/\partial R_t=-i\,\partial/\partial r'_t$; $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; $\nu_m=\frac{mc}{h}$.
 
 ## Conventions
 
-The conventions are the corpus's, restated here for the chart. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\varrho>0$ is the scale, $\theta_{\mathrm{rpd}}\ge0$ the rapidity and $\hat u_{\mathrm b}$ the boost axis, so that $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ on the branch. The measure is $\mathrm{d}^4r$, the pairing is $\mathrm{Sc}(\cdot)$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term, $k_m=\frac{2\pi mc}{h}$, and the chart's velocities are the material-time derivatives. The branch is the timelike one; the spacelike branch is named where it matters and is not followed here.
+The conventions are the corpus's, restated here for the chart. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\varrho>0$ is the scale, $\theta_{\mathrm{rpd}}\ge0$ the rapidity and $\hat u_{\mathrm b}$ the boost axis, so that $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ on the branch. The measure is $\mathrm{d}^4r$, the pairing is $\mathrm{Sc}(\cdot)$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term, $\nu_m=\frac{mc}{h}$, and the chart's velocities are the material-time derivatives. The branch is the timelike one; the spacelike branch is named where it matters and is not followed here.
 
 ## The Action in Polar Variables
 
@@ -71,8 +71,8 @@ and the field term is the full quadratic minus the scalar square. The subtractio
 The mass term. On the timelike branch the norm is $-\varrho^2$, because $(\varepsilon i\varrho\tilde U)(\varepsilon i\varrho\tilde U)^{\natural}=\varepsilon^2i^2\varrho^2\tilde U\tilde U^{\natural}=-\varrho^2$; on the spacelike branch it is $+\varrho^2$, because $(\varrho\tilde U\hat u)(\varrho\tilde U\hat u)^{\natural}=\varrho^2\tilde U\hat u\hat u^{\natural}\tilde U^{\natural}=\varrho^2\tilde U(-\hat u)(-\hat u)\tilde U^{\natural}=\varrho^2$. Hence
 
 $$
--\tfrac12k_m^2\langle\tilde A_\Phi\rangle_\natural=
-\begin{cases}+\tfrac12k_m^2\varrho^2, & \text{timelike},\\[2pt]-\tfrac12k_m^2\varrho^2, & \text{spacelike}.\end{cases}
+-\tfrac124\pi^{2}\nu_m^2\langle\tilde A_\Phi\rangle_\natural=
+\begin{cases}+\tfrac124\pi^{2}\nu_m^2\varrho^2, & \text{timelike},\\[2pt]-\tfrac124\pi^{2}\nu_m^2\varrho^2, & \text{spacelike}.\end{cases}
 $$
 
 The sign is the branch. In the element form the mass term is indefinite, because $\langle\tilde A_\Phi\rangle_\natural$ is indefinite. In the chart it becomes a definite power of one positive parameter, and its sign is a property of the branch. For a timelike field the scale enters the Lagrangian with the sign of a positive mass term and the scale equation has the standard massive form; for a spacelike field the sign is reversed. Nothing in the element form displays this, because nothing in the element form distinguishes the two branches.
@@ -80,20 +80,20 @@ The sign is the branch. In the element form the mass term is indefinite, because
 The polar Lagrangian. Collecting the two pieces,
 
 $$
-\boxed{\;\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^2\Bigr]-\tfrac12S^2-\tfrac12k_m^2\langle\tilde A_\Phi\rangle_\natural\;}
+\boxed{\;\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^2\Bigr]-\tfrac12S^2-\tfrac124\pi^{2}\nu_m^2\langle\tilde A_\Phi\rangle_\natural\;}
 $$
 
 with the last term read from the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass. The middle piece is not a gauge-fixing term added by hand: it is what the projection removes, and it is present in the element form already, hidden inside $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$. In the chart it is displayed, and displayed is where its rôle can be read: its variation is what produces the Lorenz condition as an equation.
 
 The parameters. On the timelike branch the field is $\tilde A_\Phi(q)$ with $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ and the two angles parametrizing $\hat u_{\mathrm b}$; the discrete $\varepsilon$ is not varied, because it is a label and not a coordinate. On the spacelike branch $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ with the angles those of $\hat u$. In both cases four.
 
-The pairing. Inherited, and the substitution cannot disturb it. The parent pairs with $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ — the field term's reality is the explicit $\mathrm{Re}$ — and with $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ for the mass. The chart writes $\tilde A_\Phi=\varrho\,u$ with $u$ a unit element, and the mass term becomes $\tfrac12k_m^{2}\varrho^{2}$, real. The field term's $\mathrm{Re}$ still does its work: the chart's $\varrho$ is real, so the term is the real part of a product of real multiples of $\tilde F(u)\tilde F(u)$.
+The pairing. Inherited, and the substitution cannot disturb it. The parent pairs with $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ — the field term's reality is the explicit $\mathrm{Re}$ — and with $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ for the mass. The chart writes $\tilde A_\Phi=\varrho\,u$ with $u$ a unit element, and the mass term becomes $\tfrac12\nu_m^{2}\varrho^{2}$, real. The field term's $\mathrm{Re}$ still does its work: the chart's $\varrho$ is real, so the term is the real part of a product of real multiples of $\tilde F(u)\tilde F(u)$.
 
-The type of the coefficient. The mass, and the constraint is not a coefficient. $k_m^{2}$ is real, and the chart shows the mass as a square of the density. The other coefficient the Proca action appears to carry — the one that would fix the Lorenz condition — is not in the action at all; it is a consequence, and *The Constraints the Action Imposes* is where it is read.
+The type of the coefficient. The mass, and the constraint is not a coefficient. $\nu_m^{2}$ is real, and the chart shows the mass as a square of the density. The other coefficient the Proca action appears to carry — the one that would fix the Lorenz condition — is not in the action at all; it is a consequence, and *The Constraints the Action Imposes* is where it is read.
 
 The selection rule. Declared, and there is nothing to select. The Proca action has no free potential, so no admissible-variation question arises. The condition that removes the scalar polarisation is a constraint from the action's own variation, which is a different object from a selection rule on potentials.
 
-**What reality does not buy. Reality does not remove the constraint and does not sign the energy.** A real Proca density is compatible with any sign of $k_m^{2}$ and with the Lorenz condition or its absence. The constraint belongs to *The Constraints the Action Imposes* and the sign of the four polarisations' energies to *The Noether Currents*.
+**What reality does not buy. Reality does not remove the constraint and does not sign the energy.** A real Proca density is compatible with any sign of $\nu_m^{2}$ and with the Lorenz condition or its absence. The constraint belongs to *The Constraints the Action Imposes* and the sign of the four polarisations' energies to *The Noether Currents*.
 
 ## The Variation: The Euler–Lagrange Equations
 
@@ -110,7 +110,7 @@ The singularity bounds the argument, and it is the chart's. On the timelike bran
 The explicit form. Performing the differentiation gives the two displays of the polar article. The scalar part of the transformed equation is
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0,
+\bigl(\Box_\Phi-4\pi^{2}\nu_m^2\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^2\bigr)=0,
 \qquad
 \Gamma_{\imath}=\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_{\imath}},
 $$
@@ -127,12 +127,12 @@ the subtraction of $\mathrm{Sc}(\Gamma_{\imath}^2)$ being what makes the display
 Both are exactly the equations that the direct substitution of the word into the field equation gives, which is the content of the change-of-variables argument: the variational route and the substitution route are the same route. For a fixed boost axis the pair reduces to
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\tfrac14\varrho\sum_{\imath}\Bigl(\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}\Bigr)^2=0,
+\bigl(\Box_\Phi-4\pi^{2}\nu_m^2\bigr)\varrho+\tfrac14\varrho\sum_{\imath}\Bigl(\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}\Bigr)^2=0,
 \qquad
 \sum_{\imath}\frac{\partial}{\partial R_{\imath}}\Bigl(\varrho^2\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_{\imath}}\Bigr)=0 ,
 $$
 
-which is the form the polar article verifies numerically. The mass term enters the first with the sign $+k_m^2\varrho$ on the timelike branch, as the branch's sign of the mass term requires.
+which is the form the polar article verifies numerically. The mass term enters the first with the sign $+\nu_m^2\varrho$ on the timelike branch, as the branch's sign of the mass term requires.
 
 What the variation of the middle piece does. The term $-\tfrac12S^2$ is the only piece that pairs the scalar projection with itself. Its variation produces the scalar equation that is the Lorenz condition, and the remaining pieces produce the two dynamical equations. In this sense the chart separates the three jobs that the element form performs at once: the curl term carries the propagation, the square carries the constraint, and the mass carries the scale. The separation is a rewriting, but it is a rewriting that names each job.
 
@@ -147,7 +147,7 @@ real scalar, central imaginary, Hermitian and real vector. The brackets are a pr
 
 Why the Proca action keeps more of them than the scalar action. The scalar action's bilinear $\tilde\Xi^{*}\tilde\Xi$ is one Hermitian object, so only the matching types survive. The Proca action is built from the square of the conjugate gradient, and a square pairs the scalar part with the scalar part and the vector part with the vector part while retaining the cross term between them. The full quadratic form of the conjugate gradient is therefore in the Lagrangian, and the antisymmetric combination it retains is the object whose variation gives the Lorenz condition. The middle piece $-\tfrac12S^{2}$ is that cross term, and it is what the element form's projection removes.
 
-The branch is not a bracket. The chart is a diffeomorphism onto one branch at a time, and the two branches -- timelike and spacelike -- differ by the sign of the mass term, $+\tfrac12k_m^{2}\varrho^{2}$ and $-\tfrac12k_m^{2}\varrho^{2}$. The four brackets are identical on the two branches; what changes is the algebraic mass term, which carries no derivative and therefore no bracket. This is the reason the bracket analysis of this article is branch-independent and the constraint analysis is not.
+The branch is not a bracket. The chart is a diffeomorphism onto one branch at a time, and the two branches -- timelike and spacelike -- differ by the sign of the mass term, $+\tfrac12\nu_m^{2}\varrho^{2}$ and $-\tfrac12\nu_m^{2}\varrho^{2}$. The four brackets are identical on the two branches; what changes is the algebraic mass term, which carries no derivative and therefore no bracket. This is the reason the bracket analysis of this article is branch-independent and the constraint analysis is not.
 
 The parameter basis is not the bracket basis. The eight parameters are coordinates, the four brackets are types, and the Jacobian between them mixes: the rapidity's derivative carries part of the scale bracket, the rotor's derivative part of the boost bracket. The parameter equations are the same equations in a rotated basis and the brackets are the cleaner form, because each has one type and one partner.
 
@@ -199,7 +199,7 @@ Why the Schrödinger case differs. There the Lagrangian is linear in $\dot\theta
 
 The reconstruction is exact on a branch. The chart is a diffeomorphism from the parameter domain onto one branch of the material sector's N-regular set, so the word can be inverted there: the two norms give $\varrho$ and $\theta_{\mathrm{rpd}}$, the direction gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$. The inverse is the bijection read backwards and adds nothing to the action.
 
-**The branch is an input and not an output.** This is the article's central qualification. The two branches differ by the sign of the algebraic mass term, $+\tfrac12k_m^{2}\varrho^{2}$ on the timelike one and $-\tfrac12k_m^{2}\varrho^{2}$ on the spacelike one, and **that sign is not a function of the eight parameters**. The chart is a chart on one branch; to move to the other the reader changes a discrete datum first and reconstructs afterwards. A reconstruction that claimed to recover the branch from the parameters would be claiming to recover a sign from a magnitude, and it cannot.
+**The branch is an input and not an output.** This is the article's central qualification. The two branches differ by the sign of the algebraic mass term, $+\tfrac12\nu_m^{2}\varrho^{2}$ on the timelike one and $-\tfrac12\nu_m^{2}\varrho^{2}$ on the spacelike one, and **that sign is not a function of the eight parameters**. The chart is a chart on one branch; to move to the other the reader changes a discrete datum first and reconstructs afterwards. A reconstruction that claimed to recover the branch from the parameters would be claiming to recover a sign from a magnitude, and it cannot.
 
 The scale's limit. $\varrho>0$ excludes the zero element, so a field that reaches $\varrho=0$ leaves the chart. For the Proca field that is not a pathology but a boundary: the mass shell's two branches meet only through the origin, and the origin is excluded.
 
@@ -211,7 +211,7 @@ What the reconstruction does not give. The flow. The bijection makes the variati
 
 **One current and not two.** The free Proca field has no phase symmetry, and the article's element companion proves it: the potential is real on the material sector, so a central phase rotation is not a symmetry of the action but a complexification, and the Noether procedure returns nothing. The chart inherits the verdict, and it is worth stating in the chart because the chart is where a reader expects a density.
 
-The stress. Translation invariance gives the canonical energy–momentum tensor, and in the chart it is the object whose components are the energy density $\tfrac12(\epsilon\vec E^{2}+\vec B^{2}/\mu+k_m^{2}\lvert\vec A\rvert^{2})$ and the Poynting flux. Both are read off the Lagrangian of the chart with the standard formula, and neither needs the phase.
+The stress. Translation invariance gives the canonical energy–momentum tensor, and in the chart it is the object whose components are the energy density $\tfrac12(\epsilon\vec E^{2}+\vec B^{2}/\mu+\nu_m^{2}\lvert\vec A\rvert^{2})$ and the Poynting flux. Both are read off the Lagrangian of the chart with the standard formula, and neither needs the phase.
 
 What the absence means. The parameter that would carry a charge is $\theta_{\mathrm{pha}}$, and the chart's Lagrangian does not contain it: the word for the Proca field is real, $\theta_{\mathrm{pha}}=0$ is not a variable of the branch, and the mass term is $\varrho^{2}R$. So the chart has seven parameters and not eight on the physical branch, and the missing one is the one that would have carried a conserved charge. That is the chart's statement of "no second current", and it agrees with the element form's.
 
@@ -247,10 +247,10 @@ The constraint analysis in the chart. The rank-three Hessian and the second-clas
 Substituting the polar word of the material sector into the Proca action gives
 
 $$
-\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^2\Bigr]-\tfrac12S^2-\tfrac12k_m^2\langle\tilde A_\Phi\rangle_\natural ,
+\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^2\Bigr]-\tfrac12S^2-\tfrac124\pi^{2}\nu_m^2\langle\tilde A_\Phi\rangle_\natural ,
 $$
 
-with the mass term $+\tfrac12k_m^2\varrho^2$ on the timelike branch and $-\tfrac12k_m^2\varrho^2$ on the spacelike one: the sign of the mass term is the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass; the middle piece is what the element form's projection removes, and its variation carries the Lorenz condition.
+with the mass term $+\tfrac12\nu_m^2\varrho^2$ on the timelike branch and $-\tfrac12\nu_m^2\varrho^2$ on the spacelike one: the sign of the mass term is the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass; the middle piece is what the element form's projection removes, and its variation carries the Lorenz condition.
 
 The chart is a diffeomorphism onto the branch, so its Euler–Lagrange equations are the transformed field equation: the scale equation with the frame's quadratic source and the frame transport, which is what the polar article's direct substitution gives. The chart needs no Lagrange multiplier for the normalization of the boost, in contrast with the tensor formulation of the spin-$\tfrac12$ field, whose multipliers belong to its unit spin direction and its unit velocity — but it does not remove the vector field's own constraints: the Hessian has rank three, its null direction is the scalar potential at fixed vector potential, and the Lorenz condition is the secondary constraint. Four parameters, four equations, three physical parameters on shell.
 
@@ -272,7 +272,7 @@ The chart is a diffeomorphism onto the branch, so its Euler–Lagrange equations
 | $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | Lorenz scalar |
 | $\mathcal{L}$ | Lagrangian density in the chart |
 | $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$ | d'Alembertian of the corpus |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 
 ## Further Reading
 

@@ -2,14 +2,14 @@
 
 ## Introduction
 
-This article writes the biquaternionic Dirac equation in the polar variables. The word keeps all four factors: the boost and the rotor are both non-trivial, and the equation does not close to two equations. The logarithmic derivative separates into four coupled brackets — scale, phase, boost connection, rotor connection — which the equation constrains and does not close. Those four brackets are the spin-half-fluid equations — continuity, guidance, velocity transport, spin transport — and they are the biquaternionic form of the spin-half fluid of Takabayasi and Holland, not the two-equation Madelung fluid of the scalar case. What the word settles exactly is the plane-wave case: the momentum is the phase gradient, $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$; the velocity is the boost, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$; the mass term is the four-vector factor, $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$; and the mass shell is the frame's unitarity, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$. The current is $\rho_{\mathrm{num}}\tilde V_{\Phi}$ and the spin is $\rho_{\mathrm{num}}(\frac{h}{2\pi 2})i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$: the current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the phase. The general solution in free space is the Fourier superposition of plane-wave modes, and the word re-reads each mode. What the word fails on is the $N$-degenerate set, which is strictly larger than the nodal set. The sign $\varepsilon=\mathrm{Sc}\,\tilde\Xi/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is computed from the two angles and not chosen, and it equals $\pm1$ exactly on the spectrally degenerate sector $\Sigma_{10}$, where the rigidity constraint $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$ ties them.
+This article writes the biquaternionic Dirac equation in the polar variables. The word keeps all four factors: the boost and the rotor are both non-trivial, and the equation does not close to two equations. The logarithmic derivative separates into four coupled brackets — scale, phase, boost connection, rotor connection — which the equation constrains and does not close. Those four brackets are the spin-half-fluid equations — continuity, guidance, velocity transport, spin transport — and they are the biquaternionic form of the spin-half fluid of Takabayasi and Holland, not the two-equation Madelung fluid of the scalar case. What the word settles exactly is the plane-wave case: the momentum is the phase gradient, $\tilde\Upsilon_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$; the velocity is the boost, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$; the mass term is the four-vector factor, $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$; and the mass shell is the frame's unitarity, $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$. The current is $\rho_{\mathrm{num}}\tilde V_{\Phi}$ and the spin is $\rho_{\mathrm{num}}(\frac{h}{2\pi 2})i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$: the current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the phase. The general solution in free space is the Fourier superposition of plane-wave modes, and the word re-reads each mode. What the word fails on is the $N$-degenerate set, which is strictly larger than the nodal set. The sign $\varepsilon=\mathrm{Sc}\,\tilde\Xi/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is computed from the two angles and not chosen, and it equals $\pm1$ exactly on the spectrally degenerate sector $\Sigma_{10}$, where the rigidity constraint $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$ ties them.
 
 The Dirac equation of this corpus is one element of $\mathbb{B}$ acting on another by left multiplication. *The Dirac Equation in Biquaternionic Form* writes it as the chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_{R}=k_m\,\tilde\Xi_{L},
+\tilde\nabla_\Phi\tilde\Xi_{R}=2\pi\nu_m\,\tilde\Xi_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_m\,\tilde\Xi_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=2\pi\nu_m\,\tilde\Xi_{R},
 $$
 
 and the same article states what the pair does not need: no column, no anticommuting array, no separate state space, no Peirce decomposition, no chiral projector, no Clifford algebra, no second-order equation. The minimal left ideal is not on that list: the idempotent is a polynomial in the frame's third unit, so the ideal is a carrier and not a definition. The field is the element, the operator is the element, and the multiplication is the algebra's own. The subscript `sp` is the corpus's caret for the spinor role, beside `scl` for the scalar role and `fop` for the field operator, as the caret table of *Algebra and Element Conventions* fixes it.
@@ -69,7 +69,7 @@ The last item repays care, and it is stated in §*Where the Word Ends*.
 
 The field is one element $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ of $\mathbb{B}$. It carries four complex coefficients, that is eight real numbers. The two subscripts name two parts of that one element.
 
-They do not name two values. The value is a letter returned by one multiplication, $\tilde X\vec e_z=-i\tilde X$ for $L$ and $\tilde X\vec e_z=+i\tilde X$ for $R$, and the parent article fixes that the letters of the pair name the two **factors** of the factorisation $\tilde\Xi_{L}=\frac{i}{k_m}\tilde K_{\Phi}\tilde\Xi_{R}$ and not the two values. The polar form gives that ruling a second reason, and the reason is one of domain.
+They do not name two values. The value is a letter returned by one multiplication, $\tilde X\vec e_z=-i\tilde X$ for $L$ and $\tilde X\vec e_z=+i\tilde X$ for $R$, and the parent article fixes that the letters of the pair name the two **factors** of the factorisation $\tilde\Xi_{L}=\frac{i}{2\pi\nu_m}\tilde\Upsilon_{\Phi}\tilde\Xi_{R}$ and not the two values. The polar form gives that ruling a second reason, and the reason is one of domain.
 
 *Proposition.* Let $\tilde X\neq0$ carry a definite value, that is $\tilde X\vec e_z=-i\tilde X$ or $\tilde X\vec e_z=+i\tilde X$. Then $N(\tilde X)=0$.
 
@@ -169,14 +169,14 @@ The two norms read different things, and the whole of the physics of the density
 
 ### The Pair
 
-The equation is the chiral pair of the introduction. For a plane wave the field is $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}=\vec k_\Phi\cdot\vec r-k_{t}^{\prime}r'_t$, the gradient acts as left multiplication by $i\tilde K_{\Phi}$ and its conjugate as left multiplication by $i\tilde K_{\Phi}^{\natural}$, and the pair becomes the momentum-space system
+The equation is the chiral pair of the introduction. For a plane wave the field is $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}=2\pi\vec\nu_\Phi\cdot\vec r-2\pi\nu_t^{\prime}r'_t$, the gradient acts as left multiplication by $2\pi i\tilde\Upsilon_{\Phi}$ and its conjugate as left multiplication by $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$, and the pair becomes the momentum-space system
 
 $$
-i\tilde K_{\Phi}\tilde\Xi_{0}^{R}=k_m\tilde\Xi_{0}^{L},
+2\pi i\tilde\Upsilon_{\Phi}\tilde\Xi_{0}^{R}=2\pi\nu_m\tilde\Xi_{0}^{L},
 \qquad
-i\tilde K_{\Phi}^{\natural}\tilde\Xi_{0}^{L}=k_m\tilde\Xi_{0}^{R},
+2\pi i\tilde\Upsilon_{\Phi}^{\natural}\tilde\Xi_{0}^{L}=2\pi\nu_m\tilde\Xi_{0}^{R},
 \qquad
-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2},
+\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-4\pi^{2}\nu_m^{2},
 $$
 
 which the parent derives. Nothing in this section is new: the three relations are the parent's, and the polar form says only what the quantities in them are.
@@ -220,8 +220,8 @@ $$
 \tilde\nabla_\Phi\theta_{\mathrm{pha}}
 =e_t\frac{\partial\theta_{\mathrm{pha}}}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\eta}
 =-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}e_t+\vec\nabla_\Phi\theta_{\mathrm{pha}}
-=i\frac{2\pi E}{h c}e_t+\frac{2\pi \vec p}{h}
-=\tilde K_{\Phi},
+=i\frac{E}{h c}e_t+\frac{\vec p}{h}
+=\tilde\Upsilon_{\Phi},
 $$
 
 with $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ and $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$. The temporal slot of the gradient is $-i\partial\theta_{\mathrm{pha}}/\partial r'_t$ and the temporal slot of the wavevector is $\frac{2\pi iE}{h\,c}$, so the two match slot by slot and no factor is inserted by hand. The factor $c$ is the algebra's own statement: $r'_t$ is a length, so a derivative in $r'_t$ is a rate over a length, and an energy is a rate times an action.
@@ -258,20 +258,20 @@ because the natural conjugation inverts an invertible element. The four-velocity
 
 ### The Mass Term Is the Four-Vector Factor
 
-The mass term of the pair is off-diagonal in the parts, and in polar variables the operator that relates the parts is not a number. Substituting $\tilde K_{\Phi}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ into the first line of the momentum-space system gives
+The mass term of the pair is off-diagonal in the parts, and in polar variables the operator that relates the parts is not a number. Substituting $\tilde\Upsilon_{\Phi}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ into the first line of the momentum-space system gives
 
 $$
 \boxed{\;\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\,\tilde\Xi_{0}^{R},
 \qquad \mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}\;}
 $$
 
-and the second line is then satisfied identically, since $i\tilde K_{\Phi}^{\natural}\tilde\Xi_{0}^{L}=i\,ik_m\tilde U_{\Psi,\mathrm b}^{2}(-\mathcal B_{\Psi}\tilde\Xi_{0}^{R})=k_m\tilde\Xi_{0}^{R}$, the natural conjugation leaving the central $i$ alone and inverting an invertible element.
+and the second line is then satisfied identically, since $2\pi i\tilde\Upsilon_{\Phi}^{\natural}\tilde\Xi_{0}^{L}=i\,2\pi i\nu_m\tilde U_{\Psi,\mathrm b}^{2}(-\mathcal B_{\Psi}\tilde\Xi_{0}^{R})=2\pi\nu_m\tilde\Xi_{0}^{R}$, the natural conjugation leaving the central $i$ alone and inverting an invertible element.
 
-**What the display says.** The relation between the two parts carries no $k_m$. The scalar cancels against the momentum it multiplies, and what is left is the frame factor, $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$. In this chart the mass term is an operator on the parts and not a number written in front of them, and the operator is the four-vector factor that the velocity also carries.
+**What the display says.** The relation between the two parts carries no $\nu_m$. The scalar cancels against the momentum it multiplies, and what is left is the frame factor, $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$. In this chart the mass term is an operator on the parts and not a number written in front of them, and the operator is the four-vector factor that the velocity also carries.
 
-**The scale is not lost with it.** It sits in the momentum, $\tilde K_{\Phi}=ik_m\mathcal B_{\Psi}$, and $\mathcal B_{\Psi}$ has unit natural norm, so $k_m$ is exactly the norm of $\tilde K_{\Phi}$ and nothing besides. The two readings are one identity: the coefficient and the frame factor are interchangeable because the frame factor carries no amplitude.
+**The scale is not lost with it.** It sits in the momentum, $\tilde\Upsilon_{\Phi}=i\nu_m\mathcal B_{\Psi}$, and $\mathcal B_{\Psi}$ has unit natural norm, so $\nu_m$ is exactly the norm of $\tilde\Upsilon_{\Phi}$ and nothing besides. The two readings are one identity: the coefficient and the frame factor are interchangeable because the frame factor carries no amplitude.
 
-**The standard reading, and what this adds.** In the standard Dirac theory the mass is a scalar coupling the two chiral parts, and the coupling is the same in every frame because the scalar is invariant. Nothing here denies that. What the chart adds is where the scalar goes in a moving frame: the rest-frame sign is carried along by the boost, and the momentum already carries the same boost, so the pair relation divides it out. The sentence that the mass **is** a frame factor is a statement about the chart and not a claim that the mass depends on the frame. The strongest objection is exactly that one, that a frame factor would make an invariant frame-dependent, and the answer is the norm: $\mathcal B_{\Psi}$ contributes no scale, and the scale is $k_m$, which no boost touches.
+**The standard reading, and what this adds.** In the standard Dirac theory the mass is a scalar coupling the two chiral parts, and the coupling is the same in every frame because the scalar is invariant. Nothing here denies that. What the chart adds is where the scalar goes in a moving frame: the rest-frame sign is carried along by the boost, and the momentum already carries the same boost, so the pair relation divides it out. The sentence that the mass **is** a frame factor is a statement about the chart and not a claim that the mass depends on the frame. The strongest objection is exactly that one, that a frame factor would make an invariant frame-dependent, and the answer is the norm: $\mathcal B_{\Psi}$ contributes no scale, and the scale is $\nu_m$, which no boost touches.
 
 **At rest the factor is the identity.** With $\theta_{\mathrm{rpd}}=0$ the boost is $e_t$, the factor is $e_t$, and the relation reduces to the plain sign $\tilde\Xi_{0}^{L}=-\tilde\Xi_{0}^{R}$. The whole of the mass term's structure is then the sign, and the whole of its motion dependence is the boost.
 
@@ -281,17 +281,17 @@ and the second line is then satisfied identically, since $i\tilde K_{\Phi}^{\nat
 
 The third relation of the momentum-space system is the dispersion relation, and in the word it is not an independent equation.
 
-*Proposition.* Let $\tilde K_{\Phi}=ik_m\tilde M$ with $N(\tilde M)=1$. Then $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$. Conversely, every $\tilde K_{\Phi}$ with $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ is of that form, with $\tilde M=\tilde K_{\Phi}/(ik_m)$.
+*Proposition.* Let $\tilde\Upsilon_{\Phi}=i\nu_m\tilde M$ with $N(\tilde M)=1$. Then $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$. Conversely, every $\tilde\Upsilon_{\Phi}$ with $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$ is of that form, with $\tilde M=\tilde\Upsilon_{\Phi}/(2\pi i\nu_m)$.
 
-*Proof.* For the first part, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=i^{2}k_m^{2}\tilde M\tilde M^{\natural}=-k_m^{2}$, the natural conjugation leaving the central $i$ alone. For the second, $N\bigl(\tilde K_{\Phi}/(ik_m)\bigr)=\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}/(-k_m^{2})=e_t$.
+*Proof.* For the first part, $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=i^{2}\nu_m^{2}\tilde M\tilde M^{\natural}=-\nu_m^{2}$, the natural conjugation leaving the central $i$ alone. For the second, $N\bigl(\tilde\Upsilon_{\Phi}/(i\nu_m)\bigr)=\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}/(-\nu_m^{2})=e_t$.
 
-**What the proposition says.** The mass shell is the statement that the four-wavevector divided by $k_m$ is a unit element, that is, the image of the time axis under a Lorentz transformation. In the word, with $\tilde K_{\Phi}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, it holds identically.
+**What the proposition says.** The mass shell is the statement that the four-wavevector divided by $\nu_m$ is a unit element, that is, the image of the time axis under a Lorentz transformation. In the word, with $\tilde\Upsilon_{\Phi}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$, it holds identically.
 
-**The strongest objection.** The proposition is a restatement and not a result. Its hypothesis defines $\tilde K_{\Phi}$ as $ik_m$ times an invertible element, so the two halves of the hypothesis are the same half, and the conclusion repeats the definition. The objection is correct, and the article claims no more than the identity: what the proposition fixes is the direction of the reading, since the same line can be read from the momentum to the frame or from the frame to the momentum.
+**The strongest objection.** The proposition is a restatement and not a result. Its hypothesis defines $\tilde\Upsilon_{\Phi}$ as $ik_m$ times an invertible element, so the two halves of the hypothesis are the same half, and the conclusion repeats the definition. The objection is correct, and the article claims no more than the identity: what the proposition fixes is the direction of the reading, since the same line can be read from the momentum to the frame or from the frame to the momentum.
 
 **What is standard in it.** The geometric content is the textbook one. The normalized four-momentum $\tilde P_{\Phi}/(mc)$ is a point of the unit hyperboloid, that hyperboloid is the Lorentz orbit of the time axis, and in the spinor language the orbit is the space of boosts. The corpus names a point of that orbit by an element of the algebra. The naming is its own and the orbit is not.
 
-That is why the plane-wave system closes. The relation $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ looks like a fourth equation on the same data and is not one; it is the statement that the boost in the word is a boost. A reader who counts four relations against three frame parameters has found the identity just written.
+That is why the plane-wave system closes. The relation $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$ looks like a fourth equation on the same data and is not one; it is the statement that the boost in the word is a boost. A reader who counts four relations against three frame parameters has found the identity just written.
 
 ### What the General Field Leaves Open
 
@@ -378,7 +378,7 @@ The $N$-degenerate set would be a curiosity if nothing physical lay on it. Two f
 
 **A part of definite value.** By the proposition of §*One Element, Two Parts*, an element with $\tilde X\vec e_z=\pm i\tilde X$ is a zero divisor and has $N=0$. A definite-value part therefore lies on the cone at every amplitude and at every point of space and time.
 
-**A plane-wave part.** A one-sided plane wave satisfies $\tilde K_{\Phi}\tilde\Xi_{0}=0$ with $\tilde K_{\Phi}$ null, and then $\tilde\Xi_{0}$ is a zero divisor, so $N(\tilde\Xi_{0})=0$. The argument is the same line: a nonzero element annihilated by a nonzero element is a zero divisor, and the zero divisors are the elements of vanishing norm.
+**A plane-wave part.** A one-sided plane wave satisfies $\tilde\Upsilon_{\Phi}\tilde\Xi_{0}=0$ with $\tilde\Upsilon_{\Phi}$ null, and then $\tilde\Xi_{0}$ is a zero divisor, so $N(\tilde\Xi_{0})=0$. The argument is the same line: a nonzero element annihilated by a nonzero element is a zero divisor, and the zero divisors are the elements of vanishing norm.
 
 **Why this is not the nodal set.** For a central field the two sets coincide: with $B^{2}=0$ identically, $\langle\tilde\Xi\rangle_{\natural}=A^{2}e^{2i\theta_{\mathrm{pha}}}$ and the norm vanishes exactly where the amplitude does. Here they separate, and the separation is the whole difference between the scalar companion and this article. A one-sided plane wave is nowhere zero and has $N=0$ everywhere, so the word fails on a field of uniform, nonzero density. The failure is a failure of the chart's range and not of the field's size.
 
@@ -413,9 +413,9 @@ Two things follow, and the second is the important one. The element has a limit,
 A slow state is one whose boost is small and whose angle is dominated by the rest phase. Write
 
 $$
-\theta_{\mathrm{pha}}=-k_m r'_t+\sigma,
+\theta_{\mathrm{pha}}=-2\pi\nu_m r'_t+\sigma,
 \qquad
-k_m r'_t=\frac{2\pi mc^{2}}{h}\,t,
+2\pi\nu_m r'_t=\frac{mc^{2}}{h}\,t,
 $$
 
 so that the field's own phase advances at $\frac{2\pi mc^{2}}{h}$ and the norm's angle at $\frac{2\pi 2mc^{2}}{h}$. The angle is a number of radians and not an energy; $\frac{h}{2\pi}$ is what makes it so, and the same $\frac{h}{2\pi}$ makes $\sigma$ dimensionless.
@@ -456,7 +456,7 @@ Four things are nevertheless not a relabelling.
 
 **The count closes.** Eight slots against eight components, with a bijection and no spare parameter. A decomposition whose parameters can vary is a description of the field; one whose parameters cannot is a description of a subspace.
 
-**The equation's content is named.** The momentum is the phase gradient, the velocity is the boost, the mass term is the four-vector factor with its scale in $k_m$, and the mass shell is the frame's unitarity. The last is the sharpest: the solvability condition on the momentum is the statement that the boost is a boost. Each of the four is a reading of the chart and not a new equation, and the chart's domain is the $N$-regular field.
+**The equation's content is named.** The momentum is the phase gradient, the velocity is the boost, the mass term is the four-vector factor with its scale in $\nu_m$, and the mass shell is the frame's unitarity. The last is the sharpest: the solvability condition on the momentum is the statement that the boost is a boost. Each of the four is a reading of the chart and not a new equation, and the chart's domain is the $N$-regular field.
 
 **The failing bilinear is explained in one line.** The algebra's $i\tilde\Xi\tilde\Xi^{*}$ is the current with its direction reversed, because the star conjugation fixes the boost and cancels the rotor. That is a fact about the two conjugations, and it is why the conserved current needs the odd element.
 
@@ -482,9 +482,9 @@ The field is one element and the two letters of the pair name its two parts. The
 
 The two norms separate. The quaternionic norm is $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ and the Hermitian norm is $\langle\tilde\Xi\rangle_{*}=\gamma\rho_{\mathrm{num}}$, the difference being that the star conjugation fixes the Hermitian boost while the natural conjugation inverts it and leaves the central $i$ alone. The density is the modulus of the first and it is the Lorentz scalar; the Hermitian norm is its time-dilated image. The norm's argument is twice the word's angle, and the doubling is the factor of two behind zitterbewegung.
 
-The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. Read as fluid laws they are continuity, guidance, velocity transport and spin transport: a spin fluid, not a Madelung fluid. The variational companion substitutes the decomposition into the action and finds the kinetic term in closed form, $\frac{h}{2\pi} c\,\varrho^{2}(\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r})$ with $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ the rotor's body angular velocity and $\hat n_{\mathrm{rot}}$ the boost axis carried into the body frame. The momentum conjugate to the spin there is $-\frac{h}{2\pi} c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, so the spin is canonical only for a moving frame, and it carries no momentum at rest. The phase term is the four-momentum, $\tilde\nabla_\Phi\theta_{\mathrm{pha}}=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.
+The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. Read as fluid laws they are continuity, guidance, velocity transport and spin transport: a spin fluid, not a Madelung fluid. The variational companion substitutes the decomposition into the action and finds the kinetic term in closed form, $\frac{h}{2\pi} c\,\varrho^{2}(\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r})$ with $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ the rotor's body angular velocity and $\hat n_{\mathrm{rot}}$ the boost axis carried into the body frame. The momentum conjugate to the spin there is $-\frac{h}{2\pi} c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, so the spin is canonical only for a moving frame, and it carries no momentum at rest. The phase term is the four-momentum, $\tilde\nabla_\Phi\theta_{\mathrm{pha}}=\tilde\Upsilon_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.
 
-The mass term is a frame factor, and its scale is the scalar $k_m$. In polar variables the pair reads $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, because $k_m$ cancels against the momentum it multiplies; at rest the factor is the identity and the relation is the plain sign. The factor has unit norm, so the scalar reappears in the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, which is the frame's unitarity and not a fourth equation. Both sentences are readings of the chart, and the invariant is $k_m$.
+The mass term is a frame factor, and its scale is the scalar $\nu_m$. In polar variables the pair reads $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, because $\nu_m$ cancels against the momentum it multiplies; at rest the factor is the identity and the relation is the plain sign. The factor has unit norm, so the scalar reappears in the mass shell, $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$, which is the frame's unitarity and not a fourth equation. Both sentences are readings of the chart, and the invariant is $\nu_m$.
 
 The current is $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ and the spin is $\tilde S_{\Psi}=\rho_{\mathrm{num}}\tfrac{h}{4\pi}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, where $\vec e_z$ is the frame's third direction, already declared by the value test and not a new choice. The current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the angle.
 
@@ -501,7 +501,7 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 | $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$ |
 | $\tilde R_\Phi=i r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Four-position |
 | $r'_t=c\,t^{\prime}$ | Material time, a length |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number; the reciprocal reduced Compton length |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number; the reciprocal reduced Compton length |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word |
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | Scale and density; real and central |
 | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | The word's angle; the norm's argument is $2\theta_{\mathrm{pha}}$ |
@@ -515,7 +515,7 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 | $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ | Velocity of the frame |
 | $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-vector factor; $\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ |
 | $\tilde V_{\Phi}=ic\,\mathcal B_{\Psi}$ | Four-velocity of the word; $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ |
-| $\tilde P_{\Phi}=imc\,\mathcal B_{\Psi}$, $\tilde K_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | Four-momentum and four-wavevector; $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ |
+| $\tilde P_{\Phi}=imc\,\mathcal B_{\Psi}$, $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | Four-momentum and four-wavevector; $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$ |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, $\hat s^{2}=-e_t$ | Spin direction |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Current |
 | $\tilde S_{\Psi}=\rho_{\mathrm{num}}\tfrac{h}{4\pi}i\hat s$ | Spin element |

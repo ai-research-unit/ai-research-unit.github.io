@@ -311,7 +311,7 @@ Relativistically the drift is a contraction with the flow element and the shell 
 | $S_{\tilde\Xi}$ | Action of the polar form |
 | $m$, $c$ | Mass and speed of light in the medium |
 | $\frac{h}{2\pi}$ | Action quantum |
-| $k_m$ | Mass wave number |
+| $\nu_m$ | Mass wave number |
 | $r_\eta$, $p_\eta$ | Spatial components of position and momentum; indices low |
 | $r'_t$ | Temporal coordinate of the material sector, a length |
 | $R_{\imath}$, $\partial/\partial R_{\imath}$ | Derivative coordinate, with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ |

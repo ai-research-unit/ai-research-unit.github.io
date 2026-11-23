@@ -33,7 +33,7 @@ $$
 =s_{\mathrm{ent}}\,\gamma\left(e_t+\vec\beta_{\mathrm{vel}}\right),
 $$
 
-whose components, written low on the pattern of $k_{\Phi,\imath}$, are
+whose components, written low on the pattern of $\nu_{\Phi,\imath}$, are
 
 $$
 J_{\Phi,\mathrm{ent},t}=s_{\mathrm{ent}}\,\gamma,

@@ -7,19 +7,19 @@ This article asks what action has the coupled Proca equation as its Euler–Lagr
 **The equation.** The coupled Proca equation is
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^2\tilde A,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=4\pi^{2}\nu_m^2\tilde A,
 \qquad
 \tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr),
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi,
 $$
 
-with $\tilde A\in\mathbb{B}$ the complex potential, $\tilde A_\Phi\in\mathbb{B}_\Phi$ the connection, and $k_m=\frac{2\pi mc}{h}$. The element-form article derives it, states its covariance, and states the covariant Lorenz condition it implies.
+with $\tilde A\in\mathbb{B}$ the complex potential, $\tilde A_\Phi\in\mathbb{B}_\Phi$ the connection, and $\nu_m=\frac{mc}{h}$. The element-form article derives it, states its covariance, and states the covariant Lorenz condition it implies.
 
 **The action.**
 
 $$
-S[\tilde A,\tilde A^{*}]=\int d^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
+S[\tilde A,\tilde A^{*}]=\int d^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
 $$
 
 with $\mathrm{Sc}$ the scalar part, ${}^{*}$ the Hermitian conjugation, and $\natural$ the quaternion conjugation. The field term is the free article's; the mass term is the free article's *upgraded*, because the free mass term $\langle\tilde A_\Phi\rangle_\natural$ is a functional of a real field and is not real on a complex one.
@@ -36,14 +36,14 @@ with $\mathrm{Sc}$ the scalar part, ${}^{*}$ the Hermitian conjugation, and $\na
 
 ## Conventions
 
-**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the potential $\tilde A$ is a general element and the connection $\tilde A_\Phi$ is anti-Hermitian. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)$, a pure vector in the free case and half of a complex bivector in the coupled one, which is the difference the article's fourth section is about. The pairing is $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term and $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ for the mass term, the measure is $\mathrm{d}^4r$, and $k_m=\frac{2\pi mc}{h}$.
+**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the potential $\tilde A$ is a general element and the connection $\tilde A_\Phi$ is anti-Hermitian. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)$, a pure vector in the free case and half of a complex bivector in the coupled one, which is the difference the article's fourth section is about. The pairing is $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term and $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ for the mass term, the measure is $\mathrm{d}^4r$, and $\nu_m=\frac{mc}{h}$.
 
 ## The Action in Element Form
 
 **The two terms.**
 
 $$
-\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)
+\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)
 =\mathcal{L}_{\mathrm{field}}+\mathcal{L}_{\mathrm{mass}} .
 $$
 
@@ -60,9 +60,9 @@ exactly, with $A_t=i a'_t$ on the material slice; the right side is real for eve
 **The mass term reduces to the free one on the material slice.** For $\tilde A_\Phi=i a'_t e_t+\vec A$ with real $a'_t$ and $\vec A$, the conjugation is minus the identity, $\tilde A_\Phi^{*}=-\tilde A_\Phi$, so
 
 $$
-\tfrac12 k_m^{2}\,\mathrm{Sc}\bigl(\tilde A_\Phi^{*}\tilde A_\Phi^{\natural}\bigr)
-=-\tfrac12 k_m^{2}\,\mathrm{Sc}\bigl(\tilde A_\Phi\tilde A_\Phi^{\natural}\bigr)
-=-\tfrac12 k_m^{2}\,\langle\tilde A_\Phi\rangle_\natural ,
+\tfrac12 \nu_m^{2}\,\mathrm{Sc}\bigl(\tilde A_\Phi^{*}\tilde A_\Phi^{\natural}\bigr)
+=-\tfrac12 \nu_m^{2}\,\mathrm{Sc}\bigl(\tilde A_\Phi\tilde A_\Phi^{\natural}\bigr)
+=-\tfrac12 \nu_m^{2}\,\langle\tilde A_\Phi\rangle_\natural ,
 $$
 
 which is the free article's mass term, sign included. The identity is exact. The coupled action is therefore an extension of the free one and not a replacement: set $ϙ=0$ and restrict to the material sector, and the free action returns with no residue.
@@ -94,7 +94,7 @@ with $\vec E,\vec B$ the real electric and magnetic fields. The imaginary part i
 **The Euler–Lagrange equation.** Vary $\tilde A$ and $\tilde A^{*}$ independently, which is legitimate over the complex carrier and is the standard device for a complex field, and integrate by parts once in the field term and not at all in the mass term. The result is
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde F-k_m^{2}\tilde A=0,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F-4\pi^{2}\nu_m^{2}\tilde A=0,
 $$
 
 the coupled Proca equation. The two terms of the action produce the two terms of the equation and nothing else: the variation of the field term produces the derivative of the field strength, the variation of the mass term produces the mass term, and the antisymmetrization of the field strength is what makes the first survive while the second is untouched.
@@ -173,7 +173,7 @@ $$
 
 symmetric on solutions, conserved on solutions, and positive in energy for the free slice. The article does not re-derive the standard algebra of it; the free article does, and the coupling changes only the derivatives in it.
 
-**The trace.** On the material slice the trace is the mass term and nothing else: the field term's contribution is scalar-free there, so $\sum_{\imath} T_{\imath\imath}$ is proportional to $k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ and vanishes only where the invariant length vanishes. The article leaves the overall sign to the free article's convention, which fixes it once. That proportionality is the field-theoretic form of the statement that the mass is the only scale in the theory. For a general complex field with a general connection the trace acquires the connection's contribution and the article does not state a closed form.
+**The trace.** On the material slice the trace is the mass term and nothing else: the field term's contribution is scalar-free there, so $\sum_{\imath} T_{\imath\imath}$ is proportional to $\nu_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ and vanishes only where the invariant length vanishes. The article leaves the overall sign to the free article's convention, which fixes it once. That proportionality is the field-theoretic form of the statement that the mass is the only scale in the theory. For a general complex field with a general connection the trace acquires the connection's contribution and the article does not state a closed form.
 
 **What is absent.** There is no spin current, and its absence is not an oversight: the Proca field is a four-vector, its frame's brackets carry the direction and not a spin, and the free polar article states that the material sector has no rotor bracket to build one from. The Dirac spin current belongs to the Dirac articles. The coupled Proca field's rotor, which the complex carrier restores, is the frame's internal rotation and not a spin density, and the polar companion is where that distinction is drawn.
 
@@ -205,7 +205,7 @@ symmetric on solutions, conserved on solutions, and positive in energy for the f
 The action is
 
 $$
-S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
+S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
 $$
 
 its Euler–Lagrange equation is the coupled Proca equation, and its symmetries give the charge current and the energy–momentum.
@@ -228,11 +228,11 @@ The constraint is the trace of the equation and the curvature does not enter it.
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, left action |
 | $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; one half of the complex bivector |
 | $\tilde F'=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi}\tilde A)$ | The companion half; the invariant pairing uses it |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter |
 | $\mathcal{L}_{\mathrm{field}},\ \mathcal{L}_{\mathrm{mass}}$ | The two terms of the Lagrangian density |
 | $j_{\imath}=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A)$ | Charge current |
-| $T_{\imath\jmath}$ | Stress tensor; trace $-k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ on the material slice |
+| $T_{\imath\jmath}$ | Stress tensor; trace $-\nu_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ on the material slice |
 | $S$ | The action |
 
 ## Further Reading

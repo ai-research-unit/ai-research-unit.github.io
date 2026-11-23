@@ -17,14 +17,14 @@ Position in the block. This is the charged companion of [The Fourier Transform a
 The charged spin-one fluid's: $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, eight real parameters for the eight real components, the coupling $ϙ$, and
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi ,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{h}\tilde A_\Phi ,
 \qquad
 \tilde F=\tfrac12\bigl((\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde A-\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\bigr)_{V},
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^{2}\tilde A .
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=4\pi^{2}\nu_m^{2}\tilde A .
 $$
 
-The transform carries a subscript and no accent, as the series requires: the transform of a glyph is written with $\mathrm{trf}$, so the amplitude is $\tilde A_{\mathrm{trf}}(\tilde K_\Phi)$ and its correlation with its conjugate is $\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}$. The field itself is $\tilde A$.
+The transform carries a subscript and no accent, as the series requires: the transform of a glyph is written with $\mathrm{trf}$, so the amplitude is $\tilde A_{\mathrm{trf}}(\tilde\Upsilon_\Phi)$ and its correlation with its conjugate is $\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}$. The field itself is $\tilde A$.
 
 The symbol rule is the scalar rung's, and the product rule is the one proved in [The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html): a product in the position variable transforms to a convolution of the two transforms, with the residual there measured at $1.4\times10^{-15}$.
 
@@ -43,9 +43,9 @@ $$
 Transform the two sides and they have different shapes.
 
 $$
-\underbrace{\tilde K_\Phi\cdot\tilde A_{\mathrm{trf}}(\tilde K_\Phi)}_{\text{a multiplier, label-local}}
+\underbrace{\tilde\Upsilon_\Phi\cdot\tilde A_{\mathrm{trf}}(\tilde\Upsilon_\Phi)}_{\text{a multiplier, label-local}}
 \qquad\text{equals}\qquad
-\underbrace{-\frac{2\pi iϙ}{h}\bigl(\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}\bigr)(\tilde K_\Phi)}_{\text{a correlation, label-delocal}} .
+\underbrace{-\frac{iϙ}{h}\bigl(\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}\bigr)(\tilde\Upsilon_\Phi)}_{\text{a correlation, label-delocal}} .
 $$
 
 The left side is a linear operator applied pointwise, so it constrains this component of the amplitude at this label. The right side is a quadratic functional of the whole measure, so it is an integral over every label at once. **The constraint is therefore one scalar equation per label whose right-hand side is not a datum of that label**, and no diagonalisation of the field changes that, because the correlation is the multiplication in the position variable and the multiplication is the physical product of two field values.
@@ -62,10 +62,10 @@ $$
 ϙ=0:\qquad
 \mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)=0
 \qquad\Longleftrightarrow\qquad
-\tilde K_\Phi\cdot\tilde A_{\mathrm{trf}}(\tilde K_\Phi)=0\ \text{at each label}.
+\tilde\Upsilon_\Phi\cdot\tilde A_{\mathrm{trf}}(\tilde\Upsilon_\Phi)=0\ \text{at each label}.
 $$
 
-The free companion's finding is the same statement and this display is its sharpest form. There the Lorenz condition of a mode is $\sum_{\imath}\varepsilon_{\imath} k_{\imath} u_{\imath}=0$, the transversality of the polarisation, checked at $2.2\times10^{-16}$; here the same condition is read as a locality. **The free fluid's incompressibility is therefore not a physical property of a medium but a property of the constraint's symbol**: the divergence is a multiplier, a multiplier is diagonal in the label, and a diagonal condition is one condition per label.
+The free companion's finding is the same statement and this display is its sharpest form. There the Lorenz condition of a mode is $\sum_{\imath}\varepsilon_{\imath} \nu_{\imath} u_{\imath}=0$, the transversality of the polarisation, checked at $2.2\times10^{-16}$; here the same condition is read as a locality. **The free fluid's incompressibility is therefore not a physical property of a medium but a property of the constraint's symbol**: the divergence is a multiplier, a multiplier is diagonal in the label, and a diagonal condition is one condition per label.
 
 With the coupling the symbol is no longer diagonal, and the fluid acquires the compressibility the parent names. The parent says the free incompressibility was the mass's gift and is the $ϙ=0$ case. This article says what the gift is: the mass is what makes the constraint's right-hand side vanish at $ϙ=0$, and a vanishing right-hand side is a diagonal condition. A nonzero right-hand side is a product, and a product is a convolution.
 
@@ -150,11 +150,11 @@ Across the eight Fourier articles the invisible object is always either a produc
 | $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The eight-parameter word |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ\tilde A_\Phi}{h}$ | The covariant derivative |
 | $\tilde F$ | The field strength, built from covariant gradients |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-(\frac{2\pi iϙ}{h})\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ | The ordinary divergence; the amplitude |
 | $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ | The covariant constraint; a multiplier |
-| $\tilde K_\Phi$ | The label, the transform's variable |
-| $\tilde A_{\mathrm{trf}}(\tilde K_\Phi)$ | The amplitude at a label, with no hat on the transform |
+| $\tilde\Upsilon_\Phi$ | The label, the transform's variable |
+| $\tilde A_{\mathrm{trf}}(\tilde\Upsilon_\Phi)$ | The amplitude at a label, with no hat on the transform |
 | $\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}$ | The natural norm; equal to $\varrho^{2}$ only on the real slice |
 | $\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}$ | The correlation of the amplitude with its own conjugate |
 | $m^{2}\tilde A$, $\tilde A/\varrho$, and the charge bilinear | The three currents |

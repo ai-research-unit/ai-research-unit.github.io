@@ -59,15 +59,15 @@ The honest summary is this: "the biquaternion vacuum" is not a biquaternion. For
 
 **From the mode expansion.** The free Maxwell potential expands in four covariant polarisations,
 $$
-A_{\imath}(x)=\int\!\frac{d^{3}k_\Phi}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
-\Big(a_{\mathrm{fop},r}(\vec k_\Phi)\,\epsilon^{(r)}_{\imath}(\vec k_\Phi)\,\exp(-ik\cdot x)
-+a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)\,\epsilon^{(r)*}_{\imath}(\vec k_\Phi)\,\exp(+ik\cdot x)\Big),
+A_{\imath}(x)=\int\!\frac{d^{3}2\pi\nu_{\Phi}}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
+\Big(a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot x)
++a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)*}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot x)\Big),
 \qquad
-\big[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(\vec k_\Phi-\vec k_2),
+\big[a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(2\pi\vec\nu_\Phi-\vec\nu_2),
 $$
-with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, $\omega_k=c\lvert\vec k_\Phi\rvert$ an angular frequency for the massless field, and $k\cdot x=\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_k r'_t/c$. The normal-ordered Hamiltonian is
+with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, $\omega_k=c\lvert2\pi\vec\nu_\Phi\rvert$ an angular frequency for the massless field, and $k\cdot x=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_k r'_t/c$. The normal-ordered Hamiltonian is
 $$
-:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k_\Phi}{(2\pi)^3}\,\sigma_{\mathrm{met},r}\,hf_{\mathrm{frq},k}\,a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)a_{\mathrm{fop},r}(\vec k_\Phi),
+:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}2\pi\nu_{\Phi}}{(2\pi)^3}\,\sigma_{\mathrm{met},r}\,hf_{\mathrm{frq},k}\,a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi),
 $$
 and the constant discarded in passing to the normal-ordered form is the zero-point energy.
 
@@ -77,7 +77,7 @@ $$
 $$
 the zero-point constant of the covariant field is that of **two** transverse modes, $hf_{\mathrm{frq},k}$ per mode, and the free vacuum energy is the quartically divergent integral
 $$
-E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12hf_{\mathrm{frq},k}=2\,V\!\int\!\frac{d^{3}k_\Phi}{(2\pi)^3}\,\tfrac12\frac{h}{2\pi}\,c\lvert\vec k_\Phi\rvert
+E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12hf_{\mathrm{frq},k}=2\,V\!\int\!\frac{d^{3}2\pi\nu_{\Phi}}{(2\pi)^3}\,\tfrac12\frac{h}{2\pi}\,c\lvert2\pi\vec\nu_\Phi\rvert
 \;\xrightarrow[\ \Lambda\ ]{}\;\frac{h\,c\,\Lambda^{4}}{16\pi \,\pi^{2}}\,V .
 $$
 The coefficient is the free-space density for two polarisations; the divergence is quartic and proportional to the volume $V$. This is the biquaternion transcription of the standard fact that the electromagnetic zero-point energy diverges as the fourth power of the cutoff. The Dirac parent is the mirror case: there the normal-ordering constant is *negative*,
@@ -96,27 +96,27 @@ This gives the framework's interpretation of the vacuum energy, and it is the re
 
 **The configuration.** Two perfectly conducting parallel plates of area $A$, separated by a distance $a$ along $\vec e_z$, bound a region of the vacuum. The plates are idealised: they impose $E_\parallel=0$ and $B_\perp=0$ on their surfaces, which is a boundary condition on the field, not a property of the algebra. It should be said at the outset that **the framework has no native description of a boundary**: the free-field algebra of the companion articles is formulated on the whole of spacetime, and the conductors are external structure. What the framework does supply is the space in which the mode structure is counted, as the next section makes precise.
 
-**The modes.** Between the plates the longitudinal wavevector is quantized, $k_3=n\pi/a$, and the transverse wavevector $\vec k_\perp$ is continuous. The electromagnetic modes separate into
+**The modes.** Between the plates the longitudinal wavevector is quantized, $k_3=n\pi/a$, and the transverse wavevector $\vec\nu_\perp$ is continuous. The electromagnetic modes separate into
 $$
 \text{TE}_n:\ n=1,2,\dots,\qquad
 \text{TM}_n:\ n=1,2,\dots,\qquad
 \text{TEM}:\ n=0,
 $$
-each with frequency $\omega=c\sqrt{\vec k_\perp^{2}+(\pi n/a)^{2}}$. The TE and TM families each carry **one** polarization for every $n\ge1$; the single $n=0$ mode is the transverse electromagnetic (TEM) mode with $\omega=c|\vec k_\perp|$, independent of $a$. The bare zero-point energy per unit area of the plates is therefore
+each with frequency $\omega=c\sqrt{\vec\nu_\perp^{2}+(\pi n/a)^{2}}$. The TE and TM families each carry **one** polarization for every $n\ge1$; the single $n=0$ mode is the transverse electromagnetic (TEM) mode with $\omega=c|\vec\nu_\perp|$, independent of $a$. The bare zero-point energy per unit area of the plates is therefore
 $$
 \frac{E(a)}{A}=\frac{h\,c}{4\pi}\int\!\frac{d^{2}k_\perp}{(2\pi)^2}
-\Bigg[\,2\sum_{n=1}^{\infty}\sqrt{\vec k_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}}
-\;+\;|\vec k_\perp|\,\Bigg].
+\Bigg[\,2\sum_{n=1}^{\infty}\sqrt{\vec\nu_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}}
+\;+\;|\vec\nu_\perp|\,\Bigg].
 $$
 
-**Why it diverges, and where.** The factor $2$ multiplies the two polarization families; the last term is the $a$-independent TEM mode. The sum $\sum_{n\ge1}$ and the integral over $\vec k_\perp$ both diverge at large arguments, and the divergence is not a defect of the notation: a momentum cutoff $\Lambda$ on the free vacuum gives, as in the previous section, an energy density $\frac{h\,c\,\Lambda^{4}}{16\pi \,\pi^{2}}$ per unit volume, so the bare zero-point energy of any region of volume $V$ diverges as $\frac{h\,c\,\Lambda^{4}\,V}{16\pi \,\pi^{2}}$, together with surface terms of order $\Lambda^{2}$ and a possible logarithm. The quantity in the bare zero-point sum above is not a number; it is a cutoff-dependent expression.
+**Why it diverges, and where.** The factor $2$ multiplies the two polarization families; the last term is the $a$-independent TEM mode. The sum $\sum_{n\ge1}$ and the integral over $\vec\nu_\perp$ both diverge at large arguments, and the divergence is not a defect of the notation: a momentum cutoff $\Lambda$ on the free vacuum gives, as in the previous section, an energy density $\frac{h\,c\,\Lambda^{4}}{16\pi \,\pi^{2}}$ per unit volume, so the bare zero-point energy of any region of volume $V$ diverges as $\frac{h\,c\,\Lambda^{4}\,V}{16\pi \,\pi^{2}}$, together with surface terms of order $\Lambda^{2}$ and a possible logarithm. The quantity in the bare zero-point sum above is not a number; it is a cutoff-dependent expression.
 
 **The physical subtraction.** The Casimir energy is not the bare sum but the *change* in the zero-point energy produced by the plates. In the mode-density formulation this is
 $$
 \frac{E_{\mathrm{cas}}(a)}{A}
 =\frac{h\,c}{4\pi}\int\!\frac{d^{2}k_\perp}{(2\pi)^2}
-\Bigg[\,2\sum_{n=1}^{\infty}\sqrt{\vec k_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}}
-\;-\;2\,\frac{a}{\pi}\int_{0}^{\infty} dq\,\sqrt{\vec k_\perp^{2}+q^{2}}\,\Bigg],
+\Bigg[\,2\sum_{n=1}^{\infty}\sqrt{\vec\nu_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}}
+\;-\;2\,\frac{a}{\pi}\int_{0}^{\infty} dq\,\sqrt{\vec\nu_\perp^{2}+q^{2}}\,\Bigg],
 $$
 in which the continuum integral $2\,\frac{a}{\pi}\int_0^\infty dq\,(\cdots)$ is the free-space zero-point energy per unit length at the same transverse momentum — the factor $a/\pi$ is the mode density of the discrete $k_3=\pi n/a$, and without it the two terms are not commensurable — and the TEM term has been dropped because it is $a$-independent and its contribution to the force vanishes. The subtraction is what the physical statement "the energy of the vacuum in the bounded region minus the energy of the same vacuum without the plates" means, and it is the subtraction that removes the volume divergence: the leading $\Lambda^{4}$ term is identical in the two configurations and cancels. What survives of the surface terms is an $a$-independent plate self-energy — a constant in $a$ — and, beyond it, a finite remainder that depends on $a$.
 
@@ -124,7 +124,7 @@ It has to be said clearly that this subtracted expression is still not an evalua
 
 **The Euler–Maclaurin route does not close the problem by itself.** A natural attempt is to expand the sum in this subtracted expression by the Euler–Maclaurin formula. That expansion correctly exhibits the divergence structure — the cutoff powers $\Lambda^{4},\Lambda^{2}$ and the surface terms. But for the summand
 $$
-g(x)=\sqrt{\vec k_\perp^{2}+\Big(\frac{\pi x}{a}\Big)^{2}},
+g(x)=\sqrt{\vec\nu_\perp^{2}+\Big(\frac{\pi x}{a}\Big)^{2}},
 $$
 which is **even** in $x$ and **linearly growing**, the finite part produced by the naive form of Euler–Maclaurin is not the physical one. The reason is exact and worth stating: the finite remainder is sensitive to (i) the branch cut of $g$ in the complex plane and (ii) the discreteness (the floor) hidden in the mode count, neither of which the derivative-at-zero terms see. Applied naively, the odd-derivative terms all vanish and the formula returns an $a$-independent finite part — a spurious zero for the force. This is recorded here as a **finding, not smoothed over**: the divergence bookkeeping by Euler–Maclaurin is valid, but the finite Casimir term must be obtained from a regularisation whose continuation is controlled, which is what the next two sections do. The two routes that follow are independent of each other and agree.
 
@@ -133,11 +133,11 @@ which is **even** in $x$ and **linearly growing**, the finite part produced by t
 The spectral zeta function of the Dirichlet-type problem is
 $$
 \zeta_3(s)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^2}\,
-\Big(\vec k_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}\Big)^{-s},
+\Big(\vec\nu_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}\Big)^{-s},
 $$
 defined for $\mathrm{Re}\,s>\tfrac32$ and continued from there. The transverse integral is elementary,
 $$
-\int\!\frac{d^{2}k_\perp}{(2\pi)^2}\,\big(\vec k_\perp^{2}+m^{2}\big)^{-s}
+\int\!\frac{d^{2}k_\perp}{(2\pi)^2}\,\big(\vec\nu_\perp^{2}+m^{2}\big)^{-s}
 =\frac{1}{4\pi}\,\frac{\Gamma(s-1)}{\Gamma(s)}\,m^{2-2s},
 $$
 so with $m=\pi n/a$,
@@ -171,7 +171,7 @@ The second route uses the heat kernel rather than the mode sum directly, and it 
 **The heat kernel.** For the Dirichlet-type problem the heat kernel per unit area is
 $$
 G_{\mathrm{prop}}(r'_t)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^2}\,
-\exp(-r'_t(\vec k_\perp^{2}+(\pi n/a)^{2}))
+\exp(-r'_t(\vec\nu_\perp^{2}+(\pi n/a)^{2}))
 =\frac{1}{4\pi r'_t}\sum_{n=1}^{\infty}\exp(-(\pi n/a)^{2}r'_t),
 $$
 and the free-space heat kernel, which is its $a\to\infty$ limit, is
@@ -216,7 +216,7 @@ which the zeta route reproduces from $\zeta(-1)=-\tfrac1{12}$ and the heat-kerne
 
 The two routes above computed the **Dirichlet-scalar** energy for a single massless scalar degree of freedom. The electromagnetic Casimir energy is **twice** it, and this factor is where the classic error lives. It has three equivalent descriptions, and they must be kept distinct.
 
-**From the mode count.** In the bare zero-point sum above the factor $2$ multiplies $\sum_{n\ge1}$ and stands for the TE and TM families, one polarization each, both with $n\ge1$. The single remaining mode, the $n=0$ TEM mode, has frequency $c|\vec k_\perp|$ independent of $a$ and contributes nothing to the force. The $a$-dependent part of the electromagnetic zero-point sum is therefore exactly **two** Dirichlet-type sums, hence
+**From the mode count.** In the bare zero-point sum above the factor $2$ multiplies $\sum_{n\ge1}$ and stands for the TE and TM families, one polarization each, both with $n\ge1$. The single remaining mode, the $n=0$ TEM mode, has frequency $c|\vec\nu_\perp|$ independent of $a$ and contributes nothing to the force. The $a$-dependent part of the electromagnetic zero-point sum is therefore exactly **two** Dirichlet-type sums, hence
 $$
 \frac{E_{\mathrm{EM}}}{A}=2\cdot\Big(-\frac{\pi^{2}\,h\,c}{2880\pi \,a^{3}}\Big)=-\frac{\pi^{2}\,h\,c}{1440\pi \,a^{3}} .
 $$
@@ -335,8 +335,8 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $\vec u_\Phi$ | Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$ |
 | $a$, $A$ | Plate separation and area |
 | $a,n,k_3=\pi n/a$ | Plate separation; mode index; quantized longitudinal wavevector |
-| $\vec k_\perp$ | Continuous transverse wavevector |
-| $\omega=c\sqrt{\vec k_\perp^2+(\pi n/a)^2}$ | Mode frequency; $\omega=c\lvert\vec k_\perp\rvert$ for the $n=0$ TEM mode |
+| $\vec\nu_\perp$ | Continuous transverse wavevector |
+| $\omega=c\sqrt{\vec\nu_\perp^2+(\pi n/a)^2}$ | Mode frequency; $\omega=c\lvert\vec\nu_\perp\rvert$ for the $n=0$ TEM mode |
 | $E(a)$, $E_{\mathrm{cas}}$ | Zero-point energy of the bounded region; Casimir energy |
 | $F/A=-\partial/\partial a(E/A)$ | Force per unit area; negative $=$ attractive |
 | $\Lambda$ | Momentum cutoff (bare divergence) |

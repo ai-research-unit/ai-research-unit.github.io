@@ -154,7 +154,7 @@ so each value is determined by the conjugate of the other. This is the precise s
 **The equation.** The equation of the field is
 
 $$
-D\,\tilde{Ξ}=k_m\,\tilde{Ξ}_c,
+D\,\tilde{Ξ}=2\pi\nu_m\,\tilde{Ξ}_c,
 $$
 
 with $D$ the operator of the previous section and $m$ real. Written on the two values it is a pair, one first-order equation for each value, and the mass couples the equation of one value to the other. The companion *The Dirac Equation in Biquaternionic Form* writes the same two values in the frame of the gradient. The two frames differ by where the central $i$ sits, and only the present frame is used below: it is the one in which the conjugation is transparent.
@@ -162,7 +162,7 @@ with $D$ the operator of the previous section and $m$ real. Written on the two v
 **The constraint is propagated.** Apply $\mathcal{C}$ to the equation and use the two properties already checked:
 
 $$
-D\,\mathcal{C}\tilde{Ξ}=\mathcal{C}(D\tilde{Ξ})=k_m\,\mathcal{C}^{2}\tilde{Ξ}=k_m\,\tilde{Ξ} .
+D\,\mathcal{C}\tilde{Ξ}=\mathcal{C}(D\tilde{Ξ})=2\pi\nu_m\,\mathcal{C}^{2}\tilde{Ξ}=2\pi\nu_m\,\tilde{Ξ} .
 $$
 
 So the conjugate field solves the same equation with the two sides exchanged, and the deviation $\delta=\tilde{Ξ}-\mathcal{C}\tilde{Ξ}$ solves
@@ -176,10 +176,10 @@ The equation is first order in the time derivative, so the deviation is fixed by
 **The mass shell is unchanged.** Squaring the equation and using $\mathcal{C}^{2}=1$ and $D^{2}=\Box_\Phi$,
 
 $$
-\Box_\Phi\,\tilde{Ξ}=D^{2}\tilde{Ξ}=k_mD\,\tilde{Ξ}_c=k_m^{2}\,\tilde{Ξ} ,
+\Box_\Phi\,\tilde{Ξ}=D^{2}\tilde{Ξ}=2\pi\nu_mD\,\tilde{Ξ}_c=4\pi^{2}\nu_m^{2}\,\tilde{Ξ} ,
 $$
 
-so a plane wave of the field sits on $N=-m^{2}c^{2}$, exactly as in the Dirac case. The mass shell is the one of a massive fermion, and the Majorana restriction has removed half the degrees of freedom and nothing else. The bilinear that normalises the field is the one of the companion quantisation article, and it is nonzero for $m>0$. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+so a plane wave of the field sits on $N=-m^{2}c^{2}$, exactly as in the Dirac case. The mass shell is the one of a massive fermion, and the Majorana restriction has removed half the degrees of freedom and nothing else. The bilinear that normalises the field is the one of the companion quantisation article, and it is nonzero for $m>0$. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **No single mode is self-conjugate.** At fixed momentum the equation reads $D_p u=m\,\mathcal{C}u$, and $\mathcal{C}$ anticommutes with $D_p$, so it carries the kernel of $D_p-m$ to the kernel of $D_p+m$. A solution of definite frequency therefore has a conjugate of the opposite frequency, and no one mode is its own conjugate. The self-conjugate field is a pair of opposite frequencies, one amplitude at $p$ and its conjugate at $-p$, and each amplitude solves its own equation. That is the standard statement that the charge conjugate of a positive-frequency amplitude is a negative-frequency one, and it is why the condition does not quantise the theory into nothing.
 
@@ -391,7 +391,7 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | $\mathcal{C}:\tilde{Ξ}\mapsto i\bar{\tilde{Ξ}}$ | Charge conjugation; $\mathcal{C}^2=1$, $\xi\mathcal{C}=-\mathcal{C}\xi$, $\mathcal{C}D=D\mathcal{C}$ |
 | $\tilde{Ξ}_c=\mathcal{C}\tilde{Ξ}$ | Charge conjugate; $\tilde{Ξ}_c=\tilde{Ξ}$ defines Majorana |
 | $\tilde{Ξ}=i\bar{\tilde{Ξ}}$ | Majorana condition; equivalent to $\tilde{Ξ}_{L}=i\overline{\tilde{Ξ}_{R}}$ |
-| $D\tilde{Ξ}=k_m\tilde{Ξ}_c$ | Majorana equation |
+| $D\tilde{Ξ}=2\pi\nu_m\tilde{Ξ}_c$ | Majorana equation |
 | $\dim_{\mathbb{R}}\{\tilde{Ξ}:\tilde{Ξ}_c=\tilde{Ξ}\}=4$ | Majorana component count |
 | $\delta=\tilde{Ξ}-\mathcal{C}\tilde{Ξ}$ | Deviation from self-conjugacy; $D\delta=-m\delta$ |
 

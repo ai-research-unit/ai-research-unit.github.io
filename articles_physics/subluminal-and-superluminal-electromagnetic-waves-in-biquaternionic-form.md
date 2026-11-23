@@ -34,7 +34,7 @@ $$
 which in vacuum reads $\tilde F=i\vec E-\vec B$. Its scalar part carries the two divergences and its vector part the two curls, so the one equation is the four Maxwell equations. It is first order in one field and needs no operator beyond the gradient. What it cannot do is carry a mass: the square of the gradient is not scalar, $\tilde\nabla_\Phi^2\ne\Box_\Phi$, because $e_t$ commutes with the spatial units and the mixed derivatives add instead of cancelling. The corpus's massive equation is therefore the chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad  (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad  (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
 two first-order equations in two chiral halves, and the spinorial part below is read in that form. Here $\frac{h}{2\pi mc}$ is the mass length.
@@ -71,22 +71,22 @@ The spinor $\tilde{Ξ}$ is an element of the biquaternion algebra $\mathbb{B}$, 
 The free equation $\tilde\nabla_\Phi\tilde F=0$ is solved by the plane wave
 
 $$
-\tilde F = f\,\exp(i\theta_{\mathrm{pha}}),\qquad \theta_{\mathrm{pha}}=k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec q ,
+\tilde F = f\,\exp(i\theta_{\mathrm{pha}}),\qquad \theta_{\mathrm{pha}}=2\pi\nu_t^{\prime}x_0-2\pi\vec\nu_\Phi\cdot\vec q ,
 $$
 
 with $f$ a constant element and $k$ the propagation vector. The gradient acts on the phase through the symbol
 
 $$
--i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,\qquad \vec k_\Phi=\sum_\eta\vec e_\eta k_{\Phi\eta} ,
+-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi,\qquad 2\pi\vec\nu_\Phi=\sum_\eta\vec e_\eta 2\pi\nu_{\Phi\eta} ,
 $$
 
-so the equation is $-i\tilde K_{\Phi}f=0$. Applying $i\tilde K_{\Phi}^{\natural}$ on the left gives $i\tilde K_{\Phi}^{\natural}\cdot(-i\tilde K_{\Phi})f=-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}f=(k_{t}^{\prime\,2}-|\vec k_\Phi|^2)f=0$, and the propagation vector is **null**,
+so the equation is $-2\pi i\tilde\Upsilon_{\Phi}f=0$. Applying $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$ on the left gives $2\pi i\tilde\Upsilon_{\Phi}^{\natural}\cdot(-2\pi i\tilde\Upsilon_{\Phi})f=-\tilde\Upsilon_{\Phi}^{\natural}\tilde\Upsilon_{\Phi}f=(4\pi^{2}\nu_t^{\prime\,2}-|2\pi\vec\nu_\Phi|^2)f=0$, and the propagation vector is **null**,
 
 $$
-N=0\quad\Longleftrightarrow\quad k_{t}^{\prime}=\pm|\vec k_\Phi| .
+N=0\quad\Longleftrightarrow\quad 2\pi\nu_t^{\prime}=\pm|2\pi\vec\nu_\Phi| .
 $$
 
-The condition $-i\tilde K_{\Phi}f=0$ is four independent complex conditions on the six complex components of $f$. On a null $\tilde K_{\Phi}$ its kernel is two-dimensional, the two polarizations, and on the whole kernel $f^2=0$: the plane wave has **null invariants**. The step is not a cancellation, because a null $-i\tilde K_{\Phi}$ has no inverse; it is the rank of left multiplication by a null element. Checked on the six components for several null $\tilde K_{\Phi}$, the kernel is two-dimensional and $f^2=0$ on it. The invariant $\tilde F^2=f^2\exp(2i\theta_{\mathrm{pha}})$ vanishes with it.
+The condition $-2\pi i\tilde\Upsilon_{\Phi}f=0$ is four independent complex conditions on the six complex components of $f$. On a null $\tilde\Upsilon_{\Phi}$ its kernel is two-dimensional, the two polarizations, and on the whole kernel $f^2=0$: the plane wave has **null invariants**. The step is not a cancellation, because a null $-2\pi i\tilde\Upsilon_{\Phi}$ has no inverse; it is the rank of left multiplication by a null element. Checked on the six components for several null $\tilde\Upsilon_{\Phi}$, the kernel is two-dimensional and $f^2=0$ on it. The invariant $\tilde F^2=f^2\exp(2i\theta_{\mathrm{pha}})$ vanishes with it.
 
 Both facts are the standard ones, and the source's point in restating them is the contrast with what follows — the plane waves of the free equation sit on the special null case, and the source then exhibits solutions that do not.
 
@@ -254,7 +254,7 @@ The $\omega$-part is gone and the coefficient is a real scalar. For the free fie
 $$
 \boxed{\;(\tilde\nabla_\Phi\tilde{Ξ})(-\vec e_z)=\lambda\,\tilde{Ξ}\,i\vec e_x\;}
 $$
-which has the **shape** of the Dirac–Hestenes equation, with a single real coefficient $\lambda$ — in units of inverse length, since restoring $\frac{h}{2\pi}$ and $c$ gives $\lambda=k_m$. The coefficient has become real; whether it is a **mass** is the next question. In the unrotated pair the same coefficient reads $\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}=\lambda\exp(\omega\theta_{\mathrm{dua}})$, the real coefficient times the duality phase, which is why the phase-carrying display and this one are one equation.
+which has the **shape** of the Dirac–Hestenes equation, with a single real coefficient $\lambda$ — in units of inverse length, since restoring $\frac{h}{2\pi}$ and $c$ gives $\lambda=2\pi\nu_m$. The coefficient has become real; whether it is a **mass** is the next question. In the unrotated pair the same coefficient reads $\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}=\lambda\exp(\omega\theta_{\mathrm{dua}})$, the real coefficient times the duality phase, which is why the phase-carrying display and this one are one equation.
 
 **The mass is a constant only for a conserved current.** Nothing so far makes $\lambda=\Lambda/\cos\theta_{\mathrm{dua}}$ constant, and neither factor need be. What the first constraint does give is $\rho\dot\lambda+\lambda\,\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle=0$, so that
 
@@ -380,7 +380,7 @@ M=m+3m\,\frac{q_{\mathrm{m}}}{e}\sin\theta_{\mathrm{dua}},\qquad
 N=-3m\,\frac{q_{\mathrm{m}}}{e}\cos\theta_{\mathrm{dua}} ,
 $$
 
-with $q_{\mathrm{m}}$ the magnetic charge. The $3$ carries the normalisation, and the source does not display the step: it fixes $F=-k\,(\frac{e}{k_m})\,\tilde{Ξ}\vec e_z\tilde{Ξ}^{\natural}$ with $k=2\pi/3$ and states only that (6.5) follows "as in section 4". The natural reading is the Gaussian $4\pi/c$ on the current, with the $\tfrac12$ of the spinorial Maxwell equation, against $k$: $4\pi/(2k)=3$. That reconstruction is not printed, so the coefficient stands or falls with (6.5) as it appears. What $k$ does **not** do is fix the dimensions — $[F]=QL^{-2}$ and $[\frac{e}{k_m}]=QL$ already force $[\tilde{Ξ}]=L^{-3/2}$ — so its value is chosen for the spectrum. The equation is a Dirac–Hestenes equation exactly when $N=0$, that is at $\theta_{\mathrm{dua}}=\pi/2$ and $\theta_{\mathrm{dua}}=3\pi/2$ — the two angles of the family that the source assigns to the muon and the antimuon. Then $M=m+3mq_{\mathrm{m}}/e$, and the Dirac quantisation condition for a monopole, $\frac{2\pi eq_{\mathrm{m}}}{h\,c}=n/2$, gives $q_{\mathrm{m}}=en/2\alpha$ with $\alpha=\frac{2\pi e^{2}}{h\,c}$ the fine-structure constant, so
+with $q_{\mathrm{m}}$ the magnetic charge. The $3$ carries the normalisation, and the source does not display the step: it fixes $F=-k\,(\frac{e}{2\pi\nu_m})\,\tilde{Ξ}\vec e_z\tilde{Ξ}^{\natural}$ with $k=2\pi/3$ and states only that (6.5) follows "as in section 4". The natural reading is the Gaussian $4\pi/c$ on the current, with the $\tfrac12$ of the spinorial Maxwell equation, against $k$: $4\pi/(2k)=3$. That reconstruction is not printed, so the coefficient stands or falls with (6.5) as it appears. What $k$ does **not** do is fix the dimensions — $[F]=QL^{-2}$ and $[\frac{e}{2\pi\nu_m}]=QL$ already force $[\tilde{Ξ}]=L^{-3/2}$ — so its value is chosen for the spectrum. The equation is a Dirac–Hestenes equation exactly when $N=0$, that is at $\theta_{\mathrm{dua}}=\pi/2$ and $\theta_{\mathrm{dua}}=3\pi/2$ — the two angles of the family that the source assigns to the muon and the antimuon. Then $M=m+3mq_{\mathrm{m}}/e$, and the Dirac quantisation condition for a monopole, $\frac{2\pi eq_{\mathrm{m}}}{h\,c}=n/2$, gives $q_{\mathrm{m}}=en/2\alpha$ with $\alpha=\frac{2\pi e^{2}}{h\,c}$ the fine-structure constant, so
 
 $$
 M=m\left(1+\frac{3n}{2\alpha}\right),\qquad n=1:\quad M=206.55\,m_e=105.5\ \mathrm{MeV},
@@ -438,10 +438,10 @@ The corpus has two spellings of the massive Dirac equation, and the source's equ
 **The one-sided pair.** Two equations, one per value read by the test, both gradients acting from the left:
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$$
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$$
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}.
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}.
 $$
 
 The second gradient is the quaternion conjugate of the first, and it is the conjugation, not a side, that distinguishes them. The mass is the only term that relates the two parts, and at $m=0$ the pair splits into $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$, one Weyl equation per value.
@@ -457,7 +457,7 @@ with the derivative on the left and the mass on the right as the element $i\omeg
 **The source's equation has that shape.** Its Dirac–Hestenes equation
 
 $$
-(\tilde\nabla_\Phi\tilde{Ξ})(-\vec e_z)=k_m\tilde{Ξ}\,i\,\vec e_{x}$$
+(\tilde\nabla_\Phi\tilde{Ξ})(-\vec e_z)=2\pi\nu_m\tilde{Ξ}\,i\,\vec e_{x}$$
 
 acts with the derivative on the left and multiplies on the right by the fixed bivector and by the mass — a left action and two right factors, no second field. That is the shape of the corpus's own Dirac–Hestenes equation too, in which the mass also multiplies on the right, at a fixed bivector; the pair of values is a different spelling of the same physics, and the two-sided form is the one both the corpus's equation and the source's take. What it does not have is a second equation for the other value. The two values are the two halves of the one spinor under the source's **Weyl conditions**, which pair the volume element on one side with the fixed bivector on the other. Written as a condition on the one spinor it is $\tilde{Ξ}_{L}\omega=-\omega\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}\omega=+\omega\tilde{Ξ}_{R}$, that is $\tilde{Ξ}_{L}\vec e_z=-\vec e_z\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}\vec e_z=+\vec e_z\tilde{Ξ}_{R}$: the bivector enters twice, once as a product on the right and once as a product on the left. The condition is therefore a genuine constraint, and its two branches are the two four-dimensional halves of the algebra — the spinor commuting with $\vec e_z$ and the one anticommuting. What effects the split is the **pseudoscalar**, not a second field; and because in this frame the volume element and the spin plane are written with the one bivector, the source needs the single symbol $i$ for both jobs. The symbols are those of *Special Element Conventions*.
 
@@ -485,7 +485,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | The quaternion conjugate, $\sum_{\imath}\varepsilon_{\imath} e_{\imath}\partial/\partial R_{\imath}$, and the d'Alembertian $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_{t}}^2$ |
 | $\tilde F$, $\tilde F_0$, $\tilde F_e$, $\tilde F_+$ | Field biquaternion; the stationary subluminal solution; the electron field; the field of the $+$ branch |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
-| $f$, $\tilde K_{\Phi}$, $x$ | Constant 2-form; propagation vector ($N=0$); position |
+| $f$, $\tilde\Upsilon_{\Phi}$, $x$ | Constant 2-form; propagation vector ($N=0$); position |
 | $\vec E_0,\vec B_0,\vec W$ | Fields of the stationary solution and their common vector, $\mathrm{curl}\,\vec W=+\Omega\vec W$ in the corpus's gradient |
 | $\Omega$ | Intrinsic frequency of the subluminal solution ($\Omega$ in the Helmholtz equation $\vec\nabla_\Phi^2\xi+\Omega^2\xi=0$); the letter is reused, as in the source, for the bivector $\Omega=\sum_{\imath} g_{\imath\imath}v_{\imath}\Omega_{\imath}$ of the spinorial section |
 | $\varpi,\ q,\ \zeta_<$ | Frequency and axial wavenumber of the moving subluminal solution, with $\varpi^2-q^2=\Omega^2$ and group velocity $v=d\varpi/dq$; $\zeta_<$ is its oblate radial coordinate |

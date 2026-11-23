@@ -55,7 +55,7 @@ $$
 +p\,\langle  F_z\rangle+q\,\langle  F_z^2\rangle\;},
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 with the spin-independent and spin-dependent contact couplings
 

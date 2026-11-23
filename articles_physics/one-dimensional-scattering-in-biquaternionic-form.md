@@ -10,7 +10,7 @@ $$
 H = \left[-\frac{h^{2}}{8\pi^{2}\,m}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in  \mathbb{B}_{C},
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 a multiple of the identity, because a scalar potential couples to the scalar slot. The external field therefore does not act on the state module at all: it cannot rotate, mix, or relatively phase the two components of a state-module element. The scattering matrix factorises as $S \otimes I_2$ on the space of channels tensored with the module; every reflection and transmission amplitude is a scalar function of the energy; and there is **no spin-flip channel**, not because a spin-flip amplitude happens to be small, but because the operator that would produce it is not present. This is the scattering counterpart of the frozen module factor of the free-particle article, and it is what makes the subcategory's fields spin-0 scalars.
 
@@ -41,10 +41,10 @@ for the scalar envelope $\xi_{\mathrm{scl}}$, and every solution has the form $\
 Away from the points where $V$ jumps, the potential is constant on each interval, and the solutions are exponentials. Writing $V = V_j$ and
 
 $$
-k_{\Phi,j} = \sqrt{\frac{(2\pi)^{2} 2\,m\,(E-V_j)}{h^{2}}},
+2\pi\nu_{\Phi,j} = \sqrt{\frac{(2\pi)^{2} 2\,m\,(E-V_j)}{h^{2}}},
 $$
 
-with the convention that $k_{\Phi,j}$ is imaginary when $E < V_j$ (an evanescent wave, with decay constant $k_{\Phi,\mathrm{ev},j} = \frac{2\pi \sqrt{2m(V_j-E)}}{h}$), the general solution on the interval $j$ is
+with the convention that $\nu_{\Phi,j}$ is imaginary when $E < V_j$ (an evanescent wave, with decay constant $\nu_{\Phi,\mathrm{ev},j} = \frac{\sqrt{2m(V_j-E)}}{h}$), the general solution on the interval $j$ is
 
 $$
 \xi_{\mathrm{scl},j}(x) = A_j\,\exp(\,ik_{\Phi,j} x) + B_j\,\exp(-ik_{\Phi,j} x).
@@ -64,7 +64,7 @@ For a factorised field $\tilde{Ξ} = \xi_{\mathrm{scl}}\,\xi$ with $2\,\mathrm{S
 
 $$
 J =\frac{h}{4\pi \,i\,m}\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx} - \left(\frac{d\xi_{\mathrm{scl}}}{dx}\right)^*\xi_{\mathrm{scl}}\right)
-= c/k_m\,\mathrm{Im}\!\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx}\right).
+= c/\nu_m\,\mathrm{Im}\!\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx}\right).
 $$
 
 For a superposition of a right- and a left-moving exponential,
@@ -82,7 +82,7 @@ $$
 and the second bracket is purely imaginary (it is $Z - \bar Z$ for $Z = A^*B\exp(-2ikx)$), so it contributes nothing to $\mathrm{Im}({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx})$:
 
 $$
-J = c\,k_\Phi/k_m\left(|A|^2 - |B|^2\right).
+J = c\,2\pi\nu_{\Phi}/\nu_m\left(|A|^2 - |B|^2\right).
 $$
 
 The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the plain form of $\tilde{Ξ}^{\dagger}$ with $\frac{d\tilde{Ξ}}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{B}_{\Phi}$; the density $\rho = 2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = |\xi_{\mathrm{scl}}|^2$ is twice the scalar part of an element of $\mathbb{B}_{\Psi}$. As in the free case, the continuity equation pairs an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
@@ -91,7 +91,7 @@ The cancellation of the oscillatory terms is the algebraic content of the statem
 
 ### Amplitudes and the scattering matrix
 
-Consider a potential that vanishes outside a finite interval, $V(x)\to0$ as $|x|\to\infty$. A stationary state at energy $E =\frac{h^{2}\,k_\Phi^{2}}{8\pi^{2}\,m}> 0$ has the asymptotic form
+Consider a potential that vanishes outside a finite interval, $V(x)\to0$ as $|x|\to\infty$. A stationary state at energy $E =\frac{h^{2}\,4\pi^{2}\nu_{\Phi}^{2}}{8\pi^{2}\,m}> 0$ has the asymptotic form
 
 $$
 \xi_{\mathrm{scl}}(x) \longrightarrow
@@ -101,7 +101,7 @@ C\,\exp(\,ikx) + D\,\exp(-ikx), & x\to+\infty.
 \end{cases}
 $$
 
-The four coefficients are related linearly by the **scattering matrix** $S(k_\Phi)$, defined by
+The four coefficients are related linearly by the **scattering matrix** $S(\nu_{\Phi})$, defined by
 
 $$
 \begin{pmatrix} C \ B \end{pmatrix}
@@ -133,7 +133,7 @@ both taken with the same asymptotic wave vector, as is the case when the potenti
 Flux conservation across the scattering region is the statement that $J$ evaluated to the left equals $J$ evaluated to the right. Using the current derived above,
 
 $$
-c\,k_\Phi/k_m\left(|A|^2 - |B|^2\right) = c\,k_\Phi/k_m\left(|C|^2 - |D|^2\right),
+c\,\nu_{\Phi}/\nu_m\left(|A|^2 - |B|^2\right) = c\,\nu_{\Phi}/\nu_m\left(|C|^2 - |D|^2\right),
 $$
 
 or, in matrix form,
@@ -160,38 +160,38 @@ Unitarity of $S$ is thus the algebraic form of flux conservation. In the framewo
 
 ### The step
 
-Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_{\Phi,1} = \frac{2\pi \sqrt{2mE}}{h}$ and $k_{\Phi,2} = \frac{2\pi \sqrt{2m(E-V_0)}}{h}$. Continuity of $\xi_{\mathrm{scl}}$ and $\partial\xi_{\mathrm{scl}}/\partial r_x$ at the origin, with the ansatz $\xi_{\mathrm{scl}} = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\xi_{\mathrm{scl}} = t\exp(ik_2x)$ on the right, gives
+Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $\nu_{\Phi,1} = \frac{\sqrt{2mE}}{h}$ and $\nu_{\Phi,2} = \frac{\sqrt{2m(E-V_0)}}{h}$. Continuity of $\xi_{\mathrm{scl}}$ and $\partial\xi_{\mathrm{scl}}/\partial r_x$ at the origin, with the ansatz $\xi_{\mathrm{scl}} = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\xi_{\mathrm{scl}} = t\exp(ik_2x)$ on the right, gives
 
 $$
 1 + r = t,
 \qquad
-k_{\Phi,1}(1-r) = k_{\Phi,2} t,
+2\pi\nu_{\Phi,1}(1-r) = 2\pi\nu_{\Phi,2} t,
 $$
 
 whence
 
 $$
-t = \frac{2k_{\Phi,1}}{k_{\Phi,1}+k_{\Phi,2}},
+t = \frac{4\pi\nu_{\Phi,1}}{2\pi\nu_{\Phi,1}+2\pi\nu_{\Phi,2}},
 \qquad
-r = \frac{k_{\Phi,1}-k_{\Phi,2}}{k_{\Phi,1}+k_{\Phi,2}}.
+r = \frac{2\pi\nu_{\Phi,1}-2\pi\nu_{\Phi,2}}{2\pi\nu_{\Phi,1}+2\pi\nu_{\Phi,2}}.
 $$
 
 The transmission and reflection coefficients require the ratio of the currents, and because the wave vectors differ on the two sides the flux factor is the ratio of group velocities:
 
 $$
-\boxed{\;T = \frac{k_{\Phi,2}}{k_{\Phi,1}}|t|^2 = \frac{4k_{\Phi,1}k_{\Phi,2}}{(k_{\Phi,1}+k_{\Phi,2})^2},
+\boxed{\;T = \frac{2\pi\nu_{\Phi,2}}{2\pi\nu_{\Phi,1}}|t|^2 = \frac{42\pi\nu_{\Phi,1}2\pi\nu_{\Phi,2}}{(2\pi\nu_{\Phi,1}+2\pi\nu_{\Phi,2})^2},
 \qquad
-R = |r|^2 = \left(\frac{k_{\Phi,1}-k_{\Phi,2}}{k_{\Phi,1}+k_{\Phi,2}}\right)^2,
+R = |r|^2 = \left(\frac{2\pi\nu_{\Phi,1}-2\pi\nu_{\Phi,2}}{2\pi\nu_{\Phi,1}+2\pi\nu_{\Phi,2}}\right)^2,
 \qquad
 R + T = 1\;}.
 $$
 
-The coefficients are those of a sudden change of impedance; the vanishing of $T$ when $k_{\Phi,2}\to0$ is the statement that the wave cannot enter a classically forbidden region at threshold. For $E<V_0$ there is no transmitted wave vector; $r$ has unit modulus, $R=1$, and the solution on the right is the evanescent wave
+The coefficients are those of a sudden change of impedance; the vanishing of $T$ when $\nu_{\Phi,2}\to0$ is the statement that the wave cannot enter a classically forbidden region at threshold. For $E<V_0$ there is no transmitted wave vector; $r$ has unit modulus, $R=1$, and the solution on the right is the evanescent wave
 
 $$
-\xi_{\mathrm{scl}}(x) = t\,\exp(-k_{\Phi,\mathrm{ev}} x),
+\xi_{\mathrm{scl}}(x) = t\,\exp(-2\pi\nu_{\Phi,\mathrm{ev}} x),
 \qquad
-k_{\Phi,\mathrm{ev}} = \sqrt{\frac{(2\pi)^{2} 2\,m\,(V_0-E)}{h^{2}}},
+2\pi\nu_{\Phi,\mathrm{ev}} = \sqrt{\frac{(2\pi)^{2} 2\,m\,(V_0-E)}{h^{2}}},
 $$
 
 whose current vanishes identically. The flux is entirely reflected.
@@ -204,42 +204,42 @@ $$
 \xi_{\mathrm{scl}}(x) =
 \begin{cases}
 \exp(ikx)+r\exp(-ikx), & x<0,\\
-A\,\exp(k_{\Phi,\mathrm{ev}} x)+B\,\exp(-k_{\Phi,\mathrm{ev}} x), & 0<x<a,\\
+A\,\exp(2\pi\nu_{\Phi,\mathrm{ev}} x)+B\,\exp(-2\pi\nu_{\Phi,\mathrm{ev}} x), & 0<x<a,\\
 t\,\exp(ikx), & x>a,
 \end{cases}
 \qquad
-k_{\Phi,\mathrm{ev}} = \sqrt{\frac{(2\pi)^{2} 2\,m\,(V_0-E)}{h^{2}}}.
+2\pi\nu_{\Phi,\mathrm{ev}} = \sqrt{\frac{(2\pi)^{2} 2\,m\,(V_0-E)}{h^{2}}}.
 $$
 
 Matching $\xi_{\mathrm{scl}}$ and $d\xi_{\mathrm{scl}}/dx$ at $0$ and $a$ gives, after eliminating the interior coefficients,
 
 $$
-t = \frac{4ikk_{\Phi,\mathrm{ev}}\,\exp(-ika)}{(k_\Phi+ik_{\Phi,\mathrm{ev}})^2 \exp(-k_{\Phi,\mathrm{ev}} a) - (k_\Phi-ik_{\Phi,\mathrm{ev}})^2 \exp(+k_{\Phi,\mathrm{ev}} a)},
+t = \frac{4ik2\pi\nu_{\Phi,\mathrm{ev}}\,\exp(-ika)}{(2\pi\nu_{\Phi}+2\pi i\nu_{\Phi,\mathrm{ev}})^2 \exp(-2\pi\nu_{\Phi,\mathrm{ev}} a) - (2\pi\nu_{\Phi}-2\pi i\nu_{\Phi,\mathrm{ev}})^2 \exp(+2\pi\nu_{\Phi,\mathrm{ev}} a)},
 $$
 
 and therefore
 
 $$
-\boxed{\;T = |t|^2 = \left[1 + \frac{V_0^2\,\sinh^2(k_{\Phi,\mathrm{ev}} a)}{4E\,(V_0-E)}\right]^{-1},
+\boxed{\;T = |t|^2 = \left[1 + \frac{V_0^2\,\sinh^2(2\pi\nu_{\Phi,\mathrm{ev}} a)}{4E\,(V_0-E)}\right]^{-1},
 \qquad
 R = 1 - T\;}.
 $$
 
-For $E>V_0$ the interior wave is oscillatory with $k_{\Phi,2} = \frac{2\pi \sqrt{2m(E-V_0)}}{h}$, and the same matching gives
+For $E>V_0$ the interior wave is oscillatory with $\nu_{\Phi,2} = \frac{\sqrt{2m(E-V_0)}}{h}$, and the same matching gives
 
 $$
-T = \left[1 + \frac{V_0^2\,\sin^2(k_{\Phi,2} a)}{4E\,(E-V_0)}\right]^{-1},
+T = \left[1 + \frac{V_0^2\,\sin^2(2\pi\nu_{\Phi,2} a)}{4E\,(E-V_0)}\right]^{-1},
 $$
 
-which oscillates between one and the minimum value $[1+V_0^2/4E(E-V_0)]^{-1}$ reached at $k_{\Phi,2}a = (n+\tfrac12)\pi$. These are the Ramsauer–Townsend resonances: the barrier becomes transparent at the energies for which it spans an integer number of half wavelengths, and it is most reflective for the half-integer values. The transmission never vanishes for $E>V_0$; at $E\to V_0^+$ the expression tends to the removable value $[1+\frac{mV_{0}\,a^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}]^{-1}$, the same limit that the below-barrier formula approaches from the other side and that the matching computation reproduces numerically.
+which oscillates between one and the minimum value $[1+V_0^2/4E(E-V_0)]^{-1}$ reached at $2\pi\nu_{\Phi,2}a = (n+\tfrac12)\pi$. These are the Ramsauer–Townsend resonances: the barrier becomes transparent at the energies for which it spans an integer number of half wavelengths, and it is most reflective for the half-integer values. The transmission never vanishes for $E>V_0$; at $E\to V_0^+$ the expression tends to the removable value $[1+\frac{mV_{0}\,a^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}]^{-1}$, the same limit that the below-barrier formula approaches from the other side and that the matching computation reproduces numerically.
 
-For a thick barrier, $\exp(k_{\Phi,\mathrm{ev}} a)\gg1$, the exact formula reduces to the exponential law
+For a thick barrier, $\exp(\nu_{\Phi,\mathrm{ev}} a)\gg1$, the exact formula reduces to the exponential law
 
 $$
-T \approx \frac{16\,E\,(V_0-E)}{V_0^2}\;\exp(-2k_{\Phi,\mathrm{ev}} a),
+T \approx \frac{16\,E\,(V_0-E)}{V_0^2}\;\exp(-2\nu_{\Phi,\mathrm{ev}} a),
 $$
 
-whose exponent $2k_{\Phi,\mathrm{ev}} a =\frac{2\pi 2}{h}\int_0^a\sqrt{2m(V_0-E)}\,dx$ is the leading WKB tunnelling factor and whose prefactor is the standard connection amplitude. The formula and its asymptote were verified numerically: the transfer-matrix matching and the closed expression for $T$ agree to a relative error below $2\times10^{-14}$ at the sampled energies, $R+T=1$ holds to $10^{-12}$, the $E\to V_0$ limit of the matching reproduces the removable value $T = [1+\frac{mV_{0}\,a^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}]^{-1}$, and the thick-barrier ratio (exact over asymptotic) at $E=0.4V_0$, $k_{\Phi,\mathrm{ev}} a = 6$ is $0.999989$. The checks used a stationary state that is itself a superposition of an incoming and a reflected wave, not a single plane wave, and were performed in explicit complex arithmetic with $k_m=k_{t}^{\prime}=1$.
+whose exponent $4\pi\nu_{\Phi,\mathrm{ev}} a =\frac{2}{h}\int_0^a\sqrt{2m(V_0-E)}\,dx$ is the leading WKB tunnelling factor and whose prefactor is the standard connection amplitude. The formula and its asymptote were verified numerically: the transfer-matrix matching and the closed expression for $T$ agree to a relative error below $2\times10^{-14}$ at the sampled energies, $R+T=1$ holds to $10^{-12}$, the $E\to V_0$ limit of the matching reproduces the removable value $T = [1+\frac{mV_{0}\,a^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}]^{-1}$, and the thick-barrier ratio (exact over asymptotic) at $E=0.4V_0$, $2\pi\nu_{\Phi,\mathrm{ev}} a = 6$ is $0.999989$. The checks used a stationary state that is itself a superposition of an incoming and a reflected wave, not a single plane wave, and were performed in explicit complex arithmetic with $\nu_m=\nu_t^{\prime}=1$.
 
 ### The delta potential
 
@@ -254,7 +254,7 @@ $$
 the second obtained by integrating the equation across the origin. For $E>0$, with $\xi_{\mathrm{scl}} = \exp(ikx)+r\exp(-ikx)$ for $x<0$ and $\xi_{\mathrm{scl}} = t\exp(ikx)$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) =\frac{(2\pi)^{2} 2\,m\,\lambda}{h^{2}}t$, so with the dimensionless coupling
 
 $$
-\beta =\frac{(2\pi)^{2} m\,\lambda}{h^{2}\,k_\Phi},
+\beta =\frac{(2\pi)^{2} m\,\lambda}{h^{2}\,2\pi\nu_{\Phi}},
 $$
 
 one finds
@@ -272,22 +272,22 @@ $$
 with $R+T=1$ for every $\beta$. For an attractive delta well, $\lambda<0$, there is exactly one bound state, at
 
 $$
-E_b = -\frac{m\,\lambda^{2}}{2\,\frac{h^{2}}{4\pi^{2}}} = -\frac{h^{2}\,k_{\Phi,\mathrm{ev},b}^{2}}{8\pi^{2}\,m},
+E_b = -\frac{m\,\lambda^{2}}{2\,\frac{h^{2}}{4\pi^{2}}} = -\frac{h^{2}\,4\pi^{2}\nu_{\Phi,\mathrm{ev},b}^{2}}{8\pi^{2}\,m},
 \qquad
-k_{\Phi,\mathrm{ev},b} =\frac{(2\pi)^{2} m\,|\lambda|}{h^{2}},
+2\pi\nu_{\Phi,\mathrm{ev},b} =\frac{(2\pi)^{2} m\,|\lambda|}{h^{2}},
 $$
 
-whose wave function $\exp(-k_{\Phi,\mathrm{ev},b}|x|)$ decays in both directions. The bound state's energy is fixed by the same matching condition continued to purely imaginary $k_\Phi = ik_{\Phi,\mathrm{ev},b}$; it is the pole that the transmission amplitude acquires on the negative energy axis.
+whose wave function $\exp(-\nu_{\Phi,\mathrm{ev},b}|x|)$ decays in both directions. The bound state's energy is fixed by the same matching condition continued to purely imaginary $\nu_{\Phi} = i\nu_{\Phi,\mathrm{ev},b}$; it is the pole that the transmission amplitude acquires on the negative energy axis.
 
 ### The square well and resonances
 
-Let $V(x) = -V_0$ on $0<x<a$, $V_0>0$, and zero elsewhere, with $E>0$. The interior wave vector is $k_{\Phi,2} = \frac{2\pi \sqrt{2m(E+V_0)}}{h}$. Matching as for the barrier gives
+Let $V(x) = -V_0$ on $0<x<a$, $V_0>0$, and zero elsewhere, with $E>0$. The interior wave vector is $\nu_{\Phi,2} = \frac{\sqrt{2m(E+V_0)}}{h}$. Matching as for the barrier gives
 
 $$
-T = \left[1 + \frac{V_0^2\sin^2(k_{\Phi,2}a)}{4E(E+V_0)}\right]^{-1},
+T = \left[1 + \frac{V_0^2\sin^2(2\pi\nu_{\Phi,2}a)}{4E(E+V_0)}\right]^{-1},
 $$
 
-so the well is transparent whenever $k_{\Phi,2}a = n\pi$, that is, at the energies for which the well holds an integer number of half wavelengths. Away from these resonances the transmission is below one, and the reflection is the resonant remainder. The transmission peaks narrow as the well deepens, and the resonance poles in the complex energy plane are the quasibound states. The pole itself — its displacement off the real axis by the coupling to the continuum, and the lifetime it fixes — is treated in *The Unstable State and the Complex Energy Pole in Biquaternionic Form*, where this sentence is developed. For $E<0$ the same matching condition quantises a finite set of bound states.
+so the well is transparent whenever $2\pi\nu_{\Phi,2}a = n\pi$, that is, at the energies for which the well holds an integer number of half wavelengths. Away from these resonances the transmission is below one, and the reflection is the resonant remainder. The transmission peaks narrow as the well deepens, and the resonance poles in the complex energy plane are the quasibound states. The pole itself — its displacement off the real axis by the coupling to the continuum, and the lifetime it fixes — is treated in *The Unstable State and the Complex Energy Pole in Biquaternionic Form*, where this sentence is developed. For $E<0$ the same matching condition quantises a finite set of bound states.
 
 The formulas for the barrier and the well are the same expression continued in the sign of $V_0$; the barrier's evanescent region and the well's resonant region are two interpretations of one matching problem. Their common structure — a single pair of matching conditions at each boundary, and a flux identity — is what makes the transfer matrix of the next section useful.
 
@@ -295,13 +295,13 @@ The formulas for the barrier and the well are the same expression continued in t
 
 ### The transfer matrix
 
-It is convenient to package the matching across a region as a transfer matrix acting on the coefficient column $(A,B)$ at a fixed reference plane. Across a step from wave vector $k_{\Phi,1}$ to $k_{\Phi,2}$ at the origin, continuity of $\xi_{\mathrm{scl}}$ and $d\xi_{\mathrm{scl}}/dx$ gives
+It is convenient to package the matching across a region as a transfer matrix acting on the coefficient column $(A,B)$ at a fixed reference plane. Across a step from wave vector $\nu_{\Phi,1}$ to $\nu_{\Phi,2}$ at the origin, continuity of $\xi_{\mathrm{scl}}$ and $d\xi_{\mathrm{scl}}/dx$ gives
 
 $$
 \begin{pmatrix} A \ B \end{pmatrix}
 =
 \frac{1}{2}
-\begin{pmatrix} 1 + k_{\Phi,2}/k_{\Phi,1} & 1 - k_{\Phi,2}/k_{\Phi,1} \\[2pt] 1 - k_{\Phi,2}/k_{\Phi,1} & 1 + k_{\Phi,2}/k_{\Phi,1} \end{pmatrix}
+\begin{pmatrix} 1 + 2\pi\nu_{\Phi,2}/\nu_{\Phi,1} & 1 - 2\pi\nu_{\Phi,2}/\nu_{\Phi,1} \\[2pt] 1 - 2\pi\nu_{\Phi,2}/\nu_{\Phi,1} & 1 + 2\pi\nu_{\Phi,2}/\nu_{\Phi,1} \end{pmatrix}
 \begin{pmatrix} A_2 \ B_2 \end{pmatrix},
 $$
 
@@ -326,7 +326,7 @@ M_\delta(\beta) =
 -i\beta & 1 - i\beta
 \end{pmatrix},
 \qquad
-\beta =\frac{(2\pi)^{2} m\,\lambda}{h^{2}\,k_\Phi},
+\beta =\frac{(2\pi)^{2} m\,\lambda}{h^{2}\,2\pi\nu_{\Phi}},
 $$
 
 as one verifies by eliminating $B_2$ with the outgoing condition $B_2=0$ and recovering $t = (1+i\beta)^{-1}$ and $r = -i\beta/(1+i\beta)$. With that convention the matrix has unit determinant, reflecting the flux preservation of the transfer relation, and its product with a propagation matrix carries the phase accumulated between two scatterers. The composition law also shows how resonances arise: a single barrier has a monotonically rising $T$, whereas two barriers separated by a well have a transmission with sharp peaks at the energies for which the round-trip phase is a multiple of $2\pi$. The algebra of the product, not any new input, produces the resonance structure.
@@ -347,7 +347,7 @@ $$
 [\tilde{\mathcal S}_{\Psi},\tilde U] = 0,
 $$
 
-and the scattering is invariant under the module's transformations. The amplitudes $r,r_2,t,t_2$ are scalar functions of $k_\Phi$; the reflection and transmission phases are central; the Wigner time delay
+and the scattering is invariant under the module's transformations. The amplitudes $r,r_2,t,t_2$ are scalar functions of $\nu_{\Phi}$; the reflection and transmission phases are central; the Wigner time delay
 
 $$
 \tau_W =\frac{h}{2\pi E}\arg t(E)
@@ -375,7 +375,7 @@ $$
 \xi_{\mathrm{scl},b} \in L^2(\mathbb{R}),
 $$
 
-and they are the discrete part of the spectrum of the central Hamiltonian. They are not on the zero divisor cone of the algebra — that cone is a constraint on the algebra's elements, not on the energy — and they are not scattering states; the distinction between the discrete and continuous spectrum is the analytic distinction between the poles of the $S$-matrix in the complex $k_\Phi$-plane and its cut. The biquaternion framework inherits this distinction unchanged.
+and they are the discrete part of the spectrum of the central Hamiltonian. They are not on the zero divisor cone of the algebra — that cone is a constraint on the algebra's elements, not on the energy — and they are not scattering states; the distinction between the discrete and continuous spectrum is the analytic distinction between the poles of the $S$-matrix in the complex $\nu_{\Phi}$-plane and its cut. The biquaternion framework inherits this distinction unchanged.
 
 The one-dimensional bound-state count obeys Levinson's theorem, which in one dimension carries a half-unit offset. With $\delta = \arg t$ the transmission phase, the threshold and asymptotic values differ by
 
@@ -383,17 +383,17 @@ $$
 \delta(0)-\delta(\infty) = \pi\left(n_b-\tfrac12\right),
 $$
 
-where the change is understood with the trivial winding contributed by the resonances removed; the half-unit term is the one-dimensional threshold remnant. For the attractive delta potential, $n_b=1$ and the phase is available in closed form: from $t=(1+i\beta)^{-1}$ with $\beta=\frac{(2\pi)^{2} m\,\lambda}{h^{2}\,k_\Phi}$ and $\lambda<0$,
+where the change is understood with the trivial winding contributed by the resonances removed; the half-unit term is the one-dimensional threshold remnant. For the attractive delta potential, $n_b=1$ and the phase is available in closed form: from $t=(1+i\beta)^{-1}$ with $\beta=\frac{(2\pi)^{2} m\,\lambda}{h^{2}\,2\pi\nu_{\Phi}}$ and $\lambda<0$,
 
 $$
-\arg t = \arctan\!\left(\frac{k_{\Phi,\mathrm{ev},b}}{k}\right),
+\arg t = \arctan\!\left(\frac{2\pi\nu_{\Phi,\mathrm{ev},b}}{k}\right),
 \qquad
-k_{\Phi,\mathrm{ev},b} =\frac{(2\pi)^{2} m\,|\lambda|}{h^{2}},
+2\pi\nu_{\Phi,\mathrm{ev},b} =\frac{(2\pi)^{2} m\,|\lambda|}{h^{2}},
 $$
 
 so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change of $\pi/2=\pi(1-\tfrac12)$ as the theorem requires. Each additional bound state shifts the threshold phase by $\pi$. The theorem is a useful bookkeeping check on any numerical solution of the matching problem, and the delta is the case in which it can be checked by hand.
 
-**The count is a winding number, and that is what makes the theorem a theorem rather than a fit.** The transmission amplitude is the reciprocal of a Jost function, $t=1/W(k_\Phi)$, with $W$ analytic in the upper half of the wave-number plane; its zeros there are the bound states, at $k_\Phi=i\kappa$ with $\kappa>0$, because a zero of $W$ on the imaginary axis is the homogeneous solution that decays on both sides. **The change of $\arg t$ along the real axis is then the change of a closed contour's argument**, and closing the contour above turns it into $2\pi$ times the number of zeros minus the number of poles enclosed. The phase therefore counts zeros without an integral being evaluated, and the count is an integer because a winding number is one. The half-unit offset in the display above is the threshold's fixed contribution: it is present for every potential, it is not part of the count, and it is the reason the theorem is stated with a $\pi/2$ and not with a $\pi$. **What the reading adds is not a number but the reason one statement holds for every potential**: it is the argument principle applied to the analytic function the transform provides.
+**The count is a winding number, and that is what makes the theorem a theorem rather than a fit.** The transmission amplitude is the reciprocal of a Jost function, $t=1/W(2\pi\nu_{\Phi})$, with $W$ analytic in the upper half of the wave-number plane; its zeros there are the bound states, at $2\pi\nu_{\Phi}=i\kappa$ with $\kappa>0$, because a zero of $W$ on the imaginary axis is the homogeneous solution that decays on both sides. **The change of $\arg t$ along the real axis is then the change of a closed contour's argument**, and closing the contour above turns it into $2\pi$ times the number of zeros minus the number of poles enclosed. The phase therefore counts zeros without an integral being evaluated, and the count is an integer because a winding number is one. The half-unit offset in the display above is the threshold's fixed contribution: it is present for every potential, it is not part of the count, and it is the reason the theorem is stated with a $\pi/2$ and not with a $\pi$. **What the reading adds is not a number but the reason one statement holds for every potential**: it is the argument principle applied to the analytic function the transform provides.
 
 ## What the Biquaternion Form Adds
 
@@ -427,9 +427,9 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{h^{2}}{8\pi^{2}\,m}\partial^2/\partial R_x^2 + V(r_x))e_t\,\tilde{Ξ} = E\tilde{Ξ}$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\tilde{Ξ} = \xi_{\mathrm{scl}}\xi$ with $\xi$ a constant module element, and no potential treated here acts on the module.
 
-The current is $J =\frac{h}{4\pi \,i\,m}2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger\tilde{Ξ})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = c\,k_\Phi/k_m(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
+The current is $J =\frac{h}{4\pi \,i\,m}2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger\tilde{Ξ})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = c\,2\pi\nu_{\Phi}/\nu_m(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
 
-The step gives $T = 4k_{\Phi,1}k_{\Phi,2}/(k_{\Phi,1}+k_{\Phi,2})^2$ with the flux factor $k_{\Phi,2}/k_{\Phi,1}$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(k_{\Phi,\mathrm{ev}} a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-2k_{\Phi,\mathrm{ev}} a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta =\frac{(2\pi)^{2} m\,\lambda}{h^{2}\,k_\Phi}$, and a single bound state at $E_b = -\frac{m\,\lambda^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ for the attractive case; the square well gives resonant transparency at $k_{\Phi,2}a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
+The step gives $T = 42\pi\nu_{\Phi,1}2\pi\nu_{\Phi,2}/(2\pi\nu_{\Phi,1}+2\pi\nu_{\Phi,2})^2$ with the flux factor $\nu_{\Phi,2}/\nu_{\Phi,1}$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(2\pi\nu_{\Phi,\mathrm{ev}} a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-2\nu_{\Phi,\mathrm{ev}} a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta =\frac{(2\pi)^{2} m\,\lambda}{h^{2}\,2\pi\nu_{\Phi}}$, and a single bound state at $E_b = -\frac{m\,\lambda^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ for the attractive case; the square well gives resonant transparency at $2\pi\nu_{\Phi,2}a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
 
 The biquaternion content is that the potential couples only to the scalar slot, so the $S$-matrix is central in the module, $S\otimes I_2$. It is a $*$-unitary element $\tilde{\mathcal S}_{\Psi}\tilde{\mathcal S}_{\Psi}^{*} = e_t$ and not a unit-norm rotor. There is no spin-flip or spin-dependent amplitude, because the operator that would produce one is not in the central Hamiltonian. The framework thus supplies the flux, the sector pairing, the unitarity, and the absence of module dynamics; it does not supply the matching conditions or the tunnelling law, which are scalar analysis, and it adds no prediction distinguishing the reformulation from scalar Schrödinger scattering.
 
@@ -445,14 +445,14 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong \mathbb{C}^2$ | State module |
 | $H = [-\frac{h^{2}}{8\pi^{2}\,m}\partial^2/\partial R_x^2 + V(r_x)]e_t$ | Central Hamiltonian |
 | $\tilde{Ξ} = \xi_{\mathrm{scl}}\,\xi$ | Factorised stationary state |
-| $k_{\Phi,j} = \frac{2\pi \sqrt{2m(E-V_j)}}{h}$ | Wave vector in region $j$; imaginary when $E<V_j$ |
-| $k_{\Phi,\mathrm{ev},j} = \frac{2\pi \sqrt{2m(V_j-E)}}{h}$ | Decay constant in a forbidden region |
+| $\nu_{\Phi,j} = \frac{\sqrt{2m(E-V_j)}}{h}$ | Wave vector in region $j$; imaginary when $E<V_j$ |
+| $\nu_{\Phi,\mathrm{ev},j} = \frac{\sqrt{2m(V_j-E)}}{h}$ | Decay constant in a forbidden region |
 | $J =\frac{h}{4\pi \,i\,m}2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger\tilde{Ξ})$ | One-dimensional current |
-| $J = c\,k_\Phi/k_m(|A|^2-|B|^2)$ | Current for a two-exponential superposition |
+| $J = c\,2\pi\nu_{\Phi}/\nu_m(|A|^2-|B|^2)$ | Current for a two-exponential superposition |
 | $\rho = 2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = |\xi_{\mathrm{scl}}|^2$ | Density |
 | $S = \begin{pmatrix} t & r_2 \ r & t_2\end{pmatrix}$ | Scattering matrix; $*$-unitary, $S^{*} S = I_2$ |
 | $R = |r|^2$, $T = |t|^2$ | Flux reflection and transmission |
-| $\beta =\frac{(2\pi)^{2} m\,\lambda}{h^{2}\,k_\Phi}$ | Dimensionless delta-potential coupling |
+| $\beta =\frac{(2\pi)^{2} m\,\lambda}{h^{2}\,2\pi\nu_{\Phi}}$ | Dimensionless delta-potential coupling |
 | $E_b = -\frac{m\,\lambda^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ | Bound state of the attractive delta |
 | $M$ | Transfer matrix; preserves the flux form |
 | $\tau_W =\frac{h\,\arg\,t}{2\pi E}$ | Wigner time delay; a scalar |

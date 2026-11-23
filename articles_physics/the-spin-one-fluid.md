@@ -136,7 +136,7 @@ Both statements were checked: $\omega\wedge\omega$ vanished identically on the f
 With $\Gamma_{\imath}=\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}$ the frame's connection, the polar article's two equations are
 
 $$
-\bigl(\Box_\Phi-k_m^{2}\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^{2}\bigr)=0,
+\bigl(\Box_\Phi-4\pi^{2}\nu_m^{2}\bigr)\varrho+\varrho\sum_{\imath}\mathrm{Sc}\bigl(\Gamma_{\imath}^{2}\bigr)=0,
 \qquad
 \sum_{\imath}\Bigl(\partial_{\imath}\Gamma_{\imath}+\Gamma_{\imath}^{2}-\mathrm{Sc}\bigl(\Gamma_{\imath}^{2}\bigr)\Bigr)+2\sum_{\imath}\partial_{\imath}\ln \varrho\,\Gamma_{\imath}=0 .
 $$
@@ -144,7 +144,7 @@ $$
 For a fixed boost axis $\Gamma_{\imath}=\tfrac12\partial_{\imath}\theta_{\mathrm{rpd}}\,i\vec u_{\mathrm{b}}$ and $\mathrm{Sc}(\Gamma_{\imath}^{2})=\tfrac14(\partial_{\imath}\theta_{\mathrm{rpd}})^{2}$, so
 
 $$
-\bigl(\Box_\Phi-k_m^{2}\bigr)\varrho+\tfrac14\,\varrho\sum_{\imath}\bigl(\partial_{\imath}\theta_{\mathrm{rpd}}\bigr)^{2}=0 .
+\bigl(\Box_\Phi-4\pi^{2}\nu_m^{2}\bigr)\varrho+\tfrac14\,\varrho\sum_{\imath}\bigl(\partial_{\imath}\theta_{\mathrm{rpd}}\bigr)^{2}=0 .
 $$
 
 The term that stands where a quantum potential stands is quadratic in the rapidity's gradient and not in the density's curvature. In the scalar case the corresponding term is $-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$, which carries two derivatives of $\varrho$ and vanishes for a uniform density; here the term carries two derivatives of an angular parameter and vanishes for a rigid flow. So the two are not the same object under another name, and the polar article says so. The consequence for the fluid is that a uniform spin-one fluid with a varying rapidity is not a solution of the mass-shell equation: the rapidity's gradient acts as a source for the density, and there is no classical fluid in which a shear feeds the mass term this way.
@@ -336,7 +336,7 @@ The Dirac word over-describes its fluid and the Proca word under-describes its f
 | $\mathsf{P}_{\imath\jmath}=g_{\imath\jmath}+u_{\imath} u_{\jmath}$ | the projector onto the rest space |
 | $\nabla_{\imath}=\sum_{\jmath}\mathsf{P}_{\imath\jmath}\partial_{\jmath}$ | the transverse gradient |
 | $S=\mathrm{Sc}((\tilde\nabla_\Phi)^\natural\tilde A_\Phi)$ | the Lorenz scalar, equal to $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} A_{\imath}$ |
-| $k_m=\frac{2\pi mc}{h}$ | the mass wave number |
+| $\nu_m=\frac{mc}{h}$ | the mass wave number |
 | $\langle\tilde Q\rangle_\natural$ | the quaternionic norm |
 
 ## Further Reading

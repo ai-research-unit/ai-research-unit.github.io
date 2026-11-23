@@ -12,7 +12,7 @@ What the article still does. It states the action's standard form by name; it li
 
 ## Conventions
 
-The conventions are the parent's, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is a family $\tilde\Xi_{\imath}\in\mathbb{B}$ with $\mu=0,1,2,3$, each split into its two chiral parts; the gradient is $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, the d'Alembertian $\Box_\Phi$; $k_m=\frac{2\pi mc}{h}$; the sign vector of the frame is $\varepsilon=(1,-1,-1,-1)$; the fixed direction of the trace constraint is $\vec e_z$.
+The conventions are the parent's, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is a family $\tilde\Xi_{\imath}\in\mathbb{B}$ with $\mu=0,1,2,3$, each split into its two chiral parts; the gradient is $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, the d'Alembertian $\Box_\Phi$; $\nu_m=\frac{mc}{h}$; the sign vector of the frame is $\varepsilon=(1,-1,-1,-1)$; the fixed direction of the trace constraint is $\vec e_z$.
 
 One symbol is used and not defined by this article. The literature's action is written with matrices that act on the spinor index. The parent's equation has no matrix, because the algebra's left and right multiplication supplies the action of the frame directly. Where this article names the standard action, it does so in the literature's notation and marks the matrices as unnamed, since their biquaternionic counterparts are the object the corpus has not built.
 
@@ -32,7 +32,7 @@ What the action must contain for the parent's results to follow.
 
 *Second, two multipliers.* The parent's trace constraint and its divergence constraint are primary and secondary conditions of the equation; an action that reproduces them must carry a multiplier for each, and the multipliers are the object the corpus has not built.
 
-*Third, the massless invariance.* The parent records the gauge freedom $\tilde\Xi_{\imath}\mapsto\tilde\Xi_{\imath}+\partial_{\imath}\epsilon$ at $k_m=0$. An action for the massless field must be invariant under it, which requires the field's trace to be absent from the action or removed by the first multiplier.
+*Third, the massless invariance.* The parent records the gauge freedom $\tilde\Xi_{\imath}\mapsto\tilde\Xi_{\imath}+\partial_{\imath}\epsilon$ at $\nu_m=0$. An action for the massless field must be invariant under it, which requires the field's trace to be absent from the action or removed by the first multiplier.
 
 **What is missing, precisely.** One object: an element or a pair of elements of $\mathbb{B}$ that contracts the vector index with the field's chiral structure and is not simply the frame. The frame gives $\vec e_\eta$, which contracts a vector index with a direction; the trace constraint needs a contraction that mixes the two chiralities of the vector index itself, and this family has not exhibited one.
 
@@ -52,7 +52,7 @@ Why the check is not optional. The spin-$\tfrac32$ equation has the well-known p
 
 The count, in one line. Four vector components, each with two chiralities: eight complex data. The trace constraint removes two, the divergence constraint removes two, and the pair of first-order equations removes half of the rest; the rest frame leaves four complex parameters, the quartet the parent exhibits. An action that produced only the pair would leave the quartet's neighbours in place, and the count would be four higher.
 
-The massless case. At $k_m=0$ the gauge freedom removes two more, and the physical count is the two helicities of a massless spin-$\tfrac32$ particle. The action's invariance under the gauge shift is what makes the count come out right, and it is the third item in the action's list of debts.
+The massless case. At $\nu_m=0$ the gauge freedom removes two more, and the physical count is the two helicities of a massless spin-$\tfrac32$ particle. The action's invariance under the gauge shift is what makes the count come out right, and it is the third item in the action's list of debts.
 
 What the constraints are not. They are not the Lorenz condition of the Proca article and not the phase continuity of the scalar: those remove a longitudinal mode of a vector, and these remove a vector-index trace. The difference is why the spin-$\tfrac32$ constraints need their own multipliers and cannot be inherited from the spin-one article.
 
@@ -72,7 +72,7 @@ Known from the equation, not from the action. The parent's comparison section re
 
 What the action would add. The Noether procedure would produce the same currents and would fix their normalisation relative to the action's normalisation. That is the one thing the equation cannot supply: a current is defined up to a constant, and the constant is the coupling in the action. So the currents are known in form and not in normalisation, and the corpus says so.
 
-**The sign of the charge.** At $k_m=0$ the massless field's gauge symmetry is not a phase symmetry, so there is no charge and no sign to fix; the massive field has no gauge freedom and no charge either. The spin-$\tfrac32$ field is neutral in this corpus, and the sign question does not arise — which is one more respect in which it resembles the Proca field and not the Dirac field.
+**The sign of the charge.** At $\nu_m=0$ the massless field's gauge symmetry is not a phase symmetry, so there is no charge and no sign to fix; the massive field has no gauge freedom and no charge either. The spin-$\tfrac32$ field is neutral in this corpus, and the sign question does not arise — which is one more respect in which it resembles the Proca field and not the Dirac field.
 
 Why the section exists at all. Because a reader is entitled to know what survives the absence. The currents survive in form; the normalisation, the multiplier structure and the variational derivation do not.
 
@@ -91,9 +91,9 @@ What would close it. One construction: an element of $\mathbb{B}$ that contracts
 This family has the Rarita–Schwinger equation and not its action. The standard action is named; its three debts are the index-chirality contraction, the two multipliers and the massless invariance; and the count of degrees of freedom is what those debts control. The currents survive in form and not in normalisation, and the spin-$\tfrac32$ field is neutral. The absence is the article's content, and it marks the boundary of the family's variational method at spin $\tfrac32$.
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_{\imath,R}=k_m\tilde\Xi_{\imath,L},
+\tilde\nabla_\Phi\tilde\Xi_{\imath,R}=2\pi\nu_m\tilde\Xi_{\imath,L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\imath,L}=k_m\tilde\Xi_{\imath,R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\imath,L}=2\pi\nu_m\tilde\Xi_{\imath,R},
 \qquad
 \tilde\Xi_0+\sum_\eta\vec e_\eta\tilde\Xi_k\vec e_z=0 .
 $$
@@ -106,7 +106,7 @@ $$
 | $e_t=1,\ \vec e_{\imath}^{2}=-e_t$ | Basis and its squares |
 | $\tilde\Xi_{\imath}$ | Rarita–Schwinger field, four elements of $\mathbb{B}$ |
 | $\tilde\Xi_{\imath,R},\ \tilde\Xi_{\imath,L}$ | The two chiral parts of each component |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $\vec e_z$ | Fixed direction of the trace constraint |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
 | $\psi_{\imath},\ \gamma_{\imath},\ \gamma_{\imath\jmath}$ | The literature's matrices, printed low and not adopted |

@@ -28,7 +28,7 @@ $$
 \mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)=\frac12\left(\xi_1^2+\xi_2^2\right),
 $$
 
-so that $\xi_1,\xi_2$ are the two real scalar fields of the sector and the kinetic term is $\frac12[(\partial\xi_1)^2+(\partial\xi_2)^2]$, each derivative an inverse length and the temporal one differentiating $r'_t$. The $\mathrm{U}(1)$ charge and current are those of the companion Noether article; the mass enters as the length $k_m=\frac{2\pi mc}{h}$ where it appears.
+so that $\xi_1,\xi_2$ are the two real scalar fields of the sector and the kinetic term is $\frac12[(\partial\xi_1)^2+(\partial\xi_2)^2]$, each derivative an inverse length and the temporal one differentiating $r'_t$. The $\mathrm{U}(1)$ charge and current are those of the companion Noether article; the mass enters as the length $\nu_m=\frac{mc}{h}$ where it appears.
 
 ## The Symmetry and Its Spontaneous Breaking
 
@@ -215,7 +215,7 @@ The counting is a statement about the geometry of the vacuum manifold, not about
 
 Below the radial mass the massive mode can be integrated out, and the Goldstone field is governed by an effective Lagrangian in which every term is a derivative: the canonical kinetic term, then a tower of higher-derivative operators suppressed by powers of $f=\sqrt2\,v$, with dimensionless coefficients fixed by the details of the radial sector. The functional, the variation that gives the free wave equation, the reality of the coefficients and the reason the series is an expansion in $p/\Lambda$ are written in [The Lagrangian and the Goldstone Effective Action](the-lagrangian-and-the-goldstone-effective-action.html). This article keeps the one consequence that the theorem itself is tested by.
 
-The derivative structure has a sharp consequence, the **soft limit**. The amplitude for a process with an additional Goldstone boson of momentum $k_\Phi$ is proportional to $k_\Phi$ at small momentum; in the limit $k\to0$ the amplitude with the extra Goldstone vanishes. The reason is visible in the effective Lagrangian: every Goldstone leg carries a derivative, so a leg with vanishing momentum contributes nothing, and the remaining amplitude is the amplitude without that leg. This "Adler zero" is the standard statement that softly emitted Goldstone bosons decouple, and it is why a broken continuous symmetry's low-energy theory is weakly coupled at low energy even when the underlying coupling is strong.
+The derivative structure has a sharp consequence, the **soft limit**. The amplitude for a process with an additional Goldstone boson of momentum $\nu_{\Phi}$ is proportional to $\nu_{\Phi}$ at small momentum; in the limit $k\to0$ the amplitude with the extra Goldstone vanishes. The reason is visible in the effective Lagrangian: every Goldstone leg carries a derivative, so a leg with vanishing momentum contributes nothing, and the remaining amplitude is the amplitude without that leg. This "Adler zero" is the standard statement that softly emitted Goldstone bosons decouple, and it is why a broken continuous symmetry's low-energy theory is weakly coupled at low energy even when the underlying coupling is strong.
 
 At the level of the field algebra the breaking is expressed by the charge's action on the Goldstone field. In components the charge acts as $[Ϙ_{\mathrm{fop}},\xi_{\mathrm{fop},1}]=-i\xi_{\mathrm{fop},2}$ and $[Ϙ_{\mathrm{fop}},\xi_{\mathrm{fop},2}]=+i\xi_{\mathrm{fop},1}$, so for the fluctuation fields $h$ and ${\vartheta_{\mathrm{fld}}}_{\mathrm{fop}}$ defined about the minimum,
 

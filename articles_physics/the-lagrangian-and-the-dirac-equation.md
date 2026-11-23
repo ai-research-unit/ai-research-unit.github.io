@@ -5,11 +5,11 @@
 *The Dirac Equation in Biquaternionic Form* writes the equation as a pair,
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_\Phi\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R,
 \qquad
-k_m=\frac{2\pi mc}{h},
+\nu_m=\frac{mc}{h},
 $$
 
 with $\tilde\Xi=\tilde\Xi_L+\tilde\Xi_R$ one element of $\mathbb{B}$ and the two subscripts naming its two parts. This article asks the question the Schrödinger companion asks: what action has this pair as its Euler–Lagrange equations, and what do the action's symmetries give?
@@ -36,7 +36,7 @@ The action is
 
 $$
 \boxed{\;
-S=\frac{h c}{4\pi}\int\mathrm{d}^4\varrho\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
+S=\frac{h c}{4\pi}\int\mathrm{d}^4\varrho\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,\tilde\nabla_\Phi\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
 $$
 
 Its two kinetic terms are diagonal in the parts and its mass term is off-diagonal. That arrangement is the two-component structure the equation itself has: each part carries its own derivative and the mass is what couples them.
@@ -88,9 +88,9 @@ $$
 
 and without the real part it is false: the imaginary part of $\mathrm{Sc}(\tilde\Xi^{*}\partial_{\imath}\tilde\Xi)$ is a current and not a derivative. The distinction is worth keeping, because it says exactly how much has been shown. The real part of the $i$-inserted functional is a boundary term; its imaginary part is not.
 
-What the emptiness does and does not prove. It does not prove that no real first-order action on one element exists. The standard Dirac action is a one-field action and is not empty, because its bilinear carries one element more than the candidate above: the Dirac adjoint's $\gamma_{0}$, which in this algebra is a right multiplication by $i\vec e_\eta$. The same repair is available here — a Hermitian right multiplier inside the bilinear makes the operator self-adjoint and the functional non-empty — and it gives the one-element equation $\tilde\nabla_\Phi\tilde\Xi=k_m\tilde\Xi$, which is one equation on one element and is not the pair.
+What the emptiness does and does not prove. It does not prove that no real first-order action on one element exists. The standard Dirac action is a one-field action and is not empty, because its bilinear carries one element more than the candidate above: the Dirac adjoint's $\gamma_{0}$, which in this algebra is a right multiplication by $i\vec e_\eta$. The same repair is available here — a Hermitian right multiplier inside the bilinear makes the operator self-adjoint and the functional non-empty — and it gives the one-element equation $\tilde\nabla_\Phi\tilde\Xi=2\pi\nu_m\tilde\Xi$, which is one equation on one element and is not the pair.
 
-**Therefore the split is a factorization, and the operator count is its reason.** The pair is not one operator applied once. The gradient acts on the part written $R$, the conjugated gradient acts on the part written $L$, and $k_m$ relates them. A first-order functional hosts one operator per slot, so the pair needs two slots, and the mass is the only term that can couple them, which is why it is off-diagonal. That is the variational reading of the parent's remark that the field is one element and the letters name two parts of it: the parts are what the action needs, they are not values, and the mass is what makes the two of them necessary.
+**Therefore the split is a factorization, and the operator count is its reason.** The pair is not one operator applied once. The gradient acts on the part written $R$, the conjugated gradient acts on the part written $L$, and $\nu_m$ relates them. A first-order functional hosts one operator per slot, so the pair needs two slots, and the mass is the only term that can couple them, which is why it is off-diagonal. That is the variational reading of the parent's remark that the field is one element and the letters name two parts of it: the parts are what the action needs, they are not values, and the mass is what makes the two of them necessary.
 
 Not examined here. The selection rule is a statement about the symbol's Hermiticity and belongs to the momentum reading, where the potential is an operator acting at a mode. In this article the potential is central and the question does not arise.
 
@@ -98,7 +98,7 @@ Not at issue here. The claim is that the action is real and that the pair has no
 
 ### The Two Settings: The Massless Case and the Two Phases
 
-At $k_m=0$ the action has two independent phase symmetries,
+At $\nu_m=0$ the action has two independent phase symmetries,
 
 $$
 \tilde\Xi_L\mapsto e^{i\alpha}\tilde\Xi_L,
@@ -106,9 +106,9 @@ $$
 \tilde\Xi_R\mapsto e^{i\beta}\tilde\Xi_R,
 $$
 
-with $\alpha$ and $\beta$ independent central angles. The sum $\alpha=\beta$ is the electric phase; the difference is the chiral phase. For $k_m\ne0$ the mass term carries $\tilde\Xi_L^{*}\tilde\Xi_R$ and its conjugate, both invariant under the sum and neither invariant under the difference, so the chiral symmetry is broken by the mass and by nothing else.
+with $\alpha$ and $\beta$ independent central angles. The sum $\alpha=\beta$ is the electric phase; the difference is the chiral phase. For $\nu_m\ne0$ the mass term carries $\tilde\Xi_L^{*}\tilde\Xi_R$ and its conjugate, both invariant under the sum and neither invariant under the difference, so the chiral symmetry is broken by the mass and by nothing else.
 
-**The chiral current is the difference of the two part-currents**, and it is conserved exactly when $k_m=0$. The article does not derive it: it is the same Noether computation as the electric one with the two signs opposite, and its conservation is the statement that the mass term is the only obstruction.
+**The chiral current is the difference of the two part-currents**, and it is conserved exactly when $\nu_m=0$. The article does not derive it: it is the same Noether computation as the electric one with the two signs opposite, and its conservation is the statement that the mass term is the only obstruction.
 
 One caution. The chiral symmetry of this action is a symmetry of the two-part functional. Whether it is a symmetry of the parent's equation read as a single equation is the same question as whether the split is canonical, and the answer is not needed here.
 
@@ -123,18 +123,18 @@ $$
 with the two residuals
 
 $$
-r_L=(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L-k_m\tilde\Xi_R,
+r_L=(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L-2\pi\nu_m\tilde\Xi_R,
 \qquad
-r_R=\tilde\nabla_\Phi\tilde\Xi_R-k_m\tilde\Xi_L .
+r_R=\tilde\nabla_\Phi\tilde\Xi_R-2\pi\nu_m\tilde\Xi_L .
 $$
 
 The coefficient, once. Take the $\tilde\Xi_L$ kinetic term alone. Varying $\tilde\Xi_L^{*}$ gives $\tfrac{h c}{4\pi}\mathrm{Re}\int\mathrm{Sc}[\delta\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L]$; varying $\tilde\Xi_L$ gives $\tfrac{h c}{4\pi}\mathrm{Re}\int\mathrm{Sc}[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\delta\tilde\Xi_L]$, and moving the operator onto the other slot by its self-adjointness gives exactly the same expression again. The two halves add, the $\tfrac12$ cancels, and the coefficient is $\frac{h}{2\pi} c$ with the residual as the bracket. The $\tfrac12$ in the action is put there exactly so that the coefficient comes out $\frac{h}{2\pi} c$ and not $2\frac{h}{2\pi} c$, and the factor that a naive count of the two halves suggests is the one it removes.
 
-Why this gives eight equations and not sixteen. The two residuals are elements of $\mathbb{B}$, and each has eight real components, so the pair is sixteen real equations on sixteen real unknowns. That is the count the parent's pair has. It is not an overdetermination, because the two lines are not independent on solutions: applying $(\tilde\nabla_\Phi)^{\natural}$ to the first and using the second gives the Klein–Gordon equation, $(\Box_\Phi-k_m^{2})\tilde\Xi_R=0$, which is the compatibility condition rather than a further equation.
+Why this gives eight equations and not sixteen. The two residuals are elements of $\mathbb{B}$, and each has eight real components, so the pair is sixteen real equations on sixteen real unknowns. That is the count the parent's pair has. It is not an overdetermination, because the two lines are not independent on solutions: applying $(\tilde\nabla_\Phi)^{\natural}$ to the first and using the second gives the Klein–Gordon equation, $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde\Xi_R=0$, which is the compatibility condition rather than a further equation.
 
 **Stationarity is the pair.** The pairing $\mathrm{Re}\,\mathrm{Sc}(\delta\tilde\Xi^{*}\,\cdot)$ is non-degenerate on the eight real directions of $\mathbb{B}$, so the vanishing of $\delta S$ for every variation is exactly $r_L=r_R=0$. No boundary term appears when the variation has compact support, and none appears when the fields are periodic in the spatial directions.
 
-The massless limit is two independent equations. At $k_m=0$ the residuals decouple, $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=0$ and $\tilde\nabla_\Phi\tilde\Xi_R=0$, and the action is a sum of two independent functionals. Each is a one-sided functional on its own part, and each is not empty. The contrast with the candidate rejected in the reality part of §*The Action* is exactly the $i$: without it the one-sided functional is real and its variation is the residual, and it is only the extra $i \frac{h}{2\pi} c$ that makes the operator anti-self-adjoint and the functional empty.
+The massless limit is two independent equations. At $\nu_m=0$ the residuals decouple, $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=0$ and $\tilde\nabla_\Phi\tilde\Xi_R=0$, and the action is a sum of two independent functionals. Each is a one-sided functional on its own part, and each is not empty. The contrast with the candidate rejected in the reality part of §*The Action* is exactly the $i$: without it the one-sided functional is real and its variation is the residual, and it is only the extra $i \frac{h}{2\pi} c$ that makes the operator anti-self-adjoint and the functional empty.
 
 ## The Constraints the Action Imposes: A First-Order Pair, and the Mass Does Not Change It
 
@@ -151,9 +151,9 @@ What the section does not claim. It does not compute the Dirac bracket, and noth
 The parent writes a second display of the same equation, in which the mass acts on the right,
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L i\vec v,
+\tilde\nabla_\Phi\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L i\vec v,
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R i\vec v,
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R i\vec v,
 $$
 
 with $\vec v$ a fixed unit spatial direction. That display has no action of its own, and the reason is structural rather than technical.
@@ -226,13 +226,13 @@ The operator setting. The action is written for a constant Hamiltonian, where th
 
 ## Summary
 
-The Dirac equation of this corpus is a pair, $\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$, with $k_m=\frac{2\pi mc}{h}$. Its action is
+The Dirac equation of this corpus is a pair, $\tilde\nabla_\Phi\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R$, with $\nu_m=\frac{mc}{h}$. Its action is
 
 $$
-S=\frac{h c}{4\pi}\int\mathrm{d}^4\varrho\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S=\frac{h c}{4\pi}\int\mathrm{d}^4\varrho\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
-two diagonal kinetic terms and one off-diagonal mass. Its variation is the pair, with residuals $r_L=(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L-k_m\tilde\Xi_R$ and $r_R=\tilde\nabla_\Phi\tilde\Xi_R-k_m\tilde\Xi_L$ and coefficient $\frac{h}{2\pi} c$, the $\tfrac12$ of the action cancelling against the two halves of each kinetic term. Its imaginary part is a total divergence, because both gradients are self-adjoint for the pairing, so the real part carries the whole content.
+two diagonal kinetic terms and one off-diagonal mass. Its variation is the pair, with residuals $r_L=(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L-2\pi\nu_m\tilde\Xi_R$ and $r_R=\tilde\nabla_\Phi\tilde\Xi_R-2\pi\nu_m\tilde\Xi_L$ and coefficient $\frac{h}{2\pi} c$, the $\tfrac12$ of the action cancelling against the two halves of each kinetic term. Its imaginary part is a total divergence, because both gradients are self-adjoint for the pairing, so the real part carries the whole content.
 
 The pairing is the Hermitian one, $\mathrm{Sc}(\cdot^{*}\cdot)$, and the self-adjointness is the reason: the $i$ in the material time is what makes the temporal term Hermitian and lets the four directions agree. The quaternion pairing is bilinear and symmetric, so every kinetic density built from it is a total derivative and the functional is empty. The one-sided functional with $i \frac{h}{2\pi} c$ in the same pairing is empty for the same reason in another form, $i \frac{h}{2\pi} c\tilde\nabla_\Phi$ being anti-self-adjoint; without the $i$ it is real and non-empty and gives the massless member. The split into two parts is therefore a factorization forced by the two operators of the pair, one per slot, with the mass the only coupling between them.
 
@@ -255,7 +255,7 @@ The two-sided display is the same equation in a different right frame — a cons
 | $\Box_\Phi=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | D'Alembertian |
 | $r'_t=ct'$ | Material time, a length |
 | $\tilde\Xi=\tilde\Xi_L+\tilde\Xi_R$ | The field, one element of $\mathbb{B}$; the letters name two parts, not two values |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $S$ | The action; $\mathcal{L}$ its integrand |
 | $r_L,r_R$ | The two residuals, whose vanishing is the pair |
 | $J_{\imath}$ | Electric Noether current |
@@ -280,7 +280,7 @@ Three counts must be kept apart, and the action keeps them apart.
 
 One element has four complex coefficients, that is eight real numbers, which is the count of the four-component column. This is the field's count and the parent's count.
 
-**The pair at fixed momentum has four complex solutions.** Write a plane wave $\tilde\Xi_{L,R}=\tilde\Xi^{L,R}_0e^{i\theta}$; the pair becomes $i\tilde K_\Phi\tilde\Xi^{R}_0=k_m\tilde\Xi^{L}_0$ and $i\tilde K_\Phi^{\natural}\tilde\Xi^{L}_0=k_m\tilde\Xi^{R}_0$. Substituting the first into the second gives $N(\tilde K_\Phi)=-k_m^{2}$ and leaves $\tilde\Xi^{R}_0$ free. So the solution space is four complex dimensional: the first line reads $\tilde\Xi^{L}_0=k_m^{-1}i\tilde K_\Phi\tilde\Xi^{R}_0$, and the second is then satisfied by the mass shell alone.
+**The pair at fixed momentum has four complex solutions.** Write a plane wave $\tilde\Xi_{L,R}=\tilde\Xi^{L,R}_0e^{i\theta}$; the pair becomes $2\pi i\tilde\Upsilon_\Phi\tilde\Xi^{R}_0=2\pi\nu_m\tilde\Xi^{L}_0$ and $2\pi i\tilde\Upsilon_\Phi^{\natural}\tilde\Xi^{L}_0=2\pi\nu_m\tilde\Xi^{R}_0$. Substituting the first into the second gives $N(\tilde\Upsilon_\Phi)=-\nu_m^{2}$ and leaves $\tilde\Xi^{R}_0$ free. So the solution space is four complex dimensional: the first line reads $\tilde\Xi^{L}_0=2\pi\nu_m^{-1}2\pi i\tilde\Upsilon_\Phi\tilde\Xi^{R}_0$, and the second is then satisfied by the mass shell alone.
 
 The action's two parts are not twice the field. The count is the same four complex, because the first line determines $\tilde\Xi_L$ from $\tilde\Xi_R$. The action is a functional of two elements, but its stationary points are parametrised by one element's worth of data. The split is a device of the action, not an enlargement of the carrier.
 

@@ -14,15 +14,15 @@ The defect this article repairs has an exact counterpart in the one before it. *
 
 The import is marked. That a weight on a shell is a density of states, that an exponential type is a support radius, and that an indicator is a projection are identifications, not theorems of the algebra. The article proves the three identities and marks the three identifications in §*Limits*. The algebra supplies the surface, the gradient, and the kernel, and nothing here derives a physical density from them.
 
-The conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, so $\vec e_\eta^{2}=-e_t$. The wave-number element is $\tilde K_{\Phi}=i\,k_{t}^{\prime}e_t+\vec k_{\Phi}$, its quaternion conjugate is $\tilde K_{\Phi}^{\natural}=i\,k_{t}^{\prime}e_t-\vec k_{\Phi}$, and the norm $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}$ is written in full throughout and never as a single letter. The transform of a field is written $\mathcal{F}[\tilde F]$, after *Biquaternion Continuous Harmonic Analysis*, and never as a mark on the field: a caret carries a power, a conjugation, a transposition and a construction, and the transform is none of the four. The two symbols are $\sigma_{\mathcal{P}}(k_{t}^{\prime},\vec k_\Phi)=k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$ of *The Galilean Limit* and its affine companion $\sigma_{\mathrm{s}}=k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$ with $k_{t}^{\prime}=k_m+k_{\mathrm{s}}$. The capital $\kappa$ is a value of the energy wave number and not a variable of the field, and it is kept apart from $k_{t}^{\prime}$ for that reason alone.
+The conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, so $\vec e_\eta^{2}=-e_t$. The wave-number element is $\tilde\Upsilon_{\Phi}=i\,\nu_t^{\prime}e_t+\vec\nu_{\Phi}$, its quaternion conjugate is $\tilde\Upsilon_{\Phi}^{\natural}=i\,\nu_t^{\prime}e_t-\vec\nu_{\Phi}$, and the norm $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}$ is written in full throughout and never as a single letter. The transform of a field is written $\mathcal{F}[\tilde F]$, after *Biquaternion Continuous Harmonic Analysis*, and never as a mark on the field: a caret carries a power, a conjugation, a transposition and a construction, and the transform is none of the four. The two symbols are $\sigma_{\mathcal{P}}(\nu_t^{\prime},\vec\nu_\Phi)=\nu_t^{\prime\,2}-\nu_{\Phi}^{2}-\nu_m^{2}$ of *The Galilean Limit* and its affine companion $\sigma_{\mathrm{s}}=\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$ with $\nu_t^{\prime}=\nu_m+\nu_{\mathrm{s}}$. The capital $\kappa$ is a value of the energy wave number and not a variable of the field, and it is kept apart from $\nu_t^{\prime}$ for that reason alone.
 
 ## The Set and the Measure
 
-The mass shell is where the symbol vanishes, and a solution lives on it. *The Fourier Transform* states the gradient form as one equation between numbers, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, and reads it as a surface in wave-number space on which a field is a superposition of plane waves whose labels lie on the surface. That is the whole of the *where*. A superposition is a sum of labels, and a sum of labels is not yet a weight: it says which labels occur and not how much each contributes.
+The mass shell is where the symbol vanishes, and a solution lives on it. *The Fourier Transform* states the gradient form as one equation between numbers, $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$, and reads it as a surface in wave-number space on which a field is a superposition of plane waves whose labels lie on the surface. That is the whole of the *where*. A superposition is a sum of labels, and a sum of labels is not yet a weight: it says which labels occur and not how much each contributes.
 
 A weight is what a function needs to be integrated, and the transform supplies a function before it supplies a measure. The on-shell field has a transform $\mathcal{F}[\tilde F]$ supported on the shell. To compute how much of the state sits at an energy, one integrates that function over the shell, and the integral needs a measure on the shell. The measure is inherited from the volume element of wave-number space, and the inheritance is not the identity. A surface does not carry the measure of the space it sits in; it carries that measure cut down by the surface, and the cutting is a Jacobian.
 
-That Jacobian is one over the derivative of the dispersion in wave-number space, and nothing else. The number is fixed by the shape of the symbol and by the shape alone. Two symbols with the same zero set have two different weights whenever their gradients differ, and the corpus has exactly such a pair available: $\sigma_{\mathcal{P}}$ and $k_{t}^{\prime}$ vanish on the same shell, and $\partial\sigma_{\mathcal{P}}/\partial k_{t}^{\prime}=2k_{t}^{\prime}$ at fixed $\vec k_\Phi$. The derivative of $\sigma_{\mathcal{P}}$ in the momentum wave number actually vanishes on the shell, since $\partial\sigma_{\mathcal{P}}/\partial\vec k_\Phi=2k_{t}^{\prime}\partial k_{t}^{\prime}/\partial\vec k_\Phi-2\vec k_\Phi$ is zero when $\partial k_{t}^{\prime}/\partial\vec k_\Phi=\vec k_\Phi/k_{t}^{\prime}$; that is why the symbol's delta is not the useful one and the dispersion's is. **The level set is a property of the symbol; the weight is a property of the dispersion, and the two are not the same function.** That distinction is the first thing the next section makes exact.
+That Jacobian is one over the derivative of the dispersion in wave-number space, and nothing else. The number is fixed by the shape of the symbol and by the shape alone. Two symbols with the same zero set have two different weights whenever their gradients differ, and the corpus has exactly such a pair available: $\sigma_{\mathcal{P}}$ and $\nu_t^{\prime}$ vanish on the same shell, and $\partial\sigma_{\mathcal{P}}/\partial \nu_t^{\prime}=2\nu_t^{\prime}$ at fixed $\vec\nu_\Phi$. The derivative of $\sigma_{\mathcal{P}}$ in the momentum wave number actually vanishes on the shell, since $\partial\sigma_{\mathcal{P}}/\partial\vec\nu_\Phi=2\nu_t^{\prime}\partial \nu_t^{\prime}/\partial\vec\nu_\Phi-2\vec\nu_\Phi$ is zero when $\partial \nu_t^{\prime}/\partial\vec\nu_\Phi=\vec\nu_\Phi/\nu_t^{\prime}$; that is why the symbol's delta is not the useful one and the dispersion's is. **The level set is a property of the symbol; the weight is a property of the dispersion, and the two are not the same function.** That distinction is the first thing the next section makes exact.
 
 The three questions are three indicators. The weight on a shell is the transform of the indicator of the shell. The reach of a state is read off the growth of its transform, which is the transform of the indicator of a ball. The locality of a cut is decided by the transform of the indicator of a band. An indicator is a set written as a function, and the transform turns it into a kernel whose two properties — its size and its tail — are the two numbers this article computes.
 
@@ -30,25 +30,25 @@ Why the three belong in this series rather than in a mathematics article. Each o
 
 ## The Weight of a Level Set
 
-The density of states is a delta function on the symbol's zero set. For a dispersion $k_{t}^{\prime}(\vec k_\Phi)$ the number of labels per unit energy wave number is
+The density of states is a delta function on the symbol's zero set. For a dispersion $\nu_t^{\prime}(\vec\nu_\Phi)$ the number of labels per unit energy wave number is
 
 $$
-\rho(\kappa)=\frac{1}{(2\pi)^{3}}\int_{\mathbb{R}^{3}}\delta\bigl(k_{t}^{\prime}(\vec k_\Phi)-\kappa\bigr)\,d^{3}k_\Phi ,
+\rho(\kappa)=\int_{\mathbb{R}^{3}}\delta\bigl(\nu_t^{\prime}(\vec\nu_\Phi)-\kappa\bigr)\,d^{3}\nu_{\Phi} ,
 $$
 
 with $\kappa$ a value of the energy wave number. The delta is the statement that only the labels on the shell contribute, and the integral is the statement that all of them do. Nothing has been assumed about a state. The number is a property of the symbol alone, and it is the same for every field that obeys the same equation.
 
-The delta is evaluated by a change of variable, and the Jacobian is the weight. Write $k_{t}^{\prime}$ for the coordinate normal to the shell and $S_\kappa$ for the shell at the value $\kappa$. In a neighbourhood of a regular point the substitution $\vec k_\Phi\mapsto\bigl(k_{t}^{\prime},\text{coordinates on }S_\kappa\bigr)$ has Jacobian $\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|^{-1}$, so
+The delta is evaluated by a change of variable, and the Jacobian is the weight. Write $\nu_t^{\prime}$ for the coordinate normal to the shell and $S_\kappa$ for the shell at the value $\kappa$. In a neighbourhood of a regular point the substitution $\vec\nu_\Phi\mapsto\bigl(\nu_t^{\prime},\text{coordinates on }S_\kappa\bigr)$ has Jacobian $\bigl|\partial \nu_t^{\prime}/\partial\vec\nu_\Phi\bigr|^{-1}$, so
 
 $$
-\delta\bigl(k_{t}^{\prime}(\vec k_\Phi)-\kappa\bigr)\,d^{3}k_\Phi
-=\frac{dS}{\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|}\,d k_{t}^{\prime},
+\delta\bigl(\nu_t^{\prime}(\vec\nu_\Phi)-\kappa\bigr)\,d^{3}\nu_{\Phi}
+=\frac{dS}{\bigl|\partial \nu_t^{\prime}/\partial\vec\nu_\Phi\bigr|}\,d \nu_t^{\prime},
 $$
 
-and integrating over $k_{t}^{\prime}$ against the delta gives the coarea formula,
+and integrating over $\nu_t^{\prime}$ against the delta gives the coarea formula,
 
 $$
-\boxed{\;\rho(\kappa)=\frac{1}{(2\pi)^{3}}\oint_{k_{t}^{\prime}=\kappa}\frac{dS}{\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|}\;}
+\boxed{\;\rho(\kappa)=\oint_{\nu_t^{\prime}=\kappa}\frac{dS}{\bigl|\partial \nu_t^{\prime}/\partial\vec\nu_\Phi\bigr|}\;}
 $$
 
 That box is the whole of the first result, and it contains no dynamics. A steep dispersion carries little weight and a flat one carries a great deal, because the same interval of energy spans a thin or a thick slab of wave-number space. The reciprocal gradient is exactly the thickness of that slab per unit energy. The weight of a label on the shell is the volume of the slab that the label stands for.
@@ -56,25 +56,25 @@ That box is the whole of the first result, and it contains no dynamics. A steep 
 The relativistic instance, exactly. For the massive dispersion, obtained from $\sigma_{\mathcal{P}}=0$,
 
 $$
-k_{t}^{\prime}(\vec k_\Phi)=\sqrt{k_{\Phi}^{2}+k_m^{2}},
+\nu_t^{\prime}(\vec\nu_\Phi)=\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}},
 \qquad
-\frac{\partial k_{t}^{\prime}}{\partial\vec k_\Phi}=\sum_\eta\vec e_\eta\frac{\partial k_{t}^{\prime}}{\partial k_{\Phi\eta}}
-=\vec e_x\frac{k_{\Phi x}}{k_{t}^{\prime}}+\vec e_y\frac{k_{\Phi y}}{k_{t}^{\prime}}+\vec e_z\frac{k_{\Phi z}}{k_{t}^{\prime}}
-=\frac{\vec k_\Phi}{k_{t}^{\prime}},
+\frac{\partial \nu_t^{\prime}}{\partial\vec\nu_\Phi}=\sum_\eta\vec e_\eta\frac{\partial \nu_t^{\prime}}{\partial \nu_{\Phi\eta}}
+=\vec e_x\frac{\nu_{\Phi x}}{\nu_t^{\prime}}+\vec e_y\frac{\nu_{\Phi y}}{\nu_t^{\prime}}+\vec e_z\frac{\nu_{\Phi z}}{\nu_t^{\prime}}
+=\frac{\vec\nu_\Phi}{\nu_t^{\prime}},
 \qquad
-\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|=\frac{k_{\Phi}}{k_{t}^{\prime}} .
+\bigl|\partial \nu_t^{\prime}/\partial\vec\nu_\Phi\bigr|=\frac{\nu_{\Phi}}{\nu_t^{\prime}} .
 $$
 
-The shell at fixed $\kappa$ is a sphere of radius $k_{\Phi}=\sqrt{\kappa^{2}-k_m^{2}}$ and area $4\pi k_{\Phi}^{2}$, so the weight is
+The shell at fixed $\kappa$ is a sphere of radius $\nu_{\Phi}=\sqrt{\kappa^{2}-\nu_m^{2}}$ and area $4\pi \nu_{\Phi}^{2}$, so the weight is
 
 $$
-\rho(\kappa)=\frac{1}{(2\pi)^{3}}\,4\pi k_{\Phi}^{2}\,\frac{\kappa}{k_{\Phi}}
-=\frac{k_{\Phi}\,\kappa}{2\pi^{2}},
+\rho(\kappa)=4\pi \nu_{\Phi}^{2}\,\frac{\kappa}{\nu_{\Phi}}
+=4\pi\nu_{\Phi}\,\kappa,
 $$
 
-a form with a threshold and no other structure. At $\kappa=k_m$ the momentum vanishes and the weight vanishes with it; above the threshold it grows without bound. For the massless symbol the same computation with $k_m=0$ gives $\rho(\kappa)=\kappa^{2}/(2\pi^{2})$, which has no threshold at all, and that is the analytic statement of the difference between a gap and a cone.
+a form with a threshold and no other structure. At $\kappa=\nu_m$ the momentum vanishes and the weight vanishes with it; above the threshold it grows without bound. For the massless symbol the same computation with $\nu_m=0$ gives $\rho(\kappa)=4\pi\kappa^{2}$, which has no threshold at all, and that is the analytic statement of the difference between a gap and a cone.
 
-The factor that is not the weight is worth naming, because it is the one that is easy to miss. If the delta is written in the symbol instead of in the dispersion, the integral returns $1/(2k_{t}^{\prime})$ times the weight, because $\delta(\sigma_{\mathcal{P}})=\delta(\kappa^{2}-k_{t}^{\prime\,2})=[\delta(k_{t}^{\prime}-\kappa)]/(2\kappa)$ at fixed $\kappa$. The two integrals are both correct and they answer different questions: one is the coarea cofactor of the surface, and the other counts labels per unit energy. The coarea cofactor is the geometric object; the density of states is the physical one; and the passage between them is the constant $2\kappa$, which is the Jacobian of the map from the symbol to the energy.
+The factor that is not the weight is worth naming, because it is the one that is easy to miss. If the delta is written in the symbol instead of in the dispersion, the integral returns $1/(2\nu_t^{\prime})$ times the weight, because $\delta(\sigma_{\mathcal{P}})=\delta(\kappa^{2}-\nu_t^{\prime\,2})=[\delta(\nu_t^{\prime}-\kappa)]/(2\kappa)$ at fixed $\kappa$. The two integrals are both correct and they answer different questions: one is the coarea cofactor of the surface, and the other counts labels per unit energy. The coarea cofactor is the geometric object; the density of states is the physical one; and the passage between them is the constant $2\kappa$, which is the Jacobian of the map from the symbol to the energy.
 
 ## The Weight Checked
 
@@ -90,11 +90,11 @@ On a lattice the histogram is the definition, not an approximation to it. A fini
 
 The residual is the bin width and not the formula. At the finest bin tried the agreement is $3.3\times10^{-4}$, and it degrades on either side of that bin because a narrower bin counts fewer points and a wider one averages the curvature of the shell. The two sides compute one number because one is the coarea formula's left side and the other its right, and no numerical coincidence is available at five energies.
 
-The symmetry is a check the counting cannot fake. The symbol satisfies $\sigma(-\vec k)=-\sigma(\vec k)$, so the weight at $+E$ equals the weight at $-E$, and the measured counts are equal to every printed digit at $E=\pm1.0$ and at $E=\pm2.5$. A bin count that carried a systematic error would not preserve the symmetry; a line integral that carried a wrong normalisation would preserve it and miss the value.
+The symmetry is a check the counting cannot fake. The symbol satisfies $\sigma(-\vec\nu_\Phi)=-\sigma(\vec\nu_\Phi)$, so the weight at $+E$ equals the weight at $-E$, and the measured counts are equal to every printed digit at $E=\pm1.0$ and at $E=\pm2.5$. A bin count that carried a systematic error would not preserve the symmetry; a line integral that carried a wrong normalisation would preserve it and miss the value.
 
-The relativistic identity closes to six digits. Evaluating the delta integral numerically by a narrow Gaussian on the dispersion, with $k_m=1$ and the normalisation of the box,
+The relativistic identity closes to six digits. Evaluating the delta integral numerically by a narrow Gaussian on the dispersion, with $\nu_m=1$ and the normalisation of the box,
 
-| $\kappa$ | numerical | $k_{\Phi}\kappa/(2\pi^{2})$ | relative difference |
+| $\kappa$ | numerical | $\nu_{\Phi}\kappa/(2\pi^{2})$ | relative difference |
 |---|---|---|---|
 | $1.5$ | $0.084960558$ | $0.084960395$ | $1.9\times10^{-6}$ |
 | $2.0$ | $0.175493633$ | $0.175493438$ | $1.1\times10^{-6}$ |
@@ -106,22 +106,22 @@ The error falls as the shell moves away from the threshold, which is the mark of
 
 The weight is a property of the gradient, so it classifies symbols by their gradients and not by their equations. There are three cases, and the first two are the corpus's; the third is what a flat band would be.
 
-A linear symbol has a constant gradient, and that is the whole of the graphene result. For $k_{t}^{\prime}=v k_{\Phi}$ the gradient has modulus $v$ everywhere, the shell is a sphere of area $4\pi\kappa^{2}/v^{2}$, and
+A linear symbol has a constant gradient, and that is the whole of the graphene result. For $\nu_t^{\prime}=v \nu_{\Phi}$ the gradient has modulus $v$ everywhere, the shell is a sphere of area $4\pi\kappa^{2}/v^{2}$, and
 
 $$
-\rho(\kappa)=\frac{1}{(2\pi)^{3}}\,4\pi\frac{\kappa^{2}}{v^{2}}\,\frac{1}{v}=\frac{\kappa^{2}}{2\pi^{2}v^{3}} .
+\rho(\kappa)=4\pi\frac{\kappa^{2}}{v^{2}}\,\frac{1}{v}=\frac{4\pi\kappa^{2}}{v^{3}} .
 $$
 
 Measured against a numerical delta integral at $v=1,2,4$ and $\kappa=0.2,0.4$, the relative difference is $1.0\times10^{-4}$ and $2.5\times10^{-5}$, the same at every $v$ because the only thing that changes is the constant. The linear density of states of a Dirac cone is therefore not a property of a material. It is the statement that a linear symbol has a constant gradient, and the constant is the velocity.
 
-A hyperbolic symbol has a gradient that vanishes at the threshold, and that is the whole of the massive result. The gradient $k_{\Phi}/k_{t}^{\prime}$ tends to zero as the shell shrinks to a point at $\kappa=k_m$, so the weight tends to zero there and grows above it. The threshold is the place where the shell has no area and the slab has no thickness, and both vanish at the same point because the point is the same point.
+A hyperbolic symbol has a gradient that vanishes at the threshold, and that is the whole of the massive result. The gradient $\nu_{\Phi}/\nu_t^{\prime}$ tends to zero as the shell shrinks to a point at $\kappa=\nu_m$, so the weight tends to zero there and grows above it. The threshold is the place where the shell has no area and the slab has no thickness, and both vanish at the same point because the point is the same point.
 
-A constant symbol has no gradient, and the formula fails at the only place it is used. If $k_{t}^{\prime}$ is constant on a surface of positive measure, then every label on that surface is on shell, the shell is not a set of measure zero, and the weight is no longer a function of the energy: it is a delta carrying the area of the whole surface. That is what a flat band is in the transform's language — a level set of positive measure, and therefore a pole of the propagator on a surface instead of at a point.
+A constant symbol has no gradient, and the formula fails at the only place it is used. If $\nu_t^{\prime}$ is constant on a surface of positive measure, then every label on that surface is on shell, the shell is not a set of measure zero, and the weight is no longer a function of the energy: it is a delta carrying the area of the whole surface. That is what a flat band is in the transform's language — a level set of positive measure, and therefore a pole of the propagator on a surface instead of at a point.
 
 | dispersion | gradient | level set | weight |
 |---|---|---|---|
-| $v k_{\Phi}$, linear | the constant $v$ | a sphere | $\kappa^{2}/(2\pi^{2}v^{3})$ |
-| $\sqrt{k_{\Phi}^{2}+k_m^{2}}$, hyperbolic | $k_{\Phi}/k_{t}^{\prime}$, zero at the threshold | a sphere in $\vec k_\Phi$ at each $\kappa$ | $k_{\Phi}\kappa/(2\pi^{2})$ |
+| $v \nu_{\Phi}$, linear | the constant $v$ | a sphere | $\kappa^{2}/(2\pi^{2}v^{3})$ |
+| $\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}$, hyperbolic | $\nu_{\Phi}/\nu_t^{\prime}$, zero at the threshold | a sphere in $\vec\nu_\Phi$ at each $\kappa$ | $\nu_{\Phi}\kappa/(2\pi^{2})$ |
 | constant | zero | a surface of positive measure | a delta on that surface |
 
 The table is the classification, and the third row is not a pathology. A flat band is a symbol with no gradient on a set, and the weight's divergence there is the exact statement that the set has positive measure. A weight that is infinite on a set is the measure-theoretic name for a degeneracy that no perturbation removes by moving a single label.
@@ -167,20 +167,20 @@ The second: the degree of the symbol decides whether that rate is finite at all.
 
 ## Two Numbers Read in Two Places
 
-A decay rate and a support radius are numbers read at the two ends of one axis, and the exclusivity is already a corollary in the corpus. A decay rate is a pole: the Euclidean Green's function has transform $1/(\zeta^{2}+k_m^{2})$, with poles at $\zeta=\pm ik_m$, and the rate is the distance of the pole from the real axis. A support radius is a type: the indicator's transform is entire, and its radius is the growth at $i\infty$. A compactly supported state therefore has no pole and no decay constant, and a state with a pole at a finite distance has no compact support. That is not a trade-off but the corollary of *Inversion of the Biquaternion Fourier Transform*, §*Exponential Type and the Tail*, which states it as the requirement that a solution of compact support carry a vanishing datum at every pole.
+A decay rate and a support radius are numbers read at the two ends of one axis, and the exclusivity is already a corollary in the corpus. A decay rate is a pole: the Euclidean Green's function has transform $1/(\zeta^{2}+\nu_m^{2})$, with poles at $\zeta=\pm i\nu_m$, and the rate is the distance of the pole from the real axis. A support radius is a type: the indicator's transform is entire, and its radius is the growth at $i\infty$. A compactly supported state therefore has no pole and no decay constant, and a state with a pole at a finite distance has no compact support. That is not a trade-off but the corollary of *Inversion of the Biquaternion Fourier Transform*, §*Exponential Type and the Tail*, which states it as the requirement that a solution of compact support carry a vanishing datum at every pole.
 
-It is why the corpus needs two Green's functions and gets no contradiction from having both. The retarded one is supported on the cone and has no decay constant; the Euclidean one has the decay constant $k_m$ and infinite reach. They are not two approximations of one object but the two ends of one axis, and which of them is physical is decided by the contour the inverse transform is taken on. The companion article reads the same axis from the other side. *The Three Positions of One Zero* places a zero on the real axis, on the imaginary line and off both, and reads the three as a bound state, a decay and a resonance. That article reads the position of the zero; this one reads the height of the pole and the growth at infinity, and a decaying state is a zero that has left the real axis.
+It is why the corpus needs two Green's functions and gets no contradiction from having both. The retarded one is supported on the cone and has no decay constant; the Euclidean one has the decay constant $\nu_m$ and infinite reach. They are not two approximations of one object but the two ends of one axis, and which of them is physical is decided by the contour the inverse transform is taken on. The companion article reads the same axis from the other side. *The Three Positions of One Zero* places a zero on the real axis, on the imaginary line and off both, and reads the three as a bound state, a decay and a resonance. That article reads the position of the zero; this one reads the height of the pole and the growth at infinity, and a decaying state is a zero that has left the real axis.
 
 ## The Cut That Cannot Be Sharp
 
-An exact projection is an indicator, and the reason is one line. Let $P$ be a multiplier whose symbol is $\chi(\vec k_\Phi)$, so that $P^{2}$ has symbol $\chi^{2}$ pointwise. Then
+An exact projection is an indicator, and the reason is one line. Let $P$ be a multiplier whose symbol is $\chi(\vec\nu_\Phi)$, so that $P^{2}$ has symbol $\chi^{2}$ pointwise. Then
 
 $$
 P^{2}=P
 \quad\Longleftrightarrow\quad
-\chi^{2}(\vec k_\Phi)=\chi(\vec k_\Phi)\ \text{at every } \vec k_\Phi
+\chi^{2}(\vec\nu_\Phi)=\chi(\vec\nu_\Phi)\ \text{at every } \vec\nu_\Phi
 \quad\Longleftrightarrow\quad
-\chi(\vec k_\Phi)\in\{0,1\}\ \text{at every } \vec k_\Phi .
+\chi(\vec\nu_\Phi)\in\{0,1\}\ \text{at every } \vec\nu_\Phi .
 $$
 
 **Idempotence is a pointwise condition on the symbol, so a projection selects a set.** Measured, the residual $\max|\chi^{2}-\chi|$ is exactly $0$ for the indicator of an interval, and $0.250000$ for the Gaussian $\exp(-\zeta^{2}/2)$ and for the tent $(1-|\zeta|)_{+}$. The two smooth symbols each sit at $\chi=1/2$ somewhere, and there $\chi^{2}-\chi=-1/4$ exactly, which is why the residual is a quarter and not something smaller. A projection whose symbol is continuous is locally constant, and a projection that is not locally constant is discontinuous, and for a symbol that takes values in $[0,1]$ the largest possible violation is one quarter.
@@ -209,13 +209,13 @@ One operation, three objects. Each of the three results is the transform of the 
 
 | the set | its indicator | the transform | the number |
 |---|---|---|---|
-| the shell $k_{t}^{\prime}=\kappa$ | $\delta\bigl(k_{t}^{\prime}(\vec k_\Phi)-\kappa\bigr)$ | the weight $1/\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|$ | a density of labels per unit energy |
+| the shell $\nu_t^{\prime}=\kappa$ | $\delta\bigl(\nu_t^{\prime}(\vec\nu_\Phi)-\kappa\bigr)$ | the weight $1/\bigl|\partial \nu_t^{\prime}/\partial\vec\nu_\Phi\bigr|$ | a density of labels per unit energy |
 | a ball of radius $R$ | the indicator of the ball | a function of exponential type $R$ | the reach of the state |
 | a band $[-B,B]$ | the multiplier's symbol | $\sin(Bx)/(\pi x)$ | the range of the projection |
 
 The middle row is the one that looks different and is not. A support is a set in position space, and its indicator is a state. The transform of that state is a function whose growth at infinity is the set's radius, so the radius is read off the transform exactly as the weight is read off the gradient. In all three rows the set is the input and a number about the set is the output, and in all three the transform is the map between them.
 
-The three numbers are one number in one case and not in general. For a symbol of the form $\sigma=v k_{\Phi}$ the gradient is the velocity, the shell is a sphere, and the weight is a power of the energy; the type of a state supported in a ball of radius $R$ is $R$; and the range of a projection with band edge $B$ is $1/B$. The weight has the dimension of an inverse energy, the type has the dimension of a length, and the range has the dimension of a length, so the three are not commensurable as they stand, and the article does not claim they are. What they share is the structure, not the unit.
+The three numbers are one number in one case and not in general. For a symbol of the form $\sigma=v \nu_{\Phi}$ the gradient is the velocity, the shell is a sphere, and the weight is a power of the energy; the type of a state supported in a ball of radius $R$ is $R$; and the range of a projection with band edge $B$ is $1/B$. The weight has the dimension of an inverse energy, the type has the dimension of a length, and the range has the dimension of a length, so the three are not commensurable as they stand, and the article does not claim they are. What they share is the structure, not the unit.
 
 ## The Duality in This Reading
 
@@ -249,7 +249,7 @@ A level set is a set, and a set carries no measure. The five preceding articles 
 
 The weight of a label on the shell is one over the gradient of the dispersion. The delta function's change of variable gives the coarea formula, and the Jacobian is the thickness of the slab of wave-number space that the label stands for. Steep symbols carry little weight, flat ones carry a great deal.
 
-The relativistic weight is $k_{\Phi}\kappa/(2\pi^{2})$, exact. It vanishes at the threshold $\kappa=k_m$ and grows without bound above it, the massless case is $\kappa^{2}/(2\pi^{2})$ with no threshold, and a linear symbol gives the constant-gradient result $\kappa^{2}/(2\pi^{2}v^{3})$.
+The relativistic weight is $\nu_{\Phi}\kappa/(2\pi^{2})$, exact. It vanishes at the threshold $\kappa=\nu_m$ and grows without bound above it, the massless case is $\kappa^{2}/(2\pi^{2})$ with no threshold, and a linear symbol gives the constant-gradient result $\kappa^{2}/(2\pi^{2}v^{3})$.
 
 The checks, in one place.
 
@@ -257,7 +257,7 @@ The checks, in one place.
 |---|---|---|
 | the coarea formula, five energies | bin count against line integral, $16000^{2}$ | $3.3\times10^{-4}$ at the finest bin |
 | the weight's symmetry | $\rho(+E)=\rho(-E)$ to every printed digit | exact |
-| the relativistic weight | delta integral against $k_{\Phi}\kappa/(2\pi^{2})$ | $4.7\times10^{-7}$ at $\kappa=3$ |
+| the relativistic weight | delta integral against $\nu_{\Phi}\kappa/(2\pi^{2})$ | $4.7\times10^{-7}$ at $\kappa=3$ |
 | the linear weight | delta integral against $\kappa^{2}/(2\pi^{2}v^{3})$ | $2.5\times10^{-5}$ |
 | the van Hove coefficient | slope against $\log E$, seven intervals | $-0.0501$ to $-0.0510$ against $-0.050661$ |
 | the exponential type | indicator at $b=80,160$ | $0.94522467$, $0.96828016$ |
@@ -278,17 +278,17 @@ The count is the level set plus the weight, and that is where the two arms meet.
 | symbol | meaning |
 |---|---|
 | $\mathcal{F}[\tilde F]$ | the transform of a field, written without a mark on the field |
-| $\tilde K_{\Phi}$ | the wave-number element $i\,k_{t}^{\prime}e_t+\vec k_{\Phi}$ |
-| $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ | its norm, $-k_{t}^{\prime\,2}+k_{\Phi}^{2}$, and $-k_m^{2}$ on shell |
-| $k_{t}^{\prime}$ | the energy wave number, $\frac{2\pi E}{h\,c}$ |
-| $\vec k_{\Phi}$, $k_{\Phi}$ | the momentum wave number and its modulus |
-| $k_m$ | the mass wave number, $\frac{2\pi mc}{h}$ |
+| $\tilde\Upsilon_{\Phi}$ | the wave-number element $i\,\nu_t^{\prime}e_t+\vec\nu_{\Phi}$ |
+| $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}$ | its norm, $-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}$, and $-\nu_m^{2}$ on shell |
+| $\nu_t^{\prime}$ | the energy wave number, $\frac{E}{h\,c}$ |
+| $\vec\nu_{\Phi}$, $\nu_{\Phi}$ | the momentum wave number and its modulus |
+| $\nu_m$ | the mass wave number, $\frac{m\,c}{h}$ |
 | $\kappa$ | a value of the energy wave number; a constant, not a variable |
-| $\sigma_{\mathcal{P}}$ | the second-order symbol, $k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$ |
-| $\sigma_{\mathrm{s}}$ | the affine symbol, $k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$ |
-| $k_{\mathrm{s}}$ | the energy above rest, $k_{t}^{\prime}-k_m$ |
+| $\sigma_{\mathcal{P}}$ | the second-order symbol, $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}-\nu_m^{2}$ |
+| $\sigma_{\mathrm{s}}$ | the affine symbol, $\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$ |
+| $\nu_{\mathrm{s}}$ | the energy above rest, $\nu_t^{\prime}-\nu_m$ |
 | $\rho(\kappa)$ | the weight on the shell, the density of labels per unit energy |
-| $\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|$ | the modulus of the derivative of the dispersion in wave-number space |
+| $\bigl|\partial \nu_t^{\prime}/\partial\vec\nu_\Phi\bigr|$ | the modulus of the derivative of the dispersion in wave-number space |
 | $R$ | the radius of a support, equal to the exponential type of the transform |
 | $b$ | the imaginary wave number $i\zeta=ib$ at which the type is estimated |
 | $\chi$ | the symbol of a multiplier, whose idempotence is $P^{2}=P$ |

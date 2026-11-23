@@ -7,11 +7,11 @@ This article states the action whose Euler–Lagrange equations are the coupled 
 The equation. The coupled pair is
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi,
 $$
 
 with the connection in the material sector $\mathbb{B}_\Phi$ and with central scalar coefficients in the abelian case.
@@ -28,21 +28,21 @@ The two settings. The action is stated for a connection that may depend on the c
 
 ## Conventions
 
-The conventions are the free companion's, restated here for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is the pair $(\tilde\Xi_R,\tilde\Xi_L)$ of elements of $\mathbb{B}$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the mass term is the only term that couples the two parts. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with the connection in $\mathbb{B}_\Phi$, and it is central, so it multiplies from either side without a choice. The measure is $\mathrm{d}^4r$, the mass is $k_m=\frac{2\pi mc}{h}$, and the two settings — constant and varying connection — are the parent's and are kept apart throughout.
+The conventions are the free companion's, restated here for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is the pair $(\tilde\Xi_R,\tilde\Xi_L)$ of elements of $\mathbb{B}$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the mass term is the only term that couples the two parts. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with the connection in $\mathbb{B}_\Phi$, and it is central, so it multiplies from either side without a choice. The measure is $\mathrm{d}^4r$, the mass is $\nu_m=\frac{mc}{h}$, and the two settings — constant and varying connection — are the parent's and are kept apart throughout.
 
 ## The Action in Element Form, Coupled
 
 The free action of the parent article is
 
 $$
-S_0=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S_0=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
 with $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^{3}r$. The coupled action is the same functional with the two gradients replaced by the two covariant operators:
 
 $$
 \boxed{\;
-S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
+S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
 $$
 
 with $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural}$.
@@ -92,9 +92,9 @@ $$
 with the two residuals
 
 $$
-r_L=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L-k_m\tilde\Xi_R,
+r_L=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L-2\pi\nu_m\tilde\Xi_R,
 \qquad
-r_R=\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\tilde\Xi_L .
+r_R=\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-2\pi\nu_m\tilde\Xi_L .
 $$
 
 Stationarity for every variation of compact support is $r_L=r_R=0$, which is the coupled pair.
@@ -104,7 +104,7 @@ The coefficient, once. Varying $\tilde\Xi_R^{*}$ gives $\frac{h c}{4\pi}\mathrm{
 **The count.** Each residual is an element of $\mathbb{B}$ with eight real components, so the pair is sixteen real equations on sixteen real unknowns. The compatibility condition is obtained by applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the first residual and using the second:
 
 $$
-\Bigl(\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
+\Bigl(\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{i\,ϙ}{h}\tilde F-4\pi^{2}\nu_m^{2}\Bigr)\tilde\Xi_R=0,
 $$
 
 the covariant wave equation with the curvature term. The coupling therefore changes the compatibility condition in exactly one place, the curvature, and nowhere else.
@@ -245,7 +245,7 @@ The loop phase and the flux quantum. The two readings of a closed loop — the t
 The coupled action is the free action with the two gradients replaced by the two covariant operators,
 
 $$
-S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
 and its variation gives the coupled pair. The mass term is invariant under a local central phase without help; the kinetic term is not; the repair is the covariant derivative with the gauge law's sign, and it is unique within the abelian class.

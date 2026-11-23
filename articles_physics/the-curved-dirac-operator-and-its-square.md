@@ -86,12 +86,12 @@ $$
 \tilde F_{\imath}D_{\imath}\tilde\Xi=0 .
 $$
 
-**Massive, as a chiral pair**, with the mass length $\frac{h}{2\pi mc}$ written $k_m$ and the two halves $\tilde\Xi_{R}$, $\tilde\Xi_{L}$ of the Dirac field:
+**Massive, as a chiral pair**, with the mass length $\frac{h}{2\pi mc}$ written $\nu_m$ and the two halves $\tilde\Xi_{R}$, $\tilde\Xi_{L}$ of the Dirac field:
 
 $$
-\tilde F_{\imath}D_{\imath}\tilde\Xi_{R}=k_m\tilde\Xi_{L},
+\tilde F_{\imath}D_{\imath}\tilde\Xi_{R}=2\pi\nu_m\tilde\Xi_{L},
 \qquad
-(\tilde F_{\imath}D_{\imath})^{\natural}\tilde\Xi_{L}=k_m\tilde\Xi_{R}.
+(\tilde F_{\imath}D_{\imath})^{\natural}\tilde\Xi_{L}=2\pi\nu_m\tilde\Xi_{R}.
 $$
 
 The second line needs the conjugate operator: ${}^{\natural}$ is an anti-automorphism, so it reverses the order of the factors, and the conjugate frame and the conjugate connection appear in the opposite order. It reduces to $(\tilde\nabla_\Phi)^{\natural}$ when the frame is rigid and the connection vanishes.
@@ -254,7 +254,7 @@ Minimal electromagnetic coupling adds a field-strength–spin term with the same
 | $D_{\imath}\tilde\Xi=\partial_{\imath}\tilde\Xi+\vec\Gamma_{\imath}\tilde\Xi$ | one-sided covariant derivative of the field |
 | $D_{\imath}\tilde Q=\partial_{\imath}\tilde Q+\vec\Gamma_{\imath}\tilde Q+\tilde Q\vec\Gamma_{\imath}^{*}$ | two-sided covariant derivative of a vector |
 | $\tilde F_{\imath} D_{\imath}$ | the curved Dirac operator |
-| $k_m=\frac{h}{2\pi mc}$ | mass length |
+| $\nu_m=\frac{h}{2\pi mc}$ | mass length |
 | $\Box_{g,\Phi}=\sum_{\imath,\jmath}G_{\imath\jmath}\nabla_{\imath}\nabla_{\jmath}$ | Laplace–Beltrami operator; $\vec\nabla_\Phi^{*}\vec\nabla_\Phi=-\Box_{g,\Phi}$ |
 | $\mathrm{Ric}$ | scalar curvature of the Gram metric |
 | $(\tilde F_{\imath} D_{\imath})^2=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}$ | Lichnerowicz square, taken on the basis operator |

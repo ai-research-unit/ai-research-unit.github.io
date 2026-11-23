@@ -262,7 +262,7 @@ C_{\imath}\xi:\ \tilde Q\;\longmapsto\; e_{\imath}\,\tilde Q\,\vec e_z\vec e_{\m
 \qquad \vec e_z\vec e_x=\vec e_y ,\quad \vec e_z\vec e_y=-\vec e_x .
 $$
 
-The axial vertex is therefore the frame basis operator with $\vec e_z\vec e_{\mathrm{spt}(\imath)}$ as its right multiplier, and no second imaginary unit survives. The vertex of the axial current in the direction $\vec k_\Phi$ is that product read on the quark field, with the isospin generator:
+The axial vertex is therefore the frame basis operator with $\vec e_z\vec e_{\mathrm{spt}(\imath)}$ as its right multiplier, and no second imaginary unit survives. The vertex of the axial current in the direction $\vec\nu_\Phi$ is that product read on the quark field, with the isospin generator:
 
 $$
 j_{5\imath \eta} = \bar q\,C_{\imath}\xi\,T_\eta\,q .
@@ -271,12 +271,12 @@ $$
 **The chiral pair behind the current.** The axial vertex is two-sided because the fermion has two parts. The two parts carry the two values of the label, $L$ for the minus one and $R$ for the plus one, and they obey the pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L} ,
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R} ,
 $$
 
-one equation per value, coupled only by the mass; at $m=0$ they decouple into the two Weyl equations. The axial current is the difference between the currents of the two parts, and the mass term is the coupling that makes its divergence nonzero. The single equation $\tilde\nabla_\Phi\tilde{Ξ}=0$ is only the $R$ part at $m=0$. This is the two-sided structure that the product of two elements displays. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+one equation per value, coupled only by the mass; at $m=0$ they decouple into the two Weyl equations. The axial current is the difference between the currents of the two parts, and the mass term is the coupling that makes its divergence nonzero. The single equation $\tilde\nabla_\Phi\tilde{Ξ}=0$ is only the $R$ part at $m=0$. This is the two-sided structure that the product of two elements displays. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 In the isospin limit the divergence is the mass bilinear,
 
@@ -295,7 +295,7 @@ $$
 
 which is the partially conserved axial current (PCAC) and the defining matrix element of the decay constant. The framework does not produce this current as the Noether current of a symmetry of its centre: the centre is vector-like, and no axial generator exists in $\mathbb{B}_{C}$. The fifth basis operator belongs to the frame and not to the centre; it can carry the axial vertex, but it does not generate a chiral symmetry of the algebra. The axial current, its anomaly and the Wess–Zumino–Witten term are therefore imported from the fermion and general-gauge sectors, and the framework's contribution is the geometric field and its normalisation.
 
-**The soft limit.** Because every pion coupling is a derivative, the amplitude for a process with an additional pion of momentum $k_\Phi$ is proportional to $k_\Phi$ as $k\to0$, and the amplitude with an extra soft pion vanishes: the Adler zero. The statement follows from the form of $\mathcal{L}_\pi^{(2)}$ alone and is therefore inherited by the framework's chiral Lagrangian unchanged. It is the reason the pion is weakly coupled at low energy even though the underlying theory is strongly coupled.
+**The soft limit.** Because every pion coupling is a derivative, the amplitude for a process with an additional pion of momentum $\nu_{\Phi}$ is proportional to $\nu_{\Phi}$ as $k\to0$, and the amplitude with an extra soft pion vanishes: the Adler zero. The statement follows from the form of $\mathcal{L}_\pi^{(2)}$ alone and is therefore inherited by the framework's chiral Lagrangian unchanged. It is the reason the pion is weakly coupled at low energy even though the underlying theory is strongly coupled.
 
 **The Goldberger–Treiman relation.** The axial current also couples to the nucleon, and the relation
 
@@ -436,7 +436,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
 | $j_{\imath \eta}$, $j_{5\imath \eta}$ | Isospin (vector) and axial currents |
 | $C_{\imath}$, $\xi$ | Frame basis operator of the coordinate $x_{\imath}$, $\tilde Q\mapsto ie_{\imath}\tilde Q\vec e_{\mathrm{spt}(\imath)}$ with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$; and the fifth basis operator, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
 | $\langle0\vert j_{5\imath \eta}(0)\vert\pi_l(p)\rangle = if_\pi p_{\imath}\delta_{\eta l}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5\eta}\rangle_{\natural} = f_\pi m_\pi^2\pi_\eta$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |

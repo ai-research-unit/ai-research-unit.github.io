@@ -154,12 +154,12 @@ That is what the sector split buys at this level. The two things a quantum equat
 The relativistic scalar equation is the same product squared:
 
 $$
-\left(\tilde\nabla_{\Phi}(\tilde\nabla_{\Phi})^{\natural}-k_m^{2}\right)\tilde\Xi=0,
+\left(\tilde\nabla_{\Phi}(\tilde\nabla_{\Phi})^{\natural}-4\pi^{2}\nu_m^{2}\right)\tilde\Xi=0,
 \qquad
 \tilde\nabla_{\Phi}(\tilde\nabla_{\Phi})^{\natural}=\Box_{\Phi}=\Delta_{\Phi}-\frac{\partial^{2}}{\partial {r'_t}^{2}},
 $$
 
-with $k_m=\frac{2\pi mc}{h}$ ([The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html)). Since $\Box_{\Phi}$ is central and scalar, the one equation is the same equation for each of the four coefficients, and no coefficient is mixed with another. The second order is a product of two first-order operators, not a postulate about the wave equation.
+with $\nu_m=\frac{mc}{h}$ ([The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html)). Since $\Box_{\Phi}$ is central and scalar, the one equation is the same equation for each of the four coefficients, and no coefficient is mixed with another. The second order is a product of two first-order operators, not a postulate about the wave equation.
 
 The two equations of this section are one equation in two regimes. The Schrödinger equation is first order in $r'_t$ and singles out one branch; the Klein–Gordon equation is second order and keeps both branches, which is why the negative-frequency sector exists at all and why the hole theory of §*Antimatter* has something to talk about.
 
@@ -184,14 +184,14 @@ The Dirac field is one element $\tilde\Xi$ with four complex coefficients. That 
 The equation is the chiral pair
 
 $$
-\tilde\nabla_{\Phi}\tilde\Xi_{R}=k_m\tilde\Xi_{L},
+\tilde\nabla_{\Phi}\tilde\Xi_{R}=2\pi\nu_m\tilde\Xi_{L},
 \qquad
-(\tilde\nabla_{\Phi})^{\natural}\tilde\Xi_{L}=k_m\tilde\Xi_{R},
+(\tilde\nabla_{\Phi})^{\natural}\tilde\Xi_{L}=2\pi\nu_m\tilde\Xi_{R},
 $$
 
 as the corpus writes it ([The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html)). The derivative multiplies on the left, and a product takes the value — the side — of its right factor, so a left multiplier keeps the value of what it multiplies. The derivative therefore cannot carry one part of the field into the other, and read as two equations for two independent fields the pair forces both to vanish. The catalogue records the reason as obstruction O22: multiplication is chirality-blind ([What the Biquaternion Algebra Cannot Do](what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html)).
 
-The pair is a factorisation of one equation, and the Dirac article draws the consequence. In momentum space the second part is the first multiplied on the left, $\tilde\Xi_{L}=(i/k_m)\tilde K_{\Phi}\tilde\Xi_{R}$, and the product of the operator with its conjugate returns the wave operator. The two letters name the two factors of one equation.
+The pair is a factorisation of one equation, and the Dirac article draws the consequence. In momentum space the second part is the first multiplied on the left, $\tilde\Xi_{L}=(i/\nu_m)\tilde\Upsilon_{\Phi}\tilde\Xi_{R}$, and the product of the operator with its conjugate returns the wave operator. The two letters name the two factors of one equation.
 
 Where the other side of the multiplication does appear is the mass, and only there. To exchange the two parts by a multiplication, one multiplies on the right by an invertible element $i\vec v$ with $\vec v$ perpendicular to the axis. The coefficient conjugation does the same job. Either way the exchange sits on the side of the mass and never on the side of the derivative. A derivative that carried the field out of its part would have to stop being a multiplication by an element.
 
@@ -216,7 +216,7 @@ and the four brackets are of four different types.
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the boost is constant |
 | $\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}$ | real vector part | the rotor is constant |
 
-The types are the four transport laws of the fluid. The first is the continuity equation for the density. The second is the guidance equation, since the gradient of the phase is the momentum element $\tilde K_{\Phi}=\tilde\nabla_{\Phi}\theta_{\mathrm{pha}}$. The third is the transport of the velocity, which is the logarithmic derivative of the boost, the element whose inverse square is the four-velocity. The fourth is the transport of the spin direction, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
+The types are the four transport laws of the fluid. The first is the continuity equation for the density. The second is the guidance equation, since the gradient of the phase is the momentum element $\tilde\Upsilon_{\Phi}=\tilde\nabla_{\Phi}\theta_{\mathrm{pha}}$. The third is the transport of the velocity, which is the logarithmic derivative of the boost, the element whose inverse square is the four-velocity. The fourth is the transport of the spin direction, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
 
 ### The current and the spin
 
@@ -358,7 +358,7 @@ What fails there is the reading and not the equation. The pair, the current and 
 
 One contrast must be stated, because it is easy to carry across from the scalar case. For the Schrödinger equation the flow is left multiplication by an element, the norm is multiplicative, so the cone is preserved and a field is invertible at every event or at none ([The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html)). The Dirac equation is not of that kind, and the reason is the one already given: the mass couples the two chiral pieces. A field with one piece alone does not keep one piece alone, and the two pieces are rank-one elements of independent profiles whose sum is generally of rank two.
 
-A check fixes the statement. In the $2\times2$ image the modulus of the quaternionic norm is the modulus of the determinant, and with the two chiral pieces in the two columns the determinant is the product $\chi\omicron_{\mathrm{chr}}$. Take $\chi$ a Gaussian packet of width $2$ and $\omicron_{\mathrm{chr}}=0$ at $t=0$, on a periodic grid of $512$ points spanning $40$, with $k_m=1$ and step $5\times10^{-4}$, evolved by the $1+1$ chiral pair, $\partial_t\chi=ic\,\partial_x\chi-im\omicron_{\mathrm{chr}}$ and $\partial_t\omicron_{\mathrm{chr}}=-ic\,\partial_x\omicron_{\mathrm{chr}}-im\chi$. The modulus of the determinant is $0$ at $t=0$, $0.196$ at $t=0.2$ and $0.369$ at $t=0.4$. Halving the step moves the last two by less than $10^{-8}$, doubling the grid moves them by less than $2\times10^{-5}$, and $k_m=0$ leaves the value at $0$ for all time.
+A check fixes the statement. In the $2\times2$ image the modulus of the quaternionic norm is the modulus of the determinant, and with the two chiral pieces in the two columns the determinant is the product $\chi\omicron_{\mathrm{chr}}$. Take $\chi$ a Gaussian packet of width $2$ and $\omicron_{\mathrm{chr}}=0$ at $t=0$, on a periodic grid of $512$ points spanning $40$, with $2\pi\nu_m=1$ and step $5\times10^{-4}$, evolved by the $1+1$ chiral pair, $\partial_t\chi=ic\,\partial_x\chi-im\omicron_{\mathrm{chr}}$ and $\partial_t\omicron_{\mathrm{chr}}=-ic\,\partial_x\omicron_{\mathrm{chr}}-im\chi$. The modulus of the determinant is $0$ at $t=0$, $0.196$ at $t=0.2$ and $0.369$ at $t=0.4$. Halving the step moves the last two by less than $10^{-8}$, doubling the grid moves them by less than $2\times10^{-5}$, and $\nu_m=0$ leaves the value at $0$ for all time.
 
 The rise is the mass, and that is obstruction O22 read dynamically. A term carried on the right is what moves a field between the pieces; the derivative is carried on the left and moves the field within one piece only. So the cone is not carried by the flow.
 
@@ -424,7 +424,7 @@ The strongest objection is that this is a reformulation. It is, and the corpus a
 | $\mathrm{Sc}$ | Scalar part, the coefficient of $e_t$ |
 | $\tilde\nabla_{\Phi}$ | The gradient, the Dirac operator of the material frame |
 | $\tilde\nabla_{\Phi}(\tilde\nabla_{\Phi})^{\natural}=\Box_{\Phi}$ | The wave operator, central and scalar |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $r'_t$ | Material time coordinate, with $e_t=1$ and temporal direction $ie_t$ |
 | $R_{\imath}$ | The four coordinates of the material frame; indices stay low |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word: scale, phase, boost, rotor |
@@ -435,7 +435,7 @@ The strongest objection is that this is a reformulation. It is, and the corpus a
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Current |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde S_{\Psi}=\rho_{\mathrm{num}}\tfrac{h}{4\pi}i\hat s$ | Spin element |
-| $\tilde K_{\Phi}=\tilde\nabla_{\Phi}\theta_{\mathrm{pha}}$ | Momentum element: four-momentum divided by $\frac{h}{2\pi}$ |
+| $\tilde\Upsilon_{\Phi}=\tilde\nabla_{\Phi}\theta_{\mathrm{pha}}$ | Momentum element: four-momentum divided by $\frac{h}{2\pi}$ |
 | $\tilde F=i\sqrt{\epsilon}(\vec E+ic\vec B)$ | Field strength element |
 | $\tilde\varsigma_{\Psi}$ | State of the informational sector, positive and of trace one |
 | $\ast$ | Star conjugation |

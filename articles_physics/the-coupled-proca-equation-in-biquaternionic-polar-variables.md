@@ -218,11 +218,11 @@ The connection is central per slot, so it merges with the scale and the phase br
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The central per-component covariant derivative |
 | $\Gamma_{\imath}=\tilde U^{-1}\partial_{\imath}\tilde U$, $\rho_{\imath}=\tilde u^{-1}\partial_{\imath}\tilde u$ | The frame's two logarithmic derivatives |
 | $\tilde A^{-1}\partial_{\imath}\tilde A$ | The four brackets: scale, phase, boost, rotor |
-| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; the one substitution |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; the one substitution |
 | $\kappa_t,\vec\kappa$ | Its components; $\frac{h}{2\pi} c\kappa_t=E+ϙca'_t$, $\frac{h}{2\pi}\vec\kappa=\vec p-q\vec A$ |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ |
 | $\tilde F$ | Curvature of the connection; scalar-free, so blind to the constraint |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 
 ## Further Reading
 

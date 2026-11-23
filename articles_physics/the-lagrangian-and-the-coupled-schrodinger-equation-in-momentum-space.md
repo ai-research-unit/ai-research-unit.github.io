@@ -8,7 +8,7 @@ The kinetic term is real for every anti-Hermitian root, the gradient term is a s
 
 $\partial\sigma/\partial\omega=\frac{h}{2\pi}$ with or without the connection, because the connection does not depend on the frequency. The slope in the four-wavevector's temporal slot is $\frac{h}{2\pi} c$. The map from frequency to time is invertible in every coupled case, and the variational problem is unconstrained.
 
-For a mode of unit norm, $E=\frac{1}{2m}\lvert \frac{h}{2\pi}\vec k-q\vec A\rvert^{2}-ϙ\omicron_{\mathrm{pot}}=-\sigma_{\mathrm{gco}}(0,\vec k)$, verified over one hundred draws with zero residual. **The symbol is the action's density, and the energy is that density with the frequency set to zero and the sign flipped**, which is the standard sign of a Lagrangian's Legendre transform.
+For a mode of unit norm, $E=\frac{1}{2m}\lvert h\,2\pi\vec\nu_{\Phi}-q\vec A\rvert^{2}-ϙ\omicron_{\mathrm{pot}}=-\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})$, verified over one hundred draws with zero residual. **The symbol is the action's density, and the energy is that density with the frequency set to zero and the sign flipped**, which is the standard sign of a Lagrangian's Legendre transform.
 
 A gauge transformation shifts $\omicron_{\mathrm{pot}}$ and $\vec A$, and the same transformation shifts the frequency and the wave vector of a mode. The two shifts cancel in the symbol, verified to $8.9\times10^{-16}$. **So the symbol is a function of $\mathcal E$ and $\vec\pi$ and not of the four ingredients separately**, and the two slots' opposite signs are exactly what makes the cancellation work.
 
@@ -30,7 +30,7 @@ an integral over time of a density that already contains the spatial derivatives
 
 The *constant* setting has a constant Hermitian Hamiltonian and a constant connection, so the symbol is an element. The *operator* setting has $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/(2m)+V$, so the symbol is a scalar. Every display is labelled.
 
-$\tilde\Xi=e^{-i\omega t'}\tilde X$ in the constant setting, and $\tilde\Xi=e^{-i\omega t'+i\vec k_\Phi\cdot\vec r}\tilde X_0$ in the operator setting. The two substitutions differ by the spatial factor, and the difference is what makes the second setting's symbol a function of two arguments.
+$\tilde\Xi=e^{-i\omega t'}\tilde X$ in the constant setting, and $\tilde\Xi=e^{-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r}\tilde X_0$ in the operator setting. The two substitutions differ by the spatial factor, and the difference is what makes the second setting's symbol a function of two arguments.
 
 ### The Constant-Coefficient Licence
 
@@ -51,15 +51,15 @@ $$
 
 because the spatial derivatives vanish on a constant $\tilde X$ and the covariant time derivative becomes a number. The kernel is the element-form symbol of the companion, with $\sigma_{\mathrm{gco}}(\omega)=hf_{\mathrm{frq}}\,e_t-\tilde H^{\mathrm{gco}}_\Psi$ and $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A)$.
 
-With $\tilde\Xi=e^{-i\omega t'+i\vec k_\Phi\cdot\vec r}\tilde X_0$, the covariant spatial derivative becomes the number $ik_\eta+\frac{2\pi iϙ A_\eta}{h}$, so
+With $\tilde\Xi=e^{-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r}\tilde X_0$, the covariant spatial derivative becomes the number $ik_\eta+\frac{2\pi iϙ A_\eta}{h}$, so
 
 $$
-(D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)=\Big(k_\eta+\frac{2\pi ϙ A_\eta}{h}\Big)^{2}\mathrm{Sc}\big(\tilde X_0^{*}\tilde X_0\big),
+(D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)=\Big(k_\eta+\frac{ϙ A_\eta}{h}\Big)^{2}\mathrm{Sc}\big(\tilde X_0^{*}\tilde X_0\big),
 $$
 
-and the density is $\sigma_{\mathrm{gco}}(\omega,\vec k)$ times $\mathrm{Sc}(\tilde X_0^{*}\tilde X_0)$, with $\sigma_{\mathrm{gco}}$ the scalar of the companion. The form's kernel is the symbol and the form's value is the symbol times the mode's norm.
+and the density is $\sigma_{\mathrm{gco}}(\omega,\vec\nu_{\Phi})$ times $\mathrm{Sc}(\tilde X_0^{*}\tilde X_0)$, with $\sigma_{\mathrm{gco}}$ the scalar of the companion. The form's kernel is the symbol and the form's value is the symbol times the mode's norm.
 
-In the constant setting with $\vec h_\Psi=\frac{h}{2\pi}\vec k_\Phi$ the element's scalar part is the operator setting's scalar. The agreement is the statement that a plane wave of a constant Hamiltonian is a plane wave of the differential operator, and it holds at one mode and not for a general field.
+In the constant setting with $\vec h_\Psi=h\,2\pi\vec\nu_\Phi$ the element's scalar part is the operator setting's scalar. The agreement is the statement that a plane wave of a constant Hamiltonian is a plane wave of the differential operator, and it holds at one mode and not for a general field.
 
 Varying $\tilde X^{*}$ in the fixed-frequency form gives $\sigma_{\mathrm{gco}}\tilde X=0$, which is the companion's frequency-space equation. So the symbol is the coupled action's Euler–Lagrange operator, exactly as in the free case.
 
@@ -90,7 +90,7 @@ The section shows the sum is real term by term, which is stronger than the free 
 The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
 
 $$
-\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,\vec k)X\bigr],
+\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,2\pi\vec\nu_{\Phi})X\bigr],
 $$
 
 with no integration by parts, no surface term and no boundary condition. A boundary term appears in a variational principle because a derivative is varied; here no derivative is varied, so none appears. That is not a convenience of the calculation, it is what the transform does to the principle.
@@ -98,7 +98,7 @@ with no integration by parts, no surface term and no boundary condition. A bound
 Vanishing for every $\delta X^{*}$ forces the bracket to vanish, by the same positivity argument as in the element article: choose $\delta X^{*}$ equal to the bracket and the scalar part becomes a sum of squared moduli. So
 
 $$
-\mathcal{S}(\omega,\vec k)\,X=0,
+\mathcal{S}(\omega,2\pi\vec\nu_{\Phi})\,X=0,
 $$
 
 the symbol equation the article solves. The passage from the action to the equation is one line and it is exact: the fixed-frequency action's stationarity and the symbol equation are the same statement.
@@ -107,11 +107,11 @@ The variation at a mode cannot see a boundary condition, a topological charge or
 
 ### Zero, Pole and the On-Shell Action
 
-The coupled Schrödinger mode action is $\langle\tilde X,\sigma_{\mathrm{gco}}(\omega,\vec k)\tilde X\rangle$, and the symbol depends on $\omega$ and $\vec k$ through the shifted arguments only. The form's kernel is the equation at that frequency, so the zero of the symbol is the dispersion condition: the wave number at which a fixed frequency propagates.
+The coupled Schrödinger mode action is $\langle\tilde X,\sigma_{\mathrm{gco}}(\omega,\vec\nu_{\Phi})\tilde X\rangle$, and the symbol depends on $\omega$ and $\vec\nu_{\Phi}$ through the shifted arguments only. The form's kernel is the equation at that frequency, so the zero of the symbol is the dispersion condition: the wave number at which a fixed frequency propagates.
 
 The resolvent at the frequency is the form's inverse, and it fails exactly where the symbol is singular. The pole of the resolvent is the zero of the symbol, and the article states the identity once because every later statement about the spectrum is a statement about it.
 
-The shift is $\omega\to\omega-q\omicron_{\mathrm{pot}}$ in the temporal slot and $\vec k\to\vec k-q\vec A$ in the spatial ones, so the zero is moved and not deformed. The coupled dispersion is the free dispersion written in the shifted variables, and that is the whole of the coupling's effect on the spectrum. The section on the reality of the action already established that the shift is real in this setting, which is why the moved zero stays on the real frequency axis.
+The shift is $\omega\to\omega-q\omicron_{\mathrm{pot}}$ in the temporal slot and $\vec\nu_{\Phi}\to\vec\nu_{\Phi}-q\vec A$ in the spatial ones, so the zero is moved and not deformed. The coupled dispersion is the free dispersion written in the shifted variables, and that is the whole of the coupling's effect on the spectrum. The section on the reality of the action already established that the shift is real in this setting, which is why the moved zero stays on the real frequency axis.
 
 On a solution the amplitude is a kernel vector, so the quadratic form vanishes and the mode action is zero. The mode action is zero on shell because the action is the form, and the statement is the same one the free article makes, with the translated symbol in place of the free one.
 
@@ -123,7 +123,7 @@ The Schrödinger symbol is first order in the frequency, so its zero is a single
 
 $\partial\sigma_{\mathrm{gco}}/\partial\omega=\frac{h}{2\pi}$, independent of $\omicron_{\mathrm{pot}}$, of $\vec A$ and of the Hamiltonian. The connection shifts the arguments and never the slope, because it does not depend on the frequency.
 
-With $k_t'=\omega/c$ the slope is $\frac{h}{2\pi} c$, and the factor is the unit that relates the two variables. The two slopes are one slope read in two units, and no physics depends on which is written.
+With $2\pi\nu_t'=\omega/c$ the slope is $\frac{h}{2\pi} c$, and the factor is the unit that relates the two variables. The two slopes are one slope read in two units, and no physics depends on which is written.
 
 $\frac{h}{2\pi}\neq0$, so the Legendre map is invertible and the variational problem has no constraint and no multiplier. The coupling does not introduce one, because the connection enters the density as a number and not as a Lagrange multiplier.
 
@@ -138,14 +138,14 @@ A nonzero mixed derivative would mean that the frequency's conjugate depends on 
 Under a gauge transformation $\tilde\Xi\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde\Xi$, the connection moves as $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ and $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. A mode's phase moves as $\theta\mapsto\theta+\frac{2\pi ϙ\Gamma}{h}$, so its frequency and wave vector move as
 
 $$
-\omega\longmapsto\omega-\frac{2\pi ϙ}{h}\partial_{t'}\Gamma,
+\omega\longmapsto\omega-\frac{ϙ}{h}\partial_{t'}\Gamma,
 \qquad
-\vec k\longmapsto\vec k+\frac{2\pi ϙ}{h}\vec\nabla_\Phi\Gamma .
+2\pi\vec\nu_{\Phi}\longmapsto2\pi\vec\nu_{\Phi}+\frac{ϙ}{h}\vec\nabla_\Phi\Gamma .
 $$
 
 Substituting the four shifts into $\sigma_{\mathrm{gco}}$ cancels $\partial_{t'}\Gamma$ in the frequency term and $\vec\nabla_\Phi\Gamma$ in the mechanical momentum, so $\sigma_{\mathrm{gco}}$ is unchanged. Verified over one hundred draws with constant $\Gamma$: the residual was $8.9\times10^{-16}$.
 
-The symbol is a function of $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi=\frac{h}{2\pi}\vec k-q\vec A$ and of nothing else. The four ingredients are not independent, and the symbol's two arguments are the two invariants of the polar companion.
+The symbol is a function of $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi=h\,2\pi\vec\nu_{\Phi}-q\vec A$ and of nothing else. The four ingredients are not independent, and the symbol's two arguments are the two invariants of the polar companion.
 
 The frequency shift in the symbol is $+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ and the mode's frequency shift under a gauge transformation is $-\frac{2\pi ϙ\partial_{t'}\Gamma}{h}$. The two signs differ, and they must differ, because $\omicron_{\mathrm{pot}}$ and $\partial_{t'}\Gamma$ enter $\mathcal E$ with the *same* sign while $\omega$ and $\partial_{t'}\Gamma$ enter with opposite signs. **A substitution that gave $\omega\mapsto\omega+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ with the other sign would break the cancellation**, and that is how the article detects the error rather than asserting the convention.
 
@@ -166,12 +166,12 @@ What the shift cannot do. It cannot change the reality of the symbol, because $�
 The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,
 
 $$
-\mathcal{Q}(\vec k)=\frac{h}{2\pi}\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
+\mathcal{Q}(\vec\nu_{\Phi})=\frac{h}{2\pi}\,\mathrm{Sc}\bigl[X^{*}(\vec\nu_{\Phi})X(\vec\nu_{\Phi})\bigr],
 $$
 
 up to the normalisation the element article fixes, so that the total charge is the integral of this density over the wave numbers. The step from the position-space charge to this display is Parseval's identity and nothing else; the companion article *The Lagrangian and the Schrödinger Equation in Momentum Space* proves it in that case and the proof transfers, because it uses only the transform and the Hermitian pairing.
 
-The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,\vec k)$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
+The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,2\pi\vec\nu_{\Phi})$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
 
 The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
@@ -185,11 +185,11 @@ $$
 
 and the identity is exact by construction. The sign is the Lagrangian's: a Lagrangian is $T-V$ and the Hamiltonian is $T+V$, so the potential's sign flips and the symbol, which is the Lagrangian's density, carries the minus.
 
-With a unit mode, $E=\frac{1}{2m}\lvert \frac{h}{2\pi}\vec k-q\vec A\rvert^{2}-ϙ\omicron_{\mathrm{pot}}$, and $\sigma_{\mathrm{gco}}(0,\vec k)=ϙ\omicron_{\mathrm{pot}}-\frac{1}{2m}\lvert \frac{h}{2\pi}\vec k-q\vec A\rvert^{2}$. So $E=-\sigma_{\mathrm{gco}}(0,\vec k)$, verified over one hundred draws with zero residual. The identity is one line and it fixes the article's sign conventions once.
+With a unit mode, $E=\frac{1}{2m}\lvert h\,2\pi\vec\nu_{\Phi}-q\vec A\rvert^{2}-ϙ\omicron_{\mathrm{pot}}$, and $\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})=ϙ\omicron_{\mathrm{pot}}-\frac{1}{2m}\lvert h\,2\pi\vec\nu_{\Phi}-q\vec A\rvert^{2}$. So $E=-\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})$, verified over one hundred draws with zero residual. The identity is one line and it fixes the article's sign conventions once.
 
 The energy's first term is a sum of moduli and the second is the potential. **So the energy is bounded below exactly when the potential is**, and the bound is the parent's and not this article's.
 
-$\sigma_{\mathrm{gco}}(0,\vec k)$ is bounded above by $-E_{\min}$, so the symbol at zero frequency cannot exceed the negative of the ground energy. That is the variational principle's standard inequality read on the symbol, and it is a statement about one mode.
+$\sigma_{\mathrm{gco}}(0,\vec\nu_{\Phi})$ is bounded above by $-E_{\min}$, so the symbol at zero frequency cannot exceed the negative of the ground energy. That is the variational principle's standard inequality read on the symbol, and it is a statement about one mode.
 
 What the identity does not say. It does not say that $\sigma$ is the Hamiltonian's symbol. The Hamiltonian's symbol is $hf_{\mathrm{frq}}$ itself; the Lagrangian's symbol is $hf_{\mathrm{frq}}$ minus the Hamiltonian's. The two differ by the Legendre transform of a quadratic, and this article uses the Lagrangian's.
 
@@ -197,7 +197,7 @@ Composing the identity with the on-shell condition gives $E=0$ on a solution at 
 
 ## What the Principle Adds and What It Relabels: Under Coupling
 
-The identity is that the coupled symbol is the fixed-frequency coupled action. The sign is $E=-\sigma_{\mathrm{gco}}(0,\vec k)$, verified with zero residual. The invariance is the cancellation of the gauge shift, verified to $8.9\times10^{-16}$.
+The identity is that the coupled symbol is the fixed-frequency coupled action. The sign is $E=-\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})$, verified with zero residual. The invariance is the cancellation of the gauge shift, verified to $8.9\times10^{-16}$.
 
 The coupled action is real because each of its three terms is real, not because of a cancellation. That is a stronger statement than the free article's, and it is the reason a central connection cannot spoil the variational structure.
 
@@ -213,9 +213,9 @@ The free article's gap between the reality of an action and the reality of a spe
 
 ## Summary
 
-The coupled action at fixed frequency is the coupled symbol: $\big\langle\tilde X,\sigma_{\mathrm{gco}}(\omega)\tilde X\big\rangle$ in the constant setting, and $\sigma_{\mathrm{gco}}(\omega,\vec k)$ times the mode's norm in the operator setting, with the same shift of the free symbol's arguments. The reality is term by term: the kinetic term by the anti-Hermitian root, the gradient term as a sum of moduli, the potential term because $\omicron_{\mathrm{pot}}$ is real. No cancellation is needed, which is why a central connection cannot spoil the variational structure.
+The coupled action at fixed frequency is the coupled symbol: $\big\langle\tilde X,\sigma_{\mathrm{gco}}(\omega)\tilde X\big\rangle$ in the constant setting, and $\sigma_{\mathrm{gco}}(\omega,\vec\nu_{\Phi})$ times the mode's norm in the operator setting, with the same shift of the free symbol's arguments. The reality is term by term: the kinetic term by the anti-Hermitian root, the gradient term as a sum of moduli, the potential term because $\omicron_{\mathrm{pot}}$ is real. No cancellation is needed, which is why a central connection cannot spoil the variational structure.
 
-The Legendre slope is $\frac{h}{2\pi}$ and the mixed derivative vanishes, so the frequency and the wave vector are separated and the problem is unconstrained. The energy is minus the symbol at zero frequency, $E=-\sigma_{\mathrm{gco}}(0,\vec k)$, verified over one hundred draws with zero residual, and the sign is the Lagrangian's.
+The Legendre slope is $\frac{h}{2\pi}$ and the mixed derivative vanishes, so the frequency and the wave vector are separated and the problem is unconstrained. The energy is minus the symbol at zero frequency, $E=-\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})$, verified over one hundred draws with zero residual, and the sign is the Lagrangian's.
 
 The symbol is gauge invariant in the invariant coordinates: the four shifts cancel, verified to $8.9\times10^{-16}$, so $\sigma_{\mathrm{gco}}$ is a function of $\mathcal E$ and $\vec\pi$ alone. That invariance is also the resolution of the frequency shift's sign, because the opposite sign would break the cancellation.
 
@@ -225,10 +225,10 @@ The symbol is gauge invariant in the invariant coordinates: the four shifts canc
 | --- | --- |
 | $S_\omega[\tilde X]=\int\mathrm{d}t'\,\big\langle\tilde X,\sigma_{\mathrm{gco}}(\omega)\tilde X\big\rangle$ | The coupled action at fixed frequency; constant setting |
 | $\sigma_{\mathrm{gco}}(\omega)=hf_{\mathrm{frq}}\,e_t-\tilde H^{\mathrm{gco}}_\Psi$ | The element symbol; the form's kernel |
-| $\sigma_{\mathrm{gco}}(\omega,\vec k)=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\lvert \frac{h}{2\pi}\vec k-q\vec A\rvert^{2}/(2m)$ | The scalar symbol; operator setting |
-| $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$, $\vec\pi=\frac{h}{2\pi}\vec k-q\vec A$ | The two invariants; the symbol's only arguments |
-| $\omega\mapsto\omega-\frac{2\pi ϙ}{h}\partial_{t'}\Gamma$, $\vec k\mapsto\vec k+\frac{2\pi ϙ}{h}\vec\nabla_\Phi\Gamma$ | The mode's gauge shifts; they cancel in the symbol |
-| $E=-\sigma_{\mathrm{gco}}(0,\vec k)$ | The energy as minus the symbol at zero frequency |
+| $\sigma_{\mathrm{gco}}(\omega,2\pi\vec\nu_{\Phi})=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\lvert h\,2\pi\vec\nu_{\Phi}-q\vec A\rvert^{2}/(2m)$ | The scalar symbol; operator setting |
+| $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$, $\vec\pi=h\,2\pi\vec\nu_{\Phi}-q\vec A$ | The two invariants; the symbol's only arguments |
+| $\omega\mapsto\omega-\frac{2\pi ϙ}{h}\partial_{t'}\Gamma$, $2\pi\vec\nu_{\Phi}\mapsto2\pi\vec\nu_{\Phi}+\frac{ϙ}{h}\vec\nabla_\Phi\Gamma$ | The mode's gauge shifts; they cancel in the symbol |
+| $E=-\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})$ | The energy as minus the symbol at zero frequency |
 | $\partial\sigma_{\mathrm{gco}}/\partial\omega=\frac{h}{2\pi}$ | The Legendre slope; unchanged by the coupling |
 | $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$ | The vanishing mixed derivative; the class's mark |
 | $\sum_{\imath}\lvert(D_\eta\tilde\Xi)_{\imath}\rvert^{2}$ | The gradient term; real and non-negative |

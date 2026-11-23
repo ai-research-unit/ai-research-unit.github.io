@@ -366,15 +366,15 @@ The paravector calculus is therefore the calculus of *one-sided* basis operators
 **The two Dirac equations.** The corpus carries two, and the paravector reading sits against both. The first is **one-sided** and chiral,
 
 $$
-L_{\tilde\nabla_\Phi}\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+L_{\tilde\nabla_\Phi}\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-L_{(\tilde\nabla_\Phi)^{\natural}}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+L_{(\tilde\nabla_\Phi)^{\natural}}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
 a pair of lines in which the gradient acts from the left on each chiral half and the mass is the off-diagonal pairing that mixes them. The second is **two-sided**,
 
 $$
-\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F=k_m\,i\,\overline F\,\vec e_z ,
+\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F=2\pi\nu_m\,i\,\overline F\,\vec e_z ,
 \qquad
 D_3=\sum_{\eta=1}^{3}\vec e_\eta\frac{\partial}{\partial R_\eta},
 $$

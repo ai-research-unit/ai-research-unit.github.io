@@ -31,7 +31,7 @@ and its minimum sits at $\Phi^{\dagger}\Phi=\mu^{2}/2\lambda\equiv v^{2}/2$, so 
 
 The unitary chart. Where a component reading is needed the chart is $\Phi=\frac{1}{\sqrt2}\binom{0}{v+h}$ with $h$ real. It is a chart on the same action and not a different theory; the companion article states what it costs and what it buys.
 
-Two conventions are warnings. The first: $\mu^{2}$ has the dimensions of a mass squared and is not a mass. The curvature at the minimum is $2\mu^{2}$, and the difference matters — the free Klein–Gordon article's $k_m^{2}$ is the coefficient of $-\tilde\Xi^{*}\tilde\Xi$ with a fixed sign, whereas here the sign is negative and the coefficient is not the mass. The second: $\lambda$ in this normalisation is the coefficient of $(\Phi^{\dagger}\Phi)^{2}$, so the quartic term in the unitary chart is $\frac{\lambda}{4}h^{4}$. A reader who imports $\frac{\lambda}{4!}\phi^{4}$ from the scalar-field literature will find the self-couplings wrong by a factor of six.
+Two conventions are warnings. The first: $\mu^{2}$ has the dimensions of a mass squared and is not a mass. The curvature at the minimum is $2\mu^{2}$, and the difference matters — the free Klein–Gordon article's $\nu_m^{2}$ is the coefficient of $-\tilde\Xi^{*}\tilde\Xi$ with a fixed sign, whereas here the sign is negative and the coefficient is not the mass. The second: $\lambda$ in this normalisation is the coefficient of $(\Phi^{\dagger}\Phi)^{2}$, so the quartic term in the unitary chart is $\frac{\lambda}{4}h^{4}$. A reader who imports $\frac{\lambda}{4!}\phi^{4}$ from the scalar-field literature will find the self-couplings wrong by a factor of six.
 
 ## The Action in Element Form
 

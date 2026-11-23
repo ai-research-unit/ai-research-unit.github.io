@@ -16,7 +16,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,q}{h}\tilde A_\Phi ,
 $$
 
-with $q$ the electron's charge, $q=-e<0$ in the corpus's convention, and with $\tilde A_\Phi$ central so that the derivative multiplies from either side without a choice. The field strength is $\tilde F=\frac{1}{\sqrt{\mu}}\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ and the field term is $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, exactly as in the Maxwell article. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ for the matter and $\mathrm{Re}\,\mathrm{Sc}(\cdot\,\cdot)$ for the field; the measure is $\mathrm{d}^{4}r$; $k_m=\frac{2\pi mc}{h}$.
+with $q$ the electron's charge, $q=-e<0$ in the corpus's convention, and with $\tilde A_\Phi$ central so that the derivative multiplies from either side without a choice. The field strength is $\tilde F=\frac{1}{\sqrt{\mu}}\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ and the field term is $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, exactly as in the Maxwell article. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ for the matter and $\mathrm{Re}\,\mathrm{Sc}(\cdot\,\cdot)$ for the field; the measure is $\mathrm{d}^{4}r$; $\nu_m=\frac{mc}{h}$.
 
 ## The Action in Element Form
 
@@ -26,7 +26,7 @@ $$
 S=\int\mathrm{d}^{4}r\;\Bigl\{
 \mathrm{Sc}\bigl[\tilde\Xi_R^{*}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L\bigr]
 +\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R\bigr]
--k_m\,\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\Xi_L+\tilde\Xi_L^{*}\tilde\Xi_R\bigr]\,i\vec v
+-2\pi\nu_m\,\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\Xi_L+\tilde\Xi_L^{*}\tilde\Xi_R\bigr]\,i\vec v
 +\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)\Bigr\},
 $$
 
@@ -43,9 +43,9 @@ What is absent, term by term. No gauge-fixing term, no ghost term, no counterter
 Three variations, two equations, one identity. Varying the two parts of the Dirac field gives the coupled pair
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L=k_m\tilde\Xi_R ,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R ,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R=k_m\tilde\Xi_L ,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L ,
 $$
 
 and their conjugates. Varying the connection gives
@@ -100,7 +100,7 @@ What the claim forbids. It forbids a second coupling constant, an arbitrary axia
 
 ## The Noether Currents and the Sign of the Charge
 
-**Three currents, and only one of them is conserved when the mass is present.** The vector current $J_{\imath}=q\bar\Xi\gamma_{\imath}\Xi$ in the flat language, $J_{t}=q\rho_{\mathrm{chg}}$ and $\vec J=q\rho_{\mathrm{chg}}\vec v$ in the chart, is conserved by the local phase symmetry. The axial current is conserved only at $k_m=0$: the mass term converts one chirality into the other and breaks the axial conservation explicitly. The energy–momentum is conserved by translation invariance and is the sum of the matter's stress and the field's.
+**Three currents, and only one of them is conserved when the mass is present.** The vector current $J_{\imath}=q\bar\Xi\gamma_{\imath}\Xi$ in the flat language, $J_{t}=q\rho_{\mathrm{chg}}$ and $\vec J=q\rho_{\mathrm{chg}}\vec v$ in the chart, is conserved by the local phase symmetry. The axial current is conserved only at $\nu_m=0$: the mass term converts one chirality into the other and breaks the axial conservation explicitly. The energy–momentum is conserved by translation invariance and is the sum of the matter's stress and the field's.
 
 The sign. The charge's sign is the sign of $q$, fixed once in the conventions as $q=-e$ for the electron; the density $\rho_{\mathrm{chg}}$ is positive. So the electron's $J^{t}$ is negative and the positron's is positive, and the sign convention is the same one the Maxwell article uses for the source.
 
@@ -121,7 +121,7 @@ What a quantisation would add, and this family does not. A Fock space; the canon
 QED's classical content is one action: the Dirac action with the covariant derivative, plus the Maxwell term, with one constant appearing in the derivative, the current and the gauge shift. Its variations give the coupled Dirac equation and the inhomogeneous Maxwell equation, and the scalar part of the second is the continuity equation for the first. The vector current is conserved, the axial one is broken by the mass, and the stress is positive. Nothing in the article quantises anything, and that is its subject as much as its content.
 
 $$
-S=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L\bigr]+\mathrm{Sc}\bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R\bigr]-k_m\,\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\Xi_L+\tilde\Xi_L^{*}\tilde\Xi_R\bigr]i\vec v+\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)\Bigr\}.
+S=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L\bigr]+\mathrm{Sc}\bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R\bigr]-2\pi\nu_m\,\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\Xi_L+\tilde\Xi_L^{*}\tilde\Xi_R\bigr]i\vec v+\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)\Bigr\}.
 $$
 
 ## Summary of Notation
@@ -138,7 +138,7 @@ $$
 | $\rho_{\mathrm{chg}}$ | Charge density, $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ |
 | $J_{\imath},\ J_{t},\ \vec J$ | Vector current and its components |
 | $\vec v$ | Fixed spin direction of the mass bilinear |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |
 
 ## Further Reading

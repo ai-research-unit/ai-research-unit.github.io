@@ -13,9 +13,9 @@ again identically, again for every solution, and with no quantum correction. **S
 The equation. The coupled Klein–Gordon equation is the free one with covariant derivatives,
 
 $$
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{h}\tilde A_\Phi,
 \qquad
 \tilde A_\Phi=i\,a'_t\,e_t+\vec A,
 $$
@@ -34,7 +34,7 @@ What is not here. No new solution, no new prediction, no new particle. The artic
 
 Position in the block. This article is the charged companion of [The Spin-Zero Fluid](the-spin-zero-fluid.html). Its siblings are [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), and the three are compared side by side in §*The Three Charged Fluids*. The free article's own table of the three free fluids is in that article and in the two free companions, and the present table is its charged counterpart.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=\frac{2\pi mc}{h}$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the action is $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, and $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $\nu_m=\frac{mc}{h}$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the action is $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, and $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
 
 ## The Bracket the Connection Reaches
 
@@ -282,7 +282,7 @@ Not claimed. It is not claimed that the charged fluid has a vorticity dynamics: 
 
 ## Summary
 
-The charged Klein–Gordon equation is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, and the word is the free article's $\varrho e^{i\theta_{\mathrm{pha}}}\varepsilon$ substituted into it.
+The charged Klein–Gordon equation is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, and the word is the free article's $\varrho e^{i\theta_{\mathrm{pha}}}\varepsilon$ substituted into it.
 
 The connection is central per component, so it merges with the scale and the phase brackets and cannot reach the branch. On the central field the kinematics is therefore exactly a shift of the phase rate, and the shift is the classical substitution in one element: $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$.
 
@@ -314,7 +314,7 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gaug
 | $\omega_{\imath\jmath}$ | The vorticity; $\omega=ϙF/m$ |
 | $\Phi_B$ | The flux through a loop; $\oint\vec A\cdot\mathrm{d}\vec l$ |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; untouched by the coupling |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
 
 ## Further Reading
 

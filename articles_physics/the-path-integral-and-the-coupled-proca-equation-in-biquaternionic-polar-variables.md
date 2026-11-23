@@ -62,7 +62,7 @@ The modulus is the free scale and the argument is twice the phase, and no rotor 
 
 The invariant the coupled action uses is the real one, and it is phase-blind. $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})=\mathrm{Sc}(\Omega^{-1}H^{2}\Omega^{\natural})$ is real and independent of $\theta_{\mathrm{pha}}$: the value $0.4465451904$ was obtained at $\theta_{\mathrm{pha}}=0$ and at $\theta_{\mathrm{pha}}=0.6$, identical to ten digits. So the chart shows why the coupled action must be written with $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ and not with $\langle\tilde A\rangle_\natural$ alone: the latter carries a phase, and only the former is invariant.
 
-The branch sign has no place on the enlarged carrier, and this is the sharpest difference between the two charts. The free chart's mass term is $\mp\frac12k_m^{2}\varrho^{2}$, with the sign decided by the branch; the coupled chart's modulus is $\varrho^{2}$ with no sign to decide, and what remains of the sign is the argument. A discrete label of the free chart becomes a continuous angle of the coupled one, and the doubling of the carrier is what allows it.
+The branch sign has no place on the enlarged carrier, and this is the sharpest difference between the two charts. The free chart's mass term is $\mp\frac12\nu_m^{2}\varrho^{2}$, with the sign decided by the branch; the coupled chart's modulus is $\varrho^{2}$ with no sign to decide, and what remains of the sign is the argument. A discrete label of the free chart becomes a continuous angle of the coupled one, and the doubling of the carrier is what allows it.
 
 ## The Measure
 
@@ -98,7 +98,7 @@ The current is the response to the connection and it is conserved by the measure
 
 The saddle's chart is a full eight-parameter word and its constraint is one of the eight. The classical field is $\tilde A^{\mathrm{cl}}=-P_{\mathrm{gco}}^{-1}\tilde J$, a general element, so its word is $(\varrho,\theta_{\mathrm{pha}},u,\vartheta_1,\vartheta_2,\psi_1,\psi_2,\psi_3)$ with the covariant condition restricting the combination that the covariant divergence measures. The chart therefore reads the saddle completely, which the free chart could not do for the kernel.
 
-The mass is untouched by the coupling, and the chart shows where the coupling does act. The free article's ghost is the eigenvalue $-k_m^{2}$; the coupled article shows it is unchanged; the chart's version is that the constraint is deformed and the mass term's magnitude is not. One term of the exponent is covariantised and one is not, and the reason is that the mass term has no derivative to covariantise.
+The mass is untouched by the coupling, and the chart shows where the coupling does act. The free article's ghost is the eigenvalue $-\nu_m^{2}$; the coupled article shows it is unchanged; the chart's version is that the constraint is deformed and the mass term's magnitude is not. One term of the exponent is covariantised and one is not, and the reason is that the mass term has no derivative to covariantise.
 
 What the chart cannot see is the ghost itself. It is a property of a momentum mode and the chart is a chart of a field value. The chart's nearest object is the argument $2\theta_{\mathrm{pha}}$ of the mass term, and the two are different objects; the article does not conflate them.
 
@@ -163,7 +163,7 @@ The constraint's square is displayed, its saddle is the covariant Lorenz conditi
 | $\int_0^\infty \varrho^{7}\mathrm{d}\varrho\,e^{-a\varrho^{2}}=3/a^{4}$ | Eight components' worth of Gaussian weight |
 | $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$ | The gauge transformation as a coordinate shift |
 | $S_{\mathrm{gco}}=\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | The displayed constraint; its saddle is the covariant condition |
-| $-k_m^{2}$ | The ghost; a momentum-space eigenvalue the chart does not see |
+| $-\nu_m^{2}$ | The ghost; a momentum-space eigenvalue the chart does not see |
 
 ## Further Reading
 

@@ -19,16 +19,16 @@ The denial and the inheritance. The transform carries $\mathbb{B}$-valued functi
 The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The word and its four brackets are the polar parent's, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule quoted in derived form:
 
 $$
-\tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,
+\tilde\nabla_\Phi\longmapsto 2\pi i\tilde\Upsilon_\Phi ,
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\longmapsto i\tilde K_\Phi^{\natural},
+(\tilde\nabla_\Phi)^{\natural}\longmapsto 2\pi i\tilde\Upsilon_\Phi^{\natural},
 \qquad
-\tilde K_\Phi=ik_t'e_t+\vec k_\Phi ,
+\tilde\Upsilon_\Phi=2\pi i\nu_t'e_t+2\pi\vec\nu_\Phi ,
 \qquad
-k_t'=\frac{\omega}{c}.
+2\pi\nu_t'=\frac{\omega}{c}.
 $$
 
-The temporal slot is fixed once and then used. Because $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the plane wave's phase carries $-k_t'r_t'$, the temporal slot of the symbol is $+ik_t'$. On $\tilde\Xi=\tilde\Xi_0\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}=\vec k_\Phi\cdot\vec r-k_t'r_t'$ one has $\tilde\nabla_\Phi e^{i\theta_{\mathrm{pha}}}=i\tilde K_\Phi e^{i\theta_{\mathrm{pha}}}$, which is the polar parent's identity and the only symbol statement used below.
+The temporal slot is fixed once and then used. Because $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the plane wave's phase carries $-\nu_t'r_t'$, the temporal slot of the symbol is $+ik_t'$. On $\tilde\Xi=\tilde\Xi_0\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}=2\pi\vec\nu_\Phi\cdot\vec r-2\pi\nu_t'r_t'$ one has $\tilde\nabla_\Phi e^{i\theta_{\mathrm{pha}}}=2\pi i\tilde\Upsilon_\Phi e^{i\theta_{\mathrm{pha}}}$, which is the polar parent's identity and the only symbol statement used below.
 
 The coupled operator and the gauge phase. The parent's covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$, the gauge law is $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with the field transforming by $\lambda=\exp(i\theta_{\mathrm{gau}})$, and the gauge angle is
 
@@ -42,11 +42,11 @@ The connection is written anti-Hermitially, and that is the parent's writing. On
 
 ## The Word of a Mode
 
-**A mode is a point of the wave-number space and one element attached to it.** The field of a single mode is $\tilde\Xi_0\exp(i\theta_{\mathrm{pha}})$, the transform is supported on the single wave number $\tilde K_\Phi$, and the amplitude there is $\tilde\Xi_0$. This is a structural statement: the transform of a plane wave is a delta at the phase gradient, and nothing below needs a general field to make it.
+**A mode is a point of the wave-number space and one element attached to it.** The field of a single mode is $\tilde\Xi_0\exp(i\theta_{\mathrm{pha}})$, the transform is supported on the single wave number $\tilde\Upsilon_\Phi$, and the amplitude there is $\tilde\Xi_0$. This is a structural statement: the transform of a plane wave is a delta at the phase gradient, and nothing below needs a general field to make it.
 
 The amplitude's word has four constants. Because $\tilde\Xi_0$ is one element of $\mathbb{B}$ it has a word $\tilde\Xi_0=r_0e^{i\theta_0}\tilde U_{\Psi,\mathrm b,0}\tilde u_{\mathrm r,0}$ wherever it is $N$-regular, and the four factors are numbers of the mode. None depends on the wave number, because the mode has one wave number.
 
-The kinetic bracket becomes the label. The polar parent's second bracket is $i\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi i\,ϙ}{h}A_{\imath}$, a central imaginary element per component, and with the connection it is the covariant wave number of the mode. So the coupling's temporal slot is a change of the label and nothing else: it shifts $\tilde K_\Phi$ to $\tilde K_{\Phi,\mathrm{gco}}$ and leaves the amplitude's four constants where they are.
+The kinetic bracket becomes the label. The polar parent's second bracket is $i\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi i\,ϙ}{h}A_{\imath}$, a central imaginary element per component, and with the connection it is the covariant wave number of the mode. So the coupling's temporal slot is a change of the label and nothing else: it shifts $\tilde\Upsilon_\Phi$ to $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ and leaves the amplitude's four constants where they are.
 
 The constant-$\tilde A_\Phi$ licence, stated where the multiplier is first used. The momentum-space reading in this section treats $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ as a multiplier at each wave number. That is legitimate exactly when $\tilde A_\Phi$ is constant, and the licence is stated here, used here, and dropped at §*What Is Diagonal and What Mixes*, where the mixing is counted.
 
@@ -58,25 +58,25 @@ The boost bracket's share is a derivative and not a value. The connection's spat
 
 ## What Is Diagonal and What Mixes
 
-Finding 1, first part. The kinetic term is diagonal in momentum in every setting. The derivative's symbol is $i\tilde K_\Phi$, a multiplier at each wave number with no coupling between different ones, and the statement holds with or without a connection because the connection is a separate summand.
+Finding 1, first part. The kinetic term is diagonal in momentum in every setting. The derivative's symbol is $2\pi i\tilde\Upsilon_\Phi$, a multiplier at each wave number with no coupling between different ones, and the statement holds with or without a connection because the connection is a separate summand.
 
-The weaker statement must not be substituted. It would be wrong to say that the kinetic term is diagonal only in the constant setting. The diagonal character belongs to the derivative: even in a position-dependent background the derivative's own contribution is $i\tilde K_\Phi$ at each wave number, and what spoils the diagonality is the coupling, which is the other summand. The distinction is the article's first structural point, and the count makes it visible: three modes in, three modes out of sixty-four, with residual $9.2\times10^{-17}$ of the peak against $i\tilde K_\Phi$ times the transform.
+The weaker statement must not be substituted. It would be wrong to say that the kinetic term is diagonal only in the constant setting. The diagonal character belongs to the derivative: even in a position-dependent background the derivative's own contribution is $2\pi i\tilde\Upsilon_\Phi$ at each wave number, and what spoils the diagonality is the coupling, which is the other summand. The distinction is the article's first structural point, and the count makes it visible: three modes in, three modes out of sixty-four, with residual $9.2\times10^{-17}$ of the peak against $2\pi i\tilde\Upsilon_\Phi$ times the transform.
 
 The mass is diagonal in momentum and off-diagonal in the part label. The symbol is
 
 $$
-\mathcal{D}(\tilde K_\Phi)=
+\mathcal{D}(\tilde\Upsilon_\Phi)=
 \begin{pmatrix}
--k_m & i\tilde K_\Phi^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural}\\[2pt]
-i\tilde K_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi & -k_m
+-2\pi\nu_m & 2\pi i\tilde\Upsilon_\Phi^{\natural}+\frac{i\,ϙ}{h}\tilde A_\Phi^{\natural}\\[2pt]
+2\pi i\tilde\Upsilon_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi & -2\pi\nu_m
 \end{pmatrix},
 $$
 
 with the two diagonal entries equal to the same real central number and no wave number in either. The mass therefore cannot mix two wave numbers, because it carries none, and it does mix the two parts, because it multiplies one into the other.
 
-The two halves of that sentence are independent, and both are checked. The equality of the diagonal blocks held at deviation $0.0$ over twenty random momenta and masses, and the source of the equality is structural: the mass coefficient multiplies the field without differentiating it. The off-diagonality is likewise structural: the pair's two members equate $\tilde\Xi_R$ with $\tilde\Xi_L$ through the same $k_m$.
+The two halves of that sentence are independent, and both are checked. The equality of the diagonal blocks held at deviation $0.0$ over twenty random momenta and masses, and the source of the equality is structural: the mass coefficient multiplies the field without differentiating it. The off-diagonality is likewise structural: the pair's two members equate $\tilde\Xi_R$ with $\tilde\Xi_L$ through the same $\nu_m$.
 
-The determinant is the shell, and the mass appears in it as a square. Composing the two members gives $i\tilde K_\Phi^{\natural}i\tilde K_\Phi=k_m^{2}$ and the determinant of the display above is $k_m^{2}-\langle i\tilde K_\Phi\rangle_\natural=k_m^{2}-k^{2}$. Over the same twenty draws the computed element equalled $k_m^{2}-k^{2}$ with deviation $0.0$. That is why the dispersion relation is one scalar equation: the mass's off-diagonality is annihilated by the second member's diagonal action, and what survives is one number.
+The determinant is the shell, and the mass appears in it as a square. Composing the two members gives $2\pi i\tilde\Upsilon_\Phi^{\natural}2\pi i\tilde\Upsilon_\Phi=4\pi^{2}\nu_m^{2}$ and the determinant of the display above is $4\pi^{2}\nu_m^{2}-\langle 2\pi i\tilde\Upsilon_\Phi\rangle_\natural=4\pi^{2}\nu_m^{2}-k^{2}$. Over the same twenty draws the computed element equalled $\nu_m^{2}-k^{2}$ with deviation $0.0$. That is why the dispersion relation is one scalar equation: the mass's off-diagonality is annihilated by the second member's diagonal action, and what survives is one number.
 
 The coupling mixes modes exactly when the connection depends on position. The count used a grid of sixty-four samples and one input mode at index eleven. A constant connection left one occupied mode of sixty-four, with the median coefficient at $3.6\times10^{-16}$ of the peak. A smooth bump of width $0.6$ left seventeen of sixty-four. A spike of one sample left sixty-three of sixty-four. A linear connection left all sixty-four, with the envelope $\lvert G(k_0+\Delta_\Phi)\rvert\cdot\lvert\Delta_\Phi\rvert$ constant at $38.4$ to within $1.3\%$ over $\Delta_\Phi=1,\dots,8$.
 
@@ -118,7 +118,7 @@ One question is left open: whether the mixing count has a gauge-invariant refine
 
 ## Summary
 
-In momentum space a mode is a point and an element, and the element's word has four constants. The kinetic term is diagonal in momentum in every setting, because the derivative is a multiplier at each wave number; the mass term is diagonal in momentum and off-diagonal in the part label, because it is a constant central coefficient. The determinant of the symbol is $k_m^{2}-k^{2}$, exact over twenty draws, which is why the mass shell is one scalar equation.
+In momentum space a mode is a point and an element, and the element's word has four constants. The kinetic term is diagonal in momentum in every setting, because the derivative is a multiplier at each wave number; the mass term is diagonal in momentum and off-diagonal in the part label, because it is a constant central coefficient. The determinant of the symbol is $\nu_m^{2}-k^{2}$, exact over twenty draws, which is why the mass shell is one scalar equation.
 
 The coupling is the only source of mode mixing, and the mixing is the smoothness of the connection read in the mode basis. One mode in gave one mode out for a constant connection, seventeen for a smooth bump, sixty-three for a spike and all sixty-four for a linear one, whose envelope fell as $1/\Delta k$ with $\lvert G\rvert\cdot\lvert\Delta_\Phi\rvert=38.4$ to within $1.3\%$. A strong constant connection mixes nothing and a weak spiky one mixes everything.
 
@@ -130,9 +130,9 @@ Gauge freedom is the only rearrangement that leaves the equation fixed, and it r
 | --- | --- |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; four factors, eight parameters |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ | The parent's covariant derivative |
-| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ | The covariant wave number; the mode's label |
-| $-k_m$ on the diagonal | The mass: diagonal in momentum, off-diagonal in the part label |
-| $k_m^{2}-k^{2}$ | The determinant of the symbol; its zero is the shell |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | The covariant wave number; the mode's label |
+| $-\nu_m$ on the diagonal | The mass: diagonal in momentum, off-diagonal in the part label |
+| $\nu_m^{2}-k^{2}$ | The determinant of the symbol; its zero is the shell |
 | $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ | The gauge angle |
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_\natural$ | The quaternionic norm; scale and angle |
 | $\tilde\Xi^{\natural}\tilde\Xi/N(\tilde\Xi)$ | The rotor read relative to the norm; gauge invariant |

@@ -28,7 +28,7 @@ $$
 \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 .
 $$
 
-The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\imath} Q_{\imath}^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$. The scalar mass enters as the length $\frac{h}{2\pi mc}$, so that the scalar equation is $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}_{\Phi}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\frac{h}{2\pi mc}$ is the mass length.
+The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\imath} Q_{\imath}^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$. The scalar mass enters as the length $\frac{h}{2\pi mc}$, so that the scalar equation is $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}_{\Phi}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\frac{h}{2\pi mc}$ is the mass length.
 
 **A sign warning.** As in the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, the mixed component $\mathsf{T}_{00}$ carries a sign in the $i r'_t$ convention: for the electromagnetic field $\mathsf{T}_{00}=-W$, while the physical energy density is $T_{tt}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.
 
@@ -64,20 +64,20 @@ $$
 Because $\Box_\Phi$ is central and scalar, the field decomposes into its four components and the Euler–Lagrange equation is componentwise the scalar equation. For a real scalar component $\xi$ the variation gives
 
 $$
-\Box_\Phi\xi - (k_m)^{2}\xi = 0 ,
+\Box_\Phi\xi - (2\pi\nu_m)^{2}\xi = 0 ,
 $$
 
 that is,
 
 $$
-\left(\Box_\Phi-(k_m)^{2}\right)\tilde{Ξ} = 0 ,
+\left(\Box_\Phi-(2\pi\nu_m)^{2}\right)\tilde{Ξ} = 0 ,
 $$
 
 the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\xi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=i q'_t$ and $Q_\eta=q_\eta$, the kinetic term of $\mathcal{L}_\xi$ written out is
 
 $$
-\mathcal{L}_\xi = -\tfrac12\left(-\left(\partial\xi/\partial r'_t\right)^{2}+(\vec\nabla_\Phi\xi)^2\right)-\tfrac12(k_m)^{2}\xi^2
-= \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\vec\nabla_\Phi\xi)^2-\frac12(k_m)^{2}\xi^2 ,
+\mathcal{L}_\xi = -\tfrac12\left(-\left(\partial\xi/\partial r'_t\right)^{2}+(\vec\nabla_\Phi\xi)^2\right)-\tfrac12(2\pi\nu_m)^{2}\xi^2
+= \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\vec\nabla_\Phi\xi)^2-\frac12(2\pi\nu_m)^{2}\xi^2 ,
 $$
 
 and it is this sign that makes the energy density of the next section positive. A complex scalar field, equivalently two real scalar fields, carries the doubling that the Klein–Gordon article records.
@@ -146,14 +146,14 @@ $$
 the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $Q_t=i q'_t$ and $Q_\eta=q_\eta$, the time row carrying the minus of $i^2$,
 
 $$
-\boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2} + \frac12(\vec\nabla_\Phi\xi)^2 + \frac12(k_m)^{2}\xi^2 > 0\ } ,
+\boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2} + \frac12(\vec\nabla_\Phi\xi)^2 + \frac12(2\pi\nu_m)^{2}\xi^2 > 0\ } ,
 $$
 
 $$
 T_{t\eta} = T_{\eta t} = -\frac{1}{c}\,\partial\xi/\partial r'_t\,\partial/\partial R_\eta\,\xi ,
 \qquad
 T_{j\eta} = T_{\eta j} = \partial/\partial R_j\,\xi\,\partial/\partial R_\eta\,\xi
-+ \delta_{j\eta}\left(\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\vec\nabla_\Phi\xi)^2-\frac12(k_m)^{2}\xi^2\right) .
++ \delta_{j\eta}\left(\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\vec\nabla_\Phi\xi)^2-\frac12(2\pi\nu_m)^{2}\xi^2\right) .
 $$
 
 For a right-moving massless wave, $\xi=f(x-r'_{t})$, these reduce to $T_{tt}=T_{xx}=(\partial\xi/\partial r_x)^2$ and $T_{tx}=T_{tt}$, the null-field pattern of a single traveling wave.
@@ -176,16 +176,16 @@ is time-independent, which follows by integrating the conservation law over a sp
 As a check, consider the superposition
 
 $$
-\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \cos\!\left(k_{\Phi x}r_x-\omega_1r'_t/c\right) + 0.6\cos\!\left(k_{\Phi y}r_y-\omega_2r'_t/c\right),
+\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \cos\!\left(2\pi\nu_{\Phi x}r_x-\omega_1r'_t/c\right) + 0.6\cos\!\left(2\pi\nu_{\Phi y}r_y-\omega_2r'_t/c\right),
 \qquad
-\vec k_1 = (1.1,0,0),
+\vec\nu_1 = (1.1,0,0),
 \quad
-\vec k_2 = (0,0.9,0),
+\vec\nu_2 = (0,0.9,0),
 \quad
-k_m = 1.3\ \text{in inverse length},
+2\pi\nu_m = 1.3\ \text{in inverse length},
 $$
 
-with $\omega_i^2 = \vec k_i^2+(k_m)^{2}$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}$ by second-order finite differences with step $10^{-3}$ at the event $r'_t=0.7$, $(r_x,r_y,r_z)=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four ${\jmath}$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T_{tt}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.
+with $\omega_i^2 = 4\pi^{2}\vec\nu_i^{2}+(2\pi\nu_m)^{2}$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}$ by second-order finite differences with step $10^{-3}$ at the event $r'_t=0.7$, $(r_x,r_y,r_z)=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four ${\jmath}$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T_{tt}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.
 
 ## The Electromagnetic Stress–Energy as a Bigeneral quaternionic Bilinear
 
@@ -264,7 +264,7 @@ $$
 
 so that the source-free field has $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}=0$ and in the presence of charges the field momentum is exchanged with the matter at the rate given by the Lorentz force. The companion article *The Lorentz Force in Biquaternion Form* treats the matter side of the exchange.
 
-The identity was verified off shell: for random arbitrary fields the divergence reproduces $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}$ to machine precision, ratio exactly one, for all four ${\jmath}$. The source-free case was then checked on shell: on random superpositions of one to three transverse plane waves with $\omega_i=c|\vec k_i|$ in the vacuum, $\epsilon_r=\mu_r=1$, at random events, second-order finite differences with step $10^{-5}$ give $|\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}|$ below $10^{-9}$ against tensor elements of order unity, at the discretisation floor, for all four ${\jmath}$ — conservation for the interacting cross terms and not merely mode by mode.
+The identity was verified off shell: for random arbitrary fields the divergence reproduces $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}$ to machine precision, ratio exactly one, for all four ${\jmath}$. The source-free case was then checked on shell: on random superpositions of one to three transverse plane waves with $\omega_i=c|2\pi\vec\nu_i|$ in the vacuum, $\epsilon_r=\mu_r=1$, at random events, second-order finite differences with step $10^{-5}$ give $|\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}|$ below $10^{-9}$ against tensor elements of order unity, at the discretisation floor, for all four ${\jmath}$ — conservation for the interacting cross terms and not merely mode by mode.
 
 **The reading is decisive.** It is the **plain** derivative, and the projection is the plain $e_{\imath}$, not the conjugated $e_{\imath}^{\natural}$. Scalar parts are blind to the conjugation, but the spatial basis elements are not, since $\vec e_\eta^{\natural}=-\vec e_\eta$; the conjugated contraction is a different combination, it does not reproduce $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}$, and on the same on-shell fields it stays at the scale of the tensor itself instead of vanishing. The conjugation is the right operation for the framework's four-vector currents, where $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi})$ is the divergence; for the rank-two tensor the plain derivative is what carries it.
 
@@ -348,7 +348,7 @@ $$
 \frac{h}{2\pi mc},
 $$
 
-has the Euler–Lagrange equation $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=0$, and the electromagnetic action
+has the Euler–Lagrange equation $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=0$, and the electromagnetic action
 
 $$
 S_{\mathrm{em}} = -\frac14\int \sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\,d^4r ,
@@ -361,7 +361,7 @@ has the equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, wit
 The scalar stress–energy is $T_{\imath\jmath}=\partial/\partial R_{\imath}\,\xi\partial/\partial R_{\jmath}\,\xi+\delta_{\imath\jmath}\mathcal{L}_\xi$, with
 
 $$
-T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\vec\nabla_\Phi\xi)^2+\frac12(k_m)^{2}\xi^2>0,
+T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\vec\nabla_\Phi\xi)^2+\frac12(2\pi\nu_m)^{2}\xi^2>0,
 \qquad
 \sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}=0 \ \text{on shell},
 $$
@@ -391,9 +391,9 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\imath} Q_{\imath}^2$ | Biquaternion norm; the unit metric on $\mathbb{C}$ |
 | $\delta_{\imath\jmath}=(1,1,1,1)$ | Unit metric; the same in $\mathbb{B}$ and on the two sectors |
 | $S=\int\mathcal{L}\,d^4r$ | Action; $\mathcal{L}$ the Lagrangian density |
-| $\mathcal{L}_\xi=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\tilde{Ξ}\,\partial/\partial R_{\imath}\,\tilde{Ξ}^{\natural}-\tfrac12(k_m)^{2}\tilde{Ξ}\tilde{Ξ}^{\natural}$ | Scalar Lagrangian |
-| $\frac{h}{2\pi mc}$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $k_m$ is the scalar mass parameter |
-| $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=0$ | Biquaternionic Klein–Gordon equation |
+| $\mathcal{L}_\xi=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\tilde{Ξ}\,\partial/\partial R_{\imath}\,\tilde{Ξ}^{\natural}-\tfrac12(2\pi\nu_m)^{2}\tilde{Ξ}\tilde{Ξ}^{\natural}$ | Scalar Lagrangian |
+| $\frac{h}{2\pi mc}$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $\nu_m$ is the scalar mass parameter |
+| $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=0$ | Biquaternionic Klein–Gordon equation |
 | $F_{\imath\jmath}=\partial/\partial R_{\imath} A_{\jmath}-\partial/\partial R_{\jmath} A_{\imath}$; $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field strength |
 | $S_{\mathrm{em}}=-\frac14\int \sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}d^4r$ | Electromagnetic action |
 | $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$; $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell system |
@@ -405,7 +405,7 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $\sum_{\imath} T_{Q_{\imath} Q_{\imath}}=-T_{tt}+T_{\eta\eta}=0$ | Tracelessness |
 | $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}=-f_{\jmath}$, $\mathsf{T}_{\imath\jmath}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_{\imath}\tilde F^{*}\mathcal{E}_{\jmath})$; plain derivative, $i r'_t$ coordinates $Q_t=i q'_t$ | Conservation with source per direction; Lorentz four-force |
 | $T_{\imath\jmath}=\partial/\partial R_{\imath}\,\xi\partial/\partial R_{\jmath}\,\xi+\delta_{\imath\jmath}\mathcal{L}_\xi$ | Scalar stress–energy |
-| $T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\vec\nabla_\Phi\xi)^2+\frac12(k_m)^{2}\xi^2$ | Scalar energy density, positive |
+| $T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\vec\nabla_\Phi\xi)^2+\frac12(2\pi\nu_m)^{2}\xi^2$ | Scalar energy density, positive |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |

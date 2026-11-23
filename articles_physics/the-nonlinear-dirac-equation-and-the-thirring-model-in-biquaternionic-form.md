@@ -60,10 +60,10 @@ The composite of the time slot action with the $k$-th space slot action is the l
 ### The Two Writings of the Free Equation
 
 The free field obeys the linear chiral pair
-$$\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+$$\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},$$
-in which the gradient acts by left multiplication on the field and the mass relates the two parts. This is the **one-sided** writing. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},$$
+in which the gradient acts by left multiplication on the field and the mass relates the two parts. This is the **one-sided** writing. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The **two-sided** writing is the action
 $$\tilde Q\longmapsto \sum_{\imath} e_{\imath}\frac{\partial\tilde Q}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)},$$
@@ -73,7 +73,7 @@ The composition of the two-sided action is read slot by slot. The slot of this a
 $$\tilde Q\longmapsto\Box_\Phi\tilde Q,
 \qquad
 \Box_\Phi=\sum_\eta\frac{\partial^2}{\partial x_\eta^2}-\frac{\partial^2}{\partial x_t^2}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi,$$
-which is the corpus's d'Alembertian: $R_t=i\,x_t$ is the imaginary time, so $\partial^2/\partial R_t^2=-\partial^2/\partial x_t^2$. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above. With this $\Box_\Phi$ the free equation $\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}=k_m\tilde{Ξ}$ squares to $(\Box_\Phi-k_m^{2})\tilde{Ξ}=0$, the second-order equation of the reference article, and a plane wave obeys $k_{t}^{\prime2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$.
+which is the corpus's d'Alembertian: $R_t=i\,x_t$ is the imaginary time, so $\partial^2/\partial R_t^2=-\partial^2/\partial x_t^2$. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above. With this $\Box_\Phi$ the free equation $\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}=2\pi\nu_m\tilde{Ξ}$ squares to $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ}=0$, the second-order equation of the reference article, and a plane wave obeys $\nu_t^{\prime2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$.
 
 ### The Two Values and the Axial Bilinear
 
@@ -90,7 +90,7 @@ The axial bilinear carries $\vec e_z$ in the right slot, before the space unit, 
 The free equation is first order in space and in time, and every bilinear above is quadratic in the field. A Lagrangian term that is a product of two bilinears is therefore quartic in the field, and the field equation obtained from it is cubic: a bilinear coefficient multiplying one more power of the field. That is the whole origin of the name, and the alternative name **cubic Dirac equation** says the same thing.
 
 The generic equation is
-$$\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}-k_m\tilde{Ξ}+g\,Ξ(\tilde{Ξ})=0,$$
+$$\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}-2\pi\nu_m\tilde{Ξ}+g\,Ξ(\tilde{Ξ})=0,$$
 with $Ξ$ cubic. The three standard models differ only in which bilinear builds $Ξ$, and a table is the clearest statement of the difference.
 
 | Model | The bilinear it squares | The interaction in the Lagrangian | The cubic self-term in the equation |
@@ -120,7 +120,7 @@ $$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,(\sum_{\imath} e_{\imath}\frac{\pa
 with the sums running over the two indices $t$ and $x$ of the plane. The field is an element of $\mathbb{B}$; its two values $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ are the two components the two-dimensional dynamics uses, and the mass term is the scalar density $S_{\mathrm d}$, which pairs the two values and vanishes when only one is present.
 
 The integral $\int dt\,dx\,\mathcal{L}$ is the action, and the field equation is
-$$\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}-k_m\tilde{Ξ}-g\sum_{\imath}\varepsilon_{\imath} V_{\imath}\,(ie_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)})=0,$$
+$$\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}-2\pi\nu_m\tilde{Ξ}-g\sum_{\imath}\varepsilon_{\imath} V_{\imath}\,(ie_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)})=0,$$
 with $\mu$ running over $t$ and $x$. The interaction is a **current–current** interaction: the field at a point multiplies the current at the same point.
 
 **The model is exactly solvable.** The massless Thirring model was solved by Hagen (1964) and by Klaiber (1968): the spectrum is a free boson, and the fermion Green functions are explicit powers of the free ones. The model satisfies the Osterwalder–Schrader axioms with a suitable choice of the coupling (Carey and Ruijsenaars 1984), and the massive model is integrable by Bethe ansatz (Bergknoff and Thacker 1979). The exact solubility is the reason the model is used as a testing ground for approximation schemes: a method that cannot reproduce the Thirring model exactly is known to be wrong before it is applied to QCD.
@@ -132,7 +132,7 @@ with $\mu$ running over $t$ and $x$. The interaction is a **current–current** 
 The **Soler model** (Soler 1970) is the $3+1$-dimensional theory whose interaction is the square of the scalar bilinear:
 $$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,(\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x\bigr)+\frac{g}{2}\Bigl(\mathrm{Sc}\bigl(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x\bigr)\Bigr)^{2},$$
 that is, with $S_{\mathrm d}$ for the scalar density, $\frac{g}{2}S_{\mathrm d}^2$. The interaction is a **scalar–scalar** interaction, and the field equation is
-$$\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}-k_m\tilde{Ξ}+g\,S_{\mathrm d}\,\tilde{Ξ}=0,$$
+$$\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}-2\pi\nu_m\tilde{Ξ}+g\,S_{\mathrm d}\,\tilde{Ξ}=0,$$
 with the sum over the four indices $t,x,y,z$.
 
 **The pseudoscalar variant.** The same construction with $P_5$ in place of $S_{\mathrm d}$ gives the pseudoscalar–pseudoscalar interaction $\frac{g}{2}P_5^2$. The two variants are not independent under the axial rotation $Q\mapsto Q\exp(\alpha\vec e_z)$: the pair $(S_{\mathrm d},P_5)$ rotates as a two-component object,
@@ -148,11 +148,11 @@ so that $S_{\mathrm d}^2+P_5^2$ is invariant and $S_{\mathrm d}^2$ alone is not.
 ## The Hehl–Datta Interaction from Torsion
 
 With the torsion eliminated, the equation of the field is the Dirac equation plus the axial term, and it is the one model of the three whose coefficient is not fitted but fixed:
-$$\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}-k_m\tilde{Ξ}+\frac{3\kappa}{8}\sum_{\imath}\varepsilon_{\imath} A_{\imath}\,e_{\imath}\tilde{Ξ}\vec e_z\vec e_{\mathrm{spt}(\imath)}=0.$$
+$$\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}-2\pi\nu_m\tilde{Ξ}+\frac{3\kappa}{8}\sum_{\imath}\varepsilon_{\imath} A_{\imath}\,e_{\imath}\tilde{Ξ}\vec e_z\vec e_{\mathrm{spt}(\imath)}=0.$$
 The term is the axial current multiplying the axial slot action on the field. Its coefficient is $3\kappa/8$, twice the $3\kappa/16$ of the Lagrangian, and the factor of two is the one that varying a square supplies.
 
 **The spacelike case.** Where only the spacelike components of the current are nonzero, the equation separates into a time part and a space part,
-$$\Bigl((\nabla_t\tilde{Ξ})\vec e_x+\sum_\eta\vec e_\eta(\nabla_\eta\tilde{Ξ})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_\eta\varepsilon_\eta A_\eta\,\vec e_\eta\tilde{Ξ}\vec e_z\vec e_y=k_m\tilde{Ξ},$$
+$$\Bigl((\nabla_t\tilde{Ξ})\vec e_x+\sum_\eta\vec e_\eta(\nabla_\eta\tilde{Ξ})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_\eta\varepsilon_\eta A_\eta\,\vec e_\eta\tilde{Ξ}\vec e_z\vec e_y=2\pi\nu_m\tilde{Ξ},$$
 with $A_0=0$, and the two parts are read separately.
 
 **Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_\eta^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_\eta\partial_\eta^2=\Delta_\Phi$, the spatial part of $\Box_\Phi$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.

@@ -19,12 +19,12 @@ acting by left multiplication. Here $\Gamma$ is a real gauge function and $ϙ$ i
 **The equation.**
 
 $$
-\boxed{\;\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
+\boxed{\;\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R\;}
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R\;}
 $$
 
-with $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}^{\natural}$ the quaternion conjugate of the operator, and with $k_m=\frac{2\pi mc}{h}$ the mass wave number. In the massless case the two members decouple, $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=0$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=0$.
+with $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}^{\natural}$ the quaternion conjugate of the operator, and with $\nu_m=\frac{mc}{h}$ the mass wave number. In the massless case the two members decouple, $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=0$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=0$.
 
 **Three things are established here.**
 
@@ -47,9 +47,9 @@ What this article does **not** do is derive the polar form or the action. Those 
 **The field.** $\tilde\Xi(\tilde Q)$ is one element of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with four complex coefficients, that is eight real numbers. It satisfies the free pair
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_\Phi\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R,
 $$
 
 the two members acting on the two parts of the one element. The subscript names one of two parts and no more: a product takes the letter of its right factor and a left multiplication keeps the letter, so the letters are a bookkeeping device for the two sides of the algebra and not a second carrier. The parent states this in full and nothing is repeated here.
@@ -78,7 +78,7 @@ $$
 \tilde\Xi_L\longmapsto\varsigma^{-1}\tilde\Xi_L,
 $$
 
-because each member acquires $\varsigma\varsigma^{-1}=1$. The massive pair is not: its two sides acquire $\varsigma$ and $\varsigma^{-1}$, so it is form-invariant only for $\varsigma^{2}=1$. A *local* $\varsigma$ fails already at $k_m=0$, since the derivative acts on $\varsigma$ and the two derivative terms do not cancel. The mass therefore keeps the common phase and breaks the relative one.
+because each member acquires $\varsigma\varsigma^{-1}=1$. The massive pair is not: its two sides acquire $\varsigma$ and $\varsigma^{-1}$, so it is form-invariant only for $\varsigma^{2}=1$. A *local* $\varsigma$ fails already at $\nu_m=0$, since the derivative acts on $\varsigma$ and the two derivative terms do not cancel. The mass therefore keeps the common phase and breaks the relative one.
 
 **The charge.** $ϙ$ is a parameter of the field. The algebra fixes neither its value, nor its sign, nor its quantization. For the electron $ϙ=-e$, and the value is inserted rather than derived.
 
@@ -155,7 +155,7 @@ Two forms are in circulation, and the prescription attaches to one of them. That
 **The two-sided form.** The parent also carries a single equation on a general element in which the derivative acts on the left and the mass on the right,
 
 $$
--(\tilde\nabla_\Phi)^{\natural}F-k_m\,i\,\overline{F}\,\vec u=0,
+-(\tilde\nabla_\Phi)^{\natural}F-2\pi\nu_m\,i\,\overline{F}\,\vec u=0,
 $$
 
 with the bar the complex conjugation of the coefficients and $\vec u$ the declared unit of the frame. The mass term combines a conjugation, the central $i$ and a right multiplication. It is not a scalar multiple of the field.
@@ -165,7 +165,7 @@ with the bar the complex conjugation of the coefficients and $\vec u$ the declar
 $$
 -(\tilde\nabla_\Phi)^{\natural}\bigl(\lambda F\bigr)=\lambda\bigl(-(\tilde\nabla_\Phi)^{\natural}F\bigr),
 \qquad
--k_m\,i\,\overline{\lambda F}\,\vec u=\bar\lambda\bigl(-k_m\,i\,\overline{F}\,\vec u\bigr),
+-2\pi\nu_m\,i\,\overline{\lambda F}\,\vec u=\bar\lambda\bigl(-2\pi\nu_m\,i\,\overline{F}\,\vec u\bigr),
 $$
 
 and $\bar\lambda\ne\lambda$ for non-real $\lambda$. The two-sided form therefore has **no continuous central phase symmetry**; its symmetry group is the real rescalings $F\mapsto rF$ with $\varrho\in\mathbb{R}^{\times}$.
@@ -236,7 +236,7 @@ $$
 (*The Covariant Derivative and Gauge Connection in Biquaternionic Form*), the scalar part being the covariant d'Alembertian and the vector part the curvature. Applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the first member and using the second gives
 
 $$
-\Bigl(\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
+\Bigl(\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{i\,ϙ}{h}\tilde F-4\pi^{2}\nu_m^{2}\Bigr)\tilde\Xi_R=0,
 $$
 
 a covariant wave equation with a curvature term. The corresponding statement for $\tilde\Xi_L$ carries $\tilde\nabla_{\mathrm{gco},\Phi}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ in place of $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$. The curvature is the part of the connection that no phase can absorb: a gradient can be gauged away and a field strength cannot.
@@ -246,7 +246,7 @@ a covariant wave equation with a curvature term. The corresponding statement for
 Suppose the coupled massive pair holds in one gauge. The left-hand side of the transformed first member is $\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R$, and the right-hand side is
 
 $$
-k_m\tilde\Xi_{L,2}=k_m\lambda\,\tilde\Xi_L,
+\nu_m\tilde\Xi_{L,2}=\nu_m\lambda\,\tilde\Xi_L,
 $$
 
 because a linear mass term carries the same factor. The two sides transform identically, with $\lambda$ and not $\bar\lambda$. The massive coupled equation is therefore form-invariant under the local phase, exactly as the massless one is.
@@ -269,35 +269,35 @@ $$
 
 which is a multiplication by one central phase with a linear argument.
 
-**What that does to a plane wave.** Write $\tilde\Xi=\tilde\Xi_0\exp(i\theta)$ with $\theta$ linear and $\tilde\Xi_0$ constant, and let $\tilde K_\Phi=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ be the canonical wavevector. The gauge factor adds $-\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ to the wavevector of the field, so the canonical wavevector and the covariant one are related by
+**What that does to a plane wave.** Write $\tilde\Xi=\tilde\Xi_0\exp(i\theta)$ with $\theta$ linear and $\tilde\Xi_0$ constant, and let $\tilde\Upsilon_\Phi=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ be the canonical wavevector. The gauge factor adds $-\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ to the wavevector of the field, so the canonical wavevector and the covariant one are related by
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_{\Phi},
+\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_{\Phi},
 $$
 
-and the pair becomes the free pair with $\tilde K_{\Phi,\mathrm{gco}}$ in the place of $\tilde K_\Phi$:
+and the pair becomes the free pair with $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ in the place of $\tilde\Upsilon_\Phi$:
 
 $$
-i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi_0^{R}=k_m\tilde\Xi_0^{L},
+2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\tilde\Xi_0^{R}=2\pi\nu_m\tilde\Xi_0^{L},
 \qquad
-i\tilde K_{\Phi,\mathrm{gco}}^{\natural}\tilde\Xi_0^{L}=k_m\tilde\Xi_0^{R},
+2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}\tilde\Xi_0^{L}=2\pi\nu_m\tilde\Xi_0^{R},
 \qquad
-\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}.
+\tilde\Upsilon_{\Phi,\mathrm{gco}}\tilde\Upsilon_{\Phi,\mathrm{gco}}^{\natural}=-4\pi^{2}\nu_m^{2}.
 $$
 
-**The mass shell is translated and not resized.** Writing $\tilde K_{\Phi,\mathrm{gco}}=i\kappa_te_t+\vec\kappa$ with real $\kappa_t$ and real $\vec\kappa$, the third relation is
+**The mass shell is translated and not resized.** Writing $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\kappa_te_t+\vec\kappa$ with real $\kappa_t$ and real $\vec\kappa$, the third relation is
 
 $$
-\kappa_t^{2}-|\vec\kappa|^{2}=k_m^{2},
+\kappa_t^{2}-|\vec\kappa|^{2}=4\pi^{2}\nu_m^{2},
 $$
 
-and in terms of the canonical components $\tilde K_\Phi=i\pi_te_t+\vec\pi$ it is
+and in terms of the canonical components $\tilde\Upsilon_\Phi=i\pi_te_t+\vec\pi$ it is
 
 $$
-\Bigl(\pi_t+\frac{2\pi ϙ}{h}A_t\Bigr)^{2}-\Bigl|\vec\pi+\frac{2\pi ϙ}{h}\vec A\Bigr|^{2}=k_m^{2}.
+\Bigl(\pi_t+\frac{ϙ}{h}A_t\Bigr)^{2}-\Bigl|\vec\pi+\frac{ϙ}{h}\vec A\Bigr|^{2}=4\pi^{2}\nu_m^{2}.
 $$
 
-The two displays are one surface and two origins. The radius is $k_m$ in both, the shape is the same, and the potential moves the centre and nothing else. **The translation is the potential's and the gap is $k_m$'s**: a uniform $A_t$ moves every level by $ϙA_t$ and leaves every spacing unchanged, and no constant potential opens a gap.
+The two displays are one surface and two origins. The radius is $\nu_m$ in both, the shape is the same, and the potential moves the centre and nothing else. **The translation is the potential's and the gap is $\nu_m$'s**: a uniform $A_t$ moves every level by $ϙA_t$ and leaves every spacing unchanged, and no constant potential opens a gap.
 
 **The reason, in one line.** A gauge transformation shifts a wavevector by a gradient, and a shift of a variable cannot change a radius. A gap would need a term with a scale of its own; the algebra has one scalar here, and it is the mass coefficient.
 
@@ -441,11 +441,11 @@ With every index low and each slot carrying the interval's weight $\varepsilon_{
 The coupled Dirac equation of the biquaternion framework is
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi},
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_{\Phi},
 $$
 
 with the interaction term $\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}\tilde\Xi$ that the localized central phase forces. In the massless case the members decouple.
@@ -454,7 +454,7 @@ The prescription attaches to the one-sided pair and not to the two-sided form, b
 
 The coupled equation is exactly gauge covariant, massive as well as massless, with $\tilde\Xi_2=\lambda\tilde\Xi$ and $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$: both members transform with the same $\lambda$, and the linear mass term acquires it too. The mass breaks the relative phase of the two parts and not the common one.
 
-A constant potential is pure gauge, so a plane wave sees it as a shift of the wavevector: $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_{\Phi}$, the mass shell $\kappa_t^{2}-|\vec\kappa|^{2}=k_m^{2}$ is translated and not resized, and no constant potential opens a gap. Squaring the pair gives the covariant wave equation with the curvature term $\frac{2\pi i\,ϙ}{h}\tilde F$, and for constant $\tilde A_{\Phi}$ that term vanishes.
+A constant potential is pure gauge, so a plane wave sees it as a shift of the wavevector: $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_{\Phi}$, the mass shell $\kappa_t^{2}-|\vec\kappa|^{2}=4\pi^{2}\nu_m^{2}$ is translated and not resized, and no constant potential opens a gap. Squaring the pair gives the covariant wave equation with the curvature term $\frac{2\pi i\,ϙ}{h}\tilde F$, and for constant $\tilde A_{\Phi}$ that term vanishes.
 
 The constants of motion of a static connection are the energy, the momentum and the angular momentum, with the gradient made covariant in each. The angular momentum needs the covariant derivative and not the ordinary one, because a rotation that moves the field and leaves the potential fixed is not a symmetry.
 
@@ -480,7 +480,7 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 | $\tilde\Xi=\tilde\Xi_L+\tilde\Xi_R$ | The field, one element of $\mathbb{B}$; the letters name the two parts |
 | $\tilde\Xi^{\flat}=-\tilde\Xi^{*}$ | The anti-Hermitian conjugate; the algebra's real structure, not the mass |
 | $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | The gradient and its quaternion conjugate |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $\tilde A_{\Phi}=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | Potential biquaternion, an element of $\mathbb{B}_{\Phi}$ |
 | $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ | Gauge law of the connection; $\Gamma$ real |
 | $\lambda=\exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ |
@@ -490,9 +490,9 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 | $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}^{\natural}$ | Its $\natural$-image; the operator of the second member |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | Material time derivative |
 | $\tilde F$ | Field strength; $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F$ |
-| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ | Covariant wavevector; gauge invariant; in $\mathbb{B}_{\Phi}$ |
-| $\kappa_t,\vec\kappa$ | Components of $\tilde K_{\Phi,\mathrm{gco}}$; $\kappa_t^{2}-|\vec\kappa|^{2}=k_m^{2}$ |
-| $\pi_t,\vec\pi$ | Components of the canonical $\tilde K_\Phi$; the mass shell is displaced by $-\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_{\Phi}$ | Covariant wavevector; gauge invariant; in $\mathbb{B}_{\Phi}$ |
+| $\kappa_t,\vec\kappa$ | Components of $\tilde\Upsilon_{\Phi,\mathrm{gco}}$; $\kappa_t^{2}-|\vec\kappa|^{2}=4\pi^{2}\nu_m^{2}$ |
+| $\pi_t,\vec\pi$ | Components of the canonical $\tilde\Upsilon_\Phi$; the mass shell is displaced by $-\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ |
 | $j_{\imath}=\mathrm{Sc}\bigl(\tilde\Xi^{*}i(i e_{\imath}\tilde\Xi\vec e_{\mathrm{spt}(\imath)})\vec e_x\bigr)$ | The conserved current; two fixed frame units |
 | $\tilde J_{\Phi,\mathrm{sp}}=i\tilde\Xi\tilde\Xi^{*}$ | The naive bilinear; gauge invariant, of the density sign, **not conserved** |
 | $\gamma_{\imath},\ \gamma_5$ | Basis operators of the legacy frame; used in one section only |

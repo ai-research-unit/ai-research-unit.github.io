@@ -70,9 +70,9 @@ One complex equation, as above. Its advantage is that it uses nothing but the al
 Every element of $G$ is a product of a Hermitian factor and a unitary one,
 
 $$
-\tilde U=\tilde H\tilde K,\qquad
+\tilde U=\tilde H\tilde\Upsilon,\qquad
 \tilde H=\tilde H^{*},\quad \operatorname{Tr}\mathsf{M}_2(\tilde H)>0,\quad \det\mathsf{M}_2(\tilde H)=1,
-\qquad \tilde K^{*}\tilde K=e_t,
+\qquad \tilde\Upsilon^{*}\tilde\Upsilon=e_t,
 $$
 
 and the pair is unique. The Hermitian factor is a positive Hermitian matrix of determinant one; the unitary factor is a $*$-unitary biquaternion of determinant one, which is to say a unitary $2\times2$ matrix of determinant one.
@@ -141,7 +141,7 @@ So "the group is six-dimensional while the algebra is eight" is true of the asso
 The $*$-unitary elements of $G$ form the maximal compact subgroup,
 
 $$
-K=\{\tilde K\in G:\tilde K^{*}\tilde K=e_t\}\cong SU(2),
+K=\{\tilde\Upsilon\in G:\tilde\Upsilon^{*}\tilde\Upsilon=e_t\}\cong SU(2),
 $$
 
 of real dimension three. Because the elements of $K$ have real quaternion coefficients, $K=SL(2,\mathbb{C})\cap\mathbb{B}_{H}$: the compact part of the group is the group of unit real quaternions, which is the rotation group's double cover. On $K$ the norm condition and the $*$-unitarity condition coincide, which is why rotations are both unit-norm and unitary.
@@ -218,7 +218,7 @@ The group of unit-norm biquaternions is the set of elements whose quaternionic n
 | $G$ | the unit-norm group, $\cong SL(2,\mathbb{C})$ |
 | $K$ | the maximal compact subgroup, $\cong SU(2)$, the rotations |
 | $P$ | the positive Hermitian elements of unit norm, the boosts |
-| $\tilde H\tilde K$ | the polar pair, boost times rotation |
+| $\tilde H\tilde\Upsilon$ | the polar pair, boost times rotation |
 | $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | rapidity and boost axis |
 | $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | rotation angle and axis |
 

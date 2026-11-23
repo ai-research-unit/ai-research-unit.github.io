@@ -12,7 +12,7 @@ This article is a first attempt at that extension. Its subject is the canonical 
 
 The article has to be read with a clear division in mind, and we state it at the outset because it governs everything that follows.
 
-- **The standard part.** The biquaternion Dirac equation is the one-sided chiral pair, and it is the two first-order equations $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ on the element, the pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*. No single glyph is written for the two together, and none is used here. The two-sided equation of Kravchenko — the spatial gradient acting from the left and the mass from the right through $\vec e_z$ — is a different operator and is not quantized here. The canonical quantization of the one-sided equation — the Lagrangian, the conjugate momentum, the equal-time anticommutators, the mode expansion, the mode algebra, the Hamiltonian, and the normal-ordering constant — is textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.
+- **The standard part.** The biquaternion Dirac equation is the one-sided chiral pair, and it is the two first-order equations $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ on the element, the pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*. No single glyph is written for the two together, and none is used here. The two-sided equation of Kravchenko — the spatial gradient acting from the left and the mass from the right through $\vec e_z$ — is a different operator and is not quantized here. The canonical quantization of the one-sided equation — the Lagrangian, the conjugate momentum, the equal-time anticommutators, the mode expansion, the mode algebra, the Hamiltonian, and the normal-ordering constant — is textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.
 - **The open part.** What is *not* standard, and what this article cannot settle, is the intrinsic formulation of the quantization in the algebra $\mathbb{B}$ itself: which pairing of the algebra the $\mathbb{B}$-intrinsic Lagrangian and conjugate momentum are built from, since the algebra alone does not single one out; what the biquaternion Fock space is; and how the $\mathbb{Z}/2$ grading required by fermionic statistics is to be embedded in $\mathbb{B}$.
 
 We therefore make no claim that the extension is canonical in the biquaternion framework. The claim is narrower: the extension can be carried out on the elements of $\mathbb{B}$ with the parent article's solutions, and it supplies exactly the operator structure — anticommuting modes and a fermion-parity grading — that the KMS article identifies as missing. Whether that structure lifts to a genuinely biquaternionic one is the open question this article is meant to expose.
@@ -28,8 +28,8 @@ Every derivative of the field in this article is the corpus gradient $\tilde\nab
 The biquaternion Dirac field of the companion article is an element-valued map $\tilde{Ξ}:\mathbb{R}^{1,3}\to\mathbb{B}$, written $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ for its two chiral halves, and satisfying the linear, chirality-off-diagonal pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
 where $\tilde{Ξ}_{L}$ is the part of the element of one chirality value and $\tilde{Ξ}_{R}$ the part of the other, as the parent article splits them. At $m=0$ the pair decouples into
@@ -39,12 +39,12 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0,
 $$
 
-one equation per chirality. The single equation $\tilde\nabla_\Phi\tilde{Ξ}=0$ is the member written $R$, not the whole massless field. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+one equation per chirality. The single equation $\tilde\nabla_\Phi\tilde{Ξ}=0$ is the member written $R$, not the whole massless field. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 Two formulations now carry the name *Dirac equation*, and they must not be read as one. The pair above is the corpus's **one-sided** equation: both gradients act from the left, and the mass is the off-diagonal pairing of the two chiral halves. Kravchenko's **two-sided** equation, for a biquaternion field $F$,
 
 $$
-\bigl(i\partial/\partial r'_t+\vec\nabla_\Phi\bigr)F-k_m\,i\,\overline{F}\,\vec e_z=0,
+\bigl(i\partial/\partial r'_t+\vec\nabla_\Phi\bigr)F-2\pi\nu_m\,i\,\overline{F}\,\vec e_z=0,
 $$
 
 with $\vec\nabla_\Phi=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ the spatial gradient, is a different operator: the spatial gradient acts from the left, the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\overline{\cdot}$ — a bar over the field, the coefficient conjugation, and it is not the Dirac adjoint $\bar{\tilde{Ξ}}$ of the sections below. The two are related by the explicit dictionary with conjugation in the mass term, in the parent article's section of that name, but they are not the same equation, and their mass terms are of different kinds. This article quantizes the one-sided pair; the two-sided equation is recorded only to keep the two apart.
@@ -52,12 +52,12 @@ with $\vec\nabla_\Phi=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ the spatia
 The solutions article works on the elements themselves. An element of $\mathbb{B}$ has four complex coefficients, exactly the four components of the Dirac spinor, so the element is the carrier of the field and no separate module is introduced; the two chiral halves of the pair are the two parts $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ of that one element. There the pair is the two equations
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
-whose solutions, normalizations, and spin sums are established in the parent article and are used below without rederivation. Throughout, a mass enters only through the mass wave number $k_m=\frac{2\pi mc}{h}$, so every $m$ below stands for $k_m$; the dimensionful constants are written out where a dimensional statement is at issue, in the inverse temperature $\beta=\frac{h}{2\pi k_{B}\,T}$, in the plane-wave phase $\mathrm{Sc}\frac{2\pi \tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{h}$, and in the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}\,c^{2}$.
+whose solutions, normalizations, and spin sums are established in the parent article and are used below without rederivation. Throughout, a mass enters only through the mass wave number $\nu_m=\frac{mc}{h}$, so every $m$ below stands for $\nu_m$; the dimensionful constants are written out where a dimensional statement is at issue, in the inverse temperature $\beta=\frac{h}{2\pi k_{B}\,T}$, in the plane-wave phase $\mathrm{Sc}\frac{2\pi \tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{h}$, and in the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}\,c^{2}$.
 
 ### The Two First-Order Equations and the Map They Define
 
@@ -75,9 +75,9 @@ with $\Delta_\Phi:=\sum_\eta\partial^2/\partial R_\eta^2$ the spatial Laplacian.
 The chiral pair is two first-order equations on two elements,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
 and composing each line with the conjugate of the other gives $\Box_\Phi$ on its half. The mass is the off-diagonal coupling of the two lines, and no letter is written for the two together (*Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*).
@@ -118,7 +118,7 @@ $$
 \bar{\tilde{Ξ}}X:=\mathrm{Sc}\big(\tilde{Ξ}^*iX\vec e_x\big),
 $$
 
-the Hermitian conjugate followed by right multiplication by the timelike element $i\vec e_x$, the element that the time term of the action carries. The scalar part is taken of the product, because a bilinear of an element-valued field is a number only through its scalar part. The three pieces are visible: no unit at all on the time derivative, the pair $\vec e_\eta$ on the left and $\vec e_z$ on the right on each spatial derivative, and the right multiplication by $i\vec e_x$ on the field itself. The $\vec e_z$ is $-\vec e_y\vec e_x$, the operator's right element times the adjoint's right factor; that minus sign turns the operator's $-i$ into the $+i$ displayed. Variation with respect to the adjoint $\bar{\tilde{Ξ}}$ returns the two lines, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$; variation with respect to $\tilde{Ξ}$ returns the conjugate equation, in which the operator acts on the adjoint, and it is the conjugate of the first.
+the Hermitian conjugate followed by right multiplication by the timelike element $i\vec e_x$, the element that the time term of the action carries. The scalar part is taken of the product, because a bilinear of an element-valued field is a number only through its scalar part. The three pieces are visible: no unit at all on the time derivative, the pair $\vec e_\eta$ on the left and $\vec e_z$ on the right on each spatial derivative, and the right multiplication by $i\vec e_x$ on the field itself. The $\vec e_z$ is $-\vec e_y\vec e_x$, the operator's right element times the adjoint's right factor; that minus sign turns the operator's $-i$ into the $+i$ displayed. Variation with respect to the adjoint $\bar{\tilde{Ξ}}$ returns the two lines, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$; variation with respect to $\tilde{Ξ}$ returns the conjugate equation, in which the operator acts on the adjoint, and it is the conjugate of the first.
 
 The Lagrangian is **real up to a four-divergence**. The mass term is real outright, because $\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x)$ is real for every element — verified at $4.4\times10^{-16}$ over fifty random elements — and $m$ is real. Each derivative term differs from its conjugate by a total derivative, both identities holding exactly, and the sum of the two differences is
 
@@ -257,12 +257,12 @@ $$
 The field and its adjoint,
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(Y,r'_t)=\int\!\frac{d^3k_\Phi}{(2\pi)^3}\,\sqrt{\frac{h c}{4\pi E_{\vec k_\Phi}}}
-\sum_{s=1}^{2}\Big[a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\,\tilde{Ξ}_{+}^{(s)*}(\vec k_\Phi)\,\exp(+ik\cdot r_y)
-+b_{\mathrm{fop},s}(\vec k_\Phi)\,\tilde{Ξ}_{-}^{(s)*}(\vec k_\Phi)\,\exp(-ik\cdot r_y)\Big],
+\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(Y,r'_t)=\int\!\frac{d^32\pi\nu_{\Phi}}{(2\pi)^3}\,\sqrt{\frac{h c}{4\pi E_{2\pi\vec\nu_\Phi}}}
+\sum_{s=1}^{2}\Big[a_{\mathrm{fop},s}^{\dagger}(2\pi\vec\nu_\Phi)\,\tilde{Ξ}_{+}^{(s)*}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot r_y)
++b_{\mathrm{fop},s}(2\pi\vec\nu_\Phi)\,\tilde{Ξ}_{-}^{(s)*}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot r_y)\Big],
 $$
 
-with $k\cdot r_y:=E_{\vec k_\Phi}r'_t-\vec k_\Phi\cdot Y$, together define the operator-valued field. The **annihilation** operators $a_{\mathrm{fop},r}(\vec p)$ multiply the positive-frequency solutions, and the **creation** operators $b_{\mathrm{fop},r}^{\dagger}(\vec p)$ multiply the negative-frequency solutions. The attribution of a creation operator to the negative-frequency branch is the operator form of the reinterpretation of the Dirac sea: the modes of "negative frequency" are the antiparticles of positive energy.
+with $k\cdot r_y:=E_{2\pi\vec\nu_\Phi}r'_t-2\pi\vec\nu_\Phi\cdot Y$, together define the operator-valued field. The **annihilation** operators $a_{\mathrm{fop},r}(\vec p)$ multiply the positive-frequency solutions, and the **creation** operators $b_{\mathrm{fop},r}^{\dagger}(\vec p)$ multiply the negative-frequency solutions. The attribution of a creation operator to the negative-frequency branch is the operator form of the reinterpretation of the Dirac sea: the modes of "negative frequency" are the antiparticles of positive energy.
 
 Two structural remarks belong here. First, $\tilde{Ξ}_{\mathrm{fop}}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, each amplitude is a biquaternion plane wave $\tilde{Ξ}_{0}\exp\!\left(i\,\mathrm{Sc}\frac{2\pi \tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{h}\right)$, with $\tilde P_{\Phi}$ the wave biquaternion and $\tilde R_\Phi$ the four-position biquaternion of the parent article. The two branches are the two signs of the energy root of the single biquaternion mass-shell condition
 
@@ -281,16 +281,16 @@ $$
 $$
 
 $$
-\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=h^{3}\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec p^{\,\prime}),
+\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(2\pi\vec\nu_\Phi)\}=h^{3}\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 $$
 
 with **all other anticommutators vanishing**:
 
 $$
-\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}(\vec k_\Phi)\}=0,\qquad
-\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}(\vec k_\Phi)\}=0,\qquad
-\{a_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}(\vec k_\Phi)\}=0,\qquad
-\{a_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=0 .
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}(\vec\nu_\Phi)\}=0,\qquad
+\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}(\vec\nu_\Phi)\}=0,\qquad
+\{a_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}(\vec\nu_\Phi)\}=0,\qquad
+\{a_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec\nu_\Phi)\}=0 .
 $$
 
 These are the standard anticommutation relations of the free Dirac field, in the continuum normalization inherited from the parent article's covariant amplitudes.
@@ -316,7 +316,7 @@ $$
 
 $$
 
-The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
+The angle is $\theta_{\mathrm{spa}}=2\pi\vec\nu_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
 
 Multiplying by the two phases and adding, with $\theta_{\mathrm{pwp}}=\vec p\cdot\vec r_{12}$,
 
@@ -339,8 +339,8 @@ $$
 and build states by acting with the creation operators. The one-particle states are $a_{\mathrm{fop},r}^{\dagger}(\vec p)|0\rangle$ and the one-antiparticle states $b_{\mathrm{fop},r}^{\dagger}(\vec p)|0\rangle$. At fixed $\vec p$, the positive-frequency solutions span a two-dimensional complex space. The one-particle space is the space of square-integrable positive-frequency solutions, the one-antiparticle space is its negative-frequency counterpart, and the many-particle space is the **antisymmetric tensor algebra** (exterior algebra) of their direct sum, because the mode operators anticommute. In particular,
 
 $$
-a_{\mathrm{fop},r}^{\dagger}(\vec p)a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)|0\rangle
-=-\,a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)a_{\mathrm{fop},r}^{\dagger}(\vec p)|0\rangle,
+a_{\mathrm{fop},r}^{\dagger}(\vec p)a_{\mathrm{fop},s}^{\dagger}(\vec\nu_\Phi)|0\rangle
+=-\,a_{\mathrm{fop},s}^{\dagger}(\vec\nu_\Phi)a_{\mathrm{fop},r}^{\dagger}(\vec p)|0\rangle,
 $$
 
 so the two-particle state is antisymmetric, and
@@ -356,8 +356,8 @@ which is the Pauli exclusion principle as an algebraic identity: the square of a
 The conserved energy of the free Dirac field is
 
 $$
-H=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*\Big(-i\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_\eta}\vec e_z+k_mi\,\tilde{Ξ}_{\mathrm{fop}}\vec e_x\Big)\Big)
-=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*i\Big(\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_\eta}\vec e_y+k_m\tilde{Ξ}_{\mathrm{fop}}\Big)\vec e_x\Big).
+H=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*\Big(-i\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_\eta}\vec e_z+2\pi\nu_mi\,\tilde{Ξ}_{\mathrm{fop}}\vec e_x\Big)\Big)
+=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*i\Big(\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_\eta}\vec e_y+2\pi\nu_m\tilde{Ξ}_{\mathrm{fop}}\Big)\vec e_x\Big).
 $$
 
 The integrand is the $00$ component of the canonical energy–momentum tensor, equivalently the Legendre transform $\pi\,\partial \tilde{Ξ}/\partial r'_t-\mathcal{L}$ of the Lagrangian fixed in the section *The Lagrangian*: the two time-derivative terms cancel, and what is left is the expression above with the sign reversed, verified at $3.6\times10^{-15}$.
@@ -391,7 +391,7 @@ E_0=-\sum_{r}\int\!\frac{d^3p}{h^{3}}\,h^{3}\delta^{(3)}(\vec 0)\,E_{\vec p}
 =-\,2V\!\int\!\frac{d^3p}{h^{3}}\,E_{\vec p}.
 $$
 
-Here $V$ is the volume in which the theory is placed, and $h^{3}\delta^{(3)}(\vec 0)=V$ is the standard transcription of the continuum normalization. The constant is negative and quartically divergent, in contrast with the positive zero-point energy $\tfrac12\sum hf_{\mathrm{frq}}$ of a scalar field, and it is a c-number: it commutes with everything and does not affect the operator equations of motion. Normal ordering is the convention that removes it. For fermions the normal-ordering prescription moves every creation operator to the left of every annihilation operator and inserts a minus sign for each transposition of two fermion operators; for example $:\!b_{\mathrm{fop},r}(\vec p)b_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)\!:=-b_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)b_{\mathrm{fop},r}(\vec p)$. With this definition the constant term in $H$ is removed by construction.
+Here $V$ is the volume in which the theory is placed, and $h^{3}\delta^{(3)}(\vec 0)=V$ is the standard transcription of the continuum normalization. The constant is negative and quartically divergent, in contrast with the positive zero-point energy $\tfrac12\sum hf_{\mathrm{frq}}$ of a scalar field, and it is a c-number: it commutes with everything and does not affect the operator equations of motion. Normal ordering is the convention that removes it. For fermions the normal-ordering prescription moves every creation operator to the left of every annihilation operator and inserts a minus sign for each transposition of two fermion operators; for example $:\!b_{\mathrm{fop},r}(\vec p)b_{\mathrm{fop},r}^{\dagger}(\vec\nu_\Phi)\!:=-b_{\mathrm{fop},r}^{\dagger}(\vec\nu_\Phi)b_{\mathrm{fop},r}(\vec p)$. With this definition the constant term in $H$ is removed by construction.
 
 The same mode algebra gives the other conserved charges. The normal-ordered four-momentum is
 
@@ -472,7 +472,7 @@ $$
 the **Fermi–Dirac** distribution. The same computation for a bosonic mode, where the relevant relation is the commutator $a_{\mathrm{fop}}a_{\mathrm{fop}}^{\dagger}=1+a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}$, gives $n_{\mathrm B}=1/\big(\exp(\beta(E-\mu))-1\big)$, the Bose–Einstein distribution. At $\mu=0$ the two reduce to $1/(\exp(\beta E)\pm1)$. This is the cleanest sense in which the statistics is carried by the (anti)commutator and not by the KMS boundary relation — the point the KMS article makes when it locates the difference in the algebra rather than in the boundary relation. In the continuum, the free-field thermal two-point function is
 
 $$
-\omega_\beta\big(a_{\mathrm{fop},r}^{\dagger}(\vec p)a_{\mathrm{fop},s}(\vec k_\Phi)\big)
+\omega_\beta\big(a_{\mathrm{fop},r}^{\dagger}(\vec p)a_{\mathrm{fop},s}(2\pi\vec\nu_\Phi)\big)
 =h^{3}\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec p^{\,\prime})\,\frac{1}{\exp\!\big(\beta(E_{\vec p}-\mu)\big)+1},
 $$
 
@@ -530,7 +530,7 @@ $$
 \Big[a_{\mathrm{fop},r}(\vec p)\tilde{Ξ}_{+}^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})+b_{\mathrm{fop},r}^{\dagger}(\vec p)\tilde{Ξ}_{-}^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
 
-with the mode anticommutators $\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=h^{3}\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ and all others zero. These reproduce the equal-time relation: the positive- and negative-frequency branches enter with opposite phases, the even part of the spin sums integrates to the delta function, and the odd parts cancel. The resulting Fock space carries Pauli exclusion as the algebraic identity $(a_{\mathrm{fop},r}^{\dagger})^2=0$.
+with the mode anticommutators $\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(2\pi\vec\nu_\Phi)\}=h^{3}\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ and all others zero. These reproduce the equal-time relation: the positive- and negative-frequency branches enter with opposite phases, the even part of the spin sums integrates to the delta function, and the odd parts cancel. The resulting Fock space carries Pauli exclusion as the algebraic identity $(a_{\mathrm{fop},r}^{\dagger})^2=0$.
 
 The Hamiltonian is $:\!H\!:=\sum_r\int\frac{d^3p}{h^{3}}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the negative, quartically divergent normal-ordering constant $E_0=-2V\int\frac{d^3p}{h^{3}}E_{\vec p}$ removed. The normal-ordered charge has particles and antiparticles of opposite sign. The mode algebra is $\mathbb{Z}/2$-graded by fermion parity, which is the structure the KMS article identifies as missing; with it, the KMS condition plus the anticommutator yields the Fermi–Dirac distribution and the antiperiodic imaginary-time correlators whose Matsubara frequencies are $(2n+1)\pi/\beta$.
 

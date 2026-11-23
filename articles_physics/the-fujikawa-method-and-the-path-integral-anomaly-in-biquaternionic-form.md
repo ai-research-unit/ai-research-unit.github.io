@@ -14,7 +14,7 @@ The derivation has two facts and one regularisation.
 
 This article asks what the biquaternion framework supplies for this derivation. The answer is stated at the outset.
 
-- **Supplied, and recomputed below.** The massless equation is one first-order equation in one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$, and the massive equation is the chiral pair, because the square of the gradient with itself is not scalar. The two algebraic facts the derivation rests on are exact: $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$, and the chirality is the right multiplication by the pseudoscalar $\omega=-\vec e_z$, with $\omega^2=-e_t$, whose two values split the field into two halves of complex dimension two each. The symbol of the gradient is $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$, and on the null cone its left action on the six bivector components has rank four and a kernel of real dimension two, on which every bivector squares to zero. Those numbers are recomputed in §*The Symbol, the Cone and the Null Bivectors*, over five null wave vectors, with residual below $2\times10^{-14}$ at the level of the singular-value basis.
+- **Supplied, and recomputed below.** The massless equation is one first-order equation in one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$, and the massive equation is the chiral pair, because the square of the gradient with itself is not scalar. The two algebraic facts the derivation rests on are exact: $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$, and the chirality is the right multiplication by the pseudoscalar $\omega=-\vec e_z$, with $\omega^2=-e_t$, whose two values split the field into two halves of complex dimension two each. The symbol of the gradient is $-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi$, and on the null cone its left action on the six bivector components has rank four and a kernel of real dimension two, on which every bivector squares to zero. Those numbers are recomputed in §*The Symbol, the Cone and the Null Bivectors*, over five null wave vectors, with residual below $2\times10^{-14}$ at the level of the singular-value basis.
 - **Translated once from the source.** The source's own equation is written with a derivative that carries one frame object per coordinate. Translated once, every derivative in this article is $\tilde\nabla_\Phi$, the chirality stands on the right as a factor $\omega$, and the contraction is the form $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}$. The translation is fixed in §*The Gradient, the Pseudoscalar and the Two Values* and is not repeated; the source's form is not displayed.
 - **Transcribed.** The measure, the Jacobian, the heat-kernel expansion, the Fujikawa coefficient and the index form of the integrated anomaly are standard. The measure is a functional-integral object and belongs to the corpus's general path-integral apparatus, which is cited and not rebuilt here.
 - **Not supplied, and proved not to be.** The four-index symbol is not an object of the algebra. The chirality-weighted trace of the algebra over its four dimensions vanishes for every element, identically, because the pseudoscalar is odd under the quaternion conjugation; the insertion is taken on the right, the side the rotation acts on, and all $24$ orders of four distinct units give exactly zero. The density is therefore transcribed and not computed from an algebra trace, and §*Why the Symbol Is Not an Algebra Trace* states the theorem and what follows from it. What the algebra supplies in its place is the identification of the density with its own invariant $I_2=\vec E\cdot\vec B$, through the contraction $\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}=+8\,\vec E\cdot\vec B$.
@@ -30,9 +30,9 @@ $$
 $$
 and on $\mathbb{B}_{\Phi}$ the time derivative reads $\partial/\partial R_t=-i\partial/\partial r'_t$ (*Operator and Calculus Conventions*, §*The Gradient*). The d'Alembertian is the quaternionic norm of the gradient, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, which on $\mathbb{B}_{\Phi}$ is $\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi})$, an explicit sum over the four coordinates. The chiral pair is written as two first-order equations,
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 on two elements of $\mathbb{B}$ (*Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*); each line carries one gradient, the mass is the coupling of the two, and no letter is written for the two together, since a single glyph would hide the adjoint, the metric and the signs the two lines show. The Dirac bilinear of two fields is written $\tilde{Ξ}^{\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}^*\xi\,i\vec e_x)$, with the fixed right multiplier $i\vec e_x$ standing after the product; it is not a derivative, and the multiplier is the same in every term below. The gauge covariant derivative is $D_{\imath}=\partial/\partial R_{\imath}+\frac{2\pi iϙA_{\imath}}{h}$ with $[D_{\imath},D_{\jmath}]=\frac{2\pi iϙF_{\imath\jmath}}{h}$ for the abelian factor, and the gradient form is $\tilde D=\tilde\nabla_\Phi+iϙ\tilde A_{\Phi}$. The fermion measure is written $\mathcal{D}\tilde{Ξ}\,\mathcal{D}\tilde{Ξ}^{\dagger}$. The four-index symbol is the orientation density of the series, taken positive on the identity order, and the field-strength components are $F_{ti}=E_i$ and $F_{ij}=+\epsilon_{ij\eta}B_\eta$, every index written low as the companion article writes it. The field invariants $I_1$ and $I_2$ are the instanton article's. Two traces appear below and are kept apart: $\mathrm{tr}$ is the trace of a complex-linear operator on the four coefficients of the field, and $\mathrm{Tr}$ is the functional trace over modes, which is what a determinant produces. Throughout, the constants are carried, with $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium and $c_0$ the vacuum value.
 
@@ -68,11 +68,11 @@ which is not a scalar. Recomputed on the test field $f=Q_tQ_x+\tfrac{3}{10}Q_y^2
 
 **The consequence for the mass.** A single field cannot carry a mass at first order, because there is no scalar to subtract from a square that is not scalar. The massive equation is therefore the chiral pair, and it is the same dynamics written for the two values and not a second one:
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R} .
 $$
-Each member acts by left multiplication, and the mass pairs the two values. Applied twice, the pair gives the scalar equation $\Box_\Phi\tilde{Ξ}=k_m^{2}\tilde{Ξ}$ on each value, because $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$. That is the whole of the mass, and it is why the article never writes a one-field first-order equation with a mass: in this algebra there is none. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Each member acts by left multiplication, and the mass pairs the two values. Applied twice, the pair gives the scalar equation $\Box_\Phi\tilde{Ξ}=4\pi^{2}\nu_m^{2}\tilde{Ξ}$ on each value, because $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$. That is the whole of the mass, and it is why the article never writes a one-field first-order equation with a mass: in this algebra there is none. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **The pseudoscalar.** The chirality of the frame is the element
 $$
@@ -112,9 +112,9 @@ Z[A] = \int \mathcal{D}\tilde{Ξ}\,\mathcal{D}\tilde{Ξ}^{\dagger}\;\exp\!\left(
 $$
 and the integral is Gaussian: it evaluates to the determinant of the operator,
 $$
-Z[A] = \det\begin{pmatrix}-k_m&\tilde D\ \tilde D^{\natural}&-k_m\end{pmatrix} .
+Z[A] = \det\begin{pmatrix}-2\pi\nu_m&\tilde D\ \tilde D^{\natural}&-2\pi\nu_m\end{pmatrix} .
 $$
-The bosonic and fermionic measures, the Gaussian integration and the determinant are the subject of the corpus's fermionic path-integral article; that article constructs them and this one takes them as given. What the algebra supplies here is the operator whose determinant is taken: the two covariant gradients in one block array, whose determinant reduces to $\Box_\Phi-k_m^{2}$ on one value and whose value is the product over modes of $\det\ell_{-i\tilde K_{\Phi}}=(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)^2$ for one chiral value — the square of the symbol of the d'Alembertian, which is the Dirac determinant — and the square of that for the pair, one factor for each value. The mass is the coefficient that the condensate of the companion article fixes.
+The bosonic and fermionic measures, the Gaussian integration and the determinant are the subject of the corpus's fermionic path-integral article; that article constructs them and this one takes them as given. What the algebra supplies here is the operator whose determinant is taken: the two covariant gradients in one block array, whose determinant reduces to $\Box_\Phi-4\pi^{2}\nu_m^{2}$ on one value and whose value is the product over modes of $\det\ell_{-2\pi i\tilde\Upsilon_{\Phi}}=(4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2)^2$ for one chiral value — the square of the symbol of the d'Alembertian, which is the Dirac determinant — and the square of that for the pair, one factor for each value. The mass is the coefficient that the condensate of the companion article fixes.
 
 **The chiral rotation.** Rotate the integration variables by an axial phase that is local,
 $$
@@ -147,8 +147,8 @@ $$
 $$
 because the derivative of the rotation at $\alpha=0$ puts $\omega$ on the right of each of the four components of $\tilde\nabla_\Phi\alpha$. The pseudoscalar therefore stands on the right of the field, exactly where the chirality belongs, and the contraction is the explicit sum $\langle\tilde\nabla_\Phi\alpha,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_{\imath}(\partial\alpha/\partial R_{\imath})J_{5\imath}$, per the corpus's rule that a contraction names its index. Under the *global* rotation the term is absent, which is the classical statement. A mass term is not invariant,
 $$
-\tilde{Ξ}_{2}^{\dagger}\,k_m\,\tilde{Ξ}_{2}=k_m\,\tilde{Ξ}^{\dagger}\tilde{Ξ}\,e^{2\alpha\omega}
-=k_m\,\tilde{Ξ}^{\dagger}\bigl(\cos2\alpha\,\mathbb 1+\sin2\alpha\,\omega\bigr)\tilde{Ξ},
+\tilde{Ξ}_{2}^{\dagger}\,\nu_m\,\tilde{Ξ}_{2}=\nu_m\,\tilde{Ξ}^{\dagger}\tilde{Ξ}\,e^{2\alpha\omega}
+=\nu_m\,\tilde{Ξ}^{\dagger}\bigl(\cos2\alpha\,\mathbb 1+\sin2\alpha\,\omega\bigr)\tilde{Ξ},
 $$
 which is the classical explicit breaking of the axial symmetry, and the doubling of the angle is the identity $e^{2\alpha\omega}=\cos2\alpha+\sin2\alpha\,\omega$. In the framework's language the rotation is exactly the axial symmetry of the linear chiral pair: the central phase passes through the mass term and this one does not.
 
@@ -217,17 +217,17 @@ and it is quoted from the literature of §*Further Reading*, not re-derived here
 
 ## The Symbol, the Cone and the Null Bivectors
 
-**The symbol.** Replacing each derivative of the gradient by $ik_{\Phi,\imath}$ turns the operator into an element, its *symbol*. On the material sector, where $\partial/\partial R_t=-i\partial/\partial r'_t$ and a plane wave carries $e^{i\theta_{\mathrm{pwp}}}$ with $x_0=r'_{t}$ and the plane-wave angle $\theta_{\mathrm{pwp}}=k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec q$ real because every factor is real, the substitution gives
+**The symbol.** Replacing each derivative of the gradient by $ik_{\Phi,\imath}$ turns the operator into an element, its *symbol*. On the material sector, where $\partial/\partial R_t=-i\partial/\partial r'_t$ and a plane wave carries $e^{i\theta_{\mathrm{pwp}}}$ with $x_0=r'_{t}$ and the plane-wave angle $\theta_{\mathrm{pwp}}=2\pi\nu_t^{\prime}x_0-2\pi\vec\nu_\Phi\cdot\vec q$ real because every factor is real, the substitution gives
 $$
--i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=k_{t}^{\prime}-i\,(k_x\vec e_x+k_y\vec e_y+k_z\vec e_z),
+-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi=2\pi\nu_t^{\prime}-i\,(2\pi\nu_{x}\vec e_x+2\pi\nu_{y}\vec e_y+2\pi\nu_{z}\vec e_z),
 \qquad
-(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2 .
+(-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})=4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2 .
 $$
-The identity is the biquaternion norm of the symbol, and it is the symbol of the d'Alembertian: recomputed, the product is $3$ at $k=(2,1,0,0)$ and $0$ at $k=(1,1,0,0)$, matching $k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2$ in both cases.
+The identity is the biquaternion norm of the symbol, and it is the symbol of the d'Alembertian: recomputed, the product is $3$ at $k=(2,1,0,0)$ and $0$ at $k=(1,1,0,0)$, matching $\nu_t^{\prime\,2}-\lvert\vec\nu_\Phi\rvert^2$ in both cases.
 
-**The determinant of the gradient.** Left multiplication by $-i\tilde K_{\Phi}$ is a complex-linear operator on the four coefficients, and its determinant is the square of the scalar symbol,
+**The determinant of the gradient.** Left multiplication by $-2\pi i\tilde\Upsilon_{\Phi}$ is a complex-linear operator on the four coefficients, and its determinant is the square of the scalar symbol,
 $$
-\det \ell_{-i\tilde K_{\Phi}}=\bigl(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2\bigr)^2 ,
+\det \ell_{-2\pi i\tilde\Upsilon_{\Phi}}=\bigl(4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2\bigr)^2 ,
 $$
 recomputed as $9$ at $k=(2,1,0,0)$. It is singular exactly when $k$ is null, and there its rank is two: at $k=(1,1,0,0)$, $(1,0,1,0)$, $(1,0,0,1)$ and $(3,1,2,2)$ the rank is $2$, and off the cone at $k=(2,1,0,0)$ it is $4$. A gradient plane wave is annihilated by the gradient exactly when the wave vector is null, which is the light cone and nothing else.
 
@@ -329,11 +329,11 @@ so the axial charge transported in a background is twice the index, the minus be
 | Item | Status |
 |+-|+-|
 | The massless equation $\tilde\nabla_\Phi\tilde{Ξ}=0$, one field, first order | **Supplied** by the gradient |
-| The chiral pair, and $\Box_\Phi\tilde{Ξ}=k_m^{2}\tilde{Ξ}$ as its consequence | **Supplied**; the mass needs two values because $\tilde\nabla_\Phi^2$ is not scalar |
+| The chiral pair, and $\Box_\Phi\tilde{Ξ}=4\pi^{2}\nu_m^{2}\tilde{Ξ}$ as its consequence | **Supplied**; the mass needs two values because $\tilde\nabla_\Phi^2$ is not scalar |
 | $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$ | **Supplied**; recomputed with residual $3\times10^{-6}$ |
 | The pseudoscalar $\omega=-\vec e_z$, with $\omega^2=-e_t$ | **Supplied** by the algebra |
 | The two values as the two eigenspaces of right multiplication by $\vec e_z$, of dimensions $2$ and $2$ | **Supplied**; recomputed |
-| The symbol $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$, with $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2$ and $\det \ell_{-i\tilde K_{\Phi}}=(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)^2$ | **Supplied**; recomputed |
+| The symbol $-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi$, with $(-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})=4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2$ and $\det \ell_{-2\pi i\tilde\Upsilon_{\Phi}}=(4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2)^2$ | **Supplied**; recomputed |
 | Rank four and kernel two on the six bivectors, with $f^2=0$ on the kernel, for null $k$ | **Supplied**, recomputed over five null wave vectors |
 | The anomaly density, proportional to the framework's invariant $I_2$ | **Supplied** through the contraction $\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}=+8\vec E\cdot\vec B$; the coefficient is standard |
 | The four-index symbol as a trace of the algebra | **Not supplied, and proved absent**: the chirality-weighted trace vanishes for every element |
@@ -357,11 +357,11 @@ so the axial charge transported in a background is twice the index, the minus be
 
 ## Summary
 
-The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. In the biquaternion algebra the massless equation is one first-order equation in one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$, the massive equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ — because $\tilde\nabla_\Phi^2$ is not scalar while $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ is — and the chiral rotation is the right multiplication $\tilde{Ξ}\mapsto\tilde{Ξ} e^{\theta_{\mathrm{axr}}\omega}$ by the pseudoscalar $\omega=-\vec e_z$. The two values are the two eigenspaces of right multiplication by $\vec e_z$, of complex dimension two each, and the rotation multiplies them by $e^{+i\theta_{\mathrm{axr}}}$ and $e^{-i\theta_{\mathrm{axr}}}$. The local rotation adds the axial-current term; the measure does not add it, and the Jacobian is $(\det U)^{-2}=\exp(-i\theta_{\mathrm{anm}})$ with the anomaly angle $\theta_{\mathrm{anm}}=2\int\theta_{\mathrm{axr}}\,a$ real because the axial angle and the index density are real, with the regulated trace $a=\lim_{M\to\infty}\mathrm{tr}[\rho_\omega e^{-\mathcal{H}/M^2}]$ as the index density, the insertion taken on the right, and $A=2a$ as the anomaly density.
+The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. In the biquaternion algebra the massless equation is one first-order equation in one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$, the massive equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ — because $\tilde\nabla_\Phi^2$ is not scalar while $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ is — and the chiral rotation is the right multiplication $\tilde{Ξ}\mapsto\tilde{Ξ} e^{\theta_{\mathrm{axr}}\omega}$ by the pseudoscalar $\omega=-\vec e_z$. The two values are the two eigenspaces of right multiplication by $\vec e_z$, of complex dimension two each, and the rotation multiplies them by $e^{+i\theta_{\mathrm{axr}}}$ and $e^{-i\theta_{\mathrm{axr}}}$. The local rotation adds the axial-current term; the measure does not add it, and the Jacobian is $(\det U)^{-2}=\exp(-i\theta_{\mathrm{anm}})$ with the anomaly angle $\theta_{\mathrm{anm}}=2\int\theta_{\mathrm{axr}}\,a$ real because the axial angle and the index density are real, with the regulated trace $a=\lim_{M\to\infty}\mathrm{tr}[\rho_\omega e^{-\mathcal{H}/M^2}]$ as the index density, the insertion taken on the right, and $A=2a$ as the anomaly density.
 
 **The one thing the algebra does not give.** The regulated trace that produces the four-index symbol in the standard computation vanishes here identically: $\mathrm{tr}(\ell_h\rho_\omega)=0$ for every element, so all $24$ orders of four distinct units contribute exactly zero. The coefficient is therefore transcribed, $a=-(ϙ^2/32\pi^2)\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}$, and the article states it as transcribed.
 
-**What the algebra gives in its place.** The symbol $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$, whose biquaternion norm is $k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2$ and whose left action on the six bivector components has rank four and a two-dimensional kernel on the null cone, with $f^2=0$ on the whole kernel — five null wave vectors, residual below $2\times10^{-14}$; and the contraction $\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}=+8\vec E\cdot\vec B$, so that
+**What the algebra gives in its place.** The symbol $-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi$, whose biquaternion norm is $\nu_t^{\prime\,2}-\lvert\vec\nu_\Phi\rvert^2$ and whose left action on the six bivector components has rank four and a two-dimensional kernel on the null cone, with $f^2=0$ on the whole kernel — five null wave vectors, residual below $2\times10^{-14}$; and the contraction $\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}=+8\vec E\cdot\vec B$, so that
 $$
 \boxed{\;A(x)=-\frac{ϙ^2}{16\pi^2}\,\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}
 = -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B=-\frac{ϙ^2}{2\pi^2}\,I_2\;},
@@ -377,12 +377,12 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material and informational sectors (*Frame and Metric Conventions*) |
 | $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$ | The biquaternionic gradient and its quaternion conjugate (*Operator and Calculus Conventions*, §*The Gradient*) |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_\Phi$; $\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$ on $\mathbb{B}_{\Phi}$ |
-| $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$ | The symbol of the gradient on a plane wave |
+| $-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi$ | The symbol of the gradient on a plane wave |
 | $\omega=-\vec e_z$ | The pseudoscalar, the volume element; $\omega^2=-e_t$, $\omega^{\natural}=-\omega$ |
 | $\tilde{Ξ}_{L},\tilde{Ξ}_{R}$ | The two values: the eigenspaces of right multiplication by $\vec e_z$ with eigenvalues $-i$ and $+i$, each of complex dimension two |
 | $\mathrm{tr}$ | The trace of a complex-linear operator on the four coefficients of the field |
 | $\ell_h,\ \rho_\omega$ | Left multiplication by $h$, right multiplication by the pseudoscalar; $\rho_\omega$ is the measure's insertion, and $\ell_h\rho_\omega$ is the one two-sided shape the article uses |
-| $\begin{pmatrix}-k_m&\tilde D\ \tilde D^{\natural}&-k_m\end{pmatrix}$ | The two covariant lines of the pair in one block array; a matrix, not an element |
+| $\begin{pmatrix}-\nu_m&\tilde D\ \tilde D^{\natural}&-\nu_m\end{pmatrix}$ | The two covariant lines of the pair in one block array; a matrix, not an element |
 | $\mathcal{H}=-(\tilde D\tilde D^{\natural})_E$ | The continued regulator operator, whose scalar part is $-\Box_\Phi$ |
 | $a(x)=-\dfrac{ϙ^2}{32\pi^2}\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}$ | Regulated trace density, the index density |
 | $A(x)=2a(x)=-\dfrac{ϙ^2}{16\pi^2}\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}$ | Anomaly density (Fujikawa and Adler–Bell–Jackiw) |
@@ -390,7 +390,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\mathcal{D}\tilde{Ξ}\,\mathcal{D}\tilde{Ξ}^{\dagger}$ | Fermion measure of the functional integral |
 | $U=e^{\alpha\omega}=\cos\alpha\,\mathbb 1+\sin\alpha\,\omega$ | Chiral rotation; $\alpha$ a central scalar function |
 | $J=(\det U)^{-2}=\exp(-i\theta_{\mathrm{anm}})$ | Jacobian of the measure under the rotation |
-| $Z[A]=\det\begin{pmatrix}-k_m&\tilde D\ \tilde D^{\natural}&-k_m\end{pmatrix}$ | Fermion determinant |
+| $Z[A]=\det\begin{pmatrix}-2\pi\nu_m&\tilde D\ \tilde D^{\natural}&-2\pi\nu_m\end{pmatrix}$ | Fermion determinant |
 | $\tilde{Ξ}^{\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}^*\xi\,i\vec e_x)$ | The Dirac bilinear, with its fixed right multiplier |
 | $j_{\imath}=\tilde{Ξ}^{\dagger}\vec e_{\imath}\tilde{Ξ}$ | Vector current |
 | $j_{5\imath}=\tilde{Ξ}^{\dagger}\omega\vec e_{\imath}\tilde{Ξ}$ | Axial current |

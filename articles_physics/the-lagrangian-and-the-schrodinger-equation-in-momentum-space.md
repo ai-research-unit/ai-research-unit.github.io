@@ -162,7 +162,7 @@ At fixed frequency the variation is algebraic. The substitution $\tilde\Xi=e^{-i
 
 The condition is the eigenvalue problem the action section states. The bracket is $hf_{\mathrm{frq}}\,\mathrm{Sc}(\tilde X^{*}\tilde X)-\mathrm{Sc}\bigl[\tilde X^{*}\tilde H_\Psi\tilde X\bigr]$, so its singularity is exactly the statement that $\omega$ is an eigenvalue of $\frac{2\pi \tilde H_\Psi}{h}$. **The constraint is a condition on the frequency and on nothing else**; the amplitude is left free up to normalisation, which is not a restriction the action imposes.
 
-The set is the spectrum's zero set. At $k_m=0$ it is the paraboloid; a constant potential translates it, and the connection's temporal slot translates it again by its own amount. The shape is fixed by the kinetic term alone, which is why the constraint of this chart can be read off the first line of the action.
+The set is the spectrum's zero set. At $\nu_m=0$ it is the paraboloid; a constant potential translates it, and the connection's temporal slot translates it again by its own amount. The shape is fixed by the kinetic term alone, which is why the constraint of this chart can be read off the first line of the action.
 
 What is absent. No Gauss law, because the connection is fixed at a mode; no boundary condition, because a variation at one frequency cannot see one; no constraint on the amplitude at a root. The constraint is purely kinematic, and the structural consequence's claim is exactly that nothing further is imposed.
 
@@ -181,12 +181,12 @@ The trace is the form on a basis. Summing the form over an orthonormal basis of 
 The charge at a mode. The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,
 
 $$
-\mathcal{Q}(\vec k)=\frac{h}{2\pi}\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
+\mathcal{Q}(\vec\nu_{\Phi})=\frac{h}{2\pi}\,\mathrm{Sc}\bigl[X^{*}(\vec\nu_{\Phi})X(\vec\nu_{\Phi})\bigr],
 $$
 
 up to the normalisation the element article fixes, so that the total charge is the integral of this density over the wave numbers. The step from the position-space charge to this display is Parseval's identity and nothing else; the companion article *The Lagrangian and the Schrödinger Equation in Momentum Space* proves it in that case and the proof transfers, because it uses only the transform and the Hermitian pairing.
 
-The energy. The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,\vec k)$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
+The energy. The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,2\pi\vec\nu_{\Phi})$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
 
 What the mass term does to the two. The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 

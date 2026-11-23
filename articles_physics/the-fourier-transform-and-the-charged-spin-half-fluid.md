@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The whole of the coupling's action on a mode is a translation of its label, in all four slots, and a translation of a label cannot reach the rotor. That is the article's one sentence, and its reason is a counting argument rather than a type argument. The covariant label of a mode is $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$: a timelike element of $\mathbb{B}_\Phi$ of fixed norm, which is the boost multiplied by the mass wave number. The label therefore has room for the momentum and the frame, and no room for the rotor. The gauge acts on the label as a translation. So the gauge cannot turn the spin.
+The whole of the coupling's action on a mode is a translation of its label, in all four slots, and a translation of a label cannot reach the rotor. That is the article's one sentence, and its reason is a counting argument rather than a type argument. The covariant label of a mode is $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$: a timelike element of $\mathbb{B}_\Phi$ of fixed norm, which is the boost multiplied by the mass wave number. The label therefore has room for the momentum and the frame, and no room for the rotor. The gauge acts on the label as a translation. So the gauge cannot turn the spin.
 
 The charged fluid's loop invariant is a Lorentz transformation times a phase; at a mode the frame is constant, so the Lorentz factor is the identity and the invariant is the phase alone. The product $\mathbb{C}^{*}\times SL(2,\mathbb{C})$ is therefore an inter-mode object: one factor is the diagonal's and the other is not, and no single mode exhibits both.
 
@@ -15,11 +15,11 @@ This is the charged companion of [The Fourier Transform and the Spin-Half Fluid]
 The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $ϙ$, the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, the gauge transformation $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ with $\Gamma$ real, and
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi ,
+\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi ,
 \qquad
-\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2},
+\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2},
 \qquad
-k_m=\frac{2\pi mc}{h}.
+\nu_m=\frac{mc}{h}.
 $$
 
 The word is $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{axr}}$ the rotor's angle, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ the spin direction, and $\rho_{\mathrm{num}}=\varrho^{2}$. The symbol rule is the spin-half fluid Fourier companion's.
@@ -29,17 +29,17 @@ The word is $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde 
 A mode is a point of the momentum space and a constant element of $\mathbb{B}_\Psi$.
 
 $$
-\tilde\Xi(x)=\tilde w(\vec k_\Phi)\,e^{-i\theta_{\mathrm{pwp}}},
+\tilde\Xi(x)=\tilde w(2\pi\vec\nu_\Phi)\,e^{-i\theta_{\mathrm{pwp}}},
 \qquad
-\theta_{\mathrm{pwp}}=k_t'r_t'-\vec k_\Phi\cdot\vec r .
+\theta_{\mathrm{pwp}}=2\pi\nu_t'r_t'-2\pi\vec\nu_\Phi\cdot\vec r .
 $$
 
-The companion's identity $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ is the article's hinge, and it says three things at once. The label's norm is fixed at $-k_m^{2}$, so the label carries no scale. The label's direction is the frame's, so the label carries the whole of the rapidity and the axis. And the label is a *timelike element of $\mathbb{B}_\Phi$*, which has four real components, so **there is no fifth component in which a rotor could live**.
+The companion's identity $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ is the article's hinge, and it says three things at once. The label's norm is fixed at $-\nu_m^{2}$, so the label carries no scale. The label's direction is the frame's, so the label carries the whole of the rapidity and the axis. And the label is a *timelike element of $\mathbb{B}_\Phi$*, which has four real components, so **there is no fifth component in which a rotor could live**.
 
 $$
-\underbrace{\tilde K_{\Phi,\mathrm{gco}}}_{\text{four numbers}}
+\underbrace{\tilde\Upsilon_{\Phi,\mathrm{gco}}}_{\text{four numbers}}
 \;=\;
-\underbrace{k_m}_{\text{the norm}}\times
+\underbrace{\nu_m}_{\text{the norm}}\times
 \underbrace{\tilde U_{\Psi,\mathrm b}^{-2}}_{\text{three numbers}}
 \qquad\text{and}\qquad
 \tilde u_{\mathrm r}\ \text{is not in the display at all}.
@@ -48,12 +48,12 @@ $$
 The covariant derivative is a derivative plus $\frac{2\pi iϙ}{h}\tilde A_\Phi$, so at a constant connection a plane wave remains a plane wave with
 
 $$
-\tilde K_\Phi\longmapsto\tilde K_\Phi-\frac{2\pi ϙ}{h}\tilde A_\Phi ,
+\tilde\Upsilon_\Phi\longmapsto\tilde\Upsilon_\Phi-\frac{ϙ}{h}\tilde A_\Phi ,
 $$
 
 a translation of four numbers. So the coupling's whole effect on a mode is a shift of four numbers, and the four numbers are the label's. The amplitude, the rotor and the spin direction are outside the shifted object by the counting above, and not by an argument about the connection's type.
 
-The two arguments agree and they are different arguments. The companion's is algebraic: the connection's temporal slot is a central imaginary and joins the phase bracket, its spatial slots are Hermitian vectors and join the boost bracket, and the rotor bracket is a real vector part that a central element cannot produce. This article's is bookkeeping: the shifted object is the label, and the rotor is not a component of the label. The second is the stronger one in the momentum space, because it survives any connection and any profile: whatever the connection does, it does to $\tilde K_{\Phi,\mathrm{gco}}$, and $\tilde K_{\Phi,\mathrm{gco}}$ has no rotor slot.
+The two arguments agree and they are different arguments. The companion's is algebraic: the connection's temporal slot is a central imaginary and joins the phase bracket, its spatial slots are Hermitian vectors and join the boost bracket, and the rotor bracket is a real vector part that a central element cannot produce. This article's is bookkeeping: the shifted object is the label, and the rotor is not a component of the label. The second is the stronger one in the momentum space, because it survives any connection and any profile: whatever the connection does, it does to $\tilde\Upsilon_{\Phi,\mathrm{gco}}$, and $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ has no rotor slot.
 
 The objection is that a general connection is not constant, so its action is a convolution and not a translation, and a convolution can do anything. The answer is that a convolution of the label is still a convolution of the label: an operator acting on the covariant wave number cannot produce a component in a slot the wave number does not have. The rotor's independence of the connection is a statement about the carrier and not about the operator, and that is why it holds for every profile and not only for the constant one.
 
@@ -83,7 +83,7 @@ Nothing in either factor is quantised: the phase is a real number modulo $2\pi$ 
 
 ## Both Slots Are Translations, and the Force Is Inter-Mode
 
-The temporal slot shifts $k_t'$ by $\frac{2\pi ϙa_t'}{h\,c}$ and the spatial slots shift $\vec k_\Phi$ by $\frac{2\pi ϙ\vec A}{h}$, and neither is a rotation, a dilation or a turn.
+The temporal slot shifts $\nu_t'$ by $\frac{2\pi ϙa_t'}{h\,c}$ and the spatial slots shift $\vec\nu_\Phi$ by $\frac{2\pi ϙ\vec A}{h}$, and neither is a rotation, a dilation or a turn.
 
 A mode's label is constant, so a mode's velocity is constant, so a mode does not accelerate.
 
@@ -107,8 +107,8 @@ At a mode the connection is constant, so $\tilde F=0$ and the companion's vortic
 
 | rung | the mode's label | what the gauge does | the invariant |
 | --- | --- | --- | --- |
-| Schrödinger | $\frac{h}{2\pi}\vec k$ | shifts it | $\vec B$ |
-| Klein–Gordon | $\frac{h}{2\pi}\tilde K_\Phi$ | shifts it | $\tilde F$ |
+| Schrödinger | $h\,\vec\nu_{\Phi}$ | shifts it | $\vec B$ |
+| Klein–Gordon | $h\,\tilde\Upsilon_\Phi$ | shifts it | $\tilde F$ |
 | spinor | $ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ | shifts it | $\tilde F$ |
 | vector | $\varrho\,u_{\imath}$ with $u$ constant | shifts it and turns the chart | the coupled field strength |
 
@@ -150,11 +150,11 @@ The vorticity is $ϙF/m$ and a constant connection has no curvature, so a mode i
 |---|---|
 | $ϙ$ | The coupling |
 | $\tilde A_\Phi=i a_t'e_t+\vec A$ | The connection |
-| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ\tilde A_\Phi}{h}$ | The covariant label |
-| $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ | The label as the boost |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
-| $\tilde w(\vec k_\Phi)$ | The carrier's element at a mode |
-| $\theta_{\mathrm{pwp}}=k_t'r_t'-\vec k_\Phi\cdot\vec r$ | The phase of a mode |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ\tilde A_\Phi}{h}$ | The covariant label |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ | The label as the boost |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
+| $\tilde w(\vec\nu_\Phi)$ | The carrier's element at a mode |
+| $\theta_{\mathrm{pwp}}=2\pi\nu_t'r_t'-2\pi\vec\nu_\Phi\cdot\vec r$ | The phase of a mode |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ | The rapidity and the rotor's angle |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction |
 | $\mathcal H=\mathcal H_{SL(2,\mathbb{C})}\exp(\frac{2\pi iϙ\Phi_B}{h})$ | The loop invariant |

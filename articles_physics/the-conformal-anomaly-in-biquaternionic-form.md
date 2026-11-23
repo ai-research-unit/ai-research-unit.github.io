@@ -280,7 +280,7 @@ where the mixed term survives because $e_t$ commutes with the spatial units, and
 
 ### The Mass
 
-**The mass term.** It is the right multiplication $\tilde{Ξ}\mapsto k_m\,\tilde{Ξ}(i\vec e_x)$, the frame's timelike basis operator up to the scalar $k_m=\frac{2\pi mc}{h}$. The chirality basis operator multiplies on the right as well, and the two basis operators anticommute, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$. The mass therefore carries $\tilde{Ξ}_{L}$ into a multiple of $\tilde{Ξ}_{R}$ and $\tilde{Ξ}_{R}$ into a multiple of $\tilde{Ξ}_{L}$: it exchanges the two values. This is a derived form, and it was checked on generic elements.
+**The mass term.** It is the right multiplication $\tilde{Ξ}\mapsto \nu_m\,\tilde{Ξ}(i\vec e_x)$, the frame's timelike basis operator up to the scalar $\nu_m=\frac{mc}{h}$. The chirality basis operator multiplies on the right as well, and the two basis operators anticommute, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$. The mass therefore carries $\tilde{Ξ}_{L}$ into a multiple of $\tilde{Ξ}_{R}$ and $\tilde{Ξ}_{R}$ into a multiple of $\tilde{Ξ}_{L}$: it exchanges the two values. This is a derived form, and it was checked on generic elements.
 
 **What the mass does to the determinant, and to the count.** The gradient multiplies on the left, where it commutes with the chirality basis operator, so the free pair carries each value into itself and the free operator is central. The massive operator mixes the two values: it is not block-diagonal in them, its determinant is not the product of the two free determinants, and the fibre is not acted on by a scalar. The multiplicity of four is therefore exact for the free operator and for the leading term of the massive one, and the rest of the massive coefficient is read on the endomorphism of the fibre. This is the case §*What the Multiplicity Means* flags, and it is the reason the next article of the group has a phase to read.
 
@@ -357,7 +357,7 @@ The response is written as a sum over the diagonal of the matrix of components o
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ | Series d'Alembertian |
 | $c_{\mathrm{2d}}$ | Two-dimensional central charge; a different letter from the four-dimensional $c$ |
 | $a$, $c$ | Four-dimensional Euler and Weyl coefficients |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number, the inverse of the mass length |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number, the inverse of the mass length |
 
 ## Further Reading
 

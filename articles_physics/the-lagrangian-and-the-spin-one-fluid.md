@@ -4,7 +4,7 @@
 
 The Proca field is $A_{\imath}=r\,u_{\imath}$: a magnitude and a direction, which are a density and a velocity. So the fluid is not a reading of a polar decomposition imposed from outside — it is the field's own parameterisation, and the action written in it is the Proca action and nothing else.
 
-*First, one term of the action does two things, and they are the same thing.* The mass term $\frac{k_m^{2}}{2}r^{2}$ removes the gauge freedom and supplies the Lorenz condition; the Lorenz condition in the fluid's variables is $\sum_{\imath}\partial_{\imath}(ru_{\imath})=0$, which is continuity. The spin-one fluid's continuity is the replacement for its lost gauge freedom, and both come from one term.
+*First, one term of the action does two things, and they are the same thing.* The mass term $\frac{\nu_m^{2}}{2}r^{2}$ removes the gauge freedom and supplies the Lorenz condition; the Lorenz condition in the fluid's variables is $\sum_{\imath}\partial_{\imath}(ru_{\imath})=0$, which is continuity. The spin-one fluid's continuity is the replacement for its lost gauge freedom, and both come from one term.
 
 *Second, the density's variation and the direction's variation are the longitudinal and transverse parts of the field equation, and the Lorenz condition is neither: it is their consequence*, by the identity $\sum_{\imath,\jmath}\partial_{\imath}\partial_{\jmath} F_{\jmath\imath}=0$. The action therefore explains the block's phrase that the free incompressibility is the mass's gift: without the mass the identity has nothing to balance, and the condition does not arise.
 
@@ -14,7 +14,7 @@ Position in the block. This is the variational companion of [The Spin-One Fluid]
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. $A_{\imath}=r\,u_{\imath}$ with $r>0$ and $\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}=-1$; the temporal slot carries the $i$, so $\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}=-r^{2}$. No index is raised: a contraction names its summed index, weighted by $\varepsilon_{\imath}$ wherever a value is displayed. $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$; $k_m=\frac{2\pi mc}{h}$; $\mathcal L=-\frac14\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}-\frac{k_m^{2}}{2}\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=k_m^{2}A_{\imath}$. The transverse derivative is $\nabla_{\imath}=\sum_{\jmath}\mathsf{P}_{\imath\jmath}\partial_{\jmath}$ with $\mathsf{P}_{\imath\jmath}=g_{\imath\jmath}+u_{\imath} u_{\jmath}$.
+The conventions are restated here so that every sign below is checkable from this page alone. $A_{\imath}=r\,u_{\imath}$ with $r>0$ and $\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}=-1$; the temporal slot carries the $i$, so $\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}=-r^{2}$. No index is raised: a contraction names its summed index, weighted by $\varepsilon_{\imath}$ wherever a value is displayed. $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$; $\nu_m=\frac{mc}{h}$; $\mathcal L=-\frac14\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}-\frac{4\pi^{2}\nu_m^{2}}{2}\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=4\pi^{2}\nu_m^{2}A_{\imath}$. The transverse derivative is $\nabla_{\imath}=\sum_{\jmath}\mathsf{P}_{\imath\jmath}\partial_{\jmath}$ with $\mathsf{P}_{\imath\jmath}=g_{\imath\jmath}+u_{\imath} u_{\jmath}$.
 
 ## The Action in the Field's Own Variables
 
@@ -31,20 +31,20 @@ Three pieces, and each has a name in the fluid's language. The first is the dire
 The Lagrangian, with the mass term expanded.
 
 $$
-\mathcal L=\frac{1}{2}\Bigl[\sum_{\imath}\bigl(\partial_{\imath} r\bigr)^{2}-\bigl(\sum_{\imath}\varepsilon_{\imath} u_{\imath}\partial_{\imath} r\bigr)^{2}\Bigr]-\frac{r^{2}}{4}\sum_{\imath,\jmath}\omega_{\imath\jmath}\omega_{\imath\jmath}-\sum_{\imath,\jmath}\varepsilon_{\imath}\,r\,\omega_{\imath\jmath}\bigl(\partial_{\imath} r\bigr)u_{\jmath}+\frac{k_m^{2}}{2}r^{2},
+\mathcal L=\frac{1}{2}\Bigl[\sum_{\imath}\bigl(\partial_{\imath} r\bigr)^{2}-\bigl(\sum_{\imath}\varepsilon_{\imath} u_{\imath}\partial_{\imath} r\bigr)^{2}\Bigr]-\frac{r^{2}}{4}\sum_{\imath,\jmath}\omega_{\imath\jmath}\omega_{\imath\jmath}-\sum_{\imath,\jmath}\varepsilon_{\imath}\,r\,\omega_{\imath\jmath}\bigl(\partial_{\imath} r\bigr)u_{\jmath}+\frac{4\pi^{2}\nu_m^{2}}{2}r^{2},
 $$
 
 obtained by expanding $-\frac14F^{2}$ and using $u^{2}=-1$. Four terms: the density's gradient energy, the vorticity's energy, a cross term, and the mass.
 
 **The cross term is what makes the free spin-one fluid's acceleration law as short as the block's.** $a_{\imath}=-\nabla_{\imath}\ln r-r^{-1}E_{\imath}$ has no quantum force because the two pieces of $F$ are first derivatives and no second derivative of $r$ survives the variation; the cross term is where the density's gradient and the vorticity meet, and it is the term that turns the field equation into a statement about the flow's acceleration.
 
-There is no $\frac{h}{2\pi}$ anywhere in the derivative terms. The only place the quantum of action appears is inside $k_m$. So this rung's fluid is not a Madelung fluid: it is a classical field read as a medium, and the block's article says as much by giving an acceleration law with no quantum potential.
+There is no $\frac{h}{2\pi}$ anywhere in the derivative terms. The only place the quantum of action appears is inside $\nu_m$. So this rung's fluid is not a Madelung fluid: it is a classical field read as a medium, and the block's article says as much by giving an acceleration law with no quantum potential.
 
 ## The Variation: The Two Variations and the Multiplier
 
 The density's variation is the field equation contracted with the flow, and the direction's variation is its transverse part. That is the cleanest way to state the pair, and it follows from the split of $\delta A_{\imath}=u_{\imath}\,\delta r+r\,\delta u_{\imath}$ into a longitudinal and a transverse piece.
 
-The $r$ variation gives $\sum_{\imath}\varepsilon_{\imath} u_{\imath}(\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}-k_m^{2}A_{\imath})=0$, since $\partial F/\partial r$ along $u$ is the contraction; the $\delta u$ variation, restricted to $u\cdot\delta u=0$, gives the transverse part, $\sum_{\jmath}\mathsf{P}_{\imath\jmath}(\sum_\lambda\partial_\lambda F_{\lambda\jmath}-k_m^{2}A_{\jmath})=0$. The two together are the field equation and neither alone is.
+The $r$ variation gives $\sum_{\imath}\varepsilon_{\imath} u_{\imath}(\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}-4\pi^{2}\nu_m^{2}A_{\imath})=0$, since $\partial F/\partial r$ along $u$ is the contraction; the $\delta u$ variation, restricted to $u\cdot\delta u=0$, gives the transverse part, $\sum_{\jmath}\mathsf{P}_{\imath\jmath}(\sum_\lambda\partial_\lambda F_{\lambda\jmath}-4\pi^{2}\nu_m^{2}A_{\jmath})=0$. The two together are the field equation and neither alone is.
 
 **The unit condition is the one place in this layer where a multiplier is genuinely needed.** The word's parameterisation absorbs the unit conditions of the boost and the rotor — a unit element is invertible for every value of its parameters — but the Proca direction is invertible by declaration and not by parameterisation: $u_{\imath}$ is three functions subject to one constraint, and the constraint must be imposed. Written with a multiplier,
 
@@ -71,14 +71,14 @@ The contrast with the spin article is why the section exists. There the paramete
 The Euler–Lagrange equation is the field equation, and its divergence is an identity on one side.
 
 $$
-\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=k_m^{2}A_{\imath}
+\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=4\pi^{2}\nu_m^{2}A_{\imath}
 \qquad\Longrightarrow\qquad
-0=\sum_{\imath,\jmath}\partial_{\imath}\partial_{\jmath} F_{\jmath\imath}=k_m^{2}\sum_{\imath}\partial_{\imath} A_{\imath},
+0=\sum_{\imath,\jmath}\partial_{\imath}\partial_{\jmath} F_{\jmath\imath}=4\pi^{2}\nu_m^{2}\sum_{\imath}\partial_{\imath} A_{\imath},
 $$
 
-because $F$ is antisymmetric. **The Lorenz condition is therefore a consequence of the equation and not a condition imposed on it, and it exists exactly when $k_m\ne0$.**
+because $F$ is antisymmetric. **The Lorenz condition is therefore a consequence of the equation and not a condition imposed on it, and it exists exactly when $\nu_m\ne0$.**
 
-The same term removes the gauge freedom. With $k_m=0$ the action is invariant under $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$; with $k_m\ne0$ it is not, because the mass term is not. One term supplies the condition and destroys the freedom the condition replaces, and the two statements are the same statement seen from two sides: a massless vector has a redundancy and no condition, a massive one has a condition and no redundancy, and the count of physical components is the same in both cases.
+The same term removes the gauge freedom. With $\nu_m=0$ the action is invariant under $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$; with $\nu_m\ne0$ it is not, because the mass term is not. One term supplies the condition and destroys the freedom the condition replaces, and the two statements are the same statement seen from two sides: a massless vector has a redundancy and no condition, a massive one has a condition and no redundancy, and the count of physical components is the same in both cases.
 
 In the fluid's variables the condition is continuity. With $A_{\imath}=r\,u_{\imath}$,
 
@@ -98,7 +98,7 @@ And the flow's own expansion is not zero. Differentiating $ru_{\imath}$ gives $\
 
 **No charge, and the spin is the field's own.** The Proca potential is real on the material sector, so the phase rotation is not a symmetry and there is no conserved charge; the parameter that would carry one is absent from the branch. What the chart does carry is the spin sector: the rotor is a physical variable here, unlike the scalar rungs, and its conjugate momentum is a genuine spin current.
 
-The stress. The translation current is the chart's energy–momentum, with the mass term contributing $\tfrac12k_m^{2}\lvert\vec A\rvert^{2}$ to the energy density and the frame's sigma-model term contributing the rest. The stress is what the frame's transport conserves.
+The stress. The translation current is the chart's energy–momentum, with the mass term contributing $\tfrac12\nu_m^{2}\lvert\vec A\rvert^{2}$ to the energy density and the frame's sigma-model term contributing the rest. The stress is what the frame's transport conserves.
 
 Why the mass term does two things. It fixes the longitudinal coefficient and it makes the spin's longitudinal polarisation physical. The first is a statement about the stress, the second about the spin current, and the article keeps them apart because a single term producing two effects is exactly what a reader is entitled to have explained twice.
 
@@ -112,13 +112,13 @@ Three statements, and the block makes each of them in the equations' language.
 
 *The rank of $\omega$ is two, and the reason is the dimension of the rest space.* The vorticity of a congruence is the curl projected onto the plane orthogonal to the flow, $\omega^{\perp}_{\imath\jmath}=\sum_{\alpha,\beta}\mathsf{P}_{\imath\alpha}\mathsf{P}_{\jmath\beta}\omega_{\alpha\beta}$ with $\mathsf{P}_{\imath\jmath}=g_{\imath\jmath}+u_{\imath} u_{\jmath}$: $\omega^{\perp}$ annihilates $u$ by construction, and a two-form supported on three dimensions is simple, so its rank is at most two and is two wherever the vorticity is non-zero. The raw curl is a different object, and its contraction with the flow is the acceleration: $\sum_{\jmath}\varepsilon_{\jmath}\omega_{\imath\jmath}u_{\jmath}=-a_{\imath}$, so $\mathrm{d}u$ is neither transverse nor always simple — the block's sentence that $\omega\wedge\omega=0$ for every invertible element timelike flow holds for $\omega^{\perp}$ and not for $\mathrm{d}u$. The first-order charged fluid has rank two for the other reason, that a three-vector curl cannot make a four-dimensional two-form; the spinor fluid's is rank two for every solution, as its own article establishes.
 
-*The equation of state is the mass term's, and the action shows it as the only term without a derivative.* The mass term $\frac{k_m^{2}}{2}r^{2}$ is the one term in the action that carries the density and no gradient, and it fixes the pressure in one line: the energy density it contributes is $\epsilon=\frac{k_m^{2}}{2}r^{2}$ and the force it exerts is $-\vec\nabla_\Phi\ln r$, so $\mathrm{d}p/(\epsilon+p)=\mathrm{d}\ln r$ and $p=\epsilon$. **A spin-one fluid is stiff, and the stiffness is the mass's**, which is the block's reading of the acceleration law; the action's addition is that no other law is available, because no other term of the action is free of derivatives.
+*The equation of state is the mass term's, and the action shows it as the only term without a derivative.* The mass term $\frac{\nu_m^{2}}{2}r^{2}$ is the one term in the action that carries the density and no gradient, and it fixes the pressure in one line: the energy density it contributes is $\epsilon=\frac{4\pi^{2}\nu_m^{2}}{2}r^{2}$ and the force it exerts is $-\vec\nabla_\Phi\ln r$, so $\mathrm{d}p/(\epsilon+p)=\mathrm{d}\ln r$ and $p=\epsilon$. **A spin-one fluid is stiff, and the stiffness is the mass's**, which is the block's reading of the acceleration law; the action's addition is that no other law is available, because no other term of the action is free of derivatives.
 
 ## What the Principle Adds and What It Relabels: In the Fluid Chart
 
 Adds. The mass term's double role, stated once: it removes the gauge freedom and supplies the condition that replaces it, and in the fluid's variables that condition is continuity. The pair of variations as the field equation's longitudinal and transverse parts, with the Lorenz condition as their consequence by an identity. The multiplier's necessity and its reading as a pressure. The decomposition of the field strength into vorticity and density gradient. And the reason this rung has no quantum force: the action has no second derivative of the magnitude.
 
-Does not add. No new equation: the four components are the field's. No new current: the Proca current is $k_m^{2}A_{\imath}$ up to the normalisation, and it is the field. No gauge invariance to discuss, because the mass removed it. No thermodynamics, and no quantum potential, since this rung has none. And no statement about the massless limit's fluid reading, which the block's article explicitly denies.
+Does not add. No new equation: the four components are the field's. No new current: the Proca current is $\nu_m^{2}A_{\imath}$ up to the normalisation, and it is the field. No gauge invariance to discuss, because the mass removed it. No thermodynamics, and no quantum potential, since this rung has none. And no statement about the massless limit's fluid reading, which the block's article explicitly denies.
 
 The one thing the action says that the equations cannot. The Lorenz condition, the loss of gauge freedom, the continuity equation and the stiffness of the flow are four statements about four different objects, and in the action they are one term. That is the strongest case in the layer for writing the fluid's Lagrangian: not a new result, but the location of four results in one coefficient.
 
@@ -138,7 +138,7 @@ One difference from the spin-half fluid. There the torque was the new object; he
 
 ## Open Questions
 
-The massless limit. The action's derivative terms survive at $k_m=0$ and the fluid reading does not, because the field becomes pure gauge and $A=ru$ is then a gauge-dependent split. Whether some gauge-fixed chart makes the limit continuous is not settled.
+The massless limit. The action's derivative terms survive at $\nu_m=0$ and the fluid reading does not, because the field becomes pure gauge and $A=ru$ is then a gauge-dependent split. Whether some gauge-fixed chart makes the limit continuous is not settled.
 
 The constraint's class. Whether the unit condition and the transverse projection produce a second-class system with a Dirac bracket that closes is not computed here.
 
@@ -146,7 +146,7 @@ The multiplier's sign. $\lambda$ is determined by the equations and its sign is 
 
 ## Summary
 
-The action. $\mathcal L=\frac12[(\partial r)^{2}-(u\cdot\partial r)^{2}]-\frac{r^{2}}{4}\omega^{2}-\sum_{\imath,\jmath}\varepsilon_{\imath} r\,\omega_{\imath\jmath}\partial_{\imath} r\,u_{\jmath}+\frac{k_m^{2}}{2}r^{2}$, with $A=ru$ and $u^{2}=-1$.
+The action. $\mathcal L=\frac12[(\partial r)^{2}-(u\cdot\partial r)^{2}]-\frac{r^{2}}{4}\omega^{2}-\sum_{\imath,\jmath}\varepsilon_{\imath} r\,\omega_{\imath\jmath}\partial_{\imath} r\,u_{\jmath}+\frac{4\pi^{2}\nu_m^{2}}{2}r^{2}$, with $A=ru$ and $u^{2}=-1$.
 
 The mass term. It removes the gauge freedom, supplies the Lorenz condition, and in the fluid's variables that condition is continuity $\sum_{\imath}\partial_{\imath}(ru_{\imath})=0$. One term, four statements.
 
@@ -165,7 +165,7 @@ The quantum sector. Absent: no $\frac{h}{2\pi}$ in the derivative terms, no quan
 | $u_{\imath}$, $\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}=-1$ | Unit four-velocity; three functions and one constraint |
 | $\omega_{\imath\jmath}=\partial_{\imath} u_{\jmath}-\partial_{\jmath} u_{\imath}$ | The raw curl, whose contraction with $u$ is $-a_{\imath}$; its projection $\omega^{\perp}$ is the vorticity and is rank two |
 | $F_{\imath\jmath}=r\omega_{\imath\jmath}+\partial_{\imath} r\,u_{\jmath}-\partial_{\jmath} r\,u_{\imath}$ | The field strength; vorticity plus density gradient |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number; the only place $\frac{h}{2\pi}$ appears |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number; the only place $\frac{h}{2\pi}$ appears |
 | $\nabla_{\imath}=\sum_{\jmath}\mathsf{P}_{\imath\jmath}\partial_{\jmath}$ | Transverse derivative; $\mathsf{P}_{\imath\jmath}=g_{\imath\jmath}+u_{\imath} u_{\jmath}$ |
 | $\lambda$ | Multiplier of the unit condition; a pressure |
 | $E_{\imath}=\sum_{\jmath}\varepsilon_{\jmath} F_{\imath\jmath}u_{\jmath}$ | The electric part along the flow |

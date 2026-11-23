@@ -230,7 +230,7 @@ The element has the same form as $\tilde H_\Psi$, with two real numbers shifted,
 
 **The statement.** The coupled Schrödinger system is the non-relativistic limit of the coupled Klein–Gordon system — scalar electrodynamics — in the same sense in which the free Schrödinger equation is the non-relativistic limit of the free Klein–Gordon equation. The free statement is the free article's open question 4 and this article does not close it either; what the coupling adds is a check that the two limiting procedures agree.
 
-**The two slots must agree.** Write the coupled Klein–Gordon equation in the component form of its companion, $\big(\sum_{\imath} D_{\imath}^{2}-k_m^{2}\big)\tilde\Xi=0$, and set $\tilde\Xi=e^{-ik_m r'_t}\tilde\Xi_{\mathrm{nr}}$ with $k_m=\frac{2\pi mc}{h}$. The temporal slot then produces a term linear in $k_m$, which is the mass, and the balance of that term against the spatial covariant Laplacian gives
+**The two slots must agree.** Write the coupled Klein–Gordon equation in the component form of its companion, $\big(\sum_{\imath} D_{\imath}^{2}-\nu_m^{2}\big)\tilde\Xi=0$, and set $\tilde\Xi=e^{-ik_m r'_t}\tilde\Xi_{\mathrm{nr}}$ with $\nu_m=\frac{mc}{h}$. The temporal slot then produces a term linear in $\nu_m$, which is the mass, and the balance of that term against the spatial covariant Laplacian gives
 
 $$
 i \frac{h}{2\pi}\,D_t\tilde\Xi_{\mathrm{nr}}\simeq\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi_{\mathrm{nr}},

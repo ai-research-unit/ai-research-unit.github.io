@@ -84,7 +84,7 @@ This is the third place where the word does not decide, and it is where the tens
 The current splits into a convection part and a spin part, and the split is defined up to a total divergence. The identity is the Gordon decomposition, and its content is that a solution's current equals a convection term plus the divergence of the tensor bilinear:
 
 $$
-J_{\Phi,\imath}=\frac{\rho_{\mathrm{num}}}{m}P_{\Phi,\imath}+\frac{1}{k_m}\partial_{\jmath}\bigl(\bar{\tilde\Xi}\Sigma_{\imath\jmath}\tilde\Xi\bigr).
+J_{\Phi,\imath}=\frac{\rho_{\mathrm{num}}}{m}P_{\Phi,\imath}+\frac{1}{2\pi\nu_m}\partial_{\jmath}\bigl(\bar{\tilde\Xi}\Sigma_{\imath\jmath}\tilde\Xi\bigr).
 $$
 
 The freedom is the freedom to move a curl from one term to the other. Adding $\sum_{\jmath}\partial_{\jmath} A_{\imath\jmath}$ to the first term with $A$ antisymmetric and subtracting it from the second leaves the current unchanged, because the two additions cancel identically. Different choices of $A$ give different convection momenta and different spin currents, with the same $J_{\Phi}$.
@@ -97,7 +97,7 @@ The complete polar decomposition makes one choice and calls it the frame. With $
 
 The field equation does not fix the transport of the spin, and every formulation closes the system by adding a condition. In the algebra the statement is the non-closure of the four brackets: the derivative of the word has four terms of four types and the equation constrains them jointly without fixing any one.
 
-Takabayasi's closure is a condition on the curl of the momentum. His second subsidiary condition fixes $\partial_{\imath} k_{\jmath}-\partial_{\jmath} k_{\imath}$ in terms of the velocity, the spin and the field strength, which makes the system self-contained and determines $k_{\imath}$ up to a gradient. [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html) states this and grades the correspondence.
+Takabayasi's closure is a condition on the curl of the momentum. His second subsidiary condition fixes $\partial_{\imath} \nu_{\jmath}-\partial_{\jmath} \nu_{\imath}$ in terms of the velocity, the spin and the field strength, which makes the system self-contained and determines $\nu_{\imath}$ up to a gradient. [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html) states this and grades the correspondence.
 
 The other closures are conditions on the spin's transport. A condition of Frenkel type fixes the spin's time component; a condition of Weyssenhoff type fixes the spin's relation to the velocity differently. Each gives a different evolution for the spin and the same evolution for the density and the current at the level of the conservation laws.
 
@@ -162,7 +162,7 @@ On top of the word a fluid needs three choices: which density is conserved, how 
 | $\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ | Cosine between the two axes |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\Sigma_{\imath\jmath}$ | Spin generator |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 
 ## Further Reading
 

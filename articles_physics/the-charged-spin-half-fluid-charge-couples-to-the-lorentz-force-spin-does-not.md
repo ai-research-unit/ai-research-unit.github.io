@@ -7,9 +7,9 @@ The charge reaches the momentum and the frame's rapidity, and it cannot reach th
 The equation. The coupled Dirac equation in polar variables is the free one with covariant derivatives,
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\mathrm D}=\frac{2\pi i}{h}k_m\tilde\Xi_{\mathrm D},
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\mathrm D}=\frac{i}{h}2\pi\nu_m\tilde\Xi_{\mathrm D},
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{h}\tilde A_\Phi,
 \qquad
 \tilde\Xi_{\mathrm D}=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r},
 $$
@@ -20,7 +20,7 @@ Three things are established.
 
 *First, the connection reaches two of the four brackets and no others.* Its temporal slot is a central imaginary number and joins the phase bracket; its spatial slots are Hermitian vectors and join the boost bracket. The scale bracket is a real scalar and the rotor bracket is a real vector part, and a central element can produce neither. On the fluid's side: the momentum and the rapidity move, the density does not, and the spin does not.
 
-*Second, the velocity is the kinetic one and it is invertible for every field.* The mass-shell identity holds for the covariant wavevector, $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, so the boost in the word is the one the covariant wavevector names, and $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ with $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ whatever the coupling. This is the one charged fluid whose normalisation the coupling cannot touch, and the reason is structural: the velocity is invertible by construction and not by the equation of motion.
+*Second, the velocity is the kinetic one and it is invertible for every field.* The mass-shell identity holds for the covariant wavevector, $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$, so the boost in the word is the one the covariant wavevector names, and $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ with $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ whatever the coupling. This is the one charged fluid whose normalisation the coupling cannot touch, and the reason is structural: the velocity is invertible by construction and not by the equation of motion.
 
 *Third, the force is the Lorentz force and there is no torque.* The coupling enters the momentum balance through the charge current and the antisymmetric part of the stress through the spin current, and the second is the free article's. So the fluid is pushed where it carries charge and is turned where its spin varies, and the field does not turn the spin directly; what the standard theory calls Larmor precession appears at second order, through the transport of the frame, and §*The Force, and Not the Torque* states the composition.
 
@@ -28,7 +28,7 @@ What is not here. No new solution, no derivation of a spin equation in a backgro
 
 Position in the block. This article is the charged companion of [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), and §*The Three Charged Fluids* compares the three.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $k_m=\frac{2\pi mc}{h}$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $\nu_m=\frac{mc}{h}$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
 
 ## The Two Brackets the Charge Can Reach
 
@@ -68,10 +68,10 @@ Why the type argument is a proof and not a hope. The four brackets are the four 
 
 ## The Velocity Is the Kinetic One
 
-The mass-shell identity is the proposition that names the velocity, and the coupling shifts which wavevector it applies to. The parent's proposition is that a field whose wavevector satisfies $\tilde K\tilde K^{\natural}=-k_m^{2}$ has $\tilde K=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ for a boost. With the connection in place the same proposition holds for the covariant wavevector:
+The mass-shell identity is the proposition that names the velocity, and the coupling shifts which wavevector it applies to. The parent's proposition is that a field whose wavevector satisfies $4\pi^{2}\tilde\Upsilon\tilde\Upsilon^{\natural}=-\nu_m^{2}$ has $\tilde\Upsilon=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ for a boost. With the connection in place the same proposition holds for the covariant wavevector:
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2},
+\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2},
 \qquad
 \tilde V_\Phi=ic\,\tilde U_{\Psi,\mathrm b}^{-2},
 \qquad
@@ -83,7 +83,7 @@ $$
 and the canonical wavevector is the covariant one less the potential:
 
 $$
-\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi ϙ}{h}\tilde A_\Phi .
+\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{ϙ}{h}\tilde A_\Phi .
 $$
 
 In one sentence: the boost in the word is the one the covariant wavevector names, so the velocity is kinetic and the potential sits entirely in the canonical wavevector. The classical statement is $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}-q\vec A$; the chart's statement is that the two wavevectors differ by one element and that the mass-shell identity is applied to the second.
@@ -100,10 +100,10 @@ and the reason is that the velocity is not the momentum over the mass but the fr
 The mass shell in canonical components is the translated hyperboloid. Expanding the identity,
 
 $$
-\Bigl(\frac{2\pi E+ϙcA_t}{h c}\Bigr)^{2}-\Bigl|\frac{2\pi \vec p-q\vec A}{h}\Bigr|^{2}=-k_m^{2},
+\Bigl(\frac{E+ϙcA_t}{h c}\Bigr)^{2}-\Bigl|\frac{\vec p-q\vec A}{h}\Bigr|^{2}=-4\pi^{2}\nu_m^{2},
 $$
 
-so the radius is $k_m$ and the potential moves the centre: a constant potential shifts every level and opens no gap. The polar reason is one line: a shift of a variable cannot change a radius. The fluid reason is equally short: a shift of the momentum cannot change the frame.
+so the radius is $\nu_m$ and the potential moves the centre: a constant potential shifts every level and opens no gap. The polar reason is one line: a shift of a variable cannot change a radius. The fluid reason is equally short: a shift of the momentum cannot change the frame.
 
 The objection, and the answer. The objection is that the covariant wavevector is *defined* as the canonical one plus the potential, so "the boost is carried by the covariant wavevector" is a naming and not a result. The objection is correct as far as it goes, and the answer is that the identity fixes the direction of the reading: read from the potential to the frame, the coupling changes the rapidity, hence the velocity; read from the frame to the potential, the velocity is what survives when the potential is removed. The chart states the identity; the physical naming is the corpus's convention and not a consequence of the algebra, and the article says so rather than dressing it up.
 
@@ -236,7 +236,7 @@ Twelve statements, each one line, and each with its reason. This is what the cha
 
 1. The word is unchanged and the coupling is confined by type. Eight parameters; the connection reaches the phase and boost brackets and not the scale or the rotor.
 2. The density is untouched. The gauge transformation moves the angle alone, and the scale, the rapidity, the axis and the rotor are gauge invariant by inspection.
-3. The velocity is the kinetic one, named by the covariant wavevector: $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi ϙ\tilde A_\Phi}{h}$.
+3. The velocity is the kinetic one, named by the covariant wavevector: $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{ϙ\tilde A_\Phi}{h}$.
 4. The velocity is invertible for every field. $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$; the normalisation is kinematical and the coupling cannot touch it.
 5. The rapidity and the axis are observables. $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, and no gauge transformation changes either.
 6. The vorticity is the frame's gradient. Its proper part is rank two for every solution, and it is not $ϙF/m$ for any field.
@@ -291,7 +291,7 @@ What the correspondence supports and what it does not. It supports the claim tha
 
 ## What Is Established and What Is Interpretation
 
-Established. The type table with the coupling in place, and the statement that the connection adds to the phase bracket and the boost bracket and to nothing else. The kinetic velocity, and $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ with the canonical wavevector the covariant one less the potential. The invariance of $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ under every field. The vorticity as the frame's logarithmic derivative, with the proper part rank two for every solution and the raw derivative reaching four, checked numerically on two frames with the singular values quoted. The loop invariant as a Lorentz transformation times a phase, and the frozen-frame sector's circulation as that phase. The Gordon split, and the absence of any explicit connection in the magnetisation current. The force with no torque, and the second-order character of the Larmor precession. The survival of the three open items and the reason they survive.
+Established. The type table with the coupling in place, and the statement that the connection adds to the phase bracket and the boost bracket and to nothing else. The kinetic velocity, and $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ with the canonical wavevector the covariant one less the potential. The invariance of $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ under every field. The vorticity as the frame's logarithmic derivative, with the proper part rank two for every solution and the raw derivative reaching four, checked numerically on two frames with the singular values quoted. The loop invariant as a Lorentz transformation times a phase, and the frozen-frame sector's circulation as that phase. The Gordon split, and the absence of any explicit connection in the magnetisation current. The force with no torque, and the second-order character of the Larmor precession. The survival of the three open items and the reason they survive.
 
 Interpretation. That the frame *is* the fluid's velocity rather than a rewriting of the bispinor, and that the rotor *is* an orientation rather than a phase. The warrant is the count, the types and the parent's reading, and the coupling does not touch the warrant. That the loop invariant's $\mathbb{C}^{\ast}\times SL(2,\mathbb{C})$ is the right home for a charged spin fluid's circulation is a reading of the structure and not a theorem.
 
@@ -299,11 +299,11 @@ Not claimed. It is not claimed that the vorticity has a dynamics, that the spin 
 
 ## Summary
 
-The coupled Dirac equation in polar variables is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\mathrm D}=\frac{2\pi i}{h}k_m\tilde\Xi_{\mathrm D}$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, and the word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
+The coupled Dirac equation in polar variables is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\mathrm D}=\frac{i}{h}2\pi\nu_m\tilde\Xi_{\mathrm D}$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, and the word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
 
 The connection is central per component. Its temporal slot is a central imaginary number and joins the phase bracket; its spatial slots are Hermitian vectors and join the boost bracket. The scale is a real scalar and the rotor is a real vector part, so the density and the spin are untouched.
 
-The velocity is the kinetic one: the boost is named by the covariant wavevector, $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, and the canonical wavevector is the covariant one less the potential. $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ for every field, so the normalisation is kinematical and the coupling cannot reach it.
+The velocity is the kinetic one: the boost is named by the covariant wavevector, $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$, and the canonical wavevector is the covariant one less the potential. $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ for every field, so the normalisation is kinematical and the coupling cannot reach it.
 
 The vorticity is the frame's logarithmic derivative and contains no connection. Its proper part is rank two for every solution, and its raw derivative reaches rank four through the acceleration; it is not $ϙF/m$, and the sum of the two is a two-form of a different kind. It is closed by Maurer–Cartan flatness and obeys no transport law.
 
@@ -323,12 +323,12 @@ The spin direction is gauge invariant and coupling-blind, and the Larmor precess
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction; gauge invariant, coupling-blind |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The four-velocity; $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ |
 | $\Gamma_{\imath}=\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}$ | The frame's logarithmic derivative |
-| $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ | The covariant wavevector |
-| $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi ϙ}{h}\tilde A_\Phi$ | The canonical wavevector |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ | The covariant wavevector |
+| $\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{ϙ}{h}\tilde A_\Phi$ | The canonical wavevector |
 | $\omega_{\imath\jmath}$ | The vorticity; the frame's gradient, proper part rank two |
 | $\Phi_B$ | The flux through a loop |
 | $ϙ$ | The coupling |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
 
 ## Further Reading
 

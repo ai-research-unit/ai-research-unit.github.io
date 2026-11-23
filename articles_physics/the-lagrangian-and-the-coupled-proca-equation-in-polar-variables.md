@@ -7,7 +7,7 @@ This article substitutes the complete polar decomposition into the coupled Proca
 The action and the substitution. The element-form action is
 
 $$
-S[\tilde A,\tilde A^{*}]=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
+S[\tilde A,\tilde A^{*}]=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
 $$
 
 and the substitution is the four-factor word
@@ -30,7 +30,7 @@ What is not here. The element-form companion owns the field term's normalization
 
 ## Conventions
 
-The conventions are the free chart's, restated for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the word is $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde u$, with $\varrho>0$ and $\tilde u$ a unit element of the frame; the connection is $\tilde A_\Phi$ with real components $A_{\imath}$ and the coupling is $ϙ$. The pairing and the measure are those of the free chart, $k_m=\frac{2\pi mc}{h}$, and the two settings are the parent's.
+The conventions are the free chart's, restated for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the word is $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde u$, with $\varrho>0$ and $\tilde u$ a unit element of the frame; the connection is $\tilde A_\Phi$ with real components $A_{\imath}$ and the coupling is $ϙ$. The pairing and the measure are those of the free chart, $\nu_m=\frac{mc}{h}$, and the two settings are the parent's.
 
 ## The Action in Polar Variables
 
@@ -71,13 +71,13 @@ No multipliers for the normalisation. The word carries the frame as an exact uni
 
 The second-order structure. The action is second order in the material time, so its Hessian with respect to the eight velocities is the metric $G$ and not a matrix with zero eigenvalues. That is the formal difference from the first-order companions: there the action is linear in the velocities, the Hessian has six zero eigenvalues, and the chart's Euler–Lagrange equations are a constrained system. Here there is no such degeneracy in form, and the chart's equations are eight second-order equations for eight parameters.
 
-The pairing. Inherited, and the connection is what the pairing now sees. The parent pairs the field term with $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ and the mass term with $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$. The chart writes the vector as a density times a unit element and the connection as four components. The mass term is $\tfrac12k_m^{2}\varrho^{2}$ and is real; the field term's $\mathrm{Re}$ is still the explicit device that keeps it real.
+The pairing. Inherited, and the connection is what the pairing now sees. The parent pairs the field term with $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ and the mass term with $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$. The chart writes the vector as a density times a unit element and the connection as four components. The mass term is $\tfrac12\nu_m^{2}\varrho^{2}$ and is real; the field term's $\mathrm{Re}$ is still the explicit device that keeps it real.
 
-The type of the coefficient. Two real coefficients and four bracket conditions. $k_m^{2}$ is real. The field term needs no coefficient beyond the metric, because $\mathrm{Re}$ does its work. The connection's four components must satisfy the reality of the covariant field term, which is a condition on their types and not on their size, and it is P1's.
+The type of the coefficient. Two real coefficients and four bracket conditions. $\nu_m^{2}$ is real. The field term needs no coefficient beyond the metric, because $\mathrm{Re}$ does its work. The connection's four components must satisfy the reality of the covariant field term, which is a condition on their types and not on their size, and it is P1's.
 
 The selection rule. The constraint is not a selection. The Proca action has no free potential. The Lorenz condition is a constraint from the variation of the field itself, which *The Constraints the Action Imposes* reads; a selection rule would be a statement about which potentials are admissible, and there are none.
 
-**What reality does not buy. Reality does not enforce the constraint and does not sign the mass.** A real density is compatible with either sign of $k_m^{2}$ and with the constraint or without it. The constraint is the next section's; the sign of the conserved quantities is *The Noether Currents*'.
+**What reality does not buy. Reality does not enforce the constraint and does not sign the mass.** A real density is compatible with either sign of $\nu_m^{2}$ and with the constraint or without it. The constraint is the next section's; the sign of the conserved quantities is *The Noether Currents*'.
 
 ## The Variation: The Euler–Lagrange Equations
 
@@ -144,7 +144,7 @@ The hand check. Set the frame to the identity, $\theta_{\mathrm{rpd}}=0$. Then $
 
 The reconstruction is exact on a branch. The chart is a diffeomorphism from the parameter domain onto one branch of the material sector's N-regular set, so the word can be inverted there: the two norms give $\varrho$ and $\theta_{\mathrm{rpd}}$, the direction gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$. The inverse is the bijection read backwards and adds nothing to the action.
 
-**The branch is an input and not an output.** This is the article's central qualification. The two branches differ by the sign of the algebraic mass term, $+\tfrac12k_m^{2}\varrho^{2}$ on the timelike one and $-\tfrac12k_m^{2}\varrho^{2}$ on the spacelike one, and **that sign is not a function of the eight parameters**. The chart is a chart on one branch; to move to the other the reader changes a discrete datum first and reconstructs afterwards. A reconstruction that claimed to recover the branch from the parameters would be claiming to recover a sign from a magnitude, and it cannot.
+**The branch is an input and not an output.** This is the article's central qualification. The two branches differ by the sign of the algebraic mass term, $+\tfrac12\nu_m^{2}\varrho^{2}$ on the timelike one and $-\tfrac12\nu_m^{2}\varrho^{2}$ on the spacelike one, and **that sign is not a function of the eight parameters**. The chart is a chart on one branch; to move to the other the reader changes a discrete datum first and reconstructs afterwards. A reconstruction that claimed to recover the branch from the parameters would be claiming to recover a sign from a magnitude, and it cannot.
 
 The scale's limit. $\varrho>0$ excludes the zero element, so a field that reaches $\varrho=0$ leaves the chart. For the Proca field that is not a pathology but a boundary: the mass shell's two branches meet only through the origin, and the origin is excluded.
 
@@ -199,7 +199,7 @@ The metric's signs. Positivity of the energy in the chart requires the metric's 
 The coupled Proca action in the polar variables is
 
 $$
-S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,R\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr)\,\varrho^{2}\Bigr],
+S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^{2}\,R\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr)\,\varrho^{2}\Bigr],
 $$
 
 with $R$ the frame's own scalar, equal to one exactly when the rotor is trivial, independent of the rapidity when the two axes are collinear and dependent on it when they are not: a quadratic form in the eight gradients with a frame-built metric, a mass potential $R\varrho^{2}$, and a connection that shifts the phase's gradient and nothing else.
@@ -221,7 +221,7 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 | $\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}$ | The one gradient the connection shifts |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; translates $\theta_{\mathrm{pha}}$ |
 | $\rho_{\mathrm{chg}}=\partial\mathcal{L}/\partial(\partial_{r'_t}\theta_{\mathrm{pha}})$ | Charge density as the phase's conjugate momentum |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter |
 
 ## Further Reading

@@ -10,7 +10,7 @@ The first is that the equation does not exclude a degenerate field. For a massiv
 
 The second is that the degenerate set is the cone, and the cone carries exactly two non-zero sectors, $\Sigma_{01}$ and $\Sigma_{00}$. Each has a component form, a worked example and a reading. The readings are the ones the polar companion gives from the other side: $\Sigma_{01}$ is a ray that keeps a direction and a weight, and $\Sigma_{00}$ is a null direction that keeps neither.
 
-The third is that at $k_m=0$ the two lines of the pair decouple, and every non-zero one-sided solution is degenerate. Degeneracy is then not a codimension-two accident but the generic case, which is why a massless field is written as a sum of two one-sided fields: the sum is generically an invertible element, and the interference of the two parts is what carries the norm.
+The third is that at $\nu_m=0$ the two lines of the pair decouple, and every non-zero one-sided solution is degenerate. Degeneracy is then not a codimension-two accident but the generic case, which is why a massless field is written as a sum of two one-sided fields: the sum is generically an invertible element, and the interference of the two parts is what carries the norm.
 
 **A warning about letters.** Three different objects are called $L$ and $R$ in the corpus, and one of them cannot be substituted into the pair. The next section separates the three. The separation is not pedantry: the substitution that looks most natural makes both lines of the pair vanish, so a reader who takes it writes an article about the zero field.
 
@@ -20,15 +20,15 @@ The equation is the chiral pair of *The Dirac Equation in Biquaternionic Form*,
 
 $$
 \boxed{\;
-\tilde\nabla_\Phi\tilde\Xi_{R}=k_m\,\tilde\Xi_{L},
+\tilde\nabla_\Phi\tilde\Xi_{R}=2\pi\nu_m\,\tilde\Xi_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_m\,\tilde\Xi_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=2\pi\nu_m\,\tilde\Xi_{R},
 \;}
 $$
 
-with $k_m=\frac{2\pi mc}{h}$ the mass wave number, that is the reciprocal reduced Compton length. The field is one element $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ of $\mathbb{B}$. The gradient differentiates with respect to the coordinates $R_{\imath}$ and is an element of the algebra that multiplies on the left; the mass is a central coefficient. No column, no anticommuting array, no separate state space and no idempotent enters the statement.
+with $\nu_m=\frac{mc}{h}$ the mass wave number, that is the reciprocal reduced Compton length. The field is one element $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ of $\mathbb{B}$. The gradient differentiates with respect to the coordinates $R_{\imath}$ and is an element of the algebra that multiplies on the left; the mass is a central coefficient. No column, no anticommuting array, no separate state space and no idempotent enters the statement.
 
-At $k_m=0$ the pair decouples into two one-sided equations,
+At $\nu_m=0$ the pair decouples into two one-sided equations,
 
 $$
 \tilde\nabla_\Phi\tilde\Xi_{R}=0,
@@ -84,15 +84,15 @@ At $u=\vec e_z$ this split is the corpus's **value test**: $\tilde X\vec e_z=-i\
 
 ### The Pair's Two Components
 
-The third object is the pair's own letters. They name **two components related by a central coefficient**, and no element is declared to state them. The definition is the equation: $\tilde\Xi_{R}$ is the component the gradient acts on in the first line and $\tilde\Xi_{L}$ is the component the conjugate gradient acts on in the second, and $k_m$ is the coefficient of the exchange. The parent article argues this at length in §*The Subscript and the Two Parts*, and the argument is one line: a left multiplier keeps the value, since $(\tilde A\tilde X)\vec e_z=\tilde A(\tilde X\vec e_z)$, so no term of the pair moves a value across.
+The third object is the pair's own letters. They name **two components related by a central coefficient**, and no element is declared to state them. The definition is the equation: $\tilde\Xi_{R}$ is the component the gradient acts on in the first line and $\tilde\Xi_{L}$ is the component the conjugate gradient acts on in the second, and $\nu_m$ is the coefficient of the exchange. The parent article argues this at length in §*The Subscript and the Two Parts*, and the argument is one line: a left multiplier keeps the value, since $(\tilde A\tilde X)\vec e_z=\tilde A(\tilde X\vec e_z)$, so no term of the pair moves a value across.
 
 ### The Theorem That Separates Them
 
 The third object cannot be the second, and the reason is one associativity step.
 
-*Theorem.* Let $u$ be a scalar-free element with $u^{2}=-e_t$ and let $\tilde\Xi_{L}$ and $\tilde\Xi_{R}$ be definite-value parts under it, that is $R_u\tilde\Xi_{L}=i\tilde\Xi_{L}$ and $R_u\tilde\Xi_{R}=-i\tilde\Xi_{R}$. If $k_m\neq0$, then the pair holds only for $\tilde\Xi_{L}=\tilde\Xi_{R}=0$.
+*Theorem.* Let $u$ be a scalar-free element with $u^{2}=-e_t$ and let $\tilde\Xi_{L}$ and $\tilde\Xi_{R}$ be definite-value parts under it, that is $R_u\tilde\Xi_{L}=i\tilde\Xi_{L}$ and $R_u\tilde\Xi_{R}=-i\tilde\Xi_{R}$. If $\nu_m\neq0$, then the pair holds only for $\tilde\Xi_{L}=\tilde\Xi_{R}=0$.
 
-*Proof.* Left multiplication keeps a value, because a left multiplier acts before the right multiplier that tests the value: if $\tilde Xu=-i\tilde X$ then $(\tilde A\tilde X)u=\tilde A(\tilde Xu)=-i\tilde A\tilde X$. The gradient is an element and multiplies on the left, so $\tilde\nabla_\Phi\tilde\Xi_{R}$ carries the value $-i$ wherever $\tilde\Xi_{R}$ does. The right side of the first line is $k_m\tilde\Xi_{L}$, of value $+i$, and the central coefficient does not move a value. Two definite-value elements of opposite value are equal only if both vanish, so the first line forces both sides to zero and then forces both components to vanish. The same argument applies to the second line, and it holds at each point of the field's domain, with no plane-wave assumption.
+*Proof.* Left multiplication keeps a value, because a left multiplier acts before the right multiplier that tests the value: if $\tilde Xu=-i\tilde X$ then $(\tilde A\tilde X)u=\tilde A(\tilde Xu)=-i\tilde A\tilde X$. The gradient is an element and multiplies on the left, so $\tilde\nabla_\Phi\tilde\Xi_{R}$ carries the value $-i$ wherever $\tilde\Xi_{R}$ does. The right side of the first line is $\nu_m\tilde\Xi_{L}$, of value $+i$, and the central coefficient does not move a value. Two definite-value elements of opposite value are equal only if both vanish, so the first line forces both sides to zero and then forces both components to vanish. The same argument applies to the second line, and it holds at each point of the field's domain, with no plane-wave assumption.
 
 **Why the proof is short.** The only fact used is that multiplication on the left cannot change a value. A reader who takes the pair's letters to be definite values has already assumed that the operator acting on a component acts on the left, and the argument then applies to every field and every point, with no further hypothesis. The corpus's letters are not definite values, and that is the whole difference: the two components are related by a central coefficient, not by a sign of a right multiplier.
 
@@ -108,43 +108,43 @@ The third object cannot be the second, and the reason is one associativity step.
 
 ### The Polarization and the Split
 
-For a plane wave $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\vec k_\Phi\cdot\vec r-k'_tr'_t$ and $\tilde K_{\Phi}=ik'_te_t+\vec k_\Phi$, the gradient acts as left multiplication by $i\tilde K_{\Phi}$ and its conjugate as left multiplication by $i\tilde K_{\Phi}^{\natural}$. The pair becomes
+For a plane wave $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=2\pi\vec\nu_\Phi\cdot\vec r-k'_tr'_t$ and $\tilde\Upsilon_{\Phi}=ik'_te_t+2\pi\vec\nu_\Phi$, the gradient acts as left multiplication by $2\pi i\tilde\Upsilon_{\Phi}$ and its conjugate as left multiplication by $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$. The pair becomes
 
-Here $\theta_{\mathrm{pwp}}$ is the plane-wave angle: it is $\vec k_\Phi\cdot\vec r-\omega r'_t/c$ with a real wave vector and a real frequency, so it is real.
+Here $\theta_{\mathrm{pwp}}$ is the plane-wave angle: it is $\vec\nu_\Phi\cdot\vec r-\omega r'_t/c$ with a real wave vector and a real frequency, so it is real.
 
 $$
-i\tilde K_{\Phi}\tilde\Xi_{0,R}=k_m\tilde\Xi_{0,L},
+2\pi i\tilde\Upsilon_{\Phi}\tilde\Xi_{0,R}=2\pi\nu_m\tilde\Xi_{0,L},
 \qquad
-i\tilde K_{\Phi}^{\natural}\tilde\Xi_{0,L}=k_m\tilde\Xi_{0,R}.
+2\pi i\tilde\Upsilon_{\Phi}^{\natural}\tilde\Xi_{0,L}=2\pi\nu_m\tilde\Xi_{0,R}.
 $$
 
-Eliminating one component gives $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}\tilde\Xi_{0,R}=-k_m^{2}\tilde\Xi_{0,R}$, so the mass shell is $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$. Write
+Eliminating one component gives $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}\tilde\Xi_{0,R}=-\nu_m^{2}\tilde\Xi_{0,R}$, so the mass shell is $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$. Write
 
 $$
-A=e_t+\frac{i}{k_m}\tilde K_{\Phi},
+A=e_t+\frac{i}{2\pi\nu_m}\tilde\Upsilon_{\Phi},
 \qquad\text{so that}\qquad
 \tilde\Xi_{0}=A\,\tilde\Xi_{0,R}.
 $$
 
-*Proposition.* Let the mass shell hold, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, and let $N(A)\neq0$. Then the solutions of the momentum-space system are exactly the pairs
+*Proposition.* Let the mass shell hold, $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$, and let $N(A)\neq0$. Then the solutions of the momentum-space system are exactly the pairs
 
 $$
 \tilde\Xi_{0,R}=\tilde X,
 \qquad
-\tilde\Xi_{0,L}=\frac{i}{k_m}\tilde K_{\Phi}\tilde X,
+\tilde\Xi_{0,L}=\frac{i}{2\pi\nu_m}\tilde\Upsilon_{\Phi}\tilde X,
 \qquad
 \tilde X\in\mathbb{B},
 $$
 
 with $\tilde\Xi_{0}=A\tilde X$, and the map $\tilde X\mapsto\tilde\Xi_{0}$ is a bijection.
 
-*Proof.* Since $A-e_t=(i/k_m)\tilde K_{\Phi}$, the first line reads $i\tilde K_{\Phi}\tilde X=k_m(A-e_t)\tilde X=k_m\bigl(\tilde\Xi_{0}-\tilde X\bigr)=k_m\tilde\Xi_{0,L}$. For the second, $\tilde\Xi_{0,L}=(A-e_t)\tilde X=(i/k_m)\tilde K_{\Phi}\tilde X$, so
+*Proof.* Since $A-e_t=(i/\nu_m)\tilde\Upsilon_{\Phi}$, the first line reads $2\pi i\tilde\Upsilon_{\Phi}\tilde X=2\pi\nu_m(A-e_t)\tilde X=2\pi\nu_m\bigl(\tilde\Xi_{0}-\tilde X\bigr)=2\pi\nu_m\tilde\Xi_{0,L}$. For the second, $\tilde\Xi_{0,L}=(A-e_t)\tilde X=(i/\nu_m)\tilde\Upsilon_{\Phi}\tilde X$, so
 
 $$
-i\tilde K_{\Phi}^{\natural}\tilde\Xi_{0,L}=i\frac{i}{k_m}\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}\tilde X=-\frac{1}{k_m}\bigl(-k_m^{2}\bigr)\tilde X=k_m\tilde X ,
+2\pi i\tilde\Upsilon_{\Phi}^{\natural}\tilde\Xi_{0,L}=i\frac{i}{2\pi\nu_m}\tilde\Upsilon_{\Phi}^{\natural}\tilde\Upsilon_{\Phi}\tilde X=-\frac{1}{2\pi\nu_m}\bigl(-4\pi^{2}\nu_m^{2}\bigr)\tilde X=2\pi\nu_m\tilde X ,
 $$
 
-using the mass shell in the form $\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=-k_m^{2}$. Conversely the first line gives $\tilde\Xi_{0,L}=(i/k_m)\tilde K_{\Phi}\tilde\Xi_{0,R}$ for every solution, so every solution is of the stated form. The parametrisation is by $\tilde X$ alone, and $\tilde\Xi_{0}=A\tilde X$ is a bijection of $\mathbb{B}$ because $A$ is invertible.
+using the mass shell in the form $\tilde\Upsilon_{\Phi}^{\natural}\tilde\Upsilon_{\Phi}=-\nu_m^{2}$. Conversely the first line gives $\tilde\Xi_{0,L}=(i/\nu_m)\tilde\Upsilon_{\Phi}\tilde\Xi_{0,R}$ for every solution, so every solution is of the stated form. The parametrisation is by $\tilde X$ alone, and $\tilde\Xi_{0}=A\tilde X$ is a bijection of $\mathbb{B}$ because $A$ is invertible.
 
 **What the proposition says.** Every element of the algebra is the polarization of exactly one massive plane-wave solution. The pair constrains the split completely and the field not at all. The natural guess is the opposite one, that a degenerate polarization is a special solution, and it is wrong for the massive plane wave: the eight real components of $\tilde\Xi_{0}$ are free, and the equation spends its two lines on the two components instead.
 
@@ -152,9 +152,9 @@ using the mass shell in the form $\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=-k_m
 
 The factor $A$ decides how degeneracy is transported from a component to the field.
 
-*Proposition.* With $\gamma=k'_t/k_m$, the norm of the factor is $N(A)=2(1-\gamma)$.
+*Proposition.* With $\gamma=k'_t/\nu_m$, the norm of the factor is $N(A)=2(1-\gamma)$.
 
-*Proof.* On the mass shell $\lvert\vec k_\Phi\rvert^{2}=k_t^{\prime\,2}-k_m^{2}$. Write $\tilde K_{\Phi}=ik'_te_t+\vec k_\Phi$, so $(i/k_m)\tilde K_{\Phi}=-(k'_t/k_m)e_t+i\vec k_\Phi/k_m$ and $A=(1-\gamma)e_t+i\vec k_\Phi/k_m$. The norm is the sum of the squares of the four complex coefficients, so $N(A)=(1-\gamma)^{2}-\lvert\vec k_\Phi\rvert^{2}/k_m^{2}$, and substituting $\lvert\vec k_\Phi\rvert^{2}=k_m^{2}(\gamma^{2}-1)$ gives $N(A)=1-2\gamma+\gamma^{2}-\gamma^{2}+1=2(1-\gamma)$.
+*Proof.* On the mass shell $\lvert\vec\nu_\Phi\rvert^{2}=\nu_t^{\prime\,2}-\nu_m^{2}$. Write $\tilde\Upsilon_{\Phi}=ik'_te_t+2\pi\vec\nu_\Phi$, so $(i/\nu_m)\tilde\Upsilon_{\Phi}=-(k'_t/\nu_m)e_t+i\vec\nu_\Phi/\nu_m$ and $A=(1-\gamma)e_t+2\pi i\vec\nu_\Phi/\nu_m$. The norm is the sum of the squares of the four complex coefficients, so $N(A)=(1-\gamma)^{2}-\lvert2\pi\vec\nu_\Phi\rvert^{2}/\nu_m^{2}$, and substituting $\lvert\vec\nu_\Phi\rvert^{2}=\nu_m^{2}(\gamma^{2}-1)$ gives $N(A)=1-2\gamma+\gamma^{2}-\gamma^{2}+1=2(1-\gamma)$.
 
 **The corollary.** Multiplicativity gives
 
@@ -164,19 +164,19 @@ $$
 
 so a massive plane wave is degenerate exactly when its right component is degenerate, and, since $\gamma\neq1$, exactly when its polarization is a zero divisor. The equation does not select the degenerate solutions and does not forbid them; it transports the cone.
 
-**The count.** The polarization is eight real parameters and the cone is six, so the degenerate polarizations are of real codimension two inside the free field. The momentum contributes three parameters on the mass shell, one for $\lvert\vec k_\Phi\rvert$ and two for its direction, so the degenerate massive plane waves form a family of nine real parameters against the eleven of the general plane wave. Degeneracy is not rare and it is not generic; it is the cone, carried along by the momentum.
+**The count.** The polarization is eight real parameters and the cone is six, so the degenerate polarizations are of real codimension two inside the free field. The momentum contributes three parameters on the mass shell, one for $\lvert\vec\nu_\Phi\rvert$ and two for its direction, so the degenerate massive plane waves form a family of nine real parameters against the eleven of the general plane wave. Degeneracy is not rare and it is not generic; it is the cone, carried along by the momentum.
 
 ### The Rest Frame
 
-At $\vec k_\Phi=0$ the two branches of the mass shell are $k'_t=\pm k_m$, and $\gamma=\pm1$. The factor is
+At $\vec\nu_\Phi=0$ the two branches of the mass shell are $k'_t=\pm 2\pi\nu_m$, and $\gamma=\pm1$. The factor is
 
 $$
-A=\bigl(1-\gamma\bigr)e_t=\begin{cases}0, & k'_t=+k_m,\\[2pt] 2e_t, & k'_t=-k_m.\end{cases}
+A=\bigl(1-\gamma\bigr)e_t=\begin{cases}0, & k'_t=+2\pi\nu_m,\\[2pt] 2e_t, & k'_t=-2\pi\nu_m.\end{cases}
 $$
 
-On the branch $k'_t=+k_m$ the factor vanishes, so $\tilde\Xi_{0}=A\tilde\Xi_{0,R}=0$: the single-frequency plane wave has no polarization, although its two components are separately non-zero and opposite, $\tilde\Xi_{0,L}=-\tilde\Xi_{0,R}$. On the other branch the factor is $2e_t$, an invertible element, and the field survives.
+On the branch $k'_t=+2\pi\nu_m$ the factor vanishes, so $\tilde\Xi_{0}=A\tilde\Xi_{0,R}=0$: the single-frequency plane wave has no polarization, although its two components are separately non-zero and opposite, $\tilde\Xi_{0,L}=-\tilde\Xi_{0,R}$. On the other branch the factor is $2e_t$, an invertible element, and the field survives.
 
-This asymmetry belongs to the sign convention of the pair and not to the physics: the polarization is the sum of the two components, and at $+k_m$ the two components cancel in that sum. The hypothesis $N(A)\neq0$ of the proposition fails exactly here, and the rest frame is the one momentum at which the map $\tilde X\mapsto\tilde\Xi_{0}$ is not a bijection. The consequence is worth stating once, because it is easy to misread a table of rest-frame solutions: a rest-frame field of this corpus is a superposition of the two branches, one of each sign of the frequency, and no single-frequency rest field of the positive branch exists.
+This asymmetry belongs to the sign convention of the pair and not to the physics: the polarization is the sum of the two components, and at $+\nu_m$ the two components cancel in that sum. The hypothesis $N(A)\neq0$ of the proposition fails exactly here, and the rest frame is the one momentum at which the map $\tilde X\mapsto\tilde\Xi_{0}$ is not a bijection. The consequence is worth stating once, because it is easy to misread a table of rest-frame solutions: a rest-frame field of this corpus is a superposition of the two branches, one of each sign of the frequency, and no single-frequency rest field of the positive branch exists.
 
 ## The Sector $\Sigma_{01}$: a Scaled Projection
 
@@ -208,7 +208,7 @@ So a member is a scalar part together with a vector part whose Euclidean square 
 
 ### The Split of a Degenerate Field in This Sector
 
-Take the momentum of §*Massive Plane Waves* with $k_m=1$ and $\vec k_\Phi=\sqrt3\,\vec e_z$, so that $k'_t=2$, $\gamma=2$ and $N(A)=-2$. The inverse factor is
+Take the momentum of §*Massive Plane Waves* with $2\pi\nu_m=1$ and $2\pi\vec\nu_\Phi=\sqrt3\,\vec e_z$, so that $k'_t=2$, $\gamma=2$ and $N(A)=-2$. The inverse factor is
 
 $$
 A^{-1}=\tfrac12\bigl(e_t+i\sqrt3\,\vec e_z\bigr),
@@ -222,7 +222,7 @@ $$
 \tilde\Xi_{0,L}=\frac{1-\sqrt3}{4}\bigl(e_t+i\vec e_z\bigr).
 $$
 
-Both components are real multiples of the same idempotent, both have vanishing norm, and both are in $\Sigma_{01}$ with the weights $\lambda_R=(1+\sqrt3)/2$ and $\lambda_L=(1-\sqrt3)/2$. The two lines of the pair hold: the first gives $i\tilde K_{\Phi}\tilde\Xi_{0,R}-k_m\tilde\Xi_{0,L}=0$ and the second gives $i\tilde K_{\Phi}^{\natural}\tilde\Xi_{0,L}-k_m\tilde\Xi_{0,R}=0$, both to machine precision. The field has $N=0$, $\tilde\Xi^{2}=\tilde\Xi$ and $Q_t=\tfrac12$, so it is in $\Sigma_{01}$ with $\lambda=1=2Q_t$.
+Both components are real multiples of the same idempotent, both have vanishing norm, and both are in $\Sigma_{01}$ with the weights $\lambda_R=(1+\sqrt3)/2$ and $\lambda_L=(1-\sqrt3)/2$. The two lines of the pair hold: the first gives $2\pi i\tilde\Upsilon_{\Phi}\tilde\Xi_{0,R}-2\pi\nu_m\tilde\Xi_{0,L}=0$ and the second gives $2\pi i\tilde\Upsilon_{\Phi}^{\natural}\tilde\Xi_{0,L}-2\pi\nu_m\tilde\Xi_{0,R}=0$, both to machine precision. The field has $N=0$, $\tilde\Xi^{2}=\tilde\Xi$ and $Q_t=\tfrac12$, so it is in $\Sigma_{01}$ with $\lambda=1=2Q_t$.
 
 **The parts do not leave the ideal.** The factor $A^{-1}$ multiplies on the left, so both components lie in the left ideal $\mathbb{B}\tilde\Xi_{0}$ generated by the field, which for a $\Sigma_{01}$ element is a minimal left ideal of complex dimension two. The split of a degenerate field mixes no directions that the field did not already carry.
 
@@ -316,25 +316,25 @@ The sector has a plane and no weight. Its one complex invariant is the direction
 
 ### The One-Sided Fields
 
-At $k_m=0$ the pair decouples, and a plane wave reduces each line to a kernel condition,
+At $\nu_m=0$ the pair decouples, and a plane wave reduces each line to a kernel condition,
 
 $$
-\tilde K_{\Phi}\tilde\Xi_{0,R}=0,
+\tilde\Upsilon_{\Phi}\tilde\Xi_{0,R}=0,
 \qquad
-\tilde K_{\Phi}^{\natural}\tilde\Xi_{0,L}=0 .
+\tilde\Upsilon_{\Phi}^{\natural}\tilde\Xi_{0,L}=0 .
 $$
 
-A non-zero solution requires $\tilde K_{\Phi}$ to be a zero divisor, that is a null element, which is the massless dispersion relation $k_t^{\prime\,2}=\vec k_\Phi^{2}$. When it holds, each kernel is of complex dimension two.
+A non-zero solution requires $\tilde\Upsilon_{\Phi}$ to be a zero divisor, that is a null element, which is the massless dispersion relation $\nu_t^{\prime\,2}=\vec\nu_\Phi^{2}$. When it holds, each kernel is of complex dimension two.
 
 *Proposition.* Every non-zero solution of either one-sided equation is degenerate.
 
-*Proof.* A non-zero element annihilated by a non-zero element is a zero divisor, and the zero divisors are the elements of vanishing norm. The multiplier here is $\tilde K_{\Phi}$ or its conjugate, and it is non-zero by the mass-shell condition $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=0$ combined with $\tilde K_{\Phi}\neq0$.
+*Proof.* A non-zero element annihilated by a non-zero element is a zero divisor, and the zero divisors are the elements of vanishing norm. The multiplier here is $\tilde\Upsilon_{\Phi}$ or its conjugate, and it is non-zero by the mass-shell condition $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=0$ combined with $\tilde\Upsilon_{\Phi}\neq0$.
 
 **This is the sharp difference from the massive case.** For $m\neq0$ a degenerate solution is a codimension-two condition on a free polarization. For $m=0$ a one-sided solution is degenerate identically, at every momentum and at every amplitude, and there is no regular one-sided solution at all.
 
 ### The Kernel and Its Two Lines
 
-Take $\tilde K_{\Phi}=ik\,e_t+k\,\vec e_z$, which is null for every $k$. Its left kernel is spanned by
+Take $\tilde\Upsilon_{\Phi}=ik\,e_t+k\,\vec e_z$, which is null for every $k$. Its left kernel is spanned by
 
 $$
 \vec e_t+i\vec e_z\in\Sigma_{01},
@@ -344,11 +344,11 @@ $$
 
 which is one ray of each sector. A general element of the kernel is a combination $a(\vec e_t+i\vec e_z)+b(\vec e_x+i\vec e_y)$, and $Q_t=a$, so the sector is decided by the coefficient of the first line: the kernel is $\Sigma_{01}$ off one complex line and $\Sigma_{00}$ on it. The whole kernel lies on the cone, and the cone's two sectors meet inside it as two of its lines.
 
-The kernel is a right ideal of complex dimension two, since $\tilde K_{\Phi}(\tilde X\tilde A)=(\tilde K_{\Phi}\tilde X)\tilde A$ for every $\tilde A$, and in the matrix model it is a column. A one-sided massless field is therefore a point of a fixed column, and its polarization is a spinor direction and a scale.
+The kernel is a right ideal of complex dimension two, since $\tilde\Upsilon_{\Phi}(\tilde X\tilde A)=(\tilde\Upsilon_{\Phi}\tilde X)\tilde A$ for every $\tilde A$, and in the matrix model it is a column. A one-sided massless field is therefore a point of a fixed column, and its polarization is a spinor direction and a scale.
 
 ### The Two-Sided Massless Field
 
-A massless field of the corpus's pair carries both components, one from each kernel, and the sum is generically an invertible element. Take the component $\vec e_y-i\vec e_x$ from the kernel of $\tilde K_{\Phi}$ and the component $\vec e_y+i\vec e_x$ from the kernel of $\tilde K_{\Phi}^{\natural}$. Both have vanishing norm, and their sum is $2\vec e_y$, of norm $4$. Written as a sum of cross terms, $\tilde X_L\tilde X_R^{\natural}=2(e_t+i\vec e_z)$ and $\tilde X_R\tilde X_L^{\natural}=2(e_t-i\vec e_z)$, and the two add to $4e_t$: with both parts on the cone, the whole norm of the sum is the interference of the two parts.
+A massless field of the corpus's pair carries both components, one from each kernel, and the sum is generically an invertible element. Take the component $\vec e_y-i\vec e_x$ from the kernel of $\tilde\Upsilon_{\Phi}$ and the component $\vec e_y+i\vec e_x$ from the kernel of $\tilde\Upsilon_{\Phi}^{\natural}$. Both have vanishing norm, and their sum is $2\vec e_y$, of norm $4$. Written as a sum of cross terms, $\tilde X_L\tilde X_R^{\natural}=2(e_t+i\vec e_z)$ and $\tilde X_R\tilde X_L^{\natural}=2(e_t-i\vec e_z)$, and the two add to $4e_t$: with both parts on the cone, the whole norm of the sum is the interference of the two parts.
 
 So masslessness does not put the field on the cone. The two parts are degenerate and their sum is not, and the quantity that carries the field's norm is the interference of the two. That is the same cross term the polar companion records as the mass of a sum of two rays seen from the side of the domain.
 
@@ -390,13 +390,13 @@ The two sectors differ at every level, and the table is the whole of the differe
 
 The degenerate solutions of the biquaternionic Dirac equation are the solutions whose field has vanishing quaternionic norm, and they are classified by the cone.
 
-For a massive plane wave the polarization biquaternion is free. Every element of the algebra is the polarization of exactly one solution, the pair fixes only the split into its two components, and the factor $A=e_t+(i/k_m)\tilde K_{\Phi}$ carries the field to its right component with $N(A)=2(1-\gamma)$. The degenerate massive plane waves are therefore exactly the polarizations on the cone, of real codimension two, carried along by a momentum of three parameters.
+For a massive plane wave the polarization biquaternion is free. Every element of the algebra is the polarization of exactly one solution, the pair fixes only the split into its two components, and the factor $A=e_t+(i/\nu_m)\tilde\Upsilon_{\Phi}$ carries the field to its right component with $N(A)=2(1-\gamma)$. The degenerate massive plane waves are therefore exactly the polarizations on the cone, of real codimension two, carried along by a momentum of three parameters.
 
 The cone has two non-zero sectors. $\Sigma_{01}$ is $\tilde\Xi^{2}=\lambda\tilde\Xi$ with $\lambda\neq0$, a rank-one matrix with non-zero trace, in components $Q_x^{2}+Q_y^{2}+Q_z^{2}=-Q_t^{2}$ at $Q_t\neq0$, of six real parameters; its image and kernel under left multiplication are complementary, and it keeps a plane and a weight. $\Sigma_{00}$ is $\tilde\Xi^{2}=0$ with $\tilde\Xi\neq0$, a rank-one matrix with zero trace, in components an isotropic vector part at $Q_t=0$, of four real parameters; its image equals its kernel, and it keeps a plane and no weight.
 
 The polar word fails on both sectors, because its scale is read from the norm and the norm has vanished. What survives is the trace: the amplitude and the phase of a degenerate field are the modulus and the argument of $\lambda=2Q_t$, a linear object where the word's reading was quadratic.
 
-At $k_m=0$ the two lines decouple and every non-zero one-sided solution is degenerate, at every momentum and every amplitude. The kernel of a null left multiplier is a right ideal of complex dimension two, and inside it the two sectors appear as two lines, one of each. The sum of one component from each kernel is generically an invertible element, so a massless field with both components is generically regular, and the norm of the sum is the interference of the two parts.
+At $\nu_m=0$ the two lines decouple and every non-zero one-sided solution is degenerate, at every momentum and every amplitude. The kernel of a null left multiplier is a right ideal of complex dimension two, and inside it the two sectors appear as two lines, one of each. The sum of one component from each kernel is generically an invertible element, so a massless field with both components is generically regular, and the norm of the sum is the interference of the two parts.
 
 The letters $L$ and $R$ are the pair's two components and are fixed by the equation. They are not a definite-value split: a definite-value pair inserted into the chiral pair forces both components to vanish, for any declared traceless unit and either assignment of signs. That incompatibility is why the two-sided form of the equation, whose mass term conjugates and so reverses the value, is the form in which a definite-value split does work.
 
@@ -407,9 +407,9 @@ The letters $L$ and $R$ are the pair's two components and are fixed by the equat
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ | The Dirac field and the pair's two components |
 | $\tilde\Xi_{0}$ | The polarization biquaternion of a plane wave |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number; the reciprocal reduced Compton length |
-| $\tilde K_{\Phi}=ik'_te_t+\vec k_\Phi$ | Wave biquaternion; $k'_t=\omega/c$ |
-| $\gamma=k'_t/k_m$ | Lorentz factor of the plane wave, on shell |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number; the reciprocal reduced Compton length |
+| $\tilde\Upsilon_{\Phi}=ik'_te_t+2\pi\vec\nu_\Phi$ | Wave biquaternion; $k'_t=\omega/c$ |
+| $\gamma=k'_t/\nu_m$ | Lorentz factor of the plane wave, on shell |
 | $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}$ | Quaternionic norm; the determinant of the matrix model; its zero set is the cone |
 | $\langle\tilde Q\rangle_{*}=\lvert Q_t\rvert^{2}+\lvert\vec Q\rvert^{2}$ | Definite Hermitian norm; measures the size, never zero off the apex |
 | $Q_t$, $\vec Q$ | Scalar part and vector part of an element |
@@ -418,7 +418,7 @@ The letters $L$ and $R$ are the pair's two components and are fixed by the equat
 | $\Sigma_{01}$, $\Sigma_{00}$ | The two non-zero sectors of the cone |
 | $\lambda=2Q_t$ | The non-zero eigenvalue of a $\Sigma_{01}$ element; the companion's $c$ |
 | $\tilde\Pi_{\mathrm{id}}=\tilde\Xi/\lambda$ | The idempotent of a $\Sigma_{01}$ element |
-| $A=e_t+(i/k_m)\tilde K_{\Phi}$ | The momentum factor; $\tilde\Xi_{0}=A\tilde\Xi_{0,R}$ |
+| $A=e_t+(i/\nu_m)\tilde\Upsilon_{\Phi}$ | The momentum factor; $\tilde\Xi_{0}=A\tilde\Xi_{0,R}$ |
 | $u$, $R_u$ | A declared scalar-free unit with $u^{2}=-e_t$, and its right multiplier |
 
 ## Further Reading

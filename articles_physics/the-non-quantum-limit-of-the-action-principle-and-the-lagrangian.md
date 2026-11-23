@@ -685,7 +685,7 @@ $$
 H(\tilde q,\tilde p)=\frac{1}{2\,m}\sum_{\imath}  p_{\imath} p_{\imath}=\frac{\langle\tilde p\rangle_{\natural} c}{2\,m\,c},
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 the two forms agreeing because the biquaternion-norm metric is Euclidean in the basis $e_{\imath}$, so that the inverse metric is the metric itself. Hamilton's equations for it are $d\tilde q/dt'=\partial H/\partial\tilde p=\tilde p/m$ and $d\tilde p/dt'=0$, whose solutions are the straight lines found above: the geodesic flow of the biquaternion norm **is** a Hamiltonian flow, its Hamiltonian is the Legendre transform of the free action, and $H=\langle\tilde p\rangle_{\natural}/2m$ is conserved along it. This is the flat case of the general statement that a geodesic flow is the Hamiltonian flow of the quadratic form built from the inverse metric. It is the abelian counterpart of the correspondence the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes on the coadjoint orbit: the free particle is the case in which the carrier is abelian and the metric flat.
 

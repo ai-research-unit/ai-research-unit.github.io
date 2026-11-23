@@ -266,7 +266,7 @@ $$
 and the second term is a pure vector, so the centre is not invariant under that operator whenever the field strength does not vanish. The component form
 
 $$
-\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\tilde\Xi=k_m^{2}\tilde\Xi
+\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi
 $$
 
 does preserve the centre, because each derivative is central. The two writings, which agree identically when no connection is present, are separated by the coupling, and the carrier keeps the component form.

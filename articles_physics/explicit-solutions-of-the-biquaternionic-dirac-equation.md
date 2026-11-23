@@ -7,12 +7,12 @@
 **What is used.** The boxed pair of that article,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\,\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\,\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\,\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\,\tilde{Ξ}_{R},
 $$
 
-with $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ one element of $\mathbb{B}$ and $k_m$ the mass wave number. The gradient, its conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ are those of *Operator and Calculus Conventions*, and the coordinates, the frame and the four-position are those of *Frame and Metric Conventions*. Nothing of the three is repeated.
+with $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ one element of $\mathbb{B}$ and $\nu_m$ the mass wave number. The gradient, its conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ are those of *Operator and Calculus Conventions*, and the coordinates, the frame and the four-position are those of *Frame and Metric Conventions*. Nothing of the three is repeated.
 
 **The frame, and what it costs.** One frame is declared for the article, because the value of a part is read by the frame's third direction. The plane waves use it, the spherical and cylindrical families use it, and no second choice is made anywhere. The cost is visible in one place and nowhere else: a solution of definite value is a solution in a frame, and the helicity reading of the massless case is the frame-free statement, because there the third direction is the momentum's.
 
@@ -27,55 +27,55 @@ with $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ one element of $\mathbb{B}$ and 
 Plane-wave solutions of the massless member written $R$ are
 
 $$
-\boxed{\;\tilde{Ξ}(\tilde R_\Phi) = \tilde{Ξ}_{0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right)
-= \tilde{Ξ}_{0}\,\exp\!\big(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t)\big)\;},
+\boxed{\;\tilde{Ξ}(\tilde R_\Phi) = \tilde{Ξ}_{0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right)
+= \tilde{Ξ}_{0}\,\exp\!\big(i(2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-2\pi\nu_t^{\prime} r'_t)\big)\;},
 $$
 
-where $\tilde{Ξ}_{0} \in \mathbb{B}$ is a constant biquaternion, $\tilde{K}_{\Phi}=\frac{2\pi \tilde{P}_{\Phi}}{h}= i k_{t}^{\prime} e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_{t}^{\prime} = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_{\Phi}^{\natural})$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{0}$ and differentiates to left multiplication by $i\tilde{K}_{\Phi}$,
+where $\tilde{Ξ}_{0} \in \mathbb{B}$ is a constant biquaternion, $\tilde\Upsilon_{\Phi}=\frac{\tilde{P}_{\Phi}}{h}= 2\pi i\nu_t^{\prime} e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $2\pi\nu_t^{\prime} = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \nu_t^{\prime} r'_t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_{\Phi}^{\natural})$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{0}$ and differentiates to left multiplication by $2\pi i\tilde\Upsilon_{\Phi}$,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ} = i\tilde{K}_{\Phi}\,\tilde{Ξ},
+\tilde\nabla_\Phi\tilde{Ξ} = 2\pi i\tilde\Upsilon_{\Phi}\,\tilde{Ξ},
 $$
 
 so the equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ becomes
 
 $$
-\tilde{K}_{\Phi}\tilde{Ξ}_{0} = 0,
+\tilde\Upsilon_{\Phi}\tilde{Ξ}_{0} = 0,
 $$
 
-i.e., the polarization biquaternion $\tilde{Ξ}_{0}$ is annihilated by the wave biquaternion $\tilde{K}_{\Phi}$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, and the basis operator acts on it with the two eigenvalues $+1$ and $-1$, one state each. Those two states are the two helicities in the frame whose third direction is the momentum's, one of each value, so the full massless field is the pair of this equation and its conjugate.
+i.e., the polarization biquaternion $\tilde{Ξ}_{0}$ is annihilated by the wave biquaternion $\tilde\Upsilon_{\Phi}$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, and the basis operator acts on it with the two eigenvalues $+1$ and $-1$, one state each. Those two states are the two helicities in the frame whose third direction is the momentum's, one of each value, so the full massless field is the pair of this equation and its conjugate.
 
-Nonzero solutions of $\tilde{K}_{\Phi}\tilde{Ξ}_{0} = 0$ exist only when $\tilde{K}_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{K}_{\Phi}$ is null: $\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}= \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}/\frac{h^{2}}{4\pi^{2}}= 0$, equivalently $k_{t}^{\prime\,2} = k_\Phi^{2}$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, one state of each value; for non-null $\tilde{K}_{\Phi}$ the kernel is trivial.
+Nonzero solutions of $\tilde\Upsilon_{\Phi}\tilde{Ξ}_{0} = 0$ exist only when $\tilde\Upsilon_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde\Upsilon_{\Phi}$ is null: $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}= \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}/\frac{h^{2}}{4\pi^{2}}= 0$, equivalently $\nu_t^{\prime\,2} = \nu_{\Phi}^{2}$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, one state of each value; for non-null $\tilde\Upsilon_{\Phi}$ the kernel is trivial.
 
 ### Massive Plane Waves
 
 For the massive equation a single central-phase plane wave,
 
 $$
-\tilde{Ξ}(\tilde R_\Phi) = \tilde{Ξ}_{0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right) = \tilde{Ξ}_{0}\,\exp(i\theta_{\mathrm{pwp}}), \qquad \theta_{\mathrm{pwp}} = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t,
+\tilde{Ξ}(\tilde R_\Phi) = \tilde{Ξ}_{0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right) = \tilde{Ξ}_{0}\,\exp(i\theta_{\mathrm{pwp}}), \qquad \theta_{\mathrm{pwp}} = 2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - 2\pi\nu_t^{\prime} r'_t,
 $$
 
-Here $\theta_{\mathrm{pwp}}$ is the plane-wave angle: it is $\vec k_\Phi\cdot\vec r-\omega r'_t/c$ with a real wave vector and a real frequency, so it is real.
+Here $\theta_{\mathrm{pwp}}$ is the plane-wave angle: it is $\vec\nu_\Phi\cdot\vec r-\omega r'_t/c$ with a real wave vector and a real frequency, so it is real.
 
-does solve the pair, with one polarization biquaternion for each part, $\tilde{Ξ}_{0} = \tilde{Ξ}_{0}^L + \tilde{Ξ}_{0}^R$. Differentiating as in the massless case, $\tilde\nabla_\Phi$ acts on $\exp(i\theta_{\mathrm{pwp}})$ as left multiplication by $i\tilde{K}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}$ as left multiplication by $i\tilde{K}_{\Phi}^{\natural}$, so the chiral pair becomes the momentum-space system
+does solve the pair, with one polarization biquaternion for each part, $\tilde{Ξ}_{0} = \tilde{Ξ}_{0}^L + \tilde{Ξ}_{0}^R$. Differentiating as in the massless case, $\tilde\nabla_\Phi$ acts on $\exp(i\theta_{\mathrm{pwp}})$ as left multiplication by $2\pi i\tilde\Upsilon_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}$ as left multiplication by $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$, so the chiral pair becomes the momentum-space system
 
 $$
-i\tilde{K}_{\Phi}\,\tilde{Ξ}_{0}^{R}= k_m\,\tilde{Ξ}_{0}^L,
+2\pi i\tilde\Upsilon_{\Phi}\,\tilde{Ξ}_{0}^{R}= 2\pi\nu_m\,\tilde{Ξ}_{0}^L,
 \qquad
-i\tilde{K}_{\Phi}^{\natural}\,\tilde{Ξ}_{0}^{L}= k_m\,\tilde{Ξ}_{0}^R .
+2\pi i\tilde\Upsilon_{\Phi}^{\natural}\,\tilde{Ξ}_{0}^{L}= 2\pi\nu_m\,\tilde{Ξ}_{0}^R .
 $$
 
 Eliminating $\tilde{Ξ}_{0}^L$ gives
 
-$$\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}\,\tilde{Ξ}_{0}^R = -k_m^{2}\,\tilde{Ξ}_{0}^R ,
+$$\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}\,\tilde{Ξ}_{0}^R = -\nu_m^{2}\,\tilde{Ξ}_{0}^R ,
 $$
 
 so a nonzero solution requires the **mass-shell condition**
 
-$$\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}=-k_m^{2},
+$$\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2},
 $$
 
-i.e., $-k_{t}^{\prime\,2} + \|\vec k_\Phi\|^2 = -k_m^{2}$, which is the standard mass-shell relation $k_{t}^{\prime\,2} = \|\vec k_\Phi\|^2 + k_m^{2}$ (with $k_{t}^{\prime}=\omega/c$ and $E=\frac{h}{2\pi} c\,k_{t}^{\prime}$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 +m^{2}\,c^{4}$ (with $\vec p =\frac{h}{2\pi}\,\vec k_\Phi$), the same shell as the four-momentum kinematics of *The Dirac Equation in Biquaternionic Form*. The two signs of $k_{t}^{\prime}$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four solutions that the field carries.
+i.e., $-\nu_t^{\prime\,2} + \|\vec\nu_\Phi\|^2 = -\nu_m^{2}$, which is the standard mass-shell relation $\nu_t^{\prime\,2} = \|\vec\nu_\Phi\|^2 + \nu_m^{2}$ (with $2\pi\nu_t^{\prime}=\omega/c$ and $E=\frac{h}{2\pi} c\,2\pi\nu_t^{\prime}$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 +m^{2}\,c^{4}$ (with $\vec p =h\,2\pi\vec\nu_\Phi$), the same shell as the four-momentum kinematics of *The Dirac Equation in Biquaternionic Form*. The two signs of $\nu_t^{\prime}$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four solutions that the field carries.
 
 ## The Field as the Gradient of a Scalar Potential
 
@@ -93,23 +93,23 @@ and the field is the shifted conjugate gradient of a potential: one element of $
 
 **Why the elementary field is null.** For the elementary case the potential is a plane wave, $\xi_{\mathrm{scl}}=\exp(-i\theta_{\mathrm{pwp}})$, and the field is read off by differentiating it. In the coordinate $Q_t=i q'_t$ the time derivative is $\partial\xi_{\mathrm{scl}}/\partial R_t=-\omega\xi_{\mathrm{scl}}$ and the three spatial ones are $\partial_k\xi_{\mathrm{scl}}=ik_k\xi_{\mathrm{scl}}$, so
 $$
-\bigl((\tilde\nabla_\Phi)^{\natural}+\kappa\bigr)\,\xi_{\mathrm{scl}} = \bigl((\kappa-\omega)\,e_t - i k_x\vec e_x - i k_y\vec e_y - i k_z\vec e_z\bigr)\xi_{\mathrm{scl}} ,
+\bigl((\tilde\nabla_\Phi)^{\natural}+\kappa\bigr)\,\xi_{\mathrm{scl}} = \bigl((\kappa-\omega)\,e_t - 2\pi i\nu_{x}\vec e_x - 2\pi i\nu_{y}\vec e_y - 2\pi i\nu_{z}\vec e_z\bigr)\xi_{\mathrm{scl}} ,
 $$
 and its quaternion norm is the shifted symbol of the operator,
 $$
-\left\langle\bigl((\tilde\nabla_\Phi)^{\natural}+\kappa\bigr)\,\xi_{\mathrm{scl}}\right\rangle_{\natural} = (\omega-\kappa)^2 - \|\vec k_\Phi\|^2 .
+\left\langle\bigl((\tilde\nabla_\Phi)^{\natural}+\kappa\bigr)\,\xi_{\mathrm{scl}}\right\rangle_{\natural} = (\omega-\kappa)^2 - \|2\pi\vec\nu_\Phi\|^2 .
 $$
-The two lines are one statement in two languages: the norm of the field vanishes exactly when the potential solves the shifted scalar equation, so the field is a zero divisor on the shifted cone, as the massless plane-wave fields of the preceding subsection are on the light cone. The zero-divisor cone of the algebra is the light cone, and the shifted cone is the norm-zero set of the shifted operator. The source normalises its representatives and records separate norm and pseudonorm values for them; the corpus keeps the invariant statement, that the element is null, and the dictionary between the source's mass $m$ and the corpus shift $\kappa$ — $\kappa = -i\,k_m$, so that the source's imaginary mass is a real shift — is the one recorded in the d'Alembertian companion.
+The two lines are one statement in two languages: the norm of the field vanishes exactly when the potential solves the shifted scalar equation, so the field is a zero divisor on the shifted cone, as the massless plane-wave fields of the preceding subsection are on the light cone. The zero-divisor cone of the algebra is the light cone, and the shifted cone is the norm-zero set of the shifted operator. The source normalises its representatives and records separate norm and pseudonorm values for them; the corpus keeps the invariant statement, that the element is null, and the dictionary between the source's mass $m$ and the corpus shift $\kappa$ — $\kappa = -i\,2\pi\nu_m$, so that the source's imaginary mass is a real shift — is the one recorded in the d'Alembertian companion.
 
 **The completion is exhaustive, and the mass takes the place of the shift.** The construction above is not only a way to manufacture examples. In the massive chiral pair the second half is the completion of the first,
 
 $$
-\tilde{Ξ}_{L}=1/k_m\tilde\nabla_\Phi\tilde{Ξ}_{R} ,
+\tilde{Ξ}_{L}=1/\nu_m\tilde\nabla_\Phi\tilde{Ξ}_{R} ,
 \qquad
-\tilde{Ξ}_{R}=1/k_m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} ,
+\tilde{Ξ}_{R}=1/\nu_m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} ,
 $$
 
-so a free Dirac field carries nothing that one part does not already carry, and the consistency of the pair is the Klein–Gordon equation $\Box_\Phi\tilde{Ξ}_{R}=\tilde{Ξ}_{R}\,k_m^{2}$ of *Klein–Gordon from the Dirac Square in Biquaternionic Form*. The source states the same identity in its own variables, the second half computed from the first by differentiation. One structural difference separates this from the shifted completion above: the shift contributes the first-order-in-time term $-2i\kappa\,e_t\,\partial/\partial r'_t$ and so moves the cone, whereas the mass contributes a constant and leaves the cone where it is. The mass is not a central shift of the operator — it is the off-diagonal pairing of *The Massive Case* — and what the two share is only the shape of the implication, one half of the field being a gradient of the other.
+so a free Dirac field carries nothing that one part does not already carry, and the consistency of the pair is the Klein–Gordon equation $\Box_\Phi\tilde{Ξ}_{R}=\tilde{Ξ}_{R}\,4\pi^{2}\nu_m^{2}$ of *Klein–Gordon from the Dirac Square in Biquaternionic Form*. The source states the same identity in its own variables, the second half computed from the first by differentiation. One structural difference separates this from the shifted completion above: the shift contributes the first-order-in-time term $-2i\kappa\,e_t\,\partial/\partial r'_t$ and so moves the cone, whereas the mass contributes a constant and leaves the cone where it is. The mass is not a central shift of the operator — it is the off-diagonal pairing of *The Massive Case* — and what the two share is only the shape of the implication, one half of the field being a gradient of the other.
 
 **The potential is defined only up to a constrained shift.** The map $u\mapsto\bigl((\tilde\nabla_\Phi)^{\natural}+\kappa\bigr) u$ is not injective. Any $u'$ with $\bigl((\tilde\nabla_\Phi)^{\natural}+\kappa\bigr) u'=0$ leaves the field unchanged, and such $u'$ are supplied by the scalars: every $\zeta$ solving the shifted scalar equation gives one, $u'=\bigl(\tilde\nabla_\Phi+\kappa\bigr)\zeta$, because $\bigl((\tilde\nabla_\Phi)^{\natural}+\kappa\bigr)\bigl(\tilde\nabla_\Phi+\kappa\bigr)=\Box_\Phi-2i\kappa\,e_t\,\partial/\partial r'_t+\kappa^2$. The potential is therefore fixed only up to
 
@@ -119,7 +119,7 @@ u\longmapsto u+\bigl(\tilde\nabla_\Phi+\kappa\bigr)\zeta ,
 \bigl(\Box_\Phi-2i\kappa\,e_t\,\partial/\partial r'_t+\kappa^2\bigr)\zeta=0 ,
 $$
 
-which was checked on both branches of the shifted cone. The gauge function is **constrained** by the scalar equation, and that is what separates this freedom from a local phase: no arbitrary function, no connection, no curvature, no gauge boson. What the freedom states is structural, and it is the electromagnetic analogy taken at its word: the field is the invariant object and the scalar is its potential, as the field strength is the invariant object of the Maxwell potential, so that the free Dirac field stands to its Klein–Gordon potential as a strength stands to a potential. The source states the same for the free massive field, whose Dirac field is invariant under a shift of its Klein–Gordon potentials by a solution of the conjugate Dirac equation; under the dictionary $\kappa=-i\,k_m$, that is $k_m=i\kappa$, that operator is $i\bigl((\tilde\nabla_\Phi)^{\natural}+\kappa\bigr)$, the shifted conjugate gradient up to the unit $i$, so the corpus records the structure once. The source adds that its alternative, potential-based transformation of the Dirac field is nonlinear on the field and free of two-valuedness under a full rotation. The boundary is worth keeping explicit: that alternative is a solution-generating map, and the linear representation on the algebra, whose two-valuedness *The Spin–Statistics Theorem in Biquaternionic Form* uses, is untouched by it.
+which was checked on both branches of the shifted cone. The gauge function is **constrained** by the scalar equation, and that is what separates this freedom from a local phase: no arbitrary function, no connection, no curvature, no gauge boson. What the freedom states is structural, and it is the electromagnetic analogy taken at its word: the field is the invariant object and the scalar is its potential, as the field strength is the invariant object of the Maxwell potential, so that the free Dirac field stands to its Klein–Gordon potential as a strength stands to a potential. The source states the same for the free massive field, whose Dirac field is invariant under a shift of its Klein–Gordon potentials by a solution of the conjugate Dirac equation; under the dictionary $\kappa=-i\,2\pi\nu_m$, that is $2\pi\nu_m=i\kappa$, that operator is $i\bigl((\tilde\nabla_\Phi)^{\natural}+\kappa\bigr)$, the shifted conjugate gradient up to the unit $i$, so the corpus records the structure once. The source adds that its alternative, potential-based transformation of the Dirac field is nonlinear on the field and free of two-valuedness under a full rotation. The boundary is worth keeping explicit: that alternative is a solution-generating map, and the linear representation on the algebra, whose two-valuedness *The Spin–Statistics Theorem in Biquaternionic Form* uses, is untouched by it.
 
 
 ## Spherical and Cylindrical Solutions
@@ -152,7 +152,7 @@ Cylindrical solutions are similarly constructed from cylindrical harmonics by th
 
 ## Summary
 
-**Plane waves.** A plane wave $\tilde{Ξ}_{0}\exp(-i\theta_{\mathrm{pwp}})$ turns the gradient into left multiplication by $i\tilde K_\Phi$, so the massless member becomes $\tilde K_\Phi\tilde{Ξ}_{0}=0$. A nonzero polarization exists only for null $\tilde K_\Phi$, that is on the light cone $k_t^{\prime\,2}=k_\Phi^{2}$, and the kernel is then two-dimensional with one state of each value. The massive case becomes the momentum-space pair $i\tilde K_\Phi\tilde{Ξ}_{0}^{R}=k_m\tilde{Ξ}_{0}^{L}$, $i\tilde K_\Phi^{\natural}\tilde{Ξ}_{0}^{L}=k_m\tilde{Ξ}_{0}^{R}$, whose solvability is the mass shell $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$, that is $k_t^{\prime\,2}=\|\vec k_\Phi\|^{2}+k_m^{2}$. The two signs of $k_t^{\prime}$ are the particle and the antiparticle, and with the two spin states they give the four solutions the field carries.
+**Plane waves.** A plane wave $\tilde{Ξ}_{0}\exp(-i\theta_{\mathrm{pwp}})$ turns the gradient into left multiplication by $2\pi i\tilde\Upsilon_\Phi$, so the massless member becomes $\tilde\Upsilon_\Phi\tilde{Ξ}_{0}=0$. A nonzero polarization exists only for null $\tilde\Upsilon_\Phi$, that is on the light cone $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}$, and the kernel is then two-dimensional with one state of each value. The massive case becomes the momentum-space pair $2\pi i\tilde\Upsilon_\Phi\tilde{Ξ}_{0}^{R}=2\pi\nu_m\tilde{Ξ}_{0}^{L}$, $2\pi i\tilde\Upsilon_\Phi^{\natural}\tilde{Ξ}_{0}^{L}=2\pi\nu_m\tilde{Ξ}_{0}^{R}$, whose solvability is the mass shell $\tilde\Upsilon_\Phi\tilde\Upsilon_\Phi^{\natural}=-\nu_m^{2}$, that is $\nu_t^{\prime\,2}=\|\vec\nu_\Phi\|^{2}+\nu_m^{2}$. The two signs of $\nu_t^{\prime}$ are the particle and the antiparticle, and with the two spin states they give the four solutions the field carries.
 
 **Completion.** The operator whose square is the d'Alembertian is the conjugate gradient, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, so $\tilde{Ξ}\mapsto(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$ carries every harmonic scalar into a solution. The spherical and cylindrical families are the completed harmonics, and the constancy of the construction is why they are indexed by the scalar harmonics of the same geometry.
 
@@ -166,10 +166,10 @@ Cylindrical solutions are similarly constructed from cylindrical harmonics by th
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L,R}$ | The field and its two components, as in *The Dirac Equation in Biquaternionic Form* |
-| $\tilde K_\Phi=i k_t^{\prime}e_t+\vec k_\Phi=\frac{2\pi \tilde P_\Phi}{h}$ | The wave biquaternion; $k_t^{\prime}=\omega/c$ |
+| $\tilde\Upsilon_\Phi=i \nu_t^{\prime}e_t+\vec\nu_\Phi=\frac{\tilde P_\Phi}{h}$ | The wave biquaternion; $2\pi\nu_t^{\prime}=\omega/c$ |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | The four-position biquaternion |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number, the coefficient of the mass term |
-| $k_\Phi=\omega\sqrt{\epsilon\mu}$ | The propagation wave number of the medium, equal to $k_t^{\prime}$ on the light cone |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number, the coefficient of the mass term |
+| $2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}$ | The propagation wave number of the medium, equal to $\nu_t^{\prime}$ on the light cone |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian, a central scalar |
 | $\tilde\nabla_\Phi+\kappa$, $\kappa\in\mathbb{C}$ central | The shifted gradient, written out; the glyph is never extended |
 | $\xi_{\mathrm{scl}}$ | The scalar (pseudoscalar-potential) coefficient, the potential of the elementary field |
@@ -179,7 +179,7 @@ Cylindrical solutions are similarly constructed from cylindrical harmonics by th
 ## Further Reading
 
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the chiral pair, the value of an element and the two-sided dictionary that these solutions obey.
-- [The Three Wavenumbers of a Particle](the-three-wavenumbers-of-a-particle.html), for $k_m$, $k_\Phi$ and $k_t^{\prime}$ and the unit argument that fixes the coefficient of the mass term.
+- [The Three Wavenumbers of a Particle](the-three-wavenumbers-of-a-particle.html), for $\nu_m$, $\nu_{\Phi}$ and $\nu_t^{\prime}$ and the unit argument that fixes the coefficient of the mass term.
 - [The Biquaternion D'Alembertian and Its Green's Functions](the-biquaternion-dalembertian-and-its-greens-functions.html), for the shifted operator $\tilde\nabla_\Phi+\kappa$ and its symbol.
 - [Klein–Gordon from the Dirac Square in Biquaternionic Form](klein-gordon-from-the-dirac-square-in-biquaternionic-form.html), for the consistency condition that makes the two halves of the massive pair one field.
 

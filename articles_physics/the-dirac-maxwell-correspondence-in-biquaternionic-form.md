@@ -37,7 +37,7 @@ The structural identity is the algebraic content of the statement that both fiel
 
 ## The Mass Term
 
-The **mass term** is the term that distinguishes the massive Dirac equation from the massless case, and it does not appear in the Maxwell equation. In the biquaternion formulation it is the linear pairing of the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\,\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R}$ of §*The Massive Case* of *The Dirac Equation in Biquaternionic Form*: its coefficient $k_m$ is central and multiplies on the left, so it relates the two components and moves no value across. What is neither central nor a left multiplication is the two-sided mass term, $-i\,\overline{F}\,\vec e_z\,k_m$: it conjugates the coefficients and multiplies on the right, and those are what carry a letter across. The two forms are one mass term written in two variables, and the change of variable between them is the dictionary. In the Standard Model the mass term arises from the **Higgs mechanism**: the fermion couples to the Higgs field, and the coupling generates an effective mass term.
+The **mass term** is the term that distinguishes the massive Dirac equation from the massless case, and it does not appear in the Maxwell equation. In the biquaternion formulation it is the linear pairing of the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\,\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\,\tilde{Ξ}_{R}$ of §*The Massive Case* of *The Dirac Equation in Biquaternionic Form*: its coefficient $\nu_m$ is central and multiplies on the left, so it relates the two components and moves no value across. What is neither central nor a left multiplication is the two-sided mass term, $-i\,\overline{F}\,\vec e_z\,\nu_m$: it conjugates the coefficients and multiplies on the right, and those are what carry a letter across. The two forms are one mass term written in two variables, and the change of variable between them is the dictionary. In the Standard Model the mass term arises from the **Higgs mechanism**: the fermion couples to the Higgs field, and the coupling generates an effective mass term.
 
 The biquaternion framework does not derive the Higgs mechanism; it simply provides a compact notation for the mass term once the mechanism is assumed. The conjugation $\flat$ is a separate object — the algebra's real structure, discussed in §*The Massive Case* of *The Dirac Equation in Biquaternionic Form* — and is not the mass term.
 
@@ -72,52 +72,52 @@ with $g$ the Dirac potential. The identification is a statement about **coeffici
 The time-harmonic comparison is the paper's last section, and its conclusion is a condition rather than an identity. Let the massive quaternionic equation be read on a time-harmonic field, as in *The Dirac Equation in Biquaternionic Form*, §*The Harmonic Field: Two Projections, and the Helicity Reading*. There the frequency is the Dirac frequency; write it $\omega_D$, and write $E=hf_{\mathrm{frq},D}$ for the particle energy. The amplitude obeys the shifted equation $\vec\nabla_\Phi f+f\alpha=0$ at the parameter
 
 $$
-\alpha = -\left(\frac{2\pi i\,E}{h\,c}\,\vec e_x + \vec e_y\,k_m\right),
+\alpha = -\left(\frac{i\,E}{h\,c}\,\vec e_x + \vec e_y\,2\pi\nu_m\right),
 $$
 
-and the massless case of the same equation is the vacuum Maxwell equation. The time-harmonic Maxwell field of a homogeneous isotropic medium is likewise a pair of Beltrami fields, with its own frequency $\omega$ and wave number $k_\Phi=\omega\sqrt{\epsilon\mu}=\omega/c$, and the projection identity that relates the two pairs,
+and the massless case of the same equation is the vacuum Maxwell equation. The time-harmonic Maxwell field of a homogeneous isotropic medium is likewise a pair of Beltrami fields, with its own frequency $\omega$ and wave number $2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}=\omega/c$, and the projection identity that relates the two pairs,
 
 $$
-\vec\nabla_\Phi f+f\alpha = \tfrac12\bigl(\vec\nabla_\Phi f+fk_\Phi\bigr)\bigl(e_t+\alpha/k_\Phi\bigr) + \tfrac12\bigl(\vec\nabla_\Phi f-fk_\Phi\bigr)\bigl(e_t-\alpha/k_\Phi\bigr),
+\vec\nabla_\Phi f+f\alpha = \tfrac12\bigl(\vec\nabla_\Phi f+fk_\Phi\bigr)\bigl(e_t+\alpha/\nu_{\Phi}\bigr) + \tfrac12\bigl(\vec\nabla_\Phi f-fk_\Phi\bigr)\bigl(e_t-\alpha/\nu_{\Phi}\bigr),
 $$
 
 holds in both directions, with the two terms genuine projections of the two Maxwell pairs, **if and only if** the Maxwell wave number and the Dirac parameter agree,
 
 $$
-k_\Phi^2 = \alpha^2 .
+4\pi^{2}\nu_{\Phi}^2 = \alpha^2 .
 $$
 
 The parameter's square is central, because the two units anticommute:
 
 $$
-\alpha^2 =\frac{(2\pi)^{2} E^{2}}{h^{2}\,c^{2}} - k_m^{2} .
+\alpha^2 =\frac{(2\pi)^{2} E^{2}}{h^{2}\,c^{2}} - 4\pi^{2}\nu_m^{2} .
 $$
 
 The condition is therefore
 
 $$
-\boxed{\;\frac{\omega^2}{c^2} =\frac{(2\pi)^{2} E^{2}}{h^{2}\,c^{2}} - k_m^{2}
+\boxed{\;\frac{\omega^2}{c^2} =\frac{(2\pi)^{2} E^{2}}{h^{2}\,c^{2}} - 4\pi^{2}\nu_m^{2}
 \quad\Longleftrightarrow\quad
 E^2 =\frac{h^{2}}{4\pi^{2}}\,\omega^{2}+m^{2}\,c^{4}},
 $$
 
-which, with the de Broglie relation $hf_{\mathrm{frq}}=pc$ for the Maxwell wave number, is the relativistic dispersion relation $E^2=p^2c^2+m^{2}\,c^{4}$. With the constants carried it reads $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$, the same statement in the three wave numbers. The paper draws attention to the agreement — the condition on which its Dirac–Maxwell equivalence rests is the same relation that defines the particle's mass — and the corpus records it as what ties the parametric statements together: the parameter that makes the shifted equation solvable is the parameter that puts the field on shell.
+which, with the de Broglie relation $hf_{\mathrm{frq}}=pc$ for the Maxwell wave number, is the relativistic dispersion relation $E^2=p^2c^2+m^{2}\,c^{4}$. With the constants carried it reads $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$, the same statement in the three wave numbers. The paper draws attention to the agreement — the condition on which its Dirac–Maxwell equivalence rests is the same relation that defines the particle's mass — and the corpus records it as what ties the parametric statements together: the parameter that makes the shifted equation solvable is the parameter that puts the field on shell.
 
-The same interpretation is why the massless (neutrino) case of §*The Harmonic Field: Two Projections, and the Helicity Reading* of *The Dirac Equation in Biquaternionic Form* needs no condition at all: at $m=0$, that is $k_m=0$, the parameter is $\alpha=-(i\,k_{t}^{\prime})\,\vec e_x$ with $\alpha^2=E^2/(\frac{h^{2}}{4\pi^{2}}\,c^{2})$, and $k_\Phi^2=\alpha^2$ becomes $\omega^2=\frac{(2\pi)^{2} E^{2}}{h^{2}}$, i.e., $\omega=\omega_D$ — the two frequencies coincide, the vacuum null-wave relation $\omega=k_\Phi$, the case the source calls the neutrino, and the one the corpus records as Imaeda's vacuum Maxwell equation.
+The same interpretation is why the massless (neutrino) case of §*The Harmonic Field: Two Projections, and the Helicity Reading* of *The Dirac Equation in Biquaternionic Form* needs no condition at all: at $m=0$, that is $\nu_m=0$, the parameter is $\alpha=-(i\,2\pi\nu_t^{\prime})\,\vec e_x$ with $\alpha^2=E^2/(\frac{h^{2}}{4\pi^{2}}\,c^{2})$, and $4\pi^{2}\nu_{\Phi}^2=\alpha^2$ becomes $\omega^2=\frac{(2\pi)^{2} E^{2}}{h^{2}}$, i.e., $\omega=\omega_D$ — the two frequencies coincide, the vacuum null-wave relation $\omega=2\pi\nu_{\Phi}$, the case the source calls the neutrino, and the one the corpus records as Imaeda's vacuum Maxwell equation.
 
-**What is quoted.** The source's intermediate equations, which restore $c$ and $\frac{h}{2\pi}$ at a different point of the reduction, are quoted as its own; the printed power of $c$ in them could not be read from the scan. The two statements used above — the condition $k_\Phi^2=\alpha^2$ and the central value of $\alpha^2$ in terms of the energy and the mass — are legible, and the mass-shell interpretation follows from them.
+**What is quoted.** The source's intermediate equations, which restore $c$ and $\frac{h}{2\pi}$ at a different point of the reduction, are quoted as its own; the printed power of $c$ in them could not be read from the scan. The two statements used above — the condition $4\pi^{2}\nu_{\Phi}^2=\alpha^2$ and the central value of $\alpha^2$ in terms of the energy and the mass — are legible, and the mass-shell interpretation follows from them.
 
 ## The Lanczos Route: Maxwell with Feedback
 
 The identity of form is not an artifact of the notation, and Lanczos read it as a statement about matter. In his 1929 articles he derived Dirac's equation from the coupled biquaternion system
 
 $$
-\tilde\nabla_\Phi\tilde{Q}_1 = \tilde{Q}_2\,k_m, \qquad \tilde\nabla_\Phi\tilde{Q}_2 = \tilde{Q}_1\,k_m,
+\tilde\nabla_\Phi\tilde{Q}_1 = \tilde{Q}_2\,2\pi\nu_m, \qquad \tilde\nabla_\Phi\tilde{Q}_2 = \tilde{Q}_1\,2\pi\nu_m,
 $$
 
-comparing it with the biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -4\pi\tilde{J}_{\Phi}$ of the companion article. The first equation is then Maxwell's equation, and the second is a **feedback**: the field $\tilde{Q}_2$ acts back on the object that generates it, with the strength $k_m$. The feedback is the mass; the massless case $m=0$ breaks the coupling and leaves two independent field equations, of which the Maxwell equation is one. This is the source's interpretation, and it answers the question at the end of this article: what the Dirac and Maxwell equations share is the **operator** — the single first-order operator $\tilde\nabla_\Phi$, a square root of $\Box_\Phi$ — and what separates them is the **closure**, the Dirac field obeying the operator in the closed, self-acting way and the Maxwell field in the sourced way.
+comparing it with the biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -4\pi\tilde{J}_{\Phi}$ of the companion article. The first equation is then Maxwell's equation, and the second is a **feedback**: the field $\tilde{Q}_2$ acts back on the object that generates it, with the strength $\nu_m$. The feedback is the mass; the massless case $m=0$ breaks the coupling and leaves two independent field equations, of which the Maxwell equation is one. This is the source's interpretation, and it answers the question at the end of this article: what the Dirac and Maxwell equations share is the **operator** — the single first-order operator $\tilde\nabla_\Phi$, a square root of $\Box_\Phi$ — and what separates them is the **closure**, the Dirac field obeying the operator in the closed, self-acting way and the Maxwell field in the sourced way.
 
-The corpus's chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\,\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R}$ is the same equation in the chiral variables — the second member carries $(\tilde\nabla_\Phi)^{\natural}$ because the field written $L$ is the conjugate of the Lanczos $\tilde{Q}_2$ — and it displays the field split into its two parts, but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by a superposition along an arbitrary axis (in the displays of this paragraph the letter $D$ is Lanczos's name for the Dirac field, not the spatial operator $D=i\vec\nabla_\Phi$ of *An Explicit Dictionary with Conjugation in the Mass Term*)
+The corpus's chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\,\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\,\tilde{Ξ}_{R}$ is the same equation in the chiral variables — the second member carries $(\tilde\nabla_\Phi)^{\natural}$ because the field written $L$ is the conjugate of the Lanczos $\tilde{Q}_2$ — and it displays the field split into its two parts, but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by a superposition along an arbitrary axis (in the displays of this paragraph the letter $D$ is Lanczos's name for the Dirac field, not the spatial operator $D=i\vec\nabla_\Phi$ of *An Explicit Dictionary with Conjugation in the Mass Term*)
 
 $$
 D = \tilde{Q}_1\tilde\Pi_{\mathrm{id}} + \tilde{Q}_2^{*}\bar{\tilde\Pi_{\mathrm{id}}},
@@ -126,7 +126,7 @@ $$
 with $\tilde\Pi_{\mathrm{id}}$ the projection along a unit vector $\vec u_{\mathrm{sp}}$ and $\bar{\tilde\Pi_{\mathrm{id}}}$ its conjugate — so that one half of $\tilde{Q}_1$ and half of the conjugate of $\tilde{Q}_2$ are carried into the two **different** parts of the field, which is what makes the superposition a field carrying both values and not a field carrying one; the resulting single equation
 
 $$
-\boxed{\;\tilde\nabla_\Phi D = D^{*}i\vec u_{\mathrm{sp}}\,k_m\;}
+\boxed{\;\tilde\nabla_\Phi D = D^{*}i\vec u_{\mathrm{sp}}\,2\pi\nu_m\;}
 $$
 
 is strictly equivalent to Dirac's equation. The unit vector on the right is the point of the display: it is the **spin quantization axis**, and it shows that Dirac's equation singles out an arbitrary but unique direction in ordinary space. The corpus's pair is written for a fixed frame and does not exhibit the axis; the Lanczos form shows that the axis is carried by the projection itself, and that any unit vector will do. The complex conjugation on the right-hand side is a second such fact: it is what makes the Dirac field **fermionic**, in contrast with the Maxwell and Proca fields, which are bosonic. The superposition is not unique: the source's second and equally covariant combination — Gürsey's, which the isospin reading makes the neutron to the proton — is recorded in *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*; the fermionic character above is what the two share.
@@ -147,11 +147,11 @@ These questions are open.
 
 **The operator is shared; the objects are not.** The massless Dirac member and the source-free Maxwell equation are $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $\tilde\nabla_\Phi\tilde F=0$, one operator acting on the left, and the fields differ: $\tilde F$ lives in the vector part of the algebra and carries spin $1$, while $\tilde{Ξ}_{R}$ is a general element carrying a value and spin $\frac12$. The identity of form is a statement about the multiplication and not about the objects.
 
-**The mass is the term that has no Maxwell counterpart.** It is central and multiplies on the left, so it relates the two components of the Dirac pair and moves no value across; written with the direction on the right, $-i\overline{F}\,\vec e_z\,k_m$, it conjugates the coefficients and multiplies on the right, and those are the operations that carry a letter across. The two writings are one term in two variables, and the change of variable between them is the dictionary of the main article.
+**The mass is the term that has no Maxwell counterpart.** It is central and multiplies on the left, so it relates the two components of the Dirac pair and moves no value across; written with the direction on the right, $-i\overline{F}\,\vec e_z\,\nu_m$, it conjugates the coefficients and multiplies on the right, and those are the operations that carry a letter across. The two writings are one term in two variables, and the change of variable between them is the dictionary of the main article.
 
-**Two comparisons, one dictionary and one condition.** A massive Dirac field with an electric or a scalar potential is, after the dictionary, the static sourceless Maxwell system of an isotropic inhomogeneous medium whose permittivity is $\epsilon=\exp(2G)$ with $dG/dr_x=g$, the potential being the logarithmic derivative of $\sqrt\epsilon$; the match is at the level of coefficients and carries the restriction $\mathrm{Sc}=0$ on the Maxwell side. On time-harmonic fields the Dirac pair and the Maxwell pair of a homogeneous medium share one projection identity exactly when $k_\Phi^2=\alpha^2$, and that condition, with $\alpha^2=\frac{(2\pi)^{2} E^{2}}{h^{2}\,c^{2}}-k_m^{2}$, is $E^2=\frac{h^{2}}{4\pi^{2}}\,\omega^{2}+m^{2}c^{4}$, the relativistic dispersion relation.
+**Two comparisons, one dictionary and one condition.** A massive Dirac field with an electric or a scalar potential is, after the dictionary, the static sourceless Maxwell system of an isotropic inhomogeneous medium whose permittivity is $\epsilon=\exp(2G)$ with $dG/dr_x=g$, the potential being the logarithmic derivative of $\sqrt\epsilon$; the match is at the level of coefficients and carries the restriction $\mathrm{Sc}=0$ on the Maxwell side. On time-harmonic fields the Dirac pair and the Maxwell pair of a homogeneous medium share one projection identity exactly when $4\pi^{2}\nu_{\Phi}^2=\alpha^2$, and that condition, with $\alpha^2=\frac{(2\pi)^{2} E^{2}}{h^{2}\,c^{2}}-4\pi^{2}\nu_m^{2}$, is $E^2=\frac{h^{2}}{4\pi^{2}}\,\omega^{2}+m^{2}c^{4}$, the relativistic dispersion relation.
 
-**The Lanczos reading names the shared object.** Lanczos derived the Dirac equation from the coupled system $\tilde\nabla_\Phi\tilde Q_1=\tilde Q_2k_m$, $\tilde\nabla_\Phi\tilde Q_2=\tilde Q_1k_m$, whose first member is Maxwell's equation and whose second is a feedback of strength $k_m$, the mass. The Dirac field obeys the operator in the closed, self-acting way and the Maxwell field in the sourced way. The superposition along an axis, $\tilde\nabla_\Phi D=D^{*}i\vec u_{\mathrm{sp}}\,k_m$, adds the spin-quantization axis and the complex conjugation that make the field fermionic, and it is equivalent to Dirac's equation. What remains open is the feedback itself: the framework represents it and does not derive it.
+**The Lanczos reading names the shared object.** Lanczos derived the Dirac equation from the coupled system $\tilde\nabla_\Phi\tilde Q_1=\tilde Q_4\pi\nu_m$, $\tilde\nabla_\Phi\tilde Q_2=\tilde Q_12\pi\nu_m$, whose first member is Maxwell's equation and whose second is a feedback of strength $\nu_m$, the mass. The Dirac field obeys the operator in the closed, self-acting way and the Maxwell field in the sourced way. The superposition along an axis, $\tilde\nabla_\Phi D=D^{*}i\vec u_{\mathrm{sp}}\,2\pi\nu_m$, adds the spin-quantization axis and the complex conjugation that make the field fermionic, and it is equivalent to Dirac's equation. What remains open is the feedback itself: the framework represents it and does not derive it.
 
 ## Summary of Notation
 
@@ -160,10 +160,10 @@ These questions are open.
 | $\mathbb{B}$ | The biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | The gradient, its quaternion conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ |
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two components of the Dirac field, named by the letters of the pair |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number, the coefficient of the mass term |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number, the coefficient of the mass term |
 | $\tilde F$ | The field-strength biquaternion, the vector part of $\mathbb{B}$ |
 | $\tilde J_\Phi$ | The source biquaternion of the inhomogeneous Maxwell equation |
-| $k_\Phi=\omega\sqrt{\epsilon\mu}$ | The Maxwell wave number of the medium |
+| $2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}$ | The Maxwell wave number of the medium |
 | $\epsilon$, $\mu$, $\vec G$ | Permittivity, permeability and the logarithmic derivative $\vec G=\mathrm{grad}\sqrt\epsilon/\sqrt\epsilon$ |
 | $G(r_x)$, $g(r_x)$ | The Dirac potential as an integral and as its derivative, $\epsilon=\exp(2G)$, $dG/dr_x=g$ |
 | $\alpha$ | The biquaternionic parameter of the shifted amplitude equation, an inverse length |
@@ -185,4 +185,4 @@ These questions are open.
 - F. Gürsey, "Applications of Quaternions to Field Equations," PhD thesis, University of London, 1950, for the review of Lanczos's quaternionic theory and for the treatment of the scalar, vector, pseudoscalar and pseudovector equations as degenerate cases of it.
 - A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the interpretation of Lanczos's system as Maxwell's equation with feedback, for the spin-quantization-axis form $\tilde\nabla_\Phi D=mD^{*}i\vec u_{\mathrm{sp}}$ of the Dirac–Lanczos equation, and for the complex-conjugation origin of the fermionic character.
 - A. Gsponer and J.-P. Hurni, "Lanczos's Equation to Replace Dirac's Equation?", *Proceedings of the Cornelius Lanczos International Centenary Conference* (SIAM, 1994) 509–512 (arXiv:hep-ph/0112317), for Lanczos's coupled system as "Maxwell's equations with feed-back" and for the second route to Dirac's equation, the reduction by requiring the two fields to be singular quaternions, attributed there to J. Blaton, *Zeitschrift für Physik* **95** (1935) 337–354. Recorded as a claim: four pages, no derivation exhibited, and the title is a question; the arXiv version carries a *Note added in 1996* withdrawing the authors' charge-quantisation mechanism, which is recorded in *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*.
-- V. V. Kravchenko and M. P. Ramirez Tachiquin, "On a quaternionic reformulation of the Dirac equation and its relationship with Maxwell's system," *Bulletin de la Société des Sciences et des Lettres de Łódź* **53** (2003) 101–114, for the correspondence between the massive Dirac equation with an electric or a scalar potential and the static sourceless Maxwell system of an isotropic inhomogeneous medium, with the permittivity $\epsilon=\exp(2G(r_x))$, $dG/dr_x=g$; for the condition $k_\Phi^2=\alpha^2$ under which the massive Dirac field and the time-harmonic Maxwell field share the same projection identity, that condition being the mass shell; and, in the same paper, for the reality of the conjugation-free quaternionic Dirac operator and the current-conservation equation recorded in *The Dirac Equation in Biquaternionic Form*, §*The Conjugation-Free Operator and Its Reality*. The paper's factors $u^{\pm}$ and its explicit action of $A^{-1}$ on $\mathrm{Re}\,F$ are quoted, not reproduced: the available copy is a scan without a text layer.
+- V. V. Kravchenko and M. P. Ramirez Tachiquin, "On a quaternionic reformulation of the Dirac equation and its relationship with Maxwell's system," *Bulletin de la Société des Sciences et des Lettres de Łódź* **53** (2003) 101–114, for the correspondence between the massive Dirac equation with an electric or a scalar potential and the static sourceless Maxwell system of an isotropic inhomogeneous medium, with the permittivity $\epsilon=\exp(2G(r_x))$, $dG/dr_x=g$; for the condition $4\pi^{2}\nu_{\Phi}^2=\alpha^2$ under which the massive Dirac field and the time-harmonic Maxwell field share the same projection identity, that condition being the mass shell; and, in the same paper, for the reality of the conjugation-free quaternionic Dirac operator and the current-conservation equation recorded in *The Dirac Equation in Biquaternionic Form*, §*The Conjugation-Free Operator and Its Reality*. The paper's factors $u^{\pm}$ and its explicit action of $A^{-1}$ on $\mathrm{Re}\,F$ are quoted, not reproduced: the available copy is a scan without a text layer.

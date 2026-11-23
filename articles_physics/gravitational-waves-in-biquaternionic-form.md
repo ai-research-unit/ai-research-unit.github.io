@@ -16,7 +16,7 @@ The findings are worth separating at the outset, because one of them is negative
 
 This section fixes the target. It is standard linearized gravity, written in the coordinate convention just fixed, and every formula displayed here was checked by direct computation.
 
-The framework's conventions are used here and are not restated. The material basis $\varepsilon_{\imath}$ of $\mathbb{B}_{\Phi}$ and the real coordinates $x_{\imath}=(r'_{t}, r_x, r_y, r_z)$ of the material frame are those of *Frame and Metric Conventions*, and the biquaternionic d'Alembertian $\Box_\Phi$ is that of *Operator and Calculus Conventions*. There is one metric, the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$ on the four $Q_{\imath}$; the material interval is that form read on $Q_t=i q'_t$, $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The linearized metric is the flat interval plus the perturbation $h_{\imath\jmath}$, with $|h_{\imath\jmath}| \ll 1$, and every contraction below is written out in the real coordinates, where the minus on the time row is that one minus. A product $k_{\Phi,\lambda}x_\lambda$ below is the invariant contraction $-k_{t}^{\prime}x_0+k_{\Phi x}x_1+k_{\Phi y}x_2+k_{\Phi z}x_3$, not a sum of like components. The **trace-reversed** perturbation is
+The framework's conventions are used here and are not restated. The material basis $\varepsilon_{\imath}$ of $\mathbb{B}_{\Phi}$ and the real coordinates $x_{\imath}=(r'_{t}, r_x, r_y, r_z)$ of the material frame are those of *Frame and Metric Conventions*, and the biquaternionic d'Alembertian $\Box_\Phi$ is that of *Operator and Calculus Conventions*. There is one metric, the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$ on the four $Q_{\imath}$; the material interval is that form read on $Q_t=i q'_t$, $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The linearized metric is the flat interval plus the perturbation $h_{\imath\jmath}$, with $|h_{\imath\jmath}| \ll 1$, and every contraction below is written out in the real coordinates, where the minus on the time row is that one minus. A product $\nu_{\Phi,\lambda}x_\lambda$ below is the invariant contraction $-\nu_t^{\prime}x_0+\nu_{\Phi x}x_1+\nu_{\Phi y}x_2+\nu_{\Phi z}x_3$, not a sum of like components. The **trace-reversed** perturbation is
 
 $$
 \bar{h}_{00} = h_{00} + \tfrac{1}{2}h, \qquad \bar{h}_{0\eta} = h_{0\eta}, \qquad \bar{h}_{\eta l} = h_{\eta l} - \tfrac{1}{2}h\,\delta_{\eta l}, \qquad \bar{h} = -\bar{h}_{00}+\bar{h}_{11}+\bar{h}_{22}+\bar{h}_{33} = -h,
@@ -100,7 +100,7 @@ $$
 
 Four functions satisfy this, one for each coordinate direction, so the gauge freedom is **not** exhausted by the harmonic condition. It is a residual gauge freedom of the same kind that the Lorenz condition leaves in electromagnetism, where the condition is preserved by $\Box_\Phi\Gamma = 0$. A count that imposes harmonic gauge and then declares the remaining six components physical has used the gauge freedom twice in the wrong order: the six components include the four that the residual freedom still moves.
 
-For a plane wave there is an instructive simplification. Writing $\zeta_{\jmath} = a_{\jmath} \exp\big(ik_{\Phi,\lambda}x_\lambda\big)$, the preservation condition is $k_\Phi^2a_{\jmath} = 0$, and for a lightlike wave vector $k_\Phi^2 = -k_{t}^{\prime\,2}+k_{\Phi x}^2+k_{\Phi y}^2+k_{\Phi z}^2 = 0$ it holds for every $a_{\jmath}$; every residual gauge function is available for a plane wave. This is the case on which the count below is computed.
+For a plane wave there is an instructive simplification. Writing $\zeta_{\jmath} = a_{\jmath} \exp\big(ik_{\Phi,\lambda}x_\lambda\big)$, the preservation condition is $\nu_{\Phi}^2a_{\jmath} = 0$, and for a lightlike wave vector $\nu_{\Phi}^2 = -\nu_t^{\prime\,2}+\nu_{\Phi x}^2+\nu_{\Phi y}^2+\nu_{\Phi z}^2 = 0$ it holds for every $a_{\jmath}$; every residual gauge function is available for a plane wave. This is the case on which the count below is computed.
 
 ## Counting the Physical Degrees of Freedom
 
@@ -120,7 +120,7 @@ with the last quotient exactly the transverse-traceless amplitudes.
 
 Two independent checks confirm the final number.
 
-*Transverse-traceless tensor count.* A symmetric spatial amplitude $A_{ij}$ ($i,j = 1,2,3$) has six independent components; transversality $\sum_i k_iA_{ij} = 0$ imposes three conditions; tracelessness $\sum_i A_{ii} = 0$ imposes one. Six minus three minus one is two.
+*Transverse-traceless tensor count.* A symmetric spatial amplitude $A_{ij}$ ($i,j = 1,2,3$) has six independent components; transversality $\sum_i \nu_{i}A_{ij} = 0$ imposes three conditions; tracelessness $\sum_i A_{ii} = 0$ imposes one. Six minus three minus one is two.
 
 *Little-group count.* A massless field of spin $s$ in four dimensions carries two helicities, $\pm s$. For the graviton $s = 2$, so the helicities are $\pm 2$, again two. This is the representation-theoretic reason the number is independent of the details of the gauge fixing, and it is the count the algebra does not reproduce; that is the subject of the section *The Wave Operator, the Gauge Freedom, and the Counting in the Framework*.
 
@@ -131,16 +131,16 @@ Two cautions belong with the count. First, the intermediate values $10$ and $6$ 
 A vacuum plane wave is
 
 $$
-h_{\imath\jmath} = A_{\imath\jmath}\cos(k_{\Phi,\lambda}x_\lambda), \qquad -k_{t}^{\prime\,2}+k_{\Phi x}^2+k_{\Phi y}^2+k_{\Phi z}^2 = 0,
+h_{\imath\jmath} = A_{\imath\jmath}\cos(2\pi\nu_{\Phi,\lambda}x_\lambda), \qquad -4\pi^{2}\nu_t^{\prime\,2}+4\pi^{2}\nu_{\Phi x}^2+4\pi^{2}\nu_{\Phi y}^2+4\pi^{2}\nu_{\Phi z}^2 = 0,
 $$
 
 with a constant symmetric amplitude $A_{\imath\jmath}$. The residual gauge freedom of the previous section can be used to put it in **transverse-traceless** form, in which
 
 $$
--k_{t}^{\prime}A_{0\jmath}+k_1A_{1\jmath}+k_2A_{2\jmath}+k_3A_{3\jmath} = 0 \qquad\text{and}\qquad -A_{00}+A_{11}+A_{22}+A_{33} = 0 ,
+-2\pi\nu_t^{\prime}A_{0\jmath}+k_1A_{1\jmath}+k_2A_{2\jmath}+k_3A_{3\jmath} = 0 \qquad\text{and}\qquad -A_{00}+A_{11}+A_{22}+A_{33} = 0 ,
 $$
 
-and in which, in addition, the components with a timelike index vanish, $A_{t\imath} = 0$. For propagation in the $+z$ direction, $k_{\Phi,\imath} = (\omega/c)(1,0,0,1)$ in the coordinates $x_{\imath} = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $(\omega/c)(r_z - r'_t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.
+and in which, in addition, the components with a timelike index vanish, $A_{t\imath} = 0$. For propagation in the $+z$ direction, $2\pi\nu_{\Phi,\imath} = (\omega/c)(1,0,0,1)$ in the coordinates $x_{\imath} = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $(\omega/c)(r_z - r'_t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.
 
 **The transversality and tracelessness are checked, not assumed.** For the two amplitudes
 
@@ -149,7 +149,7 @@ $$
 \text{cross:}\quad A_{xy} = A_{yx} \ne 0,
 $$
 
-with all other components zero, a direct check verifies $-k_{t}^{\prime\,2}+k_{\Phi x}^2+k_{\Phi y}^2+k_{\Phi z}^2 = 0$, $-k_{t}^{\prime}A_{0\jmath}+k_1A_{1\jmath}+k_2A_{2\jmath}+k_3A_{3\jmath} = 0$, and $-A_{00}+A_{11}+A_{22}+A_{33} = 0$, for each amplitude and for the general transverse-traceless solution. Solving the conditions $A_{t\imath} = 0$, $-k_{t}^{\prime}A_{0\jmath}+k_1A_{1\jmath}+k_2A_{2\jmath}+k_3A_{3\jmath} = 0$, $-A_{00}+A_{11}+A_{22}+A_{33} = 0$ on a general symmetric $A_{\imath\jmath}$ leaves
+with all other components zero, a direct check verifies $-\nu_t^{\prime\,2}+\nu_{\Phi x}^2+\nu_{\Phi y}^2+\nu_{\Phi z}^2 = 0$, $-2\pi\nu_t^{\prime}A_{0\jmath}+k_1A_{1\jmath}+k_2A_{2\jmath}+k_3A_{3\jmath} = 0$, and $-A_{00}+A_{11}+A_{22}+A_{33} = 0$, for each amplitude and for the general transverse-traceless solution. Solving the conditions $A_{t\imath} = 0$, $-2\pi\nu_t^{\prime}A_{0\jmath}+k_1A_{1\jmath}+k_2A_{2\jmath}+k_3A_{3\jmath} = 0$, $-A_{00}+A_{11}+A_{22}+A_{33} = 0$ on a general symmetric $A_{\imath\jmath}$ leaves
 
 $$
 \boxed{\;A_{xx} = -A_{yy}, \qquad A_{xy} = A_{yx}, \qquad \text{all other components zero}\;},
@@ -331,7 +331,7 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $-\partial/\partial x_0\bar{h}_{0\jmath}+\partial/\partial x_1\bar{h}_{1\jmath}+\partial/\partial x_2\bar{h}_{2\jmath}+\partial/\partial x_3\bar{h}_{3\jmath} = 0$, $\Box_\Phi\zeta_{\jmath} = 0$ | Harmonic (Lorenz, de Donder) gauge and its residual gauge freedom |
 | $\Box_\Phi\bar{h}_{\imath\jmath} = -\tfrac{16\pi G}{c^4}T_{\imath\jmath}$ | Linearized Einstein equation |
 | $A_{\imath\jmath}$; $A_{xx} = -A_{yy}$, $A_{xy} = A_{yx}$ | Plane-wave amplitude; the plus and cross polarizations |
-| $k_{\Phi,\imath} = (\omega/c)(1,0,0,1)$, $-k_{t}^{\prime\,2}+k_{\Phi x}^2+k_{\Phi y}^2+k_{\Phi z}^2 = 0$ | Wave vector along $+z$ and its null condition |
+| $2\pi\nu_{\Phi,\imath} = (\omega/c)(1,0,0,1)$, $-\nu_t^{\prime\,2}+\nu_{\Phi x}^2+\nu_{\Phi y}^2+\nu_{\Phi z}^2 = 0$ | Wave vector along $+z$ and its null condition |
 | $\mathrm{Riem}_{\imath\jmath\rho\sigma}$, $\mathrm{Ric}_{\imath\jmath}$, $G_{\imath\jmath}$ | Linearized Riemann, Ricci, and Einstein tensors |
 | $\tilde{Q}_{3,\imath\jmath} = \tfrac12\sum_{\rho,\sigma}\mathrm{Riem}_{\imath\jmath\rho\sigma}\bar{\varepsilon}_\rho\varepsilon_\sigma$ | Curvature as a bivector-valued two-form |
 | $\mathcal{Q}_{ij} = \int\rho(x_ix_j - \tfrac13r^2\delta_{ij})d^3r$ | Traceless (reduced) quadrupole moment |

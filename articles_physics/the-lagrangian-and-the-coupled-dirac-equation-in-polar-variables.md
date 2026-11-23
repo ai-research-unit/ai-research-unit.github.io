@@ -34,7 +34,7 @@ The two settings. The connection is taken constant, with constant coefficients, 
 
 ## Conventions
 
-The conventions are the free chart's, restated for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is the pair of parts, each written in the word $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}\tilde U_{\Psi,\mathrm b}$, with $\varrho>0$ and the rotor on the left, which is the free chart's ordering. The connection is central, the coupling is $ϙ$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4r$, and $k_m=\frac{2\pi mc}{h}$.
+The conventions are the free chart's, restated for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is the pair of parts, each written in the word $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}\tilde U_{\Psi,\mathrm b}$, with $\varrho>0$ and the rotor on the left, which is the free chart's ordering. The connection is central, the coupling is $ϙ$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4r$, and $\nu_m=\frac{mc}{h}$.
 
 ## The Action in Polar Variables
 
@@ -92,7 +92,7 @@ One caution about the first term's coefficient. The coefficient $\frac{h}{2\pi} 
 
 The pairing. Inherited, and the connection is what the pairing now sees. The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$. Its two chiral densities carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$, and the sum is real because the two terms are conjugates. The chart writes the field as a density, a rapidity and a rotor and the connection as four components; all of the chart's variables are real or unit-modulus, so the conjugation that made the sum real in the element form is a fact about the chart's parametrisation and needs no rechecking.
 
-The type of the coefficient. The mass is real, and the connection's four brackets are the price of the covariant derivative. Beyond $k_m$, the only coefficients the action carries are the four components of the connection, and the requirement that both variations be real is a requirement on their types. It is P1's question and P1's answer.
+The type of the coefficient. The mass is real, and the connection's four brackets are the price of the covariant derivative. Beyond $\nu_m$, the only coefficients the action carries are the four components of the connection, and the requirement that both variations be real is a requirement on their types. It is P1's question and P1's answer.
 
 The selection rule. Declared. The coupling object is a connection and not a potential, so the action has no admissible sector to choose between. The selection rule belongs to the free scalar, where a potential is a free element.
 
@@ -121,9 +121,9 @@ The step that is not taken. The article does not show that the operator setting'
 The variation is over the eight parameters. In the chart the variables are $\varrho$, $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, the two angles of the boost axis $\hat u_{\mathrm b}$, and the three angles of the rotor $\tilde u_{\mathrm r}$. Varying the chart's action with respect to them, and using that the word is a bijection on the invertibles, returns exactly the coupled pair of the element article:
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R ,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R ,
 $$
 
 one equation per part and per material slot. The variation of the connection is separate and is the source equation, as in the element article.
@@ -228,7 +228,7 @@ The strongest objection. Any conserved current can be presented as the current o
 
 The partial answer, and its limit. The objection is correct, and the partial answer is the one the element companion gives: the requirement is not merely that the current be conserved but that it be the *pairing* the algebra supplies, with the two parts entering with opposite signs. In the word, that requirement is the requirement that the phase flow and the boost flow combine at the two rates. The partial answer's limit is that it replaces one selection problem by another: the pairing is the algebra's, but the choice of frame units inside the pairing is the frame's (§*The Current* of the element companion). So the conjecture is well posed only relative to a frame.
 
-What would settle it. The Dirac brackets of the six constraints, computed with the four-bracket structure in place of the parameter structure, and the verification that the resulting flow reproduces $\partial_{r'_t}\tilde\Xi=-i\tilde K_\Phi\tilde\Xi$ up to the gauge factor. This is a finite computation on a system with eight parameters and six constraints, and it is not attempted here.
+What would settle it. The Dirac brackets of the six constraints, computed with the four-bracket structure in place of the parameter structure, and the verification that the resulting flow reproduces $\partial_{r'_t}\tilde\Xi=-2\pi i\tilde\Upsilon_\Phi\tilde\Xi$ up to the gauge factor. This is a finite computation on a system with eight parameters and six constraints, and it is not attempted here.
 
 What the article claims without the conjecture. Everything in §*The Action in the Word* and §*The Constraints the Action Imposes: The Structure* stands without the conjecture: the action, the momenta, the two evolution equations, the six constraints, and the absence of multipliers for the unit conditions. The conjecture is what would connect them to the equation, and the connection is what is missing.
 

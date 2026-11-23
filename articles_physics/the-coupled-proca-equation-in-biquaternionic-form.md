@@ -7,14 +7,14 @@ This article couples the Proca field to an electromagnetic connection and reads 
 The equation.
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^2\tilde A,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=4\pi^{2}\nu_m^2\tilde A,
 \qquad
 \tilde F=\frac12\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A-\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\bigr)_{\mathrm{V}},
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi},
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_{\Phi},
 $$
 
-with $\tilde A$ the Proca potential, $\tilde A_\Phi$ the connection, $k_m=\frac{2\pi mc}{h}$, and the subscript $\mathrm{V}$ the pure-vector part of an element. The second display is one half of the antisymmetric part of the covariant gradient, and the article writes it in that form because the symmetric half is the covariant divergence, which is a different object.
+with $\tilde A$ the Proca potential, $\tilde A_\Phi$ the connection, $\nu_m=\frac{mc}{h}$, and the subscript $\mathrm{V}$ the pure-vector part of an element. The second display is one half of the antisymmetric part of the covariant gradient, and the article writes it in that form because the symmetric half is the covariant divergence, which is a different object.
 
 Four things are established, and they are exact statements of structure.
 
@@ -147,7 +147,7 @@ because $\mathrm{Vect}$ commutes with left multiplication by a central element a
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,2}\tilde F_2=\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde F,
 \qquad
-k_m^2\tilde A_2=\lambda\,k_m^2\tilde A .
+4\pi^{2}\nu_m^2\tilde A_2=\lambda\,4\pi^{2}\nu_m^2\tilde A .
 $$
 
 The mass term is homogeneous because it is linear in the field; it is the *bilinear* mass term of the action that is invariant, and the two statements are consistent, since $\lambda\bar\lambda=1$. In the free article the mass term is quadratic in a real field and breaks the symmetry; here the field is complex, the mass term is quadratic in the field and its conjugate, and the symmetry survives. That single sign of bookkeeping is why a massive vector field can be coupled at all.
@@ -203,7 +203,7 @@ with $\tilde F^{(\Phi)}$ the curvature of the connection. The first term is scal
 The scalar part of the equation therefore forces the constraint. Applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the equation and taking the scalar part,
 
 $$
-k_m^2\,\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)
+4\pi^{2}\nu_m^2\,\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)
 =\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde F\bigr)
 =\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\,\mathrm{Sc}\bigl(\tilde F\bigr)=0,
 $$
@@ -228,17 +228,17 @@ A check on a lattice. Applying the composite to a random pure-vector field on a 
 The symbol. For a plane wave $\tilde A=\tilde A_0\exp(-i\vartheta)$ in a constant connection, every derivative is a multiplication and the equation becomes an algebraic system:
 
 $$
-\bigl(i\tilde K+\tilde C\bigr)\,\mathrm{Vect}\bigl((i\tilde K^{\natural}+\tilde C^{\natural})\tilde A_0\bigr)=k_m^2\tilde A_0,
+\bigl(2\pi i\tilde\Upsilon+\tilde C\bigr)\,\mathrm{Vect}\bigl((2\pi i\tilde\Upsilon^{\natural}+\tilde C^{\natural})\tilde A_0\bigr)=4\pi^{2}\nu_m^2\tilde A_0,
 \qquad
-\tilde C=\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
+\tilde C=\frac{i\,ϙ}{h}\tilde A_\Phi,
 $$
 
-four complex equations for the four components of the amplitude, with $\tilde K$ the wavevector biquaternion. The determinant of the $4\times4$ symbol is the dispersion relation; it is complex, so it is two real conditions on four real components of $\tilde K$, which is the count of a massive branch.
+four complex equations for the four components of the amplitude, with $\tilde\Upsilon$ the wavevector biquaternion. The determinant of the $4\times4$ symbol is the dispersion relation; it is complex, so it is two real conditions on four real components of $\tilde\Upsilon$, which is the count of a massive branch.
 
 The scalar potential is an energy shift, and it is exact. For a purely electric constant potential, $\tilde C$ is central and real, so it commutes with everything and adds to the temporal slot of the covariant wavevector. The roots move by one amount and not by two:
 
 $$
-\omega=\pm\sqrt{\vec k^{\,2}+k_m^2}-\frac{2\pi ϙ a'_t}{h}
+\omega=\pm\sqrt{\vec\nu^{\,2}+4\pi^{2}\nu_m^2}-\frac{ϙ a'_t}{h}
 \qquad\text{in the article's units,}
 $$
 
@@ -294,11 +294,11 @@ The polar form's status. The polar companion states the chart's version of every
 The coupled Proca equation is
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^2\tilde A,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=4\pi^{2}\nu_m^2\tilde A,
 \qquad
 \tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr),
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi,
 $$
 
 with the field an element of $\mathbb{B}$ and the free field its real slice.
@@ -325,7 +325,7 @@ The equation is standard. The algebra's contribution is the closure argument, th
 | $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; covariant with $\lambda$ |
 | $\tilde F^{(\Phi)}$ | Curvature of the connection |
 | $\tilde C=\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The coupling element of a constant background |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter of the framework |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Central gauge phase; $\Gamma$ real |
 | $j_{\imath}=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A)$ | The charge current |

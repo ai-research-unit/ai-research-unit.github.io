@@ -6,7 +6,7 @@ The parent's Dirac action is already first order in every velocity, so there is 
 The parent's action, and the fact that decides the whole article.
 
 $$
-S=\int\mathrm{d}t'\;\frac{h}{2\pi} c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}k_m\,\mathcal{V}\Bigr\},
+S=\int\mathrm{d}t'\;\frac{h}{2\pi} c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}\,2\pi\nu_m\,\mathcal{V}\Bigr\},
 $$
 
 with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direction, and with no dependence on $\varrho$ or on $\theta_{\mathrm{pha}}$. **The scale enters as $\varrho^{2}$ in both terms and never with its own derivative.** There is no $(\partial \varrho)^{2}$ here.
@@ -25,13 +25,13 @@ The first-order Lagrangian form of the Dirac equation, its primary constraints, 
 
 The word exists where $N(\tilde\Xi)\neq0$, and the action is written for the central class's complement — the eight parameters with the frame. The limit is defined on that domain.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $k_m=\frac{2\pi mc}{h}$; $\vec\omega_{\mathrm r}$ the rotor's body angular velocity; $\hat n_{\mathrm{rot}}$ its axis; $\mathcal V$ the mass function of the frame; $\epsilon=1/(k_{\Phi}L)$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $\nu_m=\frac{mc}{h}$; $\vec\omega_{\mathrm r}$ the rotor's body angular velocity; $\hat n_{\mathrm{rot}}$ its axis; $\mathcal V$ the mass function of the frame; $\epsilon=1/(2\pi\nu_{\Phi}L)$.
 ## The Action in the Non-Quantum Limit: The One-Form
 
 $$
 S=\int\mathrm{d}t'\;\Bigl\{\frac{h}{2\pi} c\,\varrho^{2}\Bigl[\cosh\theta_{\mathrm{rpd}}\,\mathrm{d}\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\bigl(\tilde u_{\mathrm r}^{-1}\mathrm{d}\tilde u_{\mathrm r}\bigr)\Bigr]-U\Bigr\},
 \qquad
-U=\frac{h}{2\pi} c\,k_m\,\varrho^{2}\,\mathcal{V}.
+U=\frac{h}{2\pi} c\,2\pi\nu_m\,\varrho^{2}\,\mathcal{V}.
 $$
 
 The bracket is a one-form and it is the phase's momentum plus the spin's. Its first term is the phase rate weighted by $\cosh\theta_{\mathrm{rpd}}=\gamma$; its second is the rotor's body angular velocity weighted by $\sinh\theta_{\mathrm{rpd}}=\gamma\beta$. The two weights are the boost's two hyperbolic functions, so the one-form is the four-velocity contracted with the two rates.
@@ -54,7 +54,7 @@ $\Omega_{xy}\dot q^{y}=\partial_x U$ with $\Omega=\mathrm{d}A$ closed because $\
 
 The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$, and the two chiral densities carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ so that their sum is real. The limit's action keeps the density and the phase gradients and drops the block that carries the spin's second derivatives. Each kept term is real, and the deletion removes real terms, so the pair is untouched.
 
-$k_m$ is real; the momentum-space counterpart of the same statement is that the symbol is Hermitian. The limit does not change the symbol's type, only the terms in which it appears.
+$\nu_m$ is real; the momentum-space counterpart of the same statement is that the symbol is Hermitian. The limit does not change the symbol's type, only the terms in which it appears.
 
 The selection rule. Declared. No free potential; the action's coefficients are the mass and the metric's weights, and neither admits an inadmissible sector.
 
@@ -136,7 +136,7 @@ The phase rotation is a symmetry, and its conserved quantity is the momentum tha
 
 The rotor's momentum is $-\frac{h}{2\pi} c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, a vector along the boost axis weighted by the rapidity. Its conservation is the statement that the spin direction is transported without precession in the free theory, and the mass term is what couples the spin direction to the momentum, so the free conservation is exact and the coupled one is not.
 
-The Legendre transform of a first-order action is $E=U$, because $p\dot q=A\dot q$ cancels the kinetic term. So the energy of a configuration is the mass term evaluated on it, $U=\frac{h}{2\pi} c\,k_m\varrho^{2}\mathcal V$, and the equation of motion is the statement that the flow is tangent to the level surfaces of $U$ in the symplectic form $\Omega$. The energy carries the mass and the density does not, which is the limit's version of the split the element article makes.
+The Legendre transform of a first-order action is $E=U$, because $p\dot q=A\dot q$ cancels the kinetic term. So the energy of a configuration is the mass term evaluated on it, $U=\frac{h}{2\pi} c\,2\pi\nu_m\varrho^{2}\mathcal V$, and the equation of motion is the statement that the flow is tangent to the level surfaces of $U$ in the symplectic form $\Omega$. The energy carries the mass and the density does not, which is the limit's version of the split the element article makes.
 ## What the Principle Adds and What It Relabels: By the Variational Route
 
 *The order-zero conditions are momenta and not assumptions.* The mass shell and the polarisation are the vanishing of $p_r$, $p_{\theta_{\mathrm{rpd}}}$ and $p_{\vec u_{\mathrm b}}$. A reader who wants to know why the frame is algebraic at leading order finds the answer in the Lagrangian's linearity, not in an argument about the field's slow variation.
@@ -170,7 +170,7 @@ The price is exact: with no discarded term there is no accuracy estimate, and wi
 | $\mathcal V$ | The mass function of the frame, independent of $\varrho$ and $\theta_{\mathrm{pha}}$ |
 | $i\vec v$ | The fixed direction, transverse to $\vec e_z$, that the mass term requires |
 | $\Omega=\mathrm{d}A$ | The closed, degenerate two-form |
-| $\epsilon=1/(k_{\Phi}L)$ | The parameter of the ordering |
+| $\epsilon=1/(2\pi\nu_{\Phi}L)$ | The parameter of the ordering |
 ## Further Reading
 - [The Lagrangian and the Dirac Equation in Polar Variables](the-lagrangian-and-the-dirac-equation-in-polar-variables.html), the parent: the action, the one-form, the mass term's fixed direction and Takabayasi's multipliers.
 - [The Dirac Equation in the Non-Quantum Limit](the-dirac-equation-in-the-non-quantum-limit.html), the companion: the four brackets, the algebraic frame and the three transport laws.

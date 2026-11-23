@@ -25,14 +25,14 @@ The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=
 The action and the weight. The companion's action is
 
 $$
-S[\tilde\Xi]=\frac{h}{4\pi}\int d^{4}r\;\Bigl[\mathrm{Sc}\bigl(\partial_{r'_t}\tilde\Xi^{*}\,\partial_{r'_t}\tilde\Xi\bigr)-\sum_{\eta=1}^{3}\mathrm{Sc}\bigl(\partial_{\eta}\tilde\Xi^{*}\,\partial_{\eta}\tilde\Xi\bigr)-k_m^{2}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)\Bigr],
+S[\tilde\Xi]=\frac{h}{4\pi}\int d^{4}r\;\Bigl[\mathrm{Sc}\bigl(\partial_{r'_t}\tilde\Xi^{*}\,\partial_{r'_t}\tilde\Xi\bigr)-\sum_{\eta=1}^{3}\mathrm{Sc}\bigl(\partial_{\eta}\tilde\Xi^{*}\,\partial_{\eta}\tilde\Xi\bigr)-4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)\Bigr],
 $$
 
-with the metric of the material coordinate written out: the temporal slot enters with $+$ and the three spatial ones with $-$, which is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ in explicit form. This is the free companion's action with the same convention; the companion's $\frac12\int\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ differs from it by a boundary term, and the polar bracket below follows from this display through the identity $\mathrm{Sc}(\partial_{\imath}\tilde\Xi^{*}\partial_{\imath}\tilde\Xi)=(\partial_{\imath} \varrho)^{2}+\varrho^{2}(\partial_{\imath}\theta_{\mathrm{pha}})^{2}$. The weight of one configuration is $\exp(\frac{2\pi iS}{h})$, central and $*$-unitary. On a central field $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ the weight becomes
+with the metric of the material coordinate written out: the temporal slot enters with $+$ and the three spatial ones with $-$, which is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ in explicit form. This is the free companion's action with the same convention; the companion's $\frac12\int\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde\Xi]$ differs from it by a boundary term, and the polar bracket below follows from this display through the identity $\mathrm{Sc}(\partial_{\imath}\tilde\Xi^{*}\partial_{\imath}\tilde\Xi)=(\partial_{\imath} \varrho)^{2}+\varrho^{2}(\partial_{\imath}\theta_{\mathrm{pha}})^{2}$. The weight of one configuration is $\exp(\frac{2\pi iS}{h})$, central and $*$-unitary. On a central field $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ the weight becomes
 
 $$
-\frac{2\pi i}{h}S=\frac{i}{2}\int d^{4}r\;\Bigl[(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}
-+\varrho^{2}\Bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)-k_m^{2}\varrho^{2}\Bigr].
+\frac{i}{h}S=\frac{i}{2}\int d^{4}r\;\Bigl[(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}
++\varrho^{2}\Bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)-4\pi^{2}\nu_m^{2}\varrho^{2}\Bigr].
 $$
 
 The factor two, stated once. The bracket is the Madelung functional of the variational companion, *The Lagrangian and the Klein–Gordon Equation in Polar Variables*, §*The action, assembled*, which writes it without the $\frac{h}{2\pi}$ and without the $\tfrac12$. The companion's action is $\frac{h}{2\pi}$ times the half of it, so the weight is $\exp(\tfrac{i}{2}S_{\mathrm{Madelung}})$. The stationarity is unaffected by the constant, and every equation below is the variational companion's.
@@ -63,7 +63,7 @@ What the measure does not contain. It is invariant under a central phase, becaus
 
 ## The Exponent
 
-Two terms and no cross term. The weight's bracket of §*Conventions* is a sum of a scale part, $(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}-k_m^{2}\varrho^{2}$, and a phase part, $\varrho^{2}\bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr)$. The two are separate because a central field's word is a product of a real function and an invertible element, and the derivative of a product separates into the derivative of the modulus and the modulus times the derivative of the phase.
+Two terms and no cross term. The weight's bracket of §*Conventions* is a sum of a scale part, $(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}-\nu_m^{2}\varrho^{2}$, and a phase part, $\varrho^{2}\bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr)$. The two are separate because a central field's word is a product of a real function and an invertible element, and the derivative of a product separates into the derivative of the modulus and the modulus times the derivative of the phase.
 
 No term of the exponent contains $\theta_{\mathrm{pha}}$. The angle is a cyclic coordinate at every point, and the gauge transformation of the coupled companion is the translation of that coordinate. In the free case the consequence is the article's main structural fact: the phase is integrated over a circle at every point and its value nowhere appears, so the phase integral sees only the gradient field.
 
@@ -74,7 +74,7 @@ The scale enters twice, and the second time is the coupling. The scale appears a
 Stationarity in the scale. Varying $\varrho$ in the bracket of §*Conventions* gives
 
 $$
-\Box_\Phi \varrho=\varrho\Bigl[k_m^{2}-\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr],
+\Box_\Phi \varrho=\varrho\Bigl[4\pi^{2}\nu_m^{2}-\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr],
 $$
 
 which is the amplitude equation of the polar equation article, §*The amplitude equation*, rearranged. Read through $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and multiplied by $\frac{h^{2}}{4\pi^{2}}$, it is $(\partial_{r'_t}S_{\tilde\Xi})^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/\varrho$, the mass shell shifted by the quantum potential.
@@ -101,7 +101,7 @@ What the constraint is not. The constraint is the divergence of a current and no
 
 ## The Scale's Integral
 
-At fixed angle the scale's integral is Gaussian. The bracket is quadratic in $\varrho$ and in $\partial \varrho$, with the coefficient $\varrho^{2}\bigl((\partial_{t}\theta)^{2}-\lvert\nabla\theta\rvert^{2}\bigr)-k_m^{2}$ multiplying $\varrho^{2}$. So the two integrals are nested and either may be done first, and the chart's two orders are the two saddles of §*The Two Saddles Are the Companion's Pair* in the opposite order.
+At fixed angle the scale's integral is Gaussian. The bracket is quadratic in $\varrho$ and in $\partial \varrho$, with the coefficient $\varrho^{2}\bigl((\partial_{t}\theta)^{2}-\lvert\nabla\theta\rvert^{2}\bigr)-\nu_m^{2}$ multiplying $\varrho^{2}$. So the two integrals are nested and either may be done first, and the chart's two orders are the two saddles of §*The Two Saddles Are the Companion's Pair* in the opposite order.
 
 The radial domain is automatic. The Cartesian integral runs over the whole plane at each point; the chart's runs over $\varrho\ge0$ with the weight $\varrho$, and the two agree because the polar map of the plane is onto the half-line with that Jacobian. There is no image of $\varrho<0$ to compensate.
 
@@ -127,14 +127,14 @@ The Wick rotation turns the bracket into four squares. With $i r'_t=c\tau$ the b
 
 $$
 S_{E}=\frac{1}{2}\int d^{4}r_{E}\;\Bigl[(\partial_{c\tau}\varrho)^{2}+\lvert\nabla \varrho\rvert^{2}
-+\varrho^{2}\Bigl((\partial_{c\tau}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)+k_m^{2}\varrho^{2}\Bigr],
++\varrho^{2}\Bigl((\partial_{c\tau}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)+4\pi^{2}\nu_m^{2}\varrho^{2}\Bigr],
 $$
 
 and the weight is $\exp(-S_E)$. Four terms and every one of them positive. The convergence of the Euclidean functional is term by term in the chart, and this is the sharpest form of the companion's statement that the Euclidean quadratic form is the biquaternion norm on the quaternion subspace.
 
-The mass is the only term that can change sign. For $k_m^{2}<0$ the last term is negative, the radial integral grows at large $\varrho$, and it does so uniformly in the angle because no other term contains $\theta_{\mathrm{pha}}$'s value. The instability is radial and it is in the zero mode, which is the companion's tachyon statement read as the failure of one of the four squares.
+The mass is the only term that can change sign. For $\nu_m^{2}<0$ the last term is negative, the radial integral grows at large $\varrho$, and it does so uniformly in the angle because no other term contains $\theta_{\mathrm{pha}}$'s value. The instability is radial and it is in the zero mode, which is the companion's tachyon statement read as the failure of one of the four squares.
 
-The marginal case is visible in the chart and not in the Cartesian form. At $k_m^{2}=0$ the constant mode has no restoring term in either variable, and the radial weight $\varrho\,\mathrm{d}\varrho$ leaves the integral of that mode divergent at large $\varrho$. The chart names the mode: it is the one with $\varrho$ constant and $\theta_{\mathrm{pha}}$ constant.
+The marginal case is visible in the chart and not in the Cartesian form. At $\nu_m^{2}=0$ the constant mode has no restoring term in either variable, and the radial weight $\varrho\,\mathrm{d}\varrho$ leaves the integral of that mode divergent at large $\varrho$. The chart names the mode: it is the one with $\varrho$ constant and $\theta_{\mathrm{pha}}$ constant.
 
 The angle is compact and the weight is its measure. In the Euclidean chart the phase runs over a circle with the weight $\varrho^{2}(\partial\theta)^{2}$, which is the form of the planar model with a radial stiffness. The chart does not add a mechanism here; it records that the two variables of the exponent are one compact and one non-compact, and that the compact one appears only through its gradient.
 
@@ -188,7 +188,7 @@ The Klein–Gordon functional integral read in the word is the integral over a s
 
 $$
 \frac{i}{2}\int d^{4}r\;\Bigl[(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}
-+\varrho^{2}\Bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)-k_m^{2}\varrho^{2}\Bigr].
++\varrho^{2}\Bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)-\nu_m^{2}\varrho^{2}\Bigr].
 $$
 
 Three structural facts follow. The measure is a functional of the scale alone, so it is gauge invariant and positive, and its continuum form is a product over points that is exact on a lattice and formal in the continuum. The exponent is free of the angle's value, so the angle's integral is a Gaussian whose saddle is the transport equation: the phase is a constraint, and the pair of the variational companion is the pair of saddles. The chart's failure at the nodes is invisible, because the Jacobian vanishes there.
@@ -210,11 +210,11 @@ The placement table is the reading. The scale sits in the measure and in the exp
 | $\exp(\frac{2\pi iS}{h})$ | The weight; central and $*$-unitary |
 | $g_{ab}$ | The parameter metric of the polar variational companion; $g_{r\varrho}=1$, $g_{\theta\theta}=\varrho^{2}$ on the centre |
 | $S_{\mathrm{Madelung}}$ | The variational companion's polar action; the weight is $\exp(\tfrac{i}{2}S_{\mathrm{Madelung}})$ |
-| $\Box_\Phi \varrho=\varrho\bigl[k_m^{2}-(\partial_{r'_t}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr]$ | The amplitude equation; the scale's saddle |
+| $\Box_\Phi \varrho=\varrho\bigl[4\pi^{2}\nu_m^{2}-(\partial_{r'_t}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr]$ | The amplitude equation; the scale's saddle |
 | $\sum_{\imath}\partial_{\imath}(\rho_{\mathrm{num}}\partial_{\imath}\theta_{\mathrm{pha}})=0$ | The transport equation; the angle's saddle |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | The density |
 | $S_{E}$ | The Euclidean bracket; four squares |
-| $k_m=\frac{2\pi mc}{h}$ | The mass parameter |
+| $\nu_m=\frac{mc}{h}$ | The mass parameter |
 
 ## Further Reading
 

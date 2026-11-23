@@ -10,31 +10,31 @@ At zero mass, on the label cone, the fluid description stops. The word has no va
 
 Between the two regimes the passage is a limit, and the limit can be counted. Two families are involved and they approach two different sets: a four-momentum, whose invariant mass $m^{2}c^{2}$ vanishes as its speed reaches $c$, and a field, whose density does not move while its quantum layer diverges as $1/m$. Both counts are made of values of a fluid that exists at that mass, which is what distinguishes this article's subject from a fluid on the cone.
 
-What is proved here is that at $k_m=0$ the label's null cone and the pole set are one level set, and that the two charts' failures are one object because the kernel of a null symbol is a right ideal every element of which has zero norm. **The containment is the theorem; the approach is its physical reading; the absence of a fluid at the cone is its consequence.**
+What is proved here is that at $\nu_m=0$ the label's null cone and the pole set are one level set, and that the two charts' failures are one object because the kernel of a null symbol is a right ideal every element of which has zero norm. **The containment is the theorem; the approach is its physical reading; the absence of a fluid at the cone is its consequence.**
 
 ## Conventions and Notation
 
 The element and its two norms. $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_k^{2}=-e_t$, with $i$ central. $N(\tilde Q)=\sum_{\imath} Q_{\imath}^{2}$ is the **quaternionic norm**, complex and multiplicative, vanishing exactly on the zero divisors; $\langle\tilde Q\rangle_{*}=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ is the **Euclidean size**, real and definite. The modulus is the invariant and the size is the frame-dependent number [The Two Scales of the Field](../articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.html).
 
-The label. The corpus writes a four-vector with an imaginary time coefficient, $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$, so that
+The label. The corpus writes a four-vector with an imaginary time coefficient, $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$, so that
 
 $$
-N(\tilde K_\Phi)=-k_t'^{2}+\lvert\vec k_\Phi\rvert^{2}\in\mathbb{R},
+N(\tilde\Upsilon_\Phi)=-\nu_t'^{2}+\lvert\vec\nu_\Phi\rvert^{2}\in\mathbb{R},
 $$
 
-the mass shell being $N(\tilde K_\Phi)=-k_m^{2}$, that is $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$ [Four-Vectors and the Interval](four-vectors-and-the-interval.html). $k_m$ is the mass in wave-number units, the block's $\frac{2\pi mc}{h}$. The **label cone** is $N(\tilde K_\Phi)=0$, that is $k_t'=\lvert\vec k_\Phi\rvert$.
+the mass shell being $N(\tilde\Upsilon_\Phi)=-\nu_m^{2}$, that is $\nu_t'^{2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$ [Four-Vectors and the Interval](four-vectors-and-the-interval.html). $\nu_m$ is the mass in wave-number units, the block's $\frac{2\pi mc}{h}$. The **label cone** is $N(\tilde\Upsilon_\Phi)=0$, that is $\nu_t'=\lvert\vec\nu_\Phi\rvert$.
 
-The two symbols. The scalar rung's operator $\Box_\Phi-k_m^{2}$ has the scalar symbol
+The two symbols. The scalar rung's operator $\Box_\Phi-4\pi^{2}\nu_m^{2}$ has the scalar symbol
 
 $$
-\mathcal N(\tilde K_\Phi)=k_t'^{2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2},
+\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'^{2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2},
 $$
 
-which is the single number the propagator inverts, and which equals $-N(\tilde K_\Phi)-k_m^{2}$ by the definition of the label's norm. The two glyphs are visually close and are different objects: $N$ is the quaternionic norm of an element, script $\mathcal N$ is the symbol of an operator, and the sign between them is a minus. A reader who drops the script from $\mathcal N$ sees the self-reference $\mathcal N=-N-k_m^{2}$ where there is none, so the definition is given above in components and the relation to $N$ second.
+which is the single number the propagator inverts, and which equals $-N(\tilde\Upsilon_\Phi)-\nu_m^{2}$ by the definition of the label's norm. The two glyphs are visually close and are different objects: $N$ is the quaternionic norm of an element, script $\mathcal N$ is the symbol of an operator, and the sign between them is a minus. A reader who drops the script from $\mathcal N$ sees the self-reference $\mathcal N=-N-4\pi^{2}\nu_m^{2}$ where there is none, so the definition is given above in components and the relation to $N$ second.
 
-The first-order rung has the algebra-valued symbol $\Sigma(\tilde K_\Phi)$, an element of the algebra to be left-multiplied. For the massless case $\Sigma(\tilde K_\Phi)=\tilde K_\Phi$ and the equation is the Weyl one. For the massive case this article evaluates nothing: the only property used is that the symbol is invertible wherever the label is off the pole set, and the rung table of §*What Each Rung Loses* records that property and no formula. Stating the massive symbol in closed form would require committing to a chiral convention that the corner does not test, and the corner is the only case examined here. The distinction matters at the corner and is the subject of §*What Each Rung Loses*.
+The first-order rung has the algebra-valued symbol $\Sigma(\tilde\Upsilon_\Phi)$, an element of the algebra to be left-multiplied. For the massless case $\Sigma(\tilde\Upsilon_\Phi)=\tilde\Upsilon_\Phi$ and the equation is the Weyl one. For the massive case this article evaluates nothing: the only property used is that the symbol is invertible wherever the label is off the pole set, and the rung table of §*What Each Rung Loses* records that property and no formula. Stating the massive symbol in closed form would require committing to a chiral convention that the corner does not test, and the corner is the only case examined here. The distinction matters at the corner and is the subject of §*What Each Rung Loses*.
 
-The null label and the projector. The only spatial axis this article uses is $\vec u$, a unit real pure quaternion, and it is the direction of the null momentum and not a choice of notation: for the physical family $\vec u=-\vec u_p$, with $\vec u_p=\vec k_\Phi/\lvert\vec k_\Phi\rvert$. A null label along it is $\tilde K_\Phi=k\bigl(ie_t+\vec u\bigr)$ with $k\neq0$ real, whose norm is $N=-k^{2}+k^{2}=0$. The projector $\tilde\Pi_{\mathrm{id}}=\tfrac12\bigl(e_t+i\vec u\bigr)$ and $\tilde\Pi_{\mathrm{id},-}=\tfrac12\bigl(e_t-i\vec u\bigr)$. Both are **idempotent**, $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$, both have $N(\tilde\Pi_{\mathrm{id}})=0$, and both have Euclidean size $\tfrac12$. They are the two helicities of a null direction, and they are the simplest nonzero elements of the value cone.
+The null label and the projector. The only spatial axis this article uses is $\vec u$, a unit real pure quaternion, and it is the direction of the null momentum and not a choice of notation: for the physical family $\vec u=-\vec u_p$, with $\vec u_p=2\pi\vec\nu_\Phi/\lvert2\pi\vec\nu_\Phi\rvert$. A null label along it is $\tilde\Upsilon_\Phi=k\bigl(ie_t+\vec u\bigr)$ with $k\neq0$ real, whose norm is $N=-k^{2}+k^{2}=0$. The projector $\tilde\Pi_{\mathrm{id}}=\tfrac12\bigl(e_t+i\vec u\bigr)$ and $\tilde\Pi_{\mathrm{id},-}=\tfrac12\bigl(e_t-i\vec u\bigr)$. Both are **idempotent**, $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$, both have $N(\tilde\Pi_{\mathrm{id}})=0$, and both have Euclidean size $\tfrac12$. They are the two helicities of a null direction, and they are the simplest nonzero elements of the value cone.
 
 Why the axis is named and not written as a basis unit. Every identity below is built from $e_t$, from $\vec u$ and from the two relations $\vec u^{2}=-e_t$ and $e_t\vec u=\vec u e_t=\vec u$, which hold for every unit real $\vec u$. Under the automorphism $u\mapsto sus^{-1}$ for a unit versor $s$ each identity therefore returns itself with $\vec u$ replaced, so none of them privileges a spatial direction. A display that wrote the same formulas with an unmarked basis unit would state a fact about the page and not about the algebra, and the test applied here is the one in [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused) §*The Test Is Covariance*. The direction is the momentum's, it is carried by an object of the sentence, and the reader can rotate it.
 
@@ -44,13 +44,13 @@ Units and conventions. All statements are algebraic and hold at one event or at 
 
 The fluid chart is a chart on values. Given $\tilde\Xi$, it extracts $\varrho$, $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$ and the two axes. The extraction is total off the value cone and undefined on it, because the word needs $\varrho^{2}=\lvert N(\tilde\Xi)\rvert$ and the norm vanishes there.
 
-The Fourier chart is a chart on labels. Given a mode, it names a point $\tilde K_\Phi$ and writes the mode's weight as the reciprocal of the symbol at that point. The extraction is total off the pole set and undefined on it, because the reciprocal needs $\mathcal N(\tilde K_\Phi)\neq0$ and the symbol vanishes there.
+The Fourier chart is a chart on labels. Given a mode, it names a point $\tilde\Upsilon_\Phi$ and writes the mode's weight as the reciprocal of the symbol at that point. The extraction is total off the pole set and undefined on it, because the reciprocal needs $\mathcal N(\tilde\Upsilon_\Phi)\neq0$ and the symbol vanishes there.
 
 Nothing in either chart refers to the other's variable. One is a condition on the field at an event, the other a condition on a label; the first is two real equations on eight real coordinates, the second is one real equation on four. The two failures differ in codimension before they differ in anything else.
 
 | | fluid chart | Fourier chart |
 | --- | --- | --- |
-| variable | the value $\tilde\Xi(X)$ | the label $\tilde K_\Phi$ |
+| variable | the value $\tilde\Xi(X)$ | the label $\tilde\Upsilon_\Phi$ |
 | fails when | $N(\tilde\Xi)=0$ | the symbol has no inverse |
 | the set | the value cone, real codimension two | the pole set, real codimension one |
 | what is lost | the word: $\varrho$, the phase, the velocity | the weight: the reciprocal symbol |
@@ -63,14 +63,14 @@ The two "what survives" entries are the useful ones. A failure of a chart is not
 Both failures are level sets of one function, read in two spaces. The label's norm is real, so its level sets are genuine hypersurfaces, and the two that matter are
 
 $$
-\underbrace{N(\tilde K_\Phi)=0}_{\text{label cone}}\qquad\text{and}\qquad \underbrace{N(\tilde K_\Phi)=-k_m^{2}}_{\text{pole set}} .
+\underbrace{N(\tilde\Upsilon_\Phi)=0}_{\text{label cone}}\qquad\text{and}\qquad \underbrace{N(\tilde\Upsilon_\Phi)=-\nu_m^{2}}_{\text{pole set}} .
 $$
 
-The mass is their spacing, and nothing else is. For $k_m\neq0$ no label satisfies both equations, since the two require $N(\tilde K_\Phi)$ to be two different numbers; for $k_m=0$ the two level sets are one set. This is the whole content of the parameter: not that the mass term shifts the dispersion, which is obvious, but that it is the only quantity in the block whose vanishing makes the two failures coincide in the label space.
+The mass is their spacing, and nothing else is. For $\nu_m\neq0$ no label satisfies both equations, since the two require $N(\tilde\Upsilon_\Phi)$ to be two different numbers; for $\nu_m=0$ the two level sets are one set. This is the whole content of the parameter: not that the mass term shifts the dispersion, which is obvious, but that it is the only quantity in the block whose vanishing makes the two failures coincide in the label space.
 
 Checked at four labels. The third column is the scalar symbol, the fourth says whether the propagator exists:
 
-| $k_t'$ | $\lvert\vec k_\Phi\rvert$ | $k_m$ | $N(\tilde K_\Phi)$ | $\mathcal N$ | propagator |
+| $\nu_t'$ | $\lvert\vec\nu_\Phi\rvert$ | $\nu_m$ | $N(\tilde\Upsilon_\Phi)$ | $\mathcal N$ | propagator |
 | --- | --- | --- | --- | --- | --- |
 | $1$ | $0$ | $1$ | $-1$ | $0$ | pole, on shell |
 | $2$ | $\sqrt3$ | $1$ | $-1$ | $0$ | pole, on shell |
@@ -120,7 +120,7 @@ Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\varrho}{\varrho}\ \prop
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}\ \propto\ \frac{1}{m},
 $$
 
-and the quantum stress $\sigma^{Q}_{ij}$ carries the same factor. So the whole quantum layer of a fixed field diverges as the mass vanishes. Checked on the two-mode superposition $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$ with $\eta=0.2$ and $\Delta k=1$ in units of $k_m$:
+and the quantum stress $\sigma^{Q}_{ij}$ carries the same factor. So the whole quantum layer of a fixed field diverges as the mass vanishes. Checked on the two-mode superposition $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$ with $\eta=0.2$ and $\Delta k=1$ in units of $\nu_m$:
 
 | $m$ | $Q_{\mathrm{qnt}}$ | $mQ_{\mathrm{qnt}}$ |
 | --- | --- | --- |
@@ -138,7 +138,7 @@ $$
 
 which contains no mass at all. At fixed energy the rate of momentum transfer is the same at every mass: **the Bohm potential diverges and the Bohm force does not.** A reader who quotes "$Q_{\mathrm{qnt}}$ diverges" as the statement that the guidance fails near the wall has quoted the potential and not the force.
 
-The velocity defect is the fastest divergence in the block. Since $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ and $Q_{\mathrm{qnt}}\propto1/m$, the defect grows as $1/m^{2}$: $-0.021$ at $k_m=1\ \mathrm{fm^{-1}}$, $-0.083$ at $2\ \mathrm{fm^{-1}}$ and $-0.333$ at $4\ \mathrm{fm^{-1}}$, a factor four for each halving. So the velocity is invertible only at a mode, and its departure from the unit is the quantity that fails first.
+The velocity defect is the fastest divergence in the block. Since $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ and $Q_{\mathrm{qnt}}\propto1/m$, the defect grows as $1/m^{2}$: $-0.021$ at $2\pi\nu_m=1\ \mathrm{fm^{-1}}$, $-0.083$ at $2\ \mathrm{fm^{-1}}$ and $-0.333$ at $4\ \mathrm{fm^{-1}}$, a factor four for each halving. So the velocity is invertible only at a mode, and its departure from the unit is the quantity that fails first.
 
 ### What the Approach Does, Said in Fluid Words
 
@@ -178,30 +178,30 @@ This is neither a failure of the reading nor a defect of the algebra. $\rho_{\ma
 
 ## The Label Chart at Zero Mass
 
-At $k_m=0$ and on the cone, the first-order symbol is a null element, and left multiplication by a null element is not invertible in a measured way. With $\tilde K_\Phi=ik e_t+k\vec u$ for a null label of frequency $k$,
+At $\nu_m=0$ and on the cone, the first-order symbol is a null element, and left multiplication by a null element is not invertible in a measured way. With $\tilde\Upsilon_\Phi=ik e_t+k\vec u$ for a null label of frequency $k$,
 
 $$
-N(\tilde K_\Phi)=0,\qquad \tilde K_\Phi\neq0,\qquad \operatorname{rank}L_{\tilde K_\Phi}=4\ \text{of}\ 8,
+N(\tilde\Upsilon_\Phi)=0,\qquad \tilde\Upsilon_\Phi\neq0,\qquad \operatorname{rank}L_{\tilde\Upsilon_\Phi}=4\ \text{of}\ 8,
 $$
 
 where $L_{\tilde Q}$ is left multiplication by $\tilde Q$ as a real linear map on the eight real coordinates. **Half the space is annihilated and half is not**, and that is the precise sense in which a null symbol fails: not by vanishing, but by halving.
 
-For the label $\tilde K_\Phi=k(ie_t+\vec u)$,
+For the label $\tilde\Upsilon_\Phi=k(ie_t+\vec u)$,
 
 $$
-\tilde K_\Phi\tilde\Pi_{\mathrm{id}}=0,\qquad \tilde K_\Phi\tilde\Pi_{\mathrm{id},-}=\tilde K_\Phi\neq0,
+\tilde\Upsilon_\Phi\tilde\Pi_{\mathrm{id}}=0,\qquad \tilde\Upsilon_\Phi\tilde\Pi_{\mathrm{id},-}=\tilde\Upsilon_\Phi\neq0,
 $$
 
 so the kernel is $\tilde\Pi_{\mathrm{id}}\,\mathbb{B}$, the set of right multiples of $\tilde\Pi_{\mathrm{id}}$: four real parameters, two complex. The wrong chirality is not annihilated at all — it is passed through unchanged, which is a stronger statement than "not in the kernel": the mirror projector leaves the symbol's action untouched. The mirror label annihilates the mirror idempotent and nothing else, which is the algebraic form of the statement that helicity is locked to momentum [Spin-Velocity Locking on the Degenerate Sector](spin-velocity-locking-on-the-degenerate-sector.html).
 
-At $k=1$ and $k=2.7$ the singular values of $L_{\tilde K_\Phi}$ are $\{2,2,2,2,0,0,0,0\}$ and $\{5.4,5.4,5.4,5.4,0,0,0,0\}$; the span of the four generators $\tilde\Pi_{\mathrm{id}}\vec e_{\imath}$ has rank four and is annihilated to zero; and the mirror product $\tilde K_\Phi\tilde\Pi_{\mathrm{id},-}$ equals $\tilde K_\Phi$ to $0$ exactly. *Proof and residuals: §*Appendix: The Algebra*.*
+At $k=1$ and $k=2.7$ the singular values of $L_{\tilde\Upsilon_\Phi}$ are $\{2,2,2,2,0,0,0,0\}$ and $\{5.4,5.4,5.4,5.4,0,0,0,0\}$; the span of the four generators $\tilde\Pi_{\mathrm{id}}\vec e_{\imath}$ has rank four and is annihilated to zero; and the mirror product $\tilde\Upsilon_\Phi\tilde\Pi_{\mathrm{id},-}$ equals $\tilde\Upsilon_\Phi$ to $0$ exactly. *Proof and residuals: §*Appendix: The Algebra*.*
 
 ## The Inverse It Keeps
 
-A rank drop of four is not a catastrophe, and the label chart's residue is a number. The singular values of $L_{\tilde K_\Phi}$ are $2\lvert k\rvert$ four times and zero four times, so the least-squares inverse exists, has rank four, and its norm is
+A rank drop of four is not a catastrophe, and the label chart's residue is a number. The singular values of $L_{\tilde\Upsilon_\Phi}$ are $2\lvert k\rvert$ four times and zero four times, so the least-squares inverse exists, has rank four, and its norm is
 
 $$
-\bigl\lVert L_{\tilde K_\Phi}^{+}\bigr\rVert=\frac{1}{2\lvert k\rvert} .
+\bigl\lVert L_{\tilde\Upsilon_\Phi}^{+}\bigr\rVert=\frac{1}{2\lvert k\rvert} .
 $$
 
 The least-squares problem therefore has a solution for every right-hand side, unique modulo the kernel and bounded by $\lVert W\rVert/(2\lvert k\rvert)$. The nonzero singular values are $2\lvert k\rvert$ and not $\lvert k\rvert$, so the factor of two is part of the algebra and not a normalisation: the row at $k=0.5$ is the check, its singular values being $1$ and its bound $1$, twice the frequency. Checked at four frequencies:
@@ -219,14 +219,14 @@ The scalar propagator's factor $1/\mathcal N$ has no bound as the pole is approa
 
 ## What Each Rung Loses
 
-The rank lost at the corner is the rung's, and the earlier article's sentence conflates two rungs. At the first-order rung the symbol is an algebra element and its failure is a rank drop of four. At the scalar rung the symbol is one number $\mathcal N$, and its failure at the corner is total. The "rank" column below is the rank of a multiplication in both rows, but not of the same multiplication: in the scalar row it is the rank of multiplication by the central element $\mathcal N(\tilde K_\Phi)$, in the first-order row that of left multiplication by the symbol itself.
+The rank lost at the corner is the rung's, and the earlier article's sentence conflates two rungs. At the first-order rung the symbol is an algebra element and its failure is a rank drop of four. At the scalar rung the symbol is one number $\mathcal N$, and its failure at the corner is total. The "rank" column below is the rank of a multiplication in both rows, but not of the same multiplication: in the scalar row it is the rank of multiplication by the central element $\mathcal N(\tilde\Upsilon_\Phi)$, in the first-order row that of left multiplication by the symbol itself.
 
-| rung | symbol | label on the cone, $k_m\neq0$ | label on the cone, $k_m=0$ |
+| rung | symbol | label on the cone, $\nu_m\neq0$ | label on the cone, $\nu_m=0$ |
 | --- | --- | --- | --- |
-| scalar, Klein–Gordon | the number $\mathcal N(\tilde K_\Phi)$ | $=-k_m^{2}$, nonzero, so invertible | $=0$, the operator is lost |
-| first order | the map $\Sigma(\tilde K_\Phi)$ | the pole is off the cone, so invertible | it becomes $\tilde K_\Phi$, null, real rank $4$ of $8$ |
+| scalar, Klein–Gordon | the number $\mathcal N(\tilde\Upsilon_\Phi)$ | $=-\nu_m^{2}$, nonzero, so invertible | $=0$, the operator is lost |
+| first order | the map $\Sigma(\tilde\Upsilon_\Phi)$ | the pole is off the cone, so invertible | it becomes $\tilde\Upsilon_\Phi$, null, real rank $4$ of $8$ |
 
-Spelled out in operators: the scalar row's rank is that of $\mathcal N(\tilde K_\Phi)L_{e_t}$, which is $8$ when $\mathcal N\neq0$ and $0$ when $\mathcal N=0$; the first-order row's is that of $L_{\tilde K_\Phi}$ itself, which drops from $8$ to $4$. Both rows are about left multiplication, which is why they can be compared at all, and the comparison is the point: one symbol loses all eight dimensions and the other loses half.
+Spelled out in operators: the scalar row's rank is that of $\mathcal N(\tilde\Upsilon_\Phi)L_{e_t}$, which is $8$ when $\mathcal N\neq0$ and $0$ when $\mathcal N=0$; the first-order row's is that of $L_{\tilde\Upsilon_\Phi}$ itself, which drops from $8$ to $4$. Both rows are about left multiplication, which is why they can be compared at all, and the comparison is the point: one symbol loses all eight dimensions and the other loses half.
 
 The scalar rung loses the operator, the first-order rung loses half of it. Both failures are "no inverse", and they are not equally severe: a scalar symbol that vanishes leaves no inverse and no kernel worth the name, while a null symbol leaves a four-dimensional kernel which is exactly the set of solutions.
 
@@ -234,10 +234,10 @@ If both rungs lost everything, the coincidence of the two cones would be a coinc
 
 ## The Value Chart at Zero Mass
 
-With $\varkappa$ a complex constant and $\theta=-k_t't'+\vec k_\Phi\cdot\vec X$,
+With $\varkappa$ a complex constant and $\theta=-2\pi\nu_t't'+2\pi\vec\nu_\Phi\cdot\vec X$,
 
 $$
-\tilde\Xi(X)=\varkappa\,\tilde\Pi_{\mathrm{id}}\,e^{i\theta},\qquad \tilde K_\Phi\,\tilde\Pi_{\mathrm{id}}=0,\qquad N(\tilde K_\Phi)=0,
+\tilde\Xi(X)=\varkappa\,\tilde\Pi_{\mathrm{id}}\,e^{i\theta},\qquad \tilde\Upsilon_\Phi\,\tilde\Pi_{\mathrm{id}}=0,\qquad N(\tilde\Upsilon_\Phi)=0,
 $$
 
 which solves the massless first-order equation exactly, because the symbol annihilates the amplitude.
@@ -301,20 +301,20 @@ At a given null label the solutions are a family, not a single wave. The kernel 
 
 The chiralities are two waves at two labels. The check is explicit:
 
-| label | amplitude | $\tilde K_\Phi\tilde\Xi_0$ |
+| label | amplitude | $\tilde\Upsilon_\Phi\tilde\Xi_0$ |
 | --- | --- | --- |
 | $k(ie_t+\vec u)$ | $\tfrac12(e_t+i\vec u)$ | $0$ |
 | $k(ie_t-\vec u)$ | $\tfrac12(e_t-i\vec u)$ | $0$ |
-| $k(ie_t+\vec u)$ | $\tfrac12(e_t-i\vec u)$ | $=\tilde K_\Phi\neq0$ |
-| $k(ie_t-\vec u)$ | $\tfrac12(e_t+i\vec u)$ | $=\tilde K_\Phi\neq0$ |
+| $k(ie_t+\vec u)$ | $\tfrac12(e_t-i\vec u)$ | $=\tilde\Upsilon_\Phi\neq0$ |
+| $k(ie_t-\vec u)$ | $\tfrac12(e_t+i\vec u)$ | $=\tilde\Upsilon_\Phi\neq0$ |
 
 Since $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec u)$,
 
 $$
-2ik\,\tilde\Pi_{\mathrm{id},-}=ik\bigl(e_t-i\vec u\bigr)=k\bigl(ie_t+\vec u\bigr)=\tilde K_\Phi ,
+2ik\,\tilde\Pi_{\mathrm{id},-}=ik\bigl(e_t-i\vec u\bigr)=k\bigl(ie_t+\vec u\bigr)=\tilde\Upsilon_\Phi ,
 $$
 
-so the entry $2ik\tilde\Pi_{\mathrm{id},-}$ in the earlier sentence is $\tilde K_\Phi$ itself, and the mirror projector passes the symbol through unchanged.
+so the entry $2ik\tilde\Pi_{\mathrm{id},-}$ in the earlier sentence is $\tilde\Upsilon_\Phi$ itself, and the mirror projector passes the symbol through unchanged.
 
 So the label selects the chirality and the chirality does not select the label. There is one surviving wave per future-null momentum, and the mirror momentum carries the mirror idempotent; the two are opposite momenta and not two labels on one direction. The count is one label, one chirality, one wave, which is helicity-momentum locking stated as a rank count rather than as a kinematic fact: the annihilated projector is determined by the sign of the spatial momentum, so a null direction taken as an unoriented axis carries both, and a momentum carries one.
 
@@ -326,17 +326,17 @@ The value chart leaves the pair $(\rho_{\mathrm{num}},\langle\tilde\Xi\rangle_{*
 
 The Lagrangian evaluates to zero on the wave for the same reason it evaluates to zero on every solution, the dispersion being satisfied there; the zero is the stationarity of a solution and not a pathology of the corner. What fails at the corner is the reading of the field and the inversion of the symbol, not the writing of either.
 
-Every null label is a corner at $k_m=0$, so the set is the whole label cone crossed with the amplitudes of §*One Factorisation, Two Failures*. What is special is not a single wave but the collapse of two level sets into one, and that collapse is the mass's absence.
+Every null label is a corner at $\nu_m=0$, so the set is the whole label cone crossed with the amplitudes of §*One Factorisation, Two Failures*. What is special is not a single wave but the collapse of two level sets into one, and that collapse is the mass's absence.
 
 ## Limits
 
-The identity is algebraic and its subject is a conditional. If $k_m=0$ and the label is null, then the symbol is null, the kernel is a right ideal of an idempotent, and every surviving value is on the cone. **No statement is made about any particular field of Nature.**
+The identity is algebraic and its subject is a conditional. If $\nu_m=0$ and the label is null, then the symbol is null, the kernel is a right ideal of an idempotent, and every surviving value is on the cone. **No statement is made about any particular field of Nature.**
 
 The rank is the rung's. At the first order the symbol keeps four of its eight dimensions; at the scalar order it keeps none. A reader who quotes "rank four" without the rung will be wrong half the time.
 
 The value cone is two real equations, the label cone one, so the two sets were never the same kind of object and only their level sets can coincide. "The same cone" is a shorthand for "one level set of one function", and this article does not use it in any other sense.
 
-Every null label is a corner at $k_m=0$, so the corner is a whole cone of labels and a single value of the mass; the rarity is in the mass, not in the mode.
+Every null label is a corner at $\nu_m=0$, so the corner is a whole cone of labels and a single value of the mass; the rarity is in the mass, not in the mode.
 
 The helicities are two and the family is four-dimensional. Neither count is a physical degeneracy statement; both are dimensions of real vector spaces, computed from the algebra.
 
@@ -346,7 +346,7 @@ The cone is not a state of the fluid. Every entry of §*The Two Families That Ap
 
 Two statements and one limit. At every positive mass the fluid exists in full; at zero mass on the cone it does not, and what the corner holds is a null current with a direction, an intensity and a sign. The mass carries the first into the second, and the passage is a limit and not a value.
 
-The two failures are level sets of one function $k_m^{2}$ apart. The fluid chart fails on the value cone $N(\tilde\Xi)=0$; the Fourier chart fails on the pole set $N(\tilde K_\Phi)=-k_m^{2}$; the mass is the height between them and $k_m=0$ is the one value at which they are one set.
+The two failures are level sets of one function $\nu_m^{2}$ apart. The fluid chart fails on the value cone $N(\tilde\Xi)=0$; the Fourier chart fails on the pole set $N(\tilde\Upsilon_\Phi)=-\nu_m^{2}$; the mass is the height between them and $\nu_m=0$ is the one value at which they are one set.
 
 At that value the two failures are one factorisation. The null symbol's kernel is $\tilde\Pi_{\mathrm{id}}\mathbb{B}$, and because $N$ is multiplicative and $N(\tilde\Pi_{\mathrm{id}})=0$, every element of the kernel is on the value cone: the set the label chart keeps is inside the set the value chart refuses. Verified to $9.2\times10^{-16}$ on two thousand random multiples, and proved in one line.
 
@@ -354,7 +354,7 @@ The wave carries a current and has no density. $N(\tilde\Xi)=0$ and $\langle\til
 
 "One wave" is one label, two helicities and a four-real-dimensional family. Each null label annihilates exactly one idempotent and the mirror label the mirror one, so helicity is locked to momentum by a rank count. And the wave is the null wave, not the one-sided one, since that word is already the Dirac chiral pair's.
 
-The corner is inhabited because the first-order rung loses only half. The scalar symbol vanishes outright at $k_m=0$ on the cone, so its multiplication operator drops from rank $8$ to rank $0$; the first-order symbol becomes null, dropping from $8$ to $4$, and the half it keeps is the half the value chart refuses. A rank count, not a coincidence.
+The corner is inhabited because the first-order rung loses only half. The scalar symbol vanishes outright at $\nu_m=0$ on the cone, so its multiplication operator drops from rank $8$ to rank $0$; the first-order symbol becomes null, dropping from $8$ to $4$, and the half it keeps is the half the value chart refuses. A rank count, not a coincidence.
 
 The label chart's failure is a projection and not a divergence. Its least-squares inverse exists at every nonzero frequency with norm $1/(2\lvert k\rvert)$, so the four dimensions the symbol loses are the four that inverse leaves undetermined: the measure of the failure is the measure of the survival, and the surviving part is the wave.
 
@@ -364,16 +364,16 @@ The label chart's failure is a projection and not a divergence. Its least-square
 | --- | --- |
 | $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, $\sum_{\imath} Q_{\imath}^{2}$, complex, multiplicative |
 | $\langle\tilde Q\rangle_{*}$ | the Euclidean size, $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ |
-| $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | the label, with imaginary time coefficient |
-| $k_m$ | the mass in wave-number units, the block's $\frac{2\pi mc}{h}$ |
-| $N(\tilde K_\Phi)=-k_t'^{2}+\lvert\vec k_\Phi\rvert^{2}$ | the label's norm (plain $N$); the mass shell is $-k_m^{2}$ |
-| $\mathcal N(\tilde K_\Phi)$ | the scalar symbol (script $\mathcal N$), $k_t'^{2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}$, equal to $-N-k_m^{2}$ |
-| $\Sigma(\tilde K_\Phi)$ | the algebra-valued symbol of the first-order rung |
+| $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | the label, with imaginary time coefficient |
+| $\nu_m$ | the mass in wave-number units, the block's $\frac{2\pi mc}{h}$ |
+| $N(\tilde\Upsilon_\Phi)=-\nu_t'^{2}+\lvert\vec\nu_\Phi\rvert^{2}$ | the label's norm (plain $N$); the mass shell is $-\nu_m^{2}$ |
+| $\mathcal N(\tilde\Upsilon_\Phi)$ | the scalar symbol (script $\mathcal N$), $\nu_t'^{2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}$, equal to $-N-\nu_m^{2}$ |
+| $\Sigma(\tilde\Upsilon_\Phi)$ | the algebra-valued symbol of the first-order rung |
 | $L_{\tilde Q}$ | left multiplication by $\tilde Q$ as a real map on eight coordinates |
 | $\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id},-}$ | $\tfrac12(e_t\pm i\vec u)$, idempotents on the value cone |
 | $\varkappa$ | the complex amplitude of the null wave |
 | $\vec u$ | the unit direction of the null momentum, $-\vec u_p$; the only spatial axis used, named so that every statement rotates |
-| $\vec u_p=\vec k_\Phi/\lvert\vec k_\Phi\rvert$ | the direction of the momentum |
+| $\vec u_p=2\pi\vec\nu_\Phi/\lvert2\pi\vec\nu_\Phi\rvert$ | the direction of the momentum |
 | $\gamma=E/(mc^{2})$ | the time-dilation factor; finite at $m>0$, absent at the cone |
 | $j_{\imath}$ | the current; $\tfrac{c}{2}\lvert\varkappa\rvert^{2}(1,\vec u)$ at the corner |
 | $\rho_{\mathrm{num}}=\lvert N\rvert$ | the proper density, the invariant length over $c$ |
@@ -397,7 +397,7 @@ The kernel is a right ideal. If $M_{\tilde Q}\tilde\Pi_{\mathrm{id}}=0$ then $M_
 
 ### The Idempotents and the Annihilation
 
-Claim. $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)$ satisfies $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$, $N(\tilde\Pi_{\mathrm{id}})=0$, $\langle\tilde\Pi_{\mathrm{id}}\rangle_{*}=\tfrac12$, and $\tilde K_\Phi\tilde\Pi_{\mathrm{id}}=0$ for the null label $\tilde K_\Phi=k(ie_t+\vec u)$ with $k\neq0$ real.
+Claim. $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)$ satisfies $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$, $N(\tilde\Pi_{\mathrm{id}})=0$, $\langle\tilde\Pi_{\mathrm{id}}\rangle_{*}=\tfrac12$, and $\tilde\Upsilon_\Phi\tilde\Pi_{\mathrm{id}}=0$ for the null label $\tilde\Upsilon_\Phi=k(ie_t+\vec u)$ with $k\neq0$ real.
 
 *Proof.* The square. Expand term by term, keeping the two cross terms and the two squares separate:
 
@@ -411,7 +411,7 @@ $$
 (ie_t+\vec u)(e_t+i\vec u)=ie_t^{2}+i^{2}e_t\vec u+\vec u e_t+i\vec u^{2}=ie_t-\vec u+\vec u-ie_t=0 ,
 $$
 
-using $e_t\vec u=\vec u$, $\vec u e_t=\vec u$ and $i^{2}\vec u^{2}=(-1)(-e_t)=e_t$. Every term cancels pairwise and no null condition is used: the product is zero for the factorisation $k(ie_t+\vec u)$ at any $k$, and the label's nullity is what makes that factorisation the label of a massless mode. The mirror is $(ie_t+\vec u)(e_t-i\vec u)=ie_t+\vec u+\vec u+ie_t=2(ie_t+\vec u)$, so $\tilde K_\Phi\tilde\Pi_{\mathrm{id},-}=\tilde K_\Phi$ and the mirror projector is in the kernel of nothing.
+using $e_t\vec u=\vec u$, $\vec u e_t=\vec u$ and $i^{2}\vec u^{2}=(-1)(-e_t)=e_t$. Every term cancels pairwise and no null condition is used: the product is zero for the factorisation $k(ie_t+\vec u)$ at any $k$, and the label's nullity is what makes that factorisation the label of a massless mode. The mirror is $(ie_t+\vec u)(e_t-i\vec u)=ie_t+\vec u+\vec u+ie_t=2(ie_t+\vec u)$, so $\tilde\Upsilon_\Phi\tilde\Pi_{\mathrm{id},-}=\tilde\Upsilon_\Phi$ and the mirror projector is in the kernel of nothing.
 
 ### The Containment
 
@@ -421,22 +421,22 @@ Claim. $\tilde\Pi_{\mathrm{id}}\mathbb{B}\subseteq\{\tilde Q: N(\tilde Q)=0\}$, 
 
 ### The Scalar Symbol at the Corner
 
-Claim. The scalar symbol $\mathcal N(\tilde K_\Phi)=k_t'^{2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}$ vanishes on the label cone exactly when $k_m=0$, and equals $-k_m^{2}$ there otherwise.
+Claim. The scalar symbol $\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'^{2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}$ vanishes on the label cone exactly when $\nu_m=0$, and equals $-\nu_m^{2}$ there otherwise.
 
-*Proof.* On the cone $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}$, so $\mathcal N=-k_m^{2}$. A central element $-k_m^{2}e_t$ is invertible whenever $k_m\neq0$, its inverse being $(-1/k_m^{2})e_t$, so $L$ has rank eight; and at $k_m=0$ the symbol is the zero element and $L$ has rank zero. This is why the scalar rung loses the whole operator and the first-order rung only half of it.
+*Proof.* On the cone $\nu_t'^{2}=\lvert\vec\nu_\Phi\rvert^{2}$, so $\mathcal N=-4\pi^{2}\nu_m^{2}$. A central element $-\nu_m^{2}e_t$ is invertible whenever $\nu_m\neq0$, its inverse being $(-1/\nu_m^{2})e_t$, so $L$ has rank eight; and at $\nu_m=0$ the symbol is the zero element and $L$ has rank zero. This is why the scalar rung loses the whole operator and the first-order rung only half of it.
 
 ### The Numerical Checks
 
 | check | statement | residual |
 | --- | --- | --- |
-| the null symbol is null | $N(\tilde K_\Phi)$ for $k=1$ and $k=2.7$ | $0$ identically |
-| the rank | singular values of $L_{\tilde K_\Phi}$ | $\{2,2,2,2,0,0,0,0\}$ and $\{5.4,5.4,5.4,5.4,0,0,0,0\}$ |
-| the annihilation | $\tilde K_\Phi\tilde\Pi_{\mathrm{id}}$ | $0$ |
-| the mirror mismatch | $\tilde K_\Phi\tilde\Pi_{\mathrm{id},-}$ against $2ik\tilde\Pi_{\mathrm{id},-}$ | $0$ |
+| the null symbol is null | $N(\tilde\Upsilon_\Phi)$ for $k=1$ and $k=2.7$ | $0$ identically |
+| the rank | singular values of $L_{\tilde\Upsilon_\Phi}$ | $\{2,2,2,2,0,0,0,0\}$ and $\{5.4,5.4,5.4,5.4,0,0,0,0\}$ |
+| the annihilation | $\tilde\Upsilon_\Phi\tilde\Pi_{\mathrm{id}}$ | $0$ |
+| the mirror mismatch | $\tilde\Upsilon_\Phi\tilde\Pi_{\mathrm{id},-}$ against $2ik\tilde\Pi_{\mathrm{id},-}$ | $0$ |
 | the idempotent | $\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}$ | $0$ |
 | the containment | $\max\lvert N(\tilde\Pi_{\mathrm{id}}\tilde B)\rvert$ over $2000$ random $\tilde B$ | $9.2\times10^{-16}$ |
 | the least-squares inverse | $\lVert L^{+}\rVert$ against $1/(2k)$ at four frequencies | $0$ |
-| the KG symbol | $\mathcal N$ on the cone at $k_m\in\{0,0.5,2\}$ | $0$, $-0.25$, $-4$ |
+| the KG symbol | $\mathcal N$ on the cone at $\nu_m\in\{0,0.5,2\}$ | $0$, $-0.25$, $-4$ |
 
 The proofs are the four claims above; the numbers confirm that the claims were transcribed into the corpus's conventions.
 

@@ -22,10 +22,10 @@ the last read on the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$, as
 
 **The field, its two members and the pair.** The field is one element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$, and the dynamics is the **chiral pair**
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
-two first-order equations, one per member, with massless limit $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. The two members are the two entries of the pair, each an element of $\mathbb{B}$, and the sum is the shorthand by which the two members are written on one symbol. They are **not** the two chiral projections of one element, and the reason is a one-line count: the gradient is a left multiplication with derivative coefficients, every left multiplication commutes with every right multiplication, so $\tilde\nabla_\Phi$ preserves every eigenspace of every right multiplication; an equation between two members lying in two different eigenspaces of the same right multiplication would read $0=m\times(\text{nonzero})$. The chiral-halves reading belongs to the basis operator formulation, where a two-sided basis operator could exchange the two lines, and it is exactly what the migration costs. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+two first-order equations, one per member, with massless limit $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. The two members are the two entries of the pair, each an element of $\mathbb{B}$, and the sum is the shorthand by which the two members are written on one symbol. They are **not** the two chiral projections of one element, and the reason is a one-line count: the gradient is a left multiplication with derivative coefficients, every left multiplication commutes with every right multiplication, so $\tilde\nabla_\Phi$ preserves every eigenspace of every right multiplication; an equation between two members lying in two different eigenspaces of the same right multiplication would read $0=m\times(\text{nonzero})$. The chiral-halves reading belongs to the basis operator formulation, where a two-sided basis operator could exchange the two lines, and it is exactly what the migration costs. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The two lines are the dynamics, and they are written as two lines. No letter gathers the two members into one object: a single glyph cannot hold an anti-Hermitian derivative next to a Hermitian mass, its adjoint would be a single sign, its metric would be chosen silently and never written, and its square would report one scalar for two members.
 
@@ -43,7 +43,7 @@ $$
 
 so that the **chirality operator** is $\tilde{Ξ}\mapsto\tilde{Ξ}\Gamma=-i\tilde{Ξ}\vec e_z$, a right multiplication written out and not a glyph for a map. In the source's basis operator formulation the chirality was a two-sided basis operator, a product of a left and a right multiplication, and in that form it could exchange the two lines of a column. Here the left factors cancel in pairs and what remains is the single right multiplication by $\Gamma$; a single-sided multiplication cannot exchange the two entries of a pair, and that loss is the point of the migration. What survives is the sign pattern: right multiplication by $\Gamma$ is $-1$ on the eigenspace of $R_\omega$ with eigenvalue $i$ and $+1$ on the eigenspace with eigenvalue $-i$, so $\Gamma$ is the pair sign $\mathrm{diag}(-1,+1)$ read on those two eigenspaces. That sign is the internal factor the discrete operations below use, and it is the only trace of the source's basis operator that they keep.
 
-The field is one element of the algebra and not a column, and nothing is introduced to hold the two entries. Every derivative in a display below belongs to the gradient and is taken with respect to the coordinates $Q_{\imath}$; the $i r'_t$ normalization $Q_t=i q'_t$ is used only where it is named, and a derivative with respect to $x_{\imath}=(r'_t,r_x,r_y,r_z)$ is written out when it is meant. Every display carries $c$ and $k_m=\frac{2\pi m\,c}{h}$, the mass-shell relation stated with both, and we borrow the plane-wave amplitudes and the spin sums of the solutions article unchanged.
+The field is one element of the algebra and not a column, and nothing is introduced to hold the two entries. Every derivative in a display below belongs to the gradient and is taken with respect to the coordinates $Q_{\imath}$; the $i r'_t$ normalization $Q_t=i q'_t$ is used only where it is named, and a derivative with respect to $x_{\imath}=(r'_t,r_x,r_y,r_z)$ is written out when it is meant. Every display carries $c$ and $\nu_m=\frac{m\,c}{h}$, the mass-shell relation stated with both, and we borrow the plane-wave amplitudes and the spin sums of the solutions article unchanged.
 
 The division between what is established and what is only transcribed is kept explicit throughout.
 
@@ -73,33 +73,33 @@ The two readings of one dynamics are the pair and the coordinate form of each me
 
 **The pair.** The gradient $\tilde\nabla_\Phi$ acts by left multiplication, and its quaternion conjugate squares with it to the scalar d'Alembertian. The chiral pair is the first-order dynamics of the algebra, and both of its equations are one-sided: no right multiplication appears in it, so no chirality operator appears either. Each member is first order, both are linear in the field, and the mass is the only term that carries the field from one entry to the other. Applying $(\tilde\nabla_\Phi)^{\natural}$ to the first member and substituting the second gives
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=\Box_\Phi\tilde{Ξ}_{R}=m\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m^{2}\tilde{Ξ}_{R},
-\qquad\text{that is}\qquad\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde{Ξ}_{R}=0,
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=\Box_\Phi\tilde{Ξ}_{R}=m\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R},
+\qquad\text{that is}\qquad\bigl(\Box_\Phi-4\pi^{2}\nu_m^{2}\bigr)\tilde{Ξ}_{R}=0,
 $$
 
 and the same holds for $\tilde{Ξ}_{L}$: each entry obeys the Klein–Gordon equation, and the completion of one entry is the other,
 $$
-\tilde{Ξ}_{L}=\frac{1}{k_m}\tilde\nabla_\Phi\tilde{Ξ}_{R},\qquad\tilde{Ξ}_{R}=\frac{1}{k_m}(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} .
+\tilde{Ξ}_{L}=\frac{1}{2\pi\nu_m}\tilde\nabla_\Phi\tilde{Ξ}_{R},\qquad\tilde{Ξ}_{R}=\frac{1}{2\pi\nu_m}(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} .
 $$
 
 **The two equations.** The dynamics is the two lines,
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 and nothing else is meant by a paired operator in this article. Each line is first order, and the second-order form is obtained by composing the two, since $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ are both the same scalar. No glyph gathers the two lines: it would carry no matrix generator and no chart, its only content would be which gradient acted on which member, and it would hide the adjoint and the metric that the two lines show.
 
-**The plane wave.** The wave numbers of the particle are $k_{t}^{\prime}=\frac{2\pi E_{\vec p}}{h\,c}$, $\vec k_\Phi=\frac{2\pi \vec p}{h}$ and $k_m=\frac{2\pi mc}{h}$, so the phase is the pure number $k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r$. On $e^{-i\theta_{\mathrm{pwp}}}$ the gradient acts by left multiplication by its symbol
+**The plane wave.** The wave numbers of the particle are $2\pi\nu_t^{\prime}=\frac{E_{\vec p}}{h\,c}$, $2\pi\vec\nu_\Phi=\frac{\vec p}{h}$ and $\nu_m=\frac{mc}{h}$, so the phase is the pure number $\nu_t^{\prime}r'_t-\vec\nu_\Phi\cdot\vec r$. On $e^{-i\theta_{\mathrm{pwp}}}$ the gradient acts by left multiplication by its symbol
 $$
-i\tilde K_{\Phi}=-k_{t}^{\prime}\,e_t+i\vec k_\Phi,\qquad
-i\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime}\,e_t-i\vec k_\Phi,\qquad
--\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}=k_m^{2} ,
+2\pi i\tilde\Upsilon_{\Phi}=-2\pi\nu_t^{\prime}\,e_t+2\pi i\vec\nu_\Phi,\qquad
+2\pi i\tilde\Upsilon_{\Phi}^{\natural}=-2\pi\nu_t^{\prime}\,e_t-2\pi i\vec\nu_\Phi,\qquad
+-\tilde\Upsilon_{\Phi}^{\natural}\tilde\Upsilon_{\Phi}=4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^{2}=4\pi^{2}\nu_m^{2} ,
 $$
 
 the last on the mass shell. The symbol is an element of the algebra, its square is not scalar, and its quaternion norm is the mass shell. This is the amplitude used in the verification below.
 
-The angle is $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real.
+The angle is $\theta_{\mathrm{pwp}}=\frac{p\cdot x}{h}=\omega r'_t-2\pi\vec\nu_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real.
 
 ### The Two Entries, the Sides, and What No Element Does
 
@@ -115,7 +115,7 @@ Let $\tilde{Ξ}$ solve the pair, with $m$ the mass. A discrete operation is a ma
 
 The test is a substitution, and one convention must be fixed before it can be made. **The conjugation here is applied to the field value at each point**, $J[\tilde{Ξ}](x)=\overline{\tilde{Ξ}(x)}$, and every check below is made on the differential equation. That choice is what makes the factors of $C$ and $T$ determinate; read instead on the amplitudes with the plane-wave basis held fixed, the two factors change places, which is the convention trap this article records rather than hides. The composition is the same under either reading, and the next sections verify it as a composition.
 
-Under the pointwise reading the arithmetic is short. On $e^{-i\theta_{\mathrm{pwp}}}$ the gradient acts as $i\tilde K_{\Phi}=-k_{t}^{\prime}e_t+i\vec k_\Phi$. Conjugating the phase reverses the sign of both $k_{t}^{\prime}$ and $\vec k_\Phi$, so the conjugate branch carries the symbol of $i\tilde K_{\Phi}$ at the reversed four-momentum, namely $-i\tilde K_{\Phi}$; reflecting $r'_t$ alone reverses $k_{t}^{\prime}$ and leaves $\vec k_\Phi$, so that branch carries $-i\tilde K_{\Phi}^{\natural}$. These two signs are the whole of the difference between $C$ and $T$, and they are computed below rather than asserted.
+Under the pointwise reading the arithmetic is short. On $e^{-i\theta_{\mathrm{pwp}}}$ the gradient acts as $2\pi i\tilde\Upsilon_{\Phi}=-2\pi\nu_t^{\prime}e_t+2\pi i\vec\nu_\Phi$. Conjugating the phase reverses the sign of both $\nu_t^{\prime}$ and $\vec\nu_\Phi$, so the conjugate branch carries the symbol of $2\pi i\tilde\Upsilon_{\Phi}$ at the reversed four-momentum, namely $-2\pi i\tilde\Upsilon_{\Phi}$; reflecting $r'_t$ alone reverses $\nu_t^{\prime}$ and leaves $\vec\nu_\Phi$, so that branch carries $-2\pi i\tilde\Upsilon_{\Phi}^{\natural}$. These two signs are the whole of the difference between $C$ and $T$, and they are computed below rather than asserted.
 
 ### Charge conjugation
 
@@ -126,11 +126,11 @@ $$
 
 with $J=\bar{\cdot}$ the conjugation of the coefficients, applied pointwise. The equation is conjugated and the two entries are exchanged, and one sign rides on the entry that came from $\tilde{Ξ}_{R}$. The sign is computed, not chosen.
 
-**Why the sign is there.** On $e^{-i\theta_{\mathrm{pwp}}}$ the first member reads $\tilde\nabla_\Phi\tilde{Ξ}_{R}=i\tilde K_{\Phi}\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, so $\tilde{Ξ}_{L}=i\tilde K_{\Phi}\tilde{Ξ}_{R}/k_m$. Conjugating gives $\overline{\tilde{Ξ}_{L}}=i\tilde K_{\Phi}^{\natural}\overline{\tilde{Ξ}_{R}}/k_m$ on the conjugate branch, and that branch carries $-i\tilde K_{\Phi}$ rather than $i\tilde K_{\Phi}^{\natural}$, because the frequency change reverses the sign of the $e_t$ term. The conjugated first member therefore comes out as
+**Why the sign is there.** On $e^{-i\theta_{\mathrm{pwp}}}$ the first member reads $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi i\tilde\Upsilon_{\Phi}\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, so $\tilde{Ξ}_{L}=2\pi i\tilde\Upsilon_{\Phi}\tilde{Ξ}_{R}/\nu_m$. Conjugating gives $\overline{\tilde{Ξ}_{L}}=2\pi i\tilde\Upsilon_{\Phi}^{\natural}\overline{\tilde{Ξ}_{R}}/\nu_m$ on the conjugate branch, and that branch carries $-2\pi i\tilde\Upsilon_{\Phi}$ rather than $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$, because the frequency change reverses the sign of the $e_t$ term. The conjugated first member therefore comes out as
 $$
-(-i\tilde K_{\Phi})\,\frac{i\tilde K_{\Phi}^{\natural}\overline{\tilde{Ξ}_{R}}}{k_m}=-k_m\,\overline{\tilde{Ξ}_{R}},
+(-2\pi i\tilde\Upsilon_{\Phi})\,\frac{2\pi i\tilde\Upsilon_{\Phi}^{\natural}\overline{\tilde{Ξ}_{R}}}{2\pi\nu_m}=-2\pi\nu_m\,\overline{\tilde{Ξ}_{R}},
 $$
-one sign short of the $+k_m\overline{\tilde{Ξ}_{R}}$ that the exchange alone produces, since $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=+k_m^{2}$ while $(-i\tilde K_{\Phi})i\tilde K_{\Phi}^{\natural}=-k_m^{2}$. The compensating $-1$ is placed on the entry that came from $\tilde{Ξ}_{R}$, which after the exchange is the left one, and the member is then satisfied exactly. Without it the residual is of order $10^{1}$ at $m=3$, $\vec p=(1,2,2)$, six orders above the round-off; with it the residual is $7.1\times10^{-15}$.
+one sign short of the $+\nu_m\overline{\tilde{Ξ}_{R}}$ that the exchange alone produces, since $-\tilde\Upsilon_{\Phi}^{\natural}\tilde\Upsilon_{\Phi}=+\nu_m^{2}$ while $(-2\pi i\tilde\Upsilon_{\Phi})2\pi i\tilde\Upsilon_{\Phi}^{\natural}=-4\pi^{2}\nu_m^{2}$. The compensating $-1$ is placed on the entry that came from $\tilde{Ξ}_{R}$, which after the exchange is the left one, and the member is then satisfied exactly. Without it the residual is of order $10^{1}$ at $m=3$, $\vec p=(1,2,2)$, six orders above the round-off; with it the residual is $7.1\times10^{-15}$.
 
 **The factor is the chirality.** The sign pattern is $-1$ on the left entry and $+1$ on the right, and that is the right multiplication by $\Gamma=-i\vec e_z$ read on the two eigenspaces of $R_\omega$. So $C$ carries the internal factor $\Gamma$, and $\Gamma$ is a multiplication by an element, on the right.
 
@@ -151,9 +151,9 @@ $$
 P[\tilde{Ξ}](r'_t,\vec r)=\bigl(\tilde{Ξ}_{R}(r'_t,-\vec r),\ \tilde{Ξ}_{L}(r'_t,-\vec r)\bigr).
 $$
 
-Only the spatial derivatives change sign, the field is not conjugated, and the two entries are exchanged. On the symbol the reflection sends $i\tilde K_{\Phi}=-k_{t}^{\prime}e_t+i\vec k_\Phi$ to $-k_{t}^{\prime}e_t-i\vec k_\Phi=i\tilde K_{\Phi}^{\natural}$, so the reflected first member is the second member at the reflected argument, and the reflected second member is the first. No internal factor is left over and none is needed: the exchange alone carries the symbol from $i\tilde K_{\Phi}$ to $i\tilde K_{\Phi}^{\natural}$, and $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_m^{2}$ is the identity the two members are written with. The reflection squares to the identity, $P^2=\mathrm{id}$.
+Only the spatial derivatives change sign, the field is not conjugated, and the two entries are exchanged. On the symbol the reflection sends $2\pi i\tilde\Upsilon_{\Phi}=-2\pi\nu_t^{\prime}e_t+2\pi i\vec\nu_\Phi$ to $-2\pi\nu_t^{\prime}e_t-2\pi i\vec\nu_\Phi=2\pi i\tilde\Upsilon_{\Phi}^{\natural}$, so the reflected first member is the second member at the reflected argument, and the reflected second member is the first. No internal factor is left over and none is needed: the exchange alone carries the symbol from $2\pi i\tilde\Upsilon_{\Phi}$ to $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$, and $-\tilde\Upsilon_{\Phi}^{\natural}\tilde\Upsilon_{\Phi}=\nu_m^{2}$ is the identity the two members are written with. The reflection squares to the identity, $P^2=\mathrm{id}$.
 
-Parity is linear, it keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec k_\Phi\mapsto-\vec k_\Phi$, and it exchanges the two entries.
+Parity is linear, it keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec\nu_\Phi\mapsto-\vec\nu_\Phi$, and it exchanges the two entries.
 
 ### Time reversal
 
@@ -164,12 +164,12 @@ $$
 
 The time derivative changes sign, the field is conjugated, and the two entries are **not** exchanged. No internal factor appears, and this is the point at which an article that carries over the basis operator formulation's assignments goes wrong: the source's frame factor sits with the wrong operation once the conjugation is applied pointwise.
 
-**Why no factor.** The conjugation and the reflection of $r'_t$ both reverse the sign of the $e_t$ term of the symbol, so the two reversals cancel and the reflected field stays on the branch with $k_{t}^{\prime}$ positive, carrying $i\tilde K_{\Phi}^{\natural}$ where $\tilde\nabla_\Phi$ acts and $i\tilde K_{\Phi}$ where $(\tilde\nabla_\Phi)^{\natural}$ acts. The two symbols are exchanged relative to the original equation, and since $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_m^{2}$ the second member is reproduced unchanged:
+**Why no factor.** The conjugation and the reflection of $r'_t$ both reverse the sign of the $e_t$ term of the symbol, so the two reversals cancel and the reflected field stays on the branch with $\nu_t^{\prime}$ positive, carrying $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$ where $\tilde\nabla_\Phi$ acts and $2\pi i\tilde\Upsilon_{\Phi}$ where $(\tilde\nabla_\Phi)^{\natural}$ acts. The two symbols are exchanged relative to the original equation, and since $-\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=\nu_m^{2}$ the second member is reproduced unchanged:
 $$
 T:\ (\tilde{Ξ}_{L},\tilde{Ξ}_{R})(r'_t,\vec r)\longmapsto\bigl(\tilde{Ξ}_{L}^J,\ \tilde{Ξ}_{R}^J\bigr)(-r'_t,\vec r),\qquad T^2=\mathrm{id}.
 $$
 
-A relative sign is not available here. Putting $-1$ on the left entry leaves a residual of order $10^{1}$ at $k_m=3$ and $\vec k_\Phi=(1,2,2)$ in units of $k_m$; carrying no factor leaves $7.1\times10^{-15}$. The factor that the basis operator formulation attached to time reversal is the factor that pointwise conjugation has already spent, and the reader who keeps both ends up with two.
+A relative sign is not available here. Putting $-1$ on the left entry leaves a residual of order $10^{1}$ at $2\pi\nu_m=3$ and $2\pi\vec\nu_\Phi=(1,2,2)$ in units of $\nu_m$; carrying no factor leaves $7.1\times10^{-15}$. The factor that the basis operator formulation attached to time reversal is the factor that pointwise conjugation has already spent, and the reader who keeps both ends up with two.
 
 ### $T$ is anti-linear
 
@@ -196,27 +196,27 @@ Two remarks on conventions. First, an overall scalar multiplying both entries is
 The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was fixed by one entry, the other being its completion,
 $$
 \tilde{Ξ}_{R}=\xi\,e^{-i\theta_{\mathrm{pwp}}}+\xi_2\,e^{+i\theta_{\mathrm{pwp}}},\qquad
-\tilde{Ξ}_{L}=\frac{1}{k_m}\tilde\nabla_\Phi\tilde{Ξ}_{R}
-=\frac{1}{k_m}\bigl(i\tilde K_{\Phi}\xi\,e^{-i\theta_{\mathrm{pwp}}}+\tilde K_{\Phi,+}\xi_2\,e^{+i\theta_{\mathrm{pwp}}}\bigr),
+\tilde{Ξ}_{L}=\frac{1}{2\pi\nu_m}\tilde\nabla_\Phi\tilde{Ξ}_{R}
+=\frac{1}{2\pi\nu_m}\bigl(2\pi i\tilde\Upsilon_{\Phi}\xi\,e^{-i\theta_{\mathrm{pwp}}}+\tilde\Upsilon_{\Phi,+}\xi_2\,e^{+i\theta_{\mathrm{pwp}}}\bigr),
 $$
 
 with
 $$
-i\tilde K_{\Phi}=-k_{t}^{\prime}\,e_t+i\vec k_\Phi,\qquad i\tilde K_{\Phi,+}=+k_{t}^{\prime}\,e_t-i\vec k_\Phi,\qquad
-k_{t}^{\prime}=\frac{2\pi E_{\vec p}}{h c},\qquad k_{t}^{\prime\,2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2},
+2\pi i\tilde\Upsilon_{\Phi}=-2\pi\nu_t^{\prime}\,e_t+2\pi i\vec\nu_\Phi,\qquad 2\pi i\tilde\Upsilon_{\Phi,+}=+2\pi\nu_t^{\prime}\,e_t-2\pi i\vec\nu_\Phi,\qquad
+2\pi\nu_t^{\prime}=\frac{E_{\vec p}}{h c},\qquad 4\pi^{2}\nu_t^{\prime\,2}=\lvert2\pi\vec\nu_\Phi\rvert^{2}+4\pi^{2}\nu_m^{2},
 $$
 
-and $\xi,\xi_2$ arbitrary constant elements of $\mathbb{B}$, with no constraint relating the two: this is the point at which the arbitrariness matters, since the two members are independent elements and not two projections of one. The first branch is positive-frequency and the second negative-frequency; their sum is a general solution of the pair by linearity, and the second member holds because $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_m^{2}$ on shell, the second branch carrying $\tilde K_{\Phi,+}=-i\tilde K_{\Phi}$ and $\tilde K_{\Phi,+}^{\natural}\tilde K_{\Phi,+}=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_m^{2}$ as well. Substituting, conjugating, exchanging and reflecting as the definitions require, the residual of the two lines acting on each transform was evaluated and found to vanish to machine precision in every case. The checks were run for the three parameter sets
+and $\xi,\xi_2$ arbitrary constant elements of $\mathbb{B}$, with no constraint relating the two: this is the point at which the arbitrariness matters, since the two members are independent elements and not two projections of one. The first branch is positive-frequency and the second negative-frequency; their sum is a general solution of the pair by linearity, and the second member holds because $-\tilde\Upsilon_{\Phi}^{\natural}\tilde\Upsilon_{\Phi}=\nu_m^{2}$ on shell, the second branch carrying $\tilde\Upsilon_{\Phi,+}=-2\pi i\tilde\Upsilon_{\Phi}$ and $\tilde\Upsilon_{\Phi,+}^{\natural}\tilde\Upsilon_{\Phi,+}=-\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=\nu_m^{2}$ as well. Substituting, conjugating, exchanging and reflecting as the definitions require, the residual of the two lines acting on each transform was evaluated and found to vanish to machine precision in every case. The checks were run for the three parameter sets
 $$
-(k_m,\vec k_\Phi/k_m)=(3,(1,2,2)),\qquad (5,(3,4,0)),\qquad (\tfrac{7}{2},(1,0,-2)),
+(2\pi\nu_m,2\pi\vec\nu_\Phi/\nu_m)=(3,(1,2,2)),\qquad (5,(3,4,0)),\qquad (\tfrac{7}{2},(1,0,-2)),
 $$
 
-each with $k_{t}^{\prime}=+\sqrt{\lvert\vec k_\Phi\rvert^{2}+k_m^{2}}$, on the sixteen combinations of the four basis elements of $\mathbb{B}$ for the two coefficients and on eight random pairs, with both frequency branches present. All three operations and their composition passed on all three cases, at residual $7.6\times10^{-15}$ or smaller.
+each with $\nu_t^{\prime}=+\sqrt{\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}}$, on the sixteen combinations of the four basis elements of $\mathbb{B}$ for the two coefficients and on eight random pairs, with both frequency branches present. All three operations and their composition passed on all three cases, at residual $7.6\times10^{-15}$ or smaller.
 
 The individual checks are worth a word each, because they test different parts of the structure.
 
 - **$C$.** The exchange and the sign were verified together, on the differential equation, and the image was confirmed to solve the pair. The transform conjugates the polarization and keeps the energy and the momentum, and the sign is the one computed in the charge-conjugation section: $(-K)K^{\natural}=-m^{2}$ against $K^{\natural}K=+m^{2}$. Without the sign the residual is of order $10^{1}$; with it, $10^{-15}$. In the mode expansion $C$ exchanges the particle operator $a_{\mathrm{fop}}$ with the antiparticle operator $b_{\mathrm{fop}}$, which is the operator-level statement that the conserved charge reverses sign; that statement is transcribed, and the field-level check is the one performed here.
-- **$P$.** The reflection of the argument and the exchange of the entries were verified, and the reflected field was confirmed to solve the pair, at residual $0$. The transform keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec k_\Phi\mapsto-\vec k_\Phi$, and it needs no internal factor: the exchange alone turns $i\tilde K_{\Phi}$ into $i\tilde K_{\Phi}^{\natural}$.
+- **$P$.** The reflection of the argument and the exchange of the entries were verified, and the reflected field was confirmed to solve the pair, at residual $0$. The transform keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec\nu_\Phi\mapsto-\vec\nu_\Phi$, and it needs no internal factor: the exchange alone turns $2\pi i\tilde\Upsilon_{\Phi}$ into $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$.
 - **$T$.** The time reflection and the conjugation were verified, with no internal factor, and the conjugated-reflected field was confirmed to solve the pair. Because $T$ is anti-linear, the check on a superposition is the sharpest one: a linear map that ignored the conjugation, $\tilde{Ξ}\mapsto(\tilde{Ξ}_{L},\tilde{Ξ}_{R})(-r'_t,\vec r)$, leaves a residual of order $10^{1}$, and so does the same map with a relative sign.
 
 Two negative results belong here, to prevent a later pass from claiming more than was checked.
@@ -301,7 +301,7 @@ with the sign a free phase of the composition. This is the group-theoretic fact 
 
 **Established, and recomputed.**
 
-- The three operations $C[\tilde{Ξ}]=(-\tilde{Ξ}_{R}^J,\tilde{Ξ}_{L}^J)$ with $J=\bar{\cdot}$ pointwise, $P[\tilde{Ξ}](r'_t,\vec r)=(\tilde{Ξ}_{R},\tilde{Ξ}_{L})(r'_t,-\vec r)$ and $T[\tilde{Ξ}](r'_t,\vec r)=(\tilde{Ξ}_{L}^J,\tilde{Ξ}_{R}^J)(-r'_t,\vec r)$ each preserve the free chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, verified on the differential equation for three on-shell momenta, on the four basis polarizations of each part and on both frequency branches: eight solutions per momentum, three momenta, residual at most $1.8\times10^{-15}$.
+- The three operations $C[\tilde{Ξ}]=(-\tilde{Ξ}_{R}^J,\tilde{Ξ}_{L}^J)$ with $J=\bar{\cdot}$ pointwise, $P[\tilde{Ξ}](r'_t,\vec r)=(\tilde{Ξ}_{R},\tilde{Ξ}_{L})(r'_t,-\vec r)$ and $T[\tilde{Ξ}](r'_t,\vec r)=(\tilde{Ξ}_{L}^J,\tilde{Ξ}_{R}^J)(-r'_t,\vec r)$ each preserve the free chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, verified on the differential equation for three on-shell momenta, on the four basis polarizations of each part and on both frequency branches: eight solutions per momentum, three momenta, residual at most $1.8\times10^{-15}$.
 - $C$ and $T$ are anti-linear, $C[i\tilde{Ξ}]=-i\,C[\tilde{Ξ}]$ and $T[i\tilde{Ξ}]=-i\,T[\tilde{Ξ}]$, and $P$ is linear; the operator induced by $T$ is anti-unitary and the one induced by $C$ is unitary.
 - $C$ and $P$ exchange the two entries and $T$ keeps them, so the composition keeps them. The chirality is the right action $\tilde{Ξ}\mapsto\tilde{Ξ}\Gamma=-i\tilde{Ξ}\vec e_z$, and it is a single right multiplication; the two entries of the pair are **not** its eigenspaces, because a left action preserves both eigenspaces of any right multiplication, so an equation between the two would force $0=m\times(\text{nonzero})$. The eigenspaces of $R_\omega$, with eigenvalues $i$ and $-i$ for $\omega=-\vec e_z$, are what the source's basis operator formulation projected onto, and the projection is what the migration removes.
 - The composition $\mathrm{CPT}=C\circ P\circ T$ acts as $\mathrm{CPT}[\tilde{Ξ}](x)=(-\tilde{Ξ}_{L},\tilde{Ξ}_{R})(-x)$; it is complex-linear, reverses the argument, and its sign pattern $\mathrm{diag}(-1,+1)$ is the chirality $\Gamma$, up to the free scalar phase of the three operations. This is the one statement of the article that does not depend on the choice of conjugation.
@@ -341,9 +341,9 @@ with the sign a free phase of the composition. This is the group-theoretic fact 
 
 ## Summary
 
-The biquaternion framework carries the three discrete operations on one field, $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$, an element of $\mathbb{B}$ whose two members are the two entries of the pair, each an element in its own right. They are not the eigenspaces of the chirality: the chirality is the single right multiplication $\tilde{Ξ}\mapsto\tilde{Ξ}\Gamma$ by $\Gamma=-i\vec e_z=i\omega$, a left action preserves every eigenspace of a right multiplication, so the pair cannot be a pair of chiral projections, and the projection belongs to the basis operator formulation that the migration removes. Charge conjugation is the conjugation of the coefficients, applied at each point, together with the exchange of the two entries and the internal factor $\Gamma$; parity is the spatial reflection together with the exchange and no factor; time reversal is the conjugation together with the time reflection and no factor. Each was verified separately to preserve the free chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, on the differential equation, for three on-shell momenta, on sixteen coefficient choices per momentum and on both frequency branches. $C$ and $T$ are anti-linear, and the operator induced by $T$ is anti-unitary; $C$ and $P$ exchange the entries, $T$ keeps them, and the composition keeps them. $C$ is not an involution: $C^2=-e_t$.
+The biquaternion framework carries the three discrete operations on one field, $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$, an element of $\mathbb{B}$ whose two members are the two entries of the pair, each an element in its own right. They are not the eigenspaces of the chirality: the chirality is the single right multiplication $\tilde{Ξ}\mapsto\tilde{Ξ}\Gamma$ by $\Gamma=-i\vec e_z=i\omega$, a left action preserves every eigenspace of a right multiplication, so the pair cannot be a pair of chiral projections, and the projection belongs to the basis operator formulation that the migration removes. Charge conjugation is the conjugation of the coefficients, applied at each point, together with the exchange of the two entries and the internal factor $\Gamma$; parity is the spatial reflection together with the exchange and no factor; time reversal is the conjugation together with the time reflection and no factor. Each was verified separately to preserve the free chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, on the differential equation, for three on-shell momenta, on sixteen coefficient choices per momentum and on both frequency branches. $C$ and $T$ are anti-linear, and the operator induced by $T$ is anti-unitary; $C$ and $P$ exchange the entries, $T$ keeps them, and the composition keeps them. $C$ is not an involution: $C^2=-e_t$.
 
-The pair is not a choice. The gradient acts by left multiplication and its square is not scalar, so the free equation stays first order in one entry, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$, and the massive equation is the two lines, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$. The chirality commutes with the gradient and therefore appears in neither member; it is a right multiplication, one instance of the wider family of constant right multipliers that the pair admits as symmetries, and it supplies the sign pattern that $C$ and the composition carry.
+The pair is not a choice. The gradient acts by left multiplication and its square is not scalar, so the free equation stays first order in one entry, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$, and the massive equation is the two lines, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$. The chirality commutes with the gradient and therefore appears in neither member; it is a right multiplication, one instance of the wider family of constant right multipliers that the pair admits as symmetries, and it supplies the sign pattern that $C$ and the composition carry.
 
 The operations are kept distinct from the algebra's own conjugations. The quaternion, complex and Hermitian conjugates all preserve both sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, and the Hermitian conjugate defines them; the sector swap is multiplication by the central scalar imaginary $i$, which is not a conjugation. The transition between the two sectors is therefore not the particle–antiparticle or chiral-conjugate transition; the temptation to read it so is the trap the companion articles record, and it is refuted by the fixed-point definitions. Of the three operations, only the factor of $C$ is a multiplication by an element, namely the chirality's right multiplication by $-i\vec e_z$; what $C$ and $P$ cannot get from the algebra is the exchange of the two entries, which no multiplication performs, and it is that exchange which keeps charge conjugation and parity outside the algebra's own action.
 
@@ -364,10 +364,10 @@ The classification supplies a second reading of the same eight operations: they 
 | $\tilde{Q}^{\flat}=-\tilde{Q}^{*}$ | Anti-Hermitian conjugate; the algebra's real structure, $\mathbb{C}$-antilinear and order-reversing |
 | $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, acting on the left, and d'Alembertian |
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two entries of the pair: two elements of $\mathbb{B}$, not the eigenspaces of the chirality, which no left action can separate |
-| $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The Dirac field, one element of $\mathbb{B}$; dynamics $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ |
+| $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The Dirac field, one element of $\mathbb{B}$; dynamics $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ |
 | $\omega=-\vec e_z$, $\Gamma=i\omega=-i\vec e_z$ | $\omega^2=-e_t$; the chirality is the right action $\tilde{Ξ}\mapsto\tilde{Ξ}\Gamma=-i\tilde{Ξ}\vec e_z$, with $\Gamma^2=e_t$, equal to $-1$ on the eigenspace of $R_\omega$ with eigenvalue $i$ and $+1$ on the other |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair, written as two first-order equations; no single glyph gathers it |
-| $i\tilde K_{\Phi}=-k_{t}^{\prime}e_t+i\vec k_\Phi$ | Symbol of $\tilde\nabla_\Phi$ on $e^{-i\theta_{\mathrm{pwp}}}$; $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}=k_m^{2}$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | The pair, written as two first-order equations; no single glyph gathers it |
+| $2\pi i\tilde\Upsilon_{\Phi}=-2\pi\nu_t^{\prime}e_t+2\pi i\vec\nu_\Phi$ | Symbol of $\tilde\nabla_\Phi$ on $e^{-i\theta_{\mathrm{pwp}}}$; $-\tilde\Upsilon_{\Phi}^{\natural}\tilde\Upsilon_{\Phi}=\nu_t^{\prime\,2}-\lvert\vec\nu_\Phi\rvert^{2}=\nu_m^{2}$ |
 | $J=\bar{\cdot}$, $\tilde{Ζ}^{J}$ | The conjugation of the field: the coefficient conjugation applied at each point, anti-linear and an automorphism |
 | $C[\tilde{Ξ}]=(-\tilde{Ξ}_{R}^J,\tilde{Ξ}_{L}^J)$ | Charge conjugation (anti-linear, exchanges the entries, internal factor $\Gamma$, $C^2=-e_t$) |
 | $P[\tilde{Ξ}](r'_t,\vec r)=(\tilde{Ξ}_{R},\tilde{Ξ}_{L})(r'_t,-\vec r)$ | Parity (linear, exchanges the entries, no internal factor, $P^2=\mathrm{id}$) |

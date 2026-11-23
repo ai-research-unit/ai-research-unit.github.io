@@ -31,10 +31,10 @@ with $r'_t,h'_{x},h'_{y},h'_{z}$ real, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathb
 
 ## The Photon as the Quantum of the Biquaternion Maxwell Field
 
-The classical theory is the single equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ for the field strength; the sources vanish for the free field, and the equation is then $\tilde\nabla_\Phi\tilde{F}=0$. A plane-wave solution with four-wavevector $\tilde P_{\Phi}=i\omega\,e_t+\vec k_\Phi$ and complex amplitude $\vec F$ has
+The classical theory is the single equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ for the field strength; the sources vanish for the free field, and the equation is then $\tilde\nabla_\Phi\tilde{F}=0$. A plane-wave solution with four-wavevector $\tilde P_{\Phi}=i\omega\,e_t+2\pi\vec\nu_\Phi$ and complex amplitude $\vec F$ has
 
 $$
-\omega = c|\vec k_\Phi|, \qquad \vec k_\Phi\cdot\vec F = 0,
+\omega = c|2\pi\vec\nu_\Phi|, \qquad 2\pi\vec\nu_\Phi\cdot\vec F = 0,
 $$
 
 the first the massless dispersion and the second the transversality inherited from $\mathrm{div}\,\vec D=0$ and $\mathrm{div}\,\vec B=0$. The one-particle space at each momentum is the space of transverse amplitudes, and it is two-dimensional; the photon states are the vectors of this space.
@@ -60,10 +60,10 @@ Two structural observations follow from the table. The field-strength-like datum
 The covariant quantization expands the potential in four polarizations,
 
 $$
-A_{\imath}(x) = \int \frac{d^3k_\Phi}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}\Bigl(a_{\mathrm{fop},r}(\vec k_\Phi)\,\epsilon^{(r)}_{\imath}(\vec k_\Phi)\,\exp(-ik\cdot x) + a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)\,\epsilon^{(r)*}_{\imath}(\vec k_\Phi)\,\exp(+ik\cdot x)\Bigr),
+A_{\imath}(x) = \int \frac{d^32\pi\nu_{\Phi}}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}\Bigl(a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot x) + a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)*}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot x)\Bigr),
 $$
 
-with $\omega_k=c\lvert\vec k_\Phi\rvert$ an angular frequency, $k\cdot x=\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_k r'_t/c$, and $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\sigma_{\mathrm{met},r}\delta_{rs}$ with $\sigma_{\mathrm{met},0}=-1$, $\sigma_{\mathrm{met},\eta}=+1$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=i q'_t$; the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ is $\delta_{\imath\jmath}$. The vectors $\epsilon^{(1)},\epsilon^{(2)}$ are the two real spatial directions transverse to $\vec u_\Phi$, $\epsilon^{(3)}=\vec u_\Phi$ is longitudinal, and $\epsilon^{(0)}$ is timelike.
+with $\omega_k=c\lvert2\pi\vec\nu_\Phi\rvert$ an angular frequency, $k\cdot x=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_k r'_t/c$, and $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\sigma_{\mathrm{met},r}\delta_{rs}$ with $\sigma_{\mathrm{met},0}=-1$, $\sigma_{\mathrm{met},\eta}=+1$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=i q'_t$; the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ is $\delta_{\imath\jmath}$. The vectors $\epsilon^{(1)},\epsilon^{(2)}$ are the two real spatial directions transverse to $\vec u_\Phi$, $\epsilon^{(3)}=\vec u_\Phi$ is longitudinal, and $\epsilon^{(0)}$ is timelike.
 
 The point of the framework is that these four directions are already present in the algebra, in the material sector. Writing a general element of $\mathbb{B}_{\Phi}$ as $\tilde{Q}=Q_te_t+\vec q$ with $Q_t=i q'_t$ and $\vec q$ a real pure quaternion, its biquaternion norm is
 
@@ -77,7 +77,7 @@ an indefinite quadratic form whose one minus is the square of the $i$ in $Q_t=i 
 
 This is the precise sense in which the polarization space is native. The framework does not merely "also have" an indefinite four-dimensional space; it is the same space, with the same indefinite form, that appears in the Gupta–Bleuler expansion.
 
-The physical polarizations are the two spatial directions orthogonal to the propagation direction. Let $\vec u_\Phi$ be the unit vector along $\vec k_\Phi$, and let $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$ be a right-handed orthonormal pair with $(\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2},\vec u_\Phi)$ a right-handed triad. Transversality is the statement that the physical amplitudes lie in the orthogonal complement of $\vec u_\Phi$ inside the vector part of $\mathbb{B}_{\Phi}$, whose projector is
+The physical polarizations are the two spatial directions orthogonal to the propagation direction. Let $\vec u_\Phi$ be the unit vector along $\vec\nu_\Phi$, and let $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$ be a right-handed orthonormal pair with $(\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2},\vec u_\Phi)$ a right-handed triad. Transversality is the statement that the physical amplitudes lie in the orthogonal complement of $\vec u_\Phi$ inside the vector part of $\mathbb{B}_{\Phi}$, whose projector is
 
 $$
 \boxed{\;P_{ij} = \delta_{ij} - \vec u_{\Phi,i} \vec u_{\Phi,j}, \qquad \sum_{r=1}^{2}\varepsilon_{\mathrm{fop},i}^{( r)} \varepsilon_{\mathrm{fop},j}^{(r)} = P_{ij}\;}.
@@ -176,7 +176,7 @@ The two null objects are not the same element. The little-group translation is g
 
 Two things are conspicuously absent, and both were established by the parent articles rather than by this one.
 
-**The ladder.** The photon creation and annihilation operators satisfy $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi)^3\,\delta^{(3)}(\vec k_\Phi-\vec k_2)$, a bosonic canonical relation. The Fock article proves that no pair $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\in\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$: a commutator has vanishing scalar part, while $2\,\mathrm{Sc}(e_t)=2$, so the only relation of the form $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The photon's ladder algebra is therefore not native. It is not even a finite-dimensional object: the physical photon number is the transverse sum $N_\gamma=\sum_{r=1}^{2}\int a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$, acting on the symmetric algebra of the transverse polarization module, which is infinite-dimensional. What the algebra supplies here is the module — the transverse polarization plane of the previous sections — and nothing algebraic on top of it. This is a sharper negative than the spin-$\tfrac12$ case, where the algebra carries the one-mode fermionic relation exactly.
+**The ladder.** The photon creation and annihilation operators satisfy $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi)^3\,\delta^{(3)}(2\pi\vec\nu_\Phi-\vec\nu_2)$, a bosonic canonical relation. The Fock article proves that no pair $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\in\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$: a commutator has vanishing scalar part, while $2\,\mathrm{Sc}(e_t)=2$, so the only relation of the form $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The photon's ladder algebra is therefore not native. It is not even a finite-dimensional object: the physical photon number is the transverse sum $N_\gamma=\sum_{r=1}^{2}\int a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$, acting on the symmetric algebra of the transverse polarization module, which is infinite-dimensional. What the algebra supplies here is the module — the transverse polarization plane of the previous sections — and nothing algebraic on top of it. This is a sharper negative than the spin-$\tfrac12$ case, where the algebra carries the one-mode fermionic relation exactly.
 
 **The gauge.** The canonical-quantization article proves that the algebra gives no reason to prefer the Lorenz gauge $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=0$ to any other. The reduction from the four polarization directions of $\mathbb{B}_{\Phi}$ to the two transverse physical directions is performed by a subsidiary condition, and the subsidiary condition is imported. So the framework's role is asymmetric: it *owns* the space in which the reduction happens (the material sector and its indefinite norm), and it *does not own* the principle by which the reduction is made. I regard this as the central unclosed gap of the article, and it is not closed by the polarization results above.
 

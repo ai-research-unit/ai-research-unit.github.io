@@ -7,9 +7,9 @@ The coupling changes the vector fluid more than it changes either of the other t
 The equation. The coupled Proca equation is
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^{2}\tilde A,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=4\pi^{2}\nu_m^{2}\tilde A,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{h}\tilde A_\Phi,
 $$
 
 with the field strength built from the *covariant* gradients, $\tilde F=\frac12((\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde A-\tilde\nabla_{\mathrm{gco},\Phi}\tilde A)_{V}$. The field strength therefore carries a term bilinear in the potential, $\frac{2\pi iϙ}{h}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$, and the equation is nonlinear in the field in a way the free one was not. The word is the four-factor decomposition
@@ -43,7 +43,7 @@ What is not here. No new solution and no new particle. The article's subject is 
 
 Position in the block. This article is the charged companion of [The Spin-One Fluid](the-spin-one-fluid.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html), and §*The Three Charged Fluids* compares the three.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The material sector is $\mathbb{B}_\Phi=\{i a'_t e_t+\vec A\}$ with $a'_t$ and $\vec A$ real, and the connection is $\tilde A_\Phi\in\mathbb{B}_\Phi$. The coupling is $ϙ$, $k_m=\frac{2\pi mc}{h}$, and $\langle\tilde A\rangle_\natural:=\tilde A\tilde A^{\natural}$ is the natural norm, a central complex number. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The material sector is $\mathbb{B}_\Phi=\{i a'_t e_t+\vec A\}$ with $a'_t$ and $\vec A$ real, and the connection is $\tilde A_\Phi\in\mathbb{B}_\Phi$. The coupling is $ϙ$, $\nu_m=\frac{mc}{h}$, and $\langle\tilde A\rangle_\natural:=\tilde A\tilde A^{\natural}$ is the natural norm, a central complex number. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
 
 ## The Word and the Two Restorations
 
@@ -113,7 +113,7 @@ What survives. The velocity's normalisation survives in a modified form: the fre
 
 **The coupled fluid carries three distinct currents where the free one carried a single object, and only one of them is conserved.** The three are the response, the direction and the charge.
 
-The response is $m^{2}\tilde A$, and it is what the free article's current became. In the free case the equation $\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=m^{2}A_{\imath}$ made $m^{2}A_{\imath}$ the source of the field strength's divergence, and the Lorenz condition made it conserved; the article therefore identified the field, the current and the response. With the coupling the equation sources $m^{2}\tilde A$ by the *covariant* divergence, $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^{2}\tilde A$, so the response is no longer conserved by the Lorenz condition alone: the connection's own term sits between them. The fluid's own field acts on its own current, and that is the self-interaction the free case could not have.
+The response is $m^{2}\tilde A$, and it is what the free article's current became. In the free case the equation $\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=m^{2}A_{\imath}$ made $m^{2}A_{\imath}$ the source of the field strength's divergence, and the Lorenz condition made it conserved; the article therefore identified the field, the current and the response. With the coupling the equation sources $m^{2}\tilde A$ by the *covariant* divergence, $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=4\pi^{2}\nu_m^{2}\tilde A$, so the response is no longer conserved by the Lorenz condition alone: the connection's own term sits between them. The fluid's own field acts on its own current, and that is the self-interaction the free case could not have.
 
 The direction is $\tilde A/\varrho$, and it is the generalisation of the free velocity. In the free case $A_{\imath}/\varrho=u_{\imath}$ was the unit flow and the current at once. Here $\tilde A/\varrho=e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ is a unit element whose boost is the flow, and it is conserved by nothing: its divergence is the divergence of the word, which is the constraint plus whatever the frame contributes.
 
@@ -276,7 +276,7 @@ Not claimed. It is not claimed that the charged spin-one fluid has an equation o
 
 ## Summary
 
-The coupled Proca equation is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^{2}\tilde A$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\tilde F$ built from covariant gradients, and the word is $\tilde A=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
+The coupled Proca equation is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=4\pi^{2}\nu_m^{2}\tilde A$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\tilde F$ built from covariant gradients, and the word is $\tilde A=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
 
 The carrier doubles: eight parameters for eight real components, the free word is the real slice, and the rotor is a factor the free word lacked. The domain shrinks to $\varrho=0$: the free fluid's lightlike wall is gone, and the chart fails only where the field vanishes.
 
@@ -304,7 +304,7 @@ The stiff equation of state survives as a formula on the sector where the field 
 | $\tilde A/\varrho$ | The direction; the free article's velocity |
 | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)$ | The ordinary divergence; the amplitude on the constraint surface |
 | $ϙ$ | The coupling |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
 
 ## Further Reading
 

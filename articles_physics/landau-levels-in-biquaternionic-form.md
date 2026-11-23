@@ -71,7 +71,7 @@ $$
 H=\frac{1}{2\,m}\Big[p_x^2+\Big(p_y-\frac{ϙB}{c}r_x\Big)^2+p_z^2\Big]e_t .
 $$
 
-The Hamiltonian does not depend on $y$ or $z$, so the momentum components $p_y=\frac{h}{2\pi}\,k$ and $p_z=\frac{h}{2\pi}\,k_{z}$ are conserved, and the envelope has the form
+The Hamiltonian does not depend on $y$ or $z$, so the momentum components $p_y=\frac{h}{2\pi}\,k$ and $p_z=h\,2\pi\nu_{z}$ are conserved, and the envelope has the form
 
 $$
 \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\exp(i\theta_{\mathrm{lnd}})\,f(r_x)\,\xi ,
@@ -79,10 +79,10 @@ $$
 
 with the Landau angle $\theta_{\mathrm{lnd}}=k(r_y+r_z)$ real because the wave number and the two coordinates are real, and $\xi$ a constant module element. The energy in the transverse directions is then determined by the one-dimensional equation
 
-$$\frac{1}{2\,m}\Big[-\frac{h^{2}\,d^{2}\,f}{(2\pi)^{2} dr_{x}^{2}}(r_x)+m^2\omega_c^2(r_x-x_0)^2f(r_x)\Big]=\left(E-\frac{h^{2}\,k_{z}^{2}}{8\pi^{2}\,m}\right)f(r_x),
+$$\frac{1}{2\,m}\Big[-\frac{h^{2}\,d^{2}\,f}{(2\pi)^{2} dr_{x}^{2}}(r_x)+m^2\omega_c^2(r_x-x_0)^2f(r_x)\Big]=\left(E-\frac{h^{2}\,4\pi^{2}\nu_{z}^{2}}{8\pi^{2}\,m}\right)f(r_x),
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 where
 
@@ -94,14 +94,14 @@ $$
 x_0=\ell_B^2\,k\,\mathrm{sgn}(ϙ),
 $$
 
-so that the problem is a **harmonic oscillator of frequency $\omega_c$** centred at $x_0$, displaced by the conserved momentum $k_\Phi$. The reduction used only the scalar envelope, and the module factor is constant: the magnetic field reshapes the envelope without touching the module.
+so that the problem is a **harmonic oscillator of frequency $\omega_c$** centred at $x_0$, displaced by the conserved momentum $\nu_{\Phi}$. The reduction used only the scalar envelope, and the module factor is constant: the magnetic field reshapes the envelope without touching the module.
 
 ### The spectrum and the wave functions
 
 The shifted oscillator has the spectrum
 
 $$
-\boxed{\;E_{n,k_z}=hf_{\mathrm{frq},c}\left(n+\tfrac12\right)+\frac{h^{2}\,k_{z}^{2}}{8\pi^{2}\,m}\;},
+\boxed{\;E_{n,\nu_{z}}=hf_{\mathrm{frq},c}\left(n+\tfrac12\right)+\frac{h^{2}\,4\pi^{2}\nu_{z}^{2}}{8\pi^{2}\,m}\;},
 \qquad
 n=0,1,2,\dots,
 $$
@@ -207,7 +207,7 @@ For orientation, a laboratory field of $1$ T gives, with $\omega_c=|ϙ|B/m$ and 
 
 ### Counting the states
 
-The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $k_\Phi$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing
+The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $\nu_{\Phi}$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing
 
 $$
 \boxed{\;N_{\mathrm{scl},\xi}=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{2\,\pi\,\frac{h}{2\pi}}=\frac{A\,B}{Ξ_0}\;},
@@ -276,10 +276,10 @@ $$
 verified numerically to a relative error below $5\times10^{-11}$. In the Landau gauge $\vec A=(0,Bx,0)$ the problem reduces to a harmonic oscillator of frequency $\omega_c=|ϙ|B/m$ displaced by $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$, with magnetic length $\ell_B=\sqrt{\frac{h}{2\pi \lvert ϙ\rvert B}}$, giving the Landau spectrum
 
 $$
-E_{n,k_z}=hf_{\mathrm{frq},c}\left(n+\tfrac12\right)+\frac{h^{2}\,k_{z}^{2}}{8\pi^{2}\,m}
+E_{n,\nu_{z}}=hf_{\mathrm{frq},c}\left(n+\tfrac12\right)+\frac{h^{2}\,4\pi^{2}\nu_{z}^{2}}{8\pi^{2}\,m}
 $$
 
-and the wave functions $\tilde{Ξ}_{n,k}=\exp(i(k r_y+k_z r_z))H_n((r_x-x_0)/\ell_B)\exp(-(r_x-x_0)^2/2\ell_B^2)\xi$; the oscillator equation was verified numerically for $n=0,\dots,3$ with residuals of order $10^{-8}$. The symmetric gauge exhibits the conserved central angular momentum $L_{\mathrm{orb},z}$ and the guiding-centre ladder, and the classical picture is the cyclotron orbit of radius $v_\perp/\omega_c$.
+and the wave functions $\tilde{Ξ}_{n,k}=\exp(i(k r_y+2\pi\nu_{z} r_z))H_n((r_x-x_0)/\ell_B)\exp(-(r_x-x_0)^2/2\ell_B^2)\xi$; the oscillator equation was verified numerically for $n=0,\dots,3$ with residuals of order $10^{-8}$. The symmetric gauge exhibits the conserved central angular momentum $L_{\mathrm{orb},z}$ and the guiding-centre ladder, and the classical picture is the cyclotron orbit of radius $v_\perp/\omega_c$.
 
 Each level is degenerate with multiplicity $N_{\mathrm{scl},\xi}=AB/Ξ_0$, the number of flux quanta $Ξ_0=h/|ϙ|$ through the area, verified by direct counting against $AB/Ξ_0=15.92$ at $L_x=L_y=10\,\ell_B$. The degeneracy and the spacing both come from the central canonical commutator with commutator scale $\frac{h}{2\pi}\,ϙ\,B=\frac{h^{2}}{(2\pi)^{2} \ell_B^{2}}$. Because the particle has spin 0, there is no Zeeman term and no splitting of the levels; the module contributes no internal states. The framework supplies the centrality of the field-strength commutator, the spectator module, and the two central ladders; it does not supply the Landau wave functions or the flux count, and it adds no prediction distinguishing the reformulation from scalar Landau-level quantum physics.
 
@@ -299,7 +299,7 @@ Each level is degenerate with multiplicity $N_{\mathrm{scl},\xi}=AB/Ξ_0$, the n
 | $\omega_c=\lvert ϙ\rvert B/m$ | Cyclotron frequency |
 | $\ell_B=\sqrt{\frac{h}{2\pi \lvert\,ϙ\,\rvert\,B}}$ | Magnetic length |
 | $x_0=\ell_B^2 k\,\mathrm{sgn}(ϙ)$ | Oscillator centre; conserved $k$ |
-| $E_n=hf_{\mathrm{frq},c}\,(n+\tfrac12)+\frac{h^{2}\,k_{z}^{2}}{8\pi^{2}\,m}$ | Landau spectrum |
+| $E_n=hf_{\mathrm{frq},c}\,(n+\tfrac12)+\frac{h^{2}\,4\pi^{2}\nu_{z}^{2}}{8\pi^{2}\,m}$ | Landau spectrum |
 | $H_n$ | Hermite polynomials |
 | $a,a^\dagger$ | Central cyclotron ladder operators, $[a,a^\dagger]=e_t$ |
 | $L_{\mathrm{orb},z}$ | Conserved central angular momentum (symmetric gauge) |

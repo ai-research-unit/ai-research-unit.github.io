@@ -54,10 +54,10 @@ is invariant: if $\tilde\nabla_\Phi\tilde{Ξ} = 0$ then $\tilde\nabla_\Phi(\lamb
 
 **Two realizations, which agree on the mass.** The symmetry is a property of the algebra, not of a particular field, but two fields of the corpus carry it, and they are worth displaying side by side because the mass term acts the same way in both.
 
-- **The complex scalar biquaternion field.** Take $\tilde{Ξ} = \xi_{\mathrm{gau}}\,e_t$ with $\xi_{\mathrm{gau}}$ a complex scalar function, obeying the massive Klein–Gordon equation $(\Box_\Phi - k_m^{2})\tilde{Ξ} = 0$. The mass term is *linear* in the field, so under $\tilde{Ξ} \mapsto \lambda\tilde{Ξ}$ both sides acquire the same factor $\lambda$ and the equation is invariant. Here the global $\mathrm{U}(1)$ survives the mass.
-- **The biquaternion Dirac field.** Take the massless chiral pair of *The Dirac Equation in Biquaternionic Form*, whose two lines are the two Weyl equations, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. Each line carries one value of a massless fermion; the full massless field is the pair, not either line alone. The massive form is the linear, off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$. Its mass term is *linear* in the field, so it too passes the central phase through unchanged and the global $\mathrm{U}(1)$ survives the mass. The mass term nonetheless plays a distinguished role: it relates the two parts of the subscript, and it is the **axial** symmetry, not the phase symmetry, that it breaks — a point taken up in §*The Mass Term and the Axial Symmetry* below. The two-sided form of the same physics is recorded there as well, because it is the form in which the mass is a multiplication on the right rather than a pairing.
+- **The complex scalar biquaternion field.** Take $\tilde{Ξ} = \xi_{\mathrm{gau}}\,e_t$ with $\xi_{\mathrm{gau}}$ a complex scalar function, obeying the massive Klein–Gordon equation $(\Box_\Phi - 4\pi^{2}\nu_m^{2})\tilde{Ξ} = 0$. The mass term is *linear* in the field, so under $\tilde{Ξ} \mapsto \lambda\tilde{Ξ}$ both sides acquire the same factor $\lambda$ and the equation is invariant. Here the global $\mathrm{U}(1)$ survives the mass.
+- **The biquaternion Dirac field.** Take the massless chiral pair of *The Dirac Equation in Biquaternionic Form*, whose two lines are the two Weyl equations, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. Each line carries one value of a massless fermion; the full massless field is the pair, not either line alone. The massive form is the linear, off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$. Its mass term is *linear* in the field, so it too passes the central phase through unchanged and the global $\mathrm{U}(1)$ survives the mass. The mass term nonetheless plays a distinguished role: it relates the two parts of the subscript, and it is the **axial** symmetry, not the phase symmetry, that it breaks — a point taken up in §*The Mass Term and the Axial Symmetry* below. The two-sided form of the same physics is recorded there as well, because it is the form in which the mass is a multiplication on the right rather than a pairing.
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **Why the group is $\mathrm{U}(1)$ and not larger.** A phase that is to commute with the whole algebra must lie in the centre, and the centre is one complex dimension; its $*$-unitary part is one real parameter. The abelian gauge group is therefore *canonically attached* to the algebra: no choice is made in selecting it. A larger gauge group requires an action that does not commute with the algebra, that is, a choice of representation — which is exactly what the non-abelian extension will need.
 
@@ -261,7 +261,7 @@ The gauge principle above was derived for the massless equation. Two Dirac equat
 **The one-sided chiral pair.** The biquaternion Dirac field is the pair of elements $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$, one per value read by the test, and its equation is the off-diagonal pair
 
 $$
-\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}\;}
+\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}\;}
 $$
 
 with $\tilde\nabla_\Phi$ the gradient and $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate. The two lines are one equation per value read by the test. Both gradients multiply the field on the left, so the pair is one-sided; at $m=0$ the two lines decouple into the two Weyl equations, and at $m\ne0$ the mass couples them off the diagonal. The mass term of the pair is **linear** in the field.
@@ -443,7 +443,7 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2 = S - \Box_\Phi\Gamma$ | the gauge scalar; Lorenz gauge $S = 0$ |
 | $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | the field strength, the curvature |
 | $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath}$ | the abelian curvature components |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | the one-sided chiral pair; the mass is linear in the field |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | the one-sided chiral pair; the mass is linear in the field |
 | $(\tilde\nabla_\Phi)^{\natural}F = -im\bar F\vec e_z$ | the two-sided Dirac equation; $\bar F$ the coefficient conjugate, the mass term antilinear |
 | $F$ | the field of the two-sided equation, not the field strength $\tilde F$ |
 | $j_{5\imath} = \bar{\tilde{Ξ}}(e_{\imath}\tilde{Ξ}\vec e_z\vec e_{\tau(\imath)})$ | the axial current; $\tau(t) = x$, $\tau(k) = y$; its divergence is the plain sum |

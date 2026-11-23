@@ -32,17 +32,17 @@ $$
 
 The count is $1+3+2=6$, and the remaining quantity of the seven is an internal angle $\theta$, defined as the angle in the plane of the two pseudoscalar densities of the field, $\theta=\arctan(\Omega_{\mathrm{ps}}/\Omega)$ with $\Omega$ and $\Omega_{\mathrm{ps}}$ the scalar and pseudoscalar bilinears.
 
-The particle momentum-energy four-vector $k_{\imath}$ is not among the bilinears, and it enters his equations as a separate variable. With it the system's variables are
+The particle momentum-energy four-vector $\nu_{\imath}$ is not among the bilinears, and it enters his equations as a separate variable. With it the system's variables are
 
 $$
-\{\,\rho,\ \theta,\ v_{\imath},\ w_{\imath},\ k_{\imath}\,\} .
+\{\,\rho,\ \theta,\ v_{\imath},\ w_{\imath},\ \nu_{\imath}\,\} .
 $$
 
-The count of functions is the count of the field's real components, and this is the first thing the two formulations agree on. The field has four complex coefficients, that is eight real functions at each event. The tensor system has six from the first three items ($\rho$, $v_{\imath}$, $w_{\imath}$: $1+3+2$), one for $\theta$, and one for $k_{\imath}$ once its curl is fixed, which his second subsidiary condition fixes. So the system carries eight.
+The count of functions is the count of the field's real components, and this is the first thing the two formulations agree on. The field has four complex coefficients, that is eight real functions at each event. The tensor system has six from the first three items ($\rho$, $v_{\imath}$, $w_{\imath}$: $1+3+2$), one for $\theta$, and one for $\nu_{\imath}$ once its curl is fixed, which his second subsidiary condition fixes. So the system carries eight.
 
-**His equations of motion close the count but do not close the system.** The Dirac equation is equivalent to a set of real equations for the tensor variables: a continuity equation for $\rho v_{\imath}$, a balance equation for the spin density $\rho w_{\imath}$ with a source proportional to $\sin\theta$, and two transport laws in which $\theta$ and $k_{\imath}$ appear together with the gradients of $v$ and $w$. That is eight real equations for eight real unknowns, and they are equivalent to the Dirac equation.
+**His equations of motion close the count but do not close the system.** The Dirac equation is equivalent to a set of real equations for the tensor variables: a continuity equation for $\rho v_{\imath}$, a balance equation for the spin density $\rho w_{\imath}$ with a source proportional to $\sin\theta$, and two transport laws in which $\theta$ and $\nu_{\imath}$ appear together with the gradients of $v$ and $w$. That is eight real equations for eight real unknowns, and they are equivalent to the Dirac equation.
 
-The momentum is not determined by them. The equations contain $k_{\imath}$ and do not determine it. Takabayasi therefore adds a further condition, his second subsidiary, which fixes the curl of $k_{\imath}$ in terms of the velocity, the spin and the electromagnetic field strength. The condition is quasi-irrotational: the curl of the momentum is not zero, and it is not free either. He calls it the condition that makes the system self-contained, and it is the one place where his formulation adds an equation that the Dirac equation does not supply by itself.
+The momentum is not determined by them. The equations contain $\nu_{\imath}$ and do not determine it. Takabayasi therefore adds a further condition, his second subsidiary, which fixes the curl of $\nu_{\imath}$ in terms of the velocity, the spin and the electromagnetic field strength. The condition is quasi-irrotational: the curl of the momentum is not zero, and it is not free either. He calls it the condition that makes the system self-contained, and it is the one place where his formulation adds an equation that the Dirac equation does not supply by itself.
 
 ## The Variable Mapping
 
@@ -53,10 +53,10 @@ The mapping is a table, and every row is a comparison of what a bilinear reads.
 | $\rho$, the rest density | $\varrho^{2}$, the scale squared | identity |
 | $v_{\imath}$, the unit four-velocity | $\tilde U_{\Psi,\mathrm b}$, the Hermitian boost | identity |
 | $w_{\imath}$, the unit spin vector | $\tilde u_{\mathrm r}$, the real rotor | identity |
-| $k_{\imath}$, the momentum | $\tilde K_{\imath}/k_m$, the phase gradient in units of the mass wave number | reading, with a qualifier |
+| $\nu_{\imath}$, the momentum | $\tilde\Upsilon_{\imath}/\nu_m$, the phase gradient in units of the mass wave number | reading, with a qualifier |
 | $\theta$, the internal angle | $\theta_{\mathrm{axr}}$, the rotor angle | forced by the count, given the first four rows |
 
-Two of the rows carry a unit as well as a comparison, and the momentum row is one of them. Takabayasi defines $k_{\imath}=p_{\imath}/(mc)$, a momentum divided by a mass, so his $k_{\imath}$ is dimensionless. The word's momentum is the phase gradient, an inverse length. The ratio between them is the mass wave number $k_m=\frac{2\pi mc}{h}$, so the row reads $k_{\imath}=\tilde K_{\imath}/k_m$ and a table that equates the two loses the $\frac{h}{2\pi}$. His units also divide out the speed of light, which is why his $v_{\imath}$ is $\tilde V_{\Phi}/c$ and his $\rho$ is the corpus's $\rho_{\mathrm{num}}$; with $c$ carried, the velocity's norm is $c^{2}$ in the word and $1$ in his display.
+Two of the rows carry a unit as well as a comparison, and the momentum row is one of them. Takabayasi defines $2\pi\nu_{\imath}=p_{\imath}/(mc)$, a momentum divided by a mass, so his $\nu_{\imath}$ is dimensionless. The word's momentum is the phase gradient, an inverse length. The ratio between them is the mass wave number $\nu_m=\frac{mc}{h}$, so the row reads $\nu_{\imath}=\tilde\Upsilon_{\imath}/\nu_m$ and a table that equates the two loses the $\frac{h}{2\pi}$. His units also divide out the speed of light, which is why his $v_{\imath}$ is $\tilde V_{\Phi}/c$ and his $\rho$ is the corpus's $\rho_{\mathrm{num}}$; with $c$ carried, the velocity's norm is $c^{2}$ in the word and $1$ in his display.
 
 The first three rows are identities and they are the corpus's own statements. The density of the word is $\rho_{\mathrm{num}}=\varrho^{2}$, read from the scale. The four-velocity is $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$, read from the boost, with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for every field. The spin is $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, read from the rotor. These are not correspondences of formulas; they are the same three objects named twice.
 
@@ -78,9 +78,9 @@ What the identification is not. It is not a theorem. Nothing in the corpus compu
 
 ### The qualifier on the fourth row
 
-The momentum row needs one sentence of care, and it is the row where the two formulations are not literally the same. The word's momentum is the phase gradient, $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$, so it is a gradient by construction and its curl vanishes. Takabayasi's $k_{\imath}$ has a curl fixed by his second subsidiary condition and that curl is not zero in general. The two therefore agree on the fields where the curl vanishes, and differ elsewhere.
+The momentum row needs one sentence of care, and it is the row where the two formulations are not literally the same. The word's momentum is the phase gradient, $\tilde\Upsilon_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$, so it is a gradient by construction and its curl vanishes. Takabayasi's $\nu_{\imath}$ has a curl fixed by his second subsidiary condition and that curl is not zero in general. The two therefore agree on the fields where the curl vanishes, and differ elsewhere.
 
-The reading that reconciles them is that his curl is the freedom of the phase. His condition fixes the curl of $k_{\imath}$ and leaves the gradient part free; the free part is one function, which the word names the phase and whose gradient it calls the momentum. On this reading his $k_{\imath}$ is a particular momentum and the word's $\tilde K_{\Phi}$ is the canonical one, and the difference is the term his condition supplies. The reading is stated here as a reading, because the alternative — that the two momenta are simply different objects — cannot be excluded from the comparison alone.
+The reading that reconciles them is that his curl is the freedom of the phase. His condition fixes the curl of $\nu_{\imath}$ and leaves the gradient part free; the free part is one function, which the word names the phase and whose gradient it calls the momentum. On this reading his $\nu_{\imath}$ is a particular momentum and the word's $\tilde\Upsilon_{\Phi}$ is the canonical one, and the difference is the term his condition supplies. The reading is stated here as a reading, because the alternative — that the two momenta are simply different objects — cannot be excluded from the comparison alone.
 
 ## The Four Brackets and the Non-Closure
 
@@ -105,7 +105,7 @@ The four brackets are four different objects, and the equation cannot mix them.
 
 **The equation constrains the four and does not determine them.** The Dirac equation is one equation for the element, so it is eight real equations for the eight parameters. It is not eight equations for the four brackets taken separately, because the brackets are not independent functions: the boost connection is determined by three parameters and the rotor connection by three, and the two are coupled through the order of the factors.
 
-This is exactly the situation Takabayasi's subsidiary condition answers. His equations close the count and leave $k_{\imath}$ undetermined; he adds a condition on its curl. The algebraic statement is that the four brackets are of four types and no rule of the algebra fixes one from another, because a real scalar cannot be a Hermitian element and a central imaginary cannot be a real vector. **His condition is the tensor form of that non-closure, and the non-closure is a property of the factorisation and not a defect of either formulation.**
+This is exactly the situation Takabayasi's subsidiary condition answers. His equations close the count and leave $\nu_{\imath}$ undetermined; he adds a condition on its curl. The algebraic statement is that the four brackets are of four types and no rule of the algebra fixes one from another, because a real scalar cannot be a Hermitian element and a central imaginary cannot be a real vector. **His condition is the tensor form of that non-closure, and the non-closure is a property of the factorisation and not a defect of either formulation.**
 
 The non-closure is also where the non-uniqueness enters. A closing condition is a choice, and the literature contains many. Takabayasi's is one; the spin-transport laws of the classical-spin literature are others; Fabbri's enumeration of minimal spin-fluid systems records nineteen. The corpus does not choose among them and says so: the Dirac equation does not single out a spin-transport law, and any formulation that supplies one has added a choice.
 
@@ -132,9 +132,9 @@ His assumption and the word's condition are different conditions. The factorisat
 **Two families of Dirac fields have $\rho\neq0$ everywhere and no word anywhere.**
 
 - Parts of definite value. An element with $\tilde X\vec e_z=\pm i\tilde X$ is a zero divisor at every amplitude, because $\tilde X(\vec e_z\mp ie_t)=0$ and the bracket is not zero. Every field of definite chirality is of this kind.
-- One-sided plane waves. A plane wave with $\tilde K_{\Phi}\tilde\Xi_{0}=0$ and $\tilde K_{\Phi}$ null has $N(\tilde\Xi_{0})=0$ everywhere. It is nowhere zero and its density never vanishes, and its word does not exist.
+- One-sided plane waves. A plane wave with $\tilde\Upsilon_{\Phi}\tilde\Xi_{0}=0$ and $\tilde\Upsilon_{\Phi}$ null has $N(\tilde\Xi_{0})=0$ everywhere. It is nowhere zero and its density never vanishes, and its word does not exist.
 
-The second family is the one that matters physically, because a one-sided wave is what a massless helicity eigenstate is. His variables $\rho$, $v_{\imath}$ and $w_{\imath}$ are defined on it, since $\rho>0$. Whether his formulation proceeds on it is a separate question. Several of his quantities carry the factor $1/k_m=\frac{h}{2\pi mc}$, so they diverge at $m=0$ and the massless field is a limit rather than a case, and whether that limit exists for a one-sided wave is not settled here. What the comparison establishes is a difference of domain conditions: the word needs the element to be an invertible element, which is strictly stronger than $\rho\neq0$, and the one-sided wave is the field that exhibits the difference.
+The second family is the one that matters physically, because a one-sided wave is what a massless helicity eigenstate is. His variables $\rho$, $v_{\imath}$ and $w_{\imath}$ are defined on it, since $\rho>0$. Whether his formulation proceeds on it is a separate question. Several of his quantities carry the factor $1/\nu_m=\frac{h}{2\pi mc}$, so they diverge at $m=0$ and the massless field is a limit rather than a case, and whether that limit exists for a one-sided wave is not settled here. What the comparison establishes is a difference of domain conditions: the word needs the element to be an invertible element, which is strictly stronger than $\rho\neq0$, and the one-sided wave is the field that exhibits the difference.
 
 What survives on the cone is the two-factor decomposition. Every element is $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a partial isometry, and that factorisation is defined on the whole algebra. It separates a scale from a direction but not a velocity from a spin, so it is not enough for a fluid. The four-factor word is the finer decomposition and it is the one that fails.
 
@@ -144,7 +144,7 @@ This is a finding and not a criticism of Takabayasi. His variables are defined f
 
 The mass term is a number in his formulation and a frame factor in the word. In the standard reading the mass is a scalar coupling the two chiral parts, invariant in every frame. In the word the kinetic relation between the parts is $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, so the mass's sign is carried along by the boost and the momentum carries the same boost. At rest the factor is the identity and the relation is the plain sign. The two statements agree; what the word adds is where the scalar goes in a moving frame.
 
-His energy-momentum tensor separates into a particle part and a stress part. Takabayasi writes $L_{\imath\jmath}$ as a momentum transport term $\rho k_{\imath} v_{\jmath}$ plus a remainder, and reads the remainder as the mechanical stress and heat flow inside the fluid. The remainder is not a pure spin term: it carries the gradient of the internal angle multiplied by the spin direction, and the spin density contracted with the curl of the velocity. The conservation law is the equation of motion for the particle momentum, and the remainder represents the quantum effects.
+His energy-momentum tensor separates into a particle part and a stress part. Takabayasi writes $L_{\imath\jmath}$ as a momentum transport term $\rho \nu_{\imath} v_{\jmath}$ plus a remainder, and reads the remainder as the mechanical stress and heat flow inside the fluid. The remainder is not a pure spin term: it carries the gradient of the internal angle multiplied by the spin direction, and the spin density contracted with the curl of the velocity. The conservation law is the equation of motion for the particle momentum, and the remainder represents the quantum effects.
 
 **The remainder is a mix, and the correspondence is not a computed equality.** The word splits the derivative into a boost connection and a rotor connection, and a split of the derivative is not a split of the stress. Takabayasi's remainder draws on both: the angle's gradient is a rotor quantity, the spin direction is a rotor quantity, and the curl of the velocity is a boost quantity. So the honest statement is that the remainder is not the rotor's contribution alone, and that no term-by-term identification of it with the word's boost and rotor pieces is computed in this corpus. The relativistic quantum stress is exhibited in [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) for the scalar case, and the spinor case's antisymmetric part is the subject of the articles that follow this one.
 
@@ -192,7 +192,7 @@ A plane wave has none, and a superposition has some. Computed on the Belinfante 
 
 The check that separates the angle from the superposition is the pair with one momentum. Two plane waves of the same momentum and opposite spins have $\cos\theta=1$ and $\lVert q\rVert/\lvert\epsilon\rvert\le5\times10^{-17}$. So it is not the interference of two waves that produces the heat flow; it is the disparity between the momentum and the velocity, which the interference happens to produce and the common momentum does not.
 
-This is where his reading of $\theta$ becomes a fluid statement. He says that the angle measures the disparity between the velocity and the momentum, and his own stress says the same in the other vocabulary: the particle part of $L_{\imath\jmath}$ is $mc^{2}\rho k_{\imath} v_{\jmath}$, whose momentum density lies along $k$ and whose particle flux lies along $v$, so the two are parallel exactly when $k$ is. When they are parallel the transport term is a transport along the flow and there is nothing left to carry; when they are not, the momentum density and the particle flux point along different directions, and the difference has to appear as a flux in the fluid's own rest frame. The identification of the disparity with $\theta$ is his and is quoted; what is computed here is that the two families separate the same way.
+This is where his reading of $\theta$ becomes a fluid statement. He says that the angle measures the disparity between the velocity and the momentum, and his own stress says the same in the other vocabulary: the particle part of $L_{\imath\jmath}$ is $mc^{2}\rho \nu_{\imath} v_{\jmath}$, whose momentum density lies along $k$ and whose particle flux lies along $v$, so the two are parallel exactly when $k$ is. When they are parallel the transport term is a transport along the flow and there is nothing left to carry; when they are not, the momentum density and the particle flux point along different directions, and the difference has to appear as a flux in the fluid's own rest frame. The identification of the disparity with $\theta$ is his and is quoted; what is computed here is that the two families separate the same way.
 
 ### The trace and the pressure
 
@@ -299,14 +299,14 @@ No experiment separates the two formulations. What separates them is the origin 
 | $\tilde u_{\mathrm r}$ | Real unit rotor factor |
 | $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | The frame factor; the four-vector factor |
 | $\tilde V_{\Phi}=ic\mathcal B_{\Psi}=\gamma(ic\,e_t+\vec v)$ | Four-velocity |
-| $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | The phase gradient; the momentum in wave-number units |
+| $\tilde\Upsilon_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | The phase gradient; the momentum in wave-number units |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | The current |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\vec s$ | The spin element |
-| $\rho$, $v_{\imath}$, $w_{\imath}$, $k_{\imath}$, $\theta$ | Takabayasi's density, velocity, spin, momentum and internal angle |
+| $\rho$, $v_{\imath}$, $w_{\imath}$, $\nu_{\imath}$, $\theta$ | Takabayasi's density, velocity, spin, momentum and internal angle |
 | $\Omega=\bar\psi\psi$, $\Omega_{\mathrm{ps}}=i\bar\psi\gamma_5\psi$ | His scalar and pseudoscalar bilinears; $\Omega=\rho\cos\theta$ and $\Omega_{\mathrm{ps}}=\rho\sin\theta$ |
 | $j_{\imath}$ | The current, with $\rho^{2}=\sum_{\imath}\varepsilon_{\imath} j_{\imath} j_{\imath}=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}$ |
-| $k_m=\frac{2\pi mc}{h}$ | Mass wave number; the unit that makes his $k_{\imath}$ dimensionless |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number; the unit that makes his $\nu_{\imath}$ dimensionless |
 | $u_{\imath}$, $q_{\imath}$, $\epsilon$ | Eckart four-velocity, heat flow, and the energy density it sees |
 | $\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}=mc^{2}\rho\cos\theta$ | Trace of the stress; the mass term |
 | $p$, $\pi^{j}{}_{k}$ | Pressure and the traceless part of the spatial block |

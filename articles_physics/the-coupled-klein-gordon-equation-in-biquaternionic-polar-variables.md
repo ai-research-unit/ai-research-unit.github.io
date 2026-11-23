@@ -37,9 +37,9 @@ where $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ is the action and $\ti
 
 *Third, the coupled pair is the parent's pair with that substitution and no other change.* The amplitude equation becomes the mass shell with the mechanical momentum and the same quantum potential; the transport equation becomes the divergence of the mechanical current; the quantum potential is untouched, because it depends on the density alone and the density is $\varrho^{2}$ in both cases. The vorticity is *not* untouched: the free flow is a gradient flow and therefore irrotational, and the coupled flow has vorticity $ϙ\vec B$. That is the one qualitative change the chart exhibits, and §*The Current, the Vorticity and the Flux* computes it.
 
-**Scope.** The connection is treated as an external field with a constant or a varying profile, and the equation is the component equation of the element companion — the one that decouples, that the action produces, and that the current belongs to. The element companion's other equation, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$, is the subject of §*What the Chart Cannot Carry*, where the chart shows why it is not a two-function system. The operator setting, in which the amplitude and the action are functions of the coordinates and the equation becomes a PDE, is the Madelung problem of the standard literature and is cited rather than re-derived.
+**Scope.** The connection is treated as an external field with a constant or a varying profile, and the equation is the component equation of the element companion — the one that decouples, that the action produces, and that the current belongs to. The element companion's other equation, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi$, is the subject of §*What the Chart Cannot Carry*, where the chart shows why it is not a two-function system. The operator setting, in which the amplitude and the action are functions of the coordinates and the equation becomes a PDE, is the Madelung problem of the standard literature and is cited rather than re-derived.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=\frac{2\pi mc}{h}$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, and the coupling is $ϙ$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $\nu_m=\frac{mc}{h}$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, and the coupling is $ϙ$.
 
 ## The Word and Its Domain
 
@@ -215,12 +215,12 @@ the first term because $\vec p=\frac{h}{2\pi}\nabla\theta$ is a gradient and its
 
 ## What the Chart Cannot Carry
 
-**The other element equation.** The element companion distinguishes two coupled equations, $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$, which agree in the free theory and differ by the curvature. The chart's pair is the chart of the first. The second's residual in the chart is
+**The other element equation.** The element companion distinguishes two coupled equations, $\Box_{\mathrm{gco},\Phi}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi$, which agree in the free theory and differ by the curvature. The chart's pair is the chart of the first. The second's residual in the chart is
 
 $$
-\tilde\Xi^{-1}\Bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}\Bigr)\tilde\Xi
-=\tilde\Xi^{-1}\Bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\Bigr)\tilde\Xi
-+\frac{2\pi i\,ϙ}{h}\,\tilde\Xi^{-1}\tilde F\,\tilde\Xi ,
+\tilde\Xi^{-1}\Bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}\Bigr)\tilde\Xi
+=\tilde\Xi^{-1}\Bigl(\Box_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}\Bigr)\tilde\Xi
++\frac{i\,ϙ}{h}\,\tilde\Xi^{-1}\tilde F\,\tilde\Xi ,
 $$
 
 and the second term is the field strength conjugated by the field.
@@ -295,7 +295,7 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 | $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec p-q\vec A)$ | The mechanical current |
 | $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ | The gauge phase translation |
 | $\tilde F$ | The field strength; one type in the algebra, four brackets in the chart |
-| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number |
 
 ## Further Reading
 

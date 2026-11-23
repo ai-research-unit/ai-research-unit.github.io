@@ -649,7 +649,7 @@ $$
 \tilde{Ξ}\longmapsto a\,\tilde{Ξ}\,b.
 $$
 
-The pass removes the operator symbol as well. A mass term is $k_m\tilde{Ξ}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+The pass removes the operator symbol as well. A mass term is $\nu_m\tilde{Ξ}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 An article that reaches this pass has no arrays and no ideals in its body, and reads its operators off the formula itself.
 
@@ -670,7 +670,7 @@ The three passes need a table, and one table serves all three. Each row gives th
 | $\gamma_0[\mathbb{B}_{\Phi}]$ | $iR_{\vec e_x}$ | $iR_{\mathrm{axf},\vec e_x}$ | $\tilde{Ξ}\mapsto i\tilde{Ξ}\vec e_x$ |
 | $\gamma_\eta[\mathbb{B}_{\Phi}]$ | $iL_{\vec e_\eta}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}\mapsto i\vec e_\eta\tilde{Ξ}\vec e_y$ |
 | $\gamma_5[\mathbb{B}_{\Phi}]$ | $-iR_{\vec e_z}$ | $-iR_{\mathrm{axf},\vec e_z}$ | $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$ |
-| the mass term | $k_mL_{e_t}R_{e_t}$ | $k_m\mathrm I_4$ | $\tilde{Ξ}\mapsto k_m\tilde{Ξ}$ |
+| the mass term | $\nu_mL_{e_t}R_{e_t}$ | $\nu_m\mathrm I_4$ | $\tilde{Ξ}\mapsto \nu_m\tilde{Ξ}$ |
 | the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR_{\mathrm{axf},\vec e_z}\bigr)$ | $\tilde{Ξ}\mapsto\tfrac12\bigl(\tilde{Ξ}-i\tilde{Ξ}\vec e_z\bigr)$ |
 | the Dirac adjoint | a pairing, not an action | — | needs the frame that declares the pairing |
 

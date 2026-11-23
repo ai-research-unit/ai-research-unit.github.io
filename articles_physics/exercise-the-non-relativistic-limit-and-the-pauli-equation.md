@@ -50,14 +50,14 @@ $$
 \sum_\eta\vec e_\eta\pi_\eta=-i\,\frac{h}{2\pi}\,D_{3}^{A},
 $$
 
-with $\pi_\eta=p_\eta-qA_\eta$ and $D_3^A=\sum_\eta\vec e_\eta(\partial/\partial r_\eta-\frac{2\pi iqA_{\eta}}{h})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco},\Phi}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element
+with $\pi_\eta=p_\eta-qA_\eta$ and $D_3^A=\sum_\eta\vec e_\eta(\partial/\partial r_\eta-\frac{2\pi iqA_{\eta}}{h})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco},\Phi}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(\nu_t^{\prime}x_0-\vec\nu_\Phi\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element
 
 $$
--i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,
+-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi,
 \qquad
--i\tilde K_{\Phi}f=0\ \text{on the light cone},
+-2\pi i\tilde\Upsilon_{\Phi}f=0\ \text{on the light cone},
 \qquad
-(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2 .
+(-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})=4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2 .
 $$
 
 **What the gradient can do, and what it cannot.** The massless equation is one first-order equation in one field,
@@ -97,7 +97,7 @@ Both gradients act on the left, and no right multiplication and no conjugation e
 **The two-sided form.** Kravchenko's dictionary writes the same physics as a single equation on the whole algebra. The derivative acts on the left, the mass acts on the right through $\vec e_z=-\omega$, and a componentwise conjugation supplies the antilinear part. Here $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ is the pure part of the gradient and $\mathcal N$ names the left-hand side. The operator reads
 
 $$
-\mathcal N F=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-k_mi\,\overline F\,\vec e_z=0 .
+\mathcal N F=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-2\pi\nu_mi\,\overline F\,\vec e_z=0 .
 $$
 
 Equivalently,
@@ -147,7 +147,7 @@ $$
 O=O^{\dagger},\quad \beta=\beta^{\dagger},
 $$
 
-so that $O$ is odd, $qΞ$ is even, and $H$ is Hermitian. The eigenvalues of $H$ at zero potential are $\pm\sqrt{m^2c^4+c^2\vec\pi^2}$, which is the mass shell $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_m^{2}$ of the pair.
+so that $O$ is odd, $qΞ$ is even, and $H$ is Hermitian. The eigenvalues of $H$ at zero potential are $\pm\sqrt{m^2c^4+c^2\vec\pi^2}$, which is the mass shell $(-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})=4\pi^{2}\nu_m^{2}$ of the pair.
 
 **The two halves.** With $\beta\tilde{Ξ}_{\mathrm{evn}}=+\tilde{Ξ}_{\mathrm{evn}}$ and $\beta\tilde{Ξ}_{\mathrm{odd}}=-\tilde{Ξ}_{\mathrm{odd}}$, the equation of motion reads on the two parts
 
@@ -172,7 +172,7 @@ $$
 
 and the odd operator is the pure part of the gauged gradient, $\sum_\eta\vec e_\eta\pi_\eta=-i\,\frac{h}{2\pi}\,D_{3}^{A}$, multiplied on the right by $\vec e_y$. Writing it as $\frac{h}{2\pi}\,c\,\vec \pi$, that is as the left multiplication by an element, would make it even; the right multiplier $\vec e_y$ is what makes it odd, and it is also what reverses the chirality.
 
-*Step 2: factoring out the rest energy.* Write $F=\exp(-i\theta_{\mathrm{rst}})\,G$ with $\theta_{\mathrm{rst}}=r'_t\,k_m$. The factor is the central element $\cos\theta_{\mathrm{rst}}-i\sin\theta_{\mathrm{rst}}$, which commutes with every operator of the reduction, so it can be cancelled on both sides. What is left of the mass term is $(\beta-1)mc^2$, which vanishes on the large part and is $-2mc^2$ on the small part, and the parent's two coupled equations follow:
+*Step 2: factoring out the rest energy.* Write $F=\exp(-i\theta_{\mathrm{rst}})\,G$ with $\theta_{\mathrm{rst}}=r'_t\,2\pi\nu_m$. The factor is the central element $\cos\theta_{\mathrm{rst}}-i\sin\theta_{\mathrm{rst}}$, which commutes with every operator of the reduction, so it can be cancelled on both sides. What is left of the mass term is $(\beta-1)mc^2$, which vanishes on the large part and is $-2mc^2$ on the small part, and the parent's two coupled equations follow:
 
 $$i\,\frac{h}{2\pi}\frac{\partial\tilde{Ξ}_{\mathrm{evn}}}{\partial  r'_t}=O\tilde{Ξ}_{\mathrm{odd}}+qΞ\tilde{Ξ}_{\mathrm{evn}},
 $$
@@ -206,7 +206,7 @@ and on the large part $O^2/(2mc^2)=(\vec\pi^2-\frac{h}{2\pi}\,q\,\boldsymbol{\si
 $$
 S_1=-\frac{i}{2\,m\,c^{2}}\,\beta O
 =-\frac{1}{2\,m\,c}\sum_\eta\vec e_\eta\pi_\eta\,(\cdot)\,\vec e_z
-=\frac{i}{2\,k_m}\bigl(D_3^A\cdot\bigr)\vec e_z .
+=\frac{i}{2\,2\pi\nu_m}\bigl(D_3^A\cdot\bigr)\vec e_z .
 $$
 
 The second form is the first one after $\beta O=-ic\sum_\eta\vec e_\eta\pi_\eta(\cdot)\vec e_z$, the two multipliers of $\beta O$ being $i\vec e_x$ and $\vec e_y$, whose product is $i\vec e_z$; the third is the same operator written with the pure part of the gauged gradient, since $\sum_\eta\vec e_\eta\pi_\eta=-i\,\frac{h}{2\pi}\,D_{3}^{A}$. The generator is two-sided as well, left by $\vec e_\eta$ and right by $\vec e_z$, and it is Hermitian, being the product of an anti-Hermitian left factor and an anti-Hermitian right multiplier with a Hermitian $\pi_\eta$ between them; so $iS_1$ is anti-Hermitian and the transformation is unitary. For static fields the generator is time-independent, and the transformed Hamiltonian is
@@ -228,8 +228,8 @@ The first cancels the odd term $O$. The second contributes $+\frac{\beta O^2}{mc
 
 $$
 O_1=i[S_1,E]
-=\frac{q}{2\,k_m}\sum_\eta\vec e_\eta E_\eta\,(\cdot)\,\vec e_z
-=\frac{q}{2\,k_m}\,(\vec E\,\cdot)\,\vec e_z ,
+=\frac{q}{2\,2\pi\nu_m}\sum_\eta\vec e_\eta E_\eta\,(\cdot)\,\vec e_z
+=\frac{q}{2\,2\pi\nu_m}\,(\vec E\,\cdot)\,\vec e_z ,
 $$
 
 which the second transformation $S_2=-\frac{i}{2\,m\,c^{2}}\beta O_1$ removes. To the order at which the first physical corrections appear, therefore,
@@ -260,10 +260,10 @@ This is a left multiplication by an element of the algebra, so it is even, and i
 $$
 O^2_{\rm large}=c^2\left(\vec\pi^2-\frac{h}{2\pi}\,q\,\boldsymbol{\sigma}\,\vec B\right),
 \qquad
-H_{\rm large}=mc^2+qΞ+\frac{\vec \pi^{2}}{2\,m}-\frac{qc}{2\,k_m}\boldsymbol\sigma\cdot\vec B+O(c^{-2}).
+H_{\rm large}=mc^2+qΞ+\frac{\vec \pi^{2}}{2\,m}-\frac{qc}{2\,2\pi\nu_m}\boldsymbol\sigma\cdot\vec B+O(c^{-2}).
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 Subtracting the rest energy,
 
@@ -341,9 +341,9 @@ $$
 \vec\mu_e=-\frac{e}{m_e}\vec S=-g\frac{e}{2m_e}\vec S,\qquad g=2,
 $$
 
-whose magnitude at $S_z=\frac{h}{4\pi}$ is one Bohr magneton $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$. The measured anomalous part $a=(g-2)/2\approx\alpha/2\pi$ is a radiative correction that lies outside the equation treated here.
+whose magnitude at $S_z=\frac{h}{4\pi}$ is one Bohr magneton $\mu_B=ec\dfrac{1}{2\,2\pi\nu_{m_e}}$. The measured anomalous part $a=(g-2)/2\approx\alpha/2\pi$ is a radiative correction that lies outside the equation treated here.
 
-Here $1/k_{m_e}=\frac{h}{2\pi m_ec}$ is the electron mass length.
+Here $1/\nu_{m_e}=\frac{h}{2\pi m_ec}$ is the electron mass length.
 
 *Step 5: the biquaternion form.* Under the isomorphism $\mathsf M_2(\vec e_\eta)=-i\sigma_\eta$ the spin components are the elements $\tilde S_{\Psi,\eta}=\frac{h}{4\pi}i\vec e_\eta$, and a magnetic field written as the pure real quaternion $\vec B=\sum_\eta B_\eta\vec e_\eta$ maps the spin term to
 
@@ -364,8 +364,8 @@ the Hermitian element of the informational sector, exactly as the parent states:
 *Step 1: the even term of the first transformation.* From Step 4 of Problem 1,
 
 $$
-[S_1,E]=-\frac{i\,q}{2\,k_m}\sum_\eta\vec e_\eta E_\eta\,(\cdot)\,\vec e_z
-=-\frac{i\,q}{2\,k_m}\,(\vec E\,\cdot)\,\vec e_z .
+[S_1,E]=-\frac{i\,q}{2\,2\pi\nu_m}\sum_\eta\vec e_\eta E_\eta\,(\cdot)\,\vec e_z
+=-\frac{i\,q}{2\,2\pi\nu_m}\,(\vec E\,\cdot)\,\vec e_z .
 $$
 
 A direct use of the algebra, with $[S_1,E]$ above and $S_1=-\frac{1}{2\,m\,c}\sum_j\vec e_j\pi_j(\cdot)\vec e_z$, gives
@@ -373,20 +373,20 @@ A direct use of the algebra, with $[S_1,E]$ above and $S_1=-\frac{1}{2\,m\,c}\su
 $$
 -\tfrac12[S_1,[S_1,E]]
 =-\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\,i(\vec E\times\vec\pi)
--\frac{q}{8\,k_m^{2}}\,\vec\nabla_\Phi\cdot\vec E .
+-\frac{q}{8\,4\pi^{2}\nu_m^{2}}\,\vec\nabla_\Phi\cdot\vec E .
 $$
 
 The first term comes from the antisymmetric part of $\vec e_j\vec e_\eta=-\delta_{j\eta}+\epsilon_{j\eta l}\vec e_l$; the second comes from the symmetric part. Since $\vec\nabla_\Phi\cdot\vec E=-\vec\nabla_\Phi^2V/q$, the second term is the Darwin term $+\frac{h^{2}}{4\pi^{2}}\vec\nabla_\Phi^2 V/(8m^2c^2)$. In the large part, $i\vec a$ acts as $\boldsymbol\sigma\cdot\vec a$, so the two terms read
 
 $$
 -\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\,\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
--\frac{q}{8\,k_m^{2}}\,\vec\nabla_\Phi\cdot\vec E .
+-\frac{q}{8\,4\pi^{2}\nu_m^{2}}\,\vec\nabla_\Phi\cdot\vec E .
 $$
 
 *Step 2: the Darwin term.* Since $\vec E=-\vec\nabla_\PhiΞ$ and $V=qΞ$,
 
 $$
-\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2V=-\frac{q}{8\,k_m^{2}}\vec\nabla_\Phi\cdot\vec E .
+\frac{1}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi^2V=-\frac{q}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi\cdot\vec E .
 $$
 
 This is the Darwin term. Its Hermiticity is immediate: $\vec\nabla_\Phi\cdot\vec E$ is a real function of position.
@@ -421,7 +421,7 @@ It is $(\boldsymbol\sigma\cdot\vec\pi)^4$, not $\vec\pi^4$, because $(\boldsymbo
 *Step 5: the second generator and the assembled Hamiltonian.* The odd remainder is $O_1$, and the transformation that removes it is $S_2=-\frac{i}{2\,m\,c^{2}}\beta O_1$. With $O_1$ from Problem 1 and $\beta(\vec E\,\cdot)\vec e_z=i(\vec E\,\cdot)\vec e_y$,
 
 $$
-\beta O_1=\frac{i\,q}{2\,k_m}\sum_\eta\vec e_\eta E_\eta\,(\cdot)\,\vec e_y,
+\beta O_1=\frac{i\,q}{2\,2\pi\nu_m}\sum_\eta\vec e_\eta E_\eta\,(\cdot)\,\vec e_y,
 \qquad
 S_2=-\frac{i}{2\,m\,c^{2}}\beta O_1=\frac{h\,q}{8\pi \,c^{3}\,m^{2}}\sum_\eta\vec e_\eta E_\eta\,(\cdot)\,\vec e_y .
 $$
@@ -432,7 +432,7 @@ $$
 \boxed{\;
 H=\frac{\vec \pi^{2}}{2\,m}+qΞ-\frac{h\,q}{4\pi \,m}\boldsymbol\sigma\cdot\vec B
 -\frac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}
-+\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2 V
++\frac{1}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi^2 V
 -\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
 \;}
 $$
@@ -469,7 +469,7 @@ with the exact Dirac shift $\delta E_{\rm exact}=-\dfrac{m(\mathfrak{Z}\alpha)^4
 - $qΞ$: multiplication by the real function $qΞ$, Hermitian;
 - $-\frac{h\,q}{4\pi \,m}\boldsymbol\sigma\cdot\vec B$: $\sigma_\eta$ and the real field $B_\eta$ are Hermitian;
 - $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$: minus a real multiple of the square of the Hermitian $(\boldsymbol\sigma\cdot\vec\pi)^2$;
-- $\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2 V$: multiplication by a real function;
+- $\frac{1}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi^2 V$: multiplication by a real function;
 - $-\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$: this is the one term whose Hermiticity is not automatic. Using $[\pi_i,E_j]=-i\,\frac{h}{2\pi}\partial/\partial r_i\,E_j$,
 
 $$
@@ -486,7 +486,7 @@ so the term is Hermitian if and only if $\vec\nabla_\Phi\times\vec E=0$, its fai
 | $qΞ$ | $(qΞ)\,e_t$ | $\mathbb{B}_{\Psi}$ |
 | $-\frac{h\,q}{4\pi \,m}\boldsymbol\sigma\cdot\vec B$ | $-\frac{h\,q}{4\pi \,m}\,i\vec B$ | $\mathbb{B}_{\Psi}$ |
 | $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$ | $-\dfrac{1}{8m^3c^2}\bigl(\vec\pi^2-i\,\frac{h}{2\pi}\,q\,\vec B\bigr)^2$ | $\mathbb{B}_{\Psi}$ |
-| $\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2 V$ | $\frac{1}{8\,k_m^{2}}(\vec\nabla_\Phi^2V)\,e_t$ | $\mathbb{B}_{\Psi}$ |
+| $\frac{1}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi^2 V$ | $\frac{1}{8\,4\pi^{2}\nu_m^{2}}(\vec\nabla_\Phi^2V)\,e_t$ | $\mathbb{B}_{\Psi}$ |
 | $-\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$ | $-\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\,i(\vec E\times\vec\pi)$ | $\mathbb{B}_{\Psi}$ |
 
 Every term of the reduced, two-component Hamiltonian is Hermitian, hence every term lands in $\mathbb{B}_{\Psi}$. This is the precise content of the parent's remark that the spin term is an observable of the informational sector; the remark applies term by term. Each representative is a left multiplication by an element, which is what makes the identification possible at all.
@@ -497,7 +497,7 @@ Every term of the reduced, two-component Hamiltonian is Hermitian, hence every t
 
 2. **The anti-Hermitian generator.** $S_1$ is Hermitian, so $iS_1$ is anti-Hermitian: it plays the rôle that the elements of $\mathbb{B}_{\Phi}$ play in the companion quantum article, where the Lie algebra of the $*$-unitary group is $\mathbb{B}_{\Phi}$. It is not itself in $\mathbb{B}_{\Phi}$, because it is built from right multiplications and is not a left multiplication by an element. The two gradings must not be conflated: the Foldy–Wouthuysen grading is by conjugation with $\beta$, the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ grading is by ${}^{*}$. Thus the odd operator $O$ is Foldy–Wouthuysen-odd and Hermitian, yet it is not the left multiplication by the element $\frac{h}{2\pi}\,c\,\vec \pi$ — that element acts on one side and is even — and the identification of "odd" with "not in $\mathbb{B}_{\Psi}$" is incorrect.
 
-3. **The real structure and the mass term.** In the biquaternion equation the conjugation $\flat=-{}^{*}$ is the algebra's real structure. It maps $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$ and fixes $\mathbb{B}_{\Phi}$: if $F\in\mathbb{B}_{\Psi}$ then $F^\flat=-F\in\mathbb{B}_{\Phi}$, and if $F\in\mathbb{B}_{\Phi}$ then $F^\flat=F$. Its action is diagonal on the sector decomposition with opposite signs $\mp1$: a coupling built on $\flat$ — a Majorana-type mass, $mF^\flat$ — would carry those opposite signs. The parent's mass term is not that coupling; it is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi F_R=mF_L$, $(\tilde\nabla_\Phi)^{\natural}F_L=mF_R$, which relates the two parts of the chirality and leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$. The rest-energy factor that is removed before the reduction, the central element $\cos\theta_{\mathrm{rst}}-i\sin\theta_{\mathrm{rst}}$ with $\theta_{\mathrm{rst}}=r'_t\,k_m$, is not Hermitian either: the conjugation inverts $\theta_{\mathrm{rst}}$, so the element is fixed by ${}^{*}$ neither as it stands nor after multiplication by $-1$, and it lies in neither $\mathbb{B}_{\Psi}$ nor $\mathbb{B}_{\Phi}$. The phase that removes the mass term from a $\beta$-diagonal equation, $\exp(-i\beta\theta_{\mathrm{rst}})=\cos\theta_{\mathrm{rst}}\,e_t+\sin\theta_{\mathrm{rst}}\,\vec e_x$, is a right multiplication, and it splits the other way: its scalar part lies in $\mathbb{B}_{\Psi}$ and its pure part in $\mathbb{B}_{\Phi}$, since $\vec e_x$ is anti-Hermitian. Either way the rest-energy factor is a phase and not an observable, and it must be factored out before a two-component (hence $\mathbb{B}_{\Psi}$) description of the dynamics is reached.
+3. **The real structure and the mass term.** In the biquaternion equation the conjugation $\flat=-{}^{*}$ is the algebra's real structure. It maps $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$ and fixes $\mathbb{B}_{\Phi}$: if $F\in\mathbb{B}_{\Psi}$ then $F^\flat=-F\in\mathbb{B}_{\Phi}$, and if $F\in\mathbb{B}_{\Phi}$ then $F^\flat=F$. Its action is diagonal on the sector decomposition with opposite signs $\mp1$: a coupling built on $\flat$ — a Majorana-type mass, $mF^\flat$ — would carry those opposite signs. The parent's mass term is not that coupling; it is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi F_R=mF_L$, $(\tilde\nabla_\Phi)^{\natural}F_L=mF_R$, which relates the two parts of the chirality and leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$. The rest-energy factor that is removed before the reduction, the central element $\cos\theta_{\mathrm{rst}}-i\sin\theta_{\mathrm{rst}}$ with $\theta_{\mathrm{rst}}=r'_t\,2\pi\nu_m$, is not Hermitian either: the conjugation inverts $\theta_{\mathrm{rst}}$, so the element is fixed by ${}^{*}$ neither as it stands nor after multiplication by $-1$, and it lies in neither $\mathbb{B}_{\Psi}$ nor $\mathbb{B}_{\Phi}$. The phase that removes the mass term from a $\beta$-diagonal equation, $\exp(-i\beta\theta_{\mathrm{rst}})=\cos\theta_{\mathrm{rst}}\,e_t+\sin\theta_{\mathrm{rst}}\,\vec e_x$, is a right multiplication, and it splits the other way: its scalar part lies in $\mathbb{B}_{\Psi}$ and its pure part in $\mathbb{B}_{\Phi}$, since $\vec e_x$ is anti-Hermitian. Either way the rest-energy factor is a phase and not an observable, and it must be factored out before a two-component (hence $\mathbb{B}_{\Psi}$) description of the dynamics is reached.
 
 *Step 4: the sides, one line per operator.* Every operator of the reduction is listed with the element that multiplies on the left and the element that multiplies on the right. The column headed "side" is the answer to the only question that matters here: whether the operator is a single multiplication or a product of two.
 
@@ -525,7 +525,7 @@ No other right multiplication and no other differential operator occurs in the r
 | $\vec\pi^2 c/(2\,m\,c)$ | $1/m$ | $(\mathrm{kg\,m\,s^{-1}})^2$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $qΞ$ | $\mathrm C$ | $\mathrm{kg\,m^2\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $-\frac{h\,q}{4\pi \,m}\boldsymbol\sigma\cdot\vec B$ | $\mathrm C\,\mathrm{kg\,m^2\,s^{-1}\,kg^{-1}}$ | $\mathrm{kg\,s^{-2}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
-| $-\frac{q}{8\,k_m^{2}}\vec\nabla_\Phi\cdot\vec E$ | $\mathrm C\,\mathrm{kg^2m^4s^{-2}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
+| $-\frac{q}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi\cdot\vec E$ | $\mathrm C\,\mathrm{kg^2m^4s^{-2}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $-\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$ | $\mathrm C\,\mathrm{kg\,m^2s^{-1}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg^2m^2s^{-4}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$ | $\mathrm{kg^{-3}m^{-2}s^{2}}$ | $\mathrm{kg^4m^4s^{-4}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 
@@ -538,10 +538,10 @@ The non-relativistic limit of the biquaternion Dirac equation was carried throug
 The Foldy–Wouthuysen elimination of the small component, executed systematically with the generator
 
 $$
-S_1=-\frac{i}{2\,m\,c^{2}}\beta O=-\frac{1}{2\,m\,c}\sum_\eta\vec e_\eta\pi_\eta\,(\cdot)\,\vec e_z=\frac{i}{2\,k_m}\bigl(D_3^A\cdot\bigr)\vec e_z ,
+S_1=-\frac{i}{2\,m\,c^{2}}\beta O=-\frac{1}{2\,m\,c}\sum_\eta\vec e_\eta\pi_\eta\,(\cdot)\,\vec e_z=\frac{i}{2\,2\pi\nu_m}\bigl(D_3^A\cdot\bigr)\vec e_z ,
 $$
 
-produces the Pauli Hamiltonian $i\,\frac{h}{2\pi}\,c\partial\tilde{Ξ}_{\mathrm{evn}}/\partial r'_t=\bigl[\vec\pi^2 c/(2\,m\,c)+qΞ-(qc/k_m/2)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}_{\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla_\Phi\to\tilde\nabla_\Phi-\frac{2\pi i\,q\,\tilde{A}_{\Phi}}{h}$, gives $[\pi_i,\pi_j]=i\,\frac{h}{2\pi}\,q\,\epsilon_{ij\eta}\,B_{\eta}$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-\frac{h}{2\pi}\,q\,\boldsymbol{\sigma}\,\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\frac{h^{2}}{4\pi^{2}}\vec\nabla_\Phi^2 V/(8m^2c^2)=-(\frac{q}{8\,k_m^{2}})\vec\nabla_\Phi\cdot\vec E$ and the spin–orbit coupling $-(\frac{h\,q}{8\pi \,m^{2}\,c^{2}})\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\frac{h}{8\pi \,m^{2}\,c^{2}})r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
+produces the Pauli Hamiltonian $i\,\frac{h}{2\pi}\,c\partial\tilde{Ξ}_{\mathrm{evn}}/\partial r'_t=\bigl[\vec\pi^2 c/(2\,m\,c)+qΞ-(qc/\nu_m/2)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}_{\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla_\Phi\to\tilde\nabla_\Phi-\frac{2\pi i\,q\,\tilde{A}_{\Phi}}{h}$, gives $[\pi_i,\pi_j]=i\,\frac{h}{2\pi}\,q\,\epsilon_{ij\eta}\,B_{\eta}$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-\frac{h}{2\pi}\,q\,\boldsymbol{\sigma}\,\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=ec\dfrac{1}{2\,2\pi\nu_{m_e}}$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\frac{h^{2}}{4\pi^{2}}\vec\nabla_\Phi^2 V/(8m^2c^2)=-(\frac{q}{8\,4\pi^{2}\nu_m^{2}})\vec\nabla_\Phi\cdot\vec E$ and the spin–orbit coupling $-(\frac{h\,q}{8\pi \,m^{2}\,c^{2}})\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\frac{h}{8\pi \,m^{2}\,c^{2}})r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
 
 Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb{B}_{\Psi}$. The objects that do not are the two-sided operators of the reduction — the mass term $\beta mc^2$ and the odd operator $O$, which end in right multiplications by $i\vec e_x$ and by $\vec e_y$ and so are not left multiplications by an element — together with the anti-Hermitian generator $iS_1$ and the rest-energy phase, which is not Hermitian and belongs to neither sector. The real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — is not the parent's mass term, which is the linear coupling of the two chiralities. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.
 
@@ -557,7 +557,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian |
 | $D_3=\sum_\eta\vec e_\eta\partial/\partial r_\eta$, $D_3^A$ | Pure part of the gradient, free and gauged |
 | $\tilde\nabla_\Phi-\frac{2\pi i\,q\,\tilde{A}_{\Phi}}{h}$, $\tilde A_{\Phi}=Ξ e_t-\vec A$ | The gauged gradient; minimal substitution |
-| $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$ | Symbol of the gradient on a plane wave; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2$ |
+| $-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi$ | Symbol of the gradient on a plane wave; $(-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})=4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2$ |
 | $F=F_L+F_R$; $\Gamma F=-iF\vec e_z$ | The field and its chirality, values $\mp1$ |
 | $\beta F=iF\vec e_x$, $\beta^2=1$, $\beta\Gamma=-\Gamma\beta$ | The mass grading; $\beta O=-O\beta$ |
 | $O=c\sum_\eta\vec e_\eta\pi_\eta(\cdot)\vec e_y=-i\,\frac{h}{2\pi}\,c\,D_{3}^{A}\,\vec e_{y}$ | The odd operator; $O^2=c^2(\vec\pi^2-i\,\frac{h}{2\pi}\,q\,\vec B)$ |
@@ -567,11 +567,11 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $V=qΞ$ | Potential energy |
 | $H=\beta mc^2+O+E$, $E=qΞ$ | Split Hamiltonian; odd and even parts |
 | $S_1=-\frac{i}{2\,m\,c^{2}}\beta O=-\frac{1}{2\,m\,c}\sum_\eta\vec e_\eta\pi_\eta(\cdot)\vec e_z$ | Foldy–Wouthuysen generator |
-| $O_1=i[S_1,E]=\frac{q}{2\,k_m}(\vec E\cdot)\vec e_z$ | Residual odd operator |
+| $O_1=i[S_1,E]=\frac{q}{2\,2\pi\nu_m}(\vec E\cdot)\vec e_z$ | Residual odd operator |
 | $S_2=-\frac{i}{2\,m\,c^{2}}\beta O_1=\frac{h\,q}{8\pi \,c^{3}\,m^{2}}(\vec E\cdot)\vec e_y$ | Second generator |
 | $\vec S=\frac{h}{4\pi}\boldsymbol\sigma$, $\vec\mu=g\frac{q}{2m}\vec S$ | Spin and magnetic moment |
 | $g=2$ | Gyromagnetic factor |
-| $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ | Bohr magneton |
+| $\mu_B=ec\dfrac{1}{2\,2\pi\nu_{m_e}}$ | Bohr magneton |
 
 ## Further Reading
 

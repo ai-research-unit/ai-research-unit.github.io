@@ -57,7 +57,7 @@ $$
 \delta z = \frac{1}{2}\,a\,{r'_{t}}^2 =\frac{F_{z}}{2\,m}\left(\frac{L}{v}\right)^2 = \frac{\gamma (dB/dz) S_z L^2}{2 m v^2}.
 $$
 
-Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
+Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 With $S_z = \pm\frac{h}{4\pi}$ the two displacements are
 

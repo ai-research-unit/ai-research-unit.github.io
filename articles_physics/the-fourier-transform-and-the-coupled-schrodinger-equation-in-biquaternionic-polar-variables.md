@@ -8,7 +8,7 @@ The second finding is that the covariant bracket adds a real number to the phase
 
 The third finding is that the symbol is a model of the bracket and not the bracket itself. The bracket is a number at each time; the symbol is that number read at a fixed frequency. Where the bracket is constant the model is exact, and the constant background is exactly that case. Where the bracket varies the symbol does not exist, and the transform spreads: the effective number of modes of a chirped unit is $5.80$ at a chirp rate of $1$ and $26.53$ at a rate of $4$, against $1.00$ for a pure tone.
 
-The fourth finding is that the two invariants are not functionals of the symbol. $\vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A$ and $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}}$ are properties of the field at each point. The symbol is one function of $(\omega,\vec k)$, and it is the same function for every superposition. Two superpositions of the same two modes have the same symbol and different mean $\vec\pi$: $1.700$ against $2.500$ in the example below.
+The fourth finding is that the two invariants are not functionals of the symbol. $\vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A$ and $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}}$ are properties of the field at each point. The symbol is one function of $(\omega,\vec\nu_{\Phi})$, and it is the same function for every superposition. Two superpositions of the same two modes have the same symbol and different mean $\vec\pi$: $1.700$ against $2.500$ in the example below.
 
 The fifth finding is that the constant background is the exact case. The phase is linear in $\omicron_{\mathrm{pot}}$ and quadratic in $\vec A$, with no higher term, because the background is constant. So the "semiclassical" phase is exact here, and the article says plainly that there is no small parameter to expand in.
 
@@ -28,7 +28,7 @@ $$
 \mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}} .
 $$
 
-The substitution. $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+i\vec k_\Phi\cdot\vec r)$, so the covariant slots become the numbers $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\frac{h}{2\pi} k_\eta+ϙ A_\eta$.
+The substitution. $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r)$, so the covariant slots become the numbers $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $h\,k_\eta+ϙ A_\eta$.
 
 ## The Transform's Kernel in the Coupled Chart
 
@@ -72,7 +72,7 @@ A check of the sign in the chart. The invariant $\mathcal E=-\frac{h}{2\pi}\part
 
 The bracket is a number at each time. $\partial_{t'}\theta_{\mathrm{pha}}$ is a function of $t'$, and its product with $\frac{h}{2\pi}$ is the local frequency of the field. The symbol is that number read at one frequency, and the reading is faithful only when the number does not vary.
 
-The exact case is the constant bracket. For a plane wave the bracket is constant, the symbol exists, and the equation reduces to the algebraic relation $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}=\lvert \frac{h}{2\pi}\vec k-q\vec A\rvert^{2}/(2m)$. Nothing is approximated, and the reduction is exact because the coefficient is constant.
+The exact case is the constant bracket. For a plane wave the bracket is constant, the symbol exists, and the equation reduces to the algebraic relation $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}=\lvert h\,2\pi\vec\nu_{\Phi}-q\vec A\rvert^{2}/(2m)$. Nothing is approximated, and the reduction is exact because the coefficient is constant.
 
 **The varying case has no symbol.** An invertible element whose phase is $\theta=\omega_0t'+\tfrac12\alpha t'^{2}$ has a bracket $\omega_0+\alpha t'$ that varies, and its transform is not supported at one frequency. On a grid of sixty-four points the effective number of modes $1/\sum_jp_j^{2}$ was $1.00$ for an integer tone, $5.64$ at $\alpha=1$ and $26.20$ at $\alpha=4$. The spread grows with the chirp and the symbol does not exist for any of them.
 
@@ -96,13 +96,13 @@ The two rates in the chart's letters. The phase runs at $-\big(h_t-ϙ\omicron_{\
 
 The numbers. With $\lvert\vec h_\Psi\rvert=0.616441$ the free gap is $1.232882$; with $ϙ\vec A=(0.35,0.25,0)$ it is $1.503329$; with $ϙ\omicron_{\mathrm{pot}}=0.4$ alone it stays $1.232882$ and the phase's rate moves by $-0.400000$. The gap is a vector-potential effect and the translation is a scalar-potential effect.
 
-The invariant reading. The two eigenvalues are $\mathcal E_0\pm\lvert\vec\pi_0\rvert$ for a mode, with $\mathcal E_0=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi_0=\frac{h}{2\pi}\vec k-q\vec A$. So the pair is a function of the two invariants, and the chart's two rates are functions of the two invariants. Gauge transformations move neither.
+The invariant reading. The two eigenvalues are $\mathcal E_0\pm\lvert\vec\pi_0\rvert$ for a mode, with $\mathcal E_0=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi_0=h\,2\pi\vec\nu_{\Phi}-q\vec A$. So the pair is a function of the two invariants, and the chart's two rates are functions of the two invariants. Gauge transformations move neither.
 
 What the pair does not carry. It does not carry the rotor's axis, which the vector potential shifts. The gap is read and the axis is frame data, exactly as in the free polar companion.
 
 ## The Invariants Are Not Functionals of the Symbol
 
-The symbol is one function. $\sigma_{\mathrm{gco}}$ is a fixed function of $(\omega,\vec k)$ once the connection and the mass are fixed, the same function for every field. The invariants are not: $\vec\pi$ and $\mathcal E$ are properties of a given field, computed from its phase's derivatives.
+The symbol is one function. $\sigma_{\mathrm{gco}}$ is a fixed function of $(\omega,\vec\nu_{\Phi})$ once the connection and the mass are fixed, the same function for every field. The invariants are not: $\vec\pi$ and $\mathcal E$ are properties of a given field, computed from its phase's derivatives.
 
 The example. Take two modes with $\frac{h}{2\pi} k=1$ and $\frac{h}{2\pi} k=3$, a connection with $ϙ A=0.5$, and two superpositions. Weights $(0.9,0.1)$ give the mean mechanical momentum $0.9\times1.5+0.1\times3.5=1.700$; weights $(0.5,0.5)$ give $2.500$. The symbol is the same function in both cases, because it is the same equation with the same connection.
 
@@ -112,14 +112,14 @@ Where the invariants live. They live in the field and in its word, and their int
 
 The gauge covariance of the invariants. Under a gauge transformation the phase's gradient shifts by $-\vec\nabla_\Phi\Gamma$ and $\vec A$ by $+\vec\nabla_\Phi\Gamma$... in the parent's sign convention $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ and $\theta\mapsto\theta+\frac{2\pi ϙ\Gamma}{h}$, so $\frac{h}{2\pi}\nabla\theta-q\vec A$ is invariant. Both invariants are gauge invariant and both are field-dependent, and the pair of properties is what a symbol cannot have.
 
-A caution about $\vec k$. The symbol's argument $\vec k$ is the transform's label and not the field's mechanical momentum. They agree on a single plane wave and disagree on every superposition. **Reading $\frac{h}{2\pi}\vec k-q\vec A$ as the field's momentum is the error this section exists to prevent.**
+A caution about $\vec\nu_{\Phi}$. The symbol's argument $\vec\nu_{\Phi}$ is the transform's label and not the field's mechanical momentum. They agree on a single plane wave and disagree on every superposition. **Reading $h\,\vec\nu_{\Phi}-q\vec A$ as the field's momentum is the error this section exists to prevent.**
 
 ## The Constant Background Is the Exact Case
 
 The expansion of the shift. With a constant background the symbol's dependence on the connection is
 
 $$
-\sigma_{\mathrm{gco}}=\sigma_{\mathrm{free}}+\rho_{\mathrm{chg}}\omicron_{\mathrm{pot}}-\frac{1}{m}\rho_{\mathrm{chg}}\,\vec k\cdot\vec A-\frac{\rho_{\mathrm{chg}}^{2}}{2m}\lvert\vec A\rvert^{2},
+\sigma_{\mathrm{gco}}=\sigma_{\mathrm{free}}+\rho_{\mathrm{chg}}\omicron_{\mathrm{pot}}-\frac{1}{m}\rho_{\mathrm{chg}}\,2\pi\vec\nu_{\Phi}\cdot\vec A-\frac{\rho_{\mathrm{chg}}^{2}}{2m}\lvert\vec A\rvert^{2},
 $$
 
 so it is linear in $\omicron_{\mathrm{pot}}$, linear and quadratic in $\vec A$, and has no higher term. The series terminates because the background is constant, and not because a small parameter is small.
@@ -177,12 +177,12 @@ The invariants $\vec\pi$ and $\mathcal E$ are gauge invariant and field dependen
 | $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge factor; central, hence commuting with the kernel |
 | $e^{-i\theta_{\mathrm{pwp}}}$ | The transform's kernel; central, one coordinate |
 | $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ | The covariant frequency; the invariant $\mathcal E$ on a mode |
-| $\frac{h}{2\pi} k_\eta+ϙ A_\eta$ | The mechanical momentum; the invariant $\vec\pi$ on a mode |
+| $h\,k_\eta+ϙ A_\eta$ | The mechanical momentum; the invariant $\vec\pi$ on a mode |
 | $h_t-ϙ\omicron_{\mathrm{pot}}\pm\lvert\vec h_\Psi-q\vec A\rvert$ | The eigenvalue pair; the translation and the gap |
 | $1.232882$, $1.503329$ | The gap free and with $ϙ\vec A=(0.35,0.25,0)$ |
 | $1.00$, $5.64$, $26.20$ | Effective mode counts of a chirped unit at rates $0$, $1$, $4$ |
 | $1.700$, $2.500$ | Mean mechanical momenta of two superpositions of the same two modes |
-| $\sigma_{\mathrm{gco}}=\sigma_{\mathrm{free}}+ϙ\omicron_{\mathrm{pot}}-\frac{ϙ}{m}\vec k\cdot\vec A-\frac{ϙ^{2}}{2m}\lvert\vec A\rvert^{2}$ | The exact expansion in a constant background |
+| $\sigma_{\mathrm{gco}}=\sigma_{\mathrm{free}}+ϙ\omicron_{\mathrm{pot}}-\frac{ϙ}{m}2\pi\vec\nu_{\Phi}\cdot\vec A-\frac{ϙ^{2}}{2m}\lvert\vec A\rvert^{2}$ | The exact expansion in a constant background |
 
 ## Further Reading
 

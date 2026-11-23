@@ -20,12 +20,12 @@ whose two parts carry the two values of the chirality, $\tilde{Ξ}_{L}$ the valu
 
 $$
 \begin{aligned}
-\tilde\nabla_\Phi\tilde{Ξ}_{R} &= k_{m_n}\,\tilde{Ξ}_{L},\\[4pt]
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} &= k_{m_n}\,\tilde{Ξ}_{R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R} &= 2\pi\nu_{m_n}\,\tilde{Ξ}_{L},\\[4pt]
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} &= 2\pi\nu_{m_n}\,\tilde{Ξ}_{R},
 \end{aligned}
 $$
 
-with $m_n$ the neutron mass. The other, Kravchenko's **two-sided equation**, is a different operator, with the derivative and the mass on opposite sides; it is recorded in the subsection *The Two Dirac Equations, and Which One the Neutron Uses* below and is not used here. The norm-one elements of the algebra, $\langle\tilde U\rangle_{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act irreducibly on each part with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. The representation-theoretic content of spin-$\tfrac12$ — half-integer weight, the double-valued rotation, Lorentz covariance — is inherited from the algebra, and in this sense the framework **represents** a spin-$\tfrac12$ field. Three qualifications are what the neutron actually tests, and the third of them has a partial answer. Here $1/k_{m_n}=\frac{h}{2\pi m_nc}$ is the neutron mass length.
+with $m_n$ the neutron mass. The other, Kravchenko's **two-sided equation**, is a different operator, with the derivative and the mass on opposite sides; it is recorded in the subsection *The Two Dirac Equations, and Which One the Neutron Uses* below and is not used here. The norm-one elements of the algebra, $\langle\tilde U\rangle_{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act irreducibly on each part with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. The representation-theoretic content of spin-$\tfrac12$ — half-integer weight, the double-valued rotation, Lorentz covariance — is inherited from the algebra, and in this sense the framework **represents** a spin-$\tfrac12$ field. Three qualifications are what the neutron actually tests, and the third of them has a partial answer. Here $1/\nu_{m_n}=\frac{h}{2\pi m_nc}$ is the neutron mass length.
 
 **The representation is generic.** The algebra is simple, with one class of simple carrier, so every structureless spin-$\tfrac12$ field is an element of the same algebra with the same two values; the electron article records the same point, that the algebra contains no discriminator. The neutron is distinguished from the electron here only by the two numbers inserted into the equation, $m_n$ and the charge. Nothing in the algebra prefers these values, and nothing in it marks the field as the neutron rather than any other spin-$\tfrac12$ fermion of the same mass and charge.
 
@@ -64,14 +64,14 @@ The companion article separates two objects that both carry the name *Dirac equa
 **The two-sided equation** is Kravchenko's dictionary form, a single equation on the element $F\in\mathbb{B}$, with the constants carried,
 
 $$
-\Bigl(i\frac{\partial}{\partial r'_t}+\vec\nabla_\Phi\Bigr)F-k_{m_n}\,i\,\bar{F}\,\vec e_z=0,
+\Bigl(i\frac{\partial}{\partial r'_t}+\vec\nabla_\Phi\Bigr)F-2\pi\nu_{m_n}\,i\,\bar{F}\,\vec e_z=0,
 $$
 
-with $\vec\nabla_\Phi$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-(\tilde\nabla_\Phi)^{\natural}$, so the equation is $(\tilde\nabla_\Phi)^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{L}=F$ and $\tilde{Ξ}_{R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
+with $\vec\nabla_\Phi$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-(\tilde\nabla_\Phi)^{\natural}$, so the equation is $(\tilde\nabla_\Phi)^{\natural}F=-2\pi\nu_{m_n} i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{L}=F$ and $\tilde{Ξ}_{R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_n}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_n}\tilde{Ξ}_{R}$ | $(\tilde\nabla_\Phi)^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$ |
+| Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_{m_n}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_{m_n}\tilde{Ξ}_{R}$ | $(\tilde\nabla_\Phi)^{\natural}F=-2\pi\nu_{m_n} i\,\bar F\,\vec e_z$ |
 | Field | $\tilde{Ξ}\in\mathbb{B}$, two values | $F\in\mathbb{B}$ |
 | Derivative | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left, by $i\partial/\partial r'_t$ and $\vec\nabla_\Phi$ |
 | Mass | the off-diagonal pair of the two values | right multiplication by $\vec e_z$, with $\bar F$ |
@@ -113,7 +113,7 @@ A single-particle state is an element of $\mathbb{B}$, and it is **neutral** whe
 - If $ϙ_R=0$ and $ϙ_L\neq0$, the neutral elements are those whose L part vanishes, $\tilde{Ξ}=\tilde{Ξ}_{R}$.
 - If $ϙ_L=ϙ_R=0$ every element is neutral (the trivially uncoupled case).
 
-Neutrality is therefore not a generic property: it requires one of the two values to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the neutral element carries one value alone. On such an element the massive pair collapses: for $\tilde{Ξ}=\tilde{Ξ}_{L}$ the first equation reads $0=k_{m_n}\tilde{Ξ}_{L}$, so no nonzero neutral element solves it. The neutral single-particle state of the algebra therefore carries no Dirac mass in the pair. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite value, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
+Neutrality is therefore not a generic property: it requires one of the two values to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the neutral element carries one value alone. On such an element the massive pair collapses: for $\tilde{Ξ}=\tilde{Ξ}_{L}$ the first equation reads $0=\nu_{m_n}\tilde{Ξ}_{L}$, so no nonzero neutral element solves it. The neutral single-particle state of the algebra therefore carries no Dirac mass in the pair. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite value, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
 
 The framework therefore does not cleanly supply a **massive neutral spin-$\tfrac12$ single particle**: in the algebra, neutrality and the massive Dirac interpretation pull in opposite directions.
 
@@ -166,7 +166,7 @@ The article's finding is best stated as a ledger, in the manner of the electron 
 | Neutron property | Status | Object or reason |
 |---|---|---|
 | Spin-$\tfrac12$ representation content (generic) | Derived (framework), not neutron-specific | the element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$; the left multiplications act on each part with weights $\pm\tfrac12$ |
-| Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, one-sided chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_n}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_n}\tilde{Ξ}_{R}$ |
+| Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, one-sided chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_{m_n}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_{m_n}\tilde{Ξ}_{R}$ |
 | Neutrality constraint $\tilde{Ξ} b=0$ and its kernel | Derived (framework) | the charge $b=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)$; no nonzero neutral element unless one charge vanishes |
 | Mass value $m_n$ | Represented | parameter of the equation; not derived |
 | Charge value $0$ | Represented | a constraint/parameter; not derived from quark charges |
@@ -251,7 +251,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquaternion framework of this series it is represented as an element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$ satisfying the linear chiral mass pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_n}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_n}\tilde{Ξ}_{R}$. That pair is the one-sided form, the definition; Kravchenko's two-sided equation writes the derivative on the left and the mass on the right through $\vec e_z$, and it is a different operator, quoted here but not used.
+The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquaternion framework of this series it is represented as an element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$ satisfying the linear chiral mass pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_{m_n}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_{m_n}\tilde{Ξ}_{R}$. That pair is the one-sided form, the definition; Kravchenko's two-sided equation writes the derivative on the left and the mass on the right through $\vec e_z$, and it is a different operator, quoted here but not used.
 
 That representation is generic: the algebra carries any structureless spin-$\tfrac12$ field by the same two values, and the spin-$\tfrac12$ it supplies is a representation, not a construction from constituents.
 
@@ -278,7 +278,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $b=ϙ_L\tilde\Pi_{\mathrm{id},++}ϙ_R\tilde\Pi_{\mathrm{id},-}=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by $b$ |
 | $D_{\imath}\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_{\imath}+\frac{2\pi i}{h}A_{\imath}\tilde{Ξ} b$ | Covariant derivative of the chiral charge; the curvature is $\frac{2\pi i}{h}F_{\imath\jmath}\tilde{Ξ} b$ |
 | $\tilde{Ξ} b=0$ | Neutrality constraint; no nonzero solution unless $ϙ_L=0$ or $ϙ_R=0$ |
-| $(i\partial/\partial r'_t+\vec\nabla_\Phi)F-k_{m_n} i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
+| $(i\partial/\partial r'_t+\vec\nabla_\Phi)F-2\pi\nu_{m_n} i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
 | $\gamma_{\imath}[\mathbb{B}_{\Phi}]$, $\gamma_5$ | The gamma frame of the legacy section; used only in §*The Legacy Pauli Gamma Formulation* |
 | $G_N = \sigma\exp(i\theta_{\mathrm{cen}})+\bar{\sigma}\exp(i\theta_{\mathrm{axr}})$, $\sigma=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm{ls}})$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |

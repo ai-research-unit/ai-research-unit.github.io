@@ -71,7 +71,7 @@ with $a_{\mathrm{fop},r}$ annihilating particles and $b_{\mathrm{fop},r}$ annihi
 
 $$
 \{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}
-=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
+=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(2\pi\vec\nu_\Phi)\}
 =h^{3}\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 $$
 
@@ -89,8 +89,8 @@ and Pauli exclusion is the algebraic identity $(a_{\mathrm{fop},r}^{\dagger}(\ve
 **Bosonic (Maxwell).** The potential expands in four polarizations with
 
 $$
-\big[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]
-=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(\vec k_\Phi-\vec k_2),
+\big[a_{\mathrm{fop},r}(\vec\nu_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_2)\big]
+=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2),
 \qquad
 (\sigma_{\mathrm{met},0},\sigma_{\mathrm{met},1},\sigma_{\mathrm{met},2},\sigma_{\mathrm{met},3})=(-1,+1,+1,+1),
 $$
@@ -98,7 +98,7 @@ $$
 and all other commutators vanishing. The timelike mode has negative norm; the physical subspace is defined by the subsidiary condition and carries the two transverse polarizations with positive norm. The physical photon number is the transverse sum
 
 $$
-N_\gamma=\sum_{\lambda=1}^{2}\int\!\frac{d^3k_\Phi}{(2\pi)^3}a_{\mathrm{fop},\lambda}^{\dagger} a_{\mathrm{fop},\lambda},
+N_\gamma=\sum_{\lambda=1}^{2}\int\!\frac{d^32\pi\nu_{\Phi}}{(2\pi)^3}a_{\mathrm{fop},\lambda}^{\dagger} a_{\mathrm{fop},\lambda},
 $$
 
 which is non-negative on the physical subspace. The negative-norm states that the timelike mode builds are removed by the subsidiary condition; on the physical subspace the number operator is the transverse sum above.
@@ -307,7 +307,7 @@ The capacity is one mode and no more: $m$ fermionic modes generate $M_{2^m}(\mat
 | $N=\sum_ia_{\mathrm{fop},i}^{\dagger}a_{\mathrm{fop},i}$ | Number operator |
 | $a_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},r}(\vec p)$ | Dirac particle and antiparticle mode operators (parent's notation) |
 | $F=N_a+N_b$, $Ϙ_{\mathrm{fop}}=N_a-N_b$ | Total number of quanta (parity $(-1)^F$), and fermion number (= electric charge) |
-| $a_{\mathrm{fop},r}(\vec k_\Phi)$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ | Maxwell mode operators and indefinite metric |
+| $a_{\mathrm{fop},r}(\vec\nu_\Phi)$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ | Maxwell mode operators and indefinite metric |
 | $N_\gamma$ | Photon number (transverse sum) |
 | $\vec\Pi_{\mathrm{nil},x}=\tfrac12(i\vec e_x-\vec e_y)$ | Single-mode annihilation operator in $\mathbb{B}$ |
 | $\vec\Pi_{\mathrm{nil},y}=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode creation operator in $\mathbb{B}$ |
