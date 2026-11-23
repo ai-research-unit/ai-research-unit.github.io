@@ -159,7 +159,7 @@ a scalar label and not a vector. The definition is the dimension of the carrier'
 $$
 S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u),\qquad \tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
 $$
-with $\vec u$ a unit real vector; each is of complex dimension two and of spin $\tfrac12$, and the axis $\vec u$ is part of the datum. An element of $S_+(\vec u)$ is $d_0\tilde\Pi_{\mathrm{id},+}(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$, so an elementary spinor is a pair of complex numbers in a chosen carrier.
+with $\vec u$ a unit real vector; each is of complex dimension two and of spin $\tfrac12$, and the axis $\vec u$ is part of the datum. An element of $S_+(\vec u)$ is $d_0\tilde\Pi_{\mathrm{id},+}(\vec u)+d_1\mathrm{spt}(\vec u)$ with $d_0,d_1\in\mathbb{C}$, so an elementary spinor is a pair of complex numbers in a chosen carrier.
 
 **Definition (Dirac spinor).** A **Dirac spinor** is an element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,
 $$

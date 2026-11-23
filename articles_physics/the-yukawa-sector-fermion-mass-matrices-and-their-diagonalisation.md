@@ -39,9 +39,9 @@ Written out. A term $m\,\bar Q_Ld_R$ is not a singlet, and the arithmetic shows 
 | $m_u\bar Q_Lu_R$ | $Y=-1/6+2/3\neq0$ | $Y_{u}$ with $\tilde\omicron_{\mathrm{hgs}}$ |
 | $m_d\bar Q_Ld_R$ | $Y=-1/6-1/3\neq0$ | $Y_{d}$ with $\omicron_{\mathrm{hgs}}$ |
 | $m_e\bar L_Le_R$ | $Y=+1/2-1\neq0$ | $Y_{e}$ with $\omicron_{\mathrm{hgs}}$ |
-| $m_\nu\bar L_L\nu_R$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y_{\nu}$ with $\tilde\omicron_{\mathrm{hgs}}$ |
+| $m_{\nu_{\mathrm{neu}}}\bar L_L\nu_{\mathrm{neu},R}$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y_{\nu}$ with $\tilde\omicron_{\mathrm{hgs}}$ |
 
-The last row differs in kind, and not in its quantum numbers. All four fail the same two tests. Every left-handed field here is a doublet and every right-handed one a singlet, so no bare term is an $SU(2)_L$ singlet. And every bare term has non-zero hypercharge — the neutrino's is $+1/2$, since $\bar L_L$ carries $+1/2$ and $\nu_R$ carries $0$. What separates the last row is that $\nu_R$ is absent from the minimal model: the other three right-handed fields are in the spectrum and their mass terms are forbidden, while the neutrino's mass term is not forbidden so much as unavailable with the field. §*Neutrinos* records what the distinction changes.
+The last row differs in kind, and not in its quantum numbers. All four fail the same two tests. Every left-handed field here is a doublet and every right-handed one a singlet, so no bare term is an $SU(2)_L$ singlet. And every bare term has non-zero hypercharge — the neutrino's is $+1/2$, since $\bar L_L$ carries $+1/2$ and $\nu_{\mathrm{neu},R}$ carries $0$. What separates the last row is that $\nu_{\mathrm{neu},R}$ is absent from the minimal model: the other three right-handed fields are in the spectrum and their mass terms are forbidden, while the neutrino's mass term is not forbidden so much as unavailable with the field. §*Neutrinos* records what the distinction changes.
 
 What the gauge symmetry buys. A mass term is a parameter that would have been arbitrary in the unbroken phase, with no relation to anything. Forbidding it removes three such terms per generation — four if a right-handed neutrino is added — and replaces them with coupling matrices whose *structure* is fixed by the quantum numbers. The price is that the entries are still free, and that is the thirteen.
 
@@ -381,9 +381,9 @@ What a deviation would mean. A measured $g_{hf\bar f}$ different from $m_f/v$ wo
 
 ## Neutrinos: the Same Sector with Two New Questions
 
-The two questions. A neutrino mass requires either a right-handed singlet, and then the same Yukawa structure applies, or a Majorana mass term for the left doublet. The second is forbidden twice over: the symmetric pair $\nu_L^{T}C\nu_L$ carries hypercharge $-1$ — each $\nu_L$ has $-\tfrac12$ in the convention $Y=Ϙ-T_3$ that article 1 uses — where a mass term needs $0$, so no gauge-invariant contraction exists, and it has dimension three, so it is not renormalisable either. A scalar triplet of hypercharge $+1$ would supply the missing charge — that is the type-II route — and the dimension-five operator below is the general low-energy statement, with the singlet and the fermion triplet integrated out.
+The two questions. A neutrino mass requires either a right-handed singlet, and then the same Yukawa structure applies, or a Majorana mass term for the left doublet. The second is forbidden twice over: the symmetric pair $\nu_{\mathrm{neu},L}^{T}C\nu_{\mathrm{neu},L}$ carries hypercharge $-1$ — each $\nu_{\mathrm{neu},L}$ has $-\tfrac12$ in the convention $Y=Ϙ-T_3$ that article 1 uses — where a mass term needs $0$, so no gauge-invariant contraction exists, and it has dimension three, so it is not renormalisable either. A scalar triplet of hypercharge $+1$ would supply the missing charge — that is the type-II route — and the dimension-five operator below is the general low-energy statement, with the singlet and the fermion triplet integrated out.
 
-The Dirac route. Add $\nu_R$, a singlet of all three groups. Then $Y_{\nu}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
+The Dirac route. Add $\nu_{\mathrm{neu},R}$, a singlet of all three groups. Then $Y_{\nu}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
 
 The Majorana route. A term $\overline{L_{L,c}}\,\tilde\omicron_{\mathrm{hgs}}^{*}\,\lambda\,\tilde\omicron_{\mathrm{hgs}}^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_\nu=\lambda v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
 
@@ -459,7 +459,7 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 | $M_H$ | $125.09$ GeV, the Higgs mass |
 | $\beta$, $N_c$ | $\sqrt{1-4m_f^{2}/M_H^{2}}$ and the colour multiplicity, in the width |
 | $g_{hf\bar f}$ | $m_f/v$, the Higgs coupling to the fermion |
-| $Q_L$, $u_R$, $d_R$, $L_L$, $e_R$, $\nu_R$ | The quark and lepton multiplets, with the quantum numbers of article 1 |
+| $Q_L$, $u_R$, $d_R$, $L_L$, $e_R$, $\nu_{\mathrm{neu},R}$ | The quark and lepton multiplets, with the quantum numbers of article 1 |
 | $\psi$ | A generic fermion field, standing for any of the six |
 | $\mathcal{S}_{\mathrm{rep}}$, $\mathbb{C}^{N_g}$, $\mathcal F$ | The module and the multiplicity factor of the framework |
 | $N_g$ | The number of generations, three in the observed world |

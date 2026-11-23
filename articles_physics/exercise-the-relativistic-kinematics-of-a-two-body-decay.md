@@ -272,7 +272,7 @@ and the **maximum** is $\theta = \pi$. For $\gamma \gg 1$, $\theta_{\min} \appro
 
 ## Problem 5: A Numerical Instance
 
-**Statement.** Evaluate the two-body formulas for $K^+ \to \pi^+ \pi^0$, and for the limits $\pi^0 \to \gamma\gamma$ (two massless daughters) and $\pi^+ \to \mu^+ \nu_\mu$ (one massless daughter). Compare with the non-relativistic approximation.
+**Statement.** Evaluate the two-body formulas for $K^+ \to \pi^+ \pi^0$, and for the limits $\pi^0 \to \gamma\gamma$ (two massless daughters) and $\pi^+ \to \mu^+ \nu_{\mathrm{neu},\mu}$ (one massless daughter). Compare with the non-relativistic approximation.
 
 **Solution.** We use the standard masses $m_{K^+} = 493.677$, $m_{\pi^+} = 139.57039$, $m_{\pi^0} = 134.9768$, $m_\mu = 105.6583755$ MeV$/c^2$, and quote energies in MeV and momenta in MeV$/c$, the invertibles every display below carries.
 
@@ -326,7 +326,7 @@ $$
 E_\gamma^* = p^*c = \frac{Mc^2}{2} = 67.4884\ \text{MeV},
 \qquad Q = Mc^2 .
 $$
-For $\pi^+ \to \mu^+\nu_\mu$ with a massless neutrino ($M = m_{\pi^+} = 139.57039$, $m_1 = m_\mu = 105.6583755$, $m_2 = 0$ MeV$/c^2$),
+For $\pi^+ \to \mu^+\nu_{\mathrm{neu},\mu}$ with a massless neutrino ($M = m_{\pi^+} = 139.57039$, $m_1 = m_\mu = 105.6583755$, $m_2 = 0$ MeV$/c^2$),
 $$
 E_\mu^* = 109.7782\ \text{MeV},
 \qquad
@@ -402,7 +402,7 @@ We have worked the relativistic kinematics of a two-body decay as an application
 
 4. **Threshold and opening angle.** The threshold is $M \ge m_1+m_2$; in the COM frame the opening angle is $\pi$, and for two massless daughters the lab opening angle has minimum $\theta_{\min} = \arccos(1 - 2/\gamma^2) \approx 2/\gamma$ at symmetric emission.
 
-5. **Numbers.** For $K^+ \to \pi^+\pi^0$ the exact values are $p^*c = 205.1379$ MeV and $T_{\mathrm{kin},\pi^{+}} = 108.5454$ MeV, $T_{\mathrm{kin},\pi^{0}} = 110.5844$ MeV; for $\Lambda \to p\pi^-$, $p^*c = 100.5797$ MeV. The massless limits $\pi^0 \to \gamma\gamma$ and $\pi^+ \to \mu^+\nu_\mu$ reproduce $E_\gamma^* = Mc^2/2$ and the standard pion-decay energies.
+5. **Numbers.** For $K^+ \to \pi^+\pi^0$ the exact values are $p^*c = 205.1379$ MeV and $T_{\mathrm{kin},\pi^{+}} = 108.5454$ MeV, $T_{\mathrm{kin},\pi^{0}} = 110.5844$ MeV; for $\Lambda \to p\pi^-$, $p^*c = 100.5797$ MeV. The massless limits $\pi^0 \to \gamma\gamma$ and $\pi^+ \to \mu^+\nu_{\mathrm{neu},\mu}$ reproduce $E_\gamma^* = Mc^2/2$ and the standard pion-decay energies.
 
 6. **Non-relativistic limit.** The exact formulas reduce to $K_a \approx (m_b/(m_1+m_2))Q$, $p^* \approx \sqrt{2\mu Q} = \mu v_{\rm rel}$, and Galilean velocity addition, with relative errors of order $Q/((m_1+m_2)c^2)$.
 

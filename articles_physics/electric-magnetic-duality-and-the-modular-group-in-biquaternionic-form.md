@@ -128,12 +128,12 @@ This was verified numerically at three couplings: for $g=1$ the image $\tau_2=0.
 A dyon carries electric charge $ϙ_e$ and magnetic charge $ϙ_m$. The charge product carries the dimensions of an action, so the Dirac–Schwinger–Zwanziger quantisation condition for two dyons labelled $i=1,2$, divided by $\frac{h}{2\pi}$, is
 
 $$
-\boxed{\;\frac{2\pi}{h}\left(ϙ_e^{(1)}ϙ_m^{(2)}-ϙ_e^{(2)}ϙ_m^{(1)}\right) \;=\; 2\pi\,\nu ,
+\boxed{\;\frac{2\pi}{h}\left(ϙ_e^{(1)}ϙ_m^{(2)}-ϙ_e^{(2)}ϙ_m^{(1)}\right) \;=\; 2\pi\,\digamma_{\mathrm{drc}} ,
 \qquad
-\nu\in\mathbb Z\;},
+\digamma_{\mathrm{drc}}\in\mathbb Z\;},
 $$
 
-which reduces for a purely electric and a purely magnetic particle to the Dirac condition $e\,g_m=2\pi\nu$, with $\nu$ the Dirac index. The index is written $\nu$ so that it does not collide with the lattice label $n$ below: the two differ by the factor of two that the next display exhibits. Writing the charges of the fundamental objects as
+which reduces for a purely electric and a purely magnetic particle to the Dirac condition $e\,g_m=2\pi\digamma_{\mathrm{drc}}$, with $\digamma_{\mathrm{drc}}$ the Dirac index. The index is written $\digamma_{\mathrm{drc}}$ so that it does not collide with the lattice label $n$ below: the two differ by the factor of two that the next display exhibits. Writing the charges of the fundamental objects as
 
 $$
 (ϙ_e,ϙ_m)=\bigl(e\,m,\;\tfrac{4\pi}{e}\,n\bigr),
@@ -256,8 +256,8 @@ The framework supplies the continuous $\mathrm{U}(1)$ duality intrinsically, bec
 | $g^2=4\pi$ | Self-dual coupling |
 | $(m,n)$ | Electric and magnetic quantum numbers |
 | $ϙ_e=em$, $ϙ_m=4\pi n/e$ | Electric and magnetic charges |
-| $\digamma_{\mathrm{drc}}=2mn$ | Dirac index of the lattice state; $\nu\in\mathbb Z$ |
-| $ϙ_e^{(1)}ϙ_m^{(2)}-ϙ_e^{(2)}ϙ_m^{(1)}=2\pi\nu$ | Dirac–Schwinger–Zwanziger quantisation |
+| $\digamma_{\mathrm{drc}}=2mn$ | Dirac index of the lattice state; $\digamma_{\mathrm{drc}}\in\mathbb Z$ |
+| $ϙ_e^{(1)}ϙ_m^{(2)}-ϙ_e^{(2)}ϙ_m^{(1)}=2\pi\digamma_{\mathrm{drc}}$ | Dirac–Schwinger–Zwanziger quantisation |
 | $Ϙ\in\mathbb Z$ | Topological charge; source of the $T$ generator |
 
 ## Further Reading

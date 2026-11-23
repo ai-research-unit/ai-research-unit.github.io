@@ -20,7 +20,7 @@ The order. The matrix and its placement, then the parameterisation and the count
 The definition. The charged-current interaction in the mass basis carries
 
 $$
-\mathcal{L}_{W}\supset\frac{g}{\sqrt2}\sum_\mu\varepsilon_\mu W^-_\mu\,\bar e_{L}\gamma_\mu U_{\mathrm{PMNS}}\,\nu_{L}+\text{h.c.},
+\mathcal{L}_{W}\supset\frac{g}{\sqrt2}\sum_\mu\varepsilon_\mu W^-_\mu\,\bar e_{L}\gamma_\mu U_{\mathrm{PMNS}}\,\nu_{\mathrm{neu},L}+\text{h.c.},
 \qquad
 U_{\mathrm{PMNS}}=U_e^{\dagger}U_\nu ,
 $$
@@ -43,7 +43,7 @@ $$
 
 physical parameters — if the neutrinos are Dirac. The $5$, not $6$, is the point. Six field rephasings are available, three on the charged leptons and three on the neutrinos, but the one combination that rephases all six by the *same* phase acts as the identity on $U$ and removes nothing, so five independent rephasings remove five parameters. The usual bookkeeping "$9-3-3+1$" arrives at the same number by subtracting six and adding one back; that is the same arithmetic written so that the compensating phase looks like a repair rather than what it is, the redundancy inside the six.
 
-**What changes when they are Majorana.** A Majorana mass term $\bar\nu_c\nu$ is not invariant under an arbitrary rephasing: only the sign is free. Each neutrino field therefore loses one rephasing, and the count rises by two:
+**What changes when they are Majorana.** A Majorana mass term $\bar\nu_{\mathrm{neu},c}\nu_{\mathrm{neu}}$ is not invariant under an arbitrary rephasing: only the sign is free. Each neutrino field therefore loses one rephasing, and the count rises by two:
 
 $$
 4\ \text{Dirac}\quad\longrightarrow\quad 6\ \text{Majorana}
@@ -96,9 +96,9 @@ The magnitudes of the matrix itself, which is what oscillation experiments actua
 
 | | $\nu_1$ | $\nu_2$ | $\nu_3$ |
 |---|---|---|---|
-| $\nu_e$ | $0.825$ | $0.544$ | $0.149$ |
-| $\nu_\mu$ | $0.312$ | $0.588$ | $0.747$ |
-| $\nu_\tau$ | $0.470$ | $0.599$ | $0.648$ |
+| $\nu_{\mathrm{neu},e}$ | $0.825$ | $0.544$ | $0.149$ |
+| $\nu_{\mathrm{neu},\mu}$ | $0.312$ | $0.588$ | $0.747$ |
+| $\nu_{\mathrm{neu},\tau}$ | $0.470$ | $0.599$ | $0.648$ |
 
 Each row and each column has unit norm to the accuracy of three printed digits, and the check is worth making explicit: the matrix was assembled from the four parameters above and $\max\lvert (UU^{\dagger}-1)_{ij}\rvert$ came out at $2.2\times10^{-16}$, which is one unit of double-precision rounding — the matrix is unitary to machine precision, not to a stated tolerance. A mixing matrix that fails this test has a missing or doubled phase.
 
@@ -260,10 +260,10 @@ Why the range matters more than the value. For the normal ordering the three ter
 
 ## CP Violation in the Lepton Sector and Leptogenesis
 
-The asymmetry, in the oscillation channel. For $\nu_\mu\to\nu_e$ against $\bar\nu_\mu\to\bar e$, the difference is proportional to $J$ times a product of three $\sin$ factors:
+The asymmetry, in the oscillation channel. For $\nu_{\mathrm{neu},\mu}\to\nu_{\mathrm{neu},e}$ against $\bar\nu_{\mathrm{neu},\mu}\to\bar e$, the difference is proportional to $J$ times a product of three $\sin$ factors:
 
 $$
-\delta P\equiv P(\nu_\mu\to\nu_e)-P(\bar\nu_\mu\to\bar e)=-16J\sin\frac{\delta m^2_{21}L}{4E}\sin\frac{\delta m^2_{31}L}{4E}\sin\frac{\delta m^2_{32}L}{4E} ,
+\delta P\equiv P(\nu_{\mathrm{neu},\mu}\to\nu_{\mathrm{neu},e})-P(\bar\nu_{\mathrm{neu},\mu}\to\bar e)=-16J\sin\frac{\delta m^2_{21}L}{4E}\sin\frac{\delta m^2_{31}L}{4E}\sin\frac{\delta m^2_{32}L}{4E} ,
 $$
 
 and this is an identity, not a parametrisation: it follows from the interference term above with $\sin(2x)=2\sin x\cos x$ and the three-mass-difference closure $\delta m^2_{31}=\delta m^2_{32}+\delta m^2_{21}$. The argument is $\delta m^2L/(4E)$ in all three factors — the same argument the $\sin^2$ term carries — and writing it as $\delta m^2L/(2E)$ as well would square the wrong function. So the asymmetry requires three nonzero mass differences, three nonzero angles, and a phase. All four conditions hold, and the asymmetry is at the per-cent to per-ten-cent level for a well-chosen baseline. That is why the current generation of long-baseline experiments is designed around it.

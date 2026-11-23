@@ -13,7 +13,7 @@ Two of the model's failures are exact and quantitative, and a third — the one 
 The three are different kinds of failure. Dark matter is an inventory failure: the model has no candidate, and the failure cannot be repaired without adding a field. Baryogenesis is a *rate* failure: every ingredient is present, and each is present in the wrong amount. The sphaleron is neither a failure nor a success but the calculation that connects the two — it is what makes $B$ violation real, and it is also what forbids the model from using it.
 
 - The dark matter is $5.36$ times the baryon density, and the model's only dark candidates are excluded: neutrinos by their mass, the Higgs by its lifetime, the neutron by decaying. So the inventory is empty and the failure is structural.
-- The neutral-current bound is the cleanest exclusion in the model. The $Z$ width counts neutrino species: $N_\nu=2.9963\pm0.0074$. A fourth generation with a light neutrino is excluded by the same measurement that confirms the first three.
+- The neutral-current bound is the cleanest exclusion in the model. The $Z$ width counts neutrino species: $N_{\nu_{\mathrm{neu}}}=2.9963\pm0.0074$. A fourth generation with a light neutrino is excluded by the same measurement that confirms the first three.
 - The baryon asymmetry is $\eta=6.1\times10^{-10}$, one baryon per $1.6\times10^{9}$ photons. The Standard Model cannot produce it, and the reason is not that its CP violation is small — it is that $B-L$ is conserved exactly, so from a symmetric start the answer is zero, and not merely small.
 - The sphaleron is at $9.0$ TeV, and its rate is Boltzmann-suppressed: $\exp(-E_{\mathrm{sph}}/T)=10^{-39}$ at $T=100$ GeV and *exactly zero* today. Its physical consequence is a proton lifetime above $10^{160}$ years.
 - The electroweak phase transition is a crossover, not a first-order transition, for any Higgs above about $72$ GeV. At $125.09$ GeV there is no bubble nucleation, hence no departure from equilibrium, hence the third Sakharov condition fails outright.
@@ -53,17 +53,17 @@ The model's own candidates fail one by one.
 
 | Candidate | Mass | Why it fails |
 |---|---|---|
-| Neutrinos | $\Sigma m_\nu<0.12$ eV | Hot: free-streams out of structures; at most $1.1\%$ of the dark density |
+| Neutrinos | $\Sigma m_{\nu_{\mathrm{neu}}}<0.12$ eV | Hot: free-streams out of structures; at most $1.1\%$ of the dark density |
 | Higgs | $125$ GeV | Decays in $10^{-22}$ s |
 | Neutron | $939.6$ MeV | Decays in $880$ s |
 | Gluons, photons | $0$ | Massless, and they were in equilibrium |
 | $Z$, $W$ | $91.2$, $80.4$ GeV | Decay in $10^{-25}$ s |
 | The vacuum | — | Contributes to dark *energy*, not to matter; and with the wrong sign and magnitude |
 
-The neutrino row can be quantified. The cosmological bound on the sum of neutrino masses is $\Sigma m_\nu<0.12$ eV, and the relic density is
+The neutrino row can be quantified. The cosmological bound on the sum of neutrino masses is $\Sigma m_{\nu_{\mathrm{neu}}}<0.12$ eV, and the relic density is
 
 $$
-\Omega_\nu h^2=\frac{\Sigma m_\nu}{93.14\ \mathrm{eV}} ,
+\Omega_\nu h^2=\frac{\Sigma m_{\nu_{\mathrm{neu}}}}{93.14\ \mathrm{eV}} ,
 $$
 
 so at the bound $\Omega_\nu h^2=0.00129$, which is $1.1\%$ of $\Omega_{\mathrm{DM}}h^2$. So [the neutrino article](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) settles the question in the negative with a number: neutrinos are a $1\%$ correction to the dark component and cannot be it. This is also why "hot dark matter" was abandoned in the 1980s — the same calculation, with the same conclusion, before the oscillations were measured.
@@ -75,25 +75,25 @@ The real obstacle is a symmetry problem. Even a new neutral particle is not auto
 The $Z$ boson's invisible width counts the light neutrino species:
 
 $$
-\Gamma_{\mathrm{inv}}=\frac{N_\nu G_F M_Z^3}{12\sqrt2\pi}\left(1+\dots\right) ,
+\Gamma_{\mathrm{inv}}=\frac{N_{\nu_{\mathrm{neu}}} G_F M_Z^3}{12\sqrt2\pi}\left(1+\dots\right) ,
 $$
 
 and the fit to the $Z$ line shape gives
 
 $$
-N_\nu=2.9963\pm0.0074 .
+N_{\nu_{\mathrm{neu}}}=2.9963\pm0.0074 .
 $$
 
 The reading has two parts.
 
 - Three species are confirmed, to a part in three hundred. This is the strongest single piece of evidence that the generation structure stops at three.
-- A fourth species with $m_\nu<M_Z/2=45.6$ GeV is excluded at many standard deviations. So the model cannot be extended by adding a fourth generation with a light neutrino, and any new neutral fermion must either be heavier than half the $Z$ or not couple to it.
+- A fourth species with $m_{\nu_{\mathrm{neu}}}<M_Z/2=45.6$ GeV is excluded at many standard deviations. So the model cannot be extended by adding a fourth generation with a light neutrino, and any new neutral fermion must either be heavier than half the $Z$ or not couple to it.
 
-This bound closes the simplest door. The obvious way to make dark matter out of the model's own content is to add a fourth generation and let its neutrino be the dark matter. That door is shut twice: by $N_\nu$, and by the relic density above — a fourth neutrino of mass up to $45$ GeV would still be relativistic at decoupling if light, and hot if light, and excluded by $N_\nu$ if it is in equilibrium.
+This bound closes the simplest door. The obvious way to make dark matter out of the model's own content is to add a fourth generation and let its neutrino be the dark matter. That door is shut twice: by $N_{\nu_{\mathrm{neu}}}$, and by the relic density above — a fourth neutrino of mass up to $45$ GeV would still be relativistic at decoupling if light, and hot if light, and excluded by $N_{\nu_{\mathrm{neu}}}$ if it is in equilibrium.
 
-There is a loophole. $N_\nu$ counts species in equilibrium with the $Z$ at $T\sim M_Z$. A particle that decoupled earlier, or never coupled to the $Z$ at all, is invisible to this measurement. So the bound excludes a *class* of candidates — those with full weak interactions — and not the possibility of a new sector. The hidden sector is where the model's extensions have gone, and this is why.
+There is a loophole. $N_{\nu_{\mathrm{neu}}}$ counts species in equilibrium with the $Z$ at $T\sim M_Z$. A particle that decoupled earlier, or never coupled to the $Z$ at all, is invisible to this measurement. So the bound excludes a *class* of candidates — those with full weak interactions — and not the possibility of a new sector. The hidden sector is where the model's extensions have gone, and this is why.
 
-The framework has no position on any of this. $N_\nu$ is a measurement of a coupling the framework imports, and the generation count of three is an input it does not explain. [The parameter-count article](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html) recorded the count of generations among the discrete inputs. This article adds only that the count is measured to a part in three hundred, which is a precision the framework has no way to address.
+The framework has no position on any of this. $N_{\nu_{\mathrm{neu}}}$ is a measurement of a coupling the framework imports, and the generation count of three is an input it does not explain. [The parameter-count article](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html) recorded the count of generations among the discrete inputs. This article adds only that the count is measured to a part in three hundred, which is a precision the framework has no way to address.
 
 ## What the Dark Matter Could Be
 
@@ -339,8 +339,8 @@ The table gives each number the article uses and says whether it was imported or
 | Item | Status |
 |---|---|
 | $\Omega_{\mathrm{DM}}h^2=0.1200$, $\Omega_b h^2=0.02237$, ratio $5.36$ | Imported; ratio computed here |
-| $\Omega_\nu h^2<0.00129$, $1.1\%$ of the dark density | Computed here from $\Sigma m_\nu<0.12$ eV |
-| $N_\nu=2.9963\pm0.0074$ | Imported |
+| $\Omega_\nu h^2<0.00129$, $1.1\%$ of the dark density | Computed here from $\Sigma m_{\nu_{\mathrm{neu}}}<0.12$ eV |
+| $N_{\nu_{\mathrm{neu}}}=2.9963\pm0.0074$ | Imported |
 | $\sigma_{\mathrm{SI}}<2.6\times10^{-47}$ cm$^2$, $1.5\times10^{14}$ below weak | Imported limit; ratio computed here |
 | $\eta=6.1\times10^{-10}$ | Imported |
 | $J=3.13\times10^{-5}$ | Computed here from $\lambda$, $A$, $\bar\rho$, $\bar\eta$, $\delta$ |
@@ -358,7 +358,7 @@ The table gives each number the article uses and says whether it was imported or
 
 The Standard Model fails on two of these three subjects exactly, and on the third it succeeds in a way that forbids it from being useful.
 
-The dark matter is $5.36$ times the baryon density, and the model's spectrum is closed: neutrinos are $1.1\%$ of it at the cosmological mass bound, the Higgs decays in $10^{-22}$ s, and the neutron in $880$ s. The neutral-current bound $N_\nu=2.9963\pm0.0074$ confirms three species and excludes a fourth with a light neutrino, so the simplest door is shut by the same measurement that opened the model. Direct detection at $2.6\times10^{-47}$ cm$^2$ has pushed the simplest WIMP $1.5\times10^{14}$ below the weak scale. The two candidates the corpus can build — the axion and the sterile neutrino — both arrive as by-products of solving other problems.
+The dark matter is $5.36$ times the baryon density, and the model's spectrum is closed: neutrinos are $1.1\%$ of it at the cosmological mass bound, the Higgs decays in $10^{-22}$ s, and the neutron in $880$ s. The neutral-current bound $N_{\nu_{\mathrm{neu}}}=2.9963\pm0.0074$ confirms three species and excludes a fourth with a light neutrino, so the simplest door is shut by the same measurement that opened the model. Direct detection at $2.6\times10^{-47}$ cm$^2$ has pushed the simplest WIMP $1.5\times10^{14}$ below the weak scale. The two candidates the corpus can build — the axion and the sterile neutrino — both arrive as by-products of solving other problems.
 
 The baryon asymmetry is $\eta=6.1\times10^{-10}$, one per $1.6\times10^{9}$ photons, and it cannot be an initial condition because inflation erases it. The model satisfies the three Sakharov conditions nominally and fails all three quantitatively: the sphaleron violates $B$, but $B-L$ is conserved exactly, so from $B-L=0$ the answer is zero and not merely small; the CKM phase has $J=3.13\times10^{-5}$ and yields $\eta\sim10^{-20}$, eleven orders short; and the electroweak transition is a crossover for any Higgs above $72$ GeV, so there is no departure from equilibrium at $125.09$ GeV.
 
@@ -374,7 +374,7 @@ The one route it can build is leptogenesis, with $B=28L/79$, and that route exis
 |---|---|
 | $\Omega_i h^2$ | Density in units of critical density, scaled by $h^2$ |
 | $\eta$ | Baryon-to-photon ratio, $6.1\times10^{-10}$ |
-| $N_\nu$ | Number of light neutrino species, $2.9963\pm0.0074$ |
+| $N_{\nu_{\mathrm{neu}}}$ | Number of light neutrino species, $2.9963\pm0.0074$ |
 | $J$ | Jarlskog invariant, $3.13\times10^{-5}$ |
 | $j_{B,\mu}$, $j_{L,\mu}$ | Baryon and lepton number currents |
 | $F\tilde F$ | Topological charge density |

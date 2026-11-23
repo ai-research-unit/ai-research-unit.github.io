@@ -58,7 +58,7 @@ The classification article's two octets stack into sixteen rows, and each genera
 
 | # | field | $Q$ | name $i=1$ | $m_1$ | $\tau_1$ | name $i=2$ | $m_2$ | $\tau_2$ | name $i=3$ | $m_3$ | $\tau_3$ |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| $1$ | $\nu_{eL}$ | $0$ | electron neutrino | $<8\times10^{-7}$ | stable | muon neutrino | $<8\times10^{-7}$ | stable | tau neutrino | $<8\times10^{-7}$ | stable |
+| $1$ | $\nu_{\mathrm{neu},eL}$ | $0$ | electron neutrino | $<8\times10^{-7}$ | stable | muon neutrino | $<8\times10^{-7}$ | stable | tau neutrino | $<8\times10^{-7}$ | stable |
 | $2$ | $e_{L}$ | $-1$ | electron | $0.511$ | stable | muon | $105.66$ | $2.20\times10^{-6}$ | tau | $1776.9$ | $2.90\times10^{-13}$ |
 | $3$ | $u^{r}_{L}$ | $+\tfrac23$ | up, red | $2.16$ | stable | charm, red | $1270$ | $1.03\times10^{-12}$ | top, red | $172690$ | $5.0\times10^{-25}$ |
 | $4$ | $d^{r}_{L}$ | $-\tfrac13$ | down, red | $4.67$ | stable | strange, red | $93.4$ | $8.98\times10^{-11}$ | bottom, red | $4180$ | $1.52\times10^{-12}$ |
@@ -66,7 +66,7 @@ The classification article's two octets stack into sixteen rows, and each genera
 | $6$ | $d^{g}_{L}$ | $-\tfrac13$ | down, green | $4.67$ | stable | strange, green | $93.4$ | $8.98\times10^{-11}$ | bottom, green | $4180$ | $1.52\times10^{-12}$ |
 | $7$ | $u^{b}_{L}$ | $+\tfrac23$ | up, blue | $2.16$ | stable | charm, blue | $1270$ | $1.03\times10^{-12}$ | top, blue | $172690$ | $5.0\times10^{-25}$ |
 | $8$ | $d^{b}_{L}$ | $-\tfrac13$ | down, blue | $4.67$ | stable | strange, blue | $93.4$ | $8.98\times10^{-11}$ | bottom, blue | $4180$ | $1.52\times10^{-12}$ |
-| $9$ | $\nu_{eR}$ | $0$ | electron neutrino | $<8\times10^{-7}$ | stable | muon neutrino | $<8\times10^{-7}$ | stable | tau neutrino | $<8\times10^{-7}$ | stable |
+| $9$ | $\nu_{\mathrm{neu},eR}$ | $0$ | electron neutrino | $<8\times10^{-7}$ | stable | muon neutrino | $<8\times10^{-7}$ | stable | tau neutrino | $<8\times10^{-7}$ | stable |
 | $10$ | $e_{R}$ | $-1$ | electron | $0.511$ | stable | muon | $105.66$ | $2.20\times10^{-6}$ | tau | $1776.9$ | $2.90\times10^{-13}$ |
 | $11$ | $u^{r}_{R}$ | $+\tfrac23$ | up, red | $2.16$ | stable | charm, red | $1270$ | $1.03\times10^{-12}$ | top, red | $172690$ | $5.0\times10^{-25}$ |
 | $12$ | $d^{r}_{R}$ | $-\tfrac13$ | down, red | $4.67$ | stable | strange, red | $93.4$ | $8.98\times10^{-11}$ | bottom, red | $4180$ | $1.52\times10^{-12}$ |
@@ -87,7 +87,7 @@ So the sixteen rows carry four distinct masses per generation, and twelve distin
 
 **The rows name particles, and the masses are the particles'.** Charge conjugation does not add a row: the antiparticle of a field is a conjugate mode of that same field, with the same mass, the opposite $Q$, the opposite $B-L$ and conjugate colour, and the charges are listed in [Particle Classification](particle-classification-three-grids-one-name-in-every-cell.html), *The One Sharp Prediction: Sameness*A. So the sixteen rows are the whole of the matter and the antiparticles add no mass, no lifetime and no branching ratio. **Antiparticles are not a fourth handle.** They are the same three handles with the signs of the charges reversed, which is why they are mentioned here once and not tabulated twice.
 
-The neutrino rows are the ones that are not numbers. A light neutrino mass is bounded and not measured, $m_\beta<0.45$ eV from tritium decay (the 2024 KATRIN limit) and $\sum m_\nu<0.12$ eV from cosmology, so the entries read stable and the oscillation is treated separately in *The One Exception: Oscillation*. The bound applies to the light eigenstates only. The right-handed row is the one that carries no bound at all: in the model's spectrum $\nu_R$ is a gauge singlet, its mass is not constrained by tritium decay, and the seesaw of *Mass: the Column the Model Does Not Compute* places it at a scale that is not written anywhere in this table.
+The neutrino rows are the ones that are not numbers. A light neutrino mass is bounded and not measured, $m_\beta<0.45$ eV from tritium decay (the 2024 KATRIN limit) and $\sum m_{\nu_{\mathrm{neu}}}<0.12$ eV from cosmology, so the entries read stable and the oscillation is treated separately in *The One Exception: Oscillation*. The bound applies to the light eigenstates only. The right-handed row is the one that carries no bound at all: in the model's spectrum $\nu_{\mathrm{neu},R}$ is a gauge singlet, its mass is not constrained by tritium decay, and the seesaw of *Mass: the Column the Model Does Not Compute* places it at a scale that is not written anywhere in this table.
 
 ## The Three Handles
 
@@ -137,10 +137,10 @@ Two structural remarks do belong to the model. The right-handed neutrino slot ex
 
 ## Lifetime: the One Relation Phase Space Computes
 
-A lifetime is the inverse width, $\tau=\frac{h}{2\pi \Gamma}$, and the width is fixed by the mass and by the open channels. For the muon and the tau the final state is the same, $\ell\to e\bar\nu_e\nu_\ell$, and the parent mass is far above every threshold. The width then scales as the fifth power of the parent mass:
+A lifetime is the inverse width, $\tau=\frac{h}{2\pi \Gamma}$, and the width is fixed by the mass and by the open channels. For the muon and the tau the final state is the same, $\ell\to e\bar\nu_{\mathrm{neu},e}\nu_\ell$, and the parent mass is far above every threshold. The width then scales as the fifth power of the parent mass:
 
 $$
-\frac{\Gamma(\tau\to e\bar\nu_e\nu_\tau)}{\Gamma(\mu\to e\bar\nu_e\nu_\mu)}=\left(\frac{m_\tau}{m_\mu}\right)^{5}.
+\frac{\Gamma(\tau\to e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\tau})}{\Gamma(\mu\to e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\mu})}=\left(\frac{m_\tau}{m_\mu}\right)^{5}.
 $$
 
 This is a statement the model predicts without knowing anything, and it is exact enough to fail, which is why it is worth checking.
@@ -152,12 +152,12 @@ $$
 and from the measured lifetime of the tau, $\tau_\tau=2.903\times10^{-13}$ s, its electronic branching ratio $0.1782$, and the measured muon lifetime $2.1969811\times10^{-6}$ s,
 
 $$
-\frac{\Gamma(\tau\to e\bar\nu\nu)}{\Gamma(\mu\to\mathrm{all})}
+\frac{\Gamma(\tau\to e\bar\nu_{\mathrm{neu}}\nu_{\mathrm{neu}})}{\Gamma(\mu\to\mathrm{all})}
 =\frac{0.1782\times h/2.903\times10^{-13}}{h/2.1969811\times10^{-6}}
 =1.3486\times10^{6}.
 $$
 
-The numerator is a partial width and the denominator a total width, which is legitimate only because the muon has one channel, so its total width is its partial width to $e\bar\nu_e\nu_\mu$. The check uses the full precision values; the table rounds them to three figures.
+The numerator is a partial width and the denominator a total width, which is legitimate only because the muon has one channel, so its total width is its partial width to $e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\mu}$. The check uses the full precision values; the table rounds them to three figures.
 
 The two agree to $0.26$ parts in a thousand. The fifth power is confirmed, and what it confirms is that the lifetime difference between the muon and the tau is nothing but the mass difference. Two of the three handles are one handle.
 
@@ -181,8 +181,8 @@ A decay pattern is the mass column filtered through the conservation laws. Charg
 
 | particle | open channels | why so few, or so many |
 |---|---|---|
-| $\mu$ | $e\bar\nu_e\nu_\mu$ only | $m_\mu$ lies below every hadronic threshold |
-| $\tau$ | $e\bar\nu\nu$, $\mu\bar\nu\nu$, $\pi\nu$, $\rho\nu$, $a_1\nu$, and more | $m_\tau$ lies above the two-pion threshold |
+| $\mu$ | $e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\mu}$ only | $m_\mu$ lies below every hadronic threshold |
+| $\tau$ | $e\bar\nu_{\mathrm{neu}}\nu_{\mathrm{neu}}$, $\mu\bar\nu_{\mathrm{neu}}\nu_{\mathrm{neu}}$, $\pi\nu_{\mathrm{neu}}$, $\rho\nu_{\mathrm{neu}}$, $a_1\nu_{\mathrm{neu}}$, and more | $m_\tau$ lies above the two-pion threshold |
 | $t$ | $Wb$ only | the charged current is the only route, and $m_t>m_W+m_b$ |
 
 The branching ratios are the fingerprint, and they are what a detector measures. For the tau, roughly $17.8$ per cent electronic, $17.4$ per cent muonic, and the remainder hadronic. That is a distribution rather than a number, which is why a single tau event is identified by its topology and not by its mass.
@@ -229,7 +229,7 @@ This is the model's only sharp prediction in this sector, and it is a prediction
 Neutrino oscillation is the only measured change of flavour, and it exists because the neutrino mass matrix cannot be rotated away. For the charged leptons the rotation $V$ in $Y=U\operatorname{diag}(y)V^{\dagger}$ is a field redefinition of the Standard Model's own currents; in this frame it is one factor of the leptoquark mixing $K$. For the neutrinos the mass term is Majorana, so the same rotation leaves a physical residue:
 
 $$
-P(\nu_e\to\nu_\mu)=\sin^{2}2\theta\,\sin^{2}\!\left(\frac{\Delta m^{2}L}{4E}\right).
+P(\nu_{\mathrm{neu},e}\to\nu_{\mathrm{neu},\mu})=\sin^{2}2\theta\,\sin^{2}\!\left(\frac{\Delta m^{2}L}{4E}\right).
 $$
 
 Read as a statement about this article's subject, the formula needs two things: a non-degenerate mass column, $\Delta m^{2}\neq0$, and a misaligned basis, $\theta\neq0$. Both are properties of the Yukawa matrix and of nothing else. Oscillation is therefore not an exception to the model's flavour blindness but the sharpest confirmation of it, since the blindness is exactly what makes the misalignment the only available source.
@@ -240,7 +240,7 @@ It is also the only place where a flavour label changes during propagation, with
 
 Four things this article does not have, listed so that no reader supplies them.
 
-The number three is not derived. The multiplicity is free, so the algebra permits any number of generations. What fixes three is measurement: the $Z$ invisible width gives $N_\nu=2.984\pm0.008$, big-bang nucleosynthesis gives $N_{\mathrm{eff}}\approx3$, and direct search closes the rest. CP violation requires at least three generations, and that is a necessary condition rather than a sufficient one: with three generations the phase and the angles must also be non-zero, which is what the measured Jarlskog invariant says they are.
+The number three is not derived. The multiplicity is free, so the algebra permits any number of generations. What fixes three is measurement: the $Z$ invisible width gives $N_{\nu_{\mathrm{neu}}}=2.984\pm0.008$, big-bang nucleosynthesis gives $N_{\mathrm{eff}}\approx3$, and direct search closes the rest. CP violation requires at least three generations, and that is a necessary condition rather than a sufficient one: with three generations the phase and the angles must also be non-zero, which is what the measured Jarlskog invariant says they are.
 
 No mass is derived. The three masses of a sector are the eigenvalues of an arbitrary matrix. The hierarchy $1:206.8:3477$ is input.
 

@@ -160,7 +160,7 @@ $$
 F_2(x)=2xF_1(x) ,
 $$
 
-the Callan–Gross relation. It is not an extra assumption about the proton. It is the Dirac trace of a massless spin-$\tfrac12$ line, and it holds whenever the struck object has spin $\tfrac12$, is massless, and is on shell. The relation is between the $F$'s and not between the $W$'s: with $F_1=MW_1$ and $F_2=\digamma_{\mathrm{str}} W_2$ as defined above, $F_2=2xF_1$ is $W_2=(2xM/\nu)W_1$, so the frequently quoted $W_2=2xW_1$ is the same relation in a different normalisation of $W$, not another one.
+the Callan–Gross relation. It is not an extra assumption about the proton. It is the Dirac trace of a massless spin-$\tfrac12$ line, and it holds whenever the struck object has spin $\tfrac12$, is massless, and is on shell. The relation is between the $F$'s and not between the $W$'s: with $F_1=MW_1$ and $F_2=\digamma_{\mathrm{str}} W_2$ as defined above, $F_2=2xF_1$ is $W_2=(2xM/\digamma_{\mathrm{bjk}})W_1$, so the frequently quoted $W_2=2xW_1$ is the same relation in a different normalisation of $W$, not another one.
 
 **The contrast with spin zero, which is the reason the relation is a spin measurement.** For a scalar constituent the electromagnetic vertex is $(2k+q)_\mu$ and the tensor is proportional to $(2k+q)_\mu(2k+q)_\nu$. That tensor has no transverse part at all — $W_1=0$ and $W_2\neq0$ — so $F_1=0$ and the Callan–Gross relation fails maximally. A measurement of the ratio of the two structure functions is therefore a measurement of the constituents' spin, and the fact that $2xF_1/F_2$ comes out one, where a scalar constituent would give zero, is the discovery that the charged constituents of the proton have spin $\tfrac12$.
 
@@ -306,10 +306,10 @@ The singlet, which this section has avoided. The measured $F_2$ does not fall at
 Gross–Llewellyn Smith. For neutrino and antineutrino scattering on an isoscalar target, the first moment of the parity-odd structure function is predicted to all orders:
 
 $$
-\int_0^1F_{3,\nu N}(x,Q^2)\,dx=3\left[1-\frac{\alpha_s}{\pi}-c_2\left(\frac{\alpha_s}{\pi}\right)^2-\dots\right] ,
+\int_0^1F_{3,\nu_{\mathrm{neu}} N}(x,Q^2)\,dx=3\left[1-\frac{\alpha_s}{\pi}-c_2\left(\frac{\alpha_s}{\pi}\right)^2-\dots\right] ,
 $$
 
-with $N$ the isoscalar nucleon, and with the leading correction fixed and computable. The moment is of one structure function and not of the neutrino-plus-antineutrino sum: charge conjugation on an isoscalar target gives $F_{3,\bar\nu N}=F_{3,\nu N}$, so either measures the same number and adding them would double the right side against a measurement of $2.50$. The superscript is $N$ and not $p$: the measured target is isoscalar, and it is charge symmetry that lets the proton and neutron densities be combined into one object, so writing the moment for a proton target and the measurement for an isoscalar one would compare two different sums. The prefactor three is the number of valence quarks, that is $N_c$ read as a baryon number, and the correction is the same $\alpha_s$ that runs.
+with $N$ the isoscalar nucleon, and with the leading correction fixed and computable. The moment is of one structure function and not of the neutrino-plus-antineutrino sum: charge conjugation on an isoscalar target gives $F_{3,\bar\nu_{\mathrm{neu}} N}=F_{3,\nu_{\mathrm{neu}} N}$, so either measures the same number and adding them would double the right side against a measurement of $2.50$. The superscript is $N$ and not $p$: the measured target is isoscalar, and it is charge symmetry that lets the proton and neutron densities be combined into one object, so writing the moment for a proton target and the measurement for an isoscalar one would compare two different sums. The prefactor three is the number of valence quarks, that is $N_c$ read as a baryon number, and the correction is the same $\alpha_s$ that runs.
 
 The arithmetic, and the first thing it gets wrong if the scale is not matched. The measured datum is the CCFR first moment, quoted at $Q^2=3$ GeV$^2$ — that is $Q=1.73$ GeV, not $3$ GeV, and the distinction is worth one sentence because the coupling moves by twenty per cent between the two. Interpolating [the running article's](asymptotic-freedom-and-the-running-of-the-strong-coupling.html) one-loop line between its $1.5$ and $2$ GeV entries gives $\alpha_s\approx0.28$ there, and the one-loop prediction is
 
@@ -401,7 +401,7 @@ The framework supplies the null direction, and with it the light-cone decomposit
 | $p$ | Target momentum; $M$ the target mass |
 | $q=k-k'$ | Momentum transfer |
 | $Q^2=-q^2$ | Virtuality of the exchange, positive |
-| $\nu=p\cdot q/M$ | Energy transfer in the target rest frame |
+| $\digamma_{\mathrm{bjk}}=p\cdot q/M$ | Energy transfer in the target rest frame |
 | $x=Q^2/(2p\cdot q)$ | Bjorken variable; the parton's fraction of null momentum |
 | $y=p\cdot q/(p\cdot k)$ | Inelasticity, $Q^2=sxy$; $s=2ME$ fixed target, $4E_eE_p$ collider |
 | $e_f$ | Quark charge in units of $e$; the weight $e_f^2$ in $F_2$ |

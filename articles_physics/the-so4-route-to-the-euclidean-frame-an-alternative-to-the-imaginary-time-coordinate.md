@@ -221,9 +221,9 @@ The $\mathrm{U}(1)$ weights follow from the two line-bundle weights. With $\math
 
 | term | multiplet | $Y$ | $Q$ | particle |
 |---|---|---|---|---|
-| $l^{*}\otimes S_L$ | $\mathbb{C}^2$ | $-1$ | $0,-1$ | $(\nu_e,e)_L$ |
+| $l^{*}\otimes S_L$ | $\mathbb{C}^2$ | $-1$ | $0,-1$ | $(\nu_{\mathrm{neu},e},e)_L$ |
 | $l^{*}\otimes\mathbb{C}_{-1}$ | $\mathbb{C}$ | $-2$ | $-1$ | $e_R$ |
-| $l^{*}\otimes\mathbb{C}_{+1}$ | $\mathbb{C}$ | $0$ | $0$ | $\nu_R$ |
+| $l^{*}\otimes\mathbb{C}_{+1}$ | $\mathbb{C}$ | $0$ | $0$ | $\nu_{\mathrm{neu},R}$ |
 | $(l^\perp)^{*}\otimes S_L$ | $\mathbb{C}^3\otimes\mathbb{C}^2$ | $\tfrac13$ | $\tfrac23,-\tfrac13$ | $(u,d)_L$ |
 | $(l^\perp)^{*}\otimes\mathbb{C}_{-1}$ | $\mathbb{C}^3$ | $-\tfrac23$ | $-\tfrac13$ | $d_R$ |
 | $(l^\perp)^{*}\otimes\mathbb{C}_{+1}$ | $\mathbb{C}^3$ | $\tfrac43$ | $\tfrac23$ | $u_R$ |

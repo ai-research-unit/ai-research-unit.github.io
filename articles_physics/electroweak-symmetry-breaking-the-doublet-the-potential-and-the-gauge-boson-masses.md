@@ -415,7 +415,7 @@ This is the sector's counterpart of the pion decay constant: a low-energy consta
 A third number, for the same reason. The width of the $W$ into one lepton pair is computable at tree level from the same three inputs,
 
 $$
-\Gamma\left(W\to e\nu\right)=\frac{G_F\,M_W^3}{6\pi\sqrt2}=227\ \mathrm{MeV} ,
+\Gamma\left(W\to e\nu_{\mathrm{neu}}\right)=\frac{G_F\,M_W^3}{6\pi\sqrt2}=227\ \mathrm{MeV} ,
 $$
 
 against the measured $223$ MeV. The agreement to two per cent is a check on the coupling $g/\sqrt2$ that enters the leptonic vertex, and the difference is again the radiative correction.
@@ -486,7 +486,7 @@ The mass matrix in the basis $(W_1,W_2,W_3,B)$ is $\tfrac{v^2}{4}$ times a block
 
 The counting balances at twelve. Before the breaking, four massless vectors give eight polarisations and the four real scalar components give four. After, the photon gives two, the three massive vectors nine and the physical scalar one. Three scalar components ceased to be independent fields and three gauge polarisations were gained, and the two events are one. In the unitary gauge the spectrum is a massless photon, a $W$ pair, a $Z$ and one scalar, with couplings $g_{hWW}=2M_W^2/v$, $g_{hZZ}=2M_Z^2/v$, $g_{hhh}=3M_H^2/v$ and $g_{hhhh}=3M_H^2/v^2$, all fixed by the masses.
 
-Numerically the sector is over-determined and the over-determination is the test. From $g$, $g_{\mathrm Y}$ and $v$ the tree masses are $80.24$ and $91.51$ GeV; from $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $79.83$ GeV against the measured $80.377$. Both routes miss by about half a GeV, in opposite directions, and the discrepancy is the one-loop correction: $\delta r=0.0355$, of which $+0.071$ is the running of $\alpha$ from zero momentum to $M_Z$ and about $-0.033$ is the top-quark and scalar loop contribution. The scale itself comes from the muon lifetime, $v=(\sqrt2G_F)^{-1/2}=246.2197$ GeV, which is the electroweak counterpart of a pion decay constant. The same three inputs give $\Gamma(W\to e\nu)=227$ MeV at tree level against $223$ measured.
+Numerically the sector is over-determined and the over-determination is the test. From $g$, $g_{\mathrm Y}$ and $v$ the tree masses are $80.24$ and $91.51$ GeV; from $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $79.83$ GeV against the measured $80.377$. Both routes miss by about half a GeV, in opposite directions, and the discrepancy is the one-loop correction: $\delta r=0.0355$, of which $+0.071$ is the running of $\alpha$ from zero momentum to $M_Z$ and about $-0.033$ is the top-quark and scalar loop contribution. The scale itself comes from the muon lifetime, $v=(\sqrt2G_F)^{-1/2}=246.2197$ GeV, which is the electroweak counterpart of a pion decay constant. The same three inputs give $\Gamma(W\to e\nu_{\mathrm{neu}})=227$ MeV at tree level against $223$ measured.
 
 The $\rho$ parameter is unity by identity for a doublet and deviates for larger multiplets, through the general formula $\rho=\sum v_i^2[T_i(T_i+1)-T_{3i}^2]/\sum 2v_i^2T_{3i}^2$, which gives one half for a triplet. The identity is the visible sign of a custodial $SU(2)$ symmetry of the potential that the vacuum preserves and the hypercharge gauging breaks. The measurement of $\rho$ to four parts in $10^4$ is therefore a bound on any additional multiplet's vacuum expectation value.
 

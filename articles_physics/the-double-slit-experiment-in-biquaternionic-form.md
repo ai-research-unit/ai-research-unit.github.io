@@ -277,7 +277,7 @@ maximal when the two route spinors are parallel (the scalar case) and vanishing 
 
 5. **More than two paths.** The which-path state of a two-slit experiment is a qubit, and its state space is the Bloch ball. A three-slit experiment is a three-state system, whose framework state space would require the tensor or module extension that *Quantum Physics in Biquaternionic Form* leaves open. Does the cone picture survive, and in what dimension?
 
-6. **The local complex structure.** The series makes the complex structure local through $c = 1/\sqrt{\epsilon\mu}$, hence a medium-dependent wavelength $\lambda = c/\nu$; but the $i$ of the phase is a global central element. The relation between the local frame and the global phase is unresolved here, as in the Schrödinger and path-integral articles.
+6. **The local complex structure.** The series makes the complex structure local through $c = 1/\sqrt{\epsilon\mu}$, hence a medium-dependent wavelength $\lambda = c/f_{\mathrm{frq}}$; but the $i$ of the phase is a global central element. The relation between the local frame and the global phase is unresolved here, as in the Schrödinger and path-integral articles.
 
 7. **Empirical content.** As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from standard quantum physics. The double slit, on the evidence of this article, does not.
 

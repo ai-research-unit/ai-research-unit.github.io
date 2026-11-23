@@ -248,7 +248,7 @@ The doublet sum carries the colour multiplicity of each doublet and the colour s
 | $Q_L=(u_L,d_L)$ | $3$ | $2$ | $1/6$ | L |
 | $u_R$ | $3$ | $1$ | $2/3$ | R |
 | $d_R$ | $3$ | $1$ | $-1/3$ | R |
-| $L_L=(\nu_L,e_L)$ | $1$ | $2$ | $-1/2$ | L |
+| $L_L=(\nu_{\mathrm{neu},L},e_L)$ | $1$ | $2$ | $-1/2$ | L |
 | $e_R$ | $1$ | $1$ | $-1$ | R |
 
 **The verification.** Each condition was computed exactly in rational arithmetic, for one generation, with the left-handed minus right-handed sign convention:

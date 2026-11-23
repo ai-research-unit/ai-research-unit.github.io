@@ -232,7 +232,7 @@ $$
 hold on the sixteen and fail on the fifteen. The chain is then a sequence of implications rather than a choice:
 
 $$
-\text{gauge }\mathrm{SU}(2)_R\ \Longrightarrow\ \text{gauge }B-L\ \Longrightarrow\ \nu_R\ \text{required}\ \Longrightarrow\ \text{matter is sixteen}.
+\text{gauge }\mathrm{SU}(2)_R\ \Longrightarrow\ \text{gauge }B-L\ \Longrightarrow\ \nu_{\mathrm{neu},R}\ \text{required}\ \Longrightarrow\ \text{matter is sixteen}.
 $$
 
 **A theory with half the group is free to be odd, and the observed one is odd.** The arithmetic is in [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html), and the count is in the content section below.
@@ -247,9 +247,9 @@ $$
 
 | field | $T_{3L}$ | $T_{3R}$ | $B-L$ | $Y=T_{3R}+\tfrac12(B-L)$ | $Q=T_{3L}+Y$ |
 |---|---|---|---|---|---|
-| $\nu_L$ | $+\tfrac12$ | $0$ | $-1$ | $-\tfrac12$ | $0$ |
+| $\nu_{\mathrm{neu},L}$ | $+\tfrac12$ | $0$ | $-1$ | $-\tfrac12$ | $0$ |
 | $e_L$ | $-\tfrac12$ | $0$ | $-1$ | $-\tfrac12$ | $-1$ |
-| $\nu_R$ | $0$ | $+\tfrac12$ | $-1$ | $0$ | $0$ |
+| $\nu_{\mathrm{neu},R}$ | $0$ | $+\tfrac12$ | $-1$ | $0$ | $0$ |
 | $e_R$ | $0$ | $-\tfrac12$ | $-1$ | $-1$ | $-1$ |
 | $u_L$ | $+\tfrac12$ | $0$ | $+\tfrac13$ | $+\tfrac16$ | $+\tfrac23$ |
 | $d_L$ | $-\tfrac12$ | $0$ | $+\tfrac13$ | $+\tfrac16$ | $-\tfrac13$ |

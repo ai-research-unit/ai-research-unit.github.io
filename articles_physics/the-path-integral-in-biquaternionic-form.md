@@ -243,7 +243,7 @@ $$
 \exp(\frac{2\pi iS_{\mathrm{cl}}}{h})\;},
 $$
 
-with the Maslov index supplying a phase $\exp(-i\pi\nu/2)$ at each conjugate point (caustic), where the determinant vanishes. The next correction comes from the cubic term in the expansion and is of order $\frac{h}{2\pi}$ relative to the leading term; it is the first term that feels the anharmonicity of the action, and it is not pursued here.
+with the Maslov index supplying a phase $\exp(-i\pi\digamma_{\mathrm{msl}}/2)$ at each conjugate point (caustic), where the determinant vanishes. The next correction comes from the cubic term in the expansion and is of order $\frac{h}{2\pi}$ relative to the leading term; it is the first term that feels the anharmonicity of the action, and it is not pursued here.
 
 For the free particle $S_{\mathrm{cl}}=m\,c\,(x_f-x_i)^2/(2T)$ and $\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f=-m\,c/T$, so the van Vleck factor is $\frac{1}{\sqrt{2\pi i \frac{h}{2\pi}}}\sqrt{m\,c/T}=\big(\frac{k_m}{2\,\pi\,i\,T}\big)^{1/2}$ and the semiclassical kernel is the exact kernel. A quadratic action is semiclassically exact; the free particle and the harmonic oscillator are the two elementary cases.
 
@@ -378,7 +378,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $S_{\mathrm{cl}}$ | Classical action; stationary point of $S[x]$; phase of the free kernel |
 | $\delta^2S$ | Second variation (Hessian) of the action about $x_{\mathrm{cl}}$ |
 | $\sqrt{\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert}$ | Van Vleck determinant; equals the WKB amplitude $A_{\mathrm{wkb}}$ |
-| $\exp(-i\pi\nu/2)$ | Maslov phase; $\nu$ the number of conjugate points (caustics) |
+| $\exp(-i\pi\digamma_{\mathrm{msl}}/2)$ | Maslov phase; $\digamma_{\mathrm{msl}}$ the number of conjugate points (caustics) |
 | $\langle  x_jx_k\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,k})$ | Free Euclidean two-point function; contact term $\frac{1}{k_m}$ |
 | $[x,p]=i\,\frac{h}{2\pi}$ | Canonical commutator; the value $i\,\frac{h}{2\pi}$ is central and in $\mathbb{B}_{\Phi}$ |
 | $[p,[p,g]]=-\frac{h^{2}}{4\pi^{2}}\frac{d^{2}g}{dx^{2}}$ | Operator-ordering ambiguity; proportional to the curvature |

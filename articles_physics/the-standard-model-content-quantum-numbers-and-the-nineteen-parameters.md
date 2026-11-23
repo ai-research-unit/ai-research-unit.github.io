@@ -66,7 +66,7 @@ The neutrino is the upper component of $L_L$ and has no right-handed partner in 
 | $Q_L=(u_L,d_L)$ | $3$ | $2$ | $1/6$ | $+1/2$, $-1/2$ | $2/3$, $-1/3$ | $6$ |
 | $u_R$ | $3$ | $1$ | $2/3$ | $0$ | $2/3$ | $3$ |
 | $d_R$ | $3$ | $1$ | $-1/3$ | $0$ | $-1/3$ | $3$ |
-| $L_L=(\nu_L,e_L)$ | $1$ | $2$ | $-1/2$ | $+1/2$, $-1/2$ | $0$, $-1$ | $2$ |
+| $L_L=(\nu_{\mathrm{neu},L},e_L)$ | $1$ | $2$ | $-1/2$ | $+1/2$, $-1/2$ | $0$, $-1$ | $2$ |
 | $e_R$ | $1$ | $1$ | $-1$ | $0$ | $-1$ | $1$ |
 
 **The count.** The last column sums to $6+3+3+2+1=15$. That is the content of one generation: fifteen left-handed Weyl fields, of which twelve carry colour and three do not, and of which every coloured one carries fractional charge.
