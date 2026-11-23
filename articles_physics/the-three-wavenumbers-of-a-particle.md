@@ -193,6 +193,20 @@ Its inverse, up to the factor $2\pi$, is a distance, and each of the three dista
 
 **The three distances are in the inverse ratio of the wave numbers.** Since $\nu_t^{\prime}\ge \nu_{\Phi}$ and $\nu_t^{\prime}\ge \nu_m$, the energy distance is the shortest of the three at every speed, with equality at rest for the momentum one and in the massless limit for the mass one. And $\nu_{\Phi}/\nu_t^{\prime}=\beta$ reads as $\lambda_{\Phi}/\lambda_{t}=1/\beta$: the phase distance of the state is the light-travel distance divided by the speed, which is the statement that a slow particle winds slowly in space and quickly in time.
 
+**The mass sets the scale and the speed sets the ratio.** Divide any one length by the mass length, and the mass leaves the quotient:
+
+$$
+\frac{\lambda_{\Phi}}{\lambda_m}=\frac{1}{\gamma\beta},
+\qquad
+\frac{\lambda_t}{\lambda_m}=\frac{1}{\gamma},
+\qquad
+\frac{\lambda_{\Phi}}{\lambda_t}=\frac{1}{\beta}.
+$$
+
+The last is the ratio above, read on lengths. The first two say that at a fixed speed every length of the particle scales as $1/m$: double the mass and all three lengths halve. So the reading "the heavier the particle, the shorter its wavelength" is one fact about $1/m$ stated three times, and it holds of the mass length and the energy length as much as of the de Broglie one. The objection is that a heavier particle is also harder to accelerate, so that the comparison of two species at one speed is a comparison of two different preparations. It is, and that is why the ratios are taken at fixed $\beta$: they carry no mass at all, so they cannot be disturbed by one.
+
+The three lengths therefore have two different owners. The mass fixes the row of numbers — the scale $1/\nu_m$ of the species, and the scale $1/m$ of every other length of that species at a given speed. The state fixes the column — the position in the row, which is the ratio $\gamma\beta$. A statement about the first is a statement about the species and is true at every speed; a statement about the second is a statement about one preparation.
+
 ## The Relation Between the Three
 
 The mass shell. For a free particle,
@@ -341,7 +355,7 @@ The number itself says four things at once. It is the wave number of the field i
 One radian of the rest-frame phase. The field at rest oscillates as $e^{-2\pi i c\nu_m t}$, and the distance light covers in the time $t$ is $L=ct$, so the phase as a function of that distance is $-2\pi\nu_mL$. It turns by one radian over
 
 $$
-\frac{1}{2\pi\nu_m}=\frac{h}{2\pi m\,c},
+\frac{1}{2\pi\nu_m},
 $$
 
 which is $386.159\ \mathrm{fm}$ for the electron. The full turn is $2\pi$ times as long, $\lambda_m=1/\nu_m=h/(mc)=2.426\ \mathrm{pm}$, and only the full turn is called the Compton wavelength. Every statement of this section is the first of those numbers read another way.
@@ -474,7 +488,7 @@ The cross-section falls at the same wave number. Below $\lambda_C$ the Klein–N
 
 ### The Atomic Comparison
 
-A hydrogen atom is $21.8$ mass wavelengths across. The Bohr radius is $a_0=\frac{4\,\pi\,h^{2}\,\epsilon_{0}}{(2\pi)^{2} m\,e^{2}}$ and the mass wave number of the electron is $\nu_{m_e}=\frac{m_e\,c}{h}$. Their product needs no numerical input:
+A hydrogen atom is $21.8$ mass wavelengths across. The Bohr radius is $a_0=\frac{\epsilon_{0}\,h\,c}{\pi\,e^{2}\,\nu_{m_e}}$ and the mass wave number of the electron is $\nu_{m_e}=\frac{m_e\,c}{h}$. Their product needs no numerical input:
 
 $$
 a_0\,\nu_{m_e} =\frac{h\,c\,\epsilon_{0}}{\pi e^{2}} = \frac{1}{2\pi\alpha} = 21.81,
@@ -515,7 +529,7 @@ What the ratio buys. Because the ratio is the inverse fine-structure constant di
 It is the reciprocal of the momentum wavelength, exactly. A plane wave of momentum $\vec p_{\Phi}$ has the spatial phase $e^{i\theta_{\mathrm{spa}}}$, so its wave vector is the vector part of the element, $\vec\nu_{\Phi}=\frac{\vec p_{\Phi}}{h}$, and its magnitude is the momentum wave number:
 
 $$
-\nu_{\Phi} =\frac{p_{\Phi}}{h}=\frac{p_{\Phi}}{h} .
+\nu_{\Phi} =\frac{p_{\Phi}}{h} .
 
 $$
 
@@ -568,6 +582,24 @@ which is the ordinary formula $\lambda D/d$ with $\lambda=1/\nu_{\Phi}$. The wav
 A number. Electrons of $100\ \mathrm{eV}$ have $\nu_{\Phi}=8.154\times10^{9}\ \mathrm{m^{-1}}$, so with $d=1\ \mu\mathrm{m}$ and $D=1\ \mathrm{m}$ the fringes are $0.12\ \mathrm{mm}$ apart and plainly visible. The same electrons through a crystal, whose planes are $0.2\ \mathrm{nm}$ apart, give diffraction angles of order $1/(2d\,\nu_{\Phi})=0.3\ \mathrm{rad}$: the crystal is the grating that matches the wave number.
 
 Diffraction is the same statement. An aperture of width $w$ spreads the beam over an angle of order $1/(w\,\nu_{\Phi})$. The pattern is wide when the wave number is small compared with the inverse aperture, which is the wave regime, and narrow when it is large, which is the ray regime. The boundary between the two is a product of two lengths, one of them $1/(2\pi\nu_{\Phi})$ and the other the apparatus.
+
+### The Diffraction Limit and the Electron Microscope
+
+An aperture resolves nothing smaller than its own wavelength. A wave collected over an aperture of width $w$ is spread over an angle of order $1/(w\nu_{\Phi})$, so two points closer than about half a wavelength are not separated in the image:
+
+$$
+\Delta x\sim\frac{1}{2\nu_{\Phi}}=\frac{\lambda_{\Phi}}{2}.
+$$
+
+The factor of two is a convention — Abbe's — and the constant of order one beside it is Rayleigh's; the statement that matters is that the resolution is a wave number and not a size.
+
+Visible light stops at about $2\times10^{-7}\ \mathrm{m}$ and a proton is $10^{-15}\ \mathrm{m}$ across, so the gap is eight orders of magnitude. The way past the barrier is a larger $\nu_{\Phi}$, and since $\nu_{\Phi}=p/h$ a fast light particle supplies one. The electron is the choice: its mass is small, so a modest accelerating voltage buys a large momentum without a large rest-energy budget.
+
+The arithmetic, relativistically. An electron through a potential difference $V$ has $eV$ of kinetic energy, so $pc=\sqrt{(eV)^{2}+2\,eV\,m_ec^{2}}$, and one division by $h$ gives the wave number. At $100\ \mathrm{kV}$, $\lambda_{\Phi}=3.70\ \mathrm{pm}$; at $200\ \mathrm{kV}$, $2.51\ \mathrm{pm}$; at $300\ \mathrm{kV}$, $1.97\ \mathrm{pm}$. Each is some hundred thousand times shorter than a visible photon, and the diffraction limit each sets is far below the spacing of atoms in a crystal.
+
+**The limit met in practice is not the diffraction one.** A transmission electron microscope resolves $50$ to $100\ \mathrm{pm}$, whereas $\lambda_{\Phi}/2$ at $300\ \mathrm{kV}$ is $1\ \mathrm{pm}$: the instrument sits a factor of fifty to a hundred above its own diffraction limit. The gap is the aberration of the magnetic lenses, chiefly spherical and chromatic, together with the small aperture those aberrations force. So the electron microscope is the case where the wavelength stops being the obstacle: at these wave numbers the instrument is the limit and the wave is not. That is the opposite of the optical microscope, where the wavelength is the limit and the glass is nearly perfect.
+
+The mass wave number plays no part in the argument and must not be put in its place. To resolve $1/(2\pi\nu_{m_e})=386\ \mathrm{fm}$ a probe would need a wave number $\nu_{m_e}$, and a photon of that wave number carries $511\ \mathrm{keV}$. That is the pair threshold: the photon that reaches the electron's own scale makes an electron-positron pair instead of resolving the electron. The resolution of an instrument is written in $\nu_{\Phi}$, and the boundary beyond which the one-particle description ends is written in $\nu_m$. They are different numbers and they answer different questions.
 
 ### No State Is Narrower Than Half Its Wavelength
 
@@ -630,18 +662,30 @@ The same count for a gas of atoms. Cool a gas until its wave number grows to the
 The wave number is proportional to the momentum. Since $p=\gamma mv$,
 
 $$
-\nu_{\Phi} =\nu_m\,\gamma\,v = \gamma\beta\,\nu_m .
+\nu_{\Phi} =\gamma\,\frac{v}{c}\,\nu_m = \gamma\beta\,\nu_m .
 $$
 
 At rest it vanishes; at $\beta=1/\sqrt{2}$ it equals the mass wave number; at $\beta\to1$ it approaches $\gamma \nu_m$ and grows without bound as the energy rises. The momentum and energy wave numbers can both be made arbitrarily large by raising the energy; only the mass wave number is fixed. At $1\ \mathrm{TeV}$ an electron's momentum wave number is $8.07\times10^{17}\ \mathrm{m^{-1}}$, and its energy wave number is the same number.
 
 That is the resolution of a collider. Two beams collide with a wave number far above the inverse size of a proton, and the collisions resolve structure at that wave number. The statement that a collider probes a given distance is a statement about $\nu_{\Phi}$, not about any particle's size.
 
+In the length it is one line. Invert the relation and divide by the mass length:
+
+$$
+\frac{\lambda_{\Phi}}{\lambda_m}=\frac{1}{\gamma\beta},
+$$
+
+so the de Broglie length is the mass length divided by $\gamma\beta$. The electron gives the ladder: $24.14\ \mathrm{pm}$ at $\beta=0.1$, $4.202\ \mathrm{pm}$ at $\beta=0.5$, and $2.426\ \mathrm{pm}$ at $\beta=1/\sqrt{2}$, where the two lengths are equal. Above that speed the de Broglie length is the shorter of the two, and below it the longer. A proton at $\beta=0.5$ carries $2.289\ \mathrm{fm}$, shorter than the electron's by the mass ratio $1836$.
+
+The limit at rest is the one worth stating. As $\beta\to0$ the de Broglie length diverges while the mass length does not move: $2.426\ \mathrm{pm}$ for the electron at every speed. A particle at rest has no de Broglie wavelength at all and a finite Compton wavelength, and the two statements are about two different lengths. The reading that a massive particle has a short wavelength comes from confusing them.
+
 ### Not a Size Either
 
 A cold atom. $\nu_{\Phi}=1.6\times10^{5}\ \mathrm{m^{-1}}$ for an atom at microkelvin temperatures, and the atom is $0.1\ \mathrm{nm}$ across, that is $10^{10}\ \mathrm{m^{-1}}$ of inverse size. The ratio is four orders of magnitude, in the direction opposite to the naive reading.
 
 A macroscopic object. A grain of $1\ \mathrm{g}$ moving at $1\ \mathrm{mm\,s^{-1}}$ has $p=10^{-6}\ \mathrm{kg\,m\,s^{-1}}$ and $\nu_{\Phi}=1.51\times10^{27}\ \mathrm{m^{-1}}$, twenty orders of magnitude above the inverse size of the grain. No interference is observable, and the reason is not that the grain is large but that its wave number is large compared with every inverse aperture available.
+
+**The grain shows the other length too.** Its mass wave number is $\nu_m=4.52\times10^{38}\ \mathrm{m^{-1}}$, so $\lambda_m=2.210\times10^{-39}\ \mathrm{m}$. That is $3.34\times10^{-12}$ of its own de Broglie length, and $1.37\times10^{-4}$ of the Planck length. For a macroscopic body the mass length is the shortest length in the description by eleven orders of magnitude, and it is the de Broglie length that matters for every observable: the two are separate numbers and only the second is set by the motion.
 
 ## The Energy Wave Number
 
@@ -842,9 +886,35 @@ i\,\frac{\partial\chi}{\partial r'_t}=-\frac{1}{4\pi\nu_m}\,\Delta_\Phi\,\chi
 i \frac{h}{2\pi}\,\frac{\partial\chi}{\partial t}=-\frac{hc}{8\pi^{2}\nu_m}\,\Delta_\Phi\,\chi ,
 $$
 
-the last step multiplying by $\frac{h}{2\pi} c$ with $r'_t=c\,t$ and $\frac{h\,c}{8\pi^{2}\nu_m}=\frac{h^{2}}{8\pi^{2}m}$. This is the free Schrödinger equation, and it is the limit of the three wave numbers: $\nu_m$ is the constant, $\nu_{\Phi}$ the variable, and the box has been turned into an operator by dropping one term.
+the last step multiplying by $\frac{h}{2\pi} c$ with $r'_t=c\,t$ and $\frac{h\,c}{8\pi^{2}\nu_m}$ the coefficient of $\Delta_\Phi$. This is the free Schrödinger equation, and it is the limit of the three wave numbers: $\nu_m$ is the constant, $\nu_{\Phi}$ the variable, and the box has been turned into an operator by dropping one term.
 
 The angle is $\theta_{\mathrm{rst}}=2\pi\nu_m r'_t$: the mass wave number and the real interval give a real angle.
+
+**The mass length survives the limit.** It is not eliminated; it changes its dress. The coefficient of $\Delta_\Phi$ in the boxed equation is $1/(4\pi\nu_m)$, which is half of one radian of the mass length, and it is a length because $\Delta_\Phi$ carries an inverse length squared and the time derivative an inverse length. Pass to clock time, $r'_t=c\,t$, and the same coefficient becomes
+
+$$
+\frac{c}{4\pi\nu_m}=5.788\times10^{-5}\ \mathrm{m^{2}\,s^{-1}}
+$$
+
+for the electron: the coefficient of a diffusion equation, and the inertia the mass imposes on the Schrödinger equation. So the non-relativistic limit keeps one visible wavelength, $\lambda_{\Phi}$, and folds the other two into one constant. A reader who takes the limit for a deletion of the mass can test the point here, because the mass is still in the equation, in the only place a non-relativistic equation has for it.
+
+## The Classical Limit in Wavelengths
+
+Classicality is a statement about the state and not about the mass. A body behaves classically when the phase it winds across the apparatus is large, and the measure of that is the number of wavelengths that fit across it:
+
+$$
+N=L\,\nu_{\Phi}=\frac{L}{\lambda_{\Phi}} .
+$$
+
+The limit $N\gg1$ is classical and $N\lesssim1$ is wave. The criterion never mentions $\nu_m$, and the reason is that a heavy body and a light one at the same speed differ in scale alone.
+
+The heavy body is classical because its length is short. A grain of $1\ \mathrm{g}$ at $1\ \mathrm{mm\,s^{-1}}$ has $\lambda_{\Phi}=6.626\times10^{-28}\ \mathrm{m}$, so a chamber of $1\ \mathrm{m}$ holds $1.51\times10^{27}$ wavelengths of it. No instrument holds fewer, and interference is impossible for that reason and not for any other. The mass length of the same grain, $2.210\times10^{-39}\ \mathrm{m}$, is shorter still and plays no part in the argument: the classical criterion is built on the length the state supplies.
+
+**What $h\to0$ does depends on what is held fixed.** Hold the speed and let $h\to0$: the three lengths all go to zero in proportion, because each is $h$ over a momentum or an energy over $c$, and every ratio of §*What a Wave Number Is* is untouched. The triangle keeps its shape and loses its scale, and no length becomes large. Hold the wave number and let $h\to0$: the momentum $\vec p_{\Phi}=h\vec\nu_{\Phi}$ goes to zero, so the speed goes to zero and the particle comes to rest. The two readings are opposite, and *The Non-Quantum Limit of the Biquaternion Model* states both with the caution that the second is the one a fixed-wavelength statement of the limit actually makes.
+
+The reason the triangle cannot supply a second parameter. It has one shape, fixed by $\beta$ through $\nu_{\Phi}/\nu_m=\gamma\beta$, and a right triangle has no second degree of freedom. So $h$ cannot appear in any internal ratio of the three lengths, and the classical limit cannot be a statement about those ratios. It can only be a statement about $h$ against a length the apparatus supplies, which is the ratio $N$ of the first display.
+
+The objection, and the answer. A reader may say that the grain is classical because it is heavy, and that the criterion $N\gg1$ merely restates the fact in other units. It does not. Two grains of the same mass, one at rest and one at $1\ \mathrm{mm\,s^{-1}}$, have the same $\nu_m$ and de Broglie lengths that differ by an infinity; only the moving one has a finite $N$ at all. If mass made a body classical, a cold atom of large mass would be as classical as a cannonball, and a Bose–Einstein condensate of $10^{5}$ heavy atoms shows interference over its whole extent. The mass fixes the scale; the state fixes the classicality.
 
 ## The Massless Case
 
@@ -906,6 +976,28 @@ Why not $\mu$. The letter $\mu$ names the permeability, the direction label and 
 
 One caution on the neighbourhood. The corpus writes $\nu_{\mathrm{eu}}$ for a Euclidean momentum after a Wick rotation, a number that is also an inverse length but belongs to a different construction. The two are told apart by the label: $\mathrm{eu}$ marks the continuation of a component to imaginary time, and its square is positive, $\nu_{\mathrm{eu}}^{2}\ge0$, whereas $\nu_t^{\prime}$ is a Lorentzian component and the box of this article carries a minus sign in the Minkowski form. No display mixes them.
 
+## The Two Relations and the Three Numbers
+
+Two of the three numbers were postulated and the third was measured, and the order of their arrival is worth stating because the presentation above delivers them together.
+
+**The mass length came first, in 1923.** Compton found that an X-ray scattered through an angle $\theta$ emerges with its wavelength shifted by
+
+$$
+\Delta\lambda=\lambda_m\left(1-\cos\theta\right),
+\qquad
+\lambda_m=\frac{1}{\nu_m},
+$$
+
+so the electron's mass length, $2.426\ \mathrm{pm}$, entered physics as a measured shift of a spectrum line, one year before any matter wave was proposed. The number in the formula is read off the same element this article divides by $h$: it is the norm of $\tilde\Upsilon_{\Phi}$.
+
+**The two relations came in 1924.** De Broglie's thesis proposed that every particle carries a wave, and it did so through two equations. The first, $p=\frac{h}{\lambda}$, is $\lambda_{\Phi}=1/\nu_{\Phi}$ with the momentum of the state. The second, $hf_{\mathrm{frq}}=m\,c^{2}$, sets the rest energy of a particle as a frequency; divided by $c$ it is the rest-frame value of $\nu_t^{\prime}$, that is $\nu_m$. So the two relations give the momentum number and the mass number, and the third number is what the mass shell makes of them.
+
+**The triangle is the two relations plus the mass shell, divided by $h$.** That is the whole of the deduction, and it follows that this article can claim no novelty in the arithmetic: the two relations are de Broglie's, the geometry is Minkowski's, and the division by $h$ is the change of unit. What the article adds is that the three are read off one element, $\tilde\Upsilon_{\Phi}$, and that the same division produces the coefficient of every operator of the series.
+
+**The error the two relations separate.** Mass is energy, and energy is a frequency; from the two it does not follow that a massive particle has a short wavelength in space. The frequency the second relation fixes is the rest-frame phase, $c\,\nu_m$, whose wavelength is $\lambda_m$. The spatial wavelength of the state is $\lambda_{\Phi}$, and it is infinite at rest. A particle at rest has a finite Compton wavelength and no de Broglie wavelength at all. Both statements are true, they are about two different lengths, and the cost of running them together is the error this article exists to remove.
+
+**What the history does not show.** It does not show that the three numbers were always kept apart. The $\frac{1}{2\pi}$ convention, the distinction between a wave number and its inverse, and the habit of writing the mass term of an operator as a coefficient all arrived later, through Schrödinger's equation and through the relativistic wave equations of 1926 to 1928, and the notation of this series is a later tidying rather than a reconstruction of the original. The reader who wants the framework's own history has *A Brief History of Biquaternions in Physics*; the paragraphs above are the history of the three numbers alone.
+
 ## Summary
 
 Three wave numbers come from one division, $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}$: the quotient's temporal coefficient is $\nu_t^{\prime}=\frac{E}{h\,c}$, its vector part is $\vec\nu_{\Phi}=\frac{\vec p_{\Phi}}{h}$ with modulus $\nu_{\Phi}$, and its norm is $\nu_m=\frac{m\,c}{h}$. The first two belong to the state and the third to the particle, and all three are read off the one element $\tilde\Upsilon_{\Phi}=i\nu_t^{\prime}e_t+\vec\nu_{\Phi}$.
@@ -922,7 +1014,13 @@ For the electron $\nu_m=4.1215\times10^{11}\ \mathrm{m^{-1}}$, and it is the sam
 
 None of the three is the size of the particle: the proton's charge radius times $2\pi\nu_m$ is four, and the electron is pointlike far below its own inverse. At $m=0$ the triangle degenerates, $\nu_t^{\prime}=\nu_{\Phi}$ and the mass wave number is no longer a wave number of the problem. The massless equations of the series are exact for that reason, not approximate.
 
-The non-relativistic limit is one operation on the triangle. Split off the mass side exactly, $\nu_t^{\prime}=\nu_m+\Omega$, note that the triangle then reads $\nu_{\Phi}^{2}=2\nu_m\Omega+\Omega^{2}$, expand once, and keep the term linear in the excess. The quotient of the two terms, $\eta_{\mathrm{nr}}=\Omega/(2\nu_m)$, is the small parameter, and the error of the truncation is $-\eta_{\mathrm{nr}}/(1+\eta_{\mathrm{nr}})$ in closed form. The leading term is $h\,c\,\Omega=p^{2}/2m$, and the first-order relation it carries, with $\nu_{\Phi}^{2}\to-\Delta_\Phi$, is the free Schrödinger equation.
+The non-relativistic limit is one operation on the triangle. Split off the mass side exactly, $\nu_t^{\prime}=\nu_m+\Omega$, note that the triangle then reads $\nu_{\Phi}^{2}=2\nu_m\Omega+\Omega^{2}$, expand once, and keep the term linear in the excess. The quotient of the two terms, $\eta_{\mathrm{nr}}=\Omega/(2\nu_m)$, is the small parameter, and the error of the truncation is $-\eta_{\mathrm{nr}}/(1+\eta_{\mathrm{nr}})$ in closed form. The leading term is $h\,c\,\Omega=p^{2}/2m$, and the first-order relation it carries, with $\nu_{\Phi}^{2}\to-\Delta_\Phi$, is the free Schrödinger equation. The mass length is not deleted by the limit: the coefficient of $\Delta_\Phi$ is $1/(4\pi\nu_m)$, and in clock time it is $c/(4\pi\nu_m)=5.788\times10^{-5}\ \mathrm{m^{2}\,s^{-1}}$ for the electron.
+
+**The scale is the mass and the ratio is the speed.** At a fixed $\beta$ every length of the particle scales as $1/m$, so "the heavier the particle, the shorter its wavelength" is one fact about the mass and is true of all three lengths. The ratios carry no mass: $\lambda_{\Phi}/\lambda_m=1/(\gamma\beta)$ and $\lambda_t/\lambda_m=1/\gamma$. The de Broglie length is infinite at rest while the mass length is not, and the two are different lengths that answer different questions.
+
+The classical limit is a statement about the state and not about the mass. The criterion is $L\gg\lambda_{\Phi}$, the number of wavelengths across the apparatus, and it never mentions $\nu_m$. Lowering $h$ at fixed speed shrinks every length in proportion and leaves every ratio; lowering it at fixed wave number brings the particle to rest.
+
+The history is two relations and one measurement. Compton's shift, $\Delta\lambda=\lambda_m(1-\cos\theta)$, put the mass length into physics in 1923; de Broglie's two relations of 1924 supplied $\lambda_{\Phi}=1/\nu_{\Phi}$ and the rest frequency $c\,\nu_m$; the mass shell divided by $h$ gives the triangle. The arithmetic is not new, and the article claims none.
 
 ## Summary of Notation
 
@@ -932,6 +1030,7 @@ The non-relativistic limit is one operation on the triangle. Split off the mass 
 | $\vec\nu_{\Phi}=\frac{\vec p_{\Phi}}{h}$, $\nu_{\Phi} =\lvert\vec\nu_{\Phi}\rvert$ | The vector part of $\tilde\Upsilon_{\Phi}$ and its modulus, the momentum wave number, the wave number of the state; $\mathsf{L}^{-1}$; a property of the state |
 | $\nu_t^{\prime} =\frac{E}{h\,c}$ | The temporal coefficient of $\tilde\Upsilon_{\Phi}$, the energy wave number; $\mathsf{L}^{-1}$; the largest of the three |
 | $\lambda_m=1/\nu_m$, $\lambda_{\Phi}=1/\nu_{\Phi}$, $\lambda_t=1/\nu_t^{\prime}$ | The three wavelengths, the inverses of the three wave numbers; one radian of each is $\lambda/(2\pi)$, a quotient and not a symbol |
+| $\frac{\lambda_{\Phi}}{\lambda_m}=\frac{1}{\gamma\beta}$, $\frac{\lambda_t}{\lambda_m}=\frac{1}{\gamma}$, $\frac{\lambda_{\Phi}}{\lambda_t}=\frac{1}{\beta}$ | The three lengths at a fixed speed; the mass sets the scale and the state sets the ratio, so no ratio carries a mass |
 | $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$ | The mass shell in wave numbers; the right triangle of the three |
 | $\frac{\nu_t^{\prime}}{\nu_m}=\gamma$, $\frac{\nu_{\Phi}}{\nu_t^{\prime}}=\beta$ | The side ratios, which are the kinematic parameters of the state |
 | $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}=i\nu_t^{\prime}e_t+\vec\nu_{\Phi}$ | The wave-number biquaternion, the four-momentum in inverse lengths, an element of $\mathbb{B}_{\Phi}$; its norm is $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_t^{\prime\,2}+\vec\nu_{\Phi}^{\,2}=-\nu_m^{2}$; the gradient multiplies by $2\pi i\tilde\Upsilon_{\Phi}$ and the d'Alembertian by $-4\pi^{2}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}$ |
@@ -956,3 +1055,5 @@ The non-relativistic limit is one operation on the triangle. Split off the mass 
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the operator $\Box_\Phi-4\pi^{2}\nu_m^{2}$ and the non-relativistic limit.
 - [The Biquaternion D'Alembertian and Its Green's Functions](the-biquaternion-dalembertian-and-its-greens-functions.html), for the Yukawa kernel whose range is $1/(2\pi\nu_m)$.
 - [Conformal Invariance and the Massless Limit in Biquaternionic Form](conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html), for the degenerate case $\nu_m\to0$.
+- [The Non-Quantum Limit of the Biquaternion Model](the-non-quantum-limit-of-the-biquaternion-model.html), for what $h\to0$ does at fixed speed and at fixed wave number, and for why no internal ratio of the three lengths can carry it.
+- [The Quantum–Classical Divide in the Biquaternion Framework](the-quantum-classical-divide-in-the-biquaternion-framework.html), for the operational criterion that replaces a wavelength boundary.

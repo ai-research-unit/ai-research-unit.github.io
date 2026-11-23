@@ -56,6 +56,8 @@ The third row is not a limit. A small $1/(\nu_mL)$ says the region is large agai
 
 The mass is not the quantum either. Setting $\nu_m=0$ gives $\nu_t^{\prime}=\nu_{\Phi}$, the photon: linear dispersion, exact interference, no particle scale, and more wave-like than the massive case. A plane wave is semiclassical already, so the limit acts only where $A$ varies.
 
+**The lengths add nothing, and that is the point.** The same verdict is read on the three lengths. Each is $h$ over a momentum, or an energy over $h\,c$, so lowering $h$ at fixed speed sends all three to zero in proportion and leaves $\lambda_{\Phi}/\lambda_m=1/(\gamma\beta)$ untouched; lowering it at fixed wave number sends the momentum to zero and brings the particle to rest. No ratio of lengths moves in either case, so the limit cannot be read off the triangle and must be read off $h$ against a length the region supplies — which is the external parameter of the table above. *The Three Wavenumbers of a Particle*, §*The Classical Limit in Wavelengths*, works the two readings out.
+
 ## The Limit and the Approximation
 
 Two words, and they answer different questions. The limit says which equations survive as $\epsilon$ goes to zero. The approximation says how much of the discarded term is put back, and what the putting back costs.
