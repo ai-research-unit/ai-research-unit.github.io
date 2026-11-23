@@ -75,7 +75,7 @@
 <p><strong>The action.</strong></p>
 <p>$$
 S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
--\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
+-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
 +ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$</p>
 <p>with $D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$ and $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$. It is the free action with two replacements: every spatial derivative becomes the covariant one, and one term in the potential is added. That is the whole of the coupling in the action, and it is the same one rule that the element-form companion states for the equation.</p>
@@ -102,8 +102,8 @@ $$</p>
 <p><strong>The pairing.</strong> The action uses $\mathrm{Sc}(\cdot^{*}\cdot)$ and not $\mathrm{Sc}(\cdot^{\natural}\cdot)$. The reason is the free article's: the Hamiltonian is Hermitian for that pairing, and the action that reproduces the equation must use the pairing the equation's Hermiticity is stated in. The quaternion conjugate is used in the corpus where the corpus uses it — the quaternionic norm, the second-order operators of the Klein–Gordon article, the current of the Dirac article — and it is not used here.</p>
 <p><strong>The two writings of the kinetic term.</strong> The action's gradient term can be written as a modulus or as an operator sandwich,</p>
 <p>$$
--\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
-=\frac{h^{2}}{8\pi^{2}m}\sum_\eta\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta^{2}\tilde\Xi\big)+\partial_\eta\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big),
+-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
+=\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta^{2}\tilde\Xi\big)+\partial_\eta\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big),
 $$</p>
 <p>because $D_\eta^{\dagger}=-D_\eta$. The two differ by a total divergence, so they give the same variation and the same equation, and the article uses the modulus form because it is manifestly positive and the operator form because it makes the variation one line.</p>
 <h3 id="the-two-settings-the-energy">The Two Settings: The Energy</h3>
@@ -116,7 +116,7 @@ $$</p>
 <p>and it is conserved because $\tilde H^{\mathrm{gco}}_\Psi$ commutes with itself: $\frac{d}{dt'}E=\mathrm{Sc}(\partial_{t'}\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi+\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\partial_{t'}\tilde\Xi)=0$ on solutions. This is the free article's computation with the shifted element, and it needs no new argument.</p>
 <p><strong>The operator setting.</strong> The energy density is</p>
 <p>$$
-e=\frac{h^{2}}{8\pi^{2}m}\sum_\eta\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)-ϙ\omicron_{\mathrm{pot}}\,n,
+e=\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)-ϙ\omicron_{\mathrm{pot}}\,n,
 $$</p>
 <p>which is the free article's density with the covariant gradient and the potential energy. Its spatial integral is the expectation of $\hat H^{\mathrm{gco}}$ on solutions, up to a boundary term, and <strong>it is conserved for a time-independent connection</strong>: the potential's contribution to the time derivative is exactly the work the field does against the potential, and the two cancel in the integral.</p>
 <p><strong>What the article does not do.</strong> It does not print the local energy flux. The local conservation law $\partial_{t'}e+\vec\nabla_\Phi\cdot\vec s=0$ holds, but the flux that makes it hold is not the naive one and it carries a term in the potential's gradient; the article states the density, states the global conservation, and leaves the flux to the stress-energy article, which is where the improvement terms are treated. This is a deliberate omission and not a lemma: a wrong flux would be worse than none.</p>
@@ -125,7 +125,7 @@ $$</p>
 <p><strong>Varying the field.</strong> Treating $\tilde\Xi$ and $\tilde\Xi^{*}$ as independent — legitimate over $\mathbb{C}$ — and integrating the gradient term by parts,</p>
 <p>$$
 \frac{\delta S}{\delta\tilde\Xi^{*}}
-=i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+\frac{h^{2}}{8\pi^{2}m}\sum_\eta D_\eta^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi
+=i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+\frac{hc}{8\pi^{2}\nu_m}\sum_\eta D_\eta^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi
 =\;i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi-\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi .
 $$</p>
 <p>Setting it to zero and multiplying by $-1$ gives</p>
@@ -181,7 +181,7 @@ $$</p>
 <p><strong>The current is the action's derivative with respect to the connection.</strong> A shorter route, and the one that shows the object is not a coincidence:</p>
 <p>$$
 -\frac{\partial L}{\partial A_\eta}
-=\frac{h^{2}}{8\pi^{2}m}\cdot 2\,\mathrm{Re}\sum_{\imath}\frac{2\pi iϙ}{h}\,\overline{\big(D_\eta\tilde\Xi\big)_{\imath}}\,\tilde\Xi_{\imath}
+=\frac{hc}{8\pi^{2}\nu_m}\cdot 2\,\mathrm{Re}\sum_{\imath}\frac{2\pi iϙ}{h}\,\overline{\big(D_\eta\tilde\Xi\big)_{\imath}}\,\tilde\Xi_{\imath}
 =-\frac{h ϙ}{2\pi m}\,\mathrm{Im}\,\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}\tilde\Xi\big)
 =ϙ\,j_\eta,
 $$</p>
@@ -198,7 +198,7 @@ $$</p>
 <p>The coupled action is</p>
 <p>$$
 S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
--\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
+-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
 +ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$</p>
 <p>and its variation with respect to $\tilde\Xi^{*}$ is the coupled Schrödinger equation. The action is real term by term: the kinetic term is Hermitian, the gradient term is a sum of moduli and positive, and the potential term is Hermitian because $ϙ\omicron_{\mathrm{pot}}$ is real.</p>

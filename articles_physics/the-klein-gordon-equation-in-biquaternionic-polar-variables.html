@@ -153,7 +153,7 @@ $$</p>
 <p>$$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho},
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho},
 $$</p>
 <p>which is the mass shell with the mass term shifted by the quantum potential. The shift is the only place the amplitude enters, and it enters as a curvature: $Q_{\mathrm{qnt}}$ is the d'Alembertian of the amplitude divided by the amplitude.</p>
 <p><strong>The companion's dispersion relation, and its remainder.</strong> Dividing by $\frac{h^{2}}{4\pi^{2}}$ and multiplying by $-1$ puts the same statement on the four-wavevector,</p>
@@ -161,7 +161,7 @@ $$</p>
 \langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=-4\pi^{2}\nu_m^{2}+\frac{\Box_\Phi \varrho}{\varrho},
 $$</p>
 <p>which is the companion's $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=-\nu_m^{2}$ with one term added. The added term vanishes exactly when $\Box_\Phi \varrho=0$: a plane wave of constant amplitude satisfies that, and a wave packet, a bound state, or any field whose amplitude is not annihilated by $\Box_\Phi$ does not.</p>
-<p><strong>The quantum potential is the WKB one with the Laplacian promoted.</strong> The WKB article writes $Q=-\frac{h^{2}}{8\pi^{2}\,m}\frac{\vec\nabla_\Phi^{2}A}{A}$ for the stationary state, with $A$ its real amplitude and $\vec\nabla_\Phi^{2}$ the Laplacian. Since $mc^{2}/(24\pi^{2}\nu_m^{2})=\frac{h^{2}}{4\pi^{2}}/(2m)$, the coefficient is the same and $\Box_\Phi$ replaces the Laplacian: $Q_{\mathrm{qnt}}$ is the static quantum potential with the second derivative taken in four coordinates instead of three. The term appears only because the operator is second order: a first-order operator applied to $\varrho e^{i\theta_{\mathrm{pha}}}$ returns one derivative of the amplitude and no curvature, which is why the polar form of the Dirac wave stops at the eikonal and the four-momentum (<em>Relativistic Mechanics from the Dirac Wave</em>).</p>
+<p><strong>The quantum potential is the WKB one with the Laplacian promoted.</strong> The WKB article writes $Q=-\frac{hc}{8\pi^{2}\nu_m}\frac{\vec\nabla_\Phi^{2}A}{A}$ for the stationary state, with $A$ its real amplitude and $\vec\nabla_\Phi^{2}$ the Laplacian. Since $mc^{2}/(24\pi^{2}\nu_m^{2})=\frac{h^{2}}{4\pi^{2}}/(2m)$, the coefficient is the same and $\Box_\Phi$ replaces the Laplacian: $Q_{\mathrm{qnt}}$ is the static quantum potential with the second derivative taken in four coordinates instead of three. The term appears only because the operator is second order: a first-order operator applied to $\varrho e^{i\theta_{\mathrm{pha}}}$ returns one derivative of the amplitude and no curvature, which is why the polar form of the Dirac wave stops at the eikonal and the four-momentum (<em>Relativistic Mechanics from the Dirac Wave</em>).</p>
 <h3 id="the-quantum-potential-depends-on-the-density-alone">The quantum potential depends on the density alone</h3>
 <p>The bracket $\Box_\Phi \varrho/\varrho$ carries the amplitude and its second derivatives, so $Q_{\mathrm{qnt}}$ appears to need the amplitude rather than the density. It does not. With $u=\ln \varrho$,</p>
 <p>$$
@@ -171,10 +171,10 @@ $$</p>
 $$</p>
 <p>so that $\Box_\Phi \varrho/\varrho=\Box_\Phi u+(\partial u)^{2}$, and with $u=\tfrac12\ln\rho_{\mathrm{num}}$,</p>
 <p>$$
-\boxed{\;Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\left[\frac{1}{2}\Box_\Phi\ln\rho_{\mathrm{num}}+\frac{1}{4}\left(\partial\ln\rho_{\mathrm{num}}\right)^{2}\right]\;}
+\boxed{\;Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\left[\frac{1}{2}\Box_\Phi\ln\rho_{\mathrm{num}}+\frac{1}{4}\left(\partial\ln\rho_{\mathrm{num}}\right)^{2}\right]\;}
 $$</p>
 <p>The quantum potential is a functional of the density and of nothing else. The density is unchanged when the central phase is shifted, so $Q_{\mathrm{qnt}}$ is defined without reference to the phase. The bracket separates as well: its first term is the d'Alembertian of the logarithm of the density, and its second is the squared gradient of that logarithm, whose spatial part enters with $+$ and whose temporal part enters with $-$ because $\Box_\Phi$ is a d'Alembertian and not a Laplacian.</p>
-<p>The identity is not an accident of the logarithm. It states that $Q_{\mathrm{qnt}}$ is the curvature of the density on a logarithmic scale, so it is large where the density varies rapidly in proportion to itself, small where the density is nearly flat, and small for a wave packet whose envelope is broad compared with $\frac{h}{2\pi mc}$. Everywhere else in the pair $\frac{h}{2\pi}$ is absorbed into the angle, into $\tilde\Upsilon_{\Phi}$ and into $\nu_m$; in $Q_{\mathrm{qnt}}$ it stays, because $Q_{\mathrm{qnt}}$ compares a quantum curvature with a rest energy.</p>
+<p>The identity is not an accident of the logarithm. It states that $Q_{\mathrm{qnt}}$ is the curvature of the density on a logarithmic scale, so it is large where the density varies rapidly in proportion to itself, small where the density is nearly flat, and small for a wave packet whose envelope is broad compared with $\frac{1}{2\pi\nu_m}$. Everywhere else in the pair $\frac{h}{2\pi}$ is absorbed into the angle, into $\tilde\Upsilon_{\Phi}$ and into $\nu_m$; in $Q_{\mathrm{qnt}}$ it stays, because $Q_{\mathrm{qnt}}$ compares a quantum curvature with a rest energy.</p>
 <h3 id="the-transport-equation">The transport equation</h3>
 <p>The second equation is a conservation law in divergence form. Dividing by $m$ and reading the two derivatives as the density and the current of §<em>The Momentum and the Current</em>, it is $c\,\partial\rho_{\mathrm{chg}}/\partial r'_t+\vec\nabla_\Phi\cdot\vec j=0$, which is the continuity equation of the four-current in the companion's own form.</p>
 <p>For a plane wave the equation is satisfied identically, since the amplitude is constant and the action is linear. For a general wave it constrains the pair, and it is the equation that fixes the amplitude once the action is given, or the action once the amplitude is given. The two equations are not independent: each contains both functions. The amplitude equation carries the second derivatives of the amplitude and the squared gradient of the action; the transport equation is first order in each and carries them only through the products $\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi}$ and $\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t$.</p>
@@ -195,7 +195,7 @@ $$</p>
 <p>$$
 \rho_{\mathrm{chg}}=\frac{i}{4\pi\nu_m}\left(\Xi_t^{*}\frac{\partial\Xi_t}{\partial r'_t}-\Xi_t\,\frac{\partial\Xi_t^{*}}{\partial r'_t}\right),
 \qquad
-\vec j=-\frac{i\,h}{4\pi \,m}\left(\Xi_t^{*}\vec\nabla_\Phi\Xi_t-\Xi_t\,\vec\nabla_\Phi\Xi_t^{*}\right).
+\vec j=-\frac{i\,c}{4\pi\nu_m}\left(\Xi_t^{*}\vec\nabla_\Phi\Xi_t-\Xi_t\,\vec\nabla_\Phi\Xi_t^{*}\right).
 $$</p>
 <p>Substituting the word, $\Xi_t^{*}\partial\Xi_t/\partial r'_t-\Xi_t\,\partial\Xi_t^{*}/\partial r'_t=\frac{2\pi 2i\rho_{\mathrm{num}}\partial S_{\tilde\Xi}}{h\,\partial r'_t}$ and $\Xi_t^{*}\vec\nabla_\Phi\Xi_t-\Xi_t\,\vec\nabla_\Phi\Xi_t^{*}=\frac{2\pi 2i\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi}}{h}$, so the current becomes</p>
 <p>$$
@@ -307,7 +307,7 @@ $$</p>
 <p>$$
 T_{\mathrm{kin}}=\frac{\lvert\vec p\rvert^{2}}{2m}+Q_{\mathrm{qnt}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Delta_\Phi \varrho}{\varrho},
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Delta_\Phi \varrho}{\varrho},
 $$</p>
 <p>which is the WKB article's quantum Hamilton–Jacobi equation with $V=0$: the same kinetic energy, the same $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$, and the same quantum potential. The first dropped term is of relative order $T_{\mathrm{kin}}/(2mc^{2})$ and the second of order $v^{2}/c^{2}$.</p>
 <h3 id="the-transport-becomes-the-continuity-equation">The transport becomes the continuity equation</h3>
@@ -511,7 +511,7 @@ $$</p>
 <td>Mass wave number</td>
 </tr>
 <tr>
-<td>$Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho}$</td>
+<td>$Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho}$</td>
 <td>Relativistic quantum potential; central and real</td>
 </tr>
 <tr>

@@ -74,7 +74,7 @@
 <p>This article writes the action in the fluid's variables and varies them. <a href="the-schrodinger-fluid.html">The Schrödinger Fluid</a> reads the equation and names the density, the velocity and the quantum potential. Here the same field is written as an action over the density and the phase, and the Euler–Lagrange equations are read. Nothing about the equation changes; what changes is which object is primitive.</p>
 <p><em>First, the action has two terms and the fluid's two ingredients are those terms.</em> Written in $\rho_{\mathrm{num}}$ and $S$, the Lagrangian density is</p>
 <p>$$
-\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V\Bigr)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2},
+\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V\Bigr)-\frac{hc}{8\pi^{2}\nu_m}(\vec\nabla_\Phi \varrho)^{2},
 $$</p>
 <p>a phase term, a kinetic term, a gradient energy and an external potential. There is no quantum potential in it and no barotropic pressure: no term is a function of the density alone. The quantum potential appears only after the variation, as the derivative of the third term, and the pressure that term implies is a Korteweg stress.</p>
 <p><em>Second, the two variations give the fluid's two equations directly.</em> Varying $S$ gives continuity; varying $\varrho$ gives the quantum Hamilton–Jacobi equation; the acceleration law is its gradient and is not a third equation. The wave equation is nowhere in the derivation, and the fluid's equations are not a reading of it here but its Euler–Lagrange content in another chart.</p>
@@ -94,7 +94,7 @@ $$</p>
 <p>The first is the whole of the kinetic term: the scale contributes $\pm i\varrho\dot \varrho$, which is imaginary and drops out of the real part, so the density carries no inertia at this rung. The second splits cleanly into the amplitude's gradient and the phase's gradient, and the split is exact because the two factors of the word commute — $\varepsilon$ is central and $e^{i\theta}$ is central, so no cross term survives. The third is the density and nothing else, because the phase cancels against its conjugate and $\varepsilon^{2}=1$.</p>
 <p>Substituting and multiplying by $\frac{h}{2\pi}$ gives the Lagrangian in the fluid's variables.</p>
 <p>$$
-\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V\Bigr)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}\;}
+\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V\Bigr)-\frac{hc}{8\pi^{2}\nu_m}(\vec\nabla_\Phi \varrho)^{2}\;}
 $$</p>
 <p>The four terms are, in order, the phase term, the kinetic energy of the flow, the external potential's energy, and the energy stored in the density's gradient. The last is the only term that survives when the phase is constant, and it is the whole of the quantum effect: a fluid at rest with a non-uniform density has an energy, and a classical fluid at rest does not.</p>
 <p><strong>The coefficient of the gradient energy is fixed by the mass and by nothing else.</strong> It is $\frac{h^{2}}{4\pi^{2}}/2m$ per unit of $(\vec\nabla_\Phi \varrho)^{2}$, which is $\frac{h^{2}}{4\pi^{2}}/8m$ per unit of $(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$. The two forms are the same number and not merely the same up to a total derivative, by the chain rule $\vec\nabla_\Phi\rho_{\mathrm{num}}=2\varrho\nabla \varrho$, and the second is the form in which the term appears in the Korteweg literature. No other coefficient is available: the term must have two derivatives, must be even in $\varrho$, and must be the only scalar the amplitude can make at that order.</p>
@@ -102,7 +102,7 @@ $$</p>
 <h3 id="the-two-settings-the-velocity-is-not-canonical">The Two Settings: The Velocity Is Not Canonical</h3>
 <p>No time derivative of the velocity appears, and that is a statement about the chart and not about the fluid. In the action above the velocity is $\vec\nabla_\Phi S/m$: a function of the phase and not a field. If it is promoted to an independent field, the action becomes</p>
 <p>$$
-\mathcal L_{\mathrm{fl}}=\rho_{\mathrm{num}}\Bigl(-\partial_{t'}S-\frac{m\vec v^{2}}{2}-V\Bigr)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}+\vec\lambda\cdot\Bigl(\vec v-\frac{\vec\nabla_\Phi S}{m}\Bigr),
+\mathcal L_{\mathrm{fl}}=\rho_{\mathrm{num}}\Bigl(-\partial_{t'}S-\frac{m\vec v^{2}}{2}-V\Bigr)-\frac{hc}{8\pi^{2}\nu_m}(\vec\nabla_\Phi \varrho)^{2}+\vec\lambda\cdot\Bigl(\vec v-\frac{\vec\nabla_\Phi S}{m}\Bigr),
 $$</p>
 <p>and the three variations are these. Varying $\vec\lambda$ returns the definition, so the constraint is the chart's and carries no physics. Varying $\vec v$ fixes the multiplier, $\vec\lambda=\rho_{\mathrm{num}}m\vec v$, which is the momentum density and nothing else. Varying $S$ gives continuity with $\vec j=\vec\lambda/m$, which is the same equation as before. The promotion buys a name and no equation, and the multiplier is not an independent field: it is determined by the equation that would have defined it.</p>
 <p>What the promotion does buy is the correct statement of the constraint. At the rungs above, the velocity's place is taken by the rapidity, and its momentum vanishes identically — the relativistic companion computes $\partial\mathcal L/\partial\dot\theta_{\mathrm{rpd}}=0$ on every configuration. Here the same fact is $p_{\vec v}=0$ once the velocity is promoted: it is then a coordinate with no kinetic term, so its conjugate is zero rather than small. The two statements are the same statement in two charts, and the fluid chart is the one in which it is visible without algebra; at this rung the density's momentum $p_r=0$ is the same fact in the chart that needs no promotion.</p>
@@ -117,7 +117,7 @@ $$</p>
 <p>with $\vec v=\vec\nabla_\Phi S/m$. The current that appears is the canonical one, $\vec j=\rho_{\mathrm{num}}\vec v$, and it is also the Noether current of the phase shift: the Lagrangian is invariant under $S\mapsto S+\text{constant}$, and the associated density is exactly $\rho_{\mathrm{num}}$. At this rung the conserved density and the charge density are the same object, which is why the article can speak of one continuity equation and the relativistic articles cannot.</p>
 <p>Varying the amplitude gives the quantum Hamilton–Jacobi equation. The variation is taken in $\varrho$ and not in $\rho_{\mathrm{num}}$, because $\varrho$ is the coordinate and $\rho_{\mathrm{num}}=\varrho^{2}$ is a function of it. The gradient term varies as</p>
 <p>$$
-\delta\int-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}=\frac{h^{2}}{(2\pi)^{2} m}\int\Delta_\Phi \varrho\,\delta \varrho,
+\delta\int-\frac{hc}{8\pi^{2}\nu_m}(\vec\nabla_\Phi \varrho)^{2}=\frac{hc}{(2\pi)^{2}\nu_m}\int\Delta_\Phi \varrho\,\delta \varrho,
 $$</p>
 <p>and the three remaining terms vary as $2\varrho\,\delta \varrho\,[-\partial_{t'}S-\frac{(\vec\nabla_\Phi S)^{2}}{2m}-V]$. Dividing the Euler–Lagrange equation by $2\varrho$ and using $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$,</p>
 <p>$$
@@ -139,7 +139,7 @@ $$</p>
 <h2 id="the-structural-consequence-the-quantum-potential-is-a-functional-derivative">The Structural Consequence: The Quantum Potential Is a Functional Derivative</h2>
 <p><strong>The third term of the Lagrangian is the whole of the quantum effect, and the quantum potential is its derivative.</strong> Write the gradient energy as a functional of the density,</p>
 <p>$$
-\mathcal E_{\mathrm{grad}}[\rho_{\mathrm{num}}]=\frac{h^{2}}{32\pi^{2}m}\int\frac{(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}}=\frac{h^{2}}{8\pi^{2}m}\int(\vec\nabla_\Phi \varrho)^{2},
+\mathcal E_{\mathrm{grad}}[\rho_{\mathrm{num}}]=\frac{hc}{32\pi^{2}\nu_m}\int\frac{(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}}=\frac{hc}{8\pi^{2}\nu_m}\int(\vec\nabla_\Phi \varrho)^{2},
 $$</p>
 <p>the equality of the two forms being the chain rule, $\vec\nabla_\Phi\rho_{\mathrm{num}}=2\varrho\nabla \varrho$. Then</p>
 <p>$$
@@ -147,11 +147,11 @@ $$</p>
 $$</p>
 <p><em>Proof.</em> Varying the first form,</p>
 <p>$$
-\delta\mathcal E_{\mathrm{grad}}=\frac{h^{2}}{32\pi^{2}m}\int\Bigl[\frac{2\vec\nabla_\Phi\rho_{\mathrm{num}}\cdot\nabla\delta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}}-\frac{(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}^{2}}\,\delta\rho_{\mathrm{num}}\Bigr],
+\delta\mathcal E_{\mathrm{grad}}=\frac{hc}{32\pi^{2}\nu_m}\int\Bigl[\frac{2\vec\nabla_\Phi\rho_{\mathrm{num}}\cdot\nabla\delta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}}-\frac{(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}^{2}}\,\delta\rho_{\mathrm{num}}\Bigr],
 $$</p>
 <p>and one integration by parts turns the first bracket into $-2\delta\rho_{\mathrm{num}}\,[\Delta_\Phi\rho_{\mathrm{num}}/\rho_{\mathrm{num}}-(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}^{2}]$, which with the second leaves $-\delta\rho_{\mathrm{num}}\,[2\Delta_\Phi\rho_{\mathrm{num}}/\rho_{\mathrm{num}}-(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}^{2}]$. With $\Delta_\Phi\rho_{\mathrm{num}}/\rho_{\mathrm{num}}=2\Delta_\Phi \varrho/\varrho+2(\vec\nabla_\Phi \varrho)^{2}/\varrho^{2}$ and $(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}^{2}=4(\vec\nabla_\Phi \varrho)^{2}/\varrho^{2}$, the bracket including its sign is $-4\Delta_\Phi \varrho/\varrho$ — the two gradient-squared pieces cancel — and the variation is</p>
 <p>$$
-\delta\mathcal E_{\mathrm{grad}}=-\frac{h^{2}}{8\pi^{2}m}\int\delta\rho_{\mathrm{num}}\,\frac{\Delta_\Phi \varrho}{\varrho}=\int\delta\rho_{\mathrm{num}}\,Q . \qquad\blacksquare
+\delta\mathcal E_{\mathrm{grad}}=-\frac{hc}{8\pi^{2}\nu_m}\int\delta\rho_{\mathrm{num}}\,\frac{\Delta_\Phi \varrho}{\varrho}=\int\delta\rho_{\mathrm{num}}\,Q . \qquad\blacksquare
 $$</p>
 <p>Three things follow, and they are the article's reason for existing.</p>
 <p><em>The quantum potential is not a potential.</em> It is the chemical potential of a density-gradient energy: the change in the fluid's energy when a particle is added at fixed volume. A potential in the usual sense is a function of position given from outside; this one is a functional of the density and disappears when the density is uniform. The distinction is not verbal — a potential can be subtracted by a gauge choice and this cannot, because it is a property of the state.</p>
@@ -187,7 +187,7 @@ $$</p>
 <p>No new equation. The fluid reading's three equations are the element reading's three equations, and the article says so: the fluid is a reading of the same content and not a different theory.</p>
 <p>The nodal exception, which is now a place where the velocity is undefined rather than where the phase is. The same failure in a third language, and the article's one sentence about it is that the three languages agree about where the description stops.</p>
 <h2 id="summary">Summary</h2>
-<p>The action. $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}$, four terms, no quantum potential and no barotropic pressure.</p>
+<p>The action. $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V)-\frac{hc}{8\pi^{2}\nu_m}(\vec\nabla_\Phi \varrho)^{2}$, four terms, no quantum potential and no barotropic pressure.</p>
 <p>The two variations. The phase gives continuity, $\partial_{t'}\rho_{\mathrm{num}}+\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec v)=0$. The amplitude gives $\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V+Q=0$, and its gradient is the acceleration law with the quantum force the only force.</p>
 <p>The quantum potential. $Q=\delta\mathcal E_{\mathrm{grad}}/\delta\rho_{\mathrm{num}}$, a chemical potential of a density-gradient energy; the stress $\sigma^{Q}_{ij}$ is that energy's pressure tensor; the fluid is of Korteweg type.</p>
 <p>The velocity. Not canonical: no time derivative, so $p_{\vec v}=0$ identically. Promoting it to a field adds a multiplier that is the momentum density and a constraint that is the chart's definition. A rotational fluid needs the Clebsch pair.</p>
@@ -227,7 +227,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal E_{\mathrm{grad}}$</td>
-<td>Gradient energy; $\frac{h^{2}}{8\pi^{2}m}\int(\vec\nabla_\Phi \varrho)^{2}=\frac{h^{2}}{32\pi^{2}m}\int\frac{(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}}$</td>
+<td>Gradient energy; $\frac{hc}{8\pi^{2}\nu_m}\int(\vec\nabla_\Phi \varrho)^{2}=\frac{hc}{32\pi^{2}\nu_m}\int\frac{(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}}$</td>
 </tr>
 <tr>
 <td>$\sigma^{Q}_{ij}$</td>
