@@ -130,7 +130,7 @@ $$
 
 and the pair's first operator is a Schrödinger operator whose potential is the fluid. The inverse scattering transform solves the initial-value problem by evolving the scattering data linearly and reconstructing the potential, so the *method* is linear and the *equation* is not.
 
-The auxiliary problem is where a linear Schrödinger equation appears, and its unknown is not the fluid. The scattering problem is $-\omicron_{\mathrm{aux},xx}+u\omicron_{\mathrm{aux}}=\lambda\omicron_{\mathrm{aux}}$: the fluid $u$ is the potential, and $\omicron_{\mathrm{aux}}$ is an auxiliary wave function that has no fluid reading. So the linear equation of the pair is linear in the wrong variable, and a reader who takes it for the fluid's wave equivalent has taken the potential for the solution. The error is the same one the previous articles name in another place: reading a term of an equation for the unknown.
+The auxiliary problem is where a linear Schrödinger equation appears, and its unknown is not the fluid. The scattering problem is $-\omicron_{\mathrm{aux},xx}+u\omicron_{\mathrm{aux}}=\digamma_{\mathrm{spc}}\omicron_{\mathrm{aux}}$: the fluid $u$ is the potential, and $\omicron_{\mathrm{aux}}$ is an auxiliary wave function that has no fluid reading. So the linear equation of the pair is linear in the wrong variable, and a reader who takes it for the fluid's wave equivalent has taken the potential for the solution. The error is the same one the previous articles name in another place: reading a term of an equation for the unknown.
 
 ## What One Dimension Teaches
 
@@ -182,7 +182,7 @@ The two linear objects of the article are a diffusion equation and a scattering 
 | $u_0$ | Amplitude of the KdV soliton; speed $2u_0$ |
 | $L,\ P$ | Lax pair of the KdV equation |
 | $\omicron_{\mathrm{aux}}$ | Auxiliary wave function of the scattering problem |
-| $\lambda$ | Spectral parameter |
+| $\digamma_{\mathrm{spc}}$ | Spectral parameter |
 
 ## Further Reading
 

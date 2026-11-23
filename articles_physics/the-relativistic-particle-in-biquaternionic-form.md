@@ -23,10 +23,10 @@ The article is organized as follows. The next section fixes the worldline and th
 A relativistic particle is described by a curve in the material sector,
 
 $$
-\tilde R_\Phi(\lambda) : \lambda \longmapsto \tilde R_\Phi(\lambda) = i r'_{t}(\lambda)\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)(\lambda) \in \mathbb{B}_{\Phi} ,
+\tilde R_\Phi(\digamma_{\mathrm{prm}}) : \digamma_{\mathrm{prm}} \longmapsto \tilde R_\Phi(\digamma_{\mathrm{prm}}) = i r'_{t}(\digamma_{\mathrm{prm}})\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)(\digamma_{\mathrm{prm}}) \in \mathbb{B}_{\Phi} ,
 $$
 
-with $\lambda$ an arbitrary parameter. The physical content of the curve is not the arbitrary parametrization but the displacement one-form
+with $\digamma_{\mathrm{prm}}$ an arbitrary parameter. The physical content of the curve is not the arbitrary parametrization but the displacement one-form
 
 $$
 d\tilde R_\Phi = ic\,dr'_t\,e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
@@ -237,7 +237,7 @@ $$
 
 the geodesic of flat $\mathbb{B}_{\Phi}$. In the algebra the action is exactly the length functional of the biquaternion norm, and the four-momentum is exactly its Noether charge under translations; the companion article *Noether's Theorem in Biquaternionic Form* derives the charge from the translation invariance of this action.
 
-The action has the two properties that make it the starting point of the theory. It is a Lorentz scalar, because $\langle d\tilde R_\Phi\rangle_{\natural}$ is preserved by rotor conjugation and $d\tau$ is the invariant parameter; and it is reparametrization invariant, so it depends on the worldline and not on the choice of $\lambda$. A particle with charge, or in an external field, adds the minimal-coupling term to this action, which is the content of *The Relativistic Particle in an External Field, in Biquaternionic Form*.
+The action has the two properties that make it the starting point of the theory. It is a Lorentz scalar, because $\langle d\tilde R_\Phi\rangle_{\natural}$ is preserved by rotor conjugation and $d\tau$ is the invariant parameter; and it is reparametrization invariant, so it depends on the worldline and not on the choice of $\digamma_{\mathrm{prm}}$. A particle with charge, or in an external field, adds the minimal-coupling term to this action, which is the content of *The Relativistic Particle in an External Field, in Biquaternionic Form*.
 
 ## The Non-Relativistic Limit
 

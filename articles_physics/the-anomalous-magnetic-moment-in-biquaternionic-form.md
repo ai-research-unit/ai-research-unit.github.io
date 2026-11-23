@@ -135,7 +135,7 @@ $$a_{\mathrm{exp},e}=1.15965218073\times10^{-3}$$
 with a relative excess of $1.5156\times10^{-3}$, of the order of the two-loop correction.
 
 **The higher orders.** The perturbative series is conventionally written
-$$\boxed{\;a=\sum_{k\ge1}A_\imath\Big(\frac{\alpha}{\pi}\Big)^\lambda ,
+$$\boxed{\;a=\sum_{k\ge1}A_\imath\Big(\frac{\alpha}{\pi}\Big)^\digamma_{\mathrm{ord}} ,
 \qquad
 A_1=\frac12=0.5 ,
 \qquad

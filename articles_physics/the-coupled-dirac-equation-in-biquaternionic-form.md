@@ -141,7 +141,7 @@ so the right-action equation on $\tilde\Xi$ is the left-action equation on $\til
 **What is not covariant is the mixed insertion.** The left gradient with the connection inserted on the right gives, on a gauge-transformed field,
 
 $$
-\frac{2\pi i\,ϙ}{h}\,\lambda\bigl[\tilde\nabla_\Phi\Gamma,\ \tilde\Xi\bigr],
+\frac{2\pi i\,ϙ}{h}\,\digamma_{\mathrm{gau}}\bigl[\tilde\nabla_\Phi\Gamma,\ \tilde\Xi\bigr],
 $$
 
 which vanishes for every field only when $\tilde\nabla_\Phi\Gamma$ is central, that is, only for a constant gauge function. The two consistent constructions are the two sides on which the algebra can act, and the choice between them is a choice of matter representation. This article states the left-action form, records the mirror, and leaves the choice where the action makes it (§*Open Questions* and the variational companion).
@@ -193,19 +193,19 @@ with $\digamma_{\mathrm{gau}}$ central and of unit modulus.
 **The chain rules.** Because $\digamma_{\mathrm{gau}}$ is a central scalar function, each derivative acts on it coefficient by coefficient:
 
 $$
-\tilde\nabla_\Phi\lambda=\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\lambda,
+\tilde\nabla_\Phi\digamma_{\mathrm{gau}}=\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\digamma_{\mathrm{gau}},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\lambda=\frac{2\pi i\,ϙ}{h}\bigl((\tilde\nabla_\Phi)^{\natural}\Gamma\bigr)\lambda .
+(\tilde\nabla_\Phi)^{\natural}\digamma_{\mathrm{gau}}=\frac{2\pi i\,ϙ}{h}\bigl((\tilde\nabla_\Phi)^{\natural}\Gamma\bigr)\digamma_{\mathrm{gau}} .
 $$
 
 **The first member.**
 
 $$
 \begin{aligned}
-\tilde\nabla_{\mathrm{gco},\Phi,2}\bigl(\lambda\tilde\Xi_R\bigr)
-&=\tilde\nabla_\Phi\bigl(\lambda\tilde\Xi_R\bigr)+\frac{2\pi i\,ϙ}{h}\bigl(\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma\bigr)\bigl(\lambda\tilde\Xi_R\bigr)\\
-&=\lambda\,\tilde\nabla_\Phi\tilde\Xi_R+\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\lambda\tilde\Xi_R+\frac{2\pi i\,ϙ}{h}\lambda\,\tilde A_{\Phi}\tilde\Xi_R-\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\lambda\tilde\Xi_R\\
-&=\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R .
+\tilde\nabla_{\mathrm{gco},\Phi,2}\bigl(\digamma_{\mathrm{gau}}\tilde\Xi_R\bigr)
+&=\tilde\nabla_\Phi\bigl(\digamma_{\mathrm{gau}}\tilde\Xi_R\bigr)+\frac{2\pi i\,ϙ}{h}\bigl(\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma\bigr)\bigl(\digamma_{\mathrm{gau}}\tilde\Xi_R\bigr)\\
+&=\digamma_{\mathrm{gau}}\,\tilde\nabla_\Phi\tilde\Xi_R+\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\digamma_{\mathrm{gau}}\tilde\Xi_R+\frac{2\pi i\,ϙ}{h}\digamma_{\mathrm{gau}}\,\tilde A_{\Phi}\tilde\Xi_R-\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\digamma_{\mathrm{gau}}\tilde\Xi_R\\
+&=\digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R .
 \end{aligned}
 $$
 
@@ -214,15 +214,15 @@ The two $\tilde\nabla_\Phi\Gamma$ terms cancel and the central $\digamma_{\mathr
 **The second member** repeats the computation with $\natural$ throughout, using $\tilde A_{\Phi,2}^{\natural}=\tilde A_{\Phi}^{\natural}-(\tilde\nabla_\Phi)^{\natural}\Gamma$, and gives
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\bigl(\lambda\tilde\Xi_L\bigr)=\lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L .
+\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\bigl(\digamma_{\mathrm{gau}}\tilde\Xi_L\bigr)=\digamma_{\mathrm{gau}}\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L .
 $$
 
 **Both members are homogeneous with the same factor.**
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde\Xi_{R,2}=\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R,
+\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde\Xi_{R,2}=\digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde\Xi_{L,2}=\lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L .
+\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde\Xi_{L,2}=\digamma_{\mathrm{gau}}\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L .
 $$
 
 The common factor follows from $\digamma_{\mathrm{gau}}$ being a central *scalar*: $\natural$ negates the three spatial units and fixes the coefficients, so it leaves $\digamma_{\mathrm{gau}}$ alone. Consequently the coupled equation holds in every gauge when it holds in one, and the phase of the field is not observable on its own.
@@ -246,7 +246,7 @@ a covariant wave equation with a curvature term. The corresponding statement for
 Suppose the coupled massive pair holds in one gauge. The left-hand side of the transformed first member is $\digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R$, and the right-hand side is
 
 $$
-\nu_m\tilde\Xi_{L,2}=\nu_m\lambda\,\tilde\Xi_L,
+\nu_m\tilde\Xi_{L,2}=\nu_m\digamma_{\mathrm{gau}}\,\tilde\Xi_L,
 $$
 
 because a linear mass term carries the same factor. The two sides transform identically, with $\digamma_{\mathrm{gau}}$ and not $\bar\digamma_{\mathrm{gau}}$. The massive coupled equation is therefore form-invariant under the local phase, exactly as the massless one is.

@@ -127,11 +127,11 @@ $$
 = \digamma_{\mathrm{gau}}\,\tilde\nabla_\Phi\tilde{Ξ} + \left(\tilde\nabla_\Phi\digamma_{\mathrm{gau}}\right)\tilde{Ξ} + \Omega_2\digamma_{\mathrm{gau}}\tilde{Ξ},
 $$
 
-and comparing with $\lambda(\tilde\nabla_\Phi\tilde{Ξ} + \Omega\tilde{Ξ})$ leaves $\Omega_2\lambda = \lambda\Omega - \tilde\nabla_\Phi\lambda$, that is
+and comparing with $\digamma_{\mathrm{gau}}(\tilde\nabla_\Phi\tilde{Ξ} + \Omega\tilde{Ξ})$ leaves $\Omega_2\digamma_{\mathrm{gau}} = \digamma_{\mathrm{gau}}\Omega - \tilde\nabla_\Phi\digamma_{\mathrm{gau}}$, that is
 
 $$
-\boxed{\;\Omega_2 = \lambda\,\Omega\,\lambda^{-1} - \left(\tilde\nabla_\Phi\lambda\right)\lambda^{-1}
-= \Omega - \left(\tilde\nabla_\Phi\lambda\right)\lambda^{-1}\;}.
+\boxed{\;\Omega_2 = \digamma_{\mathrm{gau}}\,\Omega\,\digamma_{\mathrm{gau}}^{-1} - \left(\tilde\nabla_\Phi\digamma_{\mathrm{gau}}\right)\digamma_{\mathrm{gau}}^{-1}
+= \Omega - \left(\tilde\nabla_\Phi\digamma_{\mathrm{gau}}\right)\digamma_{\mathrm{gau}}^{-1}\;}.
 $$
 
 The second form needs the centrality of $\digamma_{\mathrm{gau}}$, which lets it pass through $\Omega$; without a central phase only the first form survives.

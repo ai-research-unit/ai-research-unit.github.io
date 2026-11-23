@@ -115,19 +115,19 @@ The carrier of states cannot host a spin-$0$ field for three reasons, one for ea
 
 ### No One-Dimensional Module
 
-Suppose a one-dimensional subspace is carried into itself by every left multiplication. Choose a nonzero $\tilde{Ξ}$ in it. Then $\tilde{Q}\tilde{Ξ}=\lambda(\tilde{Q})\tilde{Ξ}$ for every $\tilde{Q}$, with $\lambda(\tilde{Q})$ a complex number. The map $\lambda$ is multiplicative, $\lambda(\tilde{Q}_1\tilde{Q}_2)=\lambda(\tilde{Q}_1)\lambda(\tilde{Q}_2)$, and $\lambda(e_t)=1$. From $\vec e_\imath^2=-e_t$,
+Suppose a one-dimensional subspace is carried into itself by every left multiplication. Choose a nonzero $\tilde{Ξ}$ in it. Then $\tilde{Q}\tilde{Ξ}=\varsigma_{\mathrm{ctr}}(\tilde{Q})\tilde{Ξ}$ for every $\tilde{Q}$, with $\varsigma_{\mathrm{ctr}}(\tilde{Q})$ a complex number. The map $\varsigma_{\mathrm{ctr}}$ is multiplicative, $\varsigma_{\mathrm{ctr}}(\tilde{Q}_1\tilde{Q}_2)=\varsigma_{\mathrm{ctr}}(\tilde{Q}_1)\varsigma_{\mathrm{ctr}}(\tilde{Q}_2)$, and $\varsigma_{\mathrm{ctr}}(e_t)=1$. From $\vec e_\imath^2=-e_t$,
 
 $$
-\lambda(\vec e_\imath)^2=-1,
+\varsigma_{\mathrm{ctr}}(\vec e_\imath)^2=-1,
 $$
 
-so $\lambda(\vec e_\imath)=\pm i$ for each spatial direction. From $\vec e_x\vec e_y=\vec e_z$,
+so $\varsigma_{\mathrm{ctr}}(\vec e_\imath)=\pm i$ for each spatial direction. From $\vec e_x\vec e_y=\vec e_z$,
 
 $$
-\lambda(\vec e_x)\lambda(\vec e_y)=\lambda(\vec e_z).
+\varsigma_{\mathrm{ctr}}(\vec e_x)\varsigma_{\mathrm{ctr}}(\vec e_y)=\varsigma_{\mathrm{ctr}}(\vec e_z).
 $$
 
-The product of two numbers each equal to $\pm i$ is $\pm1$, while $\lambda(\vec e_z)$ is $\pm i$. The equation has no solution, and no one-dimensional module exists. The check was repeated over all eight sign choices, with no nonzero solution.
+The product of two numbers each equal to $\pm i$ is $\pm1$, while $\varsigma_{\mathrm{ctr}}(\vec e_z)$ is $\pm i$. The equation has no solution, and no one-dimensional module exists. The check was repeated over all eight sign choices, with no nonzero solution.
 
 The consequence is immediate. A scalar field carries the trivial action: the algebra does nothing to its value. If that value were a carrier of the left action, the carrier would be one-dimensional and invariant. No such subspace exists. The value of a scalar is therefore not a value of the state action. The carrier is not "the carrier with spin $0$" as against "the carrier with spin $\tfrac{1}{2}$": every carrier of the left action is at least two-dimensional and carries spin $\tfrac{1}{2}$. The spin-$0$ value has to be found outside the carrier.
 

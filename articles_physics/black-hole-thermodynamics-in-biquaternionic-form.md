@@ -345,7 +345,7 @@ $$
 M\!\left(\digamma_{\mathrm{cfm}}^2 S,\ \digamma_{\mathrm{cfm}}^2 J,\ \digamma_{\mathrm{cfm}} Ϙ\right)=\digamma_{\mathrm{cfm}}\,M(S,J,Ϙ).
 $$
 
-Differentiating with respect to $\lambda$ at $\lambda=1$ gives the Euler relation for these weights,
+Differentiating with respect to $\digamma_{\mathrm{scl}}$ at $\digamma_{\mathrm{scl}}=1$ gives the Euler relation for these weights,
 
 $$
 2S\,\frac{\partial M}{\partial S}+2J\,\frac{\partial M}{\partial J}+Ϙ\,\frac{\partial M}{\partial Ϙ}=M.

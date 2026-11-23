@@ -117,34 +117,34 @@ $$
 $G$ is the $f^+$ of the programme's fundamental static solution, the stereographic coordinate, written in the Cartesian form $f^+=(x_1+ix_2)/(r+x_3)$ there; and $\beta$ is an eikonal function with $\partial\beta\cdot\partial\beta=0$. The two gradients are
 
 $$
-dG=\lambda\,(\vec u_\theta+i\vec u_{\mathrm{azm}}),\qquad \lambda=\frac{e^{i\theta_{\mathrm{azm}}}}{2r\cos^2(\theta/2)},\qquad d\beta=\vec u_t+\vec u_r .
+dG=\digamma_{\mathrm{amp}}\,(\vec u_\theta+i\vec u_{\mathrm{azm}}),\qquad \digamma_{\mathrm{amp}}=\frac{e^{i\theta_{\mathrm{azm}}}}{2r\cos^2(\theta/2)},\qquad d\beta=\vec u_t+\vec u_r .
 $$
 
 $dG$ is null because $\vec u_\theta$ and $\vec u_{\mathrm{azm}}$ are unit spacelike and the two coefficients are $1$ and $i$; $d\beta$ is null because $\vec u_t$ and $\vec u_r$ are unit and of opposite sign in the interval; and the two are orthogonal because $dG$ has no $r'_t$ or $r$ component. The choice of the advanced rather than the retarded null coordinate is what makes the flux inward; the level sets of $r'_t+r$ are spheres contracting at the speed of light. All three conditions of Bateman's construction hold, so $C$ is closed, null and duality-pure by the preceding sections, with $\star C=+iC$ — the sign the split article calls anti-self-dual and the programme calls weakly (anti)self-dual. The components in the orthonormal spherical frame are
 
 $$
-C_{\vec u_t\vec u_r}=0,\qquad C_{\vec u_\theta\vec u_{\mathrm{azm}}}=0,\qquad C_{\vec u_t\vec u_\theta}=C_{\vec u_r\vec u_\theta}=-\lambda,\qquad C_{\vec u_t\vec u_{\mathrm{azm}}}=C_{\vec u_r\vec u_{\mathrm{azm}}}=-i\lambda,
+C_{\vec u_t\vec u_r}=0,\qquad C_{\vec u_\theta\vec u_{\mathrm{azm}}}=0,\qquad C_{\vec u_t\vec u_\theta}=C_{\vec u_r\vec u_\theta}=-\digamma_{\mathrm{amp}},\qquad C_{\vec u_t\vec u_{\mathrm{azm}}}=C_{\vec u_r\vec u_{\mathrm{azm}}}=-i\digamma_{\mathrm{amp}},
 $$
 
-which is the statement that $C=-\lambda\,(\vec u_t+\vec u_r)\wedge(\vec u_\theta+i\vec u_{\mathrm{azm}})$.
+which is the statement that $C=-\digamma_{\mathrm{amp}}\,(\vec u_t+\vec u_r)\wedge(\vec u_\theta+i\vec u_{\mathrm{azm}})$.
 
-**The field is transverse to the spheres.** The two components $C_{\vec u_t\vec u_r}$ and $C_{\vec u_\theta\vec u_{\mathrm{azm}}}$ vanish, so the electric and magnetic parts have no radial component, $E_r=B_r=0$, and the two vectors lie in the plane tangent to the sphere. In the complex form they are related by $\vec E=\lambda(\vec u_\theta+i\vec u_{\mathrm{azm}})$ and $\vec B=i\vec E$, so that $\vec E+i\vec B=0$: the field is the case of the table in which nullness and duality-purity coincide, and $\vec E\cdot\vec E=0$ holds as a consequence of the nullity of $dG$.
+**The field is transverse to the spheres.** The two components $C_{\vec u_t\vec u_r}$ and $C_{\vec u_\theta\vec u_{\mathrm{azm}}}$ vanish, so the electric and magnetic parts have no radial component, $E_r=B_r=0$, and the two vectors lie in the plane tangent to the sphere. In the complex form they are related by $\vec E=\digamma_{\mathrm{amp}}(\vec u_\theta+i\vec u_{\mathrm{azm}})$ and $\vec B=i\vec E$, so that $\vec E+i\vec B=0$: the field is the case of the table in which nullness and duality-purity coincide, and $\vec E\cdot\vec E=0$ holds as a consequence of the nullity of $dG$.
 
 **The real field it defines is a genuine null field**, with
 
 $$
-\vec E_1=\lambda_R\vec u_\theta-\lambda_I\vec u_{\mathrm{azm}},\qquad \vec H_1=-\lambda_I\vec u_\theta-\lambda_R\vec u_{\mathrm{azm}},
+\vec E_1=\digamma_{\mathrm{amp},R}\vec u_\theta-\digamma_{\mathrm{amp},I}\vec u_{\mathrm{azm}},\qquad \vec H_1=-\digamma_{\mathrm{amp},I}\vec u_\theta-\digamma_{\mathrm{amp},R}\vec u_{\mathrm{azm}},
 $$
 
-where $\lambda=\lambda_R+i\lambda_I$. Its invariants vanish, $|\vec E_1|=|\vec H_1|=|\lambda|$ and $\vec E_1\cdot\vec H_1=0$, and its principal null direction is the outward radial one: the real part of $C$ is $-(\vec u_t+\vec u_r)\wedge\vec E_1$, with $\vec E_1$ read as a covector, and is annihilated by $\vec u_t+\vec u_r$, while $\vec H_1=-\vec u_r\times\vec E_1$ exhibits the transverse triple $(\vec E_1,\vec H_1,\vec u_r)$ and so the same radial direction. The congruence is the radial one: null, geodesic, of expansion magnitude $2/r$ and with zero shear and twist.
+where $\digamma_{\mathrm{amp}}=\digamma_{\mathrm{amp},R}+i\digamma_{\mathrm{amp},I}$. Its invariants vanish, $|\vec E_1|=|\vec H_1|=|\digamma_{\mathrm{amp}}|$ and $\vec E_1\cdot\vec H_1=0$, and its principal null direction is the outward radial one: the real part of $C$ is $-(\vec u_t+\vec u_r)\wedge\vec E_1$, with $\vec E_1$ read as a covector, and is annihilated by $\vec u_t+\vec u_r$, while $\vec H_1=-\vec u_r\times\vec E_1$ exhibits the transverse triple $(\vec E_1,\vec H_1,\vec u_r)$ and so the same radial direction. The congruence is the radial one: null, geodesic, of expansion magnitude $2/r$ and with zero shear and twist.
 
-**The energy flows inward and does not accumulate.** With $|\lambda|^2=1/(4r^2\cos^4(\theta/2))$ the Poynting vector of the real field is
+**The energy flows inward and does not accumulate.** With $|\digamma_{\mathrm{amp}}|^2=1/(4r^2\cos^4(\theta/2))$ the Poynting vector of the real field is
 
 $$
 \vec S=\vec E_1\times\vec H_1=-\frac{1}{4r^2\cos^4(\theta/2)}\,\vec u_r,
 $$
 
-the energy density is $W=|\lambda|^2$, and $|\vec S|=cW$ pointwise — the radiative relation, satisfied by a field that does not depend on time. The sign is the one of $\beta=r'_t+r$; the choice $\beta=r'_t-r$ reverses both the sign of the flow and the direction of the principal null direction.
+the energy density is $W=|\digamma_{\mathrm{amp}}|^2$, and $|\vec S|=cW$ pointwise — the radiative relation, satisfied by a field that does not depend on time. The sign is the one of $\beta=r'_t+r$; the choice $\beta=r'_t-r$ reverses both the sign of the flow and the direction of the principal null direction.
 
 **The field is singular on a string, and its energy diverges.** $G$ is singular at $r=0$ and on the negative $z$-axis, which is the axis of the stereographic projection; on that half-axis $\cos^2(\theta/2)$ vanishes and all components of $C$ diverge. The energy density falls as $1/r^2$, so the energy inside a large sphere grows linearly with the radius, and near the axis it diverges faster than the transverse measure can absorb: with $\rho_{\mathrm{axs}}$ the distance from the negative half-axis, $\theta=\pi-\rho_{\mathrm{axs}}/r$ gives $\cos^2(\theta/2)\approx\rho_{\mathrm{axs}}^2/(4r^2)$, so the density behaves as $4r^2/\rho_{\mathrm{axs}}^4$, whose integral against the measure $\rho_{\mathrm{axs}}\,d\rho_{\mathrm{axs}}$ diverges at $\rho_{\mathrm{axs}}=0$. The static profile is therefore not a normalisable object, and the freedom of the profile repairs only half of that: replacing $\beta$ by an integral of a function of $\beta$ multiplies $C$ by an arbitrary function of $\beta$ and so confines the field to a chosen shell in $\beta$, which removes the growth at large $r$, but the angular factor at the string is untouched. The energy is finite only for a profile concentrated in $\beta$ and after a tube around the negative half-axis is excised; the string lies on the axis of the stereographic chart and is not produced by the null construction itself.
 
@@ -181,10 +181,10 @@ The worked example, $C=dG\wedge d\beta$ with $G$ the stereographic coordinate an
 | $\star$ | The dual, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, $\star^2=-1$ |
 | $G$ | The stereographic coordinate $(x+iy)/(z+r)=\tan(\theta/2)e^{i\theta_{\mathrm{azm}}}$ |
 | $\zeta$, $\vec n$ | The spinor of the congruence and its Bloch vector $n_\imath=\zeta^{\dagger}\sigma_\imath\zeta/(\zeta^{\dagger}\zeta)$, the principal null direction |
-| $\lambda$ | The coefficient $e^{i\theta_{\mathrm{azm}}}/(2r\cos^2(\theta/2))$ of $dG=\lambda(\vec u_\theta+i\vec u_{\mathrm{azm}})$ |
+| $\digamma_{\mathrm{amp}}$ | The coefficient $e^{i\theta_{\mathrm{azm}}}/(2r\cos^2(\theta/2))$ of $dG=\digamma_{\mathrm{amp}}(\vec u_\theta+i\vec u_{\mathrm{azm}})$ |
 | $r'_t$, $x$, $y$, $z$ | The material coordinates; $r$ their spatial radius; $\theta$, $\theta_{\mathrm{azm}}$ the polar angles |
 | $\vec u_t$, $\vec u_r$, $\vec u_\theta$, $\vec u_{\mathrm{azm}}$ | The orthonormal frame adapted to the spherical coordinates |
-| $W$, $\vec S$ | Energy density and Poynting vector, $W=\lvert\lambda\rvert^2$ and $\vec S=-\lvert\lambda\rvert^2\vec u_r$ in the example |
+| $W$, $\vec S$ | Energy density and Poynting vector, $W=\lvert\digamma_{\mathrm{amp}}\rvert^2$ and $\vec S=-\lvert\digamma_{\mathrm{amp}}\rvert^2\vec u_r$ in the example |
 
 ## Further Reading
 

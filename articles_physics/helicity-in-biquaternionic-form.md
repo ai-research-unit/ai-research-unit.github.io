@@ -41,7 +41,7 @@ $\digamma_{\mathrm{hlc}}$ is an observable and not a generator: its action on an
 **Two collisions of the letter.**
 
 - $\vec S$ is the spin vector of *Angular Momentum and Spin in Biquaternionic Form*. *The Photon in Biquaternionic Form* records that the same glyph is also the Poynting vector of its energy–momentum table. The two are distinguished by the carrier: the spin vector acts on a state, the Poynting vector is a density of the field.
-- The letter $\lambda$ carried two senses once, and this article keeps them apart. The operator is $\digamma_{\mathrm{hlc}}$, an element of the algebra carrying no index. The spinor is $\lambda$, one of the two factors of a null momentum, with a spinor index and a bar on its conjugate; the factorisation sections say which is in force.
+- Two senses shared one glyph once, and this article keeps them apart. The operator is $\digamma_{\mathrm{hlc}}$, an element of the algebra carrying no index. The spinor is $\varpi_{\mathrm{twz}}$, one of the two factors of a null momentum, with a spinor index and a bar on its conjugate; the factorisation sections say which is in force.
 
 **Two subscripts, one object.** The subscript names the element whose direction is taken, the third rule of the arrow in *Algebra and Element Conventions*, §*The Remarkable Subspaces of Biquaternions*: $\vec u_p$ for the momentum $\vec p$ and $\vec u_\Phi$ for the wave vector $\vec\nu_\Phi$. The two are the same element, since $\vec p=h\,\vec\nu_\Phi$; the subscript records which symbol the article in hand uses, the photon article writing $\vec u_\Phi$ and the Dirac articles $\vec u_p$.
 
@@ -169,25 +169,25 @@ of rank exactly one. The matrix in parentheses, $p_{\alpha\bar\beta}=\frac{E}{c}
 
 The passage from rank one to a product of two spinors is a lemma of linear algebra, and it is the reason the algebra needs no separate spinor-helicity postulate.
 
-**Lemma.** A nonzero $2\times2$ matrix $M$ has rank one if and only if there are nonzero columns $\lambda,\bar\lambda\in\mathbb{C}^2$ with $M=\lambda\bar\lambda^{T}$. The pair is determined up to the scaling $(\lambda,\bar\lambda)\mapsto(r'_t\lambda,{r'_{t}}^{-1}\bar\lambda)$, $r'_t\in\mathbb{C}^\times$.
+**Lemma.** A nonzero $2\times2$ matrix $M$ has rank one if and only if there are nonzero columns $\varpi_{\mathrm{twz}},\bar\varpi_{\mathrm{twz}}\in\mathbb{C}^2$ with $M=\varpi_{\mathrm{twz}}\bar\varpi_{\mathrm{twz}}^{T}$. The pair is determined up to the scaling $(\varpi_{\mathrm{twz}},\bar\varpi_{\mathrm{twz}})\mapsto(r'_t\varpi_{\mathrm{twz}},{r'_{t}}^{-1}\bar\varpi_{\mathrm{twz}})$, $r'_t\in\mathbb{C}^\times$.
 
-*Proof.* If $M=\lambda\bar\lambda^{T}$ with both factors nonzero, every column is a multiple of $\lambda$, so the column space is one-dimensional and the rank is one. Conversely, if the rank is one, take a nonzero column $\lambda$; every other column is a multiple of it, and every row is a multiple of the row $\bar\lambda^{T}$ read off any nonzero row; then $M=\lambda\bar\lambda^{T}$. The scaling is the elementary ambiguity, $(r'_t\lambda)({r'_{t}}^{-1}\bar\lambda)^{T}=\lambda\bar\lambda^{T}$.
+*Proof.* If $M=\varpi_{\mathrm{twz}}\bar\varpi_{\mathrm{twz}}^{T}$ with both factors nonzero, every column is a multiple of $\varpi_{\mathrm{twz}}$, so the column space is one-dimensional and the rank is one. Conversely, if the rank is one, take a nonzero column $\varpi_{\mathrm{twz}}$; every other column is a multiple of it, and every row is a multiple of the row $\bar\varpi_{\mathrm{twz}}^{T}$ read off any nonzero row; then $M=\varpi_{\mathrm{twz}}\bar\varpi_{\mathrm{twz}}^{T}$. The scaling is the elementary ambiguity, $(r'_t\varpi_{\mathrm{twz}})({r'_{t}}^{-1}\bar\varpi_{\mathrm{twz}})^{T}=\varpi_{\mathrm{twz}}\bar\varpi_{\mathrm{twz}}^{T}$.
 
 Applying it to the null momentum,
 
 $$
-\mathsf{M}_2(\tilde P_{\Phi})=\lambda\,\bar\lambda^{T},
-\qquad \lambda\in S,\ \bar\lambda\in\bar S,
+\mathsf{M}_2(\tilde P_{\Phi})=\varpi_{\mathrm{twz}}\,\bar\varpi_{\mathrm{twz}}^{T},
+\qquad \varpi_{\mathrm{twz}}\in S,\ \bar\varpi_{\mathrm{twz}}\in\bar S,
 $$
 
-with $\lambda$ in the spinor module and $\bar\lambda$ in its conjugate. This is the spinor-helicity factorisation $p_{\alpha\bar\beta}=\lambda_\alpha\bar\lambda_{\bar\beta}$, and it is not an analogy: it is the rank-one condition of the zero-divisor cone written in coordinates. The two factors are the two rulings of the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ (*The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*, §*The Factorisation*).
+with $\varpi_{\mathrm{twz}}$ in the spinor module and $\bar\varpi_{\mathrm{twz}}$ in its conjugate. This is the spinor-helicity factorisation $p_{\alpha\bar\beta}=\varpi_{\mathrm{twz},\alpha}\bar\varpi_{\mathrm{twz},\bar\beta}$, and it is not an analogy: it is the rank-one condition of the zero-divisor cone written in coordinates. The two factors are the two rulings of the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ (*The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*, §*The Factorisation*).
 
-**Here the letter $\lambda$ is a spinor.** In this section and the next two, $\lambda$ and $\bar\lambda$ are the two factors, elements of $S$ and of $\bar S$, one of them barred. Everywhere else in the article $\lambda$ is the helicity operator, an element of $\mathbb{B}_{\Psi}$ with no index.
+**Here $\varpi_{\mathrm{twz}}$ is a spinor.** In this section and the next two, $\varpi_{\mathrm{twz}}$ and $\bar\varpi_{\mathrm{twz}}$ are the two factors, elements of $S$ and of $\bar S$, one of them barred. Everywhere else in the article the helicity operator is $\digamma_{\mathrm{hlc}}$, an element of $\mathbb{B}_{\Psi}$ with no index.
 
 **Reality.** For a real momentum $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$ is anti-Hermitian, so $\mathsf{M}_2(\tilde P_{\Phi})$ is anti-Hermitian and of the form $i\,uu^{\dagger}$; the two factors are then conjugate up to a phase,
 
 $$
-\bar\lambda\sim\lambda^{*},
+\bar\varpi_{\mathrm{twz}}\sim\varpi_{\mathrm{twz}}^{*},
 $$
 
 which is the reality condition of the real slice. For a complexified momentum the components are complex and the two factors become independent, which is an extension off $\mathbb{B}_{\Phi}$ and is flagged as such.
@@ -197,9 +197,9 @@ which is the reality condition of the real slice. For a complexified momentum th
 The spinor module carries the invariant symplectic form $\varepsilon(\tilde{Ξ},\xi_{\mathrm{alt}})=\tilde{Ξ}^T\epsilon\,\xi_{\mathrm{alt}}$ (*The Spinor Module in Biquaternionic Form and Its Lorentz Action*), and the two brackets of the formalism are that form applied to the factors of two different momenta:
 
 $$
-\langle ij\rangle=\lambda_i^{T}\epsilon\,\lambda_j=-\langle ji\rangle,
+\langle ij\rangle=\varpi_{\mathrm{twz},i}^{T}\epsilon\,\varpi_{\mathrm{twz},j}=-\langle ji\rangle,
 \qquad
-[ij]=\bar\lambda_i^{T}\epsilon\,\bar\lambda_j=-[ji].
+[ij]=\bar\varpi_{\mathrm{twz},i}^{T}\epsilon\,\bar\varpi_{\mathrm{twz},j}=-[ji].
 $$
 
 The antisymmetry is the antisymmetry of $\epsilon$ and nothing else; the brackets are not a new structure. In the corpus convention $\varepsilon_{12}=+1$, each bracket is the $2\times2$ determinant of the two spinors, and the identity $\langle ij\rangle[ij]=\det\bigl(\mathsf{M}_2(\tilde P_{\Phi,i})+\mathsf{M}_2(\tilde P_{\Phi,j})\bigr)$ expresses the pairing of two null momenta as a product of brackets.
@@ -210,11 +210,11 @@ The calculus built on these objects — the momentum-conservation constraints, t
 
 The scaling freedom of the factorisation is the kinematic little group, and the helicity is its weight. This is where the two levels of the article meet.
 
-**The scaling leaves the momentum invariant.** If $\mathsf{M}_2(\tilde P_{\Phi})=\lambda\bar\lambda^{T}$ and one sends $\lambda\mapsto r'_t\lambda$, $\bar\lambda\mapsto{r'_{t}}^{-1}\bar\lambda$ with $r'_t\in\mathbb{C}^\times$, the product is unchanged, so $\tilde P_{\Phi}$ is unchanged. The scaling is exactly the ambiguity of the lemma.
+**The scaling leaves the momentum invariant.** If $\mathsf{M}_2(\tilde P_{\Phi})=\varpi_{\mathrm{twz}}\bar\varpi_{\mathrm{twz}}^{T}$ and one sends $\varpi_{\mathrm{twz}}\mapsto r'_t\varpi_{\mathrm{twz}}$, $\bar\varpi_{\mathrm{twz}}\mapsto{r'_{t}}^{-1}\bar\varpi_{\mathrm{twz}}$ with $r'_t\in\mathbb{C}^\times$, the product is unchanged, so $\tilde P_{\Phi}$ is unchanged. The scaling is exactly the ambiguity of the lemma.
 
 **From $\mathbb{C}^\times$ to $U(1)$.** For a real momentum the reality condition fixes the modulus of $r'_t$ and leaves its phase, so the freedom is a $U(1)$. That $U(1)$ is realized inside the algebra as the rotation about $\vec p$: the rotor $\tilde u_{\mathrm r}=\cos(\theta_{\mathrm{rat}}/2)+\sin(\theta_{\mathrm{rat}}/2)\vec u_p$ commutes with $\tilde P_{\Phi}$, since $iE/c$ is central and $\vec u_p$ commutes with $\vec p$, and it acts on the spinor module by the phase $e^{\pm i\theta_{\mathrm{rat}}/2}$, with $\theta_{\mathrm{rat}}$ the rotation angle about $\vec p$, real. The little-group scaling is therefore not an abstract relabelling; it is the rotation about the momentum axis acting on the two factors.
 
-**The weight is the helicity.** An object of helicity $h$ scales as ${r'_{t}}^{-2h}$, so a monomial of $\lambda$-degree $d_\imath$ and $\bar\lambda$-degree $d_{\bark}$ in a particle of definite helicity has
+**The weight is the helicity.** An object of helicity $h$ scales as ${r'_{t}}^{-2h}$, so a monomial of $\varpi_{\mathrm{twz}}$-degree $d_\imath$ and $\bar\varpi_{\mathrm{twz}}$-degree $d_{\bark}$ in a particle of definite helicity has
 
 $$
 h=\tfrac12\bigl(d_{\bark}-d_\imath\bigr).
@@ -231,7 +231,7 @@ It is tempting to say that the massive case follows from the massless one by con
 For $m\neq0$ the matrix $\mathsf{M}_2(\tilde P_{\Phi})$ is invertible and of rank two, so there is no one-term factorisation; the massive bispinor needs two,
 
 $$
-p_{\alpha\bar\beta}=\lambda_\alpha\bar\lambda_{\bar\beta}+\mu_\alpha\bar\mu_{\bar\beta},
+p_{\alpha\bar\beta}=\varpi_{\mathrm{twz},\alpha}\bar\varpi_{\mathrm{twz},\bar\beta}+\mu_\alpha\bar\mu_{\bar\beta},
 $$
 
 one term per physical polarization, and the little group is $SU(2)$ rather than $U(1)$. The algebraic defect measures the discontinuity:
@@ -285,7 +285,7 @@ In the algebra the mass is the off-diagonal pair that exchanges the two chiral p
 
 Helicity is the projection of the spin on the direction of motion, $\digamma_{\mathrm{hlc}}=\vec u_p\cdot\vec S$, a Hermitian element of $\mathbb{B}_{\Psi}$ acting by left multiplication on every carrier of the algebra. On a carrier of spin $s$ its spectrum is the weight string $\frac{h}{2\pi}\,h$, $h\in\{-s,\dots,s\}$, and the largest value is the spin: the carrier fixes the list, the axis orders it, the state selects a member. The orbital part drops out identically, $\vec L\cdot\vec p=0$, which is why the projection is a name and not a component of $\vec J$. On the fundamental carrier the two values are $\pm\frac{h}{4\pi}$, carried by the pure state $\tilde\Pi_{\mathrm{id},+}(\vec u_p)$ and its companion nilpotent; on the adjoint the spectrum is $\{+1,0,-1\}$ in units of $\frac{h}{2\pi}$, with the propagation direction at zero; on the symmetric square it is $\{-2,-1,0,1,2\}$. The reversal law is exact and the rotation law is a conjugation by the rotor; a boost is what breaks the label, and only for a particle slower than light.
 
-At $m=0$ a second description opens. The null momentum is a zero divisor, hence a rank-one matrix, hence a product of two spinors, and the ambiguity of that product is the little-group scaling, a $U(1)$ for real momenta, realized as the rotation about $\vec p$. Helicity is the weight of that scaling, $h=\tfrac12(d_{\bark}-d_\imath)$, and the factors $\lambda$ and $\bar\lambda$ carry $\mp\tfrac12$: the two levels of the article agree. The limit $m\to0$ is singular in the factorisation — rank, number of terms and little group all change — while the operator passes through it untouched, so the weight is not derived from the operator but identified with it where both exist. Chirality is a different object: a right multiplier, a slot, invariant at every mass, coinciding with helicity only in the massless case.
+At $m=0$ a second description opens. The null momentum is a zero divisor, hence a rank-one matrix, hence a product of two spinors, and the ambiguity of that product is the little-group scaling, a $U(1)$ for real momenta, realized as the rotation about $\vec p$. Helicity is the weight of that scaling, $h=\tfrac12(d_{\bark}-d_\imath)$, and the factors $\varpi_{\mathrm{twz}}$ and $\bar\varpi_{\mathrm{twz}}$ carry $\mp\tfrac12$: the two levels of the article agree. The limit $m\to0$ is singular in the factorisation — rank, number of terms and little group all change — while the operator passes through it untouched, so the weight is not derived from the operator but identified with it where both exist. Chirality is a different object: a right multiplier, a slot, invariant at every mass, coinciding with helicity only in the massless case.
 
 ## Summary of Notation
 
@@ -293,15 +293,15 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 |---|---|
 | $\vec u_p=\vec p/\lvert\vec p\rvert$ | The unit along the momentum, declared; a pure real quaternion, $\vec u_p^2=-e_t$ |
 | $\vec u_\Phi=2\pi\vec\nu_\Phi/\lvert2\pi\vec\nu_\Phi\rvert$ | The unit along the wave vector; the same element as $\vec u_p$, since $\vec p=h\,\vec\nu_\Phi$ |
-| $\lambda=\vec u_p\cdot\vec S$ | The helicity operator, $\in\mathbb{B}_{\Psi}$, acting by left multiplication; $\frac{h}{2\pi}$ times the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_p}$ on the adjoint |
+| $\digamma_{\mathrm{hlc}}=\vec u_p\cdot\vec S$ | The helicity operator, $\in\mathbb{B}_{\Psi}$, acting by left multiplication; $\frac{h}{2\pi}$ times the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_p}$ on the adjoint |
 | $\vec S$ | The rotation generator read as one vector, $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$ on the fundamental carrier |
 | $\tilde\Pi_{\mathrm{id},\pm}(\vec u_p)=\tfrac12(e_t\pm i\vec u_p)$ | The idempotents at the momentum axis; $\tilde\Pi_{\mathrm{id},+}$ is the vector of the value $+\frac{h}{4\pi}$ in $S_+(\vec u_p)$ |
 | $S_\pm(\vec u_p)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u_p)$ | The minimal left ideals at the axis; an elementary spinor is an element of one of them |
-| $\tilde{Ζ}=i\vec u_p$ | The root of $+1$ on the fundamental carrier; $\lambda=\frac{h}{4\pi}\tilde{Ζ}$ |
+| $\tilde{Ζ}=i\vec u_p$ | The root of $+1$ on the fundamental carrier; $\digamma_{\mathrm{hlc}}=\frac{h}{4\pi}\tilde{Ζ}$ |
 | $\tilde P_{\Phi}=\frac{iE}{c}e_t+\vec p$ | The four-momentum, null when $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ |
-| $\lambda,\ \bar\lambda$ | In the factorisation sections only: the two spinors with $\mathsf{M}_2(\tilde P_{\Phi})=\lambda\bar\lambda^{T}$; not the operator |
+| $\varpi_{\mathrm{twz}},\ \bar\varpi_{\mathrm{twz}}$ | In the factorisation sections only: the two spinors with $\mathsf{M}_2(\tilde P_{\Phi})=\varpi_{\mathrm{twz}}\bar\varpi_{\mathrm{twz}}^{T}$; not the operator |
 | $\langle ij\rangle,\ [ij]$ | The brackets, the symplectic pairing on $S$ and on $\bar S$ |
-| $r'_t$ | The little-group scaling, $\lambda\mapsto r'_t\lambda$, $\bar\lambda\mapsto {r'_{t}}^{-1}\bar\lambda$; $\lvert r'_t\rvert=1$ for a real momentum |
+| $r'_t$ | The little-group scaling, $\varpi_{\mathrm{twz}}\mapsto r'_t\varpi_{\mathrm{twz}}$, $\bar\varpi_{\mathrm{twz}}\mapsto {r'_{t}}^{-1}\bar\varpi_{\mathrm{twz}}$; $\lvert r'_t\rvert=1$ for a real momentum |
 | $h$ | The helicity, the weight; the operator's eigenvalue is $\frac{h}{2\pi}\,h$ |
 | $\xi=-iR_{\mathrm{axf},\vec e_z}$ | The chirality basis operator, a pure right multiplier; not the helicity |
 

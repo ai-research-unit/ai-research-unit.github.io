@@ -16,7 +16,7 @@ $$
 D_{\imath}\Phi=\Bigl(\partial_{\imath}+i\,g\,\tau_{a}W_{a,\imath}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath}\Bigr)\Phi ,
 $$
 
-with $\tau_{a}=\sigma_{a}/2$ the generators in the doublet, so that $T_3$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T_3+Y$. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\lambda>0$. The measure is $\mathrm{d}^{4}x$; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi=\sum_{\imath}\varepsilon_{\imath}(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi$ carries the sign the mostly-minus literature carries; and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
+with $\tau_{a}=\sigma_{a}/2$ the generators in the doublet, so that $T_3$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T_3+Y$. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\digamma_{\mathrm{qtc}}(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\digamma_{\mathrm{qtc}}>0$. The measure is $\mathrm{d}^{4}x$; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi=\sum_{\imath}\varepsilon_{\imath}(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi$ carries the sign the mostly-minus literature carries; and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
 
 Two conventions, both settled by the corpus. The hypercharge here is $Y$, not the reference tables' $Y_W=2Y$: the corpus writes $Q=T_3+Y$ with $Y_{\mathrm{hch}}=+\tfrac12$, as [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) fixes it and as [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) uses it. Only the product $g_{\mathrm Y}Y$ enters any display, so a reader who arrives with $Y_W$ must halve every hypercharge and change no physical statement. The sign of the coupling in $D_{\imath}$ is likewise the corpus's, $+ig$; the opposite choice, $-ig$, is the same theory with $g\mapsto-g$, and every mass below is quadratic in $g$ and unchanged.
 
@@ -34,7 +34,7 @@ with $\mathcal{L}_{\mathrm{matter}}$ the fermion kinetic terms with their covari
 
 Why each term is what it is. The two gauge terms are the Yang–Mills and Maxwell terms: quadratic in the field strengths, gauge invariant, and fixed in normalisation by the same requirement that fixes the Maxwell term — the charge that appears in the covariant derivative must be the charge that appears in the current. The scalar term is the Klein–Gordon kinetic term with the derivative covariantised, which is the same minimal-coupling step the coupled scalar article performs, applied twice because the group has two factors. The potential is the only term with a negative mass squared, and it is the term that decides the phase.
 
-The two phases, and why the same action has them. The potential's minimum is at $\Phi^{\dagger}\Phi=\mu^{2}/2\lambda\equiv v^{2}/2$, a circle of minima and not a point. If $\mu^{2}<0$ the minimum is at $\Phi=0$ and the action's ground state is symmetric; if $\mu^{2}>0$ it is not. The action does not change between the phases; the vacuum does. That is the classical content of "spontaneous breaking", and the corpus can state it exactly.
+The two phases, and why the same action has them. The potential's minimum is at $\Phi^{\dagger}\Phi=\mu^{2}/2\digamma_{\mathrm{qtc}}\equiv v^{2}/2$, a circle of minima and not a point. If $\mu^{2}<0$ the minimum is at $\Phi=0$ and the action's ground state is symmetric; if $\mu^{2}>0$ it is not. The action does not change between the phases; the vacuum does. That is the classical content of "spontaneous breaking", and the corpus can state it exactly.
 
 The broken phase, written in the unitary chart. Choose the vacuum $\Phi=\frac{1}{\sqrt{2}}\binom{0}{v+h}$ with $h$ the physical scalar. Then the scalar's gradient term becomes
 
@@ -123,7 +123,7 @@ The electroweak Lagrangian is the $SU(2)\times U(1)$ gauge action with one compl
 $$
 S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14B_{\imath\jmath}B_{\imath\jmath}+(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi-V(\Phi)\Bigr\},
 \qquad
-V=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}.
+V=-\mu^{2}\Phi^{\dagger}\Phi+\digamma_{\mathrm{qtc}}(\Phi^{\dagger}\Phi)^{2}.
 $$
 
 ## Summary of Notation
@@ -135,8 +135,8 @@ $$
 | $W_{a,\imath\jmath},\ B_{\imath\jmath}$ | Field strengths, the first non-Abelian |
 | $\Phi$ | Complex doublet, hypercharge $Y_{\mathrm{hch}}=+\tfrac12$ |
 | $D_{\imath}\Phi$ | Covariant derivative with both connections |
-| $V(\Phi)$ | $-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ |
-| $v=\sqrt{\mu^{2}/\lambda}$ | Vacuum expectation value |
+| $V(\Phi)$ | $-\mu^{2}\Phi^{\dagger}\Phi+\digamma_{\mathrm{qtc}}(\Phi^{\dagger}\Phi)^{2}$ |
+| $v=\sqrt{\mu^{2}/\digamma_{\mathrm{qtc}}}$ | Vacuum expectation value |
 | $W^{\pm},\ Z,\ A$ | Mass eigenstates of the neutral and charged sectors |
 | $m_W=gv/2,\ m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}v/2$ | Vector masses |
 | $Q=T_3+Y$ | Electric charge |

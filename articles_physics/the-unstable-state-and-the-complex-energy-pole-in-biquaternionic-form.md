@@ -19,7 +19,7 @@ and the centre is $\mathbb{B}_{C}=\mathbb{C}e_t$. The state module is $S=\mathbb
 
 The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\frac{h}{2\pi}\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
-The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde H_\Psi)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
+The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\digamma_{\mathrm{spc}})=(L-\digamma_{\mathrm{spc}})^{-1}$; this article writes the Green's function $G(z)=(z-\tilde H_\Psi)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
 ## The Unstable State and the Survival Amplitude
 

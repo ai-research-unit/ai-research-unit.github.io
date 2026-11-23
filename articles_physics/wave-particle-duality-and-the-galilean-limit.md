@@ -47,9 +47,9 @@ $\sigma_{\mathcal{P}}$ is quadratic in $\nu_t^{\prime}$ and $\sigma_{\mathrm{s}}
 The mass is a wave number, $\nu_m=\frac{m\,c}{h}$, and it is a coordinate of the same kind as the other two. Scaling the triple gives
 
 $$
-\sigma_{\mathcal{P}}(\lambda \nu_t^{\prime},\lambda\vec\nu_\Phi,\lambda \nu_m)=\lambda^{2}\sigma_{\mathcal{P}}(\nu_t^{\prime},\vec\nu_\Phi,\nu_m),
+\sigma_{\mathcal{P}}(\digamma_{\mathrm{scl}} \nu_t^{\prime},\digamma_{\mathrm{scl}}\vec\nu_\Phi,\digamma_{\mathrm{scl}} \nu_m)=\digamma_{\mathrm{scl}}^{2}\sigma_{\mathcal{P}}(\nu_t^{\prime},\vec\nu_\Phi,\nu_m),
 \qquad
-\sigma_{\mathrm{s}}(\lambda \nu_t^{\prime},\lambda\vec\nu_\Phi,\lambda \nu_m)=\lambda\,\sigma_{\mathrm{s}}(\nu_t^{\prime},\vec\nu_\Phi,\nu_m).
+\sigma_{\mathrm{s}}(\digamma_{\mathrm{scl}} \nu_t^{\prime},\digamma_{\mathrm{scl}}\vec\nu_\Phi,\digamma_{\mathrm{scl}} \nu_m)=\digamma_{\mathrm{scl}}\,\sigma_{\mathrm{s}}(\nu_t^{\prime},\vec\nu_\Phi,\nu_m).
 $$
 
 The first is degree two and the second degree one, and both statements are exact. This is what lets the corpus treat the three numbers as coordinates of one element, and nothing here contradicts it.
@@ -57,13 +57,13 @@ The first is degree two and the second degree one, and both statements are exact
 For the relativistic symbol,
 
 $$
-\sigma_{\mathcal{P}}(\lambda \nu_t^{\prime},\lambda\vec\nu_\Phi)=\lambda^{2}\bigl(\nu_t^{\prime\,2}-\nu_{\Phi}^{2}\bigr)-\nu_m^{2}
-=\lambda^{2}\sigma_{\mathcal{P}}+\nu_m^{2}(\lambda^{2}-1),
+\sigma_{\mathcal{P}}(\digamma_{\mathrm{scl}} \nu_t^{\prime},\digamma_{\mathrm{scl}}\vec\nu_\Phi)=\digamma_{\mathrm{scl}}^{2}\bigl(\nu_t^{\prime\,2}-\nu_{\Phi}^{2}\bigr)-\nu_m^{2}
+=\digamma_{\mathrm{scl}}^{2}\sigma_{\mathcal{P}}+\nu_m^{2}(\digamma_{\mathrm{scl}}^{2}-1),
 $$
 
 so the failure is a constant, and its size is the mass squared. That is the precise sense in which the mass shell is a level set and not a zero set: the mass shell is $\{\sigma_{\mathcal{P}}=0\}$, which is $\{\nu_t^{\prime\,2}-\nu_{\Phi}^{2}=\nu_m^{2}\}$, a level set of the homogeneous quadratic form $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}$, and not the zero set of any homogeneous polynomial in the two kinematic variables. The quadratic form is homogeneous; the symbol is a quadratic form minus a constant; the level set of the first is the zero set of the second.
 
-Scaling the kinematic pair gives $\lambda \nu_{\mathrm{s}}-\lambda^{2}\nu_{\Phi}^{2}/(2\nu_m)$, which is degree one in one piece and degree two in the other. So $\sigma_{\mathrm{s}}$ is the sum of two homogeneous pieces of different degree, with no constant. That is why it is affine and not merely inhomogeneous, and it is why its zero set is a paraboloid: $\{\sigma_{\mathrm{s}}=0\}$ cannot be written as $\{$quadratic form$=0\}$ or as $\{$quadratic form$=$constant$\}$, because either would be homogeneous in the kinematic variables, and $\sigma_{\mathrm{s}}$ is not.
+Scaling the kinematic pair gives $\digamma_{\mathrm{scl}} \nu_{\mathrm{s}}-\digamma_{\mathrm{scl}}^{2}\nu_{\Phi}^{2}/(2\nu_m)$, which is degree one in one piece and degree two in the other. So $\sigma_{\mathrm{s}}$ is the sum of two homogeneous pieces of different degree, with no constant. That is why it is affine and not merely inhomogeneous, and it is why its zero set is a paraboloid: $\{\sigma_{\mathrm{s}}=0\}$ cannot be written as $\{$quadratic form$=0\}$ or as $\{$quadratic form$=$constant$\}$, because either would be homogeneous in the kinematic variables, and $\sigma_{\mathrm{s}}$ is not.
 
 A constant offset keeps the surface a level set of a quadratic form, and a quadratic form has an inertia, an axis, and two sheets. A lower-degree term does not, and its surface has one sheet and no axis of symmetry. **The single integer that separates the two is the degree in the energy: two gives a constant offset and a hyperboloid, one gives a linear term and a paraboloid.**
 
@@ -137,13 +137,13 @@ $\sigma_{\mathrm{s}}$ is not even in the energy variable: $\sigma_{\mathrm{s}}(-
 
 ### Two degrees, and no third
 
-Apply $\nu_{\mathrm{s}}\to\lambda \nu_{\mathrm{s}}$ and $\vec\nu_\Phi\to\lambda\vec\nu_\Phi$ with $\lambda>0$. Then
+Apply $\nu_{\mathrm{s}}\to\digamma_{\mathrm{scl}} \nu_{\mathrm{s}}$ and $\vec\nu_\Phi\to\digamma_{\mathrm{scl}}\vec\nu_\Phi$ with $\digamma_{\mathrm{scl}}>0$. Then
 
 $$
-\sigma_{\mathrm{s}}(\lambda \nu_{\mathrm{s}},\lambda\vec\nu_\Phi)=\lambda \nu_{\mathrm{s}}-\lambda^{2}\frac{\nu_{\Phi}^{2}}{2\nu_m},
+\sigma_{\mathrm{s}}(\digamma_{\mathrm{scl}} \nu_{\mathrm{s}},\digamma_{\mathrm{scl}}\vec\nu_\Phi)=\digamma_{\mathrm{scl}} \nu_{\mathrm{s}}-\digamma_{\mathrm{scl}}^{2}\frac{\nu_{\Phi}^{2}}{2\nu_m},
 $$
 
-so the first term scales as $\lambda$ and the second as $\lambda^{2}$. A homogeneous symbol of degree $n$ would scale as $\lambda^{n}$, and no $n$ does both. The symbol is the sum of one homogeneous piece of degree one and one of degree two, and that is exactly what affine means.
+so the first term scales as $\digamma_{\mathrm{scl}}$ and the second as $\digamma_{\mathrm{scl}}^{2}$. A homogeneous symbol of degree $n$ would scale as $\digamma_{\mathrm{scl}}^{n}$, and no $n$ does both. The symbol is the sum of one homogeneous piece of degree one and one of degree two, and that is exactly what affine means.
 
 A linear symbol vanishes when all its arguments vanish. Here
 
@@ -157,7 +157,7 @@ Replace $\nu_{\mathrm{s}}$ by $\nu_{\mathrm{s}}+\delta$ for any constant $\delta
 
 ### No element has it for a norm
 
-Since $\tilde\Upsilon\tilde\Upsilon^{\natural}$ is a quadratic form, no element of $\mathbb{B}$ has $\sigma_{\mathrm{s}}$ for its norm. This is the companion article's observation, and the degree makes the reason exact: the norm's scaling is $\lambda^{2}$ in every coordinate, while $\sigma_{\mathrm{s}}$ has a term of degree one in the energy. One disagreement of degree, and the question is closed. A reader who tries to find a $\tilde\Upsilon$ with $\tilde\Upsilon\tilde\Upsilon^{\natural}=\sigma_{\mathrm{s}}$ is looking for an element whose norm is not homogeneous, and no such element exists in any dimension.
+Since $\tilde\Upsilon\tilde\Upsilon^{\natural}$ is a quadratic form, no element of $\mathbb{B}$ has $\sigma_{\mathrm{s}}$ for its norm. This is the companion article's observation, and the degree makes the reason exact: the norm's scaling is $\digamma_{\mathrm{scl}}^{2}$ in every coordinate, while $\sigma_{\mathrm{s}}$ has a term of degree one in the energy. One disagreement of degree, and the question is closed. A reader who tries to find a $\tilde\Upsilon$ with $\tilde\Upsilon\tilde\Upsilon^{\natural}=\sigma_{\mathrm{s}}$ is looking for an element whose norm is not homogeneous, and no such element exists in any dimension.
 
 A norm is homogeneous of degree two, so a symbol that is a norm has a cone for a zero set and hyperboloids for its level sets, and it is the symbol of a second-order operator with equal orders in time and space. The relativistic case is the only shape in which the wave arm of the duality is a level set of a norm, and the reason is not that the relativistic physics is special: it is that a norm is special, and only a degree-two symbol can be one.
 
@@ -346,7 +346,7 @@ The condition on the source is homogeneous in either variable, and the symbol is
 | $\nu_{\Phi}$ | the modulus of the momentum wave number, $\frac{\lvert\vec p\rvert}{h}$ |
 | $\vec\beta_b$ | the boost velocity in units of $c$; its square enters the boost law with the coefficient $\frac{1}{2}\nu_m$ |
 | $a$, $c$, $d$ | the coefficients of $\nu_{\mathrm{s}}$, $\nu_{\Phi}^{2}$ and the constant in a trial symbol; invariance forces $a=-2c\nu_m$ and leaves $d$ free |
-| $\lambda$ | the scaling parameter that tests homogeneity |
+| $\digamma_{\mathrm{scl}}$ | the scaling parameter that tests homogeneity |
 | $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ | the state module, $\cong\mathbb{C}^{2}$; the domain on which the rank statements are made |
 | $\nu_{\mathrm{s},\pm}$ | the two roots, $-\nu_m\pm\sqrt{\nu_m^{2}+\nu_{\Phi}^{2}}$ |
 | $\rho$, $\vec J$ | the charge density and the current density of $\tilde J_\Phi=ic\rho\,e_t+\vec J$ |

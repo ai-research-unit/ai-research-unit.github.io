@@ -88,7 +88,7 @@ $$
 
 The decomposition was checked, and it is exact. On one hundred random frequency points and four test directions each — the two circular ones, the longitudinal one, and a linear one — the two sides agree to $2.9\times10^{-16}$ relative to the largest coefficient of the symbol.
 
-The first term is a real shift and the second is the helicity. $-\nu_t^{\prime}$ is a real central scalar. The element $i\vec u_\Phi$ is Hermitian and belongs to $\mathbb{B}_{\Psi}$, the informational sector, and the photon article identifies the vector part of its left multiplication with the helicity operator, $\lambda=\mathrm{Vect}\circ(\text{left multiplication by } i\vec u_\Phi)$. The symbol of the gradient is therefore a central shift plus the momentum wave number times the helicity generator. Neither factor is a new object; the shift and the generator are both published, and their sum is the symbol.
+The first term is a real shift and the second is the helicity. $-\nu_t^{\prime}$ is a real central scalar. The element $i\vec u_\Phi$ is Hermitian and belongs to $\mathbb{B}_{\Psi}$, the informational sector, and the photon article identifies the vector part of its left multiplication with the helicity operator, $\digamma_{\mathrm{hlc}}=\mathrm{Vect}\circ(\text{left multiplication by } i\vec u_\Phi)$. The symbol of the gradient is therefore a central shift plus the momentum wave number times the helicity generator. Neither factor is a new object; the shift and the generator are both published, and their sum is the symbol.
 
 The statement in one line. The symbol does to an amplitude what a mass-shell condition does to a spectrum: it adds a constant and scales a quantum number. The constant is the energy wave number, the quantum number is the helicity, and the scale is the momentum wave number.
 
@@ -231,7 +231,7 @@ the mirror of the display for $i\tilde\Upsilon_{\Phi}$: the conjugate annihilate
 
 The reading. The two conjugate symbols have complementary one-dimensional kernels on the cone, and their direct sum is the transverse plane. An equation written with $\tilde\nabla_\Phi$ and one written with $(\tilde\nabla_\Phi)^{\natural}$ do not select the same circular direction, and the pair of them exhausts the transverse amplitudes.
 
-This is a statement about the algebra, not a convention of handedness. Which of the two the corpus's helicity articles label $\lambda=+1$ is a matter of the operator's sign, and this article does not need it. What is claimed is only that the two conjugate symbols annihilate opposite circular directions, and that the pair is complete.
+This is a statement about the algebra, not a convention of handedness. Which of the two the corpus's helicity articles label $\digamma_{\mathrm{hlc}}=+1$ is a matter of the operator's sign, and this article does not need it. What is claimed is only that the two conjugate symbols annihilate opposite circular directions, and that the pair is complete.
 
 ### The eigenvectors are null
 
@@ -289,7 +289,7 @@ One consequence for how the corpus writes its counts. A count of polarisations i
 - The count is of complex amplitude directions. The vector part has complex dimension three, and off the cone the three directions are the three polarisation states of a massive vector field by the corpus's reading. The correspondence is not a count of real parameters: a real field strength has six real components in three complex directions. **On the cone the correspondence is not direction for direction**, as §*The massless field counts two* states, and the article claims the count of dimensions and not the identification.
 - The rank is computed on one carrier only. On the whole algebra the same symbol has rank four off the cone and rank two on it, with a two-dimensional kernel on the cone. Both computations are correct and they answer different questions: the whole-algebra one is a rank of left multiplication in the algebra read as a matrix algebra, the vector-part one is the rank of the symbol on the space a field strength occupies.
 - Constant coefficients. The symbol exists only for a constant-coefficient operator. A varying medium has a convolution for an image and no rank at a frequency point, so the count of degrees of freedom in an inhomogeneous medium is not this count.
-- The handedness labels are the photon article's. This article uses the corpus's $\varepsilon_{\mathrm{fop},\pm}$ and its $\mp i$ eigenvalue relation, and it does not assign $\lambda=+1$ or $-1$ to either, because the assignment needs the helicity operator's sign convention, which the article does not use.
+- The handedness labels are the photon article's. This article uses the corpus's $\varepsilon_{\mathrm{fop},\pm}$ and its $\mp i$ eigenvalue relation, and it does not assign $\digamma_{\mathrm{hlc}}=+1$ or $-1$ to either, because the assignment needs the helicity operator's sign convention, which the article does not use.
 - The graviton is quoted, not recomputed. The count of two for the graviton is the transverse-traceless rank of the corpus's graviton article, and the mechanism there is a projector on a six-dimensional carrier. Nothing in this article's rank computation applies to it.
 - No statement about a state. The polarisations counted here are amplitude directions of a field strength. Whether a direction is occupied, and with what weight, is a statement about a state, and states are not in this article.
 - The rank at a point says nothing about propagation. A rank is an algebraic number at one frequency point. It does not say how a wave packet moves, and it does not distinguish a stable mode from an evanescent one.
@@ -328,7 +328,7 @@ What is not derived. Gauge invariance, the value of a mass, the mechanism of the
 | $\vec u_\Phi$ | the unit propagation direction, $\vec\nu_{\Phi}/\nu_{\Phi}$ |
 | $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$ | a right-handed orthonormal pair transverse to $\vec u_\Phi$ |
 | $\varepsilon_{\mathrm{fop},\pm}$ | the circular directions $(\varepsilon_{\mathrm{fop},1}\pm i\varepsilon_{\mathrm{fop},2})/\sqrt 2$ |
-| $\lambda$ | the helicity operator, the vector part of left multiplication by $i\vec u_\Phi$ |
+| $\digamma_{\mathrm{hlc}}$ | the helicity operator, the vector part of left multiplication by $i\vec u_\Phi$ |
 | $L_{i\tilde\Upsilon_{\Phi}}$ | left multiplication by $i\tilde\Upsilon_{\Phi}$, read as a map $\mathbb{B}_{V}\to\mathbb{B}$ |
 | $r$ | the rank of that map: three off the cone, two on it |
 | $\ker$, $\operatorname{coker}$ | its kernel and cokernel, of dimensions $3-r$ and $4-r$ |

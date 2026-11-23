@@ -10,7 +10,7 @@ Four results organise the answer, and each corrects a guess that comes naturally
 
 The first is that the failure set is a **hypersurface**. The material sector has four real dimensions and its cone is one real equation on them, so the degenerate set has dimension three and codimension one. On the full algebra the same cone is two real equations on eight, of dimension six and codimension two. A codimension-two failure leaves room for one chart with a small singular set; a codimension-one failure forces a piecewise chart with a genuine boundary, and that is exactly the shape of the material sector's word.
 
-The second is that **only one sector appears**. Every non-zero lightlike potential satisfies $\tilde A_\Phi^2=\lambda\tilde A_\Phi$ with $\lambda=2ia'_t$, so it is in $\Sigma_{01}$ with a purely imaginary weight. The nilpotent sector $\Sigma_{00}$ meets the material sector at the apex and nowhere else.
+The second is that **only one sector appears**. Every non-zero lightlike potential satisfies $\tilde A_\Phi^2=\eta\tilde A_\Phi$ with $\eta=2ia'_t$, so it is in $\Sigma_{01}$ with a purely imaginary weight. The nilpotent sector $\Sigma_{00}$ meets the material sector at the apex and nowhere else.
 
 The third is that **the field strength sits in the other sector**. The field strength is a pure vector, so it has zero trace, and a pure vector's square is a scalar; the cone of its carrier is therefore entirely $\Sigma_{00}$, and $\Sigma_{01}$ does not meet that carrier at all. The two objects of the Proca field carry one sector each. The trace decides, and the trace is the one number the two carriers cannot share.
 
@@ -73,12 +73,12 @@ $$
 On the light cone $(a'_t)^2=\vec A^2$, so the scalar part is $-2(a'_t)^2$ and the square is
 
 $$
-\tilde A_\Phi^2=-2(a'_t)^2+2i\,a'_t\,\vec A=2i\,a'_t\bigl(i\,a'_t\,e_t+\vec A\bigr)=\lambda\,\tilde A_\Phi,
+\tilde A_\Phi^2=-2(a'_t)^2+2i\,a'_t\,\vec A=2i\,a'_t\bigl(i\,a'_t\,e_t+\vec A\bigr)=\eta\,\tilde A_\Phi,
 \qquad
-\lambda=2i\,a'_t .
+\eta=2i\,a'_t .
 $$
 
-The weight is $\lambda=2Q_t$ with $Q_t=i\,a'_t$, which is the general formula of the Dirac article, and it is purely imaginary. It is non-zero: on the light cone $a'_t=0$ forces $\vec A^2=0$ and hence $\vec A=0$. So every non-zero lightlike potential is in $\Sigma_{01}$, with a weight that is the scalar potential up to the factor $2i$.
+The weight is $\eta=2Q_t$ with $Q_t=i\,a'_t$, which is the general formula of the Dirac article, and it is purely imaginary. It is non-zero: on the light cone $a'_t=0$ forces $\vec A^2=0$ and hence $\vec A=0$. So every non-zero lightlike potential is in $\Sigma_{01}$, with a weight that is the scalar potential up to the factor $2i$.
 
 **There are no nilpotents.** The scalar part of the square is
 
@@ -94,7 +94,7 @@ $$
 
 The restriction is worth stating plainly: the Proca potential never sits in the nilpotent sector, at any point of any solution. The nilpotent sector is not a rare case here; it is an absent one.
 
-**The idempotent.** The sector's idempotent is $\tilde\Pi_{\mathrm{id}}=\tilde A_\Phi/\lambda$. On the light cone put $\hat u=\vec A/a'_t$, which is a unit vector because $\lvert\vec A\rvert=\lvert a'_t\rvert$ and which carries the sign of $a'_t$. Then $\tilde A_\Phi=a'_t\,(ie_t+\hat u)$ and $\lambda=2i\,a'_t$, so
+**The idempotent.** The sector's idempotent is $\tilde\Pi_{\mathrm{id}}=\tilde A_\Phi/\eta$. On the light cone put $\hat u=\vec A/a'_t$, which is a unit vector because $\lvert\vec A\rvert=\lvert a'_t\rvert$ and which carries the sign of $a'_t$. Then $\tilde A_\Phi=a'_t\,(ie_t+\hat u)$ and $\eta=2i\,a'_t$, so
 
 $$
 \tilde\Pi_{\mathrm{id}}=\frac{ie_t+\hat u}{2i}=\tfrac12\bigl(e_t-i\hat u\bigr),
@@ -112,9 +112,9 @@ which is Hermitian, idempotent and null. The sector therefore keeps a null direc
 
 *Proposition.* $\Sigma_{01}\cap\mathbb{B}_V=\{0\}$.
 
-*Proof.* Let $\tilde F$ be a pure vector and suppose $\tilde F^2=\lambda\tilde F$ with $\lambda\neq0$. A pure vector squares to a scalar, because the cross terms $\vec e_{\imath}\vec e_{\jmath}+\vec e_{\jmath}\vec e_{\imath}$ vanish for ${\imath}\neq\jmath$; and $\lambda\tilde F$ is a pure vector. A scalar equal to a pure vector vanishes, so $\lambda\tilde F=0$, and since $\lambda\neq0$ the field vanishes.
+*Proof.* Let $\tilde F$ be a pure vector and suppose $\tilde F^2=\eta\tilde F$ with $\eta\neq0$. A pure vector squares to a scalar, because the cross terms $\vec e_{\imath}\vec e_{\jmath}+\vec e_{\jmath}\vec e_{\imath}$ vanish for ${\imath}\neq\jmath$; and $\eta\tilde F$ is a pure vector. A scalar equal to a pure vector vanishes, so $\eta\tilde F=0$, and since $\eta\neq0$ the field vanishes.
 
-**The trace decides.** The two results above are one result read twice. The sector is fixed by the trace: $\Sigma_{01}$ needs $\lambda=2Q_t\neq0$ and $\Sigma_{00}$ needs a vanishing trace. The material sector's trace is $2i\,a'_t$, which is non-zero for every non-zero lightlike potential; the vector part's trace is zero identically, because a pure vector has no scalar component. So each carrier can hold exactly one of the two sectors, and which one is decided before any field is chosen.
+**The trace decides.** The two results above are one result read twice. The sector is fixed by the trace: $\Sigma_{01}$ needs $\eta=2Q_t\neq0$ and $\Sigma_{00}$ needs a vanishing trace. The material sector's trace is $2i\,a'_t$, which is non-zero for every non-zero lightlike potential; the vector part's trace is zero identically, because a pure vector has no scalar component. So each carrier can hold exactly one of the two sectors, and which one is decided before any field is chosen.
 
 The table collects the comparison.
 
@@ -270,7 +270,7 @@ The degenerate solutions of the biquaternionic Proca equation are the solutions 
 
 The cone of the material sector is one real equation on four real parameters, of dimension three and codimension one, because the carrier is real and its norm is real. That codimension is why the polar word is piecewise: a hypersurface cuts the carrier into the timelike and spacelike halves, and the two branches of the word are those halves.
 
-Every non-zero lightlike potential satisfies $\tilde A_\Phi^2=\lambda\tilde A_\Phi$ with $\lambda=2i\,a'_t$, so it is in $\Sigma_{01}$ with a purely imaginary weight and the idempotent $\tfrac12(e_t-i\hat u)$. The scalar part of the square is $-((a'_t)^2+\vec A^2)$, so the nilpotent sector meets the material sector only at the apex: the Proca potential is never a nilpotent.
+Every non-zero lightlike potential satisfies $\tilde A_\Phi^2=\eta\tilde A_\Phi$ with $\eta=2i\,a'_t$, so it is in $\Sigma_{01}$ with a purely imaginary weight and the idempotent $\tfrac12(e_t-i\hat u)$. The scalar part of the square is $-((a'_t)^2+\vec A^2)$, so the nilpotent sector meets the material sector only at the apex: the Proca potential is never a nilpotent.
 
 The field strength's carrier is the complex vector part, of six real dimensions and codimension two, and its cone is entirely $\Sigma_{00}$: a pure vector squares to a scalar, so $\Sigma_{01}$ does not meet that carrier. The trace decides both assignments — $2i\,a'_t$ for the potential, zero for the field strength — and the two objects of the Proca field therefore carry one sector each, where the Dirac field carries both in one object.
 
@@ -290,9 +290,9 @@ Degenerate values of the potential therefore arise from superpositions, which cr
 | $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; real on $\mathbb{B}_\Phi$ |
 | $\langle\tilde Q\rangle_*=\sum_{\imath}\lvert Q_{\imath}\rvert^2$ | Definite norm; the size, never zero off the apex |
 | $\mathcal N$ | The cone $\langle\tilde Q\rangle_\natural=0$, the zero divisors |
-| $\Sigma_{01}$, $\Sigma_{00}$ | The sectors $Q^2=\lambda Q$ with $\lambda\neq0$, and $Q^2=0$ |
-| $\lambda=2Q_t$ | The non-zero eigenvalue of a $\Sigma_{01}$ element |
-| $\tilde\Pi_{\mathrm{id}}=\tilde A_\Phi/\lambda$ | The idempotent of a lightlike potential, $\tfrac12(e_t-i\hat u)$ |
+| $\Sigma_{01}$, $\Sigma_{00}$ | The sectors $Q^2=\eta Q$ with $\eta\neq0$, and $Q^2=0$ |
+| $\eta=2Q_t$ | The non-zero eigenvalue of a $\Sigma_{01}$ element |
+| $\tilde\Pi_{\mathrm{id}}=\tilde A_\Phi/\eta$ | The idempotent of a lightlike potential, $\tfrac12(e_t-i\hat u)$ |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | Square of the vector part; $N=Q_t^2+B^2$ |
 | $\tilde P_\Phi=i(\omega/c)e_t+2\pi\vec\nu_\Phi$ | Four-wavevector biquaternion |
 | $\theta_{\mathrm{pwp}}=\omega r'_t/c-2\pi\vec\nu_\Phi\cdot\vec r$ | Plane-wave angle |

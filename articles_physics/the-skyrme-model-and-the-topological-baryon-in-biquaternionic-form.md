@@ -24,7 +24,7 @@ is conserved identically, and its charge is the degree of the map $\tilde U:\mat
 $$
 B = -\frac{2}{\pi}\int_0^\infty \sin^2\!F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}\left[F - \tfrac12\sin 2F\right]_{F(\infty)}^{F(0)},
 $$
-so $B = 1$ for the profile $F(0) = \pi$, $F(\infty) = 0$, and $B = k$ for $F(0) = k\pi$: the winding is additive, and the values $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton — Derrick's scaling gives $E(\lambda) = E_2/\lambda$, which is minimized by collapse — and the Skyrme term supplies the compensating $\lambda E_4$, whose minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$; recomputed.
+so $B = 1$ for the profile $F(0) = \pi$, $F(\infty) = 0$, and $B = k$ for $F(0) = k\pi$: the winding is additive, and the values $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton — Derrick's scaling gives $E(\digamma_{\mathrm{skr}}) = E_2/\digamma_{\mathrm{skr}}$, which is minimized by collapse — and the Skyrme term supplies the compensating $\digamma_{\mathrm{skr}} E_4$, whose minimum sits at $\digamma_{\mathrm{skr},*} = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$; recomputed.
 - **Interpretation.** Identifying the unit real quaternion with the skyrmion field, and the algebra-valued flat current with the topological density, is the interpretive step. The baryon number as a degree of a map, and the soliton's quantisation into nucleons, are standard and imported.
 - **Gap, left visible.** The framework supplies the group manifold, the flat current and the biquaternion norm; it does not supply the fermionic baryon, the Wess–Zumino–Witten term, or the anomaly that fixes the quantisation. Baryon number is standard topology, and the identification of the soliton with the physical nucleon is the large-$N_c$ statement, imported.
 
@@ -79,39 +79,39 @@ A static soliton in more than two spatial dimensions needs a term of higher orde
 **Derrick's scaling.** Let $\tilde U(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ be a static configuration of finite energy, and consider the one-parameter family obtained by spatial dilation,
 
 $$
-\tilde U_\imath(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde U(\lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)) .
+\tilde U_\imath(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde U(\digamma_{\mathrm{skr}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)) .
 $$
 
 The two-derivative energy scales as
 
 $$
 E_2[\tilde U_\imath] = \int d^3r\left|\partial/\partial R_i\,\tilde U_\imath\right|^2
-= \lambda^{-1}\int d^3y\left|\partial/\partial R_i\,\tilde U\right|^2 = \lambda^{-1}E_2 ,
+= \digamma_{\mathrm{skr}}^{-1}\int d^3y\left|\partial/\partial R_i\,\tilde U\right|^2 = \digamma_{\mathrm{skr}}^{-1}E_2 ,
 $$
 
 and the four-derivative energy as
 
 $$
-E_4[\tilde U_\imath] = \lambda\,E_4 ,
+E_4[\tilde U_\imath] = \digamma_{\mathrm{skr}}\,E_4 ,
 $$
 
-because each derivative contributes a factor $\lambda$ and the measure a factor $\lambda^{-3}$. The total static energy is therefore
+because each derivative contributes a factor $\digamma_{\mathrm{skr}}$ and the measure a factor $\digamma_{\mathrm{skr}}^{-3}$. The total static energy is therefore
 
 $$
-E(\lambda) = \frac{E_2}{\lambda} + \lambda\,E_4 ,
+E(\digamma_{\mathrm{skr}}) = \frac{E_2}{\digamma_{\mathrm{skr}}} + \digamma_{\mathrm{skr}}\,E_4 ,
 $$
 
 and its stationary point,
 
 $$
-\frac{dE}{d\lambda}(\lambda) = -\frac{E_2}{\lambda^2} + E_4 = 0
+\frac{dE}{d\digamma_{\mathrm{skr}}}(\digamma_{\mathrm{skr}}) = -\frac{E_2}{\digamma_{\mathrm{skr}}^2} + E_4 = 0
 \qquad\Longrightarrow\qquad
-\lambda_* = \sqrt{\frac{E_2}{E_4}},
+\digamma_{\mathrm{skr},*} = \sqrt{\frac{E_2}{E_4}},
 \qquad
-E(\lambda_*) = 2\sqrt{E_2E_4} ,
+E(\digamma_{\mathrm{skr},*}) = 2\sqrt{E_2E_4} ,
 $$
 
-is a minimum. With $E_4 = 0$ the function $E(\lambda) = E_2/\lambda$ has no minimum: it decreases without bound as $\lambda\to\infty$, so the configuration shrinks, and a purely two-derivative static soliton is unstable to collapse. The four-derivative term supplies the increasing branch and bounds the energy from below. This is Derrick's theorem (Derrick 1964) applied to the Skyrme model, and it is standard.
+is a minimum. With $E_4 = 0$ the function $E(\digamma_{\mathrm{skr}}) = E_2/\digamma_{\mathrm{skr}}$ has no minimum: it decreases without bound as $\digamma_{\mathrm{skr}}\to\infty$, so the configuration shrinks, and a purely two-derivative static soliton is unstable to collapse. The four-derivative term supplies the increasing branch and bounds the energy from below. This is Derrick's theorem (Derrick 1964) applied to the Skyrme model, and it is standard.
 
 **The energy functional.** In the static gauge the two terms give the Skyrme energy
 
@@ -239,7 +239,7 @@ B_{\imath} = \frac{1}{24\pi^2}\sum_{\jmath,\rho,\sigma}\varepsilon_{\imath\jmath
 \sum_{\imath}\varepsilon_{\imath}\,\partial/\partial R_{\imath} B_{\imath} = 0 \text{ identically.}
 $$
 
-For the hedgehog $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$ the density is $B_0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\lambda) = E_2/\lambda$ with no minimum; the Skyrme term adds $\lambda E_4$ and the minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.
+For the hedgehog $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$ the density is $B_0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\digamma_{\mathrm{skr}}) = E_2/\digamma_{\mathrm{skr}}$ with no minimum; the Skyrme term adds $\digamma_{\mathrm{skr}} E_4$ and the minimum sits at $\digamma_{\mathrm{skr},*} = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.
 
 The framework supplies the target manifold, the flat current, the commutator structure and the biquaternion-norm organisation of the derivative expansion; it supplies neither the fermionic baryon, whose statistics come from the Wess–Zumino–Witten term, nor the anomaly that fixes the level, nor the large-$N_c$ justification of the identification. The topological baryon is thus a framework-compatible construction on the framework's own group manifold, with its dynamics and its quantisation imported.
 
@@ -264,7 +264,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$, $\vec u_r = \sum_a x_a e_a/r$ | Hedgehog ansatz |
 | $B_0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ | Hedgehog winding density |
 | $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}[F-\frac12\sin2F]_{F(\infty)}^{F(0)}$ | Hedgehog winding number |
-| $E(\lambda) = E_2/\lambda + \lambda E_4$, $\lambda_* = \sqrt{E_2/E_4}$, $E = 2\sqrt{E_2E_4}$ | Derrick scaling and its minimum |
+| $E(\digamma_{\mathrm{skr}}) = E_2/\digamma_{\mathrm{skr}} + \digamma_{\mathrm{skr}} E_4$, $\digamma_{\mathrm{skr},*} = \sqrt{E_2/E_4}$, $E = 2\sqrt{E_2E_4}$ | Derrick scaling and its minimum |
 | $F(0) = \pi$, $F(\infty) = 0$ | Boundary conditions of the unit-charge skyrmion |
 | Wess–Zumino–Witten term | Topological term fixing the soliton's statistics (imported) |
 | $\delta_{\imath\jmath}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |

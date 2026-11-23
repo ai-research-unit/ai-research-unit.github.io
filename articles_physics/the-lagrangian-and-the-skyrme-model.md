@@ -104,19 +104,19 @@ Why the boundary condition is part of the variation. The field must approach a c
 
 ## The Constraints the Action Imposes: Derrick's Argument and the Second Term
 
-The scaling argument, re-derived here because it is the reason for the action's shape. Scale a static configuration by $\lambda$: $\tilde U_\imath(\vec r)=\tilde U(\vec r/\lambda)$. Then the two-derivative energy scales as
+The scaling argument, re-derived here because it is the reason for the action's shape. Scale a static configuration by $\digamma_{\mathrm{skr}}$: $\tilde U_\imath(\vec r)=\tilde U(\vec r/\digamma_{\mathrm{skr}})$. Then the two-derivative energy scales as
 
 $$
-E_2(\lambda)=\frac{1}{\lambda}E_2(1),
+E_2(\digamma_{\mathrm{skr}})=\frac{1}{\digamma_{\mathrm{skr}}}E_2(1),
 $$
 
-because one gradient in three dimensions gives $1/\lambda$, and the four-derivative energy scales as
+because one gradient in three dimensions gives $1/\digamma_{\mathrm{skr}}$, and the four-derivative energy scales as
 
 $$
-E_4(\lambda)=\lambda\,E_4(1),
+E_4(\digamma_{\mathrm{skr}})=\digamma_{\mathrm{skr}}\,E_4(1),
 $$
 
-because four gradients in three dimensions give $\lambda$. A stationary configuration must satisfy $dE/d\lambda=0$ at $\lambda=1$, hence
+because four gradients in three dimensions give $\digamma_{\mathrm{skr}}$. A stationary configuration must satisfy $dE/d\digamma_{\mathrm{skr}}=0$ at $\digamma_{\mathrm{skr}}=1$, hence
 
 $$
 -E_2(1)+E_4(1)=0 .
@@ -124,7 +124,7 @@ $$
 
 **What the identity says.** With only the two-derivative term, $E_2(1)=0$, which forces $E_2=0$ and hence a constant field: no soliton. With both terms the identity is a virial relation, not an obstruction, and a minimiser exists with $E_4=E_2$. The two-derivative term alone is not merely inconvenient; it is provably solitonless in three dimensions.
 
-Why the Skyrme term specifically and not any four-derivative term. A term with four time derivatives would also scale as $\lambda$, but it would give a Hamiltonian unbounded below and ghosts in the propagator. The condition "at most quadratic in time derivatives" selects the commutator term among the four-derivative invariants, and that condition is what a Hamiltonian theory requires. This is the sharpest statement of why the model has the shape it has.
+Why the Skyrme term specifically and not any four-derivative term. A term with four time derivatives would also scale as $\digamma_{\mathrm{skr}}$, but it would give a Hamiltonian unbounded below and ghosts in the propagator. The condition "at most quadratic in time derivatives" selects the commutator term among the four-derivative invariants, and that condition is what a Hamiltonian theory requires. This is the sharpest statement of why the model has the shape it has.
 
 The finite-energy constraint. $\tilde U\to e_t$ at infinity is what makes both energies finite and what fixes the topological sector. Without it the integrals diverge and the scaling argument does not apply.
 
@@ -199,7 +199,7 @@ The three findings. One term is solitonless by the Derrick identity, and the sec
 | $N$ | winding number, $\pi_3(\mathbb{S}^3)=\mathbb{Z}$ |
 | $B_{\imath}$ | topological (baryon) current, conserved identically |
 | $E_2,E_4$ | two- and four-derivative energies |
-| $\lambda$ | scale factor of a configuration |
+| $\digamma_{\mathrm{skr}}$ | scale factor of a configuration |
 
 ## Further Reading
 

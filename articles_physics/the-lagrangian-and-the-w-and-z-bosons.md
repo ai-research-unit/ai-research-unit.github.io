@@ -47,7 +47,7 @@ The group and the couplings. $SU(2)_L$ with coupling $g$ and generators $\tau_{a
 
 The curvatures. $W_{a,\imath\jmath}=\partial_{\imath} W_{a,\jmath}-\partial_{\jmath} W_{a,\imath}+g\sum_{b,c}\varepsilon_{abc}W_{b,\imath} W_{c,\jmath}$ and $B_{\imath\jmath}=\partial_{\imath} B_{\jmath}-\partial_{\jmath} B_{\imath}$, with $\partial_{\imath}=\partial/\partial R_{\imath}$.
 
-The vacuum. $\langle\omicron_{\mathrm{hgs}}\rangle=(0,\;v/\sqrt2)^{T}$ with $v=246.22$ GeV; the potential is $V=\lambda(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-v^2/2)^2$, so that $\partial V/\partial\omicron_{\mathrm{hgs}}^{\dagger}=0$ at the minimum and the mass of the radial mode is $\sqrt{2\lambda}\,v$.
+The vacuum. $\langle\omicron_{\mathrm{hgs}}\rangle=(0,\;v/\sqrt2)^{T}$ with $v=246.22$ GeV; the potential is $V=\digamma_{\mathrm{qtc}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-v^2/2)^2$, so that $\partial V/\partial\omicron_{\mathrm{hgs}}^{\dagger}=0$ at the minimum and the mass of the radial mode is $\sqrt{2\digamma_{\mathrm{qtc}}}\,v$.
 
 The sign convention. The curvature terms enter with $-\tfrac14$, the scalar kinetic term with a plus sign, and the potential with a minus sign, so that the Hamiltonian is positive and the potential's minimum is the vacuum. Every sign below follows from that choice.
 
@@ -64,7 +64,7 @@ with no mass term. A mass term $\tfrac12M^2W_{\imath} W_{\imath}$ would break th
 The scalar sector. One doublet with a covariant derivative and a potential,
 
 $$
-\mathcal{L}_{\mathrm{scalar}}=\sum_{\imath}\bigl(D_{\imath}\omicron_{\mathrm{hgs}}\bigr)^{\dagger}\bigl(D_{\imath}\omicron_{\mathrm{hgs}}\bigr)-\lambda\Bigl(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\frac{v^2}{2}\Bigr)^{2},
+\mathcal{L}_{\mathrm{scalar}}=\sum_{\imath}\bigl(D_{\imath}\omicron_{\mathrm{hgs}}\bigr)^{\dagger}\bigl(D_{\imath}\omicron_{\mathrm{hgs}}\bigr)-\digamma_{\mathrm{qtc}}\Bigl(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\frac{v^2}{2}\Bigr)^{2},
 \qquad
 D_{\imath}=\partial_{\imath}+ig\sum_a\tau_{a} W_{a,\imath}+i g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath} .
 $$
@@ -111,7 +111,7 @@ Why the scalar needs the dagger and the gauge fields do not. The scalar is compl
 
 Three coefficients: two couplings and one vacuum value. $g$ and $g_{\mathrm Y}$ are dimensionless; $v$ has dimension of mass. The masses are products $g\,v$, so their dimensions are right by construction, and the ratio $M_Z/M_W$ is a pure number fixed by the two couplings.
 
-The potential's coefficients are not independent of them. $\lambda$ sets the radial mass and $v$ sets the minimum; the combination $\sqrt{2\lambda}\,v$ is the Higgs mass, and it is the one number of the sector that the action does not relate to the gauge couplings. That independence is why the Higgs mass is a measurement and the $W$ and $Z$ masses are predictions.
+The potential's coefficients are not independent of them. $\digamma_{\mathrm{qtc}}$ sets the radial mass and $v$ sets the minimum; the combination $\sqrt{2\digamma_{\mathrm{qtc}}}\,v$ is the Higgs mass, and it is the one number of the sector that the action does not relate to the gauge couplings. That independence is why the Higgs mass is a measurement and the $W$ and $Z$ masses are predictions.
 
 The selection rule is local $SU(2)_L\times\mathrm{U}(1)_Y$ invariance, and it forbids exactly two things. A gauge mass term is forbidden, which is why the masses come from the scalar; a bare fermion mass is forbidden, which is why the Yukawa couplings exist. Every term in the action is the most general one of dimension four invariant under the group, and the count of those terms is the count of parameters the sector has.
 

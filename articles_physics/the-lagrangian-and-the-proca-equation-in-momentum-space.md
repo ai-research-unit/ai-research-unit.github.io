@@ -156,12 +156,12 @@ The three spatial coefficients move because they are the propagating ones. Their
 
 ## The Structural Consequence: The Longitudinal Coefficient Is the Mass Alone
 
-Put $A\parallel \nu_{\imath}$, so that $A=\lambda 2\pi\nu_{\imath}$ and $[kA]=\lambda k^{2}$. Then
+Put $A\parallel \nu_{\imath}$, so that $A=\digamma_{\mathrm{amp}} 2\pi\nu_{\imath}$ and $[kA]=\digamma_{\mathrm{amp}} k^{2}$. Then
 
 $$
-\mathcal{Q}\bigl(\lambda k\bigr)
-=\tfrac12\Bigl(\lambda^{2}k^{4}-\bigl(k^{2}-4\pi^{2}\nu_m^{2}\bigr)\lambda^{2}k^{2}\Bigr)
-=\tfrac12\lambda^{2}\,4\pi^{2}\nu_m^{2}k^{2}
+\mathcal{Q}\bigl(\digamma_{\mathrm{amp}} k\bigr)
+=\tfrac12\Bigl(\digamma_{\mathrm{amp}}^{2}k^{4}-\bigl(k^{2}-4\pi^{2}\nu_m^{2}\bigr)\digamma_{\mathrm{amp}}^{2}k^{2}\Bigr)
+=\tfrac12\digamma_{\mathrm{amp}}^{2}\,4\pi^{2}\nu_m^{2}k^{2}
 =\tfrac12 4\pi^{2}\nu_m^{2}\bigl(A\!\cdot\!A\bigr) ,
 $$
 
@@ -179,7 +179,7 @@ Nine entries, three frequencies, one column. The value does not depend on $\nu_t
 
 The transverse coefficient is the contrast, and it depends on both. On the Lorenz plane $[kA]=0$ and $\mathcal{Q}=-\tfrac12(k^{2}-4\pi^{2}\nu_m^{2})A\!\cdot\!A$, which moves with $k^{2}$ and therefore with the frequency and the wave vector. So the form is one constant direction and three moving ones, and the constant direction is the one the constraint removes. That is the sense in which the constraint's cost is fixed and the propagating modes' cost is not.
 
-The variation along $\nu_{\imath}$ is $\partial\mathcal{Q}/\partial\lambda=2\lambda\tfrac124\pi^{2}\nu_m^{2}(A\!\cdot\!A)$, which vanishes for every $\lambda$ when $\nu_m=0$. **A coefficient that is proportional to the mass is a constraint that exists in proportion to the mass**, and that is a sharper statement than "the mass breaks the symmetry": nothing is broken, one coefficient is zero.
+The variation along $\nu_{\imath}$ is $\partial\mathcal{Q}/\partial\digamma_{\mathrm{amp}}=2\digamma_{\mathrm{amp}}\tfrac124\pi^{2}\nu_m^{2}(A\!\cdot\!A)$, which vanishes for every $\digamma_{\mathrm{amp}}$ when $\nu_m=0$. **A coefficient that is proportional to the mass is a constraint that exists in proportion to the mass**, and that is a sharper statement than "the mass breaks the symmetry": nothing is broken, one coefficient is zero.
 
 ## The Structural Consequence: The Trace Is the Mass
 

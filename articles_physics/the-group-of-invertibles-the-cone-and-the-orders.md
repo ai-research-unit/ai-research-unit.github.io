@@ -206,7 +206,7 @@ It is not $S^{5}$, so the apex is a genuine singularity of the cone.
 
 ### The Link as Null Directions
 
-The link is the space of complex null directions at fixed scale. A nonzero null element is a rank-one matrix, $\mathsf{M}_2(\tilde Q)=u v^{\mathsf T}$ with $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$, the pair being determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$. The link is therefore the quotient of $S^{3}\times S^{3}$ by the circle acting as $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$, an $S^{1}$-bundle over $S^{2}\times S^{2}$: two projective spinors and a relative phase.
+The link is the space of complex null directions at fixed scale. A nonzero null element is a rank-one matrix, $\mathsf{M}_2(\tilde Q)=u v^{\mathsf T}$ with $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$, the pair being determined up to $(u,v)\mapsto(\digamma_{\mathrm{scl}} u,\digamma_{\mathrm{scl}}^{-1}v)$. The link is therefore the quotient of $S^{3}\times S^{3}$ by the circle acting as $(u,v)\mapsto(\digamma_{\mathrm{scl}} u,\digamma_{\mathrm{scl}}^{-1}v)$, an $S^{1}$-bundle over $S^{2}\times S^{2}$: two projective spinors and a relative phase.
 
 **The link is the space of complex null directions.** Interpreted physically, a complex null four-vector is a pair of chiral spinors together with a relative phase; the two $S^{2}$ factors are the two celestial spheres and the $S^{1}$ fibre is the little-group phase. On the real material sector the null four-vector is anti-Hermitian of rank one, the two spinors are conjugate, and the pair collapses to one projective spinor: the link becomes the $S^{2}$ of null directions, with the phase as the fibre of $S^{3}\to S^{2}$.
 

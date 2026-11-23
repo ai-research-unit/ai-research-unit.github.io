@@ -83,7 +83,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\!\left(\digamma_{\mathrm{gau}}\tilde{Ξ}_{L}\right) = \digamma_{\mathrm{gau}}\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} .
 $$
 
-One and the same $\lambda$ multiplies both members. The pair therefore scales uniformly, and the mass term, which is linear in the field, is invariant.
+One and the same $\digamma_{\mathrm{gau}}$ multiplies both members. The pair therefore scales uniformly, and the mass term, which is linear in the field, is invariant.
 
 **What the mass breaks is the relative phase.** With $\varsigma$ a nonzero central constant, the massless pair is invariant under
 
@@ -161,7 +161,7 @@ Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the 
 
 Both constructions are gauge covariant, and they must be, being the same construction seen through $\natural$. What is **not** covariant is the mixed combination — the left gradient with the connection inserted on the right — because there the two $\tilde\nabla_\Phi\Gamma$ terms do not cancel: the chain rule brings $\tilde\nabla_\Phi\Gamma$ in from the left and the gauge shift removes it from the right, and the two differ by a commutator. Applying the mixed operator to $\digamma_{\mathrm{gau}}\tilde{Ξ}$ and subtracting $\digamma_{\mathrm{gau}}$ times the mixed operator applied to $\tilde{Ξ}$ leaves
 
-$$\frac{2\pi i\,ϙ}{h}\,\lambda\left[\tilde\nabla_\Phi\Gamma,\ \tilde{Ξ}\right],
+$$\frac{2\pi i\,ϙ}{h}\,\digamma_{\mathrm{gau}}\left[\tilde\nabla_\Phi\Gamma,\ \tilde{Ξ}\right],
 $$
 
 which vanishes for every field only when $\tilde\nabla_\Phi\Gamma$ is central, that is, only when the gauge function is constant. The two consistent constructions correspond to the two sides on which the algebra can act, and the choice between them is a choice of matter representation: from which side the connection multiplies the field. The gauge principle article records this as an open question, and this article does not resolve it; it states the left-action form, which is the one the gauge principle produces, and records the right-action mirror as the alternative.
@@ -189,7 +189,7 @@ the bar being the complex conjugation of the coefficients and not the real struc
 **Why the prescription attaches to the pair.** Under a constant central phase $F\mapsto\digamma_{\mathrm{gau}} F$ the two terms of the two-sided form scale differently,
 
 $$
--(\tilde\nabla_\Phi)^{\natural}\left(\lambda F\right) = \lambda\left(-(\tilde\nabla_\Phi)^{\natural}F\right),
+-(\tilde\nabla_\Phi)^{\natural}\left(\digamma_{\mathrm{gau}} F\right) = \digamma_{\mathrm{gau}}\left(-(\tilde\nabla_\Phi)^{\natural}F\right),
 \qquad
 -2\pi\nu_m\,i\,\overline{\digamma_{\mathrm{gau}} F}\,\vec u = \bar\digamma_{\mathrm{gau}}\left(-2\pi\nu_m\,i\,\overline{F}\,\vec u\right),
 $$
@@ -209,9 +209,9 @@ $$
 together with $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The covariance is the same computation as in the gauge principle article, repeated here because it is the justification of the prescription. The pair needs one Leibniz rule per member and one chain rule per member. The chain rules are
 
 $$
-\tilde\nabla_\Phi\lambda =\frac{2\pi i\,ϙ}{h}\left(\tilde\nabla_\Phi\Gamma\right)\lambda ,
+\tilde\nabla_\Phi\digamma_{\mathrm{gau}} =\frac{2\pi i\,ϙ}{h}\left(\tilde\nabla_\Phi\Gamma\right)\digamma_{\mathrm{gau}} ,
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\lambda =\frac{2\pi i\,ϙ}{h}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda ,
+(\tilde\nabla_\Phi)^{\natural}\digamma_{\mathrm{gau}} =\frac{2\pi i\,ϙ}{h}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\digamma_{\mathrm{gau}} ,
 $$
 
 because $\digamma_{\mathrm{gau}}$ is a central scalar function and each derivative acts on it coefficient by coefficient. The first member then gives
@@ -221,7 +221,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}_{R})
 &= \tilde\nabla_\Phi(\digamma_{\mathrm{gau}}\tilde{Ξ}_{R}) +\frac{2\pi i\,ϙ}{h}\left(\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\right)(\digamma_{\mathrm{gau}}\tilde{Ξ}_{R}) \\
 &= \digamma_{\mathrm{gau}}\,\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{2\pi i\,ϙ}{h}\left(\tilde\nabla_\Phi\Gamma\right)\digamma_{\mathrm{gau}}\tilde{Ξ}_{R} +\frac{2\pi i\,ϙ}{h}\digamma_{\mathrm{gau}}\,\tilde{A}_{\Phi}\,\tilde{Ξ}_{R} -\frac{2\pi i\,ϙ}{h}\left(\tilde\nabla_\Phi\Gamma\right)\digamma_{\mathrm{gau}}\tilde{Ξ}_{R} \\
-&= \lambda\left[\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}_{R}\right] = \lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} .
+&= \digamma_{\mathrm{gau}}\left[\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}_{R}\right] = \digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} .
 \end{aligned}
 $$
 
@@ -232,14 +232,14 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}(\digamma_{\mathrm{gau}}\tilde{Ξ}_{L})
 &= (\tilde\nabla_\Phi)^{\natural}(\digamma_{\mathrm{gau}}\tilde{Ξ}_{L}) +\frac{2\pi i\,ϙ}{h}\left(\tilde{A}_{\Phi}^{\natural} - (\tilde\nabla_\Phi)^{\natural}\Gamma\right)(\digamma_{\mathrm{gau}}\tilde{Ξ}_{L}) \\
 &= \digamma_{\mathrm{gau}}\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} +\frac{2\pi i\,ϙ}{h}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\digamma_{\mathrm{gau}}\tilde{Ξ}_{L} +\frac{2\pi i\,ϙ}{h}\digamma_{\mathrm{gau}}\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{L} -\frac{2\pi i\,ϙ}{h}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\digamma_{\mathrm{gau}}\tilde{Ξ}_{L} \\
-&= \lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} .
+&= \digamma_{\mathrm{gau}}\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} .
 \end{aligned}
 $$
 
-Both members are homogeneous, with the **same** factor $\lambda$:
+Both members are homogeneous, with the **same** factor $\digamma_{\mathrm{gau}}$:
 
 $$
-\boxed{\;\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde{Ξ}_{R,2} = \lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde{Ξ}_{L,2} = \lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L}\;}
+\boxed{\;\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde{Ξ}_{R,2} = \digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde{Ξ}_{L,2} = \digamma_{\mathrm{gau}}\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L}\;}
 $$
 
 Consequently the **massless minimally coupled biquaternion Dirac equation is exactly gauge covariant**:
@@ -290,7 +290,7 @@ $$
 Because $\tilde\nabla_{\mathrm{gco},\Phi}$ is covariant, the left-hand side of the transformed first equation is
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde{Ξ}_{R,2} = \lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} ,
+\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde{Ξ}_{R,2} = \digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} ,
 $$
 
 and the right-hand side is the transformed mass term, which for a **linear** mass term carries the same factor:
@@ -517,7 +517,7 @@ with the interaction term $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$ that 
 The **massless** and the **massive** coupled equations are both exactly gauge covariant: with $\tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ}$ and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$,
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde{Ξ}_{R,2} = \lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde{Ξ}_{L,2} = \lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L},
+\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde{Ξ}_{R,2} = \digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde{Ξ}_{L,2} = \digamma_{\mathrm{gau}}\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L},
 $$
 
 the same factor $\digamma_{\mathrm{gau}}$ for either member, and the parent's linear mass term acquires that same factor, so $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$ holds in every gauge when it holds in one. The continuous $\mathrm{U}(1)$ of the massless theory survives the mass; what the mass breaks is the relative phase that multiplies the two parts oppositely. Squaring the pair gives the covariant wave equation

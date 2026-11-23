@@ -57,7 +57,7 @@ The mixing is the statement that the two neutral gauge fields have different mas
 
 ### The Masses and the Electroweak Scale
 
-The masses arise from the Higgs sector, which is standard physics and is transcribed here as such. A complex scalar doublet $\xi_{\mathrm{scl}}$, of components ${\xi_{\mathrm{scl}}}^+$ and ${\xi_{\mathrm{scl}}}^0$ and of hypercharge $Y_{\mathrm{scl},\xi}=\tfrac12$, with the potential $V=\lambda\big(|{\xi_{\mathrm{scl}}}^+|^2+|{\xi_{\mathrm{scl}}}^0|^2-v^2/2\big)^2$ and the vacuum expectation values
+The masses arise from the Higgs sector, which is standard physics and is transcribed here as such. A complex scalar doublet $\xi_{\mathrm{scl}}$, of components ${\xi_{\mathrm{scl}}}^+$ and ${\xi_{\mathrm{scl}}}^0$ and of hypercharge $Y_{\mathrm{scl},\xi}=\tfrac12$, with the potential $V=\digamma_{\mathrm{qtc}}\big(|{\xi_{\mathrm{scl}}}^+|^2+|{\xi_{\mathrm{scl}}}^0|^2-v^2/2\big)^2$ and the vacuum expectation values
 $$
 \langle{\xi_{\mathrm{scl}}}^+\rangle=0,
 \qquad

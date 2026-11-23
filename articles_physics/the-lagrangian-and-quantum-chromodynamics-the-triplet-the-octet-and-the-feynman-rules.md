@@ -18,7 +18,7 @@ Why the number three is not in the Lagrangian. Nothing in the algebra or in the 
 
 The corpus's coordinates, stated once. The derivative is $\partial/\partial R_{\imath}$, every four-index sum obeys the sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$, and the metric is the corpus's $(1,1,1,1)$ on the biquaternion coordinates, so a display here and the same display in a text with a mostly-minus metric differ by the sign of every summed pair. A Dirac matrix is written low and contracted as $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} X_{\imath}$ with $\varepsilon_t=+1$. The measure is $\mathrm{d}^4r$.
 
-The colour bookkeeping. Triplet indices are $i,j,k,l=1,2,3$; adjoint indices are $a,b,c,d,e=1,\dots,8$; flavour is $f$, and colour never mixes with flavour. The generators are $T_{a}=\lambda_{a}/2$ with $\mathrm{Tr}\left(T_{a}T_{b}\right)=\frac12\delta_{ab}$; the covariant derivative is $D_{\imath}=\partial/\partial R_{\imath}-ig_sG_{a,\imath} T_{a}$ on the triplet, $-T_{a}^{*}$ on the antitriplet, and $-if_{abc}$ on the octet.
+The colour bookkeeping. Triplet indices are $i,j,k,l=1,2,3$; adjoint indices are $a,b,c,d,e=1,\dots,8$; flavour is $f$, and colour never mixes with flavour. The generators are $T_{a}=\digamma_{\mathrm{gmn},a}/2$ with $\mathrm{Tr}\left(T_{a}T_{b}\right)=\frac12\delta_{ab}$; the covariant derivative is $D_{\imath}=\partial/\partial R_{\imath}-ig_sG_{a,\imath} T_{a}$ on the triplet, $-T_{a}^{*}$ on the antitriplet, and $-if_{abc}$ on the octet.
 
 The couplings and the parameters. $g_s$ is the strong coupling, taken positive, and $\alpha_s=g_s^2/4\pi$. The gauge parameter is $\zeta$, with $\zeta=1$ the Feynman gauge. The quark mass $m_f$ is an input from the Yukawa sector and not a parameter of this action. Of the numbers used below, $T_R$ is a convention and $N_c=3$ is a measurement; $C_F=4/3$ and $C_A=3$ are facts once $N_c$ is granted.
 
@@ -105,7 +105,7 @@ A singlet made of two quarks does not exist. $\mathbf{3}\otimes\mathbf{3}=\bar{\
 The generators. The quark transforms in the defining representation, and its generators are the eight Gell-Mann matrices halved,
 
 $$
-T_{a}=\frac{\lambda_{a}}{2} ,
+T_{a}=\frac{\digamma_{\mathrm{gmn},a}}{2} ,
 \qquad a=1,\dots,8 ,
 \qquad
 [T_{a},T_{b}]=i\sum_cf_{abc}T_{c} ,
@@ -123,7 +123,7 @@ $$
 T_R=\frac12 ,
 $$
 
-the value that follows from $\mathrm{Tr}\left(\lambda_{a}\lambda_{b}\right)=2\delta_{ab}$. This is a convention and not a fact: a rescaling $T_{a}\to\kappa T_{a}$ changes $T_R\to\kappa^2T_R$ and can be compensated by $g_s\to g_s/\kappa$, leaving every product $g_sT_{a}$ unchanged. What is convention-independent is the combination that appears in observables, and the invariant way to say it is that the three numbers below are tied together by $C_F=T_R(N^2-1)/N$, which a rescaling of $T_{a}$ leaves unchanged because $\kappa^2$ cancels between $C_F$ and $T_R$:
+the value that follows from $\mathrm{Tr}\left(\digamma_{\mathrm{gmn},a}\digamma_{\mathrm{gmn},b}\right)=2\delta_{ab}$. This is a convention and not a fact: a rescaling $T_{a}\to\kappa T_{a}$ changes $T_R\to\kappa^2T_R$ and can be compensated by $g_s\to g_s/\kappa$, leaving every product $g_sT_{a}$ unchanged. What is convention-independent is the combination that appears in observables, and the invariant way to say it is that the three numbers below are tied together by $C_F=T_R(N^2-1)/N$, which a rescaling of $T_{a}$ leaves unchanged because $\kappa^2$ cancels between $C_F$ and $T_R$:
 
 $$
 C_F=\frac{N^2-1}{2N}=\frac43 ,
@@ -454,7 +454,7 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 | $\psi_f$, $\bar\psi_f$ | Quark field of flavour $f$ in the $\mathbf{3}$, and its conjugate |
 | $G_{a,\imath}$, $G_{a,\imath\jmath}$ | Gluon field and field strength, $a=1,\dots,8$ |
 | $g_s$ | Strong coupling; $\alpha_s=g_s^2/4\pi$ |
-| $T_{a}=\lambda_{a}/2$ | Generators of the triplet; $\lambda_{a}$ the Gell-Mann matrices |
+| $T_{a}=\digamma_{\mathrm{gmn},a}/2$ | Generators of the triplet; $\digamma_{\mathrm{gmn},a}$ the Gell-Mann matrices |
 | $f_{abc}$, $d_{abc}$ | Antisymmetric and symmetric invariant tensors of $SU(3)$ |
 | $T_R=1/2$ | Trace normalisation, $\mathrm{Tr}\left(T_{a}T_{b}\right)=T_R\delta_{ab}$ |
 | $C_F=4/3$ | Quadratic Casimir of the triplet, $\sum_aT_{a}T_{a}=C_FI$ |

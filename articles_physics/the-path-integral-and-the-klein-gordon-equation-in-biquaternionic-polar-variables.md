@@ -178,7 +178,7 @@ The honest ledger. The chart contributes one object the element form does not ex
 
 3. The constraint's determinant. The angle's integral produces the inverse square root of the determinant of $-\partial_{\imath} \varrho^{2}\partial_{\imath}$, which depends on the scale and is therefore not a constant. Whether that determinant has a closed form on a lattice, and whether its scale dependence cancels against the radial integral, is not shown.
 
-4. The interaction. A central interaction $\lambda \varrho^{4}$ adds one term to the bracket and leaves the chart's structure unchanged; the exponent stays free of $\theta_{\mathrm{pha}}$'s value, so the phase remains a constraint. The article does not pursue it, and the statement is a conjecture about the chart and not a computation.
+4. The interaction. A central interaction $\digamma_{\mathrm{qtc}} \varrho^{4}$ adds one term to the bracket and leaves the chart's structure unchanged; the exponent stays free of $\theta_{\mathrm{pha}}$'s value, so the phase remains a constraint. The article does not pursue it, and the statement is a conjecture about the chart and not a computation.
 
 5. The sign $\varepsilon$. The article treats the sign as chart bookkeeping and sums it. Whether the two signs are distinguishable in any correlation function of the field — as opposed to of the word — is not examined, and the exponent's independence of the sign says they are not.
 

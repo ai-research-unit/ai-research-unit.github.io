@@ -366,7 +366,7 @@ $$
 for the part of the covariant derivative that carries the spatial derivatives. Then, with the connection $\tilde A_{\Phi,2} = \tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ and the central phase $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$,
 
 $$
-\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi,2})\!\left(\lambda f\right) = \lambda\,\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi})f ,
+\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi,2})\!\left(\digamma_{\mathrm{scl}} f\right) = \digamma_{\mathrm{scl}}\,\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi})f ,
 $$
 
 which is the vector-part form of the covariance identity $\tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}$. Two consequences follow, and both are forced rather than chosen. First, the balancing action is built from $\tilde\nabla_{\mathrm{gco},\Phi}$ and not from $\tilde\nabla_\Phi$. Second, the basis functions themselves carry the phase: if the large function is $\digamma_{\mathrm{gau}} f_{\imath}$ rather than $f_{\imath}$, then its balanced partner is $\digamma_{\mathrm{gau}}$ times the partner of $f_{\imath}$, so that the pair transforms homogeneously. A finite basis built in this way is gauge covariant term by term, which is what the gauge invariance of the computed magnetic properties requires.

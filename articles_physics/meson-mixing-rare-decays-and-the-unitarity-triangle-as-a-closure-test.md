@@ -73,7 +73,7 @@ $$
 \left\lvert\frac{V_{ts}}{V_{td}}\right\rvert=4.83 .
 $$
 
-Since $V_{ts}\approx V_{cb}$ and $V_{td}\approx A\lambda^3 R_t$, this is a measurement of $R_t$ that uses no tree-level decay at all.
+Since $V_{ts}\approx V_{cb}$ and $V_{td}\approx A\digamma_{\mathrm{ckm},12}^3 R_t$, this is a measurement of $R_t$ that uses no tree-level decay at all.
 
 One sentence on the rotor, and it is a negative one. The closure test is a statement about the unitary on generation space, and generation space is not a carrier of the rotor: the compact factor $\mathrm{SU}(2)=\mathrm{Spin}(3)$ acts on the spin index and identically on every generation. The test is therefore **neutral under the rotor**, and the loop that this article computes runs over flavours, not over the rotor's display tower. That is why the GIM mechanism here is a statement about cancellation between generations and has no counterpart among the algebra's carriers. The statement is worth recording because it locates the article: whatever mixes generations is not the gauge group, and the framework's account of it begins where this article ends.
 
@@ -179,7 +179,7 @@ What the numbers are, and what sets them. The three systems' splittings differ b
 
 Read down the table: the kaon's small splitting is charm's, the $B$'s large splittings are the top's, and the ratio between the two $B$ systems is almost purely the SU(3) breaking of the decay constant, because both are top-dominated and the CKM factors $V_{tb}V_{td}$ and $V_{tb}V_{ts}$ differ by the known ratio $V_{td}/V_{ts}$.
 
-**Why the $B_d$ measurement determines a side of the triangle and the kaon does not.** $\delta m_{B_d}\propto\lvert V_{td}\rvert^2$, and $\lvert V_{td}\rvert$ is the distance from the triangle's apex to the vertex at $(1,0)$ — the side $R_t$, in units of $A\lambda^3$. The kaon's $\delta m$ is dominated by the charm contribution, which carries no $\digamma_{\mathrm{wlf}}$ dependence at leading order, so it constrains a different combination. Hence: the kaon measures the height, the $B_d$ measures the right side.
+**Why the $B_d$ measurement determines a side of the triangle and the kaon does not.** $\delta m_{B_d}\propto\lvert V_{td}\rvert^2$, and $\lvert V_{td}\rvert$ is the distance from the triangle's apex to the vertex at $(1,0)$ — the side $R_t$, in units of $A\digamma_{\mathrm{ckm},12}^3$. The kaon's $\delta m$ is dominated by the charm contribution, which carries no $\digamma_{\mathrm{wlf}}$ dependence at leading order, so it constrains a different combination. Hence: the kaon measures the height, the $B_d$ measures the right side.
 
 The $B_s$ and the width difference. $\delta\Gamma_s/\Gamma_s\approx0.12$ is measured, and it is the largest width difference of any neutral meson system. It matters because the two mass eigenstates have different CP content, so a decay into a CP eigenstate can be used to tag the flavour at production — the "same-side" or "opposite-side" tagging that makes $\delta m_s$ measurable at all.
 
@@ -229,8 +229,8 @@ The parameters.
 
 | Quantity | Value | Definition |
 |---|---|---|
-| $\lambda$ | $0.22650$ | $\lvert V_{us}\rvert$, the base of the triangle |
-| $A$ | $0.826$ | $\lvert V_{cb}\rvert/\lambda^2$ |
+| $\digamma_{\mathrm{ckm},12}$ | $0.22650$ | $\lvert V_{us}\rvert$, the base of the triangle |
+| $A$ | $0.826$ | $\lvert V_{cb}\rvert/\digamma_{\mathrm{ckm},12}^2$ |
 | $\bar\rho$ | $0.1591$ | Real coordinate of the apex |
 | $\bar\digamma_{\mathrm{wlf}}$ | $0.3523$ | Imaginary coordinate; the CP-violating height |
 | $R_b$ | $0.3866$ | $\sqrt{\bar\rho^2+\bar\digamma_{\mathrm{wlf}}^2}$ |
@@ -253,7 +253,7 @@ The sum is $180$ by construction — the triangle is drawn in a plane — so the
 **The area.** Heron's formula on the three sides gives $0.1762$, and $\bar\digamma_{\mathrm{wlf}}/2$ gives $0.1762$. The area is the CP violation: a flat triangle ($\bar\digamma_{\mathrm{wlf}}=0$) has no area and no CP violation, and the Jarlskog invariant is proportional to it,
 
 $$
-J=A^2\lambda^6\,\bar\digamma_{\mathrm{wlf}}\,(1-\bar\rho)=2.73\times10^{-5}
+J=A^2\digamma_{\mathrm{ckm},12}^6\,\bar\digamma_{\mathrm{wlf}}\,(1-\bar\rho)=2.73\times10^{-5}
 \quad\text{(leading order)} ,
 $$
 
@@ -265,7 +265,7 @@ The five measurements, and what each uses.
 
 | Quantity | Measured by | Physics used | Value | Uncertainty |
 |---|---|---|---|---|
-| $R_b$ | $\lvert V_{ub}\rvert/\lambda\lvert V_{cb}\rvert$ | Tree-level semileptonic decays | $0.386$ | $3\%$ |
+| $R_b$ | $\lvert V_{ub}\rvert/\digamma_{\mathrm{ckm},12}\lvert V_{cb}\rvert$ | Tree-level semileptonic decays | $0.386$ | $3\%$ |
 | $R_t$ | $\delta m_{B_d}/\delta m_{B_s}$ | Loop-level box diagrams | $0.911$ | $1.3\%$ |
 | $\beta$ | $\sin2\beta$ in $B\to J/\psi K_S$ | Tree decay with mixing | $22.2^\circ$ | $0.7^\circ$ |
 | $\gamma$ | $B\to DK$ | Pure tree, no mixing | $65.9^\circ$ | $3.5^\circ$ |
@@ -305,7 +305,7 @@ The comparison with the alternative. A four-generation model, or a model with a 
 
 What it proves. That the CKM picture is *self-consistent*: three angles and two sides, measured by five different experimental techniques spanning tree and loop physics, satisfy the unitarity relations of a $3\times3$ unitary matrix. That is a strong statement, because unitarity is a property of the group and not of any dynamical assumption, so the test has no adjustable content.
 
-**What it does not prove.** It does not prove that the CKM matrix is the *origin* of CP violation rather than a description of it. It does not exclude new physics that respects the same unitarity relations — a heavy particle that couples in a flavour-universal way, or one whose contributions cancel in the five observables. And it does not explain the pattern: the values $\lambda=0.2265$, $A=0.826$, $\bar\rho=0.159$, $\bar\digamma_{\mathrm{wlf}}=0.352$ are measured, and the corpus has no principle that selects them.
+**What it does not prove.** It does not prove that the CKM matrix is the *origin* of CP violation rather than a description of it. It does not exclude new physics that respects the same unitarity relations — a heavy particle that couples in a flavour-universal way, or one whose contributions cancel in the five observables. And it does not explain the pattern: the values $\digamma_{\mathrm{ckm},12}=0.2265$, $A=0.826$, $\bar\rho=0.159$, $\bar\digamma_{\mathrm{wlf}}=0.352$ are measured, and the corpus has no principle that selects them.
 
 The distinction the corpus insists on. There is a difference between "the model is consistent with all data" and "the model is the correct description". The closure test establishes the first. The second would require the model to be *unique* among consistent descriptions, and it is not, as the persistence of the flavour puzzle shows.
 
@@ -331,7 +331,7 @@ The triangle is a statement about $\mathrm{U}(3)$. The three-vector sum closing 
 
 What it transcribes. Everything numerical: the box functions, the Inami–Lim results, the hadronic matrix elements, the measured frequencies, the rare-decay branching ratios, the five closure inputs and their errors.
 
-What it does not supply, declared. No loop calculation. No measure on the space of field configurations over which a loop integral is defined. No lattice. No hadronic matrix element. No mechanism for the values of $\lambda$, $A$, $\bar\rho$, $\bar\digamma_{\mathrm{wlf}}$. No explanation of why there are three generations. Each of these is an import, and the articles that own them are named in the ledger.
+What it does not supply, declared. No loop calculation. No measure on the space of field configurations over which a loop integral is defined. No lattice. No hadronic matrix element. No mechanism for the values of $\digamma_{\mathrm{ckm},12}$, $A$, $\bar\rho$, $\bar\digamma_{\mathrm{wlf}}$. No explanation of why there are three generations. Each of these is an import, and the articles that own them are named in the ledger.
 
 The ledger.
 
@@ -345,7 +345,7 @@ The ledger.
 | $\lvert\varepsilon_K\rvert=2.228\times10^{-3}$, $\varepsilon'/\varepsilon=1.66\times10^{-3}$ | **Imported** |
 | $\delta m_{B_d}$, $\delta m_{B_s}$, the ratio $35.06$ | **Imported**; $\lvert V_{ts}/V_{td}\rvert$ and $R_t$ computed here |
 | $\mathcal{B}(B\to X_s\gamma)$, $\mathcal{B}(B_s\to\mu\mu)$ | **Imported**; the ratios computed here |
-| $\lambda$, $A$, $\bar\rho$, $\bar\digamma_{\mathrm{wlf}}$ | **Imported** global fit |
+| $\digamma_{\mathrm{ckm},12}$, $A$, $\bar\rho$, $\bar\digamma_{\mathrm{wlf}}$ | **Imported** global fit |
 | $R_b$, $R_t$, $\alpha$, $\beta$, $\gamma$, the area | **Computed** here from the fit |
 | The law-of-cosines identity and the two closure pulls | **Computed** here |
 | $J=2.73\times10^{-5}$ (leading), $2.91\times10^{-5}$ (angles), $3.08\times10^{-5}$ (fit) | **Computed** here, three routes |
@@ -379,7 +379,7 @@ Closure proves self-consistency, not uniqueness, and it does not explain the fou
 | $\varepsilon'/\varepsilon$ | Direct CP violation in the decay amplitude |
 | $B_K$ | The kaon bag parameter |
 | $\xi$ | SU(3)-breaking ratio of $B$-meson decay constants, $1.216$ |
-| $\lambda$, $A$, $\bar\rho$, $\bar\digamma_{\mathrm{wlf}}$ | Wolfenstein parameters |
+| $\digamma_{\mathrm{ckm},12}$, $A$, $\bar\rho$, $\bar\digamma_{\mathrm{wlf}}$ | Wolfenstein parameters |
 | $R_b$, $R_t$ | The two non-trivial sides of the unitarity triangle |
 | $\alpha$, $\beta$, $\gamma$ | The three angles |
 | $J$ | Jarlskog invariant, $2.9\times10^{-5}$ |

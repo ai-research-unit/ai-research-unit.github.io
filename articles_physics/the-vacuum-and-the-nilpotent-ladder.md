@@ -113,7 +113,7 @@ $$
 
 The origin is scalar, central, semisimple and of rank zero. Its minimal polynomial is $X$, its spectrum is $\{0\}$ with no defect, both multiplications are the zero map, and every idempotent of the algebra commutes with it. It is the only element of the stratum for which a spectral decomposition exists, and the decomposition is the one-term writing $0=0\cdot e_t$.
 
-It lies in the closure of every stratum. Every stratum is invariant under $\tilde Q\mapsto\lambda\tilde Q$ for $\lambda\neq0$, so every punctured neighbourhood of the origin meets all four. The origin is the point at which the four regimes touch.
+It lies in the closure of every stratum. Every stratum is invariant under $\tilde Q\mapsto\digamma_{\mathrm{scl}}\tilde Q$ for $\digamma_{\mathrm{scl}}\neq0$, so every punctured neighbourhood of the origin meets all four. The origin is the point at which the four regimes touch.
 
 ### The Flow
 
@@ -472,9 +472,9 @@ The count is the stratum's dimension in the letters of the field. Six real compo
 The complex scale has two physical readings and both are exact.
 
 $$
-\tilde F=\lambda\,\tilde F_0,\qquad
-\lvert\lambda\rvert\ \text{is the amplitude},\qquad
-\arg\lambda\ \text{is the duality angle}.
+\tilde F=\digamma_{\mathrm{scl}}\,\tilde F_0,\qquad
+\lvert\digamma_{\mathrm{scl}}\rvert\ \text{is the amplitude},\qquad
+\arg\digamma_{\mathrm{scl}}\ \text{is the duality angle}.
 $$
 
 The modulus is the amplitude because the Hermitian norm of the field is proportional to it. For a null field $\lVert\tilde F\rVert^{2}=\epsilon\lvert\vec E\rvert^{2}+\lvert\vec B\rvert^{2}/\mu=2\epsilon\lvert\vec E\rvert^{2}$, so the modulus and the amplitude differ by the fixed factor $\sqrt{2\epsilon}$.
@@ -742,7 +742,7 @@ The boundary. A null field is a value of the field at a point. Whether a field i
 
 ### I.10.ay — The Phase of the Scale Is a Duality Rotation
 
-Read: $\tilde F=\lambda\tilde F_0$ with $\lvert\lambda\rvert$ the amplitude, and $e^{i\omicron_{\mathrm{ang}}}\tilde F$ acting as $\vec E\mapsto\vec E\cos\omicron_{\mathrm{ang}}-c\vec B\sin\omicron_{\mathrm{ang}}$, $\vec B\mapsto\vec B\cos\omicron_{\mathrm{ang}}+(\vec E/c)\sin\omicron_{\mathrm{ang}}$.
+Read: $\tilde F=\digamma_{\mathrm{scl}}\tilde F_0$ with $\lvert\digamma_{\mathrm{scl}}\rvert$ the amplitude, and $e^{i\omicron_{\mathrm{ang}}}\tilde F$ acting as $\vec E\mapsto\vec E\cos\omicron_{\mathrm{ang}}-c\vec B\sin\omicron_{\mathrm{ang}}$, $\vec B\mapsto\vec B\cos\omicron_{\mathrm{ang}}+(\vec E/c)\sin\omicron_{\mathrm{ang}}$.
 
 The two real dimensions of the fibre are two classical operations. The modulus scales both halves of the field and the argument rotates one into the other. Neither is a phase in the quantum sense, and neither is a gauge: they are the two things one may do to a null field and stay on the stratum.
 
@@ -878,7 +878,7 @@ The four strata are strata of one algebra and not four algebras. The partition i
 | $e_t$ | the identity of the algebra |
 | $\tilde F$, $\vec E$, $\vec H$, $\vec B$ | the field strength, the electric field, the magnetic excitation and the magnetic field, with $\vec B=\mu\vec H$ |
 | $I_1$, $I_2$ | the two classical invariants $\vec E^{2}-c^{2}\vec B^{2}$ and $\vec E\cdot\vec B$ |
-| $\lambda$ | the complex scale of a null field, modulus the amplitude and argument the duality angle |
+| $\digamma_{\mathrm{scl}}$ | the complex scale of a null field, modulus the amplitude and argument the duality angle |
 
 ## Further Reading
 

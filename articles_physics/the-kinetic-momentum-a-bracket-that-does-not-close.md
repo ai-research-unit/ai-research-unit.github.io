@@ -33,12 +33,12 @@ The two differ by a function of position. The canonical momentum differentiates 
 
 The distinction is not a choice of notation. The two momenta transform differently under a gauge transformation, and the difference is the whole content of the next section.
 
-Under $\vec A\to\vec A+\vec\nabla_\Phi\lambda$ the canonical momentum is unchanged, the mechanical momentum shifts, and the field strength is unchanged.
+Under $\vec A\to\vec A+\vec\nabla_\Phi\digamma_{\mathrm{gau}}$ the canonical momentum is unchanged, the mechanical momentum shifts, and the field strength is unchanged.
 
-| object | under $\vec A\to\vec A+\vec\nabla_\Phi\lambda$ |
+| object | under $\vec A\to\vec A+\vec\nabla_\Phi\digamma_{\mathrm{gau}}$ |
 |---|---|
 | $\vec p$ | unchanged |
-| $\vec\pi$ | $\vec\pi-ϙ\vec\nabla_\Phi\lambda$ |
+| $\vec\pi$ | $\vec\pi-ϙ\vec\nabla_\Phi\digamma_{\mathrm{gau}}$ |
 | $\vec B$ | unchanged |
 | $[\pi_j,\pi_\imath]$ | unchanged |
 
@@ -102,10 +102,10 @@ The two halves of the relation therefore behave differently under one and the sa
 
 | shift | $[r_j,P_\imath]$ | $[P_j,P_\imath]$ | implemented by a unitary |
 |---|---|---|---|
-| $f_\imath=\partial_\imath\lambda$ | $i \frac{h}{2\pi}\,\delta_{j\imath}$ | $0$ | yes |
+| $f_\imath=\partial_\imath\digamma_{\mathrm{gau}}$ | $i \frac{h}{2\pi}\,\delta_{j\imath}$ | $0$ | yes |
 | $f_\imath=-ϙA_\imath$, $\vec B\neq0$ | $i \frac{h}{2\pi}\,\delta_{j\imath}$ | $i \frac{h}{2\pi}\,ϙ\,\varepsilon_{j\imath l}B_l$ | no |
 
-The last column is the physical content. A gradient shift is implemented on the states by the central phase, so it is a relabelling and no observable changes. On a simply-connected region where $\vec B\neq0$ no single-valued $\lambda$ exists, no such phase implements the shift, and the second half of the relation records the failure.
+The last column is the physical content. A gradient shift is implemented on the states by the central phase, so it is a relabelling and no observable changes. On a simply-connected region where $\vec B\neq0$ no single-valued $\digamma_{\mathrm{gau}}$ exists, no such phase implements the shift, and the second half of the relation records the failure.
 
 **The asymmetry, stated once.** The first half of the relation is invariant under every shift by a function of position. The second half is invariant only under the gradient ones. The field lives in the difference between the two invariance groups.
 

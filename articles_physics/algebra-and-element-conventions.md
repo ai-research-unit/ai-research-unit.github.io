@@ -169,7 +169,11 @@ The letters of the physical quantities. The glyphs are fixed one to a quantity, 
 
 A logarithm carries the glyph of its element and the subscript $\log$. The logarithm is a solution of the exponential equation in the same algebra, not an object of a new kind, so it carries the glyph of the element and the subscript, and the definition reads $\exp(\tilde Q_{\log}) = \tilde Q$. The glyph is $\tilde Q_{\log}$ in this algebra, $\tilde q_{\log}$ in the quaternion and split-quaternion layers, $\breve Q_{\log}$ in the reduced biquaternions, and $Q_{\log}$ in the complex, split-complex and dual ones. The subscript is a word, so it competes neither with the direction labels, $Q_t$ and $Q_x$, nor with the counts, $Q_1$; a numbered element keeps its number in front of the subscript, $\tilde Q_{1\log}$. The subscript is dropped when the logarithm is written as an operator, $\log\tilde Q$ or $\operatorname{Log}\tilde Q$. The coordinates of a logarithm follow the coefficient rule: in the complex, split-complex and dual layers, $Q_{\log}=q_{\log}+iq'_{\log}$ has real part $q_{\log}$ and imaginary part $q'_{\log}$, with $j$ in place of $i$ in the split-complex case, and the prime marks the imaginary coordinate alone. The logarithm of a real number is the ordinary real logarithm, written $\log q$; the glyph $q_{\log}$ is the real coordinate of $Q_{\log}$, not the logarithm of $q$.
 
-## The Angle
+## The Reserved Letters
+
+**Five letters carry five roles, and each is spent once.** An angle is $\theta$, a scale is $\varrho$, a wave number is $\nu$, a wavelength is $\lambda$, and an eigenvalue is $\eta$. None of the five carries a second sense, and no other scalar borrows one of them. A scalar that is none of the five takes $\digamma$ with a subscript that names its sense.
+
+### The Angle: $\theta$
 
 **An angle is real, and it is written $\theta$.** The central phase is $\exp(i\theta_{\mathrm{cen}} J)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{rat}}$ the rotation angle of an evolution. One glyph, one case, and no second letter spent on the imaginary reading.
 
@@ -188,6 +192,22 @@ The formula does not change between the rotation and the boost; only the value p
 The rotor's angle is $\theta_{\mathrm{axr}}$. For the word's rotor, $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, the label names the rotation angle about the arbitrary axis $\vec u_{\mathrm r}$. Where an element is written in the parent's expansion $\cos\theta+\sin\theta\,\vec u$, the angle in the slot is the half-angle and the rotation is through $2\theta$; those occurrences keep a locally defined $\theta$ and say so.
 
 The letter carries no second role. The roles that once shared it have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}_{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta_{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.
+
+### The Scale: $\varrho$
+
+**The glyph $\varrho$ carries a scale and nothing else.** A polar decomposition writes an element as a positive real scale times a unit element, $\tilde\Xi=\varrho\,\tilde u$ with $\varrho=\lVert\tilde\Xi\rVert\ge0$ and $\lVert\tilde u\rVert=1$, and the amplitude of a wave is the same letter read as a magnitude. A subscript names which scale: $\varrho_{\mathrm{num}}$ the number density of a fluid, $\varrho_{\mathrm{chg}}$ the charge density, $\varrho_{\mathrm{ifm}}$ the coefficient of an indefinite form. The letter never carries an angle, a wave number, a wavelength or an eigenvalue.
+
+### The Wavenumber: $\nu$
+
+**The glyph $\nu$ carries a wave number and nothing else.** The wave number is the number of turns per unit length, $\nu=k/2\pi=1/\lambda$, and a particle has three of them, $\nu_m$, $\nu_{\Phi}$ and $\nu_t^{\prime}$. The letter is never an index, because the space index is $k$; never a frequency in hertz, which is $f$ or $\omega$; and never a mass.
+
+### The Wavelength: $\lambda$
+
+**The glyph $\lambda$ carries a wavelength and nothing else.** It is the reciprocal of the wave number, $\lambda=1/\nu$, written $\lambda_m$, $\lambda_{\Phi}$ and $\lambda_t$ for the three of a particle. The letter never carries an eigenvalue, a coupling, a scale factor or a parameter of a family; those are $\eta$, $\digamma_{\mathrm{qtc}}$, $\digamma_{\mathrm{scl}}$ and $\digamma_{\mathrm{prm}}$.
+
+### The Eigenvalue: $\eta$
+
+**The glyph $\eta$ carries an eigenvalue and nothing else.** The spectrum is $\eta$, $\eta_\pm$, $\eta_{1,2}$, $\eta_1\dots\eta_N$, $\eta_i$ or $\eta_n$ according to how many there are, the characteristic equation is $\eta^{2}-2Q_t\eta+N=0$, and the conjugate eigenvalue is $\bar\eta$. A spectral parameter is an eigenvalue and keeps the letter. The letter is never an index, never a scale and never an indefinite form.
 
 ## The Remarkable Subspaces of Biquaternions
 
@@ -412,7 +432,11 @@ The angle is real and is one letter: $\theta$, with a subscript naming it, the $
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\exp(i\theta_{\mathrm{cen}})e_t=\exp(i\theta_{\mathrm{cen}} J)$ | The central phase, carried by the first coordinate $Q_t$ and extended to the four by $\mathbb{C}$-linearity |
-| $\theta$; $i\theta_{\mathrm{rpd}}$ | The angle, real, with a subscript naming it; a purely imaginary angle is written $i\theta$ at the point of use and the $\theta$ inside stays real — the central phase is the real argument and the boost the imaginary one (§*The Angle*) |
+| $\theta$; $i\theta_{\mathrm{rpd}}$ | The angle, real, with a subscript naming it; a purely imaginary angle is written $i\theta$ at the point of use and the $\theta$ inside stays real — the central phase is the real argument and the boost the imaginary one (§*The Reserved Letters*) |
+| $\varrho$; $\varrho_{\mathrm{num}}$, $\varrho_{\mathrm{chg}}$ | The scale of a polar decomposition, $\tilde\Xi=\varrho\,\tilde u$ with $\varrho\ge0$, and the amplitude of a wave; the subscript names which scale (§*The Reserved Letters*) |
+| $\nu$; $\nu_m$, $\nu_{\Phi}$, $\nu_t^{\prime}$ | The wave number, $\nu=k/2\pi=1/\lambda$; the three of a particle; never an index and never a frequency in hertz (§*The Reserved Letters*) |
+| $\lambda$; $\lambda_m$, $\lambda_{\Phi}$, $\lambda_t$ | The wavelength, $\lambda=1/\nu$; the three of a particle; never an eigenvalue or a coupling (§*The Reserved Letters*) |
+| $\eta$; $\eta_\pm$, $\eta_{1,2}$, $\eta_i$ | The eigenvalue, a root of $\eta^{2}-2Q_t\eta+N=0$; never an index and never a scale (§*The Reserved Letters*) |
 | $J=L_{ie_t}$ | The one complex structure of $\mathbb{B}$, of which the phase is the exponential |
 | $S_+(\vec u)\oplus S_-(\vec u)$ | The polarization, the two planes; a frame datum, not a pair of halves |
 | $\tilde Q = \tilde q + i\tilde q'$ | The element and its split into a quaternion part and an antiquaternion part |

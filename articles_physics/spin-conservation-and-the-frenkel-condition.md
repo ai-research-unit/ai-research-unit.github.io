@@ -108,7 +108,7 @@ The Frenkel condition is the statement that the spin is orthogonal to the flow, 
 
 $$
 \mathcal{F}:\qquad S_{\Psi,k,k\jmath}\,v_{\Phi,\jmath}=0
-\qquad\text{for all }\ell,\ \lambda,
+\qquad\text{for all }\ell,\ \upsilon,
 $$
 
 with every index low and $v_{\Phi,\jmath}$ the flow's components. Its content is a count: an antisymmetric $4\times4$ array has six independent components, and three linear conditions remove three of them, leaving the three components of a spatial vector in the fluid's rest frame.

@@ -197,7 +197,7 @@ $$
 so, lying in the physical subspace and being null, it is orthogonal to every state in that subspace and decouples from all physical amplitudes. On the quotient by the zero-norm states, the physical subspace has **positive-definite norm** and consists exactly of the two transverse polarizations. Their polarization sum is the transverse projector,
 
 $$
-\boxed{\;\sum_{k=1}^{2}\epsilon_i^{(\lambda)}(2\pi\vec\nu_\Phi)\,\epsilon_j^{(\lambda)}(2\pi\vec\nu_\Phi)
+\boxed{\;\sum_{k=1}^{2}\epsilon_i^{(\mathrm{fop})}(2\pi\vec\nu_\Phi)\,\epsilon_j^{(\mathrm{fop})}(2\pi\vec\nu_\Phi)
 =\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}\;},
 $$
 
@@ -248,7 +248,7 @@ The biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tild
 
 The Legendre transform is singular. The conjugate momenta are $\pi_{\imath}=-F_{t\imath}$, so $\pi_0\approx0$ is primary and Gauss's law $\mathrm{div}\,\vec\pi\approx0$ is secondary; both are **first class** and generate gauge transformations. The phase-space count $8-2\times2=4$ gives two field degrees of freedom. In the notation of the companion articles the constraints are $\mathrm{Sc}(\tilde\pi_{\mathrm{id}})\approx0$ and $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\pi_{\mathrm{id}})\approx0$, the same scalar-part shape as the charge-conservation condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$.
 
-Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}h^{3}\delta^{(3)}$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})|\tilde{Ξ}\rangle=0$ leaves the zero-norm combination $a_{\mathrm{fop},0}^{\dagger}-a_{\mathrm{fop},3}^{\dagger}$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{k=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.
+Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}h^{3}\delta^{(3)}$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})|\tilde{Ξ}\rangle=0$ leaves the zero-norm combination $a_{\mathrm{fop},0}^{\dagger}-a_{\mathrm{fop},3}^{\dagger}$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{k=1}^2\epsilon_i^{(\mathrm{fop})}\epsilon_j^{(\mathrm{fop})}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.
 
 The extension is a transcription of standard canonical quantization into the framework's notation, not a derivation of the quantized structure from $\mathbb{B}$. Unlike the Dirac case it requires no new grading, but unlike the Dirac case the natural variable is not the canonical one, and the gauge must be fixed from outside the algebra. The framework cannot quantize the Maxwell field automatically.
 
@@ -278,7 +278,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $A_{\imath}$, $\epsilon^{(r)}_{\imath}$, $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$ | Quantized potential, polarization vectors, mode operators |
 | $[a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_2)]=\sigma_{\mathrm{met},r}\delta_{rs}h^{3}\delta^{(3)}$ | Mode commutator, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ |
 | $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})\lvert\tilde{Ξ}\rangle=0$ | Gupta–Bleuler subsidiary condition (momentum along $\vec e_z$) |
-| $\sum_{k=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$ | Transverse polarization sum |
+| $\sum_{k=1}^2\epsilon_i^{(\mathrm{fop})}\epsilon_j^{(\mathrm{fop})}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$ | Transverse polarization sum |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form on the informational sector |
 
 ## Further Reading

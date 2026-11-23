@@ -244,17 +244,17 @@ This is also the point at which the path integral's determinant is visible. The 
 The scalar sector's interaction is a central self-coupling. The renormalizable $\mathrm{U}(1)$-symmetric interaction is the square of the invariant,
 
 $$
-\mathcal{L}_{\mathrm{int}}=-\frac{\lambda}{4}\,\Big(\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\Big)^2
-=-\frac{\lambda}{16}\left(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2\right)^2 ,
+\mathcal{L}_{\mathrm{int}}=-\frac{\digamma_{\mathrm{qtc}}}{4}\,\Big(\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\Big)^2
+=-\frac{\digamma_{\mathrm{qtc}}}{16}\left(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2\right)^2 ,
 $$
 
 where the second form uses the component normalization stated above, $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=\frac12(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)$, and the potential is a central scalar polynomial. The generating functional becomes
 
 $$
-Z[\tilde J_{\Phi}]=\exp\!\left[-i\int d^4r\;\frac{\lambda}{4}\left(\frac{\delta}{i\,\delta J^*}\frac{\delta}{i\,\delta J}\right)^{\!2}\right]Z_0[\tilde J_{\Phi}],
+Z[\tilde J_{\Phi}]=\exp\!\left[-i\int d^4r\;\frac{\digamma_{\mathrm{qtc}}}{4}\left(\frac{\delta}{i\,\delta J^*}\frac{\delta}{i\,\delta J}\right)^{\!2}\right]Z_0[\tilde J_{\Phi}],
 $$
 
-whose expansion in powers of $\lambda$ is the standard perturbative series, and in which the coupling normalisation is the same as that of the companion breaking article's potential, so that the radial curvature there is $\lambda v^2$. The Feynman rules follow from the two ingredients already established: the **propagator** is the inverse of the quadratic form, $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$, and the **vertex** is $-i\lambda$ times a central unit in the normalisation $-\frac{\lambda}{4!}(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)^2$, equivalently $-\frac{3}{2}i\lambda$ in the invariant's normalisation $-\frac{\lambda}{16}(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)^2$ written above — the $4!$ of the four equivalent field factors and the factor from the invariant's double counting are the whole of the difference. Every internal line and every vertex is central; no spinor index, no matrix, and no representation label enters any diagram of the scalar sector. This is the diagrammatic form of the centrality that the whole article records.
+whose expansion in powers of $\digamma_{\mathrm{qtc}}$ is the standard perturbative series, and in which the coupling normalisation is the same as that of the companion breaking article's potential, so that the radial curvature there is $\digamma_{\mathrm{qtc}} v^2$. The Feynman rules follow from the two ingredients already established: the **propagator** is the inverse of the quadratic form, $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$, and the **vertex** is $-i\digamma_{\mathrm{qtc}}$ times a central unit in the normalisation $-\frac{\digamma_{\mathrm{qtc}}}{4!}(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)^2$, equivalently $-\frac{3}{2}i\digamma_{\mathrm{qtc}}$ in the invariant's normalisation $-\frac{\digamma_{\mathrm{qtc}}}{16}(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)^2$ written above — the $4!$ of the four equivalent field factors and the factor from the invariant's double counting are the whole of the difference. Every internal line and every vertex is central; no spinor index, no matrix, and no representation label enters any diagram of the scalar sector. This is the diagrammatic form of the centrality that the whole article records.
 
 Two structural comments complete the picture.
 

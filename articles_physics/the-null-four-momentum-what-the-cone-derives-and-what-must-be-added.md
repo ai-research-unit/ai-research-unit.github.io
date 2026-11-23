@@ -127,7 +127,7 @@ The cone marks the value $m=0$ and only that value. Distinguishing a value is no
 There is a structural reason behind the previous paragraph, and it is stronger than a statement about what the cone happens to say. The norm is homogeneous of degree two,
 
 $$
-\boxed{\ \langle\lambda\tilde{Q}\rangle_{\natural} = \lambda^2\langle\tilde{Q}\rangle_{\natural}\ }
+\boxed{\ \langle\digamma_{\mathrm{scl}}\tilde{Q}\rangle_{\natural} = \digamma_{\mathrm{scl}}^2\langle\tilde{Q}\rangle_{\natural}\ }
 $$
 
 The null set is therefore invariant under every rescaling: if $\tilde{Q}$ is null then so is $\digamma_{\mathrm{cfm}}\tilde{Q}$, for every $\digamma_{\mathrm{cfm}}$. The cone is a scale-invariant object, and an algebra whose special locus is scale-invariant contains no preferred scale. To generate a mass scale one must put one in, and the framework does: the mass term is a term in the Lagrangian or the field equation, not in the algebra. The companion articles record the two choices side by side — *Canonical Quantization of the Biquaternion Maxwell Field* for the massless case and *Canonical Quantization of the Biquaternion Proca Field* for the massive one — and the difference is precisely the presence of a term the algebra does not contain.
@@ -228,7 +228,7 @@ The cone does not derive masslessness. The mass enters as a single free real sca
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Rotor conjugation; $\langle\cdot\rangle_{\natural}$ invariant, so the cone and $c$ are frame-independent |
 | $\tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac{1}{2}(e_t+i\vec u)$ | Idempotent of $\mathbb{B}_{\Psi}$; $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural}=0$ |
 | $\tilde{P}_{\Phi}=2i\frac{E}{c}\tilde\Pi_{\mathrm{id}}(-\vec u)$, $\vec u=\vec p/\lvert\vec p\rvert$ | The null momentum as a scaled Hermitian idempotent |
-| $\langle\lambda\tilde{Q}\rangle_{\natural}=\lambda^2\langle\tilde{Q}\rangle_{\natural}$ | Homogeneity; the cone is scale-invariant, so no mass scale is native |
+| $\langle\digamma_{\mathrm{scl}}\tilde{Q}\rangle_{\natural}=\digamma_{\mathrm{scl}}^2\langle\tilde{Q}\rangle_{\natural}$ | Homogeneity; the cone is scale-invariant, so no mass scale is native |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathcal{Z}=\{\tilde{Q}\neq0 : \langle\tilde{Q}\rangle_{\natural}=0\}$ | Zero-divisor set |
 

@@ -83,7 +83,7 @@ N(\tilde\Pi_{\mathrm{id}})=0,\qquad
 B^{2}(\tilde\Pi_{\mathrm{id}})=-\tfrac14 .
 $$
 
-Each null line contains exactly one idempotent. On the line $\mathbb{C}\tilde\Pi_{\mathrm{id}}$ the equation $(\lambda\tilde\Pi_{\mathrm{id}})^{2}=\lambda\tilde\Pi_{\mathrm{id}}$ reduces to $\lambda^{2}=\lambda$, whose solutions are $0$ and $1$. Computed: $\lambda=2$ misses idempotence by $1.55$ and $\lambda=i$ by $1.10$.
+Each null line contains exactly one idempotent. On the line $\mathbb{C}\tilde\Pi_{\mathrm{id}}$ the equation $(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id}})^{2}=\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id}}$ reduces to $\digamma_{\mathrm{scl}}^{2}=\digamma_{\mathrm{scl}}$, whose solutions are $0$ and $1$. Computed: $\digamma_{\mathrm{scl}}=2$ misses idempotence by $1.55$ and $\digamma_{\mathrm{scl}}=i$ by $1.10$.
 
 ### The Description That Survives
 
@@ -340,7 +340,7 @@ $$
 \tilde Q\longmapsto\frac{\tilde Q}{2Q_t}\quad\text{succeeds}.
 $$
 
-The replacement is not a convention, because it is unique. On the line $\mathbb{C}\tilde\Pi_{\mathrm{id}}$ the idempotence condition is $\lambda^{2}=\lambda$, so the only idempotents on the line are $0$ and $\tilde\Pi_{\mathrm{id}}$ itself; the value $\lambda=1$ is forced, and the induced map on the projectivisation is a section. Computed: $\lambda=2$ misses idempotence by $1.55$ and $\lambda=i$ by $1.10$, so neither a real rescaling nor a phase rescaling preserves the normalisation.
+The replacement is not a convention, because it is unique. On the line $\mathbb{C}\tilde\Pi_{\mathrm{id}}$ the idempotence condition is $\digamma_{\mathrm{scl}}^{2}=\digamma_{\mathrm{scl}}$, so the only idempotents on the line are $0$ and $\tilde\Pi_{\mathrm{id}}$ itself; the value $\digamma_{\mathrm{scl}}=1$ is forced, and the induced map on the projectivisation is a section. Computed: $\digamma_{\mathrm{scl}}=2$ misses idempotence by $1.55$ and $\digamma_{\mathrm{scl}}=i$ by $1.10$, so neither a real rescaling nor a phase rescaling preserves the normalisation.
 
 So the phase of the coefficient is a datum and not a gauge. A reader who is used to scaling a spinor by a phase will expect the ray to be indifferent to it. The algebra says the opposite: the ray is a projective class, and the idempotent is the canonical representative of the class, so any change of the representative is a change of the element and not a change of description.
 

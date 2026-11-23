@@ -124,7 +124,7 @@ makes the content of the loop integral explicit: through Stokes' theorem it meas
 
 3. **The path may enclose a charge.** If the path cannot be shrunk to a point without crossing a charge — a line or point charge — then no smooth surface spans it, Stokes' theorem does not apply, and the charge contributes a term that depends on the path only through its linking with the charge. This term is topological in the same sense as the AB flux.
 
-In the line-charge geometry below the three mechanisms separate cleanly. The field is radial about the wire and independent of the axial coordinate, so $(\vec\mu\cdot\vec\nabla_\Phi)\vec E = 0$ for an axial moment and the second contribution vanishes; the moment may be treated as a fixed vector, so the first vanishes as well; and what remains is the linking term, proportional to the enclosed density $\lambda$. The line-charge AC phase is therefore the exact electric dual of the AB phase of a charge encircling a flux line. For a general field configuration the second contribution is present, and the phase is not a function of the enclosed charge alone.
+In the line-charge geometry below the three mechanisms separate cleanly. The field is radial about the wire and independent of the axial coordinate, so $(\vec\mu\cdot\vec\nabla_\Phi)\vec E = 0$ for an axial moment and the second contribution vanishes; the moment may be treated as a fixed vector, so the first vanishes as well; and what remains is the linking term, proportional to the enclosed density $\digamma_{\mathrm{chg}}$. The line-charge AC phase is therefore the exact electric dual of the AB phase of a charge encircling a flux line. For a general field configuration the second contribution is present, and the phase is not a function of the enclosed charge alone.
 
 ### Superpositions and the Non-Abelian Holonomy
 
@@ -191,10 +191,10 @@ whose action integral over a closed path is exactly $\frac{h}{2\pi}\,\theta_{\ma
 
 ### Circling a Line Charge
 
-Take a line charge of linear density $\lambda$ along the $\vec u_z$ axis, producing the radial field
+Take a line charge of linear density $\digamma_{\mathrm{chg}}$ along the $\vec u_z$ axis, producing the radial field
 
 $$
-\vec E = \frac{\lambda}{2\pi\epsilon_0 r}\,\vec{u_r}.
+\vec E = \frac{\digamma_{\mathrm{chg}}}{2\pi\epsilon_0 r}\,\vec{u_r}.
 $$
 
 Let a magnetic dipole of moment $\vec\mu = \mu_z\vec u_z$ travel once around a circle of radius $R$ in the plane $z = \mathrm{const}$. Along the path $\vec E$ is radial and $d\vec r = R\,d\theta_{\mathrm{azm}}\,\vec u_{\mathrm{azm}}$ is tangential, so, using $\vec u_r\times\vec u_z = -\vec u_{\mathrm{azm}}$,
@@ -208,10 +208,10 @@ and the AC phase is independent of $R$:
 
 $$
 \boxed{\;\theta_{\mathrm{pha},AC} = -\frac{2\pi}{h\,c^{2}}\cdot  2\pi R E\,\mu_z
-= -\frac{2\pi \lambda\,\mu_{z}}{h\,c^{2}\,\epsilon_{0}}\;}
+= -\frac{2\pi \digamma_{\mathrm{chg}}\,\mu_{z}}{h\,c^{2}\,\epsilon_{0}}\;}
 $$
 
-for the counterclockwise traversal, using $2\pi R E = \lambda/\epsilon_0$. The magnitude depends on the enclosed line charge and on the axial component of the dipole moment, and not on the radius or the speed; the sign is reversed by reversing the traversal. This is the cleanest closed-form instance of the effect, and it is the exact electric dual of the AB phase of a charge encircling a flux line.
+for the counterclockwise traversal, using $2\pi R E = \digamma_{\mathrm{chg}}/\epsilon_0$. The magnitude depends on the enclosed line charge and on the axial component of the dipole moment, and not on the radius or the speed; the sign is reversed by reversing the traversal. This is the cleanest closed-form instance of the effect, and it is the exact electric dual of the AB phase of a charge encircling a flux line.
 
 ### Orders of Magnitude
 
@@ -219,7 +219,7 @@ With $\frac{h}{2\pi}\,c^{2}= 1.0546\times10^{-34}\times(2.998\times10^8)^2\,\mat
 
 - **Neutron.** $\mu_n \approx 1.913\,\mu_N \approx 9.66\times10^{-27}\,\mathrm{J/T}$. For a path of length $L = 0.1\,\mathrm{m}$ with $\vec E\perp d\vec r$ and $E = 10^{7}\,\mathrm{V/m}$, the phase is $\theta_{\mathrm{pha},AC} =\frac{2\pi  \mu_n E L}{h\,c^{2}} \approx  1.02\times10^{-3}\,\mathrm{rad}$, a milliradian-scale phase readily measured by interferometry.
 - **Electron.** $\mu_e \approx 9.28\times10^{-24}\,\mathrm{J/T}$, giving $\theta_{\mathrm{pha},AC} \approx 0.98\,\mathrm{rad}$ for the same field and path — the effect is roughly a thousand times larger for the electron because of the mass ratio in the Bohr magneton.
-- **Line charge.** For $\lambda = 10^{-8}\,\mathrm{C/m}$ and the neutron moment, $\theta_{\mathrm{pha},AC} =\frac{2\pi  \lambda\mu_n}{h\,c^{2}\,\epsilon_{0}} \approx  1.15\times10^{-6}\,\mathrm{rad}$; the smallness reflects the small enclosed charge.
+- **Line charge.** For $\digamma_{\mathrm{chg}} = 10^{-8}\,\mathrm{C/m}$ and the neutron moment, $\theta_{\mathrm{pha},AC} =\frac{2\pi  \digamma_{\mathrm{chg}}\mu_n}{h\,c^{2}\,\epsilon_{0}} \approx  1.15\times10^{-6}\,\mathrm{rad}$; the smallness reflects the small enclosed charge.
 
 These are order-of-magnitude estimates; the point is that the phase is linear in the field, the moment and the path length, so it can be tuned into the detectable range.
 
@@ -288,7 +288,7 @@ $$
 
 for a spin-1/2 of magnetic moment $\vec\mu = \gamma\vec S$, with the phase given by the Hermitian form of the state, read through the trace. In the adiabatic limit it reduces to the solid-angle phase $-\tfrac12\Omega_{\mathrm{sgn}}$ of non-relativistic spin.
 
-The AC effect is the electric dual of the Aharonov–Bohm effect and the magnetic-field dual of the He–McKellar–Wilkens effect: charge is dual to flux, the magnetic dipole to the electric field, and the electric dipole to the magnetic field. For a dipole encircling a line charge of density $\lambda$, the phase is $\theta_{\mathrm{pha},AC} = -\frac{2\pi \lambda\mu_z}{h\,c^{2}\,\epsilon_{0}}$ for counterclockwise traversal, independent of radius and speed. For a neutron over $0.1\,\mathrm{m}$ in a field of $10^{7}\,\mathrm{V/m}$ the magnitude of the phase is $\approx 1.0\times10^{-3}\,\mathrm{rad}$; for an electron it is $\approx 0.98\,\mathrm{rad}$. The phase has been measured by neutron, atom and electron interferometry, and the framework reproduces the standard result without modification.
+The AC effect is the electric dual of the Aharonov–Bohm effect and the magnetic-field dual of the He–McKellar–Wilkens effect: charge is dual to flux, the magnetic dipole to the electric field, and the electric dipole to the magnetic field. For a dipole encircling a line charge of density $\digamma_{\mathrm{chg}}$, the phase is $\theta_{\mathrm{pha},AC} = -\frac{2\pi \digamma_{\mathrm{chg}}\mu_z}{h\,c^{2}\,\epsilon_{0}}$ for counterclockwise traversal, independent of radius and speed. For a neutron over $0.1\,\mathrm{m}$ in a field of $10^{7}\,\mathrm{V/m}$ the magnitude of the phase is $\approx 1.0\times10^{-3}\,\mathrm{rad}$; for an electron it is $\approx 0.98\,\mathrm{rad}$. The phase has been measured by neutron, atom and electron interferometry, and the framework reproduces the standard result without modification.
 
 ## Summary of Notation
 
@@ -306,7 +306,7 @@ The AC effect is the electric dual of the Aharonov–Bohm effect and the magneti
 | $\mathcal{A}_{AC} =\frac{2\pi}{h\,c^{2}}(\vec E\times\vec\mu)\cdot d\vec r$ | AC connection one-form |
 | $\theta_{\mathrm{pha},AB} =\frac{2\pi ϙ}{h}\oint\vec A\cdot d\vec r$ | Aharonov–Bohm phase |
 | $\theta_{\mathrm{pha},HMW} =\frac{2\pi}{h}\oint(\vec B\times\vec d)\cdot d\vec r$ | He–McKellar–Wilkens phase |
-| $\lambda$ | Linear charge density of the line-charge geometry |
+| $\digamma_{\mathrm{chg}}$ | Linear charge density of the line-charge geometry |
 | $\Omega_{\mathrm{sgn}}$ | Oriented solid angle (adiabatic limit) |
 
 ## Further Reading

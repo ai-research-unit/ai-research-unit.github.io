@@ -47,7 +47,7 @@ because the norm is central: $\tilde U\tilde U^{\natural}=\langle\tilde U\rangle
 
 ### The Centre
 
-A central element of $G$ is a complex scalar $\lambda$ with $\lambda^{2}=1$, so
+A central element of $G$ is a complex scalar $\digamma_{\mathrm{scl}}$ with $\digamma_{\mathrm{scl}}^{2}=1$, so
 
 $$
 Z(G)=\{\pm e_t\}\cong\mathbb{Z}/2\mathbb{Z}.

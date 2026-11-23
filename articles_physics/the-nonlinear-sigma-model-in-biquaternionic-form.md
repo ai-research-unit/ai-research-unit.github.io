@@ -47,12 +47,12 @@ The linear model is the central scalar of the framework with the invariant poten
 $$
 \tilde{Ξ} = \frac{1}{\sqrt2}\left(\xi_1 + i\xi_2\right)e_t ,
 \qquad
-V = \frac{\lambda}{4}\left(\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) - v_0^2\right)^2 ,
+V = \frac{\digamma_{\mathrm{qtc}}}{4}\left(\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) - v_0^2\right)^2 ,
 \qquad
 \rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = \frac12\left(\xi_1^2 + \xi_2^2\right),
 $$
 
-whose vacuum sits at $\xi_1 = \sqrt2\,v_0$, $\xi_2 = 0$, and whose two real components have the masses $m_h^2 = \lambda v_0^2$ and $m_\theta^2 = 0$. Here $v_0 = |\langle\xi\rangle|$ is the order parameter in the normalisation $\rho = v_0^2$, so that $f = \sqrt2\,v_0$; the companion Higgs article writes the same potential as $\beta(\rho - v^2/2)^2$, with $v$ the conventional vacuum expectation value, $v = \sqrt2\,v_0$. In the electroweak case $v$ is therefore the conventional $246$ GeV value while the field's own expectation value is $174$ GeV. Writing
+whose vacuum sits at $\xi_1 = \sqrt2\,v_0$, $\xi_2 = 0$, and whose two real components have the masses $m_h^2 = \digamma_{\mathrm{qtc}} v_0^2$ and $m_\theta^2 = 0$. Here $v_0 = |\langle\xi\rangle|$ is the order parameter in the normalisation $\rho = v_0^2$, so that $f = \sqrt2\,v_0$; the companion Higgs article writes the same potential as $\beta(\rho - v^2/2)^2$, with $v$ the conventional vacuum expectation value, $v = \sqrt2\,v_0$. In the electroweak case $v$ is therefore the conventional $246$ GeV value while the field's own expectation value is $174$ GeV. Writing
 
 $$
 \xi_1 = \sqrt2\,v_0 + h,
@@ -245,7 +245,7 @@ $$
 \mathcal{L}_{2n} \sim \frac{f^2}{\Lambda^{2n-2}}\,\partial^{2n},
 $$
 
-where $\Lambda$ is the scale of the sector that was integrated out — in the framework, the radial mass $m_h = \sqrt{\lambda}\,v_0$ — and each term carries a coefficient of order one in units of $f$ and $\Lambda$. The two-derivative term fixes the target geometry and the decay constant; the four-derivative terms are the first corrections, and in three spatial dimensions the leading four-derivative term that stabilises a soliton is the Skyrme term. In four spacetime dimensions the nonlinear sigma model is nonrenormalizable in the power-counting sense, and it is used as a low-energy expansion, with the cutoff at $\Lambda$; the divergence structure is the standard one, and in the framework it is the same divergence structure written with the biquaternion-norm trace.
+where $\Lambda$ is the scale of the sector that was integrated out — in the framework, the radial mass $m_h = \sqrt{\digamma_{\mathrm{qtc}}}\,v_0$ — and each term carries a coefficient of order one in units of $f$ and $\Lambda$. The two-derivative term fixes the target geometry and the decay constant; the four-derivative terms are the first corrections, and in three spatial dimensions the leading four-derivative term that stabilises a soliton is the Skyrme term. In four spacetime dimensions the nonlinear sigma model is nonrenormalizable in the power-counting sense, and it is used as a low-energy expansion, with the cutoff at $\Lambda$; the divergence structure is the standard one, and in the framework it is the same divergence structure written with the biquaternion-norm trace.
 
 **The coset count.** Goldstone's theorem gives one massless scalar per broken generator, so the number of fields is $\dim(G/H)$. For the framework's abelian case $G = \mathrm{U}(1)$, $H = \{1\}$ gives one field and target $\mathbb{S}^1$; for the non-abelian case $G = SU(2)_L\times SU(2)_R$, broken to the diagonal $H = SU(2)_V$, gives three fields and target the group manifold $\mathbb{S}^3$; and the $O(N)\to O(N-1)$ case, whose target is $\mathbb{S}^{N-1}$, gives $N-1$ fields. The framework's two targets are the $N=2$ and $N=4$ cases of this list, in the abelian and quaternion forms.
 
@@ -314,7 +314,7 @@ The framework's contribution to the construction is the target manifold, the inv
 | $\vec\pi = \sum_a\pi_a e_a \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi}$ | Goldstone field (non-abelian) |
 | $\tilde U = \exp(\vec\pi/f)$ | Non-linear field; $\tilde U\tilde U^{\natural} = e_t$ |
 | $f$ | Decay constant of the broken symmetry |
-| $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, $V = \frac{\lambda}{4}(\rho-v_0^2)^2$ | Linear-model invariant and potential |
+| $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, $V = \frac{\digamma_{\mathrm{qtc}}}{4}(\rho-v_0^2)^2$ | Linear-model invariant and potential |
 | $\xi_1 = \sqrt2 v_0 + h$, $\xi_2 = \vartheta_{\mathrm{fld}}$ | Radial and Goldstone components; $f = \sqrt2 v_0$ |
 | $j^R_{\imath} = \tilde U^{*}\partial/\partial R_{1,\imath}\,\tilde U$, $j^L_{\imath} = \partial/\partial R_{1,\imath}\,\tilde U\,\tilde U^{*}$ | Maurer–Cartan currents |
 | $\partial/\partial R_{1,\imath} j_{\jmath} - \partial/\partial R_{1,\jmath} j_{\imath} + [j_{\imath},j_{\jmath}] = 0$ | Flatness (zero curvature) of the group-valued field |
@@ -323,7 +323,7 @@ The framework's contribution to the construction is the target manifold, the inv
 | $ds^2 = \frac12\mathrm{Sc}(\overline{\tilde U^{*}d\tilde U}\tilde U^{*}d\tilde U)$ | Invariant (round) metric on the target |
 | $\mathrm{Sc}(e_ae_b) = -\delta_{ab}$ | Trace identity fixing the kinetic normalisation |
 | $\mathcal{L}_4$ | Four-derivative term (Skyrme; companion article) |
-| $\Lambda = m_h = \sqrt{\lambda}\,v_0$ | Cutoff of the effective theory (radial mass) |
+| $\Lambda = m_h = \sqrt{\digamma_{\mathrm{qtc}}}\,v_0$ | Cutoff of the effective theory (radial mass) |
 | $\pi\sim\pi+2\pi f$ | Compact phase of the abelian target |
 | $a,b$ | Internal isospin indices, written low; every contraction over them is an explicit sum |
 | $\delta_{\imath\jmath}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |

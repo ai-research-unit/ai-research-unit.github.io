@@ -192,22 +192,22 @@ The constancy of the curvature also shows why the angle is robust: no matter how
 
 ### The Foucault Pendulum
 
-The best-known mechanical instance is the Foucault pendulum. Let $\lambda$ be the latitude and $\theta_{\mathrm{foc}}=\frac{\pi}{2}-\lambda$ the colatitude; the local vertical $\vec u$ makes the angle $\theta_{\mathrm{foc}}$ with the Earth's axis, so once per sidereal day it traces the circle of polar angle $\theta_{\mathrm{foc}}$ on the sphere of directions, and that circle is the loop of the transport. The swing direction is horizontal and is fixed in inertial space to the accuracy of the adiabatic approximation, and its transport is parallel in the sense that matters for the angle: a parallel-transported tangent vector has no component of its spatial angular velocity along the local vertical. The two prescriptions agree in the turn about $\vec u$, which is what the angle measures, and differ only in the transverse component, of the order of the slowness. The ground frame, by contrast, turns about $\vec u$ at the rate
+The best-known mechanical instance is the Foucault pendulum. Let $\theta_{\mathrm{lat}}$ be the latitude and $\theta_{\mathrm{foc}}=\frac{\pi}{2}-\theta_{\mathrm{lat}}$ the colatitude; the local vertical $\vec u$ makes the angle $\theta_{\mathrm{foc}}$ with the Earth's axis, so once per sidereal day it traces the circle of polar angle $\theta_{\mathrm{foc}}$ on the sphere of directions, and that circle is the loop of the transport. The swing direction is horizontal and is fixed in inertial space to the accuracy of the adiabatic approximation, and its transport is parallel in the sense that matters for the angle: a parallel-transported tangent vector has no component of its spatial angular velocity along the local vertical. The two prescriptions agree in the turn about $\vec u$, which is what the angle measures, and differ only in the transverse component, of the order of the slowness. The ground frame, by contrast, turns about $\vec u$ at the rate
 
 $$
-\Omega_{\mathrm E}\cos\theta_{\mathrm{foc}}=\Omega_{\mathrm E}\sin\lambda ,
+\Omega_{\mathrm E}\cos\theta_{\mathrm{foc}}=\Omega_{\mathrm E}\sin\theta_{\mathrm{lat}} ,
 $$
 
-so the swing plane turns relative to the ground at that rate, and the precession is $2\pi\sin\lambda$ per sidereal day: it vanishes at the equator and is a full turn at the pole.
+so the swing plane turns relative to the ground at that rate, and the precession is $2\pi\sin\theta_{\mathrm{lat}}$ per sidereal day: it vanishes at the equator and is a full turn at the pole.
 
 The same number is the holonomy of the loop. The parallel transport of a tangent vector around a circle of polar angle $\theta_{\mathrm{foc}}$ on the unit sphere turns it by the enclosed solid angle
 
 $$
-\Omega_{\mathrm{F}}=2\pi(1-\cos\theta_{\mathrm{foc}})=2\pi(1-\sin\lambda)
+\Omega_{\mathrm{F}}=2\pi(1-\cos\theta_{\mathrm{foc}})=2\pi(1-\sin\theta_{\mathrm{lat}})
 \pmod{2\pi},
 $$
 
-and the signed turn read in the co-rotating frame is $-2\pi\cos\theta_{\mathrm{foc}}=-2\pi\sin\lambda$. The two differ by a full turn and describe the same rotation of the swing plane: at $\lambda=45^\circ$ they are $106^\circ$ and $-254^\circ$, which differ by exactly $360^\circ$. The pendulum therefore supplies the standard textbook value $2\pi\sin\lambda$ of the precession and the solid-angle form $\Omega_{\mathrm{F}}$ of the holonomy at once, the two being equal as rotations; the sign and the mod-$2\pi$ freedom are the ones already fixed in "The Sign and the Orientation" above.
+and the signed turn read in the co-rotating frame is $-2\pi\cos\theta_{\mathrm{foc}}=-2\pi\sin\theta_{\mathrm{lat}}$. The two differ by a full turn and describe the same rotation of the swing plane: at $\theta_{\mathrm{lat}}=45^\circ$ they are $106^\circ$ and $-254^\circ$, which differ by exactly $360^\circ$. The pendulum therefore supplies the standard textbook value $2\pi\sin\theta_{\mathrm{lat}}$ of the precession and the solid-angle form $\Omega_{\mathrm{F}}$ of the holonomy at once, the two being equal as rotations; the sign and the mod-$2\pi$ freedom are the ones already fixed in "The Sign and the Orientation" above.
 
 ## The Spin Example and the Double Cover
 

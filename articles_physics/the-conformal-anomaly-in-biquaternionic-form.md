@@ -100,10 +100,10 @@ and the anomaly is the statement that this is non-zero for a classically invaria
 
 ### The Spectral Sum
 
-**The determinant as a sum over the spectrum.** With $\lambda$ running over the spectrum of $S^{(2)}$ on the field space, each eigenvalue counted with its multiplicity,
+**The determinant as a sum over the spectrum.** With $\eta$ running over the spectrum of $S^{(2)}$ on the field space, each eigenvalue counted with its multiplicity,
 
 $$
-\Gamma_1=-\tfrac12\int_0^\infty\frac{d\tau}{\tau}\sum_{\imath}\mathrm{e}^{-\tau\lambda},
+\Gamma_1=-\tfrac12\int_0^\infty\frac{d\tau}{\tau}\sum_{\imath}\mathrm{e}^{-\tau\eta},
 $$
 
 up to a divergent constant, the proper-time representation of the logarithm of a determinant. The sum names its index and its set, as *Operator and Calculus Conventions* requires of every sum in the series, and it needs no second symbol for the reading. A symbol that summed the spectrum would name the same operation, and the sum states it.
@@ -115,7 +115,7 @@ up to a divergent constant, the proper-time representation of the logarithm of a
 **The small-$\tau$ expansion.** Regulating the determinant with a proper-time cutoff, the heat kernel has the expansion
 
 $$
-\sum_{\imath}\mathrm{e}^{-\tau\lambda}\;\sim\;\frac{1}{(4\pi\tau)^{d/2}}\sum_{k\ge0}\tau^{k}\int d^dx\,\sqrt{|g|}\,a_\imath,
+\sum_{\imath}\mathrm{e}^{-\tau\eta}\;\sim\;\frac{1}{(4\pi\tau)^{d/2}}\sum_{k\ge0}\tau^{k}\int d^dx\,\sqrt{|g|}\,a_\imath,
 $$
 
 where $a_\imath$ is the Seeley–DeWitt coefficient of order $k$, the first being $a_0=1$ for the minimal operator. The term that survives renormalisation is $a_{d/2}$, because $\tau^{k-d/2}$ is logarithmically divergent exactly at $k=d/2$. The response of the regulated determinant is then
@@ -345,8 +345,8 @@ The response is written as a sum over the diagonal of the matrix of components o
 | $T_{\imath\jmath}=\frac{2}{\sqrt{|g|}}\frac{\delta S}{\delta g_{\imath\jmath}}$ | Stress tensor, both indices low |
 | $\mathcal{A}_{\mathrm{cfa}}\big|_{\text{class}}=\sum_{\imath,\jmath}g_{\imath\jmath}T_{\imath\jmath}$ | The classical response, the diagonal sum of the matrix of components |
 | $\Gamma_1=\tfrac12\log\det S^{(2)}$ | One-loop effective action whose variation is the anomaly |
-| $\lambda$ | An eigenvalue of $S^{(2)}$ on the field space, counted with its multiplicity |
-| $\sum_{\imath}\mathrm{e}^{-\tau\lambda}$ | The heat kernel of $S^{(2)}$, as a sum over the spectrum |
+| $\eta$ | An eigenvalue of $S^{(2)}$ on the field space, counted with its multiplicity |
+| $\sum_{\imath}\mathrm{e}^{-\tau\eta}$ | The heat kernel of $S^{(2)}$, as a sum over the spectrum |
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous response |
 | $\zeta=(d-2)/(4(d-1))$ | Improvement coupling; $\zeta=1/6$ at $d=4$ |
 | $\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$ | Quaternionic norm; $\dim_{\mathbb{C}}\mathbb{B}=4$ |

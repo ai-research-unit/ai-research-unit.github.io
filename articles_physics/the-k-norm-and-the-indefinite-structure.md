@@ -105,7 +105,7 @@ $$
 \mathrm{Kr}(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural*}=|Q_t|^{2}-\lVert\vec Q\rVert^{2}.
 $$
 
-Four properties follow from the formula and from nothing else. The value is real, because the diagonal of a Hermitian form is real. It is homogeneous of degree two under complex scalars, $\mathrm{Kr}(\lambda\tilde Q)=|\lambda|^{2}\mathrm{Kr}(\tilde Q)$, so its zero set is a cone and its non-zero level sets are homogeneous. Its polar form is non-degenerate, with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis. Its inertia is $(1,3)$ as a form on $\mathbb{C}^{4}$ and $(2,6)$ on the eight real parameters.
+Four properties follow from the formula and from nothing else. The value is real, because the diagonal of a Hermitian form is real. It is homogeneous of degree two under complex scalars, $\mathrm{Kr}(\digamma_{\mathrm{scl}}\tilde Q)=|\digamma_{\mathrm{scl}}|^{2}\mathrm{Kr}(\tilde Q)$, so its zero set is a cone and its non-zero level sets are homogeneous. Its polar form is non-degenerate, with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis. Its inertia is $(1,3)$ as a form on $\mathbb{C}^{4}$ and $(2,6)$ on the eight real parameters.
 
 The norm is the plain norm read on moduli. The plain norm is $P(\tilde Q)=Q_t^{2}-B^{2}$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and the quaternionic norm is $N(\tilde Q)=Q_t^{2}+B^{2}$. Replacing each square by the square of the modulus in the first gives the K norm, and doing the same in the second gives the Hermitian norm. So the two real norms are the two complex norms read on moduli, and each real norm keeps the inertia of its complex partner while losing its complex value.
 
@@ -173,9 +173,9 @@ The three sets have five equivalent descriptions each, and the equivalence is th
 **The value, the sign and the definiteness of the line are one datum.** On the line, homogeneity reduces the form to one number:
 
 $$
-\mathrm{Kr}(\lambda\tilde Q)=|\lambda|^{2}\mathrm{Kr}(\tilde Q),
+\mathrm{Kr}(\digamma_{\mathrm{scl}}\tilde Q)=|\digamma_{\mathrm{scl}}|^{2}\mathrm{Kr}(\tilde Q),
 \qquad
-\lambda\in\mathbb{C}.
+\digamma_{\mathrm{scl}}\in\mathbb{C}.
 $$
 
 So the restriction to $\mathbb{C}\tilde Q$ is positive definite, negative definite or identically zero according to the sign of that number. There is no element whose line is definite with a sign other than the sign of its value.

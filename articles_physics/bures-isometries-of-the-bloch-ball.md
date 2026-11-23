@@ -67,7 +67,7 @@ The consequence is that the state space is exactly the set the rotations preserv
 
 The boost therefore acts on states only after a projection. The linear image has doubled scalar part $2\,\mathrm{Sc}=\cosh\theta_{\mathrm{rpd}}+s_{\parallel}\sinh\theta_{\mathrm{rpd}}$, which is one only at $\theta_{\mathrm{rpd}}=0$; dividing by it produces a map that is defined on the state space and is not linear. So there are two maps, and neither is a channel: the linear one is not trace-preserving and the projected one is not affine.
 
-The non-affinity is a number. Take the two states of the order-reversal table below, $\vec s_{\Psi}=(0.3,0,0)$ and $\vec s_{\Psi}'=(-0.35,0,0)$, mix them with weight $\lambda=0.4$ and boost along $\vec e_x$ at rapidity $1$: the image of the mixture has coordinate $0.721015$ while the mixture of the images has $0.682370$, a difference of $0.038645$. The same comparison for a rotation of the same angle differs by $1.1\times10^{-16}$. A channel is affine on the state space by definition, so no boost is a channel.
+The non-affinity is a number. Take the two states of the order-reversal table below, $\vec s_{\Psi}=(0.3,0,0)$ and $\vec s_{\Psi}'=(-0.35,0,0)$, mix them with weight $\digamma_{\mathrm{mix}}=0.4$ and boost along $\vec e_x$ at rapidity $1$: the image of the mixture has coordinate $0.721015$ while the mixture of the images has $0.682370$, a difference of $0.038645$. The same comparison for a rotation of the same angle differs by $1.1\times10^{-16}$. A channel is affine on the state space by definition, so no boost is a channel.
 
 ### The channel interpretation
 

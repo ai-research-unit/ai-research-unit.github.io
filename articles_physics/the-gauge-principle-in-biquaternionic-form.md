@@ -78,7 +78,7 @@ where $\Gamma = \Gamma(\tilde{Q})$ is a real scalar function and $ϙ$ is a real 
 and the chain rule
 
 $$
-\tilde\nabla_\Phi\lambda =\frac{2\pi i\,ϙ}{h}\,\lambda\,\tilde\nabla_\Phi\Gamma .
+\tilde\nabla_\Phi\digamma_{\mathrm{gau}} =\frac{2\pi i\,ϙ}{h}\,\digamma_{\mathrm{gau}}\,\tilde\nabla_\Phi\Gamma .
 $$
 
 The second uses the centrality of $\digamma_{\mathrm{gau}}$: the derivative acts only on the scalar function $\Gamma$, and $\digamma_{\mathrm{gau}}$ passes through $\tilde\nabla_\Phi\Gamma$. Combining the two,

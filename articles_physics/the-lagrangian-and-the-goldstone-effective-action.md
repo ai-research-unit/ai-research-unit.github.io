@@ -34,7 +34,7 @@ The conventions are restated here so that every sign below is checkable from thi
 
 The field. $\vartheta_{\mathrm{fld}}$ is the canonically normalized phase, $\vartheta_{\mathrm{fld}}=\sqrt2\,\mathrm{Im}\,\ln\tilde\Xi$ in the abelian case, so that its kinetic term carries no factor of $f$. The dimensionless phase is $\vartheta_{\mathrm{fld}}/f$, and the two normalizations differ by the decay constant.
 
-The scale. $f=\sqrt2\,v$ is the decay constant, the order parameter of the breaking; $\Lambda$ is the radial mass, $\Lambda=\sqrt{2\lambda}\,v$, and the expansion is in $p/\Lambda$ and in $\vartheta/f$.
+The scale. $f=\sqrt2\,v$ is the decay constant, the order parameter of the breaking; $\Lambda$ is the radial mass, $\Lambda=\sqrt{2\digamma_{\mathrm{qtc}}}\,v$, and the expansion is in $p/\Lambda$ and in $\vartheta/f$.
 
 The coefficients. $c_4,c_6,\dots$ are dimensionless and of order one in units of $f$ and $\Lambda$; they are fixed by the radial sector, which the effective action has integrated out.
 
@@ -160,7 +160,7 @@ The boundary. The kinetic term's biquaternionic form is the algebra's; the coeff
 |---|---|
 | $\vartheta_{\mathrm{fld}}$ | canonically normalized Goldstone phase |
 | $f=\sqrt2\,v$ | decay constant |
-| $\Lambda=\sqrt{2\lambda}\,v$ | radial mass, the expansion's scale |
+| $\Lambda=\sqrt{2\digamma_{\mathrm{qtc}}}\,v$ | radial mass, the expansion's scale |
 | $c_4,c_6,\dots$ | dimensionless matching coefficients |
 | $X=\sum_{\imath}\partial_{\imath}\vartheta\partial_{\imath}\vartheta$ | the invariant whose powers form the series |
 | $j_{\imath}=f\partial_{\imath}\vartheta_{\mathrm{fld}}$ | shift current |

@@ -109,7 +109,7 @@ $$
 $$
 
 $$
-\chi(\lambda)=\bigl((\lambda-Q_t)^2+B^2\bigr)^{2},\qquad
+\chi(\eta)=\bigl((\eta-Q_t)^2+B^2\bigr)^{2},\qquad
 \operatorname{spec}=\{Q_t+iB,\ Q_t-iB\}\ \text{each twice},\qquad B^2=Q_x^2+Q_y^2+Q_z^2 .
 $$
 
@@ -134,7 +134,7 @@ $$
 
 | subspace | condition on $\tilde Q$ | condition on $M$ | real dim. |
 | --- | --- | --- | --- |
-| $\mathbb{B}_{C}$ | $\tilde Q^{\natural}=\tilde Q$ | $M=\lambda\mathrm I_4$ | $2$ |
+| $\mathbb{B}_{C}$ | $\tilde Q^{\natural}=\tilde Q$ | $M=\digamma_{\mathrm{scl}}\mathrm I_4$ | $2$ |
 | $\mathbb{B}_{V}$ | $\tilde Q^{\natural}=-\tilde Q$ | $\operatorname{Tr}M=0$, equivalently $M^{\mathsf T}=-M$ | $6$ |
 | $\mathbb{B}_{H}$ | $\overline{\tilde Q}=\tilde Q$ | $M=\overline M$ | $4$ |
 | $\mathbb{B}_{iH}$ | $\overline{\tilde Q}=-\tilde Q$ | $M=-\overline M$ | $4$ |
@@ -385,7 +385,7 @@ The mixed units. $\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y)$. Th
 
 The Peirce decomposition. The four components are read in the order $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$, which is a second choice, independent of the first: the two middle slots can be exchanged.
 
-The adapted basis and its scale. The mixed units are defined only up to $\vec\Pi_{\mathrm{nil},+}\mapsto\lambda\vec\Pi_{\mathrm{nil},+}$ and $\vec\Pi_{\mathrm{nil},-}\mapsto\lambda^{-1}\vec\Pi_{\mathrm{nil},-}$, so the frame carries a free nonzero scalar as well. The scale is harmless for the algebra and fatal for a display that pretends to be unique.
+The adapted basis and its scale. The mixed units are defined only up to $\vec\Pi_{\mathrm{nil},+}\mapsto\digamma_{\mathrm{scl}}\vec\Pi_{\mathrm{nil},+}$ and $\vec\Pi_{\mathrm{nil},-}\mapsto\digamma_{\mathrm{scl}}^{-1}\vec\Pi_{\mathrm{nil},-}$, so the frame carries a free nonzero scalar as well. The scale is harmless for the algebra and fatal for a display that pretends to be unique.
 
 The minimal left ideal. $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ is the two-dimensional carrier of the older literature. It is built from the unit, and it is the idempotent of the unit that selects it.
 
@@ -572,7 +572,7 @@ $$
 \tilde{Ξ}\longmapsto a\,\tilde{Ξ}\,b.
 $$
 
-The pair $(a,b)$ is the operator, written $L_aR_b$ when a name is needed. It carries seven effective parameters rather than eight, because $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same action for any nonzero scalar $\lambda$. No basis appears in the definition, and none appears in the result.
+The pair $(a,b)$ is the operator, written $L_aR_b$ when a name is needed. It carries seven effective parameters rather than eight, because $(a,b)$ and $(\digamma_{\mathrm{scl}} a,\digamma_{\mathrm{scl}}^{-1}b)$ give the same action for any nonzero scalar $\digamma_{\mathrm{scl}}$. No basis appears in the definition, and none appears in the result.
 
 This is the form the physics equations of the corpus take when the equation is the subject and no array is required. Each factor is named, so a reader sees which factor carries the mass, which the momentum and which the grading, and no factor is an entry of a display.
 

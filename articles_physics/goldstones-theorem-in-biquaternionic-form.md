@@ -9,7 +9,7 @@ The theorem is standard, and the framework's role is delimiting. What the framew
 Three statements organise the article.
 
 1. **The broken symmetry is the central $\mathrm{U}(1)$.** The order parameter is the vacuum expectation value of the central-valued field, and it is a central scalar; the degenerate minima form a circle in the two-real-dimensional space of central values, and the phase rotation acts on that circle. The symmetry that is broken is the framework's canonical continuous symmetry, and its phases are central, so the order parameter and the Goldstone mode are both central-valued.
-2. **The Goldstone mode is exactly massless, and the masslessness is exact.** In the expansion about the minimum, the radial direction has curvature $\lambda v^2$ (in the normalization fixed below) while the angular direction has curvature identically zero, because the potential depends on the modulus alone; this was verified numerically. The masslessness is not a small-coupling or tree-level accident; it is the vanishing of the potential's second derivative along the symmetry orbit.
+2. **The Goldstone mode is exactly massless, and the masslessness is exact.** In the expansion about the minimum, the radial direction has curvature $\digamma_{\mathrm{qtc}} v^2$ (in the normalization fixed below) while the angular direction has curvature identically zero, because the potential depends on the modulus alone; this was verified numerically. The masslessness is not a small-coupling or tree-level accident; it is the vanishing of the potential's second derivative along the symmetry orbit.
 3. **The framework contributes no new mechanism.** The Goldstone field is a scalar, so it lives in the centre like every other scalar of the sector; the theorem's proof, its counting, and the decay constant are standard. The scalar sector's usual structural result applies: the algebra supplies the centrality and the biquaternion-norm geometry, and no native ladder.
 
 The article is organised as follows. The next section states the symmetry and its spontaneous breaking. The following section fixes the potential, the vacuum manifold and the order parameter. The next section expands about the minimum and derives the mass matrix, with the radial and angular curvatures. The section after that derives the conserved current, the charge and the decay constant. The next section states the theorem and its proof in the form used here. A section counts the Goldstone bosons and states the coset rule. A section states the biquaternion interpretation. The article closes with the standard/open separation.
@@ -63,11 +63,11 @@ Three consequences must be distinguished, because they are often conflated.
 The renormalizable potential of a single complex scalar that respects the $\mathrm{U}(1)$ and the reality of the action is a function of the invariant $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ alone,
 
 $$
-V=\frac{\lambda}{4}\left(\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)-v^2\right)^2
-=\frac{\lambda}{4}\left(\frac{\xi_1^2+\xi_2^2}{2}-v^2\right)^2 ,
+V=\frac{\digamma_{\mathrm{qtc}}}{4}\left(\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)-v^2\right)^2
+=\frac{\digamma_{\mathrm{qtc}}}{4}\left(\frac{\xi_1^2+\xi_2^2}{2}-v^2\right)^2 ,
 $$
 
-with $\lambda>0$. The potential is bounded below, symmetric under $\xi\to \exp(i\theta_{\mathrm{cen}})\xi$, and minimized when
+with $\digamma_{\mathrm{qtc}}>0$. The potential is bounded below, symmetric under $\xi\to \exp(i\theta_{\mathrm{cen}})\xi$, and minimized when
 
 $$
 \mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)=v^2
@@ -108,21 +108,21 @@ $$
 and the potential becomes
 
 $$
-V=\frac{\lambda}{4}\left(\frac{(\sqrt2 v+h)^2+{\vartheta_{\mathrm{fld}}}^2}{2}-v^2\right)^2
-=\frac{\lambda}{4}\left(\sqrt2\,v\,h+\frac{h^2}{2}+\frac{{\vartheta_{\mathrm{fld}}}^2}{2}\right)^2 .
+V=\frac{\digamma_{\mathrm{qtc}}}{4}\left(\frac{(\sqrt2 v+h)^2+{\vartheta_{\mathrm{fld}}}^2}{2}-v^2\right)^2
+=\frac{\digamma_{\mathrm{qtc}}}{4}\left(\sqrt2\,v\,h+\frac{h^2}{2}+\frac{{\vartheta_{\mathrm{fld}}}^2}{2}\right)^2 .
 $$
 
 Expanding to second order in the fluctuations,
 
 $$
-\boxed{\;V=\frac{\lambda}{2}\,v^2 h^2+O(h^3,h{\vartheta_{\mathrm{fld}}}^2,\dots)
+\boxed{\;V=\frac{\digamma_{\mathrm{qtc}}}{2}\,v^2 h^2+O(h^3,h{\vartheta_{\mathrm{fld}}}^2,\dots)
 \qquad\Longrightarrow\qquad
-m_h^2=\lambda v^2 ,
+m_h^2=\digamma_{\mathrm{qtc}} v^2 ,
 \qquad
 m_G^2=0\;},
 $$
 
-where the masses are read from $\mathcal L\supset-\frac12 m^2(\text{field})^2$. The **mass matrix** is diagonal with entries $(m_h^2,0)$: the radial mode is massive, with a mass that is nonzero for every $\lambda>0$ and every $v\ne0$, and the angular mode is **exactly massless**.
+where the masses are read from $\mathcal L\supset-\frac12 m^2(\text{field})^2$. The **mass matrix** is diagonal with entries $(m_h^2,0)$: the radial mode is massive, with a mass that is nonzero for every $\digamma_{\mathrm{qtc}}>0$ and every $v\ne0$, and the angular mode is **exactly massless**.
 
 The masslessness has a structural reason that the expansion makes visible. The potential depends on the fields only through $\xi_1^2+\xi_2^2$, so its restriction to the circle of minima is constant; the angular direction is a direction of exact flatness, not merely of small curvature. The angular fluctuation $\vartheta_{\mathrm{fld}}$ moves along the symmetry orbit, and the potential cannot give it a mass because the symmetry relates all points of the orbit. Equivalently, the $\vartheta_{\mathrm{fld}}$-dependence of $V$ enters only through the invariant, and at a point where the invariant is stationary in $\vartheta_{\mathrm{fld}}$, every $\vartheta_{\mathrm{fld}}$ derivative of $V$ vanishes. The field $\vartheta_{\mathrm{fld}}$ is the **Goldstone (Nambu–Goldstone) boson** of the broken $\mathrm{U}(1)$; it is a scalar, and in this framework it is central-valued like the field it comes from.
 
@@ -257,7 +257,7 @@ The discrete case is worth one remark for contrast. A $\mathbb{Z}/2$ symmetry ca
 
 ## Summary
 
-The scalar sector's canonical continuous symmetry is the central phase $\mathrm{U}(1)$ generated by the Noether charge of the current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$, acting on the central-valued field by $\xi_{\mathrm{fop}}\to \exp(-i\theta_{\mathrm{cen}})\xi_{\mathrm{fop}}$. Taking the renormalizable invariant potential $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})-v^2)^2$, the vacuum manifold is the circle $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=v^2$, the order parameter $\langle\tilde{Ξ}_{\mathrm{fop}}\rangle=v\exp(i\theta_{\mathrm{cen},0})e_t$ is a central condensate, and the symmetry breaks as $\mathrm{U}(1)\to\{1\}$. Expanding in the two real components, $\xi_1=\sqrt2v+h$ and $\xi_2=\vartheta_{\mathrm{fld}}$, the kinetic term is canonical, the mass matrix is diagonal with entries $(m_h^2,m_G^2)=(\lambda v^2,0)$, and the Goldstone boson $\vartheta_{\mathrm{fld}}$ is exactly massless: the potential depends only on the modulus, so the angular direction is exactly flat. The values were verified numerically — radial curvature $\lambda v^2$ in the modulus coordinate, angular curvature the numerical zero of a second difference, mixed derivative identically zero.
+The scalar sector's canonical continuous symmetry is the central phase $\mathrm{U}(1)$ generated by the Noether charge of the current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$, acting on the central-valued field by $\xi_{\mathrm{fop}}\to \exp(-i\theta_{\mathrm{cen}})\xi_{\mathrm{fop}}$. Taking the renormalizable invariant potential $V=\frac{\digamma_{\mathrm{qtc}}}{4}(\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})-v^2)^2$, the vacuum manifold is the circle $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=v^2$, the order parameter $\langle\tilde{Ξ}_{\mathrm{fop}}\rangle=v\exp(i\theta_{\mathrm{cen},0})e_t$ is a central condensate, and the symmetry breaks as $\mathrm{U}(1)\to\{1\}$. Expanding in the two real components, $\xi_1=\sqrt2v+h$ and $\xi_2=\vartheta_{\mathrm{fld}}$, the kinetic term is canonical, the mass matrix is diagonal with entries $(m_h^2,m_G^2)=(\digamma_{\mathrm{qtc}} v^2,0)$, and the Goldstone boson $\vartheta_{\mathrm{fld}}$ is exactly massless: the potential depends only on the modulus, so the angular direction is exactly flat. The values were verified numerically — radial curvature $\digamma_{\mathrm{qtc}} v^2$ in the modulus coordinate, angular curvature the numerical zero of a second difference, mixed derivative identically zero.
 
 The Goldstone field's current is $\tilde J_{\Phi}=-f\tilde\nabla_\Phi\vartheta_{\mathrm{fld}}+O(\text{two fields})$ with decay constant $f=\sqrt2v\propto\langle\xi_{\mathrm{fop}}\rangle$, and its defining matrix element is $\langle0|\tilde J_{\Phi}(0)|\vartheta_{\mathrm{fld}}(p)\rangle=ifp_{\imath}$; the low-energy couplings of $\vartheta_{\mathrm{fld}}$ are of derivative type. Goldstone's theorem — one massless scalar per broken generator — holds, with the spectral proof and the effective-potential proof both applying, and the counting rule $n_{\mathrm{NG}}=\dim(G/H)$ giving one for $\mathrm{U}(1)\to\{1\}$, none for $\mathrm{U}(1)\to \mathrm{U}(1)$, and $N-1$ for $O(N)\to O(N-1)$. The framework's contribution is the centrality of the symmetry, the order parameter and the Goldstone mode, and the biquaternion-norm geometry of the invariant potential; the theorem and its consequences are standard, and the scalar sector supplies no new mechanism, as its absence of a native ladder in $\mathbb{B}$ requires.
 
@@ -270,11 +270,11 @@ The Goldstone field's current is $\tilde J_{\Phi}=-f\tilde\nabla_\Phi\vartheta_{
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; value space of the order parameter and the Goldstone mode |
 | $\tilde{Ξ}=\xi\,e_t$, $\xi=(\xi_1+i\xi_2)/\sqrt2$ | Central scalar and its real components |
-| $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})-v^2)^2$ | Invariant potential |
+| $V=\frac{\digamma_{\mathrm{qtc}}}{4}(\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})-v^2)^2$ | Invariant potential |
 | $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=v^2$ | Vacuum manifold ($\mathbb{S}^1$) |
 | $\langle\tilde{Ξ}_{\mathrm{fop}}\rangle=v\exp(i\theta_{\mathrm{cen},0})e_t$ | Order parameter (central condensate; modulus $v$) |
 | $\xi_1=\sqrt2v+h$, $\xi_2=\vartheta_{\mathrm{fld}}$ | Radial (Higgs) and angular (Goldstone) fields |
-| $m_h^2=\lambda v^2$, $m_G^2=0$ | Mass matrix entries; Goldstone exactly massless |
+| $m_h^2=\digamma_{\mathrm{qtc}} v^2$, $m_G^2=0$ | Mass matrix entries; Goldstone exactly massless |
 | $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$, $\tilde J_{\Phi}=i(\xi^*\tilde\nabla_\Phi\xi-\xi\tilde\nabla_\Phi\xi^*)$ | Noether current, in the material sector |
 | $\tilde J_{\Phi}=-f\tilde\nabla_\Phi\vartheta_{\mathrm{fld}}+\ldots$, $f=\sqrt2v$ | Current and decay constant |
 | $\langle0\vert\tilde J_{\Phi}(0)\vert\vartheta_{\mathrm{fld}}(p)\rangle=ifp_{\imath}$ | Defining matrix element of the decay constant |

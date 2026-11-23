@@ -180,7 +180,7 @@ The honest ledger. The coupling contributes one term to the exponent, one freedo
 
 3. The determinant's phase. The free companion leaves it open, and the coupling adds a dependence on the connection without changing the difficulty. A background with a nonzero field strength makes the operator's spectrum discrete in the transverse directions — the Landau levels of the equation companion — and the determinant's phase in that setting is a standard but unattractive computation.
 
-4. The interacting theory. A central interaction $\lambda\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)^{2}$ preserves the centrality of every object and the flatness of the measure, and the three-way split survives with an extra term. Whether the algebra suggests a preferred normalisation is the free companion's question and is not pursued here.
+4. The interacting theory. A central interaction $\digamma_{\mathrm{qtc}}\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)^{2}$ preserves the centrality of every object and the flatness of the measure, and the three-way split survives with an extra term. Whether the algebra suggests a preferred normalisation is the free companion's question and is not pursued here.
 
 5. The lattice's exponential link in four dimensions. The one-dimensional check in this article is exact; whether the four-dimensional Wilson-link formulation of the *matter* integral preserves the free two-point function to the same precision, and what its continuum limit is, is not shown.
 

@@ -114,7 +114,7 @@ which is the companion's equation, with $\vec\pi_\imath=-i \frac{h}{2\pi} D_\ima
 **The transformation.** Let $\Gamma$ be a real function, $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$, and let the field and the connection transform as
 
 $$
-\tilde\Xi\longmapsto\lambda\tilde\Xi,
+\tilde\Xi\longmapsto\digamma_{\mathrm{gau}}\tilde\Xi,
 \qquad
 \vec A\longmapsto\vec A-\vec\nabla_\Phi\Gamma,
 \qquad

@@ -161,7 +161,7 @@ The massive operator is $\Box_\Phi - 4\pi^{2}\nu_m^{2}$ with $\nu_m=\frac{mc}{h}
 
 The breaking can be exhibited in one line. If $\xi$ solves the massive equation, $(\Box_\Phi-4\pi^{2}\nu_m^{2})\xi=0$, then the dilated field $\xi_\imath(\tilde{Q}) = \digamma_{\mathrm{cfm}}^{-\mathcal{W}_{\mathrm{dim}}}\xi(\digamma_{\mathrm{cfm}}^{-1}\tilde{Q})$ solves the *dilated* massive equation,
 $$
-\bigl(\Box_\Phi - \lambda^{-2}\,4\pi^{2}\nu_m^{2}\bigr)\xi_\imath = 0 ,
+\bigl(\Box_\Phi - \digamma_{\mathrm{cfm}}^{-2}\,4\pi^{2}\nu_m^{2}\bigr)\xi_\imath = 0 ,
 $$
 because $\Box_\Phi = \digamma_{\mathrm{cfm}}^{-2}\Box_\Phi$ and the mass term is a constant. The computation was checked on a massive plane wave: with $2\pi\nu_m = 0.7$ and $\digamma_{\mathrm{cfm}} = 2$ the rescaled field has $\Box_\Phi\xi_\imath/\xi_\imath = 0.1225 = 4\pi^{2}\nu_m^{2}/\digamma_{\mathrm{cfm}}^2$ to six decimal places. The dilation therefore **rescales the mass and no value of $\digamma_{\mathrm{cfm}}$ returns the original equation** unless $\nu_m = 0$; the massless equation is the unique fixed point of the dilation, and this is the precise sense in which the mass is the order parameter of the symmetry. The same computation for the other four generators shows the same thing: each carries $\nu_m^{2}$ into a point-dependent multiple of itself, and only at $\nu_m=0$ is the set of solutions preserved.
 

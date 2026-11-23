@@ -55,9 +55,9 @@ Why a doublet of complex fields is four real fields. Each component is a complex
 The potential. The most general potential invariant under the gauge group and renormalisable, given one doublet, is
 
 $$
-V(\omicron_{\mathrm{pot}})=-\mu^2\,\omicron_{\mathrm{pot}}^{\dagger}\omicron_{\mathrm{pot}}+\lambda\left(\omicron_{\mathrm{pot}}^{\dagger}\omicron_{\mathrm{pot}}\right)^2 ,
+V(\omicron_{\mathrm{pot}})=-\mu^2\,\omicron_{\mathrm{pot}}^{\dagger}\omicron_{\mathrm{pot}}+\digamma_{\mathrm{qtc}}\left(\omicron_{\mathrm{pot}}^{\dagger}\omicron_{\mathrm{pot}}\right)^2 ,
 \qquad
-\lambda>0 ,
+\digamma_{\mathrm{qtc}}>0 ,
 $$
 
 with the two parameters of the table of article 1. Only $\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}$ can appear: any other invariant would need more than one power of the doublet in a way the group does not allow, and the audit of [The Standard Model Lagrangian Assembled](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) checks that.
@@ -69,7 +69,7 @@ The minimum is a three-sphere. The potential depends on $\omicron_{\mathrm{pot}}
 $$
 \omicron_{\mathrm{pot}}^{\dagger}\omicron_{\mathrm{pot}}=\frac{v^2}{2},
 \qquad
-v^2=\frac{\mu^2}{\lambda} ,
+v^2=\frac{\mu^2}{\digamma_{\mathrm{qtc}}} ,
 $$
 
 which in four real components is a three-sphere $S^3$ of radius $v/\sqrt2$. Every point of it is a minimum, and the theory must choose one.
@@ -89,7 +89,7 @@ Where the identification stops. The labelling earns its keep only if a rotor act
 
 The numbers are reproduced and the carrier is not. Three Goldstones and one surviving circle follow from the ideal, and the same three and one are what the Standard Model doublet gives. The carriers the rotor reaches by left multiplication are the algebra itself, the two minimal left ideals, and the centre; the ideals carry spin one-half, the centre is fixed, and neither is a spin-zero carrier on which the rotor acts non-trivially. That is the gap left visible in [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html), and what the two lines above add is that the gap is a computation on the sector split rather than a remark: the sphere the doublet traces is the rotor's own manifold, and the only carrier that carries the rotor action is the one that carries spin one-half.
 
-**What this does not claim.** The doublet is a carrier choice and is imported, not derived; the potential, $\lambda$, $v$ and the normalisation of $\omicron_{\mathrm{pot}}$ are imported with it; unitary gauge is not $\tilde U=e_t$, because $e_t$ is the vacuum of the central scalar and not of the ideal. The identification of $S^3$ with $\mathrm{SU}(2)$ is a statement about a manifold, and it is the whole of what the paragraph above establishes.
+**What this does not claim.** The doublet is a carrier choice and is imported, not derived; the potential, $\digamma_{\mathrm{qtc}}$, $v$ and the normalisation of $\omicron_{\mathrm{pot}}$ are imported with it; unitary gauge is not $\tilde U=e_t$, because $e_t$ is the vacuum of the central scalar and not of the ideal. The identification of $S^3$ with $\mathrm{SU}(2)$ is a statement about a manifold, and it is the whole of what the paragraph above establishes.
 
 The choice is the breaking. Take
 
@@ -110,7 +110,7 @@ $$
 
 That single line is the whole of the alignment: the charge operator annihilates the vacuum, so the electromagnetic group survives, and the three generators orthogonal to it do not, so the other three gauge directions acquire mass.
 
-The stationarity check. The minimum conditions $\partial V/\partial\omicron_{\mathrm{pot}}=0$ give $-\mu^2+2\lambda\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}=0$, which at the minimum reads $\mu^2=\lambda v^2$. The potential energy at the minimum is $V_{\min}=-\mu^4/(4\lambda)=-\lambda v^4/4=-M_H^2v^2/8$, a negative constant. That constant is the cosmological constant problem in its original form: the model sets the zero of energy at the minimum and puts the vacuum at $-M_H^2v^2/8$, and nothing in it cancels the result against the observed dark-energy density. [Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source](cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.html) records the logical status of $\Lambda$ and why neither of its standard readings makes it a prediction; the constant plays no part in the masses.
+The stationarity check. The minimum conditions $\partial V/\partial\omicron_{\mathrm{pot}}=0$ give $-\mu^2+2\digamma_{\mathrm{qtc}}\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}=0$, which at the minimum reads $\mu^2=\digamma_{\mathrm{qtc}} v^2$. The potential energy at the minimum is $V_{\min}=-\mu^4/(4\digamma_{\mathrm{qtc}})=-\digamma_{\mathrm{qtc}} v^4/4=-M_H^2v^2/8$, a negative constant. That constant is the cosmological constant problem in its original form: the model sets the zero of energy at the minimum and puts the vacuum at $-M_H^2v^2/8$, and nothing in it cancels the result against the observed dark-energy density. [Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source](cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.html) records the logical status of $\Lambda$ and why neither of its standard readings makes it a prediction; the constant plays no part in the masses.
 
 The shift. Write the field as the vacuum plus an excitation,
 
@@ -123,12 +123,12 @@ with $h$ real. Substituting into the potential and expanding gives
 $$
 V=\frac{M_H^2}{2}h^2+\frac{M_H^2}{2v}h^3+\frac{M_H^2}{8v^2}h^4+\text{const},
 \qquad
-M_H^2=2\lambda v^2 ,
+M_H^2=2\digamma_{\mathrm{qtc}} v^2 ,
 $$
 
 so the quadratic term is the scalar mass and the two higher terms are the scalar's self-couplings. There is no linear term; the vanishing of the linear term is the stationarity condition, and it is the statement that the expansion is around a minimum and not around an arbitrary point.
 
-The three parameters are two. The pair $(\mu^2,\lambda)$ and the pair $(v,M_H)$ carry the same information, through $v^2=\mu^2/\lambda$ and $M_H^2=2\lambda v^2$. The model's parameters are counted once, and the count is in article 1.
+The three parameters are two. The pair $(\mu^2,\digamma_{\mathrm{qtc}})$ and the pair $(v,M_H)$ carry the same information, through $v^2=\mu^2/\digamma_{\mathrm{qtc}}$ and $M_H^2=2\digamma_{\mathrm{qtc}} v^2$. The model's parameters are counted once, and the count is in article 1.
 
 ## The Covariant Derivative at the Vacuum
 
@@ -292,7 +292,7 @@ The spectrum. Five particles come out of the four gauge fields and the four scal
 | $\gamma$ | $0$ | $2$ | none |
 | $W^\pm$ | $gv/2$ | $3$ | $2M_W^2/v$ |
 | $Z$ | $\sqrt{g^2+g_{\mathrm Y}^2}\,v/2$ | $3$ | $2M_Z^2/v$ |
-| $h$ | $\sqrt{2\lambda}\,v$ | $1$ | self-couplings below |
+| $h$ | $\sqrt{2\digamma_{\mathrm{qtc}}}\,v$ | $1$ | self-couplings below |
 
 The couplings are fixed by the masses. Each coupling of the scalar to a pair of vectors is proportional to the mass squared, with no free constant:
 
@@ -323,14 +323,14 @@ The numbers, for the measured scalar mass $M_H=125.09$ GeV.
 | Quantity | Value |
 |---|---|
 | $v$ | $246.22$ GeV |
-| $\lambda=M_H^2/(2v^2)$ | $0.1291$ |
+| $\digamma_{\mathrm{qtc}}=M_H^2/(2v^2)$ | $0.1291$ |
 | $\mu=\sqrt{\mu^2}=M_H/\sqrt2$ | $88.45$ GeV |
 | $g_{hhh}=3M_H^2/v$ | $190.7$ GeV |
 | $g_{hhhh}=3M_H^2/v^2$ | $0.7743$ |
 | $g_{hWW}=2M_W^2/v$ | $52.48$ GeV |
 | $g_{hZZ}=2M_Z^2/v$ | $67.54$ GeV |
 
-The vintage of $M_H$. The value is $125.09$ GeV, the 2015 ATLAS+CMS run-1 combination that the rest of the corpus quotes. The current average is $125.25\pm0.17$ GeV, a shift of $0.16$ GeV or $0.9\sigma$, and it moves no number here: $\lambda$ by $0.0003$, $g_{hhh}$ by $0.4$ GeV. The corpus keeps the older central value for one reason, the same one that keeps the fermion masses on a single vintage — [The Landau Pole, Triviality and Vacuum Stability](the-landau-pole-triviality-and-vacuum-stability.html) states the metastability margin as $1.39$ GeV $=4.6\sigma$ against $\sigma=0.30$, and a new central value would force a recomputation of a number quoted in two articles.
+The vintage of $M_H$. The value is $125.09$ GeV, the 2015 ATLAS+CMS run-1 combination that the rest of the corpus quotes. The current average is $125.25\pm0.17$ GeV, a shift of $0.16$ GeV or $0.9\sigma$, and it moves no number here: $\digamma_{\mathrm{qtc}}$ by $0.0003$, $g_{hhh}$ by $0.4$ GeV. The corpus keeps the older central value for one reason, the same one that keeps the fermion masses on a single vintage — [The Landau Pole, Triviality and Vacuum Stability](the-landau-pole-triviality-and-vacuum-stability.html) states the metastability margin as $1.39$ GeV $=4.6\sigma$ against $\sigma=0.30$, and a new central value would force a recomputation of a number quoted in two articles.
 
 The dimension of each coupling is the check. A triple scalar coupling has dimension one and is measured in GeV; a quartic has dimension zero and is a pure number; a scalar-vector-vector coupling has dimension one. The table's units agree with the dimensions, which is a check on the powers of $v$ and not a deep statement.
 
@@ -480,7 +480,7 @@ What a derivation would need. A scalar in the algebra's defining module, a hyper
 
 ## Summary
 
-The electroweak group is broken to $\mathrm{U}(1)_{\mathrm{em}}$ by one complex doublet of hypercharge $\tfrac12$ with the potential $-\mu^2\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}+\lambda(\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}})^2$. The minima form a three-sphere $\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}=v^2/2$ with $v^2=\mu^2/\lambda$, and the vacuum $\langle\omicron_{\mathrm{pot}}\rangle=\frac{1}{\sqrt2}(0,v)^{T}$ is annihilated by $Q=T_3+Y$ and by no other generator. That single line is why the photon stays massless and the other three directions acquire mass.
+The electroweak group is broken to $\mathrm{U}(1)_{\mathrm{em}}$ by one complex doublet of hypercharge $\tfrac12$ with the potential $-\mu^2\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}+\digamma_{\mathrm{qtc}}(\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}})^2$. The minima form a three-sphere $\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}=v^2/2$ with $v^2=\mu^2/\digamma_{\mathrm{qtc}}$, and the vacuum $\langle\omicron_{\mathrm{pot}}\rangle=\frac{1}{\sqrt2}(0,v)^{T}$ is annihilated by $Q=T_3+Y$ and by no other generator. That single line is why the photon stays massless and the other three directions acquire mass.
 
 The mass matrix in the basis $(W_1,W_2,W_3,B)$ is $\tfrac{v^2}{4}$ times a block-diagonal matrix with the charged block $g^2\mathrm I$ and the neutral block $\binom{g^2\ -gg_{\mathrm Y}}{-gg_{\mathrm Y}\ \ g_{\mathrm Y}^2}$. Its eigenvalues are $g^2v^2/4$ twice, zero once and $(g^2+g_{\mathrm Y}^2)v^2/4$ once, giving $M_W=gv/2$, $M_\gamma=0$ and $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}\,v/2=M_W/\cos\theta_W$. The zero eigenvalue is structural: the neutral block's determinant vanishes identically, because the direction along which $Q$ annihilates the vacuum is one-dimensional. The eigenvectors are the photon $A=\sin\theta_WW_3+\cos\theta_WB$ and the $Z=\cos\theta_WW_3-\sin\theta_WB$, so the mixing angle is the diagonalising angle and not an independent parameter. The trace sum rule $2M_W^2+M_Z^2=\tfrac{v^2}{4}(3g^2+g_{\mathrm Y}^2)$ is exact at tree level and closes on the numbers.
 
@@ -499,13 +499,13 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 | $\omicron_{\mathrm{pot}}$, $\omicron_{\mathrm{pot}}^+$, $\omicron_{\mathrm{pot}}^0$ | The scalar doublet of hypercharge $\tfrac12$ and its components |
 | $\xi_{\mathrm{scl}}$, $\tilde\Xi=\xi e_t$ | The same object in the W/Z and Higgs articles |
 | $\tilde\omicron_{\mathrm{pot}}$ | The conjugate doublet of hypercharge $-\tfrac12$ |
-| $\mu^2$, $\lambda$ | The two parameters of the potential; $\mu^2=\lambda v^2$ |
+| $\mu^2$, $\digamma_{\mathrm{qtc}}$ | The two parameters of the potential; $\mu^2=\digamma_{\mathrm{qtc}} v^2$ |
 | $v$ | Vacuum expectation value, $\sqrt2\langle\omicron_{\mathrm{pot}}^0\rangle=246.2197$ GeV |
 | $h$ | The radial excitation of the neutral component |
 | $\omicron_{\mathrm{pot},0}$ | The vacuum $\frac{1}{\sqrt2}(0,v)^{T}$ |
 | $\tau_a=\sigma_a/2$ | Weak-isospin generators in the doublet |
 | $M^2$ | The $4\times4$ squared-mass matrix in the basis $(W_1,W_2,W_3,B)$ |
-| $M_W$, $M_Z$, $M_H$ | The three masses; $M_Z=M_W/\cos\theta_W$, $M_H=\sqrt{2\lambda}\,v$ |
+| $M_W$, $M_Z$, $M_H$ | The three masses; $M_Z=M_W/\cos\theta_W$, $M_H=\sqrt{2\digamma_{\mathrm{qtc}}}\,v$ |
 | $A_{\imath}$, $Z_{\imath}$ | The photon and the neutral massive field |
 | $\theta_W$ | $\tan\theta_W=g_{\mathrm Y}/g$ |
 | $e$ | $g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ |

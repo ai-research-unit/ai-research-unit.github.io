@@ -65,7 +65,7 @@ The swap. The map $\sigma$ that exchanges the two slots is linear, involutive, a
 
 The adjoints. Four adjoints and five families, the fifth being the Krein pair, whose form is the plain sesquilinear form. $(L_{\tilde Q})^{\approx}=R_{\tilde Q}$, $(L_{\tilde Q})^{*}=L_{\tilde Q^{*}}$, $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$, $(T_{\tilde Q,\tilde P})^{*}=T_{\tilde Q^{*},\tilde P^{*}}$.
 
-The sectors. $T_{\tilde Q,k\tilde Q^{*}}$ keeps both sectors exactly for real $\lambda$; a one-sided operator keeps a sector only for a real scalar. The Hermitian pair keeps both for every parameter.
+The sectors. $T_{\tilde Q,k\tilde Q^{*}}$ keeps both sectors exactly for real $\digamma_{\mathrm{scl}}$; a one-sided operator keeps a sector only for a real scalar. The Hermitian pair keeps both for every parameter.
 
 The Hermitian pair. $\mathrm{Hp}_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ is multiplicative, has spectrum $\{\eta_i\bar\eta_j\}$, trace $4\lvert Q_t\rvert^{2}$, determinant $\lvert N\rvert^{4}$, value $H(\tilde Q)$ at the identity, is singular exactly on the cone, and covers the group $CO^{+}(1,3)$ on the invertibles.
 
@@ -103,7 +103,7 @@ The four subsets.
 | $\operatorname{End}_{LR}$ | $\{L_{\tilde Q}R_{\tilde P}\}$ | $7$ effective | a cone, closed under composition |
 | $\operatorname{End}_{LR*}$ | $\{T_{\tilde Q,\tilde Q^{*}}\}$ | $7$ | a cone, the Hermitian pair |
 
-The two one-sided sets are subspaces and the two two-sided sets are not. The two-sided set carries eight complex parameters in two slots and the operator is unchanged under the scaling $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$, which removes one complex parameter and leaves seven.
+The two one-sided sets are subspaces and the two two-sided sets are not. The two-sided set carries eight complex parameters in two slots and the operator is unchanged under the scaling $(\tilde Q,\tilde P)\mapsto(\digamma_{\mathrm{scl}}\tilde Q,\digamma_{\mathrm{scl}}^{-1}\tilde P)$, which removes one complex parameter and leaves seven.
 
 Inclusions and incomparability. Each one-sided family sits inside the two-sided cone, because $L_{\tilde Q}=T_{\tilde Q,e_t}$ and $R_{\tilde P}=T_{e_t,\tilde P}$. The two one-sided families are incomparable: they meet in the scalars and nowhere else, since $L_{\tilde Q}=R_{\tilde Q}$ holds exactly for central $\tilde Q$. The Hermitian cone meets each one-sided family in the closed ray of nonnegative multiples of the identity, and the value there is $\lvert Q_t\rvert^{2}$: the operator $\mathrm{Sd}_{\omega}$ of a central element is $\lvert\omega\rvert^{2}\mathrm{id}$.
 
@@ -168,7 +168,7 @@ $$
 
 where $A$ and $B$ are the $2\times2$ matrices of the two parameters. The ranks of $A$ and $B$ take the values $2$, $1$, $0$, so the product takes the values $4$, $2$, $1$, $0$. A two-sided operator never has rank three, and the reason is arithmetic and not geometric: three is not a product of two numbers from $\{0,1,2\}$.
 
-The scaling orbit. The two parameters are defined up to $(\lambda\tilde Q,\lambda^{-1}\tilde P)$ for a nonzero complex $\lambda$, so the parameter space of the cone is seven complex dimensional. The scaling is the gauge freedom of the cone, and it is the reason a two-sided operator carries no absolute phase.
+The scaling orbit. The two parameters are defined up to $(\digamma_{\mathrm{scl}}\tilde Q,\digamma_{\mathrm{scl}}^{-1}\tilde P)$ for a nonzero complex $\digamma_{\mathrm{scl}}$, so the parameter space of the cone is seven complex dimensional. The scaling is the gauge freedom of the cone, and it is the reason a two-sided operator carries no absolute phase.
 
 The doubling. On the central elements the two-sided operator squares the data of the element:
 
@@ -301,7 +301,7 @@ $$
 \mathrm{Sd}_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}},\qquad \tilde X\longmapsto\tilde Q\tilde X\tilde Q^{*}.
 $$
 
-Self-adjointness is four conditions. For a single operator built from two parameters, **the four adjoints give five different matrices and no two of them agree**. The self-adjointness table of the source article separates the parameters: the two bilinear adjoints answer to the parallel conditions $\tilde Q^{\natural}\parallel\tilde Q$, the two sesquilinear ones to a single scalar $\lambda$ with $\tilde Q^{*}=\lambda\tilde Q$. A real mixed parameter such as $e_t+2\vec e_x$ is self-adjoint for none of the four, which is the generic case.
+Self-adjointness is four conditions. For a single operator built from two parameters, **the four adjoints give five different matrices and no two of them agree**. The self-adjointness table of the source article separates the parameters: the two bilinear adjoints answer to the parallel conditions $\tilde Q^{\natural}\parallel\tilde Q$, the two sesquilinear ones to a single scalar $\digamma_{\mathrm{scl}}$ with $\tilde Q^{*}=\digamma_{\mathrm{scl}}\tilde Q$. A real mixed parameter such as $e_t+2\vec e_x$ is self-adjoint for none of the four, which is the generic case.
 
 The sector criterion. The two sectors of the algebra are
 
@@ -310,7 +310,7 @@ $$
 \mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{i e_t,\vec e_x,\vec e_y,\vec e_z\},
 $$
 
-the fixed and the negated spaces of the Hermitian conjugation. Among the five families only the Hermitian pair keeps both sectors in place for every parameter. The one-sided families keep a sector only for a real scalar: $L_{r e_t}$ keeps both, while $L_{\tilde Q}$ for a non-scalar unit moves a Hermitian element out of the Hermitian sector. The two-sided family keeps both exactly for the pairs $T_{\tilde Q,k\tilde Q^{*}}$ with real $\lambda$; a non-real $\lambda$ rotates one sector into the other.
+the fixed and the negated spaces of the Hermitian conjugation. Among the five families only the Hermitian pair keeps both sectors in place for every parameter. The one-sided families keep a sector only for a real scalar: $L_{r e_t}$ keeps both, while $L_{\tilde Q}$ for a non-scalar unit moves a Hermitian element out of the Hermitian sector. The two-sided family keeps both exactly for the pairs $T_{\tilde Q,k\tilde Q^{*}}$ with real $\digamma_{\mathrm{scl}}$; a non-real $\digamma_{\mathrm{scl}}$ rotates one sector into the other.
 
 Why the criterion matters here. Sector stability is what makes an operator readable as a physical operation on a state space. An operator that moves a Hermitian element into the anti-Hermitian sector maps a state to a four-vector, and no amount of renaming makes that a transformation of states. The Hermitian pair is the only family that is a transformation of the state space for every parameter.
 

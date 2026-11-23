@@ -67,7 +67,7 @@ $$
 
 so that $\tilde Q^{2}=2Q_t\tilde Q-N(\tilde Q)e_t$. Verified to $1.8\times10^{-15}$ on one hundred random elements.
 
-Proof. In the matrix model the characteristic polynomial of $\mathsf{M}(\tilde Q)$ is $\lambda^{2}-2Q_t\lambda+N(\tilde Q)$, and the Cayley–Hamilton theorem of $2\times2$ matrices gives the identity; the model is an algebra isomorphism, so the identity transports.
+Proof. In the matrix model the characteristic polynomial of $\mathsf{M}(\tilde Q)$ is $\eta^{2}-2Q_t\eta+N(\tilde Q)$, and the Cayley–Hamilton theorem of $2\times2$ matrices gives the identity; the model is an algebra isomorphism, so the identity transports.
 
 Proposition (the differential and its determinant). The differential of $F_{\tilde C}$ at $\tilde Q$ is the Jordan product with $\tilde Q$,
 
@@ -159,7 +159,7 @@ $$
 \boxed{\;w_{n+1}=w_n^{2}, \qquad w_0=2Q_t\;}.
 $$
 
-The size of the $n$-th iterate is therefore $\lvert 2Q_t\rvert^{2^{n}}$, so a cone element is bounded exactly when $\lvert Q_t\rvert\le\tfrac12$, escapes when $\lvert Q_t\rvert>\tfrac12$, and is bounded without converging on the shell $\lvert Q_t\rvert=\tfrac12$. Verified on the material rays $\lambda=\tfrac{3}{10},\tfrac12,\tfrac45$: the scalar coefficients reproduce $\lvert 2\lambda\rvert^{2^{n}}$ and the sequence is constant at $\lambda=\tfrac12$.
+The size of the $n$-th iterate is therefore $\lvert 2Q_t\rvert^{2^{n}}$, so a cone element is bounded exactly when $\lvert Q_t\rvert\le\tfrac12$, escapes when $\lvert Q_t\rvert>\tfrac12$, and is bounded without converging on the shell $\lvert Q_t\rvert=\tfrac12$. Verified on the material rays $\digamma_{\mathrm{scl}}=\tfrac{3}{10},\tfrac12,\tfrac45$: the scalar coefficients reproduce $\lvert 2\digamma_{\mathrm{scl}}\rvert^{2^{n}}$ and the sequence is constant at $\digamma_{\mathrm{scl}}=\tfrac12$.
 
 Proof. Multiply $\tilde Q_{n}=\tau_nQ$ by itself: $\tau_{n+1}=2(Q_n)_t\tau_n^{2}=2Q_t\tau_n^{2}$ because $(Q_n)_t=\tau_nQ_t$. Then $w_{n+1}=2Q_t\tau_{n+1}=4Q_t^{2}\tau_n^{2}=w_n^{2}$. The boundedness statement is that of the squaring map on the modulus of a complex number.
 

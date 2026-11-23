@@ -20,7 +20,7 @@ $$
 m_i=\frac{y_i\,E_{\mathrm{vev}}}{\sqrt2\,c^{2}} .
 $$
 
-**One value, three ways of meeting it.** A fermion meets the background through its Yukawa term, and its mass is the Yukawa coupling times the value. A gauge boson meets it through the covariant derivative, and its mass is the gauge coupling times the value: $M_W=g\,E_{\mathrm{vev}}/2$, an energy. The Higgs boson meets it through the curvature of the potential at its minimum: $M_H=\sqrt{2\lambda}\,E_{\mathrm{vev}}$. In all three the mass is a dimensionless coupling multiplied by one scale, which is why the scale can be divided out and a coupling left in its place.
+**One value, three ways of meeting it.** A fermion meets the background through its Yukawa term, and its mass is the Yukawa coupling times the value. A gauge boson meets it through the covariant derivative, and its mass is the gauge coupling times the value: $M_W=g\,E_{\mathrm{vev}}/2$, an energy. The Higgs boson meets it through the curvature of the potential at its minimum: $M_H=\sqrt{2\digamma_{\mathrm{qtc}}}\,E_{\mathrm{vev}}$. In all three the mass is a dimensionless coupling multiplied by one scale, which is why the scale can be divided out and a coupling left in its place.
 
 **What the picture does not cover.** The proton's mass is not of this kind. Most of it is the energy of the gluon field inside the proton and of the motion of the quarks, and it would be there if the vacuum value were zero. The proton is written in fractions of the same anchor all the same, because the anchor is a unit of mass and not a statement about the origin of a mass. The fraction measures; it does not explain.
 
@@ -154,7 +154,7 @@ so the coupling and the fraction differ by $\sqrt2$ and by nothing else.
 | a fermion | $n_i$ | $y_i/\sqrt2$ | $y_t/\sqrt2=0.7014$ | $0.70136$ |
 | $W$ | $n_W$ | $g/2$ | $0.3259$ | $0.32644$ |
 | $Z$ | $n_Z$ | $\sqrt{g^{2}+g'^{2}}/2$ | $0.3715$ | $0.37035$ |
-| Higgs boson | $n_H$ | $\sqrt{2\lambda}$ | $0.5081$ | $0.50869$ |
+| Higgs boson | $n_H$ | $\sqrt{2\digamma_{\mathrm{qtc}}}$ | $0.5081$ | $0.50869$ |
 | proton | $n_p$ | none | — | $0.0038107$ |
 
 The first four rows are the reason the fraction is worth printing: written in $n_i$, a formula is written in the couplings the theory is built from, and a table of fractions is a table of couplings that a reader checks against measured masses by eye.
@@ -197,7 +197,7 @@ and the common factor $m_{\mathrm{vev}}$ has cancelled. The value is $0.666\,660
 
 1. **An equation is written in fractions.** A formula that would otherwise carry a mass, an energy, a wave number or a length carries the ratio against the anchor of the same dimension. A value with its unit belongs in a table, a measurement or a bound, and not on the side of an equation.
 2. **An energy may be quoted in electronvolts.** $[\mathrm{eV}]=[\text{energy}]$, and a number in GeV, MeV, keV or eV is correct wherever the quantity is an energy. A rest energy $m_ic^{2}$ is an energy and may be quoted so.
-3. **A mass is a kilogram or a fraction.** $m_i$ is written in kg, or as $m_i/m_{\mathrm{vev}}$. It is never written as a bare number of electronvolts.
+3. **A mass is a fraction, and the kilogram is its definition.** $m_i$ is written as $n_i=m_i/m_{\mathrm{vev}}$. The kilogram appears once, in the definition of $m_{\mathrm{vev}}$ above, and once in the conventions table for a pre-anchor denominator; it is not the form a table uses and it is not the result of a repair. A mass is never written as a bare number of electronvolts.
 4. **A mass divided by the square of the speed of light is not allowed.** The spelling is dimensionally correct — an electronvolt over $c^{2}$ is a mass — and it is still refused: it keeps a mass inside the electronvolt system, where the bare number is the next keystroke, and the corpus's base unit of mass is the kilogram. The rule is stated in words and the spelling is not printed, here or in any convention article, so that a search for it returns nothing but the defect it names. A mass that must be quoted absolutely is quoted in kilograms; a mass that is compared is quoted as a fraction.
 5. **A root obeys the rule of its radicand.** A root is admitted, and the unit under it is what the rule governs. $\sqrt{s}$, $\sqrt{E^{2}}$ and $\sqrt{m^{2}c^{4}+p^{2}c^{2}}$ are energies. $\sqrt{m_e}$ is $\mathrm{kg}^{1/2}$ when the mass is in the kilogram, and $\sqrt{n_e}$ is a number when it is a fraction; both are legal, because neither unit contains a constant. $\mathrm{kg}^{1/2}$ is a derived unit of one base unit, no more objectionable than $\mathrm{m\,s^{-1}}$ is of two. What is refused is a mass under a root in an **energy** unit: $\sqrt{m_e}=0.714\,842\ \mathrm{MeV}^{1/2}$ hides the $c$ of rule 3 inside the radical, where it is harder to see than in a bare number. A table that prints a root prints the parent mass beside it, in the kilogram or as a fraction, so that the root is a step and not a quantity presented on its own.
 6. **No constant is set to one.** $c$ and $h$ are carried with their units at every step, including inside the three conversions of §*The Three Conversions*. The anchors exist so that the constants never need to be dropped: the fraction divides by a quantity of the same dimension, which is the only way to remove a unit without removing a constant.
@@ -223,7 +223,7 @@ Each is an arithmetic recomputation from the numbers above.
 9. **The electron's length fraction.** The reciprocal of $2.0754\times10^{-6}$ is $4.8184\times10^{5}$; times $\lambda_{\mathrm{vev}}$ it is $2.4263\times10^{-12}\ \mathrm{m}$.
 10. **The top's coupling.** $n_t=0.70136$, so $y_t=\sqrt2\times0.70136=0.991\,87$, a number below one, as a perturbative vertex must be.
 11. **Koide is unchanged.** In fractions the ratio is $0.666\,660\,5$; in MeV it is $0.666\,660\,5$. The anchor cancels, which is the statement that the relation is a statement about numbers.
-12. **The fraction is the coupling in three sectors, up to the running.** With the couplings at $M_Z$, $g/2=0.3259$ against $n_W=0.32644$, a gap of $0.13\%$; $\sqrt{g^{2}+g'^{2}}/2=0.3715$ against $n_Z=0.37035$, a gap of $0.32\%$; $\sqrt{2\lambda}=\sqrt{0.2582}=0.5081$ against $n_H=0.50869$, a gap of $0.11\%$. With $g$ at $M_W$, $g/2=0.6529/2=0.32644$ and the $W$ row is exact, because the relation defines $g$ there. A gap of a part in a thousand across two scales is what a running coupling looks like, and it is not a defect of the identity.
+12. **The fraction is the coupling in three sectors, up to the running.** With the couplings at $M_Z$, $g/2=0.3259$ against $n_W=0.32644$, a gap of $0.13\%$; $\sqrt{g^{2}+g'^{2}}/2=0.3715$ against $n_Z=0.37035$, a gap of $0.32\%$; $\sqrt{2\digamma_{\mathrm{qtc}}}=\sqrt{0.2582}=0.5081$ against $n_H=0.50869$, a gap of $0.11\%$. With $g$ at $M_W$, $g/2=0.6529/2=0.32644$ and the $W$ row is exact, because the relation defines $g$ there. A gap of a part in a thousand across two scales is what a running coupling looks like, and it is not a defect of the identity.
 13. **The two tables are one table.** Every entry of §*The Fraction* multiplied by its anchor returns the value quoted in §*The Three Conversions* and in the corpus, in opposite directions; checks 8 and 9 are two instances, and the article quotes the same numbers twice on purpose.
 
 ## Summary
@@ -244,7 +244,7 @@ What the scheme changes is the spelling and not the physics. An energy may still
 | $\lambda_{\mathrm{vev}}$ | the same scale read as a length, $1/\nu_{\mathrm{vev}}$ | $\mathrm{L}$ |
 | $n_i$ | the fraction $m_i/m_{\mathrm{vev}}=E_i/E_{\mathrm{vev}}=\nu_i/\nu_{\mathrm{vev}}$ at rest | none |
 | $y_i$ | the Yukawa vertex, $\sqrt2\,n_i$ | none |
-| $g$, $g'$, $\lambda$ | the gauge and scalar couplings at the scale of the anchor | none |
+| $g$, $g'$, $\digamma_{\mathrm{qtc}}$ | the gauge and scalar couplings at the scale of the anchor | none |
 | $n_W$, $n_Z$, $n_H$ | the fractions of the weak bosons and the Higgs boson, each a coupling divided by a fixed number | none |
 | $hc$ | $1.239\,841\,98\times10^{-6}\ \mathrm{eV\cdot m}$ | $\mathrm{M\,L^{3}\,T^{-2}}$ |
 
@@ -252,7 +252,7 @@ What the scheme changes is the spelling and not the physics. An energy may still
 
 - [Physics Units and Common Elements Conventions](physics-units-and-common-elements-conventions.html). The base units, the five dimensions and the rule that a multiple is the same dimension, of which this article is the case of a scale that every mass is divided by.
 - [The Three Wave Numbers of a Particle](the-three-wavenumbers-of-a-particle.html). The three wave numbers, the conversion $hc$ and the tables whose entries this article turns into fractions.
-- [Electroweak Symmetry Breaking: The Doublet, the Potential and the Gauge Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The relations $M_W=g\,v/2$ and $M_H=\sqrt{2\lambda}\,v$, used here at tree level and with the couplings at the mass of each row.
+- [Electroweak Symmetry Breaking: The Doublet, the Potential and the Gauge Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The relations $M_W=g\,v/2$ and $M_H=\sqrt{2\digamma_{\mathrm{qtc}}}\,v$, used here at tree level and with the couplings at the mass of each row.
 - [The Yukawa Coupling in Wave Numbers](../articles_internal/the-yukawa-coupling-in-wave-numbers.html). The coupling written in wave numbers, where the same normalisation is used.
 - [The Standard Model Content: Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The parameter table whose mass rows are written as fractions under this rule.
 - [The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html). The mass matrices, whose entries are the fractions of this article up to $\sqrt2$.

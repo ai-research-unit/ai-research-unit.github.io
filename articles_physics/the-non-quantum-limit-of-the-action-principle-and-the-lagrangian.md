@@ -245,7 +245,7 @@ $$
 
 The Hamiltonian is a sum of two biquaternion norms with positive coefficients, one in the momentum and one in the coordinate. Its level sets $H=E$ are ellipsoids in the eight-dimensional real phase space.
 
-**When is the Hamiltonian the energy?** The identification of $H$ with $T+V$ is not automatic, and the condition is one this transcription satisfies by construction. If the kinetic energy is a **homogeneous function of degree two** in the generalized velocities, $T(\lambda\,dq/dt')=\lambda^2T(dq/dt')$, then Euler's theorem on homogeneous functions gives $dq_{\imath}/dt'\partial T/\partial\left(dq_{\imath}/dt'\right)=2T$. When the potential depends on the coordinates alone, $p_{\imath}=\partial T/\partial\left(dq_{\imath}/dt'\right)$, and therefore
+**When is the Hamiltonian the energy?** The identification of $H$ with $T+V$ is not automatic, and the condition is one this transcription satisfies by construction. If the kinetic energy is a **homogeneous function of degree two** in the generalized velocities, $T(\digamma_{\mathrm{scl}}\,dq/dt')=\digamma_{\mathrm{scl}}^2T(dq/dt')$, then Euler's theorem on homogeneous functions gives $dq_{\imath}/dt'\partial T/\partial\left(dq_{\imath}/dt'\right)=2T$. When the potential depends on the coordinates alone, $p_{\imath}=\partial T/\partial\left(dq_{\imath}/dt'\right)$, and therefore
 
 $$
 \mathrm{Sc}\!\left(\tilde p^{\natural}\,d\tilde q/dt'\right)=p_{\imath}\,dq_{\imath}/dt'=2T,\qquad H=2T-(T-V)=T+V ,
@@ -696,16 +696,16 @@ The biquaternion norm is positive definite on $\mathbb{B}_{H}$, so its metric is
 The genuinely noncommutative case is a rotor-valued configuration. Let $\tilde u(r'_t)$ be a path in the group of unit real quaternions, $\langle\tilde u\rangle_{\natural}=e_t$, and take the free action
 
 $$
-S_{\mathrm{rot}}[\tilde u]=\frac{\lambda}{2}\int \mathrm{Sc}\!\left(d\tilde u/dt'\,(d\tilde u/dt')^{\natural}\right)dr'_t
-=\frac{\lambda}{2}\int \langle\,d\tilde u/dt'\rangle_{\natural}\,dt' ,
+S_{\mathrm{rot}}[\tilde u]=\frac{\digamma_{\mathrm{inr}}}{2}\int \mathrm{Sc}\!\left(d\tilde u/dt'\,(d\tilde u/dt')^{\natural}\right)dr'_t
+=\frac{\digamma_{\mathrm{inr}}}{2}\int \langle\,d\tilde u/dt'\rangle_{\natural}\,dt' ,
 $$
 
-the rotational kinetic energy of a body with a single principal moment $\lambda$. Varying $\tilde u$ subject to the constraint $\langle\tilde u\rangle_{\natural}=e_t$ means varying within the group; writing $\delta\tilde u=\tilde u\,\delta\vec\theta$ with $\delta\vec\theta$ a pure real quaternion vanishing at the endpoints (the constraint $\mathrm{Sc}(\tilde u^{\natural}\delta\tilde u)=0$ forces $\delta\vec\theta$ to have zero scalar part), the first variation of the action becomes
+the rotational kinetic energy of a body with a single principal moment $\digamma_{\mathrm{inr}}$. Varying $\tilde u$ subject to the constraint $\langle\tilde u\rangle_{\natural}=e_t$ means varying within the group; writing $\delta\tilde u=\tilde u\,\delta\vec\theta$ with $\delta\vec\theta$ a pure real quaternion vanishing at the endpoints (the constraint $\mathrm{Sc}(\tilde u^{\natural}\delta\tilde u)=0$ forces $\delta\vec\theta$ to have zero scalar part), the first variation of the action becomes
 
 $$
-\delta S_{\mathrm{rot}}=\lambda\int\mathrm{Sc}\!\left(d\tilde u/dt'\,(\delta\,d\tilde u/dt')^{\natural}\right)dr'_t
-=-\lambda\int\mathrm{Sc}\!\left(d^2\tilde u/d{r'_{t}}^2\,(\delta\tilde u)^{\natural}\right)dr'_t
-=\lambda\int\mathrm{Sc}\!\left(\tilde u^{\natural}\,d^2\tilde u/d{r'_{t}}^2\;\delta\vec\theta\right)dr'_t ,
+\delta S_{\mathrm{rot}}=\digamma_{\mathrm{inr}}\int\mathrm{Sc}\!\left(d\tilde u/dt'\,(\delta\,d\tilde u/dt')^{\natural}\right)dr'_t
+=-\digamma_{\mathrm{inr}}\int\mathrm{Sc}\!\left(d^2\tilde u/d{r'_{t}}^2\,(\delta\tilde u)^{\natural}\right)dr'_t
+=\digamma_{\mathrm{inr}}\int\mathrm{Sc}\!\left(\tilde u^{\natural}\,d^2\tilde u/d{r'_{t}}^2\;\delta\vec\theta\right)dr'_t ,
 $$
 
 using $\delta\tilde u=\tilde u\,\delta\vec\theta$, $(\delta\tilde u)^{\natural}=-\delta\vec\theta\,\tilde u^{\natural}$, and the cyclicity of the scalar part. Stationarity for all pure $\delta\vec\theta$ gives
@@ -836,7 +836,7 @@ The principle itself adds the following.
 - Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt'}\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)-\partial \mathrm{Lag}/\partial\tilde q=0$ holds. The boundary term is the symplectic potential $\varpi=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$, and on shell $dS=\varpi_2-\varpi_1$: the action generates the canonical transformation between its endpoints.
 - The phase-space action $\int[\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-H]dr'_t$ has Hamilton's equations as its critical-point equations.
 - The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/d{r'_{t}}^2-\frac{d^2V}{d\tilde q^2}\,\delta\tilde q$ and the geodesic-deviation equation $md^2\zeta/d{r'_{t}}^2+\frac{d^2V}{d\tilde q^2}\,\zeta=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
-- The free rotor action $\frac{\lambda}{2}\int \langle\,d\tilde u/dt'\rangle_{\natural}dr'_t$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(d^2\tilde u/d{r'_{t}}^2\tilde u^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde u(r'_t)=\tilde u(0)\exp(+\tfrac12\vec\omega_br'_t/c)$: the free rigid body's motion.
+- The free rotor action $\frac{\digamma_{\mathrm{inr}}}{2}\int \langle\,d\tilde u/dt'\rangle_{\natural}dr'_t$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(d^2\tilde u/d{r'_{t}}^2\tilde u^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde u(r'_t)=\tilde u(0)\exp(+\tfrac12\vec\omega_br'_t/c)$: the free rigid body's motion.
 - The stationary-phase lemma evaluates an oscillatory sum over trajectories as a sum over the critical points of the action, weighted by $\exp(i\theta_{\mathrm{act}})$ and the fluctuation factor. The classical content is the identification of the critical points with the classical paths; the statement is a theorem about an integral and is not a quantisation.
 - The action as a function of its endpoint is Hamilton's principal function, and its eikonal equation is the Hamilton–Jacobi equation $\partial/\partial r'_t\,W+H(\tilde q,\partial W/\partial\tilde q)=0$.
 
@@ -858,7 +858,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $F(\tilde q,r'_t)$, $\mathrm{Lag}_2=\mathrm{Lag}+dF/dt'$ | Arbitrary function and the total-derivative ambiguity of the Lagrangian |
 | $S[\tilde q]=\int \mathrm{Lag}\,dt'$ | Action; ambiguous by the endpoint term $F(t'_2)-F(t'_1)$ |
 | $R=\mathrm{Sc}(p^{\natural}\,dq/dt')-\mathrm{Lag}$ (over the transformed block) | Routhian: the partial Legendre transform, shown in the general case, of which this article uses $s=n$ |
-| $T(\lambda\,d\tilde q/dt')=\lambda^2T(d\tilde q/dt')$ | Homogeneity of the kinetic energy; gives $\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')=2T$ and $H=T+V$ |
+| $T(\digamma_{\mathrm{scl}}\,d\tilde q/dt')=\digamma_{\mathrm{scl}}^2T(d\tilde q/dt')$ | Homogeneity of the kinetic energy; gives $\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')=2T$ and $H=T+V$ |
 | $\partial H/\partial r'_t=-\partial \mathrm{Lag}/\partial r'_t$ | Explicit time dependence is preserved with reversed sign |
 | $\{Q_{\imath},P_{\jmath}\}=\delta_{\imath\jmath}$ | Canonical-transformation criterion (scalar) |
 | $\partial \mathrm{Lag}/\partial\tilde q=\sum_{\imath} e_{\imath}\partial \mathrm{Lag}/\partial q_{\imath}$ | Quaternion gradient of a central-valued function |

@@ -32,13 +32,13 @@ The substitution. $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot
 
 ## The Transform's Kernel in the Coupled Chart
 
-Both operations are central multiplications. The transform multiplies by $e^{-i\theta_{\mathrm{pwp}}}$, and a gauge transformation multiplies by $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$. Both are central units, so they commute:
+Both operations are central multiplications. The transform multiplies by $e^{-i\theta_{\mathrm{pwp}}}$, and a gauge transformation multiplies by $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$. Both are central units, so they commute:
 
 $$
-\int\mathrm{d}t'\,e^{i\omega t'}\big(\lambda\tilde\Xi\big)=\lambda\int\mathrm{d}t'\,e^{i\omega t'}\tilde\Xi .
+\int\mathrm{d}t'\,e^{i\omega t'}\big(\digamma_{\mathrm{gau}}\tilde\Xi\big)=\digamma_{\mathrm{gau}}\int\mathrm{d}t'\,e^{i\omega t'}\tilde\Xi .
 $$
 
-The transform is therefore gauge covariant. A gauge-transformed field has a gauge-transformed transform, with the same $\Gamma$ and the same $\lambda$. No link variable is needed and no Jacobian appears, and the reason is the centrality and not the constancy of $\Gamma$.
+The transform is therefore gauge covariant. A gauge-transformed field has a gauge-transformed transform, with the same $\Gamma$ and the same $\digamma_{\mathrm{gau}}$. No link variable is needed and no Jacobian appears, and the reason is the centrality and not the constancy of $\Gamma$.
 
 The chart's reading of the same line. The kernel's word has $\theta_{\mathrm{pha}}=\theta_{\mathrm{pwp}}$ and nothing else; the gauge factor has $\theta_{\mathrm{pha}}=\frac{2\pi ϙ\Gamma}{h}$ and nothing else. Two elements that each carry one coordinate commute, because a central unit is a function of the centre alone.
 
@@ -126,7 +126,7 @@ so it is linear in $\omicron_{\mathrm{pot}}$, linear and quadratic in $\vec A$, 
 
 The "semiclassical" phase is the phase. The phase accumulated over an interval is $-\frac{2\pi \mathcal E t'}{h}$ with $\mathcal E=hf_{\mathrm{frq}}+\rho_{\mathrm{chg}}\omicron_{\mathrm{pot}}$, exactly. There is no next order, and calling the constant-background phase semiclassical is a habit that this article declines.
 
-No amplitude–potential cross term. The symbol is the coefficient of a quadratic form in the mode, and the form is homogeneous of degree two in the mode's amplitude: over one hundred draws, multiplying the mode by a complex $\lambda$ multiplied the form by $\lvert\lambda\rvert^{2}$ to $4.5\times10^{-14}$. So the symbol is independent of the amplitude, and no term can couple the amplitude to the potential.
+No amplitude–potential cross term. The symbol is the coefficient of a quadratic form in the mode, and the form is homogeneous of degree two in the mode's amplitude: over one hundred draws, multiplying the mode by a complex $\digamma_{\mathrm{gau}}$ multiplied the form by $\lvert\digamma_{\mathrm{gau}}\rvert^{2}$ to $4.5\times10^{-14}$. So the symbol is independent of the amplitude, and no term can couple the amplitude to the potential.
 
 What a cross term would require. A term in $\varrho\vec A$ would need the symbol to depend on $\varrho$, which the homogeneity forbids. The absence is structural and not a cancellation, and it is the frequency-space form of the polar parent's statement that the quantum potential is untouched by a constant potential.
 
@@ -174,7 +174,7 @@ The invariants $\vec\pi$ and $\mathcal E$ are gauge invariant and field dependen
 
 | Symbol | Meaning |
 | --- | --- |
-| $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge factor; central, hence commuting with the kernel |
+| $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge factor; central, hence commuting with the kernel |
 | $e^{-i\theta_{\mathrm{pwp}}}$ | The transform's kernel; central, one coordinate |
 | $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ | The covariant frequency; the invariant $\mathcal E$ on a mode |
 | $h\,\nu_{\Phi,k}+ϙ A_\imath$ | The mechanical momentum; the invariant $\vec\pi$ on a mode |

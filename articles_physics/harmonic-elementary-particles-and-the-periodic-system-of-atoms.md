@@ -87,7 +87,7 @@ which is the superposition of plane waves whose wave vector has fixed length $\o
 The regular solutions of the Helmholtz equation in spherical coordinates are products of a spherical Bessel function, a Legendre function and an azimuthal exponential,
 
 $$
-\tilde{Ξ}_{nm}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = j_n(\omega r)\,P_{nm}(\cos\theta)\,\exp(im\lambda),
+\tilde{Ξ}_{nm}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = j_n(\omega r)\,P_{nm}(\cos\theta)\,\exp(im\theta_{\mathrm{azm}}),
 \qquad
 n = 0,1,2,\dots
 $$
@@ -367,7 +367,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\delta(x_j - n h_j)$ | Lattice of shifted $\delta$-functions; the crystal structural biquaternion |
 | $\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ | Biamplitude, $\tilde J_{\Phi,\mathrm{eg}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\theta_{\mathrm{mat}})$ |
 | $\tilde{Ξ}$ | Helmholtz potential, $\Delta_\Phi\tilde{Ξ} + \omega^2\tilde{Ξ} = 0$ |
-| $\tilde{Ξ}_{nm} = j_n(\omega r)P_{nm}(\cos\theta)\exp(im\lambda)$ | Regular spherical Helmholtz solutions |
+| $\tilde{Ξ}_{nm} = j_n(\omega r)P_{nm}(\cos\theta)\exp(im\theta_{\mathrm{azm}})$ | Regular spherical Helmholtz solutions |
 | $j_n$ | Spherical Bessel function of order $n$ |
 | $\tilde J_{\Phi,\mathrm{eg},nm}^{\,0} = (\omega-\vec\nabla_\Phi)\circ\,\tilde{Ξ}_{nm}$ | Pulsar (scalar potential) |
 | $\tilde J_{\Phi,\mathrm{eg},nm}^{\,j} = (\omega-\vec\nabla_\Phi)\circ(\tilde{Ξ}_{nm}\vec e_{\imath})$ | Spinor (vector potential) |

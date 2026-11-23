@@ -127,7 +127,7 @@ $$
 
 with $[H_u,H_d]=H_uH_d-H_dH_u$ and $H_u=M_u^{\mathcal{F}}M_u^{\mathcal{F}\dagger}$, $H_d=M_d^{\mathcal{F}}M_d^{\mathcal{F}\dagger}$. The product runs over the three up-type pairs and the three down-type pairs. Determinant and product change sign together when two masses are relabelled, so the ratio is labelling-independent; the overall sign is fixed by the quartet definition, and the identity was checked numerically with the measured masses and the measured $V$. **CP violation for three generations is the noncommutativity of the two mass-matrix products, measured by the Jarlskog invariant.**
 
-**The values, recomputed.** With $\lambda=0.22500$, $A=0.826$, $\bar\rho=0.159$ and $\bar\digamma_{\mathrm{wlf}}=0.348$, the matrix reconstructed from the exact three-angle parametrisation satisfies
+**The values, recomputed.** With $\digamma_{\mathrm{ckm},12}=0.22500$, $A=0.826$, $\bar\rho=0.159$ and $\bar\digamma_{\mathrm{wlf}}=0.348$, the matrix reconstructed from the exact three-angle parametrisation satisfies
 
 $$
 \max\big|VV^\dagger-I_3\big| = 2.2\times10^{-16},
@@ -135,28 +135,28 @@ $$
 J = 3.00\times10^{-5},
 $$
 
-so unitarity holds to machine precision, and the invariant agrees with the quoted $J\simeq3.1\times10^{-5}$ to the rounding of the four inputs. The magnitudes come out $|V_{ud}|\simeq0.974$, $|V_{us}|\simeq0.225$, $|V_{ub}|\simeq0.004$, $|V_{cb}|\simeq0.042$, $|V_{td}|\simeq0.009$, $|V_{tb}|\simeq0.999$. The leading-order Wolfenstein form $A^2\lambda^6\bar\digamma_{\mathrm{wlf}}$ gives $3.08\times10^{-5}$ at the same inputs; the exact invariant carries in addition the prefactor $c_{12}c_{23}c_{13}^{2}=1-\tfrac12(\lambda^2+A^2\lambda^4+\cdots)\simeq0.974$, which the truncated form omits, so the exact value lies about three per cent below the truncated one. The reconstruction used the exact three-angle parametrisation, because the truncated Wolfenstein form is $*$-unitary only to the order of the truncation and $J$ needs the untruncated phase structure.
+so unitarity holds to machine precision, and the invariant agrees with the quoted $J\simeq3.1\times10^{-5}$ to the rounding of the four inputs. The magnitudes come out $|V_{ud}|\simeq0.974$, $|V_{us}|\simeq0.225$, $|V_{ub}|\simeq0.004$, $|V_{cb}|\simeq0.042$, $|V_{td}|\simeq0.009$, $|V_{tb}|\simeq0.999$. The leading-order Wolfenstein form $A^2\digamma_{\mathrm{ckm},12}^6\bar\digamma_{\mathrm{wlf}}$ gives $3.08\times10^{-5}$ at the same inputs; the exact invariant carries in addition the prefactor $c_{12}c_{23}c_{13}^{2}=1-\tfrac12(\digamma_{\mathrm{ckm},12}^2+A^2\digamma_{\mathrm{ckm},12}^4+\cdots)\simeq0.974$, which the truncated form omits, so the exact value lies about three per cent below the truncated one. The reconstruction used the exact three-angle parametrisation, because the truncated Wolfenstein form is $*$-unitary only to the order of the truncation and $J$ needs the untruncated phase structure.
 
 **Why the commutator is the invariant.** The commutator of the mass matrices is the algebraic expression of the fact that CP violation requires two non-commuting matrices with a complex phase. If $H_u=M_u^{\mathcal{F}}M_u^{\mathcal{F}\dagger}$ and $H_d=M_d^{\mathcal{F}}M_d^{\mathcal{F}\dagger}$ commuted, they could be diagonalised simultaneously and the mixing matrix would be a permutation of phases — no CP violation. The determinant of the commutator is the simplest invariant of the two matrices that vanishes when they commute and changes sign when they are exchanged; its imaginary part is the Jarlskog invariant, up to the normalisation by the six mass-squared differences. In the framework the commutator is an operator on the labels alone, $[H_u^{\mathcal{F}},H_d^{\mathcal{F}}]$, and its nonvanishing is the statement that the two mass operators are misaligned in a CP-violating way.
 
 ## The Wolfenstein Parametrisation, the Unitarity Triangle, and the Data
 
-**The Wolfenstein parametrisation.** The empirical pattern of the CKM matrix — nearly diagonal, with a small mixing — is captured by the expansion in $\lambda=\sin\theta_C\simeq0.225$, the Cabibbo angle. To order $\lambda^3$ the entries are
+**The Wolfenstein parametrisation.** The empirical pattern of the CKM matrix — nearly diagonal, with a small mixing — is captured by the expansion in $\digamma_{\mathrm{ckm},12}=\sin\theta_C\simeq0.225$, the Cabibbo angle. To order $\digamma_{\mathrm{ckm},12}^3$ the entries are
 
-| entries | their value to $O(\lambda^3)$ |
+| entries | their value to $O(\digamma_{\mathrm{ckm},12}^3)$ |
 |---|---|
-| $V_{ud}$, $V_{cs}$ | $1-\tfrac12\lambda^2$ |
+| $V_{ud}$, $V_{cs}$ | $1-\tfrac12\digamma_{\mathrm{ckm},12}^2$ |
 | $V_{tb}$ | $1$ |
-| $V_{us}$ | $\lambda$ |
-| $V_{cd}$ | $-\lambda$ |
-| $V_{cb}$ | $A\lambda^2$ |
-| $V_{ts}$ | $-A\lambda^2$ |
-| $V_{ub}$ | $A\lambda^3(\bar\rho-i\bar\digamma_{\mathrm{wlf}})$ |
-| $V_{td}$ | $A\lambda^3(1-\bar\rho-i\bar\digamma_{\mathrm{wlf}})$ |
+| $V_{us}$ | $\digamma_{\mathrm{ckm},12}$ |
+| $V_{cd}$ | $-\digamma_{\mathrm{ckm},12}$ |
+| $V_{cb}$ | $A\digamma_{\mathrm{ckm},12}^2$ |
+| $V_{ts}$ | $-A\digamma_{\mathrm{ckm},12}^2$ |
+| $V_{ub}$ | $A\digamma_{\mathrm{ckm},12}^3(\bar\rho-i\bar\digamma_{\mathrm{wlf}})$ |
+| $V_{td}$ | $A\digamma_{\mathrm{ckm},12}^3(1-\bar\rho-i\bar\digamma_{\mathrm{wlf}})$ |
 
-with $A\simeq0.826$, $\bar\rho\simeq0.159$ and $\bar\digamma_{\mathrm{wlf}}\simeq0.348$. The two corners carry the barred pair, which is the standard placement at this order. The CP-violating parameter is the imaginary part $\bar\digamma_{\mathrm{wlf}}$. To this order the phase of the standard parametrisation is $\delta=\arctan(\bar\digamma_{\mathrm{wlf}}/\bar\rho)$, and the single CP-odd combination is the product $A^2\lambda^6\bar\digamma_{\mathrm{wlf}}$, which is the Jarlskog invariant at leading order. The hierarchy of the entries — the powers of $\lambda$ — is the observed structure; the framework supplies no reason for it.
+with $A\simeq0.826$, $\bar\rho\simeq0.159$ and $\bar\digamma_{\mathrm{wlf}}\simeq0.348$. The two corners carry the barred pair, which is the standard placement at this order. The CP-violating parameter is the imaginary part $\bar\digamma_{\mathrm{wlf}}$. To this order the phase of the standard parametrisation is $\delta=\arctan(\bar\digamma_{\mathrm{wlf}}/\bar\rho)$, and the single CP-odd combination is the product $A^2\digamma_{\mathrm{ckm},12}^6\bar\digamma_{\mathrm{wlf}}$, which is the Jarlskog invariant at leading order. The hierarchy of the entries — the powers of $\digamma_{\mathrm{ckm},12}$ — is the observed structure; the framework supplies no reason for it.
 
-**The unitarity triangle.** The orthogonality of the first and third columns of $V$ defines a triangle in the complex plane; rescaled by one of its sides it has vertices $(0,0)$, $(1,0)$ and $(\bar\rho,\bar\digamma_{\mathrm{wlf}})$. The barred pair is the one the data are quoted in; it is related to the unbarred pair by $\bar\rho=\rho(1-\lambda^2/2+\cdots)$ and $\bar\digamma_{\mathrm{wlf}}=\digamma_{\mathrm{wlf}}(1-\lambda^2/2+\cdots)$. Its angles
+**The unitarity triangle.** The orthogonality of the first and third columns of $V$ defines a triangle in the complex plane; rescaled by one of its sides it has vertices $(0,0)$, $(1,0)$ and $(\bar\rho,\bar\digamma_{\mathrm{wlf}})$. The barred pair is the one the data are quoted in; it is related to the unbarred pair by $\bar\rho=\rho(1-\digamma_{\mathrm{ckm},12}^2/2+\cdots)$ and $\bar\digamma_{\mathrm{wlf}}=\digamma_{\mathrm{wlf}}(1-\digamma_{\mathrm{ckm},12}^2/2+\cdots)$. Its angles
 
 $$
 \alpha,\ \beta,\ \gamma
@@ -194,7 +194,7 @@ $$
 
 The relation **area $=\tfrac12|J|$** is the geometric statement of the CP-violating invariant, and the computed area agreed with it to machine precision for all six triangles.
 
-**The rescaled triangle.** Dividing the relation by the complex term $V_{cd}V_{cb}^{*}$, not by its modulus, sends that vertex to $1$ and brings the triangle to the standard form with vertices $(0,0)$, $(1,0)$, $(\bar\rho,\bar\digamma_{\mathrm{wlf}})$ and angles $\alpha,\beta,\gamma$. Dividing by the modulus instead would leave a rotation of the whole triangle and move the apex off $(\bar\rho,\bar\digamma_{\mathrm{wlf}})$. In the rescaled coordinates the area is $\bar\digamma_{\mathrm{wlf}}/2$, and the two areas are related by the squared side, $|V_{cd}V_{cb}^{*}|^{2}=A^{2}\lambda^{6}$. The framework's content is the closure: the sides are products of entries of a **$*$-unitary** matrix on the flavour factor, and unitarity is exactly the framework's requirement that the flavour rotation preserve the norm on $\mathcal{F}$. The closure of the triangle is the statement that $V$ is a point of $\mathrm{U}(N_g)$, and the nonzero area is the statement that the point is not real.
+**The rescaled triangle.** Dividing the relation by the complex term $V_{cd}V_{cb}^{*}$, not by its modulus, sends that vertex to $1$ and brings the triangle to the standard form with vertices $(0,0)$, $(1,0)$, $(\bar\rho,\bar\digamma_{\mathrm{wlf}})$ and angles $\alpha,\beta,\gamma$. Dividing by the modulus instead would leave a rotation of the whole triangle and move the apex off $(\bar\rho,\bar\digamma_{\mathrm{wlf}})$. In the rescaled coordinates the area is $\bar\digamma_{\mathrm{wlf}}/2$, and the two areas are related by the squared side, $|V_{cd}V_{cb}^{*}|^{2}=A^{2}\digamma_{\mathrm{ckm},12}^{6}$. The framework's content is the closure: the sides are products of entries of a **$*$-unitary** matrix on the flavour factor, and unitarity is exactly the framework's requirement that the flavour rotation preserve the norm on $\mathcal{F}$. The closure of the triangle is the statement that $V$ is a point of $\mathrm{U}(N_g)$, and the nonzero area is the statement that the point is not real.
 
 **The number of triangles and the number of phases.** The $\binom{N_g}{2}$ column pairs give as many triangles, the rows give as many again, and all of them have area $|J|/2$; for $N_g=3$ that is six triangles. The number of triangles is not the number of CP phases: for $N_g=3$ there are six triangles and one phase, and for $N_g=2$ the two triangles are degenerate and there is no phase. The equality of the six areas is a consistency condition of unitarity, not an independent input; the framework supplies the $*$-unitary structure, and the equality is a theorem of the group.
 
@@ -372,11 +372,11 @@ The framework's definite structural contribution is the location of the phase. T
 | $\tfrac12N_g(N_g-1)$, $\tfrac12(N_g-1)(N_g-2)$ | Mixing angles; CP-violating phases |
 | $J=\mathrm{Im}(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*})$ | Jarlskog invariant |
 | $J=c_{12}c_{23}c_{13}^2s_{12}s_{23}s_{13}\sin\delta$ | Jarlskog invariant, three-angle form |
-| $\lambda,A,\bar\rho,\bar\digamma_{\mathrm{wlf}}$ | Wolfenstein parameters (barred values) |
+| $\digamma_{\mathrm{ckm},12},A,\bar\rho,\bar\digamma_{\mathrm{wlf}}$ | Wolfenstein parameters (barred values) |
 | $\alpha,\beta,\gamma$ | Unitarity-triangle angles |
 | $A_\triangle=\tfrac12|J|$ | Unitarity-triangle area |
 | $X_{\mathrm{PMNS}}$, $\delta_{\mathrm{CP}}$, $J_{\mathrm{CP}}$ | Leptonic mixing matrix, phase, invariant |
-| $J=3.00\times10^{-5}$; $A^2\lambda^6\bar\digamma_{\mathrm{wlf}}=3.08\times10^{-5}$ | Recomputed invariant; its leading-order form |
+| $J=3.00\times10^{-5}$; $A^2\digamma_{\mathrm{ckm},12}^6\bar\digamma_{\mathrm{wlf}}=3.08\times10^{-5}$ | Recomputed invariant; its leading-order form |
 | $\sin2\beta=0.707$, $\gamma\simeq65.4^\circ$ | Recomputed CP observables |
 
 ## Further Reading
@@ -385,7 +385,7 @@ The framework's definite structural contribution is the location of the phase. T
 - N. Cabibbo, "Unitary symmetry and leptonic decays," *Physical Review Letters* **10** (1963) 531–533, for the original mixing angle.
 - M. Kobayashi and T. Maskawa, "CP violation in the renormalizable theory of weak interaction," *Progress of Theoretical Physics* **49** (1973) 652–657, for the three-generation mixing matrix and its CP-violating phase.
 - S. L. Glashow, J. Iliopoulos, and L. Maiani, "Weak interactions with lepton–hadron symmetry," *Physical Review D* **2** (1970) 1285–1292, for flavour universality and the GIM mechanism.
-- L. Wolfenstein, "Parametrization of the Kobayashi–Maskawa matrix," *Physical Review Letters* **51** (1983) 1945–1947, for the expansion in $\lambda$.
+- L. Wolfenstein, "Parametrization of the Kobayashi–Maskawa matrix," *Physical Review Letters* **51** (1983) 1945–1947, for the expansion in $\digamma_{\mathrm{ckm},12}$.
 - C. Jarlskog, "Commutator of the quark mass matrices in the standard electroweak model and a measure of maximal CP nonconservation," *Physical Review Letters* **55** (1985) 1039–1042, for the invariant measure of CP violation.
 - C. Jarlskog (ed.), *CP Violation* (World Scientific, 1989), for the collected theory and phenomenology.
 - Y. Nir, "CP violation in meson decays," in *Lectures on Flavor Physics* (Springer, 2002), and the review literature, for the unitarity triangle and the CP observables.

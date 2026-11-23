@@ -208,7 +208,7 @@ The repair, stated as a rotor condition. The line above says exactly what is wro
 - A minimal left ideal $S_\pm(\vec u_{\mathrm r})$: preserved and irreducible, with the circle $e^{i\theta\vec u_{\mathrm r}}$ as stabiliser, which is the shape the electroweak pattern needs — and it is the carrier of spin one-half, so a field on it is a fermion.
 - The vector part $\mathfrak{k}$: not preserved by left multiplication at all, $\vec e_x\vec e_x=-e_t$, and it is the spin-one carrier, on which the rotor acts by the Hermitian pair $\mathrm{Sd}$ rather than by $L$.
 
-**What is not claimed.** That a fourth carrier exists; that one of the three can be reinterpreted as a scalar by changing the definition of spin; or that the potential, $\lambda$, $v$ or the normalisation of $\omicron_{\mathrm{hgs}}$ follows from any of this. The sentence above is the whole of the result: the rotor does not see a central field, and the carriers it does see carry spin one-half or spin one.
+**What is not claimed.** That a fourth carrier exists; that one of the three can be reinterpreted as a scalar by changing the definition of spin; or that the potential, $\digamma_{\mathrm{qtc}}$, $v$ or the normalisation of $\omicron_{\mathrm{hgs}}$ follows from any of this. The sentence above is the whole of the result: the rotor does not see a central field, and the carriers it does see carry spin one-half or spin one.
 
 There is no electroweak doublet and no hypercharge assignment. The Standard Model scalar is an $SU(2)_L$ doublet with hypercharge $Y = 1/2$, whose components are arranged so that one neutral component can acquire a vacuum expectation value while leaving the electromagnetic $\mathrm{U}(1)$ unbroken. Nothing in the read-list construction produces a doublet, a hypercharge operator, or the $SU(2)_L\times \mathrm{U}(1)_Y$ group with its quantum numbers. The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, which has a natural two-dimensional module $S$, so a doublet-shaped object is available algebraically; but the assignment of hypercharge, the relative $\mathrm{U}(1)$ inside the electroweak group, and the coupling of the doublet to the $W$ and $B$ fields are not determined by the algebra. **Writing those assignments down here would be inventing them**, and the assignment is exactly what the electroweak sector is made of. They are therefore not written.
 
@@ -310,7 +310,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $\xi$ | Complex scalar amplitude; $|\xi| = v/\sqrt{2}$ at the vacuum |
 | $v$ | Vacuum expectation value parameter (so $\langle|\xi|\rangle = v/\sqrt{2}$) |
 | $V(\xi^*\xi) = \beta(\xi^*\xi - v^2/2)^2$ | Scalar potential; $\beta > 0$ is the quartic coupling |
-| $\beta$ | Quartic self-coupling of the scalar (distinct from the phase $\lambda$) |
+| $\beta$ | Quartic self-coupling of the scalar (distinct from the phase $\digamma_{\mathrm{gau}}$) |
 | $h$ | Radial (Higgs) mode, $m_h^2 = 2\beta v^2$ |
 | $\vartheta_{\mathrm{fld}}$ | Angular (would-be Goldstone) mode, the phase $\vartheta_{\mathrm{fld}}/v$ |
 | $\varepsilon=(1,-1,-1,-1)$ | coordinate signs for contractions |

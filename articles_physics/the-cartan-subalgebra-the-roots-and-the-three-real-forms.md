@@ -141,7 +141,7 @@ The shape of the root system decides the representation theory: two independent 
 For each root $\alpha$ the reflection
 
 $$
-s_\alpha(\lambda)=\lambda-2\frac{(\lambda,\alpha)}{(\alpha,\alpha)}\alpha
+s_\alpha(\varpi_{\mathrm{wgt}})=\varpi_{\mathrm{wgt}}-2\frac{(\varpi_{\mathrm{wgt}},\alpha)}{(\alpha,\alpha)}\alpha
 $$
 
 is an automorphism of the root system. On a root system of two orthogonal equal lines the two reflections act as

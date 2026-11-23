@@ -49,10 +49,10 @@ The $r$ variation gives $\sum_{\imath}\varepsilon_{\imath} u_{\imath}(\sum_{\jma
 **The unit condition is the one place in this layer where a multiplier is genuinely needed.** The word's parameterisation absorbs the unit conditions of the boost and the rotor — a unit element is invertible for every value of its parameters — but the Proca direction is invertible by declaration and not by parameterisation: $u_{\imath}$ is three functions subject to one constraint, and the constraint must be imposed. Written with a multiplier,
 
 $$
-\mathcal L_{\imath}=\mathcal L+\lambda\bigl(\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}+1\bigr),
+\mathcal L_{\imath}=\mathcal L+\digamma_{\mathrm{lgr}}\bigl(\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}+1\bigr),
 $$
 
-and the multiplier enters the direction's equation as $\lambda u_{\imath}$, which is a force along the flow. It plays the part a pressure plays in an incompressible fluid, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.
+and the multiplier enters the direction's equation as $\digamma_{\mathrm{lgr}} u_{\imath}$, which is a force along the flow. It plays the part a pressure plays in an incompressible fluid, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.
 
 The contrast with the spin article is worth recording. There the parameterisation removed the need for a multiplier and the constraints appeared as vanishing momenta; here the parameterisation cannot remove it and the constraints appear as a projection. The difference is that a unit rotor has three parameters and a unit vector has two plus one constraint: the word's frame is a group element, and a direction is a coset.
 
@@ -142,7 +142,7 @@ The massless limit. The action's derivative terms survive at $\nu_m=0$ and the f
 
 The constraint's class. Whether the unit condition and the transverse projection produce a second-class system with a Dirac bracket that closes is not computed here.
 
-The multiplier's sign. $\lambda$ is determined by the equations and its sign is the density's gradient's, so a region of decreasing density has a negative pressure in this reading. Whether that is physical or an artefact of the split is not settled.
+The multiplier's sign. $\digamma_{\mathrm{lgr}}$ is determined by the equations and its sign is the density's gradient's, so a region of decreasing density has a negative pressure in this reading. Whether that is physical or an artefact of the split is not settled.
 
 ## Summary
 
@@ -167,7 +167,7 @@ The quantum sector. Absent: no $\frac{h}{2\pi}$ in the derivative terms, no quan
 | $F_{\imath\jmath}=r\omega_{\imath\jmath}+\partial_{\imath} r\,u_{\jmath}-\partial_{\jmath} r\,u_{\imath}$ | The field strength; vorticity plus density gradient |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number; the only place $\frac{h}{2\pi}$ appears |
 | $\nabla_{\imath}=\sum_{\jmath}\mathsf{P}_{\imath\jmath}\partial_{\jmath}$ | Transverse derivative; $\mathsf{P}_{\imath\jmath}=g_{\imath\jmath}+u_{\imath} u_{\jmath}$ |
-| $\lambda$ | Multiplier of the unit condition; a pressure |
+| $\digamma_{\mathrm{lgr}}$ | Multiplier of the unit condition; a pressure |
 | $E_{\imath}=\sum_{\jmath}\varepsilon_{\jmath} F_{\imath\jmath}u_{\jmath}$ | The electric part along the flow |
 | $a_{\imath}=\sum_{\jmath}\varepsilon_{\jmath} u_{\jmath}\partial_{\jmath} u_{\imath}$ | The flow's acceleration |
 | $\mathcal L$ | The Proca Lagrangian in the fluid variables |

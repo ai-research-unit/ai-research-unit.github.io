@@ -59,7 +59,7 @@ so that the two fields no longer share one mass: the second-order equations beco
 Carried further. If $E$ is derivatively coupled, $\vec\nabla_\Phi E = AB$, the system gives Petiau's double-periodic waves, interpolating between de Broglie and solitonic solutions — the construction is worked in [The Petiau System and the Quantisation of Mass in Biquaternionic Form](the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html). If $E$ is read as the Higgs field,
 
 $$
-\Box_\Phi E = -\mu E + \lambda E E^{\dagger} E
+\Box_\Phi E = -\mu E + \digamma_{\mathrm{qtc}} E E^{\dagger} E
 $$
 
 is invariant under $E \to G^{*} E H$ and carries the manifest $SU(2)_L\times SU(2)_R$ symmetry of the sigma model that leads to the electroweak theory after the $SU(2)_R$ breaking. The reader will meet that reading again in [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html), where the external claim and its limits are examined.

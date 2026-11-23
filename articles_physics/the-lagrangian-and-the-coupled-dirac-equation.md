@@ -125,19 +125,19 @@ What the article looks at. The orbit, because the symmetry is exact, and the con
 
 The action's free part is invariant under a *constant* central phase. Localizing the phase destroys the invariance, and the repair is unique.
 
-The mass term is safe. Under $\tilde\Xi\mapsto\lambda\tilde\Xi$ with $\lambda=\lambda(R)$ central, the mass term $\tilde\Xi_L^{*}\tilde\Xi_R$ becomes $\bar\lambda\lambda\,\tilde\Xi_L^{*}\tilde\Xi_R=\tilde\Xi_L^{*}\tilde\Xi_R$, since $\lambda$ commutes and has unit modulus. A mass term linear in two fields with one conjugate is invariant under a local central phase without any help.
+The mass term is safe. Under $\tilde\Xi\mapsto\digamma_{\mathrm{gau}}\tilde\Xi$ with $\digamma_{\mathrm{gau}}=\digamma_{\mathrm{gau}}(R)$ central, the mass term $\tilde\Xi_L^{*}\tilde\Xi_R$ becomes $\bar\digamma_{\mathrm{gau}}\digamma_{\mathrm{gau}}\,\tilde\Xi_L^{*}\tilde\Xi_R=\tilde\Xi_L^{*}\tilde\Xi_R$, since $\digamma_{\mathrm{gau}}$ commutes and has unit modulus. A mass term linear in two fields with one conjugate is invariant under a local central phase without any help.
 
-The kinetic term is not. The derivative acts on $\lambda$:
+The kinetic term is not. The derivative acts on $\digamma_{\mathrm{gau}}$:
 
 $$
-\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\bigl(\lambda\tilde\Xi_L\bigr)
-=\lambda\,\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L
-+\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\lambda\bigr)\tilde\Xi_L,
+\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\bigl(\digamma_{\mathrm{gau}}\tilde\Xi_L\bigr)
+=\digamma_{\mathrm{gau}}\,\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L
++\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\digamma_{\mathrm{gau}}\bigr)\tilde\Xi_L,
 $$
 
 and the second term is nonzero. The obstruction is therefore the derivative and only the derivative.
 
-The repair is unique within the abelian class. Demand that the action be invariant under $\tilde\Xi\mapsto\lambda\tilde\Xi$ with $\tilde A_\Phi\mapsto\tilde A_\Phi+\delta\tilde A_\Phi$. The kinetic terms acquire
+The repair is unique within the abelian class. Demand that the action be invariant under $\tilde\Xi\mapsto\digamma_{\mathrm{gau}}\tilde\Xi$ with $\tilde A_\Phi\mapsto\tilde A_\Phi+\delta\tilde A_\Phi$. The kinetic terms acquire
 
 $$
 \frac{2\pi i\,ϙ}{h}\Bigl(\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\Gamma\bigr)\tilde\Xi_L+\tilde\Xi_R^{*}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\tilde\Xi_R\Bigr)
@@ -266,7 +266,7 @@ The constant setting is closed — a finite product of exponentials up to the ga
 | $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^{3}r$ | Integration measure; $r'_t=ct'$ the material time |
 | $\tilde\nabla_{\mathrm{gco},\Phi},\ (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ | Covariant derivative and its $\natural$-image |
 | $\tilde A_\Phi,\ \tilde F$ | Potential biquaternion and curvature |
-| $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | Local central phase; $\Gamma$ real |
+| $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | Local central phase; $\Gamma$ real |
 | $r_L,r_R$ | The two residuals; $r_L=r_R=0$ is the coupled pair |
 | $\mathcal{L}$ | The Lagrangian density: the integrand of $S$ |
 | $J^{t},J_\imath$ | Noether current of the local phase; sum over parts, difference over parts |

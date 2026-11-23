@@ -22,7 +22,7 @@ The trace is invariant under conjugation by any element of $GL_2(\mathbb{C})$, s
 
 ### The Discriminant
 
-The eigenvalues are the roots of $\lambda^{2}-\tau\lambda+1=0$, so
+The eigenvalues are the roots of $\eta^{2}-\tau\eta+1=0$, so
 
 $$
 \eta_{\pm}=\frac{\tau\pm\sqrt{\tau^{2}-4}}{2},

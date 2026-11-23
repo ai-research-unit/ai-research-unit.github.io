@@ -118,7 +118,7 @@ So the failure of the viscous case is not a failure of the gradient test. In one
 
 It produces a linear equation whose solutions do not oscillate, and whose physical content is the smoothing of a shock into a layer of width $\digamma_{\mathrm{kin}}/u$. A reader who counts it as a wave equivalent has counted the heat equation as a wave equation.
 
-The Korteweg–de Vries equation is integrable by the inverse scattering transform, whose auxiliary problem is the linear Schrödinger equation $-\omicron_{\mathrm{aux},xx}+u\omicron_{\mathrm{aux}}=\lambda\omicron_{\mathrm{aux}}$. There the fluid $u$ is the *potential* of a linear equation and the unknown is an auxiliary wave function that is not the fluid. Integrability is not linearity, and the linear problem's unknown is not the flow.
+The Korteweg–de Vries equation is integrable by the inverse scattering transform, whose auxiliary problem is the linear Schrödinger equation $-\omicron_{\mathrm{aux},xx}+u\omicron_{\mathrm{aux}}=\digamma_{\mathrm{spc}}\omicron_{\mathrm{aux}}$. There the fluid $u$ is the *potential* of a linear equation and the unknown is an auxiliary wave function that is not the fluid. Integrability is not linearity, and the linear problem's unknown is not the flow.
 
 A fluid equation can be linearised, and when it is, the linear equation is either parabolic or a scattering problem. Neither is the free linear wave equation of the trilogy, and neither produces a fluid that looks like the trilinear fluid.
 
@@ -170,7 +170,7 @@ The block's two denials are one statement: the reading is a re-coordinatisation 
 | $\digamma_{\mathrm{kin}}$ | Kinematic viscosity |
 | $\omicron_{\mathrm{aux}}$ | Auxiliary wave function of the KdV scattering problem |
 | $u$ | Velocity of the one-dimensional flow; also the KdV field |
-| $\lambda$ | Spectral parameter of the scattering problem |
+| $\digamma_{\mathrm{spc}}$ | Spectral parameter of the scattering problem |
 | $\frac{h}{2\pi},\ m$ | The two constants the wave equation carries |
 | $c_{\mathrm{s}}$ | Sound speed |
 

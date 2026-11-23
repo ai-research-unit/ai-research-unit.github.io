@@ -12,7 +12,7 @@ These rules are real, and partial. They fix the marks of the common uses and the
 
 A caret carries four things and no label:
 
-- a power, $2^k$, $e^\lambda$, $(-1)^j$, $\alpha^k$, $2^{k/2-1}$;
+- a power, $2^k$, $e^{\varsigma_{\mathrm{exm}}}$, $(-1)^j$, $\alpha^k$, $2^{k/2-1}$;
 - a conjugation, $a^{*}$, $a^{\dagger}$, $a^{\natural}$;
 - a transposition, $L^T$, $\tilde{Ξ}^T$;
 - a construction, $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{sym}^l$, $\Lambda^kTM$ (degree).
@@ -44,7 +44,7 @@ The lists rule on these uses, not on the names. A raised grade, parameter, secto
 
 ## The Caret
 
-**The caret carries a power, a conjugation, a transposition and a construction.** Those four are the whole of its list, and they are read at a glance because each is italic or a symbol: $2^k$, $e^\lambda$, $(-1)^j$, $\alpha^k$ are powers; $a^{*}$, $a^{\dagger}$, $a^{\natural}$ conjugations; $L^T$, $\tilde{Ξ}^T$ transpositions; $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{sym}^l$, $\Lambda^kTM$ constructions.
+**The caret carries a power, a conjugation, a transposition and a construction.** Those four are the whole of its list, and they are read at a glance because each is italic or a symbol: $2^k$, $e^{\varsigma_{\mathrm{exm}}}$, $(-1)^j$, $\alpha^k$ are powers; $a^{*}$, $a^{\dagger}$, $a^{\natural}$ conjugations; $L^T$, $\tilde{Ξ}^T$ transpositions; $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{sym}^l$, $\Lambda^kTM$ constructions.
 
 An operator name written with its argument is the one word that stands there. $\operatorname{sym}(V)$ names the symmetric algebra of a space, $\operatorname{sym}^2(E)$ the symmetric square of a bundle. The word names a structure of the glyph rather than a variant of it, it carries its argument with it and never stands bare, and it is therefore not a label: it takes no entry in §*The Labels*. It is written lowercase, as a label is, and a capital in that position is a defect.
 
@@ -90,11 +90,13 @@ Six codes separate two spellings. $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$
 
 The twelve algebraic structures carry no code at all. A product is written by its two slots and the conjugation each one carries, $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, and the operator names the structure on its own.
 
-## The Reserved Letter λ
+## The Reserved Letter $\lambda$
 
-**The letter λ carries the wavelength, and nothing else.** It is written in the three forms of *Physics Units and Common Elements Conventions*, $\lambda_m$, $\lambda_{\Phi}$ and $\lambda_t$. Two names inherited from other programmes keep it: the Gell–Mann matrices $\lambda_a$ and the Wolfenstein parameter $\lambda$ of the CKM matrix. The two-component twistor column keeps it too, $M=\lambda\bar\lambda^{\mathsf T}$ with $\lambda\in\mathbb{C}^{2}$, because that object is a spinor and not a scalar.
+**The letter $\lambda$ carries the wavelength, and nothing else.** It is written in the three forms of *Physics Units and Common Elements Conventions*, $\lambda_m$, $\lambda_{\Phi}$ and $\lambda_t$. The three inherited names that once kept it now take their own letters: the Gell–Mann matrices are $\digamma_{\mathrm{gmn},a}$, the Wolfenstein parameter of the CKM matrix is $\digamma_{\mathrm{ckm},12}$, and the two-component twistor column of *Helicity in Biquaternionic Form* and *Congruence Twistors and the Fields They Generate* is $\varpi_{\mathrm{twz}}\in\mathbb{C}^{2}$, because a spinor is not a scalar.
 
-**The eigenvalue letter is the eta.** The spectrum is written $\eta$, $\eta_\pm$, $\eta_{1,2}$, $\eta_1\dots\eta_N$, $\eta_i$, $\eta_j$ or $\eta_n$ according to how many there are, the characteristic equation is $\eta^{2}-2Q_t\eta+N=0$, and the conjugate eigenvalue is $\bar\eta$. A dummy eigenvalue in a counting statement is $\eta$, as in "$\eta$ is an eigenvalue of $\tilde Q$ if and only if $\tilde Q-\eta e_t$ is not invertible". A spectrum still labelled $\lambda_1\dots\lambda_N$, $\lambda_i$ or $\lambda_n$ is a residue, not a convention: those are read as $\eta$ on sight. Every other scalar these articles once wrote with η carries a letter of its own, in the table below.
+**Four letters carry the four scalar roles, and no other use of them is admitted.** An angle is $\theta$, real, and its subscript names it. A wave number is $\nu$, and the wavelength is $\lambda=1/\nu$. An eigenvalue is $\eta$, and a scalar factor is $\digamma$ with a subscript that names its sense. A scalar that is none of these takes a subscripted glyph of its own from the table below and never one of the four.
+
+**The eigenvalue letter is the eta.** The spectrum is written $\eta$, $\eta_\pm$, $\eta_{1,2}$, $\eta_1\dots\eta_N$, $\eta_i$, $\eta_j$ or $\eta_n$ according to how many there are, the characteristic equation is $\eta^{2}-2Q_t\eta+N=0$, and the conjugate eigenvalue is $\bar\eta$. A dummy eigenvalue in a counting statement is $\eta$, as in "$\eta$ is an eigenvalue of $\tilde Q$ if and only if $\tilde Q-\eta e_t$ is not invertible". A spectrum written with any other letter is a residue, not a convention: it is read as $\eta$ on sight. Every other scalar these articles once wrote with η carries a letter of its own, in the table below.
 
 **The factor letter is the digamma.** A scalar that multiplies a field or an element is written $\digamma$ with a subscript that names its sense, the shape the corpus already uses for a coefficient, $\digamma_{\mathrm{kin}}$ and $\digamma_{\mathrm{blt}}$. Four senses are fixed.
 
@@ -116,6 +118,18 @@ The twelve algebraic structures carry no code at all. A product is written by it
 | shear viscosity | $\digamma_{\mathrm{vis}}$ |
 | Sommerfeld parameter of the Coulomb problem | $\digamma_{\mathrm{smt}}$ |
 | Wolfenstein $\bar\eta$ | $\digamma_{\mathrm{wlf}}$ |
+| the Wolfenstein mixing amplitude $s_{12}$ of the CKM matrix | $\digamma_{\mathrm{ckm},12}$ |
+| the Gell–Mann matrices, $[\digamma_{\mathrm{gmn},a},\digamma_{\mathrm{gmn},b}]=2i f_{abc}\digamma_{\mathrm{gmn},c}$ | $\digamma_{\mathrm{gmn},a}$ |
+| the quartic coupling of a potential, $V=\frac{\digamma_{\mathrm{qtc}}}{4}(\xi^2-v^2)^2$ | $\digamma_{\mathrm{qtc}}$ |
+| a moment of inertia | $\digamma_{\mathrm{inr}}$ |
+| a Lagrange multiplier | $\digamma_{\mathrm{lgr}}$ |
+| a spectral parameter, $G(\digamma_{\mathrm{spc}})=(L-\digamma_{\mathrm{spc}})^{-1}$ | $\digamma_{\mathrm{spc}}$ |
+| a free parameter of a family, a worldline or a scaling | $\digamma_{\mathrm{prm}}$ |
+| the two-component twistor spinor of *Helicity in Biquaternionic Form* | $\varpi_{\mathrm{twz}}$ |
+| a weight of the Cartan subalgebra | $\varpi_{\mathrm{wgt}}$ |
+| the twelve Newman–Penrose scalars | $\varsigma_{\mathrm{nps}}$ |
+| the Peirce functional of a cut | $\varsigma_{\mathrm{prc}}$ |
+| the central character of a one-dimensional invariant subspace | $\varsigma_{\mathrm{ctr}}$ |
 | the $\eta$ and $\eta'$ mesons | $\digamma_{\mathrm{mes}}$ |
 | Rindler time and rapidity | $\upsilon_{\mathrm{rnd}}$, $\upsilon_{\mathrm{rpd}}$ |
 | baryon asymmetry | $\digamma_{\mathrm{bau}}$ |

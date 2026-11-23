@@ -301,25 +301,25 @@ is an integer because it is the degree of a map $S^2\to S^2$ (or $S^2\to \mathrm
 **Bogomolny bound.** A bound $E\ge|Ϙ|$ with equality for a first-order equation both proves stability — the configuration is at the bottom of its sector — and identifies the first-order equation that the minimiser satisfies. The mechanism is the same completing of the square used for the instanton, transposed to the energy. The cleanest illustration is the one-dimensional kink of the $\xi^4$ model,
 
 $$
-E=\int dx\left[\tfrac12(\partial/\partial R_x\,\xi)^2+\tfrac{\lambda}{4}(\xi^2-v^2)^2\right],
+E=\int dx\left[\tfrac12(\partial/\partial R_x\,\xi)^2+\tfrac{\digamma_{\mathrm{qtc}}}{4}(\xi^2-v^2)^2\right],
 \qquad
-W(\xi)=\sqrt{\tfrac{\lambda}{2}}\left(v^2\xi-\tfrac13\xi^3\right),
+W(\xi)=\sqrt{\tfrac{\digamma_{\mathrm{qtc}}}{2}}\left(v^2\xi-\tfrac13\xi^3\right),
 $$
 
 for which
 
 $$
-\tfrac12\left(\partial/\partial R_x\,\xi\mp\sqrt{\tfrac{\lambda}{2}}(v^2-\xi^2)\right)^2
-=\tfrac12(\partial/\partial R_x\,\xi)^2+\tfrac{\lambda}{4}(\xi^2-v^2)^2\mp\partial/\partial R_x W ,
+\tfrac12\left(\partial/\partial R_x\,\xi\mp\sqrt{\tfrac{\digamma_{\mathrm{qtc}}}{2}}(v^2-\xi^2)\right)^2
+=\tfrac12(\partial/\partial R_x\,\xi)^2+\tfrac{\digamma_{\mathrm{qtc}}}{4}(\xi^2-v^2)^2\mp\partial/\partial R_x W ,
 $$
 
 as was verified symbolically by expanding both sides. Integrating,
 
 $$
-E\;\ge\;\left|W(v)-W(-v)\right|=\frac{2\sqrt{2\lambda}}{3}\,v^3,
+E\;\ge\;\left|W(v)-W(-v)\right|=\frac{2\sqrt{2\digamma_{\mathrm{qtc}}}}{3}\,v^3,
 $$
 
-with equality if and only if $\partial/\partial R_x\,\xi=\pm\sqrt{\lambda/2}(v^2-\xi^2)$: the bound is saturated by the kink, whose stability is therefore proved, and not merely conjectured, within the model. The point of the example is that the bound needs two ingredients — a **potential** with degenerate minima and a **first-order equation** that the configuration satisfies — and the energy functional must contain the potential in the combination that completes the square.
+with equality if and only if $\partial/\partial R_x\,\xi=\pm\sqrt{\digamma_{\mathrm{qtc}}/2}(v^2-\xi^2)$: the bound is saturated by the kink, whose stability is therefore proved, and not merely conjectured, within the model. The point of the example is that the bound needs two ingredients — a **potential** with degenerate minima and a **first-order equation** that the configuration satisfies — and the energy functional must contain the potential in the combination that completes the square.
 
 **The framework's situation.** The framework's Lorentzian field content is the abelian Maxwell field, the non-abelian gauge field, and the free scalar field of the Klein–Gordon article. The Maxwell and non-abelian gauge sectors are gauge fields alone; their static finite-energy content is exhausted by the Coulomb field and its singular point limit, and neither has a potential in which a Bogomolny square could be completed. The scalar sector is a *free* massive field, with no self-interaction; a free field has no degenerate vacua and no kink, and it provides no potential of the $\xi^4$ type. Consequently:
 

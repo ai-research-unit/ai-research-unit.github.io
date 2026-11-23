@@ -50,10 +50,10 @@ so the masses $m_i$ are the roots: the representation carries a **discrete set o
 The roots are read off from the eigenvalues of $\Gamma_{0}$. Setting $\vec p=0$ gives $\Gamma(p)=p_0\Gamma_{0}$ and
 
 $$
-\det\bigl(p_0\Gamma_{0}+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\eta_1\bigr)\bigl(p_0-\mu_0\eta_2\bigr)\cdots\bigl(p_0-\mu_0\lambda_N\bigr),
+\det\bigl(p_0\Gamma_{0}+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\eta_1\bigr)\bigl(p_0-\mu_0\eta_2\bigr)\cdots\bigl(p_0-\mu_0\eta_N\bigr),
 $$
 
-where the $\eta_i$ are the eigenvalues of $\Gamma_{0}$ and $\mu_0$ is a single constant with the dimensions of mass. Comparing with the factorisation gives $m_i=\mu_0\eta_i$ up to signs, and, because $\lambda$ and $-\lambda$ occur with the same multiplicity, the positive spectrum is the set of positive $|\eta_i|$. For a representation of type $\tau^{0,\bar l}$ the eigenvalues are the $\bar\lambda$; for a general $\tau^{l\bar l}$ the mass is the **product** of a pair of eigenvalue factors,
+where the $\eta_i$ are the eigenvalues of $\Gamma_{0}$ and $\mu_0$ is a single constant with the dimensions of mass. Comparing with the factorisation gives $m_i=\mu_0\eta_i$ up to signs, and, because $\eta$ and $-\eta$ occur with the same multiplicity, the positive spectrum is the set of positive $|\eta_i|$. For a representation of type $\tau^{0,\bar l}$ the eigenvalues are the $\bar\eta$; for a general $\tau^{l\bar l}$ the mass is the **product** of a pair of eigenvalue factors,
 
 $$
 m_1 = \mu_0\,\eta_1\bar\eta_1,

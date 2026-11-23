@@ -281,7 +281,7 @@ $$
 (\Delta_\Phi+4\pi^{2}\nu_{\Phi}^2)\bigl(\exp(i\theta_{\mathrm{spa}})b\bigr) = \exp(i\theta_{\mathrm{spa}})\bigl(\Delta_\Phi+2i2\pi\vec\nu_\Phi\cdot\nabla\bigr)b ,
 $$
 
-so that the Helmholtz operator becomes the **conjugate** operator $-\Delta_\Phi-4\pi i\vec\nu_{\Phi}\cdot\nabla-\lambda^2$ below. For the unshifted Dirac operator,
+so that the Helmholtz operator becomes the **conjugate** operator $-\Delta_\Phi-4\pi i\vec\nu_{\Phi}\cdot\nabla-\digamma_{\mathrm{spc}}^2$ below. For the unshifted Dirac operator,
 
 $$
 (D_3-L_{i2\pi\vec\nu_\Phi})\bigl(\exp(2\pi i\vec\nu_{\Phi}\cdot x)b\bigr) = \exp(2\pi i\vec\nu_{\Phi}\cdot x)D_3b ,
@@ -318,48 +318,48 @@ $$
 (\Delta_\Phi+4\pi^{2}\nu_{\Phi}^2)\bigl(\exp(it\gamma\cdot r_x)w\bigr) = \exp(it\gamma\cdot r_x)\bigl(-h_t^2+4\pi^{2}\nu_{\Phi}^2+2it\gamma\cdot\nabla+\Delta_\Phi\bigr)w ,
 $$
 
-so the operator to invert is $-\Delta_\Phi-2it\gamma\cdot\nabla-\lambda^2$ with
+so the operator to invert is $-\Delta_\Phi-2it\gamma\cdot\nabla-\digamma_{\mathrm{spc}}^2$ with
 
 $$
-\lambda^2 = 4\pi^{2}\nu_{\Phi}^2-t^2 .
+\digamma_{\mathrm{spc}}^2 = 4\pi^{2}\nu_{\Phi}^2-t^2 .
 $$
 
-Its Fourier transform is multiplication by $\zeta^2+2t\gamma\cdot\zeta-\lambda^2$; replacing the real $t$ by a complex parameter $z$, the symbol is invertible away from $\operatorname{Im}(z)=0$, and the **Faddeev Green's operator** is defined by the inverse of that symbol,
+Its Fourier transform is multiplication by $\zeta^2+2t\gamma\cdot\zeta-\digamma_{\mathrm{spc}}^2$; replacing the real $t$ by a complex parameter $z$, the symbol is invertible away from $\operatorname{Im}(z)=0$, and the **Faddeev Green's operator** is defined by the inverse of that symbol,
 
 $$
-\boxed{\;\bigl(g_\gamma(\lambda,z)f\bigr)(x) = \frac{1}{h^{3}}\int \frac{\exp(ix\cdot\zeta)}{\zeta^2+2z\gamma\cdot\zeta-\lambda^2}\,f(\zeta)\,d\zeta ,
-\qquad \gamma\in S^2,\ \lambda\ge0,\ z\in\mathbb{C}_+ = \{z : \operatorname{Im}(z)>0\}\;},
+\boxed{\;\bigl(g_\gamma(\digamma_{\mathrm{spc}},z)f\bigr)(x) = \frac{1}{h^{3}}\int \frac{\exp(ix\cdot\zeta)}{\zeta^2+2z\gamma\cdot\zeta-\digamma_{\mathrm{spc}}^2}\,f(\zeta)\,d\zeta ,
+\qquad \gamma\in S^2,\ \digamma_{\mathrm{spc}}\ge0,\ z\in\mathbb{C}_+ = \{z : \operatorname{Im}(z)>0\}\;},
 $$
 
-with the boundary value $g_\gamma(\lambda,t+i0)$ for real $t$. The symbol is non-degenerate for $\operatorname{Im}(z)\ne0$, so the integral converges absolutely for Schwartz $f$: this is the gain of the construction, an invertible symbol where the Helmholtz symbol is not.
+with the boundary value $g_\gamma(\digamma_{\mathrm{spc}},t+i0)$ for real $t$. The symbol is non-degenerate for $\operatorname{Im}(z)\ne0$, so the integral converges absolutely for Schwartz $f$: this is the gain of the construction, an invertible symbol where the Helmholtz symbol is not.
 
 ### The bounds, and the two Faddeev Green's functions
 
-The properties of $g_\gamma$ are quoted from Isozaki: for $s>\tfrac12$ it is continuous in $(\lambda,\gamma,z)$ except at $(\lambda,z)=(0,0)$, it is analytic in $z\in\mathbb{C}_+$, and for every $\delta_0>0$ and $0\le\alpha\le2$ there is $C$ with
+The properties of $g_\gamma$ are quoted from Isozaki: for $s>\tfrac12$ it is continuous in $(\digamma_{\mathrm{spc}},\gamma,z)$ except at $(\digamma_{\mathrm{spc}},z)=(0,0)$, it is analytic in $z\in\mathbb{C}_+$, and for every $\delta_0>0$ and $0\le\alpha\le2$ there is $C$ with
 
 $$
-\lVert g_\gamma(\lambda,z)\rVert_{(L^{2,s}\to H^{\alpha,s})} \le \frac{C}{(\lambda+\lvert z\rvert)^{1-\alpha}}, \qquad \lambda+\lvert z\rvert\ge\delta_0 .
+\lVert g_\gamma(\digamma_{\mathrm{spc}},z)\rVert_{(L^{2,s}\to H^{\alpha,s})} \le \frac{C}{(\digamma_{\mathrm{spc}}+\lvert z\rvert)^{1-\alpha}}, \qquad \digamma_{\mathrm{spc}}+\lvert z\rvert\ge\delta_0 .
 $$
 
 The two Green's functions of the shifted operators are then obtained by applying the first-order operator to $g_\gamma$: the source gives
 
 $$
-\boxed{\;G_{\mathrm{lor},\gamma}(\lambda,z) = (D_3+L_{iz\gamma}-2\pi\nu_{\Phi})\,g_\gamma(\lambda,z)\;}
+\boxed{\;G_{\mathrm{lor},\gamma}(\digamma_{\mathrm{spc}},z) = (D_3+L_{iz\gamma}-2\pi\nu_{\Phi})\,g_\gamma(\digamma_{\mathrm{spc}},z)\;}
 $$
 
-for the left-multiplication case, obtained from $(D_3+L_{iz\gamma}-2\pi\nu_{\Phi})(D_3+L_{iz\gamma}+2\pi\nu_{\Phi}) = -\Delta_\Phi-2iz\gamma\cdot\nabla-\lambda^2$ with $\lambda^2=4\pi^{2}\nu_{\Phi}^2-z^2$, and a **different** Faddeev Green's function
+for the left-multiplication case, obtained from $(D_3+L_{iz\gamma}-2\pi\nu_{\Phi})(D_3+L_{iz\gamma}+2\pi\nu_{\Phi}) = -\Delta_\Phi-2iz\gamma\cdot\nabla-\digamma_{\mathrm{spc}}^2$ with $\digamma_{\mathrm{spc}}^2=4\pi^{2}\nu_{\Phi}^2-z^2$, and a **different** Faddeev Green's function
 
 $$
-\boxed{\;G^{\mathrm R}_\gamma(\lambda,z) = (D_3+L_{iz\gamma}-R_{i\imath})\,g_\gamma(\lambda,z)\;}
+\boxed{\;G^{\mathrm R}_\gamma(\digamma_{\mathrm{spc}},z) = (D_3+L_{iz\gamma}-R_{i\imath})\,g_\gamma(\digamma_{\mathrm{spc}},z)\;}
 $$
 
-for the right-multiplication case, from the corresponding factorisation with the right multiplications. The two differ because the two sides of the multiplication differ, and the source's own remark is the blunt one: "the multiplication from the other side leads to a different Faddeev's Green's function". The properties are restated as a theorem: the same continuity and analyticity as $g_\gamma$, and for $s>\tfrac12$, $\lambda+\lvert z\rvert\ge\delta_0$ and $0\le\alpha\le1$ a constant $C$ with
+for the right-multiplication case, from the corresponding factorisation with the right multiplications. The two differ because the two sides of the multiplication differ, and the source's own remark is the blunt one: "the multiplication from the other side leads to a different Faddeev's Green's function". The properties are restated as a theorem: the same continuity and analyticity as $g_\gamma$, and for $s>\tfrac12$, $\digamma_{\mathrm{spc}}+\lvert z\rvert\ge\delta_0$ and $0\le\alpha\le1$ a constant $C$ with
 
 $$
-\lVert g_\gamma(\lambda,z)\rVert_{(L^{2,s}\to H^{\alpha,s})} \le C\,(\lambda+\lvert z\rvert)^{\alpha} .
+\lVert g_\gamma(\digamma_{\mathrm{spc}},z)\rVert_{(L^{2,s}\to H^{\alpha,s})} \le C\,(\digamma_{\mathrm{spc}}+\lvert z\rvert)^{\alpha} .
 $$
 
-This last estimate is printed with the *opposite* dependence on $\lambda+\lvert z\rvert$ from the proposition above it — increasing where the earlier bound decreases — and the two ranges of $\alpha$ do not coincide. As printed, the second is not a smoothing estimate and the first is; the discrepancy is recorded here and in the companion `.context`, and the reciprocal is to be checked against Isozaki's paper before either bound is relied on. The theorem's preamble speaks of the two $G_{\mathrm{lor},\gamma}$ and $G^{\mathrm R}_\gamma$ while its three items are printed with $g_\gamma$, one more instance of the chapter's loose use of the two symbols; the bounds are meant for the Green's functions of the shifted operators, which is how they are read here. The chapter's closing sentence draws the conclusion of the whole construction: with Faddeev's Green's function the inverse problem can be attacked, and its solution $u$ may be assumed to have the structure $u=\exp(2\pi i\vec\nu_{\Phi}\cdot x)b$, which is the appropriate setting for optical coherence tomography.
+This last estimate is printed with the *opposite* dependence on $\digamma_{\mathrm{spc}}+\lvert z\rvert$ from the proposition above it — increasing where the earlier bound decreases — and the two ranges of $\alpha$ do not coincide. As printed, the second is not a smoothing estimate and the first is; the discrepancy is recorded here and in the companion `.context`, and the reciprocal is to be checked against Isozaki's paper before either bound is relied on. The theorem's preamble speaks of the two $G_{\mathrm{lor},\gamma}$ and $G^{\mathrm R}_\gamma$ while its three items are printed with $g_\gamma$, one more instance of the chapter's loose use of the two symbols; the bounds are meant for the Green's functions of the shifted operators, which is how they are read here. The chapter's closing sentence draws the conclusion of the whole construction: with Faddeev's Green's function the inverse problem can be attacked, and its solution $u$ may be assumed to have the structure $u=\exp(2\pi i\vec\nu_{\Phi}\cdot x)b$, which is the appropriate setting for optical coherence tomography.
 
 ## What the Source Establishes, Transcribes, and Does Not
 
@@ -408,7 +408,7 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 
 **Uniqueness and existence** follow from the Fredholm alternative with two inputs: the compactness of the integral operator, which is the weak singularity $\lvert x-y\rvert^{-2}, \lvert x-y\rvert^{-1}$ of the kernels, and the uniqueness of the homogeneous solution, which is the unique continuation principle applied to a system derived by applying $D_3$ a second time. The proof closes through the radiation condition: the field is represented by a sphere integral that the condition makes vanish, so the field vanishes outside a ball, and unique continuation carries the vanishing inward.
 
-**Faddeev's Green's function** is obtained by conjugating the operator by a plane wave along a direction $\gamma$, which replaces the Helmholtz symbol by the non-degenerate $\zeta^2+2z\gamma\cdot\zeta-\lambda^2$; its bounds, quoted from Isozaki, are what the multidimensional inverse-scattering method uses. The construction is applied separately to the two sides of the multiplication, and — this is the source's own remark — the right-multiplication operator has a *different* Faddeev Green's function from the left-multiplication one. The whole chapter is written for vector fields, and the inverse problem proper is not solved in it; what it supplies is the apparatus of the direct problem in quaternionic form and the Green's function that an inversion would need.
+**Faddeev's Green's function** is obtained by conjugating the operator by a plane wave along a direction $\gamma$, which replaces the Helmholtz symbol by the non-degenerate $\zeta^2+2z\gamma\cdot\zeta-\digamma_{\mathrm{spc}}^2$; its bounds, quoted from Isozaki, are what the multidimensional inverse-scattering method uses. The construction is applied separately to the two sides of the multiplication, and — this is the source's own remark — the right-multiplication operator has a *different* Faddeev Green's function from the left-multiplication one. The whole chapter is written for vector fields, and the inverse problem proper is not solved in it; what it supplies is the apparatus of the direct problem in quaternionic form and the Green's function that an inversion would need.
 
 ## Summary of Notation
 
@@ -430,9 +430,9 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | (8.1)–(8.4) | The scattering problem: homogeneous incident field, inhomogeneous total field, outgoing scattered field |
 | (8.5) | The Lippmann–Schwinger integral equation; equivalent to (8.1)–(8.4) |
 | $L^{2,s}$, $H^{\alpha,s}$ | Weighted $L^2$ and weighted Sobolev spaces of the compactness and the bounds |
-| $2\pi\vec\nu_\Phi=\digamma_{\mathrm{wvn}}+t\gamma$, $\lambda^2=4\pi^{2}\nu_{\Phi}^2-t^2$ | Faddeev's decomposition of the wave vector along a unit direction $\gamma$ |
-| $g_\gamma(\lambda,z)$ | Faddeev's Green's operator; symbol $(\zeta^2+2z\gamma\cdot\zeta-\lambda^2)^{-1}$, $z\in\mathbb{C}_+$ |
-| $G_{\mathrm{lor},\gamma}(\lambda,z)$, $G^{\mathrm R}_\gamma(\lambda,z)$ | The two Faddeev Green's functions of the shifted operators, one for each side of the multiplication |
+| $2\pi\vec\nu_\Phi=\digamma_{\mathrm{wvn}}+t\gamma$, $\digamma_{\mathrm{spc}}^2=4\pi^{2}\nu_{\Phi}^2-t^2$ | Faddeev's decomposition of the wave vector along a unit direction $\gamma$ |
+| $g_\gamma(\digamma_{\mathrm{spc}},z)$ | Faddeev's Green's operator; symbol $(\zeta^2+2z\gamma\cdot\zeta-\digamma_{\mathrm{spc}}^2)^{-1}$, $z\in\mathbb{C}_+$ |
+| $G_{\mathrm{lor},\gamma}(\digamma_{\mathrm{spc}},z)$, $G^{\mathrm R}_\gamma(\digamma_{\mathrm{spc}},z)$ | The two Faddeev Green's functions of the shifted operators, one for each side of the multiplication |
 
 ## Further Reading
 

@@ -698,7 +698,7 @@ The strongest objection to the phrase is that the additive reading double counts
 The two sides are separated by the sign of one algebraic number. The characteristic polynomial of a general element is
 
 $$
-\lambda^2-(2\,\mathrm{Sc}\tilde Q)\,\lambda+\langle\tilde Q\rangle_\natural=0,
+\eta^2-(2\,\mathrm{Sc}\tilde Q)\,\eta+\langle\tilde Q\rangle_\natural=0,
 $$
 
 and its discriminant is

@@ -79,7 +79,7 @@ With $\tilde\Xi\mapsto\tilde\Xi\digamma_{\mathrm{gau}}$ and $\digamma_{\mathrm{g
 $$
 \tilde\Xi^{-1}\bigl(\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}\bigr)\tilde\Xi
 \longmapsto
-\tilde\Xi^{-1}\bigl(\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}\bigr)\tilde\Xi+\lambda^{-1}\partial_{\imath}\lambda,
+\tilde\Xi^{-1}\bigl(\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}\bigr)\tilde\Xi+\digamma_{\mathrm{gau}}^{-1}\partial_{\imath}\digamma_{\mathrm{gau}},
 $$
 
 and $\digamma_{\mathrm{gau}}^{-1}\partial_{\imath}\digamma_{\mathrm{gau}}=\frac{2\pi iϙ\partial_{\imath}\Gamma}{h}$ is central, so it cancels against the transformed connection. The frame's brackets do not see the shift at all, because it is added on the left of the element and the frame's factors are to the right, and because a central element commutes past every one of them.

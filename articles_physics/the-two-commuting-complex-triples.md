@@ -44,7 +44,7 @@ in which the scalar multiplies a real basis without being an element of the alge
 
 ### The Two Must Not Be Identified
 
-There is a natural map from the complexification into the algebra, $\lambda\otimes x\mapsto\lambda x$, and it is not injective. The element
+There is a natural map from the complexification into the algebra, $\digamma_{\mathrm{scl}}\otimes x\mapsto\digamma_{\mathrm{scl}} x$, and it is not injective. The element
 
 $$
 i\otimes\vec e_x-1\otimes i\vec e_x

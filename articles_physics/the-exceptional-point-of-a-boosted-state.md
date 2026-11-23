@@ -27,7 +27,7 @@ $$
 \eta_{\pm}=\tfrac12\left(1\pm r\right),\qquad r=\lvert\vec s_\Psi\rvert,
 $$
 
-so the two eigenvalues are positive, sum to one, and are separated by the radius. The characteristic polynomial is $\lambda^{2}-\lambda+\tfrac14(1-r^{2})$, whose discriminant is $r^{2}/4$: the spectrum is degenerate exactly at $r=0$.
+so the two eigenvalues are positive, sum to one, and are separated by the radius. The characteristic polynomial is $\eta^{2}-\eta+\tfrac14(1-r^{2})$, whose discriminant is $r^{2}/4$: the spectrum is degenerate exactly at $r=0$.
 
 The radius is the only spectral datum. Every state of radius $r$ has the same spectrum, and the axis is carried by the eigenvectors and not by the eigenvalues. This is the same division the material sector makes between the two eigenvalues of a rotor and the two eigenprojectors, and it is the reason the corpus writes the state in the polar form $\tfrac12(1+i\vec s)$ rather than as a matrix: the spectrum is one number, the axis is two, and the three together are the state.
 

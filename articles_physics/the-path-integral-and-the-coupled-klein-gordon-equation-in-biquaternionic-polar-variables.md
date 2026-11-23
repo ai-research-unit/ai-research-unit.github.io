@@ -144,7 +144,7 @@ The honest ledger. The chart contributes one sentence about where the connection
 
 3. The constraint's determinant with a connection. The angle's integral produces the inverse square root of the determinant of $-\partial_{\imath} \varrho^{2}\partial_{\imath}$ with the connection inside. Whether that determinant's scale dependence cancels against the radial integral, as the free article's does, is not shown.
 
-4. The interaction. A central interaction $\lambda \varrho^{4}$ leaves the chart's structure and the connection's address unchanged. The article does not pursue it.
+4. The interaction. A central interaction $\digamma_{\mathrm{qtc}} \varrho^{4}$ leaves the chart's structure and the connection's address unchanged. The article does not pursue it.
 
 5. The two-chart cover and finite transformations. The article states that a finite gauge transformation relabels the cover and moves no weight. Whether the cover has an observable consequence — a sign in a correlation function of the word — is the free polar article's question and remains open.
 

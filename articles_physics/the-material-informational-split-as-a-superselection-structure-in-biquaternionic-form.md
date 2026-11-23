@@ -49,7 +49,7 @@ The remainder of the article tests the split $\mathbb{B} = \mathbb{B}_{\Phi}\opl
 
 ### The decomposition
 
-Hermitian conjugation $\tilde{Q}\mapsto\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ is an antilinear involution of $\mathbb{B}$: it is additive, it satisfies $(\lambda\tilde{Q})^{*} = \lambda^{*}\tilde{Q}^{*}$ for $\lambda\in\mathbb{C}$, and it satisfies $(\tilde{Q}^{*})^{*} = \tilde{Q}$. Its two eigenspaces are exactly the two sectors,
+Hermitian conjugation $\tilde{Q}\mapsto\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ is an antilinear involution of $\mathbb{B}$: it is additive, it satisfies $(\digamma_{\mathrm{scl}}\tilde{Q})^{*} = \digamma_{\mathrm{scl}}^{*}\tilde{Q}^{*}$ for $\digamma_{\mathrm{scl}}\in\mathbb{C}$, and it satisfies $(\tilde{Q}^{*})^{*} = \tilde{Q}$. Its two eigenspaces are exactly the two sectors,
 $$
 \mathbb{B}_{\Psi} = \{\tilde{Q} : \tilde{Q}^{*} = +\tilde{Q}\}, \qquad
 \mathbb{B}_{\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\},

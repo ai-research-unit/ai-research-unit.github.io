@@ -18,7 +18,7 @@ The article is organised as follows. A first section writes the conjugation on t
 The three discrete operations $P$, $T$ and $PT$ act on each graded piece of the algebra by a sign. Charge conjugation is not of that kind, and two features separate it from them. It is **conjugate-linear**: it contains the coefficient conjugation and it reverses the scalar, so that
 
 $$
-(\lambda Q)^{\mathrm c}=\bar\lambda\,Q^{\mathrm c},
+(\digamma_{\mathrm{scl}} Q)^{\mathrm c}=\bar\digamma_{\mathrm{scl}}\,Q^{\mathrm c},
 $$
 
 which no untwisted operation does. And it preserves products,

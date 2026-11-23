@@ -75,23 +75,23 @@ The same statement in the rapidity. With $\gamma=\cosh\theta_{\mathrm{rpd}}$ and
 
 ## The Scale
 
-One multiplication. Let $\tilde X_{\Phi}=\lambda\tilde V_{\Phi}$, with $\lambda$ real and the same for every state, and $\tilde X_{\Phi,1}=\lambda\tilde V_{\Phi,1}$. Then
+One multiplication. Let $\tilde X_{\Phi}=\digamma_{\mathrm{scl}}\tilde V_{\Phi}$, with $\digamma_{\mathrm{scl}}$ real and the same for every state, and $\tilde X_{\Phi,1}=\digamma_{\mathrm{scl}}\tilde V_{\Phi,1}$. Then
 
 $$
-\tilde X_{\Phi}=\lambda\gamma\left(ic\,e_{t}+\vec v\right),
+\tilde X_{\Phi}=\digamma_{\mathrm{scl}}\gamma\left(ic\,e_{t}+\vec v\right),
 \qquad
-\langle\tilde X_{\Phi}\rangle_{\natural}=-\lambda^{2}c^{2},
+\langle\tilde X_{\Phi}\rangle_{\natural}=-\digamma_{\mathrm{scl}}^{2}c^{2},
 \qquad
-\tilde X_{\Phi}-\tilde X_{\Phi,1}=\lambda\left(\tilde V_{\Phi}-\tilde V_{\Phi,1}\right) .
+\tilde X_{\Phi}-\tilde X_{\Phi,1}=\digamma_{\mathrm{scl}}\left(\tilde V_{\Phi}-\tilde V_{\Phi,1}\right) .
 $$
 
 The norm scales as a square and the error as the first power. **The limit transfers by one multiplication, so no member of the family needs its own expansion.** That is why the five elements below form one table and not five derivations.
 
 ## The Approximations
 
-The table. Every row is $\lambda\gamma\left(ic\,e_{t}+\vec v\right)$, truncated by the one rule. The last column is what the truncation drops, and in every row it is the same two pieces: $\frac{3}{8}$ of the temporal slot at order $\beta^{4}$ and $\frac{1}{2}\beta^{2}$ of the vector slot.
+The table. Every row is $\digamma_{\mathrm{scl}}\gamma\left(ic\,e_{t}+\vec v\right)$, truncated by the one rule. The last column is what the truncation drops, and in every row it is the same two pieces: $\frac{3}{8}$ of the temporal slot at order $\beta^{4}$ and $\frac{1}{2}\beta^{2}$ of the vector slot.
 
-| Element | $\lambda$ | Exact | Order $\beta^{2}$ | Next term |
+| Element | $\digamma_{\mathrm{scl}}$ | Exact | Order $\beta^{2}$ | Next term |
 |---|---|---|---|---|
 | $\tilde V_{\Phi}$ | $1$ | $\gamma\left(ic\,e_{t}+\vec v\right)$ | $ic\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\vec v$ | $\frac{3}{8}ic\,\beta^{4}e_{t}+\frac{\beta^{2}}{2}\vec v$ |
 | $\tilde P_{\Phi}$ | $m$ | $i\frac{E}{c}e_{t}+\vec p$ | $imc\left(1+\frac{\beta^{2}}{2}\right)e_{t}+m\vec v$ | $\frac{3}{8}imc\,\beta^{4}e_{t}+\frac{\beta^{2}}{2}m\vec v$ |
@@ -175,7 +175,7 @@ The kinematic content of relativistic mechanics is one element and one constrain
 
 The limit is one rule: keep the excess of $\gamma$ to order $\beta^{2}$ in the temporal slot and drop it in the vector slot. It gives $\tilde V_{\Phi,1}=ic\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\vec v$, with the exact ratios $\frac{\gamma+1}{2\gamma^{2}}=1-\frac{3}{4}\beta^{2}+\cdots$ in the temporal slot and $\frac{1}{\gamma}=1-\frac{1}{2}\beta^{2}+\cdots$ in the vector slot.
 
-The scale attaches once. Every element of the family $\tilde X_{\Phi}=\lambda\tilde V_{\Phi}$ is truncated by one multiplication, which gives $E=mc^{2}+\frac{1}{2}mv^{2}$, $\vec p=m\vec v$, $\mathcal{E}=p^{2}/2m$, and the same three statements in wave numbers, in charge density and in the potential of one charge. Only an element carrying $\frac{h}{2\pi}$ goes further, to a wave equation, and that is the scale's doing and not the limit's.
+The scale attaches once. Every element of the family $\tilde X_{\Phi}=\digamma_{\mathrm{scl}}\tilde V_{\Phi}$ is truncated by one multiplication, which gives $E=mc^{2}+\frac{1}{2}mv^{2}$, $\vec p=m\vec v$, $\mathcal{E}=p^{2}/2m$, and the same three statements in wave numbers, in charge density and in the potential of one charge. Only an element carrying $\frac{h}{2\pi}$ goes further, to a wave equation, and that is the scale's doing and not the limit's.
 
 ## Summary of Notation
 
@@ -188,7 +188,7 @@ The scale attaches once. Every element of the family $\tilde X_{\Phi}=\lambda\ti
 | $\gamma-1$ | Excess of the temporal part over its rest value, in units of $c$ |
 | $\frac{\gamma+1}{2\gamma^{2}}$ | Exact ratio of the truncated to the exact excess, temporal slot |
 | $1/\gamma$ | Exact ratio of the truncated to the exact vector slot |
-| $\tilde X_{\Phi} = \lambda\tilde V_{\Phi}$ | The family; $\lambda$ is the one scale, real and state-independent |
+| $\tilde X_{\Phi} = \digamma_{\mathrm{scl}}\tilde V_{\Phi}$ | The family; $\digamma_{\mathrm{scl}}$ is the one scale, real and state-independent |
 | $E=\gamma mc^{2}$, $\vec p=\gamma m\vec v$ | Energy and momentum; the components of $\tilde P_{\Phi}=m\tilde V_{\Phi}$ |
 | $\mathcal{E} = E-mc^{2} = \left(\gamma-1\right)mc^{2}$ | Excess energy; equal to $\frac{1}{2}mv^{2}$ after truncation |
 | $\nu_m=\frac{mc}{h}$, $\nu'_{t}=\frac{E}{h\,c}$, $\vec\nu_{\Phi}=\frac{\vec p}{h}$ | The three wave numbers of $\tilde\Upsilon_{\Phi}=\left(\nu_m/c\right)\tilde V_{\Phi}$ |

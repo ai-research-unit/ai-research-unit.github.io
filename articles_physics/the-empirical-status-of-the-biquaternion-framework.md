@@ -137,7 +137,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **Derived or posited.** Posited as a question. There is no field equation, no action, and no coupling constant.
 
-**The existing bound.** If a specific coupling were written down — a Yukawa interaction of range $\lambda$ and strength $\alpha$, say — then torsion-balance, equivalence-principle, and atom-interferometry bounds would apply to it. With no parameter, nothing is constrained. And a coupling that is inserted rather than derived would make any resulting measurement a test of the insertion, not of the framework.
+**The existing bound.** If a specific coupling were written down — a Yukawa interaction of range $\upsilon_{\mathrm{rng}}$ and strength $\alpha$, say — then torsion-balance, equivalence-principle, and atom-interferometry bounds would apply to it. With no parameter, nothing is constrained. And a coupling that is inserted rather than derived would make any resulting measurement a test of the insertion, not of the framework.
 
 **Verdict.** Not a test, but the framework's largest gap and its best hope. This is the item in the ledger whose completion would most plausibly produce a genuine test.
 

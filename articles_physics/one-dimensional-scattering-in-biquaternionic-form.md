@@ -243,18 +243,18 @@ whose exponent $4\pi\nu_{\Phi,\mathrm{ev}} a =\frac{2}{h}\int_0^a\sqrt{2m(V_0-E)
 
 ### The delta potential
 
-Let $V(x) = \lambda\,\delta(x)$. The matching conditions are continuity of $\xi_{\mathrm{scl}}$ and a jump in the derivative,
+Let $V(x) = \digamma_{\mathrm{pot}}\,\delta(x)$. The matching conditions are continuity of $\xi_{\mathrm{scl}}$ and a jump in the derivative,
 
 $$
 \xi_{\mathrm{scl}}(0^+) = \xi_{\mathrm{scl}}(0^-),
 \qquad
-\frac{d\xi_{\mathrm{scl}}}{dx}(0^+)-\frac{d\xi_{\mathrm{scl}}}{dx}(0^-) =\frac{(2\pi)^{2} 2\,m\,\lambda}{h^{2}}\,\xi_{\mathrm{scl}}(0),
+\frac{d\xi_{\mathrm{scl}}}{dx}(0^+)-\frac{d\xi_{\mathrm{scl}}}{dx}(0^-) =\frac{(2\pi)^{2} 2\,m\,\digamma_{\mathrm{pot}}}{h^{2}}\,\xi_{\mathrm{scl}}(0),
 $$
 
-the second obtained by integrating the equation across the origin. For $E>0$, with $\xi_{\mathrm{scl}} = \exp(ikx)+r\exp(-ikx)$ for $x<0$ and $\xi_{\mathrm{scl}} = t\exp(ikx)$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) =\frac{(2\pi)^{2} 2\,m\,\lambda}{h^{2}}t$, so with the dimensionless coupling
+the second obtained by integrating the equation across the origin. For $E>0$, with $\xi_{\mathrm{scl}} = \exp(ikx)+r\exp(-ikx)$ for $x<0$ and $\xi_{\mathrm{scl}} = t\exp(ikx)$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) =\frac{(2\pi)^{2} 2\,m\,\digamma_{\mathrm{pot}}}{h^{2}}t$, so with the dimensionless coupling
 
 $$
-\beta =\frac{2\pi m\,\lambda}{h^{2}\,\nu_{\Phi}},
+\beta =\frac{2\pi m\,\digamma_{\mathrm{pot}}}{h^{2}\,\nu_{\Phi}},
 $$
 
 one finds
@@ -269,12 +269,12 @@ T = \frac{1}{1+\beta^2},
 R = \frac{\beta^2}{1+\beta^2}\;},
 $$
 
-with $R+T=1$ for every $\beta$. For an attractive delta well, $\lambda<0$, there is exactly one bound state, at
+with $R+T=1$ for every $\beta$. For an attractive delta well, $\digamma_{\mathrm{pot}}<0$, there is exactly one bound state, at
 
 $$
-E_b = -\frac{m\,\lambda^{2}}{2\,\frac{h^{2}}{4\pi^{2}}} = -\frac{h^{2}\,4\pi^{2}\nu_{\Phi,\mathrm{ev},b}^{2}}{8\pi^{2}\,m},
+E_b = -\frac{m\,\digamma_{\mathrm{pot}}^{2}}{2\,\frac{h^{2}}{4\pi^{2}}} = -\frac{h^{2}\,4\pi^{2}\nu_{\Phi,\mathrm{ev},b}^{2}}{8\pi^{2}\,m},
 \qquad
-2\pi\nu_{\Phi,\mathrm{ev},b} =\frac{(2\pi)^{2} m\,|\lambda|}{h^{2}},
+2\pi\nu_{\Phi,\mathrm{ev},b} =\frac{(2\pi)^{2} m\,|\digamma_{\mathrm{pot}}|}{h^{2}},
 $$
 
 whose wave function $\exp(-2\pi\nu_{\Phi,\mathrm{ev},b}|x|)$ decays in both directions. The bound state's energy is fixed by the same matching condition continued to purely imaginary $\nu_{\Phi} = i\nu_{\Phi,\mathrm{ev},b}$; it is the pole that the transmission amplitude acquires on the negative energy axis.
@@ -326,7 +326,7 @@ M_\delta(\beta) =
 -i\beta & 1 - i\beta
 \end{pmatrix},
 \qquad
-\beta =\frac{2\pi m\,\lambda}{h^{2}\,\nu_{\Phi}},
+\beta =\frac{2\pi m\,\digamma_{\mathrm{pot}}}{h^{2}\,\nu_{\Phi}},
 $$
 
 as one verifies by eliminating $B_2$ with the outgoing condition $B_2=0$ and recovering $t = (1+i\beta)^{-1}$ and $r = -i\beta/(1+i\beta)$. With that convention the matrix has unit determinant, reflecting the flux preservation of the transfer relation, and its product with a propagation matrix carries the phase accumulated between two scatterers. The composition law also shows how resonances arise: a single barrier has a monotonically rising $T$, whereas two barriers separated by a well have a transmission with sharp peaks at the energies for which the round-trip phase is a multiple of $2\pi$. The algebra of the product, not any new input, produces the resonance structure.
@@ -383,12 +383,12 @@ $$
 \delta(0)-\delta(\infty) = \pi\left(n_b-\tfrac12\right),
 $$
 
-where the change is understood with the trivial winding contributed by the resonances removed; the half-unit term is the one-dimensional threshold remnant. For the attractive delta potential, $n_b=1$ and the phase is available in closed form: from $t=(1+i\beta)^{-1}$ with $\beta=\frac{(2\pi)^{2} m\,\lambda}{h^{2}\,2\pi\nu_{\Phi}}$ and $\lambda<0$,
+where the change is understood with the trivial winding contributed by the resonances removed; the half-unit term is the one-dimensional threshold remnant. For the attractive delta potential, $n_b=1$ and the phase is available in closed form: from $t=(1+i\beta)^{-1}$ with $\beta=\frac{(2\pi)^{2} m\,\digamma_{\mathrm{pot}}}{h^{2}\,2\pi\nu_{\Phi}}$ and $\digamma_{\mathrm{pot}}<0$,
 
 $$
 \arg t = \arctan\!\left(\frac{2\pi\nu_{\Phi,\mathrm{ev},b}}{k}\right),
 \qquad
-2\pi\nu_{\Phi,\mathrm{ev},b} =\frac{(2\pi)^{2} m\,|\lambda|}{h^{2}},
+2\pi\nu_{\Phi,\mathrm{ev},b} =\frac{(2\pi)^{2} m\,|\digamma_{\mathrm{pot}}|}{h^{2}},
 $$
 
 so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change of $\pi/2=\pi(1-\tfrac12)$ as the theorem requires. Each additional bound state shifts the threshold phase by $\pi$. The theorem is a useful bookkeeping check on any numerical solution of the matching problem, and the delta is the case in which it can be checked by hand.
@@ -429,7 +429,7 @@ The one-dimensional biquaternion Schrödinger equation with a real potential is 
 
 The current is $J =\frac{c}{4\pi i\nu_m}2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger\tilde{Ξ})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = c\,\nu_{\Phi}/\nu_m(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
 
-The step gives $T = 4\nu_{\Phi,1}\nu_{\Phi,2}/(\nu_{\Phi,1}+\nu_{\Phi,2})^2$ with the flux factor $\nu_{\Phi,2}/\nu_{\Phi,1}$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(2\pi\nu_{\Phi,\mathrm{ev}} a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-4\pi\nu_{\Phi,\mathrm{ev}} a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta =\frac{2\pi m\,\lambda}{h^{2}\,\nu_{\Phi}}$, and a single bound state at $E_b = -\frac{m\,\lambda^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ for the attractive case; the square well gives resonant transparency at $2\pi\nu_{\Phi,2}a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
+The step gives $T = 4\nu_{\Phi,1}\nu_{\Phi,2}/(\nu_{\Phi,1}+\nu_{\Phi,2})^2$ with the flux factor $\nu_{\Phi,2}/\nu_{\Phi,1}$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(2\pi\nu_{\Phi,\mathrm{ev}} a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-4\pi\nu_{\Phi,\mathrm{ev}} a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta =\frac{2\pi m\,\digamma_{\mathrm{pot}}}{h^{2}\,\nu_{\Phi}}$, and a single bound state at $E_b = -\frac{m\,\digamma_{\mathrm{pot}}^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ for the attractive case; the square well gives resonant transparency at $2\pi\nu_{\Phi,2}a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
 
 The biquaternion content is that the potential couples only to the scalar slot, so the $S$-matrix is central in the module, $S\otimes I_2$. It is a $*$-unitary element $\tilde{\mathcal S}_{\Psi}\tilde{\mathcal S}_{\Psi}^{*} = e_t$ and not a unit-norm rotor. There is no spin-flip or spin-dependent amplitude, because the operator that would produce one is not in the central Hamiltonian. The framework thus supplies the flux, the sector pairing, the unitarity, and the absence of module dynamics; it does not supply the matching conditions or the tunnelling law, which are scalar analysis, and it adds no prediction distinguishing the reformulation from scalar Schrödinger scattering.
 
@@ -452,8 +452,8 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $\rho = 2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = |\xi_{\mathrm{scl}}|^2$ | Density |
 | $S = \begin{pmatrix} t & r_2 \ r & t_2\end{pmatrix}$ | Scattering matrix; $*$-unitary, $S^{*} S = I_2$ |
 | $R = |r|^2$, $T = |t|^2$ | Flux reflection and transmission |
-| $\beta =\frac{2\pi m\,\lambda}{h^{2}\,\nu_{\Phi}}$ | Dimensionless delta-potential coupling |
-| $E_b = -\frac{m\,\lambda^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ | Bound state of the attractive delta |
+| $\beta =\frac{2\pi m\,\digamma_{\mathrm{pot}}}{h^{2}\,\nu_{\Phi}}$ | Dimensionless delta-potential coupling |
+| $E_b = -\frac{m\,\digamma_{\mathrm{pot}}^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ | Bound state of the attractive delta |
 | $M$ | Transfer matrix; preserves the flux form |
 | $\tau_W =\frac{h\,\arg\,t}{2\pi E}$ | Wigner time delay; a scalar |
 | $\tilde{\mathcal S}_{\Psi} = S\otimes I_2$ | Scattering matrix central in the module |

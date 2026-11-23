@@ -129,9 +129,9 @@ $$
 Preservation of $\langle\cdot\rangle_{\natural}$ therefore requires $\det A\,\overline{\det B} = 1$, and one may normalise both factors to unit determinant; the surviving pairs are $(A,B)\in SL(2,\mathbb{C})\times SL(2,\mathbb{C})$. The kernel of the assignment $(A,B)\mapsto L_{A}R_{B}$ is the set of pairs acting trivially, $L_{A}R_{B} = \mathrm{id}$, which is
 
 $$
-\ker = \{\,(\lambda I_2,\imath I_2) : \lambda,\imath\in\mathbb{C}^\times,\ \lambda\bar\imath=1\,\},
+\ker = \{\,(\digamma_{\mathrm{scl}} I_2,\imath I_2) : \digamma_{\mathrm{scl}},\imath\in\mathbb{C}^\times,\ \digamma_{\mathrm{scl}}\bar\imath=1\,\},
 \qquad
-\lambda^2=\mu^2=1 \ \text{ under the determinant normalization},
+\digamma_{\mathrm{scl}}^2=\mu^2=1 \ \text{ under the determinant normalization},
 \qquad
 \ker = \{\pm(e_t,e_t)\} .
 $$

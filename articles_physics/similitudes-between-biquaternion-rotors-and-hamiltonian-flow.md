@@ -177,22 +177,22 @@ The correspondence of the previous section is therefore an **inclusion**: the li
 The agreement of the previous section used a **linear** Hamiltonian, $H = \omega\,\vec u_{\mathrm r}\cdot\vec S$. Take instead the quadratic
 
 $$
-H(\vec S) \;=\; \lambda\,S_3^2 ,
+H(\vec S) \;=\; \digamma_{\mathrm{cff}}\,S_3^2 ,
 $$
 
 still a perfectly good Hamiltonian on the same phase space. Its flow is
 
 $$
-\frac{dS_i}{dr'_t} \;=\; \{S_i, \lambda S_3^2\} \;=\; 2\lambda\,S_3\,\big(\vec u_z\times\vec S\big)_i ,
+\frac{dS_i}{dr'_t} \;=\; \{S_i, \digamma_{\mathrm{cff}} S_3^2\} \;=\; 2\digamma_{\mathrm{cff}}\,S_3\,\big(\vec u_z\times\vec S\big)_i ,
 $$
 
-precession about $\vec e_z$ whose **angular velocity** $2\lambda S_3$ depends on the latitude: it is $1.8\lambda$ on the latitude $S_3 = 0.9$ and $0.6\lambda$ on the latitude $S_3 = 0.3$. The generator at the point $\vec S$ is the inner derivation by
+precession about $\vec e_z$ whose **angular velocity** $2\digamma_{\mathrm{cff}} S_3$ depends on the latitude: it is $1.8\digamma_{\mathrm{cff}}$ on the latitude $S_3 = 0.9$ and $0.6\digamma_{\mathrm{cff}}$ on the latitude $S_3 = 0.3$. The generator at the point $\vec S$ is the inner derivation by
 
 $$
-G(\vec S) \;=\; \lambda\,S_3\,\vec u_z ,
+G(\vec S) \;=\; \digamma_{\mathrm{cff}}\,S_3\,\vec u_z ,
 $$
 
-since $[G(\vec S), \vec S] = \lambda S_3\,[\vec u_z, \vec S] = 2\lambda S_3\,(\vec u_z\times\vec S)$, matching the flow equation at every point. But $G(\vec S)$ **depends on the point**: there is no single fixed element $G$ of the algebra with $[G, \vec S] = 2\lambda S_3(\vec u_z\times\vec S)$ for all $\vec S$, because the left side is linear in $\vec S$ with a fixed $G$ while the right side is quadratic. Hence this flow is **not** the flow of any rotor; it is a canonical flow that is a genuine automorphism of the Poisson algebra but not an element of the finite-dimensional $SU(2)$. The obstruction is quantitative and was checked pointwise: matching the flow by an inner derivation at the point $\vec S$ requires a field-dependent generator — $\lambda S_3 \vec u_z$ up to an element of the centralizer of $\vec S$ — and no fixed $G$ works for all $\vec S$.
+since $[G(\vec S), \vec S] = \digamma_{\mathrm{cff}} S_3\,[\vec u_z, \vec S] = 2\digamma_{\mathrm{cff}} S_3\,(\vec u_z\times\vec S)$, matching the flow equation at every point. But $G(\vec S)$ **depends on the point**: there is no single fixed element $G$ of the algebra with $[G, \vec S] = 2\digamma_{\mathrm{cff}} S_3(\vec u_z\times\vec S)$ for all $\vec S$, because the left side is linear in $\vec S$ with a fixed $G$ while the right side is quadratic. Hence this flow is **not** the flow of any rotor; it is a canonical flow that is a genuine automorphism of the Poisson algebra but not an element of the finite-dimensional $SU(2)$. The obstruction is quantitative and was checked pointwise: matching the flow by an inner derivation at the point $\vec S$ requires a field-dependent generator — $\digamma_{\mathrm{cff}} S_3 \vec u_z$ up to an element of the centralizer of $\vec S$ — and no fixed $G$ works for all $\vec S$.
 
 This example makes the failure of the phrase "they agree on their generators" precise: for a non-linear Hamiltonian the *generator itself* is a vector field outside the image of the rotor Lie algebra, so there is no rotor to agree with even infinitesimally.
 
@@ -244,7 +244,7 @@ The negative statement is equally definite, and it is what the word similitude m
 
 1. **Different categories.** The rotor is a group action on the algebra $\mathbb{B}$; the Hamiltonian flow is the flow of a vector field on a phase space. The generator-and-exponential pattern is shared; the structures are not isomorphic.
 2. **Different sizes.** $SU(2)$ is finite dimensional (six real dimensions); the Hamiltonian flows form an infinite-dimensional group. What the orbit realizes is the **rotation** subgroup $SU(2)$ (three real dimensions), and the agreement is an inclusion of that subgroup in the infinite-dimensional group, not an identification.
-3. **Only linear Hamiltonians.** A non-linear Hamiltonian on the same orbit — $H = \lambda S_3^2$ is the verified example — generates a canonical flow whose generator is a field-dependent inner derivation, so it is not the flow of any rotor.
+3. **Only linear Hamiltonians.** A non-linear Hamiltonian on the same orbit — $H = \digamma_{\mathrm{cff}} S_3^2$ is the verified example — generates a canonical flow whose generator is a field-dependent inner derivation, so it is not the flow of any rotor.
 4. **The derivation characterisation is sector-dependent.** The rotor generator is an inner derivation of the algebra only in the $*$-unitary sector; in the boost sector it is an anticommutator, not a derivation, and the rotor is a group action but not by algebra automorphisms.
 5. **The normalisation has no counterpart.** Unit norm is a constraint selecting $SU(2)$; every Hamiltonian generates a canonical flow, with no analogous constraint.
 6. **Free motion is already outside.** The free-particle flow is a shear that does not preserve the biquaternion norm; translations are not rotors, and their generators are not inner derivations.
@@ -255,7 +255,7 @@ So the resemblance is real, exact on a definite island, and not an isomorphism. 
 
 A biquaternion rotor $\rho(R)(\tilde{Q}) = R \tilde{Q} R^{*}$, with $\langle R\rangle_{\natural} = e_t$, and a Hamiltonian flow $\frac{dx}{dr'_t} = \{x, H\}$ share a shape: each is the exponential of a derivation, the inner derivation $\mathrm{ad}_G = [G,\cdot]$ for the rotor (in its $*$-unitary sector), the Poisson derivation $\{\cdot,H\}$ for the flow. On the coadjoint orbit, and for the linear Hamiltonians $H_G = 2G\cdot\vec S$, the two are the **same one-parameter group**: the generator identity $[G,\vec S] = \{\vec S, H_G\}$ was verified to $2\times10^{-16}$ on three independent axes, and the flow identity $\rho(\exp(r'_t\,G)) = {\xi_{\mathrm{flw}}}_{r'_{t}}^{H_G}$ to $8\times10^{-15}$ out to $r'_t = 2$, with the rotor normalisation $\langle R\rangle_{\natural} = e_t$ respected throughout. The generator correspondence was checked on two independent Hamiltonians, $\omega_3 S_3$ and $\omega_1 S_1$.
 
-The resemblance is not an isomorphism, and each of its failures was verified. $SU(2)$ is finite dimensional and acts on a finite-dimensional algebra; the Hamiltonian flows form an infinite-dimensional group acting on functions. A non-linear Hamiltonian such as $\lambda S_3^2$ has a field-dependent generator $G(\vec S) = \lambda S_3\vec u_z$ and is not the flow of any rotor; its angular velocity depends on latitude. In the boost sector the rotor generator is an anticommutator, not a derivation (Leibniz defect $0.51$), and the boost rotor is not an algebra automorphism (defect $0.62$), though it is unit-norm, Hermitian, and carries the laboratory frame to the moving frame in the positive-rapidity convention. A free-particle flow is a shear that does not preserve the biquaternion norm and is therefore not a rotor conjugation; translations are affine, and their generators are not inner derivations.
+The resemblance is not an isomorphism, and each of its failures was verified. $SU(2)$ is finite dimensional and acts on a finite-dimensional algebra; the Hamiltonian flows form an infinite-dimensional group acting on functions. A non-linear Hamiltonian such as $\digamma_{\mathrm{cff}} S_3^2$ has a field-dependent generator $G(\vec S) = \digamma_{\mathrm{cff}} S_3\vec u_z$ and is not the flow of any rotor; its angular velocity depends on latitude. In the boost sector the rotor generator is an anticommutator, not a derivation (Leibniz defect $0.51$), and the boost rotor is not an algebra automorphism (defect $0.62$), though it is unit-norm, Hermitian, and carries the laboratory frame to the moving frame in the positive-rapidity convention. A free-particle flow is a shear that does not preserve the biquaternion norm and is therefore not a rotor conjugation; translations are affine, and their generators are not inner derivations.
 
 The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and it fails off that island. Stated that way — with the island named and the boundary drawn — it is a genuine structural statement about the biquaternion rotor and the Hamiltonian flow, and it is not an identity. On the island the flow admits a second interpretation: those one-parameter subgroups are the geodesics of the free rotor action, so the rotor's geodesic flow is the Hamiltonian flow of $H_G$ as well — the group case of the statement that a geodesic flow is a Hamiltonian flow.
 

@@ -277,7 +277,7 @@ $$
 Metric compatibility, $\nabla_a(e_b\cdot e_c)=0$, gives $\Gamma_{abc}+\Gamma_{acb}=0$, so the coefficients are antisymmetric in the last two tetrad indices. For each $a$ this is a $4\times4$ antisymmetric matrix with six independent entries, the connection being real, so $\Gamma_{abc}$ has $4\times6=24$ real independent components — that is, **twelve complex** ones. These twelve complex numbers, written in the standard names, are the **spin coefficients**:
 
 $$
-\kappa,\ \sigma,\ \rho,\ \tau; \qquad \pi,\ \lambda,\ \mu,\ \jmath; \qquad \varepsilon,\ \gamma,\ \beta,\ \alpha .
+\kappa,\ \sigma,\ \rho,\ \tau; \qquad \pi,\ \varsigma_{\mathrm{nps}},\ \mu,\ \jmath; \qquad \varepsilon,\ \gamma,\ \beta,\ \alpha .
 $$
 
 The first four are the contractions of $\vec\nabla_\Phi l$ with the tetrad legs,
@@ -443,7 +443,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $g_{ab}[\mathrm{NP}]$ | tetrad metric, off-diagonal, (5) |
 | $\varepsilon(o,o')$ | symplectic pairing of the spinor module |
 | $\Gamma_{abc}=(\nabla_a e_b)\cdot e_c$ | connection coefficients in the tetrad |
-| $\kappa,\sigma,\rho,\tau,\pi,\lambda,\imath,\jmath,\varepsilon,\gamma,\beta,\alpha$ | the twelve spin coefficients |
+| $\kappa,\sigma,\rho,\tau,\pi,\varsigma_{\mathrm{nps}},\imath,\jmath,\varepsilon,\gamma,\beta,\alpha$ | the twelve spin coefficients |
 | $D,\mathcal{N}_{\mathrm{NP}},\delta,\bar\delta$ | directional derivatives along $l,n,m,\bar m$ |
 | $C_{abcd}$ | Weyl tensor |
 | $\tilde{Ξ}_{0},\dots,\tilde{Ξ}_{4}$ | Weyl scalars, (9) |

@@ -132,7 +132,7 @@ In the algebra the linear Stark effect is nothing but the spectral decomposition
 Now take a non-degenerate pair, with unperturbed splitting $hf_{\mathrm{frq},0}$ and the same off-diagonal coupling,
 
 $$
-\tilde H_\Psi(\lambda) = -\frac{hf_{\mathrm{frq},0}}{2}\,i\vec e_z - E\,d\,i\vec e_x .
+\tilde H_\Psi(\digamma_{\mathrm{prm}}) = -\frac{hf_{\mathrm{frq},0}}{2}\,i\vec e_z - E\,d\,i\vec e_x .
 $$
 
 The two eigenvalues are the spectral endpoints of a traceless Hermitian element with $\vec h_\Psi = (-Ed,0,-\frac{hf_{\mathrm{frq},0}}{2})$:

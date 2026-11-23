@@ -408,7 +408,7 @@ Each projector is a null element, and that is the whole point of the display. A 
 The projectors lie in the informational sector while the momentum lies in the material one. Two statements are involved and only the second is specific to this element. First, there is no non-zero anti-Hermitian idempotent: if $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$ and $\tilde\Pi_{\mathrm{id}}^{*}=-\tilde\Pi_{\mathrm{id}}$, then $\tilde\Pi_{\mathrm{id}}^{*}=(\tilde\Pi_{\mathrm{id}}^{2})^{*}=\tilde\Pi_{\mathrm{id}}^{*}\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}}$, so $\tilde\Pi_{\mathrm{id}}=0$. The projectors therefore cannot be material. Second, they are exactly the Hermitian ones, because the spectral projectors of a semisimple element are polynomials in it,
 
 $$
-\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde P_{\Phi}-\lambda_\mp e_t}{\eta_{\pm}-\lambda_\mp},
+\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde P_{\Phi}-\eta_\mp e_t}{\eta_{\pm}-\eta_\mp},
 $$
 
 and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i\vec u_p)$. Non-Hermitian idempotents do exist in the algebra: for a real unit $\vec u$ and a null complex unit vector $\hat w$ orthogonal to it, $\tfrac12(e_t+i\vec u-\hat w)$ is idempotent and not Hermitian. They are simply not the spectral projectors of this element. The modes of a four-vector are therefore states, and the sector that carries the vector does not carry its own decomposition.

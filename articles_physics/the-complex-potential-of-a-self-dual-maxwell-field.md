@@ -89,7 +89,7 @@ which is the form in which the gauge condition joins the matrix picture.
 
 ## The Two-Component Gauge and the Reduced System
 
-In these coordinates the self-duality condition plus the Lorentz gauge admits a gauge in which only two components survive, $C_{\bar w}$ and $C_v$, the other two, $C_u$ and $C_w$, being zero. The removal is the source's: the residual gauge freedom of the system is $C_{\imath}\mapsto C_{\imath}+\partial\lambda/\partial x_{\imath}$ with $\Box_\Phi\lambda=0$, which preserves the Lorentz gauge, and a parameter with that freedom can always be chosen to satisfy $C_u=\partial\lambda/\partial u$, $C_w=\partial\lambda/\partial\bar w$, because the compatibility condition $\partial C_u/\partial \bar w=\partial C_w/\partial u$ for those two equations holds identically on the equations of motion. Subtraction then removes both components at once.
+In these coordinates the self-duality condition plus the Lorentz gauge admits a gauge in which only two components survive, $C_{\bar w}$ and $C_v$, the other two, $C_u$ and $C_w$, being zero. The removal is the source's: the residual gauge freedom of the system is $C_{\imath}\mapsto C_{\imath}+\partial\digamma_{\mathrm{gau}}/\partial x_{\imath}$ with $\Box_\Phi\digamma_{\mathrm{gau}}=0$, which preserves the Lorentz gauge, and a parameter with that freedom can always be chosen to satisfy $C_u=\partial\digamma_{\mathrm{gau}}/\partial u$, $C_w=\partial\digamma_{\mathrm{gau}}/\partial\bar w$, because the compatibility condition $\partial C_u/\partial \bar w=\partial C_w/\partial u$ for those two equations holds identically on the equations of motion. Subtraction then removes both components at once.
 
 In that gauge the system reduces to the pair
 

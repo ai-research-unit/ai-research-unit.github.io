@@ -117,37 +117,37 @@ with $\digamma_{\mathrm{gau}}$ central and of unit modulus. The field transforms
 The chain rules. Because $\digamma_{\mathrm{gau}}$ is a central scalar function,
 
 $$
-\tilde\nabla_\Phi\lambda=\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\lambda,
+\tilde\nabla_\Phi\digamma_{\mathrm{gau}}=\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\digamma_{\mathrm{gau}},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\lambda=\frac{2\pi i\,ϙ}{h}\bigl((\tilde\nabla_\Phi)^{\natural}\Gamma\bigr)\lambda,
+(\tilde\nabla_\Phi)^{\natural}\digamma_{\mathrm{gau}}=\frac{2\pi i\,ϙ}{h}\bigl((\tilde\nabla_\Phi)^{\natural}\Gamma\bigr)\digamma_{\mathrm{gau}},
 $$
 
-and $\natural$ leaves $\lambda$ alone, since $\natural$ negates the spatial units and fixes the coefficients.
+and $\natural$ leaves $\digamma_{\mathrm{gau}}$ alone, since $\natural$ negates the spatial units and fixes the coefficients.
 
 The first derivative is covariant.
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi,2}\bigl(\lambda\tilde A\bigr)
-=\tilde\nabla_\Phi\bigl(\lambda\tilde A\bigr)+\frac{2\pi i\,ϙ}{h}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Gamma\bigr)\lambda\tilde A
-=\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde A .
+\tilde\nabla_{\mathrm{gco},\Phi,2}\bigl(\digamma_{\mathrm{gau}}\tilde A\bigr)
+=\tilde\nabla_\Phi\bigl(\digamma_{\mathrm{gau}}\tilde A\bigr)+\frac{2\pi i\,ϙ}{h}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Gamma\bigr)\digamma_{\mathrm{gau}}\tilde A
+=\digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde A .
 $$
 
-The two $\tilde\nabla_\Phi\Gamma$ terms cancel and $\lambda$ passes to the left past the connection and past the field. The second derivative repeats the computation with $\natural$ throughout and gives $\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}(\lambda\tilde A)=\lambda(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A$.
+The two $\tilde\nabla_\Phi\Gamma$ terms cancel and $\digamma_{\mathrm{gau}}$ passes to the left past the connection and past the field. The second derivative repeats the computation with $\natural$ throughout and gives $\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}(\digamma_{\mathrm{gau}}\tilde A)=\digamma_{\mathrm{gau}}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A$.
 
 The field strength is covariant.
 
 $$
-\tilde F_2=\lambda\tilde F,
+\tilde F_2=\digamma_{\mathrm{gau}}\tilde F,
 $$
 
 because $\mathrm{Vect}$ commutes with left multiplication by a central element and the antisymmetric part of a covariant gradient is covariant. This is the statement the free article had no occasion to make: the free field strength is invariant, the coupled one is *covariant*, and the difference is the charge.
 
-**The equation is covariant, massive as well as massless.** Both sides acquire one factor $\lambda$:
+**The equation is covariant, massive as well as massless.** Both sides acquire one factor $\digamma_{\mathrm{gau}}$:
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde F_2=\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde F,
+\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde F_2=\digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde F,
 \qquad
-4\pi^{2}\nu_m^2\tilde A_2=\lambda\,4\pi^{2}\nu_m^2\tilde A .
+4\pi^{2}\nu_m^2\tilde A_2=\digamma_{\mathrm{gau}}\,4\pi^{2}\nu_m^2\tilde A .
 $$
 
 The mass term is homogeneous because it is linear in the field; it is the *bilinear* mass term of the action that is invariant, and the two statements are consistent, since $\digamma_{\mathrm{gau}}\bar\digamma_{\mathrm{gau}}=1$. In the free article the mass term is quadratic in a real field and breaks the symmetry; here the field is complex, the mass term is quadratic in the field and its conjugate, and the symmetry survives. That single sign of bookkeeping is why a massive vector field can be coupled at all.
@@ -175,7 +175,7 @@ $$
 
 The six real components of $\tilde F$ are the six field-strength components, and the $\sqrt{\epsilon}$, $\sqrt{\mu}$ normalization of the free article's display $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ is carried by the coefficients.
 
-**The connection does not cancel, and this is the structural difference from the ordinary abelian curl.** For a neutral field strength built from a potential that shifts by a gradient, the connection terms cancel in the antisymmetric combination, because $D_{\imath} A_{\jmath}$ and $D_{\jmath} A_{\imath}$ carry the *same* connection coefficient. Here the potential is charged: it multiplies by $\lambda$ and the connection shifts, so the two statements are independent, and
+**The connection does not cancel, and this is the structural difference from the ordinary abelian curl.** For a neutral field strength built from a potential that shifts by a gradient, the connection terms cancel in the antisymmetric combination, because $D_{\imath} A_{\jmath}$ and $D_{\jmath} A_{\imath}$ carry the *same* connection coefficient. Here the potential is charged: it multiplies by $\digamma_{\mathrm{gau}}$ and the connection shifts, so the two statements are independent, and
 
 $$
 \tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)+\frac{2\pi i\,ϙ}{h}\mathrm{Vect}\bigl(\tilde A_\Phi^{\natural}\tilde A\bigr).
@@ -322,7 +322,7 @@ The equation is standard. The algebra's contribution is the closure argument, th
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, left action |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial/\partial R_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | Its central per-component form |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | Material time derivative |
-| $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; covariant with $\lambda$ |
+| $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; covariant with $\digamma_{\mathrm{gau}}$ |
 | $\tilde F^{(\Phi)}$ | Curvature of the connection |
 | $\tilde C=\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The coupling element of a constant background |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |

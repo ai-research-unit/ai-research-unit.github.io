@@ -209,7 +209,7 @@ The three Goldstone fields are the two real components of $\omicron_{\mathrm{hgs
 
 The six entries sum to $9+4+3+1+1+1=19$.
 
-**The regroupings.** The same nineteen is written in two other ways, and both are in use. The flavour block is thirteen, so the count is $3+1+2+13=19$: three couplings, one vacuum angle, the two scalar parameters of the potential, and the thirteen flavour numbers. The two scalar parameters are $\mu^2$ and $\lambda$ of the potential, or equivalently $v$ and $M_H$; the two writings are related by $v^2=\mu^2/\lambda$ and $M_H^2=2\lambda v^2$, and the count is the same.
+**The regroupings.** The same nineteen is written in two other ways, and both are in use. The flavour block is thirteen, so the count is $3+1+2+13=19$: three couplings, one vacuum angle, the two scalar parameters of the potential, and the thirteen flavour numbers. The two scalar parameters are $\mu^2$ and $\digamma_{\mathrm{qtc}}$ of the potential, or equivalently $v$ and $M_H$; the two writings are related by $v^2=\mu^2/\digamma_{\mathrm{qtc}}$ and $M_H^2=2\digamma_{\mathrm{qtc}} v^2$, and the count is the same.
 
 **The four of the mixing.** The four is a computation and not a convention. A $3\times3$ unitary matrix carries nine real parameters, three angles and six phases. Rephasing the quark fields absorbs $2N-1=5$ phases for $N=3$, leaving three angles and one phase. The count $9-5=4$ is the reason the phase is a parameter of the model and not a choice of basis.
 

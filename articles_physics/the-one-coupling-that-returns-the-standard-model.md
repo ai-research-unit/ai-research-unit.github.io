@@ -186,10 +186,10 @@ $$
 
 Neither survives as a statement about this model's couplings. They are the one-bidoublet boundary conditions, and their status is the interesting part: the first is falsified by data, the second is falsified by data by seven orders of magnitude.
 
-**6.2 What survives.** One bidoublet carries one Yukawa matrix $\lambda$ and applies it to both the down-type quarks and the charged leptons:
+**6.2 What survives.** One bidoublet carries one Yukawa matrix $\digamma_{\mathrm{yuk}}$ and applies it to both the down-type quarks and the charged leptons:
 
 $$
-\mathcal L_Y=\lambda\,\bar{\Psi}_L H\,\Psi_R+\text{h.c.}
+\mathcal L_Y=\digamma_{\mathrm{yuk}}\,\bar{\Psi}_L H\,\Psi_R+\text{h.c.}
 \quad\Longrightarrow\quad
 M_d\propto M_e ,
 $$

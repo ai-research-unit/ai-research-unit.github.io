@@ -810,7 +810,7 @@ The boundary. The word *shear* is a reading of the unipotent factor. No metric i
 
 Read: $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec\Pi_{\mathrm{nil}})$, a rate times a factor linear in the parameter.
 
-The form $(a+b\theta)e^{\lambda\theta}$ is the solution of a critically damped equation. A second-order linear equation with a repeated characteristic root produces exactly this: an exponential multiplied by a linear function, and the linear term is what distinguishes the critical case from the underdamped and overdamped ones.
+The form $(a+b\theta)e^{\digamma_{\mathrm{prm}}\theta}$ is the solution of a critically damped equation. A second-order linear equation with a repeated characteristic root produces exactly this: an exponential multiplied by a linear function, and the linear term is what distinguishes the critical case from the underdamped and overdamped ones.
 
 The algebra produces the form and not the equation. What the stratum supplies is that the generator has a repeated eigenvalue and a nilpotent part; the form of the exponential follows from that and from nothing else. So a generator in this stratum produces the critical form by construction, and the coefficient of the linear term is the defect.
 

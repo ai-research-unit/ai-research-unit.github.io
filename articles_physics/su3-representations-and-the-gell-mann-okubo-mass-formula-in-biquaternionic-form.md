@@ -135,7 +135,7 @@ $$
 where $m_0^2$ is $\mathrm{SU}(3)$-symmetric — proportional to the identity on the representation — and $\delta m^2 = \sum_{i,\imath}D_{i\imath}Z_{\imath i}$ is a $*$-unitary moment $D$ contracted with a $*$-unitary field $Z$,
 
 $$
-D_{i\imath} = \lambda\delta_{i\imath}\mathbf{1}+\mu A_{i\imath}+\jmath\sum_l A_{il}A_{l\imath}+\dots,
+D_{i\imath} = \digamma_{\mathrm{cff}}\delta_{i\imath}\mathbf{1}+\mu A_{i\imath}+\jmath\sum_l A_{il}A_{l\imath}+\dots,
 $$
 
 $$

@@ -211,17 +211,17 @@ $$
 
 with $s_{ij}=\sin\theta_{ij}$, $c_{ij}=\cos\theta_{ij}$. The three angles are $\theta_{12}=13.00^{\circ}$, $\theta_{23}=2.40^{\circ}$ and $\theta_{13}=0.214^{\circ}$; the phase is $\delta=65.7^{\circ}$.
 
-The hierarchy of the angles, and what the Wolfenstein form adds. The angles are not of comparable size: $\theta_{12}$ is thirteen degrees, $\theta_{23}$ is two, $\theta_{13}$ is a fifth of one. The Wolfenstein form makes the hierarchy explicit by expanding in $\lambda=s_{12}=0.225$:
+The hierarchy of the angles, and what the Wolfenstein form adds. The angles are not of comparable size: $\theta_{12}$ is thirteen degrees, $\theta_{23}$ is two, $\theta_{13}$ is a fifth of one. The Wolfenstein form makes the hierarchy explicit by expanding in $\digamma_{\mathrm{ckm},12}=s_{12}=0.225$:
 
 $$
-V=\begin{pmatrix}1-\lambda^{2}/2 & \lambda & A\lambda^{3}\left(\bar\rho-i\bar\eta\right)\\
--\lambda & 1-\lambda^{2}/2 & A\lambda^{2}\\
-A\lambda^{3}\left(1-\bar\rho-i\bar\eta\right) & -A\lambda^{2} & 1\end{pmatrix}+O\left(\lambda^{4}\right),
+V=\begin{pmatrix}1-\digamma_{\mathrm{ckm},12}^{2}/2 & \digamma_{\mathrm{ckm},12} & A\digamma_{\mathrm{ckm},12}^{3}\left(\bar\rho-i\bar\eta\right)\\
+-\digamma_{\mathrm{ckm},12} & 1-\digamma_{\mathrm{ckm},12}^{2}/2 & A\digamma_{\mathrm{ckm},12}^{2}\\
+A\digamma_{\mathrm{ckm},12}^{3}\left(1-\bar\rho-i\bar\eta\right) & -A\digamma_{\mathrm{ckm},12}^{2} & 1\end{pmatrix}+O\left(\digamma_{\mathrm{ckm},12}^{4}\right),
 $$
 
-with $A=0.826$ and $\bar\rho=0.159$, $\bar\eta=0.352$. The pair is the barred one that the data are quoted in, and the bar is not decoration: $\bar\rho=\rho(1-\lambda^{2}/2)$ to this order, so writing the unbarred numbers in the barred slots shifts both by $2.5$ per cent. The powers of $\lambda$ are the statement that the mixing between neighbouring generations is large and between the first and third is tiny.
+with $A=0.826$ and $\bar\rho=0.159$, $\bar\eta=0.352$. The pair is the barred one that the data are quoted in, and the bar is not decoration: $\bar\rho=\rho(1-\digamma_{\mathrm{ckm},12}^{2}/2)$ to this order, so writing the unbarred numbers in the barred slots shifts both by $2.5$ per cent. The powers of $\digamma_{\mathrm{ckm},12}$ are the statement that the mixing between neighbouring generations is large and between the first and third is tiny.
 
-**Why the pattern is unexplained.** Nothing in the model fixes $\lambda\simeq0.22$ or $A\simeq0.83$. They are not two *of* the thirteen, and the distinction is the section's own subject: the four mixing parameters are $\theta_{12}$, $\theta_{23}$, $\theta_{13}$ and $\delta$, and $\lambda=s_{12}$, $A=s_{23}/s_{12}^{2}$, $\bar\rho$ and $\bar\eta$ are one rewriting of those four — a change of variables, not a change of count. So "the model does not fix $\lambda$" and "the model does not fix $\theta_{12}$" are the same statement twice, and the sector's puzzle is that four measured numbers have no principle behind them — not that eight do, which is what adding the two sets together would give.
+**Why the pattern is unexplained.** Nothing in the model fixes $\digamma_{\mathrm{ckm},12}\simeq0.22$ or $A\simeq0.83$. They are not two *of* the thirteen, and the distinction is the section's own subject: the four mixing parameters are $\theta_{12}$, $\theta_{23}$, $\theta_{13}$ and $\delta$, and $\digamma_{\mathrm{ckm},12}=s_{12}$, $A=s_{23}/s_{12}^{2}$, $\bar\rho$ and $\bar\eta$ are one rewriting of those four — a change of variables, not a change of count. So "the model does not fix $\digamma_{\mathrm{ckm},12}$" and "the model does not fix $\theta_{12}$" are the same statement twice, and the sector's puzzle is that four measured numbers have no principle behind them — not that eight do, which is what adding the two sets together would give.
 
 ## Where CP Violation Lives
 
@@ -241,7 +241,7 @@ $$
 J=s_{12}s_{23}s_{13}c_{12}c_{23}c_{13}^{2}\sin\delta=3.117\times10^{-5} ,
 $$
 
-and the definition gives the same number to four digits. The Wolfenstein form gives $J=A^{2}\lambda^{6}\bar\eta\left(1-\lambda^{2}/2\right)=3.04\times10^{-5}$, the difference of $2.6$ per cent from the exact value being the $O(\lambda^{4})$ terms dropped.
+and the definition gives the same number to four digits. The Wolfenstein form gives $J=A^{2}\digamma_{\mathrm{ckm},12}^{6}\bar\eta\left(1-\digamma_{\mathrm{ckm},12}^{2}/2\right)=3.04\times10^{-5}$, the difference of $2.6$ per cent from the exact value being the $O(\digamma_{\mathrm{ckm},12}^{4})$ terms dropped.
 
 Why three numbers near $3\times10^{-5}$ circulate, and which is which. The three are $3.117\times10^{-5}$, which is what the four parameters as quoted above produce; $3.04\times10^{-5}$, which is the Wolfenstein truncation of the same four; and $3.08\times10^{-5}$, which the global fit quotes as its direct determination of the invariant, and which [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html) uses as $J_{\mathrm{CKM}}$. The spread between the first and the third is $1.2$ per cent, the size of the fit's own uncertainty on $J$: it is a computation against a measurement, not two computations disagreeing. This article uses $3.12\times10^{-5}$ everywhere, because it follows from the four parameters the article states and a reader can reproduce it; the ratio in the lepton comparison below moves by $1$ per cent if $3.08$ is used instead, which is the least of the reasons that ratio is quoted to an order of magnitude.
 
@@ -253,7 +253,7 @@ $$
 
 with each product over the three masses of one charge. Each product is antisymmetric, so a permutation of one triple flips it; the two together are invariant under a simultaneous reordering, which is why the identity is unambiguous once both triples are ordered the same way, and they are taken in increasing order here. Both sides were computed on random complex mass matrices and agree to machine precision. Read one way it is a formula for the invariant in terms of the matrices alone, with no reference to the mixing angles; read the other way it says a non-zero $J$ needs non-degenerate masses of *both* charges, since either product vanishing makes the left side vanish too. That is what makes CP violation a property of the mass matrices and not of a parametrisation of $V$: the commutator vanishes if and only if $H_u$ and $H_d$ can be diagonalised together, and the denominator carries the degeneracies.
 
-Why the smallness is not a fine-tuning. $J$ carries $\lambda^{6}$, so the smallness of the mixing angles produces it: $J\sim0.225^{6}\approx1.3\times10^{-4}$ times the factors $A^{2}\eta\approx0.24$. **CP violation in the quark sector is small because the mixing is hierarchical, not because a phase was tuned to zero.**
+Why the smallness is not a fine-tuning. $J$ carries $\digamma_{\mathrm{ckm},12}^{6}$, so the smallness of the mixing angles produces it: $J\sim0.225^{6}\approx1.3\times10^{-4}$ times the factors $A^{2}\eta\approx0.24$. **CP violation in the quark sector is small because the mixing is hierarchical, not because a phase was tuned to zero.**
 
 The unitarity triangle. The relation $V_{ud}V_{ub}^{*}+V_{cd}V_{cb}^{*}+V_{td}V_{tb}^{*}=0$ is a triangle in the complex plane; in the rescaled coordinates of the Wolfenstein form its apex is $(\bar\rho,\bar\eta)$, and the angles computed from the pair above are
 
@@ -267,7 +267,7 @@ $$
 \alpha+\beta+\gamma=180^{\circ} .
 $$
 
-Two things about those three numbers. The third, $\gamma$, coincides numerically with the CP phase $\delta$ of the standard parametrisation, and that is neither a coincidence nor a typo: at leading order in $\lambda$ both equal $\arctan\left(\bar\eta/\bar\rho\right)$, and they separate only at $O(\lambda^{2})$. And the rounded inputs differ between articles: *The CKM Matrix and CP Violation in Biquaternionic Form* takes $\bar\eta=0.348$ and gets $22.5^{\circ}$, $65.4^{\circ}$ and $92^{\circ}$, while *Meson Mixing, Rare Decays and the Unitarity Triangle* takes $0.3523$ and gets the three above. The second set is used here because that article also reproduces $\sin2\beta=0.7128$ from its closure test, and the $0.3^{\circ}$ between the two sets is a rounding of the input rather than a disagreement about the triangle.
+Two things about those three numbers. The third, $\gamma$, coincides numerically with the CP phase $\delta$ of the standard parametrisation, and that is neither a coincidence nor a typo: at leading order in $\digamma_{\mathrm{ckm},12}$ both equal $\arctan\left(\bar\eta/\bar\rho\right)$, and they separate only at $O(\digamma_{\mathrm{ckm},12}^{2})$. And the rounded inputs differ between articles: *The CKM Matrix and CP Violation in Biquaternionic Form* takes $\bar\eta=0.348$ and gets $22.5^{\circ}$, $65.4^{\circ}$ and $92^{\circ}$, while *Meson Mixing, Rare Decays and the Unitarity Triangle* takes $0.3523$ and gets the three above. The second set is used here because that article also reproduces $\sin2\beta=0.7128$ from its closure test, and the $0.3^{\circ}$ between the two sets is a rounding of the input rather than a disagreement about the triangle.
 
 The area of the triangle is $\lvert J\rvert/2$, which is the geometric statement of the previous paragraph: the invariant, not the phase, is twice the area, and a degenerate triangle is no CP violation.
 
@@ -275,7 +275,7 @@ The area of the triangle is $\lvert J\rvert/2$, which is the geometric statement
 
 The size, for comparison. $J\approx3.1\times10^{-5}$ in the quark sector. In the lepton sector, with [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html)'s angles $\theta_{12}=33.4^{\circ}$, $\theta_{23}=49.0^{\circ}$, $\theta_{13}=8.6^{\circ}$ and its fit value $\delta\approx-130^{\circ}$, the same formula gives $J_{\mathrm{PMNS}}\approx-0.026$, eight hundred times larger. The leptonic mixing is not hierarchical in the same way, and that difference is one of the open facts of the sector.
 
-The ratio is not a stable number, and the phase is why. The leptonic CP phase is the least measured quantity in either mixing sector, and $J$ is linear in $\sin\delta$: at $\delta=197^{\circ}$, which the normal-ordering fits prefer, the same angles give $J_{\mathrm{PMNS}}=-9.7\times10^{-3}$ and a ratio of three hundred rather than eight hundred. What survives the choice of phase is the order of magnitude and the reason for it — the leptonic angles are all large, so no small sine suppresses $J$, while the quark value carries the sixth power of $\lambda$. A comparison that quotes the ratio to two digits and not its phase assumes a measurement that has not been made.
+The ratio is not a stable number, and the phase is why. The leptonic CP phase is the least measured quantity in either mixing sector, and $J$ is linear in $\sin\delta$: at $\delta=197^{\circ}$, which the normal-ordering fits prefer, the same angles give $J_{\mathrm{PMNS}}=-9.7\times10^{-3}$ and a ratio of three hundred rather than eight hundred. What survives the choice of phase is the order of magnitude and the reason for it — the leptonic angles are all large, so no small sine suppresses $J$, while the quark value carries the sixth power of $\digamma_{\mathrm{ckm},12}$. A comparison that quotes the ratio to two digits and not its phase assumes a measurement that has not been made.
 
 The other CP-odd parameter, and why this section does not contain it. The model has a second source of CP violation: the QCD vacuum angle, $\bar\theta=\theta+\arg\det\left(M_uM_d\right)$, multiplying $G\tilde G$. It is a parameter of the gauge sector, so it does not appear in $\operatorname{Im}\det\left[H_u,H_d\right]$ and no statement about $J$ constrains it. Experimentally $\lvert\bar\theta\rvert<10^{-10}$, from the neutron electric dipole moment, and why it is so small is the strong CP problem — [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html) carries that question. "CP violation is one number" is therefore true of the quark mixing and false of the model; every unqualified use of the phrase in this article means the first.
 
@@ -385,7 +385,7 @@ The two questions. A neutrino mass requires either a right-handed singlet, and t
 
 The Dirac route. Add $\nu_{\mathrm{neu},R}$, a singlet of all three groups. Then $Y_{\jmath}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
 
-The Majorana route. A term $\overline{L_{L,c}}\,\tilde\omicron_{\mathrm{hgs}}^{*}\,\lambda\,\tilde\omicron_{\mathrm{hgs}}^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_{\jmath}=\lambda v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
+The Majorana route. A term $\overline{L_{L,c}}\,\tilde\omicron_{\mathrm{hgs}}^{*}\,\digamma_{\mathrm{yuk}}\,\tilde\omicron_{\mathrm{hgs}}^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_{\jmath}=\digamma_{\mathrm{yuk}} v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
 
 The counts.
 
@@ -431,7 +431,7 @@ After the breaking each matrix becomes $M_f=Y_{f}v/\sqrt2$, a general complex ma
 
 The charged current is the one place where the two bases meet: the $W$ couples $u_L$ to $d_L$ and the coupling is $V_{\mathrm{CKM}}=W_u^{\dagger}W_d$, a product of the two left singular bases. The neutral currents stay diagonal, because the same rotation acts on both sides of $\bar ff$. The mixing is therefore the misalignment of the two left singular bases, and the masses and the mixing are two halves of one decomposition. The four mixing parameters are the nine of a unitary matrix minus the five rephasings, and the parametrisation in three angles and one phase is a choice of how to write them.
 
-CP violation in the quark sector is one invariant, $J=\operatorname{Im}\left(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*}\right)=s_{12}s_{23}s_{13}c_{12}c_{23}c_{13}^{2}\sin\delta=3.12\times10^{-5}$, the same for every quartet and unchanged by rephasing, equal to twice the area of the unitarity triangle whose angles are $91.6^{\circ}$, $22.7^{\circ}$ and $65.7^{\circ}$. It is small because it carries $\lambda^{6}$, not because a phase was tuned.
+CP violation in the quark sector is one invariant, $J=\operatorname{Im}\left(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*}\right)=s_{12}s_{23}s_{13}c_{12}c_{23}c_{13}^{2}\sin\delta=3.12\times10^{-5}$, the same for every quartet and unchanged by rephasing, equal to twice the area of the unitarity triangle whose angles are $91.6^{\circ}$, $22.7^{\circ}$ and $65.7^{\circ}$. It is small because it carries $\digamma_{\mathrm{ckm},12}^{6}$, not because a phase was tuned.
 
 The count of thirteen is $54-41$: three matrices give fifty-four real parameters, the flavour group gives forty-five of which four act trivially, so forty-one are removable and $54-41=13$, namely nine masses and four mixing parameters. The leptonic analogue gives $J_{\mathrm{PMNS}}\approx-0.026$, eight hundred times the quark value, a ratio that falls to three hundred if the leptonic phase sits at the normal-ordering preference rather than at the fit value.
 
@@ -453,7 +453,7 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 | $s_{ij}$, $c_{ij}$ | $\sin\theta_{ij}$, $\cos\theta_{ij}$ |
 | $\theta_{ij}$, $\delta$ | The three mixing angles and the CP phase |
 | $J$ | The Jarlskog invariant, $3.12\times10^{-5}$ in the quark sector |
-| $A$, $\lambda$, $\bar\rho$, $\bar\eta$ | Wolfenstein parameters, $0.826$, $0.225$, $0.159$, $0.352$ |
+| $A$, $\digamma_{\mathrm{ckm},12}$, $\bar\rho$, $\bar\eta$ | Wolfenstein parameters, $0.826$, $0.225$, $0.159$, $0.352$ |
 | $v$ | $246.22$ GeV, the vacuum expectation value |
 | $y_f$ | $\sqrt2m_f/v$, the Yukawa coupling |
 | $M_H$ | $125.09$ GeV, the Higgs mass |

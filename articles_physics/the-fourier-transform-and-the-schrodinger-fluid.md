@@ -105,7 +105,7 @@ The stated objection, and the answer. The objection is that the decomposition in
 
 ### Three Degrees, Three Behaviours
 
-Every object in the block scales with one of three powers of the field, and the power decides whether a transform can see it. Under $\tilde\Xi\to\lambda\tilde\Xi$:
+Every object in the block scales with one of three powers of the field, and the power decides whether a transform can see it. Under $\tilde\Xi\to\digamma_{\mathrm{scl}}\tilde\Xi$:
 
 | degree in the field | the objects | in the label |
 | --- | --- | --- |

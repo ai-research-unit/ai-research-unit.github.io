@@ -336,7 +336,7 @@ The gauge group translates $\theta_{\mathrm{pha}}$ and nothing else, so the coup
 | $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The action of the flow |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/2m\varrho$ | The quantum potential |
 | $L$ | The Lagrangian; $K$ its kinetic term |
-| $\Gamma$, $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge function and factor |
+| $\Gamma$, $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge function and factor |
 
 ## Further Reading
 

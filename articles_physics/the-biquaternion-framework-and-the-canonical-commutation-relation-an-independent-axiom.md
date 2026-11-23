@@ -48,15 +48,15 @@ There is a finite criterion hiding in the same place, and it must not be confuse
 
 In the framework the obstruction is immediate and is worth stating in its own notation, because it is the technical content behind the word *independent*.
 
-**Theorem.** There are no $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$ and no non-zero central real $\lambda$ with $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\lambda\,i\,e_t$.
+**Theorem.** There are no $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$ and no non-zero central real $\digamma_{\mathrm{scl}}$ with $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\digamma_{\mathrm{scl}}\,i\,e_t$.
 
 Proof. Write $\tilde{H}_{\Psi,1}=h_{t,1}\,e_t+i\vec h_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=h_{t,2}\,e_t+i\vec h_{\Psi,2}$ with $h_{t,1},h_{t,2}\in\mathbb{R}$ and $\vec h_{\Psi,1},\vec h_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=h_{t,1}h_{t,2}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$; the cross terms contribute the symmetric $\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$ part, and the antisymmetric part of the product is scalar-free. The same computation with $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$ exchanged gives the identical scalar part, so
 $$
 \boxed{\;\mathrm{Sc}\bigl([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]\bigr)=0\;}.
 $$
-The commutator is anti-Hermitian and lies in the vector part of $\mathbb{B}_{\Phi}$, whereas $\lambda\,i\,e_t$ is purely scalar imaginary with $2\,\mathrm{Sc}(\lambda\,i\,e_t)=2\lambda i\neq0$. The two cannot be equal.
+The commutator is anti-Hermitian and lies in the vector part of $\mathbb{B}_{\Phi}$, whereas $\digamma_{\mathrm{scl}}\,i\,e_t$ is purely scalar imaginary with $2\,\mathrm{Sc}(\digamma_{\mathrm{scl}}\,i\,e_t)=2\digamma_{\mathrm{scl}} i\neq0$. The two cannot be equal.
 
-The general statement. The Hermitian hypothesis is unnecessary. For any $\tilde Q_1,\tilde{Q}_2\in\mathbb{B}$ one has $\mathrm{Sc}(\tilde Q_1\tilde{Q}_2)=\mathrm{Sc}(\tilde{Q}_2\tilde Q_1)$ by the cyclicity of the trace, a matrix identity that holds without any restriction on the arguments. What the Hermitian hypothesis supplies is the *reading*: the commutator of two observables is anti-Hermitian, hence a generator of a one-parameter $*$-unitary group rather than an observable. What forbids the relation is not the anti-Hermitian character — $\lambda\,i\,e_t$ is anti-Hermitian too — but the absence of a scalar part, equivalently the vanishing of the trace.
+The general statement. The Hermitian hypothesis is unnecessary. For any $\tilde Q_1,\tilde{Q}_2\in\mathbb{B}$ one has $\mathrm{Sc}(\tilde Q_1\tilde{Q}_2)=\mathrm{Sc}(\tilde{Q}_2\tilde Q_1)$ by the cyclicity of the trace, a matrix identity that holds without any restriction on the arguments. What the Hermitian hypothesis supplies is the *reading*: the commutator of two observables is anti-Hermitian, hence a generator of a one-parameter $*$-unitary group rather than an observable. What forbids the relation is not the anti-Hermitian character — $\digamma_{\mathrm{scl}}\,i\,e_t$ is anti-Hermitian too — but the absence of a scalar part, equivalently the vanishing of the trace.
 
 The scope of the theorem. The same argument applies in every finite-dimensional module of $\mathbb{B}$, since the trace there is cyclic as well. The obstruction is therefore not a quirk of the algebra's particular dimension. It is a statement about every finite-dimensional carrier: the relation cannot be assembled from finitely many levels.
 
@@ -185,7 +185,7 @@ The claim must not be overread, and the following are not asserted.
 
 | Item | Status |
 |---|---|
-| $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\lambda\,i\,e_t$ with $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}])=0$ while $2\,\mathrm{Sc}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
+| $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\digamma_{\mathrm{scl}}\,i\,e_t$ with $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$, $\digamma_{\mathrm{scl}}\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}])=0$ while $2\,\mathrm{Sc}(\digamma_{\mathrm{scl}}\,i\,e_t)=2\digamma_{\mathrm{scl}} i\neq0$ |
 | Scalar part of a commutator, arbitrary arguments | Vanishes; $\mathrm{Sc}(\tilde Q_2\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}_1\tilde Q_2)$ |
 | The same in any finite-dimensional module | Vanishes; the trace there is cyclic too |
 | A bounded pair satisfying the relation, at any dimension | Impossible; $[Q,P^n]=i\,\frac{h}{2\pi}\,nP^{n-1}$ forces $2\lVert Q\rVert\lVert P\rVert\ge  \frac{h}{2\pi}\,n$ for every $n$ |

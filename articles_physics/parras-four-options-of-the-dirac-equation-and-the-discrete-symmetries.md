@@ -22,10 +22,10 @@ The article is an equivalent rewriting, as everywhere in this series: the four o
 
 ## The Four Options
 
-Parra's assumption. Parra starts from the four complex coefficients of the field and inspects the eight real equations. His assumption is that the real part of the first coefficient transforms as a scalar; under that assumption the eight equations acquire a vector character once the spin vector $\vec s$ is introduced, an imaginary spatial vector — a real three-vector multiplied by $i$. It has no material part, and the star fixes the informational space and negates the material blocks, so $\vec s=\vec s^{*}$ and $\vec s$ lies in $X_{\mathrm i}$ of the block table below. Two scalars and two vectors remain. Writing the scalars as $\alpha$ and $\lambda$ and the vectors as $\vec E=(E_1,E_2,E_3)$ and $\vec B=(B_1,B_2,B_3)$, the option-$\{0\}$ field is
+Parra's assumption. Parra starts from the four complex coefficients of the field and inspects the eight real equations. His assumption is that the real part of the first coefficient transforms as a scalar; under that assumption the eight equations acquire a vector character once the spin vector $\vec s$ is introduced, an imaginary spatial vector — a real three-vector multiplied by $i$. It has no material part, and the star fixes the informational space and negates the material blocks, so $\vec s=\vec s^{*}$ and $\vec s$ lies in $X_{\mathrm i}$ of the block table below. Two scalars and two vectors remain. Writing the scalars as $\alpha$ and $\digamma_{\mathrm{cmp}}$ and the vectors as $\vec E=(E_1,E_2,E_3)$ and $\vec B=(B_1,B_2,B_3)$, the option-$\{0\}$ field is
 
 $$
-\tilde{Ξ}_{\{0\}}=(\alpha+iB_3)\,e_t+(-B_2+iB_1)\,\vec e_x+(E_3+i\lambda)\,\vec e_y+(E_1+iE_2)\,\vec e_z .
+\tilde{Ξ}_{\{0\}}=(\alpha+iB_3)\,e_t+(-B_2+iB_1)\,\vec e_x+(E_3+i\digamma_{\mathrm{cmp}})\,\vec e_y+(E_1+iE_2)\,\vec e_z .
 $$
 
 The eight real fields are the eight real coordinates of one element, and the option decides which coordinate carries which.
@@ -213,7 +213,7 @@ The options are permuted by the quotient of the group of invertibles by its iden
 | Symbol | Meaning |
 |---|---|
 | $\tilde{Ξ}_{\{r\}}$, $r=0,1,2,3$ | The Parra field of option $\{r\}$, an element of $\mathbb{B}$ on eight real parameters |
-| $\alpha,\lambda$ | The two scalars of the vector interpretation |
+| $\alpha,\digamma_{\mathrm{cmp}}$ | The two scalars of the vector interpretation |
 | $\vec E=(E_1,E_2,E_3)$, $\vec B=(B_1,B_2,B_3)$ | The two vectors of the vector interpretation |
 | $\vec s$ | The spin vector, an imaginary spatial vector; $\vec s=\vec s^{*}$ under the star, and $\vec s$ lies in $X_{\mathrm i}$ |
 | $\omega=-\vec e_z$ | The source's imaginary unit and spin bivector, $e_{21}=\omega$; a right multiplier, $\omega^2=-e_t$ |

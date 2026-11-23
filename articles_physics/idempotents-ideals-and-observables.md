@@ -169,13 +169,13 @@ The diagonal corners see the scalar part and the axial component; the mixed corn
 **The Peirce functional is the diagonal coefficient.**
 
 $$
-\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},+}=\lambda(\tilde Q)\,\tilde\Pi_{\mathrm{id},+},\qquad \lambda(\tilde Q)=Q_t-iQ_z .
+\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},+}=\varsigma_{\mathrm{prc}}(\tilde Q)\,\tilde\Pi_{\mathrm{id},+},\qquad \varsigma_{\mathrm{prc}}(\tilde Q)=Q_t-iQ_z .
 $$
 
 It is complex-linear and it is not multiplicative.
 
 $$
-\lambda(\vec e_x\vec e_y)=\lambda(\vec e_z)=-i,\qquad \lambda(\vec e_x)\lambda(\vec e_y)=0 .
+\varsigma_{\mathrm{prc}}(\vec e_x\vec e_y)=\varsigma_{\mathrm{prc}}(\vec e_z)=-i,\qquad \varsigma_{\mathrm{prc}}(\vec e_x)\varsigma_{\mathrm{prc}}(\vec e_y)=0 .
 $$
 
 The failure is forced: a multiplicative functional onto $\mathbb{C}$ would have a nontrivial two-sided ideal as its kernel, and the algebra is simple.
@@ -183,7 +183,7 @@ The failure is forced: a multiplicative functional onto $\mathbb{C}$ would have 
 The product inside a corner ideal is governed by the functional alone.
 
 $$
-a\tilde\Pi_{\mathrm{id}}\cdot b\tilde\Pi_{\mathrm{id}}=\lambda(b)\,a\tilde\Pi_{\mathrm{id}},\qquad [a\tilde\Pi_{\mathrm{id}},b\tilde\Pi_{\mathrm{id}}]=\bigl(\lambda(b)a-\lambda(a)b\bigr)\tilde\Pi_{\mathrm{id}} .
+a\tilde\Pi_{\mathrm{id}}\cdot b\tilde\Pi_{\mathrm{id}}=\varsigma_{\mathrm{prc}}(b)\,a\tilde\Pi_{\mathrm{id}},\qquad [a\tilde\Pi_{\mathrm{id}},b\tilde\Pi_{\mathrm{id}}]=\bigl(\varsigma_{\mathrm{prc}}(b)a-\varsigma_{\mathrm{prc}}(a)b\bigr)\tilde\Pi_{\mathrm{id}} .
 $$
 
 ### The Special Decomposition
@@ -306,16 +306,16 @@ The boundary. The four corners are four complex lines of the algebra and not fou
 Read: inside one ideal the product collapses to a scalar.
 
 $$
-a\tilde\Pi_{\mathrm{id}}\cdot b\tilde\Pi_{\mathrm{id}}=\lambda(b)\,a\tilde\Pi_{\mathrm{id}},\qquad \lambda(\tilde Q)=Q_t-iQ_z .
+a\tilde\Pi_{\mathrm{id}}\cdot b\tilde\Pi_{\mathrm{id}}=\varsigma_{\mathrm{prc}}(b)\,a\tilde\Pi_{\mathrm{id}},\qquad \varsigma_{\mathrm{prc}}(\tilde Q)=Q_t-iQ_z .
 $$
 
 So the ideal is not a subalgebra and has no invertible element of its own. The unit of the algebra does not lie in either ideal; the closest thing is the idempotent, which is invertible only for the elements already in the ideal's own corner. Composing two elements of one chirality does not produce a third element of that chirality in any general way: it produces a multiple of the first, with the multiple fixed by the second.
 
-The functional $\lambda$ is the trace-like object of the cut and it is not multiplicative. $\lambda(\vec e_x\vec e_y)=-i$ while $\lambda(\vec e_x)\lambda(\vec e_y)=0$. The failure is not an accident of the choice of axis: a multiplicative functional onto $\mathbb{C}$ would have a nontrivial two-sided ideal as its kernel, and the algebra has none.
+The functional $\varsigma_{\mathrm{prc}}$ is the trace-like object of the cut and it is not multiplicative. $\varsigma_{\mathrm{prc}}(\vec e_x\vec e_y)=-i$ while $\varsigma_{\mathrm{prc}}(\vec e_x)\varsigma_{\mathrm{prc}}(\vec e_y)=0$. The failure is not an accident of the choice of axis: a multiplicative functional onto $\mathbb{C}$ would have a nontrivial two-sided ideal as its kernel, and the algebra has none.
 
 The physical reading is that a chirality carries no multiplicative charge. A one-dimensional representation of the algebra would be the algebraic form of an additive label that multiplies when two objects compose. There is none, so no such label exists on a chirality; the algebra's simplicity forbids it. Whatever additive quantum numbers the physics carries are therefore not representations of this algebra on a line.
 
-The boundary. $\lambda$ is complex-linear and it is a legitimate linear functional; only multiplicativity fails. A computation may use it freely as a linear map, and must not use it as a homomorphism. The trace of the matrix image is the same kind of object, and it fails in the same way.
+The boundary. $\varsigma_{\mathrm{prc}}$ is complex-linear and it is a legitimate linear functional; only multiplicativity fails. A computation may use it freely as a linear map, and must not use it as a homomorphism. The trace of the matrix image is the same kind of object, and it fails in the same way.
 
 ### I.3.i — The Gauge of a Peirce Basis Is the Phase of the State Vector
 
@@ -401,7 +401,7 @@ Two readings are labelled and not proved. The identification of the Hermitian id
 - The algebra is simple, so every carrier is a minimal left ideal and the algebra itself is never a carrier.
 - The axis is a parameter, not a datum: all minimal left ideals have one type and the unit real quaternions are transitive on them.
 - The Peirce corners are four complex lines obeying $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$, and they are graded by parity.
-- The Peirce functional $\lambda(\tilde Q)=Q_t-iQ_z$ is linear and not multiplicative, and its failure is the simplicity of the algebra.
+- The Peirce functional $\varsigma_{\mathrm{prc}}(\tilde Q)=Q_t-iQ_z$ is linear and not multiplicative, and its failure is the simplicity of the algebra.
 - The whole Peirce basis lies on the isotropic cone.
 - A Peirce basis is fixed up to a one-parameter complex gauge, and the gauge is the ray freedom of the state vector.
 - Every element factorises as $\tilde U(re_t+s\tilde Z)\tilde V^{*}$ with $r,s$ its singular values, independent of the root.
@@ -420,7 +420,7 @@ Two readings are labelled and not proved. The identification of the Hermitian id
 | $S_{\pm}(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | the minimal left ideals at the axis |
 | $\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}$ | the four Peirce corners |
 | $\mathcal{B}(\vec u)$ | the Peirce basis at the axis |
-| $\lambda(\tilde Q)=Q_t-iQ_z$ | the Peirce functional |
+| $\varsigma_{\mathrm{prc}}(\tilde Q)=Q_t-iQ_z$ | the Peirce functional |
 | $A_0,A_1$ | the diagonal and mixed parts of the graded decomposition |
 | $r\ge s\ge0$ | the two numbers of the special decomposition; $r+s$, $r-s$ are the singular values |
 

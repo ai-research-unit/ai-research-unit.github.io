@@ -42,7 +42,7 @@ We use the conventions of the companion articles: the algebra, the invertibles, 
 
 ### The Field and Its Action
 
-Quantum chromodynamics is the gauge theory of the group $SU(3)$ with coupling $g_s$, whose gauge fields are eight massless vectors $G_{\imath a}$, $a=1,\dots,8$, one for each generator $\lambda_a/2$ of $\mathrm{SU}(3)$. The action is
+Quantum chromodynamics is the gauge theory of the group $SU(3)$ with coupling $g_s$, whose gauge fields are eight massless vectors $G_{\imath a}$, $a=1,\dots,8$, one for each generator $\digamma_{\mathrm{gmn},a}/2$ of $\mathrm{SU}(3)$. The action is
 $$
 S_{\mathrm{QCD}}=-\frac14\int d^4r\,\sum_a G_{\imath\jmath a}G_{\imath\jmath a},
 \qquad
@@ -50,11 +50,11 @@ G_{\imath\jmath a}=\frac{\partial}{\partial R_{\imath}}G_{\jmath a}-\frac{\parti
 $$
 where $f_{abc}$ are the structure constants of $\mathrm{SU}(3)$, defined by
 $$
-[\lambda_a,\lambda_b]=2i\sum_c f_{abc}\lambda_c ,
+[\digamma_{\mathrm{gmn},a},\digamma_{\mathrm{gmn},b}]=2i\sum_c f_{abc}\digamma_{\mathrm{gmn},c} ,
 \qquad
-\{\lambda_a,\lambda_b\}=\frac{4}{3}\delta_{ab}I+2\sum_c d_{abc}\lambda_c ,
+\{\digamma_{\mathrm{gmn},a},\digamma_{\mathrm{gmn},b}\}=\frac{4}{3}\delta_{ab}I+2\sum_c d_{abc}\digamma_{\mathrm{gmn},c} ,
 $$
-where $\lambda_a$ are the Gell-Mann matrices, normalized by $\mathrm{Tr}(\lambda_a\lambda_b)=2\delta_{ab}$. The first tensor is totally antisymmetric and the second totally symmetric; both are invariants of the group. The values of the nonzero independent components are
+where $\digamma_{\mathrm{gmn},a}$ are the Gell-Mann matrices, normalized by $\mathrm{Tr}(\digamma_{\mathrm{gmn},a}\digamma_{\mathrm{gmn},b})=2\delta_{ab}$. The first tensor is totally antisymmetric and the second totally symmetric; both are invariants of the group. The values of the nonzero independent components are
 $$
 f_{123}=1,
 \qquad
@@ -212,7 +212,7 @@ So an $SU(3)$ gauge theory can be written on the enlarged carrier, with the colo
 **Where the gluon then lives.** On the enlarged carrier the gauge potential is the $\mathfrak{su}(3)$-valued one-form
 
 $$
-\mathcal{A}_{\imath}=g_s\sum_a G_{\imath a}\,\frac{\lambda_a}{2},
+\mathcal{A}_{\imath}=g_s\sum_a G_{\imath a}\,\frac{\digamma_{\mathrm{gmn},a}}{2},
 $$
 
 a traceless anti-Hermitian $3\times3$ complex matrix, that is, an element of $\mathfrak{su}(3)\subset\mathfrak{u}(3)\subset\mathfrak{u}(4)$. This is the exact sense in which the octet is *outside* $\mathbb{B}$: $\mathcal{A}_{\imath}$ is not an element of the algebra, and not a linear function of one, while it **is** an element of the endomorphism algebra of the enlarged carrier, $M_4(\mathbb{C})\cong M_2(\mathbb{B})$, as a $3\times3$ block with the fourth direction inert. The eight components $G_{\imath a}$ are the eight coordinates of that block, and the group elements of the embedded $\mathrm{SU}(3)$ have explicit closed forms in biquaternion parameters — an ordered product of three exponentials of the antisymmetric, diagonal and diagonal-less symmetric linear functions, with eight parameters, verified $*$-unitary with unit determinant — so the embedding is not merely an existence statement: the finite gauge transformation $\Omega(x)\in\mathrm{SU}(3)$ and the potential $\Omega^{-1}\partial/\partial R_{\imath}\,\Omega$ can be written out in those parameters. That is what the price of the embedding *is*, item by item: the biquaternion parameters of the closed form are the colour data, and they are adjoined to the algebra rather than drawn from it. The algebra's own gauge sector is untouched and remains $\mathrm{U}(2)$.
@@ -288,7 +288,7 @@ This does not contradict the ceiling, because it does not take place in $\mathbb
 | $\mathrm{SU}(3)$, $\dim_\mathbb{R}\mathrm{SU}(3)=8$ | Colour algebra; not reachable from the compact part |
 | $G_{\imath a}$ $(a=1,\dots,8)$ | Gluon fields; adjoint octet |
 | $G_{\imath\jmath a}=\frac{\partial}{\partial R_{\imath}}G_{\jmath a}-\frac{\partial}{\partial R_{\jmath}}G_{\imath a}+g_s\sum_{b,c}f_{abc}G_{\imath b}G_{\jmath c}$ | Gluon field strength; a colour component, no tilde |
-| $[\lambda_a,\lambda_b]=2i\sum_c f_{abc}\lambda_c$, $\{\lambda_a,\lambda_b\}=\tfrac43\delta_{ab}I+2\sum_c d_{abc}\lambda_c$ | Gell-Mann tensors |
+| $[\digamma_{\mathrm{gmn},a},\digamma_{\mathrm{gmn},b}]=2i\sum_c f_{abc}\digamma_{\mathrm{gmn},c}$, $\{\digamma_{\mathrm{gmn},a},\digamma_{\mathrm{gmn},b}\}=\tfrac43\delta_{ab}I+2\sum_c d_{abc}\digamma_{\mathrm{gmn},c}$ | Gell-Mann tensors |
 | $f_{123}=1$, $f_{147}=\tfrac12$, $f_{156}=-\tfrac12$, $f_{458}=\tfrac{\sqrt3}{2}$ | Sample nonzero $SU(3)$ components of the invariant $f_{abc}$ (verified) |
 | $d_{118}=\tfrac1{\sqrt3}$, $d_{146}=\tfrac12$, $d_{448}=-\tfrac{1}{2\sqrt3}$, $d_{888}=-\tfrac1{\sqrt3}$ | Sample nonzero $SU(3)$ components of the invariant $d_{abc}$ (verified) |
 | $C_2(\mathrm{adj})=3$, $C_2(\mathrm{fund})=\tfrac43$, $T(\mathrm{fund})=\tfrac12$ | $SU(3)$ Casimir data (verified) |
@@ -296,7 +296,7 @@ This does not contradict the ceiling, because it does not take place in $\mathbb
 | $\mathbb{B}\otimes\Lambda$ | Grassmann envelope adjacent to the algebra |
 | $\mathbb{O}$, $\mathrm{Aut}(\mathbb{O})=G_2\supset SU(3)$ | Octonions; the non-associative carrier of $SU(3)$ |
 | $M_2(\mathbb{B})\cong M_4(\mathbb{C})\supset \mathrm{U}(4)\supset \mathrm{U}(3)\supset SU(3)$ | Enlarged carrier; colour index external |
-| $\mathcal{A}_{\imath}=g_s\sum_a G_{\imath a}\lambda_a/2$ | Gauge potential in the embedded $\mathfrak{su}(3)$; a $3\times3$ traceless anti-Hermitian block of the enlarged carrier |
+| $\mathcal{A}_{\imath}=g_s\sum_a G_{\imath a}\digamma_{\mathrm{gmn},a}/2$ | Gauge potential in the embedded $\mathfrak{su}(3)$; a $3\times3$ traceless anti-Hermitian block of the enlarged carrier |
 | $\mathrm{U}(1)\times SU(2)$ | The framework's gauge sector; the electroweak factor |
 | $\delta_{\imath\jmath}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |

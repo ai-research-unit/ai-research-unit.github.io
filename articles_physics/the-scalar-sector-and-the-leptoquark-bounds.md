@@ -206,12 +206,12 @@ The suppression is $M_X^{-6}$ and not $M_X^{-2}$, and that is six powers of a sc
 10.1 The mass relation. It is the real defect, and it is a defect of counting. A Yukawa coupling needs a scalar that is a singlet of $\mathrm{SU}(3)$ and transforms as $(\mathbf2,\bar{\mathbf2})$ or $(\mathbf2,\mathbf2)$ under the electroweak pair. The bidoublet $H$ is exactly that field, it is not eaten, and it has four real survivors and does the job. The problem is that one bidoublet does the job twice with one matrix:
 
 $$
-\mathcal L_Y=\lambda\,\bar{\Psi}_L H\,\Psi_R+\text{h.c.}
+\mathcal L_Y=\digamma_{\mathrm{yuk}}\,\bar{\Psi}_L H\,\Psi_R+\text{h.c.}
 \quad\Longrightarrow\quad
 M_d\propto M_e ,
 $$
 
-because the up-type and down-type masses are read off the two vevs of the same $H$ from the same $\lambda$. One matrix serving two sectors forces the two mass matrices to be proportional, and proportional matrices have proportional spectra.
+because the up-type and down-type masses are read off the two vevs of the same $H$ from the same $\digamma_{\mathrm{yuk}}$. One matrix serving two sectors forces the two mass matrices to be proportional, and proportional matrices have proportional spectra.
 
 Why proportionality. Proportionality is a statement about the number of independent matrices, and the number is one. It holds at every scale, in every scheme, and with any normalisation, so it is a fact about the multiplet list and not about a coupling value. The test against the measured spectrum — which ratios match and which do not, and by how much, and at which scale — is a coupling statement, and it is in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html), *What the Six Do*.
 
@@ -242,9 +242,9 @@ The $\mathbf3$ and $\bar{\mathbf3}$ are colour triplets with lepton number, so t
 11.2 What that does. A single $\Sigma$ exchange then gives a dimension-six operator $(qq)(q\ell)$:
 
 $$
-\mathcal O_6\sim\frac{\lambda^2}{M_\Sigma^{2}}\,(qq)(q\ell),
+\mathcal O_6\sim\frac{\digamma_{\mathrm{yuk}}^2}{M_\Sigma^{2}}\,(qq)(q\ell),
 \qquad
-\tau(p\to e^{+}\pi^{0})\ \propto\ \frac{M_\Sigma^{4}}{\lambda^{2}} .
+\tau(p\to e^{+}\pi^{0})\ \propto\ \frac{M_\Sigma^{4}}{\digamma_{\mathrm{yuk}}^{2}} .
 $$
 
 The measured limit $\tau>2.4\times10^{34}$ yr then requires $M_\Sigma\gtrsim10^{15}$ GeV for order-one couplings — four extra powers of the scale, and ten orders of magnitude above the leptoquark bound.

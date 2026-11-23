@@ -103,12 +103,12 @@ The gain is not a new equation but a new status for the old ones. Maxwell and Ya
 
 The scale question is the one place where the derivation has real physical content, and it must be stated with more care than it usually is.
 
-**The eikonal alone is scale covariant.** Its condition is homogeneous of degree two in the gradient, so a component may be multiplied by any constant and the condition survives. It is immediate from the polar form, $N(\lambda g)=\lambda^2N(g)$ for every complex $\lambda$. Nothing about a single component's amplitude is fixed by differentiability.
+**The eikonal alone is scale covariant.** Its condition is homogeneous of degree two in the gradient, so a component may be multiplied by any constant and the condition survives. It is immediate from the polar form, $N(\digamma_{\mathrm{scl}} g)=\digamma_{\mathrm{scl}}^2N(g)$ for every complex $\digamma_{\mathrm{scl}}$. Nothing about a single component's amplitude is fixed by differentiability.
 
 **The connection is not.** The curvature of a connection is $dA+[A,A]$, one term linear in the potential and one quadratic in it. Scaling the potential therefore does not scale the curvature:
 
 $$
-F(\lambda A)=\lambda\,F(A)+(\lambda^2-\lambda)\,[A,A] .
+F(\digamma_{\mathrm{scl}} A)=\digamma_{\mathrm{scl}}\,F(A)+(\digamma_{\mathrm{scl}}^2-\digamma_{\mathrm{scl}})\,[A,A] .
 $$
 
 The two terms scale differently, so a solution of the self-duality relation $F=iF^{*}$ survives a rescaling only for $\digamma_{\mathrm{cfm}}=1$ — or for a commutator term that is itself (anti)self-dual in the same sense, which a generic potential does not have. The admissible amplitudes are isolated, not continuous.

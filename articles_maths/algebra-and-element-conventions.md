@@ -125,7 +125,11 @@ and a form on two points is written with two arguments, $H(Q_1,Q_2)$, as *Produc
 
 **The word *determinant* belongs to a matrix.** An element carries the quaternionic norm, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, before any representation is chosen, and the determinant of its $2\times2$ image is that number with no factor, $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$. The word is applied to an element only in the sentence that states this identity. Elsewhere the corpus writes *the quaternionic norm* and the symbol $\langle\cdot\rangle_{\natural}$, and the zero-divisor cone is $\{\langle\tilde Q\rangle_{\natural}=0\}$. The word stays for arrays, and the carrier is named: the determinant of a matrix of $M_n(\mathbb{C})$, of a linear map, of a Jacobian, of a symbol, of a fluctuation operator, and the determinant of the regular representation, $\det L_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^{2}$. Multiplicativity is the property that belongs to this reading and not to the trace.
 
-## The Angle
+## The Reserved Letters
+
+**Five letters carry five roles, and each is spent once.** An angle is $\theta$, a scale is $\varrho$, a wave number is $\nu$, a wavelength is $\lambda$, and an eigenvalue is $\eta$. None of the five carries a second sense, and no other scalar borrows one of them. A scalar that is none of the five takes $\digamma$ with a subscript that names its sense.
+
+### The Angle: $\theta$
 
 **An angle is real, and it is written $\theta$.** A rotation enters the algebra as $\exp(i\theta)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ therefore carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{rat}}$ the rotation angle of an evolution. One glyph, one case, and no second letter spent on the imaginary reading.
 
@@ -140,6 +144,22 @@ $$
 At the real argument the pair is the rotation and at the imaginary argument the boost. The formula does not change; only the value put in the slot changes.
 
 **The letter carries no second role.** The uses that once shared it have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$; the curvature of a connection is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the congruence relation is $\vartheta_{\mathrm{cng}}$; the symplectic potential is $\varpi$; the theta function is $\vartheta_{\mathrm{thf}}$. A subscript on $\theta$ names the angle's own coordinate and does not make the letter an index of another kind: $p_\theta$ and $A_\theta$ are the momentum and the potential along the angular coordinate.
+
+### The Scale: $\varrho$
+
+**The glyph $\varrho$ carries a scale and nothing else.** A polar decomposition writes an element as a positive real scale times a unit element, $\tilde\Xi=\varrho\,\tilde u$ with $\varrho=\lVert\tilde\Xi\rVert\ge0$ and $\lVert\tilde u\rVert=1$, and the amplitude of a wave is the same letter read as a magnitude. A subscript names which scale: $\varrho_{\mathrm{num}}$ the number density of a fluid, $\varrho_{\mathrm{chg}}$ the charge density, $\varrho_{\mathrm{ifm}}$ the coefficient of an indefinite form. The letter never carries an angle, a wave number, a wavelength or an eigenvalue.
+
+### The Wavenumber: $\nu$
+
+**The glyph $\nu$ carries a wave number and nothing else.** The wave number is the number of turns per unit length, $\nu=k/2\pi=1/\lambda$, and a particle has three of them, $\nu_m$, $\nu_{\Phi}$ and $\nu_t^{\prime}$. The letter is never an index, because the space index is $k$; never a frequency in hertz, which is $f$ or $\omega$; and never a mass.
+
+### The Wavelength: $\lambda$
+
+**The glyph $\lambda$ carries a wavelength and nothing else.** It is the reciprocal of the wave number, $\lambda=1/\nu$, written $\lambda_m$, $\lambda_{\Phi}$ and $\lambda_t$ for the three of a particle. The letter never carries an eigenvalue, a coupling, a scale factor or a parameter of a family; those are $\eta$, $\digamma_{\mathrm{qtc}}$, $\digamma_{\mathrm{scl}}$ and $\digamma_{\mathrm{prm}}$.
+
+### The Eigenvalue: $\eta$
+
+**The glyph $\eta$ carries an eigenvalue and nothing else.** The spectrum is $\eta$, $\eta_\pm$, $\eta_{1,2}$, $\eta_1\dots\eta_N$, $\eta_i$ or $\eta_n$ according to how many there are, the characteristic equation is $\eta^{2}-2Q_t\eta+N=0$, and the conjugate eigenvalue is $\bar\eta$. A spectral parameter is an eigenvalue and keeps the letter. The letter is never an index, never a scale and never an indefinite form.
 
 ## The Remarkable Subspaces of Biquaternions
 
@@ -325,7 +345,11 @@ The conventions below are those used throughout the corpus.
 | $\mathsf{M}_{4L}(\tilde Q)$, $\mathsf{M}_{4R}(\tilde Q)$ | The matrices of left and right multiplication by $\tilde Q$ in the basis the article names |
 | $\mathbb{B}_{\mathrm{spl}}$ | The split-biquaternions, $\mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | Lower case, upper case | The scalar sector is the reals, or larger than the reals |
-| $\theta$; $i\theta_{\mathrm{rpd}}$ | The angle, real, with a subscript naming it; a purely imaginary angle is written $i\theta$ at the point of use, and the $\theta$ inside stays real (§*The Angle*) |
+| $\theta$; $i\theta_{\mathrm{rpd}}$ | The angle, real, with a subscript naming it; a purely imaginary angle is written $i\theta$ at the point of use, and the $\theta$ inside stays real (§*The Reserved Letters*) |
+| $\varrho$; $\varrho_{\mathrm{num}}$, $\varrho_{\mathrm{chg}}$ | The scale of a polar decomposition, $\tilde\Xi=\varrho\,\tilde u$ with $\varrho\ge0$, and the amplitude of a wave; the subscript names which scale (§*The Reserved Letters*) |
+| $\nu$; $\nu_m$, $\nu_{\Phi}$, $\nu_t^{\prime}$ | The wave number, $\nu=k/2\pi=1/\lambda$; the three of a particle; never an index and never a frequency in hertz (§*The Reserved Letters*) |
+| $\lambda$; $\lambda_m$, $\lambda_{\Phi}$, $\lambda_t$ | The wavelength, $\lambda=1/\nu$; the three of a particle; never an eigenvalue or a coupling (§*The Reserved Letters*) |
+| $\eta$; $\eta_\pm$, $\eta_{1,2}$, $\eta_i$ | The eigenvalue, a root of $\eta^{2}-2Q_t\eta+N=0$; never an index and never a scale (§*The Reserved Letters*) |
 | Tilde | The presence of the quaternionic factor |
 | Arrow | The vector part of a named element and a pure element standing by itself — $\vec q$ or $\vec Q$ (§*The Centre and the Vector Subspace*) |
 | $\alpha, \beta$; $q, q_1, q_2$ | The generic elements of the Booleans, and of the rationals and the reals |

@@ -209,7 +209,7 @@ because associativity turns $\vec e_{\jmath}(\tilde Q_1\tilde Q_2)$ into $(\vec 
 $$
 L_{\mathrm{axf}}(\tilde Q_1)R_{\mathrm{axf}}(\tilde Q_2)=R_{\mathrm{axf}}(\tilde Q_2)L_{\mathrm{axf}}(\tilde Q_1),
 $$
-because the two factors sit on opposite sides of the argument and never meet. The two families meet in the scalars: $L_{\mathrm{axf}}(\tilde Q)=R_{\mathrm{axf}}(\tilde Q)$ says that $\tilde Q$ commutes with every element, that is $\tilde Q\in\mathbb{C}e_t$, and then the common matrix is $\lambda\mathrm I_4$.
+because the two factors sit on opposite sides of the argument and never meet. The two families meet in the scalars: $L_{\mathrm{axf}}(\tilde Q)=R_{\mathrm{axf}}(\tilde Q)$ says that $\tilde Q$ commutes with every element, that is $\tilde Q\in\mathbb{C}e_t$, and then the common matrix is $\digamma_{\mathrm{scl}}\mathrm I_4$.
 
 ### The Stitch Between the Two Families
 

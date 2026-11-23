@@ -169,7 +169,7 @@ S=\int d^4r\, e\Bigl[\frac{1}{2\kappa}\exp(a){}_{\imath} \exp(b){}_{\jmath} \mat
 $$
 with the frame slot of $C_a$ written low and the weight $\varepsilon_a$ doing what the source's raising did, and with the curvature pair written world indices first, in the corpus's order, and it adds the constraint Lagrangian
 $$
-\mathcal{L}_{\text{constr}} = \lambda_{\imath a}\bigl(\exp(a){}_{\imath} - \exp(a){}_{\imath}[\tilde{Ξ}]\bigr) + \Lambda_{\imath ab}\bigl(N_{\mathrm{cont},\imath ab} - N_{\mathrm{cont},\imath ab}[\tilde{Ξ}]\bigr) ,
+\mathcal{L}_{\text{constr}} = \digamma_{\mathrm{lgr},\imath a}\bigl(\exp(a){}_{\imath} - \exp(a){}_{\imath}[\tilde{Ξ}]\bigr) + \Lambda_{\imath ab}\bigl(N_{\mathrm{cont},\imath ab} - N_{\mathrm{cont},\imath ab}[\tilde{Ξ}]\bigr) ,
 $$
 with the composite expressions of Section 4 on the right, and with the coefficient $c_A$ renamed from the source's $C_A$ so that it does not collide with the frame actions $C_{\imath}$. One remark on the printed form belongs before the variation. The weight on the frame index does what the metric's raising did in the source, $i\varepsilon_a C_a$, so the kinetic term carries a minus sign on the three spatial derivatives and none on the time derivative.
 
@@ -177,7 +177,7 @@ Variation with respect to the multipliers returns $e=e[\tilde{Ξ}]$ and $M_{\mat
 
 **The Dirac equation is not derived from the action either.** Section 5.5 varies with respect to the adjoint, $\tilde{Ξ}^{\dagger}$, writes the constraint's contribution as a sum over the sixteen graded products, $\Gamma_A$ built from the $G_{\imath}$ and read as arrays,
 $$
-Ζ[\lambda,\Lambda](\tilde{Ξ})=\sum_A c_A\,\mathrm{Tr}_{\mathbb H}\bigl\langle\tilde{Ξ},\,\Gamma_A\partial \tilde{Ξ}/\partial x_{\imath}\bigr\rangle\,\Gamma_A\partial \tilde{Ξ}/\partial x_{\imath} ,
+Ζ[\upsilon,\Lambda](\tilde{Ξ})=\sum_A c_A\,\mathrm{Tr}_{\mathbb H}\bigl\langle\tilde{Ξ},\,\Gamma_A\partial \tilde{Ξ}/\partial x_{\imath}\bigr\rangle\,\Gamma_A\partial \tilde{Ξ}/\partial x_{\imath} ,
 $$
 and declares it zero "by orthogonality". Orthogonality does not deliver that: a sum of orthogonal basis elements vanishes only when every coefficient vanishes, and each coefficient vanishing is the statement to be proved. The basis invoked is the sixteen-element one, whose four-element counterpart failed at Eq. (2). Since the Dirac kinetic term is already written into the action by hand, the equation that comes out is the equation that went in; the step's only real task is to show that the constraint term does not spoil it, and that is what the non sequitur leaves undone.
 
@@ -215,9 +215,9 @@ The difference is one line, and it is a difference in side. The letter of an ele
 
 **The Einstein equation does not follow.** Variation with respect to the tetrad gives, in the source's own notation,
 $$
-G_{\imath a}=2\kappa\bigl(T_{\imath a}-\lambda_{\imath a}\bigr) ,
+G_{\imath a}=2\kappa\bigl(T_{\imath a}-\digamma_{\mathrm{lgr},\imath a}\bigr) ,
 $$
-a coefficient $2\kappa=16\pi G$ where the printed target $G_{\imath\jmath}=8\pi G T_{\imath\jmath}$ needs $\kappa=8\pi G$. The two agree only if $\lambda_{\imath a}=\tfrac12T_{\imath a}$, a specific value and not a vanishing one — or if the stress tensor is defined here with one factor of two fewer than the target uses. The source says that "when constraints hold, $\lambda_{\imath a}$ becomes auxiliary and we recover $G_{\imath\jmath}=8\pi G T_{\imath\jmath}$", but variation with respect to the multiplier returns the definition of the composite and fixes nothing about $\lambda$. Einstein's equation therefore does not follow from the action as printed.
+a coefficient $2\kappa=16\pi G$ where the printed target $G_{\imath\jmath}=8\pi G T_{\imath\jmath}$ needs $\kappa=8\pi G$. The two agree only if $\digamma_{\mathrm{lgr},\imath a}=\tfrac12T_{\imath a}$, a specific value and not a vanishing one — or if the stress tensor is defined here with one factor of two fewer than the target uses. The source says that "when constraints hold, $\digamma_{\mathrm{lgr},\imath a}$ becomes auxiliary and we recover $G_{\imath\jmath}=8\pi G T_{\imath\jmath}$", but variation with respect to the multiplier returns the definition of the composite and fixes nothing about $\digamma_{\mathrm{lgr}}$. Einstein's equation therefore does not follow from the action as printed.
 
 ## The Teleparallel Sector
 
@@ -373,7 +373,7 @@ with $\varepsilon_t=+1$ and $\varepsilon_\imath=-1$ the sign vector, all indices
 The source's factor-2 relation is therefore obtained only after antisymmetrising, and the antisymmetrisation is what the derivation omits. For three distinct indices, where $C_{\imath\jmath}=C_{\imath} C_{\jmath}$, the left side is the corpus's spin density $\Sigma_{k\imath\jmath}$, and the corpus's torsion–spin relation is $T_{k\imath\jmath}=\kappa\,\Sigma_{k\imath\jmath}$ — the Einstein–Cartan equation, verified in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form* — so on its solutions
 $$
 \bigl\langle\tilde{Ξ},C_\imath\,C_{\imath\jmath}\,\tilde{Ξ}\bigr\rangle=\Sigma_{k\imath\jmath}=\kappa^{-1}T_{k\imath\jmath} ,
-\qquad \lambda,\imath,\jmath\ \text{distinct}.
+\qquad \upsilon,\imath,\jmath\ \text{distinct}.
 $$
 The source's display has $2\kappa$ multiplying the torsion instead of $\kappa^{-1}$, so the printed constant is the reciprocal of the right one up to the factor $2$: the ratio of the two is $2\kappa^{2}$, which no choice of sign of $\kappa$ repairs. On repeated indices the left side is nonzero where the epsilon channel vanishes, so the display is not an identity either way.
 
@@ -462,7 +462,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | $\Sigma_{k\imath\jmath}$ | the corpus’s spin density, $\langle\tilde{Ξ},\operatorname{Alt}[C_\imath C_{\imath} C_{\jmath}]\tilde{Ξ}\rangle$, equal to $\kappa^{-1}T_{k\imath\jmath}$ on the source’s own solutions; $\Sigma_{\rho\imath\jmath}$ is the same object carrying the index of the torsion it is matched to |
 | $A_\rho$ | the axial bilinear $\langle\tilde{Ξ},\mathsf{V}_{\mathrm{vol}} C_\rho\tilde{Ξ}\rangle$ |
 | $\mathrm{Sd}_{\imath\jmath ab}$ | the source's teleparallel Lagrange multiplier |
-| $\lambda_{\imath a}$, $\Lambda_{\imath ab}$ | the source's Lagrange multipliers |
+| $\digamma_{\mathrm{lgr},\imath a}$, $\Lambda_{\imath ab}$ | the source's Lagrange multipliers |
 | $q_5=q_1q_2q_3$ | in the source, "the imaginary unit"; in fact the central scalar $-1$ |
 | $\tau=\mathrm{Arg}_{\mathbb{H}}\tilde{Ξ}$ | the source's Kozyrev time field |
 | $J_{S\imath}$ | the source's torsion entropy pseudo-vector |

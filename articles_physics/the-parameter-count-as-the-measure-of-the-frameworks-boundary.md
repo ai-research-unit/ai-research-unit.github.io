@@ -46,10 +46,10 @@ $$
 
 The flavour block is $13$ of $19$, that is $68.4\%$. Two thirds of the model's freedom sits in the sector the framework says the least about, which is the first quantitative statement of this article: the boundary is not spread evenly, it is concentrated where the algebra is emptiest.
 
-The regrouping does not change the count. The scalar pair can be written $(v,M_H)$ or $(\mu^2,\lambda)$, related by $v^2=\mu^2/\lambda$ and $M_H^2=2\lambda v^2$. Recomputing from the quoted values,
+The regrouping does not change the count. The scalar pair can be written $(v,M_H)$ or $(\mu^2,\digamma_{\mathrm{qtc}})$, related by $v^2=\mu^2/\digamma_{\mathrm{qtc}}$ and $M_H^2=2\digamma_{\mathrm{qtc}} v^2$. Recomputing from the quoted values,
 
 $$
-\lambda=\frac{M_H^2}{2v^2}=\frac{(125.09)^2}{2(246.22)^2}=0.1291 ,
+\digamma_{\mathrm{qtc}}=\frac{M_H^2}{2v^2}=\frac{(125.09)^2}{2(246.22)^2}=0.1291 ,
 \qquad
 \mu=\frac{M_H}{\sqrt2}=88.5\ \mathrm{GeV} .
 $$
@@ -63,7 +63,7 @@ Four conventions are in use, and they give $18$ or $19$.
 | $\theta_{\mathrm{QCD}}$ set to zero by a mechanism | $18$ | The axion removes one entry |
 | Neutrinos massless, as in the minimal content | $19$ | The baseline |
 | $\theta_{\mathrm{QCD}}$ retained as a parameter | $19$ | Baseline with the small bound |
-| $v$ and $M_H$ counted as $\mu^2$ and $\lambda$ | $19$ | Regrouping only |
+| $v$ and $M_H$ counted as $\mu^2$ and $\digamma_{\mathrm{qtc}}$ | $19$ | Regrouping only |
 
 So the count is $18$ or $19$ depending on whether the strong CP problem is solved, and never $17$ or $20$ on any convention in use. That is a stable list.
 
@@ -183,7 +183,7 @@ $$
 
 Any one of the nineteen can be taken as the unit; the eighteen ratios are what a measurement determines. This is not a bookkeeping trick, because the choice is unobservable: a universe with all masses doubled is the same universe.
 
-The eighteen dimensionless combinations include $\lambda=0.1291$, the mass ratios $m_\mu/m_e=206.8$ and $m_t/m_e=3.4\times10^{5}$, the three couplings, the four mixing parameters, and $\theta_{\mathrm{QCD}}$. Taking $v$ as the unit, the ratio $M_H/v=0.5080$ is one of the eighteen, and it is the one that sets the electroweak hierarchy problem's scale.
+The eighteen dimensionless combinations include $\digamma_{\mathrm{qtc}}=0.1291$, the mass ratios $m_\mu/m_e=206.8$ and $m_t/m_e=3.4\times10^{5}$, the three couplings, the four mixing parameters, and $\theta_{\mathrm{QCD}}$. Taking $v$ as the unit, the ratio $M_H/v=0.5080$ is one of the eighteen, and it is the one that sets the electroweak hierarchy problem's scale.
 
 The nineteen are not nineteen independent measurements. Three of them are not measured directly at all: $\theta_{\mathrm{QCD}}$ is bounded rather than measured, the three couplings are extracted from a fit to many observables, and the mixing parameters are fit outputs. So the count of *directly measured* parameters is smaller than nineteen, and the count of *fitted* ones is larger. Both facts are worth stating before the count is used as a measure.
 
@@ -294,7 +294,7 @@ The table gives each item and its provenance.
 | The nineteen, with values and schemes | Imported from the content article; regrouped and re-typed here |
 | The sector split $13+3+1+2$ | Computed here |
 | The share $13/19=68.4\%$ | Computed here |
-| $\lambda=0.1291$, $\mu=88.5$ GeV | Computed here from $M_H$ and $v$ |
+| $\digamma_{\mathrm{qtc}}=0.1291$, $\mu=88.5$ GeV | Computed here from $M_H$ and $v$ |
 | The typology into five kinds | This article's classification |
 | The counts $8$, $9$, $2$ and their shares | Computed here |
 | The framework's three parameters | Imported from the gauge and massive-equation articles |
@@ -329,7 +329,7 @@ Four machines would reduce the count: a spectral principle (ten entries), a scal
 |---|---|
 | $v$ | Higgs expectation value, $246.22$ GeV |
 | $M_H$ | Higgs mass, $125.09$ GeV |
-| $\mu^2$, $\lambda$ | The two parameters of the scalar potential |
+| $\mu^2$, $\digamma_{\mathrm{qtc}}$ | The two parameters of the scalar potential |
 | $g_{\mathrm Y}$, $g$, $g_s$ | The three gauge couplings |
 | $\theta_{\mathrm{QCD}}$ | The QCD vacuum angle |
 | $\theta_{ij}$, $\delta$ | CKM angles and phase |

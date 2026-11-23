@@ -75,7 +75,7 @@ $$
 The two eigenvalues are distinct and non-zero. The spectral idempotents are unique,
 
 $$
-e_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\eta_{\pm}-\lambda_\mp},\qquad
+e_\pm=\frac{\tilde Q-\eta_\mp e_t}{\eta_{\pm}-\eta_\mp},\qquad
 \tilde Q=\eta_{+}e_++\eta_{-}e_-,
 $$
 

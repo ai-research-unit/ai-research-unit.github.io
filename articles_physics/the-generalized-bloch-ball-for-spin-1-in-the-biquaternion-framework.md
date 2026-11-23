@@ -96,13 +96,13 @@ which is the realisation used from here on; their matrix elements follow from th
 
 ### Bloch coordinates and the two invariants
 
-A Hermitian unit-trace $3\times3$ matrix can be written in the Gell-Mann basis $\lambda_1,\dots,\lambda_8$ (traceless, Hermitian, $\mathrm{Tr}(\lambda_a\lambda_b)=2\delta_{ab}$) as
+A Hermitian unit-trace $3\times3$ matrix can be written in the Gell-Mann basis $\digamma_{\mathrm{gmn}}_1,\dots,\digamma_{\mathrm{gmn}}_8$ (traceless, Hermitian, $\mathrm{Tr}(\digamma_{\mathrm{gmn},a}\digamma_{\mathrm{gmn},b})=2\delta_{ab}$) as
 
 $$
-\rho=\tfrac{1}{3}I_3+\frac{1}{\sqrt3}\,b_a\lambda_a,\qquad \vec b=(b_1,\dots,b_8)\in\mathbb{R}^8 ,
+\rho=\tfrac{1}{3}I_3+\frac{1}{\sqrt3}\,b_a\digamma_{\mathrm{gmn},a},\qquad \vec b=(b_1,\dots,b_8)\in\mathbb{R}^8 ,
 $$
 
-the **generalized Bloch vector** being $b_a=\tfrac{3\sqrt3}{2}\mathrm{tr}(\rho\lambda_a)$ with $\mathrm{tr}$ the normalised trace, $\mathrm{tr}(I_3)=1$. The normalisation is chosen so that the pure states lie at $|\vec b|=1$, matching the qubit convention of the companion article in which the pure states lie at $|\vec s_{\Psi}|=1$; the standard normalisation of the literature puts the coefficient at $\tfrac12$ instead of $1/\sqrt3$ and the pure states at $|\vec b|=2/\sqrt3$, differing by the factor $\sqrt3/2$.
+the **generalized Bloch vector** being $b_a=\tfrac{3\sqrt3}{2}\mathrm{tr}(\rho\digamma_{\mathrm{gmn},a})$ with $\mathrm{tr}$ the normalised trace, $\mathrm{tr}(I_3)=1$. The normalisation is chosen so that the pure states lie at $|\vec b|=1$, matching the qubit convention of the companion article in which the pure states lie at $|\vec s_{\Psi}|=1$; the standard normalisation of the literature puts the coefficient at $\tfrac12$ instead of $1/\sqrt3$ and the pure states at $|\vec b|=2/\sqrt3$, differing by the factor $\sqrt3/2$.
 
 Two invariants determine the spectrum of $\rho$, namely
 
@@ -113,7 +113,7 @@ $$
 through the characteristic equation
 
 $$
-\lambda^3-\lambda^2+\tfrac{1}{2}\left(1-\mathrm{Tr}(\rho^2)\right)\lambda-\det\rho=0 ,
+\eta^3-\eta^2+\tfrac{1}{2}\left(1-\mathrm{Tr}(\rho^2)\right)\eta-\det\rho=0 ,
 $$
 
 in which the coefficients use $\mathrm{Tr}\rho=1$. Since the trace is positive, the boundary of positivity is reached when an eigenvalue vanishes, that is, when $\det\rho=0$; and $\mathrm{Tr}(\rho^2)$ fixes the eccentricity of the spectrum about the maximally mixed value $\tfrac13$.
@@ -136,7 +136,7 @@ $$
 
 *Proof.* Positivity is equivalent to the non-negativity of all three eigenvalues. If $|\vec b|\le1$ then $\mathrm{Tr}(\rho^2)\le1$. Suppose an eigenvalue $\eta_1<0$; then $\det\rho\ge0$ forces $\eta_2\eta_3\le0$, and since $\eta_1\le\eta_2\le\eta_3$ and $\eta_1<0$ the only possibility is $\eta_2\le0$, whence $\eta_3=1-\eta_1-\eta_2\ge1$ and $\mathrm{Tr}(\rho^2)\ge\eta_3^2>1$, contradicting $|\vec b|\le1$. Thus $\det\rho\ge0$ together with $|\vec b|\le1$ forces $\eta_1\ge0$. The converse is immediate.
 
-The state space is therefore the intersection of the eight-dimensional unit ball with the region $\det\rho\ge0$, whose boundary is the cubic hypersurface $\det\rho=0$. A numerical scan confirms the structure: along the $\lambda_8$ axis the boundary is at $|\vec b|=\tfrac12$ exactly, and the states with $|\vec b|>1$ are excluded everywhere.
+The state space is therefore the intersection of the eight-dimensional unit ball with the region $\det\rho\ge0$, whose boundary is the cubic hypersurface $\det\rho=0$. A numerical scan confirms the structure: along the $\digamma_{\mathrm{gmn}}_8$ axis the boundary is at $|\vec b|=\tfrac12$ exactly, and the states with $|\vec b|>1$ are excluded everywhere.
 
 The cubic is not cosmetic. For the qubit the invariant was a quadratic form, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\eta_{+}\eta_{-}$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
 
@@ -145,9 +145,9 @@ The cubic is not cosmetic. For the qubit the invariant was a quadratic form, $\l
 The eight Bloch directions are not aligned with the physical spin directions. The spin operators are the combinations
 
 $$
-F_1=\tfrac{1}{\sqrt2}\left(\lambda_1+\lambda_6\right),\qquad
-F_2=\tfrac{1}{\sqrt2}\left(\lambda_2+\lambda_7\right),\qquad
-F_3=\tfrac{1}{2}\lambda_3+\tfrac{\sqrt3}{2}\lambda_8 ,
+F_1=\tfrac{1}{\sqrt2}\left(\digamma_{\mathrm{gmn}}_1+\digamma_{\mathrm{gmn}}_6\right),\qquad
+F_2=\tfrac{1}{\sqrt2}\left(\digamma_{\mathrm{gmn}}_2+\digamma_{\mathrm{gmn}}_7\right),\qquad
+F_3=\tfrac{1}{2}\digamma_{\mathrm{gmn}}_3+\tfrac{\sqrt3}{2}\digamma_{\mathrm{gmn}}_8 ,
 $$
 
 so that the spin vector $\vec s=\langle\vec F\rangle_{*}$ involves the Bloch components
@@ -166,7 +166,7 @@ The unit ball is the smallest ball containing the state space. The natural gener
 
 **Proposition.** *Every Hermitian unit-trace $\rho$ with $|\vec b|\le\tfrac12$ is a state, and the radius $\tfrac12$ is sharp.*
 
-*Proof.* Write $\rho=\tfrac13 I+T$ with $T=\frac{1}{\sqrt3}b_a\lambda_a$ traceless Hermitian, so that $\mathrm{Tr}(T^2)=\tfrac23|\vec b|^2$. Let the eigenvalues of $T$ be $\mu_1,\mu_2,\mu_3$; they sum to zero, and their largest value is bounded by
+*Proof.* Write $\rho=\tfrac13 I+T$ with $T=\frac{1}{\sqrt3}b_a\digamma_{\mathrm{gmn},a}$ traceless Hermitian, so that $\mathrm{Tr}(T^2)=\tfrac23|\vec b|^2$. Let the eigenvalues of $T$ be $\mu_1,\mu_2,\mu_3$; they sum to zero, and their largest value is bounded by
 
 $$
 \mu_{\max}\le\sqrt{\tfrac{2}{3}\,\mathrm{Tr}(T^2)}=\tfrac23|\vec b| ,
@@ -179,17 +179,17 @@ $$
 \quad\text{whenever } |\vec b|\le\tfrac12 ,
 $$
 
-so every such $\rho$ is positive, and it is a state. Sharpness: for the direction $\vec u=\lambda_8$ the traceless part has the spectrum $\tfrac{t}{3}(1,1,-2)$, so
+so every such $\rho$ is positive, and it is a state. Sharpness: for the direction $\vec u=\digamma_{\mathrm{gmn}}_8$ the traceless part has the spectrum $\tfrac{t}{3}(1,1,-2)$, so
 
 $$
-\rho=\tfrac{1}{3}I+\tfrac{t}{\sqrt3}\lambda_8
+\rho=\tfrac{1}{3}I+\tfrac{t}{\sqrt3}\digamma_{\mathrm{gmn}}_8
 \quad\Longrightarrow\quad
 \operatorname{spec}\rho=\left\{\tfrac{1}{3}+\tfrac{t}{3},\ \tfrac{1}{3}+\tfrac{t}{3},\ \tfrac{1}{3}-\tfrac{2t}{3}\right\},
 $$
 
-whose least eigenvalue vanishes at $t=\tfrac12$ and is negative for $t>\tfrac12$. The direction $\lambda_8$ therefore reaches the boundary at radius exactly $\tfrac12$, and no ball of larger radius is contained in the state space.
+whose least eigenvalue vanishes at $t=\tfrac12$ and is negative for $t>\tfrac12$. The direction $\digamma_{\mathrm{gmn}}_8$ therefore reaches the boundary at radius exactly $\tfrac12$, and no ball of larger radius is contained in the state space.
 
-The radius $r=\tfrac12$ is the standard value for a three-level system. In the normalisation in which the pure states have $|\vec b|=1$, the inscribed ball and the pure-state sphere stand in the ratio $\tfrac12$, which is the quantitative statement that the qutrit state space is far from a ball; in the standard normalisation the corresponding radii are $1/\sqrt3$ and $2/\sqrt3$, again in the ratio $\tfrac12$. A numerical search over two thousand random directions in the Bloch space found no boundary closer than $\tfrac12$, consistent with the proposition; the direction that attains it is the $\lambda_8$ direction, whose traceless part has the most eccentric spectrum.
+The radius $r=\tfrac12$ is the standard value for a three-level system. In the normalisation in which the pure states have $|\vec b|=1$, the inscribed ball and the pure-state sphere stand in the ratio $\tfrac12$, which is the quantitative statement that the qutrit state space is far from a ball; in the standard normalisation the corresponding radii are $1/\sqrt3$ and $2/\sqrt3$, again in the ratio $\tfrac12$. A numerical search over two thousand random directions in the Bloch space found no boundary closer than $\tfrac12$, consistent with the proposition; the direction that attains it is the $\digamma_{\mathrm{gmn}}_8$ direction, whose traceless part has the most eccentric spectrum.
 
 The **generalized Bloch ball** of the spin-$1$ state space is this inscribed ball of radius $\tfrac12$. It is the correct analogue of the qubit Bloch ball in the only sense that can be maintained: every state on it is a state, it is the largest such ball, and its centre is the maximally mixed state $\tfrac13 I_3$. It is not the state space, and it is not the image of any cone slice.
 
@@ -276,10 +276,10 @@ The article established the following.
 
 - **Spin-one operators.** The adjoint action on the vector part $\mathbb{B}_V$, $\mathrm{ad}_{\tilde S_{\Psi,k}}(ie_l)=i\,\frac{h}{2\pi}\,\epsilon_{k l\,n_{\mathrm{idx}}}\,ie_{m}$, and the symmetric combination $\tilde F_\imath=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,F_\imath$ and $\sum_{\imath\in\{x,y,z\}} F_\imath^2=2\,\frac{h^{2}}{4\pi^{2}}\,I_{3}$.
 - **The state space.** Spin-$1$ states are the positive unit-trace elements of the symmetric sector; in the two-qubit language they are the states whose support lies in the symmetric subspace, $\tilde\Pi_{\mathrm{id,asym}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id,asym}}=0$, that is, the face of the two-qubit state space orthogonal to the antisymmetric idempotent.
-- **Bloch coordinates.** $\rho=\tfrac13 I_3+\tfrac{1}{\sqrt3}b_a\lambda_a$ with a real eight-vector $\vec b$ normalised so that the pure states have $|\vec b|=1$; the spectrum is determined by $\mathrm{Tr}(\rho^2)=\tfrac13(1+2|\vec b|^2)$ and $\det\rho$ through the characteristic cubic.
+- **Bloch coordinates.** $\rho=\tfrac13 I_3+\tfrac{1}{\sqrt3}b_a\digamma_{\mathrm{gmn},a}$ with a real eight-vector $\vec b$ normalised so that the pure states have $|\vec b|=1$; the spectrum is determined by $\mathrm{Tr}(\rho^2)=\tfrac13(1+2|\vec b|^2)$ and $\det\rho$ through the characteristic cubic.
 - **The positivity condition.** $\rho$ is a state if and only if $|\vec b|\le1$ and $\det\rho\ge0$; the unit ball is necessary, the cubic inequality is what cuts it down, and positivity is no longer a single quadratic condition.
-- **The spin directions.** $F_1=\tfrac{1}{\sqrt2}(\lambda_1+\lambda_6)$, $F_2=\tfrac{1}{\sqrt2}(\lambda_2+\lambda_7)$, $F_3=\tfrac12\lambda_3+\tfrac{\sqrt3}{2}\lambda_8$, so the spin vector mixes Bloch coordinates: $s_1=\sqrt{2/3}(b_1+b_6)$, $s_2=\sqrt{2/3}(b_2+b_7)$, $s_3=\tfrac{1}{\sqrt3}b_3+b_8$.
-- **The inscribed ball.** Every Hermitian unit-trace $\rho$ with $|\vec b|\le\tfrac12$ is a state, and $\tfrac12$ is sharp, attained along $\lambda_8$; the proof uses $\mu_{\max}\le\sqrt{\tfrac23\mathrm{Tr}(T^2)}=\tfrac23|\vec b|$ for the traceless part, so that the eigenvalues of $\rho$ are bounded below by $\tfrac13-\tfrac23|\vec b|\ge0$ on the ball.
+- **The spin directions.** $F_1=\tfrac{1}{\sqrt2}(\digamma_{\mathrm{gmn}}_1+\digamma_{\mathrm{gmn}}_6)$, $F_2=\tfrac{1}{\sqrt2}(\digamma_{\mathrm{gmn}}_2+\digamma_{\mathrm{gmn}}_7)$, $F_3=\tfrac12\digamma_{\mathrm{gmn}}_3+\tfrac{\sqrt3}{2}\digamma_{\mathrm{gmn}}_8$, so the spin vector mixes Bloch coordinates: $s_1=\sqrt{2/3}(b_1+b_6)$, $s_2=\sqrt{2/3}(b_2+b_7)$, $s_3=\tfrac{1}{\sqrt3}b_3+b_8$.
+- **The inscribed ball.** Every Hermitian unit-trace $\rho$ with $|\vec b|\le\tfrac12$ is a state, and $\tfrac12$ is sharp, attained along $\digamma_{\mathrm{gmn}}_8$; the proof uses $\mu_{\max}\le\sqrt{\tfrac23\mathrm{Tr}(T^2)}=\tfrac23|\vec b|$ for the traceless part, so that the eigenvalues of $\rho$ are bounded below by $\tfrac13-\tfrac23|\vec b|\ge0$ on the ball.
 - **Pure and coherent states.** The pure states have $|\vec b|=1$ and $\det\rho=0$ and form $\mathbb{CP}^2$, of real dimension $4$; the coherent states have a closed form $\rho_{\mathrm{coh}}(\vec u)=\tfrac12(M^2+M)$ with $M=\vec u\cdot\vec F$, satisfy $\langle\vec F\rangle=\vec u$, form an $S^2$, and are the symmetrised products of two fundamental idempotents.
 - **Two three-balls.** The generalized Bloch ball (radius $\tfrac12$, in the eight-dimensional Bloch space) is a set of states; the polarization ball $|\langle\vec F\rangle|\le1$ is its shadow and is not the state space. They coincide only for the qubit.
 - **What is lost.** The qubit picture as a cone slice is not available for spin $1$; the state space is not a ball and positivity is not a quadratic condition. The reason is that a three-level system is not a module of $\mathbb{B}$ but a sector of a tensor square.
@@ -295,8 +295,8 @@ The article established the following.
 | $\tilde\Pi_{\mathrm{id,sym}},\tilde\Pi_{\mathrm{id,asym}}$ | Triplet and singlet idempotents of $\mathbb{B}\otimes\mathbb{B}$ |
 | $F_\imath$ | Spin-$1$ operators, $[F_i,F_j]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,F_\imath$ |
 | $\mathrm{ad}_{\tilde S_{\Psi,k}}$ | Adjoint action on the traceless part $W$ |
-| $\lambda_a$, $a=1,\dots,8$ | Gell-Mann basis, $\mathrm{Tr}(\lambda_a\lambda_b)=2\delta_{ab}$ |
-| $\rho=\tfrac13I+\tfrac{1}{\sqrt3}b_a\lambda_a$ | Qutrit state, generalized Bloch vector $\vec b$ |
+| $\digamma_{\mathrm{gmn},a}$, $a=1,\dots,8$ | Gell-Mann basis, $\mathrm{Tr}(\digamma_{\mathrm{gmn},a}\digamma_{\mathrm{gmn},b})=2\delta_{ab}$ |
+| $\rho=\tfrac13I+\tfrac{1}{\sqrt3}b_a\digamma_{\mathrm{gmn},a}$ | Qutrit state, generalized Bloch vector $\vec b$ |
 | $\mathrm{Tr}(\rho^2)=\tfrac13(1+2\lvert\vec b\rvert^2)$ | Purity invariant |
 | $\det\rho$ | Cubic invariant; boundary $\det\rho=0$ |
 | $\lvert\vec b\rvert\le\tfrac12$ | Generalized Bloch ball (inscribed) |

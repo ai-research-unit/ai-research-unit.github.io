@@ -373,7 +373,7 @@ The chain also fixes what the partition is not. A finer classification exists, b
 The spectral side. On $\Sigma_{11}$ and on $\Sigma_{01}$ there is a unique writing $\tilde Q=\eta_{+}\tilde\Pi_{\mathrm{id},++}\eta_{-}\tilde\Pi_{\mathrm{id},-}$ with orthogonal idempotents summing to $e_t$, and the idempotents are
 
 $$
-\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde Q-\lambda_\mp e_t}{\eta_{\pm}-\lambda_\mp}.
+\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde Q-\eta_\mp e_t}{\eta_{\pm}-\eta_\mp}.
 $$
 
 On the punctured scalar line the writing collapses to one term. On the Jordan part no non-trivial idempotent commutes with the element, so no two-term writing exists. On the non-zero nilpotents the same failure occurs, and at the origin the trivial one-term writing $0=0\cdot e_t$ exists.
@@ -427,7 +427,7 @@ T=U_1U_2=e_t+\vec\Pi_{\mathrm{nil},1+}\vec\Pi_{\mathrm{nil},2+}\vec\Pi_{\mathrm{
 $$
 
 $$
-p_T(\lambda)=\lambda^{2}-(2+t)\lambda+1,\qquad t=2\,\mathrm{Sc}(\vec\Pi_{\mathrm{nil},1}\vec\Pi_{\mathrm{nil},2})=-2s,\qquad s=\vec\Pi_{\mathrm{nil},1}\cdot\vec\Pi_{\mathrm{nil},2} .
+p_T(\eta)=\eta^{2}-(2+t)\eta+1,\qquad t=2\,\mathrm{Sc}(\vec\Pi_{\mathrm{nil},1}\vec\Pi_{\mathrm{nil},2})=-2s,\qquad s=\vec\Pi_{\mathrm{nil},1}\cdot\vec\Pi_{\mathrm{nil},2} .
 $$
 
 So the product is described by one complex number, and the criterion is one equation.

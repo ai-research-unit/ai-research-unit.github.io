@@ -53,10 +53,10 @@ What is absent is as informative as what is present. There is no term in $\dot \
 No time derivative of the velocity appears, and that is a statement about the chart and not about the fluid. In the action above the velocity is $\vec\nabla_\Phi S/m$: a function of the phase and not a field. If it is promoted to an independent field, the action becomes
 
 $$
-\mathcal L_{\mathrm{fl}}=\rho_{\mathrm{num}}\Bigl(-\partial_{t'}S-\frac{m\vec v^{2}}{2}-V\Bigr)-\frac{hc}{8\pi^{2}\nu_m}(\vec\nabla_\Phi \varrho)^{2}+\vec\lambda\cdot\Bigl(\vec v-\frac{\vec\nabla_\Phi S}{m}\Bigr),
+\mathcal L_{\mathrm{fl}}=\rho_{\mathrm{num}}\Bigl(-\partial_{t'}S-\frac{m\vec v^{2}}{2}-V\Bigr)-\frac{hc}{8\pi^{2}\nu_m}(\vec\nabla_\Phi \varrho)^{2}+\vec\digamma_{\mathrm{lgr}}\cdot\Bigl(\vec v-\frac{\vec\nabla_\Phi S}{m}\Bigr),
 $$
 
-and the three variations are these. Varying $\vec\lambda$ returns the definition, so the constraint is the chart's and carries no physics. Varying $\vec v$ fixes the multiplier, $\vec\lambda=\rho_{\mathrm{num}}m\vec v$, which is the momentum density and nothing else. Varying $S$ gives continuity with $\vec j=\vec\lambda/m$, which is the same equation as before. The promotion buys a name and no equation, and the multiplier is not an independent field: it is determined by the equation that would have defined it.
+and the three variations are these. Varying $\vec\digamma_{\mathrm{lgr}}$ returns the definition, so the constraint is the chart's and carries no physics. Varying $\vec v$ fixes the multiplier, $\vec\digamma_{\mathrm{lgr}}=\rho_{\mathrm{num}}m\vec v$, which is the momentum density and nothing else. Varying $S$ gives continuity with $\vec j=\vec\digamma_{\mathrm{lgr}}/m$, which is the same equation as before. The promotion buys a name and no equation, and the multiplier is not an independent field: it is determined by the equation that would have defined it.
 
 What the promotion does buy is the correct statement of the constraint. At the rungs above, the velocity's place is taken by the rapidity, and its momentum vanishes identically — the relativistic companion computes $\partial\mathcal L/\partial\dot\theta_{\mathrm{rpd}}=0$ on every configuration. Here the same fact is $p_{\vec v}=0$ once the velocity is promoted: it is then a coordinate with no kinetic term, so its conjugate is zero rather than small. The two statements are the same statement in two charts, and the fluid chart is the one in which it is visible without algebra; at this rung the density's momentum $p_r=0$ is the same fact in the chart that needs no promotion.
 
@@ -219,7 +219,7 @@ The chart. One action, three charts — element, polar, fluid — with the word 
 | $\mathcal E_{\mathrm{grad}}$ | Gradient energy; $\frac{hc}{8\pi^{2}\nu_m}\int(\vec\nabla_\Phi \varrho)^{2}=\frac{hc}{32\pi^{2}\nu_m}\int\frac{(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}}$ |
 | $\sigma^{Q}_{ij}$ | The gradient energy's stress tensor; $\partial_j\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_iQ$ |
 | $V$ | External potential; $V=0$ for the free field |
-| $\vec\lambda$ | Multiplier of the promoted constraint; equal to $m\vec j$ |
+| $\vec\digamma_{\mathrm{lgr}}$ | Multiplier of the promoted constraint; equal to $m\vec j$ |
 | $\phi_{\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | Clebsch potentials; needed only for a rotational flow |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |

@@ -68,7 +68,7 @@ The two-sided action is written out as $Q\mapsto aQb$ with $a,b\in\mathbb{B}$; i
 **Proposition (the adjoint of an action, a derived form).** An action is its own adjoint exactly when
 
 $$
-a^{*}=\lambda a,\qquad b^{*}=\lambda^{-1}b,\qquad \lvert\lambda\rvert=1 ,
+a^{*}=\digamma_{\mathrm{scl}} a,\qquad b^{*}=\digamma_{\mathrm{scl}}^{-1}b,\qquad \lvert\digamma_{\mathrm{scl}}\rvert=1 ,
 $$
 
 for a central $\digamma_{\mathrm{cfm}}$, which is wider than the case of two Hermitian multipliers: the rescaling that carries $a$ to $\mu a$ and $b$ to $b/\mu$ carries $\digamma_{\mathrm{cfm}}$ to $\digamma_{\mathrm{cfm}}\mu^{-2}$ for $\lvert\mu\rvert=1$, and $\mu^{2}=\pm\digamma_{\mathrm{cfm}}$ gives the two signs, so the condition says that the two multipliers can be chosen **simultaneously** Hermitian or simultaneously anti-Hermitian, and an action with $a^{*}=ia$ and $b^{*}=-ib$ is its own adjoint without either multiplier being so.

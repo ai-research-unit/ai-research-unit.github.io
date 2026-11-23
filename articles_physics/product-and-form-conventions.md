@@ -128,7 +128,7 @@ The same construction on the reduced biquaternion space. The construction is not
 
 The algebra carries the identity and three conjugations, four maps in all, and on it there are four forms, each applying one map to each of its two arguments, so the two lists are one list read twice. One rule ties the two lists together, and that rule is what lets the series say which form is the metric and which is the inner product without having to choose.
 
-The setting. $\mathbb{B}$ is a $\mathbb{C}$-algebra whose centre is $\mathbb{C}$, so every complex scalar is central, $\lambda\tilde{Q} = \tilde{Q}\lambda$ for all $\lambda \in \mathbb{C}$, which is the property that makes "$\mathbb{C}$-bilinear" well defined on $\mathbb{B}$; the scalar part $\mathrm{Sc}(\tilde{Q}) = Q_t$ is $\mathbb{C}$-linear. The centre is treated in *The Biquaternion Space, the Group of Involutions and the Six Subspaces*, §*The Complex Time Sector $\mathbb{B}_{C}$*, and the forms of the algebra in *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint* and its mathematical twin *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and, on the side of positivity, in *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
+The setting. $\mathbb{B}$ is a $\mathbb{C}$-algebra whose centre is $\mathbb{C}$, so every complex scalar is central, $\digamma_{\mathrm{scl}}\tilde{Q} = \tilde{Q}\digamma_{\mathrm{scl}}$ for all $\digamma_{\mathrm{scl}} \in \mathbb{C}$, which is the property that makes "$\mathbb{C}$-bilinear" well defined on $\mathbb{B}$; the scalar part $\mathrm{Sc}(\tilde{Q}) = Q_t$ is $\mathbb{C}$-linear. The centre is treated in *The Biquaternion Space, the Group of Involutions and the Six Subspaces*, §*The Complex Time Sector $\mathbb{B}_{C}$*, and the forms of the algebra in *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint* and its mathematical twin *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and, on the side of positivity, in *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
 
 The four maps. The tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is built from two rings that each carry two involutions, the identity and the conjugation, so it carries $2\times 2 = 4$, together with the derived anti-Hermitian sign:
 
@@ -288,17 +288,17 @@ $$
 The type is decided by the second argument. The scalars are central and $\mathrm{Sc}$ is $\mathbb{C}$-linear, so a conjugation that is $\mathbb{C}$-linear passes a complex scalar out of its argument unchanged, while a conjugation that is $\mathbb{C}$-antilinear conjugates it. The identity and the quaternion conjugation are $\mathbb{C}$-linear and the Hermitian conjugation is $\mathbb{C}$-antilinear, so a scalar leaving the second argument comes out barred in exactly the two sesquilinear forms:
 
 $$
-\langle\tilde{Q}_1,\lambda\tilde{Q}_2\rangle = \lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle, \qquad \langle\tilde{Q}_1,\lambda\tilde{Q}_2\rangle_{\natural} = \lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural},
+\langle\tilde{Q}_1,\digamma_{\mathrm{scl}}\tilde{Q}_2\rangle = \digamma_{\mathrm{scl}}\langle\tilde{Q}_1,\tilde{Q}_2\rangle, \qquad \langle\tilde{Q}_1,\digamma_{\mathrm{scl}}\tilde{Q}_2\rangle_{\natural} = \digamma_{\mathrm{scl}}\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural},
 $$
 
 $$
-\langle\tilde{Q}_1,\lambda\tilde{Q}_2\rangle_{*} = \bar\lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}, \qquad \langle\tilde{Q}_1,\lambda\tilde{Q}_2\rangle_{\natural*} = \bar\lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*} .
+\langle\tilde{Q}_1,\digamma_{\mathrm{scl}}\tilde{Q}_2\rangle_{*} = \bar\digamma_{\mathrm{scl}}\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}, \qquad \langle\tilde{Q}_1,\digamma_{\mathrm{scl}}\tilde{Q}_2\rangle_{\natural*} = \bar\digamma_{\mathrm{scl}}\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*} .
 $$
 
 In the first argument no scalar is conjugated, every first-slot conjugation being $\mathbb{C}$-linear:
 
 $$
-\langle\lambda\tilde{Q}_1,\tilde{Q}_2\rangle = \lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle, \qquad \langle\lambda\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} .
+\langle\digamma_{\mathrm{scl}}\tilde{Q}_1,\tilde{Q}_2\rangle = \digamma_{\mathrm{scl}}\langle\tilde{Q}_1,\tilde{Q}_2\rangle, \qquad \langle\digamma_{\mathrm{scl}}\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \digamma_{\mathrm{scl}}\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} .
 $$
 
 Throughout the series an inertia is written $(n,m)$ with the positive directions counted first, so that a form with four negative directions is $(0,4)$. An inertia here belongs to a form. The series has one metric, the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, and being the identity it has no signs to state.

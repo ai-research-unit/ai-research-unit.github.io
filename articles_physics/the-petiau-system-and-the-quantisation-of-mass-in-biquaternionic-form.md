@@ -86,7 +86,7 @@ The three cases are collected in one table.
 |---|---|---|---|
 | real scalar $s e_t$ | $s^2 e_t$ | $s^2,\ s^2$ | degenerate doublet (proton–neutron) |
 | Hermitian idempotent $\tilde\Pi_{\mathrm{id}}$ | $\tilde\Pi_{\mathrm{id}}$ | $1,\ 0$ | split doublet (electron–neutrino) |
-| singular, $\langle\tilde m_{\mathrm{fld}}\rangle_{\natural}=0$ | rank-deficient | $\lambda,\ 0$ | one massless mode |
+| singular, $\langle\tilde m_{\mathrm{fld}}\rangle_{\natural}=0$ | rank-deficient | $\eta,\ 0$ | one massless mode |
 | general | Hermitian, positive | $m_1^2,\ m_2^2$ | a massive doublet |
 
 The **content of the construction, in one sentence**: the mass of a spin-$\frac{1}{2}$ doublet is not a number in this framework but a biquaternion, and the two masses of the doublet are the two eigenvalues of $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}$. That is a genuine structural statement, and it is the framework's own, not the Standard Model's.

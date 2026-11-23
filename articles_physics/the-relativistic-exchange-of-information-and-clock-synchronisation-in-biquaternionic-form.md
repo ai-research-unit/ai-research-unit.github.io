@@ -87,7 +87,7 @@ If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, th
 
 ### Proper Time from the Biquaternion Norm
 
-A clock is a physical system that measures the interval along its own worldline. If the worldline is $\tilde R_\Phi(\lambda)$, the **proper time** is defined by
+A clock is a physical system that measures the interval along its own worldline. If the worldline is $\tilde R_\Phi(\digamma_{\mathrm{prm}})$, the **proper time** is defined by
 
 $$
 c\,d\tau = \sqrt{-\,\langle d\tilde R_\Phi\rangle_{\natural}}

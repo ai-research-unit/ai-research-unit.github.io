@@ -134,7 +134,7 @@ The prohibition is not an accident of this algebra. It follows from the same lin
 
 ### The mixture channel in the algebra
 
-The simplest channel that changes a radius is the mixture with the identity, and it has an exact biquaternion form. For $\lambda\in[0,1]$,
+The simplest channel that changes a radius is the mixture with the identity, and it has an exact biquaternion form. For $\digamma_{\mathrm{mix}}\in[0,1]$,
 $$
 \mathcal E_\imath(\tilde Q)=(1-\digamma_{\mathrm{mix}})\tilde Q+\digamma_{\mathrm{mix}}\,\mathrm{Sc}(\tilde Q)\,e_t ,
 $$
@@ -146,13 +146,13 @@ Its effect on the thermal parameter is a contraction and not a translation. The 
 $$
 \tanh\bigl(\beta'\lvert\vec h_\Psi\rvert\bigr)=(1-\digamma_{\mathrm{mix}})\tanh\bigl(\beta\lvert\vec h_\Psi\rvert\bigr),
 $$
-so $\beta'$ is defined for every $\beta$ and every $\lambda$, and $\beta'$ is closer to zero than $\beta$. For $\lvert\vec h_\Psi\rvert=1.7$, $\beta=1.2$ and $\lambda=0.5$ the new parameter is $\beta'=0.310222$, because $\tanh(1.2\cdot1.7)=0.966747$ becomes $0.483374$; for $\lambda=0.8$ it is $0.115185$, from $0.193349$. The map is monotone, it never crosses the centre, and it has the centre as its limit.
+so $\beta'$ is defined for every $\beta$ and every $\digamma_{\mathrm{mix}}$, and $\beta'$ is closer to zero than $\beta$. For $\lvert\vec h_\Psi\rvert=1.7$, $\beta=1.2$ and $\digamma_{\mathrm{mix}}=0.5$ the new parameter is $\beta'=0.310222$, because $\tanh(1.2\cdot1.7)=0.966747$ becomes $0.483374$; for $\digamma_{\mathrm{mix}}=0.8$ it is $0.115185$, from $0.193349$. The map is monotone, it never crosses the centre, and it has the centre as its limit.
 
 So the group translates and the channel contracts. The same path, two maps: one shifts $\beta$ by a constant and can invert the populations, the other scales $\tanh\beta\lvert\vec h_\Psi\rvert$ and cannot. Only the second is a physical operation on a state that an observer holds.
 
 ### The generator is not a derivation
 
-**The one-parameter semigroup has a generator, and the generator is not a commutator.** Differentiating at $\lambda=0$ with rate $\gamma$ gives
+**The one-parameter semigroup has a generator, and the generator is not a commutator.** Differentiating at $\digamma_{\mathrm{mix}}=0$ with rate $\gamma$ gives
 $$
 \frac{d\vec s}{dt}=-\gamma\,\vec s ,
 $$

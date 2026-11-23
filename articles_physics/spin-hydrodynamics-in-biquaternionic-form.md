@@ -24,7 +24,7 @@ The fluid's stress is [The Local Thermal State of a Fluid](the-local-thermal-sta
 
 ### The polarization element
 
-**The spin polarization is the rotor's generator, read as a thermodynamic variable.** With the rotor $\tilde u_{\mathrm r}$ of the polar form and its generator $\tilde\omega_\Psi=\tfrac12\omega_{k\jmath}\tilde e_{k\jmath}$ — the antisymmetric part of the algebra's basis, with $\lambda<\jmath$ — the polarization element is proportional to the generator:
+**The spin polarization is the rotor's generator, read as a thermodynamic variable.** With the rotor $\tilde u_{\mathrm r}$ of the polar form and its generator $\tilde\omega_\Psi=\tfrac12\omega_{k\jmath}\tilde e_{k\jmath}$ — the antisymmetric part of the algebra's basis, with $\upsilon<\jmath$ — the polarization element is proportional to the generator:
 
 $$
 \tilde S_{\Psi,k}=\frac{h}{4\pi}\,\tilde u_{\mathrm r}\,\tilde e_{k\jmath}\,\tilde u_{\mathrm r}^{\natural}\,\omega_{k\jmath},
@@ -32,7 +32,7 @@ $$
 
 the rotor conjugating the generator into the fluid's frame and the factor $\frac{h}{2\pi 2}$ making the components angular momenta. The display is the polar-form article's rotor read as a density: the spin element is what the rotor looks like when it is summed over a volume.
 
-Writing the six independent components $\omega_{k\jmath}=-\omega_{\jmathk}$ and the corresponding components $S_{\Psi,k,k\jmath}$ of the spin element, the article never raises an index; the pair $(\lambda,\jmath)$ labels which rotation, and the array is antisymmetric in it. The spin tensor's components are the angular momentum density in the $\lambda\jmath$ plane, and the flux of that component in the $k$ direction is written with $k$ last, so the current carries three labels: one for the direction of transport and two for the plane.
+Writing the six independent components $\omega_{k\jmath}=-\omega_{\jmathk}$ and the corresponding components $S_{\Psi,k,k\jmath}$ of the spin element, the article never raises an index; the pair $(\upsilon,\jmath)$ labels which rotation, and the array is antisymmetric in it. The spin tensor's components are the angular momentum density in the $\upsilon\jmath$ plane, and the flux of that component in the $k$ direction is written with $k$ last, so the current carries three labels: one for the direction of transport and two for the plane.
 
 Write
 
@@ -40,7 +40,7 @@ $$
 S_{\Psi,k\jmath}\equiv S_{\Psi,t,k\jmath},
 $$
 
-so that $S_{\Psi,k\jmath}$ is the angular momentum in the $\lambda\jmath$ plane per unit proper volume, the $\upsilon_{\mathrm{tme}}=t$ component of the current. Every thermodynamic relation below uses the two-index density and every conservation or transport equation uses the three-index current, and the distinction is not bookkeeping: $\omega_{k\jmath}$ has two indices, so only the two-index object can be contracted with it.
+so that $S_{\Psi,k\jmath}$ is the angular momentum in the $\upsilon\jmath$ plane per unit proper volume, the $\upsilon_{\mathrm{tme}}=t$ component of the current. Every thermodynamic relation below uses the two-index density and every conservation or transport equation uses the three-index current, and the distinction is not bookkeeping: $\omega_{k\jmath}$ has two indices, so only the two-index object can be contracted with it.
 
 The rotor is an element of norm one, and the spin element it builds is regular as long as the rotor is; on the zero-divisor cone the quaternionic norm of the spin element vanishes and the polarization has no inverse. The corpus states the restriction because the algebra's degenerate elements are where its structure changes, and a hydrodynamic expansion around a degenerate polarization is not the same expansion.
 
@@ -108,7 +108,7 @@ $$
 \tilde\Sigma_{\Psi,\mathrm{spn}}=-\left(\partial_\imath \mu_{\mathrm{spn}}\right)\tilde S_{\Psi,k}\ \text{in the first-order form},
 $$
 
-whose divergence is the force that a polarization gradient exerts on the flow. The display is schematic in its indices — the spin element is antisymmetric and contracts with the gradient in the $\lambda$ slot — and the article states the structure and does not write the index algebra in full, because the full algebra is bookkeeping without physics.
+whose divergence is the force that a polarization gradient exerts on the flow. The display is schematic in its indices — the spin element is antisymmetric and contracts with the gradient in the $\upsilon$ slot — and the article states the structure and does not write the index algebra in full, because the full algebra is bookkeeping without physics.
 
 A fluid with a polarization gradient is a fluid whose momentum balance feels the spin, so the flow and the spin cannot be solved separately; the two are one system, and that is the sense in which spin hydrodynamics is not ordinary hydrodynamics with an extra field.
 
@@ -234,7 +234,7 @@ The caution is the article's centre: $\partial p_{\mathrm{th}}/\partial\omega_{k
 | $\tilde S_{\Psi,k}$ | Spin element |
 | $S_{\Psi,k,k\jmath}$ | Components of the spin current, three labels, all low |
 | $S_{\Psi,k\jmath}\equiv S_{\Psi,t,k\jmath}$ | Spin density, the temporal slot of the current; the conjugate of $\omega_{k\jmath}$ |
-| $J_{\Psi,\mathrm{spn},k}$ | Spin diffusion current of the $\lambda$ direction, Fick's law with the coefficient $\kappa_{\mathrm{spn}}$ |
+| $J_{\Psi,\mathrm{spn},k}$ | Spin diffusion current of the $\upsilon$ direction, Fick's law with the coefficient $\kappa_{\mathrm{spn}}$ |
 | $\chi_{\mathrm{spn}}=\partial s_{\mathrm{ent}}/\partial\mu_{\mathrm{spn}}$ | Spin susceptibility, the entropy density's derivative with respect to the spin potential |
 | $D_{\mathrm{spn}}=\kappa_{\mathrm{spn}}/\chi_{\mathrm{spn}}$ | Spin diffusivity, with $\ell_{\mathrm{spn}}=\sqrt{D_{\mathrm{spn}}\tau}$ |
 | $S_{\Psi,k,k\jmath}^{\mathrm{eq}}$ | Its equilibrium value |

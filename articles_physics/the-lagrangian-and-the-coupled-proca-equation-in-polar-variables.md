@@ -112,7 +112,7 @@ What the coupling adds. The connection is central, so it passes through $\tilde 
 The exact statement. For a constant central unit $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$,
 
 $$
-\lambda\tilde A
+\digamma_{\mathrm{gau}}\tilde A
 =\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 

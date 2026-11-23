@@ -215,9 +215,9 @@ In position space the boost is read at the saddle, where the momentum is the cla
 The constant of the kernel's angle is the argument of the Gaussian prefactor. A $d$-dimensional Fresnel integral gives
 
 $$
-\int_{\mathbb{R}^{d}}\exp\Bigl(-i\lambda\sum_{\imath} x_{\imath}^{2}\Bigr)\mathrm{d}^{d}x
-=\Bigl(\frac{\pi}{i\lambda}\Bigr)^{d/2},
-\qquad \lambda=\frac{1}{4\frac{h}{2\pi} T},
+\int_{\mathbb{R}^{d}}\exp\Bigl(-i\digamma_{\mathrm{prm}}\sum_{\imath} x_{\imath}^{2}\Bigr)\mathrm{d}^{d}x
+=\Bigl(\frac{\pi}{i\digamma_{\mathrm{prm}}}\Bigr)^{d/2},
+\qquad \digamma_{\mathrm{prm}}=\frac{1}{4\frac{h}{2\pi} T},
 $$
 
 so each integrated direction contributes a quarter turn backwards and the constant is $\arg(i^{-d/2})=-d\pi/4$. In one dimension the phase is $-\pi/4$, checked numerically on a truncated interval; in four dimensions, which is the worldline's count once the einbein is fixed, the phase is $-\pi$, that is a sign. For the non-relativistic kernel, whose three integrated directions are the spatial ones, the constant is $-3\pi/4$, the value the Schrödinger companion records.

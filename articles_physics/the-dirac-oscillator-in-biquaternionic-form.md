@@ -224,7 +224,7 @@ S^2=\sum_{\imath\in\{x,y,z\}}\bigl(L_{\mathrm{orb},k}\bigr)^2+\sum_{j<k}\bigl[L_
 = \vec L^{\,2}-\frac{h}{2\pi}\,S,
 $$
 
-where $[L_{\mathrm{orb},j},L_{\mathrm{orb},k}]=i\,\frac{h}{2\pi}\,\epsilon_{j\imath l}\,L_{\mathrm{orb},l}$. On a state of orbital number $l$ the operator $S$ therefore takes the two values $\frac{h}{2\pi}\,l$ and $-\frac{h}{2\pi}\,(l+1)$, the two roots of $\lambda^2=\frac{h^{2}}{4\pi^{2}}\,l\,(l+1)-\frac{h}{2\pi}\,\lambda$, and nothing else. The spin–orbit coupling is a two-valued operator, and that is the whole of its spectrum. The identity $S^2=\vec L^{\,2}-\frac{h}{2\pi}\,S$ was checked on generic polynomial states at residual zero.
+where $[L_{\mathrm{orb},j},L_{\mathrm{orb},k}]=i\,\frac{h}{2\pi}\,\epsilon_{j\imath l}\,L_{\mathrm{orb},l}$. On a state of orbital number $l$ the operator $S$ therefore takes the two values $\frac{h}{2\pi}\,l$ and $-\frac{h}{2\pi}\,(l+1)$, the two roots of $\eta^2=\frac{h^{2}}{4\pi^{2}}\,l\,(l+1)-\frac{h}{2\pi}\,\eta$, and nothing else. The spin–orbit coupling is a two-valued operator, and that is the whole of its spectrum. The identity $S^2=\vec L^{\,2}-\frac{h}{2\pi}\,S$ was checked on generic polynomial states at residual zero.
 
 ## The Spectrum
 
