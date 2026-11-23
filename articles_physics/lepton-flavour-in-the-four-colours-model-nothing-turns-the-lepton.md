@@ -1,4 +1,4 @@
-# __The Fourth-Colour Lepton: One Operator, One Unknown, and the Channels That Cannot See It__
+# __Lepton Flavour in the Four-Colours Model: Nothing Turns the Lepton, and One Generation Matrix Decides the Channels__
 
 ## Introduction
 
