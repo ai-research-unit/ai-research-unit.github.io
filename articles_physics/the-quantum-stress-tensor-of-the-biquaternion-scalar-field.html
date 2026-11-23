@@ -264,11 +264,11 @@ $$</p>
 <h3 id="the-divergence-on-a-two-mode-superposition">The divergence on a two-mode superposition</h3>
 <p>The energy law was checked numerically on a superposition of two on-shell modes. Take $c=2$ in the check's own units — no setting of $c$ to unity is used — $2\pi\nu_m=1.3$ in inverse length, and</p>
 <p>$$
-\xi=\cos(\vec\nu_1\cdot\vec r-k'_{1t}r'_t)+0.6\cos(\vec\nu_2\cdot\vec r-k'_{2t}r'_t),
+\xi=\cos(2\pi\vec\nu_1\cdot\vec r-2\pi\nu_{1t}r'_t)+0.6\cos(2\pi\vec\nu_2\cdot\vec r-2\pi\nu'_{2t}r'_t),
 \qquad
 \vec\nu_1=(1.1,0,0),\quad \vec\nu_2=(0,0.9,0),
 $$</p>
-<p>with $k'_{it}=\sqrt{\lvert2\pi\vec\nu_i\rvert^{2}+4\pi^{2}\nu_m^{2}}$, so that both modes are on shell simultaneously and the superposition is a solution. No factor of $c$ enters that dispersion, and the reason is the one the units carry: the temporal coordinate is a length, so $k'_{it}$ is a wave number in inverse length like the spatial ones, and the rest mass enters through $\nu_m=\frac{mc}{h}$, which already holds the $c$. Evaluating $\partial w_{\mathrm{fl}}/\partial r'_t$ and $\vec\nabla_\Phi\cdot\vec S_{\mathrm P}$ by centred differences at $r'_t=0.7$ and $(r_x,r_y,r_z)=(0.3,-0.5,0.2)$, the sum of the two was $-3.7\times10^{-5}$ at step $2.5\times10^{-3}$, $-1.5\times10^{-4}$ at step $5\times10^{-3}$, and $-5.9\times10^{-4}$ at step $10^{-2}$. The residual falls by a factor four at each halving, which is the mark of the second-order truncation of the difference and not of a failed identity. The energy density at the same event was $w_{\mathrm{fl}}=3.374$ and the flux had modulus $\lvert\vec S_{\mathrm P}\rvert=4.458$, so the dominant-energy inequality $w_{\mathrm{fl}}\ge\lvert\vec S_{\mathrm P}\rvert/c$ held with the margin $3.374$ against $2.229$.</p>
+<p>with $\nu'_{it}=\sqrt{\lvert\vec\nu_i\rvert^{2}+\nu_m^{2}}$, so that both modes are on shell simultaneously and the superposition is a solution. No factor of $c$ enters that dispersion, and the reason is the one the units carry: the temporal coordinate is a length, so $k'_{it}$ is a wave number in inverse length like the spatial ones, and the rest mass enters through $\nu_m=\frac{mc}{h}$, which already holds the $c$. Evaluating $\partial w_{\mathrm{fl}}/\partial r'_t$ and $\vec\nabla_\Phi\cdot\vec S_{\mathrm P}$ by centred differences at $r'_t=0.7$ and $(r_x,r_y,r_z)=(0.3,-0.5,0.2)$, the sum of the two was $-3.7\times10^{-5}$ at step $2.5\times10^{-3}$, $-1.5\times10^{-4}$ at step $5\times10^{-3}$, and $-5.9\times10^{-4}$ at step $10^{-2}$. The residual falls by a factor four at each halving, which is the mark of the second-order truncation of the difference and not of a failed identity. The energy density at the same event was $w_{\mathrm{fl}}=3.374$ and the flux had modulus $\lvert\vec S_{\mathrm P}\rvert=4.458$, so the dominant-energy inequality $w_{\mathrm{fl}}\ge\lvert\vec S_{\mathrm P}\rvert/c$ held with the margin $3.374$ against $2.229$.</p>
 <p>The cross terms between the two modes are the content of the check. Each mode alone satisfies the energy law identically, by the computation of §<em>The null case and the cone</em>; the superposition does not, except through the cancellation of the cross terms, and the cancellation is what the residual measures. A check on a single mode would have tested nothing.</p>
 <h3 id="the-quantum-energy-of-a-localised-state">The quantum energy of a localised state</h3>
 <p>The total quantum energy was checked on a Gaussian amplitude in three dimensions. Take $\rho_{\mathrm{num}}=A^{2}\exp(-r^{2}/\sigma^{2})$ with $A=1.3$ and $\sigma=0.8$, and evaluate $w_{\mathrm{qnt}}=-\tfrac12\rho_{\mathrm{num}}[\Box_\Phi u+(\partial u)^{2}]$ with $u=\tfrac12\ln\rho_{\mathrm{num}}$ on a $400^{3}$ grid of extent $8\sigma$, the second derivatives by centred differences and the time derivatives zero. The result was</p>
@@ -440,7 +440,7 @@ $$</p>
 <td>Wave vectors of the two modes of the check</td>
 </tr>
 <tr>
-<td>$k'_{it}=\sqrt{\lvert2\pi\vec\nu_i\rvert^{2}+4\pi^{2}\nu_m^{2}}$</td>
+<td>$\nu'_{it}=\sqrt{\lvert\vec\nu_i\rvert^{2}+\nu_m^{2}}$</td>
 <td>Temporal wave numbers of the two modes; no factor of $c$, since $\nu_m$ carries it</td>
 </tr>
 <tr>

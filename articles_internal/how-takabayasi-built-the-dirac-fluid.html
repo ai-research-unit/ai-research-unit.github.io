@@ -193,7 +193,7 @@ v^\alpha w^\beta
 \right)
 -\eta F_{{\imath}{\jmath}},
 $$</p>
-<p>with $\kappa=\frac{2\pi mc}{h}$ and $\eta=e/(mc^2)$.</p>
+<p>with $\kappa=2\pi\nu_m$ the angular mass wave number, $\nu_m=\frac{mc}{h}$, and $\eta=e/(mc^2)$.</p>
 <p><strong>The condition is derived, not postulated.</strong> It follows from the Dirac equation and the definitions of the bilinears. The paper derives it in the section on the kinematics of the $k$ vector. The derivation is algebraic once the Dirac equation is used.</p>
 <p><strong>It is gauge-independent.</strong> The vector potential $A_{\imath}$ does not appear. Only the field strength $F_{{\imath}{\jmath}}$ appears. A gauge transformation changes the phase of $\psi$ and leaves the bilinears and $k_{\imath}$ invariant.</p>
 <p><strong>It is the integrability condition for the phase.</strong> If $k_{\imath}$ were a pure gradient, its curl would vanish. The condition says the curl is a specific functional of the velocity and spin gradients, and it is not zero in general. The gradient part of $k_{\imath}$ remains free, and that free part is the phase. The condition is the local replacement for "$k_{\imath}$ is a gradient" when the phase is not globally defined.</p>
@@ -211,14 +211,14 @@ $$</p>
 <p>$$
 w^{\imath}\partial_{\imath}\theta
 +2\kappa v^{\imath} k_{\imath}
-+i\epsilon_{{\imath}{\jmath}\kappa\lambda}v^{\imath} w^{\jmath}\partial^\kappa v^\lambda
++i\epsilon_{{\imath}{\jmath}\sigma\lambda}v^{\imath} w^{\jmath}\partial^\sigma v^\lambda
 =
 -2\kappa\cos\theta,
 $$</p>
 <p>$$
 v^{\imath}\partial_{\imath}\theta
 +2\kappa w^{\imath} k_{\imath}
-+i\epsilon_{{\imath}{\jmath}\kappa\lambda}v^{\imath} w^{\jmath}\partial^\kappa w^\lambda
++i\epsilon_{{\imath}{\jmath}\sigma\lambda}v^{\imath} w^{\jmath}\partial^\sigma w^\lambda
 =
 0,
 $$</p>
@@ -228,7 +228,7 @@ v^{\imath}\partial_{\jmath}(\rho v_{\imath})
 =
 -\partial_{\jmath}\rho
 -\rho v_{\jmath} w^{\imath} z_{\imath}
-+2i\kappa\rho\epsilon_{{\jmath}{\imath}\kappa\lambda}v^{\imath} w^\kappa k^\lambda,
++2i\kappa\rho\epsilon_{{\jmath}{\imath}\sigma\lambda}v^{\imath} w^\sigma k^\lambda,
 $$</p>
 <p>$$
 v^{\imath}\partial_{\imath} w_{\jmath}
@@ -590,7 +590,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\kappa$</td>
-<td>$\frac{2\pi mc}{h}$</td>
+<td>$2\pi\nu_m$, the angular mass wave number</td>
 </tr>
 <tr>
 <td>$\eta$</td>

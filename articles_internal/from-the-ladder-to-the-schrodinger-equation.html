@@ -72,7 +72,7 @@
         <h1 id="from-the-ladder-to-the-schrodinger-equation"><strong>From the Ladder to the Schrödinger Equation</strong></h1>
 <p><strong>What this article does.</strong> It starts from one row of the ladder,</p>
 <p>$$
-\tilde K_{\Phi,1}=ik_m\left(1+\frac{\beta^{2}}{2}\right)e_{t}+k_m\vec\beta ,
+\tilde\Upsilon_{\Phi,1}=i\nu_m\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\nu_m\vec\beta ,
 $$</p>
 <p>and reaches the free Schrödinger equation in five steps. Nothing else is derived. The errors, the tables and the comparisons are in the appendices, and none of them is needed for the path.</p>
 <p><strong>The result.</strong></p>
@@ -82,98 +82,99 @@ $$</p>
 <h2 id="1-the-rung-carries-two-numbers">1. The Rung Carries Two Numbers</h2>
 <p>Name the two coefficients of the rung:</p>
 <p>$$
-\tilde K_{\Phi,1}=i\left(k_m+\Omega\right)e_{t}+\vec k ,
+\tilde\Upsilon_{\Phi,1}=i\left(\nu_m+\Omega\right)e_{t}+\vec\nu_\Phi ,
 \qquad
-\Omega:=\frac{k_m\beta^{2}}{2},
+\Omega:=\frac{\nu_m\beta^{2}}{2},
 \qquad
-\vec k:=k_m\vec\beta .
+\vec\nu_\Phi:=\nu_m\vec\beta .
 $$</p>
 <p>Then, and this is algebra on the rung and not an expansion,</p>
 <p>$$
-\boxed{\;2k_m\,\Omega=\lvert\vec k\rvert^{2}\;}
+\boxed{\;2\nu_m\,\Omega=\nu_\Phi^{2}\;}
 $$</p>
-<p>because $\lvert\vec k\rvert^{2}=k_m^{2}\beta^{2}$ and $2k_m\Omega=k_m^{2}\beta^{2}$.</p>
-<p><strong>Why this is the whole input.</strong> The energy above rest is $\frac{h}{2\pi} c\,\Omega$; the momentum is $\frac{h}{2\pi}\,\vec k$; the box says the first is the second squared over $2m$. Everything below is the conversion of that one relation into a differential equation, and the box enters once: in step 4, where it supplies the eigenvalue of the Laplacian.</p>
+<p>because $\nu_\Phi^{2}=\nu_m^{2}\beta^{2}$ and $2\nu_m\Omega=\nu_m^{2}\beta^{2}$.</p>
+<p>The energy above rest is $h\,c\,\Omega$; the momentum is $h\,\vec\nu_\Phi$; the box says the first is the second squared over $2m$. Everything below is the conversion of that one relation into a differential equation, and the box enters once: in step 4, where it supplies the eigenvalue of the Laplacian.</p>
 <h2 id="2-the-phase-is-one-scalar-part">2. The Phase Is One Scalar Part</h2>
-<p>The phase of a plane wave is the scalar part of $\tilde K\tilde R^{\natural}$, with $\tilde R_{\Phi}=i\,r'_{t}e_{t}+\vec r$ and $r'_{t}=c\,t$. On the rung,</p>
+<p>The phase of a plane wave is $2\pi$ times the scalar part of $\tilde\Upsilon\tilde R^{\natural}$, with $\tilde R_{\Phi}=i\,r'_{t}e_{t}+\vec r$ and $r'_{t}=c\,t$. On the rung,</p>
 <p>$$
-\tilde K_{\Phi,1}\tilde R_{\Phi}^{\natural}
-=\left(i\left(k_m+\Omega\right)e_{t}+\vec k\right)\left(i\,r'_{t}e_{t}-\vec r\right),
+\tilde\Upsilon_{\Phi,1}\tilde R_{\Phi}^{\natural}
+=\left(i\left(\nu_m+\Omega\right)e_{t}+\vec\nu_\Phi\right)\left(i\,r'_{t}e_{t}-\vec r\right),
 $$</p>
-<p>whose scalar part is</p>
+<p>whose scalar part is $\vec\nu_\Phi\cdot\vec r-\left(\nu_m+\Omega\right)r'_{t}$, that is, $\phi/2\pi$; the phase itself is</p>
 <p>$$
-\phi=\vec k\cdot\vec r-\left(k_m+\Omega\right)r'_{t}.
+\phi=2\pi\left[\vec\nu_\Phi\cdot\vec r-\left(\nu_m+\Omega\right)r'_{t}\right].
 $$</p>
-<p>The other parts — the imaginary vector $i\left(r'_{t}\vec k-\left(k_m+\Omega\right)\vec r\right)$ and the real vector $-\vec k\times\vec r$ — have zero scalar part and are dropped by the projection, not by an approximation.</p>
+<p>The other parts — the imaginary vector $i\left(r'_{t}\vec\nu_\Phi-\left(\nu_m+\Omega\right)\vec r\right)$ and the real vector $-\vec\nu_\Phi\times\vec r$ — have zero scalar part and are dropped by the projection, not by an approximation.</p>
 <h2 id="3-the-rest-clock-divides-out">3. The Rest Clock Divides Out</h2>
 <p>The exponent separates into two factors,</p>
 <p>$$
 e^{i\phi}
-=\underbrace{e^{-ik_m r'_{t}}}_{f}\;
-\underbrace{e^{i\vec k\cdot\vec r-i\Omega r'_{t}}}_{\chi}.
+=\underbrace{e^{-2\pi i\nu_m r'_{t}}}_{f}\;
+\underbrace{e^{2\pi i\left(\vec\nu_\Phi\cdot\vec r-\Omega r'_{t}\right)}}_{\chi}.
 $$</p>
-<p><strong>The factor $f$.</strong> It is the $\vec k=0$ member of the family: the rest frame. It has modulus one, period $2\pi/k_m$ in $r'_{t}$, and no momentum. It is a clock that runs in every state alike, so it belongs to the particle and not to the motion.</p>
+<p>It has modulus one, period $1/\nu_m$ in $r'_{t}$, and no momentum. It is a clock that runs in every state alike, so it belongs to the particle and not to the motion.</p>
 <p><strong>Divide it out.</strong> $\chi$ is the envelope. Differentiating the exponential,</p>
 <p>$$
-\frac{\partial\chi}{\partial r'_{t}}=-i\Omega\,\chi
+\frac{\partial\chi}{\partial r'_{t}}=-2\pi i\Omega\,\chi
 \qquad\Longleftrightarrow\qquad
-i\,\frac{\partial\chi}{\partial r'_{t}}=\Omega\,\chi .
+i\,\frac{\partial\chi}{\partial r'_{t}}=2\pi\Omega\,\chi .
 $$</p>
-<p>That is the whole dynamics of the envelope, and it is exact: no term was dropped, because $\Omega$ was defined as $k'_{t,1}-k_m$ and not as a series.</p>
+<p>That is the whole dynamics of the envelope, and it is exact: no term was dropped, because $\Omega$ was defined as $\nu'_{t,1}-\nu_m$ and not as a series.</p>
 <h2 id="4-the-number-becomes-an-operator">4. The Number Becomes an Operator</h2>
-<p>A plane wave has $\lvert\vec k\rvert^{2}=2k_m\Omega$, a number. On the mode $e^{i\vec k\cdot\vec r}$,</p>
+<p>A plane wave has $\nu_\Phi^{2}=2\nu_m\Omega$, a number. On the mode $e^{2\pi i\vec\nu_\Phi\cdot\vec r}$,</p>
 <p>$$
--\Delta\,e^{i\vec k\cdot\vec r}=\lvert\vec k\rvert^{2}e^{i\vec k\cdot\vec r},
+-\Delta\,e^{2\pi i\vec\nu_\Phi\cdot\vec r}=4\pi^{2}\nu_\Phi^{2}e^{2\pi i\vec\nu_\Phi\cdot\vec r},
 $$</p>
 <p>so on any superposition of such modes</p>
 <p>$$
--\Delta\chi=\lvert\vec k\rvert^{2}\chi=2k_m\,\Omega\,\chi .
+-\Delta\chi=4\pi^{2}\nu_\Phi^{2}\chi=8\pi^{2}\nu_m\,\Omega\,\chi .
 $$</p>
-<p><strong>Why the step is exact.</strong> The operator $-\Delta/\left(2k_m\right)$ has the eigenvalue $\lvert\vec k\rvert^{2}/2k_m$, which the box says is $\Omega$. A number that is a polynomial in $\vec k$ of degree two is exactly the symbol of a second-order differential operator; no expansion and no remainder enters. This is the second of the two services that the truncation performs.</p>
+<p><strong>Why the step is exact.</strong> The operator $-\Delta/\left(4\pi\nu_m\right)$ has the eigenvalue $4\pi^{2}\nu_\Phi^{2}/\left(4\pi\nu_m\right)=2\pi\Omega$, which the box supplies directly: $\nu_\Phi^{2}=2\nu_m\Omega$ gives $4\pi^{2}\nu_\Phi^{2}/(4\pi\nu_m)=2\pi\Omega$. A number that is a polynomial in $\vec\nu_\Phi$ of degree two is exactly the symbol of a second-order differential operator; no expansion and no remainder enters. This is the second of the two services that the truncation performs.</p>
 <h2 id="5-the-equation">5. The Equation</h2>
-<p>Combine steps 3 and 4 — replace $\Omega\chi$ by $-\Delta\chi/\left(2k_m\right)$ in the right-hand side of $i\,\partial_{r'_{t}}\chi=\Omega\chi$:</p>
+<p>Combine steps 3 and 4 — replace $\Omega\chi$ by $-\Delta\chi/\left(8\pi^{2}\nu_m\right)$ in the right-hand side of $i\,\partial_{r'_{t}}\chi=2\pi\Omega\chi$:</p>
 <p>$$
-i\,\frac{\partial\chi}{\partial r'_{t}}=-\frac{1}{2k_m}\,\Delta\chi .
+i\,\frac{\partial\chi}{\partial r'_{t}}=-\frac{1}{4\pi\nu_m}\,\Delta\chi .
 $$</p>
-<p>Multiply by $\frac{h}{2\pi} c$ and use $r'_{t}=c\,t$ and $k_m=\frac{2\pi mc}{h}$:</p>
+<p>Multiply by $\frac{h}{2\pi} c$ and use $r'_{t}=c\,t$ and $\nu_m=\frac{mc}{h}$:</p>
 <p>$$
 i \frac{h}{2\pi}\,\frac{\partial\chi}{\partial t}
-=-\frac{h c}{4\pi k_m}\,\Delta\chi
+=-\frac{h c}{8\pi^{2}\nu_m}\,\Delta\chi
 =-\frac{h^{2}}{8\pi^{2}m}\,\Delta\chi .
 $$</p>
-<p><strong>The free Schrödinger equation.</strong> The two constants are the ones the framework already had: $m$ entered once, in $k_m=\frac{2\pi mc}{h}$, and $\frac{h}{2\pi}$ entered with it.</p>
+<p><strong>The free Schrödinger equation.</strong> The two constants are the ones the framework already had: $m$ entered once, in $\nu_m=\frac{mc}{h}$, and $h$ entered with it.</p>
 <p><strong>Dimensional check.</strong> $\frac{h}{2\pi}\,\partial_t$ is an energy; $\frac{h^{2}}{8\pi^{2}m}\Delta$ is $\frac{\left(\mathrm{J\,s}\right)^{2}}{\mathrm{kg}\,\mathrm{m}^{2}}=\mathrm{J}$.</p>
 <h2 id="6-what-was-approximated">6. What Was Approximated</h2>
-<p><strong>The rung, against the exact element.</strong> The temporal slot went from $k_m\gamma=k_m\left(1+\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\cdots\right)$ to $k_m\left(1+\frac{\beta^{2}}{2}\right)$: the term $\frac{3}{8}k_m\beta^{4}$ was dropped. The vector slot went from $k_m\gamma\vec\beta$ to $k_m\vec\beta$: the term $\frac{1}{2}k_m\beta^{2}\vec\beta$ was dropped. So the rung keeps the temporal slot to order $\beta^{2}$ and the vector slot to order $\beta$, which is the order $\beta^{2}$ in the element.</p>
-<p><strong>The same act on the dispersion relation.</strong> The exact element satisfies $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$. Writing $k'_{t}=k_m+\Omega$ and expanding the square,</p>
+<p><strong>The rung, against the exact element.</strong> The temporal slot went from $\nu_m\gamma=\nu_m\left(1+\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\cdots\right)$ to $\nu_m\left(1+\frac{\beta^{2}}{2}\right)$: the term $\frac{3}{8}\nu_m\beta^{4}$ was dropped. The vector slot went from $\nu_m\gamma\vec\beta$ to $\nu_m\vec\beta$: the term $\frac{1}{2}\nu_m\beta^{2}\vec\beta$ was dropped. So the rung keeps the temporal slot to order $\beta^{2}$ and the vector slot to order $\beta$, which is the order $\beta^{2}$ in the element.</p>
+<p><strong>The same act on the dispersion relation.</strong> The exact element satisfies $\nu_{t}^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$. Writing $\nu'_{t}=\nu_m+\Omega$ and expanding the square,</p>
 <p>$$
-\Omega^{2}+2k_m\Omega=k_{\Phi}^{2},
+\Omega^{2}+2\nu_m\Omega=\nu_{\Phi}^{2},
 $$</p>
-<p>which is exact. Drop $\Omega^{2}$ and it becomes $2k_m\Omega=k_{\Phi}^{2}$, which is the box of step 1. <strong>So "keep the temporal slot to order $\beta^{2}$" and "drop $\Omega^{2}$" are one statement</strong>, and it is the only approximation in the article.</p>
+<p>which is exact. Drop $\Omega^{2}$ and it becomes $2\nu_m\Omega=\nu_{\Phi}^{2}$, which is the box of step 1. <strong>So "keep the temporal slot to order $\beta^{2}$" and "drop $\Omega^{2}$" are one statement</strong>, and it is the only approximation in the article.</p>
 <p><strong>What that term was.</strong> $\Omega^{2}$ is what made the relation quadratic, and a quadratic has two roots,</p>
 <p>$$
-\Omega_{\pm}=-k_m\pm\sqrt{k_{\Phi}^{2}+k_m^{2}} .
+\Omega_{\pm}=-\nu_m\pm\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}} .
 $$</p>
-<p>The dropped term is therefore the term that created the second root, at $\Omega\approx-2k_m$, and dropping it deletes that root. The Schrödinger equation is not the second branch approximated; it is the slow branch alone, with the branch at $-2k_m$ removed. <strong>Klein–Gordon, the relation with $\Omega^{2}$ kept, is exact at every speed.</strong></p>
-<p><strong>The size of the deletion.</strong> On the slow branch, where $\Omega\ll k_m$, the ratio of the dropped term to the retained one is $\Omega/\left(2k_m\right)=\frac{1}{4}\beta^{2}$, which is small. On the fast branch it is $\approx-1$: there the two terms nearly cancel, and dropping one is not an approximation at all. The equation is a projection onto the slow branch, and it is meaningless for a state with an antiparticle component.</p>
+<p>The dropped term is therefore the term that created the second root, at $\Omega\approx-2\nu_m$, and dropping it deletes that root. The Schrödinger equation is not the second branch approximated; it is the slow branch alone, with the branch at $-2\nu_m$ removed. <strong>Klein–Gordon, the relation with $\Omega^{2}$ kept, is exact at every speed.</strong></p>
+<p><strong>The size of the deletion.</strong> On the slow branch, where $\Omega\ll\nu_m$, the ratio of the dropped term to the retained one is $\Omega/\left(2\nu_m\right)=\frac{1}{4}\beta^{2}$, which is small. On the fast branch it is $\approx-1$: there the two terms nearly cancel, and dropping one is not an approximation at all. The equation is a projection onto the slow branch, and it is meaningless for a state with an antiparticle component.</p>
 <h2 id="the-path-in-five-lines">The Path in Five Lines</h2>
 <ol>
-<li>$\tilde K_{\Phi,1}=i\left(k_m+\Omega\right)e_t+\vec k$ with $\Omega=k_m\beta^{2}/2$ and $\vec k=k_m\vec\beta$.</li>
-<li>$2k_m\Omega=\lvert\vec k\rvert^{2}$ — algebra on the rung.</li>
-<li>$\phi=\vec k\cdot\vec r-\left(k_m+\Omega\right)r'_{t}$, and $\phi$ splits into rest clock times envelope.</li>
-<li>$i\,\partial_{r'_{t}}\chi=\Omega\chi$ and $-\Delta\chi=\lvert\vec k\rvert^{2}\chi=2k_m\Omega\chi$.</li>
+<li>$\tilde\Upsilon_{\Phi,1}=i\left(\nu_m+\Omega\right)e_t+\vec\nu_\Phi$ with $\Omega=\nu_m\beta^{2}/2$ and $\vec\nu_\Phi=\nu_m\vec\beta$.</li>
+<li>$2\nu_m\Omega=\nu_\Phi^{2}$ — algebra on the rung.</li>
+<li>$\phi=2\pi\left[\vec\nu_\Phi\cdot\vec r-\left(\nu_m+\Omega\right)r'_{t}\right]$, and $\phi$ splits into rest clock times envelope.</li>
+<li>$i\,\partial_{r'_{t}}\chi=2\pi\Omega\chi$ and $-\Delta\chi=4\pi^{2}\nu_\Phi^{2}\chi=8\pi^{2}\nu_m\Omega\chi$.</li>
 <li>Eliminate $\Omega$ and multiply by $\frac{h}{2\pi} c$: $i \frac{h}{2\pi}\,\partial_t\chi=-\frac{h^{2}}{8\pi^{2}m}\Delta\chi$.</li>
 </ol>
 <p><strong>One approximation, and it is already in the rung.</strong> Everything after step 1 is algebra, one projection, and two exact identifications.</p>
 <h2 id="appendix-a-the-error-in-each-slot">Appendix A — The Error in Each Slot</h2>
 <p>The two truncations have different sizes, and both are known in closed form. Comparing each slot with the exact one,</p>
 <p>$$
-1-\frac{k'_{t,1}-k_m}{k'_{t}-k_m}
+1-\frac{\nu'_{t,1}-\nu_m}{\nu'_{t}-\nu_m}
 =1-\frac{\gamma+1}{2\gamma^{2}}
 =\frac{3}{4}\beta^{2}+O\left(\beta^{4}\right),
 \qquad
-1-\frac{\lvert\vec k_{\Phi,1}\rvert}{\lvert\vec k_{\Phi}\rvert}
+1-\frac{\nu_{\Phi,1}}{\nu_{\Phi}}
 =1-\frac{1}{\gamma}
+=\frac{1}{2}\beta^{2}+O\left(\beta^{4}\right).
 =\frac{1}{2}\beta^{2}+O\left(\beta^{4}\right).
 $$</p>
 <p>The first is the error in the energy, and it is the one that accumulates as a phase. The second is the error in the momentum of a given state.</p>
@@ -213,17 +214,17 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The third column is $\Omega/\left(2k_m\right)=\left(\gamma-1\right)/2$, the size of the dropped term relative to the retained one on the slow branch. At $\beta=0.9$ it is no longer a small correction, and the equation is not usable there.</p>
+<p>The third column is $\Omega/\left(2\nu_m\right)=\left(\gamma-1\right)/2$, the size of the dropped term relative to the retained one on the slow branch. At $\beta=0.9$ it is no longer a small correction, and the equation is not usable there.</p>
 <p><strong>The three errors are not interchangeable.</strong> The temporal-slot error $\frac{3}{4}\beta^{2}$ is the phase drift, the vector-slot error $\frac{1}{2}\beta^{2}$ is the momentum error, and the third is the error of the differential equation itself. A statement about "the error of the approximation" must name which.</p>
-<p><strong>The packet velocity, which is a fourth number.</strong> The group velocity is $c\,\partial\Omega/\partial k_{\Phi}$. Reading the exact and the truncated dispersion at the same exact wave number $k_{\Phi}=\gamma k_m\beta$ gives</p>
+<p><strong>The packet velocity, which is a fourth number.</strong> The group velocity is $c\,\partial\Omega/\partial\nu_{\Phi}$. Reading the exact and the truncated dispersion at the same exact wave number $\nu_{\Phi}=\gamma\nu_m\beta$ gives</p>
 <p>$$
-\frac{v_{g,1}}{v_{g}}=\frac{\sqrt{k_{\Phi}^{2}+k_m^{2}}}{k_m}=\gamma ,
+\frac{v_{g,1}}{v_{g}}=\frac{\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}}{\nu_m}=\gamma ,
 $$</p>
 <p>so the truncated packet moves too fast by the factor $\gamma$, that is by $\gamma-1$, while its phase drifts by $\frac{3}{4}\beta^{2}$. The ratio $3:2$ is at leading order only.</p>
 <h2 id="appendix-b-kleingordon-is-exact">Appendix B — Klein–Gordon Is Exact</h2>
-<p>On the envelope, $\Omega\chi=i\,\partial_{r'_{t}}\chi$ and $\Omega^{2}\chi=-\partial^{2}_{r'_{t}}\chi$, so the exact quadratic becomes</p>
+<p>On the envelope, $2\pi\Omega\chi=i\,\partial_{r'_{t}}\chi$ and $4\pi^{2}\Omega^{2}\chi=-\partial^{2}_{r'_{t}}\chi$, so the exact quadratic becomes</p>
 <p>$$
-\partial^{2}_{r'_{t}}\chi-2ik_m\,\partial_{r'_{t}}\chi-\Delta\chi=0 ,
+\partial^{2}_{r'_{t}}\chi-4\pi i\nu_m\,\partial_{r'_{t}}\chi-\Delta\chi=0 ,
 $$</p>
 <p>which is the Klein–Gordon equation with the rest phase divided out. It holds at every speed, it has the two roots $\Omega_{\pm}$, and its residual on a plane wave was checked numerically at $2\times10^{-18}$.</p>
 <div class="table-scroll"><table>
@@ -237,22 +238,22 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\partial^{2}\chi-2ik_m\partial\chi-\Delta\chi=0$</td>
+<td>$\partial^{2}\chi-4\pi i\nu_m\partial\chi-\Delta\chi=0$</td>
 <td>none</td>
-<td>$\Omega_{\pm}=-k_m\pm\sqrt{k_{\Phi}^{2}+k_m^{2}}$</td>
+<td>$\Omega_{\pm}=-\nu_m\pm\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}$</td>
 <td>second</td>
 </tr>
 <tr>
-<td>$2ik_m\partial\chi+\Delta\chi=0$</td>
+<td>$4\pi i\nu_m\partial\chi+\Delta\chi=0$</td>
 <td>$\partial^{2}\chi$ dropped</td>
-<td>$\Omega=k_{\Phi}^{2}/2k_m$</td>
+<td>$\Omega=\nu_{\Phi}^{2}/2\nu_m$</td>
 <td>first</td>
 </tr>
 </tbody>
 </table></div>
 <p>The two are one truncation apart, and the truncation is the removal of a branch. Klein–Gordon is not an approximation of anything, and it is not "the next rung" of the ladder: it is the exact equation, of which Schrödinger is the slow-branch projection.</p>
 <h2 id="appendix-c-numbers">Appendix C — Numbers</h2>
-<p><strong>The electron</strong>, $k_{m_e}=2.5896\times10^{12}\ \mathrm{m^{-1}}$. The phase error is the temporal-slot error, integrated:</p>
+<p><strong>The electron</strong>, $\nu_{m_e}=4.1215\times10^{11}\ \mathrm{m^{-1}}$. The phase error is the temporal-slot error, integrated:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -294,13 +295,13 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The rate is $\Omega_{\mathrm{trunc}}-\Omega=-\frac{3}{8}k_m\beta^{4}+O\left(\beta^{6}\right)$. At the ground-state speed of hydrogen the drift over a Bohr radius is $1.5\times10^{-7}$ rad; the non-relativistic description of an atom is good because the electron is slow, not because the equation is accurate.</p>
+<p>The rate is $\Omega_{\mathrm{trunc}}-\Omega=-\frac{3}{8}\nu_m\beta^{4}+O\left(\beta^{6}\right)$. At the ground-state speed of hydrogen the drift over a Bohr radius is $1.5\times10^{-7}$ rad; the non-relativistic description of an atom is good because the electron is slow, not because the equation is accurate.</p>
 <p><strong>The identities</strong>, checked at one hundred speeds from $\beta=10^{-2}$ to $0.99$: the box of step 1 to $1.8\times10^{-15}$; the two exact ratios of Appendix A to $9.9\times10^{-13}$; the truncated norm of the rung to $3.8\times10^{-16}$; the Klein–Gordon residual of Appendix B to $2\times10^{-18}$.</p>
 <h2 id="appendix-d-four-ways-to-get-it-wrong">Appendix D — Four Ways to Get It Wrong</h2>
 <p><strong>1. Treating Klein–Gordon as one more term.</strong> It is the exact equation, with zero truncation and both roots. Writing it as a rung of the ladder makes it look like an approximation of something.</p>
 <p><strong>2. Cutting the exponential instead of its generator.</strong> $\lvert 1-i\Omega\,\delta r'_{t}\rvert^{2}=1+\Omega^{2}\left(\delta r'_{t}\right)^{2}\neq1$: a cut at a finite step destroys unitarity. The correct statement is about the infinitesimal step, and the ladder of step 1 truncates the generator, so the evolution stays unitary with a slightly wrong frequency.</p>
 <p><strong>3. Keeping $\gamma$ in the vector slot.</strong> This gives the closer energy $E=mc^{2}+\lvert\vec p\rvert^{2}/2m$ with $\lvert\vec p\rvert=\gamma m\lvert\vec v\rvert$, and it destroys the box of step 1: the symbol is then not a polynomial, step 4 fails, and no differential equation of finite order follows.</p>
-<p><strong>4. Expanding $\Omega$ in the wrong variable.</strong> With $r:=k_{\Phi}/k_m$, the expansion is $\Omega=k_m\left(\frac{r^{2}}{2}-\frac{r^{4}}{8}+\cdots\right)$, not $\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}$; the fourth-order coefficients have opposite signs because $\beta$ and $r$ differ by $\gamma$. The leading $\frac{1}{2}$ is the same in both, which is why the mistake survives a check at first order.</p>
+<p><strong>4. Expanding $\Omega$ in the wrong variable.</strong> With $r:=\nu_{\Phi}/\nu_m$, the expansion is $\Omega=\nu_m\left(\frac{r^{2}}{2}-\frac{r^{4}}{8}+\cdots\right)$, not $\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}$; the fourth-order coefficients have opposite signs because $\beta$ and $r$ differ by $\gamma$. The leading $\frac{1}{2}$ is the same in both, which is why the mistake survives a check at first order.</p>
 <h2 id="appendix-e-what-is-not-done">Appendix E — What Is Not Done</h2>
 <p><strong>Spin.</strong> The element has four real coefficients and the equation is scalar. A two-component structure needs the spinor square root of the wave operator, which is a separate construction; the corpus's Foldy–Wouthuysen article shows that the spin terms come from the odd part of the Hamiltonian, which a scalar dispersion relation does not have.</p>
 <p><strong>The potential.</strong> A gauge field enters by minimal substitution in the gradient, and the symbol is then position dependent and not a polynomial.</p>
@@ -320,27 +321,27 @@ $$</p>
 <td>Four-velocity, in $\mathbb{B}_{\Phi}$; norm $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$</td>
 </tr>
 <tr>
-<td>$\tilde K_{\Phi}=\frac{k_m}{c}\tilde V_{\Phi}=ik'_{t}e_{t}+\vec k_{\Phi}$</td>
-<td>Four-wavenumber; one multiplication from the four-velocity</td>
+<td>$\tilde\Upsilon_{\Phi}=\frac{1}{h}\tilde P_{\Phi}=i\nu'_{t}e_{t}+\vec\nu_{\Phi}$</td>
+<td>Four-wavenumber; the momentum over $h$</td>
 </tr>
 <tr>
-<td>$k_m=\frac{2\pi mc}{h}$</td>
-<td>Mass wave number; the scale that carries $m$ and $\frac{h}{2\pi}$</td>
+<td>$\nu_m=\frac{mc}{h}$</td>
+<td>Mass wave number, $1/\lambda_C$; the scale that carries $m$</td>
 </tr>
 <tr>
-<td>$\tilde K_{\Phi,1}=i\left(k_m+\Omega\right)e_{t}+\vec k$</td>
+<td>$\tilde\Upsilon_{\Phi,1}=i\left(\nu_m+\Omega\right)e_{t}+\vec\nu_\Phi$</td>
 <td>The rung: temporal slot to order $\beta^{2}$, vector slot to order $\beta$</td>
 </tr>
 <tr>
-<td>$\Omega=k_m\beta^{2}/2$</td>
-<td>Excess energy wave number; the kinetic energy over $\frac{h}{2\pi} c$</td>
+<td>$\Omega=\nu_m\beta^{2}/2$</td>
+<td>Excess wave number; the kinetic energy over $h\,c$</td>
 </tr>
 <tr>
-<td>$\vec k=k_m\vec\beta$, $\beta=\lvert\vec v\rvert/c$</td>
+<td>$\vec\nu_\Phi=\nu_m\vec\beta$, $\beta=\lvert\vec v\rvert/c$</td>
 <td>Momentum wave number of the rung</td>
 </tr>
 <tr>
-<td>$2k_m\Omega=\lvert\vec k\rvert^{2}$</td>
+<td>$2\nu_m\Omega=\nu_\Phi^{2}$</td>
 <td>The box; algebra on the rung, used twice</td>
 </tr>
 <tr>
@@ -348,23 +349,23 @@ $$</p>
 <td>Four-position; material time</td>
 </tr>
 <tr>
-<td>$\phi=\vec k\cdot\vec r-\left(k_m+\Omega\right)r'_{t}$</td>
-<td>The phase; scalar part of $\tilde K\tilde R^{\natural}$</td>
+<td>$\phi=2\pi\left[\vec\nu_\Phi\cdot\vec r-\left(\nu_m+\Omega\right)r'_{t}\right]$</td>
+<td>The phase in radians; $2\pi$ times the scalar part of $\tilde\Upsilon\tilde R^{\natural}$</td>
 </tr>
 <tr>
-<td>$f=e^{-ik_m r'_{t}}$</td>
-<td>Rest clock; the $\vec k=0$ solution; modulus one</td>
+<td>$f=e^{-2\pi i\nu_m r'_{t}}$</td>
+<td>Rest clock; the $\vec\nu_\Phi=0$ solution; modulus one</td>
 </tr>
 <tr>
-<td>$\chi=e^{i\vec k\cdot\vec r-i\Omega r'_{t}}$</td>
+<td>$\chi=e^{2\pi i\left(\vec\nu_\Phi\cdot\vec r-\Omega r'_{t}\right)}$</td>
 <td>Envelope; the object that obeys the wave equation</td>
 </tr>
 <tr>
-<td>$\Omega^{2}+2k_m\Omega=k_{\Phi}^{2}$</td>
+<td>$\Omega^{2}+2\nu_m\Omega=\nu_{\Phi}^{2}$</td>
 <td>The exact quadratic; two roots; Klein–Gordon</td>
 </tr>
 <tr>
-<td>$\Omega_{\pm}=-k_m\pm\sqrt{k_{\Phi}^{2}+k_m^{2}}$</td>
+<td>$\Omega_{\pm}=-\nu_m\pm\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}$</td>
 <td>Its roots; the second is the deleted branch</td>
 </tr>
 </tbody>

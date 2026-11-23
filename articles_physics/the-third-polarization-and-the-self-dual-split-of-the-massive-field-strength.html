@@ -88,20 +88,20 @@ $$</p>
 <p>$$
 \tilde A_\Phi=\Bigl(i\,a'_t\,e_t+\vec A_0\Bigr)\cos\theta_{\mathrm{pwp}},
 \qquad
-\theta_{\mathrm{pwp}}=k'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r,
+\theta_{\mathrm{pwp}}=2\pi\nu'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r,
 \qquad
-a'_t=\frac{2\pi\vec\nu_\Phi\cdot\vec A_0}{k'_t},
+a'_t=\frac{\vec\nu_\Phi\cdot\vec A_0}{\nu'_t},
 $$</p>
-<p>with the dispersion relation $k'^2_t=\lvert2\pi\vec\nu_\Phi\rvert^{2}+4\pi^{2}\nu_m^2$. The vector amplitude $\vec A_0$ has three real components, and the scalar amplitude is determined by them. So the solution space at a fixed wavevector is three-dimensional, and the three directions are the three polarizations. In frequency units, $\omega=ck'_t$ and the dispersion relation is $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2\,4\pi^{2}\nu_m^2$.</p>
+<p>with the dispersion relation $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$. The vector amplitude $\vec A_0$ has three real components, and the scalar amplitude is determined by them. So the solution space at a fixed wavevector is three-dimensional, and the three directions are the three polarizations. In frequency units, $\omega=2\pi c\nu'_t$ and the dispersion relation is $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2\,4\pi^{2}\nu_m^2$.</p>
 <p><strong>The two transverse states and the longitudinal one.</strong> Choose the circular basis of the plane transverse to $\hat \nu_{\Phi}$,</p>
 <p>$$
 \varepsilon_{\mathrm{fop},\pm}=\frac{\hat e_1\pm i\hat e_2}{\sqrt2},
 \qquad
-\hat 2\pi\nu_{\Phi}\times\varepsilon_{\mathrm{fop},\pm}=\mp i\,\varepsilon_{\mathrm{fop},\pm},
+\hat\nu_{\Phi}\times\varepsilon_{\mathrm{fop},\pm}=\mp i\,\varepsilon_{\mathrm{fop},\pm},
 $$</p>
 <p>with $\hat e_1,\hat e_2$ orthonormal and both orthogonal to $\hat \nu_{\Phi}$. These two are the helicity eigenstates: a rotation about $\hat \nu_{\Phi}$ by an angle multiplies them by $e^{\mp i\omicron_{\mathrm{pot}}}$. The third direction is $\hat \nu_{\Phi}$ itself, and it is the longitudinal state, with helicity zero. In the circular basis every vector amplitude decomposes as</p>
 <p>$$
-\vec A_0=A_+\,\varepsilon_{\mathrm{fop},+}+A_-\,\varepsilon_{\mathrm{fop},-}+A_L\,\hat 2\pi\nu_{\Phi} ,
+\vec A_0=A_+\,\varepsilon_{\mathrm{fop},+}+A_-\,\varepsilon_{\mathrm{fop},-}+A_L\,\hat\nu_{\Phi} ,
 $$</p>
 <p>and all three coefficients are free: this is the whole difference from the massless case, where the Lorenz condition degenerates into the statement $\vec\nu_\Phi\cdot\vec A_0=0$ and removes $A_L$.</p>
 <p><strong>The fields of the three states.</strong> With $\vec E=-\vec\nabla_\Phi a'_t-\partial_{r'_t}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$, and with the Lorenz condition imposed, the transverse amplitudes give</p>
@@ -112,7 +112,7 @@ c\vec B=\mp\,i\,ck_\Phi A_\pm\,\varepsilon_{\mathrm{fop},\pm}\sin\theta_{\mathrm
 $$</p>
 <p>so that $\vec B=-i\sigma(2\pi\nu_{\Phi}/\omega)\vec E$ with $\sigma=\pm1$ the helicity, and the longitudinal amplitude gives</p>
 <p>$$
-\vec E=\frac{4\pi^{2}\nu_m^2}{\omega}\,A_L\,\hat 2\pi\nu_{\Phi}\,\sin\theta_{\mathrm{pwp}},
+\vec E=\frac{4\pi^{2}\nu_m^2}{\omega}\,A_L\,\hat\nu_{\Phi}\,\sin\theta_{\mathrm{pwp}},
 \qquad
 \vec B=0 .
 $$</p>
@@ -165,7 +165,7 @@ $$</p>
 $$</p>
 <p>with the upper sign for $\sigma=+1$, where the two weights are $1+ck_\Phi/\omega$ and $1-ck_\Phi/\omega$. For the longitudinal state $\vec B=0$ and</p>
 <p>$$
-\vec N=\vec N^*=\vec E=\frac{4\pi^{2}\nu_m^2}{\omega}A_L\hat 2\pi\nu_{\Phi}\sin\theta_{\mathrm{pwp}} .
+\vec N=\vec N^*=\vec E=\frac{4\pi^{2}\nu_m^2}{\omega}A_L\hat\nu_{\Phi}\sin\theta_{\mathrm{pwp}} .
 $$</p>
 <p><strong>Three statements follow, and they are the article's technical content.</strong></p>
 <p><em>First, both coordinates are nonzero for every massive mode.</em> The two weights are $1-ck_\Phi/\omega$ and $1+ck_\Phi/\omega$, and $ck_\Phi/\omega=2\pi\nu_{\Phi}/\sqrt{4\pi^{2}\nu_{\Phi}^{2}+4\pi^{2}\nu_m^2}<1$ for every $\nu_m>0$. Neither weight vanishes, so neither chiral coordinate of the field vanishes, so the massive mode is never self-dual and never anti-self-dual. The "impurity" is not an approximation: it is exact, and its size is the mass.</p>
@@ -266,7 +266,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\varepsilon_{\mathrm{fop},\pm}$</td>
-<td>Circular polarization vectors, $\hat 2\pi\nu_{\Phi}\times\varepsilon_\pm=\mp i\varepsilon_\pm$</td>
+<td>Circular polarization vectors, $\hat\nu_{\Phi}\times\varepsilon_\pm=\mp i\varepsilon_\pm$</td>
 </tr>
 <tr>
 <td>$A_+,A_-,A_L$</td>

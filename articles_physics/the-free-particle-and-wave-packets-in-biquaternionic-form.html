@@ -139,7 +139,7 @@ $$</p>
 <p>$$
 \boxed{\;hf_{\mathrm{frq}}=\frac{h^{2}\,4\pi^{2}\nu_{\Phi}^{2}}{8\pi^{2}\,m}
 \qquad\Longleftrightarrow\qquad
-\omega(2\pi\vec\nu_\Phi) = \frac{c 4\pi^{2}\nu_{\Phi}^2}{2\,2\pi\nu_m}\;}.
+\omega(2\pi\vec\nu_\Phi) = \frac{c 4\pi^{2}\nu_{\Phi}^2}{4\pi\nu_m}\;}.
 $$</p>
 <p>Two features of the solution are the whole content of the plane-wave section. First, the <strong>energy does not depend on $\xi$</strong>: the two components of the spinor are degenerate, because the Hamiltonian is central. Second, the phase is central, so it multiplies both components equally and generates no relative phase. Neither of these is an assumption; both follow from $H \in \mathbb{B}_{C}$.</p>
 <p>The momentum acts on the plane wave as a left multiplication by a fixed algebra element. Using $p_\eta \exp(i\theta_{\mathrm{spa}}) =h\,2\pi\nu_{\Phi}\exp(i\theta_{\mathrm{spa}})$,</p>
@@ -161,7 +161,7 @@ $$</p>
 <h3 id="dispersion-and-the-location-of-the-wave-vector">Dispersion and the location of the wave vector</h3>
 <p>The dispersion relation has the standard consequences. The phase velocity is</p>
 <p>$$
-v_{\mathrm{ph}} = \frac{\omega}{2\pi\nu_{\Phi}} = \frac{c 2\pi\nu_{\Phi}}{2\,2\pi\nu_m},
+v_{\mathrm{ph}} = \frac{\omega}{2\pi\nu_{\Phi}} = \frac{c 2\pi\nu_{\Phi}}{4\pi\nu_m},
 $$</p>
 <p>and the group velocity, which is the velocity of the packet and the classical velocity, is</p>
 <p>$$
@@ -207,7 +207,7 @@ $$</p>
 <h3 id="superposition-and-the-frozen-module-factor">Superposition and the frozen module factor</h3>
 <p>The free equation is linear over $\mathbb{C}$, and its coefficients are central, so superpositions of plane waves are solutions:</p>
 <p>$$
-\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^32\pi\nu_{\Phi}}{(2\pi)^3}\;\tilde{Ξ}_{0}(2\pi\vec\nu_\Phi)\,\exp(\,i(2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(2\pi\vec\nu_\Phi) r'_t/c)),
+\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int d^{3}\nu_{\Phi}\;\tilde{Ξ}_{0}(2\pi\vec\nu_\Phi)\,\exp(\,i(2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(2\pi\vec\nu_\Phi) r'_t/c)),
 \qquad
 \tilde{Ξ}_{0}(2\pi\vec\nu_\Phi) \in \mathbb{B}\tilde\Pi_{\mathrm{id}} .
 $$</p>
@@ -250,7 +250,7 @@ $$</p>
 <p>so that $s_0$ is the <strong>density width</strong> (the standard deviation of $|Ξ_0|^2$) and the initial uncertainty product is minimal. The exact free evolution of this packet is</p>
 <p>$$
 Ξ(r_x,r'_t) = \frac{(2\pi s_0^2)^{-1/4}}{\sqrt{A(r'_t)}}\,
-\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + 2\pi i\nu_t^{\prime}r_x - \frac{i c 4\pi^{2}\nu_t^{\prime\,2} r'_t}{2\,2\pi\nu_m}\right],
+\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + 2\pi i\nu_t^{\prime}r_x - \frac{i c 4\pi^{2}\nu_t^{\prime\,2} r'_t}{4\pi\nu_m}\right],
 \qquad
 A(r'_t) = 1 + \frac{i r'_t}{2s_0^2\,2\pi\nu_m},
 \qquad
@@ -268,7 +268,7 @@ $$</p>
 \tau = \dfrac{2s_0^2\,2\pi\nu_m}{c}
 $$</p>
 <p>is the spreading time. The biquaternion form of the packet is $\tilde{Ξ} = Ξ\,\xi$: the scalar envelope $Ξ$ carries all of the dynamics, and the module factor $\xi$ is a constant.</p>
-<p>The closed forms above were checked numerically. Using the density-width normalisation, with every wave number quoted in units of $\nu_m$ (so that $2\pi\nu_m=1$), every length in units of $1/\nu_m$, and $s_0 = 0.5$, the analytic density agrees with the Gaussian $|Ξ(r_x,r'_t)|^2$ to a relative error below $6\times 10^{-16}$ at $r'_t = 0, 1.4, 2.7$, and the variance computed by direct quadrature of $|Ξ(r_x,r'_t)|^2$ equals $s(r'_t)^2$ to six decimal places at each time, with the mean equal to $v_0 r'_t$. The analytic envelope itself was checked against a direct momentum-space quadrature of $Ξ(r_x,r'_t) = \int  \frac{dk_\Phi}{2\pi}\tilde{Ξ}_0(2\pi\nu_{\Phi})\exp(2\pi i\nu_{\Phi} x -\frac{i\,4\pi^{2}\nu_{\Phi}^{2}\,r'_{t}}{2\,2\pi\nu_m})$, evaluated on a rotated contour, with agreement at the $10^{-13}$ level on three sampled points. In every case the quantity checked is a superposition — a packet is a superposition of plane waves — and never a single plane wave.</p>
+<p>The closed forms above were checked numerically. Using the density-width normalisation, with every wave number quoted in units of $\nu_m$ (so that $2\pi\nu_m=1$), every length in units of $1/\nu_m$, and $s_0 = 0.5$, the analytic density agrees with the Gaussian $|Ξ(r_x,r'_t)|^2$ to a relative error below $6\times 10^{-16}$ at $r'_t = 0, 1.4, 2.7$, and the variance computed by direct quadrature of $|Ξ(r_x,r'_t)|^2$ equals $s(r'_t)^2$ to six decimal places at each time, with the mean equal to $v_0 r'_t$. The analytic envelope itself was checked against a direct momentum-space quadrature of $Ξ(r_x,r'_t) = \int  \frac{dk_\Phi}{2\pi}\tilde{Ξ}_0(2\pi\nu_{\Phi})\exp(2\pi i\nu_{\Phi} x -\frac{i\,4\pi^{2}\nu_{\Phi}^{2}\,r'_{t}}{4\pi\nu_m})$, evaluated on a rotated contour, with agreement at the $10^{-13}$ level on three sampled points. In every case the quantity checked is a superposition — a packet is a superposition of plane waves — and never a single plane wave.</p>
 <h3 id="stationary-phase-and-the-classical-trajectory">Stationary phase and the classical trajectory</h3>
 <p>The packet integral is dominated, for large $r'_t$ or small $\frac{h}{2\pi}$, by the stationary points of its phase. Writing the exponent for the free case,</p>
 <p>$$
@@ -285,7 +285,7 @@ $$</p>
 <h3 id="the-kernel-from-the-momentum-integral">The kernel from the momentum integral</h3>
 <p>The free propagator is the inverse Fourier transform of the free phase,</p>
 <p>$$
-\boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  \frac{d^32\pi\nu_{\Phi}}{(2\pi)^3}\,
+\boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  d^{3}\nu_{\Phi}\,
 \exp(i\theta_{\mathrm{fre}}),\qquad \theta_{\mathrm{fre}}=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\frac{h\,\nu_{\Phi}^{2}\,r'_{t}}{4\pi \,m}\in\mathbb{R}
 = \left(\frac{2\pi\nu_m}{2\pi i r'_t}\right)^{3/2}
 \exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,h\,r'_{t}}{2\pi c}}\right)\;},
@@ -433,7 +433,7 @@ $$</p>
 <td>Dispersion relation</td>
 </tr>
 <tr>
-<td>$\vec v_g = \partial\omega/\partial2\pi\vec\nu_\Phi =\frac{h\,2\pi\vec\nu_\Phi}{2\pi m}$</td>
+<td>$\vec v_g = \partial\omega/\partial2\pi\vec\nu_\Phi =\frac{h\,\vec\nu_\Phi}{2\pi m}$</td>
 <td>Group velocity; classical velocity</td>
 </tr>
 <tr>
