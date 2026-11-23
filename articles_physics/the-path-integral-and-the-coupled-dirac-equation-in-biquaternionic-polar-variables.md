@@ -58,7 +58,7 @@ The gauge term is a real number. For a history $x(\tau)$ the added term is the i
 $$
 w\,e_t=e^{i\theta_{\mathrm{act}}}e_t,
 \qquad
-\theta_{\mathrm{act}}=\frac{2\pi 1}{h}\Bigl(S_0[x]+S_{\mathrm{spin}}[\tilde\Xi_\mu]+S_{\mathrm{gco}}[x]\Bigr),
+\theta_{\mathrm{act}}=\frac{2\pi}{h}\Bigl(S_0[x]+S_{\mathrm{spin}}[\tilde\Xi_\mu]+S_{\mathrm{gco}}[x]\Bigr),
 $$
 
 and the reduction into the word's range applies exactly as in the free article: $\theta_{\mathrm{pha}}$ is $\theta_{\mathrm{act}}$ reduced into $(-\pi/2,\pi/2]$, and the residue is a sign in the rotor.
@@ -145,7 +145,7 @@ Where the word fails and the amplitude does not. The angle's range is finite, so
 The angle. For small $\frac{h}{2\pi}$ the integral is dominated by the Lorentz path of the companion, and the phase is
 
 $$
-\theta_{\mathrm{act}}=\frac{2\pi 1}{h}\Bigl(S_0[x_{\mathrm{cl}}]+S_{\mathrm{gco}}[x_{\mathrm{cl}}]\Bigr)
+\theta_{\mathrm{act}}=\frac{2\pi}{h}\Bigl(S_0[x_{\mathrm{cl}}]+S_{\mathrm{gco}}[x_{\mathrm{cl}}]\Bigr)
 $$
 
 reduced into the word's range, plus the Maslov constant. The gauge term's share is $-ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ on the classical path: a boundary term for an exact potential, a flux for a field strength. The charge enters the angle and only the angle at this order, and the angle is where the potential is legible.

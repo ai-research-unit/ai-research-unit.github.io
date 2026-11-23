@@ -75,7 +75,7 @@ What the reality does not use. It does not use the centrality of the root, and i
 
 The selection rule. Not examined here. The Hamiltonian is Hermitian by the article's licence, so no sector is excluded; the anti-Hermitian potential and its complex frequency are the scalar family's, where the potential is a free element.
 
-What reality does not buy. The stronger requirement. The parent requires the generator $-\frac{2\pi \tilde Z\tilde H_\Psi}{h\,c}$ to be anti-Hermitian for every Hermitian $\tilde H_\Psi$, so that the flow preserves the norm. In $t'$ the generator is $\frac{2\pi 1}{h}\tilde Z^{-1}\tilde H_\Psi$, and its anti-Hermiticity is
+What reality does not buy. The stronger requirement. The parent requires the generator $-\frac{2\pi \tilde Z\tilde H_\Psi}{h\,c}$ to be anti-Hermitian for every Hermitian $\tilde H_\Psi$, so that the flow preserves the norm. In $t'$ the generator is $\frac{2\pi}{h}\tilde Z^{-1}\tilde H_\Psi$, and its anti-Hermiticity is
 
 $$
 \big(\tilde Z^{-1}\tilde H_\Psi\big)^{*}=-\tilde Z^{-1}\tilde H_\Psi

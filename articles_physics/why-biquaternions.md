@@ -140,7 +140,7 @@ The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times t
 Dividing by the central unit $i \frac{h}{2\pi} c$ gives a second writing of the same equation,
 
 $$
-\frac{\partial}{\partial r'_t}\tilde\Xi=\frac{2\pi 1}{h c}(-i\tilde H_{\Psi})\tilde\Xi,
+\frac{\partial}{\partial r'_t}\tilde\Xi=\frac{2\pi}{h c}(-i\tilde H_{\Psi})\tilde\Xi,
 \qquad
 -i\tilde H_{\Psi}\in\mathbb{B}_{\Phi}.
 $$

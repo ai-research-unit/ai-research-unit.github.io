@@ -19,7 +19,7 @@ Nothing else is assumed. The three wave numbers of the title are the coordinates
 The deduction. $\frac{h}{2\pi}$ is a real central scalar, so it divides every coefficient of the element and touches no basis unit. Distributing it over the four units gives
 
 $$
-\tilde K_{\Phi}=\frac{2\pi 1}{h}\left(i\,p_{t}^{\prime}\,e_{t}+\vec p_{\Phi}\right)
+\tilde K_{\Phi}=\frac{2\pi}{h}\left(i\,p_{t}^{\prime}\,e_{t}+\vec p_{\Phi}\right)
 =i\,\frac{2\pi p_{t}^{\prime}}{h}\,e_{t}+\frac{2\pi \vec p_{\Phi}}{h},
 $$
 
@@ -108,15 +108,15 @@ $$
 
 Its norm is the mass shell, $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}c^{2}$, and it is the object the Dirac, Klein–Gordon and Maxwell articles of the series carry.
 
-The quotient, in the coefficient the series carries. The same division written with the coefficient of this corpus, since $\frac{2\pi 1}{h}$ is one over an action:
+The quotient, in the coefficient the series carries. The same division written with the coefficient of this corpus, since $\frac{2\pi}{h}$ is one over an action:
 
 $$
 \tilde K_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}
-=\frac{2\pi 1}{h}\,\tilde P_{\Phi}
+=\frac{2\pi}{h}\,\tilde P_{\Phi}
 =i\,k_{t}^{\prime}\,e_{t}+\vec k_{\Phi}.
 $$
 
-The division is legitimate term by term, and the reason is one line: $\frac{h}{2\pi}$ is real and central, so it passes unchanged through the coefficient bar, the quaternion involution and the star, and it therefore moves no element out of its subspace. The momentum is anti-Hermitian, $\tilde P_{\Phi}^{*}=-\tilde P_{\Phi}$; multiplying by the real central $\frac{2\pi 1}{h}$ preserves that, so $\tilde K_{\Phi}^{*}=-\tilde K_{\Phi}$ and $\tilde K_{\Phi}\in\mathbb{B}_{\Phi}$.
+The division is legitimate term by term, and the reason is one line: $\frac{h}{2\pi}$ is real and central, so it passes unchanged through the coefficient bar, the quaternion involution and the star, and it therefore moves no element out of its subspace. The momentum is anti-Hermitian, $\tilde P_{\Phi}^{*}=-\tilde P_{\Phi}$; multiplying by the real central $\frac{2\pi}{h}$ preserves that, so $\tilde K_{\Phi}^{*}=-\tilde K_{\Phi}$ and $\tilde K_{\Phi}\in\mathbb{B}_{\Phi}$.
 
 The check of the equality. Two routes must agree, and they do. Divide the norm of the momentum:
 

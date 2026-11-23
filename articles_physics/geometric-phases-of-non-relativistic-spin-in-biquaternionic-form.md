@@ -35,9 +35,9 @@ $$
 \tilde{Ξ}(T) = \exp(-i\theta_{\mathrm{dgp}})\,\tilde{Ξ}(0)
 $$
 
-The dynamical angle $\theta_{\mathrm{dgp}}:=\frac{2\pi 1}{h\,c}E\,T$ is real because the energy, the duration and $\frac{h}{2\pi} c$ are real.
+The dynamical angle $\theta_{\mathrm{dgp}}:=\frac{2\pi}{h\,c}E\,T$ is real because the energy, the duration and $\frac{h}{2\pi} c$ are real.
 
-for an eigenstate of energy $E$. The angle $-\theta_{\mathrm{dgp}}=-\frac{2\pi 1}{h\,c}\int_0^T  E\,dr'_t$ is the **dynamical phase**; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde H_\Psi\rangle$, and the same statement holds with $\int_0^T\langle\tilde H_\Psi\rangle\,\frac{2\pi dr'_{t}}{h\,c}$.
+for an eigenstate of energy $E$. The angle $-\theta_{\mathrm{dgp}}=-\frac{2\pi}{h\,c}\int_0^T  E\,dr'_t$ is the **dynamical phase**; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde H_\Psi\rangle$, and the same statement holds with $\int_0^T\langle\tilde H_\Psi\rangle\,\frac{2\pi dr'_{t}}{h\,c}$.
 
 The dynamical phase is not what this article is about. It is removed by a standard subtraction, and the residue is the geometric part. The subtraction is meaningful because the two parts respond differently to a change of the speed of the journey at fixed geometry: the dynamical phase scales with the duration and the geometric phase does not.
 
@@ -46,7 +46,7 @@ The dynamical phase is not what this article is about. It is removed by a standa
 Let $|\tilde{Ξ}(r'_t)\rangle$ be a normalized solution of the Schrödinger equation that is **cyclic**, $|\tilde{Ξ}(T)\rangle = \exp(i\theta_{\mathrm{pha},\mathrm{tot}})|\tilde{Ξ}(0)\rangle$ for some real $\theta_{\mathrm{pha},\mathrm{tot}}$. Define
 
 $$
-\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi 1}{h\,c}\int_0^T\langle\tilde{Ξ}(r'_t)|\tilde H_\Psi(r'_t)|\tilde{Ξ}(r'_t)\rangle\,dr'_t .
+\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi}{h\,c}\int_0^T\langle\tilde{Ξ}(r'_t)|\tilde H_\Psi(r'_t)|\tilde{Ξ}(r'_t)\rangle\,dr'_t .
 $$
 
 This is the **Aharonov–Anandan phase**. It is well defined for any cyclic evolution, adiabatic or not; it is invariant under a rephasing of the initial state; and it depends on the curve traced by the state in projective space, not on the speed at which the curve is traversed. In the biquaternion language the two terms are both real numbers built from the Hermitian form, read through the scalar part:
@@ -120,7 +120,7 @@ $$
 
 so the total phase is $\theta_{\mathrm{pha},\mathrm{tot}} = \pi$ and $\tilde{Ξ}(T) = -\tilde{Ξ}(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:
 
-$$\frac{2\pi 1}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle\,dr'_t
+$$\frac{2\pi}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle\,dr'_t
 = -\frac{\omega_L}{2}\cos\theta_0\,T = -\pi\cos\theta_0 .
 $$
 
@@ -259,7 +259,7 @@ $$
 
 one half the oriented solid angle of the curve, negative for the orientation given by the right-hand rule. For a latitude circle at polar angle $\theta_0$ the unsigned solid angle is $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$.
 
-The **Aharonov–Anandan phase** is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi 1}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle\,dr'_t$, with all quantities expressed through the Hermitian form, read through the scalar part. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is
+The **Aharonov–Anandan phase** is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle\,dr'_t$, with all quantities expressed through the Hermitian form, read through the scalar part. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is
 
 $$
 \gamma_{AA} = \pi(1-\cos\theta_0) = \frac{\theta_{\mathrm{sol}}}{2},
@@ -285,7 +285,7 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\omega_L = \gamma B$ | Larmor frequency |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Pure-state idempotent; carries no phase |
 | $\tilde{Ξ}$ | Spinor; carries the geometric phase |
-| $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi 1}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle  dr'_t$ | Aharonov–Anandan geometric phase |
+| $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle  dr'_t$ | Aharonov–Anandan geometric phase |
 | $\mathcal{A} = i\langle n|d|n\rangle$ | Berry connection (cited from the Berry article) |
 | $\gamma_{\mathrm{geo}} = -\tfrac12\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}(\mathcal{C})$ | Solid-angle formula for spin-1/2 |
 | $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ | Unsigned solid angle of a latitude cap |

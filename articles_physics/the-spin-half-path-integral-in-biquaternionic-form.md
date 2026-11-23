@@ -67,7 +67,7 @@ Discretise the time interval $[0,T]$ into $N$ slices of width $\epsilon = T/N$. 
 
 $$
 \langle  z_{k+1}|\exp(-\frac{2\pi i\,\epsilon\,\tilde{H}_{\Psi}}{h})|z_k\rangle
-\approx  \langle  z_{k+1}|z_k\rangle\,\exp(-i\epsilon\langle  z_k|\tilde H_\Psi|z_k\rangle\frac{2\pi 1}{h}),
+\approx  \langle  z_{k+1}|z_k\rangle\,\exp(-i\epsilon\langle  z_k|\tilde H_\Psi|z_k\rangle\frac{2\pi}{h}),
 $$
 
 the propagator becomes

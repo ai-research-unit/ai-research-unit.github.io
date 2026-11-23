@@ -23,7 +23,7 @@ $$
 G_{\mathrm{prop},\varepsilon}(r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\Big(\frac{k_m}{2\pi i c\varepsilon}\Big)^{3/2}
 \exp(i\theta_{\mathrm{cou}})+O(\varepsilon^2),
 $$
-The display carries the short-time angle $\theta_{\mathrm{cou}}=\frac{2\pi 1}{h}\big(\frac{m\lvert\vec r_{\mathrm{src}}-\vec r\rvert^2}{2\varepsilon}-\varepsilon\,V(\vec r)\big)$, real because the mass, the displacement, the step and the potential are real. Take the limit $N\to\infty$ of the product with the intermediate positions integrated.
+The display carries the short-time angle $\theta_{\mathrm{cou}}=\frac{2\pi}{h}\big(\frac{m\lvert\vec r_{\mathrm{src}}-\vec r\rvert^2}{2\varepsilon}-\varepsilon\,V(\vec r)\big)$, real because the mass, the displacement, the step and the potential are real. Take the limit $N\to\infty$ of the product with the intermediate positions integrated.
 
 Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 

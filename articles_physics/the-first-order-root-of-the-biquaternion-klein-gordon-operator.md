@@ -90,7 +90,7 @@ k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=k_m^{2}
 E^2=\vec p^{\,2}c^2+m^2c^4 ,
 $$
 
-with $\vec k_\Phi=\vec p\,\frac{2\pi 1}{h}$. Here $k_{\Phi}=\frac{2\pi p}{h}$ and $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$ are the momentum and energy wave numbers.
+with $\vec k_\Phi=\vec p\,\frac{2\pi}{h}$. Here $k_{\Phi}=\frac{2\pi p}{h}$ and $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$ are the momentum and energy wave numbers.
 
 The symbol of $\Box_\Phi$ is the interval of the wave covector, and the mass shell is that symbol set to $k_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $-i\tilde K_{\Phi}$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla_\Phi\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §*What the Root Does Not Carry* records.
 

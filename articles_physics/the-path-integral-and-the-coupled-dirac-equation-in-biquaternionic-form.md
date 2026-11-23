@@ -166,7 +166,7 @@ The check distinguishes the coefficient from its half. On a two-dimensional mode
 The phase is the classical action with the gauge term. At the stationary path
 
 $$
-\theta_{\mathrm{act}}=\frac{2\pi 1}{h}\bigl(S_0[x_{\mathrm{cl}}]+S_{\mathrm{gco}}[x_{\mathrm{cl}}]\bigr),
+\theta_{\mathrm{act}}=\frac{2\pi}{h}\bigl(S_0[x_{\mathrm{cl}}]+S_{\mathrm{gco}}[x_{\mathrm{cl}}]\bigr),
 $$
 
 and the gauge term's contribution is $-ϙ\!\int\!\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ evaluated on the Lorentz path. For an exact potential it is a boundary term and the phase is the free one plus the endpoint phases. For a field strength it is the flux through the surface between the Lorentz path and the straight line, and it is the part of the phase that the classical motion adds.

@@ -74,7 +74,7 @@ The quadratic form of the theory is the biquaternion norm. The material four-wav
 
 $$
 \tilde K_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}
-=\frac{2\pi 1}{h}\,\tilde P_{\Phi}
+=\frac{2\pi}{h}\,\tilde P_{\Phi}
 =i\,k_{t}^{\prime}\,e_t+\vec k_\Phi\in\mathbb{B}_{\Phi},
 \qquad
 \tilde K_{\Phi}^{\natural}=i\,k_{t}^{\prime}\,e_t-\vec k_\Phi,

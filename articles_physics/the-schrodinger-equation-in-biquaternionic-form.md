@@ -17,12 +17,12 @@ The coefficients $h_t$ and $\vec h_\Psi$ are numbers here: $\tilde H_\Psi$ is an
 Dividing by $i \frac{h}{2\pi}\,c$ gives the same equation in a second writing, where the generator is the observable multiplied by $-i$ over one real scale,
 
 $$
-\partial/\partial r'_t\,\tilde\Xi = \frac{2\pi 1}{h\,c}\,(-i\tilde H_\Psi)\,\tilde\Xi,
+\partial/\partial r'_t\,\tilde\Xi = \frac{2\pi}{h\,c}\,(-i\tilde H_\Psi)\,\tilde\Xi,
 \qquad
 -i\,\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi \in \mathbb{B}_{\Phi}.
 $$
 
-Dividing by $i \frac{h}{2\pi}\,c$ is always possible, because $i \frac{h}{2\pi}\,c$ is a central unit. The centrality of $i$ is what gives the result its content: it makes $i\tilde H_\Psi$ anti-Hermitian, and its negative $-i\tilde H_\Psi$ anti-Hermitian too, so the generator of the second writing lies in the material sector $\mathbb{B}_{\Phi}$. The two factors of the generator do different jobs and are written separately: $-i$ moves the observable to the other sector and costs no scale; $\frac{2\pi 1}{h\,c}$ divides by a real number, which changes the unit from an energy to an inverse length and moves nothing between sectors. Collapsing them into $-\frac{2\pi i}{h\,c}$ hides that the first factor is exact for every element of the algebra and the second depends on the unit chosen.
+Dividing by $i \frac{h}{2\pi}\,c$ is always possible, because $i \frac{h}{2\pi}\,c$ is a central unit. The centrality of $i$ is what gives the result its content: it makes $i\tilde H_\Psi$ anti-Hermitian, and its negative $-i\tilde H_\Psi$ anti-Hermitian too, so the generator of the second writing lies in the material sector $\mathbb{B}_{\Phi}$. The two factors of the generator do different jobs and are written separately: $-i$ moves the observable to the other sector and costs no scale; $\frac{2\pi}{h\,c}$ divides by a real number, which changes the unit from an energy to an inverse length and moves nothing between sectors. Collapsing them into $-\frac{2\pi i}{h\,c}$ hides that the first factor is exact for every element of the algebra and the second depends on the unit chosen.
 
 The two writings are one equation, and they say different things about it. The first names the observable: it states the dynamics as left multiplication by the Hermitian $\tilde H_\Psi$, and it is the writing in which $\tilde H_\Psi$ is read as an energy. The second names the generator: it states the dynamics as left multiplication by an anti-Hermitian element, and it places that element in the same four-dimensional real space that carries the four-vectors. The generator is written $-\frac{2\pi i\tilde H_\Psi}{h\,c}$: the observable's own glyph, with the $i$ in front and one real scale beside it, so the second writing keeps the name of the object it came from. The central $i$ is the canonical isomorphism between the two sectors. Among the roots of $-e_t$ no other supplies one, up to sign. A real multiple $\lambda\,i$ supplies the same isomorphism in another time unit, since $\lambda\,i \frac{h}{2\pi}\,c\,\partial/\partial r'_t$ is $i \frac{h}{2\pi}\,c\,\partial/\partial(\lambda^{-1}r'_t)$; and the division by $\frac{h}{2\pi}\,c$ is not part of the isomorphism at all, which is why it is written beside it and not inside the glyph.
 
@@ -223,7 +223,7 @@ which is real because the symbol is Hermitian, and which reduces in the matrix p
 The second writing puts the derivative alone on the left and the generator on the right,
 
 $$
-\partial/\partial r'_t\,\tilde{Ξ} = \frac{2\pi 1}{h\,c}(-i\tilde H_\Psi)\,\tilde{Ξ},
+\partial/\partial r'_t\,\tilde{Ξ} = \frac{2\pi}{h\,c}(-i\tilde H_\Psi)\,\tilde{Ξ},
 \qquad
 -i\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi \in \mathbb{B}_{\Phi}.
 $$

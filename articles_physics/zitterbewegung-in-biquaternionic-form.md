@@ -258,7 +258,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field, one element of $\mathbb{B}$, and its two parts, one per letter of the pair |
 | $\tilde{Ξ}^{(+)}, \tilde{Ξ}^{(-)}$ | The two frequency branches; $\tilde{Ξ}_{0}^{(\pm)}$ their constant elements |
 | $\tilde R_\Phi$ | The four-position biquaternion of the parent |
-| $\tilde K_{\Phi}$ | The wave biquaternion of the parent, $\vec k_\Phi=\vec p\,\frac{2\pi 1}{h}$ |
+| $\tilde K_{\Phi}$ | The wave biquaternion of the parent, $\vec k_\Phi=\vec p\,\frac{2\pi}{h}$ |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |
 | $\flat$ | The anti-Hermitian conjugation (the algebra's real structure, not the mass term), *Algebra and Element Conventions* |
 | $\tilde\nabla_\Phi$ | The biquaternionic gradient (Dirac operator), *Operator and Calculus Conventions* |

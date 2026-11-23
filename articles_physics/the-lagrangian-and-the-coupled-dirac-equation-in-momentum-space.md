@@ -117,7 +117,7 @@ The functional $\mathcal{Q}$ depends on the momentum only through the element $\
 
 $$
 \mathcal{Q}\bigl(\tilde\Xi_L,\tilde\Xi_R;\tilde K_{\Phi,\mathrm{gco}}\bigr)
-=\mathcal{Q}_{\mathrm{free}}\bigl(\tilde\Xi_L,\tilde\Xi_R;\frac{2\pi 1}{h}\tilde P'_\Phi\bigr),
+=\mathcal{Q}_{\mathrm{free}}\bigl(\tilde\Xi_L,\tilde\Xi_R;\frac{2\pi}{h}\tilde P'_\Phi\bigr),
 $$
 
 with $\mathcal{Q}_{\mathrm{free}}$ the free article's form. Every exact statement the free article makes about $\mathcal{Q}_{\mathrm{free}}$ is therefore a statement about $\mathcal{Q}$ with the argument translated, and no new computation is needed to carry it over.

@@ -181,7 +181,7 @@ $$
 \tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi} ,
 $$
 
-and the phase is the scalar part of the product of the wave biquaternion with the conjugate four-position, $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$, the same object that $\mathrm{Sc}\frac{2\pi \tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{h}$ names, since $\tilde K_{\Phi}=\frac{2\pi 1}{h}\tilde P_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}$. Using $\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \sum_j k_jx_j$ and $i^2 = -1$,
+and the phase is the scalar part of the product of the wave biquaternion with the conjugate four-position, $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$, the same object that $\mathrm{Sc}\frac{2\pi \tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{h}$ names, since $\tilde K_{\Phi}=\frac{2\pi}{h}\tilde P_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}$. Using $\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \sum_j k_jx_j$ and $i^2 = -1$,
 
 $$
 \mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}\right)

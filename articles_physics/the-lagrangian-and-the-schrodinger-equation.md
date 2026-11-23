@@ -162,7 +162,7 @@ holds as an identity of the algebra, and the right-hand side is the same real te
 $$
 i \frac{h}{2\pi}\,c\,\partial\tilde\Xi-\tilde H_\Psi\tilde\Xi=0
 \qquad\Longleftrightarrow\qquad
-\partial_{r'_t}\tilde\Xi=\frac{2\pi 1}{h\,c}(-i\tilde H_\Psi)\tilde\Xi,
+\partial_{r'_t}\tilde\Xi=\frac{2\pi}{h\,c}(-i\tilde H_\Psi)\tilde\Xi,
 $$
 
 which is the parent's second writing. Equivalently $\frac{h}{2\pi}\,c\,\partial\tilde\Xi=-i\tilde H_\Psi\tilde\Xi$. So the second writing is available from the same action, and the only thing that changed is which factor of the coupling carries the $i$.

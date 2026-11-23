@@ -5,7 +5,7 @@
 A charged particle that encircles a region of magnetic flux acquires a phase that depends on the enclosed flux and not on the details of its path; this is the **Aharonov–Bohm (AB) effect**. In 1984 Aharonov and Casher pointed out the electric dual: a **neutral particle carrying a magnetic dipole moment** and moving in a region of electric field acquires a phase
 
 $$
-\theta_{\mathrm{pha},AC} =\frac{2\pi 1}{h\,c^{2}}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot  d\vec r,
+\theta_{\mathrm{pha},AC} =\frac{2\pi}{h\,c^{2}}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot  d\vec r,
 $$
 
 which likewise depends on the path and the field but not on the speed at which the path is traversed. This is the **Aharonov–Casher (AC) effect**. The two effects have the same structure — a geometric phase from a gauge connection — with the electric displacement field and the magnetic dipole moment exchanged for the vector potential and the electric charge.
@@ -15,7 +15,7 @@ This article treats the AC effect in the biquaternion algebra $\mathbb{B} = \mat
 1. **The AC phase is a holonomy of the spinor.** It is the integral of a spin-space connection whose values are Hermitian elements of $\mathbb{B}_{\Psi}$ built from the electric field and the spin operator. It is therefore the same kind of object as the Berry and Aharonov–Anandan phases of non-relativistic spin.
 2. **The coupling is a rest-frame magnetic field.** A magnetic dipole moving through an electric field sees, in its rest frame, the effective magnetic field $\vec B_2 = \vec B - \frac{1}{c^2}\vec v\times\vec E$; the AC phase is the first-order term in $v/c$ of the Zeeman coupling to that field. The derivation uses only the first-order rest-frame transformation, which is the non-relativistic approximation; the exact treatment belongs to the relativistic series.
 3. **For a spin-1/2 the connection is an $SU(2)$ connection.** With $\vec\mu = \gamma\vec S$ and $\tilde S_{\Psi,\eta} =\frac{h}{4\pi}i\vec e_\eta$, the connection is proportional to the spin operator, and its holonomy is a rotor in $\mathbb{B}_{H}$ together with a central phase — the same two faces as the geometric phase of non-relativistic spin.
-4. **The AC effect and the AB effect are electric–magnetic duals.** The AB phase is $\frac{2\pi ϙ}{h}\oint\vec A\cdot d\vec r$ for a charge; the AC phase is $\frac{2\pi 1}{h\,c^{2}}\oint(\vec E\times\vec\mu)\cdot d\vec r$ for a dipole. The electric dipole analogue is the He–McKellar–Wilkens phase.
+4. **The AC effect and the AB effect are electric–magnetic duals.** The AB phase is $\frac{2\pi ϙ}{h}\oint\vec A\cdot d\vec r$ for a charge; the AC phase is $\frac{2\pi}{h\,c^{2}}\oint(\vec E\times\vec\mu)\cdot d\vec r$ for a dipole. The electric dipole analogue is the He–McKellar–Wilkens phase.
 5. **The phase is measurable and has been measured.** Neutron interferometry, atom interferometry and electron interferometry all exhibit the AC phase; orders of magnitude are given below.
 
 The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{h}{4\pi}i\vec e_\eta$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, with $\mathbf e=(\vec e_x,\vec e_y,\vec e_z)$ the vector of quaternion units, and the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
@@ -29,7 +29,7 @@ The companion articles supply the pieces:
 
 ### A Magnetic Dipole in an Electric Field
 
-A magnetic dipole $\vec\mu$ at rest in a magnetic field $\vec B$ has Zeeman energy $-\vec\mu\cdot\vec B$ and, if the field is constant and the dipole state is an eigenstate, its state carries the exponent phase $-\frac{2\pi 1}{h}\int  E\,dr'_t = +\frac{2\pi 1}{h}\int\vec\mu\cdot\vec B\,dr'_t$. For a dipole **moving** through an electric field, the relevant field is the one in its own rest frame. To first order in $v/c$ the rest-frame magnetic field is
+A magnetic dipole $\vec\mu$ at rest in a magnetic field $\vec B$ has Zeeman energy $-\vec\mu\cdot\vec B$ and, if the field is constant and the dipole state is an eigenstate, its state carries the exponent phase $-\frac{2\pi}{h}\int  E\,dr'_t = +\frac{2\pi}{h}\int\vec\mu\cdot\vec B\,dr'_t$. For a dipole **moving** through an electric field, the relevant field is the one in its own rest frame. To first order in $v/c$ the rest-frame magnetic field is
 
 $$
 \vec B_2 = \vec B - \frac{1}{c^2}\,\vec v\times\vec E,
@@ -52,8 +52,8 @@ $$
 the phase accumulated along the path is
 
 $$
-\delta\theta_{\mathrm{pha}} =\frac{2\pi 1}{h}\int  L_{AC}\,dr'_t
-=\frac{2\pi 1}{h\,c^{2}}\int_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot  d\vec r,
+\delta\theta_{\mathrm{pha}} =\frac{2\pi}{h}\int  L_{AC}\,dr'_t
+=\frac{2\pi}{h\,c^{2}}\int_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot  d\vec r,
 $$
 
 using $\vec v\,dr'_t = d\vec r$. For a closed path $\mathcal{C}$ this is the AC phase quoted above — the standard result of Aharonov and Casher, with the same sign convention that gives the Aharonov–Bohm phase $+\frac{2\pi ϙ}{h}\oint\vec A\cdot d\vec r$. It is independent of the duration of the journey and of the speed profile, which is what makes it geometric; reversing the direction of travel reverses the sign of $\theta_{\mathrm{pha},AC}$, as a geometric phase must.
@@ -63,7 +63,7 @@ using $\vec v\,dr'_t = d\vec r$. For a closed path $\mathcal{C}$ this is the AC 
 The AC phase is the integral of a connection on parameter space, in the sense of the preceding article. Define the **AC connection one-form**
 
 $$
-\mathcal{A}_{AC} =\frac{2\pi 1}{h\,c^{2}}\left(\vec E(\vec r)\times\vec\mu\right)\cdot  d\vec r,
+\mathcal{A}_{AC} =\frac{2\pi}{h\,c^{2}}\left(\vec E(\vec r)\times\vec\mu\right)\cdot  d\vec r,
 $$
 
 whose values are generators acting on the spin degrees of freedom. Then $\theta_{\mathrm{pha},AC} = \oint\mathcal{A}_{AC}$, and for a path that is not closed the same integral defines a relative phase between the endpoints, exactly as the Pancharatnam connection does. The connection is **neither flat nor exact**: away from the charges $\vec E$ is curl-free, but that is not enough to make the closed integral vanish, and $\mathcal{A}_{AC}$ is not the differential of a single-valued function. Two features are responsible — the curvature of the connection in a general field, and the linking of the path with a charge — and they are separated in the subsection below. The AC effect is the statement that a magnetic dipole is sensitive to the electric field through this connection.
@@ -152,13 +152,13 @@ $$
 =\frac{2\pi ϙ}{h}Ξ_B,
 $$
 
-the enclosed magnetic flux; the connection is $\frac{2\pi ϙ}{h}\vec A\cdot d\vec r$, with values in the Lie algebra of $\mathrm{U}(1)$. In the AC effect a magnetic dipole $\vec\mu$ moving in an electric field acquires $\theta_{\mathrm{pha},AC}$ as above; the connection is $\frac{2\pi 1}{h\,c^{2}}(\vec E\times\vec\mu)\cdot d\vec r$, with values in the spin algebra. The dictionary is
+the enclosed magnetic flux; the connection is $\frac{2\pi ϙ}{h}\vec A\cdot d\vec r$, with values in the Lie algebra of $\mathrm{U}(1)$. In the AC effect a magnetic dipole $\vec\mu$ moving in an electric field acquires $\theta_{\mathrm{pha},AC}$ as above; the connection is $\frac{2\pi}{h\,c^{2}}(\vec E\times\vec\mu)\cdot d\vec r$, with values in the spin algebra. The dictionary is
 
 | | Aharonov–Bohm | Aharonov–Casher |
 |---|---|---|
 | Source | magnetic flux $Ξ_B$ | electric field $\vec E$ |
 | Coupling | electric charge $ϙ$ | magnetic dipole $\vec\mu$ |
-| Connection | $\frac{2\pi ϙ}{h}\vec A\cdot d\vec r$ | $\frac{2\pi 1}{h\,c^{2}}(\vec E\times\vec\mu)\cdot d\vec r$ |
+| Connection | $\frac{2\pi ϙ}{h}\vec A\cdot d\vec r$ | $\frac{2\pi}{h\,c^{2}}(\vec E\times\vec\mu)\cdot d\vec r$ |
 | Structure group | $\mathrm{U}(1)$ | $SU(2)$ for spin-1/2 |
 | Observability | interference of charged beams | interference of neutral dipoles |
 
@@ -169,7 +169,7 @@ Both phases are geometric: neither depends on the speed of traversal, and both a
 The further dual is the **He–McKellar–Wilkens (HMW) effect**: a neutral particle carrying an **electric** dipole moment $\vec d$ moving in a **magnetic** field acquires
 
 $$
-\theta_{\mathrm{pha},HMW} =\frac{2\pi 1}{h}\oint\left(\vec B\times\vec d\right)\cdot  d\vec r.
+\theta_{\mathrm{pha},HMW} =\frac{2\pi}{h}\oint\left(\vec B\times\vec d\right)\cdot  d\vec r.
 $$
 
 The coupling is to the **motional electric field** $\vec E_{\mathrm{mot}} = \vec v\times\vec B$ seen by the dipole in its own rest frame. The asymmetry with the AC case is the asymmetry of the Lorentz field transformation in SI: the motional magnetic field is $\vec v\times\vec E/c^2$, while the motional electric field is $\vec v\times\vec B$, so the magnetic-dipole coupling carries the $1/c^2$ and the electric-dipole coupling does not.
@@ -207,7 +207,7 @@ $$
 and the AC phase is independent of $R$:
 
 $$
-\boxed{\;\theta_{\mathrm{pha},AC} = -\frac{2\pi 1}{h\,c^{2}}\cdot  2\pi R E\,\mu_z
+\boxed{\;\theta_{\mathrm{pha},AC} = -\frac{2\pi}{h\,c^{2}}\cdot  2\pi R E\,\mu_z
 = -\frac{2\pi \lambda\,\mu_{z}}{h\,c^{2}\,\epsilon_{0}}\;}
 $$
 
@@ -274,7 +274,7 @@ The geometric character of the phase is established by the **reversal tests**. R
 A neutral particle carrying a magnetic dipole moment $\vec\mu$ and moving along a path $\mathcal{C}$ in an electric field acquires the **Aharonov–Casher phase**
 
 $$
-\boxed{\;\theta_{\mathrm{pha},AC} =\frac{2\pi 1}{h\,c^{2}}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot  d\vec r\;},
+\boxed{\;\theta_{\mathrm{pha},AC} =\frac{2\pi}{h\,c^{2}}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot  d\vec r\;},
 $$
 
 which follows from the rest-frame field $\vec B_2 = \vec B - \frac{1}{c^2}\vec v\times\vec E$ and the Zeeman coupling $-\vec\mu\cdot\vec B_2$. The phase is geometric: it depends on the path and the field but not on the speed, and it reverses sign when the traversal is reversed.
@@ -282,7 +282,7 @@ which follows from the rest-frame field $\vec B_2 = \vec B - \frac{1}{c^2}\vec v
 In the biquaternion algebra the phase is the integral of the $\mathbb{B}_{\Psi}$-valued connection
 
 $$
-\mathcal{A}_{AC} =\frac{2\pi 1}{h\,c^{2}}\left(\vec E\times\vec\mu\right)\cdot  d\vec r
+\mathcal{A}_{AC} =\frac{2\pi}{h\,c^{2}}\left(\vec E\times\vec\mu\right)\cdot  d\vec r
 = \frac{\gamma}{2c^2}\left(\vec E\times i\mathbf e\right)\cdot  d\vec r
 $$
 
@@ -302,10 +302,10 @@ The AC effect is the electric dual of the Aharonov–Bohm effect and the magneti
 | $\tilde S_{\Psi,\eta} =\frac{h}{4\pi}i\vec e_\eta$ | Spin-1/2 operator |
 | $\vec\mu = \gamma\vec S$ | Magnetic dipole moment |
 | $\vec B_2 = \vec B - \tfrac{1}{c^2}\vec v\times\vec E$ | Rest-frame magnetic field (first order in $v/c$) |
-| $\theta_{\mathrm{pha},AC} =\frac{2\pi 1}{h\,c^{2}}\oint(\vec E\times\vec\mu)\cdot d\vec r$ | Aharonov–Casher phase |
-| $\mathcal{A}_{AC} =\frac{2\pi 1}{h\,c^{2}}(\vec E\times\vec\mu)\cdot d\vec r$ | AC connection one-form |
+| $\theta_{\mathrm{pha},AC} =\frac{2\pi}{h\,c^{2}}\oint(\vec E\times\vec\mu)\cdot d\vec r$ | Aharonov–Casher phase |
+| $\mathcal{A}_{AC} =\frac{2\pi}{h\,c^{2}}(\vec E\times\vec\mu)\cdot d\vec r$ | AC connection one-form |
 | $\theta_{\mathrm{pha},AB} =\frac{2\pi ϙ}{h}\oint\vec A\cdot d\vec r$ | Aharonov–Bohm phase |
-| $\theta_{\mathrm{pha},HMW} =\frac{2\pi 1}{h}\oint(\vec B\times\vec d)\cdot d\vec r$ | He–McKellar–Wilkens phase |
+| $\theta_{\mathrm{pha},HMW} =\frac{2\pi}{h}\oint(\vec B\times\vec d)\cdot d\vec r$ | He–McKellar–Wilkens phase |
 | $\lambda$ | Linear charge density of the line-charge geometry |
 | $\Omega_{\mathrm{sgn}}$ | Oriented solid angle (adiabatic limit) |
 

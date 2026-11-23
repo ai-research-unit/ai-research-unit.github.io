@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A quantum system whose Hamiltonian is varied slowly around a closed loop in a parameter space need not return to its original state: beside the **dynamical phase** $-\frac{2\pi 1}{h}\int  E_n\,dr'_t$, which grows with the duration of the journey, an eigenstate can acquire a **geometric phase** that depends only on the loop. This is the **Berry phase**. Its two defining features are that it is a functional of the path rather than of the speed, and that for a closed path it is defined only modulo $2\pi$.
+A quantum system whose Hamiltonian is varied slowly around a closed loop in a parameter space need not return to its original state: beside the **dynamical phase** $-\frac{2\pi}{h}\int  E_n\,dr'_t$, which grows with the duration of the journey, an eigenstate can acquire a **geometric phase** that depends only on the loop. This is the **Berry phase**. Its two defining features are that it is a functional of the path rather than of the speed, and that for a closed path it is defined only modulo $2\pi$.
 
 The phase is computed by two routes. The first integrates the **Berry connection** $\mathcal{A}$ — a $\mathrm{U}(1)$ connection on the parameter space — around the loop; the second integrates the **Berry curvature** $\mathcal{F} = d\mathcal{A}$ over a surface that the loop bounds. Both routes are used below and checked against one another on an explicit example, because their agreement is the content of the statement that the phase is geometric.
 
@@ -29,7 +29,7 @@ $$
 is bounded below by a positive constant along the traversed path, and if the path is traversed slowly enough compared with that gap, then a system started in $|n(R(0))\rangle$ remains in the instantaneous eigenstate up to a phase:
 
 $$
-|\tilde{Ξ}(r'_t)\rangle  = \exp(i\theta_{\mathrm{ber}})\,\exp(-i\theta_{\mathrm{dyn}})\,|n(R(r'_t))\rangle  .\qquad \theta_{\mathrm{ber}}=\gamma_n(r'_t),\quad \theta_{\mathrm{dyn}}=\frac{2\pi 1}{h}\int_0^{r'_{t}}E_n(R(r'_{t,2}))\,dr'_{t,2}
+|\tilde{Ξ}(r'_t)\rangle  = \exp(i\theta_{\mathrm{ber}})\,\exp(-i\theta_{\mathrm{dyn}})\,|n(R(r'_t))\rangle  .\qquad \theta_{\mathrm{ber}}=\gamma_n(r'_t),\quad \theta_{\mathrm{dyn}}=\frac{2\pi}{h}\int_0^{r'_{t}}E_n(R(r'_{t,2}))\,dr'_{t,2}
 $$
 Both angles are real: the Berry angle because a geometric phase is real, the dynamical angle because an energy over $\frac{h}{2\pi}$ is real.
 
@@ -41,7 +41,7 @@ d\gamma_{n}/dr'_t = i\,\langle n(R(r'_t))|\frac{d}{dr'_t}|n(R(r'_t))\rangle ,
 \gamma_n = i\int_{\mathcal{C}}\langle n|\nabla_R n\rangle\cdot dR .
 $$
 
-The right-hand side is a line integral of a one-form on parameter space; it does not refer to the rate at which the path is traversed. Replacing $R(r'_t)$ by a reparametrization of the same curve leaves $\gamma_n$ unchanged, while the dynamical phase $-\frac{2\pi 1}{h}\int  E_n\,dr'_t$ scales with the duration. This is the precise sense in which the second phase is **geometric** and the first is not; the speed-independence is checked explicitly on the example below.
+The right-hand side is a line integral of a one-form on parameter space; it does not refer to the rate at which the path is traversed. Replacing $R(r'_t)$ by a reparametrization of the same curve leaves $\gamma_n$ unchanged, while the dynamical phase $-\frac{2\pi}{h}\int  E_n\,dr'_t$ scales with the duration. This is the precise sense in which the second phase is **geometric** and the first is not; the speed-independence is checked explicitly on the example below.
 
 The eigenstate is defined only up to a phase, so the integrand is not a gauge-invariant object by itself. Writing $|n\rangle \mapsto \exp(i\theta_{\mathrm{gau}}(R))|n\rangle$ for a real function $\theta_{\mathrm{gau}}$ whose phase factor $\exp(i\theta_{\mathrm{gau}})$ is single-valued, the phase acquired around a **closed** loop shifts by
 
@@ -282,7 +282,7 @@ The two routes agree, and they agree for **every** $\theta_0$, not merely at the
 
 The equator, $\theta_0 = \pi/2$, is the case $\gamma_+ = -\pi$; the half-angle form $-\theta_{\mathrm{sol}}/2$ is the standard spin-1/2 result, with the sign convention that the spin-up branch is the one followed.
 
-**Speed independence.** Replacing the uniform rotation $\theta_{\mathrm{azm}} = \omega r'_t/c$ by a non-uniform $\theta_{\mathrm{azm}}(r'_t) = 2\pi(r'_t/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_{\theta_{\mathrm{azm}}}\,d\theta_{\mathrm{azm}}$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\theta_{\mathrm{sol}}/2$ generally. The dynamical phase over the same period is $-\frac{2\pi 1}{h}\int_0^T  \frac{R}{2}\,dr'_t = -\frac{R\,T}{2\,\frac{h}{2\pi}}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".
+**Speed independence.** Replacing the uniform rotation $\theta_{\mathrm{azm}} = \omega r'_t/c$ by a non-uniform $\theta_{\mathrm{azm}}(r'_t) = 2\pi(r'_t/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_{\theta_{\mathrm{azm}}}\,d\theta_{\mathrm{azm}}$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\theta_{\mathrm{sol}}/2$ generally. The dynamical phase over the same period is $-\frac{2\pi}{h}\int_0^T  \frac{R}{2}\,dr'_t = -\frac{R\,T}{2\,\frac{h}{2\pi}}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".
 
 **The $2\pi$ ambiguity, exhibited.** The spin-down branch makes the patch structure visible. In the gauge adapted to the north pole the spin-down connection is
 

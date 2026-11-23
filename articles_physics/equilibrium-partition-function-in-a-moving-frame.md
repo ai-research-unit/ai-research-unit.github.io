@@ -71,7 +71,7 @@ and the rest frame is $\gamma=1$, $\vec\beta_{\mathrm{vel}}=0$. The temporal com
 The thermal exponent is the contraction of the thermal element with the flow momentum, divided by the action quantum, and the contraction is a scalar. Write
 
 $$
--\frac{2\pi 1}{h}\,\beta_{\Phi,\nu}\,p_{\Phi,\nu},
+-\frac{2\pi}{h}\,\beta_{\Phi,\nu}\,p_{\Phi,\nu},
 \qquad
 p_{\Phi,\nu}=m\,\tilde V_{\Phi,\nu},
 \qquad
@@ -81,7 +81,7 @@ $$
 so that
 
 $$
--\frac{2\pi 1}{h}\,\beta_{\Phi,\nu}p_{\Phi,\nu}
+-\frac{2\pi}{h}\,\beta_{\Phi,\nu}p_{\Phi,\nu}
 =-\frac{\beta}{c \frac{h}{2\pi}}\,m\,\langle\tilde V_{\Phi}\rangle_{\natural}
 =-\frac{\beta}{c \frac{h}{2\pi}}\,m\,(-c^{2})
 =\frac{2\pi \beta\,m\,c}{h}=\beta\,k_m .
@@ -94,8 +94,8 @@ Read in the rest frame, the display is the expected one. There $\beta_{\Phi,\nu}
 Read in the moving frame, the display splits into two pieces and both are physical. Expanding the contraction with the components above,
 
 $$
--\frac{2\pi 1}{h}\beta_{\Phi,\nu}p_{\Phi,\nu}
-=\frac{2\pi 1}{h}\left(\beta\gamma\,\frac{E}{c}-\beta\gamma\,\vec\beta_{\mathrm{vel}}\cdot\vec p\right)
+-\frac{2\pi}{h}\beta_{\Phi,\nu}p_{\Phi,\nu}
+=\frac{2\pi}{h}\left(\beta\gamma\,\frac{E}{c}-\beta\gamma\,\vec\beta_{\mathrm{vel}}\cdot\vec p\right)
 =\frac{2\pi \beta\gamma}{h}\left(\frac{E}{c}-\vec\beta_{\mathrm{vel}}\cdot\vec p\right),
 $$
 
@@ -108,7 +108,7 @@ where $p_{\Phi,t}=iE/c$ and the two $i$'s have been multiplied out; the factor $
 The partition function is the trace of the thermal operator, and its value is the rest-frame value. With the thermal element of the moving state,
 
 $$
-Z=2\,\mathrm{Sc}\left(\exp\left(-\frac{2\pi 1}{h}\beta_{\Phi,\nu}p_{\Phi,\nu}\right)\right),
+Z=2\,\mathrm{Sc}\left(\exp\left(-\frac{2\pi}{h}\beta_{\Phi,\nu}p_{\Phi,\nu}\right)\right),
 $$
 
 and since the exponent in the trace is $\beta k_m$ independently of the boost, as the previous section showed, the trace is the same number in every frame:

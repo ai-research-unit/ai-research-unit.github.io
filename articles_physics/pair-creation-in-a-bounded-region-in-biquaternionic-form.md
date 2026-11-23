@@ -83,7 +83,7 @@ The two lines are the whole of the problem. Each is the continuity of one ratio 
 Let the energy approach the lower edge of the gap, $E\to-mc^{2}$ from above. The decay constant vanishes there, $k_{\Phi,\mathrm{ev}}\to0$, but the factor $E+mc^{2}$ vanishes faster, since
 
 $$
-\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{2\pi 1}{h c}\sqrt{\frac{mc^{2}-E}{mc^{2}+E}}\;\longrightarrow\;\frac{2\pi 1}{h c}\sqrt{\frac{2mc^{2}}{\varepsilon}},
+\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{2\pi}{h c}\sqrt{\frac{mc^{2}-E}{mc^{2}+E}}\;\longrightarrow\;\frac{2\pi}{h c}\sqrt{\frac{2mc^{2}}{\varepsilon}},
 \qquad
 \varepsilon=E+mc^{2},
 $$

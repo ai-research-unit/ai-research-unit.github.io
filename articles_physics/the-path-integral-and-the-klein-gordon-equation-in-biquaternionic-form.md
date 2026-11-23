@@ -201,7 +201,7 @@ $$
 the exponent separates into the classical action, a linear term that vanishes by stationarity, and the quadratic fluctuation term $\frac{1}{2}\zeta(\Box_\Phi-k_m^{2})\zeta$. The one-loop approximation is the Gaussian integral over $\zeta$, giving
 
 $$
-Z[J]\simeq \exp(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}})\,,\qquad \theta_{\mathrm{src}}=\frac{2\pi 1}{h}\int J^*\xi_{\mathrm{cl}}\in\mathbb{R},
+Z[J]\simeq \exp(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}})\,,\qquad \theta_{\mathrm{src}}=\frac{2\pi}{h}\int J^*\xi_{\mathrm{cl}}\in\mathbb{R},
 \left[\det\left(\Box_\Phi-k_m^{2}\right)\right]^{-1/2},
 $$
 
