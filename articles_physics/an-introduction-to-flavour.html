@@ -122,7 +122,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$1$</td>
-<td>$\nu_{eL}$</td>
+<td>$\nu_{\mathrm{neu},eL}$</td>
 <td>$0$</td>
 <td>electron neutrino</td>
 <td>$<8\times10^{-7}$</td>
@@ -234,7 +234,7 @@ $$</p>
 </tr>
 <tr>
 <td>$9$</td>
-<td>$\nu_{eR}$</td>
+<td>$\nu_{\mathrm{neu},eR}$</td>
 <td>$0$</td>
 <td>electron neutrino</td>
 <td>$<8\times10^{-7}$</td>
@@ -352,7 +352,7 @@ $$</p>
 <p>The same columns do not change between a chiral pair. Rows 2 and 10 carry one number twice, because a mass is a property of the Dirac particle and not of a chirality.</p>
 <p>So the sixteen rows carry four distinct masses per generation, and twelve distinct masses in the whole table: nine electrically charged fermion masses and three neutrino masses. That is the entire flavour content of the model, and it is what the three handles below have to explain.</p>
 <p><strong>The rows name particles, and the masses are the particles'.</strong> Charge conjugation does not add a row: the antiparticle of a field is a conjugate mode of that same field, with the same mass, the opposite $Q$, the opposite $B-L$ and conjugate colour, and the charges are listed in <a href="particle-classification-three-grids-one-name-in-every-cell.html">Particle Classification</a>, <em>The One Sharp Prediction: Sameness</em>A. So the sixteen rows are the whole of the matter and the antiparticles add no mass, no lifetime and no branching ratio. <strong>Antiparticles are not a fourth handle.</strong> They are the same three handles with the signs of the charges reversed, which is why they are mentioned here once and not tabulated twice.</p>
-<p>The neutrino rows are the ones that are not numbers. A light neutrino mass is bounded and not measured, $m_\beta<0.45$ eV from tritium decay (the 2024 KATRIN limit) and $\sum m_\nu<0.12$ eV from cosmology, so the entries read stable and the oscillation is treated separately in <em>The One Exception: Oscillation</em>. The bound applies to the light eigenstates only. The right-handed row is the one that carries no bound at all: in the model's spectrum $\nu_R$ is a gauge singlet, its mass is not constrained by tritium decay, and the seesaw of <em>Mass: the Column the Model Does Not Compute</em> places it at a scale that is not written anywhere in this table.</p>
+<p>The neutrino rows are the ones that are not numbers. A light neutrino mass is bounded and not measured, $m_\beta<0.45$ eV from tritium decay (the 2024 KATRIN limit) and $\sum m_{\nu_{\mathrm{neu}}}<0.12$ eV from cosmology, so the entries read stable and the oscillation is treated separately in <em>The One Exception: Oscillation</em>. The bound applies to the light eigenstates only. The right-handed row is the one that carries no bound at all: in the model's spectrum $\nu_{\mathrm{neu},R}$ is a gauge singlet, its mass is not constrained by tritium decay, and the seesaw of <em>Mass: the Column the Model Does Not Compute</em> places it at a scale that is not written anywhere in this table.</p>
 <h2 id="the-three-handles">The Three Handles</h2>
 <p>Read the table by column instead of by row and the tripling appears as three differences.</p>
 <div class="table-scroll"><table>
@@ -436,9 +436,9 @@ $$</p>
 <p>The negative result is the headline. A generic matrix has no preferred spectrum, so the hierarchy $1:206.8:3477$ is as unexplained here as it is in the Standard Model. Nothing in the model prefers one set of eigenvalues to another, and no argument inside the model selects the observed set.</p>
 <p>Two structural remarks do belong to the model. The right-handed neutrino slot exists, so the seesaw mechanism needs no field the model does not already have. And because the scalar sector is fixed and small, the number of Yukawa matrices is finite and small, though small is not the same as few.</p>
 <h2 id="lifetime-the-one-relation-phase-space-computes">Lifetime: the One Relation Phase Space Computes</h2>
-<p>A lifetime is the inverse width, $\tau=\frac{h}{2\pi \Gamma}$, and the width is fixed by the mass and by the open channels. For the muon and the tau the final state is the same, $\ell\to e\bar\nu_e\nu_\ell$, and the parent mass is far above every threshold. The width then scales as the fifth power of the parent mass:</p>
+<p>A lifetime is the inverse width, $\tau=\frac{h}{2\pi \Gamma}$, and the width is fixed by the mass and by the open channels. For the muon and the tau the final state is the same, $\ell\to e\bar\nu_{\mathrm{neu},e}\nu_\ell$, and the parent mass is far above every threshold. The width then scales as the fifth power of the parent mass:</p>
 <p>$$
-\frac{\Gamma(\tau\to e\bar\nu_e\nu_\tau)}{\Gamma(\mu\to e\bar\nu_e\nu_\mu)}=\left(\frac{m_\tau}{m_\mu}\right)^{5}.
+\frac{\Gamma(\tau\to e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\tau})}{\Gamma(\mu\to e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\mu})}=\left(\frac{m_\tau}{m_\mu}\right)^{5}.
 $$</p>
 <p>This is a statement the model predicts without knowing anything, and it is exact enough to fail, which is why it is worth checking.</p>
 <p>$$
@@ -446,11 +446,11 @@ $$</p>
 $$</p>
 <p>and from the measured lifetime of the tau, $\tau_\tau=2.903\times10^{-13}$ s, its electronic branching ratio $0.1782$, and the measured muon lifetime $2.1969811\times10^{-6}$ s,</p>
 <p>$$
-\frac{\Gamma(\tau\to e\bar\nu\nu)}{\Gamma(\mu\to\mathrm{all})}
+\frac{\Gamma(\tau\to e\bar\nu_{\mathrm{neu}}\nu_{\mathrm{neu}})}{\Gamma(\mu\to\mathrm{all})}
 =\frac{0.1782\times h/2.903\times10^{-13}}{h/2.1969811\times10^{-6}}
 =1.3486\times10^{6}.
 $$</p>
-<p>The numerator is a partial width and the denominator a total width, which is legitimate only because the muon has one channel, so its total width is its partial width to $e\bar\nu_e\nu_\mu$. The check uses the full precision values; the table rounds them to three figures.</p>
+<p>The numerator is a partial width and the denominator a total width, which is legitimate only because the muon has one channel, so its total width is its partial width to $e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\mu}$. The check uses the full precision values; the table rounds them to three figures.</p>
 <p>The two agree to $0.26$ parts in a thousand. The fifth power is confirmed, and what it confirms is that the lifetime difference between the muon and the tau is nothing but the mass difference. Two of the three handles are one handle.</p>
 <p>The same shift applied to quarks fails, and the failure is the informative part.</p>
 <p>$$
@@ -474,12 +474,12 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mu$</td>
-<td>$e\bar\nu_e\nu_\mu$ only</td>
+<td>$e\bar\nu_{\mathrm{neu},e}\nu_{\mathrm{neu},\mu}$ only</td>
 <td>$m_\mu$ lies below every hadronic threshold</td>
 </tr>
 <tr>
 <td>$\tau$</td>
-<td>$e\bar\nu\nu$, $\mu\bar\nu\nu$, $\pi\nu$, $\rho\nu$, $a_1\nu$, and more</td>
+<td>$e\bar\nu_{\mathrm{neu}}\nu_{\mathrm{neu}}$, $\mu\bar\nu_{\mathrm{neu}}\nu_{\mathrm{neu}}$, $\pi\nu_{\mathrm{neu}}$, $\rho\nu_{\mathrm{neu}}$, $a_1\nu_{\mathrm{neu}}$, and more</td>
 <td>$m_\tau$ lies above the two-pion threshold</td>
 </tr>
 <tr>
@@ -571,13 +571,13 @@ $$</p>
 <h2 id="the-one-exception-oscillation">The One Exception: Oscillation</h2>
 <p>Neutrino oscillation is the only measured change of flavour, and it exists because the neutrino mass matrix cannot be rotated away. For the charged leptons the rotation $V$ in $Y=U\operatorname{diag}(y)V^{\dagger}$ is a field redefinition of the Standard Model's own currents; in this frame it is one factor of the leptoquark mixing $K$. For the neutrinos the mass term is Majorana, so the same rotation leaves a physical residue:</p>
 <p>$$
-P(\nu_e\to\nu_\mu)=\sin^{2}2\theta\,\sin^{2}\!\left(\frac{\Delta m^{2}L}{4E}\right).
+P(\nu_{\mathrm{neu},e}\to\nu_{\mathrm{neu},\mu})=\sin^{2}2\theta\,\sin^{2}\!\left(\frac{\Delta m^{2}L}{4E}\right).
 $$</p>
 <p>Read as a statement about this article's subject, the formula needs two things: a non-degenerate mass column, $\Delta m^{2}\neq0$, and a misaligned basis, $\theta\neq0$. Both are properties of the Yukawa matrix and of nothing else. Oscillation is therefore not an exception to the model's flavour blindness but the sharpest confirmation of it, since the blindness is exactly what makes the misalignment the only available source.</p>
 <p>It is also the only place where a flavour label changes during propagation, with neither a charged current nor a loop involved.</p>
 <h2 id="negative-results-stated-once">Negative Results, Stated Once</h2>
 <p>Four things this article does not have, listed so that no reader supplies them.</p>
-<p>The number three is not derived. The multiplicity is free, so the algebra permits any number of generations. What fixes three is measurement: the $Z$ invisible width gives $N_\nu=2.984\pm0.008$, big-bang nucleosynthesis gives $N_{\mathrm{eff}}\approx3$, and direct search closes the rest. CP violation requires at least three generations, and that is a necessary condition rather than a sufficient one: with three generations the phase and the angles must also be non-zero, which is what the measured Jarlskog invariant says they are.</p>
+<p>The number three is not derived. The multiplicity is free, so the algebra permits any number of generations. What fixes three is measurement: the $Z$ invisible width gives $N_{\nu_{\mathrm{neu}}}=2.984\pm0.008$, big-bang nucleosynthesis gives $N_{\mathrm{eff}}\approx3$, and direct search closes the rest. CP violation requires at least three generations, and that is a necessary condition rather than a sufficient one: with three generations the phase and the angles must also be non-zero, which is what the measured Jarlskog invariant says they are.</p>
 <p>No mass is derived. The three masses of a sector are the eigenvalues of an arbitrary matrix. The hierarchy $1:206.8:3477$ is input.</p>
 <p>No mixing angle and no phase is derived. Nine of the eighteen real parameters of $Y$ survive, and all nine are measured.</p>
 <p>Flavour-changing neutral currents of the neutral gauge bosons are absent at tree level. That is a prediction rather than a gap, and its test is the LEP table of <em>The One Sharp Prediction: Sameness</em>. A leptoquark exchange is not one of them: it carries colour and charge, and the tree-level kaon channel is its business.</p>
