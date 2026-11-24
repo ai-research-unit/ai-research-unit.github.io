@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Neutrino Closure: Alikhanov&#x27;s $3/4$, the Silver Ratio, and the Count $Q_N=(N+1)/2N$ — Biquaternion Universe</title>
+  <meta name="description" content="Status of this note. Every claim carries one of seven tags, and the tags are not decoration. [ALGEBRA] is an exact consequence of a definition.…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-neutrino-closure-alikhanovs-math0-the-silver-ratio-and-the-count-math1"><strong>The Neutrino Closure: Alikhanov's $3/4$, the Silver Ratio, and the Count $Q_N=(N+1)/2N$</strong></h1>
+<p><em>Status of this note.</em> Every claim carries one of seven tags, and the tags are not decoration. [ALGEBRA] is an exact consequence of a definition. [PUBLISHED] is a claim in the literature, attributed. [ANSATZ] is an assumption made here and not derived.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>tag</th>
+<th>meaning</th>
+<th>weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[MEASURED]</td>
+<td>a number from experiment, independent of the corpus</td>
+<td>usable</td>
+</tr>
+<tr>
+<td>[PUBLISHED]</td>
+<td>a claim already in the literature, attributed</td>
+<td>usable</td>
+</tr>
+<tr>
+<td>[ALGEBRA]</td>
+<td>exact consequence of a definition, no physics assumed</td>
+<td>usable, but often trivial</td>
+</tr>
+<tr>
+<td>[ANSATZ]</td>
+<td>an assumption made here, not derived</td>
+<td>conditional</td>
+</tr>
+<tr>
+<td>[SPECULATION]</td>
+<td>a guess with no support beyond plausibility</td>
+<td>none</td>
+</tr>
+<tr>
+<td>[FAILED]</td>
+<td>tried, computed, and it does not work</td>
+<td>negative</td>
+</tr>
+<tr>
+<td>[WITHDRAWN]</td>
+<td>asserted in an earlier version, now retracted</td>
+<td>negative</td>
+</tr>
+</tbody>
+</table></div>
+<p>This is the third of four notes that replace <em>Flavour Research: The Ladder Arithmetic</em>, and it is the only one that is not a split. The previous note contained no neutrino sector at all: the closure was written for a triple with a known absolute scale, and the neutrinos have none. This note asks what the closure says when the scale is unknown, and the answer has a shape worth stating carefully, because the variable in which it holds is not the variable of the charged-lepton relation.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Two numbers are measured in the neutrino sector: $\Delta m^{2}_{21}$ and $\Delta m^{2}_{31}$. No mass is measured. The closure is scale-free but not offset-free, so a statement about the masses cannot be tested here.</p>
+<p>The closure can still be written, on the two measured differences rather than on the masses. Written that way it is Alikhanov's relation, and the exact content is one line of algebra:</p>
+<p>$$
+K=\frac{\Delta m^{2}_{21}+\Delta m^{2}_{31}}{\left(\sqrt{\Delta m^{2}_{21}}+\sqrt{\Delta m^{2}_{31}}\right)^{2}}=\frac{3}{4}
+\iff
+\frac{\Delta m^{2}_{31}}{\Delta m^{2}_{21}}=17+12\sqrt2=33.9706 .
+$$</p>
+<p>Measured, the ratio is $33.8275$ and $K=0.7496$: the agreement is $0.42\%$ in the ratio and $0.05\%$ in $K$.</p>
+<p>Two things make this weaker than the charged-lepton relation, and both are stated here rather than at the end. The agreement is three orders of magnitude worse. And the variable is the squared mass, so the functional being applied is not Koide's functional; applied to the masses themselves the same pair gives $0.586$, which is nothing.</p>
+<p>The note also carries the counting. For $N$ rungs there are two natural generalisations of the closure, $Q_N=2/N$ and $Q_N=(N+1)/(2N)$, and they agree at one count only, which is three. At two rungs the first is empty and the second is $3/4$, which is Alikhanov's value. <strong>So the two sectors agree on a principle and disagree on a coefficient, and three is the unique count at which the disagreement vanishes.</strong></p>
+<h2 id="1-why-this-sector-is-different">1. Why This Sector Is Different</h2>
+<p><strong>[MEASURED]</strong> Oscillation measures differences of squared masses:</p>
+<p>$$
+\Delta m^{2}_{21}=7.42\times10^{-5}\ \mathrm{eV}^{2},
+\qquad
+\Delta m^{2}_{31}=2.510\times10^{-3}\ \mathrm{eV}^{2},
+$$</p>
+<p>with the sign of the second still unknown. The absolute scale is bounded from above by cosmology and from below by the oscillation pattern, and no experiment fixes it.</p>
+<p><strong>[ALGEBRA]</strong> The closure ratio is homogeneous of degree zero in the masses, so it is blind to an overall scale but not to an offset. Under $m_i\to m_i+c$, numerator and denominator do not scale together, and $Q$ moves. <strong>So the unmeasured quantity is exactly the one that matters, and a closure on the masses is untestable until the offset is known.</strong></p>
+<p>There are two ways out.</p>
+<p>The first is to take a scale from cosmology and test the closure on the masses. That is what the texture literature does, and it is why its predictions come in families: each family is a different assumption about the lightest mass.</p>
+<p>The second is to write the closure on the two measured differences, which are known, and check whether it holds. <strong>That route uses measured numbers only and assumes nothing about the scale.</strong> It is the route taken here, and it is Alikhanov's.</p>
+<p><strong>The price is that the variable changes.</strong> A closure on $\Delta m^{2}$ is a closure on squared masses, and the functional</p>
+<p>$$
+K=\frac{x_1+x_2}{\left(\sqrt{x_1}+\sqrt{x_2}\right)^{2}},
+\qquad x_i=\Delta m^{2}_{i1},
+$$</p>
+<p>is not the functional $Q$ of the charged leptons applied to $m_i$. Section 4 computes what the difference costs.</p>
+<h2 id="2-the-count-and-why-math22-is-not-math23">2. The Count, and Why $3/4$ Is Not $2/3$</h2>
+<h3 id="21-two-generalisations-that-agree-only-at-three">2.1 Two generalisations that agree only at three</h3>
+<p><strong>[ALGEBRA]</strong> For $N$ rungs the ratio lies in $[1/N,1]$, and two rules present themselves.</p>
+<p>The first fixes the spread at the charged-lepton value, $k=1$, which gives</p>
+<p>$$
+Q_N=\frac{1+k^{2}}{N}=\frac{2}{N}.
+$$</p>
+<p>The second fixes the position halfway between the two ends of the allowed interval,</p>
+<p>$$
+Q_N=\frac{N+1}{2N}.
+$$</p>
+<p>They are different sequences, and they coincide only once:</p>
+<p>$$
+\frac{2}{N}=\frac{N+1}{2N}\iff4=N+1\iff N=3 .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N$</th>
+<th>$k=1$ rule, $2/N$</th>
+<th>halfway rule, $(N+1)/(2N)$</th>
+<th>equal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$1.000$</td>
+<td>$0.750$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$0.667$</td>
+<td>$0.667$</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$0.500$</td>
+<td>$0.625$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$0.400$</td>
+<td>$0.600$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[ALGEBRA]</strong> At $N=2$ the first rule is empty. With two roots,</p>
+<p>$$
+\sqrt{\rho_1}=\mu(1+k),
+\qquad
+\sqrt{\rho_2}=\mu(1-k),
+\qquad
+Q_2=\frac{1+k^{2}}{2},
+$$</p>
+<p>so $Q_2=1$ requires $k=1$, hence $\sqrt{\rho_2}=0$: a massless member and no pair left. The second rule at $N=2$ gives $k^{2}=1/2$, which is a pair with $\sigma=\mu/\sqrt2$ and both members positive. <strong>So for two rungs the halfway rule is the only non-empty closure, and its value is $3/4$.</strong></p>
+<p><strong>This is the point of the note, and it is not a unification.</strong> The neutrino relation is not the charged-lepton relation with the same coefficient; it is the same geometric principle — the ratio sits halfway between the democratic end and the single-participant end — applied at a count where the coefficient differs. <strong>The two sectors agree on the principle and disagree on $k$, and three is the unique count at which the disagreement vanishes.</strong></p>
+<h3 id="22-the-same-statement-as-a-purity">2.2 The same statement as a purity</h3>
+<p><strong>[ALGEBRA]</strong> With the purity reading of the companion note, $N_{\rm eff}=1/Q$, so $Q_2=3/4$ is $N_{\rm eff}=4/3$: the light pair shares the mass as if among four thirds of two. Measured, $1/K=1.334\,0$ against $4/3=1.333\,3$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>$Q$</th>
+<th>$N_{\rm eff}$</th>
+<th>$k^{2}=NQ-1$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>charged leptons, $N=3$</td>
+<td>$0.666\,660$</td>
+<td>$1.500\,010$</td>
+<td>$0.999\,982$</td>
+</tr>
+<tr>
+<td>neutrino pair, $N=2$</td>
+<td>$0.749\,627$</td>
+<td>$1.334\,0$</td>
+<td>$0.499\,254$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last column is the honest statement: the lepton coefficient is one and the neutrino coefficient is one half. <strong>Two sectors, two coefficients, one principle.</strong></p>
+<h2 id="3-the-relation-on-the-measured-pair">3. The Relation on the Measured Pair</h2>
+<p><strong>[PUBLISHED]</strong> Write the two measured differences as a pair and apply the two-term closure:</p>
+<p>$$
+K=\frac{x_1+x_2}{\left(\sqrt{x_1}+\sqrt{x_2}\right)^{2}},
+\qquad x_1=\Delta m^{2}_{21},\quad x_2=\Delta m^{2}_{31},
+\qquad R=\frac{x_2}{x_1}.
+$$</p>
+<p>Then $K=\left(1+R\right)/\left(1+\sqrt R\right)^{2}$, and $K=3/4$ is Alikhanov's value for neutrinos.</p>
+<p><strong>[ALGEBRA]</strong> The solution is exact and elementary. Write $k=\left(1-\sqrt R\right)/\left(1+\sqrt R\right)$; then</p>
+<p>$$
+K=\frac{1+k^{2}}{2},
+$$</p>
+<p>which is the $N=2$ case of §2, so $K=3/4$ is $k^{2}=1/2$ and $k$ has modulus $1/\sqrt2$. Solving for the physical branch,</p>
+<p>$$
+\sqrt R=\frac{1+1/\sqrt2}{1-1/\sqrt2}=\frac{\sqrt2+1}{\sqrt2-1}=3+2\sqrt2=\left(1+\sqrt2\right)^{2},
+$$</p>
+<p>and therefore</p>
+<p>$$
+R=\left(3+2\sqrt2\right)^{2}=17+12\sqrt2=33.9706 .
+$$</p>
+<p><strong>So the closure at two rungs is the silver ratio, twice over:</strong> the square root of the measured ratio is $3+2\sqrt2=5.8284$ and the ratio itself is $17+12\sqrt2=33.9706$. The number is the square of the silver ratio $1+\sqrt2=2.4142$, and it equals its own reciprocal shifted by six, $1/\left(3-2\sqrt2\right)=3+2\sqrt2$.</p>
+<p><strong>A second reading of the same statement.</strong> With the lightest mass at zero the masses are $m_2=\sqrt{x_1}$ and $m_3=\sqrt{x_2}$, so $m_3/m_2=\sqrt R$ and the silver ratio is a mass ratio:</p>
+<p>$$
+\sqrt{\frac{\Delta m^{2}_{31}}{\Delta m^{2}_{21}}}=\frac{m_3}{m_2}=3+2\sqrt2 .
+$$</p>
+<h2 id="4-what-the-data-say-and-what-the-variable-costs">4. What the Data Say, and What the Variable Costs</h2>
+<p><strong>[MEASURED]</strong> With the parameters of §1:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R=\Delta m^{2}_{31}/\Delta m^{2}_{21}$</td>
+<td>$33.827\,5$</td>
+</tr>
+<tr>
+<td>$17+12\sqrt2$</td>
+<td>$33.970\,6$</td>
+</tr>
+<tr>
+<td>difference in $R$</td>
+<td>$-0.42\%$</td>
+</tr>
+<tr>
+<td>$\sqrt R=m_3/m_2$ at $m_1=0$</td>
+<td>$5.816\,1$</td>
+</tr>
+<tr>
+<td>$3+2\sqrt2$</td>
+<td>$5.828\,4$</td>
+</tr>
+<tr>
+<td>difference in the root</td>
+<td>$-0.21\%$</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>$0.749\,63$</td>
+</tr>
+<tr>
+<td>$3/4$</td>
+<td>$0.750\,00$</td>
+</tr>
+<tr>
+<td>difference in $K$</td>
+<td>$-0.05\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three differences are one difference at three magnifications.</strong> $K$ is the flattest variable near the solution, so a $0.05\%$ miss in $K$ is $0.21\%$ in the root and $0.42\%$ in the ratio. A reader who quotes one row without the others has quoted the most flattering one.</p>
+<p><strong>[ALGEBRA]</strong> Now the cost of the variable. Apply the closure to the masses instead, with $m_1=0$:</p>
+<p>$$
+Q=\frac{m_2+m_3}{\left(\sqrt{m_2}+\sqrt{m_3}\right)^{2}}
+=\frac{1+\sqrt R}{\left(1+R^{1/4}\right)^{2}}=0.5856 .
+$$</p>
+<p><strong>That number is not $2/3$ and it is not $3/4$.</strong> Applying the same closure to the same pair, in the variable of the charged leptons, gives something with no short form. So the neutrino agreement holds in the squared-mass variable and only there.</p>
+<p><strong>What that means, stated without softening.</strong> Koide's functional and Alikhanov's functional are different functions of the same two numbers, and nothing in the corpus says which one a flavon potential should produce. A potential whose minimum is at equal singlet and octet weight produces the closure in the variable in which the eigenvalues are the square roots of the masses. If the flavon eigenvalues are the $\Delta m^{2}$ and the masses are their square roots, the potential produces Alikhanov's relation; if the eigenvalues are the masses, it produces Koide's and the neutrinos miss. <strong>The two sectors differ in which variable is fundamental, and that is the weakest joint in the whole programme.</strong></p>
+<p><strong>What would repair it.</strong> A model in which one flavon supplies both sectors, with the seesaw supplying the square root between them. The corpus does not have one, and this note does not invent one.</p>
+<h2 id="5-a-texture-that-realises-it-exactly">5. A Texture That Realises It Exactly</h2>
+<p><strong>[PUBLISHED]</strong> The relation is realised by a neutrino mass matrix whose eigenvalues are</p>
+<p>$$
+\left(0,\ \sqrt2-1,\ \sqrt2+1\right)m_0 .
+$$</p>
+<p><strong>[ALGEBRA]</strong> The ratio is exact:</p>
+<p>$$
+\frac{\sqrt2+1}{\sqrt2-1}=\left(1+\sqrt2\right)^{2}=3+2\sqrt2,
+\qquad
+\left(\frac{\sqrt2+1}{\sqrt2-1}\right)^{2}=17+12\sqrt2 .
+$$</p>
+<p>So the texture and the closure are the same statement written twice, and the check is one line. This is the value of the texture literature in this sector: it turns a relation between measured differences into a matrix, and a matrix can be diagonalised, mixed and confronted with the mixing data.</p>
+<p><strong>[ALGEBRA]</strong> One warning, because the numbers are close and the confusion is easy. The texture's masses give $Q=0.5858$ under the mass functional, and the measured pair gives $0.5856$; the two agree because the texture is built from the same ratio. <strong>Neither $0.5858$ nor $0.5856$ is a closure value.</strong> A note that reported either as evidence for $2/3$ would be reporting the wrong functional's output, and this is the trap §4 exists to name.</p>
+<p><strong>[PUBLISHED]</strong> The papers that construct these textures classify them by the number of directions fixed for all values of the phase, and the catalog runs to several hundred families. Their predictions for the normal ordering include a lightest mass near $17$ meV once the texture is perturbed off the exact silver point, an effective Majorana mass $m_{\beta\beta}$ of a few meV, and a sum of neutrino masses near $89$ meV. <strong>These numbers are quoted and not recomputed here</strong>; the arithmetic in this note stops at the eigenvalue ratio, which is the part that is exact.</p>
+<p><strong>[ALGEBRA]</strong> One statement from that literature is worth importing because it is exact and does not depend on the texture count: if the two nonzero eigenvalues are in the silver ratio, the two-term closure holds identically, for every overall scale and every mixing angle. <strong>The closure fixes the spectrum and not the mixing.</strong> A texture that also predicts a mixing angle is predicting something else, and the prediction should be counted separately.</p>
+<h2 id="6-what-the-corpus-can-and-cannot-take">6. What the Corpus Can and Cannot Take</h2>
+<p><strong>It can take the relation.</strong> $K=3/4$, equivalently $R=17+12\sqrt2$, equivalently $m_3/m_2=3+2\sqrt2$ at $m_1=0$, is exact algebra, it uses only measured quantities, and the corpus had no statement in this sector.</p>
+<p><strong>It can take the counting.</strong> The halfway rule gives $3/4$ at two rungs and $2/3$ at three, and the two rules coincide only at three. That sharpens the "why three" discussion: if the same principle is applied in both sectors, three is the unique count at which the two readings agree.</p>
+<p><strong>It cannot take the agreement as evidence of the same strength.</strong> The lepton closure holds to $10^{-6}$; this one to $5\times10^{-4}$, on data known to $10^{-2}$.</p>
+<p><strong>It cannot take the coefficient as shared.</strong> $k^{2}=1$ for the leptons and $k^{2}=1/2$ for the neutrino pair. A note that says "Koide with $3/4$" without saying that the coefficient, the count and the functional all changed has said something false in a way that is easy to miss.</p>
+<p><strong>What would settle it.</strong> A measurement of the lightest mass would let the closure be written on the masses, where the lepton functional applies, and the prediction would then be sharp: one constraint on three masses. Until then the sector carries a choice of variable in every direction.</p>
+<h2 id="summary">Summary</h2>
+<p>The neutrino sector has no measured absolute scale, so the closure is written on the two measured mass-squared differences. There it is Alikhanov's relation: $K=3/4$, equivalently $\sqrt{\Delta m^{2}_{31}/\Delta m^{2}_{21}}=3+2\sqrt2=5.8284$, equivalently $\Delta m^{2}_{31}/\Delta m^{2}_{21}=17+12\sqrt2=33.9706$.</p>
+<p>Measured, the ratio is $33.8275$ and $K=0.7496$. The agreement is $0.42\%$ in the ratio, $0.21\%$ in its root and $0.05\%$ in $K$; the three are one difference at three magnifications.</p>
+<p>The counting is the sharpest part. For $N$ rungs, $Q_N=2/N$ and $Q_N=(N+1)/(2N)$ agree at one count only, and at two rungs the first is empty because it forces a massless member. The non-empty two-rung value is $3/4$, and three is the unique count at which the two rules coincide.</p>
+<p>The weakness is the variable. Applied to the masses with the lightest at zero, the same pair gives $Q=0.5856$, which is no closure value at all. So the neutrino relation holds in the squared-mass variable and only there, and nothing in the corpus says which variable a flavon potential should produce.</p>
+<p>A texture with eigenvalues $\left(0,\sqrt2-1,\sqrt2+1\right)m_0$ realises the relation exactly, and the check is one line. The texture literature builds on it and predicts a lightest mass near $17$ meV, $m_{\beta\beta}$ of a few meV and a sum near $89$ meV; those numbers are quoted and not recomputed.</p>
+<p>The relation is a candidate and not a result. It belongs in the corpus because the corpus had nothing here, and it belongs with its variable dependence attached.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q_N$</td>
+<td>the closure ratio for $N$ rungs, $\left(1+k^{2}\right)/N$</td>
+</tr>
+<tr>
+<td>$k$</td>
+<td>the spread coefficient $\sigma/\mu$; $1$ at the lepton closure, $1/\sqrt2$ at the neutrino one</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>the two-term ratio $\left(x_1+x_2\right)/\left(\sqrt{x_1}+\sqrt{x_2}\right)^{2}$</td>
+</tr>
+<tr>
+<td>$x_1$, $x_2$</td>
+<td>$\Delta m^{2}_{21}$ and $\Delta m^{2}_{31}$</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>$x_2/x_1=\Delta m^{2}_{31}/\Delta m^{2}_{21}$</td>
+</tr>
+<tr>
+<td>$N_{\rm eff}$</td>
+<td>$1/Q$, the effective number of participants</td>
+</tr>
+<tr>
+<td>$m_{\beta\beta}$</td>
+<td>the effective Majorana mass in neutrinoless double beta decay</td>
+</tr>
+<tr>
+<td>$3+2\sqrt2$, $17+12\sqrt2$</td>
+<td>$\left(1+\sqrt2\right)^{2}=5.8284$ and its square, $33.9706$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_internal/flavour-the-ladder-arithmetic.html">Koide's Ratio: The Bound, the Purity, and the Fourth Rung</a>. The measurement, the purity reading, and the fourth-rung theorem.</li>
+<li><a href="../articles_internal/flavour-two-coordinates-of-one-vector.html">Two Coordinates of One Vector</a>. The $N$-rung form, the bounds, and why two rungs cannot close at $k=1$.</li>
+<li><a href="../articles_physics/the-pmns-matrix-and-lepton-mixing.html">The PMNS Matrix and Lepton Mixing</a>. The mixing matrix this note deliberately does not touch.</li>
+<li><a href="../articles_physics/an-introduction-to-flavour.html">An Introduction to Flavour: Mass, Lifetime, Decay Pattern, the Three Handles</a>. Where the neutrino rows sit in the roster.</li>
+<li><a href="../articles_physics/the-excitation-ladder-theory-of-flavour.html">The Excitation Ladder Theory of Flavour</a>. The public statement of the picture.</li>
+</ul>
+<h2 id="appendix-checks">Appendix. Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the two rules</td>
+<td>$2/N$ against $(N+1)/(2N)$</td>
+<td>equal at $N=3$ only</td>
+</tr>
+<tr>
+<td>two rungs at $k=1$</td>
+<td>$Q_2=\left(1+k^{2}\right)/2$ at $k=1$</td>
+<td>$1$, with $\sqrt{\rho_2}=0$</td>
+</tr>
+<tr>
+<td>two rungs at $K=3/4$</td>
+<td>$k^{2}=2K-1$</td>
+<td>$1/2$</td>
+</tr>
+<tr>
+<td>the silver ratio</td>
+<td>$\left(\sqrt2+1\right)/\left(\sqrt2-1\right)$</td>
+<td>$5.828\,427\,1$</td>
+</tr>
+<tr>
+<td>its square</td>
+<td>$17+12\sqrt2$</td>
+<td>$33.970\,562\,7$</td>
+</tr>
+<tr>
+<td>the measured ratio</td>
+<td>$2.510\times10^{-3}/7.42\times10^{-5}$</td>
+<td>$33.827\,5$</td>
+</tr>
+<tr>
+<td>the measured root</td>
+<td>$\sqrt{33.8275}$</td>
+<td>$5.816\,1$, against $5.828\,4$</td>
+</tr>
+<tr>
+<td>the two-term $K$</td>
+<td>$\left(1+33.8275\right)/\left(1+5.8161\right)^{2}$</td>
+<td>$0.749\,63$</td>
+</tr>
+<tr>
+<td>the purity reading</td>
+<td>$1/K$ against $4/3$</td>
+<td>$1.334\,0$ against $1.333\,3$</td>
+</tr>
+<tr>
+<td>the mass functional</td>
+<td>$\left(1+\sqrt R\right)/\left(1+R^{1/4}\right)^{2}$</td>
+<td>$0.5856$, no closure value</td>
+</tr>
+<tr>
+<td>the texture ratio</td>
+<td>$\left(\sqrt2+1\right)/\left(\sqrt2-1\right)$</td>
+<td>$3+2\sqrt2$ exactly</td>
+</tr>
+<tr>
+<td>the texture's mass functional</td>
+<td>$\left(a+b\right)/\left(\sqrt a+\sqrt b\right)^{2}$, $a=\sqrt2-1$, $b=\sqrt2+1$</td>
+<td>$0.5858$</td>
+</tr>
+<tr>
+<td>the sector coefficients</td>
+<td>$k^{2}=NQ-1$</td>
+<td>$0.999\,982$ (leptons), $0.499\,254$ (pair)</td>
+</tr>
+<tr>
+<td>the $N=4$ row</td>
+<td>$2/4$ and $5/8$</td>
+<td>$0.500$ and $0.625$</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

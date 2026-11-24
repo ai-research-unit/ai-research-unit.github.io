@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koide&#x27;s Ratio: The Bound, the Purity, and the Fourth Rung — Biquaternion Universe</title>
+  <meta name="description" content="Status of this note. Every claim below carries one of seven tags. The tags are not decoration. A claim tagged [ANSATZ] or [SPECULATION] is work I have…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="koides-ratio-the-bound-the-purity-and-the-fourth-rung"><strong>Koide's Ratio: The Bound, the Purity, and the Fourth Rung</strong></h1>
+<p><em>Status of this note.</em> Every claim below carries one of seven tags. The tags are not decoration. A claim tagged [ANSATZ] or [SPECULATION] is work I have done and do not believe yet, and the note says so where the claim is made rather than in a paragraph at the end. Of the seven tags, three carry weight outside this note.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>tag</th>
+<th>meaning</th>
+<th>weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[MEASURED]</td>
+<td>a number from experiment, independent of the corpus</td>
+<td>usable</td>
+</tr>
+<tr>
+<td>[PUBLISHED]</td>
+<td>a claim already in the literature, attributed</td>
+<td>usable</td>
+</tr>
+<tr>
+<td>[ALGEBRA]</td>
+<td>exact consequence of a definition, no physics assumed</td>
+<td>usable, but often trivial</td>
+</tr>
+<tr>
+<td>[ANSATZ]</td>
+<td>an assumption made here, not derived</td>
+<td>conditional</td>
+</tr>
+<tr>
+<td>[SPECULATION]</td>
+<td>a guess with no support beyond plausibility</td>
+<td>none</td>
+</tr>
+<tr>
+<td>[FAILED]</td>
+<td>tried, computed, and it does not work</td>
+<td>negative</td>
+</tr>
+<tr>
+<td>[WITHDRAWN]</td>
+<td>asserted in an earlier version, now retracted</td>
+<td>negative</td>
+</tr>
+</tbody>
+</table></div>
+<p>This is the first of four notes that replace the single long note <em>Flavour Research: The Ladder Arithmetic</em>. It carries the measurement, the exact algebra, the two new statements that give the number a meaning, the invariance statement that removes an apparent contradiction, and the answer to the fourth-rung question. The geometry of the same ratio is in <em>Two Coordinates of One Vector</em>; the neutrino sector is in <em>The Neutrino Closure</em>; the stabiliser argument is in <em>The Stabiliser of the Line</em>.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Koide's relation is one measured number and no derivation. The number is $Q=2/3$ for the three charged leptons, and it holds to six parts in a million.</p>
+<p>This note asks three questions and answers them with algebra rather than with models.</p>
+<p>The first question is what the number means. The ratio is exactly the purity of a share vector, so $Q$ is the inverse of an effective count of participants and $2/3$ says the mass is shared as if among one and a half of three. That reading is exact, it is not an interpretation, and it makes the target of any future derivation a statement about concentration rather than about a numeral.</p>
+<p>The second question is what a fourth mass can do. The ratio extended by one further mass has a unique minimum at a computable mass, and the minimum is $Q_0/(1+Q_0)$. For $Q_0=2/3$ that is exactly $2/5$. So the fourth-rung question has an answer before any dynamics: no fourth rung can raise the ratio above $2/5$, and the correct target for a fourth mass is $2/5$, not $2/3$.</p>
+<p>The third question is what can move the ratio at all. The ratio is homogeneous of degree zero, and all three charged leptons share one electric charge, so one-loop QED running multiplies all three masses by one common factor and cannot move $Q$ at all. The $0.19\%$ drift quoted in the literature is a pole-to-$\overline{\rm MS}$ conversion effect, which is flavour-dependent, and it is the object Sumino's cancellation is built to remove. Three numbers that the corpus read as contradictory are therefore three statements about three different objects.</p>
+<p>The rest of the note is the arithmetic that the previous note carried: the circle as an ansatz, the parity argument and its withdrawal, the fits, the open ladder, four failed routes to a fourth rung, the partner map, and the count of what an accident would cost.</p>
+<h2 id="1-the-one-measured-relation">1. The One Measured Relation</h2>
+<p><strong>[PUBLISHED]</strong> Koide's relation, stated in 1981 for the charged leptons and not derived since, is a statement about two mass ratios. Printed in masses it is a sum of masses over the square of a sum of their roots; dividing every radicand by $m_1$ turns every mass into a ratio to $m_1$ and every root of a mass into the root of a ratio, so what remains is a function of the two ratios.</p>
+<p><strong>[MEASURED]</strong> Writing $\rho_i=m_i/m_1$ with $m_1=m_e$, the PDG masses give</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_2=m_\mu/m_e$</td>
+<td>$206.768\,28$</td>
+</tr>
+<tr>
+<td>$\sqrt{\rho_2}$</td>
+<td>$14.379\,44$</td>
+</tr>
+<tr>
+<td>$\rho_3=m_\tau/m_e$</td>
+<td>$3477.228\,28$</td>
+</tr>
+<tr>
+<td>$\sqrt{\rho_3}$</td>
+<td>$58.968\,03$</td>
+</tr>
+<tr>
+<td>$1+\rho_2+\rho_3$</td>
+<td>$3684.996\,56$</td>
+</tr>
+<tr>
+<td>$\left(1+\sqrt{\rho_2}+\sqrt{\rho_3}\right)^{2}$</td>
+<td>$5527.545\,88$</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>$0.666\,660\,51$</td>
+</tr>
+<tr>
+<td>$2/3$</td>
+<td>$0.666\,666\,67$</td>
+</tr>
+<tr>
+<td>deviation</td>
+<td>$6.2\times10^{-6}$</td>
+</tr>
+<tr>
+<td>ratio to $2/3$</td>
+<td>$0.999\,990\,8$</td>
+</tr>
+</tbody>
+</table></div>
+<p>so that in the ratio form the relation is</p>
+<p>$$
+Q=\frac{1+\rho_2+\rho_3}{\left(1+\sqrt{\rho_2}+\sqrt{\rho_3}\right)^{2}}=\frac{2}{3}.
+$$</p>
+<p>Every number in the display is dimensionless, and no mass unit appears: a change of mass unit, or of mass standard, cancels between top and bottom. This is the form used for the rest of the note.</p>
+<p><strong>[MEASURED]</strong> On the 2024 PDG masses the same ratio gives $0.666\,664\,46$, so the two mass sets agree with each other and both agree with $2/3$. The residual is dominated by the tau mass, which is the least well known.</p>
+<p><strong>The relation holds to six parts in a million for the one triple it was written for.</strong> That is the whole empirical content of the charged-lepton ladder, and it is worth more than everything else in this note.</p>
+<p><strong>[MEASURED]</strong> It does not hold for the other two triples:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>$Q$</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e,\mu,\tau$</td>
+<td>$0.6666605$</td>
+<td>holds to $6\times10^{-6}$</td>
+</tr>
+<tr>
+<td>$u,c,t$</td>
+<td>$0.8489808$</td>
+<td>fails by $0.18$</td>
+</tr>
+<tr>
+<td>$d,s,b$</td>
+<td>$0.7314277$</td>
+<td>fails by $0.065$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the relation is a one-off, or it is a rule that quarks violate for a reason nobody has supplied.</strong> Both readings are open and this note keeps both.</p>
+<h2 id="2-five-exact-statements">2. Five Exact Statements</h2>
+<p>The statements below are exact. None needs a medium, a spectrum or a dynamics. They are the entire content of the closure language, and stating them plainly is what removes the appearance of derivation.</p>
+<p><strong>2.1 The bound.</strong> <strong>[ALGEBRA]</strong> For positive masses and $\rho_i=m_i/m_1$,</p>
+<p>$$
+Q=\frac{\sum \rho_i}{\left(\sum \sqrt{\rho_i}\right)^{2}}\le 1,
+$$</p>
+<p>by Cauchy–Schwarz, with equality if and only if exactly one $\sqrt{\rho_i}$ is nonzero. The normalisation by $m_1$ is free, since $Q$ is invariant under $\sqrt{\rho_i}\to\lambda \sqrt{\rho_i}$; it is made once here so that $\sqrt{\rho_1}=1$ and nothing below carries a unit.</p>
+<p><strong>2.2 The rung count.</strong> <strong>[ALGEBRA]</strong> Setting $Q=2/N$ in 2.1 gives $N\ge2$. The case $N=2$ requires $Q=1$, hence one massless rung by the equality condition, which is excluded by data. So</p>
+<p>$$
+N\ge3 .
+$$</p>
+<p><strong>This is the only place the closure touches the number of generations, and it is weak: it excludes two and permits any count above two.</strong> It is not a derivation of three, and this note does not present it as one.</p>
+<p><strong>2.3 The variance form.</strong> <strong>[ALGEBRA]</strong> With $\mu=\frac1N\sum \sqrt{\rho_i}$ and $\operatorname{var}=\frac1N\sum(\sqrt{\rho_i}-\mu)^{2}$,</p>
+<p>$$
+Q=\frac{2}{N}\iff\operatorname{var}=\mu^{2},
+$$</p>
+<p>so the root vector $\vec r=\left(1,\sqrt{\rho_2},\sqrt{\rho_3}\right)$ sits at $45^{\circ}$ to the uniform direction $\vec u=(1,1,1)$. Measured for the leptons, $\operatorname{var}/\mu^{2}=0.999\,982$ against $1$, which is 2.1 restated with the same $6\times10^{-6}$.</p>
+<p><strong>2.4 The circle.</strong> <strong>[ALGEBRA]</strong> For any $\mu&gt;0$ and any $\theta$,</p>
+<p>$$
+\sqrt{\rho_i}=\mu\left(1+\sqrt2\cos\!\left(\theta+\frac{2\pi i}{3}\right)\right)
+\;\Longrightarrow\;
+Q=\frac{2}{3}\quad\text{identically},
+$$</p>
+<p>because $\sum\cos=0$ and $\sum\cos^{2}=3/2$ for three equally spaced phases. This is exact for every $\theta$ and every $\mu$, and $\mu$ is the mean of the three $\sqrt{\rho_i}$. For the charged leptons $\mu=24.782\,49$ in the normalisation $\sqrt{\rho_1}=1$.</p>
+<p><strong>2.4 is the reason this programme is hard to assess, and the note should say it once and plainly: the circle contains no information beyond Koide.</strong> Two parameters, three masses, and one degree of freedom left over; the fit consumes that degree of freedom by construction. <strong>A test that the leptons lie on the circle is a test of $Q=2/3$ and of nothing else.</strong> Any claim that the circle explains or reproduces the closure is a circular claim, and this note does not make it.</p>
+<p><strong>2.5 The midpoint.</strong> <strong>[ALGEBRA]</strong> For $N$ rungs the ratio is confined to $[1/N,1]$, the floor being the degenerate triple and the ceiling the single-mass triple. The closure value is $2/N$ and the midpoint of the interval is $(N+1)/(2N)$. Then</p>
+<p>$$
+\frac{N+1}{2N}=\frac{2}{N}\iff N+1=4\iff N=3 .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N$</th>
+<th>closure value $2/N$</th>
+<th>midpoint of $[1/N,1]$</th>
+<th>equal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$1.000$</td>
+<td>$0.750$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$0.667$</td>
+<td>$0.667$</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$0.500$</td>
+<td>$0.625$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$0.400$</td>
+<td>$0.600$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$0.333$</td>
+<td>$0.583$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three is the only count for which the closure value is the middle of its own allowed range.</strong> So the sentence "$Q=2/3$" and the sentence "three rungs" are the same sentence, once the bound is known. This is a sharpening of what the number means; it is not extra evidence, and this note does not count it twice.</p>
+<h2 id="3-the-ratio-is-a-purity">3. The Ratio Is a Purity</h2>
+<p><strong>[ALGEBRA]</strong> Let</p>
+<p>$$
+p_i=\frac{\sqrt{m_i}}{\sum_j\sqrt{m_j}},
+$$</p>
+<p>so that $p_i\ge0$ and $\sum_i p_i=1$. The share vector is normalised in the sum and not in the square. Then the closure ratio is exactly its squared length:</p>
+<p>$$
+\sum_i p_i^{2}=\frac{\sum_i m_i}{\left(\sum_j\sqrt{m_j}\right)^{2}}=Q .
+$$</p>
+<p><strong>[MEASURED]</strong> On the 2024 PDG masses the three shares are $0.013\,450$, $0.193\,406$ and $0.793\,144$, and their squares sum to $0.666\,664$. The identity is not approximate; the two numbers agree to machine precision because they are one number written twice.</p>
+<p><strong>What the quantity is.</strong> $\sum p_i^2$ is the standard measure of how concentrated a distribution is. It is $1$ when one participant holds everything and $1/N$ when $N$ participants hold equal shares, and it is called the purity, the collision probability, or the inverse participation ratio depending on the field that uses it. It is the quantity whose reciprocal is the effective number of participants,</p>
+<p>$$
+N_{\rm eff}=\frac{1}{Q},
+$$</p>
+<p>the count that would produce the same concentration if all shares were equal.</p>
+<p><strong>[MEASURED]</strong> The leptons give $N_{\rm eff}=1.500\,005$. The relation $Q=2/3$ therefore says: <strong>the mass of the charged leptons is shared as if by one and a half participants out of three.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>tuple</th>
+<th>$Q$</th>
+<th>$N_{\rm eff}$</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>three equal masses</td>
+<td>$0.333\,333$</td>
+<td>$3$</td>
+<td>all three carry the mass</td>
+</tr>
+<tr>
+<td>charged leptons</td>
+<td>$0.666\,660$</td>
+<td>$1.500\,010$</td>
+<td>one and a half of three</td>
+</tr>
+<tr>
+<td>one mass only</td>
+<td>$1.000\,000$</td>
+<td>$1$</td>
+<td>one participant holds all</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the content of the reading. The bottom row is the ceiling of 2.1 and the top row is the floor of 2.5, and the lepton row is the one measured case in between.</p>
+<p><strong>Why this is worth stating.</strong> The ratio was introduced as a quotient of two sums, and a quotient of two sums carries no obvious meaning. Written as a purity, the same number has a name, a range, and an interpretation that does not depend on the mass spectrum being a spectrum. The question "why $2/3$" becomes "why is the mass-share of the three leptons as concentrated as that of three halves of an equal share", which is a statement about a point on a simplex. A derivation that produced a purity would be a derivation of something.</p>
+<p><strong>What the reading does not do.</strong> It does not derive $2/3$, and it does not select three. A purity of $2/3$ is a perfectly ordinary value: it lies at two thirds of the way from the democratic end to the single-participant end, and there is no reason a priori for a share vector to avoid it. The reading converts a numeral into a shape, and a shape still needs a mechanism.</p>
+<p><strong>The three readings agree.</strong> The variance form of 2.3, Foot's angle of the companion note, and the purity here are one statement in three coordinates: $\sigma=\mu$, $\varphi=45^{\circ}$, and $N_{\rm eff}=3/2$ are the same condition on the same vector. A reader who checks all three has checked it once.</p>
+<h2 id="4-adding-a-rung-a-unique-optimum-and-the-value-math134">4. Adding a Rung: A Unique Optimum and the Value $2/5$</h2>
+<p><strong>[PUBLISHED]</strong> The ratio extended by one further mass has a unique minimum, and both the location and the value are computable in closed form. This is the theorem of <em>A minimization theorem for the Koide ratio and its Standard Model calibration</em> (arXiv 2605.09651), and it is elementary.</p>
+<p><strong>[ALGEBRA]</strong> Write $S=\sum_i m_i$ and $R=\sum_i\sqrt{m_i}$ for a fixed tuple, and let $x$ be the added mass. Then</p>
+<p>$$
+Q(x)=\frac{S+x}{\left(R+\sqrt x\right)^{2}} .
+$$</p>
+<p>Putting $t=\sqrt x$,</p>
+<p>$$
+\frac{dQ}{dt}=\frac{2\left(tR-S\right)}{\left(R+t\right)^{3}},
+$$</p>
+<p>so the derivative vanishes at exactly one point, $t=S/R$, and the second derivative is positive there. <strong>The minimum is unique and it is at</strong></p>
+<p>$$
+m_{*}=\left(\frac{S}{R}\right)^{2}=\frac{\left(\sum_i m_i\right)^{2}}{\left(\sum_i\sqrt{m_i}\right)^{2}} .
+$$</p>
+<p><strong>[ALGEBRA]</strong> The value at the minimum follows by substitution. With $u=S/R$ and $Q_0=S/R^{2}$ the closure ratio of the original tuple,</p>
+<p>$$
+Q(m_{*})=\frac{S+u^{2}}{\left(R+u\right)^{2}}
+=\frac{S\left(R^{2}+S\right)/R^{2}}{\left(R^{2}+S\right)^{2}/R^{2}}
+=\frac{S}{R^{2}+S}=\frac{Q_0}{1+Q_0} .
+$$</p>
+<p><strong>[ALGEBRA]</strong> The same computation for $k$ equal added masses gives $Q_0/(1+kQ_0)$. Two consequences follow at once, and both are exact.</p>
+<p><strong>The first consequence is the target for a fourth rung.</strong> If the triple closes at $Q_0=2/3$, then the best a fourth mass can do is</p>
+<p>$$
+\frac{2/3}{1+2/3}=\frac{2}{5},
+$$</p>
+<p>and $k$ equal additions give $2/(2k+3)$, that is $2/5$, $2/7$, $2/9$ for $k=1,2,3$. <strong>No fourth mass can push the ratio back to $2/3$; the fourth-rung target is $2/5$, and the fifth-rung target is $2/7$.</strong> A search for a fourth rung that looks at $2/3$ is looking at the wrong number.</p>
+<p><strong>The second consequence is a meaning for the added mass.</strong> The optimum is $m_{*}=Q_0S$, the closure ratio times the total mass of the tuple. For the leptons, with $S=1883.099$ MeV and $Q_0=0.666\,664$, that is</p>
+<p>$$
+m_{*}=1.255\,40\ \mathrm{GeV},
+$$</p>
+<p>and the minimum value is $Q_4^{\min}=0.399\,999\,21$, which is $2/5$ to two parts in a million and equals it exactly when $Q_0=2/3$ exactly.</p>
+<p><strong>[MEASURED]</strong> The charm mass sits $1.2\%$ above $m_{*}$, and the four-mass ratio is</p>
+<p>$$
+Q(e,\mu,\tau,c)=0.400\,002\,42
+$$</p>
+<p>with $m_c=1.27$ GeV, which is $6.1$ ppm above $2/5$. The value is flat in the added mass near the optimum, which is what a minimum is: at $m_c=1.25$ GeV the ratio is $0.399\,999\,65$ and at $m_c=1.30$ GeV it is $0.400\,028\,56$. <strong>So the agreement is not a fine-tuning of the charm mass; it is the flatness of a minimum, and it would survive a charm mass uncertain by twenty MeV.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>added mass (GeV)</th>
+<th>$Q(e,\mu,\tau,c)$</th>
+<th>distance from $2/5$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1.2554=m_{*}$</td>
+<td>$0.399\,999\,21$</td>
+<td>$-2$ ppm</td>
+</tr>
+<tr>
+<td>$1.250$</td>
+<td>$0.399\,999\,65$</td>
+<td>$-0.9$ ppm</td>
+</tr>
+<tr>
+<td>$1.270$</td>
+<td>$0.400\,002\,42$</td>
+<td>$+6.1$ ppm</td>
+</tr>
+<tr>
+<td>$1.300$</td>
+<td>$0.400\,028\,56$</td>
+<td>$+71$ ppm</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What this is and what it is not.</strong> The theorem is exact and the numbers follow from it; that part is arithmetic and belongs in the note. The comparison with charm is a benchmark and not a relation: it mixes pole lepton masses with a short-distance charm mass, and this note records it as the first candidate for a fourth rung rather than as a law. <strong>The corpus should adopt the theorem and record the charm number as the best existing candidate for a fourth rung, with its scheme dependence attached.</strong></p>
+<p><strong>What the theorem settles before any dynamics.</strong> The previous note asked whether a fourth charged-lepton mass is predictable and answered, after four failed routes, that it is not. The theorem explains why in one line: the ratio is bounded above on any extension, and the bound is $2/5$. A relation that cannot be raised cannot be tested by adding a member. <strong>The fourth-rung question was never a question about leptons; it was a question about the ratio, and the ratio was already at its ceiling for three members.</strong></p>
+<h2 id="5-what-can-and-cannot-move-the-ratio">5. What Can and Cannot Move the Ratio</h2>
+<p><strong>[ALGEBRA]</strong> $Q$ is homogeneous of degree zero. Under $m_i\to\lambda m_i$ for a common $\lambda$, numerator and denominator both scale by $\lambda$, so</p>
+<p>$$
+Q(\lambda m)=Q(m)
+$$</p>
+<p>exactly, for every tuple and every $\lambda&gt;0$. Every statement about $Q$ is therefore a statement about the shape of a spectrum and never about its scale.</p>
+<p><strong>This makes the running question sharp.</strong> A ratio that is invariant under a common rescaling cannot be moved by any correction that acts on all three masses the same way.</p>
+<p><strong>[PUBLISHED]</strong> At one loop, the three charged leptons have equal electric charge, hence one anomalous dimension (arXiv hep-ph/0601031, arXiv 2606.10060, which states the reason the quark ratios are comparatively stable in the same terms), hence</p>
+<p>$$
+m_i(\mu)=m_i(\mu_0)\,A(\mu)
+$$</p>
+<p>with a single factor $A$ common to all three. Substituting into the definition, $A$ cancels between numerator and denominator. <strong>So one-loop QED running leaves $Q$ exactly invariant, at every scale, for the charged leptons.</strong> The same argument holds for the quarks, whose QCD anomalous dimension is also common within a sector: masses of particles with the same gauge quantum numbers share their exponent.</p>
+<p><strong>[PUBLISHED]</strong> That is not what the literature appears to say. One source reports scale independence (hep-ph/0601031), another reports a $0.19\%$ shift at $M_Z$ (hep-ph/0602134, which also distinguishes pole from running masses), and a third builds a mechanism to cancel a $0.1\%$ effect at the pole (arXiv 0812.2090). The three are consistent once the objects are separated.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>object</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q$ is scale independent at one loop</td>
+<td>the ratio of running masses</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$Q$ shifts at $M_Z$</td>
+<td>the ratio computed from pole masses and from $\overline{\rm MS}$ masses at $M_Z$</td>
+<td>$0.19\%$</td>
+</tr>
+<tr>
+<td>the QED correction to the relation</td>
+<td>the pole-to-$\overline{\rm MS}$ conversion, whose finite part carries $\log m_i^{2}$</td>
+<td>$0.1\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The distinction is that the conversion is flavour-dependent and the running is not.</strong> The pole mass differs from the running mass by a finite piece whose infrared cutoff is the mass itself, so the piece carries $\log m_i^{2}$ with a different value for each lepton. That term changes the direction of the amplitude vector and not only its length, which is why it moves $Q$; the running multiplies all three masses and changes neither.</p>
+<p><strong>[PUBLISHED]</strong> Sumino's family-gauge mechanism adds a correction of the same functional form with the opposite sign, so that $\alpha_F=4\alpha$ makes the two cancel. Read against the table above, the mechanism is aimed at the third row and not the first: it removes the conversion term, and the leading running was never an obstruction.</p>
+<p><strong>Three consequences for this note.</strong></p>
+<p>The first is that the corpus should stop carrying "does $Q$ run" as an open question. For the leptons the answer is exact at one loop, and the residual is a conversion effect of relative size $10^{-3}$ with a stated cause.</p>
+<p>The second is that a mechanism for the relation must kill a flavour-dependent term and not a common one. A model that produces a universal correction to the three masses does nothing to $Q$ by construction, however large the correction.</p>
+<p>The third is a target with a number: what remains to be explained is a term of relative size $10^{-3}$ in the ratios, and only a flavour-dependent anomalous dimension, a Yukawa entry, or a threshold can supply it.</p>
+<h2 id="6-the-circle-as-an-ansatz">6. The Circle as an Ansatz</h2>
+<h3 id="61-the-hypothesis-stated-once">6.1 The hypothesis, stated once</h3>
+<p><strong>[ANSATZ]</strong> The research hypothesis of this note is that the charged-lepton masses satisfy</p>
+<p>$$
+\frac{1+\rho_2+\rho_3}{\left(1+\sqrt{\rho_2}+\sqrt{\rho_3}\right)^{2}}=\frac{2}{3}
+\qquad\text{exactly,}
+$$</p>
+<p>with $\rho_i=m_i/m_1$. The value $2/3$ is assumed. Nothing here derives it, and no display below derives it.</p>
+<p><strong>The assumption has one test, and the test is a measurement.</strong> The PDG masses give $0.666\,660\,51$, which is $2/3$ to $6.2\times10^{-6}$. That number is the evidence for the hypothesis, and it is all of it.</p>
+<p><strong>The hypothesis has one form per coordinate, and the forms are not separate claims.</strong> Read as a variance it is $\sigma=\mu$ (2.3). Read as an angle it is $\varphi=45^{\circ}$ (the companion note). Read as a purity it is $N_{\rm eff}=3/2$ (§3). Each is the same assumption written in another coordinate, so no one of them supports another.</p>
+<p><strong>The hypothesis is not the same thing as the circle.</strong> The circle is algebra and holds for every triple at every $\theta$ (2.4). What is assumed is the value, and the value is what the circle cannot supply.</p>
+<h3 id="62-the-circle-as-the-carrier">6.2 The circle as the carrier</h3>
+<p><strong>[ANSATZ]</strong> The physical picture is not the circle, which is algebra, but the equal spacing of the phases, $2\pi/N$ in $\theta$. Nothing in the corpus derives that spacing. It is an assumption about a medium, and it enters at exactly one place.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>status</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the value $Q=2/3$</td>
+<td>assumed, 6.1</td>
+<td>given</td>
+</tr>
+<tr>
+<td>the phase spacing $2\pi/N$</td>
+<td>assumed, 6.2</td>
+<td>given</td>
+</tr>
+<tr>
+<td>parameters $\mu$, $\theta$</td>
+<td>fitted to data</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>data</td>
+<td>three masses</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>degrees of freedom left</td>
+<td>$3-2$</td>
+<td>$1$, and it is $Q$</td>
+</tr>
+<tr>
+<td>predictions beyond $Q$</td>
+<td>none</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table is the whole assessment.</strong> A two-parameter family through three points with one identity built in has one degree of freedom and no predictive power. What the ansatz buys is a picture: three rungs on a circle, one near a node. What it costs is that the picture explains nothing, because it cannot fail except by $Q$ failing.</p>
+<h2 id="7-parity-true-inside-the-ansatz-false-as-an-exclusion">7. Parity: True Inside the Ansatz, False as an Exclusion</h2>
+<p><strong>[ALGEBRA, inside the ansatz]</strong> For even $N$ the phases are antipodal in pairs, and $\cos(\theta+\pi)=-\cos\theta$, so</p>
+<p>$$
+\sqrt{\rho_i}+\sqrt{\rho_{i+N/2}}=2\mu
+\qquad\text{exactly, for every }\theta .
+$$</p>
+<p>An even count therefore produces masses in degenerate pairs, symmetric about $\mu$ in the root, and so symmetric about $\mu^{2}$ in mass.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N=4$ at the best fit</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sqrt{\rho_i}/\mu$</td>
+<td>$-0.398$, $0.786$, $2.398$, $1.214$</td>
+</tr>
+<tr>
+<td>$\sqrt{\rho_0}+\sqrt{\rho_2}$, in units of $\mu$</td>
+<td>$2.000$</td>
+</tr>
+<tr>
+<td>$\sqrt{\rho_1}+\sqrt{\rho_3}$, in units of $\mu$</td>
+<td>$2.000$</td>
+</tr>
+<tr>
+<td>masses (MeV)</td>
+<td>$45.66$, $178.02$, $425.48$, $1658.71$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[WITHDRAWN]</strong> An earlier version said this excludes every even count by parity and not by $\chi^{2}$, and called it independent of any fit. Both halves are wrong. The pairing is a property of the ansatz at fixed $(\mu,\theta)$, so it depends on the ansatz entirely. And the table above shows the fitted $N=4$ masses are not paired, because the fit moves $\theta$ off the paired configuration to chase the data.</p>
+<p><strong>What survives is weaker and still useful:</strong> inside the circle ansatz, an even count cannot give a lone light rung above an empty region. The electron is such a rung. So even counts are disfavoured by the shape of the spectrum, and the $N=4$ fit failure of §8 is the same fact in numbers.</p>
+<h2 id="8-the-fits">8. The Fits</h2>
+<p><strong>[ALGEBRA applied to data]</strong> Each count was fitted by scanning $\theta$ and solving $\mu$ in closed form against the three measured masses, then reading every mass as a ratio to $m_1$ before the root, so that the scale column is dimensionless.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N$</th>
+<th>$\mu$ with $\sqrt{\rho_1}=1$</th>
+<th>$\theta$</th>
+<th>worst relative misfit</th>
+<th>extra rungs demanded (MeV)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3$</td>
+<td>$24.78$</td>
+<td>$132.733^{\circ}$</td>
+<td>$6.1\times10^{-4}$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$23.76$</td>
+<td>$171.278^{\circ}$</td>
+<td>$8.8\times10^{1}$</td>
+<td>$45.7$, $425.5$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$21.82$</td>
+<td>$206.484^{\circ}$</td>
+<td>$3.3\times10^{1}$</td>
+<td>$17.2$, $665.4$, $0.02$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$19.98$</td>
+<td>$230.076^{\circ}$</td>
+<td>$3.3$</td>
+<td>$742.7$, $54.0$, $31.5$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$18.56$</td>
+<td>$247.303^{\circ}$</td>
+<td>$7.0\times10^{1}$</td>
+<td>$745.6$, $150.8$, $4.0$, $22.9$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$17.41$</td>
+<td>$260.269^{\circ}$</td>
+<td>$1.7\times10^{2}$</td>
+<td>$719.0$, $237.8$, $5.2$, $24.0$, $3.7$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three rungs fit to $6\times10^{-4}$; every other count misses by a factor of three or more. The $N=3$ reconstruction is $\mu=24.782\,49$, $\theta=132.732^{\circ}$, giving $0.511$, $105.653$, $1776.883$ MeV against the measured $0.511$, $105.658$, $1776.86$.</p>
+<p><strong>[WITHDRAWN]</strong> An earlier version said the rung count of the charged-lepton tower is three, and that it is three by measurement. Measurement gives three charged leptons. The count of rungs is a reading of the ansatz, and the ansatz is what chose three. The sentence asserted the conclusion as the evidence.</p>
+<h2 id="9-the-node-which-is-koide-again">9. The Node, Which Is Koide Again</h2>
+<p><strong>[ALGEBRA]</strong> The root vanishes where $1+\sqrt2\cos\theta=0$, and with the coefficient $\sqrt2$ fixed by 2.4 that is $\theta_0=135^{\circ}$ exactly. The fit returns $132.732^{\circ}$, so the first rung sits $2.268^{\circ}$ from the node.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>deviation from the node</th>
+<th>$\rho_1=m_1/m_e$</th>
+<th>$m_1$ (MeV)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0^{\circ}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-1^{\circ}$</td>
+<td>$0.1898$</td>
+<td>$0.097$</td>
+</tr>
+<tr>
+<td>$-2.268^{\circ}$ (measured)</td>
+<td>$1.0000$</td>
+<td>$0.511$</td>
+</tr>
+<tr>
+<td>$+2.268^{\circ}$</td>
+<td>$0.9237$</td>
+<td>$0.472$</td>
+</tr>
+<tr>
+<td>$-5^{\circ}$</td>
+<td>$5.0822$</td>
+<td>$2.597$</td>
+</tr>
+<tr>
+<td>$-10^{\circ}$</td>
+<td>$21.9022$</td>
+<td>$11.192$</td>
+</tr>
+<tr>
+<td>$-20^{\circ}$</td>
+<td>$99.4151$</td>
+<td>$50.801$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[WITHDRAWN]</strong> An earlier version offered "the electron is light because the ladder starts almost exactly on the zero of the cosine" as a separate finding, and called it the cleanest physical reading the arithmetic offers.</p>
+<p>The $2.268^{\circ}$ is not independent information. It is $Q=2/3$ written as an angle, because $\theta_0=135^{\circ}$ is forced by the same $\sqrt2$. A reader who computes $Q$ and a reader who plots the node learn the same one number. The table is kept because it is a good picture, and the picture is all it is: <strong>the rung nearest the node is the lightest, which restates the definition of the root and is not a mechanism.</strong></p>
+<h2 id="10-the-open-ladder-and-the-continuum-pass">10. The Open Ladder and the Continuum Pass</h2>
+<h3 id="101-the-open-ladder">10.1 The open ladder</h3>
+<p><strong>[ANSATZ]</strong> Drop the circle and let the tower be an unbounded power ladder, $a_n\propto n^{p}$.</p>
+<p><strong>[ALGEBRA, inside that ansatz]</strong> Then $Q_N$ has the finite limit</p>
+<p>$$
+Q_N\longrightarrow\frac{2p+1}{(p+1)^{2}},
+$$</p>
+<p>and imposing $Q=1/2$ gives $p^{2}-2p-1=0$, so</p>
+<p>$$
+p=1\pm\sqrt2 .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>branch</th>
+<th>$p$</th>
+<th>root $a_n$</th>
+<th>mass exponent</th>
+<th>character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>growing</td>
+<td>$+2.414214$</td>
+<td>$n^{2.414}$</td>
+<td>$+4.828427$</td>
+<td>sparse, extends upward</td>
+</tr>
+<tr>
+<td>decaying</td>
+<td>$-0.414214$</td>
+<td>$n^{0.586}$</td>
+<td>$-0.828427$</td>
+<td>piles up at zero, unphysical</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[FAILED]</strong> Normalised at $m_1$ the growing branch gives $1$, $28.41$, $201.25$ against the measured $1$, $206.77$, $3477.2$. <strong>It fits nothing at three rungs.</strong> It is a statement about a hypothetical dense tower, and the note says so rather than advertising the exactness of $\sqrt2$.</p>
+<h3 id="102-the-continuum-pass">10.2 The continuum pass</h3>
+<p><strong>[SPECULATION]</strong> This subsection produces the number $g\propto\omega^{-0.79}$ and the dispersion $\omega\propto k^{4.83d}$. It is the most speculative part of the note, and the assumption chain is longer than the result is useful.</p>
+<p>The chain, stated as a chain:</p>
+<ol>
+<li>the closure holds in the continuum, $\left(\int\sqrt\omega\,g\,d\omega\right)^{2}=\frac12\int\omega g\,d\omega\int g\,d\omega$;</li>
+<li>the density of states is a single power law, $g\propto\omega^{\gamma}$, on a finite interval;</li>
+<li>the interval may be taken as $[0,\Lambda]$ with no low-energy cutoff;</li>
+<li>a single dispersion $\omega\propto k^{z}$ holds over the whole range, in $d$ dimensions.</li>
+</ol>
+<p>Given 1 to 4,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\gamma$</td>
+<td>$(-3+\sqrt2)/2=-0.792893$</td>
+</tr>
+<tr>
+<td>mirror branch</td>
+<td>$(-3-\sqrt2)/2=-2.207107$</td>
+</tr>
+<tr>
+<td>$z/d$</td>
+<td>$2(1+\sqrt2)=4.828427$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$d$</th>
+<th>$z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$4.828$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$9.657$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$14.485$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[WITHDRAWN]</strong> An earlier version presented this as the saturation rule in numbers rather than as a slogan: "heavy rungs are rarer is not an assumption of the picture, it is what the closure forces".</p>
+<p>It is an assumption of the picture. Assumption 2 is the statement that the density falls as a power, and the algebra then fixes the exponent. Nothing is forced about nature, and the chain has four links, of which the last would need a field theory the corpus does not have.</p>
+<p><strong>The useful residue is a target, not a result:</strong> if a dispersion is ever written down for the tower, it has to give $z\approx4.83$ in one dimension. That is a falsifiable shape, and the note keeps only that.</p>
+<h2 id="11-the-fourth-rung-four-routes-four-failures">11. The Fourth Rung: Four Routes, Four Failures</h2>
+<p><strong>[ALGEBRA applied to data]</strong> The question is whether a fourth charged-lepton mass is predictable. Four routes were tried; all four fail, and the failure is the result.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>route</th>
+<th>construction</th>
+<th>outcome</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>keep the leptons' $(\mu,\theta)$, set $N=4$</td>
+<td>$0.511$, $0.472$, $1205.2$, $1304.5$ MeV</td>
+<td>muon and tau vanish, replaced by two pairs</td>
+</tr>
+<tr>
+<td>B</td>
+<td>refit $N=4$ to the leptons</td>
+<td>$45.66$, $178.02$, $425.48$, $1658.71$ MeV, misfit $88$</td>
+<td>excluded</td>
+</tr>
+<tr>
+<td>C</td>
+<td>open ladder normalised at $m_e$</td>
+<td>$0.511$, $14.5$, $102.8$, $412.4$ MeV, misses $\mu$ by $7$</td>
+<td>excluded</td>
+</tr>
+<tr>
+<td>D</td>
+<td>shift the closure to $(m_\mu,m_\tau,m_4)$ and solve</td>
+<td>large root $43.6863$ GeV; small root $=m_e$</td>
+<td>large root excluded; small root is 11.3</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The theorem of §4 explains all four failures at once.</strong> Routes A to C search for a fourth mass that restores $2/3$; by the theorem no such mass exists, because the minimum of $Q$ over the extended tuple is $2/5$. Route D does not search for a fourth mass at all: it inverts the closure on a different pair, and it returns either a mass already in the input or a mass in a closed region.</p>
+<h3 id="111-route-d-written-out">11.1 Route D, written out</h3>
+<p><strong>[ALGEBRA]</strong> Shift the indices by one rung:</p>
+<p>$$
+Q=\frac{1+\rho_3+\rho_4}{\left(1+\sqrt{\rho_3}+\sqrt{\rho_4}\right)^{2}}=\frac{2}{3},
+\qquad
+\rho_i=\frac{m_i}{m_e},
+\qquad (m_2,m_3,m_4)=(m_\mu,m_\tau,m_4).
+$$</p>
+<p>With $S=\sqrt{\rho_2}+\sqrt{\rho_3}$ and $T=\rho_2+\rho_3$, clearing the denominator gives a quadratic in $\sqrt{\rho_4}$:</p>
+<p>$$
+\rho_4-4S\,\sqrt{\rho_4}+3T-2S^{2}=0 .
+$$</p>
+<p>Its discriminant is $12\left(\rho_2+4\sqrt{\rho_2}\sqrt{\rho_3}+\rho_3\right)$, positive for any two positive masses. <strong>So the shifted relation never fails to offer a solution: it always has two real roots, one above the pair and one below it. An equation that always has a solution cannot fail, and an equation that cannot fail is not a test.</strong></p>
+<p><strong>[ALGEBRA applied to data]</strong> With $\sqrt{\rho_2}=14.379440$ and $\sqrt{\rho_3}=58.968028$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>root</th>
+<th>$\sqrt{\rho_4}$</th>
+<th>$\rho_4$</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$+$</td>
+<td>$292.390$</td>
+<td>$85\,492$</td>
+<td>a new mass, $43.6863$ GeV</td>
+</tr>
+<tr>
+<td>$-$</td>
+<td>$0.999650$</td>
+<td>$0.999300$</td>
+<td>the electron, to $0.07\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[MEASURED]</strong> The large root is excluded. A sequential charged lepton at $43.7$ GeV would have been pair-produced at LEP II, whose searches closed the region below about $100$ GeV; and a sequential lepton in that range with a neutrino lighter than $m_Z/2$ would have widened the $Z$ lineshape, which counts three light neutrinos. Either argument alone is enough.</p>
+<h3 id="112-is-the-substitution-circular">11.2 Is the substitution circular?</h3>
+<p>The word circular hides three questions with three answers.</p>
+<p><strong>Was $2/3$ fitted to the leptons?</strong> <strong>[PUBLISHED]</strong> No. Koide stated the rational $2/3$ in 1981, before any fit, and §12 counts what that costs. The original agreement of $6.2\times10^{-6}$ is evidence, and this section does not touch it.</p>
+<p><strong>Is the recovery of the electron new evidence?</strong> <strong>[ALGEBRA]</strong> No, and it is provable in one line. For an arbitrary third root $z$,</p>
+<p>$$
+z^{2}-4S z+3T-2S^{2}=0
+\quad\Longleftrightarrow\quad
+\frac{\rho_2+\rho_3+z^{2}}{\left(\sqrt{\rho_2}+\sqrt{\rho_3}+z\right)^{2}}=\frac{2}{3}.
+$$</p>
+<p>The left side says the pair completes to $z$; the right side says the triple satisfies the closure. <strong>They are the same statement.</strong> The recovery is therefore not evidence additional to the original, but "not additional" is not "empty": the shared statement is one genuine constraint on three masses.</p>
+<p><strong>Is it circular in the vicious sense?</strong> <strong>[ALGEBRA]</strong> No. A vicious circle is a test whose input contains its own output. Here the input is two measured masses and the output is a third measured mass that was not used. That is a legitimate consistency check, and it passes; what it is not is an independent one.</p>
+<p><strong>The counting, stated correctly.</strong> Three charged-lepton masses and one relation on them means two free parameters at the level of raw data and one fixed by the relation. <strong>That is a real reduction of one parameter, and the note says so plainly.</strong> What the shifted reading does not supply is a second constraint: substituting $(m_2,m_3,m_4)$ leaves one equation on one unknown, because it is the same equation. One constraint can remove one parameter. It cannot remove two, and it cannot be spent twice.</p>
+<p><strong>"One constraint" is not "no constraint".</strong> The distinction is the whole of this subsection, and an earlier draft got it wrong by writing that the shifted reading predicts nothing. It predicts the third mass, it predicts it correctly, and it is worth the same as the original statement.</p>
+<h3 id="113-why-the-electron-comes-back-low">11.3 Why the electron comes back low</h3>
+<p><strong>[ALGEBRA]</strong> The recovery is accurate to the relation's own error, and the size of that error depends on which mass carries it, because $Q$ is not equally sensitive to the three.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>mass varied</th>
+<th>$\partial Q/\partial\ln m$</th>
+<th>shift needed to absorb the whole $6.2\times10^{-6}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_e$</td>
+<td>$-0.00879$</td>
+<td>$+0.070\%$</td>
+</tr>
+<tr>
+<td>$m_\mu$</td>
+<td>$-0.09153$</td>
+<td>$+0.0068\%$</td>
+</tr>
+<tr>
+<td>$m_\tau$</td>
+<td>$+0.10032$</td>
+<td>$-0.0062\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>$Q$ is eleven times more sensitive to $m_\tau$ than to $m_e$.</strong> So the same $6.2\times10^{-6}$ shows up as $0.070\%$ when charged to the electron and as $0.006\%$ when charged to the tau.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>direction</th>
+<th>prediction</th>
+<th>measured</th>
+<th>miss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(e,\mu)\to\tau$</td>
+<td>$1776.97$ MeV</td>
+<td>$1776.86$ MeV</td>
+<td>$+0.006\%$</td>
+</tr>
+<tr>
+<td>$(\mu,\tau)\to e$</td>
+<td>$0.510641$ MeV</td>
+<td>$0.510999$ MeV</td>
+<td>$-0.070\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two rows are one equation at two magnifications.</strong> Neither is a discovery, and neither damages the original fact.</p>
+<h2 id="12-the-partner-map-and-its-fixed-point">12. The Partner Map and Its Fixed Point</h2>
+<p><strong>[ALGEBRA]</strong> One thing survives the failure of route D, and it is algebra rather than physics. Treat the large root as a map on a pair of roots:</p>
+<p>$$
+P(x,y)=2(x+y)+\sqrt{3\left(x^{2}+4xy+y^{2}\right)} .
+$$</p>
+<p>Iterating from $(\sqrt{\rho_2},\sqrt{\rho_3})$ gives a tower, in GeV:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>$e$</th>
+<th>$\mu$</th>
+<th>$\tau$</th>
+<th>$4$</th>
+<th>$5$</th>
+<th>$6$</th>
+<th>$7$</th>
+<th>$8$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mass</td>
+<td>$0.000511$</td>
+<td>$0.1057$</td>
+<td>$1.7769$</td>
+<td>$43.686$</td>
+<td>$988.80$</td>
+<td>$22\,767$</td>
+<td>$522\,317$</td>
+<td>$1.199\times10^{7}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The root ratios converge fast: $4.9585$, $4.7575$, $4.7984$, $4.7898$, $4.7916$. The limit is exact, and it is not the value one gets by taking $x/y\to0$:</p>
+<p>$$
+r=2\left(1+\frac1r\right)+\sqrt{3\left(1+\frac4r+\frac1{r^{2}}\right)}
+\;\Longrightarrow\;
+r^{4}-4r^{3}-3r^{2}-4r+1=0 ,
+$$</p>
+<p>which is palindromic, so $t=r+1/r$ obeys $t^{2}-4t-5=0$, giving $t=5$ and</p>
+<p>$$
+r_{*}=\frac{5+\sqrt{21}}{2}=4.791287847 ,
+\qquad
+r_{*}^{2}=\frac{23+5\sqrt{21}}{2}=22.956439 .
+$$</p>
+<p><strong>Two warnings, because both are easy to get wrong.</strong></p>
+<p><strong>[ALGEBRA]</strong> The naive asymptotic $2+\sqrt3=3.732051$ is not the fixed point. It is what the map gives when the lower root is negligible, and at the fixed point the lower root is $1/4.79$ of the upper, not negligible. The correct equation keeps both terms and gives $4.79$.</p>
+<p><strong>[ALGEBRA]</strong> The fixed point is a property of the map, not of the leptons:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>measured ratio</th>
+<th>$r_{*}^{2}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_\mu/m_e$</td>
+<td>$206.77$</td>
+<td>$22.96$</td>
+</tr>
+<tr>
+<td>$m_\tau/m_\mu$</td>
+<td>$16.82$</td>
+<td>$22.96$</td>
+</tr>
+<tr>
+<td>$m_4/m_\tau$</td>
+<td>$24.59$</td>
+<td>$22.96$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The tower converges to its fixed point above the tau, not below it.</strong> That kills one tempting reading: a Koide-completed tower is not geometrically spaced, and it is not arithmetically spaced either. It has no constant spacing at all until it is far above the data. So the equal-phase ansatz of §6 and this map are not two descriptions of one object, and neither of them is the measured spectrum.</p>
+<h2 id="13-is-math528-an-accident-a-counted-answer">13. Is $2/3$ an Accident? A Counted Answer</h2>
+<h3 id="131-what-has-to-be-counted">13.1 What has to be counted</h3>
+<p>Three triples are in the data: the charged leptons and the two quark sectors. One of them closes to six parts in a million and the other two miss by $0.18$ and $0.065$. The claim "accident" says that the closing triple is an unremarkable draw from the space of possible triples. That claim is testable, because the space of triples has a measure.</p>
+<p><strong>[ALGEBRA]</strong> Fix the direction of the root vector and let it be uniform in the positive octant, which is the natural measure for three positive masses with no scale. Since $Q$ depends on direction only, a direction has one coordinate, $c=\cos\varphi\in[1/\sqrt3,1]$, uniform in $c$. With $Q=1/(3c^{2})$,</p>
+<p>$$
+f_Q(q)=\frac{q^{-3/2}}{2\sqrt3\left(1-1/\sqrt3\right)}=0.6830\,q^{-3/2},
+\qquad
+\int_{1/3}^{1}f_Q\,dq=1 .
+$$</p>
+<p>The density falls from $3.55$ at $Q=1/3$ to $0.683$ at $Q=1$, so the democratic end is the crowded end. At $Q=2/3$ the density is $1.2548$.</p>
+<p>The window is fixed by the data, not chosen: $Q$ is measured to $\pm6.2\times10^{-6}$ of $2/3$. The probability that one structureless triple lands in that window is</p>
+<p>$$
+P=2\,(6.2\times10^{-6})\,(1.2548)=1.56\times10^{-5},
+$$</p>
+<p>which is one in $64{,}000$. The answer moves by less than a factor of two under a different prior on $Q$: uniform in $Q$ instead of uniform in the direction gives one in $54{,}000$. <strong>The scale of the answer is $10^{-5}$, and it does not depend on the choice of measure.</strong></p>
+<h3 id="132-the-correction-that-has-to-be-made">13.2 The correction that has to be made</h3>
+<p>The figure above is not yet the right one, because a hit on any short fraction would have been noticed and written up. The window has to be multiplied by the number of short fractions that sit in the range.</p>
+<p><strong>[ALGEBRA]</strong> The fractions with denominator at most nine inside $[1/3,1]$ number twenty:</p>
+<p>$$
+\tfrac13,\ \tfrac38,\ \tfrac25,\ \tfrac37,\ \tfrac49,\ \tfrac12,\ \tfrac59,\ \tfrac47,\ \tfrac35,\ \tfrac58,\ \tfrac23,\ \tfrac57,\ \tfrac34,\ \tfrac79,\ \tfrac45,\ \tfrac56,\ \tfrac67,\ \tfrac78,\ \tfrac89,\ 1 .
+$$</p>
+<p>Twenty candidates, three triples, and the same window of $1.86\times10^{-5}$ in $Q$ each time:</p>
+<p>$$
+P_{\text{corrected}}=3\times20\times1.86\times10^{-5}=1.1\times10^{-3}.
+$$</p>
+<p><strong>The honest figure is one in nine hundred, which is about three sigma.</strong> It is not one in $64{,}000$. A reader who quotes the smaller number has counted one candidate value after seeing which value won.</p>
+<p>Three sigma is a real hit and not a proof. It is the level at which a result is worth pursuing and not the level at which a result is believed.</p>
+<h3 id="133-what-the-count-does-not-include">13.3 What the count does not include</h3>
+<p>The purity reading of §3 and the midpoint identity of 2.5 are exact and do not enter the count, because they are the same number restated. They convert $2/3$ into a statement about concentration and about the rung count. Neither is evidence, and this note does not count them twice.</p>
+<p><strong>[SPECULATION]</strong> The corpus produces the numeral $2/3$ in several other places — the up-type hypercharge, the colour trace $3(+1/3)+(-1)=0$, the charge spectrum $0,1/3,2/3,1$ of one minimal left ideal, the photon direction on the fifteenth Cartan. The last of these moves with the generator basis and the one-loop coefficient moves with the convention on the Dynkin index. None of them is a mass statement, and nothing in the corpus maps one onto another. They are recorded and not counted.</p>
+<h3 id="134-the-verdict-and-what-would-overturn-it">13.4 The verdict, and what would overturn it</h3>
+<p><strong>[PUBLISHED]</strong> Koide fixed the value $2/3$ before the tau mass was known and predicted $1776.97$ MeV against a then-measured $1784.2\pm3.2$ MeV. A blind prediction from an expression with two parameters and three quantities is weak evidence on its own; combined with the count above it is the reason this note takes the relation seriously rather than dismissing it.</p>
+<p><strong>What would overturn the verdict.</strong> A second triple closing at $10^{-4}$ would move the relation from coincidence to rule. A measured deviation in the tau mass at the next order of precision would break it, and the mechanism of §5 predicts exactly that: the cancellation is asserted to be accurate only to present precision, so an order of magnitude in $m_\tau$ is the decisive test. Neither exists.</p>
+<h2 id="14-what-i-think">14. What I Think</h2>
+<p>Opinion, separated from the rest and marked as opinion. Each line carries my confidence.</p>
+<ol>
+<li><strong>Koide is the only measured fact here.</strong> Confidence high. Everything else is a reparametrisation of it, an algebra exercise, or an assumption.</li>
+<li><strong>The purity reading is the best thing added since.</strong> Confidence high. It is exact, it needs no model, and it turns the numeral into a shape with a name. It still derives nothing.</li>
+<li><strong>The theorem of §4 is the most useful statement in the note.</strong> Confidence certain. It is elementary, it is checkable in three lines, and it settles the fourth-rung question before any dynamics: the target is $2/5$, and no fourth mass can restore $2/3$.</li>
+<li><strong>The running question is closed.</strong> Confidence high. One-loop QED cannot move $Q$ for the leptons, and the $0.19\%$ belongs to the conversion. The corpus should say this once and stop reopening it.</li>
+<li><strong>The circle is a coordinate change, not a mechanism.</strong> Confidence certain. 2.4 settles it: the circle is Koide, so it cannot be evidence for anything, including itself.</li>
+<li><strong>The $45^{\circ}$ form is the one idea worth keeping.</strong> Confidence moderate. It converts why $2/3$ into why this vector sits at $45^{\circ}$ to the uniform direction, which is a geometric question with a possible answer, unlike the number itself.</li>
+<li><strong>The continuum pass is numerology until a dispersion exists.</strong> Confidence high. Four stacked assumptions to produce one exponent is not a derivation.</li>
+<li><strong>If the programme is ever completed, the missing piece is a boundary condition, not a mass formula.</strong> Guess. Fixed phase spacing smells like a quantisation condition on a finite tower, and no amount of fitting produces one.</li>
+<li><strong>The charm agreement at $2/5$ is a benchmark and not a law.</strong> Confidence moderate. It is flat in the added mass, which is why it survives, and flatness is what a minimum gives for free.</li>
+</ol>
+<h2 id="15-what-i-would-do-next">15. What I Would Do Next</h2>
+<p>Ranked by what would settle something, not by what is easiest to write. Items 1 and 2 of the previous list are now closed and are removed rather than restated.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>task</th>
+<th>why it matters</th>
+<th>cost</th>
+<th>success looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>look for a fourth rung at $2/5$ rather than at $2/3$</td>
+<td>§4 says the target moved; no search has been run against the new target</td>
+<td>low</td>
+<td>a fermion set within $10^{-5}$ of $2/5$ with a stated scheme</td>
+</tr>
+<tr>
+<td>compute the two-loop flavour-dependent correction to $Q$</td>
+<td>§5 says that is the whole residual; nobody has computed it in this language</td>
+<td>medium</td>
+<td>a number of order $10^{-3}$ with a sign</td>
+</tr>
+<tr>
+<td>test the $45^{\circ}$ form on any other closing triple</td>
+<td>one success outside the leptons would change the status of the whole programme</td>
+<td>low</td>
+<td>a sector with $Q=2/3$ at $10^{-4}$</td>
+</tr>
+<tr>
+<td>look for a boundary condition that quantises $\theta$</td>
+<td>the only route to a mechanism</td>
+<td>high</td>
+<td>a spacing $2\pi/N$ falling out of a finite tower</td>
+</tr>
+<tr>
+<td>drop the continuum pass until a dispersion exists</td>
+<td>it is the subsection most likely to mislead a reader</td>
+<td>none</td>
+<td>it stays dropped</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>Koide's relation is one measured number. On the PDG masses $Q=0.666\,660\,51$ against $2/3$, a deviation of $6.2\times10^{-6}$, and no derivation exists.</p>
+<p>The ratio is exactly the purity of the normalised root vector, $Q=\sum_i p_i^2$ with $p_i=\sqrt{m_i}/\sum_j\sqrt{m_j}$. Its reciprocal is the effective number of participants, so $2/3$ says the lepton mass is shared as if among one and a half of three. The reading is exact and derives nothing.</p>
+<p>The ratio extended by one further mass has a unique minimum at $m_*=\left(\sum m_i\right)^{2}/\left(\sum\sqrt m_i\right)^{2}=1.255\,40$ GeV, and the minimum is $Q_0/(1+Q_0)$, which for $Q_0=2/3$ is exactly $2/5$. So no fourth mass can restore $2/3$; the fourth-rung target is $2/5$. The charm mass sits $1.2\%$ above $m_*$ and gives $Q(e,\mu,\tau,c)=0.400\,002\,42$, six parts per million from the target, and the value is flat in the added mass.</p>
+<p>The ratio is homogeneous of degree zero, and the three leptons share one anomalous dimension, so one-loop QED running cannot move it. The $0.19\%$ drift quoted at $M_Z$ is the pole-to-$\overline{\rm MS}$ conversion, whose finite part carries $\log m_i^2$ and is therefore flavour-dependent. Sumino's family gauge cancels that term, not a running.</p>
+<p>Everything else in the note is arithmetic on one constraint: the circle is a coordinate change, parity disfavours even counts without excluding them, and four routes to a fourth rung fail. An accident would cost one in nine hundred, once twenty short fractions and three triples are counted, which is three sigma and not a proof.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q$</td>
+<td>the closure ratio $\left(1+\rho_2+\rho_3\right)/\left(1+\sqrt{\rho_2}+\sqrt{\rho_3}\right)^2$; measured $0.666\,660\,51$</td>
+</tr>
+<tr>
+<td>$Q_0$</td>
+<td>the same ratio for a fixed tuple, before a mass is added, §4</td>
+</tr>
+<tr>
+<td>$\rho_i$</td>
+<td>$m_i/m_1$, a mass ratio; $\rho_1=1$, $\rho_2=206.768\,28$, $\rho_3=3477.228\,28$</td>
+</tr>
+<tr>
+<td>$\mu$, $\sigma$</td>
+<td>mean and standard deviation of the roots $\sqrt{\rho_i}$</td>
+</tr>
+<tr>
+<td>$\vec r$, $\vec u$</td>
+<td>the root vector $\left(1,\sqrt{\rho_2},\sqrt{\rho_3}\right)$ and the democratic vector $\left(1,1,1\right)$</td>
+</tr>
+<tr>
+<td>$\varphi$</td>
+<td>the angle between $\vec r$ and $\vec u$; $45^{\circ}$ at the closure</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the number of rungs in a closed tower</td>
+</tr>
+<tr>
+<td>$p_i$</td>
+<td>the share $\sqrt{m_i}/\sum_j\sqrt{m_j}$, with $\sum_ip_i=1$, §3</td>
+</tr>
+<tr>
+<td>$N_{\rm eff}$</td>
+<td>$1/Q$, the effective number of participants, §3</td>
+</tr>
+<tr>
+<td>$S$, $R$</td>
+<td>$\sum_i m_i$ and $\sum_i\sqrt{m_i}$</td>
+</tr>
+<tr>
+<td>$m_*$</td>
+<td>the optimal added mass $\left(S/R\right)^2$, §4</td>
+</tr>
+<tr>
+<td>$x$</td>
+<td>the added mass in $Q(x)$, §4</td>
+</tr>
+<tr>
+<td>$P(x,y)$, $r_*$</td>
+<td>the Koide partner map and its fixed root ratio $\left(5+\sqrt{21}\right)/2$, §12</td>
+</tr>
+<tr>
+<td>$p$</td>
+<td>the power-law exponent of an open ladder, §10</td>
+</tr>
+<tr>
+<td>$\gamma$, $z$, $d$</td>
+<td>density exponent, dispersion exponent, spatial dimension, §10.2</td>
+</tr>
+<tr>
+<td>$f_Q$, $c$</td>
+<td>density of $Q$ over the octant, and $c=\cos\varphi$, §13</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_internal/flavour-two-coordinates-of-one-vector.html">Two Coordinates of One Vector: Foot's Angle, the Phase $2/9$, and the $N$-Rung Form</a>. The geometry of the same ratio, the $Z_3$ cosine, and the candidates for the phase.</li>
+<li><a href="../articles_internal/flavour-the-neutrino-closure.html">The Neutrino Closure: Alikhanov's Relation, the Silver Ratio, and the Count $Q_N=(N+1)/2N$</a>. The same closure in the sector where the absolute scale is unknown.</li>
+<li><a href="../articles_internal/flavour-the-stabiliser-of-the-line.html">The Stabiliser of the Line</a>. Why no generator turns one lepton into another.</li>
+<li><a href="../articles_physics/the-excitation-ladder-theory-of-flavour.html">The Excitation Ladder Theory of Flavour</a>. The public statement of the picture, without this arithmetic.</li>
+<li><a href="../articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html">The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation</a>. Where the masses enter as input.</li>
+<li><a href="../articles_physics/the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a>. Where the running of masses is computed in this framework.</li>
+</ul>
+<h2 id="appendix-a-claims-withdrawn">Appendix A. Claims Withdrawn</h2>
+<p>Kept as a record, because a retraction is more useful than a silent edit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>previous claim</th>
+<th>why it was wrong</th>
+<th>replacement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the circle produces the closure for free as evidence</td>
+<td>the circle <em>is</em> the closure, by 2.4</td>
+<td>the circle has zero predictive content</td>
+</tr>
+<tr>
+<td>the closure tests whether the leptons lie on a circle</td>
+<td>a test of the circle is a test of $Q=2/3$</td>
+<td>one number, one test</td>
+</tr>
+<tr>
+<td>parity excludes every even count independently of any fit</td>
+<td>pairing holds only at fixed $(\mu,\theta)$ inside the ansatz</td>
+<td>even counts are disfavoured, not forbidden</td>
+</tr>
+<tr>
+<td>the rung count is three, and three by measurement</td>
+<td>measurement counts particles, not rungs</td>
+<td>three is what the ansatz gives when fitted</td>
+</tr>
+<tr>
+<td>the node distance is a separate finding</td>
+<td>$135^{\circ}$ follows from the same $\sqrt2$ as $Q=2/3$</td>
+<td>Koide restated as an angle</td>
+</tr>
+<tr>
+<td>the closure forces heavy rungs to be rarer</td>
+<td>forced only inside the power-law density assumption</td>
+<td>it is assumption 2, not a consequence</td>
+</tr>
+<tr>
+<td>a dispersion this stiff is the theory's main dynamical demand</td>
+<td>there is no theory yet to demand anything</td>
+<td>a target for a future dispersion</td>
+</tr>
+<tr>
+<td>the shifted closure predicts nothing</td>
+<td>it predicts the third mass, correctly</td>
+<td>it is the same constraint read from another side</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="appendix-b-checks">Appendix B. Checks</h2>
+<p>Every number below was recomputed before it was written.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Koide for the leptons</td>
+<td>$1883.029/2824.5701$</td>
+<td>$0.66666051$</td>
+</tr>
+<tr>
+<td>deviation from $2/3$</td>
+<td>$0.66666667-0.66666051$</td>
+<td>$6.2\times10^{-6}$</td>
+</tr>
+<tr>
+<td>the purity identity</td>
+<td>$\sum_i p_i^2$ on the PDG shares</td>
+<td>$0.66666446$, equal to $Q$</td>
+</tr>
+<tr>
+<td>the effective count</td>
+<td>$1/Q$</td>
+<td>$1.500005$</td>
+</tr>
+<tr>
+<td>the up-type sector</td>
+<td>$(2.16+1270+172690)/\left(\sum\sqrt m\right)^{2}$</td>
+<td>$0.8489808$</td>
+</tr>
+<tr>
+<td>the down-type sector</td>
+<td>$(4.67+93.4+4180)/\left(\sum\sqrt m\right)^{2}$</td>
+<td>$0.7314277$</td>
+</tr>
+<tr>
+<td>the bound</td>
+<td>Cauchy–Schwarz</td>
+<td>$Q\le1$</td>
+</tr>
+<tr>
+<td>$N=2$</td>
+<td>$Q=1$ forces one $\sqrt{\rho_i}=0$</td>
+<td>$m=0$</td>
+</tr>
+<tr>
+<td>the midpoint identity</td>
+<td>$(N+1)/(2N)=2/N$</td>
+<td>$N=3$ only</td>
+</tr>
+<tr>
+<td>the optimal mass</td>
+<td>$\left(S/R\right)^{2}$ with MeV masses</td>
+<td>$1255.395$ MeV, $1.2554$ GeV</td>
+</tr>
+<tr>
+<td>the minimum value</td>
+<td>$Q(m_*)$ against $Q_0/(1+Q_0)$</td>
+<td>$0.399\,999\,21$ both</td>
+</tr>
+<tr>
+<td>the exact case</td>
+<td>$Q_0=2/3$</td>
+<td>$2/5$ exactly</td>
+</tr>
+<tr>
+<td>equal additions</td>
+<td>$k=1,2,3$</td>
+<td>$0.39999921$, $0.28571388$, $0.22222198$</td>
+</tr>
+<tr>
+<td>the formula for equal additions</td>
+<td>$Q_0/(1+kQ_0)$</td>
+<td>agrees at every $k$</td>
+</tr>
+<tr>
+<td>the charm benchmark</td>
+<td>$Q(e,\mu,\tau,c)$, $m_c=1.27$ GeV</td>
+<td>$0.400\,002\,42$, $6.1$ ppm</td>
+</tr>
+<tr>
+<td>the flatness</td>
+<td>$m_c=1.25$ and $1.30$ GeV</td>
+<td>$0.399\,999\,65$ and $0.400\,028\,56$</td>
+</tr>
+<tr>
+<td>homogeneity</td>
+<td>$\lambda=1.037$ on all three</td>
+<td>$Q$ unchanged to machine precision</td>
+</tr>
+<tr>
+<td>the variance form</td>
+<td>$\operatorname{var}/\mu^{2}$ for the leptons</td>
+<td>$0.999982$</td>
+</tr>
+<tr>
+<td>the circle identity</td>
+<td>$\sum\cos=0$, $\sum\cos^{2}=3/2$</td>
+<td>exact for every $\theta$</td>
+</tr>
+<tr>
+<td>the node</td>
+<td>$1+\sqrt2\cos135^{\circ}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the open-ladder limit</td>
+<td>$(2p+1)/(p+1)^{2}$ at $p=1+\sqrt2$</td>
+<td>$0.5$</td>
+</tr>
+<tr>
+<td>the open ladder at three rungs</td>
+<td>$1$, $28.41$, $201.25$ against $1$, $206.77$, $3477.2$</td>
+<td>fails</td>
+</tr>
+<tr>
+<td>the density exponent</td>
+<td>$2(\gamma+1)(\gamma+2)=(\gamma+\tfrac32)^{2}$ at $\gamma=(-3+\sqrt2)/2$</td>
+<td>$0.5=0.5$</td>
+</tr>
+<tr>
+<td>the dispersion exponent</td>
+<td>$2d/(\sqrt2-1)$</td>
+<td>$4.828427\,d$</td>
+</tr>
+<tr>
+<td>the $N=4$ pair sums</td>
+<td>$\sqrt{\rho_0}+\sqrt{\rho_2}$, $\sqrt{\rho_1}+\sqrt{\rho_3}$</td>
+<td>$2.000$, $2.000$</td>
+</tr>
+<tr>
+<td>the $N=3$ reconstruction</td>
+<td>$\mu=24.782\,49$, $\theta=132.732^{\circ}$</td>
+<td>$0.511$, $105.653$, $1776.883$ MeV</td>
+</tr>
+<tr>
+<td>the shifted root</td>
+<td>$\rho_4$ at $\sqrt{\rho_2}=14.379440$, $\sqrt{\rho_3}=58.968028$</td>
+<td>$0.999300$ and $85\,492$</td>
+</tr>
+<tr>
+<td>the partner fixed point</td>
+<td>$r^{4}-4r^{3}-3r^{2}-4r+1=0$</td>
+<td>$r_*=(5+\sqrt{21})/2$</td>
+</tr>
+<tr>
+<td>the naive asymptotic</td>
+<td>$2+\sqrt3$</td>
+<td>$3.732$, not $4.791$</td>
+</tr>
+<tr>
+<td>the density of $Q$</td>
+<td>$0.6830\,q^{-3/2}$ integrated over $[1/3,1]$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>the corrected probability</td>
+<td>$3\times20\times1.86\times10^{-5}$</td>
+<td>$1.1\times10^{-3}$</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

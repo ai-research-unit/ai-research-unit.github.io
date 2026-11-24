@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Stabiliser of the Line: Why the Lepton Has No Flavour to Change, and What the $B-L$ Element Does Not Give — Biquaternion Universe</title>
+  <meta name="description" content="Status of this note. Every claim carries one of seven tags. Two sections here are of different kinds and are separated deliberately: §1 to §8 are a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-stabiliser-of-the-line-why-the-lepton-has-no-flavour-to-change-and-what-the-math0-element-does-not-give"><strong>The Stabiliser of the Line: Why the Lepton Has No Flavour to Change, and What the $B-L$ Element Does Not Give</strong></h1>
+<p><em>Status of this note.</em> Every claim carries one of seven tags. Two sections here are of different kinds and are separated deliberately: §1 to §8 are a mechanism, exact given one declaration, and §9 to §13 are the closing of a failed route to the closure.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>tag</th>
+<th>meaning</th>
+<th>weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[MEASURED]</td>
+<td>a number from experiment, independent of the corpus</td>
+<td>usable</td>
+</tr>
+<tr>
+<td>[PUBLISHED]</td>
+<td>a claim already in the literature, attributed</td>
+<td>usable</td>
+</tr>
+<tr>
+<td>[ALGEBRA]</td>
+<td>exact consequence of a definition, no physics assumed</td>
+<td>usable, but often trivial</td>
+</tr>
+<tr>
+<td>[ANSATZ]</td>
+<td>an assumption made here, not derived</td>
+<td>conditional</td>
+</tr>
+<tr>
+<td>[SPECULATION]</td>
+<td>a guess with no support beyond plausibility</td>
+<td>none</td>
+</tr>
+<tr>
+<td>[FAILED]</td>
+<td>tried, computed, and it does not work</td>
+<td>negative</td>
+</tr>
+<tr>
+<td>[WITHDRAWN]</td>
+<td>asserted in an earlier version, now retracted</td>
+<td>negative</td>
+</tr>
+</tbody>
+</table></div>
+<p>This is the fourth of four notes that replace <em>Flavour Research: The Ladder Arithmetic</em>. The other three compute the shape of a closed tower of roots and take the rungs as given. None of them asks a different question, which this note does: <strong>what turns one rung into another?</strong> For the leptons the answer is nothing, and the reason is not dynamical. It is that the only rotation in the gauge sector is a rotation of the spatial triple, and the lepton is the axis of that rotation and not a member of it.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Koide's relation relates three masses. A relation is not a mechanism, and a mechanism would have to say what moves a lepton from one rung to another. This note shows that in the four-colours frame nothing does, and that the statement is a computed property of a stabiliser rather than an absence of evidence.</p>
+<p>The argument is short. The carrier is four-dimensional over $\mathbb C$, with one central real unit and three imaginary units that permute among themselves. Exactly one splitting of that carrier survives every inner derivation: the line spanned by the identity, and the three-dimensional complement. The subgroup of $\mathrm{SU}(4)$ that fixes the line is $\mathrm{SU}(3)$, which is colour. A group that fixes a line cannot rotate anything into it or out of it, so there is no generator that turns one lepton into another. <strong>The lepton does not turn because it is what the others turn about.</strong></p>
+<p>The second half of the note closes a route. The $B-L$ direction $D=\operatorname{diag}(-3,1,1,1)$ is the element the split produces, and the natural question is whether the four forms of the algebra, read against $D$, restate the closure. They do, twice and exactly, and both times the numeral comes from the element's own angle rather than from the masses. That is a negative result and it is recorded so that the route is not reopened.</p>
+<h2 id="1-the-split-and-the-one-declaration-it-needs">1. The Split, and the One Declaration It Needs</h2>
+<p><strong>[ALGEBRA]</strong> The carrier is four-dimensional over $\mathbb C$, spanned by the biquaternion units in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The algebra supplies exactly one canonical splitting into a line and a hyperplane:</p>
+<p>$$
+\mathbf 4=\mathbb C e_t\oplus B_V,
+\qquad
+B_V=\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}.
+$$</p>
+<p>It is canonical because $e_t=1$ is the identity: it commutes with everything, so the line it spans is invariant under every inner derivation the algebra has, and its orthogonal complement is invariant with it. No other unit has that property — the three $\vec e_a$ square to $-e_t$ and permute among themselves, so no line they span survives the action.</p>
+<p><strong>[ANSATZ]</strong> The declaration is (A) of the corpus: the line is the lepton and the hyperplane is the three quark colours. Nothing in the algebra prefers this labelling; it is the adoption the model rests on, and it is tagged here for the same reason it is tagged in <em>The Four Colours Left–Right Model</em>.</p>
+<p><strong>[ALGEBRA]</strong> The two halves are not the same kind of object, and their asymmetry is the asymmetry between the scalar unit and the vector units. $e_t$ is real, central, and squares to $+1$. The $\vec e_a$ are imaginary, anticommuting, and square to $-e_t$. So the lepton direction is temporal and the three colour directions are spatial, and everything below is a consequence of that one difference.</p>
+<h2 id="2-colour-is-the-stabiliser-of-the-line">2. Colour Is the Stabiliser of the Line</h2>
+<p><strong>[ALGEBRA]</strong> Count the generators that annihilate $e_t$. Written on the quartet, the fifteen generators of $\mathfrak{su}(4)$ split by what they do to the line:</p>
+<p>$$
+\operatorname{Stab}_{\mathfrak{su}(4)}(\mathbb C e_t)=\mathfrak{su}(3),
+\qquad
+\dim=8 .
+$$</p>
+<p>These eight act on $B_V$ and give zero on the line. They are <em>the</em> colour group, and the identification is not a choice: the subgroup of $\mathrm{SU}(4)$ that fixes a line <em>is</em> $\mathrm{SU}(3)$, which is why the frame is $\mathrm{SU}(4)$ and not $\mathrm{SU}(3)\times\mathrm U(1)$.</p>
+<p>The reading matters. The statement "the three colours turn into each other" is exactly the statement that eight generators rotate $B_V$ and leave $\mathbb C e_t$ alone. A rotation of the triple is a rotation about the line, and an axis of rotation does not move. The leptons are the axis.</p>
+<h2 id="3-the-other-seven-one-phase-and-six-mixings">3. The Other Seven: One Phase and Six Mixings</h2>
+<p><strong>[ALGEBRA]</strong> The remaining seven generators do not fix the line, and they do not all do the same thing to it.</p>
+<p>Of the other seven generators, one is the phase $iD$ with eigenvalues $(-3,1,1,1)$ — abelian, so it multiplies and never mixes — and six are the leptoquark directions, which take $e_t$ into $B_V$. So</p>
+<p>$$
+15=8+1+6 .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>$\dim$</th>
+<th>what it does to $\mathbb C e_t$</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(3)$</td>
+<td>$8$</td>
+<td>annihilates it, acts on $B_V$</td>
+<td>colour</td>
+</tr>
+<tr>
+<td>$iD$, $D=\operatorname{diag}(-3,1,1,1)$</td>
+<td>$1$</td>
+<td>multiplies it by a scalar</td>
+<td>the phase; $B-L=D/3$</td>
+</tr>
+<tr>
+<td>$\mathfrak m$</td>
+<td>$6$</td>
+<td>sends it into $B_V$</td>
+<td>the leptoquark sextet</td>
+</tr>
+</tbody>
+</table></div>
+<p>The phase deserves its own line. $D$ is traceless, and normalised by $1/3$ it gives the eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$ on $(e_t,\vec e_x,\vec e_y,\vec e_z)$: the lepton-number eigenvalue $-1$ and the baryon-number eigenvalue $\tfrac13$ three times. A generator whose eigenvalues are all different does not mix two directions — it multiplies each by a different number. That is what makes it abelian on this quartet and what makes $B-L$ a charge rather than a rotation.</p>
+<p>The six are the complement, $\mathfrak{su}(4)\ominus\left(\mathfrak{su}(3)\oplus\mathfrak u(1)\right)$, and they are the leptoquarks: $\dim\mathfrak{su}(4)=15$, and $15-8-1=6$, which is also the dimension of the antisymmetric pair of the triple, $\binom{3}{2}\cdot2=6$, and also the count $3+3$ of the $X$ and $\bar X$ of <em>Particle Classification</em>. Three independent counts, one number.</p>
+<h2 id="4-the-computation-no-generator-turns-a-lepton-into-a-lepton">4. The Computation: No Generator Turns a Lepton into a Lepton</h2>
+<p><strong>[ALGEBRA]</strong> The three blocks are exhaustive, so the statement follows without further work. I checked it directly anyway, because a claim of this kind is cheap to check and expensive to get wrong. Take the quartet in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$, write the fifteen generators as antihermitian traceless matrices, and apply each to $e_t=(1,0,0,0)$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>count</th>
+<th>image of $e_t$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the eight of $\mathfrak{su}(3)$</td>
+<td>$8$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the diagonal $iD$, and only it</td>
+<td>$1$</td>
+<td>a pure multiple of $e_t$, namely $-3ie_t$</td>
+</tr>
+<tr>
+<td>the off-diagonal $e_t$–$\vec e_a$ generators</td>
+<td>$6$</td>
+<td>a vector with zero $e_t$ component</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$15$</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>No generator returns a direction on the line other than a real multiple of $e_t$, and none returns another point of the line in the sense of "another lepton". There is only one line. <strong>So the group cannot rotate one lepton into another, because there is no second lepton direction to rotate into.</strong></p>
+<h2 id="5-why-that-kills-flavour-as-a-rotation">5. Why That Kills "Flavour" as a Rotation</h2>
+<p><strong>[ALGEBRA]</strong> A rotation needs at least two members. $\mathrm{SU}(3)$ rotates the three colours because there are three of them of the same kind; that is what a fundamental representation of dimension three means. The lepton is one line, so its representation of the stabiliser is the trivial one, and the trivial representation has no rotation in it.</p>
+<p>This is the mechanism, stated as a single sentence: <strong>the lepton does not turn because it is what the others turn about.</strong> Colour is a rotation group acting on a triplet; the lepton is a singlet of that group, and a singlet is a rotation-invariant object by definition.</p>
+<p>It also explains why the word "flavour" may be the wrong word for leptons. Flavour, in the quark sector, names a position inside a multiplet that a group rotates. The lepton has no such position. What it has is a generation index, which the algebra does not touch at all, and a mass, which it does not explain either.</p>
+<h2 id="6-what-the-generation-index-still-does">6. What the Generation Index Still Does</h2>
+<p><strong>[ALGEBRA]</strong> The gauge sector acts as the identity on the generation factor. So for each $a\in\{1,2,3\}$ there is a separate copy of the quartet, and the gauge bosons couple to all three copies the same way. Nothing in $\mathfrak{su}(4)$ connects copy 1 to copy 2.</p>
+<p><strong>[ANSATZ]</strong> The ladder supplies the masses of the copies: the rungs are generations, and their spacing is the arithmetic of the companion notes. That arithmetic never moves a lepton from one rung to another; it only assigns a height to each rung.</p>
+<p><strong>[SPECULATION]</strong> So a lepton changes generation only if the Yukawa sector supplies a matrix acting on the generation factor, and the frame does not write it. Both outcomes are available: one bidoublet gives one Yukawa matrix and the identity, a second fermion-mass contribution splits the two matrices and gives something else. The corpus should not claim either.</p>
+<h2 id="7-the-two-facts-the-mechanism-does-not-explain">7. The Two Facts the Mechanism Does Not Explain</h2>
+<p><strong>[ALGEBRA]</strong> It does not explain why there are three generations. The stabiliser argument is about one quartet; the number three is a separate input, as <em>The Number of Generations and the Biquaternion Algebra</em> says.</p>
+<p><strong>[ALGEBRA]</strong> It does not explain why the neutrino mixes. Neutrino oscillation is real and is not a colour rotation: it is a misalignment between two mass matrices on the generation factor, which is the same object the charged-lepton sector leaves unwritten. The mechanism forbids a <em>gauge</em> rotation among leptons; it says nothing about a <em>Yukawa</em> misalignment. Confusing the two is the error this note exists to prevent, and it is the error that produced the corpus's earlier $K$-matrix article.</p>
+<h2 id="8-what-would-overturn-it">8. What Would Overturn It</h2>
+<p><strong>[ALGEBRA]</strong> One observation: any charged-lepton transition mediated by a gauge boson. A $\mu\to e\gamma$ or $K_L\to\mu e$ signal from the frame's own leptoquarks would say that the vertex carries a generation index, hence that the one-line-per-generation picture is incomplete, hence that the split of §1 is not the whole story. The mechanism is falsifiable in that single way, and no other.</p>
+<p>Conversely, a null result confirms nothing: with no lepton-to-lepton direction in $\mathfrak{su}(4)$, the rate is zero at every mass, and zero is what a null measurement returns for free. That asymmetry — one signal kills it, no number of nulls establishes it — is the honest status of the claim.</p>
+<h2 id="9-the-four-forms-and-the-collapse-on-real-coefficients">9. The Four Forms, and the Collapse on Real Coefficients</h2>
+<p><strong>[ALGEBRA]</strong> <em>Product and Form Conventions</em> names four forms, each the scalar part of one product:</p>
+<p>$$
+\langle \tilde q_1,\tilde q_2\rangle=\operatorname{Sc}\left(\tilde q_1\tilde q_2\right)=q_{1t}q_{2t}-\left(\vec q_1,\vec q_2\right),
+$$</p>
+<p>$$
+\langle \tilde q_1,\tilde q_2\rangle_{\natural}=\operatorname{Sc}\left(\tilde q_1^{\natural}\tilde q_2\right)=q_{1t}q_{2t}+\left(\vec q_1,\vec q_2\right),
+$$</p>
+<p>$$
+\langle \tilde q_1,\tilde q_2\rangle_{*}=\operatorname{Sc}\left(\tilde q_1\tilde q_2^{*}\right)=q_{1t}\overline{q_{2t}}+\left(\vec q_1,\overline{\vec q_2}\right),
+\qquad
+\langle \tilde q_1,\tilde q_2\rangle_{\natural*}=\operatorname{Sc}\left(\tilde q_1^{\natural}\tilde q_2^{*}\right)=q_{1t}\overline{q_{2t}}-\left(\vec q_1,\overline{\vec q_2}\right).
+$$</p>
+<p><strong>On real coefficients the four are two.</strong> Both conjugations act as the identity, so $\langle\cdot,\cdot\rangle_{*}$ equals $\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ equals $\langle\cdot,\cdot\rangle$. A real triple therefore separates two forms and no more, and every table below reports two columns with the other two attached.</p>
+<p><strong>The bracket is written and the letters are not.</strong> The corpus letters for the four are $P$, $N$, $H$ and $\mathrm{Kr}$, and the letter $N$ is the rung count in the companion notes. The collision is unavoidable here, so this note writes the brackets and never the letters.</p>
+<h2 id="10-the-element-at-two-equal-arguments-and-two-halves-of-math93">10. The Element at Two Equal Arguments, and Two Halves of $2/3$</h2>
+<p><strong>[ALGEBRA]</strong> Write $D=-3e_t+\vec D$ with $\vec D=(1,1,1)$, so $\operatorname{Sc}D=-3$, $\left(\vec D,\vec D\right)=3$ and $\lVert D\rVert^{2}=12$. The two real forms at two equal arguments are</p>
+<p>$$
+\langle D\rangle=9-3=6,
+\qquad
+\langle D\rangle_{\natural}=9+3=12 .
+$$</p>
+<p>Two ratios follow, and both are $2/3$ at three rungs:</p>
+<p>$$
+\frac{\langle D\rangle}{\left(\operatorname{Sc}D\right)^{2}}=\frac{9-3}{9}=1-\frac{1}{N}=\frac23,
+\qquad
+\frac{\langle D\rangle_{\natural}-\langle D\rangle}{\left(\operatorname{Sc}D\right)^{2}}=\frac{2\left(\vec D,\vec D\right)}{\left(\operatorname{Sc}D\right)^{2}}=\frac{2}{N}=\frac23 .
+$$</p>
+<p>The second ratio is $2/N$ at every count, because it is twice the ratio of the two norms. The first is $2/3$ only because $1-1/N=2/N$ has the single solution $N=3$, which is the midpoint identity of <em>Koide's Ratio</em> §2.5 read in the algebra instead of in the interval. <strong>Both come from one number and neither involves a mass:</strong> the angle between $D$ and $e_t$, fixed by $\cos^{2}=\left(\operatorname{Sc}D\right)^{2}/\lVert D\rVert^{2}=9/12=3/4$, so the angle is $150^{\circ}$ and $\tan^{2}=1/N$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N$</th>
+<th>$1-1/N$</th>
+<th>$2/N$</th>
+<th>equal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$0.500$</td>
+<td>$1.000$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$0.667$</td>
+<td>$0.667$</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$0.750$</td>
+<td>$0.500$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$0.800$</td>
+<td>$0.400$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$0.833$</td>
+<td>$0.333$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="11-the-forms-of-math129-against-the-masses">11. The Forms of $D$ Against the Masses</h2>
+<p><strong>[ALGEBRA]</strong> Take the two pure elements, which carry the arrow by the rule that the arrow marks a pure element,</p>
+<p>$$
+\vec q_m=0\cdot e_t+\left(1,\rho_2,\rho_3\right),
+\qquad
+\vec q_r=0\cdot e_t+\vec r,
+$$</p>
+<p>with $\vec r=\left(1,\sqrt{\rho_2},\sqrt{\rho_3}\right)$ the root vector of <em>Two Coordinates of One Vector</em> §1. Their products with $\vec D$ are the two sums of the closure,</p>
+<p>$$
+\left(\vec D,\vec q_m\right)=1+\rho_2+\rho_3=W,
+\qquad
+\left(\vec D,\vec q_r\right)=1+\sqrt{\rho_2}+\sqrt{\rho_3}=S .
+$$</p>
+<p>The two letters are the numerator and the root sum of the closure: $W=\lVert\vec r\rVert^{2}$ and $S=\vec u\cdot\vec r$. The two live forms of $D$ against each element are opposite in sign:</p>
+<p>$$
+\langle D,\vec q_m\rangle=-W,
+\quad
+\langle D,\vec q_m\rangle_{\natural}=+W,
+\quad
+\langle D,\vec q_r\rangle=-S,
+\quad
+\langle D,\vec q_r\rangle_{\natural}=+S .
+$$</p>
+<p><strong>The $-3$ cancels in all four.</strong> The scalar part of $D$ multiplies the vanishing scalar part of a pure element, so these are the numbers $(0,1,1,1)$ would give. The element's own content is §10's, and §10 contains no mass.</p>
+<p><strong>[ALGEBRA, the hypothesis triple]</strong> With $\delta=2/9$ and $k=1$, normalised so that $\sqrt{\rho_1}=1$: roots $(1,\ 14.379\,51,\ 58.970\,10)$, ratios $(1,\ 206.770\,32,\ 3477.472\,84)$, hence $W=3685.243\,153$, $S=74.349\,611$, $S^{2}=5527.864\,730$, and</p>
+<p>$$
+\frac{\langle D,\vec q_m\rangle_{\natural}}{\left[\langle D,\vec q_r\rangle_{\natural}\right]^{2}}=\frac{W}{S^{2}}=\frac{3685.243\,153}{5527.864\,730}=\frac23,
+\qquad
+-\frac{\langle D,\vec q_m\rangle}{\left[\langle D,\vec q_r\rangle_{\natural}\right]^{2}}=\frac23 .
+$$</p>
+<p><strong>One form gives the numerator and another gives the denominator, on two different elements.</strong> That is the structure, and §13 draws the consequence.</p>
+<h2 id="12-the-scalar-slot-and-the-one-condition">12. The Scalar Slot, and the One Condition</h2>
+<p><strong>[ALGEBRA]</strong> Give the mass element a scalar part, $\tilde q=\left(s,1,\rho_2,\rho_3\right)$; by the arrow rule it loses the arrow. Then</p>
+<p>$$
+\langle D,\tilde q\rangle=-3s-W,
+\qquad
+\langle D,\tilde q\rangle_{\natural}=-3s+W ,
+$$</p>
+<p>and the two quotients are</p>
+<p>$$
+\frac{\langle D,\tilde q\rangle_{\natural}}{\left[\langle D,\vec q_r\rangle_{\natural}\right]^{2}}=\frac{W-3s}{S^{2}},
+\qquad
+-\frac{\langle D,\tilde q\rangle}{\left[\langle D,\vec q_r\rangle_{\natural}\right]^{2}}=\frac{W+3s}{S^{2}} .
+$$</p>
+<p><strong>Two exact statements follow.</strong></p>
+<ol>
+<li><strong>The hypothesis is equivalent to $W=4T$.</strong> Write $T=\sqrt{\rho_2}+\sqrt{\rho_3}+\sqrt{\rho_2\rho_3}$, so that $S^{2}=W+2T$ by expansion. Then $W/S^{2}=2/3$ is $3W=2W+4T$, that is $W=4T$; and at $W=4T$ the denominator is $S^{2}=6T$, so the ratio is $4T/6T=2/3$ with $T$ cancelling. On the triple above, $4T=3685.243\,153$ and $W-4T=3.6\times10^{-12}$, and $W/S^{2}-2/3=3\times10^{-16}$. The identity is $T$-free, so it is a statement about the shape and not about the scale.</li>
+<li><strong>The quotient is $2/3$ exactly when $s=0$.</strong> Since
+$$
+    \frac{W-3s}{S^{2}}=\frac23-3\,\frac{s}{S^{2}},
+$$
+    any nonzero scalar part moves the answer, and the two forms move it in opposite directions. So the four-form reading of $2/3$ holds on the pure element only, where the biquaternion has degenerated to a quaternion and the forms have collapsed back to two.</li>
+</ol>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$s$</th>
+<th>$\langle D,\tilde q\rangle_{\natural}$</th>
+<th>ratio</th>
+<th>$-\langle D,\tilde q\rangle$</th>
+<th>ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$+3685.243\,153$</td>
+<td>$\mathbf{0.666\,666\,667}$</td>
+<td>$-3685.243\,153$</td>
+<td>$\mathbf{0.666\,666\,667}$</td>
+</tr>
+<tr>
+<td>$2/9$</td>
+<td>$+3684.576\,486$</td>
+<td>$0.666\,546\,066$</td>
+<td>$-3685.909\,820$</td>
+<td>$0.666\,787\,268$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$+3682.243\,153$</td>
+<td>$0.666\,123\,962$</td>
+<td>$-3688.243\,153$</td>
+<td>$0.667\,209\,372$</td>
+</tr>
+<tr>
+<td>$\mu=24.782\,489$</td>
+<td>$+3610.895\,686$</td>
+<td>$0.653\,217\,085$</td>
+<td>$-3759.590\,620$</td>
+<td>$0.680\,116\,248$</td>
+</tr>
+<tr>
+<td>$W/3$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$-7370.486\,306$</td>
+<td>$1.333\,333\,333$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="13-what-the-route-gives">13. What the Route Gives</h2>
+<p><strong>[ALGEBRA]</strong> Three sentences, in order of strength.</p>
+<ol>
+<li><strong>The four forms do not contain the closure.</strong> The quotient needs $W$ over $S^{2}$, that is the form of $D$ against one element built from the ratios and the form against another built from their roots. No single element carries both sums, so no choice of form on $\tilde q$ alone produces it.</li>
+<li><strong>$D$ does produce $2/3$, twice and exactly, and neither time from a mass.</strong> Both are $2/N$ at $N=3$, which is the count of three restated. The numeral is therefore natural to the element and to the rung count, and says nothing about the lepton spectrum. That is worth recording precisely because it is the kind of agreement that gets mistaken for a derivation.</li>
+<li><strong>The one contact with the data is a consistency check.</strong> On the hypothesis triple the route returns $2/3$ to machine precision. On the measured triple it returns the number of the closure, and the repair needs $s=-0.011\,341$, which is a one-parameter fit; <em>Koide's Ratio</em> §13 counts what fits at this resolution are worth.</li>
+</ol>
+<p><strong>Verdict.</strong> The route is closed and recorded so that it is not reopened. What alone would reopen it: a scalar slot fixed by the algebra rather than fitted, and a reason for the two elements of §11 to be one. Neither exists in the corpus.</p>
+<h2 id="summary">Summary</h2>
+<p>Exactly one splitting of the four-dimensional carrier survives every inner derivation: the line spanned by $e_t$ and the three-dimensional complement $B_V$. The subgroup of $\mathrm{SU}(4)$ that fixes the line is $\mathrm{SU}(3)$, and the fifteen generators split as $15=8+1+6$: eight that annihilate the line, one abelian phase, and six that send the line into the hyperplane.</p>
+<p>No generator returns a lepton direction other than a multiple of $e_t$, so no gauge rotation turns one lepton into another. That is the mechanism, and it rests on one declaration: the line is the lepton and the hyperplane is colour. Given the declaration the result is exact and computed, not inferred from a null measurement.</p>
+<p>The mechanism forbids a gauge rotation among leptons and says nothing about a Yukawa misalignment, which is why neutrino mixing is untouched. It does not explain why there are three generations, and the generation index is carried by the algebra without being touched by it. One observation would overturn it: a gauge-mediated charged-lepton transition. No number of null results would establish it.</p>
+<p>The second half closes a route. Read against the $B-L$ element $D=\operatorname{diag}(-3,1,1,1)$, the four forms produce $2/3$ twice and exactly, from $1-1/N$ and $2/N$ at $N=3$. Both come from the angle between $D$ and $e_t$, which is $150^{\circ}$, and neither involves a mass. The closure itself needs one form on the ratios and another on the roots, so no single element carries it, and the one contact with data requires a fitted scalar slot. The route is closed.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t,\vec e_a$</td>
+<td>the biquaternion units, $e_t=1$ and $\vec e_a^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$B_V$</td>
+<td>the spatial triple $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(3)$, $\mathfrak m$</td>
+<td>the stabiliser of the line, and the six leptoquark directions</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(-3,1,1,1)$, the Cartan direction of $B-L$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$</td>
+<td>the two live forms on real coefficients, and the two conjugates</td>
+</tr>
+<tr>
+<td>$\vec q_m$, $\vec q_r$</td>
+<td>the pure mass and root elements, $(0,1,\rho_2,\rho_3)$ and $(0,1,\sqrt{\rho_2},\sqrt{\rho_3})$</td>
+</tr>
+<tr>
+<td>$W$, $S$, $T$</td>
+<td>$1+\rho_2+\rho_3$, $1+\sqrt{\rho_2}+\sqrt{\rho_3}$, and $\sqrt{\rho_2}+\sqrt{\rho_3}+\sqrt{\rho_2\rho_3}$</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>the scalar part of the mass element</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html">Lepton Flavour in the Four-Colours Model: Nothing Turns the Lepton, and One Generation Matrix Decides the Channels</a>. The public statement of §1 to §8, and what a lepton-to-lepton transition would look like if the mechanism were wrong.</li>
+<li><a href="../articles_physics/the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. Where declaration (A) is made, and the $15=8+1+6$ split with its consequences.</li>
+<li><a href="../articles_physics/particle-classification-three-grids-one-name-in-every-cell.html">Particle Classification: Three Grids, One Name in Every Cell</a>. One generation, and the module the ladder multiplies.</li>
+<li><a href="../articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a>. Why the algebra cannot count rungs.</li>
+<li><a href="../articles_internal/flavour-the-ladder-arithmetic.html">Koide's Ratio: The Bound, the Purity, and the Fourth Rung</a>. The measurement, the midpoint identity, and the count of what fits are worth.</li>
+<li><a href="../articles_internal/flavour-two-coordinates-of-one-vector.html">Two Coordinates of One Vector</a>. The root vector, the angle, and the phase.</li>
+</ul>
+<h2 id="appendix-checks">Appendix. Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the split is canonical</td>
+<td>$e_t=1$ central, $\vec e_a^{2}=-e_t$</td>
+<td>only $\mathbb C e_t$ is invariant</td>
+</tr>
+<tr>
+<td>$\dim\mathfrak{su}(4)$</td>
+<td>$\binom{4}{2}\cdot2$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the stabiliser</td>
+<td>generators annihilating $e_t$, explicit matrices</td>
+<td>$8$, and it is $\mathfrak{su}(3)$</td>
+</tr>
+<tr>
+<td>the phase count</td>
+<td>traceless diagonal, rank $3$</td>
+<td>one abelian direction, so $8+1+6$</td>
+</tr>
+<tr>
+<td>the sextet count</td>
+<td>$\binom{3}{2}\cdot2$, and $15-8-1$</td>
+<td>$6$ and $6$</td>
+</tr>
+<tr>
+<td>$B-L$ eigenvalues</td>
+<td>$D/3$</td>
+<td>$(-1,\tfrac13,\tfrac13,\tfrac13)$</td>
+</tr>
+<tr>
+<td>nothing turns a lepton</td>
+<td>image of $e_t$ under all fifteen</td>
+<td>$0$ (eight), $-3ie_t$ (one), in $B_V$ (six)</td>
+</tr>
+<tr>
+<td>the trace of $D$</td>
+<td>$-3+1+1+1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the four forms on real coefficients</td>
+<td>two conjugate pairs</td>
+<td>identical, so two are live</td>
+</tr>
+<tr>
+<td>the norms of $D$</td>
+<td>$9-3$ and $9+3$</td>
+<td>$6$ and $12$</td>
+</tr>
+<tr>
+<td>the first half of $2/3$</td>
+<td>$\langle D\rangle/\left(\operatorname{Sc}D\right)^{2}$</td>
+<td>$0.666\,667$</td>
+</tr>
+<tr>
+<td>the second half of $2/3$</td>
+<td>$\left(\langle D\rangle_{\natural}-\langle D\rangle\right)/\left(\operatorname{Sc}D\right)^{2}$</td>
+<td>$0.666\,667$</td>
+</tr>
+<tr>
+<td>the uniqueness of the count</td>
+<td>$1-1/N=2/N$</td>
+<td>$N=3$ only</td>
+</tr>
+<tr>
+<td>the angle</td>
+<td>$\arccos\left(-3/\sqrt{12}\right)$, $\tan^{2}=3/9$</td>
+<td>$150.0000^{\circ}$, $1/3$</td>
+</tr>
+<tr>
+<td>the expansion of the denominator</td>
+<td>$S^{2}=W+2T$</td>
+<td>$5527.864\,730$ by both routes</td>
+</tr>
+<tr>
+<td>the hypothesis in one identity</td>
+<td>$W=4T$ on the triple</td>
+<td>$3.6\times10^{-12}$</td>
+</tr>
+<tr>
+<td>the closure on the triple</td>
+<td>$W/S^{2}$</td>
+<td>$0.666\,666\,666\,667$</td>
+</tr>
+<tr>
+<td>the $-3$ drops out</td>
+<td>forms of $D$ and of $(0,1,1,1)$ against $\vec q_m$</td>
+<td>identical, $\pm W$</td>
+</tr>
+<tr>
+<td>the repair of the measured triple</td>
+<td>$s=\left(W-\tfrac23S^{2}\right)/3$</td>
+<td>$-0.011\,341$</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

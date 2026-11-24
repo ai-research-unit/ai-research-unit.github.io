@@ -211,31 +211,47 @@ $$</p>
 <p><strong>How to read a cell.</strong> Cell $(i,j)$ is the direction that moves index $j$ into index $i$. A cell alone is not a generator: it is one of the two amplitudes of the plane $\{i,j\}$, and the plane's two directions are the amplitude and its reverse. <strong>The two particles of a plane are the two real combinations of its two amplitudes</strong>, which is why each cell can carry a particle name and why the pair of mirrored cells carries a pair of particles.</p>
 <p><strong>And one honest convention about the names in the cells.</strong> Since each particle is a real combination of a cell and its mirror, which name goes in which cell is a choice: the two names of a mirrored pair could be exchanged without changing a single number. What is <em>not</em> a choice is the count — one plane, two amplitudes, two particles — and that is the only thing the grid is used for below. The cells are a register of names and not a basis of the Lie algebra.</p>
 <p><strong>The grid.</strong> Rows are <em>from</em>, columns are <em>to</em>; cell $(i,j)$ moves index $j$ into index $i$. Each cell carries the symbol of its boson and, beneath it, the name of the particle.</p>
-<p>$$
-\begin{array}{ccccc}
- &amp; \substack{t\\ \text{lepton}} &amp; \substack{x\\ \text{red}} &amp; \substack{y\\ \text{green}} &amp; \substack{z\\ \text{blue}}\\[10pt]
-\substack{t\\ \text{lepton}}
- &amp; \substack{B'\\ \text{the }B\text{--}L\text{ boson}}
- &amp; \substack{\bar X^{r}\\ \text{antileptoquark, red}}
- &amp; \substack{\bar X^{g}\\ \text{antileptoquark, green}}
- &amp; \substack{\bar X^{b}\\ \text{antileptoquark, blue}}\\[10pt]
-\substack{x\\ \text{red}}
- &amp; \substack{X^{r}\\ \text{leptoquark, red}}
- &amp; \substack{T^{c}_{3}\\ \text{gluon, } r\bar r-g\bar g}
- &amp; \substack{g_{1}\\ \text{gluon, } r\bar g}
- &amp; \substack{g_{4}\\ \text{gluon, } r\bar b}\\[10pt]
-\substack{y\\ \text{green}}
- &amp; \substack{X^{g}\\ \text{leptoquark, green}}
- &amp; \substack{g_{2}\\ \text{gluon, } g\bar r}
- &amp; \substack{T^{c}_{8}\\ \text{gluon, colour-singlet diagonal}}
- &amp; \substack{g_{6}\\ \text{gluon, } g\bar b}\\[10pt]
-\substack{z\\ \text{blue}}
- &amp; \substack{X^{b}\\ \text{leptoquark, blue}}
- &amp; \substack{g_{5}\\ \text{gluon, } b\bar r}
- &amp; \substack{g_{7}\\ \text{gluon, } b\bar g}
- &amp; \substack{\text{trace}\\ \text{not a generator}}
-\end{array}
-$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$t$ lepton</th>
+<th>$x$ red</th>
+<th>$y$ green</th>
+<th>$z$ blue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>$t$ lepton</strong></td>
+<td>$B'$<br>the $B-L$ boson</td>
+<td>$\bar X^{r}$<br>antileptoquark, red</td>
+<td>$\bar X^{g}$<br>antileptoquark, green</td>
+<td>$\bar X^{b}$<br>antileptoquark, blue</td>
+</tr>
+<tr>
+<td><strong>$x$ red</strong></td>
+<td>$X^{r}$<br>leptoquark, red</td>
+<td>$T^{c}_{3}$<br>gluon, $r\bar r-g\bar g$</td>
+<td>$g_{1}$<br>gluon, $r\bar g$</td>
+<td>$g_{4}$<br>gluon, $r\bar b$</td>
+</tr>
+<tr>
+<td><strong>$y$ green</strong></td>
+<td>$X^{g}$<br>leptoquark, green</td>
+<td>$g_{2}$<br>gluon, $g\bar r$</td>
+<td>$T^{c}_{8}$<br>gluon, the second diagonal</td>
+<td>$g_{6}$<br>gluon, $g\bar b$</td>
+</tr>
+<tr>
+<td><strong>$z$ blue</strong></td>
+<td>$X^{b}$<br>leptoquark, blue</td>
+<td>$g_{5}$<br>gluon, $b\bar r$</td>
+<td>$g_{7}$<br>gluon, $b\bar g$</td>
+<td>trace<br>not a generator</td>
+</tr>
+</tbody>
+</table></div>
 <p><strong>The four diagonal cells hold four raw directions, and the names in them are a basis of the diagonal and not one cell each.</strong> The cells are $iE_{tt},iE_{xx},iE_{yy},iE_{zz}$. Tracelessness removes one combination of the four and leaves three, and the three are what the names denote:</p>
 <p>$$
 B-L=\tfrac13\operatorname{diag}(-3,1,1,1),
@@ -308,20 +324,30 @@ B-L=\tfrac13 D,\qquad \operatorname{tr}_{\mathbf 4}(B-L)=-\tfrac33+\tfrac13+\tfr
 $$</p>
 <p>and the vanishing of the trace is the same statement as the four diagonal entries summing to nothing. <strong>The lepton cell is minus the colour trace</strong>, which is the corpus's charge-quantisation result read off the grid in one line, and it is why the entry is $-3$ and not a free number.</p>
 <p><strong>Four diagonal cells, three generators.</strong> The diagonal of the $4\times4$ has four cells and the tracelessness condition leaves three independent combinations: $B-L$ in the corner and two in the colour block. The fourth combination — all four entries equal — is the trace direction $iI$, and it is not a generator of $\mathrm{SU}(4)$: it is the direction $\det=1$ removes. <strong>That is the first of the three removed cells, and the other two are the diagonal cells of the next two grids.</strong> So the $4\times4$ holds sixteen cells and fifteen generators, and the missing one is not a hole in the picture but the definition of $\mathrm{SU}(4)$.</p>
-<h2 id="the-math149-grid-math150">The $\mathrm{SU}(2)_L$ Grid, $2\times2$</h2>
+<h2 id="the-math179-grid-math180">The $\mathrm{SU}(2)_L$ Grid, $2\times2$</h2>
 <p><strong>Three generators, four cells, in a $2\times2$.</strong> The index is the left doublet, and the grid names the left weak bosons.</p>
-<p><strong>The grid.</strong> The same drawing as <em>The $\mathrm{SU}(4)$ Grid, $4\times4$, with a Name in Every Cell</em>, one factor smaller. Rows are <em>from</em>, columns are <em>to</em>.</p>
-<p>$$
-\begin{array}{ccc}
- &amp; \substack{\uparrow\\ \text{up-type}} &amp; \substack{\downarrow\\ \text{down-type}}\\[10pt]
-\substack{\uparrow\\ \text{up-type}}
- &amp; \substack{W^{3}_{L}\\ \text{the neutral left weak boson}}
- &amp; \substack{W^{+}_{L}\\ \text{the positively charged left weak boson}}\\[10pt]
-\substack{\downarrow\\ \text{down-type}}
- &amp; \substack{W^{-}_{L}\\ \text{the negatively charged left weak boson}}
- &amp; \substack{\text{trace}\\ \text{not a generator}}
-\end{array}
-$$</p>
+<p><strong>The grid.</strong> The same table as <em>The $\mathrm{SU}(4)$ Grid, $4\times4$, with a Name in Every Cell</em>, one factor smaller. Rows are <em>from</em>, columns are <em>to</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\uparrow$ up-type</th>
+<th>$\downarrow$ down-type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>$\uparrow$ up-type</strong></td>
+<td>$W^{3}_{L}$<br>the neutral left weak boson</td>
+<td>$W^{+}_{L}$<br>the positively charged left weak boson</td>
+</tr>
+<tr>
+<td><strong>$\downarrow$ down-type</strong></td>
+<td>$W^{-}_{L}$<br>the negatively charged left weak boson</td>
+<td>trace<br>not a generator</td>
+</tr>
+</tbody>
+</table></div>
 <p><strong>The doublets it acts on, named.</strong> The index is filled by whichever left-handed doublet is in play:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -349,19 +375,29 @@ $$</p>
 </table></div>
 <p>So $\mathrm{SU}(2)_L$ acts on two doublets per generation: one leptonic and one quark, the latter in three colour copies. The $2\times2$ grid above is the same grid for both — what changes is which fermions sit in the two slots.</p>
 <p><strong>The diagonal cell is one generator and the other is the trace.</strong> The two diagonal cells of a $2\times2$ hold two real numbers and the constraint that their sum vanish leaves one, $W^3_L$. The other is the trace, the direction removed by $\det=1$ again. <strong>So $\mathfrak u(2)_L=4=3+1$ and $\mathfrak{su}(2)_L=3$.</strong></p>
-<h2 id="the-math168-grid-math169">The $\mathrm{SU}(2)_R$ Grid, $2\times2$</h2>
-<p><strong>The grid.</strong> The same drawing, a different copy, and the names change because the particles do.</p>
-<p>$$
-\begin{array}{ccc}
- &amp; \substack{\uparrow\\ \text{up-type}} &amp; \substack{\downarrow\\ \text{down-type}}\\[10pt]
-\substack{\uparrow\\ \text{up-type}}
- &amp; \substack{W^{3}_{R}\\ \text{the neutral right weak boson}}
- &amp; \substack{W^{+}_{R}\\ \text{the positively charged right weak boson}}\\[10pt]
-\substack{\downarrow\\ \text{down-type}}
- &amp; \substack{W^{-}_{R}\\ \text{the negatively charged right weak boson}}
- &amp; \substack{\text{trace}\\ \text{not a generator}}
-\end{array}
-$$</p>
+<h2 id="the-math204-grid-math205">The $\mathrm{SU}(2)_R$ Grid, $2\times2$</h2>
+<p><strong>The grid.</strong> The same table, a different copy, and the names change because the particles do.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\uparrow$ up-type</th>
+<th>$\downarrow$ down-type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>$\uparrow$ up-type</strong></td>
+<td>$W^{3}_{R}$<br>the neutral right weak boson</td>
+<td>$W^{+}_{R}$<br>the positively charged right weak boson</td>
+</tr>
+<tr>
+<td><strong>$\downarrow$ down-type</strong></td>
+<td>$W^{-}_{R}$<br>the negatively charged right weak boson</td>
+<td>trace<br>not a generator</td>
+</tr>
+</tbody>
+</table></div>
 <p><strong>The doublets it acts on.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -1099,7 +1135,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The mass collision is the worst.</strong> The quaternionic norm $\mathcal N=-m^2c^2$ is a quartic invariant a boost preserves. The finite mass $m$ is a parameter of the finite Dirac operator. A mass eigenvalue is what a mass matrix returns. A mass scale $M_C$, $M_R$, $M_W$ is where a mass is generated. $M_X=\sqrt2\,M_{W_R}$ relates two of the fourth kind. <strong>The equality $m_d=m_e$ is not of those four kinds at all: it is the Pati–Salam literature's per-generation condition, transcribed and flagged, and this model predicts no such relation because it fixes no scalar multiplet.</strong> A sentence that says "the mass is $M_C$" mixes the fourth kind with the third.</p>
-<h2 id="the-seven-cells-touching-the-math634-index">The Seven Cells Touching the $t$ Index</h2>
+<h2 id="the-seven-cells-touching-the-math676-index">The Seven Cells Touching the $t$ Index</h2>
 <p><strong>One arrangement fact, and it is the grid's own.</strong> Seven generators have a nonzero entry in the $t$ row or the $t$ column. In the grid of <em>The $\mathrm{SU}(4)$ Grid, $4\times4$, with a Name in Every Cell</em> they are visible without any computation: everything in the $t$ row, everything in the $t$ column, and the corner.</p>
 <div class="table-scroll"><table>
 <thead>
