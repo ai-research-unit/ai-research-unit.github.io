@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Twenty-One Generators in the Axis-Free Frame: Integer Arrays, Fifteen Dimensions, and a Cartan That Cannot Be Integer-Orthonormal — Biquaternion Universe</title>
+  <meta name="description" content="This note prints the arrays. The frame article lists twenty-one named generators: fifteen of, three of and three of, and it says where each one sits. It…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-twenty-one-generators-in-the-axis-free-frame-integer-arrays-fifteen-dimensions-and-a-cartan-that-cannot-be-integer-orthonormal"><strong>The Twenty-One Generators in the Axis-Free Frame: Integer Arrays, Fifteen Dimensions, and a Cartan That Cannot Be Integer-Orthonormal</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This note prints the arrays.</strong> The frame article lists twenty-one named generators: fifteen of $\mathrm{SU}(4)$, three of $\mathrm{SU}(2)_L$ and three of $\mathrm{SU}(2)_R$, and it says where each one sits. It does not print them. This note prints every one of them in the axis-free frame, and reads what the arrays settle.</p>
+<p><strong>Four results, and the last is a refusal.</strong></p>
+<ol>
+<li><strong>Twenty-one names, fifteen arrays.</strong> All twenty-one are anti-Hermitian and traceless, and their span is fifteen-dimensional. The array therefore holds no factor label: nothing in the array of $L_{\vec e_x}$ says it is an $\mathrm{SU}(2)_L$ generator rather than a leptoquark direction.</li>
+<li><strong>The arrays are integral and the word coordinates are not.</strong> Every entry of every array lies in $\{0,\pm1,\pm i\}$. Expanded in the sixteen words, the two-sided action has real coefficients $\pm1$ and the diagonal has $\pm i$, while the eight of colour and the six leptoquarks have coefficients in $\{\pm\tfrac12,\pm\tfrac12 i\}$. The integral array and the half-integral address are two different lists of numbers, and the note keeps them apart.</li>
+<li><strong>The sixth block is not a seventh.</strong> Each of the six generators of the two-sided action is one leptoquark direction plus or minus one colour direction, so the six relations among the twenty-one cross the walls of the split and add no direction.</li>
+<li><strong>One Cartan, three wishes, one refusal.</strong> The three diagonal generators that the split names are mutually orthogonal with integer norms $(-2,-6,-12)$ and index $6$ in the unimodular lattice; the integer triple the frame prints is unimodular and not orthogonal. No integer basis is orthonormal, because every integer basis has Gram determinant $-4\digamma_{\mathrm{idx}}^{2}$.</li>
+</ol>
+<p><strong>Boundaries.</strong> This note gives arrays and their invariants. It gives no dynamics, no coupling, no Yukawa matrix and no choice of group. The operator is the object and the array is one display of it, as <em>Matrix Representations Conventions</em> requires.</p>
+<h2 id="the-frame-the-ordering-and-the-array">The Frame, the Ordering and the Array</h2>
+<p><strong>The carrier is the quartet, and the order is fixed.</strong> The axis-free frame is the coefficient basis of $\mathbb B$, and the carrier is read in the order</p>
+<p>$$
+\bigl(e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z\bigr),
+$$</p>
+<p>the lepton line first and the three colours after, which is the order of the four-colour frame article. The split of the carrier is $\mathbb C e_t\oplus B_V$, and the three slots $\vec e_x,\vec e_y,\vec e_z$ are the colour triple.</p>
+<p><strong>The array of an endomorphism.</strong> For an operator $T$ of the carrier, the array in this frame is</p>
+<p>$$
+\mathsf A(T)_{\imath\jmath}=\bigl[T\,e_{\jmath}\bigr]_{\imath},
+$$</p>
+<p>the $\jmath$-th column being the image of the $\jmath$-th unit. For an element the array is $L_{\mathrm{axf}}(\tilde Q)$, as in <em>The AXF Matrices</em>, and for right multiplication it is $R_{\mathrm{axf}}(\tilde Q)$. The array carries no tilde, and the reason is not decoration: the tilde marks an element of the algebra, an array is not an element, and a generator such as $iD$ has no element behind it to mark. The tilde sits on the argument, as in $L_{\mathrm{axf}}(\tilde Q)$, and on nothing else.</p>
+<p><strong>What the entries are.</strong> The sixteen words of $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$ have entries in $\{0,+1,-1\}$, because the basis is multiplicative and each column of each array is a signed basis vector. The generators are not elements of $\mathbb B$, and their arrays carry $\pm i$ in addition. Every entry of every one of the twenty-one arrays below lies in $\{0,\pm1,\pm i\}$.</p>
+<p><strong>The words, and the shorthand.</strong> The sixteen words are $e_{\imath}[\,]e_{\jmath}$, that is left multiplication by $e_{\imath}$ followed by right multiplication by $e_{\jmath}$. Below they are written $x[\,]t$ for $e_x[\,]e_t$, and the same for the other pairs. The sixteen are independent: the rank of the sixteen arrays is $16$.</p>
+<h2 id="the-sixteen-words">The Sixteen Words</h2>
+<p><strong>The sixteen are signed permutations, and their traces separate two families.</strong> Every one is a signed permutation array, and $\operatorname{tr}\bigl(\mathsf w^{2}\bigr)$ takes two values. Every one also has determinant $+1$, and the reason is a parity count: the permutation part is a product of two transpositions, hence even, and the number of minus signs is $0$, $2$ or $4$, hence even, so $\det=\operatorname{sgn}(\pi)(-1)^{\text{minus}}=+1$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>words</th>
+<th>count</th>
+<th>$\operatorname{tr}\mathsf w$</th>
+<th>$\operatorname{tr}\bigl(\mathsf w^{2}\bigr)$</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$t[\,]t$, and the nine $a[\,]b$ with $a,b$ both spatial</td>
+<td>$10$</td>
+<td>$0$</td>
+<td>$+4$</td>
+<td>$\mathsf w^{2}=\mathrm I$, so the eigenvalues are $\pm1$</td>
+</tr>
+<tr>
+<td>the six $t[\,]a$ and $a[\,]t$</td>
+<td>$6$</td>
+<td>$0$</td>
+<td>$-4$</td>
+<td>$\mathsf w^{2}=-\mathrm I$, so the eigenvalues are $\pm i$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two families are the two squares.</strong> $L_{\vec e_a}^{2}=-\mathrm I$ and $R_{\vec e_a}^{2}=-\mathrm I$ for a spatial unit, so a word with exactly one spatial factor on one side squares to $-\mathrm I$; a word with a spatial factor on both sides, or with none, squares to $+\mathrm I$. The table is that identity and nothing else.</p>
+<p><strong>One word is worth writing out, because the diagonal is built from three of them.</strong></p>
+<p>$$
+\mathsf A\bigl(x[\,]x\bigr)=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},\qquad
+\mathsf A\bigl(y[\,]y\bigr)=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},\qquad
+\mathsf A\bigl(z[\,]z\bigr)=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}.
+$$</p>
+<p><strong>Their sum is the $B-L$ diagonal.</strong></p>
+<p>$$
+\mathsf A\bigl(x[\,]x\bigr)+\mathsf A\bigl(y[\,]y\bigr)+\mathsf A\bigl(z[\,]z\bigr)=\operatorname{diag}\bigl(-3,1,1,1\bigr)=D .
+$$</p>
+<p>So $iD=i\bigl(x[\,]x+y[\,]y+z[\,]z\bigr)$: the diagonal generator is a sum of three single words, and its address has length three. That is the entry of the frame article's length column, read here as an identity rather than as a count.</p>
+<h2 id="the-fifteen-of-math67">The Fifteen of $\mathfrak{su}(4)$</h2>
+<p><strong>The generator of a diagonal is imaginary.</strong> The array $D=\operatorname{diag}(-3,1,1,1)$ is real and Hermitian; its eigenvalues are the $B-L$ charges multiplied by three, and $\tfrac13D$ carries $(-1,\tfrac13,\tfrac13,\tfrac13)$. The anti-Hermitian generator of the same direction is $iD$, and the abelian direction is $\mathbb R\,iD$. The arrays below are the generators, so they carry the $i$.</p>
+<p><strong>Three blocks.</strong> The split of the carrier induces the split of the fifteen:</p>
+<p>$$
+15=\underbrace{8}_{\text{colour}}+\underbrace{1}_{\mathbb R\,iD}+\underbrace{6}_{\text{leptoquarks}} .
+$$</p>
+<p>The eight act on the colour triple alone, the one acts on the whole quartet with one value on the colour triple and another on the line, and the six mix the lepton slot with a colour slot. Each block is written once by rule and then printed.</p>
+<h3 id="the-eight-of-colour">The Eight of Colour</h3>
+<p><strong>Six off-diagonal, two diagonal.</strong> The block is $i\lambda_a$ placed in the colour slots, with the lepton slot zero. The off-diagonal pairs are written with their symmetric and antisymmetric combinations, one display per pair.</p>
+<p>$$
+i\bigl(E_{xy}+E_{yx}\bigr)=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+E_{xy}-E_{yx}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
+$$</p>
+<p>$$
+i\bigl(E_{xz}+E_{zx}\bigr)=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\end{pmatrix},\qquad
+E_{xz}-E_{zx}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},
+$$</p>
+<p>$$
+i\bigl(E_{yz}+E_{zy}\bigr)=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;i&amp;0\end{pmatrix},\qquad
+E_{yz}-E_{zy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}.
+$$</p>
+<p><strong>The two diagonal directions of colour</strong>, both vanishing on the lepton slot:</p>
+<p>$$
+i\operatorname{diag}\bigl(0,1,-1,0\bigr)=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+i\operatorname{diag}\bigl(0,1,1,-2\bigr)=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-2i\end{pmatrix}.
+$$</p>
+<p><strong>The eight are the Gell-Mann arrays, with one factor of $\sqrt3$.</strong> With $\lambda_a$ the Gell-Mann arrays on the colour triple and zero on the lepton line, the eight above are $i\lambda_1,\dots,i\lambda_7$ and $\sqrt3\,i\lambda_8$, because $i\operatorname{diag}(0,1,1,-2)$ is kept integral and $\lambda_8=\tfrac1{\sqrt3}\operatorname{diag}(1,1,-2)$ is not. That factor is the whole reason the eighth has $\operatorname{tr}\bigl(\mathsf T^{2}\bigr)=-6$ and the seven have $-2$: the trace of the square of $\sqrt3\,i\lambda_8$ is three times the trace of the square of $i\lambda_8$.</p>
+<p><strong>The eight are the colour algebra.</strong> They close under the commutator, they annihilate $e_t$, and their common commutant in $\mathfrak{su}(4)$ is spanned by $iD$. The last statement is the reason the split forces the lepton direction, which the charge article proves and this note uses.</p>
+<h3 id="the-one-of-the-line">The One of the Line</h3>
+<p><strong>The diagonal, printed once.</strong></p>
+<p>$$
+iD=\begin{pmatrix}-3i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix},
+\qquad
+D=\begin{pmatrix}-3&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}.
+$$</p>
+<p>The left array is the generator and is anti-Hermitian; the right is the charge and is Hermitian. The two differ by the central $i$, and the corpus writes the direction as $\mathbb R\,iD$ for that reason.</p>
+<h3 id="the-six-leptoquarks">The Six Leptoquarks</h3>
+<p><strong>One lepton slot and one colour slot.</strong> The six are $i\bigl(E_{tj}+E_{jt}\bigr)$ and $E_{tj}-E_{jt}$ for $j=x,y,z$: three complex directions and three real ones, each with a single pair of nonzero entries.</p>
+<p>$$
+i\bigl(E_{tx}+E_{xt}\bigr)=\begin{pmatrix}0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+E_{tx}-E_{xt}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
+$$</p>
+<p>$$
+i\bigl(E_{ty}+E_{yt}\bigr)=\begin{pmatrix}0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+E_{ty}-E_{yt}=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
+$$</p>
+<p>$$
+i\bigl(E_{tz}+E_{zt}\bigr)=\begin{pmatrix}0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+E_{tz}-E_{zt}=\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix}.
+$$</p>
+<p><strong>The six are the off-diagonal block of the breaking.</strong> They are the directions that carry a lepton into a colour and a colour into a lepton, and they are the entries of $\mathfrak m$ in $15=8+1+6$. A commutator of one of the six with a colour direction is a leptoquark direction again, so the six are a module; a commutator of two of them lands in colour and the line, so the six are not a subalgebra.</p>
+<h2 id="the-six-of-the-two-sided-action">The Six of the Two-Sided Action</h2>
+<p><strong>Three left and three right, and each is one word.</strong> Left multiplication by a spatial unit is a single word, and so is right multiplication.</p>
+<p>$$
+\mathsf A\bigl(L_{\vec e_x}\bigr)=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\qquad
+\mathsf A\bigl(R_{\vec e_x}\bigr)=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},
+$$</p>
+<p>$$
+\mathsf A\bigl(L_{\vec e_y}\bigr)=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\qquad
+\mathsf A\bigl(R_{\vec e_y}\bigr)=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix},
+$$</p>
+<p>$$
+\mathsf A\bigl(L_{\vec e_z}\bigr)=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+\mathsf A\bigl(R_{\vec e_z}\bigr)=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
+$$</p>
+<p><strong>They are real, antisymmetric and traceless, hence anti-Hermitian, hence inside the fifteen.</strong> The left three differ from the right three, and the difference is the point: the two-sided product gives two commuting triples inside one fifteen-dimensional algebra. Left and right multiplication by the same unit commute, which is what makes $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ a subgroup of $\mathrm{SU}(4)$ at the level of the algebra.</p>
+<p><strong>Their arrays are not the colour arrays.</strong> $L_{\vec e_x}$ and $i\bigl(E_{yz}+E_{zy}\bigr)$ are both anti-Hermitian and both traceless, and they are different directions of the same fifteen. Nothing in the array says which block a reader should file it under.</p>
+<h3 id="the-six-are-not-a-seventh-block">The Six Are Not a Seventh Block</h3>
+<p><strong>Each one is a leptoquark plus or minus a colour.</strong> Expanded in the split, the six of the two-sided action are exact integer combinations of two directions each:</p>
+<p>$$
+L_{\vec e_x}=-\bigl(E_{tx}-E_{xt}\bigr)-\bigl(E_{yz}-E_{zy}\bigr),\qquad
+R_{\vec e_x}=-\bigl(E_{tx}-E_{xt}\bigr)+\bigl(E_{yz}-E_{zy}\bigr),
+$$</p>
+<p>$$
+L_{\vec e_y}=-\bigl(E_{ty}-E_{yt}\bigr)+\bigl(E_{xz}-E_{zx}\bigr),\qquad
+R_{\vec e_y}=-\bigl(E_{ty}-E_{yt}\bigr)-\bigl(E_{xz}-E_{zx}\bigr),
+$$</p>
+<p>$$
+L_{\vec e_z}=-\bigl(E_{tz}-E_{zt}\bigr)-\bigl(E_{xy}-E_{yx}\bigr),\qquad
+R_{\vec e_z}=-\bigl(E_{tz}-E_{zt}\bigr)+\bigl(E_{xy}-E_{yx}\bigr).
+$$</p>
+<p><strong>These six identities are the six relations.</strong> Twenty-one names, fifteen dimensions, so there are $21-15=6$ relations, and here they are, all of them, with integer coefficients $\pm1$ and no work left over. Each says that one name of the two-sided action is already a combination of one leptoquark direction and one colour direction.</p>
+<p><strong>The relations cross the split, two blocks at a time, and never touch the line.</strong> The leptoquark direction is always the antisymmetric one with slots $(t,a)$; the colour direction is always one of the three antisymmetric ones $E_{bc}-E_{cb}$ on the complementary pair. So the span of $\{L_{\vec e_a},R_{\vec e_a}\}$ is the plane spanned by that leptoquark and that colour direction. The wall between colour and the leptoquarks is crossed three times, once per spatial slot; the wall to the line is never crossed; and the symmetric leptoquarks, the colour diagonals and $iD$ do not appear at all.</p>
+<p><strong>Left and right are one leptoquark with the colour term at the two signs.</strong> The pair differs only in the sign of the colour term, so $L_{\vec e_a}+R_{\vec e_a}$ is twice the leptoquark direction and $L_{\vec e_a}-R_{\vec e_a}$ is twice the colour direction. The two-sided action does not add a block; it diagonalises a plane that the other two blocks already span, and the two diagonalisations are what the labels $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$ name.</p>
+<h2 id="the-addresses">The Addresses</h2>
+<p><strong>Every generator, its block, its words and its trace.</strong> The column <em>words</em> is the <strong>word support</strong>: the set of words of the sixteen that carry a nonzero coefficient in the expansion. It is not the set of nonzero entries of the array. A single word already occupies four slots, so a generator whose support is one word has four nonzero entries, and a generator whose support is two words can have only two.</p>
+<p><strong>A worked counterexample, because the two lists are easy to confuse.</strong> The leptoquark $i\bigl(E_{tx}+E_{xt}\bigr)$ has nonzero entries in the slots $(t,x)$ and $(x,t)$ only, and yet its word support is $y[\,]z$ and $z[\,]y$. Each of those two words occupies the four slots $(t,x)$, $(x,t)$, $(y,z)$ and $(z,y)$, and the combination $\tfrac12 i\,y[\,]z-\tfrac12 i\,z[\,]y$ cancels the last two and doubles the first two. Reading the word list as a list of slots is therefore wrong, and the two lists agree only where the cancellation happens to be absent.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>generator</th>
+<th>block</th>
+<th>support</th>
+<th>count</th>
+<th>$\operatorname{tr}\bigl(\mathsf T^{2}\bigr)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\vec e_x}$, $L_{\vec e_y}$, $L_{\vec e_z}$</td>
+<td>$\mathrm{SU}(2)_L$</td>
+<td>$x[\,]t$, $y[\,]t$, $z[\,]t$</td>
+<td>$1$</td>
+<td>$-4$</td>
+</tr>
+<tr>
+<td>$R_{\vec e_x}$, $R_{\vec e_y}$, $R_{\vec e_z}$</td>
+<td>$\mathrm{SU}(2)_R$</td>
+<td>$t[\,]x$, $t[\,]y$, $t[\,]z$</td>
+<td>$1$</td>
+<td>$-4$</td>
+</tr>
+<tr>
+<td>$i\bigl(E_{xy}+E_{yx}\bigr)$</td>
+<td>colour</td>
+<td>$x[\,]y$, $y[\,]x$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$E_{xy}-E_{yx}$</td>
+<td>colour</td>
+<td>$t[\,]z$, $z[\,]t$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$i\bigl(E_{xz}+E_{zx}\bigr)$</td>
+<td>colour</td>
+<td>$x[\,]z$, $z[\,]x$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$E_{xz}-E_{zx}$</td>
+<td>colour</td>
+<td>$t[\,]y$, $y[\,]t$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$i\bigl(E_{yz}+E_{zy}\bigr)$</td>
+<td>colour</td>
+<td>$y[\,]z$, $z[\,]y$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$E_{yz}-E_{zy}$</td>
+<td>colour</td>
+<td>$t[\,]x$, $x[\,]t$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$i\operatorname{diag}(0,1,-1,0)$</td>
+<td>colour</td>
+<td>$x[\,]x$, $y[\,]y$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$i\operatorname{diag}(0,1,1,-2)$</td>
+<td>colour</td>
+<td>$x[\,]x$, $y[\,]y$, $z[\,]z$</td>
+<td>$3$</td>
+<td>$-6$</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>line</td>
+<td>$x[\,]x$, $y[\,]y$, $z[\,]z$</td>
+<td>$3$</td>
+<td>$-12$</td>
+</tr>
+<tr>
+<td>$i\bigl(E_{tx}+E_{xt}\bigr)$</td>
+<td>leptoquark</td>
+<td>$y[\,]z$, $z[\,]y$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$E_{tx}-E_{xt}$</td>
+<td>leptoquark</td>
+<td>$t[\,]x$, $x[\,]t$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$i\bigl(E_{ty}+E_{yt}\bigr)$</td>
+<td>leptoquark</td>
+<td>$x[\,]z$, $z[\,]x$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$E_{ty}-E_{yt}$</td>
+<td>leptoquark</td>
+<td>$t[\,]y$, $y[\,]t$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$i\bigl(E_{tz}+E_{zt}\bigr)$</td>
+<td>leptoquark</td>
+<td>$x[\,]y$, $y[\,]x$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+<tr>
+<td>$E_{tz}-E_{zt}$</td>
+<td>leptoquark</td>
+<td>$t[\,]z$, $z[\,]t$</td>
+<td>$2$</td>
+<td>$-2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The counts reproduce the published lengths.</strong> The frame article puts the two-sided action at length $1$ and colour at $2$ on seven with $3$ on the Cartan direction $\operatorname{diag}(0,1,1,-2)$; the table gives that. The line comes out at $3$, which is the three the diagonal phases are given in <em>Expressing Lie Algebras via Biquaternions</em>. The computation is therefore a check on the published column and not a new claim about it.</p>
+<p><strong>The word support does not separate colour from leptoquarks, and this is the finding to keep.</strong> The antisymmetric colour direction $E_{xy}-E_{yx}$ and the antisymmetric leptoquark direction $E_{tz}-E_{zt}$ have the same word support, $t[\,]z$ and $z[\,]t$. What differs is the signs:</p>
+<p>$$
+E_{xy}-E_{yx}=\tfrac12\,t[\,]z-\tfrac12\,z[\,]t,\qquad
+E_{tz}-E_{zt}=-\tfrac12\,t[\,]z-\tfrac12\,z[\,]t .
+$$</p>
+<p>So a reader who reads only the address has not located the generator. The address counts the words; the coefficients, and only they, place the generator in the split. The pair above is the sharpest case: same two words, same count, and opposite relative sign.</p>
+<p><strong>The coefficients are halves for the split blocks.</strong> The two-sided action has real coefficients $\pm1$ and the diagonal has $\pm i$; the eight of colour and the six leptoquarks have $\pm\tfrac12$ and $\pm\tfrac12 i$. The reason is not mysterious: the words are traceless reflections, so a generator with a single pair of nonzero entries needs the halves to avoid a diagonal part. It is a defect to be stated, not a difficulty to be hidden, because it means that the integer frame of the sixteen words is not the frame in which every generator has integer coefficients: the arrays are integral, and the coordinates in the words are not.</p>
+<h2 id="the-count-twenty-one-names-fifteen-arrays">The Count: Twenty-One Names, Fifteen Arrays</h2>
+<p><strong>All twenty-one are anti-Hermitian and traceless.</strong> Computed on the whole list, $\mathsf T+\mathsf T^{\dagger}=0$ and $\operatorname{tr}\mathsf T=0$ for every one. So every array lies in the real fifteen-dimensional space $\mathfrak{su}(4)$.</p>
+<p><strong>And they span it.</strong> The complex rank of the twenty-one arrays is $15$, and their real rank is also $15$. Two consequences follow.</p>
+<ol>
+<li><strong>No array carries its factor.</strong> The label $\mathrm{SU}(2)_L$ is not a property of the array of $L_{\vec e_x}$; it is extra data attached to the name. This is the frame article's statement that the two $\mathrm{SU}(2)$'s sit <em>inside</em> the fifteen, read at the level of the arrays: six of the twenty-one names point into the same fifteen-dimensional space as the other fifteen.</li>
+<li><strong>The twenty-one are not a basis of anything larger.</strong> Twenty-one vectors in a fifteen-dimensional space have six linear relations, and they are printed above: each name of the two-sided action is one leptoquark direction plus or minus one colour direction. The word decomposition of the line, $iD=i\bigl(x[\,]x+y[\,]y+z[\,]z\bigr)$, is a different statement and must not be counted twice: it is a relation among the sixteen words, not among the twenty-one names.</li>
+</ol>
+<p><strong>What the arrays therefore cannot do.</strong> They cannot tell a reader which group a generator belongs to, and they cannot separate the factors. Whoever wants the factor decomposition keeps the names. The array is the display of the operator; the factor is the physics.</p>
+<h2 id="the-normalisation">The Normalisation</h2>
+<p><strong>The trace of the square takes four values, and one of them normalises rationally.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>generator</th>
+<th>$\operatorname{tr}\bigl(\mathsf T^{2}\bigr)$</th>
+<th>factor $1/\sqrt{\lvert\operatorname{tr}\mathsf T^{2}\rvert}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colour, seven off-diagonal</td>
+<td>$i\bigl(E_{ab}+E_{ba}\bigr)$, $E_{ab}-E_{ba}$</td>
+<td>$-2$</td>
+<td>$1/\sqrt2$, irrational</td>
+</tr>
+<tr>
+<td>colour, first diagonal</td>
+<td>$i\operatorname{diag}(0,1,-1,0)$</td>
+<td>$-2$</td>
+<td>$1/\sqrt2$, irrational</td>
+</tr>
+<tr>
+<td>colour, second diagonal</td>
+<td>$i\operatorname{diag}(0,1,1,-2)$</td>
+<td>$-6$</td>
+<td>$1/\sqrt6$, irrational</td>
+</tr>
+<tr>
+<td>line</td>
+<td>$iD$</td>
+<td>$-12$</td>
+<td>$1/\sqrt{12}$, irrational</td>
+</tr>
+<tr>
+<td>two-sided action</td>
+<td>$L_{\vec e_a}$, $R_{\vec e_a}$</td>
+<td>$-4$</td>
+<td>$1/2$, rational</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only the two-sided action normalises rationally.</strong> The Killing-normalised array is $\mathsf T/\sqrt{\lvert\operatorname{tr}\mathsf T^{2}\rvert}$, and that factor is $1/2$ for the six of the left and right multiplications, $1/\sqrt2$ for the seven colour directions, $1/\sqrt6$ for the eighth and $1/\sqrt{12}$ for the line. The word <em>only</em> concerns rationality and not existence: every trace of a square above is negative, so every direction has a Killing-normalised form; what the integral frame cannot supply is that form written in integers. No relabelling of the basis repairs it, because $\operatorname{tr}\bigl(\mathsf T^{2}\bigr)$ is an invariant of a direction, and the three diagonals carry $2$, $6$ and $12$.</p>
+<p><strong>The trace here is the trace of a matrix.</strong> The element-level reading is $\operatorname{Sc}$, and $\operatorname{tr}\mathsf M_2(\tilde Q)=2\operatorname{Sc}\tilde Q$. The generators are not elements of the algebra, so no element-level reading applies to them; the trace is theirs because the array is theirs.</p>
+<h2 id="the-cartan-that-cannot-be-integer-orthonormal">The Cartan That Cannot Be Integer-Orthonormal</h2>
+<p><strong>Three diagonal generators, and the split names them.</strong> The diagonal directions of $\mathfrak{su}(4)$ that the frame uses are the two Cartan directions of colour and the line:</p>
+<p>$$
+H_1=i\operatorname{diag}\bigl(0,1,-1,0\bigr),\qquad
+H_2=i\operatorname{diag}\bigl(0,1,1,-2\bigr),\qquad
+iD=i\operatorname{diag}\bigl(-3,1,1,1\bigr).
+$$</p>
+<p><strong>They are mutually orthogonal, and their norms are integer.</strong> The Gram array of the trace form is</p>
+<p>$$
+\begin{pmatrix}-2&amp;0&amp;0\\0&amp;-6&amp;0\\0&amp;0&amp;-12\end{pmatrix},
+$$</p>
+<p>with determinant $-144$.</p>
+<p><strong>The frame's own integer triple is unimodular and not orthogonal.</strong> The three the four-colour article prints are</p>
+<p>$$
+i\operatorname{diag}\bigl(1,-1,0,0\bigr),\qquad
+i\operatorname{diag}\bigl(0,1,-1,0\bigr),\qquad
+iD,
+$$</p>
+<p>and their Gram array is</p>
+<p>$$
+\begin{pmatrix}-2&amp;1&amp;4\\1&amp;-2&amp;0\\4&amp;0&amp;-12\end{pmatrix},
+$$</p>
+<p>with determinant $-4$ and two nonzero off-diagonal entries, $+1$ and $+4$.</p>
+<p><strong>The trade-off is index against orthogonality, and it is exact.</strong> The integer traceless diagonal arrays form a lattice, and the trace form on it has determinant $-4$. Any integer basis of a sublattice of index $\digamma_{\mathrm{idx}}$ has Gram determinant $-4\digamma_{\mathrm{idx}}^{2}$. The split's triple has $\digamma_{\mathrm{idx}}=6$, because $144=4\cdot6^{2}$; the frame's triple has $\digamma_{\mathrm{idx}}=1$, because $4=4\cdot1^{2}$. So the orthogonal triple generates a sublattice of index $6$, and the unimodular triple is not orthogonal.</p>
+<p><strong>Why the split prefers the orthogonal one.</strong> The frame's triple contains $i\operatorname{diag}(1,-1,0,0)$: its values on the colour triple are $1,-1,0$, which is not a multiple of the identity of colour, and its value on the lepton line is $0$. So that direction is neither a colour scalar nor a lepton direction, and it does not respect the split. The orthogonal triple does respect it, and the price is index $6$. The split is declared, so its price is the price of the declaration.</p>
+<p><strong>The obstruction is integer plus orthonormal, and the word order matters.</strong> Two wishes at a time are always granted, and never three. Integer with edge lattice, index $1$, is the frame's own triple, and it costs the off-diagonal entries $+1$ and $+4$. Integer with orthogonality is the split's triple, and it costs the index $6$. Orthonormal is the standard Cartan, and it costs integrality: its entries are $1/\sqrt2$ and $1/\sqrt6$. The proof that the three cannot meet is one line: an orthonormal basis would need Gram determinant $-1$. Every integer basis has Gram determinant $-4\digamma_{\mathrm{idx}}^{2}$ for a positive integer $\digamma_{\mathrm{idx}}$. So $-4\digamma_{\mathrm{idx}}^{2}=-1$ is required, and it has no integer solution.</p>
+<p><strong>The same obstruction appears in the trace column.</strong> The norms $2$, $6$ and $12$ are in the ratio $1:3:6$, and no integer rescaling turns three numbers in that ratio into three equal ones. The obstruction at the Cartan and the irrationality of the normalisation are one fact.</p>
+<h2 id="what-the-arrays-do-not-give">What the Arrays Do Not Give</h2>
+<p><strong>No chirality.</strong> Every array above is a matrix, and a matrix acts alike on the two chiral components of a Dirac module. The frame article states it and the arrays confirm it: not one of the twenty-one is a projector, since every one is anti-Hermitian with a negative semidefinite square, and none acts on one chirality alone.</p>
+<p><strong>No factor label.</strong> Stated above and repeated because it is the trap: an array is a direction of a fifteen-dimensional space, and the factor is a name. The six relations make the trap sharper than the rank count alone: $L_{\vec e_x}$ is a sum of one leptoquark direction and one colour direction, so it belongs to two blocks at once and to neither alone.</p>
+<p><strong>No frame-independence of the display.</strong> The axis-free frame is chosen. <em>The AXF Matrices</em> shows it is the only frame, up to a relabelling of the three spatial units and a sign on each, in which the sixteen words are signed permutations. That is a uniqueness among sparse frames and not a uniqueness of the display: the operator is frame-free and the array is one representative.</p>
+<p><strong>No grade of a group.</strong> The length counts the words of one generator. It does not grade a subspace, and no length makes the theory chiral.</p>
+<h2 id="checks-made-inside-this-note">Checks Made inside This Note</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sixteen words are independent</td>
+<td>rank of the sixteen flattened arrays</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>every word is a signed permutation of determinant $+1$</td>
+<td>row and column sums of absolute values, then the determinant</td>
+<td>holds on all sixteen</td>
+</tr>
+<tr>
+<td>the two values of $\operatorname{tr}\bigl(\mathsf w^{2}\bigr)$</td>
+<td>$\mathsf w^{2}=\pm\mathrm I$ according to the number of spatial factors</td>
+<td>$+4$ ten times, $-4$ six times</td>
+</tr>
+<tr>
+<td>the diagonal from three words</td>
+<td>$x[\,]x+y[\,]y+z[\,]z$</td>
+<td>$\operatorname{diag}(-3,1,1,1)$</td>
+</tr>
+<tr>
+<td>the twenty-one are anti-Hermitian and traceless</td>
+<td>$\mathsf T+\mathsf T^{\dagger}$, $\operatorname{tr}\mathsf T$</td>
+<td>$0$ on all</td>
+</tr>
+<tr>
+<td>the span</td>
+<td>complex rank, real rank</td>
+<td>$15$ and $15$</td>
+</tr>
+<tr>
+<td>the arrays of the split blocks</td>
+<td>coefficients in the sixteen words</td>
+<td>$\pm\tfrac12$</td>
+</tr>
+<tr>
+<td>the arrays of the two-sided action and the line</td>
+<td>coefficients</td>
+<td>$\pm1$</td>
+</tr>
+<tr>
+<td>the support of a colour and a leptoquark direction</td>
+<td>$E_{xy}-E_{yx}$ and $E_{tz}-E_{zt}$</td>
+<td>the same pair, $t[\,]z$ and $z[\,]t$</td>
+</tr>
+<tr>
+<td>the eight of colour close</td>
+<td>commutator of every pair, expanded in the eight</td>
+<td>residual $4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the six leptoquarks are a module over colour</td>
+<td>commutator with each colour direction, expanded in the six</td>
+<td>residual $5\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the six are not a subalgebra</td>
+<td>commutator of every pair, expanded in the eight and the line</td>
+<td>residual $4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>colour annihilates the lepton line</td>
+<td>$\mathsf A\,e_t$ for each of the eight</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the commutant of colour in $\mathfrak{su}(4)$ is the line</td>
+<td>rank of the commutator map on a basis of the fifteen</td>
+<td>null space of dimension $1$</td>
+</tr>
+<tr>
+<td>the length column of the frame article</td>
+<td>counts in the address table</td>
+<td>$1$, $2$, $3$, $3$ as printed there</td>
+</tr>
+<tr>
+<td>the invariants $\operatorname{tr}\bigl(\mathsf T^{2}\bigr)$</td>
+<td>four blocks</td>
+<td>$-2$, $-6$, $-12$, $-4$</td>
+</tr>
+<tr>
+<td>the split's Cartan is orthogonal</td>
+<td>Gram array</td>
+<td>$\operatorname{diag}(-2,-6,-12)$, determinant $-144$</td>
+</tr>
+<tr>
+<td>the frame's Cartan is unimodular</td>
+<td>Gram array</td>
+<td>determinant $-4$, off-diagonals $+1$ and $+4$</td>
+</tr>
+<tr>
+<td>the index of the split's triple</td>
+<td>$\lvert\det\text{Gram}\rvert=4\digamma_{\mathrm{idx}}^{2}$</td>
+<td>$\digamma_{\mathrm{idx}}=6$</td>
+</tr>
+<tr>
+<td>no integer orthonormal basis</td>
+<td>$4\digamma_{\mathrm{idx}}^{2}=-1$</td>
+<td>no integer solution</td>
+</tr>
+<tr>
+<td>the six relations</td>
+<td>each of $L_{\vec e_a}$, $R_{\vec e_a}$ against one leptoquark and one colour direction</td>
+<td>residual $0$ exactly</td>
+</tr>
+<tr>
+<td>the parity behind $\det=+1$</td>
+<td>permutation part and number of minus signs of each word</td>
+<td>even and even, on all sixteen</td>
+</tr>
+<tr>
+<td>reconstruction of every array from the words</td>
+<td>largest entry of the residual</td>
+<td>$7\times10^{-16}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The arithmetic is exact, and the residuals are float noise.</strong> Every array above has entries in $\{0,\pm1,\pm i\}$, every word coefficient is $0$, $\pm1$ or $\pm\tfrac12$, and every identity printed is an identity of integer or half-integer arrays. The residuals are quoted because they were computed by least squares in floating point, and they measure the solver and not the algebra.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The display.</strong> Every one of the twenty-one generators has an array in the axis-free frame, with entries in $\{0,\pm1,\pm i\}$: three blocks for $\mathfrak{su}(4)$, of sizes $8$, $1$ and $6$, and six single words for the two-sided action.</p>
+<p><strong>The addresses.</strong> The two-sided action is one word each, colour is two words on seven and three on $\operatorname{diag}(0,1,1,-2)$, and the line is three, $iD=i\bigl(x[\,]x+y[\,]y+z[\,]z\bigr)$. The counts reproduce the published lengths. The word support is a list of words and not a list of slots.</p>
+<p><strong>The count.</strong> Twenty-one names, fifteen arrays, both ranks fifteen. The array holds no factor label, and the six relations are printed: each name of the two-sided action is one leptoquark direction plus or minus one colour direction, so the sixth block is a recombination and not a seventh.</p>
+<p><strong>The coefficients.</strong> The arrays are integral with entries in $\{0,\pm1,\pm i\}$. In the sixteen words the two-sided action and the line are integral and colour and the leptoquarks are half-integral. The word support does not separate colour from leptoquarks; the signs do.</p>
+<p><strong>The normalisation.</strong> $\operatorname{tr}\bigl(\mathsf T^{2}\bigr)$ is $-2$ for the seven colour directions, $-6$ for $i\operatorname{diag}(0,1,1,-2)$ because that array is $\sqrt3\,i\lambda_8$, $-12$ for $iD$, and $-4$ for the two-sided action. Only the two-sided action normalises rationally.</p>
+<p><strong>The refusal.</strong> The split's Cartan is orthogonal with index $6$; the frame's is unimodular and not orthogonal; no integer basis is orthonormal, because $4\digamma_{\mathrm{idx}}^{2}=-1$ has no integer solution. The obstruction is integer plus orthonormal, not normalisation as such: every direction has a Killing-normalised form, and the integral frame cannot write it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf A(T)$</td>
+<td>the array of the operator $T$ in the axis-free frame, $\mathsf A(T)_{\imath\jmath}=[Te_{\jmath}]_{\imath}$</td>
+</tr>
+<tr>
+<td>$\mathsf T$</td>
+<td>the array of a generator, an anti-Hermitian traceless array</td>
+</tr>
+<tr>
+<td>$\mathsf w$</td>
+<td>the array of one of the sixteen words</td>
+</tr>
+<tr>
+<td>$L_{\mathrm{axf}}(\tilde Q)$, $R_{\mathrm{axf}}(\tilde Q)$</td>
+<td>the arrays of left and right multiplication by the element $\tilde Q$</td>
+</tr>
+<tr>
+<td>$e_{\imath}[\,]e_{\jmath}$, $x[\,]t$</td>
+<td>the sixteen words, and the shorthand for them</td>
+</tr>
+<tr>
+<td>word support</td>
+<td>the set of words carrying a nonzero coefficient; not the set of nonzero slots of the array</td>
+</tr>
+<tr>
+<td>$\lambda_a$</td>
+<td>the Gell-Mann arrays on the colour triple, zero on the line; the eight above are $i\lambda_1,\dots,i\lambda_7$ and $\sqrt3\,i\lambda_8$</td>
+</tr>
+<tr>
+<td>$E_{\imath\jmath}$</td>
+<td>the elementary array with $1$ in the slot $(\imath,\jmath)$ and $0$ elsewhere</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(-3,1,1,1)$, the Hermitian $B-L$ charge; the generator is $iD$; not the covariant derivative of the gauge articles</td>
+</tr>
+<tr>
+<td>$H_1$, $H_2$</td>
+<td>$i\operatorname{diag}(0,1,-1,0)$ and $i\operatorname{diag}(0,1,1,-2)$, the colour Cartan</td>
+</tr>
+<tr>
+<td>$\mathfrak m$</td>
+<td>the six leptoquark directions, $i\bigl(E_{tj}+E_{jt}\bigr)$ and $E_{tj}-E_{jt}$</td>
+</tr>
+<tr>
+<td>$\digamma_{\mathrm{idx}}$</td>
+<td>the index of an integer sublattice of the traceless diagonal lattice</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. The frame, the declaration (A), and the length column this note recomputes.</li>
+<li><a href="../articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour: One Trace, One Third</a>. Why the centraliser of colour forces $D$, which this note takes as given.</li>
+<li><a href="../articles_physics/the-axf-matrices-axis-free-integer-entries.html">The AXF Matrices: Axis-Free, Integer Entries</a>. The frame, the sixteen words and the ten properties.</li>
+<li><a href="../articles_internal/expressing-lie-algebras-via-biquaternions.html">Expressing Lie Algebras via Biquaternions</a>. The algebra as endomorphisms, the Conway words and the length.</li>
+<li><a href="../articles_maths/matrix-representations-conventions.html">Matrix Representations Conventions</a>. The rules the displays obey: an array carries no tilde, and the operator is the object.</li>
+<li><a href="flavour-research.html">Flavour Research: The Ladder Arithmetic</a>. Where $D$ enters the flavour arithmetic, and what it does not give there.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
