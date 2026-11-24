@@ -76,13 +76,13 @@
 <p>The article develops the inverse limit and its topology, the dictionary of open and closed subgroups, the Krull topology and the Galois correspondence, the profinite completion of an abstract group, and the beginnings of the structure theory — pro-$p$ subgroups, the Frattini subgroup and generation. The abelian theory of the previous articles is used where it is convenient: a profinite <em>abelian</em> group is the Pontryagin dual of a discrete torsion group, a fact from <em>Pontryagin Duality</em>, and its structure is read off from the classification of discrete torsion groups. The Galois theory that the Krull topology topologises is that of <em>Galois Theory</em> and <em>Splitting Fields and Algebraic Closure</em> in Part I; the Haar measure of a compact group is standard, and the invariant integration of a profinite group, including its $L^{n}$ theory, belongs to Part III, where the measure and the limit are available. No physics is invoked.</p>
 <h2 id="inverse-limits-of-finite-groups">Inverse Limits of Finite Groups</h2>
 <h3 id="definition-and-universal-property">Definition and Universal Property</h3>
-<p><strong>Definition.</strong> An <strong>inverse system of finite groups</strong> consists of a directed set $I$, a finite group $G_i$ for each $i \in I$, and a homomorphism $\varphi_{ij} : G_j \to G_i$ for each $i \leq j$, such that $\varphi_{ii} = \mathrm{id}$ and $\varphi_{ij} \circ \varphi_{jk} = \varphi_{ik}$ for $i \leq j \leq k$. Its <strong>inverse limit</strong> is</p>
+<p><strong>Definition.</strong> An <strong>inverse system of finite groups</strong> consists of a directed set $I$, a finite group $G_i$ for each $i \in I$, and a homomorphism $\digamma_{\mathrm{map},ij} : G_j \to G_i$ for each $i \leq j$, such that $\digamma_{\mathrm{map},ii} = \mathrm{id}$ and $\digamma_{\mathrm{map},ij} \circ \digamma_{\mathrm{map},jk} = \digamma_{\mathrm{map},ik}$ for $i \leq j \leq k$. Its <strong>inverse limit</strong> is</p>
 <p>$$
-\varprojlim_i G_i = \Bigl\{(g_i) \in \prod_i G_i : \varphi_{ij}(g_j) = g_i \text{ for all } i \leq j\Bigr\},
+\varprojlim_i G_i = \Bigl\{(g_i) \in \prod_i G_i : \digamma_{\mathrm{map},ij}(g_j) = g_i \text{ for all } i \leq j\Bigr\},
 $$</p>
 <p>with the subspace topology inherited from the product of the discrete topologies, and with the group structure of the product.</p>
-<p><strong>Proposition (universal property).</strong> The projections $\pi_i : \varprojlim_j G_j \to G_i$ are continuous homomorphisms satisfying $\varphi_{ij}\pi_j = \pi_i$, and if $H$ is a topological group with compatible continuous homomorphisms $\psi_i : H \to G_i$, then there is a unique continuous homomorphism $\psi : H \to \varprojlim_i G_i$ with $\pi_i \psi = \psi_i$. The inverse limit is therefore the limit of the system in the category of topological groups.</p>
-<p><strong>Proof.</strong> The subset defined by the compatible families is a subgroup and is closed, being the intersection of the closed conditions $\varphi_{ij}\pi_j = \pi_i$. The map $\psi$ is given by $\psi(h) = (\psi_i(h))_i$; it is a homomorphism, and it is continuous because each coordinate is. Uniqueness is clear.</p>
+<p><strong>Proposition (universal property).</strong> The projections $\pi_i : \varprojlim_j G_j \to G_i$ are continuous homomorphisms satisfying $\digamma_{\mathrm{map},ij}\pi_j = \pi_i$, and if $H$ is a topological group with compatible continuous homomorphisms $Ξ_{\mathrm{wfn},i} : H \to G_i$, then there is a unique continuous homomorphism $Ξ_{\mathrm{wfn}} : H \to \varprojlim_i G_i$ with $\pi_i Ξ_{\mathrm{wfn}} = Ξ_{\mathrm{wfn},i}$. The inverse limit is therefore the limit of the system in the category of topological groups.</p>
+<p><strong>Proof.</strong> The subset defined by the compatible families is a subgroup and is closed, being the intersection of the closed conditions $\digamma_{\mathrm{map},ij}\pi_j = \pi_i$. The map $Ξ_{\mathrm{wfn}}$ is given by $Ξ_{\mathrm{wfn}}(h) = (Ξ_{\mathrm{wfn},i}(h))_i$; it is a homomorphism, and it is continuous because each coordinate is. Uniqueness is clear.</p>
 <p><strong>Theorem.</strong> A group $G$ is profinite — isomorphic as a topological group to the inverse limit of an inverse system of finite groups — if and only if $G$ is a compact Hausdorff totally disconnected topological group.</p>
 <p><strong>Proof.</strong> If $G = \varprojlim G_i$ then $G$ is a closed subgroup of the product of the finite discrete groups $G_i$, hence compact and Hausdorff by Tychonoff, and totally disconnected because each projection to a discrete group has connected fibres and a connected subset of $G$ projects to a point in every $G_i$. Conversely, let $G$ be compact Hausdorff and totally disconnected. The open normal subgroups $N$ form an inverse system (directed by reverse inclusion) and each $G/N$ is finite, because the cosets of an open subgroup cover the compact group $G$ and finitely many suffice. The natural map</p>
 <p>$$
@@ -198,7 +198,7 @@ $$</p>
 <td>Inverse limit of an inverse system of groups</td>
 </tr>
 <tr>
-<td>$\varphi_{ij} : G_j \to G_i$</td>
+<td>$\digamma_{\mathrm{map},ij} : G_j \to G_i$</td>
 <td>Bonding maps of the system</td>
 </tr>
 <tr>

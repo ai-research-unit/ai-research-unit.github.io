@@ -89,7 +89,7 @@ $$</p>
 $$</p>
 <p>and is a Fréchet space. The space of <strong>test functions</strong> is $\mathcal D(\Omega)=C_c^\infty(\Omega)=\bigcup_K \mathcal D_K(\Omega)$ with the inductive limit of those Fréchet spaces over the compact sets $K \subseteq \Omega$, the <strong>LF topology</strong> of <em>Locally Convex Spaces</em>; a linear functional $w$ on $\mathcal D(\Omega)$ is continuous exactly when for every compact $K$ there are $C$ and $N$ with</p>
 <p>$$
-|\langle w,\varphi\rangle| \le C\|\varphi\|_{K,N} \qquad \text{for all } \varphi \in \mathcal D_K(\Omega).
+|\langle w,\digamma_{\mathrm{map}}\rangle| \le C\|\digamma_{\mathrm{map}}\|_{K,N} \qquad \text{for all } \digamma_{\mathrm{map}} \in \mathcal D_K(\Omega).
 $$</p>
 <p>The space $\mathcal E(\Omega)=C^\infty(\Omega)$ with the seminorms over compact $K$ and all $\alpha$ is a Fréchet space, and the <strong>Schwartz space</strong> $\mathcal S(\mathbb{R}^n)$ is the set of $f \in C^\infty(\mathbb{R}^n)$ with</p>
 <p>$$
@@ -101,51 +101,51 @@ $$</p>
 <p><strong>Corollary (density).</strong> $C_c^\infty(\Omega)$ is dense in $L^{n}(\Omega)$ for $1\le p&lt;\infty$, dense in $C_0(\Omega)$ in the supremum norm, and $\mathcal D(\mathbb{R}^n)$ is dense in $\mathcal S(\mathbb{R}^n)$.</p>
 <h2 id="distributions">Distributions</h2>
 <h3 id="definition-and-basic-examples">Definition and Basic Examples</h3>
-<p><strong>Definition.</strong> A <strong>distribution</strong> on $\Omega$ is a continuous linear functional $w:\mathcal D(\Omega) \to \mathbb{K}$; the space of distributions is the dual $\mathcal D'(\Omega)$, and the value of $w$ on $\varphi$ is written $\langle w,\varphi\rangle$. A distribution is of <strong>order</strong> at most $N$ if the integer $N$ of the continuity criterion can be chosen uniformly over compact sets, and of <strong>finite order</strong> if it is of order at most $N$ for some $N$.</p>
+<p><strong>Definition.</strong> A <strong>distribution</strong> on $\Omega$ is a continuous linear functional $w:\mathcal D(\Omega) \to \mathbb{K}$; the space of distributions is the dual $\mathcal D'(\Omega)$, and the value of $w$ on $\digamma_{\mathrm{map}}$ is written $\langle w,\digamma_{\mathrm{map}}\rangle$. A distribution is of <strong>order</strong> at most $N$ if the integer $N$ of the continuity criterion can be chosen uniformly over compact sets, and of <strong>finite order</strong> if it is of order at most $N$ for some $N$.</p>
 <p><strong>Proposition (locally integrable functions).</strong> Every $f \in L^1_{\mathrm{loc}}(\Omega)$ defines a distribution of order $0$ by</p>
 <p>$$
-\langle f,\varphi\rangle=\int_\Omega f\varphi\,dx,
+\langle f,\digamma_{\mathrm{map}}\rangle=\int_\Omega f\digamma_{\mathrm{map}}\,dx,
 $$</p>
 <p>and the map $L^1_{\mathrm{loc}}(\Omega) \to \mathcal D'(\Omega)$ is injective.</p>
-<p><em>Proof.</em> Continuity is the estimate $|\int_Kf\varphi|\le\|f\|_{L^1(K)}\|\varphi\|_{K,0}$. For injectivity, if $\int f\varphi=0$ for all $\varphi \in \mathcal D(\Omega)$, then given $x$ and a compactly supported test function $\psi$ equal to $1$ near $x$, the regularisations are $f*\rho_\varepsilon(x)=\int f(y)\psi(y)\rho_\varepsilon(x-y)\,dy=0$ for small $\varepsilon$ and for $x$ in a compact subset of the interior of $\{\psi=1\}$; since $f*\rho_\varepsilon\to f$ in $L^1_{\mathrm{loc}}$, the function $f$ vanishes a.e.</p>
-<p><strong>Example.</strong> (i) The <strong>delta distribution</strong> at $a \in \Omega$ is $\langle\delta_a,\varphi\rangle=\varphi(a)$; it is of order $0$ and is not given by any locally integrable function, since it would have to vanish away from $a$ while integrating to $1$.</p>
-<p>(ii) The <strong>Heaviside function</strong> $H=\mathbf{1}_{(0,\infty)}$ on $\mathbb{R}$ is the distribution $\langle H,\varphi\rangle=\int_0^\infty\varphi$.</p>
+<p><em>Proof.</em> Continuity is the estimate $|\int_Kf\digamma_{\mathrm{map}}|\le\|f\|_{L^1(K)}\|\digamma_{\mathrm{map}}\|_{K,0}$. For injectivity, if $\int f\digamma_{\mathrm{map}}=0$ for all $\digamma_{\mathrm{map}} \in \mathcal D(\Omega)$, then given $x$ and a compactly supported test function $Ξ_{\mathrm{wfn}}$ equal to $1$ near $x$, the regularisations are $f*\rho_\varepsilon(x)=\int f(y)Ξ_{\mathrm{wfn}}(y)\rho_\varepsilon(x-y)\,dy=0$ for small $\varepsilon$ and for $x$ in a compact subset of the interior of $\{Ξ_{\mathrm{wfn}}=1\}$; since $f*\rho_\varepsilon\to f$ in $L^1_{\mathrm{loc}}$, the function $f$ vanishes a.e.</p>
+<p><strong>Example.</strong> (i) The <strong>delta distribution</strong> at $a \in \Omega$ is $\langle\delta_a,\digamma_{\mathrm{map}}\rangle=\digamma_{\mathrm{map}}(a)$; it is of order $0$ and is not given by any locally integrable function, since it would have to vanish away from $a$ while integrating to $1$.</p>
+<p>(ii) The <strong>Heaviside function</strong> $H=\mathbf{1}_{(0,\infty)}$ on $\mathbb{R}$ is the distribution $\langle H,\digamma_{\mathrm{map}}\rangle=\int_0^\infty\digamma_{\mathrm{map}}$.</p>
 <p>(iii) The <strong>principal value</strong> of $1/x$ on $\mathbb{R}$ is</p>
 <p>$$
-\Bigl\langle \mathrm{pv}\frac1x,\varphi\Bigr\rangle=\lim_{\varepsilon \to 0}\int_{|x|&gt;\varepsilon}\frac{\varphi(x)}{x}\,dx,
+\Bigl\langle \mathrm{pv}\frac1x,\digamma_{\mathrm{map}}\Bigr\rangle=\lim_{\varepsilon \to 0}\int_{|x|&gt;\varepsilon}\frac{\digamma_{\mathrm{map}}(x)}{x}\,dx,
 $$</p>
-<p>a distribution of order $1$; the limit exists because the odd kernel annihilates the constant, $\int_{\varepsilon&lt;|x|&lt;1}\varphi(x)/x\,dx=\int_{\varepsilon&lt;|x|&lt;1}(\varphi(x)-\varphi(0))/x\,dx$, and the integrand is bounded on $|x|&lt;1$, so the integrals converge as $\varepsilon\downarrow0$ by dominated convergence.</p>
+<p>a distribution of order $1$; the limit exists because the odd kernel annihilates the constant, $\int_{\varepsilon&lt;|x|&lt;1}\digamma_{\mathrm{map}}(x)/x\,dx=\int_{\varepsilon&lt;|x|&lt;1}(\digamma_{\mathrm{map}}(x)-\digamma_{\mathrm{map}}(0))/x\,dx$, and the integrand is bounded on $|x|&lt;1$, so the integrals converge as $\varepsilon\downarrow0$ by dominated convergence.</p>
 <p>(iv) The <strong>finite part</strong> $\mathrm{pf}(1/x^2)$ and the regularisations of $1/|x|$ on $\mathbb{R}^n$ for $n\ge2$ are defined by subtracting the divergent terms, and are the standard devices for the non-integrable singularities of a fundamental solution.</p>
 <h3 id="support-order-and-the-structure-theorem">Support, Order and the Structure Theorem</h3>
-<p><strong>Definition.</strong> The <strong>support</strong> of $w \in \mathcal D'(\Omega)$ is the complement in $\Omega$ of the union of the open sets $U$ such that $\langle w,\varphi\rangle=0$ for every $\varphi \in \mathcal D(U)$. The distributions of compact support form the dual $\mathcal E'(\Omega)$ of $\mathcal E(\Omega)$, under the identification $\langle w,\varphi\rangle$ for $\varphi \in C^\infty(\Omega)$; every $w \in \mathcal E'(\Omega)$ is a distribution of finite order, and the smallest compact set containing the support controls the estimates.</p>
+<p><strong>Definition.</strong> The <strong>support</strong> of $w \in \mathcal D'(\Omega)$ is the complement in $\Omega$ of the union of the open sets $U$ such that $\langle w,\digamma_{\mathrm{map}}\rangle=0$ for every $\digamma_{\mathrm{map}} \in \mathcal D(U)$. The distributions of compact support form the dual $\mathcal E'(\Omega)$ of $\mathcal E(\Omega)$, under the identification $\langle w,\digamma_{\mathrm{map}}\rangle$ for $\digamma_{\mathrm{map}} \in C^\infty(\Omega)$; every $w \in \mathcal E'(\Omega)$ is a distribution of finite order, and the smallest compact set containing the support controls the estimates.</p>
 <p><strong>Theorem (structure of compactly supported distributions).</strong> Every $w \in \mathcal E'(\Omega)$ of order at most $N$ is a finite sum</p>
 <p>$$
 \boxed{\;w=\sum_{|\alpha|\le N}(-1)^{|\alpha|}\partial^\alpha\mu_\alpha\;}
 $$</p>
-<p>of derivatives of complex measures $\mu_\alpha$ of compact support; if $w$ is real and $N=0$ then the representing measure is unique and $w$ is a signed measure, and a distribution of order $0$ that is positive, meaning $\langle w,\varphi\rangle\ge0$ for $\varphi\ge0$, is a positive measure on $\Omega$.</p>
+<p>of derivatives of complex measures $\mu_\alpha$ of compact support; if $w$ is real and $N=0$ then the representing measure is unique and $w$ is a signed measure, and a distribution of order $0$ that is positive, meaning $\langle w,\digamma_{\mathrm{map}}\rangle\ge0$ for $\digamma_{\mathrm{map}}\ge0$, is a positive measure on $\Omega$.</p>
 <p>The theorem is proved by the Hahn–Banach extension theorem of <em>Normed and Banach Spaces</em> applied to the restriction of $w$ to $\mathcal D_K$ for a compact $K$ containing the support, and by the Riesz representation theorem for $C(K)$, the derivatives being transposed back from the measured functional. It is the exact measure-theoretic description of a distribution of compact support and is the starting point of the theory of positive distributions and of Radon measures.</p>
 <p><strong>Corollary.</strong> A distribution of order $0$ is integration against a complex measure, and a positive distribution is a positive Radon measure. A distribution $w$ with $\operatorname{supp}w=\{a\}$ is a finite linear combination of $\delta_a$ and its derivatives, $\sum_{|\alpha|\le N}c_\alpha\partial^\alpha\delta_a$.</p>
 <h2 id="differentiation-and-multiplication">Differentiation and Multiplication</h2>
 <h3 id="differentiation-of-distributions">Differentiation of Distributions</h3>
 <p><strong>Definition.</strong> The derivative of $w \in \mathcal D'(\Omega)$ with respect to the multi-index $\alpha$ is the distribution</p>
 <p>$$
-\langle \partial^\alpha w,\varphi\rangle=(-1)^{|\alpha|}\langle w,\partial^\alpha\varphi\rangle, \qquad \varphi \in \mathcal D(\Omega).
+\langle \partial^\alpha w,\digamma_{\mathrm{map}}\rangle=(-1)^{|\alpha|}\langle w,\partial^\alpha\digamma_{\mathrm{map}}\rangle, \qquad \digamma_{\mathrm{map}} \in \mathcal D(\Omega).
 $$</p>
-<p>The sign is the one that makes the definition the transposition of the classical formula $\int(\partial^\alpha f)\varphi=(-1)^{|\alpha|}\int f\partial^\alpha\varphi$ for $f \in C^{|\alpha|}$, so that the distributional derivative extends the classical one.</p>
+<p>The sign is the one that makes the definition the transposition of the classical formula $\int(\partial^\alpha f)\digamma_{\mathrm{map}}=(-1)^{|\alpha|}\int f\partial^\alpha\digamma_{\mathrm{map}}$ for $f \in C^{|\alpha|}$, so that the distributional derivative extends the classical one.</p>
 <p><strong>Theorem.</strong> Every distribution has derivatives of all orders; $\partial^\alpha:\mathcal D'(\Omega)\to\mathcal D'(\Omega)$ is linear and continuous in the weak-$*$ topology; the derivatives commute, $\partial^\alpha\partial^\beta=\partial^{\alpha+\beta}$; and the Leibniz rule</p>
 <p>$$
-\partial^\alpha(\varphi w)=\sum_{\beta\le\alpha}\binom{\alpha}{\beta}(\partial^{\alpha-\beta}\varphi)(\partial^\beta w)
+\partial^\alpha(\digamma_{\mathrm{map}} w)=\sum_{\beta\le\alpha}\binom{\alpha}{\beta}(\partial^{\alpha-\beta}\digamma_{\mathrm{map}})(\partial^\beta w)
 $$</p>
-<p>holds for $\varphi \in C^\infty(\Omega)$ and $w \in \mathcal D'(\Omega)$. A distribution with all derivatives zero on a connected $\Omega$ is given by a constant function.</p>
-<p><em>Proof.</em> The functional $\varphi \mapsto(-1)^{|\alpha|}\langle w,\partial^\alpha\varphi\rangle$ is a composite of $w$ with a continuous map of $\mathcal D(\Omega)$ into itself, hence continuous; the commutativity is the commutativity of partial derivatives on test functions, and the Leibniz rule is the identity $\partial^\alpha(\varphi\psi)=\sum_{\beta\le\alpha}\binom\alpha\beta\partial^{\alpha-\beta}\varphi\,\partial^\beta\psi$ transposed. The last statement reduces to $\partial/\partial x_j\,w=0$ for all $j$, which forces $w$ to be constant by applying the classical mean value theorem to the test functions against which $w$ is paired.</p>
-<p><strong>Example.</strong> (i) $H'=\delta$ on $\mathbb{R}$: $\langle H',\varphi\rangle=-\int_0^\infty\varphi'=-\varphi(0)+\varphi(\infty)=-\varphi(0)$, using $\varphi$ compactly supported. More generally the derivative of the indicator of an interval with endpoints $a&lt;b$ is $\delta_a-\delta_b$.</p>
-<p>(ii) $\frac{d}{dx}\mathrm{pv}\frac1x=-\mathrm{pf}\frac{1}{x^2}$ on $\mathbb{R}$, and $\frac{d}{dx}\log|x|=\mathrm{pv}\frac1x$: transposing the integration by parts gives $\langle(\log|x|)',\varphi\rangle=-\int\log|x|\,\varphi'(x)\,dx=\lim_\varepsilon\int_{|x|&gt;\varepsilon}\varphi(x)/x\,dx$, the divergent boundary terms cancelling.</p>
-<p>(iii) $x\delta'=-\delta$ and $x\delta=0$: $\langle x\delta,\varphi\rangle=\langle\delta,x\varphi\rangle=0$, and $\langle x\delta',\varphi\rangle=\langle\delta',x\varphi\rangle=-\varphi(0)$. The first identity exhibits the division problem, and the second shows that a product of distributions is not detected by its vanishing on test functions supported away from the origin.</p>
-<p>(iv) For $\alpha \in \mathbb{N}^n$, $\partial^\alpha\delta_a$ is the distribution $\varphi \mapsto(-1)^{|\alpha|}\partial^\alpha\varphi(a)$, and every distribution supported at $a$ is a finite combination of these, by the corollary above.</p>
+<p>holds for $\digamma_{\mathrm{map}} \in C^\infty(\Omega)$ and $w \in \mathcal D'(\Omega)$. A distribution with all derivatives zero on a connected $\Omega$ is given by a constant function.</p>
+<p><em>Proof.</em> The functional $\digamma_{\mathrm{map}} \mapsto(-1)^{|\alpha|}\langle w,\partial^\alpha\digamma_{\mathrm{map}}\rangle$ is a composite of $w$ with a continuous map of $\mathcal D(\Omega)$ into itself, hence continuous; the commutativity is the commutativity of partial derivatives on test functions, and the Leibniz rule is the identity $\partial^\alpha(\digamma_{\mathrm{map}}Ξ_{\mathrm{wfn}})=\sum_{\beta\le\alpha}\binom\alpha\beta\partial^{\alpha-\beta}\digamma_{\mathrm{map}}\,\partial^\betaΞ_{\mathrm{wfn}}$ transposed. The last statement reduces to $\partial/\partial x_j\,w=0$ for all $j$, which forces $w$ to be constant by applying the classical mean value theorem to the test functions against which $w$ is paired.</p>
+<p><strong>Example.</strong> (i) $H'=\delta$ on $\mathbb{R}$: $\langle H',\digamma_{\mathrm{map}}\rangle=-\int_0^\infty\digamma_{\mathrm{map}}'=-\digamma_{\mathrm{map}}(0)+\digamma_{\mathrm{map}}(\infty)=-\digamma_{\mathrm{map}}(0)$, using $\digamma_{\mathrm{map}}$ compactly supported. More generally the derivative of the indicator of an interval with endpoints $a&lt;b$ is $\delta_a-\delta_b$.</p>
+<p>(ii) $\frac{d}{dx}\mathrm{pv}\frac1x=-\mathrm{pf}\frac{1}{x^2}$ on $\mathbb{R}$, and $\frac{d}{dx}\log|x|=\mathrm{pv}\frac1x$: transposing the integration by parts gives $\langle(\log|x|)',\digamma_{\mathrm{map}}\rangle=-\int\log|x|\,\digamma_{\mathrm{map}}'(x)\,dx=\lim_\varepsilon\int_{|x|&gt;\varepsilon}\digamma_{\mathrm{map}}(x)/x\,dx$, the divergent boundary terms cancelling.</p>
+<p>(iii) $x\delta'=-\delta$ and $x\delta=0$: $\langle x\delta,\digamma_{\mathrm{map}}\rangle=\langle\delta,x\digamma_{\mathrm{map}}\rangle=0$, and $\langle x\delta',\digamma_{\mathrm{map}}\rangle=\langle\delta',x\digamma_{\mathrm{map}}\rangle=-\digamma_{\mathrm{map}}(0)$. The first identity exhibits the division problem, and the second shows that a product of distributions is not detected by its vanishing on test functions supported away from the origin.</p>
+<p>(iv) For $\alpha \in \mathbb{N}^n$, $\partial^\alpha\delta_a$ is the distribution $\digamma_{\mathrm{map}} \mapsto(-1)^{|\alpha|}\partial^\alpha\digamma_{\mathrm{map}}(a)$, and every distribution supported at $a$ is a finite combination of these, by the corollary above.</p>
 <h3 id="multiplication-and-its-limits">Multiplication and Its Limits</h3>
-<p><strong>Definition.</strong> For $\varphi \in C^\infty(\Omega)$ and $w \in \mathcal D'(\Omega)$ the product is $\langle\varphi w,\psi\rangle=\langle w,\varphi\psi\rangle$. It is a distribution, the map $(\varphi,w)\mapsto\varphi w$ is bilinear and separately continuous, and the Leibniz rule above holds.</p>
-<p>The product of two distributions is in general undefined: the formula $\int fg\,\varphi$ has no meaning for distributions, and the natural attempts fail. The standard pair of examples fixes the point.</p>
-<p><strong>Example.</strong> Let $w=\mathrm{pv}(1/x)$ and $v=\delta$ on $\mathbb{R}$, so that $xw=1$ and $xv=0$. If a product $wv$ existed and the multiplication by a smooth function were associative with it, then applying the identity $\varphi(wv)=(\varphi w)v$ to $\varphi(x)=x$ would give the contradiction $0=(xv)w=x(wv)=(xw)v=1\cdot v=\delta$. There is thus no distribution that deserves the name $\delta\cdot\mathrm{pv}(1/x)$, and the same obstruction appears for $\delta H$, $\delta\delta$ and every pair whose singular directions are opposed.</p>
+<p><strong>Definition.</strong> For $\digamma_{\mathrm{map}} \in C^\infty(\Omega)$ and $w \in \mathcal D'(\Omega)$ the product is $\langle\digamma_{\mathrm{map}} w,Ξ_{\mathrm{wfn}}\rangle=\langle w,\digamma_{\mathrm{map}}Ξ_{\mathrm{wfn}}\rangle$. It is a distribution, the map $(\digamma_{\mathrm{map}},w)\mapsto\digamma_{\mathrm{map}} w$ is bilinear and separately continuous, and the Leibniz rule above holds.</p>
+<p>The product of two distributions is in general undefined: the formula $\int fg\,\digamma_{\mathrm{map}}$ has no meaning for distributions, and the natural attempts fail. The standard pair of examples fixes the point.</p>
+<p><strong>Example.</strong> Let $w=\mathrm{pv}(1/x)$ and $v=\delta$ on $\mathbb{R}$, so that $xw=1$ and $xv=0$. If a product $wv$ existed and the multiplication by a smooth function were associative with it, then applying the identity $\digamma_{\mathrm{map}}(wv)=(\digamma_{\mathrm{map}} w)v$ to $\digamma_{\mathrm{map}}(x)=x$ would give the contradiction $0=(xv)w=x(wv)=(xw)v=1\cdot v=\delta$. There is thus no distribution that deserves the name $\delta\cdot\mathrm{pv}(1/x)$, and the same obstruction appears for $\delta H$, $\delta\delta$ and every pair whose singular directions are opposed.</p>
 <p><strong>Theorem (multiplication in Hörmander's sense).</strong> Two distributions have a product when their wavefront sets satisfy the transversality condition $\mathrm{WF}(w)\cap\mathrm{WF}(v)^{-}=\varnothing$, where $\mathrm{WF}(v)^-$ reverses the sign of the frequency variable; then $wv$ is defined, and the product of a distribution with a smooth function is the case in which one wavefront set is empty. The wavefront set, this criterion and the microlocal description of the regularity of $wv$ are the subject of of this category, and are not developed here.</p>
 <p>The upshot is that the set of distributions is not an algebra, and that the failure is localised in the frequency directions: two distributions may be multiplied wherever their singular directions do not oppose one another. This is the precise sense in which the theory is closed under differentiation but not under multiplication, and it is why the pseudodifferential calculus keeps a symbol as an auxiliary object rather than only the operator.</p>
 <h3 id="algebras-of-generalized-functions">Algebras of Generalized Functions</h3>
@@ -170,48 +170,48 @@ $$</p>
 <p>are strict.</p>
 <p><strong>Definition.</strong> The <strong>Fourier transform</strong> of $w \in \mathcal S'(\mathbb{R}^n)$ is defined by transposition,</p>
 <p>$$
-\langle\mathcal F w,\varphi\rangle=\langle w,\mathcal F\\varphi\rangle, \qquad \varphi \in \mathcal S(\mathbb{R}^n),
+\langle\mathcal F w,\digamma_{\mathrm{map}}\rangle=\langle w,\mathcal F\\digamma_{\mathrm{map}}\rangle, \qquad \digamma_{\mathrm{map}} \in \mathcal S(\mathbb{R}^n),
 $$</p>
 <p>and is again tempered. The transform is a linear isomorphism of $\mathcal S'$ with itself, and it intertwines differentiation with multiplication:</p>
 <p>$$
 \widehat{\partial^\alpha w}=i^{|\alpha|}\zeta^\alpha\mathcal F w, \qquad \widehat{x^\alpha w}=i^{|\alpha|}\partial^\alpha\mathcal F w, \qquad \widehat{w*v}=\mathcal F w\,\mathcal F v
 $$</p>
 <p>for $w \in \mathcal S'$ and $v \in \mathcal E'$, the convolution being defined in the next section.</p>
-<p><strong>Example.</strong> $\hat\delta=1$ and $\hat1=(2\pi)^n\delta$, since $\langle\hat\delta,\varphi\rangle=\langle\delta,\mathcal F\\varphi\rangle=\mathcal F\\varphi(0)=\int\varphi$; the transform of a Gaussian $\exp(-|x|^2/2)$ is $(2\pi)^{n/2}\exp(-|\zeta|^2/2)$; and the transform of a function of compact support is smooth (indeed entire) with at most polynomial growth of all derivatives, which is why the two dual spaces differ.</p>
+<p><strong>Example.</strong> $\hat\delta=1$ and $\hat1=(2\pi)^n\delta$, since $\langle\hat\delta,\digamma_{\mathrm{map}}\rangle=\langle\delta,\mathcal F\\digamma_{\mathrm{map}}\rangle=\mathcal F\\digamma_{\mathrm{map}}(0)=\int\digamma_{\mathrm{map}}$; the transform of a Gaussian $\exp(-|x|^2/2)$ is $(2\pi)^{n/2}\exp(-|\zeta|^2/2)$; and the transform of a function of compact support is smooth (indeed entire) with at most polynomial growth of all derivatives, which is why the two dual spaces differ.</p>
 <h2 id="convolution">Convolution</h2>
 <h3 id="convolution-with-a-test-function">Convolution with a Test Function</h3>
-<p><strong>Definition.</strong> For $w \in \mathcal D'(\mathbb{R}^n)$ and $\varphi \in \mathcal D(\mathbb{R}^n)$ the <strong>convolution</strong> is the function</p>
+<p><strong>Definition.</strong> For $w \in \mathcal D'(\mathbb{R}^n)$ and $\digamma_{\mathrm{map}} \in \mathcal D(\mathbb{R}^n)$ the <strong>convolution</strong> is the function</p>
 <p>$$
-(w*\varphi)(x)=\langle w,\varphi(x-\cdot)\rangle=\langle w,\tau_x\check\varphi\rangle,
+(w*\digamma_{\mathrm{map}})(x)=\langle w,\digamma_{\mathrm{map}}(x-\cdot)\rangle=\langle w,\tau_x\check\digamma_{\mathrm{map}}\rangle,
 $$</p>
-<p>where $\check\varphi(y)=\varphi(-y)$.</p>
-<p><strong>Theorem.</strong> For $w \in \mathcal D'$ and $\varphi \in \mathcal D$ the function $w*\varphi$ lies in $C^\infty(\mathbb{R}^n)$, and</p>
+<p>where $\check\digamma_{\mathrm{map}}(y)=\digamma_{\mathrm{map}}(-y)$.</p>
+<p><strong>Theorem.</strong> For $w \in \mathcal D'$ and $\digamma_{\mathrm{map}} \in \mathcal D$ the function $w*\digamma_{\mathrm{map}}$ lies in $C^\infty(\mathbb{R}^n)$, and</p>
 <p>$$
-\partial^\alpha(w*\varphi)=(\partial^\alpha w)*\varphi=w*\partial^\alpha\varphi, \qquad \operatorname{supp}(w*\varphi) \subseteq \overline{\operatorname{supp}w+\operatorname{supp}\varphi}.
+\partial^\alpha(w*\digamma_{\mathrm{map}})=(\partial^\alpha w)*\digamma_{\mathrm{map}}=w*\partial^\alpha\digamma_{\mathrm{map}}, \qquad \operatorname{supp}(w*\digamma_{\mathrm{map}}) \subseteq \overline{\operatorname{supp}w+\operatorname{supp}\digamma_{\mathrm{map}}}.
 $$</p>
-<p>If $w=\delta_a$ then $w*\varphi=\tau_a\varphi$, where $\tau_a\varphi(x)=\varphi(x-a)$; if $w=f \in L^1_{\mathrm{loc}}$ then $w*\varphi$ is the classical convolution $\int f(y)\varphi(x-y)\,dy$.</p>
-<p><em>Proof.</em> The map $x \mapsto \tau_{-x}\check\varphi$ is $C^\infty$ from $\mathbb{R}^n$ into $\mathcal D$, with derivative computed by the chain rule of <em>Differential Calculus on Normed Spaces</em>; differentiating under the continuous linear functional $w$ gives smoothness and the first identity, and the second is the transposed Leibniz formula. The support statement is the statement that $\varphi(x-\cdot)$ vanishes on $\operatorname{supp}w$ unless $x$ is a sum of a point of $\operatorname{supp}w$ and a point of $\operatorname{supp}\varphi$.</p>
+<p>If $w=\delta_a$ then $w*\digamma_{\mathrm{map}}=\tau_a\digamma_{\mathrm{map}}$, where $\tau_a\digamma_{\mathrm{map}}(x)=\digamma_{\mathrm{map}}(x-a)$; if $w=f \in L^1_{\mathrm{loc}}$ then $w*\digamma_{\mathrm{map}}$ is the classical convolution $\int f(y)\digamma_{\mathrm{map}}(x-y)\,dy$.</p>
+<p><em>Proof.</em> The map $x \mapsto \tau_{-x}\check\digamma_{\mathrm{map}}$ is $C^\infty$ from $\mathbb{R}^n$ into $\mathcal D$, with derivative computed by the chain rule of <em>Differential Calculus on Normed Spaces</em>; differentiating under the continuous linear functional $w$ gives smoothness and the first identity, and the second is the transposed Leibniz formula. The support statement is the statement that $\digamma_{\mathrm{map}}(x-\cdot)$ vanishes on $\operatorname{supp}w$ unless $x$ is a sum of a point of $\operatorname{supp}w$ and a point of $\operatorname{supp}\digamma_{\mathrm{map}}$.</p>
 <p><strong>Corollary (regularisation).</strong> Choosing $\rho_\varepsilon$ as above, $w*\rho_\varepsilon \in C^\infty$ and $w*\rho_\varepsilon \to w$ in $\mathcal D'$; hence $C^\infty(\Omega)$ is dense in $\mathcal D'(\Omega)$ in the weak-$*$ topology.</p>
 <h3 id="convolution-of-distributions">Convolution of Distributions</h3>
 <p><strong>Definition.</strong> Let $w,v \in \mathcal D'(\mathbb{R}^n)$ and suppose one of them has compact support. Then $w*v$ is the distribution</p>
 <p>$$
-\langle w*v,\varphi\rangle=\bigl\langle \partial/\partial x w,\langle \partial/\partial y v,\varphi(x+y)\rangle\bigr\rangle, \qquad \varphi \in \mathcal D(\mathbb{R}^n),
+\langle w*v,\digamma_{\mathrm{map}}\rangle=\bigl\langle \partial/\partial x w,\langle \partial/\partial y v,\digamma_{\mathrm{map}}(x+y)\rangle\bigr\rangle, \qquad \digamma_{\mathrm{map}} \in \mathcal D(\mathbb{R}^n),
 $$</p>
-<p>the pairing being rigorous because the compact support makes $\langle \partial/\partial y v,\varphi(x+y)\rangle$ a test function of $x$. When neither factor has compact support the convolution may still be defined if the supports are suitably bounded, but it is not defined in general.</p>
+<p>the pairing being rigorous because the compact support makes $\langle \partial/\partial y v,\digamma_{\mathrm{map}}(x+y)\rangle$ a test function of $x$. When neither factor has compact support the convolution may still be defined if the supports are suitably bounded, but it is not defined in general.</p>
 <p><strong>Theorem.</strong> The convolution is bilinear, commutative and associative whenever the supports permit, continuous in the weak-$*$ topology, and satisfies</p>
 <p>$$
 \delta*w=w, \qquad \delta_a*w=\tau_aw, \qquad (\partial^\alpha\delta)*w=\partial^\alpha w, \qquad (\partial^\alpha w)*v=\partial^\alpha(w*v),
 $$</p>
 <p>and $\operatorname{supp}(w*v) \subseteq \overline{\operatorname{supp}w+\operatorname{supp}v}$. The space $\mathcal E'(\mathbb{R}^n)$ of compactly supported distributions is a commutative algebra under convolution, with identity $\delta$; the space $L^1(\mathbb{R}^n)$ is a subalgebra, and the Fourier transform converts convolution into multiplication, $\widehat{w*v}=\mathcal F w\mathcal F v$ for $w \in \mathcal S'$ and $v \in \mathcal E'$.</p>
 <p><em>Proof.</em> Bilinearity and continuity follow from the definition and the continuity of the pairings; the associativity, when the supports permit, is Fubini for the iterated pairing. The remaining identities are verified directly on test functions, and the Fourier statement is the convolution theorem transposed.</p>
-<p><strong>Example.</strong> On $\mathbb{R}$, $H*H=xH$: $\langle H*H,\varphi\rangle=\int_0^\infty\int_0^\infty\varphi(x+y)\,dy\,dx=\int_0^\infty t\varphi(t)\,dt$. Similarly $\delta'*H=H'=\delta$, which is the identity $(\partial\delta)*w=\partial w$ in the simplest case.</p>
+<p><strong>Example.</strong> On $\mathbb{R}$, $H*H=xH$: $\langle H*H,\digamma_{\mathrm{map}}\rangle=\int_0^\infty\int_0^\infty\digamma_{\mathrm{map}}(x+y)\,dy\,dx=\int_0^\infty t\digamma_{\mathrm{map}}(t)\,dt$. Similarly $\delta'*H=H'=\delta$, which is the identity $(\partial\delta)*w=\partial w$ in the simplest case.</p>
 <h2 id="fundamental-solutions-and-parametrices">Fundamental Solutions and Parametrices</h2>
 <h3 id="the-definition-and-the-basic-mechanism">The Definition and the Basic Mechanism</h3>
 <p><strong>Definition.</strong> Let $P=P(x,D)$ be a linear differential operator on $\Omega$. A <strong>fundamental solution</strong> of $P$ at a point $x_0$ is a distribution $E$ on a neighbourhood of $x_0$ with</p>
 <p>$$
 PE=\delta_{x_0}.
 $$</p>
-<p>A <strong>parametrix</strong> of $P$ near $x_0$ is a distribution $E$ with $PE=\delta_{x_0}-R$, where $R$ is a smoothing operator: $R\varphi \in C^\infty$ for every distribution $\varphi$ for which the pairing is defined.</p>
+<p>A <strong>parametrix</strong> of $P$ near $x_0$ is a distribution $E$ with $PE=\delta_{x_0}-R$, where $R$ is a smoothing operator: $R\digamma_{\mathrm{map}} \in C^\infty$ for every distribution $\digamma_{\mathrm{map}}$ for which the pairing is defined.</p>
 <p><strong>Theorem (construction from a fundamental solution).</strong> Let $P$ have constant coefficients and let $E$ be a fundamental solution of $P$ at $0$. Then for every $f \in \mathcal E'(\mathbb{R}^n)$ the distribution $w=E*f \in \mathcal D'(\mathbb{R}^n)$ satisfies $Pw=f$, and it is the unique solution in $\mathcal S'(\mathbb{R}^n)$ when $P$ has no nonzero tempered solution of $Pw=0$. If $f \in C_c^\infty$, then $w \in C^\infty$ away from the singular support of $E$.</p>
 <p><em>Proof.</em> By the identities of the convolution section, $P(E*f)=(PE)*f=\delta*f=f$; uniqueness follows because the difference of two solutions is a solution of the homogeneous equation and the transform converts it into a distribution supported at the origin, which is a combination of derivatives of $\delta$ and is excluded by the hypothesis. The smoothness statement is the regularity of the convolution of $E$ with a smooth compactly supported function away from the singularities of $E$.</p>
 <h3 id="existence-for-constant-coefficients">Existence for Constant Coefficients</h3>
@@ -241,13 +241,13 @@ $$</p>
 <h2 id="weak-derivatives-and-the-passage-to-other-settings">Weak Derivatives and the Passage to Other Settings</h2>
 <p><strong>Definition.</strong> Let $f \in L^1_{\mathrm{loc}}(\Omega)$ and let $\alpha$ be a multi-index. A function $g \in L^1_{\mathrm{loc}}(\Omega)$ is the <strong>weak derivative</strong> $\partial^\alpha f$ if the distribution $\partial^\alpha f$ defined by transposition equals the distribution $g$; that is, if</p>
 <p>$$
-\int_\Omega f\,\partial^\alpha\varphi=(-1)^{|\alpha|}\int_\Omega g\varphi \qquad \text{for every } \varphi \in \mathcal D(\Omega).
+\int_\Omega f\,\partial^\alpha\digamma_{\mathrm{map}}=(-1)^{|\alpha|}\int_\Omega g\digamma_{\mathrm{map}} \qquad \text{for every } \digamma_{\mathrm{map}} \in \mathcal D(\Omega).
 $$</p>
 <p><strong>Theorem.</strong> The weak derivative, when it exists, is unique; it agrees with the classical derivative wherever the latter is continuous; and the Sobolev space $W^{k,n}(\Omega)$ of functions whose weak derivatives of order at most $k$ lie in $L^{n}$ is a Banach space under $\|f\|_{W^{k,n}}=(\sum_{|\alpha|\le k}\|\partial^\alpha f\|_p^p)^{1/p}$. The identification of $W^{k,n}$ with the Bessel-potential space $H^k_p$ for $1&lt;p&lt;\infty$ and the embedding theorems are the content.</p>
 <p>This is the first of the two passages that the theory of distributions makes possible. The second is the one used by the analysis of an algebra-valued function: when the ground algebra is no longer a field, the first-order operator $D=\sum_ie_i\partial/\partial x_i$ assembled from a frame of the algebra is a linear differential operator to which the definitions of this article apply verbatim, so the notions of weak solution, of fundamental solution and of regularity by parametrix are available there as here. The class of functions annihilated by $D$, its Cauchy integral formula and the failure of the classical theorems are treated, in the category of the algebras of this Part, and the operator itself is not covered here.</p>
 <h2 id="summary">Summary</h2>
 <p>A distribution is a continuous linear functional on the test functions $C_c^\infty(\Omega)$ with the LF topology, equivalently a functional that on each $\mathcal D_K$ is bounded by finitely many seminorms $\|f\|_{K,N}$. Every locally integrable function is a distribution and the map is injective; the delta, the Heaviside function, the principal value and the finite part are the standard distributions that are not functions. A distribution of compact support has finite order and is a finite sum of derivatives of measures, by the structure theorem; a distribution of order $0$ is integration against a measure, and a positive one is a positive Radon measure; a distribution supported at a point is a combination of $\delta$ and its derivatives.</p>
-<p>Differentiation is defined by transposition, $\langle\partial^\alpha w,\varphi\rangle=(-1)^{|\alpha|}\langle w,\partial^\alpha\varphi\rangle$, so every distribution is infinitely differentiable, the derivatives commute and the Leibniz rule holds against smooth coefficients; the classical rules are recovered, with $H'=\delta$, $(\log|x|)'=\mathrm{pv}(1/x)$ and $x\delta'=-\delta$. Multiplication by a smooth function is defined and is only that: the product of two distributions is in general undefined, and the obstruction is localised in the frequency directions, the product being definable exactly when the wavefront sets are transverse; a Colombeau algebra of nonlinear generalized functions is the alternative in which every product is defined, at the cost of a non-canonical embedding of the distributions.</p>
+<p>Differentiation is defined by transposition, $\langle\partial^\alpha w,\digamma_{\mathrm{map}}\rangle=(-1)^{|\alpha|}\langle w,\partial^\alpha\digamma_{\mathrm{map}}\rangle$, so every distribution is infinitely differentiable, the derivatives commute and the Leibniz rule holds against smooth coefficients; the classical rules are recovered, with $H'=\delta$, $(\log|x|)'=\mathrm{pv}(1/x)$ and $x\delta'=-\delta$. Multiplication by a smooth function is defined and is only that: the product of two distributions is in general undefined, and the obstruction is localised in the frequency directions, the product being definable exactly when the wavefront sets are transverse; a Colombeau algebra of nonlinear generalized functions is the alternative in which every product is defined, at the cost of a non-canonical embedding of the distributions.</p>
 <p>The Fourier transform is an isomorphism of the Schwartz space and, by transposition, of the tempered distributions, intertwining $\partial^\alpha$ with multiplication by $i^{|\alpha|}\zeta^\alpha$ and convolution with multiplication of symbols. Convolution of a distribution with a test function produces a smooth function and regularises; convolution of two distributions is defined when one has compact support, and $\mathcal E'$ is a commutative algebra under it with identity $\delta$, with $\mathcal S'$ acting on $\mathcal E'$ by convolution and the transform converting it into products. A fundamental solution is a distribution $E$ with $PE=\delta$, and it solves $Pw=f$ by $w=E*f$; every nonzero constant-coefficient operator has one, by Ehrenpreis–Malgrange, with the Laplacian, the heat operator and the wave operator as the worked cases. For variable coefficients the general construction yields a parametrix with a smoothing remainder, and ellipticity — the nonvanishing of the principal symbol off the zero section — produces one and gives the elliptic regularity $Pw \in H^s_{\mathrm{loc}}\Rightarrow w \in H^{s+m}_{\mathrm{loc}}$. Finally the distributional derivative is the weak derivative of a locally integrable function, so the distributional setting contains the Sobolev theory and extends verbatim to the first-order operators of the algebra-valued analysis of this Part.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -291,7 +291,7 @@ $$</p>
 <td>distributions, compactly supported and tempered distributions</td>
 </tr>
 <tr>
-<td>$\langle w,\varphi\rangle$</td>
+<td>$\langle w,\digamma_{\mathrm{map}}\rangle$</td>
 <td>duality pairing</td>
 </tr>
 <tr>
@@ -307,11 +307,11 @@ $$</p>
 <td>support of a distribution</td>
 </tr>
 <tr>
-<td>$\check\varphi$, $\tau_a\varphi$</td>
+<td>$\check\digamma_{\mathrm{map}}$, $\tau_a\digamma_{\mathrm{map}}$</td>
 <td>reflection and translation of a test function</td>
 </tr>
 <tr>
-<td>$w*\varphi$, $w*v$</td>
+<td>$w*\digamma_{\mathrm{map}}$, $w*v$</td>
 <td>convolution</td>
 </tr>
 <tr>

@@ -92,7 +92,7 @@ $$</p>
 <h3 id="the-standard-examples">The standard examples</h3>
 <p><strong>(a) The bilinear square.</strong> For $A=R$ commutative and $\sigma=\mathrm{id}$, every $R$-module is an $A$-module, and a bilinear pairing is an ordinary $R$-bilinear form. The standard one on $R^n$ is $\langle x,y\rangle=\sum_i x_iy_i$.</p>
 <p><strong>(b) The regular pairing of an involutive algebra.</strong> For $M=N=A$ with the product, the map $\langle a,b\rangle=\sigma(a)\,b$ is additive in each variable and satisfies the sesquilinear identity; it is non-degenerate when $A$ is a division ring and is the model for the forms of <em>Hermitian Forms over an Involution Ring</em>, which owns them.</p>
-<p><strong>(c) The evaluation pairing.</strong> For $N=M^{\vee}=\operatorname{Hom}_R(M,R)$ with the twisted structure, $\langle m,\varphi\rangle=\varphi(m)$ is the evaluation pairing; it is bilinear and non-degenerate when $M$ is a finite free $R$-module.</p>
+<p><strong>(c) The evaluation pairing.</strong> For $N=M^{\vee}=\operatorname{Hom}_R(M,R)$ with the twisted structure, $\langle m,\digamma_{\mathrm{map}}\rangle=\digamma_{\mathrm{map}}(m)$ is the evaluation pairing; it is bilinear and non-degenerate when $M$ is a finite free $R$-module.</p>
 <h2 id="the-adjoint">The Adjoint</h2>
 <h3 id="existence-and-uniqueness">Existence and uniqueness</h3>
 <p><strong>Theorem.</strong> Let $\langle\cdot,\cdot\rangle$ be a non-degenerate pairing on the pairs $(M,M)$ and $(N,N)$, and let $f : M \to N$ be $A$-linear. Suppose that for every $n \in N$ the functional $m \mapsto \langle f(m),n\rangle$ is represented by an element of $M$; that is, there is $f^{*}(n) \in M$ with</p>
@@ -141,11 +141,11 @@ $$</p>
 <h2 id="the-transpose">The Transpose</h2>
 <h3 id="the-evaluation-pairing">The evaluation pairing</h3>
 <p>In the bilinear case the adjoint of a homomorphism with respect to the evaluation pairing is the transpose.</p>
-<p><strong>Proposition.</strong> Let $A=R$ be commutative, $\sigma=\mathrm{id}$, and let $N=M^{\vee}=\operatorname{Hom}_R(M,R)$ with the evaluation pairing $\langle m,\varphi\rangle=\varphi(m)$. Then for $f : M \to M$ the adjoint with respect to the evaluation pairing is the transpose</p>
+<p><strong>Proposition.</strong> Let $A=R$ be commutative, $\sigma=\mathrm{id}$, and let $N=M^{\vee}=\operatorname{Hom}_R(M,R)$ with the evaluation pairing $\langle m,\digamma_{\mathrm{map}}\rangle=\digamma_{\mathrm{map}}(m)$. Then for $f : M \to M$ the adjoint with respect to the evaluation pairing is the transpose</p>
 <p>$$
-f^{\mathrm{t}} : M^{\vee} \to M^{\vee}, \qquad f^{\mathrm{t}}(\varphi)=\varphi \circ f .
+f^{\mathrm{t}} : M^{\vee} \to M^{\vee}, \qquad f^{\mathrm{t}}(\digamma_{\mathrm{map}})=\digamma_{\mathrm{map}} \circ f .
 $$</p>
-<p><em>Proof.</em> $\langle f(m),\varphi\rangle=\varphi(f(m))=(f^{\mathrm{t}}\varphi)(m)=\langle m,f^{\mathrm{t}}\varphi\rangle$, so $f^{\mathrm{t}}$ represents the functional and is the adjoint by uniqueness.</p>
+<p><em>Proof.</em> $\langle f(m),\digamma_{\mathrm{map}}\rangle=\digamma_{\mathrm{map}}(f(m))=(f^{\mathrm{t}}\digamma_{\mathrm{map}})(m)=\langle m,f^{\mathrm{t}}\digamma_{\mathrm{map}}\rangle$, so $f^{\mathrm{t}}$ represents the functional and is the adjoint by uniqueness.</p>
 <p>The transpose is contravariant, $(fg)^{\mathrm{t}}=g^{\mathrm{t}}f^{\mathrm{t}}$, and involutive when $M$ is reflexive, in agreement with the general laws.</p>
 <h3 id="the-matrix-form">The matrix form</h3>
 <p><strong>Proposition.</strong> Let $M=R^n$ with the standard pairing $\langle x,y\rangle=\sum_i x_iy_i$, and let $f$ have matrix $X$. Then $f^{*}$ has matrix $X^{\mathsf{T}}$. If instead the pairing has Gram matrix $\Phi$, then $[f^{*}]=\Phi^{-1}X^{\mathsf{T}}\Phi$.</p>

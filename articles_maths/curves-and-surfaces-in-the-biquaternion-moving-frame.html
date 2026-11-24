@@ -360,22 +360,22 @@ $$</p>
 <p><strong>Proof.</strong> For the curvature lines, substituting the rotated coefficients in $\Pi$ shows that the cross term vanishes exactly when $\tan2\theta_{\mathrm{tnp}}=2L_{12}/(L_{11}-L_{22})$, and at an umbilic all directions give the same value because $L_{12}=0$ and $L_{11}=L_{22}$. For the asymptotic lines, put $\rho_n=0$ in the normal curvature written in the direction angle $\theta_{\mathrm{tnp}}$ and divide by $\cos^2\theta_{\mathrm{tnp}}$, which gives a quadratic in $\tan\theta_{\mathrm{tnp}}$ whose discriminant is $4(L_{12}^2-L_{11}L_{22})$. For the geodesics, a curve whose unit tangent makes the angle $\theta_{\mathrm{tnp}}=\arctan(\omega_2/\omega_1)$ with the first frame vector turns in the surface at the rate $\mathrm d\theta_{\mathrm{drb}}/\mathrm ds+\iota_3/\mathrm ds$, the first term being the turn of the tangent within the tangent plane and the second the connection's own turn about the normal; the geodesic curvature is that rate, and its vanishing is the displayed condition.</p>
 <p><strong>Remark (the second form or the first).</strong> The curvature lines and the asymptotic lines are distinguished by the <strong>second</strong> fundamental form — the directions that diagonalise it, and the directions in which it vanishes — while the geodesics are distinguished by the <strong>first</strong> alone, being the curves whose geodesic curvature, which is read from the connection and the metric, vanishes. This is why the two families through a non-umbilic point always exist, why a pair of asymptotic directions exists only where $K\le0$, and why a geodesic exists through every point in every direction.</p>
 <h3 id="example-the-sphere-of-radius-math387">Example: The Sphere of Radius $R$</h3>
-<p><strong>Example.</strong> Let $x(u,v)=i\,R\bigl(\sin u\cos v\,\vec e_x+\sin u\sin v\,\vec e_y+\cos u\,\vec e_z\bigr)$, with $u=\theta$ the polar angle and $v=\phi$ the azimuth. Then $\omega_1=R\,\mathrm d\theta$, $\omega_2=R\sin\theta\,\mathrm d\phi$, and the frame of the two subsections above is</p>
+<p><strong>Example.</strong> Let $x(u,v)=i\,R\bigl(\sin u\cos v\,\vec e_x+\sin u\sin v\,\vec e_y+\cos u\,\vec e_z\bigr)$, with $u=\theta$ the polar angle and $v=\digamma_{\mathrm{map}}$ the azimuth. Then $\omega_1=R\,\mathrm d\theta$, $\omega_2=R\sin\theta\,\mathrm d\digamma_{\mathrm{map}}$, and the frame of the two subsections above is</p>
 <p>$$
-v_1=i\bigl(\cos\theta\cos\phi\,\vec e_x+\cos\theta\sin\phi\,\vec e_y-\sin\theta\,\vec e_z\bigr),\qquad
-v_2=i\bigl(-\sin\phi\,\vec e_x+\cos\phi\,\vec e_y\bigr),\qquad
+v_1=i\bigl(\cos\theta\cos\digamma_{\mathrm{map}}\,\vec e_x+\cos\theta\sin\digamma_{\mathrm{map}}\,\vec e_y-\sin\theta\,\vec e_z\bigr),\qquad
+v_2=i\bigl(-\sin\digamma_{\mathrm{map}}\,\vec e_x+\cos\digamma_{\mathrm{map}}\,\vec e_y\bigr),\qquad
 v_3=\frac{x}{R},
 $$</p>
-<p>the rotor of the frame is $r=\exp(\tfrac12\phi\,\vec e_z)\exp(\tfrac12\theta\,\vec e_y)$ in the sense of the exponential series of the real quaternions, and the connection is</p>
+<p>the rotor of the frame is $r=\exp(\tfrac12\digamma_{\mathrm{map}}\,\vec e_z)\exp(\tfrac12\theta\,\vec e_y)$ in the sense of the exponential series of the real quaternions, and the connection is</p>
 <p>$$
-\mathrm d\iota=2r^{\dagger}\mathrm dr=-\sin\theta\,\mathrm d\phi\,\vec e_x+\mathrm d\theta\,\vec e_y+\cos\theta\,\mathrm d\phi\,\vec e_z .
+\mathrm d\iota=2r^{\dagger}\mathrm dr=-\sin\theta\,\mathrm d\digamma_{\mathrm{map}}\,\vec e_x+\mathrm d\theta\,\vec e_y+\cos\theta\,\mathrm d\digamma_{\mathrm{map}}\,\vec e_z .
 $$</p>
 <p>Hence $a_1=0$, $a_2=-\sin\theta$, $b_1=1$, $b_2=0$, $c_1=0$, $c_2=\cos\theta$, and</p>
 <p>$$
 K=\frac{1}{R^2},\qquad H=-\frac{1}{R},
 $$</p>
 <p>the curvature constant and the surface umbilic at every point, and the latitude circle of polar angle $\theta_0$ has geodesic curvature $\rho_g=\cot\theta_0$, vanishing at the equator, which is the great circle.</p>
-<p><strong>Proof.</strong> The frame is the two-sided operator of the generators by the displayed rotor, which is the composition of a rotation of $\phi$ about $\vec e_z$ and one of $\theta$ about the moved second axis; the connection is $2r^{\dagger}\mathrm dr$ expanded in the two parameters; the two curvatures follow from the formulas of the Gaussian and mean curvature with $\Delta_0=R^2\sin\theta$; the geodesic curvature is the third component of the connection along the curve, as in the geodesic theorem.</p>
+<p><strong>Proof.</strong> The frame is the two-sided operator of the generators by the displayed rotor, which is the composition of a rotation of $\digamma_{\mathrm{map}}$ about $\vec e_z$ and one of $\theta$ about the moved second axis; the connection is $2r^{\dagger}\mathrm dr$ expanded in the two parameters; the two curvatures follow from the formulas of the Gaussian and mean curvature with $\Delta_0=R^2\sin\theta$; the geodesic curvature is the third component of the connection along the curve, as in the geodesic theorem.</p>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
 <p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.</p>
 <p>The gammas are the grade-one units of the biquaternion algebra written as Clifford generators in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\gamma_\mu=i\vec e_\mu$, not a different algebra; the body writes $i\vec e_\mu$.</p>

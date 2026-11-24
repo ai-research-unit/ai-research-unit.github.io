@@ -89,14 +89,14 @@ $$</p>
 <h3 id="choosing-an-origin">Choosing an Origin</h3>
 <p><strong>Definition.</strong> An <strong>origin</strong> in $\mathbb{A}$ is a point $o \in \mathbb{A}$. Given $o$, the <strong>position map</strong> is</p>
 <p>$$
-\varphi_o:\mathbb{A} \longrightarrow V, \qquad a \longmapsto a-o .
+\digamma_{\mathrm{map},o}:\mathbb{A} \longrightarrow V, \qquad a \longmapsto a-o .
 $$</p>
-<p><strong>Proposition.</strong> For every origin $o$, the position map $\varphi_o$ is a bijection. For two origins $o,o'$,</p>
+<p><strong>Proposition.</strong> For every origin $o$, the position map $\digamma_{\mathrm{map},o}$ is a bijection. For two origins $o,o'$,</p>
 <p>$$
-\boxed{\;\varphi_{o'}(a)=\varphi_o(a)-(o'-o)\;},
+\boxed{\;\digamma_{\mathrm{map},o'}(a)=\digamma_{\mathrm{map},o}(a)-(o'-o)\;},
 $$</p>
 <p>so the two identifications of $\mathbb{A}$ with $V$ differ by the translation $v \mapsto v-(o'-o)$. Consequently any statement about $\mathbb{A}$ that is to be intrinsic must be invariant under the translations of $V$.</p>
-<p><em>Proof.</em> The map is a bijection because for each $v$ there is a unique $a=o+v$ with $a-o=v$. The relation $\varphi_{o'}(a)=a-o'=(a-o)-(o'-o)$ gives the second statement.</p>
+<p><em>Proof.</em> The map is a bijection because for each $v$ there is a unique $a=o+v$ with $a-o=v$. The relation $\digamma_{\mathrm{map},o'}(a)=a-o'=(a-o)-(o'-o)$ gives the second statement.</p>
 <p>The content of the definition is thus that an affine space is a vector space <strong>together with a forgotten origin</strong>, and the choice of an origin converts it into a vector space in a way that is canonical only up to translation. This is why statements in affine geometry come in two forms: an intrinsic form using differences of points, and a coordinate form after an origin is chosen.</p>
 <p><strong>Example.</strong> The set of solutions of a consistent system $Ax=b$ is an affine space with direction $\ker A$, by the rank criterion of the linear-maps article: if $x_0$ is one solution, every solution is $x_0+u$ with $Au=0$.</p>
 <h2 id="translations">Translations</h2>
@@ -165,7 +165,7 @@ $$</p>
 <p>for a point $a$ and a linear subspace $W \subseteq V$, called the <strong>direction</strong> of $B$. The dimension of $B$ is $\dim_F W$.</p>
 <p><strong>Proposition.</strong> (i) The direction of a nonempty affine subspace is determined by the set: $W=\{b-c : b,c \in B\}$. (ii) If $B=a+W$ and $C=b+U$ then $B \subseteq C$ if and only if $W \subseteq U$ and $a-b \in U$. (iii) Two affine subspaces with the same direction are either equal or disjoint. (iv) The intersection of two affine subspaces is either empty or an affine subspace with direction $W \cap U$. Two affine subspaces are <strong>parallel</strong> when $W \subseteq U$ or $U \subseteq W$; disjointness alone does not force parallelism, since the anti-Hermitian lines of a three-dimensional space are disjoint and neither direction contains the other.</p>
 <p><em>Proof.</em> (i) The differences of elements of $a+W$ are exactly the elements of $W$. (ii) If $B\subseteq C$ then $a \in C$, so $a-b \in U$, and for $w \in W$ one has $a+w \in C$, whence $w=(a+w)-a \in U$ and $W \subseteq U$; conversely $W \subseteq U$ and $a-b \in U$ give $a+W \subseteq b+U$. (iii) If $a+W$ and $b+W$ meet, then $a-b \in W$ by (ii) applied both ways, and the two are equal. (iv) If $c \in B \cap C$ then $B=c+W$, $C=c+U$, and $B \cap C=c+(W \cap U)$.</p>
-<p>For $n=1$ an affine subspace of dimension $1$ is the whole of $\mathbb{A}$, and of dimension $0$ a single point: over a one-dimensional direction space there is nothing else. For $n=2$ the subspaces of dimension $1$ are the <strong>lines</strong>, for $n=3$ the subspaces of dimension $1$ and $2$ are the <strong>lines</strong> and <strong>planes</strong>, and in general a <strong>hyperplane</strong> is an affine subspace of dimension $n-1$, of the form $\{a: \varphi(a-o)=\lambda\}$ for a nonzero linear functional $\varphi$. Two distinct lines in a plane meet in a point or are disjoint and parallel, and this is the intersection statement (iv) with $\dim W=\dim U=1$: either $W=U$ (parallel or equal) or $W \cap U=0$ and the intersection is a single point.</p>
+<p>For $n=1$ an affine subspace of dimension $1$ is the whole of $\mathbb{A}$, and of dimension $0$ a single point: over a one-dimensional direction space there is nothing else. For $n=2$ the subspaces of dimension $1$ are the <strong>lines</strong>, for $n=3$ the subspaces of dimension $1$ and $2$ are the <strong>lines</strong> and <strong>planes</strong>, and in general a <strong>hyperplane</strong> is an affine subspace of dimension $n-1$, of the form $\{a: \digamma_{\mathrm{map}}(a-o)=\lambda\}$ for a nonzero linear functional $\digamma_{\mathrm{map}}$. Two distinct lines in a plane meet in a point or are disjoint and parallel, and this is the intersection statement (iv) with $\dim W=\dim U=1$: either $W=U$ (parallel or equal) or $W \cap U=0$ and the intersection is a single point.</p>
 <h3 id="affine-maps">Affine Maps</h3>
 <p><strong>Definition.</strong> An <strong>affine map</strong> $f:\mathbb{A} \to \mathbb{A}'$ between affine spaces with direction spaces $V,V'$ is a map such that $f(a+v)=f(a)+L(v)$ for a linear map $L:V \to V'$ and all $a,v$. The linear map $L$ is the <strong>linear part</strong> of $f$.</p>
 <p><strong>Proposition.</strong> Affine maps are exactly the maps $f(a)=o'+L(a-o)$ for some origins $o,o'$; they form a set $\operatorname{Aff}(\mathbb{A},\mathbb{A}')=\operatorname{Hom}_F(V,V') \times V'$ under the correspondence $(L,b) \leftrightarrow (x \mapsto Lx+b)$ after origins are chosen, and composition is composition of maps. Affine automorphisms are the case $L$ invertible.</p>
@@ -203,7 +203,7 @@ $$</p>
 </tr>
 <tr>
 <td>$o$</td>
-<td>an origin; $\varphi_o(a)=a-o$</td>
+<td>an origin; $\digamma_{\mathrm{map},o}(a)=a-o$</td>
 </tr>
 <tr>
 <td>$t_v$</td>

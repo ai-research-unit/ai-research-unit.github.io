@@ -96,14 +96,14 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> The map</p>
 <p>$$
-\varphi : \mathbb{C}_{\mathrm{spl}} \longrightarrow \mathbb{R}\oplus\mathbb{R}, \qquad
-\varphi(q+jq') = (q+q',\, q-q') = (Q_+, Q_-),
+\digamma_{\mathrm{map}} : \mathbb{C}_{\mathrm{spl}} \longrightarrow \mathbb{R}\oplus\mathbb{R}, \qquad
+\digamma_{\mathrm{map}}(q+jq') = (q+q',\, q-q') = (Q_+, Q_-),
 $$</p>
 <p>is an isomorphism of $\mathbb{R}$-algebras onto the product ring with componentwise operations. Its inverse sends $(u,v)$ to $\tfrac{u+v}{2} + j\,\tfrac{u-v}{2}$.</p>
-<p><strong>Proof.</strong> The map is $\mathbb{R}$-linear and bijective because its matrix in the basis $\{1,j\}$ is $\left(\begin{smallmatrix}1&amp;1\\1&amp;-1\end{smallmatrix}\right)$, of determinant $-2 \neq 0$. It is multiplicative because $(q+q')(c+c') = (qc+q'c') + (qc'+q'c)$ is the first coordinate of the product and $(q-q')(c-c') = (qc+q'c') - (qc'+q'c)$ its second; so $\varphi(QB) = \varphi(Q)\varphi(B)$ with the componentwise product, and $\varphi(1) = (1,1)$.</p>
+<p><strong>Proof.</strong> The map is $\mathbb{R}$-linear and bijective because its matrix in the basis $\{1,j\}$ is $\left(\begin{smallmatrix}1&amp;1\\1&amp;-1\end{smallmatrix}\right)$, of determinant $-2 \neq 0$. It is multiplicative because $(q+q')(c+c') = (qc+q'c') + (qc'+q'c)$ is the first coordinate of the product and $(q-q')(c-c') = (qc+q'c') - (qc'+q'c)$ its second; so $\digamma_{\mathrm{map}}(QB) = \digamma_{\mathrm{map}}(Q)\digamma_{\mathrm{map}}(B)$ with the componentwise product, and $\digamma_{\mathrm{map}}(1) = (1,1)$.</p>
 <p>The isomorphism is the ring property behind every specificity below. It transports the two field copies to the two <strong>idempotent lines</strong> $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, where</p>
 <p>$$
-\Pi_+ = \varphi^{-1}(1,0) = \tfrac12(1+j), \qquad \Pi_- = \varphi^{-1}(0,1) = \tfrac12(1-j),
+\Pi_+ = \digamma_{\mathrm{map}}^{-1}(1,0) = \tfrac12(1+j), \qquad \Pi_- = \digamma_{\mathrm{map}}^{-1}(0,1) = \tfrac12(1-j),
 $$</p>
 <p>and it reads the multiplication as $Q = Q_+\Pi_+ + Q_-\Pi_-$ with $Q_\pm = q \pm q'$.</p>
 <h2 id="the-idempotents-and-the-split-invertibles">The Idempotents and the Split Invertibles</h2>
@@ -112,19 +112,19 @@ $$</p>
 \Pi_+^2 = \Pi_+, \qquad \Pi_-^2 = \Pi_-, \qquad \Pi_+\Pi_- = 0, \qquad \Pi_+ + \Pi_- = 1 ,
 $$</p>
 <p>and they are central.</p>
-<p><strong>Proof.</strong> The image under $\varphi$ of an idempotent is an idempotent pair $(u,v)$ of $\mathbb{R}\oplus\mathbb{R}$, and an idempotent of a field is $0$ or $1$, so $u,v \in \{0,1\}$ and the four pairs give the four elements listed. The relations are read coordinatewise from the definition of $\varphi$, and centrality is commutativity.</p>
+<p><strong>Proof.</strong> The image under $\digamma_{\mathrm{map}}$ of an idempotent is an idempotent pair $(u,v)$ of $\mathbb{R}\oplus\mathbb{R}$, and an idempotent of a field is $0$ or $1$, so $u,v \in \{0,1\}$ and the four pairs give the four elements listed. The relations are read coordinatewise from the definition of $\digamma_{\mathrm{map}}$, and centrality is commutativity.</p>
 <p>So the algebra has exactly two nontrivial idempotents, orthogonal and complete. This is the property that a field can never have: a field has only the two trivial idempotents, because an idempotent $e$ satisfies $e(e-1) = 0$ and a field is an integral domain. The complex field therefore has no nontrivial idempotent, and its analogue of the split decomposition is the single field copy. The idempotents are also the primitive zero divisors, $\Pi_\pm^2 = \Pi_\pm$, and each annihilates the opposite line; the full description is <em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em>, and <em>Zero Divisors of the Split-Complex Algebra</em>.</p>
 <p><strong>Corollary (the invertibles).</strong> An element is invertible exactly when both idempotent coordinates are nonzero,</p>
 <p>$$
 \boxed{\;{\mathbb{C}_{\mathrm{spl}}}^\times = \{Q : Q_+ \neq 0,\; Q_- \neq 0\} \;\cong\; \mathbb{R}^\times \times \mathbb{R}^\times\;},
 $$</p>
 <p>and the inverse is componentwise, $Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_-$.</p>
-<p><strong>Proof.</strong> The element $Q$ is invertible iff $\varphi(Q) = (Q_+,Q_-)$ is invertible in $\mathbb{R}\oplus\mathbb{R}$, and a pair is invertible iff both of its coordinates are nonzero.</p>
+<p><strong>Proof.</strong> The element $Q$ is invertible iff $\digamma_{\mathrm{map}}(Q) = (Q_+,Q_-)$ is invertible in $\mathbb{R}\oplus\mathbb{R}$, and a pair is invertible iff both of its coordinates are nonzero.</p>
 <p>The group of invertibles is thus a direct product of two copies of the multiplicative group of the base. In the field $\mathbb{C}$ the group of invertibles is $\mathbb{C}^\times$, connected; in $\mathbb{C}_{\mathrm{spl}}$ it is $\mathbb{R}^\times\times\mathbb{R}^\times$, which has four connected components, indexed by the signs of $Q_+$ and $Q_-$. The norm, the criterion $\langle Q\rangle_{*} \neq 0$ and the components are <em>Norm and Invertibility in the General Split-Complex Algebra</em>, where the group of invertibles is treated as a Lie group.</p>
 <h2 id="reduced-not-a-field">Reduced, Not a Field</h2>
 <p>Two multiplicative properties sit side by side and pull in opposite directions: $\mathbb{C}_{\mathrm{spl}}$ has no nonzero nilpotent, and yet not every nonzero element is invertible.</p>
 <p><strong>Theorem (reduced).</strong> There is no nonzero nilpotent in $\mathbb{C}_{\mathrm{spl}}$; the only square-zero element is $0$, and the nilradical vanishes.</p>
-<p><strong>Proof.</strong> Under $\varphi$ a power becomes the pair of powers, $\varphi(Q^n) = (Q_+^n, Q_-^n)$, so $Q^n = 0$ iff $Q_+^n = 0$ and $Q_-^n = 0$, which forces $Q_+ = Q_- = 0$ over the field $\mathbb{R}$; hence $Q = 0$.</p>
+<p><strong>Proof.</strong> Under $\digamma_{\mathrm{map}}$ a power becomes the pair of powers, $\digamma_{\mathrm{map}}(Q^n) = (Q_+^n, Q_-^n)$, so $Q^n = 0$ iff $Q_+^n = 0$ and $Q_-^n = 0$, which forces $Q_+ = Q_- = 0$ over the field $\mathbb{R}$; hence $Q = 0$.</p>
 <p><strong>Theorem (not a field).</strong> $\mathbb{C}_{\mathrm{spl}}$ is not an integral domain and not a field: it has zero divisors, $\Pi_+\Pi_- = 0$ with both factors nonzero, and the nonzero non-invertibles are exactly its zero divisors.</p>
 <p><strong>Proof.</strong> The product $\Pi_+\Pi_- = 0$ is the displayed relation, with $\Pi_+,\Pi_- \neq 0$, so $\mathbb{C}_{\mathrm{spl}}$ has zero divisors. In a commutative ring every nonzero non-invertible of a finite-dimensional algebra over a field is a zero divisor, since multiplication by it is a singular $\mathbb{R}$-linear map with nonzero kernel; and conversely a zero divisor is not invertible. The criterion in idempotent coordinates is that $Q$ is a non-invertible iff $Q_+Q_- = 0$, that is iff it lies on the null cone $\mathcal{N} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, which is <em>Zero Divisors of the Split-Complex Algebra</em>.</p>
 <p>So the non-invertibles of $\mathbb{C}_{\mathrm{spl}}$ are precisely the null cone, origin included: the two lines through the origin. The pair of theorems is the whole distance between the split-complex algebra and a field: reducedness says that the failure of invertibility is never caused by nilpotence, and the zero divisors say that it is caused instead by the splitting of the algebra into two field copies, each of which can be switched off independently.</p>
@@ -183,7 +183,7 @@ $$</p>
 <td>General split-complex number</td>
 </tr>
 <tr>
-<td>$\varphi(Q) = (q+q', q-q')$</td>
+<td>$\digamma_{\mathrm{map}}(Q) = (q+q', q-q')$</td>
 <td>Isomorphism $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$</td>
 </tr>
 <tr>

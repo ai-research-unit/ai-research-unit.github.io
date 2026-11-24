@@ -169,21 +169,21 @@ $$</p>
 <p>So the dual operator of the simplicial complex is the transpose matrix, and the passage between homology and cohomology is the passage between a matrix and its transpose: the kernel of the transpose computes the cocycles, and the universal coefficient theorem of <em>Cohomology and the Universal Coefficient Theorem</em> relates the two graded modules. This is the operator-layer form of the duality between chains and cochains, and it is why the simplicial cohomology of a finite complex is read from the incidence matrices already used for the homology.</p>
 <h2 id="naturality-and-the-simplicial-maps">Naturality and the Simplicial Maps</h2>
 <h3 id="simplicial-maps-and-the-chain-map">Simplicial Maps and the Chain Map</h3>
-<p><strong>Definition.</strong> A <strong>simplicial map</strong> $\phi : K \to L$ sends simplices of $K$ to simplices of $L$ and vertices to vertices, and is determined by its values on the vertices; it induces, on an oriented simplex, the map</p>
+<p><strong>Definition.</strong> A <strong>simplicial map</strong> $\digamma_{\mathrm{map}} : K \to L$ sends simplices of $K$ to simplices of $L$ and vertices to vertices, and is determined by its values on the vertices; it induces, on an oriented simplex, the map</p>
 <p>$$
-\phi_n[v_0,\dots,v_n] = [\phi(v_0),\dots,\phi(v_n)],
+\digamma_{\mathrm{map},n}[v_0,\dots,v_n] = [\digamma_{\mathrm{map}}(v_0),\dots,\digamma_{\mathrm{map}}(v_n)],
 $$</p>
 <p>read as zero when the images are not distinct and with the orientation induced by the ordering otherwise, extended $R$-linearly.</p>
-<p><strong>Theorem.</strong> A simplicial map is a chain map of the simplicial complexes, $\phi_{n-1}\partial_n = \partial_n\phi_n$; the assignment is functorial, and it induces maps $H_n^\Delta(\phi) : H_n^\Delta(K;R) \to H_n^\Delta(L;R)$. The chain map is compatible with the operators of <em>The Boundary Operator</em>: it intertwines the boundaries, the augmentations and, by duality, the coboundaries.</p>
-<p><em>Proof.</em> Both sides evaluated on a simplex are the alternating sum of the images of its facets, and the images of the facets are the facets of the image; the functoriality is that $(\psi\circ\phi)_n = \psi_n\circ\phi_n$ for simplicial maps. The induced map on homology is that of any chain map.</p>
+<p><strong>Theorem.</strong> A simplicial map is a chain map of the simplicial complexes, $\digamma_{\mathrm{map},n-1}\partial_n = \partial_n\digamma_{\mathrm{map},n}$; the assignment is functorial, and it induces maps $H_n^\Delta(\digamma_{\mathrm{map}}) : H_n^\Delta(K;R) \to H_n^\Delta(L;R)$. The chain map is compatible with the operators of <em>The Boundary Operator</em>: it intertwines the boundaries, the augmentations and, by duality, the coboundaries.</p>
+<p><em>Proof.</em> Both sides evaluated on a simplex are the alternating sum of the images of its facets, and the images of the facets are the facets of the image; the functoriality is that $(Ξ_{\mathrm{wfn}}\circ\digamma_{\mathrm{map}})_n = Ξ_{\mathrm{wfn},n}\circ\digamma_{\mathrm{map},n}$ for simplicial maps. The induced map on homology is that of any chain map.</p>
 <h3 id="the-hopf-trace-formula">The Hopf Trace Formula</h3>
-<p><strong>Theorem.</strong> Let $\phi : K \to K$ be a simplicial map of a finite complex and let $\phi_n$ be its chain map. Then the <strong>Lefschetz number</strong></p>
+<p><strong>Theorem.</strong> Let $\digamma_{\mathrm{map}} : K \to K$ be a simplicial map of a finite complex and let $\digamma_{\mathrm{map},n}$ be its chain map. Then the <strong>Lefschetz number</strong></p>
 <p>$$
-\boxed{\;L(\phi) = \sum_n (-1)^n \operatorname{tr}(\phi_n) = \sum_n (-1)^n \operatorname{tr}\bigl(H_n^\Delta(\phi)\bigr)\;}
+\boxed{\;L(\digamma_{\mathrm{map}}) = \sum_n (-1)^n \operatorname{tr}(\digamma_{\mathrm{map},n}) = \sum_n (-1)^n \operatorname{tr}\bigl(H_n^\Delta(\digamma_{\mathrm{map}})\bigr)\;}
 $$</p>
 <p>depends only on the induced maps on homology, the equality being the <strong>Hopf trace formula</strong>.</p>
-<p><em>Proof.</em> The alternating sum of the traces is invariant under passing between the two short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to 0$ and $0\to B_n\to Z_n\to H_n\to 0$ of $\phi$-stable spaces, the same telescoping as in the Euler characteristic; it is the operator form of the additivity of the trace over an exact sequence.</p>
-<p>The Lefschetz number is thus an invariant of the homology of the simplicial map and not of the chain level, and it is the boundary-operator form of the fixed-point index. The topological fixed-point theorem that reads from $L(\phi)\neq 0$ the existence of a fixed point of the geometric realisation, and the degree theory on which it rests, are the subject of <em>Degree Theory and the Brouwer Fixed Point Theorem</em>, where the Lefschetz number is a degree and the sign of the permutation of the fixed simplices is the local index.</p>
+<p><em>Proof.</em> The alternating sum of the traces is invariant under passing between the two short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to 0$ and $0\to B_n\to Z_n\to H_n\to 0$ of $\digamma_{\mathrm{map}}$-stable spaces, the same telescoping as in the Euler characteristic; it is the operator form of the additivity of the trace over an exact sequence.</p>
+<p>The Lefschetz number is thus an invariant of the homology of the simplicial map and not of the chain level, and it is the boundary-operator form of the fixed-point index. The topological fixed-point theorem that reads from $L(\digamma_{\mathrm{map}})\neq 0$ the existence of a fixed point of the geometric realisation, and the degree theory on which it rests, are the subject of <em>Degree Theory and the Brouwer Fixed Point Theorem</em>, where the Lefschetz number is a degree and the sign of the permutation of the fixed simplices is the local index.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the boundary of a triangle).</strong> Let $K$ be the three edges of a $2$-simplex. Then $C_1$ is free of rank three and $C_0$ of rank three, and the cycle $[v_0v_1]+[v_1v_2]+[v_2v_0]$ has zero boundary while the boundaries of $C_1$ are generated by the differences $[v_i]-[v_0]$; hence $H_1^\Delta\cong R$ and $H_0^\Delta\cong R$, the homology of a circle, as recorded in <em>Simplicial and Singular Homology</em>.</p>
 <p><strong>Example (the sphere and the suspension).</strong> For the boundary of an $(n+1)$-simplex, the simplicial complex is $S^n$; the incidence matrices have ranks $|K_n|$ in the middle and the homology is $R$ in degrees $0$ and $n$. The suspension of <em>The Suspension Operator</em> is realised simplicially by the join with a two-point complex, and the suspension operator is the shift of the simplicial complex that adds the two cone vertices.</p>
@@ -249,7 +249,7 @@ $$</p>
 <td>Cochains, coboundary (the transpose), cohomology</td>
 </tr>
 <tr>
-<td>$\phi_n$, $L(\phi)=\sum(-1)^n\operatorname{tr}(\phi_n)$</td>
+<td>$\digamma_{\mathrm{map},n}$, $L(\digamma_{\mathrm{map}})=\sum(-1)^n\operatorname{tr}(\digamma_{\mathrm{map},n})$</td>
 <td>Chain map of a simplicial map; Lefschetz number</td>
 </tr>
 </tbody>

@@ -142,7 +142,7 @@ $$</p>
 <p>$$
 \boxed{\; \tilde U_{\mathrm{SU}(4)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\beta}{2}b\bigr)
 \odot\exp\bigl(iD\{\gamma,\delta,\epsilon\}\bigr)
-\odot\exp\bigl(\tfrac{\psi}{2}c\bigr)[\,]\exp\bigl(-\tfrac{\eta}{2}d\bigr) \;},
+\odot\exp\bigl(\tfrac{Ξ_{\mathrm{wfn}}}{2}c\bigr)[\,]\exp\bigl(-\tfrac{\eta}{2}d\bigr) \;},
 $$</p>
 <p>and, in the degenerate case in which the outer unit vectors coincide, an $\mathrm{SU}(2)$ element,</p>
 <p>$$
@@ -150,7 +150,7 @@ $$</p>
 \odot\exp\Bigl(\tfrac{i\beta}{2}\bigl(\vec u_{\mathrm a}[\,]\vec u_{\mathrm a}-\vec u_{\mathrm b}[\,]\vec u_{\mathrm b}\bigr)\Bigr)
 \odot\exp\bigl(\tfrac{\gamma}{2}w\bigr)[\,]\exp\bigl(-\tfrac{\gamma}{2}w\bigr).
 $$</p>
-<p>Each <strong>outer</strong> factor is a conjugation of the argument by a single unit vector, $\exp(\theta)[\,]\exp(-\theta)$; the $\mathrm{SU}(3)$ form has two of them, with unit vectors $\vec a$ and $\vec b$ and the four angles they carry, and its middle factor is a traceless diagonal $D\{\beta,\gamma,-\beta-\gamma\}$. The $\mathrm{SU}(4)$ form pairs <strong>different</strong> vectors in each outer factor, $\exp(\tfrac\alpha2a)[\,]\exp(-\tfrac\beta2b)$ and $\exp(\tfrac\psi2c)[\,]\exp(-\tfrac\eta2d)$, and its middle factor carries three diagonal parameters $\gamma,\delta,\epsilon$ with no trace condition: that is $7$ scalar parameters and $8$ angles, the fifteen parameters of $\mathrm{SU}(4)$.</p>
+<p>Each <strong>outer</strong> factor is a conjugation of the argument by a single unit vector, $\exp(\theta)[\,]\exp(-\theta)$; the $\mathrm{SU}(3)$ form has two of them, with unit vectors $\vec a$ and $\vec b$ and the four angles they carry, and its middle factor is a traceless diagonal $D\{\beta,\gamma,-\beta-\gamma\}$. The $\mathrm{SU}(4)$ form pairs <strong>different</strong> vectors in each outer factor, $\exp(\tfrac\alpha2a)[\,]\exp(-\tfrac\beta2b)$ and $\exp(\tfracΞ_{\mathrm{wfn}}2c)[\,]\exp(-\tfrac\eta2d)$, and its middle factor carries three diagonal parameters $\gamma,\delta,\epsilon$ with no trace condition: that is $7$ scalar parameters and $8$ angles, the fifteen parameters of $\mathrm{SU}(4)$.</p>
 <p><strong>Remark (the inverse).</strong> The inverse of any of these elements is obtained by reversing the order of the factors and changing the signs of the exponents, and it equals the biconjugate of the function,
 $$G^{-1}=G^{+\approx}=G^{\dagger},$$
 the source's rule, which is the statement of <em>Adjoint Pair of $L$ and $R$ Operators</em>: for an operator that fixes $e_t$ and preserves the span of $\vec e_x,\vec e_y,\vec e_z$ — as every element here does — the conjugation by the Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of the scalar form is invisible, and association followed by conjugation of the coefficients is the Hermitian adjoint. For a general linear function the two involutions differ, and the corpus keeps them apart.</p>
@@ -171,20 +171,20 @@ $$</p>
 <p>The exponential is the correspondence between the group and the algebra. Its differential at the identity is the identity, so it is a local diffeomorphism onto a neighbourhood of $e_t$, and the inverse function theorem makes it a chart of $\mathbb{B}^\times$ near the identity; the tangent space at the identity is the whole algebra, since $\mathbb{B}^\times$ is open, with the commutator as bracket (<em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>). The Baker–Campbell–Hausdorff series of the algebra converges near the origin and reproduces the group law there, and the group law $\exp(\tilde Q_3)\exp(\tilde{Q}_1)$ against $\exp(\tilde Q_3+\tilde{Q}_1)$ of <em>Biquaternion Elementary Functions</em> is its first two terms. The subgroups correspond to the subalgebras: the compact subalgebra $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ to $S^3$, the scalar-free part $\mathrm{B}_0$ to the norm-one group $\mathbb{B}^\times_1$, and the centre $\mathbb{C}e_t$ to $\mathbb{C}^\times e_t$.</p>
 <h2 id="one-parameter-subgroups">One-Parameter Subgroups</h2>
 <p><strong>A one-parameter subgroup is the image of a real line of the Lie algebra under the exponential, and every one-parameter subgroup arises that way.</strong></p>
-<p>A <strong>one-parameter subgroup</strong> of $\mathbb{B}^\times$ is a Lie-group homomorphism $\varphi:\mathbb{R}\to\mathbb{B}^\times$. For $\tilde X\in\mathbb{B}$ the <strong>exponential line</strong></p>
+<p>A <strong>one-parameter subgroup</strong> of $\mathbb{B}^\times$ is a Lie-group homomorphism $\digamma_{\mathrm{map}}:\mathbb{R}\to\mathbb{B}^\times$. For $\tilde X\in\mathbb{B}$ the <strong>exponential line</strong></p>
 <p>$$
-\varphi_{\tilde X}(t)=\exp(t\tilde X)
+\digamma_{\mathrm{map},\tilde X}(t)=\exp(t\tilde X)
 $$</p>
-<p>is one, since $\exp(s\tilde X)\exp(t\tilde X)=\exp((s+t)\tilde X)$ by the group law of <em>Biquaternion Elementary Functions</em>, §<em>The Group Law</em>. Its <strong>infinitesimal generator</strong> is $\varphi_{\tilde X}'(0)=\tilde X$.</p>
-<p><strong>Theorem.</strong> Every one-parameter subgroup of $\mathbb{B}^\times$ is $\varphi_{\tilde X}$ for a unique $\tilde X\in\mathbb{B}$.</p>
-<p><em>Proof.</em> Let $\varphi$ be a one-parameter subgroup and put $\tilde X=\varphi'(0)$. Differentiating $\varphi(s+t)=\varphi(s)\varphi(t)$ in $s$ at $s=0$ gives $\varphi'(t)=\tilde X\varphi(t)$. The product $\psi(t)=\exp(-t\tilde X)\varphi(t)$ then has</p>
+<p>is one, since $\exp(s\tilde X)\exp(t\tilde X)=\exp((s+t)\tilde X)$ by the group law of <em>Biquaternion Elementary Functions</em>, §<em>The Group Law</em>. Its <strong>infinitesimal generator</strong> is $\digamma_{\mathrm{map},\tilde X}'(0)=\tilde X$.</p>
+<p><strong>Theorem.</strong> Every one-parameter subgroup of $\mathbb{B}^\times$ is $\digamma_{\mathrm{map},\tilde X}$ for a unique $\tilde X\in\mathbb{B}$.</p>
+<p><em>Proof.</em> Let $\digamma_{\mathrm{map}}$ be a one-parameter subgroup and put $\tilde X=\digamma_{\mathrm{map}}'(0)$. Differentiating $\digamma_{\mathrm{map}}(s+t)=\digamma_{\mathrm{map}}(s)\digamma_{\mathrm{map}}(t)$ in $s$ at $s=0$ gives $\digamma_{\mathrm{map}}'(t)=\tilde X\digamma_{\mathrm{map}}(t)$. The product $Ξ_{\mathrm{wfn}}(t)=\exp(-t\tilde X)\digamma_{\mathrm{map}}(t)$ then has</p>
 <p>$$
-\psi'(t)=-\tilde X\exp(-t\tilde X)\varphi(t)+\exp(-t\tilde X)\tilde X\varphi(t)=0,
+Ξ_{\mathrm{wfn}}'(t)=-\tilde X\exp(-t\tilde X)\digamma_{\mathrm{map}}(t)+\exp(-t\tilde X)\tilde X\digamma_{\mathrm{map}}(t)=0,
 $$</p>
-<p>because $\exp(-t\tilde X)$ commutes with $\tilde X$. Since $\psi(0)=e_t$, $\psi$ is constant and $\varphi(t)=\exp(t\tilde X)$. The generator is recovered as $\varphi'(0)$, hence is unique.</p>
-<p><strong>The subgroup depends on the line, the parametrisation on the vector.</strong> Since $t$ ranges over $\mathbb{R}$, $\varphi_{\tilde X}$ and $\varphi_{\lambda\tilde X}$ have the same image for every real $\lambda\neq0$; the one-parameter subgroup, as a set, is the image of the real line $\mathbb{R}\tilde X$. The generator is fixed only once the parametrisation is fixed.</p>
+<p>because $\exp(-t\tilde X)$ commutes with $\tilde X$. Since $Ξ_{\mathrm{wfn}}(0)=e_t$, $Ξ_{\mathrm{wfn}}$ is constant and $\digamma_{\mathrm{map}}(t)=\exp(t\tilde X)$. The generator is recovered as $\digamma_{\mathrm{map}}'(0)$, hence is unique.</p>
+<p><strong>The subgroup depends on the line, the parametrisation on the vector.</strong> Since $t$ ranges over $\mathbb{R}$, $\digamma_{\mathrm{map},\tilde X}$ and $\digamma_{\mathrm{map},\lambda\tilde X}$ have the same image for every real $\lambda\neq0$; the one-parameter subgroup, as a set, is the image of the real line $\mathbb{R}\tilde X$. The generator is fixed only once the parametrisation is fixed.</p>
 <p><strong>The two real directions.</strong> The exponential line of $\vec e_x$ is the circle $\exp(t\vec e_x)=\cos t\,e_t+\sin t\,\vec e_x$, and that of $i\vec e_x$ is the hyperbola $\exp(t\,i\vec e_x)=\cosh t\,e_t+\sinh t\,\vec e_x$ (§<em>The Exponential in the Two Real Directions</em> of <em>Biquaternion Elementary Functions</em>). The first is periodic and lies in the unit quaternions, the second is unbounded and lies in the Hermitian subspace. The two are the compact and the non-compact one-parameter subgroups in their simplest form.</p>
-<p><strong>The subgroup lies in a centraliser.</strong> Every $\exp(t\tilde X)$ commutes with $\tilde X$, so the image of $\varphi_{\tilde X}$ is contained in the group of invertibles of the centraliser $C(\tilde X)=\{\tilde Y:\tilde Y\tilde X=\tilde X\tilde Y\}$ (<em>The Centraliser in the Biquaternion Algebra</em>, §<em>The Commutant</em>). For a non-scalar $\tilde X$ that centraliser has complex dimension two, so the one-parameter subgroup is a real curve in a commutative surface.</p>
+<p><strong>The subgroup lies in a centraliser.</strong> Every $\exp(t\tilde X)$ commutes with $\tilde X$, so the image of $\digamma_{\mathrm{map},\tilde X}$ is contained in the group of invertibles of the centraliser $C(\tilde X)=\{\tilde Y:\tilde Y\tilde X=\tilde X\tilde Y\}$ (<em>The Centraliser in the Biquaternion Algebra</em>, §<em>The Commutant</em>). For a non-scalar $\tilde X$ that centraliser has complex dimension two, so the one-parameter subgroup is a real curve in a commutative surface.</p>
 <h2 id="the-killing-form">The Killing Form</h2>
 <p><strong>The Killing form of the group of invertibles is the real part of the trace form on the trace-free part; its radical is the centre, and its inertia is $(3,3)$.</strong></p>
 <p>The Lie algebra of $\mathbb{B}^\times$ is $\mathbb{B}$ with the bracket $[\tilde X,\tilde Y]=\tilde X\tilde Y-\tilde Y\tilde X$ (§<em>The Correspondence with the Lie Algebra</em>). Its <strong>Killing form</strong> is</p>
@@ -304,7 +304,7 @@ $$</p>
 <td>Centre of $\mathbb{B}^\times$; Lie algebra $\mathbb{C}e_t$</td>
 </tr>
 <tr>
-<td>$\varphi_{\tilde X}(t)=\exp(t\tilde X)$</td>
+<td>$\digamma_{\mathrm{map},\tilde X}(t)=\exp(t\tilde X)$</td>
 <td>One-parameter subgroup with generator $\tilde X$</td>
 </tr>
 <tr>

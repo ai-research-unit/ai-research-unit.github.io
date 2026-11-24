@@ -96,9 +96,9 @@ $$</p>
 <p>and the scalar part is one of the four forms, while $V_f$ is the new object. The map $V_f$ is $\mathbb{C}$-bilinear when $f$ is one of the six products of the two bilinear families, and sesquilinear over $(\mathbb{C},\bar{\cdot})$ when $f$ is one of the six products of the two sesquilinear families. Its values lie in $\mathbb{B}_{V}$.</p>
 <p><strong>The vector part is not a form.</strong> A form of the corpus is scalar-valued: it is the scalar part of a product read in two arguments, bilinear in both slots for the two bilinear families and sesquilinear in the second slot for the two sesquilinear families. The vector part is vector-valued, so it has no scalar Gram matrix and no inertia of its own. What replaces the scalar form is a family of three scalar forms, one for each vector of the subspace: for $w\in\mathbb{B}_{V}$ put</p>
 <p>$$
-\varphi_{f,w}(\tilde Q_1,\tilde Q_2)=\bigl(w,V_f(\tilde Q_1,\tilde Q_2)\bigr).
+\digamma_{\mathrm{map},f,w}(\tilde Q_1,\tilde Q_2)=\bigl(w,V_f(\tilde Q_1,\tilde Q_2)\bigr).
 $$</p>
-<p>For $f$ bilinear, $\varphi_{f,w}$ is a complex bilinear form; for $f$ sesquilinear, it is sesquilinear over $(\mathbb{C},\bar{\cdot})$. The three coordinate forms with $w=\vec e_x,\vec e_y,\vec e_z$ determine $V_f$, and $V_f$ determines them. This is the precise sense in which a vector part is a package of three scalar forms. The four forms of the corpus are a different object; they are not a member of this package of three.</p>
+<p>For $f$ bilinear, $\digamma_{\mathrm{map},f,w}$ is a complex bilinear form; for $f$ sesquilinear, it is sesquilinear over $(\mathbb{C},\bar{\cdot})$. The three coordinate forms with $w=\vec e_x,\vec e_y,\vec e_z$ determine $V_f$, and $V_f$ determines them. This is the precise sense in which a vector part is a package of three scalar forms. The four forms of the corpus are a different object; they are not a member of this package of three.</p>
 <p><strong>The natural quadratic invariants.</strong> The scalar forms of $V_f$ are not the only scalars it carries. The complex bilinear square $(V_f,V_f)$ and the real square $(V_f,\overline{V_f})$ are the two natural scalar quantities attached to the vector part; the second is the Euclidean square of the vector. They are quartic in the arguments for a general product, and they are the natural invariants when no vector $w$ is chosen.</p>
 <h2 id="the-rule-for-the-four-general-products">The Rule for the Four General Products</h2>
 <p>The four general products obey one rule. Put $\varepsilon=0$ for the two products whose second slot is plain, $\tilde Q_1\tilde Q_2$ and $\tilde Q_1^{\natural}\tilde Q_2$, and $\varepsilon=1$ for the two whose second slot is the Hermitian conjugation, $\tilde Q_1\tilde Q_2^{*}$ and $\tilde Q_1^{\natural}\tilde Q_2^{*}$. Write</p>
@@ -742,15 +742,15 @@ $$</p>
 <h2 id="the-component-forms">The Component Forms</h2>
 <p><strong>Definition (the component forms).</strong> For $f$ of the twelve and $w\in\mathbb{B}_{V}$, the <strong>component form</strong> is</p>
 <p>$$
-\varphi_{f,w}(\tilde Q_1,\tilde Q_2)=\bigl(w,V_f(\tilde Q_1,\tilde Q_2)\bigr).
+\digamma_{\mathrm{map},f,w}(\tilde Q_1,\tilde Q_2)=\bigl(w,V_f(\tilde Q_1,\tilde Q_2)\bigr).
 $$</p>
-<p>For $f$ bilinear it is a complex bilinear form, with Gram matrix $G_{ij}=\varphi_{f,w}(e_i,e_j)$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and $\varphi(\sum c_ie_i,\sum d_je_j)=\sum c_iG_{ij}d_j$. For $f$ sesquilinear it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, with the same entries and $\varphi(\sum c_ie_i,\sum d_je_j)=\sum c_iG_{ij}\overline{d_j}$.</p>
+<p>For $f$ bilinear it is a complex bilinear form, with Gram matrix $G_{ij}=\digamma_{\mathrm{map},f,w}(e_i,e_j)$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and $\digamma_{\mathrm{map}}(\sum c_ie_i,\sum d_je_j)=\sum c_iG_{ij}d_j$. For $f$ sesquilinear it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, with the same entries and $\digamma_{\mathrm{map}}(\sum c_ie_i,\sum d_je_j)=\sum c_iG_{ij}\overline{d_j}$.</p>
 <p><strong>Theorem (the component forms of the twelve).</strong> The three coordinate forms of each vector part have the following classes, Gram matrices and ranks.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>products</th>
-<th>class of $\varphi$</th>
+<th>class of $\digamma_{\mathrm{map}}$</th>
 <th>Gram matrix</th>
 <th>rank</th>
 </tr>
@@ -841,7 +841,7 @@ $$</p>
 <p>anti-Hermitian of rank $4$; the other two are obtained by the same cyclic relabelling. The zero rows are immediate. For the sesquilinear rows, the Gram matrix of a conjugate-symmetric form is Hermitian and that of a conjugate-alternating form is anti-Hermitian, by the two definitions read in the entries; the ranks are computed from the same matrices. The $\tilde Q_1^{\natural}\tilde Q_2^{*}$ entry is the sum of the $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ entries; its Hermitian part is the $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ matrix, its anti-Hermitian part is the $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ matrix, and its rank is $4$.</p>
 <p><strong>Remark (the diagonal of a component form).</strong> At the two equal arguments,</p>
 <p>$$
-\varphi_{f,w}(\tilde Q,\tilde Q)=\bigl(w,D_f(\tilde Q)\bigr).
+\digamma_{\mathrm{map},f,w}(\tilde Q,\tilde Q)=\bigl(w,D_f(\tilde Q)\bigr).
 $$</p>
 <p>For a conjugate-symmetric component form this is real, and for a conjugate-alternating one it is purely imaginary; this is the scalar-form reading of the real and imaginary characters of the diagonals of $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ and of $\tilde Q_1\wedge_{\natural*}\tilde Q_2$.</p>
 <h2 id="the-relations-among-the-twelve">The Relations among the Twelve</h2>
@@ -918,7 +918,7 @@ $$</p>
 <td>the diagonal, the vector part of the square</td>
 </tr>
 <tr>
-<td>$\varphi_{f,w}(\tilde Q_1,\tilde Q_2)=(w,V_f(\tilde Q_1,\tilde Q_2))$</td>
+<td>$\digamma_{\mathrm{map},f,w}(\tilde Q_1,\tilde Q_2)=(w,V_f(\tilde Q_1,\tilde Q_2))$</td>
 <td>the component form in the direction $w$</td>
 </tr>
 <tr>

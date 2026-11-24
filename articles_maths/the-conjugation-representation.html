@@ -92,11 +92,11 @@ $$</p>
 \operatorname{Out}(G) = \operatorname{Aut}(G)/\operatorname{Inn}(G).
 $$</p>
 <p>Its elements are the <strong>outer automorphisms</strong>: they are cosets of inner automorphisms, and no single representative of a nontrivial coset is itself inner.</p>
-<p><strong>Proposition (normality).</strong> $\operatorname{Inn}(G)$ is a normal subgroup of $\operatorname{Aut}(G)$. Indeed, for $\varphi\in\operatorname{Aut}(G)$ and $g\in G$,</p>
+<p><strong>Proposition (normality).</strong> $\operatorname{Inn}(G)$ is a normal subgroup of $\operatorname{Aut}(G)$. Indeed, for $\digamma_{\mathrm{map}}\in\operatorname{Aut}(G)$ and $g\in G$,</p>
 <p>$$
-\boxed{\;\varphi\, c_g\, \varphi^{-1} = c_{\varphi(g)}\;} .
+\boxed{\;\digamma_{\mathrm{map}}\, c_g\, \digamma_{\mathrm{map}}^{-1} = c_{\digamma_{\mathrm{map}}(g)}\;} .
 $$</p>
-<p><strong>Proof.</strong> For every $x$, $(\varphi c_g \varphi^{-1})(x) = \varphi\bigl(g\,\varphi^{-1}(x)\,g^{-1}\bigr) = \varphi(g)\,x\,\varphi(g)^{-1} = c_{\varphi(g)}(x)$, using the multiplicativity of $\varphi$ and $\varphi^{-1}$. The right-hand side is inner, so the conjugate of an inner automorphism is inner.</p>
+<p><strong>Proof.</strong> For every $x$, $(\digamma_{\mathrm{map}} c_g \digamma_{\mathrm{map}}^{-1})(x) = \digamma_{\mathrm{map}}\bigl(g\,\digamma_{\mathrm{map}}^{-1}(x)\,g^{-1}\bigr) = \digamma_{\mathrm{map}}(g)\,x\,\digamma_{\mathrm{map}}(g)^{-1} = c_{\digamma_{\mathrm{map}}(g)}(x)$, using the multiplicativity of $\digamma_{\mathrm{map}}$ and $\digamma_{\mathrm{map}}^{-1}$. The right-hand side is inner, so the conjugate of an inner automorphism is inner.</p>
 <p><strong>Proposition (the two exact sequences).</strong> There are exact sequences of groups</p>
 <p>$$
 1 \longrightarrow Z(G) \longrightarrow G \xrightarrow{\ \rho\ } \operatorname{Aut}(G) \longrightarrow \operatorname{Out}(G) \longrightarrow 1 ,
@@ -111,24 +111,24 @@ $$</p>
 <p>The inner automorphisms are those that come from elements; the outer ones measure what is left when they are divided out. The quotient is trivial exactly when every automorphism is inner, and this is the property that makes a group <strong>complete</strong> — centreless with all automorphisms inner — a notion that recurs in the study of the symmetric groups and is not pursued here.</p>
 <h2 id="the-action-on-the-conjugacy-classes">The Action on the Conjugacy Classes</h2>
 <p>Every automorphism carries a conjugacy class to a conjugacy class, so the automorphism group acts on the set of classes.</p>
-<p><strong>Proposition (the action is well defined).</strong> For $\varphi\in\operatorname{Aut}(G)$ and $x\in G$,</p>
+<p><strong>Proposition (the action is well defined).</strong> For $\digamma_{\mathrm{map}}\in\operatorname{Aut}(G)$ and $x\in G$,</p>
 <p>$$
-\boxed{\;\varphi\bigl(\chi(x)\bigr) = \chi\bigl(\varphi(x)\bigr)\;},
+\boxed{\;\digamma_{\mathrm{map}}\bigl(\chi(x)\bigr) = \chi\bigl(\digamma_{\mathrm{map}}(x)\bigr)\;},
 $$</p>
-<p>so $\varphi$ induces a permutation of the set $\operatorname{Cl}(G)$ of conjugacy classes, and the assignment $\operatorname{Aut}(G)\to\operatorname{sym}(\operatorname{Cl}(G))$ is an action.</p>
-<p><strong>Proof.</strong> For $g\in G$, $\varphi(gxg^{-1}) = \varphi(g)\varphi(x)\varphi(g)^{-1}$, so the image of the class of $x$ is the class of $\varphi(x)$. The assignment is compatible with composition and sends the identity to the identity, hence is an action in the sense of <em>Transformation Groups</em>.</p>
+<p>so $\digamma_{\mathrm{map}}$ induces a permutation of the set $\operatorname{Cl}(G)$ of conjugacy classes, and the assignment $\operatorname{Aut}(G)\to\operatorname{sym}(\operatorname{Cl}(G))$ is an action.</p>
+<p><strong>Proof.</strong> For $g\in G$, $\digamma_{\mathrm{map}}(gxg^{-1}) = \digamma_{\mathrm{map}}(g)\digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(g)^{-1}$, so the image of the class of $x$ is the class of $\digamma_{\mathrm{map}}(x)$. The assignment is compatible with composition and sends the identity to the identity, hence is an action in the sense of <em>Transformation Groups</em>.</p>
 <p><strong>Proposition (the kernel of the action on the classes).</strong> Let</p>
 <p>$$
-K = \{\varphi\in\operatorname{Aut}(G) : \varphi(x) \text{ is conjugate to } x \text{ for every } x\} .
+K = \{\digamma_{\mathrm{map}}\in\operatorname{Aut}(G) : \digamma_{\mathrm{map}}(x) \text{ is conjugate to } x \text{ for every } x\} .
 $$</p>
 <p>Then $K$ is a normal subgroup of $\operatorname{Aut}(G)$, it contains $\operatorname{Inn}(G)$, and it is the kernel of the action of $\operatorname{Aut}(G)$ on $\operatorname{Cl}(G)$. Hence the action factors through $\operatorname{Aut}(G)/K$, and $\operatorname{Out}(G)$ maps onto that quotient with kernel $K/\operatorname{Inn}(G)$.</p>
 <p><strong>Proof.</strong> The set $K$ is the kernel of a homomorphism, hence normal. An inner automorphism carries $x$ to $gxg^{-1}$, which is conjugate to $x$ by definition, so $\operatorname{Inn}(G)\subseteq K$. Conversely a representative of the kernel carries every $x$ to a conjugate, so it lies in $K$. The factorisation is the first isomorphism theorem applied to the action, and the identification of the quotient $\operatorname{Out}(G)/(K/\operatorname{Inn}(G))$ with $\operatorname{Aut}(G)/K$ is the third isomorphism theorem. The automorphisms in $K$ are the <strong>class-preserving</strong> automorphisms.</p>
 <p><strong>Corollary (the group acts trivially on its own classes).</strong> The restriction of the action to the inner automorphisms is trivial: for every $g$ and every class $\chi$, $c_g(\chi)=\chi$. Consequently the conjugation action of $G$ on $\operatorname{Cl}(G)$ factors through the trivial action, and it is the outer automorphisms that permute the classes nontrivially.</p>
-<p><strong>Proof.</strong> By the first of the two propositions above with $\varphi=c_g$, the image of $\chi(x)$ is $\chi(gxg^{-1})=\chi(x)$, because $gxg^{-1}$ is conjugate to $x$. So each $c_g$ fixes every class, and the action of $G$ through $\rho$ is trivial. The action of $\operatorname{Aut}(G)$ is the only one that can move a class, and it does so through the quotient $\operatorname{Aut}(G)/K$.</p>
+<p><strong>Proof.</strong> By the first of the two propositions above with $\digamma_{\mathrm{map}}=c_g$, the image of $\chi(x)$ is $\chi(gxg^{-1})=\chi(x)$, because $gxg^{-1}$ is conjugate to $x$. So each $c_g$ fixes every class, and the action of $G$ through $\rho$ is trivial. The action of $\operatorname{Aut}(G)$ is the only one that can move a class, and it does so through the quotient $\operatorname{Aut}(G)/K$.</p>
 <p>The corollary is the sense in which the outer automorphisms are invisible in the group's own conjugation and visible only in its symmetries: an inner automorphism cannot move a class, because moving a class requires leaving the group, and an automorphism that is class-preserving cannot move it either. The class-preserving automorphisms can be strictly larger than the inner ones, and then the action carries strictly less information than $\operatorname{Out}(G)$; the general study of that gap is a theorem of the finite-group literature and is cited rather than reproduced.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>conjugation representation</strong> is the homomorphism $\rho : G\to\operatorname{Aut}(G)$, $\rho(g)=c_g$, $c_g(x)=gxg^{-1}$. Its kernel is the centre and its image is the group of inner automorphisms, so $\operatorname{Inn}(G)\cong G/Z(G)$ and the representation is faithful exactly when $Z(G)$ is trivial. The inner automorphisms are normal in $\operatorname{Aut}(G)$, because $\varphi c_g\varphi^{-1}=c_{\varphi(g)}$; the quotient is the <strong>outer automorphism group</strong> $\operatorname{Out}(G)=\operatorname{Aut}(G)/\operatorname{Inn}(G)$, and the two fit the exact sequences $1\to Z(G)\to G\to\operatorname{Aut}(G)\to\operatorname{Out}(G)\to1$ and $1\to\operatorname{Inn}(G)\to\operatorname{Aut}(G)\to\operatorname{Out}(G)\to1$. When the centre is trivial, $G\cong\operatorname{Inn}(G)\trianglelefteq\operatorname{Aut}(G)$ and $\operatorname{Aut}(G)$ is an extension of $\operatorname{Out}(G)$ by $G$.</p>
-<p>Every automorphism permutes the conjugacy classes, $\varphi(\chi(x))=\chi(\varphi(x))$, so $\operatorname{Aut}(G)$ acts on the set of classes; the kernel of that action is the normal subgroup $K$ of <strong>class-preserving</strong> automorphisms, which contains $\operatorname{Inn}(G)$. The group $G$ itself acts trivially on its own classes, since each inner automorphism fixes every class, and the nontrivial part of the action is carried by $\operatorname{Aut}(G)/K$, a quotient of $\operatorname{Out}(G)$.</p>
+<p>The <strong>conjugation representation</strong> is the homomorphism $\rho : G\to\operatorname{Aut}(G)$, $\rho(g)=c_g$, $c_g(x)=gxg^{-1}$. Its kernel is the centre and its image is the group of inner automorphisms, so $\operatorname{Inn}(G)\cong G/Z(G)$ and the representation is faithful exactly when $Z(G)$ is trivial. The inner automorphisms are normal in $\operatorname{Aut}(G)$, because $\digamma_{\mathrm{map}} c_g\digamma_{\mathrm{map}}^{-1}=c_{\digamma_{\mathrm{map}}(g)}$; the quotient is the <strong>outer automorphism group</strong> $\operatorname{Out}(G)=\operatorname{Aut}(G)/\operatorname{Inn}(G)$, and the two fit the exact sequences $1\to Z(G)\to G\to\operatorname{Aut}(G)\to\operatorname{Out}(G)\to1$ and $1\to\operatorname{Inn}(G)\to\operatorname{Aut}(G)\to\operatorname{Out}(G)\to1$. When the centre is trivial, $G\cong\operatorname{Inn}(G)\trianglelefteq\operatorname{Aut}(G)$ and $\operatorname{Aut}(G)$ is an extension of $\operatorname{Out}(G)$ by $G$.</p>
+<p>Every automorphism permutes the conjugacy classes, $\digamma_{\mathrm{map}}(\chi(x))=\chi(\digamma_{\mathrm{map}}(x))$, so $\operatorname{Aut}(G)$ acts on the set of classes; the kernel of that action is the normal subgroup $K$ of <strong>class-preserving</strong> automorphisms, which contains $\operatorname{Inn}(G)$. The group $G$ itself acts trivially on its own classes, since each inner automorphism fixes every class, and the nontrivial part of the action is carried by $\operatorname{Aut}(G)/K$, a quotient of $\operatorname{Out}(G)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -167,7 +167,7 @@ $$</p>
 <td>the set of conjugacy classes of $G$</td>
 </tr>
 <tr>
-<td>$\varphi(\chi(x))=\chi(\varphi(x))$</td>
+<td>$\digamma_{\mathrm{map}}(\chi(x))=\chi(\digamma_{\mathrm{map}}(x))$</td>
 <td>the action of an automorphism on the classes</td>
 </tr>
 <tr>

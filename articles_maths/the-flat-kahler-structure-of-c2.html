@@ -154,17 +154,17 @@ The group is the semidirect product $\mathbb{C}^2\rtimes\mathrm{U}(2)$, of real 
 <p><strong>Remark (the translations are not optional).</strong> The group $\mathrm{U}(2)$ alone does not act transitively on $\mathbb{C}^2$; the translations are needed to reach every point. <strong>The full group of biholomorphisms of $\mathbb{C}^2$ is much larger than the isometry group</strong>: the affine group $\mathbb{C}^2\rtimes\mathrm{GL}_2(\mathbb{C})$ acts by biholomorphisms but not by isometries unless the linear part is unitary, and the polynomial and non-polynomial automorphisms of <em>The Affine and Polynomial Automorphisms of $\mathbb{C}^2$</em> are larger still.</p>
 <p><strong>Remark (the stabiliser).</strong> The stabiliser of the origin in the holomorphic isometry group is $\mathrm{U}(2)$, of dimension $4$; the stabiliser of a point in the full isometry group is $\mathrm{O}(4)$, of dimension $6$. <strong>The homogeneous space is $\mathbb{C}^2\cong(\mathbb{C}^2\rtimes\mathrm{U}(2))/\mathrm{U}(2)$</strong>, and the isotropy representation is the standard representation of $\mathrm{U}(2)$.</p>
 <h2 id="the-kahler-potential-and-the-canonical-form">The Kähler Potential and the Canonical Form</h2>
-<p><strong>The flat Kähler form has the global potential $\varphi=\frac12\lVert Q\rVert^2$, and the metric is the Hessian of $\varphi$; the canonical bundle is trivial and the space is Calabi–Yau.</strong></p>
+<p><strong>The flat Kähler form has the global potential $\digamma_{\mathrm{map}}=\frac12\lVert Q\rVert^2$, and the metric is the Hessian of $\digamma_{\mathrm{map}}$; the canonical bundle is trivial and the space is Calabi–Yau.</strong></p>
 <p><strong>Proposition (the potential).</strong> The function
 $$
-\varphi(Q)=\frac12\lVert Q\rVert^2=\frac12\left(\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2\right)
+\digamma_{\mathrm{map}}(Q)=\frac12\lVert Q\rVert^2=\frac12\left(\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2\right)
 $$
 satisfies
 $$
-\Omega=i\,\partial\bar\partial\varphi.
+\Omega=i\,\partial\bar\partial\digamma_{\mathrm{map}}.
 $$
-Conversely, every Kähler potential of the flat form differs from $\varphi$ by a pluriharmonic function.</p>
-<p><em>Proof.</em> The mixed second derivatives of $\varphi$ are $\partial^2\varphi/\partial Q_{\blacktriangle}\partial\overline{Q}_{\blacktriangle}=\partial^2\varphi/\partial Q_{\blacktriangledown}\partial\overline{Q}_{\blacktriangledown}=\frac12$ and the mixed ones vanish, so $i\partial\bar\partial\varphi=\frac{i}{2}(dQ_{\blacktriangle}\wedge d\overline{Q}_{\blacktriangle}+dQ_{\blacktriangledown}\wedge d\overline{Q}_{\blacktriangledown})=\Omega$. If $\varphi'$ is another potential, then $\partial\bar\partial(\varphi'-\varphi)=0$, so $\varphi'-\varphi$ is pluriharmonic.</p>
+Conversely, every Kähler potential of the flat form differs from $\digamma_{\mathrm{map}}$ by a pluriharmonic function.</p>
+<p><em>Proof.</em> The mixed second derivatives of $\digamma_{\mathrm{map}}$ are $\partial^2\digamma_{\mathrm{map}}/\partial Q_{\blacktriangle}\partial\overline{Q}_{\blacktriangle}=\partial^2\digamma_{\mathrm{map}}/\partial Q_{\blacktriangledown}\partial\overline{Q}_{\blacktriangledown}=\frac12$ and the mixed ones vanish, so $i\partial\bar\partial\digamma_{\mathrm{map}}=\frac{i}{2}(dQ_{\blacktriangle}\wedge d\overline{Q}_{\blacktriangle}+dQ_{\blacktriangledown}\wedge d\overline{Q}_{\blacktriangledown})=\Omega$. If $\digamma_{\mathrm{map}}'$ is another potential, then $\partial\bar\partial(\digamma_{\mathrm{map}}'-\digamma_{\mathrm{map}})=0$, so $\digamma_{\mathrm{map}}'-\digamma_{\mathrm{map}}$ is pluriharmonic.</p>
 <p><strong>Proposition (the metric as a Hessian).</strong> In the real coordinates, the metric is the Hessian of $\frac12\lVert Q\rVert^2$, and the Kähler form is the associated $(1,1)$-form. The form $\Omega$ is parallel for the Levi-Civita connection, and the pair $(g,\Omega)$ is a Kähler structure.</p>
 <p><em>Proof.</em> The Hessian of a quadratic form is the constant form itself; the association is the one of the previous proposition.</p>
 <p><strong>Remark (the canonical bundle).</strong> The holomorphic volume form
@@ -210,8 +210,8 @@ is parallel and nowhere vanishing, so the canonical bundle of $\mathbb{C}^2$ is 
 <td>the complex bilinear form</td>
 </tr>
 <tr>
-<td>$\varphi=\frac12\lVert Q\rVert^2$</td>
-<td>the Kähler potential, $\Omega=i\partial\bar\partial\varphi$</td>
+<td>$\digamma_{\mathrm{map}}=\frac12\lVert Q\rVert^2$</td>
+<td>the Kähler potential, $\Omega=i\partial\bar\partial\digamma_{\mathrm{map}}$</td>
 </tr>
 <tr>
 <td>$\omega=dQ_{\blacktriangle}\wedge dQ_{\blacktriangledown}$</td>

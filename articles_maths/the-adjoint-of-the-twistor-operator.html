@@ -83,17 +83,17 @@ $$</p>
 <h2 id="the-formal-adjoint">The Formal Adjoint</h2>
 <p><strong>Definition.</strong> The <strong>formal adjoint</strong> $\mathcal{T}^*$ of the twistor operator is the differential operator $\Gamma(T^*M\otimes\mathcal{S})\to\Gamma(\mathcal{S})$ with</p>
 <p>$$
-\int_M h(\mathcal{T}\sigma,\psi)\,\mu_g = \int_M h(\sigma,\mathcal{T}^{*}\psi)\,\mu_g
+\int_M h(\mathcal{T}\sigma,Ξ_{\mathrm{wfn}})\,\mu_g = \int_M h(\sigma,\mathcal{T}^{*}Ξ_{\mathrm{wfn}})\,\mu_g
 $$</p>
 <p>for all compactly supported smooth sections, $h$ extended to the twisted bundle by the metric on the cotangent factor.</p>
 <p><strong>Theorem.</strong> $\mathcal{T}^{*}=\nabla^{*}\circ\pi$, where $\pi=\mathrm{id}-\frac1nc^*c$ is the $h$-orthogonal projection onto $\ker c$ and $\nabla^*$ is the adjoint of the covariant derivative; the principal symbol of $\mathcal{T}^*$ is the adjoint Clifford contraction, and $\mathcal{T}$ and $\mathcal{T}^*$ are elliptic of order one.</p>
 <p><strong>Proof.</strong> The adjoint of a composite is the composite of the adjoints in the reverse order, so $\mathcal{T}^*=(\pi\nabla)^*=\nabla^*\pi^*$, and $\pi$ is an orthogonal projection for the pointwise form, hence $\pi^*=\pi$. The symbol statements are the symbol of the contraction and of its adjoint, and the ellipticity is the invertibility of the symbol of $\mathcal{T}$ on the trace-free part, which is the content of the symbol computation of <em>The Twistor Operator</em>.</p>
-<p><strong>Proposition (the components).</strong> Writing a twisted section as $\psi=\sum_i\theta_i\otimes\psi_i$ with $\psi_i\in\Gamma(\mathcal{S})$, the projection acts by</p>
+<p><strong>Proposition (the components).</strong> Writing a twisted section as $Ξ_{\mathrm{wfn}}=\sum_i\theta_i\otimesΞ_{\mathrm{wfn},i}$ with $Ξ_{\mathrm{wfn},i}\in\Gamma(\mathcal{S})$, the projection acts by</p>
 <p>$$
-\pi\psi = \sum_i\theta_i\otimes\Bigl(\psi_i+\tfrac1n c(e_i)(c\psi)\Bigr) , \qquad c\psi=\sum_j c(e_j)\psi_j ,
+\piΞ_{\mathrm{wfn}} = \sum_i\theta_i\otimes\Bigl(Ξ_{\mathrm{wfn},i}+\tfrac1n c(e_i)(cΞ_{\mathrm{wfn}})\Bigr) , \qquad cΞ_{\mathrm{wfn}}=\sum_j c(e_j)Ξ_{\mathrm{wfn},j} ,
 $$</p>
-<p>and the adjoint is $\mathcal{T}^{*}\psi=-\sum_i\nabla_i\bigl(\psi_i+\tfrac1nc(e_i)(c\psi)\bigr)$ up to the lower-order terms of $\nabla^*$; in particular $\mathcal{T}^*\psi$ depends on $\psi$ through its trace-free part and the divergence of its components.</p>
-<p><strong>Proof.</strong> The formula for $\pi$ is the definition $\pi\psi=\psi-\frac1nc^*c\psi$ with the adjoint contraction $c^*\sigma=-\sum_i\theta_i\otimes c(e_i)\sigma$ of <em>The Adjoint of the Clifford Multiplication</em>; the divergence is the leading part of $\nabla^*$, which is $-\sum_i\nabla_i$ on the components plus the curvature terms recorded in <em>The Codifferential on a Spinor Bundle</em>.</p>
+<p>and the adjoint is $\mathcal{T}^{*}Ξ_{\mathrm{wfn}}=-\sum_i\nabla_i\bigl(Ξ_{\mathrm{wfn},i}+\tfrac1nc(e_i)(cΞ_{\mathrm{wfn}})\bigr)$ up to the lower-order terms of $\nabla^*$; in particular $\mathcal{T}^*Ξ_{\mathrm{wfn}}$ depends on $Ξ_{\mathrm{wfn}}$ through its trace-free part and the divergence of its components.</p>
+<p><strong>Proof.</strong> The formula for $\pi$ is the definition $\piΞ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn}}-\frac1nc^*cΞ_{\mathrm{wfn}}$ with the adjoint contraction $c^*\sigma=-\sum_i\theta_i\otimes c(e_i)\sigma$ of <em>The Adjoint of the Clifford Multiplication</em>; the divergence is the leading part of $\nabla^*$, which is $-\sum_i\nabla_i$ on the components plus the curvature terms recorded in <em>The Codifferential on a Spinor Bundle</em>.</p>
 <p><strong>Remark (the pairing as the twistor form).</strong> The $L^2$ pairing of the definition is the integrated form of the pointwise Hermitian form of <em>Hermitian Clifford Structures</em>; the anti-linearity in the second argument and the reality of $\nabla$ make the pairing conjugate-symmetric, which is the <strong>conjugate symmetry</strong> of <em>Involutions of the Twistor Operator</em> read at the level of the adjoint.</p>
 <h2 id="the-decomposition-of-the-connection-laplacian">The Decomposition of the Connection Laplacian</h2>
 <p><strong>Theorem (the orthogonal decomposition).</strong> The connection Laplacian decomposes as</p>

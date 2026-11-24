@@ -96,7 +96,7 @@
 <h2 id="the-spinor-as-a-column">The Spinor as a Column</h2>
 <p><strong>Definition.</strong> A <strong>spinor</strong> of the algebra is a column
 $$
-\psi=\begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}\in\mathbb{C}^2,
+Ξ_{\mathrm{wfn}}=\begin{pmatrix}Ξ_{\mathrm{wfn},1}\\ Ξ_{\mathrm{wfn},2}\end{pmatrix}\in\mathbb{C}^2,
 $$
 with the action of $\tilde q=z_0+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$ given by the left multiplication of its matrix.</p>
 <p><strong>Proposition (the two coordinates).</strong> The two entries of the column are the coordinates of the spinor in the two real vectors $e_1,e_2$ of the model, the action of the algebra is complex-linear and faithful, and it is irreducible.</p>
@@ -105,11 +105,11 @@ with the action of $\tilde q=z_0+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$ given by t
 <h2 id="the-reality-condition">The Reality Condition</h2>
 <p><strong>Theorem (the quaternionic structure).</strong> The column space carries the anti-linear map
 $$
-j(\psi)=J\bar\psi,\qquad J=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix},
+j(Ξ_{\mathrm{wfn}})=J\barΞ_{\mathrm{wfn}},\qquad J=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix},
 $$
-which satisfies $j^2=-\mathrm{id}$ and commutes with the action of $\mathbb{H}$: $j(\tilde q\psi)=\tilde q\,j(\psi)$.</p>
-<p><em>Proof.</em> The matrix $J$ is real, so $j^2(\psi)=J\overline{J\bar\psi}=J^2\psi=-\psi$; and for the matrix $X$ of a quaternion the identity $J\bar X=XJ$ holds on the four basis matrices, so $j(X\psi)=J\bar X\bar\psi=XJ\bar\psi=Xj(\psi)$. Verified on the basis.</p>
-<p><strong>Corollary (there is no real spinor).</strong> The fixed points of $j$ are zero: an anti-linear map of square $-1$ has no non-zero fixed vector, since $j\psi=\psi$ gives $-\psi=j^2\psi=\psi$. So the spinor of the algebra is quaternionic and has no real part in the sense of a fixed subspace.</p>
+which satisfies $j^2=-\mathrm{id}$ and commutes with the action of $\mathbb{H}$: $j(\tilde qΞ_{\mathrm{wfn}})=\tilde q\,j(Ξ_{\mathrm{wfn}})$.</p>
+<p><em>Proof.</em> The matrix $J$ is real, so $j^2(Ξ_{\mathrm{wfn}})=J\overline{J\barΞ_{\mathrm{wfn}}}=J^2Ξ_{\mathrm{wfn}}=-Ξ_{\mathrm{wfn}}$; and for the matrix $X$ of a quaternion the identity $J\bar X=XJ$ holds on the four basis matrices, so $j(XΞ_{\mathrm{wfn}})=J\bar X\barΞ_{\mathrm{wfn}}=XJ\barΞ_{\mathrm{wfn}}=Xj(Ξ_{\mathrm{wfn}})$. Verified on the basis.</p>
+<p><strong>Corollary (there is no real spinor).</strong> The fixed points of $j$ are zero: an anti-linear map of square $-1$ has no non-zero fixed vector, since $jΞ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn}}$ gives $-Ξ_{\mathrm{wfn}}=j^2Ξ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn}}$. So the spinor of the algebra is quaternionic and has no real part in the sense of a fixed subspace.</p>
 <p><em>Proof.</em> The computation of the square and the definition of a fixed point. Verified on the basis.</p>
 <p><strong>Remark (the reality condition of the two algebras).</strong> The reality condition that cuts $\mathbb{H}$ inside the biquaternion block is an anti-linear involution of square $+1$, whose fixed set is the algebra; on the module the corresponding structure has square $-1$, so it cuts nothing. <strong>The real form of the algebra is a real structure on the coefficients, and the real structure it induces on the spinors is symplectic: the spinor space of the algebra is a quaternionic line, not a real plane.</strong></p>
 <h2 id="the-two-carriers-of-the-biquaternion-block">The Two Carriers of the Biquaternion Block</h2>
@@ -136,7 +136,7 @@ which satisfies $j^2=-\mathrm{id}$ and commutes with the action of $\mathbb{H}$:
 <p>A carrier is a minimal left ideal, hence a simple submodule of the regular module, and it exists exactly when the algebra has a non-trivial idempotent.</p>
 <p>$\mathbb{H}$ has none: its only left ideals are $0$ and the algebra, the regular module is simple, and the only carrier is the algebra itself, which has no proper part.</p>
 <p>The chirality projector $\tfrac12(e_t+\vec u)$ of the complexified block is invertible over $\mathbb{R}$, of norm $\tfrac12$, so it is an automorphism of the module and cuts nothing.</p>
-<p>The matrix model lends the algebra the carrier $\mathbb{C}^2$, a minimal left ideal of $M_2(\mathbb{C})$ and a simple module of real dimension four, which is the regular module; the spinor is a column and the quaternionic structure $j(\psi)=J\bar\psi$ satisfies $j^2=-1$ and commutes with the action up to the conjugation.</p>
+<p>The matrix model lends the algebra the carrier $\mathbb{C}^2$, a minimal left ideal of $M_2(\mathbb{C})$ and a simple module of real dimension four, which is the regular module; the spinor is a column and the quaternionic structure $j(Ξ_{\mathrm{wfn}})=J\barΞ_{\mathrm{wfn}}$ satisfies $j^2=-1$ and commutes with the action up to the conjugation.</p>
 <p>The two carriers $S_\pm(\vec u)$ of the biquaternion block are the two coordinate lines; the quaternionic structure exchanges them, no single one descends, and their sum is the quaternionic line that survives.</p>
 <p>The Weyl reading fails because the chirality projector is invertible, and the Majorana reading fails because the anti-linear structure of the module is symplectic; the quaternionic column is the analogue of a conjugate pair of Weyl spinors.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -165,7 +165,7 @@ which satisfies $j^2=-\mathrm{id}$ and commutes with the action of $\mathbb{H}$:
 <td>the column carrier of the matrix model</td>
 </tr>
 <tr>
-<td>$j(\psi)=J\bar\psi$</td>
+<td>$j(Ξ_{\mathrm{wfn}})=J\barΞ_{\mathrm{wfn}}$</td>
 <td>the quaternionic structure, $j^2=-1$</td>
 </tr>
 <tr>

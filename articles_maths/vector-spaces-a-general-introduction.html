@@ -127,19 +127,19 @@ $$</p>
 <h2 id="module-homomorphisms">Module Homomorphisms</h2>
 <p>Let $M$ and $N$ be $R$-modules. An <strong>$R$-module homomorphism</strong> is a function</p>
 <p>$$
-\varphi : M \to N
+\digamma_{\mathrm{map}} : M \to N
 $$</p>
 <p>such that for all $r \in R$ and $m, n \in M$:</p>
-<p><strong>(H1)</strong> $\varphi(m + n) = \varphi(m) + \varphi(n)$.</p>
-<p><strong>(H2)</strong> $\varphi(r m) = r \varphi(m)$.</p>
+<p><strong>(H1)</strong> $\digamma_{\mathrm{map}}(m + n) = \digamma_{\mathrm{map}}(m) + \digamma_{\mathrm{tot}}(n)$.</p>
+<p><strong>(H2)</strong> $\digamma_{\mathrm{map}}(r m) = r \digamma_{\mathrm{map}}(m)$.</p>
 <p>An $R$-module homomorphism that is bijective is an <strong>$R$-module isomorphism</strong>. If there is an $R$-module isomorphism $M \to N$, we write $M \cong N$ and say that $M$ and $N$ are <strong>isomorphic</strong>.</p>
-<p>The <strong>kernel</strong> of an $R$-module homomorphism $\varphi : M \to N$ is</p>
+<p>The <strong>kernel</strong> of an $R$-module homomorphism $\digamma_{\mathrm{map}} : M \to N$ is</p>
 <p>$$
-\ker \varphi = \{m \in M : \varphi(m) = 0\}.
+\ker \digamma_{\mathrm{map}} = \{m \in M : \digamma_{\mathrm{map}}(m) = 0\}.
 $$</p>
-<p>The <strong>image</strong> of $\varphi$ is</p>
+<p>The <strong>image</strong> of $\digamma_{\mathrm{map}}$ is</p>
 <p>$$
-\operatorname{im} \varphi = \{\varphi(m) : m \in M\}.
+\operatorname{im} \digamma_{\mathrm{map}} = \{\digamma_{\mathrm{map}}(m) : m \in M\}.
 $$</p>
 <p>The kernel is a submodule of $M$, and the image is a submodule of $N$.</p>
 <h2 id="quotient-modules">Quotient Modules</h2>
@@ -152,9 +152,9 @@ $$</p>
 (m + N) + (n + N) = (m + n) + N, \qquad r(m + N) = r m + N.
 $$</p>
 <p>These operations are well-defined, and $M/N$ is an $R$-module.</p>
-<p>The <strong>first isomorphism theorem</strong> states that if $\varphi : M \to N$ is an $R$-module homomorphism, then</p>
+<p>The <strong>first isomorphism theorem</strong> states that if $\digamma_{\mathrm{map}} : M \to N$ is an $R$-module homomorphism, then</p>
 <p>$$
-\boxed{\;M / \ker \varphi \cong \operatorname{im} \varphi\;}.
+\boxed{\;M / \ker \digamma_{\mathrm{map}} \cong \operatorname{im} \digamma_{\mathrm{map}}\;}.
 $$</p>
 <hr />
 <h1 id="part-iii-free-modules-and-bases">Part III: Free Modules and Bases</h1>

@@ -103,12 +103,12 @@ $$</p>
 d(a+b) = da + db, \qquad d(ab) = a\,db + b\,da, \qquad dr = 0 \ (r \in R) .
 $$</p>
 <p>The map $d : A \to \Omega_{A/R}$, $a \mapsto da$, is the <strong>universal derivation</strong>.</p>
-<p><strong>Theorem (universal property).</strong> For every $A$-module $M$ and every derivation $\delta : A \to M$ there is a unique $A$-linear map $\varphi : \Omega_{A/R} \to M$ with $\delta = \varphi \circ d$. Hence</p>
+<p><strong>Theorem (universal property).</strong> For every $A$-module $M$ and every derivation $\delta : A \to M$ there is a unique $A$-linear map $\digamma_{\mathrm{map}} : \Omega_{A/R} \to M$ with $\delta = \digamma_{\mathrm{map}} \circ d$. Hence</p>
 <p>$$
 \boxed{\;\operatorname{Der}_R(A, M) \cong \operatorname{Hom}_A(\Omega_{A/R}, M)\;}
 $$</p>
 <p>naturally in $M$, and in particular $\operatorname{Der}_R(A) \cong \operatorname{Hom}_A(\Omega_{A/R}, A)$.</p>
-<p><em>Proof.</em> Uniqueness: $\Omega_{A/R}$ is generated as an $A$-module by the $da$, so $\varphi$ is determined by its values $\varphi(da) = \delta(a)$. Existence: the assignment $da \mapsto \delta(a)$ respects the three relations, because $\delta$ is additive, satisfies the Leibniz rule and vanishes on $R$ by $R$-linearity and $\delta(1) = \delta(1\cdot1) = 2\delta(1)$. Hence it extends to an $A$-linear map, which by construction satisfies $\varphi\circ d = \delta$. Naturality in $M$ is the compatibility of the correspondence with $A$-linear maps $M \to M'$.</p>
+<p><em>Proof.</em> Uniqueness: $\Omega_{A/R}$ is generated as an $A$-module by the $da$, so $\digamma_{\mathrm{map}}$ is determined by its values $\digamma_{\mathrm{map}}(da) = \delta(a)$. Existence: the assignment $da \mapsto \delta(a)$ respects the three relations, because $\delta$ is additive, satisfies the Leibniz rule and vanishes on $R$ by $R$-linearity and $\delta(1) = \delta(1\cdot1) = 2\delta(1)$. Hence it extends to an $A$-linear map, which by construction satisfies $\digamma_{\mathrm{map}}\circ d = \delta$. Naturality in $M$ is the compatibility of the correspondence with $A$-linear maps $M \to M'$.</p>
 <p>The theorem is the exact sense in which the derivations of $A$ form the dual of a module: <strong>every derivation factors uniquely through the universal one</strong>, and the derivation space is the dual of $\Omega_{A/R}$.</p>
 <h3 id="construction-as-the-conormal-module">Construction as the Conormal Module</h3>
 <p>The relations of the definition are abstract; the module they present is realised concretely by the diagonal.</p>

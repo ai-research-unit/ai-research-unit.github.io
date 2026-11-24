@@ -155,16 +155,16 @@ $$</p>
 <p><strong>Corollary (Gelfand–Raĭkov).</strong> A locally compact abelian group is determined up to topological isomorphism by its convolution algebra $L^1(G)$, and the group can be recovered as the Gelfand spectrum of $L^1(G)$. Consequently the characters separate the points of $G$.</p>
 <p><strong>Remark (the $C^*$-completion).</strong> The involution $f^*(x) = \overline{f(-x)}$ makes $L^1(G)$ a Banach $*$-algebra, and the transform is a $*$-homomorphism into $C_0(G^\vee)$ with $\widehat{f^*}(\chi) = \overline{(\mathcal F f)(\chi)}$. The completion of $L^1(G)$ in the norm $\|f\|_{C^*} = \sup\{\|\mathcal F f\|_\infty\}$ is the <strong>group $\mathrm{C}^*$-algebra</strong> $C^*(G)$, and the Gelfand–Naimark theorem gives $C^*(G) \cong C_0(G^\vee)$ for abelian $G$; the transform is that isomorphism. This is the commutative case of the operator-algebraic picture, and the non-abelian replacement is treated andwith the operator algebras themselves in <em>Operator Algebras</em>.</p>
 <h3 id="positive-definite-functions-and-bochners-theorem">Positive-Definite Functions and Bochner's Theorem</h3>
-<p><strong>Definition.</strong> A function $\varphi : G \to \mathbb{C}$ is <strong>of positive type</strong> (or positive definite) if for every finite family $x_1, \dots, x_n \in G$ and $c_1, \dots, c_n \in \mathbb{C}$,</p>
+<p><strong>Definition.</strong> A function $\digamma_{\mathrm{map}} : G \to \mathbb{C}$ is <strong>of positive type</strong> (or positive definite) if for every finite family $x_1, \dots, x_n \in G$ and $c_1, \dots, c_n \in \mathbb{C}$,</p>
 <p>$$
-\sum_{i,j=1}^n c_i\,\overline{c_j}\,\varphi(x_j - x_i) \geq 0 .
+\sum_{i,j=1}^n c_i\,\overline{c_j}\,\digamma_{\mathrm{map}}(x_j - x_i) \geq 0 .
 $$</p>
-<p><strong>Theorem (Bochner).</strong> A continuous function $\varphi : G \to \mathbb{C}$ is of positive type if and only if it is the Fourier–Stieltjes transform of a finite positive measure $\mu$ on $G^\vee$,</p>
+<p><strong>Theorem (Bochner).</strong> A continuous function $\digamma_{\mathrm{map}} : G \to \mathbb{C}$ is of positive type if and only if it is the Fourier–Stieltjes transform of a finite positive measure $\mu$ on $G^\vee$,</p>
 <p>$$
-\varphi(x) = \int_{G^\vee} \chi(x)\,d\mu(\chi) .
+\digamma_{\mathrm{map}}(x) = \int_{G^\vee} \chi(x)\,d\mu(\chi) .
 $$</p>
-<p>The measure is unique, and $\varphi(0) = \mu(G^\vee) = \|\mu\|$.</p>
-<p><strong>Proof sketch.</strong> If $\varphi$ is of positive type, the sesquilinear form on $C_c(G)$ given by $\langle f, g\rangle_\varphi = \int\int f(x)\overline{g(y)}\varphi(y-x)\,dx\,dy$ is positive semidefinite; completing and factoring gives a Hilbert space $H_\varphi$ on which $G$ acts unitarily by translation, and the vector $\zeta = [\text{an approximate delta}]$ is cyclic. Since $G$ is abelian, the operators of translation commute and Fourier analysis of the commutative algebra they generate identifies the representation with a direct integral of characters; the spectral measure of $\zeta$ is the measure $\mu$, and evaluation at $\zeta$ gives the displayed formula. Conversely a Fourier–Stieltjes transform of a positive measure is of positive type because $\sum c_i\bar c_j\chi(x_j - x_i) = |\sum_i c_i\chi(x_i)|^2 \geq 0$ and integration preserves positivity. Uniqueness is the invertibility of the transform on measures. This is the standard Gelfand–Naimark–Segal construction; the version used here is in the references below.</p>
+<p>The measure is unique, and $\digamma_{\mathrm{map}}(0) = \mu(G^\vee) = \|\mu\|$.</p>
+<p><strong>Proof sketch.</strong> If $\digamma_{\mathrm{map}}$ is of positive type, the sesquilinear form on $C_c(G)$ given by $\langle f, g\rangle_\digamma_{\mathrm{map}} = \int\int f(x)\overline{g(y)}\digamma_{\mathrm{map}}(y-x)\,dx\,dy$ is positive semidefinite; completing and factoring gives a Hilbert space $H_\digamma_{\mathrm{map}}$ on which $G$ acts unitarily by translation, and the vector $\zeta = [\text{an approximate delta}]$ is cyclic. Since $G$ is abelian, the operators of translation commute and Fourier analysis of the commutative algebra they generate identifies the representation with a direct integral of characters; the spectral measure of $\zeta$ is the measure $\mu$, and evaluation at $\zeta$ gives the displayed formula. Conversely a Fourier–Stieltjes transform of a positive measure is of positive type because $\sum c_i\bar c_j\chi(x_j - x_i) = |\sum_i c_i\chi(x_i)|^2 \geq 0$ and integration preserves positivity. Uniqueness is the invertibility of the transform on measures. This is the standard Gelfand–Naimark–Segal construction; the version used here is in the references below.</p>
 <p><strong>Corollary (Herglotz and the Wiener–Khinchin theorem).</strong> On $\mathbb{Z}$ a positive-definite sequence is the sequence of Fourier coefficients of a positive measure on the circle; on $\mathbb{R}$ the autocorrelation $R(\tau) = \lim_{T\to\infty}\frac{1}{2T}\int_{-T}^T f(t+\tau)\overline{f(t)}\,dt$ of a stationary square-integrable process has a positive spectral measure, and the transform of that measure is $R$. The probabilistic reading of Bochner's theorem is the spectral theory of stationary processes.</p>
 <h2 id="the-standard-cases">The Standard Cases</h2>
 <h3 id="the-line-and-euclidean-space">The Line and Euclidean Space</h3>
@@ -315,7 +315,7 @@ $$</p>
 </tr>
 <tr>
 <td>positive type</td>
-<td>$\sum_{i,j}c_i\overline{c_j}\varphi(x_j - x_i) \geq 0$</td>
+<td>$\sum_{i,j}c_i\overline{c_j}\digamma_{\mathrm{map}}(x_j - x_i) \geq 0$</td>
 </tr>
 <tr>
 <td>$\mu$ on $G^\vee$</td>

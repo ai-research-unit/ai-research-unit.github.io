@@ -79,14 +79,14 @@
 <p>Nothing below is a statement of physics. The units are $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t$ the identity and $\vec e_k^2=-e_t$; $S$ is the minimal left ideal $V_{1/2}$ of the algebra, of complex dimension two; the module of the operators is $V_{3/2}=\operatorname{Sym}^3 S$; $\star$ is the star; $\langle S,T\rangle=\operatorname{tr}(S^{\star}T)$ is the trace form of the operator space; and $\operatorname{tr}$ is the trace of an operator on the four-dimensional algebra.</p>
 <h2 id="the-spinor-of-the-row">The Spinor of the Row</h2>
 <p><strong>Definition.</strong> A <strong>spinor</strong> of the row is an element of a minimal left ideal $I_\ell$ of $\operatorname{End}(\mathbb{B})$, the ideal of the operators with image in a fixed complex line $\ell$ of the module $V_{3/2}$. A <strong>weight basis</strong> of $I_\ell$ is a basis of four elements carried by the copy with the weights of the module.</p>
-<p><strong>Proposition.</strong> A spinor has four complex coordinates, and in a weight basis they are $\psi_{3/2},\psi_{1/2},\psi_{-1/2},\psi_{-3/2}$, of weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$. The four functionals that read them are a basis of the dual of the ideal.</p>
+<p><strong>Proposition.</strong> A spinor has four complex coordinates, and in a weight basis they are $Ξ_{\mathrm{wfn},3/2},Ξ_{\mathrm{wfn},1/2},Ξ_{\mathrm{wfn},-1/2},Ξ_{\mathrm{wfn},-3/2}$, of weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$. The four functionals that read them are a basis of the dual of the ideal.</p>
 <p><em>Proof.</em> The ideal is a copy of the module, of complex dimension four, and the module has a weight string of four distinct entries. A functional of weight $\mu$ is non-zero on the line of weight $m$ only when $m+\mu=0$, so the four functionals are dual to the four weight lines.</p>
 <p><strong>The reading.</strong> A spinor is a single object of four coordinates, and the four are the weights taken once each.</p>
 <h2 id="the-dirac-spinor-and-its-two-halves">The Dirac Spinor and Its Two Halves</h2>
 <p><strong>Definition.</strong> A <strong>Dirac spinor</strong> is an element of $I_\ell\oplus J_h$, where $I_\ell$ is a minimal left ideal and $J_h$ a minimal right ideal of the operator space.</p>
 <p><strong>Proposition.</strong> The sum $I_\ell+J_h$ is direct when the line $\ell$ and the hyperplane $h$ are paired so that $h$ is the annihilator of $\ell$; then a Dirac spinor has eight complex coordinates, four in each half.</p>
 <p><em>Proof.</em> The intersection $I_\ell\cap J_h$ is the set of operators with image in $\ell$ and kernel containing $h$, a single line. The sum has dimension $4+4-1=7$ when $\ell\subseteq h$; for $h=\ell^{\perp}$ the intersection is zero, since an operator with image $\ell$ vanishing on $\ell^{\perp}$ is a multiple of the projector onto $\ell$, and that projector does not vanish on $\ell$. Hence the sum is direct, of dimension eight.</p>
-<p><strong>Corollary.</strong> The Dirac spinor splits uniquely as a pair $(\psi,\chi)$, and the splitting is the pair of projections onto the two summands.</p>
+<p><strong>Corollary.</strong> The Dirac spinor splits uniquely as a pair $(Ξ_{\mathrm{wfn}},\chi)$, and the splitting is the pair of projections onto the two summands.</p>
 <p><em>Proof.</em> A direct sum gives unique coordinates; the two projections keep one summand and annihilate the other.</p>
 <p><strong>The reading.</strong> The doubling here is not the passage from a complex dimension to a real one. It is the addition of the other side of the algebra, and the two sides are the two chiralities.</p>
 <h2 id="the-chirality-operator">The Chirality Operator</h2>
@@ -109,9 +109,9 @@ $$</p>
 <p><em>Proof.</em> The chirality operator commutes with the copy, and the weight decomposition is the same in the two halves.</p>
 <p><strong>The reading.</strong> The diagonal shape says that the two halves are the same module. The conjugation of the algebra exchanges the sides, and it is the star, not the side, that reverses the weights.</p>
 <h2 id="the-invariants">The Invariants</h2>
-<p><strong>Definition.</strong> For a Dirac spinor $(\psi,\chi)$ put</p>
+<p><strong>Definition.</strong> For a Dirac spinor $(Ξ_{\mathrm{wfn}},\chi)$ put</p>
 <p>$$
-q_L(\psi)=\langle\psi,\psi\rangle,\qquad q_R(\chi)=\langle\chi,\chi\rangle,\qquad \beta(\psi,\chi)=\langle\psi,\chi\rangle,
+q_L(Ξ_{\mathrm{wfn}})=\langleΞ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}}\rangle,\qquad q_R(\chi)=\langle\chi,\chi\rangle,\qquad \beta(Ξ_{\mathrm{wfn}},\chi)=\langleΞ_{\mathrm{wfn}},\chi\rangle,
 $$</p>
 <p>the restrictions of the trace form to the halves and the pairing between them.</p>
 <p><strong>Proposition.</strong> $q_L$ is positive definite on the left ideal and $q_R$ on the right ideal; $\beta$ is complex bilinear and non-degenerate for the annihilator pairing; and the three are the only invariants the trace form produces.</p>

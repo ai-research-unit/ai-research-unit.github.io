@@ -76,8 +76,8 @@
 <p>$$
 \mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y) = h(x,y) + h(y,x)
 $$</p>
-<p>recovers from the diagonal the <strong>trace form</strong> $h(x,y) + \varsigma(h(x,y))$, and leaves the anti-Hermitian part of $h$ unseen; at the trivial base involution and with $2$ invertible the passage is a bijection, and in characteristic two the diagonal sees nothing at all. And the <strong>Hermitian square</strong> $x^{*}x$ of the algebra is the element whose functional image is the diagonal, $\mathfrak{Q}(x) = \varphi(x^{*}x)$, so that the quadratic form of the layer is carried by the involution of the algebra and not by the form alone.</p>
-<p>This is the counterpart, in the sesquilinear layer, of <em>Quadratic Forms and Polarisation</em>, whose identity and whose characteristic-two degeneracy are the same. The form is <em>Sesqualgebras with a Form</em>, the matrix and quaternion quadratics are <em>Quadratic Forms over Algebras and Norms</em>, the trace form is <em>Hermitian Algebras</em>, and the real form that the trace form defines is <em>Real Forms and the Signature</em>. Throughout, $(A,*,h)$ is a sesqualgebra with a form over a base $(R,\varsigma)$, $\varphi = h(\cdot, 1)$ is the functional of the form, and $R^{\varsigma}$ is the fixed ring.</p>
+<p>recovers from the diagonal the <strong>trace form</strong> $h(x,y) + \varsigma(h(x,y))$, and leaves the anti-Hermitian part of $h$ unseen; at the trivial base involution and with $2$ invertible the passage is a bijection, and in characteristic two the diagonal sees nothing at all. And the <strong>Hermitian square</strong> $x^{*}x$ of the algebra is the element whose functional image is the diagonal, $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x)$, so that the quadratic form of the layer is carried by the involution of the algebra and not by the form alone.</p>
+<p>This is the counterpart, in the sesquilinear layer, of <em>Quadratic Forms and Polarisation</em>, whose identity and whose characteristic-two degeneracy are the same. The form is <em>Sesqualgebras with a Form</em>, the matrix and quaternion quadratics are <em>Quadratic Forms over Algebras and Norms</em>, the trace form is <em>Hermitian Algebras</em>, and the real form that the trace form defines is <em>Real Forms and the Signature</em>. Throughout, $(A,*,h)$ is a sesqualgebra with a form over a base $(R,\varsigma)$, $\digamma_{\mathrm{map}} = h(\cdot, 1)$ is the functional of the form, and $R^{\varsigma}$ is the fixed ring.</p>
 <h2 id="the-diagonal">The Diagonal</h2>
 <p><strong>Definition.</strong> The <strong>diagonal</strong> of the form is the map</p>
 <p>$$
@@ -109,12 +109,12 @@ $$</p>
 <p>The diagonal of the layer is computed by the algebra, because the functional of the form is evaluated on the Hermitian square.</p>
 <p><strong>Proposition.</strong> The diagonal is the functional image of the <strong>Hermitian square</strong>:</p>
 <p>$$
-\boxed{\;\mathfrak{Q}(x) = \varphi(x^{*}x), \qquad \varphi = h(\cdot, 1)\;},
+\boxed{\;\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x), \qquad \digamma_{\mathrm{map}} = h(\cdot, 1)\;},
 $$</p>
 <p>and $x^{*}x$ is self-adjoint, $(x^{*}x)^{*} = x^{*}x$.</p>
-<p><strong>Proof.</strong> $\varphi(x^{*}x) = h(x^{*}x, 1) = h(x, x^{*}1) = h(x,x)$, by the compatibility $h(ab,c) = h(b,a^{*}c)$ read at $(a,b,c) = (x^{*},x,1)$ and by $1^{*} = 1$. Self-adjointness is the involution axiom, $(x^{*}x)^{*} = x^{*}x^{**} = x^{*}x$.</p>
-<p><strong>Corollary.</strong> The <strong>quadratic form of the algebra</strong> $\mathfrak{Q}(x) = \varphi(x^{*}x)$ satisfies $\mathfrak{Q}(x) = h(x,x)$, and its polarisation is the trace form, $\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y) = h_{\mathrm{tr}}(x,y)$.</p>
-<p>The two products $x^{*}x$ and $xx^{*}$ are the two Hermitian squares of the element, exchanged by the involution. The second gives the same diagonal for a <strong>cyclic</strong> functional, in particular for the trace form $\varphi = \tau$, where $\varphi(xx^{*}) = \varphi(x^{*}x)$ and the diagonal is also the functional image of $xx^{*}$; for a non-cyclic functional the two differ, and it is $x^{*}x$ that the diagonal reads. The square is the <strong>norm map</strong> of the layer; it is quadratic over $R^{\varsigma}$ in the sense $(\lambda x)^{*}(\lambda x) = \varsigma(\lambda)\lambda\,x^{*}x = |\lambda|^{2}x^{*}x$, and it is multiplicative for the elements of the unitary slice, $(xy)^{*}(xy) = y^{*}(x^{*}x)y$. When the norm map is multiplicative on the whole algebra the form is that of a composition algebra, and the norm form of the quaternion and octonion algebras is the classical instance: the polarisation of the norm is the trace form, and the whole theory is <em>Hermitian Forms over Algebras and Norms</em>.</p>
+<p><strong>Proof.</strong> $\digamma_{\mathrm{map}}(x^{*}x) = h(x^{*}x, 1) = h(x, x^{*}1) = h(x,x)$, by the compatibility $h(ab,c) = h(b,a^{*}c)$ read at $(a,b,c) = (x^{*},x,1)$ and by $1^{*} = 1$. Self-adjointness is the involution axiom, $(x^{*}x)^{*} = x^{*}x^{**} = x^{*}x$.</p>
+<p><strong>Corollary.</strong> The <strong>quadratic form of the algebra</strong> $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x)$ satisfies $\mathfrak{Q}(x) = h(x,x)$, and its polarisation is the trace form, $\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y) = h_{\mathrm{tr}}(x,y)$.</p>
+<p>The two products $x^{*}x$ and $xx^{*}$ are the two Hermitian squares of the element, exchanged by the involution. The second gives the same diagonal for a <strong>cyclic</strong> functional, in particular for the trace form $\digamma_{\mathrm{map}} = \tau$, where $\digamma_{\mathrm{map}}(xx^{*}) = \digamma_{\mathrm{map}}(x^{*}x)$ and the diagonal is also the functional image of $xx^{*}$; for a non-cyclic functional the two differ, and it is $x^{*}x$ that the diagonal reads. The square is the <strong>norm map</strong> of the layer; it is quadratic over $R^{\varsigma}$ in the sense $(\lambda x)^{*}(\lambda x) = \varsigma(\lambda)\lambda\,x^{*}x = |\lambda|^{2}x^{*}x$, and it is multiplicative for the elements of the unitary slice, $(xy)^{*}(xy) = y^{*}(x^{*}x)y$. When the norm map is multiplicative on the whole algebra the form is that of a composition algebra, and the norm form of the quaternion and octonion algebras is the classical instance: the polarisation of the norm is the trace form, and the whole theory is <em>Hermitian Forms over Algebras and Norms</em>.</p>
 <h2 id="the-failure-when-2-is-not-invertible">The Failure When 2 Is Not Invertible</h2>
 <p><strong>Proposition.</strong> In characteristic two with $\varsigma = \mathrm{id}$ the polarisation identity degenerates: $\mathfrak{Q}(x+y) = \mathfrak{Q}(x) + \mathfrak{Q}(y)$, the trace form vanishes, and the diagonal determines no part of the form at all.</p>
 <p><strong>Proof.</strong> With $\varsigma = \mathrm{id}$ the form is symmetric, $h_{\mathrm{tr}} = 2h = 0$, and the polarisation identity reduces to additivity of $q$. A symmetric bilinear form and its diagonal are then unrelated data: an alternating form has a vanishing diagonal and is not zero, and distinct symmetric forms share the diagonal.</p>
@@ -136,7 +136,7 @@ $$</p>
 <li>The <strong>polarisation identity</strong> reads $\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y) = h_{\mathrm{tr}}(x,y)$, the trace form.</li>
 <li>The trace form is symmetric and $R^{\varsigma}$-bilinear, the anti-Hermitian part $h_{\mathrm{sk}}$ is alternating, and $h = \tfrac{1}{2}h_{\mathrm{tr}} + \tfrac{1}{2}h_{\mathrm{sk}}$ when $2$ is invertible: the diagonal recovers the trace form and never the antisymmetric part.</li>
 <li>Over $\mathbb{C}$ the decomposition is $\operatorname{Re}h + \mathrm{i}\operatorname{Im}h$, a real symmetric form and a real alternating form.</li>
-<li>The diagonal is the functional image of the <strong>Hermitian square</strong>, $\mathfrak{Q}(x) = \varphi(x^{*}x)$, and the quadratic form $\mathfrak{Q}(x) = \varphi(x^{*}x)$ has the trace form for its polarisation; for a cyclic functional the square $xx^{*}$ gives the same diagonal.</li>
+<li>The diagonal is the functional image of the <strong>Hermitian square</strong>, $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x)$, and the quadratic form $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x)$ has the trace form for its polarisation; for a cyclic functional the square $xx^{*}$ gives the same diagonal.</li>
 <li>In characteristic two with the trivial involution the polarisation degenerates, the diagonal determines nothing, and a quadratic refinement is extra structure.</li>
 <li>The classical bilinear original is <em>Quadratic Forms and Polarisation</em>; the norm forms of the algebras are <em>Hermitian Forms over Algebras and Norms</em>.</li>
 </ul>
@@ -166,7 +166,7 @@ $$</p>
 <td>the involution $h^{\dagger}(x,y) = \varsigma(h(y,x))$ on the forms</td>
 </tr>
 <tr>
-<td>$\varphi$</td>
+<td>$\digamma_{\mathrm{map}}$</td>
 <td>the functional $h(\cdot,1)$</td>
 </tr>
 <tr>
@@ -174,7 +174,7 @@ $$</p>
 <td>the Hermitian square of $x$</td>
 </tr>
 <tr>
-<td>$\mathfrak{Q}(x) = \varphi(xx^{*})$</td>
+<td>$\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(xx^{*})$</td>
 <td>the quadratic form of the algebra</td>
 </tr>
 <tr>

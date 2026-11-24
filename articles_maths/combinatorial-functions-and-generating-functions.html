@@ -73,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This is the fourth article of the Natural Numbers system in Part V, and it occupies the <strong>special-functions slot</strong> of that system. The natural numbers carry one slot of functions, and it is this one: the arithmetic and combinatorial functions $\mathbb{N} \to R$ — the factorials, binomial coefficients, Stirling and Bell numbers, Catalan numbers, partition numbers, the divisor and Möbius functions — together with the generating functions that encode them. The system $\mathbb{N}$ has no geometry, no analysis and no harmonic analysis, and its functions are correspondingly discrete: they are sequences, and the theory of their generating functions is the algebraic theory of formal power series and of Dirichlet series.</p>
 <p>The corpus's default base is the commutative ring $R$ with identity $1 \neq 0$, and this article uses that base throughout: generating functions are elements of the formal power series ring $R[[x]]$, and the arithmetic functions take values in $R$. Two places require more than a commutative ring, and they are flagged where they occur: the reciprocal $(1 - x)^{-1}$ and the composition of formal power series require conditions on the constant terms, and the formal logarithm and exponential require that $R$ be a $\mathbb{Q}$-algebra, that is, that every positive integer be invertible. Coefficient extraction, the Cauchy product and Lagrange inversion need no such hypothesis.</p>
-<p>The general theory of rings and ideals is from <em>Rings</em>, and the theory of the formal power series ring is from <em>Formal Power Series and Completion</em>; the recursive definitions of the functions are from <em>The Natural Numbers</em>, and the arithmetic functions and their Dirichlet series are from <em>Analytic Number Theory</em>. The asymptotic estimates at the end of the article are real-valued statements about functions on $\mathbb{N}$, and they belong to the analytic side of the corpus; they are quoted from the standard literature and are marked as such. Throughout, a sequence $(a_n)_{n \geq 0}$ in $R$ has <strong>ordinary generating function</strong> $A(x) = \sum_{n \geq 0} a_n x^n$ and <strong>exponential generating function</strong> $\hat A(x) = \sum_{n \geq 0} a_n x^n / n!$, the latter requiring that $R$ be a $\mathbb{Q}$-algebra; $\mu$ is the Möbius function, $\varphi$ the Euler function, $\zeta$ the Riemann zeta function and $[x^n] A(x)$ the coefficient of $x^n$.</p>
+<p>The general theory of rings and ideals is from <em>Rings</em>, and the theory of the formal power series ring is from <em>Formal Power Series and Completion</em>; the recursive definitions of the functions are from <em>The Natural Numbers</em>, and the arithmetic functions and their Dirichlet series are from <em>Analytic Number Theory</em>. The asymptotic estimates at the end of the article are real-valued statements about functions on $\mathbb{N}$, and they belong to the analytic side of the corpus; they are quoted from the standard literature and are marked as such. Throughout, a sequence $(a_n)_{n \geq 0}$ in $R$ has <strong>ordinary generating function</strong> $A(x) = \sum_{n \geq 0} a_n x^n$ and <strong>exponential generating function</strong> $\hat A(x) = \sum_{n \geq 0} a_n x^n / n!$, the latter requiring that $R$ be a $\mathbb{Q}$-algebra; $\mu$ is the Möbius function, $\digamma_{\mathrm{map}}$ the Euler function, $\zeta$ the Riemann zeta function and $[x^n] A(x)$ the coefficient of $x^n$.</p>
 <h2 id="generating-functions">Generating Functions</h2>
 <h3 id="formal-power-series">Formal Power Series</h3>
 <p><strong>Definition.</strong> Let $R$ be a commutative ring with identity. The <strong>ring of formal power series</strong> $R[[x]]$ is the set of all sequences $(a_n)_{n \geq 0}$ in $R$, written $\sum_{n\geq 0} a_n x^n$, with</p>
@@ -138,13 +138,13 @@ C(x) = \frac{1 - \sqrt{1 - 4x}}{2x}, \qquad C_n = \frac{1}{n+1}\binom{2n}{n}.
 $$</p>
 <p><strong>Proof.</strong> The recurrence is the standard decomposition of a Catalan object into two smaller ones, and it translates into $C = 1 + xC^2$ by the convolution dictionary; solving the quadratic over $\mathbb{Q}[[x]]$ and choosing the branch with constant term $1$ gives the closed form. The coefficient formula follows by the binomial expansion of $\sqrt{1-4x}$; the computation is standard.</p>
 <h3 id="partitions-and-the-pentagonal-theorem">Partitions and the Pentagonal Theorem</h3>
-<p><strong>Definition.</strong> The <strong>partition function</strong> $p(n)$ counts the partitions of $n$ into positive parts, and <strong>Euler's product</strong> is $\phi(x) = \prod_{k \geq 1}(1 - x^k)$.</p>
+<p><strong>Definition.</strong> The <strong>partition function</strong> $p(n)$ counts the partitions of $n$ into positive parts, and <strong>Euler's product</strong> is $\digamma_{\mathrm{map}}(x) = \prod_{k \geq 1}(1 - x^k)$.</p>
 <p><strong>Theorem (Euler).</strong> The generating function of $p(n)$ is</p>
 <p>$$
-\sum_{n \geq 0} p(n) x^n = \prod_{k \geq 1} \frac{1}{1 - x^k} = \frac{1}{\phi(x)},
+\sum_{n \geq 0} p(n) x^n = \prod_{k \geq 1} \frac{1}{1 - x^k} = \frac{1}{\digamma_{\mathrm{map}}(x)},
 $$</p>
 <p>and Euler's pentagonal number theorem states</p>
-<p>$$ \boxed{\;\phi(x) = \prod_{k \geq 1}(1 - x^k) = \sum_{j \in \mathbb{Z}} (-1)^j x^{j(3j-1)/2} \;}.
+<p>$$ \boxed{\;\digamma_{\mathrm{map}}(x) = \prod_{k \geq 1}(1 - x^k) = \sum_{j \in \mathbb{Z}} (-1)^j x^{j(3j-1)/2} \;}.
 $$</p>
 <p><strong>Proof.</strong> The first identity is the expansion of each factor as a geometric series $1 + x^k + x^{2k} + \cdots$ and the collection of the contributions to $x^n$, each partition of $n$ contributing once. The pentagonal theorem is Euler's; the standard proof multiplies out the product and observes that the surviving terms are those in which the parts form a strictly decreasing then strictly decreasing-by-one pattern, giving the pentagonal exponents $j(3j\pm1)/2$ with signs $(-1)^j$.</p>
 <p><strong>Corollary (Euler's recurrence).</strong> The pentagonal theorem gives $p(n)$ by the recurrence $p(n) = \sum_{j \neq 0} (-1)^{j+1} p(n - j(3j-1)/2)$ with $p(0) = 1$ and $p(n) = 0$ for $n &lt; 0$.</p>
@@ -167,8 +167,8 @@ $$</p>
 g(n) = \sum_{d \mid n} f(d) \iff f(n) = \sum_{d \mid n} \mu(n/d) g(d).
 $$</p>
 <p><strong>Proof.</strong> Associativity and commutativity of the convolution follow from the reindexing of the divisors of a product; the identity is $\varepsilon$. The identity $\mu * \zeta = \varepsilon$ is verified at $n$ by grouping the divisors of $n$ according to their squarefree part, the alternating sum over the subsets of the primes dividing $n$ being $(1-1)^k = 0$ for $n &gt; 1$. Möbius inversion is the statement that $\mu$ is the inverse of $\zeta$ in the convolution ring.</p>
-<p><strong>Theorem.</strong> <strong>Euler's totient function</strong> $\varphi(n)$ satisfies $\sum_{d\mid n}\varphi(d) = n$ and $\sum_{n\geq 1} \varphi(n) n^{-s} = \zeta(s-1)/\zeta(s)$; the divisor function $\tau$, the sum-of-divisors function $\sigma$ and the Liouville function have the Dirichlet series $\zeta(s)^2$, $\zeta(s)\zeta(s-1)$ and $\zeta(2s)/\zeta(s)$ respectively.</p>
-<p><strong>Proof.</strong> The divisor identity for $\varphi$ counts the elements of a cyclic group by their order; the Dirichlet series follow from the multiplicativity of the functions and the Euler product $\zeta(s) = \prod_p (1 - p^{-s})^{-1}$. The computations are in <em>Analytic Number Theory</em>.</p>
+<p><strong>Theorem.</strong> <strong>Euler's totient function</strong> $\digamma_{\mathrm{tot}}(n)$ satisfies $\sum_{d\mid n}\digamma_{\mathrm{map}}(d) = n$ and $\sum_{n\geq 1} \digamma_{\mathrm{tot}}(n) n^{-s} = \zeta(s-1)/\zeta(s)$; the divisor function $\tau$, the sum-of-divisors function $\sigma$ and the Liouville function have the Dirichlet series $\zeta(s)^2$, $\zeta(s)\zeta(s-1)$ and $\zeta(2s)/\zeta(s)$ respectively.</p>
+<p><strong>Proof.</strong> The divisor identity for $\digamma_{\mathrm{map}}$ counts the elements of a cyclic group by their order; the Dirichlet series follow from the multiplicativity of the functions and the Euler product $\zeta(s) = \prod_p (1 - p^{-s})^{-1}$. The computations are in <em>Analytic Number Theory</em>.</p>
 <h2 id="lagrange-inversion-and-applications">Lagrange Inversion and Applications</h2>
 <h3 id="the-lagrangeburmann-formula">The Lagrange–Bürmann Formula</h3>
 <p><strong>Definition.</strong> Let $R$ be a commutative $\mathbb{Q}$-algebra and let $w(x) = \sum_{n \geq 1} w_n x^n$ have $w_1$ an invertible element. Then $w$ has a compositional inverse $\bar w$ with $w(\bar w(x)) = x = \bar w(w(x))$.</p>
@@ -221,10 +221,10 @@ $$</p>
 <p><strong>Proof.</strong> The number of colourings fixed by $g$ is $\prod_k p_k^{c_k(g)}$, because a colouring is fixed exactly when it is constant on the cycles of $g$, and the orbit counting of Burnside applied weight by weight gives the substitution.</p>
 <p><strong>Corollary (necklaces).</strong> The number of necklaces with $n$ beads and $k$ colours is</p>
 <p>$$
-N(n,k) = \frac{1}{n}\sum_{d \mid n} \varphi(d)\, k^{\,n/d},
+N(n,k) = \frac{1}{n}\sum_{d \mid n} \digamma_{\mathrm{map}}(d)\, k^{\,n/d},
 $$</p>
 <p>and the number of bracelets is obtained by adding the reversal to the group and applying the same formula to the dihedral group.</p>
-<p><strong>Proof.</strong> The cyclic group $C_n$ acts on the $n$ positions; the rotations with $n/d$ cycles of length $d$ are counted by $\varphi(d)$, and Pólya's theorem with $k$ colours of weight $1$ gives the formula.</p>
+<p><strong>Proof.</strong> The cyclic group $C_n$ acts on the $n$ positions; the rotations with $n/d$ cycles of length $d$ are counted by $\digamma_{\mathrm{map}}(d)$, and Pólya's theorem with $k$ colours of weight $1$ gives the formula.</p>
 <p><strong>Example.</strong> With $n = 4$ and $k = 2$ the formula gives $\tfrac14(2^4 + 2^2 + 0 + 2^2) = 6$ necklaces, namely $0000$, $0001$, $0011$, $0101$, $0111$, $1111$; with the reversal included the bracelets still number $6$, because the reversal maps each of the six necklaces to a rotation of itself.</p>
 <h2 id="summary">Summary</h2>
 <p>A commutative ring $R$ gives the formal power series ring $R[[x]]$, in which addition is componentwise and multiplication is the Cauchy convolution; a series is invertible exactly when its constant term is invertible, the derivation is formal and satisfies the usual rules, and the logarithm and exponential exist when $R$ is a $\mathbb{Q}$-algebra. The ordinary generating function converts the convolution of sequences into multiplication and the partial-sum operator into multiplication by $(1-x)^{-1}$, while the exponential generating function converts the labelled product into multiplication and the formation of sets of components into the exponential.</p>
@@ -275,11 +275,11 @@ $$</p>
 <td>Catalan number and its generating function</td>
 </tr>
 <tr>
-<td>$p(n)$, $\phi(x)$</td>
+<td>$p(n)$, $\digamma_{\mathrm{map}}(x)$</td>
 <td>Partition function, Euler's product $\prod(1-x^k)$</td>
 </tr>
 <tr>
-<td>$\varphi(n)$</td>
+<td>$\digamma_{\mathrm{tot}}(n)$</td>
 <td>Euler's totient function, the count of $k \leq n$ coprime to $n$</td>
 </tr>
 <tr>

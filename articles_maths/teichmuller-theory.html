@@ -99,13 +99,13 @@ $$</p>
 d_T([X,f],[Y,h]) = \tfrac12\inf_{k}\log K(k) ,
 $$</p>
 <p>the infimum over the homeomorphisms compatible with the markings up to isotopy. The function $d_T$ is a complete metric on $\mathcal{T}(S)$, called the <strong>Teichmüller metric</strong>; it is invariant under the action of the mapping class group, so it descends to a metric on the moduli space.</p>
-<p><strong>Theorem (Teichmüller; existence and uniqueness of the extremal map).</strong> Let $[X,f],[Y,h]\in\mathcal{T}(S)$ and let $K$ be the value of the infimum above. Then the infimum is attained: there is a homeomorphism $k : X\to Y$ with $K(k) = K$ realising the distance, and it is unique up to composition with a conformal automorphism of $Y$. The extremal map is the <strong>Teichmüller map</strong>, and it is characterised by the existence of a holomorphic quadratic differential $\phi$ on $X$ such that the Beltrami coefficient of $k$ is</p>
+<p><strong>Theorem (Teichmüller; existence and uniqueness of the extremal map).</strong> Let $[X,f],[Y,h]\in\mathcal{T}(S)$ and let $K$ be the value of the infimum above. Then the infimum is attained: there is a homeomorphism $k : X\to Y$ with $K(k) = K$ realising the distance, and it is unique up to composition with a conformal automorphism of $Y$. The extremal map is the <strong>Teichmüller map</strong>, and it is characterised by the existence of a holomorphic quadratic differential $\digamma_{\mathrm{map}}$ on $X$ such that the Beltrami coefficient of $k$ is</p>
 <p>$$
-\boxed{\;\mu = k_0\,\frac{\bar\phi}{|\phi|}, \qquad k_0 = \frac{K-1}{K+1}\;} ,
+\boxed{\;\mu = k_0\,\frac{\bar\digamma_{\mathrm{map}}}{|\digamma_{\mathrm{map}}|}, \qquad k_0 = \frac{K-1}{K+1}\;} ,
 $$</p>
-<p>a Beltrami differential of constant modulus $k_0$ determined by the direction field of $\phi$. In the natural coordinates of $\phi$ on $X$ and of the push-forward quadratic differential on $Y$, the map $k$ is affine, with the same constant stretch: it multiplies the horizontal coordinate by a fixed factor and the vertical coordinate by the reciprocal factor.</p>
+<p>a Beltrami differential of constant modulus $k_0$ determined by the direction field of $\digamma_{\mathrm{map}}$. In the natural coordinates of $\digamma_{\mathrm{map}}$ on $X$ and of the push-forward quadratic differential on $Y$, the map $k$ is affine, with the same constant stretch: it multiplies the horizontal coordinate by a fixed factor and the vertical coordinate by the reciprocal factor.</p>
 <p><strong>Proof sketch.</strong> The existence and the uniqueness of the extremal quasiconformal map are the theorems of Teichmüller, proved by the reduction to the Beltrami equation with the coefficient of constant modulus determined by an extremal quadratic differential; the analytic content — the measurable Riemann mapping theorem, the solvability of the Beltrami equation and the extremal length — belongs elsewhere in the corpus (<em>Measure Theory and Integration</em>, <em>Fourier Analysis on Euclidean Spaces</em>, <em>Sobolev Spaces and Weak Solutions</em>), where the measure and the limit are available; the quasiconformal maps themselves are not developed anywhere in it. The explicit form of the extremal map in the coordinates of the quadratic differential is the computation that gives both the existence and the uniqueness.</p>
-<p><strong>Theorem (Teichmüller geodesics; the distance formula).</strong> The Teichmüller metric is a Finsler metric, whose infinitesimal norm is the infimum of the essential sup norms of the Beltrami coefficients modulo the trivial ones; it is not Riemannian for $g\geq2$. The geodesic ray determined by a holomorphic quadratic differential $\phi$ is the family of the extremal maps with Beltrami coefficients $k_0(t)\,\bar\phi/|\phi|$ as the modulus $k_0(t)$ increases from $0$, and every geodesic is of this form; two points are joined by a unique geodesic. The distance has the extremal-length formulation of Kerckhoff: the metric is also given by</p>
+<p><strong>Theorem (Teichmüller geodesics; the distance formula).</strong> The Teichmüller metric is a Finsler metric, whose infinitesimal norm is the infimum of the essential sup norms of the Beltrami coefficients modulo the trivial ones; it is not Riemannian for $g\geq2$. The geodesic ray determined by a holomorphic quadratic differential $\digamma_{\mathrm{map}}$ is the family of the extremal maps with Beltrami coefficients $k_0(t)\,\bar\digamma_{\mathrm{map}}/|\digamma_{\mathrm{map}}|$ as the modulus $k_0(t)$ increases from $0$, and every geodesic is of this form; two points are joined by a unique geodesic. The distance has the extremal-length formulation of Kerckhoff: the metric is also given by</p>
 <p>$$
 \boxed{\;d_T([X,f],[Y,h]) = \tfrac12\log\inf_{\gamma}\frac{\mathrm{Ext}_Y(\gamma)}{\mathrm{Ext}_X(\gamma)}\;} ,
 $$</p>
@@ -114,7 +114,7 @@ $$</p>
 <p><strong>Example.</strong> For the once-punctured torus, $\mathcal{T} = \mathbb{H}$, and the Teichmüller metric is exactly the hyperbolic metric of the upper half-plane multiplied by the appropriate normalisation: the distance between two marked structures is the hyperbolic distance between the moduli, and the Teichmüller geodesics are the hyperbolic geodesics. For the four-punctured sphere, the space is the upper half-plane with the modulus variable, and again the Teichmüller metric is up to a factor the hyperbolic metric; for the higher genus the metric differs from the hyperbolic metric and the space is not symmetric.</p>
 <p><strong>Remark (the two metrics).</strong> The other canonical metric, the <strong>Weil–Petersson metric</strong>, is defined by the pairing of the holomorphic quadratic differentials</p>
 <p>$$
-\langle\phi,\psi\rangle_{\mathrm{WP}} = \int_X \phi\,\overline{\psi}\,\lambda^{-2},
+\langle\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}\rangle_{\mathrm{WP}} = \int_X \digamma_{\mathrm{map}}\,\overline{Ξ_{\mathrm{wfn}}}\,\lambda^{-2},
 $$</p>
 <p>where the hyperbolic metric of $X$ is written $\lambda^2|dz|^2$ in a conformal coordinate, and it is a Kähler metric of negative scalar curvature which is incomplete; it is the metric appearing in the Ahlfors–Bers theory of the deformation spaces and in the Weil–Petersson volumes of the moduli spaces. The analytic definition of the integral and the Kähler properties of the metric belong to Part III and to <em>Kähler Geometry</em> respectively; the two metrics are distinct, the Teichmüller metric being Finsler and the Weil–Petersson metric Riemannian, and the comparison of their geodesics and their boundaries is one of the standard themes of the theory.</p>
 <h2 id="coordinates-and-the-bers-embedding">Coordinates and the Bers Embedding</h2>
@@ -234,8 +234,8 @@ $$</p>
 <td>Teichmüller distance, $\frac12\inf\log K$; dilatation of a quasiconformal homeomorphism</td>
 </tr>
 <tr>
-<td>$\mu = k_0\bar\phi/\vert\phi\vert$</td>
-<td>Beltrami coefficient of the Teichmüller map, $k_0=(K-1)/(K+1)$; $\phi$ the extremal holomorphic quadratic differential</td>
+<td>$\mu = k_0\bar\digamma_{\mathrm{map}}/\vert\digamma_{\mathrm{map}}\vert$</td>
+<td>Beltrami coefficient of the Teichmüller map, $k_0=(K-1)/(K+1)$; $\digamma_{\mathrm{map}}$ the extremal holomorphic quadratic differential</td>
 </tr>
 <tr>
 <td>$Q(X)$, $\mathrm{Ext}_X(\gamma)$</td>

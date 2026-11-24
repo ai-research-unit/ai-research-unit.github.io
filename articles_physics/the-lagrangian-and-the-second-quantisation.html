@@ -79,12 +79,12 @@
 <p>What this article is not. It is not a derivation of the promotion — the promotion is a postulate and Dirac's, not this corpus's. It is not a path integral — the corpus's path integral is sketched elsewhere and this article does not use it. And it is not a shortcut: a reader who wants a scattering amplitude will not find one here, because a bridge is not a destination.</p>
 <h2 id="conventions">Conventions</h2>
 <p>The conventions are the family's, and one more. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the actions are the family's, element-form or chart-form as the article in question writes them; $\frac{h}{2\pi}$ is the constant that converts an action's units into a rate; $\nu_m=\frac{mc}{h}$; the measure is $\mathrm{d}^{4}r$; the pairing is the one the field's article uses.</p>
-<p>The addition is the bracket's notation. For a field $\phi$ and its conjugate $\pi$ — in the corpus's terms the two members of the conjugate pair — the equal-time bracket is written $\{\phi(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')$, and the general bracket of two functionals is written $\{F,G\}$. The Green functions are $G_{R}$ (retarded: support in the forward cone) and $G_{A}$ (advanced: support in the backward cone), and the fundamental object of the Peierls construction is their difference $G=G_{R}-G_{A}$, whose support is the full light cone.</p>
+<p>The addition is the bracket's notation. For a field $\xi_{\mathrm{pot}}$ and its conjugate $\pi$ — in the corpus's terms the two members of the conjugate pair — the equal-time bracket is written $\{\xi_{\mathrm{pot}}(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')$, and the general bracket of two functionals is written $\{F,G\}$. The Green functions are $G_{R}$ (retarded: support in the forward cone) and $G_{A}$ (advanced: support in the backward cone), and the fundamental object of the Peierls construction is their difference $G=G_{R}-G_{A}$, whose support is the full light cone.</p>
 <p><strong>One symbol is a postulate and is marked.</strong> The promotion's symbol is $\frac{1}{i \frac{h}{2\pi}}[\,,\,]$. Everything to its left is classical and derivable from the actions the corpus has; everything to its right is a new axiom. The article marks the boundary once, here, and does not blur it below.</p>
 <h2 id="the-action-in-element-form-the-point-of-departure">The Action in Element Form: The Point of Departure</h2>
 <p>The starting point is a quadratic action, and the family has ten of them. Each is of the form</p>
 <p>$$
-S[\phi]=\tfrac12\int\mathrm{d}^{4}r\;\phi\,\mathcal{D}\,\phi+\text{(linear terms in the sources)},
+S[\xi_{\mathrm{pot}}]=\tfrac12\int\mathrm{d}^{4}r\;\xi_{\mathrm{pot}}\,\mathcal{D}\,\xi_{\mathrm{pot}}+\text{(linear terms in the sources)},
 $$</p>
 <p>with $\mathcal{D}$ a differential operator: $\Box_\Phi-4\pi^{2}\nu_m^{2}$ for the scalar, the first-order Dirac operator for the spinor, the Proca operator $\Box_\Phi-4\pi^{2}\nu_m^{2}$ on the transverse part for the vector, and their coupled versions with the connection inside the covariant derivative.</p>
 <p>What quadratic means here, and why it is the whole of the family's classical content. A quadratic action has linear equations, so its solutions superpose; it has a Green function, so its response to a source is computable; and it has a bracket, so its symplectic structure is well defined. All three are classical and all three are in the corpus. What a quadratic action does <em>not</em> have is a scattering: with no interaction there is nothing to scatter, and the corpus's interacting article stops at the exact classical equation for the same reason.</p>
@@ -95,16 +95,16 @@ $$</p>
 <p>$$
 G=G_{R}-G_{A},
 \qquad
-\{\phi(x),\phi(y)\}=G(x,y),
+\{\xi_{\mathrm{pot}}(x),\xi_{\mathrm{pot}}(y)\}=G(x,y),
 $$</p>
-<p>is the Peierls bracket: the difference of the two Green functions is the classical bracket of the field with itself. For a conjugate pair the same construction gives $\{\phi(x),\pi(y)\}=\partial_{y_0}G(x,y)$, and at equal times that is a delta function.</p>
+<p>is the Peierls bracket: the difference of the two Green functions is the classical bracket of the field with itself. For a conjugate pair the same construction gives $\{\xi_{\mathrm{pot}}(x),\pi(y)\}=\partial_{y_0}G(x,y)$, and at equal times that is a delta function.</p>
 <p>The hand check for the scalar. For $\mathcal{D}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ the difference of the Green functions is the Pauli–Jordan function,</p>
 <p>$$
 G(x,y)=\int\mathrm{d}^{3}\nu_{\Phi}\;\frac{\sin\bigl(\omega_{\mathrm{mode},m}\,\Delta r'{}^{0}/c\bigr)}{\omega_{\mathrm{mode},m}}\,e^{2\pi i\vec\nu_{\Phi}\cdot(\vec r-\vec r')},
 \qquad
 \omega_{\mathrm{mode},m}=c\sqrt{4\pi^{2}\nu_{\Phi}^{2}+4\pi^{2}\nu_m^{2}},
 $$</p>
-<p>which vanishes at $\Delta r'{}^{0}=0$ and whose time derivative there is $\delta^{3}(\vec r-\vec r')$. So $\{\phi(\vec r),\phi(\vec r')\}=0$ and $\{\phi(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')$: the canonical bracket is <em>derived</em> from the action's Green functions, not assumed. That derivation is the first step of the route, and it is the one the corpus's quadratic actions make available.</p>
+<p>which vanishes at $\Delta r'{}^{0}=0$ and whose time derivative there is $\delta^{3}(\vec r-\vec r')$. So $\{\xi_{\mathrm{pot}}(\vec r),\xi_{\mathrm{pot}}(\vec r')\}=0$ and $\{\xi_{\mathrm{pot}}(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')$: the canonical bracket is <em>derived</em> from the action's Green functions, not assumed. That derivation is the first step of the route, and it is the one the corpus's quadratic actions make available.</p>
 <p><strong>Why the bracket and not the Poisson bracket of the momenta.</strong> The Peierls bracket is defined on solutions and not on initial data, so it is invariant under field redefinitions and it exists even when the naive Legendre transform is degenerate. For the corpus's first-order actions that is not a convenience but a necessity: the momenta are constrained, and the naive bracket would be inconsistent.</p>
 <p>What the construction needs that the corpus has. The Green functions of each action. The family's articles compute them or state their form in momentum space; the momentum-space articles are where the propagators appear, and they appear there as Green functions and not as quantum propagators. The distinction is the whole of this article.</p>
 <h2 id="the-constraints-the-action-imposes-the-dirac-bracket">The Constraints the Action Imposes: The Dirac Bracket</h2>
@@ -120,11 +120,11 @@ $$</p>
 <p>The claim. The step from classical to quantum is a substitution of the bracket, $\{\,,\,\}\to\frac{1}{i \frac{h}{2\pi}}[\,,\,]$, applied to the fields themselves. It is one line, and it changes every symbol it touches: a field that was a function of position becomes an operator-valued distribution; a bracket that was a classical product becomes a commutator; a solution becomes a state.</p>
 <p>The hand check. Take the scalar's derived bracket and substitute:</p>
 <p>$$
-\{\phi(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')
+\{\xi_{\mathrm{pot}}(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')
 \quad\longrightarrow\quad
-[\hat\phi(\vec r),\hat\pi(\vec r')]=i \frac{h}{2\pi}\,\delta^{3}(\vec r-\vec r').
+[\hat\xi_{\mathrm{pot}}(\vec r),\hat\pi(\vec r')]=i \frac{h}{2\pi}\,\delta^{3}(\vec r-\vec r').
 $$</p>
-<p>Then expand $\hat\phi$ in the modes of the free action, $\hat\phi=\sum_{\imath}(a_{\imath} u_{\imath}+a_{\imath}^{\dagger}u_{\imath}^{*})$, and the commutator forces $[a_{\imath},a_{k'}^{\dagger}]=\delta_{kk'}$: the mode coefficients become creation and annihilation operators. The Fock space is the representation of that algebra, and the vacuum is the state annihilated by every $a_{\imath}$. Four lines, and every one of them is absent from the corpus.</p>
+<p>Then expand $\hat\xi_{\mathrm{pot}}$ in the modes of the free action, $\hat\xi_{\mathrm{pot}}=\sum_{\imath}(a_{\imath} u_{\imath}+a_{\imath}^{\dagger}u_{\imath}^{*})$, and the commutator forces $[a_{\imath},a_{k'}^{\dagger}]=\delta_{kk'}$: the mode coefficients become creation and annihilation operators. The Fock space is the representation of that algebra, and the vacuum is the state annihilated by every $a_{\imath}$. Four lines, and every one of them is absent from the corpus.</p>
 <p>Why the substitution is a postulate and not a theorem. No classical statement forces it: the bracket's algebraic properties are consistent with many deformations, and the promotion is selected by its agreement with experiment and by its consistency, not by a derivation from the action. A reader who expects the promotion to follow from the variational principle will not find it there, and the corpus would be wrong to pretend otherwise.</p>
 <p>What the substitution does not do by itself. It does not define the Hilbert space's inner product, does not order the operators in an interacting theory, does not remove the ultraviolet divergences, and does not produce the $S$-matrix. Those are the fourth step's problems, and the corpus has none of them in any form.</p>
 <p>What the claim forbids. <strong>It forbids calling the family's articles quantum.</strong> An action whose bracket has not been promoted is classical, however quantum its notation looks; a propagator that is a Green function of a classical operator is not a Feynman propagator until the time ordering is imposed by the promotion; and a current that is a bilinear of a classical field is not an operator until the field is. The corpus's language is careful about this, and this article is where the care is explained.</p>
@@ -142,9 +142,9 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The route from a one-particle action to a quantum field theory has four steps: the Peierls bracket from the action's Green functions, the Dirac bracket for the constrained cases, the promotion of the bracket to a commutator, and the representation on a Fock space. This family completes the first, inventories the second, and takes neither the third nor the fourth. The classical brackets it can derive are the ones its articles use; the fields it writes are wavefunctions and not operators; the propagators it computes are Green functions and not Feynman propagators. The absence is stated in the family's own words and mapped here, so that it is a boundary with a name.</p>
 <p>$$
-\{\phi(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')
+\{\xi_{\mathrm{pot}}(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')
 \qquad\longrightarrow\qquad
-[\hat\phi(\vec r),\hat\pi(\vec r')]=i \frac{h}{2\pi}\,\delta^{3}(\vec r-\vec r')
+[\hat\xi_{\mathrm{pot}}(\vec r),\hat\pi(\vec r')]=i \frac{h}{2\pi}\,\delta^{3}(\vec r-\vec r')
 \qquad\longrightarrow\qquad
 [a_{\imath},a_{k'}^{\dagger}]=\delta_{kk'} .
 $$</p>
@@ -158,7 +158,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\phi,\ \pi$</td>
+<td>$\xi_{\mathrm{pot}},\ \pi$</td>
 <td>Field and its conjugate</td>
 </tr>
 <tr>

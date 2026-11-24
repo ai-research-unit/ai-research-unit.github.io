@@ -106,7 +106,7 @@ $$</p>
 <p><strong>The two bases.</strong> The argument reconstructs $X$ in the matrix units $E_{ij}$, the basis of the statement. The derivations are read as well on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$: the algebra of the operators is $\mathcal{E}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$ of dimension $16$, the four left matrices are <em>$M_4(\mathbb{C})$ Axis-Free Representation</em> and the sixteen products $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are <em>$M_4(\mathbb{C})$ Axis-Free Representation: Operators</em>, and $\operatorname{ad}$ there is the commutator with those matrices.</p>
 <p><strong>The grading.</strong> The derivations act on the Peirce blocks of an idempotent by the rule of <em>The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</em>: $\operatorname{ad}_X$ carries $A_{rs}$ to $A_{rs}$ for the diagonal blocks and mixes the off-diagonal blocks according to the entries of $X$. The derivation is determined by its values on the four blocks.</p>
 <h2 id="automorphisms">Automorphisms</h2>
-<p><strong>Definition.</strong> An automorphism of $M_4(\mathbb{C})$ is an invertible linear map $\varphi$ with $\varphi(AB)=\varphi(A)\varphi(B)$ for all $A,B$.</p>
+<p><strong>Definition.</strong> An automorphism of $M_4(\mathbb{C})$ is an invertible linear map $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(AB)=\digamma_{\mathrm{map}}(A)\digamma_{\mathrm{map}}(B)$ for all $A,B$.</p>
 <p><strong>Proposition.</strong> For every $U\in GL_4(\mathbb{C})$ the map $\operatorname{Inn}_U(A)=UAU^{-1}$ is an automorphism, and $\operatorname{Inn}_U=\operatorname{Inn}_V$ exactly when $V=\lambda U$ for some $\lambda\in\mathbb{C}^{\times}$.</p>
 <p><strong>Proof.</strong> Conjugation preserves products and is invertible. If $UAU^{-1}=VAV^{-1}$ for all $A$, then $V^{-1}U$ commutes with every $A$, hence is scalar.</p>
 <p><strong>Theorem (Skolem–Noether).</strong> Every automorphism of $M_4(\mathbb{C})$ is inner:</p>
@@ -114,11 +114,11 @@ $$</p>
 \operatorname{Aut}(M_4)=PGL_4(\mathbb{C})=GL_4(\mathbb{C})/\mathbb{C}^{\times}I,
 $$</p>
 <p>of dimension $15$. In particular there is no outer automorphism.</p>
-<p><strong>Proof.</strong> The theorem is the case $n=4$ of the Skolem–Noether theorem: every isomorphism of central simple algebras is conjugation by an invertible element. The elementary proof uses the module: an automorphism $\varphi$ makes $\mathbb{C}^{4}$ into a second module for $M_4$ by $A\cdot v=\varphi(A)v$, and the two modules are isomorphic because $M_4$ has a unique irreducible module up to isomorphism; an intertwiner $U$ satisfies $\varphi(A)U=UA$, that is, $\varphi(A)=UAU^{-1}$.</p>
+<p><strong>Proof.</strong> The theorem is the case $n=4$ of the Skolem–Noether theorem: every isomorphism of central simple algebras is conjugation by an invertible element. The elementary proof uses the module: an automorphism $\digamma_{\mathrm{map}}$ makes $\mathbb{C}^{4}$ into a second module for $M_4$ by $A\cdot v=\digamma_{\mathrm{map}}(A)v$, and the two modules are isomorphic because $M_4$ has a unique irreducible module up to isomorphism; an intertwiner $U$ satisfies $\digamma_{\mathrm{map}}(A)U=UA$, that is, $\digamma_{\mathrm{map}}(A)=UAU^{-1}$.</p>
 <p><strong>The centre.</strong> The scalar matrices act trivially, so the automorphism group is the quotient $PGL_4$, not $GL_4$. The determinant of $A$ is preserved by every inner automorphism, but the group is not reduced to $SL_4$: conjugation by $U$ and by $\lambda U$ agree for every $\lambda\ne0$, and the correct statement is $PGL_4\cong SL_4/\mu_4$, where $\mu_4$ is the group of fourth roots of unity acting by scalars.</p>
 <p><strong>The Lie algebra.</strong> The Lie algebra of $\operatorname{Aut}(M_4)$ is $\operatorname{Der}(M_4)=\mathfrak{sl}_4$, and the exponential of a derivation is an automorphism: $\exp(\operatorname{ad}_X)(A)=e^{X}Ae^{-X}$. The exponential map of $PGL_4$ is the exponential of $\mathfrak{sl}_4$ modulo the kernel of the adjoint representation.</p>
 <h2 id="the-math117-structures">The $*$-Structures</h2>
-<p><strong>Definition.</strong> A $*$-derivation is a derivation $D$ with $D(A^{*})=D(A)^{*}$ for all $A$. A $*$-automorphism is an automorphism $\varphi$ with $\varphi(A^{*})=\varphi(A)^{*}$.</p>
+<p><strong>Definition.</strong> A $*$-derivation is a derivation $D$ with $D(A^{*})=D(A)^{*}$ for all $A$. A $*$-automorphism is an automorphism $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(A^{*})=\digamma_{\mathrm{map}}(A)^{*}$.</p>
 <p><strong>Proposition.</strong> A derivation $\operatorname{ad}_X$ is a $*$-derivation exactly when $X$ is anti-Hermitian, $X^{*}=-X$. The $*$-derivations form the real Lie algebra $\mathfrak{u}(4)$ modulo its centre, isomorphic to $\mathfrak{su}(4)$, of real dimension $15$.</p>
 <p><strong>Proof.</strong> For $Y$ arbitrary,</p>
 <p>$$
@@ -134,24 +134,24 @@ $$</p>
 <p>The group of $*$-automorphisms is therefore $PU(4)=U(4)/U(1)$, of real dimension $15$, the compact real form of $PGL_4$.</p>
 <p><strong>The real structure.</strong> For the real form $M_4(\mathbb{R})$ the derivations are $\operatorname{ad}\mathfrak{sl}_4(\mathbb{R})$, of real dimension $15$, and the automorphisms are $PGL_4(\mathbb{R})$. For the quaternionic form $M_2(\mathbb{H})$ the derivations are $\operatorname{ad}\mathfrak{sl}_2(\mathbb{H})$, and the automorphisms are $PGL_2(\mathbb{H})$; the two real forms are <em>The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-antilinear-automorphisms">The Antilinear Automorphisms</h2>
-<p><strong>Definition.</strong> A <strong>complex-antilinear automorphism</strong> is a bijective map $\varphi$ with</p>
+<p><strong>Definition.</strong> A <strong>complex-antilinear automorphism</strong> is a bijective map $\digamma_{\mathrm{map}}$ with</p>
 <p>$$
-\varphi(A+B)=\varphi(A)+\varphi(B),\qquad
-\varphi(\lambda A)=\bar\lambda\,\varphi(A),\qquad
-\varphi(AB)=\varphi(A)\varphi(B).
+\digamma_{\mathrm{map}}(A+B)=\digamma_{\mathrm{map}}(A)+\digamma_{\mathrm{map}}(B),\qquad
+\digamma_{\mathrm{map}}(\lambda A)=\bar\lambda\,\digamma_{\mathrm{map}}(A),\qquad
+\digamma_{\mathrm{map}}(AB)=\digamma_{\mathrm{map}}(A)\digamma_{\mathrm{map}}(B).
 $$</p>
 <p><strong>Proposition.</strong> Every antilinear automorphism is of the form</p>
 <p>$$
-\varphi(A)=U\bar A U^{-1}
+\digamma_{\mathrm{map}}(A)=U\bar A U^{-1}
 $$</p>
 <p>for some $U\in GL_4(\mathbb{C})$, and two matrices $U,V$ give the same map exactly when $V=\lambda U$ with $\lambda\in\mathbb{C}^{\times}$.</p>
-<p><strong>Proof.</strong> Composing $\varphi$ with the conjugation $\bar A$ gives a complex-linear automorphism $A\mapsto \varphi(\bar A)$, which is inner by Skolem–Noether: $\varphi(\bar A)=UAU^{-1}$, hence $\varphi(A)=U\bar A U^{-1}$. The ambiguity is the scalar, as for the linear case.</p>
+<p><strong>Proof.</strong> Composing $\digamma_{\mathrm{map}}$ with the conjugation $\bar A$ gives a complex-linear automorphism $A\mapsto \digamma_{\mathrm{map}}(\bar A)$, which is inner by Skolem–Noether: $\digamma_{\mathrm{map}}(\bar A)=UAU^{-1}$, hence $\digamma_{\mathrm{map}}(A)=U\bar A U^{-1}$. The ambiguity is the scalar, as for the linear case.</p>
 <p><strong>The group.</strong> The antilinear automorphisms form the coset $PGL_4\cdot\bar{\phantom{A}}$, and</p>
 <p>$$
 \operatorname{Aut}_\mathbb{R}(M_4)=PGL_4(\mathbb{C})\rtimes\mathbb{Z}/2,
 $$</p>
 <p>where the nontrivial element acts by $\bar{\phantom{A}}$. The subgroup of complex-linear automorphisms has index two, and the coset is the set of antilinear ones.</p>
-<p><strong>The real forms again.</strong> An antilinear automorphism of order two is a <strong>real structure</strong> on the algebra; its fixed algebra is a real form. The two possibilities, $\varphi^{2}=\mathrm{id}$ and $\varphi^{2}$ an inner automorphism of order two, correspond to the real and quaternionic structures. The classification is <em>The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</em>; the point here is that the antilinear automorphisms are a single coset, and the real forms are the fixed algebras of its involutions.</p>
+<p><strong>The real forms again.</strong> An antilinear automorphism of order two is a <strong>real structure</strong> on the algebra; its fixed algebra is a real form. The two possibilities, $\digamma_{\mathrm{map}}^{2}=\mathrm{id}$ and $\digamma_{\mathrm{map}}^{2}$ an inner automorphism of order two, correspond to the real and quaternionic structures. The classification is <em>The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</em>; the point here is that the antilinear automorphisms are a single coset, and the real forms are the fixed algebras of its involutions.</p>
 <h2 id="the-biquaternion-comparison">The Biquaternion Comparison</h2>
 <p><strong>The derivations of $\mathbb{B}$.</strong> The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has derivations</p>
 <p>$$

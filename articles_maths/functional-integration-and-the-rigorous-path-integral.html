@@ -83,20 +83,20 @@
 <p>Throughout, $X$ is a real vector space with algebraic dual $X'$, $\mathcal{Z}(X)$ is its algebra of cylinder sets, and a cylinder measure is written $\mu$. The space $H$ is a real separable Hilbert space with inner product $\langle\cdot,\cdot\rangle$ linear in the second argument, orthonormal basis $(e_k)_{k\geq1}$, and $Q$ is a positive self-adjoint operator on $H$ with eigenvalues $(q_k)$. The path space is $C[0,1]$ with the supremum norm, the Wiener measure on it is $\mathbb{W}$, the canonical process is $x$, and the Brownian covariance kernel is $R(s,t)=\min(s,t)$. The Euclidean action is $S_E$, the potential is $V(t,x)$, and the sliced propagator is $K_n$ with the limit $K$.</p>
 <h2 id="cylinder-measures-and-the-extension-problem">Cylinder Measures and the Extension Problem</h2>
 <h3 id="cylinder-sets-and-cylinder-measures">Cylinder Sets and Cylinder Measures</h3>
-<p><strong>Definition (cylinder set).</strong> Let $X$ be a real vector space and $X'$ its algebraic dual. For $\varphi_1,\dots,\varphi_n\in X'$ and a Borel set $B\in\mathcal{B}(\mathbb{R}^n)$, the <strong>cylinder set</strong> is</p>
+<p><strong>Definition (cylinder set).</strong> Let $X$ be a real vector space and $X'$ its algebraic dual. For $\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n}\in X'$ and a Borel set $B\in\mathcal{B}(\mathbb{R}^n)$, the <strong>cylinder set</strong> is</p>
 <p>$$
-Z(\varphi_1,\dots,\varphi_n;B)=\{x\in X:(\varphi_1(x),\dots,\varphi_n(x))\in B\}.
+Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n};B)=\{x\in X:(\digamma_{\mathrm{map},1}(x),\dots,\digamma_{\mathrm{map},n}(x))\in B\}.
 $$</p>
-<p>The cylinder sets form an algebra $\mathcal{Z}(X)$ — closed under finite unions, intersections and complements — and the <strong>cylinder $\sigma$-algebra</strong> is the $\sigma$-algebra that they generate. A set of the form $Z(\varphi;B)$ with a single functional is the simplest cylinder, the preimage of a Borel set of the line.</p>
+<p>The cylinder sets form an algebra $\mathcal{Z}(X)$ — closed under finite unions, intersections and complements — and the <strong>cylinder $\sigma$-algebra</strong> is the $\sigma$-algebra that they generate. A set of the form $Z(\digamma_{\mathrm{map}};B)$ with a single functional is the simplest cylinder, the preimage of a Borel set of the line.</p>
 <p><strong>Definition (cylinder measure).</strong> A <strong>cylinder measure</strong> on $X$ is a finitely additive map $\mu:\mathcal{Z}(X)\to[0,1]$ with $\mu(X)=1$. The measure is <strong>consistent</strong> if it is compatible with the coordinate projections, that is,</p>
 <p>$$
-\mu\bigl(Z(\varphi_1,\dots,\varphi_n;\pi^{-1}B')\bigr)=\mu\bigl(Z(\varphi_1,\dots,\varphi_{n-1};B')\bigr)
+\mu\bigl(Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n};\pi^{-1}B')\bigr)=\mu\bigl(Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n-1};B')\bigr)
 $$</p>
 <p>for every projection $\pi:\mathbb{R}^n\to\mathbb{R}^{n-1}$ onto the first $n-1$ coordinates. The measure is <strong>$\sigma$-additive</strong> if it is countably additive on the algebra $\mathcal{Z}(X)$.</p>
-<p>A consistent family of finite-dimensional distributions always defines a cylinder measure, by the prescription $\mu(Z(\varphi_1,\dots,\varphi_n;B))=\mu_{\varphi_1,\dots,\varphi_n}(B)$; the consistency is exactly what makes the prescription well defined on a set that has several representations. Finite additivity is then automatic, because a finite union of cylinder sets can be refined to a disjoint union over a common finite set of functionals. What is <em>not</em> automatic is countable additivity, and the whole difficulty of the subject is concentrated there.</p>
-<p><strong>Example (the Gaussian cylinder measure).</strong> Let $Q$ be a positive self-adjoint operator on $H$ and let $\varphi_i=\langle u_i,\cdot\rangle$. The matrix $(Q_\varphi)_{ij}=\langle Qu_i,u_j\rangle$ is positive definite when the $u_i$ are linearly independent, and the prescription</p>
+<p>A consistent family of finite-dimensional distributions always defines a cylinder measure, by the prescription $\mu(Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n};B))=\mu_{\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n}}(B)$; the consistency is exactly what makes the prescription well defined on a set that has several representations. Finite additivity is then automatic, because a finite union of cylinder sets can be refined to a disjoint union over a common finite set of functionals. What is <em>not</em> automatic is countable additivity, and the whole difficulty of the subject is concentrated there.</p>
+<p><strong>Example (the Gaussian cylinder measure).</strong> Let $Q$ be a positive self-adjoint operator on $H$ and let $\digamma_{\mathrm{map},i}=\langle u_i,\cdot\rangle$. The matrix $(Q_\digamma_{\mathrm{map}})_{ij}=\langle Qu_i,u_j\rangle$ is positive definite when the $u_i$ are linearly independent, and the prescription</p>
 <p>$$
-\mu\bigl(Z(\varphi_1,\dots,\varphi_n;B)\bigr)=\frac{1}{(2\pi)^{n/2}\sqrt{\det Q_\varphi}}\int_B\exp(-\frac12\langle Q_\varphi^{-1}y,y\rangle)\,dy
+\mu\bigl(Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n};B)\bigr)=\frac{1}{(2\pi)^{n/2}\sqrt{\det Q_\digamma_{\mathrm{map}}}}\int_B\exp(-\frac12\langle Q_\digamma_{\mathrm{map}}^{-1}y,y\rangle)\,dy
 $$</p>
 <p>is a cylinder measure on $H$, the <strong>Gaussian cylinder measure with covariance $Q$</strong>. Its characteristic functional is $\widehat\mu(\zeta)=\exp\bigl(-\tfrac12\langle Q\zeta,\zeta\rangle\bigr)$ for $\zeta\in H'=H$, and this functional determines the cylinder measure uniquely.</p>
 <h3 id="kolmogorov-extension-and-its-limit">Kolmogorov Extension and Its Limit</h3>
@@ -139,7 +139,7 @@ $$</p>
 <h3 id="the-covariance-kernel-math145">The Covariance Kernel $\min(s,t)$</h3>
 <p>The path measure of Brownian motion is the case of the construction in which the cylinder measure does extend. Let $H=L^2(0,1)$ and let $Q$ be the positive self-adjoint operator with <strong>integral kernel</strong> $R(s,t)=\min(s,t)$:</p>
 <p>$$
-Q\psi(t)=\int_0^1\min(s,t)\psi(s)\,ds .
+QΞ_{\mathrm{wfn}}(t)=\int_0^1\min(s,t)Ξ_{\mathrm{wfn}}(s)\,ds .
 $$</p>
 <p><strong>Theorem (the Wiener measure).</strong> The operator $Q$ above has the following properties.</p>
 <p>(i) $R$ is a positive-definite kernel, so $Q$ is positive and self-adjoint.</p>
@@ -208,7 +208,7 @@ $$</p>
 $$</p>
 <p>and the statement is exact as long as the density is integrable. This is the precise sense in which the Euclidean path integral is an integral with respect to a measure: the free weight is a genuine measure and the interaction is a genuine function, and the two are combined by the ordinary operations of integration.</p>
 <h3 id="the-free-euclidean-field">The Free Euclidean Field</h3>
-<p>The construction is not special to the heat equation. Let $M$ be a compact Riemannian manifold, or the torus $\mathbb{T}^d$, and let $C=(-\Delta+m^2)^{-1}$ with $m&gt;0$. The operator $C$ is compact, positive, self-adjoint, and trace class, because its eigenvalues $\bigl(\lambda_k+m^2\bigr)^{-1}$ are summable; the Gaussian measure with covariance $C$ therefore exists on $L^2(M)$, and its formal density against the flat reference is $\exp\bigl(-\tfrac12\int_M(|\nabla\phi|^2+m^2\phi^2)\bigr)$, the <strong>free Euclidean field</strong> of mass $m$. This is the model case of constructive quantum field theory: the free measure is a Gaussian measure in the sense of this article, and the interacting measure, when it exists, is obtained from it by a density $\exp(-S_{\mathrm{int}})$ together with a renormalisation of the density so that the total mass remains one. That construction — the cluster expansion, the $\mathcal P(\varphi)_2$ models, the renormalisation of the products of a distributional field — is beyond the scope of this article and is treated in the references.</p>
+<p>The construction is not special to the heat equation. Let $M$ be a compact Riemannian manifold, or the torus $\mathbb{T}^d$, and let $C=(-\Delta+m^2)^{-1}$ with $m&gt;0$. The operator $C$ is compact, positive, self-adjoint, and trace class, because its eigenvalues $\bigl(\lambda_k+m^2\bigr)^{-1}$ are summable; the Gaussian measure with covariance $C$ therefore exists on $L^2(M)$, and its formal density against the flat reference is $\exp\bigl(-\tfrac12\int_M(|\nabla\digamma_{\mathrm{map}}|^2+m^2\digamma_{\mathrm{map}}^2)\bigr)$, the <strong>free Euclidean field</strong> of mass $m$. This is the model case of constructive quantum field theory: the free measure is a Gaussian measure in the sense of this article, and the interacting measure, when it exists, is obtained from it by a density $\exp(-S_{\mathrm{int}})$ together with a renormalisation of the density so that the total mass remains one. That construction — the cluster expansion, the $\mathcal P(\digamma_{\mathrm{map}})_2$ models, the renormalisation of the products of a distributional field — is beyond the scope of this article and is treated in the references.</p>
 <h2 id="the-oscillatory-path-integral-and-the-fresnel-obstruction">The Oscillatory Path Integral and the Fresnel Obstruction</h2>
 <h3 id="oscillatory-integrals-by-regularisation">Oscillatory Integrals by Regularisation</h3>
 <p><strong>Definition (oscillatory Gaussian integral).</strong> For $a&gt;0$ the integral $\int_{\mathbb{R}}\exp(iax^2/2)\,dx$ is defined as the limit, if it exists, of the absolutely convergent integrals in which the integrand is damped:</p>
@@ -280,7 +280,7 @@ $$</p>
 <td>algebra of cylinder sets</td>
 </tr>
 <tr>
-<td>$Z(\varphi_1,\dots,\varphi_n;B)$</td>
+<td>$Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n};B)$</td>
 <td>cylinder set of a finite list of functionals</td>
 </tr>
 <tr>

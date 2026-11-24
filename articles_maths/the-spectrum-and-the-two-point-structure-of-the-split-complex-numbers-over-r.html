@@ -77,15 +77,15 @@
 <p><strong>Definition.</strong> A <strong>character</strong> of $\mathbb{C}_{\mathrm{spl}}$ is a non-zero $\mathbb{R}$-algebra homomorphism into $\mathbb{R}$.</p>
 <p><strong>Theorem (the two characters).</strong> The characters are the two coordinate maps</p>
 <p>$$
-\varphi_+ : Q=q+jq'\mapsto q+q' , \qquad \varphi_- : Q=q+jq'\mapsto q-q' ,
+\digamma_{\mathrm{map},+} : Q=q+jq'\mapsto q+q' , \qquad \digamma_{\mathrm{map},-} : Q=q+jq'\mapsto q-q' ,
 $$</p>
-<p>with kernels $\ker\varphi_\pm=\mathbb{R}\Pi_\mp$.</p>
-<p><strong>Proof.</strong> A character fixes $\mathbb{R}$ and sends $j$ to an element $\xi$ with $\xi^2=1$, hence to $\xi=\pm1$. For $\xi=1$ the value on $Q$ is $q+q'$ and for $\xi=-1$ it is $q-q'$; each is additive, multiplicative and unital, since $(q+q')(c+c')$ and $(q-q')(c-c')$ are the two coordinates of the product. The kernel of $\varphi_+$ is the set $q'=-q$, that is $\mathbb{R}\Pi_-$, and the kernel of $\varphi_-$ is $\mathbb{R}\Pi_+$.</p>
-<p>The characters are the two idempotent coordinates, so the algebra is recovered from its characters: the map $Q\mapsto(\varphi_+(Q),\varphi_-(Q))$ is the isomorphism $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$. Two characters, two coordinates, one isomorphism.</p>
+<p>with kernels $\ker\digamma_{\mathrm{map},\pm}=\mathbb{R}\Pi_\mp$.</p>
+<p><strong>Proof.</strong> A character fixes $\mathbb{R}$ and sends $j$ to an element $\xi$ with $\xi^2=1$, hence to $\xi=\pm1$. For $\xi=1$ the value on $Q$ is $q+q'$ and for $\xi=-1$ it is $q-q'$; each is additive, multiplicative and unital, since $(q+q')(c+c')$ and $(q-q')(c-c')$ are the two coordinates of the product. The kernel of $\digamma_{\mathrm{map},+}$ is the set $q'=-q$, that is $\mathbb{R}\Pi_-$, and the kernel of $\digamma_{\mathrm{map},-}$ is $\mathbb{R}\Pi_+$.</p>
+<p>The characters are the two idempotent coordinates, so the algebra is recovered from its characters: the map $Q\mapsto(\digamma_{\mathrm{map},+}(Q),\digamma_{\mathrm{map},-}(Q))$ is the isomorphism $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$. Two characters, two coordinates, one isomorphism.</p>
 <h3 id="the-values-on-the-idempotents">The Values on the Idempotents</h3>
 <p>The characters read the idempotents as the two coordinate projectors,</p>
 <p>$$
-\varphi_+(\Pi_+)=1,\quad \varphi_+(\Pi_-)=0, \qquad \varphi_-(\Pi_+)=0,\quad \varphi_-(\Pi_-)=1 ,
+\digamma_{\mathrm{map},+}(\Pi_+)=1,\quad \digamma_{\mathrm{map},+}(\Pi_-)=0, \qquad \digamma_{\mathrm{map},-}(\Pi_+)=0,\quad \digamma_{\mathrm{map},-}(\Pi_-)=1 ,
 $$</p>
 <p>so each character is the evaluation of the Peirce coordinate it names and vanishes on the other idempotent. The two values on an element are its two Peirce coordinates, which is the reason the idempotent coordinates are also called the spectral coordinates (<em>Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number</em>).</p>
 <h3 id="why-there-are-exactly-two">Why There Are Exactly Two</h3>
@@ -116,7 +116,7 @@ $$</p>
 <p>Over $\mathbb{R}$ there are exactly two finite étale algebras of rank two up to isomorphism: the split one, $\mathbb{R}\times\mathbb{R}$, and the field $\mathbb{C}$. The two are the two classes of the rank-two cover. The field is connected, its spectrum is one point with residue field $\mathbb{C}$, and its two characters into $\mathbb{C}$ are the identity and the conjugation, exchanged by the Galois action. The split algebra is disconnected, its spectrum is two points with residue field $\mathbb{R}$, and its two characters are already defined over the base. The count of characters is two in both cases; what changes is whether the two points are one point with a degree-two residue field or two points with residue field the base.</p>
 <h2 id="the-exchange-and-the-only-automorphism">The Exchange and the Only Automorphism</h2>
 <h3 id="the-exchange-acts-by-transposition">The Exchange Acts by Transposition</h3>
-<p>The conjugation $\bar\cdot$, $j\mapsto-j$, sends $\varphi_+$ to $\varphi_-$ and $\varphi_-$ to $\varphi_+$, since $\varphi_\pm(\bar Q)=\varphi_\mp(Q)$. On the spectrum it acts as the transposition of the two points, freely and transitively: one orbit of size two.</p>
+<p>The conjugation $\bar\cdot$, $j\mapsto-j$, sends $\digamma_{\mathrm{map},+}$ to $\digamma_{\mathrm{map},-}$ and $\digamma_{\mathrm{map},-}$ to $\digamma_{\mathrm{map},+}$, since $\digamma_{\mathrm{map},\pm}(\bar Q)=\digamma_{\mathrm{map},\mp}(Q)$. On the spectrum it acts as the transposition of the two points, freely and transitively: one orbit of size two.</p>
 <h3 id="why-it-is-the-only-one">Why It Is the Only One</h3>
 <p>The automorphisms of the algebra are the identity and the conjugation (<em>The Involutions, the Subspaces and the Idempotent Lines of the Split-Complex Space</em>), so the automorphism group is $\mathbb{Z}/2\mathbb{Z}$ and its action on the two points is the full symmetric group of the set. The group is the same as the Galois group of $\mathbb{C}/\mathbb{R}$ and its action is not: there the single point is fixed and the residue field is moved, here the two points are moved and each residue field is fixed.</p>
 <h2 id="the-galois-correspondence-here">The Galois Correspondence Here</h2>
@@ -129,7 +129,7 @@ $$</p>
 <h3 id="the-opposite-conclusion">The Opposite Conclusion</h3>
 <p>The fundamental theorem of Galois theory asks for a normal separable extension and reads the intermediate fields off the subgroups of the group. Here the group is the same $\mathbb{Z}/2\mathbb{Z}$, the rank is the same two, and the invariants are the same base, but the extension is not a field: the algebra splits, the two points are rational, and the correspondence is the trivial one between two two-element sets. This is the split counterpart of <em>Galois Theory of $\mathbb{C}/\mathbb{R}$</em>, and it reaches the opposite conclusion at the one place that matters: there the degree-two extension is a field and the Galois action is transitive on the two embeddings of its residue field, while here the extension is a product and the action is a transposition of two points of the base.</p>
 <h2 id="summary">Summary</h2>
-<p>The characters of $\mathbb{C}_{\mathrm{spl}}$ are the two idempotent coordinates $\varphi_\pm(Q)=q\pm q'$, with kernels the two idempotent lines, and an $\mathbb{R}$-algebra map is fixed by the image of $j$, which satisfies $\xi^2=1$, so there are exactly two. The spectrum is the discrete two-point space $\{\mathbb{R}\Pi_+,\mathbb{R}\Pi_-\}$, each point has residue field $\mathbb{R}$, and the algebra is the ring of all real-valued functions on the two points.</p>
+<p>The characters of $\mathbb{C}_{\mathrm{spl}}$ are the two idempotent coordinates $\digamma_{\mathrm{map},\pm}(Q)=q\pm q'$, with kernels the two idempotent lines, and an $\mathbb{R}$-algebra map is fixed by the image of $j$, which satisfies $\xi^2=1$, so there are exactly two. The spectrum is the discrete two-point space $\{\mathbb{R}\Pi_+,\mathbb{R}\Pi_-\}$, each point has residue field $\mathbb{R}$, and the algebra is the ring of all real-valued functions on the two points.</p>
 <p>The base map is finite étale of rank two and split, so the algebra is a product of two copies of the base and not a field. Up to isomorphism there are two such algebras over $\mathbb{R}$, this one and the field $\mathbb{C}$: the field has one point with a degree-two residue field, the split algebra two points with residue field the base. The conjugation acts on the two points as the transposition, and it is the only automorphism.</p>
 <p>The Galois correspondence holds with two intermediate subalgebras against two subgroups, and it also reads as the correspondence between subalgebras and invariant partitions of the two-point set. The invariants are the base in both the split and the field case; the difference is that the split extension is a product, so the action moves the points instead of the residue field, which is the opposite conclusion to the one drawn for $\mathbb{C}/\mathbb{R}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -142,11 +142,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\varphi_\pm(Q)=q\pm q'$</td>
+<td>$\digamma_{\mathrm{map},\pm}(Q)=q\pm q'$</td>
 <td>The two characters, the two idempotent coordinates</td>
 </tr>
 <tr>
-<td>$\ker\varphi_\pm=\mathbb{R}\Pi_\mp$</td>
+<td>$\ker\digamma_{\mathrm{map},\pm}=\mathbb{R}\Pi_\mp$</td>
 <td>The kernel of each character, a minimal ideal</td>
 </tr>
 <tr>

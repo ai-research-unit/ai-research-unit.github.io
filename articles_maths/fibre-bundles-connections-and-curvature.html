@@ -78,9 +78,9 @@
 <h3 id="definitions">Definitions</h3>
 <p><strong>Definition.</strong> A <strong>fibre bundle</strong> with <strong>total space</strong> $E$, <strong>base</strong> $B$ and <strong>fibre</strong> $F$ is a smooth map $\pi : E \to B$ together with a cover $\{Ζ_\alpha\}$ of $B$ by open sets and diffeomorphisms</p>
 <p>$$
-\phi_\alpha : \pi^{-1}(Ζ_\alpha) \longrightarrow Ζ_\alpha \times F
+\digamma_{\mathrm{map},\alpha} : \pi^{-1}(Ζ_\alpha) \longrightarrow Ζ_\alpha \times F
 $$</p>
-<p>such that $\pi = \mathrm{pr}_1 \circ \phi_\alpha$ on $\pi^{-1}(Ζ_\alpha)$ and the maps $\phi_\alpha \circ \phi_\beta^{-1}$ are of the form $(x, v) \mapsto (x, g_{\alpha\beta}(x)v)$ for smooth maps $g_{\alpha\beta} : Ζ_\alpha \cap Ζ_\beta \to \operatorname{Diff}(F)$. The data $\{(Ζ_\alpha, \phi_\alpha)\}$ are a <strong>bundle atlas</strong>, the maps $g_{\alpha\beta}$ are the <strong>transition functions</strong>, and the bundle is <strong>trivial</strong> if it admits an atlas with one chart, $E \cong B \times F$.</p>
+<p>such that $\pi = \mathrm{pr}_1 \circ \digamma_{\mathrm{map},\alpha}$ on $\pi^{-1}(Ζ_\alpha)$ and the maps $\digamma_{\mathrm{map},\alpha} \circ \digamma_{\mathrm{map},\beta}^{-1}$ are of the form $(x, v) \mapsto (x, g_{\alpha\beta}(x)v)$ for smooth maps $g_{\alpha\beta} : Ζ_\alpha \cap Ζ_\beta \to \operatorname{Diff}(F)$. The data $\{(Ζ_\alpha, \digamma_{\mathrm{map},\alpha})\}$ are a <strong>bundle atlas</strong>, the maps $g_{\alpha\beta}$ are the <strong>transition functions</strong>, and the bundle is <strong>trivial</strong> if it admits an atlas with one chart, $E \cong B \times F$.</p>
 <p><strong>Definition.</strong> A <strong>structure group</strong> of the bundle is a Lie group $G$ acting on $F$ such that all transition functions take values in $G$; a bundle with structure group $G$ is a <strong>$G$-bundle</strong>. The condition that the transition functions lie in a fixed $G$ is an additional datum; the transition functions of a bundle always lie in the diffeomorphism group of the fibre.</p>
 <p><strong>Proposition (cocycle condition).</strong> The transition functions of a bundle atlas satisfy</p>
 <p>$$

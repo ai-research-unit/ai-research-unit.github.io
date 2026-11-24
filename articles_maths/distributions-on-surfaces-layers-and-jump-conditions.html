@@ -78,11 +78,11 @@ $$
 $$
 separates the classical derivative of a piecewise smooth function from the layer its jump creates, where $\{\partial/\partial x_j u\}$ is the classical derivative away from the surface and $[u]$ is the jump. The <strong>jump conditions</strong> of a differential equation are the equations obtained by collecting the layers in $Pu=f$, and the <strong>characteristic</strong> of the principal symbol in the normal direction decides whether a jump is possible at all.</p>
 <p>The article is organised as follows. The surface delta and the coarea formula are established first; the jump formula and its corollaries for the gradient, the divergence and the rotor follow; the layer expansion of a distribution supported on a surface is then given, with the single and double layers as its first terms. The surface differential operators and the two layer identities are treated next, and the article closes with the jump conditions of first- and second-order equations, with the Rankine–Hugoniot condition of a conservation law, and with the trace problem that decides when a restriction to the surface exists.</p>
-<p>Throughout, $S \subseteq \mathbb{R}^n$ is a hypersurface of class $C^2$, $n \ge 2$, described near a point by a defining function $\varphi$ with $S = \{\varphi = 0\}$ and $\tilde\nabla_\Phi\varphi \neq 0$ on $S$. The unit normal is
+<p>Throughout, $S \subseteq \mathbb{R}^n$ is a hypersurface of class $C^2$, $n \ge 2$, described near a point by a defining function $\digamma_{\mathrm{map}}$ with $S = \{\digamma_{\mathrm{map}} = 0\}$ and $\tilde\nabla_\Phi\digamma_{\mathrm{map}} \neq 0$ on $S$. The unit normal is
 $$
-n = \frac{\tilde\nabla_\Phi\varphi}{|\tilde\nabla_\Phi\varphi|},
+n = \frac{\tilde\nabla_\Phi\digamma_{\mathrm{map}}}{|\tilde\nabla_\Phi\digamma_{\mathrm{map}}|},
 $$
-oriented so that $\varphi$ increases across $S$ in the direction of $n$. The <strong>jump</strong> of a function across $S$ is
+oriented so that $\digamma_{\mathrm{map}}$ increases across $S$ in the direction of $n$. The <strong>jump</strong> of a function across $S$ is
 $$
 [u] = u^{+} - u^{-}, \qquad u^{\pm}(x) = \lim_{\varepsilon \to +0} u(x \pm \varepsilon n),
 $$
@@ -92,34 +92,34 @@ the value on the far side minus the value on the near side with respect to $n$. 
 <h3 id="the-surface-measure-and-the-delta">The Surface Measure and the Delta</h3>
 <p><strong>Definition.</strong> The <strong>surface delta</strong> of $S$ is the distribution
 $$
-\langle \delta_S, \psi \rangle = \int_S \psi\, dS, \qquad \psi \in \mathcal{D}(\mathbb{R}^n),
+\langle \delta_S, Ξ_{\mathrm{wfn}} \rangle = \int_S Ξ_{\mathrm{wfn}}\, dS, \qquad Ξ_{\mathrm{wfn}} \in \mathcal{D}(\mathbb{R}^n),
 $$
 where $dS$ is the surface measure of $S$. It is a positive measure on $\mathbb{R}^n$ of order $0$, its support is exactly $S$, and it is singular with respect to Lebesgue measure.</p>
 <p>A distribution of order zero supported on a hypersurface is integration against a measure carried by that hypersurface, by the structure theorem of <em>Distributions and Fundamental Solutions</em>; $\delta_S$ is the case in which the measure is the surface measure itself, and a general such measure is $g\,\delta_S$ for a density $g$ on $S$.</p>
 <h3 id="the-coarea-formula">The Coarea Formula</h3>
-<p><strong>Proposition (the surface delta as a composed delta).</strong> Let $\varphi$ be a defining function of $S$ with $\tilde\nabla_\Phi\varphi \neq 0$ on $S$. Then
+<p><strong>Proposition (the surface delta as a composed delta).</strong> Let $\digamma_{\mathrm{map}}$ be a defining function of $S$ with $\tilde\nabla_\Phi\digamma_{\mathrm{map}} \neq 0$ on $S$. Then
 $$
-\delta_S = |\tilde\nabla_\Phi\varphi|\,\delta \circ \varphi,
+\delta_S = |\tilde\nabla_\Phi\digamma_{\mathrm{map}}|\,\delta \circ \digamma_{\mathrm{map}},
 $$
-where $\delta$ is the delta on the real line and $\delta \circ \varphi$ is the distribution $\psi \mapsto \langle \delta, \psi \rangle$ composed with $\varphi$.</p>
-<p><em>Proof.</em> The coarea formula applied to the level sets of $\varphi$ states that for $\psi \in C_c^\infty(\mathbb{R}^n)$
+where $\delta$ is the delta on the real line and $\delta \circ \digamma_{\mathrm{map}}$ is the distribution $Ξ_{\mathrm{wfn}} \mapsto \langle \delta, Ξ_{\mathrm{wfn}} \rangle$ composed with $\digamma_{\mathrm{map}}$.</p>
+<p><em>Proof.</em> The coarea formula applied to the level sets of $\digamma_{\mathrm{map}}$ states that for $Ξ_{\mathrm{wfn}} \in C_c^\infty(\mathbb{R}^n)$
 $$
-\int_{\mathbb{R}^n} \psi(x)\,\delta(\varphi(x))\,dx = \int_{\mathbb{R}} \delta(t)\left(\int_{\{\varphi = t\}} \frac{\psi}{|\tilde\nabla_\Phi\varphi|}\, dS_t\right) dt = \int_S \frac{\psi}{|\tilde\nabla_\Phi\varphi|}\, dS,
+\int_{\mathbb{R}^n} Ξ_{\mathrm{wfn}}(x)\,\delta(\digamma_{\mathrm{map}}(x))\,dx = \int_{\mathbb{R}} \delta(t)\left(\int_{\{\digamma_{\mathrm{map}} = t\}} \frac{Ξ_{\mathrm{wfn}}}{|\tilde\nabla_\Phi\digamma_{\mathrm{map}}|}\, dS_t\right) dt = \int_S \frac{Ξ_{\mathrm{wfn}}}{|\tilde\nabla_\Phi\digamma_{\mathrm{map}}|}\, dS,
 $$
-because the coarea measure of the level set $\{\varphi = t\}$ is $dS_t/|\tilde\nabla_\Phi\varphi|$. Multiplying both sides by $|\tilde\nabla_\Phi\varphi|$ gives the stated identity.</p>
-<p>The identity is the reason a surface is described by a distribution at all: it converts the codimension-one geometry into a one-dimensional delta composed with the defining function, and it is the form in which a surface is entered into a differential operator. Its normalisation is the thing to check: for the unit sphere in $\mathbb{R}^3$, with $\varphi(x) = |x| - 1$ and $|\tilde\nabla_\Phi\varphi| = 1$, the pairing of $\delta_S$ with the constant $1$ is the area $4\pi$.</p>
+because the coarea measure of the level set $\{\digamma_{\mathrm{map}} = t\}$ is $dS_t/|\tilde\nabla_\Phi\digamma_{\mathrm{map}}|$. Multiplying both sides by $|\tilde\nabla_\Phi\digamma_{\mathrm{map}}|$ gives the stated identity.</p>
+<p>The identity is the reason a surface is described by a distribution at all: it converts the codimension-one geometry into a one-dimensional delta composed with the defining function, and it is the form in which a surface is entered into a differential operator. Its normalisation is the thing to check: for the unit sphere in $\mathbb{R}^3$, with $\digamma_{\mathrm{map}}(x) = |x| - 1$ and $|\tilde\nabla_\Phi\digamma_{\mathrm{map}}| = 1$, the pairing of $\delta_S$ with the constant $1$ is the area $4\pi$.</p>
 <h3 id="the-chain-rule-with-the-heaviside-function">The Chain Rule with the Heaviside Function</h3>
 <p><strong>Proposition.</strong> Let $H(t) = \mathbf{1}_{t&gt;0}$ be the Heaviside function. Then, in $\mathcal{D}'(\mathbb{R}^n)$,
 $$
-\partial/\partial x_j H(\varphi) = n_j\,\delta_S, \qquad \tilde\nabla_\Phi H(\varphi) = n\,\delta_S .
+\partial/\partial x_j H(\digamma_{\mathrm{map}}) = n_j\,\delta_S, \qquad \tilde\nabla_\Phi H(\digamma_{\mathrm{map}}) = n\,\delta_S .
 $$</p>
-<p><em>Proof.</em> The chain rule for the composition of a distribution with a smooth function whose gradient does not vanish gives $\partial/\partial x_j H(\varphi) = \varphi_j\,(\delta \circ \varphi)$. By the proposition above, $\delta \circ \varphi = \delta_S/|\tilde\nabla_\Phi\varphi|$, so $\partial/\partial x_j H(\varphi) = \varphi_j \delta_S/|\tilde\nabla_\Phi\varphi| = n_j \delta_S$.</p>
-<p>Thus $H(\varphi)$ is the indicator of the side $\{\varphi &gt; 0\}$, its gradient is the <strong>normal layer</strong> $n\,\delta_S$, and the two-sided classical derivative of $H(\varphi)$ is zero. The layer is exactly the term produced by the discontinuity of the indicator, and the formula is the building block of the jump formula below.</p>
+<p><em>Proof.</em> The chain rule for the composition of a distribution with a smooth function whose gradient does not vanish gives $\partial/\partial x_j H(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map},j}\,(\delta \circ \digamma_{\mathrm{map}})$. By the proposition above, $\delta \circ \digamma_{\mathrm{map}} = \delta_S/|\tilde\nabla_\Phi\digamma_{\mathrm{map}}|$, so $\partial/\partial x_j H(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map},j} \delta_S/|\tilde\nabla_\Phi\digamma_{\mathrm{map}}| = n_j \delta_S$.</p>
+<p>Thus $H(\digamma_{\mathrm{map}})$ is the indicator of the side $\{\digamma_{\mathrm{map}} &gt; 0\}$, its gradient is the <strong>normal layer</strong> $n\,\delta_S$, and the two-sided classical derivative of $H(\digamma_{\mathrm{map}})$ is zero. The layer is exactly the term produced by the discontinuity of the indicator, and the formula is the building block of the jump formula below.</p>
 <h2 id="the-jump-formula">The Jump Formula</h2>
 <h3 id="piecewise-smooth-functions">Piecewise Smooth Functions</h3>
-<p><strong>Definition.</strong> A function $u$ on a neighbourhood $\Omega$ of a point of $S$ is <strong>piecewise smooth</strong> across $S$ if $u = u^{+}H(\varphi) + u^{-}(1 - H(\varphi))$, with $u^{+}$ and $u^{-}$ of class $C^2$ on $\Omega$. Its <strong>classical derivative away from $S$</strong> is
+<p><strong>Definition.</strong> A function $u$ on a neighbourhood $\Omega$ of a point of $S$ is <strong>piecewise smooth</strong> across $S$ if $u = u^{+}H(\digamma_{\mathrm{map}}) + u^{-}(1 - H(\digamma_{\mathrm{map}}))$, with $u^{+}$ and $u^{-}$ of class $C^2$ on $\Omega$. Its <strong>classical derivative away from $S$</strong> is
 $$
-\{\partial/\partial x_j u\} = H(\varphi)\,\partial/\partial x_j u^{+} + (1 - H(\varphi))\,\partial/\partial x_j u^{-},
+\{\partial/\partial x_j u\} = H(\digamma_{\mathrm{map}})\,\partial/\partial x_j u^{+} + (1 - H(\digamma_{\mathrm{map}}))\,\partial/\partial x_j u^{-},
 $$
 and its <strong>jump</strong> is $[u] = u^{+}|_S - u^{-}|_S$, a function on $S$.</p>
 <p>The definition applies unchanged when the two extensions are smooth on the two closed sides and the derivatives are declared to be the one-sided ones; it is local and it does not require $S$ to be closed.</p>
@@ -128,9 +128,9 @@ and its <strong>jump</strong> is $[u] = u^{+}|_S - u^{-}|_S$, a function on $S$.
 $$
 \boxed{\;\partial/\partial x_j u = \{\partial/\partial x_j u\} + [u]\,n_j\,\delta_S\;} .
 $$</p>
-<p><em>Proof.</em> Differentiate the product $u = u^{+}H(\varphi) + u^{-}(1 - H(\varphi))$ by the Leibniz rule:
+<p><em>Proof.</em> Differentiate the product $u = u^{+}H(\digamma_{\mathrm{map}}) + u^{-}(1 - H(\digamma_{\mathrm{map}}))$ by the Leibniz rule:
 $$
-\partial/\partial x_j u = H(\varphi)\,\partial/\partial x_j u^{+} + (1 - H(\varphi))\,\partial/\partial x_j u^{-} + (u^{+} - u^{-})\,\partial/\partial x_j H(\varphi).
+\partial/\partial x_j u = H(\digamma_{\mathrm{map}})\,\partial/\partial x_j u^{+} + (1 - H(\digamma_{\mathrm{map}}))\,\partial/\partial x_j u^{-} + (u^{+} - u^{-})\,\partial/\partial x_j H(\digamma_{\mathrm{map}}).
 $$
 The first two terms are $\{\partial/\partial x_j u\}$ and the last is $(u^{+} - u^{-})n_j \delta_S = [u]n_j\delta_S$ by the chain rule above.</p>
 <p>The formula is the distributional content of the divergence theorem with a discontinuous integrand, and it is valid whatever the orientation of $n$: reversing $n$ reverses both the sign of $n_j$ and the sign of $[u]$, since the two traces are interchanged.</p>
@@ -159,11 +159,11 @@ $$</p>
 <h3 id="single-and-double-layers">Single and Double Layers</h3>
 <p><strong>Definition.</strong> Let $g$ be smooth on $S$. The <strong>single layer</strong> of density $g$ is the distribution $g\,\delta_S$, with
 $$
-\langle g\,\delta_S, \psi \rangle = \int_S g\,\psi\, dS .
+\langle g\,\delta_S, Ξ_{\mathrm{wfn}} \rangle = \int_S g\,Ξ_{\mathrm{wfn}}\, dS .
 $$
 The <strong>double layer</strong> of density $g$ is the distribution $g\,\partial/\partial n\delta_S$, where $\partial/\partial n = n \cdot \tilde\nabla_\Phi$ is the normal derivative, with
 $$
-\langle g\,\partial/\partial n\delta_S, \psi \rangle = -\int_S \bigl(g\,\partial/\partial n \psi + \psi\,\partial/\partial n g\bigr) dS .
+\langle g\,\partial/\partial n\delta_S, Ξ_{\mathrm{wfn}} \rangle = -\int_S \bigl(g\,\partial/\partial n Ξ_{\mathrm{wfn}} + Ξ_{\mathrm{wfn}}\,\partial/\partial n g\bigr) dS .
 $$</p>
 <p>The single layer is a measure and has order $0$; the double layer has order $1$ and is not a measure. The two names are the classical ones of potential theory, where $g\delta_S$ is the density of a distribution of charge on $S$ and $g\partial/\partial n\delta_S$ is the density of a distribution of dipoles normal to $S$.</p>
 <h3 id="the-structure-of-a-distribution-supported-on-a-surface">The Structure of a Distribution Supported on a Surface</h3>
@@ -172,11 +172,11 @@ $$
 \boxed{\;u = \sum_{k=0}^{N} \partial^k/\partial n^k(g_k\,\delta_S)\;},
 $$
 with densities $g_k$ that are distributions on $S$.</p>
-<p><em>Proof (local).</em> Flatten the surface: near a point choose coordinates $(x',x_n)$ in which $\varphi = x_n$ and $S = \{x_n = 0\}$, so that $n = e_n$ and $\delta_S = \delta(x_n)$. A distribution on $\mathbb{R}^n$ supported in the hyperplane $x_n = 0$ is a finite sum of derivatives of the delta in the normal variable, acting on the tangential variables as a parameter,
+<p><em>Proof (local).</em> Flatten the surface: near a point choose coordinates $(x',x_n)$ in which $\digamma_{\mathrm{map}} = x_n$ and $S = \{x_n = 0\}$, so that $n = e_n$ and $\delta_S = \delta(x_n)$. A distribution on $\mathbb{R}^n$ supported in the hyperplane $x_n = 0$ is a finite sum of derivatives of the delta in the normal variable, acting on the tangential variables as a parameter,
 $$
 u = \sum_{k=0}^{N} g_k(x')\,\delta^{(k)}(x_n),
 $$
-with $g_k \in \mathcal{D}'(\mathbb{R}^{n-1})$; this is the structure theorem applied in the normal variable with the tangential dependence retained. Since $\delta^{(k)}(x_n) = \partial^k/\partial n^k\delta(x_n)$ in these coordinates, the display is the stated expansion. The densities are unique because the coefficients of a distribution supported on a hyperplane are determined by its pairings with the test functions $\psi(x')x_n^{k}$.</p>
+with $g_k \in \mathcal{D}'(\mathbb{R}^{n-1})$; this is the structure theorem applied in the normal variable with the tangential dependence retained. Since $\delta^{(k)}(x_n) = \partial^k/\partial n^k\delta(x_n)$ in these coordinates, the display is the stated expansion. The densities are unique because the coefficients of a distribution supported on a hyperplane are determined by its pairings with the test functions $Ξ_{\mathrm{wfn}}(x')x_n^{k}$.</p>
 <p>The expansion is the surface analogue of the statement that a distribution supported at a point is a combination of $\delta$ and its derivatives. Its order-zero term is the single layer, its order-one term the double layer, and the higher terms the layers of higher order. Every layer is thus a normal derivative of a single layer, and a differential operator produces layers only up to the order of the operator: a first-order operator can produce at most a single layer, a second-order operator at most a double layer.</p>
 <h3 id="the-laplacian-of-a-piecewise-smooth-function">The Laplacian of a Piecewise Smooth Function</h3>
 <p><strong>Example.</strong> Let $S = \{x_n = 0\}$ locally and let $u$ be piecewise smooth across it. Then
@@ -193,9 +193,9 @@ $$
 $$
 For a vector field $a$ tangent to $S$ (so $a \cdot n = 0$), the <strong>surface divergence</strong> $\mathrm{div}_S\,a$ is the scalar function on $S$ defined by the integration by parts
 $$
-\int_S (\mathrm{div}_S\,a)\,\psi\, dS = -\int_S a \cdot \nabla_S \psi\, dS
+\int_S (\mathrm{div}_S\,a)\,Ξ_{\mathrm{wfn}}\, dS = -\int_S a \cdot \nabla_S Ξ_{\mathrm{wfn}}\, dS
 $$
-for every smooth $\psi$ on $S$.</p>
+for every smooth $Ξ_{\mathrm{wfn}}$ on $S$.</p>
 <p>The definition is intrinsic: it uses only the tangential field and the surface measure, and it does not depend on how $a$ is extended off $S$. The surface divergence theorem, obtained from Stokes' theorem for the $(n-1)$-form dual to $a$, is
 $$
 \int_S \mathrm{div}_S\,a\, dS = \oint_{\partial S} a \cdot m\, d\ell,
@@ -274,7 +274,7 @@ $$
 For Burgers' equation $f(u) = u^2/2$ this gives the classical shock speed $s = (u^{+} + u^{-})/2$, verified by the identity $(u^{+2} - u^{-2})/2 = \tfrac12(u^{+} + u^{-})(u^{+} - u^{-})$. The Rankine–Hugoniot condition is the nonlinear replacement for the kernel condition of the linear first-order equation: it is one scalar equation for the jump $[u]$ and the shock speed, and it does not by itself select the physically admissible shock, which is the role of the entropy conditions of <em>Partial Differential Equations</em>.</p>
 <h2 id="traces-and-restriction">Traces and Restriction</h2>
 <h3 id="the-restriction-problem">The Restriction Problem</h3>
-<p>The jump formula presupposes that the two traces $u^{\pm}$ exist. For a distribution the restriction to a surface is not automatic: the pairing $\langle u, \psi\,\delta_S\rangle$ need not be defined, because the product of $u$ with $\delta_S$ requires that their wavefront sets be transverse, and the wavefront set of $\delta_S$ is the conormal bundle $N(S)$ of $S$. The restriction $u|_S$ is therefore defined when
+<p>The jump formula presupposes that the two traces $u^{\pm}$ exist. For a distribution the restriction to a surface is not automatic: the pairing $\langle u, Ξ_{\mathrm{wfn}}\,\delta_S\rangle$ need not be defined, because the product of $u$ with $\delta_S$ requires that their wavefront sets be transverse, and the wavefront set of $\delta_S$ is the conormal bundle $N(S)$ of $S$. The restriction $u|_S$ is therefore defined when
 $$
 \operatorname{WF}(u) \cap N(S) = \varnothing ,
 $$
@@ -300,9 +300,9 @@ expresses the jump of the boundary value through a delta. This is the jump formu
 <p>The first-order systems of mathematical physics — the Maxwell system, the equations of elasticity, the linearised Euler equations — are all of the form $\sum_j a_j\partial/\partial x_j u + bu = f$ with a principal symbol that is symmetric or antisymmetric in a suitable inner product, and their jump conditions are the kernel condition $\sigma_P(n)[u] = 0$ together with the surface conservation law. For the Maxwell system the principal symbol in the normal direction is singular on the null cone, and its kernel — one complex dimension, that is two real dimensions — is spanned by the two transverse polarisations of the wave front: the count of polarisations is the dimension of the kernel, and it is computed from the principal symbol alone. The electromagnetic reading of this calculus, with the fields, the sources and the energy balance in the biquaternion formulation, is the subject of the electromagnetism articles of the corpus; the algebra of the layers is that developed here.</p>
 <h2 id="biquaternion-valued-distributions">Biquaternion-Valued Distributions</h2>
 <p>Everything so far is scalar-valued. Two of the corpus's articles that use this calculus — the shock article and the record of the electro-gravimagnetic programme — carry it with <strong>biquaternion-valued</strong> densities, and the algebra-valued theory is the scalar theory applied to each component with the product of the algebra carried along. It is worth one section, because the algebra adds exactly one new ingredient: the normal in the jump formula multiplies a biquaternion gap.</p>
-<p><strong>Test biquaternions and the dual.</strong> A <strong>test biquaternion</strong> is $\Phi = \phi + \Phi_1\vec e_x + \Phi_2\vec e_y + \Phi_3\vec e_z$ with each of the four components in $\mathcal{D}(\mathbb{R}^4)$; call the space $\mathcal{B}(M)$, the algebra-valued analogue of $\mathcal{D}$. Its dual $\mathcal{B}'(M)$ is the space of continuous linear functionals on it, with the pairing
+<p><strong>Test biquaternions and the dual.</strong> A <strong>test biquaternion</strong> is $\Phi = \digamma_{\mathrm{map}} + \Phi_1\vec e_x + \Phi_2\vec e_y + \Phi_3\vec e_z$ with each of the four components in $\mathcal{D}(\mathbb{R}^4)$; call the space $\mathcal{B}(M)$, the algebra-valued analogue of $\mathcal{D}$. Its dual $\mathcal{B}'(M)$ is the space of continuous linear functionals on it, with the pairing
 $$
-(\hat F, \Phi) = (\hat f, \phi) + \sum_{j=1}^{3}(\hat F_j, \Phi_j),
+(\hat F, \Phi) = (\hat f, \digamma_{\mathrm{map}}) + \sum_{j=1}^{3}(\hat F_j, \Phi_j),
 $$
 each bracket being the scalar pairing of <em>Distributions and Fundamental Solutions</em>. A biquaternion-valued function $F$ defines a functional by integration against it, and a functional that cannot be so written is <strong>singular</strong>. The scalar distributions are the purely scalar elements of $\mathcal{B}'(M)$ and the vector distributions the purely vector ones, so the scalar theory sits inside this one and no statement above is lost.</p>
 <p><strong>Layers with biquaternion density.</strong> The layer of order zero with density $F$ is integration over the surface,
@@ -329,7 +329,7 @@ $$
 $$
 where the product on the right is the algebra's and the transform is the coefficientwise one of <em>Biquaternion Continuous Harmonic Analysis</em>. The second rule is why the algebra-valued transform is entrywise on the sum of two fields and not on their convolution: the product that survives is the non-commutative one. This is the algebra-valued case of the convolution theorem the harmonic-analysis articles develop, and it is the rule the shifted-gradient solution constructions of the electromagnetism articles use when they convolve a scalar potential with a source.</p>
 <h2 id="summary">Summary</h2>
-<p>A distribution supported on a hypersurface $S$ is built from the surface delta $\delta_S$ and its normal derivatives. The surface delta is defined by integration over $S$ and equals $|\tilde\nabla_\Phi\varphi|\,\delta\circ\varphi$ for a defining function $\varphi$, by the coarea formula; its normal derivative is the double layer, and every distribution supported on $S$ is locally a finite sum of layers $\partial^k/\partial n^k(g_k\delta_S)$, the single layer being the term of order zero and the double layer the term of order one.</p>
+<p>A distribution supported on a hypersurface $S$ is built from the surface delta $\delta_S$ and its normal derivatives. The surface delta is defined by integration over $S$ and equals $|\tilde\nabla_\Phi\digamma_{\mathrm{map}}|\,\delta\circ\digamma_{\mathrm{map}}$ for a defining function $\digamma_{\mathrm{map}}$, by the coarea formula; its normal derivative is the double layer, and every distribution supported on $S$ is locally a finite sum of layers $\partial^k/\partial n^k(g_k\delta_S)$, the single layer being the term of order zero and the double layer the term of order one.</p>
 <p>A piecewise smooth function $u$ has a classical derivative away from $S$ and a jump $[u]$ across it, and the jump formula $\partial/\partial x_j\,u = \{\partial/\partial x_j\,u\} + [u]n_j\delta_S$ relates them. Its corollaries are the layer decomposition of the gradient, of the divergence, $\mathrm{div}\,A = \{\mathrm{div}\,A\} + (n\cdot[A])\delta_S$, and of the rotor, $\mathrm{rot}\,A = \{\mathrm{rot}\,A\} + n\times[A]\delta_S$, together with the jump of a product $[uv] = u^{+}[v] + [u]v^{-}$. The divergence and the rotor see the normal and the tangential parts of the jump, and the singular parts are the surface charge and the surface current.</p>
 <p>The surface operators $\nabla_S$, $\mathrm{div}_S$ and $\mathrm{rot}_S$ are the intrinsic operators of $S$, defined by integration by parts and Stokes' theorem. A tangential simple layer is differentiated into a tangential simple layer, $\mathrm{div}(a\delta_S) = (\mathrm{div}_S\,a)\delta_S$, whereas a normal layer is differentiated into a double layer, $\mathrm{div}(n\delta_S) = \partial/\partial n\delta_S + (\mathrm{div}_S\,n)\delta_S$; this is why surface charges and surface currents are simple layers and double layers arise only from the normal direction or from a second derivative.</p>
 <p>The jump conditions of a linear operator are read from the singular part of $Pu$, whose highest layer carries the principal symbol evaluated on the normal. A non-characteristic surface forces the jump to vanish; a characteristic surface admits the jumps in the kernel of $\sigma_P(n)$, and for a second-order operator the double-layer condition is the continuity of the solution. The nonlinear instance is the Rankine–Hugoniot condition $[u]\nu_t + \sum_j[f_j(u)]\nu_{x_j} = 0$ of a conservation law. The traces on which all of this rests exist for Sobolev functions above the threshold $s = 1/2$ and, for a distribution, exactly when its wavefront set avoids the conormal bundle of $S$.</p>
@@ -343,8 +343,8 @@ where the product on the right is the algebra's and the transform is the coeffic
 </thead>
 <tbody>
 <tr>
-<td>$S$, $\varphi$, $n$</td>
-<td>hypersurface, defining function with $S = \{\varphi = 0\}$, unit normal $\tilde\nabla_\Phi\varphi/\lvert\nabla\varphi\rvert$</td>
+<td>$S$, $\digamma_{\mathrm{map}}$, $n$</td>
+<td>hypersurface, defining function with $S = \{\digamma_{\mathrm{map}} = 0\}$, unit normal $\tilde\nabla_\Phi\digamma_{\mathrm{map}}/\lvert\nabla\digamma_{\mathrm{map}}\rvert$</td>
 </tr>
 <tr>
 <td>$H$</td>
@@ -352,7 +352,7 @@ where the product on the right is the algebra's and the transform is the coeffic
 </tr>
 <tr>
 <td>$\delta_S$</td>
-<td>surface delta, $\langle\delta_S,\psi\rangle = \int_S\psi\,dS$; the single layer of unit density</td>
+<td>surface delta, $\langle\delta_S,Ξ_{\mathrm{wfn}}\rangle = \int_SΞ_{\mathrm{wfn}}\,dS$; the single layer of unit density</td>
 </tr>
 <tr>
 <td>$\partial/\partial n$</td>

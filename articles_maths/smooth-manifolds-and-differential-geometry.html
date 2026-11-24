@@ -81,17 +81,17 @@
 <p><strong>(b)</strong> $M$ is second countable, that is, it has a countable base for its topology;</p>
 <p><strong>(c)</strong> every point of $M$ has a neighbourhood homeomorphic to an open subset of $\mathbb{R}^n$.</p>
 <p>The three conditions are not redundant. Hausdorffness makes limits unique and prevents the line with two origins; second countability excludes the long line and makes partitions of unity available; the local Euclidean condition makes the space locally compact and locally path connected. The number $n$ is well defined, by the invariance of dimension, which is a theorem of algebraic topology and is quoted as standard.</p>
-<p><strong>Definition.</strong> A <strong>chart</strong> on $M$ is a pair $(\Omega, \varphi)$ where $\Omega \subseteq M$ is open and $\varphi : \Omega \to \varphi(\Omega) \subseteq \mathbb{R}^n$ is a homeomorphism onto an open set. The functions $x_i = \operatorname{pr}_i \circ \varphi$ are the <strong>coordinate functions</strong> of the chart. Two charts $(\Omega, \varphi)$ and $(V, \psi)$ are <strong>smoothly compatible</strong> if either $\Omega \cap V = \emptyset$ or the <strong>transition map</strong></p>
+<p><strong>Definition.</strong> A <strong>chart</strong> on $M$ is a pair $(\Omega, \digamma_{\mathrm{map}})$ where $\Omega \subseteq M$ is open and $\digamma_{\mathrm{map}} : \Omega \to \digamma_{\mathrm{map}}(\Omega) \subseteq \mathbb{R}^n$ is a homeomorphism onto an open set. The functions $x_i = \operatorname{pr}_i \circ \digamma_{\mathrm{map}}$ are the <strong>coordinate functions</strong> of the chart. Two charts $(\Omega, \digamma_{\mathrm{map}})$ and $(V, Ξ_{\mathrm{wfn}})$ are <strong>smoothly compatible</strong> if either $\Omega \cap V = \emptyset$ or the <strong>transition map</strong></p>
 <p>$$
-\psi \circ \varphi^{-1} : \varphi(\Omega \cap V) \longrightarrow \psi(\Omega \cap V)
+Ξ_{\mathrm{wfn}} \circ \digamma_{\mathrm{map}}^{-1} : \digamma_{\mathrm{map}}(\Omega \cap V) \longrightarrow Ξ_{\mathrm{wfn}}(\Omega \cap V)
 $$</p>
 <p>is a diffeomorphism of open subsets of $\mathbb{R}^n$, that is, a bijection that is smooth with smooth inverse.</p>
 <p><strong>Definition.</strong> A <strong>smooth atlas</strong> on $M$ is a family of pairwise smoothly compatible charts whose domains cover $M$. Two atlases are <strong>equivalent</strong> if their union is again an atlas, and a <strong>smooth structure</strong> on $M$ is an equivalence class of atlases, equivalently a maximal atlas. A <strong>smooth manifold</strong> is a topological manifold together with a smooth structure.</p>
 <p><strong>Remark.</strong> A smooth structure is a genuine additional datum on a topological manifold. Milnor's examples of exotic smooth structures on the seven-sphere show that two smooth manifolds may be homeomorphic and not diffeomorphic; the topological and the smooth classifications are therefore different problems. Smooth structures exist on every topological manifold of dimension at most three, and the higher-dimensional existence question is the domain of surgery theory.</p>
 <h3 id="smooth-maps-and-diffeomorphisms">Smooth Maps and Diffeomorphisms</h3>
-<p><strong>Definition.</strong> Let $M$ and $N$ be smooth manifolds of dimensions $m$ and $n$. A continuous map $F : M \to N$ is <strong>smooth</strong> if for every pair of charts $(\Omega, \varphi)$ on $M$ and $(V, \psi)$ on $N$ the composition</p>
+<p><strong>Definition.</strong> Let $M$ and $N$ be smooth manifolds of dimensions $m$ and $n$. A continuous map $F : M \to N$ is <strong>smooth</strong> if for every pair of charts $(\Omega, \digamma_{\mathrm{map}})$ on $M$ and $(V, Ξ_{\mathrm{wfn}})$ on $N$ the composition</p>
 <p>$$
-\psi \circ F \circ \varphi^{-1} : \varphi(\Omega \cap F^{-1}(V)) \longrightarrow \mathbb{R}^n
+Ξ_{\mathrm{wfn}} \circ F \circ \digamma_{\mathrm{map}}^{-1} : \digamma_{\mathrm{map}}(\Omega \cap F^{-1}(V)) \longrightarrow \mathbb{R}^n
 $$</p>
 <p>is smooth as a map of open subsets of Euclidean spaces. The property is local, so it suffices to check it on a cover by charts, and it is independent of the atlases chosen in the equivalence classes.</p>
 <p><strong>Definition.</strong> A smooth map $F : M \to N$ is a <strong>diffeomorphism</strong> if it is bijective and its inverse is smooth. The set of diffeomorphisms $M \to M$ is a group under composition, written $\operatorname{Diff}(M)$.</p>
@@ -107,10 +107,10 @@ $$</p>
 <p><strong>Remark.</strong> The existence of smooth partitions of unity is what distinguishes the smooth category from the topological and the analytic categories: it is the mechanism by which local constructions are glued into global ones, and every global object constructed below by patching — a smooth function, a Riemannian metric, a vector field, a connection — uses it. The construction requires the local finiteness, which is why second countability and paracompactness are imposed in the definition of a manifold.</p>
 <h2 id="the-tangent-space-and-the-differential">The Tangent Space and the Differential</h2>
 <h3 id="curves-and-their-velocities">Curves and Their Velocities</h3>
-<p>Let $M$ be a smooth manifold and $p \in M$. A <strong>smooth curve</strong> through $p$ is a smooth map $\gamma : (-\epsilon, \epsilon) \to M$ with $\gamma(0) = p$. In a chart $(\Omega, \varphi)$ with $\varphi(p) = 0$, the curve has a coordinate expression $\varphi \circ \gamma$, and the velocity of the curve in this chart is the vector $(\varphi \circ \gamma)'(0) \in \mathbb{R}^n$.</p>
-<p><strong>Definition.</strong> Two smooth curves $\gamma_1, \gamma_2$ through $p$ are <strong>tangent at $p$</strong> if for one, hence every, chart $(\Omega, \varphi)$ about $p$ one has $(\varphi \circ \gamma_1)'(0) = (\varphi \circ \gamma_2)'(0)$. Tangency at $p$ is an equivalence relation, and a <strong>tangent vector</strong> at $p$ is an equivalence class of smooth curves through $p$.</p>
+<p>Let $M$ be a smooth manifold and $p \in M$. A <strong>smooth curve</strong> through $p$ is a smooth map $\gamma : (-\epsilon, \epsilon) \to M$ with $\gamma(0) = p$. In a chart $(\Omega, \digamma_{\mathrm{map}})$ with $\digamma_{\mathrm{map}}(p) = 0$, the curve has a coordinate expression $\digamma_{\mathrm{map}} \circ \gamma$, and the velocity of the curve in this chart is the vector $(\digamma_{\mathrm{map}} \circ \gamma)'(0) \in \mathbb{R}^n$.</p>
+<p><strong>Definition.</strong> Two smooth curves $\gamma_1, \gamma_2$ through $p$ are <strong>tangent at $p$</strong> if for one, hence every, chart $(\Omega, \digamma_{\mathrm{map}})$ about $p$ one has $(\digamma_{\mathrm{map}} \circ \gamma_1)'(0) = (\digamma_{\mathrm{map}} \circ \gamma_2)'(0)$. Tangency at $p$ is an equivalence relation, and a <strong>tangent vector</strong> at $p$ is an equivalence class of smooth curves through $p$.</p>
 <p><strong>Definition.</strong> The set of tangent vectors at $p$ is the <strong>tangent space</strong> $T_pM$. It is a real vector space of dimension $n = \dim M$; the vector space structure is defined in a chart by the vector space structure of $\mathbb{R}^n$, and it is independent of the chart because the transition map is a diffeomorphism, so its derivative is a linear isomorphism.</p>
-<p>A chart $(\Omega, \varphi)$ with coordinates $x_1, \ldots, x_n$ determines a basis of $T_pM$ for $p \in \Omega$: the class of the $i$-th coordinate curve $t \mapsto \varphi^{-1}(\varphi(p) + t e_i)$, written $\partial/\partial x_i|_p$. Every tangent vector is uniquely $v = \sum_i v_i \partial/\partial x_i|_p$ with $v_i \in \mathbb{R}$, and under a change of chart the coefficients transform by the Jacobian of the transition map, the <strong>chain rule</strong> for tangent vectors.</p>
+<p>A chart $(\Omega, \digamma_{\mathrm{map}})$ with coordinates $x_1, \ldots, x_n$ determines a basis of $T_pM$ for $p \in \Omega$: the class of the $i$-th coordinate curve $t \mapsto \digamma_{\mathrm{map}}^{-1}(\digamma_{\mathrm{map}}(p) + t e_i)$, written $\partial/\partial x_i|_p$. Every tangent vector is uniquely $v = \sum_i v_i \partial/\partial x_i|_p$ with $v_i \in \mathbb{R}$, and under a change of chart the coefficients transform by the Jacobian of the transition map, the <strong>chain rule</strong> for tangent vectors.</p>
 <h3 id="derivations">Derivations</h3>
 <p><strong>Definition.</strong> A <strong>derivation</strong> at $p$ is an $\mathbb{R}$-linear map $D : C^\infty(M) \to \mathbb{R}$ satisfying the Leibniz rule</p>
 <p>$$
@@ -144,7 +144,7 @@ $$</p>
 <p>$$
 TM = \bigsqcup_{p \in M} T_pM,
 $$</p>
-<p>with the projection $\pi : TM \to M$ sending $T_pM$ to $p$. The charts of $M$ induce charts of $TM$ making it a smooth manifold of dimension $2n$: over a chart $(\Omega, \varphi)$ with coordinates $x_i$, the map $(p, \sum_i v_i \partial/\partial x_i|_p) \mapsto (\varphi(p), v_1, \ldots, v_n)$ is a chart. The <strong>cotangent bundle</strong> $T^*M$ is defined dually.</p>
+<p>with the projection $\pi : TM \to M$ sending $T_pM$ to $p$. The charts of $M$ induce charts of $TM$ making it a smooth manifold of dimension $2n$: over a chart $(\Omega, \digamma_{\mathrm{map}})$ with coordinates $x_i$, the map $(p, \sum_i v_i \partial/\partial x_i|_p) \mapsto (\digamma_{\mathrm{map}}(p), v_1, \ldots, v_n)$ is a chart. The <strong>cotangent bundle</strong> $T^*M$ is defined dually.</p>
 <p>The bundle structure of $TM$, its sections and its transition functions are the first example of the theory, and the tangent bundle is the model on which that theory is built.</p>
 <h2 id="vector-fields-and-the-lie-bracket">Vector Fields and the Lie Bracket</h2>
 <p><strong>Definition.</strong> A <strong>vector field</strong> on $M$ is a smooth section of the tangent bundle, that is, a smooth map $X : M \to TM$ with $\pi \circ X = \mathrm{id}_M$. The space of vector fields is written $\mathrm{X}(M)$; it is a module over the ring $C^\infty(M)$ and a real vector space. In a chart, $X = \sum_i X_i \partial/\partial x_i$ with $X_i \in C^\infty(\Omega)$, and $X$ acts on functions by $X(f) = \sum_i X_i \partial f/\partial x_i$.</p>
@@ -168,14 +168,14 @@ $$</p>
 <p><strong>Remark (integral curves and flows).</strong> An <strong>integral curve</strong> of a vector field $X$ is a smooth curve $\gamma$ with $\gamma'(t) = X(\gamma(t))$ for all $t$, where $\gamma'(t) = d\gamma_t(1)$ is the tangent vector of the curve. The standard existence and uniqueness theorem states that every smooth vector field has, about each point, a unique maximal integral curve through that point, and that the resulting local flow $\Phi_t$ is a local one-parameter group of local diffeomorphisms; the theorem is a statement in the theory of ordinary differential equations, and its proof, together with the analytic properties of the flow, belongs to Part III, where the differential equations are treated. What differential geometry uses is the geometric consequence: two vector fields commute exactly when their local flows commute, and the bracket $[X, Y]$ measures the failure of the infinitesimal parallelograms spanned by $X$ and $Y$ to close.</p>
 <h2 id="submanifolds-the-rank-theorem-and-implicit-function-theorems">Submanifolds, the Rank Theorem and Implicit Function Theorems</h2>
 <h3 id="immersions-submersions-and-submanifolds">Immersions, Submersions and Submanifolds</h3>
-<p><strong>Definition.</strong> A subset $S$ of a smooth manifold $M$ is a <strong>regular submanifold</strong> of dimension $k$ if for every $p \in S$ there is a chart $(\Omega, \varphi)$ of $M$ about $p$ with $\varphi(p) = 0$ such that</p>
+<p><strong>Definition.</strong> A subset $S$ of a smooth manifold $M$ is a <strong>regular submanifold</strong> of dimension $k$ if for every $p \in S$ there is a chart $(\Omega, \digamma_{\mathrm{map}})$ of $M$ about $p$ with $\digamma_{\mathrm{map}}(p) = 0$ such that</p>
 <p>$$
-\varphi(\Omega \cap S) = \{x \in \varphi(\Omega) : x_{k+1} = \cdots = x_n = 0\}.
+\digamma_{\mathrm{map}}(\Omega \cap S) = \{x \in \digamma_{\mathrm{map}}(\Omega) : x_{k+1} = \cdots = x_n = 0\}.
 $$</p>
 <p>Such a chart is <strong>adapted</strong> to $S$. The subspace $S$ then carries a smooth structure of dimension $k$, with charts the restrictions of the adapted charts, and the inclusion $S \hookrightarrow M$ is an embedding.</p>
-<p><strong>Theorem (rank theorem).</strong> Let $F : M \to N$ be a smooth map of constant rank $r$ near $p$. Then there are charts $(\Omega, \varphi)$ about $p$ and $(V, \psi)$ about $F(p)$ with $F(\Omega) \subseteq V$ such that</p>
+<p><strong>Theorem (rank theorem).</strong> Let $F : M \to N$ be a smooth map of constant rank $r$ near $p$. Then there are charts $(\Omega, \digamma_{\mathrm{map}})$ about $p$ and $(V, Ξ_{\mathrm{wfn}})$ about $F(p)$ with $F(\Omega) \subseteq V$ such that</p>
 <p>$$
-\boxed{\;\psi \circ F \circ \varphi^{-1}(x_1, \ldots, x_m) = (x_1, \ldots, x_r, 0, \ldots, 0)\;}.
+\boxed{\;Ξ_{\mathrm{wfn}} \circ F \circ \digamma_{\mathrm{map}}^{-1}(x_1, \ldots, x_m) = (x_1, \ldots, x_r, 0, \ldots, 0)\;}.
 $$</p>
 <p>Consequently, about a point of constant rank $r$, the map $F$ looks like the projection of the first $r$ coordinates followed by the inclusion of the first $r$ coordinates.</p>
 <p><strong>Proof sketch.</strong> The statement is local, so one may work in Euclidean spaces. Composing with linear isomorphisms reduces the derivative at $p$ to the standard form, and the inverse function theorem applied to the map $x \mapsto (F_1(x), \ldots, F_r(x), x_{r+1}, \ldots, x_m)$ produces a change of coordinates in which the first $r$ components of $F$ are the first $r$ coordinates and the remaining components have vanishing derivative; a further argument, using the constancy of the rank, shows the remaining components are independent of the first $r$ variables and then eliminates them by a second change of coordinates in the target.</p>
@@ -216,7 +216,7 @@ $$</p>
 <p><strong>Example (the three-sphere as the unit quaternions).</strong> The unit sphere $S^3$, viewed as the set of unit quaternions, is a Lie group of dimension $3$ under quaternion multiplication, and the map $S^3 \to SO(3)$ sending a unit quaternion $q$ to conjugation $p \mapsto qpq^{-1}$ on the imaginary subspace is a two-to-one covering homomorphism, as in <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>. This identifies $S^3$ with $SU(2)$ and realises the double cover $SU(2) \to SO(3)$ of <em>Matrix Groups and Classical Groups</em>.</p>
 <h2 id="riemannian-metrics-and-the-associated-distance">Riemannian Metrics and the Associated Distance</h2>
 <h3 id="riemannian-metrics">Riemannian Metrics</h3>
-<p><strong>Definition.</strong> A <strong>Riemannian metric</strong> on a smooth manifold $M$ is a smooth assignment to each $p \in M$ of a positive definite inner product $g_p$ on the tangent space $T_pM$, in the sense that for every chart $(\Omega, \varphi)$ with coordinates $x_i$ the functions</p>
+<p><strong>Definition.</strong> A <strong>Riemannian metric</strong> on a smooth manifold $M$ is a smooth assignment to each $p \in M$ of a positive definite inner product $g_p$ on the tangent space $T_pM$, in the sense that for every chart $(\Omega, \digamma_{\mathrm{map}})$ with coordinates $x_i$ the functions</p>
 <p>$$
 g_{ij}(p) = g_p\!\left(\frac{\partial}{\partial x_i}\Big|_p, \frac{\partial}{\partial x_j}\Big|_p\right)
 $$</p>
@@ -270,11 +270,11 @@ $$</p>
 <td>Smooth manifolds; $n = \dim M$</td>
 </tr>
 <tr>
-<td>$(\Omega, \varphi)$, $x_i$</td>
+<td>$(\Omega, \digamma_{\mathrm{map}})$, $x_i$</td>
 <td>Chart and its coordinate functions</td>
 </tr>
 <tr>
-<td>$\psi \circ \varphi^{-1}$</td>
+<td>$Ξ_{\mathrm{wfn}} \circ \digamma_{\mathrm{map}}^{-1}$</td>
 <td>Transition map of two charts; smooth for compatible charts</td>
 </tr>
 <tr>

@@ -203,12 +203,12 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> Replace $e_\mu$ by $e_\mu^{\natural}$ throughout the preceding proof.</p>
 <h3 id="integration-by-parts">Integration by Parts</h3>
-<p><strong>Theorem (integration by parts).</strong> Let $\phi$ be real-valued and $C^1$ on $\bar{\Omega}$ and let $f$ be quaternion-valued and $C^1$ on $\bar{\Omega}$. Then</p>
+<p><strong>Theorem (integration by parts).</strong> Let $\digamma_{\mathrm{map}}$ be real-valued and $C^1$ on $\bar{\Omega}$ and let $f$ be quaternion-valued and $C^1$ on $\bar{\Omega}$. Then</p>
 <p>$$
-\int_\Omega \bigl[\,(D\phi)\,f + \phi\,(Df)\,\bigr] dV = \int_{\partial\Omega} \nu \phi f \, dS.
+\int_\Omega \bigl[\,(D\digamma_{\mathrm{map}})\,f + \digamma_{\mathrm{map}}\,(Df)\,\bigr] dV = \int_{\partial\Omega} \nu \digamma_{\mathrm{map}} f \, dS.
 $$</p>
-<p>Equivalently, $\int_\Omega (D\phi) f \, dV = \int_{\partial\Omega}\nu\phi f\,dS - \int_\Omega \phi\,(Df)\,dV$.</p>
-<p><strong>Proof.</strong> A real scalar $\phi$ commutes with every $e_\mu$, so the Leibniz rule for $D$ gives $D(\phi f) = \sum_\mu e_\mu\partial/\partial q_\mu\,(\phi f) = \sum_\mu e_\mu(\partial/\partial q_\mu\,\phi) f + \sum_\mu e_\mu\phi\partial/\partial q_\mu f = (D\phi)f + \phi\,Df$. The divergence theorem applied to $\phi f$ gives the displayed identity.</p>
+<p>Equivalently, $\int_\Omega (D\digamma_{\mathrm{map}}) f \, dV = \int_{\partial\Omega}\nu\digamma_{\mathrm{map}} f\,dS - \int_\Omega \digamma_{\mathrm{map}}\,(Df)\,dV$.</p>
+<p><strong>Proof.</strong> A real scalar $\digamma_{\mathrm{map}}$ commutes with every $e_\mu$, so the Leibniz rule for $D$ gives $D(\digamma_{\mathrm{map}} f) = \sum_\mu e_\mu\partial/\partial q_\mu\,(\digamma_{\mathrm{map}} f) = \sum_\mu e_\mu(\partial/\partial q_\mu\,\digamma_{\mathrm{map}}) f + \sum_\mu e_\mu\digamma_{\mathrm{map}}\partial/\partial q_\mu f = (D\digamma_{\mathrm{map}})f + \digamma_{\mathrm{map}}\,Df$. The divergence theorem applied to $\digamma_{\mathrm{map}} f$ gives the displayed identity.</p>
 <p><strong>Corollary (scalar Green identity).</strong> Let $u, v$ be real-valued $C^2$ functions on $\bar{\Omega}$. Then</p>
 <p>$$
 \int_\Omega \bigl[\,v\,\Delta u - u\,\Delta v\,\bigr] dV = \int_{\partial\Omega} \Bigl[\,v\,\frac{\partial u}{\partial n} - u\,\frac{\partial v}{\partial n}\,\Bigr] dS,

@@ -72,8 +72,8 @@
         <h1 id="computability-theory"><strong>Computability Theory</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This is the third article of the Natural Numbers system in Part V, and it occupies the <strong>algebra slot</strong> of that system in its effective aspect. The system is again the structure $\mathbb{N}$ of <em>The Natural Numbers</em>, and the object of study is the class of functions $\mathbb{N}^k \to \mathbb{N}$ that can be computed by a finite procedure, together with the sets and the reducibility relations that this class induces. Where <em>Peano Arithmetic and Model Theory</em> studied the sentences true of $\mathbb{N}$ and the incompleteness of any recursive axiomatisation, this article studies the <em>effective</em> content of $\mathbb{N}$: which functions are computable, which sets are decidable or recursively enumerable, and how the undecidable sets are stratified by the arithmetical hierarchy and by the Turing degrees.</p>
-<p>The general theory of computation — Turing machines, the universal machine, the Church–Turing thesis, the halting problem in its machine form — is the subject of Part I's <em>Formal Logic and Computability</em>, and is used here rather than developed; the incompleteness theorems and the arithmetisation of syntax are from <em>Proof Theory and Type Theory</em> and from <em>Peano Arithmetic and Model Theory</em>. What is developed here is the <em>synthetic</em> theory of the computable functions on $\mathbb{N}$: the primitive recursive and recursive definitions, the enumeration $\varphi_e$ of the partial recursive functions, the recursion theorems, the recursively enumerable sets and their completeness, and the two standard stratifications, the arithmetical hierarchy and the Turing degrees. The material on Diophantine equations connects to the model theory of the previous article; the combinatorial functions on $\mathbb{N}$ are not covered here.</p>
-<p>Throughout, computability is that of <em>Formal Logic and Computability</em>: a function is <strong>computable</strong>, or <strong>recursive</strong>, if some Turing machine computes it. The partial recursive functions are enumerated as $\varphi_0, \varphi_1, \varphi_2, \dots$, with $W_e = \operatorname{dom}(\varphi_e)$ the $e$-th <strong>recursively enumerable</strong> (c.e.) set, and $\varphi_e(n)\!\downarrow$ means that the computation halts. The set $K$ is the halting set $\{e : \varphi_e(e)\!\downarrow\}$, and $\emptyset'$ is its Turing degree. Reducibilities are written $\leq_m$ and $\leq_T$, and $\emptyset^{(n)}$ is the $n$-th Turing jump of $\emptyset$.</p>
+<p>The general theory of computation — Turing machines, the universal machine, the Church–Turing thesis, the halting problem in its machine form — is the subject of Part I's <em>Formal Logic and Computability</em>, and is used here rather than developed; the incompleteness theorems and the arithmetisation of syntax are from <em>Proof Theory and Type Theory</em> and from <em>Peano Arithmetic and Model Theory</em>. What is developed here is the <em>synthetic</em> theory of the computable functions on $\mathbb{N}$: the primitive recursive and recursive definitions, the enumeration $\digamma_{\mathrm{fml},e}$ of the partial recursive functions, the recursion theorems, the recursively enumerable sets and their completeness, and the two standard stratifications, the arithmetical hierarchy and the Turing degrees. The material on Diophantine equations connects to the model theory of the previous article; the combinatorial functions on $\mathbb{N}$ are not covered here.</p>
+<p>Throughout, computability is that of <em>Formal Logic and Computability</em>: a function is <strong>computable</strong>, or <strong>recursive</strong>, if some Turing machine computes it. The partial recursive functions are enumerated as $\digamma_{\mathrm{fml},0}, \digamma_{\mathrm{fml},1}, \digamma_{\mathrm{fml},2}, \dots$, with $W_e = \operatorname{dom}(\digamma_{\mathrm{fml},e})$ the $e$-th <strong>recursively enumerable</strong> (c.e.) set, and $\digamma_{\mathrm{fml},e}(n)\!\downarrow$ means that the computation halts. The set $K$ is the halting set $\{e : \digamma_{\mathrm{fml},e}(e)\!\downarrow\}$, and $\emptyset'$ is its Turing degree. Reducibilities are written $\leq_m$ and $\leq_T$, and $\emptyset^{(n)}$ is the $n$-th Turing jump of $\emptyset$.</p>
 <h2 id="recursive-functions">Recursive Functions</h2>
 <h3 id="primitive-recursion">Primitive Recursion</h3>
 <p><strong>Definition.</strong> The <strong>primitive recursive functions</strong> are the smallest class of partial functions $\mathbb{N}^k \to \mathbb{N}$ containing</p>
@@ -107,33 +107,33 @@ $$</p>
 <p><strong>Theorem (Church–Turing).</strong> A partial function $\mathbb{N}^k \to \mathbb{N}$ is partial recursive if and only if it is computable by a Turing machine. This identification is the <strong>Church–Turing thesis</strong>; it is a thesis because it identifies a formal class with an informal notion.</p>
 <p><strong>Proof.</strong> The direction from machines to functions is a simulation of a machine by primitive recursion on its configurations, with unbounded search for the halting time; the other direction is the encoding of the recursion scheme by a machine. Both simulations are carried out in <em>Formal Logic and Computability</em>.</p>
 <p><strong>Theorem (Kleene normal form).</strong> There is a primitive recursive predicate $T(e, n, s)$ and a primitive recursive function $U$ such that</p>
-<p>$$ \boxed{\;\varphi_e(n) \simeq U(\mu s\, T(e, n, s))\;},
+<p>$$ \boxed{\;\digamma_{\mathrm{fml},e}(n) \simeq U(\mu s\, T(e, n, s))\;},
 $$</p>
-<p>where $\simeq$ means equality of partial functions and the search diverges exactly when $\varphi_e(n)$ diverges. In particular the enumeration $\varphi_e$ is itself partial recursive, the universal function $\Phi(e,n) = \varphi_e(n)$ being partial recursive and not total.</p>
-<p><strong>Proof.</strong> $T(e,n,s)$ asserts that $s$ codes a halting computation of the $e$-th machine on input $n$, and $U$ extracts the output; both are primitive recursive by the arithmetisation of <em>Formal Logic and Computability</em>, and the definition of $\varphi_e$ is the displayed search. The universal function is partial recursive because it is defined by this formula, and not total because of the existence of a halting problem.</p>
+<p>where $\simeq$ means equality of partial functions and the search diverges exactly when $\digamma_{\mathrm{fml},e}(n)$ diverges. In particular the enumeration $\digamma_{\mathrm{fml},e}$ is itself partial recursive, the universal function $\Phi(e,n) = \digamma_{\mathrm{fml},e}(n)$ being partial recursive and not total.</p>
+<p><strong>Proof.</strong> $T(e,n,s)$ asserts that $s$ codes a halting computation of the $e$-th machine on input $n$, and $U$ extracts the output; both are primitive recursive by the arithmetisation of <em>Formal Logic and Computability</em>, and the definition of $\digamma_{\mathrm{fml},e}$ is the displayed search. The universal function is partial recursive because it is defined by this formula, and not total because of the existence of a halting problem.</p>
 <h3 id="the-recursion-theorem">The Recursion Theorem</h3>
 <p><strong>Theorem (Kleene recursion theorem).</strong> For every total computable function $f : \mathbb{N} \to \mathbb{N}$ there is an index $e$ with</p>
-<p>$$ \boxed{\;\varphi_e = \varphi_{f(e)} \;}.
+<p>$$ \boxed{\;\digamma_{\mathrm{fml},e} = \digamma_{\mathrm{fml},f(e)} \;}.
 $$</p>
-<p><strong>Proof.</strong> By the $s$-$m$-$n$ theorem there is a primitive recursive function $s$ with $\varphi_{s(e)}(n) = \varphi_e(e,n)$. Define the total computable function $h(e) = f(s(e))$ and let $v$ be an index of $h$, so that $\varphi_v(e) = h(e)$ for all $e$. Put $e_0 = s(v)$. Then</p>
+<p><strong>Proof.</strong> By the $s$-$m$-$n$ theorem there is a primitive recursive function $s$ with $\digamma_{\mathrm{fml},s(e)}(n) = \digamma_{\mathrm{fml},e}(e,n)$. Define the total computable function $h(e) = f(s(e))$ and let $v$ be an index of $h$, so that $\digamma_{\mathrm{fml},v}(e) = h(e)$ for all $e$. Put $e_0 = s(v)$. Then</p>
 <p>$$
-\varphi_{e_0}(n) = \varphi_{s(v)}(n) = \varphi_v(v,n) = h(v) = f(s(v)) = f(e_0),
+\digamma_{\mathrm{fml},e_0}(n) = \digamma_{\mathrm{fml},s(v)}(n) = \digamma_{\mathrm{fml},v}(v,n) = h(v) = f(s(v)) = f(e_0),
 $$</p>
-<p>so $\varphi_{e_0} = \varphi_{f(e_0)}$. The computation is Kleene's and uses only the $s$-$m$-$n$ theorem and the totality of $f$.</p>
-<p><strong>Corollary (self-reference).</strong> There is an index $e$ with $\varphi_e$ the function that prints $e$, that is, the constant function with value $e$; more generally, every computable transformation of programs has a fixed point in the sense of the theorem. This is the precise form of the diagonal construction that underlies the incompleteness theorems.</p>
+<p>so $\digamma_{\mathrm{fml},e_0} = \digamma_{\mathrm{fml},f(e_0)}$. The computation is Kleene's and uses only the $s$-$m$-$n$ theorem and the totality of $f$.</p>
+<p><strong>Corollary (self-reference).</strong> There is an index $e$ with $\digamma_{\mathrm{fml},e}$ the function that prints $e$, that is, the constant function with value $e$; more generally, every computable transformation of programs has a fixed point in the sense of the theorem. This is the precise form of the diagonal construction that underlies the incompleteness theorems.</p>
 <h2 id="recursively-enumerable-sets">Recursively Enumerable Sets</h2>
 <h3 id="decidability-and-semi-decidability">Decidability and Semi-Decidability</h3>
-<p><strong>Definition.</strong> A set $A \subseteq \mathbb{N}$ is <strong>decidable</strong> (recursive) if its characteristic function is computable, and <strong>recursively enumerable</strong> (c.e.) if $A = W_e = \operatorname{dom}(\varphi_e)$ for some $e$, equivalently if $A$ is the range of a partial recursive function, equivalently if a machine lists the elements of $A$ without ever listing a non-element.</p>
+<p><strong>Definition.</strong> A set $A \subseteq \mathbb{N}$ is <strong>decidable</strong> (recursive) if its characteristic function is computable, and <strong>recursively enumerable</strong> (c.e.) if $A = W_e = \operatorname{dom}(\digamma_{\mathrm{fml},e})$ for some $e$, equivalently if $A$ is the range of a partial recursive function, equivalently if a machine lists the elements of $A$ without ever listing a non-element.</p>
 <p><strong>Theorem.</strong> A set $A$ is c.e. if and only if it is empty or it is the range of a total computable function. A set is decidable if and only if it and its complement are both c.e.</p>
 <p><strong>Proof.</strong> If $W_e$ is nonempty, choose $m \in W_e$ and enumerate pairs $(n,s)$ by a primitive recursive bijection; the machine simulates the $e$-th machine for $s$ steps on $n$ and outputs $n$ when it halts, and outputs $m$ otherwise. This gives a total computable function with range $W_e$, and the converse is immediate. For the second statement, if $A$ and its complement are c.e. one decides $A$ by running the two enumerations in parallel; the converse is clear.</p>
-<p><strong>Theorem (halting problem).</strong> The set $K = \{e : \varphi_e(e)\!\downarrow\}$ is c.e. but not decidable, and there is no total computable function deciding, for given $e$ and $n$, whether $\varphi_e(n)$ converges.</p>
-<p><strong>Proof.</strong> $K$ is c.e. because it is the domain of the partial recursive function $e \mapsto \varphi_e(e)$. If $K$ were decidable with characteristic function $k$, the function</p>
+<p><strong>Theorem (halting problem).</strong> The set $K = \{e : \digamma_{\mathrm{fml},e}(e)\!\downarrow\}$ is c.e. but not decidable, and there is no total computable function deciding, for given $e$ and $n$, whether $\digamma_{\mathrm{fml},e}(n)$ converges.</p>
+<p><strong>Proof.</strong> $K$ is c.e. because it is the domain of the partial recursive function $e \mapsto \digamma_{\mathrm{fml},e}(e)$. If $K$ were decidable with characteristic function $k$, the function</p>
 <p>$$
-g(e) = \begin{cases} \varphi_e(e) + 1, &amp; k(e) = 1, \\ 0, &amp; k(e) = 0 \end{cases}
+g(e) = \begin{cases} \digamma_{\mathrm{fml},e}(e) + 1, &amp; k(e) = 1, \\ 0, &amp; k(e) = 0 \end{cases}
 $$</p>
-<p>would be total computable, and for an index $e_0$ of $g$ one has $g = \varphi_{e_0}$. If $k(e_0) = 1$ then $\varphi_{e_0}(e_0)$ converges and $g(e_0) = \varphi_{e_0}(e_0) + 1 \neq \varphi_{e_0}(e_0)$, a contradiction; if $k(e_0) = 0$ then $\varphi_{e_0}(e_0)$ diverges while $g(e_0) = 0$ is defined, again a contradiction. The uniform statement follows by a parametrised version of the argument.</p>
-<p><strong>Theorem (Rice).</strong> Let $\mathcal{C}$ be a class of partial recursive functions containing some but not all of them. Then the index set $\{e : \varphi_e \in \mathcal{C}\}$ is undecidable.</p>
-<p><strong>Proof.</strong> If the index set were decidable one could decide whether $\varphi_e$ is the everywhere undefined function, contradicting the halting problem; the reduction is the standard one and is in <em>Formal Logic and Computability</em>.</p>
+<p>would be total computable, and for an index $e_0$ of $g$ one has $g = \digamma_{\mathrm{fml},e_0}$. If $k(e_0) = 1$ then $\digamma_{\mathrm{fml},e_0}(e_0)$ converges and $g(e_0) = \digamma_{\mathrm{fml},e_0}(e_0) + 1 \neq \digamma_{\mathrm{fml},e_0}(e_0)$, a contradiction; if $k(e_0) = 0$ then $\digamma_{\mathrm{fml},e_0}(e_0)$ diverges while $g(e_0) = 0$ is defined, again a contradiction. The uniform statement follows by a parametrised version of the argument.</p>
+<p><strong>Theorem (Rice).</strong> Let $\mathcal{C}$ be a class of partial recursive functions containing some but not all of them. Then the index set $\{e : \digamma_{\mathrm{fml},e} \in \mathcal{C}\}$ is undecidable.</p>
+<p><strong>Proof.</strong> If the index set were decidable one could decide whether $\digamma_{\mathrm{fml},e}$ is the everywhere undefined function, contradicting the halting problem; the reduction is the standard one and is in <em>Formal Logic and Computability</em>.</p>
 <h3 id="m-completeness">m-Completeness</h3>
 <p><strong>Definition.</strong> For sets $A, B \subseteq \mathbb{N}$ one writes $A \leq_m B$ if there is a total computable $f$ with $n \in A \iff f(n) \in B$, and $A \equiv_m B$ if both $A \leq_m B$ and $B \leq_m A$. A set $B$ is <strong>m-complete</strong> for the c.e. sets if $B$ is c.e. and $A \leq_m B$ for every c.e. $A$.</p>
 <p><strong>Theorem.</strong> The halting set $K$ is m-complete for the c.e. sets, and every m-complete set is undecidable. The c.e. sets are exactly the sets that are empty or the range of a total computable function, and they form a lattice under union and intersection.</p>
@@ -150,11 +150,11 @@ $$</p>
 <p><strong>Theorem (Shoenfield limit lemma).</strong> A set $A$ is $\Delta_2$, that is, both $\Sigma_2$ and $\Pi_2$, if and only if there is a total computable function $g(e, n)$ such that $\lim_e g(e,n)$ exists and equals the characteristic function of $A$ at $n$; equivalently, $A \leq_T \emptyset'$.</p>
 <p><strong>Proof.</strong> A $\Delta_2$ definition gives a limit of computable approximations, and conversely a computable approximation with a limit can be expressed in $\Sigma_2$ form. The equivalence with $\leq_T \emptyset'$ follows from Post's theorem at $n = 1$.</p>
 <h3 id="turing-reducibility-and-degrees">Turing Reducibility and Degrees</h3>
-<p><strong>Definition.</strong> $A \leq_T B$ if there is a machine with an oracle for $B$ that decides $A$; the <strong>Turing degree</strong> of $A$ is its equivalence class, and the set of degrees is written $\mathcal{D}$. The <strong>join</strong> $A \oplus B$ is the degree of $\{(2n : n \in A)\} \cup \{(2n+1 : n \in B)\}$, and the <strong>Turing jump</strong> is $A' = \{e : \varphi_e^A(e)\!\downarrow\}$.</p>
+<p><strong>Definition.</strong> $A \leq_T B$ if there is a machine with an oracle for $B$ that decides $A$; the <strong>Turing degree</strong> of $A$ is its equivalence class, and the set of degrees is written $\mathcal{D}$. The <strong>join</strong> $A \oplus B$ is the degree of $\{(2n : n \in A)\} \cup \{(2n+1 : n \in B)\}$, and the <strong>Turing jump</strong> is $A' = \{e : \digamma_{\mathrm{fml},e}^A(e)\!\downarrow\}$.</p>
 <p><strong>Theorem.</strong> $\mathcal{D}$ is an upper semilattice with least element $\mathbf{0}$, the degree of the decidable sets, and the jump is strictly increasing and monotone: $A &lt;_T A'$ and $A \leq_T B$ implies $A' \leq_T B'$. The jump operation satisfies $\emptyset^{(n+1)} = (\emptyset^{(n)})'$ and gives an increasing sequence of degrees.</p>
 <p><strong>Proof.</strong> The upper semilattice laws are by coding of finite sets of oracle queries; strictness of the jump is the relativised halting problem, and monotonicity is because a machine with oracle $B$ can simulate one with oracle $A$. The iteration of the jump is immediate from the definition.</p>
 <p><strong>Theorem (Post's problem; Friedberg–Muchnik).</strong> There exist c.e. sets $A$ and $B$ with $A \not\leq_T B$ and $B \not\leq_T A$; that is, the c.e. degrees are not linearly ordered by $\leq_T$. The c.e. degrees are dense, and they are not a lattice.</p>
-<p><strong>Proof.</strong> The construction builds $A$ and $B$ by a priority argument with requirements $A \neq \varphi_e^B$ and $B \neq \varphi_e^A$, meeting each requirement on a finite initial segment and preserving the finitely many restraints imposed by earlier requirements. The priority method is Friedberg's and Muchnik's; the density and non-lattice results are later refinements of the same method.</p>
+<p><strong>Proof.</strong> The construction builds $A$ and $B$ by a priority argument with requirements $A \neq \digamma_{\mathrm{fml},e}^B$ and $B \neq \digamma_{\mathrm{fml},e}^A$, meeting each requirement on a finite initial segment and preserving the finitely many restraints imposed by earlier requirements. The priority method is Friedberg's and Muchnik's; the density and non-lattice results are later refinements of the same method.</p>
 <h3 id="diophantine-sets">Diophantine Sets</h3>
 <p><strong>Theorem (Matiyasevich, after Davis–Putnam–Robinson).</strong> A set $A \subseteq \mathbb{N}$ is c.e. if and only if it is <strong>Diophantine</strong>: there is a polynomial $P(n, m_1, \dots, m_k)$ with integer coefficients such that</p>
 <p>$$ \boxed{\;n \in A \iff \exists m_1 \cdots \exists m_k \in \mathbb{N}\ P(n, m_1, \dots, m_k) = 0 \;}.
@@ -205,20 +205,20 @@ $$</p>
 <td>Unbounded search, least $n$ with a given property</td>
 </tr>
 <tr>
-<td>$\varphi_e$</td>
+<td>$\digamma_{\mathrm{fml},e}$</td>
 <td>The $e$-th partial recursive function</td>
 </tr>
 <tr>
-<td>$\varphi_e(n)\!\downarrow$</td>
+<td>$\digamma_{\mathrm{fml},e}(n)\!\downarrow$</td>
 <td>The computation halts</td>
 </tr>
 <tr>
 <td>$W_e$</td>
-<td>$\operatorname{dom}(\varphi_e)$, the $e$-th c.e. set</td>
+<td>$\operatorname{dom}(\digamma_{\mathrm{fml},e})$, the $e$-th c.e. set</td>
 </tr>
 <tr>
 <td>$K$</td>
-<td>Halting set $\{e : \varphi_e(e)\!\downarrow\}$</td>
+<td>Halting set $\{e : \digamma_{\mathrm{fml},e}(e)\!\downarrow\}$</td>
 </tr>
 <tr>
 <td>$T(e,n,s)$, $U$</td>

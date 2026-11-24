@@ -80,7 +80,7 @@
 K(k) = \int_0^{\pi/2} \frac{d\theta}{\sqrt{1 - k^2\sin^2\theta}} , \qquad
 E(k) = \int_0^{\pi/2} \sqrt{1 - k^2\sin^2\theta}\, d\theta ,
 $$</p>
-<p>and the <strong>incomplete</strong> integrals are the same integrands integrated from $0$ to an arbitrary amplitude $\varphi$. The integral of the <strong>third kind</strong> is</p>
+<p>and the <strong>incomplete</strong> integrals are the same integrands integrated from $0$ to an arbitrary amplitude $\digamma_{\mathrm{map}}$. The integral of the <strong>third kind</strong> is</p>
 <p>$$
 \Pi(n, k) = \int_0^{\pi/2} \frac{d\theta}{(1 - n\sin^2\theta)\sqrt{1 - k^2\sin^2\theta}} ,
 $$</p>
@@ -92,14 +92,14 @@ $$</p>
 <h2 id="the-jacobi-functions-and-the-weierstrass-function">The Jacobi Functions and the Weierstrass Function</h2>
 <p><strong>Definition.</strong> Let $k$ be a modulus and let</p>
 <p>$$
-u = \int_0^{\varphi} \frac{d\theta}{\sqrt{1 - k^2\sin^2\theta}} .
+u = \int_0^{\digamma_{\mathrm{map}}} \frac{d\theta}{\sqrt{1 - k^2\sin^2\theta}} .
 $$</p>
-<p>The <strong>Jacobi elliptic functions</strong> are $sn(u) = \sin\varphi$, $cn(u) = \cos\varphi$ and $dn(u) = \sqrt{1 - k^2\sin^2\varphi}$, the inverse of the integral of the first kind being taken as the definition of $\varphi$ as a function of $u$.</p>
+<p>The <strong>Jacobi elliptic functions</strong> are $sn(u) = \sin\digamma_{\mathrm{map}}$, $cn(u) = \cos\digamma_{\mathrm{map}}$ and $dn(u) = \sqrt{1 - k^2\sin^2\digamma_{\mathrm{map}}}$, the inverse of the integral of the first kind being taken as the definition of $\digamma_{\mathrm{map}}$ as a function of $u$.</p>
 <p><strong>Theorem.</strong> The Jacobi functions are meromorphic and doubly periodic: $sn$ has periods $4K(k)$ and $2iK'(k)$, where $K'(k) = K(\sqrt{1-k^2})$, and</p>
 <p>$$
 \boxed{\;sn^2u + cn^2u = 1 , \qquad dn^2u + k^2sn^2u = 1 , \qquad \frac{d}{du}sn\,u = cn\,u\,dn\,u\;} .
 $$</p>
-<p><strong>Proof.</strong> The relations follow from the definitions: $sn^2 + cn^2 = \sin^2\varphi + \cos^2\varphi = 1$ and $dn^2 + k^2 sn^2 = 1 - k^2\sin^2\varphi + k^2\sin^2\varphi = 1$, and the derivative is the chain rule applied to the inverse of the integral, $du/d\varphi = 1/\sqrt{1-k^2\sin^2\varphi}$. The double periodicity is the standard extension of $u$ to the complex plane by analytic continuation, with the periods computed from the integral: the continuation of the inverse of an integral of the first kind past the branch points produces the periods $4K$ and $2iK'$, and the standard argument is cited from the literature.</p>
+<p><strong>Proof.</strong> The relations follow from the definitions: $sn^2 + cn^2 = \sin^2\digamma_{\mathrm{map}} + \cos^2\digamma_{\mathrm{map}} = 1$ and $dn^2 + k^2 sn^2 = 1 - k^2\sin^2\digamma_{\mathrm{map}} + k^2\sin^2\digamma_{\mathrm{map}} = 1$, and the derivative is the chain rule applied to the inverse of the integral, $du/d\digamma_{\mathrm{map}} = 1/\sqrt{1-k^2\sin^2\digamma_{\mathrm{map}}}$. The double periodicity is the standard extension of $u$ to the complex plane by analytic continuation, with the periods computed from the integral: the continuation of the inverse of an integral of the first kind past the branch points produces the periods $4K$ and $2iK'$, and the standard argument is cited from the literature.</p>
 <p><strong>Definition.</strong> Let $\Lambda = \mathbb{Z}\omega_1 + \mathbb{Z}\omega_2$ be a lattice in $\mathbb{C}$, with $\operatorname{Im}(\omega_2/\omega_1) &gt; 0$. The <strong>Weierstrass elliptic function</strong> is</p>
 <p>$$
 \wp(z) = \frac{1}{z^2} + \sum_{\omega \in \Lambda \setminus \{0\}} \left( \frac{1}{(z - \omega)^2} - \frac{1}{\omega^2} \right) .

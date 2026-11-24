@@ -103,7 +103,7 @@ $$</p>
 <p><strong>Remark.</strong> The definition via the bar resolution is the classical one of Eilenberg and Mac Lane; the identification of $H^n(G,M)$ with the $n$-th right derived functor of the invariants functor, and with $\operatorname{Ext}^n_{\mathbb{Z}[G]}(\mathbb{Z}, M)$, is the derived-functor theorem of homological algebra and belongs, where the resolutions and the Ext functor are developed. The cochain-level definition is sufficient for everything in this article.</p>
 <h2 id="functoriality-and-exact-sequences">Functoriality and Exact Sequences</h2>
 <h3 id="the-long-exact-sequence">The Long Exact Sequence</h3>
-<p><strong>Proposition.</strong> $H^n(G,M)$ is contravariant in $G$ and covariant in $M$: a homomorphism $\varphi : H \to G$ turns a $G$-module $M$ into an $H$-module and induces a map $H^n(G,M) \to H^n(H,M)$, while a morphism of $G$-modules $f : M \to N$ induces a map $H^n(G,M) \to H^n(G,N)$; the two constructions commute with composition and with each other.</p>
+<p><strong>Proposition.</strong> $H^n(G,M)$ is contravariant in $G$ and covariant in $M$: a homomorphism $\digamma_{\mathrm{map}} : H \to G$ turns a $G$-module $M$ into an $H$-module and induces a map $H^n(G,M) \to H^n(H,M)$, while a morphism of $G$-modules $f : M \to N$ induces a map $H^n(G,M) \to H^n(G,N)$; the two constructions commute with composition and with each other.</p>
 <p><strong>Theorem (long exact sequence).</strong> A short exact sequence of $G$-modules $0 \to M' \to M \to M'' \to 0$ gives a long exact sequence of abelian groups</p>
 <p>$$
 0 \to H^0(G,M') \to H^0(G,M) \to H^0(G,M'') \xrightarrow{\ \delta\ } H^1(G,M') \to H^1(G,M) \to H^1(G,M'') \xrightarrow{\ \delta\ } H^2(G,M') \to \cdots,
@@ -140,7 +140,7 @@ $$</p>
 <p>In particular, if the action of $G$ on $M$ is trivial, then $H^1(G,M) = \operatorname{Hom}(G,M)$.</p>
 <p><strong>Proof.</strong> The cocycle identity for $n = 1$ is $g\alpha(h) - \alpha(gh) + \alpha(g) = 0$, which is $\alpha(gh) = \alpha(g) + g\alpha(h)$ after a sign, so the $1$-cocycles are the derivations. For $n = 0$ the coboundary of $m \in M$ is $(dm)(g) = gm - m$, giving the principal derivations. With a trivial action the derivations are the homomorphisms and the principal ones vanish.</p>
 <p><strong>Theorem (complements).</strong> Let $M$ be a $G$-module and let $E = M \rtimes G$ be the semidirect product with the given action. There is a bijection between $H^1(G,M)$ and the set of $G$-conjugacy classes of complements to $M$ in $E$.</p>
-<p><strong>Proof sketch.</strong> A complement is the graph of a function $\varphi : G \to M$, $\varphi(g) = (d(g), g)$; the condition that the graph be a subgroup is exactly the derivation identity for $d$, and two complements are conjugate under an element of $M$ exactly when the derivations differ by a principal one.</p>
+<p><strong>Proof sketch.</strong> A complement is the graph of a function $\digamma_{\mathrm{map}} : G \to M$, $\digamma_{\mathrm{map}}(g) = (d(g), g)$; the condition that the graph be a subgroup is exactly the derivation identity for $d$, and two complements are conjugate under an element of $M$ exactly when the derivations differ by a principal one.</p>
 <h3 id="math187-and-extensions">$H^2$ and Extensions</h3>
 <p><strong>Definition.</strong> A <strong>$2$-cocycle</strong> (or <strong>factor set</strong>) is a function $\alpha : G \times G \to M$ satisfying</p>
 <p>$$

@@ -129,12 +129,12 @@ $$</p>
 <h2 id="the-three-tensor-powers">The Three Tensor Powers</h2>
 <p>The Hermitian power. $H^{\otimes n}$ is a Hermitian form on $(\mathbb{C}^2)^{\otimes n}$: conjugate-linear in the second slot, positive definite, of Gram matrix the identity in the product basis. It gives the inner product and the Born weights,</p>
 <p>$$
-\langle\psi\rvert\tilde A\lvert\psi\rangle=\bigl(H^{\otimes n}\bigr)(\psi,\tilde A\psi),
+\langleΞ_{\mathrm{wfn}}\rvert\tilde A\lvertΞ_{\mathrm{wfn}}\rangle=\bigl(H^{\otimes n}\bigr)(Ξ_{\mathrm{wfn}},\tilde AΞ_{\mathrm{wfn}}),
 $$</p>
 <p>for a Hermitian $\tilde A$. This is the metric of the $n$-qubit space and the reason the space is a Hilbert space and not only a vector space.</p>
 <p>The bilinear power. $B^{\otimes n}$ is a complex bilinear symmetric form. At $n=2$ its quadratic form on a state with coefficient array $c$ is</p>
 <p>$$
-B^{\otimes2}(\psi,\psi)=\sum_{i,j}c_{ij}^{2},
+B^{\otimes2}(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=\sum_{i,j}c_{ij}^{2},
 $$</p>
 <p>because $B(e_i,e_j)=\delta_{ij}$. The four coefficients are the components of one element $\tilde Q$ of the algebra under the basis order $\lvert00\rangle\mapsto e_t$, $\lvert01\rangle\mapsto\vec e_x$, $\lvert10\rangle\mapsto\vec e_y$, $\lvert11\rangle\mapsto\vec e_z$ of <a href="the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html">The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</a>, so the value is $\sum_{\imath} Q_{\imath}^{2}=N(\tilde Q)$, the quaternionic algebraic norm of <a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, which is the corpus's interval form. It is complex-valued, of Gram matrix $\mathrm I_4$, of inertia $(4,0)$ on real amplitudes and $(4,4)$ over $\mathbb{R}$, and it vanishes on products of isotropic vectors. <strong>This norm is not the concurrence</strong>: its zero set is the zero-divisor cone, not the set of product states, and the section <em>The Norm and the Determinant Are Different</em> gives the two counterexamples that separate them.</p>
 <p>The alternating power. $\omega^{\otimes n}$ is a complex bilinear form that is alternating in each slot separately. Its quadratic form is where the entanglement lives, and its behaviour depends on the parity of $n$ in a way that the next two sections make exact.</p>
@@ -171,27 +171,27 @@ $$</p>
 </table></div>
 <p><strong>No fourth form is needed and none is available.</strong> The space of invariant quadratic forms on $\mathbb{C}^4$ under the group that preserves all three is two-dimensional, which the section on groups makes precise.</p>
 <h2 id="the-two-qubit-identity">The Two-Qubit Identity</h2>
-<p><strong>The identity.</strong> Let $\psi=\sum_{i,j}c_{ij}\,e_i\otimes e_j$ be a two-qubit state and $c$ its $2\times2$ coefficient array. Then</p>
+<p><strong>The identity.</strong> Let $Ξ_{\mathrm{wfn}}=\sum_{i,j}c_{ij}\,e_i\otimes e_j$ be a two-qubit state and $c$ its $2\times2$ coefficient array. Then</p>
 <p>$$
-\boxed{\;\omega\otimes\omega(\psi,\psi)=\sum_{i,j,\imath,l}\omega_{ij}\,\omega_{\imath l}\,c_{i\imath}\,c_{jl}=2\bigl(c_{00}c_{11}-c_{01}c_{10}\bigr)=2\det c\;}
+\boxed{\;\omega\otimes\omega(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=\sum_{i,j,\imath,l}\omega_{ij}\,\omega_{\imath l}\,c_{i\imath}\,c_{jl}=2\bigl(c_{00}c_{11}-c_{01}c_{10}\bigr)=2\det c\;}
 $$</p>
 <p>Both sides are objects the corpus already had: on the left the alternating form of the one-qubit space, applied twice; on the right the determinant of the coefficient array of the pair. The box is a statement that the two are one number, not the introduction of a third.</p>
 <p>The proof. The only nonzero entries of $\omega$ are $\omega_{01}=1$ and $\omega_{10}=-1$, in each index family. Expanding the four surviving terms,</p>
 <p>$$
-\omega\otimes\omega(\psi,\psi)=c_{00}c_{11}-c_{01}c_{10}-c_{10}c_{01}+c_{11}c_{00}=2\bigl(c_{00}c_{11}-c_{01}c_{10}\bigr),
+\omega\otimes\omega(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=c_{00}c_{11}-c_{01}c_{10}-c_{10}c_{01}+c_{11}c_{00}=2\bigl(c_{00}c_{11}-c_{01}c_{10}\bigr),
 $$</p>
 <p>and the last bracket is $\det c$.</p>
 <p>The factor of two is the two orderings. The determinant of a $2\times2$ matrix is $\omega$ applied to its two rows: $\det c=\omega(r_0,r_1)$ with $r_0=(c_{00},c_{01})$ and $r_1=(c_{10},c_{11})$. The tensor square applies $\omega$ to both index families at once, so it counts the two orderings separately and doubles. The modulus is unaffected, and the modulus is the concurrence:</p>
 <p>$$
-C=2\lvert\det c\rvert=\bigl\lvert\omega\otimes\omega(\psi,\psi)\bigr\rvert,\qquad \text{for a normalised state.}
+C=2\lvert\det c\rvert=\bigl\lvert\omega\otimes\omega(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})\bigr\rvert,\qquad \text{for a normalised state.}
 $$</p>
-<p>The check. The identity was verified on two hundred random normalised states, with zero failures, comparing $\omega\otimes\omega(\psi,\psi)$ against $2\det c$ and the modulus against the Wootters concurrence. On the four Bell states the value is $\pm2$ in modulus before normalisation, that is $\pm1$ for the normalised concurrence.</p>
+<p>The check. The identity was verified on two hundred random normalised states, with zero failures, comparing $\omega\otimes\omega(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})$ against $2\det c$ and the modulus against the Wootters concurrence. On the four Bell states the value is $\pm2$ in modulus before normalisation, that is $\pm1$ for the normalised concurrence.</p>
 <p>The inertia, and why the Bell basis has two signs of each. In the Bell basis the symmetric matrix of $\omega\otimes\omega$ has eigenvalues $\pm1$ with multiplicity two each, so the form has inertia $(2,2)$: two positive and two negative directions. That is exactly the pattern <a href="the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html">The Bell Basis</a> records, where $2D=b_1^{2}-b_2^{2}-b_3^{2}+b_4^{2}$ has two signs of each. The inertia is not an accident of the basis: it is computed from the eigenvalues of the matrix of the form, which are $\pm1$ with multiplicity two each.</p>
 <p>What the identity says about the corpus's two forms. The two-qubit module carries two independent quadratic forms of the same degree, the norm $B^{\otimes2}$, of inertia $(4,0)$, and the concurrence form $\omega\otimes\omega$, of inertia $(2,2)$. They are the two independent invariants, and the second is the one that measures entanglement. So the corpus does not need a higher-degree replacement at two qubits; it needs to notice that it already had the second quadratic form, on the one-qubit space, and that tensoring it is the whole construction.</p>
 <h2 id="the-norm-and-the-determinant-are-different">The Norm and the Determinant Are Different</h2>
 <p>Two quadratic forms of one degree, and two different zero sets. On a normalised two-qubit state the two quantities are</p>
 <p>$$
-N(\psi)=\sum_{i,j}c_{ij}^{2},\qquad D(\psi)=\det c=c_{00}c_{11}-c_{01}c_{10},\qquad C=2\lvert D\rvert .
+N(Ξ_{\mathrm{wfn}})=\sum_{i,j}c_{ij}^{2},\qquad D(Ξ_{\mathrm{wfn}})=\det c=c_{00}c_{11}-c_{01}c_{10},\qquad C=2\lvert D\rvert .
 $$</p>
 <p>$N$ is the quaternionic algebraic norm of the element $\tilde Q$ that the state vector names, and $D$ is the concurrence amplitude. They are both quadratic in the amplitudes and they are not multiples of one another, because they vanish on different sets. $N$ vanishes exactly on the zero divisors of the algebra: it is the reduced norm, $\det\mathsf M_2(\tilde Q)=N(\tilde Q)$, it is multiplicative, and its vanishing is the invertibility test of <a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>. $D$ vanishes exactly on the product states, by the rank-one condition on $c$. Neither vanishing implies the other.</p>
 <p>The two counterexamples, both checked. The product state $\lvert00\rangle$ has $c=\left(\begin{smallmatrix}1&amp;0\\0&amp;0\end{smallmatrix}\right)$, so $N=1$ and $D=0$: a product state of unit norm. The normalised state</p>
@@ -221,7 +221,7 @@ $$</p>
 $$</p>
 <p>The consequence at each $n$. At $n=1$ the form is alternating and vanishes on the diagonal identically: $\omega(Q,Q)=0$ for every $Q$. At $n=2$ it is symmetric and nontrivial, and its diagonal value is $2\det c$, which is the concurrence. At $n=3$ it is alternating again, so</p>
 <p>$$
-\omega^{\otimes3}(\psi,\psi)=0\quad\text{for every }\psi\in(\mathbb{C}^2)^{\otimes3}.
+\omega^{\otimes3}(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=0\quad\text{for every }Ξ_{\mathrm{wfn}}\in(\mathbb{C}^2)^{\otimes3}.
 $$</p>
 <p>At $n=4$ it is symmetric again and nontrivial.</p>
 <p>The check at $n=3$. The identity was verified on fifty random three-fold product states and on the two standard entangled states. On the GHZ state and on the $W$ state the value is zero, to machine precision, and on every random product state it is zero as well.</p>
@@ -236,7 +236,7 @@ $$</p>
 <p>an antilinear involution, $\mathcal{C}^{2}=1$, whose fixed space is the Majorana space of real dimension four. In the Pauli model its matrix on the coefficient column is the alternating matrix composed with conjugation, up to a phase: $\mathcal{C}$ is $\omega$ followed by complex conjugation.</p>
 <p><strong>Two antilinear maps compose to a bilinear one.</strong> $\mathcal{C}$ alone does not descend to a bilinear pairing, for the reason given in <a href="the-multi-qubit-split-i-the-antilinear-obstruction-and-the-corner-collapse.html">The Multi-Qubit Split, I</a>: an antilinear map reverses the central scalar. But the tensor square $\mathcal{C}\otimes\mathcal{C}$ is bilinear, and it is available on the two-qubit space. Its diagonal pairing is</p>
 <p>$$
-\bigl\lvert\langle\psi\rvert\,\mathcal{C}\otimes\mathcal{C}\,\lvert\psi^{*}\rangle\bigr\rvert=2\bigl\lvert c_{00}c_{11}-c_{01}c_{10}\bigr\rvert=2\lvert\det c\rvert ,
+\bigl\lvert\langleΞ_{\mathrm{wfn}}\rvert\,\mathcal{C}\otimes\mathcal{C}\,\lvertΞ_{\mathrm{wfn}}^{*}\rangle\bigr\rvert=2\bigl\lvert c_{00}c_{11}-c_{01}c_{10}\bigr\rvert=2\lvert\det c\rvert ,
 $$</p>
 <p>verified against the determinant on random states.</p>
 <p>The corpus half-says this already. <a href="the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html">The Native Qubit and the Defining Module of the Biquaternion Algebra</a> remarks that the concurrence carries no separate glyph because $\mathcal{C}$ is already the name of charge conjugation. That remark is not a notational convenience. The concurrence <em>is</em> the charge-conjugation pairing of the two-spinor space, and the same pairing is what separates the Dirac from the Majorana mass in <a href="antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</a>, where the Dirac mass is linear and pairs no field with its conjugate and the Majorana mass is antilinear and pairs a field with its own.</p>
@@ -274,7 +274,7 @@ $$</p>
 <p>It does not claim that the concurrence is the biquaternion norm, nor that $C=2\lvert N\rvert$. The norm $N=\sum_{ij}c_{ij}^{2}$ and the concurrence amplitude $D=\det c$ vanish on different sets: $\lvert00\rangle$ has $N=1$ and $C=0$, and $\tfrac12\left(\begin{smallmatrix}1&amp;i\\ i&amp;1\end{smallmatrix}\right)$ has $N=0$ and $C=1$. The norm is the zero-divisor test; the determinant is the product-state test.</p>
 <p>It does not claim that the parity rule exhausts the invariant theory at odd $n$. It says that the alternating route gives nothing there, which is one statement and not a classification.</p>
 <h2 id="summary">Summary</h2>
-<p>The duo-complex space $\mathbb{C}^2$ carries three canonical forms: the Hermitian $H$, the symmetric bilinear $B$ and the alternating $\omega$, with Gram matrices $\mathrm I$, $\mathrm I$ and $\left(\begin{smallmatrix}0&amp;1\\-1&amp;0\end{smallmatrix}\right)$. The first two share a Gram matrix because the basis is real, and differ on $Q=(1,i)$, where $H(Q,Q)=2$ and $B(Q,Q)=0$. Each tensors, and the three tensor powers are the three structures of the $n$-qubit theory: $H^{\otimes n}$ the Born weights, $B^{\otimes n}$ the biquaternion norm and interval, $\omega^{\otimes n}$ the entanglement pairing. At $n=2$, $\omega\otimes\omega(\psi,\psi)=2(c_{00}c_{11}-c_{01}c_{10})=2\det c$, so $2\lvert\det c\rvert$ is the concurrence, with inertia $(2,2)$ matching the Bell-basis diagonalisation; and this is the $n=2$ formula, not a general one. The other quadratic form of the pair is the norm, $B^{\otimes2}(\psi,\psi)=\sum_{ij}c_{ij}^{2}=N(\tilde Q)$, the quaternionic algebraic norm in the basis order of the Bell article; it vanishes on the zero divisors and not on the product states, so the concurrence is not twice its modulus, and $\lvert00\rangle$ with $N=1$, $C=0$ against $\tfrac12(1,i;i,1)$ with $N=0$, $C=1$ is the pair that shows it. $\omega\otimes\omega$ is invariant under $SL_2\times SL_2$ and $B\otimes B$ under $SO_2\times SO_2$, so they are independent forms invariant under different groups and not a two-dimensional space of local-unitary invariants. The parity rule $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$ makes $\omega^{\otimes3}$ alternating, hence identically zero on the diagonal, which is why no degree-two entanglement invariant exists at three qubits and the three-qubit measures are quartic. The corpus's charge conjugation $\mathcal{C}$ is $\omega$ composed with conjugation, and $\mathcal{C}\otimes\mathcal{C}$ is the bilinear pairing whose modulus is the concurrence: mass pairing, spin flip and entanglement measure are one form. Bilinearity is the criterion that survives composition; antilinearity is what does not, and the same property that produces the concurrence destroys the per-subsystem label.</p>
+<p>The duo-complex space $\mathbb{C}^2$ carries three canonical forms: the Hermitian $H$, the symmetric bilinear $B$ and the alternating $\omega$, with Gram matrices $\mathrm I$, $\mathrm I$ and $\left(\begin{smallmatrix}0&amp;1\\-1&amp;0\end{smallmatrix}\right)$. The first two share a Gram matrix because the basis is real, and differ on $Q=(1,i)$, where $H(Q,Q)=2$ and $B(Q,Q)=0$. Each tensors, and the three tensor powers are the three structures of the $n$-qubit theory: $H^{\otimes n}$ the Born weights, $B^{\otimes n}$ the biquaternion norm and interval, $\omega^{\otimes n}$ the entanglement pairing. At $n=2$, $\omega\otimes\omega(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=2(c_{00}c_{11}-c_{01}c_{10})=2\det c$, so $2\lvert\det c\rvert$ is the concurrence, with inertia $(2,2)$ matching the Bell-basis diagonalisation; and this is the $n=2$ formula, not a general one. The other quadratic form of the pair is the norm, $B^{\otimes2}(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=\sum_{ij}c_{ij}^{2}=N(\tilde Q)$, the quaternionic algebraic norm in the basis order of the Bell article; it vanishes on the zero divisors and not on the product states, so the concurrence is not twice its modulus, and $\lvert00\rangle$ with $N=1$, $C=0$ against $\tfrac12(1,i;i,1)$ with $N=0$, $C=1$ is the pair that shows it. $\omega\otimes\omega$ is invariant under $SL_2\times SL_2$ and $B\otimes B$ under $SO_2\times SO_2$, so they are independent forms invariant under different groups and not a two-dimensional space of local-unitary invariants. The parity rule $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$ makes $\omega^{\otimes3}$ alternating, hence identically zero on the diagonal, which is why no degree-two entanglement invariant exists at three qubits and the three-qubit measures are quartic. The corpus's charge conjugation $\mathcal{C}$ is $\omega$ composed with conjugation, and $\mathcal{C}\otimes\mathcal{C}$ is the bilinear pairing whose modulus is the concurrence: mass pairing, spin flip and entanglement measure are one form. Bilinearity is the criterion that survives composition; antilinearity is what does not, and the same property that produces the concurrence destroys the per-subsystem label.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -313,12 +313,12 @@ $$</p>
 <td>the three tensor powers: weights, norm, entanglement</td>
 </tr>
 <tr>
-<td>$2\det c=\omega\otimes\omega(\psi,\psi)$</td>
+<td>$2\det c=\omega\otimes\omega(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})$</td>
 <td>the concurrence identity: the tensor square of $\omega$ is twice the determinant; $C=2\lvert\det c\rvert$</td>
 </tr>
 <tr>
 <td>$N(\tilde Q)=\sum_{\imath} Q_{\imath}^{2}$</td>
-<td>the quaternionic algebraic norm; $N(\psi)=\sum_{ij}c_{ij}^{2}$ in the basis order; zero exactly on the zero divisors; not $C/2$</td>
+<td>the quaternionic algebraic norm; $N(Ξ_{\mathrm{wfn}})=\sum_{ij}c_{ij}^{2}$ in the basis order; zero exactly on the zero divisors; not $C/2$</td>
 </tr>
 <tr>
 <td>$(2,2)$</td>

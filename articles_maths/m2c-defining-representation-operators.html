@@ -73,14 +73,14 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The carrier is a module and not an algebra, and the whole article turns on that difference.</strong> In the algebra categories a two-sided operator is a map $X\mapsto QXP$, with both slots elements of the algebra. Here there is no product of two elements of the carrier: $V=\mathbb{C}^{2}$ is a module, a sum of two columns is not a column of a product, and the second slot must be a covector. The two-sided operator is therefore
 $$
-L_{u}R_{\phi}(v)=\phi(v)\,u=u\phi^{\mathsf T},
+L_{u}R_{\digamma_{\mathrm{map}}}(v)=\digamma_{\mathrm{map}}(v)\,u=u\digamma_{\mathrm{map}}^{\mathsf T},
 $$
-with $u\in V$ a column and $\phi\in V^{*}$ a row.</p>
+with $u\in V$ a column and $\digamma_{\mathrm{map}}\in V^{*}$ a row.</p>
 <p><strong>The result in one line.</strong> Every two-sided operator of the carrier is a rank-one matrix, that is a point of the determinantal cone $\{\det=0\}$ in $M_2(\mathbb{C})=\mathbb{C}^{4}$; the family is closed under composition, with the scalar absorbed; it has no identity, no inverses, no isometries and no nonzero anti-self-adjoint member; and its length equals its rank and is at most two. <strong>The pair is a semigroup with zero and not a group, and the reason is arithmetic: the identity has rank two and the cone has rank one.</strong></p>
 <p><strong>Why the module reading is still worth having.</strong> Three things are gained. The parametrisation by $V\times V^{*}$ modulo scaling, which turns every statement about the cone into a statement about a point of $\mathbb{P}^{1}\times\mathbb{P}^{1}$. The single quadratic criterion $\det M=0$, which at this size is the whole of the rank condition. And the length formula, which makes the rank of a matrix the number of elementary products it needs. <strong>What is lost is exactly the algebra: the identity, the inverses and the isometry group.</strong></p>
-<p><strong>Two cones and not one.</strong> The space $M_2(\mathbb{C})$ carries two rank-one families, the bilinear one $u\phi^{\mathsf T}$ and the Hermitian one $uu^{\dagger}$, and both belong to this module. The first is the Segre quadric and the second is the light cone, its projectivisation is one projective line and not a product, and the collapse is the quotient by the phase. <strong>This is the only pair of the corpus where the two cones must be compared side by side</strong>, because it is the only one where both are cones of operators on a module rather than of elements of an algebra.</p>
+<p><strong>Two cones and not one.</strong> The space $M_2(\mathbb{C})$ carries two rank-one families, the bilinear one $u\digamma_{\mathrm{map}}^{\mathsf T}$ and the Hermitian one $uu^{\dagger}$, and both belong to this module. The first is the Segre quadric and the second is the light cone, its projectivisation is one projective line and not a product, and the collapse is the quotient by the phase. <strong>This is the only pair of the corpus where the two cones must be compared side by side</strong>, because it is the only one where both are cones of operators on a module rather than of elements of an algebra.</p>
 <p><strong>Boundaries.</strong> The space, the two generators, the ambient four units and the two cones as point sets are <em>$M_2(\mathbb{C})$ Defining Representation</em>; the pairings of two columns and of two operators, their Gram matrices and the four norms are <em>$M_2(\mathbb{C})$ Defining Representation : Products, Forms and Norms</em>; the operators of the biquaternion algebra, with the two-sided operator $X\mapsto QXP$, its cone, its ladder $1,4,7,16$ and its gauge, are <em>$M_2(\mathbb{C})$ Pauli Representation : Operators</em>; the general rank criterion and the determinantal variety at the size four are <em>$M_4(\mathbb{C})$ Pauli Representation</em> and its operators companion; the endomorphism algebra, $\mathrm{GL}_2(\mathbb{C})$ and $\mathrm{PGL}_2(\mathbb{C})$ are <em>The Endomorphisms of $\mathbb{C}^2$</em>; the lattice and the incidence are <em>The Subspaces of $\mathbb{C}^2$</em>. The general theory of operators on a module, with the two-sided operators and the tensor form of the linear map, is <em>Modules</em>, and the vectorisation and the coefficient array are <em>The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$</em>.</p>
-<p><strong>Conventions.</strong> The carrier is $V=\mathbb{C}^{2}$ with the basis $e_1,e_2$, the dual is $V^{*}$ with the dual basis, $\phi(u)=\phi^{\mathsf T}u$ is the pairing with no conjugation, $E_{jk}=e_je_k^{\mathsf T}$ are the matrix units, $M^{\mathsf T}$ and $M^{\dagger}$ are the transpose and the conjugate transpose, and $J_2=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}$. The operator is written $L_{u}R_{\phi}=u\phi^{\mathsf T}$ with the column on the left and the row on the right, and $\mathcal{C}$ is the set of all of them, the <strong>bilinear cone</strong>, with $\mathcal{C}_{H}$ the <strong>Hermitian cone</strong> of the matrices $uu^{\dagger}$.</p>
+<p><strong>Conventions.</strong> The carrier is $V=\mathbb{C}^{2}$ with the basis $e_1,e_2$, the dual is $V^{*}$ with the dual basis, $\digamma_{\mathrm{map}}(u)=\digamma_{\mathrm{map}}^{\mathsf T}u$ is the pairing with no conjugation, $E_{jk}=e_je_k^{\mathsf T}$ are the matrix units, $M^{\mathsf T}$ and $M^{\dagger}$ are the transpose and the conjugate transpose, and $J_2=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}$. The operator is written $L_{u}R_{\digamma_{\mathrm{map}}}=u\digamma_{\mathrm{map}}^{\mathsf T}$ with the column on the left and the row on the right, and $\mathcal{C}$ is the set of all of them, the <strong>bilinear cone</strong>, with $\mathcal{C}_{H}$ the <strong>Hermitian cone</strong> of the matrices $uu^{\dagger}$.</p>
 <h2 id="the-one-sided-operators">The One-Sided Operators</h2>
 <p><strong>The left side of the carrier is a full matrix algebra and the right side is a dual space, and the two sides are of different kinds.</strong></p>
 <h3 id="the-left-multiplication">The Left Multiplication</h3>
@@ -102,11 +102,11 @@ and the image of the four units is the four units. For $A=\begin{pmatrix}1&amp;2
 <h3 id="the-right-slot">The Right Slot</h3>
 <p><strong>Definition.</strong> The <strong>right slot</strong> of a two-sided operator is its second parameter, and it is an element of the dual,
 $$
-\phi:V\longrightarrow\mathbb{C},\qquad v\longmapsto\phi(v)=\phi^{\mathsf T}v .
+\digamma_{\mathrm{map}}:V\longrightarrow\mathbb{C},\qquad v\longmapsto\digamma_{\mathrm{map}}(v)=\digamma_{\mathrm{map}}^{\mathsf T}v .
 $$
-The operator built from a functional is $L_{u_0}R_{\phi}=u_0\phi^{\mathsf T}$, for a column $u_0$.</p>
+The operator built from a functional is $L_{u_0}R_{\digamma_{\mathrm{map}}}=u_0\digamma_{\mathrm{map}}^{\mathsf T}$, for a column $u_0$.</p>
 <p><strong>Proposition (there is no right multiplication by an element of the carrier).</strong> For $u\in V$ there is no linear map $v\mapsto vu$.</p>
-<p><em>Proof.</em> A product $vu$ would require an algebra structure on $V$, and the carrier has none: $V$ is a module and its only product is the action $Av$ of an endomorphism on a column. What the carrier has instead is the pairing with the dual, which is the functional $\phi$.</p>
+<p><em>Proof.</em> A product $vu$ would require an algebra structure on $V$, and the carrier has none: $V$ is a module and its only product is the action $Av$ of an endomorphism on a column. What the carrier has instead is the pairing with the dual, which is the functional $\digamma_{\mathrm{map}}$.</p>
 <p><strong>The asymmetry is the whole first section.</strong> The left side is a space of dimension four over $\mathbb{C}$ and the right side is a space of dimension two, that is four over $\mathbb{R}$; <strong>the two sides are of different complex dimensions and they are not interchangeable.</strong> The general theory of a two-sided operator on a module takes its second slot in the dual for exactly this reason (<em>Modules</em>).</p>
 <h3 id="the-adjoints-of-the-two-sides">The Adjoints of the Two Sides</h3>
 <p><strong>Definition.</strong> With the complex bilinear form $\langle X,Y\rangle=\operatorname{Tr}(X^{\mathsf T}Y)$ on the operator space, the <strong>transpose adjoint</strong> of $L_A$ is $L_{A^{\mathsf T}}$; with the Hermitian form $\langle X,Y\rangle_{H}=\operatorname{Tr}(X^{\dagger}Y)$ the <strong>Hermitian adjoint</strong> is $L_{A^{\dagger}}$.</p>
@@ -116,31 +116,31 @@ $$
 H(L_Au,v)=H(u,A^{\dagger}v).
 $$</p>
 <p><em>Proof.</em> The first is the associativity of the transposition, $u^{\mathsf T}Av=(A^{\mathsf T}u)^{\mathsf T}v$, read in the other order; the second is the definition of the adjoint of a matrix for the Hermitian form, $H(Au,v)=u^{\mathsf T}\overline{Av}=u^{\mathsf T}\bar A\bar v=H(u,A^{\dagger}v)$.</p>
-<p><strong>The transpose adjoint of the right slot is the left slot.</strong> A row $\phi$ is the transpose of a column, so the two sides are exchanged by the transpose and are <strong>not</strong> exchanged by the dagger, which sends a row to a column of the conjugate space. <strong>The transposition swaps the two sides of the theory and the conjugation does not</strong>, which is why the transpose fixed locus is the symmetric cone and the dagger fixed locus the Hermitian one, as §<em>The Adjoints and the Types</em> shows.</p>
+<p><strong>The transpose adjoint of the right slot is the left slot.</strong> A row $\digamma_{\mathrm{map}}$ is the transpose of a column, so the two sides are exchanged by the transpose and are <strong>not</strong> exchanged by the dagger, which sends a row to a column of the conjugate space. <strong>The transposition swaps the two sides of the theory and the conjugation does not</strong>, which is why the transpose fixed locus is the symmetric cone and the dagger fixed locus the Hermitian one, as §<em>The Adjoints and the Types</em> shows.</p>
 <h2 id="the-two-sided-operator">The Two-Sided Operator</h2>
-<p><strong>Definition.</strong> The <strong>two-sided operator</strong> of the pair $(u,\phi)$ is
+<p><strong>Definition.</strong> The <strong>two-sided operator</strong> of the pair $(u,\digamma_{\mathrm{map}})$ is
 $$
-L_{u}R_{\phi}=u\phi^{\mathsf T},\qquad L_{u}R_{\phi}(v)=\phi(v)\,u .
+L_{u}R_{\digamma_{\mathrm{map}}}=u\digamma_{\mathrm{map}}^{\mathsf T},\qquad L_{u}R_{\digamma_{\mathrm{map}}}(v)=\digamma_{\mathrm{map}}(v)\,u .
 $$</p>
-<p><strong>Proposition (the elementary properties).</strong> For all $u,u'\in V$, $\phi,\phi'\in V^{*}$ and $\lambda\in\mathbb{C}$:
+<p><strong>Proposition (the elementary properties).</strong> For all $u,u'\in V$, $\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}'\in V^{*}$ and $\lambda\in\mathbb{C}$:
 $$
-L_{u}R_{\phi}+L_{u'}R_{\phi}=L_{u+u'}R_{\phi},\qquad
-L_{u}R_{\phi}+L_{u}R_{\phi'}=L_{u}R_{\phi+\phi'},\qquad
-L_{\lambda u}R_{\phi}=L_{u}R_{\lambda\phi}=\lambda\,L_{u}R_{\phi},
+L_{u}R_{\digamma_{\mathrm{map}}}+L_{u'}R_{\digamma_{\mathrm{map}}}=L_{u+u'}R_{\digamma_{\mathrm{map}}},\qquad
+L_{u}R_{\digamma_{\mathrm{map}}}+L_{u}R_{\digamma_{\mathrm{map}}'}=L_{u}R_{\digamma_{\mathrm{map}}+\digamma_{\mathrm{map}}'},\qquad
+L_{\lambda u}R_{\digamma_{\mathrm{map}}}=L_{u}R_{\lambda\digamma_{\mathrm{map}}}=\lambda\,L_{u}R_{\digamma_{\mathrm{map}}},
 $$
-and $L_{u}R_{\phi}=0$ if and only if $u=0$ or $\phi=0$.</p>
+and $L_{u}R_{\digamma_{\mathrm{map}}}=0$ if and only if $u=0$ or $\digamma_{\mathrm{map}}=0$.</p>
 <p><em>Proof.</em> The three identities are the distributivity of the matrix product over the sum of rank-one factors. The last is the statement that a product of a nonzero column and a nonzero row is nonzero, entrywise.</p>
-<p><strong>Proposition (the fibre is exactly the scaling orbit).</strong> If $L_{u}R_{\phi}=L_{u'}R_{\phi'}\neq0$ then $u'=\lambda u$ and $\phi'=\lambda^{-1}\phi$ for a unique $\lambda\in\mathbb{C}^{\times}$; the fibres of the parametrisation are therefore the orbits
+<p><strong>Proposition (the fibre is exactly the scaling orbit).</strong> If $L_{u}R_{\digamma_{\mathrm{map}}}=L_{u'}R_{\digamma_{\mathrm{map}}'}\neq0$ then $u'=\lambda u$ and $\digamma_{\mathrm{map}}'=\lambda^{-1}\digamma_{\mathrm{map}}$ for a unique $\lambda\in\mathbb{C}^{\times}$; the fibres of the parametrisation are therefore the orbits
 $$
-(u,\phi)\longmapsto(\lambda u,\lambda^{-1}\phi),
+(u,\digamma_{\mathrm{map}})\longmapsto(\lambda u,\lambda^{-1}\digamma_{\mathrm{map}}),
 $$
 and the parametrisation is injective in each slot once the other is fixed.</p>
-<p><em>Proof.</em> Both matrices have the same image, which is the line $\mathbb{C}u=\mathbb{C}u'$, so $u'=\lambda u$; then $u\phi^{\mathsf T}=u\lambda\phi'{}^{\mathsf T}$ and the rows are equal because $u\neq0$ and the map $\phi\mapsto u\phi^{\mathsf T}$ is injective.</p>
-<p><strong>A worked member.</strong> For $u=(1,i)$ and $\phi=(2,1-i)$ the products of the coordinates are the four entries,
+<p><em>Proof.</em> Both matrices have the same image, which is the line $\mathbb{C}u=\mathbb{C}u'$, so $u'=\lambda u$; then $u\digamma_{\mathrm{map}}^{\mathsf T}=u\lambda\digamma_{\mathrm{map}}'{}^{\mathsf T}$ and the rows are equal because $u\neq0$ and the map $\digamma_{\mathrm{map}}\mapsto u\digamma_{\mathrm{map}}^{\mathsf T}$ is injective.</p>
+<p><strong>A worked member.</strong> For $u=(1,i)$ and $\digamma_{\mathrm{map}}=(2,1-i)$ the products of the coordinates are the four entries,
 $$
-L_{u}R_{\phi}=u\phi^{\mathsf T}=\begin{pmatrix}2&amp;1-i\\ 2i&amp;1+i\end{pmatrix},
+L_{u}R_{\digamma_{\mathrm{map}}}=u\digamma_{\mathrm{map}}^{\mathsf T}=\begin{pmatrix}2&amp;1-i\\ 2i&amp;1+i\end{pmatrix},
 $$
-with $\operatorname{tr}=3+i=\phi(u)$ and $\det=0$. The two rows are proportional with ratio $i$ and the two columns with ratio $(1+i)/2i=(1-i)/2$, which is the fibre of the parametrisation at work.</p>
+with $\operatorname{tr}=3+i=\digamma_{\mathrm{map}}(u)$ and $\det=0$. The two rows are proportional with ratio $i$ and the two columns with ratio $(1+i)/2i=(1-i)/2$, which is the fibre of the parametrisation at work.</p>
 <p><strong>The dimension count.</strong> The parameter space has complex dimension four. The fibre has complex dimension one. The image has complex dimension three and real dimension six, inside an ambient of complex dimension four and real dimension eight. <strong>The deficit of one complex dimension is the scaling and nothing else</strong>, which is the sharpest difference from the algebra categories, where the cone is cut out twice: once by the scaling and once by the failure of the parameter to reach the whole ambient.</p>
 <p><strong>The cone is not a subspace.</strong> The identity is not a member, $I_2\notin\mathcal{C}$, and it is the sum of the two members $E_{11}$ and $E_{22}$. <strong>The additive failure of the family is the identity itself</strong>, and this is the smallest possible witness: two rank-one terms of rank sum two.</p>
 <h2 id="the-cone-and-the-coefficient-matrix">The Cone and the Coefficient Matrix</h2>
@@ -157,9 +157,9 @@ of complex dimension three, ruled in the two families of §<em>The Bilinear Cone
 <p><strong>A second rank-one family lives in the same space, it is the fixed locus of the dagger, and its projectivisation is a single projective line.</strong></p>
 <h3 id="the-second-family">The Second Family</h3>
 <p><strong>Definition.</strong> The <strong>Hermitian cone</strong> is $\mathcal{C}_{H}=\{uu^{\dagger}:u\in V\}$, the set of positive semidefinite matrices of rank at most one.</p>
-<p><strong>Proposition (the Hermitian members of the cone).</strong> A member of $\mathcal{C}$ is Hermitian exactly when it is a real multiple of a member of $\mathcal{C}_{H}$, that is when $\phi=c\,\bar u$ with $c$ real. In particular $\mathcal{C}_{H}\subset\mathcal{C}$, and the Hermitian members of the cone are the real line through the Hermitian cone.</p>
-<p><em>Proof.</em> The computation is the one of <em>$M_2(\mathbb{C})$ Defining Representation</em>, §<em>The Hermitian Cone and the Light Cone</em>: the equality $u\phi^{\mathsf T}=\bar\phi u^{\mathsf T}$ forces $\phi=c\bar u$ with $c$ real and the matrix $c\,uu^{\dagger}$.</p>
-<p><strong>The dagger is the only operation that carries one family to the other.</strong> It is conjugate-linear, it sends $u\phi^{\mathsf T}$ to $\bar\phi u^{\mathsf T}$, and the fixed points are exactly the Hermitian family up to real scale. <strong>The conjugate-linear half of the operator theory is therefore not an ornament: it is where the second cone comes from.</strong></p>
+<p><strong>Proposition (the Hermitian members of the cone).</strong> A member of $\mathcal{C}$ is Hermitian exactly when it is a real multiple of a member of $\mathcal{C}_{H}$, that is when $\digamma_{\mathrm{map}}=c\,\bar u$ with $c$ real. In particular $\mathcal{C}_{H}\subset\mathcal{C}$, and the Hermitian members of the cone are the real line through the Hermitian cone.</p>
+<p><em>Proof.</em> The computation is the one of <em>$M_2(\mathbb{C})$ Defining Representation</em>, §<em>The Hermitian Cone and the Light Cone</em>: the equality $u\digamma_{\mathrm{map}}^{\mathsf T}=\bar\digamma_{\mathrm{map}} u^{\mathsf T}$ forces $\digamma_{\mathrm{map}}=c\bar u$ with $c$ real and the matrix $c\,uu^{\dagger}$.</p>
+<p><strong>The dagger is the only operation that carries one family to the other.</strong> It is conjugate-linear, it sends $u\digamma_{\mathrm{map}}^{\mathsf T}$ to $\bar\digamma_{\mathrm{map}} u^{\mathsf T}$, and the fixed points are exactly the Hermitian family up to real scale. <strong>The conjugate-linear half of the operator theory is therefore not an ornament: it is where the second cone comes from.</strong></p>
 <h3 id="the-two-cones-side-by-side">The Two Cones Side by Side</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -172,7 +172,7 @@ of complex dimension three, ruled in the two families of §<em>The Bilinear Cone
 <tbody>
 <tr>
 <td>definition</td>
-<td>$u\phi^{\mathsf T}$</td>
+<td>$u\digamma_{\mathrm{map}}^{\mathsf T}$</td>
 <td>$uu^{\dagger}$</td>
 </tr>
 <tr>
@@ -192,7 +192,7 @@ of complex dimension three, ruled in the two families of §<em>The Bilinear Cone
 </tr>
 <tr>
 <td>parameters modulo the fibre</td>
-<td>$([u],[\phi])\in\mathbb{P}^{1}\times\mathbb{P}^{1}$</td>
+<td>$([u],[\digamma_{\mathrm{map}}])\in\mathbb{P}^{1}\times\mathbb{P}^{1}$</td>
 <td>$[u]\in\mathbb{P}^{1}$</td>
 </tr>
 <tr>
@@ -212,12 +212,12 @@ of complex dimension three, ruled in the two families of §<em>The Bilinear Cone
 </tr>
 <tr>
 <td>trace</td>
-<td>$\phi(u)$, any complex value</td>
+<td>$\digamma_{\mathrm{map}}(u)$, any complex value</td>
 <td>$\lVert u\rVert^{2}\ge0$</td>
 </tr>
 <tr>
 <td>trace-free members</td>
-<td>$\phi(u)=0$, a hyperplane section</td>
+<td>$\digamma_{\mathrm{map}}(u)=0$, a hyperplane section</td>
 <td>$u=0$ only</td>
 </tr>
 </tbody>
@@ -230,32 +230,32 @@ t^{2}-x^{2}-y^{2}-z^{2}=0,\qquad t=\tfrac12\operatorname{tr}M\ge0,
 $$
 and the map is onto the closed future cone.</p>
 <p><em>Proof.</em> The determinant identity $\det M=t^{2}-\lvert\vec x\rvert^{2}$ on the Hermitian subspace and the vanishing of the determinant on $\mathcal{C}_{H}$ give the equation; the trace is $\lVert u\rVert^{2}=2t\ge0$; and every point of the cone is attained by a column of norm $\sqrt{2t}$ in the corresponding direction. The computation is in <em>$M_2(\mathbb{C})$ Defining Representation</em>, §<em>The Pauli Coordinates</em>.</p>
-<p><strong>Three involutions act on the one cone, and each fixes its own family.</strong> The transposition $T\mapsto T^{\mathsf T}$ fixes the symmetric rank-one matrices $c\,uu^{\mathsf T}$ and <strong>exchanges the two rulings</strong>, because it swaps the column and the row; the conjugation $T\mapsto\bar T$ fixes the real matrices $u\phi^{\mathsf T}$ with $u,\phi$ real and acts on <strong>each</strong> ruling separately, sending $(u,\phi)$ to $(\bar u,\bar\phi)$ without exchanging them; the dagger $T\mapsto T^{\dagger}$ fixes the Hermitian ones. <strong>The cone is closed under all three, and the three fixed loci have two distinct sizes</strong>: the symmetric family is a complex cone of complex dimension two, that is real dimension four, because its scalar is complex, while the real family and the Hermitian family are both of real dimension three, $2+2-1$ for the pair of real columns modulo the real scaling and $2+1$ for the column modulo its phase times its modulus.</p>
+<p><strong>Three involutions act on the one cone, and each fixes its own family.</strong> The transposition $T\mapsto T^{\mathsf T}$ fixes the symmetric rank-one matrices $c\,uu^{\mathsf T}$ and <strong>exchanges the two rulings</strong>, because it swaps the column and the row; the conjugation $T\mapsto\bar T$ fixes the real matrices $u\digamma_{\mathrm{map}}^{\mathsf T}$ with $u,\digamma_{\mathrm{map}}$ real and acts on <strong>each</strong> ruling separately, sending $(u,\digamma_{\mathrm{map}})$ to $(\bar u,\bar\digamma_{\mathrm{map}})$ without exchanging them; the dagger $T\mapsto T^{\dagger}$ fixes the Hermitian ones. <strong>The cone is closed under all three, and the three fixed loci have two distinct sizes</strong>: the symmetric family is a complex cone of complex dimension two, that is real dimension four, because its scalar is complex, while the real family and the Hermitian family are both of real dimension three, $2+2-1$ for the pair of real columns modulo the real scaling and $2+1$ for the column modulo its phase times its modulus.</p>
 <h2 id="the-composition">The Composition</h2>
 <p><strong>The family is closed under composition, the scalar is absorbed, and the trace records the absorption.</strong></p>
 <p><strong>Proposition (the composition rule).</strong> For all pairs,
 $$
-L_{u}R_{\phi}\,L_{u'}R_{\phi'}=\phi(u')\,L_{u}R_{\phi'} .
+L_{u}R_{\digamma_{\mathrm{map}}}\,L_{u'}R_{\digamma_{\mathrm{map}}'}=\digamma_{\mathrm{map}}(u')\,L_{u}R_{\digamma_{\mathrm{map}}'} .
 $$</p>
-<p><em>Proof.</em> $u\phi^{\mathsf T}u'\phi'{}^{\mathsf T}=u(\phi^{\mathsf T}u')\phi'{}^{\mathsf T}$ and $\phi^{\mathsf T}u'=\phi(u')$ is a scalar.</p>
+<p><em>Proof.</em> $u\digamma_{\mathrm{map}}^{\mathsf T}u'\digamma_{\mathrm{map}}'{}^{\mathsf T}=u(\digamma_{\mathrm{map}}^{\mathsf T}u')\digamma_{\mathrm{map}}'{}^{\mathsf T}$ and $\digamma_{\mathrm{map}}^{\mathsf T}u'=\digamma_{\mathrm{map}}(u')$ is a scalar.</p>
 <p><strong>Corollary (the powers).</strong> For $n\ge1$,
 $$
-\bigl(L_{u}R_{\phi}\bigr)^{n}=\phi(u)^{\,n-1}\,L_{u}R_{\phi} .
+\bigl(L_{u}R_{\digamma_{\mathrm{map}}}\bigr)^{n}=\digamma_{\mathrm{map}}(u)^{\,n-1}\,L_{u}R_{\digamma_{\mathrm{map}}} .
 $$</p>
-<p><em>Proof.</em> Induction on the rule, the scalar being $\phi(u)$ at every step.</p>
-<p><strong>Proposition (the three types of member).</strong> For $T=L_{u}R_{\phi}\neq0$,
+<p><em>Proof.</em> Induction on the rule, the scalar being $\digamma_{\mathrm{map}}(u)$ at every step.</p>
+<p><strong>Proposition (the three types of member).</strong> For $T=L_{u}R_{\digamma_{\mathrm{map}}}\neq0$,
 $$
-T^{2}=0\iff\phi(u)=0,\qquad T^{2}=T\iff\phi(u)=1,
+T^{2}=0\iff\digamma_{\mathrm{map}}(u)=0,\qquad T^{2}=T\iff\digamma_{\mathrm{map}}(u)=1,
 $$
-and $T$ is invertible for no pair $(u,\phi)$.</p>
+and $T$ is invertible for no pair $(u,\digamma_{\mathrm{map}})$.</p>
 <p><em>Proof.</em> The two equivalences are the corollary at $n=2$. Invertibility would require the rank to be two, since the inverse of a matrix has the rank of the matrix, and the rank is one.</p>
-<p><strong>The trace and the spectrum.</strong> The eigenvalues are $\phi(u)$ and $0$, so $\operatorname{tr}T=\phi(u)$ and $\det T=0$; the trace is the scalar that appears in the composition rule, and the Cayley–Hamilton identity degenerates to $T^{2}=\phi(u)T$. <strong>The whole spectral theory of the pair is the single number $\phi(u)$</strong>, and the two cases of the corollary are its two values.</p>
-<p><strong>The semigroup.</strong> The product is associative by the associativity of the matrix product. There is a zero, $L_{0}R_{\phi}=0$, and there is no identity, because $I_2$ has rank two and every member has rank at most one. The family is thus a <strong>semigroup with zero and without identity</strong>, and the multiplicative structure is the one of $\mathbb{P}^{1}\times\mathbb{P}^{1}$ with the pairing as the structure scalar.</p>
+<p><strong>The trace and the spectrum.</strong> The eigenvalues are $\digamma_{\mathrm{map}}(u)$ and $0$, so $\operatorname{tr}T=\digamma_{\mathrm{map}}(u)$ and $\det T=0$; the trace is the scalar that appears in the composition rule, and the Cayley–Hamilton identity degenerates to $T^{2}=\digamma_{\mathrm{map}}(u)T$. <strong>The whole spectral theory of the pair is the single number $\digamma_{\mathrm{map}}(u)$</strong>, and the two cases of the corollary are its two values.</p>
+<p><strong>The semigroup.</strong> The product is associative by the associativity of the matrix product. There is a zero, $L_{0}R_{\digamma_{\mathrm{map}}}=0$, and there is no identity, because $I_2$ has rank two and every member has rank at most one. The family is thus a <strong>semigroup with zero and without identity</strong>, and the multiplicative structure is the one of $\mathbb{P}^{1}\times\mathbb{P}^{1}$ with the pairing as the structure scalar.</p>
 <p><strong>Remark (the comparison with the algebra family).</strong> The family of the biquaternion algebra contains $L_{e_t}R_{e_t}$, the identity, and it contains inverses whenever both parameters are invertible (<em>$M_2(\mathbb{C})$ Pauli Representation : Operators</em>). <strong>The module family contains neither</strong>, and the reason is not the choice of parametrisation but the rank: a rank-one operator can never be the identity of a two-dimensional space.</p>
 <h2 id="the-length">The Length</h2>
 <p><strong>Definition.</strong> The <strong>length</strong> of $M\in M_2(\mathbb{C})$ is
 $$
-\ell(M)=\min\Bigl\{r:M=\sum_{i=1}^{r}L_{u_i}R_{\phi_i}\Bigr\},
+\ell(M)=\min\Bigl\{r:M=\sum_{i=1}^{r}L_{u_i}R_{\digamma_{\mathrm{map},i}}\Bigr\},
 $$
 the least number of rank-one terms whose sum is $M$.</p>
 <p><strong>Theorem (the length is the rank).</strong> For every $M\in M_2(\mathbb{C})$,
@@ -279,27 +279,27 @@ $$</p>
 <p><strong>Nineteen members, twelve of length one and seven of length two, each read by the same four numbers.</strong></p>
 <h3 id="the-reading-of-a-member">The Reading of a Member</h3>
 <p><strong>A length-one member is read by four numbers and two lines, and no other datum exists.</strong></p>
-<p><strong>Proposition (the entries, the square, the kernel and the image).</strong> For $u=(p,q)$ and $\phi=(r,s)$,
+<p><strong>Proposition (the entries, the square, the kernel and the image).</strong> For $u=(p,q)$ and $\digamma_{\mathrm{map}}=(r,s)$,
 $$
-L_{u}R_{\phi}=\begin{pmatrix}pr&amp;ps\\ qr&amp;qs\end{pmatrix},\qquad
-\operatorname{tr}L_{u}R_{\phi}=\phi(u)=pr+qs,\qquad
-\det L_{u}R_{\phi}=0,
+L_{u}R_{\digamma_{\mathrm{map}}}=\begin{pmatrix}pr&amp;ps\\ qr&amp;qs\end{pmatrix},\qquad
+\operatorname{tr}L_{u}R_{\digamma_{\mathrm{map}}}=\digamma_{\mathrm{map}}(u)=pr+qs,\qquad
+\det L_{u}R_{\digamma_{\mathrm{map}}}=0,
 $$
 $$
-\bigl(L_{u}R_{\phi}\bigr)^{2}=\phi(u)\,L_{u}R_{\phi},\qquad
-\ker L_{u}R_{\phi}=\ker\phi,\qquad
-\operatorname{im}L_{u}R_{\phi}=\mathbb{C}u .
+\bigl(L_{u}R_{\digamma_{\mathrm{map}}}\bigr)^{2}=\digamma_{\mathrm{map}}(u)\,L_{u}R_{\digamma_{\mathrm{map}}},\qquad
+\ker L_{u}R_{\digamma_{\mathrm{map}}}=\ker\digamma_{\mathrm{map}},\qquad
+\operatorname{im}L_{u}R_{\digamma_{\mathrm{map}}}=\mathbb{C}u .
 $$
-<strong>The four entries are the four products $pr$, $ps$, $qr$, $qs$, so the two rows are proportional and so are the two columns</strong>, and the pair $(u,\phi)$ is recovered from the matrix up to the single scaling of §<em>The Two-Sided Operator</em>.</p>
-<p><em>Proof.</em> The matrix is the product of the column by the row, entry by entry. The trace is the sum of the two diagonal entries $pr$ and $qs$. The determinant vanishes because the two rows are $\phi^{\mathsf T}$ multiplied by $p$ and by $q$. The square is $u(\phi^{\mathsf T}u)\phi^{\mathsf T}$, and $\phi^{\mathsf T}u=\phi(u)$ is a scalar. The image is the line of $u$, because $L_{u}R_{\phi}(v)=\phi(v)u$ and $\phi(v)$ is a scalar; the kernel is the kernel of $\phi$, because $u\neq0$. ∎</p>
+<strong>The four entries are the four products $pr$, $ps$, $qr$, $qs$, so the two rows are proportional and so are the two columns</strong>, and the pair $(u,\digamma_{\mathrm{map}})$ is recovered from the matrix up to the single scaling of §<em>The Two-Sided Operator</em>.</p>
+<p><em>Proof.</em> The matrix is the product of the column by the row, entry by entry. The trace is the sum of the two diagonal entries $pr$ and $qs$. The determinant vanishes because the two rows are $\digamma_{\mathrm{map}}^{\mathsf T}$ multiplied by $p$ and by $q$. The square is $u(\digamma_{\mathrm{map}}^{\mathsf T}u)\digamma_{\mathrm{map}}^{\mathsf T}$, and $\digamma_{\mathrm{map}}^{\mathsf T}u=\digamma_{\mathrm{map}}(u)$ is a scalar. The image is the line of $u$, because $L_{u}R_{\digamma_{\mathrm{map}}}(v)=\digamma_{\mathrm{map}}(v)u$ and $\digamma_{\mathrm{map}}(v)$ is a scalar; the kernel is the kernel of $\digamma_{\mathrm{map}}$, because $u\neq0$. ∎</p>
 <h3 id="twelve-members-of-length-one">Twelve Members of Length One</h3>
 <p><strong>Each line is a pair of a column and a row, the matrix they produce, the scalar that decides its type, and the reading of the geometry.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Member</th>
-<th>The pair $(u,\phi)$</th>
-<th>$\phi(u)$</th>
+<th>The pair $(u,\digamma_{\mathrm{map}})$</th>
+<th>$\digamma_{\mathrm{map}}(u)$</th>
 <th>$M^{2}$</th>
 <th>The reading</th>
 </tr>
@@ -395,25 +395,25 @@ $$
 <p><strong>The two nilpotents of the table are not the same nilpotent.</strong> $E_{12}$ has image $\mathbb{C}e_1$ and kernel $\mathbb{C}e_1$, equal lines and non-isotropic; $K$ has image and kernel the isotropic line $\mathbb{C}(1,i)$. <strong>Both are of length one and both have square zero, and they are distinguished by the form $B$ and by nothing in the matrix</strong>: $e_1^{\mathsf T}e_1=1$ and $(1,i)^{\mathsf T}(1,i)=0$.</p>
 <h3 id="the-scalar-that-decides">The Scalar That Decides</h3>
 <p><strong>One number, three types, and the type is the geometry of the two lines.</strong></p>
-<p><strong>Proposition (the trichotomy).</strong> For $T=L_{u}R_{\phi}\neq0$,
+<p><strong>Proposition (the trichotomy).</strong> For $T=L_{u}R_{\digamma_{\mathrm{map}}}\neq0$,
 $$
-T^{2}=0\iff\phi(u)=0\iff\mathbb{C}u\subseteq\ker\phi,\qquad
-T^{2}=T\iff\phi(u)=1 .
+T^{2}=0\iff\digamma_{\mathrm{map}}(u)=0\iff\mathbb{C}u\subseteq\ker\digamma_{\mathrm{map}},\qquad
+T^{2}=T\iff\digamma_{\mathrm{map}}(u)=1 .
 $$
-In the general case $\phi(u)\neq0$ the member $\phi(u)^{-1}T$ is a projector, and the image line and the kernel line are complementary exactly when $\phi(u)\neq0$.</p>
-<p><em>Proof.</em> The two equivalences are the square read twice. The inclusion $\mathbb{C}u\subseteq\ker\phi$ is the vanishing of $\phi$ on $u$, which is $\phi(u)=0$. When $\phi(u)\neq0$ the scalar $\phi(u)^{-1}$ makes the square equal the member itself. The lines are complementary exactly when $u\notin\ker\phi$, which is the same vanishing read the other way. ∎</p>
+In the general case $\digamma_{\mathrm{map}}(u)\neq0$ the member $\digamma_{\mathrm{map}}(u)^{-1}T$ is a projector, and the image line and the kernel line are complementary exactly when $\digamma_{\mathrm{map}}(u)\neq0$.</p>
+<p><em>Proof.</em> The two equivalences are the square read twice. The inclusion $\mathbb{C}u\subseteq\ker\digamma_{\mathrm{map}}$ is the vanishing of $\digamma_{\mathrm{map}}$ on $u$, which is $\digamma_{\mathrm{map}}(u)=0$. When $\digamma_{\mathrm{map}}(u)\neq0$ the scalar $\digamma_{\mathrm{map}}(u)^{-1}$ makes the square equal the member itself. The lines are complementary exactly when $u\notin\ker\digamma_{\mathrm{map}}$, which is the same vanishing read the other way. ∎</p>
 <p><strong>The three lines of the trichotomy are the three readings of the corner $(p,q;r,s)$.</strong> A member of length one is therefore a line, a transverse line through it, and a complex number; <strong>the nilpotent case is the degenerate one in which the two lines coincide</strong>, and the idempotent case is the normalised one in which the complex number is one.</p>
 <h3 id="the-hermitian-members-of-length-one">The Hermitian Members of Length One</h3>
 <p><strong>A length-one member cannot be indefinite, and the obstruction is the rank.</strong></p>
-<p><strong>Proposition (the Hermitian members of length one).</strong> A member $L_{u}R_{\phi}\neq0$ is Hermitian exactly when $\phi=\mu\overline{u}$ with $\mu$ real, and then
+<p><strong>Proposition (the Hermitian members of length one).</strong> A member $L_{u}R_{\digamma_{\mathrm{map}}}\neq0$ is Hermitian exactly when $\digamma_{\mathrm{map}}=\mu\overline{u}$ with $\mu$ real, and then
 $$
-L_{u}R_{\phi}=\mu\,uu^{\dagger},\qquad
+L_{u}R_{\digamma_{\mathrm{map}}}=\mu\,uu^{\dagger},\qquad
 \operatorname{spec}=\bigl\{\mu\lVert u\rVert^{2},\ 0\bigr\},
 \qquad
 \bigl(\mu uu^{\dagger}\bigr)^{2}=\mu\lVert u\rVert^{2}\bigl(\mu uu^{\dagger}\bigr).
 $$
 <strong>So the Hermitian members of length one are the positive multiples of a rank-one projector and their negatives, and none of them is indefinite.</strong></p>
-<p><em>Proof.</em> The matrix $u\phi^{\mathsf T}$ is Hermitian when $u_j\overline{\phi_k}=\overline{u_k\phi_j}$ for all $j,k$. If $u_1\neq0$ the pair $(j,k)=(1,1)$ gives $\phi_1$ in terms of $u$, and the pair $(1,k)$ then forces $\phi_k=\mu\overline{u_k}$ with $\mu=\phi_1/\overline{u_1}$, real because the entry $(1,1)$ is self-conjugate; the case $u_1=0$ is the same argument on the other coordinate. The spectrum is read from the square, whose scalar is $\mu(u^{\mathsf T}\overline{u})=\mu\lVert u\rVert^{2}$, a positive real multiple of $\mu$. ∎</p>
+<p><em>Proof.</em> The matrix $u\digamma_{\mathrm{map}}^{\mathsf T}$ is Hermitian when $u_j\overline{\digamma_{\mathrm{map},k}}=\overline{u_k\digamma_{\mathrm{map},j}}$ for all $j,k$. If $u_1\neq0$ the pair $(j,k)=(1,1)$ gives $\digamma_{\mathrm{map},1}$ in terms of $u$, and the pair $(1,k)$ then forces $\digamma_{\mathrm{map},k}=\mu\overline{u_k}$ with $\mu=\digamma_{\mathrm{map},1}/\overline{u_1}$, real because the entry $(1,1)$ is self-conjugate; the case $u_1=0$ is the same argument on the other coordinate. The spectrum is read from the square, whose scalar is $\mu(u^{\mathsf T}\overline{u})=\mu\lVert u\rVert^{2}$, a positive real multiple of $\mu$. ∎</p>
 <p><strong>The consequence is a sharp separation of the two lengths.</strong> The member $\sigma_3=\operatorname{diag}(1,-1)$ is Hermitian and indefinite, so it is not of length one and its length is two. <strong>The Hermitian cone of §<em>The Hermitian Cone and the Light Cone</em> is exactly the set of the positive Hermitian members of length one</strong>, and the indefinite Hermitian operators sit in the length-two stratum: the length and the signature are two readings of the same failure, which is the failure of the rank.</p>
 <h3 id="the-members-of-length-two">The Members of Length Two</h3>
 <p><strong>Length two is invertibility, and the seven following members are the standard witnesses.</strong></p>
@@ -471,7 +471,7 @@ $$
 </tr>
 </tbody>
 </table></div>
-<p><strong>The fifth line is the one that carries the reading.</strong> $N$ has a single eigenvalue, the value $1$, and its eigenspace is the line $\mathbb{C}e_1$ of dimension one, so $N$ is not diagonalisable and $N^{k}=\begin{pmatrix}1&amp;k\\0&amp;1\end{pmatrix}$ for every $k\ge1$. <strong>A member of length two can have a repeated eigenvalue and can fail to be diagonalisable, and a member of length one cannot fail in that way</strong>: a rank-one member has the two eigenvalues $\phi(u)$ and $0$, and its eigenspaces are $\ker\phi$ and the line $\mathbb{C}u$, of dimensions one and one whenever $\phi(u)\neq0$.</p>
+<p><strong>The fifth line is the one that carries the reading.</strong> $N$ has a single eigenvalue, the value $1$, and its eigenspace is the line $\mathbb{C}e_1$ of dimension one, so $N$ is not diagonalisable and $N^{k}=\begin{pmatrix}1&amp;k\\0&amp;1\end{pmatrix}$ for every $k\ge1$. <strong>A member of length two can have a repeated eigenvalue and can fail to be diagonalisable, and a member of length one cannot fail in that way</strong>: a rank-one member has the two eigenvalues $\digamma_{\mathrm{map}}(u)$ and $0$, and its eigenspaces are $\ker\digamma_{\mathrm{map}}$ and the line $\mathbb{C}u$, of dimensions one and one whenever $\digamma_{\mathrm{map}}(u)\neq0$.</p>
 <p><strong>The sixth line is the statement that the length is not the size of the entries.</strong> For every $\varepsilon\neq0$ the determinant is $\varepsilon$ and the length is two; at $\varepsilon=0$ the member is $E_{22}$ and the length drops to one. <strong>The length is constant on the complement of the cone and jumps at its boundary</strong>, and the jump is the drop of the rank.</p>
 <h3 id="the-two-canonical-decompositions">The Two Canonical Decompositions</h3>
 <p><strong>A member of length two has two natural splits into two rank-one terms, and the two splits are different.</strong></p>
@@ -537,7 +537,7 @@ both Hermitian, both of length one, both of square themselves and mutually ortho
 $$
 J_2=i\,\pi-i\,(I_2-\pi).
 $$</p>
-<p><em>Proof.</em> The two displays are the two readings: $\pi$ is the member $\tfrac{1}{\sqrt2}(1,i)\cdot\tfrac{1}{\sqrt2}(1,-i)^{\mathsf T}$, and $I_2-\pi$ is the other; their sum is $I_2$ by the previous section, $\pi^{2}=\pi$ by the trace, and the product vanishes by $\phi(u')=0$ on the complementary pair. The last identity is the difference read on the four entries. ∎</p>
+<p><em>Proof.</em> The two displays are the two readings: $\pi$ is the member $\tfrac{1}{\sqrt2}(1,i)\cdot\tfrac{1}{\sqrt2}(1,-i)^{\mathsf T}$, and $I_2-\pi$ is the other; their sum is $I_2$ by the previous section, $\pi^{2}=\pi$ by the trace, and the product vanishes by $\digamma_{\mathrm{map}}(u')=0$ on the complementary pair. The last identity is the difference read on the four entries. ∎</p>
 <p><strong>The reading.</strong> A member of length two is a complex combination of two orthogonal members of length one, and the coefficients are its eigenvalues. <strong>In the module there is no algebra product to carry the spectral theorem, and yet the spectral decomposition survives as the shortest decomposition of the member</strong>, with the two terms being the two eigenprojectors and the two scalars being the two eigenvalues. The real form $J_2$ of the complex structure has the pair $(\pi,I_2-\pi)$ attached to it, and the pair is the whole of its spectral theory.</p>
 <h3 id="the-kernel-the-image-and-the-rank">The Kernel, the Image and the Rank</h3>
 <p><strong>The two lines and the two scalars of a member are the table, and the rank is the collapse of the two lines.</strong></p>
@@ -579,7 +579,7 @@ $$</p>
 <td>$T$</td>
 <td>$\ker(2,1-i)$</td>
 <td>$\mathbb{C}(1,i)$</td>
-<td>transverse, $\phi(u)=3+i\neq0$</td>
+<td>transverse, $\digamma_{\mathrm{map}}(u)=3+i\neq0$</td>
 </tr>
 <tr>
 <td>$I_2$, $J_2$, $N$</td>
@@ -652,10 +652,10 @@ for every $M$.</p>
 <p><strong>Definition.</strong> With the complex bilinear form $\langle X,Y\rangle=\operatorname{Tr}(X^{\mathsf T}Y)$ on $M_2(\mathbb{C})$, the <strong>transpose adjoint</strong> of $T$ is the unique $T^{\mathsf T}$ with $\langle TX,Y\rangle=\langle X,T^{\mathsf T}Y\rangle$.</p>
 <p><strong>Proposition (the transpose swaps the slots).</strong> For every pair,
 $$
-\bigl(L_{u}R_{\phi}\bigr)^{\mathsf T}=L_{\phi}R_{u},
+\bigl(L_{u}R_{\digamma_{\mathrm{map}}}\bigr)^{\mathsf T}=L_{\digamma_{\mathrm{map}}}R_{u},
 $$
-that is $\phi u^{\mathsf T}$ in coordinates.</p>
-<p><em>Proof.</em> $(u\phi^{\mathsf T})^{\mathsf T}=\phi u^{\mathsf T}$, the column becoming a row and the row a column.</p>
+that is $\digamma_{\mathrm{map}} u^{\mathsf T}$ in coordinates.</p>
+<p><em>Proof.</em> $(u\digamma_{\mathrm{map}}^{\mathsf T})^{\mathsf T}=\digamma_{\mathrm{map}} u^{\mathsf T}$, the column becoming a row and the row a column.</p>
 <p><strong>The families of the transposition.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -668,12 +668,12 @@ that is $\phi u^{\mathsf T}$ in coordinates.</p>
 <tbody>
 <tr>
 <td>self-adjoint</td>
-<td>$\phi=c\,u$</td>
+<td>$\digamma_{\mathrm{map}}=c\,u$</td>
 <td>the symmetric rank-one matrices $c\,uu^{\mathsf T}$</td>
 </tr>
 <tr>
 <td>anti-self-adjoint</td>
-<td>$\phi=-c\,u$ with $c\neq0$</td>
+<td>$\digamma_{\mathrm{map}}=-c\,u$ with $c\neq0$</td>
 <td>empty: $c\,uu^{\mathsf T}=-c\,uu^{\mathsf T}$ forces $c=0$</td>
 </tr>
 <tr>
@@ -687,36 +687,36 @@ that is $\phi u^{\mathsf T}$ in coordinates.</p>
 <p><em>Proof.</em> An antisymmetric matrix of size two is $\lambda J_2=\lambda\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}$, whose rank is two for $\lambda\neq0$ and which is therefore not in the cone; and $\lambda=0$ is the zero matrix.</p>
 <p><strong>The self-adjoint cone is the symmetric rank-one family.</strong> It is the set of matrices $c\,uu^{\mathsf T}$, of complex dimension two, and it is the <strong>complex</strong> analogue of the Hermitian cone: <strong>the same construction with the transpose in place of the dagger, and the two families are as different as a complex line is from a circle.</strong></p>
 <h3 id="the-hermitian-adjoint">The Hermitian Adjoint</h3>
-<p><strong>Definition.</strong> With $\langle X,Y\rangle_{H}=\operatorname{Tr}(X^{\dagger}Y)$, the <strong>Hermitian adjoint</strong> of $L_{u}R_{\phi}$ is
+<p><strong>Definition.</strong> With $\langle X,Y\rangle_{H}=\operatorname{Tr}(X^{\dagger}Y)$, the <strong>Hermitian adjoint</strong> of $L_{u}R_{\digamma_{\mathrm{map}}}$ is
 $$
-\bigl(L_{u}R_{\phi}\bigr)^{\dagger}=L_{\bar\phi}R_{\bar u}=\bar\phi\,\bar u^{\mathsf T}.
+\bigl(L_{u}R_{\digamma_{\mathrm{map}}}\bigr)^{\dagger}=L_{\bar\digamma_{\mathrm{map}}}R_{\bar u}=\bar\digamma_{\mathrm{map}}\,\bar u^{\mathsf T}.
 $$</p>
-<p>The conjugate is taken in <strong>both</strong> slots: the first because the row $\phi^{\mathsf T}$ becomes $\bar\phi^{\mathsf T}$, the second because $u$ is conjugated in the transpose, $(u\phi^{\mathsf T})^{\dagger}=\bar\phi\,\bar u^{\mathsf T}$. The transpose, by contrast, conjugates nothing and only exchanges the slots.</p>
+<p>The conjugate is taken in <strong>both</strong> slots: the first because the row $\digamma_{\mathrm{map}}^{\mathsf T}$ becomes $\bar\digamma_{\mathrm{map}}^{\mathsf T}$, the second because $u$ is conjugated in the transpose, $(u\digamma_{\mathrm{map}}^{\mathsf T})^{\dagger}=\bar\digamma_{\mathrm{map}}\,\bar u^{\mathsf T}$. The transpose, by contrast, conjugates nothing and only exchanges the slots.</p>
 <p><strong>Proposition (the fixed points of the dagger).</strong> $T^{\dagger}=T$ for a nonzero $T\in\mathcal{C}$ exactly when $T$ is a real multiple of a member of $\mathcal{C}_{H}$.</p>
-<p><em>Proof.</em> The computation of §<em>The Hermitian Cone and the Light Cone</em>: the equality forces $\phi=c\bar u$ with $c$ real, and the matrix is $c\,uu^{\dagger}$.</p>
+<p><em>Proof.</em> The computation of §<em>The Hermitian Cone and the Light Cone</em>: the equality forces $\digamma_{\mathrm{map}}=c\bar u$ with $c$ real, and the matrix is $c\,uu^{\dagger}$.</p>
 <p><strong>The three involutions and their fixed loci.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Involution</th>
-<th>Action on $L_{u}R_{\phi}$</th>
+<th>Action on $L_{u}R_{\digamma_{\mathrm{map}}}$</th>
 <th>Fixed locus</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>transposition</td>
-<td>$L_{\phi}R_{u}$</td>
+<td>$L_{\digamma_{\mathrm{map}}}R_{u}$</td>
 <td>the symmetric cone $c\,uu^{\mathsf T}$</td>
 </tr>
 <tr>
 <td>conjugation</td>
-<td>$L_{\bar u}R_{\bar\phi}$</td>
+<td>$L_{\bar u}R_{\bar\digamma_{\mathrm{map}}}$</td>
 <td>the real cone</td>
 </tr>
 <tr>
 <td>dagger</td>
-<td>$L_{\bar\phi}R_{\bar u}$</td>
+<td>$L_{\bar\digamma_{\mathrm{map}}}R_{\bar u}$</td>
 <td>the Hermitian cone $\mathcal{C}_{H}$</td>
 </tr>
 </tbody>
@@ -726,11 +726,11 @@ $$</p>
 <p><strong>Proposition (there is no nonzero isometry).</strong> For every nonzero $T\in\mathcal{C}$ the two products $T^{\dagger}T$ and $T^{\mathsf T}T$ have rank at most one, so neither equals $I_2$.</p>
 <p><em>Proof.</em> Two scalars are in play and they must not be confused. The Hermitian one is the norm, $\lVert u\rVert^{2}=u^{\dagger}u=\sum_j\lvert u_j\rvert^{2}&gt;0$ for $u\neq0$; the bilinear one is $\tau=u^{\mathsf T}u=\sum_ju_j^{2}$, which <strong>can vanish for a nonzero $u$</strong>, as it does for $u=(1,i)$. With the dagger,
 $$
-T^{\dagger}T=\bar\phi\,(\bar u^{\mathsf T}u)\,\phi^{\mathsf T}=\lVert u\rVert^{2}\,\bar\phi\,\phi^{\mathsf T},
+T^{\dagger}T=\bar\digamma_{\mathrm{map}}\,(\bar u^{\mathsf T}u)\,\digamma_{\mathrm{map}}^{\mathsf T}=\lVert u\rVert^{2}\,\bar\digamma_{\mathrm{map}}\,\digamma_{\mathrm{map}}^{\mathsf T},
 $$
 a matrix of rank at most one, and the identity has rank two. With the transpose,
 $$
-T^{\mathsf T}T=\phi\,(u^{\mathsf T}u)\,\phi^{\mathsf T}=\tau\,\phi\,\phi^{\mathsf T},
+T^{\mathsf T}T=\digamma_{\mathrm{map}}\,(u^{\mathsf T}u)\,\digamma_{\mathrm{map}}^{\mathsf T}=\tau\,\digamma_{\mathrm{map}}\,\digamma_{\mathrm{map}}^{\mathsf T},
 $$
 of rank at most one as well, and of rank zero when $\tau=0$. Neither can be $I_2$.</p>
 <p><strong>The family therefore contains no isometry, no orthogonal member and no unitary member.</strong> In the algebra categories the invertibles of the algebra give isometries of the operator space, and the length ladder starts at one because the identity is a product; here the identity is not a product at all, and the isometry group of the family is empty.</p>
@@ -769,7 +769,7 @@ of complex dimension two. <strong>The identity is the first generator in every b
 <td>the ambient operator space</td>
 <td>$4$</td>
 <td>the four units $E_{jk}$</td>
-<td>the cone $u\phi^{\mathsf T}$</td>
+<td>the cone $u\digamma_{\mathrm{map}}^{\mathsf T}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -780,7 +780,7 @@ of complex dimension two. <strong>The identity is the first generator in every b
 <ul>
 <li>The <strong>parametrisation</strong> of the cone by $V\times V^{*}$ modulo the scaling, hence by $\mathbb{P}^{1}\times\mathbb{P}^{1}$, which turns every rank-one matrix into a pair of lines and every statement about the cone into a statement about the two rulings.</li>
 <li>The <strong>single criterion</strong> $\det M=0$, exact at this size and reducible to the rank inequality in general.</li>
-<li>The <strong>composition rule</strong> $L_{u}R_{\phi}L_{u'}R_{\phi'}=\phi(u')L_{u}R_{\phi'}$, whose scalar is the trace, and with it the whole spectral theory of the family in one number.</li>
+<li>The <strong>composition rule</strong> $L_{u}R_{\digamma_{\mathrm{map}}}L_{u'}R_{\digamma_{\mathrm{map}}'}=\digamma_{\mathrm{map}}(u')L_{u}R_{\digamma_{\mathrm{map}}'}$, whose scalar is the trace, and with it the whole spectral theory of the family in one number.</li>
 <li>The <strong>length formula</strong> $\ell=\operatorname{rank}$, the values $0,1,2$ and the identity at length two.</li>
 <li>The <strong>two cones</strong> and the dagger that relates them, which is the only place in the corpus where the bilinear and the Hermitian rank-one families are compared on the same carrier.</li>
 <li>The <strong>two adjoints</strong>, with the self-adjoint family, the empty anti-self-adjoint family and the Hermitian fixed locus.</li>
@@ -810,7 +810,7 @@ of complex dimension two. <strong>The identity is the first generator in every b
 </tr>
 <tr>
 <td>two-sided operator</td>
-<td>$u\phi^{\mathsf T}$, one column and one row</td>
+<td>$u\digamma_{\mathrm{map}}^{\mathsf T}$, one column and one row</td>
 <td>$QXP$, two algebra elements</td>
 </tr>
 <tr>
@@ -867,9 +867,9 @@ of complex dimension two. <strong>The identity is the first generator in every b
 </table></div>
 <p><strong>The single sentence.</strong> The pair is the cleanest operator theory of the corpus because the cone is thin and the composition is a scalar; it is also the poorest, because a rank-one family has no group of invertibles, and <strong>everything that the algebra pairs gain they gain by the identity being a product.</strong></p>
 <h2 id="summary">Summary</h2>
-<p>The carrier is the module $V=\mathbb{C}^{2}$, and there is no product on it, so the two-sided operator of the module is $L_{u}R_{\phi}(v)=\phi(v)u=u\phi^{\mathsf T}$, a rank-one matrix with a column and a row; with the reduced biquaternion product it is the algebra $\mathbb{C}[j]/(j^{2}-1)$ and the family is the plane $\operatorname{span}\{I_2,\sigma_1\}$, the two-generator reading of §<em>The Two Generators and the Ambient Space</em>. The left side is the whole algebra $M_2(\mathbb{C})$ acting faithfully, of complex dimension four, and the right side is the dual $V^{*}$, of complex dimension two; the transpose adjoint of the right slot is the left slot and the Hermitian adjoint is not. The parametrisation by $V\times V^{*}$ has fibres the scaling orbits $\mathbb{C}^{\times}$ and image the determinantal cone of $\mathbb{P}^{3}$, that is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, of complex dimension three and real dimension six inside an ambient of real dimension eight; the coefficient array in the matrix-unit basis is the matrix itself, so the rank criterion and the determinant criterion are the same condition, and the cone spans the ambient although the identity is not a member.</p>
-<p>The composition is $L_{u}R_{\phi}L_{u'}R_{\phi'}=\phi(u')L_{u}R_{\phi'}$, with powers $\phi(u)^{n-1}L_{u}R_{\phi}$; the member is nilpotent exactly when $\phi(u)=0$ and idempotent exactly when $\phi(u)=1$; the trace is $\phi(u)$, the determinant is zero, and the Cayley–Hamilton identity is $T^{2}=\phi(u)T$. The family is a semigroup with zero and without identity, and no member is invertible. The length is the rank, with the values $0,1,2$: zero for the zero matrix, one on the cone, two on the complement, and two for the identity. The two ranks, of the operator and of its coefficient array, coincide identically here, in contrast with the algebra pairs, where the operator basis is $L_{e_\mu}R_{e_\nu}$ and the two separate.</p>
-<p><strong>The gallery of §<em>The Gallery of Members</em> is the whole of the length formula at this size.</strong> A member is a column, a row and the single scalar $\phi(u)$: the scalar zero gives the nilpotents, of which $E_{12}$ has kernel equal to image and $K=\begin{pmatrix}1&amp;i\\ i&amp;-1\end{pmatrix}$ has kernel and image the isotropic line; the scalar one gives the four projectors $E_{11}$, $E_{22}$, $\frac12 P$ and $\pi=\frac12\begin{pmatrix}1&amp;-i\\ i&amp;1\end{pmatrix}$; and the general scalar gives the member up to the projectors. <strong>The Hermitian members of length one are the real multiples of $uu^{\dagger}$ and none is indefinite</strong>, so $\sigma_3$ sits in the length-two stratum; and every length-two member has the two canonical splits $M=\sum_j c_je_j^{\mathsf T}=\sum_k e_k\rho_k^{\mathsf T}$, which for $J_2$ become the spectral pair $J_2=i\pi-i(I_2-\pi)$.</p>
+<p>The carrier is the module $V=\mathbb{C}^{2}$, and there is no product on it, so the two-sided operator of the module is $L_{u}R_{\digamma_{\mathrm{map}}}(v)=\digamma_{\mathrm{map}}(v)u=u\digamma_{\mathrm{map}}^{\mathsf T}$, a rank-one matrix with a column and a row; with the reduced biquaternion product it is the algebra $\mathbb{C}[j]/(j^{2}-1)$ and the family is the plane $\operatorname{span}\{I_2,\sigma_1\}$, the two-generator reading of §<em>The Two Generators and the Ambient Space</em>. The left side is the whole algebra $M_2(\mathbb{C})$ acting faithfully, of complex dimension four, and the right side is the dual $V^{*}$, of complex dimension two; the transpose adjoint of the right slot is the left slot and the Hermitian adjoint is not. The parametrisation by $V\times V^{*}$ has fibres the scaling orbits $\mathbb{C}^{\times}$ and image the determinantal cone of $\mathbb{P}^{3}$, that is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, of complex dimension three and real dimension six inside an ambient of real dimension eight; the coefficient array in the matrix-unit basis is the matrix itself, so the rank criterion and the determinant criterion are the same condition, and the cone spans the ambient although the identity is not a member.</p>
+<p>The composition is $L_{u}R_{\digamma_{\mathrm{map}}}L_{u'}R_{\digamma_{\mathrm{map}}'}=\digamma_{\mathrm{map}}(u')L_{u}R_{\digamma_{\mathrm{map}}'}$, with powers $\digamma_{\mathrm{map}}(u)^{n-1}L_{u}R_{\digamma_{\mathrm{map}}}$; the member is nilpotent exactly when $\digamma_{\mathrm{map}}(u)=0$ and idempotent exactly when $\digamma_{\mathrm{map}}(u)=1$; the trace is $\digamma_{\mathrm{map}}(u)$, the determinant is zero, and the Cayley–Hamilton identity is $T^{2}=\digamma_{\mathrm{map}}(u)T$. The family is a semigroup with zero and without identity, and no member is invertible. The length is the rank, with the values $0,1,2$: zero for the zero matrix, one on the cone, two on the complement, and two for the identity. The two ranks, of the operator and of its coefficient array, coincide identically here, in contrast with the algebra pairs, where the operator basis is $L_{e_\mu}R_{e_\nu}$ and the two separate.</p>
+<p><strong>The gallery of §<em>The Gallery of Members</em> is the whole of the length formula at this size.</strong> A member is a column, a row and the single scalar $\digamma_{\mathrm{map}}(u)$: the scalar zero gives the nilpotents, of which $E_{12}$ has kernel equal to image and $K=\begin{pmatrix}1&amp;i\\ i&amp;-1\end{pmatrix}$ has kernel and image the isotropic line; the scalar one gives the four projectors $E_{11}$, $E_{22}$, $\frac12 P$ and $\pi=\frac12\begin{pmatrix}1&amp;-i\\ i&amp;1\end{pmatrix}$; and the general scalar gives the member up to the projectors. <strong>The Hermitian members of length one are the real multiples of $uu^{\dagger}$ and none is indefinite</strong>, so $\sigma_3$ sits in the length-two stratum; and every length-two member has the two canonical splits $M=\sum_j c_je_j^{\mathsf T}=\sum_k e_k\rho_k^{\mathsf T}$, which for $J_2$ become the spectral pair $J_2=i\pi-i(I_2-\pi)$.</p>
 <p>Two rank-one families live in the ambient: the bilinear cone, of complex dimension three, with two rulings and fibres $\mathbb{C}^{\times}$, and the Hermitian cone $uu^{\dagger}$, of real dimension three, with one ruling, fibres $S^{1}$, and the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$ in the Pauli coordinates; the second is the fixed locus of the dagger in the first, up to real scale. The transpose adjoint swaps the slots and its fixed locus is the symmetric cone $c\,uu^{\mathsf T}$; the dagger's fixed locus is the Hermitian cone; no nonzero member of the cone is anti-self-adjoint, and no nonzero member is an isometry. Four generators are needed and two do not suffice: the four matrix units $E_{jk}=L_{e_j}R_{\epsilon^{k}}$ are a basis of the operator space, and two matrices with complex coefficients span a plane through $I_2$, of complex dimension two, which is the shape of every two-dimensional unital algebra and is never the rank-one locus. <strong>The pair buys the parametrisation, the single criterion, the composition rule, the length and the comparison of the two cones, and it pays with the identity, the inverses, the isometries and the ladder $1,4,7,16$.</strong></p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -885,11 +885,11 @@ of complex dimension two. <strong>The identity is the first generator in every b
 <td>the carrier, the defining module</td>
 </tr>
 <tr>
-<td>$V^{*}$, $\phi,\psi$</td>
+<td>$V^{*}$, $\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}$</td>
 <td>the dual and its elements, the rows</td>
 </tr>
 <tr>
-<td>$\phi(u)=\phi^{\mathsf T}u$</td>
+<td>$\digamma_{\mathrm{map}}(u)=\digamma_{\mathrm{map}}^{\mathsf T}u$</td>
 <td>the pairing, with no conjugation</td>
 </tr>
 <tr>
@@ -901,12 +901,12 @@ of complex dimension two. <strong>The identity is the first generator in every b
 <td>the matrix units, the basis of the ambient operator space</td>
 </tr>
 <tr>
-<td>$L_{u}R_{\phi}=u\phi^{\mathsf T}$</td>
-<td>the two-sided operator of the pair $(u,\phi)$</td>
+<td>$L_{u}R_{\digamma_{\mathrm{map}}}=u\digamma_{\mathrm{map}}^{\mathsf T}$</td>
+<td>the two-sided operator of the pair $(u,\digamma_{\mathrm{map}})$</td>
 </tr>
 <tr>
 <td>$\mathcal{C}$</td>
-<td>the bilinear cone, the set of all $L_{u}R_{\phi}$</td>
+<td>the bilinear cone, the set of all $L_{u}R_{\digamma_{\mathrm{map}}}$</td>
 </tr>
 <tr>
 <td>$\mathcal{C}_{H}$</td>

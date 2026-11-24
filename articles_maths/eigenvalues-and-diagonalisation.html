@@ -175,7 +175,7 @@ $$</p>
 <p>$$
 M^k=\begin{pmatrix}F_{k+1}&amp;F_k\\ F_k&amp;F_{k-1}\end{pmatrix}.
 $$</p>
-<p>The characteristic polynomial is $c_M(x)=x^2-x-1$, with distinct real roots $\varphi=\tfrac12(1+\sqrt5)$ and $\psi=\tfrac12(1-\sqrt5)$, so $M$ is diagonalisable over $\mathbb{R}$ and $F_k=\dfrac{\varphi^k-\psi^k}{\varphi-\psi}$. Taking determinants in the displayed identity gives Cassini's identity $F_{k+1}F_{k-1}-F_k^2=(-1)^k$, because $\det M^k=(\det M)^k=(-1)^k$.</p>
+<p>The characteristic polynomial is $c_M(x)=x^2-x-1$, with distinct real roots $\digamma_{\mathrm{map}}=\tfrac12(1+\sqrt5)$ and $Ξ_{\mathrm{wfn}}=\tfrac12(1-\sqrt5)$, so $M$ is diagonalisable over $\mathbb{R}$ and $F_k=\dfrac{\digamma_{\mathrm{map}}^k-Ξ_{\mathrm{wfn}}^k}{\digamma_{\mathrm{map}}-Ξ_{\mathrm{wfn}}}$. Taking determinants in the displayed identity gives Cassini's identity $F_{k+1}F_{k-1}-F_k^2=(-1)^k$, because $\det M^k=(\det M)^k=(-1)^k$.</p>
 <h3 id="further-examples">Further Examples</h3>
 <p><strong>A cycle over two fields.</strong> Let $C=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;1\\1&amp;0&amp;0\end{pmatrix}$, the matrix of the $3$-cycle. Since $C^3=I$ and $C \neq I$, the minimal polynomial divides $x^3-1$ and is not $x-1$; in fact $x^3-1=(x-1)(x^2+x+1)$ has distinct roots over $\mathbb{C}$, namely $1,\omega,\omega^2$ with $\omega=\exp(2\pi i/3)$. Over $\mathbb{C}$ the matrix has three distinct eigenvalues and is diagonalisable; over $\mathbb{R}$ its only eigenvalue is $1$, with eigenspace spanned by $(1,1,1)$, so the sum of the geometric multiplicities is $1&lt;3$ and $C$ is not diagonalisable over $\mathbb{R}$. The same matrix is a different object over the two fields.</p>
 <p><strong>A Jordan block.</strong> Let $N=\begin{pmatrix}1&amp;1&amp;0\\0&amp;1&amp;1\\0&amp;0&amp;1\end{pmatrix}$. Then $c_N(x)=(x-1)^3$ and $N-I$ has rank $2$, so $V_1$ has dimension $3-2=1$ and the geometric multiplicity is strictly less than the algebraic multiplicity. The minimal polynomial is $(x-1)^3$, the generalised eigenspace $V^{(1)}$ is all of $F^3$, and $N$ is not diagonalisable. This is the simplest matrix for which the generalised eigenspace is needed.</p>
@@ -261,7 +261,7 @@ $$</p>
 <td>diagonal matrix</td>
 </tr>
 <tr>
-<td>$\varphi,\psi$</td>
+<td>$\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}$</td>
 <td>the roots $\tfrac12(1\pm\sqrt5)$ of $x^2-x-1$</td>
 </tr>
 <tr>

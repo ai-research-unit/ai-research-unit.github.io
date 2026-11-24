@@ -112,9 +112,9 @@ $$</p>
 \partial_xu=\frac{f'}{1+f'\,t'},
 $$</p>
 <p>so the gradient diverges at $t'_{c}=-1/\inf f'$ whenever the initial slope is negative somewhere. The solution stays single-valued until $t'_{c}$ and after it the implicit equation has several branches. The fluid's answer is a shock, and the shock is not a solution of the differential equation but a solution of the conservation law in the weak sense.</p>
-<p>The solution is a Legendre transform and not a linear superposition. Writing $u=\partial_x\phi$ turns Hopf's equation into $\partial_{t'}\phi+\frac12(\partial_x\phi)^{2}=0$, whose viscosity solution is</p>
+<p>The solution is a Legendre transform and not a linear superposition. Writing $u=\partial_x\xi_{\mathrm{pot}}$ turns Hopf's equation into $\partial_{t'}\xi_{\mathrm{pot}}+\frac12(\partial_x\xi_{\mathrm{pot}})^{2}=0$, whose viscosity solution is</p>
 <p>$$
-\phi(x,t')=\min_{y}\left[\phi_0(y)+\frac{(x-y)^{2}}{2t'}\right],
+\xi_{\mathrm{pot}}(x,t')=\min_{y}\left[\xi_{\mathrm{pot},0}(y)+\frac{(x-y)^{2}}{2t'}\right],
 $$</p>
 <p>the Hopf–Lax formula. The formula is exact, it is a minimum over the initial data, and it is the closest a fluid comes to a superposition principle: the minimum replaces the sum, and the envelope replaces the interference.</p>
 <p><strong>So the inviscid favourable case gives a nonlinear equation, a finite-time catastrophe and a variational formula.</strong> None of the three is a linear wave equation, and the reason is that the characteristic speed is the unknown itself.</p>
@@ -123,7 +123,7 @@ $$</p>
 <p>$$
 \partial_{t'}u+u\,\partial_xu=\digamma_{\mathrm{kin}}\,\partial_{xx}u ,
 $$</p>
-<p>and the Hopf–Cole transformation $u=-2\digamma_{\mathrm{kin}}\partial_x\ln\psi$ carries it into $\partial_{t'}\psi=\digamma_{\mathrm{kin}}\partial_{xx}\psi$. The check is a differentiation and it is exact, as <a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a> verifies on the heat kernel, where $u=x/t'$.</p>
+<p>and the Hopf–Cole transformation $u=-2\digamma_{\mathrm{kin}}\partial_x\lnΞ_{\mathrm{wfn}}$ carries it into $\partial_{t'}Ξ_{\mathrm{wfn}}=\digamma_{\mathrm{kin}}\partial_{xx}Ξ_{\mathrm{wfn}}$. The check is a differentiation and it is exact, as <a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a> verifies on the heat kernel, where $u=x/t'$.</p>
 <p>The linearisation smooths the catastrophe instead of removing the nonlinearity's origin. The shock of the inviscid case becomes a layer of width of order $\digamma_{\mathrm{kin}}/u$, and the layer's profile is the heat kernel's logarithm. So the viscous case has a linear equivalent and the equivalent is parabolic: its frequency is imaginary, its kernel is positive, and its solutions do not oscillate.</p>
 <p><strong>The point of the example is that linearity and waving come apart.</strong> A reader who equates "linearisable" with "has a wave equivalent" will take Burgers' equation as a counterexample to the section. It is not: it is the case that shows the section's thesis must be stated about <em>wave</em> equations, which is how it is stated.</p>
 <h2 id="the-dispersive-case-is-nonlinear-and-integrable">The Dispersive Case Is Nonlinear and Integrable</h2>
@@ -205,11 +205,11 @@ $$</p>
 <td>Time of the gradient catastrophe</td>
 </tr>
 <tr>
-<td>$\phi$</td>
-<td>Potential with $u=\partial_x\phi$; Hopf–Lax function</td>
+<td>$\xi_{\mathrm{pot}}$</td>
+<td>Potential with $u=\partial_x\xi_{\mathrm{pot}}$; Hopf–Lax function</td>
 </tr>
 <tr>
-<td>$\psi$</td>
+<td>$Ξ_{\mathrm{wfn}}$</td>
 <td>Hopf–Cole potential</td>
 </tr>
 <tr>

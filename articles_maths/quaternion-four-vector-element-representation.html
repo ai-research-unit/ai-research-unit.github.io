@@ -74,13 +74,13 @@
 <p>The quaternion four-vector representation is the identification of a quaternion with the ordered quadruple of its four real coordinates. It is the simplest of the representations of the algebra and the one on which the others are read: the column vector of coordinates, its dual row vector, the component form of the product, the coordinate forms of the three involutions and of the scalar and vector subspaces, and the quaternion norm as a sum of four positive squares. This article develops those identifications.</p>
 <p>The article is coordinate bookkeeping on the algebra fixed in <em>Quaternion Algebra</em>: the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the multiplication rules, the conjugate and the scalar–vector decomposition are used as given. The matrix forms built from the coordinates are the subject of <em>Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$</em> and <em>Quaternion 2x2 Matrix Element Representation</em>, and the subspaces in coordinates are from <em>The Scalar and Vector Subspaces of $\mathbb{H}$</em>.</p>
 <p>The corpus's default base is a commutative ring with identity, and the coordinate description holds over such a base; the positivity and the Euclidean interpretation of the quaternion norm are statements over $\mathbb{R}$, and they are flagged where they occur.</p>
-<p>Throughout, a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_t$ and $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$; the conjugate is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ and the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.</p>
+<p>Throughout, a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_t$ and $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$; the conjugate is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ and the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\digamma_{\mathrm{map}} : \mathbb{H}\to F^4$.</p>
 <h2 id="the-coordinate-vector">The Coordinate Vector</h2>
 <p><strong>Definition.</strong> The <strong>coordinate map</strong> sends $\tilde q = \sum_{\mu\in\{t,x,y,z\}}q_\mu e_\mu$ to the quadruple</p>
 <p>$$
-\varphi(\tilde q) = (q_t,q_x,q_y,q_z)\in F^4.
+\digamma_{\mathrm{map}}(\tilde q) = (q_t,q_x,q_y,q_z)\in F^4.
 $$</p>
-<p><strong>Theorem.</strong> The map $\varphi$ is an isomorphism of $F$-vector spaces, and the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is sent to the standard basis $(1,0,0,0),\dots,(0,0,0,1)$. Consequently addition and scalar multiplication are computed coordinatewise.</p>
+<p><strong>Theorem.</strong> The map $\digamma_{\mathrm{map}}$ is an isomorphism of $F$-vector spaces, and the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is sent to the standard basis $(1,0,0,0),\dots,(0,0,0,1)$. Consequently addition and scalar multiplication are computed coordinatewise.</p>
 <p><em>Proof.</em> The map is the unique $F$-linear map sending each basis element to the corresponding standard basis element; it is bijective by the definition of a basis.</p>
 <p><strong>Definition.</strong> The <strong>column vector</strong> of $\tilde q$ is</p>
 <p>$$
@@ -111,9 +111,9 @@ $$</p>
 <p><strong>Remark.</strong> The four coordinate functions of the product are the components of the matrix product $L_{\tilde q_2}[\tilde q_1]$ with the left regular matrix $L_{\tilde q_2}$ of <em>Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$</em>, so the coordinate multiplication rule and the left regular representation carry the same information in different notation.</p>
 <h2 id="the-three-involutions-in-coordinates">The Three Involutions in Coordinates</h2>
 <p><strong>Theorem.</strong> The three involutions act on the coordinate vector by the diagonal sign matrices</p>
-<p>$$ \boxed{\; \varphi(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
-\varphi(-\tilde{q}^{\natural}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
-\varphi(-\tilde q) = -[\tilde q] \;} .$$</p>
+<p>$$ \boxed{\; \digamma_{\mathrm{map}}(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
+\digamma_{\mathrm{map}}(-\tilde{q}^{\natural}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
+\digamma_{\mathrm{map}}(-\tilde q) = -[\tilde q] \;} .$$</p>
 <p><em>Proof.</em> Quaternion conjugation negates the three vector coordinates; vector conjugation negates the scalar coordinate; total conjugation is the negation of all four.</p>
 <p><strong>Corollary.</strong> The scalar subspace is the coordinate set $q_x = q_y = q_z = 0$, the vector subspace is the set $q_t = 0$, and the two are the $\pm1$ eigenspaces of the first two sign matrices. The composition of the three involutions generates the Klein four-group of sign changes described in <em>Worked Examples in the Quaternion Algebra</em>.</p>
 <h2 id="the-subspaces-in-coordinates">The Subspaces in Coordinates</h2>
@@ -121,7 +121,7 @@ $$</p>
 <p><strong>Theorem.</strong> In coordinates the scalar subspace is the first coordinate axis $\{(q_t,0,0,0)\}$ and the vector subspace is the hyperplane $\{(0,q_x,q_y,q_z)\}$, and</p>
 <p>$$
 \mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}, \qquad
-F^4 = \varphi(\mathbb{R}_{\mathbb{H}})\oplus\varphi(\operatorname{Im}\mathbb{H})
+F^4 = \digamma_{\mathrm{map}}(\mathbb{R}_{\mathbb{H}})\oplus\digamma_{\mathrm{map}}(\operatorname{Im}\mathbb{H})
 $$</p>
 <p>is the orthogonal decomposition, in the algebra and in coordinates, into the two summands.</p>
 <p><em>Proof.</em> The conditions are the coordinate forms of $\vec q = 0$ and $q_t = 0$; orthogonality of the two coordinate images is $q_t\cdot 0+0\cdot(q_x+q_y+q_z) = 0$ for the standard inner product.</p>
@@ -164,7 +164,7 @@ $$</p>
 <td>Quaternion with coordinates $q_\mu$</td>
 </tr>
 <tr>
-<td>$\varphi : \mathbb{H}\to F^4$</td>
+<td>$\digamma_{\mathrm{map}} : \mathbb{H}\to F^4$</td>
 <td>Coordinate isomorphism</td>
 </tr>
 <tr>

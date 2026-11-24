@@ -134,13 +134,13 @@ $$</p>
 <p><strong>Example (the matrices).</strong> For $A = M_n(\mathbb{C})$ the cone is the positive semidefinite cone, the order is the Loewner order, the order unit is the identity, and the order is Archimedean for the operator norm. The cone is <strong>not</strong> closed under the associative product, but it is closed under the symmetrised product, and it is the self-dual cone of <em>Jordan Algebras and the Positive Cone</em>.</p>
 <p><strong>Example (the continuous functions).</strong> For $A = C(X,\mathbb{C})$ the cone is the pointwise nonnegative cone, the order is the pointwise order, the involution is positive, the algebra is <strong>commutative</strong>, and here the cone <strong>is</strong> closed under the associative product; the difference from the matrix case is exactly commutativity, and this is the reason the corpus separates the ordered involutive algebras into the commutative and the noncommutative families.</p>
 <h2 id="the-section-of-the-positive-functionals">The Section of the Positive Functionals</h2>
-<p><strong>Definition.</strong> A <strong>positive functional</strong> on the involutive algebra is a linear functional $\varphi$ that is Hermitian, $\varphi(a^{*}) = \overline{\varphi(a)}$, and positive on the cone, $\varphi(a^{*}a)\geq0$ for every $a$; it is a <strong>state</strong> when further $\varphi(1) = 1$.</p>
-<p><strong>Proposition.</strong> A Hermitian linear functional is positive if and only if it is positive on $A_+$; the positive functionals form the <strong>dual cone</strong> of $A_+$ in the space of Hermitian functionals, and the states form its base at the order unit. For every positive $\varphi$ the <strong>Cauchy–Schwarz inequality</strong></p>
+<p><strong>Definition.</strong> A <strong>positive functional</strong> on the involutive algebra is a linear functional $\digamma_{\mathrm{map}}$ that is Hermitian, $\digamma_{\mathrm{map}}(a^{*}) = \overline{\digamma_{\mathrm{map}}(a)}$, and positive on the cone, $\digamma_{\mathrm{map}}(a^{*}a)\geq0$ for every $a$; it is a <strong>state</strong> when further $\digamma_{\mathrm{map}}(1) = 1$.</p>
+<p><strong>Proposition.</strong> A Hermitian linear functional is positive if and only if it is positive on $A_+$; the positive functionals form the <strong>dual cone</strong> of $A_+$ in the space of Hermitian functionals, and the states form its base at the order unit. For every positive $\digamma_{\mathrm{map}}$ the <strong>Cauchy–Schwarz inequality</strong></p>
 <p>$$
-\boxed{\;\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\,\varphi(b^{*}b)\;}
+\boxed{\;\lvert\digamma_{\mathrm{map}}(b^{*}a)\rvert^{2}\leq\digamma_{\mathrm{map}}(a^{*}a)\,\digamma_{\mathrm{map}}(b^{*}b)\;}
 $$</p>
 <p>holds.</p>
-<p><em>Proof.</em> Positivity on the cone is equivalent to positivity on the generators $a^{*}a$ by linearity and the definition of the cone; the base statement is the order-unit normalisation of <em>Ordered Vector Spaces and the Order Unit</em>; the inequality is the Cauchy–Schwarz inequality of the positive semidefinite form $(a,b)\mapsto\varphi(b^{*}a)$, which is positive semidefinite because $\varphi((a+\lambda b)^{*}(a+\lambda b))\geq0$ for every $\lambda$.</p>
+<p><em>Proof.</em> Positivity on the cone is equivalent to positivity on the generators $a^{*}a$ by linearity and the definition of the cone; the base statement is the order-unit normalisation of <em>Ordered Vector Spaces and the Order Unit</em>; the inequality is the Cauchy–Schwarz inequality of the positive semidefinite form $(a,b)\mapsto\digamma_{\mathrm{map}}(b^{*}a)$, which is positive semidefinite because $\digamma_{\mathrm{map}}((a+\lambda b)^{*}(a+\lambda b))\geq0$ for every $\lambda$.</p>
 <h2 id="summary">Summary</h2>
 <p>An <strong>involution</strong> of an algebra is a conjugate-linear anti-automorphism of order two; it produces the <strong>positive cone</strong> $A_+ = \{\sum a_i^{*}a_i\}$ of the sums of the elements of the form $a^{*}a$, which is closed under addition and nonnegative scaling, is closed under the involution, and is closed under the <strong>congruences</strong> $x\mapsto c^{*}xc$. It is <strong>pointed</strong> exactly when the algebra is <strong>reduced</strong> (equivalently, admits a faithful $\ast$-representation), and then it orders the <strong>Hermitian</strong> part by $a\leq b\iff b-a\in A_+$, with $1$ an order unit in the bounded case. The involution is <strong>positive</strong> and is an order isomorphism, exchanging the left and the right orders; the order is Archimedean under a $\ast$-norm with $\lVert a^{*}a\rVert = \lVert a\rVert^{2}$. The cone is closed under the <strong>symmetrised</strong> product, so the order of a noncommutative involutive algebra is a <strong>Jordan</strong> order; in the commutative case it is also closed under the associative product. The <strong>positive functionals</strong> are the dual cone, the <strong>states</strong> its base at the order unit, and they satisfy the <strong>Cauchy–Schwarz</strong> inequality. The Hilbert algebra is <em>Hilbert Algebras</em> and the Hermitian pair is <em>The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint</em>; the order and the order unit are <em>Ordered Vector Spaces and the Order Unit</em>; the Jordan order is <em>Jordan Algebras and the Positive Cone</em> and <em>The Jordan Algebra of Self-Adjoint Elements</em>; the states and the extreme points are <em>The Cone of Positive Functionals</em>; the Hilbert cone is <em>The Hilbert Cone of an Involutive Algebra</em>; the ordered involutive algebra is <em>Ordered Involutive Algebras</em>; and the $C^{*}$-theory is <em>Operator Algebras</em> and <em>JB*-Algebras and the Gelfand–Naimark Theorem</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -181,11 +181,11 @@ $$</p>
 <td>Symmetrised product, preserving $A_+$</td>
 </tr>
 <tr>
-<td>$\varphi(a^{*}a)\geq0$</td>
-<td>Positive functional; state when $\varphi(1) = 1$</td>
+<td>$\digamma_{\mathrm{map}}(a^{*}a)\geq0$</td>
+<td>Positive functional; state when $\digamma_{\mathrm{map}}(1) = 1$</td>
 </tr>
 <tr>
-<td>$\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\varphi(b^{*}b)$</td>
+<td>$\lvert\digamma_{\mathrm{map}}(b^{*}a)\rvert^{2}\leq\digamma_{\mathrm{map}}(a^{*}a)\digamma_{\mathrm{map}}(b^{*}b)$</td>
 <td>Cauchy–Schwarz for the positive functionals</td>
 </tr>
 </tbody>

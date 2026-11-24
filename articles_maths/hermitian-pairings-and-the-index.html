@@ -75,18 +75,18 @@
 <p>The article develops the Hermitian pairing and its positivity, the <strong>index pairing</strong> of an elliptic operator as the pairing of its symbol class with the fundamental class, the Hermitian structure of the kernel and cokernel and the identification of the index with a signature, the Chern-character form of the pairing, and the real and mod-two refinements. The Hermitian pairings on a topological space and on an involution ring are those of the Part II articles <em>Hermitian Pairings on a Topological Space</em>, <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em> and <em>Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint</em>; the Atiyah–Singer theorem and the index pairing are those of <em>The Atiyah–Singer Index Theorem and K-Theory</em>; the signature and its adjoint are <em>The Signature Operator</em> and <em>The Adjoint of the Signature Operator</em>; the spin index and its adjoint are <em>The Dirac Operator on a Manifold</em> and <em>The Dirac Operator and Its Adjoint</em>; and the Hermitian index theorem and the $\chi_y$-genus are <em>The Hermitian Index Theorem and the Signature Operator</em>.</p>
 <p>The prerequisites are <em>Hermitian Pairings on a Topological Space</em> for the Hermitian and bilinear pairings, the orthogonal decomposition and the signature of the fixed part; the Part I articles <em>Bilinear Forms</em> and <em>Indefinite Inner Product Spaces</em> for the forms and the signature; <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em> and <em>Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint</em> for the Hermitian forms over an involution and an algebra; <em>The Atiyah–Singer Index Theorem and K-Theory</em> for the index theorem, the symbol class and the pairing; <em>K-Theory</em> and <em>Characteristic Classes</em> for the $K$-theory and the Chern character; and <em>The Adjoint of the Signature Operator</em> and <em>The Dirac Operator and Its Adjoint</em> for the analytic self-adjointness and the kernel pairings. The Hermitian structure is the chosen form, and the whole article is the geometry of that choice. No physics is invoked.</p>
 <h2 id="hermitian-pairings">Hermitian Pairings</h2>
-<p><strong>Definition.</strong> Let $A$ be a ring with an involution $*$, and let $M$ be a right $A$-module. A <strong>Hermitian pairing</strong> on $M$ is a biadditive map $\phi:M\times M\to A$ that is $A$-linear in the second variable and conjugate-linear in the first,</p>
+<p><strong>Definition.</strong> Let $A$ be a ring with an involution $*$, and let $M$ be a right $A$-module. A <strong>Hermitian pairing</strong> on $M$ is a biadditive map $\digamma_{\mathrm{map}}:M\times M\to A$ that is $A$-linear in the second variable and conjugate-linear in the first,</p>
 <p>$$
-\phi(xa,y)=\phi(x,y)a,\qquad
-\phi(x,ya)=\phi(x,y)a,\qquad
-\phi(y,x)=\phi(x,y)^{*} ,
+\digamma_{\mathrm{map}}(xa,y)=\digamma_{\mathrm{map}}(x,y)a,\qquad
+\digamma_{\mathrm{map}}(x,ya)=\digamma_{\mathrm{map}}(x,y)a,\qquad
+\digamma_{\mathrm{map}}(y,x)=\digamma_{\mathrm{map}}(x,y)^{*} ,
 $$</p>
-<p>with the last the <strong>Hermitian symmetry</strong>; the form is <strong>positive definite</strong> when $\phi(x,x)$ is a positive element of $A$ for $x\neq0$, and the pair $(M,\phi)$ is a <strong>Hermitian module</strong>. The <strong>signature</strong> of a Hermitian pairing on a finite-dimensional real or complex space is the difference of the numbers of positive and negative eigenvalues, $\sigma=n-m$; the <strong>Witt group</strong> classifies the forms up to the addition of hyperbolic planes, and the classification of the Hermitian forms over an involution ring is that of <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>.</p>
-<p><strong>Theorem (the pairing of a topological space).</strong> Let $X$ be a compact space with a continuous involution $\iota$, and let $\phi$ be a Hermitian pairing on the cohomology $H^{*}(X;\mathbb{C})$ that is compatible with the involution. Then the cohomology decomposes orthogonally into the eigenspaces of $\iota$, the pairing restricted to each eigenspace is nondegenerate, and the signatures of the restrictions determine the pairing up to isometry:</p>
+<p>with the last the <strong>Hermitian symmetry</strong>; the form is <strong>positive definite</strong> when $\digamma_{\mathrm{map}}(x,x)$ is a positive element of $A$ for $x\neq0$, and the pair $(M,\digamma_{\mathrm{map}})$ is a <strong>Hermitian module</strong>. The <strong>signature</strong> of a Hermitian pairing on a finite-dimensional real or complex space is the difference of the numbers of positive and negative eigenvalues, $\sigma=n-m$; the <strong>Witt group</strong> classifies the forms up to the addition of hyperbolic planes, and the classification of the Hermitian forms over an involution ring is that of <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>.</p>
+<p><strong>Theorem (the pairing of a topological space).</strong> Let $X$ be a compact space with a continuous involution $\iota$, and let $\digamma_{\mathrm{map}}$ be a Hermitian pairing on the cohomology $H^{*}(X;\mathbb{C})$ that is compatible with the involution. Then the cohomology decomposes orthogonally into the eigenspaces of $\iota$, the pairing restricted to each eigenspace is nondegenerate, and the signatures of the restrictions determine the pairing up to isometry:</p>
 <p>$$
 H^{*}(X;\mathbb{C})=H^{+}\oplus H^{-},\qquad
-\phi=\phi_{+}\perp\phi_{-},\qquad
-\operatorname{sign}\phi=\operatorname{sign}\phi_{+}+\operatorname{sign}\phi_{-} .
+\digamma_{\mathrm{map}}=\digamma_{\mathrm{map},+}\perp\digamma_{\mathrm{map},-},\qquad
+\operatorname{sign}\digamma_{\mathrm{map}}=\operatorname{sign}\digamma_{\mathrm{map},+}+\operatorname{sign}\digamma_{\mathrm{map},-} .
 $$</p>
 <p><strong>Proof.</strong> The compatibility of the pairing with the involution and its Hermitian symmetry make the eigenspaces orthogonal and the restrictions nondegenerate; the orthogonal decomposition and the additivity of the signature are the elementary linear algebra of an isometric involution on a Hermitian space. The statement is that of <em>Hermitian Pairings on a Topological Space</em>.</p>
 <p><strong>Remark.</strong> The signature of the fixed part is the invariant that the index refines: for the signature operator the index is the signature of the intersection form on the harmonic middle forms, and for the Dirac operator it is the difference of the dimensions of the chiral zero modes, which is the trace of the chirality on the kernel. Both are Hermitian pairings with an involution, and the index is the integer attached to them.</p>
@@ -165,7 +165,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\phi$, $\phi(y,x)=\phi(x,y)^{*}$</td>
+<td>$\digamma_{\mathrm{map}}$, $\digamma_{\mathrm{map}}(y,x)=\digamma_{\mathrm{map}}(x,y)^{*}$</td>
 <td>Hermitian pairing on a module with an involution</td>
 </tr>
 <tr>
@@ -173,7 +173,7 @@ $$</p>
 <td>Signature and classification of a Hermitian form</td>
 </tr>
 <tr>
-<td>$H^{*}=H^{+}\oplus H^{-}$, $\phi=\phi_{+}\perp\phi_{-}$</td>
+<td>$H^{*}=H^{+}\oplus H^{-}$, $\digamma_{\mathrm{map}}=\digamma_{\mathrm{map},+}\perp\digamma_{\mathrm{map},-}$</td>
 <td>Orthogonal decomposition under an involution</td>
 </tr>
 <tr>

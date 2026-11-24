@@ -75,7 +75,7 @@
 <p>$$
 dX_t = b(t,X_t)\,dt + \sigma(t,X_t)\,dB_t .
 $$</p>
-<p>The equation is not a differential equation in the classical sense, because the path $t\mapsto B_t$ is almost surely nowhere differentiable and the symbol $dB_t$ cannot be read as an infinitesimal; it is a bookkeeping device for an integral equation, $X_t = X_0+\int_0^tb(s,X_s)ds+\int_0^t\sigma(s,X_s)dB_s$, and the meaning of the second integral must be supplied by a definition. There are two definitions, the <strong>Itô integral</strong>, in which the integrand is evaluated at the left endpoint of each subinterval, and the <strong>Stratonovich integral</strong>, in which it is evaluated at the midpoint. The first has the better probabilistic properties — the integral of an adapted integrand is a martingale and the isometry $\mathbb{E}|\int\phi\,dB|^2=\mathbb{E}\int\phi^2dt$ holds — and the second has the better calculus: it obeys the classical chain rule, and the change-of-variables formula needs no second-order correction.</p>
+<p>The equation is not a differential equation in the classical sense, because the path $t\mapsto B_t$ is almost surely nowhere differentiable and the symbol $dB_t$ cannot be read as an infinitesimal; it is a bookkeeping device for an integral equation, $X_t = X_0+\int_0^tb(s,X_s)ds+\int_0^t\sigma(s,X_s)dB_s$, and the meaning of the second integral must be supplied by a definition. There are two definitions, the <strong>Itô integral</strong>, in which the integrand is evaluated at the left endpoint of each subinterval, and the <strong>Stratonovich integral</strong>, in which it is evaluated at the midpoint. The first has the better probabilistic properties — the integral of an adapted integrand is a martingale and the isometry $\mathbb{E}|\int\digamma_{\mathrm{map}}\,dB|^2=\mathbb{E}\int\digamma_{\mathrm{map}}^2dt$ holds — and the second has the better calculus: it obeys the classical chain rule, and the change-of-variables formula needs no second-order correction.</p>
 <p>The two integrals differ by a correction term involving the quadratic variation, and the difference is the whole content of Itô's formula: for a smooth $f$,</p>
 <p>$$
 f(B_t) = f(B_0)+\int_0^tf'(B_s)\,dB_s+\frac12\int_0^tf''(B_s)\,ds ,
@@ -91,22 +91,22 @@ $$</p>
 <li>the paths $t\mapsto B_t$ are continuous almost surely.</li>
 </ol>
 <p>Its <strong>quadratic variation</strong> on $[0,t]$ is $\langle B\rangle_t=t$, in the sense that for any sequence of partitions with mesh tending to $0$ the sums $\sum_i(B_{t_{i+1}}-B_{t_i})^2$ converge to $t$ in probability; equivalently, $\langle B\rangle_t=t$ and the process $B_t^2-t$ is a martingale.</p>
-<p><strong>Remark (the two pathologies).</strong> Brownian paths are continuous and nowhere differentiable, and they have infinite variation on every interval; consequently the Riemann–Stieltjes integral $\int\phi\,dB$ does not exist by the classical theory, and the choice of the point at which the integrand is evaluated matters. It is the finite quadratic variation, and not the finite variation, that makes the stochastic integral possible.</p>
+<p><strong>Remark (the two pathologies).</strong> Brownian paths are continuous and nowhere differentiable, and they have infinite variation on every interval; consequently the Riemann–Stieltjes integral $\int\digamma_{\mathrm{map}}\,dB$ does not exist by the classical theory, and the choice of the point at which the integrand is evaluated matters. It is the finite quadratic variation, and not the finite variation, that makes the stochastic integral possible.</p>
 <h3 id="the-ito-integral">The Itô Integral</h3>
-<p><strong>Definition.</strong> Let $(\mathcal{F}_t)$ be the filtration and let $\mathcal{H}^2$ be the space of progressively measurable processes $\phi$ with $\mathbb{E}\int_0^T\phi_s^2ds&lt;\infty$. For a <strong>simple</strong> process $\phi_s=\sum_i\zeta_i\mathbf{1}_{(t_i,t_{i+1}]}(s)$ with $\zeta_i$ bounded and $\mathcal{F}_{t_i}$-measurable, the <strong>Itô integral</strong> is</p>
+<p><strong>Definition.</strong> Let $(\mathcal{F}_t)$ be the filtration and let $\mathcal{H}^2$ be the space of progressively measurable processes $\digamma_{\mathrm{map}}$ with $\mathbb{E}\int_0^T\digamma_{\mathrm{map},s}^2ds&lt;\infty$. For a <strong>simple</strong> process $\digamma_{\mathrm{map},s}=\sum_i\zeta_i\mathbf{1}_{(t_i,t_{i+1}]}(s)$ with $\zeta_i$ bounded and $\mathcal{F}_{t_i}$-measurable, the <strong>Itô integral</strong> is</p>
 <p>$$
-\int_0^T\phi_s\,dB_s = \sum_i\zeta_i\bigl(B_{t_{i+1}}-B_{t_i}\bigr),
+\int_0^T\digamma_{\mathrm{map},s}\,dB_s = \sum_i\zeta_i\bigl(B_{t_{i+1}}-B_{t_i}\bigr),
 $$</p>
 <p>the integrand being evaluated at the <strong>left</strong> endpoint of each interval.</p>
-<p><strong>Theorem (Itô isometry and the extension).</strong> For simple $\phi$,</p>
+<p><strong>Theorem (Itô isometry and the extension).</strong> For simple $\digamma_{\mathrm{map}}$,</p>
 <p>$$
-\mathbb{E}\left[\int_0^T\phi_s\,dB_s\right] = 0, \qquad
-\mathbb{E}\left|\int_0^T\phi_s\,dB_s\right|^2 = \mathbb{E}\int_0^T\phi_s^2\,ds ,
+\mathbb{E}\left[\int_0^T\digamma_{\mathrm{map},s}\,dB_s\right] = 0, \qquad
+\mathbb{E}\left|\int_0^T\digamma_{\mathrm{map},s}\,dB_s\right|^2 = \mathbb{E}\int_0^T\digamma_{\mathrm{map},s}^2\,ds ,
 $$</p>
-<p>and the integral extends uniquely to an isometry $\mathcal{H}^2\to L^2(\Omega)$; the extended stochastic process $t\mapsto\int_0^t\phi_s\,dB_s$ is a continuous martingale with quadratic variation $\langle\int\phi\,dB\rangle_t=\int_0^t\phi_s^2ds$.</p>
+<p>and the integral extends uniquely to an isometry $\mathcal{H}^2\to L^2(\Omega)$; the extended stochastic process $t\mapsto\int_0^t\digamma_{\mathrm{map},s}\,dB_s$ is a continuous martingale with quadratic variation $\langle\int\digamma_{\mathrm{map}}\,dB\rangle_t=\int_0^t\digamma_{\mathrm{map},s}^2ds$.</p>
 <p><em>Proof.</em> For simple processes the two identities follow from the independence and the Gaussian moments of the increments: cross terms vanish because the $\zeta_i\zeta_j$ with $i&lt;j$ are $\mathcal{F}_{t_j}$-measurable and the conditional mean of $B_{t_{j+1}}-B_{t_j}$ vanishes. The isometry makes the map an isometry from the dense subspace of simple processes into $L^2(\Omega)$, and the completeness of $L^2$ gives the extension. The martingale property follows by conditioning on $\mathcal{F}_s$ and using the independence of the increments beyond $s$.</p>
-<p><strong>Definition.</strong> For a general integrand $\phi\in\mathcal{H}^2$ the integral is the $L^2$ limit of the integrals of an approximating sequence of simple processes.</p>
-<p><strong>Example (integrating the Brownian motion against itself).</strong> With $\phi_s=B_s$ the Itô integral is $\int_0^tB_s\,dB_s=\frac12(B_t^2-t)$: the integral differs from the naive $\frac12B_t^2$ by $-\frac t2$, and the correction is the quadratic variation. With $\phi$ the left-continuous evaluation the value is forced by the isometry; evaluating at the midpoint instead gives the Stratonovich integral below, which is exactly $\frac12B_t^2$.</p>
+<p><strong>Definition.</strong> For a general integrand $\digamma_{\mathrm{map}}\in\mathcal{H}^2$ the integral is the $L^2$ limit of the integrals of an approximating sequence of simple processes.</p>
+<p><strong>Example (integrating the Brownian motion against itself).</strong> With $\digamma_{\mathrm{map},s}=B_s$ the Itô integral is $\int_0^tB_s\,dB_s=\frac12(B_t^2-t)$: the integral differs from the naive $\frac12B_t^2$ by $-\frac t2$, and the correction is the quadratic variation. With $\digamma_{\mathrm{map}}$ the left-continuous evaluation the value is forced by the isometry; evaluating at the midpoint instead gives the Stratonovich integral below, which is exactly $\frac12B_t^2$.</p>
 <h2 id="itos-formula-and-the-generator">Itô's Formula and the Generator</h2>
 <p><strong>Theorem (Itô's formula, one-dimensional).</strong> Let $f\in C^{1,2}([0,\infty)\times\mathbb{R})$ and let $X_t = X_0+\int_0^tb_s\,ds+\int_0^t\sigma_s\,dB_s$ with $b,\sigma$ in the appropriate integrability classes. Then almost surely, for all $t$,</p>
 <p>$$
@@ -125,19 +125,19 @@ $$</p>
 <p><em>Proof.</em> Apply Itô's formula to $f(X_t)$, note that the stochastic integral is a martingale, and take expectations at the stopping time $\tau$; the optional stopping theorem for a bounded martingale and a truncation argument for the integrability of $\tau$ justify the passage.</p>
 <p><strong>Remark (the generator and the operators of the previous articles).</strong> The generator $L$ is an elliptic second-order operator with the ellipsoid of the diffusion matrix as its symbol, so the backward equation $\partial/\partial t w+Lw=0$ is a parabolic equation of the type studied in the earlier article of this Part: elliptic when the diffusion matrix is positive definite, degenerate when it is not, and with the boundary conditions supplied by the problem. The transition semigroup $P_tf(x)=\mathbb{E}_x[f(X_t)]$ is a strongly continuous semigroup on a suitable Banach space whose generator is $L$, and the well-posedness theory of the semigroup article applies to it; this is the precise point of contact between the stochastic and the deterministic theories.</p>
 <h2 id="the-stratonovich-integral">The Stratonovich Integral</h2>
-<p><strong>Definition.</strong> For a process $\phi$ and a partition with mesh $|\pi|\to0$, the <strong>Stratonovich integral</strong> is the limit in probability of the midpoint sums</p>
+<p><strong>Definition.</strong> For a process $\digamma_{\mathrm{map}}$ and a partition with mesh $|\pi|\to0$, the <strong>Stratonovich integral</strong> is the limit in probability of the midpoint sums</p>
 <p>$$
-\int_0^T\phi_s\circ dB_s = \lim_{|\pi|\to0}\sum_i\phi\left(\frac{t_i+t_{i+1}}{2}\right)\bigl(B_{t_{i+1}}-B_{t_i}\bigr).
+\int_0^T\digamma_{\mathrm{map},s}\circ dB_s = \lim_{|\pi|\to0}\sum_i\digamma_{\mathrm{map}}\left(\frac{t_i+t_{i+1}}{2}\right)\bigl(B_{t_{i+1}}-B_{t_i}\bigr).
 $$</p>
-<p><strong>Theorem (Itô–Stratonovich correction).</strong> For a continuous semimartingale $\phi$ and Brownian motion $B$,</p>
+<p><strong>Theorem (Itô–Stratonovich correction).</strong> For a continuous semimartingale $\digamma_{\mathrm{map}}$ and Brownian motion $B$,</p>
 <p>$$
-\int_0^t\phi_s\circ dB_s = \int_0^t\phi_s\,dB_s+\frac12\langle\phi,B\rangle_t ,
+\int_0^t\digamma_{\mathrm{map},s}\circ dB_s = \int_0^t\digamma_{\mathrm{map},s}\,dB_s+\frac12\langle\digamma_{\mathrm{map}},B\rangle_t ,
 $$</p>
-<p>where $\langle\phi,B\rangle_t$ is the joint quadratic variation; in particular, if $\phi_s=f(B_s)$ for a $C^1$ function $f$, then</p>
+<p>where $\langle\digamma_{\mathrm{map}},B\rangle_t$ is the joint quadratic variation; in particular, if $\digamma_{\mathrm{map},s}=f(B_s)$ for a $C^1$ function $f$, then</p>
 <p>$$
 \int_0^tf(B_s)\circ dB_s = \int_0^tf(B_s)\,dB_s+\frac12\int_0^tf'(B_s)\,ds .
 $$</p>
-<p><em>Proof.</em> Quoted as standard. The midpoint value differs from the left endpoint by $\frac12(\phi_{t_{i+1}}-\phi_{t_i})$, and the sum of these differences times the corresponding Brownian increment converges to $\frac12\langle\phi,B\rangle_t$ by the definition of the joint quadratic variation; for $\phi=f(B)$ the joint variation is computed from the quadratic variation of $B$, giving the second formula.</p>
+<p><em>Proof.</em> Quoted as standard. The midpoint value differs from the left endpoint by $\frac12(\digamma_{\mathrm{map},t_{i+1}}-\digamma_{\mathrm{map},t_i})$, and the sum of these differences times the corresponding Brownian increment converges to $\frac12\langle\digamma_{\mathrm{map}},B\rangle_t$ by the definition of the joint quadratic variation; for $\digamma_{\mathrm{map}}=f(B)$ the joint variation is computed from the quadratic variation of $B$, giving the second formula.</p>
 <p><strong>Theorem (the Stratonovich chain rule).</strong> If $X_t = X_0+\int_0^t\sigma(X_s)\circ dB_s+\int_0^tb(X_s)ds$ is a Stratonovich equation and $f\in C^3$, then</p>
 <p>$$
 f(X_t) = f(X_0)+\int_0^tf'(X_s)\circ dX_s ,
@@ -209,7 +209,7 @@ X_t = X_0\exp\left(\Bigl(\mu-\frac{\sigma^2}{2}\Bigr)t+\sigma B_t\right),
 $$</p>
 <p>obtained by applying Itô's formula to $\log X_t$: the Itô correction $-\frac12\sigma^2dt$ is exactly the term the naive calculus would miss, and without it the formula would not solve the equation. The process is the standard model of multiplicative noise, and its log-normal marginal law is the elementary consequence of the formula.</p>
 <h2 id="summary">Summary</h2>
-<p>A stochastic differential equation $dX_t=b(t,X_t)dt+\sigma(t,X_t)dB_t$ is an integral equation driven by Brownian motion, whose paths are continuous, nowhere differentiable and of quadratic variation $\langle B\rangle_t=t$. The Itô integral evaluates the integrand at the left endpoint, is a martingale with the isometry $\mathbb{E}|\int\phi\,dB|^2=\mathbb{E}\int\phi^2ds$, and satisfies Itô's formula $df(t,X_t)=(\partial/\partial t+L)f\,dt+\nabla f^{\mathrm{T}}\sigma\,dB_t$ with the second-order correction; the Stratonovich integral evaluates the midpoint, differs from the Itô integral by $\frac12\langle\phi,B\rangle_t$, obeys the classical chain rule, and is converted to the Itô form by the drift correction $-\frac12\sigma'\sigma$. The generator $L=b\cdot\nabla+\frac12\operatorname{tr}(\sigma\sigma^{\mathrm{T}}\nabla^2)$ governs the process: Dynkin's formula holds, the transition kernels form a semigroup with generator $L$, and the expectations solve the backward Kolmogorov and Feynman–Kac equations, with the Fokker–Planck equation as the adjoint. Existence and pathwise uniqueness hold for locally Lipschitz coefficients by Picard iteration together with the Burkholder–Davis–Gundy inequality; Yamada–Watanabe passes from pathwise uniqueness to uniqueness in law and from a weak solution to a strong one, and the Stroock–Varadhan martingale problem characterises the weak solutions. Girsanov's theorem changes the measure by an exponential martingale and converts a drift into a Brownian motion, and the standard explicit examples are the Ornstein–Uhlenbeck process and the geometric Brownian motion.</p>
+<p>A stochastic differential equation $dX_t=b(t,X_t)dt+\sigma(t,X_t)dB_t$ is an integral equation driven by Brownian motion, whose paths are continuous, nowhere differentiable and of quadratic variation $\langle B\rangle_t=t$. The Itô integral evaluates the integrand at the left endpoint, is a martingale with the isometry $\mathbb{E}|\int\digamma_{\mathrm{map}}\,dB|^2=\mathbb{E}\int\digamma_{\mathrm{map}}^2ds$, and satisfies Itô's formula $df(t,X_t)=(\partial/\partial t+L)f\,dt+\nabla f^{\mathrm{T}}\sigma\,dB_t$ with the second-order correction; the Stratonovich integral evaluates the midpoint, differs from the Itô integral by $\frac12\langle\digamma_{\mathrm{map}},B\rangle_t$, obeys the classical chain rule, and is converted to the Itô form by the drift correction $-\frac12\sigma'\sigma$. The generator $L=b\cdot\nabla+\frac12\operatorname{tr}(\sigma\sigma^{\mathrm{T}}\nabla^2)$ governs the process: Dynkin's formula holds, the transition kernels form a semigroup with generator $L$, and the expectations solve the backward Kolmogorov and Feynman–Kac equations, with the Fokker–Planck equation as the adjoint. Existence and pathwise uniqueness hold for locally Lipschitz coefficients by Picard iteration together with the Burkholder–Davis–Gundy inequality; Yamada–Watanabe passes from pathwise uniqueness to uniqueness in law and from a weak solution to a strong one, and the Stroock–Varadhan martingale problem characterises the weak solutions. Girsanov's theorem changes the measure by an exponential martingale and converts a drift into a Brownian motion, and the standard explicit examples are the Ornstein–Uhlenbeck process and the geometric Brownian motion.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -240,7 +240,7 @@ $$</p>
 <td>Drift, diffusion coefficient, diffusion matrix</td>
 </tr>
 <tr>
-<td>$\int\phi\,dB$, $\int\phi\circ dB$</td>
+<td>$\int\digamma_{\mathrm{map}}\,dB$, $\int\digamma_{\mathrm{map}}\circ dB$</td>
 <td>Itô and Stratonovich integrals</td>
 </tr>
 <tr>

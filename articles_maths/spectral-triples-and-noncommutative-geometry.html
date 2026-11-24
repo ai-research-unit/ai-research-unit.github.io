@@ -86,10 +86,10 @@
 <p>The operator $D$ defines a metric on the state space of the algebra, and in the commutative case it recovers the geodesic distance.</p>
 <p><strong>Definition.</strong> Let $\mathcal{S}(A)$ be the set of states of $A$, that is, the positive linear functionals of norm one. The <strong>Connes distance</strong> on $\mathcal{S}(A)$ is</p>
 <p>$$
-d(\varphi,\psi)=\sup\bigl\{\,|\varphi(a)-\psi(a)| \ :\ a\in A,\ \|[D,\pi(a)]\|\leq1\,\bigr\}.
+d(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=\sup\bigl\{\,|\digamma_{\mathrm{map}}(a)-Ξ_{\mathrm{wfn}}(a)| \ :\ a\in A,\ \|[D,\pi(a)]\|\leq1\,\bigr\}.
 $$</p>
-<p><strong>Theorem.</strong> The function $d$ is symmetric, satisfies the triangle inequality, and takes values in $[0,+\infty]$, so it is a pseudometric on the state space; two states satisfy $d(\varphi,\psi)=0$ exactly when they agree on the constraint set $C=\{a\in A:\|[D,\pi(a)]\|\leq1\}$, so $d$ is a metric exactly when $C$ separates the states. It is finite-valued when the constraint set is norm-bounded, in particular in the commutative case of the theorem below.</p>
-<p><strong>Proof.</strong> Symmetry is immediate from the definition. For the triangle inequality, $|\varphi(a)-\psi(a)|\leq|\varphi(a)-\chi(a)|+|\chi(a)-\psi(a)|$ pointwise, and the supremum over the constraint set is subadditive. The vanishing statement is the definition: $d(\varphi,\psi)=0$ says that $\varphi$ and $\psi$ take the same value at every element of $C$. Norm-boundedness of $C$ bounds $d$, because $|\varphi(a)-\psi(a)|\leq2\|a\|$ for states of norm one.</p>
+<p><strong>Theorem.</strong> The function $d$ is symmetric, satisfies the triangle inequality, and takes values in $[0,+\infty]$, so it is a pseudometric on the state space; two states satisfy $d(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=0$ exactly when they agree on the constraint set $C=\{a\in A:\|[D,\pi(a)]\|\leq1\}$, so $d$ is a metric exactly when $C$ separates the states. It is finite-valued when the constraint set is norm-bounded, in particular in the commutative case of the theorem below.</p>
+<p><strong>Proof.</strong> Symmetry is immediate from the definition. For the triangle inequality, $|\digamma_{\mathrm{map}}(a)-Ξ_{\mathrm{wfn}}(a)|\leq|\digamma_{\mathrm{map}}(a)-\chi(a)|+|\chi(a)-Ξ_{\mathrm{wfn}}(a)|$ pointwise, and the supremum over the constraint set is subadditive. The vanishing statement is the definition: $d(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=0$ says that $\digamma_{\mathrm{map}}$ and $Ξ_{\mathrm{wfn}}$ take the same value at every element of $C$. Norm-boundedness of $C$ bounds $d$, because $|\digamma_{\mathrm{map}}(a)-Ξ_{\mathrm{wfn}}(a)|\leq2\|a\|$ for states of norm one.</p>
 <p><strong>Theorem (commutative case).</strong> Let $M$ be a closed spin Riemannian manifold, let $A=C^{\infty}(M)$ act on $H=L^{2}(M,S)$ by pointwise multiplication, and let $D$ be the Cauchy–Riemann operator of the spinor bundle. Then the pure states of $A$ are the points of $M$ and</p>
 <p>$$
 \boxed{\;d(x,y)=\text{the geodesic distance from }x\text{ to }y\;}.
@@ -184,7 +184,7 @@ $$</p>
 <p><strong>Corollary.</strong> A commutative spectral triple satisfying the axioms is exactly a closed spin manifold with its spinor geometry, up to isomorphism. The noncommutative theory therefore generalises rather than replaces the classical one: every spin manifold is a spectral triple, and the spectral triples that satisfy the axioms but whose algebra is not the algebra of functions on a manifold are the genuinely noncommutative geometries.</p>
 <p><strong>Remark.</strong> The reconstruction theorem is the reason the axioms are chosen as they are: they are the minimal algebraic conditions that force the classical theory in the commutative case and remain meaningful in the noncommutative case. The condition of reality, in particular, is what makes the spin structure recoverable; without it the charge conjugation is unavailable and the orientation axioms fix only the oriented Riemannian geometry.</p>
 <h2 id="cyclic-cohomology-and-the-conneschern-character">Cyclic Cohomology and the Connes–Chern Character</h2>
-<p><strong>Definition.</strong> For a $*$-algebra $A$, the <strong>cyclic cohomology</strong> $HC^{\bullet}(A)$ is the cohomology of the complex of cyclic multilinear functionals: a cyclic $n$-cochain is a multilinear functional $\varphi\colon A^{n+1}\to\mathbb{C}$ satisfying the cyclicity $\varphi(a_0,\dots,a_n)=(-1)^{n}\varphi(a_n,a_0,\dots,a_{n-1})$, and the differential is the Hochschild coboundary restricted to cyclic cochains.</p>
+<p><strong>Definition.</strong> For a $*$-algebra $A$, the <strong>cyclic cohomology</strong> $HC^{\bullet}(A)$ is the cohomology of the complex of cyclic multilinear functionals: a cyclic $n$-cochain is a multilinear functional $\digamma_{\mathrm{map}}\colon A^{n+1}\to\mathbb{C}$ satisfying the cyclicity $\digamma_{\mathrm{map}}(a_0,\dots,a_n)=(-1)^{n}\digamma_{\mathrm{map}}(a_n,a_0,\dots,a_{n-1})$, and the differential is the Hochschild coboundary restricted to cyclic cochains.</p>
 <p><strong>Definition.</strong> Let $(A,H,D)$ be an even spectral triple of finite dimension with chirality operator $\Gamma$. The <strong>Connes–Chern character</strong> is the cyclic cocycle</p>
 <p>$$
 \operatorname{ch}(D)(a_0,\dots,a_n)=\operatorname{Tr}\bigl(\Gamma\,a_0[D,a_1]\cdots[D,a_n]\,\exp(-D^{2})\bigr),
@@ -218,9 +218,9 @@ $$</p>
 <p>$$
 [D,\pi(a,b)]=\begin{pmatrix}0&amp;m(b-a)\\ m(a-b)&amp;0\end{pmatrix}, \qquad \|[D,\pi(a,b)]\|=m|a-b|,
 $$</p>
-<p>and the Connes distance between the two pure states $\varphi_1(a,b)=a$ and $\varphi_2(a,b)=b$ is</p>
+<p>and the Connes distance between the two pure states $\digamma_{\mathrm{map},1}(a,b)=a$ and $\digamma_{\mathrm{map},2}(a,b)=b$ is</p>
 <p>$$
-d(\varphi_1,\varphi_2)=\sup\{|a-b|:m|a-b|\leq1\}=\frac{1}{m}.
+d(\digamma_{\mathrm{map},1},\digamma_{\mathrm{map},2})=\sup\{|a-b|:m|a-b|\leq1\}=\frac{1}{m}.
 $$</p>
 <p>The two-point space is thus a metric space whose distance is the inverse of the off-diagonal entry of $D$, and the triple reconstructs a finite geometry from a matrix.</p>
 <p><strong>Example (matrix algebras).</strong> Let $A=M_n(\mathbb{C})$ act on $H=\mathbb{C}^n\oplus\mathbb{C}^n$ and let $D=\begin{pmatrix}0&amp;M\\ M^{*}&amp;0\end{pmatrix}$ for an invertible matrix $M$. The triple is even with grading $\operatorname{diag}(1,-1)$, the KO-dimension is determined by the signs of the reality structure if one is present, and the index pairing with the class of a projection $e\in M_n(\mathbb{C})$ computes the index of the compression of $D$.</p>
@@ -233,7 +233,7 @@ $$</p>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
 <p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
-<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
+<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_aΞ_{\mathrm{wfn}}=aΞ_{\mathrm{wfn}}$ and $R_bΞ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
 \gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$</p>
@@ -241,7 +241,7 @@ $$</p>
 <p>$\gamma_5$ is the reference-frame operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <h2 id="summary">Summary</h2>
-<p>A spectral triple $(A,H,D)$ is a represented $*$-algebra with a self-adjoint operator of compact resolvent whose commutators with the algebra are bounded; it is even when a chirality grading is present, and it satisfies the axioms of dimension, regularity, finiteness, reality, first order and orientation. The operator is the metric datum: the Connes distance $d(\varphi,\psi)=\sup\{|\varphi(a)-\psi(a)|:\|[D,a]\|\leq1\}$ recovers the geodesic distance in the commutative case, where the pure states are the points of a spin manifold and $[D,f]=c(df)$.</p>
+<p>A spectral triple $(A,H,D)$ is a represented $*$-algebra with a self-adjoint operator of compact resolvent whose commutators with the algebra are bounded; it is even when a chirality grading is present, and it satisfies the axioms of dimension, regularity, finiteness, reality, first order and orientation. The operator is the metric datum: the Connes distance $d(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=\sup\{|\digamma_{\mathrm{map}}(a)-Ξ_{\mathrm{wfn}}(a)|:\|[D,a]\|\leq1\}$ recovers the geodesic distance in the commutative case, where the pure states are the points of a spin manifold and $[D,f]=c(df)$.</p>
 <p>A real structure is an antilinear $J$ with signs $J^{2}=\varepsilon$, $JD=\varepsilon'DJ$ and $J\Gamma=\varepsilon''\Gamma J$, the order-zero and order-one conditions, and a KO-dimension that is periodic of period eight; for a spin manifold of dimension $m$ the KO-dimension is $m\bmod8$. By Connes' reconstruction theorem a commutative spectral triple satisfying the axioms is exactly a closed spin manifold with its spinor geometry, so the noncommutative theory generalises the classical one.</p>
 <p>The Connes–Chern character is the cyclic cocycle $\operatorname{ch}(D)(a_0,\dots,a_n)=\operatorname{Tr}(\Gamma a_0[D,a_1]\cdots[D,a_n]\exp(-D^{2}))$; its pairing with $K_0(A)$ is the index of the compressed operator $eDe$, and the Connes–Moscovici local index formula computes the character as a sum of residues at the points of the dimension spectrum. The spectral dimension is the growth exponent of the spectrum of $D$, the heat trace has the asymptotic expansion $\operatorname{Tr}(\exp(-tD^{2}))\sim\sum_ka_kt^{-(p-k)/2}$, and in the commutative case the leading coefficient is the volume. Finite-dimensional examples include the two-point space, where the distance is the inverse of the off-diagonal entry of $D$, and the almost commutative geometries $A_M\otimes A_F$, $D=D_M\otimes1+\Gamma_M\otimes D_F$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -274,7 +274,7 @@ $$</p>
 <td>Chirality operator, $\Gamma^{2}=1$, $\Gamma D=-D\Gamma$</td>
 </tr>
 <tr>
-<td>$d(\varphi,\psi)=\sup\{|\varphi(a)-\psi(a)|:\|[D,a]\|\leq1\}$</td>
+<td>$d(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=\sup\{|\digamma_{\mathrm{map}}(a)-Ξ_{\mathrm{wfn}}(a)|:\|[D,a]\|\leq1\}$</td>
 <td>Connes distance</td>
 </tr>
 <tr>

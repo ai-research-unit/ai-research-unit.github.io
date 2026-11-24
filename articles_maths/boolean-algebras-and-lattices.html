@@ -114,7 +114,7 @@ $$</p>
 <p>$$
 \alpha \wedge \neg\alpha = 0, \qquad \alpha \vee \neg\alpha = 1 .
 $$</p>
-<p>A <strong>homomorphism</strong> of Boolean algebras is a map $\varphi : B \to B'$ preserving $\wedge$, $\vee$, $\neg$, $0$ and $1$. A <strong>subalgebra</strong> is a subset closed under the three operations; an <strong>ideal</strong> is a nonempty subset $I$ closed under finite joins and downward closed, $\alpha \in I$ and $\beta \leq \alpha$ implying $\beta \in I$; a <strong>filter</strong> is the order-dual notion. The algebra $B$ is <strong>trivial</strong> if $0 = 1$.</p>
+<p>A <strong>homomorphism</strong> of Boolean algebras is a map $\digamma_{\mathrm{map}} : B \to B'$ preserving $\wedge$, $\vee$, $\neg$, $0$ and $1$. A <strong>subalgebra</strong> is a subset closed under the three operations; an <strong>ideal</strong> is a nonempty subset $I$ closed under finite joins and downward closed, $\alpha \in I$ and $\beta \leq \alpha$ implying $\beta \in I$; a <strong>filter</strong> is the order-dual notion. The algebra $B$ is <strong>trivial</strong> if $0 = 1$.</p>
 <p><strong>Theorem.</strong> In a bounded distributive lattice, a complement, when it exists, is unique.</p>
 <p><strong>Proof.</strong> Let $\beta$ and $\gamma$ both complement $\alpha$. Then</p>
 <p>$$
@@ -227,18 +227,18 @@ $$</p>
 <h3 id="the-lindenbaumtarski-algebra">The Lindenbaum–Tarski Algebra</h3>
 <p>Let $L$ be the propositional language on a set of variables, built from the connectives $\wedge, \vee, \neg, \to, \leftrightarrow$ as in <em>Logic and Proof</em>, and let $T$ be a set of propositions. Define a relation on the propositions by</p>
 <p>$$
-\varphi \sim_T \psi \iff T \vdash \varphi \leftrightarrow \psi,
+\digamma_{\mathrm{map}} \sim_T Ξ_{\mathrm{wfn}} \iff T \vdash \digamma_{\mathrm{map}} \leftrightarrow Ξ_{\mathrm{wfn}},
 $$</p>
-<p>that is, $T$ proves that $\varphi$ and $\psi$ are equivalent. The <strong>Lindenbaum–Tarski algebra</strong> of $T$ is the quotient of the propositions by $\sim_T$, with the operations induced by the connectives and the classes of the always-false and always-true propositions as $0$ and $1$.</p>
+<p>that is, $T$ proves that $\digamma_{\mathrm{map}}$ and $Ξ_{\mathrm{wfn}}$ are equivalent. The <strong>Lindenbaum–Tarski algebra</strong> of $T$ is the quotient of the propositions by $\sim_T$, with the operations induced by the connectives and the classes of the always-false and always-true propositions as $0$ and $1$.</p>
 <p><strong>Theorem (Lindenbaum–Tarski).</strong> The relation $\sim_T$ is a congruence on the propositional algebra, and the quotient is a Boolean algebra. It is the trivial algebra exactly when $T$ is inconsistent.</p>
-<p><strong>Proof.</strong> The relation is an equivalence relation because $\leftrightarrow$ is reflexive, symmetric and transitive in the propositional calculus, and it is a congruence because the connectives are compatible with provable equivalence; the quotient therefore inherits the operations. The distributive, complementation and bound laws hold because their instances in the connectives are tautologies, each provable from the axioms of <em>Logic and Proof</em>; for instance $\varphi \wedge \neg \varphi$ is refutable and $\varphi \vee \neg \varphi$ is provable in the classical calculus. If $T$ is inconsistent then every proposition is provable, so all classes coincide and $0 = 1$; conversely if $0 = 1$ then $T$ proves a contradiction.</p>
+<p><strong>Proof.</strong> The relation is an equivalence relation because $\leftrightarrow$ is reflexive, symmetric and transitive in the propositional calculus, and it is a congruence because the connectives are compatible with provable equivalence; the quotient therefore inherits the operations. The distributive, complementation and bound laws hold because their instances in the connectives are tautologies, each provable from the axioms of <em>Logic and Proof</em>; for instance $\digamma_{\mathrm{map}} \wedge \neg \digamma_{\mathrm{map}}$ is refutable and $\digamma_{\mathrm{map}} \vee \neg \digamma_{\mathrm{map}}$ is provable in the classical calculus. If $T$ is inconsistent then every proposition is provable, so all classes coincide and $0 = 1$; conversely if $0 = 1$ then $T$ proves a contradiction.</p>
 <h3 id="semantics-and-the-two-element-model">Semantics and the Two-Element Model</h3>
 <p>A <strong>valuation</strong> is a map $v$ from the propositional variables to $\mathbf{2}$, extended to all propositions by the truth tables; equivalently, by the theorem above, a homomorphism from the free propositional algebra to $\mathbf{2}$. A proposition is a <strong>tautology</strong> if every valuation gives it the value $1$, and <strong>satisfiable</strong> if some valuation does.</p>
-<p><strong>Theorem (soundness and completeness, semantic form).</strong> For a set $T$ of propositions and a proposition $\varphi$,</p>
+<p><strong>Theorem (soundness and completeness, semantic form).</strong> For a set $T$ of propositions and a proposition $\digamma_{\mathrm{map}}$,</p>
 <p>$$
-T \vdash \varphi \iff \text{every valuation satisfying } T \text{ satisfies } \varphi .
+T \vdash \digamma_{\mathrm{map}} \iff \text{every valuation satisfying } T \text{ satisfies } \digamma_{\mathrm{map}} .
 $$</p>
-<p><strong>Pro.</strong> Soundness is induction on the length of a derivation, each axiom being a tautology and each rule preserving truth. For completeness, suppose $T \nvdash \varphi$; then the class of $\varphi$ is not $1$ in the Lindenbaum–Tarski algebra $B$ of $T$, and since $B$ is a nontrivial Boolean algebra it has a homomorphism to $\mathbf{2}$ — in the finite case by the finite representation theorem above, and in general by the prime-filter theorem — pulling back to a valuation satisfying $T$ and falsifying $\varphi$. A direct proof from the syntax is in <em>Logic and Proof</em>.</p>
+<p><strong>Pro.</strong> Soundness is induction on the length of a derivation, each axiom being a tautology and each rule preserving truth. For completeness, suppose $T \nvdash \digamma_{\mathrm{map}}$; then the class of $\digamma_{\mathrm{map}}$ is not $1$ in the Lindenbaum–Tarski algebra $B$ of $T$, and since $B$ is a nontrivial Boolean algebra it has a homomorphism to $\mathbf{2}$ — in the finite case by the finite representation theorem above, and in general by the prime-filter theorem — pulling back to a valuation satisfying $T$ and falsifying $\digamma_{\mathrm{map}}$. A direct proof from the syntax is in <em>Logic and Proof</em>.</p>
 <p><strong>Remark.</strong> The completeness theorem identifies the semantic models of propositional logic with the homomorphisms into $\mathbf{2}$. This is the reason the two-element algebra is the object of study: the variety generated by $\mathbf{2}$ is the variety of all Boolean algebras, so the equational theory of the system is the theory of this single finite algebra.</p>
 <h2 id="constructions">Constructions</h2>
 <h3 id="products-and-quotients">Products and Quotients</h3>
@@ -317,7 +317,7 @@ $$</p>
 <td>Addition in $\mathbb{F}_2$, the symmetric difference</td>
 </tr>
 <tr>
-<td>$\varphi \sim_T \psi$</td>
+<td>$\digamma_{\mathrm{map}} \sim_T Ξ_{\mathrm{wfn}}$</td>
 <td>Provable equivalence modulo $T$, defining the Lindenbaum–Tarski algebra</td>
 </tr>
 <tr>

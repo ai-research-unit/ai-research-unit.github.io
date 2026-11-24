@@ -71,14 +71,14 @@
       <div class="article-body">
         <h1 id="completely-positive-maps-of-a-sesqualgebra-with-a-form"><strong>Completely Positive Maps of a Sesqualgebra with a Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A <strong>positive map</strong> of a sesqualgebra with a form is an $R$-linear map that carries the cone of the algebraic Hermitian squares into itself; it is <strong>completely positive</strong> when every <strong>amplification</strong> $\varphi \otimes \mathrm{id}_{n}$ on the algebra $M_{n}(A)$ of matrices over $A$ is again positive. The definition is the order-theoretic analogue of the boundedness of an operator, and in the model $A = M_{n}(\mathbb{C})$ with the trace form the completely positive maps are exactly the <strong>Kraus maps</strong> $\varphi(X) = \sum_{i}V_{i}XV_{i}^{*}$; the <strong>Hermitian pair</strong> $\mathrm{Sd}_{a}(x) = axa^{*}$ is the Kraus map of rank one, and the <strong>unitary channels</strong> $\mathrm{Sd}_{u}$ with $u$ unitary are the inner automorphisms of the form, which preserve the form's unitary group. The article is the capstone of the operator theory of the layer: after the adjoint, the unitaries, the self-adjoint splitting, the spectra and the polar decomposition, the completely positive maps are the maps that preserve the order of the cone, and the two-sided operator is the smallest of them.</p>
+<p>A <strong>positive map</strong> of a sesqualgebra with a form is an $R$-linear map that carries the cone of the algebraic Hermitian squares into itself; it is <strong>completely positive</strong> when every <strong>amplification</strong> $\digamma_{\mathrm{map}} \otimes \mathrm{id}_{n}$ on the algebra $M_{n}(A)$ of matrices over $A$ is again positive. The definition is the order-theoretic analogue of the boundedness of an operator, and in the model $A = M_{n}(\mathbb{C})$ with the trace form the completely positive maps are exactly the <strong>Kraus maps</strong> $\digamma_{\mathrm{map}}(X) = \sum_{i}V_{i}XV_{i}^{*}$; the <strong>Hermitian pair</strong> $\mathrm{Sd}_{a}(x) = axa^{*}$ is the Kraus map of rank one, and the <strong>unitary channels</strong> $\mathrm{Sd}_{u}$ with $u$ unitary are the inner automorphisms of the form, which preserve the form's unitary group. The article is the capstone of the operator theory of the layer: after the adjoint, the unitaries, the self-adjoint splitting, the spectra and the polar decomposition, the completely positive maps are the maps that preserve the order of the cone, and the two-sided operator is the smallest of them.</p>
 <p>Three facts organise the article. The <strong>two-sided operator is completely positive, and this needs no positivity hypothesis</strong>: the identity $\mathrm{Sd}_{a}(y^{*}y) = (ya^{*})^{*}(ya^{*})$ shows that the two-sided operator carries a Hermitian square to a Hermitian square, and the amplified two-sided operator is the two-sided operator with the diagonal matrix $\mathrm{diag}(a,\dots,a)$, so the amplification is positive for every $n$. The <strong>model theorem is Choi's</strong>: for $A = M_{n}(\mathbb{C})$ with the trace form a map is completely positive exactly when it is a sum of two-sided operators $\sum_{i}\mathrm{Sd}_{V_{i}}$, and the least number of terms in such a sum is the <strong>Kraus rank</strong>, equal to the rank of the Choi matrix. And <strong>positivity is strictly weaker than complete positivity</strong>: the transpose of $M_{2}(\mathbb{C})$ is positive and not completely positive, its Choi matrix being the flip operator with the eigenvalues $+1$ and $-1$, so the amplification is what the word "completely" adds.</p>
 <p>The article defines the order of the cone and the positive and completely positive maps, proves the complete positivity of the two-sided operator, states the Choi–Kraus theorem in the model with its Choi matrix, develops the unital and the unitary channels and their relation to the inner automorphisms of the form, and works the field and the matrices. The positivity and the cone are <em>Positivity and the Positive Cone of a Hermitian Form</em> and <em>Hermitian Squares and the Algebraic Positive Cone</em>; the two-sided operator is <em>The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint</em> read in the sesquilinear layer; the inner automorphisms are <em>The Adjoint under a Hermitian Form</em>, §<em>The Inner Automorphisms</em>; the bilinear counterpart is <em>Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint</em>. Throughout, $A$ is a sesqualgebra with a form over a base $(R,\varsigma)$ of one of the two classical kinds of <em>The Norm Defined by a Form</em>, with fixed field $k = R^{\varsigma}$ and $R$ complete, $h$ is Hermitian, compatible and nonsingular, the maps are $R$-linear and carry $A$ into itself, and in the model theorem $A = M_{n}(\mathbb{C})$ with the star of the conjugate transpose and the trace form.</p>
 <h2 id="the-positive-maps">The Positive Maps</h2>
 <h3 id="the-order-of-the-cone">The Order of the Cone</h3>
 <p>By <em>Positivity and the Positive Cone of a Hermitian Form</em>, §<em>The Algebraic Cone and the Positive Functionals</em>, and <em>Hermitian Squares and the Algebraic Positive Cone</em>, §<em>The Order</em>, the <strong>positive cone</strong> of the algebra is the set of the finite sums of the Hermitian squares $x^{*}x$, and the <strong>order</strong> of the Hermitian part is the order of that cone: an element is <strong>positive</strong> when it lies in the cone, and $u \leq v$ when $v - u$ is positive. The order is read by the positive functionals of <em>Positive Definite Forms and the Order</em>, and the cone is stable under conjugation by the elements of the algebra by the identity $(ya^{*})^{*}(ya^{*}) = a\,y^{*}y\,a^{*}$.</p>
 <h3 id="the-positive-maps_1">The Positive Maps</h3>
-<p><strong>Definition.</strong> An $R$-linear map $\varphi : A \to A$ is <strong>positive</strong> when it carries the positive cone into itself: $\varphi(u)$ is positive for every positive $u$.</p>
+<p><strong>Definition.</strong> An $R$-linear map $\digamma_{\mathrm{map}} : A \to A$ is <strong>positive</strong> when it carries the positive cone into itself: $\digamma_{\mathrm{map}}(u)$ is positive for every positive $u$.</p>
 <p><strong>Proposition (the two-sided operator is positive).</strong> For every $a \in A$ the Hermitian pair</p>
 <p>$$
 \mathrm{Sd}_{a}(x) = a\,x\,a^{*}
@@ -103,11 +103,11 @@ h_{n}(XY,Z) = \sum_{i,j,k} h(x_{ik}y_{kj}, z_{ij}) = \sum_{i,j,k} h(y_{kj}, x_{i
 $$</p>
 <p>which is the compatibility of $h_{n}$. For the nonsingularity, an element of the radical of $h_{n}$ tested against the matrices with a single nonzero entry has every entry in the radical of $h$, so the radical of $h_{n}$ vanishes when that of $h$ does.</p>
 <h3 id="the-definition">The Definition</h3>
-<p><strong>Definition.</strong> The <strong>amplification</strong> of an $R$-linear map $\varphi : A \to A$ is the map</p>
+<p><strong>Definition.</strong> The <strong>amplification</strong> of an $R$-linear map $\digamma_{\mathrm{map}} : A \to A$ is the map</p>
 <p>$$
-\varphi \otimes \mathrm{id}_{n} : M_{n}(A) \to M_{n}(A) , \qquad (a_{ij}) \mapsto (\varphi(a_{ij})) ,
+\digamma_{\mathrm{map}} \otimes \mathrm{id}_{n} : M_{n}(A) \to M_{n}(A) , \qquad (a_{ij}) \mapsto (\digamma_{\mathrm{map}}(a_{ij})) ,
 $$</p>
-<p>acting entrywise. The map $\varphi$ is <strong>$n$-positive</strong> when its amplification is positive, and <strong>completely positive</strong> when it is $n$-positive for every $n \geq 1$.</p>
+<p>acting entrywise. The map $\digamma_{\mathrm{map}}$ is <strong>$n$-positive</strong> when its amplification is positive, and <strong>completely positive</strong> when it is $n$-positive for every $n \geq 1$.</p>
 <p>The terminology is the one of the bilinear layer, and the amplified map is the natural extension of the map to the matrices over the algebra; the amplification is not the tensor product of two algebras but the entrywise action, which is the only one that makes sense for a map that is not an algebra homomorphism.</p>
 <h3 id="the-two-sided-operator-is-completely-positive">The Two-Sided Operator Is Completely Positive</h3>
 <p><strong>Theorem (the two-sided operator is completely positive).</strong> For every $a \in A$ the two-sided operator $\mathrm{Sd}_{a}$ is completely positive, and its amplification is the two-sided operator with the diagonal matrix,</p>
@@ -123,23 +123,23 @@ $$</p>
 <p><em>Proof.</em> The composition is $x \mapsto a(xa^{*}) = axa^{*}$, which is the two-sided operator. The adjoint is $R_{a}^{\dagger}m_{a}^{\dagger} = R_{a^{*}}m_{a^{*}}$, which is $x \mapsto a^{*}xa = \mathrm{Sd}_{a^{*}}(x)$, using the adjoint formulas $m_{x}^{\dagger} = m_{x^{*}}$, $R_{b}^{\dagger} = R_{b^{*}}$.</p>
 <h2 id="chois-theorem-and-the-kraus-form">Choi's Theorem and the Kraus Form</h2>
 <h3 id="the-kraus-form">The Kraus Form</h3>
-<p><strong>Definition.</strong> A map $\varphi : M_{n}(\mathbb{C}) \to M_{n}(\mathbb{C})$ is a <strong>Kraus map</strong> when there are matrices $V_{1},\dots,V_{r}$ with</p>
+<p><strong>Definition.</strong> A map $\digamma_{\mathrm{map}} : M_{n}(\mathbb{C}) \to M_{n}(\mathbb{C})$ is a <strong>Kraus map</strong> when there are matrices $V_{1},\dots,V_{r}$ with</p>
 <p>$$
-\varphi(X) = \sum_{i=1}^{r} V_{i}XV_{i}^{*} .
+\digamma_{\mathrm{map}}(X) = \sum_{i=1}^{r} V_{i}XV_{i}^{*} .
 $$</p>
-<p>The matrices $V_{i}$ are the <strong>Kraus operators</strong> and the least $r$ is the <strong>Kraus rank</strong> of $\varphi$.</p>
+<p>The matrices $V_{i}$ are the <strong>Kraus operators</strong> and the least $r$ is the <strong>Kraus rank</strong> of $\digamma_{\mathrm{map}}$.</p>
 <p><strong>Theorem (the Kraus form is completely positive).</strong> Every Kraus map is positive and completely positive.</p>
-<p><em>Proof.</em> The Kraus map is a sum of two-sided operators $\mathrm{Sd}_{V_{i}}$, each of which is completely positive by the theorem above, and a sum of positive maps is positive. For the amplification, $(\varphi \otimes \mathrm{id}_{m})(X) = \sum_{i}(1_{m}\otimes V_{i})X(1_{m}\otimes V_{i})^{*}$ in the identification $M_{m}(M_{n}(\mathbb{C})) \cong M_{mn}(\mathbb{C})$, which is a Kraus map again, hence positive.</p>
+<p><em>Proof.</em> The Kraus map is a sum of two-sided operators $\mathrm{Sd}_{V_{i}}$, each of which is completely positive by the theorem above, and a sum of positive maps is positive. For the amplification, $(\digamma_{\mathrm{map}} \otimes \mathrm{id}_{m})(X) = \sum_{i}(1_{m}\otimes V_{i})X(1_{m}\otimes V_{i})^{*}$ in the identification $M_{m}(M_{n}(\mathbb{C})) \cong M_{mn}(\mathbb{C})$, which is a Kraus map again, hence positive.</p>
 <h3 id="chois-theorem-in-the-model">Choi's Theorem in the Model</h3>
-<p><strong>Theorem (Choi's theorem).</strong> A map $\varphi : M_{n}(\mathbb{C}) \to M_{n}(\mathbb{C})$ is completely positive if and only if it is a Kraus map, and then the Kraus rank is the rank of the <strong>Choi matrix</strong></p>
+<p><strong>Theorem (Choi's theorem).</strong> A map $\digamma_{\mathrm{map}} : M_{n}(\mathbb{C}) \to M_{n}(\mathbb{C})$ is completely positive if and only if it is a Kraus map, and then the Kraus rank is the rank of the <strong>Choi matrix</strong></p>
 <p>$$
-C_{\varphi} = \sum_{i,j=1}^{n} E_{ij} \otimes \varphi(E_{ij}) ,
+C_{\digamma_{\mathrm{map}}} = \sum_{i,j=1}^{n} E_{ij} \otimes \digamma_{\mathrm{map}}(E_{ij}) ,
 $$</p>
-<p>the block matrix whose positivity is the complete positivity of $\varphi$ and whose rank is the least number of Kraus operators.</p>
-<p><em>Proof.</em> The theorem is the finite-dimensional Choi–Kraus theorem for a map of a matrix algebra. The reconstruction $\varphi(X) = \sum_{i,j}X_{ij}\varphi(E_{ij})$ shows that $\varphi$ is determined by the images of the matrix units, and the columns of the Choi matrix are those images arranged in blocks; a decomposition $C_{\varphi} = VV^{*}$ with $V$ of $r$ columns reads the columns of $V$ as the Kraus operators, and the positivity of $C_{\varphi}$ is the existence of such a decomposition by the spectral theorem.</p>
+<p>the block matrix whose positivity is the complete positivity of $\digamma_{\mathrm{map}}$ and whose rank is the least number of Kraus operators.</p>
+<p><em>Proof.</em> The theorem is the finite-dimensional Choi–Kraus theorem for a map of a matrix algebra. The reconstruction $\digamma_{\mathrm{map}}(X) = \sum_{i,j}X_{ij}\digamma_{\mathrm{map}}(E_{ij})$ shows that $\digamma_{\mathrm{map}}$ is determined by the images of the matrix units, and the columns of the Choi matrix are those images arranged in blocks; a decomposition $C_{\digamma_{\mathrm{map}}} = VV^{*}$ with $V$ of $r$ columns reads the columns of $V$ as the Kraus operators, and the positivity of $C_{\digamma_{\mathrm{map}}}$ is the existence of such a decomposition by the spectral theorem.</p>
 <p><strong>Example (the two-sided operator has rank one).</strong> The Choi matrix of the two-sided operator $\mathrm{Sd}_{a}$ on $M_{n}(\mathbb{C})$ is the rank-one matrix $\lvert a\rangle\langle a\rvert$ in the vectorised basis, $C_{\mathrm{Sd}_{a}} = \mathrm{vec}(a)\,\mathrm{vec}(a)^{*}$, so the Kraus rank of the two-sided operator is one and every completely positive map of the model is a sum of two-sided operators. The example is the reason the two-sided operator is the elementary completely positive map of the layer.</p>
 <h3 id="positivity-is-strictly-weaker-than-complete-positivity">Positivity Is Strictly Weaker than Complete Positivity</h3>
-<p><strong>Theorem (the transpose).</strong> The transpose $\varphi(X) = X^{T}$ of $M_{2}(\mathbb{C})$ is positive and not completely positive.</p>
+<p><strong>Theorem (the transpose).</strong> The transpose $\digamma_{\mathrm{map}}(X) = X^{T}$ of $M_{2}(\mathbb{C})$ is positive and not completely positive.</p>
 <p><em>Proof.</em> The transpose is positive: $X \geq 0$ implies $X^{T} \geq 0$. Its Choi matrix in the basis of the matrix units is $\sum_{i,j}E_{ij} \otimes E_{ij}^{T} = \sum_{i,j}E_{ij}\otimes E_{ji}$, the flip operator, whose eigenvalues are $+1$ on the symmetric part and $-1$ on the antisymmetric part; the negative eigenvalue makes the Choi matrix not positive semi-definite, so by Choi's theorem the map is not completely positive.</p>
 <h2 id="channels-with-a-form">Channels with a Form</h2>
 <h3 id="unital-and-multiplicative-channels">Unital and Multiplicative Channels</h3>
@@ -155,7 +155,7 @@ $$</p>
 <p><strong>Remark (channels and states).</strong> The positive maps of the layer are the order-preserving maps of the cone, the completely positive ones the maps whose amplifications are order-preserving, and the unital ones are the <strong>channels</strong>; the composition of two channels is a channel, the identity is a channel, and the unitary channels are the invertible ones. The order-theoretic refinement of the layer is the statement that the channels form a monoid and the unitary channels a subgroup, and it is the noncommutative measure theory of <em>Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint</em> read for a compatible sesquilinear form.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="the-field">The Field</h3>
-<p><strong>Example (the field).</strong> Let $A = \mathbb{C}$ with $h(z,w) = z\overline{w}$. An $R$-linear map is $\varphi(z) = \mu z$ for a complex $\mu$, and it is positive exactly when $\mu \geq 0$: the cone of the algebra is the set of the squares $z\overline{z} = \lvert z\rvert^{2} \geq 0$, and $\mu\lvert z\rvert^{2}$ must stay nonnegative for every $z$. Every positive map is a Kraus map of rank one, $\varphi = \mathrm{Sd}_{a}$ with $a = \sqrt{\mu}$, and it is completely positive because the amplification is the two-sided operator by $\sqrt{\mu}$ on the diagonal. The example is the smallest in which positivity and complete positivity coincide, and the coincidence is the reason a scalar map has no "quantum" obstruction.</p>
+<p><strong>Example (the field).</strong> Let $A = \mathbb{C}$ with $h(z,w) = z\overline{w}$. An $R$-linear map is $\digamma_{\mathrm{map}}(z) = \mu z$ for a complex $\mu$, and it is positive exactly when $\mu \geq 0$: the cone of the algebra is the set of the squares $z\overline{z} = \lvert z\rvert^{2} \geq 0$, and $\mu\lvert z\rvert^{2}$ must stay nonnegative for every $z$. Every positive map is a Kraus map of rank one, $\digamma_{\mathrm{map}} = \mathrm{Sd}_{a}$ with $a = \sqrt{\mu}$, and it is completely positive because the amplification is the two-sided operator by $\sqrt{\mu}$ on the diagonal. The example is the smallest in which positivity and complete positivity coincide, and the coincidence is the reason a scalar map has no "quantum" obstruction.</p>
 <h3 id="the-matrices">The Matrices</h3>
 <p><strong>Example (the matrices).</strong> Let $A = M_{n}(\mathbb{C})$ with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$. The two-sided operator $\mathrm{Sd}_{a}(X) = aXa^{*}$ is completely positive of Kraus rank one by the general theorem, its Choi matrix is $\lvert a\rangle\langle a\rvert$, and it is unital exactly when $aa^{*} = 1$ and multiplicative exactly when $a = 0$ or $a^{*}a = 1$ (the zero two-sided operator being multiplicative too); the inner automorphisms of the trace form are the channels $\mathrm{Sd}_{u}$ with $u$ unitary, which are exactly the $*$-automorphisms of the matrix algebra that preserve the trace form. The transpose $X \mapsto X^{T}$ is the standard positive and not completely positive map, its Choi matrix being the flip operator. The smallest case is explicit:</p>
 <p>$$
@@ -163,7 +163,7 @@ a=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix},\qquad \mathrm{Sd}_a(\sigma_1)=\
 $$</p>
 <p>with $\lvert a\rangle=(1,0,0,-1)$ the vectorisation of $a$ and $F$ the flip $F(e_i\otimes e_j)=e_j\otimes e_i$. The example is the model of the article and the smallest in which all the phenomena — the two-sided operator, the Kraus form, the rank, the channels and the obstruction — are visible.</p>
 <h2 id="summary">Summary</h2>
-<p>A map of a sesqualgebra with a form is <strong>positive</strong> when it carries the <strong>cone of the Hermitian squares</strong> into itself and <strong>completely positive</strong> when every <strong>amplification</strong> $\varphi \otimes \mathrm{id}_{n}$ on $M_{n}(A)$ with the amplified compatible form $h_{n}$ is positive. The <strong>Hermitian pair</strong> $\mathrm{Sd}_{a}(x) = axa^{*}$ is completely positive and needs no positivity hypothesis, because it carries a Hermitian square to a Hermitian square, $\mathrm{Sd}_{a}(y^{*}y) = (ya^{*})^{*}(ya^{*})$, and its amplification is the two-sided operator by $\operatorname{diag}(a,\dots,a)$; its adjoint is $\mathrm{Sd}_{a}^{\dagger} = \mathrm{Sd}_{a^{*}}$, so it is self-adjoint exactly when $a$ is Hermitian. In the model $M_{n}(\mathbb{C})$ with the trace form the completely positive maps are the <strong>Kraus maps</strong> $\sum_{i}V_{i}XV_{i}^{*}$ by <strong>Choi's theorem</strong>, the Kraus rank being the rank of the <strong>Choi matrix</strong>, and the two-sided operator is the rank-one case. <strong>Positivity is strictly weaker</strong> than complete positivity: the transpose is positive and not completely positive. The two-sided operator is <strong>unital</strong> exactly when $aa^{*} = 1$, <strong>multiplicative</strong> as soon as $a^{*}a = 1$ (and in the matrix model exactly when $a = 0$ or $a^{*}a = 1$), and an <strong>automorphism</strong> exactly when $a$ is unitary, in which case it is the inner automorphism $\alpha_{a}$; the <strong>unitary channels</strong> form a subgroup of the channel monoid, and they are the inner automorphisms by the unitary elements.</p>
+<p>A map of a sesqualgebra with a form is <strong>positive</strong> when it carries the <strong>cone of the Hermitian squares</strong> into itself and <strong>completely positive</strong> when every <strong>amplification</strong> $\digamma_{\mathrm{map}} \otimes \mathrm{id}_{n}$ on $M_{n}(A)$ with the amplified compatible form $h_{n}$ is positive. The <strong>Hermitian pair</strong> $\mathrm{Sd}_{a}(x) = axa^{*}$ is completely positive and needs no positivity hypothesis, because it carries a Hermitian square to a Hermitian square, $\mathrm{Sd}_{a}(y^{*}y) = (ya^{*})^{*}(ya^{*})$, and its amplification is the two-sided operator by $\operatorname{diag}(a,\dots,a)$; its adjoint is $\mathrm{Sd}_{a}^{\dagger} = \mathrm{Sd}_{a^{*}}$, so it is self-adjoint exactly when $a$ is Hermitian. In the model $M_{n}(\mathbb{C})$ with the trace form the completely positive maps are the <strong>Kraus maps</strong> $\sum_{i}V_{i}XV_{i}^{*}$ by <strong>Choi's theorem</strong>, the Kraus rank being the rank of the <strong>Choi matrix</strong>, and the two-sided operator is the rank-one case. <strong>Positivity is strictly weaker</strong> than complete positivity: the transpose is positive and not completely positive. The two-sided operator is <strong>unital</strong> exactly when $aa^{*} = 1$, <strong>multiplicative</strong> as soon as $a^{*}a = 1$ (and in the matrix model exactly when $a = 0$ or $a^{*}a = 1$), and an <strong>automorphism</strong> exactly when $a$ is unitary, in which case it is the inner automorphism $\alpha_{a}$; the <strong>unitary channels</strong> form a subgroup of the channel monoid, and they are the inner automorphisms by the unitary elements.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -190,12 +190,12 @@ $$</p>
 <td>the amplified form on $M_{n}(A)$</td>
 </tr>
 <tr>
-<td>$\varphi \otimes \mathrm{id}_{n}$</td>
+<td>$\digamma_{\mathrm{map}} \otimes \mathrm{id}_{n}$</td>
 <td>the amplification of a map</td>
 </tr>
 <tr>
-<td>$\varphi$ completely positive</td>
-<td>$\varphi \otimes \mathrm{id}_{n}$ is positive for every $n$</td>
+<td>$\digamma_{\mathrm{map}}$ completely positive</td>
+<td>$\digamma_{\mathrm{map}} \otimes \mathrm{id}_{n}$ is positive for every $n$</td>
 </tr>
 <tr>
 <td>$\mathrm{Sd}_{a} = m_{a} \circ R_{a}$</td>
@@ -206,12 +206,12 @@ $$</p>
 <td>the adjoint of the two-sided operator</td>
 </tr>
 <tr>
-<td>$\varphi(X) = \sum_{i}V_{i}XV_{i}^{*}$</td>
+<td>$\digamma_{\mathrm{map}}(X) = \sum_{i}V_{i}XV_{i}^{*}$</td>
 <td>the Kraus form of a completely positive map</td>
 </tr>
 <tr>
-<td>$C_{\varphi} = \sum_{i,j}E_{ij}\otimes\varphi(E_{ij})$</td>
-<td>the Choi matrix, positive iff $\varphi$ is completely positive</td>
+<td>$C_{\digamma_{\mathrm{map}}} = \sum_{i,j}E_{ij}\otimes\digamma_{\mathrm{map}}(E_{ij})$</td>
+<td>the Choi matrix, positive iff $\digamma_{\mathrm{map}}$ is completely positive</td>
 </tr>
 <tr>
 <td>$C_{\mathrm{Sd}_{a}} = \lvert a\rangle\langle a\rvert$</td>

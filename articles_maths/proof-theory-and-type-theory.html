@@ -79,87 +79,87 @@
 <p><strong>Definition.</strong> A <strong>natural-deduction derivation</strong> is a finite tree whose nodes are formulas, whose leaves are the <strong>assumptions</strong> (each annotated with an assumption class), and whose internal nodes are instances of the <strong>rules of inference</strong>. The rules are the <strong>introduction</strong> and <strong>elimination</strong> rules for each connective and quantifier.</p>
 <p>The propositional rules are the following, where a formula above a line is a premise and one below is the conclusion; an assumption class discharged by a rule is written in brackets.</p>
 <p>$$
-\frac{\varphi \qquad \psi}{\varphi \wedge \psi} \wedge I
+\frac{\digamma_{\mathrm{fml}} \qquad \digamma_{\mathrm{fml}}}{\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}} \wedge I
 \qquad
-\frac{\varphi \wedge \psi}{\varphi} \wedge E_1
+\frac{\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}}{\digamma_{\mathrm{fml}}} \wedge E_1
 \qquad
-\frac{\varphi \wedge \psi}{\psi} \wedge E_2
+\frac{\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}}{\digamma_{\mathrm{fml}}} \wedge E_2
 $$</p>
 <p>$$
-\frac{[\varphi]}{\psi} \quad
-\frac{}{\varphi \to \psi} \to I
+\frac{[\digamma_{\mathrm{fml}}]}{\digamma_{\mathrm{fml}}} \quad
+\frac{}{\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}} \to I
 \qquad
-\frac{\varphi \to \psi \qquad \varphi}{\psi} \to E
+\frac{\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}} \qquad \digamma_{\mathrm{fml}}}{\digamma_{\mathrm{fml}}} \to E
 $$</p>
 <p>$$
-\frac{\varphi}{\varphi \vee \psi} \vee I_1
+\frac{\digamma_{\mathrm{fml}}}{\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}} \vee I_1
 \qquad
-\frac{\psi}{\varphi \vee \psi} \vee I_2
+\frac{\digamma_{\mathrm{fml}}}{\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}} \vee I_2
 \qquad
-\frac{\varphi \vee \psi \quad [\varphi] \quad [\psi]}{\chi} \vee E
+\frac{\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}} \quad [\digamma_{\mathrm{fml}}] \quad [\digamma_{\mathrm{fml}}]}{\chi} \vee E
 $$</p>
-<p>with the side condition for $\vee E$ that the assumptions of the two minor premises other than $\varphi$ and $\psi$ remain undischarged. Negation is defined: $\neg\varphi$ abbreviates $\varphi \to \bot$, with the rules $\bot E$, whose conclusion is any formula, and the derived rule $\neg E$, from $\varphi$ and $\neg\varphi$ to $\bot$. The quantifier rules adjoin $\forall I$, from $\varphi$ to $\forall x\,\varphi$ with the <strong>eigenvariable condition</strong> that $x$ not occur free in any undischarged assumption, and $\exists E$, from $\exists x\,\varphi$ and a derivation of $\psi$ from $\varphi$ to conclude $\psi$ with the analogous condition.</p>
-<p><strong>Definition.</strong> A <strong>theory</strong> in natural deduction consists of a set of <strong>nonlogical axioms</strong>, formulas of the language taken as undischarged leaves. A formula $\varphi$ is <strong>derivable</strong> from a theory $T$, written $T \vdash \varphi$, if some derivation with conclusion $\varphi$ has all its undischarged assumptions among the nonlogical axioms and the formulas of $T$. A <strong>proof</strong> is a derivation with no undischarged assumptions.</p>
-<p><strong>Proposition (deduction theorem).</strong> $T \cup \{\varphi\} \vdash \psi$ if and only if $T \vdash \varphi \to \psi$.</p>
-<p><strong>Proof.</strong> From $T \vdash \varphi \to \psi$ and $T \cup \{\varphi\} \vdash \varphi$ one concludes $T \cup \{\varphi\} \vdash \psi$ by $\to E$. Conversely, given a derivation of $\psi$ from $T \cup \{\varphi\}$, add the assumption $\varphi$ at the leaves discharging to $\varphi$ and apply $\to I$ at the root.</p>
-<p><strong>Definition (sequent notation).</strong> The derivation tree is more compactly written as a <strong>sequent</strong> $\Gamma \vdash \varphi$, where $\Gamma$ is the multiset of undischarged assumptions and $\varphi$ the conclusion. The rules are then displayed with sequents as premises and conclusion. The derivation of the previous proposition is exactly the passage between the two notations.</p>
+<p>with the side condition for $\vee E$ that the assumptions of the two minor premises other than $\digamma_{\mathrm{fml}}$ and $\digamma_{\mathrm{fml}}$ remain undischarged. Negation is defined: $\neg\digamma_{\mathrm{fml}}$ abbreviates $\digamma_{\mathrm{fml}} \to \bot$, with the rules $\bot E$, whose conclusion is any formula, and the derived rule $\neg E$, from $\digamma_{\mathrm{fml}}$ and $\neg\digamma_{\mathrm{fml}}$ to $\bot$. The quantifier rules adjoin $\forall I$, from $\digamma_{\mathrm{fml}}$ to $\forall x\,\digamma_{\mathrm{fml}}$ with the <strong>eigenvariable condition</strong> that $x$ not occur free in any undischarged assumption, and $\exists E$, from $\exists x\,\digamma_{\mathrm{fml}}$ and a derivation of $\digamma_{\mathrm{fml}}$ from $\digamma_{\mathrm{fml}}$ to conclude $\digamma_{\mathrm{fml}}$ with the analogous condition.</p>
+<p><strong>Definition.</strong> A <strong>theory</strong> in natural deduction consists of a set of <strong>nonlogical axioms</strong>, formulas of the language taken as undischarged leaves. A formula $\digamma_{\mathrm{fml}}$ is <strong>derivable</strong> from a theory $T$, written $T \vdash \digamma_{\mathrm{fml}}$, if some derivation with conclusion $\digamma_{\mathrm{fml}}$ has all its undischarged assumptions among the nonlogical axioms and the formulas of $T$. A <strong>proof</strong> is a derivation with no undischarged assumptions.</p>
+<p><strong>Proposition (deduction theorem).</strong> $T \cup \{\digamma_{\mathrm{fml}}\} \vdash \digamma_{\mathrm{fml}}$ if and only if $T \vdash \digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$.</p>
+<p><strong>Proof.</strong> From $T \vdash \digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ and $T \cup \{\digamma_{\mathrm{fml}}\} \vdash \digamma_{\mathrm{fml}}$ one concludes $T \cup \{\digamma_{\mathrm{fml}}\} \vdash \digamma_{\mathrm{fml}}$ by $\to E$. Conversely, given a derivation of $\digamma_{\mathrm{fml}}$ from $T \cup \{\digamma_{\mathrm{fml}}\}$, add the assumption $\digamma_{\mathrm{fml}}$ at the leaves discharging to $\digamma_{\mathrm{fml}}$ and apply $\to I$ at the root.</p>
+<p><strong>Definition (sequent notation).</strong> The derivation tree is more compactly written as a <strong>sequent</strong> $\Gamma \vdash \digamma_{\mathrm{fml}}$, where $\Gamma$ is the multiset of undischarged assumptions and $\digamma_{\mathrm{fml}}$ the conclusion. The rules are then displayed with sequents as premises and conclusion. The derivation of the previous proposition is exactly the passage between the two notations.</p>
 <h3 id="intuitionistic-and-classical-logic">Intuitionistic and Classical Logic</h3>
 <p>The rules above constitute <strong>intuitionistic</strong> logic: the systems of <em>Logic and Proof</em> and <em>Formal Logic and Computability</em> without the axiom of excluded middle. Classical logic is obtained by adjoining one of the equivalent principles</p>
 <p>$$
-\varphi \vee \neg\varphi, \qquad \neg\neg\varphi \to \varphi, \qquad (\varphi \to \psi) \to \neg\varphi \vee \psi,
+\digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}, \qquad \neg\neg\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}, \qquad (\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}) \to \neg\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}},
 $$</p>
 <p>any one of which is derivable from the others in the intuitionistic system together with the rest. The rule of <strong>double-negation elimination</strong> is the official classical addition, and the resulting system is denoted NK, with the intuitionistic one NJ.</p>
-<p><strong>Example.</strong> $\varphi \vee \neg\varphi$ is not derivable in NJ. If it were, a normal derivation of it would exist by the normalisation theorem below, and a derivation of a disjunction that contains no detour must end in a $\vee I$ rule with the same conclusion; it would then be a derivation of $\varphi$ from no assumptions or a derivation of $\neg\varphi$ from no assumptions, and neither is derivable for a general $\varphi$ (a normal derivation of $\neg\varphi$ would end in $\to I$ with conclusion $\varphi \to \bot$, which requires a derivation of $\bot$ from $\varphi$, and no rule introduces $\bot$).</p>
-<p>The disjunction property illustrated by the example is proved in general for intuitionistic logic below; it fails for classical logic, since $\varphi \vee \neg\varphi$ is a theorem with neither disjunct a theorem.</p>
+<p><strong>Example.</strong> $\digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}$ is not derivable in NJ. If it were, a normal derivation of it would exist by the normalisation theorem below, and a derivation of a disjunction that contains no detour must end in a $\vee I$ rule with the same conclusion; it would then be a derivation of $\digamma_{\mathrm{fml}}$ from no assumptions or a derivation of $\neg\digamma_{\mathrm{fml}}$ from no assumptions, and neither is derivable for a general $\digamma_{\mathrm{fml}}$ (a normal derivation of $\neg\digamma_{\mathrm{fml}}$ would end in $\to I$ with conclusion $\digamma_{\mathrm{fml}} \to \bot$, which requires a derivation of $\bot$ from $\digamma_{\mathrm{fml}}$, and no rule introduces $\bot$).</p>
+<p>The disjunction property illustrated by the example is proved in general for intuitionistic logic below; it fails for classical logic, since $\digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}$ is a theorem with neither disjunct a theorem.</p>
 <p><strong>Definition.</strong> A formula is <strong>classically valid</strong> if it holds in every structure in the sense of <em>Model Theory</em>; it is <strong>intuitionistically valid</strong> if it is derivable in NJ. Soundness and completeness for NJ are stated with respect to <strong>Kripke models</strong>, and the classical completeness theorem of <em>Formal Logic and Computability</em> is the special case of a single world; the corpus cites the standard treatment for the details.</p>
 <h2 id="sequent-calculi">Sequent Calculi</h2>
 <h3 id="sequents-and-rules">Sequents and Rules</h3>
 <p>A second formulation, more symmetric than natural deduction, is Gentzen's <strong>sequent calculus</strong>.</p>
-<p><strong>Definition.</strong> A <strong>sequent</strong> is an expression $\Gamma \vdash \Delta$ in which $\Gamma$ and $\Delta$ are finite multisets of formulas. Its intended meaning is that the conjunction of $\Gamma$ implies the disjunction of $\Delta$. The <strong>sequent calculus LK</strong> has the following rules, in addition to the <strong>initial sequents</strong> $\varphi \vdash \varphi$ and $\bot \vdash$.</p>
+<p><strong>Definition.</strong> A <strong>sequent</strong> is an expression $\Gamma \vdash \Delta$ in which $\Gamma$ and $\Delta$ are finite multisets of formulas. Its intended meaning is that the conjunction of $\Gamma$ implies the disjunction of $\Delta$. The <strong>sequent calculus LK</strong> has the following rules, in addition to the <strong>initial sequents</strong> $\digamma_{\mathrm{fml}} \vdash \digamma_{\mathrm{fml}}$ and $\bot \vdash$.</p>
 <p>$$
-\frac{\Gamma \vdash \Delta, \varphi \qquad \varphi, \Pi \vdash \Lambda}{\Gamma, \Pi \vdash \Delta, \Lambda} \ \text{cut}
+\frac{\Gamma \vdash \Delta, \digamma_{\mathrm{fml}} \qquad \digamma_{\mathrm{fml}}, \Pi \vdash \Lambda}{\Gamma, \Pi \vdash \Delta, \Lambda} \ \text{cut}
 \qquad
-\frac{\Gamma \vdash \Delta, \varphi \qquad \Gamma \vdash \Delta, \psi}{\Gamma \vdash \Delta, \varphi \wedge \psi} \wedge R
+\frac{\Gamma \vdash \Delta, \digamma_{\mathrm{fml}} \qquad \Gamma \vdash \Delta, \digamma_{\mathrm{fml}}}{\Gamma \vdash \Delta, \digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}} \wedge R
 \qquad
-\frac{\varphi, \Gamma \vdash \Delta}{\varphi \wedge \psi, \Gamma \vdash \Delta} \wedge L_1
+\frac{\digamma_{\mathrm{fml}}, \Gamma \vdash \Delta}{\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}, \Gamma \vdash \Delta} \wedge L_1
 $$</p>
 <p>$$
-\frac{\varphi, \Gamma \vdash \Delta, \psi}{\Gamma \vdash \Delta, \varphi \to \psi} \to R
+\frac{\digamma_{\mathrm{fml}}, \Gamma \vdash \Delta, \digamma_{\mathrm{fml}}}{\Gamma \vdash \Delta, \digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}} \to R
 \qquad
-\frac{\Gamma \vdash \Delta, \varphi \qquad \psi, \Pi \vdash \Lambda}{\varphi \to \psi, \Gamma, \Pi \vdash \Delta, \Lambda} \to L
+\frac{\Gamma \vdash \Delta, \digamma_{\mathrm{fml}} \qquad \digamma_{\mathrm{fml}}, \Pi \vdash \Lambda}{\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}, \Gamma, \Pi \vdash \Delta, \Lambda} \to L
 $$</p>
 <p>$$
-\frac{\varphi, \Gamma \vdash \Delta \qquad \psi, \Gamma \vdash \Delta}{\varphi \vee \psi, \Gamma \vdash \Delta} \vee L
+\frac{\digamma_{\mathrm{fml}}, \Gamma \vdash \Delta \qquad \digamma_{\mathrm{fml}}, \Gamma \vdash \Delta}{\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}, \Gamma \vdash \Delta} \vee L
 \qquad
-\frac{\Gamma \vdash \Delta, \varphi}{\Gamma \vdash \Delta, \varphi \vee \psi} \vee R_1
+\frac{\Gamma \vdash \Delta, \digamma_{\mathrm{fml}}}{\Gamma \vdash \Delta, \digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}} \vee R_1
 \qquad
-\frac{\Gamma \vdash \Delta, \varphi(x)}{\Gamma \vdash \Delta, \forall x\,\varphi(x)} \forall R
+\frac{\Gamma \vdash \Delta, \digamma_{\mathrm{fml}}(x)}{\Gamma \vdash \Delta, \forall x\,\digamma_{\mathrm{fml}}(x)} \forall R
 $$</p>
 <p>with the remaining rules for $\neg$, $\forall L$, the two $\exists$ rules and the <strong>structural rules</strong> of weakening and contraction. The system <strong>LJ</strong> for intuitionistic logic restricts $\Delta$ to at most one formula, and the restriction is what excludes the classical derivations of excluded middle.</p>
 <p><strong>Example.</strong> The law of excluded middle has the following LK derivation, read from the initial sequent at the top downwards:</p>
 <p>$$
-\frac{\varphi \vdash \varphi}{\vdash \varphi, \neg\varphi} \neg R
+\frac{\digamma_{\mathrm{fml}} \vdash \digamma_{\mathrm{fml}}}{\vdash \digamma_{\mathrm{fml}}, \neg\digamma_{\mathrm{fml}}} \neg R
 \quad \longrightarrow \quad
-\frac{\vdash \varphi, \neg\varphi}{\vdash \varphi \vee \neg\varphi, \neg\varphi} \vee R_1
+\frac{\vdash \digamma_{\mathrm{fml}}, \neg\digamma_{\mathrm{fml}}}{\vdash \digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}, \neg\digamma_{\mathrm{fml}}} \vee R_1
 \quad \longrightarrow \quad
-\frac{\vdash \varphi \vee \neg\varphi, \neg\varphi}{\vdash \varphi \vee \neg\varphi, \varphi \vee \neg\varphi} \vee R_2
+\frac{\vdash \digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}, \neg\digamma_{\mathrm{fml}}}{\vdash \digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}, \digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}} \vee R_2
 \quad \longrightarrow \quad
-\frac{\vdash \varphi \vee \neg\varphi, \varphi \vee \neg\varphi}{\vdash \varphi \vee \neg\varphi} CR
+\frac{\vdash \digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}, \digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}}{\vdash \digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}} CR
 $$</p>
-<p>The final step is contraction on the right, which is available in LK; in LJ the right side holds at most one formula, so the two copies of $\varphi \vee \neg\varphi$ cannot both appear and the derivation is blocked.</p>
+<p>The final step is contraction on the right, which is available in LK; in LJ the right side holds at most one formula, so the two copies of $\digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}$ cannot both appear and the derivation is blocked.</p>
 <h3 id="cut-elimination">Cut Elimination</h3>
-<p><strong>Definition.</strong> The <strong>cut rule</strong> is the only rule of LK in which a formula, the <strong>cut formula</strong> $\varphi$, disappears in passing from the premises to the conclusion. The <strong>subformula property</strong> of a derivation is that every formula occurring in it is a subformula of the conclusion or of the initial sequents; a derivation with the cut rule need not have it.</p>
+<p><strong>Definition.</strong> The <strong>cut rule</strong> is the only rule of LK in which a formula, the <strong>cut formula</strong> $\digamma_{\mathrm{fml}}$, disappears in passing from the premises to the conclusion. The <strong>subformula property</strong> of a derivation is that every formula occurring in it is a subformula of the conclusion or of the initial sequents; a derivation with the cut rule need not have it.</p>
 <p><strong>Theorem (Gentzen's Hauptsatz; cut elimination).</strong> Every LK derivation of a sequent has a cut-free derivation of the same sequent. The same holds for LJ.</p>
 <p><strong>Proof sketch.</strong> One assigns to each derivation a <strong>cut rank</strong>, the maximum size of a cut formula, and a measure of the number of cuts of that rank, and shows that a derivation with a cut can be transformed into one with a smaller measure. The essential case is a cut whose cut formula is introduced by the last rules on both sides; it is replaced by two cuts on formulas of smaller size, using the rules that introduced the connectives. The transformation is the <strong>reduction</strong> of the cut, and iterating it terminates by induction on the cut rank, with the number of cuts of maximal rank decreasing at each step.</p>
 <p><strong>Corollary (subformula property).</strong> Every theorem of LK or LJ has a derivation in which every formula is a subformula of the theorem.</p>
 <p><strong>Corollary (consistency).</strong> LK is consistent: the sequent $\vdash$ (the empty sequent, expressing a contradiction) has no cut-free derivation, since no rule has the empty sequent as conclusion and the initial sequents have formulas on at least one side.</p>
-<p><strong>Corollary (disjunction and existence properties of LJ).</strong> If $\vdash \varphi \vee \psi$ is derivable in LJ, then $\vdash \varphi$ or $\vdash \psi$; if $\vdash \exists x\,\varphi(x)$ is derivable, then $\vdash \varphi(t)$ is derivable for some term $t$.</p>
-<p><strong>Proof sketch.</strong> In a cut-free derivation of $\vdash \varphi \vee \psi$, the last rule must be the introduction of the disjunction, since no other rule can introduce a disjunction on the right without a cut; its premise is a derivation of one of the disjuncts. For the existential statement, the last rule must be $\exists R$, and its premise supplies a witness term.</p>
+<p><strong>Corollary (disjunction and existence properties of LJ).</strong> If $\vdash \digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}$ is derivable in LJ, then $\vdash \digamma_{\mathrm{fml}}$ or $\vdash \digamma_{\mathrm{fml}}$; if $\vdash \exists x\,\digamma_{\mathrm{fml}}(x)$ is derivable, then $\vdash \digamma_{\mathrm{fml}}(t)$ is derivable for some term $t$.</p>
+<p><strong>Proof sketch.</strong> In a cut-free derivation of $\vdash \digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}$, the last rule must be the introduction of the disjunction, since no other rule can introduce a disjunction on the right without a cut; its premise is a derivation of one of the disjuncts. For the existential statement, the last rule must be $\exists R$, and its premise supplies a witness term.</p>
 <p>Cut elimination is the central theorem of proof theory and the model of every later result of the same shape: it converts a derivation into one whose structure follows the structure of its conclusion, and the byproducts — the subformula property, consistency, the disjunction property — are all immediate from that structure.</p>
 <p><strong>Remark (consistency of arithmetic).</strong> For a system with the induction schema, cut elimination does not suffice, because the axiom of induction is not a rule of the calculus and the cut-elimination argument applies only to the logical rules. Gentzen's consistency proof for arithmetic uses cut elimination on an infinitary version of the calculus together with transfinite induction up to the ordinal $\varepsilon_0 = \sup\{\omega, \omega^\omega, \omega^{\omega^\omega}, \ldots\}$, and the ordinal is the <strong>proof-theoretic ordinal</strong> of the theory. That the well-foundedness of $\varepsilon_0$ is itself unprovable in arithmetic is the content of Gödel's second incompleteness theorem of <em>Formal Logic and Computability</em> applied to Gentzen's proof.</p>
 <h2 id="normalisation">Normalisation</h2>
 <h3 id="normalisation-for-natural-deduction">Normalisation for Natural Deduction</h3>
-<p><strong>Definition.</strong> In a natural-deduction derivation, an <strong>introduction followed immediately by an elimination</strong> of the same connective is a <strong>detour</strong> (or <strong>redex</strong>), for instance a derivation of $\varphi \wedge \psi$ by $\wedge I$ used as the premise of $\wedge E_1$, or a derivation of $\varphi \to \psi$ by $\to I$ used as the premise of $\to E$. The <strong>reduction</strong> of a detour replaces it by a derivation of the same conclusion without it.</p>
+<p><strong>Definition.</strong> In a natural-deduction derivation, an <strong>introduction followed immediately by an elimination</strong> of the same connective is a <strong>detour</strong> (or <strong>redex</strong>), for instance a derivation of $\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}$ by $\wedge I$ used as the premise of $\wedge E_1$, or a derivation of $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ by $\to I$ used as the premise of $\to E$. The <strong>reduction</strong> of a detour replaces it by a derivation of the same conclusion without it.</p>
 <p><strong>Theorem (normalisation).</strong> Every derivation in NJ reduces to a <strong>normal</strong> derivation, in which no detour occurs. Consequently every derivation in NJ reduces to one with the <strong>subformula property</strong>: every formula in it is a subformula of the conclusion or of an undischarged assumption.</p>
 <p><strong>Proof sketch.</strong> Assign to each formula its <strong>degree</strong> and to each derivation the pair (highest degree of a detour, number of detours of that degree). The reduction of a detour of maximal degree produces detours of strictly smaller degree or fewer detours of the same degree, so the pair decreases in the lexicographic order on natural numbers, and the process terminates. The result is a normal derivation. In a normal derivation, an introduction rule cannot be followed by an elimination of the same connective, which forces the derivation to have the <strong>path property</strong>: every formula on a path from a leaf to the root is a subformula of the leaf or of the conclusion, giving the subformula property.</p>
 <p><strong>Corollary.</strong> NJ is consistent: there is no derivation of $\bot$ from no assumptions. Indeed, $\bot$ has no introduction rule, so a normal derivation of $\bot$ must end in an elimination rule; its major premise is then a formula which, by normality, is the conclusion of an introduction rule, and the two form a detour, unless the major premise is an undischarged assumption — and there is none. Hence no derivation of $\bot$ from no assumptions exists.</p>
@@ -206,27 +206,27 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Formula $\varphi$</td>
+<td>Formula $\digamma_{\mathrm{fml}}$</td>
 <td>Type $A$</td>
 </tr>
 <tr>
-<td>Derivation of $\varphi$ from assumptions</td>
+<td>Derivation of $\digamma_{\mathrm{fml}}$ from assumptions</td>
 <td>Term $M$ of type $A$ in context</td>
 </tr>
 <tr>
-<td>Assumption $\varphi$</td>
+<td>Assumption $\digamma_{\mathrm{fml}}$</td>
 <td>Variable $x : A$</td>
 </tr>
 <tr>
-<td>$\varphi \to \psi$</td>
+<td>$\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$</td>
 <td>Function type $A \to B$</td>
 </tr>
 <tr>
-<td>$\varphi \wedge \psi$</td>
+<td>$\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}$</td>
 <td>Product type $A \times B$</td>
 </tr>
 <tr>
-<td>$\varphi \vee \psi$</td>
+<td>$\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}$</td>
 <td>Sum type $A + B$</td>
 </tr>
 <tr>
@@ -238,20 +238,20 @@ $$</p>
 <td>Unit type $\mathbf{1}$</td>
 </tr>
 <tr>
-<td>$\forall x\,\varphi$</td>
+<td>$\forall x\,\digamma_{\mathrm{fml}}$</td>
 <td>Dependent function type $\Pi x : A.\,B(x)$</td>
 </tr>
 <tr>
-<td>$\exists x\,\varphi$</td>
+<td>$\exists x\,\digamma_{\mathrm{fml}}$</td>
 <td>Dependent sum type $\Sigma x : A.\,B(x)$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Theorem (Curry–Howard, for implication).</strong> The derivations of the implicational fragment of intuitionistic propositional logic from assumptions $\varphi_1,\ldots,\varphi_n$ correspond exactly to the terms of the simply typed lambda calculus in context $x_1 : \varphi_1, \ldots, x_n : \varphi_n$, with</p>
+<p><strong>Theorem (Curry–Howard, for implication).</strong> The derivations of the implicational fragment of intuitionistic propositional logic from assumptions $\digamma_{\mathrm{fml},1},\ldots,\digamma_{\mathrm{fml},n}$ correspond exactly to the terms of the simply typed lambda calculus in context $x_1 : \digamma_{\mathrm{fml},1}, \ldots, x_n : \digamma_{\mathrm{fml},n}$, with</p>
 <p>$$
-\boxed{\;\frac{\Gamma, x : \varphi \vdash M : \psi}{\Gamma \vdash \lambda x.\,M : \varphi \to \psi} \to I
+\boxed{\;\frac{\Gamma, x : \digamma_{\mathrm{fml}} \vdash M : \digamma_{\mathrm{fml}}}{\Gamma \vdash \lambda x.\,M : \digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}} \to I
 \qquad
-\frac{\Gamma \vdash M : \varphi \to \psi \qquad \Gamma \vdash N : \varphi}{\Gamma \vdash M\,N : \psi} \to E\;},
+\frac{\Gamma \vdash M : \digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}} \qquad \Gamma \vdash N : \digamma_{\mathrm{fml}}}{\Gamma \vdash M\,N : \digamma_{\mathrm{fml}}} \to E\;},
 $$</p>
 <p>and $\beta$-reduction of terms corresponds to the reduction of detours in the derivation, while $\eta$-conversion corresponds to the two-way equivalence of a detour with the derivation obtained by removing it.</p>
 <p><strong>Proof.</strong> Structural induction on derivations and on terms: each rule of NJ corresponds to a typing rule, and each typing rule to a rule of NJ, with the variables of the context corresponding to undischarged assumptions. The reduction of a detour $(\to I)$ followed by $(\to E)$ is exactly the substitution $(\lambda x.M)N \to_\beta M[x:=N]$.</p>
@@ -273,7 +273,7 @@ $$</p>
 <p><strong>Definition.</strong> <strong>Martin-Löf type theory</strong> is a dependent type theory with $\Pi$, $\Sigma$, a type of natural numbers, and <strong>identity types</strong> $\mathrm{Id}_A(a,b)$, whose elements are witnesses that $a$ and $b$ are equal. Its <strong>propositions-as-types</strong> reading strengthens the Curry–Howard correspondence: a proposition is a type, a proof is an element, and the equality of two proofs is itself a type. The identity types are the origin of <strong>homotopy type theory</strong>, in which a type is read as a space and its identity types as path spaces; that reading requires the topological language of Part II and is not developed here.</p>
 <p><strong>Remark.</strong> The correspondence between proofs and terms means that a <strong>proof assistant</strong> is a type checker: a formal proof is a term whose type is the theorem, and the correctness of the proof is the correctness of the typing derivation. The strong normalisation of the underlying type theory is what guarantees that a checked proof cannot be circular, and the impossibility of typing the fixed-point combinator is what forbids a proof from referring to itself. The corpus returns to these systems, where the categorical semantics of the typed calculi — the interpretation of types as objects and terms as morphisms — is available.</p>
 <h2 id="summary">Summary</h2>
-<p>Natural deduction is a calculus of introduction and elimination rules for each connective and quantifier, with assumptions discharged by the introduction rules and with the deduction theorem relating entailment and implication. The intuitionistic system NJ omits the law of excluded middle, and $\varphi \vee \neg\varphi$ is not derivable in it; classical logic NK is obtained by adding the rule of double-negation elimination. The sequent calculus LK is the symmetric formulation, with initial sequents and structural rules, and LJ is its intuitionistic restriction.</p>
+<p>Natural deduction is a calculus of introduction and elimination rules for each connective and quantifier, with assumptions discharged by the introduction rules and with the deduction theorem relating entailment and implication. The intuitionistic system NJ omits the law of excluded middle, and $\digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}$ is not derivable in it; classical logic NK is obtained by adding the rule of double-negation elimination. The sequent calculus LK is the symmetric formulation, with initial sequents and structural rules, and LJ is its intuitionistic restriction.</p>
 <p>Gentzen's cut-elimination theorem removes the cut rule from every derivation, yielding the subformula property, the consistency of the logical systems, and the disjunction and existence properties of LJ. The normalisation theorem for natural deduction is the same result in a different shape, removing detours from a derivation; the consistency of arithmetic requires the stronger method of ordinal analysis, with proof-theoretic ordinal $\varepsilon_0$.</p>
 <p>The lambda calculus has variables, application and abstraction, with $\beta$- and $\eta$-reduction; it is confluent by the Church–Rosser theorem and computationally universal, and the fixed-point combinator $Y$ gives every term a fixed point and produces terms such as $\Omega$ with no normal form, so the calculus is undecidable. The simply typed lambda calculus and its extensions are strongly normalising; the definable functions are the extended polynomials for $\lambda_\to$ and the provably total functions of second-order arithmetic for System F.</p>
 <p>The Curry–Howard correspondence identifies propositions with types, derivations with terms, and the reduction of detours with $\beta$-reduction; product, sum, empty and unit types realise conjunction, disjunction, falsity and truth, and dependent types realise the quantifiers. Martin-Löf type theory adds identity types and gives the propositions-as-types reading its strongest form, and the lambda cube arranges the typed systems by what depends on what. The categorical semantics of these calculi belongs to <em>Universal Properties and Categories</em>.</p>
@@ -287,15 +287,15 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\Gamma \vdash \varphi$</td>
-<td>Sequent: $\varphi$ derivable from the assumptions $\Gamma$</td>
+<td>$\Gamma \vdash \digamma_{\mathrm{fml}}$</td>
+<td>Sequent: $\digamma_{\mathrm{fml}}$ derivable from the assumptions $\Gamma$</td>
 </tr>
 <tr>
-<td>$\varphi \to \psi$, $\varphi \wedge \psi$, $\varphi \vee \psi$, $\neg\varphi$, $\bot$, $\top$</td>
+<td>$\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$, $\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}$, $\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}$, $\neg\digamma_{\mathrm{fml}}$, $\bot$, $\top$</td>
 <td>Connectives; falsity and truth</td>
 </tr>
 <tr>
-<td>$\forall x\,\varphi$, $\exists x\,\varphi$</td>
+<td>$\forall x\,\digamma_{\mathrm{fml}}$, $\exists x\,\digamma_{\mathrm{fml}}$</td>
 <td>Quantifiers</td>
 </tr>
 <tr>

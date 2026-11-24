@@ -79,21 +79,21 @@
 </ul>
 <p><strong>Why the general form is worth separating.</strong> A one-loop correction is a statement about a determinant, not about a force. Written with a sector attached, it reads as if the sector's field content were part of the mechanism; written without one, the coefficient below is visibly a sum over whatever happens to circulate, and a reader can see which part of the answer is dynamics and which is bookkeeping.</p>
 <h2 id="the-constant-field-reduction">The Constant-Field Reduction</h2>
-<p>The effective action $\Gamma[\phi]$ is the Legendre transform of the connected generating functional. When the argument is a constant classical field, every derivative term vanishes and</p>
+<p>The effective action $\Gamma[\xi_{\mathrm{pot}}]$ is the Legendre transform of the connected generating functional. When the argument is a constant classical field, every derivative term vanishes and</p>
 <p>$$
-\Gamma[\phi_{\mathrm c}] = -\int d^4x\ \mathcal{V}_{\mathrm{eff}}(\phi_{\mathrm c}),
+\Gamma[\xi_{\mathrm{pot},\mathrm c}] = -\int d^4x\ \mathcal{V}_{\mathrm{eff}}(\xi_{\mathrm{pot},\mathrm c}),
 $$</p>
 <p>so the effective potential is a function of the field value alone. The tree value is the potential of the Lagrangian,</p>
 <p>$$
-\mathcal{V}_{\mathrm{tree}}(\phi_{\mathrm c}) = V(\phi_{\mathrm c}).
+\mathcal{V}_{\mathrm{tree}}(\xi_{\mathrm{pot},\mathrm c}) = V(\xi_{\mathrm{pot},\mathrm c}).
 $$</p>
 <p><strong>The one-loop term.</strong> Expanding the action about the constant background and keeping the quadratic part, the fluctuation integral is Gaussian and gives</p>
 <p>$$
-\mathcal{V}_{1\text{-loop}} = \frac{1}{2}\,\mathrm{Tr}\ln\!\left(\frac{\delta^2 S}{\delta\phi^2}\Big|_{\phi_{\mathrm c}}\right),
+\mathcal{V}_{1\text{-loop}} = \frac{1}{2}\,\mathrm{Tr}\ln\!\left(\frac{\delta^2 S}{\delta\xi_{\mathrm{pot}}^2}\Big|_{\xi_{\mathrm{pot},\mathrm c}}\right),
 $$</p>
-<p>a trace over the fluctuation operator, evaluated with a regulator. For a field of mass $m^2(\phi_{\mathrm c})$ in four dimensions the regulated trace reduces to</p>
+<p>a trace over the fluctuation operator, evaluated with a regulator. For a field of mass $m^2(\xi_{\mathrm{pot},\mathrm c})$ in four dimensions the regulated trace reduces to</p>
 <p>$$
-\mathcal{V}_{1\text{-loop}} = \frac{m^4(\phi_{\mathrm c})}{64\pi^2}\left(\ln\frac{m^2(\phi_{\mathrm c})}{\mu^2} - \frac32\right),
+\mathcal{V}_{1\text{-loop}} = \frac{m^4(\xi_{\mathrm{pot},\mathrm c})}{64\pi^2}\left(\ln\frac{m^2(\xi_{\mathrm{pot},\mathrm c})}{\mu^2} - \frac32\right),
 $$</p>
 <p>so the correction is fixed by the <strong>fourth power</strong> of the fluctuation mass and by the logarithm of its ratio to the renormalisation scale. The sign is positive for a bosonic loop and negative for a fermionic one; the counting of degrees of freedom enters only through the multiplicity of each mass.</p>
 <p><strong>The coefficient.</strong> When several fields circulate, the one-loop term is the sum of their contributions, and the coefficient of $\rho^2\ln\rho$ collects the fourth powers:</p>
@@ -133,7 +133,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\Gamma[\phi]$</td>
+<td>$\Gamma[\xi_{\mathrm{pot}}]$</td>
 <td>the effective action</td>
 </tr>
 <tr>
@@ -145,7 +145,7 @@ $$</p>
 <td>its classical value</td>
 </tr>
 <tr>
-<td>$m^2(\phi_{\mathrm c})$</td>
+<td>$m^2(\xi_{\mathrm{pot},\mathrm c})$</td>
 <td>the fluctuation mass at the constant background</td>
 </tr>
 <tr>

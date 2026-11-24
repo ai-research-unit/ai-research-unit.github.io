@@ -105,9 +105,9 @@ $$</p>
 <p><strong>Proof sketch.</strong> If $\sigma(A)=A$ then $\sigma(F(A)) = F(\sigma(A)) = F(A)$ by the commutation, so $F$ preserves $\operatorname{Fix}\Sigma$; the fixed set is closed in the complete $\mathcal{K}(X)$, hence complete, and the contraction of <em>The Hutchinson Operator and Its Adjoint</em> restricts to it; the Banach theorem gives the unique fixed point in $\operatorname{Fix}\Sigma$, and it is $K$ because $K \in \operatorname{Fix}\Sigma$ by the previous theorem. The statement is the operator form of the symmetry: the symmetric attractor is the fixed point of the operator not only of $F$ but of the restricted operator on the symmetric compact sets, and the two characterisations agree.</p>
 <p><strong>Example (the symmetric Cantor set, on the operator level).</strong> For $f_1(x)=x/3$, $f_2(x)=x/3+2/3$ and $\sigma(x)=1-x$ on $[0,1]$, the induced involution sends a compact set $A$ to $\{1-a : a \in A\}$ and the Hutchinson operator satisfies $F\circ\Sigma=\Sigma\circ F$. The iteration of $F$ from $[0,1]$ gives the approximants $C_n$, each of which is symmetric, and the limit $C$ is symmetric; the fixed set $\operatorname{Fix}\Sigma$ contains the whole sequence $C_n$ and the limit, so the restricted contraction has the same orbit and the same fixed point. The reader sees that the symmetry of the attractor is not an accident of the example but the commutation of the two operators.</p>
 <h2 id="the-adjoint-action-on-the-measures-and-the-symmetric-measure">The Adjoint Action on the Measures and the Symmetric Measure</h2>
-<p><strong>Definition.</strong> The <strong>Koopman operator</strong> of the involution acts on the functions by $U_\sigma\varphi = \varphi\circ\sigma$; it is an involutive isometry of the bounded continuous functions in the supremum norm, and a unitary involution of $L^2(\mu)$ when $\mu$ is invariant. Its <strong>adjoint</strong> acts on the measures by the pushforward,</p>
+<p><strong>Definition.</strong> The <strong>Koopman operator</strong> of the involution acts on the functions by $U_\sigma\digamma_{\mathrm{map}} = \digamma_{\mathrm{map}}\circ\sigma$; it is an involutive isometry of the bounded continuous functions in the supremum norm, and a unitary involution of $L^2(\mu)$ when $\mu$ is invariant. Its <strong>adjoint</strong> acts on the measures by the pushforward,</p>
 <p>$$
-\sigma_\# \mu = \mu \circ \sigma^{-1} = \mu\circ\sigma , \qquad \int \varphi\, d(\sigma_\#\mu) = \int (\varphi\circ\sigma)\, d\mu ,
+\sigma_\# \mu = \mu \circ \sigma^{-1} = \mu\circ\sigma , \qquad \int \digamma_{\mathrm{map}}\, d(\sigma_\#\mu) = \int (\digamma_{\mathrm{map}}\circ\sigma)\, d\mu ,
 $$</p>
 <p>and $\sigma_\#$ is again an involution of the probability measures, and an isometry for the Wasserstein metric because $\sigma$ is an isometry.</p>
 <p><strong>Theorem (the symmetric self-similar measure).</strong> Let the weights satisfy $p_i = p_{\tau(i)}$ for every $i$. Then the pushforward operator $L$ of the self-similar system commutes with the involution,</p>
@@ -142,7 +142,7 @@ $$</p>
 </tr>
 <tr>
 <td>$U_\sigma$</td>
-<td>Koopman operator $U_\sigma\varphi=\varphi\circ\sigma$; unitary involution of the functions</td>
+<td>Koopman operator $U_\sigma\digamma_{\mathrm{map}}=\digamma_{\mathrm{map}}\circ\sigma$; unitary involution of the functions</td>
 </tr>
 <tr>
 <td>$\sigma_\#$</td>

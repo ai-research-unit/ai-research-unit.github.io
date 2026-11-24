@@ -84,16 +84,16 @@ $$</p>
 <p><strong>Proposition.</strong> The map $\exp$ is smooth, $\exp(0) = e$, and for every $X$ the curve $t \mapsto \exp(tX)$ is the one-parameter subgroup with derivative $X$ at $0$; the differential of $\exp$ at the origin, $d_0\exp : \mathrm{G} \to T_eG = \mathrm{G}$, is the identity of $\mathrm{G}$.</p>
 <p><em>Proof.</em> The flow of a smooth vector field is smooth in the time and the initial condition, and $\exp(tX)$ is the integral curve, so its derivative at $0$ is $X$; the differential at the origin is therefore $X \mapsto X$.</p>
 <h3 id="naturality">Naturality</h3>
-<p><strong>Theorem (the exponential is natural in the group).</strong> For a homomorphism of Lie groups $\varphi : G \to H$ with differential $\varphi_* : \mathrm{G} \to \mathrm{H}$ at the identity, the diagram</p>
+<p><strong>Theorem (the exponential is natural in the group).</strong> For a homomorphism of Lie groups $\digamma_{\mathrm{map}} : G \to H$ with differential $\digamma_{\mathrm{map},*} : \mathrm{G} \to \mathrm{H}$ at the identity, the diagram</p>
 <p>$$
 \begin{array}{ccc}
-\mathrm{G} &amp; \xrightarrow{\varphi_*} &amp; \mathrm{H}\\
+\mathrm{G} &amp; \xrightarrow{\digamma_{\mathrm{map},*}} &amp; \mathrm{H}\\
 \big\downarrow\scriptstyle{\exp} &amp; &amp; \big\downarrow\scriptstyle{\exp}\\
-G &amp; \xrightarrow{\varphi} &amp; H
+G &amp; \xrightarrow{\digamma_{\mathrm{map}}} &amp; H
 \end{array}
 $$</p>
-<p>commutes: $\exp(\varphi_*X) = \varphi(\exp X)$ for every $X \in \mathrm{G}$. In particular the exponential commutes with the inner automorphisms, $\exp(\operatorname{Ad}_gX) = g(\exp X)g^{-1}$, with the adjoint representation of the group.</p>
-<p><em>Proof.</em> The curve $t \mapsto \varphi(\exp tX)$ is a one-parameter subgroup of $H$ with derivative $\varphi_*X$ at $0$, and the one-parameter subgroup is unique; the inner automorphism statement is the special case $\varphi = \Psi_g$.</p>
+<p>commutes: $\exp(\digamma_{\mathrm{map},*}X) = \digamma_{\mathrm{map}}(\exp X)$ for every $X \in \mathrm{G}$. In particular the exponential commutes with the inner automorphisms, $\exp(\operatorname{Ad}_gX) = g(\exp X)g^{-1}$, with the adjoint representation of the group.</p>
+<p><em>Proof.</em> The curve $t \mapsto \digamma_{\mathrm{map}}(\exp tX)$ is a one-parameter subgroup of $H$ with derivative $\digamma_{\mathrm{map},*}X$ at $0$, and the one-parameter subgroup is unique; the inner automorphism statement is the special case $\digamma_{\mathrm{map}} = \Psi_g$.</p>
 <h2 id="the-differential-and-the-correction">The Differential and the Correction</h2>
 <h3 id="the-differential-of-the-exponential">The Differential of the Exponential</h3>
 <p><strong>Theorem (the differential in the left trivialisation).</strong> Identify the tangent space $T_X\mathrm{G}$ with $\mathrm{G}$ by the left translation $dL_{\exp X}$, so that $d\exp_X$ becomes a linear operator on $\mathrm{G}$. Then</p>
@@ -175,7 +175,7 @@ $$</p>
 <td>the adjoint representation of the group</td>
 </tr>
 <tr>
-<td>$\exp(\varphi_*X) = \varphi(\exp X)$</td>
+<td>$\exp(\digamma_{\mathrm{map},*}X) = \digamma_{\mathrm{map}}(\exp X)$</td>
 <td>naturality of the exponential</td>
 </tr>
 <tr>

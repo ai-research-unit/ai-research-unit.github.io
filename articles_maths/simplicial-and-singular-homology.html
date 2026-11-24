@@ -132,7 +132,7 @@ $$</p>
 <h3 id="functoriality">Functoriality</h3>
 <p><strong>Theorem.</strong> A continuous map $f : X \to Y$ induces a chain map $f_\# : C_*(X;R) \to C_*(Y;R)$ by $f_\#(\sigma) = f \circ \sigma$, and hence homomorphisms $f_* : H_n(X;R) \to H_n(Y;R)$. The assignments satisfy $(g \circ f)_* = g_* f_*$ and $(\mathrm{id}_X)_* = \mathrm{id}$, so $H_n(-;R)$ is a functor from topological spaces to $R$-modules.</p>
 <p><em>Proof.</em> The chain map property is $f_\# \partial(\sigma) = \sum_i (-1)^i f \sigma \delta^i = \partial f_\#(\sigma)$, an identity of maps; a chain map induces a map on homology because it carries cycles to cycles and boundaries to boundaries. The functorial identities are immediate from associativity of composition.</p>
-<p><strong>Definition.</strong> A <strong>chain homotopy</strong> between chain maps $\varphi, \psi : C_* \to D_*$ is a family of maps $P_n : C_n \to D_{n+1}$ with $\psi_n - \varphi_n = \partial^D_{n+1} P_n + P_{n-1}\partial^C_n$. Chain-homotopic chain maps induce the same map on homology, since $P$ carries cycles to boundaries.</p>
+<p><strong>Definition.</strong> A <strong>chain homotopy</strong> between chain maps $\digamma_{\mathrm{map}}, Ξ_{\mathrm{wfn}} : C_* \to D_*$ is a family of maps $P_n : C_n \to D_{n+1}$ with $Ξ_{\mathrm{wfn},n} - \digamma_{\mathrm{map},n} = \partial^D_{n+1} P_n + P_{n-1}\partial^C_n$. Chain-homotopic chain maps induce the same map on homology, since $P$ carries cycles to boundaries.</p>
 <p><strong>Theorem (homotopy invariance).</strong> If $f, g : X \to Y$ are homotopic then the induced chain maps are chain homotopic, so $f_* = g_*$; consequently a homotopy equivalence induces an isomorphism on homology.</p>
 <p><em>Proof.</em> Let $F : X \times I \to Y$ be the homotopy. For a singular $n$-simplex $\sigma$, the maps $\Delta_n \to X \times I$, $x \mapsto (\sigma(x), 0)$ and $x \mapsto (\sigma(x),1)$, and the prism $\Delta_n \times I$ is triangulated into $(n+1)$-simplices; the standard subdivision determines $P_n(\sigma)$ as the alternating sum of the restrictions of $F \circ (\sigma \times \mathrm{id})$, and the identity $\partial P + P \partial = g_\# - f_\#$ is checked simplex by simplex.</p>
 <p><strong>Remark.</strong> Homotopy invariance is what makes homology an invariant of the homotopy type, as the fundamental group is; the two are related by the Hurewicz theorem.</p>
@@ -249,7 +249,7 @@ $$</p>
 </tr>
 <tr>
 <td>$P_n$, chain homotopy</td>
-<td>$\psi-\varphi = \partial P + P\partial$; homotopic maps induce equal maps on homology</td>
+<td>$Ξ_{\mathrm{wfn}}-\digamma_{\mathrm{map}} = \partial P + P\partial$; homotopic maps induce equal maps on homology</td>
 </tr>
 <tr>
 <td>$\partial : H_n(X,A) \to H_{n-1}(A)$</td>

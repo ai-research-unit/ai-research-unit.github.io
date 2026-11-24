@@ -129,7 +129,7 @@ Consequently, if $X\notin\mathcal{O}$ then every exact factorization has a basis
 <p><strong>Remark (rank against dimension).</strong> The rank is the inner dimension of the cone factorization, and the constraint set is a product of cones and not a linear space, so the rank is not the algebraic rank and is not additive; it is the reduced biquaternion analogue of the non-negative rank of the real theory, and the same three faces appear — the trivial bound, the structured case, and the combinatorial character of the exactness. The reduced biquaternion algebraic rank, by contrast, is the pair of complex ranks of the two idempotent components, since the algebra is the direct product $\mathbb{C}\oplus\mathbb{C}$.</p>
 <h2 id="the-coefficient-reduction">The Coefficient Reduction</h2>
 <p><strong>Under the isomorphism with $\mathbb{C}\oplus\mathbb{C}$ the objective becomes half the sum of two complex Frobenius norms, but the constraints remain coupled through the four real component matrices.</strong></p>
-<p><strong>Theorem (the product in the two idempotent components).</strong> Let $W^{\pm}=W_0\pm W_2+i(W_1\pm W_3)$ and let $H^{\pm}=H_0\pm H_2$, so that $W^{\pm}$ are the two complex matrices $\varphi_\pm(W)$ and $H^{\pm}$ are the two real matrices $\varphi_\pm(H)$. Then
+<p><strong>Theorem (the product in the two idempotent components).</strong> Let $W^{\pm}=W_0\pm W_2+i(W_1\pm W_3)$ and let $H^{\pm}=H_0\pm H_2$, so that $W^{\pm}$ are the two complex matrices $\digamma_{\mathrm{map},\pm}(W)$ and $H^{\pm}$ are the two real matrices $\digamma_{\mathrm{map},\pm}(H)$. Then
 $$
 \boxed{\;
 (WH)^{\pm}=W^{\pm}H^{\pm}
@@ -139,7 +139,7 @@ and the objective satisfies
 $$
 \tfrac12\langle X-WH\rangle_*=\tfrac14\langle X^{+}-W^{+}H^{+}\rangle_*+\tfrac14\langle X^{-}-W^{-}H^{-}\rangle_*.
 $$</p>
-<p><em>Proof.</em> The map $\varphi$ is an isomorphism of algebras onto $\mathbb{C}\oplus\mathbb{C}$, so $\varphi(WH)=\varphi(W)\varphi(H)$ and the two components multiply separately; that is the first identity. For the second, the Frobenius norm of a matrix satisfies $\langle M\rangle_*=\sum_{p,q}K(m_{pq})$, and $K=\tfrac12(K^{+}+K^{-})$ with $K^{\pm}(z)=|z|^{2}$ on the two complex components, $K^{+}(z)=|z_1|^{2}$ and $K^{-}(z)=|z_2|^{2}$ for $z=(z_1,z_2)$; summing gives the displayed decomposition. The reduction of a matrix equation to two complex equations is that of <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>.</p>
+<p><em>Proof.</em> The map $\digamma_{\mathrm{map}}$ is an isomorphism of algebras onto $\mathbb{C}\oplus\mathbb{C}$, so $\digamma_{\mathrm{map}}(WH)=\digamma_{\mathrm{map}}(W)\digamma_{\mathrm{map}}(H)$ and the two components multiply separately; that is the first identity. For the second, the Frobenius norm of a matrix satisfies $\langle M\rangle_*=\sum_{p,q}K(m_{pq})$, and $K=\tfrac12(K^{+}+K^{-})$ with $K^{\pm}(z)=|z|^{2}$ on the two complex components, $K^{+}(z)=|z_1|^{2}$ and $K^{-}(z)=|z_2|^{2}$ for $z=(z_1,z_2)$; summing gives the displayed decomposition. The reduction of a matrix equation to two complex equations is that of <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>.</p>
 <p><strong>Theorem (the constraints in the two components).</strong> The structured cone reads, in the two components,
 $$
 \boxed{\;
@@ -245,7 +245,7 @@ and its analogue for $H$, with $\sigma\in(0,1)$. Then each line search terminate
 </tr>
 <tr>
 <td>$M^{\pm}=M_0\pm M_2+i(M_1\pm M_3)$</td>
-<td>The two idempotent components of a matrix, $\varphi_\pm(M)$</td>
+<td>The two idempotent components of a matrix, $\digamma_{\mathrm{map},\pm}(M)$</td>
 </tr>
 <tr>
 <td>$\operatorname{rank}_{+}(X)$</td>

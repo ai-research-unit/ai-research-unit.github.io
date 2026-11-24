@@ -136,17 +136,17 @@ $$</p>
 <p><strong>Proof.</strong> An involution of a complex vector space diagonalises with eigenvalues $\pm1$, and both eigenspaces are real subspaces.</p>
 <p><strong>The two splitting statements.</strong> The first kind splits the algebra into two complex subspaces of complex dimensions $10$ and $6$; the second kind splits it into two real subspaces of real dimension $16$ each. The complex decomposition $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ is the one that makes $\mathrm{GL}_4\simeq U(4)$, and the complex decomposition $M_4=\operatorname{Sym}_4\oplus\operatorname{Skew}_4$ is the one that makes the trace form diagonal.</p>
 <h2 id="the-first-kind-and-the-inner-twists">The First Kind and the Inner Twists</h2>
-<p><strong>Definition.</strong> For invertible $S$ the <strong>inner twist</strong> of the transpose is $\varphi_S(A)=SA^{\mathsf T}S^{-1}$.</p>
-<p><strong>Proposition.</strong> $\varphi_S$ is an involution exactly when $S^{\mathsf T}=\varepsilon S$ with $\varepsilon=\pm1$.</p>
-<p><strong>Proof.</strong> Compute $\varphi_S^{2}(A)=SS^{-{\mathsf T}}AS^{\mathsf T}S^{-1}$; this equals $A$ for all $A$ exactly when $S^{\mathsf T}$ is a scalar multiple of $S$, and rescaling forces the scalar to be $\pm1$.</p>
+<p><strong>Definition.</strong> For invertible $S$ the <strong>inner twist</strong> of the transpose is $\digamma_{\mathrm{map},S}(A)=SA^{\mathsf T}S^{-1}$.</p>
+<p><strong>Proposition.</strong> $\digamma_{\mathrm{map},S}$ is an involution exactly when $S^{\mathsf T}=\varepsilon S$ with $\varepsilon=\pm1$.</p>
+<p><strong>Proof.</strong> Compute $\digamma_{\mathrm{map},S}^{2}(A)=SS^{-{\mathsf T}}AS^{\mathsf T}S^{-1}$; this equals $A$ for all $A$ exactly when $S^{\mathsf T}$ is a scalar multiple of $S$, and rescaling forces the scalar to be $\pm1$.</p>
 <p><strong>Proposition.</strong> For $S$ symmetric the fixed space is $S^{-1}\operatorname{Sym}_4$, of dimension $10$; for $S$ antisymmetric the fixed space is $S^{-1}\operatorname{Skew}_4$, of dimension $6$.</p>
-<p><strong>Proof.</strong> $\varphi_S(A)=A$ reads $SA^{\mathsf T}=(SA)^{\mathsf T}$, that is $SA$ symmetric when $S$ is symmetric, and antisymmetric when $S$ is antisymmetric; multiplication by $S^{-1}$ is a linear isomorphism.</p>
+<p><strong>Proof.</strong> $\digamma_{\mathrm{map},S}(A)=A$ reads $SA^{\mathsf T}=(SA)^{\mathsf T}$, that is $SA$ symmetric when $S$ is symmetric, and antisymmetric when $S$ is antisymmetric; multiplication by $S^{-1}$ is a linear isomorphism.</p>
 <p><strong>Corollary (two similarity classes).</strong> Over $\mathbb{C}$ every $\mathbb{C}$-linear involution is a twist of $\mathsf T$ by some $S$, and up to conjugation by an invertible matrix there are exactly two: the orthogonal type, with fixed algebra of dimension $6$ isomorphic to $\mathfrak{so}(4)$, and the symplectic type, with fixed algebra of dimension $10$.</p>
-<p><strong>Proof.</strong> Conjugating $\varphi_S$ by $P$ gives $\varphi_{PSP^{\mathsf T}}$, so the class of the involution is the congruence class of $S$; over $\mathbb{C}$ all nondegenerate symmetric forms are congruent, and all nondegenerate alternating forms are congruent.</p>
+<p><strong>Proof.</strong> Conjugating $\digamma_{\mathrm{map},S}$ by $P$ gives $\digamma_{\mathrm{map},PSP^{\mathsf T}}$, so the class of the involution is the congruence class of $S$; over $\mathbb{C}$ all nondegenerate symmetric forms are congruent, and all nondegenerate alternating forms are congruent.</p>
 <p><strong>The reading through the halves.</strong> The two classes are the two halves read as fixed algebras: the orthogonal type returns $\operatorname{Skew}_4$, the symplectic type returns a conjugate of $\operatorname{Sym}_4$. The decomposition of the algebra into the two halves is therefore the same fact as the existence of two similarity classes of first-kind involutions.</p>
 <h2 id="the-second-kind-and-the-real-forms">The Second Kind and the Real Forms</h2>
-<p><strong>Definition.</strong> For invertible $S$ the <strong>twist of the dagger</strong> is $\psi_S(A)=SA^{\ast}S^{-1}$; it is an involution exactly when $S^{\ast}=\varepsilon S$.</p>
-<p><strong>Proof.</strong> $\psi_S^{2}(A)=SS^{-{\ast}}AS^{\ast}S^{-1}$, which is $A$ for all $A$ exactly when $S^{\ast}$ is a scalar multiple of $S$; rescaling gives $\pm1$.</p>
+<p><strong>Definition.</strong> For invertible $S$ the <strong>twist of the dagger</strong> is $Ξ_{\mathrm{wfn},S}(A)=SA^{\ast}S^{-1}$; it is an involution exactly when $S^{\ast}=\varepsilon S$.</p>
+<p><strong>Proof.</strong> $Ξ_{\mathrm{wfn},S}^{2}(A)=SS^{-{\ast}}AS^{\ast}S^{-1}$, which is $A$ for all $A$ exactly when $S^{\ast}$ is a scalar multiple of $S$; rescaling gives $\pm1$.</p>
 <p><strong>Proposition.</strong> With $S=\mathrm I_4$ the involution $\ast$ fixes $\operatorname{Herm}_4$ and anti-fixes $\mathfrak{u}(4)$, both of real dimension $16$.</p>
 <p><strong>Proof.</strong> This is the fourth row of the table.</p>
 <p><strong>Proposition.</strong> The automorphism $\mathsf C$ fixes $M_4(\mathbb{R})$, a real form: a real subalgebra of real dimension $16$ whose complexification is the algebra.</p>
@@ -197,7 +197,7 @@ $$</p>
 <td>the fixed and anti-fixed spaces of $\ast$</td>
 </tr>
 <tr>
-<td>$\varphi_S$, $\psi_S$</td>
+<td>$\digamma_{\mathrm{map},S}$, $Ξ_{\mathrm{wfn},S}$</td>
 <td>the inner twists of $\mathsf T$ and of $\ast$</td>
 </tr>
 <tr>

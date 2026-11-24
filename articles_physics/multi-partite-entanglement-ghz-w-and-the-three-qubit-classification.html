@@ -153,11 +153,11 @@ $$</p>
 <h2 id="the-quartic-obstruction">The Quartic Obstruction</h2>
 <p><strong>Degree two is identically zero.</strong> By the parity rule of <a href="the-duo-complex-bridge-the-three-canonical-forms-and-their-tensor-powers.html">The Duo-Complex Bridge</a>, $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$, so $\omega^{\otimes3}$ is alternating and</p>
 <p>$$
-\omega^{\otimes3}(\psi,\psi)=0\quad\text{for every }\psi\in(\mathbb{C}^2)^{\otimes3}.
+\omega^{\otimes3}(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=0\quad\text{for every }Ξ_{\mathrm{wfn}}\in(\mathbb{C}^2)^{\otimes3}.
 $$</p>
 <p>The check is exact for GHZ and for $W$ and for every random three-fold product state tested.</p>
 <p>What that forbids. Any three-qubit invariant built by applying the canonical alternating form to all three factors at once vanishes identically. There is therefore no degree-two analogue of the concurrence at three qubits, and this is a theorem about alternating forms rather than a failure to find one.</p>
-<p>What is not forbidden. The bilinear norm $B^{\otimes3}$ is a perfectly good quadratic invariant, of inertia $(4,0)$ read in its own diagonal basis; it simply does not measure three-way entanglement, exactly as $B^{\otimes2}$ did not measure two-way entanglement. A state can have $B^{\otimes3}(\psi,\psi)=0$ and be maximally three-way entangled, because the norm is isotropic on a cone.</p>
+<p>What is not forbidden. The bilinear norm $B^{\otimes3}$ is a perfectly good quadratic invariant, of inertia $(4,0)$ read in its own diagonal basis; it simply does not measure three-way entanglement, exactly as $B^{\otimes2}$ did not measure two-way entanglement. A state can have $B^{\otimes3}(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=0$ and be maximally three-way entangled, because the norm is isotropic on a cone.</p>
 <p>So the first available degree is four. An invariant that is alternating in each of three slots, tensored an even number of times, gives degree four; and an invariant that is symmetric and uses the three factors at once must also be quartic. That is why the three-qubit measures that exist — the three-tangle, the hyperdeterminant — are degree four, and it is the structural reason they look unlike the concurrence.</p>
 <p>The statement to keep. At two qubits the entanglement invariant is quadratic because two is even. At three qubits it is quartic because three is odd. The parity of the number of systems, and not the size of the Hilbert space, is what sets the degree.</p>
 <h2 id="the-hyperdeterminant">The Hyperdeterminant</h2>
@@ -182,11 +182,11 @@ $$</p>
 <h2 id="the-three-bipartitions-are-one-form-three-ways">The Three Bipartitions Are One Form, Three Ways</h2>
 <p>The construction repeated. For a three-qubit state there are three ways to cut one system from two. Each cut gives a two-qubit problem, and on each the pairing of <a href="the-duo-complex-bridge-the-three-canonical-forms-and-their-tensor-powers.html">The Duo-Complex Bridge</a> applies:</p>
 <p>$$
-C_{AB}=2\bigl\lvert\omega\otimes\omega(\psi_{AB},\psi_{AB})\bigr\rvert,\qquad
-C_{AC}=2\bigl\lvert\omega\otimes\omega(\psi_{AC},\psi_{AC})\bigr\rvert,\qquad
-C_{BC}=2\bigl\lvert\omega\otimes\omega(\psi_{BC},\psi_{BC})\bigr\rvert ,
+C_{AB}=2\bigl\lvert\omega\otimes\omega(Ξ_{\mathrm{wfn},AB},Ξ_{\mathrm{wfn},AB})\bigr\rvert,\qquad
+C_{AC}=2\bigl\lvert\omega\otimes\omega(Ξ_{\mathrm{wfn},AC},Ξ_{\mathrm{wfn},AC})\bigr\rvert,\qquad
+C_{BC}=2\bigl\lvert\omega\otimes\omega(Ξ_{\mathrm{wfn},BC},Ξ_{\mathrm{wfn},BC})\bigr\rvert ,
 $$</p>
-<p>where $\psi_{AB}$ and the others are the states read with the remaining factor absorbed, in the sense of the reduced states.</p>
+<p>where $Ξ_{\mathrm{wfn},AB}$ and the others are the states read with the remaining factor absorbed, in the sense of the reduced states.</p>
 <p>One form, three slots. The three concurrences are not three different measures; they are one measure applied to three choices of two factors. The permutation group of the three factors acts on the set of them, and for the symmetric states GHZ and $W$ it acts trivially on the values: GHZ has all three equal to zero, $W$ has all three equal to $\tfrac23$.</p>
 <p>The asymmetry of the tangle. The tangle singles out one system $A$, because $4\det\rho_A$ is defined with respect to that choice. For a pure three-qubit state the three choices give the same tangle, since the state is symmetric under the interchange of the labels in the sense that any of the three choices produces the same residual. So the quantity is defined per system but is independent of the choice, for pure states.</p>
 <p>The reading. The tangle measures the entanglement of one system with the other two, minus the part that is accounted for by its entanglement with each of them separately. That is a statement about three slots of one form, not about three different forms.</p>

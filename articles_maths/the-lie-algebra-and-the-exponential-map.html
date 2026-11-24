@@ -96,13 +96,13 @@ $$</p>
 <p><strong>Theorem.</strong> With this bracket, $\mathrm{G}$ is a Lie algebra over $\mathbb{K}$: the bracket is bilinear, alternating, and satisfies the Jacobi identity. Moreover $\mathrm{G}$ is closed under the bracket, and the bracket of left-invariant fields is left-invariant.</p>
 <p><strong>Proof.</strong> The bracket of vector fields is bilinear and alternating, so the induced bracket on $\mathrm{G}$ is too. If $X, Y$ are left-invariant, then for every $g$ the fields $X, Y$ are $L_g$-related to themselves, and the bracket of related fields is related, so $[X, Y]$ is left-invariant; this is the closure statement. The Jacobi identity for the bracket of vector fields is a computation in the algebra of derivations of the smooth functions, and it descends to $\mathrm{G}$.</p>
 <p><strong>Example.</strong> For $G = GL_n(\mathbb{K})$, an open subset of $\mathbb{K}^{n \times n}$, the tangent space at the identity is the full matrix algebra $\mathrm{GL}(n, \mathbb{K}) = \mathbb{K}^{n\times n}$, and the bracket induced from left-invariant fields is the commutator $[A, B] = AB - BA$. The identification is made explicit by the computation in the next section, where the exponential of a matrix is the exponential of the tangent vector, and the commutator of the exponentials recovers the bracket through the Campbell–Baker–Hausdorff formula.</p>
-<p><strong>Definition.</strong> A map $\varphi : G \to H$ of Lie groups is a <strong>homomorphism of Lie groups</strong> if it is smooth and a group homomorphism. Its <strong>differential</strong> at the identity is the linear map $d\varphi_e : \mathrm{G} \to \mathrm{H}$.</p>
+<p><strong>Definition.</strong> A map $\digamma_{\mathrm{map}} : G \to H$ of Lie groups is a <strong>homomorphism of Lie groups</strong> if it is smooth and a group homomorphism. Its <strong>differential</strong> at the identity is the linear map $d\digamma_{\mathrm{map},e} : \mathrm{G} \to \mathrm{H}$.</p>
 <p><strong>Theorem.</strong> The differential of a Lie group homomorphism is a homomorphism of Lie algebras:</p>
 <p>$$
-d\varphi_e([v, w]) = [d\varphi_e(v), d\varphi_e(w)].
+d\digamma_{\mathrm{map},e}([v, w]) = [d\digamma_{\mathrm{map},e}(v), d\digamma_{\mathrm{map},e}(w)].
 $$</p>
-<p><strong>Proof.</strong> A homomorphism intertwines the left translations, $\varphi \circ L_g = L_{\varphi(g)} \circ \varphi$, so it carries left-invariant fields to left-invariant fields; the induced map on vector fields preserves the bracket because it is a diffeomorphism on its image, and evaluating at the identity gives the claim.</p>
-<p><strong>Corollary.</strong> The assignment $G \mapsto \operatorname{Lie}(G) = \mathrm{G}$ and $\varphi \mapsto d\varphi_e$ is a functor from Lie groups to Lie algebras over $\mathbb{K}$.</p>
+<p><strong>Proof.</strong> A homomorphism intertwines the left translations, $\digamma_{\mathrm{map}} \circ L_g = L_{\digamma_{\mathrm{map}}(g)} \circ \digamma_{\mathrm{map}}$, so it carries left-invariant fields to left-invariant fields; the induced map on vector fields preserves the bracket because it is a diffeomorphism on its image, and evaluating at the identity gives the claim.</p>
+<p><strong>Corollary.</strong> The assignment $G \mapsto \operatorname{Lie}(G) = \mathrm{G}$ and $\digamma_{\mathrm{map}} \mapsto d\digamma_{\mathrm{map},e}$ is a functor from Lie groups to Lie algebras over $\mathbb{K}$.</p>
 <h3 id="vector-fields-as-derivations">Vector Fields as Derivations</h3>
 <p><strong>Remark.</strong> The bracket $[X, Y] = X \circ Y - Y \circ X$ has the two characteristic properties of the bracket of derivations: it is alternating, and the Jacobi identity for it is the statement that the commutator of two derivations is again a derivation. The left-invariant field $X^v$ acts on a smooth function $f$ by</p>
 <p>$$
@@ -133,11 +133,11 @@ $$</p>
 <p><strong>Theorem.</strong> The exponential map is smooth, and for all $s, t \in \mathbb{R}$ and $v \in \mathrm{G}$:</p>
 <p><strong>(a)</strong> $\exp(0) = e$ and $\exp((s+t)v) = \exp(sv)\exp(tv)$;</p>
 <p><strong>(b)</strong> $\exp(tv) = \gamma_v(t)$ and $\exp(-v) = \exp(v)^{-1}$;</p>
-<p><strong>(c)</strong> $\exp$ is natural: for a Lie group homomorphism $\varphi : G \to H$ and $v \in \mathrm{G}$,</p>
+<p><strong>(c)</strong> $\exp$ is natural: for a Lie group homomorphism $\digamma_{\mathrm{map}} : G \to H$ and $v \in \mathrm{G}$,</p>
 <p>$$
-\varphi(\exp_G v) = \exp_H(d\varphi_e v).
+\digamma_{\mathrm{map}}(\exp_G v) = \exp_H(d\digamma_{\mathrm{map},e} v).
 $$</p>
-<p><strong>Proof.</strong> (a) and (b) are the one-parameter group property of $\gamma_v$, and the smoothness of $\exp$ follows from the smooth dependence of the flow on its initial condition. For (c), the curve $t \mapsto \varphi(\gamma_v(t))$ is a one-parameter subgroup of $H$ with velocity $d\varphi_e v$, so by uniqueness it is $\gamma_{d\varphi_e v}$; evaluating at $t = 1$ gives the claim.</p>
+<p><strong>Proof.</strong> (a) and (b) are the one-parameter group property of $\gamma_v$, and the smoothness of $\exp$ follows from the smooth dependence of the flow on its initial condition. For (c), the curve $t \mapsto \digamma_{\mathrm{map}}(\gamma_v(t))$ is a one-parameter subgroup of $H$ with velocity $d\digamma_{\mathrm{map},e} v$, so by uniqueness it is $\gamma_{d\digamma_{\mathrm{map},e} v}$; evaluating at $t = 1$ gives the claim.</p>
 <p><strong>Corollary.</strong> The differential of $\exp$ at $0$, under the canonical identification $T_0\mathrm{G} \cong \mathrm{G}$, is the identity:</p>
 <p>$$
 d(\exp)_0 = \mathrm{id}_{\mathrm{G}}.
@@ -252,7 +252,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{H} = T_eH$</td>
-<td>Lie algebra of $H$; the codomain of $d\varphi_e$</td>
+<td>Lie algebra of $H$; the codomain of $d\digamma_{\mathrm{map},e}$</td>
 </tr>
 <tr>
 <td>$L_g$, $dL_g$</td>
@@ -267,7 +267,7 @@ $$</p>
 <td>Bracket of vector fields; $[v,w] = [X^v, X^w]_e$</td>
 </tr>
 <tr>
-<td>$d\varphi_e$</td>
+<td>$d\digamma_{\mathrm{map},e}$</td>
 <td>Differential at the identity of a Lie group homomorphism; a Lie algebra homomorphism</td>
 </tr>
 <tr>
@@ -283,7 +283,7 @@ $$</p>
 <td>Exponential map, $\exp(v) = \gamma_v(1) = \Phi^v_1(e)$</td>
 </tr>
 <tr>
-<td>$\exp((s+t)v) = \exp(sv)\exp(tv)$, $\varphi(\exp_G v) = \exp_H(d\varphi_e v)$</td>
+<td>$\exp((s+t)v) = \exp(sv)\exp(tv)$, $\digamma_{\mathrm{map}}(\exp_G v) = \exp_H(d\digamma_{\mathrm{map},e} v)$</td>
 <td>Functional properties of $\exp$</td>
 </tr>
 <tr>

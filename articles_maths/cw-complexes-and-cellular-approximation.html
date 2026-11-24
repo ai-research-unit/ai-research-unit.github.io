@@ -78,13 +78,13 @@
 <h3 id="the-construction">The Construction</h3>
 <p><strong>Definition.</strong> A <strong>CW complex</strong> is a pair $(X, \mathcal{E})$ where $X$ is a topological space and $\mathcal{E} = \coprod_{n \geq 0} \mathcal{E}_n$ is a family of maps, the <strong>attaching maps</strong>,</p>
 <p>$$
-\varphi_\alpha : D^n \longrightarrow X, \qquad \alpha \in \mathcal{E}_n,
+\digamma_{\mathrm{map},\alpha} : D^n \longrightarrow X, \qquad \alpha \in \mathcal{E}_n,
 $$</p>
-<p>such that, writing $e^n_\alpha = \varphi_\alpha(\mathring D^n)$ for the associated <strong>open $n$-cell</strong>:</p>
+<p>such that, writing $e^n_\alpha = \digamma_{\mathrm{map},\alpha}(\mathring D^n)$ for the associated <strong>open $n$-cell</strong>:</p>
 <ol>
-<li>the restriction $\varphi_\alpha|_{\mathring D^n}$ is a homeomorphism onto $e^n_\alpha$, and $X$ is the disjoint union of the cells $e^n_\alpha$;</li>
+<li>the restriction $\digamma_{\mathrm{map},\alpha}|_{\mathring D^n}$ is a homeomorphism onto $e^n_\alpha$, and $X$ is the disjoint union of the cells $e^n_\alpha$;</li>
 <li>the <strong>closure finiteness</strong> condition: for each $n$ and $\alpha$ the closure $\overline{e^n_\alpha}$ meets only finitely many cells;</li>
-<li>the <strong>weak topology</strong> condition: a subset $A \subseteq X$ is closed if and only if $A \cap \overline{e^n_\alpha}$ is closed for every cell, equivalently $\varphi_\alpha^{-1}(A)$ is closed in $D^n$ for every attaching map.</li>
+<li>the <strong>weak topology</strong> condition: a subset $A \subseteq X$ is closed if and only if $A \cap \overline{e^n_\alpha}$ is closed for every cell, equivalently $\digamma_{\mathrm{map},\alpha}^{-1}(A)$ is closed in $D^n$ for every attaching map.</li>
 </ol>
 <p>The <strong>$n$-skeleton</strong> is $X^n = \bigcup_{k \leq n} \bigcup_{\alpha \in \mathcal{E}_k} e^k_\alpha$, a closed subspace; the space is <strong>finite-dimensional</strong> of dimension $n$ if $\mathcal{E}_k = \varnothing$ for $k &gt; n$ and $\mathcal{E}_n \neq \varnothing$, and <strong>finite</strong> if $\mathcal{E}$ is finite. The <strong>dimension</strong> of $X$ is the supremum of the dimensions of its cells.</p>
 <p>Condition (3) is the substantive one. It says that the topology of $X$ is determined by the closed discs and their attaching maps, and it is the reason a function out of $X$ is continuous exactly when its restrictions to the closed cells are. Conditions (1) and (2) say that the cell decomposition is discrete in the sense that each cell's closure meets only finitely many cells; they do not bound the total number of cells, which may be uncountable, and a CW complex with countably many cells may be enumerated cell by cell in order of dimension.</p>
@@ -92,7 +92,7 @@ $$</p>
 <p>$$
 \coprod_{\alpha \in \mathcal{E}_n} S^{n-1} \longrightarrow X^{n-1}, \qquad \coprod_{\alpha \in \mathcal{E}_n} D^n \longrightarrow X^n,
 $$</p>
-<p>in which the left vertical map is the inclusion of the boundary and the upper horizontal map is the restriction of the attaching maps, is a pushout in the category of topological spaces: $X^n$ is the quotient of the disjoint union $X^{n-1} \sqcup \coprod_\alpha D^n$ by the identification $x \sim \varphi_\alpha(x)$ for $x \in S^{n-1}$, and the topology is the quotient topology.</p>
+<p>in which the left vertical map is the inclusion of the boundary and the upper horizontal map is the restriction of the attaching maps, is a pushout in the category of topological spaces: $X^n$ is the quotient of the disjoint union $X^{n-1} \sqcup \coprod_\alpha D^n$ by the identification $x \sim \digamma_{\mathrm{map},\alpha}(x)$ for $x \in S^{n-1}$, and the topology is the quotient topology.</p>
 <p><em>Proof.</em> The quotient description is a restatement of the construction; the quotient topology is the weak topology because a set is closed in the quotient exactly when its preimage in each $D^n$ and in $X^{n-1}$ is closed.</p>
 <p><strong>Definition.</strong> A CW complex is a <strong>subcomplex</strong> of $(X,\mathcal{E})$ if it is a union of cells whose closures are contained in it; a subcomplex is a closed subspace and is itself a CW complex with the induced cells. The <strong>$k$-skeleton</strong> $X^k$ is the basic example.</p>
 <p><strong>Definition.</strong> A <strong>CW pair</strong> is a pair $(X, A)$ with $A$ a subcomplex of the CW complex $X$; the <strong>quotient</strong> $X/A$ is then a CW complex whose cells are the cells of $X$ not in $A$, together with one new basepoint cell.</p>
@@ -127,7 +127,7 @@ $$</p>
 <p><strong>Definition (degree).</strong> Let $f: S^n \to S^n$ be a map. The induced homomorphism $f_*: H_n(S^n) \to H_n(S^n)$ on the top homology is multiplication by an integer, written $\deg f$, because $H_n(S^n) \cong \mathbb{Z}$; the integer is the <strong>degree</strong> of $f$. It depends only on the homotopy class of $f$, and $\deg(f \circ g) = \deg f \cdot \deg g$, $\deg \mathrm{id} = 1$. This is standard mathematics, quoted here; the systematic treatment of the degree, including its integral representation and the Lefschetz and Brouwer theorems, is the subject , written in this batch.</p>
 <p><strong>Definition (cellular boundary).</strong> For an $n$-cell $e^n_\alpha$ let $q_\beta : X^{n-1} \to X^{n-1}/(X^{n-2} \cup \text{other } (n-1)\text{-cells}) \cong S^{n-1}$ be the collapse onto the closed $(n-1)$-cell $e^{n-1}_\beta$, a sphere because the cell is a disc modulo its boundary. The <strong>cellular boundary</strong> of $e^n_\alpha$ is</p>
 <p>$$
-\partial_n(e^n_\alpha) = \sum_{\beta \in \mathcal{E}_{n-1}} \deg\bigl(q_\beta \circ \varphi_\alpha|_{S^{n-1}}\bigr)\, e^{n-1}_\beta,
+\partial_n(e^n_\alpha) = \sum_{\beta \in \mathcal{E}_{n-1}} \deg\bigl(q_\beta \circ \digamma_{\mathrm{map},\alpha}|_{S^{n-1}}\bigr)\, e^{n-1}_\beta,
 $$</p>
 <p>the sum being finite by closure finiteness. For $n = 0$ the boundary is zero, and for $n = 1$ the sum counts signed endpoints, the degree of a map $S^0 \to S^0$ being $+1$ or $-1$ according as the map preserves or interchanges the two points.</p>
 <p><strong>Theorem.</strong> $\partial_{n-1} \circ \partial_n = 0$, so $(C_*^{\mathrm{CW}}(X), \partial_*)$ is a chain complex; and its homology is the singular homology,</p>
@@ -136,9 +136,9 @@ $$</p>
 $$</p>
 <p><em>Proof sketch.</em> The composite vanishes because it computes the degree of a map $S^{n-1} \to S^{n-1}$ factoring through the contractible space $D^{n-1}$ after accounting for the two collapses, and a map factoring through a contractible space has degree $0$ when $n-1 \geq 1$. The identification with singular homology is by comparing both with the homology of the pair $(X^n, X^{n-1})$; the boundary above is by construction the connecting map of that pair, and the comparison uses the five lemma on the diagram of skeleta.</p>
 <h3 id="the-boundary-formula">The Boundary Formula</h3>
-<p><strong>Theorem (cellular boundary formula).</strong> For an $n$-cell $e^n_\alpha$ with attaching map $\varphi_\alpha$ and an $(n-1)$-cell $e^{n-1}_\beta$, the coefficient of $e^{n-1}_\beta$ in $\partial_n e^n_\alpha$ is the degree of the composite</p>
+<p><strong>Theorem (cellular boundary formula).</strong> For an $n$-cell $e^n_\alpha$ with attaching map $\digamma_{\mathrm{map},\alpha}$ and an $(n-1)$-cell $e^{n-1}_\beta$, the coefficient of $e^{n-1}_\beta$ in $\partial_n e^n_\alpha$ is the degree of the composite</p>
 <p>$$
-S^{n-1} \xrightarrow{\ \varphi_\alpha|_{S^{n-1}}\ } X^{n-1} \xrightarrow{\ q_\beta\ } S^{n-1},
+S^{n-1} \xrightarrow{\ \digamma_{\mathrm{map},\alpha}|_{S^{n-1}}\ } X^{n-1} \xrightarrow{\ q_\beta\ } S^{n-1},
 $$</p>
 <p>where $q_\beta$ collapses $X^{n-1} \setminus e^{n-1}_\beta$ to a point.</p>
 <p>This is the single formula that makes the homology of every CW complex in the corpus computable. It is stated here in the generality in which it is used; its proof is the proof of the preceding theorem.</p>
@@ -190,11 +190,11 @@ $$</p>
 <td>Closed disc, its boundary sphere, its interior</td>
 </tr>
 <tr>
-<td>$\varphi_\alpha : D^n \to X$</td>
+<td>$\digamma_{\mathrm{map},\alpha} : D^n \to X$</td>
 <td>Attaching map of a cell</td>
 </tr>
 <tr>
-<td>$e^n_\alpha = \varphi_\alpha(\mathring D^n)$</td>
+<td>$e^n_\alpha = \digamma_{\mathrm{map},\alpha}(\mathring D^n)$</td>
 <td>Open $n$-cell</td>
 </tr>
 <tr>
@@ -219,7 +219,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\partial_n$</td>
-<td>Cellular boundary; $\partial_n e^n_\alpha = \sum_\beta \deg(q_\beta \varphi_\alpha) e^{n-1}_\beta$</td>
+<td>Cellular boundary; $\partial_n e^n_\alpha = \sum_\beta \deg(q_\beta \digamma_{\mathrm{map},\alpha}) e^{n-1}_\beta$</td>
 </tr>
 <tr>
 <td>$q_\beta$</td>

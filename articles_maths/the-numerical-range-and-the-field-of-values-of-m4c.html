@@ -129,10 +129,10 @@ $$</p>
 <p>$$
 \begin{pmatrix}\lambda_1&amp;c\\0&amp;\lambda_2\end{pmatrix},\qquad c\ge0,
 $$</p>
-<p>so it suffices to treat this matrix. For $x=(\cos\theta,e^{i\varphi}\sin\theta)$ with $0\le\theta\le\pi/2$,</p>
+<p>so it suffices to treat this matrix. For $x=(\cos\theta,e^{i\digamma_{\mathrm{map}}}\sin\theta)$ with $0\le\theta\le\pi/2$,</p>
 <p>$$
 x^*Tx=\lambda_1\cos^{2}\theta+\lambda_2\sin^{2}\theta
-+c\,e^{i\varphi}\cos\theta\sin\theta .
++c\,e^{i\digamma_{\mathrm{map}}}\cos\theta\sin\theta .
 $$</p>
 <p>For fixed $\theta$ this is a circle with centre $s(\theta)=\lambda_1\cos^{2}\theta+\lambda_2\sin^{2}\theta$ and radius $c|\cos\theta\sin\theta|$, and the phase is free. Hence the support function of $W(T)$ is</p>
 <p>$$
@@ -203,7 +203,7 @@ $$</p>
 <p><strong>Proof.</strong> For $T=J_2(0)$ the field of values is the disk of radius $1/2$ by the elliptical range theorem. The block rule gives the disk for both matrices, because $0$ lies in that disk. The ranks are two and one.</p>
 <h2 id="the-place-in-the-category">The Place in the Category</h2>
 <p><strong>The spectrum and the singular values.</strong> The field of values contains the spectrum and lies in the disk of radius $\|A\|$; the numerical radius lies between the spectral radius and the operator norm. The singular values give the radius of the image of the unit sphere, the field of values the radius of the image of the quadratic form. The gap measures the departure from normality: for a normal matrix $w(A)=\|A\|=\rho(A)$, while for the nilpotent chain $\rho(J_4)=0$, $w(J_4)=\cos(\pi/5)$ and $\|J_4\|=1$.</p>
-<p><strong>The Hermitian decomposition.</strong> The support function of $W(A)$ is the largest eigenvalue of $\operatorname{Re}(e^{-i\alpha}A)$, so each supporting line is fixed by the spectrum of a Hermitian matrix built from $A$. The Hermitian part $A+A^*$ gives the directions $0$ and $\pi/2$. The field of values does not determine $A$: $J_2(0)$ and $e^{i\varphi}J_2(0)$ have the same disk for every phase, while their Hermitian parts differ.</p>
+<p><strong>The Hermitian decomposition.</strong> The support function of $W(A)$ is the largest eigenvalue of $\operatorname{Re}(e^{-i\alpha}A)$, so each supporting line is fixed by the spectrum of a Hermitian matrix built from $A$. The Hermitian part $A+A^*$ gives the directions $0$ and $\pi/2$. The field of values does not determine $A$: $J_2(0)$ and $e^{i\digamma_{\mathrm{map}}}J_2(0)$ have the same disk for every phase, while their Hermitian parts differ.</p>
 <p><strong>The basis of $\mathbb{B}$.</strong> The model is read in the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The basis, the four left matrices and the display of the left regular matrix are <em>$M_4(\mathbb{C})$ Axis-Free Representation</em>; the sixteen two-sided operators are <em>$M_4(\mathbb{C})$ Axis-Free Representation: Operators</em>.</p>
 <p><strong>The biquaternion model.</strong> For $\tilde Q\in\mathbb{B}$ the matrix $\mathsf{M}_2(\tilde Q)$ has the ellipse of the elliptical range theorem as its field of values. The left regular matrix is $L_{\tilde Q}=S\bigl(I_2\otimes\mathsf{M}_2(\tilde Q)\bigr)S^{-1}$, and $W(I_2\otimes M)=W(M)$ for every $M$: a unit vector of the tensor product expands as $x=\sum_j e_j\otimes y_j$ with $\sum_j\|y_j\|^{2}=1$, so $x^*(I_2\otimes M)x=\sum_j y_j^*My_j$ is a convex combination of values of $M$. So the field of values of the left regular matrix is the field of values of the $2\times2$ matrix. The Hermitian elements of $\mathbb{B}_{\Psi}$ have real intervals, and the elements of $\mathbb{B}_{\Phi}$ have intervals on the imaginary axis. For the two-sided operator $L_{a}R_{b}$ the field of values is that of a different matrix, and it is not determined by the two factors separately.</p>
 <p><strong>The convexity.</strong> The Toeplitz–Hausdorff theorem is the reason the field of values is a convex body; in the finite-dimensional case its only non-trivial input is the ellipse of the two-dimensional compression. In dimension four the body is the envelope of the ellipses of the compressions to the two-dimensional subspaces, and for the nilpotent chain the envelope is a disk.</p>

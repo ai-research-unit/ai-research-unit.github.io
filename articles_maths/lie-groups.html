@@ -77,7 +77,7 @@
 <hr />
 <h1 id="part-i-lie-groups-and-the-classical-matrix-groups">Part I: Lie Groups and the Classical Matrix Groups</h1>
 <h2 id="smooth-manifolds-recalled">Smooth Manifolds (Recalled)</h2>
-<p>A <strong>smooth manifold</strong> of dimension $n$ is a second-countable Hausdorff space $M$ with a maximal atlas of charts $\phi : \Omega \to \mathbb{R}^n$ whose transition maps are smooth; smooth maps and their derivatives $df_p : T_pM \to T_{f(p)}N$ are defined in charts. The pushforward of a vector field $X$ by a diffeomorphism $F$ is written $F_*X$.</p>
+<p>A <strong>smooth manifold</strong> of dimension $n$ is a second-countable Hausdorff space $M$ with a maximal atlas of charts $\digamma_{\mathrm{map}} : \Omega \to \mathbb{R}^n$ whose transition maps are smooth; smooth maps and their derivatives $df_p : T_pM \to T_{f(p)}N$ are defined in charts. The pushforward of a vector field $X$ by a diffeomorphism $F$ is written $F_*X$.</p>
 <h2 id="definition-of-a-lie-group">Definition of a Lie Group</h2>
 <p>A <strong>Lie group</strong> is a group $G$ that is also a smooth manifold, such that the maps</p>
 <p>$$
@@ -232,9 +232,9 @@ $$</p>
 <p><strong>(a)</strong> $\exp(tX) = \gamma_X(t)$ for all $t$, hence $\exp(0) = e$.</p>
 <p><strong>(b)</strong> $\exp(sX)\exp(tX) = \exp((s+t)X)$ and $\exp(-X) = \exp(X)^{-1}$.</p>
 <p><strong>(c)</strong> The map $\exp$ is smooth with $d\exp_0 = \operatorname{id}_{\mathrm{G}}$, so by the inverse function theorem some neighborhoods $\Omega$ of $0$ and $V$ of $e$ satisfy $\exp(\Omega) = V$ diffeomorphically; thus every element near $e$ has a unique small logarithm.</p>
-<p><strong>(d)</strong> For a Lie group homomorphism $\varphi : G \to H$,
+<p><strong>(d)</strong> For a Lie group homomorphism $\digamma_{\mathrm{map}} : G \to H$,
 $$
-\varphi(\exp_G X) = \exp_H(d\varphi_e X).
+\digamma_{\mathrm{map}}(\exp_G X) = \exp_H(d\digamma_{\mathrm{map},e} X).
 $$</p>
 <p><strong>(e)</strong> For a matrix group, $\exp(X) = \sum_{k \geq 0} X^k/k!$, the matrix exponential.</p>
 <p><strong>(f)</strong> For $g \in G$, $\ g\exp(X)g^{-1} = \exp(\operatorname{Ad}_gX)$, with $\operatorname{Ad}_g$ as in <em>The Adjoint Representation</em>.</p>
@@ -259,18 +259,18 @@ lies in $SL_2(\mathbb{R})$ but equals no $\exp(X)$ with $X$ real. A real matrix 
 <hr />
 <h1 id="part-iv-homomorphisms-and-the-lie-correspondence">Part IV: Homomorphisms and the Lie Correspondence</h1>
 <h2 id="lie-group-homomorphisms-and-their-differentials">Lie Group Homomorphisms and Their Differentials</h2>
-<p>A <strong>Lie group homomorphism</strong> is a map $\varphi : G \to H$ that is both a group homomorphism and smooth; it is an <strong>isomorphism</strong> if it is bijective with smooth inverse. Every continuous group homomorphism between Lie groups is automatically smooth.</p>
+<p>A <strong>Lie group homomorphism</strong> is a map $\digamma_{\mathrm{map}} : G \to H$ that is both a group homomorphism and smooth; it is an <strong>isomorphism</strong> if it is bijective with smooth inverse. Every continuous group homomorphism between Lie groups is automatically smooth.</p>
 <p>Its derivative at the identity,</p>
 <p>$$
-d\varphi_e : \mathrm{G} \to \mathrm{H},
+d\digamma_{\mathrm{map},e} : \mathrm{G} \to \mathrm{H},
 $$</p>
 <p>is a <strong>Lie algebra homomorphism</strong>:</p>
 <p>$$
-d\varphi_e([X,Y]) = [d\varphi_eX, d\varphi_eY].
+d\digamma_{\mathrm{map},e}([X,Y]) = [d\digamma_{\mathrm{map},e}X, d\digamma_{\mathrm{map},e}Y].
 $$</p>
-<p>The assignment $G \mapsto \mathrm{G}$ is functorial: $d(\psi \circ \varphi)_e = d\psi_e \circ d\varphi_e$ and $d(\operatorname{id}_G)_e = \operatorname{id}_{\mathrm{G}}$. For example, $\det$ differentiates to $\operatorname{tr}$, and the covering $SU(2) \to SO(3)$ has differential an isomorphism $\mathrm{SU}(2) \to \mathrm{SO}(3)$.</p>
-<p><strong>Integration theorem.</strong> If $G$ is simply connected and $\phi : \mathrm{G} \to \mathrm{H}$ is a Lie algebra homomorphism, then there is a unique Lie group homomorphism $\varphi : G \to H$ with $d\varphi_e = \phi$. (This is sometimes called Lie's second theorem; the numbering of Lie's theorems varies among sources.)</p>
-<p>For a homomorphism $\varphi : G \to H$: $\operatorname{Lie}(\ker\varphi) = \ker d\varphi_e$; the image is an immersed Lie subgroup with $\operatorname{Lie}(\varphi(G)) = \operatorname{im}d\varphi_e$; if $G, H$ are connected of the same dimension and $d\varphi_e$ is an isomorphism, then $\varphi$ is a covering map, and an isomorphism if $G$ is simply connected; if $\varphi$ is surjective with $H$ connected, then $G/\ker\varphi \cong H$.</p>
+<p>The assignment $G \mapsto \mathrm{G}$ is functorial: $d(Ξ_{\mathrm{wfn}} \circ \digamma_{\mathrm{map}})_e = dΞ_{\mathrm{wfn},e} \circ d\digamma_{\mathrm{map},e}$ and $d(\operatorname{id}_G)_e = \operatorname{id}_{\mathrm{G}}$. For example, $\det$ differentiates to $\operatorname{tr}$, and the covering $SU(2) \to SO(3)$ has differential an isomorphism $\mathrm{SU}(2) \to \mathrm{SO}(3)$.</p>
+<p><strong>Integration theorem.</strong> If $G$ is simply connected and $\digamma_{\mathrm{map}} : \mathrm{G} \to \mathrm{H}$ is a Lie algebra homomorphism, then there is a unique Lie group homomorphism $\digamma_{\mathrm{map}} : G \to H$ with $d\digamma_{\mathrm{map},e} = \digamma_{\mathrm{map}}$. (This is sometimes called Lie's second theorem; the numbering of Lie's theorems varies among sources.)</p>
+<p>For a homomorphism $\digamma_{\mathrm{map}} : G \to H$: $\operatorname{Lie}(\ker\digamma_{\mathrm{map}}) = \ker d\digamma_{\mathrm{map},e}$; the image is an immersed Lie subgroup with $\operatorname{Lie}(\digamma_{\mathrm{map}}(G)) = \operatorname{im}d\digamma_{\mathrm{map},e}$; if $G, H$ are connected of the same dimension and $d\digamma_{\mathrm{map},e}$ is an isomorphism, then $\digamma_{\mathrm{map}}$ is a covering map, and an isomorphism if $G$ is simply connected; if $\digamma_{\mathrm{map}}$ is surjective with $H$ connected, then $G/\ker\digamma_{\mathrm{map}} \cong H$.</p>
 <h2 id="lie-subgroups-and-lie-subalgebras">Lie Subgroups and Lie Subalgebras</h2>
 <p>A <strong>Lie subalgebra</strong> of $\mathrm{G}$ is a subspace $\mathrm{H}$ with $[\mathrm{H},\mathrm{H}] \subseteq \mathrm{H}$. An <strong>embedded Lie subgroup</strong> of $G$ is a subgroup that is an embedded submanifold; the group operations then restrict to smooth maps, and its Lie algebra is $\mathrm{H} = T_eH \subseteq T_eG$. An <strong>immersed Lie subgroup</strong> (analytic subgroup) is a subgroup with a smooth structure making the inclusion an injective immersion; it need not be embedded.</p>
 <p><strong>Cartan's closed subgroup theorem.</strong> Every closed subgroup of a Lie group is an embedded Lie subgroup. In particular the classical matrix groups are Lie groups, being closed in $GL_n(\mathbb{K})$.</p>
@@ -413,7 +413,7 @@ $$</p>
 \operatorname{Lie}(G/N) \cong \mathrm{G}/\mathrm{N}, \qquad \mathrm{N} = \operatorname{Lie}(N).
 $$</p>
 <p>The map $\pi$ is a principal $N$-bundle, and $G/N$ is connected, respectively compact, when $G$ is. More generally, for any closed subgroup $H$ the homogeneous space $G/H$ has a unique smooth structure making $\pi : G \to G/H$ a submersion, with $\dim G/H = \dim G - \dim H$; when $H$ is normal this is a Lie group. Closedness is essential: the quotient by a dense subgroup such as the irrational line of <em>Lie Subgroups and Lie Subalgebras</em> is not a manifold.</p>
-<p><strong>First isomorphism theorem.</strong> For a Lie group homomorphism $\varphi : G \to H$, the kernel is a closed normal subgroup, the image is an immersed Lie subgroup, and $\varphi$ induces an isomorphism of Lie groups $G/\ker\varphi \cong \varphi(G)$.</p>
+<p><strong>First isomorphism theorem.</strong> For a Lie group homomorphism $\digamma_{\mathrm{map}} : G \to H$, the kernel is a closed normal subgroup, the image is an immersed Lie subgroup, and $\digamma_{\mathrm{map}}$ induces an isomorphism of Lie groups $G/\ker\digamma_{\mathrm{map}} \cong \digamma_{\mathrm{map}}(G)$.</p>
 <p>Examples: $\mathbb{R}/\mathbb{Z} \cong S^1$, $\mathbb{R}^n/\mathbb{Z}^n \cong T^n$, $SU(2)/\{\pm1\} \cong SO(3) \cong \mathbb{RP}^3$, $\mathrm{U}(n)/SU(n) \cong \mathrm{U}(1)$, $GL_n(\mathbb{R})/SL_n(\mathbb{R}) \cong \mathbb{R}^\times$, and $G/[G,G]$ is the maximal abelian quotient, equal to $\mathbb{R}^2$ for the Heisenberg group.</p>
 <hr />
 <h1 id="part-vi-summary">Part VI: Summary</h1>

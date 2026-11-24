@@ -127,14 +127,14 @@ $$</p>
 <p><strong>Proof.</strong> The functions of $D$ are bounded on $\hat K_D$ by their supremum on $K$, so their power series at points of $K$ converge on an open set containing $\hat K_D$; the continuation gives the extension.</p>
 <h2 id="pseudoconvexity-and-the-levi-problem">Pseudoconvexity and the Levi Problem</h2>
 <h3 id="plurisubharmonic-functions">Plurisubharmonic Functions</h3>
-<p><strong>Definition.</strong> An upper semicontinuous function $\varphi : Ζ \to [-\infty, \infty)$ on an open $Ζ \subseteq \mathbb{C}^n$ is <strong>plurisubharmonic</strong> if for every $Q \in Ζ$ and $B \in \mathbb{C}^n$ the function $\varkappa_{\mathrm{crd}} \mapsto \varphi(Q + \varkappa_{\mathrm{crd}} B)$ of the complex variable $\varkappa_{\mathrm{crd}}$ is subharmonic on its domain. A $\mathcal{C}^2$ function $\varphi$ is plurisubharmonic if and only if its <strong>Levi form</strong></p>
+<p><strong>Definition.</strong> An upper semicontinuous function $\digamma_{\mathrm{map}} : Ζ \to [-\infty, \infty)$ on an open $Ζ \subseteq \mathbb{C}^n$ is <strong>plurisubharmonic</strong> if for every $Q \in Ζ$ and $B \in \mathbb{C}^n$ the function $\varkappa_{\mathrm{crd}} \mapsto \digamma_{\mathrm{map}}(Q + \varkappa_{\mathrm{crd}} B)$ of the complex variable $\varkappa_{\mathrm{crd}}$ is subharmonic on its domain. A $\mathcal{C}^2$ function $\digamma_{\mathrm{map}}$ is plurisubharmonic if and only if its <strong>Levi form</strong></p>
 <p>$$
-L\varphi(Q; B) = \sum_{j,k=1}^{n} \frac{\partial^2 \varphi}{\partial Q_j \partial \bar Q_k}(Q)\, B_j \bar B_k
+L\digamma_{\mathrm{map}}(Q; B) = \sum_{j,k=1}^{n} \frac{\partial^2 \digamma_{\mathrm{map}}}{\partial Q_j \partial \bar Q_k}(Q)\, B_j \bar B_k
 $$</p>
 <p>is positive semidefinite for every $Q$ and every $B$.</p>
-<p><strong>Theorem.</strong> A function $\varphi$ is plurisubharmonic if and only if it is locally the upper semicontinuous regularisation of the supremum of a family of functions of the form $c\log\lvert f\rvert$ with $f$ holomorphic and $c &gt; 0$. In particular $\log\lvert f\rvert$ is plurisubharmonic for every holomorphic $f$, and plurisubharmonicity is invariant under biholomorphic maps.</p>
+<p><strong>Theorem.</strong> A function $\digamma_{\mathrm{map}}$ is plurisubharmonic if and only if it is locally the upper semicontinuous regularisation of the supremum of a family of functions of the form $c\log\lvert f\rvert$ with $f$ holomorphic and $c &gt; 0$. In particular $\log\lvert f\rvert$ is plurisubharmonic for every holomorphic $f$, and plurisubharmonicity is invariant under biholomorphic maps.</p>
 <p><strong>Proof.</strong> The characterisation of plurisubharmonicity by holomorphic discs gives one direction: composing with a holomorphic map preserves plurisubharmonicity, and $\log\lvert\varkappa_{\mathrm{crd}}\rvert$ is subharmonic in one variable. The converse is the standard approximation by $\log\lvert f\rvert$ in the definition of the pluricomplex Green function; the details are in the references.</p>
-<p><strong>Definition.</strong> A domain $D \subseteq \mathbb{C}^n$ is <strong>pseudoconvex</strong> if it has a continuous plurisubharmonic exhaustion function $\varphi : D \to \mathbb{R}$, that is, a plurisubharmonic $\varphi$ such that $\{Q \in D : \varphi(Q) &lt; c\}$ is relatively compact in $D$ for every $c$. A domain with $\mathcal{C}^2$ boundary is pseudoconvex if and only if the Levi form of a defining function is positive semidefinite on the complex tangent space at every boundary point.</p>
+<p><strong>Definition.</strong> A domain $D \subseteq \mathbb{C}^n$ is <strong>pseudoconvex</strong> if it has a continuous plurisubharmonic exhaustion function $\digamma_{\mathrm{map}} : D \to \mathbb{R}$, that is, a plurisubharmonic $\digamma_{\mathrm{map}}$ such that $\{Q \in D : \digamma_{\mathrm{map}}(Q) &lt; c\}$ is relatively compact in $D$ for every $c$. A domain with $\mathcal{C}^2$ boundary is pseudoconvex if and only if the Levi form of a defining function is positive semidefinite on the complex tangent space at every boundary point.</p>
 <p><strong>Remark.</strong> Pseudoconvexity is the local form of holomorphic convexity: the plurisubharmonic exhaustion measures the failure of the domain to extend across its boundary, and the Levi form is the second-order test for that failure. In one variable every domain is pseudoconvex, so the notion is new from two variables upward.</p>
 <h3 id="the-levi-problem">The Levi Problem</h3>
 <p><strong>Theorem (Levi problem; Oka, Bremermann, Norguet).</strong> A domain $D \subseteq \mathbb{C}^n$ is pseudoconvex if and only if it is a domain of holomorphy; equivalently, every pseudoconvex domain carries a holomorphic function that does not extend across any boundary point.</p>
@@ -155,9 +155,9 @@ $$</p>
 <p><strong>Proof.</strong> The Dolbeault complex is a fine resolution of the sheaf $\Omega^n$, and the comparison theorem for resolutions by fine sheaves identifies its cohomology with the sheaf cohomology; the construction is in <em>Sheaf Cohomology</em>.</p>
 <p><strong>Theorem (solvability of the $\bar\partial$-equation; Hörmander).</strong> Let $D \subseteq \mathbb{C}^n$ be a pseudoconvex domain and let $f$ be a $\bar\partial$-closed $(0,q)$-form with $m \geq 1$ and square-integrable coefficients. Then there is a $(0,m-1)$-form $u$ with $L^2$ coefficients solving $\bar\partial u = f$, and the solution can be chosen with the estimate</p>
 <p>$$
-\int_D \lvert u\rvert^2 \exp(-\varphi)\,dV \leq \int_D \lvert f\rvert^2 \exp(-\varphi)\,dV
+\int_D \lvert u\rvert^2 \exp(-\digamma_{\mathrm{map}})\,dV \leq \int_D \lvert f\rvert^2 \exp(-\digamma_{\mathrm{map}})\,dV
 $$</p>
-<p>for a suitable plurisubharmonic weight $\varphi$. For $m = 1$ the equation $\bar\partial u = f$ is solvable for every $\bar\partial$-closed $(0,1)$-form, and this is the technical heart of the theory of domains of holomorphy.</p>
+<p>for a suitable plurisubharmonic weight $\digamma_{\mathrm{map}}$. For $m = 1$ the equation $\bar\partial u = f$ is solvable for every $\bar\partial$-closed $(0,1)$-form, and this is the technical heart of the theory of domains of holomorphy.</p>
 <p><strong>Proof.</strong> The theorem is Hörmander's, obtained by the $L^2$ estimates for the $\bar\partial$-Neumann problem and the weighted Hilbert space method; the pseudoconvexity supplies the plurisubharmonic weight. The proof is in the references.</p>
 <p><strong>Corollary.</strong> On a pseudoconvex domain $D$, $H^q(D, \mathcal{O}) = 0$ for every $m \geq 1$. In particular, for $n \geq 2$, if $K \subset D$ is compact and $D \setminus K$ is connected, then every holomorphic function on $D \setminus K$ extends holomorphically to $D$.</p>
 <p><strong>Proof.</strong> The vanishing is the Dolbeault isomorphism with the solvability of $\bar\partial$ in degree $(0,q)$ for $m \geq 1$, using $n = 0$; the extension statement is the combination with the Hartogs phenomenon and the Levi problem.</p>
@@ -274,8 +274,8 @@ $$</p>
 <td>Holomorphic hull of $K$ in $D$</td>
 </tr>
 <tr>
-<td>$L\varphi$</td>
-<td>Levi form of $\varphi$</td>
+<td>$L\digamma_{\mathrm{map}}$</td>
+<td>Levi form of $\digamma_{\mathrm{map}}$</td>
 </tr>
 <tr>
 <td>$H^{n,m}_{\bar\partial}(D)$</td>

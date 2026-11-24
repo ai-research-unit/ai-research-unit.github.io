@@ -104,12 +104,12 @@
 </tr>
 <tr>
 <td>a distribution of function type</td>
-<td>a locally integrable function $f$, acting by $\varphi \mapsto \int f\varphi$; the embedding of $L^1_{loc}$ into $\mathcal D'$</td>
+<td>a locally integrable function $f$, acting by $\digamma_{\mathrm{map}} \mapsto \int f\digamma_{\mathrm{map}}$; the embedding of $L^1_{loc}$ into $\mathcal D'$</td>
 <td><em>Distributions and Fundamental Solutions</em></td>
 </tr>
 <tr>
 <td>a measure as a distribution</td>
-<td>a Radon measure, acting by $\varphi \mapsto \int\varphi\,d\mu$; the continuous dual of $C_0$ is a subspace of $\mathcal D'$</td>
+<td>a Radon measure, acting by $\digamma_{\mathrm{map}} \mapsto \int\digamma_{\mathrm{map}}\,d\mu$; the continuous dual of $C_0$ is a subspace of $\mathcal D'$</td>
 <td><em>Distributions and Fundamental Solutions</em>; <em>Locally Compact Groups and Haar Measure</em></td>
 </tr>
 <tr>
@@ -136,17 +136,17 @@
 <tbody>
 <tr>
 <td>the delta distribution $\delta$</td>
-<td>$\langle\delta,\varphi\rangle = \varphi(0)$; differentiable, the convolution identity, Fourier transform $1$</td>
+<td>$\langle\delta,\digamma_{\mathrm{map}}\rangle = \digamma_{\mathrm{map}}(0)$; differentiable, the convolution identity, Fourier transform $1$</td>
 <td><em>Distributions and Fundamental Solutions</em></td>
 </tr>
 <tr>
 <td>the translated delta $\delta_a$</td>
-<td>$\langle\delta_a,\varphi\rangle = \varphi(a)$; the derivative of the Heaviside step at $a$</td>
+<td>$\langle\delta_a,\digamma_{\mathrm{map}}\rangle = \digamma_{\mathrm{map}}(a)$; the derivative of the Heaviside step at $a$</td>
 <td><em>Distributions and Fundamental Solutions</em></td>
 </tr>
 <tr>
 <td>the derivatives $\partial^\alpha\delta$</td>
-<td>$\langle\partial^\alpha\delta,\varphi\rangle = (-1)^{|\alpha|}\partial^\alpha\varphi(0)$; the only distributions supported at a point are their finite combinations</td>
+<td>$\langle\partial^\alpha\delta,\digamma_{\mathrm{map}}\rangle = (-1)^{|\alpha|}\partial^\alpha\digamma_{\mathrm{map}}(0)$; the only distributions supported at a point are their finite combinations</td>
 <td><em>Distributions and Fundamental Solutions</em></td>
 </tr>
 <tr>
@@ -156,7 +156,7 @@
 </tr>
 <tr>
 <td>the principal value $\mathrm{pv}\,\frac1x$</td>
-<td>$\langle \mathrm{pv}\,\frac1x,\varphi\rangle = \lim_{\epsilon\to0}\int_{\lvert x\rvert&gt;\epsilon}\frac{\varphi(x)}{x}dx$; the distributional derivative of $\log\lvert x\rvert$, with Fourier transform $-\pi i\,\mathrm{sgn}$</td>
+<td>$\langle \mathrm{pv}\,\frac1x,\digamma_{\mathrm{map}}\rangle = \lim_{\epsilon\to0}\int_{\lvert x\rvert&gt;\epsilon}\frac{\digamma_{\mathrm{map}}(x)}{x}dx$; the distributional derivative of $\log\lvert x\rvert$, with Fourier transform $-\pi i\,\mathrm{sgn}$</td>
 <td><em>Distributions and Fundamental Solutions</em>; <em>Fourier Analysis on Euclidean Spaces</em></td>
 </tr>
 <tr>
@@ -188,12 +188,12 @@
 <tbody>
 <tr>
 <td>the surface delta $\delta_S$ (the single layer of unit density)</td>
-<td>$\langle\delta_S,\psi\rangle = \int_S\psi\,dS$; equals $\lvert\nabla\varphi\rvert\,\delta\circ\varphi$ for a defining function $\varphi$ of $S$</td>
+<td>$\langle\delta_S,Ξ_{\mathrm{wfn}}\rangle = \int_SΞ_{\mathrm{wfn}}\,dS$; equals $\lvert\nabla\digamma_{\mathrm{map}}\rvert\,\delta\circ\digamma_{\mathrm{map}}$ for a defining function $\digamma_{\mathrm{map}}$ of $S$</td>
 <td><em>Distributions on Surfaces, Layers, and Jump Conditions</em></td>
 </tr>
 <tr>
 <td>the normal layer $n\,\delta_S$</td>
-<td>the gradient of the Heaviside function of a defining function, $\nabla H(\varphi)$</td>
+<td>the gradient of the Heaviside function of a defining function, $\nabla H(\digamma_{\mathrm{map}})$</td>
 <td><em>Distributions on Surfaces, Layers, and Jump Conditions</em></td>
 </tr>
 <tr>
@@ -235,12 +235,12 @@
 <tbody>
 <tr>
 <td>differentiation of a distribution</td>
-<td>$\langle u',\varphi\rangle = -\langle u,\varphi'\rangle$; defined for every distribution and of no higher order than the distribution</td>
+<td>$\langle u',\digamma_{\mathrm{map}}\rangle = -\langle u,\digamma_{\mathrm{map}}'\rangle$; defined for every distribution and of no higher order than the distribution</td>
 <td><em>Distributions and Fundamental Solutions</em></td>
 </tr>
 <tr>
 <td>multiplication by a smooth function</td>
-<td>$\langle au,\varphi\rangle = \langle u,a\varphi\rangle$; defined for $a \in C^\infty$</td>
+<td>$\langle au,\digamma_{\mathrm{map}}\rangle = \langle u,a\digamma_{\mathrm{map}}\rangle$; defined for $a \in C^\infty$</td>
 <td><em>Distributions and Fundamental Solutions</em></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@
 </tr>
 <tr>
 <td>convolution with a test function</td>
-<td>$u * \varphi$ is a smooth function, a mollification and approximation of $u$</td>
+<td>$u * \digamma_{\mathrm{map}}$ is a smooth function, a mollification and approximation of $u$</td>
 <td><em>Distributions and Fundamental Solutions</em></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@
 </tr>
 <tr>
 <td>the Fourier transform of a tempered distribution</td>
-<td>$\langle\vec u,\varphi\rangle = \langle u,\mathcal F\\varphi\rangle$; exchanges differentiation and multiplication</td>
+<td>$\langle\vec u,\digamma_{\mathrm{map}}\rangle = \langle u,\mathcal F\\digamma_{\mathrm{map}}\rangle$; exchanges differentiation and multiplication</td>
 <td><em>Distributions and Fundamental Solutions</em>; <em>Fourier Analysis on Euclidean Spaces</em></td>
 </tr>
 <tr>
@@ -437,7 +437,7 @@
 <td>distributions, compactly supported and tempered distributions</td>
 </tr>
 <tr>
-<td>$\langle u,\varphi\rangle$</td>
+<td>$\langle u,\digamma_{\mathrm{map}}\rangle$</td>
 <td>the duality pairing</td>
 </tr>
 <tr>

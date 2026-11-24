@@ -122,11 +122,11 @@ $$</p>
 <p>The Fourier description is the probabilistic content of the convolution theorem of <em>Harmonic Analysis on Groups</em>: the sharpening of the $n$-fold convolution is the $n$-th power of the transform, and the return probabilities are the Fourier coefficients of that power. The Chung–Fuchs criterion reads the recurrence off the singularity of the transform at the identity character: the walk on $\mathbb{Z}^d$ has $\widehat\mu(\theta) = 1 - c|\theta|^2 + O(|\theta|^4)$ near $\theta = 0$, so the integral diverges for $d\leq2$ and converges for $d\geq3$, recovering Pólya's theorem. The same computation in the group setting — the singularity of the Fourier transform at the trivial representation — is the criterion for the recurrence of the walk on a general group.</p>
 <h3 id="the-compact-case-and-peterweyl">The Compact Case and Peter–Weyl</h3>
 <p><strong>Theorem (return probabilities on a compact group).</strong> Let $K$ be a compact group with <strong>normalised</strong> Haar measure $m$ and let $\mu$ be a probability measure on $K$; let $\operatorname{Irr}(K)$ be the set of irreducible unitary representations up to equivalence, with dimensions $d_\pi$.</p>
-<p><strong>(a) Density form.</strong> If $\mu$ is absolutely continuous with density $\varphi = d\mu/dm \in L^2(K,m)$, then $\mu^{*n}$ has density $\varphi^{*n}$ with respect to $m$ and</p>
+<p><strong>(a) Density form.</strong> If $\mu$ is absolutely continuous with density $\digamma_{\mathrm{map}} = d\mu/dm \in L^2(K,m)$, then $\mu^{*n}$ has density $\digamma_{\mathrm{map}}^{*n}$ with respect to $m$ and</p>
 <p>$$
-\varphi^{*n}(e) = \sum_{\pi\in\operatorname{Irr}(K)}d_\pi\operatorname{tr}\bigl(\widehat\varphi(\pi)^n\bigr), \qquad \widehat\varphi(\pi) = \int_K\pi(g)\varphi(g)\,dm(g),
+\digamma_{\mathrm{map}}^{*n}(e) = \sum_{\pi\in\operatorname{Irr}(K)}d_\pi\operatorname{tr}\bigl(\widehat\digamma_{\mathrm{map}}(\pi)^n\bigr), \qquad \widehat\digamma_{\mathrm{map}}(\pi) = \int_K\pi(g)\digamma_{\mathrm{map}}(g)\,dm(g),
 $$</p>
-<p>the series converging in $L^2(K,m)$; for $n\ge2$ the density $\varphi^{*n}$ is continuous, so the identity holds at the identity as an equality of numbers.</p>
+<p>the series converging in $L^2(K,m)$; for $n\ge2$ the density $\digamma_{\mathrm{map}}^{*n}$ is continuous, so the identity holds at the identity as an equality of numbers.</p>
 <p><strong>(b) Finite groups.</strong> If $K = G$ is finite, so that $m$ is the normalised counting measure, then for <strong>every</strong> probability measure $\mu$ on $G$, with $\widehat\mu(\pi) = \sum_{g\in G}\mu(g)\pi(g)$,</p>
 <p>$$
 \mu^{*n}(\{e\}) = \frac{1}{|G|}\sum_{\pi\in\operatorname{Irr}(G)}d_\pi\operatorname{tr}\bigl(\widehat\mu(\pi)^n\bigr),
@@ -136,7 +136,7 @@ $$</p>
 <p>$$
 \left\|\mu^{*n}-m\right\|_{\mathrm{TV}} \leq C\,\Lambda^n.
 $$</p>
-<p><em>Proof.</em> (a) The Fourier transform of $\mu^{*n}$ is $\widehat\varphi(\pi)^n$, and the value of the density at the identity is the inverse Fourier transform, which is the sum of the traces weighted by the dimensions by <em>Analysis on Compact Groups</em>. (b) The second identity requires no regularity of $\mu$: the Dirac mass at the identity expands as $\delta_e(g) = \frac{1}{|G|}\sum_\pi d_\pi\chi_\pi(g)$ by the orthogonality relations for the characters of a finite group, and pairing this with $\mu^{*n}$ gives $\sum_g\mu^{*n}(g)\delta_e(g) = \frac{1}{|G|}\sum_\pi d_\pi\operatorname{tr}\bigl(\sum_g\mu^{*n}(g)\pi(g)\bigr) = \frac{1}{|G|}\sum_\pi d_\pi\operatorname{tr}(\widehat\mu(\pi)^n)$. The two forms agree when $\mu$ is absolutely continuous, since then $|G|\mu$ is its density. The convergence is the case of the mixing of a Markov chain on a compact group, and the exponential rate is the spectral gap in the representation ring; the constant $\Lambda$ is the analogue of the spectral radius on the nontrivial part of the spectrum.</p>
+<p><em>Proof.</em> (a) The Fourier transform of $\mu^{*n}$ is $\widehat\digamma_{\mathrm{map}}(\pi)^n$, and the value of the density at the identity is the inverse Fourier transform, which is the sum of the traces weighted by the dimensions by <em>Analysis on Compact Groups</em>. (b) The second identity requires no regularity of $\mu$: the Dirac mass at the identity expands as $\delta_e(g) = \frac{1}{|G|}\sum_\pi d_\pi\chi_\pi(g)$ by the orthogonality relations for the characters of a finite group, and pairing this with $\mu^{*n}$ gives $\sum_g\mu^{*n}(g)\delta_e(g) = \frac{1}{|G|}\sum_\pi d_\pi\operatorname{tr}\bigl(\sum_g\mu^{*n}(g)\pi(g)\bigr) = \frac{1}{|G|}\sum_\pi d_\pi\operatorname{tr}(\widehat\mu(\pi)^n)$. The two forms agree when $\mu$ is absolutely continuous, since then $|G|\mu$ is its density. The convergence is the case of the mixing of a Markov chain on a compact group, and the exponential rate is the spectral gap in the representation ring; the constant $\Lambda$ is the analogue of the spectral radius on the nontrivial part of the spectrum.</p>
 <p>The second form is checked at the extreme case $\mu = \delta_e$, where $\widehat\mu(\pi) = I$ for every $\pi$ and the sum computes $\frac{1}{|G|}\sum_\pi d_\pi^2 = 1$, the mass; the density form would compute the density $|G|$ there, and the two differ by the factor $|G| = |K|$ by which the Haar measure of a finite group differs from counting measure.</p>
 <p>The theorem is the exact compact analogue of the abelian Fourier description: the dual group is replaced by the set of irreducible representations, the characters by their traces, and the integral by the sum with the dimension weights. It is the reason the mixing of a random walk on a finite group is computed from the character table, and it is the harmonic-analysis mechanism behind the <strong>cutoff phenomenon</strong>: when the Fourier coefficients are small except for a family of representations whose dimensions grow, the convergence to Haar is abrupt, with the transition at the time at which the largest Fourier coefficient reaches $\exp(-1)$.</p>
 <h3 id="the-general-case-spectral-measures">The General Case: Spectral Measures</h3>
@@ -222,8 +222,8 @@ $$</p>
 <td>$\mu(A)=\mu(A^{-1})$; support generates a dense subgroup</td>
 </tr>
 <tr>
-<td>$\widehat\mu(\chi)$, $\widehat\varphi(\pi)$</td>
-<td>Abelian Fourier transform; compact transform of the density $\varphi$ w.r.t. normalised Haar $m$</td>
+<td>$\widehat\mu(\chi)$, $\widehat\digamma_{\mathrm{map}}(\pi)$</td>
+<td>Abelian Fourier transform; compact transform of the density $\digamma_{\mathrm{map}}$ w.r.t. normalised Haar $m$</td>
 </tr>
 <tr>
 <td>Chung–Fuchs</td>
@@ -246,7 +246,7 @@ $$</p>
 <td>Spectral measure of $P_\mu$ at $\delta_e$; $p^{(2n)}(e)=\int\lambda^{2n}d\sigma$</td>
 </tr>
 <tr>
-<td>$m$, $\varphi=d\mu/dm$</td>
+<td>$m$, $\digamma_{\mathrm{map}}=d\mu/dm$</td>
 <td>Normalised Haar measure of a compact group and the density of $\mu$</td>
 </tr>
 <tr>

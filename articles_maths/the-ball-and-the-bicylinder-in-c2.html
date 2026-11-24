@@ -140,17 +140,17 @@ as a homogeneous space.</p>
 <p><em>Proof.</em> The transitivity is exhibited by the Möbius maps below. A projective unitary map fixing the origin fixes the complex line $[0:0:1]$, hence is represented by a block matrix $\operatorname{diag}(A,d)$ with $A\in\mathrm{U}(2)$ and $\lvert d\rvert=1$. Two such matrices represent the same projective map exactly when they differ by a scalar, and the class of $\operatorname{diag}(A,d)$ is determined by $A/d\in\mathrm{U}(2)$; hence the isotropy is $\mathrm{U}(2)$. The dimensions $8-4=4$ match the real dimension of the ball.</p>
 <p><strong>Theorem (the Möbius maps).</strong> For $Q_0\in\mathbb{B}^2$, let $P_{Q_0}$ be the orthogonal projection of $\mathbb{C}^2$ onto the complex line $\mathbb{C}Q_0$ and define
 $$
-\varphi_{Q_0}(Q)=\frac{Q_0-P_{Q_0}Q-\sqrt{1-\lVert Q_0\rVert^2}\,(I-P_{Q_0})Q}{1-\langle Q,Q_0\rangle},\qquad \langle Q,Q_0\rangle=Q_{\blacktriangle}\overline{Q_{0\blacktriangle}}+Q_{\blacktriangledown}\overline{Q_{0\blacktriangledown}}.
+\digamma_{\mathrm{map},Q_0}(Q)=\frac{Q_0-P_{Q_0}Q-\sqrt{1-\lVert Q_0\rVert^2}\,(I-P_{Q_0})Q}{1-\langle Q,Q_0\rangle},\qquad \langle Q,Q_0\rangle=Q_{\blacktriangle}\overline{Q_{0\blacktriangle}}+Q_{\blacktriangledown}\overline{Q_{0\blacktriangledown}}.
 $$
-Then $\varphi_{Q_0}$ is a biholomorphism of $\mathbb{B}^2$ with
+Then $\digamma_{\mathrm{map},Q_0}$ is a biholomorphism of $\mathbb{B}^2$ with
 $$
-\varphi_{Q_0}(0)=Q_0,\qquad \varphi_{Q_0}(Q_0)=0,\qquad \varphi_{Q_0}\circ\varphi_{Q_0}=\mathrm{id},
+\digamma_{\mathrm{map},Q_0}(0)=Q_0,\qquad \digamma_{\mathrm{map},Q_0}(Q_0)=0,\qquad \digamma_{\mathrm{map},Q_0}\circ\digamma_{\mathrm{map},Q_0}=\mathrm{id},
 $$
 and
 $$
-1-\lVert\varphi_{Q_0}(Q)\rVert^2=\frac{(1-\lVert Q_0\rVert^2)(1-\lVert Q\rVert^2)}{\lvert1-\langle Q,Q_0\rangle\rvert^2}.
+1-\lVert\digamma_{\mathrm{map},Q_0}(Q)\rVert^2=\frac{(1-\lVert Q_0\rVert^2)(1-\lVert Q\rVert^2)}{\lvert1-\langle Q,Q_0\rangle\rvert^2}.
 $$</p>
-<p><em>Proof.</em> The value at $0$ is $Q_0$ and the value at $Q_0$ is $0$, because $P_{Q_0}Q_0=Q_0$ and $(I-P_{Q_0})Q_0=0$. The displayed identity is a direct computation with $\lVert P_{Q_0}Q\rVert^2+\lVert(I-P_{Q_0})Q\rVert^2=\lVert Q\rVert^2$; it shows that $\lVert Q\rVert&lt;1$ implies $\lVert\varphi_{Q_0}(Q)\rVert&lt;1$, and that the boundary goes to the boundary. The map is an involution, $\varphi_{Q_0}\circ\varphi_{Q_0}=\mathrm{id}$, by direct substitution; hence it is a biholomorphism.</p>
+<p><em>Proof.</em> The value at $0$ is $Q_0$ and the value at $Q_0$ is $0$, because $P_{Q_0}Q_0=Q_0$ and $(I-P_{Q_0})Q_0=0$. The displayed identity is a direct computation with $\lVert P_{Q_0}Q\rVert^2+\lVert(I-P_{Q_0})Q\rVert^2=\lVert Q\rVert^2$; it shows that $\lVert Q\rVert&lt;1$ implies $\lVert\digamma_{\mathrm{map},Q_0}(Q)\rVert&lt;1$, and that the boundary goes to the boundary. The map is an involution, $\digamma_{\mathrm{map},Q_0}\circ\digamma_{\mathrm{map},Q_0}=\mathrm{id}$, by direct substitution; hence it is a biholomorphism.</p>
 <p><strong>Remark (the model of the ball).</strong> The ball is the bounded realisation of complex hyperbolic space $\mathbb{CH}^2$, and $\mathrm{PU}(2,1)$ is its group of holomorphic isometries for the Bergman metric. <strong>The dimension $8$ is the dimension of the group, not of the space</strong>; the space has real dimension $4$, and the isotropy has dimension $4$.</p>
 <h2 id="the-automorphisms-of-the-bicylinder">The Automorphisms of the Bicylinder</h2>
 <p><strong>Every biholomorphism of the bicylinder is a permutation of the coordinates followed by a disc automorphism in each coordinate; the group is $(\mathrm{PSL}_2(\mathbb{R}))^2\rtimes S_2$, of real dimension $6$.</strong></p>
@@ -163,9 +163,9 @@ It is isomorphic to $\mathrm{PSL}_2(\mathbb{R})\cong\mathrm{PU}(1,1)$ and has re
 <p><em>Proof.</em> A biholomorphism of the disc extends to the boundary circle and permutes the boundary; the Schwarz lemma applied to the automorphism and its inverse, after composing with a Möbius map sending the image of the origin to the origin, forces the form. The transitivity is the case $z=0$; the isotropy of $0$ is the rotations.</p>
 <p><strong>Theorem (the automorphisms of the bicylinder).</strong> Every biholomorphism of $\Delta^2$ is of the form
 $$
-(Q_{\blacktriangle},Q_{\blacktriangledown})\longmapsto\bigl(\varphi_{\blacktriangle}(Q_{\blacktriangle}),\varphi_{\blacktriangledown}(Q_{\blacktriangledown})\bigr),
+(Q_{\blacktriangle},Q_{\blacktriangledown})\longmapsto\bigl(\digamma_{\mathrm{map},\blacktriangle}(Q_{\blacktriangle}),\digamma_{\mathrm{map},\blacktriangledown}(Q_{\blacktriangledown})\bigr),
 $$
-where $\varphi_{\blacktriangle},\varphi_{\blacktriangledown}\in\operatorname{Aut}(\Delta)$ and the two are interchanged when $\sigma$ swaps the coordinates. Hence
+where $\digamma_{\mathrm{map},\blacktriangle},\digamma_{\mathrm{map},\blacktriangledown}\in\operatorname{Aut}(\Delta)$ and the two are interchanged when $\sigma$ swaps the coordinates. Hence
 $$
 \operatorname{Aut}(\Delta^2)\cong\bigl(\operatorname{Aut}(\Delta)\bigr)^2\rtimes S_2
 \cong\bigl(\mathrm{PSL}_2(\mathbb{R})\bigr)^2\rtimes S_2,
@@ -291,7 +291,7 @@ is Reinhardt and is a domain of holomorphy, but it is not complete, because the 
 <td>the disc automorphism group, $\operatorname{Aut}(\Delta)$</td>
 </tr>
 <tr>
-<td>$\varphi_{Q_0}$</td>
+<td>$\digamma_{\mathrm{map},Q_0}$</td>
 <td>the Möbius map of the ball sending $0$ to $Q_0$</td>
 </tr>
 <tr>

@@ -219,11 +219,11 @@ $$</p>
 $$</p>
 <p>The Feynman–Kac formula is the representation of the solution of the heat equation with a potential as an expectation, and it is the reason the semigroup $\exp(t(\Delta/2 - V))$, which is not a Markov semigroup when $V$ changes sign, is still accessible by probabilistic methods. The proof is the Itô formula applied to the process $\exp(-\int_0^tV(B_s)ds)u(t-s,B_s)$ and the martingale property together with the boundedness that permits taking expectations.</p>
 <h3 id="the-dirichlet-problem">The Dirichlet Problem</h3>
-<p><strong>Theorem (Kakutani's formula).</strong> Let $D \subseteq \mathbb{R}^d$ be a bounded domain with smooth (or merely regular) boundary, let $\tau_D = \inf\{t : B_t \notin D\}$, and let $\varphi$ be continuous on $\partial D$. Then the function</p>
+<p><strong>Theorem (Kakutani's formula).</strong> Let $D \subseteq \mathbb{R}^d$ be a bounded domain with smooth (or merely regular) boundary, let $\tau_D = \inf\{t : B_t \notin D\}$, and let $\digamma_{\mathrm{map}}$ be continuous on $\partial D$. Then the function</p>
 <p>$$
-u(x) = \mathbb{E}^x\bigl[\varphi(B_{\tau_D})\bigr], \qquad x \in D,
+u(x) = \mathbb{E}^x\bigl[\digamma_{\mathrm{map}}(B_{\tau_D})\bigr], \qquad x \in D,
 $$</p>
-<p>is the unique continuous solution of the Dirichlet problem $\Delta u = 0$ in $D$, $u = \varphi$ on $\partial D$; the boundary values are taken because $\mathbb{P}^x(\tau_D &lt; \infty) = 1$ and $\lim_{x\to y}u(x) = \varphi(y)$ for regular boundary points $y$.</p>
+<p>is the unique continuous solution of the Dirichlet problem $\Delta u = 0$ in $D$, $u = \digamma_{\mathrm{map}}$ on $\partial D$; the boundary values are taken because $\mathbb{P}^x(\tau_D &lt; \infty) = 1$ and $\lim_{x\to y}u(x) = \digamma_{\mathrm{map}}(y)$ for regular boundary points $y$.</p>
 <p>Kakutani's formula is the probabilistic solution of the Dirichlet problem, and it identifies Brownian motion as the tool of classical potential theory: the harmonic measure of the domain is the law of $B_{\tau_D}$, the value of the harmonic function is the average of the boundary data against it, and the boundaries are regular exactly when the motion leaves the domain continuously. The smoothness of the boundary is not needed: the Wiener criterion characterises the regular points in terms of the capacity of the complement, and it is the potential-theoretic statement of the strong Markov property.</p>
 <p><strong>Theorem (exit and occupation).</strong> The moment generating function of the exit time is characterised by $\mathbb{E}^x[\exp(-\lambda\tau_D)]$, the solution of $\frac12\Delta v = \lambda v$ in $D$ with $v|_{\partial D} = 1$; and for the one-dimensional interval $D = (-a,b)$ the exit distribution is explicit: a Brownian motion started at $0$ leaves $(-a,b)$ at $b$ with probability $a/(a+b)$, the continuous form of the gambler's ruin formula of <em>Martingales</em>.</p>
 <h2 id="summary">Summary</h2>
@@ -288,7 +288,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tau_D$, Kakutani</td>
-<td>Exit time from $D$; $u(x)=\mathbb{E}^x[\varphi(B_{\tau_D})]$</td>
+<td>Exit time from $D$; $u(x)=\mathbb{E}^x[\digamma_{\mathrm{map}}(B_{\tau_D})]$</td>
 </tr>
 <tr>
 <td>Bessel drift</td>

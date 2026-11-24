@@ -139,7 +139,7 @@ $$</p>
 \|y(t) - z(t)\| \le \|y_0 - z_0\|\,\exp(L(t-t_0)) \qquad (t \in [t_0,t_1]).
 $$</p>
 <p><em>Proof.</em> Subtracting the integral equations and applying the Lipschitz condition gives $u(t) \le \|y_0-z_0\| + L\int_{t_0}^t u(s)\,ds$ for $u = \|y-z\|$; Gronwall gives the estimate.</p>
-<p><strong>Corollary (uniqueness).</strong> Two solutions with the same initial datum agree on the intersection of their intervals, so the maximal solution is unique. In particular the <strong>flow</strong> $\varphi_t(y_0) = y(t)$ of an autonomous equation is well defined wherever it exists, and $\varphi_{t+s} = \varphi_t \circ \varphi_s$ on the common domain of definition.</p>
+<p><strong>Corollary (uniqueness).</strong> Two solutions with the same initial datum agree on the intersection of their intervals, so the maximal solution is unique. In particular the <strong>flow</strong> $\digamma_{\mathrm{map},t}(y_0) = y(t)$ of an autonomous equation is well defined wherever it exists, and $\digamma_{\mathrm{map},t+s} = \digamma_{\mathrm{map},t} \circ \digamma_{\mathrm{map},s}$ on the common domain of definition.</p>
 <p>The estimate says that the solution depends on the initial datum Lipschitz-continuously with a constant growing exponentially in $t$, and that this exponential growth is the worst case; for a linear equation $y' = Ay$ the sharp constant is $\|\exp(tA)\|$, which need not equal $\exp(\|A\|t)$.</p>
 <h2 id="systems-and-higher-order-equations">Systems and Higher-Order Equations</h2>
 <p><strong>Proposition (reduction to a first-order system).</strong> The order-$n$ equation $y^{(n)} = g(t, y, y', \dots, y^{(n-1)})$ on $X$ is equivalent to the first-order system</p>
@@ -309,14 +309,14 @@ $$</p>
 <p><strong>Standing of the result.</strong> The representation itself is not new: the series solution of a second-order linear equation in this form goes back to Weyl's 1910 paper, and the same representation is used in inverse spectral theory. What the hypothesis $g_0, 1/g_0 \in L^\infty$ adds is that the particular solution is nonvanishing and nondegenerate at both endpoints, which is what makes the coefficients computable and of controlled size across the whole interval rather than only locally; a singular endpoint, at which $1/g_0$ need not be bounded, is outside the statement. The method has been developed for complex-valued coefficients, which is the case that matters when $q$ is complex or depends on a parameter; the instance of a coefficient that varies in steps, where the equation is $-(pu')' + qu = \omega^2u$, is recorded in <em>Electromagnetism in Media — The Local Complex Structure at Work</em>, where the same function $g$ appears as the carrier of a factorisation of the operator. The author reports that the truncated series is more accurate than Matlab's adaptive solver <code>ode45</code> on test problems by several orders of magnitude, up to an absolute error of $0.28$ for the solver against $10^{-9}$ for the series at the stiffest test case; the comparison is the author's own and with a single solver, and it is recorded as reported.</p>
 <h2 id="autonomous-systems-and-the-phase-plane">Autonomous Systems and the Phase Plane</h2>
 <h3 id="equilibria-and-linearisation">Equilibria and Linearisation</h3>
-<p><strong>Definition.</strong> For an autonomous equation $y' = f(y)$ a point $y_*$ is an <strong>equilibrium</strong> if $f(y_*) = 0$, and the equilibrium is <strong>stable</strong> if for every neighbourhood $\Omega$ of $y_*$ there is a neighbourhood $V$ with $\varphi_t(V) \subseteq \Omega$ for all $t \ge 0$; it is <strong>asymptotically stable</strong> if in addition $\varphi_t(y) \to y_*$ as $t \to \infty$ for $y$ in some neighbourhood, and <strong>unstable</strong> if it is not stable.</p>
+<p><strong>Definition.</strong> For an autonomous equation $y' = f(y)$ a point $y_*$ is an <strong>equilibrium</strong> if $f(y_*) = 0$, and the equilibrium is <strong>stable</strong> if for every neighbourhood $\Omega$ of $y_*$ there is a neighbourhood $V$ with $\digamma_{\mathrm{map},t}(V) \subseteq \Omega$ for all $t \ge 0$; it is <strong>asymptotically stable</strong> if in addition $\digamma_{\mathrm{map},t}(y) \to y_*$ as $t \to \infty$ for $y$ in some neighbourhood, and <strong>unstable</strong> if it is not stable.</p>
 <p><strong>Theorem (linearisation).</strong> Let $f$ be of class $C^1$ near an equilibrium $y_*$, with derivative $A = Df(y_*)$. Then:</p>
 <p><strong>(a)</strong> if every eigenvalue of $A$ has strictly negative real part, $y_*$ is asymptotically stable;</p>
 <p><strong>(b)</strong> if some eigenvalue of $A$ has strictly positive real part, $y_*$ is unstable;</p>
 <p><strong>(c)</strong> if the eigenvalues of $A$ all have nonpositive real part and some have real part $0$, the linearisation does not decide stability, and the nonlinear terms decide.</p>
 <p><em>Proof.</em> The solution is $y(t) = y_* + z(t)$ with $z' = Az + r(z)$, $\|r(z)\| = o(\|z\|)$. If the spectrum of $A$ lies in $\{\operatorname{Re} &lt; 0\}$ then $\|\exp(tA)\| \le C\exp(-\gamma t)$ for some $C, \gamma &gt; 0$, and the variation-of-constants formula and Gronwall give decay of $z$ for small $z(0)$; if some eigenvalue has positive real part, the unstable manifold theorem produces solutions leaving every neighbourhood. Statement (c) is the content of the examples below.</p>
 <h3 id="the-planar-case">The Planar Case</h3>
-<p>For a planar autonomous system $x' = \phi(x,y)$, $y' = \psi(x,y)$ with equilibrium at the origin and linearisation matrix $A = \begin{pmatrix}\phi_x &amp; \phi_y\\ \psi_x &amp; \psi_y\end{pmatrix}$, the eigenvalues $\lambda_1, \lambda_2$ of $A$ classify the phase portrait at the origin in the nondegenerate case $\det A \neq 0$.</p>
+<p>For a planar autonomous system $x' = \digamma_{\mathrm{map}}(x,y)$, $y' = Ξ_{\mathrm{wfn}}(x,y)$ with equilibrium at the origin and linearisation matrix $A = \begin{pmatrix}\digamma_{\mathrm{map},x} &amp; \digamma_{\mathrm{map},y}\\ Ξ_{\mathrm{wfn},x} &amp; Ξ_{\mathrm{wfn},y}\end{pmatrix}$, the eigenvalues $\lambda_1, \lambda_2$ of $A$ classify the phase portrait at the origin in the nondegenerate case $\det A \neq 0$.</p>
 <p><strong>Theorem (classification of planar equilibria).</strong> With $\tau = \operatorname{tr}A$, $\delta = \det A$ and discriminant $\tau^2 - 4\delta$:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -413,8 +413,8 @@ $$</p>
 <td>Picard operator $T(y)(t) = y_0 + \int_{t_0}^t f(s,y(s))\,ds$</td>
 </tr>
 <tr>
-<td>$\varphi_t$</td>
-<td>Flow of an autonomous equation, $\varphi_t(y_0) = y(t)$</td>
+<td>$\digamma_{\mathrm{map},t}$</td>
+<td>Flow of an autonomous equation, $\digamma_{\mathrm{map},t}(y_0) = y(t)$</td>
 </tr>
 <tr>
 <td>$A$, $A(t)$</td>

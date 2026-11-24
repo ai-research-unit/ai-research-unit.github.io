@@ -82,17 +82,17 @@
 <h2 id="the-clebsch-representation">The Clebsch Representation</h2>
 <p>Every velocity one-form that carries a vorticity can still be written with potentials, and the representation is classical. In the form used by Clebsch and by Lin, a velocity one-form is</p>
 <p>$$
-v_{\Phi,\imath}=\frac{\partial\phi_{\mathrm{clb}}}{\partial R_{\imath}}
+v_{\Phi,\imath}=\frac{\partial\xi_{\mathrm{pot},\mathrm{clb}}}{\partial R_{\imath}}
 +\alpha_{\mathrm{clb}}\frac{\partial\beta_{\mathrm{clb}}}{\partial R_{\imath}},
 $$</p>
-<p>with three functions in place of the one function of a gradient. The three names are the Clebsch scalar and the Clebsch pair, and the label $\mathrm{clb}$ distinguishes them from the scalar potential of the electrostatic and Higgs sections, which writes $\phi$.</p>
+<p>with three functions in place of the one function of a gradient. The three names are the Clebsch scalar and the Clebsch pair, and the label $\mathrm{clb}$ distinguishes them from the scalar potential of the electrostatic and Higgs sections, which writes $\xi_{\mathrm{pot}}$.</p>
 <p>The vorticity of a Clebsch field is the wedge of the pair, and this is the whole content of the representation. Taking the exterior derivative,</p>
 <p>$$
 \omega_{\imath\jmath}=\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}-\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}}
 =\frac{\partial\alpha_{\mathrm{clb}}}{\partial R_{\imath}}\frac{\partial\beta_{\mathrm{clb}}}{\partial R_{\jmath}}
 -\frac{\partial\alpha_{\mathrm{clb}}}{\partial R_{\jmath}}\frac{\partial\beta_{\mathrm{clb}}}{\partial R_{\imath}},
 $$</p>
-<p>so $\omega=\mathrm{d}\alpha_{\mathrm{clb}}\wedge\mathrm{d}\beta_{\mathrm{clb}}$ and the scalar $\phi_{\mathrm{clb}}$ drops out. The Clebsch scalar carries no vorticity and the pair carries all of it. A gradient is the case in which the pair is constant, and irrotationality is therefore not the absence of the representation but a degenerate value of its two potentials.</p>
+<p>so $\omega=\mathrm{d}\alpha_{\mathrm{clb}}\wedge\mathrm{d}\beta_{\mathrm{clb}}$ and the scalar $\xi_{\mathrm{pot},\mathrm{clb}}$ drops out. The Clebsch scalar carries no vorticity and the pair carries all of it. A gradient is the case in which the pair is constant, and irrotationality is therefore not the absence of the representation but a degenerate value of its two potentials.</p>
 <p><strong>The pair is not a computational trick, it is the general solution of the closure question.</strong> Asking for $v_{\Phi,\imath}=\partial_{\imath} S$ is asking that a one-form be exact, which is one function's worth of data. Asking for the Clebsch form is asking nothing: it is available wherever the flow is defined, and it costs two functions at each event. The count is the point of the next section.</p>
 <h2 id="the-rank-of-the-vorticity">The Rank of the Vorticity</h2>
 <p>The vorticity is a two-form, and two-forms are classified by rank. In four dimensions the rank is $0$, $2$ or $4$. Rank zero is the closed one-form; rank two is a two-form that is the wedge of two one-forms; rank four is neither. The classical name for the rank-two case is <em>simple</em>, and the test is one scalar.</p>
@@ -123,13 +123,13 @@ $$</p>
 <tr>
 <td>$0$</td>
 <td>$\omega=0$</td>
-<td>$\phi_{\mathrm{clb}}$ alone</td>
+<td>$\xi_{\mathrm{pot},\mathrm{clb}}$ alone</td>
 <td>one function</td>
 </tr>
 <tr>
 <td>$2$</td>
 <td>$\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}=0$</td>
-<td>$\phi_{\mathrm{clb}}$, $\alpha_{\mathrm{clb}}$, $\beta_{\mathrm{clb}}$</td>
+<td>$\xi_{\mathrm{pot},\mathrm{clb}}$, $\alpha_{\mathrm{clb}}$, $\beta_{\mathrm{clb}}$</td>
 <td>three functions</td>
 </tr>
 <tr>
@@ -235,7 +235,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\phi_{\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$</td>
+<td>$\xi_{\mathrm{pot},\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$</td>
 <td>the Clebsch scalar and pair</td>
 </tr>
 <tr>

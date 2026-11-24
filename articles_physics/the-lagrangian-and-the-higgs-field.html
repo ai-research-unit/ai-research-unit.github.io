@@ -78,9 +78,9 @@
 <h2 id="conventions">Conventions</h2>
 <p>The measure is $\mathrm{d}^{4}x$, with $c$ and $h$ carried; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi=\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi$ carries the sign the mostly-minus literature carries. The doublet is a complex two-component column,</p>
 <p>$$
-\Phi=\frac{1}{\sqrt2}\begin{pmatrix}\phi_1+i\phi_2\\ \phi_3+i\phi_4\end{pmatrix},
+\Phi=\frac{1}{\sqrt2}\begin{pmatrix}\xi_{\mathrm{pot},1}+i\xi_{\mathrm{pot},2}\\ \xi_{\mathrm{pot},3}+i\xi_{\mathrm{pot},4}\end{pmatrix},
 $$</p>
-<p>so that $\Phi$ carries four real components $\phi_A$ and $\Phi^{\dagger}\Phi=\frac12\sum_A\phi_A^{2}$. The potential is</p>
+<p>so that $\Phi$ carries four real components $\xi_{\mathrm{pot},A}$ and $\Phi^{\dagger}\Phi=\frac12\sum_A\xi_{\mathrm{pot},A}^{2}$. The potential is</p>
 <p>$$
 V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2},
 \qquad \mu^{2}&gt;0,\quad \varpi_{\mathrm{cpl}}&gt;0,
@@ -88,7 +88,7 @@ $$</p>
 <p>and its minimum sits at $\Phi^{\dagger}\Phi=\mu^{2}/2\varpi_{\mathrm{cpl}}\equiv v^{2}/2$, so that $v^{2}=\mu^{2}/\varpi_{\mathrm{cpl}}$ and $v\simeq3.9449\times10^{-8}\ \mathrm{J}$.</p>
 <p><strong>The radial variable, named once.</strong> Write $r=\sqrt{2\Phi^{\dagger}\Phi}$, a real non-negative field with $\dim r=1$. Every statement in this article that is not about the phase is a statement about $V$ as a function of $r$, and the notation is used to make that visible.</p>
 <p>The unitary chart. Where a component reading is needed the chart is $\Phi=\frac{1}{\sqrt2}\binom{0}{v+h}$ with $h$ real. It is a chart on the same action and not a different theory; the companion article states what it costs and what it buys.</p>
-<p>Two conventions are warnings. The first: $\mu^{2}$ has the dimensions of a mass squared and is not a mass. The curvature at the minimum is $2\mu^{2}$, and the difference matters — the free Klein–Gordon article's $\nu_m^{2}$ is the coefficient of $-\tilde\Xi^{*}\tilde\Xi$ with a fixed sign, whereas here the sign is negative and the coefficient is not the mass. The second: $\varpi_{\mathrm{cpl}}$ in this normalisation is the coefficient of $(\Phi^{\dagger}\Phi)^{2}$, so the quartic term in the unitary chart is $\frac{\varpi_{\mathrm{cpl}}}{4}h^{4}$. A reader who imports $\frac{\varpi_{\mathrm{cpl}}}{4!}\phi^{4}$ from the scalar-field literature will find the self-couplings wrong by a factor of six.</p>
+<p>Two conventions are warnings. The first: $\mu^{2}$ has the dimensions of a mass squared and is not a mass. The curvature at the minimum is $2\mu^{2}$, and the difference matters — the free Klein–Gordon article's $\nu_m^{2}$ is the coefficient of $-\tilde\Xi^{*}\tilde\Xi$ with a fixed sign, whereas here the sign is negative and the coefficient is not the mass. The second: $\varpi_{\mathrm{cpl}}$ in this normalisation is the coefficient of $(\Phi^{\dagger}\Phi)^{2}$, so the quartic term in the unitary chart is $\frac{\varpi_{\mathrm{cpl}}}{4}h^{4}$. A reader who imports $\frac{\varpi_{\mathrm{cpl}}}{4!}\xi_{\mathrm{pot}}^{4}$ from the scalar-field literature will find the self-couplings wrong by a factor of six.</p>
 <h2 id="the-action-in-element-form">The Action in Element Form</h2>
 <p>The scalar block of the electroweak action, with the connection removed.</p>
 <p>$$
@@ -102,7 +102,7 @@ S=\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\partial_{\imath} h\,\partial_{\imath}h-\t
 \qquad m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}.
 $$</p>
 <p>The chart is the expansion about one point of the circle of minima, and the three terms after the mass term are the same $\varpi_{\mathrm{cpl}}$ read at third and fourth order.</p>
-<p>It is real, term by term. The kinetic term is $\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi=\sum_A(\partial_{\imath}\phi_A)^{2}/2$, a sum of squares with a fixed sign. The mass term is $-\mu^{2}\Phi^{\dagger}\Phi=-\mu^{2}\sum_A\phi_A^{2}/2$, real and negative. The quartic is $\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}=\varpi_{\mathrm{cpl}}(\sum_A\phi_A^{2})^{2}/4$, real and positive for $\varpi_{\mathrm{cpl}}&gt;0$. The potential is therefore bounded below, and the bound is what makes a minimum exist at all.</p>
+<p>It is real, term by term. The kinetic term is $\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi=\sum_A(\partial_{\imath}\xi_{\mathrm{pot},A})^{2}/2$, a sum of squares with a fixed sign. The mass term is $-\mu^{2}\Phi^{\dagger}\Phi=-\mu^{2}\sum_A\xi_{\mathrm{pot},A}^{2}/2$, real and negative. The quartic is $\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}=\varpi_{\mathrm{cpl}}(\sum_A\xi_{\mathrm{pot},A}^{2})^{2}/4$, real and positive for $\varpi_{\mathrm{cpl}}&gt;0$. The potential is therefore bounded below, and the bound is what makes a minimum exist at all.</p>
 <p><strong>Why the sign of $\mu^{2}$ is the whole content.</strong> With $\mu^{2}&lt;0$ the potential has a single stationary point, at $\Phi=0$, and it is a minimum; the four components are degenerate and each has mass $\sqrt{-\mu^{2}}$. With $\mu^{2}&gt;0$ the origin is a maximum and the minimum is the three-sphere $\Phi^{\dagger}\Phi=v^{2}/2$. Nothing else in the action changes. The article's subject is the second case, and the first is named here only because the same display covers both.</p>
 <p>What the display is not. It is not the electroweak action: three of the four derivatives are not there, and putting them back turns the three flat directions into the longitudinal polarisations of $W^{\pm}$ and $Z$. It is not a quantised action: there is no gauge fixing, no ghost and no loop. And it is not a claim that the scalar is elementary — the potential is a renormalisable truncation, and the corpus's effective-potential article treats what the truncation costs.</p>
 <h2 id="the-variation">The Variation</h2>
@@ -133,7 +133,7 @@ $$</p>
 <p>What the section does not claim. It does not claim the vacuum is undetermined: the potential selects it and the chart's constants fix its value. It claims that the selection is by energy and not by admissibility, and that distinction is what lets the structural consequence count the excitations around the minimum.</p>
 <h2 id="the-structural-consequence-one-variable-one-number-three-measurements">The Structural Consequence: One Variable, One Number, Three Measurements</h2>
 <p>The claim. The potential is a function of $r$ alone, so the four real components of the doublet split into one radial field with a curved potential and three angular fields with a flat one. The radial field's mass is the curvature at the minimum, and the same curvature's third and fourth derivatives are its self-couplings. One number determines three measured quantities.</p>
-<p>The split, in one line. $V$ depends on the four $\phi_A$ through $\sum_A\phi_A^{2}$ and on nothing else, so the symmetry group of the potential alone is $O(4)$, acting by rotations of the four-vector. A minimum at $r=v$ breaks $O(4)$ to $O(3)$, and the count of flat directions is $4-1=3$. Those three are the would-be Goldstone modes. Nothing about the gauge fields entered this paragraph, and that is the point: the breaking is a property of the potential.</p>
+<p>The split, in one line. $V$ depends on the four $\xi_{\mathrm{pot},A}$ through $\sum_A\xi_{\mathrm{pot},A}^{2}$ and on nothing else, so the symmetry group of the potential alone is $O(4)$, acting by rotations of the four-vector. A minimum at $r=v$ breaks $O(4)$ to $O(3)$, and the count of flat directions is $4-1=3$. Those three are the would-be Goldstone modes. Nothing about the gauge fields entered this paragraph, and that is the point: the breaking is a property of the potential.</p>
 <p>The curvature check. Expand $V$ about $r=v$:</p>
 <p>$$
 V(v+h)=V(v)+\tfrac12V''(v)h^{2}+\tfrac16V'''(v)h^{3}+\tfrac1{24}V''''(v)h^{4}+\cdots ,
@@ -188,7 +188,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\Phi$</td>
-<td>Complex doublet, four real components $\phi_A$</td>
+<td>Complex doublet, four real components $\xi_{\mathrm{pot},A}$</td>
 </tr>
 <tr>
 <td>$\mu^{2},\ \varpi_{\mathrm{cpl}}$</td>

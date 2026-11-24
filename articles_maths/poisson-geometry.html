@@ -159,11 +159,11 @@ q_1, \ldots, q_r, \; p_1, \ldots, p_r, \; y_1, \ldots, y_{n-2r}
 $$</p>
 <p>in which</p>
 <p>$$
-\boxed{\;\pi = \sum_{i=1}^{r} \partial/\partial q_i\wedge\partial/\partial p_i + \frac{1}{2}\sum_{j,k} \phi_{jk}(y)\, \partial/\partial y_j\wedge\partial/\partial y_k, \qquad \phi_{jk}(0) = 0\;} .
+\boxed{\;\pi = \sum_{i=1}^{r} \partial/\partial q_i\wedge\partial/\partial p_i + \frac{1}{2}\sum_{j,k} \digamma_{\mathrm{map},jk}(y)\, \partial/\partial y_j\wedge\partial/\partial y_k, \qquad \digamma_{\mathrm{map},jk}(0) = 0\;} .
 $$</p>
 <p>Consequently the Poisson structure is locally the product of a symplectic structure of dimension $2r$ and a Poisson structure whose rank vanishes at the origin, and the symplectic leaf through $x$ is locally the slice $y = 0$.</p>
-<p><strong>Proof sketch.</strong> The first term is the symplectic normal form along the leaf, produced by the symplectic Darboux theorem applied to the restriction of $\pi$ to the leaf and a complementary choice of coordinates; the remaining part is the <strong>transverse Poisson structure</strong>, defined on a complement to the leaf, and it is Poisson because the bracket of two functions of the transverse coordinates is again a function of them. The vanishing $\phi_{jk}(0)=0$ is the statement that the rank at the origin is exactly $2r$, so the transverse structure vanishes there.</p>
-<p><strong>Remark.</strong> The splitting theorem is the sharp local statement of Poisson geometry, and it is the reason a Poisson manifold is described as a foliation by symplectic leaves with a transverse singular structure. In the nondegenerate case $r = n/2$ it reduces to the Darboux theorem of <em>Symplectic Geometry</em>; in the Lie–Poisson case the leaves are the coadjoint orbits and the splitting is the theorem of Lie–Weinstein on the linearisation of a Poisson structure at a point. The local normal form is not a classification: the transverse factor $\phi$ has no linear term and its higher terms are arbitrary solutions of the Poisson condition, so two Poisson structures of the same rank at a point need not be locally isomorphic, and the classification of Poisson structures in dimension three is already a nontrivial problem.</p>
+<p><strong>Proof sketch.</strong> The first term is the symplectic normal form along the leaf, produced by the symplectic Darboux theorem applied to the restriction of $\pi$ to the leaf and a complementary choice of coordinates; the remaining part is the <strong>transverse Poisson structure</strong>, defined on a complement to the leaf, and it is Poisson because the bracket of two functions of the transverse coordinates is again a function of them. The vanishing $\digamma_{\mathrm{map},jk}(0)=0$ is the statement that the rank at the origin is exactly $2r$, so the transverse structure vanishes there.</p>
+<p><strong>Remark.</strong> The splitting theorem is the sharp local statement of Poisson geometry, and it is the reason a Poisson manifold is described as a foliation by symplectic leaves with a transverse singular structure. In the nondegenerate case $r = n/2$ it reduces to the Darboux theorem of <em>Symplectic Geometry</em>; in the Lie–Poisson case the leaves are the coadjoint orbits and the splitting is the theorem of Lie–Weinstein on the linearisation of a Poisson structure at a point. The local normal form is not a classification: the transverse factor $\digamma_{\mathrm{map}}$ has no linear term and its higher terms are arbitrary solutions of the Poisson condition, so two Poisson structures of the same rank at a point need not be locally isomorphic, and the classification of Poisson structures in dimension three is already a nontrivial problem.</p>
 <h2 id="poisson-maps-and-poisson-cohomology">Poisson Maps and Poisson Cohomology</h2>
 <p><strong>Definition.</strong> Let $(M, \pi)$ and $(N, \sigma)$ be Poisson manifolds. A <strong>Poisson map</strong> is a smooth map $F : M \to N$ with</p>
 <p>$$
@@ -253,7 +253,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(q_i, p_i, y_j)$</td>
-<td>Weinstein splitting coordinates; $\pi = \sum\partial/\partial q_i\wedge\partial/\partial p_i + \frac12\sum\phi_{jk}(y)\partial/\partial y_j\wedge\partial/\partial y_k$</td>
+<td>Weinstein splitting coordinates; $\pi = \sum\partial/\partial q_i\wedge\partial/\partial p_i + \frac12\sum\digamma_{\mathrm{map},jk}(y)\partial/\partial y_j\wedge\partial/\partial y_k$</td>
 </tr>
 <tr>
 <td>$\mathrm{G}^*$, $\{f,g\}(\zeta)=\langle\zeta,[df,dg]\rangle$</td>

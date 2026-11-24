@@ -89,15 +89,15 @@ with the inner product inherited from $L^2(\Omega)$. The <strong>Bergman operato
 <p><strong>Proposition (the projection exists).</strong> For a closed subspace of a Hilbert space the orthogonal projection exists, is unique, is linear, and is characterised by $P f \in A^2(\Omega)$ and $f - Pf \perp A^2(\Omega)$; in particular $P$ is the identity on $A^2(\Omega)$ and kills the orthogonal complement.</p>
 <p><strong>Proof.</strong> This is the projection theorem of <em>Hilbert Spaces</em> applied to the closed subspace $A^2(\Omega)$; the characterisation is the definition of the orthogonal decomposition $L^2 = A^2 \oplus (A^2)^{\perp}$.</p>
 <h2 id="the-bergman-kernel-and-the-reproducing-property">The Bergman Kernel and the Reproducing Property</h2>
-<p><strong>Definition.</strong> Let $(\varphi_j)_{j \ge 0}$ be an orthonormal basis of $A^2(\Omega)$. The <strong>Bergman kernel</strong> of $\Omega$ is
+<p><strong>Definition.</strong> Let $(\digamma_{\mathrm{map},j})_{j \ge 0}$ be an orthonormal basis of $A^2(\Omega)$. The <strong>Bergman kernel</strong> of $\Omega$ is
 $$
-K(z, w) = \sum_{j \ge 0} \varphi_j(z)\,\overline{\varphi_j(w)} .
+K(z, w) = \sum_{j \ge 0} \digamma_{\mathrm{map},j}(z)\,\overline{\digamma_{\mathrm{map},j}(w)} .
 $$</p>
 <p><strong>Proposition (the kernel is well defined, independent of the basis and reproducing).</strong> The series converges absolutely and locally uniformly, the sum does not depend on the orthonormal basis, $K$ is holomorphic in $z$ and antiholomorphic in $w$, it satisfies the Hermitian symmetry $K(w, z) = \overline{K(z, w)}$, and for every $f \in A^2(\Omega)$
 $$
 \boxed{\;f(z) = \langle f, K(\cdot, z)\rangle = \int_\Omega f(w)\,\overline{K(z, w)}\,dV(w)\;} .
 $$</p>
-<p><strong>Proof.</strong> For fixed $z$ the functional $f \mapsto f(z)$ is continuous by the previous section, so it is represented by a unique vector $K_z \in A^2(\Omega)$ with $f(z) = \langle f, K_z\rangle$, by Riesz's theorem of <em>Hilbert Spaces</em>; expanding $K_z = \sum_j \langle K_z,\varphi_j\rangle\varphi_j$ and using $\langle K_z,\varphi_j\rangle = \overline{\varphi_j(z)}$ gives $K_z = \sum_j \overline{\varphi_j(z)}\,\varphi_j$, and $K(z,w) = \overline{K_w(z)}$ is its evaluation. The absolute and locally uniform convergence is the convergence in $A^2$ together with the continuity of the evaluations; the independence of the basis is the uniqueness of the representing vector; the symmetry is $K(w,z) = \overline{K(z,w)}$ read from the display.</p>
+<p><strong>Proof.</strong> For fixed $z$ the functional $f \mapsto f(z)$ is continuous by the previous section, so it is represented by a unique vector $K_z \in A^2(\Omega)$ with $f(z) = \langle f, K_z\rangle$, by Riesz's theorem of <em>Hilbert Spaces</em>; expanding $K_z = \sum_j \langle K_z,\digamma_{\mathrm{map},j}\rangle\digamma_{\mathrm{map},j}$ and using $\langle K_z,\digamma_{\mathrm{map},j}\rangle = \overline{\digamma_{\mathrm{map},j}(z)}$ gives $K_z = \sum_j \overline{\digamma_{\mathrm{map},j}(z)}\,\digamma_{\mathrm{map},j}$, and $K(z,w) = \overline{K_w(z)}$ is its evaluation. The absolute and locally uniform convergence is the convergence in $A^2$ together with the continuity of the evaluations; the independence of the basis is the uniqueness of the representing vector; the symmetry is $K(w,z) = \overline{K(z,w)}$ read from the display.</p>
 <p><strong>Corollary (the kernel is the projection's kernel).</strong> $P$ is the integral operator with kernel $K$,
 $$
 (Pf)(z) = \int_\Omega K(z, w)\,f(w)\,dV(w) \qquad (f \in L^2(\Omega)),
@@ -137,7 +137,7 @@ $$</p>
 <p><strong>Proof.</strong> The conjugation statement is that $U_F$ preserves the subspace $A^2(\Omega)$ and hence the projection onto it; the metric statement is that $\partial\bar\partial\log K(z,z)$ transforms by the modulus of the holomorphic factor, which is a holomorphic reparametrisation of the Kähler potential. The automorphism group and the metric are <em>Hermitian Symmetric Spaces and the Bergman Metric</em>.</p>
 <p><strong>Example (unit disc invariance check).</strong> For $F(z) = \exp(i\theta)z$ one has $\det F' = \exp(i\theta)$ and $K_{\mathbb{U}}(F(z),F(w)) = K_{\mathbb{U}}(z,w)$, so the transformation law reads $K_{\mathbb{U}}(z,w) = \exp(i\theta)K_{\mathbb{U}}(z,w)\exp(-i\theta)$, an identity; for the disc automorphism $F(z) = \tfrac{z-a}{1-\bar a z}$ the same computation reproduces $K_{\mathbb{U}}$ and shows the invariance of the hyperbolic metric.</p>
 <h2 id="summary">Summary</h2>
-<p>A bounded domain $\Omega \subseteq \mathbb{C}^n$ carries the Bergman space $A^2(\Omega)$ of holomorphic square-integrable functions, a closed subspace of $L^2(\Omega)$ and hence a Hilbert space, and the Bergman operator $P$ is the orthogonal projection of $L^2(\Omega)$ onto it. The projection is represented by the Bergman kernel $K(z,w) = \sum_j \varphi_j(z)\overline{\varphi_j(w)}$, holomorphic in $z$, antiholomorphic in $w$, Hermitian and positive definite, and reproducing every $f \in A^2$ by the integral against $K$; it satisfies $P^2 = P$, $P^{*} = P$, $\|P\| = 1$ and $P \ge 0$ for the chosen $L^2$ form. A biholomorphism $F : \Omega_1 \to \Omega_2$ acts by the isometry $g \mapsto (g\circ F)\det F'$, and the kernels transform by $K_{\Omega_1}(z,w) = \det F'(z)\,K_{\Omega_2}(F(z),F(w))\,\overline{\det F'(w)}$, so the holomorphic automorphisms of the domain preserve the projection up to conjugation and the Bergman metric up to holomorphic reparametrisation. The metric, the automorphism group and the Hermitian symmetric spaces are <em>Hermitian Symmetric Spaces and the Bergman Metric</em>; the involutions of the projection are <em>Involutions of the Bergman Operator</em>.</p>
+<p>A bounded domain $\Omega \subseteq \mathbb{C}^n$ carries the Bergman space $A^2(\Omega)$ of holomorphic square-integrable functions, a closed subspace of $L^2(\Omega)$ and hence a Hilbert space, and the Bergman operator $P$ is the orthogonal projection of $L^2(\Omega)$ onto it. The projection is represented by the Bergman kernel $K(z,w) = \sum_j \digamma_{\mathrm{map},j}(z)\overline{\digamma_{\mathrm{map},j}(w)}$, holomorphic in $z$, antiholomorphic in $w$, Hermitian and positive definite, and reproducing every $f \in A^2$ by the integral against $K$; it satisfies $P^2 = P$, $P^{*} = P$, $\|P\| = 1$ and $P \ge 0$ for the chosen $L^2$ form. A biholomorphism $F : \Omega_1 \to \Omega_2$ acts by the isometry $g \mapsto (g\circ F)\det F'$, and the kernels transform by $K_{\Omega_1}(z,w) = \det F'(z)\,K_{\Omega_2}(F(z),F(w))\,\overline{\det F'(w)}$, so the holomorphic automorphisms of the domain preserve the projection up to conjugation and the Bergman metric up to holomorphic reparametrisation. The metric, the automorphism group and the Hermitian symmetric spaces are <em>Hermitian Symmetric Spaces and the Bergman Metric</em>; the involutions of the projection are <em>Involutions of the Bergman Operator</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -165,10 +165,10 @@ $$</p>
 </tr>
 <tr>
 <td>$K(z,w)$</td>
-<td>the Bergman kernel, $\sum_j \varphi_j(z)\overline{\varphi_j(w)}$</td>
+<td>the Bergman kernel, $\sum_j \digamma_{\mathrm{map},j}(z)\overline{\digamma_{\mathrm{map},j}(w)}$</td>
 </tr>
 <tr>
-<td>$\varphi_j$</td>
+<td>$\digamma_{\mathrm{map},j}$</td>
 <td>an orthonormal basis of $A^2(\Omega)$</td>
 </tr>
 <tr>

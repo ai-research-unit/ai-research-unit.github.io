@@ -143,9 +143,9 @@ $$</p>
 <thead>
 <tr>
 <th>Term</th>
-<th>$\bar\psi_L$</th>
+<th>$\barΞ_{\mathrm{wfn},L}$</th>
 <th>scalar</th>
-<th>$\psi_R$</th>
+<th>$Ξ_{\mathrm{wfn},R}$</th>
 <th>Sum</th>
 </tr>
 </thead>
@@ -178,13 +178,13 @@ $$</p>
 <h2 id="after-the-breaking-the-mass-matrix">After the Breaking: The Mass Matrix</h2>
 <p>The substitution. With $\langle\omicron_{\mathrm{hgs}}\rangle=\frac{1}{\sqrt2}\binom{0}{v}$, the neutral component of $\omicron_{\mathrm{hgs}}$ is replaced by $(v+h)/\sqrt2$ and each Yukawa term becomes a mass term plus a coupling to $h$:</p>
 <p>$$
-\mathcal{L}_{\mathrm{Yuk}}\supset-\frac{v}{\sqrt2}\sum_{a,b}\bar\psi_{L,a}Y_{f,ab}\psi_{R,b}\left(1+\frac{h}{v}\right)+\text{h.c.}
+\mathcal{L}_{\mathrm{Yuk}}\supset-\frac{v}{\sqrt2}\sum_{a,b}\barΞ_{\mathrm{wfn},L,a}Y_{f,ab}Ξ_{\mathrm{wfn},R,b}\left(1+\frac{h}{v}\right)+\text{h.c.}
 $$</p>
 <p>The mass matrix. Define</p>
 <p>$$
 M_f=\frac{v}{\sqrt2}\,Y_{f} ,
 $$</p>
-<p>a general complex $3\times3$ matrix. The mass term is $-\bar\psi_LM_f\psi_R+\text{h.c.}$, and the physical masses are not its diagonal entries: those depend on the flavour basis, which is a choice.</p>
+<p>a general complex $3\times3$ matrix. The mass term is $-\barΞ_{\mathrm{wfn},L}M_fΞ_{\mathrm{wfn},R}+\text{h.c.}$, and the physical masses are not its diagonal entries: those depend on the flavour basis, which is a choice.</p>
 <p><strong>Why the matrix is not Hermitian, and what that does and does not buy.</strong> Hermiticity of $M_f$ would mean $Y_{f}^{\dagger}=Y_{f}$, a condition the gauge symmetry does not impose. It is worth being exact about what Hermiticity would forbid, because the tempting statement is wrong. A Hermitian $M_f$ is diagonalised by <em>one</em> unitary, so the left and right bases of a single sector would coincide and $V_f=W_f$. The mixing, however, is the misalignment between the <em>up</em> and <em>down</em> sectors: if $M_u=U_uD_uU_u^{\dagger}$ and $M_d=U_dD_dU_d^{\dagger}$ then $V_{\mathrm{CKM}}=U_u^{\dagger}U_d$, which is generic. Two Hermitian matrices need not commute. So the measured mixing is not evidence that the Yukawa matrices are non-Hermitian; it is evidence that the two sectors are not aligned in flavour space. What Hermiticity would remove is the separate right-handed basis, and with it half the parameters — nine real numbers per Hermitian matrix against eighteen per general one — which is why imposing it would be an addition to the model and not a reading of it.</p>
 <p>One number per entry, one meaning per invariant. A complex $3\times3$ matrix has nine complex entries, hence eighteen real numbers. Under a change of flavour basis it transforms as $M_f\mapsto U^{\dagger}M_fV$ with $U$ and $V$ unitary, and the only quantities unchanged by all such transformations are the three singular values. Those three are the masses.</p>
 <h2 id="bi-unitary-diagonalisation">Bi-unitary Diagonalisation</h2>
@@ -476,7 +476,7 @@ $$</p>
 <h2 id="what-the-higgs-coupling-makes-testable">What the Higgs Coupling Makes Testable</h2>
 <p>The coupling is the mass over the scale. Expanding the mass term to first order in $h$ gives</p>
 <p>$$
-\mathcal{L}\supset-\frac{m_f}{v}\,h\,\bar\psi\psi ,
+\mathcal{L}\supset-\frac{m_f}{v}\,h\,\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}} ,
 \qquad
 g_{hf\bar f}=\frac{m_f}{v} .
 $$</p>
@@ -651,7 +651,7 @@ $$</p>
 <td>The quark and lepton multiplets, with the quantum numbers of article 1</td>
 </tr>
 <tr>
-<td>$\psi$</td>
+<td>$Ξ_{\mathrm{wfn}}$</td>
 <td>A generic fermion field, standing for any of the six</td>
 </tr>
 <tr>

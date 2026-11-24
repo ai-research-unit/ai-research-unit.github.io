@@ -80,7 +80,7 @@ X=\sum_{k,l=1}^{3}X_{kl}E_{kl},
 $$</p>
 <p>and for fixed $l$ the <strong>column</strong> is</p>
 <p>$$
-\psi^{(l)}=(X_{1l},\dots,X_{3 l}).
+Ξ_{\mathrm{wfn}}^{(l)}=(X_{1l},\dots,X_{3 l}).
 $$</p>
 <p>A <strong>spinor</strong> is a column up to a common nonzero factor.</p>
 <p><strong>Why a column.</strong> Left multiplication by $A=\sum A_{rs}E_{rs}$ gives</p>
@@ -92,16 +92,16 @@ $$</p>
 <h2 id="the-gauge">The Gauge</h2>
 <p><strong>Proposition.</strong> Under $E'_{kl}=t_kt_l^{-1}E_{kl}$ the coordinates transform by $X'_{kl}=t_k^{-1}t_lX_{kl}$, so after multiplying the column by $t_l^{-1}$ the entries transform by</p>
 <p>$$
-\psi_k\longmapsto t_k^{-1}\psi_k .
+Ξ_{\mathrm{wfn},k}\longmapsto t_k^{-1}Ξ_{\mathrm{wfn},k} .
 $$</p>
 <p><strong>Proof.</strong> The coordinate law is that of <em>The Peirce Basis of $M_3(\mathbb{C})$</em>. Multiplying the column by $t_l^{-1}$ removes the factor $t_l$ and leaves $t_k^{-1}$ on the $k$-th entry.</p>
 <p>The effective group is $(\mathbb{C}^{\times})^{3-1}$: the common rescaling of all entries is the overall factor of the column, which is not part of the spinor.</p>
 <h2 id="the-projective-reading">The Projective Reading</h2>
 <p>A spinor up to scale is a point of $\mathbb{P}^{3-1}$,</p>
 <p>$$
-[\psi]=[\psi_1:\cdots:\psi_3].
+[Ξ_{\mathrm{wfn}}]=[Ξ_{\mathrm{wfn},1}:\cdots:Ξ_{\mathrm{wfn},3}].
 $$</p>
-<p>On the open set where every entry is nonzero, the gauge acts transitively: given $[\psi]$ and $[\varphi]$, the scalars $t_k=\psi_k/\varphi_k$ send one to the other. So the orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is its zero pattern.</p>
+<p>On the open set where every entry is nonzero, the gauge acts transitively: given $[Ξ_{\mathrm{wfn}}]$ and $[\digamma_{\mathrm{map}}]$, the scalars $t_k=Ξ_{\mathrm{wfn},k}/\digamma_{\mathrm{map},k}$ send one to the other. So the orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is its zero pattern.</p>
 <p><strong>Invariants need a cycle.</strong> A product of coordinates around a closed cycle is gauge invariant:</p>
 <p>$$
 X_{k_1k_2}X_{k_2k_3}\cdots X_{k_mk_1}\longmapsto\Bigl(\prod_r t_{k_r}^{-1}t_{k_{r+1}}\Bigr)X_{k_1k_2}\cdots X_{k_mk_1}=X_{k_1k_2}\cdots X_{k_mk_1}.
@@ -110,7 +110,7 @@ $$</p>
 <h2 id="the-hermitian-norm">The Hermitian Norm</h2>
 <p>If the family and the basis are Hermitian, the gauge is $|t_k|=1$, and</p>
 <p>$$
-\sum_{k=1}^{3}|\psi_k|^{2}\longmapsto\sum_{k=1}^{3}|\psi_k|^{2}.
+\sum_{k=1}^{3}|Ξ_{\mathrm{wfn},k}|^{2}\longmapsto\sum_{k=1}^{3}|Ξ_{\mathrm{wfn},k}|^{2}.
 $$</p>
 <p>The norm is gauge invariant, and the orbit is the set of spinors with the same moduli.</p>
 <h2 id="the-chiral-split">The Chiral Split</h2>
@@ -133,7 +133,7 @@ $$</p>
 <h2 id="what-a-spinor-is-not">What a Spinor Is Not</h2>
 <p>A spinor is not an arbitrary element of $M_3(\mathbb{C})$; it is one column of the coordinates of an element. It is not a Peirce line; it is a tuple of coordinates on $3$ of them. It is not gauge invariant; only the element and its cycle invariants are. It is not the pair of all columns; that is the element.</p>
 <h2 id="summary">Summary</h2>
-<p>The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{3 l})$ up to scale. The gauge sends $\psi_k\mapsto t_k^{-1}\psi_k$, with effective group $(\mathbb{C}^{\times})^{3-1}$; projectively the orbit is fixed by the zero pattern; in the Hermitian gauge the norm is invariant. Under the chain the column is the highest-weight-$1$ space, so the number of components is $3=2s+1$. A balanced chiral split exists only for even $n$, and the half-angle is a path-and-lift parameter, not a Peirce object.</p>
+<p>The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{3 l})$ up to scale. The gauge sends $Ξ_{\mathrm{wfn},k}\mapsto t_k^{-1}Ξ_{\mathrm{wfn},k}$, with effective group $(\mathbb{C}^{\times})^{3-1}$; projectively the orbit is fixed by the zero pattern; in the Hermitian gauge the norm is invariant. Under the chain the column is the highest-weight-$1$ space, so the number of components is $3=2s+1$. A balanced chiral split exists only for even $n$, and the half-angle is a path-and-lift parameter, not a Peirce object.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -148,7 +148,7 @@ $$</p>
 <td>The Peirce coordinate</td>
 </tr>
 <tr>
-<td>$\psi^{(l)}$</td>
+<td>$Ξ_{\mathrm{wfn}}^{(l)}$</td>
 <td>The column of index $l$, a spinor</td>
 </tr>
 <tr>

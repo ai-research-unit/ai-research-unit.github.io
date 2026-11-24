@@ -110,41 +110,41 @@ complement".</p>
 <p><strong>Proof.</strong> The statement is the theorem together with the definition of the residuals; the two
 composites with $R^{-1}$ appear in the two displayed formulas.</p>
 <h2 id="compatibility-with-the-operator-layer-involution">Compatibility with the Operator-Layer Involution</h2>
-<p>Let $\varphi$ be the involution of the operator layer of <em>Involutions of the Operator Layer</em>, acting on
-operators $F$ on relations by $\varphi(F)(R) = (F(R^{-1}))^{-1}$, that is, conjugation by the converse.</p>
+<p>Let $\digamma_{\mathrm{map}}$ be the involution of the operator layer of <em>Involutions of the Operator Layer</em>, acting on
+operators $F$ on relations by $\digamma_{\mathrm{map}}(F)(R) = (F(R^{-1}))^{-1}$, that is, conjugation by the converse.</p>
 <p><strong>Theorem.</strong> The involution exchanges the two composition operators and substitutes the converse:</p>
 <p>$$
-\boxed{\;\varphi(L_R) = R_{R^{-1}}, \qquad \varphi(R_R) = L_{R^{-1}}\;} .
+\boxed{\;\digamma_{\mathrm{map}}(L_R) = R_{R^{-1}}, \qquad \digamma_{\mathrm{map}}(R_R) = L_{R^{-1}}\;} .
 $$</p>
-<p><strong>Proof.</strong> For the first, $\varphi(L_R)(S) = (L_R(S^{-1}))^{-1} = (R ; S^{-1})^{-1} = (S^{-1})^{-1} ; R^{-1} = S ; R^{-1} = R_{R^{-1}}(S)$, using the law of the converse for a composite. The second is the
+<p><strong>Proof.</strong> For the first, $\digamma_{\mathrm{map}}(L_R)(S) = (L_R(S^{-1}))^{-1} = (R ; S^{-1})^{-1} = (S^{-1})^{-1} ; R^{-1} = S ; R^{-1} = R_{R^{-1}}(S)$, using the law of the converse for a composite. The second is the
 same computation with the roles of the sides exchanged.</p>
 <p><strong>Corollary.</strong> The involution is an automorphism of the composition of operators,
-$\varphi(F \circ G) = \varphi(F) \circ \varphi(G)$, and it is an anti-automorphism of the composition of
+$\digamma_{\mathrm{map}}(F \circ G) = \digamma_{\mathrm{map}}(F) \circ \digamma_{\mathrm{map}}(G)$, and it is an anti-automorphism of the composition of
 relations in the following sense: on the operators, it is a homomorphism; on the relations, the operator
 it is applied to has its converse taken. It maps the fixed operators of the operator layer, hence the
 operators that commute with the converse, to themselves.</p>
 <p><strong>Proof.</strong> The homomorphism property is the general property of the conjugation of <em>Involutions of the
 Operator Layer</em>; the last statement is the definition of the fixed part there.</p>
-<p><strong>Theorem (the two adjointnesses agree).</strong> The involution $\varphi$ exchanges the two members of the
-residuation: if $L_R$ has the right adjoint $K_R : T \mapsto R \backslash T$, then $\varphi(K_R)$ is the
-<strong>left</strong> adjoint of $\varphi(L_R) = R_{R^{-1}}$, and explicitly</p>
+<p><strong>Theorem (the two adjointnesses agree).</strong> The involution $\digamma_{\mathrm{map}}$ exchanges the two members of the
+residuation: if $L_R$ has the right adjoint $K_R : T \mapsto R \backslash T$, then $\digamma_{\mathrm{map}}(K_R)$ is the
+<strong>left</strong> adjoint of $\digamma_{\mathrm{map}}(L_R) = R_{R^{-1}}$, and explicitly</p>
 <p>$$
-\boxed{\;\varphi(K_R)(T) = \overline{\overline{T} ; R} = T / R^{-1}\;} .
+\boxed{\;\digamma_{\mathrm{map}}(K_R)(T) = \overline{\overline{T} ; R} = T / R^{-1}\;} .
 $$</p>
 <p><strong>Proof.</strong> The adjunction-reversal of <em>Involutions of the Operator Layer</em> applied to $L_R \dashv K_R$
-gives $K_R^{\perp} \dashv L_R^{\perp}$, that is, $\varphi(K_R) \dashv \varphi(L_R)$. For the explicit
-formula, $K_R(T) = \overline{R^{-1};\overline{T}}$, so $\varphi(K_R)(T) = (K_R(T^{-1}))^{-1} = \overline{\overline{(T^{-1})} ; R} = \overline{\overline{T};R}$, using $(\overline{R^{-1};\overline{T^{-1}}})^{-1} = \overline{(\overline{T^{-1}})^{-1}; R}$; and $\overline{\overline{T};R} = T / R^{-1}$ by the definition
+gives $K_R^{\perp} \dashv L_R^{\perp}$, that is, $\digamma_{\mathrm{map}}(K_R) \dashv \digamma_{\mathrm{map}}(L_R)$. For the explicit
+formula, $K_R(T) = \overline{R^{-1};\overline{T}}$, so $\digamma_{\mathrm{map}}(K_R)(T) = (K_R(T^{-1}))^{-1} = \overline{\overline{(T^{-1})} ; R} = \overline{\overline{T};R}$, using $(\overline{R^{-1};\overline{T^{-1}}})^{-1} = \overline{(\overline{T^{-1}})^{-1}; R}$; and $\overline{\overline{T};R} = T / R^{-1}$ by the definition
 of the left residual, since $(R^{-1})^{-1} = R$.</p>
 <p><strong>Example.</strong> Let $R$ be a function, so that $R^{-1}$ is its inverse relation. Then $R \backslash T = R^{-1} ; T$ (no complement is needed, because $R$ is total and single-valued), and the two operators
 $L_R$ and $L_{R^{-1}}$ are mutually inverse on the level of the induced maps; the involution
-$\varphi$ fixes the pair. For a general relation the complement remains and the adjoint is the residual
+$\digamma_{\mathrm{map}}$ fixes the pair. For a general relation the complement remains and the adjoint is the residual
 of the theorem.</p>
 <h2 id="summary">Summary</h2>
 <p>The converse is the adjoint of a relation for composition: the operator "compose with $R$" is
 residuated with right adjoint the residual $R \backslash T = \overline{R^{-1} ; \overline{T}}$, and the
 same holds on the other side with $T / R = \overline{\overline{T} ; R^{-1}}$; the converse is exactly
 what computes the adjoint, and the unit and counit are the two inclusions of the residuation.</p>
-<p>On the operator layer the conjugation by the converse, $\varphi(F)(R) = (F(R^{-1}))^{-1}$, is an
+<p>On the operator layer the conjugation by the converse, $\digamma_{\mathrm{map}}(F)(R) = (F(R^{-1}))^{-1}$, is an
 involution and an automorphism of the composition of operators that sends the left-composition with $R$
 to the right-composition with $R^{-1}$ and conversely, and it reverses the residuation by exchanging
 the left and the right adjoints. So the converse is the adjoint of $R$ for the order and, at the same
@@ -171,11 +171,11 @@ time, the operation that makes the operator-layer involution act on composition.
 <td>Left residual</td>
 </tr>
 <tr>
-<td>$\varphi(F)(R) = (F(R^{-1}))^{-1}$</td>
+<td>$\digamma_{\mathrm{map}}(F)(R) = (F(R^{-1}))^{-1}$</td>
 <td>The operator-layer involution</td>
 </tr>
 <tr>
-<td>$\varphi(L_R) = R_{R^{-1}}$, $\varphi(R_R) = L_{R^{-1}}$</td>
+<td>$\digamma_{\mathrm{map}}(L_R) = R_{R^{-1}}$, $\digamma_{\mathrm{map}}(R_R) = L_{R^{-1}}$</td>
 <td>The exchange of the composition operators</td>
 </tr>
 </tbody>

@@ -98,9 +98,9 @@ $$</p>
 \mathrm{dom}\,T = \Bigl\{y\in L^2_w : y,y'\in AC_{\mathrm{loc}},\ \ell y\in L^2_w,\ \text{the conditions hold at } a,b\Bigr\} .
 $$</p>
 <p><em>Proof.</em> The bracket $[p(y\bar v'-y'\bar v)]_a^b$ is the sum of the two endpoint forms; a separated condition at each endpoint makes each endpoint form vanish because the pair $(y,(py'))$ is parallel to $(\alpha_2,-\alpha_1)$, so the assembled vector is isotropic, and a coupled condition with a Lagrangian matrix makes the whole form vanish. The self-adjointness is the preceding theorem, and the domain is the maximal domain cut down by the conditions.</p>
-<p><strong>Theorem (compact resolvent and the eigenfunction expansion).</strong> Let the problem be regular and let $T$ be a self-adjoint extension. Then $T$ has a compact resolvent, its spectrum is discrete, real and simple, the eigenvalues $\lambda_1&lt;\lambda_2&lt;\cdots$ tend to infinity, and the eigenfunctions $\varphi_n$ are complete in $L^2_w(a,b)$:</p>
+<p><strong>Theorem (compact resolvent and the eigenfunction expansion).</strong> Let the problem be regular and let $T$ be a self-adjoint extension. Then $T$ has a compact resolvent, its spectrum is discrete, real and simple, the eigenvalues $\lambda_1&lt;\lambda_2&lt;\cdots$ tend to infinity, and the eigenfunctions $\digamma_{\mathrm{map},n}$ are complete in $L^2_w(a,b)$:</p>
 <p>$$
-\boxed{\;f=\sum_{n\ge1}\bigl(f,\varphi_n\bigr)_w\varphi_n , \qquad \|f\|_w^2=\sum_{n\ge1}\bigl|(f,\varphi_n)_w\bigr|^2\;} .
+\boxed{\;f=\sum_{n\ge1}\bigl(f,\digamma_{\mathrm{map},n}\bigr)_w\digamma_{\mathrm{map},n} , \qquad \|f\|_w^2=\sum_{n\ge1}\bigl|(f,\digamma_{\mathrm{map},n})_w\bigr|^2\;} .
 $$</p>
 <p><em>Proof.</em> The resolvent of a regular problem is the Green operator, which is compact on $L^2_w$ because it maps into a space of functions with an $L^2$ second derivative, compactly embedded by Rellich–Kondrachov; the compact self-adjoint spectral theorem of <em>Banach and Hilbert Spaces</em> then gives the orthonormal basis of eigenvectors, and the reality and the simplicity are those of the self-adjoint problem. The expansion is the expansion in that basis.</p>
 <h2 id="the-singular-case">The Singular Case</h2>
@@ -109,10 +109,10 @@ $$</p>
 <p><em>Proof.</em> The solutions of $\ell y=\lambda y$ near a singular endpoint span a two-dimensional space, and the $L^2_w$ condition selects a subspace whose dimension is independent of $\lambda$ in the upper half-plane by the theory of the Weyl circle and the Weyl coefficient; the two cases are the two possibilities. At a limit-point endpoint the maximal and minimal domains require no boundary condition because only one solution is $L^2_w$, so the bracket vanishes automatically; at a limit-circle endpoint the two $L^2_w$ solutions make the bracket nontrivial and a one-parameter family of conditions is required. The detailed computation with the Weyl circles is that of <em>The Sturm–Liouville Operator</em> and <em>Ordinary Differential Equations</em>.</p>
 <p><strong>Theorem (the expansion in the singular case).</strong> For a self-adjoint singular Sturm–Liouville operator the spectrum is the union of the discrete eigenvalues and the essential spectrum, the eigenfunction expansion holds in the generalised sense with respect to a spectral measure $\rho$,</p>
 <p>$$
-f\sim\int_{\sigma(T)}\Bigl(\int f\varphi(x,w)\,w\,dx\Bigr)\varphi(\cdot,w)\,d\rho(w) ,
+f\sim\int_{\sigma(T)}\Bigl(\int f\digamma_{\mathrm{map}}(x,w)\,w\,dx\Bigr)\digamma_{\mathrm{map}}(\cdot,w)\,d\rho(w) ,
 $$</p>
 <p>and the measure $\rho$ is the Weyl–Titchmarsh measure of the problem; when the spectrum is discrete the integral is the sum of the regular expansion.</p>
-<p><em>Proof.</em> The self-adjoint operator has a spectral measure by the spectral theorem, and the generalised eigenfunctions $\varphi(\cdot,w)$ diagonalise it; the representation is the direct integral form of that theorem. The discrete case is the special case in which the spectral measure is a sum of atoms, which is the regular expansion above.</p>
+<p><em>Proof.</em> The self-adjoint operator has a spectral measure by the spectral theorem, and the generalised eigenfunctions $\digamma_{\mathrm{map}}(\cdot,w)$ diagonalise it; the representation is the direct integral form of that theorem. The discrete case is the special case in which the spectral measure is a sum of atoms, which is the regular expansion above.</p>
 <h2 id="summary">Summary</h2>
 <p>A Sturm–Liouville expression $\ell y=-(py')'+qy$ determines the minimal operator $T_0$, the closure on the compactly supported functions, and the maximal operator $T_1$, whose domain is the set of $L^2_w$ functions with $\ell y\in L^2_w$; the minimal operator is symmetric and $T_0^{*}=T_1$. The self-adjoint operators are the operators between them whose domain makes the classical bracket $[p(y\bar v'-y'\bar v)]_a^b$ vanish, that is, whose boundary conditions are Lagrangian for the boundary form; in the regular case they are given by separated or coupled boundary conditions, and the operator has a compact resolvent, a discrete real spectrum with eigenvalues going to infinity and a complete orthonormal eigenfunction expansion in $L^2_w$. At a singular endpoint the alternatives of Weyl apply: the endpoint is limit-point if only one solution of $\ell y=\lambda y$ is square-integrable there, in which case no boundary condition is needed and the endpoint is essentially self-adjoint, and limit-circle if two are, in which case a one-parameter family of boundary conditions is required. The self-adjoint singular operator has a discrete part and an essential part, and its eigenfunction expansion holds with respect to the Weyl–Titchmarsh spectral measure, the regular expansion being the discrete case.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -157,7 +157,7 @@ $$</p>
 <td>Weyl–Titchmarsh spectral measure</td>
 </tr>
 <tr>
-<td>$\lambda_n,\varphi_n$</td>
+<td>$\lambda_n,\digamma_{\mathrm{map},n}$</td>
 <td>Eigenvalues and eigenfunctions in the regular case</td>
 </tr>
 </tbody>

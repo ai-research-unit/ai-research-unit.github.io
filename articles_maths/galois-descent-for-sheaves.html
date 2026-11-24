@@ -80,14 +80,14 @@
 <p><em>Proof.</em> The action on $X_K$ and on the coefficients is the action on the second factor of the base change, which is an action by the definition of the Galois group; the fixed field is the fundamental theorem of <em>Galois Theory</em>. The functoriality on sheaves is the functoriality of the pullback.</p>
 <p><strong>Definition.</strong> A <strong>$\Gamma$-equivariant sheaf</strong> over $X_K$ is a sheaf $\mathcal{M}$ of $\mathcal{O}_{X_K}$-modules with, for every $\gamma\in\Gamma$, a <strong>semilinear</strong> isomorphism</p>
 <p>$$
-\varphi_{\gamma}:\gamma_*\mathcal{M}\longrightarrow\mathcal{M},\qquad \varphi_{\gamma}(a m)=\gamma(a)\varphi_{\gamma}(m),
+\digamma_{\mathrm{map},\gamma}:\gamma_*\mathcal{M}\longrightarrow\mathcal{M},\qquad \digamma_{\mathrm{map},\gamma}(a m)=\gamma(a)\digamma_{\mathrm{map},\gamma}(m),
 $$</p>
-<p>satisfying the cocycle $\varphi_{\gamma\delta}=\varphi_{\gamma}\circ\gamma_*(\varphi_{\delta})$ and $\varphi_e=\mathrm{id}$; a morphism of $\Gamma$-equivariant sheaves is a morphism of sheaves of $\mathcal{O}_{X_K}$-modules commuting with the $\varphi_{\gamma}$. The category is written $\mathrm{Sh}_{\Gamma}(X_K)$.</p>
+<p>satisfying the cocycle $\digamma_{\mathrm{map},\gamma\delta}=\digamma_{\mathrm{map},\gamma}\circ\gamma_*(\digamma_{\mathrm{map},\delta})$ and $\digamma_{\mathrm{map},e}=\mathrm{id}$; a morphism of $\Gamma$-equivariant sheaves is a morphism of sheaves of $\mathcal{O}_{X_K}$-modules commuting with the $\digamma_{\mathrm{map},\gamma}$. The category is written $\mathrm{Sh}_{\Gamma}(X_K)$.</p>
 <p><strong>Remark (the same structure as the equivariant sheaf).</strong> The definition is that of <em>Equivariant Sheaves and Descent</em> with the group $\Gamma$ acting on the space $X_K$, with the one addition that the coefficient maps are required to be <strong>semilinear</strong> over $K$: the action of $\Gamma$ on the coefficients is the Galois action, and it must not be confused with a complex-linear or an $X$-linear action. The semilinearity is the descent datum of the Galois cover $X_K\to X$, and the descent of the next sections is the Galois descent.</p>
 <h2 id="the-descent-datum-and-the-fixed-part">The Descent Datum and the Fixed Part</h2>
-<p><strong>Definition.</strong> The <strong>descent datum</strong> of a $\Gamma$-equivariant sheaf $\mathcal{M}$ over $X_K$ is the family of the semilinear isomorphisms $\varphi_{\gamma}$ together with their cocycle. The <strong>fixed part</strong> is</p>
+<p><strong>Definition.</strong> The <strong>descent datum</strong> of a $\Gamma$-equivariant sheaf $\mathcal{M}$ over $X_K$ is the family of the semilinear isomorphisms $\digamma_{\mathrm{map},\gamma}$ together with their cocycle. The <strong>fixed part</strong> is</p>
 <p>$$
-\boxed{\;\mathcal{M}^{\Gamma}(V)=\mathcal{M}\bigl(p^{-1}V\bigr)^{\Gamma}=\{\,m: \varphi_{\gamma}(m)=m\ \text{for every}\ \gamma\in\Gamma\,\}\;},
+\boxed{\;\mathcal{M}^{\Gamma}(V)=\mathcal{M}\bigl(p^{-1}V\bigr)^{\Gamma}=\{\,m: \digamma_{\mathrm{map},\gamma}(m)=m\ \text{for every}\ \gamma\in\Gamma\,\}\;},
 $$</p>
 <p>for an open $V\subseteq X$, with $p^{-1}V$ the preimage in $X_K$, on which $\Gamma$ acts; it is a sheaf of $\mathcal{O}_X$-modules, the <strong>descent</strong> of $\mathcal{M}$.</p>
 <p><em>Proof.</em> The preimage $p^{-1}V$ is a $\Gamma$-invariant open set, so the equivariant structure makes $\mathcal{M}(p^{-1}V)$ a $\Gamma$-module on which the invariants are defined; the fixed part is then a sheaf, by the discussion of <em>Equivariant Sheaves and Descent</em> applied to the invariant opens, and it is a module over the fixed part of the structure sheaf, which is $\mathcal{O}_X$ because $\mathcal{O}_{X_K}^{\Gamma}=(\mathcal{O}_X\otimes_kK)^{\Gamma}=\mathcal{O}_X\otimes_kK^{\Gamma}=\mathcal{O}_X$.</p>
@@ -149,8 +149,8 @@ $$</p>
 <td>projection; a Galois cover of the base</td>
 </tr>
 <tr>
-<td>$\varphi_{\gamma}:\gamma_*\mathcal{M}\to\mathcal{M}$</td>
-<td>semilinear descent datum; $\varphi_{\gamma}(am)=\gamma(a)\varphi_{\gamma}(m)$</td>
+<td>$\digamma_{\mathrm{map},\gamma}:\gamma_*\mathcal{M}\to\mathcal{M}$</td>
+<td>semilinear descent datum; $\digamma_{\mathrm{map},\gamma}(am)=\gamma(a)\digamma_{\mathrm{map},\gamma}(m)$</td>
 </tr>
 <tr>
 <td>$\mathrm{Sh}_{\Gamma}(X_K)$</td>

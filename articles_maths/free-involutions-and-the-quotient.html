@@ -82,10 +82,10 @@
 <p><strong>Proof.</strong> $\iota(g)=g$ is $g^{-1}=g$, that is $g^{2}=e$; so the fixed set of the inversion is the $2$-torsion of $G$, which is $\{e\}$ exactly when no element of order two exists. A finite group has an element of order two exactly when its order is even (Cauchy's theorem).</p>
 <p><strong>Proposition (the injectivity of the conjugate product).</strong> If $\sigma$ is free, the map</p>
 <p>$$
-\boxed{\;\varphi : G\longrightarrow G, \qquad \varphi(g)=g^{-1}\sigma(g)\;},
+\boxed{\;\digamma_{\mathrm{map}} : G\longrightarrow G, \qquad \digamma_{\mathrm{map}}(g)=g^{-1}\sigma(g)\;},
 $$</p>
 <p>is injective. If $G$ is finite it is therefore a bijection, and every element of $G$ is the conjugate product of a unique pair $(g^{-1},\sigma(g))$.</p>
-<p><strong>Proof.</strong> If $\varphi(g)=\varphi(h)$ then $g^{-1}\sigma(g)=h^{-1}\sigma(h)$, so $hg^{-1}=\sigma(h)\sigma(g)^{-1}=\sigma(hg^{-1})$, and $hg^{-1}\in G^{\sigma}$; freeness gives $hg^{-1}=e$ and $g=h$. Finiteness makes injective bijective.</p>
+<p><strong>Proof.</strong> If $\digamma_{\mathrm{map}}(g)=\digamma_{\mathrm{map}}(h)$ then $g^{-1}\sigma(g)=h^{-1}\sigma(h)$, so $hg^{-1}=\sigma(h)\sigma(g)^{-1}=\sigma(hg^{-1})$, and $hg^{-1}\in G^{\sigma}$; freeness gives $hg^{-1}=e$ and $g=h$. Finiteness makes injective bijective.</p>
 <h2 id="the-quotient-and-the-double-cover">The Quotient and the Double Cover</h2>
 <p><strong>Definition.</strong> The <strong>orbit quotient</strong> of a free involution $\sigma$ is the set of orbits</p>
 <p>$$
@@ -105,16 +105,16 @@ $$</p>
 <p><strong>Remark (which involution is free).</strong> The set-theoretic quotient and double cover are built from the involution $\sigma$ and only need it to be an involution. The group-theoretic extension is built from the involutive automorphism $\alpha$, which is the datum that acts on $G$ by automorphisms; the two agree when $\sigma$ is itself an automorphism, that is when $G$ is abelian.</p>
 <h2 id="the-finite-case">The Finite Case</h2>
 <p><strong>Theorem.</strong> A finite abelian group admitting a free involutive automorphism is of odd order, and the automorphism is the inversion. Hence its group-theoretic double cover is the dihedral group of the group.</p>
-<p><strong>Proof.</strong> Let $G$ be finite abelian and $\alpha$ a free involutive automorphism. The map $\psi(g)=\alpha(g)g^{-1}$ is an endomorphism of $G$, and its kernel is $G^{\alpha}=\{e\}$; being injective on a finite group, it is bijective. Now</p>
+<p><strong>Proof.</strong> Let $G$ be finite abelian and $\alpha$ a free involutive automorphism. The map $Ξ_{\mathrm{wfn}}(g)=\alpha(g)g^{-1}$ is an endomorphism of $G$, and its kernel is $G^{\alpha}=\{e\}$; being injective on a finite group, it is bijective. Now</p>
 <p>$$
-\psi(\alpha(g))=\alpha^{2}(g)\alpha(g)^{-1}=g\,\alpha(g)^{-1}=\bigl(\alpha(g)g^{-1}\bigr)^{-1}=\psi(g)^{-1}=\psi(g^{-1}),
+Ξ_{\mathrm{wfn}}(\alpha(g))=\alpha^{2}(g)\alpha(g)^{-1}=g\,\alpha(g)^{-1}=\bigl(\alpha(g)g^{-1}\bigr)^{-1}=Ξ_{\mathrm{wfn}}(g)^{-1}=Ξ_{\mathrm{wfn}}(g^{-1}),
 $$</p>
-<p>so $\psi(\alpha(g))=\psi(g^{-1})$; injectivity of $\psi$ gives $\alpha(g)=g^{-1}$ for every $g$. Finally $\alpha(g)=g^{-1}$ has fixed set the $2$-torsion, which is $\{e\}$ exactly when the order is odd.</p>
+<p>so $Ξ_{\mathrm{wfn}}(\alpha(g))=Ξ_{\mathrm{wfn}}(g^{-1})$; injectivity of $Ξ_{\mathrm{wfn}}$ gives $\alpha(g)=g^{-1}$ for every $g$. Finally $\alpha(g)=g^{-1}$ has fixed set the $2$-torsion, which is $\{e\}$ exactly when the order is odd.</p>
 <p><strong>Corollary (the general finite statement).</strong> A finite group admitting a free involutive automorphism is abelian of odd order with the inversion as the automorphism. The abelian case is proved above; the general case is a theorem of the finite-group literature and is stated here without proof.</p>
 <h2 id="the-standard-examples">The Standard Examples</h2>
 <p><strong>Example (the dihedral example).</strong> Let $G=C_n=\langle r\rangle$ with $n$ odd and let $\sigma=\iota$ be the inversion, which is an automorphism because $C_n$ is abelian and is free because $n$ is odd. The orbits are the pairs $\{r^{k},r^{-k}\}$, the quotient has $(n+1)/2$ elements, and the group-theoretic double cover is the dihedral group $D_n=C_n\rtimes C_2$ of <em>Involutive Groups</em>, in which the complement acts by the inversion $r\mapsto r^{-1}$. In $D_n$ the rotations are the paired elements and the reflections are the added coset; the double cover $C_n\to C_n/\langle\iota\rangle$ is the shadow of the split extension on the underlying sets.</p>
 <p><strong>Example (the antipodal example).</strong> Let $F$ be a field of characteristic different from two and let $G=(F,+)$ be its additive group with $\sigma(x)=-x$. The involution is free, since $-x=x$ is $2x=0$ and $2$ is invertible in $F$; the orbits are the antipodal pairs $\{x,-x\}$, and the quotient has one point for each pair. The group-theoretic double cover is the semidirect product $F\rtimes C_2$ in which the complement acts by negation. Over a field of characteristic two the negation is the identity, which is not free, so freeness is a property of the pair (group, field) and not of the additive group alone.</p>
-<p><strong>Example (the infinite case).</strong> Let $G=(\mathbb{Z},+)$ with $\sigma(n)=-n$. The involution is free, the quotient has countably many pairs, and the extension is the infinite dihedral group $\mathbb{Z}\rtimes C_2$. The conjugate-product map of the first section is $\varphi(n)=-2n$ in additive notation, a bijection of $\mathbb{Z}$; the finite theorem does not apply, but the quotient and the double cover are constructed in the same way.</p>
+<p><strong>Example (the infinite case).</strong> Let $G=(\mathbb{Z},+)$ with $\sigma(n)=-n$. The involution is free, the quotient has countably many pairs, and the extension is the infinite dihedral group $\mathbb{Z}\rtimes C_2$. The conjugate-product map of the first section is $\digamma_{\mathrm{tot}}(n)=-2n$ in additive notation, a bijection of $\mathbb{Z}$; the finite theorem does not apply, but the quotient and the double cover are constructed in the same way.</p>
 <p><strong>Remark (the two examples in one).</strong> The dihedral and antipodal examples are the same construction read on two free involutions: the inversion of a cyclic group of odd order, and the negation of the additive group of a field of characteristic different from two. Both are free, both give a two-to-one quotient, and both extend to a semidirect product by the two-element group; they differ in the size and in the nature of the group, one finite and cyclic, the other the additive group of a field.</p>
 <h2 id="summary">Summary</h2>
 <p>An involution $\sigma$ of $G$ is <strong>free</strong> when $G^{\sigma}=\{e\}$, and the associated automorphism $\alpha=\sigma\iota$ is free when $G^{\alpha}=\{e\}$; by the dual identities $G^{\sigma}=I(\alpha)$ and $G^{\alpha}=I(\sigma)$ the two notions are the vanishing of the two inverted sets, and neither implies the other, as $C_3$ with its free inversion and its identity automorphism shows. The canonical free involution is the inversion on a group with no element of order two; on a finite group this is odd order.</p>
@@ -138,7 +138,7 @@ $$</p>
 <td>dual identity for the fixed and inverted sets</td>
 </tr>
 <tr>
-<td>$\varphi(g)=g^{-1}\sigma(g)$</td>
+<td>$\digamma_{\mathrm{map}}(g)=g^{-1}\sigma(g)$</td>
 <td>injective map of a free involution</td>
 </tr>
 <tr>
@@ -158,7 +158,7 @@ $$</p>
 <td>group-theoretic double cover, the split extension</td>
 </tr>
 <tr>
-<td>$\psi(g)=\alpha(g)g^{-1}$</td>
+<td>$Ξ_{\mathrm{wfn}}(g)=\alpha(g)g^{-1}$</td>
 <td>bijective endomorphism proving $\alpha=\iota$ in the abelian case</td>
 </tr>
 </tbody>
