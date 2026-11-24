@@ -111,31 +111,12 @@ $$
 
 **The grid.** Rows are *from*, columns are *to*; cell $(i,j)$ moves index $j$ into index $i$. Each cell carries the symbol of its boson and, beneath it, the name of the particle.
 
-$$
-\begin{array}{ccccc}
- & \substack{t\\ \text{lepton}} & \substack{x\\ \text{red}} & \substack{y\\ \text{green}} & \substack{z\\ \text{blue}}\\[10pt]
-\substack{t\\ \text{lepton}}
- & \substack{B'\\ \text{the }B\text{--}L\text{ boson}}
- & \substack{\bar X^{r}\\ \text{antileptoquark, red}}
- & \substack{\bar X^{g}\\ \text{antileptoquark, green}}
- & \substack{\bar X^{b}\\ \text{antileptoquark, blue}}\\[10pt]
-\substack{x\\ \text{red}}
- & \substack{X^{r}\\ \text{leptoquark, red}}
- & \substack{T^{c}_{3}\\ \text{gluon, } r\bar r-g\bar g}
- & \substack{g_{1}\\ \text{gluon, } r\bar g}
- & \substack{g_{4}\\ \text{gluon, } r\bar b}\\[10pt]
-\substack{y\\ \text{green}}
- & \substack{X^{g}\\ \text{leptoquark, green}}
- & \substack{g_{2}\\ \text{gluon, } g\bar r}
- & \substack{T^{c}_{8}\\ \text{gluon, colour-singlet diagonal}}
- & \substack{g_{6}\\ \text{gluon, } g\bar b}\\[10pt]
-\substack{z\\ \text{blue}}
- & \substack{X^{b}\\ \text{leptoquark, blue}}
- & \substack{g_{5}\\ \text{gluon, } b\bar r}
- & \substack{g_{7}\\ \text{gluon, } b\bar g}
- & \substack{\text{trace}\\ \text{not a generator}}
-\end{array}
-$$
+| | $t$ lepton | $x$ red | $y$ green | $z$ blue |
+|---|---|---|---|---|
+| **$t$ lepton** | $B'$<br>the $B-L$ boson | $\bar X^{r}$<br>antileptoquark, red | $\bar X^{g}$<br>antileptoquark, green | $\bar X^{b}$<br>antileptoquark, blue |
+| **$x$ red** | $X^{r}$<br>leptoquark, red | $T^{c}_{3}$<br>gluon, $r\bar r-g\bar g$ | $g_{1}$<br>gluon, $r\bar g$ | $g_{4}$<br>gluon, $r\bar b$ |
+| **$y$ green** | $X^{g}$<br>leptoquark, green | $g_{2}$<br>gluon, $g\bar r$ | $T^{c}_{8}$<br>gluon, the second diagonal | $g_{6}$<br>gluon, $g\bar b$ |
+| **$z$ blue** | $X^{b}$<br>leptoquark, blue | $g_{5}$<br>gluon, $b\bar r$ | $g_{7}$<br>gluon, $b\bar g$ | trace<br>not a generator |
 
 **The four diagonal cells hold four raw directions, and the names in them are a basis of the diagonal and not one cell each.** The cells are $iE_{tt},iE_{xx},iE_{yy},iE_{zz}$. Tracelessness removes one combination of the four and leaves three, and the three are what the names denote:
 
@@ -194,19 +175,12 @@ and the vanishing of the trace is the same statement as the four diagonal entrie
 
 **Three generators, four cells, in a $2\times2$.** The index is the left doublet, and the grid names the left weak bosons.
 
-**The grid.** The same drawing as *The $\mathrm{SU}(4)$ Grid, $4\times4$, with a Name in Every Cell*, one factor smaller. Rows are *from*, columns are *to*.
+**The grid.** The same table as *The $\mathrm{SU}(4)$ Grid, $4\times4$, with a Name in Every Cell*, one factor smaller. Rows are *from*, columns are *to*.
 
-$$
-\begin{array}{ccc}
- & \substack{\uparrow\\ \text{up-type}} & \substack{\downarrow\\ \text{down-type}}\\[10pt]
-\substack{\uparrow\\ \text{up-type}}
- & \substack{W^{3}_{L}\\ \text{the neutral left weak boson}}
- & \substack{W^{+}_{L}\\ \text{the positively charged left weak boson}}\\[10pt]
-\substack{\downarrow\\ \text{down-type}}
- & \substack{W^{-}_{L}\\ \text{the negatively charged left weak boson}}
- & \substack{\text{trace}\\ \text{not a generator}}
-\end{array}
-$$
+| | $\uparrow$ up-type | $\downarrow$ down-type |
+|---|---|---|
+| **$\uparrow$ up-type** | $W^{3}_{L}$<br>the neutral left weak boson | $W^{+}_{L}$<br>the positively charged left weak boson |
+| **$\downarrow$ down-type** | $W^{-}_{L}$<br>the negatively charged left weak boson | trace<br>not a generator |
 
 **The doublets it acts on, named.** The index is filled by whichever left-handed doublet is in play:
 
@@ -221,19 +195,12 @@ So $\mathrm{SU}(2)_L$ acts on two doublets per generation: one leptonic and one 
 
 ## The $\mathrm{SU}(2)_R$ Grid, $2\times2$
 
-**The grid.** The same drawing, a different copy, and the names change because the particles do.
+**The grid.** The same table, a different copy, and the names change because the particles do.
 
-$$
-\begin{array}{ccc}
- & \substack{\uparrow\\ \text{up-type}} & \substack{\downarrow\\ \text{down-type}}\\[10pt]
-\substack{\uparrow\\ \text{up-type}}
- & \substack{W^{3}_{R}\\ \text{the neutral right weak boson}}
- & \substack{W^{+}_{R}\\ \text{the positively charged right weak boson}}\\[10pt]
-\substack{\downarrow\\ \text{down-type}}
- & \substack{W^{-}_{R}\\ \text{the negatively charged right weak boson}}
- & \substack{\text{trace}\\ \text{not a generator}}
-\end{array}
-$$
+| | $\uparrow$ up-type | $\downarrow$ down-type |
+|---|---|---|
+| **$\uparrow$ up-type** | $W^{3}_{R}$<br>the neutral right weak boson | $W^{+}_{R}$<br>the positively charged right weak boson |
+| **$\downarrow$ down-type** | $W^{-}_{R}$<br>the negatively charged right weak boson | trace<br>not a generator |
 
 **The doublets it acts on.**
 
