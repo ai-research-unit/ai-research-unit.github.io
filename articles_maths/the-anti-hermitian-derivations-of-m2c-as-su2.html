@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$ — Biquaternion Universe</title>
-  <meta name="description" content="Two conditions pick out the generators: anti-Hermitian and traceless. They hold exactly for the three matrices, which form. Each gives the derivation of…">
+  <meta name="description" content="Two conditions pick out the generators: anti-Hermitian and traceless. At order two they hold exactly for a three-dimensional space, which is. The three…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,185 +71,203 @@
       <div class="article-body">
         <h1 id="the-anti-hermitian-derivations-of-math0-as-math1"><strong>The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>Two conditions pick out the generators: anti-Hermitian and traceless. They hold exactly for the three matrices $i\sigma_1,i\sigma_2,i\sigma_3$, which form $\mathfrak{su}(2)$. Each gives the derivation $[A,\cdot]$ of the matrix algebra, the array of which is $-2[a^\times]$ in the Pauli basis, and the exponential of which is the conjugation by the rotor $e^{A}\in\mathrm{SU}(2)$. Read on the vector part, the conjugation is the rotation of angle $-2\theta$ about the axis of the generator.</strong></p>
-<p>The article is the matrix frame of <em>The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$</em>. The operator is the same and the numbers are the same; the difference is that here the generator is a $2\times2$ matrix, so the three of them can be written out in full, together with their three distinct rotor actions.</p>
-<p>The three generators are not three copies of one thing. One of them generates a real rotation, one generates a mixing with the imaginary unit, and one generates a pair of opposite phases. The three cases are the three families of $\mathfrak{su}(n)$: the real antisymmetric part, the off-diagonal symmetric part multiplied by $i$, and the diagonal traceless part. At $n=2$ each family has one member, so the three generators realize the three cases one apiece; at $n=4$ they have six, six and three.</p>
-<p>The article assumes the Lie group results of <em>The Exponential and the Lie Group Structure of $\mathrm{GL}_2(\mathbb{C})$</em>, the Lie correspondence of <em>The Lie Correspondence and the Adjoint Representation</em>, and the determinant formula $\det e^{F}=e^{\operatorname{tr}F}$.</p>
+<p><strong>Two conditions pick out the generators: anti-Hermitian and traceless. At order two they hold exactly for a three-dimensional space, which is $\mathfrak{su}(2)$. The three generators are not chosen from a list: they are the images of the three vector units of the biquaternion algebra under the isomorphism $\mathsf{M}_2$, halved so that the structure constants come out as $\epsilon_{abc}$.</strong></p>
+<p>The article reads the three generators as the corpus reads them. The isomorphism $\mathsf{M}_2$ sends the vector units to the three matrices $\mathsf{M}_2(\vec e_k)$, and the half of those matrices are the generators; the normalization is the one that <em>Automorphisms and Derivations of Algebras</em> fixes at the element level, $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$. The bracket of the halved generators is $[G_1,G_2]=G_3$, with no factor and no sign.</p>
+<p>The article gives the three matrices, the three derivations as four-by-four arrays in the basis of the elements, the conjugation table of the rotor on the three generators, the three rotors written out, the dimension ladder, the worked cases and the orbits. Every numeric statement was checked on the arrays.</p>
+<p>The article assumes the exponential of the matrix algebra from <em>The Exponential and the Lie Group Structure of $\mathrm{GL}_2(\mathbb{C})$</em>, the Lie correspondence of <em>The Lie Correspondence and the Adjoint Representation</em>, and the images of the units from the Pauli representation of $M_2(\mathbb{C})$.</p>
 <h2 id="the-two-conditions-on-the-matrix">The Two Conditions on the Matrix</h2>
 <h3 id="anti-hermitian-and-traceless">Anti-Hermitian and Traceless</h3>
-<p><strong>Proposition (the generators).</strong> The matrices $A\in M_2(\mathbb{C})$ with $A^{*}=-A$ and $\operatorname{tr}A=0$ are exactly the complex linear combinations of $i\sigma_1,i\sigma_2,i\sigma_3$. They form a real vector space of dimension three, closed under the bracket, isomorphic to $\mathfrak{su}(2)$.</p>
-<p><strong>Proof.</strong> A general element is $A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$ with $a,d$ purely imaginary and $c=-\bar b$. So the real parameters are $\operatorname{Im}a$, $\operatorname{Im}d$, $\operatorname{Re}b$, $\operatorname{Im}b$: four. The trace condition is $\operatorname{Im}a+\operatorname{Im}d=0$, one real equation, leaving three. The three $i\sigma_k$ are anti-Hermitian and traceless, and they are independent, so they are a basis. The bracket of two anti-Hermitian matrices is anti-Hermitian and traceless, so the space closes.</p>
-<p><strong>Remark (the three families, one member each).</strong> Write $A$ as a real antisymmetric part plus $i$ times a real symmetric part,</p>
+<p><strong>Proposition (the generators).</strong> The matrices $A\in M_2(\mathbb{C})$ with $A^{*}=-A$ and $\operatorname{tr}A=0$ form a real vector space of dimension three, closed under the bracket, isomorphic to $\mathfrak{su}(2)$.</p>
+<p><strong>Proof.</strong> A general element is $A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$ with $a,d$ purely imaginary and $c=-\bar b$, so the real parameters are $\operatorname{Im}a$, $\operatorname{Im}d$, $\operatorname{Re}b$, $\operatorname{Im}b$: four. The trace condition is $\operatorname{Im}a+\operatorname{Im}d=0$, one real equation, leaving three. The bracket of two anti-Hermitian matrices is anti-Hermitian, and the trace of a bracket vanishes.</p>
+<p><strong>Remark (the three as images of the units).</strong> The isomorphism $\mathsf{M}_2$ sends</p>
 <p>$$
-A=\underbrace{\tfrac12(A-\bar A)}_{\text{real antisymmetric}}+i\,\underbrace{\tfrac1{2i}(A+\bar A)}_{\text{real symmetric}} .
+\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&amp;-i\\-i&amp;0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&amp;0\\0&amp;i\end{pmatrix},
 $$</p>
-<p>The first summand has dimension one at order two and is spanned by $i\sigma_2$, which is real and antisymmetric. The second has dimension two, since the symmetric real matrices of trace zero form a line, plus the off-diagonal direction. The line is $i\sigma_3$ and the off-diagonal direction is $i\sigma_1$. The count is $1+2=3$, and the same split at order $n$ gives $\tfrac12n(n-1)+\tfrac12n(n+1)-1$, which at $n=4$ is $6+9=15$.</p>
-<p><strong>Remark (what the split is worth).</strong> The first summand is a subalgebra: the real antisymmetric matrices of order $n$ close under the bracket, and they form $\mathfrak{so}(n)$. The second summand is not a subalgebra at any order above two. So the fifteen of $\mathfrak{su}(4)$ split as $6+9$ with the six closed and the nine not, and the three of $\mathfrak{su}(2)$ split as $1+2$ with the one closed and the two not.</p>
-<h2 id="the-three-generators-written-out">The Three Generators, Written Out</h2>
-<p><strong>Definition.</strong> The three generators are</p>
+<p>and each of the three is anti-Hermitian and traceless. They are the three generators up to the factor $\tfrac12$ of the next section.</p>
+<p><strong>Remark (the images are written as matrices).</strong> The three objects of this article are images of elements, and they are written with their entries. The three names of the model section of the Pauli representation article are not used in the body here, following the rule on the Pauli matrices of <em>Matrix Representations and Conventions</em>.</p>
+<h3 id="the-split-as-one-and-two">The Split as One and Two</h3>
+<p><strong>Proposition (the real form inside).</strong> Every anti-Hermitian traceless $A$ splits uniquely as</p>
 <p>$$
-i\sigma_1=\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix},\qquad
-i\sigma_2=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix},\qquad
-i\sigma_3=\begin{pmatrix}i&amp;0\\0&amp;-i\end{pmatrix}.
+A=\underbrace{\tfrac12(A-\bar A)}_{\text{real antisymmetric}}+\;i\underbrace{\tfrac1{2i}(A+\bar A)}_{\text{real symmetric, traceless}},
 $$</p>
-<p>Each is anti-Hermitian and traceless, each squares to $-\mathrm{I}_2$, and each has the eigenvalues $\pm i$.</p>
+<p>and the two summands have real dimensions one and two, so $3=1+2$ with intersection zero.</p>
+<p><strong>Proof.</strong> A real antisymmetric matrix of order two is $\begin{pmatrix}0&amp;t\\-t&amp;0\end{pmatrix}$, one parameter, and it is $\mathsf{M}_2(\vec e_y)$ up to the factor $-1$. A real symmetric traceless matrix of order two is $\begin{pmatrix}u&amp;v\\v&amp;-u\end{pmatrix}$, two parameters, and $i$ times it is spanned by $\mathsf{M}_2(\vec e_x)$ and $\mathsf{M}_2(\vec e_z)$. The symmetry types differ, so the summands meet only in zero.</p>
+<p><strong>Remark (the same split at every order).</strong> The real antisymmetric matrices of order $n$ have dimension $\tfrac12n(n-1)$ and the $i$ times real symmetric traceless ones have dimension $\tfrac12n(n+1)-1$; at $n=2$ this is $1+2$ and at $n=4$ it is $6+9$. The first summand is a subalgebra at every order, the second is not.</p>
+<h2 id="the-three-generators">The Three Generators</h2>
+<p><strong>Definition.</strong> Put</p>
+<p>$$
+T_k:=\mathsf{M}_2(\vec e_k),\qquad G_k:=\tfrac12 T_k,\qquad k=1,2,3,
+$$</p>
+<p>with $1,2,3$ standing for $x,y,z$. The three generators are</p>
+<p>$$
+G_1=\begin{pmatrix}0&amp;-\tfrac{i}{2}\\-\tfrac{i}{2}&amp;0\end{pmatrix},\qquad
+G_2=\begin{pmatrix}0&amp;-\tfrac12\\ \tfrac12&amp;0\end{pmatrix},\qquad
+G_3=\begin{pmatrix}-\tfrac{i}{2}&amp;0\\0&amp;\tfrac{i}{2}\end{pmatrix}.
+$$</p>
+<p><strong>Proposition (the count and the properties).</strong> The three are anti-Hermitian, traceless, linearly independent over $\mathbb{R}$, and they close under the bracket, so they are a basis of $\mathfrak{su}(2)$.</p>
+<p><strong>Proof.</strong> Each $G_k$ is $\tfrac12$ times an image of a real vector unit, so it is anti-Hermitian and traceless. The space has dimension three and the three are independent, so they are a basis; the space is closed by the general argument of the first proposition.</p>
+<p><strong>Remark (why the half).</strong> The bracket of the images is $[T_1,T_2]=2T_3$, the factor $2$ being the same one that $[\vec e_x,\vec e_y]=2\vec e_z$ carries at the element level. Halving removes it, so the generators satisfy $[G_1,G_2]=G_3$ and the structure constants are $\epsilon_{abc}$ with no constant.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>generator</th>
-<th>family</th>
 <th>entries</th>
+<th>family</th>
 <th>square</th>
 <th>$\det$</th>
-<th>rotor $e^{\theta A}$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$i\sigma_1$</td>
-<td>$i$ times symmetric</td>
-<td>off-diagonal, both entries $i$</td>
-<td>$-\mathrm{I}_2$</td>
-<td>$1$</td>
-<td>$\cos\theta\,\mathrm{I}_2+i\sin\theta\,\sigma_1$</td>
+<td>$G_1$</td>
+<td>off-diagonal, both entries $-\tfrac{i}{2}$</td>
+<td>$i$ times real symmetric</td>
+<td>$-\tfrac14\mathrm{I}_2$</td>
+<td>$\tfrac14$</td>
 </tr>
 <tr>
-<td>$i\sigma_2$</td>
+<td>$G_2$</td>
+<td>$-\tfrac12$ and $\tfrac12$</td>
 <td>real antisymmetric</td>
-<td>$1$ and $-1$</td>
-<td>$-\mathrm{I}_2$</td>
-<td>$1$</td>
-<td>$\cos\theta\,\mathrm{I}_2+\sin\theta\,(i\sigma_2)$</td>
+<td>$-\tfrac14\mathrm{I}_2$</td>
+<td>$\tfrac14$</td>
 </tr>
 <tr>
-<td>$i\sigma_3$</td>
-<td>diagonal</td>
-<td>$i$ and $-i$</td>
-<td>$-\mathrm{I}_2$</td>
-<td>$1$</td>
-<td>$\operatorname{diag}(e^{i\theta},e^{-i\theta})$</td>
+<td>$G_3$</td>
+<td>diagonal, $-\tfrac{i}{2}$ and $\tfrac{i}{2}$</td>
+<td>$i$ times real symmetric</td>
+<td>$-\tfrac14\mathrm{I}_2$</td>
+<td>$\tfrac14$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Proposition (the three rotors, written out).</strong> The exponentials are</p>
-<p>$$
-e^{\theta i\sigma_1}=\begin{pmatrix}\cos\theta&amp;i\sin\theta\\ i\sin\theta&amp;\cos\theta\end{pmatrix},\qquad
-e^{\theta i\sigma_2}=\begin{pmatrix}\cos\theta&amp;\sin\theta\\ -\sin\theta&amp;\cos\theta\end{pmatrix},\qquad
-e^{\theta i\sigma_3}=\begin{pmatrix}e^{i\theta}&amp;0\\0&amp;e^{-i\theta}\end{pmatrix}.
-$$</p>
-<p><strong>Proof.</strong> Each generator squares to $-\mathrm{I}_2$, so the series is $\cos\theta\,\mathrm{I}_2+\sin\theta\,A$. Substituting the three matrices gives the three displays.</p>
-<p><strong>Remark (three visibly different rotors).</strong> The second matrix has real entries: it is a rotation of the plane. The third is diagonal: it multiplies the two coordinates by opposite phases. The first has imaginary entries off the diagonal: it mixes the two coordinates with a factor $i$. These are the three things that a unitary of determinant one can do to a two-dimensional space, and each generator produces one of them.</p>
 <h3 id="the-commutators">The Commutators</h3>
 <p><strong>Proposition (the structure constants).</strong> The three generators satisfy</p>
 <p>$$
-[i\sigma_1,i\sigma_2]=-2\,i\sigma_3,\qquad [i\sigma_2,i\sigma_3]=-2\,i\sigma_1,\qquad [i\sigma_3,i\sigma_1]=-2\,i\sigma_2 .
+[G_1,G_2]=G_3,\qquad [G_2,G_3]=G_1,\qquad [G_3,G_1]=G_2 .
 $$</p>
-<p><strong>Proof.</strong> $[\sigma_1,\sigma_2]=2i\sigma_3$ and $i^2=-1$ give the first; the other two are cyclic.</p>
-<p><strong>Remark (the sign against the algebra frame).</strong> The companion article on the biquaternion algebra has $[\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y}]=+2\,\mathrm{ad}_{\vec e_z}$, and here the constant is $-2$. The change of sign is the minus in $\mathsf M_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum q_k\sigma_k$, which carries the vector part of the algebra to $-i$ times the Pauli combination; the two brackets are the same bracket read through that minus.</p>
+<p><strong>Proof.</strong> The images satisfy $[T_1,T_2]=2T_3$ and its cyclic rotations, because the elements satisfy $[\vec e_x,\vec e_y]=2\vec e_z$ and $\mathsf{M}_2$ is an algebra isomorphism. Halving both entries of each bracket gives the three identities.</p>
+<p><strong>Remark (no sign against the algebra frame).</strong> The bracket here is the bracket of the algebra read through $\mathsf{M}_2$, and the half removes the factor two, so the table agrees with the table of the coefficient frame. Written without the half the same table reads $[T_1,T_2]=2T_3$.</p>
 <h2 id="the-derivation-and-its-array">The Derivation and Its Array</h2>
 <h3 id="the-derivation">The Derivation</h3>
-<p><strong>Definition.</strong> For $A$ in the algebra the derivation is $\mathrm{ad}_A(X)=[A,X]$.</p>
-<p><strong>Proposition (it is a derivation and it is anti-Hermitian).</strong> The Leibniz rule holds for all $X,Y$, and for the Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ one has $(\mathrm{ad}_A)^{*}=\mathrm{ad}_{A^{*}}$, so $\mathrm{ad}_A$ is anti-Hermitian exactly when $A$ is. The map $A\mapsto\mathrm{ad}_A$ has kernel the scalars, so it is injective on $\mathfrak{su}(2)$.</p>
+<p><strong>Definition.</strong> For $A$ in the algebra the derivation is $\mathrm{ad}_A(X)=AX-XA$.</p>
+<p><strong>Proposition (it is a derivation and it is anti-Hermitian).</strong> The Leibniz rule holds for all $X,Y$, and for the Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ one has $(\mathrm{ad}_A)^{*}=\mathrm{ad}_{A^{*}}$, so $\mathrm{ad}_A$ is anti-Hermitian exactly when $A$ is. The kernel of $A\mapsto\mathrm{ad}_A$ is the scalars, so the map is injective on $\mathfrak{su}(2)$.</p>
 <p><strong>Proof.</strong> The Leibniz rule is associativity. For the adjoint, $\operatorname{tr}([A,X]^{*}Y)=\operatorname{tr}(X^{*}[A^{*},Y])$ by the cyclic invariance of the trace. The kernel is the centre, and a scalar multiple of $\mathrm{I}_2$ is traceless only when it is zero.</p>
-<h3 id="the-array-in-the-pauli-basis">The Array in the Pauli Basis</h3>
-<p><strong>Proposition (the three arrays).</strong> In the basis $\mathrm{I}_2,\sigma_1,\sigma_2,\sigma_3$, in that order, the three derivations have the arrays</p>
+<h3 id="the-array-in-the-basis-of-the-elements">The Array in the Basis of the Elements</h3>
+<p><strong>Proposition (the three arrays).</strong> In the basis $(\mathrm{I}_2,T_1,T_2,T_3)$, in that order, the three derivations have the arrays</p>
 <p>$$
-\mathrm{ad}_{i\sigma_1}=
-\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;2\\0&amp;0&amp;-2&amp;0\end{pmatrix},\quad
-\mathrm{ad}_{i\sigma_2}=
-\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-2\\0&amp;0&amp;0&amp;0\\0&amp;2&amp;0&amp;0\end{pmatrix},\quad
-\mathrm{ad}_{i\sigma_3}=
-\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;2&amp;0\\0&amp;-2&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}.
+\mathrm{ad}_{G_1}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\quad
+\mathrm{ad}_{G_2}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\quad
+\mathrm{ad}_{G_3}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}.
 $$</p>
-<p><strong>Proof.</strong> The scalars are fixed, so the first row and the first column vanish. On the three traceless Hermitian matrices the commutator acts as the cross product, and the table below gives the entries. The $2\times2$ block on the plane orthogonal to the axis is $-2R$ with $R$ the quarter-turn, in each case.</p>
-<p><strong>Corollary (the vector block).</strong> The lower right $3\times3$ block of the array of $\mathrm{ad}_{A}$ is $-2[a^\times]$, where $a$ is the coordinate vector of $A$ in the Pauli basis, and $[a^\times]$ is the cross-product matrix.</p>
-<p><strong>Proof.</strong> The table of the derivation's action on the Pauli basis is the table of the cross product with $a$, times $-2$. The three arrays above are the three axes.</p>
-<p><strong>Corollary (the spectrum).</strong> Each array has spectrum $\{0,0,\pm2i\}$, trace zero, and exponential of determinant one.</p>
-<p><strong>Proof.</strong> The block $-2[a^\times]$ for a unit axis has eigenvalues $\pm2i$ on the plane and $0$ on the axis; the scalar direction adds a second zero.</p>
+<p><strong>Proof.</strong> The identity is fixed, so the first row and the first column vanish. On the three $T_k$ the commutator is the cross product with the coordinate vector of the generator, with the coefficient one: $[G_1,T_2]=T_3$ and $[G_1,T_3]=-T_2$, and cyclically. So each array is the quarter-turn of one coordinate plane on the three-dimensional block.</p>
+<p><strong>Remark (the same three arrays as in the coefficient frame).</strong> These are the three arrays $D_x,D_y,D_z$ of <em>The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$</em>, entry for entry. The coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the element basis $\mathrm{I}_2,T_1,T_2,T_3$ are matched by $\mathsf{M}_2$, and the derivation is the same object read in the two bases.</p>
+<p><strong>Corollary (the spectrum).</strong> Each array has the spectrum $\{0,0,i,-i\}$, trace zero and exponential of determinant one.</p>
+<p><strong>Proof.</strong> The block is a real quarter-turn of a plane, with eigenvalues $\pm i$, and the two fixed directions give the two zeros. The trace of a commutator vanishes, and $\det e^{F}=e^{\operatorname{tr}F}=1$.</p>
 <h2 id="the-exponential-of-each-generator">The Exponential of Each Generator</h2>
-<h3 id="the-action-on-the-pauli-basis">The Action on the Pauli Basis</h3>
-<p><strong>Proposition (the conjugation rotates the vector part).</strong> With $U=e^{\theta i\sigma_k}$ and $c=\cos2\theta$, $s=\sin2\theta$, the conjugation $X\mapsto UXU^{*}$ fixes $\mathrm{I}_2$ and acts on the three Pauli matrices by</p>
+<h3 id="the-closed-form">The Closed Form</h3>
+<p><strong>Proposition (the closed form).</strong> For real $\theta$,</p>
+<p>$$
+e^{\theta G_k}=\cos\tfrac{\theta}{2}\,\mathrm{I}_2+\sin\tfrac{\theta}{2}\,T_k ,
+$$</p>
+<p>a unitary matrix of determinant one.</p>
+<p><strong>Proof.</strong> $G_k^{2}=-\tfrac14\mathrm{I}_2$, so the even terms of the series sum to $\cos(\theta/2)\mathrm{I}_2$ and the odd terms to $2\sin(\theta/2)G_k=\sin(\theta/2)T_k$. The determinant is $\cos^{2}+\sin^{2}=1$ because $T_k$ is traceless and $T_k^{2}=-\mathrm{I}_2$.</p>
+<p><strong>Remark (the angle and the half angle).</strong> The parameter $\theta$ is the angle of the array: the array of $\mathrm{ad}_{G_k}$ turns its plane by $\theta$. The matrix $e^{\theta G_k}$ is the element $e^{\theta\vec e_k/2}$ seen through $\mathsf{M}_2$, so the half angle is the double cover, and the factor $\tfrac12$ of the normalization cancels it.</p>
+<h3 id="the-conjugation-table">The Conjugation Table</h3>
+<p><strong>Proposition (one rotation, three axes).</strong> With $U=e^{\theta G_k}$, $c=\cos\theta$ and $s=\sin\theta$, the conjugation $X\mapsto UXU^{*}$ fixes $\mathrm{I}_2$ and acts on the three $T_k$ by</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>generator</th>
-<th>$\sigma_1$</th>
-<th>$\sigma_2$</th>
-<th>$\sigma_3$</th>
+<th>rotor</th>
+<th>$T_1$</th>
+<th>$T_2$</th>
+<th>$T_3$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$i\sigma_1$</td>
-<td>$\sigma_1$</td>
-<td>$c\,\sigma_2-s\,\sigma_3$</td>
-<td>$s\,\sigma_2+c\,\sigma_3$</td>
+<td>$U=e^{\theta G_1}$</td>
+<td>$T_1$</td>
+<td>$c\,T_2+s\,T_3$</td>
+<td>$-s\,T_2+c\,T_3$</td>
 </tr>
 <tr>
-<td>$i\sigma_2$</td>
-<td>$c\,\sigma_1+s\,\sigma_3$</td>
-<td>$\sigma_2$</td>
-<td>$-s\,\sigma_1+c\,\sigma_3$</td>
+<td>$U=e^{\theta G_2}$</td>
+<td>$c\,T_1-s\,T_3$</td>
+<td>$T_2$</td>
+<td>$s\,T_1+c\,T_3$</td>
 </tr>
 <tr>
-<td>$i\sigma_3$</td>
-<td>$c\,\sigma_1-s\,\sigma_2$</td>
-<td>$s\,\sigma_1+c\,\sigma_2$</td>
-<td>$\sigma_3$</td>
+<td>$U=e^{\theta G_3}$</td>
+<td>$c\,T_1+s\,T_2$</td>
+<td>$-s\,T_1+c\,T_2$</td>
+<td>$T_3$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Proof.</strong> $U\sigma_kU^{*}$ is traceless and Hermitian, so it is a real combination of the three Pauli matrices; the coefficients are the traces $\tfrac12\operatorname{tr}(U\sigma_kU^{*}\sigma_l)$, which are $\cos2\theta$ and $\pm\sin2\theta$ by the duplication formulas. The axis is fixed because $U$ commutes with its own generator.</p>
-<p><strong>Corollary (one rotation, three axes).</strong> The conjugation by $e^{\theta i\sigma_k}$ is the rotation of the vector part by the angle $-2\theta$ about the axis $k$, right-handed in the basis $\sigma_1,\sigma_2,\sigma_3$.</p>
-<p><strong>Proof.</strong> The three rows of the table are the three right-handed rotations of the basis, with the angle $-2\theta$ since the coefficient of $\sigma_3$ in the first row is $-\sin2\theta$.</p>
-<p><strong>Remark (the angle is doubled and negative).</strong> The doubling comes from the group being a double cover of the rotation group: the rotor of angle $\theta$ turns the vector part by $2\theta$. The minus comes from the conjugation acting on the Hermitian matrices rather than on the matrices themselves, which is the same minus as in the commutator table.</p>
+<p><strong>Proof.</strong> Each $UT_kU^{*}$ is anti-Hermitian and traceless, so it is a real combination of the three $T_l$, and the coefficients are the entries of the exponential of the array. The array of $\mathrm{ad}_{G_1}$ is the quarter-turn of the plane $(T_2,T_3)$, so its exponential turns that plane by $\theta$ and fixes $T_1$.</p>
+<p><strong>Corollary (the sense is right-handed).</strong> The conjugation by $e^{\theta G_k}$ is the rotation of $\operatorname{span}\{T_1,T_2,T_3\}$ by the angle $\theta$ about the axis $T_k$, right-handed in the order $T_1,T_2,T_3$.</p>
+<p><strong>Proof.</strong> Read the first row: $T_2\mapsto cT_2+sT_3$ and $T_3\mapsto-sT_2+cT_3$, a positive quarter-turn from $T_2$ towards $T_3$, which is right-handed about $T_1$. The other rows are the cyclic rotations of the same statement.</p>
+<p><strong>Remark (what the doubling did).</strong> An element rotor of parameter $\theta$ turns the vector part by $2\theta$, which is the double cover. Here the generator already carries the half, so the angle of the array and the angle of the element are the same number, and the element that realises the array rotor is $e^{\theta\vec e_k/2}$. Written without the half, every bracket and every angle carries a factor $2$.</p>
 <h3 id="what-each-generator-does">What Each Generator Does</h3>
 <p><strong>Proposition (the three actions, one each).</strong> Exponentiated, the three generators act as follows.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>generator</th>
-<th>on the matrix $\mathrm{I}_2$</th>
-<th>on the axis</th>
-<th>on the two remaining directions</th>
+<th>fixed</th>
+<th>turned</th>
+<th>angle</th>
+<th>rotor behind it</th>
 <th>in words</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$i\sigma_1$</td>
-<td>fixed</td>
-<td>$\sigma_1$ fixed</td>
-<td>plane of $\sigma_2,\sigma_3$ turned by $-2\theta$</td>
+<td>$G_1$</td>
+<td>$\mathrm{I}_2$, $T_1$</td>
+<td>plane of $T_2,T_3$</td>
+<td>$\theta$</td>
+<td>$e^{\theta\vec e_x/2}$</td>
 <td>mixes the two coordinates with a factor $i$</td>
 </tr>
 <tr>
-<td>$i\sigma_2$</td>
-<td>fixed</td>
-<td>$\sigma_2$ fixed</td>
-<td>plane of $\sigma_3,\sigma_1$ turned by $-2\theta$</td>
-<td>rotates the plane with real entries</td>
+<td>$G_2$</td>
+<td>$\mathrm{I}_2$, $T_2$</td>
+<td>plane of $T_3,T_1$</td>
+<td>$\theta$</td>
+<td>$e^{\theta\vec e_y/2}$</td>
+<td>turns the plane with real entries</td>
 </tr>
 <tr>
-<td>$i\sigma_3$</td>
-<td>fixed</td>
-<td>$\sigma_3$ fixed</td>
-<td>plane of $\sigma_1,\sigma_2$ turned by $-2\theta$</td>
+<td>$G_3$</td>
+<td>$\mathrm{I}_2$, $T_3$</td>
+<td>plane of $T_1,T_2$</td>
+<td>$\theta$</td>
+<td>$e^{\theta\vec e_z/2}$</td>
 <td>multiplies the two coordinates by opposite phases</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Proof.</strong> The fixed elements are read from the table: the conjugation fixes the identity and the axis. The turned plane is the orthogonal complement of the axis in the three dimensions, and the angle is $-2\theta$ by the corollary.</p>
-<p><strong>Remark (the three families of rotor, at order two).</strong> The second row is a rotation of the plane by a real angle: the map $z\mapsto e^{-2i\theta}z$ in the complex coordinate. The third row multiplies the two coordinates by $e^{2i\theta}$ and $e^{-2i\theta}$: two opposite phases, of sum zero. The first row sends $z\mapsto\cos2\theta\,z-i\sin2\theta\,\bar z$: a mixing of the coordinate with its conjugate. Every unitary of determinant one is a product of the three, and the three families at higher order are the same three operations applied to pairs of coordinates.</p>
-<h3 id="the-closed-form">The Closed Form</h3>
-<p><strong>Theorem (the exponential is the conjugation).</strong> With $\rho=e^{A}$,</p>
+<p><strong>Proof.</strong> The fixed elements and the turned plane are the kernel and the non-trivial block of the array. The rotor is the element exponential, whose image is the matrix of the closed form.</p>
+<p><strong>Corollary (the rotor is the conjugation).</strong> $e^{\theta\mathrm{ad}_{G_k}}=\mathrm{Ad}_{U}$ with $U=e^{\theta G_k}$, and its array is the two-sided operator $L_UR_{U^{-1}}$.</p>
+<p><strong>Proof.</strong> $L_A$ and $R_A$ commute, so $e^{\theta(L_A-R_A)}=e^{\theta L_A}e^{-\theta R_A}=L_UR_{U^{-1}}$, and that operator sends $X$ to $UXU^{-1}$.</p>
+<h3 id="the-three-rotors-written-out">The Three Rotors, Written Out</h3>
+<p><strong>Corollary (the three matrices).</strong> With $c=\cos\tfrac{\theta}{2}$ and $s=\sin\tfrac{\theta}{2}$,</p>
 <p>$$
-e^{\mathrm{ad}_A}=\mathrm{Ad}_\rho,\qquad \mathrm{Ad}_\rho(X)=\rho X\rho^{*},
+e^{\theta G_1}=\begin{pmatrix}c&amp;-is\\-is&amp;c\end{pmatrix},\qquad
+e^{\theta G_2}=\begin{pmatrix}c&amp;-s\\ s&amp;c\end{pmatrix},\qquad
+e^{\theta G_3}=\begin{pmatrix}c-is&amp;0\\0&amp;c+is\end{pmatrix}.
 $$</p>
-<p>and on the array the exponential is the Kronecker product $\rho\otimes\bar\rho$ in the Pauli basis.</p>
-<p><strong>Proof.</strong> The exponential of a derivation of an associative algebra is the conjugation by the exponential, $e^{\mathrm{ad}_A}(X)=e^{A}Xe^{-A}$, and $\rho^{-1}=\rho^{*}$ because $\rho$ is unitary. The array statement is the two-sided operator $T_{\rho,\rho^{*}}$ read in the basis.</p>
-<p><strong>Corollary (the invariants).</strong> The array lies in $\mathrm{SU}(4)$; its spectrum is $\{1,1,\lambda^{2},\bar\lambda^{2}\}$ with $\lambda=e^{i\theta}$; its fixed space is the commutant of $A$, of complex dimension two for a generic generator.</p>
-<p><strong>Proof.</strong> The array is the Kronecker product of two unitaries of determinant one. The eigenvalues of $\rho\otimes\bar\rho$ are the products of the eigenvalues, which are $\lambda\bar\lambda=1$ twice and $\lambda^{2},\bar\lambda^{2}$. The fixed matrices are those commuting with $A$, which for distinct eigenvalues are the polynomials in $A$, of complex dimension two.</p>
+<p><strong>Proof.</strong> Substitute the three matrices in the closed form.</p>
+<p><strong>Remark (three visibly different rotors).</strong> The second has real entries and is a rotation of the plane. The third is diagonal and multiplies the two coordinates by opposite phases. The first has imaginary entries off the diagonal and mixes the two coordinates with a factor $i$; in the complex coordinate it sends $z\mapsto cz-is\bar z$. Every unitary of determinant one at order two is one of the three or a product of them.</p>
+<h3 id="the-invariants">The Invariants</h3>
+<p><strong>Proposition (what the rotor preserves).</strong> The conjugation by $U$ preserves the trace, the determinant, the spectrum and the norm of every matrix, and it preserves the Hermitian cone.</p>
+<p><strong>Proof.</strong> The conjugation is an algebra automorphism, so every polynomial invariant is preserved; it carries $X^{*}$ to $(UXU^{*})^{*}$, so the cone of Hermitian matrices is preserved; and similar matrices have the same eigenvalues.</p>
+<p><strong>Corollary (the fixed space).</strong> The fixed space of the rotor is the commutant of $G_k$, of complex dimension two, spanned by $\mathrm{I}_2$ and $G_k$.</p>
+<p><strong>Proof.</strong> A matrix commutes with $G_k$ exactly when it is a polynomial in it, and $G_k$ has two distinct eigenvalues, so the polynomials are two-dimensional.</p>
 <h2 id="the-dimension-ladder">The Dimension Ladder</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -302,10 +320,10 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Remark (the two sixes are not the same six).</strong> The traceless matrices have real dimension six and the derivations have real dimension six, and they are different spaces: the first is a subspace of $M_2$, of complex dimension three, and the second is a subspace of $\operatorname{End}(M_2)$, of complex dimension three. The map $A\mapsto\mathrm{ad}_A$ is an isomorphism between them, and it is the reason the two sixes coincide.</p>
-<p><strong>Remark (why the operator level is thirty-two).</strong> $\operatorname{End}(M_2)$ has complex dimension $4\cdot4=16$, so real dimension thirty-two. The anti-Hermitian operators are half of it, sixteen, and the derivation condition cuts the sixteen down to the six of the traceless generators, of which three survive the anti-Hermitian condition.</p>
+<p><strong>Remark (the two sixes are not the same six).</strong> The traceless matrices have real dimension six and the derivations have real dimension six, and they are different spaces: the first sits inside $M_2$, of complex dimension four, and the second inside $\operatorname{End}(M_2)$, of complex dimension sixteen. The map $A\mapsto\mathrm{ad}_A$ is an isomorphism between them, and that is why the two sixes coincide.</p>
+<p><strong>Remark (why the operator level is thirty-two).</strong> $\operatorname{End}(M_2)$ has complex dimension $4\cdot4=16$, so real dimension thirty-two. The anti-Hermitian operators are half of it, sixteen; the derivation condition cuts those sixteen to the six of the traceless generators, and the anti-Hermitian condition among those leaves three.</p>
 <h2 id="the-worked-cases">The Worked Cases</h2>
-<p><strong>Proposition (the three cases, computed).</strong> Take $\theta=\pi/4$ and the three generators.</p>
+<p><strong>Proposition (the three cases at $\theta=\pi/4$).</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -317,36 +335,38 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$i\sigma_1$</td>
-<td>$\tfrac{1}{\sqrt2}\begin{pmatrix}1&amp;i\\ i&amp;1\end{pmatrix}$</td>
-<td>$\{1,1,-1,-1\}$</td>
-<td>$\operatorname{span}\{\mathrm{I}_2,\sigma_1\}$</td>
+<td>$G_1$</td>
+<td>$\cos\tfrac{\pi}{8}\mathrm{I}_2+\sin\tfrac{\pi}{8}T_1$</td>
+<td>$\{1,1,e^{i\pi/4},e^{-i\pi/4}\}$</td>
+<td>$\operatorname{span}\{\mathrm{I}_2,T_1\}$</td>
 </tr>
 <tr>
-<td>$i\sigma_2$</td>
-<td>$\tfrac{1}{\sqrt2}\begin{pmatrix}1&amp;1\\ -1&amp;1\end{pmatrix}$</td>
-<td>$\{1,1,-1,-1\}$</td>
-<td>$\operatorname{span}\{\mathrm{I}_2,\sigma_2\}$</td>
+<td>$G_2$</td>
+<td>$\cos\tfrac{\pi}{8}\mathrm{I}_2+\sin\tfrac{\pi}{8}T_2$</td>
+<td>$\{1,1,e^{i\pi/4},e^{-i\pi/4}\}$</td>
+<td>$\operatorname{span}\{\mathrm{I}_2,T_2\}$</td>
 </tr>
 <tr>
-<td>$i\sigma_3$</td>
-<td>$\operatorname{diag}(e^{i\pi/4},e^{-i\pi/4})$</td>
-<td>$\{1,1,i,-i\}$</td>
-<td>$\operatorname{span}\{\mathrm{I}_2,\sigma_3\}$</td>
+<td>$G_3$</td>
+<td>$\operatorname{diag}(e^{-i\pi/8},e^{i\pi/8})$</td>
+<td>$\{1,1,e^{i\pi/4},e^{-i\pi/4}\}$</td>
+<td>$\operatorname{span}\{\mathrm{I}_2,T_3\}$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Proof.</strong> At $\theta=\pi/4$ the angle $2\theta$ is $\pi/2$, so the conjugation sends $\sigma_j\mapsto\pm\sigma_l$ on the plane and fixes the axis; the squares of the eigenvalues are $e^{\pm i\pi/2}=\pm i$ in the third row and $-1$ in the first two, because $\rho^{2}=i\sigma_1$ or $i\sigma_2$ there, of square $-\mathrm{I}_2$.</p>
-<p><strong>Remark (the third row is the one to remember).</strong> The generator $i\sigma_3$ at the quarter period gives the two phases $e^{\pm i\pi/4}$ and the array eigenvalues $\pm i$ off the unit pair. That is the case that survives at every order: the diagonal generators always give pairs of eigenvalues of modulus one and never give the value $-1$, so the exponential of a diagonal generator never has order two.</p>
+<p><strong>Proof.</strong> The array is $e^{\theta\mathrm{ad}_{G}}$, whose eigenvalues are $1,1,e^{i\theta},e^{-i\theta}$: two from the fixed directions and two from the turned plane. At $\theta=\pi/4$ this is $1,1,e^{i\pi/4},e^{-i\pi/4}$. The conjugation turns the plane by $\theta$ and fixes the axis, so the fixed space is spanned by the identity and the generator.</p>
+<p><strong>Remark (the same spectrum for the three).</strong> All three generators have the eigenvalues $\pm\tfrac{i}{2}$ and every array has the spectrum $\{0,0,i,-i\}$, so the three cases differ in the rotor and not in the spectrum. What separates them is the real form: $G_2$ is real, $G_3$ is diagonal, and $G_1$ is neither.</p>
+<p><strong>Remark (the periods).</strong> The array has period $2\pi$ in $\theta$, since $e^{2\pi\mathrm{ad}_{G}}=\mathrm{id}$; the rotor $e^{\theta G}$ has period $4\pi$, since $e^{4\pi G}=\mathrm{I}_2$; and the element whose derivation is turned has period $4\pi$ in $\theta$ as well, which is the double cover read in the other direction.</p>
 <h2 id="the-orbits">The Orbits</h2>
 <p><strong>Proposition (the orbit of a Hermitian matrix).</strong> The conjugation by $\mathrm{SU}(2)$ sends a traceless Hermitian matrix of norm $r$ to any other of the same norm, so the orbit is a two-sphere, of real dimension two, and the stabiliser is a circle.</p>
-<p><strong>Proof.</strong> The traceless Hermitian matrices of norm $r$ are the vectors of length $r$ in three dimensions, and the conjugation acts on them as the full rotation group, transitively. The stabiliser of a non-zero vector is the circle of the rotors about it.</p>
-<p><strong>Corollary (the general orbit).</strong> A matrix with distinct eigenvalues has an orbit of real dimension two in the traceless Hermitian part and of real dimension two in the traceless anti-Hermitian part, and its full orbit inside $M_2$ is the product of the orbit of its scalar part, a point, with those two.</p>
-<p><strong>Proof.</strong> The scalar part is fixed and each of the two traceless parts is a three-dimensional space on which the group acts by rotations; the orbit of a non-zero vector in either is the sphere.</p>
+<p><strong>Proof.</strong> The traceless Hermitian matrices of norm $r$ are the vectors of length $r$ in a three-dimensional real space, and the conjugation acts on them as the full rotation group, transitively. The stabiliser of a non-zero vector is the circle of rotors about it.</p>
+<p><strong>Corollary (the general orbit).</strong> A matrix with distinct eigenvalues has an orbit of real dimension two in the traceless Hermitian part and of real dimension two in the traceless anti-Hermitian part, and its full orbit in $M_2$ is the product of the orbit of its scalar part, a point, with those two.</p>
+<p><strong>Proof.</strong> The scalar part is fixed, and each of the two traceless parts is a three-dimensional space on which the group acts by rotations; the orbit of a non-zero vector in either is the sphere.</p>
+<p><strong>Remark (the orbit of a generator).</strong> The generators form the sphere of radius $\tfrac12$ in the three-dimensional space of traceless anti-Hermitian matrices, and the conjugation acts on that sphere by rotations. So the three generators are conjugate, the orbit is the sphere, and the stabiliser of each is a circle; the three rows of the worked table are three points on one orbit, and what distinguishes them is the real structure and not the spectrum.</p>
 <h2 id="summary">Summary</h2>
-<p>The anti-Hermitian traceless matrices of order two are the three generators $i\sigma_1,i\sigma_2,i\sigma_3$, of real dimension three, and their exponentials are a phase mixing, a real rotation and a pair of opposite phases. Each generator gives the derivation $[A,\cdot]$, anti-Hermitian for the Hilbert–Schmidt form, and these are the anti-Hermitian derivations of the algebra.</p>
-<p>The arrays in the Pauli basis are $-2[a^\times]$ on the vector block, with the scalar row and column zero, so each has spectrum $\{0,0,\pm2i\}$ and exponential of determinant one. The exponential is the conjugation by the rotor, which turns the vector part by $-2\theta$ about the axis, fixes the identity and the axis, and has a fixed space of complex dimension two.</p>
-<p>The dimension ladder is $8,4,6,3$ at the element level and $32,16,6,3$ at the operator level, with the two sixes related by the isomorphism $A\mapsto\mathrm{ad}_A$. The split of the three generators as $1+2$, closed part plus open part, is the split $6+9$ of the fifteen at order four.</p>
+<p>The anti-Hermitian traceless matrices of order two form $\mathfrak{su}(2)$, of real dimension three, and their generators are the halves of the images of the three vector units, $G_k=\tfrac12\mathsf{M}_2(\vec e_k)$. With that normalization the bracket is $[G_1,G_2]=G_3$, and each array is a quarter-turn of one coordinate plane in the basis $(\mathrm{I}_2,T_1,T_2,T_3)$ of the elements.</p>
+<p>Each generator gives the derivation $[A,\cdot]$, anti-Hermitian for the Hilbert–Schmidt form, of array with the scalar row and column zero and the spectrum $\{0,0,i,-i\}$. The exponential is the conjugation by $U=e^{\theta G_k}=\cos\tfrac{\theta}{2}\mathrm{I}_2+\sin\tfrac{\theta}{2}T_k$, which turns the three-dimensional space of traceless elements by the angle $\theta$ about the axis $T_k$, right-handed, and fixes the identity and the axis.</p>
+<p>The three rotors are the phase mixing $e^{\theta G_1}$, the real rotation $e^{\theta G_2}$ and the pair of opposite phases $e^{\theta G_3}$. The dimension ladder is $8,4,6,3$ at the element level and $32,16,6,3$ at the operator level, and the split of the generators as $1+2$, closed part plus open part, is the split $6+9$ of the fifteen at order four.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -357,20 +377,16 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\sigma_k$</td>
-<td>the Pauli matrices</td>
+<td>$\mathsf{M}_2$</td>
+<td>the isomorphism from the algebra to $M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$A$</td>
-<td>the generator, anti-Hermitian and traceless</td>
+<td>$T_k$</td>
+<td>the image $\mathsf{M}_2(\vec e_k)$ of a vector unit</td>
 </tr>
 <tr>
-<td>$a$</td>
-<td>the coordinate vector of $A$ in the Pauli basis</td>
-</tr>
-<tr>
-<td>$[a^\times]$</td>
-<td>the cross-product matrix, $[a^\times]x=a\times x$</td>
+<td>$G_k$</td>
+<td>the generator $\tfrac12 T_k$</td>
 </tr>
 <tr>
 <td>$\mathrm{ad}_A$</td>
@@ -381,16 +397,16 @@ $$</p>
 <td>the Hilbert–Schmidt form $\operatorname{tr}(X^{*}Y)$</td>
 </tr>
 <tr>
-<td>$\rho$</td>
-<td>the rotor $e^{A}\in\mathrm{SU}(2)$</td>
+<td>$U$</td>
+<td>the rotor $e^{\theta G_k}\in\mathrm{SU}(2)$</td>
 </tr>
 <tr>
-<td>$\mathrm{Ad}_\rho$</td>
-<td>the conjugation $X\mapsto\rho X\rho^{*}$</td>
+<td>$\mathrm{Ad}_U$</td>
+<td>the conjugation $X\mapsto UXU^{*}$</td>
 </tr>
 <tr>
 <td>$R$</td>
-<td>the quarter-turn of the plane</td>
+<td>the quarter-turn of a coordinate plane</td>
 </tr>
 </tbody>
 </table></div>
@@ -398,11 +414,11 @@ $$</p>
 <ul>
 <li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2015), for $\mathfrak{su}(2)$, the adjoint representation and the inner automorphisms.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge University Press, 1991), for the Kronecker product and its eigenvalues.</li>
-<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the double cover and the rotation of the vector part.</li>
-<li><a href="the-anti-hermitian-derivations-of-the-biquaternion-algebra-as-su2.html">The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$</a>, for the same three generators in the coefficient frame, with the opposite sign.</li>
-<li><a href="the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a>, for the same three families with six, six and three members.</li>
+<li><a href="automorphisms-and-derivations-of-algebras.md">Automorphisms and Derivations of Algebras</a>, for the normalization $D_\mu=\tfrac12\mathrm{ad}_{\vec e_\mu}$ and the bracket $[D_1,D_2]=D_3$.</li>
+<li><a href="matrix-representations-conventions.md">Matrix Representations and Conventions</a>, for the rule on the Pauli matrices that this article follows.</li>
+<li><a href="the-anti-hermitian-derivations-of-the-biquaternion-algebra-as-su2.html">The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$</a>, for the same three arrays in the coefficient frame.</li>
+<li><a href="the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a>, for the fifteen at the next order, built from the same images.</li>
 <li><a href="the-exponential-and-the-lie-group-structure-of-gl2c.html">The Exponential and the Lie Group Structure of $\mathrm{GL}_2(\mathbb{C})$</a>, for the exponential of the matrix algebra.</li>
-<li><a href="the-exponential-and-the-lie-group-of-m3c.html">The Exponential and the Lie Group of $M_3(\mathbb{C})$</a>, for the group behind the three rotors.</li>
 </ul>
       </div>
     </main>

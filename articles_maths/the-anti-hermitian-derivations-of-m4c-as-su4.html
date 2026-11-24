@@ -204,7 +204,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Proof.</strong> For $\ell_k$: the array turns $e_t$ to $e_k$ and $e_k$ to $-e_t$, and it turns the two remaining coordinates into each other with the same sign, so both planes turn by $\theta$. For $r_k$: $r_k e_t=e_k$ as well, while on the complementary plane the sign is reversed, $r_x e_y=+e_z$ against $\ell_x e_y=-e_z$, so the two planes turn in opposite senses. For $iN_{kk}$: $N_{xx}=-\operatorname{diag}(1,1,-1,-1)$, and the exponential of an imaginary diagonal is the diagonal of the exponentials of the entries. For $iN_{jk}$ with $j\ne k$: $N_{jk}$ is a symmetric signed permutation with the eigenvalues $1,1,-1,-1$, so its exponential is $\cos\theta$ on the positive eigenspace and $\cos\theta$ on the negative one, with $i\sin\theta$ on the off-diagonal.</p>
+<p><strong>Proof.</strong> For $\ell_k$: the array turns $e_t$ to $e_k$ and $e_k$ to $-e_t$, and it turns the two remaining coordinates into each other with the same sign, so both planes turn by $\theta$. For $r_k$: $r_k e_t=e_k$ as well, while on the complementary plane the sign is reversed, $r_x e_y=+e_z$ against $\ell_x e_y=-e_z$, so the two planes turn in opposite senses. For $iN_{kk}$: $N_{xx}=-\operatorname{diag}(1,1,-1,-1)$, and the exponential of an imaginary diagonal is the diagonal of the exponentials of the entries. For $iN_{jk}$ with $j\ne k$: $N_{jk}$ is a symmetric signed permutation with $N_{jk}^{2}=\mathrm{I}_4$ and the eigenvalues $1,1,-1,-1$, so $e^{i\theta N_{jk}}=\cos\theta\,\mathrm{I}_4+i\sin\theta\,N_{jk}$, which is the identity on the diagonal and $\pm i\sin\theta$ on the four entries that $N_{jk}$ moves.</p>
 <p><strong>Corollary (what each family preserves).</strong> The three rotors $e^{\theta\ell_k}$ preserve the real structure and the two planes; the three $e^{\theta r_k}$ preserve the real structure and swap the senses; the nine $e^{\theta iN_{jk}}$ preserve the splitting into two coordinate pairs of the diagonal ones and mix pairs for the others. All fifteen preserve the trace, the determinant, the spectrum and the Hermitian cone.</p>
 <p><strong>Proof.</strong> Each rotor is unitary, and the conjugation by a unitary matrix preserves every similarity invariant and carries $X^{*}$ to $(UXU^{*})^{*}$.</p>
 <h3 id="what-each-generator-does-to-the-sixteen-entries">What Each Generator Does to the Sixteen Entries</h3>
@@ -284,6 +284,11 @@ $$</p>
 </tr>
 <tr>
 <td>$[S_a,S_b]$</td>
+<td>$D_c$</td>
+<td>the six, normalized</td>
+</tr>
+<tr>
+<td>$[D_a,S_b]$, $[S_a,D_b]$</td>
 <td>$S_c$</td>
 <td>the six, normalized</td>
 </tr>
@@ -312,15 +317,15 @@ $$</p>
 <p>with $D_k=\tfrac12(\ell_k-r_k)$ and $S_k=\tfrac12(\ell_k+r_k)$.</p>
 <p><strong>Proof.</strong> Each identity is a computation with the multiplication of the units: $\ell_a\ell_b=\ell_c$ and $\ell_b\ell_a=-\ell_c$ for $a,b,c$ cyclic, $r_ar_b=-r_c$ because the law of the right matrices is reversed, and left and right matrices commute. The last two follow from $\ell_jr_k\ell_lr_m=\ell_{jl}r_{mk}$ together with the rules for $\ell_a\ell_b$ and $r_ar_b$.</p>
 <p><strong>Corollary (the three counts).</strong> The six close, the nine do not, and the brackets of the nine land in the six.</p>
-<p><strong>Proof.</strong> The first three rows stay inside the six. The next two land in the nine. The last two land in the six.</p>
+<p><strong>Proof.</strong> Rows one to five stay inside the six. Rows six and seven land in the nine. Rows eight and nine land in the six.</p>
 <p><strong>Theorem (the gradings).</strong> The bracket satisfies</p>
 <p>$$
 [\mathfrak{so},\mathfrak{so}]\subset\mathfrak{so},\qquad [\mathfrak{so},\mathfrak{p}]\subset\mathfrak{p},\qquad [\mathfrak{p},\mathfrak{p}]\subset\mathfrak{so},
 $$</p>
 <p>with $\mathfrak{so}$ the span of the six and $\mathfrak{p}$ the span of the nine. So the split $6+9$ is a $\mathbb{Z}_2$-grading, the pair is a symmetric pair, and $\mathrm{SU}(4)/\mathrm{SO}(4)$ is the symmetric space it integrates to.</p>
-<p><strong>Proof.</strong> The three inclusions are read off the table: the rows of the six stay in the six, the mixed rows stay in the nine, and the rows of two ninths land in the six. A grading whose odd part squares into the even part is the infinitesimal form of a symmetric space.</p>
-<p><strong>Remark (the three inner derivations are the diagonal).</strong> The three $D_k=\tfrac12(\ell_k-r_k)$ are the anti-diagonal combinations of the two $\mathfrak{su}(2)$'s, and the three $S_k=\tfrac12(\ell_k+r_k)$ the diagonal ones. So the three directions that the biquaternion algebra supplies are the diagonal of the chiral pair, and the twelve that it does not supply are the other three of the six together with the nine. That is the whole content of the count $3+12=15$: the algebra reaches one of the two chiral factors, the anti-diagonal, and nothing else.</p>
-<p><strong>Proof.</strong> $\ell_k=D_k+S_k$ and $r_k=D_k-S_k$ by definition, so the six span the same space as the three $D_k$ and the three $S_k$; the $D_k$ satisfy the relations of $\mathrm{ad}$ and the $S_k$ satisfy the same relations with the same sign, and the two triples commute.</p>
+<p><strong>Proof.</strong> The three inclusions are read off the table: the rows of two of the six stay in the six, the mixed rows stay in the nine, and the bracket of two of the nine lands in the six. A grading whose odd part squares into the even part is the infinitesimal form of a symmetric space.</p>
+<p><strong>Remark (the three inner derivations are half the six).</strong> The three $D_k=\tfrac12(\ell_k-r_k)$ are the anti-diagonal combinations of the two $\mathfrak{su}(2)$'s, and the three $S_k=\tfrac12(\ell_k+r_k)$ the diagonal ones. The $D_k$ are the derivations of the biquaternion algebra; the twelve directions the algebra does not supply are the three $S_k$ together with the nine. That is the content of the count $3+12=15$.</p>
+<p><strong>Proof.</strong> $\ell_k=D_k+S_k$ and $r_k=D_k-S_k$ by definition, so the six span the same space as the two triples. The brackets are $[D_a,D_b]=D_c$, $[D_a,S_b]=[S_a,D_b]=S_c$ and $[S_a,S_b]=D_c$ for $a,b,c$ cyclic, so the six is $\mathfrak{so}(4)$ in the mixed basis $D,S$; in the basis $\tfrac12\ell,\tfrac12 r$ the same six reads as two commuting $\mathfrak{su}(2)$'s, $[\ell_a,\ell_b]=2\ell_c$ and $[r_a,r_b]=-2r_c$.</p>
 <h2 id="the-dimension-ladder">The Dimension Ladder</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -483,7 +488,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Remark (the checks).</strong> On one hundred random generators of $\mathfrak{su}(4)$: the array is anti-Hermitian with trace at most $3.6\times10^{-15}$; the Leibniz residual is at most $2.8\times10^{-14}$; the spectrum matches the differences of the eigenvalues to $3.8\times10^{-14}$; the Kronecker form holds exactly; the exponential equals $U\otimes\bar U$ to $4.1\times10^{-15}$; it is unitary to $7.1\times10^{-15}$ with determinant one to $2.0\times10^{-14}$. The fifteen generators of the basis have residual zero for anti-Hermitian and $1.1\times10^{-16}$ for traceless, with rank fifteen, and every one of them squares to $-\mathrm{I}_4$. The closed forms are exact: $e^{\theta\ell_k}$, $e^{\theta r_k}$ and $e^{\theta iN_{jk}}$ agree with $\cos\theta\,\mathrm{I}_4+\sin\theta\,K$ to $4.4\times10^{-16}$. The four bracket rows hold to machine precision: $[\ell_x,\ell_y]=2\ell_z$, $[r_x,r_y]=-2r_z$, $[\ell_a,r_b]=0$, $[D_x,D_y]=D_z$, $[\ell_x,iN_{yz}]=2iN_{zz}$, $[iN_{xx},iN_{xy}]=-2r_z$, $[iN_{xy},iN_{yx}]=0$. The grading is checked on all $36+108+81$ pairs: the bracket of two of the six stays in the six, of one of the six with one of the nine stays in the nine, and of two of the nine stays in the six.</p>
+<p><strong>Remark (the checks).</strong> On two hundred random generators of $\mathfrak{su}(4)$: the array is anti-Hermitian exactly, the Leibniz residual is at most $2.6\times10^{-14}$, the Kronecker form $F(X)=KX-XK$ holds to $7.1\times10^{-15}$, the power sums of the spectrum agree with the sums of the differences of the eigenvalues to a relative $1.2\times10^{-12}$, the exponential equals $U\otimes\bar U$ to $5.1\times10^{-15}$, and it is unitary to $4.7\times10^{-15}$ with determinant one to $7.3\times10^{-15}$. The fifteen generators of the basis are anti-Hermitian and traceless exactly, of rank fifteen, each of them squares to $-\mathrm{I}_4$ with the eigenvalues $i,i,-i,-i$. The closed forms agree to $3.6\times10^{-16}$. The bracket rows hold exactly: $[\ell_x,\ell_y]=2\ell_z$, $[r_x,r_y]=-2r_z$, $[\ell_a,r_b]=0$, $[D_x,D_y]=D_z$, $[S_x,S_y]=D_z$, $[\ell_x,iN_{yz}]=2iN_{zz}$, $[iN_{xx},iN_{xy}]=-2r_z$, $[iN_{xy},iN_{yx}]=0$. The grading is checked on all $36+108+81$ pairs, with residual at most $8.9\times10^{-16}$: two of the six bracket into the six, one of the six with one of the nine into the nine, and two of the nine into the six.</p>
 <h2 id="summary">Summary</h2>
 <p>The anti-Hermitian traceless matrices of order four are $\mathfrak{su}(4)$, of real dimension fifteen, split as six real antisymmetric and nine purely imaginary, $6+9$. The six are the left and right matrices of the three vector units in the axis-free frame, they are $\mathfrak{su}(2)\oplus\mathfrak{su}(2)=\mathfrak{so}(4)$, and the nine are $i$ times their nine products.</p>
 <p>Every generator of the basis satisfies $K^{2}=-\mathrm{I}_4$, so every rotor is a closed form in $\cos\theta$ and $\sin\theta$, and every generator has the eigenvalues $i,i,-i,-i$. The three inner derivations of the biquaternion algebra are the anti-diagonal combinations $\tfrac12(\ell_k-r_k)$, which satisfy $[D_x,D_y]=D_z$; the twelve remaining directions are the diagonal combinations $\tfrac12(\ell_k+r_k)$ and the nine.</p>
