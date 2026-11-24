@@ -30,25 +30,27 @@ $$
 
 six, six and three of them.
 
-**Proposition (three come from the algebra).** The three inner derivations of the algebra, written as operators in the coefficient basis, are exactly
+**Proposition (three come from the algebra).** The three inner derivations of the algebra, in the normalization $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$ of *Automorphisms and Derivations of Algebras*, are exactly
 
 $$
-\mathrm{ad}_{\vec e_x}=\begin{pmatrix}0&0&0&0\\0&0&0&0\\0&0&0&-2\\0&0&2&0\end{pmatrix},\quad
-\mathrm{ad}_{\vec e_y}=\begin{pmatrix}0&0&0&0\\0&0&0&2\\0&0&0&0\\0&-2&0&0\end{pmatrix},\quad
-\mathrm{ad}_{\vec e_z}=\begin{pmatrix}0&0&-2&0\\0&0&0&0\\0&2&0&0\\0&0&0&0\end{pmatrix}.
+D_x=\begin{pmatrix}0&0&0&0\\0&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
+D_y=\begin{pmatrix}0&0&0&0\\0&0&0&1\\0&0&0&0\\0&-1&0&0\end{pmatrix},\quad
+D_z=\begin{pmatrix}0&0&0&0\\0&0&-1&0\\0&1&0&0\\0&0&0&0\end{pmatrix}.
 $$
 
-Each is anti-Hermitian, of trace zero, of square $-4P$ with $P$ the projection onto one coordinate plane, and the three are independent.
+Each is anti-Hermitian, of trace zero, of square $-P$ with $P$ the projection onto one coordinate plane, and the three are independent.
 
-**Proof.** The arrays are the difference of the left and right multipliers of a unit vector, computed in the coefficient basis with the multiplication rules $\vec e_x\vec e_y=\vec e_z$ and so on. The anti-Hermitian and traceless properties are read from the entries, which are real and antisymmetric with zero diagonal.
+**Proof.** The arrays are the half-difference of the left and right multipliers of a unit vector, computed in the coefficient basis with the multiplication rules $\vec e_x\vec e_y=\vec e_z$ and so on. The anti-Hermitian and traceless properties are read from the entries, which are real and antisymmetric with zero diagonal.
 
 **Remark (what the three are, among the fifteen).** In the labelling $e_t,\vec e_x,\vec e_y,\vec e_z$ the three arrays above are exactly
 
 $$
-\mathrm{ad}_{\vec e_x}=-2A_{34},\qquad \mathrm{ad}_{\vec e_y}=+2A_{24},\qquad \mathrm{ad}_{\vec e_z}=-2A_{23},
+D_x=-A_{34},\qquad D_y=+A_{24},\qquad D_z=-A_{23},
 $$
 
 with the indices $2,3,4$ standing for the three vector coefficients. So the three directions that the algebra supplies are three of the six of the $A$ family, and the other twelve are the remaining three of that family, the six of the $S$ family and the three diagonal ones. The element level has three directions; the operator level has three of each kind that the algebra supplies and twelve that it does not.
+
+**Remark (the three families against the six and the nine).** The article uses the three names because they separate the six real antisymmetric generators from the six imaginary off-diagonal ones and from the three imaginary diagonal ones. In the notation of the two companion articles the six of the $A$ family are the six matrices $\ell_k=L_{\mathrm{axf},\vec e_k}$ and $r_k=R_{\mathrm{axf},\vec e_k}$, closed under the bracket, and the nine of the $S$ and $H$ families are the nine products $iN_{jk}=i\ell_jr_k$, which are not. So the split $6+9$ of fifteen is the split $A$ against $S$ and $H$, and the three inner derivations are three of the six: $D_k=\tfrac12(\ell_k-r_k)$.
 
 ## The Derivation and Its Array
 

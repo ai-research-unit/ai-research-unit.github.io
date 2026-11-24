@@ -4,7 +4,9 @@
 
 **Two conditions pick out the generators: anti-Hermitian and scalar-free. On the algebra they are the real vectors, of real dimension three. Each real vector $v$ gives the inner derivation $\mathrm{ad}_v=L_v-R_v$, which is anti-Hermitian for the Hermitian form, satisfies the Leibniz rule, and has $\mathrm{ad}_v(w)=2\,v\times w$ on the vector part. The three derivations $\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y},\mathrm{ad}_{\vec e_z}$ are the whole anti-Hermitian derivation set, and under the bracket they form $\mathfrak{su}(2)$.**
 
-The exponential of each generator is a conjugation by a rotor: $e^{\theta\,\mathrm{ad}_v}=\mathrm{Ad}_{\rho}$ with $\rho=e^{\theta v}$. Each of the three generators does one thing. It fixes the scalar line, fixes its own axis, and turns the plane of the other two axes by twice the angle of the rotor. The doubling is the factor $2$ in $\mathrm{ad}_v=2[v\times]$; it is the single most concrete thing to check, and the arrays below show it.
+The article writes the generators in the corpus normalization $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$, so that the structure constants come out as $\epsilon_{abc}$, as in *Automorphisms and Derivations of Algebras*. With the half, $D_v(w)=v\times w$ on the vector part and the arrays below carry the entries $\pm1$ instead of $\pm2$.
+
+The exponential of each generator is a conjugation by a rotor: $e^{\theta D_v}=\mathrm{Ad}_{\rho}$ with $\rho=e^{\theta v/2}$. Each of the three generators does one thing. It fixes the scalar line, fixes its own axis, and turns the plane of the other two axes by the angle of the array, which is the angle of the rotor because the half of the normalization cancels the half of the double cover.
 
 The article gives the three generators as explicit $4\times4$ arrays, the bracket table, the exponential of each generator written out entry by entry, and the action of each rotor on the four parts of the algebra. It also states the dimension ladder of the operator level, which is the part the element-level statement leaves out.
 
@@ -263,9 +265,9 @@ $$
 
 The anti-Hermitian scalar-free elements are the real vectors, of real dimension three, and their exponential is the rotor $\cos(\theta r)e_t+\sin(\theta r)\hat v$. Each vector gives the inner derivation $\mathrm{ad}_v=L_v-R_v$, which satisfies the Leibniz rule and is anti-Hermitian for the Hermitian form.
 
-The three unit generators are the three real directions, and their arrays are $2R$ on one coordinate plane each, with the scalar line and the axis of the generator killed. Their bracket is $[\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y}]=2\,\mathrm{ad}_{\vec e_z}$, and with real coefficients they form $\mathfrak{su}(2)$, of real dimension three inside the six of all derivations and the thirty-two of all operators.
+The three unit generators are the three real directions, written $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$, and their arrays are the quarter-turn $R$ of one coordinate plane each, with the scalar line and the axis of the generator killed. Their bracket is $[D_x,D_y]=D_z$, and with real coefficients they form $\mathfrak{su}(2)$, of real dimension three inside the six of all derivations and the thirty-two of all operators.
 
-Exponentiated, each generator fixes the scalar line and its own axis and turns the plane of the other two axes by twice the parameter. The exponential is the conjugation by the rotor, of array $T_{\rho,\rho^{-1}}$, unitary of determinant one, of spectrum $\{0,0,\pm2i\}$ and of period $\pi$ in the parameter. The rotor moves a vector along its sphere, of real dimension two, and the stabiliser of a vector is the circle about it.
+Exponentiated, each generator fixes the scalar line and its own axis and turns the plane of the other two axes by the parameter. The exponential is the conjugation by the rotor $e^{\theta\vec e_k/2}$, of array $T_{\rho,\rho^{-1}}$, unitary of determinant one, of spectrum $\{0,0,\pm i\}$ and of period $2\pi$ in the parameter. The rotor moves a vector along its sphere, of real dimension two, and the stabiliser of a vector is the circle about it.
 
 ## Summary of Notation
 

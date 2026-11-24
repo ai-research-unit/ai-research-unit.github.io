@@ -167,7 +167,7 @@ $$
 | $iN_{kk}$ | imaginary diagonal | multiplies two coordinates by $e^{i\theta}$ and two by $e^{-i\theta}$ | $X_{pq}\mapsto e^{i\theta(d_p-d_q)}X_{pq}$ with $d$ two plus signs and two minus |
 | $iN_{jk}$, $j\ne k$ | complex, off-diagonal | mixes two pairs with the factor $i$ | the corresponding rows and columns mix with the factor $i$ |
 
-**Proof.** For $\ell_k$: the array turns $e_t$ to $e_k$ and $e_k$ to $-e_t$, and it turns the two remaining coordinates into each other with the same sign, so both planes turn by $\theta$. For $r_k$: $r_k e_t=e_k$ as well, while on the complementary plane the sign is reversed, $r_x e_y=+e_z$ against $\ell_x e_y=-e_z$, so the two planes turn in opposite senses. For $iN_{kk}$: $N_{xx}=-\operatorname{diag}(1,1,-1,-1)$, and the exponential of an imaginary diagonal is the diagonal of the exponentials of the entries. For $iN_{jk}$ with $j\ne k$: $N_{jk}$ is a symmetric signed permutation with the eigenvalues $1,1,-1,-1$, so its exponential is $\cos\theta$ on the positive eigenspace and $\cos\theta$ on the negative one, with $i\sin\theta$ on the off-diagonal.
+**Proof.** For $\ell_k$: the array turns $e_t$ to $e_k$ and $e_k$ to $-e_t$, and it turns the two remaining coordinates into each other with the same sign, so both planes turn by $\theta$. For $r_k$: $r_k e_t=e_k$ as well, while on the complementary plane the sign is reversed, $r_x e_y=+e_z$ against $\ell_x e_y=-e_z$, so the two planes turn in opposite senses. For $iN_{kk}$: $N_{xx}=-\operatorname{diag}(1,1,-1,-1)$, and the exponential of an imaginary diagonal is the diagonal of the exponentials of the entries. For $iN_{jk}$ with $j\ne k$: $N_{jk}$ is a symmetric signed permutation with $N_{jk}^{2}=\mathrm{I}_4$ and the eigenvalues $1,1,-1,-1$, so $e^{i\theta N_{jk}}=\cos\theta\,\mathrm{I}_4+i\sin\theta\,N_{jk}$, which is the identity on the diagonal and $\pm i\sin\theta$ on the four entries that $N_{jk}$ moves.
 
 **Corollary (what each family preserves).** The three rotors $e^{\theta\ell_k}$ preserve the real structure and the two planes; the three $e^{\theta r_k}$ preserve the real structure and swap the senses; the nine $e^{\theta iN_{jk}}$ preserve the splitting into two coordinate pairs of the diagonal ones and mix pairs for the others. All fifteen preserve the trace, the determinant, the spectrum and the Hermitian cone.
 
@@ -214,7 +214,8 @@ and the array of that operator is $U\otimes\bar U$ in the row stacking.
 | $[r_a,r_b]$ | $-2r_c$ | the six |
 | $[\ell_a,r_b]$ | $0$ | the six |
 | $[D_a,D_b]$ | $D_c$ | the six, normalized |
-| $[S_a,S_b]$ | $S_c$ | the six, normalized |
+| $[S_a,S_b]$ | $D_c$ | the six, normalized |
+| $[D_a,S_b]$, $[S_a,D_b]$ | $S_c$ | the six, normalized |
 | $[\ell_a,iN_{jk}]$ | $2\sum_c\epsilon_{ajc}\,iN_{ck}$ | the nine |
 | $[r_a,iN_{jk}]$ | $-2\sum_c\epsilon_{akc}\,iN_{jc}$ | the nine |
 | $[iN_{xx},iN_{xy}]$ | $-2r_z$ | the six |
@@ -226,7 +227,7 @@ with $D_k=\tfrac12(\ell_k-r_k)$ and $S_k=\tfrac12(\ell_k+r_k)$.
 
 **Corollary (the three counts).** The six close, the nine do not, and the brackets of the nine land in the six.
 
-**Proof.** The first three rows stay inside the six. The next two land in the nine. The last two land in the six.
+**Proof.** Rows one to five stay inside the six. Rows six and seven land in the nine. Rows eight and nine land in the six.
 
 **Theorem (the gradings).** The bracket satisfies
 
@@ -236,11 +237,11 @@ $$
 
 with $\mathfrak{so}$ the span of the six and $\mathfrak{p}$ the span of the nine. So the split $6+9$ is a $\mathbb{Z}_2$-grading, the pair is a symmetric pair, and $\mathrm{SU}(4)/\mathrm{SO}(4)$ is the symmetric space it integrates to.
 
-**Proof.** The three inclusions are read off the table: the rows of the six stay in the six, the mixed rows stay in the nine, and the rows of two ninths land in the six. A grading whose odd part squares into the even part is the infinitesimal form of a symmetric space.
+**Proof.** The three inclusions are read off the table: the rows of two of the six stay in the six, the mixed rows stay in the nine, and the bracket of two of the nine lands in the six. A grading whose odd part squares into the even part is the infinitesimal form of a symmetric space.
 
-**Remark (the three inner derivations are the diagonal).** The three $D_k=\tfrac12(\ell_k-r_k)$ are the anti-diagonal combinations of the two $\mathfrak{su}(2)$'s, and the three $S_k=\tfrac12(\ell_k+r_k)$ the diagonal ones. So the three directions that the biquaternion algebra supplies are the diagonal of the chiral pair, and the twelve that it does not supply are the other three of the six together with the nine. That is the whole content of the count $3+12=15$: the algebra reaches one of the two chiral factors, the anti-diagonal, and nothing else.
+**Remark (the three inner derivations are half the six).** The three $D_k=\tfrac12(\ell_k-r_k)$ are the anti-diagonal combinations of the two $\mathfrak{su}(2)$'s, and the three $S_k=\tfrac12(\ell_k+r_k)$ the diagonal ones. The $D_k$ are the derivations of the biquaternion algebra; the twelve directions the algebra does not supply are the three $S_k$ together with the nine. That is the content of the count $3+12=15$.
 
-**Proof.** $\ell_k=D_k+S_k$ and $r_k=D_k-S_k$ by definition, so the six span the same space as the three $D_k$ and the three $S_k$; the $D_k$ satisfy the relations of $\mathrm{ad}$ and the $S_k$ satisfy the same relations with the same sign, and the two triples commute.
+**Proof.** $\ell_k=D_k+S_k$ and $r_k=D_k-S_k$ by definition, so the six span the same space as the two triples. The brackets are $[D_a,D_b]=D_c$, $[D_a,S_b]=[S_a,D_b]=S_c$ and $[S_a,S_b]=D_c$ for $a,b,c$ cyclic, so the six is $\mathfrak{so}(4)$ in the mixed basis $D,S$; in the basis $\tfrac12\ell,\tfrac12 r$ the same six reads as two commuting $\mathfrak{su}(2)$'s, $[\ell_a,\ell_b]=2\ell_c$ and $[r_a,r_b]=-2r_c$.
 
 ## The Dimension Ladder
 
@@ -299,7 +300,7 @@ with $\mathfrak{so}$ the span of the six and $\mathfrak{p}$ the span of the nine
 | exponential | $\mathrm{Ad}_U$ | $U\otimes\bar U$ |
 | image of the rotor map | $\mathrm{PSU}(4)$, kernel $\mathbb{Z}_4$ | the same |
 
-**Remark (the checks).** On one hundred random generators of $\mathfrak{su}(4)$: the array is anti-Hermitian with trace at most $3.6\times10^{-15}$; the Leibniz residual is at most $2.8\times10^{-14}$; the spectrum matches the differences of the eigenvalues to $3.8\times10^{-14}$; the Kronecker form holds exactly; the exponential equals $U\otimes\bar U$ to $4.1\times10^{-15}$; it is unitary to $7.1\times10^{-15}$ with determinant one to $2.0\times10^{-14}$. The fifteen generators of the basis have residual zero for anti-Hermitian and $1.1\times10^{-16}$ for traceless, with rank fifteen, and every one of them squares to $-\mathrm{I}_4$. The closed forms are exact: $e^{\theta\ell_k}$, $e^{\theta r_k}$ and $e^{\theta iN_{jk}}$ agree with $\cos\theta\,\mathrm{I}_4+\sin\theta\,K$ to $4.4\times10^{-16}$. The four bracket rows hold to machine precision: $[\ell_x,\ell_y]=2\ell_z$, $[r_x,r_y]=-2r_z$, $[\ell_a,r_b]=0$, $[D_x,D_y]=D_z$, $[\ell_x,iN_{yz}]=2iN_{zz}$, $[iN_{xx},iN_{xy}]=-2r_z$, $[iN_{xy},iN_{yx}]=0$. The grading is checked on all $36+108+81$ pairs: the bracket of two of the six stays in the six, of one of the six with one of the nine stays in the nine, and of two of the nine stays in the six.
+**Remark (the checks).** On two hundred random generators of $\mathfrak{su}(4)$: the array is anti-Hermitian exactly, the Leibniz residual is at most $2.6\times10^{-14}$, the Kronecker form $F(X)=KX-XK$ holds to $7.1\times10^{-15}$, the power sums of the spectrum agree with the sums of the differences of the eigenvalues to a relative $1.2\times10^{-12}$, the exponential equals $U\otimes\bar U$ to $5.1\times10^{-15}$, and it is unitary to $4.7\times10^{-15}$ with determinant one to $7.3\times10^{-15}$. The fifteen generators of the basis are anti-Hermitian and traceless exactly, of rank fifteen, each of them squares to $-\mathrm{I}_4$ with the eigenvalues $i,i,-i,-i$. The closed forms agree to $3.6\times10^{-16}$. The bracket rows hold exactly: $[\ell_x,\ell_y]=2\ell_z$, $[r_x,r_y]=-2r_z$, $[\ell_a,r_b]=0$, $[D_x,D_y]=D_z$, $[S_x,S_y]=D_z$, $[\ell_x,iN_{yz}]=2iN_{zz}$, $[iN_{xx},iN_{xy}]=-2r_z$, $[iN_{xy},iN_{yx}]=0$. The grading is checked on all $36+108+81$ pairs, with residual at most $8.9\times10^{-16}$: two of the six bracket into the six, one of the six with one of the nine into the nine, and two of the nine into the six.
 
 ## Summary
 
