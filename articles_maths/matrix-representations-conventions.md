@@ -260,6 +260,14 @@ and the same values hold for $R$, since the stitch changes neither a trace nor a
 
 **They are real.** The sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are real signed permutation matrices: four entries $\pm1$, one in each row and each column, of determinant $1$, of Hilbert–Schmidt norm two, and mutually orthogonal. Their entries are the structure constants themselves, so the product table of the algebra and the multiplication of the sixteen arrays are one table.
 
+**The word, and the name of a word.** A product of one left array with one right array is a **word**,
+$$
+W_{\mu\nu}:=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu},\qquad \mu,\nu\in\{t,x,y,z\},
+$$
+and the label of a word is the pair of units it multiplies. The sixteen words are orthogonal in the trace form, $\operatorname{tr}(W_{\mu\nu}^{\mathsf T}W_{\rho\sigma})=4\,\delta_{\mu\rho}\delta_{\nu\sigma}$, because each is a signed permutation and a product of two signed permutations has trace $4$ exactly when the two agree. Sixteen arrays orthogonal in a sixteen-dimensional space are a basis of $M_4(\mathbb{R})$.
+
+**Exactly one word carries the trace.** Only $W_{tt}$ has a nonzero trace, and its trace is $4$. Deleting the trace is therefore the deletion of the pair $(t,t)$ from the index list, and $16-1=15$ counts the pairs left. With $\ell_k=L_{\mathrm{axf},\vec e_k}$ and $r_k=R_{\mathrm{axf},\vec e_k}$, the fifteen are the six antisymmetric words $\ell_x,\ell_y,\ell_z,r_x,r_y,r_z$, with one index $t$, and the nine symmetric words $N_{jk}=\ell_jr_k$, with no index $t$. The matrix displays and the full table of names are §*The Sixteen Words, and Their Names* of [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html).
+
 **The sixteen, one by one.** Each is a signed permutation matrix, with four entries $\pm1$, and each is written here with both factors named:
 
 $$

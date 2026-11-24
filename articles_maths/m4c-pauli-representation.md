@@ -713,6 +713,10 @@ The identity is the associativity of the product, read on the two sides. It says
 
 **The product of a left and a right basis matrix.** The product $L_{\mathrm{pau},e_\mu} R_{\mathrm{pau},e_\nu}$ is a monomial matrix with entries $0,\pm1,\pm i$; it need not lie in either copy. A left matrix and a right matrix commute, and this commutation is the defining property of the two copies.
 
+**The sixteen words.** A product of one left array with one right array is a **word**, $W_{\mu\nu}=L_{\mathrm{pau}}(e_\mu)R_{\mathrm{pau}}(e_\nu)$, and in this frame the word is the Kronecker product $\mathsf M_2(e_\nu)^{\mathsf T}\otimes\mathsf M_2(e_\mu)$: a pair of units read in the two slots, the right unit in the first slot. The sixteen are orthogonal with $\operatorname{tr}(W_{\mu\nu}^{*}W_{\rho\sigma})=4\,\delta_{\mu\rho}\delta_{\nu\sigma}$, because $\operatorname{tr}\bigl((L_AR_B)^{*}L_CR_D\bigr)=\operatorname{tr}(A^{*}C)\operatorname{tr}(B^{*}D)$ and $\operatorname{tr}\bigl(\mathsf M_2(e_\mu)^{*}\mathsf M_2(e_\nu)\bigr)=2\delta_{\mu\nu}$. The constant is the same four as in the axis-free frame, and the sixteen arrays are the same sixteen operators in the other frame.
+
+**One word carries the trace.** Only $W_{tt}=\mathrm I_4$ has a nonzero trace, $4$; the other fifteen have trace $0$. Deleting the trace is therefore the deletion of the pair $(t,t)$, and the fifteen left are the six $\ell_k=L_{\mathrm{pau},\vec e_k}$ and $r_k=R_{\mathrm{pau},\vec e_k}$ with one index $t$, and the nine $N_{jk}=\ell_jr_k$ with none. The statement in the real frame, with the table of names, is §*The Sixteen Words, and Their Names* of [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html).
+
 ## The Trace
 
 **The trace is the scalar part.** For every $\tilde Q$,

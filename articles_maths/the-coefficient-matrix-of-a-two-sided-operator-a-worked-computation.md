@@ -39,6 +39,11 @@ In practice: read the four nonzero positions of $L_{\mathrm{axf},e_\mu}R_{\mathr
 **The index order.** The labels $t,x,y,z$ correspond to the rows and columns $1,2,3,4$. The first index of $c_{\mu\nu}$ is the left parameter, the second the right parameter. The order is part of the definition; swapping it transposes the coefficient matrix and returns the wrong operator.
 
 ## The Sixteen Traces
+## The Sixteen Traces
+
+**The sixteen traces are the sixteen words.** The basis array $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ is a word $W_{\mu\nu}$, the product of one left array with one right array, and the sixteen coefficients of $M$ are one trace against each word. The words are orthogonal with $\operatorname{tr}(W_{\mu\nu}^{\mathsf T}W_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the sixteen computations below are sixteen projections, and no combination of them is needed.
+
+**The corner word carries the trace.** Only $W_{tt}=\mathrm{I}_4$ has a nonzero trace, and it is the word that returns the trace of $M$, $c_{tt}=\tfrac14\operatorname{tr}M$. The other fifteen words are traceless, so each of their fifteen sums is a difference of entries of $M$ and not a trace. That is why the grid of sixteen has one distinguished cell: the coefficient in the corner reads the trace, and the coefficient table of this article is that grid read entry by entry.
 
 ### The four diagonal matrices
 

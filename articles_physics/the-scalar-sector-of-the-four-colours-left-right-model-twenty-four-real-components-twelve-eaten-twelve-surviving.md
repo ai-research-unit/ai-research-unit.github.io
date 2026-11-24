@@ -1,4 +1,4 @@
-# __The Scalar Sector: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving__
+# __The Scalar Sector of the Four Colours Left–Right Model: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving__
 
 ## Introduction
 
@@ -22,7 +22,7 @@ So the minimal sector breaks the symmetry correctly, leaves twelve real scalars,
 
 **Not established.** The third field's potential is not under control. The corpus cannot derive the scalar content: the scalar sector is the one place in the frame with no algebraic guidance at all.
 
-**Where the rest is.** The six coloured states this sector creates are [The Leptoquarks: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-six-states-one-bound-and-no-proton-decay.html), which owns their mass relation, the $K_L\to\mu e$ bound and the diquark fork. The mass each eaten component produces is [Classification of the Bosons](classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html), §*The Two Massive Neutrals*, and the chain itself is [The Breaking Chain](the-breaking-chain-one-flag-three-stabilisers-three-scales.html).
+**Where the rest is.** The six coloured states this sector creates are [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html), which owns their mass relation, the $K_L\to\mu e$ bound and the diquark fork. The mass each eaten component produces is [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html), §*The Two Massive Neutrals*, and the chain itself is [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html).
 
 ## The Scalar and the Centre
 
@@ -46,7 +46,7 @@ So the minimal sector breaks the symmetry correctly, leaves twelve real scalars,
 
 **The factor of two.** It is the reality of a complex scalar: a complex field carries two real degrees of freedom. The $(\mathbf4,\mathbf1,\mathbf2)$ is complex in the $\mathrm{SU}(4)$ index and complex in the $\mathrm{SU}(2)_R$ index, so it holds eight complex components and sixteen real numbers, and that sixteen is the number *The Eaten Count, Which Is Exact* spends.
 
-**The expensive one.** That is why it is the expensive one. Fifteen is the adjoint of $\mathrm{SU}(4)$, so $\Sigma$ carries a coloured octet, a coloured triplet and antitriplet, and a singlet — and the coloured pieces can mediate proton decay, which is the fork of [the leptoquark article](the-leptoquarks-six-states-one-bound-and-no-proton-decay.html), §*The Diquark Fork: Dimension Six*.
+**The expensive one.** That is why it is the expensive one. Fifteen is the adjoint of $\mathrm{SU}(4)$, so $\Sigma$ carries a coloured octet, a coloured triplet and antitriplet, and a singlet — and the coloured pieces can mediate proton decay, which is the fork of [the leptoquark article](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html), §*The Diquark Fork: Dimension Six*.
 
 ## The Eaten Count, Which Is Exact
 
@@ -62,7 +62,7 @@ So the minimal sector breaks the symmetry correctly, leaves twelve real scalars,
 
 **Why the two counts agree.** The coset count and the eaten count agree, and this is not a coincidence: it is the statement that the two fields' vacuum manifold has exactly the dimension of the coset. But agreement of two numbers is not exhaustion of the fields; twelve is what the breaking spends, not what the multiplets contain.
 
-**3.1 The first field's eight.** Six are the leptoquarks of [the leptoquark article](the-leptoquarks-six-states-one-bound-and-no-proton-decay.html). The other two are the $W_R^{\pm}$: the $\Phi$ vacuum has a direction in its $R$-doublet, and rotating that direction is two real flat directions.
+**3.1 The first field's eight.** Six are the leptoquarks of [the leptoquark article](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The other two are the $W_R^{\pm}$: the $\Phi$ vacuum has a direction in its $R$-doublet, and rotating that direction is two real flat directions.
 
 **3.2 The second field's four.** The bidoublet's vacuum is $2\times2$ and its flat directions are the four broken generators of the electroweak pair — the $W^{\pm}$, the $Z$, and the $Z_R$. That the $Z_R$ is among them is the point most often missed: in the minimal model the $Z_R$ mass comes from the bidoublet through the mixing, not from a separate field, and the spectrum's $\tfrac58g^2v_R^2$ is the eigenvalue, not a separate breaking.
 
@@ -118,7 +118,7 @@ because the up-type and down-type masses are read off the two vevs of the same $
 
 **What follows for the sector.** The measured spectra are not proportional, so one matrix is one too few. The repair is a second matrix, and there are two ways to supply it.
 
-**Two repairs, two consequences.** A second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$ gives the down-type quarks and the charged leptons independent matrices, and it brings a second set of vevs and one more alignment to fix. The $(\mathbf{15},\mathbf2,\mathbf2)$ does the same job from the other side: its colour-singlet component is a bidoublet, and its colour-octet components generate the mass splittings that make the fermion spectrum non-degenerate — and it brings [the diquark fork](the-leptoquarks-six-states-one-bound-and-no-proton-decay.html).
+**Two repairs, two consequences.** A second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$ gives the down-type quarks and the charged leptons independent matrices, and it brings a second set of vevs and one more alignment to fix. The $(\mathbf{15},\mathbf2,\mathbf2)$ does the same job from the other side: its colour-singlet component is a bidoublet, and its colour-octet components generate the mass splittings that make the fermion spectrum non-degenerate — and it brings [the diquark fork](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html).
 
 **The classical statement.** The literature states the proportionality as a per-generation triple of equalities at a unification scale. That phrasing is a boundary condition at a scale, and it is not repeated here. What this article takes from it is the part that survives without a scale: the triple is two-thirds successful, so the mismatch is not a flat contradiction but a near miss with one member failing outright, and a relation that nearly holds is a relation worth explaining. The values, and the running that reconciles one of the three, are in the coupling article.
 
@@ -156,7 +156,7 @@ Two vevs in one field is one too many for the electroweak sector: the Standard M
 
 ## What the Sector Leaves Open
 
-**13.1 Proportional spectra.** Proportional spectra are not observed (*Why a Second Scalar Is Needed*). One bidoublet means one Yukawa matrix for two sectors, and that is one matrix too few. The comparison against the measured ratios, with values, is in the coupling article; the conclusion drawn here needs none of them. The first-generation mismatch is repairable by a second bidoublet or the $(\mathbf{15},\mathbf2,\mathbf2)$, at the consequence stated in *Why a Second Scalar Is Needed* and in [the diquark fork](the-leptoquarks-six-states-one-bound-and-no-proton-decay.html); the neutrino failure is repaired by a seesaw, which is a different field and a different scale. No amount of writing repairs an absent field; a relation that misses is repaired by adding the field that splits it, and the model has candidates for both.
+**13.1 Proportional spectra.** Proportional spectra are not observed (*Why a Second Scalar Is Needed*). One bidoublet means one Yukawa matrix for two sectors, and that is one matrix too few. The comparison against the measured ratios, with values, is in the coupling article; the conclusion drawn here needs none of them. The first-generation mismatch is repairable by a second bidoublet or the $(\mathbf{15},\mathbf2,\mathbf2)$, at the consequence stated in *Why a Second Scalar Is Needed* and in [the diquark fork](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html); the neutrino failure is repaired by a seesaw, which is a different field and a different scale. No amount of writing repairs an absent field; a relation that misses is repaired by adding the field that splits it, and the model has candidates for both.
 
 **13.2 Open choices.** Several jobs, several candidate fields, no algebraic guidance. The frame underdetermines its own scalars by more than it underdetermines its fermions, and the asymmetry is structural: the fermions are one sixteen, and the scalars are whichever multiplets the mass relations require.
 
@@ -199,7 +199,7 @@ That failure is not permanent: it is a false relation, and a second bidoublet or
 
 $\rho=1$ is not automatic; it needs alignment, and alignment is a tuning (*The Bidoublet and the $\rho$ Parameter*).
 
-$M_X=\sqrt2M_{W_R}$ is not a group relation; it is the minimal vacuum's, and the $(\mathbf{15},\mathbf2,\mathbf2)$ moves it ([the leptoquark article](the-leptoquarks-six-states-one-bound-and-no-proton-decay.html)).
+$M_X=\sqrt2M_{W_R}$ is not a group relation; it is the minimal vacuum's, and the $(\mathbf{15},\mathbf2,\mathbf2)$ moves it ([the leptoquark article](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html)).
 
 The scalar content is not derived: the frame admits the carrier and the split and stops there, and the multiplets are chosen (*The Scalar and the Centre*).
 
@@ -231,9 +231,9 @@ The scalar content is not derived: the frame admits the carrier and the split an
 
 ## Further Reading
 
-- [The Breaking Chain: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-one-flag-three-stabilisers-three-scales.html). The chain these fields realise, and the budget the eaten count closes.
-- [Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html). The masses the eaten components produce, and the $\tfrac58$.
-- [The Leptoquarks: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-six-states-one-bound-and-no-proton-decay.html). The six states the first field creates, the bound on their mass, and the diquark fork.
+- [The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). The chain these fields realise, and the budget the eaten count closes.
+- [Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). The masses the eaten components produce, and the $\tfrac58$.
+- [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The six states the first field creates, the bound on their mass, and the diquark fork.
 - [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The frame, the sixteen, and the decomposition $15=8+1+6$.
 - [Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module](spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.html). Why a scalar is a central object, and how far that reaches into the frame's scalars — *The Scalar and the Centre*.
 - [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter.html). The $\rho$ parameter in the corpus's own language, which *The Bidoublet and the $\rho$ Parameter* inherits rather than solves.

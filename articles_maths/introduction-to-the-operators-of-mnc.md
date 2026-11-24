@@ -28,6 +28,10 @@ they satisfy $T_{A,B}=L_AR_B=R_BL_A$, and every other object of the series is on
 
 **The two copies commute.** $L_AR_B=R_BL_A$, so the pair $(L_A,R_B)$ is a commuting pair, and the two-sided family is its product. This is the single most used fact of the series and the reason the tensor reading works.
 
+**The words.** Fix a basis $u_1,\dots,u_{n^2}$ of $M_n$. The product of the left multiplication by one basis unit with the right multiplication by another is a **word**, $W_{\mu\nu}=L_{u_\mu}R_{u_\nu}$, and the pairs give $n^2\cdot n^2=n^4$ words. They are a basis of $\operatorname{End}(M_n)$, of dimension $n^4$, and they are orthogonal whenever the units are: $\operatorname{tr}\bigl((L_AR_B)^{*}L_CR_D\bigr)=\operatorname{tr}(A^{*}C)\operatorname{tr}(B^{*}D)$, so the inner product of two words factorises into the inner products of their two units.
+
+**One word carries the trace.** $\operatorname{tr}(L_AR_B)=\operatorname{tr}A\operatorname{tr}B$, so a word has a nonzero trace exactly when both of its units do. For a basis in which a single unit is the identity and the rest are traceless, exactly one word has a trace, the word of the pair $(\mathrm I,\mathrm I)$, and deleting it leaves $n^4-1$ words. At $n=2$ the count is $16-1=15$, which is the traceless part of the operators on the biquaternion algebra; there the fifteen split as six and nine.
+
 ## What Exists at Every $n$
 
 **The carrier.** $M_n$ carries the two-sided action of $GL_n\times GL_n$ by $(G,H)\cdot X=GXH$, with kernel the scalars $(\lambda\mathrm I,\lambda^{-1}\mathrm I)$. The group of the action is $(GL_n\times GL_n)/\mathbb{C}^{\times}$, of complex dimension $2n^2-1$, the dimension of the one-sided span.

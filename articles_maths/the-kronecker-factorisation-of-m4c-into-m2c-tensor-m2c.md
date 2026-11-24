@@ -50,6 +50,14 @@ $$
 
 The sixteen Kronecker products are the sixteen matrix units, reindexed by pairs.
 
+**The words are Kronecker products of units.** The product of one left multiplication with one right one is a **word** $W_{\mu\nu}=L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu)$, and in the Peirce frame it is
+$$
+W_{\mu\nu}=\mathsf M_2(e_\nu)^{\mathsf T}\otimes\mathsf M_2(e_\mu),
+$$
+a Kronecker product with one unit in each slot. The left index $\mu$ fixes the second slot and the right index $\nu$ the first, and the four matrices $\mathsf M_2(e_\mu)$ are $\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3$. So the sixteen words are the sixteen products of a pair drawn from those four matrices, one per slot, which is the two-factor statement of §*The Isomorphism* read on the operators.
+
+**The count of the traceless part.** The trace of a Kronecker product factorises, $\operatorname{tr}(A\otimes B)=\operatorname{tr}A\operatorname{tr}B$, and only $\mathsf M_2(e_t)=\mathrm I_2$ has a nonzero trace, $2$. Hence only the word $W_{tt}$ has a nonzero trace, and the traceless part of the operator space is spanned by the fifteen words of the grid of pairs without the corner. The table of names, with the six $\ell_k,r_k$ and the nine $N_{jk}$, is §*The Sixteen Words, and Their Names* of [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html).
+
 ## The Two Factors
 
 **Definition.** The two **factors** of the decomposition are

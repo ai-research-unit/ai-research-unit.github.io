@@ -1,0 +1,770 @@
+<h1 id="m91-axis-free-representation-operators"><strong>@@M91@@ Axis-Free Representation : Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The axis-free article computes the left matrix @@M92@@ and the right matrix @@M93@@ of a biquaternion, their product, their trace, their determinant and their values on the six subspaces. This article asks the operator question that follows: which endomorphisms of @@M94@@ arise from multiplication, what are their matrices in the axis-free basis, and how is the matrix algebra organised by the two-sided products?</p>
+<p><strong>The three answers.</strong> The answers sit at three levels.</p>
+<ul>
+<li>A general endomorphism is any matrix in @@M95@@. The axis-free basis gives a linear isomorphism @@M96@@, and every @@M97@@ matrix is the matrix of exactly one operator. The space has sixteen complex dimensions, and a general operator need not be a single product.</li>
+<li>A one-sided operator is a left or a right multiplication. The left matrices fill the four-dimensional copy @@M98@@, and the right matrices fill the four-dimensional copy @@M99@@. These are the two subsets of the axis-free basis article, and their intersection is the scalars.</li>
+<li>A two-sided operator is a product @@M100@@. The products fill a seven-dimensional cone in @@M101@@, not a subspace, and they are exactly the matrices whose coefficient matrix has rank at most one.</li>
+</ul>
+<p><strong>The matrix side.</strong> The sixteen products @@M102@@ form an orthogonal basis of @@M103@@, of Hilbert–Schmidt norm two. In the axis-free basis every one of them is a real signed permutation matrix: four nonzero entries, one in each row and each column, every entry @@M104@@, @@M105@@ or @@M106@@. The real span of the sixteen is @@M107@@, so the axis-free basis is the frame in which the real structure of the operator algebra is visible. The coefficient matrix @@M108@@ turns the product condition into a rank condition, and the cone of products into the cone over the Segre variety @@M109@@ in complex projective space. The article records these constructions, and closes with the open questions.</p>
+<p><strong>The result in one line.</strong> Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.</p>
+<p><strong>Boundaries.</strong> The frame and the one-sided matrices are <em>@@M110@@ Axis-Free Representation</em>. The same operators in another frame are <em>@@M111@@ Pauli Representation : Operators</em>. The abstract family is <em>Operators Acting on Two Sides</em>. The ambient endomorphisms are <em>The Endomorphisms of the Biquaternion Algebra</em>. The enveloping algebra is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>. The Hermitian pair is Part V and is not treated here.</p>
+<p><strong>Conventions.</strong> The basis is
+@@M0@@
+with @@M112@@ the unit and
+@@M1@@
+and the reverse products negated. An element is @@M113@@, with @@M114@@; write @@M115@@ for its vector part. Its coefficient column is
+@@M2@@
+Write @@M116@@. The quaternionic norm is
+@@M3@@
+the scalar part of @@M117@@. An element is invertible exactly when @@M118@@, and then @@M119@@. The quaternion conjugation is the @@M120@@-linear map
+@@M4@@
+The coefficientwise conjugation is @@M121@@, and the Hermitian conjugation is
+@@M5@@
+which is conjugate-linear. The flat conjugation is @@M122@@. The switch matrix is
+@@M6@@
+and the plain form is
+@@M7@@
+whose Gram matrix in the axis-free basis is @@M123@@; here @@M124@@ is the @@M125@@ coefficient. The matrix rank is written @@M126@@, and it is the rank over @@M127@@ unless a real field is named.</p>
+<h2 id="the-three-correspondences">The Three Correspondences</h2>
+<p><strong>The ambient space.</strong> The algebra @@M128@@ has complex dimension four, and @@M129@@ is the algebra @@M130@@ of complex dimension sixteen. The axis-free basis @@M131@@ gives a linear isomorphism
+@@M8@@
+and it is an isomorphism of algebras. The left matrix is @@M132@@ and the right matrix is @@M133@@; the two are the matrices of the operators @@M134@@ and @@M135@@.</p>
+<h3 id="general-endomorphisms">General Endomorphisms</h3>
+<p><strong>The whole space.</strong> Every @@M136@@ matrix is the matrix of exactly one endomorphism, and every endomorphism has exactly one matrix in the axis-free basis. The level is the whole ambient space, of sixteen complex dimensions. A general matrix need not be a left multiplication, a right multiplication or a two-sided product; the product set is the subject of the rest of the article.</p>
+<h3 id="the-one-sided-copies">The One-Sided Copies</h3>
+<p><strong>The left copy.</strong> The left multiplications fill the image
+@@M9@@
+It is a four-dimensional complex subalgebra of @@M137@@, isomorphic to @@M138@@, and its unit is @@M139@@. The map @@M140@@ is injective, so the four matrices @@M141@@ are a basis of it.</p>
+<p><strong>The right copy.</strong> The right multiplications fill
+@@M10@@
+It is a four-dimensional complex subalgebra, isomorphic to the opposite algebra @@M142@@, the same vector space with the reversed product, and its unit is @@M143@@. The map @@M144@@ is injective, so the four matrices @@M145@@ are a basis of it.</p>
+<p><strong>The two copies are different.</strong> @@M146@@ and @@M147@@ are two different four-dimensional subspaces of @@M148@@, not two bases of one space. The axis-free basis displays them as the two families of matrices below.</p>
+<h3 id="the-two-sided-products">The Two-Sided Products</h3>
+<p><strong>The operator.</strong> A left multiplication and a right multiplication combine into one operator,
+@@M11@@
+The two factors commute, so @@M149@@ as well. The pair @@M150@@ has eight complex parameters, and the scaling @@M151@@ leaves the operator unchanged, so the image has seven effective parameters. The image is a cone, not a subspace. It is exactly the set of matrices whose coefficient matrix @@M152@@, the matrix of coordinates in the basis @@M153@@, has rank at most one, by the criterion of §<em>The Criterion for a Single Product</em>.</p>
+<h3 id="the-table-of-levels">The Table of Levels</h3>
+<p><strong>The table.</strong> The three levels and the two one-sided copies are collected in one table. The coefficient matrix @@M154@@ is the matrix of coordinates of @@M155@@ in the sixteen-dimensional basis @@M156@@; its formula is in §<em>The Coefficient Matrix @@M157@@</em>. The intersection of the one-sided copies is the scalar line @@M158@@, by §<em>The Intersection of the Two Copies</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Operator</th>
+<th>Subset of @@M159@@</th>
+<th>Complex dimension</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>general endomorphism</td>
+<td>@@M160@@</td>
+<td>all of @@M161@@</td>
+<td>@@M162@@</td>
+<td>none</td>
+</tr>
+<tr>
+<td>one-sided left</td>
+<td>@@M163@@</td>
+<td>@@M164@@</td>
+<td>@@M165@@</td>
+<td>the left display</td>
+</tr>
+<tr>
+<td>one-sided right</td>
+<td>@@M166@@</td>
+<td>@@M167@@</td>
+<td>@@M168@@</td>
+<td>the right display</td>
+</tr>
+<tr>
+<td>intersection of the one-sided copies</td>
+<td>@@M169@@</td>
+<td>the scalars</td>
+<td>@@M170@@</td>
+<td>both displays</td>
+</tr>
+<tr>
+<td>two-sided</td>
+<td>@@M171@@</td>
+<td>@@M172@@</td>
+<td>@@M173@@ (cone)</td>
+<td>rank-one coefficient matrix</td>
+</tr>
+</tbody>
+</table>
+<p>The table is the answer to the operator question. The general level is the whole space; the one-sided levels are two linear subspaces; the two-sided level is a cone inside the whole space, of dimension seven.</p>
+<h2 id="the-one-sided-operators">The One-Sided Operators</h2>
+<h3 id="the-left-copy">The Left Copy</h3>
+<p><strong>The left matrix.</strong> The left matrix is the @@M174@@ matrix whose @@M175@@-th column is the coordinate column of @@M176@@. In the axis-free basis,
+@@M12@@
+The first column is @@M177@@, so the map recovers @@M178@@. The composition law is
+@@M13@@
+and the map is injective. The image is the four-dimensional subalgebra @@M179@@.</p>
+<p><strong>The invariants.</strong> The trace is @@M180@@ and the determinant is
+@@M14@@
+with the eigenvalues @@M181@@, each twice, where @@M182@@; see §<em>The Quadratic Relation</em>. The rank is @@M183@@ for an invertible element, @@M184@@ for a nonzero zero divisor and @@M185@@ for the zero element; the proof is in §<em>The Rank of a One-Sided Operator</em>.</p>
+<h3 id="the-four-left-matrices">The Four Left Matrices</h3>
+<p><strong>The display.</strong> With @@M186@@,
+@@M15@@
+@@M16@@
+Each is a real signed permutation matrix. Each has determinant @@M187@@; the identity has trace @@M188@@, and the three vector matrices have trace @@M189@@. The four are linearly independent and span @@M190@@: they are a basis of the left copy.</p>
+<p><strong>The products.</strong> The left matrices follow the order of the units:
+@@M17@@
+The set of the four matrices together with their negatives is the quaternion group of order eight. A complex linear combination need not be invertible: @@M191@@ has rank @@M192@@, for example. The algebra is simple and has zero divisors, and the invertibility of each basis matrix does not extend to the span.</p>
+<h3 id="the-right-copy">The Right Copy</h3>
+<p><strong>The right matrix.</strong> The right matrix has @@M193@@-th column the coordinate column of @@M194@@. In the axis-free basis,
+@@M18@@
+The composition law is anti-multiplicative,
+@@M19@@
+and the map is injective. The image is the four-dimensional subalgebra @@M195@@. The right matrix commutes with every left matrix:
+@@M20@@
+The invariants are the same: trace @@M196@@, determinant @@M197@@, eigenvalues @@M198@@ each twice, and the same ranks.</p>
+<h3 id="the-four-right-matrices">The Four Right Matrices</h3>
+<p><strong>The display.</strong> With @@M199@@,
+@@M21@@
+@@M22@@
+Each is a real signed permutation matrix, of determinant @@M200@@ and trace @@M201@@; the four are a basis of @@M202@@. The right products reverse the order:
+@@M23@@
+The set of the four together with their negatives is again the quaternion group.</p>
+<h3 id="the-stitch-between-the-copies">The Stitch Between the Copies</h3>
+<p><strong>The switch matrix.</strong> The quaternion conjugation acts on a coordinate column by @@M203@@:
+@@M24@@
+Its entries are the signs of @@M204@@, with @@M205@@ and @@M206@@. It is not an algebra map, not one of the sixteen basis operators and not a one-sided multiplication; it is the linear involution of the coefficient space that changes the signs of the three vector coordinates.</p>
+<p><strong>The stitch.</strong> The right matrix is obtained from the left by transposition and a sign on each side:
+@@M25@@
+The second form uses the transpose identity
+@@M26@@
+The Hermitian adjoint is
+@@M27@@
+and the same identities hold for @@M207@@. The first is the transpose dictionary of the axis-free basis: quaternion conjugation is transposition. The second is the conjugate transpose: the dagger is the Hermitian conjugation. Both are checked on the four units and extended by linearity. At the operator level the same transposition carries the parameter through the quaternion conjugation, and the flip of the two mixed units conjugates the two families, @@M208@@; both statements are proved in <em>Operators Acting on One Side</em>, §<em>The Matrix Identity</em>, where the two frames are set side by side.</p>
+<h3 id="the-intersection-of-the-two-copies">The Intersection of the Two Copies</h3>
+<p><strong>The intersection.</strong> A matrix that is both a left matrix and a right matrix is a scalar matrix:
+@@M28@@
+<em>Proof.</em> Suppose @@M209@@. The first column of each is the coordinate column of the element, so @@M210@@. Compare the entries @@M211@@ and @@M212@@: the left matrix has @@M213@@ and @@M214@@, the right matrix has @@M215@@ and @@M216@@, so @@M217@@. Compare @@M218@@ and @@M219@@: the left matrix has @@M220@@ and @@M221@@, the right matrix has @@M222@@ and @@M223@@, so @@M224@@. Compare @@M225@@ and @@M226@@: the left matrix has @@M227@@ and @@M228@@, the right matrix has @@M229@@ and @@M230@@, so @@M231@@. Hence @@M232@@ and the matrix is @@M233@@. The converse is immediate.</p>
+<p><strong>The mutual commutants.</strong> The left copy is the commutant of the right copy, and the right copy is the commutant of the left copy. The inclusion @@M234@@ is the commutation law. The reverse inclusion is the double commutant theorem: the commutant of @@M235@@ is four-dimensional and contains @@M236@@, so the two coincide. The intersection is the centre of each copy.</p>
+<h2 id="the-sixteen-matrices-m237">The Sixteen Matrices @@M237@@</h2>
+<h3 id="the-table-in-four-families">The Table in Four Families</h3>
+<p><strong>Definition.</strong> For @@M238@@ put
+@@M29@@
+The matrix @@M239@@ is the matrix of @@M240@@. A general two-sided operator is the linear combination
+@@M30@@</p>
+<p><strong>The table.</strong> The sixteen matrices fall into four families.</p>
+<table>
+<thead>
+<tr>
+<th>@@M241@@</th>
+<th>@@M242@@</th>
+<th>@@M243@@</th>
+<th>@@M244@@</th>
+<th>@@M245@@</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M246@@</td>
+<td>@@M247@@</td>
+<td>@@M248@@</td>
+<td>@@M249@@</td>
+<td>@@M250@@</td>
+</tr>
+<tr>
+<td>@@M251@@</td>
+<td>@@M252@@</td>
+<td>@@M253@@</td>
+<td>@@M254@@</td>
+<td>@@M255@@</td>
+</tr>
+<tr>
+<td>@@M256@@</td>
+<td>@@M257@@</td>
+<td>@@M258@@</td>
+<td>@@M259@@</td>
+<td>@@M260@@</td>
+</tr>
+<tr>
+<td>@@M261@@</td>
+<td>@@M262@@</td>
+<td>@@M263@@</td>
+<td>@@M264@@</td>
+<td>@@M265@@</td>
+</tr>
+</tbody>
+</table>
+<p>Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry @@M266@@ the identity, and the remaining nine the genuinely two-sided basis operators. The table is the matrix form of the four families of <em>Operators Acting on Two Sides</em>, §<em>The Operator @@M267@@</em>.</p>
+<h3 id="the-sixteen-words-and-their-names">The Sixteen Words, and Their Names</h3>
+<p><strong>Definition (word).</strong> A <strong>word</strong> is a product of one left array with one right array, the indices running over the four units:
+@@M31@@
+Each word is the array of @@M268@@, so the label of a word is a pair of units and the word is the pair read in the frame.</p>
+<p><strong>Proposition (the words are a basis of @@M269@@).</strong> The sixteen @@M270@@ are linearly independent, and they are orthogonal in the trace form with one common norm,
+@@M32@@</p>
+<p><strong>Proof.</strong> Each array is a signed permutation matrix, so the product @@M271@@ is a signed permutation matrix with trace @@M272@@ if the two permutations agree and @@M273@@ otherwise, and the permutations agree exactly when @@M274@@. Sixteen arrays orthogonal in a sixteen-dimensional space are a basis.</p>
+<p>The same identity is proved again in §<em>Orthogonality</em>, through the transposition and composition laws instead of by counting permutations; both proofs are kept because the composition law is used again below.</p>
+<p><strong>The table of the sixteen.</strong> The last column names each word by the object the corpus already has for it. Write
+@@M33@@
+with the pair @@M275@@ running over the three spatial directions.</p>
+<table>
+<thead>
+<tr>
+<th>word</th>
+<th>the unit indices</th>
+<th>trace</th>
+<th>symmetry</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M276@@</td>
+<td>scalar, scalar</td>
+<td>@@M277@@</td>
+<td>symmetric</td>
+<td>@@M278@@, the removed word</td>
+</tr>
+<tr>
+<td>@@M279@@</td>
+<td>scalar, vector</td>
+<td>@@M280@@</td>
+<td>antisymmetric</td>
+<td>@@M281@@</td>
+</tr>
+<tr>
+<td>@@M282@@</td>
+<td>scalar, vector</td>
+<td>@@M283@@</td>
+<td>antisymmetric</td>
+<td>@@M284@@</td>
+</tr>
+<tr>
+<td>@@M285@@</td>
+<td>scalar, vector</td>
+<td>@@M286@@</td>
+<td>antisymmetric</td>
+<td>@@M287@@</td>
+</tr>
+<tr>
+<td>@@M288@@</td>
+<td>vector, scalar</td>
+<td>@@M289@@</td>
+<td>antisymmetric</td>
+<td>@@M290@@</td>
+</tr>
+<tr>
+<td>@@M291@@</td>
+<td>vector, scalar</td>
+<td>@@M292@@</td>
+<td>antisymmetric</td>
+<td>@@M293@@</td>
+</tr>
+<tr>
+<td>@@M294@@</td>
+<td>vector, scalar</td>
+<td>@@M295@@</td>
+<td>antisymmetric</td>
+<td>@@M296@@</td>
+</tr>
+<tr>
+<td>@@M297@@</td>
+<td>vector, vector</td>
+<td>@@M298@@</td>
+<td>symmetric</td>
+<td>@@M299@@</td>
+</tr>
+<tr>
+<td>@@M300@@</td>
+<td>vector, vector</td>
+<td>@@M301@@</td>
+<td>symmetric</td>
+<td>@@M302@@</td>
+</tr>
+<tr>
+<td>@@M303@@</td>
+<td>vector, vector</td>
+<td>@@M304@@</td>
+<td>symmetric</td>
+<td>@@M305@@</td>
+</tr>
+<tr>
+<td>@@M306@@</td>
+<td>vector, vector</td>
+<td>@@M307@@</td>
+<td>symmetric</td>
+<td>@@M308@@</td>
+</tr>
+<tr>
+<td>@@M309@@</td>
+<td>vector, vector</td>
+<td>@@M310@@</td>
+<td>symmetric</td>
+<td>@@M311@@</td>
+</tr>
+<tr>
+<td>@@M312@@</td>
+<td>vector, vector</td>
+<td>@@M313@@</td>
+<td>symmetric</td>
+<td>@@M314@@</td>
+</tr>
+<tr>
+<td>@@M315@@</td>
+<td>vector, vector</td>
+<td>@@M316@@</td>
+<td>symmetric</td>
+<td>@@M317@@</td>
+</tr>
+<tr>
+<td>@@M318@@</td>
+<td>vector, vector</td>
+<td>@@M319@@</td>
+<td>symmetric</td>
+<td>@@M320@@</td>
+</tr>
+<tr>
+<td>@@M321@@</td>
+<td>vector, vector</td>
+<td>@@M322@@</td>
+<td>symmetric</td>
+<td>@@M323@@</td>
+</tr>
+</tbody>
+</table>
+<p>The two columns agree with the displays of §<em>The Sixteen, Entry by Entry</em> and with the invariants of §<em>Composition, Trace, Determinant</em>: the identity in the corner, the six left and right arrays in the first row and the first column, the nine products in the block.</p>
+<p><strong>Corollary (the trace cell is one word).</strong> Exactly one of the sixteen has a trace, namely @@M324@@, the product of the two scalar units. So "remove the trace" is not an operation on a sum: it is the deletion of a single word, and @@M325@@ is achieved by deleting the pair @@M326@@ from the index list. The count is the same in every basis of the traceless part because it is not a count of coordinates at all: it is the number of index pairs left after the scalar pair is dropped, which is the number of cells of the @@M327@@ grid of pairs after the corner is dropped.</p>
+<p><strong>Corollary (the deletion splits as six and nine).</strong> The fifteen remaining words are six antisymmetric ones, with exactly one index equal to @@M328@@, and nine symmetric ones, with no index equal to @@M329@@. The six are @@M330@@ and the nine are the @@M331@@, so the deletion of @@M332@@ produces the split @@M333@@ of the Cartan decomposition without a second choice: the symmetry type of a word is decided by how many of its two indices are @@M334@@.</p>
+<p><strong>Corollary (the same fifteen, made anti-Hermitian).</strong> Each of the fifteen traceless words is anti-Hermitian as it stands when it is antisymmetric, that is for the six with one @@M335@@ index, and becomes anti-Hermitian on multiplication by @@M336@@ when it is symmetric, that is for the nine. The fifteen arrays so obtained are the fifteen generators of @@M337@@ of <em>The Anti-Hermitian Derivations of @@M338@@ as @@M339@@</em>: the six @@M340@@ and @@M341@@ and the nine @@M342@@. The fifteen directions of that article and the fifteen words here are one set, read in the imaginary frame.</p>
+<h3 id="the-sixteen-entry-by-entry">The Sixteen, Entry by Entry</h3>
+<p><strong>The display.</strong> In the axis-free basis, grouped by the left index @@M343@@,
+@@M34@@
+@@M35@@
+@@M36@@
+@@M37@@
+@@M38@@
+@@M39@@
+@@M40@@
+@@M41@@</p>
+<p><strong>The pattern.</strong> Each matrix has four nonzero entries, one in each row and each column, and every nonzero entry is @@M344@@. No entry is imaginary: the axis-free basis makes the sixteen products real. The first row and the first column are the four right and the four left matrices; the nine remaining entries are the genuinely two-sided basis operators. A basis operator with exactly one index equal to @@M345@@ is antisymmetric; a basis operator with both indices equal to @@M346@@ or with neither equal to @@M347@@ is symmetric. The display is the matrix form of the sixteen products @@M348@@ of <em>Matrix Representations Conventions</em>, §<em>The 4×4 Regular Representation</em>, read in the axis-free basis.</p>
+<p><strong>One entry.</strong> The table gives, for example,
+@@M42@@
+The first column is the coordinate column of @@M349@@, and the entry is the check that the family rule and the multiplication table agree.</p>
+<p><strong>The basis.</strong> The sixteen matrices are linearly independent and span @@M350@@, by the orthogonality theorem of §<em>Orthogonality</em> and the dimension count. The span of the products is the whole algebra: the generation theorem of <em>Operators Acting on Two Sides</em>, §<em>The Sixteen Products as a Basis</em>, read in the axis-free basis. The expansion of a general matrix in this basis is unique, and the coefficient matrix is the subject of §<em>The Cone of Products</em>.</p>
+<p><strong>The real basis.</strong> All sixteen matrices are real. They are linearly independent over @@M351@@, hence over @@M352@@, and their real span is a sixteen-real-dimensional subspace of @@M353@@ consisting of real matrices. That subspace is @@M354@@. The axis-free basis is therefore the frame in which the real form of the operator algebra is the real span of the products.</p>
+<h3 id="composition-trace-determinant">Composition, Trace, Determinant</h3>
+<p><strong>Composition.</strong> The product of two basis matrices is a signed basis matrix:
+@@M43@@
+where @@M355@@ and @@M356@@, with @@M357@@. For general parameters,
+@@M44@@
+The sixteen are closed under multiplication up to sign, with unit @@M358@@; they are not a group, because @@M359@@ is not one of the sixteen. The full product family contains the signs, since @@M360@@.</p>
+<p><strong>Trace and determinant.</strong> For @@M361@@ with @@M362@@,
+@@M45@@
+<em>Proof.</em> The trace is bilinear in the pair, and only @@M363@@ has nonzero trace, equal to @@M364@@; hence the trace is @@M365@@. The determinant is multiplicative, and @@M366@@ and @@M367@@. The inverse is the inverse of each factor.</p>
+<p><strong>The basis values.</strong> Every basis matrix is invertible, of determinant @@M368@@ and rank @@M369@@; the trace is @@M370@@ only for @@M371@@ and @@M372@@ for the other fifteen. The basis consists of invertibles, but its span does not: for example
+@@M46@@
+has rank two. A basis of invertible matrices does not make the algebra a division algebra; the algebra is @@M373@@ and has many zero divisors.</p>
+<h3 id="orthogonality">Orthogonality</h3>
+<p><strong>Theorem (orthogonality).</strong> This is the proposition of §<em>The Sixteen Words, and Their Names</em>, proved a second time here through the transposition and composition laws, which the sections below need anyway. For the Hilbert–Schmidt inner product @@M374@@,
+@@M47@@
+The sixteen basis matrices are orthogonal, each of Hilbert–Schmidt norm @@M375@@. Because the matrices are real, the dagger is the transpose.</p>
+<p><em>Proof.</em> Transposition reverses the two indices through the inverse units:
+@@M48@@
+where @@M376@@ for @@M377@@ and @@M378@@ for @@M379@@. The composition law then gives
+@@M49@@
+The trace of @@M380@@ is @@M381@@ exactly when @@M382@@ and @@M383@@ otherwise. The condition @@M384@@ is @@M385@@, and the condition @@M386@@ is @@M387@@; in that case the two signs are @@M388@@. Hence the inner product is @@M389@@ exactly when @@M390@@ and @@M391@@, and @@M392@@ otherwise.</p>
+<p><strong>The coefficient formula.</strong> If @@M393@@, then orthogonality gives
+@@M50@@
+The map @@M394@@ is a linear isomorphism of @@M395@@ onto itself. It is the coordinate chart used in §<em>The Cone of Products</em>.</p>
+<p><strong>No change of frame is needed.</strong> In the axis-free basis the coefficient matrix is computed from the matrix @@M396@@ by the sixteen traces above, with no conjugation and no change-of-frame matrix. The sixteen basis operators are real, so for a real matrix @@M397@@ the coefficient matrix is real and its rank is the same over @@M398@@ and over @@M399@@.</p>
+<h2 id="the-rank-of-a-one-sided-operator">The Rank of a One-Sided Operator</h2>
+<h3 id="the-quadratic-relation">The Quadratic Relation</h3>
+<p><strong>The relation.</strong> Write @@M400@@, with @@M401@@. Since @@M402@@,
+@@M51@@
+and therefore
+@@M52@@
+Applying @@M403@@ gives
+@@M53@@
+and the same relation holds for @@M404@@.</p>
+<p><strong>The eigenvalues and the determinant.</strong> Every eigenvalue @@M405@@ satisfies @@M406@@, so @@M407@@. The trace is @@M408@@. When @@M409@@ the two roots are distinct, and the trace forces multiplicity two for each; when @@M410@@ the only root is @@M411@@. In both cases the characteristic polynomial is
+@@M54@@
+and the determinant of the matrix is @@M412@@. The same holds for @@M413@@.</p>
+<h3 id="the-rank-of-m414-and-m415">The Rank of @@M414@@ and @@M415@@</h3>
+<p><strong>The form.</strong> The bilinear form
+@@M55@@
+has @@M416@@ and Gram matrix @@M417@@ in the axis-free basis. It is the polar form of the norm, not the plain form @@M418@@ of §<em>The Plain Form</em>; it is symmetric and nondegenerate over @@M419@@. A linear subspace on which @@M420@@ vanishes identically is totally isotropic; in a nondegenerate four-dimensional space over @@M421@@ such a subspace has dimension at most two.</p>
+<p><strong>The theorem.</strong> The rank of @@M422@@ is @@M423@@ when @@M424@@, it is @@M425@@ when @@M426@@ and @@M427@@, and it is @@M428@@ when @@M429@@. The same values hold for @@M430@@.</p>
+<p><em>Proof.</em> If @@M431@@, the determinant of the matrix is @@M432@@ and the rank is @@M433@@. If @@M434@@, the matrix is zero. Suppose @@M435@@ and @@M436@@.</p>
+<p>Let @@M437@@ lie in the kernel of @@M438@@, so that @@M439@@. If @@M440@@ were an invertible element, then @@M441@@, against the hypothesis; hence @@M442@@ is not invertible and @@M443@@. The kernel is therefore a linear subspace of the null cone, hence totally isotropic for @@M444@@, of dimension at most two. This gives @@M445@@.</p>
+<p>For the other bound, split on @@M446@@. If @@M447@@, the relation reads @@M448@@, so the minimal polynomial divides @@M449@@, whose roots are distinct; the matrix is diagonalizable with eigenvalues @@M450@@ and @@M451@@. The trace is @@M452@@, so @@M453@@ has multiplicity two and @@M454@@ has multiplicity two; the rank is @@M455@@. If @@M456@@, the relation reads @@M457@@, so the image lies in the kernel and @@M458@@, hence the rank is at most two. With the lower bound, the rank is two.</p>
+<p>The argument for @@M459@@ is the same, with the kernel read on the other side.</p>
+<h3 id="the-rank-of-a-product">The Rank of a Product</h3>
+<p><strong>The bound.</strong> For every pair,
+@@M56@@
+If one parameter is invertible, the bound is attained, and the rank of the product is the rank of the other one-sided factor. Hence a product is invertible exactly when both parameters are invertible.</p>
+<p><em>Proof.</em> The operator is the composite @@M460@@; the rank of a composite is at most the rank of either factor. An invertible element @@M461@@ makes @@M462@@ invertible, so @@M463@@; an invertible element @@M464@@ does the same on the other side.</p>
+<p><strong>The possible ranks.</strong> The one-sided ranks are @@M465@@, @@M466@@ and @@M467@@. If a parameter is zero the product is zero. If both parameters are nonzero zero divisors, the product has rank at most two. If both are invertible, the product is invertible of rank four. Hence a product has rank @@M468@@, @@M469@@, @@M470@@ or @@M471@@, and never rank three.</p>
+<p><strong>The drop.</strong> For @@M472@@,
+@@M57@@
+of rank one, while each one-sided factor has rank two.</p>
+<h2 id="the-ordinary-product">The Ordinary Product</h2>
+<p><strong>The dimensions.</strong> The matrix of the composite is the ordinary @@M473@@ product @@M474@@. The Kronecker product @@M475@@ is a @@M476@@ matrix acting on the tensor square of the carrier, a space of dimension sixteen; it is the matrix of the tensor product of the two operators, not of their composite on the four-dimensional algebra.</p>
+<h2 id="the-cone-of-products">The Cone of Products</h2>
+<p><strong>The product set.</strong> The image of the factorisation map of §<em>The Factorization Map</em> is the set of two-sided operators. It is a cone, not a subspace, and its coordinate description is the subject of this section. The coordinate chart is the coefficient matrix of §<em>The Coefficient Matrix @@M477@@</em>, and it turns the product condition into a rank condition.</p>
+<h3 id="the-coefficient-matrix-m478">The Coefficient Matrix @@M478@@</h3>
+<p><strong>Definition.</strong> By §<em>Orthogonality</em>, every @@M479@@ has a unique expansion
+@@M58@@
+The @@M480@@ matrix @@M481@@ is the <strong>coefficient matrix</strong> of @@M482@@. Orthogonality gives it directly:
+@@M59@@
+The map @@M483@@ is a linear isomorphism of @@M484@@ onto itself.</p>
+<p><strong>The coefficient column.</strong> For @@M485@@ write @@M486@@ for the column of its coefficients in the axis-free basis.</p>
+<p><strong>The expansion of a product.</strong> If @@M487@@, then
+@@M60@@
+so @@M488@@. The coefficient matrix of a product is a rank-one matrix, and every rank-one matrix arises this way. This is the source of the criterion of §<em>The Criterion for a Single Product</em>.</p>
+<p><strong>The coefficient matrix is not the matrix.</strong> The notation is easy to confuse and the two objects must be kept apart. The matrix @@M489@@ is the @@M490@@ matrix of an endomorphism in the axis-free basis; the coefficient matrix @@M491@@ is the @@M492@@ array of its coordinates in the sixteen-dimensional basis @@M493@@. The map @@M494@@ is linear and bijective, not an algebra map.</p>
+<h3 id="the-factorization-map">The Factorization Map</h3>
+<p><strong>The map.</strong> The assignment
+@@M61@@
+is the factorisation map. Its image is the set of two-sided operators, and this section records what the factorisation does and does not imply.</p>
+<p><strong>Bilinearity.</strong> The map is complex-bilinear, not complex-linear:
+@@M62@@
+Consequently the image is a cone, not a subspace: for @@M495@@,
+@@M63@@</p>
+<p><strong>The scaling orbit.</strong> For @@M496@@,
+@@M64@@
+The group @@M497@@ acts on @@M498@@ by @@M499@@, and the factorisation map is constant on every orbit.</p>
+<p><strong>The zero set.</strong> The product vanishes exactly when one parameter vanishes:
+@@M65@@
+<em>Proof.</em> The coefficient matrix of the product is @@M500@@, by §<em>The Coefficient Matrix @@M501@@</em>; it is zero exactly when one of the two columns is zero, and @@M502@@ is injective.</p>
+<p><strong>The two slots.</strong> With the other parameter an invertible element, the map is injective in each slot:
+@@M66@@
+The first is the left copy, the second the right copy, and both parametrisations are injective.</p>
+<p><strong>The fibres.</strong> For a nonzero product the fibre of the factorisation map is exactly one scaling orbit:
+@@M67@@
+<em>Proof.</em> The coefficient matrices are equal, @@M503@@, and both are nonzero of rank one. A nonzero column of the left side is a nonzero scalar multiple of a nonzero column of the right side, which gives @@M504@@; comparing the rows gives @@M505@@. The converse is the scaling identity.</p>
+<p><strong>The dimension.</strong> The parameter space has complex dimension eight. The generic fibre has complex dimension one, so the image has complex dimension
+@@M68@@
+The zero operator is the vertex, where the two four-dimensional subspaces @@M506@@ and @@M507@@ collapse. The image is the seven-dimensional cone of the next subsections.</p>
+<h3 id="the-length-m508">The Length @@M508@@</h3>
+<p><strong>Definition.</strong> The <strong>length</strong> @@M509@@ is the least @@M510@@ such that @@M511@@ is a sum of @@M512@@ products; @@M513@@.</p>
+<p><strong>Theorem (length is the rank).</strong> For every @@M514@@,
+@@M69@@</p>
+<p><em>Proof.</em> If @@M515@@, then @@M516@@ is a sum of @@M517@@ rank-one matrices, so @@M518@@ and @@M519@@. Conversely, let @@M520@@ and factor @@M521@@ with @@M522@@ of size @@M523@@ and @@M524@@ of size @@M525@@; the @@M526@@-th column of @@M527@@ is @@M528@@ and the @@M529@@-th row of @@M530@@ is @@M531@@, so @@M532@@ and @@M533@@.</p>
+<p><strong>The count.</strong> Every matrix is a sum of at most four products; @@M534@@ exactly when @@M535@@. The condition @@M536@@ is open and dense, so a generic matrix needs four products and none needs five.</p>
+<h3 id="the-criterion-for-a-single-product">The Criterion for a Single Product</h3>
+<p><strong>Theorem (the product criterion).</strong> Let @@M537@@ and @@M538@@. Then
+@@M70@@
+For @@M539@@ the rank is exactly one; the zero matrix has @@M540@@ and rank zero.</p>
+<p><em>Proof.</em> The first equivalence is §<em>The Coefficient Matrix @@M541@@</em>. The second is the rank-one criterion: a matrix is @@M542@@ exactly when it has rank at most one, and the zero matrix is the case @@M543@@ or @@M544@@.</p>
+<p><strong>The cone.</strong> The product set is the closed algebraic cone @@M545@@, cut out by the minors of order two of @@M546@@. Its projectivisation is the Segre variety @@M547@@, of complex dimension six; the cone has complex dimension seven in the complex sixteen-dimensional algebra. It is closed under multiplication and under inverses on its invertible part, and it is not a subspace: @@M548@@ is not a product, because its coefficient matrix is @@M549@@ of rank two.</p>
+<p><strong>The parametrisation.</strong> The map @@M550@@ is bilinear and surjective onto the cone. Its fibre over a nonzero product is the scaling orbit @@M551@@ of §<em>The Factorization Map</em>; the cone has complex dimension @@M552@@. The kernel and the image of the Hermitian pair are a different question, treated in Part V.</p>
+<h3 id="matrix-rank-against-length">Matrix Rank Against Length</h3>
+<p><strong>The two ranks.</strong> The matrix rank and the length are different invariants of the same matrix. The matrix rank of a product lies in @@M553@@ by §<em>The Rank of a Product</em>, and it is four exactly when both parameters are invertible. The length is the coefficient rank, which can be four while the matrix rank is one. Neither invariant determines the other.</p>
+<p><strong>The examples.</strong> The matrix unit @@M554@@ has matrix rank one and coefficient rank four; the product @@M555@@ has matrix rank four and coefficient rank one; the product @@M556@@ has matrix rank one and coefficient rank one; the matrix @@M557@@ has matrix rank two and coefficient rank two.</p>
+<table>
+<thead>
+<tr>
+<th>@@M558@@</th>
+<th>@@M559@@</th>
+<th>@@M560@@</th>
+<th>@@M561@@</th>
+<th>decomposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M562@@</td>
+<td>@@M563@@</td>
+<td>@@M564@@</td>
+<td>@@M565@@</td>
+<td>by construction</td>
+</tr>
+<tr>
+<td>@@M566@@</td>
+<td>@@M567@@</td>
+<td>@@M568@@</td>
+<td>@@M569@@</td>
+<td>by construction</td>
+</tr>
+<tr>
+<td>@@M570@@</td>
+<td>@@M571@@</td>
+<td>@@M572@@</td>
+<td>@@M573@@</td>
+<td>@@M574@@</td>
+</tr>
+<tr>
+<td>@@M575@@</td>
+<td>@@M576@@</td>
+<td>@@M577@@</td>
+<td>@@M578@@</td>
+<td>@@M579@@</td>
+</tr>
+<tr>
+<td>@@M580@@</td>
+<td>@@M581@@</td>
+<td>@@M582@@</td>
+<td>@@M583@@</td>
+<td>@@M584@@</td>
+</tr>
+<tr>
+<td>generic @@M585@@</td>
+<td>@@M586@@</td>
+<td>@@M587@@</td>
+<td>@@M588@@</td>
+<td>four terms, none removable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How to decide.</strong> Compute the sixteen numbers @@M589@@ and form @@M590@@. If @@M591@@, take @@M592@@ to be a nonzero column of @@M593@@; choose a nonzero entry @@M594@@ of that column and take @@M595@@ to be the @@M596@@-th row of @@M597@@ divided by @@M598@@. If @@M599@@, a rank factorization @@M600@@ gives the @@M601@@ terms. No test on @@M602@@ alone decides the question.</p>
+<h3 id="the-two-one-sided-boundaries">The Two One-Sided Boundaries</h3>
+<p><strong>The two boundary cases.</strong> The left and right copies are the two boundary cases of the cone:
+@@M71@@
+Both are single products, and both are contained in the cone. Their intersection is the scalars @@M603@@, by §<em>The Intersection of the Two Copies</em>.</p>
+<p><strong>The cone is larger.</strong> A generic pair has neither parameter a scalar multiple of @@M604@@, and its operator is neither a left nor a right multiplication. The cone is strictly larger than the union of the two copies. The two copies are four-dimensional linear subspaces inside the seven-dimensional cone, and the cone itself is not a subspace.</p>
+<p><strong>The Hermitian subcone.</strong> The Hermitian pair is the subcone @@M605@@, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.</p>
+<h3 id="a-worked-case-the-matrix-unit-m606">A Worked Case: The Matrix Unit @@M606@@</h3>
+<p><strong>The matrix.</strong> Let @@M607@@ be the first matrix unit in the axis-free basis, the matrix with @@M608@@ in the @@M609@@ entry and @@M610@@ elsewhere. Its coefficient matrix is
+@@M72@@
+It has rank four, so @@M611@@ is not a single product. The expansion is
+@@M73@@
+which is a sum of four products. The four coefficient terms are the four diagonal entries of @@M612@@, and no sum of fewer than four rank-one matrices can produce @@M613@@.</p>
+<p><strong>The check.</strong> The right side is
+@@M74@@
+The matrix rank of @@M614@@ is one, and its length is four.</p>
+<p><strong>The reading.</strong> @@M615@@ is the projection @@M616@@: it keeps the scalar coordinate and discards the three vector coordinates. It has matrix rank one, trace one, and determinant zero. It is not a single product, because a single product has coefficient rank at most one, and @@M617@@ has rank four. The example shows that the matrix rank and the length are independent: rank one can have length four.</p>
+<p><strong>A single product for contrast.</strong> The product
+@@M75@@
+has matrix rank four and coefficient matrix
+@@M76@@
+of rank one. It is a unit of determinant @@M618@@ and length one. The two examples together show that neither matrix rank nor determinant decides the length.</p>
+<p><strong>Where the frame question is answered.</strong> The coefficient array @@M619@@ is computed from the sixteen products of four <em>basis elements</em>, so its entries move with the frame while its rank does not: a change of the element basis sends @@M620@@ to @@M621@@, and a change of the display alone leaves @@M622@@ untouched. The proof, the two frames of the corpus and the sixteen lengths of the matrix units are §<em>The Change of Frame Is a Congruence</em> and §<em>The Sixteen Lengths</em> of <em>@@M623@@ Pauli Representation : Operators</em>. What the length theorem needs from that is one line: the rank of a congruence is the rank of the array.</p>
+<h2 id="the-plain-adjoint-and-the-types">The Plain Adjoint and the Types</h2>
+<h3 id="the-plain-form">The Plain Form</h3>
+<p><strong>The form.</strong> On @@M624@@ use the plain bilinear form
+@@M77@@
+Its Gram matrix in the axis-free basis is @@M625@@, and the form is non-degenerate and symmetric. It is not positive definite, and it is not the Hilbert–Schmidt form on the matrix model.</p>
+<h3 id="the-adjoint">The Adjoint</h3>
+<p><strong>The adjoint.</strong> The adjoint of a two-sided operator is the swap of the two parameters:
+@@M78@@
+The proof is the cyclicity of the scalar part:
+@@M79@@
+The adjoint exchanges the two slots and conjugates neither parameter.</p>
+<h3 id="the-self-adjoint-pairs">The Self-Adjoint Pairs</h3>
+<p><strong>The criterion.</strong> For @@M626@@,
+@@M80@@
+The self-adjoint two-sided operators are the scalar multiples of the diagonal operators @@M627@@, together with the zero operator. The proof is the fibre theorem of §<em>The Factorization Map</em>: equality of the two products gives @@M628@@, hence @@M629@@. The argument uses no inverse and covers the zero divisors.</p>
+<h3 id="the-anti-hermitian-sector">The Anti-Hermitian Sector</h3>
+<p><strong>No nonzero anti-self-adjoint.</strong> No nonzero two-sided operator is anti-self-adjoint:
+@@M81@@
+<em>Proof.</em> If the operator is nonzero, its coefficient matrix is @@M630@@ of rank one, and the coefficient matrix of its negative adjoint is @@M631@@. Equality of two nonzero rank-one matrices gives @@M632@@, and then @@M633@@, so @@M634@@, a contradiction. Hence the operator is zero.</p>
+<h3 id="the-isometries">The Isometries</h3>
+<p><strong>The criterion.</strong> The operator preserves the plain form,
+@@M82@@
+exactly when
+@@M83@@
+Then @@M635@@ is invertible and @@M636@@, and the operator is @@M637@@, where @@M638@@ is the inner automorphism. The isometry group is
+@@M84@@
+of complex dimension three, where @@M639@@ is the group of invertibles. It is not the full orthogonal group, which has dimension six.</p>
+<p><em>Proof.</em> An isometry of a non-degenerate form on a finite-dimensional space is injective: if @@M640@@, then @@M641@@ for all @@M642@@, so @@M643@@ by non-degeneracy. Hence it is invertible, and the isometry condition is equivalent to @@M644@@. With @@M645@@ and @@M646@@,
+@@M85@@
+The identity is @@M647@@. The fibre theorem gives @@M648@@ in both slots; then @@M649@@, so @@M650@@. Hence @@M651@@. The converse is immediate. The dimension is the dimension of the group of invertibles modulo the central scalars, four minus one; the two signs are discrete.</p>
+<h3 id="the-multiplicative-members">The Multiplicative Members</h3>
+<p><strong>The criterion.</strong> A nonzero operator @@M652@@ is multiplicative,
+@@M86@@
+exactly when
+@@M87@@
+Then @@M653@@ and @@M654@@, an automorphism of the algebra. The zero operator is multiplicative but is excluded by the nonzero condition.</p>
+<p><em>Proof.</em> The condition is
+@@M88@@
+Put @@M655@@. If @@M656@@, the products @@M657@@ span the two-sided ideal generated by @@M658@@, which is the whole algebra because @@M659@@ is simple. Then @@M660@@ for all @@M661@@. The map @@M662@@ is bilinear and sends the sixteen basis pairs to the basis @@M663@@, so it is injective: @@M664@@ forces @@M665@@ or @@M666@@, against the nonzero hypothesis. Hence @@M667@@ and @@M668@@. The converse is immediate.</p>
+<h3 id="no-pin-group">No Pin Group</h3>
+<p><strong>The definition.</strong> A pin group is the group generated by the reflections in the nonzero vectors of a quadratic space; the question is whether the isometry group of the family is such a group.</p>
+<p><strong>The quadratic form.</strong> The quadratic form @@M669@@ is not multiplicative. For example,
+@@M89@@
+The level set @@M670@@ is not closed under multiplication, and no scalar condition on one parameter cuts a subgroup out of the family. The isometry group of the family is only @@M671@@, of complex dimension three; it is not a pin group. The isometry condition is a condition on the pair, @@M672@@, not on either parameter alone.</p>
+<p><strong>The two adjoints.</strong> The coefficient formula uses the Hilbert–Schmidt adjoint @@M673@@ of the @@M674@@ matrix; the plain adjoint @@M675@@ is the adjoint for the form @@M676@@ on @@M677@@. They are different involutions. The identity @@M678@@ is a statement about the operator, not about the coefficient matrix.</p>
+<h2 id="the-structural-reading">The Structural Reading</h2>
+<h3 id="the-enveloping-algebra">The Enveloping Algebra</h3>
+<p><strong>The isomorphism.</strong> The map
+@@M90@@
+is an isomorphism of complex algebras. The sixteen elementary tensors @@M679@@ map to the sixteen matrices @@M680@@, which are a basis; the isomorphism is the generation theorem in algebra form.</p>
+<h3 id="the-pure-tensors">The Pure Tensors</h3>
+<p><strong>The cone of pure tensors.</strong> Under this isomorphism the two-sided operators are exactly the decomposable tensors @@M681@@, that is the affine cone over the Segre variety @@M682@@. The correspondence @@M683@@ is the same statement as "the element is a pure tensor in @@M684@@". The seven-dimensional cone of §<em>The Criterion for a Single Product</em> is exactly the cone of pure tensors inside the sixteen-dimensional algebra.</p>
+<h3 id="the-real-slice">The Real Slice</h3>
+<p><strong>The real form.</strong> All sixteen matrices @@M685@@ are real, and their real span is @@M686@@. For real parameters @@M687@@ with real coefficients, the operator @@M688@@ is real, and its coefficient matrix is real of rank at most one. The real products form the real Segre cone, of real dimension seven, inside the complex cone. The real slice is the intersection of the complex cone with @@M689@@, and every real matrix in it has a real factorisation: a real rank-one coefficient matrix has a real nonzero column and a real nonzero row.</p>
+<p><strong>The length over the reals.</strong> For a real matrix @@M690@@, the coefficient matrix @@M691@@ is real, and its rank over @@M692@@ equals its rank over @@M693@@. Hence the least number of real products summing to @@M694@@ equals the least number of complex products. The length is the same over the two fields.</p>
+<p><strong>The frame.</strong> In the axis-free frame the real structure is the real span of the products. The sixteen basis operators are real signed permutations, and the real form is read directly from the entries. A complex linear combination of the basis operators is in @@M695@@ exactly when its sixteen coefficients are real, because the basis operators are a real basis.</p>
+<h2 id="what-the-factorization-buys-and-does-not">What the Factorization Buys and Does Not</h2>
+<p><strong>It gives.</strong>
+- An explicit parametrisation by two biquaternions, eight complex parameters modulo the @@M696@@ scaling, hence seven effective parameters.
+- A product formula, hence powers, inverses and the monoid structure.
+- A rank-one coefficient criterion, hence a decisive test for "is this matrix a single two-sided operator?"
+- The length formula @@M697@@ with @@M698@@.
+- The plain adjoint and the type criteria: @@M699@@; self-adjoint exactly when @@M700@@; isometry exactly when @@M701@@; multiplicative exactly when @@M702@@.
+- A real basis of @@M703@@ and a coefficient matrix computed by real traces, with the real and complex lengths equal.</p>
+<p><strong>It does not give.</strong>
+- Additivity: the set is not a subspace, and the sum of two products is generally not a product.
+- Universality: not every matrix is a single product; four products may be needed, and four are always enough.
+- A division algebra: the basis matrices are invertible, but the span has zero divisors, for example @@M704@@ of rank two.
+- A pin group: the quadratic form @@M705@@ is not multiplicative, and the isometry group of the family is only @@M706@@, of complex dimension three, with no nonzero anti-self-adjoint sector.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ul>
+<li>The length stratification: which matrices have length two or three, and what are the frame equations cutting out each stratum? The length is the rank of @@M707@@, so the strata are the determinantal varieties of the coefficient matrix; their images under the inverse map @@M708@@ are the matrix strata.</li>
+<li>The normal form of the cone under the automorphism group: the orbit of a pure tensor, its stabiliser, and the relation between the two tensor factors.</li>
+<li>The real slice: the real Segre cone, the real length, and the real forms of the complex cone. Does every real matrix of length @@M709@@ have a real decomposition of length @@M710@@? The rank argument says yes, but the explicit factors are not classified.</li>
+<li>The physical operators of the corpus: which have length two or three, and whether the real structure of the axis-free basis makes their statements frame-independent.</li>
+</ul>
+<p>Two questions listed here in earlier editions are answered in <em>@@M711@@ Pauli Representation : Operators</em>. The frame dependence of @@M712@@ is §<em>The Change of Frame Is a Congruence</em> there, and the lengths of the sixteen units are §<em>The Sixteen Lengths</em> there. So only the identification of physical operators inside a stratum remains open.</p>
+<h2 id="summary">Summary</h2>
+<p>The operators on the biquaternion algebra sit at three levels. Every endomorphism has a matrix in @@M713@@, and the axis-free basis gives an isomorphism of sixteen-dimensional algebras. The one-sided operators fill the two four-dimensional copies @@M714@@ and @@M715@@; their intersection is the scalars and each is the commutant of the other. The two-sided operators are the products @@M716@@.</p>
+<p>The left matrix is the structure-constant display with @@M717@@ on the diagonal and the three vector coefficients in the off-diagonal positions; the right matrix differs by the signs of the stitch @@M718@@, with @@M719@@. The four left matrices and the four right matrices are real signed permutations, each family a basis of its copy.</p>
+<p>The sixteen products @@M720@@ are real signed permutations and an orthogonal basis of @@M721@@, of Hilbert–Schmidt norm two. They compose up to sign with the second slot reversed, their trace is @@M722@@, and their determinant is @@M723@@. Every basis matrix is a unit of determinant one and rank four; the span is not a division algebra, since @@M724@@ has rank two. The first row of the table is the right family, the first column the left family, and the nine remaining basis operators are genuinely two-sided. Read as words @@M725@@, the sixteen are @@M726@@, the six @@M727@@ and @@M728@@ and the nine @@M729@@, and exactly one of them carries the trace: removing the trace is deleting the word @@M730@@, which leaves fifteen.</p>
+<p>The coefficient matrix @@M731@@ is the coordinate matrix of @@M732@@ in the sixteen-dimensional basis @@M733@@, computed by @@M734@@. It is a linear isomorphism of @@M735@@ onto itself, and it is not the matrix @@M736@@. The product set is the seven-dimensional Segre cone of pure tensors in @@M737@@. It is not a subspace. The factorisation map has eight parameters, one scaling orbit, and the zero operator as vertex. The product condition is the rank condition @@M738@@.</p>
+<p>The length is the coefficient rank, @@M739@@, and it takes the values @@M740@@; every matrix is a sum of at most four products, and a generic matrix needs four. A one-sided operator has rank four for an invertible element, two for a nonzero zero divisor, and zero for zero. A product has rank @@M741@@, @@M742@@, @@M743@@ or @@M744@@, never three; it is invertible exactly when both parameters are invertible, and its rank can drop to one when both are zero divisors. The matrix rank and the length are independent: the matrix unit @@M745@@ has matrix rank one and length four, and the product @@M746@@ has matrix rank four and length one. All sixteen units have length four. The length is frame-invariant: a change of the element basis sends @@M747@@ to @@M748@@, which has the same rank, and a change of the display alone leaves @@M749@@ unchanged, so the length belongs to the operator and not to the array that displays it.</p>
+<p>The plain adjoint swaps the two parameters, and the type criteria are @@M750@@ for self-adjoint, @@M751@@ for isometry and @@M752@@ for multiplicative. The isometry group is @@M753@@, of complex dimension three, and it is not a pin group.</p>
+<p>In one line: every two-sided operator is a single product of one left and one right multiplication; the set of such products is the seven-dimensional cone of pure tensors, characterised by a rank-one coefficient matrix, closed under composition but not under addition, with length the coefficient rank, product matrix rank in @@M754@@, and the real form @@M755@@ visible as the real span of the sixteen real basis operators.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M756@@</td>
+<td>the biquaternion algebra, @@M757@@</td>
+</tr>
+<tr>
+<td>@@M758@@</td>
+<td>the axis-free basis</td>
+</tr>
+<tr>
+<td>@@M759@@</td>
+<td>the label of the frame, on the family: @@M760@@, @@M761@@, @@M762@@</td>
+</tr>
+<tr>
+<td>@@M763@@</td>
+<td>coefficient column of @@M764@@</td>
+</tr>
+<tr>
+<td>@@M765@@</td>
+<td>left matrix, @@M766@@</td>
+</tr>
+<tr>
+<td>@@M767@@</td>
+<td>right matrix, @@M768@@</td>
+</tr>
+<tr>
+<td>@@M769@@</td>
+<td>the left and right copies in @@M770@@</td>
+</tr>
+<tr>
+<td>@@M771@@</td>
+<td>the four basis matrices of each copy</td>
+</tr>
+<tr>
+<td>@@M772@@</td>
+<td>the switch, @@M773@@</td>
+</tr>
+<tr>
+<td>@@M774@@</td>
+<td>two-sided operator, @@M775@@</td>
+</tr>
+<tr>
+<td>@@M776@@</td>
+<td>the sixteen basis matrices</td>
+</tr>
+<tr>
+<td>@@M777@@</td>
+<td>the word @@M778@@; the sixteen are a basis of @@M779@@</td>
+</tr>
+<tr>
+<td>@@M780@@</td>
+<td>@@M781@@ and @@M782@@, the three left and the three right arrays</td>
+</tr>
+<tr>
+<td>@@M783@@</td>
+<td>@@M784@@, the nine products of two spatial units</td>
+</tr>
+<tr>
+<td>@@M785@@</td>
+<td>coefficient matrix, @@M786@@</td>
+</tr>
+<tr>
+<td>@@M787@@</td>
+<td>length, the least number of products summing to @@M788@@; equal to @@M789@@</td>
+</tr>
+<tr>
+<td>@@M790@@</td>
+<td>factorisation map</td>
+</tr>
+<tr>
+<td>@@M791@@</td>
+<td>the squared vector part</td>
+</tr>
+<tr>
+<td>@@M792@@</td>
+<td>quaternionic norm, the scalar of @@M793@@</td>
+</tr>
+<tr>
+<td>@@M794@@</td>
+<td>quaternion conjugation</td>
+</tr>
+<tr>
+<td>@@M795@@</td>
+<td>Hermitian conjugation</td>
+</tr>
+<tr>
+<td>@@M796@@</td>
+<td>inner automorphism</td>
+</tr>
+<tr>
+<td>@@M797@@</td>
+<td>the opposite algebra</td>
+</tr>
+<tr>
+<td>@@M798@@</td>
+<td>the group of invertibles</td>
+</tr>
+<tr>
+<td>@@M799@@</td>
+<td>scalar part, the @@M800@@ coefficient</td>
+</tr>
+<tr>
+<td>@@M801@@</td>
+<td>plain adjoint for @@M802@@</td>
+</tr>
+<tr>
+<td>@@M803@@</td>
+<td>Hilbert–Schmidt adjoint</td>
+</tr>
+<tr>
+<td>@@M804@@</td>
+<td>the matrix rank of @@M805@@; the coefficient rank is written @@M806@@</td>
+</tr>
+<tr>
+<td>@@M807@@</td>
+<td>the first matrix unit in the axis-free basis</td>
+</tr>
+<tr>
+<td>@@M808@@</td>
+<td>the real matrices, the real span of the sixteen basis operators</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m4c-axis-free-representation.html">@@M809@@ Axis-Free Representation</a>, for the frame, the left and right matrices and the six subspaces.</li>
+<li><a href="m4c-pauli-representation-operators.html">@@M810@@ Pauli Representation : Operators</a>, for the same operators in the standard Peirce frame.</li>
+<li><a href="m2c-pauli-representation-operators.html">@@M811@@ Pauli Representation : Operators</a>, for the Peirce frame where a two-sided operator is a pair of @@M812@@ matrices and the display is @@M813@@.</li>
+<li><a href="m4c-pauli-representation.html">@@M814@@ Pauli Representation</a>, for the frame, the pure swap stitch and the tensor displays.</li>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra @@M815@@</a>, for the construction of @@M816@@ from the two-sided map and the change to the matrix-unit basis.</li>
+<li><a href="operators-acting-on-one-side.html">Operators Acting on One Side</a>, for @@M817@@, @@M818@@ and the four matrices of each side.</li>
+<li><a href="the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a>, for the ambient operator space and its coordinate column.</li>
+<li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the algebra @@M819@@ and the pure tensors.</li>
+<li><a href="adjoint-pair-of-l-and-r-operators.html">Adjoint Pair of @@M820@@ and @@M821@@ Operators</a>, for the plain adjoint and its comparison with the other adjoints.</li>
+<li><a href="the-hermitian-pair-of-operators-acting-on-two-sides.html">The Hermitian Pair of Operators Acting on Two Sides</a>, for the real subcone @@M822@@.</li>
+<li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the four left and four right matrices and the sixteen basis operators entry by entry.</li>
+</ul>

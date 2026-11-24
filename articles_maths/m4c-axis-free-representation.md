@@ -407,6 +407,12 @@ L_{\mathrm{axf}}(\tilde Q_1)R_{\mathrm{axf}}(\tilde Q_2)=R_{\mathrm{axf}}(\tilde
 $$
 The identity is the associativity of the product, read on the two sides. It says that $\mathbb{B}_L$ and $\mathbb{B}_R$ are mutual commutants inside the ambient matrix algebra.
 
+**The sixteen words.** A product of one left matrix with one right matrix is a **word**,
+$$
+W_{\mu\nu}:=L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu),\qquad \mu,\nu\in\{t,x,y,z\}.
+$$
+In this frame every word is a real signed permutation matrix, and $\operatorname{tr}(W_{\mu\nu}^{\mathsf T}W_{\rho\sigma})=4\,\delta_{\mu\rho}\delta_{\nu\sigma}$: the sixteen are orthogonal and span $M_4(\mathbb{R})$. Only $W_{tt}=\mathrm I_4$ has a trace, so the traceless part is spanned by the fifteen words $W_{\mu\nu}$ with $(\mu,\nu)\neq(t,t)$: the six $\ell_x,\ell_y,\ell_z,r_x,r_y,r_z$ and the nine $N_{jk}=\ell_jr_k$, where $\ell_k=L_{\mathrm{axf},\vec e_k}$ and $r_k=R_{\mathrm{axf},\vec e_k}$. The four left matrices of §*The Left Family* are the first column of that grid and the four right matrices of §*The Right Family* the first row. The displays are §*The Sixteen Words, and Their Names* of [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html).
+
 ## The Trace
 
 **The trace is the scalar part.** For every $\tilde Q$,

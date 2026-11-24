@@ -1,0 +1,836 @@
+<h1 id="the-two-sided-operators-method-to-build-m45"><strong>The Two-Sided Operators Method to Build @@M45@@</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The problem.</strong> The algebra @@M46@@ is usually introduced as the algebra of @@M47@@ matrices, with the sixteen matrix units @@M48@@ as its basis. That presentation starts from matrices. The physics of the corpus starts from the biquaternion algebra @@M49@@, and the matrices that appear there are left multiplications, right multiplications and the Clifford generators. The matrix units are not the objects the physics uses.</p>
+<p><strong>The method.</strong> Start from @@M50@@ and its carrier @@M51@@. For @@M52@@ define the two one-sided operators @@M53@@ and @@M54@@. The products @@M55@@, and their sums, form an algebra of operators on a four-dimensional space. That algebra is the whole of @@M56@@. Choosing the coefficient basis of @@M57@@ turns the operators into @@M58@@ matrices, and the method produces sixteen explicit matrices @@M59@@. This article builds the algebra that way, displays the sixteen matrices, and proves the properties that make them the matrices to use.</p>
+<p><strong>The result.</strong> The sixteen @@M60@@ are signed permutation matrices of determinant one. They are orthogonal for the Hilbert–Schmidt form, with @@M61@@. They are closed under multiplication up to sign, and the thirty-two matrices @@M62@@ form a group of order @@M63@@. The coefficients of any matrix in this basis are sixteen traces, and the rank of the coefficient matrix is the length, the least number of products. Every matrix unit is a sum of four of the sixteen, so the matrix-unit basis is the worst basis for the product.</p>
+<p><strong>The terminology.</strong> @@M64@@ is the matrix representation of the operator algebra @@M65@@, not the biquaternion algebra itself. The biquaternion algebra is four-dimensional and is not a matrix algebra until a basis of the carrier is chosen. The operator algebra is sixteen-dimensional; the choice of the coefficient basis writes it as @@M66@@. Three objects are in play, and the article keeps them apart.</p>
+<table>
+<thead>
+<tr>
+<th>Object</th>
+<th>What it is</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M67@@</td>
+<td>the biquaternion algebra</td>
+<td>@@M68@@</td>
+</tr>
+<tr>
+<td>@@M69@@</td>
+<td>the algebra of two-sided operators</td>
+<td>@@M70@@</td>
+</tr>
+<tr>
+<td>@@M71@@</td>
+<td>the matrix representation of @@M72@@ in a basis of @@M73@@</td>
+<td>@@M74@@</td>
+</tr>
+</tbody>
+</table>
+<p>The carrier is @@M75@@; it is not @@M76@@.</p>
+<p><strong>The article.</strong> §<em>The Starting Point</em> fixes the algebra and its carrier. §<em>The Two One-Sided Operators</em> displays @@M77@@ and @@M78@@. §<em>The Method</em> states and proves the construction. §<em>The Sixteen Matrices</em> displays the result and its invariants. §<em>The Group of Order Thirty-Two</em> proves the closure. §<em>Multiplication</em> gives the two tables. §<em>Orthogonality and the Coefficient Formula</em> proves the trace formula. §<em>The Matrix Units in the Method's Basis</em> gives the sixteen expansions and the length. §<em>The Peirce Dictionary</em> identifies the Peirce products. §<em>The Coefficient Matrix and the Length</em> states the computational rule, and §<em>Why These Matrices</em> states the case. The worked computation is the companion article.</p>
+<p><strong>Sources and boundaries.</strong> The left regular model and its product rules are <em>@@M79@@ Axis-Free Representation</em>; the Peirce coordinates are <em>The Polarized Module of the Biquaternion Algebra</em>; the operator construction is <em>Operators Acting on Two Sides</em>; the abstract theorem is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>; the Clifford reading is <em>Matrix Representations Conventions</em>, §<em>The Clifford Structure and the Frame</em>. No form, no norm and no topology beyond the Hilbert–Schmidt pairing is used.</p>
+<h2 id="the-starting-point">The Starting Point</h2>
+<p><strong>The algebra.</strong> Let @@M80@@ be the complexified quaternion algebra, with basis @@M81@@ and product
+@@M0@@
+and the reverse products negative: @@M82@@, @@M83@@, @@M84@@. The unit is @@M85@@, written @@M86@@ when no confusion is possible.</p>
+<p><strong>The carrier.</strong> The algebra acts on itself by multiplication, so its underlying complex vector space is a four-dimensional carrier. In the basis @@M87@@ a vector has coordinates @@M88@@, and the carrier is @@M89@@.</p>
+<p><strong>The algebra is simple but not a division algebra.</strong> It is isomorphic to @@M90@@. A nonzero element need not be invertible: the norm
+@@M1@@
+can vanish for @@M91@@, and then @@M92@@ is a zero divisor. For example @@M93@@. The units are the elements with @@M94@@. This matters below: @@M95@@ is invertible exactly when @@M96@@ is invertible.</p>
+<p><strong>The multiplication table of the basis.</strong> Row @@M97@@, column @@M98@@, entry @@M99@@. It is the quaternion table, and it is the left table of §<em>Multiplication</em>.</p>
+<table>
+<thead>
+<tr>
+<th>@@M100@@</th>
+<th>@@M101@@</th>
+<th>@@M102@@</th>
+<th>@@M103@@</th>
+<th>@@M104@@</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M105@@</td>
+<td>@@M106@@</td>
+<td>@@M107@@</td>
+<td>@@M108@@</td>
+<td>@@M109@@</td>
+</tr>
+<tr>
+<td>@@M110@@</td>
+<td>@@M111@@</td>
+<td>@@M112@@</td>
+<td>@@M113@@</td>
+<td>@@M114@@</td>
+</tr>
+<tr>
+<td>@@M115@@</td>
+<td>@@M116@@</td>
+<td>@@M117@@</td>
+<td>@@M118@@</td>
+<td>@@M119@@</td>
+</tr>
+<tr>
+<td>@@M120@@</td>
+<td>@@M121@@</td>
+<td>@@M122@@</td>
+<td>@@M123@@</td>
+<td>@@M124@@</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-two-one-sided-operators">The Two One-Sided Operators</h2>
+<h3 id="left-multiplication">Left multiplication</h3>
+<p><strong>Definition.</strong> For @@M125@@, let @@M126@@ be the matrix of @@M127@@ in the coefficient basis @@M128@@, ordered @@M129@@. The map @@M130@@ is the left regular representation.</p>
+<p><strong>The four basis matrices.</strong> With @@M131@@ and @@M132@@, @@M133@@, @@M134@@,</p>
+<p>@@M2@@</p>
+<p><strong>The laws.</strong> @@M135@@, @@M136@@, and @@M137@@ is invertible exactly when @@M138@@ is invertible. The image @@M139@@ has complex dimension four.</p>
+<h3 id="right-multiplication">Right multiplication</h3>
+<p><strong>Definition.</strong> For @@M140@@, let @@M141@@ be the matrix of @@M142@@.</p>
+<p><strong>The four basis matrices.</strong></p>
+<p>@@M3@@</p>
+<p><strong>The relation to the left family.</strong> Let @@M143@@ and let @@M144@@ be the quaternion conjugate. Then</p>
+<p>@@M4@@</p>
+<p><strong>The laws.</strong> @@M145@@, @@M146@@, and @@M147@@ is invertible exactly when @@M148@@ is invertible. The image @@M149@@ has complex dimension four.</p>
+<h3 id="the-two-sided-matrices">The two-sided matrices</h3>
+<p><strong>Definition.</strong> For @@M150@@,</p>
+<p>@@M5@@</p>
+<p><strong>The laws.</strong> @@M151@@, because @@M152@@. The left and right families commute, @@M153@@, and they meet in the scalars:</p>
+<p>@@M6@@</p>
+<p><strong>The basis.</strong> The sixteen matrices</p>
+<p>@@M7@@</p>
+<p>are a basis of @@M154@@. The dimension count is @@M155@@.</p>
+<p><strong>Every one is a signed permutation.</strong> Each @@M156@@ has exactly one nonzero entry in every row and every column, and that entry is @@M157@@. The left factor permutes and signs the rows; the right factor permutes and signs the columns.</p>
+<h2 id="the-method">The Method</h2>
+<h3 id="the-construction-in-five-steps">The construction in five steps</h3>
+<p><strong>Step 1.</strong> Start from the biquaternion algebra @@M158@@ and its four-dimensional carrier. No matrix is chosen yet.</p>
+<p><strong>Step 2.</strong> Form the eight one-sided operators @@M159@@ and @@M160@@. They are linear maps of the carrier to itself.</p>
+<p><strong>Step 3.</strong> Form the products @@M161@@ and all their linear combinations. This is the algebra generated by the two commuting copies @@M162@@ and @@M163@@.</p>
+<p><strong>Step 4.</strong> Prove that this algebra is the whole of @@M164@@, of complex dimension sixteen. The proof is the proposition below.</p>
+<p><strong>Step 5.</strong> Choose the coefficient basis of the carrier. The operators become @@M165@@ matrices, and the method produces the sixteen matrices @@M166@@ displayed in §<em>The Sixteen Matrices</em>.</p>
+<p><strong>What the method does not do.</strong> It does not choose a Clifford frame, a form, a norm or a grading. Those are further choices inside the matrix algebra. It does not identify @@M167@@ with @@M168@@: @@M169@@ is four-dimensional, and @@M170@@ is the matrix representation of the sixteen-dimensional operator algebra.</p>
+<h3 id="the-theorem">The theorem</h3>
+<p><strong>Proposition (the two-sided map is an isomorphism).</strong> The map
+@@M8@@
+is an isomorphism of algebras. Hence
+@@M9@@</p>
+<p><strong>Proof.</strong> Multiplicativity: in the opposite algebra the product is reversed, so
+@@M10@@
+and @@M171@@ of this is @@M172@@, which is the product of the images.</p>
+<p>Injectivity: choose a matrix-unit basis @@M173@@ of @@M174@@. The elements @@M175@@ are a basis of the tensor product, sixteen in number. Their images act by @@M176@@, and since @@M177@@, the image is the matrix unit of @@M178@@ that sends @@M179@@ to @@M180@@ and the other @@M181@@ to @@M182@@. The sixteen images are the sixteen matrix units of @@M183@@ in the basis @@M184@@; they are linearly independent. So @@M185@@ is injective.</p>
+<p>Dimensions: the domain has dimension @@M186@@, and the target has dimension @@M187@@. An injective linear map between spaces of the same finite dimension is an isomorphism.</p>
+<p><strong>The matrices follow.</strong> The coefficient basis of @@M188@@ is related to the matrix-unit basis by an invertible change of basis. The sixteen images @@M189@@ are the images of the basis @@M190@@, so they are a basis of @@M191@@. No counting of matrix entries is needed: the dimension comes from the two factors.</p>
+<h3 id="what-has-been-built">What has been built</h3>
+<p><strong>The algebra.</strong> After Step 5 the algebra is literally @@M192@@: its elements are the @@M193@@ complex matrices, with the usual product. But the construction remembers where each matrix came from. The matrix @@M194@@ is the operator @@M195@@, and the label @@M196@@ is the pair of biquaternions that produces it.</p>
+<p><strong>The two regular images.</strong> @@M197@@ and @@M198@@ are the two four-dimensional subalgebras. They commute and meet in the scalars. Neither is the whole algebra; their products are.</p>
+<p><strong>The matrix units are derived, not primitive.</strong> The standard basis @@M199@@ is a basis of the algebra, but it is not the basis the construction produces. The relation between the two is computed in §<em>The Matrix Units in the Method's Basis</em>: every @@M200@@ is a sum of four of the @@M201@@.</p>
+<h2 id="the-sixteen-matrices">The Sixteen Matrices</h2>
+<h3 id="the-display">The display</h3>
+<p><strong>The sixteen matrices, in the coefficient basis.</strong> The labels are the two indices: the first is the left parameter, the second the right parameter.</p>
+<p>@@M11@@</p>
+<p>@@M12@@</p>
+<p>@@M13@@</p>
+<p>@@M14@@</p>
+<p><strong>The order of the labels matters.</strong> The two matrices @@M202@@ and @@M203@@ are different:</p>
+<p>@@M15@@</p>
+<p>They agree in the first two rows and differ in the last two. A computation that confuses them returns the wrong coefficient; the companion article <em>The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</em> records the trap.</p>
+<h3 id="the-sixteen-words">The sixteen words</h3>
+<p><strong>Definition (word).</strong> A <strong>word</strong> is a product of one left array with one right array, the indices running over the four units:
+@@M16@@
+The word @@M204@@ is the array of @@M205@@, so a word is labelled by a pair of units.</p>
+<p><strong>Proposition (the words are a basis of @@M206@@).</strong> The sixteen @@M207@@ are linearly independent, and they are orthogonal in the trace form with one common norm,
+@@M17@@</p>
+<p><strong>Proof.</strong> Each array is a signed permutation matrix, so the product @@M208@@ is a signed permutation matrix with trace @@M209@@ if the two permutations agree and @@M210@@ otherwise, and the permutations agree exactly when @@M211@@. Sixteen arrays orthogonal in a sixteen-dimensional space are a basis. §<em>Orthogonality and the Coefficient Formula</em> proves the same identity through the transposition and composition laws.</p>
+<p><strong>The table of the sixteen.</strong> Write
+@@M18@@
+so that each word has a name among the objects the corpus already has.</p>
+<table>
+<thead>
+<tr>
+<th>word</th>
+<th>the unit indices</th>
+<th>trace</th>
+<th>symmetry</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M212@@</td>
+<td>scalar, scalar</td>
+<td>@@M213@@</td>
+<td>symmetric</td>
+<td>@@M214@@, the removed word</td>
+</tr>
+<tr>
+<td>@@M215@@</td>
+<td>scalar, vector</td>
+<td>@@M216@@</td>
+<td>antisymmetric</td>
+<td>@@M217@@</td>
+</tr>
+<tr>
+<td>@@M218@@</td>
+<td>scalar, vector</td>
+<td>@@M219@@</td>
+<td>antisymmetric</td>
+<td>@@M220@@</td>
+</tr>
+<tr>
+<td>@@M221@@</td>
+<td>scalar, vector</td>
+<td>@@M222@@</td>
+<td>antisymmetric</td>
+<td>@@M223@@</td>
+</tr>
+<tr>
+<td>@@M224@@</td>
+<td>vector, scalar</td>
+<td>@@M225@@</td>
+<td>antisymmetric</td>
+<td>@@M226@@</td>
+</tr>
+<tr>
+<td>@@M227@@</td>
+<td>vector, scalar</td>
+<td>@@M228@@</td>
+<td>antisymmetric</td>
+<td>@@M229@@</td>
+</tr>
+<tr>
+<td>@@M230@@</td>
+<td>vector, scalar</td>
+<td>@@M231@@</td>
+<td>antisymmetric</td>
+<td>@@M232@@</td>
+</tr>
+<tr>
+<td>@@M233@@</td>
+<td>vector, vector</td>
+<td>@@M234@@</td>
+<td>symmetric</td>
+<td>@@M235@@</td>
+</tr>
+<tr>
+<td>@@M236@@</td>
+<td>vector, vector</td>
+<td>@@M237@@</td>
+<td>symmetric</td>
+<td>@@M238@@</td>
+</tr>
+<tr>
+<td>@@M239@@</td>
+<td>vector, vector</td>
+<td>@@M240@@</td>
+<td>symmetric</td>
+<td>@@M241@@</td>
+</tr>
+<tr>
+<td>@@M242@@</td>
+<td>vector, vector</td>
+<td>@@M243@@</td>
+<td>symmetric</td>
+<td>@@M244@@</td>
+</tr>
+<tr>
+<td>@@M245@@</td>
+<td>vector, vector</td>
+<td>@@M246@@</td>
+<td>symmetric</td>
+<td>@@M247@@</td>
+</tr>
+<tr>
+<td>@@M248@@</td>
+<td>vector, vector</td>
+<td>@@M249@@</td>
+<td>symmetric</td>
+<td>@@M250@@</td>
+</tr>
+<tr>
+<td>@@M251@@</td>
+<td>vector, vector</td>
+<td>@@M252@@</td>
+<td>symmetric</td>
+<td>@@M253@@</td>
+</tr>
+<tr>
+<td>@@M254@@</td>
+<td>vector, vector</td>
+<td>@@M255@@</td>
+<td>symmetric</td>
+<td>@@M256@@</td>
+</tr>
+<tr>
+<td>@@M257@@</td>
+<td>vector, vector</td>
+<td>@@M258@@</td>
+<td>symmetric</td>
+<td>@@M259@@</td>
+</tr>
+</tbody>
+</table>
+<p>The trace and symmetry columns are those of §<em>The invariants</em>, read as a table of names: the corner is the identity, the first row is the right family and the first column the left family, and the nine products fill the block.</p>
+<p><strong>Corollary (the trace cell is one word).</strong> Exactly one of the sixteen has a trace, @@M260@@, the product of the two scalar units. So "remove the trace" is not an operation on a sum: it is the deletion of a single word, and @@M261@@ is achieved by deleting the pair @@M262@@ from the index list. That is why the count @@M263@@ is the same in every basis of the traceless part: it is the number of index pairs left after the scalar pair is dropped, which is the number of cells of the @@M264@@ grid of pairs after its corner is dropped.</p>
+<p><strong>Corollary (the deletion splits as six and nine).</strong> The fifteen remaining words are six antisymmetric ones, with exactly one index equal to @@M265@@, and nine symmetric ones, with no index equal to @@M266@@. The six are @@M267@@; the nine are the @@M268@@. So the deletion of @@M269@@ produces the split @@M270@@ of the Cartan decomposition of @@M271@@ without a second choice, because the symmetry type of a word is decided by how many of its two indices are @@M272@@.</p>
+<p><strong>Corollary (the same fifteen, made anti-Hermitian).</strong> Of the fifteen traceless words the six antisymmetric ones, with one @@M273@@ index, are anti-Hermitian as they stand, and the nine symmetric ones become anti-Hermitian on multiplication by @@M274@@. The fifteen arrays so obtained are the fifteen generators of @@M275@@ of <em>The Anti-Hermitian Derivations of @@M276@@ as @@M277@@</em>: the six @@M278@@ and @@M279@@ and the nine @@M280@@. The basis of words and the basis of generators are one set, read in the real and in the imaginary frame.</p>
+<h3 id="the-invariants">The invariants</h3>
+<p><strong>The table.</strong> The trace is the usual trace, the determinant the usual determinant, the rank the usual rank, the order the least @@M281@@ with @@M282@@, and the last column is @@M283@@.</p>
+<table>
+<thead>
+<tr>
+<th>Matrix</th>
+<th>Trace</th>
+<th>Determinant</th>
+<th>Rank</th>
+<th>Order</th>
+<th>Square</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M284@@</td>
+<td>@@M285@@</td>
+<td>@@M286@@</td>
+<td>@@M287@@</td>
+<td>@@M288@@</td>
+<td>@@M289@@</td>
+</tr>
+<tr>
+<td>@@M290@@</td>
+<td>@@M291@@</td>
+<td>@@M292@@</td>
+<td>@@M293@@</td>
+<td>@@M294@@</td>
+<td>@@M295@@</td>
+</tr>
+<tr>
+<td>@@M296@@</td>
+<td>@@M297@@</td>
+<td>@@M298@@</td>
+<td>@@M299@@</td>
+<td>@@M300@@</td>
+<td>@@M301@@</td>
+</tr>
+<tr>
+<td>@@M302@@</td>
+<td>@@M303@@</td>
+<td>@@M304@@</td>
+<td>@@M305@@</td>
+<td>@@M306@@</td>
+<td>@@M307@@</td>
+</tr>
+<tr>
+<td>@@M308@@</td>
+<td>@@M309@@</td>
+<td>@@M310@@</td>
+<td>@@M311@@</td>
+<td>@@M312@@</td>
+<td>@@M313@@</td>
+</tr>
+<tr>
+<td>@@M314@@</td>
+<td>@@M315@@</td>
+<td>@@M316@@</td>
+<td>@@M317@@</td>
+<td>@@M318@@</td>
+<td>@@M319@@</td>
+</tr>
+<tr>
+<td>@@M320@@</td>
+<td>@@M321@@</td>
+<td>@@M322@@</td>
+<td>@@M323@@</td>
+<td>@@M324@@</td>
+<td>@@M325@@</td>
+</tr>
+<tr>
+<td>@@M326@@</td>
+<td>@@M327@@</td>
+<td>@@M328@@</td>
+<td>@@M329@@</td>
+<td>@@M330@@</td>
+<td>@@M331@@</td>
+</tr>
+<tr>
+<td>@@M332@@</td>
+<td>@@M333@@</td>
+<td>@@M334@@</td>
+<td>@@M335@@</td>
+<td>@@M336@@</td>
+<td>@@M337@@</td>
+</tr>
+<tr>
+<td>@@M338@@</td>
+<td>@@M339@@</td>
+<td>@@M340@@</td>
+<td>@@M341@@</td>
+<td>@@M342@@</td>
+<td>@@M343@@</td>
+</tr>
+<tr>
+<td>@@M344@@</td>
+<td>@@M345@@</td>
+<td>@@M346@@</td>
+<td>@@M347@@</td>
+<td>@@M348@@</td>
+<td>@@M349@@</td>
+</tr>
+<tr>
+<td>@@M350@@</td>
+<td>@@M351@@</td>
+<td>@@M352@@</td>
+<td>@@M353@@</td>
+<td>@@M354@@</td>
+<td>@@M355@@</td>
+</tr>
+<tr>
+<td>@@M356@@</td>
+<td>@@M357@@</td>
+<td>@@M358@@</td>
+<td>@@M359@@</td>
+<td>@@M360@@</td>
+<td>@@M361@@</td>
+</tr>
+<tr>
+<td>@@M362@@</td>
+<td>@@M363@@</td>
+<td>@@M364@@</td>
+<td>@@M365@@</td>
+<td>@@M366@@</td>
+<td>@@M367@@</td>
+</tr>
+<tr>
+<td>@@M368@@</td>
+<td>@@M369@@</td>
+<td>@@M370@@</td>
+<td>@@M371@@</td>
+<td>@@M372@@</td>
+<td>@@M373@@</td>
+</tr>
+<tr>
+<td>@@M374@@</td>
+<td>@@M375@@</td>
+<td>@@M376@@</td>
+<td>@@M377@@</td>
+<td>@@M378@@</td>
+<td>@@M379@@</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The pattern.</strong> Every matrix is invertible, of determinant one and of rank four. The trace is @@M380@@ only for @@M381@@, the identity, and @@M382@@ for the other fifteen. The order is @@M383@@ exactly when one index is @@M384@@ and the other is spatial: @@M385@@ and @@M386@@ with @@M387@@ square to @@M388@@. The two-spatial matrices square to @@M389@@.</p>
+<p><strong>Proof of the pattern.</strong> The matrix @@M390@@ is a signed permutation, so it is orthogonal and its determinant is @@M391@@. The group @@M392@@ is generated by the six matrices @@M393@@, each of determinant @@M394@@ by the displayed matrices, and the determinant is a homomorphism; hence all thirty-two elements have determinant @@M395@@. The trace and the order columns are read from the sixteen displayed matrices: the trace is @@M396@@ only for the identity, and the square is @@M397@@ exactly for the six matrices with one @@M398@@ index and one spatial index. The square column also follows from the two multiplication tables of §<em>Multiplication</em>.</p>
+<h3 id="the-group-of-order-thirty-two">The group of order thirty-two</h3>
+<p><strong>Theorem.</strong> The thirty-two matrices @@M399@@ are distinct and form a group; it is isomorphic to
+@@M19@@
+where @@M400@@, and it has order @@M401@@.</p>
+<p><strong>Proof.</strong> Closure: the product of two elements of @@M402@@ is
+@@M20@@
+by the composition law of §<em>The Two-Sided Matrices</em>. The result is again in @@M403@@. The set is finite, contains @@M404@@, and every element is invertible, so it is a group. Distinctness: @@M405@@ gives @@M406@@, an element of @@M407@@; both sides are signed basis matrices, so both are @@M408@@, hence @@M409@@ and @@M410@@. If @@M411@@, the same argument gives @@M412@@, which is false. So the thirty-two are distinct.</p>
+<p>For the isomorphism, let @@M413@@ and @@M414@@. Each is a copy of @@M415@@. They commute and meet in @@M416@@, so their product has order @@M417@@, and it is the set @@M418@@. The map @@M419@@ from @@M420@@ has kernel @@M421@@, hence the displayed quotient.</p>
+<p><strong>The matrices are not a group of order sixteen.</strong> The sixteen @@M422@@ alone are not closed: @@M423@@ is in the set, but @@M424@@ is not. One sign is missing. The group needs the thirty-two signed matrices.</p>
+<h2 id="multiplication">Multiplication</h2>
+<h3 id="the-two-tables">The two tables</h3>
+<p><strong>The left table.</strong> Row @@M425@@, column @@M426@@, entry @@M427@@. The product is a signed basis matrix.</p>
+<table>
+<thead>
+<tr>
+<th>@@M428@@</th>
+<th>@@M429@@</th>
+<th>@@M430@@</th>
+<th>@@M431@@</th>
+<th>@@M432@@</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M433@@</td>
+<td>@@M434@@</td>
+<td>@@M435@@</td>
+<td>@@M436@@</td>
+<td>@@M437@@</td>
+</tr>
+<tr>
+<td>@@M438@@</td>
+<td>@@M439@@</td>
+<td>@@M440@@</td>
+<td>@@M441@@</td>
+<td>@@M442@@</td>
+</tr>
+<tr>
+<td>@@M443@@</td>
+<td>@@M444@@</td>
+<td>@@M445@@</td>
+<td>@@M446@@</td>
+<td>@@M447@@</td>
+</tr>
+<tr>
+<td>@@M448@@</td>
+<td>@@M449@@</td>
+<td>@@M450@@</td>
+<td>@@M451@@</td>
+<td>@@M452@@</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The right table.</strong> Row @@M453@@, column @@M454@@, entry @@M455@@. It is the table of the opposite quaternion algebra, so the signs sit in the other basis operators.</p>
+<table>
+<thead>
+<tr>
+<th>@@M456@@</th>
+<th>@@M457@@</th>
+<th>@@M458@@</th>
+<th>@@M459@@</th>
+<th>@@M460@@</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M461@@</td>
+<td>@@M462@@</td>
+<td>@@M463@@</td>
+<td>@@M464@@</td>
+<td>@@M465@@</td>
+</tr>
+<tr>
+<td>@@M466@@</td>
+<td>@@M467@@</td>
+<td>@@M468@@</td>
+<td>@@M469@@</td>
+<td>@@M470@@</td>
+</tr>
+<tr>
+<td>@@M471@@</td>
+<td>@@M472@@</td>
+<td>@@M473@@</td>
+<td>@@M474@@</td>
+<td>@@M475@@</td>
+</tr>
+<tr>
+<td>@@M476@@</td>
+<td>@@M477@@</td>
+<td>@@M478@@</td>
+<td>@@M479@@</td>
+<td>@@M480@@</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The two tables are not the same.</strong> The left table is the quaternion table: @@M481@@. The right table is the reverse: @@M482@@, because @@M483@@ and @@M484@@. This is the source of every sign in the corpus that looks like a sign error.</p>
+<h3 id="the-product-rule">The product rule</h3>
+<p><strong>The rule.</strong> Read the left table at @@M485@@ and the right table at @@M486@@:
+@@M21@@
+Then
+@@M22@@
+The right index pair is not reversed in the formula; the reversal is already in the right table, whose row is the first factor and whose column is the second.</p>
+<p><strong>In one line.</strong>
+@@M23@@</p>
+<p><strong>The general law.</strong> @@M487@@. The product of two such operators is a two-sided operator. The set of all @@M488@@ is closed under multiplication, and it is the whole algebra.</p>
+<h3 id="three-examples">Three examples</h3>
+<p><strong>A product in the set.</strong> @@M489@@: the left table at @@M490@@ gives @@M491@@ with sign @@M492@@; the right table at @@M493@@ gives @@M494@@ with sign @@M495@@. Hence
+@@M24@@</p>
+<p><strong>A product with a sign.</strong> @@M496@@: the left table at @@M497@@ gives @@M498@@ with sign @@M499@@; the right table at @@M500@@ gives @@M501@@. Hence
+@@M25@@</p>
+<p><strong>A square.</strong> @@M502@@: the left table at @@M503@@ gives @@M504@@; the right table at @@M505@@ gives @@M506@@; the product is @@M507@@. This is the entry of the invariant table.</p>
+<h2 id="orthogonality-and-the-coefficient-formula">Orthogonality and the Coefficient Formula</h2>
+<p><strong>Theorem.</strong> For all indices,
+@@M26@@</p>
+<p><strong>Proof.</strong> Every @@M508@@ is a signed permutation matrix, so it is orthogonal and @@M509@@. The inverse is @@M510@@, because @@M511@@ by the invariant table. More generally,
+@@M27@@
+for some indices @@M512@@. The trace of @@M513@@ is @@M514@@ when @@M515@@ and @@M516@@ otherwise, by the invariant table. The indices @@M517@@ are @@M518@@ exactly when @@M519@@ and @@M520@@, because the product of two basis quaternions is the identity only when the factors are equal. Hence the trace is @@M521@@ on the diagonal and @@M522@@ off it.</p>
+<p><strong>The trace of a two-sided operator.</strong> For all @@M523@@,
+@@M28@@
+The two sides are bilinear in @@M524@@, and they agree on the sixteen basis pairs by the invariant table.</p>
+<p><strong>The coefficient formula.</strong> Let @@M525@@ and write
+@@M29@@
+Then
+@@M30@@</p>
+<p><strong>Proof.</strong> Multiply the expansion by @@M526@@ and take the trace. Orthogonality leaves @@M527@@.</p>
+<p><strong>The formula in entries.</strong> Since @@M528@@ is a signed permutation,
+@@M31@@
+because @@M529@@ and the transpose moves the entry @@M530@@ to @@M531@@. In practice one reads the four nonzero positions of @@M532@@ and adds the corresponding entries of @@M533@@ with their signs, then divides by four. The companion article carries out the sixteen sums entry by entry for one matrix.</p>
+<h2 id="the-matrix-units-in-the-methods-basis">The Matrix Units in the Method's Basis</h2>
+<h3 id="the-sixteen-expansions">The sixteen expansions</h3>
+<p><strong>Theorem.</strong> Every matrix unit is a sum of four of the @@M534@@ with coefficients @@M535@@:
+@@M32@@
+and each row of the coefficient array has exactly four nonzero entries.</p>
+<p><strong>The table.</strong> The matrix units are those of the coefficient basis, the same basis in which the @@M536@@ are displayed.</p>
+<table>
+<thead>
+<tr>
+<th>Matrix unit</th>
+<th>Expansion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M537@@</td>
+<td>@@M538@@</td>
+</tr>
+<tr>
+<td>@@M539@@</td>
+<td>@@M540@@</td>
+</tr>
+<tr>
+<td>@@M541@@</td>
+<td>@@M542@@</td>
+</tr>
+<tr>
+<td>@@M543@@</td>
+<td>@@M544@@</td>
+</tr>
+<tr>
+<td>@@M545@@</td>
+<td>@@M546@@</td>
+</tr>
+<tr>
+<td>@@M547@@</td>
+<td>@@M548@@</td>
+</tr>
+<tr>
+<td>@@M549@@</td>
+<td>@@M550@@</td>
+</tr>
+<tr>
+<td>@@M551@@</td>
+<td>@@M552@@</td>
+</tr>
+<tr>
+<td>@@M553@@</td>
+<td>@@M554@@</td>
+</tr>
+<tr>
+<td>@@M555@@</td>
+<td>@@M556@@</td>
+</tr>
+<tr>
+<td>@@M557@@</td>
+<td>@@M558@@</td>
+</tr>
+<tr>
+<td>@@M559@@</td>
+<td>@@M560@@</td>
+</tr>
+<tr>
+<td>@@M561@@</td>
+<td>@@M562@@</td>
+</tr>
+<tr>
+<td>@@M563@@</td>
+<td>@@M564@@</td>
+</tr>
+<tr>
+<td>@@M565@@</td>
+<td>@@M566@@</td>
+</tr>
+<tr>
+<td>@@M567@@</td>
+<td>@@M568@@</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Two examples in full.</strong> For @@M569@@ the four diagonal basis operators enter with the signs of the coordinates: the trace sum @@M570@@ gives the coefficient @@M571@@, while the off-diagonal entries cancel. For @@M572@@ the four basis operators with exactly one @@M573@@ index enter; the two @@M574@@-first matrices give the first column, and the two @@M575@@-second matrices give the second.</p>
+<p><strong>The coefficient array is a signed permutation.</strong> In each expansion the four indices @@M576@@ are distinct, and each row index and each column index occurs exactly once. The array @@M577@@ is therefore a signed permutation matrix, of rank four.</p>
+<h3 id="length-four">Length four</h3>
+<p><strong>Corollary.</strong> The length of every matrix unit is four:
+@@M33@@</p>
+<p><strong>Proof.</strong> The length is the rank of the coefficient matrix (Theorem of §<em>The Coefficient Matrix and the Length</em>). The expansion has four nonzero coefficients in a permutation pattern, so the coefficient matrix has rank four.</p>
+<p><strong>The meaning.</strong> The matrix units are the worst possible basis for the product: each of them needs four two-sided operators. A physics table written in matrix units hides a factor of four in every entry. A table written in the method's basis shows one product per entry.</p>
+<h2 id="the-peirce-dictionary">The Peirce Dictionary</h2>
+<p><strong>The Peirce basis.</strong> Let @@M578@@, @@M579@@, @@M580@@, @@M581@@, the four Peirce elements of <em>The Polarized Module of the Biquaternion Algebra</em>, in the order @@M582@@ of the coefficient basis.</p>
+<p><strong>Theorem.</strong> In the Peirce basis the sixteen products @@M583@@ are exactly the sixteen matrix units, with coefficient @@M584@@:
+@@M34@@
+where @@M585@@ is the matrix unit of the Peirce basis. The correspondence is the table below.</p>
+<table>
+<thead>
+<tr>
+<th>@@M586@@</th>
+<th>@@M587@@</th>
+<th>@@M588@@</th>
+<th>@@M589@@</th>
+<th>@@M590@@</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M591@@</td>
+<td>@@M592@@</td>
+<td>@@M593@@</td>
+<td>@@M594@@</td>
+<td>@@M595@@</td>
+</tr>
+<tr>
+<td>@@M596@@</td>
+<td>@@M597@@</td>
+<td>@@M598@@</td>
+<td>@@M599@@</td>
+<td>@@M600@@</td>
+</tr>
+<tr>
+<td>@@M601@@</td>
+<td>@@M602@@</td>
+<td>@@M603@@</td>
+<td>@@M604@@</td>
+<td>@@M605@@</td>
+</tr>
+<tr>
+<td>@@M606@@</td>
+<td>@@M607@@</td>
+<td>@@M608@@</td>
+<td>@@M609@@</td>
+<td>@@M610@@</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Proof.</strong> The four Peirce elements form a system of @@M611@@ matrix units, not four orthogonal idempotents: their table is the matrix-unit table @@M612@@ of the model article. Multiplying the four elements in the coefficient basis, and conjugating each of the sixteen products @@M613@@ by the Peirce change @@M614@@, gives a matrix with a single nonzero entry in the Peirce basis, at the position of the table, with value @@M615@@. The computation is sixteen products of @@M616@@ matrices, and no case is exceptional.</p>
+<p><strong>The two bases are adapted to different questions.</strong> The coefficient basis makes the @@M617@@ signed permutations. The Peirce basis makes the products @@M618@@ matrix units. Neither basis does both: in the Peirce basis the @@M619@@ are monomial with entries in @@M620@@ but not matrix units; in the coefficient basis the Peirce products are sums of four basis operators whose coefficient array has rank one, so each is a single product.</p>
+<p><strong>Why the two are consistent.</strong> Both are bases of the same sixteen-dimensional algebra. The change of basis between them is the Peirce change @@M621@@ of the model article, of determinant @@M622@@, and the lengths agree because the length is basis-independent.</p>
+<h2 id="the-coefficient-matrix-and-the-length">The Coefficient Matrix and the Length</h2>
+<p><strong>Definition.</strong> For @@M623@@, the coefficient matrix is
+@@M35@@</p>
+<p><strong>Theorem (reconstruction).</strong> @@M624@@.</p>
+<p><strong>Theorem (products are outer products).</strong> For @@M625@@ and @@M626@@,
+@@M36@@
+the outer product of the coordinate column of @@M627@@ and the coordinate column of @@M628@@.</p>
+<p><strong>Proof.</strong> @@M629@@, and the coefficients are unique.</p>
+<p><strong>Corollary.</strong> A matrix is a single two-sided operator exactly when its coefficient matrix has rank at most one. The rank is the length:
+@@M37@@</p>
+<p><strong>Proof.</strong> A decomposition @@M630@@ gives @@M631@@, a sum of @@M632@@ rank-one matrices, so @@M633@@. Conversely, a rank-@@M634@@ factorisation @@M635@@ with @@M636@@ of size @@M637@@ gives @@M638@@, where @@M639@@ and @@M640@@ are the columns. Hence the least @@M641@@ is the rank.</p>
+<p><strong>The algorithm.</strong> In practice:</p>
+<ol>
+<li>Compute the sixteen traces @@M642@@.</li>
+<li>Assemble the @@M643@@ matrix @@M644@@.</li>
+<li>Compute its rank, by minors or by row reduction. That rank is the length.</li>
+<li>If the rank is one, read @@M645@@ and return @@M646@@.</li>
+<li>If the rank is @@M647@@, factor @@M648@@ with @@M649@@ of size @@M650@@ and return the @@M651@@ products @@M652@@.</li>
+<li>Reconstruct @@M653@@ as a check.</li>
+</ol>
+<p><strong>What the length is not.</strong> It is not the matrix rank. The identity has matrix rank four and length one. The matrix unit @@M654@@ has matrix rank one and length four. The companion article computes a matrix of matrix rank four and length two.</p>
+<p><strong>The invariance.</strong> The length is invariant under conjugation by @@M655@@, because the two-sided operators are exactly the rank-one matrices, and conjugation preserves rank. It is also invariant under the finite group of order @@M656@@, which permutes the @@M657@@ up to sign.</p>
+<h2 id="why-these-matrices">Why These Matrices</h2>
+<p><strong>Six reasons.</strong></p>
+<ol>
+<li><strong>The matrices are the operators.</strong> Each @@M658@@ is @@M659@@. A table entry written as @@M660@@ says which left and right multiplications produce it. A table entry written as @@M661@@ says only which entry of a matrix is nonzero.</li>
+<li><strong>The product is closed up to sign.</strong> The thirty-two matrices @@M662@@ form a group. Products, inverses and powers stay in a finite set. In the matrix-unit basis the product of two basis elements is either zero or a third, but the coefficients of a general product spread over sixteen terms.</li>
+<li><strong>The coefficients are traces.</strong> Orthogonality gives @@M663@@ with norm @@M664@@. There is no linear system to solve.</li>
+<li><strong>The coefficient rank is the length.</strong> The least number of products is the rank of a @@M665@@ matrix. This is the natural measure of complexity of an operator, and it is basis-independent.</li>
+<li><strong>The physics matrices are sparse in this basis.</strong> The chirality projectors, the mass bilinear and the Lorentz generators are linear combinations of a few basis operators with coefficients in @@M666@@.</li>
+<li><strong>The matrix units are the wrong default.</strong> Every @@M667@@ has length four. A table in matrix units overstates the number of products by a factor of four in every entry.</li>
+</ol>
+<p><strong>The caveat.</strong> The matrix units remain the canonical basis of the abstract algebra: they are the definition of the product, and the theorems of the category are stated in them. The eigenbasis remains canonical for spectral theory. The Peirce basis remains canonical for the chiral blocks. The sixteen matrices are the default for the operator question, not a replacement for the others.</p>
+<p><strong>A test.</strong> Take a matrix from a physics table. If it is a projector, a field strength or a mass term, it has a short expression in the method's basis. Compute the sixteen traces and the rank. If the rank is small, the matrix is a short product, and the table is hiding a product structure. If the rank is four, the matrix is a genuinely complicated operator.</p>
+<h2 id="a-worked-example">A Worked Example</h2>
+<p><strong>The matrix.</strong>
+@@M38@@</p>
+<p><strong>The coefficients.</strong> The sixteen traces give
+@@M39@@</p>
+<p><strong>The length.</strong> The rank is two, so @@M668@@, while the matrix rank of @@M669@@ is four. A decomposition is
+@@M40@@</p>
+<p><strong>The caution.</strong> The matrix looks like two copies of a Jordan block, but it is not a left regular matrix: in the coefficient basis a left matrix has equal entries @@M670@@ and @@M671@@ up to sign, and @@M672@@ has @@M673@@ and @@M674@@. The block look is a property of the coefficient basis, not of the Peirce decomposition.</p>
+<p><strong>The full computation.</strong> <em>The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</em> carries out the sixteen traces, the transpose products, the rank by minors, the factorisation and the reconstruction, entry by entry.</p>
+<h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: @@M675@@ is one set of matrices, @@M676@@ and @@M677@@. The frame belongs to the coordinate, not to the array.</p>
+<p>The gamma frame is one choice inside the method's basis; the body writes the basis operators.</p>
+<p><strong>The five matrices.</strong> In the corpus frame @@M678@@,
+@@M41@@</p>
+<p><strong>The anticommutation relations.</strong> With the sign vector @@M679@@,
+@@M42@@</p>
+<p><strong>The chirality projectors.</strong>
+@@M43@@
+Both are single products up to a scalar: @@M680@@ and @@M681@@ are linear combinations of two basis operators, not products themselves.</p>
+<p><strong>The reading.</strong> The gammas are five of the sixteen basis operators up to the scalar @@M682@@. The products of the gammas are the other eleven, up to scalars. The Dirac algebra is the method's algebra with a chosen five-element frame, not a different algebra.</p>
+<p><strong>The frame is not canonical.</strong> The five displayed matrices are one choice among the gamma sets of the companion article. The basis @@M683@@ is canonical once the coefficient basis is fixed; the gamma set inside it is not.</p>
+<p>Over @@M684@@ the dictionary is complex-linear: the products span @@M685@@ and the basis operators span @@M686@@.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra @@M687@@ is built by the two-sided operators method, which produces the sixteen matrices @@M688@@, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with @@M689@@, so the coefficients of a matrix are sixteen traces. As words @@M690@@ they are the identity, the six @@M691@@ and @@M692@@ and the nine @@M693@@; only @@M694@@ carries the trace, so the deletion of that one word gives the fifteen, in the ratio @@M695@@. They are closed under multiplication up to sign, and the thirty-two matrices @@M696@@ form a group of order @@M697@@, isomorphic to @@M698@@. The product rule is read from two @@M699@@ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four basis operators with coefficients @@M700@@, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products @@M701@@ are exactly the sixteen matrix units with coefficient @@M702@@. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The Clifford frame is five of the sixteen matrices up to the scalar @@M703@@. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.</p>
+<p>@@M44@@</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@M704@@</td>
+<td>the biquaternion algebra, @@M705@@</td>
+</tr>
+<tr>
+<td>@@M706@@</td>
+<td>the coefficient basis, with @@M707@@ and @@M708@@</td>
+</tr>
+<tr>
+<td>@@M709@@</td>
+<td>left multiplication @@M710@@</td>
+</tr>
+<tr>
+<td>@@M711@@</td>
+<td>right multiplication @@M712@@</td>
+</tr>
+<tr>
+<td>@@M713@@</td>
+<td>the two-sided operator @@M714@@</td>
+</tr>
+<tr>
+<td>@@M715@@</td>
+<td>@@M716@@, the sixteen basis matrices</td>
+</tr>
+<tr>
+<td>@@M717@@</td>
+<td>the word @@M718@@, the same sixteen by their unit pair</td>
+</tr>
+<tr>
+<td>@@M719@@</td>
+<td>@@M720@@ and @@M721@@, the three left and the three right arrays</td>
+</tr>
+<tr>
+<td>@@M722@@</td>
+<td>@@M723@@, the nine products of two spatial units</td>
+</tr>
+<tr>
+<td>@@M724@@</td>
+<td>the matrix units of the coefficient basis</td>
+</tr>
+<tr>
+<td>@@M725@@</td>
+<td>the matrix units of the Peirce basis</td>
+</tr>
+<tr>
+<td>@@M726@@</td>
+<td>the four Peirce elements, in the order @@M727@@</td>
+</tr>
+<tr>
+<td>@@M728@@</td>
+<td>the coefficient matrix, @@M729@@</td>
+</tr>
+<tr>
+<td>@@M730@@</td>
+<td>the length, the least number of products</td>
+</tr>
+<tr>
+<td>@@M731@@</td>
+<td>the quaternion group @@M732@@</td>
+</tr>
+<tr>
+<td>@@M733@@</td>
+<td>@@M734@@, the carrier of the right family</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the reasons the AXF matrices replace the Pauli and gamma matrices.</li>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the construction and the product question.</li>
+<li><a href="m4c-axis-free-representation.html">The @@M735@@ Axis-Free Representation</a>, for the left regular model and its trace and determinant.</li>
+<li><a href="the-polarized-module-of-the-biquaternion-algebra.html">The Polarized Module of the Biquaternion Algebra</a>, for the Peirce basis, the chiral blocks and the matrix units @@M736@@.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra @@M737@@</a>, for the algebra, the matrix units and the construction from the two-sided map.</li>
+<li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of @@M738@@</a>, for the operators @@M739@@ on the sixteen-dimensional algebra.</li>
+<li><a href="the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html">The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</a>, for the sixteen traces, the rank and the factorisation of one matrix.</li>
+<li><a href="the-numerical-range-of-the-two-sided-operators-of-m4c.html">The Numerical Range of the Two-Sided Operators of @@M740@@</a>, for the field of values of the two-sided operator on the sixteen-dimensional algebra.</li>
+<li><a href="../articles_physics/matrix-representations-conventions.html">Conventions of the Matrix Models</a>, for the explicit chiral matrices of one frame, §<em>The Clifford Structure and the Frame</em>.</li>
+<li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the abstract theorem @@M741@@.</li>
+</ul>

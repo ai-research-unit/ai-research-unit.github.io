@@ -254,6 +254,56 @@ $$
 
 Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ the identity, and the remaining nine the genuinely two-sided basis operators. The table is the matrix form of the four families of *Operators Acting on Two Sides*, §*The Operator $L_{\tilde Q}R_{\tilde Q_2}$*.
 
+### The Sixteen Words, and Their Names
+
+**Definition (word).** A **word** is a product of one left array with one right array, the indices running over the four units:
+$$
+W_{\mu\nu}:=L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu),\qquad \mu,\nu\in\{t,x,y,z\}.
+$$
+Each word is the array of $X\mapsto e_\mu Xe_\nu$, so the label of a word is a pair of units and the word is the pair read in the frame.
+
+**Proposition (the words are a basis of $M_4(\mathbb{R})$).** The sixteen $W_{\mu\nu}$ are linearly independent, and they are orthogonal in the trace form with one common norm,
+$$
+\operatorname{tr}\bigl(W_{\mu\nu}^{\mathsf T}W_{\mu'\nu'}\bigr)=4\,\delta_{\mu\mu'}\delta_{\nu\nu'}.
+$$
+
+**Proof.** Each array is a signed permutation matrix, so the product $W_{\mu\nu}^{\mathsf T}W_{\mu'\nu'}$ is a signed permutation matrix with trace $4$ if the two permutations agree and $0$ otherwise, and the permutations agree exactly when $(\mu,\nu)=(\mu',\nu')$. Sixteen arrays orthogonal in a sixteen-dimensional space are a basis.
+
+The same identity is proved again in §*Orthogonality*, through the transposition and composition laws instead of by counting permutations; both proofs are kept because the composition law is used again below.
+
+**The table of the sixteen.** The last column names each word by the object the corpus already has for it. Write
+$$
+\ell_k:=L_{\mathrm{axf},\vec e_k},\qquad r_k:=R_{\mathrm{axf},\vec e_k},\qquad N_{jk}:=\ell_jr_k ,
+$$
+with the pair $(j,k)$ running over the three spatial directions.
+
+| word | the unit indices | trace | symmetry | what it is |
+|---|---|---|---|---|
+| $W_{tt}$ | scalar, scalar | $4$ | symmetric | $\mathrm I_4$, the removed word |
+| $W_{tx}$ | scalar, vector | $0$ | antisymmetric | $r_x$ |
+| $W_{ty}$ | scalar, vector | $0$ | antisymmetric | $r_y$ |
+| $W_{tz}$ | scalar, vector | $0$ | antisymmetric | $r_z$ |
+| $W_{xt}$ | vector, scalar | $0$ | antisymmetric | $\ell_x$ |
+| $W_{yt}$ | vector, scalar | $0$ | antisymmetric | $\ell_y$ |
+| $W_{zt}$ | vector, scalar | $0$ | antisymmetric | $\ell_z$ |
+| $W_{xx}$ | vector, vector | $0$ | symmetric | $N_{xx}=\ell_xr_x$ |
+| $W_{xy}$ | vector, vector | $0$ | symmetric | $N_{xy}=\ell_xr_y$ |
+| $W_{xz}$ | vector, vector | $0$ | symmetric | $N_{xz}=\ell_xr_z$ |
+| $W_{yx}$ | vector, vector | $0$ | symmetric | $N_{yx}=\ell_yr_x$ |
+| $W_{yy}$ | vector, vector | $0$ | symmetric | $N_{yy}=\ell_yr_y$ |
+| $W_{yz}$ | vector, vector | $0$ | symmetric | $N_{yz}=\ell_yr_z$ |
+| $W_{zx}$ | vector, vector | $0$ | symmetric | $N_{zx}=\ell_zr_x$ |
+| $W_{zy}$ | vector, vector | $0$ | symmetric | $N_{zy}=\ell_zr_y$ |
+| $W_{zz}$ | vector, vector | $0$ | symmetric | $N_{zz}=\ell_zr_z$ |
+
+The two columns agree with the displays of §*The Sixteen, Entry by Entry* and with the invariants of §*Composition, Trace, Determinant*: the identity in the corner, the six left and right arrays in the first row and the first column, the nine products in the block.
+
+**Corollary (the trace cell is one word).** Exactly one of the sixteen has a trace, namely $W_{tt}$, the product of the two scalar units. So "remove the trace" is not an operation on a sum: it is the deletion of a single word, and $16-1=15$ is achieved by deleting the pair $(t,t)$ from the index list. The count is the same in every basis of the traceless part because it is not a count of coordinates at all: it is the number of index pairs left after the scalar pair is dropped, which is the number of cells of the $4\times4$ grid of pairs after the corner is dropped.
+
+**Corollary (the deletion splits as six and nine).** The fifteen remaining words are six antisymmetric ones, with exactly one index equal to $t$, and nine symmetric ones, with no index equal to $t$. The six are $\ell_x,\ell_y,\ell_z,r_x,r_y,r_z$ and the nine are the $N_{jk}$, so the deletion of $W_{tt}$ produces the split $6+9$ of the Cartan decomposition without a second choice: the symmetry type of a word is decided by how many of its two indices are $t$.
+
+**Corollary (the same fifteen, made anti-Hermitian).** Each of the fifteen traceless words is anti-Hermitian as it stands when it is antisymmetric, that is for the six with one $t$ index, and becomes anti-Hermitian on multiplication by $i$ when it is symmetric, that is for the nine. The fifteen arrays so obtained are the fifteen generators of $\mathfrak{su}(4)$ of *The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$*: the six $\ell_k$ and $r_k$ and the nine $iN_{jk}$. The fifteen directions of that article and the fifteen words here are one set, read in the imaginary frame.
+
 ### The Sixteen, Entry by Entry
 
 **The display.** In the axis-free basis, grouped by the left index $\mu$,
@@ -343,7 +393,7 @@ has rank two. A basis of invertible matrices does not make the algebra a divisio
 
 ### Orthogonality
 
-**Theorem (orthogonality).** For the Hilbert–Schmidt inner product $\langle A,B\rangle_{\mathrm{HS}}=\operatorname{Tr}(A^{\dagger}B)$,
+**Theorem (orthogonality).** This is the proposition of §*The Sixteen Words, and Their Names*, proved a second time here through the transposition and composition laws, which the sections below need anyway. For the Hilbert–Schmidt inner product $\langle A,B\rangle_{\mathrm{HS}}=\operatorname{Tr}(A^{\dagger}B)$,
 $$
 \operatorname{Tr}\bigl((L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu})^{\dagger}L_{\mathrm{axf},e_\rho}R_{\mathrm{axf},e_\sigma}\bigr)
 =4\,\delta_{\mu\rho}\,\delta_{\nu\sigma}.
@@ -814,7 +864,7 @@ The operators on the biquaternion algebra sit at three levels. Every endomorphis
 
 The left matrix is the structure-constant display with $Q_t$ on the diagonal and the three vector coefficients in the off-diagonal positions; the right matrix differs by the signs of the stitch $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$, with $D=\operatorname{diag}(1,-1,-1,-1)$. The four left matrices and the four right matrices are real signed permutations, each family a basis of its copy.
 
-The sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are real signed permutations and an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. They compose up to sign with the second slot reversed, their trace is $4Q_tP_t$, and their determinant is $\langle Q\rangle_{\natural}^2\langle P\rangle_{\natural}^2$. Every basis matrix is a unit of determinant one and rank four; the span is not a division algebra, since $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}=\operatorname{diag}(0,0,2,2)$ has rank two. The first row of the table is the right family, the first column the left family, and the nine remaining basis operators are genuinely two-sided.
+The sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are real signed permutations and an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. They compose up to sign with the second slot reversed, their trace is $4Q_tP_t$, and their determinant is $\langle Q\rangle_{\natural}^2\langle P\rangle_{\natural}^2$. Every basis matrix is a unit of determinant one and rank four; the span is not a division algebra, since $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}=\operatorname{diag}(0,0,2,2)$ has rank two. The first row of the table is the right family, the first column the left family, and the nine remaining basis operators are genuinely two-sided. Read as words $W_{\mu\nu}=L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu)$, the sixteen are $\mathrm I_4$, the six $\ell_k$ and $r_k$ and the nine $N_{jk}$, and exactly one of them carries the trace: removing the trace is deleting the word $W_{tt}$, which leaves fifteen.
 
 The coefficient matrix $c(M)$ is the coordinate matrix of $M$ in the sixteen-dimensional basis $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, computed by $c_{\mu\nu}=\frac14\operatorname{Tr}((L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu})^{\mathsf T}M)$. It is a linear isomorphism of $M_4(\mathbb{C})$ onto itself, and it is not the matrix $M$. The product set is the seven-dimensional Segre cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}\cong M_4(\mathbb{C})$. It is not a subspace. The factorisation map has eight parameters, one scaling orbit, and the zero operator as vertex. The product condition is the rank condition $\operatorname{rank}c(M)\le1$.
 
@@ -839,6 +889,9 @@ In one line: every two-sided operator is a single product of one left and one ri
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | the switch, $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$ |
 | $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ | two-sided operator, $X\mapsto\tilde QX\tilde Q_2$ |
 | $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ | the sixteen basis matrices |
+| $W_{\mu\nu}$ | the word $L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu)$; the sixteen are a basis of $M_4(\mathbb{R})$ |
+| $\ell_k,r_k$ | $L_{\mathrm{axf},\vec e_k}$ and $R_{\mathrm{axf},\vec e_k}$, the three left and the three right arrays |
+| $N_{jk}$ | $\ell_jr_k$, the nine products of two spatial units |
 | $c(M)$ | coefficient matrix, $c_{\mu\nu}=\frac14\operatorname{Tr}((L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu})^{\mathsf T}M)$ |
 | $\ell(M)$ | length, the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
 | $\Phi(\tilde Q,\tilde Q_2)=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ | factorisation map |

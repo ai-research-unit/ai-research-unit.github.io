@@ -1,4 +1,4 @@
-# __Classification of the Fermions: One Generation, Sixteen Fields, Thirty-Two States, Closed Under $CP$ and Not Under $C$__
+# __Classification of the Fermions in the Four Colours Left–Right Model: One Generation, Sixteen Fields, Thirty-Two States, Closed Under $CP$ and Not Under $C$__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ $$
 
 with the sixteen already containing their own antiparticles as conjugate modes, thirty-two states per generation, and the spectrum closed under $CP$ with $L\leftrightarrow R$ and not under $C$.
 
-**What this article is.** The fermion side of the classification, and its conjugation. It states the product that counts a generation, why the product is the right operation here and the sum of squares is not, then writes the sixteen as two octets, one per chirality block, names the rows, and conjugates them: the operation, the antiparticle charges, the count of fields against the count of states, and what the map fails to do. The group, its three numbers, the ledger and the cells the bosons occupy are [Classification of the Bosons](classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html).
+**What this article is.** The fermion side of the classification, and its conjugation. It states the product that counts a generation, why the product is the right operation here and the sum of squares is not, then writes the sixteen as two octets, one per chirality block, names the rows, and conjugates them: the operation, the antiparticle charges, the count of fields against the count of states, and what the map fails to do. The group, its three numbers, the ledger and the cells the bosons occupy are [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html).
 
 **Where the sixteen sits on the picture.** A fermion occupies one quartet index and one doublet index, so a row is a pair of labels and not a cell of the $4\times4$. The $4$ is the quartet's size, the $2$ is a doublet's size, and the second $2$ is the chirality block — which $2\times2$ grid the doublet index belongs to. **The grids are shared with the bosons; the reading is not**: a boson is a direction inside one factor, a fermion is a product of one value from each.
 
@@ -174,7 +174,7 @@ The pair of multiplets is exchanged with a pair that is not the same pair. What 
 
 Two consequences follow, and both are already in the corpus without this argument.
 
-The bidoublet is not an option. A fermion mass is the conversion of a cell into its conjugate, so it needs a scalar that carries both weak indices, which is exactly $(\mathbf1,\mathbf2,\mathbf2)$. The scalar sector of [The Scalar Sector](../articles_physics/the-scalar-sector-twenty-four-real-components-twelve-eaten.html) is the price of the conjugate grid.
+The bidoublet is not an option. A fermion mass is the conversion of a cell into its conjugate, so it needs a scalar that carries both weak indices, which is exactly $(\mathbf1,\mathbf2,\mathbf2)$. The scalar sector of [The Scalar Sector](../articles_physics/the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html) is the price of the conjugate grid.
 
 The neutrino is not its own antiparticle here. $B-L$ is gauged and comes from inside $\mathrm{SU}(4)$, so a Majorana mass for $\xi_{\mathrm{neu},R}$ would break a gauged symmetry, and the renormalisable mass is the Dirac mass of the pair $\xi_{\mathrm{neu},L}$ and $\xi_{\mathrm{neu},R}$. That differs from the Standard Model, where a Majorana mass is available because $B-L$ is not gauged, and it is a statement the model makes rather than inherits.
 
@@ -265,10 +265,10 @@ $C$ does not close the spectrum; $CP$ with $L\leftrightarrow R$ does (*What Char
 
 ## Further Reading
 
-- [Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators, One Name in Every Cell](classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html). The group, the three numbers, the ledger, the grid the fermions are read against, and the cells the bosons occupy.
+- [Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators, One Name in Every Cell](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). The group, the three numbers, the ledger, the grid the fermions are read against, and the cells the bosons occupy.
 - [Charge Conjugation and the Division Ring](../articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html). Where $-e_y\bar Qe_y$ is built.
 - [The CPT Theorem in Biquaternionic Form](../articles_physics/the-cpt-theorem-in-biquaternionic-form.html). The consistency of the map with the discrete symmetries.
-- [The Scalar Sector: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-twenty-four-real-components-twelve-eaten.html). The bidoublet that the conjugate grid requires.
-- [The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html). Where the masses of these sixteen come from.
+- [The Scalar Sector of the Four Colours Left–Right Model: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). The bidoublet that the conjugate grid requires.
+- [The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html). Where the masses of these sixteen come from.
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html). Why the neutrino here is Dirac and not Majorana.
 - [The Excitation Ladder Theory of Flavour](the-excitation-ladder-theory-of-flavour.html). Why there are three generations, which the grid does not say.

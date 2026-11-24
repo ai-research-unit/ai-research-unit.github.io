@@ -144,6 +144,12 @@ In particular every complex-linear operator of $\mathbb{B}$ is a finite sum of t
 
 **The statement beside the proof.** The independence and the spanning are proved together in the next two subsections: the matrix-unit computation exhibits sixteen independent operators, and the change of basis shows that the coefficient products are the same sixteen operators in another basis. The generation statement is not used before it is proved.
 
+**The name of a basis operator.** Each basis operator $e_\mu[\,]e_\nu$ is a **word**: the product of the left multiplication by one unit with the right multiplication by one unit,
+$$
+W_{\mu\nu}=L_{e_\mu}R_{e_\nu},\qquad \mu,\nu\in\{t,x,y,z\}.
+$$
+The word is labelled by its pair of units, and the sixteen labels are the sixteen cells of a grid. The grid has one corner, $W_{tt}=\mathrm{id}$, the identity operator, and it is the only word with a nonzero trace: $\operatorname{tr}(L_AR_B)=\operatorname{tr}A\operatorname{tr}B$, and only $e_t$ has a nonzero trace. The fifteen words of the grid without the corner are the traceless part of the operator space, and they are the six with one index $t$ and the nine with none.
+
 ### The Matrix-Unit Computation
 
 **The algebra's matrix units.** In the Peirce frame, write

@@ -66,6 +66,12 @@ The four matrices $L_{\mathrm{axf},e_\mu}$ are the real signed permutations of *
 
 **The sixteen matrices are real.** Each $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ is a signed permutation matrix, hence real, and the sixteen are independent over $\mathbb{C}$. Their real span is a subspace of $M_4(\mathbb{R})$ of real dimension $16$, which is all of it.
 
+**They are words.** The product of one left matrix with one right matrix is a **word** $W_{\mu\nu}=L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu)$, and $T_{\mu\nu}$ is the same array written with the second name. A word carries a pair of units, so the sixteen words are the sixteen cells of a $4\times4$ grid of pairs, and the real slice of the operator space is spanned by them.
+
+**The words are orthogonal.** $\operatorname{tr}(W_{\mu\nu}^{\mathsf T}W_{\rho\sigma})=4\,\delta_{\mu\rho}\delta_{\nu\sigma}$, and each word is a signed permutation, so the sixteen are a real orthogonal basis of the slice. The proposition below is the same statement read as a projection.
+
+**One word carries the trace, and the deletion splits as nine and six.** Only $W_{tt}=\mathrm I_4$ has a nonzero trace, so the traceless part of the slice is spanned by the fifteen words of the grid without the corner. Of those fifteen, nine are symmetric, the $N_{jk}=\ell_jr_k$ with no index $t$, and six are antisymmetric, the $\ell_k=L_{\mathrm{axf},\vec e_k}$ and $r_k=R_{\mathrm{axf},\vec e_k}$ with one index $t$. The deletion of one word therefore produces the split $15=9+6$, and the inertia $(10,6)$ below is the same split before the deletion: the tenth symmetric element is $W_{tt}$ itself. The table of names is §*The Sixteen Words, and Their Names* of [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html).
+
 **Proposition.** No proper real subspace contains the sixteen, and the expansion $A=\sum q_{\mu\nu}T_{\mu\nu}$ of a real matrix has real coefficients $q_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{\mathsf T}A)$.
 
 **Proof.** Sixteen independent real matrices in a real space of dimension sixteen span it, and each trace is real for real $A$; the formula is the orthogonality $\operatorname{tr}(T_{\mu\nu}^{\mathsf T}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$ read as a projection.

@@ -1,4 +1,4 @@
-# __The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation__
+# __The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation__
 
 ## Introduction
 

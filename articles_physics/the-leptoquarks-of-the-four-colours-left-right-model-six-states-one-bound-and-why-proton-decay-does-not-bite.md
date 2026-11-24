@@ -1,4 +1,4 @@
-# __The Leptoquarks: Six States, One Bound, and Why Proton Decay Does Not Bite__
+# __The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite__
 
 ## Introduction
 
@@ -29,7 +29,7 @@ So the states are forced, unseen, and bounded from below by one flavour-changing
 
 **Not established.** The numerical bound is a coupling statement, and its coefficient is uncertain by a factor of a few. The states have not been seen. Which branch of the diquark fork the frame takes is not decided by the frame.
 
-**Where the rest is.** The fields that produce the six are [The Scalar Sector](the-scalar-sector-twenty-four-real-components-twelve-eaten.html). The step that gives them their mass is [The Breaking Chain](the-breaking-chain-one-flag-three-stabilisers-three-scales.html). Their place in the full list is [Classification of the Bosons](classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html), §*The Spectrum*.
+**Where the rest is.** The fields that produce the six are [The Scalar Sector](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). The step that gives them their mass is [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). Their place in the full list is [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html), §*The Spectrum*.
 
 ## The Six That Are Forced
 
@@ -182,7 +182,7 @@ The measured limit $\tau>2.4\times10^{34}$ yr then requires $M_\Sigma\gtrsim1.60
 
 **13.6 A null problem.** Nothing is contradicted. Six states that should exist and have not been seen is the weakest possible form of failure and also the most persistent: it cannot be repaired by a better calculation, only by raising the scale — and raising it to $1.60\times10^{5}$ J to satisfy a diquark bound makes the states unseeable rather than merely unseen, so that the model's one sharp prediction becomes empty.
 
-**The lower bound is not free.** The absence of a proton-decay bound is not the absence of any bound: $K_L\to\mu e$ does bind, at $4.01\times10^{-5}\ \mathrm{J}$, and the consequences fall in the hierarchy and the running. [The Scalar Sector](the-scalar-sector-twenty-four-real-components-twelve-eaten.html), §*What the Sector Leaves Open*, carries them.
+**The lower bound is not free.** The absence of a proton-decay bound is not the absence of any bound: $K_L\to\mu e$ does bind, at $4.01\times10^{-5}\ \mathrm{J}$, and the consequences fall in the hierarchy and the running. [The Scalar Sector](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html), §*What the Sector Leaves Open*, carries them.
 
 ## The Checks
 
@@ -242,9 +242,9 @@ The six are not adjustable: their charge, their colour and their mass ratio are 
 
 ## Further Reading
 
-- [The Scalar Sector: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-twenty-four-real-components-twelve-eaten.html). The field whose eight real components produce the six, and the twelve scalars that survive.
-- [The Breaking Chain: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-one-flag-three-stabilisers-three-scales.html). The first step, which is the only step where a coloured boson gets a mass.
-- [Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html). The six in the full list, and the neutral sector they do not touch.
+- [The Scalar Sector of the Four Colours Left–Right Model: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). The field whose eight real components produce the six, and the twelve scalars that survive.
+- [The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). The first step, which is the only step where a coloured boson gets a mass.
+- [Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). The six in the full list, and the neutral sector they do not touch.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The number the bound takes, its inputs and its spread.
 - [Lepton Flavour in the Four-Colours Model: Nothing Turns the Lepton](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html). The $K_S$ prediction from the same operator, and why the minimal Yukawa matrix makes the channel vanish.
 - [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html). The $B$ violation this sector supplies, and why it is not enough for baryogenesis.

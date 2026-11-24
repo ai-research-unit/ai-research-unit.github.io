@@ -216,11 +216,11 @@ The verdict. No lepton has been seen to change generation, and the frame's minim
 ## Further Reading
 
 - [The Temporal Dimension: Why the Temporal Unit Is the Identity](the-temporal-dimension-why-the-temporal-unit-is-the-identity.html). Why $e_t$ is the identity, commutes with everything, and is the centre — the algebra behind the temporal/spatial asymmetry used here.
-- [Classification of the Bosons](classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html). The four diagonal cells $t,x,y,z$, and why the lepton line is the temporal one.
+- [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). The four diagonal cells $t,x,y,z$, and why the lepton line is the temporal one.
 - [Charge Quantisation from the Fourth Colour: One Trace, One Third](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The $\mathfrak{su}(3)$ that fixes the unit line, and the $B-L$ eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$.
 - [An Introduction to Flavour: Mass, Lifetime, Decay Pattern, the Three Handles](an-introduction-to-flavour.html). The inertness of the generation index, and the Yukawa as the only free object in the sector.
-- [The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html). Where the matrices are written, and why the one-bidoublet alignment fails.
+- [The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html). Where the matrices are written, and why the one-bidoublet alignment fails.
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The matrix that needs two Yukawas, and the contrast with this sector.
-- [The Leptoquarks: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-six-states-one-bound-and-no-proton-decay.html). The six leptoquarks, the mass relation, and the bound this article makes conditional.
+- [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The six leptoquarks, the mass relation, and the bound this article makes conditional.
 - [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The frame, and the single covariant derivative that has no generation index.
 - [The Excitation Ladder Theory of Flavour](the-excitation-ladder-theory-of-flavour.html). What the mass ratios are made of, given that the minimal Yukawa does not produce them.

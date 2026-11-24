@@ -249,7 +249,7 @@ Three neutral gauge bosons are not three scalars. All three are gauge fields, an
 
 ## Further Reading
 
-- [Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html). The chain, the neutral mass matrix, and the same triple in its own place.
+- [Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). The chain, the neutral mass matrix, and the same triple in its own place.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The photon's coefficients in the three gauge fields, and the value of the angle they produce.
 - [Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The trace that fixes the $B-L$ eigenvalues, and the $B-L$ normalisation behind $\sqrt{2/3}$.
 - [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The group, the sixteen, and the covariant derivative whose neutral part is mixed here.

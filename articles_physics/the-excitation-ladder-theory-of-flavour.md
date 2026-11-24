@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This article classifies nothing. It states one hypothesis about why the fermions come in three copies, and what that hypothesis does and does not explain. The classification of one generation is finished elsewhere, in [The Fermions of One Generation](classification-of-the-fermions-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html). That article names the sixteen cells, the twenty-one bosons and the twelve surviving scalars, and it says nothing about flavour. The separation is deliberate: the classification states a structure, flavour states a spectrum, and a nomenclature that absorbs both stops being a nomenclature.
+This article classifies nothing. It states one hypothesis about why the fermions come in three copies, and what that hypothesis does and does not explain. The classification of one generation is finished elsewhere, in [The Fermions of One Generation](classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html). That article names the sixteen cells, the twenty-one bosons and the twelve surviving scalars, and it says nothing about flavour. The separation is deliberate: the classification states a structure, flavour states a spectrum, and a nomenclature that absorbs both stops being a nomenclature.
 
 The hypothesis is that there are no elementary particles, only fields and their levels of combined excitation. Flavour 1 is the ground level, flavour 2 the first combined level, and flavour 3 the second. The ladder has three rungs: the three copies are the whole of it, and there is no fourth.
 
@@ -260,9 +260,9 @@ The letter $\rho$ carries the mass ratio in this article and is given the subscr
 ## Further Reading
 
 - [An Introduction to Flavour: Mass, Lifetime, Decay Pattern, the Three Handles](an-introduction-to-flavour.html). The phenomena this article theorises, with no theory of them.
-- [The Fermions of One Generation](classification-of-the-fermions-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html). One generation, sixteen cells, three grids, and no flavour.
+- [The Fermions of One Generation](classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html). One generation, sixteen cells, three grids, and no flavour.
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). Why the algebra does not count them.
-- [The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
+- [The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The misalignment between the flavour basis and the mass basis.
 - [Lepton Flavour in the Four-Colours Model: Nothing Turns the Lepton, and One Generation Matrix Decides the Channels](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html). The operator's chiral structure, and the question of the generation matrix that the mass sector leaves open.
 - [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The frame whose module the ladder multiplies.

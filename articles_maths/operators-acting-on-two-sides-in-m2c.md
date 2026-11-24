@@ -33,6 +33,10 @@ $$
 
 *Proof.* In the entry coordinates, left multiplication by $A$ is $\mathrm I_2\otimes A$ and right multiplication by $B$ is $B^{\mathsf T}\otimes\mathrm I_2$; the mixed-product rule of Kronecker products gives the display.
 
+**The words.** A product of one left array with one right array at a pair of units is a **word** $W_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, and here it is $B^{\mathsf T}\otimes A$ with $A=\mathsf M_2(e_\mu)$ and $B=\mathsf M_2(e_\nu)$. So a word is a Kronecker product of two of the four matrices $\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3$, the right unit's in the first slot and the left unit's in the second.
+
+**The sixteen words, and the fifteen.** The words are orthogonal, $\operatorname{tr}(W_{\mu\nu}^{*}W_{\rho\sigma})=4\,\delta_{\mu\rho}\delta_{\nu\sigma}$, because $\operatorname{tr}\bigl((L_AR_B)^{*}L_CR_D\bigr)=\operatorname{tr}(A^{*}C)\operatorname{tr}(B^{*}D)$ and $\operatorname{tr}\bigl(\mathsf M_2(e_\mu)^{*}\mathsf M_2(e_\nu)\bigr)=2\delta_{\mu\nu}$. They are four by four in number, $16$, and they are a basis of the operator algebra. Only $W_{tt}=\mathrm I_4$ has a nonzero trace, so the traceless part of the operator space is spanned by the fifteen words of the grid of pairs without the corner.
+
 **The parametrisation is two-to-one at each point.** The pairs $(A,B)$ and $(\lambda A,\lambda^{-1}B)$ give the same operator for every $\lambda\neq0$, and no other pair does:
 $$
 F_{A,B}=F_{C,D}\iff (C,D)=(\lambda A,\lambda^{-1}B).
