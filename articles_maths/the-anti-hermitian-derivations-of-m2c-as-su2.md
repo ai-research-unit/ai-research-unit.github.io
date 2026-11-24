@@ -6,7 +6,7 @@
 
 The article reads the three generators as the corpus reads them. The isomorphism $\mathsf{M}_2$ sends the vector units to the three matrices $\mathsf{M}_2(\vec e_k)$, and the half of those matrices are the generators; the normalization is the one that *Automorphisms and Derivations of Algebras* fixes at the element level, $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$. The bracket of the halved generators is $[G_1,G_2]=G_3$, with no factor and no sign.
 
-The article gives the three matrices, the three derivations as four-by-four arrays in the basis of the elements, the conjugation table of the rotor on the three generators, the three rotors written out, the dimension ladder, the worked cases and the orbits. Every numeric statement was checked on the arrays.
+The article gives the three matrices twice, once from the Pauli matrices and once as the six axis-free matrices of the multiplication, the three derivations as four-by-four arrays in the basis of the elements, the conjugation table of the rotor on the three generators, the three rotors written out, the dimension ladder, the worked cases and the orbits. Every numeric statement was checked on the arrays.
 
 The article assumes the exponential of the matrix algebra from *The Exponential and the Lie Group Structure of $\mathrm{GL}_2(\mathbb{C})$*, the Lie correspondence of *The Lie Correspondence and the Adjoint Representation*, and the images of the units from the Pauli representation of $M_2(\mathbb{C})$.
 
@@ -28,7 +28,7 @@ $$
 
 and each of the three is anti-Hermitian and traceless. They are the three generators up to the factor $\tfrac12$ of the next section.
 
-**Remark (the images are written as matrices).** The three objects of this article are images of elements, and they are written with their entries. The three names of the model section of the Pauli representation article are not used in the body here, following the rule on the Pauli matrices of *Matrix Representations and Conventions*.
+**Remark (the images are written as matrices).** The three objects of this article are images of elements, and they are written with their entries. The arrays of the Pauli frame are printed once, in §*The Three, From the Pauli Matrices and From the Axis-Free Matrices*, because that section compares the two routes and a reader who is told that the images are $-i\sigma_k$ must be able to see what $\sigma_k$ is; everywhere else the body writes the entries.
 
 ### The Split as One and Two
 
@@ -71,6 +71,52 @@ $$
 | $G_1$ | off-diagonal, both entries $-\tfrac{i}{2}$ | $i$ times real symmetric | $-\tfrac14\mathrm{I}_2$ | $\tfrac14$ |
 | $G_2$ | $-\tfrac12$ and $\tfrac12$ | real antisymmetric | $-\tfrac14\mathrm{I}_2$ | $\tfrac14$ |
 | $G_3$ | diagonal, $-\tfrac{i}{2}$ and $\tfrac{i}{2}$ | $i$ times real symmetric | $-\tfrac14\mathrm{I}_2$ | $\tfrac14$ |
+
+### The Three, From the Pauli Matrices and From the Axis-Free Matrices
+
+**The Pauli matrices.** The three arrays of the Pauli frame, as *$M_2(\mathbb{C})$ Pauli Representation* prints them, and the images of the three vector units under them:
+
+$$
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\qquad
+\mathsf{M}_2(\vec e_k)=-i\sigma_k .
+$$
+
+So the three generators are
+
+$$
+G_1=-\tfrac{i}{2}\sigma_1,\qquad G_2=-\tfrac{i}{2}\sigma_2,\qquad G_3=-\tfrac{i}{2}\sigma_3,
+$$
+
+which is the display of the definition, entry for entry.
+
+**The axis-free matrices.** The same three directions, built from the multiplication instead of from a frame of $\mathbb{C}^2$: the left and the right multiplication by the three vector units, in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the algebra, are the six matrices of *Matrix Representations and Conventions*,
+
+$$
+\ell_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
+\ell_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
+\ell_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+$$
+
+$$
+r_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\quad
+r_y=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\quad
+r_z=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+$$
+
+**Proposition (the axis-free route gives the derivations of this article).** The three arrays
+
+$$
+\tfrac12\bigl(\ell_k-r_k\bigr),\qquad k=x,y,z,
+$$
+
+are the arrays of $\mathrm{ad}_{G_k}$ in the basis $(\mathrm{I}_2,T_1,T_2,T_3)$, so the three matrices printed in §*The Array in the Basis of the Elements* are this route, entry for entry.
+
+**Proof.** $\mathrm{ad}_{G_k}$ is left multiplication by $T_k$ minus right multiplication by $T_k$, halved. The isomorphism $\mathsf{M}_2$ matches the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $(\mathrm{I}_2,T_1,T_2,T_3)$, so left multiplication by $\vec e_k$ and left multiplication by $T_k$ have the same array, and likewise on the right. The two arrays therefore agree on all sixteen entries, checked entry for entry.
+
+**Remark (why the two routes are worth both).** The Pauli route writes the three generators as $2\times2$ matrices and hides the fact that they are three directions of the algebra. The axis-free route writes them as $4\times4$ arrays of the multiplication and shows it: the three arrays are quarter-turns of the three coordinate planes of the element space, they kill the scalar line, and their brackets are read off without a convention for $\sigma_k$.
 
 ### The Commutators
 
@@ -237,6 +283,8 @@ The anti-Hermitian traceless matrices of order two form $\mathfrak{su}(2)$, of r
 
 Each generator gives the derivation $[A,\cdot]$, anti-Hermitian for the Hilbert–Schmidt form, of array with the scalar row and column zero and the spectrum $\{0,0,i,-i\}$. The exponential is the conjugation by $U=e^{\theta G_k}=\cos\tfrac{\theta}{2}\mathrm{I}_2+\sin\tfrac{\theta}{2}T_k$, which turns the three-dimensional space of traceless elements by the angle $\theta$ about the axis $T_k$, right-handed, and fixes the identity and the axis.
 
+The three are written twice over: as $-\tfrac{i}{2}\sigma_k$ from the three arrays of the Pauli frame, and as $\tfrac12(\ell_k-r_k)$ from the six axis-free matrices of the multiplication, the two routes agreeing entry for entry.
+
 The three rotors are the phase mixing $e^{\theta G_1}$, the real rotation $e^{\theta G_2}$ and the pair of opposite phases $e^{\theta G_3}$. The dimension ladder is $8,4,6,3$ at the element level and $32,16,6,3$ at the operator level, and the split of the generators as $1+2$, closed part plus open part, is the split $6+9$ of the fifteen at order four.
 
 ## Summary of Notation
@@ -244,7 +292,9 @@ The three rotors are the phase mixing $e^{\theta G_1}$, the real rotation $e^{\t
 | Symbol | Meaning |
 |---|---|
 | $\mathsf{M}_2$ | the isomorphism from the algebra to $M_2(\mathbb{C})$ |
-| $T_k$ | the image $\mathsf{M}_2(\vec e_k)$ of a vector unit |
+| $\sigma_k$ | the three arrays of the Pauli frame, printed once in the section that compares the two routes |
+| $T_k$ | the image $\mathsf{M}_2(\vec e_k)$ of a vector unit, equal to $-i\sigma_k$ |
+| $\ell_k$, $r_k$ | the axis-free matrices of left and right multiplication by $\vec e_k$ |
 | $G_k$ | the generator $\tfrac12 T_k$ |
 | $\mathrm{ad}_A$ | the derivation $[A,\cdot]$ |
 | $\langle X,Y\rangle$ | the Hilbert–Schmidt form $\operatorname{tr}(X^{*}Y)$ |
@@ -257,7 +307,7 @@ The three rotors are the phase mixing $e^{\theta G_1}$, the real rotation $e^{\t
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $\mathfrak{su}(2)$, the adjoint representation and the inner automorphisms.
 - Roger A. Horn and Charles R. Johnson, *Topics in Matrix Analysis* (Cambridge University Press, 1991), for the Kronecker product and its eigenvalues.
 - [Automorphisms and Derivations of Algebras](automorphisms-and-derivations-of-algebras.md), for the normalization $D_\mu=\tfrac12\mathrm{ad}_{\vec e_\mu}$ and the bracket $[D_1,D_2]=D_3$.
-- [Matrix Representations and Conventions](matrix-representations-conventions.md), for the rule on the Pauli matrices that this article follows.
+- [Matrix Representations and Conventions](matrix-representations-conventions.md), for the axis-free matrices $\ell_k$ and $r_k$ and the rule on the Pauli matrices.
 - [The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$](the-anti-hermitian-derivations-of-the-biquaternion-algebra-as-su2.html), for the same three arrays in the coefficient frame.
 - [The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$](the-anti-hermitian-derivations-of-m4c-as-su4.html), for the fifteen at the next order, built from the same images.
 - [The Exponential and the Lie Group Structure of $\mathrm{GL}_2(\mathbb{C})$](the-exponential-and-the-lie-group-structure-of-gl2c.html), for the exponential of the matrix algebra.

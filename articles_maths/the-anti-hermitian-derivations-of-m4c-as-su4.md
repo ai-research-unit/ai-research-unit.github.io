@@ -58,7 +58,15 @@ $$
 
 **Remark (why the products are sixteen and not fewer).** The sixteen products are the arrays of the sixteen operators $T_{a,b}:X\mapsto aXb$ in the axis-free frame, and those operators are a basis of $\operatorname{End}(\mathbb{B})$. Their arrays have rank sixteen. This is the same count as the operator frame of *The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$*, where the carrier is written as the sixteen products.
 
-### The Six Real Generators
+### The Eight Axis-Free Matrices and the Six Generators
+
+**The eight.** The axis-free frame names eight matrices, four left and four right, and the two scalar ones coincide:
+
+$$
+\ell_t=r_t=\mathrm{I}_4 .
+$$
+
+So the eight are seven distinct matrices, and the two that are the identity are exactly the two that the traceless condition excludes. The six that remain are the six real generators.
 
 The three left matrices, as the conventions article prints them:
 
@@ -94,31 +102,29 @@ $$
 
 ### The Nine Imaginary Generators
 
-The nine products $N_{jk}=\ell_jr_k$ are the symmetric signed permutations
+The nine products $N_{jk}=\ell_jr_k$ are the symmetric real signed permutations, of square $\mathrm{I}_4$, and the nine generators are $i$ times them:
 
 $$
-N_{xx}=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\;
-N_{yy}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\;
-N_{zz}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix},
-$$
-
-$$
-N_{xy}=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},\;
-N_{xz}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\;
-N_{yx}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+iN_{xx}=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},\;\;iN_{yy}=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\;\;iN_{zz}=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&i&0\\0&0&0&-i\end{pmatrix},
 $$
 
 $$
-N_{yz}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\;
-N_{zx}=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\;
-N_{zy}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix}.
+iN_{xy}=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&-i&0&0\\i&0&0&0\end{pmatrix},\;\;iN_{xz}=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},\;\;iN_{yx}=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&-i&0&0\\-i&0&0&0\end{pmatrix},
 $$
+
+$$
+iN_{yz}=\begin{pmatrix}0&i&0&0\\i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\;\;iN_{zx}=\begin{pmatrix}0&0&i&0\\0&0&0&-i\\i&0&0&0\\0&-i&0&0\end{pmatrix},\;\;iN_{zy}=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix}.
+$$
+
+**Remark (the factor $i$ is what makes them generators).** Read without the factor, the nine products $N_{jk}$ are real symmetric of trace zero: they are not anti-Hermitian, so they are not generators. The product by $i$ is what turns each into one, which is why the display above carries it and why the bracket table below writes the nine as $iN_{jk}$ throughout.
 
 **Proposition (all fifteen are involutions up to $i$).** Each of the fifteen satisfies $K^{2}=-\mathrm{I}_4$, so each has the eigenvalues $i,i,-i,-i$ and each is of trace zero.
 
 **Proof.** $\ell_k^{2}=-\mathrm{I}_4$ because $\ell_k$ turns the two coordinate planes $\{t,k\}$ and the remaining pair, each by a quarter turn of the array, and the square of a real quarter turn is minus the identity. The same holds for $r_k$. Each $N_{jk}$ is a symmetric signed permutation with $N_{jk}^{2}=\mathrm{I}_4$, so $(iN_{jk})^{2}=-\mathrm{I}_4$. Four eigenvalues, each of modulus one and of square $-1$, are $\pm i$; the trace is zero, so they are $i,i,-i,-i$.
 
 **Remark (the Cartan is inside the nine).** The three diagonal generators of the basis are $iN_{xx}$, $iN_{yy}$, $iN_{zz}$: they are imaginary diagonal, traceless, and they span the diagonal traceless subspace. The other six of the nine are off-diagonal, and the six real generators have no diagonal entry at all. So the basis of this article puts the Cartan among the nine and puts no Cartan among the six.
+
+**Remark (the count, closed).** Three left matrices, three right matrices and nine entries $iN_{jk}$: fifteen generators, all printed above, none of them borrowed from a frame chosen for the occasion.
 
 **Remark (the ordering of the corpus, not of a textbook).** A textbook basis would single out a Cartan first and then add the roots. This basis does the opposite: the six real generators come from the multiplication itself, and the Cartan appears among the nine as three products. That is what building the generators from the axis-free matrices does, and it is the reason the fifteen here are all of one shape rather than split into weights.
 
@@ -319,7 +325,8 @@ Each generator gives the derivation $[K,\cdot]$, of array $K\otimes\mathrm{I}_4-
 | $L_{\mathrm{axf},\vec e_k}$ | the axis-free left matrix of the vector unit $\vec e_k$ |
 | $R_{\mathrm{axf},\vec e_k}$ | the axis-free right matrix of the vector unit $\vec e_k$ |
 | $\ell_k$, $r_k$ | the short names for the two above |
-| $N_{jk}$ | the product $\ell_jr_k$, a symmetric signed permutation |
+| $N_{jk}$ | the product $\ell_jr_k$, a symmetric signed permutation; the generator is $iN_{jk}$ |
+| $\ell_t$, $r_t$ | the two scalar matrices of the axis-free frame, both $\mathrm{I}_4$ |
 | $D_k$ | $\tfrac12(\ell_k-r_k)$, the derivation $\tfrac12\mathrm{ad}_{\vec e_k}$ |
 | $S_k$ | $\tfrac12(\ell_k+r_k)$, the symmetric combination |
 | $\mathfrak{so}$, $\mathfrak{p}$ | the span of the six and the span of the nine |
