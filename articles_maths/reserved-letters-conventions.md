@@ -12,6 +12,8 @@ A convention is not a description. Nothing in the algebra forces $\theta$ rather
 
 **Eight glyphs carry eight roles, and each is spent once.** An angle is $\theta$, a scale is $\varrho$, a wave number is $\nu$, a wavelength is $\lambda$, and an eigenvalue is $\eta$. The scalar imaginary is $i$, and the material and informational sectors are the uppercase $\Phi$ and $\Psi$. None of the eight carries a second sense, and no other scalar borrows one of them. A scalar that is none of the eight takes $\digamma$ with a subscript that names its sense.
 
+**The eight are the letters that stand alone, and $h$ is not one of them.** A letter that is never written bare, but always with a subscript that names its sense, is outside the eight and conflicts with none of them. The deformation parameter is $h_{\mathrm{def}}$ and the topological entropy is $h_{\mathrm{tpl}}$, two senses told apart by the subscript that each already carries; no third quantity takes $h$, and neither takes it bare.
+
 **Three letters of the physical corpus are not reserved here.** This corpus excludes physics, so $c$, $\tau$ and $m$ keep the senses they have in mathematics: $c$ is a generic constant, $\tau$ a generic parameter, and $m$ a natural number and the second inertia index of $\mathrm{Cl}_{n,m}$ and $O(n,m)$.
 
 ### Angles: $\theta$

@@ -122,7 +122,9 @@ $$
 [\tilde Q_1,\tilde Q_2]_\varsigma=\tilde Q_1\tilde Q_2^{*}-\tilde Q_2\tilde Q_1^{*},
 $$
 
-whose values lie in the anti-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*Symmetric and Antisymmetric Decomposition of the Four General Products*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla_\Phi\tilde\Phi)-(\tilde\nabla_\Phi\tilde\Phi^{*})\tilde\Phi]$.
+whose values lie in the anti-Hermitian part.
+
+**The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*Symmetric and Antisymmetric Decomposition of the Four General Products*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla_\Phi\tilde\Phi)-(\tilde\nabla_\Phi\tilde\Phi^{*})\tilde\Phi]$.
 
 The products themselves — their coordinates, their laws, their units and their images — are *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the grid of the four general products is *The Four General Products and Their Relations over the Biquaternion Algebra*.
 
@@ -160,7 +162,9 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}) , \qquad \langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*} .
 $$
 
-**One letter, two arities.** The four also carry one letter each, $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $\mathrm{Kr}$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one: $P(\tilde Q_1,\tilde Q_2)$ is the plain form and $P(\tilde Q)$ the plain norm, and the same holds for the other three. The plain norm is written $P$ and not $B$, because $B$ is the complex modulus of the vector part, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $B(\tilde Q)$ is the right annihilator of the plain product. **$P$ is the scalar part of the plain product**, with no conjugation on either slot: it is not the plain product, and it is not a reading of $N$. The letters and the four qualified notions of a regular and a degenerate biquaternion are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*.
+**One letter, two arities.** The four also carry one letter each, $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $\mathrm{Kr}$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one: $P(\tilde Q_1,\tilde Q_2)$ is the plain form and $P(\tilde Q)$ the plain norm, and the same holds for the other three. The plain norm is written $P$ and not $B$, because $B$ is the complex modulus of the vector part, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $B(\tilde Q)$ is the right annihilator of the plain product.
+
+**$P$ is the scalar part of the plain product**, with no conjugation on either slot: it is not the plain product, and it is not a reading of $N$. The letters and the four qualified notions of a regular and a degenerate biquaternion are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*.
 
 **The bracket carries the mark that is not the identity in the layer**, and the four brackets collapse two-and-two wherever one mark degenerates. The cases are worked layer by layer in *Norm and Unitary Conventions*, §*The Six Layer Tables*.
 

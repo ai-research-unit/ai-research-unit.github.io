@@ -164,7 +164,9 @@ which for a matrix is $\bigl(\operatorname{tr}(X^{*}X)\bigr)^{1/2}$, the norm th
 
 **Every label is written in lowercase.** The label is set at subscript size, where the case of a two- or a three-letter word is not read reliably, so the corpus writes every one of them in lowercase; the rule is the one that refuses $\mathrm{op}$ beside $\mathrm{opp}$, applied to case instead of to spelling. The bar is the one place where a capital survives, and only there: $\langle A\rangle_*^{1/2}$.
 
-**No label carries a capital.** A capital in that position is a defect, and the corpus writes every label lowercase. **Six codes separate two spellings.** Where one three-letter word carries two English words, the rarer reading takes a code of its own, made the same way and written in the same place: $\mathrm{rgs}$ beside $\mathrm{reg}$, $\mathrm{tpl}$ beside $\mathrm{top}$, $\mathrm{prm}$ beside $\mathrm{per}$, $\mathrm{dfc}$ beside $\mathrm{def}$, $\mathrm{obf}$ beside $\mathrm{orb}$, $\mathrm{adg}$ beside $\mathrm{adj}$. Each of the six names one word only, and a glyph may carry either member of a pair. A code is a label and stands low with the others, on the object it qualifies: $h_{\mathrm{tpl}}$ the topological entropy, $\Lambda_{\mathrm{top}}$ the top exterior power. The twelve algebraic structures carry no code at all: a product is written by its two slots and the conjugation each one carries, $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, and the operator names the structure of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* on its own.
+**No label carries a capital.** A capital in that position is a defect, and the corpus writes every label lowercase.
+
+**Six codes separate two spellings.** Where one three-letter word carries two English words, the rarer reading takes a code of its own, made the same way and written in the same place: $\mathrm{rgs}$ beside $\mathrm{reg}$, $\mathrm{tpl}$ beside $\mathrm{top}$, $\mathrm{prm}$ beside $\mathrm{per}$, $\mathrm{dfc}$ beside $\mathrm{def}$, $\mathrm{obf}$ beside $\mathrm{orb}$, $\mathrm{adg}$ beside $\mathrm{adj}$. Each of the six names one word only, and a glyph may carry either member of a pair. A code is a label and stands low with the others, on the object it qualifies: $h_{\mathrm{tpl}}$ the topological entropy, $\Lambda_{\mathrm{top}}$ the top exterior power. The twelve algebraic structures carry no code at all: a product is written by its two slots and the conjugation each one carries, $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, and the operator names the structure of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* on its own.
 
 **The indexed label is one field.** Where a label and an index name the same object they share one subscript, the label first, $s_{\mathrm{tot},z}$, $\tilde K_{\mathrm{mod},W}$, $\tilde H_{\mathrm{pos},l}$. A part or a role is a label like the others, $\lVert A\rVert_{\mathrm{nuc}}$, $M_{\mathrm{tor}}$, $S_{\mathrm{int}}$, $E_{\mathrm{vac}}$, and so is an operator name written low, $\operatorname{col}A$, $\operatorname{row}A$, $\sum_{\mathrm{cyc}}$.
 
@@ -174,22 +176,17 @@ which for a matrix is $\bigl(\operatorname{tr}(X^{*}X)\bigr)^{1/2}$, the norm th
 | $\mathrm{adj}$ | the adjoint spin of a representation |
 | $\mathrm{aff}$ | the affine Weyl group of a root system |
 | $\mathrm{alg}$ | the algebraic left multiplication |
-| $\mathrm{amp}$ | the amplitude of a forced solution |
-| $\mathrm{app}$ | the apparent transverse speed |
 | $\mathrm{arc}$ | the arc-length parametrisation of a curve |
 | $\mathrm{aut}$ | the automorphism attached to a triple isomorphism |
 | $\mathrm{avg}$ | the group average of a projection |
 | $\mathrm{axf}$ | the axis-free frame |
-| $\mathrm{can}$ | the canonical energy–momentum tensor |
 | $\mathrm{cop}$ | the coproduct of a Hopf algebra |
 | $\mathrm{cov}$ | the universal cover here, the covariant fundamental solution there |
 | $\mathrm{cts}$ | the continuous dual |
 | $\mathrm{def}$ | the defining spin; the deformation stratum |
 | $\mathrm{dfc}$ | the defective part, $\Sigma_{\mathrm{dfc},10}$ |
 | $\mathrm{dif}$ | the difference, or antisymmetrised, product |
-| $\mathrm{epr}$ | the value of the EPR steering parameter |
 | $\mathrm{est}$ | an unbiased estimator |
-| $\mathrm{exp}$ | the experimental value |
 | $\mathrm{ext}$ | the extended affine Weyl group |
 | $\mathrm{fat}$ | the fat Cantor set |
 | $\mathrm{fin}$ | the non-Archimedean places |
@@ -200,33 +197,24 @@ which for a matrix is $\bigl(\operatorname{tr}(X^{*}X)\bigr)^{1/2}$, the norm th
 | $\mathrm{hom}$ | the homogeneous solution of a linear equation |
 | $\mathrm{hyp}$ | the hyperbolic area of a rapidity triangle |
 | $\mathrm{imp}$ | the improvement term of the tensor |
-| $\mathrm{inc}$ | the incident field |
 | $\mathrm{ind}$ | the induced character |
 | $\mathrm{inv}$ | the invariant measure |
 | $\mathrm{iso}$ | the maximal isotropic real plane |
-| $\mathrm{kin}$ | kinetic: the kinetic term, energy, or momentum |
-| $\mathrm{lab}$ | the laboratory frame |
 | $\mathrm{lin}$ | the linearisation |
 | $\mathrm{lor}$ | the Lorentz object, the group or the Green function |
 | $\mathrm{mat}$ | the matrix imaginary, the image of the scalar imaginary |
-| $\mathrm{mhv}$ | the MHV amplitude |
 | $\mathrm{mix}$ | the mixture of a pair of states |
-| $\mathrm{mod}$ | the modified Lagrangian here, the modular Hamiltonian there |
+| $\mathrm{mod}$ | the stable module category, $\underline{\mathrm{mod}}\,A$, and $\mathrm{mod}\,A$ |
 | $\mathrm{mon}$ | the monogenic Fischer operator |
-| $\mathrm{mot}$ | the motional electric field |
 | $\mathrm{new}$ | the new subspace |
 | $\mathrm{nil}$ | the nilpotent direction |
 | $\mathrm{obf}$ | the orbifold Euler characteristic, $\chi_{\mathrm{obf}}$ |
-| $\mathrm{obs}$ | the observed frequency |
 | $\mathrm{odd}$ | the odd part of a graded algebra |
 | $\mathrm{old}$ | the old subspace |
 | $\mathrm{opp}$ | the opposite algebra |
-| $\mathrm{orb}$ | the orbital generators |
 | $\mathrm{out}$ | the outgoing solution |
 | $\mathrm{pau}$ | related to the Pauli matrices |
 | $\mathrm{per}$ | the periodic cyclic complex; the periodic integration domain |
-| $\mathrm{pol}$ | the polarisation vector |
-| $\mathrm{pot}$ | the potential energy |
 | $\mathrm{pre}$ | the presheaf |
 | $\mathrm{prm}$ | the perimeter coefficient, $\mu_{\mathrm{prm}}$ |
 | $\mathrm{red}$ | the reduced object |
@@ -328,7 +316,6 @@ The forms a subscript takes are these.
 
 **The size and the family share one subscript.** A regular matrix carries the size of its array and the letters of its family in the same subscript, the size first and the family after it with no separator: $\mathsf M_{4L}$ and $\mathsf M_{4R}$ for the one-sided families, $\mathsf M_{4LR}$ and $\mathsf M_{4LR\ast}$ for the two-sided one. The family letters keep the italic capitals of the operators $L$ and $R$, against the upright roman of a role label, and the frame closes the same subscript after a comma, $\mathsf M_{4L,\mathrm{pau}}$. A bare size, as in $M_4(\mathbb{C})$, names a matrix algebra and no family.
 
-
 The decorations that may stand in the subscript slot are these: all 450 distinct glyphs of the KaTeX 0.16.9 symbol table, one entry per glyph, with a single command written where several commands draw the same glyph. An entry that takes an argument is shown on $n$, and an entry that is text is written inside \text. The upper-case upsilon is left out: the letter names no object of either corpus, so a subscript that would name one is written in words.
 
 **Binary operators.** ${}_{\pm}$, ${}_{\times}$, ${}_{\div}$, ${}_{\dagger}$, ${}_{\ddagger}$, ${}_{\mp}$, ${}_{\dotplus}$, ${}_{\setminus}$, ${}_{\ast}$, ${}_{\circ}$,
@@ -405,7 +392,9 @@ Beyond the table the slot takes any expression: an upright word, ${}_{\mathrm{to
 
 ## LaTeX and Typesetting
 
-Inline mathematics is written between single dollars and never across a line break; display mathematics between double dollars on lines of their own, indented four spaces inside a list; tables are Markdown tables and never a LaTeX array. A heading that introduces a comparison or a classification is a real `###` heading, and the objects are defined before they are tabulated. **Bold marks the result** in the prose of a Remark or in the lead sentence of a section, the object staying in plain roman: *the subspace **is a commutative Jordan algebra over $\mathbb{R}$ of degree two***; a displayed Theorem, Proposition or Proof is not bolded. The third derivative is `d^3/dt^3`, a gamma contraction is written out, and the characters `|`, `{`, `}`, `<` and `>` inside mathematics need no escaping. A malformed formula is rendered in red rather than reported as an error, so mathematics is checked by eye.
+Inline mathematics is written between single dollars and never across a line break; display mathematics between double dollars on lines of their own, indented four spaces inside a list; tables are Markdown tables and never a LaTeX array. A heading that introduces a comparison or a classification is a real `###` heading, and the objects are defined before they are tabulated.
+
+**Bold marks the result** in the prose of a Remark or in the lead sentence of a section, the object staying in plain roman: *the subspace **is a commutative Jordan algebra over $\mathbb{R}$ of degree two***; a displayed Theorem, Proposition or Proof is not bolded. The third derivative is `d^3/dt^3`, a gamma contraction is written out, and the characters `|`, `{`, `}`, `<` and `>` inside mathematics need no escaping. A malformed formula is rendered in red rather than reported as an error, so mathematics is checked by eye.
 ## Summary
 
 A **label** is the upright roman name of a variant, two or three letters, lowercase, always in the subscript and never in the caret; where an index is already there, the label comes first and the index follows after a comma. A **subscript** takes a single token, so a two-letter label costs a brace. The **caret** carries a power, a conjugation, a transposition and a construction, and neither a label nor an index. Two labels run beside the glyphs: $\mathrm{fop}$ for a Fock operator and $\mathrm{opp}$ for the opposite algebra, read for one another by nobody. No index is raised anywhere in the corpus, and a contraction is a form.

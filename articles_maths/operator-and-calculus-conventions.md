@@ -130,7 +130,7 @@ $$
 \Box_\Phi:=\langle\tilde\nabla_\Phi\rangle_{\natural}=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\bigr)=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2}.
 $$
 
-**The sign is the algebra's.** The gradient and its conjugate differ only in the sign of the three spatial terms, and the temporal unit commutes with the three spatial units, so the mixed derivatives cancel in pairs and each parameter contributes its own second derivative. The temporal term enters twice with $(-i)^2=-1$; each spatial term enters twice with $\vec e_k\vec e_k=-e_t$, and the conjugate factor supplies the opposite sign, so the space sum returns $+e_t\Delta_\Phi$. The product is $e_t$ times $\Delta_\Phi-\partial^2/\partial {r'_t}^2$, its scalar part is that bracket, and that is the coefficient tuple $(-,+,+,+)$ on the material parameters, the tuple the series works in throughout.
+**The sign is the algebra's.** The gradient and its conjugate differ only in the sign of the three spatial terms, and the temporal unit commutes with the three spatial units, so the mixed derivatives cancel in pairs and each parameter contributes its own second derivative. The temporal term enters twice with $(-i)^2=-1$; each spatial term enters twice with $\vec e_k\vec e_k=-e_t$, and the conjugate factor supplies the opposite sign, so the space sum returns $+e_t\Delta_\Phi$. The product is $e_t$ times $\Delta_\Phi-\partial^2/\partial {r'_t}^2$, its scalar part is that bracket, and the four coefficients on the material parameters are $(-,+,+,+)$, the tuple the series works in throughout.
 
 **The operator is scalar.** It multiplies by $e_t$ and acts coefficient by coefficient,
 
@@ -256,7 +256,6 @@ $$
 and the massless case is the same two lines at $m=0$. Every coordinate form written elsewhere in the corpus is a **coordinate form** of these two lines and not a second system.
 
 **The mass is the coupling.** Each line multiplies one chiral part and returns a multiple of the other. $m$ is real and central, it commutes with both gradients, and it is the only term of either line that names the other part.
-
 
 **The composition, and the reason for two lines.** $\tilde\nabla_\Phi^{2}$ is not $\Box_\Phi$: $e_t$ commutes with the three spatial units, so the mixed derivatives survive. Only the composition with the conjugate is scalar, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, so one gradient on one field cannot equal a second-order operator, and the mass is what needs the second field. Composing the two lines gives $(\Box_\Phi-m^{2})\Psi_R=0$ and $(\Box_\Phi-m^{2})\Psi_L=0$.
 

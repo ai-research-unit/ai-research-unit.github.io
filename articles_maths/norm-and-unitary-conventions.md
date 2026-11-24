@@ -104,7 +104,9 @@ The quaternionic norm is the determinant in the $2\times2$ image and is the mult
 
 **The convention is the unit-element convention, and the heading keeps its old name because the corpus cites it by that name.** The glyphs $U$, $\tilde u$ and $\tilde U$, in the three cases of the case rule, mark an element of **norm one**. They do not mark a unitary element: the unitary condition is a different condition, stated at the end of the section.
 
-A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde{Ζ}$, the idempotent $\tilde\Pi_{\mathrm{id}}$ and the nilpotent $\tilde\pi_{\mathrm{nil}}$: the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$.
+A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde{Ζ}$, the idempotent $\tilde\Pi_{\mathrm{id}}$ and the nilpotent $\tilde\pi_{\mathrm{nil}}$: the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$.
+
+**The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$.
 
 **"Norm one" is fixed layer by layer.** The glyphs name no set by themselves, and the layers do not share a norm. The table gives the norm of each layer and the set it cuts out at one.
 
@@ -157,7 +159,11 @@ A boost is a unit element and is not unitary. A unitary element whose determinan
 
 **The case rule splits the glyph**, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.
 
-**The coordinates carry the letter of the unit element**: in $\mathbb{B}$ it is $\tilde U = U_te_t + U_x\vec e_x + U_y\vec e_y + U_z\vec e_z$ with $U_\mu = u_\mu + iu'_\mu$ and vector part $\vec U = \vec u + i\vec u'$; in $\mathbb{H}$ it is $\tilde u = u_te_t + u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$ with real $u_\mu$. **A coordinate carries the label of its direction**, as the base does: the scalar coordinate is $U_t$ and the vector coordinates are $U_x, U_y, U_z$, and likewise $u_t, u_x, u_y, u_z$ for the quaternion-layer element $\tilde u$; a role label is written in the upright roman where the statement names a role. **It is allowed to add subscripts when several unit elements are used**, $\tilde U_1, \tilde U_2$.
+**The coordinates carry the letter of the unit element**: in $\mathbb{B}$ it is $\tilde U = U_te_t + U_x\vec e_x + U_y\vec e_y + U_z\vec e_z$ with $U_\mu = u_\mu + iu'_\mu$ and vector part $\vec U = \vec u + i\vec u'$; in $\mathbb{H}$ it is $\tilde u = u_te_t + u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$ with real $u_\mu$.
+
+**A coordinate carries the label of its direction**, as the base does: the scalar coordinate is $U_t$ and the vector coordinates are $U_x, U_y, U_z$, and likewise $u_t, u_x, u_y, u_z$ for the quaternion-layer element $\tilde u$; a role label is written in the upright roman where the statement names a role.
+
+**It is allowed to add subscripts when several unit elements are used**, $\tilde U_1, \tilde U_2$.
 
 ### The Letters $U$ and $u$ Outside the Layers
 
