@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The Generator Displays in the Four Anti-Hermitian-Derivation Articles — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Executed, on the author&#x27;s instruction: fifteen matrices for and three for, each article built from the axis-free matrices, the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-generator-displays-in-the-four-anti-hermitian-derivation-articles"><strong>Audit: The Generator Displays in the Four Anti-Hermitian-Derivation Articles</strong></h1>
+<p><em>Status of this file.</em> <strong>Executed, on the author's instruction: fifteen matrices for $\mathrm{SU}(4)$ and three for $\mathrm{SU}(2)$, each article built from the axis-free matrices, the $M_2(\mathbb{C})$ article also from the Pauli matrices.</strong> §8 is the record of what was written. The two gaps of §1 are closed: the $M_4(\mathbb{C})$ article now prints fifteen anti-Hermitian generators, and the $M_2(\mathbb{C})$ article prints its three twice.</p>
+<p><em>What this file is for.</em> The four articles promise their generator matrices and print fewer of them: the $M_4(\mathbb{C})$ article prints six real generators and nine real products where it announces fifteen generators, and the $M_2(\mathbb{C})$ article prints its three in one display only, with neither of the two constructions a reader can compare.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>The count is six plus nine.</strong> The fifteen of $\mathfrak{su}(4)$ are $\ell_x,\ell_y,\ell_z$, $r_x,r_y,r_z$, and the nine $iN_{jk}$. Nine of the fifteen are imaginary, and an article that prints $N_{jk}$ prints their real parts only.</li>
+<li><strong>The eight are the axis-free matrices.</strong> $\ell_t,\ell_x,\ell_y,\ell_z$ and $r_t,r_x,r_y,r_z$, with $\ell_t=r_t=\mathrm{I}_4$: eight named, seven distinct.</li>
+<li><strong>At order two there is no axis-free matrix.</strong> The axis-free frame is the order-four regular representation. The three generators of $\mathfrak{su}(2)$ have two displays: $2\times2$ from the Pauli frame, $4\times4$ from the axis-free frame.</li>
+<li><strong>A sigma array in a body section is a violation</strong> of <em>Matrix Representations and Conventions</em>, §<em>The Rule on Pauli and Gamma Matrices</em>. Two articles carry an exemption, and these are not among them.</li>
+<li><strong>The mathematics is not in question.</strong> The fifteen are anti-Hermitian, traceless, of square $-\mathrm{I}_4$, of rank fifteen; verified numerically on the sixteen products.</li>
+</ol>
+<h2 id="1-the-inventory">1. The Inventory</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>what it promises</th>
+<th>what it prints</th>
+<th>what is missing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$</em></td>
+<td>three generators</td>
+<td>$D_x,D_y,D_z$, one display</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td><em>The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</em></td>
+<td>three generators</td>
+<td>$G_1,G_2,G_3$ as $\tfrac12\mathsf{M}_2(\vec e_k)$</td>
+<td>the Pauli display, and the axis-free display</td>
+</tr>
+<tr>
+<td><em>The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$</em></td>
+<td>three generators</td>
+<td>$D_x,D_y,D_z$ halved</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td><em>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</em></td>
+<td>"the fifteen generators out in full"</td>
+<td>six real, and the nine $N_{jk}$ without the factor $i$</td>
+<td>the nine generators $iN_{jk}$, and $\ell_t=r_t=\mathrm{I}_4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The fourth row is the defect. Read as written, the nine matrices of that article are symmetric real signed permutations, so they are not anti-Hermitian and not generators. The factor $i$ sits in the definition and never reaches the page.</p>
+<h2 id="2-what-the-eight-are">2. What the Eight Are</h2>
+<p>The eight axis-free matrices, as <em>Matrix Representations and Conventions</em> prints them:</p>
+<p>$$
+\ell_t=\mathrm{I}_4,\quad
+\ell_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\quad
+\ell_y=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\quad
+\ell_z=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix},
+$$</p>
+<p>$$
+r_t=\mathrm{I}_4,\quad
+r_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},\quad
+r_y=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix},\quad
+r_z=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
+$$</p>
+<p>Seven distinct matrices, because the two scalar ones coincide. The article calls them without printing them, and prints six of the eight.</p>
+<h2 id="3-the-nine-generators-with-the-math38-written">3. The Nine Generators, With the $i$ Written</h2>
+<p>$$
+iN_{xx}=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix},\quad
+iN_{yy}=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix},\quad
+iN_{zz}=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\end{pmatrix},
+$$</p>
+<p>$$
+iN_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;i\\0&amp;0&amp;-i&amp;0\\0&amp;-i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\end{pmatrix},\quad
+iN_{xz}=\begin{pmatrix}0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;-i\\-i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\end{pmatrix},\quad
+iN_{yx}=\begin{pmatrix}0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\\0&amp;-i&amp;0&amp;0\\-i&amp;0&amp;0&amp;0\end{pmatrix},
+$$</p>
+<p>$$
+iN_{yz}=\begin{pmatrix}0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\end{pmatrix},\quad
+iN_{zx}=\begin{pmatrix}0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\\i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\end{pmatrix},\quad
+iN_{zy}=\begin{pmatrix}0&amp;-i&amp;0&amp;0\\-i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\end{pmatrix}.
+$$</p>
+<h2 id="4-the-three-at-order-two-two-ways">4. The Three at Order Two, Two Ways</h2>
+<p><strong>The Pauli display.</strong> With $\mathsf{M}_2$ the isomorphism of <em>$M_2(\mathbb{C})$ Pauli Representation</em>,
+$$
+\mathsf{M}_2(\vec e_x)=-i\sigma_1,\qquad \mathsf{M}_2(\vec e_y)=-i\sigma_2,\qquad \mathsf{M}_2(\vec e_z)=-i\sigma_3,
+$$
+so the three generators are
+$$
+G_1=-\tfrac{i}{2}\sigma_1=\begin{pmatrix}0&amp;-\tfrac{i}{2}\\-\tfrac{i}{2}&amp;0\end{pmatrix},\quad
+G_2=-\tfrac{i}{2}\sigma_2=\begin{pmatrix}0&amp;-\tfrac12\\\tfrac12&amp;0\end{pmatrix},\quad
+G_3=-\tfrac{i}{2}\sigma_3=\begin{pmatrix}-\tfrac{i}{2}&amp;0\\0&amp;\tfrac{i}{2}\end{pmatrix}.
+$$</p>
+<p><strong>The axis-free display.</strong> The same three as the $4\times4$ arrays of the regular representation,
+$$
+D_k=\tfrac12(\ell_k-r_k),
+$$
+which is the display the two companion articles print, and which is the array of the derivation in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>generator</th>
+<th>Pauli, $2\times2$</th>
+<th>axis-free, $4\times4$</th>
+<th>the same array under $\mathsf{M}_2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the first</td>
+<td>$-\tfrac{i}{2}\sigma_1$</td>
+<td>$D_x$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the second</td>
+<td>$-\tfrac{i}{2}\sigma_2$</td>
+<td>$D_y$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the third</td>
+<td>$-\tfrac{i}{2}\sigma_3$</td>
+<td>$D_z$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The identification is exact because $\mathsf{M}_2(\vec e_t)=\mathrm{I}_2$, so the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ maps to $(\mathrm{I}_2,T_1,T_2,T_3)$ and $\ell_k$, $r_k$ become the left and right multiplications by $T_k$ there.</p>
+<h2 id="5-the-conflict">5. The Conflict</h2>
+<p><em>Matrix Representations and Conventions</em>, §<em>The Rule on Pauli and Gamma Matrices</em>: the arrays $\sigma_k$ and $\gamma_\mu$ are forbidden in a body section, the exemption belongs to the two Pauli-representation articles, and "a sigma in one is still a violation". The two articles audited here are not exempt. So §4's first display needs the author's explicit override to enter a body section; without it, the compliant sentence is "$G_k=-\tfrac{i}{2}\sigma_k$, with $\sigma_k$ the Pauli frame of <em>$M_2(\mathbb{C})$ Pauli Representation</em>", which names the frame and prints no array.</p>
+<h2 id="6-the-strategy">6. The Strategy</h2>
+<p>Three insertions, and nothing else.</p>
+<p><strong>In the $M_4(\mathbb{C})$ article.</strong> Add a subsection <em>The Eight Axis-Free Matrices</em> before <em>The Six Real Generators</em>, printing $\ell_t=r_t=\mathrm{I}_4$ beside the six, and state the count: eight named, seven distinct, of which six are the generators. Then replace the nine $N_{jk}$ by the nine $iN_{jk}$ of §3, with the sentence that $N_{jk}$ is the real part and the generator is $i$ times it. No row of the bracket table changes: the table already writes its nine as $iN_{jk}$, and the printed display is the only place where the factor $i$ was lost.</p>
+<p><strong>In the $M_2(\mathbb{C})$ article.</strong> Add a subsection <em>The Three Generators, Two Ways</em> after the definition, with the two displays of §4 and the table of §4, and one sentence that the second display is the array the two companion articles print.</p>
+<p><strong>In both.</strong> One check afterwards: no $\sigma$ outside the sentence that names the frame, unless the override is given; dollar parity; the eight and the fifteen both present; the table of §1 reread.</p>
+<h2 id="7-the-two-questions">7. The Two Questions</h2>
+<ol>
+<li><strong>Does "eight" name the eight axis-free matrices</strong> $\ell_t,\ell_x,\ell_y,\ell_z,r_t,r_x,r_y,r_z$, or does it name the fifteen generators, of which the nine imaginary ones are the missing ones? §6 does both, so the answer only decides the emphasis.</li>
+<li><strong>Does the Pauli array enter the body</strong> of the $M_2(\mathbb{C})$ article, overriding §<em>The Rule on Pauli and Gamma Matrices</em>, or does the body name the frame and point at <em>$M_2(\mathbb{C})$ Pauli Representation</em>, which prints the three arrays?</li>
+</ol>
+<h2 id="8-the-record">8. The Record</h2>
+<p><strong>$M_4(\mathbb{C})$, in <em>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</em>.</strong> The nine displays carry the factor $i$: <code>iN_{jk}</code>, not <code>N_{jk}</code>, so the fifteen printed matrices are fifteen generators. A remark states that the product without the factor is real symmetric and is not a generator. The subsection <em>The Eight Axis-Free Matrices and the Six Generators</em> opens with $\ell_t=r_t=\mathrm{I}_4$, the count of eight named and seven distinct, and the reason the two identities are excluded. The notation table gains $\ell_t=r_t=\mathrm{I}_4$ and the reading of $N_{jk}$ as the real part of the generator.</p>
+<p><strong>$M_2(\mathbb{C})$, in <em>The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</em>.</strong> The subsection <em>The Three, From the Pauli Matrices and From the Axis-Free Matrices</em> prints $\sigma_1,\sigma_2,\sigma_3$ with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, then $G_k=-\tfrac{i}{2}\sigma_k$, then the six axis-free matrices $\ell_k,r_k$, then the proposition $\mathrm{ad}_{G_k}=\tfrac12(\ell_k-r_k)$. The notation table gains $\sigma_k$ and $\ell_k,r_k$; the summary records the two routes.</p>
+<p><strong>The check on the printed text.</strong> The blocks were parsed back out of both files and read as matrices: in the $M_4(\mathbb{C})$ article fifteen blocks, all anti-Hermitian, all traceless, all of square $-\mathrm{I}_4$, of rank fifteen, and the nine equal $i\ell_jr_k$ on all nine pairs. In the $M_2(\mathbb{C})$ article the six axis-free blocks equal the six printed at order four, the three derivation arrays equal $\tfrac12(\ell_k-r_k)$, the three Pauli blocks are Hermitian, unitary and traceless, and $G_k=-\tfrac{i}{2}\sigma_k$ holds. Every link resolves, dollar parity is even on every line, no proof mark survives.</p>
+<p><strong>The one deviation from a convention.</strong> The $\sigma$ arrays are printed in a body section of the $M_2(\mathbb{C})$ article, on the author's instruction. §<em>The Rule on Pauli and Gamma Matrices</em> of <em>Matrix Representations and Conventions</em> confines that display to the two articles whose subject is the Pauli display. The article declares the exception in its own remark, so a later reader sees it. Reverting is one edit: the display becomes the sentence "$G_k=-\tfrac{i}{2}\sigma_k$, with $\sigma_k$ the Pauli frame of <em>$M_2(\mathbb{C})$ Pauli Representation</em>".</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
