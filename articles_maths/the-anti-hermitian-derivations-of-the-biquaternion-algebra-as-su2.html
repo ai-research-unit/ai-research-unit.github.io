@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$ — Biquaternion Universe</title>
+  <meta name="description" content="Two conditions pick out the generators: anti-Hermitian and scalar-free. On the algebra they are the real vectors, of real dimension three. Each real…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-anti-hermitian-derivations-of-the-biquaternion-algebra-as-math0"><strong>The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Two conditions pick out the generators: anti-Hermitian and scalar-free. On the algebra they are the real vectors, of real dimension three. Each real vector $v$ gives the inner derivation $\mathrm{ad}_v=L_v-R_v$, which is anti-Hermitian for the Hermitian form, satisfies the Leibniz rule, and has $\mathrm{ad}_v(w)=2\,v\times w$ on the vector part. The three derivations $\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y},\mathrm{ad}_{\vec e_z}$ are the whole anti-Hermitian derivation set, and under the bracket they form $\mathfrak{su}(2)$.</strong></p>
+<p>The exponential of each generator is a conjugation by a rotor: $e^{\theta\,\mathrm{ad}_v}=\mathrm{Ad}_{\rho}$ with $\rho=e^{\theta v}$. Each of the three generators does one thing. It fixes the scalar line, fixes its own axis, and turns the plane of the other two axes by twice the angle of the rotor. The doubling is the factor $2$ in $\mathrm{ad}_v=2[v\times]$; it is the single most concrete thing to check, and the arrays below show it.</p>
+<p>The article gives the three generators as explicit $4\times4$ arrays, the bracket table, the exponential of each generator written out entry by entry, and the action of each rotor on the four parts of the algebra. It also states the dimension ladder of the operator level, which is the part the element-level statement leaves out.</p>
+<p>The article assumes the conventions of <em>Algebra and Element Conventions</em>, the adjoint rules of <em>Adjoint Pair of $L$ and $R$ Operators</em>, and the element-level closed form of <em>The Exponential of the Traceless Anti-Hermitian Part: Determinant One, Unitarity and the Rotation</em>. The coefficient basis is $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^{2}=-e_t$.</p>
+<h2 id="the-two-conditions-on-the-element">The Two Conditions on the Element</h2>
+<h3 id="anti-hermitian-and-scalar-free">Anti-Hermitian and Scalar-Free</h3>
+<p>An element is $Q=Q_te_t+\vec Q$, with $\vec Q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$. The Hermitian conjugation reverses the vector coefficients and conjugates all four,</p>
+<p>$$
+Q^{*}=\bar Q_te_t-\bar q_x\vec e_x-\bar q_y\vec e_y-\bar q_z\vec e_z ,
+$$</p>
+<p>and the anti-Hermitian sign is its negative, $Q^{\flat}=-Q^{*}$.</p>
+<p><strong>Proposition (the anti-Hermitian elements).</strong> The condition $Q^{*}=-Q$ holds exactly when $Q_t$ is purely imaginary and $q_x,q_y,q_z$ are real. These elements form $\mathbb{B}_{\Phi}$, of real dimension four.</p>
+<p><strong>Proof.</strong> The scalar coefficient of $Q^{*}+Q$ is $\bar Q_t+Q_t$, so the condition is the vanishing of the real part of $Q_t$. The vector coefficient of $\vec e_k$ is $-\bar q_k+q_k$, so the condition is the vanishing of the imaginary part of each $q_k$. The four free real parameters are $\operatorname{Im}Q_t$ and the three $q_k$.</p>
+<p><strong>Proposition (the scalar-free part).</strong> Add $Q_t=0$. The two conditions then hold exactly for the real vectors</p>
+<p>$$
+v=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z,\qquad q_x,q_y,q_z\in\mathbb{R},
+$$</p>
+<p>which form $\mathbb{B}_{\Phi}\cap\mathbb{B}_{V}$, of real dimension three.</p>
+<p><strong>Proof.</strong> With $Q_t=0$ the scalar condition holds, and the vector condition is the reality of the three coefficients.</p>
+<p><strong>Remark (the two conditions are independent over $\mathbb{C}$ and nested over $\mathbb{R}$).</strong> The element $ie_t$ is anti-Hermitian and not scalar-free, so the second condition does not follow from the first over $\mathbb{C}$. Over $\mathbb{R}$ the scalar part of an anti-Hermitian element is real and purely imaginary at once, so it vanishes, and the second condition is automatic. The circle $i\mathbb{R}e_t$ is the direction that only the complex algebra adds.</p>
+<p><strong>Remark (the names).</strong> On an element the second condition is not a trace. <em>Algebra and Element Conventions</em> fixes the element-level name, <em>scalar-free</em>, and the trace symbol appears only on a named array. The operator that carries the condition is the inner derivation, and its condition is the Leibniz rule. The ladder of subspaces is</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>condition one</th>
+<th>condition two</th>
+<th>real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>none</td>
+<td>none</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{V}$, the vectors</td>
+<td>none</td>
+<td>$Q_t=0$, scalar-free</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$, the anti-Hermitian elements</td>
+<td>$Q^{*}=-Q$</td>
+<td>none</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}\cap\mathbb{B}_{V}$, the real vectors</td>
+<td>$Q^{*}=-Q$</td>
+<td>$Q_t=0$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two middle rows are of different kinds. $\mathbb{B}_{V}$ is a complex subspace, of real dimension six; $\mathbb{B}_{\Phi}$ is a real subspace, of real dimension four. They meet in the real vectors, of real dimension three, so their sum has real dimension</p>
+<p>$$
+6+4-3=7 ,
+$$</p>
+<p>and it misses exactly one direction, the real scalar line $\mathbb{R}e_t$. So the algebra is the sum plus that line, $8=7+1$, and the five numbers $8,6,4,3,7$ are consistent with each other. A reader who adds the two middle rows without subtracting the intersection gets $10$ and must not: the two subspaces are not complementary, and their sum is not the whole algebra.</p>
+<h3 id="the-element-exponential">The Element Exponential</h3>
+<p><strong>Proposition (the rotor).</strong> For a real vector $v$ of norm $r$, with $\hat v=v/r$,</p>
+<p>$$
+e^{\theta v}=\cos(\theta r)\,e_t+\sin(\theta r)\,\hat v ,
+$$</p>
+<p>a unit element of the algebra.</p>
+<p><strong>Proof.</strong> $v^{2}=-r^{2}e_t$, so the series splits into the even part $\cos(\theta r)e_t$ and the odd part $\sin(\theta r)v/r$. The norm of the sum is $\cos^{2}+\sin^{2}=1$ because the scalar part and the vector part are orthogonal for the norm form.</p>
+<p><strong>Corollary.</strong> The element $\rho=e^{\theta v}$ is a rotor. Its $2\times2$ image is unitary of determinant one, and its conjugation action on the vector part is the rotation of angle $2\theta r$ about $\hat v$.</p>
+<p><strong>Proof.</strong> The image of a unit element is unitary and its determinant is the norm. The double angle is <em>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</em>.</p>
+<h2 id="the-three-generators">The Three Generators</h2>
+<p><strong>The normalization.</strong> The corpus writes the basis of the derivation algebra as $D_\mu=\tfrac12\mathrm{ad}_{\vec e_\mu}$, so that the structure constants come out as $\epsilon_{\mu\nu\lambda}$; that is the convention of <em>Automorphisms and Derivations of Algebras</em>. The article follows it, and every array below is the array of $D_k$ rather than of $\mathrm{ad}_{\vec e_k}=2D_k$.</p>
+<h3 id="the-arrays">The Arrays</h3>
+<p><strong>Definition.</strong> The generator is</p>
+<p>$$
+D_k:=\tfrac12\bigl(L_{\mathrm{axf},\vec e_k}-R_{\mathrm{axf},\vec e_k}\bigr),
+$$</p>
+<p>the half-difference of the two axis-free matrices that <em>Matrix Representations and Conventions</em> prints. With the four coordinates read in the order $e_t,\vec e_x,\vec e_y,\vec e_z$,</p>
+<p>$$
+D_x=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\quad
+D_y=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\quad
+D_z=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}.
+$$</p>
+<p><strong>Proposition (the three arrays are complete).</strong> The three are linearly independent over $\mathbb{R}$, each is anti-Hermitian and of zero trace, and together they span every anti-Hermitian derivation of the algebra.</p>
+<p><strong>Proof.</strong> The independence is read off the three disjoint $2\times2$ blocks, one per generator. Each block is real and antisymmetric, so each array is minus its transpose and has zero diagonal. For completeness: $(\mathrm{ad}_a)^{*}=\mathrm{ad}_{a^{*}}$, so an anti-Hermitian derivation has an anti-Hermitian generator, and the anti-Hermitian generators modulo the centre $i\mathbb{R}e_t$ are the three real vector directions; the factor $\tfrac12$ changes none of this.</p>
+<p><strong>Remark (the first row and column vanish).</strong> Every entry in the first row and the first column is zero, because the derivation kills the scalar line, $\mathrm{ad}_v(e_t)=0$. The scalar line is fixed by all three generators.</p>
+<p><strong>Remark (the arrays are three of the fifteen of the next level).</strong> With $\ell_k=L_{\mathrm{axf},\vec e_k}$ and $r_k=R_{\mathrm{axf},\vec e_k}$, the array is $D_k=\tfrac12(\ell_k-r_k)$, and the six matrices $\ell_k,r_k$ are the six real generators of $\mathfrak{su}(4)$ in <em>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</em>. So the three generators of this article are the anti-diagonal combinations of that six, and the reader who wants to see them inside the fifteen has only to subtract.</p>
+<h3 id="the-bracket">The Bracket</h3>
+<p><strong>Proposition (the structure constants).</strong> The bracket of the three generators is</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$[D_x,D_y]$</td>
+<td>$D_z$</td>
+</tr>
+<tr>
+<td>$[D_y,D_z]$</td>
+<td>$D_x$</td>
+</tr>
+<tr>
+<td>$[D_z,D_x]$</td>
+<td>$D_y$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The map $a\mapsto\mathrm{ad}_a$ is a Lie algebra homomorphism, and $[\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y}]=\mathrm{ad}_{[\vec e_x,\vec e_y]}=\mathrm{ad}_{2\vec e_z}=2\mathrm{ad}_{\vec e_z}$, because the basis vectors anticommute. Halving all three gives $[D_x,D_y]=D_z$, and the other rows are cyclic.</p>
+<p><strong>Remark (where the factor two went).</strong> The factor $2$ is a property of $\mathrm{ad}$ and not of the algebra: $[\vec e_x,\vec e_y]=2\vec e_z$ carries it, and the normalization $D_\mu=\tfrac12\mathrm{ad}_{\vec e_\mu}$ puts it away. Written with $\mathrm{ad}$ the table reads $[\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y}]=2\mathrm{ad}_{\vec e_z}$, which is the same statement.</p>
+<h3 id="each-generator-turns-one-plane">Each Generator Turns One Plane</h3>
+<p><strong>Proposition (the action on the basis).</strong> The three generators act on the four basis elements by</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>generator</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D_x$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
+</tr>
+<tr>
+<td>$D_y$</td>
+<td>$0$</td>
+<td>$-\vec e_z$</td>
+<td>$0$</td>
+<td>$\vec e_x$</td>
+</tr>
+<tr>
+<td>$D_z$</td>
+<td>$0$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Evaluate $vX-Xv$ on the four basis elements and halve. For the first row, $\vec e_x\vec e_y=\vec e_z$ and $\vec e_y\vec e_x=-\vec e_z$, so the half-difference is $\vec e_z$; and $\vec e_x\vec e_z=-\vec e_y$, $\vec e_z\vec e_x=\vec e_y$, so the half-difference is $-\vec e_y$. The other rows are the same computation permuted cyclically.</p>
+<p><strong>Corollary (one plane each, unit rate).</strong> Each generator fixes its own axis and turns the plane of the other two axes, with the coefficient $1$. In cyclic order $x\to y\to z\to x$ the generator $D_a$ is the quarter-turn of the plane spanned by the two following vectors.</p>
+<p><strong>Proof.</strong> The table shows the axis of $D_a$ fixed and the other two exchanged with the coefficients $\pm1$, which are the entries of the quarter-turn $R$ of that plane in the cyclic orientation.</p>
+<p><strong>Remark (the vanishing planes).</strong> The kernel of $D_x$ is the span of $e_t$ and $\vec e_x$, of complex dimension two. The other two generators have the analogous kernel. The intersection of the three kernels is the scalar line, and the sum of the three kernels is the whole algebra: a derivation sees only the part of an element that does not commute with the generator.</p>
+<h3 id="the-derivation-algebra-and-its-real-form">The Derivation Algebra and Its Real Form</h3>
+<p><strong>Proposition (six and three).</strong> The derivations of the algebra form a complex vector space of dimension three and a real Lie algebra of dimension six, isomorphic to $\mathfrak{sl}_2(\mathbb{C})$ as a real Lie algebra. The anti-Hermitian ones among them form the real form $\mathfrak{su}(2)$, of real dimension three.</p>
+<p><strong>Proof.</strong> The derivations of a full matrix algebra are the inner ones, and the inner ones are the algebra modulo its centre, of complex dimension $4-1=3$. Over $\mathbb{R}$ that is six. The anti-Hermitian condition selects the real vector directions by the corollary above, and the bracket of three real combinations closes with real constants by the bracket table.</p>
+<h2 id="the-operator-and-its-two-conditions">The Operator and Its Two Conditions</h2>
+<h3 id="the-derivation-and-the-leibniz-rule">The Derivation and the Leibniz Rule</h3>
+<p><strong>Proposition (Leibniz holds).</strong> For all $X,Y$ in the algebra, $\mathrm{ad}_a(XY)=\mathrm{ad}_a(X)Y+X\,\mathrm{ad}_a(Y)$.</p>
+<p><strong>Proof.</strong> $aXY-XYa=(aX-Xa)Y+X(aY-Ya)$ after the two middle terms are inserted and cancelled. Associativity is the only input.</p>
+<p><strong>Remark (the one-sided multipliers fail, exactly).</strong> $L_v$ and $R_v$ are anti-Hermitian and have arrays of zero trace, and neither is a derivation. Take $v=\vec e_x$, $X=\vec e_y$, $Y=\vec e_z$. Then $XY=\vec e_x$ and $L_v(XY)=-e_t$, while $L_v(X)Y+XL_v(Y)=\vec e_z\vec e_z+\vec e_y(-\vec e_y)=-e_t+e_t=0$. The residual is $e_t$, of norm one. On the same triple $R_v$ fails by the same margin, and the commutator passes because the two failures are equal and opposite.</p>
+<p><strong>Proposition (the adjoint rules).</strong> For $\langle X,Y\rangle=\operatorname{Sc}(X^{*}Y)$ one has $(L_a)^{*}=L_{a^{*}}$, $(R_b)^{*}=R_{b^{*}}$ and $(\mathrm{ad}_a)^{*}=\mathrm{ad}_{a^{*}}$.</p>
+<p><strong>Proof.</strong> $\langle L_aX,Y\rangle=\operatorname{Sc}(X^{*}a^{*}Y)=\langle X,L_{a^{*}}Y\rangle$. On the right, $(Xb)^{*}=b^{*}X^{*}$, so $\langle Xb,Y\rangle=\operatorname{Sc}(b^{*}X^{*}Y)=\operatorname{Sc}(X^{*}Yb^{*})=\langle X,R_{b^{*}}Y\rangle$ by the cyclic invariance of the scalar part.</p>
+<h3 id="the-dimension-ladder">The Dimension Ladder</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>set</th>
+<th>defining condition</th>
+<th>real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{End}(\mathbb{B})$, all operators</td>
+<td>none</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>anti-Hermitian operators</td>
+<td>$F^{*}=-F$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>derivations</td>
+<td>Leibniz rule</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>anti-Hermitian derivations</td>
+<td>both</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>the multipliers $L$ and $R$</td>
+<td>one side only</td>
+<td>$14$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row counts the span of $L(\mathbb{B})$ and $R(\mathbb{B})$, which is $4+4-1=7$ complex dimensions because the two copies meet in the scalars, so $14$ real. The two sums in the table are not the same kind of count: the derivations are $6$ because the algebra has complex dimension four and loses its centre, and the real form is $3$ because the trace form is definite on the vector part.</p>
+<p><strong>Remark (the ladder at a glance).</strong> $32\to16\to3$ along the anti-Hermitian branch, $32\to6\to3$ along the derivation branch, and the two branches meet in the three. The anti-Hermitian branch is the larger one by far: unitarity of the exponential is a weak condition, and the Leibniz rule is the strong one.</p>
+<h2 id="the-exponential-of-each-generator">The Exponential of Each Generator</h2>
+<h3 id="the-closed-form">The Closed Form</h3>
+<p><strong>Lemma (the square).</strong> Let $v$ be a real vector of norm $r$, let $D_v=\tfrac12\mathrm{ad}_v$, and let $P$ be the orthogonal projection of the vector part onto the plane orthogonal to $v$. Then $D_v$ kills $\operatorname{span}\{e_t,v\}$ and $(D_v)^{2}=-r^{2}P$ on the plane.</p>
+<p><strong>Proof.</strong> $e_t$ is central and $v$ commutes with itself. On $w\perp v$ one has $\mathrm{ad}_v(w)=2v\times w$, so $D_v(w)=v\times w$, which stays in the plane; applying it twice gives $v\times(v\times w)=-r^{2}w$.</p>
+<p><strong>Theorem (the exponential).</strong> With $\hat v=v/r$ and $D_v=\tfrac12\mathrm{ad}_v$,</p>
+<p>$$
+e^{\theta D_v}=\mathrm{id}_{\,\operatorname{span}\{e_t,v\}}+\cos(\theta r)\,P+\sin(\theta r)\,(\hat v\times)P .
+$$</p>
+<p><strong>Proof.</strong> The operator splits into its parts on two invariant subspaces, which commute; the first part is zero, and the second has square $-r^{2}$, so the series is the cosine and the sine of $\theta r$.</p>
+<p><strong>Remark (the angle is the angle).</strong> With the normalization $D_\mu=\tfrac12\mathrm{ad}_{\vec e_\mu}$ the parameter $\theta$ of the array is the angle through which the coordinate plane turns. With $\mathrm{ad}$ the same rotation reads $2\theta$, and with the element $\rho=e^{\theta v}$ it reads $2\theta r$. The three parameters differ by the two factors that the corpus puts into the normalization and into the double cover, and the array is the object whose angle is the plain one.</p>
+<h3 id="the-three-rotors-written-out">The Three Rotors, Written Out</h3>
+<p><strong>Corollary (the three arrays, exponentiated).</strong> With $c=\cos\theta$ and $s=\sin\theta$,</p>
+<p>$$
+e^{\theta D_x}=
+\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;c&amp;-s\\0&amp;0&amp;s&amp;c\end{pmatrix},\quad
+e^{\theta D_y}=
+\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;c&amp;0&amp;s\\0&amp;0&amp;1&amp;0\\0&amp;-s&amp;0&amp;c\end{pmatrix},\quad
+e^{\theta D_z}=
+\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;c&amp;-s&amp;0\\0&amp;s&amp;c&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}.
+$$</p>
+<p><strong>Proof.</strong> Each generator is a block $R$ with $R$ the quarter-turn of a real plane, and $\exp(\theta R)=c\,\mathrm{I}_2+s\,R$ on that block, with the identity on the two fixed coordinates.</p>
+<p><strong>Remark (read the three arrays against the table).</strong> The $x$-generator leaves the $t$ and $x$ coordinates alone and moves the $(y,z)$ pair counterclockwise. The $y$-generator leaves $t$ and $y$ alone and moves the $(z,x)$ pair. The $z$-generator leaves $t$ and $z$ alone and moves the $(x,y)$ pair.</p>
+<h3 id="what-each-generator-does">What Each Generator Does</h3>
+<p><strong>Proposition (the rotor action, generator by generator).</strong> Exponentiated, the three generators do the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>generator</th>
+<th>fixed</th>
+<th>turned</th>
+<th>angle</th>
+<th>rotor behind it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D_x$</td>
+<td>$\mathbb{C}e_t$, $\mathbb{C}\vec e_x$</td>
+<td>plane of $\vec e_y,\vec e_z$</td>
+<td>$\theta$</td>
+<td>$e^{\tfrac{\theta}{2}\vec e_x}$</td>
+</tr>
+<tr>
+<td>$D_y$</td>
+<td>$\mathbb{C}e_t$, $\mathbb{C}\vec e_y$</td>
+<td>plane of $\vec e_z,\vec e_x$</td>
+<td>$\theta$</td>
+<td>$e^{\tfrac{\theta}{2}\vec e_y}$</td>
+</tr>
+<tr>
+<td>$D_z$</td>
+<td>$\mathbb{C}e_t$, $\mathbb{C}\vec e_z$</td>
+<td>plane of $\vec e_x,\vec e_y$</td>
+<td>$\theta$</td>
+<td>$e^{\tfrac{\theta}{2}\vec e_z}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The fixed lines and the turned plane are the kernel and the non-trivial part of the lemma. The rotor is $e^{\theta v/2}$ with $v=\vec e_k$, which is the element whose derivation parameter is $\theta$, and whose angle on the vector plane is $\theta$ by the double cover.</p>
+<p><strong>Corollary (the rotor is the conjugation).</strong> $e^{\theta D_v}=\mathrm{Ad}_{\rho}$ with $\rho=e^{\theta v/2}$, and its array is the two-sided operator $T_{\rho,\rho^{-1}}=L_\rho R_{\rho^{-1}}$.</p>
+<p><strong>Proof.</strong> $L_vR_v=R_vL_v$, so $e^{\theta(L_v-R_v)/2}=L_{\rho}R_{\rho^{-1}}$ with $\rho=e^{\theta v/2}$, and that operator sends $X$ to $\rho X\rho^{-1}$.</p>
+<p><strong>Remark (the periods, one for each object).</strong> The array has period $2\pi$ in $\theta$, because $e^{2\pi D}=\mathrm{I}_4$; at $\theta=\pi$ it is $\operatorname{diag}(1,1,-1,-1)$ up to the choice of axis. The derivation $\mathrm{ad}$ has period $\pi$ in its own parameter, and the element $\rho=e^{\theta v/2}$ has period $4\pi$ in $\theta$ and period $2\pi$ in the element parameter. Three objects, three periods, and the one that is a sign is the element.</p>
+<p><strong>Remark (the invariants of the array).</strong> The spectrum of each generator is $\{0,0,i,-i\}$; the trace is zero; the exponential is unitary of determinant one and lies in $\mathrm{SU}(4)$.</p>
+<p><strong>Proof.</strong> The block $R$ has the eigenvalues $\pm i$ and the two fixed directions give the two zeros. The trace of a commutator vanishes, and $\det e^{F}=e^{\operatorname{tr}F}=1$.</p>
+<h3 id="the-rotor-acts-on-the-four-parts">The Rotor Acts on the Four Parts</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>part of the algebra</th>
+<th>real dimension</th>
+<th>under $\mathrm{Ad}_\rho$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the scalar line $\mathbb{C}e_t$</td>
+<td>$2$</td>
+<td>fixed</td>
+</tr>
+<tr>
+<td>the vector subspace $\mathbb{B}_{V}$</td>
+<td>$6$</td>
+<td>preserved</td>
+</tr>
+<tr>
+<td>the line $\mathbb{C}v$</td>
+<td>$2$</td>
+<td>fixed</td>
+</tr>
+<tr>
+<td>the plane orthogonal to $v$ in $\mathbb{B}_{V}$</td>
+<td>$4$</td>
+<td>turned by $\theta r$, and by $2\theta r$ on its complex structure</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
+<td>$4$, $4$</td>
+<td>preserved</td>
+</tr>
+<tr>
+<td>the quaternion and antiquaternion subspaces</td>
+<td>$4$, $4$</td>
+<td>mixed, unless $\rho$ is real</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (why the complexification doubles again).</strong> The plane orthogonal to $v$ inside $\mathbb{B}_{V}$ is complex, so it carries two real planes: the real coefficients and the imaginary ones. The rotation on each of them is $\theta r$, and the element rotor acts on the complex structure at twice that rate in the sense that the two real planes are turned together. A reader who wants a single number should take the real plane.</p>
+<p><strong>Remark (what is not preserved).</strong> The quaternion and antiquaternion subspaces are exchanged only for a special rotor. A rotor with a complex coefficient moves a real element into a complex one, so the real subspace of the algebra is not invariant under the full group; it is invariant under the real one-parameter subgroups only.</p>
+<h2 id="the-orbits">The Orbits</h2>
+<p><strong>Proposition (the orbit of a vector is a sphere).</strong> The conjugation action of the rotor group sends a vector $v$ of norm $r$ to any other vector of the same norm, so the orbit is the sphere of radius $r$ in the three real dimensions of the vector part.</p>
+<p><strong>Proof.</strong> Every rotation of the vector part is the conjugation by some rotor, by the surjectivity of $\mathrm{SU}(2)\to\mathrm{SO}(3)$, and the norm is preserved. So the orbit is the set of vectors of norm $r$, which is a two-sphere.</p>
+<p><strong>Corollary (the dimension count).</strong> The orbit has real dimension $2$, the stabiliser of a non-zero vector is the circle about it, of real dimension $1$, and $3=2+1$ matches the dimension of the group.</p>
+<p><strong>Proof.</strong> The stabiliser is the set of rotors commuting with $v$, which is the circle $\{e^{\theta v}\}$. The orbit-stabiliser identity gives $3-1=2$.</p>
+<p><strong>Remark (the operator level has a different orbit).</strong> On the operator space, of complex dimension sixteen and real dimension thirty-two, the conjugation by $\mathrm{SU}(4)$ has orbits of real dimension $12$ for a generic element, with stabiliser the three-dimensional torus and group of real dimension fifteen. The sphere of the vector part is the orbit of the smallest representation, and the orbit of the algebra itself is the largest one that the three generators produce.</p>
+<h2 id="the-two-conditions-compared">The Two Conditions, Compared</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition</th>
+<th>set</th>
+<th>real dimension</th>
+<th>what it buys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>anti-Hermitian</td>
+<td>$\mathfrak{u}(4)$ of the array</td>
+<td>$16$</td>
+<td>the exponential is unitary</td>
+</tr>
+<tr>
+<td>derivation</td>
+<td>the inner derivations</td>
+<td>$6$</td>
+<td>the exponential is a conjugation</td>
+</tr>
+<tr>
+<td>both</td>
+<td>$\mathfrak{su}(2)$ of derivations</td>
+<td>$3$</td>
+<td>the exponential is a conjugation by a norm-one element</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the determinant is free on the derivation branch).</strong> $\operatorname{tr}\mathrm{ad}_v=0$ for every $v$, so $\det e^{\mathrm{ad}_v}=1$ with no hypothesis. The determinant is not free one row up: the operator $i\,\mathrm{id}$ is anti-Hermitian, its array has trace $4i$, and the determinant of its exponential is $e^{4i}=-0.654-0.757i$. So the derivation condition is what makes the exponential special, and it is the only condition that does so.</p>
+<h2 id="summary">Summary</h2>
+<p>The anti-Hermitian scalar-free elements are the real vectors, of real dimension three, and their exponential is the rotor $\cos(\theta r)e_t+\sin(\theta r)\hat v$. Each vector gives the inner derivation $\mathrm{ad}_v=L_v-R_v$, which satisfies the Leibniz rule and is anti-Hermitian for the Hermitian form.</p>
+<p>The three unit generators are the three real directions, and their arrays are $2R$ on one coordinate plane each, with the scalar line and the axis of the generator killed. Their bracket is $[\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y}]=2\,\mathrm{ad}_{\vec e_z}$, and with real coefficients they form $\mathfrak{su}(2)$, of real dimension three inside the six of all derivations and the thirty-two of all operators.</p>
+<p>Exponentiated, each generator fixes the scalar line and its own axis and turns the plane of the other two axes by twice the parameter. The exponential is the conjugation by the rotor, of array $T_{\rho,\rho^{-1}}$, unitary of determinant one, of spectrum $\{0,0,\pm2i\}$ and of period $\pi$ in the parameter. The rotor moves a vector along its sphere, of real dimension two, and the stabiliser of a vector is the circle about it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis, with $\vec e_k^2=-e_t$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>the anti-Hermitian elements, $Q^{*}=-Q$, real dimension $4$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{V}$</td>
+<td>the vectors, $Q_t=0$, complex dimension $3$</td>
+</tr>
+<tr>
+<td>$L_a$, $R_b$</td>
+<td>left and right multiplication</td>
+</tr>
+<tr>
+<td>$T_{a,b}$</td>
+<td>the two-sided operator $X\mapsto aXb$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_a$</td>
+<td>the inner derivation $L_a-R_a$</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle$</td>
+<td>the Hermitian form $\operatorname{Sc}(X^{*}Y)$</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>the quarter-turn $\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$ on a coordinate plane</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>the rotor $e^{\theta v}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_\rho$</td>
+<td>the conjugation $X\mapsto\rho X\rho^{-1}$</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>the projection onto the plane orthogonal to the generator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2015), for derivations, inner automorphisms and the exponential.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the double cover and the unit quaternions.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge University Press, 2003), for the rotor and the double angle.</li>
+<li><a href="the-anti-hermitian-derivations-of-m2c-as-su2.html">The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</a>, for the same three generators in the matrix frame and the sign of the angle.</li>
+<li><a href="the-exponential-of-the-traceless-anti-hermitian-part-determinant-one-unitarity-and-the-rotation.html">The Exponential of the Traceless Anti-Hermitian Part: Determinant One, Unitarity and the Rotation</a>, for the element-level theorem.</li>
+<li><a href="the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover.html">The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</a>, for the doubling of the angle.</li>
+<li><a href="adjoint-pair-of-l-and-r-operators.html">Adjoint Pair of $L$ and $R$ Operators</a>, for the four adjoints.</li>
+<li><a href="the-anti-hermitian-derivations-of-the-operators-of-the-biquaternion-algebra-as-su4.html">The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$</a>, for the same construction one level up.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

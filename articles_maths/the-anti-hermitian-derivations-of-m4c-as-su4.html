@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$ — Biquaternion Universe</title>
+  <meta name="description" content="Two conditions pick out the generators: anti-Hermitian and traceless. They hold exactly for fifteen matrices, which form of real dimension fifteen, and…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-anti-hermitian-derivations-of-math0-as-math1"><strong>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Two conditions pick out the generators: anti-Hermitian and traceless. They hold exactly for fifteen matrices, which form $\mathfrak{su}(4)$ of real dimension fifteen, and the fifteen split as six real antisymmetric and nine purely imaginary, $6+9$. Each generator $K$ gives the derivation $[K,\cdot]$, whose array is the Kronecker difference $K\otimes\mathrm{I}_4-\mathrm{I}_4\otimes K^{\mathsf T}$, and whose exponential is the conjugation by the rotor $U=e^{K}\in\mathrm{SU}(4)$.</strong></p>
+<p>The article writes the fifteen generators out in full, and it builds them the way the corpus builds every array: from the axis-free matrices $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$ of <em>Matrix Representations and Conventions</em>, not from a frame chosen for the occasion. The six real generators are the left and right matrices of the three vector units; the nine imaginary ones are $i$ times their nine products. Each of the fifteen is an involution up to the factor $i$, so each has the eigenvalues $i,i,-i,-i$ and each rotor is a closed form in $\cos\theta$ and $\sin\theta$.</p>
+<p>The article also states the bracket table of the six and the nine, the split of the fifteen as $6+9$, the position of the three inner derivations of the biquaternion algebra inside the six, the spectrum of the derivation as the differences of the eigenvalues of its generator, and the orbit dimensions of the conjugation.</p>
+<p>The article assumes the Lie group results of <em>The Exponential and the Lie Group of $M_4(\mathbb{C})$</em>, the determinant formula $\det e^{F}=e^{\operatorname{tr}F}$, and the reading of the adjoint representation of $\mathrm{SU}(4)$.</p>
+<h2 id="the-two-conditions-on-the-generator">The Two Conditions on the Generator</h2>
+<h3 id="the-fifteen-parameters">The Fifteen Parameters</h3>
+<p><strong>Proposition (the generators).</strong> The matrices $K\in M_4(\mathbb{C})$ with $K^{*}=-K$ and $\operatorname{tr}K=0$ form a real vector space of dimension fifteen, closed under the bracket, isomorphic to $\mathfrak{su}(4)$.</p>
+<p><strong>Proof.</strong> An anti-Hermitian matrix of order four has sixteen real parameters: four imaginary diagonal entries and six complex off-diagonal pairs. The trace is imaginary, so the traceless condition is one real equation and fifteen remain. The bracket of two anti-Hermitian matrices is anti-Hermitian, and the trace of a bracket vanishes.</p>
+<h3 id="the-split-as-six-and-nine">The Split as Six and Nine</h3>
+<p><strong>Proposition (the real form inside).</strong> Every anti-Hermitian traceless $K$ splits uniquely as</p>
+<p>$$
+K=\underbrace{\tfrac12(K-\bar K)}_{\text{real antisymmetric}}+\;i\underbrace{\tfrac{1}{2i}(K+\bar K)}_{\text{real symmetric, traceless}} ,
+$$</p>
+<p>and the two summands have dimensions six and nine, so $15=6+9$ with intersection zero.</p>
+<p><strong>Proof.</strong> $\tfrac12(K-\bar K)$ is real and satisfies $S^{\mathsf T}=-S$; it has $\tfrac12\cdot4\cdot3=6$ parameters. $\tfrac{1}{2i}(K+\bar K)$ is real symmetric; a real symmetric matrix of order four has ten parameters, and the traceless condition removes one, leaving nine. The two summands are of different symmetry types, so they meet only in zero.</p>
+<p><strong>Corollary (one summand is closed, the other is not).</strong> The real antisymmetric matrices form the subalgebra $\mathfrak{so}(4)$ of $\mathfrak{su}(4)$. The set $i\cdot\operatorname{Sym}_0(4,\mathbb{R})$ is not a subalgebra.</p>
+<p><strong>Proof.</strong> The bracket of two real antisymmetric matrices is real antisymmetric, so the six close. The bracket of two elements of $i\operatorname{Sym}_0$ is $-[\cdot,\cdot]$ of two real symmetric matrices, which is real antisymmetric, so it lands in the other summand and the nine do not close.</p>
+<p><strong>Remark (the split is not conjugation invariant).</strong> The split is taken with respect to the standard real structure of $\mathbb{C}^4$, and a conjugation by a unitary matrix with complex entries moves the six. The split therefore records the position of the generator relative to the standard basis, and that position is what decides the shape of the rotor. Two generators with the same eigenvalues are conjugate to each other and so have the same derivation spectrum, and they are still different rotors: $\ell_x$ turns both coordinate planes by $\theta$, $r_x$ turns one plane by $\theta$ and the other by $-\theta$, and $iN_{xx}$ multiplies two coordinates by $e^{i\theta}$ and two by $e^{-i\theta}$. All three have the eigenvalues $i,i,-i,-i$ and the derivation spectrum $0^{8},(\pm2i)^{4}$.</p>
+<h2 id="the-fifteen-generators-built-from-the-axis-free-matrices">The Fifteen Generators, Built from the Axis-Free Matrices</h2>
+<p><strong>The rule.</strong> The generators are not written in a frame chosen for the occasion. They are built from the arrays the corpus already prints, the axis-free left and right matrices of the three vector units in <em>Matrix Representations and Conventions</em>. Nothing below introduces a frame of its own.</p>
+<p><strong>Definition.</strong> With the axis-free matrices of the units, put</p>
+<p>$$
+\ell_k:=L_{\mathrm{axf},\vec e_k},\qquad r_k:=R_{\mathrm{axf},\vec e_k},\qquad N_{jk}:=\ell_jr_k,\qquad j,k\in\{x,y,z\},
+$$</p>
+<p>and take the fifteen generators to be</p>
+<p>$$
+\ell_x,\;\ell_y,\;\ell_z,\qquad r_x,\;r_y,\;r_z,\qquad iN_{jk}\ \ (9\ \text{of them}).
+$$</p>
+<p><strong>Proposition (the count and the properties).</strong> The fifteen are anti-Hermitian, traceless and linearly independent over $\mathbb{R}$, so they are a basis of $\mathfrak{su}(4)$.</p>
+<p><strong>Proof.</strong> The printed matrices $L_{\mathrm{axf},\vec e_k}$ and $R_{\mathrm{axf},\vec e_k}$ are signed permutations with entries in $\{0,1,-1\}$ and are antisymmetric, so each is anti-Hermitian and of trace zero. Each $N_{jk}$ is a product of two such and is a symmetric signed permutation, of trace zero, so $iN_{jk}$ is anti-Hermitian and traceless. For independence: the sixteen products $L_{\mathrm{axf},\mu}R_{\mathrm{axf},\nu}$ are a basis of $M_4(\mathbb{C})$, the fifteen above are fifteen of them, and the factor $i$ on the nine is invertible.</p>
+<p><strong>Remark (why the products are sixteen and not fewer).</strong> The sixteen products are the arrays of the sixteen operators $T_{a,b}:X\mapsto aXb$ in the axis-free frame, and those operators are a basis of $\operatorname{End}(\mathbb{B})$. Their arrays have rank sixteen. This is the same count as the operator frame of <em>The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$</em>, where the carrier is written as the sixteen products.</p>
+<h3 id="the-six-real-generators">The Six Real Generators</h3>
+<p>The three left matrices, as the conventions article prints them:</p>
+<p>$$
+\ell_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\quad
+\ell_y=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\quad
+\ell_z=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
+$$</p>
+<p>The three right matrices:</p>
+<p>$$
+r_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},\quad
+r_y=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix},\quad
+r_z=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
+$$</p>
+<p><strong>Remark (the six are the chiral pair).</strong> The left matrices commute with the right ones, $\ell_a r_b=r_b\ell_a$, because a left and a right multiplication commute. Each triple closes on its own, $[\ell_x,\ell_y]=2\ell_z$ and $[r_x,r_y]=-2r_z$, so the six are $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, of real dimension six, which is $\mathfrak{so}(4)$. In the Peirce frame the same six are the chiral generators $K_a^{L}$ and $K_a^{R}$ of <em>The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</em>; the axis-free frame writes them as the left and right matrices of the units.</p>
+<p><strong>Corollary (the three inner derivations inside the six).</strong> With</p>
+<p>$$
+D_k:=\tfrac12(\ell_k-r_k),\qquad S_k:=\tfrac12(\ell_k+r_k),
+$$</p>
+<p>the three $D_k$ are the derivations $\tfrac12\mathrm{ad}_{\vec e_k}$ of the biquaternion algebra in the axis-free frame, and they satisfy</p>
+<p>$$
+[D_x,D_y]=D_z,\qquad [D_y,D_z]=D_x,\qquad [D_z,D_x]=D_y .
+$$</p>
+<p><strong>Proof.</strong> The array of $\mathrm{ad}_{\vec e_k}$ is $\ell_k-r_k$, the difference of the left and the right matrix, so $D_k$ is $\tfrac12$ of it, which is the normalization of <em>Automorphisms and Derivations of Algebras</em>. The brackets are computed from the two triples: $[\ell_x-r_x,\ell_y-r_y]=2\ell_z+2r_z$, since the cross brackets vanish, and half of that is $\ell_z+r_z=2D_z$; so $[D_x,D_y]=D_z$.</p>
+<h3 id="the-nine-imaginary-generators">The Nine Imaginary Generators</h3>
+<p>The nine products $N_{jk}=\ell_jr_k$ are the symmetric signed permutations</p>
+<p>$$
+N_{xx}=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},\;
+N_{yy}=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},\;
+N_{zz}=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix},
+$$</p>
+<p>$$
+N_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix},\;
+N_{xz}=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\-1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\;
+N_{yx}=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;-1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix},
+$$</p>
+<p>$$
+N_{yz}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\end{pmatrix},\;
+N_{zx}=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\;
+N_{zy}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\end{pmatrix}.
+$$</p>
+<p><strong>Proposition (all fifteen are involutions up to $i$).</strong> Each of the fifteen satisfies $K^{2}=-\mathrm{I}_4$, so each has the eigenvalues $i,i,-i,-i$ and each is of trace zero.</p>
+<p><strong>Proof.</strong> $\ell_k^{2}=-\mathrm{I}_4$ because $\ell_k$ turns the two coordinate planes $\{t,k\}$ and the remaining pair, each by a quarter turn of the array, and the square of a real quarter turn is minus the identity. The same holds for $r_k$. Each $N_{jk}$ is a symmetric signed permutation with $N_{jk}^{2}=\mathrm{I}_4$, so $(iN_{jk})^{2}=-\mathrm{I}_4$. Four eigenvalues, each of modulus one and of square $-1$, are $\pm i$; the trace is zero, so they are $i,i,-i,-i$.</p>
+<p><strong>Remark (the Cartan is inside the nine).</strong> The three diagonal generators of the basis are $iN_{xx}$, $iN_{yy}$, $iN_{zz}$: they are imaginary diagonal, traceless, and they span the diagonal traceless subspace. The other six of the nine are off-diagonal, and the six real generators have no diagonal entry at all. So the basis of this article puts the Cartan among the nine and puts no Cartan among the six.</p>
+<p><strong>Remark (the ordering of the corpus, not of a textbook).</strong> A textbook basis would single out a Cartan first and then add the roots. This basis does the opposite: the six real generators come from the multiplication itself, and the Cartan appears among the nine as three products. That is what building the generators from the axis-free matrices does, and it is the reason the fifteen here are all of one shape rather than split into weights.</p>
+<h2 id="the-derivation-and-its-array">The Derivation and Its Array</h2>
+<p><strong>Definition.</strong> For $K$ in the algebra the derivation is $\mathrm{ad}_K(X)=[K,X]$.</p>
+<p><strong>Proposition (it is a derivation and it is anti-Hermitian).</strong> The Leibniz rule holds, and for the Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ one has $(\mathrm{ad}_K)^{*}=\mathrm{ad}_{K^{*}}$, so $\mathrm{ad}_K$ is anti-Hermitian exactly when $K$ is. The kernel of $K\mapsto\mathrm{ad}_K$ is the scalars, so the map is injective on $\mathfrak{su}(4)$.</p>
+<p><strong>Proof.</strong> The Leibniz rule is associativity. For the adjoint, $\operatorname{tr}([K,X]^{*}Y)=\operatorname{tr}(X^{*}[K^{*},Y])$. The kernel is the centre, and a scalar multiple of $\mathrm{I}_4$ is traceless only when it is zero.</p>
+<p><strong>Proposition (the Kronecker form).</strong> Stack the rows of $X$ one after another. Then the array of $\mathrm{ad}_K$ is</p>
+<p>$$
+[K,\cdot]\longleftrightarrow K\otimes\mathrm{I}_4-\mathrm{I}_4\otimes K^{\mathsf T}.
+$$</p>
+<p><strong>Proof.</strong> Left multiplication by $K$ acts on the stacked vector by $K\otimes\mathrm{I}_4$; right multiplication by $K$ acts by $\mathrm{I}_4\otimes K^{\mathsf T}$. The commutator is the difference.</p>
+<p><strong>Corollary (the spectrum).</strong> The spectrum of the array is the multiset of the sixteen differences $\kappa_i-\kappa_j$ of the eigenvalues of $K$, the trace is zero, and the exponential is unitary of determinant one.</p>
+<p><strong>Proof.</strong> The eigenvalues of a Kronecker product are the products of the eigenvalues, $-\kappa_j$ from the second factor, so $\kappa_i-\kappa_j$ over all ordered pairs. The sum of the sixteen differences is four times the sum minus four times the same sum. The array is anti-Hermitian, and $\det e^{F}=e^{\operatorname{tr}F}=1$.</p>
+<p><strong>Corollary (one spectrum for the whole basis).</strong> All fifteen generators of the basis above have the eigenvalues $i,i,-i,-i$, so all fifteen derivations have the spectrum $0$ eight times, $2i$ four times and $-2i$ four times.</p>
+<p><strong>Proof.</strong> A generator $K$ of the basis is anti-Hermitian with $K^{2}=-\mathrm{I}_4$, hence normal with the four eigenvalues $i,i,-i,-i$; the spectrum of $\mathrm{ad}_K$ is the multiset of the sixteen differences and depends only on those eigenvalues. The differences of $i,i,-i,-i$ are zero on the eight ordered pairs of equal eigenvalue, $2i$ on the four pairs that run from $i$ to $-i$, and $-2i$ on the four that run back. A generic element of $\mathfrak{su}(4)$ has four distinct eigenvalues and the spectrum $0^{4}$, $\pm i^{6}$, $\pm2i^{2}$; the basis of this article is not generic in that sense, because every one of its members is an involution up to $i$.</p>
+<h2 id="the-exponential-of-each-generator">The Exponential of Each Generator</h2>
+<h3 id="the-two-kinds-of-rotor">The Two Kinds of Rotor</h3>
+<p><strong>Proposition (two closed forms).</strong> For real $\theta$,</p>
+<p>$$
+e^{\theta\ell_k}=\cos\theta\,\mathrm{I}_4+\sin\theta\,\ell_k,\qquad
+e^{\theta r_k}=\cos\theta\,\mathrm{I}_4+\sin\theta\,r_k,\qquad
+e^{\theta iN_{jk}}=\cos\theta\,\mathrm{I}_4+i\sin\theta\,N_{jk}.
+$$</p>
+<p><strong>Proof.</strong> Every generator of the basis satisfies $K^{2}=-\mathrm{I}_4$, so the exponential series splits into the even terms, which sum to $\cos\theta\,\mathrm{I}_4$, and the odd terms, which sum to $\sin\theta\,K$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>generator</th>
+<th>$e^{\theta K}$</th>
+<th>on the four coordinates</th>
+<th>on the entries of a matrix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ell_k$</td>
+<td>real orthogonal, in $\mathrm{SO}(4)$</td>
+<td>turns the plane $\{t,k\}$ by $\theta$ and the complementary plane by $\theta$ in the same sense</td>
+<td>the rows of $X$ and the columns of $X$ turn, in the same sense</td>
+</tr>
+<tr>
+<td>$r_k$</td>
+<td>real orthogonal, in $\mathrm{SO}(4)$</td>
+<td>turns the plane $\{t,k\}$ by $\theta$, as $\ell_k$ does, and the complementary plane by $-\theta$</td>
+<td>the rows turn one way and the columns the other</td>
+</tr>
+<tr>
+<td>$iN_{kk}$</td>
+<td>imaginary diagonal</td>
+<td>multiplies two coordinates by $e^{i\theta}$ and two by $e^{-i\theta}$</td>
+<td>$X_{pq}\mapsto e^{i\theta(d_p-d_q)}X_{pq}$ with $d$ two plus signs and two minus</td>
+</tr>
+<tr>
+<td>$iN_{jk}$, $j\ne k$</td>
+<td>complex, off-diagonal</td>
+<td>mixes two pairs with the factor $i$</td>
+<td>the corresponding rows and columns mix with the factor $i$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> For $\ell_k$: the array turns $e_t$ to $e_k$ and $e_k$ to $-e_t$, and it turns the two remaining coordinates into each other with the same sign, so both planes turn by $\theta$. For $r_k$: $r_k e_t=e_k$ as well, while on the complementary plane the sign is reversed, $r_x e_y=+e_z$ against $\ell_x e_y=-e_z$, so the two planes turn in opposite senses. For $iN_{kk}$: $N_{xx}=-\operatorname{diag}(1,1,-1,-1)$, and the exponential of an imaginary diagonal is the diagonal of the exponentials of the entries. For $iN_{jk}$ with $j\ne k$: $N_{jk}$ is a symmetric signed permutation with the eigenvalues $1,1,-1,-1$, so its exponential is $\cos\theta$ on the positive eigenspace and $\cos\theta$ on the negative one, with $i\sin\theta$ on the off-diagonal.</p>
+<p><strong>Corollary (what each family preserves).</strong> The three rotors $e^{\theta\ell_k}$ preserve the real structure and the two planes; the three $e^{\theta r_k}$ preserve the real structure and swap the senses; the nine $e^{\theta iN_{jk}}$ preserve the splitting into two coordinate pairs of the diagonal ones and mix pairs for the others. All fifteen preserve the trace, the determinant, the spectrum and the Hermitian cone.</p>
+<p><strong>Proof.</strong> Each rotor is unitary, and the conjugation by a unitary matrix preserves every similarity invariant and carries $X^{*}$ to $(UXU^{*})^{*}$.</p>
+<h3 id="what-each-generator-does-to-the-sixteen-entries">What Each Generator Does to the Sixteen Entries</h3>
+<p><strong>Proposition (rows and columns).</strong> In the conjugation $X\mapsto UXU^{*}$ the rotor acts on the row index on the left and on the column index on the right, so the entry $X_{pq}$ sees two phases or two turns, one from each index.</p>
+<p><strong>Proof.</strong> The array of the derivation is $K\otimes\mathrm{I}_4-\mathrm{I}_4\otimes K^{\mathsf T}$, the first term on the row index and the second on the column index; the exponential is the pair of factors $U\otimes\mathrm{I}_4$ and $\mathrm{I}_4\otimes\bar U$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>generator</th>
+<th>the entry $X_{pq}$</th>
+<th>in words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ell_k$</td>
+<td>$\cos^{2}\theta\,X_{pq}+\cos\theta\sin\theta(\ldots)+\sin^{2}\theta\,X_{p'q'}$</td>
+<td>the row and the column turn in the same sense, so a pair of indices on the turned plane keeps its angle relation</td>
+</tr>
+<tr>
+<td>$r_k$</td>
+<td>the same with one sense reversed</td>
+<td>the row and the column turn in opposite senses</td>
+</tr>
+<tr>
+<td>$iN_{kk}$</td>
+<td>$e^{i\theta(d_p-d_q)}X_{pq}$</td>
+<td>an entry keeps its modulus, and its phase is the difference of the two signs</td>
+</tr>
+<tr>
+<td>$iN_{jk}$, $j\ne k$</td>
+<td>a pair of entries exchanges with the factor $i$</td>
+<td>the block on the two pairs turns by $\theta$ with the factor $i$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the trace and the scalars).</strong> The trace is the sum of the diagonal entries, and it is fixed by all fifteen because every generator is traceless. The scalars $\mathbb{C}\mathrm{I}_4$ are fixed by all fifteen because $\mathrm{I}_4$ commutes with every matrix.</p>
+<h3 id="the-closed-form">The Closed Form</h3>
+<p><strong>Theorem (the exponential is the conjugation).</strong> With $U=e^{K}$,</p>
+<p>$$
+e^{\mathrm{ad}_K}=\mathrm{Ad}_U,\qquad \mathrm{Ad}_U(X)=UXU^{*},
+$$</p>
+<p>and the array of that operator is $U\otimes\bar U$ in the row stacking.</p>
+<p><strong>Proof.</strong> The exponential of $[K,\cdot]$ is the conjugation by $e^{K}$. On the array the two factors exponentiate to $U\otimes\mathrm{I}$ and $\mathrm{I}\otimes\bar U$, which commute.</p>
+<p><strong>Corollary (the invariants).</strong> The array lies in $\mathrm{SU}(16)$, its spectrum is the set of the products $\lambda_i\bar\lambda_j$ of the eigenvalues of $U$, and its fixed space is the commutant of $K$.</p>
+<p><strong>Proof.</strong> A Kronecker product of two unitaries is unitary, and the determinant is $(\det U)^{4}\overline{(\det U)}^{4}=1$. The eigenvalues are $\lambda_i\bar\lambda_j$, of modulus one. The fixed matrices are those commuting with $K$.</p>
+<h2 id="the-commutators-and-the-grading">The Commutators and the Grading</h2>
+<p><strong>Proposition (the bracket table).</strong> With $a,b,c$ cyclic in $x,y,z$,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>value</th>
+<th>where the value sits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$[\ell_a,\ell_b]$</td>
+<td>$2\ell_c$</td>
+<td>the six</td>
+</tr>
+<tr>
+<td>$[r_a,r_b]$</td>
+<td>$-2r_c$</td>
+<td>the six</td>
+</tr>
+<tr>
+<td>$[\ell_a,r_b]$</td>
+<td>$0$</td>
+<td>the six</td>
+</tr>
+<tr>
+<td>$[D_a,D_b]$</td>
+<td>$D_c$</td>
+<td>the six, normalized</td>
+</tr>
+<tr>
+<td>$[S_a,S_b]$</td>
+<td>$S_c$</td>
+<td>the six, normalized</td>
+</tr>
+<tr>
+<td>$[\ell_a,iN_{jk}]$</td>
+<td>$2\sum_c\epsilon_{ajc}\,iN_{ck}$</td>
+<td>the nine</td>
+</tr>
+<tr>
+<td>$[r_a,iN_{jk}]$</td>
+<td>$-2\sum_c\epsilon_{akc}\,iN_{jc}$</td>
+<td>the nine</td>
+</tr>
+<tr>
+<td>$[iN_{xx},iN_{xy}]$</td>
+<td>$-2r_z$</td>
+<td>the six</td>
+</tr>
+<tr>
+<td>$[iN_{xy},iN_{yx}]$</td>
+<td>$0$</td>
+<td>the six</td>
+</tr>
+</tbody>
+</table></div>
+<p>with $D_k=\tfrac12(\ell_k-r_k)$ and $S_k=\tfrac12(\ell_k+r_k)$.</p>
+<p><strong>Proof.</strong> Each identity is a computation with the multiplication of the units: $\ell_a\ell_b=\ell_c$ and $\ell_b\ell_a=-\ell_c$ for $a,b,c$ cyclic, $r_ar_b=-r_c$ because the law of the right matrices is reversed, and left and right matrices commute. The last two follow from $\ell_jr_k\ell_lr_m=\ell_{jl}r_{mk}$ together with the rules for $\ell_a\ell_b$ and $r_ar_b$.</p>
+<p><strong>Corollary (the three counts).</strong> The six close, the nine do not, and the brackets of the nine land in the six.</p>
+<p><strong>Proof.</strong> The first three rows stay inside the six. The next two land in the nine. The last two land in the six.</p>
+<p><strong>Theorem (the gradings).</strong> The bracket satisfies</p>
+<p>$$
+[\mathfrak{so},\mathfrak{so}]\subset\mathfrak{so},\qquad [\mathfrak{so},\mathfrak{p}]\subset\mathfrak{p},\qquad [\mathfrak{p},\mathfrak{p}]\subset\mathfrak{so},
+$$</p>
+<p>with $\mathfrak{so}$ the span of the six and $\mathfrak{p}$ the span of the nine. So the split $6+9$ is a $\mathbb{Z}_2$-grading, the pair is a symmetric pair, and $\mathrm{SU}(4)/\mathrm{SO}(4)$ is the symmetric space it integrates to.</p>
+<p><strong>Proof.</strong> The three inclusions are read off the table: the rows of the six stay in the six, the mixed rows stay in the nine, and the rows of two ninths land in the six. A grading whose odd part squares into the even part is the infinitesimal form of a symmetric space.</p>
+<p><strong>Remark (the three inner derivations are the diagonal).</strong> The three $D_k=\tfrac12(\ell_k-r_k)$ are the anti-diagonal combinations of the two $\mathfrak{su}(2)$'s, and the three $S_k=\tfrac12(\ell_k+r_k)$ the diagonal ones. So the three directions that the biquaternion algebra supplies are the diagonal of the chiral pair, and the twelve that it does not supply are the other three of the six together with the nine. That is the whole content of the count $3+12=15$: the algebra reaches one of the two chiral factors, the anti-diagonal, and nothing else.</p>
+<p><strong>Proof.</strong> $\ell_k=D_k+S_k$ and $r_k=D_k-S_k$ by definition, so the six span the same space as the three $D_k$ and the three $S_k$; the $D_k$ satisfy the relations of $\mathrm{ad}$ and the $S_k$ satisfy the same relations with the same sign, and the two triples commute.</p>
+<h2 id="the-dimension-ladder">The Dimension Ladder</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>set</th>
+<th>defining condition</th>
+<th>real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_4(\mathbb{C})$</td>
+<td>none</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>the traceless matrices</td>
+<td>$\operatorname{tr}X=0$</td>
+<td>$30$</td>
+</tr>
+<tr>
+<td>the anti-Hermitian matrices</td>
+<td>$K^{*}=-K$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(4)$</td>
+<td>both</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(4)$ inside</td>
+<td>real antisymmetric</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>the open summand</td>
+<td>$i$ times real symmetric traceless</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}(M_4)\cong M_{16}(\mathbb{C})$</td>
+<td>none</td>
+<td>$512$</td>
+</tr>
+<tr>
+<td>the anti-Hermitian operators</td>
+<td>$F^{*}=-F$</td>
+<td>$256$</td>
+</tr>
+<tr>
+<td>the derivations</td>
+<td>Leibniz rule</td>
+<td>$30$</td>
+</tr>
+<tr>
+<td>the anti-Hermitian derivations</td>
+<td>both</td>
+<td>$15$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (three ladders at once).</strong> At the element level $32\to30\to16\to15$. At the operator level $512\to256\to30\to15$. Inside the fifteen, $15=6+9$ and $6+9=6+6+3$. The number fifteen appears twice for two different reasons: the generators have fifteen parameters because the trace removes one of the sixteen, and the derivations have real dimension fifteen because the algebra is a full matrix algebra and the inner derivations are the algebra modulo the centre. The map $K\mapsto\mathrm{ad}_K$ is the isomorphism between them, and it is why the two fifteens agree.</p>
+<p><strong>Remark (the operator level is five hundred and twelve).</strong> $\operatorname{End}(M_4)$ has complex dimension $16\cdot16=256$, so real dimension five hundred and twelve. The anti-Hermitian half is two hundred and fifty-six, the derivation condition cuts to thirty, and the anti-Hermitian condition cuts to fifteen. The two conditions are not independent: the derivation condition alone loses four hundred and eighty-two, and it is the strong one.</p>
+<h2 id="the-orbits">The Orbits</h2>
+<p><strong>Proposition (the orbit of a matrix).</strong> The conjugation by $\mathrm{SU}(4)$ sends a matrix with four distinct eigenvalues to the matrices with the same spectrum, and the orbit has real dimension $12$.</p>
+<p><strong>Proof.</strong> The stabiliser of $X$ in the group is the set of unitaries commuting with $X$; for distinct eigenvalues these are the diagonal unitaries in the eigenbasis, of real dimension three. The orbit-stabiliser identity gives $15-3=12$. The same number is read on the array: $\operatorname{rank}\mathrm{ad}_X=16-4=12$, because the kernel of $\mathrm{ad}_X$ is the commutant, of complex dimension four.</p>
+<p><strong>Proposition (the five patterns).</strong> A generator has imaginary eigenvalues of sum zero, so the patterns of multiplicities are $1+1+1+1$, $2+1+1$, $2+2$, $3+1$ and $4$. The commutant of the generator in $M_4$ and the orbit of the generator have the following dimensions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pattern</th>
+<th>example</th>
+<th>commutant, complex dimension</th>
+<th>orbit, real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1+1+1+1$</td>
+<td>$i\operatorname{diag}(1,2,-1,-2)$</td>
+<td>$1+1+1+1=4$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>$2+1+1$</td>
+<td>$i\operatorname{diag}(1,1,-2,0)$</td>
+<td>$4+1+1=6$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>$2+2$</td>
+<td>$i\operatorname{diag}(1,1,-1,-1)$</td>
+<td>$4+4=8$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$3+1$</td>
+<td>$i\operatorname{diag}(1,1,1,-3)$</td>
+<td>$9+1=10$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$0$</td>
+<td>$16$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The commutant of a matrix with multiplicities $m_1,\dots,m_r$ is the block diagonal subalgebra of block sizes $m_l$, of complex dimension $\sum_l m_l^{2}$. The orbit has real dimension $16-\sum_l m_l^{2}$, which is the rank of $\mathrm{ad}_K$ and also $15$ minus the real dimension of the stabiliser. The pattern $4$ forces all four eigenvalues equal and the sum zero, so all are zero and the generator vanishes; the pattern $3+1$ is the pattern of $H_3$, whose entries $1,1,1,-3$ are real and admissible.</p>
+<h2 id="the-worked-example">The Worked Example</h2>
+<p><strong>Proposition (two double eigenvalues).</strong> Let $K=i\operatorname{diag}(1,1,-1,-1)$. Then the spectrum of the array is $0$ eight times and $\pm2i$ four times each, the commutant of $K$ is eight complex dimensional, and at $\theta=\pi/2$ the rotor is the identity on the commutant and minus the identity on the other eight dimensions.</p>
+<p><strong>Proof.</strong> The eigenvalues are $i,i,-i,-i$, so the differences are $0$ on the pairs of equal eigenvalue, which are eight ordered pairs, $2i$ on the four pairs of the first kind and $-2i$ on the four of the second. The commutant of a matrix with two eigenvalues of multiplicity two is the block diagonal subalgebra, of complex dimension $4+4=8$. The rotor at $\theta=\pi/2$ is $\operatorname{diag}(i,i,-i,-i)$, and the conjugation multiplies $X_{ij}$ by $e^{i\theta(\epsilon_i-\epsilon_j)}$ with $\epsilon=(1,1,-1,-1)$.</p>
+<p><strong>Remark (why the example matters).</strong> A generic generator fixes four complex dimensions, the span of $\mathrm{I}_4,K,K^{2},K^{3}$, and not only the scalars. This one fixes eight, which is the largest value for a generator with two distinct eigenvalues. The fixed space of the rotor is the commutant of the generator, so its dimension is $\sum_l m_l^{2}$ over the multiplicities, and the five patterns give the five values $4,6,8,10,16$ of the table above.</p>
+<h2 id="the-two-frames">The Two Frames</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>operator frame of the algebra</th>
+<th>matrix frame</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>carrier</td>
+<td>$\operatorname{End}(\mathbb{B})\cong M_4(\mathbb{C})$</td>
+<td>$M_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>generator</td>
+<td>an operator $K$ on the algebra</td>
+<td>a matrix $K$</td>
+</tr>
+<tr>
+<td>basis of the carrier</td>
+<td>the sixteen products $T_{a,b}$</td>
+<td>the sixteen matrix units</td>
+</tr>
+<tr>
+<td>the fifteen generators</td>
+<td>the fifteen operators in the operator basis</td>
+<td>the six $\ell_k,r_k$ and the nine $iN_{jk}$</td>
+</tr>
+<tr>
+<td>array</td>
+<td>sixteen by sixteen in that basis</td>
+<td>$K\otimes\mathrm{I}_4-\mathrm{I}_4\otimes K^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>exponential</td>
+<td>$\mathrm{Ad}_U$</td>
+<td>$U\otimes\bar U$</td>
+</tr>
+<tr>
+<td>image of the rotor map</td>
+<td>$\mathrm{PSU}(4)$, kernel $\mathbb{Z}_4$</td>
+<td>the same</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the checks).</strong> On one hundred random generators of $\mathfrak{su}(4)$: the array is anti-Hermitian with trace at most $3.6\times10^{-15}$; the Leibniz residual is at most $2.8\times10^{-14}$; the spectrum matches the differences of the eigenvalues to $3.8\times10^{-14}$; the Kronecker form holds exactly; the exponential equals $U\otimes\bar U$ to $4.1\times10^{-15}$; it is unitary to $7.1\times10^{-15}$ with determinant one to $2.0\times10^{-14}$. The fifteen generators of the basis have residual zero for anti-Hermitian and $1.1\times10^{-16}$ for traceless, with rank fifteen, and every one of them squares to $-\mathrm{I}_4$. The closed forms are exact: $e^{\theta\ell_k}$, $e^{\theta r_k}$ and $e^{\theta iN_{jk}}$ agree with $\cos\theta\,\mathrm{I}_4+\sin\theta\,K$ to $4.4\times10^{-16}$. The four bracket rows hold to machine precision: $[\ell_x,\ell_y]=2\ell_z$, $[r_x,r_y]=-2r_z$, $[\ell_a,r_b]=0$, $[D_x,D_y]=D_z$, $[\ell_x,iN_{yz}]=2iN_{zz}$, $[iN_{xx},iN_{xy}]=-2r_z$, $[iN_{xy},iN_{yx}]=0$. The grading is checked on all $36+108+81$ pairs: the bracket of two of the six stays in the six, of one of the six with one of the nine stays in the nine, and of two of the nine stays in the six.</p>
+<h2 id="summary">Summary</h2>
+<p>The anti-Hermitian traceless matrices of order four are $\mathfrak{su}(4)$, of real dimension fifteen, split as six real antisymmetric and nine purely imaginary, $6+9$. The six are the left and right matrices of the three vector units in the axis-free frame, they are $\mathfrak{su}(2)\oplus\mathfrak{su}(2)=\mathfrak{so}(4)$, and the nine are $i$ times their nine products.</p>
+<p>Every generator of the basis satisfies $K^{2}=-\mathrm{I}_4$, so every rotor is a closed form in $\cos\theta$ and $\sin\theta$, and every generator has the eigenvalues $i,i,-i,-i$. The three inner derivations of the biquaternion algebra are the anti-diagonal combinations $\tfrac12(\ell_k-r_k)$, which satisfy $[D_x,D_y]=D_z$; the twelve remaining directions are the diagonal combinations $\tfrac12(\ell_k+r_k)$ and the nine.</p>
+<p>The bracket respects the grading: the six is a subalgebra, the mixed brackets stay in the nine, and the brackets of two of the nine land in the six. So $\mathrm{SU}(4)/\mathrm{SO}(4)$ is a symmetric space, and the fifteen of this article are its tangent data together with the isotropy algebra.</p>
+<p>Each generator gives the derivation $[K,\cdot]$, of array $K\otimes\mathrm{I}_4-\mathrm{I}_4\otimes K^{\mathsf T}$, of spectrum the differences of the eigenvalues of $K$, of trace zero and of exponential $U\otimes\bar U\in\mathrm{SU}(16)$. The dimension ladder is $32\to30\to16\to15$ at the element level and $512\to256\to30\to15$ at the operator level, and the map $K\mapsto\mathrm{ad}_K$ makes the two fifteens the same fifteen.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\mathrm{axf},\vec e_k}$</td>
+<td>the axis-free left matrix of the vector unit $\vec e_k$</td>
+</tr>
+<tr>
+<td>$R_{\mathrm{axf},\vec e_k}$</td>
+<td>the axis-free right matrix of the vector unit $\vec e_k$</td>
+</tr>
+<tr>
+<td>$\ell_k$, $r_k$</td>
+<td>the short names for the two above</td>
+</tr>
+<tr>
+<td>$N_{jk}$</td>
+<td>the product $\ell_jr_k$, a symmetric signed permutation</td>
+</tr>
+<tr>
+<td>$D_k$</td>
+<td>$\tfrac12(\ell_k-r_k)$, the derivation $\tfrac12\mathrm{ad}_{\vec e_k}$</td>
+</tr>
+<tr>
+<td>$S_k$</td>
+<td>$\tfrac12(\ell_k+r_k)$, the symmetric combination</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}$, $\mathfrak{p}$</td>
+<td>the span of the six and the span of the nine</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_K$</td>
+<td>the derivation $[K,\cdot]$</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle$</td>
+<td>the Hilbert–Schmidt form $\operatorname{tr}(X^{*}Y)$</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>the rotor $e^{K}\in\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_U$</td>
+<td>the conjugation $X\mapsto UXU^{*}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2015), for $\mathfrak{su}(n)$, the Cartan and the adjoint representation.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge University Press, 1991), for the Kronecker product, its eigenvalues and the commutator equation.</li>
+<li><a href="matrix-representations-conventions.md">Matrix Representations and Conventions</a>, for the axis-free matrices the generators are built from, and <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em> for the rule the article follows.</li>
+<li><a href="automorphisms-and-derivations-of-algebras.md">Automorphisms and Derivations of Algebras</a>, for the normalization $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$ and the bracket $[D_1,D_2]=D_3$.</li>
+<li><a href="the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html">The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</a>, for the same six in the Peirce frame.</li>
+<li><a href="the-anti-hermitian-derivations-of-m2c-as-su2.html">The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</a>, for the same construction at order two, with three generators.</li>
+<li><a href="the-anti-hermitian-derivations-of-the-operators-of-the-biquaternion-algebra-as-su4.html">The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$</a>, for the same fifteen generators in the operator basis of the algebra.</li>
+<li><a href="the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html">The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</a>, for the subalgebras of the fifteen.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m4c.html">The Exponential and the Lie Group of $M_4(\mathbb{C})$</a>, for the group behind the rotors.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$ — Biquaternion Universe</title>
+  <meta name="description" content="Two conditions pick out the generators: anti-Hermitian and traceless. The carrier has moved up one level. A generator is now an operator on the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-anti-hermitian-derivations-of-the-operators-of-the-biquaternion-algebra-as-math0"><strong>The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Two conditions pick out the generators: anti-Hermitian and traceless. The carrier has moved up one level. A generator is now an operator $K$ on the biquaternion algebra, the carrier of the derivation is the sixteen-dimensional space of operators $\operatorname{End}(\mathbb{B})$, and the fifteen parameters of $\mathfrak{su}(4)$ are fifteen directions in which an operator can be turned. Of the fifteen, three come from the algebra itself, the three inner derivations of the previous level, and twelve come from outside.</strong></p>
+<p>The operator is $S\mapsto KS-SK$, anti-Hermitian for the Hilbert–Schmidt form on the sixteen-dimensional carrier, and its exponential is the conjugation by the rotor $U=e^{K}\in\mathrm{SU}(4)$ acting on operators. This is the same object as in the matrix article, with the same fifteen generators; what the operator frame adds is the reading of the carrier as the sixteen products of the algebra, and with it the split of the fifteen into the three that the algebra supplies and the twelve that it does not.</p>
+<p>The article gives the three families of generators as operators, the array of the derivation in the basis of the sixteen products, the action of each family on those products, the dimension ladder with the count of the multiplier space, and the invariants of the rotor.</p>
+<p>The article assumes the operator calculus of <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure in $M_2(\mathbb{C})$</em>, the derivation identities of <em>Star-Derivations and the Anti-Hermitian Derivations</em>, and the reading of $\operatorname{End}(\mathbb{B})\cong M_4(\mathbb{C})$.</p>
+<h2 id="the-two-conditions-on-the-generator">The Two Conditions on the Generator</h2>
+<p><strong>Proposition (the generators).</strong> The operators $K\in\operatorname{End}(\mathbb{B})$ with $K^{*}=-K$ and $\operatorname{tr}K=0$ form a real vector space of dimension fifteen, closed under the bracket, isomorphic to $\mathfrak{su}(4)$.</p>
+<p><strong>Proof.</strong> In the coefficient basis the operator is a $4\times4$ complex matrix, so the count is the count of the matrix case: sixteen real parameters for anti-Hermitian, one equation for the trace, fifteen left. The bracket of two anti-Hermitian operators is anti-Hermitian, and the trace of a commutator vanishes.</p>
+<p><strong>Remark (why the trace is available here and not on an element).</strong> The trace is taken in the coefficient basis of the algebra, which is a basis of four. It is a property of the operator and not of the element, which is why the operator level carries the same two conditions as the matrix level.</p>
+<p><strong>Remark (the split as six and nine).</strong> In the coefficient basis the fifteen split as six real antisymmetric and nine $i$ times real symmetric traceless. The six form $\mathfrak{so}(4)$ and close; the nine do not. The split depends on the chosen basis, and the three families below are the same three families as in the matrix article, read in the coefficient basis.</p>
+<h2 id="the-three-families-of-generators">The Three Families of Generators</h2>
+<p><strong>Definition.</strong> With $E_{ij}$ the matrix units of order four in the coefficient basis of the algebra, the fifteen generators are</p>
+<p>$$
+S_{ij}=i(E_{ij}+E_{ji}),\quad A_{ij}=E_{ij}-E_{ji},\quad H_k\ \text{the three imaginary diagonal traceless},
+$$</p>
+<p>six, six and three of them.</p>
+<p><strong>Proposition (three come from the algebra).</strong> The three inner derivations of the algebra, written as operators in the coefficient basis, are exactly</p>
+<p>$$
+\mathrm{ad}_{\vec e_x}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-2\\0&amp;0&amp;2&amp;0\end{pmatrix},\quad
+\mathrm{ad}_{\vec e_y}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;2\\0&amp;0&amp;0&amp;0\\0&amp;-2&amp;0&amp;0\end{pmatrix},\quad
+\mathrm{ad}_{\vec e_z}=\begin{pmatrix}0&amp;0&amp;-2&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;2&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}.
+$$</p>
+<p>Each is anti-Hermitian, of trace zero, of square $-4P$ with $P$ the projection onto one coordinate plane, and the three are independent.</p>
+<p><strong>Proof.</strong> The arrays are the difference of the left and right multipliers of a unit vector, computed in the coefficient basis with the multiplication rules $\vec e_x\vec e_y=\vec e_z$ and so on. The anti-Hermitian and traceless properties are read from the entries, which are real and antisymmetric with zero diagonal.</p>
+<p><strong>Remark (what the three are, among the fifteen).</strong> In the labelling $e_t,\vec e_x,\vec e_y,\vec e_z$ the three arrays above are exactly</p>
+<p>$$
+\mathrm{ad}_{\vec e_x}=-2A_{34},\qquad \mathrm{ad}_{\vec e_y}=+2A_{24},\qquad \mathrm{ad}_{\vec e_z}=-2A_{23},
+$$</p>
+<p>with the indices $2,3,4$ standing for the three vector coefficients. So the three directions that the algebra supplies are three of the six of the $A$ family, and the other twelve are the remaining three of that family, the six of the $S$ family and the three diagonal ones. The element level has three directions; the operator level has three of each kind that the algebra supplies and twelve that it does not.</p>
+<h2 id="the-derivation-and-its-array">The Derivation and Its Array</h2>
+<p><strong>Proposition (it is a derivation and it is anti-Hermitian).</strong> For $S,T$ operators, $\mathrm{ad}_K(ST)=\mathrm{ad}_K(S)T+S\,\mathrm{ad}_K(T)$; and for the Hilbert–Schmidt form $\langle S,T\rangle=\operatorname{tr}(S^{*}T)$ on the operator space, $(\mathrm{ad}_K)^{*}=\mathrm{ad}_{K^{*}}$, so $\mathrm{ad}_K$ is anti-Hermitian exactly when $K$ is. The map $K\mapsto\mathrm{ad}_K$ has kernel the scalars of the operator algebra, so it is injective on the fifteen.</p>
+<p><strong>Proof.</strong> The Leibniz rule is associativity of the composition of operators. For the adjoint, $\operatorname{tr}([K,S]^{*}T)=\operatorname{tr}(S^{*}[K^{*},T])$ by the cyclic invariance. The kernel is the centre of the operator algebra, which is the scalars $\mathbb{C}\,\mathrm{id}$, and the only scalar multiple of the identity among the traceless operators is zero.</p>
+<p><strong>Proposition (the array).</strong> In the basis of the sixteen products $T_{a,b}$, the array of $\mathrm{ad}_K$ is the Kronecker difference of the array of $K$ with itself,</p>
+<p>$$
+[K,\cdot]\longleftrightarrow K\otimes\mathrm{I}_4-\mathrm{I}_4\otimes K^{\mathsf T},
+$$</p>
+<p>in the same row stacking as the matrix article.</p>
+<p><strong>Proof.</strong> The carrier is a full matrix algebra in the coefficient basis, and the derivation is the commutator, so the array is the commutator array. The sixteen products are a basis of the carrier, and the change of basis from the matrix units to the products is a similarity, which leaves the spectrum and the trace alone.</p>
+<p><strong>Corollary (the spectrum).</strong> The spectrum of the array is the multiset of the sixteen differences $\alpha_i-\alpha_j$ of the eigenvalues of the generator in the coefficient basis; the trace is zero; the exponential is unitary of determinant one.</p>
+<p><strong>Proof.</strong> As in the matrix case: the eigenvalues of a Kronecker product are the products of the eigenvalues, $-\alpha_j$ from the second factor.</p>
+<p><strong>Corollary (an explicit diagonal array).</strong> For the generator $K=i\operatorname{diag}(1,-1,0,0)$ the array is diagonal in the matrix-unit basis with the sixteen entries, in row-major order,</p>
+<p>$$
+(0,\,2i,\,i,\,i;\;\;-2i,\,0,\,-i,\,-i;\;\;-i,\,i,\,0,\,0;\;\;-i,\,i,\,0,\,0).
+$$</p>
+<p><strong>Proof.</strong> The entry $S_{ij}$ of an operator $S$ is multiplied by $\alpha_i-\alpha_j$ under the derivation, so the array is diagonal on the matrix units with the differences. The same array is diagonal on the products up to the similarity of the change of basis.</p>
+<h2 id="the-sixteen-products-as-the-carrier">The Sixteen Products as the Carrier</h2>
+<p><strong>Proposition (the carrier is the enveloping algebra).</strong> The sixteen products $T_{a,b}$ with $a,b$ running over a basis of the algebra form a basis of $\operatorname{End}(\mathbb{B})$, so the carrier of the derivation is the full operator algebra, of complex dimension sixteen.</p>
+<p><strong>Proof.</strong> $T_{a,b}(X)=aXb$ is linear in $X$ and the sixteen of them are independent and span the sixty-four-real-dimensional space of real-linear maps, of which the complex-linear ones are the thirty-two of complex dimension sixteen.</p>
+<p><strong>Proposition (the multipliers span seven, not eight).</strong> The left multipliers $L(\mathbb{B})$ form a subspace of complex dimension four, the right multipliers $R(\mathbb{B})$ another of complex dimension four, and their intersection is the scalars, of complex dimension one. The span therefore has complex dimension $4+4-1=7$.</p>
+<p><strong>Proof.</strong> $L_a=L_b$ forces $a=b$ on the identity, so the left multipliers are four-dimensional; likewise the right. $L_a=R_b$ forces $aX=Xb$ for all $X$, which on the identity gives $a=b$ and then forces $a$ to be central. So the intersection is the scalars, and the sum has dimension seven.</p>
+<p><strong>Remark (the two-sided operators).</strong> The products $T_{a,b}$ with $a,b$ both non-central are the ones that are neither left nor right multipliers, and they fill the remaining nine complex dimensions of the carrier. The count is $16=4+4-1+9$, which is the additive form of the same identity as $7+9=16$.</p>
+<p><strong>Remark (why the carrier being sixteen matters).</strong> The derivation is an operator on a sixteen-dimensional space, so its array has order sixteen and two hundred and fifty-six complex entries. The counts of the ladder all follow: two hundred and fifty-six complex dimensions of endomorphisms is five hundred and twelve real, half of them anti-Hermitian, and the derivations among them are the inner ones, of complex dimension fifteen.</p>
+<h2 id="the-exponential-of-each-generator">The Exponential of Each Generator</h2>
+<p><strong>Theorem (the exponential is the conjugation).</strong> With $U=e^{K}$, $e^{\mathrm{ad}_K}(S)=USU^{*}$ for every operator $S$, and the array of that operator is $U\otimes\bar U$.</p>
+<p><strong>Proof.</strong> The exponential of the commutator with $K$ is the conjugation by $e^{K}$. On the array, the two factors exponentiate and commute.</p>
+<p><strong>Proposition (the three families, read on the sixteen products).</strong> Exponentiated, the three families act on the products as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>the rotor</th>
+<th>on the products $T_{a,b}$</th>
+<th>in words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{ij}$</td>
+<td>real orthogonal, in $\mathrm{SO}(4)$</td>
+<td>mixes the products whose coefficient labels are $i$ or $j$, with real coefficients</td>
+<td>turns the pair of labels, and turns the two sides in opposite senses</td>
+</tr>
+<tr>
+<td>$S_{ij}$</td>
+<td>complex, with the factor $i$</td>
+<td>mixes the same products with the factor $i$ off the diagonal</td>
+<td>turns the pair of labels in the complex sense</td>
+</tr>
+<tr>
+<td>$H_k$</td>
+<td>diagonal</td>
+<td>multiplies $T_{a,b}$ by the phase $\alpha_i-\alpha_j$ attached to its labels</td>
+<td>shifts each product by the difference of two phases</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The rotor acts by $S\mapsto USU^{*}$, which is the left factor on the first label and the right factor on the second. For the diagonal rotor the two factors are phases and the product is the difference. For the other two families the same statement is read block by block.</p>
+<p><strong>Corollary (the fixed operators).</strong> The fixed points of the exponential are the operators commuting with $K$, of complex dimension $\sum_l m_l^{2}$ for the multiplicities $m_l$ of the eigenvalues of $K$: four in the generic case, which is the span of $\mathrm{I},K,K^{2},K^{3}$, and sixteen for the zero generator. The scalars are always fixed.</p>
+<p><strong>Proof.</strong> $USU^{*}=S$ exactly when $S$ commutes with $U$, which is the commutant.</p>
+<p><strong>Remark (what each family does to the algebra inside the carrier).</strong> The copy of the algebra, spanned by the four products $T_{a,e_t}$, is moved by the rotor unless the rotor preserves it. Only rotors coming from the algebra itself, the three directions of the previous level, preserve the copy; the twelve outside directions move it into the rest of the carrier. So the operator frame shows a fact with no matrix counterpart: the algebra sits inside its operator algebra, and almost every rotation of the carrier tilts it.</p>
+<h2 id="the-dimension-ladder">The Dimension Ladder</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>set</th>
+<th>defining condition</th>
+<th>real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>none</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}(\mathbb{B})$, the carrier</td>
+<td>none</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>the anti-Hermitian operators</td>
+<td>$K^{*}=-K$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>the traceless operators</td>
+<td>$\operatorname{tr}K=0$</td>
+<td>$30$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(4)$ of generators</td>
+<td>both</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the three from the algebra</td>
+<td>inner derivations</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>the twelve from outside</td>
+<td>the complement</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>the multipliers $L$ and $R$</td>
+<td>one side only</td>
+<td>$14$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}(\operatorname{End}(\mathbb{B}))$</td>
+<td>none</td>
+<td>$512$</td>
+</tr>
+<tr>
+<td>the anti-Hermitian endomorphisms</td>
+<td>$F^{*}=-F$</td>
+<td>$256$</td>
+</tr>
+<tr>
+<td>the derivations</td>
+<td>Leibniz rule</td>
+<td>$30$</td>
+</tr>
+<tr>
+<td>the anti-Hermitian derivations</td>
+<td>both</td>
+<td>$15$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the number seven).</strong> The span of the left and right multipliers has complex dimension seven, so fourteen real. It is a proper subspace of the carrier, and it is the part of the carrier that is generated by the algebra acting on itself from one side or the other. The two-sided operators that are neither are the remaining nine complex dimensions.</p>
+<p><strong>Remark (three inside fifteen, and the split of the twelve).</strong> The three inner derivations sit inside the fifteen and the map $D\mapsto\mathrm{ad}_D$ carries the six derivations of the algebra into the thirty of the carrier, of which three are anti-Hermitian. The complement of the three inside the fifteen has dimension twelve, and there is no canonical way to split it: a choice of basis of the carrier gives one, and a different basis gives another.</p>
+<h2 id="the-invariants">The Invariants</h2>
+<p><strong>Proposition (what the rotor preserves).</strong> The conjugation by $U$ preserves the trace, the determinant, the spectrum, the rank and the characteristic polynomial of every operator, and it preserves the Hermitian cone, the unitary group and the singular values.</p>
+<p><strong>Proof.</strong> The conjugation is an algebra automorphism, so every polynomial invariant is preserved; it carries $S^{*}$ to $(USU^{*})^{*}$, so the cone is preserved; similar matrices have the same eigenvalues, and the singular values are the eigenvalues of $S^{*}S$, which is carried to $U(S^{*}S)U^{*}$.</p>
+<p><strong>Corollary (the period and the kernel).</strong> The operator has period $\pi$ in the parameter for a unit generator, $e^{\pi\mathrm{ad}_K}=\mathrm{id}$; and the map $U\mapsto\mathrm{Ad}_U$ has kernel the fourth roots of unity, with image $\mathrm{PSU}(4)$, of real dimension fifteen.</p>
+<p><strong>Proof.</strong> At $\theta=\pi$ the rotor is $-U_0$ with $U_0$ the rotor at $\theta=0$; a sign commutes with everything, so the conjugation is the identity. The kernel of the conjugation map on $\mathrm{SU}(4)$ is its centre, which is $\mathbb{Z}_4$, and $15-0=15$ for the dimension of the image.</p>
+<p><strong>Remark (the determinant is free).</strong> $\operatorname{tr}\mathrm{ad}_K=0$ for every generator, so $\det e^{\mathrm{ad}_K}=1$ with no hypothesis. This is the statement that the derivation condition alone carries the determinant, and it is why the operator level needs only the anti-Hermitian condition added to it.</p>
+<h2 id="the-worked-example">The Worked Example</h2>
+<p><strong>Proposition (two double eigenvalues).</strong> For $K=i\operatorname{diag}(1,1,-1,-1)$ the spectrum of the array is $0$ eight times and $\pm2i$ four times each, the commutant of $K$ in the carrier is eight complex dimensional, and at $\theta=\pi/2$ the rotor fixes the commutant and negates the rest.</p>
+<p><strong>Proof.</strong> The differences of $i,i,-i,-i$ give the stated spectrum: eight zeros for the pairs of equal eigenvalue, four $2i$ and four $-2i$. The commutant of a matrix with two eigenvalues of multiplicity two is the block diagonal subalgebra, of complex dimension $4+4=8$. The rotor at $\theta=\pi/2$ is $\operatorname{diag}(i,i,-i,-i)$, whose conjugation multiplies the entry $S_{ij}$ by $e^{i\theta(\epsilon_i-\epsilon_j)}$ with $\epsilon=(1,1,-1,-1)$, which is $-1$ across the blocks and $1$ inside.</p>
+<p><strong>Remark (the five patterns).</strong> The commutant of the generator is the fixed space of the rotor, and its complex dimension is $\sum_l m_l^{2}$ over the multiplicities: $4$ for $1+1+1+1$, $6$ for $2+1+1$, $8$ for $2+2$, $10$ for $3+1$ and $16$ for the zero generator. The generic generator therefore fixes four complex dimensions, the polynomials in the generator, and not only the scalars; the example fixes eight, the largest value for a generator with two distinct eigenvalues.</p>
+<h2 id="the-two-frames">The Two Frames</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>operator frame, this article</th>
+<th>matrix frame</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>carrier</td>
+<td>the sixteen products $T_{a,b}$</td>
+<td>the sixteen matrix units</td>
+</tr>
+<tr>
+<td>the fifteen</td>
+<td>three from the algebra, twelve outside</td>
+<td>the fifteen matrices of three families</td>
+</tr>
+<tr>
+<td>the array</td>
+<td>sixteen by sixteen, a Kronecker difference</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>what the frame adds</td>
+<td>the algebra sits inside the carrier and the rotor tilts it</td>
+<td>the fifteen matrices can be written out</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the same operator in two bases).</strong> The change of basis between the two carriers is the isomorphism $\operatorname{End}(\mathbb{B})\cong M_4(\mathbb{C})$, and it carries the products to the units. The spectrum, the trace and the determinant of the array are the same in both frames, and the three counts $6,6,3$ are the same, because they are properties of the operator and not of the basis.</p>
+<h2 id="summary">Summary</h2>
+<p>The anti-Hermitian traceless operators of the carrier $\operatorname{End}(\mathbb{B})$ form $\mathfrak{su}(4)$, of real dimension fifteen, and split as three inner derivations of the algebra and twelve directions from outside. Each generator gives the derivation $S\mapsto KS-SK$, anti-Hermitian for the Hilbert–Schmidt form, of array $K\otimes\mathrm{I}_4-\mathrm{I}_4\otimes K^{\mathsf T}$ and of spectrum the differences of the eigenvalues of the generator.</p>
+<p>The exponential is the conjugation by the rotor $U=e^{K}$, which preserves every similarity invariant, splits the carrier into the scalars and the rest, and acts on the products by the left factor on one label and the right factor on the other. The three families act by a real rotation, by a mixing with $i$, and by a pair of opposite phases.</p>
+<p>The numbers are these. The algebra has real dimension $8$ and its carrier has real dimension $32$; the anti-Hermitian operators of the carrier have $16$, the traceless ones $30$, and the two conditions together leave $15$, which is $\mathfrak{su}(4)$. The endomorphisms of the carrier have real dimension $512$, the anti-Hermitian ones $256$, the derivations $30$, and the anti-Hermitian derivations $15$.</p>
+<p>The multipliers span seven complex dimensions, so $14$ real, of the carrier's $16$ complex dimensions, and the algebra sits inside its carrier as a copy that every rotor coming from the twelve outside directions tilts.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{a,b}$</td>
+<td>the product operator $X\mapsto aXb$</td>
+</tr>
+<tr>
+<td>$L_a$, $R_b$</td>
+<td>left and right multiplication by an element</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>the generator, an anti-Hermitian traceless operator</td>
+</tr>
+<tr>
+<td>$\alpha_k$</td>
+<td>the eigenvalues of the generator in the coefficient basis</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_K$</td>
+<td>the derivation $S\mapsto KS-SK$</td>
+</tr>
+<tr>
+<td>$\langle S,T\rangle$</td>
+<td>the Hilbert–Schmidt form $\operatorname{tr}(S^{*}T)$</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>the rotor $e^{K}\in\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_U$</td>
+<td>the conjugation $S\mapsto USU^{*}$</td>
+</tr>
+<tr>
+<td>$S_{ij}$, $A_{ij}$, $H_k$</td>
+<td>the three families of generators</td>
+</tr>
+<tr>
+<td>$\mathrm{PSU}(4)$</td>
+<td>the image of the rotor map</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2015), for derivations, inner automorphisms and $\mathfrak{su}(n)$.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge University Press, 1991), for the Kronecker product and the commutator equation.</li>
+<li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure-in-m2c.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure in $M_2(\mathbb{C})$</a>, for the sixteen products as a basis.</li>
+<li><a href="the-anti-hermitian-derivations-of-the-biquaternion-algebra-as-su2.html">The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$</a>, for the level below, with three generators.</li>
+<li><a href="the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a>, for the same fifteen in the matrix frame, written out in full.</li>
+<li><a href="star-derivations-and-the-anti-hermitian-derivations.html">Star-Derivations and the Anti-Hermitian Derivations</a>, for the derivation identities.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</a>, for the orbit structure of the conjugation on the carrier.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

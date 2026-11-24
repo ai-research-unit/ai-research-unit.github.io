@@ -578,27 +578,27 @@ grep passes. Then run, on the whole article,</p>
    a hit as "the required retirement paragraph" has misread this file.
      grep -nE 'g_{?\mu\nu}?[\s<em>\mathbb{M}_-\s</em>]|g[\s<em>\mathbb{M}_-\s</em>]'
      grep -nE 'g_{?\mu\nu}?[\s<em>\mathbb{B}\s</em>]|g[\s<em>\mathbb{B}\s</em>]'   -&gt; must be empty
-     grep -nE '\bg(_{\mu\nu})?\s<em>=\s</em>(\mathrm|\operatorname){diag}|g\s<em>=\s</em>(\s<em>-\s</em>1'
+     grep -nE '\bg(<em>{\mu\nu})?\s<em>=\s</em>(\mathrm|\operatorname){diag}|g\s<em>=\s</em>(\s<em>-\s</em>1'
        The bracket is the symbol's printed form, not the object's only form. A
        metric written under a plain name, $g=\operatorname{diag}(-1,1,1,1)$ or
        $g=(-1,1,1,1)$, is the same object and is invisible to the three patterns
        above. Each hit is one of two: the FRAME metric, which goes, or the
        dynamical metric of a gravity or thermal article, which stays. Say which,
        by line. A hit you cannot classify is a live use, not a false positive.
-     grep -nE 'g\^{?\mu\nu}?[\s<em>\mathbb{M}_-\s</em>]'
+     grep -nE 'g\^{?\mu\nu}?[\s*\mathbb{M}</em>-\s<em>]'
        The pattern must be anchored on $g$ and on the retired bracket. Bare
        $\^{\\mu\\nu}$ is not a hit: it is $F_{\\mu\\nu}F^{\\mu\\nu}$,
        $T_\lambda{}^{\mu\nu}$, the generator $C^{\mu\nu}$, and the inverse of a
        dynamical metric in the Laplace-Beltrami operator, which trap 3 keeps.
-     grep -nE '(\s<em>-\s</em>1\s<em>,\s</em>1\s<em>,\s</em>1\s<em>,\s</em>1\s<em>)'
+     grep -nE '(\s</em>-\s<em>1\s</em>,\s<em>1\s</em>,\s<em>1\s</em>,\s<em>1\s</em>)'
        A mention of another author's convention is the one exception, and it is
        role 9: kept, listed by line in the report, not counted as residue.
-     grep -nE '(\s</em>ie_t\s<em>,\s</em>\vec e_x'
+     grep -nE '(\s<em>ie_t\s</em>,\s<em>\vec e_x'
        A material BASIS is a list of four units with the $i$ on the time slot.
        The bare $i\\vec e_k$ is the boost generator $K_k$ and appears in
        $\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$; it is not a basis
        and does not go. The anchored pattern matches the basis only.
-     grep -nE '(\s<em>[-+]\s</em>,\s<em>[-+]\s</em>,\s<em>[-+]\s</em>,\s<em>[-+]\s</em>)'
+     grep -nE '(\s</em>[-+]\s<em>,\s</em>[-+]\s<em>,\s</em>[-+]\s<em>,\s</em>[-+]\s*)'
        This one is NOT run to zero, because three legitimate families match it:
        a literature signature, which role 9 keeps, $(+,-,-,-)$ and $(-,+,+,+)$;
        a conjugation table, $(+,+,-,-)$ and $(+,-,+,-)$; and the signature of a
@@ -632,7 +632,7 @@ grep passes. Then run, on the whole article,</p>
      grep -nE '\frac{1}{ic}|\frac{1}{i}|(\s<em>1/ic\s</em>)'
                                                 -&gt; allowed only in a sentence
                                                    that names them as rejected
-     grep -nE 'c\s<em>(\s</em>t\s<em>+|Q_t </em>= <em>c\s</em>('  -&gt; must be empty
+     grep -nE 'c\s<em>(\s</em>t\s*+|Q_t *= <em>c\s</em>('  -&gt; must be empty
    The third pattern is the one that survives review, because $Q_t=c(t+it')$
    is correct arithmetic and the wrong writing. It stood in four places in
    three corpus files until this migration; the count is now zero, and it is

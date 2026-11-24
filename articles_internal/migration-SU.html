@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migration Note: the $SU(2)$ and $SU(4)$ Generators in the Operator Sections — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A placement and writing plan for four new mathematical articles. It says where each one goes in maths.md, which file it becomes, what…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="migration-note-the-math39-and-math40-generators-in-the-operator-sections"><strong>Migration Note: the $SU(2)$ and $SU(4)$ Generators in the Operator Sections</strong></h1>
+<p><em>What this file is.</em> A placement and writing plan for four new mathematical articles. It says where each one goes in <code>maths.md</code>, which file it becomes, what it must prove, and which finished articles it must not repeat. It contains no article text. Written 2026-11-24 in review mode; nothing in <code>articles_maths/</code> was edited to produce it.</p>
+<p><em>The two claims it places.</em> At order two, the anti-Hermitian and scalar-free elements of the biquaternion algebra, which are its pure real vectors, exponentiate to the spatial rotors, and those rotors act on the algebra by conjugation. At order four, the same statement holds one level up, on the sixteen-dimensional operator space and its matrix display, where the objects that exponentiate are the anti-Hermitian derivations. All four articles are about operators, so all four titles carry the same two conditions, <em>anti-Hermitian</em> and <em>derivation</em>. The element-level words <em>scalar-free</em> and <em>trace zero</em> name the generator behind each derivation, and they belong in the article, not in the title.</p>
+<p><em>The gap it closes.</em> The element-level statement is written. The operator-level statement is not. The generators appear in the published rotor articles as objects with the right properties, and the exponential of an operator, with the action that follows from it, appears in none.</p>
+<h2 id="the-claim-stated-exactly">The Claim, Stated Exactly</h2>
+<p><strong>The trap in the wording.</strong> "Traceless and Hermitian" names the generators in the physics convention, where the Pauli matrices are Hermitian and enter the exponent with the scalar imaginary. In the Lie-algebra convention the same arrays have trace zero and are <em>anti</em>-Hermitian, and enter the exponent bare. The two formulations are one statement, because $\mathfrak{su}(n)=i\,\mathrm{Herm}_n^0$. An article must pick one and say which, and must not write $e^{H}$ for a Hermitian $H$ and call the result unitary: that is false, and it is the single most likely error in this block.</p>
+<p><strong>The second trap, in the noun.</strong> Neither <em>traceless</em> nor <em>tracelessness</em> may be written of an element of $\mathbb{B}$ or of an operator. The corpus states the rule twice, in <em>Algebra and Element Conventions</em> and again in <em>Operator and Calculus Conventions</em>, and §<em>Titles</em> below takes it apart. The element-level name is <strong>scalar-free</strong>, and the operator-level statement names the array, $\operatorname{tr}L_{\tilde Q}$. At order four the trace condition is vacuous on the operator side in any case: every $\operatorname{ad}_K$ has trace zero as a $16\times16$ matrix, so no trace condition can pick out the fifteen.</p>
+<p>$$
+\mathfrak{su}(n)=\{K\in M_n(\mathbb{C}):K^{*}=-K,\ \operatorname{tr}K=0\},
+\qquad
+\exp\mathfrak{su}(n)=\mathrm{SU}(n),
+\qquad
+\exp(iH)\in\mathrm{SU}(n)\iff H=H^{*},\ \operatorname{tr}H=0 .
+$$</p>
+<p><strong>The two conditions, and what each one alone gives.</strong> Written on $M_n(\mathbb{C})$, where the word <em>traceless</em> is legitimate because the objects are arrays. The trace condition gives determinant one, because $\det e^{K}=e^{\operatorname{tr}K}$. The anti-Hermitian condition gives unitarity, because $(e^{K})^{*}=e^{K^{*}}=e^{-K}$. Neither alone is enough. The traceless part is a complex subspace of $2(n^2-1)$ real dimensions and exponentiates onto $\mathrm{SL}_n(\mathbb{C})$, which is not bounded. The anti-Hermitian part is $n^2$ real dimensions and exponentiates onto the unitary group, with its phase still present. Their intersection is $n^2-1$ real dimensions and exponentiates onto the compact group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>order</th>
+<th>ambient</th>
+<th style="text-align: right;">anti-Hermitian</th>
+<th style="text-align: right;">Hermitian</th>
+<th style="text-align: right;">traceless</th>
+<th style="text-align: right;">intersection</th>
+<th>group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$n=2$</td>
+<td>8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td>$\mathrm{SU}(2)$</td>
+</tr>
+<tr>
+<td>$n=4$</td>
+<td>32</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">15</td>
+<td>$\mathrm{SU}(4)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Anti-Hermitian alone is never enough.</strong> It gives the unitary group, not the special unitary group: $K=i\mathrm{I}_n$ is anti-Hermitian, and $\exp(\theta K)=e^{i\theta}\mathrm{I}_n$ has determinant $e^{in\theta}$, which is not one unless $\theta$ is a multiple of $2\pi/n$. So every row of this block needs a <strong>second condition</strong>, and no title may use <em>anti-Hermitian</em> on its own. Measured: $\det\exp(i\mathrm{I}_2)=(-0.416+0.909i)$ and $\det\exp(i\mathrm{I}_4)=(-0.654-0.757i)$, neither one.</p>
+<p><strong>The second condition changes with the object, because the object changes.</strong> Three levels, three names, and the three names are not interchangeable.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>level</th>
+<th>the object</th>
+<th>condition one</th>
+<th>condition two</th>
+<th>why that condition</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the matrix</td>
+<td>$K\in M_n(\mathbb{C})$</td>
+<td>$K^{*}=-K$</td>
+<td>$\operatorname{tr}K=0$</td>
+<td>the array is available, and the trace is the only thing standing between $U(n)$ and $SU(n)$</td>
+<td>$n^2-1$</td>
+</tr>
+<tr>
+<td>the element</td>
+<td>$Q\in\mathbb{B}$</td>
+<td>$Q^{*}=-Q$</td>
+<td>$Q_t=0$, <strong>scalar-free</strong></td>
+<td>no array is fixed by an element, so the trace is unavailable; the element-level name is the centre</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>the operator</td>
+<td>$\mathrm{ad}_K\in\operatorname{End}(\operatorname{End}\mathbb{B})$</td>
+<td>anti-Hermitian for Hilbert–Schmidt</td>
+<td><strong>a derivation</strong>: $\mathrm{ad}_K(XY)=\mathrm{ad}_K(X)Y+X\mathrm{ad}_K(Y)$</td>
+<td>the operator has already forgotten the scalar part of $K$, since $\mathrm{ad}_{\lambda\mathrm{I}}=0$; the trace direction costs nothing, and what must be imposed is the Leibniz rule</td>
+<td>$15$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the third row cannot be a trace.</strong> $\operatorname{tr}\mathrm{ad}_K=0$ for <em>every</em> $K$, so a trace condition on the operator selects nothing at all. The ambient is $\mathfrak{u}(16)$, of $256$ real dimensions; the derivations of $M_4$ are $30$ real dimensions; their anti-Hermitian part is $15$, and that is $\mathrm{ad}_{\mathfrak{su}(4)}$. Measured: $3$ at $n=2$, $15$ at $n=4$, and $\operatorname{tr}\mathrm{ad}_K=0$ exactly in both.</p>
+<p><strong>The six at order two are not derivations.</strong> $L_v$ fails the Leibniz rule by a residual of $1.9$, while $\mathrm{ad}_v$ passes it at $2.2\times10^{-16}$. So the operator-level second condition does real work at order two as well: it selects the three inner derivations $\mathrm{ad}_v$, which are the ones that conjugate, and it excludes the six $L_v$, $R_v$, which are anti-Hermitian, are members of $\mathrm{SU}(4)$ once displayed, and carry the spinor rather than the triplet.</p>
+<p><strong>What the operator level adds.</strong> Not a hypothesis, but a <em>carrier</em> and a <em>quotient</em>. The carrier is the sixteen-dimensional operator space; the quotient is by the scalars, which the derivation cannot see. That quotient is why the group at the end of the operator row is $\mathrm{PSU}(4)$ and not $\mathrm{SU}(4)$.</p>
+<h2 id="the-lie-mechanism-in-six-steps">The Lie Mechanism, in Six Steps</h2>
+<p>Every one of the four articles follows this spine, and each step is one short proposition.</p>
+<ol>
+<li><strong>The split.</strong> The ambient splits over the reals as $\mathfrak{u}(n)\oplus\mathrm{Herm}_n$, anti-Hermitian plus Hermitian, by $X\mapsto\tfrac12(X-X^{*})$ and $X\mapsto\tfrac12(X+X^{*})$. The split is orthogonal for the Hilbert–Schmidt form.</li>
+<li><strong>The subspace.</strong> Inside the anti-Hermitian half, the trace removes one real dimension: the scalar imaginary. What is left is $\mathfrak{su}(n)$, of real dimension $n^2-1$, and it is closed under the commutator.</li>
+<li><strong>The two implications.</strong> Trace zero gives determinant one; anti-Hermitian gives unitary. Both are one-line proofs from $\det e^{K}=e^{\operatorname{tr}K}$ and $(e^{K})^{*}=e^{K^{*}}$.</li>
+<li><strong>Surjectivity.</strong> The exponential is onto the group, not merely into it: a unitary matrix is normal, hence $U=V\operatorname{diag}(e^{i\theta})V^{*}$, and the determinant condition lets the angles be centred so that they sum to zero. The fibre over the identity is the lattice of traceless anti-Hermitian matrices with eigenvalues in $2\pi i\mathbb{Z}$, so the map is surjective and not injective.</li>
+<li><strong>The linearisation.</strong> The derivative at the origin is the identity, so $K$ is recovered as the velocity of $t\mapsto e^{tK}$ at $t=0$. The bracket of the group is the commutator of the operators, which is why the three generators close: $[L_v,L_w]=L_{[v,w]}$, and the structure constants are the ones of the algebra. State which half of the commutator the corpus uses, since the corpus writes $[A,B]=\tfrac12(AB-BA)$ and the structure constants then carry a factor two.</li>
+<li><strong>The action.</strong> The group acts by conjugation, $\mathrm{Ad}_U(T)=UTU^{-1}$, and the derivative of that action at the identity is $\mathrm{ad}_K(T)=[K,T]$. The kernel of the action is the centre, so $\mathrm{SU}(2)$ covers $\mathrm{SO}(3)$ twice and $\mathrm{SU}(4)$ covers its adjoint group four times.</li>
+</ol>
+<p><strong>The half angle.</strong> The rotor $\rho=e^{\theta\vec u}$ acts on the vector part by conjugation and turns it through $2\theta$, not $\theta$. Equality of the two angles requires $\rho=e^{\theta\vec u/2}$. Every article in this block must name which angle it is using, because the corpus uses both and they differ by the factor two.</p>
+<h2 id="what-already-exists">What Already Exists</h2>
+<p>Written, and not to be repeated.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>level</th>
+<th>article</th>
+<th>what it gives</th>
+<th>what it does not give</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>element, $n=2$</td>
+<td><em>The Exponential of the Traceless Anti-Hermitian Part: Determinant One, Unitarity and the Rotation</em> (<code>maths.md</code> 8091)</td>
+<td>both conditions separately, the closed form, the image $\mathrm{SU}(2)$, the rotation as conjugation on the Hermitian matrices of trace zero, kernel $\{\pm I\}$, angle twice the radius</td>
+<td>any operator; the carrier is the $2\times2$ matrix</td>
+</tr>
+<tr>
+<td>element, $n=4$</td>
+<td><em>The Exponential of the Traceless Anti-Hermitian Part: $SU(4)$ and the Rotors of the Six-Space</em> (<strong>unlisted</strong>, see R1)</td>
+<td>$\mathfrak{su}(4)$, the closed forms, the fifteen as torus plus roots, the action on $\mathbb{C}^4$, on $\Lambda^2$, on $\operatorname{Sym}^2$, $\mathfrak{su}(4)\cong\mathfrak{so}(6)$</td>
+<td>any operator; and it is not in the menu, so nothing links to it</td>
+</tr>
+<tr>
+<td>element, rotor</td>
+<td><em>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</em>, and the same at $n=4$</td>
+<td>the two signs, the double cover, the belt</td>
+<td>the exponential of an operator</td>
+</tr>
+<tr>
+<td>operator, $n=2$</td>
+<td><em>The Spin Group via $4\times4$ Real Matrices</em>, <em>From the Spin Group to the Spin of a Single Rotor</em></td>
+<td>the generators $L_x,L_y,L_z$ as real $4\times4$ matrices, $L_k^2=-\mathrm{I}_4$, the Casimir $-3\mathrm{I}_4$</td>
+<td>the exponential, the group generated, the action on the operator space</td>
+</tr>
+<tr>
+<td>operator, $n=4$</td>
+<td><em>Rotors Acting on the Bivector Space: the Adjoint Action at $n=4$</em></td>
+<td>the rotor of $M_4$, the adjoint action on $\Lambda^2$, the two isoclinic three-spaces</td>
+<td>the anti-Hermitian reading of the generators, and any exponentiation</td>
+</tr>
+<tr>
+<td>internal</td>
+<td><em>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra</em>, <em>The Meaning of $\mathrm{SU}(4)$…</em></td>
+<td>the ladder $8\to4\to3$, the six as self-dual plus anti-self-dual, $\mathrm{ad}_{\vec e_k}=2J^{\mathrm{tot}}_k$, the split $15=8+1+6$, $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$ six real dimensions</td>
+<td>publication; these are <code>articles_internal/</code>, not citable as articles</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The five numbers these articles already fix</strong>, to be quoted and not reproved: $\operatorname{tr}L_a=4\,\mathrm{Sc}(a)$; $\det L_A=(\det A)^4$; $\dim\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})=6$; $\mathrm{ad}_v(w)=2\,v\times w$ on the vector part; and the six inner derivations at order two, the three at order four.</p>
+<h2 id="the-four-slots">The Four Slots</h2>
+<p>Insert each as the fourth subsection of its row, immediately after the adjoint subsection of that row; in the two rows that carry a length subsection, it then stands before the length. The ordinal is the same in all four rows, which keeps the four sections reading in parallel.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>menu section</th>
+<th style="text-align: right;">line</th>
+<th>new <code>#####</code> heading</th>
+<th>article title</th>
+<th>file</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Biquaternions → <code>#### Operators on the Algebra of Biquaternions</code></td>
+<td style="text-align: right;">after 6814</td>
+<td>The Exponential of the Anti-Hermitian Derivations</td>
+<td>The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$</td>
+<td><code>the-anti-hermitian-derivations-of-the-biquaternion-algebra-as-su2.md</code></td>
+</tr>
+<tr>
+<td>B</td>
+<td>$M_2(\mathbb{C})$ → <code>#### The Operators on the Matrix Space</code></td>
+<td style="text-align: right;">after 8174</td>
+<td>The Exponential of the Anti-Hermitian Derivations</td>
+<td>The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</td>
+<td><code>the-anti-hermitian-derivations-of-m2c-as-su2.md</code></td>
+</tr>
+<tr>
+<td>C</td>
+<td>Biquaternions → <code>#### Operators on the Operators of the Biquaternion Algebra</code></td>
+<td style="text-align: right;">after 6968</td>
+<td>The Exponential of the Anti-Hermitian Derivations</td>
+<td>The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$</td>
+<td><code>the-anti-hermitian-derivations-of-the-operators-of-the-biquaternion-algebra-as-su4.md</code></td>
+</tr>
+<tr>
+<td>D</td>
+<td>$M_4(\mathbb{C})$ → <code>#### The Operators on the Matrix Space</code></td>
+<td style="text-align: right;">after 8670</td>
+<td>The Exponential of the Anti-Hermitian Derivations</td>
+<td>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</td>
+<td><code>the-anti-hermitian-derivations-of-m4c-as-su4.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The four headings are new and must be created at the <code>#####</code> level, in the position given. The comment block under each new link is one sentence, in the corpus habit: what the article proves, in the order it proves it.</p>
+<h2 id="titles">Titles</h2>
+<h3 id="why-the-previous-sets-failed">Why the previous sets failed</h3>
+<p>Two errors, and the second is the worse one.</p>
+<p>The first: <em>traceless</em> cannot describe an element of $\mathbb{B}$ and cannot describe an operator, as §<em>The Claim, Stated Exactly</em> now sets out at length.</p>
+<p>The second: <em>anti-Hermitian</em> was used as if it were the whole hypothesis. It is not. Anti-Hermitian alone gives $U$, never $SU$: $\exp(i\mathrm{I}_n)=e^{i}\mathrm{I}_n$ has determinant $e^{in}\neq1$. So every title in this block must name <strong>two</strong> conditions, and the second one has three different names at three different levels.</p>
+<h3 id="the-name-of-the-second-condition-row-by-row">The name of the second condition, row by row</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>row</th>
+<th>object</th>
+<th>condition one</th>
+<th>condition two</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>matrices</td>
+<td>$K$ in $M_n(\mathbb{C})$</td>
+<td>anti-Hermitian</td>
+<td><strong>trace zero</strong></td>
+<td>$n^2-1$</td>
+</tr>
+<tr>
+<td>elements</td>
+<td>$Q$ in $\mathbb{B}$</td>
+<td>anti-Hermitian</td>
+<td><strong>scalar-free</strong>, $Q_t=0$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>operators on $\operatorname{End}(\mathbb{B})$</td>
+<td>$\mathrm{ad}_K$</td>
+<td>anti-Hermitian</td>
+<td><strong>a derivation</strong>, the Leibniz rule</td>
+<td>$15$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The operator row cannot use a trace, because $\operatorname{tr}\mathrm{ad}_K=0$ for every $K$ and the condition would select nothing. It cannot use <em>scalar-free</em> either, because the operator has already lost the scalar: $\mathrm{ad}_{\lambda\mathrm{I}}=0$. What is left, and what does the work, is the Leibniz rule. Measured: the ambient $\mathfrak{u}(16)$ is $256$ real dimensions, the derivations of $M_4$ are $30$, and the anti-Hermitian derivations are $15$.</p>
+<h3 id="the-recommended-set">The recommended set</h3>
+<p>Every title carries the same two conditions, <em>anti-Hermitian</em> and <em>derivation</em>, so no title uses <em>anti-Hermitian</em> alone and no title switches vocabulary between rows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slot</th>
+<th>title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$</td>
+</tr>
+<tr>
+<td>B</td>
+<td>The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</td>
+</tr>
+<tr>
+<td>C</td>
+<td>The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$</td>
+</tr>
+<tr>
+<td>D</td>
+<td>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Why these. All four articles are about operators, so all four titles name the same second condition, <em>anti-Hermitian</em> plus <em>derivation</em>, and the grid is carried by the locators alone, four phrases of the form <em>of X</em>: <em>of the Biquaternion Algebra</em> and <em>of $M_2(\mathbb{C})$</em> at order two, <em>of the Operators of the Biquaternion Algebra</em> and <em>of $M_4(\mathbb{C})$</em> at order four. One word for the hypothesis in every row. The generator behind each derivation is the element $v$ or $K$, and its own second condition (<em>scalar-free</em>, <em>trace zero</em>) belongs in the first paragraph of the article, not in the title. Without a subtitle the title says the object and the two conditions, and stops.</p>
+<p>No colon, and no subtitle. The title is <em>The Anti-Hermitian Derivations of</em>, then the carrier, then <em>as</em> and the Lie algebra. Two slots are fixed across the four rows: the phrase of the two conditions at the front, and the algebra at the end.</p>
+<p>The algebra is written in the lower-case fraktur, $\mathfrak{su}(2)$ and $\mathfrak{su}(4)$, and not in the capital roman. The derivations form the Lie algebra and the rotors form the group. A title that wrote $\mathrm{SU}(2)$ would name the group and not the set that the article computes. The corpus writes $\mathfrak{su}(2)$ with the parenthesis in two hundred and twenty-seven places against one hundred and eighteen for the subscript form, so the parenthesis is the majority and it matches $M_2(\mathbb{C})$ in the same title.</p>
+<p>The word <em>as</em> carries the identification and no more. It says the derivations are that algebra, in the sense of an isomorphism of Lie algebras fixed by the trace form; it does not say the algebra sits inside as a summand, which is the misreading that a title of the shape <em>The $\mathfrak{su}(2)$ of the Anti-Hermitian Derivations of …</em> invites.</p>
+<p>Everything a subtitle used to carry, the count, the carrier of the action and the exponential, is stated in the first paragraph of the article, where a count can be qualified and a group can be named with its centre.</p>
+<h3 id="set-ii-the-two-conditions-stated-as-a-chain">Set II, the two conditions stated as a chain</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slot</th>
+<th>title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Derivations and Anti-Hermitian: the Three Generators of the Rotors on the Biquaternion Algebra</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Derivations and Anti-Hermitian: the Three of $M_2(\mathbb{C})$ and the Rotation of the Vector Part</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Derivations and Anti-Hermitian: the Fifteen Generators of the Conjugation on $\operatorname{End}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Derivations and Anti-Hermitian: the Fifteen Generators of $\mathrm{PSU}(4)$ on $M_4(\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Shortest, and the most parallel. It puts the conditions before the objects, so a reader scanning the menu learns the hypothesis first. The cost is that the objects are named last.</p>
+<h3 id="set-iii-the-group-first">Set III, the group first</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slot</th>
+<th>title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>$\mathrm{SU}(2)$ from the Anti-Hermitian Derivations of the Biquaternion Algebra: the Three and the Rotation of the Vector Part</td>
+</tr>
+<tr>
+<td>B</td>
+<td>$\mathrm{SU}(2)$ from the Anti-Hermitian Derivations of $M_2(\mathbb{C})$: the Three and the Rotation of the Vector Part</td>
+</tr>
+<tr>
+<td>C</td>
+<td>$\mathrm{SU}(4)$ from the Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra: the Fifteen and the Conjugation</td>
+</tr>
+<tr>
+<td>D</td>
+<td>$\mathrm{SU}(4)$ from the Anti-Hermitian Derivations of $M_4(\mathbb{C})$: the Fifteen, the Sixteen and $\mathrm{PSU}(4)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>From</em> does the work that a comma cannot: it says the conditions produce the group and are not merely attached to it. This set reads best as a sequence with the two existing exponential articles, since all six then begin with a group.</p>
+<h3 id="set-iv-the-conditions-as-the-subject">Set IV, the conditions as the subject</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slot</th>
+<th>title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Two Conditions for Three Generators: Derivations and Anti-Hermitian on the Biquaternion Algebra</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Two Conditions for Three Operators: Derivations and Anti-Hermitian on $M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Two Conditions for Fifteen Operators: Derivations and Anti-Hermitian on $\operatorname{End}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Two Conditions for Fifteen Operators on $M_4(\mathbb{C})$: Derivations and Anti-Hermitian</td>
+</tr>
+</tbody>
+</table></div>
+<p>This set makes the point of the block the title. It is the most didactic and the least like the rest of the corpus, which names objects rather than counts.</p>
+<h3 id="slugs">Slugs</h3>
+<p>Set I has no subtitle, so its slug is the title and nothing else. The mathematics is spelled as the corpus already spells it: $\operatorname{End}(\mathbb{B})$ as <code>end-b</code>, after <code>end-b-as-an-algebra-the-regular-representation</code>, and $M_2(\mathbb{C})$ as <code>m2c</code> beside <code>m4c</code>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slot</th>
+<th>Set I</th>
+<th>Set II</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td><code>the-anti-hermitian-derivations-of-the-biquaternion-algebra</code></td>
+<td><code>derivations-and-anti-hermitian-the-three-of-the-biquaternion-algebra</code></td>
+</tr>
+<tr>
+<td>B</td>
+<td><code>the-anti-hermitian-derivations-of-m2c</code></td>
+<td><code>derivations-and-anti-hermitian-the-three-of-m2c</code></td>
+</tr>
+<tr>
+<td>C</td>
+<td><code>the-anti-hermitian-derivations-of-the-operators-of-the-biquaternion-algebra</code></td>
+<td><code>derivations-and-anti-hermitian-the-fifteen-on-end-b</code></td>
+</tr>
+<tr>
+<td>D</td>
+<td><code>the-anti-hermitian-derivations-of-m4c</code></td>
+<td><code>derivations-and-anti-hermitian-the-fifteen-of-m4c</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="one-caveat-the-titles-cannot-carry">One caveat the titles cannot carry</h3>
+<p>At order two there are two operator families, and they are not the same size. The derivations are three, the $\mathrm{ad}_v$, and they are the ones that conjugate. The one-sided operators are six, the $L_v$ and $R_v$, and they are anti-Hermitian and <em>not</em> derivations. The four titles are about the three; the six get one remark in A and one sentence in B. That is a deliberate narrowing, and the articles must say so, because the six are what puts $\mathrm{SU}(2)\times\mathrm{SU}(2)$ inside $\mathrm{SU}(4)$.</p>
+<h3 id="one-title-to-repair-not-to-write">One title to repair, not to write</h3>
+<p>The element article at order four is titled <em>The Exponential of the Traceless Anti-Hermitian Part: $SU(4)$ and the Rotors of the Six-Space</em>. Its ambient is $M_4(\mathbb{C})$, so <em>traceless</em> is legitimate there and the title is not an error. It is unfashioned as one half of a pair: the order-two article is titled <em>The Exponential of the Traceless Anti-Hermitian Part: Determinant One, Unitarity and the Rotation</em>. If R1 is applied, the pair is worth a decision, and a retitle renames a file.</p>
+<h2 id="what-each-article-must-prove">What Each Article Must Prove</h2>
+<p><strong>A — the biquaternion row, order two.</strong> The carrier is $\mathbb{B}$; the generators are the anti-Hermitian scalar-free elements, which are the pure real vectors $v$; the operators are the derivations $\mathrm{ad}_v$.</p>
+<ul>
+<li>
+<p>The two conditions on the element: $Q^{*}=-Q$ and $Q_t=0$, so the generator space is $\mathbb{B}_V=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, of real dimension three. Over $\mathbb{R}$ the first condition already implies the second, since $\tilde Q^{*}=Q_te_t-\vec Q$; over $\mathbb{C}$ it does not, and $ie_t$ is anti-Hermitian with $Q_t\neq0$.</p>
+</li>
+<li>
+<p>$\mathrm{ad}_v=L_v-R_v$ is anti-Hermitian for the Hilbert–Schmidt form, and it is a derivation: the Leibniz rule holds to $2.2\times10^{-16}$. The second condition in this row is therefore the Leibniz rule, in operator form, and not a trace.</p>
+</li>
+<li>The three $\mathrm{ad}_{\vec e_k}$ are independent and span a three-dimensional subspace of $\mathfrak{u}(16)$: the fifteen at order four cut down to three at order two. Measured, rank $3$.</li>
+<li>$\mathrm{ad}_v$ acts on the vector part as $2\,v\times w$, and $\exp(\theta\,\mathrm{ad}_v)$ is the conjugation $X\mapsto\rho X\rho^{-1}$ with $\rho=e^{\theta v}$.</li>
+<li>The closed form: $\mathrm{ad}_v^{2}$ is diagonal on $\mathbb{B}_V\oplus\mathbb{B}_\Phi$ with eigenvalues $-4|v|^{2}$ on the vector part and $0$ on the scalars, so $e^{\theta\,\mathrm{ad}_v}$ is $\cos2\theta$ on the first and the identity on the second. That single formula is the whole action: a rotation of the three-space and a fixed scalar line.</li>
+<li>The kernel of $\mathrm{ad}$ is the scalar line, $\mathrm{ad}_{\lambda e_t}=0$, so the generator is fixed only up to the centre; that is why the group at the end of the row is $\mathrm{SO}(3)=\mathrm{SU}(2)/\{\pm1\}$.</li>
+<li><strong>A remark, not a claim.</strong> $L_v$ and $R_v$ are anti-Hermitian and are <em>not</em> derivations: the Leibniz residual is $4.9$ and $3.1$. They carry the spinor and put $\mathrm{SU}(2)\times\mathrm{SU}(2)$ inside $\mathrm{SU}(4)$; they are not generators of the conjugation. One sentence, no more, so that the reader is not left thinking the row missed them.</li>
+<li>Conclusion: the one-parameter group of derivations reproduces the rotor action, and $L_{e^{K}}=e^{L_{K}}$ for the left multiplier.</li>
+</ul>
+<p><strong>B — the same at order two, in the matrix frame.</strong> The three derivations as $4\times4$ arrays, and the inclusion of one order in the next.</p>
+<ul>
+<li>The three $\mathrm{ad}_{\vec e_k}$ written as $16\times16$ real arrays through the coefficient basis, and each verified anti-Hermitian and a derivation: the same two conditions as in A, and the same three objects.</li>
+<li>The restriction to the vector part is a $3\times3$ block, $2[\vec e_k,\cdot\,]=2\,\vec e_k\times$, real antisymmetric, so the block is $\mathfrak{so}(3)$; the scalar line is the complementary block and is annihilated. The array is therefore $\mathrm{diag}(\text{a }3\times3\text{ rotation},0)$ on $\mathbb{B}_V\oplus\mathbb{B}_\Phi$, up to the basis change.</li>
+<li>$e^{\theta\,\mathrm{ad}_{\vec e_k}}$ in the display, and the checks $\det=1$, $U^{*}U=\mathrm{I}$ in one line each.</li>
+<li>The angle doubling in the matrix frame: the array turns the three-space through $2\theta$ while the element rotor turns it through $\theta$.</li>
+<li>The kernel $\{\pm\mathrm{I}\}$ on the vector part, and the same kernel read as the centre of $\mathrm{SU}(2)$.</li>
+<li>Where the six $L_v$, $R_v$ sit: one sentence referring back to the remark in A, since they are anti-Hermitian arrays of trace zero and not derivations, and the trace-zero condition is what the six need and the three do not.</li>
+</ul>
+<p><strong>C — the operator-on-operator row, order four, abstract frame.</strong> The carrier is the sixteen-dimensional $\operatorname{End}(\mathbb{B})$.</p>
+<ul>
+<li>The generators are $\mathrm{ad}_K$ for $K\in\mathfrak{su}(4)$, acting on the sixteen. Each is anti-Hermitian for the Hilbert–Schmidt form, and each is a derivation. The second condition here is the Leibniz rule and not a trace: $\operatorname{tr}\operatorname{ad}_K=0$ for every $K$, so a trace would select the whole $\mathfrak{u}(16)$ and cut nothing. Measured: anti-Hermitian alone is $256$ real dimensions, the derivations of $M_4$ are $30$, and the two together are $15$.</li>
+<li>$K\mapsto\mathrm{ad}_K$ is injective on $\mathfrak{su}(4)$, because a scalar matrix in $\mathfrak{su}(4)$ is zero; so the image is fifteen-dimensional and the group acts faithfully on the operator space.</li>
+<li>The scalars are fixed, $[K,\lambda\mathrm{I}]=0$, and the trace-zero part of $M_4$ is invariant, so $\mathbb{C}^{16}=15\oplus1$ under the action: the adjoint module plus the trivial one. This decomposition, and not a trace condition, is what the operator level contributes.</li>
+<li>The six of $L_v$ and $R_v$ sit inside the fifteen and generate $\mathrm{SO}(4)\subset\mathrm{PSU}(4)$; the inner automorphisms of the algebra are the three of $\mathrm{ad}_v$, and $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$ meets $\mathrm{SU}(4)$ in exactly those three.</li>
+<li>The action on the operator space by conjugation, $\mathrm{Ad}_{L_\rho}=T_{\rho,\rho^{-1}}$, and its determinant: $\det T_{\rho,\rho^{-1}}=1$, so the lift sits in $\mathrm{SU}(16)$.</li>
+</ul>
+<p><strong>D — the same at order four, matrix frame.</strong> The carrier is $M_4$; the operators are $M_{16}$.</p>
+<ul>
+<li>The fifteen generators as $16\times16$ matrices through the Kronecker form, and the law $\mathrm{ad}_K=\mathrm{I}\otimes K-K^{\mathsf T}\otimes\mathrm{I}$ on column-stacked matrices, which is the matrix form of $X\mapsto KX-XK$.</li>
+<li>$T_{U,U^{-1}}\in\mathrm{SU}(16)$ for every $U\in\mathrm{SU}(4)$, by $U^{*}U=\mathrm{I}$ and $\det L_U=(\det U)^4=1$.</li>
+<li>The kernel of $U\mapsto\mathrm{Ad}_U$ is the centre $\mathbb{Z}_4$, so the image is $\mathrm{PSU}(4)$, of dimension fifteen.</li>
+<li>The orbit of a diagonal matrix with distinct entries, and the orbit of a generic matrix; the fixed points are the scalars, so $M_4=\mathfrak{sl}_4\oplus\mathbb{C}\mathrm{I}$ as modules.</li>
+<li>The two-sided operator reading: the rotor acts on the operator space by $T_{U,U^{-1}}$, the unique two-sided operator with those two multipliers, so the conjugation is written in the same alphabet as the rest of the row.</li>
+<li>What the group preserves, and what it does not. It preserves the trace, the rank of the matrix and the length, because $\mathrm{Ad}_U$ is an algebra automorphism carrying the cone of products to itself; so the stratification of the article on length is invariant and the group moves inside a stratum, never across one. It does not preserve the multiplication: $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$ is six real dimensions and meets $\mathrm{SU}(4)$ in three.</li>
+</ul>
+<h2 id="the-action-of-the-rotors-stated-once">The Action of the Rotors, Stated Once</h2>
+<p>The word <em>action</em> covers four different maps in these articles. Each must name its carrier in the same sentence, because the four do different things and two of them are regularly confused.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>the map</th>
+<th>angle</th>
+<th>kernel</th>
+<th>owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}^n$</td>
+<td>defining, $x\mapsto Ux$; at $n=2$ the phase $e^{\pm i\theta/2}$ on the two spinor lines</td>
+<td>$\theta/2$ per line</td>
+<td>none on the module</td>
+<td>A, B</td>
+</tr>
+<tr>
+<td>the vector part</td>
+<td>$w\mapsto\rho w\rho^{-1}$, which is $2\,v\times w$ at the generator</td>
+<td>$\theta$</td>
+<td>$\{\pm e_t\}$</td>
+<td>A, B</td>
+</tr>
+<tr>
+<td>the algebra</td>
+<td>$\rho\tilde X\rho^{-1}$, the spin-one and spin-zero split $4=3+1$</td>
+<td>$\theta$</td>
+<td>$\{\pm e_t\}$</td>
+<td>A, B</td>
+</tr>
+<tr>
+<td>the operator space</td>
+<td>$T\mapsto L_\rho TL_\rho^{-1}=T_{\rho,\rho^{-1}}$</td>
+<td>$\theta$</td>
+<td>$\mathbb{Z}_n$</td>
+<td>C, D</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The warning to carry into every article.</strong> The left copy does not preserve the vector part: $L_{\vec e_z}(e_t)=\vec e_z$, and for $\rho=e^{\tfrac{\theta}{2}\vec u}$ the value $L_{\rho}(\vec u)=\cos\tfrac{\theta}{2}\vec u-\sin\tfrac{\theta}{2}e_t$ acquires a scalar part that no rotation produces. The left copy carries the spinor. The conjugation carries the triplet. A sentence that mixes the two maps is the error <code>SU2-migration</code> was written to remove, and it must not be reintroduced here.</p>
+<h2 id="conventions-and-traps">Conventions and Traps</h2>
+<ul>
+<li><strong>The skeleton.</strong> <code># __Title__</code>, <code>## Introduction</code> opening with one bold sentence that states the result, then the sections, then <code>## Summary</code>, <code>## Summary of Notation</code>, <code>## Further Reading</code>. No front matter, and no <code>\square</code> closing a proof.</li>
+<li><strong>Mathematics.</strong> <code>$…$</code> inline, <code>$$…$$</code> display, operators in <code>\operatorname{}</code>. Both $\mathrm{SU}(n)$ and $SU(n)$ occur: the $n=2$ exponential article writes $\mathrm{SU}$ throughout, the biquaternion rotor articles and the $M_4(\mathbb{C})$ articles write $SU$. Follow the nearest neighbour and do not mix the two inside one article.</li>
+<li><strong>No short forms.</strong> Never $L_\mu$, $R_\mu$: write $L_{e_\mu}$, $R_{e_\mu}$. <em>Operator and Calculus Conventions</em> forbids the short form by name.</li>
+<li><strong>No traceless operator, and no traceless element.</strong> <em>Algebra and Element Conventions</em> forbids the word on an operator without an exception, and supplies the two replacements: for a statement about elements, the element-level name, as in <em>the inner derivation of a scalar-free element</em>; for a statement about the trace, the symbol on the named array, $\operatorname{tr}L_{\tilde Q}$. Write "the array of $L_v$ in the coefficient basis has trace zero", and never "$L_v$ is traceless". The word stays legitimate for a genuine element of $M_n(\mathbb{C})$, which is why the two published exponential articles may keep their titles.</li>
+<li><strong>Rotor is a Clifford word.</strong> It names an even product of unit vectors, and at order four the corpus uses it for the six-space rotors. Do not call every element of $\mathrm{SU}(4)$ a rotor without saying which carrier makes it one; prefer "the element $\rho$ of $\mathrm{SU}(2)$ acts" where the Clifford reading is not in play.</li>
+<li><strong>Which half of the commutator.</strong> The corpus halves it. With that convention $[J_a,J_b]=\varepsilon_{abc}J_c$ and $[L_v,L_w]=L_{[v,w]}$, and the factor two of the element bracket reappears as a factor two in $\mathrm{ad}_v(w)=2\,v\times w$. Say which convention is in force in the sentence where the structure constants appear.</li>
+<li><strong>Two conditions, always.</strong> Never write <em>anti-Hermitian</em> as the whole hypothesis. It gives $U(n)$; the group needs the second condition too. Name it: <em>trace zero</em> for a matrix, <em>scalar-free</em> for an element, <em>a derivation</em> for an operator on the operator space.</li>
+<li><strong>A derivation is not a traceless operator.</strong> The two conditions play the same role at two levels and are not the same condition. $\mathrm{ad}_K$ is blind to the trace, $\operatorname{ad}_{\lambda\mathrm{I}}=0$, so derivations correspond to matrices modulo the scalars, never to trace-zero matrices. Trace zero picks a representative; the Leibniz rule is what cuts. The cuts also differ in size: $16\to15$ on the matrix side, $256\to15$ on the operator side. Write the analogue, never the identity.</li>
+<li><strong>The word derivation is an operator word.</strong> <em>Algebra and Element Conventions</em> lists a derivation among the objects that are not matrices, so the word is available for the second condition at the operator level and carries no array. Write <em>the anti-Hermitian derivations of $M_4$</em>, never <em>the traceless operators</em>.</li>
+<li><strong>Numbers, not adjectives.</strong> Every quantitative claim carries a residual or an exact count, as in the tables below.</li>
+</ul>
+<h2 id="numbers-to-verify">Numbers to Verify</h2>
+<p>Measured 2026-11-24 on the working tree, $\mathbb{B}$ as $M_2(\mathbb{C})$ with $\vec e_k=-i\sigma_k$, one hundred draws for the order-two rows and twenty for the order-four rows, Gaussian elimination over the rationals for rank, the exponential series truncated at forty-five terms so that the truncation is the whole error. The generators are quoted after the basis change to the orthonormal basis $e_\mu/\sqrt2$, where the Hilbert–Schmidt adjoint is the conjugate transpose.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_v$ anti-Hermitian, exactly</td>
+<td>$0$, exact</td>
+</tr>
+<tr>
+<td>$iL_v$ Hermitian, exactly</td>
+<td>$0$, exact</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}$ of the array of $L_v$</td>
+<td>$0$, exact</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\operatorname{ad}_K$ for $K\in\mathfrak{su}(4)$</td>
+<td>$0$, exact, and for every $K$</td>
+</tr>
+<tr>
+<td>anti-Hermitian derivations at $n=2$</td>
+<td>$3$, exact</td>
+</tr>
+<tr>
+<td>anti-Hermitian derivations at $n=4$</td>
+<td>$15$, exact</td>
+</tr>
+<tr>
+<td>all derivations of $M_n$, real dimension</td>
+<td>$2(n^2-1)$: $6$ and $30$</td>
+</tr>
+<tr>
+<td>$L_v$ Leibniz residual</td>
+<td>$1.9$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_v$ Leibniz residual</td>
+<td>$2.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\det\exp(i\mathrm{I}_2)$, $\det\exp(i\mathrm{I}_4)$</td>
+<td>$(-0.416+0.909i)$, $(-0.654-0.757i)$, neither one</td>
+</tr>
+<tr>
+<td>$\exp(\theta L_v)$ unitary, determinant one</td>
+<td>$1.3\times10^{-13}$</td>
+</tr>
+<tr>
+<td>the vector part keeps its norm and its inner products</td>
+<td>$4.4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the rotation angle equals $\theta$</td>
+<td>$5.6\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the scalar part is fixed</td>
+<td>$5.7\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$T_{\rho,\rho^{-1}}$ unitary, determinant one on $\mathrm{End}(\mathbb{B})$</td>
+<td>$6.7\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\exp$ on $\mathfrak{su}(4)$: unitary, determinant one</td>
+<td>$8.9\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$T_{U,U^{-1}}$ unitary, determinant one on $M_{16}$</td>
+<td>$1.1\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$\det L_U=(\det U)^4$</td>
+<td>$1.2\times10^{-15}$</td>
+</tr>
+<tr>
+<td>the conjugation action fixes the scalars</td>
+<td>$1.2\times10^{-15}$</td>
+</tr>
+<tr>
+<td>the six $L_{\vec e_k}$, $R_{\vec e_k}$ real antisymmetric and independent</td>
+<td>rank $6$, exact</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_v(w)=2\,v\times w$ on the nine basis pairs</td>
+<td>$0$ failures</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three structural counts are exact and need no sampling: $\dim\mathfrak{su}(2)=3$, $\dim\mathfrak{su}(4)=15$, $\dim\mathfrak{so}(4)=6$. The kernel of the algebra action, $\{\pm e_t\}$ at order two and $\mathbb{Z}_4$ at order four, is a proof from the centre and not a sampling.</p>
+<h2 id="repairs-that-come-first">Repairs That Come First</h2>
+<p><strong>R1 — the unlisted $SU(4)$ article.</strong> <code>the-exponential-of-the-traceless-anti-hermitian-part-su4-and-the-rotors-of-the-six-space.md</code> exists, is 325 lines long, and is linked from nothing in <code>maths.md</code>. Insert it under <code>#### The Exponential, the Rotor and the Polar Decomposition</code> (8588), immediately after the symmetric-part article at 8605 and before <em>The Polar Decomposition of $M_4(\mathbb{C})$</em> at 8608, so that the anti-Hermitian and the symmetric exponentials read as the pair they are. Without this, C and D will cite an article the reader cannot reach.</p>
+<p><strong>R2 — the missing two-layer split in the $M_4(\mathbb{C})$ operator section.</strong> The $M_2(\mathbb{C})$ section separates "The Matrix Operators at $n=2$" from "Operators of the Biquaternion Algebra" and says so once. The $M_4(\mathbb{C})$ section has no such split, and seven of the thirteen articles of its two lowest subsections act on the biquaternion algebra and not on $M_4$: the one-sided operators, the left ideals, the two-sided operators and the Segre cone, the coefficient matrix, the ten ranks, the length and the two ranks, and the extraspecial group. Adding two articles there before deciding that split would deepen the defect. The measurement is in the audit of that row; the decision is the author's.</p>
+<h2 id="order-of-work">Order of Work</h2>
+<ol>
+<li>R1, then R2's decision.</li>
+<li>A and B as a pair, so that the abstract and the matrix statement are written against each other.</li>
+<li>C, which depends on A for the six and on the split $16=15+1$.</li>
+<li>D, which depends on C for the fifteen and on the Kronecker article for the matrices.</li>
+<li>For each article: the file, the menu line with its comment, the two-way cross-references, and a rebuild of the internal and mathematical trees.</li>
+</ol>
+<h2 id="what-not-to-write">What Not to Write</h2>
+<ul>
+<li>Do not reprove the element-level statements. Cite the two published articles and the two internal notes.</li>
+<li>Do not write $e^{H}$ for a Hermitian generator. Write $e^{iH}$, or use the anti-Hermitian form.</li>
+<li>Do not claim that the exponential is injective, and do not claim that $SU(4)$ acts faithfully on $M_4$: its centre acts trivially.</li>
+<li>Do not state a trace condition on the operator and expect it to select the fifteen. It cannot: $\operatorname{tr}\operatorname{ad}_K=0$ for every $K$. The second condition at the operator level is the Leibniz rule, and it is what cuts $\mathfrak{u}(16)$ down to fifteen.</li>
+<li>Do not let <em>anti-Hermitian</em> stand alone in a title, a heading or a first sentence. It is necessary and not sufficient; the group appears only when the second condition is named beside it.</li>
+<li>Do not say that $L_v$ or $R_v$ is a derivation. Neither is, and the six of them are the spinor copy, not the conjugation.</li>
+<li>Do not claim that $SU(4)$ is a symmetry of the multiplication. $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$ is six real dimensions and meets $SU(4)$ in three.</li>
+<li>Do not merge the left and the right copies into one $SU(2)$. They commute, each is the commutant of the other, and the diagonal combination $L-R$ is the only one that generates the rotation.</li>
+<li>Do not call an operator traceless at all, and do not call an element of $\mathbb{B}$ traceless: write <em>scalar-free</em> for the element, and write the trace symbol on a named array for the operator. Do not call an element of $\mathrm{SU}(4)$ a rotor without naming the carrier.</li>
+</ul>
+<h2 id="open-for-the-author">Open for the Author</h2>
+<ul>
+<li>Whether C and D are one article in two frames or two articles. The corpus habit is a pair, and the split proposed here is proof method: C without coordinates, D in the Kronecker frame.</li>
+<li>Whether B is worth a file, or whether the $M_2(\mathbb{C})$ row should carry the matrix display inside A. The row's habit is a mirror article, so B is the recommendation.</li>
+<li>Whether the titles should stay in the locator grid of §<em>Titles</em> or move to one of the alternates; the grid is the recommendation because four locators of one grammatical shape read as one set.</li>
+<li>Whether the ordinal position is right. The fourth subsection puts the exponential before the length where a length subsection exists, so the four rows read in parallel; the alternative is at the end of each row, after the rotor subsections, which would make the four sections end alike instead.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
