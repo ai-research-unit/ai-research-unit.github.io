@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="audit-of-the-letters">Audit of the Letters</h1>
 <p><em>What this file is.</em> One row per glyph, with its sense and its count, for the two published collections. It is a measurement, not a rule. The reserved letters and the reserved element glyphs open the file in two tables of their own, each with a column for the reserved sense and a column for every other sense, so that a non-empty second column reads as a violation. Where a row disagrees with a rule of the conventions articles, the row is evidence and the rule is a claim, and the gap is listed in §<em>The Gaps</em>.</p>
-<p><em>The file keeps no history.</em> What it states is the corpora as they stand. A count that disagrees with the corpus is a defect and is overwritten, not annotated. A repair is reported as the state it leaves, never as the change it made. No row carries a date, an age, or a note on what it used to say, because a reader who wants the corpus wants the count, and a reader who wants the past has the repository. Two things survive an edit and only two: the glyph and its sense. Every number beside them is read again from the files.</p>
+<p><em>There is no history here, and no interest in one.</em> What this file states is the corpora as they stand. A count that disagrees with the corpus is a defect and is overwritten, not annotated. A repair is reported as the state it leaves, never as the change it made. No row carries a date, an age, or a note on what it used to say, because a reader who wants the corpus wants the count, and a reader who wants the past has the repository. Two things survive an edit and only two: the glyph and its sense. Every number beside them is read again from the files.</p>
 <p><em>Scope.</em> <code>articles_maths/*.md</code>, 2 633 files, and <code>articles_physics/*.md</code>, 679 files. Only the math delimiters are read, <code>$…$</code> and <code>$$…$$</code>; prose is not counted. A word inside a display is not counted letter by letter: the contents of <code>\mathrm{…}</code>, <code>\text{…}</code>, <code>\operatorname{…}</code>, <code>\mathbb{…}</code>, <code>\mathcal{…}</code> and their kin are excluded, so that <code>\mathrm{opp}</code> adds no <code>p</code>. An upright group that carries a subscript is read only through that subscript, and the subscript is a <strong>label</strong> (§<em>The Labels</em>). 812 157 spans in total, and <strong>1 973 609</strong> glyph occurrences inside them: 1 410 812 in the maths corpus, 562 797 in the physics corpus.</p>
 <p><em>How the counts are made.</em> One occurrence is one glyph between two math delimiters, or one Greek command. Each occurrence is filed under the mark that follows it and under its nesting: <strong>bare</strong> (no mark), <strong>marked</strong> (a subscript of its own), <strong>exponent</strong> (a superscript of its own), <strong>index</strong> (inside the subscript or the superscript of another glyph), <strong>accented</strong> (under <code>\vec</code>, <code>\tilde</code>, <code>\bar</code>, <code>\hat</code>, <code>\breve</code>, <code>\check</code>, <code>\dot</code> or <code>\ddot</code>). An accent overlaps the other four files and is not a fifth file. So $c^2$ is filed as an exponent, $e_x$ as marked, $\lambda_i$ as marked with the label <code>i</code>, and the $i$ of $\lambda_i$ as an index.</p>
 <p><em>What the reading costs.</em> The assignment of a mark to a sense is an interpretation, not a datum: a subscript may carry two senses, and a bare letter may be generic or may be a named object. The four context files are exact; the sense column is approximate.</p>
@@ -250,7 +250,7 @@
 </tbody>
 </table></div>
 <p>The <code>\Pi</code> shape is spent three ways, and the tag is what separates them. In maths, of 15 609 occurrences, 6 452 carry the tag <code>\mathrm{id}</code> or <code>\mathrm{nil}</code> and are reserved, 723 are bare and forbidden, and the remaining 8 434 carry a sign, a number or a label. Of the sign, <code>\Pi_\pm</code> is the projection and is permitted; a numbered or a labelled form is read from its subscript. In physics the same three figures are 4 264, 312 and 1 802.</p>
-<p>In the same way, of the 14 318 occurrences of <code>\pi</code> in maths, 911 are a potent carrying a tag, 8 300 are the number bare, and the rest carry a sign, a number or a label; in physics the same three figures are 79, 11 042 and 4 168.</p>
+<p>In the same way, of the 14 318 occurrences of <code>\pi</code> in maths, 911 are a potent carrying a tag and 13 407 are the number, 8 300 of them bare; in physics the same two figures are 79 and 15 210, 11 042 of them bare.</p>
 <p>The <strong><code>\xi</code>, <code>Ξ</code></strong> row is the only defect of the table that is typographic. The field is written correctly in 15 858 sites, and the other column is the same object written with the command <code>\Xi</code> rather than the character <code>Ξ</code>. The conventions forbid the command, because the majuscule of the field is meant to be read at a glance and never resolved against the element $X$; the repair is one token for one character, and it changes no sense.</p>
 <h2 id="the-violations-in-order-of-cost">The Violations, in Order of Cost</h2>
 <p><em>How a violation is repaired.</em> The preferred repair is a <strong>more appropriate letter that is not reserved</strong>: the object moves to a glyph that names it better, and no glyph of §<em>The Reserved Letters</em> and §<em>Reserved Element Glyphs</em> is spent on it. A letter already bound in the display is never the answer, and a second sense on a reserved glyph is never the answer either. Where no such letter is free — because every nearby glyph is taken, or because the object has no customary letter — the fallback is a <strong>rare letter with a long subscript</strong>: a glyph the corpus seldom uses, carrying a subscript that spells the sense out in full, <code>\digamma_{\mathrm{…}}</code> being the model. The two rules are ordered: the appropriate letter first, the rare letter and the long subscript only when the first fails.</p>
@@ -315,7 +315,7 @@
 </tbody>
 </table></div>
 <p>The first three rows are five sixths of the outstanding work. Ranks 1 and 2 are mechanical: one glyph moves to another, and no sentence changes. Rank 2 is the only row that moves an object into one of the eleven reserved scalars, and it is allowed for the reason the rule exists: the object is the eigenvalue and <code>\eta</code> is the eigenvalue's own letter, so the repair removes a second sense rather than adding one. Every other row follows the preferred repair and spends no reserved glyph. Rank 4 is typographic and changes no sense. Rank 8 is the fallback class, where the object leaves a family that does not own it and takes <code>\digamma</code> with a long subscript.</p>
-<p><em>The lowercase is not a row.</em> <code>\phi</code>, <code>\varphi</code> and <code>\psi</code> occur 85 times in the two corpora, every one of them inside the eight conventions articles, where §<em>Sectors</em> has to print the glyph to forbid it. No article carries one. The five objects those glyphs named are written with a glyph of their own: the wavefunction $Ξ_{\mathrm{wfn}}$, the potential $\xi_{\mathrm{pot}}$, the map $\digamma_{\mathrm{map}}$, the formula of logic $\digamma_{\mathrm{fml}}$, the totient $\digamma_{\mathrm{tot}}$, and the rotation angle $\digamma_{\mathrm{ang}}$.</p>
+<p><em>The lowercase is not a row.</em> <code>\phi</code>, <code>\varphi</code> and <code>\psi</code> occur 85 times in the two corpora, every one of them inside the eight conventions articles, where §<em>Sectors</em> has to print the glyph to forbid it. No article carries one. Two draft files that carry no <code>.md</code> suffix lie outside the scope of this file and still print the glyph at 13 sites. The five objects those glyphs name are written with a glyph of their own: the wavefunction $Ξ_{\mathrm{wfn}}$, the potential $\xi_{\mathrm{pot}}$, the map $\digamma_{\mathrm{map}}$, the formula of logic $\digamma_{\mathrm{fml}}$, the totient $\digamma_{\mathrm{tot}}$, and the rotation angle $\digamma_{\mathrm{ang}}$.</p>
 <h2 id="latin-lowercase">Latin Lowercase</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -1234,16 +1234,16 @@
 <td>central</td>
 </tr>
 <tr>
-<td><code>phb</code></td>
-<td style="text-align: right;">279</td>
-<td style="text-align: right;">0</td>
-<td>phase, the second of the two</td>
-</tr>
-<tr>
 <td><code>azm</code></td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">278</td>
 <td>azimuth</td>
+</tr>
+<tr>
+<td><code>phb</code></td>
+<td style="text-align: right;">279</td>
+<td style="text-align: right;">0</td>
+<td>phase, the second of the two</td>
 </tr>
 <tr>
 <td><code>vac</code></td>
