@@ -110,14 +110,14 @@ a sum of terms each depending on a single coordinate, the constants $\alpha_i$ b
 **Theorem (the criterion of separation).** Suppose that in the Hamiltonian one coordinate $q_k$ and its conjugate gradient $\partial W/\partial q_k$ occur only through a single function,
 
 $$
-H = H\Bigl(q_1,\dots,\widehat{q_k},\dots,q_f;\, \frac{\partial W}{\partial q_1},\dots,\widehat{\frac{\partial W}{\partial q_k}},\dots,\frac{\partial W}{\partial q_f};\, \psi\Bigl(q_k,\frac{\partial W}{\partial q_k}\Bigr)\Bigr),
+H = H\Bigl(q_1,\dots,\widehat{q_k},\dots,q_f;\, \frac{\partial W}{\partial q_1},\dots,\widehat{\frac{\partial W}{\partial q_k}},\dots,\frac{\partial W}{\partial q_f};\, Ξ_{\mathrm{wfn}}\Bigl(q_k,\frac{\partial W}{\partial q_k}\Bigr)\Bigr),
 $$
 
-the hat marking a missing entry. Then the equation separates in $q_k$, and $\psi=\Gamma_k$ is a constant.
+the hat marking a missing entry. Then the equation separates in $q_k$, and $Ξ_{\mathrm{wfn}}=\Gamma_k$ is a constant.
 
-*Proof.* Write the reduced equation as $H(\dots,\psi,\dots)=\alpha_1$. Differentiate with respect to $q_k$ at fixed values of the other coordinates and of the other gradients. The left side becomes $\partial H/\partial\psi\cdot d\psi/dq_k$, because $q_k$ occurs only through $\psi$; the right side is zero because $\alpha_1$ is constant and the other arguments are held fixed. Hence $\partial H/\partial\psi\cdot d\psi/dq_k=0$. Where $\partial H/\partial\psi\neq0$, which is the nondegenerate case, this gives $d\psi/dq_k=0$: the function $\psi$ is a constant $\Gamma_k$.
+*Proof.* Write the reduced equation as $H(\dots,Ξ_{\mathrm{wfn}},\dots)=\alpha_1$. Differentiate with respect to $q_k$ at fixed values of the other coordinates and of the other gradients. The left side becomes $\partial H/\partialΞ_{\mathrm{wfn}}\cdot dΞ_{\mathrm{wfn}}/dq_k$, because $q_k$ occurs only through $Ξ_{\mathrm{wfn}}$; the right side is zero because $\alpha_1$ is constant and the other arguments are held fixed. Hence $\partial H/\partialΞ_{\mathrm{wfn}}\cdot dΞ_{\mathrm{wfn}}/dq_k=0$. Where $\partial H/\partialΞ_{\mathrm{wfn}}\neq0$, which is the nondegenerate case, this gives $dΞ_{\mathrm{wfn}}/dq_k=0$: the function $Ξ_{\mathrm{wfn}}$ is a constant $\Gamma_k$.
 
-The criterion is local and mechanical: a coordinate that enters only through one combination of itself and its own gradient can be separated off, and the value of that combination is a constant of the motion. A **cyclic** coordinate is the extreme instance, since then $q_k$ does not occur at all, $\psi=\partial W/\partial q_k=p_k$, and the separation constant $\Gamma_k=p_k$ is the conserved conjugate momentum of the companion article. Separation and symmetry therefore meet at the cyclic coordinate: the conserved momentum of a symmetry is the simplest separation constant.
+The criterion is local and mechanical: a coordinate that enters only through one combination of itself and its own gradient can be separated off, and the value of that combination is a constant of the motion. A **cyclic** coordinate is the extreme instance, since then $q_k$ does not occur at all, $Ξ_{\mathrm{wfn}}=\partial W/\partial q_k=p_k$, and the separation constant $\Gamma_k=p_k$ is the conserved conjugate momentum of the companion article. Separation and symmetry therefore meet at the cyclic coordinate: the conserved momentum of a symmetry is the simplest separation constant.
 
 **Remark (the dependence on the coordinates).** Whether the equation separates is a property of the pair consisting of the Hamiltonian and the coordinate system, not of the Hamiltonian alone. The same potential may separate in one system and not in another: the free particle separates in the coordinate systems of the classical list below but not in a general orthogonal system, the Coulomb potential separates both in spherical and in parabolic coordinates while a general central potential separates only in the spherical ones, and the uniform field, which does not separate in spherical coordinates, separates in parabolic ones. The choice of coordinates is therefore part of the method, and the classification of the favourable choices is the content of the next two subsections.
 
@@ -145,27 +145,27 @@ $$
 
 with $U_i$ a function of the single coordinate $q_i$, and if the factors $1/h_i^2$ are nested as in the classical orthogonal systems, then the equation separates additively: clearing the denominators from the innermost coordinate outwards produces, at each step, an equation in a single coordinate whose constant parametrises the next. Conversely, among the classical separable systems, the condition is also necessary.
 
-*Proof (three-dimensional Euclidean case).* Write $A_i=\frac{1}{2m}(\partial W_i/\partial q_i)^2+U_i$ for the bracket of the coordinate $q_i$, so that the reduced equation in spherical coordinates reads $A_r+A_\theta/r^2+A_\phi/(r^2\sin^2\theta)=\alpha_1$. Multiplication by $r^2$ gives
+*Proof (three-dimensional Euclidean case).* Write $A_i=\frac{1}{2m}(\partial W_i/\partial q_i)^2+U_i$ for the bracket of the coordinate $q_i$, so that the reduced equation in spherical coordinates reads $A_r+A_\theta/r^2+A_\digamma_{\mathrm{map}}/(r^2\sin^2\theta)=\alpha_1$. Multiplication by $r^2$ gives
 
 $$
-r^2(A_r-\alpha_1) + A_\theta + \frac{A_\phi}{\sin^2\theta} = 0 ,
+r^2(A_r-\alpha_1) + A_\theta + \frac{A_\digamma_{\mathrm{map}}}{\sin^2\theta} = 0 ,
 $$
 
-in which the first group depends on $r$ alone and the second on $\theta,\phi$ alone; being equal and opposite, both are constant, say $A_\theta+A_\phi/\sin^2\theta=\Gamma_\theta$, whence the radial equation $A_r+\Gamma_\theta/r^2=\alpha_1$. Multiplication of that constant equation by $\sin^2\theta$ gives
+in which the first group depends on $r$ alone and the second on $\theta,\digamma_{\mathrm{map}}$ alone; being equal and opposite, both are constant, say $A_\theta+A_\digamma_{\mathrm{map}}/\sin^2\theta=\Gamma_\theta$, whence the radial equation $A_r+\Gamma_\theta/r^2=\alpha_1$. Multiplication of that constant equation by $\sin^2\theta$ gives
 
 $$
-\sin^2\theta\,(A_\theta-\Gamma_\theta) + A_\phi = 0 ,
+\sin^2\theta\,(A_\theta-\Gamma_\theta) + A_\digamma_{\mathrm{map}} = 0 ,
 $$
 
-and the same argument separates $\phi$: the term $A_\phi$ is a function of $\phi$ alone and $\sin^2\theta(A_\theta-\Gamma_\theta)$ a function of $\theta$ alone, so both are constant, $A_\phi=\Gamma_\phi$ and $A_\theta+\Gamma_\phi/\sin^2\theta=\Gamma_\theta$. Three equations in one coordinate each have been obtained, with the separation constants $\Gamma_\phi,\Gamma_\theta$ and the energy $\alpha_1$. The general $f$-dimensional case is the same clearing of denominators, performed from the innermost factor outwards; the hypothesis on the potential is exactly what makes the one-coordinate groups appear at each step.
+and the same argument separates $\digamma_{\mathrm{map}}$: the term $A_\digamma_{\mathrm{map}}$ is a function of $\digamma_{\mathrm{map}}$ alone and $\sin^2\theta(A_\theta-\Gamma_\theta)$ a function of $\theta$ alone, so both are constant, $A_\digamma_{\mathrm{map}}=\Gamma_\digamma_{\mathrm{map}}$ and $A_\theta+\Gamma_\digamma_{\mathrm{map}}/\sin^2\theta=\Gamma_\theta$. Three equations in one coordinate each have been obtained, with the separation constants $\Gamma_\digamma_{\mathrm{map}},\Gamma_\theta$ and the energy $\alpha_1$. The general $f$-dimensional case is the same clearing of denominators, performed from the innermost factor outwards; the hypothesis on the potential is exactly what makes the one-coordinate groups appear at each step.
 
 The content of the theorem is that the **same** coordinate-dependent factor multiplies the potential term and the momentum term of each coordinate, so the factor can be cleared and the coordinate isolated. For the free Hamiltonian of three-dimensional Euclidean space in spherical coordinates,
 $$
-H = \frac{1}{2m}\Bigl(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\phi^2}{r^2\sin^2\theta}\Bigr) + U ,
+H = \frac{1}{2m}\Bigl(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\digamma_{\mathrm{map}}^2}{r^2\sin^2\theta}\Bigr) + U ,
 $$
 the factors are $1$, $1/r^2$ and $1/(r^2\sin^2\theta)$, so the Stäckel form of the potential is
 $$
-U(r,\theta,\phi) = U_r(r) + \frac{U_\theta(\theta)}{r^2} + \frac{U_\phi(\phi)}{r^2\sin^2\theta} .
+U(r,\theta,\digamma_{\mathrm{map}}) = U_r(r) + \frac{U_\theta(\theta)}{r^2} + \frac{U_\digamma_{\mathrm{map}}(\digamma_{\mathrm{map}})}{r^2\sin^2\theta} .
 $$
 This is the precise sense in which separation is a match between the potential and the metric: the potential must reproduce the nesting of the scale factors. A general potential, such as the uniform field $U=Fz=Fr\cos\theta$, does not have the form, and indeed does not separate in spherical coordinates — it separates in the parabolic coordinates of the examples below.
 
@@ -189,58 +189,58 @@ and each is a function of the separation constants alone, so the Hamilton–Jaco
 
 ### The Central Force
 
-**Example (the central force in polar coordinates).** For a particle in a plane in a central potential $V(r)$ the Hamiltonian in polar coordinates $(r,\phi)$ is
+**Example (the central force in polar coordinates).** For a particle in a plane in a central potential $V(r)$ the Hamiltonian in polar coordinates $(r,\digamma_{\mathrm{map}})$ is
 $$
-H = \frac{1}{2m}\Bigl(p_r^2+\frac{p_\phi^2}{r^2}\Bigr) + V(r) .
+H = \frac{1}{2m}\Bigl(p_r^2+\frac{p_\digamma_{\mathrm{map}}^2}{r^2}\Bigr) + V(r) .
 $$
-The coordinate $\phi$ is cyclic, so $p_\phi=\alpha_\phi$ is a separation constant and the angular momentum; the characteristic function is $W=W_r(r)+\alpha_\phi\phi$ with
+The coordinate $\digamma_{\mathrm{map}}$ is cyclic, so $p_\digamma_{\mathrm{map}}=\alpha_\digamma_{\mathrm{map}}$ is a separation constant and the angular momentum; the characteristic function is $W=W_r(r)+\alpha_\digamma_{\mathrm{map}}\digamma_{\mathrm{map}}$ with
 $$
-\frac{dW_r}{dr} = \sqrt{2m\bigl(\alpha_1-V(r)\bigr) - \frac{\alpha_\phi^2}{r^2}} ,
+\frac{dW_r}{dr} = \sqrt{2m\bigl(\alpha_1-V(r)\bigr) - \frac{\alpha_\digamma_{\mathrm{map}}^2}{r^2}} ,
 $$
-and the two quadratures $\partial W/\partial\alpha_1=\beta_1$ and $\partial W/\partial\alpha_\phi=\beta_\phi$ read
+and the two quadratures $\partial W/\partial\alpha_1=\beta_1$ and $\partial W/\partial\alpha_\digamma_{\mathrm{map}}=\beta_\digamma_{\mathrm{map}}$ read
 $$
-\int^{r}\frac{m\,ds}{\sqrt{2m(\alpha_1-V(s))-\alpha_\phi^2/s^2}} = t+\beta_1 ,
+\int^{r}\frac{m\,ds}{\sqrt{2m(\alpha_1-V(s))-\alpha_\digamma_{\mathrm{map}}^2/s^2}} = t+\beta_1 ,
 \qquad
-\phi - \int^{r}\frac{\alpha_\phi\,ds}{s^2\sqrt{2m(\alpha_1-V(s))-\alpha_\phi^2/s^2}} = \beta_\phi .
+\digamma_{\mathrm{map}} - \int^{r}\frac{\alpha_\digamma_{\mathrm{map}}\,ds}{s^2\sqrt{2m(\alpha_1-V(s))-\alpha_\digamma_{\mathrm{map}}^2/s^2}} = \beta_\digamma_{\mathrm{map}} .
 $$
 The first is the time along the orbit and the second is the orbit itself. This is the classical reduction of the central-force problem to two quadratures, and the Stäckel form of the potential is $V=V_r(r)$ with the other terms absent.
 
-**Example (the Kepler problem and the conic).** For $V(r)=-k/r$ the second quadrature integrates in closed form. With $u=1/r$ and the angular momentum $L=\alpha_\phi$, the orbit relation is
+**Example (the Kepler problem and the conic).** For $V(r)=-k/r$ the second quadrature integrates in closed form. With $u=1/r$ and the angular momentum $L=\alpha_\digamma_{\mathrm{map}}$, the orbit relation is
 $$
-u = \frac{mk}{L^2}\bigl(1+e\cos(\phi-\phi_0)\bigr), \qquad e = \sqrt{1+\frac{2\alpha_1L^2}{mk^2}} ,
+u = \frac{mk}{L^2}\bigl(1+e\cos(\digamma_{\mathrm{map}}-\digamma_{\mathrm{map},0})\bigr), \qquad e = \sqrt{1+\frac{2\alpha_1L^2}{mk^2}} ,
 $$
 a conic with one focus at the centre and eccentricity $e$; the sign of the energy decides the type, $e<1$ an ellipse for $\alpha_1<0$, $e=1$ a parabola for $\alpha_1=0$ and $e>1$ a hyperbola for $\alpha_1>0$. The computation is the classical solution of the Kepler problem by the Hamilton–Jacobi method, and it shows the characteristic feature of the separable case: the orbit is obtained from the quadrature of $W_r$ without integrating the equations of motion. The same quadrature, read as a function of the time, is Kepler's equation.
 
 ### Spherical Coordinates
 
-**Example (the spherical separation).** In spherical coordinates $(r,\theta,\phi)$ the Hamiltonian is as displayed above. For a central potential $U(r)$ the coordinate $\phi$ is cyclic, giving the constant $\alpha_\phi=p_\phi$, the component of the angular momentum along the polar axis; the coordinate $\theta$ gives the second separation constant
+**Example (the spherical separation).** In spherical coordinates $(r,\theta,\digamma_{\mathrm{map}})$ the Hamiltonian is as displayed above. For a central potential $U(r)$ the coordinate $\digamma_{\mathrm{map}}$ is cyclic, giving the constant $\alpha_\digamma_{\mathrm{map}}=p_\digamma_{\mathrm{map}}$, the component of the angular momentum along the polar axis; the coordinate $\theta$ gives the second separation constant
 $$
-\alpha_\theta^2 = p_\theta^2 + \frac{p_\phi^2}{\sin^2\theta} ,
+\alpha_\theta^2 = p_\theta^2 + \frac{p_\digamma_{\mathrm{map}}^2}{\sin^2\theta} ,
 $$
 which is the squared magnitude of the angular momentum $|\vec L|^2$; and the radial equation is
 $$
 \frac{1}{2m}\Bigl(p_r^2+\frac{|\vec L|^2}{r^2}\Bigr)+U(r) = \alpha_1 ,
 $$
-with the energy as the third constant. The three constants $\alpha_1$, $|\vec L|^2$ and the axial component of $\vec L$ are the three commuting integrals of the spherical case, and they are read off directly from the separated equations. For the general Stäckel potential $U$ the $\phi$ equation is instead $(\partial W_\phi/\partial\phi)^2=2m\bigl(\Gamma_\phi-U_\phi(\phi)\bigr)$, whose constant $\Gamma_\phi$ is the bracket of the $\phi$ coordinate rather than the axial momentum; the central case is the one in which $U_\phi$ is constant and the bracket reduces to $\alpha_\phi^2/2m$. For the Kepler potential $U=-k/r$ the three constants reduce to the classical integrals of the Coulomb problem, and for the isotropic oscillator $U=\frac12m\omega^2r^2$ they exhibit the accidental degeneracy of that problem, whose extra integral is algebraic in the separated momenta.
+with the energy as the third constant. The three constants $\alpha_1$, $|\vec L|^2$ and the axial component of $\vec L$ are the three commuting integrals of the spherical case, and they are read off directly from the separated equations. For the general Stäckel potential $U$ the $\digamma_{\mathrm{map}}$ equation is instead $(\partial W_\digamma_{\mathrm{map}}/\partial\digamma_{\mathrm{map}})^2=2m\bigl(\Gamma_\digamma_{\mathrm{map}}-U_\digamma_{\mathrm{map}}(\digamma_{\mathrm{map}})\bigr)$, whose constant $\Gamma_\digamma_{\mathrm{map}}$ is the bracket of the $\digamma_{\mathrm{map}}$ coordinate rather than the axial momentum; the central case is the one in which $U_\digamma_{\mathrm{map}}$ is constant and the bracket reduces to $\alpha_\digamma_{\mathrm{map}}^2/2m$. For the Kepler potential $U=-k/r$ the three constants reduce to the classical integrals of the Coulomb problem, and for the isotropic oscillator $U=\frac12m\omega^2r^2$ they exhibit the accidental degeneracy of that problem, whose extra integral is algebraic in the separated momenta.
 
 ### Parabolic Coordinates and the Stark Effect
 
 **Example (the parabolic separation of the Coulomb problem).** Introduce the parabolic coordinates
 $$
-\zeta = r+z , \qquad \eta = r-z , \qquad \phi ,
+\zeta = r+z , \qquad \eta = r-z , \qquad \digamma_{\mathrm{map}} ,
 $$
 so that $r=(\zeta+\eta)/2$ and $z=(\zeta-\eta)/2$. The Hamiltonian of a particle of mass $m$ in the Coulomb potential $-\kappa/r$ together with a uniform field $F$ along the polar axis is
 $$
-H = \frac{2}{m(\zeta+\eta)}\bigl(\zeta\,p_\zeta^2+\eta\,p_\eta^2\bigr) + \frac{p_\phi^2}{2m\zeta\eta} - \frac{2\kappa}{\zeta+\eta} + \frac{F}{2}(\zeta-\eta) .
+H = \frac{2}{m(\zeta+\eta)}\bigl(\zeta\,p_\zeta^2+\eta\,p_\eta^2\bigr) + \frac{p_\digamma_{\mathrm{map}}^2}{2m\zeta\eta} - \frac{2\kappa}{\zeta+\eta} + \frac{F}{2}(\zeta-\eta) .
 $$
 Multiplication by $\zeta+\eta$ separates the equation into a $\zeta$-part and an $\eta$-part,
 $$
-\frac{2}{m}\zeta\Bigl(\frac{\partial W}{\partial\zeta}\Bigr)^2 + \frac{p_\phi^2}{2m\zeta} + \frac{F}{2}\zeta^2 - \alpha_1\zeta = B_1 ,
+\frac{2}{m}\zeta\Bigl(\frac{\partial W}{\partial\zeta}\Bigr)^2 + \frac{p_\digamma_{\mathrm{map}}^2}{2m\zeta} + \frac{F}{2}\zeta^2 - \alpha_1\zeta = B_1 ,
 $$
 $$
-\frac{2}{m}\eta\Bigl(\frac{\partial W}{\partial\eta}\Bigr)^2 + \frac{p_\phi^2}{2m\eta} - \frac{F}{2}\eta^2 - \alpha_1\eta = B_2 ,
+\frac{2}{m}\eta\Bigl(\frac{\partial W}{\partial\eta}\Bigr)^2 + \frac{p_\digamma_{\mathrm{map}}^2}{2m\eta} - \frac{F}{2}\eta^2 - \alpha_1\eta = B_2 ,
 $$
-with the two separation constants subject to $B_1+B_2=2\kappa$, the energy $\alpha_1$ and the axial momentum $p_\phi$ being the other two constants. The potential $-\kappa/r+Fz$ therefore separates in parabolic coordinates although it does not separate in spherical ones; this is the coordinate system of the Stark effect, in which the hydrogen atom in a uniform electric field is solved, and the two separation constants $B_1,B_2$ replace the angular momentum of the field-free spherical description, from which they differ because the field has broken the spherical symmetry.
+with the two separation constants subject to $B_1+B_2=2\kappa$, the energy $\alpha_1$ and the axial momentum $p_\digamma_{\mathrm{map}}$ being the other two constants. The potential $-\kappa/r+Fz$ therefore separates in parabolic coordinates although it does not separate in spherical ones; this is the coordinate system of the Stark effect, in which the hydrogen atom in a uniform electric field is solved, and the two separation constants $B_1,B_2$ replace the angular momentum of the field-free spherical description, from which they differ because the field has broken the spherical symmetry.
 
 ### Elliptic Coordinates and the Two-Centre Problem
 
@@ -258,7 +258,7 @@ The Hamilton–Jacobi method is not an algorithm for all systems, and three limi
 
 The Hamilton–Jacobi equation is the single scalar equation $\partial S/\partial t+H(q,\partial S/\partial q,t)=0$ obtained by asking the canonical transformation with generating function $S$ to make the Hamiltonian vanish; the momenta are the gradients of $S$, and the equation is the condition that the new coordinates be constant. A complete integral $S(q,\alpha,t)$, one carrying $f$ independent constants, solves the system by quadrature: the relations $\beta=\partial S/\partial\alpha$ and $p=\partial S/\partial q$ give the general solution in terms of the $2f$ constants $\alpha,\beta$. For an autonomous Hamiltonian the time separates first and the equation reduces to $H(q,\partial W/\partial q)=\alpha_1$ for the characteristic function $W$, whose constant is the energy.
 
-The equation separates additively when the characteristic function is a sum of one-coordinate terms; each coordinate that enters the Hamiltonian only through one combination of itself and its own gradient can be separated off, and the value of that combination is a constant of the motion. The cyclic coordinate is the extreme case, its separation constant being the conserved momentum. For a Hamiltonian quadratic in the momenta in orthogonal coordinates the systematic criterion is the Stäckel condition: the potential separates if and only if it is a sum of one-coordinate terms, each multiplied by the same coordinate-dependent metric factor that multiplies the corresponding momentum term, which for spherical coordinates is the representation $U=U_r(r)+U_\theta(\theta)/r^2+U_\phi(\phi)/(r^2\sin^2\theta)$; the potentials satisfying it form the Stäckel class, and the coordinate systems in which the free equation separates are the finite classical list of Stäckel and Eisenhart, commonly quoted as eleven in three dimensions. The separation constants are the commuting integrals, the actions are the closed integrals of the separated momenta, and the transformation to the constants is the transformation to the action-angle coordinates.
+The equation separates additively when the characteristic function is a sum of one-coordinate terms; each coordinate that enters the Hamiltonian only through one combination of itself and its own gradient can be separated off, and the value of that combination is a constant of the motion. The cyclic coordinate is the extreme case, its separation constant being the conserved momentum. For a Hamiltonian quadratic in the momenta in orthogonal coordinates the systematic criterion is the Stäckel condition: the potential separates if and only if it is a sum of one-coordinate terms, each multiplied by the same coordinate-dependent metric factor that multiplies the corresponding momentum term, which for spherical coordinates is the representation $U=U_r(r)+U_\theta(\theta)/r^2+U_\digamma_{\mathrm{map}}(\digamma_{\mathrm{map}})/(r^2\sin^2\theta)$; the potentials satisfying it form the Stäckel class, and the coordinate systems in which the free equation separates are the finite classical list of Stäckel and Eisenhart, commonly quoted as eleven in three dimensions. The separation constants are the commuting integrals, the actions are the closed integrals of the separated momenta, and the transformation to the constants is the transformation to the action-angle coordinates.
 
 The examples are the central force, whose separation constant is the angular momentum and whose two quadratures give the orbit and the time; the Kepler problem, whose orbit is the conic of eccentricity $e=\sqrt{1+2\alpha_1L^2/mk^2}$; the spherical coordinates, whose constants are the energy, the squared angular momentum and its axial component; the parabolic coordinates, in which the Coulomb problem in a uniform field separates although it does not in spherical coordinates; and the elliptic coordinates of the two-centre problem. The method's limits are the dependence of separation on the coordinates, the existence of integrable systems that do not separate, and the three-body problem, for which no complete integral and no separation is known.
 
@@ -271,14 +271,14 @@ The examples are the central force, whose separation constant is the angular mom
 | $\partial S/\partial t+H(q,\partial S/\partial q,t)=0$ | Hamilton–Jacobi equation |
 | $H(q,\partial W/\partial q)=\alpha_1$ | Reduced equation; $\alpha_1$ the energy |
 | $\alpha_i$, $\beta_i$ | The $f$ constants of $S$ and their conjugate constants $\partial S/\partial\alpha_i$ |
-| $\Gamma_k$, $\psi(q_k,\partial W/\partial q_k)$ | Separation constant and the separating combination |
+| $\Gamma_k$, $Ξ_{\mathrm{wfn}}(q_k,\partial W/\partial q_k)$ | Separation constant and the separating combination |
 | $h_i$, $1/h_i^2$ | Scale factors of orthogonal coordinates and the metric factors |
 | $U_i(q_i)$ | One-coordinate pieces of the Stäckel potential |
 | Stäckel class | Potentials of the form $U=\sum_i(1/h_i^2)U_i(q_i)$ |
 | $I_i=\frac{1}{2\pi}\oint p_i\,dq_i$ | Action variables of a separable system |
-| $(r,\theta,\phi)$, $(r,\phi)$ | Spherical and polar coordinates |
-| $(\zeta,\eta,\phi)$, $\zeta=r+z$, $\eta=r-z$ | Parabolic coordinates |
-| $\alpha_\phi$, $\alpha_\theta^2=|\vec L|^2$ | Spherical separation constants |
+| $(r,\theta,\digamma_{\mathrm{map}})$, $(r,\digamma_{\mathrm{map}})$ | Spherical and polar coordinates |
+| $(\zeta,\eta,\digamma_{\mathrm{map}})$, $\zeta=r+z$, $\eta=r-z$ | Parabolic coordinates |
+| $\alpha_\digamma_{\mathrm{map}}$, $\alpha_\theta^2=|\vec L|^2$ | Spherical separation constants |
 | $B_1$, $B_2$, $B_1+B_2=2\kappa$ | Parabolic separation constants of the Coulomb-plus-field problem |
 
 ## Further Reading

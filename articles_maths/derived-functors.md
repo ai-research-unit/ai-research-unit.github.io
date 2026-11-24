@@ -33,7 +33,7 @@ $$
 
 **Proposition.** The functors $R^nF$ and $L_nG$ are well defined up to natural isomorphism: they do not depend on the choice of resolution.
 
-*Proof.* Let $I^\bullet,J^\bullet$ be two injective resolutions of $A$. By the comparison theorem the identity of $A$ lifts to chain maps $\varphi:I^\bullet\to J^\bullet$ and $\psi:J^\bullet\to I^\bullet$, and $\psi\varphi$ and $\varphi\psi$ are homotopic to the identities. Applying the additive functor $F$ preserves the homotopies, so $F(\varphi)$ and $F(\psi)$ are mutually inverse up to homotopy, and homotopic maps induce the same map on homology. Hence $H^n(F(I^\bullet))\cong H^n(F(J^\bullet))$ canonically. The projective case is dual.
+*Proof.* Let $I^\bullet,J^\bullet$ be two injective resolutions of $A$. By the comparison theorem the identity of $A$ lifts to chain maps $\digamma_{\mathrm{map}}:I^\bullet\to J^\bullet$ and $Ξ_{\mathrm{wfn}}:J^\bullet\to I^\bullet$, and $Ξ_{\mathrm{wfn}}\digamma_{\mathrm{map}}$ and $\digamma_{\mathrm{map}}Ξ_{\mathrm{wfn}}$ are homotopic to the identities. Applying the additive functor $F$ preserves the homotopies, so $F(\digamma_{\mathrm{map}})$ and $F(Ξ_{\mathrm{wfn}})$ are mutually inverse up to homotopy, and homotopic maps induce the same map on homology. Hence $H^n(F(I^\bullet))\cong H^n(F(J^\bullet))$ canonically. The projective case is dual.
 
 **Proposition.** $R^0F\cong F$ when $F$ is left exact, and $L_0G\cong G$ when $G$ is right exact. In particular the derived functors extend the given functor.
 
@@ -173,7 +173,7 @@ The identification of the two computations of $\operatorname{Ext}^n$, the interp
 
 ### Base Change and Derived Functors
 
-**Proposition.** Let $\varphi:R\to S$ be a homomorphism of commutative rings. For every $R$-module $M$ and every $S$-module $N$ there are natural isomorphisms
+**Proposition.** Let $\digamma_{\mathrm{map}}:R\to S$ be a homomorphism of commutative rings. For every $R$-module $M$ and every $S$-module $N$ there are natural isomorphisms
 
 $$
 \operatorname{Ext}_S^n(S\otimes_RM,N)\cong\operatorname{Ext}_R^n(M,\operatorname{Res}N), \qquad n\ge0,
@@ -185,7 +185,7 @@ $$
 \operatorname{Tor}_n^S(S\otimes_RM,N)\cong\operatorname{Tor}_n^R(M,\operatorname{Res}N), \qquad n\ge0 .
 $$
 
-*Proof.* The adjunction between extension and restriction of scalars gives a natural isomorphism of functors $\operatorname{Hom}_S(S\otimes_RM,-)\cong\operatorname{Hom}_R(M,\operatorname{Res}-)$. Restriction of scalars is exact and carries injective $S$-modules to injective $R$-modules, so an injective resolution of $N$ over $S$ restricts to an injective resolution of $\operatorname{Res}N$ over $R$ and computes the right derived functors on both sides; this gives the first family. For the second, restriction along a flat $\varphi$ makes $S\otimes_R-$ exact, so it carries a projective resolution of $M$ to a projective resolution of $S\otimes_RM$; applying $-\otimes_SN$ and using $(S\otimes_RP)\otimes_SN\cong P\otimes_R\operatorname{Res}N$ gives the isomorphism on homology. Without flatness the two Tor families are related by a spectral sequence rather than by an isomorphism.
+*Proof.* The adjunction between extension and restriction of scalars gives a natural isomorphism of functors $\operatorname{Hom}_S(S\otimes_RM,-)\cong\operatorname{Hom}_R(M,\operatorname{Res}-)$. Restriction of scalars is exact and carries injective $S$-modules to injective $R$-modules, so an injective resolution of $N$ over $S$ restricts to an injective resolution of $\operatorname{Res}N$ over $R$ and computes the right derived functors on both sides; this gives the first family. For the second, restriction along a flat $\digamma_{\mathrm{map}}$ makes $S\otimes_R-$ exact, so it carries a projective resolution of $M$ to a projective resolution of $S\otimes_RM$; applying $-\otimes_SN$ and using $(S\otimes_RP)\otimes_SN\cong P\otimes_R\operatorname{Res}N$ gives the isomorphism on homology. Without flatness the two Tor families are related by a spectral sequence rather than by an isomorphism.
 
 ## Summary
 

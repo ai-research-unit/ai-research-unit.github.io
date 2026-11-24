@@ -16,7 +16,7 @@ The article assumes *The Symmetric Algebra of a Module with an Involution* for $
 
 **Proposition.** The stable ideals are closed under sum, product, intersection and radical: if $I, J$ are stable then $I+J$, $IJ$, $I\cap J$ and $\sqrt I$ are stable. The image and the preimage of a stable ideal under a $\sigma$-equivariant homomorphism of symmetric algebras are stable.
 
-*Proof.* $\sigma(I+J) = \sigma(I)+\sigma(J)\subseteq I+J$; $\sigma(IJ) = \sigma(I)\sigma(J)\subseteq IJ$; the intersection is immediate; $x^n\in I$ gives $\sigma(x)^n = \sigma(x^n)\in I$, so $\sigma(x)\in\sqrt I$. For a $\sigma$-equivariant $\varphi$, $\varphi(I)$ and $\varphi^{-1}(J)$ are stable by equivariance.
+*Proof.* $\sigma(I+J) = \sigma(I)+\sigma(J)\subseteq I+J$; $\sigma(IJ) = \sigma(I)\sigma(J)\subseteq IJ$; the intersection is immediate; $x^n\in I$ gives $\sigma(x)^n = \sigma(x^n)\in I$, so $\sigma(x)\in\sqrt I$. For a $\sigma$-equivariant $\digamma_{\mathrm{map}}$, $\digamma_{\mathrm{map}}(I)$ and $\digamma_{\mathrm{map}}^{-1}(J)$ are stable by equivariance.
 
 **Corollary (the orbit).** The smallest $\sigma$-stable ideal containing a given ideal $J$ is $J+\sigma(J)$; the smallest stable ideal containing an element $u$ is $(u,\sigma(u))$, and it is principal exactly when $\sigma(u)$ is a multiple of $u$.
 

@@ -13,17 +13,17 @@ The handle is the local companion of *The Surgery Operator*: a surgery is what a
 
 **Definition.** Let $W$ be a compact $n$-manifold with boundary and let $0 \leq k \leq n$. A **$k$-handle attachment** to $W$ is the operation of forming
 $$
-W' = W \cup_{\varphi} \bigl(D^k\times D^{n-k}\bigr), \qquad \varphi : S^{k-1}\times D^{n-k}\longrightarrow \partial W,
+W' = W \cup_{\digamma_{\mathrm{map}}} \bigl(D^k\times D^{n-k}\bigr), \qquad \digamma_{\mathrm{map}} : S^{k-1}\times D^{n-k}\longrightarrow \partial W,
 $$
-where $\varphi$ is an embedding of the **attaching region** into the boundary; the disc $D^k\times D^{n-k}$ is the **handle** $h^k$, its core is $D^k\times\{0\}$, its **attaching sphere** is $\varphi(S^{k-1}\times\{0\})$, and its **belt sphere** is $\{0\}\times S^{n-k-1}\subseteq \partial W'$. The **handle operator** is the assignment $H^k_\varphi : [W]\mapsto[W']$.
+where $\digamma_{\mathrm{map}}$ is an embedding of the **attaching region** into the boundary; the disc $D^k\times D^{n-k}$ is the **handle** $h^k$, its core is $D^k\times\{0\}$, its **attaching sphere** is $\digamma_{\mathrm{map}}(S^{k-1}\times\{0\})$, and its **belt sphere** is $\{0\}\times S^{n-k-1}\subseteq \partial W'$. The **handle operator** is the assignment $H^k_\digamma_{\mathrm{map}} : [W]\mapsto[W']$.
 
 **Proposition (the result is a manifold and the boundary is surgered).** The space $W'$ is a compact $n$-manifold with boundary, and its boundary is obtained from $\partial W$ by the surgery that removes the attaching region $S^{k-1}\times D^{n-k}$ and glues in $D^k\times S^{n-k-1}$:
 $$
-\partial W' = \bigl(\partial W \setminus \varphi(S^{k-1}\times\operatorname{int}D^{n-k})\bigr)\cup_{\varphi} \bigl(D^k\times S^{n-k-1}\bigr).
+\partial W' = \bigl(\partial W \setminus \digamma_{\mathrm{map}}(S^{k-1}\times\operatorname{int}D^{n-k})\bigr)\cup_{\digamma_{\mathrm{map}}} \bigl(D^k\times S^{n-k-1}\bigr).
 $$
 Consequently the handle operator on a bordism induces the surgery operator on its boundary, and conversely every surgery of a boundary is realised by a handle attachment.
 
-**Proof.** The handle $D^k\times D^{n-k}$ has boundary $S^{k-1}\times D^{n-k}\cup D^k\times S^{n-k-1}$; the first piece is glued to the boundary of $W$ by the embedding $\varphi$, and the gluing theorem for manifolds with boundary applies because $\varphi$ is an embedding of a codimension-zero submanifold of the boundary. The boundary computation is then the definition of the surgered boundary, which is exactly the operation of *The Surgery Operator*.
+**Proof.** The handle $D^k\times D^{n-k}$ has boundary $S^{k-1}\times D^{n-k}\cup D^k\times S^{n-k-1}$; the first piece is glued to the boundary of $W$ by the embedding $\digamma_{\mathrm{map}}$, and the gluing theorem for manifolds with boundary applies because $\digamma_{\mathrm{map}}$ is an embedding of a codimension-zero submanifold of the boundary. The boundary computation is then the definition of the surgered boundary, which is exactly the operation of *The Surgery Operator*.
 
 **Corollary (the Euler characteristic).** The Euler characteristic changes by the sign of the index,
 $$
@@ -45,7 +45,7 @@ with generator the core of the handle, whose boundary is the attaching sphere.
 $$
 \cdots \longrightarrow H_k(W) \longrightarrow H_k(W') \longrightarrow \mathbb{Z} \xrightarrow{\ \partial\ } H_{k-1}(W) \longrightarrow H_{k-1}(W') \longrightarrow 0 ,
 $$
-the connecting map sends the generator to the class $A = [\varphi(S^{k-1})]\in H_{k-1}(W)$ of the attaching sphere. Hence
+the connecting map sends the generator to the class $A = [\digamma_{\mathrm{map}}(S^{k-1})]\in H_{k-1}(W)$ of the attaching sphere. Hence
 $$
 \boxed{\;H_i(W')\cong H_i(W)\quad (i \leq k-2,\ i\geq k+1), \qquad H_{k-1}(W')\cong H_{k-1}(W)\big/\langle A\rangle\;} ,
 $$
@@ -109,14 +109,14 @@ A $k$-handle is the disc $D^k\times D^{n-k}$ attached to the boundary of a compa
 
 | Symbol | Meaning |
 |---|---|
-| $W$, $W' = W\cup_\varphi(D^k\times D^{n-k})$ | a compact manifold with boundary and its handle attachment |
+| $W$, $W' = W\cup_\digamma_{\mathrm{map}}(D^k\times D^{n-k})$ | a compact manifold with boundary and its handle attachment |
 | $h^k = D^k\times D^{n-k}$ | the $k$-handle, an index-$k$ handle |
-| $\varphi : S^{k-1}\times D^{n-k}\to\partial W$ | the attaching map onto the attaching region |
-| attaching sphere, belt sphere | $\varphi(S^{k-1}\times\{0\})\subseteq\partial W$ and $\{0\}\times S^{n-k-1}\subseteq\partial W'$ |
-| $H^k_\varphi$ | the handle operator, $[W]\mapsto[W']$ |
+| $\digamma_{\mathrm{map}} : S^{k-1}\times D^{n-k}\to\partial W$ | the attaching map onto the attaching region |
+| attaching sphere, belt sphere | $\digamma_{\mathrm{map}}(S^{k-1}\times\{0\})\subseteq\partial W$ and $\{0\}\times S^{n-k-1}\subseteq\partial W'$ |
+| $H^k_\digamma_{\mathrm{map}}$ | the handle operator, $[W]\mapsto[W']$ |
 | $\partial W'$ | the boundary of $W'$, the surgery of $\partial W$ along the attaching sphere |
 | $H_i(W',W)\cong\mathbb{Z}$ at $i=k$ | the relative homology of the handle |
-| $A = [\varphi(S^{k-1})]\in H_{k-1}(W)$ | the class killed in degree $k-1$; the free $\mathbb{Z}$ in degree $k$ if $A=0$ |
+| $A = [\digamma_{\mathrm{map}}(S^{k-1})]\in H_{k-1}(W)$ | the class killed in degree $k-1$; the free $\mathbb{Z}$ in degree $k$ if $A=0$ |
 | $\chi(W') = \chi(W)+(-1)^k$ | the change of the Euler characteristic |
 | elementary expansion / collapse | the chain-level form of the handle operator |
 | $c_k$, Morse inequalities | the number of $k$-handles and the bounds $c_k\geq b_k$, $\sum(-1)^kc_k = \chi$ |

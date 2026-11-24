@@ -35,15 +35,15 @@ The prerequisites are *Measure Theory and Integration* for the Lebesgue integral
 
 **Theorem (Riemann–Lebesgue).** $(\mathcal F f)(\zeta)\to0$ as $\lvert\zeta\rvert\to\infty$, for every $f\in L^1$; more precisely, the transform maps the space of compactly supported step functions onto a dense subspace of $C_0$ and is injective on $L^1$.
 
-**Proof sketch.** For the indicator of a box the transform is an explicit product of sinc functions, which tends to $0$; the step functions are dense in $L^1$ and the map is bounded, so the limit holds for all $f\in L^1$. Injectivity is the consequence of the inversion theorem below: if $\mathcal F f = 0$ then $\int f\bar\phi = 0$ for every Schwartz function $\phi$, by the multiplication formula, and the Schwartz functions are dense.
+**Proof sketch.** For the indicator of a box the transform is an explicit product of sinc functions, which tends to $0$; the step functions are dense in $L^1$ and the map is bounded, so the limit holds for all $f\in L^1$. Injectivity is the consequence of the inversion theorem below: if $\mathcal F f = 0$ then $\int f\bar\digamma_{\mathrm{map}} = 0$ for every Schwartz function $\digamma_{\mathrm{map}}$, by the multiplication formula, and the Schwartz functions are dense.
 
 ### Convolution, Approximate Identities and the Multiplication Formula
 
 **Definition.** The **convolution** of $f,g\in L^1(\mathbb{R}^n)$ is $(f*g)(x) = \int f(x-y)g(y)\,dy$.
 
-**Theorem.** $L^1(\mathbb{R}^n)$ is a commutative algebra under convolution with $\lVert f*g\rVert_1\leq\lVert f\rVert_1\lVert g\rVert_1$, it has no identity, and $\widehat{(f*g)} = \mathcal F f\mathcal F g$. An **approximate identity** is a sequence $\{\phi_k\}\subseteq L^1$ with $\int\phi_k = 1$, $\lVert\phi_k\rVert_1$ bounded and $\int_{\lvert x\rvert>\delta}\lvert\phi_k\rvert\to0$ for every $\delta>0$; for such a sequence $f*\phi_k\to f$ in $L^{n}$ for $1\leq p<\infty$, and pointwise almost everywhere at every Lebesgue point of $f$.
+**Theorem.** $L^1(\mathbb{R}^n)$ is a commutative algebra under convolution with $\lVert f*g\rVert_1\leq\lVert f\rVert_1\lVert g\rVert_1$, it has no identity, and $\widehat{(f*g)} = \mathcal F f\mathcal F g$. An **approximate identity** is a sequence $\{\digamma_{\mathrm{map},k}\}\subseteq L^1$ with $\int\digamma_{\mathrm{map},k} = 1$, $\lVert\digamma_{\mathrm{map},k}\rVert_1$ bounded and $\int_{\lvert x\rvert>\delta}\lvert\digamma_{\mathrm{map},k}\rvert\to0$ for every $\delta>0$; for such a sequence $f*\digamma_{\mathrm{map},k}\to f$ in $L^{n}$ for $1\leq p<\infty$, and pointwise almost everywhere at every Lebesgue point of $f$.
 
-**Proof sketch.** The algebra statement is Fubini; the product formula is the definition of the convolution together with the addition formula for the exponential; the approximation statement is the standard estimate $\lVert f*\phi_k-f\rVert_p\leq\int\lvert\phi_k(y)\rvert\lVert f(\cdot-y)-f\rVert_p\,dy$ together with the continuity of translation in $L^{n}$ and the concentration of $\phi_k$ near $0$.
+**Proof sketch.** The algebra statement is Fubini; the product formula is the definition of the convolution together with the addition formula for the exponential; the approximation statement is the standard estimate $\lVert f*\digamma_{\mathrm{map},k}-f\rVert_p\leq\int\lvert\digamma_{\mathrm{map},k}(y)\rvert\lVert f(\cdot-y)-f\rVert_p\,dy$ together with the continuity of translation in $L^{n}$ and the concentration of $\digamma_{\mathrm{map},k}$ near $0$.
 
 **Theorem (multiplication formula).** For $f,g\in L^1(\mathbb{R}^n)$,
 $$
@@ -69,7 +69,7 @@ the right side tends to $\check f(x)$ by dominated convergence as $\epsilon\down
 
 **Proof sketch.** The identities (d) and (e) above show that the transform interchanges the operations of multiplication by $x^\alpha$ and differentiation $\partial^\beta$, which is precisely the statement that the seminorms of $\mathcal{S}$ are permuted; hence the transform is continuous $\mathcal{S}\to\mathcal{S}$ and the inverse is continuous. The inversion formula is proved on $\mathcal{S}$ by the argument of the previous section, and the reflection identity follows from it.
 
-**Remark (tempered distributions in outline).** The **tempered distributions** are the continuous linear functionals on $\mathcal{S}$, and the transform is defined on them by duality, $\langle\mathcal F w,\phi\rangle = \langle w,\mathcal F\phi\rangle$; the operations of differentiation, multiplication by polynomials and convolution with a Schwartz function extend, and the classical identities hold without any integrability hypothesis. This is the framework in which the delta distribution $\delta$, the Heaviside function and the fundamental solutions of the constant-coefficient operators live, and it is developed; here only the two facts used below are recorded, that the transform of $\delta$ is the constant $1$ and that the transform of a smooth function of at most polynomial growth is defined as a tempered distribution.
+**Remark (tempered distributions in outline).** The **tempered distributions** are the continuous linear functionals on $\mathcal{S}$, and the transform is defined on them by duality, $\langle\mathcal F w,\digamma_{\mathrm{map}}\rangle = \langle w,\mathcal F\digamma_{\mathrm{map}}\rangle$; the operations of differentiation, multiplication by polynomials and convolution with a Schwartz function extend, and the classical identities hold without any integrability hypothesis. This is the framework in which the delta distribution $\delta$, the Heaviside function and the fundamental solutions of the constant-coefficient operators live, and it is developed; here only the two facts used below are recorded, that the transform of $\delta$ is the constant $1$ and that the transform of a smooth function of at most polynomial growth is defined as a tempered distribution.
 
 ### The Gaussian
 
@@ -177,7 +177,7 @@ for almost every $x$ — the **Lebesgue differentiation theorem** — and the Le
 
 **Proof sketch.** The kernel is decomposed into a good part, controlled by the $L^2$ boundedness of the multiplier, and a bad part handled by the Calderón–Zygmund decomposition of $f$ at level $\lambda$; the cancellation of the kernel is what makes the bad part contribute at the level of the weak $(1,1)$ inequality. The symbols of the Hilbert and Riesz transforms are computed from the transform of the principal value kernels.
 
-**Theorem (Mihlin–Hörmander multipliers and Littlewood–Paley).** If $m\in C^k(\mathbb{R}^n\setminus\{0\})$ with $\lvert\partial^\alpha m\rvert\leq C_\alpha\lvert\zeta\rvert^{-\lvert\alpha\rvert}$ for $\lvert\alpha\rvert\leq k>n/2$, then the operator $T_mf = \widehat{(m\mathcal F f)}$ is bounded on $L^{n}$ for $1<p<\infty$. Moreover, for a smooth dyadic partition of unity $\{\psi_j\}$ and $S_jf = \psi_j(D)f$ one has the **Littlewood–Paley** equivalence
+**Theorem (Mihlin–Hörmander multipliers and Littlewood–Paley).** If $m\in C^k(\mathbb{R}^n\setminus\{0\})$ with $\lvert\partial^\alpha m\rvert\leq C_\alpha\lvert\zeta\rvert^{-\lvert\alpha\rvert}$ for $\lvert\alpha\rvert\leq k>n/2$, then the operator $T_mf = \widehat{(m\mathcal F f)}$ is bounded on $L^{n}$ for $1<p<\infty$. Moreover, for a smooth dyadic partition of unity $\{Ξ_{\mathrm{wfn},j}\}$ and $S_jf = Ξ_{\mathrm{wfn},j}(D)f$ one has the **Littlewood–Paley** equivalence
 $$
 \lVert f\rVert_p\asymp\Bigl\lVert\Bigl(\sum_j\lvert S_jf\rvert^2\Bigr)^{1/2}\Bigr\rVert_p \qquad (1<p<\infty),
 $$
@@ -207,7 +207,7 @@ The Fourier transform $(\mathcal F f)(\zeta) = \int_{\mathbb{R}^n}f(x)\exp(-2\pi
 | $Mf$ | Hardy–Littlewood maximal function |
 | $H$, $R_j$ | Hilbert transform, Riesz transforms |
 | $T_m$, $m$ | Fourier multiplier operator and its symbol |
-| $S_j$, $\psi_j$ | Littlewood–Paley dyadic pieces |
+| $S_j$, $Ξ_{\mathrm{wfn},j}$ | Littlewood–Paley dyadic pieces |
 | $H^s$ | Sobolev space, $\int(1+\lvert\zeta\rvert^2)^s\lvert\mathcal F f\rvert^2<\infty$ |
 | $p$, $q$ | Conjugate exponents $1/n + 1/m=1$ |
 

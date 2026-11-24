@@ -106,13 +106,13 @@ In particular, if $0 \notin S$ then $\iota$ is injective if and only if every el
 
 ### The Universal Property
 
-**Theorem (universal property of localization).** Let $S \subseteq R$ be multiplicative and let $\varphi : R \to T$ be a ring homomorphism such that $\varphi(s)$ is invertible in $T$ for every $s \in S$. Then there is a unique ring homomorphism $\psi : S^{-1}R \to T$ with $\psi \circ \iota = \varphi$, namely
+**Theorem (universal property of localization).** Let $S \subseteq R$ be multiplicative and let $\digamma_{\mathrm{map}} : R \to T$ be a ring homomorphism such that $\digamma_{\mathrm{map}}(s)$ is invertible in $T$ for every $s \in S$. Then there is a unique ring homomorphism $Ξ_{\mathrm{wfn}} : S^{-1}R \to T$ with $Ξ_{\mathrm{wfn}} \circ \iota = \digamma_{\mathrm{map}}$, namely
 
 $$
-\boxed{\;\psi\left(\frac{r}{s}\right) = \varphi(r)\varphi(s)^{-1}\;}.
+\boxed{\;Ξ_{\mathrm{wfn}}\left(\frac{r}{s}\right) = \digamma_{\mathrm{map}}(r)\digamma_{\mathrm{map}}(s)^{-1}\;}.
 $$
 
-**Proof.** The formula is forced, so uniqueness is clear. It is well defined: if $t(rs' - r's) = 0$ with $t \in S$, applying $\varphi$ gives $\varphi(t)(\varphi(r)\varphi(s') - \varphi(r')\varphi(s)) = 0$, and $\varphi(t)$ is invertible, so $\varphi(r)\varphi(s') = \varphi(r')\varphi(s)$; multiplying by the inverses of $\varphi(s)\varphi(s')$ gives the same value for $r/s$ and $r'/s'$. Additivity and multiplicativity follow from the corresponding properties of $\varphi$ together with the commutativity of $T$.
+**Proof.** The formula is forced, so uniqueness is clear. It is well defined: if $t(rs' - r's) = 0$ with $t \in S$, applying $\digamma_{\mathrm{map}}$ gives $\digamma_{\mathrm{map}}(t)(\digamma_{\mathrm{map}}(r)\digamma_{\mathrm{map}}(s') - \digamma_{\mathrm{map}}(r')\digamma_{\mathrm{map}}(s)) = 0$, and $\digamma_{\mathrm{map}}(t)$ is invertible, so $\digamma_{\mathrm{map}}(r)\digamma_{\mathrm{map}}(s') = \digamma_{\mathrm{map}}(r')\digamma_{\mathrm{map}}(s)$; multiplying by the inverses of $\digamma_{\mathrm{map}}(s)\digamma_{\mathrm{map}}(s')$ gives the same value for $r/s$ and $r'/s'$. Additivity and multiplicativity follow from the corresponding properties of $\digamma_{\mathrm{map}}$ together with the commutativity of $T$.
 
 **Corollary.** Localization is characterised up to unique isomorphism by the universal property: if a ring $A$ with a map $R \to A$ inverting all elements of $S$ has the same universal property, then $A \cong S^{-1}R$ by a unique isomorphism commuting with the maps from $R$.
 
@@ -186,9 +186,9 @@ $$
 
 **Proof.** Injectivity follows since $S$ contains no zero divisors. If $r/s \neq 0$ then $r \neq 0$, so $r \in S$ and $s/r$ is an inverse of $r/s$: $(r/s)(s/r) = rs/rs = 1/1$. Hence every nonzero element is invertible.
 
-**Theorem (universal property of the fraction field).** Let $R$ be an integral domain and let $\varphi : R \to K$ be an injective ring homomorphism into a field $K$. Then there is a unique field homomorphism $\psi : \operatorname{Frac}(R) \to K$ with $\psi \circ \iota = \varphi$. Consequently $\operatorname{Frac}(R)$ is the smallest field in which $R$ embeds, in the sense that it is initial among such fields.
+**Theorem (universal property of the fraction field).** Let $R$ be an integral domain and let $\digamma_{\mathrm{map}} : R \to K$ be an injective ring homomorphism into a field $K$. Then there is a unique field homomorphism $Ξ_{\mathrm{wfn}} : \operatorname{Frac}(R) \to K$ with $Ξ_{\mathrm{wfn}} \circ \iota = \digamma_{\mathrm{map}}$. Consequently $\operatorname{Frac}(R)$ is the smallest field in which $R$ embeds, in the sense that it is initial among such fields.
 
-**Proof.** The universal property of localization gives $\psi(r/s) = \varphi(r)\varphi(s)^{-1}$, which is defined since $\varphi$ is injective and $s \neq 0$. If $r/s \neq 0$ then $\varphi(r) \neq 0$, so $\psi(r/s) \neq 0$ and $\psi$ is a field homomorphism.
+**Proof.** The universal property of localization gives $Ξ_{\mathrm{wfn}}(r/s) = \digamma_{\mathrm{map}}(r)\digamma_{\mathrm{map}}(s)^{-1}$, which is defined since $\digamma_{\mathrm{map}}$ is injective and $s \neq 0$. If $r/s \neq 0$ then $\digamma_{\mathrm{map}}(r) \neq 0$, so $Ξ_{\mathrm{wfn}}(r/s) \neq 0$ and $Ξ_{\mathrm{wfn}}$ is a field homomorphism.
 
 ### Examples
 

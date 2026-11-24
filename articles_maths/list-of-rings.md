@@ -29,7 +29,7 @@ The quaternions $\mathbb{H}$ are the non-commutative ring whose every nonzero el
 
 | Ring | Units | Zero divisors | Ideals and chain conditions | Introduced in |
 |---|---|---|---|---|
-| $\mathbb{Z}/n\mathbb{Z}$ | the classes coprime to $n$, of order $\varphi(n)$ | the nonunits of a composite modulus | ideals correspond to the divisors of $n$; finite, Artinian | *Modular Arithmetic and the Ring of Residues* |
+| $\mathbb{Z}/n\mathbb{Z}$ | the classes coprime to $n$, of order $\digamma_{\mathrm{tot}}(n)$ | the nonunits of a composite modulus | ideals correspond to the divisors of $n$; finite, Artinian | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{F}_p$ | $\mathbb{F}_p^{\times}$, cyclic of order $p-1$ | none | only $0$ and $\mathbb{F}_p$; field | *Finite Fields* |
 | $\mathbb{F}_q$, $q = p^n$ | cyclic of order $q-1$ | none | only $0$ and $\mathbb{F}_q$; field | *Finite Fields* |
 | $\mathbb{F}_2^n$ | the elements with all coordinates $1$ | yes for $n \geq 2$ | a product of copies of $\mathbb{F}_2$ | *Examples of Rings and Fields* |

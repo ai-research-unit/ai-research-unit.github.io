@@ -40,7 +40,7 @@ $$
 \boxed{\;T(\alpha x,\alpha y) = T(x,y) , \qquad \text{hence} \qquad T(\alpha x,y) = T(x,\alpha y) , \qquad \alpha^{\dagger} = \alpha\;} .
 $$
 
-*Proof.* For an automorphism $\varphi$ of $J$ one has $L_{\varphi a} = \varphi L_a\varphi^{-1}$; with $\varphi = \alpha$ and the trace invariant under conjugation, $T(\alpha x,\alpha y) = \operatorname{tr}(L_{\alpha(x\bullet y)}) = \operatorname{tr}(\alpha L_{x\bullet y}\alpha^{-1}) = \operatorname{tr}(L_{x\bullet y}) = T(x,y)$. Replacing $y$ by $\alpha y$ and using $\alpha^2 = \mathrm{id}$ gives $T(\alpha x,y) = T(x,\alpha y)$, which is the defining relation of the adjoint $\alpha^{\dagger} = \alpha$.
+*Proof.* For an automorphism $\digamma_{\mathrm{map}}$ of $J$ one has $L_{\digamma_{\mathrm{map}} a} = \digamma_{\mathrm{map}} L_a\digamma_{\mathrm{map}}^{-1}$; with $\digamma_{\mathrm{map}} = \alpha$ and the trace invariant under conjugation, $T(\alpha x,\alpha y) = \operatorname{tr}(L_{\alpha(x\bullet y)}) = \operatorname{tr}(\alpha L_{x\bullet y}\alpha^{-1}) = \operatorname{tr}(L_{x\bullet y}) = T(x,y)$. Replacing $y$ by $\alpha y$ and using $\alpha^2 = \mathrm{id}$ gives $T(\alpha x,y) = T(x,\alpha y)$, which is the defining relation of the adjoint $\alpha^{\dagger} = \alpha$.
 
 **Corollary (the quadratic representation).** The quadratic representations are self-adjoint, $U_a^{\dagger} = U_a$ and $U_{a,b}^{\dagger} = U_{a,b}$, because they are polynomials in the self-adjoint left multiplications and the symmetrisation preserves self-adjointness.
 

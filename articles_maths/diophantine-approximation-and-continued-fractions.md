@@ -7,7 +7,7 @@ This is the second article of the Rational Numbers system in Part V, and it occu
 
 The analysis of $\mathbb{Q}$ is unusual among the systems of the ladder, because $\mathbb{Q}$ is not complete and so has no analysis of its own: its sequences, series and integrals all take place in the completion. What the system does support is the *approximation theory* of the completion by the system itself, and that is exactly Diophantine approximation. The relevance of the continued fractions is that they are the extremal instrument of this approximation: the convergents of a real number are its best rational approximations, and they are computed by the Euclidean algorithm of *The Integers* applied to the pair $(\alpha, 1)$.
 
-The real line $\mathbb{R}$ is the completion of $\mathbb{Q}$ for the usual absolute value, constructed in *Metric, Uniform and Complete Spaces* and *Absolute Values, Valuations and Completions*, and its ordered field structure is from *Real-Closed and Complete Ordered Fields*; the arithmetic of $\mathbb{Q}$ and its places are from *The Rational Numbers*. The transcendence of $e$ and $\pi$ and the general theory of algebraic numbers are not used. Throughout, $\alpha$ is a real number, $r/s$ is a rational in lowest terms with $s > 0$, the distance from $\alpha$ to the nearest integer is $\lVert \alpha \rVert$, the continued fraction of $\alpha$ is $[a_0; a_1, a_2, \dots]$ with $a_0 \in \mathbb{Z}$ and $a_i \in \mathbb{N}_{\geq 1}$ for $i \geq 1$, and its convergents are $r_n/s_n$. The generic element of $\mathbb{Q}$ is written $q$, and several are $q_1, q_2, \dots$; the letter $q$ is never used for a numerator or a denominator. The golden ratio is $\varphi = (1+\sqrt5)/2$.
+The real line $\mathbb{R}$ is the completion of $\mathbb{Q}$ for the usual absolute value, constructed in *Metric, Uniform and Complete Spaces* and *Absolute Values, Valuations and Completions*, and its ordered field structure is from *Real-Closed and Complete Ordered Fields*; the arithmetic of $\mathbb{Q}$ and its places are from *The Rational Numbers*. The transcendence of $e$ and $\pi$ and the general theory of algebraic numbers are not used. Throughout, $\alpha$ is a real number, $r/s$ is a rational in lowest terms with $s > 0$, the distance from $\alpha$ to the nearest integer is $\lVert \alpha \rVert$, the continued fraction of $\alpha$ is $[a_0; a_1, a_2, \dots]$ with $a_0 \in \mathbb{Z}$ and $a_i \in \mathbb{N}_{\geq 1}$ for $i \geq 1$, and its convergents are $r_n/s_n$. The generic element of $\mathbb{Q}$ is written $q$, and several are $q_1, q_2, \dots$; the letter $q$ is never used for a numerator or a denominator. The golden ratio is $\digamma_{\mathrm{map}} = (1+\sqrt5)/2$.
 
 ## The Rationals and Their Completion
 
@@ -65,7 +65,7 @@ $$
 \boxed{\;\left\lvert \alpha - \frac{r}{s} \right\rvert < \frac{1}{\sqrt5\, s^2} \;}.
 $$
 
-The constant $\sqrt5$ is best possible: for $\alpha = \varphi = (1+\sqrt5)/2$ and every $c > \sqrt5$, the inequality $\lvert \varphi - r/s\rvert < 1/(c s^2)$ has only finitely many solutions. Thus $\varphi$ is badly approximable and its Lagrange constant is $1/\sqrt5$.
+The constant $\sqrt5$ is best possible: for $\alpha = \digamma_{\mathrm{map}} = (1+\sqrt5)/2$ and every $c > \sqrt5$, the inequality $\lvert \digamma_{\mathrm{map}} - r/s\rvert < 1/(c s^2)$ has only finitely many solutions. Thus $\digamma_{\mathrm{map}}$ is badly approximable and its Lagrange constant is $1/\sqrt5$.
 
 **Proof.** Since $\alpha$ lies between consecutive convergents, the determinant identity gives
 
@@ -73,7 +73,7 @@ $$
 \left\lvert \alpha - \frac{r_n}{s_n} \right\rvert + \left\lvert \alpha - \frac{r_{n+1}}{s_{n+1}} \right\rvert = \left\lvert \frac{r_n}{s_n} - \frac{r_{n+1}}{s_{n+1}} \right\rvert = \frac{1}{s_n s_{n+1}} .
 $$
 
-If both terms were at least $1/(\sqrt5 s_n^2)$ and $1/(\sqrt5 s_{n+1}^2)$ respectively, then with $t = s_{n+1}/s_n$ one would get $\sqrt5 \geq t + 1/t$, that is $t \in [1/\varphi, \varphi]$. But the ratios satisfy $t_{n+1} = a_{n+2} + 1/t_n \geq 1 + 1/t_n$, so $t_n \leq \varphi$ forces $t_{n+1} \geq \varphi$, with equality only when $t_n = \varphi$ and $a_{n+2} = 1$; hence the failures cannot occur at every index, and infinitely many convergents satisfy the bound. For $\alpha = \varphi$ all partial quotients are $1$, every ratio tends to $\varphi$, and a direct computation with $\varphi^2 = \varphi + 1$ gives $\lim s_n^2\lvert \varphi - r_n/s_n\rvert = 1/\sqrt5$, so no larger constant can replace $\sqrt5$. The computation is Hurwitz's; the details are in the references.
+If both terms were at least $1/(\sqrt5 s_n^2)$ and $1/(\sqrt5 s_{n+1}^2)$ respectively, then with $t = s_{n+1}/s_n$ one would get $\sqrt5 \geq t + 1/t$, that is $t \in [1/\digamma_{\mathrm{map}}, \digamma_{\mathrm{map}}]$. But the ratios satisfy $t_{n+1} = a_{n+2} + 1/t_n \geq 1 + 1/t_n$, so $t_n \leq \digamma_{\mathrm{map}}$ forces $t_{n+1} \geq \digamma_{\mathrm{map}}$, with equality only when $t_n = \digamma_{\mathrm{map}}$ and $a_{n+2} = 1$; hence the failures cannot occur at every index, and infinitely many convergents satisfy the bound. For $\alpha = \digamma_{\mathrm{map}}$ all partial quotients are $1$, every ratio tends to $\digamma_{\mathrm{map}}$, and a direct computation with $\digamma_{\mathrm{map}}^2 = \digamma_{\mathrm{map}} + 1$ gives $\lim s_n^2\lvert \digamma_{\mathrm{map}} - r_n/s_n\rvert = 1/\sqrt5$, so no larger constant can replace $\sqrt5$. The computation is Hurwitz's; the details are in the references.
 
 ### Liouville Numbers and Roth's Theorem
 
@@ -182,7 +182,7 @@ The map $\alpha \mapsto (a_0, a_1, a_2, \dots)$ is a bijection from the irration
 
 **Proof.** If the expansion is eventually periodic then $\alpha$ is fixed by a fractional linear transformation with integer coefficients, hence satisfies a quadratic equation. Conversely, if $\alpha$ is a root of an integer quadratic then the complete quotients $\alpha_n$ all lie in the same finite set of quadratic irrationals of bounded height, so two of them coincide and the expansion repeats. The argument is Lagrange's; the details are in the references.
 
-**Example.** $\sqrt2 = [1; 2, 2, 2, \dots]$ with convergents $1, 3/2, 7/5, 17/12, \dots$, all of them solving the Pell equation $n^2 - 2m^2 = \pm 1$; and $\varphi = [1; 1, 1, 1, \dots]$ with convergents $F_{n+1}/F_n$ the ratios of consecutive Fibonacci numbers. The number $e$ has the non-periodic expansion $[2; 1, 2, 1, 1, 4, 1, 1, 6, \dots]$, which shows that eventual periodicity genuinely characterises the quadratic irrationals.
+**Example.** $\sqrt2 = [1; 2, 2, 2, \dots]$ with convergents $1, 3/2, 7/5, 17/12, \dots$, all of them solving the Pell equation $n^2 - 2m^2 = \pm 1$; and $\digamma_{\mathrm{map}} = [1; 1, 1, 1, \dots]$ with convergents $F_{n+1}/F_n$ the ratios of consecutive Fibonacci numbers. The number $e$ has the non-periodic expansion $[2; 1, 2, 1, 1, 4, 1, 1, 6, \dots]$, which shows that eventual periodicity genuinely characterises the quadratic irrationals.
 
 ### Pell's Equation
 
@@ -268,7 +268,7 @@ Continued fractions are the extremal instrument of the theory: finite continued 
 | $q$, $q_1$, $q_2$ | Generic rational elements |
 | $r/s$ | Rational in lowest terms, $s > 0$ |
 | $\lVert \alpha\rVert$ | Distance from $\alpha$ to the nearest integer |
-| $\varphi$ | Golden ratio $(1+\sqrt5)/2$ |
+| $\digamma_{\mathrm{map}}$ | Golden ratio $(1+\sqrt5)/2$ |
 | $[a_0; a_1, a_2, \dots]$ | Continued fraction |
 | $r_n/s_n$ | $n$-th convergent |
 | $a_n$ | Partial quotients |

@@ -152,7 +152,7 @@ For a general field $F$ the same construction is carried out by transfinite recu
 
 ### Statement
 
-**Theorem (Lefschetz principle).** Let $\varphi$ be a statement of first-order logic in the language of rings. Then $\varphi$ holds in every algebraically closed field of characteristic $0$ if and only if it holds in $\mathbb{C}$. More generally, if $\varphi$ holds in one algebraically closed field of characteristic $0$ then it holds in all of them.
+**Theorem (Lefschetz principle).** Let $\digamma_{\mathrm{map}}$ be a statement of first-order logic in the language of rings. Then $\digamma_{\mathrm{map}}$ holds in every algebraically closed field of characteristic $0$ if and only if it holds in $\mathbb{C}$. More generally, if $\digamma_{\mathrm{map}}$ holds in one algebraically closed field of characteristic $0$ then it holds in all of them.
 
 **Proof sketch.** The theory of algebraically closed fields of characteristic $0$, denoted $\mathrm{ACF}_0$, has as axioms the field axioms, an axiom scheme stating that every nonconstant polynomial in one variable has a root, one axiom for each degree, and the axioms $n \cdot 1 \neq 0$ for each $n \geq 1$. This theory admits quantifier elimination, proved by a back-and-forth argument that extends an isomorphism between finitely generated subfields step by step; in characteristic $0$ the prime field is $\mathbb{Q}$ in every model, so a quantifier-free sentence has the same truth value in all models of $\mathrm{ACF}_0$. Hence any two models of $\mathrm{ACF}_0$ are elementarily equivalent, and a complete theory has exactly one elementary equivalence class, so a first-order sentence is true in one model if and only if it is true in all.
 

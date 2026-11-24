@@ -20,19 +20,19 @@ The article uses no analysis and no geometry: the base field is arbitrary, the s
 **Definition.** A **$\Gamma$-equivariant sheaf** over $X_K$ is a sheaf $\mathcal{M}$ of $\mathcal{O}_{X_K}$-modules with, for every $\gamma\in\Gamma$, a **semilinear** isomorphism
 
 $$
-\varphi_{\gamma}:\gamma_*\mathcal{M}\longrightarrow\mathcal{M},\qquad \varphi_{\gamma}(a m)=\gamma(a)\varphi_{\gamma}(m),
+\digamma_{\mathrm{map},\gamma}:\gamma_*\mathcal{M}\longrightarrow\mathcal{M},\qquad \digamma_{\mathrm{map},\gamma}(a m)=\gamma(a)\digamma_{\mathrm{map},\gamma}(m),
 $$
 
-satisfying the cocycle $\varphi_{\gamma\delta}=\varphi_{\gamma}\circ\gamma_*(\varphi_{\delta})$ and $\varphi_e=\mathrm{id}$; a morphism of $\Gamma$-equivariant sheaves is a morphism of sheaves of $\mathcal{O}_{X_K}$-modules commuting with the $\varphi_{\gamma}$. The category is written $\mathrm{Sh}_{\Gamma}(X_K)$.
+satisfying the cocycle $\digamma_{\mathrm{map},\gamma\delta}=\digamma_{\mathrm{map},\gamma}\circ\gamma_*(\digamma_{\mathrm{map},\delta})$ and $\digamma_{\mathrm{map},e}=\mathrm{id}$; a morphism of $\Gamma$-equivariant sheaves is a morphism of sheaves of $\mathcal{O}_{X_K}$-modules commuting with the $\digamma_{\mathrm{map},\gamma}$. The category is written $\mathrm{Sh}_{\Gamma}(X_K)$.
 
 **Remark (the same structure as the equivariant sheaf).** The definition is that of *Equivariant Sheaves and Descent* with the group $\Gamma$ acting on the space $X_K$, with the one addition that the coefficient maps are required to be **semilinear** over $K$: the action of $\Gamma$ on the coefficients is the Galois action, and it must not be confused with a complex-linear or an $X$-linear action. The semilinearity is the descent datum of the Galois cover $X_K\to X$, and the descent of the next sections is the Galois descent.
 
 ## The Descent Datum and the Fixed Part
 
-**Definition.** The **descent datum** of a $\Gamma$-equivariant sheaf $\mathcal{M}$ over $X_K$ is the family of the semilinear isomorphisms $\varphi_{\gamma}$ together with their cocycle. The **fixed part** is
+**Definition.** The **descent datum** of a $\Gamma$-equivariant sheaf $\mathcal{M}$ over $X_K$ is the family of the semilinear isomorphisms $\digamma_{\mathrm{map},\gamma}$ together with their cocycle. The **fixed part** is
 
 $$
-\boxed{\;\mathcal{M}^{\Gamma}(V)=\mathcal{M}\bigl(p^{-1}V\bigr)^{\Gamma}=\{\,m: \varphi_{\gamma}(m)=m\ \text{for every}\ \gamma\in\Gamma\,\}\;},
+\boxed{\;\mathcal{M}^{\Gamma}(V)=\mathcal{M}\bigl(p^{-1}V\bigr)^{\Gamma}=\{\,m: \digamma_{\mathrm{map},\gamma}(m)=m\ \text{for every}\ \gamma\in\Gamma\,\}\;},
 $$
 
 for an open $V\subseteq X$, with $p^{-1}V$ the preimage in $X_K$, on which $\Gamma$ acts; it is a sheaf of $\mathcal{O}_X$-modules, the **descent** of $\mathcal{M}$.
@@ -112,7 +112,7 @@ A single sheaf need not descend: the obstruction is a class in the first nonabel
 | $K/k$, $\Gamma=\operatorname{gal}(K/k)$ | finite Galois extension and its group; $K^{\Gamma}=k$ |
 | $X_K=X\times_kK$ | base change; $\mathcal{O}_{X_K}=\mathcal{O}_X\otimes_kK$ |
 | $p:X_K\to X$ | projection; a Galois cover of the base |
-| $\varphi_{\gamma}:\gamma_*\mathcal{M}\to\mathcal{M}$ | semilinear descent datum; $\varphi_{\gamma}(am)=\gamma(a)\varphi_{\gamma}(m)$ |
+| $\digamma_{\mathrm{map},\gamma}:\gamma_*\mathcal{M}\to\mathcal{M}$ | semilinear descent datum; $\digamma_{\mathrm{map},\gamma}(am)=\gamma(a)\digamma_{\mathrm{map},\gamma}(m)$ |
 | $\mathrm{Sh}_{\Gamma}(X_K)$ | category of $\Gamma$-equivariant sheaves over $X_K$ |
 | $\mathcal{M}^{\Gamma}$ | fixed part, the descended sheaf; a sheaf of $\mathcal{O}_X$-modules |
 | $\mathrm{Sh}_{\Gamma}(X_K)\simeq\mathrm{Sh}(X)$ | Galois descent equivalence |

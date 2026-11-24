@@ -25,9 +25,9 @@ $$
 \boxed{\;d\Omega = 0 \iff \partial\Omega = 0 \iff \bar\partial\Omega = 0\;},
 $$
 
-and in that case $\Omega$ is locally of the form $i\partial\bar\partial\varphi$ for a real function $\varphi$.
+and in that case $\Omega$ is locally of the form $i\partial\bar\partial\digamma_{\mathrm{map}}$ for a real function $\digamma_{\mathrm{map}}$.
 
-**Proof.** Since $\Omega$ has bidegree $(1,1)$, the exterior derivative splits as $d\Omega = \partial\Omega + \bar\partial\Omega$ with $\partial\Omega$ of bidegree $(2,1)$ and $\bar\partial\Omega$ of bidegree $(1,2)$; the two have different bidegrees, so their sum vanishes exactly when each vanishes. The local form $i\partial\bar\partial\varphi$ is the Poincaré lemma for $\bar\partial$ combined with the reality of $\Omega$: a closed real $(1,1)$-form is locally $\bar\partial$-exact up to the conjugate, which is the content of the $\partial\bar\partial$-lemma on a polydisc.
+**Proof.** Since $\Omega$ has bidegree $(1,1)$, the exterior derivative splits as $d\Omega = \partial\Omega + \bar\partial\Omega$ with $\partial\Omega$ of bidegree $(2,1)$ and $\bar\partial\Omega$ of bidegree $(1,2)$; the two have different bidegrees, so their sum vanishes exactly when each vanishes. The local form $i\partial\bar\partial\digamma_{\mathrm{map}}$ is the Poincaré lemma for $\bar\partial$ combined with the reality of $\Omega$: a closed real $(1,1)$-form is locally $\bar\partial$-exact up to the conjugate, which is the content of the $\partial\bar\partial$-lemma on a polydisc.
 
 **Theorem (characterisations of the Kähler condition).** Let $(M, J, g)$ be a Hermitian manifold of complex dimension $n$ with fundamental form $\Omega$ and Levi-Civita connection $\nabla$. The following are equivalent:
 
@@ -37,13 +37,13 @@ and in that case $\Omega$ is locally of the form $i\partial\bar\partial\varphi$ 
 
 **(c)** the Chern connection of the Hermitian structure coincides with the Levi-Civita connection of $g$;
 
-**(d)** about every point there are holomorphic coordinates and a real function $\varphi$ with $\Omega = i\,\partial\bar\partial\varphi$, equivalently $g_{i\bar j} = \partial^2/\partial z_i\partial\bar z_j\,\varphi$;
+**(d)** about every point there are holomorphic coordinates and a real function $\digamma_{\mathrm{map}}$ with $\Omega = i\,\partial\bar\partial\digamma_{\mathrm{map}}$, equivalently $g_{i\bar j} = \partial^2/\partial z_i\partial\bar z_j\,\digamma_{\mathrm{map}}$;
 
 **(e)** the holonomy group of $g$ is contained in $\mathrm{U}(n)$;
 
 **(f)** about every point there are holomorphic coordinates in which the Kähler metric has the form $g_{i\bar j} = \delta_{ij} + O(|z|^2)$.
 
-**Proof sketch.** (a) $\Leftrightarrow$ (b): for a Hermitian manifold, the $(0,3)$-tensor field $\nabla J$ and the $3$-form $d\Omega$ are related by the identity of Goldberg, which expresses each component of $\nabla J$ at a point as a linear combination of the components of $d\Omega$ at that point with universal coefficients; since $g$ is positive definite the vanishing of one is therefore equivalent to the vanishing of the other. (b) $\Leftrightarrow$ (c): a connection which preserves $g$ and $J$ and whose torsion has vanishing $(0,2)$-part is by definition the Chern connection, and that connection is unique; the Levi-Civita connection of $g$ is torsion-free, so if it preserves $J$ it satisfies the defining properties of the Chern connection and coincides with it, and conversely the Chern connection preserves $J$. (b) $\Leftrightarrow$ (e): $J$ is a parallel tensor field, so it is preserved by the holonomy representation, and a parallel complex structure on the tangent space is exactly a reduction of the holonomy group to $\mathrm{U}(n)$. (a) $\Leftrightarrow$ (d): the closedness gives the local potential as in the previous proposition, and the converse is immediate from $d^2 = 0$; the coordinate statement is $\Omega = i\sum_{i,j}\partial^2/\partial z_i\partial\bar z_j\,\varphi\,dz_i\wedge d\bar z_j$. (f): the Taylor expansion of a potential normalised at a point; the first-order terms vanish after a holomorphic change of coordinates, and conversely the vanishing of all the first derivatives $\partial/\partial z^k g_{i\bar j}$ at a point implies $\partial\Omega = 0$ there.
+**Proof sketch.** (a) $\Leftrightarrow$ (b): for a Hermitian manifold, the $(0,3)$-tensor field $\nabla J$ and the $3$-form $d\Omega$ are related by the identity of Goldberg, which expresses each component of $\nabla J$ at a point as a linear combination of the components of $d\Omega$ at that point with universal coefficients; since $g$ is positive definite the vanishing of one is therefore equivalent to the vanishing of the other. (b) $\Leftrightarrow$ (c): a connection which preserves $g$ and $J$ and whose torsion has vanishing $(0,2)$-part is by definition the Chern connection, and that connection is unique; the Levi-Civita connection of $g$ is torsion-free, so if it preserves $J$ it satisfies the defining properties of the Chern connection and coincides with it, and conversely the Chern connection preserves $J$. (b) $\Leftrightarrow$ (e): $J$ is a parallel tensor field, so it is preserved by the holonomy representation, and a parallel complex structure on the tangent space is exactly a reduction of the holonomy group to $\mathrm{U}(n)$. (a) $\Leftrightarrow$ (d): the closedness gives the local potential as in the previous proposition, and the converse is immediate from $d^2 = 0$; the coordinate statement is $\Omega = i\sum_{i,j}\partial^2/\partial z_i\partial\bar z_j\,\digamma_{\mathrm{map}}\,dz_i\wedge d\bar z_j$. (f): the Taylor expansion of a potential normalised at a point; the first-order terms vanish after a holomorphic change of coordinates, and conversely the vanishing of all the first derivatives $\partial/\partial z^k g_{i\bar j}$ at a point implies $\partial\Omega = 0$ there.
 
 **Corollary.** A Kähler manifold is symplectic: the Kähler form $\Omega$ is closed and nondegenerate, being the fundamental form of a Riemannian metric, and the almost complex structure $J$ is compatible with it in the sense of *Symplectic Geometry*. In particular every Kähler manifold is orientable, and the volume form $\Omega^{\wedge n}/n!$ is the Riemannian volume.
 
@@ -53,25 +53,25 @@ and in that case $\Omega$ is locally of the form $i\partial\bar\partial\varphi$ 
 
 ## The Kähler Potential and Local Structure
 
-**Definition.** A **Kähler potential** for a Kähler manifold is a real function $\varphi$ on an open set with
+**Definition.** A **Kähler potential** for a Kähler manifold is a real function $\digamma_{\mathrm{map}}$ on an open set with
 
 $$
-\Omega = i\,\partial\bar\partial\varphi .
+\Omega = i\,\partial\bar\partial\digamma_{\mathrm{map}} .
 $$
 
-**Proposition.** A Kähler potential exists locally on every Kähler manifold, and two potentials on a connected open set differ by the real part of a holomorphic function: $\varphi' = \varphi + f + \bar f$ with $f$ holomorphic.
+**Proposition.** A Kähler potential exists locally on every Kähler manifold, and two potentials on a connected open set differ by the real part of a holomorphic function: $\digamma_{\mathrm{map}}' = \digamma_{\mathrm{map}} + f + \bar f$ with $f$ holomorphic.
 
-**Proof.** The local existence is condition (d) of the theorem. For uniqueness, put $\psi = \varphi'-\varphi$, so that $\psi$ is real and $\partial\bar\partial\psi = 0$; then $\bar\partial(\partial\psi) = 0$, so the $(1,0)$-form $\partial\psi$ is holomorphic, hence closed, hence locally of the form $\partial\psi = df$ with $f$ holomorphic; conjugating the last identity and using that $\psi$ is real gives $\bar\partial\psi = d\bar f$, and therefore $d\psi = \partial\psi + \bar\partial\psi = d(f+\bar f)$, so that $\psi = f+\bar f$ up to an additive constant.
+**Proof.** The local existence is condition (d) of the theorem. For uniqueness, put $Ξ_{\mathrm{wfn}} = \digamma_{\mathrm{map}}'-\digamma_{\mathrm{map}}$, so that $Ξ_{\mathrm{wfn}}$ is real and $\partial\bar\partialΞ_{\mathrm{wfn}} = 0$; then $\bar\partial(\partialΞ_{\mathrm{wfn}}) = 0$, so the $(1,0)$-form $\partialΞ_{\mathrm{wfn}}$ is holomorphic, hence closed, hence locally of the form $\partialΞ_{\mathrm{wfn}} = df$ with $f$ holomorphic; conjugating the last identity and using that $Ξ_{\mathrm{wfn}}$ is real gives $\bar\partialΞ_{\mathrm{wfn}} = d\bar f$, and therefore $dΞ_{\mathrm{wfn}} = \partialΞ_{\mathrm{wfn}} + \bar\partialΞ_{\mathrm{wfn}} = d(f+\bar f)$, so that $Ξ_{\mathrm{wfn}} = f+\bar f$ up to an additive constant.
 
-**Example.** On $\mathbb{C}^n$ with the Euclidean metric the potential $\varphi = \tfrac12\sum_{i=1}^n |z_i|^2$ gives
+**Example.** On $\mathbb{C}^n$ with the Euclidean metric the potential $\digamma_{\mathrm{map}} = \tfrac12\sum_{i=1}^n |z_i|^2$ gives
 
 $$
-i\,\partial\bar\partial\varphi = \frac{i}{2}\sum_{i=1}^n dz_i\wedge d\bar z_i = \sum_{i=1}^n dx_i\wedge dy_i = \Omega_0,
+i\,\partial\bar\partial\digamma_{\mathrm{map}} = \frac{i}{2}\sum_{i=1}^n dz_i\wedge d\bar z_i = \sum_{i=1}^n dx_i\wedge dy_i = \Omega_0,
 $$
 
-using $i\,dz\wedge d\bar z = 2\,dx\wedge dy$; so the flat metric is Kähler. The potential is not unique: $\varphi + f + \bar f$ gives the same form.
+using $i\,dz\wedge d\bar z = 2\,dx\wedge dy$; so the flat metric is Kähler. The potential is not unique: $\digamma_{\mathrm{map}} + f + \bar f$ gives the same form.
 
-**Remark.** The Kähler potential is the local primitive of the Kähler form and is thus the Kähler analogue of the existence of a symplectic potential $\varpi$ with $\omega = -d\varpi$; the difference is that the potential is a function rather than a $1$-form, because the Kähler form has the extra type. The equality $\Omega = i\partial\bar\partial\varphi$ is the reason the local theory of Kähler metrics is the theory of a single real function, and the reason the global existence of a potential is obstructed by the cohomology class $[\Omega]$.
+**Remark.** The Kähler potential is the local primitive of the Kähler form and is thus the Kähler analogue of the existence of a symplectic potential $\varpi$ with $\omega = -d\varpi$; the difference is that the potential is a function rather than a $1$-form, because the Kähler form has the extra type. The equality $\Omega = i\partial\bar\partial\digamma_{\mathrm{map}}$ is the reason the local theory of Kähler metrics is the theory of a single real function, and the reason the global existence of a potential is obstructed by the cohomology class $[\Omega]$.
 
 **Proposition (Kähler normal coordinates).** Let $(M,J,g)$ be Kähler and let $n \in M$. There are holomorphic coordinates $z$ centred at $n$ with
 
@@ -215,10 +215,10 @@ for a constant $\lambda$, in which case the scalar curvature is constant. A Käh
 
 **Theorem (Yau, on the Calabi conjecture).** Let $M$ be a compact Kähler manifold with $c_1(M) = 0$ in $H^2(M;\mathbb{R})$. Then for every Kähler class there is a unique Ricci-flat Kähler metric in that class.
 
-**Proof sketch.** In a fixed Kähler class, the Kähler metrics are parametrised by their potentials: $g' = g + i\partial\bar\partial\varphi$. The Ricci forms change by $-i\,\partial\bar\partial\log(\det(g'_{i\bar j})/\det(g_{i\bar j}))$, so the condition $\rho'=0$ becomes the complex Monge–Ampère equation
+**Proof sketch.** In a fixed Kähler class, the Kähler metrics are parametrised by their potentials: $g' = g + i\partial\bar\partial\digamma_{\mathrm{map}}$. The Ricci forms change by $-i\,\partial\bar\partial\log(\det(g'_{i\bar j})/\det(g_{i\bar j}))$, so the condition $\rho'=0$ becomes the complex Monge–Ampère equation
 
 $$
-\det\Bigl(g_{i\bar j} + \partial^2/\partial z_i\partial\bar z_j\,\varphi\Bigr) = \exp(F)\,\det(g_{i\bar j}),
+\det\Bigl(g_{i\bar j} + \partial^2/\partial z_i\partial\bar z_j\,\digamma_{\mathrm{map}}\Bigr) = \exp(F)\,\det(g_{i\bar j}),
 $$
 
 for a function $F$ determined by the difference of the Ricci forms. Yau's theorem is the solution of this equation by the continuity method: the a priori estimates $C^0$, $C^1$, $C^2$ and $C^{2,\alpha}$ for the solution give openness and closedness of the set of solvable classes.
@@ -237,7 +237,7 @@ for a function $F$ determined by the difference of the Ricci forms. Yau's theore
 
 ## Summary
 
-A Kähler manifold is a Hermitian manifold whose fundamental form $\Omega(X,Y)=g(JX,Y)$ is closed. The condition is equivalent to the parallelism of $J$ for the Levi-Civita connection, to the coincidence of the Chern connection with the Levi-Civita connection, to the local existence of a Kähler potential with $\Omega = i\partial\bar\partial\varphi$, and to the reduction of the holonomy group to $\mathrm{U}(n)$; a Kähler manifold is in particular symplectic, and the inclusion of the Kähler manifolds in the symplectic ones is strict, the Kodaira–Thurston manifold being symplectic and not Kähler.
+A Kähler manifold is a Hermitian manifold whose fundamental form $\Omega(X,Y)=g(JX,Y)$ is closed. The condition is equivalent to the parallelism of $J$ for the Levi-Civita connection, to the coincidence of the Chern connection with the Levi-Civita connection, to the local existence of a Kähler potential with $\Omega = i\partial\bar\partial\digamma_{\mathrm{map}}$, and to the reduction of the holonomy group to $\mathrm{U}(n)$; a Kähler manifold is in particular symplectic, and the inclusion of the Kähler manifolds in the symplectic ones is strict, the Kodaira–Thurston manifold being symplectic and not Kähler.
 
 The examples are $\mathbb{C}^n$ and its quotients by lattices, the complex projective space with the Fubini–Study form $\Omega_{FS} = i\partial\bar\partial\log(1+|z|^2)$ and $\int_{\mathbb{CP}^1}\Omega_{FS} = 2\pi$, the Hermitian symmetric spaces, the complex submanifolds and products, and the Riemann surfaces, where the condition is vacuous. Kähler normal coordinates make the metric flat to first order, so the curvature is the only local invariant.
 
@@ -255,7 +255,7 @@ Finally, the Ricci form $\rho(X,Y)=\mathrm{Ric}(JX,Y)$ is a closed real $(1,1)$-
 | $\nabla$ | Levi-Civita connection (from *Riemannian Geometry*); equals the Chern connection here |
 | $\Omega(X,Y) = g(JX,Y)$ | Kähler form; closed, nondegenerate, of type $(1,1)$ |
 | $d\Omega=0$ | The Kähler condition |
-| $\varphi$, $\Omega = i\partial\bar\partial\varphi$ | Kähler potential; unique up to $\varphi\mapsto\varphi+f+\bar f$ |
+| $\digamma_{\mathrm{map}}$, $\Omega = i\partial\bar\partial\digamma_{\mathrm{map}}$ | Kähler potential; unique up to $\digamma_{\mathrm{map}}\mapsto\digamma_{\mathrm{map}}+f+\bar f$ |
 | $\Omega_0 = \sum_i dx_i\wedge dy_i$ | Euclidean Kähler form on $\mathbb{C}^n$ |
 | $\Omega_{FS} = i\partial\bar\partial\log(1+|z|^2)$ | Fubini–Study form; $\int_{\mathbb{CP}^1}\Omega_{FS}=2\pi$, $h^{n,n}(\mathbb{CP}^n)=1$ |
 | $g_{i\bar j}=\delta_{ij}+O(|z|^2)$ | Kähler normal coordinates |

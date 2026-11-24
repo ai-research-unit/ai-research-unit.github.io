@@ -169,7 +169,7 @@ where $Lu$ is taken in the sense of distributions; the **minimal realisation** i
 
 **Proposition (unboundedness).** Every nonconstant-coefficient-free operator of positive order is unbounded on $L^2(\Omega)$: for $L = \partial/\partial x_i$ and for every $M$ there is $u \in C_c^\infty(\Omega)$ with $\|\partial/\partial x_i\,u\|_{L^2} > M\|u\|_{L^2}$.
 
-*Proof.* Take a fixed bump $\varphi\in C_c^\infty$, nonnegative and not identically zero, and put $u_k(x) = \varphi(x)\,\exp(ikx_i)$ for $k \in \mathbb{N}$. Then $\partial/\partial x_i\,u_k = ik\varphi \exp(ikx_i) + (\partial/\partial x_i\,\varphi)\exp(ikx_i)$, so $\|\partial/\partial x_i\,u_k\|_{L^2} \ge |k|\|\varphi\|_{L^2} - \|\partial/\partial x_i\,\varphi\|_{L^2}$ while $\|u_k\|_{L^2} = \|\varphi\|_{L^2}$; for $k$ large enough the quotient exceeds $M$.
+*Proof.* Take a fixed bump $\digamma_{\mathrm{map}}\in C_c^\infty$, nonnegative and not identically zero, and put $u_k(x) = \digamma_{\mathrm{map}}(x)\,\exp(ikx_i)$ for $k \in \mathbb{N}$. Then $\partial/\partial x_i\,u_k = ik\digamma_{\mathrm{map}} \exp(ikx_i) + (\partial/\partial x_i\,\digamma_{\mathrm{map}})\exp(ikx_i)$, so $\|\partial/\partial x_i\,u_k\|_{L^2} \ge |k|\|\digamma_{\mathrm{map}}\|_{L^2} - \|\partial/\partial x_i\,\digamma_{\mathrm{map}}\|_{L^2}$ while $\|u_k\|_{L^2} = \|\digamma_{\mathrm{map}}\|_{L^2}$; for $k$ large enough the quotient exceeds $M$.
 
 **Theorem (the domain decides self-adjointness).** Let $L$ be a differential operator with smooth coefficients. The formal adjoint is the transpose of the maximal realisation in the sense that, for $v \in \mathcal{D}_{\max}(L)$ and $u \in C_c^\infty(\Omega)$,
 

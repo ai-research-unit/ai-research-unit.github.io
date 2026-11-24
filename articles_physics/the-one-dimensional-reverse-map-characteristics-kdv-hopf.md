@@ -70,10 +70,10 @@ $$
 
 so the gradient diverges at $t'_{c}=-1/\inf f'$ whenever the initial slope is negative somewhere. The solution stays single-valued until $t'_{c}$ and after it the implicit equation has several branches. The fluid's answer is a shock, and the shock is not a solution of the differential equation but a solution of the conservation law in the weak sense.
 
-The solution is a Legendre transform and not a linear superposition. Writing $u=\partial_x\phi$ turns Hopf's equation into $\partial_{t'}\phi+\frac12(\partial_x\phi)^{2}=0$, whose viscosity solution is
+The solution is a Legendre transform and not a linear superposition. Writing $u=\partial_x\xi_{\mathrm{pot}}$ turns Hopf's equation into $\partial_{t'}\xi_{\mathrm{pot}}+\frac12(\partial_x\xi_{\mathrm{pot}})^{2}=0$, whose viscosity solution is
 
 $$
-\phi(x,t')=\min_{y}\left[\phi_0(y)+\frac{(x-y)^{2}}{2t'}\right],
+\xi_{\mathrm{pot}}(x,t')=\min_{y}\left[\xi_{\mathrm{pot},0}(y)+\frac{(x-y)^{2}}{2t'}\right],
 $$
 
 the Hopf–Lax formula. The formula is exact, it is a minimum over the initial data, and it is the closest a fluid comes to a superposition principle: the minimum replaces the sum, and the envelope replaces the interference.
@@ -88,7 +88,7 @@ $$
 \partial_{t'}u+u\,\partial_xu=\digamma_{\mathrm{kin}}\,\partial_{xx}u ,
 $$
 
-and the Hopf–Cole transformation $u=-2\digamma_{\mathrm{kin}}\partial_x\ln\psi$ carries it into $\partial_{t'}\psi=\digamma_{\mathrm{kin}}\partial_{xx}\psi$. The check is a differentiation and it is exact, as [Viscosity and the Rayleigh Dissipation Function](viscosity-and-the-rayleigh-dissipation-function.html) verifies on the heat kernel, where $u=x/t'$.
+and the Hopf–Cole transformation $u=-2\digamma_{\mathrm{kin}}\partial_x\lnΞ_{\mathrm{wfn}}$ carries it into $\partial_{t'}Ξ_{\mathrm{wfn}}=\digamma_{\mathrm{kin}}\partial_{xx}Ξ_{\mathrm{wfn}}$. The check is a differentiation and it is exact, as [Viscosity and the Rayleigh Dissipation Function](viscosity-and-the-rayleigh-dissipation-function.html) verifies on the heat kernel, where $u=x/t'$.
 
 The linearisation smooths the catastrophe instead of removing the nonlinearity's origin. The shock of the inviscid case becomes a layer of width of order $\digamma_{\mathrm{kin}}/u$, and the layer's profile is the heat kernel's logarithm. So the viscous case has a linear equivalent and the equivalent is parabolic: its frequency is imaginary, its kernel is positive, and its solutions do not oscillate.
 
@@ -173,8 +173,8 @@ The two linear objects of the article are a diffusion equation and a scattering 
 | $\eta_{\pm}=u\pm c_{\mathrm{s}}$ | Characteristic speeds |
 | $f$ | Initial velocity profile |
 | $t'_{c}=-1/\inf f'$ | Time of the gradient catastrophe |
-| $\phi$ | Potential with $u=\partial_x\phi$; Hopf–Lax function |
-| $\psi$ | Hopf–Cole potential |
+| $\xi_{\mathrm{pot}}$ | Potential with $u=\partial_x\xi_{\mathrm{pot}}$; Hopf–Lax function |
+| $Ξ_{\mathrm{wfn}}$ | Hopf–Cole potential |
 | $\digamma_{\mathrm{kin}}$ | Kinematic viscosity |
 | $c_0=\sqrt{g_{\mathrm{gr}}H_0}$ | Long-wave speed of the shallow layer |
 | $H_0$ | Rest depth of the layer |

@@ -154,7 +154,7 @@ for all objects $C$ of $\mathcal{C}$ and $D$ of $\mathcal{D}$, natural in $C$ an
 
 ### Unit and Counit
 
-**Definition.** Let $F \dashv G$ with bijection $\varphi_{C,D} : \mathcal{D}(F(C),D) \to \mathcal{C}(C,G(D))$. The **unit** $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ has components $\eta_C = \varphi_{C,F(C)}(\mathrm{id}_{F(C)}) : C \to G(F(C))$, and the **counit** $\varepsilon : F \circ G \Rightarrow \mathrm{id}_{\mathcal{D}}$ has components $\varepsilon_D = \varphi_{G(D),D}^{-1}(\mathrm{id}_{G(D)}) : F(G(D)) \to D$.
+**Definition.** Let $F \dashv G$ with bijection $\digamma_{\mathrm{map},C,D} : \mathcal{D}(F(C),D) \to \mathcal{C}(C,G(D))$. The **unit** $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ has components $\eta_C = \digamma_{\mathrm{map},C,F(C)}(\mathrm{id}_{F(C)}) : C \to G(F(C))$, and the **counit** $\varepsilon : F \circ G \Rightarrow \mathrm{id}_{\mathcal{D}}$ has components $\varepsilon_D = \digamma_{\mathrm{map},G(D),D}^{-1}(\mathrm{id}_{G(D)}) : F(G(D)) \to D$.
 
 **Theorem (triangular identities).** With the notation above, the composites
 
@@ -166,7 +166,7 @@ $$
 
 are the identities of $F$ and of $G$. Conversely, a pair of natural transformations $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ and $\varepsilon : F \circ G \Rightarrow \mathrm{id}_{\mathcal{D}}$ satisfying the two identities makes $F$ left adjoint to $G$.
 
-**Proof sketch.** The first identity is checked on components using the naturality of $\varphi$: $(\varepsilon F)_C \circ (F\eta)_C = \varepsilon_{F(C)} \circ F(\eta_C)$, and under the adjunction bijection this is the identity of $F(C)$. The converse defines $\varphi$ by $\varphi(f) = G(f) \circ \eta_C$ and $\varphi^{-1}(g) = \varepsilon_D \circ F(g)$, and the triangular identities are what make the two inverse.
+**Proof sketch.** The first identity is checked on components using the naturality of $\digamma_{\mathrm{map}}$: $(\varepsilon F)_C \circ (F\eta)_C = \varepsilon_{F(C)} \circ F(\eta_C)$, and under the adjunction bijection this is the identity of $F(C)$. The converse defines $\digamma_{\mathrm{map}}$ by $\digamma_{\mathrm{map}}(f) = G(f) \circ \eta_C$ and $\digamma_{\mathrm{map}}^{-1}(g) = \varepsilon_D \circ F(g)$, and the triangular identities are what make the two inverse.
 
 The unit and counit are the useful form of an adjunction: the unit is the insertion of an object into its free algebra, and the counit is the evaluation of a free algebra on its generators. In the free-monoid example, $\eta_X : X \to U(X^*)$ is the insertion of letters and $\varepsilon_M : \mathrm{U}(M)^* \to M$ is the multiplication of a word in $M$.
 

@@ -47,7 +47,7 @@ $$
 \boxed{\;X(L)^G = X(k)\;}.
 $$
 
-*Proof.* A $k$-point is an $L$-point that is already defined over $k$, and $\operatorname{Spec}\sigma$ fixes every $k$-morphism, so $X(k)\subseteq X(L)^G$. Conversely let $X = \operatorname{Spec}A$ be affine and let $P$ correspond to the $k$-algebra homomorphism $\varphi : A\to L$. That $P$ is fixed by $\sigma$ says $\sigma\circ\varphi = \varphi$, that is $\varphi(a) = \sigma(\varphi(a))$ for all $a$ and all $\sigma$, so $\varphi$ takes values in $L^G = k$ and is a $k$-homomorphism $A\to k$, which is a $k$-point. The general case follows by covering $X$ with affine charts, the condition being local.
+*Proof.* A $k$-point is an $L$-point that is already defined over $k$, and $\operatorname{Spec}\sigma$ fixes every $k$-morphism, so $X(k)\subseteq X(L)^G$. Conversely let $X = \operatorname{Spec}A$ be affine and let $P$ correspond to the $k$-algebra homomorphism $\digamma_{\mathrm{map}} : A\to L$. That $P$ is fixed by $\sigma$ says $\sigma\circ\digamma_{\mathrm{map}} = \digamma_{\mathrm{map}}$, that is $\digamma_{\mathrm{map}}(a) = \sigma(\digamma_{\mathrm{map}}(a))$ for all $a$ and all $\sigma$, so $\digamma_{\mathrm{map}}$ takes values in $L^G = k$ and is a $k$-homomorphism $A\to k$, which is a $k$-point. The general case follows by covering $X$ with affine charts, the condition being local.
 
 **Corollary.** For $X$ of finite type over $k$ and $L = \bar k$ the separable closure, the action of $G = \operatorname{gal}(\bar k/k)$ on the geometric points $X(\bar k)$ has fixed set $X(k)$; in particular the $k$-points are recovered from the geometric points by taking invariants, which is the elementary case of Galois descent.
 

@@ -676,7 +676,7 @@ $$
 \zeta^{\dagger}\zeta=\frac{2E}{c},
 $$
 
-checked to $3\times10^{-15}$ on null momenta of three energies. Here $\zeta$ is a two-component column, not the root of $+1$ written $\vec\zeta$ above. The cone sees $\zeta$ only through the projector $\zeta\zeta^{\dagger}$: the rotation $\zeta\mapsto e^{i\phi}\zeta$ leaves $\tilde P_\Phi$ unchanged, so the cone holds the ray of the spinor and not its phase.
+checked to $3\times10^{-15}$ on null momenta of three energies. Here $\zeta$ is a two-component column, not the root of $+1$ written $\vec\zeta$ above. The cone sees $\zeta$ only through the projector $\zeta\zeta^{\dagger}$: the rotation $\zeta\mapsto e^{i\xi_{\mathrm{pot}}}\zeta$ leaves $\tilde P_\Phi$ unchanged, so the cone holds the ray of the spinor and not its phase.
 
 The two moduli carry the energy and the mass. Off the cone the matrix has the eigenvalues $Q_t\pm iB$, whose moduli are $\frac{E}{c}\pm\lvert\vec p\rvert$ on the material slice. Their sum is twice the energy over $c$, their product is the mass squared,
 

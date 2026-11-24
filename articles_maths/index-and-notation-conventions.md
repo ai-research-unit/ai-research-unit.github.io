@@ -46,11 +46,11 @@ The article is the ninth of the ten and the index of the notation: the table bel
 
 ### Marks That Are Not Indices
 
-**The prime marks the imaginary coordinate.** A prime marks the second, imaginary coefficient of a complex, split-complex or dual element, $R=r+ir'$, and of a biquaternion coefficient, $R_\mu=r_\mu+ir'_\mu$. A primed glyph is the second glyph of a pair and takes the primed parameters throughout, $\tilde q' = q'_t e_t+q'_x\vec e_x+q'_y\vec e_y+q'_z\vec e_z$. The prime never marks a derivative: a function is differentiated as $df/dx$, a second derivative as $d^2f/dx^2$, and a derivative with respect to a coordinate is written $\partial/\partial r'_t$. No further use of the prime is admitted.
+**The prime marks the imaginary coordinate.** A prime marks the second, imaginary coefficient of a complex, split-complex or dual element, $R=r+ir'$, and of a biquaternion coefficient, $R_\mu=r_\mu+ir'_\mu$; a primed glyph takes the primed parameters throughout. It never marks a derivative, and no further use of it is admitted.
 
-**The bar marks a conjugate.** A bar marks the quaternion conjugate of a glyph, $\bar Q$, and on an index it marks the conjugate spinor: the second Lorentz label is $\bar l$ and a spinor index of the conjugate representation is $\bar\alpha$. The conjugate matrix is $\bar\Pi$. The bar is never a derivative.
+**The bar marks a conjugate.** A bar marks the conjugate of a glyph, $\bar Q$ and $\bar\Pi$, and on an index the conjugate spinor, $\bar l$ and $\bar\alpha$.
 
-**The underline marks a scope.** In geometric calculus the factor differentiated is underlined, $\underline{\partial}(AB)=\underline{\partial}A\,B+\underline{A}\,\underline{\partial}B$, and the mark is never a dot.
+**The underline marks a scope.** In geometric calculus the differentiated factor is underlined, $\underline{\partial}(AB)=\underline{\partial}A\,B+\underline{A}\,\underline{\partial}B$.
 
 A prime may follow a subscript as well as precede it, `q'_t` and `q_t'`, and an article keeps one order throughout.
 
@@ -157,8 +157,6 @@ which for a matrix is $\bigl(\operatorname{tr}(X^{*}X)\bigr)^{1/2}$, the norm th
 **The table is closed at thirty.** A two-letter token that the corpus spends and this table does not carry is admitted with the article that spends it, or it is a defect, as a three-letter one is.
 
 ### The Three-Letter Labels
-
-The table is an index of labels and not a list of tokens: a label names an object, a construction, a frame or a variant of one, the article that introduces it fixes what it abbreviates, and a label enters the table with that article.
 
 **The section holds two tables.** The first indexes the labels that name an object, a construction, a frame or a variant, and it carries seventy-eight rows. The second table carries the thirty angle labels.
 
@@ -408,18 +406,9 @@ Beyond the table the slot takes any expression: an upright word, ${}_{\mathrm{to
 ## LaTeX and Typesetting
 
 Inline mathematics is written between single dollars and never across a line break; display mathematics between double dollars on lines of their own, indented four spaces inside a list; tables are Markdown tables and never a LaTeX array. A heading that introduces a comparison or a classification is a real `###` heading, and the objects are defined before they are tabulated. **Bold marks the result** in the prose of a Remark or in the lead sentence of a section, the object staying in plain roman: *the subspace **is a commutative Jordan algebra over $\mathbb{R}$ of degree two***; a displayed Theorem, Proposition or Proof is not bolded. The third derivative is `d^3/dt^3`, a gamma contraction is written out, and the characters `|`, `{`, `}`, `<` and `>` inside mathematics need no escaping. A malformed formula is rendered in red rather than reported as an error, so mathematics is checked by eye.
-
 ## Summary
 
-Two **labels** run beside the marks of the elements: $\mathrm{fop}$ marks a Fock operator, an operator on the Fock space and not an element of the algebra, and $\mathrm{opp}$ marks the opposite algebra, whose product is reversed. The two are not read for one another: $\mathrm{fop}$ is written on a glyph, $\mathrm{opp}$ on an algebra name or on an element that names a tensor factor. The dagger is the general adjoint and stands in the caret, so $a_{\mathrm{fop}}^{\dagger}$ carries the two marks in two slots, and the dagger alone never marks a glyph as an operator. No index is raised anywhere in the corpus: every index is written low, and a contraction is a form.
-
-A **label** is the upright roman name of a variant of an object — a construction, a frame, a reading, a part or a role — written lowercase at the length its article fixes, two or three letters in the main and longer where the short form would be ambiguous. Every label stands in the subscript and none in the caret: the label comes first in the field and an index already there follows it after a comma, $L_{\mathrm{axf},e_\mu}$, $T_{\mathrm{em},\mu\nu}$, $V_K^{\mathrm{fin}}$ becoming $V_{\mathrm{fin},K}$. One field is written without the comma, $Q_{\mathrm{f}t}$, and a coefficient carries the label of its element. The labels are indexed in §*The Two-Letter Labels* and §*The Three-Letter Labels*; $\mathrm{op}$ is not one of them.
-
-The **caret** carries a power, a conjugation, a transposition and a construction, and neither a label nor an index: no index is raised anywhere in the corpus. A prime marks the imaginary coordinate, a bar a conjugate, an underline a scope, and none of the three is an index or a derivative. $e^\lambda$, $a^{\dagger}$, $L^T$, $\mathbb{B}^\times$, $S^{\otimes n}$. An operator name written with its argument is the one word that stands there, $\operatorname{sym}^2(E)$ and $K^{\operatorname{gal}(K/F)}$, and it carries its argument and never stands bare.
-
-A **subscript** is written with the underscore and takes a single token: one character bare, two or more in braces. It counts when it only distinguishes occurrences and names when it is a role label; a role-labelled element carries its label in its coefficients. The admitted forms are a digit, a letter, two indices, a sign, an upright word and a grouped expression, and the slot takes any KaTeX expression beyond them. A regular matrix puts the size and the family in one subscript, $\mathsf M_{4L}$ and $\mathsf M_{4LR\ast}$, the family in italic capitals after the size and the frame after them with a comma, $\mathsf M_{4L,\mathrm{pau}}$. A subscript is never a partial derivative. An **angular-momentum total** takes the role subscript, $s_{\mathrm{tot}}$, and its projection the axis, $s_{\mathrm{tot},z}$; the total generator carries the role subscript and then the vector index, $\tilde S_{\mathrm{tot},k}$; the orbital part is $L_k$ here and $\tilde L_k$ in the physical corpus.
-
-The letter $\iota$ is not used in Part VI, where a comparison with a Clifford algebra is written by its values or as the Clifford image, an interior product as a pairing and an inner automorphism in words. In the mathematical corpus an **interval** is the lattice interval $[a,b]$ and never the value of a quadratic form. The **typography** is KaTeX on the page: inline mathematics between single dollars and never across a line break, display mathematics between double dollars on lines of their own, tables in Markdown and never as a LaTeX array, and a malformed formula rendered in red rather than reported.
+A **label** is the upright roman name of a variant, two or three letters, lowercase, always in the subscript and never in the caret; where an index is already there, the label comes first and the index follows after a comma. A **subscript** takes a single token, so a two-letter label costs a brace. The **caret** carries a power, a conjugation, a transposition and a construction, and neither a label nor an index. Two labels run beside the glyphs: $\mathrm{fop}$ for a Fock operator and $\mathrm{opp}$ for the opposite algebra, read for one another by nobody. No index is raised anywhere in the corpus, and a contraction is a form.
 
 ## Summary of Notation
 

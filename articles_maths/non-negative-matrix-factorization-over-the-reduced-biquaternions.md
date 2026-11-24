@@ -86,7 +86,7 @@ Consequently, if $X\notin\mathcal{O}$ then every exact factorization has a basis
 
 **Under the isomorphism with $\mathbb{C}\oplus\mathbb{C}$ the objective becomes half the sum of two complex Frobenius norms, but the constraints remain coupled through the four real component matrices.**
 
-**Theorem (the product in the two idempotent components).** Let $W^{\pm}=W_0\pm W_2+i(W_1\pm W_3)$ and let $H^{\pm}=H_0\pm H_2$, so that $W^{\pm}$ are the two complex matrices $\varphi_\pm(W)$ and $H^{\pm}$ are the two real matrices $\varphi_\pm(H)$. Then
+**Theorem (the product in the two idempotent components).** Let $W^{\pm}=W_0\pm W_2+i(W_1\pm W_3)$ and let $H^{\pm}=H_0\pm H_2$, so that $W^{\pm}$ are the two complex matrices $\digamma_{\mathrm{map},\pm}(W)$ and $H^{\pm}$ are the two real matrices $\digamma_{\mathrm{map},\pm}(H)$. Then
 $$
 \boxed{\;
 (WH)^{\pm}=W^{\pm}H^{\pm}
@@ -97,7 +97,7 @@ $$
 \tfrac12\langle X-WH\rangle_*=\tfrac14\langle X^{+}-W^{+}H^{+}\rangle_*+\tfrac14\langle X^{-}-W^{-}H^{-}\rangle_*.
 $$
 
-*Proof.* The map $\varphi$ is an isomorphism of algebras onto $\mathbb{C}\oplus\mathbb{C}$, so $\varphi(WH)=\varphi(W)\varphi(H)$ and the two components multiply separately; that is the first identity. For the second, the Frobenius norm of a matrix satisfies $\langle M\rangle_*=\sum_{p,q}K(m_{pq})$, and $K=\tfrac12(K^{+}+K^{-})$ with $K^{\pm}(z)=|z|^{2}$ on the two complex components, $K^{+}(z)=|z_1|^{2}$ and $K^{-}(z)=|z_2|^{2}$ for $z=(z_1,z_2)$; summing gives the displayed decomposition. The reduction of a matrix equation to two complex equations is that of *Least Squares and Total Least Squares over the Reduced Biquaternions*.
+*Proof.* The map $\digamma_{\mathrm{map}}$ is an isomorphism of algebras onto $\mathbb{C}\oplus\mathbb{C}$, so $\digamma_{\mathrm{map}}(WH)=\digamma_{\mathrm{map}}(W)\digamma_{\mathrm{map}}(H)$ and the two components multiply separately; that is the first identity. For the second, the Frobenius norm of a matrix satisfies $\langle M\rangle_*=\sum_{p,q}K(m_{pq})$, and $K=\tfrac12(K^{+}+K^{-})$ with $K^{\pm}(z)=|z|^{2}$ on the two complex components, $K^{+}(z)=|z_1|^{2}$ and $K^{-}(z)=|z_2|^{2}$ for $z=(z_1,z_2)$; summing gives the displayed decomposition. The reduction of a matrix equation to two complex equations is that of *Least Squares and Total Least Squares over the Reduced Biquaternions*.
 
 **Theorem (the constraints in the two components).** The structured cone reads, in the two components,
 $$
@@ -216,7 +216,7 @@ Under the isomorphism with $\mathbb{C}\oplus\mathbb{C}$ the product becomes $X^{
 | $M\succeq0$, $\mathcal{C}_{+}^{m\times n}$ | The non-negative matrices, all four component matrices entrywise non-negative |
 | $M\in\mathcal{O}^{m\times n}$ | The structured matrices, $M=M_0+M_2j$ with $M_0,M_2\ge0$; the source's $\mathrm{RB}_{+j}$ |
 | $WH$ | The product, of the components displayed in §*The Product Formula* |
-| $M^{\pm}=M_0\pm M_2+i(M_1\pm M_3)$ | The two idempotent components of a matrix, $\varphi_\pm(M)$ |
+| $M^{\pm}=M_0\pm M_2+i(M_1\pm M_3)$ | The two idempotent components of a matrix, $\digamma_{\mathrm{map},\pm}(M)$ |
 | $\operatorname{rank}_{+}(X)$ | The non-negative reduced biquaternion rank, the least exact inner dimension |
 | $A$, $D$, $L=D-A$ | The symmetric affinity matrix, the degree matrix and the graph Laplacian |
 | $R(H)=\operatorname{tr}(H_0LH_0^{\top})+\operatorname{tr}(H_2LH_2^{\top})$ | The graph regularizer, the Dirichlet energy of the two real coefficient matrices |

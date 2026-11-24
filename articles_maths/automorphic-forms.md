@@ -130,21 +130,21 @@ $$
 \boxed{\;L^2 = L^2_{cusp} \oplus L^2_{res} \oplus L^2_{cont}\;},
 $$
 
-where $L^2_{cusp}$ is the cuspidal spectrum, $L^2_{res}$ is spanned by the residues of Eisenstein series, and $L^2_{cont}$ is the continuous spectrum spanned by the Eisenstein series $E(g, \varphi, s)$ for $\varphi$ in a space of automorphic forms on the Levi subgroup and $s$ on the critical line.
+where $L^2_{cusp}$ is the cuspidal spectrum, $L^2_{res}$ is spanned by the residues of Eisenstein series, and $L^2_{cont}$ is the continuous spectrum spanned by the Eisenstein series $E(g, \digamma_{\mathrm{map}}, s)$ for $\digamma_{\mathrm{map}}$ in a space of automorphic forms on the Levi subgroup and $s$ on the critical line.
 
 The decomposition is the analytic heart of the theory: it says that a general square-integrable automorphic form is a superposition of cuspidal forms, residues and Eisenstein series, and that the contribution of the Eisenstein series is indexed by the parameter $s$, which varies continuously. For $G = GL_1$ the decomposition reduces to the spectral theory of the multiplicative group, and the Eisenstein series becomes the classical zeta function; for $G = GL_2$ the constant term of an Eisenstein series produces the ratio of $L$-functions that gives the analytic continuation.
 
 ### Eisenstein Series
 
-**Definition.** Let $P = MN$ be the standard Borel subgroup of $GL_2$ and let $\varphi$ be a cusp form on the Levi $M \cong GL_1 \times GL_1$ with a character parameter $s \in \mathbb{C}$. The **Eisenstein series** is
+**Definition.** Let $P = MN$ be the standard Borel subgroup of $GL_2$ and let $\digamma_{\mathrm{map}}$ be a cusp form on the Levi $M \cong GL_1 \times GL_1$ with a character parameter $s \in \mathbb{C}$. The **Eisenstein series** is
 
 $$
-E(g, \varphi, s) = \sum_{\gamma \in P(\mathbb{Q})\backslash G(\mathbb{Q})} \varphi(\gamma g)\, |a(\gamma g)|^{s+1/2},
+E(g, \digamma_{\mathrm{map}}, s) = \sum_{\gamma \in P(\mathbb{Q})\backslash G(\mathbb{Q})} \digamma_{\mathrm{map}}(\gamma g)\, |a(\gamma g)|^{s+1/2},
 $$
 
-convergent for $\Re s > 1/2$ and continued meromorphically to $\mathbb{C}$ with a functional equation $E(g,\varphi,s) \leftrightarrow E(g, \varphi^\vee, -s)$.
+convergent for $\Re s > 1/2$ and continued meromorphically to $\mathbb{C}$ with a functional equation $E(g,\digamma_{\mathrm{map}},s) \leftrightarrow E(g, \digamma_{\mathrm{map}}^\vee, -s)$.
 
-The analytic continuation and the functional equation are proved by the theory of the constant term: the constant term of $E$ is $\varphi(g) + M(s)\varphi(g)$ with $M(s)$ an intertwining operator whose normalising factor is a ratio of local $L$-factors, and the functional equation of the Eisenstein series is the functional equation of that ratio. The poles of $M(s)$ give the residual spectrum and the residues $E(g,\varphi,s_0)$ are the residual automorphic forms. The classical Eisenstein series of the upper half-plane is the special case of the weight-zero form, and the analytic continuation of the zeta function is the case $G = GL_1$.
+The analytic continuation and the functional equation are proved by the theory of the constant term: the constant term of $E$ is $\digamma_{\mathrm{map}}(g) + M(s)\digamma_{\mathrm{map}}(g)$ with $M(s)$ an intertwining operator whose normalising factor is a ratio of local $L$-factors, and the functional equation of the Eisenstein series is the functional equation of that ratio. The poles of $M(s)$ give the residual spectrum and the residues $E(g,\digamma_{\mathrm{map}},s_0)$ are the residual automorphic forms. The classical Eisenstein series of the upper half-plane is the special case of the weight-zero form, and the analytic continuation of the zeta function is the case $G = GL_1$.
 
 ### The Trace Formula
 
@@ -184,7 +184,7 @@ $$
 
 where $\pi^{\vee}$ is the contragredient representation. The completed $L$-function extends to a meromorphic function of $s$ of finite order, and it is entire when $\pi$ is cuspidal.
 
-The functional equation is proved by Tate's thesis for $GL_1$ and by the theory of the zeta integrals for $GL_n$: one writes the $L$-function as the greatest common divisor of a family of local–global integrals $Z(s, f, \varphi) = \int_{G(\mathbb{Q})\backslash G(\mathbb{A})} f(g)\varphi(g)\, dg$ and proves the functional equation for the integrals, which transfers to the $L$-function. Tate's thesis is the case $G = GL_1$, in which the integrals are the classical adelic zeta integrals and the functional equation is the one of the Riemann zeta function; it is developed in *Adeles and Ideles*, where the adelic measure and the local Fourier analysis are constructed.
+The functional equation is proved by Tate's thesis for $GL_1$ and by the theory of the zeta integrals for $GL_n$: one writes the $L$-function as the greatest common divisor of a family of local–global integrals $Z(s, f, \digamma_{\mathrm{map}}) = \int_{G(\mathbb{Q})\backslash G(\mathbb{A})} f(g)\digamma_{\mathrm{map}}(g)\, dg$ and proves the functional equation for the integrals, which transfers to the $L$-function. Tate's thesis is the case $G = GL_1$, in which the integrals are the classical adelic zeta integrals and the functional equation is the one of the Riemann zeta function; it is developed in *Adeles and Ideles*, where the adelic measure and the local Fourier analysis are constructed.
 
 ### Rankin–Selberg and the Arithmetic
 
@@ -217,7 +217,7 @@ The classical modular forms are the weight-and-level components of this picture,
 | $T_n$ | Classical Hecke operator |
 | $M_k$, $S_k$ | Modular forms and cusp forms of weight $k$ |
 | $L^2_{cusp}$, $L^2_{res}$, $L^2_{cont}$ | Cuspidal, residual and continuous spectra |
-| $E(g,\varphi,s)$ | Eisenstein series |
+| $E(g,\digamma_{\mathrm{map}},s)$ | Eisenstein series |
 | $L(s,\pi)$, $\Lambda(s,\pi)$ | Standard and completed $L$-function |
 | $N_\pi$, $\varepsilon(\pi)$ | Conductor and root number of $\pi$ |
 | $\pi \times \pi'$ | Rankin–Selberg convolution |

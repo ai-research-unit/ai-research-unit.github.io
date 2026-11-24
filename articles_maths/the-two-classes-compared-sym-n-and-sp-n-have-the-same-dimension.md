@@ -134,21 +134,21 @@ Both signs occur as soon as $n\ge2$, so the restriction is indefinite. Its negat
 
 ## No Linear Isomorphism Carries One Product to the Other
 
-**Theorem.** There is no linear isomorphism $\varphi:\operatorname{Sym}_n\to\mathfrak{sp}_n$ and no nonzero scalar $c$ with
+**Theorem.** There is no linear isomorphism $\digamma_{\mathrm{map}}:\operatorname{Sym}_n\to\mathfrak{sp}_n$ and no nonzero scalar $c$ with
 
 $$
-\varphi(X\circ Y)=c\,[\varphi(X),\varphi(Y)]
+\digamma_{\mathrm{map}}(X\circ Y)=c\,[\digamma_{\mathrm{map}}(X),\digamma_{\mathrm{map}}(Y)]
 $$
 
 for all symmetric $X,Y$.
 
-*Proof.* Take $X=Y$. Then $X\circ X=X^{2}$ and $[\varphi(X),\varphi(X)]=0$, so $\varphi(X^{2})=0$ for every $X$. Every symmetric matrix is a combination of squares, because
+*Proof.* Take $X=Y$. Then $X\circ X=X^{2}$ and $[\digamma_{\mathrm{map}}(X),\digamma_{\mathrm{map}}(X)]=0$, so $\digamma_{\mathrm{map}}(X^{2})=0$ for every $X$. Every symmetric matrix is a combination of squares, because
 
 $$
 S=\tfrac12\bigl((S+\mathrm{I})^{2}-S^{2}-\mathrm{I}\bigr),
 $$
 
-so $\varphi$ vanishes on a spanning set of $\operatorname{Sym}_n$, hence $\varphi=0$, which contradicts injectivity.
+so $\digamma_{\mathrm{map}}$ vanishes on a spanning set of $\operatorname{Sym}_n$, hence $\digamma_{\mathrm{map}}=0$, which contradicts injectivity.
 
 **The proof uses only the alternating law.** The bracket satisfies $[Z,Z]=0$ for every $Z$, and the Jordan product does not: $X\circ X=X^{2}$ is nonzero for an invertible $X$. The alternating law is the obstruction, and it is the Lie-theoretic shadow of the sign in the product rule.
 

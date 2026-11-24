@@ -73,9 +73,9 @@ The passage from the group to the algebra is a functor, and its failure to be an
 | the Lie algebra $\mathrm{G} = T_eG$ | the tangent space at the identity, with the bracket of left-invariant vector fields; $[X,Y] = XY - YX$ for a matrix group | *Lie Groups*; *The Lie Algebra and the Exponential Map* |
 | the exponential map $\exp : \mathrm{G} \to G$ | the flow of a left-invariant field; a local diffeomorphism at $0$, natural in homomorphisms | *The Lie Algebra and the Exponential Map* |
 | the Campbell–Baker–Hausdorff formula | $\exp(X)\exp(Y) = \exp(Z(X,Y))$ with $Z$ a Lie polynomial; the group law in exponential coordinates | *The Lie Algebra and the Exponential Map* |
-| the differential $d\varphi_e$ | the functor on homomorphisms; a Lie algebra homomorphism | *Lie Groups*; *The Lie Correspondence and the Adjoint Representation* |
+| the differential $d\digamma_{\mathrm{map},e}$ | the functor on homomorphisms; a Lie algebra homomorphism | *Lie Groups*; *The Lie Correspondence and the Adjoint Representation* |
 | Lie's third theorem | every finite-dimensional real Lie algebra is the Lie algebra of a simply connected Lie group | *The Lie Correspondence and the Adjoint Representation* |
-| the Lie correspondence | for simply connected $G$, $\varphi \mapsto d\varphi_e$ is a bijection from $\operatorname{Hom}(G,H)$ to $\operatorname{Hom}(\mathrm{G},\mathrm{H})$ | *The Lie Correspondence and the Adjoint Representation* |
+| the Lie correspondence | for simply connected $G$, $\digamma_{\mathrm{map}} \mapsto d\digamma_{\mathrm{map},e}$ is a bijection from $\operatorname{Hom}(G,H)$ to $\operatorname{Hom}(\mathrm{G},\mathrm{H})$ | *The Lie Correspondence and the Adjoint Representation* |
 | the simply connected cover | $\pi : G_{\mathrm{cov}} \to G$ with discrete central kernel; the connected groups with a given algebra are the $G_{\mathrm{cov}}/D$ | *The Lie Correspondence and the Adjoint Representation*; *The Fundamental Group of a Lie Group* |
 | the adjoint representation | $\operatorname{Ad}(g) = d(c_g)_e$ on $\mathrm{G}$ and $\operatorname{ad}_x(y) = [x,y]$, with $d(\operatorname{Ad})_e = \operatorname{ad}$ | *The Lie Correspondence and the Adjoint Representation* |
 | the centre | $\ker\operatorname{Ad} = Z(G)$ for connected $G$, and $\operatorname{Lie}(Z(G)) = \mathrm{Z}(\mathrm{G})$ | *The Lie Correspondence and the Adjoint Representation* |
@@ -120,7 +120,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\mathrm{G} = T_eG$, $\mathrm{H}$ | the Lie algebra of $G$, the Lie algebra of $H$; lowercase fraktur throughout |
 | $\exp : \mathrm{G} \to G$ | the exponential map |
 | $[X,Y]$, $\operatorname{ad}_x$, $\operatorname{Ad}(g)$ | the bracket, the adjoint representation of the algebra, of the group |
-| $d\varphi_e$ | the differential of a homomorphism at the identity |
+| $d\digamma_{\mathrm{map},e}$ | the differential of a homomorphism at the identity |
 | $\mathrm{SL}_n$, $\mathrm{SO}_n$, $\mathrm{Sp}_n$, $\mathrm{G}_2$, $\mathrm{F}_4$, $\mathrm{E}_6$, $\mathrm{E}_7$, $\mathrm{E}_8$ | the simple Lie algebras by type |
 | $A_n$, $B_n$, $C_n$, $D_n$, $G_2$, $F_4$, $E_6$, $E_7$, $E_8$ | the types of the classification, with $r$ the rank and $\Phi$ the root system |
 | $GL_n(\mathbb{K})$, $SL_n(\mathbb{K})$, $O(n)$, $SO(n)$, $\mathrm{U}(n)$, $SU(n)$, $Sp(n)$, $Sp(2n,\mathbb{R})$ | the classical matrix groups |

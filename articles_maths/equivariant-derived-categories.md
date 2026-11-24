@@ -27,7 +27,7 @@ $$
 
 ## The Forgetful Functor and its Adjoints
 
-**Definition.** The **forgetful functor** $\operatorname{For}:\mathrm{Sh}_G(X)\to\mathrm{Sh}(X)$ sends an equivariant sheaf to its underlying sheaf, forgetting the isomorphisms $\varphi_g$; it is exact by *Equivariant Sheaves and Descent* and induces an exact functor $\operatorname{For}:D^b_G(X)\to D^b(X)$ on the derived categories, the same symbol, which needs no derivation.
+**Definition.** The **forgetful functor** $\operatorname{For}:\mathrm{Sh}_G(X)\to\mathrm{Sh}(X)$ sends an equivariant sheaf to its underlying sheaf, forgetting the isomorphisms $\digamma_{\mathrm{map},g}$; it is exact by *Equivariant Sheaves and Descent* and induces an exact functor $\operatorname{For}:D^b_G(X)\to D^b(X)$ on the derived categories, the same symbol, which needs no derivation.
 
 **Theorem (the adjoints of the forgetful functor).** The forgetful functor has a left adjoint $\operatorname{Ind}$ and a right adjoint $\operatorname{Coind}$, the **induction** and the **coinduction**, given on a sheaf $\mathcal{F}$ by
 
@@ -35,7 +35,7 @@ $$
 \operatorname{Ind}(\mathcal{F})=\bigoplus_{g\in G}g_*\mathcal{F},\qquad \operatorname{Coind}(\mathcal{F})=\prod_{g\in G}g_*\mathcal{F},
 $$
 
-each with the equivariant structure under which $\varphi_h$ permutes the summands or the factors; on the derived categories the forgetful functor of the equivariant derived category has the derived adjoints
+each with the equivariant structure under which $\digamma_{\mathrm{map},h}$ permutes the summands or the factors; on the derived categories the forgetful functor of the equivariant derived category has the derived adjoints
 
 $$
 \boxed{\;\operatorname{Ind}\ \dashv\ \operatorname{For}\ \dashv\ \operatorname{Coind},\qquad \operatorname{Ind},\operatorname{Coind}:D^b(X)\to D^b_G(X)\;},

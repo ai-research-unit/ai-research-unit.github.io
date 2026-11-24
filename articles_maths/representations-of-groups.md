@@ -110,7 +110,7 @@ The characters of the irreducible representations are the **irreducible characte
 On the space of class functions $G\to\mathbb{C}$ define the inner product
 
 $$
-\langle \chi, \psi \rangle_G=\frac{1}{|G|}\sum_{g \in G}\chi(g)\overline{\psi(g)}.
+\langle \chi, Ξ_{\mathrm{wfn}} \rangle_G=\frac{1}{|G|}\sum_{g \in G}\chi(g)\overline{Ξ_{\mathrm{wfn}}(g)}.
 $$
 
 **Theorem (First orthogonality).** Let $\chi_i,\chi_j$ be the characters of two irreducible complex representations. Then
@@ -271,7 +271,7 @@ with five irreducible characters of degrees $1,1,1,1,2$ and $\sum_i d_i^2=8=|Q_8
 
 A representation of a group $G$ over a field $F$ is a group homomorphism $G\to GL_F(V)$, equivalently a left module over the group algebra $F[G]$, and the two notions form equivalent categories. Submodules, quotients, direct sums, duality and tensor products of representations are the corresponding module constructions, the tensor product existing because $F[G]$ is a Hopf algebra with comultiplication $\Delta(g)=g\otimes g$. When $G$ is finite and $\operatorname{char} F$ does not divide $|G|$, Maschke's theorem makes $F[G]$ semisimple and every representation completely reducible; the Wedderburn–Artin theorem then writes $F[G]\cong\prod_i M_{n_i}(D_i)$, with $|G|=\sum_i n_i^2\dim_F D_i$, and over an algebraically closed field of characteristic zero this is $|G|=\sum_i d_i^2$ with the number of factors equal to the number of conjugacy classes.
 
-Over $\mathbb{C}$, the character $\chi_V(g)=\operatorname{Tr}\rho(g)$ is a class function, additive on direct sums, multiplicative on tensor products, and the irreducible characters are orthonormal under $\langle\chi,\psi\rangle_G=|G|^{-1}\sum_g\chi(g)\overline{\psi(g)}$; the second orthogonality relation gives orthogonality down the columns of the character table, so that the number of irreducible characters equals the number of conjugacy classes, and the multiplicity of an irreducible in any representation is an inner product of characters. The regular representation has character $|G|\delta_{g,1}$ and decomposes as $\bigoplus_i V_i^{\oplus d_i}$, so its dimension identity is $\sum_i d_i^2=|G|$. Tensor products decompose with the Clebsch–Gordan multiplicities $c_{ijk}=\langle\chi_i\chi_j,\chi_k\rangle$, which give the representation ring $R(G)$ its multiplication; for $S_3$ the computation $V_{\mathrm{std}}\otimes V_{\mathrm{std}}\cong V_{\mathrm{triv}}\oplus V_{\mathrm{sign}}\oplus V_{\mathrm{std}}$ illustrates the general formula, and the Lie-theoretic Clebsch–Gordan rule is the continuous analogue, treated in the companion Lie theory article. Induction and restriction are extension and restriction of scalars along $F[H]\hookrightarrow F[G]$ and satisfy Frobenius reciprocity. Every result is a statement about modules over the group algebra, and none of them requires a physical interpretation.
+Over $\mathbb{C}$, the character $\chi_V(g)=\operatorname{Tr}\rho(g)$ is a class function, additive on direct sums, multiplicative on tensor products, and the irreducible characters are orthonormal under $\langle\chi,Ξ_{\mathrm{wfn}}\rangle_G=|G|^{-1}\sum_g\chi(g)\overline{Ξ_{\mathrm{wfn}}(g)}$; the second orthogonality relation gives orthogonality down the columns of the character table, so that the number of irreducible characters equals the number of conjugacy classes, and the multiplicity of an irreducible in any representation is an inner product of characters. The regular representation has character $|G|\delta_{g,1}$ and decomposes as $\bigoplus_i V_i^{\oplus d_i}$, so its dimension identity is $\sum_i d_i^2=|G|$. Tensor products decompose with the Clebsch–Gordan multiplicities $c_{ijk}=\langle\chi_i\chi_j,\chi_k\rangle$, which give the representation ring $R(G)$ its multiplication; for $S_3$ the computation $V_{\mathrm{std}}\otimes V_{\mathrm{std}}\cong V_{\mathrm{triv}}\oplus V_{\mathrm{sign}}\oplus V_{\mathrm{std}}$ illustrates the general formula, and the Lie-theoretic Clebsch–Gordan rule is the continuous analogue, treated in the companion Lie theory article. Induction and restriction are extension and restriction of scalars along $F[H]\hookrightarrow F[G]$ and satisfy Frobenius reciprocity. Every result is a statement about modules over the group algebra, and none of them requires a physical interpretation.
 
 ## Summary of Notation
 
@@ -286,7 +286,7 @@ Over $\mathbb{C}$, the character $\chi_V(g)=\operatorname{Tr}\rho(g)$ is a class
 | $\operatorname{End}_G(V)$ | intertwining operators, $\cong\operatorname{End}_{F[G]}(V)$ |
 | $\Delta$, $\varepsilon$, $S$ | comultiplication, counit, antipode of $F[G]$ |
 | $\chi_V(g)=\operatorname{Tr}\rho(g)$ | character of $V$ |
-| $\langle\chi,\psi\rangle_G=\frac{1}{|G|}\sum_g\chi(g)\overline{\psi(g)}$ | inner product of class functions |
+| $\langle\chi,Ξ_{\mathrm{wfn}}\rangle_G=\frac{1}{|G|}\sum_g\chi(g)\overline{Ξ_{\mathrm{wfn}}(g)}$ | inner product of class functions |
 | $\chi_i$, $d_i$ | irreducible characters and their degrees |
 | $r$ | number of irreducible complex characters, $=$ number of conjugacy classes |
 | $C_G(g)$ | centralizer of $g$ |

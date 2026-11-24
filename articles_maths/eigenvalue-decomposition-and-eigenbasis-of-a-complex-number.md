@@ -71,16 +71,16 @@ and $i_2=i_1(e_+-e_-)$.
 **Theorem (the splitting of the complexified algebra).** The map
 
 $$
-\phi:A_{\mathbb{C}}\longrightarrow\mathbb{C}\oplus\mathbb{C},\qquad \phi(a\otimes\alpha)=(a\alpha,a\bar\alpha)
+\digamma_{\mathrm{map}}:A_{\mathbb{C}}\longrightarrow\mathbb{C}\oplus\mathbb{C},\qquad \digamma_{\mathrm{map}}(a\otimes\alpha)=(a\alpha,a\bar\alpha)
 $$
 
 is an isomorphism of rings, with inverse $(u,v)\mapsto\frac{u+v}{2}\otimes1+\frac{u-v}{2i}\otimes i$. It sends
 
 $$
-\phi(e_+)=(1,0),\qquad \phi(e_-)=(0,1),\qquad \phi(1\otimes z)=(z,\bar z).
+\digamma_{\mathrm{map}}(e_+)=(1,0),\qquad \digamma_{\mathrm{map}}(e_-)=(0,1),\qquad \digamma_{\mathrm{map}}(1\otimes z)=(z,\bar z).
 $$
 
-*Proof.* Multiplicativity is $\phi((a\otimes\alpha)(b\otimes\beta))=(ab\alpha\beta,ab\bar\alpha\bar\beta)=\phi(a\otimes\alpha)\phi(b\otimes\beta)$. The inverse is checked by $(a+ci,a-ci)=(u,v)$ with $a=(u+v)/2$ and $c=(u-v)/(2i)$. For $e_+$, one has $i_1i_2=i\otimes i\mapsto(-1,1)$, so $e_+\mapsto\frac12((1,1)-(-1,1))=(1,0)$, and similarly $e_-\mapsto(0,1)$. For $1\otimes z$ with $z=t+bi$, the image is $(z,\bar z)$.
+*Proof.* Multiplicativity is $\digamma_{\mathrm{map}}((a\otimes\alpha)(b\otimes\beta))=(ab\alpha\beta,ab\bar\alpha\bar\beta)=\digamma_{\mathrm{map}}(a\otimes\alpha)\digamma_{\mathrm{map}}(b\otimes\beta)$. The inverse is checked by $(a+ci,a-ci)=(u,v)$ with $a=(u+v)/2$ and $c=(u-v)/(2i)$. For $e_+$, one has $i_1i_2=i\otimes i\mapsto(-1,1)$, so $e_+\mapsto\frac12((1,1)-(-1,1))=(1,0)$, and similarly $e_-\mapsto(0,1)$. For $1\otimes z$ with $z=t+bi$, the image is $(z,\bar z)$.
 
 **Theorem (the spectral decomposition).** For $z=t+bi$ with $b\neq0$,
 
@@ -90,7 +90,7 @@ $$
 
 with $\lambda_\pm=t\pm ib$. The decomposition is unique.
 
-*Proof.* Under $\phi$, the element $z$ is $(z,\bar z)$ and $e_+$ is $(1,0)$, so $z e_+$ is $(z,0)=\lambda_+(1,0)=\lambda_+e_+$. Similarly $z e_-$ is $(0,\bar z)=\lambda_-(0,1)=\lambda_-e_-$. Adding gives $(z,\bar z)$, which is the image of $z$. For uniqueness, two decompositions $z=\lambda_+e_++\lambda_-e_-=\mu_+e_++\mu_-e_-$ with $\lambda_+\neq\lambda_-$ give $(\lambda_+-\mu_+)e_+=(\mu_--\lambda_-)e_-$; the two sides lie in complementary direct summands, so both vanish and the coefficients agree.
+*Proof.* Under $\digamma_{\mathrm{map}}$, the element $z$ is $(z,\bar z)$ and $e_+$ is $(1,0)$, so $z e_+$ is $(z,0)=\lambda_+(1,0)=\lambda_+e_+$. Similarly $z e_-$ is $(0,\bar z)=\lambda_-(0,1)=\lambda_-e_-$. Adding gives $(z,\bar z)$, which is the image of $z$. For uniqueness, two decompositions $z=\lambda_+e_++\lambda_-e_-=\mu_+e_++\mu_-e_-$ with $\lambda_+\neq\lambda_-$ give $(\lambda_+-\mu_+)e_+=(\mu_--\lambda_-)e_-$; the two sides lie in complementary direct summands, so both vanish and the coefficients agree.
 
 **Corollary (the spectral projectors).** The left multiplications $L_{e_+}$ and $L_{e_-}$ are the spectral projectors of $L_z$:
 
@@ -180,7 +180,7 @@ $$
 e_+=\frac12(1-i_1i_2),\qquad e_-=\frac12(1+i_1i_2),\qquad i_1=i\otimes1,\qquad i_2=1\otimes i.
 $$
 
-They are the two minimal idempotents of $A_{\mathbb{C}}$, they satisfy $e_+^2=e_+$, $e_-^2=e_-$, $e_+e_-=0$, $e_++e_-=1$, and they give the decomposition $z=\lambda_+e_++\lambda_-e_-$. Under the isomorphism $\phi(a\otimes\alpha)=(a\alpha,a\bar\alpha)$ they are the two standard idempotents $(1,0)$ and $(0,1)$ of $\mathbb{C}\oplus\mathbb{C}$, and $z$ is $(z,\bar z)$. The left multiplications $L_{e_\pm}$ are the spectral projectors, with matrices $E_\pm=(A-\lambda_\mp I)/(\lambda_\pm-\lambda_\mp)$.
+They are the two minimal idempotents of $A_{\mathbb{C}}$, they satisfy $e_+^2=e_+$, $e_-^2=e_-$, $e_+e_-=0$, $e_++e_-=1$, and they give the decomposition $z=\lambda_+e_++\lambda_-e_-$. Under the isomorphism $\digamma_{\mathrm{map}}(a\otimes\alpha)=(a\alpha,a\bar\alpha)$ they are the two standard idempotents $(1,0)$ and $(0,1)$ of $\mathbb{C}\oplus\mathbb{C}$, and $z$ is $(z,\bar z)$. The left multiplications $L_{e_\pm}$ are the spectral projectors, with matrices $E_\pm=(A-\lambda_\mp I)/(\lambda_\pm-\lambda_\mp)$.
 
 On the real axis the two eigenvalues coalesce at $t$. The operator is $tI$, every vector is an eigenvector, every basis is an eigenbasis, and the two-term writing has equal coefficients; the choice of splitting is not unique. The canonical decomposition is the one-term $z=t\cdot1$, and the spectral projector is $I$.
 
@@ -199,7 +199,7 @@ The matrix $A=tI+bJ$ is normal, $A^{\mathsf{T}}A=|z|^2I$, and, for $z\neq0$, $A/
 | $A_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | the complexified algebra, isomorphic to $\mathbb{C}\oplus\mathbb{C}$ |
 | $i_1=i\otimes1$, $i_2=1\otimes i$ | the two algebra generators, $i_1^2=i_2^2=-1$ |
 | $e_\pm=\frac12(1\mp i_1i_2)$ | the spectral idempotents |
-| $\phi(a\otimes\alpha)=(a\alpha,a\bar\alpha)$ | the isomorphism $A_{\mathbb{C}}\to\mathbb{C}\oplus\mathbb{C}$ |
+| $\digamma_{\mathrm{map}}(a\otimes\alpha)=(a\alpha,a\bar\alpha)$ | the isomorphism $A_{\mathbb{C}}\to\mathbb{C}\oplus\mathbb{C}$ |
 | $E_\pm=\frac{A-\lambda_\mp I}{\lambda_\pm-\lambda_\mp}$ | the spectral projectors, matrices of $L_{e_\pm}$ |
 | $r=\lvert z\rvert=\sqrt{t^2+b^2}$ | the modulus |
 | $u=z/r=e^{i\theta}$ | the unit factor, $\cos\theta=t/r$, $\sin\theta=b/r$ |

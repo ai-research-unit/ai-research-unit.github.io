@@ -114,7 +114,7 @@ which was checked on a hundred random connections and material elements with no 
 
 The same split appears at the level of finite transformations, and in a form that is easier to remember than the infinitesimal one.
 
-**A rotation rotor is unitary in the algebra's sense.** For $\tilde U=\cos(\phi/2)e_t+\sin(\phi/2)\vec u$ with $\vec u$ a unit spatial vector, $\tilde U^{*}=\cos(\phi/2)e_t-\sin(\phi/2)\vec u=\tilde U^{-1}$, and $\tilde U\tilde U^{\natural}=e_t$ because $\vec u^{2}=-e_t$. So $\tilde U^{*}=\tilde U^{-1}$.
+**A rotation rotor is unitary in the algebra's sense.** For $\tilde U=\cos(\xi_{\mathrm{pot}}/2)e_t+\sin(\xi_{\mathrm{pot}}/2)\vec u$ with $\vec u$ a unit spatial vector, $\tilde U^{*}=\cos(\xi_{\mathrm{pot}}/2)e_t-\sin(\xi_{\mathrm{pot}}/2)\vec u=\tilde U^{-1}$, and $\tilde U\tilde U^{\natural}=e_t$ because $\vec u^{2}=-e_t$. So $\tilde U^{*}=\tilde U^{-1}$.
 
 **A boost rotor is Hermitian.** For $\tilde U=\cosh(\theta/2)e_t+i\sinh(\theta/2)\vec u$, the star leaves the coefficient of $i\vec u$ alone, so $\tilde U^{*}=\tilde U$, and $\tilde U\tilde U^{\natural}=\cosh^{2}(\theta/2)-\sinh^{2}(\theta/2)\cdot(i\vec u)^{2}=e_t$ because $(i\vec u)^{2}=+\vec u^{2}\cdot i^{2}=+e_t$. So $\tilde U^{*}=\tilde U\neq\tilde U^{-1}$.
 

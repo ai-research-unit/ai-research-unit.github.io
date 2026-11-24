@@ -49,23 +49,23 @@ the same quantity as the additive volume, in accordance with the Tamagawa number
 
 **Definition.** A choice of a nontrivial additive character of $\mathbb{A}/K$ is made once and for all: at the finite places
 $$
-\psi_v(x) = \exp(-2\pi i \{x\}_v) \quad \text{with } \{x\}_v \in \mathbb{Z}[1/p] \text{ the fractional part of } x,
+Ξ_{\mathrm{wfn},v}(x) = \exp(-2\pi i \{x\}_v) \quad \text{with } \{x\}_v \in \mathbb{Z}[1/p] \text{ the fractional part of } x,
 $$
-at the real place $\psi_v(x) = \exp(2\pi i x)$, and at a complex place $\psi_v(z) = \exp(4\pi i \operatorname{Re} z)$; and $\psi = \prod_v \psi_v$ is the product character on $\mathbb{A}$.
+at the real place $Ξ_{\mathrm{wfn},v}(x) = \exp(2\pi i x)$, and at a complex place $Ξ_{\mathrm{wfn},v}(z) = \exp(4\pi i \operatorname{Re} z)$; and $Ξ_{\mathrm{wfn}} = \prod_v Ξ_{\mathrm{wfn},v}$ is the product character on $\mathbb{A}$.
 
 **Theorem.** The product character is well defined, continuous and trivial on $K$:
 $$
-\psi(x) = 1 \qquad (x \in K),
+Ξ_{\mathrm{wfn}}(x) = 1 \qquad (x \in K),
 $$
-by the product formula; consequently it induces a character of the compact group $\mathbb{A}/K$ and, by Pontryagin duality, an isomorphism $\mathbb{A} \cong \widehat{\mathbb{A}}$ given by $\zeta \mapsto \psi_\zeta$ with $\psi_\zeta(x) = \psi(\zeta x)$.
+by the product formula; consequently it induces a character of the compact group $\mathbb{A}/K$ and, by Pontryagin duality, an isomorphism $\mathbb{A} \cong \widehat{\mathbb{A}}$ given by $\zeta \mapsto Ξ_{\mathrm{wfn},\zeta}$ with $Ξ_{\mathrm{wfn},\zeta}(x) = Ξ_{\mathrm{wfn}}(\zeta x)$.
 
-**Proof.** Almost every factor has $x \in \mathcal{O}_v$ and hence $\{x\}_v = 0$, so the product is finite; continuity is local. For $x \in K$ the identity $\psi(x) = 1$ is the product formula $\prod_v \lvert x \rvert_v = 1$ written in the form $\sum_v \{x\}_v \equiv 0$ modulo the appropriate lattices; the induced character is trivial on $K$ by construction. Pontryagin duality is the duality of *Harmonic Analysis on Groups* applied to the self-dual groups $K_v$ and assembled over the restricted product.
+**Proof.** Almost every factor has $x \in \mathcal{O}_v$ and hence $\{x\}_v = 0$, so the product is finite; continuity is local. For $x \in K$ the identity $Ξ_{\mathrm{wfn}}(x) = 1$ is the product formula $\prod_v \lvert x \rvert_v = 1$ written in the form $\sum_v \{x\}_v \equiv 0$ modulo the appropriate lattices; the induced character is trivial on $K$ by construction. Pontryagin duality is the duality of *Harmonic Analysis on Groups* applied to the self-dual groups $K_v$ and assembled over the restricted product.
 
 ### Self-Duality and the Fourier Transform
 
 **Definition.** The Fourier transform of a function $f$ on $\mathbb{A}$ for which the integral converges is
 $$
-(\mathcal F f)(\zeta) = \int_{\mathbb{A}} f(x)\, \psi(\zeta x)\, d\mu(x),
+(\mathcal F f)(\zeta) = \int_{\mathbb{A}} f(x)\, Ξ_{\mathrm{wfn}}(\zeta x)\, d\mu(x),
 $$
 and the **Schwartz–Bruhat space** $\mathcal{S}(\mathbb{A})$ is the restricted product of the local Schwartz spaces: locally constant compactly supported functions at the finite places and Schwartz functions at the infinite ones, with the convergence requirement that almost every local factor be the indicator of $\mathcal{O}_v$.
 
@@ -73,7 +73,7 @@ and the **Schwartz–Bruhat space** $\mathcal{S}(\mathbb{A})$ is the restricted 
 $$
 \hat{\mathcal F f}(x) = f(-x), \qquad \int_{\mathbb{A}} \lvert (\mathcal F f)(\zeta) \rvert^2 \, d\mu(\zeta) = \int_{\mathbb{A}} \lvert f(x) \rvert^2 \, d\mu(x).
 $$
-**Proof sketch.** The local statements are proved place by place: at a finite place the Fourier transform is the $\mu_v$-self-adjoint operator on the space of locally constant compactly supported functions, and the normalisation $\mu_v(\mathcal{O}_v)=1$ combined with the choice of $\psi_v$ gives $\widehat{\mathbf{1}_{\mathcal{O}_v}} = \mathbf{1}_{\mathcal{O}_v}$; at the infinite places the same statement holds for the Gaussian, and both imply inversion by the standard argument. The global transform is the product of the local transforms for factorisable functions, and the general case follows by linearity and a limiting argument.
+**Proof sketch.** The local statements are proved place by place: at a finite place the Fourier transform is the $\mu_v$-self-adjoint operator on the space of locally constant compactly supported functions, and the normalisation $\mu_v(\mathcal{O}_v)=1$ combined with the choice of $Ξ_{\mathrm{wfn},v}$ gives $\widehat{\mathbf{1}_{\mathcal{O}_v}} = \mathbf{1}_{\mathcal{O}_v}$; at the infinite places the same statement holds for the Gaussian, and both imply inversion by the standard argument. The global transform is the product of the local transforms for factorisable functions, and the general case follows by linearity and a limiting argument.
 
 ## Poisson Summation and Riemann–Roch
 
@@ -83,7 +83,7 @@ $$
 $$
 both series converging absolutely.
 
-**Proof sketch.** The sum over $K$ of $f$ defines a continuous function $F$ on the compact quotient $\mathbb{A}/K$; its Fourier coefficients on the compact group are the values $(\mathcal F f)(\gamma)$ of the transform, by the computation of the pairing of $F$ against the character $\psi_\gamma$. The inversion formula for the compact group $\mathbb{A}/K$, applied at $x=0$, identifies the value $F(0)$ with the sum of the coefficients.
+**Proof sketch.** The sum over $K$ of $f$ defines a continuous function $F$ on the compact quotient $\mathbb{A}/K$; its Fourier coefficients on the compact group are the values $(\mathcal F f)(\gamma)$ of the transform, by the computation of the pairing of $F$ against the character $Ξ_{\mathrm{wfn},\gamma}$. The inversion formula for the compact group $\mathbb{A}/K$, applied at $x=0$, identifies the value $F(0)$ with the sum of the coefficients.
 
 **Corollary (Riemann–Roch).** Let $K$ be a function field of one variable over a finite field, let $D$ be a divisor of $K$ and let $f$ be the indicator of the compact open subgroup of the adeles consisting of the elements integral with respect to $D$. Then the Poisson summation formula becomes the Riemann–Roch theorem: the dimension of the space of functions whose divisor is bounded below by $D$, together with the corresponding dimension for the complementary divisor $K-D$, differs by the fixed amount $\deg D + 1 - g$.
 
@@ -191,7 +191,7 @@ The local zeta integrals $Z_v(s,\chi_v,\Phi_v) = \int \Phi_v\chi_v\lvert x\rvert
 | $\lvert x \rvert$, $\lvert x \rvert_v$ | Idele norm and local absolute values, $\lvert\varpi_v\rvert_v = q_v^{-1}$ |
 | $\mu_v$, $\mu$ | Local Haar measures, the Tamagawa measure on $\mathbb{A}$ |
 | $d^\times x$ | Multiplicative measure on $\mathbb{A}^\times$ |
-| $\psi_v$, $\psi$ | Standard local additive characters, their product on $\mathbb{A}/K$ |
+| $Ξ_{\mathrm{wfn},v}$, $Ξ_{\mathrm{wfn}}$ | Standard local additive characters, their product on $\mathbb{A}/K$ |
 | $\mathcal F f$, $\mathcal{S}(\mathbb{A})$ | Fourier transform, Schwartz–Bruhat space |
 | Poisson summation | $\sum_{\gamma\in K} f(\gamma) = \sum_{\gamma\in K}(\mathcal F f)(\gamma)$ |
 | $\chi$, $\chi_v$ | Hecke character, its local components |

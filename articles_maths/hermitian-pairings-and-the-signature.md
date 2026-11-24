@@ -11,21 +11,21 @@ The vocabulary is needed because the intersection form of a manifold is only the
 
 ## Hermitian and $\varepsilon$-Hermitian Forms
 
-**Definition.** Let $A$ be a ring with an involution $a\mapsto\bar a$ (an additive map with $\overline{ab} = \bar b\bar a$ and $\bar{\bar a} = a$). A **sesquilinear form** on a left $A$-module $M$ is a biadditive map $\varphi : M\times M\to A$ with $\varphi(ax,by) = a\varphi(x,y)\bar b$; it is **$\varepsilon$-Hermitian** for a central unit $\varepsilon$ with $\bar\varepsilon\varepsilon = 1$ if
+**Definition.** Let $A$ be a ring with an involution $a\mapsto\bar a$ (an additive map with $\overline{ab} = \bar b\bar a$ and $\bar{\bar a} = a$). A **sesquilinear form** on a left $A$-module $M$ is a biadditive map $\digamma_{\mathrm{map}} : M\times M\to A$ with $\digamma_{\mathrm{map}}(ax,by) = a\digamma_{\mathrm{map}}(x,y)\bar b$; it is **$\varepsilon$-Hermitian** for a central unit $\varepsilon$ with $\bar\varepsilon\varepsilon = 1$ if
 $$
-\varphi(y,x) = \varepsilon\,\overline{\varphi(x,y)} ,
+\digamma_{\mathrm{map}}(y,x) = \varepsilon\,\overline{\digamma_{\mathrm{map}}(x,y)} ,
 $$
-and it is **alternating** when in addition $\varphi(x,x) = 0$ and $\varepsilon = -1$. The associated **quadratic refinement** is a function $m : M\to A/\{a-\bar a\}$ with $\mathfrak{Q}(ax) = aq(x)\bar a$ and $\mathfrak{Q}(x+y)-\mathfrak{Q}(x)-\mathfrak{Q}(y) = \varphi(x,y)$, and an **$\varepsilon$-quadratic form** is a pair $(\varphi,q)$.
+and it is **alternating** when in addition $\digamma_{\mathrm{map}}(x,x) = 0$ and $\varepsilon = -1$. The associated **quadratic refinement** is a function $m : M\to A/\{a-\bar a\}$ with $\mathfrak{Q}(ax) = aq(x)\bar a$ and $\mathfrak{Q}(x+y)-\mathfrak{Q}(x)-\mathfrak{Q}(y) = \digamma_{\mathrm{map}}(x,y)$, and an **$\varepsilon$-quadratic form** is a pair $(\digamma_{\mathrm{map}},q)$.
 
-**Examples.** (a) $A = \mathbb{R}$ with the trivial involution and $\varepsilon = +1$: the symmetric bilinear forms $\mathfrak{Q}(x,y) = \mathfrak{Q}(y,x)$. (b) $A = \mathbb{C}$ with complex conjugation and $\varepsilon = +1$: the Hermitian forms $\varphi(y,x) = \overline{\varphi(x,y)}$. (c) $A = \mathbb{Z}[\pi]$ with the involution $g\mapsto g^{-1}$ and $\varepsilon = \pm1$: the forms of the surgery theory. (d) The intersection form of a closed oriented $2k$-manifold is symmetric for $k$ even and alternating for $k$ odd, that is, $(-1)^k$-Hermitian over $\mathbb{Z}$ with the trivial involution.
+**Examples.** (a) $A = \mathbb{R}$ with the trivial involution and $\varepsilon = +1$: the symmetric bilinear forms $\mathfrak{Q}(x,y) = \mathfrak{Q}(y,x)$. (b) $A = \mathbb{C}$ with complex conjugation and $\varepsilon = +1$: the Hermitian forms $\digamma_{\mathrm{map}}(y,x) = \overline{\digamma_{\mathrm{map}}(x,y)}$. (c) $A = \mathbb{Z}[\pi]$ with the involution $g\mapsto g^{-1}$ and $\varepsilon = \pm1$: the forms of the surgery theory. (d) The intersection form of a closed oriented $2k$-manifold is symmetric for $k$ even and alternating for $k$ odd, that is, $(-1)^k$-Hermitian over $\mathbb{Z}$ with the trivial involution.
 
-**Proposition (symmetry and the sign).** Over a field $F$ of characteristic not two, every alternating form is antisymmetric and conversely; a symmetric form has $\varphi(x,x)$ arbitrary and an antisymmetric one has $\varphi(x,x) = 0$. The intersection form of a closed oriented $2k$-manifold is $\varepsilon$-Hermitian with $\varepsilon = (-1)^k$, so the alternating case is the odd middle dimension.
+**Proposition (symmetry and the sign).** Over a field $F$ of characteristic not two, every alternating form is antisymmetric and conversely; a symmetric form has $\digamma_{\mathrm{map}}(x,x)$ arbitrary and an antisymmetric one has $\digamma_{\mathrm{map}}(x,x) = 0$. The intersection form of a closed oriented $2k$-manifold is $\varepsilon$-Hermitian with $\varepsilon = (-1)^k$, so the alternating case is the odd middle dimension.
 
 **Proof.** The statements are the definitions and the parity computation of *Poincaré Duality*: the commutativity of the cup product up to $(-1)^k$ on the middle cohomology gives the sign.
 
-**Definition (nondegeneracy).** A form is **nondegenerate** if the map $M\to M^{*} = \operatorname{Hom}_A(M,A)$, $x\mapsto\varphi(x,-)$, is an isomorphism; a **Lagrangian** is a submodule $L$ with $L = L^{\perp}$; a form is **hyperbolic** if it is nondegenerate and has a Lagrangian.
+**Definition (nondegeneracy).** A form is **nondegenerate** if the map $M\to M^{*} = \operatorname{Hom}_A(M,A)$, $x\mapsto\digamma_{\mathrm{map}}(x,-)$, is an isomorphism; a **Lagrangian** is a submodule $L$ with $L = L^{\perp}$; a form is **hyperbolic** if it is nondegenerate and has a Lagrangian.
 
-**Proposition (the hyperbolic form).** For a finitely generated projective $A$-module $P$ the **hyperbolic form** $H(P)$ on $P\oplus P^{*}$ with $\varphi((x,f),(y,g)) = f(y) + \varepsilon\overline{g(x)}$ is nondegenerate and has $P\oplus0$ as a Lagrangian; over a field it is the form $U^{\oplus r}$ with $U = \begin{pmatrix}0&1\\1&0\end{pmatrix}$ for $\varepsilon = +1$ and $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ for $\varepsilon = -1$, and its signature is $0$.
+**Proposition (the hyperbolic form).** For a finitely generated projective $A$-module $P$ the **hyperbolic form** $H(P)$ on $P\oplus P^{*}$ with $\digamma_{\mathrm{map}}((x,f),(y,g)) = f(y) + \varepsilon\overline{g(x)}$ is nondegenerate and has $P\oplus0$ as a Lagrangian; over a field it is the form $U^{\oplus r}$ with $U = \begin{pmatrix}0&1\\1&0\end{pmatrix}$ for $\varepsilon = +1$ and $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ for $\varepsilon = -1$, and its signature is $0$.
 
 **Proof.** The verification is a direct computation of the form on the summands, and the identification over a field is the change to the standard basis $e,f$; the signature vanishes because the form is hyperbolic.
 
@@ -51,7 +51,7 @@ For $A = \mathbb{C}$ with complex conjugation and $\varepsilon = +1$ the same st
 
 **Corollary (the signature of a hyperbolic and of an alternating form).** A hyperbolic form has signature zero; an alternating form over $\mathbb{R}$ has a diagonalisation with entries in pairs $\pm1$, so its signature is zero as well, and the intersection form of a closed oriented $4k+2$-manifold has signature zero. This is the first vanishing statement of the theory.
 
-**Proof.** The hyperbolic forms have $n = m$ by the Lagrangian; an alternating form over $\mathbb{R}$ is $\varepsilon = -1$-Hermitian, and the associated symmetric form $x\cdot y\mapsto\varphi(x,Jy)$ (with $J$ the complex structure of the symplectic space) has eigenvalues in pairs $\pm$, so the signature vanishes; the topological case is the intersection form of a $(4k+2)$-manifold, which is alternating.
+**Proof.** The hyperbolic forms have $n = m$ by the Lagrangian; an alternating form over $\mathbb{R}$ is $\varepsilon = -1$-Hermitian, and the associated symmetric form $x\cdot y\mapsto\digamma_{\mathrm{map}}(x,Jy)$ (with $J$ the complex structure of the symplectic space) has eigenvalues in pairs $\pm$, so the signature vanishes; the topological case is the intersection form of a $(4k+2)$-manifold, which is alternating.
 
 ## The Wall Groups
 
@@ -102,8 +102,8 @@ A Hermitian pairing over a ring with an involution is a sesquilinear form symmet
 | Symbol | Meaning |
 |---|---|
 | $A$, $a\mapsto\bar a$ | a ring with an involution |
-| $\varepsilon$-Hermitian form $\varphi$ | sesquilinear with $\varphi(y,x) = \varepsilon\overline{\varphi(x,y)}$ |
-| $(1,0)$ alternating case | $\varepsilon = -1$ with $\varphi(x,x)=0$; the intersection form of a $4k+2$-manifold |
+| $\varepsilon$-Hermitian form $\digamma_{\mathrm{map}}$ | sesquilinear with $\digamma_{\mathrm{map}}(y,x) = \varepsilon\overline{\digamma_{\mathrm{map}}(x,y)}$ |
+| $(1,0)$ alternating case | $\varepsilon = -1$ with $\digamma_{\mathrm{map}}(x,x)=0$; the intersection form of a $4k+2$-manifold |
 | hyperbolic form $H(P)$, $U$ | a nondegenerate form with a Lagrangian $P\oplus0$; $U = \begin{pmatrix}0&1\\1&0\end{pmatrix}$ |
 | $W^{\varepsilon}(A)$, $GW^{\varepsilon}(A)$ | the Witt group and the Grothendieck–Witt group |
 | $\sigma : W(\mathbb{R})\cong\mathbb{Z}$ | the signature, the complete invariant over $\mathbb{R}$ (Sylvester) |

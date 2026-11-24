@@ -77,13 +77,13 @@ so a bilinear form is $T$-compatible exactly when its induced operator intertwin
 
 ## The Pairing of an Involutive Space with its Dual
 
-**Proposition (the evaluation pairing).** For $F = E'$ with the evaluation pairing $\langle x, \varphi\rangle = \varphi(x)$, the transposed involution is the transpose $\mathrm{J}'(\varphi) = \varphi \circ \mathrm{J}$ of *Locally Convex Spaces with an Involution*, of the same kind as $\mathrm{J}$; it is continuous for the weak-star, weak and strong topologies, and its fixed and negated parts are the annihilators of $E^{-}$ and $E^{\mathrm{J}}$.
+**Proposition (the evaluation pairing).** For $F = E'$ with the evaluation pairing $\langle x, \digamma_{\mathrm{map}}\rangle = \digamma_{\mathrm{map}}(x)$, the transposed involution is the transpose $\mathrm{J}'(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map}} \circ \mathrm{J}$ of *Locally Convex Spaces with an Involution*, of the same kind as $\mathrm{J}$; it is continuous for the weak-star, weak and strong topologies, and its fixed and negated parts are the annihilators of $E^{-}$ and $E^{\mathrm{J}}$.
 
-**Proof.** The defining relation $\langle\mathrm{J} x, \varphi\rangle = \varsigma(\langle x, \mathrm{J}'\varphi\rangle)$ is $(\mathrm{J}'\varphi)(\mathrm{J} x) = \varsigma(\varphi(x))$, which is the transpose; continuity and the annihilator calculus are *Locally Convex Spaces with an Involution*.
+**Proof.** The defining relation $\langle\mathrm{J} x, \digamma_{\mathrm{map}}\rangle = \varsigma(\langle x, \mathrm{J}'\digamma_{\mathrm{map}}\rangle)$ is $(\mathrm{J}'\digamma_{\mathrm{map}})(\mathrm{J} x) = \varsigma(\digamma_{\mathrm{map}}(x))$, which is the transpose; continuity and the annihilator calculus are *Locally Convex Spaces with an Involution*.
 
 **Proposition (involutive reflexivity).** If $E$ is reflexive then the transposed involution of $\mathrm{J}^{t}$ on $E'' = E$ is $\mathrm{J}$; the formation $(\mathrm{J}, \mathrm{J}^{t})$ is symmetric and the pair $(E, F)$ with the two involutions is a dual pair of involutive spaces, with the canonical identification carrying one involution to the other.
 
-**Proof.** The double transpose $(\mathrm{J}^{t})^{t}$ acts on $E'' = E$ by the naturality of the transpose, and equals $\mathrm{J}$ because $((\mathrm{J}^{t})^{t}\varphi)(x) = \varphi(\mathrm{J} x)$ under the identification $E'' = E$; the symmetry is the identity $(\mathrm{J}^{t})^{t} = \mathrm{J}$.
+**Proof.** The double transpose $(\mathrm{J}^{t})^{t}$ acts on $E'' = E$ by the naturality of the transpose, and equals $\mathrm{J}$ because $((\mathrm{J}^{t})^{t}\digamma_{\mathrm{map}})(x) = \digamma_{\mathrm{map}}(\mathrm{J} x)$ under the identification $E'' = E$; the symmetry is the identity $(\mathrm{J}^{t})^{t} = \mathrm{J}$.
 
 ## Examples
 

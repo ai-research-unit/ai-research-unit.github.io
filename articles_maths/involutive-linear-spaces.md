@@ -170,9 +170,9 @@ An involution of $V$ propagates to every space built from $V$ by a construction 
 
 **Proposition.** If $T$ is a linear involution of $V$ of type $(n,m)$ and $S$ one of $W$ of type $(r,s)$, then $T \oplus S$ is an involution of $V \oplus W$ of type $(n+r, m+s)$; in particular the type adds and the trace adds.
 
-**Proposition.** If $T$ is a linear involution of $V$, the dual map $T^* : V^* \to V^*$, $T^*(\varphi) = \varphi \circ T$, is a linear involution of the dual space, and it has the same type as $T$.
+**Proposition.** If $T$ is a linear involution of $V$, the dual map $T^* : V^* \to V^*$, $T^*(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map}} \circ T$, is a linear involution of the dual space, and it has the same type as $T$.
 
-**Proof.** From $(T^2)^* = (T^*)^2$ and $T^2 = \mathrm{id}$ comes $(T^*)^2 = \mathrm{id}$. For the type, $T^*$ fixes $\varphi$ exactly when $\varphi \circ T = \varphi$, that is when $\varphi$ vanishes on $V_-$, so $V^*_+ = V_-^0$ and $V^*_- = V_+^0$, of dimensions $n - q = p$ and $n - p = q$.
+**Proof.** From $(T^2)^* = (T^*)^2$ and $T^2 = \mathrm{id}$ comes $(T^*)^2 = \mathrm{id}$. For the type, $T^*$ fixes $\digamma_{\mathrm{map}}$ exactly when $\digamma_{\mathrm{map}} \circ T = \digamma_{\mathrm{map}}$, that is when $\digamma_{\mathrm{map}}$ vanishes on $V_-$, so $V^*_+ = V_-^0$ and $V^*_- = V_+^0$, of dimensions $n - q = p$ and $n - p = q$.
 
 ### Tensor Products and Powers
 
@@ -294,7 +294,7 @@ An involution propagates to direct sums, with the type adding; to the dual space
 | $P_+$, $P_-$ | $\frac12(\mathrm{id} \pm T)$, complementary idempotents when $2 \neq 0$ |
 | $V_+$, $V_-$ | the fixed and the negated summands, $\ker(T-\mathrm{id})$ and $\ker(T+\mathrm{id})$ |
 | $(n,m)$ | the type, with $p = \dim V_+$ and $q = \dim V_-$ |
-| $T^*$ | the dual map $\varphi \mapsto \varphi \circ T$ on $V^*$ |
+| $T^*$ | the dual map $\digamma_{\mathrm{map}} \mapsto \digamma_{\mathrm{map}} \circ T$ on $V^*$ |
 | $V^{\otimes k}$, $S^kV$, $\Lambda^kV$ | tensor, symmetric and exterior powers |
 | $\Phi_T$ | conjugation by $T$ on $\operatorname{End}_F(V)$, $X \mapsto TXT$ |
 | $\varsigma$ | an involution of the field $F$ |

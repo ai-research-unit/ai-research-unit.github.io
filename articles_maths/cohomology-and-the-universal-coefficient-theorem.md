@@ -19,15 +19,15 @@ $$
 C^n(X;G) = \operatorname{Hom}_R\bigl(C_n(X;R), G\bigr),
 $$
 
-whose elements are the **singular $n$-cochains**. A cochain $\varphi$ is determined by its values on singular simplices, and $C^n(X;G)$ is the direct product over singular $n$-simplices of copies of $G$, illustrating that cochain groups can be larger than chain groups.
+whose elements are the **singular $n$-cochains**. A cochain $\digamma_{\mathrm{map}}$ is determined by its values on singular simplices, and $C^n(X;G)$ is the direct product over singular $n$-simplices of copies of $G$, illustrating that cochain groups can be larger than chain groups.
 
 **Definition.** The **coboundary** is the dual of the boundary,
 
 $$
-\delta^n = \partial_{n+1}^* : C^n(X;G) \to C^{n+1}(X;G), \qquad (\delta^n\varphi)(c) = \varphi(\partial_{n+1}c),
+\delta^n = \partial_{n+1}^* : C^n(X;G) \to C^{n+1}(X;G), \qquad (\delta^n\digamma_{\mathrm{map}})(c) = \digamma_{\mathrm{map}}(\partial_{n+1}c),
 $$
 
-for a cochain $\varphi$ and a chain $c$. Since $\partial\partial = 0$, also $\delta\delta = 0$, and $(C^*(X;G),\delta^*)$ is a **cochain complex**.
+for a cochain $\digamma_{\mathrm{map}}$ and a chain $c$. Since $\partial\partial = 0$, also $\delta\delta = 0$, and $(C^*(X;G),\delta^*)$ is a **cochain complex**.
 
 **Definition.** The **singular cohomology** of $X$ with coefficients in $G$ is
 
@@ -49,7 +49,7 @@ $$
 
 with $(g \circ f)^* = f^* \circ g^*$ and $(\mathrm{id}_X)^* = \mathrm{id}$. Thus $H^n(-;G)$ is a **contravariant** functor. Homotopic maps induce the same homomorphism, and a homotopy equivalence induces an isomorphism.
 
-*Proof.* For a cochain $\varphi$ on $Y$ the composite $\varphi \circ f_\#$ is a cochain on $X$; the identity $f^\# \delta = \delta f^\#$ is the chain-map identity $f_\#\partial = \partial f_\#$ dualised. Contravariance is immediate from $(g f)_\# = g_\# f_\#$. If $f \simeq g$ then $f_\# - g_\# = \partial P + P\partial$ for a chain homotopy $P$, and dualising gives $f^\# - g^\# = \delta P^* + P^*\delta$, so the induced maps on cohomology agree.
+*Proof.* For a cochain $\digamma_{\mathrm{map}}$ on $Y$ the composite $\digamma_{\mathrm{map}} \circ f_\#$ is a cochain on $X$; the identity $f^\# \delta = \delta f^\#$ is the chain-map identity $f_\#\partial = \partial f_\#$ dualised. Contravariance is immediate from $(g f)_\# = g_\# f_\#$. If $f \simeq g$ then $f_\# - g_\# = \partial P + P\partial$ for a chain homotopy $P$, and dualising gives $f^\# - g^\# = \delta P^* + P^*\delta$, so the induced maps on cohomology agree.
 
 **Remark.** The contrast with homology is the point of the definition: the contravariant functor represented by a space is the object that admits pullbacks, and the whole of obstruction theory, characteristic-class theory and sheaf theory is built on it.
 
@@ -81,7 +81,7 @@ $$
 0 \longrightarrow \operatorname{Ext}^1_R\bigl(H_{n-1}(X;R),\, G\bigr) \xrightarrow{\ \beta\ } H^n(X;G) \xrightarrow{\ \alpha\ } \operatorname{Hom}_R\bigl(H_n(X;R),\, G\bigr) \longrightarrow 0,
 $$
 
-which **splits**, though not naturally. The map $\alpha$ sends the class of a cocycle $\varphi$ to the homomorphism induced by $\varphi$ on homology classes, and is called the **Kronecker** or evaluation map. Consequently there is a (non-natural) isomorphism
+which **splits**, though not naturally. The map $\alpha$ sends the class of a cocycle $\digamma_{\mathrm{map}}$ to the homomorphism induced by $\digamma_{\mathrm{map}}$ on homology classes, and is called the **Kronecker** or evaluation map. Consequently there is a (non-natural) isomorphism
 
 $$
 \boxed{\;H^n(X;G) \cong \operatorname{Hom}_R\bigl(H_n(X;R),G\bigr) \oplus \operatorname{Ext}^1_R\bigl(H_{n-1}(X;R),G\bigr)\;}.

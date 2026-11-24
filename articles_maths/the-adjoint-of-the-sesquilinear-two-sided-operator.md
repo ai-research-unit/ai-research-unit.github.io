@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The sesquilinear two-sided operator $\mathcal{T}_{a,b}(x)=ax^{*}b$ is the two-sided operator of a sesqualgebra, the smallest operator that uses the whole structure: one slot carries the involution, two carry the multiplication, and the result is $\varsigma$-semilinear of the same kind as the conjugate left multiplication. Its adjoint for the pairing $\varphi(x,y)=\tau(xy^{*})$ is taken by the twisted rule, and it is the two-sided operator with the two parameters interchanged,
+The sesquilinear two-sided operator $\mathcal{T}_{a,b}(x)=ax^{*}b$ is the two-sided operator of a sesqualgebra, the smallest operator that uses the whole structure: one slot carries the involution, two carry the multiplication, and the result is $\varsigma$-semilinear of the same kind as the conjugate left multiplication. Its adjoint for the pairing $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$ is taken by the twisted rule, and it is the two-sided operator with the two parameters interchanged,
 
 $$
 \mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a} .
@@ -12,13 +12,13 @@ So the adjoint acts on the pair $(a,b)$ by the transposition and not by the invo
 
 The subject belongs to the operator theory of the sesqualgebras and completes the adjoint theory of the operators: the one-sided case is *The Adjoint of the Conjugate Left Multiplication*, the ternary case is *The Adjoint of the Ternary Product*, and the present article is the two-sided case, from which the other two are read off.
 
-Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma$ is an involution of $R$, and $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that $A$ is a sesqualgebra in the sense of *Sesqualgebras*; the unit satisfies $1^{*}=1$. The function $\tau:A\to R$ is $R$-linear, central, $\tau(ab)=\tau(ba)$, and compatible with the involution, $\tau(x^{*})=\varsigma(\tau(x))$, and the pairing $\varphi(x,y)=\tau(xy^{*})$ is $R$-linear in its first variable, $\varsigma$-semilinear in its second and perfect. The derived product is $x\star y=xy^{*}$, and the operators are
+Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma$ is an involution of $R$, and $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that $A$ is a sesqualgebra in the sense of *Sesqualgebras*; the unit satisfies $1^{*}=1$. The function $\tau:A\to R$ is $R$-linear, central, $\tau(ab)=\tau(ba)$, and compatible with the involution, $\tau(x^{*})=\varsigma(\tau(x))$, and the pairing $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$ is $R$-linear in its first variable, $\varsigma$-semilinear in its second and perfect. The derived product is $x\star y=xy^{*}$, and the operators are
 
 $$
 \mathcal{T}_{a,b}(x)=ax^{*}b,\qquad L_{p}R_{q}(x)=pxq,\qquad L_{a}=\mathcal{T}_{a,1},\qquad R_{b}=L_{1}R_{\,b^{*}} .
 $$
 
-The adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger}$ with $\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)$, and the adjoint of an $R$-linear operator $T$ is the operator $T^{\dagger}$ with $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$; both exist and are unique, and every two-sided operator is $\varsigma$-semilinear, so its adjoint is taken by the twisted rule.
+The adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger}$ with $\digamma_{\mathrm{map}}(Sx,y)=\varsigma\bigl(\digamma_{\mathrm{map}}(x,S^{\dagger}y)\bigr)$, and the adjoint of an $R$-linear operator $T$ is the operator $T^{\dagger}$ with $\digamma_{\mathrm{map}}(Tx,y)=\digamma_{\mathrm{map}}(x,T^{\dagger}y)$; both exist and are unique, and every two-sided operator is $\varsigma$-semilinear, so its adjoint is taken by the twisted rule.
 
 ## The Adjoint of the Two-Sided Operator
 
@@ -38,7 +38,7 @@ $$
 \boxed{\;\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}\;} .
 $$
 
-**Proof.** By the twisted rule it suffices to verify $\varsigma\bigl(\varphi(x,\mathcal{T}_{b,a}y)\bigr)=\varphi(\mathcal{T}_{a,b}x,y)$ for all $x,y$. The left-hand side is $\varsigma\bigl(\tau\bigl(x(by^{*}a)^{*}\bigr)\bigr)$, and $(by^{*}a)^{*}=a^{*}yb^{*}$, so it is $\varsigma\bigl(\tau(xa^{*}yb^{*})\bigr)=\tau\bigl((xa^{*}yb^{*})^{*}\bigr)=\tau(by^{*}ax^{*})$, using $\varsigma\circ\tau=\tau\circ{}^{*}$. By the centrality of $\tau$ this is $\tau(ax^{*}by^{*})$, which is $\varphi(\mathcal{T}_{a,b}x,y)$.
+**Proof.** By the twisted rule it suffices to verify $\varsigma\bigl(\digamma_{\mathrm{map}}(x,\mathcal{T}_{b,a}y)\bigr)=\digamma_{\mathrm{map}}(\mathcal{T}_{a,b}x,y)$ for all $x,y$. The left-hand side is $\varsigma\bigl(\tau\bigl(x(by^{*}a)^{*}\bigr)\bigr)$, and $(by^{*}a)^{*}=a^{*}yb^{*}$, so it is $\varsigma\bigl(\tau(xa^{*}yb^{*})\bigr)=\tau\bigl((xa^{*}yb^{*})^{*}\bigr)=\tau(by^{*}ax^{*})$, using $\varsigma\circ\tau=\tau\circ{}^{*}$. By the centrality of $\tau$ this is $\tau(ax^{*}by^{*})$, which is $\digamma_{\mathrm{map}}(\mathcal{T}_{a,b}x,y)$.
 
 **Corollary.** The adjoint is an involution of the two-sided family, $\bigl(\mathcal{T}_{a,b}^{\dagger}\bigr)^{\dagger}=\mathcal{T}_{a,b}$, so the family is carried to itself and the adjoint acts on it as the involution $\mathcal{T}_{a,b}\mapsto \mathcal{T}_{b,a}$. On the monoid of the two families of *The Sesquilinear Two-Sided Operator*, generated by the two-sided operators and the two-sided multiplications, the adjoint is an anti-automorphism of order two.
 
@@ -106,19 +106,19 @@ so the two-sided operator is unitary exactly when both composites are the identi
 
 ### The Complex Matrices
 
-Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose, $\varsigma$ the complex conjugation, $\tau=\operatorname{tr}$ and $\varphi(X,Y)=\operatorname{tr}(XY^{*})$. The two-sided operator is $\mathcal{T}_{A,B}(X)=AX^{*}B$ and the theorem reads $\mathcal{T}_{A,B}^{\dagger}=\mathcal{T}_{B,A}$, so $\mathcal{T}_{A,A}$ is self-adjoint for every matrix $A$, and for a unitary $U$ the reflection $\mathcal{T}_{U,U}$ is self-adjoint with $\mathcal{T}_{U,U}^{2}=\mathrm{id}$. A two-sided operator with unitary parameters is unitary, $\mathcal{T}_{U,V}^{\dagger}=\mathcal{T}_{V,U}=\mathcal{T}_{U,V}^{-1}$, while the inner involution $\mathcal{T}_{U,U^{*}}=\sigma_{U}$ is self-adjoint exactly when $U^{2}$ is a scalar matrix, so the witness $U=\operatorname{diag}(i,1)$ of *The Involutions of a Sesqualgebra* has $U^{2}=\operatorname{diag}(-1,1)$ noncentral and $\mathcal{T}_{U,U^{*}}$ not self-adjoint.
+Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose, $\varsigma$ the complex conjugation, $\tau=\operatorname{tr}$ and $\digamma_{\mathrm{map}}(X,Y)=\operatorname{tr}(XY^{*})$. The two-sided operator is $\mathcal{T}_{A,B}(X)=AX^{*}B$ and the theorem reads $\mathcal{T}_{A,B}^{\dagger}=\mathcal{T}_{B,A}$, so $\mathcal{T}_{A,A}$ is self-adjoint for every matrix $A$, and for a unitary $U$ the reflection $\mathcal{T}_{U,U}$ is self-adjoint with $\mathcal{T}_{U,U}^{2}=\mathrm{id}$. A two-sided operator with unitary parameters is unitary, $\mathcal{T}_{U,V}^{\dagger}=\mathcal{T}_{V,U}=\mathcal{T}_{U,V}^{-1}$, while the inner involution $\mathcal{T}_{U,U^{*}}=\sigma_{U}$ is self-adjoint exactly when $U^{2}$ is a scalar matrix, so the witness $U=\operatorname{diag}(i,1)$ of *The Involutions of a Sesqualgebra* has $U^{2}=\operatorname{diag}(-1,1)$ noncentral and $\mathcal{T}_{U,U^{*}}$ not self-adjoint.
 
 ### The Field
 
-Let $A=\mathbb{C}$ over $R=\mathbb{C}$ with $\varsigma$ the conjugation, $\tau$ the identity and $\varphi(x,y)=x\overline{y}$. The two-sided operator is $\mathcal{T}_{a,b}(x)=a\overline{x}b=ab\,\overline{x}$, and since the algebra is commutative $\mathcal{T}_{a,b}=\mathcal{T}_{b,a}$, so every two-sided operator is self-adjoint, in agreement with the corollary. The inverse is $\mathcal{T}_{a,b}^{-1}=\mathcal{T}_{1/\overline{b},\,1/\overline{a}}$, the map $x\mapsto\overline{x}/(\overline{a}\,\overline{b})$, and the unitary condition is $|ab|=1$, where the adjoint and the inverse agree, $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}=\mathcal{T}_{a,b}^{-1}$; the parameters of unit length are the case $|a|=|b|=1$.
+Let $A=\mathbb{C}$ over $R=\mathbb{C}$ with $\varsigma$ the conjugation, $\tau$ the identity and $\digamma_{\mathrm{map}}(x,y)=x\overline{y}$. The two-sided operator is $\mathcal{T}_{a,b}(x)=a\overline{x}b=ab\,\overline{x}$, and since the algebra is commutative $\mathcal{T}_{a,b}=\mathcal{T}_{b,a}$, so every two-sided operator is self-adjoint, in agreement with the corollary. The inverse is $\mathcal{T}_{a,b}^{-1}=\mathcal{T}_{1/\overline{b},\,1/\overline{a}}$, the map $x\mapsto\overline{x}/(\overline{a}\,\overline{b})$, and the unitary condition is $|ab|=1$, where the adjoint and the inverse agree, $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}=\mathcal{T}_{a,b}^{-1}$; the parameters of unit length are the case $|a|=|b|=1$.
 
 ### The Quaternions
 
-Let $A=\mathbb{H}$ over $R=\mathbb{R}$ with $\varsigma=\mathrm{id}$, $*$ the quaternion conjugation, $\tau$ the real part and $\varphi(u,v)=\operatorname{Re}(u\overline{v})$. The two-sided operator $\mathcal{T}_{a,b}(q)=a\overline{q}b$ is $\mathbb{R}$-linear, so the twisted rule is the linear rule, and $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$. The centre of $\mathbb{H}$ is $\mathbb{R}$, so the central units are the nonzero reals, the criterion of self-adjointness reads $a^{-1}b\in\mathbb{R}$, and the parameters of unit length give unitary two-sided operators. Since $\mathbb{H}$ is noncommutative the transposition is visible: for $a=i$ and $b=k$ one has $a^{-1}b=-ik=j$, whose imaginary part is not zero, so $\mathcal{T}_{i,k}$ is not self-adjoint.
+Let $A=\mathbb{H}$ over $R=\mathbb{R}$ with $\varsigma=\mathrm{id}$, $*$ the quaternion conjugation, $\tau$ the real part and $\digamma_{\mathrm{map}}(u,v)=\operatorname{Re}(u\overline{v})$. The two-sided operator $\mathcal{T}_{a,b}(q)=a\overline{q}b$ is $\mathbb{R}$-linear, so the twisted rule is the linear rule, and $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$. The centre of $\mathbb{H}$ is $\mathbb{R}$, so the central units are the nonzero reals, the criterion of self-adjointness reads $a^{-1}b\in\mathbb{R}$, and the parameters of unit length give unitary two-sided operators. Since $\mathbb{H}$ is noncommutative the transposition is visible: for $a=i$ and $b=k$ one has $a^{-1}b=-ik=j$, whose imaginary part is not zero, so $\mathcal{T}_{i,k}$ is not self-adjoint.
 
 ## Summary
 
-The two-sided operator $\mathcal{T}_{a,b}(x)=ax^{*}b$ is the two-sided operator of the standard example, $\varsigma$-semilinear in its variable, and its adjoint for the pairing $\varphi(x,y)=\tau(xy^{*})$ is the two-sided operator with the parameters exchanged,
+The two-sided operator $\mathcal{T}_{a,b}(x)=ax^{*}b$ is the two-sided operator of the standard example, $\varsigma$-semilinear in its variable, and its adjoint for the pairing $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$ is the two-sided operator with the parameters exchanged,
 
 $$
 \mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}={}^{*}\circ L_{a^{*}}R_{b^{*}} .

@@ -68,7 +68,7 @@ So a non-isotropic vector of square one splits the identity of the algebra into 
 
 **Proof.** The spin group lies in the group of invertibles of the algebra and acts on every left ideal by left multiplication; for an irreducible module this is the spin representation, and the statement about the kernel, $\rho(-1)=-\mathrm{id}$, is proved in the cited article.
 
-So a spinor is an element of the Peirce carrier $C(\pi)=\mathrm{Cl}(V,\mathfrak{Q})\pi$, which is a minimal left ideal here, and it transforms under $\psi\mapsto R\psi$; the two-sided operator $v\mapsto RvR^{-1}$ of *Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation* is the action on the vectors, and the two are different actions of the same group element, as that article records.
+So a spinor is an element of the Peirce carrier $C(\pi)=\mathrm{Cl}(V,\mathfrak{Q})\pi$, which is a minimal left ideal here, and it transforms under $Ξ_{\mathrm{wfn}}\mapsto RΞ_{\mathrm{wfn}}$; the two-sided operator $v\mapsto RvR^{-1}$ of *Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation* is the action on the vectors, and the two are different actions of the same group element, as that article records.
 
 ## The Bridge to the Chevalley Module
 
@@ -161,9 +161,9 @@ In $\mathrm{Cl}_{1,3}=M_2(\mathbb{H})$ the even part is $\mathrm{Cl}^0_{1,3}\con
 
 ## The Two Actions on the Ideal
 
-Let $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ be a minimal left ideal, $\psi\in I$ a spinor and $R$ a rotor.
+Let $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ be a minimal left ideal, $Ξ_{\mathrm{wfn}}\in I$ a spinor and $R$ a rotor.
 
-**Proposition.** Left multiplication is an action of the rotors on $I$, $\psi\mapsto R\psi$, and it is the spin representation. The dual representation is realised by right multiplication on a minimal right ideal, $J=\pi'\mathrm{Cl}(V,\mathfrak{Q})$, and right multiplication by a rotor does not preserve a minimal left ideal in general. The two-sided operator $v\mapsto RvR^{-1}$ is neither, being the action on the vectors.
+**Proposition.** Left multiplication is an action of the rotors on $I$, $Ξ_{\mathrm{wfn}}\mapsto RΞ_{\mathrm{wfn}}$, and it is the spin representation. The dual representation is realised by right multiplication on a minimal right ideal, $J=\pi'\mathrm{Cl}(V,\mathfrak{Q})$, and right multiplication by a rotor does not preserve a minimal left ideal in general. The two-sided operator $v\mapsto RvR^{-1}$ is neither, being the action on the vectors.
 
 **Proof.** The left action is the module action of *Spin Representations and Clifford Modules with Inner Conjugation*. For the second statement, right multiplication carries $I$ to $\mathrm{Cl}(V,\mathfrak{Q})(fx)$, and $fx$ need not lie in $I$: in $\mathrm{Cl}_{3,0}$ with $\pi=\tfrac12(1+e_3)$ one has $fe_2e_3=\tfrac12(e_2e_3-e_2)$, while a combination $af+be_1\pi+ce_2\pi+d\omega \pi$ has the same coefficient $\tfrac c2$ of $e_2$ and of $e_2e_3$, so the two coefficients of $fe_2e_3$, namely $-\tfrac12$ and $+\tfrac12$, cannot both be matched, and $fe_2e_3\notin I$. A right ideal is preserved by right multiplication by an invertible element, because $\mathrm{Cl}(V,\mathfrak{Q})R^{-1}=\mathrm{Cl}(V,\mathfrak{Q})$, and the resulting action of the rotors is the dual of the spin representation. The two-sided operator acts on $V=\mathrm{Cl}_1$, not on $I$ in general.
 
@@ -191,7 +191,7 @@ Since the even subalgebra acts on the ideal, the map $x\mapsto xf$ identifies th
 | $\Lambda^{\bullet}(\operatorname{span}a_i^{\dagger})\cong\mathrm{Cl}\pi$ | Ideal as an exterior algebra |
 | $\mathrm{Cl}^0(V,\mathfrak{Q})\pi$ | The even submodule, equal to $\mathrm{Cl}(V,\mathfrak{Q})\pi$ |
 | $\Delta_+,\ \Delta_-$ | Chiral halves, minimal left ideals of $\mathrm{Cl}^0$ |
-| $\psi\mapsto R\psi$ | Left action of the rotors, the spin representation |
+| $Ξ_{\mathrm{wfn}}\mapsto RΞ_{\mathrm{wfn}}$ | Left action of the rotors, the spin representation |
 | $\rho(-1)=-\mathrm{id}$ | Kernel of the spin representation |
 
 ## Further Reading

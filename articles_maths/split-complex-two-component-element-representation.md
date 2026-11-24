@@ -63,7 +63,7 @@ $$
 
 so the two components of the product are the two entries of the matrix product $\mathsf{M}_2(Q)B$.
 
-**Remark (the row is the dual).** The row $Q^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}}, \mathbb{R})$ associated with $Q$ by the standard pairing $\langle Q^{\mathsf{T}}, B\rangle = q b + q' b'$, and it is **not** a further realization of the algebra. The dual of a left module is a right module, carrying the *right* action $(\varphi\cdot Q)(B) = \varphi(QB)$. Because $\mathbb{C}_{\mathrm{spl}}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\mathsf{M}_2(Q)$ is $\mathsf{M}_2(Q)$ itself, since the regular matrix is symmetric.
+**Remark (the row is the dual).** The row $Q^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}}, \mathbb{R})$ associated with $Q$ by the standard pairing $\langle Q^{\mathsf{T}}, B\rangle = q b + q' b'$, and it is **not** a further realization of the algebra. The dual of a left module is a right module, carrying the *right* action $(\digamma_{\mathrm{map}}\cdot Q)(B) = \digamma_{\mathrm{map}}(QB)$. Because $\mathbb{C}_{\mathrm{spl}}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\mathsf{M}_2(Q)$ is $\mathsf{M}_2(Q)$ itself, since the regular matrix is symmetric.
 
 ## Multiplication in Two-Component Form
 

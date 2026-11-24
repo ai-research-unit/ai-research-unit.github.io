@@ -14,9 +14,9 @@ The article proves that the twisted action is continuous exactly when $\varsigma
 
 **Definition.** An **involutive topological ring** is a topological ring $R$ with a continuous involution $\varsigma$, an additive map with $\varsigma(1) = 1$, $\varsigma(ab) = \varsigma(b)\varsigma(a)$ and $\varsigma^{2} = \mathrm{id}$; the notion, the closed fixed subring $R^{\varsigma}$ and the $I$-adic criterion are *Involutive Topological Rings and Fields*, §*Continuous Involutions*. In the layer the datum is the pair $(R,\varsigma)$ with $\varsigma$ continuous, and the entry *Topological Sesqualgebras* states this as a standing hypothesis, §*The Definition*.
 
-**Proposition (continuity at the origin).** Let $\varphi : M \to N$ be an additive map of topological groups. Then $\varphi$ is continuous if and only if it is continuous at $0$; applied to the layer, $\varsigma$ is continuous if and only if it is continuous at $0$, and the same holds for $*$.
+**Proposition (continuity at the origin).** Let $\digamma_{\mathrm{map}} : M \to N$ be an additive map of topological groups. Then $\digamma_{\mathrm{map}}$ is continuous if and only if it is continuous at $0$; applied to the layer, $\varsigma$ is continuous if and only if it is continuous at $0$, and the same holds for $*$.
 
-*Proof.* If $\varphi$ is continuous at $0$ and $a \in M$, then $\varphi(a + \Omega) \subseteq \varphi(a) + \varphi(\Omega)$ for every neighbourhood $\Omega$ of $0$, because $\varphi$ is additive, so continuity at $a$ follows from continuity at $0$; the converse is immediate.
+*Proof.* If $\digamma_{\mathrm{map}}$ is continuous at $0$ and $a \in M$, then $\digamma_{\mathrm{map}}(a + \Omega) \subseteq \digamma_{\mathrm{map}}(a) + \digamma_{\mathrm{map}}(\Omega)$ for every neighbourhood $\Omega$ of $0$, because $\digamma_{\mathrm{map}}$ is additive, so continuity at $a$ follows from continuity at $0$; the converse is immediate.
 
 **Theorem (the twisted action).** Let $A$ be a topological $R$-module and suppose $\varsigma$ continuous. Then the twisted action
 

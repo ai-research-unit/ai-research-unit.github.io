@@ -97,7 +97,7 @@ In both cases $c_\lambda A = 0$, that is $c_\lambda \in \operatorname{ann}_R(A)$
 
 ### Morphisms
 
-**Definition.** A **morphism** $\varphi : A \to B$ of sesqualgebras over the same $(R,\varsigma)$ is an $R$-linear map with $\varphi(xy) = \varphi(x)\varphi(y)$; a **conjugate morphism** is a $\varsigma$-semilinear map with the same multiplicativity. The two are told apart by their behaviour on scalars, and the two notions coincide exactly when $\varsigma = \mathrm{id}$.
+**Definition.** A **morphism** $\digamma_{\mathrm{map}} : A \to B$ of sesqualgebras over the same $(R,\varsigma)$ is an $R$-linear map with $\digamma_{\mathrm{map}}(xy) = \digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(y)$; a **conjugate morphism** is a $\varsigma$-semilinear map with the same multiplicativity. The two are told apart by their behaviour on scalars, and the two notions coincide exactly when $\varsigma = \mathrm{id}$.
 
 **Remark.** The distinction is the module-level shadow of the distinction between the two kinds of map on an involutive algebra, and it is the reason the category is not the category of algebras over a fixed ring: the scalars may be moved by $\varsigma$, and a homomorphism is allowed to move them only by the identity. The study of the maps, their kernels and images is *Ideals and Quotients of a Sesqualgebra*.
 

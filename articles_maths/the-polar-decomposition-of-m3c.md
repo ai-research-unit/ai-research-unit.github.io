@@ -213,27 +213,27 @@ P=(E^{*}E)^{1/2},\qquad
 U=EP^{-1}\ \text{on }\operatorname{im}E .
 $$
 
-For a rank-one idempotent $E=u\varphi$ with $\varphi(u)=1$,
+For a rank-one idempotent $E=u\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(u)=1$,
 
 $$
-E^{*}E=\|u\|^{2}\,\varphi^{*}\varphi,
+E^{*}E=\|u\|^{2}\,\digamma_{\mathrm{map}}^{*}\digamma_{\mathrm{map}},
 \qquad
-P=\|u\|\,\frac{\varphi^{*}\varphi}{\|\varphi\|},
+P=\|u\|\,\frac{\digamma_{\mathrm{map}}^{*}\digamma_{\mathrm{map}}}{\|\digamma_{\mathrm{map}}\|},
 \qquad
-U=\frac{u\varphi}{\|u\|\,\|\varphi\|}.
+U=\frac{u\digamma_{\mathrm{map}}}{\|u\|\,\|\digamma_{\mathrm{map}}\|}.
 $$
 
-**Proof.** The computation $E^{*}E=\varphi^{*}u^{*}u\varphi=\|u\|^{2}\varphi^{*}\varphi$ uses that $u^{*}u=\|u\|^{2}$ is a scalar. The matrix $\varphi^{*}\varphi$ is rank one with trace $\|\varphi\|^{2}$, so its positive square root is $\varphi^{*}\varphi/\|\varphi\|$. The $*$-unitary factor follows by multiplying $u\varphi$ by the inverse of $P$ on the range: $P^{-1}=\varphi^{*}\varphi/(\|u\|\,\|\varphi\|^{3})$ there, and $u\varphi\,\varphi^{*}\varphi=u\|\varphi\|^{2}\varphi$.
+**Proof.** The computation $E^{*}E=\digamma_{\mathrm{map}}^{*}u^{*}u\digamma_{\mathrm{map}}=\|u\|^{2}\digamma_{\mathrm{map}}^{*}\digamma_{\mathrm{map}}$ uses that $u^{*}u=\|u\|^{2}$ is a scalar. The matrix $\digamma_{\mathrm{map}}^{*}\digamma_{\mathrm{map}}$ is rank one with trace $\|\digamma_{\mathrm{map}}\|^{2}$, so its positive square root is $\digamma_{\mathrm{map}}^{*}\digamma_{\mathrm{map}}/\|\digamma_{\mathrm{map}}\|$. The $*$-unitary factor follows by multiplying $u\digamma_{\mathrm{map}}$ by the inverse of $P$ on the range: $P^{-1}=\digamma_{\mathrm{map}}^{*}\digamma_{\mathrm{map}}/(\|u\|\,\|\digamma_{\mathrm{map}}\|^{3})$ there, and $u\digamma_{\mathrm{map}}\,\digamma_{\mathrm{map}}^{*}\digamma_{\mathrm{map}}=u\|\digamma_{\mathrm{map}}\|^{2}\digamma_{\mathrm{map}}$.
 
-**The meaning.** The positive factor of an idempotent measures the angle between the line and the functional. Since $\varphi(u)=1$, the product of the norms is $\|u\|\,\|\varphi\|=1/\cos\theta$, and
+**The meaning.** The positive factor of an idempotent measures the angle between the line and the functional. Since $\digamma_{\mathrm{map}}(u)=1$, the product of the norms is $\|u\|\,\|\digamma_{\mathrm{map}}\|=1/\cos\theta$, and
 
 $$
-P=\|u\|\,\|\varphi\|\,\frac{\varphi^{*}\varphi}{\|\varphi\|^{2}}
+P=\|u\|\,\|\digamma_{\mathrm{map}}\|\,\frac{\digamma_{\mathrm{map}}^{*}\digamma_{\mathrm{map}}}{\|\digamma_{\mathrm{map}}\|^{2}}
 $$
 
-is the norm ratio times the orthogonal projection onto the row line $\mathbb{C}\varphi^{*}$. The $*$-unitary factor is the partial isometry that identifies the row line with the image line $\mathbb{C}u$; it is $*$-unitary only when the idempotent is an orthogonal projection, that is, when $\theta=0$.
+is the norm ratio times the orthogonal projection onto the row line $\mathbb{C}\digamma_{\mathrm{map}}^{*}$. The $*$-unitary factor is the partial isometry that identifies the row line with the image line $\mathbb{C}u$; it is $*$-unitary only when the idempotent is an orthogonal projection, that is, when $\theta=0$.
 
-**Example.** For $E=\begin{pmatrix}1&1&0\\0&0&0\\0&0&0\end{pmatrix}=e_{1}(e_{1}+e_{2})^{\mathsf T}$, one has $u=e_{1}$, $\varphi=e_{1}^{\mathsf T}+e_{2}^{\mathsf T}$, $\|u\|=1$, $\|\varphi\|=\sqrt2$, and
+**Example.** For $E=\begin{pmatrix}1&1&0\\0&0&0\\0&0&0\end{pmatrix}=e_{1}(e_{1}+e_{2})^{\mathsf T}$, one has $u=e_{1}$, $\digamma_{\mathrm{map}}=e_{1}^{\mathsf T}+e_{2}^{\mathsf T}$, $\|u\|=1$, $\|\digamma_{\mathrm{map}}\|=\sqrt2$, and
 
 $$
 P=\frac{1}{\sqrt2}\begin{pmatrix}1&1&0\\1&1&0\\0&0&0\end{pmatrix},
@@ -285,7 +285,7 @@ The gauge torus $T$ acts on the frame by $S\mapsto ST$, and the two factors of t
 
 ## Summary
 
-Every $A\in M_3(\mathbb{C})$ has a polar decomposition $A=UP$, with $P=|A|=(A^{*}A)^{1/2}$ positive semidefinite and unique, and $U$ $*$-unitary when $A$ is invertible, a partial isometry in general. The factors are read from the singular value decomposition $A=W\Sigma V^{*}$: $P=V\Sigma V^{*}$ and $U=WV^{*}$. On $GL_3(\mathbb{C})$ the map $(U,P)\mapsto UP$ is a diffeomorphism $U(3)\times\operatorname{Herm}_{>0}(3)\to GL_3(\mathbb{C})$, and the real dimensions match, $9+9=18$. The decomposition is the Cartan decomposition of $GL_3(\mathbb{C})$ as a real group for the involution $\mathrm{J}(X)=-X^{*}$, and the symmetric space is the positive definite cone $\operatorname{Herm}_{>0}(3)\cong\mathbb{R}^{9}$, of rank $3$. On the singular set the factor $P$ stays unique and the $*$-unitary factor is free on the kernel: the fibre over a matrix of rank $\varrho$ is $U(3-\varrho)$, of real dimension $(3-\varrho)^{2}$. For a rank-one idempotent $E=u\varphi$ the polar factors are $P=\|u\|\,\varphi^{*}\varphi/\|\varphi\|$ and $U=u\varphi/(\|u\|\,\|\varphi\|)$.
+Every $A\in M_3(\mathbb{C})$ has a polar decomposition $A=UP$, with $P=|A|=(A^{*}A)^{1/2}$ positive semidefinite and unique, and $U$ $*$-unitary when $A$ is invertible, a partial isometry in general. The factors are read from the singular value decomposition $A=W\Sigma V^{*}$: $P=V\Sigma V^{*}$ and $U=WV^{*}$. On $GL_3(\mathbb{C})$ the map $(U,P)\mapsto UP$ is a diffeomorphism $U(3)\times\operatorname{Herm}_{>0}(3)\to GL_3(\mathbb{C})$, and the real dimensions match, $9+9=18$. The decomposition is the Cartan decomposition of $GL_3(\mathbb{C})$ as a real group for the involution $\mathrm{J}(X)=-X^{*}$, and the symmetric space is the positive definite cone $\operatorname{Herm}_{>0}(3)\cong\mathbb{R}^{9}$, of rank $3$. On the singular set the factor $P$ stays unique and the $*$-unitary factor is free on the kernel: the fibre over a matrix of rank $\varrho$ is $U(3-\varrho)$, of real dimension $(3-\varrho)^{2}$. For a rank-one idempotent $E=u\digamma_{\mathrm{map}}$ the polar factors are $P=\|u\|\,\digamma_{\mathrm{map}}^{*}\digamma_{\mathrm{map}}/\|\digamma_{\mathrm{map}}\|$ and $U=u\digamma_{\mathrm{map}}/(\|u\|\,\|\digamma_{\mathrm{map}}\|)$.
 
 $$
 \boxed{\ A=UP,\quad P=(A^{*}A)^{1/2},\quad U=AP^{-1};\qquad GL_3(\mathbb{C})\cong U(3)\times\operatorname{Herm}_{>0}(3),\quad 18=9+9.\ }

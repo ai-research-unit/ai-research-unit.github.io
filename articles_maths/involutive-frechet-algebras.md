@@ -23,7 +23,7 @@ for some $m = m(n)$ and some constant $C_n$. In that case the involution is a ho
 
 **Proof.** The continuity of a linear map of a Fréchet space is the existence, for every continuous seminorm $p_n$, of a continuous seminorm $p_m$ and a constant $C_n$ with $p_n(\sigma(a)) \leq C_n p_m(a)$; the seminorms $p_m$ generate the topology, giving the criterion. An involutive homeomorphism is its own inverse, and the conjugate-linear anti-automorphism descends to the quotient because the kernel of $p_n$ is stable under $\sigma$ when $p_n$ is $\sigma$-subordinate to a $p_m$ for the reverse inequality also holds by symmetry.
 
-**Example (a discontinuous involution).** Let $A = C^\infty(\mathbb{R})$ and let $\varphi : C^\infty(\mathbb{R}) \to C^\infty(\mathbb{R})$ be a discontinuous derivation composed with the identity; the map $f \mapsto \overline{f} + \varphi(f)$ is a linear involution that is not continuous for the Fréchet topology. The example shows that continuity is a genuine hypothesis and not a consequence of the algebra structure.
+**Example (a discontinuous involution).** Let $A = C^\infty(\mathbb{R})$ and let $\digamma_{\mathrm{map}} : C^\infty(\mathbb{R}) \to C^\infty(\mathbb{R})$ be a discontinuous derivation composed with the identity; the map $f \mapsto \overline{f} + \digamma_{\mathrm{map}}(f)$ is a linear involution that is not continuous for the Fréchet topology. The example shows that continuity is a genuine hypothesis and not a consequence of the algebra structure.
 
 ## The Fréchet *-Algebras as Projective Limits
 

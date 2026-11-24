@@ -25,7 +25,7 @@ $$
 
 and it is associative with respect to the multiplication, $\langle XY,Z\rangle = \langle X,YZ\rangle$.
 
-**Proof.** Symmetry is $\operatorname{tr}(XY) = \operatorname{tr}(YX)$; associativity is $\operatorname{tr}(XYZ)$, which is invariant under cyclic permutation of the factors. For non-degeneracy, if $X \neq 0$ choose $v$ with $Xv \neq 0$ and a functional $\varphi$ with $\varphi(Xv) = 1$; the endomorphism $Y = v\varphi$, $Y(w) = \varphi(w)v$, satisfies $\operatorname{tr}(XY) = \varphi(Xv) = 1$, so $X$ pairs nontrivially.
+**Proof.** Symmetry is $\operatorname{tr}(XY) = \operatorname{tr}(YX)$; associativity is $\operatorname{tr}(XYZ)$, which is invariant under cyclic permutation of the factors. For non-degeneracy, if $X \neq 0$ choose $v$ with $Xv \neq 0$ and a functional $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(Xv) = 1$; the endomorphism $Y = v\digamma_{\mathrm{map}}$, $Y(w) = \digamma_{\mathrm{map}}(w)v$, satisfies $\operatorname{tr}(XY) = \digamma_{\mathrm{map}}(Xv) = 1$, so $X$ pairs nontrivially.
 
 **Remark (the natural pairing of the category).** The trace pairing is the pairing that the category of endomorphisms carries without any further structure: it is defined for every finite-dimensional $V$, it is invariant under the isomorphism of $E$ with its opposite, and the adjointness it produces is the abstract form of transposition. The pairing-based adjoint articles use an extra form on $V$; this article uses none.
 

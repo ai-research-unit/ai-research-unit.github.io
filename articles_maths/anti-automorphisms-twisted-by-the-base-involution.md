@@ -69,12 +69,12 @@ $$
 form a group $P$ under composition, each of them is either empty or a coset of the linear automorphism group $\operatorname{Aut}_{R}(A)$, and the map that records the twist and the orientation,
 
 $$
-\psi : P \longrightarrow \mathbb{Z}/2 \times \mathbb{Z}/2 ,
+Ξ_{\mathrm{wfn}} : P \longrightarrow \mathbb{Z}/2 \times \mathbb{Z}/2 ,
 $$
 
-is a homomorphism with kernel $\operatorname{Aut}_{R}(A)$. When all four classes are nonempty, $\psi$ is onto and $P / \operatorname{Aut}_{R}(A) \cong \mathbb{Z}/2 \times \mathbb{Z}/2$, the Klein group.
+is a homomorphism with kernel $\operatorname{Aut}_{R}(A)$. When all four classes are nonempty, $Ξ_{\mathrm{wfn}}$ is onto and $P / \operatorname{Aut}_{R}(A) \cong \mathbb{Z}/2 \times \mathbb{Z}/2$, the Klein group.
 
-**Proof.** The composition table of the twist and of the orientation is the theorem above, and the four sets are closed under it: with the twists in the group $\{\mathrm{id},\varsigma\} \cong \mathbb{Z}/2$ and the orientations in $\{\text{auto},\text{anti}\} \cong \mathbb{Z}/2$, the product of two elements whose twist and orientation lie in the respective classes lies in the class of the product of the labels. The inverse of an element of a class has the same twist, since $\varsigma = \varsigma^{-1}$, and the same orientation, so each class is closed under inversion, and $P$ is a group. The kernel of $\psi$ is the class with twist $\mathrm{id}$ and orientation auto, that is $\operatorname{Aut}_{R}(A)$. If $f_{0}$ and $g_{0}$ are two elements of the same nonempty class then $f_{0}^{-1}g_{0}$ has twist $\mathrm{id}$ and orientation auto, so $g_{0} = f_{0}(f_{0}^{-1}g_{0})$ with $f_{0}^{-1}g_{0} \in \operatorname{Aut}_{R}(A)$, which exhibits the class as a coset. Surjectivity of $\psi$ is the nonemptiness of the four classes, and the quotient is then $\mathbb{Z}/2 \times \mathbb{Z}/2$.
+**Proof.** The composition table of the twist and of the orientation is the theorem above, and the four sets are closed under it: with the twists in the group $\{\mathrm{id},\varsigma\} \cong \mathbb{Z}/2$ and the orientations in $\{\text{auto},\text{anti}\} \cong \mathbb{Z}/2$, the product of two elements whose twist and orientation lie in the respective classes lies in the class of the product of the labels. The inverse of an element of a class has the same twist, since $\varsigma = \varsigma^{-1}$, and the same orientation, so each class is closed under inversion, and $P$ is a group. The kernel of $Ξ_{\mathrm{wfn}}$ is the class with twist $\mathrm{id}$ and orientation auto, that is $\operatorname{Aut}_{R}(A)$. If $f_{0}$ and $g_{0}$ are two elements of the same nonempty class then $f_{0}^{-1}g_{0}$ has twist $\mathrm{id}$ and orientation auto, so $g_{0} = f_{0}(f_{0}^{-1}g_{0})$ with $f_{0}^{-1}g_{0} \in \operatorname{Aut}_{R}(A)$, which exhibits the class as a coset. Surjectivity of $Ξ_{\mathrm{wfn}}$ is the nonemptiness of the four classes, and the quotient is then $\mathbb{Z}/2 \times \mathbb{Z}/2$.
 
 **Remark.** The noncommutativity of $A$ is needed so that the orientation is a well-defined function: over a commutative algebra every anti-automorphism is an automorphism, the two orientations coincide, and the four classes collapse to one per twist, that is to two when $\varsigma \neq \mathrm{id}$ and to one when $\varsigma = \mathrm{id}$. For a noncommutative algebra the Klein group is genuine, and the matrix model realises it, as the worked case below shows. The theorem is the twisted refinement of *Opposite Algebras and Anti-Isomorphisms*, §*The Coset of the Anti-Automorphisms*: there the anti-automorphisms form a single coset of the automorphism group, here the twist doubles the coset and the quotient becomes the Klein group.
 
@@ -173,7 +173,7 @@ The $k$-th power of a twisted map has twist $\varsigma^{k}$, so a twisted map of
 | $\operatorname{Aut}_{R}(A)$ | the $R$-linear automorphisms, the untwisted class |
 | $\varsigma_{f\circ g} = \varsigma_{f}\circ\varsigma_{g}$ | the multiplicativity of the twist |
 | $(\text{anti})\circ(\text{anti}) = \text{auto}$ | the multiplication of the orientations |
-| $\psi : P \to \mathbb{Z}/2 \times \mathbb{Z}/2$ | the twist and the orientation of a semilinear map |
+| $Ξ_{\mathrm{wfn}} : P \to \mathbb{Z}/2 \times \mathbb{Z}/2$ | the twist and the orientation of a semilinear map |
 | $P/\operatorname{Aut}_{R}(A) \cong \mathbb{Z}/2 \times \mathbb{Z}/2$ | the Klein quotient of the four classes |
 | $f^{k}$ has twist $\varsigma^{k}$ | the parity of the order |
 | $\operatorname{Tw}_{\varsigma}(A) = f_{0}\operatorname{Aut}_{R}(A)$ | the coset of the twisted anti-automorphisms |

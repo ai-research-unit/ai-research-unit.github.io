@@ -7,9 +7,9 @@ Positive definiteness is a condition on a function that can be tested against th
 functions, and this makes it a condition on a distribution. A distribution $T$ on $\mathbb R^n$ is **positive
 definite** if
 $$
-\langle T,\varphi*\varphi^{*}\rangle\geq0\qquad\text{for all }\varphi\in C_c^\infty(\mathbb R^n),
+\langle T,\digamma_{\mathrm{map}}*\digamma_{\mathrm{map}}^{*}\rangle\geq0\qquad\text{for all }\digamma_{\mathrm{map}}\in C_c^\infty(\mathbb R^n),
 $$
-where $\varphi^{*}(x)=\overline{\varphi(-x)}$ is the convolution involution of the group algebra; the
+where $\digamma_{\mathrm{map}}^{*}(x)=\overline{\digamma_{\mathrm{map}}(-x)}$ is the convolution involution of the group algebra; the
 Gaussian smoothings of $T$ are then positive definite functions in the sense of the earlier article, and the
 theorem of **Bochner–Schwartz** states that a distribution is positive definite exactly when it is the
 Fourier transform of a positive measure of at most polynomial growth — a positive **tempered** measure. The
@@ -37,16 +37,16 @@ invoked.
 ### The Convolution Involution
 
 **Definition.** On $C_c^\infty(\mathbb R^n)$ the **convolution involution** is
-$\varphi^{*}(x)=\overline{\varphi(-x)}$; it is conjugate-linear, involutive, and multiplicative for the
-convolution, $(\varphi*\psi)^{*}=\psi^{*}*\varphi^{*}$. On the distributions it induces
+$\digamma_{\mathrm{map}}^{*}(x)=\overline{\digamma_{\mathrm{map}}(-x)}$; it is conjugate-linear, involutive, and multiplicative for the
+convolution, $(\digamma_{\mathrm{map}}*Ξ_{\mathrm{wfn}})^{*}=Ξ_{\mathrm{wfn}}^{*}*\digamma_{\mathrm{map}}^{*}$. On the distributions it induces
 $$
-T^{*}(\varphi)=\overline{T(\varphi^{*})} ,
+T^{*}(\digamma_{\mathrm{map}})=\overline{T(\digamma_{\mathrm{map}}^{*})} ,
 $$
-the **adjoint involution**; a distribution is **Hermitian** if $T^{*}=T$ and **real** if $T(\varphi)\in\mathbb R$
-for every real $\varphi$.
+the **adjoint involution**; a distribution is **Hermitian** if $T^{*}=T$ and **real** if $T(\digamma_{\mathrm{map}})\in\mathbb R$
+for every real $\digamma_{\mathrm{map}}$.
 
 **Remark (the two involutions).** As in *Hermitian Measures and Complex Measures*, the involution $T^{*}$
-must be distinguished from the **value-conjugation** $\bar T(\varphi)=\overline{T(\bar\varphi)}$, which is
+must be distinguished from the **value-conjugation** $\bar T(\digamma_{\mathrm{map}})=\overline{T(\bar\digamma_{\mathrm{map}})}$, which is
 induced by conjugation of the test function alone. Positive definiteness uses $T^{*}$, the involution of the
 convolution algebra, and not $\bar T$; the two agree on the tempered distributions whose reflection is
 itself, and the distinction is recorded so that the star is read as the algebra involution. The mark is
@@ -57,26 +57,26 @@ of an algebra element, and the adjoint involution here is the algebra star.
 
 **Definition.** A distribution $T\in\mathcal D'(\mathbb R^n)$ is **positive definite** if
 $$
-\boxed{\;\langle T,\varphi*\varphi^{*}\rangle\geq0\qquad\text{for every }\varphi\in C_c^\infty(\mathbb R^n)\;} .
+\boxed{\;\langle T,\digamma_{\mathrm{map}}*\digamma_{\mathrm{map}}^{*}\rangle\geq0\qquad\text{for every }\digamma_{\mathrm{map}}\in C_c^\infty(\mathbb R^n)\;} .
 $$
 
 **Theorem (the equivalent forms).** For $T\in\mathcal D'(\mathbb R^n)$ the following are equivalent: $T$ is
-positive definite; the Hermitian form $K(\varphi,\psi)=\langle T,\varphi*\psi^{*}\rangle$ on
+positive definite; the Hermitian form $K(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=\langle T,\digamma_{\mathrm{map}}*Ξ_{\mathrm{wfn}}^{*}\rangle$ on
 $C_c^\infty(\mathbb R^n)$ is positive semidefinite; for every finite set of points and coefficients the
 smoothed kernel is positive semidefinite. A positive definite distribution is Hermitian, and the map
-$(\varphi,\psi)\mapsto\langle T,\varphi*\psi^{*}\rangle$ is a positive semidefinite Hermitian form.
+$(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})\mapsto\langle T,\digamma_{\mathrm{map}}*Ξ_{\mathrm{wfn}}^{*}\rangle$ is a positive semidefinite Hermitian form.
 
 **Proof.** The equivalence is the computation
-$K(\varphi,\psi)=\langle T,\varphi*\psi^{*}\rangle$ and the polarisation of the quadratic form
-$\varphi\mapsto K(\varphi,\varphi)=\langle T,\varphi*\varphi^{*}\rangle$; the Hermitian property is obtained
-by applying the inequality to $\varphi+\lambda\psi$ and varying $\lambda$, as for kernels and for measures.
+$K(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=\langle T,\digamma_{\mathrm{map}}*Ξ_{\mathrm{wfn}}^{*}\rangle$ and the polarisation of the quadratic form
+$\digamma_{\mathrm{map}}\mapsto K(\digamma_{\mathrm{map}},\digamma_{\mathrm{map}})=\langle T,\digamma_{\mathrm{map}}*\digamma_{\mathrm{map}}^{*}\rangle$; the Hermitian property is obtained
+by applying the inequality to $\digamma_{\mathrm{map}}+\lambdaΞ_{\mathrm{wfn}}$ and varying $\lambda$, as for kernels and for measures.
 
 **Theorem (functions give distributions).** A locally integrable function $f$ on $\mathbb R^n$ of at most
 polynomial growth, regarded as a distribution, is positive definite exactly when the function $f$ is
 positive definite in the sense of *Positive Definite Functions and Hermitian Kernels*, almost everywhere.
 
 **Proof.** If $f$ is a positive definite function then
-$\langle f,\varphi*\varphi^{*}\rangle=\iint f(x-y)\varphi(y)\overline{\varphi(x)}\,dydx\geq0$ by the
+$\langle f,\digamma_{\mathrm{map}}*\digamma_{\mathrm{map}}^{*}\rangle=\iint f(x-y)\digamma_{\mathrm{map}}(y)\overline{\digamma_{\mathrm{map}}(x)}\,dydx\geq0$ by the
 definition; conversely the inequality for a smooth nonnegative approximate identity concentrated at the
 points recovers the positive definiteness of the function.
 
@@ -93,8 +93,8 @@ $\hat\mu(x)=\int \exp(-2\pi ix\cdot\zeta)d\mu(\zeta)$ is a tempered distribution
 **Theorem (Bochner–Schwartz).** A distribution $T\in\mathcal D'(\mathbb R^n)$ is positive definite if and
 only if there is a unique positive tempered measure $\mu$ with $T=\hat\mu$; that is,
 $$
-\boxed{\;\langle T,\varphi\rangle=\int_{\mathbb R^n}\mathcal F\\varphi(\zeta)\,d\mu(\zeta)
-=\int_{\mathbb R^n}\Bigl(\int_{\mathbb R^n}\varphi(x)\exp(-2\pi ix\cdot\zeta)dx\Bigr)d\mu(\zeta)\;} .
+\boxed{\;\langle T,\digamma_{\mathrm{map}}\rangle=\int_{\mathbb R^n}\mathcal F\\digamma_{\mathrm{map}}(\zeta)\,d\mu(\zeta)
+=\int_{\mathbb R^n}\Bigl(\int_{\mathbb R^n}\digamma_{\mathrm{map}}(x)\exp(-2\pi ix\cdot\zeta)dx\Bigr)d\mu(\zeta)\;} .
 $$
 Equivalently, the Fourier transform is a bijection between the positive definite distributions and the
 positive tempered measures, and it carries the positive definite distributions onto a cone which is the
@@ -103,11 +103,11 @@ image of the positive cone of the measures.
 ### Proof Sketch
 
 **Proof sketch.** Suppose first that $T=\hat\mu$ with $\mu\geq0$ tempered. Then for
-$\varphi\in C_c^\infty$,
+$\digamma_{\mathrm{map}}\in C_c^\infty$,
 $$
-\langle T,\varphi*\varphi^{*}\rangle=\int\lvert\mathcal F\\varphi(\zeta)\rvert^2\,d\mu(\zeta)\geq0 ,
+\langle T,\digamma_{\mathrm{map}}*\digamma_{\mathrm{map}}^{*}\rangle=\int\lvert\mathcal F\\digamma_{\mathrm{map}}(\zeta)\rvert^2\,d\mu(\zeta)\geq0 ,
 $$
-because $\widehat{\varphi*\varphi^{*}}=\lvert\mathcal F\\varphi\rvert^2$ by the convolution and involution
+because $\widehat{\digamma_{\mathrm{map}}*\digamma_{\mathrm{map}}^{*}}=\lvert\mathcal F\\digamma_{\mathrm{map}}\rvert^2$ by the convolution and involution
 identities of the Fourier article; so $T$ is positive definite. Conversely let $T$ be positive definite, and
 let $\rho_\epsilon(x)=\epsilon^{-n}\rho(x/\epsilon)$ be a nonnegative even approximate identity with
 $\rho\in C_c^\infty$ real and even, so that $\rho_\epsilon^{*}=\rho_\epsilon$ and
@@ -152,18 +152,18 @@ order are exactly the transforms of the positive measures with the corresponding
 bounded continuous positive definite function is exactly a positive definite distribution whose measure is
 finite (Bochner's theorem in the function case).
 
-**Proof.** The order of a distribution is the least $N$ with $\lvert\langle T,\varphi\rangle\rvert\leq C\sum_{\lvert\alpha\rvert\leq N}\sup\lvert\partial^\alpha\varphi\rvert$, and the transformed pairing
-$\int\mathcal F\\varphi\,d\mu$ shows that the growth of $\mu$ is controlled by the seminorms of $\varphi$ used;
+**Proof.** The order of a distribution is the least $N$ with $\lvert\langle T,\digamma_{\mathrm{map}}\rangle\rvert\leq C\sum_{\lvert\alpha\rvert\leq N}\sup\lvert\partial^\alpha\digamma_{\mathrm{map}}\rvert$, and the transformed pairing
+$\int\mathcal F\\digamma_{\mathrm{map}}\,d\mu$ shows that the growth of $\mu$ is controlled by the seminorms of $\digamma_{\mathrm{map}}$ used;
 the finite-measure case is Bochner's theorem for bounded continuous functions.
 
 ### Examples
 
 **Example (the Dirac mass and Lebesgue measure).** The Dirac mass $T=\delta_0$ is positive definite, because
 $$
-\langle\delta_0,\varphi*\varphi^{*}\rangle=(\varphi*\varphi^{*})(0)=\int_{\mathbb R^n}\lvert\varphi(x)\rvert^2dx\geq0 ,
+\langle\delta_0,\digamma_{\mathrm{map}}*\digamma_{\mathrm{map}}^{*}\rangle=(\digamma_{\mathrm{map}}*\digamma_{\mathrm{map}}^{*})(0)=\int_{\mathbb R^n}\lvert\digamma_{\mathrm{map}}(x)\rvert^2dx\geq0 ,
 $$
 and its spectral measure is the Lebesgue measure $d\mu=d\zeta$; conversely the constant function $T=1$ is
-positive definite with spectral measure $\delta_0$, since $\langle1,\varphi*\varphi^{*}\rangle=\lvert\int\varphi\rvert^2\geq0$.
+positive definite with spectral measure $\delta_0$, since $\langle1,\digamma_{\mathrm{map}}*\digamma_{\mathrm{map}}^{*}\rangle=\lvert\int\digamma_{\mathrm{map}}\rvert^2\geq0$.
 The pair is the extreme case of Bochner–Schwartz: the distribution transform of the Lebesgue measure is the
 Dirac mass and conversely.
 
@@ -183,10 +183,10 @@ and not positive.
 
 ## Summary
 
-A distribution is positive definite when $\langle T,\varphi*\varphi^{*}\rangle\geq0$ for all test functions,
-where $\varphi^{*}(x)=\overline{\varphi(-x)}$ is the convolution involution; the condition is equivalent to
-the positive semidefiniteness of the Hermitian form $\langle T,\varphi*\psi^{*}\rangle$, and it forces $T$ to
-be Hermitian for the adjoint involution $T^{*}(\varphi)=\overline{T(\varphi^{*})}$, which is distinct from
+A distribution is positive definite when $\langle T,\digamma_{\mathrm{map}}*\digamma_{\mathrm{map}}^{*}\rangle\geq0$ for all test functions,
+where $\digamma_{\mathrm{map}}^{*}(x)=\overline{\digamma_{\mathrm{map}}(-x)}$ is the convolution involution; the condition is equivalent to
+the positive semidefiniteness of the Hermitian form $\langle T,\digamma_{\mathrm{map}}*Ξ_{\mathrm{wfn}}^{*}\rangle$, and it forces $T$ to
+be Hermitian for the adjoint involution $T^{*}(\digamma_{\mathrm{map}})=\overline{T(\digamma_{\mathrm{map}}^{*})}$, which is distinct from
 the value-conjugation $\bar T$ and is the algebra involution. The theorem of Bochner–Schwartz states that a
 distribution is positive definite exactly when it is the transform $\hat\mu$ of a unique positive tempered
 measure $\mu$, so that the Fourier transform is a bijection between the positive definite distributions and
@@ -201,10 +201,10 @@ function is exactly the case of a finite measure.
 
 | Symbol | Meaning |
 |---|---|
-| $\varphi^{*}(x)=\overline{\varphi(-x)}$ | Convolution involution on test functions |
-| $T^{*}(\varphi)=\overline{T(\varphi^{*})}$ | Adjoint involution on distributions |
-| $\bar T$, value-conjugation | $\bar T(\varphi)=\overline{T(\bar\varphi)}$, distinct from $T^{*}$ |
-| $\langle T,\varphi*\varphi^{*}\rangle\geq0$ | Positive definiteness of a distribution |
+| $\digamma_{\mathrm{map}}^{*}(x)=\overline{\digamma_{\mathrm{map}}(-x)}$ | Convolution involution on test functions |
+| $T^{*}(\digamma_{\mathrm{map}})=\overline{T(\digamma_{\mathrm{map}}^{*})}$ | Adjoint involution on distributions |
+| $\bar T$, value-conjugation | $\bar T(\digamma_{\mathrm{map}})=\overline{T(\bar\digamma_{\mathrm{map}})}$, distinct from $T^{*}$ |
+| $\langle T,\digamma_{\mathrm{map}}*\digamma_{\mathrm{map}}^{*}\rangle\geq0$ | Positive definiteness of a distribution |
 | $\hat\mu(x)=\int \exp(-2\pi ix\cdot\zeta)d\mu(\zeta)$ | Transform of a measure |
 | $\mu$ tempered | $\int(1+\lvert\zeta\rvert)^{-N}d\mu<\infty$ for some $N$ |
 | $T=\hat\mu$ | Bochner–Schwartz representation |

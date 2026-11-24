@@ -27,7 +27,7 @@ with the two middle ideals minimal and incomparable. The structure is **semisimp
 
 **Boundaries.** The multiplication and its axioms are *Introduction to the Algebra of the Reduced Biquaternions*; the idempotents and the roots of one are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*; the zero divisors and the two lines are *Zero Divisors of the Algebra of the Reduced Biquaternions*; and the group of invertibles is *The Group of Invertibles of the Algebra of the Reduced Biquaternions*. The criterion that makes the ideal theory available — left alternativity, here associativity — is *The Specificities of the Algebra of the Reduced Biquaternions*, above this article. The multiplication operators and the enveloping algebra are *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; the matrix model is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*.
 
-**Conventions.** The algebra is $\mathbb{B}_{\mathrm{red}}$ with product $\breve Q_{1}\breve Q_{2}$, basis $1,i,j,ij$, and general element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$. The idempotents are $\Pi_\pm=\tfrac12(1\pm j)$, the idempotent coordinates are $Q_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$, and $\breve Q=Q_+\Pi_++Q_-\Pi_-$. The left-regular model in the basis $1,j$ is written $\varphi$, and the Peirce-coordinate model is written $\varphi^{\Pi}$. The **standard pair** is $\Pi_+,\Pi_-$, with $\Pi_-=1-\Pi_+$. The involutions are the bar $\bar{\cdot}$, the tessarine sign ${}_{\mathrm{ts}}$, the star ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$ and the flat ${}^{\flat}=-{}^{*}$. The base field is $\mathbb{C}$ unless a statement names $\mathbb{R}$; the notation is that of *Algebra and Element Conventions*.
+**Conventions.** The algebra is $\mathbb{B}_{\mathrm{red}}$ with product $\breve Q_{1}\breve Q_{2}$, basis $1,i,j,ij$, and general element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$. The idempotents are $\Pi_\pm=\tfrac12(1\pm j)$, the idempotent coordinates are $Q_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$, and $\breve Q=Q_+\Pi_++Q_-\Pi_-$. The left-regular model in the basis $1,j$ is written $\digamma_{\mathrm{map}}$, and the Peirce-coordinate model is written $\digamma_{\mathrm{map}}^{\Pi}$. The **standard pair** is $\Pi_+,\Pi_-$, with $\Pi_-=1-\Pi_+$. The involutions are the bar $\bar{\cdot}$, the tessarine sign ${}_{\mathrm{ts}}$, the star ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$ and the flat ${}^{\flat}=-{}^{*}$. The base field is $\mathbb{C}$ unless a statement names $\mathbb{R}$; the notation is that of *Algebra and Element Conventions*.
 
 ## Ideals in an Algebra
 
@@ -257,7 +257,7 @@ The bar is $\mathbb{C}$-antilinear and preserves the ordered Peirce decompositio
 In the Peirce-coordinate model the element is the diagonal matrix
 
 $$
-\varphi^{\Pi}(\breve Q)=\operatorname{diag}(Q_{+},Q_{-})
+\digamma_{\mathrm{map}}^{\Pi}(\breve Q)=\operatorname{diag}(Q_{+},Q_{-})
 =\begin{pmatrix}Q_{\blacktriangle}+Q_{\blacktriangledown}&0\\0&Q_{\blacktriangle}-Q_{\blacktriangledown}\end{pmatrix}
 $$
 
@@ -275,19 +275,19 @@ $$
 
 with $P_{+}+P_{-}=\mathrm I_{2}$ and $P_{+}P_{-}=0$. The off-diagonal Peirce components, which would be the matrix units $E_{12}$ and $E_{21}$, are absent: the image is the subalgebra of diagonal matrices in $M_{2}(\mathbb{C})$, not the full matrix algebra. In particular, $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{C})$, but no nonzero nilpotent matrix lies in the image: a diagonal matrix with square zero is zero. This is the matrix form of the reducedness of $\mathbb{B}_{\mathrm{red}}$.
 
-**Two matrix models.** The diagonal matrix $\varphi^{\Pi}(\breve Q)=\operatorname{diag}(Q_+,Q_-)$ is the **Peirce-coordinate model**: its two entries are the Peirce coordinates, and in this model the two Peirce components are the two matrix units $E_{11}$ and $E_{22}$. The **left-regular model** in the basis $(1,j)$ is the full matrix
+**Two matrix models.** The diagonal matrix $\digamma_{\mathrm{map}}^{\Pi}(\breve Q)=\operatorname{diag}(Q_+,Q_-)$ is the **Peirce-coordinate model**: its two entries are the Peirce coordinates, and in this model the two Peirce components are the two matrix units $E_{11}$ and $E_{22}$. The **left-regular model** in the basis $(1,j)$ is the full matrix
 $$
-\boxed{\; \varphi(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix} \;}.
+\boxed{\; \digamma_{\mathrm{map}}(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix} \;}.
 $$
 The two are related by the change of basis
 $$
-\mathsf{C}=\frac12\begin{pmatrix}1&1\\1&-1\end{pmatrix},\qquad \mathsf{C}^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix},\qquad \varphi^{\Pi}(\breve Q)=\mathsf{C}^{-1}\varphi(\breve Q)\mathsf{C}.
+\mathsf{C}=\frac12\begin{pmatrix}1&1\\1&-1\end{pmatrix},\qquad \mathsf{C}^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix},\qquad \digamma_{\mathrm{map}}^{\Pi}(\breve Q)=\mathsf{C}^{-1}\digamma_{\mathrm{map}}(\breve Q)\mathsf{C}.
 $$
-The columns of $\mathsf{C}$ are the coordinate vectors of $\Pi_+$ and $\Pi_-$ in the basis $(1,j)$, and they are eigenvectors of $\varphi(\breve Q)$ with eigenvalues $Q_+$ and $Q_-$. The idempotent basis $(\Pi_+,\Pi_-)$ is a complex eigenbasis of $\breve Q$. In the left-regular model the matrices of the two idempotents are
+The columns of $\mathsf{C}$ are the coordinate vectors of $\Pi_+$ and $\Pi_-$ in the basis $(1,j)$, and they are eigenvectors of $\digamma_{\mathrm{map}}(\breve Q)$ with eigenvalues $Q_+$ and $Q_-$. The idempotent basis $(\Pi_+,\Pi_-)$ is a complex eigenbasis of $\breve Q$. In the left-regular model the matrices of the two idempotents are
 $$
-\varphi(\Pi_+)=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad \varphi(\Pi_-)=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix}.
+\digamma_{\mathrm{map}}(\Pi_+)=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad \digamma_{\mathrm{map}}(\Pi_-)=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix}.
 $$
-In the scalar case $Q_{\blacktriangledown}=0$, $\varphi(\breve Q)=Q_{\blacktriangle}\mathrm I_2$, every nonzero complex vector is an eigenvector, and every complex basis is an eigenbasis. The eigenbasis is developed in *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*, §*The Eigenbasis*; the two models are developed in *Eigenbasis of a Reduced Biquaternion in Matrix Elements Representations*.
+In the scalar case $Q_{\blacktriangledown}=0$, $\digamma_{\mathrm{map}}(\breve Q)=Q_{\blacktriangle}\mathrm I_2$, every nonzero complex vector is an eigenvector, and every complex basis is an eigenbasis. The eigenbasis is developed in *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*, §*The Eigenbasis*; the two models are developed in *Eigenbasis of a Reduced Biquaternion in Matrix Elements Representations*.
 
 ## The Decomposition into Minimal Ideals
 

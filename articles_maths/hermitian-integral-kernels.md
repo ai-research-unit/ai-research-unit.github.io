@@ -7,7 +7,7 @@ A Hermitian kernel is a kernel equal to its conjugate transpose, $K(y,x)=\overli
 operator of a Hermitian kernel is self-adjoint. The self-adjointness is only the beginning: such an operator
 has a real spectrum, its eigenfunctions are orthogonal, and the kernel is the expansion
 $$
-K(x,y)=\sum_n\lambda_n\varphi_n(x)\overline{\varphi_n(y)}
+K(x,y)=\sum_n\lambda_n\digamma_{\mathrm{map},n}(x)\overline{\digamma_{\mathrm{map},n}(y)}
 $$
 in the eigenfunctions with the eigenvalues as coefficients. Positivity of the operator — the case of a
 positive definite kernel — is exactly the nonnegativity of the eigenvalues, and then the expansion converges
@@ -76,10 +76,10 @@ Part. The last statement is Mercer's theorem.
 
 **Theorem (the spectral theorem for the Hermitian Hilbert–Schmidt kernel).** Let $K\in L^2(X\times X)$ be
 Hermitian and let $T_K$ be its integral operator. Then $T_K$ is self-adjoint and compact, its eigenvalues
-$\lambda_n$ are real and tend to $0$, the eigenvectors $\varphi_n$ may be taken orthonormal,
+$\lambda_n$ are real and tend to $0$, the eigenvectors $\digamma_{\mathrm{map},n}$ may be taken orthonormal,
 $$
-\boxed{\;T_K\varphi_n=\lambda_n\varphi_n,\qquad
-T_Kf=\sum_n\lambda_n\langle f,\varphi_n\rangle\varphi_n\;} ,
+\boxed{\;T_K\digamma_{\mathrm{map},n}=\lambda_n\digamma_{\mathrm{map},n},\qquad
+T_Kf=\sum_n\lambda_n\langle f,\digamma_{\mathrm{map},n}\rangle\digamma_{\mathrm{map},n}\;} ,
 $$
 and the eigenvalue list is the only spectral data of the operator,
 $\lVert T_K\rVert=\max_n\lvert\lambda_n\rvert$.
@@ -93,12 +93,12 @@ spectral theory of *Compact Operators* and *Banach and Hilbert Spaces*, later in
 
 **Theorem (the kernel expansion).** Under the hypotheses of the spectral theorem,
 $$
-K(x,y)=\sum_n\lambda_n\varphi_n(x)\overline{\varphi_n(y)} ,
+K(x,y)=\sum_n\lambda_n\digamma_{\mathrm{map},n}(x)\overline{\digamma_{\mathrm{map},n}(y)} ,
 $$
 the series converging in $L^2(X\times X)$; and $\lVert K\rVert_{L^2}^2=\sum_n\lambda_n^2$.
 
 **Proof.** The kernel of $T_K$ is recovered from the operator by
-$K(x,y)=\sum_n(T_K\varphi_n)(x)\overline{\varphi_n(y)}$ in the $L^2$ sense, as in the isometry of the
+$K(x,y)=\sum_n(T_K\digamma_{\mathrm{map},n})(x)\overline{\digamma_{\mathrm{map},n}(y)}$ in the $L^2$ sense, as in the isometry of the
 `* Theory` article, and the eigenrelation gives the stated expansion; the norm identity is Parseval's
 identity applied to the expansion.
 
@@ -108,7 +108,7 @@ G(x,y)=\min(x,y)-xy
 $$
 is real, symmetric and continuous, hence Hermitian and self-adjoint; the operator $T_G$ is the inverse of
 $-\frac{d^2}{dx^2}$ with the vanishing boundary conditions, so its eigenfunctions are
-$\varphi_n(x)=\sqrt2\sin(n\pi x)$ and its eigenvalues are $\lambda_n=1/(n^2\pi^2)>0$. The kernel is positive
+$\digamma_{\mathrm{map},n}(x)=\sqrt2\sin(n\pi x)$ and its eigenvalues are $\lambda_n=1/(n^2\pi^2)>0$. The kernel is positive
 definite, the expansion $\min(x,y)-xy=\sum_{n\geq1}\frac2{n^2\pi^2}\sin(n\pi x)\sin(n\pi y)$ converges
 absolutely and uniformly, and $\sum_n\lambda_n=1/6=\int_0^1G(x,x)\,dx$.
 
@@ -126,7 +126,7 @@ vanishing at $0$ and its mean.
 $T_K$ is a positive operator, its square root $T_K^{1/2}$ is the operator with eigenvalues
 $\sqrt{\lambda_n}$,
 $$
-T_K^{1/2}f=\sum_n\sqrt{\lambda_n}\langle f,\varphi_n\rangle\varphi_n ,
+T_K^{1/2}f=\sum_n\sqrt{\lambda_n}\langle f,\digamma_{\mathrm{map},n}\rangle\digamma_{\mathrm{map},n} ,
 $$
 and the pair $(T_K,T_K^{1/2})$ is the spectral square root of the positive kernel.
 
@@ -139,12 +139,12 @@ $T_K^{1/2}$ in general is *Analysis on Linear Spaces*, later in this Part.
 
 **Theorem (Mercer).** Let $X$ be a compact space with a finite measure $\mu$ and let $K$ be a continuous
 positive definite kernel on $X\times X$. Then the eigenvalues $\lambda_n$ are nonnegative, the eigenfunctions
-$\varphi_n$ may be taken continuous and orthonormal, and
+$\digamma_{\mathrm{map},n}$ may be taken continuous and orthonormal, and
 $$
-\boxed{\;K(x,y)=\sum_n\lambda_n\varphi_n(x)\overline{\varphi_n(y)}\;} ,
+\boxed{\;K(x,y)=\sum_n\lambda_n\digamma_{\mathrm{map},n}(x)\overline{\digamma_{\mathrm{map},n}(y)}\;} ,
 $$
 the series converging absolutely and uniformly on $X\times X$. In particular $K(x,x)\geq0$ for every $x$, and
-the convergence of the diagonal is the convergence of $\sum_n\lambda_n\lvert\varphi_n(x)\rvert^2$.
+the convergence of the diagonal is the convergence of $\sum_n\lambda_n\lvert\digamma_{\mathrm{map},n}(x)\rvert^2$.
 
 **Proof.** A continuous kernel on a compact space with a finite measure defines a compact self-adjoint
 operator with continuous eigenfunctions by the classical argument, and the nonnegative eigenvalues give the
@@ -163,7 +163,7 @@ $$
 H_K=T_K^{1/2}(L^2),\qquad
 \lVert T_K^{1/2}g\rVert_{H_K}=\lVert g\rVert_{L^2}\quad(g\perp\ker T_K) ,
 $$
-and, on the eigenfunctions, $H_K$ consists of the functions $f=\sum_na_n\varphi_n$ with
+and, on the eigenfunctions, $H_K$ consists of the functions $f=\sum_na_n\digamma_{\mathrm{map},n}$ with
 $\sum_n\lvert a_n\rvert^2/\lambda_n<\infty$, the sum over the nonzero eigenvalues,
 $$
 \lVert f\rVert_{H_K}^2=\sum_n\frac{\lvert a_n\rvert^2}{\lambda_n},
@@ -171,8 +171,8 @@ $$
 \langle f,K(\cdot,x)\rangle=f(x) .
 $$
 
-**Proof.** The functions $\sqrt{\lambda_n}\varphi_n$ for the nonzero eigenvalues form an orthonormal basis of
-$H_K$, so $H_K$ is the range of the map $g\mapsto\sum_n\sqrt{\lambda_n}\langle g,\varphi_n\rangle\varphi_n$
+**Proof.** The functions $\sqrt{\lambda_n}\digamma_{\mathrm{map},n}$ for the nonzero eigenvalues form an orthonormal basis of
+$H_K$, so $H_K$ is the range of the map $g\mapsto\sum_n\sqrt{\lambda_n}\langle g,\digamma_{\mathrm{map},n}\rangle\digamma_{\mathrm{map},n}$
 on the orthogonal complement of $\ker T_K$; the reproducing property is the expansion of the kernel, by the
 eigenfunction expansion of the previous section.
 
@@ -203,11 +203,11 @@ the reality of the sesquilinear form and equivalent to the Hermitian condition b
 $K^*(x,y)=\overline{K(y,x)}$; positivity of the operator is the positive definiteness of the kernel, and both
 are equivalent to the nonnegativity of the eigenvalues. A Hermitian Hilbert–Schmidt kernel has a real
 eigenvalue list tending to $0$ with an orthonormal eigenbasis, and the kernel is the expansion
-$K(x,y)=\sum_n\lambda_n\varphi_n(x)\overline{\varphi_n(y)}$ converging in $L^2$, with
+$K(x,y)=\sum_n\lambda_n\digamma_{\mathrm{map},n}(x)\overline{\digamma_{\mathrm{map},n}(y)}$ converging in $L^2$, with
 $\lVert K\rVert_{L^2}^2=\sum_n\lambda_n^2$. For a continuous positive definite kernel on a compact space the
 eigenvalues are nonnegative, the expansion converges absolutely and uniformly (Mercer's theorem) and the
 diagonal is nonnegative; the reproducing kernel Hilbert space is the range of the square root,
-$H_K=T_K^{1/2}(L^2)$, with the orthonormal basis $\sqrt{\lambda_n}\varphi_n$ and the norm
+$H_K=T_K^{1/2}(L^2)$, with the orthonormal basis $\sqrt{\lambda_n}\digamma_{\mathrm{map},n}$ and the norm
 $\sum_n\lvert a_n\rvert^2/\lambda_n$, and the trace identities
 $\operatorname{tr}T_K=\sum_n\lambda_n=\int K(x,x)d\mu$ and $\lVert K\rVert_{L^2}^2=\sum_n\lambda_n^2$ hold.
 The Green kernel $\min(x,y)-xy$ of the Dirichlet problem, with eigenvalues $1/(n^2\pi^2)$ and trace $1/6$,
@@ -221,8 +221,8 @@ owned by later articles.
 | $K^*$, Hermitian | $K^*(x,y)=\overline{K(y,x)}$, $K^*=K$ |
 | $T_K^\dagger=T_K$ | Self-adjointness of a Hermitian kernel |
 | positive definite kernel | $\sum_{i,j}\overline{c_i}c_jK(x_i,x_j)\geq0$ |
-| $\lambda_n$, $\varphi_n$ | Eigenvalues and orthonormal eigenfunctions, $T_K\varphi_n=\lambda_n\varphi_n$ |
-| $K(x,y)=\sum_n\lambda_n\varphi_n(x)\overline{\varphi_n(y)}$ | Eigenfunction expansion of the kernel |
+| $\lambda_n$, $\digamma_{\mathrm{map},n}$ | Eigenvalues and orthonormal eigenfunctions, $T_K\digamma_{\mathrm{map},n}=\lambda_n\digamma_{\mathrm{map},n}$ |
+| $K(x,y)=\sum_n\lambda_n\digamma_{\mathrm{map},n}(x)\overline{\digamma_{\mathrm{map},n}(y)}$ | Eigenfunction expansion of the kernel |
 | $T_K^{1/2}$ | Positive square root, eigenvalues $\sqrt{\lambda_n}$ |
 | $H_K=T_K^{1/2}(L^2)$ | Reproducing space as the range of the square root |
 | $\lVert f\rVert_{H_K}^2=\sum_n\lvert a_n\rvert^2/\lambda_n$ | Reproducing norm |

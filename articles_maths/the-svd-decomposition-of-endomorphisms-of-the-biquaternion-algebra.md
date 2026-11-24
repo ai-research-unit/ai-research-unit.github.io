@@ -206,10 +206,10 @@ The theorem is the engine of the article: the decomposition is this theorem appl
 $$
 \boldsymbol{x}(t)=\frac{\tilde V+t\tilde Y}{\lVert \tilde V+t\tilde Y\rVert},
 \qquad
-\varphi(t)=\frac{\langle H(\tilde V+t\tilde Y),\tilde V+t\tilde Y\rangle_{*}}{\lVert \tilde V+t\tilde Y\rVert^{2}} .
+\digamma_{\mathrm{map}}(t)=\frac{\langle H(\tilde V+t\tilde Y),\tilde V+t\tilde Y\rangle_{*}}{\lVert \tilde V+t\tilde Y\rVert^{2}} .
 $$
 
-The point $\boldsymbol{x}(t)$ lies on the sphere, so $\varphi$ has a maximum at $t=0$ and $\varphi'(0)=0$. The numerator is $\lambda+2t\operatorname{Re}\langle H(\tilde V),\tilde Y\rangle_{*}+t^{2}\langle H(\tilde Y),\tilde Y\rangle_{*}$ and the denominator $1+2t\operatorname{Re}\langle\tilde V,\tilde Y\rangle_{*}+t^{2}\lVert\tilde Y\rVert^{2}$, since $\lVert\tilde V\rVert=1$ and $\langle H(\tilde V),\tilde V\rangle_{*}=\lambda$. Differentiating the quotient at $t=0$ and using $\varphi'(0)=0$,
+The point $\boldsymbol{x}(t)$ lies on the sphere, so $\digamma_{\mathrm{map}}$ has a maximum at $t=0$ and $\digamma_{\mathrm{map}}'(0)=0$. The numerator is $\lambda+2t\operatorname{Re}\langle H(\tilde V),\tilde Y\rangle_{*}+t^{2}\langle H(\tilde Y),\tilde Y\rangle_{*}$ and the denominator $1+2t\operatorname{Re}\langle\tilde V,\tilde Y\rangle_{*}+t^{2}\lVert\tilde Y\rVert^{2}$, since $\lVert\tilde V\rVert=1$ and $\langle H(\tilde V),\tilde V\rangle_{*}=\lambda$. Differentiating the quotient at $t=0$ and using $\digamma_{\mathrm{map}}'(0)=0$,
 
 $$
 \operatorname{Re}\bigl\langle H(\tilde V)-\lambda\tilde V,\ \tilde Y\bigr\rangle_{*}=0 .

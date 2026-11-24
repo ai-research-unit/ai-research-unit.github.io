@@ -78,9 +78,9 @@ and the **determinant** is the alternating multilinear function of the columns n
 
 **Proof.** This is the Cayley–Hamilton theorem for $6\times6$ matrices; it follows from the adjugate identity $(tI-A)\operatorname{adj}(tI-A)=\chi_A(t)I$ evaluated at $t=A$, or from the triangular form over $\mathbb{C}$.
 
-**Corollary (the trace is the only invariant linear functional).** If $\varphi:M_6(\mathbb{C})\to\mathbb{C}$ is linear and $\varphi(AB)=\varphi(BA)$ for all $A,B$, then $\varphi=c\operatorname{tr}$ for some $c\in\mathbb{C}$.
+**Corollary (the trace is the only invariant linear functional).** If $\digamma_{\mathrm{map}}:M_6(\mathbb{C})\to\mathbb{C}$ is linear and $\digamma_{\mathrm{map}}(AB)=\digamma_{\mathrm{map}}(BA)$ for all $A,B$, then $\digamma_{\mathrm{map}}=c\operatorname{tr}$ for some $c\in\mathbb{C}$.
 
-**Proof.** The condition gives $\varphi([A,B])=0$, so $\varphi$ vanishes on $\mathfrak{sl}_6$. Since $M_6=\mathbb{C}I_6\oplus\mathfrak{sl}_6$ (§*The Commutator Subalgebra*), $\varphi$ is determined by its value on $I_6$, and $\operatorname{tr}$ is nonzero there.
+**Proof.** The condition gives $\digamma_{\mathrm{map}}([A,B])=0$, so $\digamma_{\mathrm{map}}$ vanishes on $\mathfrak{sl}_6$. Since $M_6=\mathbb{C}I_6\oplus\mathfrak{sl}_6$ (§*The Commutator Subalgebra*), $\digamma_{\mathrm{map}}$ is determined by its value on $I_6$, and $\operatorname{tr}$ is nonzero there.
 
 ## The Centre and the Simplicity
 

@@ -62,7 +62,7 @@ $$
 
 The last coefficient is an integer; it is the multinomial coefficient counting the partitions of a set of $mn$ labelled elements into $m$ unordered blocks of size $n$, and the verification that it is integral is the content of the proposition below. The restriction $m, n \geq 1$ is necessary: for $n = 0$ one has $\gamma_0(x) = 1 \notin I$, so the composition is not defined. The elements $\gamma_n(x)$ are called the **divided powers** of $x$; we also write $x^{(n)}$ for $\gamma_n(x)$ and $x^{(n)} = 0$ for $n < 0$.
 
-A **divided power algebra** over $R$ is a graded commutative $R$-algebra $A$ with $A_0 = R$, equipped with a divided power structure such that $\gamma_n(A_1) \subseteq A_n$. A **morphism of divided power algebras** is a graded $R$-algebra homomorphism $\phi$ commuting with the divided powers, $\phi(\gamma_n(x)) = \gamma_n(\phi(x))$.
+A **divided power algebra** over $R$ is a graded commutative $R$-algebra $A$ with $A_0 = R$, equipped with a divided power structure such that $\gamma_n(A_1) \subseteq A_n$. A **morphism of divided power algebras** is a graded $R$-algebra homomorphism $\digamma_{\mathrm{map}}$ commuting with the divided powers, $\digamma_{\mathrm{map}}(\gamma_n(x)) = \gamma_n(\digamma_{\mathrm{map}}(x))$.
 
 **Proposition.** The coefficient $\dfrac{(mn)!}{m!\,(n!)^m}$ is a positive integer for all $m, n \geq 1$.
 

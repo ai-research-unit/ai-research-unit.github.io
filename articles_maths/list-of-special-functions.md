@@ -24,7 +24,7 @@ This article lists the special functions the corpus introduces. A special functi
 |---|---|---|
 | the gamma function $\Gamma$ | $\Gamma(z+1) = z\Gamma(z)$, $\Gamma(1) = 1$; the integral $\int_0^\infty t^{z-1}\exp(-t)dt$ | *Real Special Functions*; *Complex Special Functions* |
 | the beta function $B$ | $B(x,y) = \Gamma(x)\Gamma(y)/\Gamma(x+y)$; the integral over the simplex | *Real Special Functions* |
-| the digamma function $\psi$ | $\psi = \Gamma'/\Gamma$, the logarithmic derivative of the gamma function | *Dual-Numbers Special Functions* |
+| the digamma function $Ξ_{\mathrm{wfn}}$ | $Ξ_{\mathrm{wfn}} = \Gamma'/\Gamma$, the logarithmic derivative of the gamma function | *Dual-Numbers Special Functions* |
 | the error function $\operatorname{erf}$ | $\operatorname{erf}' = 2\exp(-x^2)/\sqrt\pi$; the incomplete gamma of order $1/2$ | *Real Special Functions*; *Complex Special Functions* |
 | the complementary and imaginary error functions | the complements and the analytic continuation of $\operatorname{erf}$ | *Real Special Functions* |
 | the Dawson function | $F' + 2xF = 1$; the imaginary error function | *Real Special Functions* |

@@ -3,11 +3,11 @@
 
 ## Introduction
 
-Analytic number theory is the study of the integers by the methods of complex analysis. The bridge between the two subjects is the Euler product: the identity $\zeta(s) = \prod_p(1-p^{-s})^{-1}$, valid for $\Re s>1$, converts a statement about the distribution of the primes into a statement about the singularities and the zeros of a meromorphic function, and the whole of the classical theory is the exploitation of that conversion. The mechanism is exact and it is the following: the logarithmic derivative $-\zeta'(s)/\zeta(s)$ is the Dirichlet series $\sum_n\Lambda(n)n^{-s}$ of the von Mangoldt function, the partial sums of that series are the Chebyshev function $\psi(x)$, and Cauchy's formula applied to the logarithmic derivative expresses $\psi(x)$ as a contour integral whose main term comes from the pole of $\zeta$ at $s=1$ and whose error term is a sum over the zeros of $\zeta$. Every quantitative theorem about the distribution of the primes is a statement about that sum.
+Analytic number theory is the study of the integers by the methods of complex analysis. The bridge between the two subjects is the Euler product: the identity $\zeta(s) = \prod_p(1-p^{-s})^{-1}$, valid for $\Re s>1$, converts a statement about the distribution of the primes into a statement about the singularities and the zeros of a meromorphic function, and the whole of the classical theory is the exploitation of that conversion. The mechanism is exact and it is the following: the logarithmic derivative $-\zeta'(s)/\zeta(s)$ is the Dirichlet series $\sum_n\Lambda(n)n^{-s}$ of the von Mangoldt function, the partial sums of that series are the Chebyshev function $Ξ_{\mathrm{wfn}}(x)$, and Cauchy's formula applied to the logarithmic derivative expresses $Ξ_{\mathrm{wfn}}(x)$ as a contour integral whose main term comes from the pole of $\zeta$ at $s=1$ and whose error term is a sum over the zeros of $\zeta$. Every quantitative theorem about the distribution of the primes is a statement about that sum.
 
 This article develops the machinery. It defines the arithmetic functions of the classical theory, proves the equivalences between the several ways of stating the prime number theorem, records the Mertens estimates and the Chebyshev bounds, proves Perron's formula and the explicit formula of von Mangoldt, states the Riemann–von Mangoldt zero-counting formula and the zero-free region of de la Vallée Pouss, and treats the distribution of the primes in arithmetic progressions with the theorems of Dirichlet, Siegel–Walfisz, Bombieri–Vinogradov and Linnik. It closes with the other methods of the subject: the sieve, in the forms of Brun and Selberg with the parity phenomenon, and the circle method of Hardy–Littlewood and Vinogradov. The final assembly — the analytic proof of the prime number theorem from the zero-free region, and the consequences of the hypothesis that all the nontrivial zeros lie on the critical line — belong andwritten in parallel; the zeta and $L$-functions that are analysed here are those of *Zeta Functions* and *L-Functions*, written above it.
 
-The analytic facts used from the theory of one complex variable — Cauchy's theorem, the residue calculus, the Phragmén–Lindelöf principle, the Hadamard factorisation of entire functions of finite order and the Stirling estimate for the Gamma function — are standard mathematics, and are cited to the standard literature rather than developed; the per-system development of that theory is the subject of the synthetic studyin which the number system is fixed, and it is deferred to it. The prerequisites are *Zeta Functions* for the Riemann and Dedekind zeta functions, their Euler products, their functional equations and Landau's theorem, *L-Functions* for the Dirichlet characters, the Dirichlet $L$-functions and their nonvanishing at $1$, *Measure Theory and Integration* for the interchange of limits, *Absolute Values, Valuations and Completions* for the local computations, and *Algebraic Number Theory* and *Rings* for the arithmetic. Throughout, $p$ denotes a prime, $\pi(x)$ the number of primes $\leq x$, $\psi(x)$ and $\vartheta_{\mathrm{chb}}(x)$ the Chebyshev functions, $\Lambda$ the von Mangoldt function, $\mu$ the Möbius function and $\varphi$ the Euler function; $\rho = \beta + i\gamma$ runs over the nontrivial zeros of the zeta function, and $N(T)$ counts those with $0<\gamma\leq T$. The notation of *Zeta Functions* is used without restatement.
+The analytic facts used from the theory of one complex variable — Cauchy's theorem, the residue calculus, the Phragmén–Lindelöf principle, the Hadamard factorisation of entire functions of finite order and the Stirling estimate for the Gamma function — are standard mathematics, and are cited to the standard literature rather than developed; the per-system development of that theory is the subject of the synthetic studyin which the number system is fixed, and it is deferred to it. The prerequisites are *Zeta Functions* for the Riemann and Dedekind zeta functions, their Euler products, their functional equations and Landau's theorem, *L-Functions* for the Dirichlet characters, the Dirichlet $L$-functions and their nonvanishing at $1$, *Measure Theory and Integration* for the interchange of limits, *Absolute Values, Valuations and Completions* for the local computations, and *Algebraic Number Theory* and *Rings* for the arithmetic. Throughout, $p$ denotes a prime, $\pi(x)$ the number of primes $\leq x$, $Ξ_{\mathrm{wfn}}(x)$ and $\vartheta_{\mathrm{chb}}(x)$ the Chebyshev functions, $\Lambda$ the von Mangoldt function, $\mu$ the Möbius function and $\digamma_{\mathrm{map}}$ the Euler function; $\rho = \beta + i\gamma$ runs over the nontrivial zeros of the zeta function, and $N(T)$ counts those with $0<\gamma\leq T$. The notation of *Zeta Functions* is used without restatement.
 
 ## Arithmetic Functions and Summation
 
@@ -15,17 +15,17 @@ The analytic facts used from the theory of one complex variable — Cauchy's the
 
 **Definition.** The **von Mangoldt function** is $\Lambda(n) = \log p$ if $n$ is a positive power of the prime $p$ and $0$ otherwise; the **Möbius function** is $\mu(n) = (-1)^k$ if $n$ is a product of $k$ distinct primes and $0$ if $n$ is divisible by a square; the **Chebyshev functions** are
 $$
-\vartheta_{\mathrm{chb}}(x) = \sum_{p\leq x}\log p, \qquad \psi(x) = \sum_{n\leq x}\Lambda(n) = \sum_{p^k\leq x}\log p .
+\vartheta_{\mathrm{chb}}(x) = \sum_{p\leq x}\log p, \qquad Ξ_{\mathrm{wfn}}(x) = \sum_{n\leq x}\Lambda(n) = \sum_{p^k\leq x}\log p .
 $$
 **Proposition (the logarithmic derivative and the Euler product).** For $\Re s>1$,
 $$
 \sum_{n\geq1}\frac{\Lambda(n)}{n^s} = -\frac{\zeta'(s)}{\zeta(s)}, \qquad
 \sum_{n\geq1}\frac{\mu(n)}{n^s} = \frac{1}{\zeta(s)}, \qquad
-\sum_{n\geq1}\frac{\varphi(n)}{n^s} = \frac{\zeta(s-1)}{\zeta(s)},
+\sum_{n\geq1}\frac{\digamma_{\mathrm{tot}}(n)}{n^s} = \frac{\zeta(s-1)}{\zeta(s)},
 $$
 and the corresponding Euler products converge absolutely and locally uniformly in the half-plane.
 
-**Proof.** The second and third identities are the multiplicative convolutions $\mu * 1 = \varepsilon$ and $\varphi * 1 = \mathrm{id}$, expanded as Dirichlet series; the first is obtained by taking the logarithmic derivative of the Euler product, term by term.
+**Proof.** The second and third identities are the multiplicative convolutions $\mu * 1 = \varepsilon$ and $\digamma_{\mathrm{map}} * 1 = \mathrm{id}$, expanded as Dirichlet series; the first is obtained by taking the logarithmic derivative of the Euler product, term by term.
 
 **Theorem (Abel summation).** Let $a_n$ be a sequence and $A(x) = \sum_{n\leq x}a_n$. For a continuously differentiable $f$ on $[1,x]$,
 $$
@@ -39,7 +39,7 @@ $$
 $$
 where $\gamma$ is Euler's constant and $M$ is the Mertens constant.
 
-**Proof sketch.** The first estimate is Abel summation applied to the Chebyshev bounds for $\psi$ of the next section; the second is the logarithm of the product, expressed as $-\sum_p\log(1-1/p) = \sum_p1/p + O(1)$, combined with the first and with the divergence of $\sum 1/p$; the third refines the same computation with one further term, and the constant is the limit of $\sum_{p\le x}1/p - \log\log x$.
+**Proof sketch.** The first estimate is Abel summation applied to the Chebyshev bounds for $Ξ_{\mathrm{wfn}}$ of the next section; the second is the logarithm of the product, expressed as $-\sum_p\log(1-1/p) = \sum_p1/p + O(1)$, combined with the first and with the divergence of $\sum 1/p$; the third refines the same computation with one further term, and the constant is the limit of $\sum_{p\le x}1/p - \log\log x$.
 
 ### Equivalent Forms of the Prime Number Theorem
 
@@ -47,7 +47,7 @@ where $\gamma$ is Euler's constant and $M$ is the Mertens constant.
 
 **(a)** $\pi(x)\sim \dfrac{x}{\log x}$;
 
-**(b)** $\psi(x)\sim x$;
+**(b)** $Ξ_{\mathrm{wfn}}(x)\sim x$;
 
 **(c)** $\vartheta_{\mathrm{chb}}(x)\sim x$;
 
@@ -55,7 +55,7 @@ where $\gamma$ is Euler's constant and $M$ is the Mertens constant.
 
 **(e)** $\sum_{n\leq x}\Lambda(n) = x + o(x)$.
 
-**Proof.** That (b) and (e) are the same statement is the definition. For (b) implies (c): $\psi(x) = \vartheta_{\mathrm{chb}}(x) + \vartheta_{\mathrm{chb}}(x^{1/2}) + \vartheta_{\mathrm{chb}}(x^{1/3})+\dots$ and the sum of the higher terms is $O(x^{1/2}\log x)=o(x)$, while $\psi(x)\geq\vartheta_{\mathrm{chb}}(x)$. For the equivalence of (a) and (c), Abel summation with the indicator of the primes as the coefficients gives the two identities
+**Proof.** That (b) and (e) are the same statement is the definition. For (b) implies (c): $Ξ_{\mathrm{wfn}}(x) = \vartheta_{\mathrm{chb}}(x) + \vartheta_{\mathrm{chb}}(x^{1/2}) + \vartheta_{\mathrm{chb}}(x^{1/3})+\dots$ and the sum of the higher terms is $O(x^{1/2}\log x)=o(x)$, while $Ξ_{\mathrm{wfn}}(x)\geq\vartheta_{\mathrm{chb}}(x)$. For the equivalence of (a) and (c), Abel summation with the indicator of the primes as the coefficients gives the two identities
 $$
 \vartheta_{\mathrm{chb}}(x) = \pi(x)\log x - \int_2^x\frac{\pi(t)}{t}\,dt, \qquad \pi(x) = \frac{\vartheta_{\mathrm{chb}}(x)}{\log x} + \int_2^x\frac{\vartheta_{\mathrm{chb}}(t)}{t\log^2t}\,dt ;
 $$
@@ -63,7 +63,7 @@ if $\pi(x)\sim x/\log x$ then the integral in the first is $(1+o(1))x/\log x$, s
 
 **Theorem (Chebyshev's bounds; Bertrand's postulate).** There are constants $0<c_1<c_2$ with
 $$
-c_1x \leq \psi(x) \leq c_2 x \qquad (x \geq 2),
+c_1x \leq Ξ_{\mathrm{wfn}}(x) \leq c_2 x \qquad (x \geq 2),
 $$
 and consequently for every $n$ there is a prime between $n$ and $2n$.
 
@@ -87,7 +87,7 @@ the integral taken over the vertical line and interpreted as the limit of the in
 
 **Theorem (von Mangoldt's explicit formula).** For $x>1$ not a prime power,
 $$
-\boxed{\;\psi(x) = x - \sum_{\rho}\frac{x^{\rho}}{\rho} - \log 2\pi - \frac12\log\bigl(1-x^{-2}\bigr)\;},
+\boxed{\;Ξ_{\mathrm{wfn}}(x) = x - \sum_{\rho}\frac{x^{\rho}}{\rho} - \log 2\pi - \frac12\log\bigl(1-x^{-2}\bigr)\;},
 $$
 the sum being taken over the nontrivial zeros of $\zeta$ in the sense of the symmetric limit $\lim_{T\to\infty}\sum_{\lvert\gamma\rvert\leq T}$, which converges.
 
@@ -109,7 +109,7 @@ $$
 $$
 Consequently $\zeta$ has no zero on the line $\Re s = 1$, the logarithmic derivative $-\zeta'/\zeta$ is bounded in a region to the left of that line apart from the pole at $s=1$, and the explicit formula yields
 $$
-\boxed{\;\psi(x) = x + O\bigl(x\exp(-c'\sqrt{\log x})\bigr)\;}
+\boxed{\;Ξ_{\mathrm{wfn}}(x) = x + O\bigl(x\exp(-c'\sqrt{\log x})\bigr)\;}
 $$
 for a positive constant $c'$; in particular $\pi(x)\sim x/\log x$.
 
@@ -121,19 +121,19 @@ for a positive constant $c'$; in particular $\pi(x)\sim x/\log x$.
 
 **Theorem (Dirichlet).** For every $a$ with $(a,q)=1$ the progression $a \bmod q$ contains infinitely many primes; more precisely
 $$
-\pi(x;q,a) \sim \frac{1}{\varphi(q)}\frac{x}{\log x} \qquad (x\to\infty,\ q \text{ fixed}).
+\pi(x;q,a) \sim \frac{1}{\digamma_{\mathrm{map}}(q)}\frac{x}{\log x} \qquad (x\to\infty,\ q \text{ fixed}).
 $$
-**Proof sketch.** The first statement is the nonvanishing $L(1,\chi)\neq0$ of *L-Functions* together with the orthogonality relations, which write the sum over the primes in the progression as an average of the logarithmic derivatives of the $L$-functions $L(s,\chi)$; the asymptotic follows by the same argument with the residue of the pole at $s=1$ of the principal term, which is $\frac1{\varphi(q)}$ times the residue of $\zeta$.
+**Proof sketch.** The first statement is the nonvanishing $L(1,\chi)\neq0$ of *L-Functions* together with the orthogonality relations, which write the sum over the primes in the progression as an average of the logarithmic derivatives of the $L$-functions $L(s,\chi)$; the asymptotic follows by the same argument with the residue of the pole at $s=1$ of the principal term, which is $\frac1{\digamma_{\mathrm{map}}(q)}$ times the residue of $\zeta$.
 
 **Theorem (Siegel–Walfisz).** For every $A>0$ there is a constant $c_A>0$, ineffective because it depends on a possible exceptional zero, such that
 $$
-\pi(x;q,a) = \frac{\mathrm{Li}(x)}{\varphi(q)}\Bigl(1 + O\bigl(\exp(-c_A\sqrt{\log x})\bigr)\Bigr)
+\pi(x;q,a) = \frac{\mathrm{Li}(x)}{\digamma_{\mathrm{map}}(q)}\Bigl(1 + O\bigl(\exp(-c_A\sqrt{\log x})\bigr)\Bigr)
 $$
 uniformly for $q \leq (\log x)^A$.
 
 **Theorem (Bombieri–Vinogradov).** For every $A>0$,
 $$
-\sum_{q\leq x^{1/2}(\log x)^{-A}}\ \max_{(a,q)=1}\ \Bigl\lvert \pi(x;q,a) - \frac{\mathrm{Li}(x)}{\varphi(q)}\Bigr\rvert \ \ll_A\ \frac{x}{(\log x)^A},
+\sum_{q\leq x^{1/2}(\log x)^{-A}}\ \max_{(a,q)=1}\ \Bigl\lvert \pi(x;q,a) - \frac{\mathrm{Li}(x)}{\digamma_{\mathrm{map}}(q)}\Bigr\rvert \ \ll_A\ \frac{x}{(\log x)^A},
 $$
 so that the Siegel–Walfisz approximation holds on average for moduli up to $x^{1/2}$.
 
@@ -167,9 +167,9 @@ and analyses the integral by decomposing the circle into the arcs near rational 
 
 ## Summary
 
-Analytic number theory converts the distribution of the primes into the analysis of the zeta and $L$-functions. The von Mangoldt function satisfies $-\zeta'(s)/\zeta(s) = \sum\Lambda(n)n^{-s}$, its partial sums are the Chebyshev function $\psi(x)$, and Abel summation together with the Euler product gives the Mertens estimates and the Chebyshev bounds $\psi(x)\asymp x$, from which Bertrand's postulate follows. The statements $\pi(x)\sim x/\log x$, $\psi(x)\sim x$, $\vartheta_{\mathrm{chb}}(x)\sim x$ and $p_n\sim n\log n$ are equivalent, and the proof of any of them is the prime number theorem, whose analytic proof belongs to *The Prime Number Theorem*.
+Analytic number theory converts the distribution of the primes into the analysis of the zeta and $L$-functions. The von Mangoldt function satisfies $-\zeta'(s)/\zeta(s) = \sum\Lambda(n)n^{-s}$, its partial sums are the Chebyshev function $Ξ_{\mathrm{wfn}}(x)$, and Abel summation together with the Euler product gives the Mertens estimates and the Chebyshev bounds $Ξ_{\mathrm{wfn}}(x)\asymp x$, from which Bertrand's postulate follows. The statements $\pi(x)\sim x/\log x$, $Ξ_{\mathrm{wfn}}(x)\sim x$, $\vartheta_{\mathrm{chb}}(x)\sim x$ and $p_n\sim n\log n$ are equivalent, and the proof of any of them is the prime number theorem, whose analytic proof belongs to *The Prime Number Theorem*.
 
-The two formulas that organise the subject are Perron's formula, which recovers the partial sums of a Dirichlet series from a contour integral of the series, and the explicit formula of von Mangoldt, which evaluates $\psi(x)$ as $x$ minus a sum over the nontrivial zeros of $\zeta$ minus elementary terms; the version of the explicit formula obtained by shifting the contour is the exact sense in which the zeros of $\zeta$ govern the distribution of the primes. The zeros have density $\frac{1}{2\pi}\log\frac{T}{2\pi}$ near height $T$, by the Riemann–von Mangoldt formula, and they avoid a region to the left of the line $\Re s=1$, by the theorem of de la Vallée Poussin; that zero-free region is precisely the input of the analytic proof of the prime number theorem, with the error term $O(x\exp(-c\sqrt{\log x}))$. For the primes in an arithmetic progression the same analysis applies to the Dirichlet $L$-functions: the nonvanishing at $1$ gives Dirichlet's theorem and the prime number theorem in progressions, the Siegel–Walfisz theorem gives uniformity in the modulus at the cost of an ineffective constant, the Bombieri–Vinogradov theorem gives the same quality of approximation on average for moduli up to $\sqrt x$, and Linnik's theorem bounds the least prime in a progression polynomially in the modulus. The sieve methods, in the forms of Brun and Selberg, and the circle method of Hardy–Littlewood and Vinogradov are the other two engines of the subject: the first counts integers with restricted prime factors and yields Brun's theorem and, with distributional input, bounded gaps between primes; the second counts solutions of additive equations and yields Waring's problem and Vinogradov's three-primes theorem.
+The two formulas that organise the subject are Perron's formula, which recovers the partial sums of a Dirichlet series from a contour integral of the series, and the explicit formula of von Mangoldt, which evaluates $Ξ_{\mathrm{wfn}}(x)$ as $x$ minus a sum over the nontrivial zeros of $\zeta$ minus elementary terms; the version of the explicit formula obtained by shifting the contour is the exact sense in which the zeros of $\zeta$ govern the distribution of the primes. The zeros have density $\frac{1}{2\pi}\log\frac{T}{2\pi}$ near height $T$, by the Riemann–von Mangoldt formula, and they avoid a region to the left of the line $\Re s=1$, by the theorem of de la Vallée Poussin; that zero-free region is precisely the input of the analytic proof of the prime number theorem, with the error term $O(x\exp(-c\sqrt{\log x}))$. For the primes in an arithmetic progression the same analysis applies to the Dirichlet $L$-functions: the nonvanishing at $1$ gives Dirichlet's theorem and the prime number theorem in progressions, the Siegel–Walfisz theorem gives uniformity in the modulus at the cost of an ineffective constant, the Bombieri–Vinogradov theorem gives the same quality of approximation on average for moduli up to $\sqrt x$, and Linnik's theorem bounds the least prime in a progression polynomially in the modulus. The sieve methods, in the forms of Brun and Selberg, and the circle method of Hardy–Littlewood and Vinogradov are the other two engines of the subject: the first counts integers with restricted prime factors and yields Brun's theorem and, with distributional input, bounded gaps between primes; the second counts solutions of additive equations and yields Waring's problem and Vinogradov's three-primes theorem.
 
 ## Summary of Notation
 
@@ -179,8 +179,8 @@ The two formulas that organise the subject are Perron's formula, which recovers 
 | $\pi(x)$ | Number of primes $\leq x$ |
 | $\pi(x;q,a)$ | Number of primes $\leq x$ congruent to $a$ modulo $q$ |
 | $\Lambda(n)$ | Von Mangoldt function, $\log p$ at prime powers, $0$ otherwise |
-| $\mu(n)$, $\varphi(n)$ | Möbius function, Euler function |
-| $\vartheta_{\mathrm{chb}}(x)$, $\psi(x)$ | Chebyshev functions $\sum_{p\leq x}\log p$, $\sum_{n\leq x}\Lambda(n)$ |
+| $\mu(n)$, $\digamma_{\mathrm{tot}}(n)$ | Möbius function, Euler function |
+| $\vartheta_{\mathrm{chb}}(x)$, $Ξ_{\mathrm{wfn}}(x)$ | Chebyshev functions $\sum_{p\leq x}\log p$, $\sum_{n\leq x}\Lambda(n)$ |
 | $A(x)$ | Partial sums $\sum_{n\leq x}a_n$ |
 | $\rho = \beta+i\gamma$ | Nontrivial zero of $\zeta$ |
 | $N(T)$ | Number of nontrivial zeros with $0<\gamma\leq T$ |

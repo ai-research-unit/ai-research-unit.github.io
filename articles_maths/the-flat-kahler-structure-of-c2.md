@@ -120,19 +120,19 @@ The group is the semidirect product $\mathbb{C}^2\rtimes\mathrm{U}(2)$, of real 
 
 ## The Kähler Potential and the Canonical Form
 
-**The flat Kähler form has the global potential $\varphi=\frac12\lVert Q\rVert^2$, and the metric is the Hessian of $\varphi$; the canonical bundle is trivial and the space is Calabi–Yau.**
+**The flat Kähler form has the global potential $\digamma_{\mathrm{map}}=\frac12\lVert Q\rVert^2$, and the metric is the Hessian of $\digamma_{\mathrm{map}}$; the canonical bundle is trivial and the space is Calabi–Yau.**
 
 **Proposition (the potential).** The function
 $$
-\varphi(Q)=\frac12\lVert Q\rVert^2=\frac12\left(\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2\right)
+\digamma_{\mathrm{map}}(Q)=\frac12\lVert Q\rVert^2=\frac12\left(\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2\right)
 $$
 satisfies
 $$
-\Omega=i\,\partial\bar\partial\varphi.
+\Omega=i\,\partial\bar\partial\digamma_{\mathrm{map}}.
 $$
-Conversely, every Kähler potential of the flat form differs from $\varphi$ by a pluriharmonic function.
+Conversely, every Kähler potential of the flat form differs from $\digamma_{\mathrm{map}}$ by a pluriharmonic function.
 
-*Proof.* The mixed second derivatives of $\varphi$ are $\partial^2\varphi/\partial Q_{\blacktriangle}\partial\overline{Q}_{\blacktriangle}=\partial^2\varphi/\partial Q_{\blacktriangledown}\partial\overline{Q}_{\blacktriangledown}=\frac12$ and the mixed ones vanish, so $i\partial\bar\partial\varphi=\frac{i}{2}(dQ_{\blacktriangle}\wedge d\overline{Q}_{\blacktriangle}+dQ_{\blacktriangledown}\wedge d\overline{Q}_{\blacktriangledown})=\Omega$. If $\varphi'$ is another potential, then $\partial\bar\partial(\varphi'-\varphi)=0$, so $\varphi'-\varphi$ is pluriharmonic.
+*Proof.* The mixed second derivatives of $\digamma_{\mathrm{map}}$ are $\partial^2\digamma_{\mathrm{map}}/\partial Q_{\blacktriangle}\partial\overline{Q}_{\blacktriangle}=\partial^2\digamma_{\mathrm{map}}/\partial Q_{\blacktriangledown}\partial\overline{Q}_{\blacktriangledown}=\frac12$ and the mixed ones vanish, so $i\partial\bar\partial\digamma_{\mathrm{map}}=\frac{i}{2}(dQ_{\blacktriangle}\wedge d\overline{Q}_{\blacktriangle}+dQ_{\blacktriangledown}\wedge d\overline{Q}_{\blacktriangledown})=\Omega$. If $\digamma_{\mathrm{map}}'$ is another potential, then $\partial\bar\partial(\digamma_{\mathrm{map}}'-\digamma_{\mathrm{map}})=0$, so $\digamma_{\mathrm{map}}'-\digamma_{\mathrm{map}}$ is pluriharmonic.
 
 **Proposition (the metric as a Hessian).** In the real coordinates, the metric is the Hessian of $\frac12\lVert Q\rVert^2$, and the Kähler form is the associated $(1,1)$-form. The form $\Omega$ is parallel for the Levi-Civita connection, and the pair $(g,\Omega)$ is a Kähler structure.
 
@@ -162,7 +162,7 @@ The holomorphic isometries are the affine maps $Q\mapsto AQ+Q_0$ with $A\in\math
 | $J$ | the complex structure, $J^2=-I$ |
 | $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$ | the Hermitian form |
 | $B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ | the complex bilinear form |
-| $\varphi=\frac12\lVert Q\rVert^2$ | the Kähler potential, $\Omega=i\partial\bar\partial\varphi$ |
+| $\digamma_{\mathrm{map}}=\frac12\lVert Q\rVert^2$ | the Kähler potential, $\Omega=i\partial\bar\partial\digamma_{\mathrm{map}}$ |
 | $\omega=dQ_{\blacktriangle}\wedge dQ_{\blacktriangledown}$ | the holomorphic symplectic form and volume form |
 | $\mathbb{C}^2\rtimes\mathrm{U}(2)$ | the group of holomorphic isometries |
 | $\mathbb{C}^2\rtimes\mathrm{O}(4)$ | the full isometry group |

@@ -176,7 +176,7 @@ $$
 \operatorname{gal}(\mathbb{Q}(\omega_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times,
 $$
 
-a group of order $\varphi(n)$, where $\varphi$ is the Euler totient. For $n = p$ a prime this group is cyclic of order $p - 1$.
+a group of order $\digamma_{\mathrm{tot}}(n)$, where $\digamma_{\mathrm{map}}$ is the Euler totient. For $n = p$ a prime this group is cyclic of order $p - 1$.
 
 **Example (finite fields).** For $f = x^{p^n} - x$ over $\mathbb{F}_p$, the splitting field is $\mathbb{F}_{p^n}$ and $G_f = \operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n\mathbb{Z}$ by *Finite Fields*.
 
@@ -248,7 +248,7 @@ A polynomial is solvable by radicals over a field of characteristic $0$ exactly 
 | $\mathbb{Q}(\sqrt[3]{2},\omega_3)/\mathbb{Q}$ | $6$ | $S_3$ | yes |
 | $\mathbb{Q}(\sqrt2,\sqrt3)/\mathbb{Q}$ | $4$ | $(\mathbb{Z}/2)^2$ | yes |
 | $\mathbb{Q}(\sqrt[4]{2},i)/\mathbb{Q}$ | $8$ | $D_4$ | yes |
-| $\mathbb{Q}(\omega_n)/\mathbb{Q}$ | $\varphi(n)$ | $(\mathbb{Z}/n)^\times$ | yes |
+| $\mathbb{Q}(\omega_n)/\mathbb{Q}$ | $\digamma_{\mathrm{tot}}(n)$ | $(\mathbb{Z}/n)^\times$ | yes |
 | $\mathbb{F}_{p^n}/\mathbb{F}_p$ | $n$ | $\mathbb{Z}/n$ | yes |
 
 ## Summary of Notation
@@ -265,9 +265,9 @@ A polynomial is solvable by radicals over a field of characteristic $0$ exactly 
 | $\Delta(f)$ | Discriminant $\prod_{i<j}(\alpha_i - \alpha_j)^2$ |
 | $D_4$ | Dihedral group of order $8$ |
 | $\omega_n$ | Primitive $n$-th root of unity |
-| $\varphi(n)$ | Euler totient |
+| $\digamma_{\mathrm{tot}}(n)$ | Euler totient |
 | $\overline{F}$ | Algebraic closure of $F$ |
-| $\varphi(x) = x^p$ | Frobenius map |
+| $\digamma_{\mathrm{map}}(x) = x^p$ | Frobenius map |
 | $H \trianglelefteq G$ | $H$ a normal subgroup of $G$ |
 | $[G:H]$ | Index of a subgroup |
 | $n_i$, $\alpha_i$ | Radical data: $\alpha_i^{n_i} \in K_{i-1}$ |

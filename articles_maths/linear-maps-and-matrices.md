@@ -157,12 +157,12 @@ Rank has a characterisation by factorisation that is often the cleanest.
 
 **Definition.** The **dual space** of $V$ is $V^*=\operatorname{Hom}_F(V,F)$, and the **dual basis** of a basis $v_1,\dots,v_n$ is the basis $\check v_1,\dots,\check v_n$ of $V^*$ defined by $\check v_i(v_j)=\delta_{ij}$.
 
-The dual basis is a basis, so $\dim_F V^*=\dim_F V$, and the evaluation map $V \to V^{**}$, $v \mapsto (\varphi \mapsto \varphi(v))$, is an isomorphism in finite dimension. This is a finite-dimensional accident: for an infinite-dimensional space the evaluation is injective and not surjective.
+The dual basis is a basis, so $\dim_F V^*=\dim_F V$, and the evaluation map $V \to V^{**}$, $v \mapsto (\digamma_{\mathrm{map}} \mapsto \digamma_{\mathrm{map}}(v))$, is an isomorphism in finite dimension. This is a finite-dimensional accident: for an infinite-dimensional space the evaluation is injective and not surjective.
 
 **Definition.** For linear $T:V \to W$, the **dual map** (or transpose) is
 
 $$
-T^*:W^* \to V^*, \qquad T^*(\varphi)=\varphi \circ T .
+T^*:W^* \to V^*, \qquad T^*(\digamma_{\mathrm{map}})=\digamma_{\mathrm{map}} \circ T .
 $$
 
 The map $T \mapsto T^*$ is linear and reverses composition: $(TS)^*=S^*T^*$. If $A$ is the matrix of $T$ in bases $\mathcal{B},\mathcal{C}$, then the matrix of $T^*$ in the dual bases $\mathcal{C}^*,\mathcal{B}^*$ is $A^{\mathsf{T}}$, because
@@ -175,7 +175,7 @@ Hence the transpose operation on matrices is the coordinate form of the dual map
 
 ### The Annihilator
 
-For a subspace $U \subseteq V$ let $U^0=\{\varphi \in V^* : \varphi|_U=0\}$, the **annihilator**. Then $\dim_F U+\dim_F U^0=\dim_F V$, and
+For a subspace $U \subseteq V$ let $U^0=\{\digamma_{\mathrm{map}} \in V^* : \digamma_{\mathrm{map}}|_U=0\}$, the **annihilator**. Then $\dim_F U+\dim_F U^0=\dim_F V$, and
 
 $$
 \ker T^*=(\operatorname{im}T)^0, \qquad \operatorname{im}T^*=(\ker T)^0 .
@@ -272,7 +272,7 @@ A linear system $Ax=b$ is consistent exactly when $\operatorname{rk}A=\operatorn
 | $P^{-1}AP$ | similar matrices |
 | $F^r$, $\operatorname{diag}(I_r,0)$ | normal form of a matrix under row and column operations |
 | $A^{\mathsf{T}}$ | transpose matrix, matrix of the dual map |
-| $T^*$ | dual map, $T^*(\varphi)=\varphi \circ T$ |
+| $T^*$ | dual map, $T^*(\digamma_{\mathrm{map}})=\digamma_{\mathrm{map}} \circ T$ |
 | $V^*$, $\check v_i$ | dual space and dual basis, $\check v_i(v_j)=\delta_{ij}$ |
 | $U^0$ | annihilator of a subspace |
 | $\delta_{ij}$ | Kronecker delta |

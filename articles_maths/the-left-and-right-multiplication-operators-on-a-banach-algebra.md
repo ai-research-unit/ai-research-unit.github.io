@@ -101,7 +101,7 @@ is an isometric algebra isomorphism onto the bounded two-sided $A$-module endomo
 
 ## Examples
 
-**Example ($C(K)$ and its module structure).** For $A = C(K)$ with $K$ compact Hausdorff, $\mathcal{M}(A) = \{f \mapsto \phi f : \phi \in C(K)\} = \lambda(A)$, the multiplication algebra is the algebra of multiplication operators, isomorphic to $C(K)$; the module endomorphism algebra is $C(K)$ again, and the strict topology on $C(K)$ is the sup norm topology because the algebra is unital. The elementary operators $L_fR_g$ are multiplication by $fg$, and $\mu(f \otimes g) = fg$ has rank-one image in the tensor product.
+**Example ($C(K)$ and its module structure).** For $A = C(K)$ with $K$ compact Hausdorff, $\mathcal{M}(A) = \{f \mapsto \digamma_{\mathrm{map}} f : \digamma_{\mathrm{map}} \in C(K)\} = \lambda(A)$, the multiplication algebra is the algebra of multiplication operators, isomorphic to $C(K)$; the module endomorphism algebra is $C(K)$ again, and the strict topology on $C(K)$ is the sup norm topology because the algebra is unital. The elementary operators $L_fR_g$ are multiplication by $fg$, and $\mu(f \otimes g) = fg$ has rank-one image in the tensor product.
 
 **Example ($M_n(\mathbb{K})$ and the elementary operators).** For $A = M_n(\mathbb{K})$, the elementary operator $\sum_i L_{A_i}R_{B_i}$ is $X \mapsto \sum_i A_iXB_i$, and the map $\mu : M_n \otimes M_n \to B(M_n)$ allows expressions of rank-one operators; $\mathcal{M}(A)$ is all of $B(M_n)$ when $n \geq 2$ and the elementary operators span, so the multiplication algebra is the full operator algebra and its closure adds nothing.
 

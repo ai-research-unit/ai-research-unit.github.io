@@ -17,23 +17,23 @@ The vocabulary was introduced in *Logic and Proof*: a first-order language $\mat
 
 For the metatheory it is essential that the syntax of $\mathcal{L}$ be a set of finite objects that can be listed and manipulated. The alphabet of $\mathcal{L}$ is countable when the language has countably many symbols, and the formulas are finite strings, so the set of $\mathcal{L}$-formulas is countable. This is the hypothesis behind every enumeration argument below: one can assign numbers to formulas and reason about the assignment.
 
-**Definition.** A **formal system** (or **deductive system**) for $\mathcal{L}$ consists of a set of **logical axioms** and a set of **inference rules**. A **derivation** is a finite sequence $\varphi_1, \ldots, \varphi_n$ of $\mathcal{L}$-formulas, each of which is a logical axiom, a member of a given set $T$ of nonlogical axioms (the **theory**), or obtained from earlier formulas by an inference rule. The last formula is the **conclusion**; one writes $T \vdash \varphi$ when some derivation from $T$ concludes with $\varphi$, and $\vdash \varphi$ when $T = \emptyset$.
+**Definition.** A **formal system** (or **deductive system**) for $\mathcal{L}$ consists of a set of **logical axioms** and a set of **inference rules**. A **derivation** is a finite sequence $\digamma_{\mathrm{fml},1}, \ldots, \digamma_{\mathrm{fml},n}$ of $\mathcal{L}$-formulas, each of which is a logical axiom, a member of a given set $T$ of nonlogical axioms (the **theory**), or obtained from earlier formulas by an inference rule. The last formula is the **conclusion**; one writes $T \vdash \digamma_{\mathrm{fml}}$ when some derivation from $T$ concludes with $\digamma_{\mathrm{fml}}$, and $\vdash \digamma_{\mathrm{fml}}$ when $T = \emptyset$.
 
-This article uses the natural-deduction rules of *Logic and Proof*, together with the equality axioms, as its formal system. Other choices — Hilbert systems, sequent calculi, resolution — are equivalent in the sense that they derive the same formulas, and the comparison belongs to *Model Theory*. The **deduction theorem**, proved for natural deduction as the rule of conditional proof, states that $T \cup \{\varphi\} \vdash \psi$ if and only if $T \vdash \varphi \to \psi$.
+This article uses the natural-deduction rules of *Logic and Proof*, together with the equality axioms, as its formal system. Other choices — Hilbert systems, sequent calculi, resolution — are equivalent in the sense that they derive the same formulas, and the comparison belongs to *Model Theory*. The **deduction theorem**, proved for natural deduction as the rule of conditional proof, states that $T \cup \{\digamma_{\mathrm{fml}}\} \vdash \digamma_{\mathrm{fml}}$ if and only if $T \vdash \digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$.
 
-**Definition.** A theory $T$ is **consistent** if there is no formula $\varphi$ with $T \vdash \varphi$ and $T \vdash \neg\varphi$; it is **complete** if for every sentence $\sigma$ of its language, $T \vdash \sigma$ or $T \vdash \neg\sigma$; it is **recursively axiomatised** (or **effective**) if the set of its nonlogical axioms is decidable by an algorithm.
+**Definition.** A theory $T$ is **consistent** if there is no formula $\digamma_{\mathrm{fml}}$ with $T \vdash \digamma_{\mathrm{fml}}$ and $T \vdash \neg\digamma_{\mathrm{fml}}$; it is **complete** if for every sentence $\sigma$ of its language, $T \vdash \sigma$ or $T \vdash \neg\sigma$; it is **recursively axiomatised** (or **effective**) if the set of its nonlogical axioms is decidable by an algorithm.
 
 The three notions are independent, and the incompleteness theorem is a statement about the third: a recursively axiomatised consistent theory extending arithmetic cannot be complete.
 
 ### Soundness
 
-**Theorem (soundness).** Let $T$ be a theory. If $T \vdash \varphi$ then every model of $T$ satisfies $\varphi$; in particular, if $\vdash \varphi$ then $\varphi$ is valid.
+**Theorem (soundness).** Let $T$ be a theory. If $T \vdash \digamma_{\mathrm{fml}}$ then every model of $T$ satisfies $\digamma_{\mathrm{fml}}$; in particular, if $\vdash \digamma_{\mathrm{fml}}$ then $\digamma_{\mathrm{fml}}$ is valid.
 
-**Proof.** Induction on the length of the derivation. Each logical axiom is valid — the propositional tautologies, the equality axioms and the quantifier axioms are checked directly — and each inference rule preserves the property of being satisfied in a model: if $\mathcal{M} \models \varphi$ and $\mathcal{M} \models \varphi \to \psi$ then $\mathcal{M} \models \psi$ by the satisfaction clause for the conditional; universal generalisation is sound because the variable generalised is not free in the hypotheses; and the remaining rules are checked the same way. Hence every formula in the derivation is satisfied by every model of $T$, and the conclusion is.
+**Proof.** Induction on the length of the derivation. Each logical axiom is valid — the propositional tautologies, the equality axioms and the quantifier axioms are checked directly — and each inference rule preserves the property of being satisfied in a model: if $\mathcal{M} \models \digamma_{\mathrm{fml}}$ and $\mathcal{M} \models \digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ then $\mathcal{M} \models \digamma_{\mathrm{fml}}$ by the satisfaction clause for the conditional; universal generalisation is sound because the variable generalised is not free in the hypotheses; and the remaining rules are checked the same way. Hence every formula in the derivation is satisfied by every model of $T$, and the conclusion is.
 
 **Corollary.** If $T$ has a model then $T$ is consistent.
 
-**Proof.** If $T \vdash \varphi$ and $T \vdash \neg\varphi$ then every model of $T$ satisfies both, which is impossible.
+**Proof.** If $T \vdash \digamma_{\mathrm{fml}}$ and $T \vdash \neg\digamma_{\mathrm{fml}}$ then every model of $T$ satisfies both, which is impossible.
 
 Soundness is the easy half of the correspondence between $\vdash$ and $\models$; the hard half is completeness, and it is the subject of the next section.
 
@@ -41,17 +41,17 @@ Soundness is the easy half of the correspondence between $\vdash$ and $\models$;
 
 ### The Completeness Theorem
 
-**Theorem (Gödel completeness).** Let $T$ be a theory in a countable first-order language and let $\varphi$ be a sentence. If $T \models \varphi$ then $T \vdash \varphi$. Equivalently, if $T$ is consistent then $T$ has a model.
+**Theorem (Gödel completeness).** Let $T$ be a theory in a countable first-order language and let $\digamma_{\mathrm{fml}}$ be a sentence. If $T \models \digamma_{\mathrm{fml}}$ then $T \vdash \digamma_{\mathrm{fml}}$. Equivalently, if $T$ is consistent then $T$ has a model.
 
-**Proof sketch (Henkin construction).** It suffices to prove the second form. Extend the language by countably many new constant symbols $c_0, c_1, \ldots$, one for each formula, and enumerate all formulas of the enlarged language. Build a maximal consistent theory $T^* \supseteq T$ in the enlarged language by going through the enumeration and adding, at each stage, either $\varphi$ or $\neg\varphi$, whichever keeps the theory consistent; such a choice is always possible, since if both choices were inconsistent then $T$ would prove $\neg\varphi$ and $\varphi$. When the formula added at a stage is $\exists x\,\psi(x)$, add also $\psi(c_i)$ for a constant $c_i$ that has not yet appeared, which is the **witness** of the existential statement; consistency is preserved because the constant is fresh. The resulting $T^*$ is maximal, consistent, and has witnesses. Form the **term model** whose elements are the closed terms of the enlarged language modulo the equivalence $t \sim s$ iff $T^* \vdash t = s$, and interpret the symbols in the evident way. Satisfaction is proved by induction on formulas using the maximality and the witnesses, so that $\mathcal{M} \models T^*$ and hence $\mathcal{M} \models T$.
+**Proof sketch (Henkin construction).** It suffices to prove the second form. Extend the language by countably many new constant symbols $c_0, c_1, \ldots$, one for each formula, and enumerate all formulas of the enlarged language. Build a maximal consistent theory $T^* \supseteq T$ in the enlarged language by going through the enumeration and adding, at each stage, either $\digamma_{\mathrm{fml}}$ or $\neg\digamma_{\mathrm{fml}}$, whichever keeps the theory consistent; such a choice is always possible, since if both choices were inconsistent then $T$ would prove $\neg\digamma_{\mathrm{fml}}$ and $\digamma_{\mathrm{fml}}$. When the formula added at a stage is $\exists x\,\digamma_{\mathrm{fml}}(x)$, add also $\digamma_{\mathrm{fml}}(c_i)$ for a constant $c_i$ that has not yet appeared, which is the **witness** of the existential statement; consistency is preserved because the constant is fresh. The resulting $T^*$ is maximal, consistent, and has witnesses. Form the **term model** whose elements are the closed terms of the enlarged language modulo the equivalence $t \sim s$ iff $T^* \vdash t = s$, and interpret the symbols in the evident way. Satisfaction is proved by induction on formulas using the maximality and the witnesses, so that $\mathcal{M} \models T^*$ and hence $\mathcal{M} \models T$.
 
 The completeness theorem has a sharp form: if $T$ is recursively axiomatised, a derivation can be found **effectively** from a proof of unsatisfiability, and the set of valid sentences of a countable language is a computably enumerable set. This is the point at which logic meets computability, and it is the reason the undecidability results below are stated as statements about enumerable sets.
 
 ### Compactness
 
-**Theorem (compactness).** Let $T$ be a theory. If every finite subset of $T$ has a model then $T$ has a model. Equivalently, if $T \models \varphi$ then $\Delta_\Phi \models \varphi$ for some finite $\Delta_\Phi \subseteq T$.
+**Theorem (compactness).** Let $T$ be a theory. If every finite subset of $T$ has a model then $T$ has a model. Equivalently, if $T \models \digamma_{\mathrm{fml}}$ then $\Delta_\Phi \models \digamma_{\mathrm{fml}}$ for some finite $\Delta_\Phi \subseteq T$.
 
-**Proof.** Assume every finite subset of $T$ has a model. Then every finite subset of $T$ is consistent, by soundness. A derivation is finite and uses only finitely many nonlogical axioms, so $T$ itself is consistent; by completeness $T$ has a model. The second form is the contrapositive of the first applied to $T \cup \{\neg\varphi\}$.
+**Proof.** Assume every finite subset of $T$ has a model. Then every finite subset of $T$ is consistent, by soundness. A derivation is finite and uses only finitely many nonlogical axioms, so $T$ itself is consistent; by completeness $T$ has a model. The second form is the contrapositive of the first applied to $T \cup \{\neg\digamma_{\mathrm{fml}}\}$.
 
 Compactness is the most used theorem of model theory, and the corpus uses it in the form of the existence of nonstandard models: the theory of arithmetic together with the sentences $c > 0, c > 1, c > 2, \ldots$ for a new constant $c$ is finitely satisfiable, hence satisfiable, giving a model of arithmetic containing an element larger than every numeral.
 
@@ -164,21 +164,21 @@ The argument is the diagonal argument in the setting of computations: the machin
 
 ### Arithmetisation of Syntax
 
-The incompleteness theorems concern formal systems that can express elementary arithmetic. Let **Peano arithmetic** (PA) be the theory in the language $\{0, 1, +, \cdot, <\}$ with the usual axioms for the successor, addition, multiplication and order, together with the induction schema: for every formula $\varphi(x, y_1,\dots,y_k)$,
+The incompleteness theorems concern formal systems that can express elementary arithmetic. Let **Peano arithmetic** (PA) be the theory in the language $\{0, 1, +, \cdot, <\}$ with the usual axioms for the successor, addition, multiplication and order, together with the induction schema: for every formula $\digamma_{\mathrm{fml}}(x, y_1,\dots,y_k)$,
 
 $$
-\varphi(0,y_1,\dots,y_k) \wedge \forall x\,(\varphi(x,y_1,\dots,y_k) \to \varphi(x+1,y_1,\dots,y_k)) \to \forall x\,\varphi(x,y_1,\dots,y_k).
+\digamma_{\mathrm{fml}}(0,y_1,\dots,y_k) \wedge \forall x\,(\digamma_{\mathrm{fml}}(x,y_1,\dots,y_k) \to \digamma_{\mathrm{fml}}(x+1,y_1,\dots,y_k)) \to \forall x\,\digamma_{\mathrm{fml}}(x,y_1,\dots,y_k).
 $$
 
 The theory PA is recursively axiomatised, since the induction schema is a decidable set of axioms, and it expresses the arithmetic of $\mathbb{N}$.
 
-**Theorem (arithmetisation).** With each formula $\varphi$ and each derivation one can associate, by a computable procedure, a natural number (its **Gödel number**) in such a way that the syntactic properties of formulas and derivations — being a formula, being an axiom of PA, being a derivation of $\varphi$ from PA — become primitive recursive predicates of their Gödel numbers.
+**Theorem (arithmetisation).** With each formula $\digamma_{\mathrm{fml}}$ and each derivation one can associate, by a computable procedure, a natural number (its **Gödel number**) in such a way that the syntactic properties of formulas and derivations — being a formula, being an axiom of PA, being a derivation of $\digamma_{\mathrm{fml}}$ from PA — become primitive recursive predicates of their Gödel numbers.
 
 **Proof sketch.** Assign numbers to symbols by an explicit coding, to strings by coding the sequence of symbol numbers (for instance by the prime factorisation of a product of prime powers, or by the Cantor pairing of *Cardinality and the Axiom of Choice*), and to sequences of strings recursively. Being a well-formed formula is then a primitive recursive predicate, because it is defined by a finite grammar with bounded recursion; the property of being an instance of an axiom schema is primitive recursive because the schema has finitely many patterns and the induction schema is indexed by formulas.
 
 **Definition.** A theory $T$ is **$\Sigma_1$-complete** if it proves every true $\Sigma_1$ sentence, that is, every true statement of the form "there exists $n$ with $P(n)$" for a primitive recursive $P$. Peano arithmetic is $\Sigma_1$-complete, because a terminating computation can be verified step by step inside it.
 
-**Remark.** Gödel's original proof assumed the stronger hypothesis that $T$ is **$\omega$-consistent**: there is no formula $\varphi(x)$ with $T \vdash \exists x\,\varphi(x)$ while $T \vdash \neg\varphi(\bar n)$ for every numeral $\bar n$. The proof below uses only $\Sigma_1$-completeness, which is weaker and is the hypothesis of the theorem in its usual modern form; Rosser's refinement removes the extra hypothesis altogether by comparing the Gödel numbers of a putative proof and a putative refutation.
+**Remark.** Gödel's original proof assumed the stronger hypothesis that $T$ is **$\omega$-consistent**: there is no formula $\digamma_{\mathrm{fml}}(x)$ with $T \vdash \exists x\,\digamma_{\mathrm{fml}}(x)$ while $T \vdash \neg\digamma_{\mathrm{fml}}(\bar n)$ for every numeral $\bar n$. The proof below uses only $\Sigma_1$-completeness, which is weaker and is the hypothesis of the theorem in its usual modern form; Rosser's refinement removes the extra hypothesis altogether by comparing the Gödel numbers of a putative proof and a putative refutation.
 
 ### The First Incompleteness Theorem
 
@@ -186,13 +186,13 @@ The theory PA is recursively axiomatised, since the induction schema is a decida
 
 **Theorem (Gödel, first incompleteness theorem).** Let $T$ be a consistent, recursively axiomatised theory adequate for arithmetic. Then $T$ is incomplete: there is a sentence $G$ such that neither $T \vdash G$ nor $T \vdash \neg G$.
 
-**Proof sketch.** Arithmetise syntax, and consider the primitive recursive predicate $\mathrm{Pr}_T(m, n)$ asserting that $m$ is the Gödel number of a derivation of the formula with number $n$, and the $\Sigma_1$ formula $\exists m\,\mathrm{Pr}_T(m,n)$ asserting provability, written $\mathrm{Prov}_T(n)$. By the **diagonal lemma**, for every formula $\psi(x)$ there is a sentence $\sigma$ with
+**Proof sketch.** Arithmetise syntax, and consider the primitive recursive predicate $\mathrm{Pr}_T(m, n)$ asserting that $m$ is the Gödel number of a derivation of the formula with number $n$, and the $\Sigma_1$ formula $\exists m\,\mathrm{Pr}_T(m,n)$ asserting provability, written $\mathrm{Prov}_T(n)$. By the **diagonal lemma**, for every formula $\digamma_{\mathrm{fml}}(x)$ there is a sentence $\sigma$ with
 
 $$
-T \vdash \sigma \leftrightarrow \psi(\#\sigma),
+T \vdash \sigma \leftrightarrow \digamma_{\mathrm{fml}}(\#\sigma),
 $$
 
-where $\#\sigma$ is the numeral of the Gödel number of $\sigma$; the lemma is proved by substituting the Gödel number of the formula into itself, exactly the diagonal construction of Cantor's theorem and of the halting problem. Apply it to $\psi(x) = \neg\mathrm{Prov}_T(x)$, obtaining a sentence $G$ with
+where $\#\sigma$ is the numeral of the Gödel number of $\sigma$; the lemma is proved by substituting the Gödel number of the formula into itself, exactly the diagonal construction of Cantor's theorem and of the halting problem. Apply it to $\digamma_{\mathrm{fml}}(x) = \neg\mathrm{Prov}_T(x)$, obtaining a sentence $G$ with
 
 $$
 \boxed{\;T \vdash G \leftrightarrow \neg \mathrm{Prov}_T(\# G)\;}.
@@ -228,7 +228,7 @@ The second theorem is the reason consistency cannot be established by elementary
 
 ## Summary
 
-A first-order language, its terms and formulas, and a formal system of axioms and rules are the syntactic material of the article; $T \vdash \varphi$ means that $\varphi$ has a derivation from $T$, and a derivation is a finite object, so a theory uses only finitely many axioms in each derivation. A theory is consistent when it proves no contradiction, complete when it decides every sentence, and recursively axiomatised when its axioms can be listed by an algorithm. Soundness, proved by induction on derivations, says that derivability implies satisfaction in every model, and hence that a theory with a model is consistent.
+A first-order language, its terms and formulas, and a formal system of axioms and rules are the syntactic material of the article; $T \vdash \digamma_{\mathrm{fml}}$ means that $\digamma_{\mathrm{fml}}$ has a derivation from $T$, and a derivation is a finite object, so a theory uses only finitely many axioms in each derivation. A theory is consistent when it proves no contradiction, complete when it decides every sentence, and recursively axiomatised when its axioms can be listed by an algorithm. Soundness, proved by induction on derivations, says that derivability implies satisfaction in every model, and hence that a theory with a model is consistent.
 
 The completeness theorem of Gödel says that every consistent theory has a model, and is proved by the Henkin construction of a maximal consistent theory with witnesses and its term model. Compactness is its immediate corollary: a theory is satisfiable if every finite subset is. The Löwenheim–Skolem theorems say that a theory with an infinite model has models of every infinite cardinality at least that of its language, so no first-order theory catches a structure up to isomorphism and every theory of the reals has a countable model.
 
@@ -241,8 +241,8 @@ Peano arithmetic is the recursively axiomatised theory of the natural numbers. I
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{L}$ | A first-order language |
-| $T \vdash \varphi$ | $\varphi$ is derivable from the theory $T$ |
-| $T \models \varphi$ | $\varphi$ is satisfied in every model of $T$ |
+| $T \vdash \digamma_{\mathrm{fml}}$ | $\digamma_{\mathrm{fml}}$ is derivable from the theory $T$ |
+| $T \models \digamma_{\mathrm{fml}}$ | $\digamma_{\mathrm{fml}}$ is satisfied in every model of $T$ |
 | $T$, $\Delta_\Phi$ | Theory (set of sentences); finite subtheory |
 | $\mathrm{Con}_T$ | Arithmetised consistency of $T$: $\neg\mathrm{Prov}_T(\# 0=1)$ |
 | $Q$, $\Gamma$, $\delta$ | States, tape alphabet, transition function of a Turing machine |
@@ -252,7 +252,7 @@ Peano arithmetic is the recursively axiomatised theory of the natural numbers. I
 | $K$ | Halting set: $\{\langle M,x\rangle : M \text{ halts on } x\}$ |
 | $\leq_{\mathrm{m}}$ | Many-one reduction of decision problems |
 | PA | Peano arithmetic |
-| $\#\varphi$, $\bar n$ | Gödel number of $\varphi$; numeral of a number |
+| $\#\digamma_{\mathrm{fml}}$, $\bar n$ | Gödel number of $\digamma_{\mathrm{fml}}$; numeral of a number |
 | $\mathrm{Prov}_T(x)$ | Arithmetised provability in $T$ |
 | $G$ | Gödel sentence, asserting its own unprovability |
 | c.e. | Computably enumerable |

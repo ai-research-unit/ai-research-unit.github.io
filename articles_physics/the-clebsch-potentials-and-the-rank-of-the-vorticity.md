@@ -23,11 +23,11 @@ What also fails is that a fluid has no orientation. Euler's equation describes a
 Every velocity one-form that carries a vorticity can still be written with potentials, and the representation is classical. In the form used by Clebsch and by Lin, a velocity one-form is
 
 $$
-v_{\Phi,\imath}=\frac{\partial\phi_{\mathrm{clb}}}{\partial R_{\imath}}
+v_{\Phi,\imath}=\frac{\partial\xi_{\mathrm{pot},\mathrm{clb}}}{\partial R_{\imath}}
 +\alpha_{\mathrm{clb}}\frac{\partial\beta_{\mathrm{clb}}}{\partial R_{\imath}},
 $$
 
-with three functions in place of the one function of a gradient. The three names are the Clebsch scalar and the Clebsch pair, and the label $\mathrm{clb}$ distinguishes them from the scalar potential of the electrostatic and Higgs sections, which writes $\phi$.
+with three functions in place of the one function of a gradient. The three names are the Clebsch scalar and the Clebsch pair, and the label $\mathrm{clb}$ distinguishes them from the scalar potential of the electrostatic and Higgs sections, which writes $\xi_{\mathrm{pot}}$.
 
 The vorticity of a Clebsch field is the wedge of the pair, and this is the whole content of the representation. Taking the exterior derivative,
 
@@ -37,7 +37,7 @@ $$
 -\frac{\partial\alpha_{\mathrm{clb}}}{\partial R_{\jmath}}\frac{\partial\beta_{\mathrm{clb}}}{\partial R_{\imath}},
 $$
 
-so $\omega=\mathrm{d}\alpha_{\mathrm{clb}}\wedge\mathrm{d}\beta_{\mathrm{clb}}$ and the scalar $\phi_{\mathrm{clb}}$ drops out. The Clebsch scalar carries no vorticity and the pair carries all of it. A gradient is the case in which the pair is constant, and irrotationality is therefore not the absence of the representation but a degenerate value of its two potentials.
+so $\omega=\mathrm{d}\alpha_{\mathrm{clb}}\wedge\mathrm{d}\beta_{\mathrm{clb}}$ and the scalar $\xi_{\mathrm{pot},\mathrm{clb}}$ drops out. The Clebsch scalar carries no vorticity and the pair carries all of it. A gradient is the case in which the pair is constant, and irrotationality is therefore not the absence of the representation but a degenerate value of its two potentials.
 
 **The pair is not a computational trick, it is the general solution of the closure question.** Asking for $v_{\Phi,\imath}=\partial_{\imath} S$ is asking that a one-form be exact, which is one function's worth of data. Asking for the Clebsch form is asking nothing: it is available wherever the flow is defined, and it costs two functions at each event. The count is the point of the next section.
 
@@ -67,8 +67,8 @@ The hierarchy is a table, and the last column is the number of functions the vel
 
 | rank of $\omega$ | condition | potentials | what it costs |
 | --- | --- | --- | --- |
-| $0$ | $\omega=0$ | $\phi_{\mathrm{clb}}$ alone | one function |
-| $2$ | $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}=0$ | $\phi_{\mathrm{clb}}$, $\alpha_{\mathrm{clb}}$, $\beta_{\mathrm{clb}}$ | three functions |
+| $0$ | $\omega=0$ | $\xi_{\mathrm{pot},\mathrm{clb}}$ alone | one function |
+| $2$ | $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}=0$ | $\xi_{\mathrm{pot},\mathrm{clb}}$, $\alpha_{\mathrm{clb}}$, $\beta_{\mathrm{clb}}$ | three functions |
 | $4$ | $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}\ne0$ | two pairs | five functions |
 
 A potential flow is the first row and nothing else is. Its velocity is $\partial_{\imath}\Phi$, a closed one-form, so it is rank zero exactly and its vorticity vanishes identically — the statement [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) proves. A rotational flow is the second row, and a flow whose vorticity is not simple is the third.
@@ -175,7 +175,7 @@ The invariant changes with the rank. A rank-zero flow has a circulation that is 
 
 | Symbol | Meaning |
 | --- | --- |
-| $\phi_{\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | the Clebsch scalar and pair |
+| $\xi_{\mathrm{pot},\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | the Clebsch scalar and pair |
 | $\omega_{\imath\jmath}$ | the vorticity two-form |
 | $\vec E_{\mathrm{vrt}},\vec B_{\mathrm{vrt}}$ | its electric and magnetic parts |
 | $\kappa_{\imath\jmath}$ | the wryness, the curl of the orientation field |

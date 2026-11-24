@@ -87,7 +87,7 @@ The extension theorem is the construction of the countable product of probabilit
 1. $X$ and $Y$ are independent;
 2. the joint law is the product of the marginals: $\mu_{(X,Y)} = \mu_X \otimes \mu_Y$;
 3. $\mathbb{E}[f(X)g(Y)] = \mathbb{E}[f(X)]\,\mathbb{E}[g(Y)]$ for all bounded measurable $f,g$;
-4. $\mathbb{E}[\exp(i\langle s,X\rangle + i\langle t,Y\rangle)] = \varphi_X(s)\varphi_Y(t)$ for all $s,t$ (Kac's criterion).
+4. $\mathbb{E}[\exp(i\langle s,X\rangle + i\langle t,Y\rangle)] = \digamma_{\mathrm{map},X}(s)\digamma_{\mathrm{map},Y}(t)$ for all $s,t$ (Kac's criterion).
 
 *Proof.* The equivalence of 1 and 2 is the definition; 2 implies 3 by Fubini, and 3 implies 2 by taking $f = \mathbf{1}_{A}$, $g = \mathbf{1}_{B}$ and the $\pi$–$\lambda$ criterion; the equivalence with 4 follows because the exponentials span a convergence-determining class.
 
@@ -162,7 +162,7 @@ which is the Pythagorean theorem for the orthogonal decomposition $X = \mathbb{E
 3. **Tower property.** If $\mathcal{H} \subseteq \mathcal{G}$ then $\mathbb{E}\bigl[\mathbb{E}[X \mid \mathcal{G}] \mid \mathcal{H}\bigr] = \mathbb{E}[X \mid \mathcal{H}]$ a.s.; in particular $\mathbb{E}[\mathbb{E}[X\mid\mathcal{G}]] = \mathbb{E}[X]$.
 4. **Pull-out.** If $Y$ is bounded and $\mathcal{G}$-measurable then $\mathbb{E}[YX \mid \mathcal{G}] = Y\,\mathbb{E}[X \mid \mathcal{G}]$ a.s.
 5. **Independence.** If $X$ is independent of $\mathcal{G}$ then $\mathbb{E}[X \mid \mathcal{G}] = \mathbb{E}[X]$ a.s.
-6. **Jensen.** If $\varphi$ is convex and $\varphi(X)$ is integrable then $\varphi(\mathbb{E}[X\mid\mathcal{G}]) \leq \mathbb{E}[\varphi(X)\mid\mathcal{G}]$ a.s.
+6. **Jensen.** If $\digamma_{\mathrm{map}}$ is convex and $\digamma_{\mathrm{map}}(X)$ is integrable then $\digamma_{\mathrm{map}}(\mathbb{E}[X\mid\mathcal{G}]) \leq \mathbb{E}[\digamma_{\mathrm{map}}(X)\mid\mathcal{G}]$ a.s.
 7. **Convergence.** If $X_n \to X$ a.s. with $|X_n| \leq Y$ integrable, then $\mathbb{E}[X_n\mid\mathcal{G}] \to \mathbb{E}[X\mid\mathcal{G}]$ a.s.
 
 *Proof.* Each property is proved by checking the defining integral identity on sets of $\mathcal{G}$: linearity and positivity by the linearity and positivity of the integral; the tower property by reducing to $\mathcal{H}$-sets; pull-out by the localising $\pi$–$\lambda$ argument; independence because the constant $\mathbb{E}[X]$ is $\mathcal{G}$-measurable and satisfies the defining relation by the factorisation criterion; Jensen by the supporting line of a convex function and the positivity of the conditional expectation; and the convergence statement by the conditional form of the dominated convergence theorem, applied to the positive and negative parts.

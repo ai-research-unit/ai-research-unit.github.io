@@ -129,27 +129,27 @@ $$
 **Theorem (the matrix model).** The assignment
 
 $$
-\varphi(q)=\begin{pmatrix}t+q_y&q_x-q_z\\-(q_x+q_z)&t-q_y\end{pmatrix}
+\digamma_{\mathrm{map}}(q)=\begin{pmatrix}t+q_y&q_x-q_z\\-(q_x+q_z)&t-q_y\end{pmatrix}
 $$
 
 is an isomorphism of $\mathbb{H}_{\mathrm{spl}}$ onto $M_2(\mathbb R)$. It satisfies
 
 $$
-\det\varphi(q)=t^2+q_x^2-q_y^2-q_z^2=t^2-S,\qquad
-\operatorname{tr}\varphi(q)=2t,
+\det\digamma_{\mathrm{map}}(q)=t^2+q_x^2-q_y^2-q_z^2=t^2-S,\qquad
+\operatorname{tr}\digamma_{\mathrm{map}}(q)=2t,
 $$
 
-and the characteristic polynomial of $\varphi(q)$ is $(\lambda-t)^2-S$.
+and the characteristic polynomial of $\digamma_{\mathrm{map}}(q)$ is $(\lambda-t)^2-S$.
 
 *Proof.* On the generators,
 
 $$
-\varphi(\vec e_x)=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
-\varphi(\vec e_y)=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
-\varphi(\vec e_z)=\begin{pmatrix}0&-1\\-1&0\end{pmatrix},
+\digamma_{\mathrm{map}}(\vec e_x)=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
+\digamma_{\mathrm{map}}(\vec e_y)=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
+\digamma_{\mathrm{map}}(\vec e_z)=\begin{pmatrix}0&-1\\-1&0\end{pmatrix},
 $$
 
-and these satisfy the defining relations. The four images are linearly independent, so $\varphi$ is injective between four-dimensional algebras, hence an isomorphism. The determinant, trace and characteristic polynomial are direct computations.
+and these satisfy the defining relations. The four images are linearly independent, so $\digamma_{\mathrm{map}}$ is injective between four-dimensional algebras, hence an isomorphism. The determinant, trace and characteristic polynomial are direct computations.
 
 **Theorem (two different loci).** In the matrix model the singular (non-invertible) locus $\{\det=0\}$ is the zero-divisor cone $\mathcal Z=\{t^2=S\}$. The discriminant locus, where the two eigenvalues coincide, is the spectral cone $\mathcal C=\{S=0\}$. The two loci are different, and their intersection is the set $\{t=0,S=0\}$.
 
@@ -196,7 +196,7 @@ The matrix model $\mathbb{H}_{\mathrm{spl}}\cong M_2(\mathbb R)$ has determinant
 | $\mathcal D=\mathcal C\setminus\{\vec v=0\}$ | the defective stratum |
 | $\mathcal Z=\{t^2=S\}$ | the zero-divisor cone |
 | $N_V=\{q_x^2=q_y^2+q_z^2\}$ | the vector null cone, with $\mathcal C=\mathbb R\times N_V$ |
-| $\varphi(q)$ | the isomorphism $\mathbb{H}_{\mathrm{spl}}\to M_2(\mathbb R)$ |
+| $\digamma_{\mathrm{map}}(q)$ | the isomorphism $\mathbb{H}_{\mathrm{spl}}\to M_2(\mathbb R)$ |
 
 ## Further Reading
 

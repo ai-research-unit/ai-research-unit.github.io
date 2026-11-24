@@ -17,7 +17,7 @@ $$
 The coordinate array is diagonal, and the two columns are
 
 $$
-\psi^{(+)}=(\breve Q_{+},0),\qquad \psi^{(-)}=(0,\breve Q_{-}).
+Ξ_{\mathrm{wfn}}^{(+)}=(\breve Q_{+},0),\qquad Ξ_{\mathrm{wfn}}^{(-)}=(0,\breve Q_{-}).
 $$
 
 Each column has one nonzero entry. The vanishing of the other entry is not a choice: it is the vanishing of the mixed Peirce component $\mathbb{B}_{+-}=0$.
@@ -59,7 +59,7 @@ The Peirce coordinates of the reduced biquaternion algebra are $\breve Q_{\pm}=u
 | Symbol | Meaning |
 |---|---|
 | $\breve Q_{\pm}=u\pm v$ | The Peirce coordinates |
-| $\psi^{(\pm)}$ | The column of index $\pm$ |
+| $Ξ_{\mathrm{wfn}}^{(\pm)}$ | The column of index $\pm$ |
 | $\Pi_{\pm}$ | The idempotents, the basis units |
 
 ## Further Reading

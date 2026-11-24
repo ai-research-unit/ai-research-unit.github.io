@@ -65,13 +65,13 @@ so the forms differ only in which of the identity, $\natural$, $\bar{\cdot}$ and
 
 ## The Four Adjoints
 
-**Definition (the adjoint of a form).** For one of the four forms $\phi$ and a $\mathbb{C}$-linear map $F$ of $\mathbb{B}$, the **adjoint of $F$ for $\phi$** is the unique map $F^{\phi}$ with
+**Definition (the adjoint of a form).** For one of the four forms $\digamma_{\mathrm{map}}$ and a $\mathbb{C}$-linear map $F$ of $\mathbb{B}$, the **adjoint of $F$ for $\digamma_{\mathrm{map}}$** is the unique map $F^{\digamma_{\mathrm{map}}}$ with
 
 $$
-\phi\bigl(F\tilde Q_1,\tilde Q_2\bigr)=\phi\bigl(\tilde Q_1,F^{\phi}\tilde Q_2\bigr)\qquad\text{for all }\tilde Q_1,\tilde Q_2\in\mathbb{B}.
+\digamma_{\mathrm{map}}\bigl(F\tilde Q_1,\tilde Q_2\bigr)=\digamma_{\mathrm{map}}\bigl(\tilde Q_1,F^{\digamma_{\mathrm{map}}}\tilde Q_2\bigr)\qquad\text{for all }\tilde Q_1,\tilde Q_2\in\mathbb{B}.
 $$
 
-The form is non-degenerate, so the adjoint exists and is unique. It is $\mathbb{C}$-linear in all four cases, and $F\mapsto F^{\phi}$ is linear in the two bilinear cases and conjugate linear in the two sesquilinear ones.
+The form is non-degenerate, so the adjoint exists and is unique. It is $\mathbb{C}$-linear in all four cases, and $F\mapsto F^{\digamma_{\mathrm{map}}}$ is linear in the two bilinear cases and conjugate linear in the two sesquilinear ones.
 
 **Theorem (the four adjoints, named).** For the left multiplication $L_{\tilde Q_6}$, the right multiplication $R_{\tilde Q_3}$ and their product,
 

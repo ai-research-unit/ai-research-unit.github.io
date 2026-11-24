@@ -16,14 +16,14 @@ This article constructs the weak derivative and the Sobolev spaces, proves their
 **Definition.** Let $\Omega \subseteq \mathbb{R}^n$ be open and let $u, w \in L^1_{\mathrm{loc}}(\Omega)$. The function $w$ is the **weak derivative** of $u$ with respect to $x_i$, written $w = \partial/\partial x_i\,u$, if
 
 $$
-\int_\Omega u\,\partial/\partial x_i\,\varphi\,dx = -\int_\Omega w\,\varphi\,dx \qquad \text{for every } \varphi \in C_c^\infty(\Omega).
+\int_\Omega u\,\partial/\partial x_i\,\digamma_{\mathrm{map}}\,dx = -\int_\Omega w\,\digamma_{\mathrm{map}}\,dx \qquad \text{for every } \digamma_{\mathrm{map}} \in C_c^\infty(\Omega).
 $$
 
 For a multi-index $\gamma = (\gamma_1,\dots,\gamma_n)$ the weak derivative $\partial^\gamma u$ is defined by iterating the definition, with $|\gamma| = \sum_i\gamma_i$ and $\partial^\gamma = (\partial/\partial x_1)^{\gamma_1}\cdots(\partial/\partial x_n)^{\gamma_n}$.
 
 **Proposition (uniqueness).** The weak derivative, if it exists, is unique up to equality almost everywhere.
 
-*Proof.* If $w_1$ and $w_2$ both satisfy the definition, then $\int_\Omega(w_1-w_2)\varphi = 0$ for every test function $\varphi$; since the test functions are dense in $L^1_{\mathrm{loc}}$ in the appropriate sense, $w_1-w_2=0$ almost everywhere.
+*Proof.* If $w_1$ and $w_2$ both satisfy the definition, then $\int_\Omega(w_1-w_2)\digamma_{\mathrm{map}} = 0$ for every test function $\digamma_{\mathrm{map}}$; since the test functions are dense in $L^1_{\mathrm{loc}}$ in the appropriate sense, $w_1-w_2=0$ almost everywhere.
 
 **Example (a weak derivative that is not classical).** On $\Omega = (-1,1)$ let $u(x)=|x|$. Then $u$ is not differentiable at $0$, but
 
@@ -31,13 +31,13 @@ $$
 w(x) = \operatorname{sgn}(x) = \begin{cases}-1, & x<0,\\ +1, & x>0\end{cases}
 $$
 
-is the weak derivative: for every $\varphi \in C_c^\infty(-1,1)$,
+is the weak derivative: for every $\digamma_{\mathrm{map}} \in C_c^\infty(-1,1)$,
 
 $$
-\int_{-1}^{1}|x|\,\varphi'(x)\,dx = -\int_{-1}^{1} w(x)\varphi(x)\,dx,
+\int_{-1}^{1}|x|\,\digamma_{\mathrm{map}}'(x)\,dx = -\int_{-1}^{1} w(x)\digamma_{\mathrm{map}}(x)\,dx,
 $$
 
-by integrating each piece by parts, the boundary terms vanishing because $\varphi$ is compactly supported and at $0$ cancelling. The computation is exact and shows that the weak derivative records the jumps of $u$ and ignores its points of non-differentiability.
+by integrating each piece by parts, the boundary terms vanishing because $\digamma_{\mathrm{map}}$ is compactly supported and at $0$ cancelling. The computation is exact and shows that the weak derivative records the jumps of $u$ and ignores its points of non-differentiability.
 
 **Definition.** For $1\le p\le\infty$ and $k \in \mathbb{N}$ the **Sobolev space** is
 
@@ -245,7 +245,7 @@ The Dirichlet principle is the origin of the subject and the reason for the name
 
 ## Summary
 
-The weak derivative of $u \in L^1_{\mathrm{loc}}(\Omega)$ is the function $w$ for which $\int u\,\partial/\partial x_i\,\varphi = -\int w\varphi$ for every test function $\varphi \in C_c^\infty(\Omega)$; it is unique when it exists and it exists for functions that are not classically differentiable, as $|x|$ shows. The Sobolev space $W^{k,n}(\Omega)$ consists of the $L^{n}$ functions whose weak derivatives up to order $k$ lie in $L^{n}$; it is a Banach space, separable and reflexive for $1<p<\infty$, and $H^k = W^{k,2}$ is a Hilbert space. Smooth functions are dense, the product and chain rules hold, and $W^{k,n}_0$ is the closure of the compactly supported smooth functions, which is how the Dirichlet boundary condition is imposed.
+The weak derivative of $u \in L^1_{\mathrm{loc}}(\Omega)$ is the function $w$ for which $\int u\,\partial/\partial x_i\,\digamma_{\mathrm{map}} = -\int w\digamma_{\mathrm{map}}$ for every test function $\digamma_{\mathrm{map}} \in C_c^\infty(\Omega)$; it is unique when it exists and it exists for functions that are not classically differentiable, as $|x|$ shows. The Sobolev space $W^{k,n}(\Omega)$ consists of the $L^{n}$ functions whose weak derivatives up to order $k$ lie in $L^{n}$; it is a Banach space, separable and reflexive for $1<p<\infty$, and $H^k = W^{k,2}$ is a Hilbert space. Smooth functions are dense, the product and chain rules hold, and $W^{k,n}_0$ is the closure of the compactly supported smooth functions, which is how the Dirichlet boundary condition is imposed.
 
 The embedding theorems are the working tools: $W^{k,n}\hookrightarrow L^{n^*}$ with $1/p^* = 1/p-k/n$ when $kp<n$, with $p^*$ sharp; $W^{k,n}\hookrightarrow C^{m,\gamma}$ when $kp>n$; the embeddings are compact into $L^{m}$ for $q<p^*$ on a bounded Lipschitz domain by Rellich–Kondrachov; the trace map restricts $W^{1,n}(\Omega)$ to $L^{n}(\partial\Omega)$ with kernel $W^{1,n}_0$; and the Poincaré inequality controls the $L^{n}$ norm by the gradient for a function vanishing on the boundary, with the sharp constant $L/\pi$ on the interval $(0,L)$.
 

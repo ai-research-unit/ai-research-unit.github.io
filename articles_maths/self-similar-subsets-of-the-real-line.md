@@ -156,7 +156,7 @@ $$
 
 and writing $t=2^{-s}$ gives $t+t^2=1$, so $t=(\sqrt5-1)/2$ and
 
-$$ \boxed{\;s = \frac{\log\varphi}{\log 2} = 0.6942\ldots, \qquad \varphi = \frac{1+\sqrt5}{2}\;},
+$$ \boxed{\;s = \frac{\log\digamma_{\mathrm{map}}}{\log 2} = 0.6942\ldots, \qquad \digamma_{\mathrm{map}} = \frac{1+\sqrt5}{2}\;},
 $$
 
 by the quoted Moran–Hutchinson theorem. The attractor is a Cantor set of unequal pieces, no two scales equal; it shows that the similarity dimension is not restricted to equal ratios and that the level-$k$ pieces need not have the same length.
@@ -184,7 +184,7 @@ The dimension of the middle-third set is $\log2/\log3$, that of the Sierpiński 
 | $T_2$, $\partial T_2$ | The full binary tree; its boundary, homeomorphic to $C$ |
 | $C+C=[0,2]$, $C-C=[-1,1]$ | The additive tiling by the Cantor set |
 | $C_r$, $C_{\mathrm{fat}}$ | The $r$-Cantor set; the positive-measure Smith–Volterra–Cantor set |
-| $\log2/\log3$, $\log\varphi/\log2$ | Dimensions, quoted from *Fractal Geometry* |
+| $\log2/\log3$, $\log\digamma_{\mathrm{map}}/\log2$ | Dimensions, quoted from *Fractal Geometry* |
 
 ## Further Reading
 

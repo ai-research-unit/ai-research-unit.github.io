@@ -84,15 +84,15 @@ equivalently an antiunitary involution. A vector is **real** for $J$ if $Jx=x$; 
 
 ## Self-Duality and the Riesz Map
 
-**Theorem (Riesz representation).** For every bounded linear functional $\varphi\in H^*$ there is a unique $y\in H$ with
+**Theorem (Riesz representation).** For every bounded linear functional $\digamma_{\mathrm{map}}\in H^*$ there is a unique $y\in H$ with
 
 $$
-\boxed{\;\varphi(x)=\langle x,y\rangle\quad(x\in H),\qquad \|\varphi\|=\|y\|\;} .
+\boxed{\;\digamma_{\mathrm{map}}(x)=\langle x,y\rangle\quad(x\in H),\qquad \|\digamma_{\mathrm{map}}\|=\|y\|\;} .
 $$
 
 The map $\Phi:H\to H^*$, $\Phi(y)=\langle\cdot,y\rangle$, is a conjugate-linear isometric bijection, and $H$ is reflexive.
 
-*Proof.* If $\varphi\neq0$ its kernel is a closed hyperplane, whose orthogonal complement is spanned by a unit vector $e$; then $y=\overline{\varphi(e)}e$ represents $\varphi$ and the norm identity follows from Cauchy–Schwarz with equality. Uniqueness is the nondegeneracy of the form, conjugate-linearity is the sesquilinearity, and reflexivity is the surjectivity of the map $H\to H^{**}$ obtained by iterating $\Phi$.
+*Proof.* If $\digamma_{\mathrm{map}}\neq0$ its kernel is a closed hyperplane, whose orthogonal complement is spanned by a unit vector $e$; then $y=\overline{\digamma_{\mathrm{map}}(e)}e$ represents $\digamma_{\mathrm{map}}$ and the norm identity follows from Cauchy–Schwarz with equality. Uniqueness is the nondegeneracy of the form, conjugate-linearity is the sesquilinearity, and reflexivity is the surjectivity of the map $H\to H^{**}$ obtained by iterating $\Phi$.
 
 **Proposition (the form and the dual form).** The Riesz map $\Phi$ carries the inner product of $H$ to the dual pairing, so the form on $H^*$ defined by $\langle\Phi x,\Phi y\rangle=\overline{\langle x,y\rangle}$ makes $H^*$ a Hilbert space isometric to $H$ through a conjugate-linear map; in this sense a Hilbert space is its own dual, with the identification conjugate-linear rather than linear.
 

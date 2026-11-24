@@ -26,10 +26,10 @@ This article develops the condition, its equivalent forms, the holomorphic volum
 **Theorem (Yau, on the Calabi conjecture).** Let $M$ be a compact Kähler manifold with $c_1(M)=0$. Then every Kähler class on $M$ contains exactly one Ricci-flat Kähler metric. The metric is obtained by solving the complex Monge–Ampère equation
 
 $$
-\boxed{\;\det\Bigl(g_{i\bar j} + \partial^2/\partial z_i\partial\bar z_j\,\varphi\Bigr) = \det(g_{i\bar j})\;}
+\boxed{\;\det\Bigl(g_{i\bar j} + \partial^2/\partial z_i\partial\bar z_j\,\digamma_{\mathrm{map}}\Bigr) = \det(g_{i\bar j})\;}
 $$
 
-for the potential $\varphi$, where $g$ is any Kähler metric in the given class.
+for the potential $\digamma_{\mathrm{map}}$, where $g$ is any Kähler metric in the given class.
 
 **Proof sketch.** The statement is that of *Kähler Geometry*; the proof is the continuity method for the Monge–Ampère equation, with the a priori estimates of Yau and the openness from the implicit function theorem. The analysis is that of Part III, where the measure and the limit are available.
 
@@ -151,7 +151,7 @@ The standard examples are the elliptic curves in dimension one, the tori and $K3
 | $c_1(M)=0$ | The Calabi–Yau condition; equivalently $K_M$ torsion, equivalently reduced holonomy in $SU(n)$ |
 | $K_M = \Lambda^n(T^{1,0}M)^*$ | Canonical bundle; $c_1(M) = -c_1(K_M)$ |
 | $\Omega \in H^0(M,K_M)$ | Holomorphic volume form; $\nabla\Omega=0$, $|\Omega|_g$ constant |
-| $g_{i\bar j}$, $\varphi$ | Kähler metric and potential; Monge–Ampère $\det(g_{i\bar j}+\partial^2/\partial z_i\partial\bar z_j\,\varphi)=\det(g_{i\bar j})$ |
+| $g_{i\bar j}$, $\digamma_{\mathrm{map}}$ | Kähler metric and potential; Monge–Ampère $\det(g_{i\bar j}+\partial^2/\partial z_i\partial\bar z_j\,\digamma_{\mathrm{map}})=\det(g_{i\bar j})$ |
 | $h^{n,m}$, $\chi$ | Hodge numbers; $\chi = \sum(-1)^{n+m}h^{n,m}$, $h^{n,m}=h^{N-n, N-m}$ |
 | Strict Calabi–Yau | Holonomy exactly $SU(n)$; $h^{p,0}=0$ ($0<p<n$), $b_1=0$ |
 | $X_d\subseteq\mathbb{CP}^n$ | Hypersurface of degree $d$; Calabi–Yau iff $d=n+1$; $c_1=(n+1-d)H$ |

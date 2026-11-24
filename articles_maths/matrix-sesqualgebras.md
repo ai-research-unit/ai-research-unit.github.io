@@ -8,7 +8,7 @@ $$
 S\star T=S\,T^{*} ,
 $$
 
-which is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second. The elements selected by the involution are the **Hermitian** matrices $X^{*}=X$, the **anti-Hermitian** ones $X^{*}=-X$, and the **unitary** ones $U^{*}=U^{-1}$, and the trace functional $\tau(X)=\operatorname{tr}(X)$ is central and compatible with the involution, $\operatorname{tr}(X^{*})=\varsigma\bigl(\operatorname{tr}(X)\bigr)$, so that the pairing $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ is the standard Hermitian form. The present article collects this structure, works the case $n=2$ on the Pauli basis, and identifies the resulting two-product structure with that of the biquaternion algebra, of which $M_{2}(\mathbb{C})$ is a matrix model.
+which is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second. The elements selected by the involution are the **Hermitian** matrices $X^{*}=X$, the **anti-Hermitian** ones $X^{*}=-X$, and the **unitary** ones $U^{*}=U^{-1}$, and the trace functional $\tau(X)=\operatorname{tr}(X)$ is central and compatible with the involution, $\operatorname{tr}(X^{*})=\varsigma\bigl(\operatorname{tr}(X)\bigr)$, so that the pairing $\digamma_{\mathrm{map}}(X,Y)=\operatorname{tr}(XY^{*})$ is the standard Hermitian form. The present article collects this structure, works the case $n=2$ on the Pauli basis, and identifies the resulting two-product structure with that of the biquaternion algebra, of which $M_{2}(\mathbb{C})$ is a matrix model.
 
 The subject belongs to the applications of the sesqualgebras, in the group *Applications*, and it is the matrix instance that the whole operator theory of the category is computed on. The definition of the sesqualgebra, its involution, its units and its collapse at the identity are *Sesqualgebras*; the derived product, its parities and its one-sided reads are *The Sesquilinear Product*; the pairing, its two slots, its perfection and the trace $\tau$ that defines it are *The Sesquilinear Adjoint Operator*; the endomorphism algebra of a module with a form, of which this is the case $M=\mathbb{C}^{n}$, is *The Sesquilinear Structure of the Endomorphism Algebra*; the Hermitian elements and the positive ones are *Hermitian and Anti-Hermitian Elements* and *Hermitian Squares and the Algebraic Positive Cone*; and the four general products of the biquaternion algebra, compared with the two here, are *The Four General Products and Their Relations over the Biquaternion Algebra*.
 
@@ -43,23 +43,23 @@ $$
 **Definition.** The **pairing** of the sesqualgebra is
 
 $$
-\varphi(X,Y)=\operatorname{tr}(XY^{*}) .
+\digamma_{\mathrm{map}}(X,Y)=\operatorname{tr}(XY^{*}) .
 $$
 
-**Proposition (the pairing is Hermitian and perfect).** The pairing is $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second, it is sesqui-symmetric, $\varphi(Y,X)=\varsigma\bigl(\varphi(X,Y)\bigr)$, and it is perfect: for the matrix units,
+**Proposition (the pairing is Hermitian and perfect).** The pairing is $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second, it is sesqui-symmetric, $\digamma_{\mathrm{map}}(Y,X)=\varsigma\bigl(\digamma_{\mathrm{map}}(X,Y)\bigr)$, and it is perfect: for the matrix units,
 
 $$
-\boxed{\;\varphi(X,E_{ij}^{*})=X_{ij}\;} ,
+\boxed{\;\digamma_{\mathrm{map}}(X,E_{ij}^{*})=X_{ij}\;} ,
 $$
 
-so a matrix is recovered from its pairings against the matrix units, and the map $X\mapsto\varphi(X,\,\cdot\,)$ is a bijection.
+so a matrix is recovered from its pairings against the matrix units, and the map $X\mapsto\digamma_{\mathrm{map}}(X,\,\cdot\,)$ is a bijection.
 
-**Proof.** The semilinearity in the second slot is the compatibility of the trace with the involution; the sesqui-symmetry is $\operatorname{tr}(YX^{*})=\varsigma\bigl(\operatorname{tr}(XY^{*})\bigr)$ by $\operatorname{tr}(Z^{*})=\varsigma(\operatorname{tr}Z)$ applied to $Z=YX^{*}=(XY^{*})^{*}$. For the perfection, $\varphi(X,E_{ij}^{*})=\operatorname{tr}(XE_{ji})$, since $(E_{ij})^{*}=E_{ji}$ and the conjugation is entrywise; the matrix $XE_{ji}$ has the $j$-th column of $X$ in its $i$-th column and zeroes elsewhere, so its trace is $X_{ij}$.
+**Proof.** The semilinearity in the second slot is the compatibility of the trace with the involution; the sesqui-symmetry is $\operatorname{tr}(YX^{*})=\varsigma\bigl(\operatorname{tr}(XY^{*})\bigr)$ by $\operatorname{tr}(Z^{*})=\varsigma(\operatorname{tr}Z)$ applied to $Z=YX^{*}=(XY^{*})^{*}$. For the perfection, $\digamma_{\mathrm{map}}(X,E_{ij}^{*})=\operatorname{tr}(XE_{ji})$, since $(E_{ij})^{*}=E_{ji}$ and the conjugation is entrywise; the matrix $XE_{ji}$ has the $j$-th column of $X$ in its $i$-th column and zeroes elsewhere, so its trace is $X_{ij}$.
 
 **Remark (the coefficient reading).** The pairing computes in the entries,
 
 $$
-\varphi(X,Y)=\operatorname{tr}(XY^{*})=\sum_{i,j}X_{ij}\,\overline{Y_{ij}} ,
+\digamma_{\mathrm{map}}(X,Y)=\operatorname{tr}(XY^{*})=\sum_{i,j}X_{ij}\,\overline{Y_{ij}} ,
 $$
 
 which is the standard Hermitian form on the $n^{2}$ complex coordinates $X_{ij}$, written with the correct order of the two slots.
@@ -162,11 +162,11 @@ under which the relations $i^{2}=j^{2}=k^{2}=-1$, $ij=k$, $jk=i$, $ki=j$ of the 
 
 ## The General Case
 
-For general $n$ the structure is the same and the tabulation is shorter. The Hermitian matrices $X^{*}=X$ form a real form of $M_{n}(\mathbb{C})$ with $n^{2}$ real parameters, on which the pairing $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ is the standard Hermitian form, and the anti-Hermitian matrices are its $i$-multiple. The unitary matrices form the group $\mathrm{U}(n)$, the determinant has modulus one, and the matrices of determinant one form the subgroup $SU(n)$, which in the case $n=2$ is the unit quaternions read through the matrix model above. The endomorphism algebra of the biquaternion algebra as a complex space is the case $n=4$, $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_{4}(\mathbb{C})$, so the case $n=4$ of this article is the sesquilinear structure of the biquaternion algebra read on its coordinates, and the case $n=2$ is the biquaternion algebra itself.
+For general $n$ the structure is the same and the tabulation is shorter. The Hermitian matrices $X^{*}=X$ form a real form of $M_{n}(\mathbb{C})$ with $n^{2}$ real parameters, on which the pairing $\digamma_{\mathrm{map}}(X,Y)=\operatorname{tr}(XY^{*})$ is the standard Hermitian form, and the anti-Hermitian matrices are its $i$-multiple. The unitary matrices form the group $\mathrm{U}(n)$, the determinant has modulus one, and the matrices of determinant one form the subgroup $SU(n)$, which in the case $n=2$ is the unit quaternions read through the matrix model above. The endomorphism algebra of the biquaternion algebra as a complex space is the case $n=4$, $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_{4}(\mathbb{C})$, so the case $n=4$ of this article is the sesquilinear structure of the biquaternion algebra read on its coordinates, and the case $n=2$ is the biquaternion algebra itself.
 
 ## Summary
 
-The complex matrices $M_{n}(\mathbb{C})$ with the conjugate transpose form the standard sesqualgebra over $\mathbb{C}$: the involution is $\varsigma$-semilinear of order two, $(XY)^{*}=Y^{*}X^{*}$ and $(\lambda X)^{*}=\overline{\lambda}\,X^{*}$; the trace is central and compatible, $\operatorname{tr}(X^{*})=\varsigma(\operatorname{tr}X)$; and the pairing $\varphi(X,Y)=\operatorname{tr}(XY^{*})=\sum_{i,j}X_{ij}\overline{Y_{ij}}$ is the standard Hermitian form, perfect on the $n^{2}$ coordinates.
+The complex matrices $M_{n}(\mathbb{C})$ with the conjugate transpose form the standard sesqualgebra over $\mathbb{C}$: the involution is $\varsigma$-semilinear of order two, $(XY)^{*}=Y^{*}X^{*}$ and $(\lambda X)^{*}=\overline{\lambda}\,X^{*}$; the trace is central and compatible, $\operatorname{tr}(X^{*})=\varsigma(\operatorname{tr}X)$; and the pairing $\digamma_{\mathrm{map}}(X,Y)=\operatorname{tr}(XY^{*})=\sum_{i,j}X_{ij}\overline{Y_{ij}}$ is the standard Hermitian form, perfect on the $n^{2}$ coordinates.
 
 The structure carries two products: the ordinary product $ST$, which is $\mathbb{C}$-bilinear and associative, and the sesquilinear product $S\star T=ST^{*}$, the derived product of the sesqualgebra, which is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second, has $I$ as a right unit, and is not associative. The elements singled out by the involution are the Hermitian and anti-Hermitian matrices, one the $i$-multiple of the other and together a decomposition $X=\tfrac12(X+X^{*})+\tfrac12(X-X^{*})$ of every matrix, and the unitary matrices, a group with the determinant of modulus one.
 
@@ -179,7 +179,7 @@ The case $n=2$ is worked on the Pauli basis $\sigma_{1},\sigma_{2},\sigma_{3}$: 
 | $X^{*}=\overline{X}^{T}$ | the conjugate transpose, the involution |
 | $\varsigma(z)=\overline{z}$ | the base involution, the complex conjugation |
 | $\operatorname{tr}(X)=\sum_{i}X_{ii}$ | the trace, central and compatible |
-| $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ | the pairing, the standard Hermitian form |
+| $\digamma_{\mathrm{map}}(X,Y)=\operatorname{tr}(XY^{*})$ | the pairing, the standard Hermitian form |
 | $S\star T=ST^{*}$ | the sesquilinear product, the derived product |
 | $X^{*}=X$ / $X^{*}=-X$ | Hermitian / anti-Hermitian matrices |
 | $X=\tfrac12(X+X^{*})+\tfrac12(X-X^{*})$ | the Hermitian–anti-Hermitian decomposition |

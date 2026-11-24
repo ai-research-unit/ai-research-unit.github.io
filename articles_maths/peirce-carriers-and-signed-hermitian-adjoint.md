@@ -9,10 +9,10 @@ The carrier is a left ideal, so left multiplication by **every** element of the 
 The signed Hermitian pair is realised on the carrier by a conjugation of the Clifford multiplication with **two left multiplications**,
 
 $$
-\mathrm{Sd}^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{\dagger}\,\psi
-=\rho(\alpha(x))\,\rho(v)\,\rho(x^{\dagger})\,\psi
-=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\,\psi,
-\qquad v\in V,\ \psi\in I,
+\mathrm{Sd}^{\alpha}_x(v)\,Ξ_{\mathrm{wfn}}=\alpha(x)\,v\,x^{\dagger}\,Ξ_{\mathrm{wfn}}
+=\rho(\alpha(x))\,\rho(v)\,\rho(x^{\dagger})\,Ξ_{\mathrm{wfn}}
+=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\,Ξ_{\mathrm{wfn}},
+\qquad v\in V,\ Ξ_{\mathrm{wfn}}\in I,
 $$
 
 where the last equality is the adjoint identity $\rho(x)^{*}=\rho(x^{\dagger})$ of *Pin Representations and Hermitian Modules with Signed Hermitian Adjoint*, valid for the Hermitian form of the ideal. So the left factor of the two-sided operator appears as the signed left multiplication $\Lambda^{\alpha}_x$, and the right factor appears as the **adjoint** of the left multiplication by $x$, not as its inverse. This is the Hermitian specificity of the carrier picture: on the slice the adjoint is the inverse and the two factors are $\rho(\alpha(x))$ and $\rho(x)^{-1}$, which is exactly the inverse formulation; off the slice the second factor is the adjoint, and the defect $\rho(x)\rho(x)^{*}=\rho(xx^{\dagger})$ measures the failure of the carrier to be a unitary module under the action of $x$.
@@ -24,7 +24,7 @@ The Clifford algebra, its parity grading and the intrinsic involutions are *Clif
 **Proposition (the left action).** Let $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ be a left ideal. For every $a\in\mathrm{Cl}(V,\mathfrak{Q})$ the left multiplication $L_a$ carries $I$ into itself, $L_a(I)\subseteq I$, and $I$ is a Clifford module. Consequently the assignment
 
 $$
-\rho(x)\psi=x\,\psi,\qquad x\in\mathrm{Pin}(V,\mathfrak{Q}),\ \psi\in I,
+\rho(x)Ξ_{\mathrm{wfn}}=x\,Ξ_{\mathrm{wfn}},\qquad x\in\mathrm{Pin}(V,\mathfrak{Q}),\ Ξ_{\mathrm{wfn}}\in I,
 $$
 
 is the restriction of the algebra action to the group, that is, the pin representation on the Hermitian module $I$.
@@ -57,25 +57,25 @@ and left multiplication by an even element preserves the two summands while left
 
 ## The Signed Hermitian Pair of Operators on the Ideal
 
-**Proposition (the operator realised by left multiplications).** For $x\in\mathrm{Cl}(V,\mathfrak{Q})$, $v\in V$ and $\psi\in I$,
+**Proposition (the operator realised by left multiplications).** For $x\in\mathrm{Cl}(V,\mathfrak{Q})$, $v\in V$ and $Ξ_{\mathrm{wfn}}\in I$,
 
 $$
-\boxed{\;\mathrm{Sd}^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{\dagger}\,\psi
-=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\,\psi\;} .
+\boxed{\;\mathrm{Sd}^{\alpha}_x(v)\,Ξ_{\mathrm{wfn}}=\alpha(x)\,v\,x^{\dagger}\,Ξ_{\mathrm{wfn}}
+=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\,Ξ_{\mathrm{wfn}}\;} .
 $$
 
 So the signed Hermitian pair is realised on the ideal as the conjugation of the Clifford multiplication by the left multiplication of $\alpha(x)$ and the **adjoint** of the left multiplication of $x$: the left factor is the signed left multiplication $\Lambda^{\alpha}_x$ and the right factor is the dagger right multiplication, read on the ideal as the adjoint operator $\rho(x)^{*}=\rho(x^{\dagger})$. On the unitary slice the adjoint is the inverse and the formula is that of the inverse formulation.
 
-*Proof.* Both sides are the same product of three factors in the algebra, applied to $\psi$; the first factor is $\rho(\alpha(x))=\Lambda^{\alpha}_x$ and the third is $\rho(x^{\dagger})=\rho(x)^{*}$ by the adjoint proposition of the pin-representation article, since the ideal is a Hermitian Clifford module. On the slice $x^{\dagger}=x^{-1}$ and $\rho(x)^{*}=\rho(x)^{-1}$.
+*Proof.* Both sides are the same product of three factors in the algebra, applied to $Ξ_{\mathrm{wfn}}$; the first factor is $\rho(\alpha(x))=\Lambda^{\alpha}_x$ and the third is $\rho(x^{\dagger})=\rho(x)^{*}$ by the adjoint proposition of the pin-representation article, since the ideal is a Hermitian Clifford module. On the slice $x^{\dagger}=x^{-1}$ and $\rho(x)^{*}=\rho(x)^{-1}$.
 
-**Corollary (the reflection, on and off the slice).** Let $u\in V$ with $\mathfrak{Q}(u)\neq0$ and let $\rho_u$ be the reflection in $u^{\perp}$. Then for all $v\in V$ and $\psi\in I$,
+**Corollary (the reflection, on and off the slice).** Let $u\in V$ with $\mathfrak{Q}(u)\neq0$ and let $\rho_u$ be the reflection in $u^{\perp}$. Then for all $v\in V$ and $Ξ_{\mathrm{wfn}}\in I$,
 
 $$
-\boxed{\;\mathrm{Sd}^{\alpha}_u(v)\,\psi=-\mathfrak{Q}(u)\,\rho_u(v)\,\psi,\qquad
-\rho(u)\,\rho(v)\,\rho(u)^{*}\,\psi=-\mathfrak{Q}(u)\,\rho_u(v)\,\psi\;} ,
+\boxed{\;\mathrm{Sd}^{\alpha}_u(v)\,Ξ_{\mathrm{wfn}}=-\mathfrak{Q}(u)\,\rho_u(v)\,Ξ_{\mathrm{wfn}},\qquad
+\rho(u)\,\rho(v)\,\rho(u)^{*}\,Ξ_{\mathrm{wfn}}=-\mathfrak{Q}(u)\,\rho_u(v)\,Ξ_{\mathrm{wfn}}\;} ,
 $$
 
-and on the unitary slice, $\mathfrak{Q}(u)=-1$, both reduce to $\rho_u(v)\psi$; the unsigned two-sided operator is the negative of this on the slice. So on the ideal the two-sided operator with a slice-normalised vector is the reflection, and the sign that the two-sided operator removes is $-\mathfrak{Q}(u)$, which is $+1$ exactly on the slice.
+and on the unitary slice, $\mathfrak{Q}(u)=-1$, both reduce to $\rho_u(v)Ξ_{\mathrm{wfn}}$; the unsigned two-sided operator is the negative of this on the slice. So on the ideal the two-sided operator with a slice-normalised vector is the reflection, and the sign that the two-sided operator removes is $-\mathfrak{Q}(u)$, which is $+1$ exactly on the slice.
 
 *Proof.* The first identity is the previous proposition with $x=u$ and the vector formula $\mathrm{Sd}^{\alpha}_u=-\mathfrak{Q}(u)\rho_u$; the second is the corollary of the pin-representation article.
 
@@ -94,14 +94,14 @@ $$
 of real dimension four, with the volume element $\omega=e_1e_2e_3$ acting by $\omega\pi=e_1e_2\pi$ and the splitting $I^0=\mathrm{span}\{\pi,e_1e_2\pi\}$, $I^1=\mathrm{span}\{e_1\pi,e_2\pi\}$. The dagger is $\sigma=\mathrm{id}$ and $\alpha$ on the generators, so $e_1^{\dagger}=-e_1$, $e_2^{\dagger}=-e_2$; the element $e_1$ is on the slice and
 
 $$
-\mathrm{Sd}^{\alpha}_{e_1}(v)\psi=e_1\,v\,e_1\psi=\rho_{e_1}(v)\psi
+\mathrm{Sd}^{\alpha}_{e_1}(v)Ξ_{\mathrm{wfn}}=e_1\,v\,e_1Ξ_{\mathrm{wfn}}=\rho_{e_1}(v)Ξ_{\mathrm{wfn}}
 $$
 
-for $v\in V$, the reflection, while $\rho(e_1)\rho(v)\rho(e_1)^{-1}\psi=-e_1ve_1\psi=-\rho_{e_1}(v)\psi$. The odd idempotent-supported element $e_1$ acts on the ideal by interchanging $I^0$ and $I^1$, as in the inverse formulation.
+for $v\in V$, the reflection, while $\rho(e_1)\rho(v)\rho(e_1)^{-1}Ξ_{\mathrm{wfn}}=-e_1ve_1Ξ_{\mathrm{wfn}}=-\rho_{e_1}(v)Ξ_{\mathrm{wfn}}$. The odd idempotent-supported element $e_1$ acts on the ideal by interchanging $I^0$ and $I^1$, as in the inverse formulation.
 
 ### The Reflection Read on the Ideal
 
-Take $u=e_1$, $v=e_2$, $\psi=\pi$. Then $\rho_{e_1}$ fixes $e_2$, since $B(e_1,e_2)=0$, and
+Take $u=e_1$, $v=e_2$, $Ξ_{\mathrm{wfn}}=\pi$. Then $\rho_{e_1}$ fixes $e_2$, since $B(e_1,e_2)=0$, and
 
 $$
 \mathrm{Sd}^{\alpha}_{e_1}(e_2)\pi=e_1e_2e_1\pi,\qquad
@@ -123,24 +123,24 @@ For $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ the same construction g
 A **Peirce carrier** $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ is a left ideal and hence a Clifford module on which left multiplication by every element of the algebra is defined; when $\pi$ is primitive it is a minimal left ideal. The whole **pin group** acts on it by left multiplication, spinors are the elements of $I$, and on a simple algebra the action is faithful, with kernel $\mathrm{Pin}\cap(\{1\}\times A')$ over a product. The ideal is not homogeneous: it splits as $I=I^0\oplus I^1$ with $I^i=\mathrm{Cl}^i\pi$, the even elements preserve the two summands and the odd elements interchange them, and the Hermitian form of the ideal pairs only equal parities, so the two chiral halves are Hermitian-orthogonal. The signed Hermitian pair is realised on the carrier by conjugating the Clifford multiplication with two left multiplications,
 
 $$
-\mathrm{Sd}^{\alpha}_x(v)\psi=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\psi
-=\rho(\alpha(x))\,\rho(v)\,\rho(x^{\dagger})\psi ,
+\mathrm{Sd}^{\alpha}_x(v)Ξ_{\mathrm{wfn}}=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}Ξ_{\mathrm{wfn}}
+=\rho(\alpha(x))\,\rho(v)\,\rho(x^{\dagger})Ξ_{\mathrm{wfn}} ,
 $$
 
-the left factor being the **signed left multiplication** $\Lambda^{\alpha}_x$ and the right factor being the **adjoint** of the left multiplication of $x$, the Hermitian specificity of the picture; on the unitary slice the adjoint is the inverse and the formula coincides with the inverse formulation, off the slice the defect $\rho(xx^{\dagger})$ measures the failure of the conjugation to be by a unitary. For a slice-normalised vector $u$ the two-sided operator on the ideal is the reflection, $\mathrm{Sd}^{\alpha}_u(v)\psi=\rho_u(v)\psi$, while the unsigned two-sided operator is its negative; the central volume element of an odd-dimensional algebra acts on the ideal by exchanging the two chiral summands, and the signed Hermitian pair by it acts as $-\mathrm{id}$ where the unsigned one is invisible.
+the left factor being the **signed left multiplication** $\Lambda^{\alpha}_x$ and the right factor being the **adjoint** of the left multiplication of $x$, the Hermitian specificity of the picture; on the unitary slice the adjoint is the inverse and the formula coincides with the inverse formulation, off the slice the defect $\rho(xx^{\dagger})$ measures the failure of the conjugation to be by a unitary. For a slice-normalised vector $u$ the two-sided operator on the ideal is the reflection, $\mathrm{Sd}^{\alpha}_u(v)Ξ_{\mathrm{wfn}}=\rho_u(v)Ξ_{\mathrm{wfn}}$, while the unsigned two-sided operator is its negative; the central volume element of an odd-dimensional algebra acts on the ideal by exchanging the two chiral summands, and the signed Hermitian pair by it acts as $-\mathrm{id}$ where the unsigned one is invisible.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ | Peirce carrier (minimal left ideal here), the spinor module |
-| $\mathrm{Pin}$ acts by $\rho(x)\psi=x\psi$ | Pin action, one-sided, defined for all of $\mathrm{Pin}$ |
+| $\mathrm{Pin}$ acts by $\rho(x)Ξ_{\mathrm{wfn}}=xΞ_{\mathrm{wfn}}$ | Pin action, one-sided, defined for all of $\mathrm{Pin}$ |
 | $I=I^0\oplus I^1$, $I^i=\mathrm{Cl}^i\pi$ | Parity splitting; odd elements exchange the summands |
 | $\langle I^0,I^1\rangle=0$ | Hermitian orthogonality of the chiral halves |
-| $\mathrm{Sd}^{\alpha}_x(v)\psi=\rho(\alpha(x))\rho(v)\rho(x)^{*}\psi$ | Signed Hermitian pair on the ideal |
+| $\mathrm{Sd}^{\alpha}_x(v)Ξ_{\mathrm{wfn}}=\rho(\alpha(x))\rho(v)\rho(x)^{*}Ξ_{\mathrm{wfn}}$ | Signed Hermitian pair on the ideal |
 | $\rho(x)^{*}=\rho(x^{\dagger})=\rho(x)^{-1}$ on $U$ | Adjoint is the inverse on the slice |
 | $\rho(xx^{\dagger})$, the defect | Failure of the conjugation to be unitary off the slice |
-| $\mathrm{Sd}^{\alpha}_u(v)\psi=\rho_u(v)\psi$, $\mathfrak{Q}(u)=-1$ | Reflection on the ideal, on the slice |
+| $\mathrm{Sd}^{\alpha}_u(v)Ξ_{\mathrm{wfn}}=\rho_u(v)Ξ_{\mathrm{wfn}}$, $\mathfrak{Q}(u)=-1$ | Reflection on the ideal, on the slice |
 
 ## Further Reading
 

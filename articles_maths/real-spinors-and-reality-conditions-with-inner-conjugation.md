@@ -98,9 +98,9 @@ In four dimensions the two chiralities separate and the reality conditions act o
 
 In the applications the reality conditions are computed with an explicit conjugation, and it is convenient to record its form.
 
-**Definition.** Let $\Delta$ be the complex spinor module and suppose a reality structure $J$ exists. The **conjugation** of a spinor $\psi\in\Delta$ is $\psi^{c}=J(\psi)$. When the reality structure is real, the Majorana spinors are those with $\psi^{c}=\psi$; when it is quaternionic, the quaternionic structure identifies $\Delta$ with a quaternionic space and conjugation is the action of the quaternionic unit $j$.
+**Definition.** Let $\Delta$ be the complex spinor module and suppose a reality structure $J$ exists. The **conjugation** of a spinor $Ξ_{\mathrm{wfn}}\in\Delta$ is $Ξ_{\mathrm{wfn}}^{c}=J(Ξ_{\mathrm{wfn}})$. When the reality structure is real, the Majorana spinors are those with $Ξ_{\mathrm{wfn}}^{c}=Ξ_{\mathrm{wfn}}$; when it is quaternionic, the quaternionic structure identifies $\Delta$ with a quaternionic space and conjugation is the action of the quaternionic unit $j$.
 
-**Proposition.** The conjugation is antilinear, satisfies $(\psi^{c})^{c}=\pm\psi$, and is equivariant for the spin representation: $\rho(x)(\psi^{c})=(\rho(x)\psi)^{c}$ for $x\in\mathrm{Spin}(V,\mathfrak{Q})$. Consequently the space of Majorana spinors, when it exists, is a real submodule of $\Delta$, and it is the real spinor module of the classification.
+**Proposition.** The conjugation is antilinear, satisfies $(Ξ_{\mathrm{wfn}}^{c})^{c}=\pmΞ_{\mathrm{wfn}}$, and is equivariant for the spin representation: $\rho(x)(Ξ_{\mathrm{wfn}}^{c})=(\rho(x)Ξ_{\mathrm{wfn}})^{c}$ for $x\in\mathrm{Spin}(V,\mathfrak{Q})$. Consequently the space of Majorana spinors, when it exists, is a real submodule of $\Delta$, and it is the real spinor module of the classification.
 
 **Proof.** Immediate from the properties of $J$ and the compatibility with the Clifford action.
 
@@ -131,7 +131,7 @@ Majorana spinors exist exactly when the type is real, Weyl spinors exactly when 
 | $J^2=+1$ | Real structure; fixed points are a real Clifford module |
 | $J^2=-1$ | Quaternionic structure; $\Delta$ is an $\mathbb{H}$-module |
 | $\kappa$ | Componentwise conjugation on $\mathbb{B}\cong M_2(\mathbb{C})$, an algebra automorphism with $\kappa c(v)\kappa^{-1}=\overline{c(v)}$ |
-| $\psi^{c}=J(\psi)$ | Conjugation of a spinor |
+| $Ξ_{\mathrm{wfn}}^{c}=J(Ξ_{\mathrm{wfn}})$ | Conjugation of a spinor |
 | $\Delta_\pm$ | Half-spin spaces, chirality eigenspaces (even $n$) |
 | $d=n-m$, $N=n+m$ | Signature difference and dimension |
 | KO-dimension | The residue $d\bmod8$ that governs the reality type |

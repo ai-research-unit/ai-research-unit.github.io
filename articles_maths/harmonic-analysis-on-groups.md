@@ -149,21 +149,21 @@ The convolution theorem says that $\mathcal{F} : (L^1(G), *) \to (C_0(G^\vee), \
 
 ### Positive-Definite Functions and Bochner's Theorem
 
-**Definition.** A function $\varphi : G \to \mathbb{C}$ is **of positive type** (or positive definite) if for every finite family $x_1, \dots, x_n \in G$ and $c_1, \dots, c_n \in \mathbb{C}$,
+**Definition.** A function $\digamma_{\mathrm{map}} : G \to \mathbb{C}$ is **of positive type** (or positive definite) if for every finite family $x_1, \dots, x_n \in G$ and $c_1, \dots, c_n \in \mathbb{C}$,
 
 $$
-\sum_{i,j=1}^n c_i\,\overline{c_j}\,\varphi(x_j - x_i) \geq 0 .
+\sum_{i,j=1}^n c_i\,\overline{c_j}\,\digamma_{\mathrm{map}}(x_j - x_i) \geq 0 .
 $$
 
-**Theorem (Bochner).** A continuous function $\varphi : G \to \mathbb{C}$ is of positive type if and only if it is the Fourier–Stieltjes transform of a finite positive measure $\mu$ on $G^\vee$,
+**Theorem (Bochner).** A continuous function $\digamma_{\mathrm{map}} : G \to \mathbb{C}$ is of positive type if and only if it is the Fourier–Stieltjes transform of a finite positive measure $\mu$ on $G^\vee$,
 
 $$
-\varphi(x) = \int_{G^\vee} \chi(x)\,d\mu(\chi) .
+\digamma_{\mathrm{map}}(x) = \int_{G^\vee} \chi(x)\,d\mu(\chi) .
 $$
 
-The measure is unique, and $\varphi(0) = \mu(G^\vee) = \|\mu\|$.
+The measure is unique, and $\digamma_{\mathrm{map}}(0) = \mu(G^\vee) = \|\mu\|$.
 
-**Proof sketch.** If $\varphi$ is of positive type, the sesquilinear form on $C_c(G)$ given by $\langle f, g\rangle_\varphi = \int\int f(x)\overline{g(y)}\varphi(y-x)\,dx\,dy$ is positive semidefinite; completing and factoring gives a Hilbert space $H_\varphi$ on which $G$ acts unitarily by translation, and the vector $\zeta = [\text{an approximate delta}]$ is cyclic. Since $G$ is abelian, the operators of translation commute and Fourier analysis of the commutative algebra they generate identifies the representation with a direct integral of characters; the spectral measure of $\zeta$ is the measure $\mu$, and evaluation at $\zeta$ gives the displayed formula. Conversely a Fourier–Stieltjes transform of a positive measure is of positive type because $\sum c_i\bar c_j\chi(x_j - x_i) = |\sum_i c_i\chi(x_i)|^2 \geq 0$ and integration preserves positivity. Uniqueness is the invertibility of the transform on measures. This is the standard Gelfand–Naimark–Segal construction; the version used here is in the references below.
+**Proof sketch.** If $\digamma_{\mathrm{map}}$ is of positive type, the sesquilinear form on $C_c(G)$ given by $\langle f, g\rangle_\digamma_{\mathrm{map}} = \int\int f(x)\overline{g(y)}\digamma_{\mathrm{map}}(y-x)\,dx\,dy$ is positive semidefinite; completing and factoring gives a Hilbert space $H_\digamma_{\mathrm{map}}$ on which $G$ acts unitarily by translation, and the vector $\zeta = [\text{an approximate delta}]$ is cyclic. Since $G$ is abelian, the operators of translation commute and Fourier analysis of the commutative algebra they generate identifies the representation with a direct integral of characters; the spectral measure of $\zeta$ is the measure $\mu$, and evaluation at $\zeta$ gives the displayed formula. Conversely a Fourier–Stieltjes transform of a positive measure is of positive type because $\sum c_i\bar c_j\chi(x_j - x_i) = |\sum_i c_i\chi(x_i)|^2 \geq 0$ and integration preserves positivity. Uniqueness is the invertibility of the transform on measures. This is the standard Gelfand–Naimark–Segal construction; the version used here is in the references below.
 
 **Corollary (Herglotz and the Wiener–Khinchin theorem).** On $\mathbb{Z}$ a positive-definite sequence is the sequence of Fourier coefficients of a positive measure on the circle; on $\mathbb{R}$ the autocorrelation $R(\tau) = \lim_{T\to\infty}\frac{1}{2T}\int_{-T}^T f(t+\tau)\overline{f(t)}\,dt$ of a stationary square-integrable process has a positive spectral measure, and the transform of that measure is $R$. The probabilistic reading of Bochner's theorem is the spectral theory of stationary processes.
 
@@ -263,7 +263,7 @@ The standard cases are the Fourier transform of $\mathbb{R}^n$, the Fourier seri
 | $L^1(G)$, $C^*(G)$ | Convolution algebra and group $\mathrm{C}^*$-algebra |
 | $C_0(G^\vee)$ | Continuous functions vanishing at infinity on the dual |
 | $\|f\|_1$, $\|f\|_2$ | Norms of $L^1(G)$, $L^2(G)$ |
-| positive type | $\sum_{i,j}c_i\overline{c_j}\varphi(x_j - x_i) \geq 0$ |
+| positive type | $\sum_{i,j}c_i\overline{c_j}\digamma_{\mathrm{map}}(x_j - x_i) \geq 0$ |
 | $\mu$ on $G^\vee$ | Spectral measure of Bochner's theorem |
 | $d\chi$ | Dual Haar measure, fixed by inversion |
 | $T^n = \mathbb{R}^n/\mathbb{Z}^n$ | The $n$-torus |

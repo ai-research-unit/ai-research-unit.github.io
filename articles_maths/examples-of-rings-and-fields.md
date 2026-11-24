@@ -18,7 +18,7 @@ The background is *Rings*, *Integral Domains*, *Unique Factorisation Domains*, *
 
 ## Finite Rings and Their Quotients
 
-**Example ($\mathbb{Z}/n\mathbb{Z}$).** For $n \geq 1$ the ring $\mathbb{Z}/n\mathbb{Z}$ has $n$ elements and characteristic $n$. Its units are the classes of the integers coprime to $n$, so the group of invertibles is $(\mathbb{Z}/n\mathbb{Z})^\times$ of order $\varphi(n)$; it is a domain exactly when it is a field, exactly when $n$ is prime, in which case it is $\mathbb{F}_p$; and for composite $n$ every class of a nonunit that is not zero is a zero divisor, since $ab \equiv 0$ with $a,b$ proper divisors of $n$. For $n = 4$ the invertibles are $1, 3$ and the maximal ideal is $(2)$; for $n = 6$ the ring is $\mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/3\mathbb{Z}$ by the Chinese remainder theorem, with idempotents $0,1$ in each factor giving four idempotents in the product.
+**Example ($\mathbb{Z}/n\mathbb{Z}$).** For $n \geq 1$ the ring $\mathbb{Z}/n\mathbb{Z}$ has $n$ elements and characteristic $n$. Its units are the classes of the integers coprime to $n$, so the group of invertibles is $(\mathbb{Z}/n\mathbb{Z})^\times$ of order $\digamma_{\mathrm{tot}}(n)$; it is a domain exactly when it is a field, exactly when $n$ is prime, in which case it is $\mathbb{F}_p$; and for composite $n$ every class of a nonunit that is not zero is a zero divisor, since $ab \equiv 0$ with $a,b$ proper divisors of $n$. For $n = 4$ the invertibles are $1, 3$ and the maximal ideal is $(2)$; for $n = 6$ the ring is $\mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/3\mathbb{Z}$ by the Chinese remainder theorem, with idempotents $0,1$ in each factor giving four idempotents in the product.
 
 **Example (finite fields).** For $q = p^f$ there is, up to isomorphism, exactly one field $\mathbb{F}_q$ with $q$ elements; its group of invertibles is cyclic of order $q-1$, and its prime subfield is $\mathbb{F}_p$. The smallest cases are $\mathbb{F}_2 = \{0,1\}$, $\mathbb{F}_3$, $\mathbb{F}_4 = \mathbb{F}_2[x]/(x^2+x+1)$ and $\mathbb{F}_8 = \mathbb{F}_2[x]/(x^3+x+1)$; these are the fields in which *Finite Fields* andbeing, work, and each is a simple extension of its prime field by an irreducible polynomial.
 
@@ -123,7 +123,7 @@ The two two-dimensional rings fixed by the conventions appear in their proper pl
 |---|---|
 | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ | The number systems |
 | $\mathbb{Z}/n\mathbb{Z}$, $\mathbb{F}_p$, $\mathbb{F}_q$ | Residue rings, prime field, finite field |
-| $\varphi(n)$ | Euler totient, the order of $(\mathbb{Z}/n\mathbb{Z})^\times$ |
+| $\digamma_{\mathrm{tot}}(n)$ | Euler totient, the order of $(\mathbb{Z}/n\mathbb{Z})^\times$ |
 | $\mathbb{Z}[i]$ | Gaussian integers, norm $a^2+b^2$ |
 | $\mathbb{Z}[\sqrt{-2}]$, $\mathbb{Z}[\sqrt{-5}]$ | Quadratic integer rings |
 | $N(a+b\sqrt{-d})$ | Norm $a^2+db^2$ |

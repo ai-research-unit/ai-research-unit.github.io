@@ -15,14 +15,14 @@ The article is organised as follows. The standard mean-field theory of the spin-
 The condensate is described by a macroscopic wave function with three internal components,
 
 $$
-\tilde{Ξ}(\vec r)=\psi(\vec r)\,\exp(i\theta_{\mathrm{pha}}(\vec r))\,
+\tilde{Ξ}(\vec r)=Ξ_{\mathrm{wfn}}(\vec r)\,\exp(i\theta_{\mathrm{pha}}(\vec r))\,
 \vec\varkappa_{\mathrm{ord}}(\vec r),\qquad
-\lvert\psi\rvert^{2}=n(\vec r),\qquad
+\lvertΞ_{\mathrm{wfn}}\rvert^{2}=n(\vec r),\qquad
 \vec\varkappa_{\mathrm{ord}}=\begin{pmatrix}\varkappa_{\mathrm{ord},+}\ \varkappa_{\mathrm{ord},0}\ \varkappa_{\mathrm{ord},-}\end{pmatrix},\qquad
 {\vec\varkappa_{\mathrm{ord}}}^{\dagger}\vec\varkappa_{\mathrm{ord}}=1 ,
 $$
 
-where the amplitude is named through its square, $\lvert\psi\rvert^{2}=n$, because the root of a density is a half power of the base units and is not written; $n$ is the density, $\theta_{\mathrm{pha}}$ the global phase, and $\vec\varkappa_{\mathrm{ord}}$ the *spinor order parameter*, a unit vector in $\mathbb{C}^3$ whose components multiply the states of spin projection $m=+1,0,-1$ along the quantisation axis. The spin operators are the dimensionless three-dimensional matrices
+where the amplitude is named through its square, $\lvertΞ_{\mathrm{wfn}}\rvert^{2}=n$, because the root of a density is a half power of the base units and is not written; $n$ is the density, $\theta_{\mathrm{pha}}$ the global phase, and $\vec\varkappa_{\mathrm{ord}}$ the *spinor order parameter*, a unit vector in $\mathbb{C}^3$ whose components multiply the states of spin projection $m=+1,0,-1$ along the quantisation axis. The spin operators are the dimensionless three-dimensional matrices
 
 $$
 F_x=\frac{1}{\sqrt2}\begin{pmatrix}0&1&0\\1&0&1\\0&1&0\end{pmatrix},\quad
@@ -280,7 +280,7 @@ The pattern is the one the subcategory has established throughout: the algebra s
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{Ξ}=\psi\,\exp(i\theta_{\mathrm{pha}})\vec\varkappa_{\mathrm{ord}}$, with $\lvert\psi\rvert^{2}=n$ | Condensate wave function; $n$ density, $\theta_{\mathrm{pha}}$ phase |
+| $\tilde{Ξ}=Ξ_{\mathrm{wfn}}\,\exp(i\theta_{\mathrm{pha}})\vec\varkappa_{\mathrm{ord}}$, with $\lvertΞ_{\mathrm{wfn}}\rvert^{2}=n$ | Condensate wave function; $n$ density, $\theta_{\mathrm{pha}}$ phase |
 | $\vec\varkappa_{\mathrm{ord}}=(\varkappa_{\mathrm{ord},+},\varkappa_{\mathrm{ord},0},\varkappa_{\mathrm{ord},-})^T$ | Spinor order parameter, ${\vec\varkappa_{\mathrm{ord}}}^{\dagger}\vec\varkappa_{\mathrm{ord}}=1$ |
 | $F_{\imath}$ | Dimensionless spin-one operators, eigenvalues $\pm1,0$; $\vec F^2=2I_3$ |
 | $\langle\vec F\rangle$ | Magnetic (vector) order parameter |

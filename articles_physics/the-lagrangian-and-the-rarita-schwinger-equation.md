@@ -18,13 +18,13 @@ One symbol is used and not defined by this article. The literature's action is w
 
 ## The Action in Element Form: Named and Not Written
 
-The standard action, named. In the literature the massive spin-$\tfrac32$ field's action is written with a vector-spinor $\psi_{\imath}$, the Dirac matrices, and the object $\gamma_{\imath\jmath}=\frac{i}{2}[\gamma_{\imath},\gamma_{\jmath}]$:
+The standard action, named. In the literature the massive spin-$\tfrac32$ field's action is written with a vector-spinor $Ξ_{\mathrm{wfn},\imath}$, the Dirac matrices, and the object $\gamma_{\imath\jmath}=\frac{i}{2}[\gamma_{\imath},\gamma_{\jmath}]$:
 
 $$
-S_{\mathrm{RS}}=\int\mathrm{d}^{4}x\;\bar\psi_{\imath}\Bigl(i\gamma_{\imath\jmath\rho}\partial_\rho-m\,\gamma_{\imath\jmath}\Bigr)\psi_{\jmath} ,
+S_{\mathrm{RS}}=\int\mathrm{d}^{4}x\;\barΞ_{\mathrm{wfn},\imath}\Bigl(i\gamma_{\imath\jmath\rho}\partial_\rho-m\,\gamma_{\imath\jmath}\Bigr)Ξ_{\mathrm{wfn},\jmath} ,
 $$
 
-with the antisymmetrised product $\gamma_{\imath\jmath\rho}$. The literature prints these matrices with the index raised and this article prints every index low: the metric is the identity, so the two spellings name the same array and the action is the same functional. It is not written here in the algebra, and the box is a quotation of the literature's form rather than a formula of this corpus. The biquaternionic counterpart would replace $\psi_{\imath}$ by $\tilde\Xi_{\imath}$, $\partial_\rho$ by $\tilde\nabla_\Phi$, and the matrices by elements of the algebra acting by multiplication — and it is the last replacement that has not been made.
+with the antisymmetrised product $\gamma_{\imath\jmath\rho}$. The literature prints these matrices with the index raised and this article prints every index low: the metric is the identity, so the two spellings name the same array and the action is the same functional. It is not written here in the algebra, and the box is a quotation of the literature's form rather than a formula of this corpus. The biquaternionic counterpart would replace $Ξ_{\mathrm{wfn},\imath}$ by $\tilde\Xi_{\imath}$, $\partial_\rho$ by $\tilde\nabla_\Phi$, and the matrices by elements of the algebra acting by multiplication — and it is the last replacement that has not been made.
 
 What the action must contain for the parent's results to follow.
 
@@ -109,7 +109,7 @@ $$
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $\vec e_z$ | Fixed direction of the trace constraint |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
-| $\psi_{\imath},\ \gamma_{\imath},\ \gamma_{\imath\jmath}$ | The literature's matrices, printed low and not adopted |
+| $Ξ_{\mathrm{wfn},\imath},\ \gamma_{\imath},\ \gamma_{\imath\jmath}$ | The literature's matrices, printed low and not adopted |
 | $S_{\mathrm{RS}}$ | The standard action, named and not written |
 
 ## Further Reading

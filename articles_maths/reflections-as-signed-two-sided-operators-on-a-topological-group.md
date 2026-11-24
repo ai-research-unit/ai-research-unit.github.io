@@ -59,7 +59,7 @@ $$
 
 the set of elements that carry a reflection. Then $C$ is closed in $G$, it is symmetric under $a \mapsto a^{-1}$ and under $a \mapsto \alpha(a)$, and it contains $I(\sigma) = G^\alpha$.
 
-**Proof.** The map $\varphi : a \mapsto a\,\alpha(a)$ is continuous, being a product of continuous maps, and $Z(G)$ is closed in a Hausdorff group, being the equalizer of the continuous maps $(x,y)\mapsto xg$ and $(x,y)\mapsto gx$ or equivalently the intersection of the centralisers $C_G(g)$; hence $C = \varphi^{-1}(Z(G))$ is closed. If $a\alpha(a)$ is central then so is its inverse $a^{-1}\alpha(a^{-1}) = (a\alpha(a))^{-1}$, and so is $\alpha(a)\alpha(\alpha(a)) = \alpha(a\alpha(a))$, which gives the two symmetries. For $a \in G^\alpha$ the dictionary gives $\alpha(a) = a^{-1}$, so $a\alpha(a) = e \in Z(G)$.
+**Proof.** The map $\digamma_{\mathrm{map}} : a \mapsto a\,\alpha(a)$ is continuous, being a product of continuous maps, and $Z(G)$ is closed in a Hausdorff group, being the equalizer of the continuous maps $(x,y)\mapsto xg$ and $(x,y)\mapsto gx$ or equivalently the intersection of the centralisers $C_G(g)$; hence $C = \digamma_{\mathrm{map}}^{-1}(Z(G))$ is closed. If $a\alpha(a)$ is central then so is its inverse $a^{-1}\alpha(a^{-1}) = (a\alpha(a))^{-1}$, and so is $\alpha(a)\alpha(\alpha(a)) = \alpha(a\alpha(a))$, which gives the two symmetries. For $a \in G^\alpha$ the dictionary gives $\alpha(a) = a^{-1}$, so $a\alpha(a) = e \in Z(G)$.
 
 **Theorem (the carrying elements and the cosets).** Two elements $a, a'$ carry the same reflection if and only if $a' \in aZ(G)$, so the reflections are parametrised by the cosets $aZ(G)$ of the elements $a \in C$, and the map
 

@@ -85,7 +85,7 @@ $$
 
 and the conjugate determinant also vanishes, so $[\,p(y\bar v'-y'\bar v)\,]_{a}=0$; the argument at $b$ is the same. The symmetry is therefore the boundary-term identity of the preceding section. The self-adjointness of the closure in the regular case is the Weyl–Stone result quoted in *Ordinary Differential Equations*: an endpoint is in the limit-point case for every separated condition, and a symmetric operator with deficiency indices $(0,0)$ is self-adjoint.
 
-**Definition.** A number $\lambda \in \mathbb{C}$ is an **eigenvalue** of the Sturm–Liouville operator if there is a nonzero $y\in\mathcal{D}(L)$ with $Ly=\lambda y$, i.e. $\ell y = \lambda w y$; such a $y$ is an **eigenfunction**. The **eigenvalue problem** is the equation $\ell\varphi = \lambda w\varphi$ together with the boundary condition, which is the Sturm–Liouville problem of *Ordinary Differential Equations*.
+**Definition.** A number $\lambda \in \mathbb{C}$ is an **eigenvalue** of the Sturm–Liouville operator if there is a nonzero $y\in\mathcal{D}(L)$ with $Ly=\lambda y$, i.e. $\ell y = \lambda w y$; such a $y$ is an **eigenfunction**. The **eigenvalue problem** is the equation $\ell\digamma_{\mathrm{map}} = \lambda w\digamma_{\mathrm{map}}$ together with the boundary condition, which is the Sturm–Liouville problem of *Ordinary Differential Equations*.
 
 **Theorem (the eigenvalues are real and simple).** Let the boundary condition be separated and symmetric. Then every eigenvalue is real, and its eigenspace is one-dimensional.
 
@@ -103,31 +103,31 @@ and may be characterised by the min-max principle: written in increasing order, 
 
 ## The Eigenfunction Expansion
 
-**Theorem (the expansion).** Let the problem be regular. Then there are real numbers $\lambda_1<\lambda_2<\cdots$ with $\lambda_n\to\infty$ and eigenfunctions $\varphi_n$ such that $L\varphi_n=\lambda_n\varphi_n$, the $\varphi_n$ are orthonormal in $L^2((a,b),w\,dx)$, and they form a complete orthonormal basis: every $f$ of the space has
+**Theorem (the expansion).** Let the problem be regular. Then there are real numbers $\lambda_1<\lambda_2<\cdots$ with $\lambda_n\to\infty$ and eigenfunctions $\digamma_{\mathrm{map},n}$ such that $L\digamma_{\mathrm{map},n}=\lambda_n\digamma_{\mathrm{map},n}$, the $\digamma_{\mathrm{map},n}$ are orthonormal in $L^2((a,b),w\,dx)$, and they form a complete orthonormal basis: every $f$ of the space has
 
 $$
-\boxed{\;f = \sum_{n\ge1}\langle f,\varphi_n\rangle_w\,\varphi_n , \qquad \|f\|_w^2 = \sum_{n\ge1}\bigl|\langle f,\varphi_n\rangle_w\bigr|^2\;} ,
+\boxed{\;f = \sum_{n\ge1}\langle f,\digamma_{\mathrm{map},n}\rangle_w\,\digamma_{\mathrm{map},n} , \qquad \|f\|_w^2 = \sum_{n\ge1}\bigl|\langle f,\digamma_{\mathrm{map},n}\rangle_w\bigr|^2\;} ,
 $$
 
 the series converging in the weighted $L^2$ norm; and, in the sense of the spectral theorem for a self-adjoint operator with compact resolvent,
 
 $$
-L = \sum_{n\ge1}\lambda_n\,\langle\cdot,\varphi_n\rangle_w\,\varphi_n , \qquad G = \sum_{n\ge1}\frac{1}{\lambda_n}\,\langle\cdot,\varphi_n\rangle_w\,\varphi_n ,
+L = \sum_{n\ge1}\lambda_n\,\langle\cdot,\digamma_{\mathrm{map},n}\rangle_w\,\digamma_{\mathrm{map},n} , \qquad G = \sum_{n\ge1}\frac{1}{\lambda_n}\,\langle\cdot,\digamma_{\mathrm{map},n}\rangle_w\,\digamma_{\mathrm{map},n} ,
 $$
 
 where $G$ is the Green operator of *The Green Operator* for the same boundary condition, provided the homogeneous problem is trivial.
 
-*Proof.* The eigenfunction expansion with the stated convergence is the Sturm–Liouville theorem of *Ordinary Differential Equations*; the eigenvalues are real and simple by the preceding section, and the asymptotic law of that article shows that they tend to infinity. For the operator form, the expansion of $f$ and the eigenvalue equation give $Lf=\sum\lambda_n\langle f,\varphi_n\rangle_w\varphi_n$ for $f$ in the domain, which is the first display. The second display follows from $LG=I$: applying the first display to $\varphi_n$ recovers $\lambda_n\varphi_n$, so $G$ acts on $\varphi_n$ by $\lambda_n^{-1}$, and the expansion of $G$ is its action on the eigenbasis. The two displays are the diagonalisation of $L$ and of its inverse.
+*Proof.* The eigenfunction expansion with the stated convergence is the Sturm–Liouville theorem of *Ordinary Differential Equations*; the eigenvalues are real and simple by the preceding section, and the asymptotic law of that article shows that they tend to infinity. For the operator form, the expansion of $f$ and the eigenvalue equation give $Lf=\sum\lambda_n\langle f,\digamma_{\mathrm{map},n}\rangle_w\digamma_{\mathrm{map},n}$ for $f$ in the domain, which is the first display. The second display follows from $LG=I$: applying the first display to $\digamma_{\mathrm{map},n}$ recovers $\lambda_n\digamma_{\mathrm{map},n}$, so $G$ acts on $\digamma_{\mathrm{map},n}$ by $\lambda_n^{-1}$, and the expansion of $G$ is its action on the eigenbasis. The two displays are the diagonalisation of $L$ and of its inverse.
 
 **Corollary (the boundary-value problem).** If the homogeneous problem is trivial, then for every $\lambda$ that is not an eigenvalue the equation $Ly=\lambda y+f$, that is $\ell y = \lambda wy+wf$, has the unique solution
 
 $$
-y = \sum_{n\ge1}\frac{\langle f,\varphi_n\rangle_w}{\lambda_n-\lambda}\,\varphi_n ,
+y = \sum_{n\ge1}\frac{\langle f,\digamma_{\mathrm{map},n}\rangle_w}{\lambda_n-\lambda}\,\digamma_{\mathrm{map},n} ,
 $$
 
 the series converging in $L^2_w$; for $\lambda=0$ the solution is the Green-operator solution $Gf$.
 
-*Proof.* Write $y=\sum c_n\varphi_n$ and $f=\sum f_n\varphi_n$ with $f_n=\langle f,\varphi_n\rangle_w$; the equation $Ly=\lambda y+f$ reads $(\lambda_n-\lambda)c_n=f_n$ for each $n$, and the coefficient is nonzero exactly when $\lambda$ is not an eigenvalue. The convergence in $L^2_w$ follows from the growth $\lambda_n\to\infty$ and the square-summability of $(f_n)$, and the case $\lambda=0$ is the expansion of $G$ above.
+*Proof.* Write $y=\sum c_n\digamma_{\mathrm{map},n}$ and $f=\sum f_n\digamma_{\mathrm{map},n}$ with $f_n=\langle f,\digamma_{\mathrm{map},n}\rangle_w$; the equation $Ly=\lambda y+f$ reads $(\lambda_n-\lambda)c_n=f_n$ for each $n$, and the coefficient is nonzero exactly when $\lambda$ is not an eigenvalue. The convergence in $L^2_w$ follows from the growth $\lambda_n\to\infty$ and the square-summability of $(f_n)$, and the case $\lambda=0$ is the expansion of $G$ above.
 
 **Example (the classical instances).** The following are the regular and singular instances the category uses.
 
@@ -145,7 +145,7 @@ The Legendre and Bessel problems are singular at one endpoint and their conditio
 
 The Sturm–Liouville expression is $\ell y=-(py')'+qy$ with $p>0$ and $q$ real, divided by a positive weight $w$ to give the operator $L=w^{-1}\ell$ on the weighted space $L^2((a,b),w\,dx)$; every second-order expression is put in this form, and the form is unique up to a common factor of $p$, $q$ and $w$. The two integrations by parts give the boundary-term identity $\int(\ell y)\bar v-\int y\overline{\ell v}=[p(y\bar v'-y'\bar v)]_a^b$, so the operator is formally self-adjoint for the weighted pairing, and a separated boundary condition makes it symmetric because the determinant of the boundary data vanishes at each endpoint; in the regular case the closure is self-adjoint. The eigenvalues are real and simple for a separated condition, they are the stationary values of the Rayleigh quotient and obey the min-max principle, and in the regular case they form an increasing sequence tending to infinity.
 
-The eigenfunctions form a complete orthonormal basis of the weighted space, the expansion being the Sturm–Liouville theorem; in operator form the expansion diagonalises both the operator, $L=\sum\lambda_n\langle\cdot,\varphi_n\rangle_w\varphi_n$, and its inverse, the Green operator $G=\sum\lambda_n^{-1}\langle\cdot,\varphi_n\rangle_w\varphi_n$, and it solves the boundary-value problem in the form $y=\sum(\lambda_n-\lambda)^{-1}\langle f,\varphi_n\rangle_w\varphi_n$ away from the spectrum. The regular instances are the Fourier sine and cosine problems, and the singular ones are the Legendre, Bessel and Chebyshev problems, whose conditions are those of boundedness at the singular endpoint.
+The eigenfunctions form a complete orthonormal basis of the weighted space, the expansion being the Sturm–Liouville theorem; in operator form the expansion diagonalises both the operator, $L=\sum\lambda_n\langle\cdot,\digamma_{\mathrm{map},n}\rangle_w\digamma_{\mathrm{map},n}$, and its inverse, the Green operator $G=\sum\lambda_n^{-1}\langle\cdot,\digamma_{\mathrm{map},n}\rangle_w\digamma_{\mathrm{map},n}$, and it solves the boundary-value problem in the form $y=\sum(\lambda_n-\lambda)^{-1}\langle f,\digamma_{\mathrm{map},n}\rangle_w\digamma_{\mathrm{map},n}$ away from the spectrum. The regular instances are the Fourier sine and cosine problems, and the singular ones are the Legendre, Bessel and Chebyshev problems, whose conditions are those of boundedness at the singular endpoint.
 
 ## Summary of Notation
 
@@ -159,7 +159,7 @@ The eigenfunctions form a complete orthonormal basis of the weighted space, the 
 | $L^2((a,b),w\,dx)$ | Weighted $L^2$ space |
 | $\alpha_1,\alpha_2,\beta_1,\beta_2$ | Coefficients of the separated boundary conditions |
 | $\lambda$, $\lambda_n$ | Spectral parameter and eigenvalues |
-| $\varphi_n$ | Orthonormal eigenfunctions |
+| $\digamma_{\mathrm{map},n}$ | Orthonormal eigenfunctions |
 | $R(y)$ | Rayleigh quotient |
 | regular, singular endpoint | $p,w$ positive and continuous on the closed interval, or not |
 | $G$ | Green operator of the problem |

@@ -27,7 +27,7 @@ with $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$, for every locally compact $G
 
 **Corollary (positivity is automatic).** For every $f\in L^1(G)$ the operator $\pi(f^*\!*f) = \pi(f)^*\pi(f)$ is positive, and the functional $f\mapsto\langle\pi(f)\zeta,\zeta\rangle$ is a positive functional on the group algebra for every $\zeta\in\mathcal{H}$; conversely every positive functional of norm one is of this form for some cyclically represented $\pi$. This is the operator statement of the correspondence between positive functionals and positive definite functions.
 
-**Proof.** $\pi(f)^*\pi(f)\geq0$ in $B(\mathcal{H})$; the functional $\omega_\zeta(f) = \langle\pi(f)\zeta,\zeta\rangle = \int f(x)\langle\pi(x)\zeta,\zeta\rangle dx$ has the positive definite function $\phi_\zeta(x) = \langle\pi(x)\zeta,\zeta\rangle$ as its kernel, and the converse is the GNS construction of *Positive Definite Functions and the Gelfand–Raikov Theorem*.
+**Proof.** $\pi(f)^*\pi(f)\geq0$ in $B(\mathcal{H})$; the functional $\omega_\zeta(f) = \langle\pi(f)\zeta,\zeta\rangle = \int f(x)\langle\pi(x)\zeta,\zeta\rangle dx$ has the positive definite function $\digamma_{\mathrm{map},\zeta}(x) = \langle\pi(x)\zeta,\zeta\rangle$ as its kernel, and the converse is the GNS construction of *Positive Definite Functions and the Gelfand–Raikov Theorem*.
 
 ## Invariants and the Averaging Projection
 

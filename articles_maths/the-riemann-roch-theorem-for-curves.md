@@ -110,7 +110,7 @@ with equality if and only if $D = 0$, or $D \sim K_C$, or $C$ is hyperelliptic a
 
 ### Riemann–Hurwitz
 
-**Theorem (Riemann–Hurwitz).** Let $\phi : C \to C'$ be a finite separable morphism of nonsingular projective curves over $K$ of degree $n$, with constant fields $K_C$, $K_{C'}$ and $K'' = C'_{K_{C}}$, so that $[C:K''C'] = n/[K_C:K_{C'}] =: n_0$. Then
+**Theorem (Riemann–Hurwitz).** Let $\digamma_{\mathrm{map}} : C \to C'$ be a finite separable morphism of nonsingular projective curves over $K$ of degree $n$, with constant fields $K_C$, $K_{C'}$ and $K'' = C'_{K_{C}}$, so that $[C:K''C'] = n/[K_C:K_{C'}] =: n_0$. Then
 
 $$
 \boxed{\;2g_C - 2 = n_0(2g_{C'}-2) + \deg \mathrm{D}_{C/C'}\;},

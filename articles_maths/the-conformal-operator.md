@@ -54,10 +54,10 @@ acting on functions.
 **Theorem (the conformal covariance of $L$).** Under the conformal change $g' = \Omega^2 g$ with $\Omega$ a positive smooth function the conformal Laplacian transforms by
 
 $$
-\boxed{\;L_{g'}(\varphi) = \Omega^{-\frac{n+2}{2}}\, L_g\!\left(\Omega^{\frac{n-2}{2}}\, \varphi\right)\;} ,
+\boxed{\;L_{g'}(\digamma_{\mathrm{map}}) = \Omega^{-\frac{n+2}{2}}\, L_g\!\left(\Omega^{\frac{n-2}{2}}\, \digamma_{\mathrm{map}}\right)\;} ,
 $$
 
-so that the operator is **conformally covariant of weight** $-(n+2)/2$: it intertwines the multiplication by the two powers of the conformal factor, and the equation $L_g \varphi = 0$ is conformally invariant when $\varphi$ transforms with the weight $(n-2)/2$.
+so that the operator is **conformally covariant of weight** $-(n+2)/2$: it intertwines the multiplication by the two powers of the conformal factor, and the equation $L_g \digamma_{\mathrm{map}} = 0$ is conformally invariant when $\digamma_{\mathrm{map}}$ transforms with the weight $(n-2)/2$.
 
 The theorem is the computation of the transformation of the Laplace–Beltrami operator and the scalar curvature under $g' = \Omega^2 g$ and the choice of the added multiple of the scalar curvature that makes the two failure terms cancel; it is the standard conformal covariance of the Yamabe operator, proved in *Conformal Geometry* and in *Riemannian Geometry*, and it is quoted here as the model of a conformally invariant operator.
 
@@ -112,7 +112,7 @@ The theorem is the local conformal flatness theorem of *Riemannian Geometry* and
 **Definition.** Let $\mathcal{D}$ be the graded vector space of the conformal densities of a conformal manifold, graded by the conformal weight, and let $\alpha$ be the **grade involution** that multiplies a density of weight $w$ by $(-1)^w$; the **signed conformal operator** is the two-sided operator
 
 $$
-\mathrm{Sd}^{\alpha}_{A,B}(\varphi) = A\,\alpha(\varphi)\,B ,
+\mathrm{Sd}^{\alpha}_{A,B}(\digamma_{\mathrm{map}}) = A\,\alpha(\digamma_{\mathrm{map}})\,B ,
 $$
 
 where $A$ and $B$ are operators of the conformal weight $a$ and $b$ acting on the densities; the twist by $\alpha$ records the sign of the conformal factor, and it is the conformal instance of the signed two-sided operator of the corpus.
@@ -127,7 +127,7 @@ $$
 L_{g'} = \Omega^{-\frac{n+2}{2}}\, L_g\, \Omega^{\frac{n-2}{2}} ,
 $$
 
-the two-sided signed operator with the parameters the two powers of $\Omega$, and the conformal invariance of the equation $L\varphi = 0$ is the statement that the operator is a fixed point of this action on the densities of the appropriate weights.
+the two-sided signed operator with the parameters the two powers of $\Omega$, and the conformal invariance of the equation $L\digamma_{\mathrm{map}} = 0$ is the statement that the operator is a fixed point of this action on the densities of the appropriate weights.
 
 **Proof.** The covariance formula of the conformal Laplacian is exactly the displayed conjugacy; the identification of the two powers as the two parameters of a signed two-sided operator is the definition, and the invariance of the kernel is the consequence that the left factor is invertible. The details of the transformation formula are in *Conformal Geometry*.
 
@@ -135,7 +135,7 @@ the two-sided signed operator with the parameters the two powers of $\Omega$, an
 
 ## Summary
 
-The conformal operator of a quadratic space is a linear map $T$ with $\mathfrak{Q}(Tx) = \lambda(T)\mathfrak{Q}(x)$, and the conformal operators form the similarity group $\operatorname{CO}(V,\mathfrak{Q})$, with the orthogonal group as the kernel of the factor and the scalars as the image up to squares; in a basis the condition is $T^{\mathsf T}G\,T = \lambda(T)G$, and the twisted conjugation $x \mapsto axb$ is the signed two-sided form of the same preservation. On a conformal manifold the conformal operators are the conformal diffeomorphisms, and the conformal Laplacian $L_g = \Delta_g + \frac{n-2}{4(n-1)}\operatorname{scal}_g$ is the invariant differential operator of the class, covariant of weight $-(n+2)/2$ under $g \mapsto \Omega^2 g$. The conformal group of the round sphere is $O(n+1,1)/\{\pm1\}$, realised by the Möbius transformations, and Liouville's theorem makes the conformal operator group of a domain of dimension at least three rigid, a restriction of the Möbius group. The Weyl tensor is the conformally invariant part of the curvature and the obstruction to conformal flatness, and it is the invariant of the operator layer that the conformal operators cannot change. The signed conformal operator is the two-sided operator $\mathrm{Sd}^{\alpha}_{A,B}(\varphi) = A\alpha(\varphi)B$ twisted by the weight grading, and the covariance of the conformal Laplacian is its statement.
+The conformal operator of a quadratic space is a linear map $T$ with $\mathfrak{Q}(Tx) = \lambda(T)\mathfrak{Q}(x)$, and the conformal operators form the similarity group $\operatorname{CO}(V,\mathfrak{Q})$, with the orthogonal group as the kernel of the factor and the scalars as the image up to squares; in a basis the condition is $T^{\mathsf T}G\,T = \lambda(T)G$, and the twisted conjugation $x \mapsto axb$ is the signed two-sided form of the same preservation. On a conformal manifold the conformal operators are the conformal diffeomorphisms, and the conformal Laplacian $L_g = \Delta_g + \frac{n-2}{4(n-1)}\operatorname{scal}_g$ is the invariant differential operator of the class, covariant of weight $-(n+2)/2$ under $g \mapsto \Omega^2 g$. The conformal group of the round sphere is $O(n+1,1)/\{\pm1\}$, realised by the Möbius transformations, and Liouville's theorem makes the conformal operator group of a domain of dimension at least three rigid, a restriction of the Möbius group. The Weyl tensor is the conformally invariant part of the curvature and the obstruction to conformal flatness, and it is the invariant of the operator layer that the conformal operators cannot change. The signed conformal operator is the two-sided operator $\mathrm{Sd}^{\alpha}_{A,B}(\digamma_{\mathrm{map}}) = A\alpha(\digamma_{\mathrm{map}})B$ twisted by the weight grading, and the covariance of the conformal Laplacian is its statement.
 
 ## Summary of Notation
 
@@ -153,7 +153,7 @@ The conformal operator of a quadratic space is a linear map $T$ with $\mathfrak{
 | $W$ | Weyl tensor, the trace-free part of the curvature |
 | Cotton tensor | Obstruction to conformal flatness in dimension $3$ |
 | $\alpha$ | Grade involution of the conformal weight |
-| $\mathrm{Sd}^{\alpha}_{A,B}(\varphi) = A\alpha(\varphi)B$ | Signed two-sided conformal operator |
+| $\mathrm{Sd}^{\alpha}_{A,B}(\digamma_{\mathrm{map}}) = A\alpha(\digamma_{\mathrm{map}})B$ | Signed two-sided conformal operator |
 
 ## Further Reading
 

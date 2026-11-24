@@ -156,10 +156,10 @@ Four sectors, and the free Proca field is the one that refuses. The limit needs 
 
 ## The Classical Equations
 
-Start from the Schrödinger equation. In the corpus's biquaternionic form it is $i\,\frac{h}{2\pi}\,c\partial_{h_t'}\tilde\Xi=\tilde H_\Psi\tilde\Xi$, which with $h_t'=c\,t$ reads $i \frac{h}{2\pi}\,\partial_t\psi=H\psi$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
+Start from the Schrödinger equation. In the corpus's biquaternionic form it is $i\,\frac{h}{2\pi}\,c\partial_{h_t'}\tilde\Xi=\tilde H_\Psi\tilde\Xi$, which with $h_t'=c\,t$ reads $i \frac{h}{2\pi}\,\partial_tΞ_{\mathrm{wfn}}=HΞ_{\mathrm{wfn}}$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
 
 $$
-i \frac{h}{2\pi}\,\partial_t\psi=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi\psi+V\psi .
+i \frac{h}{2\pi}\,\partial_tΞ_{\mathrm{wfn}}=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\PhiΞ_{\mathrm{wfn}}+VΞ_{\mathrm{wfn}} .
 $$
 
 Substitute the amplitude and the phase, $\tilde{Ξ}=Ae^{i\theta_{\mathrm{phs}}}\xi$ with $A>0$ and $S_{\tilde\Xi}$ real. Two real equations follow, and neither is an approximation:

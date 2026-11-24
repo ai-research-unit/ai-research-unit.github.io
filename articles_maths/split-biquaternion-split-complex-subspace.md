@@ -163,10 +163,10 @@ The intersection with the vector subspace is the origin, so $\mathbb{B}_{\mathrm
 
 ## The Image in the Two Halves
 
-Under the idempotent-decomposition isomorphism $\varphi : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, a central element has image the pair of **real scalars**
+Under the idempotent-decomposition isomorphism $\digamma_{\mathrm{map}} : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, a central element has image the pair of **real scalars**
 
 $$
-\varphi(Q_t e_t) = (Q_t^+, Q_t^-), \qquad Q_t^\pm = q_t \pm q'_t \in \mathbb{R}.
+\digamma_{\mathrm{map}}(Q_t e_t) = (Q_t^+, Q_t^-), \qquad Q_t^\pm = q_t \pm q'_t \in \mathbb{R}.
 $$
 
 The image of $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is therefore the set $\mathbb{R} \oplus \mathbb{R}$ of pairs of real scalars, the centre of $\mathbb{H} \oplus \mathbb{H}$. The split-biquaternion norm has the matching description
@@ -209,7 +209,7 @@ The split complex subspace $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Quaternion, Hermitian, anti-Hermitian subspaces |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm, restricting to $Q_t^2$ |
-| $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Idempotent-decomposition isomorphism |
+| $\digamma_{\mathrm{map}}(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Idempotent-decomposition isomorphism |
 | $\mathbb{R}, j\mathbb{R}$ | The two coordinate blocks of the centre |
 | $\partial/\partial q_t, \partial/\partial q'_t$ | Split complex Cauchy–Riemann operator on the centre |
 

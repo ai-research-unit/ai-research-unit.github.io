@@ -125,10 +125,10 @@ The **idempotents** of the subspace are the solutions of $\tilde{Q}^2 = \tilde{Q
 
 ## The Image in the Two Halves
 
-Under the idempotent-decomposition isomorphism $\varphi : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, an element with real coefficients has $\tilde q = \tilde{Q}$, $\tilde q' = 0$ in the decomposition $\tilde{Q} = \tilde q + j\tilde q'$, so
+Under the idempotent-decomposition isomorphism $\digamma_{\mathrm{map}} : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, an element with real coefficients has $\tilde q = \tilde{Q}$, $\tilde q' = 0$ in the decomposition $\tilde{Q} = \tilde q + j\tilde q'$, so
 
 $$
-\varphi(\tilde{Q}) = (\tilde{Q}, \tilde{Q}), \qquad \tilde{Q} \in \mathbb{H}.
+\digamma_{\mathrm{map}}(\tilde{Q}) = (\tilde{Q}, \tilde{Q}), \qquad \tilde{Q} \in \mathbb{H}.
 $$
 
 The image of the quaternion subspace is therefore the **diagonal** $\{(h, h) : h \in \mathbb{H}\}$, a subalgebra isomorphic to $\mathbb{H}$: under $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$, the quaternion subspace is the diagonal copy of $\mathbb{H}$.
@@ -169,7 +169,7 @@ As the fixed space of split complex conjugation, the quaternion subspace is the 
 
 ## Summary
 
-The quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is the fixed space of split complex conjugation, the set of elements with real coefficients; it is a real vector space of dimension $4$ with basis $e_t, \vec e_x, \vec e_y, \vec e_z$, a real form of the algebra. It is a subalgebra isomorphic to the real quaternion algebra $\mathbb{H}$, noncommutative and a **division algebra**: it contains no zero divisor, every nonzero element is invertible, and the split-biquaternion norm restricts to the positive definite quaternion norm $N = \sum_\mu q_\mu^2$, so $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. Its roots of $-1$ are the unit pure quaternions $S^2$, it contains the quaternion imaginary units with $\vec e_x \vec e_y = \vec e_z$, and its commutator is $2\,\vec q\times\vec v$, a pure quaternion, so the commutator subalgebra is the three-dimensional space of pure quaternions and the subspace is the Lie algebra $\mathrm{SO}(3)$ under the bracket. The only idempotents it contains are $0$ and $1$; the nontrivial idempotents of the algebra lie in the split complex subspace. Its image under $\varphi$ is the diagonal copy of $\mathbb{H}$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, split complex conjugation fixes it pointwise and quaternion and Hermitian conjugations both act as the quaternion conjugation; the subspace meets the split complex and Hermitian subspaces in $\mathbb{R}$ and the anti-Hermitian and vector subspaces in the space of pure real quaternions.
+The quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is the fixed space of split complex conjugation, the set of elements with real coefficients; it is a real vector space of dimension $4$ with basis $e_t, \vec e_x, \vec e_y, \vec e_z$, a real form of the algebra. It is a subalgebra isomorphic to the real quaternion algebra $\mathbb{H}$, noncommutative and a **division algebra**: it contains no zero divisor, every nonzero element is invertible, and the split-biquaternion norm restricts to the positive definite quaternion norm $N = \sum_\mu q_\mu^2$, so $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. Its roots of $-1$ are the unit pure quaternions $S^2$, it contains the quaternion imaginary units with $\vec e_x \vec e_y = \vec e_z$, and its commutator is $2\,\vec q\times\vec v$, a pure quaternion, so the commutator subalgebra is the three-dimensional space of pure quaternions and the subspace is the Lie algebra $\mathrm{SO}(3)$ under the bracket. The only idempotents it contains are $0$ and $1$; the nontrivial idempotents of the algebra lie in the split complex subspace. Its image under $\digamma_{\mathrm{map}}$ is the diagonal copy of $\mathbb{H}$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, split complex conjugation fixes it pointwise and quaternion and Hermitian conjugations both act as the quaternion conjugation; the subspace meets the split complex and Hermitian subspaces in $\mathbb{R}$ and the anti-Hermitian and vector subspaces in the space of pure real quaternions.
 
 ## Summary of Notation
 
@@ -183,7 +183,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is the fixed sp
 | $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ | Positive definite quaternion norm on the subspace |
 | $[\tilde{Q}_1, \tilde{Q}_2] = 2\,\vec q \times \vec v$ | Commutator, a pure quaternion |
 | $S^2$ | The roots of $-1$ within the subspace, unit pure quaternions |
-| $\varphi(\tilde{Q}) = (\tilde{Q}, \tilde{Q})$ | Diagonal image in $\mathbb{H} \oplus \mathbb{H}$ |
+| $\digamma_{\mathrm{map}}(\tilde{Q}) = (\tilde{Q}, \tilde{Q})$ | Diagonal image in $\mathbb{H} \oplus \mathbb{H}$ |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | The other distinguished subspaces |
 | $\sum_\mu \partial^2/\partial q_\mu^2$ | Quaternion Laplace operator on the subspace |
 | $SO(4)$, $S^3\times S^3$ | Rotations and group of invertibles acting on the quaternion subspace |

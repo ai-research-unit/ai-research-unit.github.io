@@ -112,13 +112,13 @@ $$
 
 **Theorem.** The algebra $E = \operatorname{End}_F(V)$ is simple, and its centre is $F$; equivalently, $E$ is a central simple $F$-algebra.
 
-**Proof.** Let $I \neq 0$ be a two-sided ideal and let $0 \neq A \in I$. Choose $v$ with $Av = w \neq 0$. For $u \in V$ and $\varphi \in V^{*}$ write $u \otimes \varphi$ for the rank-one endomorphism $x \mapsto \varphi(x)u$. Then
+**Proof.** Let $I \neq 0$ be a two-sided ideal and let $0 \neq A \in I$. Choose $v$ with $Av = w \neq 0$. For $u \in V$ and $\digamma_{\mathrm{map}} \in V^{*}$ write $u \otimes \digamma_{\mathrm{map}}$ for the rank-one endomorphism $x \mapsto \digamma_{\mathrm{map}}(x)u$. Then
 
 $$
-(u \otimes \varphi)\,A\,(v \otimes \psi) = \varphi(Av)\,(u \otimes \psi) ,
+(u \otimes \digamma_{\mathrm{map}})\,A\,(v \otimes Ξ_{\mathrm{wfn}}) = \digamma_{\mathrm{map}}(Av)\,(u \otimes Ξ_{\mathrm{wfn}}) ,
 $$
 
-because $(v\otimes\psi)(x) = \psi(x)v$, then $A$ sends it to $\psi(x)Av$, then $u\otimes\varphi$ sends it to $\varphi(\psi(x)Av)u = \psi(x)\varphi(Av)u$. Choose $\varphi$ with $\varphi(Av) \neq 0$, which is possible because $Av \neq 0$; then for all $u,\psi$ the ideal $I$ contains a nonzero multiple of $u \otimes \psi$. The rank-one endomorphisms $u \otimes \psi$ span $E$, so $I = E$. The centre was computed above, so $E$ is central simple.
+because $(v\otimesΞ_{\mathrm{wfn}})(x) = Ξ_{\mathrm{wfn}}(x)v$, then $A$ sends it to $Ξ_{\mathrm{wfn}}(x)Av$, then $u\otimes\digamma_{\mathrm{map}}$ sends it to $\digamma_{\mathrm{map}}(Ξ_{\mathrm{wfn}}(x)Av)u = Ξ_{\mathrm{wfn}}(x)\digamma_{\mathrm{map}}(Av)u$. Choose $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(Av) \neq 0$, which is possible because $Av \neq 0$; then for all $u,Ξ_{\mathrm{wfn}}$ the ideal $I$ contains a nonzero multiple of $u \otimes Ξ_{\mathrm{wfn}}$. The rank-one endomorphisms $u \otimes Ξ_{\mathrm{wfn}}$ span $E$, so $I = E$. The centre was computed above, so $E$ is central simple.
 
 **Corollary.** Every nonzero $A \in E$ generates $E$ as a two-sided ideal, $EAE = E$; there is no nontrivial quotient algebra of $E$ by a two-sided ideal.
 
@@ -174,7 +174,7 @@ The endomorphisms of a finite-dimensional linear space $V$ over a field $F$ form
 | $E_{\mathrm{opp}}$ | the opposite algebra, $A \cdot_{\mathrm{opp}} B = BA$ |
 | $A^{\mathsf{T}}$ | the transpose with respect to a basis, deferred to the next article |
 | $L_A$, $R_A$ | left and right multiplication by $A$ on $E$, $L_A(X)=AX$, $R_A(X)=XA$ |
-| $u \otimes \varphi$ | the rank-one endomorphism $x \mapsto \varphi(x)u$ |
+| $u \otimes \digamma_{\mathrm{map}}$ | the rank-one endomorphism $x \mapsto \digamma_{\mathrm{map}}(x)u$ |
 | $\operatorname{End}_F(E)$ | the operator algebra on $E$, of dimension $n^4$ |
 
 ## Further Reading

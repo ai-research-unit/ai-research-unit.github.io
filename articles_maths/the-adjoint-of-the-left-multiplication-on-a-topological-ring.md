@@ -85,7 +85,7 @@ so the left multiplication is unitary, $L_a^\dagger L_a = L_aL_a^\dagger = \math
 
 **Proof.** A division ring has no nonzero nonunits, so $L_a$ for $a\ne0$ is invertible; the dictionary is the general theorem, with the kernel of the parametrisation trivial, and the three sets are the images of the three sets of elements.
 
-**Remark (the dual).** On the algebraic dual $R^*$ the transpose of $L_a$ is $L_a^{\mathrm t}(\varphi) = \varphi\circ L_a$, so the adjoint under the form and the transpose on the dual are the two faces of the same operation; the transpose acts by the right multiplication on the dual when the dual is identified with $R$ through the form, which is the reason the adjoint of the left multiplication under the residue pairing is a right multiplication.
+**Remark (the dual).** On the algebraic dual $R^*$ the transpose of $L_a$ is $L_a^{\mathrm t}(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map}}\circ L_a$, so the adjoint under the form and the transpose on the dual are the two faces of the same operation; the transpose acts by the right multiplication on the dual when the dual is identified with $R$ through the form, which is the reason the adjoint of the left multiplication under the residue pairing is a right multiplication.
 
 ## Examples
 

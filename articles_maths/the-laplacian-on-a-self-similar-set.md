@@ -32,7 +32,7 @@ exists for every function of finite energy and is finite exactly on the function
 
 ### The Gauss Property and Harmonic Functions
 
-**Definition.** A function $h$ on $V_*=\bigcup_n V_n$ is **harmonic** if $\Delta_nh=0$ on $V_n\setminus V_0$ for every $n$, equivalently $\mathcal{E}(h)\le\mathcal{E}(h+\varphi)$ for every compactly supported $\varphi$ with $\varphi=0$ on $V_0$.
+**Definition.** A function $h$ on $V_*=\bigcup_n V_n$ is **harmonic** if $\Delta_nh=0$ on $V_n\setminus V_0$ for every $n$, equivalently $\mathcal{E}(h)\le\mathcal{E}(h+\digamma_{\mathrm{map}})$ for every compactly supported $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}=0$ on $V_0$.
 
 **Theorem (harmonic extension and the extension matrices).** For every assignment of the values of $h$ on $V_0$ there is a unique harmonic extension to $V_*$, and on a cell $F_i\Lambda$ the values at the three vertices are given by the matrix $A_i$ acting on the boundary values,
 $$

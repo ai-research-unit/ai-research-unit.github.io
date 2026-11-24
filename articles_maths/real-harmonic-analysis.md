@@ -193,35 +193,35 @@ The theorem extends to $L^2$ and to tempered distributions in the sense describe
 
 ### Definition
 
-A family $(\phi_\epsilon)_{\epsilon > 0}$ in $L^1(\mathbb{R}^n)$ is an **approximate identity** if $\int \phi_\epsilon = 1$, $\sup_\epsilon \|\phi_\epsilon\|_1 < \infty$, and for every $\delta > 0$,
+A family $(\digamma_{\mathrm{map},\epsilon})_{\epsilon > 0}$ in $L^1(\mathbb{R}^n)$ is an **approximate identity** if $\int \digamma_{\mathrm{map},\epsilon} = 1$, $\sup_\epsilon \|\digamma_{\mathrm{map},\epsilon}\|_1 < \infty$, and for every $\delta > 0$,
 
 $$
-\int_{|a| > \delta} |\phi_\epsilon(a)| \, da \to 0 \qquad (\epsilon \to 0).
+\int_{|a| > \delta} |\digamma_{\mathrm{map},\epsilon}(a)| \, da \to 0 \qquad (\epsilon \to 0).
 $$
 
-The last condition says that the mass of $\phi_\epsilon$ concentrates near the origin.
+The last condition says that the mass of $\digamma_{\mathrm{map},\epsilon}$ concentrates near the origin.
 
-**Theorem.** If $(\phi_\epsilon)$ is an approximate identity and $f \in L^{r}(\mathbb{R}^n)$ with $1 \le r < \infty$, then $\|f * \phi_\epsilon - f\|_r \to 0$. If $f \in L^\infty$ is uniformly continuous, then $f * \phi_\epsilon \to f$ uniformly. If $a$ is a Lebesgue point of $f \in L^{r}$, then $(f * \phi_\epsilon)(a) \to f(a)$.
+**Theorem.** If $(\digamma_{\mathrm{map},\epsilon})$ is an approximate identity and $f \in L^{r}(\mathbb{R}^n)$ with $1 \le r < \infty$, then $\|f * \digamma_{\mathrm{map},\epsilon} - f\|_r \to 0$. If $f \in L^\infty$ is uniformly continuous, then $f * \digamma_{\mathrm{map},\epsilon} \to f$ uniformly. If $a$ is a Lebesgue point of $f \in L^{r}$, then $(f * \digamma_{\mathrm{map},\epsilon})(a) \to f(a)$.
 
 ## The Schwartz Space and Tempered Distributions
 
 ### The Schwartz Space
 
-The **Schwartz space** $\mathcal{S}(\mathbb{R}^n)$ is the set of smooth $\phi$ with $\|\phi\|_{\alpha, \beta} = \sup_a |a^\alpha \partial^\beta \phi(a)| < \infty$ for all multi-indices $\alpha, \beta$. The seminorms $\|\cdot\|_{\alpha, \beta}$ make $\mathcal{S}(\mathbb{R}^n)$ a Fréchet space, closed under differentiation and multiplication by polynomials.
+The **Schwartz space** $\mathcal{S}(\mathbb{R}^n)$ is the set of smooth $\digamma_{\mathrm{map}}$ with $\|\digamma_{\mathrm{map}}\|_{\alpha, \beta} = \sup_a |a^\alpha \partial^\beta \digamma_{\mathrm{map}}(a)| < \infty$ for all multi-indices $\alpha, \beta$. The seminorms $\|\cdot\|_{\alpha, \beta}$ make $\mathcal{S}(\mathbb{R}^n)$ a Fréchet space, closed under differentiation and multiplication by polynomials.
 
-**Theorem.** The Fourier transform is a bijection $\mathcal{F} : \mathcal{S}(\mathbb{R}^n) \to \mathcal{S}(\mathbb{R}^n)$. Indeed $\widehat{\partial^\alpha \phi} = (2\pi i)^{|\alpha|} \zeta^\alpha \hat{\phi}$ and $\widehat{a^\alpha \phi} = (-2\pi i)^{-|\alpha|} \partial^\alpha \hat{\phi}$, so the seminorms of $\hat{\phi}$ are controlled by those of $\phi$ and conversely. The inversion formula and Plancherel's identity hold on $\mathcal{S}(\mathbb{R}^n)$ with no further hypotheses.
+**Theorem.** The Fourier transform is a bijection $\mathcal{F} : \mathcal{S}(\mathbb{R}^n) \to \mathcal{S}(\mathbb{R}^n)$. Indeed $\widehat{\partial^\alpha \digamma_{\mathrm{map}}} = (2\pi i)^{|\alpha|} \zeta^\alpha \hat{\digamma_{\mathrm{map}}}$ and $\widehat{a^\alpha \digamma_{\mathrm{map}}} = (-2\pi i)^{-|\alpha|} \partial^\alpha \hat{\digamma_{\mathrm{map}}}$, so the seminorms of $\hat{\digamma_{\mathrm{map}}}$ are controlled by those of $\digamma_{\mathrm{map}}$ and conversely. The inversion formula and Plancherel's identity hold on $\mathcal{S}(\mathbb{R}^n)$ with no further hypotheses.
 
 ### Tempered Distributions
 
 A **tempered distribution** is a continuous linear functional on $\mathcal{S}(\mathbb{R}^n)$; the space is denoted $\mathcal{S}'(\mathbb{R}^n)$ and contains $L^{r}(\mathbb{R}^n)$ for $1 \le r \le \infty$, all finite measures, and all polynomials. The operations are defined by duality:
 
-- **Differentiation:** $\langle \partial^\alpha T, \phi \rangle = (-1)^{|\alpha|} \langle T, \partial^\alpha \phi \rangle$.
-- **Multiplication:** for $f$ smooth of polynomial growth, $\langle f T, \phi \rangle = \langle T, f \phi \rangle$.
-- **Fourier transform:** $\langle \hat{T}, \phi \rangle = \langle T, \hat{\phi} \rangle$.
+- **Differentiation:** $\langle \partial^\alpha T, \digamma_{\mathrm{map}} \rangle = (-1)^{|\alpha|} \langle T, \partial^\alpha \digamma_{\mathrm{map}} \rangle$.
+- **Multiplication:** for $f$ smooth of polynomial growth, $\langle f T, \digamma_{\mathrm{map}} \rangle = \langle T, f \digamma_{\mathrm{map}} \rangle$.
+- **Fourier transform:** $\langle \hat{T}, \digamma_{\mathrm{map}} \rangle = \langle T, \hat{\digamma_{\mathrm{map}}} \rangle$.
 
 These extend the classical operations, and the Fourier transform is a bijection $\mathcal{S}'(\mathbb{R}^n) \to \mathcal{S}'(\mathbb{R}^n)$.
 
-**Examples.** The delta distribution $\langle \delta, \phi \rangle = \phi(0)$ has $\hat{\delta} = 1$ and $\hat{1} = \delta$. The principal value $\mathrm{p.v.}(1/a)$ has Fourier transform $-i\pi \, \mathrm{sgn}(\zeta)$. For $0 < \alpha < n$, the transform of $|a|^{-\alpha}$ is a constant multiple of $|\zeta|^{\alpha - n}$.
+**Examples.** The delta distribution $\langle \delta, \digamma_{\mathrm{map}} \rangle = \digamma_{\mathrm{map}}(0)$ has $\hat{\delta} = 1$ and $\hat{1} = \delta$. The principal value $\mathrm{p.v.}(1/a)$ has Fourier transform $-i\pi \, \mathrm{sgn}(\zeta)$. For $0 < \alpha < n$, the transform of $|a|^{-\alpha}$ is a constant multiple of $|\zeta|^{\alpha - n}$.
 
 ## The Hardy–Littlewood Maximal Function
 
@@ -335,7 +335,7 @@ The endpoints are sharp: at $r = 1$ the transform is bounded but need not be int
 
 ### The Littlewood–Paley Decomposition
 
-Choose $\psi \in \mathcal{S}(\mathbb{R}^n)$ whose Fourier transform is supported in the annulus $\{1/2 \le |\zeta| \le 2\}$ and satisfies $\sum_{j \in \mathbb{Z}} \hat{\psi}(2^{-j} \zeta) = 1$ for $\zeta \neq 0$. Set $\widehat{\Delta_j f}(\zeta) = \hat{\psi}(2^{-j} \zeta) (\mathcal F f)(\zeta)$, so $\Delta_j f$ has frequency support in the annulus $2^{j-1} \le |\zeta| \le 2^{j+1}$, and $f = \sum_j \Delta_j f$ for $f$ in a suitable space.
+Choose $Ξ_{\mathrm{wfn}} \in \mathcal{S}(\mathbb{R}^n)$ whose Fourier transform is supported in the annulus $\{1/2 \le |\zeta| \le 2\}$ and satisfies $\sum_{j \in \mathbb{Z}} \hat{Ξ_{\mathrm{wfn}}}(2^{-j} \zeta) = 1$ for $\zeta \neq 0$. Set $\widehat{\Delta_j f}(\zeta) = \hat{Ξ_{\mathrm{wfn}}}(2^{-j} \zeta) (\mathcal F f)(\zeta)$, so $\Delta_j f$ has frequency support in the annulus $2^{j-1} \le |\zeta| \le 2^{j+1}$, and $f = \sum_j \Delta_j f$ for $f$ in a suitable space.
 
 ### The Square Function
 
@@ -345,13 +345,13 @@ $$
 S f(a) = \left( \sum_{j \in \mathbb{Z}} |\Delta_j f(a)|^2 \right)^{\!1/2}.
 $$
 
-**Theorem (Littlewood–Paley).** For $1 < r < \infty$ there are constants depending only on $n$, $r$, and $\psi$ such that
+**Theorem (Littlewood–Paley).** For $1 < r < \infty$ there are constants depending only on $n$, $r$, and $Ξ_{\mathrm{wfn}}$ such that
 
 $$
 c_{n,r} \|f\|_r \le \|S f\|_r \le C_{n,r} \|f\|_r.
 $$
 
-For $r = 2$ the two-sided bound follows from Plancherel: because at most finitely many annuli overlap at each frequency and their multipliers sum to $1$, the quantity $\sum_j |\hat{\psi}(2^{-j}\zeta)|^2$ is bounded above and below on $\mathbb{R}^n \setminus \{0\}$.
+For $r = 2$ the two-sided bound follows from Plancherel: because at most finitely many annuli overlap at each frequency and their multipliers sum to $1$, the quantity $\sum_j |\hat{Ξ_{\mathrm{wfn}}}(2^{-j}\zeta)|^2$ is bounded above and below on $\mathbb{R}^n \setminus \{0\}$.
 
 ### Bernstein Inequalities
 
@@ -457,7 +457,7 @@ The remaining sections take up the finer structure of the subject: the Littlewoo
 | $(\mathcal F f)(\zeta) = \int f(a) \exp(-2\pi i \zeta \cdot a) da$ | Fourier transform on $\mathbb{R}^n$ |
 | $\mathcal{F}$ | Fourier transform operator |
 | $f * g$ | Convolution |
-| $\phi_\epsilon$ | Approximate identity |
+| $\digamma_{\mathrm{map},\epsilon}$ | Approximate identity |
 | $\mathcal{S}(\mathbb{R}^n)$ | Schwartz space |
 | $\mathcal{S}'(\mathbb{R}^n)$ | Tempered distributions |
 | $\delta$ | delta distribution |

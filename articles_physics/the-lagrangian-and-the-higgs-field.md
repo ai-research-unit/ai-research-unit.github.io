@@ -15,10 +15,10 @@ What is not done. No loop, no renormalisation, no running, no unitarity computat
 The measure is $\mathrm{d}^{4}x$, with $c$ and $h$ carried; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi=\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi$ carries the sign the mostly-minus literature carries. The doublet is a complex two-component column,
 
 $$
-\Phi=\frac{1}{\sqrt2}\begin{pmatrix}\phi_1+i\phi_2\\ \phi_3+i\phi_4\end{pmatrix},
+\Phi=\frac{1}{\sqrt2}\begin{pmatrix}\xi_{\mathrm{pot},1}+i\xi_{\mathrm{pot},2}\\ \xi_{\mathrm{pot},3}+i\xi_{\mathrm{pot},4}\end{pmatrix},
 $$
 
-so that $\Phi$ carries four real components $\phi_A$ and $\Phi^{\dagger}\Phi=\frac12\sum_A\phi_A^{2}$. The potential is
+so that $\Phi$ carries four real components $\xi_{\mathrm{pot},A}$ and $\Phi^{\dagger}\Phi=\frac12\sum_A\xi_{\mathrm{pot},A}^{2}$. The potential is
 
 $$
 V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2},
@@ -31,7 +31,7 @@ and its minimum sits at $\Phi^{\dagger}\Phi=\mu^{2}/2\varpi_{\mathrm{cpl}}\equiv
 
 The unitary chart. Where a component reading is needed the chart is $\Phi=\frac{1}{\sqrt2}\binom{0}{v+h}$ with $h$ real. It is a chart on the same action and not a different theory; the companion article states what it costs and what it buys.
 
-Two conventions are warnings. The first: $\mu^{2}$ has the dimensions of a mass squared and is not a mass. The curvature at the minimum is $2\mu^{2}$, and the difference matters — the free Klein–Gordon article's $\nu_m^{2}$ is the coefficient of $-\tilde\Xi^{*}\tilde\Xi$ with a fixed sign, whereas here the sign is negative and the coefficient is not the mass. The second: $\varpi_{\mathrm{cpl}}$ in this normalisation is the coefficient of $(\Phi^{\dagger}\Phi)^{2}$, so the quartic term in the unitary chart is $\frac{\varpi_{\mathrm{cpl}}}{4}h^{4}$. A reader who imports $\frac{\varpi_{\mathrm{cpl}}}{4!}\phi^{4}$ from the scalar-field literature will find the self-couplings wrong by a factor of six.
+Two conventions are warnings. The first: $\mu^{2}$ has the dimensions of a mass squared and is not a mass. The curvature at the minimum is $2\mu^{2}$, and the difference matters — the free Klein–Gordon article's $\nu_m^{2}$ is the coefficient of $-\tilde\Xi^{*}\tilde\Xi$ with a fixed sign, whereas here the sign is negative and the coefficient is not the mass. The second: $\varpi_{\mathrm{cpl}}$ in this normalisation is the coefficient of $(\Phi^{\dagger}\Phi)^{2}$, so the quartic term in the unitary chart is $\frac{\varpi_{\mathrm{cpl}}}{4}h^{4}$. A reader who imports $\frac{\varpi_{\mathrm{cpl}}}{4!}\xi_{\mathrm{pot}}^{4}$ from the scalar-field literature will find the self-couplings wrong by a factor of six.
 
 ## The Action in Element Form
 
@@ -53,7 +53,7 @@ $$
 
 The chart is the expansion about one point of the circle of minima, and the three terms after the mass term are the same $\varpi_{\mathrm{cpl}}$ read at third and fourth order.
 
-It is real, term by term. The kinetic term is $\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi=\sum_A(\partial_{\imath}\phi_A)^{2}/2$, a sum of squares with a fixed sign. The mass term is $-\mu^{2}\Phi^{\dagger}\Phi=-\mu^{2}\sum_A\phi_A^{2}/2$, real and negative. The quartic is $\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}=\varpi_{\mathrm{cpl}}(\sum_A\phi_A^{2})^{2}/4$, real and positive for $\varpi_{\mathrm{cpl}}>0$. The potential is therefore bounded below, and the bound is what makes a minimum exist at all.
+It is real, term by term. The kinetic term is $\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi=\sum_A(\partial_{\imath}\xi_{\mathrm{pot},A})^{2}/2$, a sum of squares with a fixed sign. The mass term is $-\mu^{2}\Phi^{\dagger}\Phi=-\mu^{2}\sum_A\xi_{\mathrm{pot},A}^{2}/2$, real and negative. The quartic is $\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}=\varpi_{\mathrm{cpl}}(\sum_A\xi_{\mathrm{pot},A}^{2})^{2}/4$, real and positive for $\varpi_{\mathrm{cpl}}>0$. The potential is therefore bounded below, and the bound is what makes a minimum exist at all.
 
 **Why the sign of $\mu^{2}$ is the whole content.** With $\mu^{2}<0$ the potential has a single stationary point, at $\Phi=0$, and it is a minimum; the four components are degenerate and each has mass $\sqrt{-\mu^{2}}$. With $\mu^{2}>0$ the origin is a maximum and the minimum is the three-sphere $\Phi^{\dagger}\Phi=v^{2}/2$. Nothing else in the action changes. The article's subject is the second case, and the first is named here only because the same display covers both.
 
@@ -107,7 +107,7 @@ What the section does not claim. It does not claim the vacuum is undetermined: t
 
 The claim. The potential is a function of $r$ alone, so the four real components of the doublet split into one radial field with a curved potential and three angular fields with a flat one. The radial field's mass is the curvature at the minimum, and the same curvature's third and fourth derivatives are its self-couplings. One number determines three measured quantities.
 
-The split, in one line. $V$ depends on the four $\phi_A$ through $\sum_A\phi_A^{2}$ and on nothing else, so the symmetry group of the potential alone is $O(4)$, acting by rotations of the four-vector. A minimum at $r=v$ breaks $O(4)$ to $O(3)$, and the count of flat directions is $4-1=3$. Those three are the would-be Goldstone modes. Nothing about the gauge fields entered this paragraph, and that is the point: the breaking is a property of the potential.
+The split, in one line. $V$ depends on the four $\xi_{\mathrm{pot},A}$ through $\sum_A\xi_{\mathrm{pot},A}^{2}$ and on nothing else, so the symmetry group of the potential alone is $O(4)$, acting by rotations of the four-vector. A minimum at $r=v$ breaks $O(4)$ to $O(3)$, and the count of flat directions is $4-1=3$. Those three are the would-be Goldstone modes. Nothing about the gauge fields entered this paragraph, and that is the point: the breaking is a property of the potential.
 
 The curvature check. Expand $V$ about $r=v$:
 
@@ -181,7 +181,7 @@ $$
 
 | Symbol | Meaning |
 |---|---|
-| $\Phi$ | Complex doublet, four real components $\phi_A$ |
+| $\Phi$ | Complex doublet, four real components $\xi_{\mathrm{pot},A}$ |
 | $\mu^{2},\ \varpi_{\mathrm{cpl}}$ | Mass-squared parameter and quartic coupling, both positive |
 | $v=\sqrt{\mu^{2}/\varpi_{\mathrm{cpl}}}$ | Magnitude of the vacuum expectation value, $\simeq3.9449\times10^{-8}\ \mathrm{J}$ |
 | $r=\sqrt{2\Phi^{\dagger}\Phi}$ | Radial field, the potential's only argument |

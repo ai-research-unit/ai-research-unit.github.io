@@ -167,31 +167,31 @@ So the dual operator of the simplicial complex is the transpose matrix, and the 
 
 ### Simplicial Maps and the Chain Map
 
-**Definition.** A **simplicial map** $\phi : K \to L$ sends simplices of $K$ to simplices of $L$ and vertices to vertices, and is determined by its values on the vertices; it induces, on an oriented simplex, the map
+**Definition.** A **simplicial map** $\digamma_{\mathrm{map}} : K \to L$ sends simplices of $K$ to simplices of $L$ and vertices to vertices, and is determined by its values on the vertices; it induces, on an oriented simplex, the map
 
 $$
-\phi_n[v_0,\dots,v_n] = [\phi(v_0),\dots,\phi(v_n)],
+\digamma_{\mathrm{map},n}[v_0,\dots,v_n] = [\digamma_{\mathrm{map}}(v_0),\dots,\digamma_{\mathrm{map}}(v_n)],
 $$
 
 read as zero when the images are not distinct and with the orientation induced by the ordering otherwise, extended $R$-linearly.
 
-**Theorem.** A simplicial map is a chain map of the simplicial complexes, $\phi_{n-1}\partial_n = \partial_n\phi_n$; the assignment is functorial, and it induces maps $H_n^\Delta(\phi) : H_n^\Delta(K;R) \to H_n^\Delta(L;R)$. The chain map is compatible with the operators of *The Boundary Operator*: it intertwines the boundaries, the augmentations and, by duality, the coboundaries.
+**Theorem.** A simplicial map is a chain map of the simplicial complexes, $\digamma_{\mathrm{map},n-1}\partial_n = \partial_n\digamma_{\mathrm{map},n}$; the assignment is functorial, and it induces maps $H_n^\Delta(\digamma_{\mathrm{map}}) : H_n^\Delta(K;R) \to H_n^\Delta(L;R)$. The chain map is compatible with the operators of *The Boundary Operator*: it intertwines the boundaries, the augmentations and, by duality, the coboundaries.
 
-*Proof.* Both sides evaluated on a simplex are the alternating sum of the images of its facets, and the images of the facets are the facets of the image; the functoriality is that $(\psi\circ\phi)_n = \psi_n\circ\phi_n$ for simplicial maps. The induced map on homology is that of any chain map.
+*Proof.* Both sides evaluated on a simplex are the alternating sum of the images of its facets, and the images of the facets are the facets of the image; the functoriality is that $(Ξ_{\mathrm{wfn}}\circ\digamma_{\mathrm{map}})_n = Ξ_{\mathrm{wfn},n}\circ\digamma_{\mathrm{map},n}$ for simplicial maps. The induced map on homology is that of any chain map.
 
 ### The Hopf Trace Formula
 
-**Theorem.** Let $\phi : K \to K$ be a simplicial map of a finite complex and let $\phi_n$ be its chain map. Then the **Lefschetz number**
+**Theorem.** Let $\digamma_{\mathrm{map}} : K \to K$ be a simplicial map of a finite complex and let $\digamma_{\mathrm{map},n}$ be its chain map. Then the **Lefschetz number**
 
 $$
-\boxed{\;L(\phi) = \sum_n (-1)^n \operatorname{tr}(\phi_n) = \sum_n (-1)^n \operatorname{tr}\bigl(H_n^\Delta(\phi)\bigr)\;}
+\boxed{\;L(\digamma_{\mathrm{map}}) = \sum_n (-1)^n \operatorname{tr}(\digamma_{\mathrm{map},n}) = \sum_n (-1)^n \operatorname{tr}\bigl(H_n^\Delta(\digamma_{\mathrm{map}})\bigr)\;}
 $$
 
 depends only on the induced maps on homology, the equality being the **Hopf trace formula**.
 
-*Proof.* The alternating sum of the traces is invariant under passing between the two short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to 0$ and $0\to B_n\to Z_n\to H_n\to 0$ of $\phi$-stable spaces, the same telescoping as in the Euler characteristic; it is the operator form of the additivity of the trace over an exact sequence.
+*Proof.* The alternating sum of the traces is invariant under passing between the two short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to 0$ and $0\to B_n\to Z_n\to H_n\to 0$ of $\digamma_{\mathrm{map}}$-stable spaces, the same telescoping as in the Euler characteristic; it is the operator form of the additivity of the trace over an exact sequence.
 
-The Lefschetz number is thus an invariant of the homology of the simplicial map and not of the chain level, and it is the boundary-operator form of the fixed-point index. The topological fixed-point theorem that reads from $L(\phi)\neq 0$ the existence of a fixed point of the geometric realisation, and the degree theory on which it rests, are the subject of *Degree Theory and the Brouwer Fixed Point Theorem*, where the Lefschetz number is a degree and the sign of the permutation of the fixed simplices is the local index.
+The Lefschetz number is thus an invariant of the homology of the simplicial map and not of the chain level, and it is the boundary-operator form of the fixed-point index. The topological fixed-point theorem that reads from $L(\digamma_{\mathrm{map}})\neq 0$ the existence of a fixed point of the geometric realisation, and the degree theory on which it rests, are the subject of *Degree Theory and the Brouwer Fixed Point Theorem*, where the Lefschetz number is a degree and the sign of the permutation of the fixed simplices is the local index.
 
 ## Examples
 
@@ -223,7 +223,7 @@ The boundary operator of a simplicial complex sends an oriented simplex to the a
 | $\beta_n = \dim C_n - \operatorname{rank}A_n - \operatorname{rank}A_{n+1}$ | Betti number; over a field |
 | $R/(d^{(n)}_j)$ | Torsion summands from the Smith normal form of $A_{n+1}$ |
 | $C^n(K;R)$, $\delta$, $H^n_\Delta(K;R)$ | Cochains, coboundary (the transpose), cohomology |
-| $\phi_n$, $L(\phi)=\sum(-1)^n\operatorname{tr}(\phi_n)$ | Chain map of a simplicial map; Lefschetz number |
+| $\digamma_{\mathrm{map},n}$, $L(\digamma_{\mathrm{map}})=\sum(-1)^n\operatorname{tr}(\digamma_{\mathrm{map},n})$ | Chain map of a simplicial map; Lefschetz number |
 
 ## Further Reading
 

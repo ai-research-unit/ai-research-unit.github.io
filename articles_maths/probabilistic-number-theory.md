@@ -136,10 +136,10 @@ $$
 \#\{n\leq N : \omega(n)\geq(1+\theta)\log\log N\} = N(\log N)^{-I(\theta)+o(1)},
 $$
 
-and for fixed $0<\phi<1$ the Sathe–Selberg sum over $k\leq\phi\log\log N$ gives
+and for fixed $0<\digamma_{\mathrm{map}}<1$ the Sathe–Selberg sum over $k\leq\digamma_{\mathrm{map}}\log\log N$ gives
 
 $$
-\#\{n\leq N : \omega(n)\leq\phi\log\log N\} = N(\log N)^{-2+\phi-\phi\log\phi+o(1)}.
+\#\{n\leq N : \omega(n)\leq\digamma_{\mathrm{map}}\log\log N\} = N(\log N)^{-2+\digamma_{\mathrm{map}}-\digamma_{\mathrm{map}}\log\digamma_{\mathrm{map}}+o(1)}.
 $$
 
 In particular the deviations decay only like powers of $\log N$ — far slower than exponentially in $N$ — which is why the exceptional sets of the arithmetic statements, the integers with very few or very many prime factors, are large in the logarithmic scale though their density tends to zero.

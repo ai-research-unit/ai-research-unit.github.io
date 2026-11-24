@@ -92,7 +92,7 @@
 
 **Corollary.** The rank-one elements of the carrier are the pure bispinors of the carrier, and each is the intersection of a minimal left ideal with a minimal right ideal.
 
-*Proof.* A rank-one matrix has the form $\psi\bar\chi^{\dagger}$ and the two factors fix the ideals.
+*Proof.* A rank-one matrix has the form $Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}$ and the two factors fix the ideals.
 
 **Corollary.** The rank-one stratum is open in the determinant hypersurface of the carrier only at the points where the determinant vanishes to first order.
 

@@ -89,10 +89,10 @@ S_{+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{B}_{-+},\qquad
 S_{-}=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}.
 $$
 
-**Proof.** For $\psi_{+}\in S_{+}$, insert $\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-}=e_{t}$ on the left:
+**Proof.** For $Ξ_{\mathrm{wfn},+}\in S_{+}$, insert $\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-}=e_{t}$ on the left:
 
 $$
-\psi_{+}=(\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-})\psi_{+}=\tilde\Pi_{\mathrm{id},+}\psi_{+}+\tilde\Pi_{\mathrm{id},-}\psi_{+}.
+Ξ_{\mathrm{wfn},+}=(\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-})Ξ_{\mathrm{wfn},+}=\tilde\Pi_{\mathrm{id},+}Ξ_{\mathrm{wfn},+}+\tilde\Pi_{\mathrm{id},-}Ξ_{\mathrm{wfn},+}.
 $$
 
 The first term lies in $\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ and the second in $\mathbb{B}_{-+}$. The sum is direct because the two lines have different left indices. The proof for $S_{-}$ is the same with the signs exchanged.
@@ -100,16 +100,16 @@ The first term lies in $\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ and
 **The intrinsic form of a spinor.** Every positive spinor has a unique form
 
 $$
-\psi_{+}=a\tilde\Pi_{\mathrm{id},+}+\nu_{+},\qquad a\in\mathbb{C},\quad \nu_{+}\in\mathbb{B}_{-+},
+Ξ_{\mathrm{wfn},+}=a\tilde\Pi_{\mathrm{id},+}+\nu_{+},\qquad a\in\mathbb{C},\quad \nu_{+}\in\mathbb{B}_{-+},
 $$
 
 and every negative spinor has a unique form
 
 $$
-\psi_{-}=\nu_{-}+d\tilde\Pi_{\mathrm{id},-},\qquad \nu_{-}\in\mathbb{B}_{+-},\quad d\in\mathbb{C}.
+Ξ_{\mathrm{wfn},-}=\nu_{-}+d\tilde\Pi_{\mathrm{id},-},\qquad \nu_{-}\in\mathbb{B}_{+-},\quad d\in\mathbb{C}.
 $$
 
-The coefficient $a$ is the scalar such that $\tilde\Pi_{\mathrm{id},+}\psi_{+}=a\tilde\Pi_{\mathrm{id},+}$, and $\nu_{+}=\psi_{+}-a\tilde\Pi_{\mathrm{id},+}$ is the nilpotent part. The coefficient $d$ is the scalar such that $\tilde\Pi_{\mathrm{id},-}\psi_{-}=d\tilde\Pi_{\mathrm{id},-}$, and $\nu_{-}=\psi_{-}-d\tilde\Pi_{\mathrm{id},-}$ is the nilpotent part. The coefficients and the elements $\nu_{\pm}$ are intrinsic; the coordinates of $\nu_{\pm}$ in a chosen mixed line are not.
+The coefficient $a$ is the scalar such that $\tilde\Pi_{\mathrm{id},+}Ξ_{\mathrm{wfn},+}=a\tilde\Pi_{\mathrm{id},+}$, and $\nu_{+}=Ξ_{\mathrm{wfn},+}-a\tilde\Pi_{\mathrm{id},+}$ is the nilpotent part. The coefficient $d$ is the scalar such that $\tilde\Pi_{\mathrm{id},-}Ξ_{\mathrm{wfn},-}=d\tilde\Pi_{\mathrm{id},-}$, and $\nu_{-}=Ξ_{\mathrm{wfn},-}-d\tilde\Pi_{\mathrm{id},-}$ is the nilpotent part. The coefficients and the elements $\nu_{\pm}$ are intrinsic; the coordinates of $\nu_{\pm}$ in a chosen mixed line are not.
 
 **The adapted bases.** A Peirce basis $\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+},\tilde\Pi_{\mathrm{id},-}$ gives the bases
 
@@ -121,8 +121,8 @@ $$
 In these bases,
 
 $$
-\psi_{+}=a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+},\qquad
-\psi_{-}=b\vec\Pi_{\mathrm{nil},+-}+d\tilde\Pi_{\mathrm{id},-}.
+Ξ_{\mathrm{wfn},+}=a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+},\qquad
+Ξ_{\mathrm{wfn},-}=b\vec\Pi_{\mathrm{nil},+-}+d\tilde\Pi_{\mathrm{id},-}.
 $$
 
 The numbers $a,c$ and $b,d$ are the Peirce coordinates of the two spinors in the adapted basis. The basis is not canonical; the family is.
@@ -132,11 +132,11 @@ The numbers $a,c$ and $b,d$ are the Peirce coordinates of the two spinors in the
 **Proposition.** Let $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$ be the mixed units of a Peirce basis. Left multiplication by $\vec\Pi_{\mathrm{nil},+-}$ maps $S_{+}$ onto $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ and annihilates $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$; left multiplication by $\vec\Pi_{\mathrm{nil},-+}$ maps $S_{+}$ onto $\mathbb{B}_{-+}$ and annihilates $\mathbb{B}_{-+}$. On coordinates,
 
 $$
-\vec\Pi_{\mathrm{nil},+-}\psi_{+}=\vec\Pi_{\mathrm{nil},+-}(a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+})=c\tilde\Pi_{\mathrm{id},+},
+\vec\Pi_{\mathrm{nil},+-}Ξ_{\mathrm{wfn},+}=\vec\Pi_{\mathrm{nil},+-}(a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+})=c\tilde\Pi_{\mathrm{id},+},
 $$
 
 $$
-\vec\Pi_{\mathrm{nil},-+}\psi_{+}=\vec\Pi_{\mathrm{nil},-+}(a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+})=a\vec\Pi_{\mathrm{nil},-+}.
+\vec\Pi_{\mathrm{nil},-+}Ξ_{\mathrm{wfn},+}=\vec\Pi_{\mathrm{nil},-+}(a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+})=a\vec\Pi_{\mathrm{nil},-+}.
 $$
 
 **Proof.** The corner rule gives $\vec\Pi_{\mathrm{nil},+-}\tilde\Pi_{\mathrm{id},+}=0$, $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$, $\vec\Pi_{\mathrm{nil},-+}\tilde\Pi_{\mathrm{id},+}=\vec\Pi_{\mathrm{nil},-+}$ and $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},-+}=0$. The two displayed formulas follow.
@@ -174,14 +174,14 @@ The diagonal coefficients are gauge-invariant; the mixed coefficients carry the 
 **The Hermitian gauge.** If the family and the basis are Hermitian, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$ and $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$, then the allowed gauge is $|t|=1$. The Hermitian norm of a positive spinor is
 
 $$
-\mathrm{Sc}(\psi_{+}\psi_{+}^{*})
+\mathrm{Sc}(Ξ_{\mathrm{wfn},+}Ξ_{\mathrm{wfn},+}^{*})
 =\frac12\bigl(|a|^{2}+|c|^{2}\bigr),
 $$
 
 and the norm of a negative spinor is
 
 $$
-\mathrm{Sc}(\psi_{-}\psi_{-}^{*})
+\mathrm{Sc}(Ξ_{\mathrm{wfn},-}Ξ_{\mathrm{wfn},-}^{*})
 =\frac12\bigl(|b|^{2}+|d|^{2}\bigr).
 $$
 
@@ -192,7 +192,7 @@ The formulas are invariant under the circle $|t|=1$. They are positive definite 
 **The intrinsic data.** Fix the family. The canonical splitting of §*The Canonical Splitting* gives, for a positive spinor,
 
 $$
-\psi_{+}=a\tilde\Pi_{\mathrm{id},+}+\nu_{+},\qquad
+Ξ_{\mathrm{wfn},+}=a\tilde\Pi_{\mathrm{id},+}+\nu_{+},\qquad
 a\in\mathbb{C},\quad \nu_{+}\in\mathbb{B}_{-+},
 $$
 
@@ -200,29 +200,29 @@ with $a$ and $\nu_{+}$ intrinsic. The coordinate $c$ in a chosen basis is not in
 
 **The invariant conditions.** The following conditions are independent of the basis:
 
-- $a=0$: the spinor is a nilpotent, $\psi_{+}=\nu_{+}$.
-- $\nu_{+}=0$: the spinor is pure, $\psi_{+}=a\tilde\Pi_{\mathrm{id},+}$.
+- $a=0$: the spinor is a nilpotent, $Ξ_{\mathrm{wfn},+}=\nu_{+}$.
+- $\nu_{+}=0$: the spinor is pure, $Ξ_{\mathrm{wfn},+}=a\tilde\Pi_{\mathrm{id},+}$.
 - $a=0$ and $\nu_{+}=0$: the spinor is zero.
 - $a\ne0$: the spinor has a nonzero diagonal part; the ratio $c/a$ is a coordinate on the mixed line and is not invariant, since it is multiplied by $t^{-1}$.
 
 **What is not invariant.** The pair $(a,c)$ is not invariant; only $a$ and the element $\nu_{+}$ are. The vanishing of $c$ is invariant, because $c=0$ exactly when $\nu_{+}=0$; the value of a nonzero $c$ is not. In the Hermitian gauge the norm $\frac12(|a|^{2}+|c|^{2})$ is invariant; it is not an invariant of the gauge $\mathbb{C}^{\times}$ without the Hermitian condition.
 
-**The negative spinor.** The same statements hold for $\psi_{-}=\nu_{-}+d\tilde\Pi_{\mathrm{id},-}$, with $d$ and $\nu_{-}$ intrinsic and $b$ gauge-dependent: $b'=tb$.
+**The negative spinor.** The same statements hold for $Ξ_{\mathrm{wfn},-}=\nu_{-}+d\tilde\Pi_{\mathrm{id},-}$, with $d$ and $\nu_{-}$ intrinsic and $b$ gauge-dependent: $b'=tb$.
 
 ## The Peirce Index
 
-**Right multiplication by the idempotents.** For $\psi_{+}\in S_{+}$,
+**Right multiplication by the idempotents.** For $Ξ_{\mathrm{wfn},+}\in S_{+}$,
 
 $$
-\psi_{+}\tilde\Pi_{\mathrm{id},+}=\psi_{+},\qquad
-\psi_{+}\tilde\Pi_{\mathrm{id},-}=0.
+Ξ_{\mathrm{wfn},+}\tilde\Pi_{\mathrm{id},+}=Ξ_{\mathrm{wfn},+},\qquad
+Ξ_{\mathrm{wfn},+}\tilde\Pi_{\mathrm{id},-}=0.
 $$
 
-For $\psi_{-}\in S_{-}$,
+For $Ξ_{\mathrm{wfn},-}\in S_{-}$,
 
 $$
-\psi_{-}\tilde\Pi_{\mathrm{id},-}=\psi_{-},\qquad
-\psi_{-}\tilde\Pi_{\mathrm{id},+}=0.
+Ξ_{\mathrm{wfn},-}\tilde\Pi_{\mathrm{id},-}=Ξ_{\mathrm{wfn},-},\qquad
+Ξ_{\mathrm{wfn},-}\tilde\Pi_{\mathrm{id},+}=0.
 $$
 
 So $S_{+}$ is the image of right multiplication by $\tilde\Pi_{\mathrm{id},+}$ and the kernel of right multiplication by $\tilde\Pi_{\mathrm{id},-}$, and $S_{-}$ is the reverse.
@@ -282,7 +282,7 @@ $$
 
 the right Peirce row of $\tilde\Pi_{\mathrm{id},+}$, not $S_{-}=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$. The two spaces are different subspaces: the row contains $\mathbb{B}_{++}\oplus\mathbb{B}_{+-}$ and $S_{-}$ contains $\mathbb{B}_{+-}\oplus\mathbb{B}_{--}$. They share the mixed line $\mathbb{B}_{+-}$ but are not equal. Chirality belongs to the left grouping, not to the involution.
 
-**The row is the co-spinor space.** The row $\chi\in\tilde\Pi_{\mathrm{id},+}\mathbb{B}$ acts on the spinor $\psi\in S_{+}$ by the product $\chi\psi$, which lands in $\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$; the coefficient is a bilinear form with no conjugation, and it is the scalar part of the product in the other order. The products $\psi\chi$ in turn fill the null cone, and the two strata of the cone are the two positions of the line $[\psi]$ relative to the hyperplane $\ker\chi$. The reading is *The N-Degenerate Sector*, §*Geometry*.
+**The row is the co-spinor space.** The row $\chi\in\tilde\Pi_{\mathrm{id},+}\mathbb{B}$ acts on the spinor $Ξ_{\mathrm{wfn}}\in S_{+}$ by the product $\chiΞ_{\mathrm{wfn}}$, which lands in $\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$; the coefficient is a bilinear form with no conjugation, and it is the scalar part of the product in the other order. The products $Ξ_{\mathrm{wfn}}\chi$ in turn fill the null cone, and the two strata of the cone are the two positions of the line $[Ξ_{\mathrm{wfn}}]$ relative to the hyperplane $\ker\chi$. The reading is *The N-Degenerate Sector*, §*Geometry*.
 
 ## What the Spinor Is Not
 
@@ -311,13 +311,13 @@ $$
 a positive spinor is
 
 $$
-\psi_{+}=a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+},
+Ξ_{\mathrm{wfn},+}=a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+},
 $$
 
 and a negative spinor is
 
 $$
-\psi_{-}=b\vec\Pi_{\mathrm{nil},+-}+d\tilde\Pi_{\mathrm{id},-}.
+Ξ_{\mathrm{wfn},-}=b\vec\Pi_{\mathrm{nil},+-}+d\tilde\Pi_{\mathrm{id},-}.
 $$
 
 The gauge acts by
@@ -329,22 +329,22 @@ $$
 The ladder is
 
 $$
-\vec\Pi_{\mathrm{nil},+-}\psi_{+}=c\tilde\Pi_{\mathrm{id},+},\qquad
-\vec\Pi_{\mathrm{nil},-+}\psi_{+}=a\vec\Pi_{\mathrm{nil},-+}.
+\vec\Pi_{\mathrm{nil},+-}Ξ_{\mathrm{wfn},+}=c\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},-+}Ξ_{\mathrm{wfn},+}=a\vec\Pi_{\mathrm{nil},-+}.
 $$
 
 The Peirce index is
 
 $$
-\psi_{+}\tilde\Pi_{\mathrm{id},+}=\psi_{+},\qquad
-\psi_{+}\tilde\Pi_{\mathrm{id},-}=0,
+Ξ_{\mathrm{wfn},+}\tilde\Pi_{\mathrm{id},+}=Ξ_{\mathrm{wfn},+},\qquad
+Ξ_{\mathrm{wfn},+}\tilde\Pi_{\mathrm{id},-}=0,
 $$
 
-and the reverse for $\psi_{-}$. In the Hermitian standard basis the norms are
+and the reverse for $Ξ_{\mathrm{wfn},-}$. In the Hermitian standard basis the norms are
 
 $$
-\mathrm{Sc}(\psi_{+}\psi_{+}^{*})=\frac12\bigl(|a|^{2}+|c|^{2}\bigr),\qquad
-\mathrm{Sc}(\psi_{-}\psi_{-}^{*})=\frac12\bigl(|b|^{2}+|d|^{2}\bigr).
+\mathrm{Sc}(Ξ_{\mathrm{wfn},+}Ξ_{\mathrm{wfn},+}^{*})=\frac12\bigl(|a|^{2}+|c|^{2}\bigr),\qquad
+\mathrm{Sc}(Ξ_{\mathrm{wfn},-}Ξ_{\mathrm{wfn},-}^{*})=\frac12\bigl(|b|^{2}+|d|^{2}\bigr).
 $$
 
 ## Summary
@@ -361,7 +361,7 @@ The index that the choice supplies is a copy index and not a chirality: the two 
 |---|---|
 | $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ | the minimal left ideal of the primitive idempotent $\tilde\Pi_{\mathrm{id}}$ |
 | $S_{\pm}=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the two Peirce carriers, the minimal left ideals, the spinor spaces |
-| $\psi_{\pm}$ | a spinor of the corresponding space |
+| $Ξ_{\mathrm{wfn},\pm}$ | a spinor of the corresponding space |
 | $\tilde\Pi_{\mathrm{id},\pm}$ | the idempotents of the family |
 | $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$ | the mixed units of a basis |
 | $\mathcal{C}_\pm$ | the couple of Peirce vectors spanning $S_\pm$ |

@@ -260,10 +260,10 @@ $$
 where the integral is along the positive real axis, $t^{Q-1}$ is the dual power, and $\exp(-t)$ is the dual exponential. For $Q = q + \varepsilon q'$ with $q > 0$,
 
 $$
-\Gamma(Q) = \Gamma(q) + q' \Gamma'(q) \varepsilon = \Gamma(q) + q' \Gamma(q) \psi(q) \varepsilon,
+\Gamma(Q) = \Gamma(q) + q' \Gamma'(q) \varepsilon = \Gamma(q) + q' \Gamma(q) Ξ_{\mathrm{wfn}}(q) \varepsilon,
 $$
 
-where $\psi(q) = \Gamma'(q)/\Gamma(q)$ is the ordinary digamma function.
+where $Ξ_{\mathrm{wfn}}(q) = \Gamma'(q)/\Gamma(q)$ is the ordinary digamma function.
 
 So the dual gamma function is the ordinary real gamma function applied to the real part, with an infinitesimal correction given by the digamma function.
 

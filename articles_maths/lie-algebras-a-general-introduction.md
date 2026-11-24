@@ -184,10 +184,10 @@ Every ideal is a subalgebra, but not every subalgebra is an ideal. The distincti
 
 ### Homomorphisms
 
-A **Lie algebra homomorphism** from a Lie algebra $\mathrm{G}$ to a Lie algebra $\mathrm{H}$ is an $R$-linear map $\varphi : \mathrm{G} \to \mathrm{H}$ that preserves the bracket:
+A **Lie algebra homomorphism** from a Lie algebra $\mathrm{G}$ to a Lie algebra $\mathrm{H}$ is an $R$-linear map $\digamma_{\mathrm{map}} : \mathrm{G} \to \mathrm{H}$ that preserves the bracket:
 
 $$
-\varphi([u, v]) = [\varphi(u), \varphi(v)]
+\digamma_{\mathrm{map}}([u, v]) = [\digamma_{\mathrm{map}}(u), \digamma_{\mathrm{map}}(v)]
 $$
 
 for all $u, v \in \mathrm{G}$.

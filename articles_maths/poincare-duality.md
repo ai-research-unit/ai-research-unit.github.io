@@ -95,20 +95,20 @@ the second following from the first applied to the double of $M$ and the long ex
 **Definition.** Let $M$ be a closed connected orientable $n$-manifold with fundamental class $[M]$. The **intersection pairing** is
 
 $$
-I : H^k(M;\mathbb{Z}) \times H^{n-k}(M;\mathbb{Z}) \longrightarrow \mathbb{Z}, \qquad I(\varphi,\psi) = \bigl\langle \varphi \smile \psi, [M]\bigr\rangle,
+I : H^k(M;\mathbb{Z}) \times H^{n-k}(M;\mathbb{Z}) \longrightarrow \mathbb{Z}, \qquad I(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}) = \bigl\langle \digamma_{\mathrm{map}} \smile Ξ_{\mathrm{wfn}}, [M]\bigr\rangle,
 $$
 
-the evaluation of the cup product on the fundamental class; it is $\mathbb{Z}$-bilinear and graded-symmetric, in the sense that $I(\psi,\varphi) = (-1)^{k(n-k)}I(\varphi,\psi)$. When $n = 2m$ is even the restriction to the middle degree is the **intersection form**
+the evaluation of the cup product on the fundamental class; it is $\mathbb{Z}$-bilinear and graded-symmetric, in the sense that $I(Ξ_{\mathrm{wfn}},\digamma_{\mathrm{map}}) = (-1)^{k(n-k)}I(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})$. When $n = 2m$ is even the restriction to the middle degree is the **intersection form**
 
 $$
-Q_M : H^m(M;\mathbb{Z}) \times H^m(M;\mathbb{Z}) \to \mathbb{Z}, \qquad Q_M(\varphi,\psi) = \bigl\langle \varphi \smile \psi, [M]\bigr\rangle,
+Q_M : H^m(M;\mathbb{Z}) \times H^m(M;\mathbb{Z}) \to \mathbb{Z}, \qquad Q_M(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}) = \bigl\langle \digamma_{\mathrm{map}} \smile Ξ_{\mathrm{wfn}}, [M]\bigr\rangle,
 $$
 
 which is symmetric for $m$ even and alternating for $m$ odd.
 
-**Theorem.** The intersection pairing is nondegenerate: for every nonzero $\varphi \in H^k(M;\mathbb{Z})$ there is $\psi \in H^{n-k}(M;\mathbb{Z})$ with $I(\varphi,\psi) \neq 0$. Equivalently, the map $\varphi \mapsto I(\varphi,-)$ is an isomorphism from $H^k(M;\mathbb{Z})$ modulo torsion to $\operatorname{Hom}(H^{n-k}(M;\mathbb{Z}),\mathbb{Z})$.
+**Theorem.** The intersection pairing is nondegenerate: for every nonzero $\digamma_{\mathrm{map}} \in H^k(M;\mathbb{Z})$ there is $Ξ_{\mathrm{wfn}} \in H^{n-k}(M;\mathbb{Z})$ with $I(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}) \neq 0$. Equivalently, the map $\digamma_{\mathrm{map}} \mapsto I(\digamma_{\mathrm{map}},-)$ is an isomorphism from $H^k(M;\mathbb{Z})$ modulo torsion to $\operatorname{Hom}(H^{n-k}(M;\mathbb{Z}),\mathbb{Z})$.
 
-*Proof.* By Poincaré duality the class $\varphi$ corresponds to $\varphi \frown [M] \in H_{n-k}(M;\mathbb{Z})$; nonvanishing of $\varphi$ is equivalent to nonvanishing of this class modulo torsion. By the universal coefficient theorem a nonzero homology class modulo torsion pairs nontrivially with some cohomology class $\psi$ of complementary degree, and the pairing $\langle \varphi\smile\psi,[M]\rangle$ equals the evaluation of $\psi$ on $\varphi\frown[M]$ by the associativity of cap and cup.
+*Proof.* By Poincaré duality the class $\digamma_{\mathrm{map}}$ corresponds to $\digamma_{\mathrm{map}} \frown [M] \in H_{n-k}(M;\mathbb{Z})$; nonvanishing of $\digamma_{\mathrm{map}}$ is equivalent to nonvanishing of this class modulo torsion. By the universal coefficient theorem a nonzero homology class modulo torsion pairs nontrivially with some cohomology class $Ξ_{\mathrm{wfn}}$ of complementary degree, and the pairing $\langle \digamma_{\mathrm{map}}\smileΞ_{\mathrm{wfn}},[M]\rangle$ equals the evaluation of $Ξ_{\mathrm{wfn}}$ on $\digamma_{\mathrm{map}}\frown[M]$ by the associativity of cap and cup.
 
 **Corollary (Poincaré duality on the level of the middle form).** The form $Q_M$ over $\mathbb{Q}$ is a nondegenerate symmetric bilinear form on the finite-dimensional $\mathbb{Q}$-vector space $H^m(M;\mathbb{Q})$; hence it has a well-defined **signature** $\sigma(M)$, the number of positive minus the number of negative entries in its diagonalisation, which is a symmetric bilinear form invariant of the manifold in the sense of *Bilinear Forms*.
 
@@ -124,9 +124,9 @@ $$
 a \cdot b = \Delta^*(a \times b),
 $$
 
-where $\Delta : M \to M \times M$ is the diagonal and $\Delta^*$ the induced map on homology; the products are related by $[M] \frown (\varphi \smile \psi) = ([M]\frown \varphi)\cdot([M]\frown\psi)$.
+where $\Delta : M \to M \times M$ is the diagonal and $\Delta^*$ the induced map on homology; the products are related by $[M] \frown (\digamma_{\mathrm{map}} \smile Ξ_{\mathrm{wfn}}) = ([M]\frown \digamma_{\mathrm{map}})\cdot([M]\frownΞ_{\mathrm{wfn}})$.
 
-*Proof.* Apply the naturality of the cap product to the diagonal: $\Delta^*(\varphi\times\psi) = \Delta^*(\mathrm{pr}_1^*\varphi \smile \mathrm{pr}_2^*\psi) = \varphi\smile\psi$, and pair with $[M]$, which is $\Delta_*[M]$ in $H_n(M\times M)$.
+*Proof.* Apply the naturality of the cap product to the diagonal: $\Delta^*(\digamma_{\mathrm{map}}\timesΞ_{\mathrm{wfn}}) = \Delta^*(\mathrm{pr}_1^*\digamma_{\mathrm{map}} \smile \mathrm{pr}_2^*Ξ_{\mathrm{wfn}}) = \digamma_{\mathrm{map}}\smileΞ_{\mathrm{wfn}}$, and pair with $[M]$, which is $\Delta_*[M]$ in $H_n(M\times M)$.
 
 **Corollary.** The cohomology ring of a closed orientable manifold determines, and is determined by, the homology with the intersection product, and hence the ring structure is constrained by Poincaré duality. In particular the cohomology ring of $\mathbb{CP}^n$ is $\mathbb{Z}[x]/(x^{n+1})$ from *Cup and Cap Products*, consistent with $\mathfrak{Q}(x^j,x^{n-j}) = 1$ for the appropriate evaluation.
 
@@ -210,7 +210,7 @@ Cap product with the fundamental class is an isomorphism $H^k(M;G) \to H_{n-k}(M
 | $H^k_c(M;\mathbb{Z}) \cong H_{n-k}(M;\mathbb{Z})$ | Poincaré–Lefschetz duality for non-compact $M$ |
 | $b_k = \dim_F H^k(M;F)$ | Betti numbers; $b_k = b_{n-k}$ |
 | $P_M(t) = \sum_k b_k t^k$ | Poincaré polynomial; $P_M(t) = t^nP_M(1/t)$ |
-| $I(\varphi,\psi) = \langle \varphi\smile\psi,[M]\rangle$ | Intersection pairing |
+| $I(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}) = \langle \digamma_{\mathrm{map}}\smileΞ_{\mathrm{wfn}},[M]\rangle$ | Intersection pairing |
 | $Q_M$ | Intersection form on $H^m(M)$ when $n = 2m$ |
 | $\sigma(M)$ | Signature of $Q_M$ over $\mathbb{Q}$ |
 | $a\cdot b = \Delta^*(a\times b)$ | Intersection product on homology; $\Delta$ the diagonal |

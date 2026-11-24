@@ -79,9 +79,9 @@ be the family of **relatively compact** subsets. Then $\mathcal{B}_c$ is a borno
 
 **Definition.** A bornology $\mathcal{B}$ is **finer** than $\mathcal{C}$, and $\mathcal{C}$ is **coarser** than $\mathcal{B}$, when $\mathcal{B} \supseteq \mathcal{C}$; in that case the identity map $(X, \mathcal{B}) \to (X, \mathcal{C})$ is bounded. Two metrics on $X$ are **bornologically equivalent** when they induce the same bornology, equivalently when the identity is bounded in both directions for the two metric bornologies.
 
-**Proposition.** Two metrics $d$ and $d'$ on $X$ are bornologically equivalent if and only if every $d$-bounded set is $d'$-bounded and conversely; this holds when $d' \leq \varphi \circ d$ and $d \leq \psi \circ d'$ for nondecreasing functions $\varphi, \psi : [0,\infty) \to [0,\infty)$ with $\varphi(0)=\psi(0)=0$. Uniformly equivalent metrics are bornologically equivalent, and the converse fails.
+**Proposition.** Two metrics $d$ and $d'$ on $X$ are bornologically equivalent if and only if every $d$-bounded set is $d'$-bounded and conversely; this holds when $d' \leq \digamma_{\mathrm{map}} \circ d$ and $d \leq Ξ_{\mathrm{wfn}} \circ d'$ for nondecreasing functions $\digamma_{\mathrm{map}}, Ξ_{\mathrm{wfn}} : [0,\infty) \to [0,\infty)$ with $\digamma_{\mathrm{map}}(0)=Ξ_{\mathrm{wfn}}(0)=0$. Uniformly equivalent metrics are bornologically equivalent, and the converse fails.
 
-**Proof.** The first statement is the definition. For the second, a $d$-bounded set $B$ has $d(x,y) \leq M$ for all pairs, so $d'(x,y) \leq \varphi(M)$, which is finite; the converse is symmetric. For the failure of the converse, the metrics $d(x,y) = |x-y|$ and $d'(x,y) = \min(|x-y|,1)$ on $\mathbb{R}$ have the same bounded sets but are not uniformly equivalent, since the identity from $d'$ to $d$ is not uniformly continuous.
+**Proof.** The first statement is the definition. For the second, a $d$-bounded set $B$ has $d(x,y) \leq M$ for all pairs, so $d'(x,y) \leq \digamma_{\mathrm{map}}(M)$, which is finite; the converse is symmetric. For the failure of the converse, the metrics $d(x,y) = |x-y|$ and $d'(x,y) = \min(|x-y|,1)$ on $\mathbb{R}$ have the same bounded sets but are not uniformly equivalent, since the identity from $d'$ to $d$ is not uniformly continuous.
 
 ## Bornologies and Topologies
 

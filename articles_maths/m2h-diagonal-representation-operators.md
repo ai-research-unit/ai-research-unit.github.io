@@ -152,7 +152,7 @@ is again Hermitian, because $(\tilde Q\tilde X\tilde Q^{*})^{*}=\tilde Q\tilde X
 $$
 \{\tilde Q:\tilde Q\tilde X\tilde Q^{*}=\tilde X\ \forall\tilde X\}=\{\pm1,\pm j\},
 $$
-a four-group, because the centraliser is $\mathbb{C}_{\mathrm{spl}}$ and the invertibles of $\mathbb{C}_{\mathrm{spl}}$ are the split-complex units $\{\pm e^{\phi j}\}$, cut down by the condition $Q^{2}=1$ to the four elements. So the kernel of the two-sided map is a four-group and not a torus, and the difference from the reduced biquaternion category, where the kernel was the whole torus $T^{2}$, is that the quaternion blocks have no commuting phases: the phases are noncommutative and the two-sided operator sees them.
+a four-group, because the centraliser is $\mathbb{C}_{\mathrm{spl}}$ and the invertibles of $\mathbb{C}_{\mathrm{spl}}$ are the split-complex units $\{\pm e^{\digamma_{\mathrm{map}} j}\}$, cut down by the condition $Q^{2}=1$ to the four elements. So the kernel of the two-sided map is a four-group and not a torus, and the difference from the reduced biquaternion category, where the kernel was the whole torus $T^{2}$, is that the quaternion blocks have no commuting phases: the phases are noncommutative and the two-sided operator sees them.
 
 **The plain two-sided operator.** $x\mapsto \tilde Q\tilde X\tilde Q$ is not conformal in the same sense, since $u^{2}$ is not real, and it is the operator of the plain product and of the functional calculus: its powers give $\tilde Q^{n}\tilde X\tilde Q^{n}$, and its kernel over the family is again the four-group.
 

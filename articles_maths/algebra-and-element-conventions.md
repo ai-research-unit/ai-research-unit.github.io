@@ -283,84 +283,49 @@ with the scale $\varrho>0$, the central phase $e^{i\theta_{\mathrm{pha}}}$ of mo
 **A qualifier names the form the word is written in, and never the number of factors.** *Modulus–unit* names the pair with $\varrho\,e^{i\theta_{\mathrm{pha}}}$ first; *exponential* names the logarithm form $\tilde Q=\exp(\tilde Q_{\log})$; *rational-chart* names the coordinates in which the unit factor is a ratio of polynomials, with one unit missed. The adjective *complete* is the one exception, and it counts factors.
 
 **The three pairings of the word are regroupings of it, and each carries its own name.** The quaternion pairing, the Hamilton root pairing and the Cartan Hermitian pairing bracket the four factors into a product of two; none of them is a second decomposition, and none of them is called complete.
-
 ## Summary
 
-The base is written with the letter $e$, one unit to a direction: the scalar unit $e_t=1$ and the three vector units $\vec e_x,\vec e_y,\vec e_z$. A generic element is $\tilde Q=\sum_{\mu}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, a coefficient carrying the name of the direction it multiplies and an element a number. The **case** records whether the scalar sector is larger than the reals and the **tilde** the presence of the quaternionic factor, and the two are read independently: $q$ is real, $Q$ complex, split-complex or dual, $\breve Q$ reduced biquaternion, $\tilde q$ quaternion or split-quaternion, $\tilde Q$ biquaternion or split-biquaternion. A matrix and an array carry no tilde.
-
-The biquaternion algebra splits into the centre $\mathbb{B}_{C}$ and the vector subspace $\mathbb{B}_{V}$, the fixed and anti-fixed spaces of the intrinsic conjugate; into the quaternion and antiquaternion subspaces $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$, the real and imaginary halves; and into the Hermitian and anti-Hermitian subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the fixed and anti-fixed spaces of the star. A pure element carries the arrow and no tilde, and the arrow takes priority where the two marks could fall on one glyph.
-
-The biquaternion algebra carries three involutions — the coefficient bar, the quaternion sign ${}^{\natural}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ — and the reversal ${}^{\flat}=-{}^{*}$ beside them. Which of the marks has a sense depends on the layer, since a mark degenerates wherever the structure it conjugates is absent: the complex, split-complex and dual layers keep the bar, the quaternion and split-quaternion layers the quaternion sign, and the reduced biquaternion layer the bar, the tessarine sign and the star.
-
-The angle follows its own rule rather than the element's: it is real, $\theta$, and the $i$ of a rotation sits in the exponential, so a rotation and a boost are the same formula at a real and at an imaginary argument. This article is the reference for the element, the subspaces, the marks and the names of the polar words. The products and forms, the norms, the special elements, the frames, the representations, the calculus, the operator families, the indices and the reserved letters are the subjects of the nine companions, and the table below is the index of the glyphs they share.
+The base is written with the letter $e$, one unit to a direction: the scalar unit $e_t=1$ and the three vector units. A generic element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, a coefficient carrying the name of the direction it multiplies. The **case** records whether the scalar sector is larger than the reals, the **tilde** the presence of the quaternionic factor, and the two are read independently; a matrix and an array carry no tilde. The algebra splits into the centre and the vector subspace, into the quaternion and antiquaternion halves, and into the Hermitian and anti-Hermitian subspaces. It carries three involutions — the bar, the quaternion sign and the star — with the reversal beside them, and which mark has a sense depends on the layer. The angle follows its own rule: it is real, and the $i$ of a rotation sits in the exponential.
 
 ## Summary of Notation
 
-The conventions below are those used throughout the corpus.
+The glyphs this article fixes. Standard notation that the corpus does not redefine is not listed.
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ | The naturals, integers, rationals, reals and complex numbers |
-| $\mathbb{C}_{\mathrm{spl}}$ | The split-complex numbers, $\mathbb{R}[x]/(x^2-1)$ |
-| $\mathbb{C}_{\mathrm{dln}}$ | The dual numbers, $\mathbb{R}[x]/(x^2)$ |
-| $\mathbb{B}_{\mathrm{red}}$ | The reduced biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$, equivalently the tessarines or the double-complex numbers; its intrinsic conjugation is the tessarine sign ${}_{\mathrm{ts}}$, and the intrinsic conjugation is not written on the layer |
-| $\mathbb{H}$ | The real quaternions |
-| $\mathbb{H}_{\mathrm{spl}}$ | The split-quaternions, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ |
-| $\mathbb{B}$ | The biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $\mathbb{B}_L$, $M_4(\mathbb{C})_{\mathbb{B}_L}$ | The image of the left regular representation, a four-dimensional subalgebra of $M_4(\mathbb{C})$; the right copy $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}$ is its commutant |
-| $\mathsf{M}_{4L}(\tilde Q)$, $\mathsf{M}_{4R}(\tilde Q)$ | The matrices of left and right multiplication by $\tilde Q$ in the basis the article names |
-| $\mathbb{B}_{\mathrm{spl}}$ | The split-biquaternions, $\mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | Lower case, upper case | The scalar sector is the reals, or larger than the reals |
-| $\theta$, $\varrho$, $\nu$, $\lambda$, $\eta$, $i$, $\Phi$, $\Psi$, $\digamma$ | The reserved letters — angle, scale, wave number, wavelength, eigenvalue, scalar imaginary, the two sectors — and the fallback glyph of every other scalar (*Reserved Letters Conventions*) |
-| $Q$, $Ζ$, $\Pi$ | The reserved element glyphs — the generic element, the roots, the idempotent and the nilpotent (*Reserved Letters Conventions*) |
-| Tilde | The presence of the quaternionic factor |
-| Arrow | The vector part of a named element and a pure element standing by itself — $\vec q$ or $\vec Q$ (§*The Centre and the Vector Subspace*) |
-| $\alpha, \beta$; $q, q_1, q_2$ | The generic elements of the Booleans, and of the rationals and the reals |
-| $q = n/m$ | A rational written as a fraction of two integers, with numerator $n \in \mathbb{Z}$ and denominator $m \in \mathbb{N}_{\geq 1}$; in lowest terms $\gcd(n,m) = 1$; the glyph $q$ is the rational, and no letter beyond the integers' own is spent on a numerator or a denominator |
-| $n$, $m$ | The generic elements of the naturals and the integers, and the inertia indices, the counts of positive and negative directions of a real form, as in $\mathrm{Cl}_{n,m}$ and $O(n,m)$ |
-| $Q = (Q_{\blacktriangle}, Q_{\blacktriangledown})$ | A duo-complex number, a point of $\mathbb{C}^2$: the ascending triangle is the first coordinate and the descending triangle the second, each complex, $Q_{\blacktriangle} = q_{\blacktriangle} + iq'_{\blacktriangle}$ and $Q_{\blacktriangledown} = q_{\blacktriangledown} + iq'_{\blacktriangledown}$; the same pair with the multiplication by $j$ is the reduced biquaternion $\breve Q$ |
-| $Q = q + iq'$ | The generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$, and the imaginary coefficient carrying a prime; where several occur they are numbered $Q_1, Q_2, \dots$ |
-| $\breve Q = Q_{\blacktriangle} + jQ_{\blacktriangledown}$ | The generic element of the reduced biquaternion algebra $\mathbb{B}_{\mathrm{red}}$, upper case, with the breve and no tilde, its two coordinates $Q_{\blacktriangle} = q_{\blacktriangle} + iq'_{\blacktriangle}$ and $Q_{\blacktriangledown} = q_{\blacktriangledown} + iq'_{\blacktriangledown}$ complex and its second unit the hyperbolic $j$, $j^{2} = +1$ and $ji = ij$, on the basis $1, i, j, ij$ |
-| $\tilde q$ | The generic element of the quaternion or split-quaternion layer |
-| $\tilde Q$ | The generic element of the biquaternion or split-biquaternion layer, and the generic element of a statement that holds for every element; in a statement with several they are numbered $\tilde Q_1, \tilde Q_2, \dots$ |
-| $Q_{\log}$ | A logarithm of $Q$, a solution of $\exp(Q_{\log}) = Q$: $Q_{\log}$ in the complex, split-complex and dual algebras, $\tilde q_{\log}$ in the quaternion and split-quaternion layers, $\tilde Q_{\log}$ in the biquaternion and split-biquaternion layers, $\breve Q_{\log}$ in the reduced biquaternion algebra |
-| $\vec q$ | A pure element of the quaternion or split-quaternion layer, an element with no scalar part |
-| $\vec Q$ | A pure element of the biquaternion or split-biquaternion layer |
-| $\mathbb{B}_{C}$, $\mathbb{B}_{V}$ | The centre and the vector subspace of the biquaternion algebra, the fixed and anti-fixed spaces of the intrinsic conjugate (§*The Remarkable Subspaces of Biquaternions*) |
-| $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | The quaternion and antiquaternion subspaces, the real and imaginary halves of the biquaternion algebra |
-| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The Hermitian and anti-Hermitian subspaces, the fixed and anti-fixed spaces of the star |
-| $\tilde Q_\Psi$, $\tilde Q_\Phi$ | The informational and material parts of an element, $\tilde Q=\tilde Q_\Psi+\tilde Q_\Phi$, in $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ (§*The Hermitian and Anti-Hermitian Subspaces*) |
-| $G$; $R$; $k$, $F$; $V$; $M$; $A$ | A group; a ring; a field; a vector space; a module; an algebra |
-| $\mathrm{G}, \mathrm{H}, \mathrm{SL}_n$ | Lie algebras |
-| $\mathrm{M}, \mathrm{P}$ | Ideals and prime ideals |
-| $\operatorname{sym}(X), \operatorname{Aut}(X)$ | The symmetric group of a set; the automorphism group of a structure |
-| $\operatorname{End}(V), \operatorname{Der}(A), \operatorname{Inn}(A), \operatorname{Out}(A)$ | Endomorphisms, derivations, inner and outer automorphisms |
-| $GL, SL, PGL, O, SO, U, SU, Sp$ | The classical groups |
-| $T(V), S(V), \Lambda(V), Cl(V,\mathfrak{Q})$ | Tensor, symmetric, exterior and Clifford algebras |
-| $V^{\otimes n}, S^n V, \Lambda^n V$ | Tensor, symmetric and exterior powers |
-| $\langle v,w\rangle, \mathfrak{Q}(v), \lVert x\rVert$ | Bilinear form, quadratic form, norm |
-| $P$, $N$, $H$, $\mathrm{Kr}$ | The letters of the four forms and algebraic norms of the biquaternion layer — plain, quaternionic, Hermitian and Krein — each naming the form with two arguments and the norm with one; $P$ and not $B$, which is the complex modulus of the vector part and the right annihilator (*Product and Form Conventions*, §*The Form Convention*) |
-| regular for a letter, degenerate for a letter | the value under $P$, $N$, $H$ or $\mathrm{Kr}$ is non-zero, respectively zero; only the $N$ pair is the partition into the invertibles and non-invertibles, and *regular* unqualified is spectral, $B^{2}\neq0$ (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*) |
-| $\mathfrak{Q}$ | The quadratic form of a quadratic space, in Fraktur so that the plain $q$ and $Q$ stay with the elements |
-| $\mathcal{Q}$ | The Lie or null quadric, in calligraphic, as in $\mathcal{Q}^{n+1}$ |
-| $\bullet$ | The symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and, with the slot subscripts ${}_{*}$, ${}_{\natural}$ and ${}_{\natural*}$, the four **symmetric products** of *Product and Form Conventions*, §*The Twelve Products and Their Names*; the circle $\circ$ is reserved for the composition of maps |
-| $\wedge$ | The antisymmetrised product, $x \wedge y = \tfrac{1}{2}(xy - yx)$, and, with the same subscripts, the four **antisymmetric products** of *Product and Form Conventions*, §*The Twelve Products and Their Names*. On differential forms the same glyph is the exterior product, $\alpha\wedge\beta$, a different use |
-| $\bar{\cdot}, {}^{\natural}, {}_{\mathrm{ts}}, {}^{*}, {}^{\flat}, {}^{\dagger}$ | The conjugations of an algebra with an involution — the bar, the quaternion sign ${}^{\natural}$, the tessarine sign ${}_{\mathrm{ts}}$ of $\mathbb{B}_{\mathrm{red}}$, the star, the anti-Hermitian sign — and the adjoint of an operator; §*The Conjugations* and *Operator and Calculus Conventions*, §*The Operators*, fix their meanings |
-| $\tilde\Pi_{\mathrm{id}}$, $\tilde\pi_{\mathrm{id}}$, $\Pi_{\mathrm{id}}$, $\Pi_{\mathrm{id},\pm}$ | An idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi_{\mathrm{id}}$, the quaternion layer $\tilde\pi_{\mathrm{id}}$, and the tilde-free layers $\Pi_{\mathrm{id}}$, the split-complex and reduced biquaternion ones writing the sign pair $\Pi_{\mathrm{id},\pm}$ (*Special Element and Peirce Conventions*, §*The Idempotent Convention*) |
-| $\tilde{Ζ}$, $\tilde\zeta$, $Ζ$ | A root of $1$: the biquaternion layer writes $\tilde{Ζ}$, the quaternion layer $\tilde\zeta$, and the tilde-free layers $Ζ$ (*Special Element and Peirce Conventions*, §*The Root Convention*) |
-| $\Pi_{\mathrm{nil}}$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
-| $\tilde\Pi_{\mathrm{nil}}$ | A nilpotent of the biquaternion or split-biquaternion layer |
-| $\tilde\pi_{\mathrm{nil}}$ | A nilpotent of the quaternion or split-quaternion layer |
-| $\vec{Ζ}$, $\vec\Pi_{\mathrm{nil}}$ | A pure root of $1$ and a pure nilpotent of the biquaternion or split-biquaternion layer; $\vec\zeta$ and $\vec\pi_{\mathrm{nil}}$ in the quaternion and split-quaternion layers |
-| $\tilde u$, $\vec u$ | A unit element of the quaternion or split-quaternion layer, and its pure case, the axis of a rotation |
-| $\tilde U$, $\vec U$ | A unit element of the biquaternion or split-biquaternion layer, $\langle\tilde U\rangle_{\natural}=e_t$ (the $N$-norm), and its pure case, of norm one |
-| $U$ | A unit element of the complex, split-complex, dual or reduced biquaternion layer |
-| $F_{\mathrm{fn}}, G_{\mathrm{fn}}, H_{\mathrm{fn}}$ | A function from a domain into the algebra, $F_{\mathrm{fn}} : \Omega \to \mathbb{B}$; the tilde marks a value and is never put on a map, since a function is not an element |
-| $\tilde\nabla_\Phi$ | The biquaternionic gradient, $\tilde\nabla_\Phi = \sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu$; it keeps the tilde because its symbol is an algebra unit and not a letter |
-| $g_{\mathrm{spin}}$ | An element of the group $\mathrm{Spin}(n)$ or $\mathrm{Pin}(n)$ on a principal bundle; not an element of the algebra |
-| $_{\mathrm{fop}}$ | A **Fock operator**, an operator on the Fock space and not an element of the algebra — $a_{\mathrm{fop}}$, $N_{\mathrm{fop}}$, $H_{\mathrm{fop}}$, $U_{\mathrm{fop}}$. No other operator carries the mark. The opposite algebra uses the separate token $A_{\mathrm{opp}}$, and the two-letter form $\mathrm{op}$ is not a token of the corpus: it differs from $\mathrm{opp}$ by one letter at superscript size, and it is written nowhere, neither for the operator norm, which is $\lVert A\rVert$, nor for an operator |
-| $\mathrm{Form}(\tilde Q_1,\tilde Q_2)$, $\mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q)$ | The generic form and the generic norm (*Product and Form Conventions*, §*The Form Convention*) |
-| $\langle\tilde Q_1,\tilde Q_2\rangle$, $\langle\tilde Q\rangle$ | The generic bracket, the form in two arguments and the norm in one; the subscript records the pair of slots — plain, $*$ Hermitian, $\natural$ quaternionic, $\natural*$ Krein, and, in $\mathbb{B}_{\mathrm{red}}$, ${}_{\mathrm{ts}}$ tessarine and ${}_{\mathrm{ts}*}$ tessarine-Hermitian |
+| Tilde, arrow | The quaternionic factor; the vector part of a named element, and a pure element standing alone |
+| $\theta$, $\varrho$, $\nu$, $\lambda$, $\eta$, $i$, $\Phi$, $\Psi$, $\digamma$ | The reserved letters: angle, scale, wave number, wavelength, eigenvalue, scalar imaginary, the two sectors, and the fallback (*Reserved Letters Conventions*) |
+| $Q$, $Ζ$, $\Pi$ | The reserved element glyphs: the generic element, the roots, the idempotent and the nilpotent |
+| $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$ | The split-complex numbers $\mathbb{R}[x]/(x^2-1)$ and the dual numbers $\mathbb{R}[x]/(x^2)$ |
+| $\mathbb{B}_{\mathrm{red}}$ | The reduced biquaternions, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the tessarines; its intrinsic conjugation is the tessarine sign ${}_{\mathrm{ts}}$ |
+| $\mathbb{H}$, $\mathbb{H}_{\mathrm{spl}}$ | The real quaternions, and the split-quaternions $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ |
+| $\mathbb{B}$, $\mathbb{B}_{\mathrm{spl}}$ | The biquaternions $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, and the split-biquaternions |
+| $\mathbb{B}_L$, $\mathsf{M}_{4L}(\tilde Q)$, $\mathsf{M}_{4R}(\tilde Q)$ | The left regular image in $M_4(\mathbb{C})$, and the matrices of left and right multiplication |
+| $Q = q + iq'$ | The generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$; numbered $Q_1,Q_2,\dots$ where several occur |
+| $\breve Q = Q_{\blacktriangle} + jQ_{\blacktriangledown}$ | The generic element of $\mathbb{B}_{\mathrm{red}}$, breve and no tilde, on $1,i,j,ij$ with $j^2=+1$ |
+| $Q = (Q_{\blacktriangle}, Q_{\blacktriangledown})$ | A duo-complex number, a point of $\mathbb{C}^2$, the two triangles naming the two coordinates |
+| $\tilde q$, $\tilde Q$ | The generic element of the quaternion layer, and of the biquaternion layer |
+| $\vec q$, $\vec Q$ | A pure element of those layers, with no scalar part |
+| $Q_{\log}$ | A logarithm of $Q$, a solution of $\exp(Q_{\log})=Q$, in every layer with its own case |
+| $n$, $m$ | The generic naturals and integers, and the inertia counts of a real form |
+| $\mathbb{B}_{C}$, $\mathbb{B}_{V}$ | The centre and the vector subspace, the fixed and anti-fixed spaces of the intrinsic conjugate |
+| $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | The quaternion and antiquaternion subspaces |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The Hermitian and anti-Hermitian subspaces |
+| $\tilde Q_\Psi$, $\tilde Q_\Phi$ | The informational and material parts, $\tilde Q=\tilde Q_\Psi+\tilde Q_\Phi$ |
+| $P$, $N$, $H$, $\mathrm{Kr}$ | The four forms and norms of the biquaternion layer: plain, quaternionic, Hermitian, Krein; $P$ and not $B$, which is the complex modulus of the vector part |
+| regular, degenerate | For a letter, the value under $P$, $N$, $H$ or $\mathrm{Kr}$ is non-zero, respectively zero; unqualified, *regular* is spectral |
+| $\mathfrak{Q}$, $\mathcal{Q}$ | The quadratic form of a quadratic space, in Fraktur; the Lie or null quadric, in calligraphic |
+| $\bullet$, $\wedge$ | The symmetrised and antisymmetrised products, with the slot subscripts ${}_{*}$, ${}_{\natural}$, ${}_{\natural*}$ marking the four symmetric and four antisymmetric products; $\circ$ is composition, and $\wedge$ on forms is the exterior product |
+| $\bar{\cdot}$, ${}^{\natural}$, ${}_{\mathrm{ts}}$, ${}^{*}$, ${}^{\flat}$, ${}^{\dagger}$ | The conjugations — bar, quaternion sign, tessarine sign, star, anti-Hermitian sign — and the adjoint of an operator |
+| $\tilde\Pi_{\mathrm{id}}$, $\tilde\pi_{\mathrm{id}}$, $\Pi_{\mathrm{id}}$, $\Pi_{\mathrm{id},\pm}$ | An idempotent or a pure state, layer by layer; the split-complex and reduced biquaternion ones write the sign pair |
+| $\tilde{Ζ}$, $\tilde\zeta$, $Ζ$ | A root of $1$, layer by layer; $\vec{Ζ}$ is the pure case |
+| $\Pi_{\mathrm{nil}}$, $\tilde\Pi_{\mathrm{nil}}$, $\tilde\pi_{\mathrm{nil}}$ | A nilpotent, layer by layer, with $\vec\Pi_{\mathrm{nil}}$ and $\vec\zeta$ for the pure ones |
+| $\tilde u$, $\vec u$, $\tilde U$, $\vec U$, $U$ | A unit element, layer by layer, and the pure case $\vec u$, the axis of a rotation |
+| $F_{\mathrm{fn}}$, $g_{\mathrm{spin}}$ | A function into the algebra, and an element of $\mathrm{Spin}(n)$ or $\mathrm{Pin}(n)$, which is not an element of the algebra |
+| $\tilde\nabla_\Phi$ | The biquaternionic gradient, $\sum_\mu e_\mu\partial/\partial Q_\mu$ |
+| $_{\mathrm{fop}}$ | A Fock operator, an operator and not an element of the algebra; the opposite algebra takes $A_{\mathrm{opp}}$, and the short form $\mathrm{op}$ is not a token of the corpus |
+| $\mathrm{Form}$, $\mathrm{Norm}$, $\langle\ ,\ \rangle$ | The generic form and norm, and the bracket, whose subscript records the pair of slots |
 
 ## Further Reading
 

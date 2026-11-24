@@ -73,7 +73,7 @@ In the commutative theory, therefore, an automorphism can only act through the a
 
 **Theorem.** For a field $F$, every $F$-algebra automorphism of $F[x]$ is of the form $x \mapsto ax + b$ with $a \in F^\times$, $b \in F$. Every $F$-algebra automorphism of the rational function field $F(x)$ is of the form $x \mapsto \frac{ax+b}{cx+d}$ with $ad - bc \neq 0$.
 
-**Proof.** An $F$-algebra endomorphism $\varphi$ of $F[x]$ is determined by $f = \varphi(x)$, and $\varphi$ is surjective exactly when $f$ generates $F[x]$ as an $F$-algebra, that is, exactly when $x$ lies in the subalgebra $F[f]$ of polynomials in $f$; this happens exactly when $\deg f = 1$, since $x = a^{-1}(f - b)$ for $f = ax + b$ with $a \neq 0$, and $x \notin F[f]$ when $\deg f \geq 2$. Similarly, an $F$-algebra endomorphism of $F(x)$ is determined by $g = \varphi(x) \in F(x)$, and it is an automorphism exactly when $g$ has degree $1$ as a rational map, that is, when $g$ is a fractional linear transformation; the composition rule is matrix multiplication in $\operatorname{PGL}_2(F)$.
+**Proof.** An $F$-algebra endomorphism $\digamma_{\mathrm{map}}$ of $F[x]$ is determined by $f = \digamma_{\mathrm{map}}(x)$, and $\digamma_{\mathrm{map}}$ is surjective exactly when $f$ generates $F[x]$ as an $F$-algebra, that is, exactly when $x$ lies in the subalgebra $F[f]$ of polynomials in $f$; this happens exactly when $\deg f = 1$, since $x = a^{-1}(f - b)$ for $f = ax + b$ with $a \neq 0$, and $x \notin F[f]$ when $\deg f \geq 2$. Similarly, an $F$-algebra endomorphism of $F(x)$ is determined by $g = \digamma_{\mathrm{map}}(x) \in F(x)$, and it is an automorphism exactly when $g$ has degree $1$ as a rational map, that is, when $g$ is a fractional linear transformation; the composition rule is matrix multiplication in $\operatorname{PGL}_2(F)$.
 
 **Remark.** For a non-reduced commutative ring the automorphism group of $R[x]$ is larger than the affine group: if $a \in R$ is nilpotent then $x \mapsto x + ax^2$ is an automorphism, because $y = x + ax^2$ can be solved for $x$ by the series $x = y - ay^2 + 2a^2y^3 - \cdots$, which terminates in a polynomial since $a^N = 0$ for some $N$; over a field the same substitution is not an automorphism, the series being infinite. Separately, $\operatorname{Aut}(\mathbb{Z}/n\mathbb{Z}) = 1$ for every $n$, because a unital automorphism fixes $1$ and hence every element; the group $(\mathbb{Z}/n\mathbb{Z})^\times$ that one meets in this connection is the automorphism group of the *additive group* $\mathbb{Z}/n\mathbb{Z}$, not of the ring.
 
@@ -129,7 +129,7 @@ The group $\operatorname{Aut}(K) = \operatorname{Aut}_{\mathbb{Z}}(K)$ of all au
 
 **Example.** For $\mathbb{Q}(\sqrt2)/\mathbb{Q}$ the minimal polynomial $x^2 - 2$ splits in $\mathbb{Q}(\sqrt2)$, so the automorphism group has order $2$. For $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ the minimal polynomial $x^3 - 2$ has only one root in the field, so the group is trivial, even though the extension is not Galois and $\lvert \operatorname{Aut} \rvert < [K:F]$.
 
-**Example.** For the cyclotomic field $\mathbb{Q}(\omega_n)$, every automorphism sends $\omega_n \mapsto \omega_n^{k}$ for a unique $k$ with $\gcd(k,n)=1$, giving $\operatorname{gal}(\mathbb{Q}(\omega_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$; the count uses the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in *Unique Factorisation Domains* and standard in general.
+**Example.** For the cyclotomic field $\mathbb{Q}(\omega_n)$, every automorphism sends $\omega_n \mapsto \omega_n^{k}$ for a unique $k$ with $\gcd(k,n)=1$, giving $\operatorname{gal}(\mathbb{Q}(\omega_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\digamma_{\mathrm{tot}}(n)$; the count uses the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in *Unique Factorisation Domains* and standard in general.
 
 ### Termination of the Correspondence for Finite Extensions
 
@@ -143,9 +143,9 @@ Let $K/F$ be a finite extension and let $E = K^{\operatorname{gal}(K/F)}$ be the
 
 ### The Frobenius Automorphism
 
-**Theorem.** Let $K$ have characteristic $p > 0$. The **Frobenius map** $\varphi(x) = x^p$ is an injective endomorphism of $K$; it is an automorphism exactly when $K$ is perfect. In particular $\varphi \in \operatorname{Aut}(\mathbb{F}_{p^n})$ has order $n$, and $\operatorname{Aut}(\mathbb{F}_{p^n}) = \operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n$.
+**Theorem.** Let $K$ have characteristic $p > 0$. The **Frobenius map** $\digamma_{\mathrm{map}}(x) = x^p$ is an injective endomorphism of $K$; it is an automorphism exactly when $K$ is perfect. In particular $\digamma_{\mathrm{map}} \in \operatorname{Aut}(\mathbb{F}_{p^n})$ has order $n$, and $\operatorname{Aut}(\mathbb{F}_{p^n}) = \operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \digamma_{\mathrm{map}} \rangle \cong \mathbb{Z}/n$.
 
-**Proof.** The freshman's dream gives additivity, multiplicativity is immediate, and the kernel is trivial. Surjectivity of $\varphi$ is exactly the perfectness criterion of *Splitting Fields and Algebraic Closure*; it holds for every finite field since an injective self-map of a finite set is bijective, and for every algebraically closed field. The order computation on $\mathbb{F}_{p^n}$ and the identification with the full automorphism group are from *Finite Fields* and *Galois Theory*.
+**Proof.** The freshman's dream gives additivity, multiplicativity is immediate, and the kernel is trivial. Surjectivity of $\digamma_{\mathrm{map}}$ is exactly the perfectness criterion of *Splitting Fields and Algebraic Closure*; it holds for every finite field since an injective self-map of a finite set is bijective, and for every algebraically closed field. The order computation on $\mathbb{F}_{p^n}$ and the identification with the full automorphism group are from *Finite Fields* and *Galois Theory*.
 
 **Remark (absolute Galois group).** The automorphism group $\operatorname{gal}(\overline{F}/F) = \operatorname{Aut}_F(\overline{F})$ is the **absolute Galois group** of $F$. It is a profinite group and it is the basic invariant of the arithmetic of $F$; for $F = \mathbb{F}_p$ it is the profinite completion $\widehat{\mathbb{Z}}$, topologically generated by the Frobenius, while for $F = \mathbb{Q}$ it is a large group about which much is known and much is not. The structure of absolute Galois groups belongs to algebraic number theory ; only the finite-field case is elementary.
 
@@ -163,7 +163,7 @@ When $[K:F] = 2$ this fixed field is $F$ itself, and if in addition $\operatorna
 
 **Proof.** The first identity is the fundamental theorem applied to the subgroup of order $2$, and the second follows from the tower law. If $[K:F] = 2$ then $\sigma$ generates $\operatorname{gal}(K/F)$, so $K^{\langle\sigma\rangle}$ is the fixed field of the full Galois group, namely $F$; in characteristic different from $2$ every quadratic extension is obtained by adjoining a square root of a nonsquare in the base field (the usual completion-of-the-square argument).
 
-**Example.** The complex conjugation $\sigma(z) = \bar z$ is an involution of $\mathbb{C}$ with fixed field $\mathbb{R}$; the field extension $\mathbb{R}(i)/\mathbb{R}$ is quadratic, adjoining a root of $x^2 + 1$. On $\mathbb{F}_{p^n}$ with $n$ even, the involution $\varphi^{n/2}$ has fixed field $\mathbb{F}_{p^{n/2}}$, and the extension $\mathbb{F}_{p^n}/\mathbb{F}_{p^{n/2}}$ is quadratic.
+**Example.** The complex conjugation $\sigma(z) = \bar z$ is an involution of $\mathbb{C}$ with fixed field $\mathbb{R}$; the field extension $\mathbb{R}(i)/\mathbb{R}$ is quadratic, adjoining a root of $x^2 + 1$. On $\mathbb{F}_{p^n}$ with $n$ even, the involution $\digamma_{\mathrm{map}}^{n/2}$ has fixed field $\mathbb{F}_{p^{n/2}}$, and the extension $\mathbb{F}_{p^n}/\mathbb{F}_{p^{n/2}}$ is quadratic.
 
 **Example.** The Galois group of $\mathbb{Q}(\omega_n)$ contains the involution $\omega_n \mapsto \omega_n^{-1}$, whose fixed field $\mathbb{Q}(\omega_n + \omega_n^{-1})$ is the **maximal real subfield** of the cyclotomic field, of index $2$.
 
@@ -222,7 +222,7 @@ Anti-automorphisms reverse multiplication; complex conjugation is the standard i
 | $\operatorname{Inn}(R)$ | Inner automorphism group $\cong R^\times/Z(R)^\times$ |
 | $\operatorname{Out}(R)$ | Outer automorphism group $\operatorname{Aut}(R)/\operatorname{Inn}(R)$ |
 | $R^G$, $K^G$ | Fixed subring, fixed field of a subgroup $G$ |
-| $\varphi(x) = x^p$ | Frobenius map |
+| $\digamma_{\mathrm{map}}(x) = x^p$ | Frobenius map |
 | $\operatorname{gal}(\overline{F}/F)$ | Absolute Galois group |
 | $\omega_n$ | Primitive $n$-th root of unity |
 | $\mathbb{M}_n(k)$, $\operatorname{PGL}_n(k)$ | Matrix algebra and its projective general linear group |

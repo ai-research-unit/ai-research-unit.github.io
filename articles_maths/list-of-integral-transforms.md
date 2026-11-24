@@ -69,7 +69,7 @@ The objects are named rather than denoted; the symbols in the tables are collect
 |---|---|
 | $\mathcal F f$, $\mathcal F f$ | the Fourier transform of $f$ |
 | $\hat\mu$ | the Fourier–Stieltjes transform of a measure |
-| $\varphi_X$, $\chi$ | a character, and a characteristic function in the probabilistic use |
+| $\digamma_{\mathrm{map},X}$, $\chi$ | a character, and a characteristic function in the probabilistic use |
 | $R(\lambda,A)$ | the resolvent, the Laplace transform of a semigroup |
 | $\mathcal M f$, $f \star g$ | the Mellin transform and the multiplicative convolution |
 | $Hf$, $R_j$ | the Hilbert transform and the Riesz transforms |

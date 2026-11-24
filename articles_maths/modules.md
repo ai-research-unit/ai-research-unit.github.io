@@ -118,7 +118,7 @@ $R^n$ is free with the **standard basis** $e_1,\dots,e_n$, and $R[x]$ is free on
 
 **Universal property.** A function from a basis $B$ of a free module $F$ to any module $M$ extends uniquely to a homomorphism $F \to M$. Hence $F \cong \bigoplus_{i \in I} R$ for a basis of cardinality $I$, so free modules are exactly the direct sums of copies of the regular module ${}_R R$ of *Examples*.
 
-**Every module is a quotient of a free module:** mapping a free basis labelled by the elements of $M$ to those elements gives a surjection $F \to M$, so $M \cong F/\ker \varphi$. Over an integral domain, free modules are torsion-free (*Torsion and Annihilators*).
+**Every module is a quotient of a free module:** mapping a free basis labelled by the elements of $M$ to those elements gives a surjection $F \to M$, so $M \cong F/\ker \digamma_{\mathrm{map}}$. Over an integral domain, free modules are torsion-free (*Torsion and Annihilators*).
 
 ## Rank and the Invariant Basis Number Property
 

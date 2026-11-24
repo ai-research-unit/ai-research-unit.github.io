@@ -182,10 +182,10 @@ while neither $\tilde{Q}_1$ nor $\tilde{Q}_2$ is zero. The pair therefore exhibi
 
 ## The Two Quaternion Halves Realised
 
-The isomorphism $\varphi : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$, sends the concrete element to
+The isomorphism $\digamma_{\mathrm{map}} : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, $\digamma_{\mathrm{map}}(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$, sends the concrete element to
 
 $$
-\varphi(\tilde{Q}) = \big(2 + 2 \vec e_x, \; 2 \vec e_x + 2 \vec e_y \big).
+\digamma_{\mathrm{map}}(\tilde{Q}) = \big(2 + 2 \vec e_x, \; 2 \vec e_x + 2 \vec e_y \big).
 $$
 
 Multiplication is componentwise, so the concrete element is invertible in $\mathbb{B}_{\mathrm{spl}}$ exactly because each of $2 + 2 \vec e_x$ and $2 \vec e_x + 2 \vec e_y$ is a nonzero quaternion, hence a unit in $\mathbb{H}$; indeed
@@ -194,7 +194,7 @@ $$
 (2 + 2 \vec e_x)^{-1} = \tfrac{1}{8}(2 - 2 \vec e_x), \qquad (2 \vec e_x + 2 \vec e_y)^{-1} = \tfrac{1}{8}(-2 \vec e_x - 2 \vec e_y),
 $$
 
-and $\varphi(\tilde{Q}^{-1}) = \tfrac{1}{8}(2 - 2 \vec e_x, -2 \vec e_x - 2 \vec e_y)$, which agrees with the inverse $\tilde{Q}^{-1} = \tfrac{1}{8} \tilde{Q}^{\natural}$. The two halves are thus not merely an abstract direct sum: on this element they are the two nonzero quaternions whose product-freeness decides invertibility.
+and $\digamma_{\mathrm{map}}(\tilde{Q}^{-1}) = \tfrac{1}{8}(2 - 2 \vec e_x, -2 \vec e_x - 2 \vec e_y)$, which agrees with the inverse $\tilde{Q}^{-1} = \tfrac{1}{8} \tilde{Q}^{\natural}$. The two halves are thus not merely an abstract direct sum: on this element they are the two nonzero quaternions whose product-freeness decides invertibility.
 
 ## Summary
 
@@ -204,7 +204,7 @@ $$
 \tilde{Q} = (1 + j) + 2 \vec e_x + (1 - j) \vec e_y
 $$
 
-the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 - j) \vec e_y$, $\bar{\tilde{Q}} = (1 - j) + 2 \vec e_x + (1 + j) \vec e_y$, $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ and $\tilde{Q}^\flat = -\tilde{Q}^{*}$; the four fixed-point subspaces $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_{\mathrm{id},1,2}$; the element decomposes as $\tilde{Q} = (2 + 2 \vec e_x) \tilde\Pi_{\mathrm{id},1} + (2 \vec e_x + 2 \vec e_y) \tilde\Pi_{\mathrm{id},2}$ with both components nonzero. An explicit zero-divisor pair is $\tilde{Q}_1 = \vec e_x \tilde\Pi_{\mathrm{id},2}$ and $\tilde{Q}_2 = (1 + \vec e_y) \tilde\Pi_{\mathrm{id},1}$, with $\tilde{Q}_1 \tilde{Q}_2 = 0$. The isomorphism $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 \vec e_x, 2 \vec e_x + 2 \vec e_y)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 \vec e_x) + j(4 + 4 \vec e_x)$ agrees whether computed from the product formula or from the idempotent components.
+the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 - j) \vec e_y$, $\bar{\tilde{Q}} = (1 - j) + 2 \vec e_x + (1 + j) \vec e_y$, $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ and $\tilde{Q}^\flat = -\tilde{Q}^{*}$; the four fixed-point subspaces $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_{\mathrm{id},1,2}$; the element decomposes as $\tilde{Q} = (2 + 2 \vec e_x) \tilde\Pi_{\mathrm{id},1} + (2 \vec e_x + 2 \vec e_y) \tilde\Pi_{\mathrm{id},2}$ with both components nonzero. An explicit zero-divisor pair is $\tilde{Q}_1 = \vec e_x \tilde\Pi_{\mathrm{id},2}$ and $\tilde{Q}_2 = (1 + \vec e_y) \tilde\Pi_{\mathrm{id},1}$, with $\tilde{Q}_1 \tilde{Q}_2 = 0$. The isomorphism $\digamma_{\mathrm{map}}(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 \vec e_x, 2 \vec e_x + 2 \vec e_y)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 \vec e_x) + j(4 + 4 \vec e_x)$ agrees whether computed from the product formula or from the idempotent components.
 
 ## Summary of Notation
 
@@ -219,7 +219,7 @@ the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 -
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | The four involution fixed-point subspaces |
 | $\mathbb{H} \tilde\Pi_{\mathrm{id},1,2}$ | The two minimal left ideals, each $\cong \mathbb{H}$ |
-| $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Idempotent-decomposition isomorphism |
+| $\digamma_{\mathrm{map}}(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Idempotent-decomposition isomorphism |
 
 ## Further Reading
 

@@ -14,12 +14,12 @@ A viscous potential flow in one dimension is linearisable, exactly, by the Hopf�
 
 ## The Two Directions
 
-The forward direction is exact and general. Every solution of a linear wave equation gives a fluid by $\psi=n_{\mathrm{num}}e^{\frac{2\pi iS}{h}}$, away from the nodes. The amplitude $n_{\mathrm{num}}$ is defined by its square, $n_{\mathrm{num}}^{2}=\rho_{\mathrm{num}}$, because a root of a density is a half power of the base units and is never printed. The map is a rewriting, it loses nothing, and its only exception is the set where the density vanishes.
+The forward direction is exact and general. Every solution of a linear wave equation gives a fluid by $Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}e^{\frac{2\pi iS}{h}}$, away from the nodes. The amplitude $n_{\mathrm{num}}$ is defined by its square, $n_{\mathrm{num}}^{2}=\rho_{\mathrm{num}}$, because a root of a density is a half power of the base units and is never printed. The map is a rewriting, it loses nothing, and its only exception is the set where the density vanishes.
 
 The reverse direction is conditional and its output is nonlinear. It is defined on barotropic irrotational inviscid flows that carry the quantum term, and on that class its output is
 
 $$
-i \frac{h}{2\pi}\,\partial_{t'}\psi=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi\psi+V(\rho_{\mathrm{num}})\psi ,
+i \frac{h}{2\pi}\,\partial_{t'}Ξ_{\mathrm{wfn}}=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\PhiΞ_{\mathrm{wfn}}+V(\rho_{\mathrm{num}})Ξ_{\mathrm{wfn}} ,
 \qquad
 \frac{\mathrm{d}V}{\mathrm{d}\rho_{\mathrm{num}}}=\frac{1}{\rho_{\mathrm{num}}}\frac{\mathrm{d}p_{\mathrm{th}}}{\mathrm{d}\rho_{\mathrm{num}}} ,
 $$
@@ -44,13 +44,13 @@ Given the two, the Hamilton–Jacobi equation is a definition and not an assumpt
 
 A gradient has no curl, so $\vec\nabla_\Phi\times\vec v=\vec 0$ is necessary, and on a simply connected domain it is sufficient. On a domain with a hole it is sufficient up to the period, which is the winding of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html).
 
-A rotational velocity is not without potentials: the Clebsch form writes it with three functions, $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}/m+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}/m$, and the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ carries the whole vorticity. So what the reverse map needs is not the absence of vorticity but a vorticity whose rank the target can hold, and a single complex unknown holds one rank and no more. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the hierarchy, and states the medium whose data do carry a pair: the spinning fluid of the Dirac block.
+A rotational velocity is not without potentials: the Clebsch form writes it with three functions, $\vec v=\vec\nabla_\Phi\xi_{\mathrm{pot},\mathrm{clb}}/m+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}/m$, and the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ carries the whole vorticity. So what the reverse map needs is not the absence of vorticity but a vorticity whose rank the target can hold, and a single complex unknown holds one rank and no more. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the hierarchy, and states the medium whose data do carry a pair: the spinning fluid of the Dirac block.
 
 The force has three parts and each can fail to be a gradient on its own. The pressure part is a gradient exactly when the flow is isentropic, by the Gibbs–Duhem relation of [The Equation of State and the Barotropic Condition](the-equation-of-state-and-the-barotropic-condition.html), and barotropicity is the *stronger* hypothesis that makes it a gradient whatever the entropy field does. The viscous part is a gradient only in special flows — the unidirectional one is the case — and in general it is not, which is the inviscid condition. The external part is a gradient exactly when the external field is conservative.
 
 So the folk statement is one condition on the velocity and two on the force, and every one of them is necessary. None is sufficient, and the insufficiency is the part the folk statement loses.
 
-With $\Phi_{\mathrm{acc}}$ arbitrary, the $\psi$ built from the flow obeys a Schrödinger equation whose potential is whatever $\Phi_{\mathrm{acc}}$ happens to be. For the fluid to be the reading of a wave equation of the theory's form, the potential must be
+With $\Phi_{\mathrm{acc}}$ arbitrary, the $Ξ_{\mathrm{wfn}}$ built from the flow obeys a Schrödinger equation whose potential is whatever $\Phi_{\mathrm{acc}}$ happens to be. For the fluid to be the reading of a wave equation of the theory's form, the potential must be
 
 $$
 \Phi_{\mathrm{acc}}=\frac{V(\rho_{\mathrm{num}})}{m}+\frac{Q_{\mathrm{qnt}}}{m} ,
@@ -110,11 +110,11 @@ The wave equation is written first, because it is the law; the fluid is read fro
 
 ## The One Liquid Case That Is Linear
 
-The Hopf–Cole transformation is the only exact linearisation of a fluid equation the section uses, and read as a map it is the reverse map with an imaginary action quantum. Burgers' equation in one dimension is carried by $u=-2\digamma_{\mathrm{kin}}\partial_x\ln\psi$ into $\partial_{t'}\psi=\digamma_{\mathrm{kin}}\partial_{xx}\psi$. The transformation is exact, and its output has an imaginary frequency, a positive kernel and an arrow of time.
+The Hopf–Cole transformation is the only exact linearisation of a fluid equation the section uses, and read as a map it is the reverse map with an imaginary action quantum. Burgers' equation in one dimension is carried by $u=-2\digamma_{\mathrm{kin}}\partial_x\lnΞ_{\mathrm{wfn}}$ into $\partial_{t'}Ξ_{\mathrm{wfn}}=\digamma_{\mathrm{kin}}\partial_{xx}Ξ_{\mathrm{wfn}}$. The transformation is exact, and its output has an imaginary frequency, a positive kernel and an arrow of time.
 
-**The identification is exact and it is the sharpest statement in the article.** Put $h=-12.57im\digamma_{\mathrm{kin}}$ and $V=0$ in the reverse map's output. Then $ih=12.57m\digamma_{\mathrm{kin}}$ and $-\frac{h^{2}}{4\pi^{2}}/2m=2m\digamma_{\mathrm{kin}}^{2}$, so the equation reads $2m\digamma_{\mathrm{kin}}\partial_{t'}\psi=2m\digamma_{\mathrm{kin}}^{2}\partial_{xx}\psi$, which is $\partial_{t'}\psi=\digamma_{\mathrm{kin}}\partial_{xx}\psi$. An imaginary action quantum turns the wave equation into the heat equation, exactly and with no remainder.
+**The identification is exact and it is the sharpest statement in the article.** Put $h=-12.57im\digamma_{\mathrm{kin}}$ and $V=0$ in the reverse map's output. Then $ih=12.57m\digamma_{\mathrm{kin}}$ and $-\frac{h^{2}}{4\pi^{2}}/2m=2m\digamma_{\mathrm{kin}}^{2}$, so the equation reads $2m\digamma_{\mathrm{kin}}\partial_{t'}Ξ_{\mathrm{wfn}}=2m\digamma_{\mathrm{kin}}^{2}\partial_{xx}Ξ_{\mathrm{wfn}}$, which is $\partial_{t'}Ξ_{\mathrm{wfn}}=\digamma_{\mathrm{kin}}\partial_{xx}Ξ_{\mathrm{wfn}}$. An imaginary action quantum turns the wave equation into the heat equation, exactly and with no remainder.
 
-So the failure of the viscous case is not a failure of the gradient test. In one dimension the viscous force *is* a gradient, $\digamma_{\mathrm{kin}}\partial_{xx}u=\partial_x(\digamma_{\mathrm{kin}}\partial_xu)$, so a potential exists and the map runs. What fails is that the potential is a rate and not an energy: the Hopf–Cole $\psi=\exp(-\int u\,\mathrm{d}x/(2\digamma_{\mathrm{kin}}))$ has a real logarithm, so the map's $S$ is imaginary. A conservative force gives a real action and an oscillating equation; a dissipative force gives a rate and a decaying one.
+So the failure of the viscous case is not a failure of the gradient test. In one dimension the viscous force *is* a gradient, $\digamma_{\mathrm{kin}}\partial_{xx}u=\partial_x(\digamma_{\mathrm{kin}}\partial_xu)$, so a potential exists and the map runs. What fails is that the potential is a rate and not an energy: the Hopf–Cole $Ξ_{\mathrm{wfn}}=\exp(-\int u\,\mathrm{d}x/(2\digamma_{\mathrm{kin}}))$ has a real logarithm, so the map's $S$ is imaginary. A conservative force gives a real action and an oscillating equation; a dissipative force gives a rate and a decaying one.
 
 It produces a linear equation whose solutions do not oscillate, and whose physical content is the smoothing of a shock into a layer of width $\digamma_{\mathrm{kin}}/u$. A reader who counts it as a wave equivalent has counted the heat equation as a wave equation.
 
@@ -160,7 +160,7 @@ The block's two denials are one statement: the reading is a re-coordinatisation 
 
 | Symbol | Meaning |
 |---|---|
-| $\psi=n_{\mathrm{num}}e^{\frac{2\pi iS}{h}}$ | Wave function; the field's reading |
+| $Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}e^{\frac{2\pi iS}{h}}$ | Wave function; the field's reading |
 | $\rho_{\mathrm{num}}$ | Number density |
 | $S$ | Action; the phase is $\frac{2\pi S}{h}$ |
 | $V(\rho_{\mathrm{num}})$ | Nonlinear term of the reverse map |

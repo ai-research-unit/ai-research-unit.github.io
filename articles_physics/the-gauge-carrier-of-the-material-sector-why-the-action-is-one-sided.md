@@ -16,7 +16,7 @@ Its dimension. For $\mathbb{B}\cong M_2(\mathbb{C})$ the minimal left ideals hav
 
 The rotor picture: turning a frame and carrying a module. A unit real quaternion — an element of $SU(2)$, which in this algebra is $\mathrm{SU}(2)=\mathrm{Spin}(3)$, the double cover of the spatial rotations — does two different things and the difference is the whole of this article. It can turn, which is the Hermitian pair $\mathrm{Sd}_{\tilde u}(\vec v)=\tilde u\vec v\tilde u^{*}$ on the vector part — a two-sided map, a similarity, the spatial rotation. Or it can carry, which is left multiplication $L_{\tilde u}$, a one-sided map on a module. A frame is turned; a matter field is carried. So the one-sidedness below is not a deficiency of the construction that a better construction would remove: it is the difference between the two maps, and only the second is available for a module. The names are fixed in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html).
 
-**Why one side and not two.** A right multiplication does not preserve a left ideal: $(\psi a)$ need not lie in $I$ when $\psi$ does. So the action that carries the ideal is one-sided by necessity, and a two-sided action on a minimal ideal is not available. That is the structural reason the framework's matter coupling is a left multiplication and cannot be made symmetric in the two sides.
+**Why one side and not two.** A right multiplication does not preserve a left ideal: $(Ξ_{\mathrm{wfn}} a)$ need not lie in $I$ when $Ξ_{\mathrm{wfn}}$ does. So the action that carries the ideal is one-sided by necessity, and a two-sided action on a minimal ideal is not available. That is the structural reason the framework's matter coupling is a left multiplication and cannot be made symmetric in the two sides.
 
 ## First Result: the Left Family Is Multiplicative in Its Parameter
 
@@ -74,7 +74,7 @@ Why a pointer and not a rewrite. Because the mathematics articles state the resu
 | Symbol | Meaning |
 |---|---|
 | $I=\mathbb{B}\pi$ | a minimal left ideal, the carrier |
-| $\rho_I$ | the one-sided action, $\rho_I(x)\psi=x\psi$ |
+| $\rho_I$ | the one-sided action, $\rho_I(x)Ξ_{\mathrm{wfn}}=xΞ_{\mathrm{wfn}}$ |
 | $L_a$, $R_a$ | left and right multiplication by $a$ |
 | $\tilde Q$ | a unit real quaternion, an element of the spin group |
 | $\tilde QX\tilde Q^{-1}$ | conjugation, the automorphism |

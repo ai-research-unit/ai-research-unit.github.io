@@ -29,9 +29,9 @@ $$
 \boxed{\;p \to q \;:\equiv\; \neg p \vee q, \qquad p \leftrightarrow q \;:\equiv\; (p \to q) \wedge (q \to p)\;}.
 $$
 
-The definition of implication is the material one: $p \to q$ is false exactly when $p$ is true and $q$ is false. It is not a statement of causation. A compound proposition built from a fixed finite list of atoms is a **formula**, written $\varphi, \psi, \chi$.
+The definition of implication is the material one: $p \to q$ is false exactly when $p$ is true and $q$ is false. It is not a statement of causation. A compound proposition built from a fixed finite list of atoms is a **formula**, written $\digamma_{\mathrm{fml}}, \digamma_{\mathrm{fml}}, \chi$.
 
-Formulas are defined recursively: every atom is a formula, and if $\varphi$ and $\psi$ are formulas then so are $\neg \varphi$, $(\varphi \wedge \psi)$, $(\varphi \vee \psi)$, $(\varphi \to \psi)$ and $(\varphi \leftrightarrow \psi)$. Nothing else is a formula. This **inductive definition** is the first example of the principle of structural recursion treated below, and it is why every property of formulas can be proved by induction on their construction.
+Formulas are defined recursively: every atom is a formula, and if $\digamma_{\mathrm{fml}}$ and $\digamma_{\mathrm{fml}}$ are formulas then so are $\neg \digamma_{\mathrm{fml}}$, $(\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}})$, $(\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}})$, $(\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}})$ and $(\digamma_{\mathrm{fml}} \leftrightarrow \digamma_{\mathrm{fml}})$. Nothing else is a formula. This **inductive definition** is the first example of the principle of structural recursion treated below, and it is why every property of formulas can be proved by induction on their construction.
 
 ### Truth Tables and Tautologies
 
@@ -46,55 +46,55 @@ An **assignment** (or **valuation**) is a function $v$ from the atoms to the set
 
 The table defines each connective by the truth values it returns; a larger table is filled in column by column, the columns for subformulas being computed before the columns for the formulas containing them. The uniqueness of the extension is a recursion theorem, proved below.
 
-**Definition.** A formula $\varphi$ is a **tautology** (or is **valid**) if $v(\varphi) = 1$ for every assignment $v$; a **contradiction** if $v(\varphi) = 0$ for every $v$; and **satisfiable** if $v(\varphi) = 1$ for at least one $v$. Two formulas are **logically equivalent**, written $\varphi \equiv \psi$, if $v(\varphi) = v(\psi)$ for every assignment.
+**Definition.** A formula $\digamma_{\mathrm{fml}}$ is a **tautology** (or is **valid**) if $v(\digamma_{\mathrm{fml}}) = 1$ for every assignment $v$; a **contradiction** if $v(\digamma_{\mathrm{fml}}) = 0$ for every $v$; and **satisfiable** if $v(\digamma_{\mathrm{fml}}) = 1$ for at least one $v$. Two formulas are **logically equivalent**, written $\digamma_{\mathrm{fml}} \equiv \digamma_{\mathrm{fml}}$, if $v(\digamma_{\mathrm{fml}}) = v(\digamma_{\mathrm{fml}})$ for every assignment.
 
 **Example.** The formula $p \vee \neg p$ (the law of excluded middle) is a tautology, and $p \wedge \neg p$ is a contradiction. The formula $p \to p$ is a tautology; $p \to \neg p$ is satisfiable but not valid, being true when $p$ is false. The formulas $p \to q$ and $\neg q \to \neg p$ are logically equivalent: their tables agree in all four rows.
 
-**Proposition.** For all formulas $\varphi, \psi$ the following hold.
+**Proposition.** For all formulas $\digamma_{\mathrm{fml}}, \digamma_{\mathrm{fml}}$ the following hold.
 
-1. $\varphi \equiv \psi$ if and only if $\varphi \leftrightarrow \psi$ is a tautology.
-2. $\varphi \equiv \psi$ if and only if $\varphi \to \psi$ and $\psi \to \varphi$ are both tautologies.
-3. $\varphi$ is a tautology if and only if $\neg \varphi$ is a contradiction.
+1. $\digamma_{\mathrm{fml}} \equiv \digamma_{\mathrm{fml}}$ if and only if $\digamma_{\mathrm{fml}} \leftrightarrow \digamma_{\mathrm{fml}}$ is a tautology.
+2. $\digamma_{\mathrm{fml}} \equiv \digamma_{\mathrm{fml}}$ if and only if $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ and $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ are both tautologies.
+3. $\digamma_{\mathrm{fml}}$ is a tautology if and only if $\neg \digamma_{\mathrm{fml}}$ is a contradiction.
 
-**Proof.** (1) $\varphi \leftrightarrow \psi$ is true exactly when $\varphi$ and $\psi$ have the same truth value, so the biconditional is a tautology exactly when the values agree under every assignment. (2) is (1) together with the definition of the biconditional, and (3) is the definition of the negation table.
+**Proof.** (1) $\digamma_{\mathrm{fml}} \leftrightarrow \digamma_{\mathrm{fml}}$ is true exactly when $\digamma_{\mathrm{fml}}$ and $\digamma_{\mathrm{fml}}$ have the same truth value, so the biconditional is a tautology exactly when the values agree under every assignment. (2) is (1) together with the definition of the biconditional, and (3) is the definition of the negation table.
 
 ### The Algebra of Propositions
 
 The logical equivalences below are the laws of the **algebra of propositions**; each is verified from the truth tables, and the verification is left to the reader in the cases that repeat ones already done for the algebra of subsets.
 
-1. **Idempotence.** $\varphi \wedge \varphi \equiv \varphi$, $\varphi \vee \varphi \equiv \varphi$.
-2. **Commutativity.** $\varphi \wedge \psi \equiv \psi \wedge \varphi$, $\varphi \vee \psi \equiv \psi \vee \varphi$.
-3. **Associativity.** $(\varphi \wedge \psi) \wedge \chi \equiv \varphi \wedge (\psi \wedge \chi)$, and likewise for $\vee$.
-4. **Distributivity.** $\varphi \wedge (\psi \vee \chi) \equiv (\varphi \wedge \psi) \vee (\varphi \wedge \chi)$ and dually.
-5. **Absorption.** $\varphi \wedge (\varphi \vee \psi) \equiv \varphi$ and $\varphi \vee (\varphi \wedge \psi) \equiv \varphi$.
-6. **De Morgan.** $\neg(\varphi \wedge \psi) \equiv \neg \varphi \vee \neg \psi$ and $\neg(\varphi \vee \psi) \equiv \neg \varphi \wedge \neg \psi$.
-7. **Double negation.** $\neg \neg \varphi \equiv \varphi$.
-8. **Excluded middle and contradiction.** $\varphi \vee \neg \varphi$ is a tautology and $\varphi \wedge \neg \varphi$ is a contradiction.
-9. **Contraposition.** $\varphi \to \psi \equiv \neg \psi \to \neg \varphi$.
+1. **Idempotence.** $\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}} \equiv \digamma_{\mathrm{fml}}$, $\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}} \equiv \digamma_{\mathrm{fml}}$.
+2. **Commutativity.** $\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}} \equiv \digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}$, $\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}} \equiv \digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}$.
+3. **Associativity.** $(\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}) \wedge \chi \equiv \digamma_{\mathrm{fml}} \wedge (\digamma_{\mathrm{fml}} \wedge \chi)$, and likewise for $\vee$.
+4. **Distributivity.** $\digamma_{\mathrm{fml}} \wedge (\digamma_{\mathrm{fml}} \vee \chi) \equiv (\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}) \vee (\digamma_{\mathrm{fml}} \wedge \chi)$ and dually.
+5. **Absorption.** $\digamma_{\mathrm{fml}} \wedge (\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}) \equiv \digamma_{\mathrm{fml}}$ and $\digamma_{\mathrm{fml}} \vee (\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}) \equiv \digamma_{\mathrm{fml}}$.
+6. **De Morgan.** $\neg(\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}) \equiv \neg \digamma_{\mathrm{fml}} \vee \neg \digamma_{\mathrm{fml}}$ and $\neg(\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}) \equiv \neg \digamma_{\mathrm{fml}} \wedge \neg \digamma_{\mathrm{fml}}$.
+7. **Double negation.** $\neg \neg \digamma_{\mathrm{fml}} \equiv \digamma_{\mathrm{fml}}$.
+8. **Excluded middle and contradiction.** $\digamma_{\mathrm{fml}} \vee \neg \digamma_{\mathrm{fml}}$ is a tautology and $\digamma_{\mathrm{fml}} \wedge \neg \digamma_{\mathrm{fml}}$ is a contradiction.
+9. **Contraposition.** $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}} \equiv \neg \digamma_{\mathrm{fml}} \to \neg \digamma_{\mathrm{fml}}$.
 
-The list is formally identical to the laws of the algebra of subsets in *Sets, Functions and Relations*, and the correspondence is not an accident. Fix atoms $p_1, \ldots, p_n$ and regard an assignment as a point of the **truth set** $\{0,1\}^n$. To each formula $\varphi$ in these atoms attach the set
+The list is formally identical to the laws of the algebra of subsets in *Sets, Functions and Relations*, and the correspondence is not an accident. Fix atoms $p_1, \ldots, p_n$ and regard an assignment as a point of the **truth set** $\{0,1\}^n$. To each formula $\digamma_{\mathrm{fml}}$ in these atoms attach the set
 
 $$
-[[\varphi]] = \{v \in \{0,1\}^n : v(\varphi) = 1\}
+[[\digamma_{\mathrm{fml}}]] = \{v \in \{0,1\}^n : v(\digamma_{\mathrm{fml}}) = 1\}
 $$
 
 of assignments making it true. Then
 
 $$
-\boxed{\;[[\neg\varphi]] = \{0,1\}^n \setminus [[\varphi]], \qquad [[\varphi \wedge \psi]] = [[\varphi]] \cap [[\psi]], \qquad [[\varphi \vee \psi]] = [[\varphi]] \cup [[\psi]]\;},
+\boxed{\;[[\neg\digamma_{\mathrm{fml}}]] = \{0,1\}^n \setminus [[\digamma_{\mathrm{fml}}]], \qquad [[\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}]] = [[\digamma_{\mathrm{fml}}]] \cap [[\digamma_{\mathrm{fml}}]], \qquad [[\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}]] = [[\digamma_{\mathrm{fml}}]] \cup [[\digamma_{\mathrm{fml}}]]\;},
 $$
 
-so the map $\varphi \mapsto [[\varphi]]$ carries the logic of $n$ atoms onto the power-set algebra of a set with $2^n$ points. Tautologies are the formulas with $[[\varphi]] = \{0,1\}^n$; contradictions are those with $[[\varphi]] = \emptyset$; and logical equivalence is equality of truth sets. This is the precise sense in which the algebra of propositions and the algebra of subsets are one structure, and both are instances of the **Boolean algebras** developed in Part V. The number $2^n$ is a cardinality, computed.
+so the map $\digamma_{\mathrm{fml}} \mapsto [[\digamma_{\mathrm{fml}}]]$ carries the logic of $n$ atoms onto the power-set algebra of a set with $2^n$ points. Tautologies are the formulas with $[[\digamma_{\mathrm{fml}}]] = \{0,1\}^n$; contradictions are those with $[[\digamma_{\mathrm{fml}}]] = \emptyset$; and logical equivalence is equality of truth sets. This is the precise sense in which the algebra of propositions and the algebra of subsets are one structure, and both are instances of the **Boolean algebras** developed in Part V. The number $2^n$ is a cardinality, computed.
 
 ### Logical Consequence
 
-**Definition.** A formula $\psi$ is a **logical consequence** of formulas $\varphi_1, \ldots, \varphi_n$, written $\varphi_1, \ldots, \varphi_n \models \psi$, if every assignment making all the $\varphi_i$ true makes $\psi$ true.
+**Definition.** A formula $\digamma_{\mathrm{fml}}$ is a **logical consequence** of formulas $\digamma_{\mathrm{fml},1}, \ldots, \digamma_{\mathrm{fml},n}$, written $\digamma_{\mathrm{fml},1}, \ldots, \digamma_{\mathrm{fml},n} \models \digamma_{\mathrm{fml}}$, if every assignment making all the $\digamma_{\mathrm{fml},i}$ true makes $\digamma_{\mathrm{fml}}$ true.
 
 Logical consequence is a relation on formulas, not a connective: $\models$ is a statement *about* the formulas, made in the metalanguage, whereas $\to$ is a symbol *inside* the language. The two are related by the following standard fact.
 
-**Theorem (deduction theorem, semantic form).** $\varphi_1, \ldots, \varphi_n \models \psi$ if and only if $\varphi_1 \wedge \cdots \wedge \varphi_n \to \psi$ is a tautology. In particular $\varphi \models \psi$ if and only if $\varphi \to \psi$ is a tautology.
+**Theorem (deduction theorem, semantic form).** $\digamma_{\mathrm{fml},1}, \ldots, \digamma_{\mathrm{fml},n} \models \digamma_{\mathrm{fml}}$ if and only if $\digamma_{\mathrm{fml},1} \wedge \cdots \wedge \digamma_{\mathrm{fml},n} \to \digamma_{\mathrm{fml}}$ is a tautology. In particular $\digamma_{\mathrm{fml}} \models \digamma_{\mathrm{fml}}$ if and only if $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ is a tautology.
 
-**Proof.** Both sides say that there is no assignment making every $\varphi_i$ true and $\psi$ false: the left says it by the definition of consequence, the right because a conditional fails exactly at an assignment that makes its antecedent true and its consequent false.
+**Proof.** Both sides say that there is no assignment making every $\digamma_{\mathrm{fml},i}$ true and $\digamma_{\mathrm{fml}}$ false: the left says it by the definition of consequence, the right because a conditional fails exactly at an assignment that makes its antecedent true and its consequent false.
 
 A set $\Gamma$ of formulas is **satisfiable** if some single assignment makes every formula in $\Gamma$ true. A finite set is satisfiable exactly when its conjunction is satisfiable. The **compactness** of propositional logic — that $\Gamma$ is satisfiable if every finite subset of $\Gamma$ is — follows from the finiteness of the truth tables and is stated, with its first-order analogue.
 
@@ -105,19 +105,19 @@ A set $\Gamma$ of formulas is **satisfiable** if some single assignment makes ev
 Propositional logic analyses the way statements combine; predicate logic analyses their internal structure. A **first-order language** consists of **variables** $x, y, z, \ldots$; **constant symbols** $c, d, \ldots$; **function symbols** $f, g, \ldots$ each with a prescribed **arity**; **predicate symbols** $P, Q, R, \ldots$ each with an arity; and the **logical symbols** $\neg, \wedge, \vee, \to, \leftrightarrow, \forall, \exists, =$. Given a language, the **terms** are the variables, the constants, and the expressions $f(t_1, \ldots, t_k)$ for a $k$-ary function symbol $f$ and terms $t_i$; the **atomic formulas** are $P(t_1, \ldots, t_k)$ for a $k$-ary predicate symbol $P$ and terms $t_i$, together with the equations $t_1 = t_2$; and the **formulas** are built from the atomic ones by the connectives and the two **quantifiers**
 
 $$
-\forall x \, \varphi \quad (\text{for all } x, \varphi), \qquad \exists x \, \varphi \quad (\text{there exists } x \text{ such that } \varphi).
+\forall x \, \digamma_{\mathrm{fml}} \quad (\text{for all } x, \digamma_{\mathrm{fml}}), \qquad \exists x \, \digamma_{\mathrm{fml}} \quad (\text{there exists } x \text{ such that } \digamma_{\mathrm{fml}}).
 $$
 
-The quantifier $\exists x \, \varphi$ is definable as $\neg \forall x \, \neg \varphi$, just as $\to$ and $\leftrightarrow$ were defined in the propositional case. Whether the corpus adopts the quantifier $\exists$ as primitive or defined is a convention; its meaning is fixed by the semantics below.
+The quantifier $\exists x \, \digamma_{\mathrm{fml}}$ is definable as $\neg \forall x \, \neg \digamma_{\mathrm{fml}}$, just as $\to$ and $\leftrightarrow$ were defined in the propositional case. Whether the corpus adopts the quantifier $\exists$ as primitive or defined is a convention; its meaning is fixed by the semantics below.
 
-The **semantics** of a first-order language is a **structure** $\mathcal{M}$: a nonempty set $M$, the **domain** (or universe), together with an element $c^{\mathcal{M}} \in M$ for each constant, a function $f^{\mathcal{M}} : M^k \to M$ for each $k$-ary function symbol, and a subset $P^{\mathcal{M}} \subseteq M^k$ for each $k$-ary predicate symbol. An assignment sends each variable to an element of $M$; a term is then evaluated to an element of $M$ by recursion, and a formula is **satisfied**, written $\mathcal{M} \models \varphi[a]$ for the assignment $a$, by the familiar clauses:
+The **semantics** of a first-order language is a **structure** $\mathcal{M}$: a nonempty set $M$, the **domain** (or universe), together with an element $c^{\mathcal{M}} \in M$ for each constant, a function $f^{\mathcal{M}} : M^k \to M$ for each $k$-ary function symbol, and a subset $P^{\mathcal{M}} \subseteq M^k$ for each $k$-ary predicate symbol. An assignment sends each variable to an element of $M$; a term is then evaluated to an element of $M$ by recursion, and a formula is **satisfied**, written $\mathcal{M} \models \digamma_{\mathrm{fml}}[a]$ for the assignment $a$, by the familiar clauses:
 
 $$
 \mathcal{M} \models P(t_1,\ldots,t_k)[a] \iff (t_1^{\mathcal{M}},\ldots,t_k^{\mathcal{M}}) \in P^{\mathcal{M}},
 $$
 
 $$
-\mathcal{M} \models \forall x\,\varphi[a] \iff \mathcal{M} \models \varphi[a'] \text{ for every assignment } a' \text{ agreeing with } a \text{ off } x.
+\mathcal{M} \models \forall x\,\digamma_{\mathrm{fml}}[a] \iff \mathcal{M} \models \digamma_{\mathrm{fml}}[a'] \text{ for every assignment } a' \text{ agreeing with } a \text{ off } x.
 $$
 
 A formula with no free variables is a **sentence**, written $\sigma$; a sentence is **true in** $\mathcal{M}$, written $\mathcal{M} \models \sigma$, if it is satisfied under every assignment, equivalently under any one, since satisfaction of a sentence is independent of the assignment. A sentence is **valid** if it is true in every structure for the language, and a set of sentences $T$ is a **theory**; $\mathcal{M}$ is a **model** of $T$, written $\mathcal{M} \models T$, if it satisfies every sentence of $T$. The systematic study of this notion — elementary equivalence, the compactness and Löwenheim–Skolem theorems, quantifier elimination — is, and the formal proof systems and their completeness are treated in *Proof Theory and Type Theory*. Here only the vocabulary is being fixed.
@@ -126,19 +126,19 @@ A formula with no free variables is a **sentence**, written $\sigma$; a sentence
 
 Quantification binds a variable, and the resulting distinction between free and bound occurrences is what separates a formula from a sentence.
 
-**Definition.** In a formula, an occurrence of a variable $x$ is **bound** if it lies inside a quantifier $\forall x$ or $\exists x$; otherwise it is **free**. A variable is **free in** $\varphi$ if it has a free occurrence, and $\varphi$ is a **sentence** (or **closed**) if no variable is free in it. The **scope** of an occurrence of $\forall x$ or $\exists x$ is the subformula following it.
+**Definition.** In a formula, an occurrence of a variable $x$ is **bound** if it lies inside a quantifier $\forall x$ or $\exists x$; otherwise it is **free**. A variable is **free in** $\digamma_{\mathrm{fml}}$ if it has a free occurrence, and $\digamma_{\mathrm{fml}}$ is a **sentence** (or **closed**) if no variable is free in it. The **scope** of an occurrence of $\forall x$ or $\exists x$ is the subformula following it.
 
 **Example.** In $\forall x\,(P(x) \to Q(x, y))$ the occurrences of $x$ are bound by $\forall x$ and the occurrence of $y$ is free; the formula is not a sentence. In $\forall x\, P(x) \vee Q(x)$ the scope of $\forall x$ is $P(x)$ only, so the occurrence of $x$ in $Q(x)$ is free and the formula says "(every $x$ satisfies $P$) or ($x$ satisfies $Q$)". Scoping is therefore a syntactic matter, and a formula is read by its bracketing, not by the apparent grouping of its symbols.
 
-The notation $\varphi(x_1, \ldots, x_n)$ records that the free variables of $\varphi$ are among $x_1, \ldots, x_n$. Two formulas that differ only in the names of their bound variables are **alpha-equivalent** and are not distinguished; the renaming of a bound variable to a fresh one is **alpha-conversion**.
+The notation $\digamma_{\mathrm{fml}}(x_1, \ldots, x_n)$ records that the free variables of $\digamma_{\mathrm{fml}}$ are among $x_1, \ldots, x_n$. Two formulas that differ only in the names of their bound variables are **alpha-equivalent** and are not distinguished; the renaming of a bound variable to a fresh one is **alpha-conversion**.
 
 ### Substitution
 
-**Definition.** The **substitution** of a term $t$ for a variable $x$ in a formula $\varphi$, written $\varphi[t/x]$, is the result of replacing every free occurrence of $x$ in $\varphi$ by $t$.
+**Definition.** The **substitution** of a term $t$ for a variable $x$ in a formula $\digamma_{\mathrm{fml}}$, written $\digamma_{\mathrm{fml}}[t/x]$, is the result of replacing every free occurrence of $x$ in $\digamma_{\mathrm{fml}}$ by $t$.
 
-Substitution is defined by recursion on formulas, with the one delicate clause being the quantifier clause: the occurrences of $x$ bound in $\varphi$ are not replaced, and if the quantifier binds a variable occurring in $t$, that variable must first be renamed to avoid **capture**.
+Substitution is defined by recursion on formulas, with the one delicate clause being the quantifier clause: the occurrences of $x$ bound in $\digamma_{\mathrm{fml}}$ are not replaced, and if the quantifier binds a variable occurring in $t$, that variable must first be renamed to avoid **capture**.
 
-**Example.** Let $\varphi$ be $\exists y\, (x < y)$, so that $x$ is free. Substituting the term $y$ for $x$ gives $\exists y\, (y < y)$, which says something different from the intended "$y$ is less than something": the free $y$ has been captured by the quantifier. The correct substitution first renames the bound variable, giving $\exists z\,(x < z)$ and then $\exists z\,(y < z)$.
+**Example.** Let $\digamma_{\mathrm{fml}}$ be $\exists y\, (x < y)$, so that $x$ is free. Substituting the term $y$ for $x$ gives $\exists y\, (y < y)$, which says something different from the intended "$y$ is less than something": the free $y$ has been captured by the quantifier. The correct substitution first renames the bound variable, giving $\exists z\,(x < z)$ and then $\exists z\,(y < z)$.
 
 **Convention.** In this corpus substitution is always understood to be **capture-avoiding**: bound variables are renamed as necessary before the substitution is performed. This is the standard convention, and it is why alpha-conversion is treated as an invisible operation.
 
@@ -150,43 +150,43 @@ A **proof** in mathematics is a finite sequence of assertions, each of which is 
 
 **Propositional rules.**
 
-1. **Modus ponens.** From $\varphi$ and $\varphi \to \psi$, infer $\psi$.
-2. **Modus tollens.** From $\neg \psi$ and $\varphi \to \psi$, infer $\neg \varphi$.
-3. **Conjunction introduction.** From $\varphi$ and $\psi$, infer $\varphi \wedge \psi$; **conjunction elimination.** From $\varphi \wedge \psi$, infer $\varphi$, and infer $\psi$.
-4. **Disjunction introduction.** From $\varphi$, infer $\varphi \vee \psi$; **disjunction elimination.** From $\varphi \vee \psi$, $\varphi \to \chi$ and $\psi \to \chi$, infer $\chi$.
-5. **Conditional proof.** If $\psi$ has been derived from the hypothesis $\varphi$, infer $\varphi \to \psi$ and discharge the hypothesis.
-6. **Reductio ad absurdum.** If a contradiction has been derived from the hypothesis $\neg \varphi$, infer $\varphi$ and discharge the hypothesis.
+1. **Modus ponens.** From $\digamma_{\mathrm{fml}}$ and $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$, infer $\digamma_{\mathrm{fml}}$.
+2. **Modus tollens.** From $\neg \digamma_{\mathrm{fml}}$ and $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$, infer $\neg \digamma_{\mathrm{fml}}$.
+3. **Conjunction introduction.** From $\digamma_{\mathrm{fml}}$ and $\digamma_{\mathrm{fml}}$, infer $\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}$; **conjunction elimination.** From $\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}$, infer $\digamma_{\mathrm{fml}}$, and infer $\digamma_{\mathrm{fml}}$.
+4. **Disjunction introduction.** From $\digamma_{\mathrm{fml}}$, infer $\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}$; **disjunction elimination.** From $\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}$, $\digamma_{\mathrm{fml}} \to \chi$ and $\digamma_{\mathrm{fml}} \to \chi$, infer $\chi$.
+5. **Conditional proof.** If $\digamma_{\mathrm{fml}}$ has been derived from the hypothesis $\digamma_{\mathrm{fml}}$, infer $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ and discharge the hypothesis.
+6. **Reductio ad absurdum.** If a contradiction has been derived from the hypothesis $\neg \digamma_{\mathrm{fml}}$, infer $\digamma_{\mathrm{fml}}$ and discharge the hypothesis.
 
 **Quantifier rules.**
 
-7. **Universal instantiation.** From $\forall x\,\varphi$, infer $\varphi[t/x]$ for any term $t$.
-8. **Universal generalisation.** From $\varphi$, where $x$ is not free in any undischarged hypothesis, infer $\forall x\,\varphi$.
-9. **Existential introduction.** From $\varphi[t/x]$, infer $\exists x\,\varphi$; **existential elimination.** From $\exists x\,\varphi$ and $\forall x\,(\varphi \to \psi)$, where $x$ is not free in $\psi$, infer $\psi$.
-10. **Equality rules.** $t = t$ is an axiom; from $t_1 = t_2$ and $\varphi[t_1/x]$, infer $\varphi[t_2/x]$.
+7. **Universal instantiation.** From $\forall x\,\digamma_{\mathrm{fml}}$, infer $\digamma_{\mathrm{fml}}[t/x]$ for any term $t$.
+8. **Universal generalisation.** From $\digamma_{\mathrm{fml}}$, where $x$ is not free in any undischarged hypothesis, infer $\forall x\,\digamma_{\mathrm{fml}}$.
+9. **Existential introduction.** From $\digamma_{\mathrm{fml}}[t/x]$, infer $\exists x\,\digamma_{\mathrm{fml}}$; **existential elimination.** From $\exists x\,\digamma_{\mathrm{fml}}$ and $\forall x\,(\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}})$, where $x$ is not free in $\digamma_{\mathrm{fml}}$, infer $\digamma_{\mathrm{fml}}$.
+10. **Equality rules.** $t = t$ is an axiom; from $t_1 = t_2$ and $\digamma_{\mathrm{fml}}[t_1/x]$, infer $\digamma_{\mathrm{fml}}[t_2/x]$.
 
 The rules 5 and 6 are the ones that make a proof a *structured* object rather than a linear list, because they introduce and later discharge a hypothesis. A derivation is written as a tree or as an indented block, and the discipline of tracking which hypotheses remain undischarged is what distinguishes a correct proof from an assertion.
 
 ### Direct Proof
 
-A **direct proof** of an implication $\varphi \to \psi$ assumes $\varphi$ and derives $\psi$. It is the shape of most proofs in the corpus: the hypotheses are fixed, the definitions are unfolded, and the conclusion is obtained by the rules above. The conditional is then inferred by rule 5.
+A **direct proof** of an implication $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ assumes $\digamma_{\mathrm{fml}}$ and derives $\digamma_{\mathrm{fml}}$. It is the shape of most proofs in the corpus: the hypotheses are fixed, the definitions are unfolded, and the conclusion is obtained by the rules above. The conditional is then inferred by rule 5.
 
 **Example.** To prove that the sum of two even integers is even, assume $m = 2a$ and $n = 2b$; then $m + n = 2(a+b)$ is even, the last assertion being the definition. The proof is direct: the hypothesis is used, not its negation.
 
-Direct proof also covers the proof of a universal statement: to prove $\forall x\, \varphi(x)$, one proves $\varphi(x)$ for a general $x$ and applies rule 8. The variable $x$ must be arbitrary — no special property of it may be used — and the restriction in rule 8 is exactly this requirement, since a special property would appear as an undischarged hypothesis mentioning $x$.
+Direct proof also covers the proof of a universal statement: to prove $\forall x\, \digamma_{\mathrm{fml}}(x)$, one proves $\digamma_{\mathrm{fml}}(x)$ for a general $x$ and applies rule 8. The variable $x$ must be arbitrary — no special property of it may be used — and the restriction in rule 8 is exactly this requirement, since a special property would appear as an undischarged hypothesis mentioning $x$.
 
 ### Proof by Contrapositive
 
-**Proposition.** $\varphi \to \psi$ and $\neg \psi \to \neg \varphi$ are logically equivalent.
+**Proposition.** $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ and $\neg \digamma_{\mathrm{fml}} \to \neg \digamma_{\mathrm{fml}}$ are logically equivalent.
 
 **Proof.** This is the contraposition law of the algebra of propositions, verified by the truth table.
 
-A **proof by contrapositive** of $\varphi \to \psi$ is a direct proof of $\neg \psi \to \neg \varphi$; the proposition above converts it into a proof of the original. The method is useful when the negation of the conclusion is a more pliable hypothesis than the hypothesis itself.
+A **proof by contrapositive** of $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ is a direct proof of $\neg \digamma_{\mathrm{fml}} \to \neg \digamma_{\mathrm{fml}}$; the proposition above converts it into a proof of the original. The method is useful when the negation of the conclusion is a more pliable hypothesis than the hypothesis itself.
 
 **Example.** To prove that if $n^2$ is even then $n$ is even, prove the contrapositive: if $n$ is odd, say $n = 2a + 1$, then $n^2 = 4a^2 + 4a + 1$ is odd. The direct approach would have to extract a square root; the contrapositive uses only the definition of oddness.
 
 ### Proof by Contradiction
 
-A **proof by contradiction** of a statement $\varphi$ derives a contradiction from the hypothesis $\neg \varphi$ and concludes $\varphi$ by reductio ad absurdum (rule 6). It is a distinct method from proof by contrapositive: contraposition proves an implication by proving another implication, whereas contradiction proves any statement at all by refuting its negation, and it uses the law of excluded middle through rule 6.
+A **proof by contradiction** of a statement $\digamma_{\mathrm{fml}}$ derives a contradiction from the hypothesis $\neg \digamma_{\mathrm{fml}}$ and concludes $\digamma_{\mathrm{fml}}$ by reductio ad absurdum (rule 6). It is a distinct method from proof by contrapositive: contraposition proves an implication by proving another implication, whereas contradiction proves any statement at all by refuting its negation, and it uses the law of excluded middle through rule 6.
 
 **Example.** To prove that $\sqrt{2}$ is irrational, assume that $\sqrt{2} = m/n$ in lowest terms with $n \neq 0$; squaring and rearranging give $m^2 = 2n^2$, so $m^2$ and hence $m$ is even, say $m = 2k$; then $4k^2 = 2n^2$, so $n^2 = 2k^2$ and $n$ is even, contradicting the choice of $m/n$ in lowest terms. The contradiction refutes the assumption and proves the statement. The proof uses the parity result of the preceding example.
 
@@ -196,9 +196,9 @@ A **proof by contradiction** of a statement $\varphi$ derives a contradiction fr
 
 Two further shapes recur.
 
-A **proof by cases** uses disjunction elimination: to prove $\chi$ from a hypothesis known to be $\varphi \vee \psi$, prove $\varphi \to \chi$ and $\psi \to \chi$ and conclude. The case distinction must be exhaustive, and each case may assume its own hypothesis.
+A **proof by cases** uses disjunction elimination: to prove $\chi$ from a hypothesis known to be $\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}}$, prove $\digamma_{\mathrm{fml}} \to \chi$ and $\digamma_{\mathrm{fml}} \to \chi$ and conclude. The case distinction must be exhaustive, and each case may assume its own hypothesis.
 
-A **proof of an equivalence** $\varphi \leftrightarrow \psi$ is a pair of direct proofs, one of $\varphi \to \psi$ and one of $\psi \to \varphi$. When the statements are not an implication chain, one proves $\varphi \to \psi$ and $\neg \varphi \to \neg \psi$, or $\varphi \to \psi$ and $\psi \to \varphi$ simultaneously, and either supplies the equivalence.
+A **proof of an equivalence** $\digamma_{\mathrm{fml}} \leftrightarrow \digamma_{\mathrm{fml}}$ is a pair of direct proofs, one of $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ and one of $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$. When the statements are not an implication chain, one proves $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ and $\neg \digamma_{\mathrm{fml}} \to \neg \digamma_{\mathrm{fml}}$, or $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ and $\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$ simultaneously, and either supplies the equivalence.
 
 **Example.** To prove that an integer is even if and only if its square is even, prove both implications: if $n$ is even then $n^2$ is even directly, and if $n$ is odd then $n^2$ is odd by the contrapositive argument above.
 
@@ -246,7 +246,7 @@ The theorem licenses the familiar definitions of $n!$, of $a^n$, of the Fibonacc
 
 The same principle applies to any set whose elements are generated by finitely many constructors, and formulas are the standard example.
 
-**Theorem (structural induction on formulas).** Let $P$ be a property of formulas of a language. If $P$ holds for every atomic formula, and $P(\varphi)$ and $P(\psi)$ together imply $P(\neg\varphi)$, $P(\varphi \wedge \psi)$, $P(\varphi \vee \psi)$ and $P(\varphi \to \psi)$, then $P$ holds for every formula.
+**Theorem (structural induction on formulas).** Let $P$ be a property of formulas of a language. If $P$ holds for every atomic formula, and $P(\digamma_{\mathrm{fml}})$ and $P(\digamma_{\mathrm{fml}})$ together imply $P(\neg\digamma_{\mathrm{fml}})$, $P(\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}})$, $P(\digamma_{\mathrm{fml}} \vee \digamma_{\mathrm{fml}})$ and $P(\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}})$, then $P$ holds for every formula.
 
 **Proof.** By the definition of formulas, every formula is built from atomic ones by a finite number of applications of the connectives, and the hypotheses of the theorem reproduce the closure conditions of that definition; a formula of least construction length for which $P$ fails would then be atomic, or built from formulas of smaller length satisfying $P$, either of which is impossible.
 
@@ -254,11 +254,11 @@ Structural induction is used throughout the article implicitly: the unique exten
 
 ## Consistency and Completeness in Outline
 
-A **deductive system** consists of axioms and inference rules; a **derivation** is a finite sequence of formulas each of which is an axiom or follows from earlier ones by a rule. One writes $\vdash \varphi$ when $\varphi$ is derivable.
+A **deductive system** consists of axioms and inference rules; a **derivation** is a finite sequence of formulas each of which is an axiom or follows from earlier ones by a rule. One writes $\vdash \digamma_{\mathrm{fml}}$ when $\digamma_{\mathrm{fml}}$ is derivable.
 
-**Soundness.** Every derivable formula is valid: if $\vdash \varphi$ then $\models \varphi$. Soundness is proved by induction on the length of the derivation, checking that each axiom is valid and that each rule preserves validity.
+**Soundness.** Every derivable formula is valid: if $\vdash \digamma_{\mathrm{fml}}$ then $\models \digamma_{\mathrm{fml}}$. Soundness is proved by induction on the length of the derivation, checking that each axiom is valid and that each rule preserves validity.
 
-**Completeness.** Every valid formula is derivable: if $\models \varphi$ then $\vdash \varphi$. For propositional logic this follows from the truth tables, a proof by induction on the number of atoms. For first-order logic it is the **Gödel completeness theorem**, and the enumeration of symbols and the construction of a term model that its proof requires — together with the compactness and Löwenheim–Skolem theorems and the limits imposed by Gödel's incompleteness theorems — are not covered here. The present article states the two directions and uses them; it does not prove the first-order completeness theorem, which is a theorem of the metatheory.
+**Completeness.** Every valid formula is derivable: if $\models \digamma_{\mathrm{fml}}$ then $\vdash \digamma_{\mathrm{fml}}$. For propositional logic this follows from the truth tables, a proof by induction on the number of atoms. For first-order logic it is the **Gödel completeness theorem**, and the enumeration of symbols and the construction of a term model that its proof requires — together with the compactness and Löwenheim–Skolem theorems and the limits imposed by Gödel's incompleteness theorems — are not covered here. The present article states the two directions and uses them; it does not prove the first-order completeness theorem, which is a theorem of the metatheory.
 
 **Convention.** The corpus is classical: the law of excluded middle and the rule of reductio ad absurdum are available. **Intuitionistic** logic, which drops them and is the logic of the type-theoretic reading of proofs, is treated, and the corpus uses it only there. No article of the corpus proves a mathematical result that depends on rejecting classical logic, and the standard corpus vocabulary is classical.
 
@@ -276,20 +276,20 @@ Proof is derivation by rules of inference: modus ponens and modus tollens, intro
 |---|---|
 | $p, q, r$; $p_1, p_2, \ldots$ | Atomic propositions |
 | $\neg, \wedge, \vee, \to, \leftrightarrow$ | Negation, conjunction, disjunction, implication, biconditional |
-| $\varphi, \psi, \chi$ | Formulas of a propositional or first-order language |
+| $\digamma_{\mathrm{fml}}, \digamma_{\mathrm{fml}}, \chi$ | Formulas of a propositional or first-order language |
 | $v : \text{atoms} \to \{0,1\}$ | Truth assignment (valuation) |
-| $\models \varphi$, $\equiv$ | Validity (tautology); logical equivalence |
-| $[[\varphi]]$ | Truth set of $\varphi$: assignments making it true |
-| $\varphi_1, \ldots, \varphi_n \models \psi$ | Logical consequence |
+| $\models \digamma_{\mathrm{fml}}$, $\equiv$ | Validity (tautology); logical equivalence |
+| $[[\digamma_{\mathrm{fml}}]]$ | Truth set of $\digamma_{\mathrm{fml}}$: assignments making it true |
+| $\digamma_{\mathrm{fml},1}, \ldots, \digamma_{\mathrm{fml},n} \models \digamma_{\mathrm{fml}}$ | Logical consequence |
 | $\forall x$, $\exists x$ | Universal and existential quantifiers |
 | $t, t_1, t_2$ | Terms of a first-order language |
 | $P, Q, R$; $f, g$ | Predicate and function symbols |
 | $\mathcal{M} = (M, \ldots)$ | A structure with domain $M$ |
-| $\mathcal{M} \models \varphi[a]$ | Satisfaction of $\varphi$ in $\mathcal{M}$ under assignment $a$ |
+| $\mathcal{M} \models \digamma_{\mathrm{fml}}[a]$ | Satisfaction of $\digamma_{\mathrm{fml}}$ in $\mathcal{M}$ under assignment $a$ |
 | $\sigma$, $T$ | Sentence; theory (set of sentences) |
 | $\mathcal{M} \models T$ | $\mathcal{M}$ is a model of $T$ |
-| $\varphi[t/x]$ | Substitution of term $t$ for free occurrences of $x$ |
-| $\vdash \varphi$ | Derivability of $\varphi$ in a deductive system |
+| $\digamma_{\mathrm{fml}}[t/x]$ | Substitution of term $t$ for free occurrences of $x$ |
+| $\vdash \digamma_{\mathrm{fml}}$ | Derivability of $\digamma_{\mathrm{fml}}$ in a deductive system |
 | $\mathbb{N}$ | The natural numbers, well-ordered by $\leq$, with least element $0$ |
 | $P(n)$, $P(k)$ for $k<n$ | Induction hypothesis; strong induction hypothesis |
 | $u(0)=a$, $u(n+1)=F(n,u(n))$ | Recursive definition of a function $u : \mathbb{N} \to A$ |

@@ -32,7 +32,7 @@ A commutative $R$-algebra $A$ is **free on a set $X$** if there is a map $\iota 
 
 **Theorem.** The polynomial algebra $R[X] = R[x_s : s \in X]$ is the free commutative $R$-algebra on $X$. If $X$ is finite of cardinality $n$, then $R[X] = R[x_1, \ldots, x_n]$.
 
-*Proof.* Given $\phi : X \to B$, define the homomorphism on monomials by $x_{i_1}^{a_1}\cdots x_{i_k}^{a_k} \mapsto \phi(x_{i_1})^{a_1}\cdots \phi(x_{i_k})^{a_k}$ and extend $R$-linearly. This is well defined because the commutative law makes monomials a basis indexed by finitely supported families of exponents and the order of factors irrelevant; it is a homomorphism because $B$ is commutative and associative; and it is unique because $X$ generates $R[X]$ as an algebra.
+*Proof.* Given $\digamma_{\mathrm{map}} : X \to B$, define the homomorphism on monomials by $x_{i_1}^{a_1}\cdots x_{i_k}^{a_k} \mapsto \digamma_{\mathrm{map}}(x_{i_1})^{a_1}\cdots \digamma_{\mathrm{map}}(x_{i_k})^{a_k}$ and extend $R$-linearly. This is well defined because the commutative law makes monomials a basis indexed by finitely supported families of exponents and the order of factors irrelevant; it is a homomorphism because $B$ is commutative and associative; and it is unique because $X$ generates $R[X]$ as an algebra.
 
 By *The Symmetric Algebra of a Module*, the symmetric algebra of a free module of rank $n$ is $R[x_1, \ldots, x_n]$; more generally $\operatorname{sym}(M) = \bigoplus_{n\geq0}\operatorname{sym}^n(M)$ is the free commutative algebra on a basis of $M$ when $M$ is free. The free commutative algebra is therefore not a new object but the symmetric algebra.
 
@@ -110,9 +110,9 @@ An **ideal** $\mathrm{A} \subseteq A$ of a commutative algebra is an $R$-submodu
 
 Let $S \subseteq A$ be a **multiplicative subset**: $1 \in S$ and $s, t \in S \Rightarrow st \in S$. The **localisation** $S^{-1}A$ is the algebra of fractions $a/s$ with respect to the equivalence $a/s = a'/s' \Leftrightarrow \exists u \in S,\ u(as' - a's) = 0$, with the evident operations.
 
-**Proposition (universal property).** Every homomorphism $\phi : A \to B$ with $\phi(S) \subseteq B^{\times}$ factors uniquely through the canonical map $A \to S^{-1}A$.
+**Proposition (universal property).** Every homomorphism $\digamma_{\mathrm{map}} : A \to B$ with $\digamma_{\mathrm{map}}(S) \subseteq B^{\times}$ factors uniquely through the canonical map $A \to S^{-1}A$.
 
-*Proof.* The formula $\phi(a/s) = \phi(a)\phi(s)^{-1}$ is forced; it is well defined because $as' = a's$ gives $\phi(a)\phi(s') = \phi(a')\phi(s)$, and $\phi(s)$, $\phi(s')$ are invertible; it is a homomorphism by the usual rules of fractions.
+*Proof.* The formula $\digamma_{\mathrm{map}}(a/s) = \digamma_{\mathrm{map}}(a)\digamma_{\mathrm{map}}(s)^{-1}$ is forced; it is well defined because $as' = a's$ gives $\digamma_{\mathrm{map}}(a)\digamma_{\mathrm{map}}(s') = \digamma_{\mathrm{map}}(a')\digamma_{\mathrm{map}}(s)$, and $\digamma_{\mathrm{map}}(s)$, $\digamma_{\mathrm{map}}(s')$ are invertible; it is a homomorphism by the usual rules of fractions.
 
 The localisations $A_f$ for $f \in A$ ($S = \{f^n\}$) and $A_{\mathrm{P}}$ for a prime ideal $\mathrm{P}$ ($S = A \setminus \mathrm{P}$) are the principal and local cases. The primes of $S^{-1}A$ correspond bijectively to the primes of $A$ disjoint from $S$; in particular $\operatorname{Spec} A_f = D(f)$ as sets.
 
@@ -192,13 +192,13 @@ The sets $D(f) = \operatorname{Spec} A \setminus V((f)) = \{\mathrm{P} : f \noti
 
 ### Functoriality
 
-A homomorphism $\phi : A \to B$ of commutative $R$-algebras induces a map on spectra,
+A homomorphism $\digamma_{\mathrm{map}} : A \to B$ of commutative $R$-algebras induces a map on spectra,
 
 $$
-\phi^* : \operatorname{Spec} B \longrightarrow \operatorname{Spec} A, \qquad \phi^*(\mathrm{Q}) = \phi^{-1}(\mathrm{Q}),
+\digamma_{\mathrm{map}}^* : \operatorname{Spec} B \longrightarrow \operatorname{Spec} A, \qquad \digamma_{\mathrm{map}}^*(\mathrm{Q}) = \digamma_{\mathrm{map}}^{-1}(\mathrm{Q}),
 $$
 
-which is well defined because the preimage of a prime ideal is prime, and continuous because $(\phi^*)^{-1}V(\mathrm{A}) = V(B\phi(\mathrm{A}))$. The assignment is contravariant: $(\psi \circ \phi)^* = \phi^* \circ \psi^*$, and $(\mathrm{id})^* = \mathrm{id}$. Thus
+which is well defined because the preimage of a prime ideal is prime, and continuous because $(\digamma_{\mathrm{map}}^*)^{-1}V(\mathrm{A}) = V(B\digamma_{\mathrm{map}}(\mathrm{A}))$. The assignment is contravariant: $(Ξ_{\mathrm{wfn}} \circ \digamma_{\mathrm{map}})^* = \digamma_{\mathrm{map}}^* \circ Ξ_{\mathrm{wfn}}^*$, and $(\mathrm{id})^* = \mathrm{id}$. Thus
 
 $$
 \boxed{\;\operatorname{Spec} : \mathsf{CAlg}_{\mathrm{opp},R} \longrightarrow \mathsf{Top}\;}
@@ -206,7 +206,7 @@ $$
 
 is a functor from the opposite category of commutative $R$-algebras to topological spaces.
 
-**Example.** The inclusion $\phi : R \to A$ induces $\phi^* : \operatorname{Spec} A \to \operatorname{Spec} R$, the **structure map**, whose fibres are the spectra of the geometric fibres $A\otimes_R\kappa(\mathrm{P})$ over residue fields $\kappa(\mathrm{P}) = \operatorname{Frac}(R/\mathrm{P})$. The spectrum of a coproduct computes a fibre product: for finitely presented algebras over an algebraically closed field, $\operatorname{Spec}(A\otimes_k B)$ is the fibre product $\operatorname{Spec} A \times_{\operatorname{Spec} k} \operatorname{Spec} B$. This is the geometric meaning of the coproduct theorem.
+**Example.** The inclusion $\digamma_{\mathrm{map}} : R \to A$ induces $\digamma_{\mathrm{map}}^* : \operatorname{Spec} A \to \operatorname{Spec} R$, the **structure map**, whose fibres are the spectra of the geometric fibres $A\otimes_R\kappa(\mathrm{P})$ over residue fields $\kappa(\mathrm{P}) = \operatorname{Frac}(R/\mathrm{P})$. The spectrum of a coproduct computes a fibre product: for finitely presented algebras over an algebraically closed field, $\operatorname{Spec}(A\otimes_k B)$ is the fibre product $\operatorname{Spec} A \times_{\operatorname{Spec} k} \operatorname{Spec} B$. This is the geometric meaning of the coproduct theorem.
 
 ### The Coordinate Algebra and its Functions
 
@@ -261,7 +261,7 @@ A **commutative $R$-algebra** is an associative, commutative, unital $R$-algebra
 | $\operatorname{MaxSpec} A$ | Set of maximal ideals (closed points) |
 | $V(\mathrm{A})$ | Zariski-closed set of primes containing $\mathrm{A}$ |
 | $D(f)$ | Principal open set $\{\mathrm{P} : f \notin \mathrm{P}\}$ |
-| $\phi^*(\mathrm{Q}) = \phi^{-1}(\mathrm{Q})$ | Contravariant map on spectra |
+| $\digamma_{\mathrm{map}}^*(\mathrm{Q}) = \digamma_{\mathrm{map}}^{-1}(\mathrm{Q})$ | Contravariant map on spectra |
 | $\sqrt{\mathrm{A}}$, $\sqrt{0}$ | Radical of $\mathrm{A}$; nilradical |
 | $\kappa(\mathrm{P})$ | Residue field at a prime $\mathrm{P}$, $\operatorname{Frac}(A/\mathrm{P})$ |
 | $S^{-1}A$, $A_f$, $A_{\mathrm{P}}$ | Localisations of $A$ |

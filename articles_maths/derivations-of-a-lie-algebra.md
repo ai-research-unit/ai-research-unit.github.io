@@ -51,7 +51,7 @@ It is the largest subspace of $\operatorname{End}_K(\mathrm{G})$ in which $\oper
 
 **Theorem.** $\operatorname{Der}(\mathrm{G})\subseteq\mathrm{N}$, and a member $T$ of $\mathrm{N}$ lies in $\operatorname{Der}(\mathrm{G})$ if and only if $[T,\operatorname{ad}_x]=\operatorname{ad}_{Tx}$ for all $x$.
 
-**Proof.** A derivation satisfies this by the proposition, hence lies in $\mathrm{N}$. Conversely a member of $\mathrm{N}$ satisfies $[T,\operatorname{ad}_x]=\operatorname{ad}_{\varphi(x)}$ for some linear $\varphi$ determined up to an element of the centre; the displayed condition says $\varphi=T$, which by the proposition is the Leibniz rule.
+**Proof.** A derivation satisfies this by the proposition, hence lies in $\mathrm{N}$. Conversely a member of $\mathrm{N}$ satisfies $[T,\operatorname{ad}_x]=\operatorname{ad}_{\digamma_{\mathrm{map}}(x)}$ for some linear $\digamma_{\mathrm{map}}$ determined up to an element of the centre; the displayed condition says $\digamma_{\mathrm{map}}=T$, which by the proposition is the Leibniz rule.
 
 **Proposition (the inclusion is proper).** If $\mathrm{G}$ is not abelian and has nonzero centre then $\operatorname{Der}(\mathrm{G})\neq\mathrm{N}$.
 
@@ -91,9 +91,9 @@ $$
 
 ### Direct Sums
 
-**Proposition.** Let $\mathrm{G}_1$ and $\mathrm{G}_2$ be Lie algebras. Then $\operatorname{Der}(\mathrm{G}_1\oplus\mathrm{G}_2)$ contains $\operatorname{Der}(\mathrm{G}_1)\oplus\operatorname{Der}(\mathrm{G}_2)$, and in addition contains the operators with a single cross component $\phi:\mathrm{G}_1\to\mathrm{G}_2$ or $\psi:\mathrm{G}_2\to\mathrm{G}_1$ that kills the derived subalgebra of the source and takes values in the centre of the target.
+**Proposition.** Let $\mathrm{G}_1$ and $\mathrm{G}_2$ be Lie algebras. Then $\operatorname{Der}(\mathrm{G}_1\oplus\mathrm{G}_2)$ contains $\operatorname{Der}(\mathrm{G}_1)\oplus\operatorname{Der}(\mathrm{G}_2)$, and in addition contains the operators with a single cross component $\digamma_{\mathrm{map}}:\mathrm{G}_1\to\mathrm{G}_2$ or $Ξ_{\mathrm{wfn}}:\mathrm{G}_2\to\mathrm{G}_1$ that kills the derived subalgebra of the source and takes values in the centre of the target.
 
-**Proof.** A derivation $D$ of the direct sum has four components, and the diagonal ones are derivations of the summands. For a single cross component $D(x_1,x_2)=(0,\phi(x_1))$ the Leibniz rule reads $\phi([x_1,y_1])=[\phi(x_1),y_2]+[x_2,\phi(y_1)]$; taking $x_2=y_2=0$ forces $\phi([x_1,y_1])=0$, so $\phi$ kills the derived subalgebra, and then the right-hand side must vanish for all $x_2,y_2$, so $\phi$ takes values in the centre. The converse is immediate.
+**Proof.** A derivation $D$ of the direct sum has four components, and the diagonal ones are derivations of the summands. For a single cross component $D(x_1,x_2)=(0,\digamma_{\mathrm{map}}(x_1))$ the Leibniz rule reads $\digamma_{\mathrm{map}}([x_1,y_1])=[\digamma_{\mathrm{map}}(x_1),y_2]+[x_2,\digamma_{\mathrm{map}}(y_1)]$; taking $x_2=y_2=0$ forces $\digamma_{\mathrm{map}}([x_1,y_1])=0$, so $\digamma_{\mathrm{map}}$ kills the derived subalgebra, and then the right-hand side must vanish for all $x_2,y_2$, so $\digamma_{\mathrm{map}}$ takes values in the centre. The converse is immediate.
 
 **Corollary.** If both summands are perfect with trivial centre then $\operatorname{Der}(\mathrm{G}_1\oplus\mathrm{G}_2)=\operatorname{Der}(\mathrm{G}_1)\oplus\operatorname{Der}(\mathrm{G}_2)$.
 

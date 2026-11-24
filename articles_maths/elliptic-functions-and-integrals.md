@@ -18,7 +18,7 @@ K(k) = \int_0^{\pi/2} \frac{d\theta}{\sqrt{1 - k^2\sin^2\theta}} , \qquad
 E(k) = \int_0^{\pi/2} \sqrt{1 - k^2\sin^2\theta}\, d\theta ,
 $$
 
-and the **incomplete** integrals are the same integrands integrated from $0$ to an arbitrary amplitude $\varphi$. The integral of the **third kind** is
+and the **incomplete** integrals are the same integrands integrated from $0$ to an arbitrary amplitude $\digamma_{\mathrm{map}}$. The integral of the **third kind** is
 
 $$
 \Pi(n, k) = \int_0^{\pi/2} \frac{d\theta}{(1 - n\sin^2\theta)\sqrt{1 - k^2\sin^2\theta}} ,
@@ -39,10 +39,10 @@ with a further parameter $n$; it is the integral that appears in the addition th
 **Definition.** Let $k$ be a modulus and let
 
 $$
-u = \int_0^{\varphi} \frac{d\theta}{\sqrt{1 - k^2\sin^2\theta}} .
+u = \int_0^{\digamma_{\mathrm{map}}} \frac{d\theta}{\sqrt{1 - k^2\sin^2\theta}} .
 $$
 
-The **Jacobi elliptic functions** are $sn(u) = \sin\varphi$, $cn(u) = \cos\varphi$ and $dn(u) = \sqrt{1 - k^2\sin^2\varphi}$, the inverse of the integral of the first kind being taken as the definition of $\varphi$ as a function of $u$.
+The **Jacobi elliptic functions** are $sn(u) = \sin\digamma_{\mathrm{map}}$, $cn(u) = \cos\digamma_{\mathrm{map}}$ and $dn(u) = \sqrt{1 - k^2\sin^2\digamma_{\mathrm{map}}}$, the inverse of the integral of the first kind being taken as the definition of $\digamma_{\mathrm{map}}$ as a function of $u$.
 
 **Theorem.** The Jacobi functions are meromorphic and doubly periodic: $sn$ has periods $4K(k)$ and $2iK'(k)$, where $K'(k) = K(\sqrt{1-k^2})$, and
 
@@ -50,7 +50,7 @@ $$
 \boxed{\;sn^2u + cn^2u = 1 , \qquad dn^2u + k^2sn^2u = 1 , \qquad \frac{d}{du}sn\,u = cn\,u\,dn\,u\;} .
 $$
 
-**Proof.** The relations follow from the definitions: $sn^2 + cn^2 = \sin^2\varphi + \cos^2\varphi = 1$ and $dn^2 + k^2 sn^2 = 1 - k^2\sin^2\varphi + k^2\sin^2\varphi = 1$, and the derivative is the chain rule applied to the inverse of the integral, $du/d\varphi = 1/\sqrt{1-k^2\sin^2\varphi}$. The double periodicity is the standard extension of $u$ to the complex plane by analytic continuation, with the periods computed from the integral: the continuation of the inverse of an integral of the first kind past the branch points produces the periods $4K$ and $2iK'$, and the standard argument is cited from the literature.
+**Proof.** The relations follow from the definitions: $sn^2 + cn^2 = \sin^2\digamma_{\mathrm{map}} + \cos^2\digamma_{\mathrm{map}} = 1$ and $dn^2 + k^2 sn^2 = 1 - k^2\sin^2\digamma_{\mathrm{map}} + k^2\sin^2\digamma_{\mathrm{map}} = 1$, and the derivative is the chain rule applied to the inverse of the integral, $du/d\digamma_{\mathrm{map}} = 1/\sqrt{1-k^2\sin^2\digamma_{\mathrm{map}}}$. The double periodicity is the standard extension of $u$ to the complex plane by analytic continuation, with the periods computed from the integral: the continuation of the inverse of an integral of the first kind past the branch points produces the periods $4K$ and $2iK'$, and the standard argument is cited from the literature.
 
 **Definition.** Let $\Lambda = \mathbb{Z}\omega_1 + \mathbb{Z}\omega_2$ be a lattice in $\mathbb{C}$, with $\operatorname{Im}(\omega_2/\omega_1) > 0$. The **Weierstrass elliptic function** is
 

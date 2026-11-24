@@ -31,7 +31,7 @@ The fermions of one generation form the module $\mathbf{16}$. Three generations 
 $$
 \mathbf{16}\;\longrightarrow\;\mathbf{16}\otimes\mathbb C^{3},
 \qquad
-\tilde Q\cdot(\psi\otimes f)=(\tilde Q\cdot\psi)\otimes f .
+\tilde Q\cdot(Ξ_{\mathrm{wfn}}\otimes f)=(\tilde Q\cdotΞ_{\mathrm{wfn}})\otimes f .
 $$
 
 Every operator the model builds from the gauge group is therefore of the form $O\otimes\mathbb 1_3$. Written out in the flavour space,
@@ -197,7 +197,7 @@ Each handle has its own experimental signature, and the list is the operational 
 
 | handle | signature | classic case |
 |---|---|---|
-| mass | a peak in the invariant-mass distribution | $J/\psi$ at $5.522\times10^{-27}$ kg, a narrow spike over a falling background |
+| mass | a peak in the invariant-mass distribution | $J/Ξ_{\mathrm{wfn}}$ at $5.522\times10^{-27}$ kg, a narrow spike over a falling background |
 | mass, as a threshold | a step in a cross-section | $e^+e^-$ into hadrons rising at the charm and beauty pair thresholds |
 | lifetime, long | a track that stops | a muon coming to rest after a few centimetres |
 | lifetime, short | a displaced vertex | a $b$ hadron flying a few hundred micrometres before decaying |

@@ -193,7 +193,7 @@ $$
 M^k=\begin{pmatrix}F_{k+1}&F_k\\ F_k&F_{k-1}\end{pmatrix}.
 $$
 
-The characteristic polynomial is $c_M(x)=x^2-x-1$, with distinct real roots $\varphi=\tfrac12(1+\sqrt5)$ and $\psi=\tfrac12(1-\sqrt5)$, so $M$ is diagonalisable over $\mathbb{R}$ and $F_k=\dfrac{\varphi^k-\psi^k}{\varphi-\psi}$. Taking determinants in the displayed identity gives Cassini's identity $F_{k+1}F_{k-1}-F_k^2=(-1)^k$, because $\det M^k=(\det M)^k=(-1)^k$.
+The characteristic polynomial is $c_M(x)=x^2-x-1$, with distinct real roots $\digamma_{\mathrm{map}}=\tfrac12(1+\sqrt5)$ and $Ξ_{\mathrm{wfn}}=\tfrac12(1-\sqrt5)$, so $M$ is diagonalisable over $\mathbb{R}$ and $F_k=\dfrac{\digamma_{\mathrm{map}}^k-Ξ_{\mathrm{wfn}}^k}{\digamma_{\mathrm{map}}-Ξ_{\mathrm{wfn}}}$. Taking determinants in the displayed identity gives Cassini's identity $F_{k+1}F_{k-1}-F_k^2=(-1)^k$, because $\det M^k=(\det M)^k=(-1)^k$.
 
 ### Further Examples
 
@@ -249,7 +249,7 @@ When diagonalisation fails one uses invariant subspaces: a generalised eigenspac
 | $\operatorname{id}$, $I$ | identity operator, identity matrix |
 | $P^{-1}AP$ | similar matrices |
 | $\operatorname{diag}(\lambda_1,\dots,\lambda_n)$ | diagonal matrix |
-| $\varphi,\psi$ | the roots $\tfrac12(1\pm\sqrt5)$ of $x^2-x-1$ |
+| $\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}$ | the roots $\tfrac12(1\pm\sqrt5)$ of $x^2-x-1$ |
 | $\omega$ | primitive cube root of unity $\exp(2\pi i/3)$ |
 | $\sigma(T)$ | spectrum: eigenvalues of $T$, with algebraic multiplicities over a splitting field |
 | $\rho(T)$ | spectral radius, $\max_{\lambda\in\sigma(T)}|\lambda|$ |

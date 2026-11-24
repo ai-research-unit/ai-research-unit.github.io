@@ -195,10 +195,10 @@ P_R(A,u)=\frac{R^2-\lVert A\rVert^2}{\lvert S^{31}\rvert R\lVert A-Ru\rVert^{32}
 \qquad u\in S^{31},
 $$
 
-and the solution with boundary data $\varphi$ is
+and the solution with boundary data $\digamma_{\mathrm{map}}$ is
 
 $$
-f(A)=\int_{S^{31}}P_R(A,u)\varphi(Ru)\,du.
+f(A)=\int_{S^{31}}P_R(A,u)\digamma_{\mathrm{map}}(Ru)\,du.
 $$
 
 **Pluriharmonic functions.** A function is **pluriharmonic** if its restriction to every complex line is harmonic. Holomorphic functions are pluriharmonic; pluriharmonic functions are harmonic. The real part of a holomorphic function is pluriharmonic, and every pluriharmonic function is locally the real part of a holomorphic function.

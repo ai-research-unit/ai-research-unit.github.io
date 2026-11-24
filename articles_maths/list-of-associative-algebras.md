@@ -77,7 +77,7 @@ The universal enveloping algebra is the associative algebra attached to a non-as
 | Object | The property it has | Introduced in |
 |---|---|---|
 | $\mathrm{U}(\mathrm{G})$, the universal enveloping algebra | the associative $R$-algebra $T(\mathrm{G})$ modulo $x \otimes y - y \otimes x - [x,y]$ | *Universal Enveloping Algebras* |
-| The universal property of $\mathrm{U}(\mathrm{G})$ | every $R$-linear $\varphi : \mathrm{G} \to A$ into an associative $R$-algebra with $\varphi([x,y]) = \varphi(x)\varphi(y) - \varphi(y)\varphi(x)$ factors uniquely through $\mathrm{G} \to \mathrm{U}(\mathrm{G})$ | *Universal Enveloping Algebras* |
+| The universal property of $\mathrm{U}(\mathrm{G})$ | every $R$-linear $\digamma_{\mathrm{map}} : \mathrm{G} \to A$ into an associative $R$-algebra with $\digamma_{\mathrm{map}}([x,y]) = \digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(y) - \digamma_{\mathrm{map}}(y)\digamma_{\mathrm{map}}(x)$ factors uniquely through $\mathrm{G} \to \mathrm{U}(\mathrm{G})$ | *Universal Enveloping Algebras* |
 | The commutator algebra $A_{\mathrm{Lie}}$ | the Lie algebra with bracket $[a,b] = ab - ba$ attached to an associative algebra $A$; not associative | *Universal Enveloping Algebras* |
 | The adjunction | $U$ is the left adjoint of the functor attaching to an associative algebra its commutator Lie algebra $A_{\mathrm{Lie}}$ | *Universal Enveloping Algebras* |
 | The Poincaré–Birkhoff–Witt theorem | the ordered monomials in a basis of $\mathrm{G}$ form a basis of $\mathrm{U}(\mathrm{G})$, and $\mathrm{gr}\,\mathrm{U}(\mathrm{G}) \cong \operatorname{sym}(\mathrm{G})$ | *Universal Enveloping Algebras* |

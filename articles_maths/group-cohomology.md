@@ -59,7 +59,7 @@ the **cocycles** and **coboundaries** respectively. Homology is defined from the
 
 ### The Long Exact Sequence
 
-**Proposition.** $H^n(G,M)$ is contravariant in $G$ and covariant in $M$: a homomorphism $\varphi : H \to G$ turns a $G$-module $M$ into an $H$-module and induces a map $H^n(G,M) \to H^n(H,M)$, while a morphism of $G$-modules $f : M \to N$ induces a map $H^n(G,M) \to H^n(G,N)$; the two constructions commute with composition and with each other.
+**Proposition.** $H^n(G,M)$ is contravariant in $G$ and covariant in $M$: a homomorphism $\digamma_{\mathrm{map}} : H \to G$ turns a $G$-module $M$ into an $H$-module and induces a map $H^n(G,M) \to H^n(H,M)$, while a morphism of $G$-modules $f : M \to N$ induces a map $H^n(G,M) \to H^n(G,N)$; the two constructions commute with composition and with each other.
 
 **Theorem (long exact sequence).** A short exact sequence of $G$-modules $0 \to M' \to M \to M'' \to 0$ gives a long exact sequence of abelian groups
 
@@ -123,7 +123,7 @@ In particular, if the action of $G$ on $M$ is trivial, then $H^1(G,M) = \operato
 
 **Theorem (complements).** Let $M$ be a $G$-module and let $E = M \rtimes G$ be the semidirect product with the given action. There is a bijection between $H^1(G,M)$ and the set of $G$-conjugacy classes of complements to $M$ in $E$.
 
-**Proof sketch.** A complement is the graph of a function $\varphi : G \to M$, $\varphi(g) = (d(g), g)$; the condition that the graph be a subgroup is exactly the derivation identity for $d$, and two complements are conjugate under an element of $M$ exactly when the derivations differ by a principal one.
+**Proof sketch.** A complement is the graph of a function $\digamma_{\mathrm{map}} : G \to M$, $\digamma_{\mathrm{map}}(g) = (d(g), g)$; the condition that the graph be a subgroup is exactly the derivation identity for $d$, and two complements are conjugate under an element of $M$ exactly when the derivations differ by a principal one.
 
 ### $H^2$ and Extensions
 

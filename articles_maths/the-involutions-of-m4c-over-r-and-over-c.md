@@ -45,27 +45,27 @@ $$
 
 ## The First Kind and the Inner Twists
 
-**Definition.** For invertible $S$ the **inner twist** of the transpose is $\varphi_S(A)=SA^{\mathsf T}S^{-1}$.
+**Definition.** For invertible $S$ the **inner twist** of the transpose is $\digamma_{\mathrm{map},S}(A)=SA^{\mathsf T}S^{-1}$.
 
-**Proposition.** $\varphi_S$ is an involution exactly when $S^{\mathsf T}=\varepsilon S$ with $\varepsilon=\pm1$.
+**Proposition.** $\digamma_{\mathrm{map},S}$ is an involution exactly when $S^{\mathsf T}=\varepsilon S$ with $\varepsilon=\pm1$.
 
-**Proof.** Compute $\varphi_S^{2}(A)=SS^{-{\mathsf T}}AS^{\mathsf T}S^{-1}$; this equals $A$ for all $A$ exactly when $S^{\mathsf T}$ is a scalar multiple of $S$, and rescaling forces the scalar to be $\pm1$.
+**Proof.** Compute $\digamma_{\mathrm{map},S}^{2}(A)=SS^{-{\mathsf T}}AS^{\mathsf T}S^{-1}$; this equals $A$ for all $A$ exactly when $S^{\mathsf T}$ is a scalar multiple of $S$, and rescaling forces the scalar to be $\pm1$.
 
 **Proposition.** For $S$ symmetric the fixed space is $S^{-1}\operatorname{Sym}_4$, of dimension $10$; for $S$ antisymmetric the fixed space is $S^{-1}\operatorname{Skew}_4$, of dimension $6$.
 
-**Proof.** $\varphi_S(A)=A$ reads $SA^{\mathsf T}=(SA)^{\mathsf T}$, that is $SA$ symmetric when $S$ is symmetric, and antisymmetric when $S$ is antisymmetric; multiplication by $S^{-1}$ is a linear isomorphism.
+**Proof.** $\digamma_{\mathrm{map},S}(A)=A$ reads $SA^{\mathsf T}=(SA)^{\mathsf T}$, that is $SA$ symmetric when $S$ is symmetric, and antisymmetric when $S$ is antisymmetric; multiplication by $S^{-1}$ is a linear isomorphism.
 
 **Corollary (two similarity classes).** Over $\mathbb{C}$ every $\mathbb{C}$-linear involution is a twist of $\mathsf T$ by some $S$, and up to conjugation by an invertible matrix there are exactly two: the orthogonal type, with fixed algebra of dimension $6$ isomorphic to $\mathfrak{so}(4)$, and the symplectic type, with fixed algebra of dimension $10$.
 
-**Proof.** Conjugating $\varphi_S$ by $P$ gives $\varphi_{PSP^{\mathsf T}}$, so the class of the involution is the congruence class of $S$; over $\mathbb{C}$ all nondegenerate symmetric forms are congruent, and all nondegenerate alternating forms are congruent.
+**Proof.** Conjugating $\digamma_{\mathrm{map},S}$ by $P$ gives $\digamma_{\mathrm{map},PSP^{\mathsf T}}$, so the class of the involution is the congruence class of $S$; over $\mathbb{C}$ all nondegenerate symmetric forms are congruent, and all nondegenerate alternating forms are congruent.
 
 **The reading through the halves.** The two classes are the two halves read as fixed algebras: the orthogonal type returns $\operatorname{Skew}_4$, the symplectic type returns a conjugate of $\operatorname{Sym}_4$. The decomposition of the algebra into the two halves is therefore the same fact as the existence of two similarity classes of first-kind involutions.
 
 ## The Second Kind and the Real Forms
 
-**Definition.** For invertible $S$ the **twist of the dagger** is $\psi_S(A)=SA^{\ast}S^{-1}$; it is an involution exactly when $S^{\ast}=\varepsilon S$.
+**Definition.** For invertible $S$ the **twist of the dagger** is $Ξ_{\mathrm{wfn},S}(A)=SA^{\ast}S^{-1}$; it is an involution exactly when $S^{\ast}=\varepsilon S$.
 
-**Proof.** $\psi_S^{2}(A)=SS^{-{\ast}}AS^{\ast}S^{-1}$, which is $A$ for all $A$ exactly when $S^{\ast}$ is a scalar multiple of $S$; rescaling gives $\pm1$.
+**Proof.** $Ξ_{\mathrm{wfn},S}^{2}(A)=SS^{-{\ast}}AS^{\ast}S^{-1}$, which is $A$ for all $A$ exactly when $S^{\ast}$ is a scalar multiple of $S$; rescaling gives $\pm1$.
 
 **Proposition.** With $S=\mathrm I_4$ the involution $\ast$ fixes $\operatorname{Herm}_4$ and anti-fixes $\mathfrak{u}(4)$, both of real dimension $16$.
 
@@ -119,7 +119,7 @@ The quaternion conjugation $\natural$ is the transpose in the axis-free frame, e
 | $\natural$ | the quaternion conjugation of $\mathbb{B}$ |
 | $\operatorname{Sym}_4$, $\operatorname{Skew}_4$ | the fixed and anti-fixed spaces of $\mathsf T$ |
 | $\operatorname{Herm}_4$, $\mathfrak{u}(4)$ | the fixed and anti-fixed spaces of $\ast$ |
-| $\varphi_S$, $\psi_S$ | the inner twists of $\mathsf T$ and of $\ast$ |
+| $\digamma_{\mathrm{map},S}$, $Ξ_{\mathrm{wfn},S}$ | the inner twists of $\mathsf T$ and of $\ast$ |
 | $C_L$, $C_R$ | $\mathrm I_2\otimes\sigma_2$ and $\sigma_2\otimes\mathrm I_2$, the Peirce dictionaries |
 | $L^{\mathrm{axf}}$, $L$ | the left families of the coefficient and Peirce frames |
 

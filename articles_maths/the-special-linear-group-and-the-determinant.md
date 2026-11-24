@@ -201,9 +201,9 @@ This is the integral form of the generation theorem: the Euclidean algorithm con
 
 *Proof.* The Leibniz formula is a finite integer polynomial, so it makes sense over any commutative ring; multiplicativity is proved as over a field, since the argument uses only the uniqueness of the normalised alternating multilinear form, which holds formally over $R$. The invertibility criterion is the adjugate identity $AA_{\mathrm{adg}}=(\det A)I$ over $R$: if $\det A$ is invertible then $(\det A)^{-1}A_{\mathrm{adg}}$ is an inverse, and the converse follows by taking determinants.
 
-**Proposition (naturality).** For a ring homomorphism $\varphi:R \to S$ and $A \in M_n(R)$ one has $\det(\varphi(A))=\varphi(\det A)$, where $\varphi(A)$ has entries $\varphi(a_{ij})$. Consequently $\varphi$ restricts to a group homomorphism $\operatorname{GL}_n(R)\to\operatorname{GL}_n(S)$.
+**Proposition (naturality).** For a ring homomorphism $\digamma_{\mathrm{map}}:R \to S$ and $A \in M_n(R)$ one has $\det(\digamma_{\mathrm{map}}(A))=\digamma_{\mathrm{map}}(\det A)$, where $\digamma_{\mathrm{map}}(A)$ has entries $\digamma_{\mathrm{map}}(a_{ij})$. Consequently $\digamma_{\mathrm{map}}$ restricts to a group homomorphism $\operatorname{GL}_n(R)\to\operatorname{GL}_n(S)$.
 
-*Proof.* Apply $\varphi$ to the Leibniz sum, a polynomial identity with integer coefficients.
+*Proof.* Apply $\digamma_{\mathrm{map}}$ to the Leibniz sum, a polynomial identity with integer coefficients.
 
 Naturality is what makes the determinant available over $\mathbb{Z}$ and then transported to $\mathbb{Q}$, $\mathbb{R}$ or $\mathbb{F}_p$: the integer determinant of an integer matrix determines all of its reductions. For an endomorphism $T$ of a free $R$-module of rank $n$ with a chosen basis, $\det T$ is the determinant of its matrix and is independent of the basis, by the same conjugation argument as over a field, so the determinant is an invariant of an endomorphism of a free module; this is the form in which it is used for lattices in the applications article on lattices and the quaternion lattice. Over a noncommutative ring no single scalar plays this role, and the correct generalisation is the Dieudonné determinant, with values in the abelianisation of the group of invertibles.
 

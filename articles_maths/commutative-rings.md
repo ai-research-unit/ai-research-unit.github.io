@@ -162,7 +162,7 @@ The intersection of radical ideals is radical, by (d) and its analogue for an ar
 **Theorem (Chinese remainder theorem).** Let $I_1, \ldots, I_n$ be pairwise coprime ideals of the commutative ring $R$. Then
 
 $$
-\varphi : R \to R/I_1 \times \cdots \times R/I_n, \qquad \varphi(r) = (r+I_1, \ldots, r+I_n),
+\digamma_{\mathrm{map}} : R \to R/I_1 \times \cdots \times R/I_n, \qquad \digamma_{\mathrm{map}}(r) = (r+I_1, \ldots, r+I_n),
 $$
 
 is a surjective ring homomorphism with kernel $I_1 \cap \cdots \cap I_n = I_1 I_2 \cdots I_n$, so that
@@ -171,7 +171,7 @@ $$
 \boxed{\;R/(I_1 I_2 \cdots I_n) \cong R/I_1 \times R/I_2 \times \cdots \times R/I_n\;} .
 $$
 
-**Proof.** $\varphi$ is a homomorphism with kernel the intersection. For $n=2$, choose $a_1 \in I_1$, $a_2 \in I_2$ with $a_1 + a_2 = 1$; then $a_2 \equiv 1 \pmod{I_1}$, $a_2 \equiv 0 \pmod{I_2}$, and dually for $a_1$, so $x_1 a_2 + x_2 a_1$ maps to $(x_1 + I_1, x_2 + I_2)$. Iterate for $n \geq 3$, using that a product of ideals coprime to a given ideal is coprime to it. The intersection equals the product by the proposition, iterated.
+**Proof.** $\digamma_{\mathrm{map}}$ is a homomorphism with kernel the intersection. For $n=2$, choose $a_1 \in I_1$, $a_2 \in I_2$ with $a_1 + a_2 = 1$; then $a_2 \equiv 1 \pmod{I_1}$, $a_2 \equiv 0 \pmod{I_2}$, and dually for $a_1$, so $x_1 a_2 + x_2 a_1$ maps to $(x_1 + I_1, x_2 + I_2)$. Iterate for $n \geq 3$, using that a product of ideals coprime to a given ideal is coprime to it. The intersection equals the product by the proposition, iterated.
 
 **Corollary.** For $n = p_1^{e_1} \cdots p_r^{e_r}$ a factorisation into prime powers, $\mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}/p_1^{e_1}\mathbb{Z} \times \cdots \times \mathbb{Z}/p_r^{e_r}\mathbb{Z}$.
 
@@ -251,9 +251,9 @@ This is the first use of a choice principle in the category, and it cannot be re
 
 **Example.** $\operatorname{Spec} \mathbb{Z} = \{(0)\} \cup \{(p) : p \text{ prime}\}$ with $(0)$ below every $(p)$ and the $(p)$ pairwise incomparable, so $\dim \mathbb{Z} = 1$. For a field $F$, $\operatorname{Spec} F$ is the single point $(0)$, of dimension $0$.
 
-**Proposition.** A ring homomorphism $\varphi : R \to S$ and a prime $\mathrm{Q} \subseteq S$ give a prime $\varphi^{-1}(\mathrm{Q}) \subseteq R$, and the map $\varphi^{*}(\mathrm{Q}) = \varphi^{-1}(\mathrm{Q})$ is order-preserving, so that $\operatorname{Spec}$ is a contravariant functor to posets.
+**Proposition.** A ring homomorphism $\digamma_{\mathrm{map}} : R \to S$ and a prime $\mathrm{Q} \subseteq S$ give a prime $\digamma_{\mathrm{map}}^{-1}(\mathrm{Q}) \subseteq R$, and the map $\digamma_{\mathrm{map}}^{*}(\mathrm{Q}) = \digamma_{\mathrm{map}}^{-1}(\mathrm{Q})$ is order-preserving, so that $\operatorname{Spec}$ is a contravariant functor to posets.
 
-**Proof.** The preimage of an ideal is an ideal, and if $ab \in \varphi^{-1}(\mathrm{Q})$ then $\varphi(a)\varphi(b) \in \mathrm{Q}$, so $a$ or $b$ lies in $\varphi^{-1}(\mathrm{Q})$. Inclusion is preserved under preimage.
+**Proof.** The preimage of an ideal is an ideal, and if $ab \in \digamma_{\mathrm{map}}^{-1}(\mathrm{Q})$ then $\digamma_{\mathrm{map}}(a)\digamma_{\mathrm{map}}(b) \in \mathrm{Q}$, so $a$ or $b$ lies in $\digamma_{\mathrm{map}}^{-1}(\mathrm{Q})$. Inclusion is preserved under preimage.
 
 The **Zariski topology** on $\operatorname{Spec} R$, its structure sheaf and the schemes they define belong to Part II and to *Schemes*; here only the order structure is used.
 
@@ -302,7 +302,7 @@ An ideal is prime when $ab \in \mathrm{P}$ forces a factor into it, equivalently
 | $\operatorname{Spec} R$ | Prime spectrum, the poset of primes under inclusion |
 | $\dim R$ | Krull dimension; *Integral Extensions and Krull Dimension* |
 | $\operatorname{char} R$ | Characteristic of $R$ |
-| $\varphi^{*}(\mathrm{Q})$ | Contraction $\varphi^{-1}(\mathrm{Q})$ of a prime along a ring homomorphism |
+| $\digamma_{\mathrm{map}}^{*}(\mathrm{Q})$ | Contraction $\digamma_{\mathrm{map}}^{-1}(\mathrm{Q})$ of a prime along a ring homomorphism |
 
 ## Further Reading
 

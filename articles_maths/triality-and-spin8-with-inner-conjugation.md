@@ -50,7 +50,7 @@ $$
 and it is unique up to a nonzero scalar; in the Clifford algebra it is given by
 
 $$
-\Phi(v,\psi,\phi)=\langle\,\gamma(v)\psi,\phi\,\rangle
+\Phi(v,Ξ_{\mathrm{wfn}},\digamma_{\mathrm{map}})=\langle\,\gamma(v)Ξ_{\mathrm{wfn}},\digamma_{\mathrm{map}}\,\rangle
 $$
 
 for the pairing $\langle\cdot,\cdot\rangle$ of the spinor module with its dual, with the identifications of the three modules with their duals that the invariant forms provide.
@@ -167,7 +167,7 @@ The Dynkin diagram of $D_4$ has a central node joined to three end nodes, so its
 |---|---|
 | $8_v$ | Vector representation of $SO(8)$ |
 | $8_s$, $8_c$ | The two half-spinor representations of $\mathrm{Spin}(8)$ |
-| $\Phi(v,\psi,\phi)=\langle\gamma(v)\psi,\phi\rangle$ | The triality trilinear form |
+| $\Phi(v,Ξ_{\mathrm{wfn}},\digamma_{\mathrm{map}})=\langle\gamma(v)Ξ_{\mathrm{wfn}},\digamma_{\mathrm{map}}\rangle$ | The triality trilinear form |
 | $\tau$ | Triality automorphism, $\tau^3=1$ |
 | $\mathrm{Out}(\mathrm{Spin}(8))\cong S_3$ | Outer automorphism group |
 | $D_4$ | The Dynkin diagram whose three legs are permuted |

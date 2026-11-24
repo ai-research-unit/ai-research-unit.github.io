@@ -54,7 +54,7 @@ $$
 \delta m_H^2=\frac{c}{16\pi^2}M^2\left[\frac{2}{\epsilon}-\gamma+\ln\frac{4\pi\mu^2}{M^2}\right] ,
 $$
 
-with no $\Lambda^2$ term at all. The reason is structural: the only gauge-invariant operator of dimension two that can renormalise the Higgs mass is $\phi^{\dagger}\phi$ itself, so the divergence must be proportional to $\mu^2$ and not to a cutoff. In a cutoff scheme the quadratic term appears; in dim reg it does not; and the two schemes describe the same physics.
+with no $\Lambda^2$ term at all. The reason is structural: the only gauge-invariant operator of dimension two that can renormalise the Higgs mass is $\xi_{\mathrm{pot}}^{\dagger}\xi_{\mathrm{pot}}$ itself, so the divergence must be proportional to $\mu^2$ and not to a cutoff. In a cutoff scheme the quadratic term appears; in dim reg it does not; and the two schemes describe the same physics.
 
 So what is the problem? Two things, and neither is the divergence.
 
@@ -132,13 +132,13 @@ Three field types, compared.
 
 | Field type | Mass term | Protected by | Shift |
 |---|---|---|---|
-| Fermion | $m\bar\psi\psi$ | Chiral symmetry | $\delta m\propto m\ln\Lambda$ — proportional to the mass |
+| Fermion | $m\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}$ | Chiral symmetry | $\delta m\propto m\ln\Lambda$ — proportional to the mass |
 | Gauge boson | $\tfrac12m^2\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}$ | Gauge symmetry | Forbidden while massless; protected after breaking |
-| Scalar | $m^2\phi^{\dagger}\phi$ | Nothing | $\delta m^2\propto\Lambda^2$ |
+| Scalar | $m^2\xi_{\mathrm{pot}}^{\dagger}\xi_{\mathrm{pot}}$ | Nothing | $\delta m^2\propto\Lambda^2$ |
 
-A symmetry that forbids the mass term also forbids its radiative correction, because the correction must respect the symmetry of the Lagrangian. Chiral symmetry forbids $m\bar\psi\psi$ for a massless fermion, so the correction must be proportional to the mass — a fermion mass is *technically natural*: setting it to zero is stable under renormalisation. Gauge symmetry forbids $m^2A^2$, so a gauge boson mass is natural in the same sense.
+A symmetry that forbids the mass term also forbids its radiative correction, because the correction must respect the symmetry of the Lagrangian. Chiral symmetry forbids $m\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}$ for a massless fermion, so the correction must be proportional to the mass — a fermion mass is *technically natural*: setting it to zero is stable under renormalisation. Gauge symmetry forbids $m^2A^2$, so a gauge boson mass is natural in the same sense.
 
-The scalar has no such protection. $\phi^{\dagger}\phi$ is a singlet under every symmetry of the Standard Model, so no symmetry forbids it, and no symmetry can forbid its correction. This is the whole content of the hierarchy problem: it is a statement about the absence of a symmetry, and it is exact in that form.
+The scalar has no such protection. $\xi_{\mathrm{pot}}^{\dagger}\xi_{\mathrm{pot}}$ is a singlet under every symmetry of the Standard Model, so no symmetry forbids it, and no symmetry can forbid its correction. This is the whole content of the hierarchy problem: it is a statement about the absence of a symmetry, and it is exact in that form.
 
 The framework's account is a real observation and a small one. The algebra distinguishes the three cases in a way that matches: the fermion mass is a parameter of a chiral pair's mixing, and the mixing is what chiral symmetry forbids; the vector mass is a parameter of the metric structure, and the massless case is the natural one; the scalar mass is a parameter of a potential, and a potential is the one object with no derivational origin in the algebra at all. So the framework exhibits the asymmetry — it does not explain it.
 

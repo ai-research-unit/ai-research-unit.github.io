@@ -22,7 +22,7 @@ with $U,V\in\mathrm{U}(2)$ and $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2)$. 
 
 **The method.** The article proceeds in two stages, and the order matters. The first stage is the Hilbert-space theory: the Hermitian form, the adjoint, the spectral theorem for the positive operator $A^{\dagger}A$, the rank-one decomposition and its operator form. The second stage reads the result: the rank cases, the three identities, the explicit formula in the four entries, the geometry, the non-uniqueness, the truncation, and the place of the atoms in the two cones.
 
-**The letters.** $A$ and $B$ are operators, $A^{\dagger}$ is the adjoint of $A$, and $\mathrm{I}_2$ is the identity. The unitaries of the decomposition are $U$ and $V$, the scale is $\Sigma$ with coordinate projectors $\Pi_i=e_ie_i^{\dagger}$, the weights are $\sigma_1\geq\sigma_2$, and the left and right singular vectors are $u_i$ and $v_i$. The eigenvalues of $A^{\dagger}A$ are $\lambda_1\geq\lambda_2$, so $\lambda_i=\sigma_i^2$. The Hermitian form is $H$, the norm is $\lVert Q\rVert$, and the two norms of an operator are the Frobenius norm $\langle A\rangle_*^{1/2}$ and the operator norm $\lVert A\rVert_{\mathrm{op}}$. The two numbers of the explicit formula are $T$ and $\Delta$. The two cones are $\mathcal{C}$, the bilinear cone of the matrices $u\phi^{\mathsf T}$, and $\mathcal{C}_{H}$, the Hermitian cone of the matrices $uu^{\dagger}$. The biquaternion element is $\tilde Q$ with matrix $\mathsf M_2(\tilde Q)$ and algebraic norm $N(\tilde Q)$, and the reduced biquaternion is $\breve Q$ with the two complex coordinates $Q_+,Q_-$.
+**The letters.** $A$ and $B$ are operators, $A^{\dagger}$ is the adjoint of $A$, and $\mathrm{I}_2$ is the identity. The unitaries of the decomposition are $U$ and $V$, the scale is $\Sigma$ with coordinate projectors $\Pi_i=e_ie_i^{\dagger}$, the weights are $\sigma_1\geq\sigma_2$, and the left and right singular vectors are $u_i$ and $v_i$. The eigenvalues of $A^{\dagger}A$ are $\lambda_1\geq\lambda_2$, so $\lambda_i=\sigma_i^2$. The Hermitian form is $H$, the norm is $\lVert Q\rVert$, and the two norms of an operator are the Frobenius norm $\langle A\rangle_*^{1/2}$ and the operator norm $\lVert A\rVert_{\mathrm{op}}$. The two numbers of the explicit formula are $T$ and $\Delta$. The two cones are $\mathcal{C}$, the bilinear cone of the matrices $u\digamma_{\mathrm{map}}^{\mathsf T}$, and $\mathcal{C}_{H}$, the Hermitian cone of the matrices $uu^{\dagger}$. The biquaternion element is $\tilde Q$ with matrix $\mathsf M_2(\tilde Q)$ and algebraic norm $N(\tilde Q)$, and the reduced biquaternion is $\breve Q$ with the two complex coordinates $Q_+,Q_-$.
 
 **The order of the article.** The operator and its adjoint come first, with the Hilbert–Schmidt form and the classes of Hermitian, unitary and positive operators (§*The Operator and the Adjoint*). The spectral theorem for $A^{\dagger}A$ is stated and proved, because the article uses it and does not import it (§*The Spectral Theorem for $A^{\dagger}A$*). The decomposition is stated and proved, with its rank-one form, its computation and its operator form (§*The Decomposition*). The weights are examined in their own section: the rank cases, the three identities, the explicit formula, a worked example, the geometry, the non-uniqueness and the truncation (§*The Weights*). The atoms are then placed in the two cones, and the length of an operator is identified with its rank (§*The Two Cones and the Length*). The comparison with the biquaternion and reduced biquaternion decompositions closes the body (§*The Comparison with the Neighbouring Decompositions*).
 
@@ -523,10 +523,10 @@ because $v_1$ and $v_2$ are orthonormal. Equality forces $u'=\sigma_1u_1$, that 
 
 ### The Atoms Are Points of the Bilinear Cone
 
-**The atom.** The rank-one operator $u_iv_i^{\dagger}$ is the matrix $u_i\phi_i^{\mathsf T}$ with $\phi_i=\overline{v_i}$. The pairing $\phi^{\mathsf T}u$ carries no conjugation, so the row $\phi_i^{\mathsf T}$ is the functional $Q\mapsto v_i^{\dagger}Q$. The atom is therefore a point of the **bilinear cone**
+**The atom.** The rank-one operator $u_iv_i^{\dagger}$ is the matrix $u_i\digamma_{\mathrm{map},i}^{\mathsf T}$ with $\digamma_{\mathrm{map},i}=\overline{v_i}$. The pairing $\digamma_{\mathrm{map}}^{\mathsf T}u$ carries no conjugation, so the row $\digamma_{\mathrm{map},i}^{\mathsf T}$ is the functional $Q\mapsto v_i^{\dagger}Q$. The atom is therefore a point of the **bilinear cone**
 
 $$
-\mathcal{C}=\{u\phi^{\mathsf T}:u\in V,\ \phi\in V^{*}\},
+\mathcal{C}=\{u\digamma_{\mathrm{map}}^{\mathsf T}:u\in V,\ \digamma_{\mathrm{map}}\in V^{*}\},
 $$
 
 defined here as a set and nothing more. The trio *$M_2(\mathbb{C})$ Defining Representation*, its products-forms-norms companion and its operators companion study the same cone as a semigroup and give it its composition law; the present article uses the set and its nonnegative span only. The decomposition says that every operator is a nonnegative linear combination of at most two points of that cone,
@@ -729,7 +729,7 @@ The freedom of the decomposition is a phase per term when the weights are distin
 | $\lvert A\rvert=(A^{\dagger}A)^{1/2}$ | the modulus of $A$ |
 | $T=\langle A\rangle_*$ | the sum of the squared moduli of the four entries |
 | $\Delta=\lvert\det A\rvert^2$ | the squared modulus of the determinant |
-| $\mathcal{C}$ | the bilinear cone, the matrices $u\phi^{\mathsf T}$ |
+| $\mathcal{C}$ | the bilinear cone, the matrices $u\digamma_{\mathrm{map}}^{\mathsf T}$ |
 | $\mathcal{C}_{H}$ | the Hermitian cone, the matrices $uu^{\dagger}$ |
 | $\operatorname{rank}A$ | the number of positive singular values, the length |
 | $\mathsf M_2(\tilde Q)$, $N(\tilde Q)$ | the $2\times2$ matrix of a biquaternion element and its algebraic norm |

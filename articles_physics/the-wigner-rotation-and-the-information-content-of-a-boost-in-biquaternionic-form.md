@@ -127,10 +127,10 @@ $$
 The commutator is a real pure quaternion, hence a rotation generator, and its magnitude is the half-angle of the leading Wigner rotation. The leading angle is therefore
 
 $$
-\theta_{\mathrm{wgn}}\simeq\frac{\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}}{2}\sin\phi,
+\theta_{\mathrm{wgn}}\simeq\frac{\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}}{2}\sin\xi_{\mathrm{pot}},
 $$
 
-where $\phi$ is the angle between the two boost directions. For small rapidities this is the $\theta_{\mathrm{wgn}}\approx\frac12\theta_{\mathrm{rpd}}\xi\sin\phi$ recorded in the summary, and for right angles and $\theta_{\mathrm{rpd},1}=1,\theta_{\mathrm{rpd},2}=0.5$ it gives $14.32^\circ$ against the exact $12.9146^\circ$. The ratio is $0.90$ at these rapidities and $0.99996$ at $(0.02,0.01)$: the defect is the first term of a series, not the exact angle.
+where $\xi_{\mathrm{pot}}$ is the angle between the two boost directions. For small rapidities this is the $\theta_{\mathrm{wgn}}\approx\frac12\theta_{\mathrm{rpd}}\xi\sin\xi_{\mathrm{pot}}$ recorded in the summary, and for right angles and $\theta_{\mathrm{rpd},1}=1,\theta_{\mathrm{rpd},2}=0.5$ it gives $14.32^\circ$ against the exact $12.9146^\circ$. The ratio is $0.90$ at these rapidities and $0.99996$ at $(0.02,0.01)$: the defect is the first term of a series, not the exact angle.
 
 **The exact factor.** The Cartan decomposition of the product is the exact statement,
 

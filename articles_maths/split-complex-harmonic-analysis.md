@@ -190,7 +190,7 @@ the ordinary convolution on $\mathbb{R}$. So the split complex convolution is th
 The **split complex delta distribution** $\delta$ is the distribution
 
 $$
-\langle \delta, \phi \rangle = \phi(0), \qquad \phi \in C_c^\infty(\mathbb{C}_{\mathrm{spl}}).
+\langle \delta, \digamma_{\mathrm{map}} \rangle = \digamma_{\mathrm{map}}(0), \qquad \digamma_{\mathrm{map}} \in C_c^\infty(\mathbb{C}_{\mathrm{spl}}).
 $$
 
 It satisfies $\delta * f = f$ for every function $f$, and its split complex Fourier transform is the constant function $1$.

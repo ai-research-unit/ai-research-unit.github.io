@@ -64,13 +64,13 @@ in agreement with $H^*(S^1;\mathbb{Z})$. The example shows that a cover by two s
 
 ## Refinements and the Direct Limit
 
-**Definition.** A cover $\mathrm{V} = \{V_j\}_{j\in J}$ **refines** $\mathcal{U} = \{Ζ_i\}_{i\in I}$, written $\mathrm{V} \preceq \mathcal{U}$, if there is a map $\varphi : J \to I$ with $V_j \subseteq Ζ_{\varphi(j)}$ for every $j$. The choice of $\varphi$ gives a **refinement map** of complexes
+**Definition.** A cover $\mathrm{V} = \{V_j\}_{j\in J}$ **refines** $\mathcal{U} = \{Ζ_i\}_{i\in I}$, written $\mathrm{V} \preceq \mathcal{U}$, if there is a map $\digamma_{\mathrm{map}} : J \to I$ with $V_j \subseteq Ζ_{\digamma_{\mathrm{map}}(j)}$ for every $j$. The choice of $\digamma_{\mathrm{map}}$ gives a **refinement map** of complexes
 
 $$
-\check C^\bullet(\mathcal{U},\mathcal{F}) \to \check C^\bullet(\mathrm{V},\mathcal{F}), \qquad (s_{i_0\ldots i_n}) \mapsto \Bigl(\varphi: (j_0<\cdots<j_n) \mapsto s_{\varphi(j_0)\ldots\varphi(j_n)}\big|_{V_{j_0\ldots j_n}}\Bigr),
+\check C^\bullet(\mathcal{U},\mathcal{F}) \to \check C^\bullet(\mathrm{V},\mathcal{F}), \qquad (s_{i_0\ldots i_n}) \mapsto \Bigl(\digamma_{\mathrm{map}}: (j_0<\cdots<j_n) \mapsto s_{\digamma_{\mathrm{map}}(j_0)\ldots\digamma_{\mathrm{map}}(j_n)}\big|_{V_{j_0\ldots j_n}}\Bigr),
 $$
 
-which is a morphism of complexes; two choices of $\varphi$ are chain homotopic, so the induced map on cohomology depends only on the refinement relation.
+which is a morphism of complexes; two choices of $\digamma_{\mathrm{map}}$ are chain homotopic, so the induced map on cohomology depends only on the refinement relation.
 
 **Definition.** The **Čech cohomology of $X$** with coefficients in $\mathcal{F}$ is the filtered colimit
 

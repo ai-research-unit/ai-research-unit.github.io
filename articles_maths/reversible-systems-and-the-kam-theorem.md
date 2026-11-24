@@ -17,10 +17,10 @@ No physics is invoked.
 **Definition.** A **reversible twisted system** is a smooth map $T$ of a product manifold $N\times\mathbb{T}^n$ (or an annulus, for $n=1$) with a reversor $R$ of the form
 
 $$
-\boxed{\;R(x,\theta)=(R_0(x),-\theta+\varphi(x))\;},
+\boxed{\;R(x,\theta)=(R_0(x),-\theta+\digamma_{\mathrm{map}}(x))\;},
 $$
 
-where $R_0$ is an involution of $N$ and $\varphi$ a smooth function; the system is **twisted** if the frequency map of the integrable model is nondegenerate, $\det\partial\omega/\partial I\neq0$, in action-angle coordinates $(I,\theta)$. The model case is the reversible map of the annulus with a **symmetry line**, the fixed set $\mathrm{Fix}(R)$ a finite union of curves, as in the reversible theory of *Symmetric Periodic Orbits and the Involution*.
+where $R_0$ is an involution of $N$ and $\digamma_{\mathrm{map}}$ a smooth function; the system is **twisted** if the frequency map of the integrable model is nondegenerate, $\det\partial\omega/\partial I\neq0$, in action-angle coordinates $(I,\theta)$. The model case is the reversible map of the annulus with a **symmetry line**, the fixed set $\mathrm{Fix}(R)$ a finite union of curves, as in the reversible theory of *Symmetric Periodic Orbits and the Involution*.
 
 **Definition (reversible nondegeneracy).** Let $T_0(I,\theta)=(I,\theta+\omega(I))$ be the integrable reversible model with reversor $R_0(I,\theta)=(I,-\theta)$. The system is **reversibly nondegenerate** at $I_0$ if the frequency map $\omega$ has invertible derivative at $I_0$, $\det\partial\omega/\partial I(I_0)\neq0$; the condition is the **twist** condition of the reversible theory, and it is the hypothesis under which the frequencies can be prescribed and the small denominators controlled.
 

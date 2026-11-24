@@ -9,17 +9,17 @@ The article is coordinate bookkeeping on the algebra fixed in *Quaternion Algebr
 
 The corpus's default base is a commutative ring with identity, and the coordinate description holds over such a base; the positivity and the Euclidean interpretation of the quaternion norm are statements over $\mathbb{R}$, and they are flagged where they occur.
 
-Throughout, a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_t$ and $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$; the conjugate is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ and the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.
+Throughout, a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_t$ and $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$; the conjugate is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ and the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\digamma_{\mathrm{map}} : \mathbb{H}\to F^4$.
 
 ## The Coordinate Vector
 
 **Definition.** The **coordinate map** sends $\tilde q = \sum_{\mu\in\{t,x,y,z\}}q_\mu e_\mu$ to the quadruple
 
 $$
-\varphi(\tilde q) = (q_t,q_x,q_y,q_z)\in F^4.
+\digamma_{\mathrm{map}}(\tilde q) = (q_t,q_x,q_y,q_z)\in F^4.
 $$
 
-**Theorem.** The map $\varphi$ is an isomorphism of $F$-vector spaces, and the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is sent to the standard basis $(1,0,0,0),\dots,(0,0,0,1)$. Consequently addition and scalar multiplication are computed coordinatewise.
+**Theorem.** The map $\digamma_{\mathrm{map}}$ is an isomorphism of $F$-vector spaces, and the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is sent to the standard basis $(1,0,0,0),\dots,(0,0,0,1)$. Consequently addition and scalar multiplication are computed coordinatewise.
 
 *Proof.* The map is the unique $F$-linear map sending each basis element to the corresponding standard basis element; it is bijective by the definition of a basis.
 
@@ -69,9 +69,9 @@ $$
 
 **Theorem.** The three involutions act on the coordinate vector by the diagonal sign matrices
 
-$$ \boxed{\; \varphi(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
-\varphi(-\tilde{q}^{\natural}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
-\varphi(-\tilde q) = -[\tilde q] \;} .$$
+$$ \boxed{\; \digamma_{\mathrm{map}}(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
+\digamma_{\mathrm{map}}(-\tilde{q}^{\natural}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
+\digamma_{\mathrm{map}}(-\tilde q) = -[\tilde q] \;} .$$
 
 *Proof.* Quaternion conjugation negates the three vector coordinates; vector conjugation negates the scalar coordinate; total conjugation is the negation of all four.
 
@@ -85,7 +85,7 @@ $$ \boxed{\; \varphi(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\
 
 $$
 \mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}, \qquad
-F^4 = \varphi(\mathbb{R}_{\mathbb{H}})\oplus\varphi(\operatorname{Im}\mathbb{H})
+F^4 = \digamma_{\mathrm{map}}(\mathbb{R}_{\mathbb{H}})\oplus\digamma_{\mathrm{map}}(\operatorname{Im}\mathbb{H})
 $$
 
 is the orthogonal decomposition, in the algebra and in coordinates, into the two summands.
@@ -126,7 +126,7 @@ The quaternion case is the real case, and its four positive signs are the whole 
 | $F$ | Base field; $\mathbb{R}$ for the positive-definite statements |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Basis, $\vec e_k^2 = -e_t$ |
 | $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | Quaternion with coordinates $q_\mu$ |
-| $\varphi : \mathbb{H}\to F^4$ | Coordinate isomorphism |
+| $\digamma_{\mathrm{map}} : \mathbb{H}\to F^4$ | Coordinate isomorphism |
 | $[\tilde q] = (q_t,q_x,q_y,q_z)^T$ | Column vector of coordinates |
 | $[\tilde q]^{T} = (q_t\ q_x\ q_y\ q_z)$ | Dual row vector |
 | $[\tilde q_1]^{T}[\tilde q_2] = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$ | Euclidean inner product in coordinates |

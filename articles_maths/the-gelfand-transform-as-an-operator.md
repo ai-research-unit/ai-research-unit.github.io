@@ -27,7 +27,7 @@ is a bijection of $\Delta$ onto the set of maximal ideals of a unital commutativ
 
 **Proof.** $\Delta \subseteq \{\chi \in A' : \lVert\chi\rVert = 1\}$, the unit sphere of the dual, which is weak-$*$ compact by the Banach–Alaoglu theorem of *Normed and Banach Spaces*; the multiplicative conditions and $\chi(1) = 1$ are closed, so $\Delta$ is a closed subset of a compact space, hence compact. Nonemptiness is the Gelfand–Mazur theorem applied to a maximal ideal, which exists by Zorn's lemma. In the non-unital case the characters extend to the unitisation and form a locally compact space; the unit may be adjoined, and compactness is recovered exactly when the unit is present.
 
-**Corollary (evaluation separates points and elements).** For distinct characters $\chi \neq \psi$ there is $a$ with $\chi(a) \neq \psi(a)$; for $a \neq 0$ in a semisimple algebra there is a character with $\chi(a) \neq 0$. Hence $\Delta$ separates the points of $\Delta$ through the functions $\widehat a$, and the transform separates the elements of a semisimple algebra.
+**Corollary (evaluation separates points and elements).** For distinct characters $\chi \neq Ξ_{\mathrm{wfn}}$ there is $a$ with $\chi(a) \neq Ξ_{\mathrm{wfn}}(a)$; for $a \neq 0$ in a semisimple algebra there is a character with $\chi(a) \neq 0$. Hence $\Delta$ separates the points of $\Delta$ through the functions $\widehat a$, and the transform separates the elements of a semisimple algebra.
 
 **Proof.** Two distinct characters have distinct kernels, and a character with the same values on a maximal ideal and at the unit is determined; the second statement is the definition of semisimplicity.
 

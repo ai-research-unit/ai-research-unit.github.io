@@ -29,7 +29,7 @@ $$
 $$
 a commutative ring. Its group of invertibles is $\Gamma(X,\mathcal{O}_X^\times)$, the group of invertible global functions.
 
-*Proof.* The map is $\mathcal{O}_X$-linear and multiplicative, $m_sm_t = m_{st}$, and it is injective because $m_s(1) = s$. For surjectivity, let $\varphi$ be a section of $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X)$ over $Ζ$ and put $s = \varphi(1)$. Then for any section $t$ of $\mathcal{O}_X$ over $Ζ$, $\mathcal{O}_X$-linearity gives $\varphi(t) = \varphi(t\cdot 1) = t\,\varphi(1) = ts$, so $\varphi = m_s$. On the global sections the product is pointwise and the ring is $\Gamma(X,\mathcal{O}_X)$; its units are exactly the sections that are invertible at every point, which is $\Gamma(X,\mathcal{O}_X^\times)$.
+*Proof.* The map is $\mathcal{O}_X$-linear and multiplicative, $m_sm_t = m_{st}$, and it is injective because $m_s(1) = s$. For surjectivity, let $\digamma_{\mathrm{map}}$ be a section of $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X)$ over $Ζ$ and put $s = \digamma_{\mathrm{map}}(1)$. Then for any section $t$ of $\mathcal{O}_X$ over $Ζ$, $\mathcal{O}_X$-linearity gives $\digamma_{\mathrm{map}}(t) = \digamma_{\mathrm{map}}(t\cdot 1) = t\,\digamma_{\mathrm{map}}(1) = ts$, so $\digamma_{\mathrm{map}} = m_s$. On the global sections the product is pointwise and the ring is $\Gamma(X,\mathcal{O}_X)$; its units are exactly the sections that are invertible at every point, which is $\Gamma(X,\mathcal{O}_X^\times)$.
 
 **Remark (the two readings of "endomorphism").** The theorem is about the operators **linear over the structure sheaf**, and those are the multiplications. The ring endomorphisms of $\mathcal{O}_X$ as a sheaf of rings, which need not be $\mathcal{O}_X$-linear, are a different and larger object, and they are treated in *Endomorphisms and Automorphisms of the Structure Sheaf* below. The two must be kept apart: a multiplication $m_s$ is never an automorphism of the pair $(X,\mathcal{O}_X)$ unless $s$ is invertible, while an automorphism of the variety is a ring automorphism that is almost never $\mathcal{O}_X$-linear.
 
@@ -80,51 +80,51 @@ of dimension $(n+1)^2-1$, spanned by the derivations $x_i\partial/\partial x_j$ 
 
 ## Endomorphisms and Automorphisms of the Structure Sheaf
 
-**Definition.** An **endomorphism of the variety** $X$ is a morphism $\varphi : X\to X$ of ringed spaces; it is an **automorphism** when it is invertible. It induces a $k$-algebra homomorphism $\varphi^* : \Gamma(X,\mathcal{O}_X)\to\Gamma(X,\mathcal{O}_X)$ on the global functions, the **pullback**. The automorphisms form the group $\operatorname{Aut}(X)$ under composition.
+**Definition.** An **endomorphism of the variety** $X$ is a morphism $\digamma_{\mathrm{map}} : X\to X$ of ringed spaces; it is an **automorphism** when it is invertible. It induces a $k$-algebra homomorphism $\digamma_{\mathrm{map}}^* : \Gamma(X,\mathcal{O}_X)\to\Gamma(X,\mathcal{O}_X)$ on the global functions, the **pullback**. The automorphisms form the group $\operatorname{Aut}(X)$ under composition.
 
 **Theorem (affine correspondence).** Let $X = \operatorname{Spec} A$ be an affine variety, so that $A = k[X]$ is a finitely generated reduced $k$-algebra. Then formation of the pullback is a bijection
 $$
-\operatorname{Hom}_{\mathbf{Sch}}(X,X)\ \cong\ \operatorname{Hom}_{k\text{-}\mathbf{alg}}(A,A), \qquad \varphi\longmapsto\varphi^*,
+\operatorname{Hom}_{\mathbf{Sch}}(X,X)\ \cong\ \operatorname{Hom}_{k\text{-}\mathbf{alg}}(A,A), \qquad \digamma_{\mathrm{map}}\longmapsto\digamma_{\mathrm{map}}^*,
 $$
 and it restricts to an isomorphism $\operatorname{Aut}(X)\cong\operatorname{Aut}_{k\text{-}\mathbf{alg}}(A)$.
 
 *Proof.* This is the contravariant equivalence of *Schemes*: a morphism of affine schemes is a $k$-algebra homomorphism in the opposite direction, and an invertible morphism corresponds to an invertible homomorphism. Reducedness and finite type are not used for the bijection and are used only to recognise $X$ as a variety.
 
-**Theorem (the automorphisms act on the operator layer).** Let $\varphi\in\operatorname{Aut}(X)$. Then conjugation by $\varphi^*$,
+**Theorem (the automorphisms act on the operator layer).** Let $\digamma_{\mathrm{map}}\in\operatorname{Aut}(X)$. Then conjugation by $\digamma_{\mathrm{map}}^*$,
 $$
-\mathrm{Ad}_\varphi(T) = (\varphi^*)^{-1}\,T\,\varphi^*,
+\mathrm{Ad}_\digamma_{\mathrm{map}}(T) = (\digamma_{\mathrm{map}}^*)^{-1}\,T\,\digamma_{\mathrm{map}}^*,
 $$
 is an automorphism of the $k$-algebra $\Gamma(X,\mathcal{O}_X)$ of multiplication operators, and the pushforward of derivations
 $$
-(\varphi_*D)(f) = (\varphi^*)^{-1}\bigl(D(\varphi^*f)\bigr)
+(\digamma_{\mathrm{map},*}D)(f) = (\digamma_{\mathrm{map}}^*)^{-1}\bigl(D(\digamma_{\mathrm{map}}^*f)\bigr)
 $$
-is an isomorphism of Lie algebras $\operatorname{Der}_k(\mathcal{O}_X)\to\operatorname{Der}_k(\mathcal{O}_X)$. Hence $\operatorname{Aut}(X)$ acts on the operator layer by algebra automorphisms, and the multiplication operators are fixed by the action precisely when $\varphi$ acts trivially on the global functions.
+is an isomorphism of Lie algebras $\operatorname{Der}_k(\mathcal{O}_X)\to\operatorname{Der}_k(\mathcal{O}_X)$. Hence $\operatorname{Aut}(X)$ acts on the operator layer by algebra automorphisms, and the multiplication operators are fixed by the action precisely when $\digamma_{\mathrm{map}}$ acts trivially on the global functions.
 
-*Proof.* Conjugation by an invertible element of a ring is a ring automorphism, and $\varphi^*$ is invertible with inverse $(\varphi^{-1})^*$. For the derivations, $\varphi_*D$ is the transport of the derivation $D$ along the $k$-algebra isomorphism $\varphi^*$, so it is a derivation and the assignment is a Lie-algebra isomorphism because conjugation of operators preserves commutators. The fixed-multiplication statement is $\mathrm{Ad}_\varphi(m_s) = m_{\varphi^*(s)} = m_s$ for all $s$, that is $\varphi^* = \mathrm{id}$.
+*Proof.* Conjugation by an invertible element of a ring is a ring automorphism, and $\digamma_{\mathrm{map}}^*$ is invertible with inverse $(\digamma_{\mathrm{map}}^{-1})^*$. For the derivations, $\digamma_{\mathrm{map},*}D$ is the transport of the derivation $D$ along the $k$-algebra isomorphism $\digamma_{\mathrm{map}}^*$, so it is a derivation and the assignment is a Lie-algebra isomorphism because conjugation of operators preserves commutators. The fixed-multiplication statement is $\mathrm{Ad}_\digamma_{\mathrm{map}}(m_s) = m_{\digamma_{\mathrm{map}}^*(s)} = m_s$ for all $s$, that is $\digamma_{\mathrm{map}}^* = \mathrm{id}$.
 
-**Example (the affine line and its inversions).** On $\mathbb{A}^1_k$ the automorphisms are the affine maps $t\mapsto at+b$ with $a\in k^\times$, $b\in k$, since these are exactly the invertible $k$-algebra endomorphisms of $k[t]$. The group is the affine group of the line, of dimension two, and its conjugation action sends the vector field $f(t)\partial/\partial t$ to $f(at+b)\partial/\partial t$ with the chain-rule factor $a^{-1}$ absorbed: precisely, $(\varphi_*D)(t) = a^{-1}D(at+b)$. On the projective line $\mathbb{P}^1_k$ the automorphism group is $\mathrm{PGL}_2(k)$, of dimension three, and the global vector fields form its three-dimensional Lie algebra $\mathrm{sl}_2(k)$.
+**Example (the affine line and its inversions).** On $\mathbb{A}^1_k$ the automorphisms are the affine maps $t\mapsto at+b$ with $a\in k^\times$, $b\in k$, since these are exactly the invertible $k$-algebra endomorphisms of $k[t]$. The group is the affine group of the line, of dimension two, and its conjugation action sends the vector field $f(t)\partial/\partial t$ to $f(at+b)\partial/\partial t$ with the chain-rule factor $a^{-1}$ absorbed: precisely, $(\digamma_{\mathrm{map},*}D)(t) = a^{-1}D(at+b)$. On the projective line $\mathbb{P}^1_k$ the automorphism group is $\mathrm{PGL}_2(k)$, of dimension three, and the global vector fields form its three-dimensional Lie algebra $\mathrm{sl}_2(k)$.
 
 ## The Action on the Function Field and on Cohomology
 
-**Proposition (the action on the function field).** A dominant endomorphism $\varphi : X\to X$ of an irreducible variety pulls back rational functions, $k(X)\to k(X)$, $f\mapsto \varphi^*f = f\circ\varphi$, a $k$-algebra homomorphism; if $\varphi$ is an automorphism the pullback is a $k$-automorphism of $k(X)$.
+**Proposition (the action on the function field).** A dominant endomorphism $\digamma_{\mathrm{map}} : X\to X$ of an irreducible variety pulls back rational functions, $k(X)\to k(X)$, $f\mapsto \digamma_{\mathrm{map}}^*f = f\circ\digamma_{\mathrm{map}}$, a $k$-algebra homomorphism; if $\digamma_{\mathrm{map}}$ is an automorphism the pullback is a $k$-automorphism of $k(X)$.
 
-*Proof.* The pullback of a rational function along a dominant morphism is the composition with $\varphi$ on a dense open set on which both are defined, and the composition is independent of the open set chosen; invertibility of $\varphi$ makes the pullback invertible with inverse $(\varphi^{-1})^*$.
+*Proof.* The pullback of a rational function along a dominant morphism is the composition with $\digamma_{\mathrm{map}}$ on a dense open set on which both are defined, and the composition is independent of the open set chosen; invertibility of $\digamma_{\mathrm{map}}$ makes the pullback invertible with inverse $(\digamma_{\mathrm{map}}^{-1})^*$.
 
-**Proposition (the action on cohomology).** Let $\varphi : X\to X$ be an endomorphism and $\mathcal{F}$ a quasi-coherent sheaf on $X$. Then $\varphi$ induces a $k$-linear map
+**Proposition (the action on cohomology).** Let $\digamma_{\mathrm{map}} : X\to X$ be an endomorphism and $\mathcal{F}$ a quasi-coherent sheaf on $X$. Then $\digamma_{\mathrm{map}}$ induces a $k$-linear map
 $$
-\varphi^* : H^i(X,\mathcal{F})\longrightarrow H^i(X,\varphi^*\mathcal{F})
+\digamma_{\mathrm{map}}^* : H^i(X,\mathcal{F})\longrightarrow H^i(X,\digamma_{\mathrm{map}}^*\mathcal{F})
 $$
-natural in $\mathcal{F}$, and for $\mathcal{F} = \mathcal{O}_X$ with $\varphi$ an automorphism this is an automorphism of the graded $k$-vector space $H^\bullet(X,\mathcal{O}_X)$. If $\varphi$ is the identity on a closed subscheme $Z\subseteq X$, the map factors through the cohomology of $Z$ in the sense of the long exact sequence of the pair $(X,Z)$ whenever $\mathcal{F}$ is supported there.
+natural in $\mathcal{F}$, and for $\mathcal{F} = \mathcal{O}_X$ with $\digamma_{\mathrm{map}}$ an automorphism this is an automorphism of the graded $k$-vector space $H^\bullet(X,\mathcal{O}_X)$. If $\digamma_{\mathrm{map}}$ is the identity on a closed subscheme $Z\subseteq X$, the map factors through the cohomology of $Z$ in the sense of the long exact sequence of the pair $(X,Z)$ whenever $\mathcal{F}$ is supported there.
 
-*Proof.* A morphism of schemes induces a morphism of the associated ringed spaces, hence a map of cohomology with coefficients pulled back; the functoriality $\varphi^*\circ\psi^* = (\psi\varphi)^*$ is the functoriality of $f^*$ of *Coherent Sheaves*, and invertibility carries over. The factorisation statement is the exactness of the cohomology sequence of a short exact sequence of sheaves, applied to the ideal sheaf of $Z$.
+*Proof.* A morphism of schemes induces a morphism of the associated ringed spaces, hence a map of cohomology with coefficients pulled back; the functoriality $\digamma_{\mathrm{map}}^*\circΞ_{\mathrm{wfn}}^* = (Ξ_{\mathrm{wfn}}\digamma_{\mathrm{map}})^*$ is the functoriality of $f^*$ of *Coherent Sheaves*, and invertibility carries over. The factorisation statement is the exactness of the cohomology sequence of a short exact sequence of sheaves, applied to the ideal sheaf of $Z$.
 
-The **Lefschetz number** of an endomorphism is the alternating sum $\sum_i(-1)^i\operatorname{tr}\bigl(\varphi^*|H^i(X,\mathcal{O}_X)\bigr)$; the fixed-point theorem that computes it as an intersection number is stated in the arithmetic setting in *The Frobenius Operator*, below in this group, and its topological form belongs to *Algebraic Topology*.
+The **Lefschetz number** of an endomorphism is the alternating sum $\sum_i(-1)^i\operatorname{tr}\bigl(\digamma_{\mathrm{map}}^*|H^i(X,\mathcal{O}_X)\bigr)$; the fixed-point theorem that computes it as an intersection number is stated in the arithmetic setting in *The Frobenius Operator*, below in this group, and its topological form belongs to *Algebraic Topology*.
 
 ## Summary
 
 The operator layer of a variety $X$ is the sheaf $\mathcal{E}nd(\mathcal{O}_X) = \mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X)$ of endomorphisms of the structure sheaf, and it is isomorphic to $\mathcal{O}_X$ itself: every operator linear over the functions is a multiplication $m_s$, and the algebra of global operators is the commutative ring $\Gamma(X,\mathcal{O}_X)$ with group of invertibles $\Gamma(X,\mathcal{O}_X^\times)$. The second class is the derivations of $\mathcal{O}_X$, the vector fields, forming the tangent sheaf $\mathcal{T}_X = \mathcal{D}er_k(\mathcal{O}_X)$, a sheaf of Lie algebras and of modules over $\mathcal{O}_X$, and the $\mathcal{O}_X$-dual of the cotangent sheaf $\Omega^1_{X/k}$. On affine space the vector fields are the free module on the partial derivations, the Euler field generates the grading, and on projective space the global vector fields are $\mathrm{sl}_{n+1}(k)$.
 
-The third class is the automorphisms of the variety, the invertible ring endomorphisms of the structure sheaf; on an affine variety they are the $k$-algebra automorphisms of the coordinate ring, and they act on the operator layer by conjugation, fixing the multiplication operators exactly when they act trivially on the global functions. An endomorphism pulls back rational functions on the function field and acts on the cohomology of a quasi-coherent sheaf by $\varphi^*$, and the alternating trace of that action on $H^\bullet(X,\mathcal{O}_X)$ is the Lefschetz number. The four articles that follow read the same layer through one operator each: the Galois action of the base field, the Frobenius of characteristic $p$, the pullback of a general morphism, and the divisor map; the last reads the layer through the differential operators generated by the vector fields.
+The third class is the automorphisms of the variety, the invertible ring endomorphisms of the structure sheaf; on an affine variety they are the $k$-algebra automorphisms of the coordinate ring, and they act on the operator layer by conjugation, fixing the multiplication operators exactly when they act trivially on the global functions. An endomorphism pulls back rational functions on the function field and acts on the cohomology of a quasi-coherent sheaf by $\digamma_{\mathrm{map}}^*$, and the alternating trace of that action on $H^\bullet(X,\mathcal{O}_X)$ is the Lefschetz number. The four articles that follow read the same layer through one operator each: the Galois action of the base field, the Frobenius of characteristic $p$, the pullback of a general morphism, and the divisor map; the last reads the layer through the differential operators generated by the vector fields.
 
 ## Summary of Notation
 
@@ -140,11 +140,11 @@ The third class is the automorphisms of the variety, the invertible ring endomor
 | $(fD)(g)=fD(g)$ | $\mathcal{O}_X$-module structure on the vector fields |
 | $\Omega^1_{X/k}$ | cotangent sheaf; $\mathcal{T}_X$ is its $\mathcal{O}_X$-dual |
 | $E=\sum_ix_i\partial/\partial x_i$ | Euler derivation of the polynomial ring |
-| $\operatorname{Aut}(X)$, $\varphi^*$ | automorphism group; pullback of functions |
-| $\mathrm{Ad}_\varphi(T)=(\varphi^*)^{-1}T\varphi^*$ | conjugation action of an automorphism on the operator layer |
+| $\operatorname{Aut}(X)$, $\digamma_{\mathrm{map}}^*$ | automorphism group; pullback of functions |
+| $\mathrm{Ad}_\digamma_{\mathrm{map}}(T)=(\digamma_{\mathrm{map}}^*)^{-1}T\digamma_{\mathrm{map}}^*$ | conjugation action of an automorphism on the operator layer |
 | $k(X)$ | function field; rational functions pulled back by a dominant map |
-| $\varphi^*$ on $H^i$ | action of an endomorphism on cohomology |
-| $\sum_i(-1)^i\operatorname{tr}(\varphi^*\vert H^i(X,\mathcal{O}_X))$ | Lefschetz number of an endomorphism |
+| $\digamma_{\mathrm{map}}^*$ on $H^i$ | action of an endomorphism on cohomology |
+| $\sum_i(-1)^i\operatorname{tr}(\digamma_{\mathrm{map}}^*\vert H^i(X,\mathcal{O}_X))$ | Lefschetz number of an endomorphism |
 
 ## Further Reading
 

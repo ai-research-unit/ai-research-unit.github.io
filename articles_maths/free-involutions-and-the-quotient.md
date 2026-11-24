@@ -24,12 +24,12 @@ Throughout, $(G,\sigma)$ is an involutive group with $\sigma$ an anti-automorphi
 **Proposition (the injectivity of the conjugate product).** If $\sigma$ is free, the map
 
 $$
-\boxed{\;\varphi : G\longrightarrow G, \qquad \varphi(g)=g^{-1}\sigma(g)\;},
+\boxed{\;\digamma_{\mathrm{map}} : G\longrightarrow G, \qquad \digamma_{\mathrm{map}}(g)=g^{-1}\sigma(g)\;},
 $$
 
 is injective. If $G$ is finite it is therefore a bijection, and every element of $G$ is the conjugate product of a unique pair $(g^{-1},\sigma(g))$.
 
-**Proof.** If $\varphi(g)=\varphi(h)$ then $g^{-1}\sigma(g)=h^{-1}\sigma(h)$, so $hg^{-1}=\sigma(h)\sigma(g)^{-1}=\sigma(hg^{-1})$, and $hg^{-1}\in G^{\sigma}$; freeness gives $hg^{-1}=e$ and $g=h$. Finiteness makes injective bijective.
+**Proof.** If $\digamma_{\mathrm{map}}(g)=\digamma_{\mathrm{map}}(h)$ then $g^{-1}\sigma(g)=h^{-1}\sigma(h)$, so $hg^{-1}=\sigma(h)\sigma(g)^{-1}=\sigma(hg^{-1})$, and $hg^{-1}\in G^{\sigma}$; freeness gives $hg^{-1}=e$ and $g=h$. Finiteness makes injective bijective.
 
 ## The Quotient and the Double Cover
 
@@ -63,13 +63,13 @@ of *Involutive Groups*, a group of order $2\lvert G\rvert$ in which $G$ is norma
 
 **Theorem.** A finite abelian group admitting a free involutive automorphism is of odd order, and the automorphism is the inversion. Hence its group-theoretic double cover is the dihedral group of the group.
 
-**Proof.** Let $G$ be finite abelian and $\alpha$ a free involutive automorphism. The map $\psi(g)=\alpha(g)g^{-1}$ is an endomorphism of $G$, and its kernel is $G^{\alpha}=\{e\}$; being injective on a finite group, it is bijective. Now
+**Proof.** Let $G$ be finite abelian and $\alpha$ a free involutive automorphism. The map $Ξ_{\mathrm{wfn}}(g)=\alpha(g)g^{-1}$ is an endomorphism of $G$, and its kernel is $G^{\alpha}=\{e\}$; being injective on a finite group, it is bijective. Now
 
 $$
-\psi(\alpha(g))=\alpha^{2}(g)\alpha(g)^{-1}=g\,\alpha(g)^{-1}=\bigl(\alpha(g)g^{-1}\bigr)^{-1}=\psi(g)^{-1}=\psi(g^{-1}),
+Ξ_{\mathrm{wfn}}(\alpha(g))=\alpha^{2}(g)\alpha(g)^{-1}=g\,\alpha(g)^{-1}=\bigl(\alpha(g)g^{-1}\bigr)^{-1}=Ξ_{\mathrm{wfn}}(g)^{-1}=Ξ_{\mathrm{wfn}}(g^{-1}),
 $$
 
-so $\psi(\alpha(g))=\psi(g^{-1})$; injectivity of $\psi$ gives $\alpha(g)=g^{-1}$ for every $g$. Finally $\alpha(g)=g^{-1}$ has fixed set the $2$-torsion, which is $\{e\}$ exactly when the order is odd.
+so $Ξ_{\mathrm{wfn}}(\alpha(g))=Ξ_{\mathrm{wfn}}(g^{-1})$; injectivity of $Ξ_{\mathrm{wfn}}$ gives $\alpha(g)=g^{-1}$ for every $g$. Finally $\alpha(g)=g^{-1}$ has fixed set the $2$-torsion, which is $\{e\}$ exactly when the order is odd.
 
 **Corollary (the general finite statement).** A finite group admitting a free involutive automorphism is abelian of odd order with the inversion as the automorphism. The abelian case is proved above; the general case is a theorem of the finite-group literature and is stated here without proof.
 
@@ -79,7 +79,7 @@ so $\psi(\alpha(g))=\psi(g^{-1})$; injectivity of $\psi$ gives $\alpha(g)=g^{-1}
 
 **Example (the antipodal example).** Let $F$ be a field of characteristic different from two and let $G=(F,+)$ be its additive group with $\sigma(x)=-x$. The involution is free, since $-x=x$ is $2x=0$ and $2$ is invertible in $F$; the orbits are the antipodal pairs $\{x,-x\}$, and the quotient has one point for each pair. The group-theoretic double cover is the semidirect product $F\rtimes C_2$ in which the complement acts by negation. Over a field of characteristic two the negation is the identity, which is not free, so freeness is a property of the pair (group, field) and not of the additive group alone.
 
-**Example (the infinite case).** Let $G=(\mathbb{Z},+)$ with $\sigma(n)=-n$. The involution is free, the quotient has countably many pairs, and the extension is the infinite dihedral group $\mathbb{Z}\rtimes C_2$. The conjugate-product map of the first section is $\varphi(n)=-2n$ in additive notation, a bijection of $\mathbb{Z}$; the finite theorem does not apply, but the quotient and the double cover are constructed in the same way.
+**Example (the infinite case).** Let $G=(\mathbb{Z},+)$ with $\sigma(n)=-n$. The involution is free, the quotient has countably many pairs, and the extension is the infinite dihedral group $\mathbb{Z}\rtimes C_2$. The conjugate-product map of the first section is $\digamma_{\mathrm{tot}}(n)=-2n$ in additive notation, a bijection of $\mathbb{Z}$; the finite theorem does not apply, but the quotient and the double cover are constructed in the same way.
 
 **Remark (the two examples in one).** The dihedral and antipodal examples are the same construction read on two free involutions: the inversion of a cyclic group of odd order, and the negation of the additive group of a field of characteristic different from two. Both are free, both give a two-to-one quotient, and both extend to a semidirect product by the two-element group; they differ in the size and in the nature of the group, one finite and cyclic, the other the additive group of a field.
 
@@ -97,12 +97,12 @@ A finite abelian group with a free involutive automorphism has odd order and the
 |---|---|
 | free, $G^{\sigma}=\{e\}$ | the involution fixes only the identity |
 | $G^{\sigma}=I(\alpha)$ | dual identity for the fixed and inverted sets |
-| $\varphi(g)=g^{-1}\sigma(g)$ | injective map of a free involution |
+| $\digamma_{\mathrm{map}}(g)=g^{-1}\sigma(g)$ | injective map of a free involution |
 | $G/\langle\sigma\rangle$ | orbit quotient, the base of the double cover |
 | $\pi(g)=\{g,\sigma(g)\}$ | two-to-one projection, the double cover |
 | $\lvert G/\langle\sigma\rangle\rvert=\lvert G\rvert/2$ | orbit count for a finite free involution |
 | $G\rtimes C_2$ | group-theoretic double cover, the split extension |
-| $\psi(g)=\alpha(g)g^{-1}$ | bijective endomorphism proving $\alpha=\iota$ in the abelian case |
+| $Ξ_{\mathrm{wfn}}(g)=\alpha(g)g^{-1}$ | bijective endomorphism proving $\alpha=\iota$ in the abelian case |
 
 ## Further Reading
 

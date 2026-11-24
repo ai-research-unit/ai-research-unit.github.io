@@ -105,7 +105,7 @@ The map
 
 $$
 \boxed{\;
-\varphi : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}, \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)
+\digamma_{\mathrm{map}} : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}, \qquad \digamma_{\mathrm{map}}(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)
 \;},
 $$
 
@@ -381,7 +381,7 @@ where $\mathbb{H} \tilde\Pi_{\mathrm{id},1}$ and $\mathbb{H} \tilde\Pi_{\mathrm{
 The isomorphism
 
 $$
-\varphi : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}, \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)
+\digamma_{\mathrm{map}} : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}, \qquad \digamma_{\mathrm{map}}(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)
 $$
 
 is an algebra isomorphism, and it is the reason the algebra is semisimple.

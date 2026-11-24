@@ -152,10 +152,10 @@ the sign being the one carried by the definition of the codifferential, and in t
 **Example (the Dirac-type equation).** In Lorentzian signature, with the vector derivative built from the metric of signature $(1,3)$, the equation
 
 $$
-(\partial+m)\psi=0
+(\partial+m)Ξ_{\mathrm{wfn}}=0
 $$
 
-is the Dirac equation, the object $\psi$ being a spinor of the algebra and $\partial$ the vector derivative of the space. The identification of the differential operator with the Clifford multiplication, the spinor module on which it acts and the physical normalisation are the subject of *Dirac Differential Operators* and of the physics articles of the menu.
+is the Dirac equation, the object $Ξ_{\mathrm{wfn}}$ being a spinor of the algebra and $\partial$ the vector derivative of the space. The identification of the differential operator with the Clifford multiplication, the spinor module on which it acts and the physical normalisation are the subject of *Dirac Differential Operators* and of the physics articles of the menu.
 
 **Example (the Maxwell equation).** In the same signature, the equation
 
@@ -177,7 +177,7 @@ $$
 \int_M\underline{\partial} F\,dV=\int_{\partial M}dS\,F,
 $$
 
-the integral of the derivative of a multivector-valued function over a region equalling the integral of the function over the directed boundary. Its scalar part for a vector-valued $F$ is the divergence theorem of Gauss, $\int_{\partial M}dS\cdot F=\int_M\partial\cdot F\,dV$; its bivector part is Stokes' theorem, $\int_{\partial M}dS\wedge F=\int_M\partial\wedge F\,dV$; and in one dimension it is the fundamental theorem of calculus. In the plane, with the identification of the plane with the complex numbers, the equation $\partial F=0$ is the Cauchy–Riemann equation and the theorem is Cauchy's integral theorem. The wedge part of the vector derivative is the exterior derivative and the contraction part is the codifferential, so that $d\delta+\delta d=\Delta$; the Dirac-type equation $(\partial+m)\psi=0$ and the Maxwell-type equation $\partial F=J$ in Lorentzian signature are the two one-line forms of the equations of mathematical physics, and the four components of each are the four grades of a single equation.
+the integral of the derivative of a multivector-valued function over a region equalling the integral of the function over the directed boundary. Its scalar part for a vector-valued $F$ is the divergence theorem of Gauss, $\int_{\partial M}dS\cdot F=\int_M\partial\cdot F\,dV$; its bivector part is Stokes' theorem, $\int_{\partial M}dS\wedge F=\int_M\partial\wedge F\,dV$; and in one dimension it is the fundamental theorem of calculus. In the plane, with the identification of the plane with the complex numbers, the equation $\partial F=0$ is the Cauchy–Riemann equation and the theorem is Cauchy's integral theorem. The wedge part of the vector derivative is the exterior derivative and the contraction part is the codifferential, so that $d\delta+\delta d=\Delta$; the Dirac-type equation $(\partial+m)Ξ_{\mathrm{wfn}}=0$ and the Maxwell-type equation $\partial F=J$ in Lorentzian signature are the two one-line forms of the equations of mathematical physics, and the four components of each are the four grades of a single equation.
 
 ## Summary of Notation
 
@@ -194,7 +194,7 @@ the integral of the derivative of a multivector-valued function over a region eq
 | $\partial^2=\Delta$ | Square of the vector derivative |
 | $\partial F=0$ | Monogenic functions |
 | $d$, $\delta$ | Exterior derivative and codifferential |
-| $(\partial+m)\psi=0$, $\partial F=J$ | Dirac-type and Maxwell-type equations |
+| $(\partial+m)Ξ_{\mathrm{wfn}}=0$, $\partial F=J$ | Dirac-type and Maxwell-type equations |
 
 ## Further Reading
 

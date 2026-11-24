@@ -77,27 +77,27 @@ A subring is itself a ring under the inherited operations, with the same $1$ and
 
 ### Definition
 
-**Definition.** Let $A$ and $B$ be rings. A **ring homomorphism** is a function $\varphi : A \to B$ with
+**Definition.** Let $A$ and $B$ be rings. A **ring homomorphism** is a function $\digamma_{\mathrm{map}} : A \to B$ with
 
 $$
-\varphi(a + b) = \varphi(a) + \varphi(b), \qquad \varphi(ab) = \varphi(a)\varphi(b), \qquad \varphi(1_A) = 1_B
+\digamma_{\mathrm{map}}(a + b) = \digamma_{\mathrm{map}}(a) + \digamma_{\mathrm{map}}(b), \qquad \digamma_{\mathrm{map}}(ab) = \digamma_{\mathrm{map}}(a)\digamma_{\mathrm{map}}(b), \qquad \digamma_{\mathrm{map}}(1_A) = 1_B
 $$
 
 for all $a, b \in A$. A bijective homomorphism is an **isomorphism**, written $A \cong B$ when one exists. A homomorphism $A \to A$ from a ring to itself is an **endomorphism**, and a bijective one is an **automorphism** of $A$.
 
-**Proposition.** Let $\varphi : A \to B$ be a ring homomorphism. Then $\varphi(0) = 0$, $\varphi(-a) = -\varphi(a)$ and $\varphi(n \cdot a) = n \cdot \varphi(a)$ for every $n \in \mathbb{Z}$.
+**Proposition.** Let $\digamma_{\mathrm{map}} : A \to B$ be a ring homomorphism. Then $\digamma_{\mathrm{map}}(0) = 0$, $\digamma_{\mathrm{map}}(-a) = -\digamma_{\mathrm{map}}(a)$ and $\digamma_{\mathrm{map}}(n \cdot a) = n \cdot \digamma_{\mathrm{map}}(a)$ for every $n \in \mathbb{Z}$.
 
-**Proof.** $\varphi(0) = \varphi(0 + 0) = \varphi(0) + \varphi(0)$ gives $\varphi(0) = 0$; then $0 = \varphi(a + (-a)) = \varphi(a) + \varphi(-a)$ gives the sign rule; the integer multiples follow by induction on $n$.
+**Proof.** $\digamma_{\mathrm{map}}(0) = \digamma_{\mathrm{map}}(0 + 0) = \digamma_{\mathrm{map}}(0) + \digamma_{\mathrm{map}}(0)$ gives $\digamma_{\mathrm{map}}(0) = 0$; then $0 = \digamma_{\mathrm{map}}(a + (-a)) = \digamma_{\mathrm{map}}(a) + \digamma_{\mathrm{map}}(-a)$ gives the sign rule; the integer multiples follow by induction on $n$.
 
 **Example.** Complex conjugation $z \mapsto \bar z$ is an automorphism of $\mathbb{C}$, and it is the standard example of a non-trivial automorphism of a ring. The transformation group of a ring, and what an automorphism preserves, is *Ring and Field Automorphisms*, later in this category.
 
 ### Kernels and Images
 
-**Definition.** The **kernel** of $\varphi : A \to B$ is $\ker \varphi = \{a \in A : \varphi(a) = 0\}$, and its **image** is $\operatorname{im}\varphi = \{\varphi(a) : a \in A\}$.
+**Definition.** The **kernel** of $\digamma_{\mathrm{map}} : A \to B$ is $\ker \digamma_{\mathrm{map}} = \{a \in A : \digamma_{\mathrm{map}}(a) = 0\}$, and its **image** is $\operatorname{im}\digamma_{\mathrm{map}} = \{\digamma_{\mathrm{map}}(a) : a \in A\}$.
 
-**Proposition.** $\operatorname{im}\varphi$ is a subring of $B$; $\ker\varphi$ is a two-sided ideal of $A$ in the sense of the next section; and $\varphi$ is injective if and only if $\ker\varphi = (0)$.
+**Proposition.** $\operatorname{im}\digamma_{\mathrm{map}}$ is a subring of $B$; $\ker\digamma_{\mathrm{map}}$ is a two-sided ideal of $A$ in the sense of the next section; and $\digamma_{\mathrm{map}}$ is injective if and only if $\ker\digamma_{\mathrm{map}} = (0)$.
 
-**Proof.** The image contains $1_B$ and is closed under subtraction and under multiplication, since $\varphi$ is a homomorphism. The kernel is an additive subgroup, and if $a \in \ker\varphi$ then $\varphi(xa) = \varphi(x)\varphi(a) = 0$ and $\varphi(ax) = \varphi(a)\varphi(x) = 0$ for every $x \in A$, so it is closed under multiplication on both sides. Finally, $\varphi(a) = \varphi(b)$ if and only if $\varphi(a - b) = 0$.
+**Proof.** The image contains $1_B$ and is closed under subtraction and under multiplication, since $\digamma_{\mathrm{map}}$ is a homomorphism. The kernel is an additive subgroup, and if $a \in \ker\digamma_{\mathrm{map}}$ then $\digamma_{\mathrm{map}}(xa) = \digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(a) = 0$ and $\digamma_{\mathrm{map}}(ax) = \digamma_{\mathrm{map}}(a)\digamma_{\mathrm{map}}(x) = 0$ for every $x \in A$, so it is closed under multiplication on both sides. Finally, $\digamma_{\mathrm{map}}(a) = \digamma_{\mathrm{map}}(b)$ if and only if $\digamma_{\mathrm{map}}(a - b) = 0$.
 
 ---
 
@@ -201,9 +201,9 @@ The ideal $I$ has to be two-sided for $A/I$ to be a ring. The quotients by one-s
 
 ### The Isomorphism Theorems
 
-**Theorem (first isomorphism theorem).** Let $\varphi : A \to B$ be a ring homomorphism. Then the induced map $\varphi' : A/\ker\varphi \to \operatorname{im}\varphi$, $a + \ker\varphi \mapsto \varphi(a)$, is an isomorphism.
+**Theorem (first isomorphism theorem).** Let $\digamma_{\mathrm{map}} : A \to B$ be a ring homomorphism. Then the induced map $\digamma_{\mathrm{map}}' : A/\ker\digamma_{\mathrm{map}} \to \operatorname{im}\digamma_{\mathrm{map}}$, $a + \ker\digamma_{\mathrm{map}} \mapsto \digamma_{\mathrm{map}}(a)$, is an isomorphism.
 
-**Proof.** The map is well defined, since $\varphi$ is constant on the cosets of its kernel; it is additive, multiplicative and unital because $\varphi$ is; it is injective because $\varphi(a) = 0$ implies $a \in \ker\varphi$; and its image is $\operatorname{im}\varphi$ by construction.
+**Proof.** The map is well defined, since $\digamma_{\mathrm{map}}$ is constant on the cosets of its kernel; it is additive, multiplicative and unital because $\digamma_{\mathrm{map}}$ is; it is injective because $\digamma_{\mathrm{map}}(a) = 0$ implies $a \in \ker\digamma_{\mathrm{map}}$; and its image is $\operatorname{im}\digamma_{\mathrm{map}}$ by construction.
 
 **Theorem (second isomorphism theorem).** Let $I \trianglelefteq A$ and let $S$ be a subring of $A$. Then $I + S$ is a subring, $I \cap S$ is a two-sided ideal of $S$, and
 
@@ -292,8 +292,8 @@ The multiplicative vocabulary consists of the invertibles, the group $A^{\times}
 | $n \cdot a$ | The integer multiple of $a$ |
 | $\mathbb{Z}$ | The integers, the initial ring; its image is the prime subring of $A$ |
 | $S \subseteq A$ | A subset; a subring when it is a subgroup closed under multiplication and containing $1$ |
-| $\varphi : A \to B$ | A ring homomorphism, unital by definition |
-| $\ker\varphi$, $\operatorname{im}\varphi$ | Kernel and image of $\varphi$ |
+| $\digamma_{\mathrm{map}} : A \to B$ | A ring homomorphism, unital by definition |
+| $\ker\digamma_{\mathrm{map}}$, $\operatorname{im}\digamma_{\mathrm{map}}$ | Kernel and image of $\digamma_{\mathrm{map}}$ |
 | $A \cong B$ | Isomorphic rings |
 | $I \trianglelefteq A$ | A two-sided ideal |
 | $AS$, $SA$ | The left ideal and the right ideal generated by $S$ |

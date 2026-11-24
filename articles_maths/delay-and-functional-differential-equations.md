@@ -21,39 +21,39 @@ $$
 
 It is **retarded** if the derivative depends on the past and not on a future value, **neutral** if it depends on $y'(t-r)$ as well, and **advanced** if it depends on a future value $y(t+r)$. The equation has **constant lag** $r$ when $r$ is a constant, **proportional or variable lag** when the lag is a function $r(t) \ge 0$, and **state-dependent** when the lag depends on $y$.
 
-**Definition.** A **history** for the equation on an interval $[\sigma, \sigma + \cdot\,]$ is a continuous function $\phi : [-r,0] \to X$, and the **initial-value problem** with initial time $\sigma$ and history $\phi$ is the equation together with
+**Definition.** A **history** for the equation on an interval $[\sigma, \sigma + \cdot\,]$ is a continuous function $\digamma_{\mathrm{map}} : [-r,0] \to X$, and the **initial-value problem** with initial time $\sigma$ and history $\digamma_{\mathrm{map}}$ is the equation together with
 
 $$
-y(\sigma + \vartheta_{\mathrm{hst}}) = \phi(\vartheta_{\mathrm{hst}}) \qquad (\vartheta_{\mathrm{hst}} \in [-r,0]).
+y(\sigma + \vartheta_{\mathrm{hst}}) = \digamma_{\mathrm{map}}(\vartheta_{\mathrm{hst}}) \qquad (\vartheta_{\mathrm{hst}} \in [-r,0]).
 $$
 
-A **solution** on $[\sigma-r, \sigma+T)$ is a continuous function $y$ that is differentiable on $(\sigma, \sigma+T)$, agrees with $\phi$ on $[\sigma-r,\sigma]$, and satisfies the equation for $t > \sigma$. The **history space** is $C = C([-r,0],X)$, a Banach space under $\|\phi\|_\infty = \sup_{\vartheta_{\mathrm{hst}}}|\phi(\vartheta_{\mathrm{hst}})|$.
+A **solution** on $[\sigma-r, \sigma+T)$ is a continuous function $y$ that is differentiable on $(\sigma, \sigma+T)$, agrees with $\digamma_{\mathrm{map}}$ on $[\sigma-r,\sigma]$, and satisfies the equation for $t > \sigma$. The **history space** is $C = C([-r,0],X)$, a Banach space under $\|\digamma_{\mathrm{map}}\|_\infty = \sup_{\vartheta_{\mathrm{hst}}}|\digamma_{\mathrm{map}}(\vartheta_{\mathrm{hst}})|$.
 
 The distinction between an initial *point* and an initial *history* is the whole difference between the ordinary and the functional theory. A delay equation is not a well-posed initial-value problem at a point: two solutions through the same point but with different histories generally differ for all later times. In compensation, the history determines the solution uniquely, exactly as the point does for an ordinary equation.
 
-**Proposition (smoothness propagation).** If $f$ is of class $C^k$ and the history $\phi$ is of class $C^k$ on $[-r,0]$ satisfying the **compatibility conditions** at the initial time $\sigma$,
+**Proposition (smoothness propagation).** If $f$ is of class $C^k$ and the history $\digamma_{\mathrm{map}}$ is of class $C^k$ on $[-r,0]$ satisfying the **compatibility conditions** at the initial time $\sigma$,
 
 $$
-\phi^{(j)}(0^-) = \frac{d^{j}}{dt^{j}} f\bigl(t, y(t), y(t-r)\bigr)\Bigr|_{t=\sigma^-} \qquad (j < k),
+\digamma_{\mathrm{map}}^{(j)}(0^-) = \frac{d^{j}}{dt^{j}} f\bigl(t, y(t), y(t-r)\bigr)\Bigr|_{t=\sigma^-} \qquad (j < k),
 $$
 
 then the solution is of class $C^k$ on $[\sigma-r,\sigma+T)$; without compatibility the solution is only continuous at $\sigma$, with a jump in the derivative at $\sigma$.
 
-*Proof.* The solution is differentiable for $t>\sigma$ by the equation, and its derivative at the initial time is the prescribed limit only when $\phi$ is compatible with the right-hand side, since the right-hand side at $t = \sigma$ is computed from $\phi$; each further differentiation of the equation raises the order of the condition by one and requires the corresponding derivative of $\phi$ to exist and match.
+*Proof.* The solution is differentiable for $t>\sigma$ by the equation, and its derivative at the initial time is the prescribed limit only when $\digamma_{\mathrm{map}}$ is compatible with the right-hand side, since the right-hand side at $t = \sigma$ is computed from $\digamma_{\mathrm{map}}$; each further differentiation of the equation raises the order of the condition by one and requires the corresponding derivative of $\digamma_{\mathrm{map}}$ to exist and match.
 
-**Example (discontinuous derivative).** For $y'(t) = -y(t-1)$ with history $\phi(\vartheta_{\mathrm{hst}}) = 1$ for $\vartheta_{\mathrm{hst}} \in [-1,0]$, the solution is $\phi$ continued by $y(t) = 1 - t$ on $[0,1]$, then $y(t) = 1 - t + \tfrac12(t-1)^2$ on $[1,2]$, and so on. The derivative jumps at $t = 0$ from $0$ to $-1$, because $\phi'(0^-) = 0$ does not match the equation. The solution becomes smoother with each step, a smoothing that is invisible to a point initial condition.
+**Example (discontinuous derivative).** For $y'(t) = -y(t-1)$ with history $\digamma_{\mathrm{map}}(\vartheta_{\mathrm{hst}}) = 1$ for $\vartheta_{\mathrm{hst}} \in [-1,0]$, the solution is $\digamma_{\mathrm{map}}$ continued by $y(t) = 1 - t$ on $[0,1]$, then $y(t) = 1 - t + \tfrac12(t-1)^2$ on $[1,2]$, and so on. The derivative jumps at $t = 0$ from $0$ to $-1$, because $\digamma_{\mathrm{map}}'(0^-) = 0$ does not match the equation. The solution becomes smoother with each step, a smoothing that is invisible to a point initial condition.
 
 ### The Method of Steps
 
-**Theorem (method of steps).** Let $\sigma \in \mathbb{R}$, let $\phi \in C([-r,0],X)$, and let $f : \mathbb{R}\times X\times X \to X$ be continuous and locally Lipschitz in its second and third variables. Then there is $T > 0$ and a unique solution on $[\sigma-r,\sigma+T]$.
+**Theorem (method of steps).** Let $\sigma \in \mathbb{R}$, let $\digamma_{\mathrm{map}} \in C([-r,0],X)$, and let $f : \mathbb{R}\times X\times X \to X$ be continuous and locally Lipschitz in its second and third variables. Then there is $T > 0$ and a unique solution on $[\sigma-r,\sigma+T]$.
 
 *Proof.* On the interval $[\sigma,\sigma+r]$ the values $y(t-r)$ for $t \in [\sigma,\sigma+r]$ lie in $[\sigma-r,\sigma]$ and are given by the history, so the equation is the ordinary initial-value problem
 
 $$
-y'(t) = f\bigl(t, y(t), \phi(t-\sigma-r)\bigr), \qquad y(\sigma) = \phi(0),
+y'(t) = f\bigl(t, y(t), \digamma_{\mathrm{map}}(t-\sigma-r)\bigr), \qquad y(\sigma) = \digamma_{\mathrm{map}}(0),
 $$
 
-whose right-hand side is continuous and locally Lipschitz in $y$; the Picard–Lindelöf theorem of the preceding article gives a unique solution on $[\sigma, \sigma+\delta_1]$ where $\delta_1 > 0$ depends only on the bounds of $f$ and $\phi$. If $\delta_1 \ge r$ the first step is complete; otherwise the argument restarts at $\sigma+\delta_1$. In either case one obtains a solution on $[\sigma,\sigma+r]$. On the next interval $[\sigma+r, \sigma+2r]$ the values $y(t-r)$ lie in $[\sigma,\sigma+r]$ and are now the known solution of the first step, so the same argument applies, and iteration over successive intervals of length $r$ gives the solution. The solution is unique on each step because the ordinary problem is, and the steps cover all of $[\sigma, \sigma+T]$ for every $T$ for which the bounds allow.
+whose right-hand side is continuous and locally Lipschitz in $y$; the Picard–Lindelöf theorem of the preceding article gives a unique solution on $[\sigma, \sigma+\delta_1]$ where $\delta_1 > 0$ depends only on the bounds of $f$ and $\digamma_{\mathrm{map}}$. If $\delta_1 \ge r$ the first step is complete; otherwise the argument restarts at $\sigma+\delta_1$. In either case one obtains a solution on $[\sigma,\sigma+r]$. On the next interval $[\sigma+r, \sigma+2r]$ the values $y(t-r)$ lie in $[\sigma,\sigma+r]$ and are now the known solution of the first step, so the same argument applies, and iteration over successive intervals of length $r$ gives the solution. The solution is unique on each step because the ordinary problem is, and the steps cover all of $[\sigma, \sigma+T]$ for every $T$ for which the bounds allow.
 
 The method of steps is not merely a proof device: it is the algorithm by which the solution is computed, and it shows that a delay equation is an ordinary equation repeating with the data of the preceding step.
 
@@ -61,7 +61,7 @@ The method of steps is not merely a proof device: it is the algorithm by which t
 
 *Proof.* Each step is an ordinary initial-value problem, to which the maximal-interval theorem for the ordinary theory applies; the maximal interval of the delay equation is the union of the maximal intervals of the steps.
 
-**Example (logistic delay).** The equation $y'(t) = y(t)\bigl(1 - y(t-1)\bigr)$ with history $\phi \equiv \tfrac12$ is solved on $[0,1]$ by $y' = y(1-\tfrac12)$, that is $y(t) = \tfrac12 \exp(t/2)$; the second step solves a logistic equation with a known forcing term, and the iteration continues. The solution remains defined for all time but its large-time behaviour depends on the lag, as the linear analysis below explains.
+**Example (logistic delay).** The equation $y'(t) = y(t)\bigl(1 - y(t-1)\bigr)$ with history $\digamma_{\mathrm{map}} \equiv \tfrac12$ is solved on $[0,1]$ by $y' = y(1-\tfrac12)$, that is $y(t) = \tfrac12 \exp(t/2)$; the second step solves a logistic equation with a known forcing term, and the iteration continues. The solution remains defined for all time but its large-time behaviour depends on the lag, as the linear analysis below explains.
 
 ## Linear Delay Equations
 
@@ -99,18 +99,18 @@ The example shows that a delay can destabilise a system that is stable without i
 
 ### The Solution Operator and Variation of Constants
 
-**Definition.** The **solution operator** of the homogeneous linear delay equation at time $t \ge 0$ is the bounded operator $T(t) : C \to C$ sending a history $\phi \in C$ to the history of the solution at time $t$, that is $T(t)\phi = y_t$ where $y_t(\vartheta_{\mathrm{hst}}) = y(t+\vartheta_{\mathrm{hst}})$ for $\vartheta_{\mathrm{hst}} \in [-r,0]$.
+**Definition.** The **solution operator** of the homogeneous linear delay equation at time $t \ge 0$ is the bounded operator $T(t) : C \to C$ sending a history $\digamma_{\mathrm{map}} \in C$ to the history of the solution at time $t$, that is $T(t)\digamma_{\mathrm{map}} = y_t$ where $y_t(\vartheta_{\mathrm{hst}}) = y(t+\vartheta_{\mathrm{hst}})$ for $\vartheta_{\mathrm{hst}} \in [-r,0]$.
 
-**Theorem (semigroup property).** The solution operators satisfy $T(0) = I$, $T(t+s) = T(t)\,T(s)$ for $s, t \ge 0$, and $t \mapsto T(t)\phi$ is continuous from $[0,\infty)$ to $C$ for every $\phi \in C$; moreover $\|T(t)\|$ is bounded on each compact interval, and $T(t)$ is compact for $t \ge r$.
+**Theorem (semigroup property).** The solution operators satisfy $T(0) = I$, $T(t+s) = T(t)\,T(s)$ for $s, t \ge 0$, and $t \mapsto T(t)\digamma_{\mathrm{map}}$ is continuous from $[0,\infty)$ to $C$ for every $\digamma_{\mathrm{map}} \in C$; moreover $\|T(t)\|$ is bounded on each compact interval, and $T(t)$ is compact for $t \ge r$.
 
 *Proof.* The semigroup property is the uniqueness of the solution: the history of the solution at $t+s$ is the history of the solution starting from the history at $t$, and the initial-value problem with a history in $C$ has a unique solution. Strong continuity follows from the continuity of solutions in their initial history, which is the estimate of the next theorem. The compactness for $t \ge r$ is the Arzelà–Ascoli theorem: the operator $T(t)$ maps bounded subsets of $C$ to subsets that are uniformly bounded and equicontinuous, since the solution is Lipschitz on $[t-r,t]$ with a bound depending only on the norm of the history.
 
 The semigroup property places linear delay equations inside the theory of strongly continuous semigroups of bounded operators, which is developed for general evolution equations; here it is used only to state the variation-of-constants formula, and the spectral theory of $T(t)$ is the spectral theory of the characteristic equation.
 
-**Theorem (variation of constants for a delay equation).** Let $y$ solve the inhomogeneous equation $y'(t) = Ay(t) + By(t-r) + b(t)$ on $[\sigma,\infty)$ with history $\phi$ and with $b$ continuous. Then
+**Theorem (variation of constants for a delay equation).** Let $y$ solve the inhomogeneous equation $y'(t) = Ay(t) + By(t-r) + b(t)$ on $[\sigma,\infty)$ with history $\digamma_{\mathrm{map}}$ and with $b$ continuous. Then
 
 $$
-\boxed{\;y(t) = \bigl(T(t-\sigma)\phi\bigr)(0) + \int_{\sigma}^{t} K(t-s)\,b(s)\,ds\;} ,
+\boxed{\;y(t) = \bigl(T(t-\sigma)\digamma_{\mathrm{map}}\bigr)(0) + \int_{\sigma}^{t} K(t-s)\,b(s)\,ds\;} ,
 $$
 
 where $K$ is the **fundamental solution**: the solution of the homogeneous equation with the history $K(\vartheta_{\mathrm{hst}}) = 0$ for $\vartheta_{\mathrm{hst}}<0$ and the jump $K(0)=I$, continued by the equation. Equivalently, in the scalar case,
@@ -126,16 +126,16 @@ the contour $\Gamma$ enclosing all characteristic roots to the right of a vertic
 **Theorem (continuous dependence).** With $A, B$ bounded and $\|A\| + \|B\| \le M$, the solution of the homogeneous equation satisfies
 
 $$
-\|y_t\|_\infty \le \|\phi\|_\infty\, \exp(Mt) \qquad (t \ge 0).
+\|y_t\|_\infty \le \|\digamma_{\mathrm{map}}\|_\infty\, \exp(Mt) \qquad (t \ge 0).
 $$
 
-*Proof.* The integral equation $y(t) = \phi(0) + \int_\sigma^t(Ay(s)+By(s-r))\,ds$ gives, for the supremum $q(t) = \sup_{\sigma-r\le s\le t}\|y(s)\|$, the inequality $q(t) \le \|\phi\|_\infty + M\int_\sigma^t q(s)\,ds$; Gronwall's inequality of the preceding article gives the bound.
+*Proof.* The integral equation $y(t) = \digamma_{\mathrm{map}}(0) + \int_\sigma^t(Ay(s)+By(s-r))\,ds$ gives, for the supremum $q(t) = \sup_{\sigma-r\le s\le t}\|y(s)\|$, the inequality $q(t) \le \|\digamma_{\mathrm{map}}\|_\infty + M\int_\sigma^t q(s)\,ds$; Gronwall's inequality of the preceding article gives the bound.
 
 ## Stability and Lyapunov Functionals
 
 ### Asymptotic Stability
 
-**Definition.** The zero solution of a linear delay equation is **exponentially stable** if there are constants $C \ge 1$ and $\gamma > 0$ with $\|y_t\|_\infty \le C \exp(-\gamma t)\|\phi\|_\infty$ for every history $\phi$, and **asymptotically stable** if $y_t \to 0$ for every $\phi$. For the nonlinear equation $y'(t) = f(t,y(t),y(t-r))$ with $f(t,0,0) = 0$, the zero solution is **stable** if for every $\varepsilon > 0$ there is $\delta > 0$ with $\|\phi\|_\infty < \delta$ implying $\|y_t\|_\infty < \varepsilon$ for all $t \ge 0$, and **asymptotically stable** if in addition $y_t \to 0$.
+**Definition.** The zero solution of a linear delay equation is **exponentially stable** if there are constants $C \ge 1$ and $\gamma > 0$ with $\|y_t\|_\infty \le C \exp(-\gamma t)\|\digamma_{\mathrm{map}}\|_\infty$ for every history $\digamma_{\mathrm{map}}$, and **asymptotically stable** if $y_t \to 0$ for every $\digamma_{\mathrm{map}}$. For the nonlinear equation $y'(t) = f(t,y(t),y(t-r))$ with $f(t,0,0) = 0$, the zero solution is **stable** if for every $\varepsilon > 0$ there is $\delta > 0$ with $\|\digamma_{\mathrm{map}}\|_\infty < \delta$ implying $\|y_t\|_\infty < \varepsilon$ for all $t \ge 0$, and **asymptotically stable** if in addition $y_t \to 0$.
 
 **Theorem (spectral criterion).** The linear equation $y'(t) = Ay(t) + By(t-r)$ is exponentially stable if and only if every characteristic root $\lambda$ of
 
@@ -159,25 +159,25 @@ so each pair of roots crossing the imaginary axis contributes one branch, parame
 
 The spectral criterion is available only for linear equations with constant coefficients. For a nonlinear equation one uses a functional that decreases along solutions, and the two standard tools are the Lyapunov functional and the Razumikhin condition.
 
-**Definition.** A **Lyapunov functional** for the equation $y'(t) = f(t,y_t)$ is a continuous functional $V : \mathbb{R}\times C \to \mathbb{R}$ that is positive definite, $V(t,0)=0$ and $V(t,\phi) \ge w(\|\phi(0)\|)$ for a continuous increasing $w$ with $w(0)=0$, and whose **right derivative** along solutions,
+**Definition.** A **Lyapunov functional** for the equation $y'(t) = f(t,y_t)$ is a continuous functional $V : \mathbb{R}\times C \to \mathbb{R}$ that is positive definite, $V(t,0)=0$ and $V(t,\digamma_{\mathrm{map}}) \ge w(\|\digamma_{\mathrm{map}}(0)\|)$ for a continuous increasing $w$ with $w(0)=0$, and whose **right derivative** along solutions,
 
 $$
-\left(dV/dt\right)(t,\phi) = \limsup_{h\to0^+}\frac{V\bigl(t+h, y_{t+h}(t,\phi)\bigr) - V(t,\phi)}{h},
+\left(dV/dt\right)(t,\digamma_{\mathrm{map}}) = \limsup_{h\to0^+}\frac{V\bigl(t+h, y_{t+h}(t,\digamma_{\mathrm{map}})\bigr) - V(t,\digamma_{\mathrm{map}})}{h},
 $$
 
-is nonpositive, where $y_{t+h}(t,\phi)$ is the history of the solution starting from $\phi$ at time $t$.
+is nonpositive, where $y_{t+h}(t,\digamma_{\mathrm{map}})$ is the history of the solution starting from $\digamma_{\mathrm{map}}$ at time $t$.
 
-**Theorem (Lyapunov stability).** If a Lyapunov functional exists with $dV/dt \le 0$ for all $(t,\phi)$, the zero solution is stable; if in addition $dV/dt \le -w_1(\|\phi(0)\|)$ for a positive definite $w_1$ and $V$ is bounded above on bounded sets by $w_2(\|\phi\|_\infty)$, the zero solution is asymptotically stable.
+**Theorem (Lyapunov stability).** If a Lyapunov functional exists with $dV/dt \le 0$ for all $(t,\digamma_{\mathrm{map}})$, the zero solution is stable; if in addition $dV/dt \le -w_1(\|\digamma_{\mathrm{map}}(0)\|)$ for a positive definite $w_1$ and $V$ is bounded above on bounded sets by $w_2(\|\digamma_{\mathrm{map}}\|_\infty)$, the zero solution is asymptotically stable.
 
 *Proof.* This is the direct method of Lyapunov, transplanted from finite dimensions: the monotonicity of $t \mapsto V(t,y_t)$ confines the solution to sublevel sets of $V$, which are neighbourhoods of the origin by positive definiteness, and the stronger decay condition forces the solution to the origin, the boundedness of $V$ on bounded sets providing the uniformity in the initial history.
 
 **Example (a quadratic functional).** For $y'(t) = -ay(t) + by(t-r)$ with $a > 0$ and $|b| < a$, the functional
 
 $$
-V(\phi) = \phi(0)^2 + \mu\int_{-r}^{0}\phi(\vartheta_{\mathrm{hst}})^2\,d\vartheta_{\mathrm{hst}}
+V(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map}}(0)^2 + \mu\int_{-r}^{0}\digamma_{\mathrm{map}}(\vartheta_{\mathrm{hst}})^2\,d\vartheta_{\mathrm{hst}}
 $$
 
-has derivative along a solution equal to $-2a\phi(0)^2 + 2b\phi(0)\phi(-r) + \mu\bigl(\phi(0)^2 - \phi(-r)^2\bigr)$ up to the boundary term of the integral, and choosing $\mu$ large enough makes the expression negative definite; hence the zero solution is asymptotically stable. The condition $|b|<a$ is sufficient but not necessary, the sharp condition being the spectral one.
+has derivative along a solution equal to $-2a\digamma_{\mathrm{map}}(0)^2 + 2b\digamma_{\mathrm{map}}(0)\digamma_{\mathrm{map}}(-r) + \mu\bigl(\digamma_{\mathrm{map}}(0)^2 - \digamma_{\mathrm{map}}(-r)^2\bigr)$ up to the boundary term of the integral, and choosing $\mu$ large enough makes the expression negative definite; hence the zero solution is asymptotically stable. The condition $|b|<a$ is sufficient but not necessary, the sharp condition being the spectral one.
 
 **Theorem (Razumikhin).** Suppose there is a continuous $V : \mathbb{R}\times X \to \mathbb{R}$ with $V(t,0)=0$, $V$ positive definite, and $\left(dV/dt\right)(t,y(t)) \le -w(\|y(t)\|)$ whenever $V(t+\vartheta_{\mathrm{hst}}, y(t+\vartheta_{\mathrm{hst}})) \le V(t,y(t))$ for all $\vartheta_{\mathrm{hst}} \in [-r,0]$, where $dV/dt$ is the derivative along the solution of the associated ordinary equation. Then the zero solution is asymptotically stable.
 
@@ -195,23 +195,23 @@ $$
 y'(t) = f(t, y_t), \qquad y_t(\vartheta_{\mathrm{hst}}) = y(t+\vartheta_{\mathrm{hst}}),\quad \vartheta_{\mathrm{hst}} \in [-r,0].
 $$
 
-The delay equation $y'(t) = g(t,y(t),y(t-r))$ is the case $f(t,\phi) = g(t,\phi(0),\phi(-r))$, and a **Volterra functional equation** has $f$ depending only on $\phi$ restricted to a subinterval $[-r_0,0]$ with $r_0 \le r$. The equation is **autonomous** if $f$ does not depend on $t$.
+The delay equation $y'(t) = g(t,y(t),y(t-r))$ is the case $f(t,\digamma_{\mathrm{map}}) = g(t,\digamma_{\mathrm{map}}(0),\digamma_{\mathrm{map}}(-r))$, and a **Volterra functional equation** has $f$ depending only on $\digamma_{\mathrm{map}}$ restricted to a subinterval $[-r_0,0]$ with $r_0 \le r$. The equation is **autonomous** if $f$ does not depend on $t$.
 
-**Definition.** $f$ is **Lipschitz in the second variable** with constant $L$ if $\|f(t,\phi) - f(t,\psi)\| \le L\|\phi-\psi\|_\infty$ for all $t,\phi,\psi$, and **locally Lipschitz near a point** if the estimate holds in a neighbourhood of it. $f$ is **completely continuous** if it maps bounded sets to relatively compact sets.
+**Definition.** $f$ is **Lipschitz in the second variable** with constant $L$ if $\|f(t,\digamma_{\mathrm{map}}) - f(t,Ξ_{\mathrm{wfn}})\| \le L\|\digamma_{\mathrm{map}}-Ξ_{\mathrm{wfn}}\|_\infty$ for all $t,\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}$, and **locally Lipschitz near a point** if the estimate holds in a neighbourhood of it. $f$ is **completely continuous** if it maps bounded sets to relatively compact sets.
 
-**Theorem (existence and uniqueness).** Let $f : \mathbb{R}\times C \to X$ be continuous and locally Lipschitz in its second variable. Then for every $(\sigma,\phi) \in \mathbb{R}\times C$ there is $T>0$ and a unique solution of $y'(t) = f(t,y_t)$ on $[\sigma-r,\sigma+T]$ with history $\phi$.
+**Theorem (existence and uniqueness).** Let $f : \mathbb{R}\times C \to X$ be continuous and locally Lipschitz in its second variable. Then for every $(\sigma,\digamma_{\mathrm{map}}) \in \mathbb{R}\times C$ there is $T>0$ and a unique solution of $y'(t) = f(t,y_t)$ on $[\sigma-r,\sigma+T]$ with history $\digamma_{\mathrm{map}}$.
 
 *Proof.* Write the equation as the integral equation
 
 $$
-y(t) = \phi(0) + \int_\sigma^t f(s,y_s)\,ds \qquad (t \ge \sigma),
+y(t) = \digamma_{\mathrm{map}}(0) + \int_\sigma^t f(s,y_s)\,ds \qquad (t \ge \sigma),
 $$
 
-on the space of continuous $y : [\sigma-r,\sigma+T] \to X$ extending $\phi$, with the supremum norm. The map $T(y)(t) = \phi(0) + \int_\sigma^t f(s,y_s)\,ds$ is a contraction on the closed ball of radius $b$ for $T$ small enough, exactly as in the proof of Picard–Lindelöf, provided the evaluation $y \mapsto y_s$ is continuous, which it is with $\|y_s - z_s\|_\infty \le \|y-z\|_\infty$; the contraction mapping principle gives a fixed point, and the fixed point is a solution by the fundamental theorem of calculus.
+on the space of continuous $y : [\sigma-r,\sigma+T] \to X$ extending $\digamma_{\mathrm{map}}$, with the supremum norm. The map $T(y)(t) = \digamma_{\mathrm{map}}(0) + \int_\sigma^t f(s,y_s)\,ds$ is a contraction on the closed ball of radius $b$ for $T$ small enough, exactly as in the proof of Picard–Lindelöf, provided the evaluation $y \mapsto y_s$ is continuous, which it is with $\|y_s - z_s\|_\infty \le \|y-z\|_\infty$; the contraction mapping principle gives a fixed point, and the fixed point is a solution by the fundamental theorem of calculus.
 
 The proof is the Picard argument in the Banach space of histories; the only new ingredient is that the right-hand side is a function of an element of $C$ rather than of a point of $X$, and that the Lipschitz hypothesis is taken in the norm of $C$.
 
-**Theorem (existence without Lipschitz).** If $f$ is continuous and completely continuous and maps bounded sets to bounded sets, then for every $(\sigma,\phi)$ there is at least one solution. Uniqueness may fail.
+**Theorem (existence without Lipschitz).** If $f$ is continuous and completely continuous and maps bounded sets to bounded sets, then for every $(\sigma,\digamma_{\mathrm{map}})$ there is at least one solution. Uniqueness may fail.
 
 *Proof.* Quoted as standard. The argument uses the theory of condensing maps and the Schauder fixed point theorem: the integral operator is compact on bounded sets of the space of continuous extensions, so approximate solutions for the Lipschitz problems with $f_n \to f$ have a convergent subsequence whose limit solves the equation.
 
@@ -223,9 +223,9 @@ $$
 y'(t) = L(t)\,y_t + b(t),
 $$
 
-where $L(t) \in B(C,X)$ is a bounded linear map for each $t$ and $b$ is continuous. With $L$ constant and represented by a measure, $L\phi = \int_{-r}^{0}d\eta(\vartheta_{\mathrm{hst}})\,\phi(\vartheta_{\mathrm{hst}})$ for a finite matrix-valued measure $\eta$ of bounded variation, the equation is the general linear retarded equation with constant coefficients.
+where $L(t) \in B(C,X)$ is a bounded linear map for each $t$ and $b$ is continuous. With $L$ constant and represented by a measure, $L\digamma_{\mathrm{map}} = \int_{-r}^{0}d\eta(\vartheta_{\mathrm{hst}})\,\digamma_{\mathrm{map}}(\vartheta_{\mathrm{hst}})$ for a finite matrix-valued measure $\eta$ of bounded variation, the equation is the general linear retarded equation with constant coefficients.
 
-**Theorem (characteristic equation).** For $L\phi = \int_{-r}^0 d\eta(\vartheta_{\mathrm{hst}})\phi(\vartheta_{\mathrm{hst}})$ the exponential $\exp(\lambda t)v$, $v \in \mathbb{C}^n$, solves the homogeneous equation if and only if
+**Theorem (characteristic equation).** For $L\digamma_{\mathrm{map}} = \int_{-r}^0 d\eta(\vartheta_{\mathrm{hst}})\digamma_{\mathrm{map}}(\vartheta_{\mathrm{hst}})$ the exponential $\exp(\lambda t)v$, $v \in \mathbb{C}^n$, solves the homogeneous equation if and only if
 
 $$
 \Delta(\lambda)v = 0, \qquad \Delta(\lambda) = \lambda I - \int_{-r}^{0}\exp(\lambda\vartheta_{\mathrm{hst}})\,d\eta(\vartheta_{\mathrm{hst}}) ,
@@ -243,11 +243,11 @@ and the **characteristic matrix** $\Delta$ has a determinant that is an entire f
 
 **Example (the neutral equation).** The equation $y'(t) = -y'(t-1)$ has solutions of the form $y(t) = \exp(\lambda t)$ with $\lambda = -\lambda \exp(-\lambda)$, so that $\exp(-\lambda) = -1$ and $\lambda = i(2k+1)\pi$; all solutions are oscillatory and none decays faster than polynomially, because the roots are purely imaginary and simple. A neutral equation may fail to smooth the solution, in contrast with a retarded one, and its characteristic function may have roots with $\operatorname{Re}\lambda \to \infty$.
 
-**Example (a state-dependent delay).** The equation $y'(t) = -y\bigl(t - r(y(t))\bigr)$ with $r \ge 0$ bounded and Lipschitz has a right-hand side $f(t,\phi) = -\phi(-r(\phi(0)))$ that is Lipschitz in $\phi$ when $r$ is, so the existence theorem applies; the history space must be enlarged to the Lipschitz functions when $r$ is itself state-dependent, because the evaluation at $-r(\phi(0))$ is not continuous in the supremum norm alone. This is the technical price of a state-dependent lag and it has no analogue in the constant-lag theory.
+**Example (a state-dependent delay).** The equation $y'(t) = -y\bigl(t - r(y(t))\bigr)$ with $r \ge 0$ bounded and Lipschitz has a right-hand side $f(t,\digamma_{\mathrm{map}}) = -\digamma_{\mathrm{map}}(-r(\digamma_{\mathrm{map}}(0)))$ that is Lipschitz in $\digamma_{\mathrm{map}}$ when $r$ is, so the existence theorem applies; the history space must be enlarged to the Lipschitz functions when $r$ is itself state-dependent, because the evaluation at $-r(\digamma_{\mathrm{map}}(0))$ is not continuous in the supremum norm alone. This is the technical price of a state-dependent lag and it has no analogue in the constant-lag theory.
 
 ## Summary
 
-A delay differential equation $y'(t) = f(t,y(t),y(t-r))$ is posed with a history $\phi \in C([-r,0],X)$ rather than with a point, and it is solved by the method of steps: on each interval of length $r$ the delayed terms are known from the preceding step and the equation is an ordinary initial-value problem, so the Picard–Lindelöf theorem applies step by step and gives a unique solution with a maximal interval of the usual kind. Smoothness of the solution requires compatibility conditions between the history and the equation at the initial time, and is lost at the first step when they fail.
+A delay differential equation $y'(t) = f(t,y(t),y(t-r))$ is posed with a history $\digamma_{\mathrm{map}} \in C([-r,0],X)$ rather than with a point, and it is solved by the method of steps: on each interval of length $r$ the delayed terms are known from the preceding step and the equation is an ordinary initial-value problem, so the Picard–Lindelöf theorem applies step by step and gives a unique solution with a maximal interval of the usual kind. Smoothness of the solution requires compatibility conditions between the history and the equation at the initial time, and is lost at the first step when they fail.
 
 A linear delay equation with constant coefficients has exponential solutions $\exp(\lambda t)$ where $\lambda$ solves the transcendental characteristic equation $\lambda = a + b\exp(-\lambda r)$, with countably many roots and no accumulation in the plane; the solution space is infinite-dimensional, since the datum is a function, and the solution operator $T(t)$ sending a history to its later history is a strongly continuous semigroup, compact for $t \ge r$, with the characteristic roots as its spectrum. The inhomogeneous equation is solved by a variation-of-constants formula with the fundamental solution, computable as an inverse Laplace transform. The zero solution is exponentially stable exactly when all characteristic roots lie in a fixed left half-plane, and for the pure delay this is the condition $ar < \pi/2$, so a lag can destabilise a stable system. For nonlinear equations stability is decided by a Lyapunov functional or by the Razumikhin condition on the history at the instants of maximal $V$.
 
@@ -261,14 +261,14 @@ A functional differential equation $y'(t) = f(t,y_t)$ has the same existence and
 | $r$ | Lag, a positive constant unless the lag is variable |
 | $y_t$ | History at $t$, $y_t(\vartheta_{\mathrm{hst}}) = y(t+\vartheta_{\mathrm{hst}})$, $\vartheta_{\mathrm{hst}} \in [-r,0]$ |
 | $C = C([-r,0],X)$ | History space with the supremum norm |
-| $\phi$ | Initial history |
-| $f(t,\phi)$ | Right-hand side of the functional equation |
+| $\digamma_{\mathrm{map}}$ | Initial history |
+| $f(t,\digamma_{\mathrm{map}})$ | Right-hand side of the functional equation |
 | $A$, $B$ | Coefficient operators of a linear delay equation |
 | $\lambda = a + b\exp(-\lambda r)$ | Characteristic equation of the scalar constant-coefficient delay equation |
 | $\Delta(\lambda)$ | Characteristic matrix of a general linear functional equation |
-| $T(t)$ | Solution operator on $C$, $T(t)\phi = y_t$ |
+| $T(t)$ | Solution operator on $C$, $T(t)\digamma_{\mathrm{map}} = y_t$ |
 | $K(t)$ | Fundamental solution of the inhomogeneous linear equation |
-| $V(t,\phi)$ | Lyapunov functional; $dV/dt$ its right derivative along solutions |
+| $V(t,\digamma_{\mathrm{map}})$ | Lyapunov functional; $dV/dt$ its right derivative along solutions |
 | $L$ | Bounded linear map $C \to X$ of a linear functional equation |
 | $\eta$ | Matrix-valued measure representing $L$ |
 | Razumikhin condition | A decrease condition imposed when $V$ is at its historical maximum |

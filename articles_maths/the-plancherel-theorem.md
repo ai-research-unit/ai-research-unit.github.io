@@ -171,7 +171,7 @@ For a connected semisimple Lie group $G$ with finite centre, the unitary dual, t
 
 **Proof.** This is Harish-Chandra's theorem; the wave-packet construction of the discrete series and the explicit Fourier inversion of the spherical functions are its two ingredients, and the proof is quoted from the literature.
 
-**The spherical transform.** For $K$ a maximal compact subgroup and $G/K$ the symmetric space, the $K$-invariant functions on $G$ transform by the **spherical transform** against the spherical functions $\varphi_\lambda$, and the spherical Plancherel measure is the part of $\mu_P$ supported on the spherical (class-one) representations. The spherical transform on $G/K$ is the exact analogue of the Fourier transform on $\mathbb{R}^n$ regarded as the symmetric space of the Euclidean motion group, and the Harish-Chandra $c$-function is the analogue of the normalising factor in the Euclidean inversion formula. This is the analytic core of the harmonic analysis of *Symmetric Spaces*.
+**The spherical transform.** For $K$ a maximal compact subgroup and $G/K$ the symmetric space, the $K$-invariant functions on $G$ transform by the **spherical transform** against the spherical functions $\digamma_{\mathrm{map},\lambda}$, and the spherical Plancherel measure is the part of $\mu_P$ supported on the spherical (class-one) representations. The spherical transform on $G/K$ is the exact analogue of the Fourier transform on $\mathbb{R}^n$ regarded as the symmetric space of the Euclidean motion group, and the Harish-Chandra $c$-function is the analogue of the normalising factor in the Euclidean inversion formula. This is the analytic core of the harmonic analysis of *Symmetric Spaces*.
 
 **Remark (the automorphic case).** The decomposition of $L^2(G/\Gamma)$ for a lattice $\Gamma$ into a discrete spectrum (cuspidal automorphic forms) and a continuous spectrum (Eisenstein series) is the Plancherel theorem for the homogeneous space rather than for the group; it is the spectral theory, and the trace formula is its quantitative form.
 
@@ -231,7 +231,7 @@ For a second countable unimodular group $G$ of type I the Plancherel theorem sta
 | $\tau(a) = \int\operatorname{Tr}(a(\pi))\,d\mu_P(\pi)$ | Trace on $L(G)$ |
 | $\delta_e$ | Delta mass at the identity; definite form |
 | $c(\lambda)$ | Harish-Chandra $c$-function |
-| $\varphi_\lambda$ | Spherical function; spherical transform |
+| $\digamma_{\mathrm{map},\lambda}$ | Spherical function; spherical transform |
 | $\deg(\pi)$ | Formal degree of a discrete series representation |
 | $\mathrm{G}^*/\operatorname{Ad}^*(G)$ | Coadjoint orbit space (nilpotent groups) |
 | $\mathbb{R}^2\cup\{\pi_\lambda\}$ | Dual of the Heisenberg group |

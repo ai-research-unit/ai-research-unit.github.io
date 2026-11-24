@@ -5,17 +5,17 @@
 
 The left multiplication of the algebra of random variables is the operator $L_af=af$, acting on the Hilbert space $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form of the category,
 $$
-\langle f,g\rangle=\varphi(fg^*)=\mathbb E\bigl[f\bar g\bigr].
+\langle f,g\rangle=\digamma_{\mathrm{map}}(fg^*)=\mathbb E\bigl[f\bar g\bigr].
 $$
 Its **adjoint** is the cleanest statement in the category, and it is a point of contrast with the whole of the arithmetic theory: here
 $$
 L_a^*=L_{a^*} ,
 $$
-the adjoint of the left multiplication is the left multiplication by the conjugate, **always** and without exception. In the algebra of arithmetic functions under the coefficient form the adjoint of $L_a$ is the transposed multiplication $\mathrm{Sd}_a$, and $L_a^*=L_{a^*}$ only for the scalar multiples of the identity; here the two coincide for every $a$. The reason is the invariance of the form, which is the traciality of the state in the commutative algebra: the expectation satisfies $\varphi(fg)=\varphi(gf)$ for all $f,g$, and the identity $\varphi(afg^*)=\varphi(f(\bar ag)^*)$ is then a direct computation. This article proves the formula, identifies the adjoint with the left multiplication by the conjugate, derives the self-adjointness, the unitarity and the spectrum, and states the comparison between the involution on the elements and the adjoint on the operators: the representation $\pi(a)=L_a$ is a $*$-representation, and the agreement is proved, never assumed.
+the adjoint of the left multiplication is the left multiplication by the conjugate, **always** and without exception. In the algebra of arithmetic functions under the coefficient form the adjoint of $L_a$ is the transposed multiplication $\mathrm{Sd}_a$, and $L_a^*=L_{a^*}$ only for the scalar multiples of the identity; here the two coincide for every $a$. The reason is the invariance of the form, which is the traciality of the state in the commutative algebra: the expectation satisfies $\digamma_{\mathrm{map}}(fg)=\digamma_{\mathrm{map}}(gf)$ for all $f,g$, and the identity $\digamma_{\mathrm{map}}(afg^*)=\digamma_{\mathrm{map}}(f(\bar ag)^*)$ is then a direct computation. This article proves the formula, identifies the adjoint with the left multiplication by the conjugate, derives the self-adjointness, the unitarity and the spectrum, and states the comparison between the involution on the elements and the adjoint on the operators: the representation $\pi(a)=L_a$ is a $*$-representation, and the agreement is proved, never assumed.
 
-The conventions are those of the category: the algebra of random variables $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the conjugation $a^*=\bar a$, the state $\varphi(a)=\mathbb E[a]$ and the form $\langle f,g\rangle=\varphi(fg^*)$ of *The Involution on the Algebra of Random Variables*, earlier in this category. The adjoint of a left multiplication on a general Hilbert algebra, where the same formula holds under the Hermitian hypothesis, is *The Adjoint of the Left Multiplication on a Hermitian Algebra*, written, and the general adjoint on an algebra is *The Adjoint of the Left Multiplication on an Algebra*, written; the arithmetic counterpart, with the transpose in place of the multiplication, is *The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions*, written. The signed left multiplication and its adjoint are *The Signed Left Multiplication on the Algebra of Random Variables*, earlier in this category, and *The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables*, later in this category; the refinement of the spectrum by a reversing symmetry is *Reversible Operators and Self-Adjointness*, later in this category; the operator-algebra involution is *The Involution on the Operator Algebra of a Process*, earlier in this category. No physics is invoked.
+The conventions are those of the category: the algebra of random variables $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the conjugation $a^*=\bar a$, the state $\digamma_{\mathrm{map}}(a)=\mathbb E[a]$ and the form $\langle f,g\rangle=\digamma_{\mathrm{map}}(fg^*)$ of *The Involution on the Algebra of Random Variables*, earlier in this category. The adjoint of a left multiplication on a general Hilbert algebra, where the same formula holds under the Hermitian hypothesis, is *The Adjoint of the Left Multiplication on a Hermitian Algebra*, written, and the general adjoint on an algebra is *The Adjoint of the Left Multiplication on an Algebra*, written; the arithmetic counterpart, with the transpose in place of the multiplication, is *The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions*, written. The signed left multiplication and its adjoint are *The Signed Left Multiplication on the Algebra of Random Variables*, earlier in this category, and *The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables*, later in this category; the refinement of the spectrum by a reversing symmetry is *Reversible Operators and Self-Adjointness*, later in this category; the operator-algebra involution is *The Involution on the Operator Algebra of a Process*, earlier in this category. No physics is invoked.
 
-Throughout, $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ is the algebra of random variables, $\mathcal{H}=L^2(\Omega,\mathcal F,\mathbb P)$ is the Hilbert space with the form $\langle f,g\rangle=\varphi(fg^*)$, and $L_a$ is the left multiplication on $\mathcal{H}$, $L_af=af$, a bounded operator with $\|L_a\|=\|a\|_\infty$. The right multiplication is $R_af=fa$, equal to $L_a$ because the algebra is commutative, and the involution on the elements is $a^*=\bar a$.
+Throughout, $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ is the algebra of random variables, $\mathcal{H}=L^2(\Omega,\mathcal F,\mathbb P)$ is the Hilbert space with the form $\langle f,g\rangle=\digamma_{\mathrm{map}}(fg^*)$, and $L_a$ is the left multiplication on $\mathcal{H}$, $L_af=af$, a bounded operator with $\|L_a\|=\|a\|_\infty$. The right multiplication is $R_af=fa$, equal to $L_a$ because the algebra is commutative, and the involution on the elements is $a^*=\bar a$.
 
 ## The Adjoint of the Left Multiplication
 
@@ -34,17 +34,17 @@ and the left multiplications therefore form a $*$-algebra of operators under the
 
 *Proof.* Compute
 $$
-\langle af,g\rangle=\varphi\bigl(afg^*\bigr)=\varphi\bigl(f\bar a g^*\bigr)=\varphi\bigl(f(\bar ag)^*\bigr)=\langle f,\bar ag\rangle ,
+\langle af,g\rangle=\digamma_{\mathrm{map}}\bigl(afg^*\bigr)=\digamma_{\mathrm{map}}\bigl(f\bar a g^*\bigr)=\digamma_{\mathrm{map}}\bigl(f(\bar ag)^*\bigr)=\langle f,\bar ag\rangle ,
 $$
 using the commutativity of the product in the step $afg^*=f\bar ag^*$ and the identity $(a^*g)^*=g^*a$. Comparing with the definition of the adjoint gives $L_a^*=L_{\bar a}=L_{a^*}$.
 
 **Theorem (the tracial invariance).** The agreement $L_a^*=L_{a^*}$ is equivalent to the invariance of the form under the multiplication,
 $$
-\varphi(afg^*)=\varphi(f\bar ag^*)\qquad\text{for all }f,g\in\mathcal{H},
+\digamma_{\mathrm{map}}(afg^*)=\digamma_{\mathrm{map}}(f\bar ag^*)\qquad\text{for all }f,g\in\mathcal{H},
 $$
-which holds because the state is tracial in the commutative algebra, $\varphi(uv)=\varphi(vu)$.
+which holds because the state is tracial in the commutative algebra, $\digamma_{\mathrm{map}}(uv)=\digamma_{\mathrm{map}}(vu)$.
 
-*Proof.* The identity of the two sides is the computation above read as the invariance; the traciality is the commutativity $\varphi(uv)=\mathbb E[uv]=\mathbb E[vu]=\varphi(vu)$, which holds for all bounded $u,v$. In the arithmetic case the augmentation is not tracial and the form is not translation-invariant, which is why the adjoint is the transpose there.
+*Proof.* The identity of the two sides is the computation above read as the invariance; the traciality is the commutativity $\digamma_{\mathrm{map}}(uv)=\mathbb E[uv]=\mathbb E[vu]=\digamma_{\mathrm{map}}(vu)$, which holds for all bounded $u,v$. In the arithmetic case the augmentation is not tracial and the form is not translation-invariant, which is why the adjoint is the transpose there.
 
 ### The comparison with the involution
 
@@ -100,7 +100,7 @@ the functional calculus of the multiplication, and for a real $a$ the operator $
 
 **Example (a non-invertible multiplication).** For $a$ vanishing on a set of positive measure the multiplication $L_a$ is injective but not invertible, its image is the proper ideal $a\mathcal{H}$, and it is neither an isometry nor unitary; the adjoint $L_{a^*}$ vanishes on the same set, and the range and the kernel are related by the orthogonality of the multiplication.
 
-**Example (the comparison with the transpose).** In the algebra of arithmetic functions with $\varphi(f)=f(1)$ and the coefficient form, the left multiplication by $a$ has the adjoint $\mathrm{Sd}_a$ with $(\mathrm{Sd}_ag)(k)=\sum_{m\ge1}\overline{a(m)}g(mk)$; for $a\ne\gamma\varepsilon$ the operator $\mathrm{Sd}_a$ is not a left multiplication, so $L_a^*\ne L_{a^*}$, and the representation is not a $*$-representation. The example shows that the agreement here is a property of the form and not of the multiplication alone.
+**Example (the comparison with the transpose).** In the algebra of arithmetic functions with $\digamma_{\mathrm{map}}(f)=f(1)$ and the coefficient form, the left multiplication by $a$ has the adjoint $\mathrm{Sd}_a$ with $(\mathrm{Sd}_ag)(k)=\sum_{m\ge1}\overline{a(m)}g(mk)$; for $a\ne\gamma\varepsilon$ the operator $\mathrm{Sd}_a$ is not a left multiplication, so $L_a^*\ne L_{a^*}$, and the representation is not a $*$-representation. The example shows that the agreement here is a property of the form and not of the multiplication alone.
 
 ## Failure of the Degenerate Cases
 
@@ -108,7 +108,7 @@ The adjoint of the left multiplication degenerates in four configurations. First
 
 ## Summary
 
-The adjoint of the left multiplication of the algebra of random variables with respect to the form $\langle f,g\rangle=\varphi(fg^*)$ is the left multiplication by the conjugate,
+The adjoint of the left multiplication of the algebra of random variables with respect to the form $\langle f,g\rangle=\digamma_{\mathrm{map}}(fg^*)$ is the left multiplication by the conjugate,
 $$
 L_a^*=L_{a^*},
 $$
@@ -119,10 +119,10 @@ for every $a$, because the state is tracial in the commutative algebra and the f
 | Symbol | Meaning |
 |---|---|
 | $L_af=af$ | the left multiplication |
-| $\langle f,g\rangle=\varphi(fg^*)$ | the form of the category |
+| $\langle f,g\rangle=\digamma_{\mathrm{map}}(fg^*)$ | the form of the category |
 | $L_a^*=L_{a^*}=L_{\bar a}$ | the adjoint, a left multiplication |
 | $\pi(a)=L_a$ | the $*$-representation by the multiplications |
-| $\varphi(uv)=\varphi(vu)$ | the traciality of the state |
+| $\digamma_{\mathrm{map}}(uv)=\digamma_{\mathrm{map}}(vu)$ | the traciality of the state |
 | $L_a$ self-adjoint $\iff a=a^*$ | self-adjointness |
 | $L_a$ unitary $\iff|a|=1$ | unitarity and isometry |
 | $\operatorname{spec}(L_a)=\operatorname{ess\,range}(a)$ | the spectrum |

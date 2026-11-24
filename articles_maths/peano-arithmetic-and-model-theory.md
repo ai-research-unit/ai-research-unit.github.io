@@ -26,10 +26,10 @@ Throughout, the language of arithmetic is $\mathcal{L}_A = \{0, S, +, \cdot, <\}
 | (PA7) | $\forall n \forall m\, (n \cdot S m = n \cdot m + n)$ |
 | (PA8) | $\forall n \forall m\, (n < m \leftrightarrow \exists k\, (n + S k = m))$ |
 
-together with the **induction schema**: for every formula $\varphi(n, \bar m)$ of $\mathcal{L}_A$, the sentence
+together with the **induction schema**: for every formula $\digamma_{\mathrm{fml}}(n, \bar m)$ of $\mathcal{L}_A$, the sentence
 
 $$
-\forall \bar m\, \Bigl( \varphi(0, \bar m) \wedge \forall n\, \bigl(\varphi(n, \bar m) \to \varphi(S n, \bar m)\bigr) \to \forall n\, \varphi(n, \bar m) \Bigr).
+\forall \bar m\, \Bigl( \digamma_{\mathrm{fml}}(0, \bar m) \wedge \forall n\, \bigl(\digamma_{\mathrm{fml}}(n, \bar m) \to \digamma_{\mathrm{fml}}(S n, \bar m)\bigr) \to \forall n\, \digamma_{\mathrm{fml}}(n, \bar m) \Bigr).
 $$
 
 Axioms (PA1)–(PA3) are the successor axioms, (PA4)–(PA7) define addition and multiplication by recursion, and (PA8) defines the order. The induction schema is a *schema*: it is one axiom for each formula, and it is this schema, rather than the single second-order induction axiom of *The Natural Numbers*, that makes PA a first-order theory.
@@ -57,7 +57,7 @@ and the relation $<$ is a discrete linear order with least element $0$ in which 
 
 **Proof.** The division algorithm is proved by induction on the dividend, using (PA8) to compare remainders. The existence of factorisations is proved by strong induction, which is derivable from the induction schema, and uniqueness uses the formalised Euclidean algorithm; the details are standard and are in the references.
 
-**Theorem (arithmetical hierarchy).** The formulas of $\mathcal{L}_A$ are stratified by the **arithmetical hierarchy** $\Sigma_n$, $\Pi_n$: $\Sigma_0 = \Pi_0$ is the class of formulas with only bounded quantifiers, $\Sigma_{n+1}$ is the class of formulas $\exists \bar n\, \psi$ with $\psi \in \Pi_n$, and $\Pi_{n+1}$ is the class of formulas $\forall \bar n\, \psi$ with $\psi \in \Sigma_n$. PA is **$\Sigma_1$-complete**: every true $\Sigma_1$ sentence is a theorem of PA, and every true $\Sigma_1$ sentence is provable already in Q.
+**Theorem (arithmetical hierarchy).** The formulas of $\mathcal{L}_A$ are stratified by the **arithmetical hierarchy** $\Sigma_n$, $\Pi_n$: $\Sigma_0 = \Pi_0$ is the class of formulas with only bounded quantifiers, $\Sigma_{n+1}$ is the class of formulas $\exists \bar n\, \digamma_{\mathrm{fml}}$ with $\digamma_{\mathrm{fml}} \in \Pi_n$, and $\Pi_{n+1}$ is the class of formulas $\forall \bar n\, \digamma_{\mathrm{fml}}$ with $\digamma_{\mathrm{fml}} \in \Sigma_n$. PA is **$\Sigma_1$-complete**: every true $\Sigma_1$ sentence is a theorem of PA, and every true $\Sigma_1$ sentence is provable already in Q.
 
 **Proof.** The $\Sigma_1$-completeness is proved by formalising the computation of the witnesses inside PA, using the fact that the proof predicate is primitive recursive and that Q proves the defining equations of the primitive recursive functions. The argument is in *Proof Theory and Type Theory*.
 
@@ -90,15 +90,15 @@ where $D$ is a dense linear order without endpoints.
 
 **Proof.** For nonstandard $a$, the map $n \mapsto a + n$ for $n \in \mathbb{Z}$ is injective and order-preserving by cancellation in $\mathcal{M}$, and the set $B_a = \{a + n : n \in \mathbb{Z}\}$ is convex in $M$; so each block has order type $\mathbb{Z}$. The blocks are ordered by $B_a < B_b$ if $a < b$, and this order is dense: if $a < b$ lie in distinct blocks, then $b - a$ is greater than every standard number, and $c = \lfloor (a+b)/2 \rfloor$, computed in $\mathcal{M}$, is nonstandard and satisfies $a < c < b$, so $B_a < B_c < B_b$. There is no least block above the standard part, because for nonstandard $a$ the element $\lfloor a/2 \rfloor$ is nonstandard and lies in a strictly lower block, and no greatest block, because $2a$ lies in a strictly higher one. Hence the nonstandard part is a densely ordered family of $\mathbb{Z}$-blocks with no endpoints.
 
-**Theorem (overspill).** Let $\mathcal{M}$ be a nonstandard model of PA and let $\varphi(n)$ be a formula with parameters in $M$ such that $\mathcal{M} \models \varphi(n)$ for every standard $n$. Then there is a nonstandard $b \in M$ with $\mathcal{M} \models \varphi(b)$.
+**Theorem (overspill).** Let $\mathcal{M}$ be a nonstandard model of PA and let $\digamma_{\mathrm{fml}}(n)$ be a formula with parameters in $M$ such that $\mathcal{M} \models \digamma_{\mathrm{fml}}(n)$ for every standard $n$. Then there is a nonstandard $b \in M$ with $\mathcal{M} \models \digamma_{\mathrm{fml}}(b)$.
 
-**Proof.** Let $A = \{n \in M : \mathcal{M} \models \varphi(n)\}$. Then $A$ contains the standard part and is closed under successor there, because the successor of a standard element is standard and satisfies $\varphi$. If $A$ contained no nonstandard element, then $A$ would be exactly the standard part, and the formula $\varphi$ would satisfy $\mathcal{M} \models \varphi(0) \wedge \forall n(\varphi(n) \to \varphi(Sn))$, since every element of $A$ is standard and has its successor in $A$. The induction schema in $\mathcal{M}$ would then give $\mathcal{M} \models \forall n\, \varphi(n)$, contradicting that $\mathcal{M}$ has nonstandard elements outside $A$. Hence $A$ contains a nonstandard element.
+**Proof.** Let $A = \{n \in M : \mathcal{M} \models \digamma_{\mathrm{fml}}(n)\}$. Then $A$ contains the standard part and is closed under successor there, because the successor of a standard element is standard and satisfies $\digamma_{\mathrm{fml}}$. If $A$ contained no nonstandard element, then $A$ would be exactly the standard part, and the formula $\digamma_{\mathrm{fml}}$ would satisfy $\mathcal{M} \models \digamma_{\mathrm{fml}}(0) \wedge \forall n(\digamma_{\mathrm{fml}}(n) \to \digamma_{\mathrm{fml}}(Sn))$, since every element of $A$ is standard and has its successor in $A$. The induction schema in $\mathcal{M}$ would then give $\mathcal{M} \models \forall n\, \digamma_{\mathrm{fml}}(n)$, contradicting that $\mathcal{M}$ has nonstandard elements outside $A$. Hence $A$ contains a nonstandard element.
 
 **Corollary.** The standard part is not definable in any nonstandard model, and there is no formula $\sigma(n)$ of $\mathcal{L}_A$ such that $\mathcal{M} \models \sigma(a)$ for exactly the standard $a$. If a definable subset of $M$ is bounded above by a standard element, then it is finite and contained in the standard part, since no element below a standard element is nonstandard.
 
-**Corollary (underspill).** Let $\varphi(n)$ hold for all sufficiently small nonstandard $n$ in the sense that there is a nonstandard $b$ with $\mathcal{M} \models \forall n < b\, \varphi(n)$. Then $\varphi(n)$ holds for some standard $n$.
+**Corollary (underspill).** Let $\digamma_{\mathrm{fml}}(n)$ hold for all sufficiently small nonstandard $n$ in the sense that there is a nonstandard $b$ with $\mathcal{M} \models \forall n < b\, \digamma_{\mathrm{fml}}(n)$. Then $\digamma_{\mathrm{fml}}(n)$ holds for some standard $n$.
 
-**Proof.** Suppose $\varphi(n)$ fails for every standard $n$. The formula $n < b \wedge \neg\varphi(n)$ then holds at every standard $n$, because $b$ is nonstandard and $\neg\varphi(n)$ holds by the supposition; overspill gives a nonstandard $c$ satisfying it, so $c < b$ and $\neg\varphi(c)$, contradicting $\mathcal{M} \models \forall n < b\, \varphi(n)$.
+**Proof.** Suppose $\digamma_{\mathrm{fml}}(n)$ fails for every standard $n$. The formula $n < b \wedge \neg\digamma_{\mathrm{fml}}(n)$ then holds at every standard $n$, because $b$ is nonstandard and $\neg\digamma_{\mathrm{fml}}(n)$ holds by the supposition; overspill gives a nonstandard $c$ satisfying it, so $c < b$ and $\neg\digamma_{\mathrm{fml}}(c)$, contradicting $\mathcal{M} \models \forall n < b\, \digamma_{\mathrm{fml}}(n)$.
 
 ## Incompleteness and the Arithmetic of Provability
 

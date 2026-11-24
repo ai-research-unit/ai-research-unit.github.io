@@ -51,7 +51,7 @@ with $\operatorname{ad}(\mathrm{K})$ a Lie subalgebra of $\mathfrak{gl}(\mathrm{
 
 ## Self-Duality through the Killing Form
 
-**Definition.** A representation $V$ of $\mathrm{G}$ is **self-dual** when it carries a nondegenerate bilinear form $\phi$ invariant under the action, $\phi(x\cdot u,v)+\phi(u,x\cdot v)=0$; the form is then unique up to a scalar when $V$ is irreducible, and the representation is **orthogonal** when $\phi$ is symmetric and **symplectic** when $\phi$ is antisymmetric.
+**Definition.** A representation $V$ of $\mathrm{G}$ is **self-dual** when it carries a nondegenerate bilinear form $\digamma_{\mathrm{map}}$ invariant under the action, $\digamma_{\mathrm{map}}(x\cdot u,v)+\digamma_{\mathrm{map}}(u,x\cdot v)=0$; the form is then unique up to a scalar when $V$ is irreducible, and the representation is **orthogonal** when $\digamma_{\mathrm{map}}$ is symmetric and **symplectic** when $\digamma_{\mathrm{map}}$ is antisymmetric.
 
 **Theorem.** The adjoint representation is self-dual, with the invariant form the Killing form:
 
@@ -69,9 +69,9 @@ $$
 
 ## The Two Types and the Self-Dual Representations
 
-**Theorem.** Let $V$ be an irreducible self-dual representation with invariant form $\phi$. Then either $\phi$ is symmetric or $\phi$ is antisymmetric, and the two cases are exclusive; in the first case $V$ is orthogonal, in the second symplectic. The symmetric resp. antisymmetric form on $V\oplus V$ defined by $\phi$ pairs the two summands in the respective ways, and an irreducible representation that is not self-dual occurs in pairs $V,V^{*}$ with no invariant form on $V$.
+**Theorem.** Let $V$ be an irreducible self-dual representation with invariant form $\digamma_{\mathrm{map}}$. Then either $\digamma_{\mathrm{map}}$ is symmetric or $\digamma_{\mathrm{map}}$ is antisymmetric, and the two cases are exclusive; in the first case $V$ is orthogonal, in the second symplectic. The symmetric resp. antisymmetric form on $V\oplus V$ defined by $\digamma_{\mathrm{map}}$ pairs the two summands in the respective ways, and an irreducible representation that is not self-dual occurs in pairs $V,V^{*}$ with no invariant form on $V$.
 
-**Proof.** The form $\phi$ is determined up to a scalar by irreducibility (Schur's lemma applied to the isomorphism $V\to V^{*}$); a scalar multiple of a symmetric form is symmetric and of an antisymmetric form antisymmetric, so the type is well defined; non-self-dual irreducible representations have $V\not\cong V^{*}$ and admit no invariant form.
+**Proof.** The form $\digamma_{\mathrm{map}}$ is determined up to a scalar by irreducibility (Schur's lemma applied to the isomorphism $V\to V^{*}$); a scalar multiple of a symmetric form is symmetric and of an antisymmetric form antisymmetric, so the type is well defined; non-self-dual irreducible representations have $V\not\cong V^{*}$ and admit no invariant form.
 
 **Corollary.** The adjoint representation is orthogonal, since its invariant form the Killing form is symmetric; the fundamental representation of $\mathrm{sl}(2,K)$ is symplectic, its invariant form being the determinant pairing $\det(u,v)$; the two types occur among the self-dual representations of a semisimple algebra, and the type of an irreducible is its **Frobenius–Schur type**, named and computed by the analysis of a later Part.
 
@@ -103,7 +103,7 @@ The **adjoint representation** $\operatorname{ad}$ of a Lie algebra is **equivar
 | $B$ | the Killing form |
 | $B_\mathrm{J}(x,y)=-B(x,\mathrm{J} y)$ | the twisted form |
 | $\mathrm{K},\mathrm{P}$ | the $\pm1$-eigenspaces of $\mathrm{J}$ |
-| $\phi$ | an invariant form on a self-dual representation |
+| $\digamma_{\mathrm{map}}$ | an invariant form on a self-dual representation |
 
 ## Further Reading
 

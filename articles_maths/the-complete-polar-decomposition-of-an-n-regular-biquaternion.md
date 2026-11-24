@@ -1649,7 +1649,7 @@ The spectral reading is degenerate in the matrix picture: the matrix has no eige
 The word also acts. On the module $S=\mathbb{C}^2$ left multiplication is
 
 $$
-\psi\longmapsto\mathsf M(\tilde Q)\,\psi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\mathsf M(\tilde U)\,\psi ,
+Ξ_{\mathrm{wfn}}\longmapsto\mathsf M(\tilde Q)\,Ξ_{\mathrm{wfn}}=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\mathsf M(\tilde U)\,Ξ_{\mathrm{wfn}} ,
 $$
 
 with $\mathsf M(\tilde U)\in SL_2(\mathbb{C})$. The scalar $\varrho\,e^{i\theta_{\mathrm{pha}}}$ needs no module of its own: by Schur's lemma the centre acts on a simple module by a scalar, so the scale and the phase multiply the module instead of enlarging it. They produce a one-dimensional representation of the scaling group,

@@ -73,16 +73,16 @@ $$
 **Definition (the transfer operator and its adjoint).** Let $p_1,\dots,p_N > 0$ with $\sum_i p_i = 1$. The **transfer operator** acts on the bounded continuous functions by
 
 $$
-(T\varphi)(x) = \sum_{i=1}^N p_i\, \varphi\bigl(f_i(x)\bigr) ,
+(T\digamma_{\mathrm{map}})(x) = \sum_{i=1}^N p_i\, \digamma_{\mathrm{map}}\bigl(f_i(x)\bigr) ,
 $$
 
 and its **adjoint** acts on the finite Borel measures by
 
 $$
-L\mu = \sum_{i=1}^N p_i\,(f_i)_\# \mu , \qquad \int_X \varphi\, d(L\mu) = \int_X (T\varphi)\, d\mu .
+L\mu = \sum_{i=1}^N p_i\,(f_i)_\# \mu , \qquad \int_X \digamma_{\mathrm{map}}\, d(L\mu) = \int_X (T\digamma_{\mathrm{map}})\, d\mu .
 $$
 
-The last identity is the defining adjoint relation; it holds for every bounded continuous $\varphi$ and every finite measure $\mu$, and it says that $L$ is the transpose of $T$ under the duality pairing $\langle \varphi, \mu\rangle = \int \varphi\, d\mu$.
+The last identity is the defining adjoint relation; it holds for every bounded continuous $\digamma_{\mathrm{map}}$ and every finite measure $\mu$, and it says that $L$ is the transpose of $T$ under the duality pairing $\langle \digamma_{\mathrm{map}}, \mu\rangle = \int \digamma_{\mathrm{map}}\, d\mu$.
 
 **Theorem (the properties of the pair).** **(a)** $T$ is a positive linear contraction of the space of the bounded continuous functions with the sup norm, of norm one, and it preserves the constants. **(b)** $L$ maps the probability measures into themselves, is continuous for the weak topology, and is a contraction of ratio $r$ for the **Wasserstein** metric $W_1$. **(c)** $L$ has a unique fixed point $\mu$ in the probability measures,
 
@@ -127,7 +127,7 @@ the ratio of the entropy of the weights to the Lyapunov exponent of the system, 
 
 ## Summary
 
-The Hutchinson operator of an iterated function system is the map $F(A) = \bigcup_i f_i(A)$ on the nonempty compact subsets with the Hausdorff metric; it is a contraction of ratio $r = \max r_i$ on a complete space, and its unique fixed point is the attractor, the fixed-point equation $K = \bigcup_i f_i(K)$ being the self-similarity. The operator is nonlinear but union-additive and monotone, and the collage theorem measures the distance to the attractor by the invariance defect. The adjoint of the transfer operator $T\varphi = \sum p_i \varphi\circ f_i$ is the pushforward $L\mu = \sum p_i (f_i)_\#\mu$, a contraction of ratio $r$ in the Wasserstein metric whose unique fixed point is the self-similar measure, supported on the attractor; the attractor and the measure are the two faces of the same operator system, linked by the support map and by the address map $\mu = \Pi_\#\mathbf p$. The dimension of the self-similar measure is the ratio of the entropy to the Lyapunov exponent, equal to the similarity dimension for the natural weights. The iteration systems, the attractor and the similarity dimension are those of *Fractal Geometry*, the self-similar measure and the spectrum are those of *Fractal Analysis*, the Hausdorff and Wasserstein metrics are those of *Metric Geometry* and *Measure Theory and Integration*, and the symmetric case is treated in the two articles on the involution. No physics is invoked.
+The Hutchinson operator of an iterated function system is the map $F(A) = \bigcup_i f_i(A)$ on the nonempty compact subsets with the Hausdorff metric; it is a contraction of ratio $r = \max r_i$ on a complete space, and its unique fixed point is the attractor, the fixed-point equation $K = \bigcup_i f_i(K)$ being the self-similarity. The operator is nonlinear but union-additive and monotone, and the collage theorem measures the distance to the attractor by the invariance defect. The adjoint of the transfer operator $T\digamma_{\mathrm{map}} = \sum p_i \digamma_{\mathrm{map}}\circ f_i$ is the pushforward $L\mu = \sum p_i (f_i)_\#\mu$, a contraction of ratio $r$ in the Wasserstein metric whose unique fixed point is the self-similar measure, supported on the attractor; the attractor and the measure are the two faces of the same operator system, linked by the support map and by the address map $\mu = \Pi_\#\mathbf p$. The dimension of the self-similar measure is the ratio of the entropy to the Lyapunov exponent, equal to the similarity dimension for the natural weights. The iteration systems, the attractor and the similarity dimension are those of *Fractal Geometry*, the self-similar measure and the spectrum are those of *Fractal Analysis*, the Hausdorff and Wasserstein metrics are those of *Metric Geometry* and *Measure Theory and Integration*, and the symmetric case is treated in the two articles on the involution. No physics is invoked.
 
 ## Summary of Notation
 

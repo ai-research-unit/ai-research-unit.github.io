@@ -58,7 +58,7 @@ Conversely, if $R[\alpha] = R + R\alpha + \cdots + R\alpha^m$, then $\alpha^{m+1
 
 **Example.** The domain $R = k[t^2, t^3] \subseteq k[t]$ is not integrally closed: the element $t$ of the fraction field of $R$ is integral over $R$, since it satisfies $x^2 - t^2 = 0$ with $t^2 \in R$, but $t \notin R$. The integral closure of $R$ in $k(t)$ is $k[t]$.
 
-**Example.** The ring $\mathbb{Z}[\sqrt{5}]$ is not integrally closed: the golden ratio $\varphi = (1+\sqrt5)/2$ lies in the fraction field $\mathbb{Q}(\sqrt5)$, is integral over $\mathbb{Z}$ as a root of $x^2 - x - 1$, and does not lie in $\mathbb{Z}[\sqrt5]$. Its integral closure is $\mathbb{Z}[(1+\sqrt5)/2]$.
+**Example.** The ring $\mathbb{Z}[\sqrt{5}]$ is not integrally closed: the golden ratio $\digamma_{\mathrm{map}} = (1+\sqrt5)/2$ lies in the fraction field $\mathbb{Q}(\sqrt5)$, is integral over $\mathbb{Z}$ as a root of $x^2 - x - 1$, and does not lie in $\mathbb{Z}[\sqrt5]$. Its integral closure is $\mathbb{Z}[(1+\sqrt5)/2]$.
 
 **Remark.** Integral is strictly stronger than algebraic. If $R = \mathbb{Z}$ and $S = \mathbb{Q}$, every element of $S$ is algebraic over the fraction field $\mathbb{Q}$ of $R$, but only the elements of $\mathbb{Z}$ are integral over $R$. The two notions coincide when the base is a field: for a field $K$, an element of an extension is integral over $K$ exactly when it is algebraic over $K$, since a monic polynomial over a field can be divided by its leading coefficient for free.
 

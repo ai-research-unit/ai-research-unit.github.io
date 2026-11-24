@@ -30,12 +30,12 @@ Let $E$ and $F$ be ordered vector spaces, with positive cones $E_+$ and $F_+$, a
 **Theorem (the extreme rays between function spaces are the weighted compositions).** Let $E = C(X)$ and $F = C(Y)$ for compact Hausdorff $X$ and $Y$. A positive operator $T : C(X)\to C(Y)$ generates an extreme ray of $L_+(C(X),C(Y))$ if and only if
 
 $$
-\boxed{\;(Tf)(y) = h(y)\,f\bigl(\phi(y)\bigr)\;}
+\boxed{\;(Tf)(y) = h(y)\,f\bigl(\digamma_{\mathrm{map}}(y)\bigr)\;}
 $$
 
-for a continuous $\phi : Y\to X$ and a positive $h\in C(Y)$, with the caveat that the representation is unique only up to the points at which $h$ vanishes.
+for a continuous $\digamma_{\mathrm{map}} : Y\to X$ and a positive $h\in C(Y)$, with the caveat that the representation is unique only up to the points at which $h$ vanishes.
 
-*Proof sketch.* If $T$ is of the stated form and $T$ is the sum of two positive operators, then on the dense set where $h>0$ each summand is forced to be a multiple of $T$ at each point, by the lattice characterisation of the extreme positive maps of $C(X)$ into a Riesz space, giving the extremality. Conversely an extreme positive operator preserves norm-one extreme points of $C(X)$, i.e. assigns to each point evaluation of $C(X)$ a scalar multiple of a point evaluation of $C(Y)$; that correspondence defines $\phi$ and $h$. The argument rests on the fact that a positive operator carries the extreme rays of the unit ball of the domain into extreme rays of the unit ball of the target unless a strict loss occurs, and a strict loss splits the operator.
+*Proof sketch.* If $T$ is of the stated form and $T$ is the sum of two positive operators, then on the dense set where $h>0$ each summand is forced to be a multiple of $T$ at each point, by the lattice characterisation of the extreme positive maps of $C(X)$ into a Riesz space, giving the extremality. Conversely an extreme positive operator preserves norm-one extreme points of $C(X)$, i.e. assigns to each point evaluation of $C(X)$ a scalar multiple of a point evaluation of $C(Y)$; that correspondence defines $\digamma_{\mathrm{map}}$ and $h$. The argument rests on the fact that a positive operator carries the extreme rays of the unit ball of the domain into extreme rays of the unit ball of the target unless a strict loss occurs, and a strict loss splits the operator.
 
 **Remark (the matrix case).** For $E = F = H_n(\mathbb{C})$ with the Loewner order the positive maps form a cone whose extreme rays are the maps $X\mapsto f(X)\,vv^{*}$ for a **pure state** $f$ of $H_n(\mathbb{C})$ and a rank-one positive $vv^{*}$; the description is the Størmer theorem and it is quoted, since the proof requires the representation theory of *Operator Algebras*.
 
@@ -73,7 +73,7 @@ For $E = F = H_n(\mathbb{C})$ the positive maps form a cone whose extreme rays a
 
 ## Summary
 
-The positive operators $L_+(E,F)$ form a convex cone, pointed when $E$ is directed, closed for pointwise convergence when $F_+$ is closed, and generating exactly when every operator is regular; it is directed when the target admits finite suprema of positive elements. Its **extreme rays** are known in three cases: for the dual cone of an order-unit space they are the **pure states**, through the correspondence between extreme points of a base and extreme rays of a cone; for $C(X)\to C(Y)$ they are the **weighted composition operators** $f\mapsto h\cdot(f\circ\phi)$; and for the matrix algebra they are described by the **Størmer theorem**, all of them quoted from their standard treatments. The cone defines the operator order on $L(E,F)$, and an **order unit** of the cone is a **strictly positive rank-one operator** $f\otimes v$ formed from a strictly positive functional and an order unit of the target: every bounded operator is then between multiples of it, and the identity is an order unit of the two-sided ideal it generates. The positivity is *Positive Operators on an Ordered Space*, the extreme-ray theory is *Cones, Extremal Rays and the Choquet Theory*, the order-unit norm is *Ordered Vector Spaces and the Order Unit*, and the completely positive subcone is *Operator Algebras*.
+The positive operators $L_+(E,F)$ form a convex cone, pointed when $E$ is directed, closed for pointwise convergence when $F_+$ is closed, and generating exactly when every operator is regular; it is directed when the target admits finite suprema of positive elements. Its **extreme rays** are known in three cases: for the dual cone of an order-unit space they are the **pure states**, through the correspondence between extreme points of a base and extreme rays of a cone; for $C(X)\to C(Y)$ they are the **weighted composition operators** $f\mapsto h\cdot(f\circ\digamma_{\mathrm{map}})$; and for the matrix algebra they are described by the **Størmer theorem**, all of them quoted from their standard treatments. The cone defines the operator order on $L(E,F)$, and an **order unit** of the cone is a **strictly positive rank-one operator** $f\otimes v$ formed from a strictly positive functional and an order unit of the target: every bounded operator is then between multiples of it, and the identity is an order unit of the two-sided ideal it generates. The positivity is *Positive Operators on an Ordered Space*, the extreme-ray theory is *Cones, Extremal Rays and the Choquet Theory*, the order-unit norm is *Ordered Vector Spaces and the Order Unit*, and the completely positive subcone is *Operator Algebras*.
 
 ## Summary of Notation
 
@@ -84,7 +84,7 @@ The positive operators $L_+(E,F)$ form a convex cone, pointed when $E$ is direct
 | Pure state | Extreme point of the state space, generating an extreme ray of $E^*_+$ |
 | $f\otimes v$ | Rank-one operator $x\mapsto f(x)v$ |
 | $f\otimes v$ strictly positive | Order unit of the cone of bounded positive operators |
-| $h\cdot(f\circ\phi)$ | Weighted composition operator, an extreme ray for $C(X)\to C(Y)$ |
+| $h\cdot(f\circ\digamma_{\mathrm{map}})$ | Weighted composition operator, an extreme ray for $C(X)\to C(Y)$ |
 | $-\lambda T\leq S\leq\lambda T$ | Domination by the order unit |
 
 ## Further Reading

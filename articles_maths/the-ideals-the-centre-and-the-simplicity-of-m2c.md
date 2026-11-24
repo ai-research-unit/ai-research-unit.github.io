@@ -104,7 +104,7 @@ of complex dimension $2$.
 
 **Theorem (Skolem–Noether).** Every $\mathbb{C}$-algebra automorphism of $M_2(\mathbb{C})$ is inner, of the form $A\mapsto gAg^{-1}$ with $g\in GL_2(\mathbb{C})$ unique up to a scalar.
 
-**Proof.** Let $V=\mathbb{C}^{2}$ and let $V_{\phi}$ be the twisted module, on which $A$ acts as $\phi(A)$. It is simple of dimension $2$, so an isomorphism $g:V_{\phi}\to V$ exists, and it satisfies $g\phi(A)=Ag$, that is $\phi(A)=g^{-1}Ag$. Two choices of $g$ differ by an element of the centre.
+**Proof.** Let $V=\mathbb{C}^{2}$ and let $V_{\digamma_{\mathrm{map}}}$ be the twisted module, on which $A$ acts as $\digamma_{\mathrm{map}}(A)$. It is simple of dimension $2$, so an isomorphism $g:V_{\digamma_{\mathrm{map}}}\to V$ exists, and it satisfies $g\digamma_{\mathrm{map}}(A)=Ag$, that is $\digamma_{\mathrm{map}}(A)=g^{-1}Ag$. Two choices of $g$ differ by an element of the centre.
 
 **Corollary.** $\operatorname{Aut}(M_2(\mathbb{C}))\cong PGL_2(\mathbb{C})$, of complex dimension $3$.
 

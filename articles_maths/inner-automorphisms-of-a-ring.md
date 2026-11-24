@@ -77,7 +77,7 @@ $$
 \boxed{\;A^\times / Z(A)^\times \;\cong\; \operatorname{Inn}(A), \qquad \operatorname{Inn}(A) \trianglelefteq \operatorname{Aut}(A)\;}.
 $$
 
-**Proof.** The homomorphism and the kernel are the two propositions above; the first isomorphism theorem gives the isomorphism. For normality, if $\varphi \in \operatorname{Aut}(A)$ then $\varphi \operatorname{conj}_u \varphi^{-1} = \operatorname{conj}_{\varphi(u)}$, because $\varphi(uxu^{-1}) = \varphi(u)\varphi(x)\varphi(u)^{-1}$.
+**Proof.** The homomorphism and the kernel are the two propositions above; the first isomorphism theorem gives the isomorphism. For normality, if $\digamma_{\mathrm{map}} \in \operatorname{Aut}(A)$ then $\digamma_{\mathrm{map}} \operatorname{conj}_u \digamma_{\mathrm{map}}^{-1} = \operatorname{conj}_{\digamma_{\mathrm{map}}(u)}$, because $\digamma_{\mathrm{map}}(uxu^{-1}) = \digamma_{\mathrm{map}}(u)\digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(u)^{-1}$.
 
 **Corollary.** $\operatorname{Inn}(A)$ is trivial exactly when every invertible element is central; for a commutative ring $Z(A)^\times = A^\times$, so $\operatorname{Inn}(A) = 1$ and $\operatorname{Aut}(A) = \operatorname{Out}(A)$.
 

@@ -21,18 +21,18 @@ The **direct product** of a family of groups is the group of functions into the 
 
 ## Semidirect and Wreath Products
 
-The **semidirect product** $N \rtimes_\varphi H$ is built from a homomorphism $\varphi : H \to \operatorname{Aut}(N)$, so that $H$ acts on $N$ and the product law is twisted by $\varphi$; it is the split extension of $H$ by $N$. The **wreath product** $A \wr H$ is the semidirect product of a direct sum of copies of $A$ indexed by $H$ with $H$ acting by permutation of the summands.
+The **semidirect product** $N \rtimes_\digamma_{\mathrm{map}} H$ is built from a homomorphism $\digamma_{\mathrm{map}} : H \to \operatorname{Aut}(N)$, so that $H$ acts on $N$ and the product law is twisted by $\digamma_{\mathrm{map}}$; it is the split extension of $H$ by $N$. The **wreath product** $A \wr H$ is the semidirect product of a direct sum of copies of $A$ indexed by $H$ with $H$ acting by permutation of the summands.
 
 | Construction | What it preserves | Introduced in |
 |---|---|---|
-| Semidirect product $N \rtimes_\varphi H$ | both factors as subgroups; $N$ normal, $H$ a complement | *Generators, Presentations and Free Products* |
+| Semidirect product $N \rtimes_\digamma_{\mathrm{map}} H$ | both factors as subgroups; $N$ normal, $H$ a complement | *Generators, Presentations and Free Products* |
 | Split extension $1 \to N \to G \to H \to 1$ with section $s$ | the short exact sequence splits; $G$ is a semidirect product | *Generators, Presentations and Free Products* |
 | Dihedral group as $C_n \rtimes C_2$ | the reflection action on the rotation group | *Finite Groups and Symmetry* |
 | Affine group $\operatorname{Aff}(V) = V \rtimes GL(V)$ | the translations normal, the linear group a complement | *Affine Spaces and Translations* |
 | Wreath product $A \wr H = A^{(H)} \rtimes H$ | the base group $A^{(H)}$ normal, $H$ permuting coordinates | *Infinite Groups* |
 | Lamplighter group $(\mathbb{Z}/2\mathbb{Z}) \wr \mathbb{Z}$ | a finitely generated metabelian group that is not Noetherian | *Infinite Groups* |
 | Hyperoctahedral group $W(B_n) = S_n \ltimes (\mathbb{Z}/2\mathbb{Z})^n$ | a wreath product realised as a reflection group | *Symplectic Reflection Algebras* (Part II) |
-| Non-example: $N \rtimes_\varphi H$ with $\varphi$ nontrivial | fails to be the direct product: the factors do not commute | *Generators, Presentations and Free Products* |
+| Non-example: $N \rtimes_\digamma_{\mathrm{map}} H$ with $\digamma_{\mathrm{map}}$ nontrivial | fails to be the direct product: the factors do not commute | *Generators, Presentations and Free Products* |
 | Non-example: $A \wr H$ for infinite $H$ | fails to be finitely generated in general: the base group is an infinite direct sum | *Infinite Groups* |
 
 ## Extensions and Cohomological Constructions
@@ -108,7 +108,7 @@ The article denotes its constructions by name; the symbols appearing in the tabl
 | Symbol | Meaning |
 |---|---|
 | $\prod_i G_i$, $\bigoplus_i G_i$, $G^I$ | direct product, direct sum, direct power |
-| $N \rtimes_\varphi H$ | semidirect product with action $\varphi$ |
+| $N \rtimes_\digamma_{\mathrm{map}} H$ | semidirect product with action $\digamma_{\mathrm{map}}$ |
 | $A \wr H$ | wreath product |
 | $1 \to N \to E \to H \to 1$ | short exact sequence, an extension |
 | $H^n(G,M)$, $H_2(G,\mathbb{Z})$ | group cohomology; Schur multiplier |

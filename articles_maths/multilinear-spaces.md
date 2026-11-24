@@ -277,10 +277,10 @@ natural in $M$; it is the **contraction** of the module with its dual.
 
 *Proof.* The evaluation pairing is bilinear, so the universal property of the tensor product gives a unique linear $c$ with $c(f\otimes m)=f(m)$; naturality is the identity $c(u^*(f)\otimes m)=c(f\otimes u(m))$, checked on elementary tensors.
 
-**Corollary (the trace as a contraction).** For a finitely generated projective module $P$ and $\varphi \in \operatorname{End}_R(P)$ the trace of the article on projective and injective modules equals the composite
+**Corollary (the trace as a contraction).** For a finitely generated projective module $P$ and $\digamma_{\mathrm{map}} \in \operatorname{End}_R(P)$ the trace of the article on projective and injective modules equals the composite
 
 $$
-R \cong P^* \otimes_R P \xrightarrow{\ \operatorname{id}\otimes\varphi\ } P^*\otimes_R P \xrightarrow{\ c\ } R
+R \cong P^* \otimes_R P \xrightarrow{\ \operatorname{id}\otimes\digamma_{\mathrm{map}}\ } P^*\otimes_R P \xrightarrow{\ c\ } R
 $$
 
 under the identification $P^*\otimes_R P \cong \operatorname{End}_R(P)$ for finitely generated projective $P$, whose direct-basis form is recorded in that article.
@@ -291,7 +291,7 @@ Contraction generalises to arbitrary tensors: from $M^{\otimes p}\otimes (M^*)^{
 
 The tensor product is compatible with extension of scalars, and this compatibility is what makes multilinear algebra behave well under a change of the base ring.
 
-**Theorem.** Let $\varphi:R \to S$ be a homomorphism of commutative rings and let $M_1,\dots,M_n$ be $R$-modules. There is a natural isomorphism of $S$-modules
+**Theorem.** Let $\digamma_{\mathrm{map}}:R \to S$ be a homomorphism of commutative rings and let $M_1,\dots,M_n$ be $R$-modules. There is a natural isomorphism of $S$-modules
 
 $$
 \boxed{\;S \otimes_R (M_1 \otimes_R \cdots \otimes_R M_n) \;\cong\; (S\otimes_R M_1)\otimes_S \cdots \otimes_S (S\otimes_R M_n)\;}.

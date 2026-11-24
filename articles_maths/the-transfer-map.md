@@ -173,10 +173,10 @@ $$
 
 that is, $p_*$ restricted to the fixed part is an isomorphism with inverse the averaged transfer $d^{-1}\tau_*$.
 
-**Theorem (adjointness).** Let $\langle-,-\rangle$ be the evaluation pairing between cohomology and homology of *Cohomology and the Universal Coefficient Theorem*, and let $\tau^* : H^n(E;R) \to H^n(B;R)$ be the dual of the transfer, the **cohomology transfer**. Then for $\varphi \in H^n(E;R)$ and $c \in H_n(B;R)$,
+**Theorem (adjointness).** Let $\langle-,-\rangle$ be the evaluation pairing between cohomology and homology of *Cohomology and the Universal Coefficient Theorem*, and let $\tau^* : H^n(E;R) \to H^n(B;R)$ be the dual of the transfer, the **cohomology transfer**. Then for $\digamma_{\mathrm{map}} \in H^n(E;R)$ and $c \in H_n(B;R)$,
 
 $$
-\langle \tau^*\varphi,\, c\rangle_{B} = \langle \varphi,\, \tau_* c\rangle_{E},
+\langle \tau^*\digamma_{\mathrm{map}},\, c\rangle_{B} = \langle \digamma_{\mathrm{map}},\, \tau_* c\rangle_{E},
 $$
 
 so that $\tau^*$ is the adjoint of $\tau_*$ with respect to the evaluation pairings. Consequently $p^* \tau^* = d$ and $\tau^* p^* = \sum_g g^*$, and when $d$ is invertible $H^n(B;R) \cong H^n(E;R)^G$.

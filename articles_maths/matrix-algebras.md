@@ -217,10 +217,10 @@ of rank $4$ and signature $(3,1)$, the general count for $M_n$ being $\bigl(\tfr
 
 The trace form is the concrete case of the non-degenerate associative form that makes $M_n(k)$ a **symmetric Frobenius algebra**, and it can be used in place of the matrix units in many arguments, for instance to identify the dual of $M_n(k)$ with itself.
 
-**Theorem (Skolem–Noether, standard).** Every $k$-algebra automorphism $\varphi$ of $M_n(k)$ is inner: there is $P \in \mathrm{GL}_n(k)$ with
+**Theorem (Skolem–Noether, standard).** Every $k$-algebra automorphism $\digamma_{\mathrm{map}}$ of $M_n(k)$ is inner: there is $P \in \mathrm{GL}_n(k)$ with
 
 $$
-\varphi(A) = PAP^{-1}, \qquad A \in M_n(k),
+\digamma_{\mathrm{map}}(A) = PAP^{-1}, \qquad A \in M_n(k),
 $$
 
 and the assignment $P \mapsto (A \mapsto PAP^{-1})$ induces an isomorphism
@@ -229,7 +229,7 @@ $$
 \boxed{\;\operatorname{Aut}_k(M_n(k)) \cong \mathrm{PGL}_n(k) = \mathrm{GL}_n(k)/k^\times\;}.
 $$
 
-*Proof (sketch).* The algebra $M_n(k)$ has a unique simple left module $k^n$ up to isomorphism, and $\varphi$ transports the module structure to an isomorphic one; an isomorphism of the transported module with $k^n$ is a matrix $P$, and comparing the actions gives $\varphi(A) = PAP^{-1}$. The kernel of $P \mapsto (A\mapsto PAP^{-1})$ is $k^\times I_n$.
+*Proof (sketch).* The algebra $M_n(k)$ has a unique simple left module $k^n$ up to isomorphism, and $\digamma_{\mathrm{map}}$ transports the module structure to an isomorphic one; an isomorphism of the transported module with $k^n$ is a matrix $P$, and comparing the actions gives $\digamma_{\mathrm{map}}(A) = PAP^{-1}$. The kernel of $P \mapsto (A\mapsto PAP^{-1})$ is $k^\times I_n$.
 
 **Corollary (derivations).** Every $k$-derivation of $M_n(k)$ is inner, $\delta(A) = [H, A]$ for some $H \in M_n(k)$.
 
@@ -237,7 +237,7 @@ This is the finite-dimensional case of the innerness theorem for von Neumann alg
 
 ## Summary
 
-The matrix algebra $M_n(R)$ over a commutative ring $R$ has $R$-basis the matrix units $E_{ij}$, $1 \leq i,j \leq n$, with multiplication $E_{ij}E_{kl} = \delta_{jk}E_{il}$ and dimension $n^2$. It is isomorphic to the endomorphism algebra $\operatorname{End}_R(R^n)$, it is associative with unit $I_n$, and it is non-commutative for $n \geq 2$. **Trace** is $R$-linear and satisfies $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$, and **determinant** is multiplicative; a matrix is invertible if and only if its determinant lies in $R^\times$, with $A^{-1} = (\det A)^{-1}\operatorname{adj}(A)$. Over a field, $M_n(k)$ is **simple**: its only two-sided ideals are $0$ and itself, proved by writing each matrix unit as $E_{pi}AE_{jq}$ scaled; its left ideals correspond to subspaces of $k^n$, and its centre is $kI_n$. The tensor product formula $M_m(k)\otimes_k M_n(k)\cong M_{mn}(k)$ holds, and the regular module is a direct sum of $n$ copies of the simple module $k^n$. The **trace form** $\langle A,B\rangle = \operatorname{Tr}(AB)$ is symmetric, associative and non-degenerate, and by the Skolem–Noether theorem every automorphism of $M_n(k)$ is inner, $\varphi(A) = PAP^{-1}$, so that $\operatorname{Aut}_k(M_n(k)) \cong \mathrm{PGL}_n(k)$ and every derivation is inner.
+The matrix algebra $M_n(R)$ over a commutative ring $R$ has $R$-basis the matrix units $E_{ij}$, $1 \leq i,j \leq n$, with multiplication $E_{ij}E_{kl} = \delta_{jk}E_{il}$ and dimension $n^2$. It is isomorphic to the endomorphism algebra $\operatorname{End}_R(R^n)$, it is associative with unit $I_n$, and it is non-commutative for $n \geq 2$. **Trace** is $R$-linear and satisfies $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$, and **determinant** is multiplicative; a matrix is invertible if and only if its determinant lies in $R^\times$, with $A^{-1} = (\det A)^{-1}\operatorname{adj}(A)$. Over a field, $M_n(k)$ is **simple**: its only two-sided ideals are $0$ and itself, proved by writing each matrix unit as $E_{pi}AE_{jq}$ scaled; its left ideals correspond to subspaces of $k^n$, and its centre is $kI_n$. The tensor product formula $M_m(k)\otimes_k M_n(k)\cong M_{mn}(k)$ holds, and the regular module is a direct sum of $n$ copies of the simple module $k^n$. The **trace form** $\langle A,B\rangle = \operatorname{Tr}(AB)$ is symmetric, associative and non-degenerate, and by the Skolem–Noether theorem every automorphism of $M_n(k)$ is inner, $\digamma_{\mathrm{map}}(A) = PAP^{-1}$, so that $\operatorname{Aut}_k(M_n(k)) \cong \mathrm{PGL}_n(k)$ and every derivation is inner.
 
 ## Summary of Notation
 

@@ -10,7 +10,7 @@ This article lists the mathematical constants the corpus names and computes. A c
 | Object | Its definition, and the arithmetic fact proved for it | Introduced in |
 |---|---|---|
 | $\sqrt2$ | the positive root of $x^2 = 2$; irrational, by the classical parity argument | *The Rational Numbers* |
-| the golden ratio $\varphi = (1+\sqrt5)/2$ | the positive root of $x^2 = x+1$; irrational, and the worst approximable irrational, with continued fraction $[1;1,1,\dots]$ | *Diophantine Approximation and Continued Fractions* |
+| the golden ratio $\digamma_{\mathrm{map}} = (1+\sqrt5)/2$ | the positive root of $x^2 = x+1$; irrational, and the worst approximable irrational, with continued fraction $[1;1,1,\dots]$ | *Diophantine Approximation and Continued Fractions* |
 | $e = \exp(1)$ | the sum $\sum_{n\geq0} 1/n!$; transcendental over $\mathbb Q$, by Hermite's theorem | *Real Special Functions*; *Fields*; *Field Extensions* |
 | $\pi$ | twice the smallest positive zero of $\cos$; transcendental over $\mathbb Q$, by Lindemann's theorem, hence so is $\sqrt\pi$ | *Real Special Functions*; *Fields*; *Field Extensions* |
 | $\log 2$ | the logarithm of $2$, the normalising constant of the Gauss measure $d\mu = dx/((1+x)\log2)$ and the entropy of the doubling map | *Diophantine Approximation and Continued Fractions*; *Ergodic Theory* |
@@ -47,14 +47,14 @@ This article lists the mathematical constants the corpus names and computes. A c
 | Object | The property it records | Introduced in |
 |---|---|---|
 | $\sqrt2$ | is irrational and not transcendental: it is algebraic of degree $2$ | *The Rational Numbers*; *Field Extensions* |
-| the golden ratio $\varphi$ | is a quadratic irrational, hence algebraic, and is the extremal case of Hurwitz's theorem | *Diophantine Approximation and Continued Fractions* |
+| the golden ratio $\digamma_{\mathrm{map}}$ | is a quadratic irrational, hence algebraic, and is the extremal case of Hurwitz's theorem | *Diophantine Approximation and Continued Fractions* |
 | $\zeta(3)$ | is irrational and not known to be transcendental; it is not a rational multiple of a power of $\pi$ as far as is known | *Zeta Functions* |
 | $\gamma$ | is expected to be transcendental and is not even known to be irrational | *Zeta Functions* |
 | the computable reals | are dense in $\mathbb R$ but have measure zero; a constant with no arithmetic proof is still a definite real number | *Computability Theory* |
 
 ## Summary
 
-This list gathers the constants of the corpus: the elementary constants $\sqrt2$, $\varphi$, $e$, $\pi$ and $\log2$ with the Liouville number; the constants of analysis and number theory, $\gamma$, the zeta values $\zeta(2)$, $\zeta(3)$, $\zeta(4)$ and $\zeta(6)$, the de Bruijn–Newman constant $\Lambda$, the Catalan, Khinchin, Mertens, Lagrange and Grothendieck constants; and the constants of dynamics and information, the Feigenbaum constants, the Lévy constant, the entropy of the Gauss map, the Gauss–Kuzmin–Wirsing constant and Chaitin's $\Omega$. Each row records the definition and the arithmetic fact proved for the constant, and the closing table records which constants are irrational but not transcendental and which carry no arithmetic proof at all.
+This list gathers the constants of the corpus: the elementary constants $\sqrt2$, $\digamma_{\mathrm{map}}$, $e$, $\pi$ and $\log2$ with the Liouville number; the constants of analysis and number theory, $\gamma$, the zeta values $\zeta(2)$, $\zeta(3)$, $\zeta(4)$ and $\zeta(6)$, the de Bruijn–Newman constant $\Lambda$, the Catalan, Khinchin, Mertens, Lagrange and Grothendieck constants; and the constants of dynamics and information, the Feigenbaum constants, the Lévy constant, the entropy of the Gauss map, the Gauss–Kuzmin–Wirsing constant and Chaitin's $\Omega$. Each row records the definition and the arithmetic fact proved for the constant, and the closing table records which constants are irrational but not transcendental and which carry no arithmetic proof at all.
 
 ## Summary of Notation
 
@@ -62,7 +62,7 @@ The constants are named by their standard letters; the symbols in the tables are
 
 | Symbol | Meaning |
 |---|---|
-| $e$, $\pi$, $\gamma$, $\varphi$ | the base of the natural logarithm, the circle constant, Euler's constant, the golden ratio |
+| $e$, $\pi$, $\gamma$, $\digamma_{\mathrm{map}}$ | the base of the natural logarithm, the circle constant, Euler's constant, the golden ratio |
 | $G$ | the Catalan constant |
 | $K_0$, $M$ | Khinchin's constant, the Mertens constant |
 | $\Lambda$ | the de Bruijn–Newman constant |

@@ -113,7 +113,7 @@ $$
 
 so the scalar line is orthogonal to the traceless subspace. The pairing is non-degenerate on each summand: on $\mathbb{C}I$, $\beta(I,I)=4\ne0$; on $\mathfrak{sl}_4$, the restriction is the trace form, which is non-degenerate because the dual of a traceless matrix under $\beta$ is again traceless.
 
-**The trace is the unique invariant linear functional.** If $\varphi:M_4\to\mathbb{C}$ is linear and $\varphi(AB)=\varphi(BA)$ for all $A,B$, then $\varphi=c\operatorname{tr}$. The proof is in *The Matrix Algebra $M_4(\mathbb{C})$*: the commutators span $\mathfrak{sl}_4$, so $\varphi$ vanishes there and is determined by its value on $I$.
+**The trace is the unique invariant linear functional.** If $\digamma_{\mathrm{map}}:M_4\to\mathbb{C}$ is linear and $\digamma_{\mathrm{map}}(AB)=\digamma_{\mathrm{map}}(BA)$ for all $A,B$, then $\digamma_{\mathrm{map}}=c\operatorname{tr}$. The proof is in *The Matrix Algebra $M_4(\mathbb{C})$*: the commutators span $\mathfrak{sl}_4$, so $\digamma_{\mathrm{map}}$ vanishes there and is determined by its value on $I$.
 
 ## The Trace Pairing
 

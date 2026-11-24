@@ -185,13 +185,13 @@ This is the **idempotent decomposition** of $Q$. It is the single most important
 The map
 
 $$
-\varphi : \mathbb{C}_{\mathrm{spl}} \to \mathbb{R} \oplus \mathbb{R}, \qquad \varphi(q + j q') = (q + q', q - q'),
+\digamma_{\mathrm{map}} : \mathbb{C}_{\mathrm{spl}} \to \mathbb{R} \oplus \mathbb{R}, \qquad \digamma_{\mathrm{map}}(q + j q') = (q + q', q - q'),
 $$
 
 is an algebra isomorphism. It is bijective, and it satisfies
 
 $$
-\boxed{\;\varphi(Q + B) = \varphi(Q) + \varphi(B), \qquad \varphi(Q B) = \varphi(Q) \varphi(B)\;},
+\boxed{\;\digamma_{\mathrm{map}}(Q + B) = \digamma_{\mathrm{map}}(Q) + \digamma_{\mathrm{map}}(B), \qquad \digamma_{\mathrm{map}}(Q B) = \digamma_{\mathrm{map}}(Q) \digamma_{\mathrm{map}}(B)\;},
 $$
 
 where the multiplication on $\mathbb{R} \oplus \mathbb{R}$ is componentwise:

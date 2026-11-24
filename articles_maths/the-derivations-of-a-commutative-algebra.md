@@ -58,7 +58,7 @@ $$
 
 The map $d : A \to \Omega_{A/R}$, $a \mapsto da$, is the **universal derivation**.
 
-**Theorem (universal property).** For every $A$-module $M$ and every derivation $\delta : A \to M$ there is a unique $A$-linear map $\varphi : \Omega_{A/R} \to M$ with $\delta = \varphi \circ d$. Hence
+**Theorem (universal property).** For every $A$-module $M$ and every derivation $\delta : A \to M$ there is a unique $A$-linear map $\digamma_{\mathrm{map}} : \Omega_{A/R} \to M$ with $\delta = \digamma_{\mathrm{map}} \circ d$. Hence
 
 $$
 \boxed{\;\operatorname{Der}_R(A, M) \cong \operatorname{Hom}_A(\Omega_{A/R}, M)\;}
@@ -66,7 +66,7 @@ $$
 
 naturally in $M$, and in particular $\operatorname{Der}_R(A) \cong \operatorname{Hom}_A(\Omega_{A/R}, A)$.
 
-*Proof.* Uniqueness: $\Omega_{A/R}$ is generated as an $A$-module by the $da$, so $\varphi$ is determined by its values $\varphi(da) = \delta(a)$. Existence: the assignment $da \mapsto \delta(a)$ respects the three relations, because $\delta$ is additive, satisfies the Leibniz rule and vanishes on $R$ by $R$-linearity and $\delta(1) = \delta(1\cdot1) = 2\delta(1)$. Hence it extends to an $A$-linear map, which by construction satisfies $\varphi\circ d = \delta$. Naturality in $M$ is the compatibility of the correspondence with $A$-linear maps $M \to M'$.
+*Proof.* Uniqueness: $\Omega_{A/R}$ is generated as an $A$-module by the $da$, so $\digamma_{\mathrm{map}}$ is determined by its values $\digamma_{\mathrm{map}}(da) = \delta(a)$. Existence: the assignment $da \mapsto \delta(a)$ respects the three relations, because $\delta$ is additive, satisfies the Leibniz rule and vanishes on $R$ by $R$-linearity and $\delta(1) = \delta(1\cdot1) = 2\delta(1)$. Hence it extends to an $A$-linear map, which by construction satisfies $\digamma_{\mathrm{map}}\circ d = \delta$. Naturality in $M$ is the compatibility of the correspondence with $A$-linear maps $M \to M'$.
 
 The theorem is the exact sense in which the derivations of $A$ form the dual of a module: **every derivation factors uniquely through the universal one**, and the derivation space is the dual of $\Omega_{A/R}$.
 

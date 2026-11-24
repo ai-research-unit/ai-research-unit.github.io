@@ -14,7 +14,7 @@ The article proves the closedness, the topological-group and the completeness st
 
 **Theorem (the unitary group is closed).** $\mathrm{U}(A)$ is a closed subset of $A$, and it is closed in $A^{\times}$ for the subspace topology.
 
-*Proof.* The maps $\varphi(u) = uu^{*}$ and $\psi(u) = u^{*}u$ are continuous, since the product is jointly continuous and the involution is continuous, and $\mathrm{U}(A) = \varphi^{-1}(\{1\}) \cap \psi^{-1}(\{1\})$. The preimage of a closed set under a continuous map is closed, and the intersection of two closed sets is closed. Since $\mathrm{U}(A) \subseteq A^{\times}$, closedness in $A$ implies closedness in the subspace $A^{\times}$.
+*Proof.* The maps $\digamma_{\mathrm{map}}(u) = uu^{*}$ and $Ξ_{\mathrm{wfn}}(u) = u^{*}u$ are continuous, since the product is jointly continuous and the involution is continuous, and $\mathrm{U}(A) = \digamma_{\mathrm{map}}^{-1}(\{1\}) \cap Ξ_{\mathrm{wfn}}^{-1}(\{1\})$. The preimage of a closed set under a continuous map is closed, and the intersection of two closed sets is closed. Since $\mathrm{U}(A) \subseteq A^{\times}$, closedness in $A$ implies closedness in the subspace $A^{\times}$.
 
 **Corollary (completeness).** If $A$ is a Banach algebra then $\mathrm{U}(A)$ is complete as a metric space, and it is a closed subgroup of $A^{\times}$.
 

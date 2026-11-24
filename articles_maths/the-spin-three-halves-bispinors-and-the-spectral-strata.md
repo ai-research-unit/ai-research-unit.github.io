@@ -16,9 +16,9 @@ Nothing below is a statement of physics. The units are $e_t,\vec e_x,\vec e_y,\v
 
 ## The Spectrum of a Bispinor
 
-**Definition.** The **operator of a bispinor** is $T_\psi=L_{a_\psi}$, the left multiplication by the element of the algebra that the bispinor names under a fixed identification of the module with the algebra. Its **spectrum** is the spectrum of that operator on the four-dimensional algebra, counted with multiplicity.
+**Definition.** The **operator of a bispinor** is $T_Ξ_{\mathrm{wfn}}=L_{a_Ξ_{\mathrm{wfn}}}$, the left multiplication by the element of the algebra that the bispinor names under a fixed identification of the module with the algebra. Its **spectrum** is the spectrum of that operator on the four-dimensional algebra, counted with multiplicity.
 
-**Proposition.** The characteristic polynomial of $T_\psi$ is
+**Proposition.** The characteristic polynomial of $T_Ξ_{\mathrm{wfn}}$ is
 
 $$
 \chi(t)=\bigl(t^2-2a_t\,t+N(a)\bigr)^{2},

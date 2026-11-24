@@ -82,15 +82,15 @@ So each component is bounded by $M \cdot \mathrm{vol}(\Omega)$, and the Euclidea
 
 ### The Scalar Case
 
-**Theorem (integration by parts).** Let $\phi$ be a scalar function and $F_{\mathrm{fn}}$ a biquaternion-valued function, both continuously differentiable on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then for each $\mu$,
+**Theorem (integration by parts).** Let $\digamma_{\mathrm{map}}$ be a scalar function and $F_{\mathrm{fn}}$ a biquaternion-valued function, both continuously differentiable on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then for each $\mu$,
 
 $$
-\int_\Omega \left(\frac{\partial \phi}{\partial q_\mu}\right) F_{\mathrm{fn}} \, dV = \int_{\partial \Omega} \phi F_{\mathrm{fn}} \, n_\mu \, dS - \int_\Omega \phi \left(\frac{\partial F_{\mathrm{fn}}}{\partial q_\mu}\right) dV,
+\int_\Omega \left(\frac{\partial \digamma_{\mathrm{map}}}{\partial q_\mu}\right) F_{\mathrm{fn}} \, dV = \int_{\partial \Omega} \digamma_{\mathrm{map}} F_{\mathrm{fn}} \, n_\mu \, dS - \int_\Omega \digamma_{\mathrm{map}} \left(\frac{\partial F_{\mathrm{fn}}}{\partial q_\mu}\right) dV,
 $$
 
 where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial \Omega$ and $dS$ is the surface measure.
 
-**Proof.** This is the standard integration by parts formula in $\mathbb{R}^4$, applied to the scalar function $\phi$ and the scalar function $F_\nu$ for each component. Summing over $\nu$ gives the result.
+**Proof.** This is the standard integration by parts formula in $\mathbb{R}^4$, applied to the scalar function $\digamma_{\mathrm{map}}$ and the scalar function $F_\nu$ for each component. Summing over $\nu$ gives the result.
 
 ### The Vector Case
 
@@ -164,7 +164,7 @@ $$
 
 **Proof.** Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the biquaternion-valued field with components $F_{\mathrm{fn}}\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural}$: it gives $\int_\Omega \partial/\partial q_\mu(F_{\mathrm{fn}}\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural})\,dV = \int_{\partial\Omega} n_\mu F_{\mathrm{fn}}\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural}\,dS$. The product rule expands the volume integrand as $(\partial/\partial q_\mu F_{\mathrm{fn}})\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural} + F_{\mathrm{fn}}\,(\partial^2/\partial q_\mu^2 G_{\mathrm{fn}})^{\natural}$, the second term because $\partial/\partial q_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial^2/\partial q_\mu^2$ by $\Box_\Phi$ and $\sum_\mu n_\mu \partial/\partial q_\mu$ by $\partial/\partial\tilde u_{\mathrm n}$.
 
-**Remark (the classical case).** For real-valued $\varphi$ and $\psi$ the conjugate is the identity, the first sum is the Euclidean inner product $\tilde\nabla_\Phi \varphi \cdot \tilde\nabla_\Phi \psi$, and the identity is the classical first Green formula $\int_\Omega (\tilde\nabla_\Phi \varphi\cdot\nabla \psi + \varphi\,\Delta_\Phi \psi)\,dV = \int_{\partial\Omega} \varphi\,\partial/\partial n \psi\,dS$ of the companion *Partial Differential Equations*.
+**Remark (the classical case).** For real-valued $\digamma_{\mathrm{map}}$ and $Ξ_{\mathrm{wfn}}$ the conjugate is the identity, the first sum is the Euclidean inner product $\tilde\nabla_\Phi \digamma_{\mathrm{map}} \cdot \tilde\nabla_\Phi Ξ_{\mathrm{wfn}}$, and the identity is the classical first Green formula $\int_\Omega (\tilde\nabla_\Phi \digamma_{\mathrm{map}}\cdot\nabla Ξ_{\mathrm{wfn}} + \digamma_{\mathrm{map}}\,\Delta_\Phi Ξ_{\mathrm{wfn}})\,dV = \int_{\partial\Omega} \digamma_{\mathrm{map}}\,\partial/\partial n Ξ_{\mathrm{wfn}}\,dS$ of the companion *Partial Differential Equations*.
 
 ### Second Green's Formula
 
@@ -200,7 +200,7 @@ $$
 
 the two mixed terms being the same product and cancelling. Summing over $\mu$ makes the left side a divergence whose volume integral is the stated volume integrand, $(\Box_\Phi F_{\mathrm{fn}})G_{\mathrm{fn}} - F_{\mathrm{fn}}(\Box_\Phi G_{\mathrm{fn}})$; the divergence theorem turns it into the boundary integral, which by $\sum_\mu n_\mu \partial/\partial q_\mu = \partial/\partial\tilde u_{\mathrm n}$ is the stated surface term.
 
-The derivative in the surface term is essential and cannot be dropped. The products $\tilde u_{\mathrm n}F_{\mathrm{fn}}$ and $\tilde u_{\mathrm n}G_{\mathrm{fn}}$ alone, with no derivative, would give a boundary term that vanishes identically for central $F_{\mathrm{fn}}$ and $G_{\mathrm{fn}}$; for scalar $\varphi,\psi$ the classical identity it would have to reproduce is $\int_\Omega (\psi\Delta_\Phi \varphi - \varphi\Delta_\Phi \psi)\,dV = \int_{\partial\Omega} (\psi\partial/\partial n \varphi - \varphi\partial/\partial n \psi)\,dS$, whose right side is not zero.
+The derivative in the surface term is essential and cannot be dropped. The products $\tilde u_{\mathrm n}F_{\mathrm{fn}}$ and $\tilde u_{\mathrm n}G_{\mathrm{fn}}$ alone, with no derivative, would give a boundary term that vanishes identically for central $F_{\mathrm{fn}}$ and $G_{\mathrm{fn}}$; for scalar $\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}$ the classical identity it would have to reproduce is $\int_\Omega (Ξ_{\mathrm{wfn}}\Delta_\Phi \digamma_{\mathrm{map}} - \digamma_{\mathrm{map}}\Delta_\Phi Ξ_{\mathrm{wfn}})\,dV = \int_{\partial\Omega} (Ξ_{\mathrm{wfn}}\partial/\partial n \digamma_{\mathrm{map}} - \digamma_{\mathrm{map}}\partial/\partial n Ξ_{\mathrm{wfn}})\,dS$, whose right side is not zero.
 
 **Remark (the two pairings).** This formula is the second Green formula with $G_{\mathrm{fn}}$ replaced by ${G_{\mathrm{fn}}}^{\natural}$, up to the sign of both sides: the second Green formula carries the conjugation in the pairing, this one in the plain product, and the two have the same content. The plain form is the one used in the representation formula below.
 
@@ -214,21 +214,21 @@ $$
 
 homogeneous of degree $-2$. It is a different object from the gradient kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ of the preceding sections, which is homogeneous of degree $-3$ and inverts the first-order operator $\tilde\nabla_\Phi$ rather than the second-order $\Box_\Phi$. The companion physics article *The Biquaternion D'Alembertian and Its Green's Functions* writes the corresponding kernel, with the opposite overall sign because its fourth coordinate is $iq'_t$, as $G_{\mathrm{inv}} = \frac{1}{4\pi^2\rho^2}$ with $-\Box_\Phi G_{\mathrm{inv}} = \delta^{(4)}$.
 
-**Theorem (representation formula).** Let $\Omega \subset \mathbb{B}_{H}$ be a bounded domain with piecewise smooth boundary, let $\varphi$ be a twice continuously differentiable biquaternion-valued function on $\bar\Omega$, and let $G_{\Box_{\Phi}}$ be as above; write $G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q})$ for the kernel translated to an interior point $\tilde{Q}_0 \in \Omega$, and let $\partial/\partial\tilde u_{\mathrm n}$ act on $\tilde{Q}$. Then
+**Theorem (representation formula).** Let $\Omega \subset \mathbb{B}_{H}$ be a bounded domain with piecewise smooth boundary, let $\digamma_{\mathrm{map}}$ be a twice continuously differentiable biquaternion-valued function on $\bar\Omega$, and let $G_{\Box_{\Phi}}$ be as above; write $G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q})$ for the kernel translated to an interior point $\tilde{Q}_0 \in \Omega$, and let $\partial/\partial\tilde u_{\mathrm n}$ act on $\tilde{Q}$. Then
 
 $$
-\varphi(\tilde{Q}_0) = \int_\Omega G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q})\,(\Box_\Phi \varphi)(\tilde{Q})\,dV + \int_{\partial \Omega} \left[ \varphi(\tilde{Q})\,\partial/\partial\tilde u_{\mathrm n} G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q}) - G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q})\,\partial/\partial\tilde u_{\mathrm n} \varphi(\tilde{Q}) \right] dS .
+\digamma_{\mathrm{map}}(\tilde{Q}_0) = \int_\Omega G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q})\,(\Box_\Phi \digamma_{\mathrm{map}})(\tilde{Q})\,dV + \int_{\partial \Omega} \left[ \digamma_{\mathrm{map}}(\tilde{Q})\,\partial/\partial\tilde u_{\mathrm n} G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q}) - G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q})\,\partial/\partial\tilde u_{\mathrm n} \digamma_{\mathrm{map}}(\tilde{Q}) \right] dS .
 $$
 
-**Proof.** Apply the Green formula for $\Box_\Phi$ to $\varphi$ and to $G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot)$ on the domain $\Omega \setminus B(\tilde{Q}_0,\varepsilon)$, whose boundary is $\partial\Omega$ together with the small sphere. The term $G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot)$ is annihilated by $\Box_\Phi$ away from $\tilde{Q}_0$, while its image under $\Box_\Phi$ is $\delta_0$, so the volume integrand carries $-\varphi(\tilde{Q}_0)$ from the excised ball and $G_{\Box_{\Phi}}(\tilde{Q}_0-\tilde{Q})(\Box_\Phi \varphi)(\tilde{Q})$ from $\Omega$; the outer and inner boundary pieces assemble into the stated surface integral. Letting $\varepsilon \to 0$ gives the identity. The volume integral converges at $\tilde{Q}_0$ because the kernel is of order $\|\tilde{Q}-\tilde{Q}_0\|^{-2}$, which is integrable in four dimensions.
+**Proof.** Apply the Green formula for $\Box_\Phi$ to $\digamma_{\mathrm{map}}$ and to $G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot)$ on the domain $\Omega \setminus B(\tilde{Q}_0,\varepsilon)$, whose boundary is $\partial\Omega$ together with the small sphere. The term $G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot)$ is annihilated by $\Box_\Phi$ away from $\tilde{Q}_0$, while its image under $\Box_\Phi$ is $\delta_0$, so the volume integrand carries $-\digamma_{\mathrm{map}}(\tilde{Q}_0)$ from the excised ball and $G_{\Box_{\Phi}}(\tilde{Q}_0-\tilde{Q})(\Box_\Phi \digamma_{\mathrm{map}})(\tilde{Q})$ from $\Omega$; the outer and inner boundary pieces assemble into the stated surface integral. Letting $\varepsilon \to 0$ gives the identity. The volume integral converges at $\tilde{Q}_0$ because the kernel is of order $\|\tilde{Q}-\tilde{Q}_0\|^{-2}$, which is integrable in four dimensions.
 
-**Corollary ($\Box_\Phi$-harmonic case).** If $\Box_\Phi \varphi = 0$ in $\Omega$ the volume term drops out and
+**Corollary ($\Box_\Phi$-harmonic case).** If $\Box_\Phi \digamma_{\mathrm{map}} = 0$ in $\Omega$ the volume term drops out and
 
 $$
-\varphi(\tilde{Q}_0) = \int_{\partial \Omega} \left[ \varphi\,\partial/\partial\tilde u_{\mathrm n} G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot) - G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot)\,\partial/\partial\tilde u_{\mathrm n} \varphi \right] dS ,
+\digamma_{\mathrm{map}}(\tilde{Q}_0) = \int_{\partial \Omega} \left[ \digamma_{\mathrm{map}}\,\partial/\partial\tilde u_{\mathrm n} G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot) - G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot)\,\partial/\partial\tilde u_{\mathrm n} \digamma_{\mathrm{map}} \right] dS ,
 $$
 
-so a function annihilated by the four-dimensional Laplacian is determined at every interior point by its boundary values and its normal derivative. This is the second-order companion of the Cauchy integral formula above, which represents a function annihilated by the first-order operator $\tilde\nabla_\Phi$ by its boundary values alone; here it is the vanishing of $\Box_\Phi \varphi$, not the size of the kernel's singularity, that removes the volume term.
+so a function annihilated by the four-dimensional Laplacian is determined at every interior point by its boundary values and its normal derivative. This is the second-order companion of the Cauchy integral formula above, which represents a function annihilated by the first-order operator $\tilde\nabla_\Phi$ by its boundary values alone; here it is the vanishing of $\Box_\Phi \digamma_{\mathrm{map}}$, not the size of the kernel's singularity, that removes the volume term.
 
 **The Kirchhoff–Green reading.** For the wave operator the same identity is the **Kirchhoff–Green representation**: on a domain whose boundary is split into two complementary surfaces, the volume integral is the source term and the surface integral carries the boundary data, and the low-dimensional cases are the classical d'Alembert, Poisson and Kirchhoff formulas of the companion *Partial Differential Equations*. The operator $\Box_\Phi$ of this article is the four-dimensional Laplacian in the real coordinates of $\mathbb{B}_{H}$; its wave reading, in which the fourth coordinate is $iq'_t$, is the one used by the companion physics articles, and the biquaternionic analogue of the Kirchhoff and Green formulas for that wave ("biwave") operator is constructed by L. A. Alexeyeva in the 2021 paper cited in Further Reading, whose biwave family also unifies the Maxwell- and Dirac-equivalent second-order equations in one operator.
 
@@ -307,16 +307,16 @@ $$
 
 where $\delta_0$ is the delta distribution at the origin and $2\pi^2$ is the surface area of the unit three-sphere in $\mathbb{R}^4$.
 
-**Proof.** The function $G_{\mathrm{fn}}$ is locally integrable and smooth away from the origin. For a test function $\phi$ with compact support, the pairing $\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle$ is defined by integration by parts:
+**Proof.** The function $G_{\mathrm{fn}}$ is locally integrable and smooth away from the origin. For a test function $\digamma_{\mathrm{map}}$ with compact support, the pairing $\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \digamma_{\mathrm{map}} \rangle$ is defined by integration by parts:
 
 $$
-\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle = -\int_{\mathbb{R}^4} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV.
+\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \digamma_{\mathrm{map}} \rangle = -\int_{\mathbb{R}^4} G_{\mathrm{fn}} (\tilde\nabla_\Phi \digamma_{\mathrm{map}}) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \digamma_{\mathrm{map}}) \, dV.
 $$
 
 Applying the divergence theorem to the domain $\|\tilde{Q}\| > \varepsilon$ and using $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$ away from the origin gives
 
 $$
-\int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV = -\int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS - \int_{\|\tilde{Q}\| > \varepsilon} (\tilde\nabla_\Phi G_{\mathrm{fn}}) \phi \, dV = -\int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS.
+\int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \digamma_{\mathrm{map}}) \, dV = -\int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \digamma_{\mathrm{map}} \, dS - \int_{\|\tilde{Q}\| > \varepsilon} (\tilde\nabla_\Phi G_{\mathrm{fn}}) \digamma_{\mathrm{map}} \, dV = -\int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \digamma_{\mathrm{map}} \, dS.
 $$
 
 On the sphere $\|\tilde{Q}\| = \varepsilon$, the outward unit normal is $\tilde u_{\mathrm n} = \tilde{Q}/\varepsilon$, and $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\varepsilon^4$. So
@@ -328,13 +328,13 @@ $$
 So
 
 $$
-\int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS = \frac{1}{\varepsilon^3} \int_{\|\tilde{Q}\| = \varepsilon} \phi \, dS \cdot e_t.
+\int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \digamma_{\mathrm{map}} \, dS = \frac{1}{\varepsilon^3} \int_{\|\tilde{Q}\| = \varepsilon} \digamma_{\mathrm{map}} \, dS \cdot e_t.
 $$
 
-As $\varepsilon \to 0$, the average of $\phi$ over the sphere tends to $\phi(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $2\pi^2 \phi(0) e_t$. Therefore
+As $\varepsilon \to 0$, the average of $\digamma_{\mathrm{map}}$ over the sphere tends to $\digamma_{\mathrm{map}}(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $2\pi^2 \digamma_{\mathrm{map}}(0) e_t$. Therefore
 
 $$
-\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle = 2\pi^2 \phi(0) e_t,
+\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \digamma_{\mathrm{map}} \rangle = 2\pi^2 \digamma_{\mathrm{map}}(0) e_t,
 $$
 
 which is the distributional identity
@@ -497,7 +497,7 @@ The integral of a biquaternion-valued function on the quaternion subspace $\math
 
 The **fundamental solution** of the gradient operator on $\mathbb{B}_{H}$ is $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$, which satisfies $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$ away from the origin and $\tilde\nabla_\Phi G_{\mathrm{fn}} = -2\pi^2 \delta_0 e_t$ in the sense of distributions. The fundamental solution of the second-order operator $\Box_\Phi$ is the central function $G_{\Box_{\Phi}} = -e_t/(4\pi^2\|\tilde{Q}\|^2)$.
 
-The **Green formula for $\Box_\Phi$** and its **representation formula** express a biquaternion-valued function at an interior point by the volume integral of its $\Box_\Phi$ against $G_{\Box_{\Phi}}$ together with a surface integral of its boundary values and normal derivative; when $\Box_\Phi \varphi = 0$ the volume term drops out and the interior value is carried by the boundary alone. For the wave operator this is the biquaternionic **Kirchhoff–Green representation**, the analogue of the classical Kirchhoff and Green formulas.
+The **Green formula for $\Box_\Phi$** and its **representation formula** express a biquaternion-valued function at an interior point by the volume integral of its $\Box_\Phi$ against $G_{\Box_{\Phi}}$ together with a surface integral of its boundary values and normal derivative; when $\Box_\Phi \digamma_{\mathrm{map}} = 0$ the volume term drops out and the interior value is carried by the boundary alone. For the wave operator this is the biquaternionic **Kirchhoff–Green representation**, the analogue of the classical Kirchhoff and Green formulas.
 
 The **Cauchy integral formula** expresses the value of a continuously differentiable function at an interior point in terms of its boundary values and the volume integral of its gradient. For functions satisfying $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ (the biquaternion analogue of the Cauchy–Riemann equations), the volume integral vanishes and the value at the interior point is given entirely by the boundary values.
 
@@ -529,7 +529,7 @@ The integration theory is related to complex analysis, Fueter's quaternionic ana
 
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original formulation.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
-- R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta_\Phi \varphi = 0$ und $\Delta_\Phi\Delta_\Phi \varphi = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.
+- R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta_\Phi \digamma_{\mathrm{map}} = 0$ und $\Delta_\Phi\Delta_\Phi \digamma_{\mathrm{map}} = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
 - John Ryan, *Clifford Algebras in Analysis and Related Topics* (CRC Press, 1996), for the analytic theory of Clifford algebras.

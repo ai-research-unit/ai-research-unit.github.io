@@ -63,15 +63,15 @@ with $\operatorname{Vec}$ the vector part. On a real element the congruence and 
 
 The axis is normal to the plane of the two velocities. On fifty random pairs the axis of the gyration, computed as the eigenvector of eigenvalue one, agrees with $\pm\vec u\times\vec v$ to $5.0\times10^{-15}$, and the determinant is one to $3.3\times10^{-16}$. The axis is defined up to sign by the geometry and fixed by the order: exchanging $\vec u$ and $\vec v$ inverts the gyration, to $2.1\times10^{-15}$.
 
-The angle is the one the companion computes, and the closed form is the same. With $\theta_1,\theta_2$ the rapidities of the two velocities and $\phi$ the angle between their directions,
+The angle is the one the companion computes, and the closed form is the same. With $\theta_1,\theta_2$ the rapidities of the two velocities and $\xi_{\mathrm{pot}}$ the angle between their directions,
 $$
 \tan\frac{\theta_{\mathrm{wgn}}}{2}=
-\frac{\sinh\frac{\theta_1}{2}\sinh\frac{\theta_2}{2}\sin\phi}
-{\cosh\frac{\theta_1}{2}\cosh\frac{\theta_2}{2}+\sinh\frac{\theta_1}{2}\sinh\frac{\theta_2}{2}\cos\phi}.
+\frac{\sinh\frac{\theta_1}{2}\sinh\frac{\theta_2}{2}\sin\xi_{\mathrm{pot}}}
+{\cosh\frac{\theta_1}{2}\cosh\frac{\theta_2}{2}+\sinh\frac{\theta_1}{2}\sinh\frac{\theta_2}{2}\cos\xi_{\mathrm{pot}}}.
 $$
 Verified against the matrix arccosine on two hundred random pairs, worst deviation of the two sides $5.6\times10^{-14}$.
 
-At $\phi=\pi/2$ the right side is $\tanh^{2}(\theta/2)$, so
+At $\xi_{\mathrm{pot}}=\pi/2$ the right side is $\tanh^{2}(\theta/2)$, so
 $$
 \theta_{\mathrm{wgn}}=2\arctan\Bigl(\tanh^{2}\frac{\theta}{2}\Bigr).
 $$
@@ -86,7 +86,7 @@ with $\cos\theta_{\mathrm{wgn}}=40/41$ and $\sin\theta_{\mathrm{wgn}}=9/41$, an 
 
 At fixed speeds the angle depends on the angle between them and on nothing else. With both speeds at $0.6$ the numbers are the table.
 
-| $\phi$ | $\theta_{\mathrm{wgn}}$ |
+| $\xi_{\mathrm{pot}}$ | $\theta_{\mathrm{wgn}}$ |
 | --- | --- |
 | $0$ | $0.000000^\circ$ |
 | $30^\circ$ | $5.802418^\circ$ |
@@ -95,7 +95,7 @@ At fixed speeds the angle depends on the angle between them and on nothing else.
 | $120^\circ$ | $11.635051^\circ$ |
 | $180^\circ$ | $0.000000^\circ$ |
 
-The angle vanishes at both ends and peaks near the right angle. Parallel velocities gyrate by nothing, because the boosts commute; antiparallel ones also gyrate by nothing, because they compose along one axis. For equal speeds the maximum is $12.7589^\circ$, reached at $\phi=96.38^\circ$ and not at $90^\circ$; the asymmetry is small and it is real.
+The angle vanishes at both ends and peaks near the right angle. Parallel velocities gyrate by nothing, because the boosts commute; antiparallel ones also gyrate by nothing, because they compose along one axis. For equal speeds the maximum is $12.7589^\circ$, reached at $\xi_{\mathrm{pot}}=96.38^\circ$ and not at $90^\circ$; the asymmetry is small and it is real.
 
 At small speeds the angle is the area of the parallelogram. For $\lvert\vec u\rvert=\lvert\vec v\rvert=\epsilon$ at a right angle the ratio of $\theta_{\mathrm{wgn}}$ to $\lvert\vec u\times\vec v\rvert/2$ is $1.020479$ at $\epsilon=0.2$, $1.005029$ at $\epsilon=0.1$ and $1.001252$ at $\epsilon=0.05$, so the leading term is the cross product over two and the correction is quadratic. The Wigner angle is the curvature of velocity space seen at first order, and the closed form is the exact statement.
 
@@ -156,7 +156,7 @@ It does not prove the closed form. The companion proves it; the article verifies
 
 Velocity addition is associative only up to a rotation, and the rotation is the gyration. The identity $\vec u\oplus(\vec v\oplus\vec w)=(\vec u\oplus\vec v)\oplus\operatorname{gyr}[\vec u,\vec v]\vec w$ holds to $4.4\times10^{-16}$, the matrix is orthogonal of determinant one about $\pm\vec u\times\vec v$, and it is the same for every third velocity. The law is the Cartan decomposition of the product of two boost rotors, so the defect is a property of the group and not of the formula.
 
-The angle is exact in closed form and rational in the worked case. At $0.6$ and $0.6$ at a right angle it is $2\arctan(1/9)$, and the matrix is the rotation of the $9$–$40$–$41$ triangle. It vanishes for parallel and for antiparallel velocities, peaks at $\phi=96.38^\circ$ for equal speeds, and reduces to $\lvert\vec u\times\vec v\rvert/2$ at leading order in the speeds.
+The angle is exact in closed form and rational in the worked case. At $0.6$ and $0.6$ at a right angle it is $2\arctan(1/9)$, and the matrix is the rotation of the $9$–$40$–$41$ triangle. It vanishes for parallel and for antiparallel velocities, peaks at $\xi_{\mathrm{pot}}=96.38^\circ$ for equal speeds, and reduces to $\lvert\vec u\times\vec v\rvert/2$ at leading order in the speeds.
 
 The gyrogroup laws hold exactly. Gyrocommutativity to $1.1\times10^{-16}$, the two loop properties to $1.2\times10^{-14}$ and $8.8\times10^{-15}$, and the inverse law to $2.1\times10^{-15}$. The gyration is the holonomy of the closed triangle of boosts, so it is a curvature of velocity space and not a bookkeeping convention.
 
@@ -174,7 +174,7 @@ The gyration is the compact factor, and it is the only piece of a frame change t
 | $\tilde U_{\mathrm gyr}$ | the gyration rotor, real and of unit norm |
 | $\theta_{\mathrm{wgn}}$ | the gyration angle, written $\Omega$ in the companion |
 | $\theta_1,\theta_2$ | the rapidities of $\vec u$ and $\vec v$ |
-| $\phi$ | the angle between the directions of $\vec u$ and $\vec v$ |
+| $\xi_{\mathrm{pot}}$ | the angle between the directions of $\vec u$ and $\vec v$ |
 | $\vec u_{\mathrm r}$ | the axis of the gyration, $\pm\vec u\times\vec v$ |
 | $\mathrm{Cg}_{\tilde U}$ | the congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ |
 

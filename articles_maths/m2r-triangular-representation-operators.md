@@ -218,10 +218,10 @@ the kernel of the map from the group of pairs onto it being the two-dimensional 
 
 **The monoid is not a group, for the right reason.** The zero operator belongs to the family, as $L_{\varepsilon}R_{\varepsilon}$, and it is not invertible; so the monoid has a non-invertible member with both parameters nonzero, and it fails to be a group because of the zero divisors and not because of a sign. The temptation is to say that $-L_{Q}R_{P}$ is not in the family; it is, since $-L_{Q}R_{P}=L_{-Q}R_{P}$, the family being a subspace, and the correct reason is the one just given.
 
-**The automorphisms are inner in the ambient.** The automorphisms of the algebra are $\varphi_c(\varepsilon)=c\varepsilon$ with $c$ an invertible element, so $\operatorname{Aut}_R(\mathbb{C}_{\mathrm{dln},R})\cong R^{\times}$, a one-parameter group. Each is realised by a conjugation in $M_2(R)$,
+**The automorphisms are inner in the ambient.** The automorphisms of the algebra are $\digamma_{\mathrm{map},c}(\varepsilon)=c\varepsilon$ with $c$ an invertible element, so $\operatorname{Aut}_R(\mathbb{C}_{\mathrm{dln},R})\cong R^{\times}$, a one-parameter group. Each is realised by a conjugation in $M_2(R)$,
 
 $$
-\operatorname{diag}(c,1)\,\mathsf{M}_2(Q)\,\operatorname{diag}(c,1)^{-1}=\begin{pmatrix}q&cq'\\ 0&q\end{pmatrix}=\mathsf{M}_2\bigl(\varphi_c(Q)\bigr),
+\operatorname{diag}(c,1)\,\mathsf{M}_2(Q)\,\operatorname{diag}(c,1)^{-1}=\begin{pmatrix}q&cq'\\ 0&q\end{pmatrix}=\mathsf{M}_2\bigl(\digamma_{\mathrm{map},c}(Q)\bigr),
 $$
 
 and the conjugating matrix is not in the image unless $c=1$. So the automorphism group is inner in the ambient and outer in the algebra, which is the opposite of the complex case, where the Galois conjugation was reachable by the transpose and not by a product at all. The reason is that the dual conjugation is not the Galois twist of a field but the rescaling of a nilpotent, and a rescaling of the off-diagonal entry is exactly what a diagonal conjugation does.
@@ -347,7 +347,7 @@ of dimensions two, one and one. The family is the multiplication; with the scala
 5. The two-sided operator with the conjugate is $q^{2}\operatorname{id}$, so the two-sided family is the ray $[0,\infty)$ of the identity and the parameters giving the identity are the two parallel lines $q=\pm1$: the conic of the previous categories has degenerated.
 6. The Kronecker display is $\mathsf{M}_2(P)^{\mathsf{T}}\otimes\mathsf{M}_2(Q)$, of trace $4pq$, determinant $p^{4}q^{4}$, and rank in $\{0,1,2,4\}$: the second rank is not vacuous, and the value $2$ marks the pairs with exactly one nilpotent parameter.
 7. The monoid of two-sided operators is commutative, its group of invertibles is the group of invertibles of the algebra, and it fails to be a group through the zero divisors and not through a sign.
-8. The automorphisms are $\varphi_c(\varepsilon)=c\varepsilon$, realised by $\operatorname{diag}(c,1)$: inner in the ambient, outer in the algebra, the opposite of the complex case; the derivations are one-dimensional and no derivation is a multiplication.
+8. The automorphisms are $\digamma_{\mathrm{map},c}(\varepsilon)=c\varepsilon$, realised by $\operatorname{diag}(c,1)$: inner in the ambient, outer in the algebra, the opposite of the complex case; the derivations are one-dimensional and no derivation is a multiplication.
 9. The image of the parametrisation is a linear subspace of dimension two, the membership test is the two linear equations $c=0$, $a=d$, the coefficient array of a member is the vector $(q,q')$, and the length is in $\{0,1\}$.
 10. The operator rank takes $2,1,0$ while the coefficient rank is one, and the ambient decomposes as the family, the traceless diagonal carrying the residue and the derivation, and the lower corner carrying the transpose.
 
@@ -363,7 +363,7 @@ of dimensions two, one and one. The family is the multiplication; with the scala
 | $c(T_Q)=(q,q')$ | the coefficient array of a member, a vector of length two | this article |
 | $c(Q,P)$ | the array of the pair, of rank one for a pair with both factors nonzero | this article |
 | $\ell$ | the length, in $\{0,1\}$ inside the span | this article |
-| $\varphi_c$ | the automorphism $\varepsilon\mapsto c\varepsilon$, realised by $\operatorname{diag}(c,1)$ | *Dual-Numbers Automorphisms and Derivations* |
+| $\digamma_{\mathrm{map},c}$ | the automorphism $\varepsilon\mapsto c\varepsilon$, realised by $\operatorname{diag}(c,1)$ | *Dual-Numbers Automorphisms and Derivations* |
 | $\partial_\varepsilon$ | the derivation $q+\varepsilon q'\mapsto q'\varepsilon$, not a multiplication | *Dual-Numbers Automorphisms and Derivations* |
 | $\pi$ | the residue, the spectral projection of the model | *$M_2(R)$ Triangular Representation* |
 | $S$ | the swap, the change between the two triangular conventions | this article |

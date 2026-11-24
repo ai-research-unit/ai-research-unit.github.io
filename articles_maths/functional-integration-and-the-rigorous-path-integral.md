@@ -20,28 +20,28 @@ Throughout, $X$ is a real vector space with algebraic dual $X'$, $\mathcal{Z}(X)
 
 ### Cylinder Sets and Cylinder Measures
 
-**Definition (cylinder set).** Let $X$ be a real vector space and $X'$ its algebraic dual. For $\varphi_1,\dots,\varphi_n\in X'$ and a Borel set $B\in\mathcal{B}(\mathbb{R}^n)$, the **cylinder set** is
+**Definition (cylinder set).** Let $X$ be a real vector space and $X'$ its algebraic dual. For $\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n}\in X'$ and a Borel set $B\in\mathcal{B}(\mathbb{R}^n)$, the **cylinder set** is
 
 $$
-Z(\varphi_1,\dots,\varphi_n;B)=\{x\in X:(\varphi_1(x),\dots,\varphi_n(x))\in B\}.
+Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n};B)=\{x\in X:(\digamma_{\mathrm{map},1}(x),\dots,\digamma_{\mathrm{map},n}(x))\in B\}.
 $$
 
-The cylinder sets form an algebra $\mathcal{Z}(X)$ — closed under finite unions, intersections and complements — and the **cylinder $\sigma$-algebra** is the $\sigma$-algebra that they generate. A set of the form $Z(\varphi;B)$ with a single functional is the simplest cylinder, the preimage of a Borel set of the line.
+The cylinder sets form an algebra $\mathcal{Z}(X)$ — closed under finite unions, intersections and complements — and the **cylinder $\sigma$-algebra** is the $\sigma$-algebra that they generate. A set of the form $Z(\digamma_{\mathrm{map}};B)$ with a single functional is the simplest cylinder, the preimage of a Borel set of the line.
 
 **Definition (cylinder measure).** A **cylinder measure** on $X$ is a finitely additive map $\mu:\mathcal{Z}(X)\to[0,1]$ with $\mu(X)=1$. The measure is **consistent** if it is compatible with the coordinate projections, that is,
 
 $$
-\mu\bigl(Z(\varphi_1,\dots,\varphi_n;\pi^{-1}B')\bigr)=\mu\bigl(Z(\varphi_1,\dots,\varphi_{n-1};B')\bigr)
+\mu\bigl(Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n};\pi^{-1}B')\bigr)=\mu\bigl(Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n-1};B')\bigr)
 $$
 
 for every projection $\pi:\mathbb{R}^n\to\mathbb{R}^{n-1}$ onto the first $n-1$ coordinates. The measure is **$\sigma$-additive** if it is countably additive on the algebra $\mathcal{Z}(X)$.
 
-A consistent family of finite-dimensional distributions always defines a cylinder measure, by the prescription $\mu(Z(\varphi_1,\dots,\varphi_n;B))=\mu_{\varphi_1,\dots,\varphi_n}(B)$; the consistency is exactly what makes the prescription well defined on a set that has several representations. Finite additivity is then automatic, because a finite union of cylinder sets can be refined to a disjoint union over a common finite set of functionals. What is *not* automatic is countable additivity, and the whole difficulty of the subject is concentrated there.
+A consistent family of finite-dimensional distributions always defines a cylinder measure, by the prescription $\mu(Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n};B))=\mu_{\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n}}(B)$; the consistency is exactly what makes the prescription well defined on a set that has several representations. Finite additivity is then automatic, because a finite union of cylinder sets can be refined to a disjoint union over a common finite set of functionals. What is *not* automatic is countable additivity, and the whole difficulty of the subject is concentrated there.
 
-**Example (the Gaussian cylinder measure).** Let $Q$ be a positive self-adjoint operator on $H$ and let $\varphi_i=\langle u_i,\cdot\rangle$. The matrix $(Q_\varphi)_{ij}=\langle Qu_i,u_j\rangle$ is positive definite when the $u_i$ are linearly independent, and the prescription
+**Example (the Gaussian cylinder measure).** Let $Q$ be a positive self-adjoint operator on $H$ and let $\digamma_{\mathrm{map},i}=\langle u_i,\cdot\rangle$. The matrix $(Q_\digamma_{\mathrm{map}})_{ij}=\langle Qu_i,u_j\rangle$ is positive definite when the $u_i$ are linearly independent, and the prescription
 
 $$
-\mu\bigl(Z(\varphi_1,\dots,\varphi_n;B)\bigr)=\frac{1}{(2\pi)^{n/2}\sqrt{\det Q_\varphi}}\int_B\exp(-\frac12\langle Q_\varphi^{-1}y,y\rangle)\,dy
+\mu\bigl(Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n};B)\bigr)=\frac{1}{(2\pi)^{n/2}\sqrt{\det Q_\digamma_{\mathrm{map}}}}\int_B\exp(-\frac12\langle Q_\digamma_{\mathrm{map}}^{-1}y,y\rangle)\,dy
 $$
 
 is a cylinder measure on $H$, the **Gaussian cylinder measure with covariance $Q$**. Its characteristic functional is $\widehat\mu(\zeta)=\exp\bigl(-\tfrac12\langle Q\zeta,\zeta\rangle\bigr)$ for $\zeta\in H'=H$, and this functional determines the cylinder measure uniquely.
@@ -117,7 +117,7 @@ The Gaussian cylinder measure with $Q=I$ is the one that arises when a stochasti
 The path measure of Brownian motion is the case of the construction in which the cylinder measure does extend. Let $H=L^2(0,1)$ and let $Q$ be the positive self-adjoint operator with **integral kernel** $R(s,t)=\min(s,t)$:
 
 $$
-Q\psi(t)=\int_0^1\min(s,t)\psi(s)\,ds .
+QΞ_{\mathrm{wfn}}(t)=\int_0^1\min(s,t)Ξ_{\mathrm{wfn}}(s)\,ds .
 $$
 
 **Theorem (the Wiener measure).** The operator $Q$ above has the following properties.
@@ -234,7 +234,7 @@ and the statement is exact as long as the density is integrable. This is the pre
 
 ### The Free Euclidean Field
 
-The construction is not special to the heat equation. Let $M$ be a compact Riemannian manifold, or the torus $\mathbb{T}^d$, and let $C=(-\Delta+m^2)^{-1}$ with $m>0$. The operator $C$ is compact, positive, self-adjoint, and trace class, because its eigenvalues $\bigl(\lambda_k+m^2\bigr)^{-1}$ are summable; the Gaussian measure with covariance $C$ therefore exists on $L^2(M)$, and its formal density against the flat reference is $\exp\bigl(-\tfrac12\int_M(|\nabla\phi|^2+m^2\phi^2)\bigr)$, the **free Euclidean field** of mass $m$. This is the model case of constructive quantum field theory: the free measure is a Gaussian measure in the sense of this article, and the interacting measure, when it exists, is obtained from it by a density $\exp(-S_{\mathrm{int}})$ together with a renormalisation of the density so that the total mass remains one. That construction — the cluster expansion, the $\mathcal P(\varphi)_2$ models, the renormalisation of the products of a distributional field — is beyond the scope of this article and is treated in the references.
+The construction is not special to the heat equation. Let $M$ be a compact Riemannian manifold, or the torus $\mathbb{T}^d$, and let $C=(-\Delta+m^2)^{-1}$ with $m>0$. The operator $C$ is compact, positive, self-adjoint, and trace class, because its eigenvalues $\bigl(\lambda_k+m^2\bigr)^{-1}$ are summable; the Gaussian measure with covariance $C$ therefore exists on $L^2(M)$, and its formal density against the flat reference is $\exp\bigl(-\tfrac12\int_M(|\nabla\digamma_{\mathrm{map}}|^2+m^2\digamma_{\mathrm{map}}^2)\bigr)$, the **free Euclidean field** of mass $m$. This is the model case of constructive quantum field theory: the free measure is a Gaussian measure in the sense of this article, and the interacting measure, when it exists, is obtained from it by a density $\exp(-S_{\mathrm{int}})$ together with a renormalisation of the density so that the total mass remains one. That construction — the cluster expansion, the $\mathcal P(\digamma_{\mathrm{map}})_2$ models, the renormalisation of the products of a distributional field — is beyond the scope of this article and is treated in the references.
 
 ## The Oscillatory Path Integral and the Fresnel Obstruction
 
@@ -330,7 +330,7 @@ The Feynman–Kac formula identifies the Euclidean path integral with an integra
 |---|---|
 | $X$, $X'$ | real vector space and its algebraic dual |
 | $\mathcal{Z}(X)$ | algebra of cylinder sets |
-| $Z(\varphi_1,\dots,\varphi_n;B)$ | cylinder set of a finite list of functionals |
+| $Z(\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n};B)$ | cylinder set of a finite list of functionals |
 | $\mu$, $\widehat\mu$ | cylinder measure and its characteristic functional |
 | $H$, $\langle\cdot,\cdot\rangle$, $(e_k)$ | separable Hilbert space, inner product, orthonormal basis |
 | $Q$, $q_k$, $\operatorname{Tr}Q$ | covariance operator, its eigenvalues, its trace |

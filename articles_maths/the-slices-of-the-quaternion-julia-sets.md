@@ -18,9 +18,9 @@ Throughout, $\mathbb{C}_\nu=\operatorname{span}\{e_t,\nu\}$ for $\nu \in S^2=\{\
 
 ## The Invariant Slice
 
-**Theorem (the invariant slice is the complex Julia set).** Let $c \notin \mathbb{R}$ and let $\mathbb{C}_c=\operatorname{span}\{e_t,c\}$ be the plane of the parameter, with the identification $\varphi_c : \mathbb{C}_c \to \mathbb{C}$ sending $c$ to $\kappa(c)=c_0+i|\vec c|$; when $c \in \mathbb{R}$ take $\mathbb{C}_c=\mathbb{R}$ and $\varphi_c(c)=c$. Then $\mathbb{C}_c$ is invariant under $f_c$, and
+**Theorem (the invariant slice is the complex Julia set).** Let $c \notin \mathbb{R}$ and let $\mathbb{C}_c=\operatorname{span}\{e_t,c\}$ be the plane of the parameter, with the identification $\digamma_{\mathrm{map},c} : \mathbb{C}_c \to \mathbb{C}$ sending $c$ to $\kappa(c)=c_0+i|\vec c|$; when $c \in \mathbb{R}$ take $\mathbb{C}_c=\mathbb{R}$ and $\digamma_{\mathrm{map},c}(c)=c$. Then $\mathbb{C}_c$ is invariant under $f_c$, and
 
-$$ \boxed{\; J_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(J^{\mathbb{C}}_{\kappa(c)}\bigr), \qquad K_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(K^{\mathbb{C}}_{\kappa(c)}\bigr) \;} ,$$
+$$ \boxed{\; J_c \cap \mathbb{C}_c = \digamma_{\mathrm{map},c}^{-1}\bigl(J^{\mathbb{C}}_{\kappa(c)}\bigr), \qquad K_c \cap \mathbb{C}_c = \digamma_{\mathrm{map},c}^{-1}\bigl(K^{\mathbb{C}}_{\kappa(c)}\bigr) \;} ,$$
 
 where $J^{\mathbb{C}}_{\kappa}$ and $K^{\mathbb{C}}_{\kappa}$ are the Julia set and the filled Julia set of $z \mapsto z^2+\kappa$. In particular **the slice of the parameter is an honest complex Julia set**.
 
@@ -114,7 +114,7 @@ The slices of a quaternion Julia set are its intersections with the complex plan
 | $\vec u_{\mathrm d}=\vec q/\lvert\vec q\rvert$ | The unit pure quaternion of the vector part; the exact axis $\mathbb{C}_{\vec u_{\mathrm d}}$ |
 | $\mathbb{C}_c$ | The plane of the parameter, the invariant slice |
 | $\kappa(c)=c_0+i\lvert\vec c\rvert$ | The complex parameter of the invariant slice |
-| $\varphi_c$ | The isomorphism $\mathbb{C}_c\to\mathbb{C}$, $e_t\mapsto1$, $c\mapsto\kappa(c)$ |
+| $\digamma_{\mathrm{map},c}$ | The isomorphism $\mathbb{C}_c\to\mathbb{C}$, $e_t\mapsto1$, $c\mapsto\kappa(c)$ |
 | $J_c\cap\mathbb{C}_\nu$ | The slice of the Julia set by the axis $\nu$ |
 | $\operatorname{Ad}_{S^3}(X)$ | The rotational hull of $X$ |
 | $\sigma_c$ | The profile of $J_c$ in the half-plane, for real $c$ |

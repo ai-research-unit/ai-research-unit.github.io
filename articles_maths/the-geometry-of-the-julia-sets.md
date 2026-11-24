@@ -48,18 +48,18 @@ The article assumes *Complex Analysis* for the normal families and Montel's theo
 
 ## The Böttcher Coordinate and the External Rays
 
-**Theorem (Böttcher).** Let $P$ be a monic polynomial of degree $d \geq 2$. There is a conformal map $\varphi$ of a neighbourhood of $\infty$ onto a neighbourhood of $\infty$ with
+**Theorem (Böttcher).** Let $P$ be a monic polynomial of degree $d \geq 2$. There is a conformal map $\digamma_{\mathrm{map}}$ of a neighbourhood of $\infty$ onto a neighbourhood of $\infty$ with
 
 $$
-\boxed{\;\varphi(P(z)) = \varphi(z)^d, \qquad \varphi(z) = z + O(1)\;}
+\boxed{\;\digamma_{\mathrm{map}}(P(z)) = \digamma_{\mathrm{map}}(z)^d, \qquad \digamma_{\mathrm{map}}(z) = z + O(1)\;}
 $$
 
-near infinity, unique up to multiplication by a $(d-1)$-th root of unity. The function $G = \log|\varphi|$ extends to a continuous **Green's function** $G : \mathbb{C} \to [0,\infty)$ that is harmonic on $A(\infty)$, vanishes exactly on $K(P)$, and satisfies $G(P(z)) = d\,G(z)$.
+near infinity, unique up to multiplication by a $(d-1)$-th root of unity. The function $G = \log|\digamma_{\mathrm{map}}|$ extends to a continuous **Green's function** $G : \mathbb{C} \to [0,\infty)$ that is harmonic on $A(\infty)$, vanishes exactly on $K(P)$, and satisfies $G(P(z)) = d\,G(z)$.
 
 **Definition (equipotentials and external rays).** For $t > 0$ the **equipotential** is the level set $\{G = t\}$, a Jordan curve for $t$ small; the **external ray** of angle $\theta$ is
 
 $$
-\boxed{\;\gamma_\theta = \{z \in A(\infty) : G(z) > 0, \ \arg \varphi(z) = 2\pi\theta\}\;} ,
+\boxed{\;\gamma_\theta = \{z \in A(\infty) : G(z) > 0, \ \arg \digamma_{\mathrm{map}}(z) = 2\pi\theta\}\;} ,
 $$
 
 and the ray **lands** at the limit $\lim_{t \to 0^+} \gamma_\theta(t)$, where $\gamma_\theta(t)$ is the point of the ray with $G = t$, when the limit exists.
@@ -72,9 +72,9 @@ and the ray **lands** at the limit $\lim_{t \to 0^+} \gamma_\theta(t)$, where $\
 
 **(c)** The map of (b) semiconjugates the doubling map $\theta \mapsto d\theta$ on the circle to $P$ on $J(P)$.
 
-**Proof sketch.** (a) is the theorem of Douady and Hubbard: a rational ray cannot accumulate on a continuum of points of $J$ without crossing the equipotentials, and the landing angle is constrained by the critical orbits; the argument uses the count of the rays in each annulus and the theory of the polynomial-like restrictions. (b) the continuous extension is the Carathéodory criterion of the previous section, and the local connectedness makes the extension onto $J$ a quotient map; the landing angles are finite because the equivalence is semiconjugate to the doubling map. (c) the identity $\varphi(P(z)) = \varphi(z)^d$ says that $P$ sends the ray of angle $\theta$ to the ray of angle $d\theta$, and the landing points respect the identification.
+**Proof sketch.** (a) is the theorem of Douady and Hubbard: a rational ray cannot accumulate on a continuum of points of $J$ without crossing the equipotentials, and the landing angle is constrained by the critical orbits; the argument uses the count of the rays in each annulus and the theory of the polynomial-like restrictions. (b) the continuous extension is the Carathéodory criterion of the previous section, and the local connectedness makes the extension onto $J$ a quotient map; the landing angles are finite because the equivalence is semiconjugate to the doubling map. (c) the identity $\digamma_{\mathrm{map}}(P(z)) = \digamma_{\mathrm{map}}(z)^d$ says that $P$ sends the ray of angle $\theta$ to the ray of angle $d\theta$, and the landing points respect the identification.
 
-**Example (the ray landings, computed).** For $z \mapsto z^2$ one has $\varphi(z) = z$ and the ray of angle $\theta$ is the radial line, landing at $\exp(2\pi i\theta)$. For $z \mapsto z^2 - 2$ the Chebyshev conjugacy $z = w + w^{-1}$ gives $\varphi(z) = w$ for the branch at infinity, so the ray of angle $\theta$ lands at
+**Example (the ray landings, computed).** For $z \mapsto z^2$ one has $\digamma_{\mathrm{map}}(z) = z$ and the ray of angle $\theta$ is the radial line, landing at $\exp(2\pi i\theta)$. For $z \mapsto z^2 - 2$ the Chebyshev conjugacy $z = w + w^{-1}$ gives $\digamma_{\mathrm{map}}(z) = w$ for the branch at infinity, so the ray of angle $\theta$ lands at
 
 $$
 z(\theta) = 2\cos(2\pi\theta) .
@@ -88,7 +88,7 @@ At the low periods this is $z(0) = 2$, the repelling fixed point; $z(1/2) = -2$,
 
 **Theorem (Douady–Hubbard).** **(a)** $M$ is compact and connected, and its complement is conformally isomorphic to the complement of the closed unit disk; the isomorphism sends $M$ to the disk and is normalised at infinity. **(b)** $c \in M$ if and only if $J_c$ is connected; for $c \notin M$ the Julia set is a Cantor set. **(c)** The interior of $M$ is the set of hyperbolic parameters, whose maps have an attracting cycle, and the **bifurcation locus** — the parameters where the dynamics is not stable under perturbation — is the boundary $\partial M$.
 
-**Proof sketch.** (a) the critical point $0$ is the only critical point and the map $c \mapsto \varphi_c(c)$ (the value at the critical point of the Böttcher coordinate of the polynomial, defined for $c \notin M$) is the conformal isomorphism of the complement; the theory of the polynomial-like mappings shows that it extends to a homeomorphism and that $M$ is connected, the proof being the one indicated in *The Mandelbrot Set and the Quadratic Family*. (b) the connectedness of $K_c$ is the critical-orbit criterion of the previous section, and the alternative is the Cantor case. (c) the attracting cycle exists exactly for the interior parameters by the theorem of Douady–Hubbard, and the stability fails exactly on the boundary by the definition of the bifurcation locus, which is the subject of *The Fatou Components and the Classification of the Dynamics*.
+**Proof sketch.** (a) the critical point $0$ is the only critical point and the map $c \mapsto \digamma_{\mathrm{map},c}(c)$ (the value at the critical point of the Böttcher coordinate of the polynomial, defined for $c \notin M$) is the conformal isomorphism of the complement; the theory of the polynomial-like mappings shows that it extends to a homeomorphism and that $M$ is connected, the proof being the one indicated in *The Mandelbrot Set and the Quadratic Family*. (b) the connectedness of $K_c$ is the critical-orbit criterion of the previous section, and the alternative is the Cantor case. (c) the attracting cycle exists exactly for the interior parameters by the theorem of Douady–Hubbard, and the stability fails exactly on the boundary by the definition of the bifurcation locus, which is the subject of *The Fatou Components and the Classification of the Dynamics*.
 
 **Definition (parameter rays and the combinatorial model).** The **parameter ray** of angle $\theta$ is the image under the conformal isomorphism of the radial line of angle $\theta$ in the complement of the disk, and it **lands** at a point of $\partial M$ when the image extends to the boundary point.
 
@@ -126,7 +126,7 @@ For a rational map of degree at least two the sphere splits into the Fatou set, 
 |---|---|
 | $R$, $d$, $F(R)$, $J(R)$ | Rational map of degree $d \geq 2$; Fatou set; Julia set |
 | $P$, $K(P)$, $A(\infty)$ | Polynomial; filled Julia set, $J(P)=\partial K(P)$; basin of infinity |
-| $\varphi$, $G$ | Böttcher coordinate; Green's function $\log\lvert\varphi\rvert$ |
+| $\digamma_{\mathrm{map}}$, $G$ | Böttcher coordinate; Green's function $\log\lvert\digamma_{\mathrm{map}}\rvert$ |
 | $\gamma_\theta$, landing | External ray of angle $\theta$; the limit at $G\to0$ |
 | $2\cos(2\pi\theta)$ | Landing point of the ray of $z\mapsto z^2-2$ |
 | $M$, $\partial M$, MLC | Mandelbrot set; its boundary; the local-connectivity conjecture |

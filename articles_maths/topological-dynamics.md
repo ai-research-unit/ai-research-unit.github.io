@@ -23,7 +23,7 @@ $$
 
 the set of points that every orbit of $x$ visits arbitrarily late. When $T$ is a homeomorphism the **$\alpha$-limit set** $\alpha(x)$ is also defined, as the set of points that every backward orbit visits arbitrarily late, that is, the $\omega$-limit set of $x$ for the inverse system $(X,T^{-1})$; the **full orbit** is $\{T^nx:n \in \mathbb{Z}\}$. A subset $A \subseteq X$ is **invariant** if $T(A)\subseteq A$ and **totally invariant** if $T^{-1}(A)=A$; it is **minimal** if it is nonempty, closed and invariant and contains no proper nonempty closed invariant subset.
 
-For a flow $\varphi:\mathbb{R}\times X\to X$, that is, a continuous action of the additive group $\mathbb{R}$ (or of a semigroup), the same notions are defined with the orbit $\varphi(\mathbb{R},x)$ and the limit set $\omega(x)=\bigcap_{t\ge0}\overline{\varphi([t,\infty),x)}$. The discrete and the continuous theory run in parallel, and the statements below are given for a single continuous map, the flow versions being obtained by replacing the sequence $T^n$ by the family $\varphi_t$.
+For a flow $\digamma_{\mathrm{map}}:\mathbb{R}\times X\to X$, that is, a continuous action of the additive group $\mathbb{R}$ (or of a semigroup), the same notions are defined with the orbit $\digamma_{\mathrm{map}}(\mathbb{R},x)$ and the limit set $\omega(x)=\bigcap_{t\ge0}\overline{\digamma_{\mathrm{map}}([t,\infty),x)}$. The discrete and the continuous theory run in parallel, and the statements below are given for a single continuous map, the flow versions being obtained by replacing the sequence $T^n$ by the family $\digamma_{\mathrm{map},t}$.
 
 **Proposition (limit sets).** Let $X$ be compact and $T:X\to X$ continuous. Then for every $x \in X$ the set $\omega(x)$ is nonempty, compact and invariant, and $T(\omega(x))=\omega(x)$ when $T$ is a homeomorphism; more generally $\omega(x)$ is the smallest closed set that every tail of the orbit accumulates on, and $y \in\omega(x)$ if and only if there are $n_k\to\infty$ with $T^{n_k}x\to y$.
 
@@ -187,7 +187,7 @@ Topological transitivity — $T^n(Ζ)\cap V\neq\varnothing$ for all nonempty ope
 |---|---|
 | $(X,T)$ | topological dynamical system |
 | $T^n$ | iterate of $T$ |
-| $\varphi_t$ | flow, continuous action of $\mathbb{R}$ |
+| $\digamma_{\mathrm{map},t}$ | flow, continuous action of $\mathbb{R}$ |
 | $\mathcal O(x)$ | orbit of $x$ |
 | $\omega(x)$, $\alpha(x)$ | limit sets of the forward and backward orbit |
 | $\Omega(T)$ | non-wandering set |

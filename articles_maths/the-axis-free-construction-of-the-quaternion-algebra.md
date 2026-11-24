@@ -391,7 +391,7 @@ $$
 
 **Theorem.** The automorphisms of $\mathbb{H}$ are exactly the maps that fix $e_t$ and act on $V$ by a rotation, so $\operatorname{Aut}(\mathbb{H})\cong SO(3)$.
 
-*Proof.* Let $\phi$ be an automorphism. It fixes $e_t$, because the unit is the unique two-sided identity. It preserves the property of being a negative multiple of $e_t$, so it maps $V=\{0\}\cup\{u:u^2\in\mathbb{R}_{<0}e_t\}$ to itself. On $V$ it preserves squares, hence the inner product read from $\vec u^2=-\lvert\vec u\rvert^{2}e_t$, and it preserves products, hence the cross product and the orientation. So $\phi|_V$ is a rotation. Conversely a rotation $R$ of $V$, extended by the identity on $e_t$, preserves the inner product and satisfies $Ru\times Rv=(\det R)\,R(u\times v)=R(u\times v)$, so it preserves the product rule and is an automorphism. ∎
+*Proof.* Let $\digamma_{\mathrm{map}}$ be an automorphism. It fixes $e_t$, because the unit is the unique two-sided identity. It preserves the property of being a negative multiple of $e_t$, so it maps $V=\{0\}\cup\{u:u^2\in\mathbb{R}_{<0}e_t\}$ to itself. On $V$ it preserves squares, hence the inner product read from $\vec u^2=-\lvert\vec u\rvert^{2}e_t$, and it preserves products, hence the cross product and the orientation. So $\digamma_{\mathrm{map}}|_V$ is a rotation. Conversely a rotation $R$ of $V$, extended by the identity on $e_t$, preserves the inner product and satisfies $Ru\times Rv=(\det R)\,R(u\times v)=R(u\times v)$, so it preserves the product rule and is an automorphism. ∎
 
 **The corollary.** The automorphism group acts transitively on the unit sphere of $V$, so no root of $-e_t$ is an invariant of the algebra. A statement that names one is a statement about a frame.
 

@@ -27,19 +27,19 @@ where $\gamma_X : \mathbb{R} \to G$ is the one-parameter subgroup with $\gamma_X
 
 ### Naturality
 
-**Theorem (the exponential is natural in the group).** For a homomorphism of Lie groups $\varphi : G \to H$ with differential $\varphi_* : \mathrm{G} \to \mathrm{H}$ at the identity, the diagram
+**Theorem (the exponential is natural in the group).** For a homomorphism of Lie groups $\digamma_{\mathrm{map}} : G \to H$ with differential $\digamma_{\mathrm{map},*} : \mathrm{G} \to \mathrm{H}$ at the identity, the diagram
 
 $$
 \begin{array}{ccc}
-\mathrm{G} & \xrightarrow{\varphi_*} & \mathrm{H}\\
+\mathrm{G} & \xrightarrow{\digamma_{\mathrm{map},*}} & \mathrm{H}\\
 \big\downarrow\scriptstyle{\exp} & & \big\downarrow\scriptstyle{\exp}\\
-G & \xrightarrow{\varphi} & H
+G & \xrightarrow{\digamma_{\mathrm{map}}} & H
 \end{array}
 $$
 
-commutes: $\exp(\varphi_*X) = \varphi(\exp X)$ for every $X \in \mathrm{G}$. In particular the exponential commutes with the inner automorphisms, $\exp(\operatorname{Ad}_gX) = g(\exp X)g^{-1}$, with the adjoint representation of the group.
+commutes: $\exp(\digamma_{\mathrm{map},*}X) = \digamma_{\mathrm{map}}(\exp X)$ for every $X \in \mathrm{G}$. In particular the exponential commutes with the inner automorphisms, $\exp(\operatorname{Ad}_gX) = g(\exp X)g^{-1}$, with the adjoint representation of the group.
 
-*Proof.* The curve $t \mapsto \varphi(\exp tX)$ is a one-parameter subgroup of $H$ with derivative $\varphi_*X$ at $0$, and the one-parameter subgroup is unique; the inner automorphism statement is the special case $\varphi = \Psi_g$.
+*Proof.* The curve $t \mapsto \digamma_{\mathrm{map}}(\exp tX)$ is a one-parameter subgroup of $H$ with derivative $\digamma_{\mathrm{map},*}X$ at $0$, and the one-parameter subgroup is unique; the inner automorphism statement is the special case $\digamma_{\mathrm{map}} = \Psi_g$.
 
 ## The Differential and the Correction
 
@@ -132,7 +132,7 @@ The exponential map $\exp : \mathrm{G} \to G$ sends $X$ to the value at $1$ of t
 | $d\exp_X$ invertible $\iff \operatorname{ad}_X$ has no eigenvalue in $2\pi i\mathbb{Z}\setminus\{0\}$ | the local diffeomorphism criterion |
 | $\log(\exp X\exp Y) = X + Y + \frac12[X,Y] + \cdots$ | the Campbell--Baker--Hausdorff series |
 | $\operatorname{Ad}_{\exp X} = \exp(\operatorname{ad}_X)$ | the adjoint representation of the group |
-| $\exp(\varphi_*X) = \varphi(\exp X)$ | naturality of the exponential |
+| $\exp(\digamma_{\mathrm{map},*}X) = \digamma_{\mathrm{map}}(\exp X)$ | naturality of the exponential |
 | $\exp$ surjective for $G$ compact connected | the compact case |
 | $\exp$ bijective for $G$ simply connected nilpotent | the nilpotent case |
 

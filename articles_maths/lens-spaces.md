@@ -25,7 +25,7 @@ The action is free because the fixed-point set of $g^k$ in $\mathbb{C}^2$ is the
 
 **Proposition (equivalent constructions).** The lens spaces admit the following descriptions, and the identifications are natural:
 
-**(a) Heegaard genus one.** Cutting $S^3$ along the torus $\{|z_0|^2=|z_1|^2=1/2\}$ gives two solid tori, and the quotient acts on the torus as a translation; so $L(n,m) = V_0\cup_\phi V_1$ is the union of two solid tori glued by a homeomorphism $\phi$ of their boundaries. Every closed oriented three-manifold with a genus-one Heegaard splitting is a lens space, $S^3 = L(1,1)$, or $S^2\times S^1$, and the last is the only one of the three that is not a lens space.
+**(a) Heegaard genus one.** Cutting $S^3$ along the torus $\{|z_0|^2=|z_1|^2=1/2\}$ gives two solid tori, and the quotient acts on the torus as a translation; so $L(n,m) = V_0\cup_\digamma_{\mathrm{map}} V_1$ is the union of two solid tori glued by a homeomorphism $\digamma_{\mathrm{map}}$ of their boundaries. Every closed oriented three-manifold with a genus-one Heegaard splitting is a lens space, $S^3 = L(1,1)$, or $S^2\times S^1$, and the last is the only one of the three that is not a lens space.
 
 **(b) Dehn surgery on the unknot.** $L(n,m) = S^3_{n/m}(U)$ is the manifold obtained by Dehn surgery on the unknot with coefficient $n/m$; the meridian of the solid torus glued back is the curve of slope $n/m$ on the boundary torus. Since the unknot has a genus-one Heegaard splitting, this is the same as (a).
 
@@ -77,7 +77,7 @@ for some integer $r$. In particular the homeomorphism classification is strictly
 
 **Proof sketch.** The torsion is computed from the chain complex of the universal cover with the abelian coefficient system, and its behaviour under a homotopy equivalence is controlled by the Whitehead torsion, which need not vanish; the $h$-cobordism between the lens spaces is constructed from the difference of the attaching maps, and its nontriviality is read off from the torsion. The details of the $s$-cobordism and the Whitehead group belong.
 
-**Example.** The smallest example of the phenomenon is the pair $L(7,1)$ and $L(7,2)$: they have the same fundamental group $\mathbb{Z}/7$, the same homology and the same homotopy type, they are $h$-cobordant, and they are not homeomorphic. The homeomorphism classes of lens spaces with fundamental group $\mathbb{Z}/n$ are the orbits of the invertibles modulo $n$ under $m\mapsto \pm m^{\pm1}$, an orbit having four elements unless $m^2\equiv\pm1\pmod n$, when it has two; the orbits of size two are those of $m=\pm1$ and, for $n\equiv1\pmod4$, those of the two solutions of $m^2\equiv-1$, so that for an odd prime $n$ the number of classes is $1+(\varphi(n)-2)/4$ when $n\equiv3\pmod4$ and $2+(\varphi(n)-4)/4$ when $n\equiv1\pmod4$. For $n=7$ the classes are two, represented by $m=1$ and $m=2$, and the pair $L(7,1)$, $L(7,2)$ realises the failure of the homotopy classification; for $n=13$ the classes are four, represented by $m=1,2,3,5$.
+**Example.** The smallest example of the phenomenon is the pair $L(7,1)$ and $L(7,2)$: they have the same fundamental group $\mathbb{Z}/7$, the same homology and the same homotopy type, they are $h$-cobordant, and they are not homeomorphic. The homeomorphism classes of lens spaces with fundamental group $\mathbb{Z}/n$ are the orbits of the invertibles modulo $n$ under $m\mapsto \pm m^{\pm1}$, an orbit having four elements unless $m^2\equiv\pm1\pmod n$, when it has two; the orbits of size two are those of $m=\pm1$ and, for $n\equiv1\pmod4$, those of the two solutions of $m^2\equiv-1$, so that for an odd prime $n$ the number of classes is $1+(\digamma_{\mathrm{tot}}(n)-2)/4$ when $n\equiv3\pmod4$ and $2+(\digamma_{\mathrm{tot}}(n)-4)/4$ when $n\equiv1\pmod4$. For $n=7$ the classes are two, represented by $m=1$ and $m=2$, and the pair $L(7,1)$, $L(7,2)$ realises the failure of the homotopy classification; for $n=13$ the classes are four, represented by $m=1,2,3,5$.
 
 ## Invariants of the Lens Spaces
 
@@ -133,13 +133,13 @@ The classification is arithmetic. Up to homeomorphism $L(n,m)\cong L(n,m')$ if a
 |---|---|
 | $L(n,m)$ | Lens space $S^3/(\mathbb{Z}/n)$, action $\mathrm{diag}(\omega,\omega^m)$ |
 | $\omega$, $n$, $m$ | Primitive $n$-th root of unity; $\gcd(m,n)=1$ |
-| $V_0,V_1$, $\phi$ | Solid tori and gluing homeomorphism of the genus-one Heegaard splitting |
+| $V_0,V_1$, $\digamma_{\mathrm{map}}$ | Solid tori and gluing homeomorphism of the genus-one Heegaard splitting |
 | $S^3_{n/m}(U)$ | Dehn surgery on the unknot producing $L(n,m)$ |
 | $a_1,\ldots,a_k$ | Continued fraction coefficients of $-n/m$, $a_i\leq-2$; plumbing Euler numbers |
 | $P(a_1,\ldots,a_k)$ | Four-dimensional plumbing of disc bundles over $S^2$ with boundary $L(n,m)$ |
 | $\tau(L(n,m))$ | Reidemeister torsion; complete homeomorphism invariant within fixed $\pi_1$ |
 | Linking form $\lambda$ | Nonsingular form on $H_1=\mathbb{Z}/n$; $\lambda(1,1)=m^*/n$, $qq^*\equiv1$; a homotopy invariant |
-| $\varphi(n)$ | Euler totient; the homeomorphism classes with $\pi_1=\mathbb{Z}/n$ are the orbits of the invertibles under $m\mapsto\pm m^{\pm1}$ |
+| $\digamma_{\mathrm{tot}}(n)$ | Euler totient; the homeomorphism classes with $\pi_1=\mathbb{Z}/n$ are the orbits of the invertibles under $m\mapsto\pm m^{\pm1}$ |
 | $n$ perfect square | Necessary condition for $L(n,m)$ to bound a rational homology four-ball |
 | $d(L(n,m))$ | Heegaard Floer correction term; obstructs rational homology balls |
 | $\Sigma(2,3,5)$ | Poincaré homology sphere $S^3/I^*$ among the non-lens spherical space forms |

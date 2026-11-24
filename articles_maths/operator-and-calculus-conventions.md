@@ -56,96 +56,35 @@ The gradient decides the case cleanly: $\tilde\nabla_\Phi$ is not pure, because 
 
 ## The Two Sides and the Renaming Theorem
 
-**The statement.** Write $L_D\psi := D\psi$ and $R_D\psi := \psi D$ for the two one-sided actions on a field $\psi\in\mathbb{B}$. Then
-
+**The statement.** With $L_D\psi:=D\psi$ and $R_D\psi:=\psi D$ on a field $\psi\in\mathbb{B}$,
 $$
 R_D=\natural\circ L_{D^{\natural}}\circ\natural,
 \qquad
 L_D=\natural\circ R_{D^{\natural}}\circ\natural,
+\qquad
+(\psi D)^{\natural}=D^{\natural}\,\psi^{\natural}.
 $$
-
-and on a field
-
-$$
-\boxed{\;(\psi D)^{\natural}=D^{\natural}\,\psi^{\natural}\;}
-$$
+Three properties of $\natural$ carry it — involutive, $\mathbb{C}$-linear and an anti-automorphism — and the third does the work: the order of a product reverses.
 
 **A right action on $\psi$ is a left action on $\psi^{\natural}$.** The side is not a property of the equation. It is a property of the field the equation is written on.
 
-**The three properties.** Everything rests on them, and only the third is non-trivial.
+**What it does not say.** Not that the two operators are equal: on $D=-5e_t+3i\vec e_x$ the arrays $R_D$ and $L_{D^{\natural}}$ differ, and neither may be substituted for the other at sight. What is equal is the pair of solution sets after renaming.
 
-| property | statement | residual |
-|---|---|---|
-| involutive | $\natural\circ\natural=\mathrm{id}$ | $0$ |
-| $\mathbb{C}$-linear | $\natural(i\psi)=i\,\natural(\psi)$ | $0$ |
-| anti-automorphism | $(ab)^{\natural}=b^{\natural}a^{\natural}$ | $2.6\times10^{-15}$ over $400$ random complex pairs |
+**Where it does not reach.** Three cases, and each is stated where it is used. With more than one field the anti-automorphism reverses the whole order, $(\psi D\chi)^{\natural}=\chi^{\natural}D^{\natural}\psi^{\natural}$, so the two fields exchange places and renaming alone does not move the side; the bilinear identities of the integration articles stand in this case, and it is why they carry the superscript $R$ on the derivative. On a column $\psi\in\mathbb{C}^{4}$ there is no quaternion conjugation, only the antilinear Dirac adjoint, and on a space of functions of two variables, as in a star product, $\natural$ is not the involution in play: the theorem is a theorem about fields valued in $\mathbb{B}$. And in a two-sided action $a\psi b$, the mirror coupling, or the exchange of the two slots of a basis operator, conjugating the field destroys what is being displayed; there both factors stay in place and the side is named by position, or by $L_a$ and $R_a$.
 
-The first makes $\natural$ invertible with $\natural^{-1}=\natural$. The third makes it **reverse the order of a product**. The second lets the mass, which is central, pass through untouched. An involution that preserved the order would identify the two sides; one that reverses the order exchanges them. $\natural$ reverses, so it exchanges.
-
-**The proof is three symbols.** Applied to the two factors $\psi$ and $D$,
-
-$$
-(\psi D)^{\natural}=D^{\natural}\,\psi^{\natural}.
-$$
-
-Read forwards, conjugating a right action gives a left action of the conjugated operator. Read backwards, using $\natural^{2}=\mathrm{id}$, a right action is the conjugate of a left action — the two lines of the statement above.
-
-**In matrix form it is one congruence.** With $\mathsf C=\operatorname{diag}(1,-1,-1,-1)$ the matrix of $\natural$ on a coordinate column,
-
-$$
-\mathsf C\,R_D\,\mathsf C=L_{D^{\natural}},
-\qquad
-\mathsf C\,L_D\,\mathsf C=R_{D^{\natural}},
-\qquad\text{both at residual }0 .
-$$
-
-$\mathsf C$ is the change of basis that exchanges the two families, and $\mathsf C^{\mathsf T}\mathsf C=I$, $\det\mathsf C=-1$.
-
-**On an equation.** Take $\psi D=m\chi$ with $m$ central, so $m^{\natural}=m$, and conjugate both sides:
-
-$$
-D^{\natural}\,\psi^{\natural}=m\,\chi^{\natural}.
-$$
-
-The map $\Phi:(\psi,\chi)\mapsto(\psi^{\natural},\chi^{\natural})$ is $\mathbb{C}$-linear, involutive and invertible, so it is a **bijection of solution sets** and not an inclusion:
-
-$$
-\{\psi:\ \psi D=m\chi\}\ \xrightarrow{\ \Phi\ }\ \{u:\ D^{\natural}u=m\,\chi^{\natural}\},
-\qquad \Phi^{-1}=\Phi .
-$$
-
-Verified: a pair solved on the right at residual $2.0\times10^{-15}$ maps to a pair solved on the left at residual $1.1\times10^{-15}$, on all four basis solutions. Same solutions, relabelled.
-
-**What the theorem does not say.** It does not say the two operators are equal. On $D=-5e_t+3i\vec e_x$,
-
-$$
-\bigl\langle R_D-L_{D^{\natural}}\\bigr\rangle_*^{1/2}=8.4853\neq0 ,
-$$
-
-so the two arrays differ and neither may be substituted for the other at sight. What is equal is the pair of solution sets after renaming, not the operators.
-
-**Where the theorem does not reach.** Three cases, and each is stated where it is used.
-
-1. **More than one field.** The anti-automorphism reverses the whole order, $(\psi D\chi)^{\natural}=\chi^{\natural}D^{\natural}\psi^{\natural}$, residual $1.3\times10^{-14}$ over $200$ random triples. The two fields exchange places, so renaming alone does not suffice, and where the two fields are not the same object the reordering changes the statement. The bilinear identities of the integration articles stand in this case, and it is why they carry the superscript $R$ on the derivative.
-2. **A carrier without $\natural$.** On a column $\psi\in\mathbb{C}^{4}$ there is no quaternion conjugation, only the antilinear Dirac adjoint; on a space of functions of two variables, as in a star product, $\natural$ is not the involution in play. The theorem is a theorem about fields valued in $\mathbb{B}$.
-3. **The side itself on display.** For the two-sided action $a\psi b$, the mirror coupling, or the exchange of the two slots of a basis operator, conjugating the field destroys what is being displayed. There both factors stay in place and the side is named by position, or by $L_a$ and $R_a$.
-
-**The consequence for the corpus.** Every equation that acts on a single biquaternion field is written on the left. The ones that would read as acting on the right are the same equations on the conjugate field, and the chiral pair is the instance: with $\Phi=\tilde\Psi^{\natural}$, the pair $\tilde\nabla_\Phi\tilde\Psi_R=m\tilde\Psi_L$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ is complete as written, both equations acting from the left, and $\natural$ is what separates them. Across the $404$ files and $10\,196$ display equations of the physics corpus no glyph names a side: the side is position, the conjugation is $\natural$, and the exchange is $N$.
+**The consequence for the corpus.** Every equation that acts on a single biquaternion field is written on the left. The ones that would read as acting on the right are the same equations on the conjugate field, and the chiral pair is the instance: with $\Phi=\tilde\Psi^{\natural}$, the pair $\tilde\nabla_\Phi\tilde\Psi_R=m\tilde\Psi_L$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ is complete as written, both equations acting from the left, and $\natural$ is what separates them. No glyph names a side: the side is position, the conjugation is $\natural$, and the exchange is $N$.
 
 ## Conventions for Derivation
 
-In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; every partial derivative is written explicitly with $\partial$ followed by its variable, and no subscript is ever attached to the $\partial$ of a derivative. A subscript is therefore a component index, as in $v_x$ for the component of a velocity along an axis, or a label, as in $\tilde U_{\mathrm b}$; it never denotes a derivative. The derivative with respect to a coordinate is written with its parameter named, $\partial/\partial r'_t$ for the fourth slot and $\partial/\partial r_x$, $\partial/\partial r_y$ or $\partial/\partial r_z$ for the three space slots; a parameter is never left under the $\partial$, so none of the abbreviated spellings occurs, and the rule admits no exception for a derivative, neither on a free index nor on any other. A derivative with respect to a variable that is not a coordinate is written the same way, its variable named in full: the Lagrangian derivative puts the function in the numerator, $\partial L/\partial w$, so that where a PDE text writes $L_u$ and $L_p$ the calculus-of-variations and partial-differential-equation articles write $\partial L/\partial w$ and $\partial L/\partial p$; the second derivative has the same shape, $\partial^2 L/\partial w^2$. The function is named in the numerator whenever it is a letter of its own, as for a Lagrangian, a Hamiltonian or a generating function; the slashed form $\partial/\partial u$ is kept where the symbol is an operator or where the operand is a compound expression rather than a single letter. The fourth coordinate is the imaginary time $r'_t$, a real parameter, so the derivative along the slot is written out as $\partial/\partial r'_t$; the factor $-i$ that the imaginary unit brings stands on the coefficient of the gradient and never on the derivative.
+A subscript denotes a vector component, $v_x$, or a label, $\tilde U_{\mathrm b}$; it never denotes a derivative, as it does in the PDE convention. Every partial derivative is written with $\partial$ and its variable named, $\partial/\partial r'_t$ for the fourth slot and $\partial/\partial r_x$, $\partial/\partial r_y$, $\partial/\partial r_z$ for the three space slots; no parameter is left under the $\partial$, and no abbreviated spelling occurs. A derivative against a variable that is not a coordinate names that variable in full, with the function in the numerator where it is a letter of its own: $\partial L/\partial w$, $\partial^2 L/\partial w^2$. The slashed form $\partial/\partial u$ is kept where the symbol is an operator or the operand a compound expression. The fourth coordinate $r'_t$ is a real parameter, so the derivative along the slot is written out, and the factor $-i$ of the imaginary unit stands on the coefficient of the gradient, never on the derivative.
 
 **A subscript on an operator names its degree, its place, its bundle or its sector.** The rule governs the derivative of a function or a field, which names its variable after the $\partial$. It does not forbid a label on an operator that differentiates nothing: the chain boundary is $\partial_n:C_n\to C_{n-1}$ and the face maps are $\partial_i$, with the degree in the subscript; the distinguished boundary of a polydisc is $\partial_0D$; the tame symbol is $\partial_v$, with the place; the twisted Dolbeault operator is $\bar\partial_E$, with the bundle. These are operator labels, in the sense of *Index and Notation Conventions*, §*The Subscripts*, and they stand as written. The sector is one of them, and it is fixed in §*The Gradient*: $\tilde\nabla_{\Phi}$ and $\Box_{\Phi}$ name the material sector, the only sector in which the corpus writes a derivative, and the letter is never the name of a coordinate.
-
-**These studies do not use the covariant index conventions: subscripts are not coordinate indices or derivatives, partial derivatives are written with explicit operators, and structural information is carried by the algebra of the objects themselves.**
 
 **A contraction is written as an explicit sum, and the sum carries its scope.** Every index that is contracted is named under a $\sum$, and the $\sum$ also names the set the index runs over, so no reader has to infer a range. The space index runs over the three space letters, $\sum_{k\in\{x,y,z\}}$, and the coordinate index over the four, $\sum_{\mu\in\{t,x,y,z\}}$. The gradient is $\tilde\nabla_\Phi=-i\,e_t\partial/\partial r'_t+\sum_{k\in\{x,y,z\}}\vec e_k\partial/\partial r_k$, the spatial gradient $\sum_{k\in\{x,y,z\}}\vec e_k\partial/\partial r_k$, a basis-vector contraction $\sum_{k\in\{x,y,z\}}\vec e_kA_k$, and a sign-symbol contraction $\sum_{i,j\in\{x,y,z\}}\varepsilon_{ijk}A_iB_j$. No index is summed by convention, a repeated index is never left without its sum, and a sum is never left without its set.
 
 ### The Derivative Marks
 
 **No dot.** No derivative is written with a dot. The total derivative with respect to a parameter is written with a fraction and the parameter named: $\frac{d}{dt}$ for the parameter $t$, $\frac{d}{d\tau}$ for the parameter $\tau$, $\frac{d}{dt_r}$ for the parameter $t_r$; inline, the same derivative is written $dq/dt$. The partial derivative is written $\frac{\partial}{\partial t}$ or, inline, $\partial/\partial t$. A higher derivative is written $\frac{d^2}{dt^2}$, $\frac{\partial^2}{\partial t^2}$. The derivative binds to its whole argument, so a power is written outside a bracket, $\left(\frac{dx}{dt}\right)^2$, never as $\frac{dx^2}{dt}$.
-The marks that are not derivatives — the prime, the bar on an index and the underline of a scope — are fixed once, in *Index and Notation Conventions*, §*Marks That Are Not Indices*, and are used here as they are fixed there.
 
 **The dual-number derivation is a named operator.** The derivation in the nilpotent direction is written $\partial_{\mathrm{nil}}$, the upright name in the superscript saying which derivation it is, and it is defined by $\partial_{\mathrm{nil}}(q+\varepsilon q')=\varepsilon q'$. It is a derivation of the algebra, not a derivative with respect to a coordinate, so no coordinate is written under its $\partial$; its iterates are $(\partial_{\mathrm{nil}})^2$ and $\exp(t\,\partial_{\mathrm{nil}})$.
 
@@ -163,7 +102,7 @@ four complex coefficients on the four units and eight real parameters. The capit
 
 **The derivatives are operators on the material parameters, and on nothing else.** Four of the eight real parameters are differentiated in this series: the imaginary time $r'_t$ and the three real space numbers $r_k$. They are the material ones, and $\Phi$ is their name. The other four, the real time $r_t$ and the three imaginary space numbers $r'_k$, are never written under a $\partial$: they are read on elements, and no article of the series differentiates against them. So a derivative has one of two shapes, $\partial/\partial r'_t$ or $\partial/\partial r_k$, and no derivative of the corpus is written against $R_\mu$, against $\bar R_\mu$ or against any other parameter.
 
-**The coefficient carries no dilation.** The four material parameters are lengths in one and the same unit, and the derivative, the gradient and every sign follow from the algebra alone. A dilation in front of the whole derivative would divide all of its terms and would change no structure, so it is a normalisation and not an object of the theory. No dilation is written, and the fourth coordinate therefore carries no unit the three vector coordinates do not.
+**The coefficient carries no dilation.** The four material parameters are lengths in one and the same unit, and the derivative, the gradient and every sign follow from the algebra alone. A dilation in front of the whole derivative would divide all of its terms and would change no structure, so it is a normalisation and not an object of the theory. No dilation and no numerical factor stands in front of it, and the fourth coordinate therefore carries no unit the three vector coordinates do not.
 
 **The gradient.** The first-order operator is the sum of the four unit-weighted derivatives on the four material parameters,
 
@@ -381,19 +320,9 @@ with the unit after each bracket. It does not pass to the left of $\tilde Q_2$: 
 
 **What it is not.** Not a transpose without conjugation: $\mathsf C$ is not the identity, and $\mathsf C^{\mathsf T}\mathsf C=I$ with $\det\mathsf C=-1$ make the congruence a congruence and not a similarity. Not the adjoint either: the dagger carries the integration by parts and the boundary term, while $\natural$ carries the invertibles alone at fixed coordinate; the two agree on the gradient, $\tilde\nabla_\Phi^{*}=(\tilde\nabla_\Phi)^{\natural}$, and part on a general element.
 
-**Verified.** On random polynomial fields in the four coordinates the boxed line holds at residual $0.0$, the reconstruction from the conjugate at $0.0$, the chiral instance at $0.0$, and the product rule above at $0.0$; on $\tilde Q_1=x\vec e_x$ and $\tilde Q_2=\vec e_y$ the naive rule returns $-\vec e_y$ where the product rule returns $+\vec e_y$. The anti-automorphism it uses holds at residual $1.0\times10^{-15}$ over $200$ random pairs; the automorphism that would be needed if the units were not reversed fails at $2.7\times10^{1}$.
-
 ## Summary
 
-An operator acting by multiplication **is** the element it multiplies by, so its glyph is the glyph of that element and the marks are read on it as on the element. The named operators take an upright capital and carry the element in the subscript: left multiplication $L_{\tilde Q}$, right multiplication $R_{\tilde Q}$, the two-sided $L_{\tilde Q_1}R_{\tilde Q_2}$, the two-sided operator $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, the inner derivation $\operatorname{ad}_{\tilde Q}$ and the automorphism $\operatorname{Ad}_{\tilde Q}$. The two-sided operator with no qualifier is the bilinear one, and it is quadratic in $\tilde Q$, not bilinear. The side of an action is position, $D\psi$ against $\psi D$; the two are exchanged by the quaternion conjugation, $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$, so a right action on a field is a left action on the conjugate field, and no glyph marks a side. The superscript $R$ marks the right derivative, the one case the exchange does not reach, and on the gradient even that case is a conjugation: $\tilde Q_1\overleftarrow{\tilde\nabla_\Phi}=\bigl((\tilde\nabla_\Phi)^{\natural}\tilde Q_1^{\natural}\bigr)^{\natural}$, so a right action is the left action of the conjugate gradient on the conjugate field, and the identity needs no equation.
-
-The **dagger** is the general adjoint of an operator, never of an element, and it is not a fifth conjugation: several adjoints arise at once, one for each form and one for each two-sided operator, and the dagger is the mark that covers them all. An operator written as an array — a linear map on a coordinate column, a matrix in the $2\times2$ image or a regular matrix — carries no tilde. The **Fock exception** is the one mark that says a glyph is an operator and not an element of the algebra, and its superscript $\mathrm{fop}$ is fixed in *Index and Notation Conventions*.
-
-No derivative is written with a dot, and the prime, the bar and the underline are marks of *Index and Notation Conventions*, §*Marks That Are Not Indices*, used here as fixed there. Every partial derivative is written with $\partial$ and its variable, the subscript is a component index and never a derivative, and every derivative is written against a material parameter, $\partial/\partial r'_t$ or $\partial/\partial r_k$, with no factor of two and no dilation in front. Every derivative operator of the corpus carries the subscript $\Phi$: the gradient $\tilde\nabla_\Phi$, its conjugate $(\tilde\nabla_\Phi)^{\natural}$, the spatial gradient $\vec\nabla_\Phi$, the Laplacian $\Delta_\Phi$ and the d'Alembertian $\Box_\Phi$. None of the five is ever written without it, and no glyph of the corpus names a gradient, a Laplacian or a d'Alembertian of the informational part.
-
-The two derivative operators of the corpus are the **biquaternionic gradient** $\tilde\nabla_\Phi=-i\,e_t\partial/\partial r'_t+\sum_{k\in\{x,y,z\}}\vec e_k\partial/\partial r_k$ and the **d'Alembertian** $\Box_\Phi=\langle\tilde\nabla_\Phi\rangle_{\natural}=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)$, the quaternionic norm of the gradient, with the **spatial gradient** $\vec\nabla_\Phi$ and the **Laplacian** $\Delta_\Phi$ as their parts; every one of the five glyphs carries the subscript and none is written without it; the operator is scalar and acts coefficient by coefficient. The two derivatives act on two chiral parts, and the series writes the dynamics as two equations, $\tilde\nabla_\Phi\Psi_R=m\Psi_L$ and $(\tilde\nabla_\Phi)^{\natural}\Psi_L=m\Psi_R$, of §*The Two First-Order Equations and Their Symbol*. The pair operator $\mathbb{D}$ is not allowed: it hides the adjoint, the metric and the signs, and its square is $\Box_\Phi$ on each part only after composing the two lines. On $\mathbb{B}_{\Phi}$ the operator is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$, which is the series' d'Alembertian and not the wave operator of the opposite overall sign. A low sector mark names the sector of the coefficients and not a slice.
-
-The four products are read on the gradient: the plain bilinear product holds the divergence, the gradient and the curl of a field in one object; the quaternionic bilinear product reads the conjugate derivative; the Hermitian product gives the definite form; and the Krein product gives the indefinite one, whose norm coincides with the plain bilinear norm. **A contraction is a form, never an index**: the metric is the sign vector inside the product, and no index is raised or lowered.
+An operator acting by multiplication **is** the element it multiplies by, so its glyph is that element's and the marks are read on it. The named operators take an upright capital and carry the element in the subscript: $L_{\tilde Q}$, $R_{\tilde Q}$, the two-sided $L_{\tilde Q_1}R_{\tilde Q_2}$, $\operatorname{ad}_{\tilde Q}$ and $\operatorname{Ad}_{\tilde Q}$. The side of an action is position, not a mark, and the quaternion conjugation exchanges the two. The **dagger** is the general adjoint of an operator, never a fifth conjugation. Every derivative operator carries the subscript $\Phi$, every derivative names its variable, and the pair operator $\mathbb{D}$ is not allowed, because it hides the adjoint and the signs.
 
 ## Summary of Notation
 

@@ -43,7 +43,7 @@ That $\operatorname{sym}(X)$ is a group is the content of the propositions above
 
 **Proof.** If $|X| \leq 2$ there are at most two bijections and they commute. If $X$ contains three distinct elements $a, b, c$, let $f$ interchange $a$ and $b$ and fix $c$, and let $g$ interchange $b$ and $c$ and fix $a$. Then $g(f(a)) = g(b) = c$ while $f(g(a)) = f(a) = b$, so $f \circ g \neq g \circ f$.
 
-**Remark.** The group $\operatorname{sym}(X)$ depends only on the cardinality of $X$: a bijection $\varphi : X \to Y$ induces an isomorphism $\operatorname{sym}(X) \to \operatorname{sym}(Y)$, $f \mapsto \varphi \circ f \circ \varphi^{-1}$. Consequently the labelling of a finite set is a convention and carries no group-theoretic content, a fact used silently whenever one writes $S_n$.
+**Remark.** The group $\operatorname{sym}(X)$ depends only on the cardinality of $X$: a bijection $\digamma_{\mathrm{map}} : X \to Y$ induces an isomorphism $\operatorname{sym}(X) \to \operatorname{sym}(Y)$, $f \mapsto \digamma_{\mathrm{map}} \circ f \circ \digamma_{\mathrm{map}}^{-1}$. Consequently the labelling of a finite set is a convention and carries no group-theoretic content, a fact used silently whenever one writes $S_n$.
 
 ### Right Actions and the Opposite Group
 
@@ -151,9 +151,9 @@ If $X$ has a single orbit the action is **transitive**; if in addition every poi
 
 ### Equivariant Maps and Isomorphism of Actions
 
-**Definition.** Let $X$ and $Y$ be $G$-sets. A map $\varphi : X \to Y$ is **$G$-equivariant**, or a **map of $G$-sets**, if $\varphi(a \cdot x) = a \cdot \varphi(x)$ for all $a \in G$, $x \in X$. An invertible equivariant map is an **isomorphism of $G$-sets**.
+**Definition.** Let $X$ and $Y$ be $G$-sets. A map $\digamma_{\mathrm{map}} : X \to Y$ is **$G$-equivariant**, or a **map of $G$-sets**, if $\digamma_{\mathrm{map}}(a \cdot x) = a \cdot \digamma_{\mathrm{map}}(x)$ for all $a \in G$, $x \in X$. An invertible equivariant map is an **isomorphism of $G$-sets**.
 
-The $G$-sets and their equivariant maps form a category, and the structural theorem of the category is that every transitive $G$-set is isomorphic to a coset $G$-set $G/H$: choose $x \in X$, let $H = \operatorname{Stab}(x)$, and let $\varphi : G/H \to X$ be $\varphi(a H) = a \cdot x$. This map is well defined, equivariant and bijective, the last by transitivity and the injectivity computation of the orbit–stabiliser theorem. An arbitrary $G$-set is the disjoint union of its orbits, each of which is such a coset space; thus the $G$-sets are exactly the disjoint unions of coset spaces $G/H$.
+The $G$-sets and their equivariant maps form a category, and the structural theorem of the category is that every transitive $G$-set is isomorphic to a coset $G$-set $G/H$: choose $x \in X$, let $H = \operatorname{Stab}(x)$, and let $\digamma_{\mathrm{map}} : G/H \to X$ be $\digamma_{\mathrm{map}}(a H) = a \cdot x$. This map is well defined, equivariant and bijective, the last by transitivity and the injectivity computation of the orbit–stabiliser theorem. An arbitrary $G$-set is the disjoint union of its orbits, each of which is such a coset space; thus the $G$-sets are exactly the disjoint unions of coset spaces $G/H$.
 
 ## Cayley's Theorem and the Permutation Representation
 

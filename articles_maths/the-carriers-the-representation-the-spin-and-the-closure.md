@@ -346,10 +346,10 @@ and on the group of invertibles, $Q^{*}=Q^{-1}$, both reduce to conjugation by t
 
 For a rotor $\tilde u_{\mathrm r}$, the coefficients are real, so $\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$ and $N(\tilde u_{\mathrm r})=1$. Both operators are the same operator, and each is conjugation by the inverse.
 
-For a boost $\tilde U_{\mathrm b}=\cosh\tfrac\phi2\,e_t+i\sinh\tfrac\phi2\,\vec n$ with real unit $\vec n$, the element is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and it is not the inverse of itself. But its norm is
+For a boost $\tilde U_{\mathrm b}=\cosh\tfrac\digamma_{\mathrm{map}}2\,e_t+i\sinh\tfrac\digamma_{\mathrm{map}}2\,\vec n$ with real unit $\vec n$, the element is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and it is not the inverse of itself. But its norm is
 
 $$
-N(\tilde U_{\mathrm b})=\cosh^{2}\tfrac\phi2-\sinh^{2}\tfrac\phi2=1,
+N(\tilde U_{\mathrm b})=\cosh^{2}\tfrac\digamma_{\mathrm{map}}2-\sinh^{2}\tfrac\digamma_{\mathrm{map}}2=1,
 $$
 
 because $(i\vec n)^{2}=+e_t$ and the two squares therefore subtract. So $\tilde U_{\mathrm b}^{\natural}=\tilde U_{\mathrm b}^{-1}$, and the operator $\Phi$ is conjugation by the inverse on the boost sector as well. The operator that fails there is $\Theta$: its second factor is $\tilde U_{\mathrm b}$ and not $\tilde U_{\mathrm b}^{-1}$, and $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}=\tilde U_{\mathrm b}^{2}$ is not central, so $\Theta_{\tilde U_{\mathrm b}}$ is not multiplicative at all.

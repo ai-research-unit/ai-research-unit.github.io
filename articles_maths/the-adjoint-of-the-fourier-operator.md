@@ -227,7 +227,7 @@ Symmetry*.
 ## The Distributional and Group Cases
 
 **Remark (tempered distributions).** The transform extends to the tempered distributions by
-$\langle\mathcal F T,\varphi\rangle=\langle T,\mathcal F\varphi\rangle$, and the adjoint identity is the
+$\langle\mathcal F T,\digamma_{\mathrm{map}}\rangle=\langle T,\mathcal F\digamma_{\mathrm{map}}\rangle$, and the adjoint identity is the
 definition; on the tempered distributions the order-four relation $\mathcal F^4=\mathrm{id}$, the reflection
 $\mathcal F^2=R$ and the statement that the adjoint is the inverse continue to hold. The distributional
 transform is *Distributions and Fundamental Solutions*, later in this Part.

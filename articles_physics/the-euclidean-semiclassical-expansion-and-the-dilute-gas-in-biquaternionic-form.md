@@ -15,10 +15,10 @@
 
 **The continuation.** The path integral $e^{\frac{2\pi iS}{h}}$ becomes $e^{-\frac{2\pi S_E}{h}}$ after continuation to Euclidean signature, and the weight is then largest where the Euclidean action is smallest. The saddle points are the solutions of the Euclidean equations of motion, and the integral is a sum of Gaussian fluctuations about them.
 
-**The expansion.** For a saddle $\phi_0$,
+**The expansion.** For a saddle $\xi_{\mathrm{pot},0}$,
 
 $$
-Z=\sum_{\phi_0}e^{-S_E[\phi_0]\frac{2\pi}{h}}\int\mathcal{D}\delta\phi\ e^{-\frac{1}{2}\delta\phi\,S''[\phi_0]\,\frac{2\pi \delta\phi}{h}},
+Z=\sum_{\xi_{\mathrm{pot},0}}e^{-S_E[\xi_{\mathrm{pot},0}]\frac{2\pi}{h}}\int\mathcal{D}\delta\xi_{\mathrm{pot}}\ e^{-\frac{1}{2}\delta\xi_{\mathrm{pot}}\,S''[\xi_{\mathrm{pot},0}]\,\frac{2\pi \delta\xi_{\mathrm{pot}}}{h}},
 $$
 
 the inner integral being the one-loop determinant, which contributes a prefactor rather than a phase.
@@ -30,7 +30,7 @@ the inner integral being the one-loop determinant, which contributes a prefactor
 **The Jacobian.** The cure is to change variables from the field to the collective coordinates plus the orthogonal fluctuations. The change of variables produces a Jacobian,
 
 $$
-\boxed{\;\mathcal{D}\phi=\prod_i d c_i\ \sqrt{\det\left(\left\langle\frac{\partial\phi_0}{\partial c_i},\frac{\partial\phi_0}{\partial c_j}\right\rangle\right)}\ \mathcal{D}\phi_{\perp}\;}
+\boxed{\;\mathcal{D}\xi_{\mathrm{pot}}=\prod_i d c_i\ \sqrt{\det\left(\left\langle\frac{\partial\xi_{\mathrm{pot},0}}{\partial c_i},\frac{\partial\xi_{\mathrm{pot},0}}{\partial c_j}\right\rangle\right)}\ \mathcal{D}\xi_{\mathrm{pot},\perp}\;}
 $$
 
 so each zero mode becomes an integration over its coordinate with a measure fixed by the field-space metric. The determinant is the overlap matrix of the tangent vectors, and it is what makes the answer finite and correct.

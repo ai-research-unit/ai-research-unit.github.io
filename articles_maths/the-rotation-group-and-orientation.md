@@ -167,7 +167,7 @@ the unit circle, and $\operatorname{SO}(2)$ is abelian.
 
 **Proposition.** Every element of $SO(2)$ is a product of two reflections, and the angle of the rotation is twice the angle between the two mirror lines.
 
-**Proof.** Let $\tau_{\mathrm{rgp},\theta}$ denote the reflection of the plane in the line at angle $\theta_{\mathrm{rgp}}$ from the positive $x$-axis. A computation gives $\tau_{\mathrm{rgp},\theta} \tau_\psi = R(2(\theta_{\mathrm{rgp}} - \psi))$, so the product of two reflections is a rotation through twice the angle between the lines, and every angle is achieved.
+**Proof.** Let $\tau_{\mathrm{rgp},\theta}$ denote the reflection of the plane in the line at angle $\theta_{\mathrm{rgp}}$ from the positive $x$-axis. A computation gives $\tau_{\mathrm{rgp},\theta} \tau_Ξ_{\mathrm{wfn}} = R(2(\theta_{\mathrm{rgp}} - Ξ_{\mathrm{wfn}}))$, so the product of two reflections is a rotation through twice the angle between the lines, and every angle is achieved.
 
 The parametrisation by the circle is the plane case of the general fact that a compact connected abelian Lie group is a torus; the higher-dimensional tori appear.
 

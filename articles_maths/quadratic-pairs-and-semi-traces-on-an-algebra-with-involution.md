@@ -171,12 +171,12 @@ which does not contain the identity. A semi-trace is then impossible: with $a = 
 **Definition.** For a degree-two Azumaya $R$-algebra $A$ and an element $a \in A$, set
 
 $$
-\psi(a) = \operatorname{Trd}(a)\,1_A-a .
+Ξ_{\mathrm{wfn}}(a) = \operatorname{Trd}(a)\,1_A-a .
 $$
 
-**Proposition.** $\psi$ is an involution of $A$, it fixes the scalars and negates the scalar-free part; over a field with two invertible it is the conjugation of the quaternion algebra, and it is of symplectic type, with $\mathrm{sym}(A,\psi)$ the scalars of dimension one.
+**Proposition.** $Ξ_{\mathrm{wfn}}$ is an involution of $A$, it fixes the scalars and negates the scalar-free part; over a field with two invertible it is the conjugation of the quaternion algebra, and it is of symplectic type, with $\mathrm{sym}(A,Ξ_{\mathrm{wfn}})$ the scalars of dimension one.
 
-*Proof.* Squaring, $\psi(\psi(a)) = \operatorname{Trd}(\psi(a))1_A-\psi(a)$, and $\operatorname{Trd}(\psi(a)) = \operatorname{Trd}(a)$, since $\operatorname{Trd}(1_A) = 2$ for a degree-two algebra; hence $\psi(\psi(a)) = a$. For the anti-multiplicativity, an element of a degree-two algebra satisfies the reduced characteristic identity
+*Proof.* Squaring, $Ξ_{\mathrm{wfn}}(Ξ_{\mathrm{wfn}}(a)) = \operatorname{Trd}(Ξ_{\mathrm{wfn}}(a))1_A-Ξ_{\mathrm{wfn}}(a)$, and $\operatorname{Trd}(Ξ_{\mathrm{wfn}}(a)) = \operatorname{Trd}(a)$, since $\operatorname{Trd}(1_A) = 2$ for a degree-two algebra; hence $Ξ_{\mathrm{wfn}}(Ξ_{\mathrm{wfn}}(a)) = a$. For the anti-multiplicativity, an element of a degree-two algebra satisfies the reduced characteristic identity
 
 $$
 a^2-\operatorname{Trd}(a)\,a+\operatorname{Nrd}(a)\,1_A = 0,
@@ -188,22 +188,22 @@ $$
 ab+ba = \operatorname{Trd}(a)\,b+\operatorname{Trd}(b)\,a+\operatorname{Trd}(ab)\,1_A-\operatorname{Trd}(a)\operatorname{Trd}(b)\,1_A .
 $$
 
-Expanding $\psi(a)\psi(b) = (\operatorname{Trd}(a)1_A-a)(\operatorname{Trd}(b)1_A-b)$ and substituting the linearisation gives $\psi(a)\psi(b) = \operatorname{Trd}(ab)1_A-ba = \psi(ba)$, so $\psi$ is an anti-automorphism. A scalar $\lambda$ gives $\psi(\lambda) = 2\lambda-\lambda = \lambda$, and a traceless element is negated. Over a field with two invertible, $\psi(a) = a$ forces $2a = \operatorname{Trd}(a)1_A$, hence $a$ scalar, so $\mathrm{sym}(A,\psi)$ has dimension one, which is $\tfrac12\cdot 2\cdot(2-1)$ and therefore the symplectic type.
+Expanding $Ξ_{\mathrm{wfn}}(a)Ξ_{\mathrm{wfn}}(b) = (\operatorname{Trd}(a)1_A-a)(\operatorname{Trd}(b)1_A-b)$ and substituting the linearisation gives $Ξ_{\mathrm{wfn}}(a)Ξ_{\mathrm{wfn}}(b) = \operatorname{Trd}(ab)1_A-ba = Ξ_{\mathrm{wfn}}(ba)$, so $Ξ_{\mathrm{wfn}}$ is an anti-automorphism. A scalar $\lambda$ gives $Ξ_{\mathrm{wfn}}(\lambda) = 2\lambda-\lambda = \lambda$, and a traceless element is negated. Over a field with two invertible, $Ξ_{\mathrm{wfn}}(a) = a$ forces $2a = \operatorname{Trd}(a)1_A$, hence $a$ scalar, so $\mathrm{sym}(A,Ξ_{\mathrm{wfn}})$ has dimension one, which is $\tfrac12\cdot 2\cdot(2-1)$ and therefore the symplectic type.
 
-**Remark (the characteristic-two case).** In characteristic two the formula is still an involution and an anti-automorphism, and the symmetrized elements are the image of the map $a \mapsto \operatorname{Trd}(a)1_A$, which is the scalar line and contains the unit; the involution **is** locally quadratic. Its semi-traces are the maps $f(s) = \operatorname{Trd}(\ell s)$ with $\operatorname{Trd}(\ell) = 1$, which exist because the reduced trace of a degree-two algebra is not identically zero in characteristic two, even though $\operatorname{Trd}(1_A) = 2 = 0$ there. On $M_2(\mathbb{F}_2)$ with the involution $\psi(X) = \operatorname{tr}(X)I-X$ one may take $\ell = E_{11}$, and $f(s) = \operatorname{tr}(E_{11}s)$ is a semi-trace. The pair therefore exists, whereas the transpose's does not.
+**Remark (the characteristic-two case).** In characteristic two the formula is still an involution and an anti-automorphism, and the symmetrized elements are the image of the map $a \mapsto \operatorname{Trd}(a)1_A$, which is the scalar line and contains the unit; the involution **is** locally quadratic. Its semi-traces are the maps $f(s) = \operatorname{Trd}(\ell s)$ with $\operatorname{Trd}(\ell) = 1$, which exist because the reduced trace of a degree-two algebra is not identically zero in characteristic two, even though $\operatorname{Trd}(1_A) = 2 = 0$ there. On $M_2(\mathbb{F}_2)$ with the involution $Ξ_{\mathrm{wfn}}(X) = \operatorname{tr}(X)I-X$ one may take $\ell = E_{11}$, and $f(s) = \operatorname{tr}(E_{11}s)$ is a semi-trace. The pair therefore exists, whereas the transpose's does not.
 
 ### The Degree-Four Case: Two Quaternion Algebras
 
-Let $F$ be a field with two invertible, let $Q_1$, $Q_2$ be quaternion $F$-algebras with their canonical involutions $\psi_1$, $\psi_2$ of the previous example, and let
+Let $F$ be a field with two invertible, let $Q_1$, $Q_2$ be quaternion $F$-algebras with their canonical involutions $Ξ_{\mathrm{wfn},1}$, $Ξ_{\mathrm{wfn},2}$ of the previous example, and let
 
 $$
-A = Q_1\otimes_F Q_2, \qquad \sigma = \psi_1\otimes\psi_2 .
+A = Q_1\otimes_F Q_2, \qquad \sigma = Ξ_{\mathrm{wfn},1}\otimesΞ_{\mathrm{wfn},2} .
 $$
 
 The algebra $A$ is the **biquaternion algebra** of *Division Algebras*, sixteen-dimensional over $F$ and of degree four, and $\sigma$ is an involution of it. The symmetric elements of a tensor product of involutions are computed parity by parity, a pair of even elements and a pair of odd ones contributing a symmetric product and a mixed pair an anti-Hermitian one, so that
 
 $$
-\mathrm{sym}(A,\sigma) = \mathrm{sym}(Q_1,\psi_1)\otimes\mathrm{sym}(Q_2,\psi_2)\oplus\mathrm{Skew}(Q_1,\psi_1)\otimes\mathrm{Skew}(Q_2,\psi_2),
+\mathrm{sym}(A,\sigma) = \mathrm{sym}(Q_1,Ξ_{\mathrm{wfn},1})\otimes\mathrm{sym}(Q_2,Ξ_{\mathrm{wfn},2})\oplus\mathrm{Skew}(Q_1,Ξ_{\mathrm{wfn},1})\otimes\mathrm{Skew}(Q_2,Ξ_{\mathrm{wfn},2}),
 $$
 
 of dimension $1\cdot 1+3\cdot 3 = 10$, which is $\tfrac12\cdot 4\cdot 5$: the involution $\sigma$ is of **orthogonal type**, and $(A,\sigma,\tfrac12\operatorname{Trd})$ is a quadratic triple of degree four. The pair is the one carried by the biquaternion algebra in the relative deformation theorem of the closing section.
@@ -266,7 +266,7 @@ The counterpoint of the whole construction is the question of what happens when 
 
 ## Summary
 
-Over a base in which two is invertible the involutions of a central simple algebra are classified by the dimension of the symmetric part, and the alternating elements are the antisymmetric ones and the symmetrized elements the symmetric ones; in characteristic two the symmetric and the antisymmetric elements coincide, the alternating and the symmetrized ones coincide, and the two collapses destroy the type and the eigenspace decomposition at once. The repair is the **semi-trace**, an $R$-module map $f : \mathrm{sym}(A,\sigma) \to R$ with $f(a+\sigma(a)) = \operatorname{Trd}(a)$, and the resulting **quadratic pair** $(\sigma,f)$ and **quadratic triple** $(A,\sigma,f)$. When two is invertible the semi-trace is forced to be $\tfrac12\operatorname{Trd}$ and the pair is the involution; over a general base the semi-traces are classified by the elements $\lambda \in A/\mathrm{Alt}(A,\sigma)$ with $\zeta(\lambda) = 1_A$, they exist exactly when the unit is a symmetrized element, and the involution is then called locally quadratic. The matrix transpose is orthogonal over a field with two invertible but carries no semi-trace over $\mathbb{F}_2$, since its symmetrized elements miss the unit; the canonical involution $a \mapsto \operatorname{Trd}(a)1_A-a$ of a quaternion algebra is symplectic over a field with two invertible and locally quadratic in characteristic two, where its semi-traces are the maps $s \mapsto \operatorname{Trd}(\ell s)$ with $\operatorname{Trd}(\ell) = 1$; and the involution $\psi_1\otimes\psi_2$ of a tensor product of two quaternion algebras is orthogonal of degree four, with a symmetric part of dimension ten, which is the degree-four case of the theory. The submodules carry three cohomological obstructions, the strong, the intermediate and the weak, chained in characteristic two and living in the cohomology of sheaves; the intermediate one is new and vanishes exactly when the extension of the Lie algebra $\mathfrak{pgo}_{(A,\sigma,f)}$ by the scalars splits. Finally, a quadratic triple is relatively unobstructed when two is invertible or the degree is two, and in characteristic two the relative obstruction exists, on the biquaternion algebra of an Igusa surface.
+Over a base in which two is invertible the involutions of a central simple algebra are classified by the dimension of the symmetric part, and the alternating elements are the antisymmetric ones and the symmetrized elements the symmetric ones; in characteristic two the symmetric and the antisymmetric elements coincide, the alternating and the symmetrized ones coincide, and the two collapses destroy the type and the eigenspace decomposition at once. The repair is the **semi-trace**, an $R$-module map $f : \mathrm{sym}(A,\sigma) \to R$ with $f(a+\sigma(a)) = \operatorname{Trd}(a)$, and the resulting **quadratic pair** $(\sigma,f)$ and **quadratic triple** $(A,\sigma,f)$. When two is invertible the semi-trace is forced to be $\tfrac12\operatorname{Trd}$ and the pair is the involution; over a general base the semi-traces are classified by the elements $\lambda \in A/\mathrm{Alt}(A,\sigma)$ with $\zeta(\lambda) = 1_A$, they exist exactly when the unit is a symmetrized element, and the involution is then called locally quadratic. The matrix transpose is orthogonal over a field with two invertible but carries no semi-trace over $\mathbb{F}_2$, since its symmetrized elements miss the unit; the canonical involution $a \mapsto \operatorname{Trd}(a)1_A-a$ of a quaternion algebra is symplectic over a field with two invertible and locally quadratic in characteristic two, where its semi-traces are the maps $s \mapsto \operatorname{Trd}(\ell s)$ with $\operatorname{Trd}(\ell) = 1$; and the involution $Ξ_{\mathrm{wfn},1}\otimesΞ_{\mathrm{wfn},2}$ of a tensor product of two quaternion algebras is orthogonal of degree four, with a symmetric part of dimension ten, which is the degree-four case of the theory. The submodules carry three cohomological obstructions, the strong, the intermediate and the weak, chained in characteristic two and living in the cohomology of sheaves; the intermediate one is new and vanishes exactly when the extension of the Lie algebra $\mathfrak{pgo}_{(A,\sigma,f)}$ by the scalars splits. Finally, a quadratic triple is relatively unobstructed when two is invertible or the degree is two, and in characteristic two the relative obstruction exists, on the biquaternion algebra of an Igusa surface.
 
 ## Summary of Notation
 
@@ -288,7 +288,7 @@ Over a base in which two is invertible the involutions of a central simple algeb
 | $f_\lambda(s) = \operatorname{Trd}(\ell s)$ | The semi-trace attached to $\lambda$ |
 | $1_A \in \mathrm{Symd}(A,\sigma)$ | The locally quadratic condition |
 | $a \mapsto \operatorname{Trd}(a)1_A-a$ | The canonical involution of a degree-two algebra |
-| $\psi_1\otimes\psi_2$ | The orthogonal involution of $Q_1\otimes_F Q_2$ |
+| $Ξ_{\mathrm{wfn},1}\otimesΞ_{\mathrm{wfn},2}$ | The orthogonal involution of $Q_1\otimes_F Q_2$ |
 | $\Omega,\Omega',\omega$ | The strong, intermediate and weak obstruction |
 | $\mathfrak{pgo}_{(A,\sigma,f)}$ | The Lie algebra of the automorphism group of the triple |
 

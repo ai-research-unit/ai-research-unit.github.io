@@ -133,10 +133,10 @@ $$
 
 **Proof.** The product rule gives $(uv)' = u'v + uv'$, and both sides are Riemann integrable; the second fundamental theorem applied to $uv$ gives the identity.
 
-**Theorem (substitution).** Let $\varphi : [\alpha,\beta] \to [a,b]$ be continuously differentiable and increasing with $\varphi(\alpha) = a$, $\varphi(\beta) = b$, and let $f$ be continuous on $[a,b]$. Then
+**Theorem (substitution).** Let $\digamma_{\mathrm{map}} : [\alpha,\beta] \to [a,b]$ be continuously differentiable and increasing with $\digamma_{\mathrm{map}}(\alpha) = a$, $\digamma_{\mathrm{map}}(\beta) = b$, and let $f$ be continuous on $[a,b]$. Then
 
 $$
-\int_a^b f(c)\,dc = \int_\alpha^\beta f(\varphi(t))\,\varphi'(t)\,dt .
+\int_a^b f(c)\,dc = \int_\alpha^\beta f(\digamma_{\mathrm{map}}(t))\,\digamma_{\mathrm{map}}'(t)\,dt .
 $$
 
 **Proof.** Both sides are differentiable functions of the upper limit with the same derivative, by the chain rule and the first fundamental theorem; they agree at the lower limit, hence everywhere.

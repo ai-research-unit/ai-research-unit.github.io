@@ -50,7 +50,7 @@ The modules over the algebra are [The Category of Modules over the Quaternion Al
 
 **Definition.** A **spinor** of the algebra is a column
 $$
-\psi=\begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}\in\mathbb{C}^2,
+Ξ_{\mathrm{wfn}}=\begin{pmatrix}Ξ_{\mathrm{wfn},1}\\ Ξ_{\mathrm{wfn},2}\end{pmatrix}\in\mathbb{C}^2,
 $$
 with the action of $\tilde q=z_0+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$ given by the left multiplication of its matrix.
 
@@ -64,13 +64,13 @@ with the action of $\tilde q=z_0+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$ given by t
 
 **Theorem (the quaternionic structure).** The column space carries the anti-linear map
 $$
-j(\psi)=J\bar\psi,\qquad J=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+j(Ξ_{\mathrm{wfn}})=J\barΞ_{\mathrm{wfn}},\qquad J=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
 $$
-which satisfies $j^2=-\mathrm{id}$ and commutes with the action of $\mathbb{H}$: $j(\tilde q\psi)=\tilde q\,j(\psi)$.
+which satisfies $j^2=-\mathrm{id}$ and commutes with the action of $\mathbb{H}$: $j(\tilde qΞ_{\mathrm{wfn}})=\tilde q\,j(Ξ_{\mathrm{wfn}})$.
 
-*Proof.* The matrix $J$ is real, so $j^2(\psi)=J\overline{J\bar\psi}=J^2\psi=-\psi$; and for the matrix $X$ of a quaternion the identity $J\bar X=XJ$ holds on the four basis matrices, so $j(X\psi)=J\bar X\bar\psi=XJ\bar\psi=Xj(\psi)$. Verified on the basis.
+*Proof.* The matrix $J$ is real, so $j^2(Ξ_{\mathrm{wfn}})=J\overline{J\barΞ_{\mathrm{wfn}}}=J^2Ξ_{\mathrm{wfn}}=-Ξ_{\mathrm{wfn}}$; and for the matrix $X$ of a quaternion the identity $J\bar X=XJ$ holds on the four basis matrices, so $j(XΞ_{\mathrm{wfn}})=J\bar X\barΞ_{\mathrm{wfn}}=XJ\barΞ_{\mathrm{wfn}}=Xj(Ξ_{\mathrm{wfn}})$. Verified on the basis.
 
-**Corollary (there is no real spinor).** The fixed points of $j$ are zero: an anti-linear map of square $-1$ has no non-zero fixed vector, since $j\psi=\psi$ gives $-\psi=j^2\psi=\psi$. So the spinor of the algebra is quaternionic and has no real part in the sense of a fixed subspace.
+**Corollary (there is no real spinor).** The fixed points of $j$ are zero: an anti-linear map of square $-1$ has no non-zero fixed vector, since $jΞ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn}}$ gives $-Ξ_{\mathrm{wfn}}=j^2Ξ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn}}$. So the spinor of the algebra is quaternionic and has no real part in the sense of a fixed subspace.
 
 *Proof.* The computation of the square and the definition of a fixed point. Verified on the basis.
 
@@ -124,7 +124,7 @@ $\mathbb{H}$ has none: its only left ideals are $0$ and the algebra, the regular
 
 The chirality projector $\tfrac12(e_t+\vec u)$ of the complexified block is invertible over $\mathbb{R}$, of norm $\tfrac12$, so it is an automorphism of the module and cuts nothing.
 
-The matrix model lends the algebra the carrier $\mathbb{C}^2$, a minimal left ideal of $M_2(\mathbb{C})$ and a simple module of real dimension four, which is the regular module; the spinor is a column and the quaternionic structure $j(\psi)=J\bar\psi$ satisfies $j^2=-1$ and commutes with the action up to the conjugation.
+The matrix model lends the algebra the carrier $\mathbb{C}^2$, a minimal left ideal of $M_2(\mathbb{C})$ and a simple module of real dimension four, which is the regular module; the spinor is a column and the quaternionic structure $j(Ξ_{\mathrm{wfn}})=J\barΞ_{\mathrm{wfn}}$ satisfies $j^2=-1$ and commutes with the action up to the conjugation.
 
 The two carriers $S_\pm(\vec u)$ of the biquaternion block are the two coordinate lines; the quaternionic structure exchanges them, no single one descends, and their sum is the quaternionic line that survives.
 
@@ -138,7 +138,7 @@ The Weyl reading fails because the chirality projector is invertible, and the Ma
 | $\tilde e_\pm=\tfrac12(e_t\pm\vec u)$ | the chirality projectors of the complexified block |
 | $S_\pm(\vec u)$ | the two carriers $B\tilde e_\pm$ |
 | $\mathbb{C}^2$ | the column carrier of the matrix model |
-| $j(\psi)=J\bar\psi$ | the quaternionic structure, $j^2=-1$ |
+| $j(Ξ_{\mathrm{wfn}})=J\barΞ_{\mathrm{wfn}}$ | the quaternionic structure, $j^2=-1$ |
 | $B=\mathbb{C}\otimes\mathbb{H}$ | the biquaternion algebra |
 
 ## Further Reading

@@ -25,7 +25,7 @@ $$
 
 and its **coboundary operator** is $d$; for the Čech complex of a cover it is the alternating sum of the restriction maps, as in *The Coboundary Operator* and *Čech Cohomology*, and for a resolution of a sheaf it is the differential of the resolution.
 
-**Definition.** A **morphism of complexes** $\psi:(\mathcal{C}^{\bullet},d)\to(\mathcal{D}^{\bullet},e)$ is a family of morphisms $\psi^n:\mathcal{C}^n\to\mathcal{D}^n$ with $\psi\circ d=e\circ\psi$; two morphisms are **homotopic** if they differ by $h d+d h$ for a family $h$ of degree $-1$, and homotopic morphisms induce the same map on cohomology.
+**Definition.** A **morphism of complexes** $Ξ_{\mathrm{wfn}}:(\mathcal{C}^{\bullet},d)\to(\mathcal{D}^{\bullet},e)$ is a family of morphisms $Ξ_{\mathrm{wfn}}^n:\mathcal{C}^n\to\mathcal{D}^n$ with $Ξ_{\mathrm{wfn}}\circ d=e\circΞ_{\mathrm{wfn}}$; two morphisms are **homotopic** if they differ by $h d+d h$ for a family $h$ of degree $-1$, and homotopic morphisms induce the same map on cohomology.
 
 **Proposition (the cohomology).** The cohomology $H^n(\mathcal{C}^{\bullet})=\ker(d:\mathcal{C}^n\to\mathcal{C}^{n+1})/\operatorname{im}(d:\mathcal{C}^{n-1}\to\mathcal{C}^n)$ is well defined, and a morphism of complexes induces a morphism on the cohomology that depends only on its homotopy class.
 

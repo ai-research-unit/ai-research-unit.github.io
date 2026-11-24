@@ -237,7 +237,7 @@ The eigenvalue decomposition is the special case $n = 0$, equivalently $e_i = 1$
 
 ### Functoriality
 
-An algebra homomorphism $\varphi : A \to B$ sends the Jordan–Chevalley decomposition of $a$ to that of $\varphi(a)$: $\varphi(s)$ is semisimple because its minimal polynomial divides $m_s$, $\varphi(n)$ is nilpotent because $\varphi(n)^m = \varphi(n^m) = 0$, and they commute. When the decomposition is unique, it is the decomposition of $\varphi(a)$. In particular, a representation of $A$ carries the decomposition of $a$ to the matrix decomposition of the image.
+An algebra homomorphism $\digamma_{\mathrm{map}} : A \to B$ sends the Jordan–Chevalley decomposition of $a$ to that of $\digamma_{\mathrm{map}}(a)$: $\digamma_{\mathrm{map}}(s)$ is semisimple because its minimal polynomial divides $m_s$, $\digamma_{\mathrm{tot}}(n)$ is nilpotent because $\digamma_{\mathrm{tot}}(n)^m = \digamma_{\mathrm{map}}(n^m) = 0$, and they commute. When the decomposition is unique, it is the decomposition of $\digamma_{\mathrm{map}}(a)$. In particular, a representation of $A$ carries the decomposition of $a$ to the matrix decomposition of the image.
 
 ## The Matrix Case
 

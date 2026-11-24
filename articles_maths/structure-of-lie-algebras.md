@@ -25,7 +25,7 @@ $$
 \mathrm{Z}(\mathrm{G}) = \{x \in \mathrm{G} : [x, y] = 0 \text{ for all } y \in \mathrm{G}\},
 $$
 
-and the derived subalgebra is $[\mathrm{G}, \mathrm{G}] = \operatorname{span}\{[x, y] : x, y \in \mathrm{G}\}$. A subspace $\mathrm{I} \subseteq \mathrm{G}$ is an **ideal** if $[\mathrm{G}, \mathrm{I}] \subseteq \mathrm{I}$; the centre and the derived subalgebra are ideals, and the quotient $\mathrm{G}/\mathrm{I}$ inherits a bracket. A linear map $\varphi : \mathrm{G} \to \mathrm{H}$ is a **homomorphism** if $\varphi([x, y]) = [\varphi(x), \varphi(y)]$; its kernel is an ideal and its image is a subalgebra, and the first isomorphism theorem holds. All of this is the content of *Lie Algebras*.
+and the derived subalgebra is $[\mathrm{G}, \mathrm{G}] = \operatorname{span}\{[x, y] : x, y \in \mathrm{G}\}$. A subspace $\mathrm{I} \subseteq \mathrm{G}$ is an **ideal** if $[\mathrm{G}, \mathrm{I}] \subseteq \mathrm{I}$; the centre and the derived subalgebra are ideals, and the quotient $\mathrm{G}/\mathrm{I}$ inherits a bracket. A linear map $\digamma_{\mathrm{map}} : \mathrm{G} \to \mathrm{H}$ is a **homomorphism** if $\digamma_{\mathrm{map}}([x, y]) = [\digamma_{\mathrm{map}}(x), \digamma_{\mathrm{map}}(y)]$; its kernel is an ideal and its image is a subalgebra, and the first isomorphism theorem holds. All of this is the content of *Lie Algebras*.
 
 Recall also that the bracket of ideals is an ideal, so the derived subalgebra of an ideal is again an ideal; iterating this observation produces the derived series below.
 

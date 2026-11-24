@@ -186,18 +186,18 @@ So the zeroth moment of the convolution is the product of the zeroth moments, an
 
 ### Approximate Identities
 
-A sequence $(\phi_n)$ in $L^1(\mathbb{C}_{\mathrm{dln}})$ is an **approximate identity** if
+A sequence $(\digamma_{\mathrm{map},n})$ in $L^1(\mathbb{C}_{\mathrm{dln}})$ is an **approximate identity** if
 
 $$
-\int_{\mathbb{C}_{\mathrm{dln}}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{\|Q\| > \delta} |\phi_n(Q)| \, dQ \to 0
+\int_{\mathbb{C}_{\mathrm{dln}}} \digamma_{\mathrm{map},n} = 1, \qquad \sup_n \|\digamma_{\mathrm{map},n}\|_1 < \infty, \qquad \int_{\|Q\| > \delta} |\digamma_{\mathrm{map},n}(Q)| \, dQ \to 0
 $$
 
 for every $\delta > 0$.
 
-**Theorem.** If $(\phi_n)$ is an approximate identity and $f \in L^{n}(\mathbb{C}_{\mathrm{dln}})$ for $1 \leq p < \infty$, then
+**Theorem.** If $(\digamma_{\mathrm{map},n})$ is an approximate identity and $f \in L^{n}(\mathbb{C}_{\mathrm{dln}})$ for $1 \leq p < \infty$, then
 
 $$
-\|f * \phi_n - f\|_p \to 0.
+\|f * \digamma_{\mathrm{map},n} - f\|_p \to 0.
 $$
 
 This is the same as in the real case, because the additive group of $\mathbb{C}_{\mathrm{dln}}$ is just $\mathbb{R}^2$.
@@ -210,22 +210,22 @@ A **tempered distribution** on $\mathbb{C}_{\mathrm{dln}}$ is a continuous linea
 
 ### Operations on Distributions
 
-**Differentiation.** For $T \in \mathcal{S}'(\mathbb{C}_{\mathrm{dln}})$ and $\phi \in \mathcal{S}(\mathbb{C}_{\mathrm{dln}})$,
+**Differentiation.** For $T \in \mathcal{S}'(\mathbb{C}_{\mathrm{dln}})$ and $\digamma_{\mathrm{map}} \in \mathcal{S}(\mathbb{C}_{\mathrm{dln}})$,
 
 $$
-\langle \partial/\partial q T, \phi \rangle = -\langle T, \partial/\partial q \phi \rangle, \qquad \langle \partial/\partial q' T, \phi \rangle = -\langle T, \partial/\partial q' \phi \rangle.
+\langle \partial/\partial q T, \digamma_{\mathrm{map}} \rangle = -\langle T, \partial/\partial q \digamma_{\mathrm{map}} \rangle, \qquad \langle \partial/\partial q' T, \digamma_{\mathrm{map}} \rangle = -\langle T, \partial/\partial q' \digamma_{\mathrm{map}} \rangle.
 $$
 
 **Multiplication by a function.** For $f \in C^\infty(\mathbb{C}_{\mathrm{dln}})$ with polynomial growth and $T \in \mathcal{S}'(\mathbb{C}_{\mathrm{dln}})$,
 
 $$
-\langle f T, \phi \rangle = \langle T, f \phi \rangle.
+\langle f T, \digamma_{\mathrm{map}} \rangle = \langle T, f \digamma_{\mathrm{map}} \rangle.
 $$
 
-**Dual Fourier transform.** For $T \in \mathcal{S}'(\mathbb{C}_{\mathrm{dln}})$ and $\phi \in \mathcal{S}(\mathbb{C}_{\mathrm{dln}})$,
+**Dual Fourier transform.** For $T \in \mathcal{S}'(\mathbb{C}_{\mathrm{dln}})$ and $\digamma_{\mathrm{map}} \in \mathcal{S}(\mathbb{C}_{\mathrm{dln}})$,
 
 $$
-\langle \hat{T}, \phi \rangle = \langle T, \hat{\phi} \rangle.
+\langle \hat{T}, \digamma_{\mathrm{map}} \rangle = \langle T, \hat{\digamma_{\mathrm{map}}} \rangle.
 $$
 
 Because the transform truncates to a moment map, it is **not** a bijection on $\mathcal{S}'(\mathbb{C}_{\mathrm{dln}})$: its real part is constant, its infinitesimal part is affine in $\zeta$, and it is therefore far from injective.
@@ -235,7 +235,7 @@ Because the transform truncates to a moment map, it is **not** a bijection on $\
 The **delta distribution** $\delta$ is the tempered distribution
 
 $$
-\langle \delta, \phi \rangle = \phi(0).
+\langle \delta, \digamma_{\mathrm{map}} \rangle = \digamma_{\mathrm{map}}(0).
 $$
 
 Its dual Fourier transform is the constant function $1$, and the delta is the identity for convolution: $\delta * T = T$ for every tempered distribution $T$.
@@ -245,7 +245,7 @@ Its dual Fourier transform is the constant function $1$, and the delta is the id
 The **infinitesimal delta** is the distribution
 
 $$
-\langle \delta_\varepsilon, \phi \rangle = \partial_{\mathrm{nil}} \phi(0),
+\langle \delta_\varepsilon, \digamma_{\mathrm{map}} \rangle = \partial_{\mathrm{nil}} \digamma_{\mathrm{map}}(0),
 $$
 
 where $\partial_{\mathrm{nil}}$ is the derivation that extracts the infinitesimal part. It is the distributional content of the maximal ideal, and it is the dual analogue of the derivative of the delta.

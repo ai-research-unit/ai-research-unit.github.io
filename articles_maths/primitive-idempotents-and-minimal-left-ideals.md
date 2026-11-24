@@ -96,13 +96,13 @@ The endomorphism ring of $Ae$ computes the corner, and Schur's lemma turns minim
 
 **Proposition (necessity).** Let $e\neq0$ be an idempotent. If $Ae$ is a minimal left ideal, then $eAe$ is a division ring. If $eA$ is a minimal right ideal, then $eAe$ is a division ring.
 
-*Proof.* The endomorphism ring of the left module $Ae$ is isomorphic to $(eAe)_{\mathrm{opp}}$. Indeed, an $A$-linear map $\varphi:Ae\to Ae$ is determined by $a=\varphi(e)\in eAe$, because for $x\in Ae$ one has $x=xe$ and
+*Proof.* The endomorphism ring of the left module $Ae$ is isomorphic to $(eAe)_{\mathrm{opp}}$. Indeed, an $A$-linear map $\digamma_{\mathrm{map}}:Ae\to Ae$ is determined by $a=\digamma_{\mathrm{map}}(e)\in eAe$, because for $x\in Ae$ one has $x=xe$ and
 
 $$
-\varphi(x)=\varphi(xe)=x\varphi(e)=xa,
+\digamma_{\mathrm{map}}(x)=\digamma_{\mathrm{map}}(xe)=x\digamma_{\mathrm{map}}(e)=xa,
 $$
 
-and conversely every $a\in eAe$ defines the $A$-linear map $\rho_a(x)=xa$. The assignment $\varphi\mapsto a$ is a ring isomorphism onto $(eAe)_{\mathrm{opp}}$, since $\rho_a\rho_b=\rho_{ba}$. If $Ae$ is simple, Schur's lemma says that its endomorphism ring is a division ring; hence $(eAe)_{\mathrm{opp}}$ and therefore $eAe$ are division rings. The right-hand statement is the same computation for the right module $eA$, whose endomorphism ring is $eAe$.
+and conversely every $a\in eAe$ defines the $A$-linear map $\rho_a(x)=xa$. The assignment $\digamma_{\mathrm{map}}\mapsto a$ is a ring isomorphism onto $(eAe)_{\mathrm{opp}}$, since $\rho_a\rho_b=\rho_{ba}$. If $Ae$ is simple, Schur's lemma says that its endomorphism ring is a division ring; hence $(eAe)_{\mathrm{opp}}$ and therefore $eAe$ are division rings. The right-hand statement is the same computation for the right module $eA$, whose endomorphism ring is $eAe$.
 
 **Remark (the converse fails).** The converse is not a theorem of the definitions. In $T_2(k)$, the idempotent $E_{22}$ has corner $kE_{22}$, a division ring, but $AE_{22}=kE_{12}\oplus kE_{22}$ contains the proper nonzero left ideal $kE_{12}$, so it is not minimal. Symmetrically, $E_{11}$ has a division corner and a nonminimal right ideal. The converse requires semisimplicity, and it is proved in §*The Semisimple Case*. The failure is not an accident of the triangular algebra: it is the same phenomenon that makes a local corner not a division ring, read on the one-sided ideal instead of on the corner.
 

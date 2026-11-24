@@ -221,7 +221,7 @@ with a constant $c$ depending on $\alpha$ and $n$. Consequently the second momen
 
 ## Fractional Powers of Operators
 
-**Definition.** Let $A$ be a closed linear operator on a Banach space $X$ whose resolvent contains a sector $|\arg\lambda|<\phi$ and satisfies $\|(\lambda I - A)^{-1}\|\le M|\lambda|^{-1}$ there, and suppose $0$ lies in the resolvent set. For $0<\alpha<1$ the **negative fractional power** $A^{-\alpha}$ is
+**Definition.** Let $A$ be a closed linear operator on a Banach space $X$ whose resolvent contains a sector $|\arg\lambda|<\digamma_{\mathrm{map}}$ and satisfies $\|(\lambda I - A)^{-1}\|\le M|\lambda|^{-1}$ there, and suppose $0$ lies in the resolvent set. For $0<\alpha<1$ the **negative fractional power** $A^{-\alpha}$ is
 
 $$
 A^{-\alpha} = \frac{\sin(\pi\alpha)}{\pi}\int_0^\infty \lambda^{-\alpha}(\lambda I + A)^{-1}\,d\lambda ,

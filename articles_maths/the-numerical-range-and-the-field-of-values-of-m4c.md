@@ -95,11 +95,11 @@ $$
 \begin{pmatrix}\lambda_1&c\\0&\lambda_2\end{pmatrix},\qquad c\ge0,
 $$
 
-so it suffices to treat this matrix. For $x=(\cos\theta,e^{i\varphi}\sin\theta)$ with $0\le\theta\le\pi/2$,
+so it suffices to treat this matrix. For $x=(\cos\theta,e^{i\digamma_{\mathrm{map}}}\sin\theta)$ with $0\le\theta\le\pi/2$,
 
 $$
 x^*Tx=\lambda_1\cos^{2}\theta+\lambda_2\sin^{2}\theta
-+c\,e^{i\varphi}\cos\theta\sin\theta .
++c\,e^{i\digamma_{\mathrm{map}}}\cos\theta\sin\theta .
 $$
 
 For fixed $\theta$ this is a circle with centre $s(\theta)=\lambda_1\cos^{2}\theta+\lambda_2\sin^{2}\theta$ and radius $c|\cos\theta\sin\theta|$, and the phase is free. Hence the support function of $W(T)$ is
@@ -213,7 +213,7 @@ a convex combination of a point of $W(A)$ and a point of $W(B)$, and the endpoin
 
 **The spectrum and the singular values.** The field of values contains the spectrum and lies in the disk of radius $\|A\|$; the numerical radius lies between the spectral radius and the operator norm. The singular values give the radius of the image of the unit sphere, the field of values the radius of the image of the quadratic form. The gap measures the departure from normality: for a normal matrix $w(A)=\|A\|=\rho(A)$, while for the nilpotent chain $\rho(J_4)=0$, $w(J_4)=\cos(\pi/5)$ and $\|J_4\|=1$.
 
-**The Hermitian decomposition.** The support function of $W(A)$ is the largest eigenvalue of $\operatorname{Re}(e^{-i\alpha}A)$, so each supporting line is fixed by the spectrum of a Hermitian matrix built from $A$. The Hermitian part $A+A^*$ gives the directions $0$ and $\pi/2$. The field of values does not determine $A$: $J_2(0)$ and $e^{i\varphi}J_2(0)$ have the same disk for every phase, while their Hermitian parts differ.
+**The Hermitian decomposition.** The support function of $W(A)$ is the largest eigenvalue of $\operatorname{Re}(e^{-i\alpha}A)$, so each supporting line is fixed by the spectrum of a Hermitian matrix built from $A$. The Hermitian part $A+A^*$ gives the directions $0$ and $\pi/2$. The field of values does not determine $A$: $J_2(0)$ and $e^{i\digamma_{\mathrm{map}}}J_2(0)$ have the same disk for every phase, while their Hermitian parts differ.
 
 **The basis of $\mathbb{B}$.** The model is read in the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The basis, the four left matrices and the display of the left regular matrix are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen two-sided operators are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
 

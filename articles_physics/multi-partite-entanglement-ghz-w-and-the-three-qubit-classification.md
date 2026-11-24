@@ -83,14 +83,14 @@ The contrast with two qubits. At two qubits the removal of a part leaves one sys
 **Degree two is identically zero.** By the parity rule of [The Duo-Complex Bridge](the-duo-complex-bridge-the-three-canonical-forms-and-their-tensor-powers.html), $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$, so $\omega^{\otimes3}$ is alternating and
 
 $$
-\omega^{\otimes3}(\psi,\psi)=0\quad\text{for every }\psi\in(\mathbb{C}^2)^{\otimes3}.
+\omega^{\otimes3}(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=0\quad\text{for every }Ξ_{\mathrm{wfn}}\in(\mathbb{C}^2)^{\otimes3}.
 $$
 
 The check is exact for GHZ and for $W$ and for every random three-fold product state tested.
 
 What that forbids. Any three-qubit invariant built by applying the canonical alternating form to all three factors at once vanishes identically. There is therefore no degree-two analogue of the concurrence at three qubits, and this is a theorem about alternating forms rather than a failure to find one.
 
-What is not forbidden. The bilinear norm $B^{\otimes3}$ is a perfectly good quadratic invariant, of inertia $(4,0)$ read in its own diagonal basis; it simply does not measure three-way entanglement, exactly as $B^{\otimes2}$ did not measure two-way entanglement. A state can have $B^{\otimes3}(\psi,\psi)=0$ and be maximally three-way entangled, because the norm is isotropic on a cone.
+What is not forbidden. The bilinear norm $B^{\otimes3}$ is a perfectly good quadratic invariant, of inertia $(4,0)$ read in its own diagonal basis; it simply does not measure three-way entanglement, exactly as $B^{\otimes2}$ did not measure two-way entanglement. A state can have $B^{\otimes3}(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=0$ and be maximally three-way entangled, because the norm is isotropic on a cone.
 
 So the first available degree is four. An invariant that is alternating in each of three slots, tensored an even number of times, gives degree four; and an invariant that is symmetric and uses the three factors at once must also be quartic. That is why the three-qubit measures that exist — the three-tangle, the hyperdeterminant — are degree four, and it is the structural reason they look unlike the concurrence.
 
@@ -130,12 +130,12 @@ The degree-four pattern, seen twice. The tangle is a difference of squared concu
 The construction repeated. For a three-qubit state there are three ways to cut one system from two. Each cut gives a two-qubit problem, and on each the pairing of [The Duo-Complex Bridge](the-duo-complex-bridge-the-three-canonical-forms-and-their-tensor-powers.html) applies:
 
 $$
-C_{AB}=2\bigl\lvert\omega\otimes\omega(\psi_{AB},\psi_{AB})\bigr\rvert,\qquad
-C_{AC}=2\bigl\lvert\omega\otimes\omega(\psi_{AC},\psi_{AC})\bigr\rvert,\qquad
-C_{BC}=2\bigl\lvert\omega\otimes\omega(\psi_{BC},\psi_{BC})\bigr\rvert ,
+C_{AB}=2\bigl\lvert\omega\otimes\omega(Ξ_{\mathrm{wfn},AB},Ξ_{\mathrm{wfn},AB})\bigr\rvert,\qquad
+C_{AC}=2\bigl\lvert\omega\otimes\omega(Ξ_{\mathrm{wfn},AC},Ξ_{\mathrm{wfn},AC})\bigr\rvert,\qquad
+C_{BC}=2\bigl\lvert\omega\otimes\omega(Ξ_{\mathrm{wfn},BC},Ξ_{\mathrm{wfn},BC})\bigr\rvert ,
 $$
 
-where $\psi_{AB}$ and the others are the states read with the remaining factor absorbed, in the sense of the reduced states.
+where $Ξ_{\mathrm{wfn},AB}$ and the others are the states read with the remaining factor absorbed, in the sense of the reduced states.
 
 One form, three slots. The three concurrences are not three different measures; they are one measure applied to three choices of two factors. The permutation group of the three factors acts on the set of them, and for the symmetric states GHZ and $W$ it acts trivially on the values: GHZ has all three equal to zero, $W$ has all three equal to $\tfrac23$.
 

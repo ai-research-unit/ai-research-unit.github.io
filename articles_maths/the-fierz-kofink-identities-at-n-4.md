@@ -8,13 +8,13 @@
 
 **It assumes** *Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$* and *Spinors and Dirac Spinors in $M_4(\mathbb{C})$*. The row at order two is *The Fierz–Kofink Identities*.
 
-**The result in one line.** The bispinors have the basis $E_{ij}$ of sixteen units, the product satisfies $(\psi\bar\chi^{\dagger})(\phi\bar\eta^{\dagger})=\omega(\bar\chi,\phi)\,\psi\bar\eta^{\dagger}$, and the classification of a spinor by the rank of its bispinor has five types.
+**The result in one line.** The bispinors have the basis $E_{ij}$ of sixteen units, the product satisfies $(Ξ_{\mathrm{wfn}}\bar\chi^{\dagger})(\digamma_{\mathrm{map}}\bar\eta^{\dagger})=\omega(\bar\chi,\digamma_{\mathrm{map}})\,Ξ_{\mathrm{wfn}}\bar\eta^{\dagger}$, and the classification of a spinor by the rank of its bispinor has five types.
 
 **Boundaries.** The article treats the identities and the classification by rank; it does not treat the spectral classification of the bispinors, which is the subject of the spectral articles.
 
 ## The Basis of Sixteen
 
-**Definition.** The **matrix units** $E_{ij}$ are the matrices with a one in position $(i,j)$ and zero elsewhere; the **bispinor basis** is the same set, read as $\psi_i\bar\chi_j^{\dagger}$.
+**Definition.** The **matrix units** $E_{ij}$ are the matrices with a one in position $(i,j)$ and zero elsewhere; the **bispinor basis** is the same set, read as $Ξ_{\mathrm{wfn},i}\bar\chi_j^{\dagger}$.
 
 **Proposition.** The sixteen units form a basis of the bispinor space, and each unit has weight $m_i-m_j$ under the Cartan element of the copy.
 
@@ -32,9 +32,9 @@
 
 ## The Fierz Identity
 
-**Proposition.** For spinors $\psi,\phi$ and dual spinors $\bar\chi,\bar\eta$ one has $(\psi\bar\chi^{\dagger})(\phi\bar\eta^{\dagger})=\omega(\bar\chi,\phi)\,\psi\bar\eta^{\dagger}$, where $\omega$ is the invariant alternating pairing.
+**Proposition.** For spinors $Ξ_{\mathrm{wfn}},\digamma_{\mathrm{map}}$ and dual spinors $\bar\chi,\bar\eta$ one has $(Ξ_{\mathrm{wfn}}\bar\chi^{\dagger})(\digamma_{\mathrm{map}}\bar\eta^{\dagger})=\omega(\bar\chi,\digamma_{\mathrm{map}})\,Ξ_{\mathrm{wfn}}\bar\eta^{\dagger}$, where $\omega$ is the invariant alternating pairing.
 
-*Proof.* The product of the matrices is $\psi(\bar\chi^{\dagger}\phi)\bar\eta^{\dagger}$, and the scalar $\bar\chi^{\dagger}\phi$ is the pairing of the dual spinor with the spinor.
+*Proof.* The product of the matrices is $Ξ_{\mathrm{wfn}}(\bar\chi^{\dagger}\digamma_{\mathrm{map}})\bar\eta^{\dagger}$, and the scalar $\bar\chi^{\dagger}\digamma_{\mathrm{map}}$ is the pairing of the dual spinor with the spinor.
 
 **Corollary.** The product of two rank-one bispinors is a rank-one bispinor or zero, and the composition is governed by a single scalar.
 
@@ -48,7 +48,7 @@
 
 ## The Completeness Relation
 
-**Proposition.** The sixteen units satisfy $\sum_{ij}E_{ij}\otimes E_{ji}=\mathrm{Id}$ on the bispinor space, and the corresponding identity for spinors reads $\sum_{i}\psi_i\otimes\bar\chi_i^{\dagger}$ in the dual bases.
+**Proposition.** The sixteen units satisfy $\sum_{ij}E_{ij}\otimes E_{ji}=\mathrm{Id}$ on the bispinor space, and the corresponding identity for spinors reads $\sum_{i}Ξ_{\mathrm{wfn},i}\otimes\bar\chi_i^{\dagger}$ in the dual bases.
 
 *Proof.* The sum over $i,j$ of $E_{ij}\otimes E_{ji}$ acts on a matrix $X$ as $\sum_{ij}E_{ij}\operatorname{tr}(E_{ji}X)=X$.
 
@@ -64,7 +64,7 @@
 
 ## The Classification
 
-**Proposition.** The rank of the bispinor associated with a spinor pair is the rank of the matrix $\psi\bar\chi^{\dagger}$, which is one for nonzero $\psi,\bar\chi$ and zero otherwise; the classification of a general bispinor by rank has the five types $0,1,2,3,4$.
+**Proposition.** The rank of the bispinor associated with a spinor pair is the rank of the matrix $Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}$, which is one for nonzero $Ξ_{\mathrm{wfn}},\bar\chi$ and zero otherwise; the classification of a general bispinor by rank has the five types $0,1,2,3,4$.
 
 *Proof.* A nonzero product of a column and a row has rank one; the rank of a general matrix is one of the five values.
 
@@ -121,7 +121,7 @@ The classification of bispinors by rank has five types, and by Jordan type the f
 | Symbol | Meaning |
 |---|---|
 | $E_{ij}$ | the sixteen matrix units |
-| $\omega(\bar\chi,\phi)$ | the scalar of the Fierz identity |
+| $\omega(\bar\chi,\digamma_{\mathrm{map}})$ | the scalar of the Fierz identity |
 | $\sum E_{ij}\otimes E_{ji}$ | the completeness relation |
 | $0,1,2,3,4$ | the five ranks |
 

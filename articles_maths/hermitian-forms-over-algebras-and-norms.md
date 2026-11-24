@@ -16,11 +16,11 @@ $$
 \boxed{\;\langle x, y \rangle = \tfrac{1}{2}\bigl(N(x+y) - N(x) - N(y)\bigr) = \tfrac{1}{2}\bigl(xy^{*} + yx^{*}\bigr)\;} .
 $$
 
-**Proposition.** The polarisation of the norm map is the bilinear map $\langle x,y\rangle = \tfrac{1}{2}(xy^{*}+yx^{*})$, and the **trace form** of the involution is its functional image $\varphi(\langle x,y\rangle)$, which is symmetric and $R^{\varsigma}$-bilinear.
+**Proposition.** The polarisation of the norm map is the bilinear map $\langle x,y\rangle = \tfrac{1}{2}(xy^{*}+yx^{*})$, and the **trace form** of the involution is its functional image $\digamma_{\mathrm{map}}(\langle x,y\rangle)$, which is symmetric and $R^{\varsigma}$-bilinear.
 
-**Proof.** Expand $N(x+y) = (x+y)(x^{*}+y^{*}) = xx^{*} + xy^{*} + yx^{*} + yy^{*}$ and subtract $N(x) + N(y)$; the result is $xy^{*} + yx^{*}$, whose $R$-linearity is clear. The functional image $\varphi(xy^{*}+yx^{*})$ is symmetric because the two products are exchanged by the involution and $\varphi$ is $\varsigma$-linear.
+**Proof.** Expand $N(x+y) = (x+y)(x^{*}+y^{*}) = xx^{*} + xy^{*} + yx^{*} + yy^{*}$ and subtract $N(x) + N(y)$; the result is $xy^{*} + yx^{*}$, whose $R$-linearity is clear. The functional image $\digamma_{\mathrm{map}}(xy^{*}+yx^{*})$ is symmetric because the two products are exchanged by the involution and $\digamma_{\mathrm{map}}$ is $\varsigma$-linear.
 
-**Corollary.** The diagonal of the *form* and the norm map are related by $\mathfrak{Q}(x) = \varphi(x^{*}x)$; for a cyclic functional, in particular for the trace form $\varphi = \tau$, the two products $x^{*}x$ and $xx^{*}$ have the same functional and the diagonal is the functional of the norm, $\mathfrak{Q}(x) = \varphi(N(x))$. A non-cyclic functional sees only $x^{*}x$, and then the trace form $\varphi(xy^{*}+yx^{*})$ of the involution and the trace form $h_{\mathrm{tr}}(x,y) = h(x,y)+h(y,x)$ of *Polarisation and the Hermitian Square* differ.
+**Corollary.** The diagonal of the *form* and the norm map are related by $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x)$; for a cyclic functional, in particular for the trace form $\digamma_{\mathrm{map}} = \tau$, the two products $x^{*}x$ and $xx^{*}$ have the same functional and the diagonal is the functional of the norm, $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(N(x))$. A non-cyclic functional sees only $x^{*}x$, and then the trace form $\digamma_{\mathrm{map}}(xy^{*}+yx^{*})$ of the involution and the trace form $h_{\mathrm{tr}}(x,y) = h(x,y)+h(y,x)$ of *Polarisation and the Hermitian Square* differ.
 
 ## The Quaternion Norm
 
@@ -109,7 +109,7 @@ On $\mathbb{B} = M_2(\mathbb{C})$ the reduced norm is the determinant and the no
 
 ## Summary
 
-- The **norm map** of the algebra is $N(x) = xx^{*}$ and its polarisation is the trace form $\tfrac{1}{2}(xy^{*}+yx^{*})$; the form at the two equal arguments is $\mathfrak{Q}(x) = \varphi(x^{*}x)$, which is the functional of the norm, $\mathfrak{Q}(x) = \varphi(N(x))$, for a cyclic functional such as the trace.
+- The **norm map** of the algebra is $N(x) = xx^{*}$ and its polarisation is the trace form $\tfrac{1}{2}(xy^{*}+yx^{*})$; the form at the two equal arguments is $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x)$, which is the functional of the norm, $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(N(x))$, for a cyclic functional such as the trace.
 - The quaternion norm $N(x) = a^{2}-\alpha b^{2}-\beta c^{2}+\alpha\beta d^{2}$ is multiplicative, so the quaternion algebra is a composition algebra; its polarisation is the trace form, and the norm-one group is the compact group of the definite case.
 - The reduced norm of a central simple algebra is multiplicative and its polarisation is the reduced trace against the adjugate; it is in general **not** the Hermitian form of the dagger, as $\mathsf{M}_2$ shows.
 - For an involution of the first kind the reduced norm is invariant, for one of the second kind it is twisted by $\varsigma$.
@@ -122,7 +122,7 @@ On $\mathbb{B} = M_2(\mathbb{C})$ the reduced norm is the determinant and the no
 |---|---|
 | $N(x) = xx^{*}$ | the norm map of the algebra |
 | $\langle x,y\rangle$ | the trace form $\tfrac{1}{2}(xy^{*}+yx^{*})$ |
-| $\mathfrak{Q}(x) = \varphi(N(x))$ | the form at the two equal arguments as the functional of the norm |
+| $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(N(x))$ | the form at the two equal arguments as the functional of the norm |
 | $\operatorname{Nrd}$, $\operatorname{Trd}$ | the reduced norm and the reduced trace |
 | $\operatorname{adj}$ | the adjugate of a matrix |
 | $\mathrm{Cl}(V,\mathfrak{Q})$ | the Clifford algebra with the dagger of *Hermitian Algebras* |

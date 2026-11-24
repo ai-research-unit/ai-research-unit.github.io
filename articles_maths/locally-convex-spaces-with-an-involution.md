@@ -62,10 +62,10 @@ as a topological direct sum; the projection onto $E^{\mathrm{J}}$ along $E^{-}$ 
 **Definition.** The **transposed involution** of $\mathrm{J}$ is the map $\mathrm{J}'$ on the continuous dual $E'$ defined by
 
 $$
-\mathrm{J}'(\varphi) = \varphi \circ \mathrm{J} ,
+\mathrm{J}'(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map}} \circ \mathrm{J} ,
 $$
 
-so that $\langle \mathrm{J} x, \varphi\rangle = \varsigma\bigl(\langle x, \mathrm{J}'\varphi\rangle\bigr)$ under the dual pairing; in the linear case $\mathrm{J}'$ is linear and in the antilinear case it is again $\varsigma$-semilinear.
+so that $\langle \mathrm{J} x, \digamma_{\mathrm{map}}\rangle = \varsigma\bigl(\langle x, \mathrm{J}'\digamma_{\mathrm{map}}\rangle\bigr)$ under the dual pairing; in the linear case $\mathrm{J}'$ is linear and in the antilinear case it is again $\varsigma$-semilinear.
 
 **Proposition (the transposed involution is continuous).** The map $\mathrm{J}'$ is an involution of $E'$ of the same kind as $\mathrm{J}$, and it is continuous for the weak-star topology $\sigma(E', E)$, for the weak topology $\sigma(E', E'')$ and for the strong topology $\beta(E', E)$; on the weak-star dual it is a homeomorphism, and its fixed and negated parts are the annihilators
 
@@ -73,7 +73,7 @@ $$
 \boxed{\;(E')^{\mathrm{J}'} = (E^{-})^{\circ}, \qquad (E')^{-} = (E^{\mathrm{J}})^{\circ}\;} .
 $$
 
-**Proof.** $\mathrm{J}'$ is the transpose of the involution $\mathrm{J}$, so it is an involution and is weak-star continuous by *The Dual Operator and the Weak Topology*; continuity for the strong topology is the strong continuity of the transpose of *The Dual Operator and the Weak Topology*, and the weak-star homeomorphism statement is the same place. A functional is fixed under $\mathrm{J}'$ exactly when $\varphi(\mathrm{J} x) = \varphi(x)$ for all $x$; on $E^{-}$ this reads $\varphi(-x) = \varphi(x)$, so $\varphi$ vanishes there, and on $E^{\mathrm{J}}$ it is automatic; hence the fixed part is the annihilator of $E^{-}$, and the negated part is the annihilator of $E^{\mathrm{J}}$.
+**Proof.** $\mathrm{J}'$ is the transpose of the involution $\mathrm{J}$, so it is an involution and is weak-star continuous by *The Dual Operator and the Weak Topology*; continuity for the strong topology is the strong continuity of the transpose of *The Dual Operator and the Weak Topology*, and the weak-star homeomorphism statement is the same place. A functional is fixed under $\mathrm{J}'$ exactly when $\digamma_{\mathrm{map}}(\mathrm{J} x) = \digamma_{\mathrm{map}}(x)$ for all $x$; on $E^{-}$ this reads $\digamma_{\mathrm{map}}(-x) = \digamma_{\mathrm{map}}(x)$, so $\digamma_{\mathrm{map}}$ vanishes there, and on $E^{\mathrm{J}}$ it is automatic; hence the fixed part is the annihilator of $E^{-}$, and the negated part is the annihilator of $E^{\mathrm{J}}$.
 
 **Corollary (the involution and the bipolar theorem).** The annihilators of the two summands are the two summands of the dual, $(E^{\mathrm{J}})^{\circ} = (E')^{-}$ and $(E^{-})^{\circ} = (E')^{\mathrm{J}'}$, and the bipolar theorem of *Duality Theory* recovers the summands, $\bigl((E^{\mathrm{J}})^{\circ}\bigr)^{\circ} = E^{\mathrm{J}}$ and $\bigl((E^{-})^{\circ}\bigr)^{\circ} = E^{-}$, the summands being weakly closed. In the reflexive case the canonical identification $E'' = E$ exchanges the fixed and negated parts of $E$ with the corresponding parts of $E''$.
 

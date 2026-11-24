@@ -42,13 +42,13 @@ $$
 
 $$
 \boxed{\;
-\Lambda = \{x+\varepsilon\varphi(x) : x \in A_x\}
+\Lambda = \{x+\varepsilon\digamma_{\mathrm{map}}(x) : x \in A_x\}
 \;},
 $$
 
-with $\varphi$ the continuous function determined by $\varphi(S_i(x)) = r_i\varphi(x)+s_ix+v_{iy}$.
+with $\digamma_{\mathrm{map}}$ the continuous function determined by $\digamma_{\mathrm{map}}(S_i(x)) = r_i\digamma_{\mathrm{map}}(x)+s_ix+v_{iy}$.
 
-**Proof.** The address map of the real system is injective, so a point of $A_x$ determines its coding and hence the whole orbit of the fibre coordinate; the affine recursion for $y$ along a coding converges because $|r_i| < 1$, and the limit $\varphi(x)$ depends continuously on the coding, hence on $x$. The invariance relation for $\varphi$ is the statement that $S_i$ maps the graph over $A_x$ to the graph over $S_i(A_x)$.
+**Proof.** The address map of the real system is injective, so a point of $A_x$ determines its coding and hence the whole orbit of the fibre coordinate; the affine recursion for $y$ along a coding converges because $|r_i| < 1$, and the limit $\digamma_{\mathrm{map}}(x)$ depends continuously on the coding, hence on $x$. The invariance relation for $\digamma_{\mathrm{map}}$ is the statement that $S_i$ maps the graph over $A_x$ to the graph over $S_i(A_x)$.
 
 **Theorem (the dimension, equal ratios).** Suppose the real parts of the linear parts are equal, $r_i = r$ for all $i$, with $|r| < 1$, and that the induced real system has a separating address map. Then
 
@@ -60,7 +60,7 @@ the similarity dimension of the real factor, and the coupling terms $s_i$ do not
 
 **Proof.** At level $n$ the piece $S_\omega(\Lambda)$ of a word $\omega$ of length $n$ has linear part $\begin{pmatrix}r^n&0\\ S_\omega& r^n\end{pmatrix}$ with $S_\omega = \sum_{k=1}^n s_{\omega_k}r^{n-1}$, so $|S_\omega| \leq n\max_i|s_i|\,|r|^{n-1}$; the piece therefore lies in a rectangle of side $|r|^n$ in $x$ and $\mathcal{O}(n|r|^{n-1})$ in $y$, covering $\mathcal{O}(n)$ boxes of the grid of side $|r|^n$. Since the address map separates the pieces, the box count at scale $|r|^n$ is $\mathcal{O}(n)\,m^n$, and the factor $n$ is subexponential: $\dim_B\Lambda = \log m/\log(1/|r|) = \dim_B A_x$. The equality of the box and Hausdorff dimensions of $A_x$ is the Moran–Hutchinson theorem of *Fractal Geometry* under the open set condition.
 
-**Remark (the graph is not Lipschitz).** When some $s_i \neq 0$ the function $\varphi$ is continuous but not Lipschitz: the relation $\varphi(S_i(x)) = r\varphi(x)+s_ix+v_{iy}$ gives the bound $(rL+|s_i|)/r = L+|s_i|/|r|$ for any local Lipschitz constant $L$, larger than $L$, so no finite $L$ works. The loss of regularity is compensated, in the dimension, by the subexponential factor $n$ of the theorem; this is why the dual direction adds no dimension although it does add the coupling.
+**Remark (the graph is not Lipschitz).** When some $s_i \neq 0$ the function $\digamma_{\mathrm{map}}$ is continuous but not Lipschitz: the relation $\digamma_{\mathrm{map}}(S_i(x)) = r\digamma_{\mathrm{map}}(x)+s_ix+v_{iy}$ gives the bound $(rL+|s_i|)/r = L+|s_i|/|r|$ for any local Lipschitz constant $L$, larger than $L$, so no finite $L$ works. The loss of regularity is compensated, in the dimension, by the subexponential factor $n$ of the theorem; this is why the dual direction adds no dimension although it does add the coupling.
 
 **Theorem (no product attractor).** No system of dual similarities has an attractor that is a product of two one-dimensional self-similar sets with independent dynamics: the linear part of every dual similarity has the **same** ratio $r_i$ in the two coordinate directions, so a single coding drives both coordinates, and the attractor is the image of one shift space. In the decoupled case $s_i = 0$ the infinitesimal coordinate is still a continuous function of the coding, and the attractor is the graph of that function over $A_x$; when the translations are real, $v_{iy} = 0$, the graph is degenerate and the attractor is the real set $A_x$ itself. A genuinely two-dimensional product $A_x\times A_y$ would require independent ratios in the two directions, which the algebra does not provide.
 
@@ -82,7 +82,7 @@ The box counts at the scales $3^{-n}$, for the finite set of the $2^{16}$ points
 
 ## Summary
 
-A dual similarity $S(z) = uz+v$ has the triangular linear part $\begin{pmatrix}r&0\\s&r\end{pmatrix}$, a Euclidean contraction only if $|r| < 1$ and the coupling $s$ is small; its real part is a real similarity and the infinitesimal part is an affine map coupled to the real part. The projection of the attractor of a dual iterated function system is the attractor $A_x$ of the induced real system, and the attractor is the graph $\{x+\varepsilon\varphi(x) : x \in A_x\}$ of a continuous function whenever the real addresses separate. When the real parts of the linear parts are equal the box dimension of the attractor equals the dimension of the real attractor, the coupling contributing only the subexponential factor $n$ and making the graph continuous but not Lipschitz; and no dual system produces a product of two independent one-dimensional attractors, because the linear part has the same ratio in both coordinates, so the attractor is always the image of a single shift space. There is therefore no genuinely dual fractal dimension: the second direction records the derivative of the first and never generates new fractal structure. The definitions are those of *Fractal Geometry*; the complex and split-complex systems compared are those of *Iterated Function Systems in the Complex Plane* and *The Split-Complex Iterated Function Systems*; and the infinitesimal interpretation of the coupling is that of *Shears and Parabolic Rotations*.
+A dual similarity $S(z) = uz+v$ has the triangular linear part $\begin{pmatrix}r&0\\s&r\end{pmatrix}$, a Euclidean contraction only if $|r| < 1$ and the coupling $s$ is small; its real part is a real similarity and the infinitesimal part is an affine map coupled to the real part. The projection of the attractor of a dual iterated function system is the attractor $A_x$ of the induced real system, and the attractor is the graph $\{x+\varepsilon\digamma_{\mathrm{map}}(x) : x \in A_x\}$ of a continuous function whenever the real addresses separate. When the real parts of the linear parts are equal the box dimension of the attractor equals the dimension of the real attractor, the coupling contributing only the subexponential factor $n$ and making the graph continuous but not Lipschitz; and no dual system produces a product of two independent one-dimensional attractors, because the linear part has the same ratio in both coordinates, so the attractor is always the image of a single shift space. There is therefore no genuinely dual fractal dimension: the second direction records the derivative of the first and never generates new fractal structure. The definitions are those of *Fractal Geometry*; the complex and split-complex systems compared are those of *Iterated Function Systems in the Complex Plane* and *The Split-Complex Iterated Function Systems*; and the infinitesimal interpretation of the coupling is that of *Shears and Parabolic Rotations*.
 
 ## Summary of Notation
 
@@ -92,8 +92,8 @@ A dual similarity $S(z) = uz+v$ has the triangular linear part $\begin{pmatrix}r
 | $\begin{pmatrix}r&0\\s&r\end{pmatrix}$ | Triangular matrix of the linear part |
 | $r_i$, $s_i$ | Real part, coupling of the $i$-th linear part |
 | $A_x$, induced real system | Projection and its real attractor |
-| $\Lambda = \{x+\varepsilon\varphi(x)\}$ | Attractor as a graph over $A_x$ |
-| $s_i = 0$ | Decoupled case: $\varphi$ depends on the coding through the translations only |
+| $\Lambda = \{x+\varepsilon\digamma_{\mathrm{map}}(x)\}$ | Attractor as a graph over $A_x$ |
+| $s_i = 0$ | Decoupled case: $\digamma_{\mathrm{map}}$ depends on the coding through the translations only |
 | $\dim_B\Lambda = \dim_BA_x$ (equal ratios) | The dual direction adds no dimension |
 
 ## Further Reading

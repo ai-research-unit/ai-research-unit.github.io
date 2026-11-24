@@ -151,7 +151,7 @@ and is invariant under the Hamiltonian flow of $p$: $\Phi_t{}_*\mu=\mu$ for all 
 
 ### The Classical Limit of Expectation Values
 
-The definition of a semiclassical measure is a statement about the diagonal matrix elements of quantised symbols, and it is the exact form of the statement that a state with a phase-space profile has an expectation value for the symbol that is its average against that profile. If the family is generated from an initial coherent state by the unitary group, $u_{h_{\mathrm{def}}}(t)=T(t)\varphi_{z,h_{\mathrm{def}}}$, then the invariance theorem says that the semiclassical measure at time $t$ is the push-forward of the point mass at $z$ by $\Phi_t$, that is, the point mass at $\Phi_t(z)$, so the expectation of every symbol follows the classical trajectory to leading order:
+The definition of a semiclassical measure is a statement about the diagonal matrix elements of quantised symbols, and it is the exact form of the statement that a state with a phase-space profile has an expectation value for the symbol that is its average against that profile. If the family is generated from an initial coherent state by the unitary group, $u_{h_{\mathrm{def}}}(t)=T(t)\digamma_{\mathrm{map},z,h_{\mathrm{def}}}$, then the invariance theorem says that the semiclassical measure at time $t$ is the push-forward of the point mass at $z$ by $\Phi_t$, that is, the point mass at $\Phi_t(z)$, so the expectation of every symbol follows the classical trajectory to leading order:
 
 $$
 \bigl\langle \mathrm{Op}^w_{h_{\mathrm{def}}}(\mathfrak{a})u_{h_{\mathrm{def}}}(t),u_{h_{\mathrm{def}}}(t)\bigr\rangle \;\longrightarrow\; \mathfrak{a}(\Phi_t(z)) \qquad (h_{\mathrm{def}}\to0).
@@ -164,15 +164,15 @@ For a general state the same computation gives the general principle: the semicl
 **Definition.** For $(x_0,\zeta_0) \in \mathbb{R}^{2n}$ the **coherent state** at scale $h_{\mathrm{def}}$ is
 
 $$
-\varphi_{x_0,\zeta_0,h_{\mathrm{def}}}(x)=(\pi h_{\mathrm{def}})^{-n/4}\,\exp(i(x-x_0)\cdot\zeta_0/h_{\mathrm{def}})\,\exp(-|x-x_0|^2/2h_{\mathrm{def}}),
+\digamma_{\mathrm{map},x_0,\zeta_0,h_{\mathrm{def}}}(x)=(\pi h_{\mathrm{def}})^{-n/4}\,\exp(i(x-x_0)\cdot\zeta_0/h_{\mathrm{def}})\,\exp(-|x-x_0|^2/2h_{\mathrm{def}}),
 $$
 
-a normalised $L^2$ function, $\|\varphi_{x_0,\zeta_0,h_{\mathrm{def}}}\|=1$, whose mass is concentrated in the ball of radius $O(\sqrt{h_{\mathrm{def}}})$ about $x_0$ and whose frequency content is concentrated in the ball of radius $O(\sqrt{h_{\mathrm{def}}})$ about $\zeta_0$.
+a normalised $L^2$ function, $\|\digamma_{\mathrm{map},x_0,\zeta_0,h_{\mathrm{def}}}\|=1$, whose mass is concentrated in the ball of radius $O(\sqrt{h_{\mathrm{def}}})$ about $x_0$ and whose frequency content is concentrated in the ball of radius $O(\sqrt{h_{\mathrm{def}}})$ about $\zeta_0$.
 
 **Theorem (phase-space localisation).** For $\mathfrak{a} \in S^0_{h_{\mathrm{def}}}$ and every $(x_0,\zeta_0)$,
 
 $$
-\bigl\langle \mathrm{Op}^w_{h_{\mathrm{def}}}(\mathfrak{a})\varphi_{x_0,\zeta_0,h_{\mathrm{def}}},\varphi_{x_0,\zeta_0,h_{\mathrm{def}}}\bigr\rangle \;\longrightarrow\; \mathfrak{a}(x_0,\zeta_0) \qquad (h_{\mathrm{def}}\to0),
+\bigl\langle \mathrm{Op}^w_{h_{\mathrm{def}}}(\mathfrak{a})\digamma_{\mathrm{map},x_0,\zeta_0,h_{\mathrm{def}}},\digamma_{\mathrm{map},x_0,\zeta_0,h_{\mathrm{def}}}\bigr\rangle \;\longrightarrow\; \mathfrak{a}(x_0,\zeta_0) \qquad (h_{\mathrm{def}}\to0),
 $$
 
 so the semiclassical measure of the coherent-state family is the point mass $\delta_{(x_0,\zeta_0)}$; superpositions of coherent states, with the centres spread over a bounded region and the coefficients chosen so that the family remains $L^2$-normalised and weakly convergent, realise the measures that are absolutely continuous with respect to the phase-space volume.
@@ -180,7 +180,7 @@ so the semiclassical measure of the coherent-state family is the point mass $\de
 *Proof (sketch).* The matrix element of a Weyl operator between coherent states is a Gaussian average of the symbol at scale $\sqrt{h_{\mathrm{def}}}$ in phase space:
 
 $$
-\bigl\langle \mathrm{Op}^w_{h_{\mathrm{def}}}(\mathfrak{a})\varphi_{z},\varphi_{z}\bigr\rangle=\int_{T^*M}\mathfrak{a}(z')\,(\pi h_{\mathrm{def}})^{-n}\exp(-|z-z'|^2/h_{\mathrm{def}})\,dz' ,
+\bigl\langle \mathrm{Op}^w_{h_{\mathrm{def}}}(\mathfrak{a})\digamma_{\mathrm{map},z},\digamma_{\mathrm{map},z}\bigr\rangle=\int_{T^*M}\mathfrak{a}(z')\,(\pi h_{\mathrm{def}})^{-n}\exp(-|z-z'|^2/h_{\mathrm{def}})\,dz' ,
 $$
 
 up to constants depending only on the dimension and for symbols suitably cut off in the frequency variable. The Gaussian kernel $(\pi h_{\mathrm{def}})^{-n}\exp(-|z-z'|^2/h_{\mathrm{def}})$ is an approximate identity and converges weakly to the point mass $\delta_z$ as $h_{\mathrm{def}}\to0$; dominated convergence for a symbol in $S^0_{h_{\mathrm{def}}}$ gives the limit $\mathfrak{a}(z)$.
@@ -227,7 +227,7 @@ Semiclassical analysis is the calculus of pseudodifferential operators with a sm
 
 **Egorov's theorem** transports symbols along the Hamiltonian flow: if $p$ is real, $P=\mathrm{Op}^w_{h_{\mathrm{def}}}(p)$ and $T(t)=\exp(-itP/h_{\mathrm{def}})$, then $T(t)^*\mathrm{Op}^w_{h_{\mathrm{def}}}(\mathfrak{a})T(t)=\mathrm{Op}^w_{h_{\mathrm{def}}}(\mathfrak{a}\circ\Phi_{t})+O(h_{\mathrm{def}}\langle t\rangle)$, where $\Phi_t$ is the flow of $H_p$. It is the semiclassical form of the propagation of singularities and the analytic content of the statement that the classical and the operator flows agree to leading order. From it follows the invariance of the **semiclassical measures**: the weak limits of $\langle \mathrm{Op}^w_{h_{\mathrm{def}}}(\mathfrak{a})u_{h_{\mathrm{def}}},u_{h_{\mathrm{def}}}\rangle$ define positive Radon measures on $T^*M$, and the families satisfying $\|(P-E)u_{h_{\mathrm{def}}}\|=O(h_{\mathrm{def}})$ have measures supported in the energy surface $\{p=E\}$ and invariant under the flow, so the spectral problem passes to the classical dynamics.
 
-**Coherent states**, the Gaussian profiles of width $\sqrt{h_{\mathrm{def}}}$ localised at a phase-space point $z$, realise the point masses as semiclassical limits and make the Poisson-bracket correspondence transparent, $\langle \mathrm{Op}^w_{h_{\mathrm{def}}}(\mathfrak{a})\varphi_z,\varphi_z\rangle\to \mathfrak{a}(z)$. Finally the **Weyl law** counts the eigenvalues of an elliptic operator by the phase-space volume of the symbol, $N(E)=(2\pi h_{\mathrm{def}})^{-n}\int_{p\le E}dx\,d\zeta+O(h_{\mathrm{def}}^{-n+1})$, with the classical specialisation $\#\{\lambda_j\le\lambda\}\sim\operatorname{vol}(\Omega)v_n(2\pi)^{-n}\lambda^{n/2}$ for the Dirichlet Laplacian; its corrections and fluctuations are governed by the periodic orbits of the Hamiltonian flow.
+**Coherent states**, the Gaussian profiles of width $\sqrt{h_{\mathrm{def}}}$ localised at a phase-space point $z$, realise the point masses as semiclassical limits and make the Poisson-bracket correspondence transparent, $\langle \mathrm{Op}^w_{h_{\mathrm{def}}}(\mathfrak{a})\digamma_{\mathrm{map},z},\digamma_{\mathrm{map},z}\rangle\to \mathfrak{a}(z)$. Finally the **Weyl law** counts the eigenvalues of an elliptic operator by the phase-space volume of the symbol, $N(E)=(2\pi h_{\mathrm{def}})^{-n}\int_{p\le E}dx\,d\zeta+O(h_{\mathrm{def}}^{-n+1})$, with the classical specialisation $\#\{\lambda_j\le\lambda\}\sim\operatorname{vol}(\Omega)v_n(2\pi)^{-n}\lambda^{n/2}$ for the Dirichlet Laplacian; its corrections and fluctuations are governed by the periodic orbits of the Hamiltonian flow.
 
 ## Summary of Notation
 
@@ -245,7 +245,7 @@ Semiclassical analysis is the calculus of pseudodifferential operators with a sm
 | $u_{h_{\mathrm{def}}}$ | semiclassically oscillating family |
 | $\mu$ | semiclassical (defect, Wigner) measure |
 | $\Sigma_E=\{p=E\}$ | energy surface |
-| $\varphi_{x_0,\zeta_0,h_{\mathrm{def}}}$ | coherent state |
+| $\digamma_{\mathrm{map},x_0,\zeta_0,h_{\mathrm{def}}}$ | coherent state |
 | $N(E)$, $N(\lambda)$ | eigenvalue counting functions |
 | $v_n$ | volume of the unit ball in $\mathbb{R}^n$ |
 | $T^*M$ | phase space |

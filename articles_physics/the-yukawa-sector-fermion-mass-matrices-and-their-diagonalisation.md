@@ -61,7 +61,7 @@ Why three and not one. The three right-handed fields are distinct fields — hyp
 
 The audit, in the form of a sum. Each term must carry total hypercharge zero:
 
-| Term | $\bar\psi_L$ | scalar | $\psi_R$ | Sum |
+| Term | $\barΞ_{\mathrm{wfn},L}$ | scalar | $Ξ_{\mathrm{wfn},R}$ | Sum |
 |---|---|---|---|---|
 | $\bar Q_L\omicron_{\mathrm{hgs}}\,d_R$ | $-1/6$ | $+1/2$ | $-1/3$ | $0$ |
 | $\bar Q_L\tilde\omicron_{\mathrm{hgs}}\,u_R$ | $-1/6$ | $-1/2$ | $+2/3$ | $0$ |
@@ -76,7 +76,7 @@ What the sector costs and what it buys. It costs $54$ real parameters at the lev
 The substitution. With $\langle\omicron_{\mathrm{hgs}}\rangle=\frac{1}{\sqrt2}\binom{0}{v}$, the neutral component of $\omicron_{\mathrm{hgs}}$ is replaced by $(v+h)/\sqrt2$ and each Yukawa term becomes a mass term plus a coupling to $h$:
 
 $$
-\mathcal{L}_{\mathrm{Yuk}}\supset-\frac{v}{\sqrt2}\sum_{a,b}\bar\psi_{L,a}Y_{f,ab}\psi_{R,b}\left(1+\frac{h}{v}\right)+\text{h.c.}
+\mathcal{L}_{\mathrm{Yuk}}\supset-\frac{v}{\sqrt2}\sum_{a,b}\barΞ_{\mathrm{wfn},L,a}Y_{f,ab}Ξ_{\mathrm{wfn},R,b}\left(1+\frac{h}{v}\right)+\text{h.c.}
 $$
 
 The mass matrix. Define
@@ -85,7 +85,7 @@ $$
 M_f=\frac{v}{\sqrt2}\,Y_{f} ,
 $$
 
-a general complex $3\times3$ matrix. The mass term is $-\bar\psi_LM_f\psi_R+\text{h.c.}$, and the physical masses are not its diagonal entries: those depend on the flavour basis, which is a choice.
+a general complex $3\times3$ matrix. The mass term is $-\barΞ_{\mathrm{wfn},L}M_fΞ_{\mathrm{wfn},R}+\text{h.c.}$, and the physical masses are not its diagonal entries: those depend on the flavour basis, which is a choice.
 
 **Why the matrix is not Hermitian, and what that does and does not buy.** Hermiticity of $M_f$ would mean $Y_{f}^{\dagger}=Y_{f}$, a condition the gauge symmetry does not impose. It is worth being exact about what Hermiticity would forbid, because the tempting statement is wrong. A Hermitian $M_f$ is diagonalised by *one* unitary, so the left and right bases of a single sector would coincide and $V_f=W_f$. The mixing, however, is the misalignment between the *up* and *down* sectors: if $M_u=U_uD_uU_u^{\dagger}$ and $M_d=U_dD_dU_d^{\dagger}$ then $V_{\mathrm{CKM}}=U_u^{\dagger}U_d$, which is generic. Two Hermitian matrices need not commute. So the measured mixing is not evidence that the Yukawa matrices are non-Hermitian; it is evidence that the two sectors are not aligned in flavour space. What Hermiticity would remove is the separate right-handed basis, and with it half the parameters — nine real numbers per Hermitian matrix against eighteen per general one — which is why imposing it would be an addition to the model and not a reading of it.
 
@@ -354,7 +354,7 @@ Why the hierarchy is not a fine-tuning in the technical sense. A hierarchical sp
 The coupling is the mass over the scale. Expanding the mass term to first order in $h$ gives
 
 $$
-\mathcal{L}\supset-\frac{m_f}{v}\,h\,\bar\psi\psi ,
+\mathcal{L}\supset-\frac{m_f}{v}\,h\,\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}} ,
 \qquad
 g_{hf\bar f}=\frac{m_f}{v} .
 $$
@@ -464,7 +464,7 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 | $\beta$, $N_c$ | $\sqrt{1-4m_f^{2}/M_H^{2}}$ and the colour multiplicity, in the width |
 | $g_{hf\bar f}$ | $m_f/v$, the Higgs coupling to the fermion |
 | $Q_L$, $u_R$, $d_R$, $L_L$, $e_R$, $\xi_{\mathrm{neu},R}$ | The quark and lepton multiplets, with the quantum numbers of article 1 |
-| $\psi$ | A generic fermion field, standing for any of the six |
+| $Ξ_{\mathrm{wfn}}$ | A generic fermion field, standing for any of the six |
 | $\mathcal{S}_{\mathrm{rep}}$, $\mathbb{C}^{N_g}$, $\mathcal F$ | The module and the multiplicity factor of the framework |
 | $N_g$ | The number of generations, three in the observed world |
 | $\theta$, $\bar\theta$ | The QCD vacuum angle and $\theta+\arg\det\left(M_uM_d\right)$ |

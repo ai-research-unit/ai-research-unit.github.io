@@ -47,17 +47,17 @@ the value at the identity of the bracket of the corresponding left-invariant vec
 
 **Example.** For $G = GL_n(\mathbb{K})$, an open subset of $\mathbb{K}^{n \times n}$, the tangent space at the identity is the full matrix algebra $\mathrm{GL}(n, \mathbb{K}) = \mathbb{K}^{n\times n}$, and the bracket induced from left-invariant fields is the commutator $[A, B] = AB - BA$. The identification is made explicit by the computation in the next section, where the exponential of a matrix is the exponential of the tangent vector, and the commutator of the exponentials recovers the bracket through the Campbell–Baker–Hausdorff formula.
 
-**Definition.** A map $\varphi : G \to H$ of Lie groups is a **homomorphism of Lie groups** if it is smooth and a group homomorphism. Its **differential** at the identity is the linear map $d\varphi_e : \mathrm{G} \to \mathrm{H}$.
+**Definition.** A map $\digamma_{\mathrm{map}} : G \to H$ of Lie groups is a **homomorphism of Lie groups** if it is smooth and a group homomorphism. Its **differential** at the identity is the linear map $d\digamma_{\mathrm{map},e} : \mathrm{G} \to \mathrm{H}$.
 
 **Theorem.** The differential of a Lie group homomorphism is a homomorphism of Lie algebras:
 
 $$
-d\varphi_e([v, w]) = [d\varphi_e(v), d\varphi_e(w)].
+d\digamma_{\mathrm{map},e}([v, w]) = [d\digamma_{\mathrm{map},e}(v), d\digamma_{\mathrm{map},e}(w)].
 $$
 
-**Proof.** A homomorphism intertwines the left translations, $\varphi \circ L_g = L_{\varphi(g)} \circ \varphi$, so it carries left-invariant fields to left-invariant fields; the induced map on vector fields preserves the bracket because it is a diffeomorphism on its image, and evaluating at the identity gives the claim.
+**Proof.** A homomorphism intertwines the left translations, $\digamma_{\mathrm{map}} \circ L_g = L_{\digamma_{\mathrm{map}}(g)} \circ \digamma_{\mathrm{map}}$, so it carries left-invariant fields to left-invariant fields; the induced map on vector fields preserves the bracket because it is a diffeomorphism on its image, and evaluating at the identity gives the claim.
 
-**Corollary.** The assignment $G \mapsto \operatorname{Lie}(G) = \mathrm{G}$ and $\varphi \mapsto d\varphi_e$ is a functor from Lie groups to Lie algebras over $\mathbb{K}$.
+**Corollary.** The assignment $G \mapsto \operatorname{Lie}(G) = \mathrm{G}$ and $\digamma_{\mathrm{map}} \mapsto d\digamma_{\mathrm{map},e}$ is a functor from Lie groups to Lie algebras over $\mathbb{K}$.
 
 ### Vector Fields as Derivations
 
@@ -113,13 +113,13 @@ the time-one value of the one-parameter subgroup with velocity $v$. Equivalently
 
 **(b)** $\exp(tv) = \gamma_v(t)$ and $\exp(-v) = \exp(v)^{-1}$;
 
-**(c)** $\exp$ is natural: for a Lie group homomorphism $\varphi : G \to H$ and $v \in \mathrm{G}$,
+**(c)** $\exp$ is natural: for a Lie group homomorphism $\digamma_{\mathrm{map}} : G \to H$ and $v \in \mathrm{G}$,
 
 $$
-\varphi(\exp_G v) = \exp_H(d\varphi_e v).
+\digamma_{\mathrm{map}}(\exp_G v) = \exp_H(d\digamma_{\mathrm{map},e} v).
 $$
 
-**Proof.** (a) and (b) are the one-parameter group property of $\gamma_v$, and the smoothness of $\exp$ follows from the smooth dependence of the flow on its initial condition. For (c), the curve $t \mapsto \varphi(\gamma_v(t))$ is a one-parameter subgroup of $H$ with velocity $d\varphi_e v$, so by uniqueness it is $\gamma_{d\varphi_e v}$; evaluating at $t = 1$ gives the claim.
+**Proof.** (a) and (b) are the one-parameter group property of $\gamma_v$, and the smoothness of $\exp$ follows from the smooth dependence of the flow on its initial condition. For (c), the curve $t \mapsto \digamma_{\mathrm{map}}(\gamma_v(t))$ is a one-parameter subgroup of $H$ with velocity $d\digamma_{\mathrm{map},e} v$, so by uniqueness it is $\gamma_{d\digamma_{\mathrm{map},e} v}$; evaluating at $t = 1$ gives the claim.
 
 **Corollary.** The differential of $\exp$ at $0$, under the canonical identification $T_0\mathrm{G} \cong \mathrm{G}$, is the identity:
 
@@ -293,15 +293,15 @@ The exponential map $\exp : \mathrm{G} \to G$ sends $v$ to the time-one value of
 |---|---|
 | $G, H$ | Lie groups over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ |
 | $\mathrm{G} = T_eG$ | Lie algebra of $G$; tangent space at the identity |
-| $\mathrm{H} = T_eH$ | Lie algebra of $H$; the codomain of $d\varphi_e$ |
+| $\mathrm{H} = T_eH$ | Lie algebra of $H$; the codomain of $d\digamma_{\mathrm{map},e}$ |
 | $L_g$, $dL_g$ | Left translation and its differential |
 | $X^v$ | Left-invariant vector field extending $v \in \mathrm{G}$ |
 | $[X, Y] = X \circ Y - Y \circ X$ | Bracket of vector fields; $[v,w] = [X^v, X^w]_e$ |
-| $d\varphi_e$ | Differential at the identity of a Lie group homomorphism; a Lie algebra homomorphism |
+| $d\digamma_{\mathrm{map},e}$ | Differential at the identity of a Lie group homomorphism; a Lie algebra homomorphism |
 | $\mathrm{GL}(n, \mathbb{K})$ | Matrix Lie algebra $\mathbb{K}^{n\times n}$; the ambient algebra of a matrix group |
 | $\gamma_v(t)$ | One-parameter subgroup with velocity $v$ |
 | $\exp : \mathrm{G} \to G$ | Exponential map, $\exp(v) = \gamma_v(1) = \Phi^v_1(e)$ |
-| $\exp((s+t)v) = \exp(sv)\exp(tv)$, $\varphi(\exp_G v) = \exp_H(d\varphi_e v)$ | Functional properties of $\exp$ |
+| $\exp((s+t)v) = \exp(sv)\exp(tv)$, $\digamma_{\mathrm{map}}(\exp_G v) = \exp_H(d\digamma_{\mathrm{map},e} v)$ | Functional properties of $\exp$ |
 | $\exp(A) = \sum_k A^k/k!$ | Matrix exponential; agrees with $\exp$ for matrix groups |
 | $\det(\exp(A)) = \exp(\operatorname{tr}A)$ | Determinant of a matrix exponential |
 | $d(\exp)_0 = \mathrm{id}_{\mathrm{G}}$ | $\exp$ is a local diffeomorphism at $0$ |

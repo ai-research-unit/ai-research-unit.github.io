@@ -33,7 +33,7 @@ The **Floer homology** $HF_*(\mathcal{A})$ is the homology of this complex.
 
 ## Hamiltonian Floer Homology and the Arnold Conjecture
 
-**Definition.** Let $(M,\omega)$ be a closed symplectic manifold, let $H : S^1\times M\to\mathbb{R}$ be a periodic Hamiltonian with associated time-dependent vector field $X_H$ and flow $\phi^1_H$, and let $J$ be a compatible almost complex structure. The **Hamiltonian Floer complex** $CF_*(M,H)$ is the free module on the $1$-periodic orbits $x : S^1\to M$ of $X_H$ that are contractible and nondegenerate, graded by the **Conley–Zehnder index** $\mu(x)$. The **Floer equation** for a map $u : \mathbb{R}\times S^1\to M$ is
+**Definition.** Let $(M,\omega)$ be a closed symplectic manifold, let $H : S^1\times M\to\mathbb{R}$ be a periodic Hamiltonian with associated time-dependent vector field $X_H$ and flow $\digamma_{\mathrm{map}}^1_H$, and let $J$ be a compatible almost complex structure. The **Hamiltonian Floer complex** $CF_*(M,H)$ is the free module on the $1$-periodic orbits $x : S^1\to M$ of $X_H$ that are contractible and nondegenerate, graded by the **Conley–Zehnder index** $\mu(x)$. The **Floer equation** for a map $u : \mathbb{R}\times S^1\to M$ is
 
 $$
 \partial/\partial s u + J(u)\bigl(\partial/\partial t u - X_H(t,u)\bigr) = 0 ,
@@ -57,13 +57,13 @@ $$
 
 on the space of contractible loops, whose $L^2$-gradient flow is the Floer equation. The index is the Conley–Zehnder index; the compactness is Gromov's compactness for pseudoholomorphic curves, with the bubbling phenomena controlled by the monotonicity or asphericity hypothesis; the isomorphism with the homology is the PSS (Piunikhin–Salamon–Schwarz) isomorphism, obtained by counting the solutions of a mixed equation interpolating between the closed and the open ends of the theory.
 
-**Theorem (Arnold conjecture for Hamiltonian diffeomorphisms).** Let $(M,\omega)$ be a closed symplectic manifold, let $H$ be a periodic Hamiltonian whose time-one flow $\phi^1_H$ is nondegenerate, and let $\sum_i b_i(M)$ be the sum of the Betti numbers. Then
+**Theorem (Arnold conjecture for Hamiltonian diffeomorphisms).** Let $(M,\omega)$ be a closed symplectic manifold, let $H$ be a periodic Hamiltonian whose time-one flow $\digamma_{\mathrm{map}}^1_H$ is nondegenerate, and let $\sum_i b_i(M)$ be the sum of the Betti numbers. Then
 
 $$
-\boxed{\;\#\,\mathrm{Fix}(\phi^1_H) \geq \sum_{i=0}^{2n} b_i(M)\;} .
+\boxed{\;\#\,\mathrm{Fix}(\digamma_{\mathrm{map}}^1_H) \geq \sum_{i=0}^{2n} b_i(M)\;} .
 $$
 
-**Proof.** The fixed points of $\phi^1_H$ are the $1$-periodic orbits of $X_H$, hence the generators of the Floer complex. The rank of a chain complex is at least the rank of its homology; applied to the Floer complex, whose homology has total rank $\sum b_i(M)$ by the isomorphism $HF_*\cong H_{*+\dim_{\mathbb{C}}M}(M)$, this gives the inequality.
+**Proof.** The fixed points of $\digamma_{\mathrm{map}}^1_H$ are the $1$-periodic orbits of $X_H$, hence the generators of the Floer complex. The rank of a chain complex is at least the rank of its homology; applied to the Floer complex, whose homology has total rank $\sum b_i(M)$ by the isomorphism $HF_*\cong H_{*+\dim_{\mathbb{C}}M}(M)$, this gives the inequality.
 
 **Example.** For $M = \mathbb{CP}^n$ the Betti numbers are $b_{2k}=1$ and $b_{2k+1}=0$, so $\sum b_i = n+1$: every nondegenerate Hamiltonian diffeomorphism of $\mathbb{CP}^n$ has at least $n+1$ fixed points, and the standard linear Hamiltonian has exactly $n+1$. For $M=T^2$ the sum is $4$, matching the four critical points of the height function, and the theorem is sharp in both cases; the Floer-theoretic bound is stronger than the Lefschetz fixed-point bound in general.
 
@@ -83,15 +83,15 @@ with Lagrangian boundary conditions; the counts are finite for a generic $J$ and
 
 **Proof sketch.** The analytic content is the same compactness and gluing theory as in the Hamiltonian case, with Gromov's compactness applied to the strips and the boundary conditions controlled by the Lagrangian conditions; the index is the Maslov index of the strip, which computes the dimension of the moduli space; the invariance under Hamiltonian isotopy is a continuation argument along the isotopy. The delicate point absent in the Hamiltonian case is the possibility of discs with boundary on the Lagrangians, which obstructs the definition of the complex in the non-exact case and is handled by the obstruction theory of the Fukaya category.
 
-**Definition.** A Lagrangian $L$ is **displaceable** if there is a Hamiltonian diffeomorphism $\phi$ with $\phi(L)\cap L = \emptyset$. The **Floer homology of $L$ with itself** is the obstruction to displacement: if $HF_*(L,L)\neq0$ then $L$ is not displaceable.
+**Definition.** A Lagrangian $L$ is **displaceable** if there is a Hamiltonian diffeomorphism $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(L)\cap L = \emptyset$. The **Floer homology of $L$ with itself** is the obstruction to displacement: if $HF_*(L,L)\neq0$ then $L$ is not displaceable.
 
-**Theorem (Gromov; Lagrangian non-displacement).** Let $(M,\omega)$ be a closed symplectic manifold and let $L\subseteq M$ be a closed Lagrangian submanifold with $HF_*(L,L)\neq0$. Then $L$ is not displaceable: every Hamiltonian diffeomorphism $\phi$ satisfies $\phi(L)\cap L\neq\emptyset$. Consequently, under the isomorphism $HF_*(L,L)\cong H_*(L;\mathbb{Q})$ for the Lagrangians satisfying the regularity hypotheses,
+**Theorem (Gromov; Lagrangian non-displacement).** Let $(M,\omega)$ be a closed symplectic manifold and let $L\subseteq M$ be a closed Lagrangian submanifold with $HF_*(L,L)\neq0$. Then $L$ is not displaceable: every Hamiltonian diffeomorphism $\digamma_{\mathrm{map}}$ satisfies $\digamma_{\mathrm{map}}(L)\cap L\neq\emptyset$. Consequently, under the isomorphism $HF_*(L,L)\cong H_*(L;\mathbb{Q})$ for the Lagrangians satisfying the regularity hypotheses,
 
 $$
-\boxed{\;\#\,(L\cap\phi(L)) \geq \sum_{i=0}^{n} b_i(L)\;}
+\boxed{\;\#\,(L\cap\digamma_{\mathrm{map}}(L)) \geq \sum_{i=0}^{n} b_i(L)\;}
 $$
 
-for a Hamiltonian diffeomorphism $\phi$ in general position: this is the **Arnold conjecture for Lagrangian intersections**. For $M=\mathbb{CP}^n$ the Clifford torus $T^n$ has nonzero Floer homology with itself and is not displaceable.
+for a Hamiltonian diffeomorphism $\digamma_{\mathrm{map}}$ in general position: this is the **Arnold conjecture for Lagrangian intersections**. For $M=\mathbb{CP}^n$ the Clifford torus $T^n$ has nonzero Floer homology with itself and is not displaceable.
 
 **Proof sketch.** The nonexistence of a displacement is equivalent to the existence of a Floer trajectory for every Hamiltonian isotopy connecting the two Lagrangians; the compactness of the moduli spaces of strips with fixed ends, together with the nonvanishing of the Floer homology, precludes the isotopy from separating them. The count of intersections is the rank inequality applied to the Lagrangian Floer complex, whose homology has rank $\sum b_i(L)$. Gromov's original proof used the theory of pseudoholomorphic curves in the product $M\times M$ with the diagonal Lagrangian and an adapted almost complex structure.
 
@@ -153,7 +153,7 @@ for the three surgeries on a knot $K\subseteq Y$ with framings $0,1,\infty$. It 
 
 Floer homology is the homology of a complex built from the critical points of a functional on an infinite-dimensional space, graded by the index of an elliptic operator, with a differential counting the gradient flow lines. The template requires three analytic theorems — the finite-dimensionality and regularity of the moduli spaces, the compactness up to breaking, and the invariance under the auxiliary choices — and these belong to Part III.
 
-Hamiltonian Floer homology counts the periodic orbits of a Hamiltonian flow; its differential solves the Floer equation, its grading is the Conley–Zehnder index, and for a monotone or aspherical closed symplectic manifold it computes the singular homology of the manifold, whence the Arnold conjecture $\#\mathrm{Fix}(\phi^1_H)\geq\sum b_i(M)$ and its sharp form for $\mathbb{CP}^n$ and $T^2$. Lagrangian Floer homology counts the transverse intersections of two Lagrangians, with grading the Maslov index and differential counting pseudoholomorphic strips; it obstructs the displacement of a Lagrangian, proves the Arnold conjecture for Lagrangians, organises itself into the $A_\infty$-category called the Fukaya category, and is related by the Atiyah–Floer conjecture to the instanton theory. Instanton Floer homology is the Floer theory of the Chern–Simons functional, whose gradient flow is the anti-self-duality equation on a four-manifold with cylindrical ends; it is an invariant of a three-manifold whose Euler characteristic is twice the Casson invariant, and it is linked to the Donaldson invariants by exact triangles and by the Atiyah–Floer picture. Heegaard Floer homology is the Lagrangian Floer theory of the symmetric product of a Heegaard surface, isomorphic to the Seiberg–Witten Floer homology, with a surgery exact triangle and effective computations; contact homology is the Floer theory of the symplectisation, and it detects the tight–overtwisted dichotomy of contact topology.
+Hamiltonian Floer homology counts the periodic orbits of a Hamiltonian flow; its differential solves the Floer equation, its grading is the Conley–Zehnder index, and for a monotone or aspherical closed symplectic manifold it computes the singular homology of the manifold, whence the Arnold conjecture $\#\mathrm{Fix}(\digamma_{\mathrm{map}}^1_H)\geq\sum b_i(M)$ and its sharp form for $\mathbb{CP}^n$ and $T^2$. Lagrangian Floer homology counts the transverse intersections of two Lagrangians, with grading the Maslov index and differential counting pseudoholomorphic strips; it obstructs the displacement of a Lagrangian, proves the Arnold conjecture for Lagrangians, organises itself into the $A_\infty$-category called the Fukaya category, and is related by the Atiyah–Floer conjecture to the instanton theory. Instanton Floer homology is the Floer theory of the Chern–Simons functional, whose gradient flow is the anti-self-duality equation on a four-manifold with cylindrical ends; it is an invariant of a three-manifold whose Euler characteristic is twice the Casson invariant, and it is linked to the Donaldson invariants by exact triangles and by the Atiyah–Floer picture. Heegaard Floer homology is the Lagrangian Floer theory of the symmetric product of a Heegaard surface, isomorphic to the Seiberg–Witten Floer homology, with a surgery exact triangle and effective computations; contact homology is the Floer theory of the symplectisation, and it detects the tight–overtwisted dichotomy of contact topology.
 
 ## Summary of Notation
 
@@ -163,7 +163,7 @@ Hamiltonian Floer homology counts the periodic orbits of a Hamiltonian flow; its
 | $\partial x = \sum_y \#\mathcal{M}(x,y)y$ | Floer differential, counting flow lines of index difference one |
 | $CF_*, HF_*$ | Floer complex and Floer homology |
 | $\mu(x)$ | Conley–Zehnder index of a periodic orbit; Maslov index of a Lagrangian intersection |
-| $X_H$, $\phi^1_H$ | Hamiltonian vector field and its time-one flow |
+| $X_H$, $\digamma_{\mathrm{map}}^1_H$ | Hamiltonian vector field and its time-one flow |
 | Floer equation | $\partial/\partial s u + J(u)(\partial/\partial t u - X_H(t,u))=0$, a pseudoholomorphic cylinder with a Hamiltonian term |
 | $CF_*(M,H)$ | Hamiltonian Floer complex on the contractible periodic orbits |
 | $L_0, L_1$ | Lagrangian submanifolds; $CF_*(L_0,L_1)$ on $L_0\cap L_1$ |

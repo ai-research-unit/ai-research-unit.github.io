@@ -178,10 +178,10 @@ $$
 i\,\frac{h}{2\pi}\,c\partial_{r'_t}\tilde\Xi=\tilde H_{\Psi}\tilde\Xi ,
 $$
 
-which with $r'_t=c\,t$ and $\frac{h}{2\pi}=m\,c/(2\pi\nu_m)$ reads $i \frac{h}{2\pi}\,\partial_{t}\psi=H\psi$. For the scalar case with a constant potential,
+which with $r'_t=c\,t$ and $\frac{h}{2\pi}=m\,c/(2\pi\nu_m)$ reads $i \frac{h}{2\pi}\,\partial_{t}Ξ_{\mathrm{wfn}}=HΞ_{\mathrm{wfn}}$. For the scalar case with a constant potential,
 
 $$
-i \frac{h}{2\pi}\,\partial_{t}\psi=-\frac{hc}{8\pi^{2}\nu_m}\vec\nabla_\Phi^{2}\psi+V\psi
+i \frac{h}{2\pi}\,\partial_{t}Ξ_{\mathrm{wfn}}=-\frac{hc}{8\pi^{2}\nu_m}\vec\nabla_\Phi^{2}Ξ_{\mathrm{wfn}}+VΞ_{\mathrm{wfn}}
 \quad\longmapsto\quad
  hf_{\mathrm{frq}}=\frac{h^{2}\,\nu_{\Phi}^{2}}{2m}+V .
 $$
@@ -200,7 +200,7 @@ $$
 E-m\,c^{2}=\frac{p^{2}}{2m}+V ,
 $$
 
-the corpus's ladder obtaining it by dividing the rest clock out, $e^{i\theta_{\mathrm{pha}}}=e^{-i\theta_{\mathrm{rst}}}\chi$, with $\theta_{\mathrm{pha}}=\phi$ the phase of the polar form, real because it is an argument. The two displays say the same thing, and a reader who drops $\nu_m$ is off by the rest energy.
+the corpus's ladder obtaining it by dividing the rest clock out, $e^{i\theta_{\mathrm{pha}}}=e^{-i\theta_{\mathrm{rst}}}\chi$, with $\theta_{\mathrm{pha}}=\xi_{\mathrm{pot}}$ the phase of the polar form, real because it is an argument. The two displays say the same thing, and a reader who drops $\nu_m$ is off by the rest energy.
 
 The angle is $\theta_{\mathrm{rst}}=2\pi\nu_m r'_t$: the mass wave number and the real interval give a real angle.
 
@@ -208,7 +208,7 @@ The angle is $\theta_{\mathrm{rst}}=2\pi\nu_m r'_t$: the mass wave number and th
 
 The statement is exact and it is also a warning. The relation $E=p^{2}/(2m)+V$ is true of a classical particle, of a plane wave, and of every mode of the quantum field. What distinguishes the quantum case is not the relation but what the relation constrains: a single point in one case, a field carrying a superposition in the other. The relation is the alphabet, not the sentence.
 
-Three checks, on periodic data with $N=64$ samples and the modes $2\pi\nu_{\Phi}=2$ and $2\pi\nu_{\Phi}=6$. The equation $i\partial_{t}\psi+\tfrac{1}{2}\partial_{x}^{2}\psi=0$ holds to $4.1\times10^{-14}$ relative, which is the substitution $i\omega\mapsto-\tfrac{1}{2}(2\pi\nu_{\Phi})^{2}=-2\pi^{2}\nu_{\Phi}^{2}$ verified as an operator identity on the modes. A Gaussian packet of width $2$ and mean wave number $2\pi\nu_{\Phi,0}=1$, propagated by the exact free kernel, tracks $\langle x\rangle-\langle x\rangle_{0}=2\pi\nu_{\Phi,0}t$ to $6.3\times10^{-12}$ after one width of travel and to $2.7\times10^{-11}$ after four, which is the group velocity $\partial\omega/\partial(2\pi\nu_{\Phi})=2\pi\nu_{\Phi,0}/m$ read off the centroid. The residual of the equation itself is at the same level, $10^{-16}$.
+Three checks, on periodic data with $N=64$ samples and the modes $2\pi\nu_{\Phi}=2$ and $2\pi\nu_{\Phi}=6$. The equation $i\partial_{t}Ξ_{\mathrm{wfn}}+\tfrac{1}{2}\partial_{x}^{2}Ξ_{\mathrm{wfn}}=0$ holds to $4.1\times10^{-14}$ relative, which is the substitution $i\omega\mapsto-\tfrac{1}{2}(2\pi\nu_{\Phi})^{2}=-2\pi^{2}\nu_{\Phi}^{2}$ verified as an operator identity on the modes. A Gaussian packet of width $2$ and mean wave number $2\pi\nu_{\Phi,0}=1$, propagated by the exact free kernel, tracks $\langle x\rangle-\langle x\rangle_{0}=2\pi\nu_{\Phi,0}t$ to $6.3\times10^{-12}$ after one width of travel and to $2.7\times10^{-11}$ after four, which is the group velocity $\partial\omega/\partial(2\pi\nu_{\Phi})=2\pi\nu_{\Phi,0}/m$ read off the centroid. The residual of the equation itself is at the same level, $10^{-16}$.
 
 One check with the mass kept, on a torus where the three numbers are commensurate. Take $2\pi\nu_m=4$. The mode $2\pi\nu_{\Phi}=3$, $2\pi\nu_t^{\prime}=5$ is on shell, and the symbol of $\Box_\Phi-4\pi^{2}\nu_m^{2}$ vanishes on it exactly: $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-16/(4\pi^{2})=-\nu_m^{2}$, so $-4\pi^{2}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}-4\pi^{2}\nu_m^{2}=0$. The mode $2\pi\nu_{\Phi}=3$, $2\pi\nu_t^{\prime}=4$ is off shell and the same symbol is $-9$, which is exactly the eigenvalue of $\Box_\Phi-4\pi^{2}\nu_m^{2}$ on it, while the mode's own norm is $-7/(4\pi^{2})$. The same holds at $2\pi\nu_{\Phi}=6$, $2\pi\nu_t^{\prime}=10$, $2\pi\nu_m=8$, where $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-64/(4\pi^{2})$ and $-\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}-\nu_m^{2}=0$. The level set is not an approximation: on commensurate modes the arithmetic is exact, and the integers are $3,4,5$.
 
@@ -326,7 +326,7 @@ The density carries as many derivatives as the equation has time derivatives, mi
 
 The transform is the switch between them. It turns the divergence into the dot product $\omega\tilde\rho-2\pi\vec\nu_{\Phi}\cdot\tilde{\vec J}=0$, verified to $4.4\times10^{-17}$, and it turns the operator into the number $-4\pi^{2}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}-4\pi^{2}\nu_m^{2}$, verified to $1.0\times10^{-13}$ on the massless cone and exactly on the commensurate modes $3,4,5$.
 
-The Schrödinger case is the elementary instance, and the one exception. One substitution gives $E=p^{2}/(2m)+V$ from $i \frac{h}{2\pi}\partial_{t}\psi=H\psi$, with the operator identity closing at $4.1\times10^{-14}$ and the group velocity read off a packet centroid to $6.3\times10^{-12}$. Its symbol is affine rather than quadratic, so here the wave arm is a level set of an affine function and reading it as a mass shell costs a quartic correction.
+The Schrödinger case is the elementary instance, and the one exception. One substitution gives $E=p^{2}/(2m)+V$ from $i \frac{h}{2\pi}\partial_{t}Ξ_{\mathrm{wfn}}=HΞ_{\mathrm{wfn}}$, with the operator identity closing at $4.1\times10^{-14}$ and the group velocity read off a packet centroid to $6.3\times10^{-12}$. Its symbol is affine rather than quadratic, so here the wave arm is a level set of an affine function and reading it as a mass shell costs a quartic correction.
 
 The transcription is algebraic exactly when the coefficients are constant. Constancy, not centrality, is the boundary: a constant non-central potential passes through and merely translates the shell, a varying coefficient gives a convolution and no multiplier, and a periodic one gives a finite matrix.
 

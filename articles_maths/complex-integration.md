@@ -83,7 +83,7 @@ $$
 
 **Additivity.** $\displaystyle\int_{\gamma_1 + \gamma_2} f(Q) \, dQ = \int_{\gamma_1} f(Q) \, dQ + \int_{\gamma_2} f(Q) \, dQ$.
 
-**Invariance under reparametrisation.** If $\varphi : [c, d] \to [a, b]$ is a piecewise $C^1$ bijection with $\varphi(c) = a$, $\varphi(d) = b$, then $\int_{\gamma \circ \varphi} f \, dQ = \int_\gamma f \, dQ$; if $\varphi$ reverses the endpoints, the sign changes.
+**Invariance under reparametrisation.** If $\digamma_{\mathrm{map}} : [c, d] \to [a, b]$ is a piecewise $C^1$ bijection with $\digamma_{\mathrm{map}}(c) = a$, $\digamma_{\mathrm{map}}(d) = b$, then $\int_{\gamma \circ \digamma_{\mathrm{map}}} f \, dQ = \int_\gamma f \, dQ$; if $\digamma_{\mathrm{map}}$ reverses the endpoints, the sign changes.
 
 **Estimation.** If $|f(Q)| \le m$ on $\gamma^*$, then
 
@@ -353,7 +353,7 @@ $$
 \operatorname{Res}(f, Q_0) = \frac{1}{(m-1)!} \lim_{Q \to Q_0} \frac{d^{m-1}}{dQ^{m-1}} \left[ (Q - Q_0)^m f(Q) \right].
 $$
 
-**Proof.** The function $\varphi(Q) = (Q - Q_0)^m f(Q)$ is holomorphic and non-zero at $Q_0$, so near $Q_0$ it equals its Taylor series $\sum_{j \ge 0} \varphi^{(j)}(Q_0)(Q-Q_0)^j / j!$; dividing by $(Q-Q_0)^m$, the coefficient of $(Q-Q_0)^{-1}$ is $\varphi^{(m-1)}(Q_0)/(m-1)!$.
+**Proof.** The function $\digamma_{\mathrm{map}}(Q) = (Q - Q_0)^m f(Q)$ is holomorphic and non-zero at $Q_0$, so near $Q_0$ it equals its Taylor series $\sum_{j \ge 0} \digamma_{\mathrm{map}}^{(j)}(Q_0)(Q-Q_0)^j / j!$; dividing by $(Q-Q_0)^m$, the coefficient of $(Q-Q_0)^{-1}$ is $\digamma_{\mathrm{map}}^{(m-1)}(Q_0)/(m-1)!$.
 
 **Proposition (residue at infinity).** If $f$ is holomorphic outside a bounded set, then for all sufficiently large $R$,
 
@@ -406,13 +406,13 @@ $$
 \frac{1}{2\pi i} \oint_\gamma \frac{\frac{df}{dQ}}{f(Q)} \, dQ = \sum_{j=1}^{m} \mu_j \operatorname{Ind}(\gamma, Q_j) - \sum_{k=1}^{n} \nu_k \operatorname{Ind}(\gamma, p_k).
 $$
 
-**Proof.** Near a zero of order $\mu$ one has $f(Q) = (Q - Q_0)^\mu \phi(Q)$ with $\phi$ holomorphic and $\phi(Q_0) \neq 0$, so
+**Proof.** Near a zero of order $\mu$ one has $f(Q) = (Q - Q_0)^\mu \digamma_{\mathrm{map}}(Q)$ with $\digamma_{\mathrm{map}}$ holomorphic and $\digamma_{\mathrm{map}}(Q_0) \neq 0$, so
 
 $$
-\frac{\frac{df}{dQ}}{f(Q)} = \frac{\mu}{Q - Q_0} + \frac{\frac{d\phi}{dQ}}{\phi(Q)} ,
+\frac{\frac{df}{dQ}}{f(Q)} = \frac{\mu}{Q - Q_0} + \frac{\frac{d\digamma_{\mathrm{map}}}{dQ}}{\digamma_{\mathrm{map}}(Q)} ,
 $$
 
-and the second term is holomorphic at $Q_0$; hence $\frac{df}{dQ}/f$ has a simple pole at $Q_0$ with residue $\mu$. Near a pole of order $\nu$, writing $f(Q) = (Q - Q_0)^{-\nu} \psi(Q)$ with $\psi(Q_0) \neq 0$ gives $\frac{df}{dQ}/f = -\nu/(Q-Q_0) + \frac{d\psi}{dQ}/\psi$, so the residue there is $-\nu$. The residue theorem applied to $\frac{df}{dQ}/f$ gives the stated sum.
+and the second term is holomorphic at $Q_0$; hence $\frac{df}{dQ}/f$ has a simple pole at $Q_0$ with residue $\mu$. Near a pole of order $\nu$, writing $f(Q) = (Q - Q_0)^{-\nu} Ξ_{\mathrm{wfn}}(Q)$ with $Ξ_{\mathrm{wfn}}(Q_0) \neq 0$ gives $\frac{df}{dQ}/f = -\nu/(Q-Q_0) + \frac{dΞ_{\mathrm{wfn}}}{dQ}/Ξ_{\mathrm{wfn}}$, so the residue there is $-\nu$. The residue theorem applied to $\frac{df}{dQ}/f$ gives the stated sum.
 
 **Corollary.** If in addition $\gamma$ winds once about each zero and pole and about nothing else, the right-hand side is the number of zeros minus the number of poles, counted with multiplicity. Equivalently, it is the winding number of the closed curve $f \circ \gamma$ about the origin:
 

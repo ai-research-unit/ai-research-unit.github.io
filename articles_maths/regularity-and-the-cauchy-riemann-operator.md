@@ -287,7 +287,7 @@ which is the general form of the Cauchy integral formula stated in *Hypercomplex
 
 *Proof.* If $D$ and $D'$ have the same leading symbol then $D' - D$ is a zeroth-order operator, that is, multiplication by a constant $c \in A$ (in the constant-coefficient case); $D'f = 0$ and $Df = 0$ coincide on the common kernel exactly when $cf = 0$ there. The last statement follows from $D(1) = 0$ for an operator with $B_t = 1$.
 
-**Definition.** Two hypercomplex systems $(A,D)$ and $(A',D')$ are **equivalent** if there is an algebra isomorphism $\phi : A \to A'$ carrying the coefficients of $D$ to those of $D'$, $\phi(B_\alpha) = B'_\alpha$. Equivalent systems have isomorphic spaces of regular functions, by the proposition on the action of the automorphism group in *Hypercomplex Analysis*.
+**Definition.** Two hypercomplex systems $(A,D)$ and $(A',D')$ are **equivalent** if there is an algebra isomorphism $\digamma_{\mathrm{map}} : A \to A'$ carrying the coefficients of $D$ to those of $D'$, $\digamma_{\mathrm{map}}(B_\alpha) = B'_\alpha$. Equivalent systems have isomorphic spaces of regular functions, by the proposition on the action of the automorphism group in *Hypercomplex Analysis*.
 
 The classification of admissible operators up to this equivalence, and the determination of which finite-dimensional algebras carry one, is the general structural problem of hypercomplex analysis. A necessary condition is that $A$ contain elements $B_1, \dots, B_{m-1}$ with $B_k^2 = -1$ and $B_jB_k = -B_kB_j$, that is, a Clifford subalgebra; this is why the systems of the following categories are the Clifford-type ones.
 

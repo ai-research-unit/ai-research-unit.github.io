@@ -35,7 +35,7 @@ $$
 H^i(X,\mathcal{F}) = R^i\Gamma(X,\mathcal{F}) = H^i\bigl(\Gamma(X,\mathcal{I}^\bullet)\bigr),
 $$
 
-the $i$-th cohomology of the complex of abelian groups obtained by applying global sections to the resolution; in particular $H^0(X,\mathcal{F}) = \Gamma(X,\mathcal{F})$ and $H^i(X,\mathcal{F}) = 0$ for $i < 0$. The definition does not depend on the chosen injective resolution, by the comparison theorem for resolutions in *Derived Functors* of Part I, and is functorial in both variables: a morphism $\varphi : \mathcal{F} \to \mathcal{G}$ induces $\varphi_* : H^i(X,\mathcal{F}) \to H^i(X,\mathcal{G})$ naturally, and a continuous map $f : X \to Y$ induces $f^* : H^i(Y,\mathcal{F}) \to H^i(X,f^{-1}\mathcal{F})$ from the natural transformation $\Gamma(Y,-) \to \Gamma(X, f^{-1}(-))$.
+the $i$-th cohomology of the complex of abelian groups obtained by applying global sections to the resolution; in particular $H^0(X,\mathcal{F}) = \Gamma(X,\mathcal{F})$ and $H^i(X,\mathcal{F}) = 0$ for $i < 0$. The definition does not depend on the chosen injective resolution, by the comparison theorem for resolutions in *Derived Functors* of Part I, and is functorial in both variables: a morphism $\digamma_{\mathrm{map}} : \mathcal{F} \to \mathcal{G}$ induces $\digamma_{\mathrm{map},*} : H^i(X,\mathcal{F}) \to H^i(X,\mathcal{G})$ naturally, and a continuous map $f : X \to Y$ induces $f^* : H^i(Y,\mathcal{F}) \to H^i(X,f^{-1}\mathcal{F})$ from the natural transformation $\Gamma(Y,-) \to \Gamma(X, f^{-1}(-))$.
 
 **Theorem (the long exact sequence).** Let $0 \to \mathcal{F} \to \mathcal{G} \to \mathcal{H} \to 0$ be a short exact sequence of sheaves of abelian groups on $X$. There is a long exact sequence of abelian groups
 

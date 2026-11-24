@@ -107,13 +107,13 @@ $$
 
 *Proof.* The inequalities are Young's inequality for $\mathbb{R}^4$; the product formula is Fubini's theorem and the character property $\chi_\zeta(Q-Q_1)=\chi_\zeta(Q)\chi_\zeta(-Q_1)$.
 
-**Theorem (approximate identities).** Let $\varphi\in L^1$ with $\int\varphi=1$ and set $\varphi_\epsilon(Q)=\epsilon^{-4}\varphi(Q/\epsilon)$. Then for $f\in L^p$, $1\le p<\infty$,
+**Theorem (approximate identities).** Let $\digamma_{\mathrm{map}}\in L^1$ with $\int\digamma_{\mathrm{map}}=1$ and set $\digamma_{\mathrm{map},\epsilon}(Q)=\epsilon^{-4}\digamma_{\mathrm{map}}(Q/\epsilon)$. Then for $f\in L^p$, $1\le p<\infty$,
 $$
-f*\varphi_\epsilon\longrightarrow f\quad\text{in }L^p,
+f*\digamma_{\mathrm{map},\epsilon}\longrightarrow f\quad\text{in }L^p,
 $$
 and for $f$ continuous and bounded the convergence is uniform on compact sets.
 
-*Proof.* The proof is the standard approximation argument of *Fourier Analysis on Euclidean Spaces*: the mass of $\varphi_\epsilon$ concentrates at the origin, and the continuity of translations in $L^p$ gives the convergence.
+*Proof.* The proof is the standard approximation argument of *Fourier Analysis on Euclidean Spaces*: the mass of $\digamma_{\mathrm{map},\epsilon}$ concentrates at the origin, and the continuity of translations in $L^p$ gives the convergence.
 
 **Remark (the algebra and the transform).** The Fourier transform is an injective homomorphism from the Banach algebra $L^1(\mathbb{C}^2)$ with convolution into the algebra $C_0(\widehat{\mathbb{C}^2})$ with pointwise multiplication; its image is dense in the sup norm but is not closed. **The algebra is not unital**, because an invertible element would be a function whose transform is identically $1$, and no $L^1$ function has that transform; the approximate identities replace the unit. The same statements hold on $\mathbb{R}^4$, and the complex structure plays no role in this section.
 
@@ -246,7 +246,7 @@ u(Q_0)=\frac{1}{\omega_3}\int_{S^3}u(Q_0+r\omega)\,d\omega,
 $$
 and $u$ is $C^\infty$; harmonic functions are real analytic.
 
-*Proof.* The mean value property is the Euclidean one in four dimensions; the regularity follows from the representation $u=u*\varphi_\epsilon$ with a radial approximate identity, or from the fundamental solution.
+*Proof.* The mean value property is the Euclidean one in four dimensions; the regularity follows from the representation $u=u*\digamma_{\mathrm{map},\epsilon}$ with a radial approximate identity, or from the fundamental solution.
 
 **Remark (harmonic against pluriharmonic).** Every pluriharmonic function is harmonic, because $\Delta=4(\partial^2/\partial Q_{\blacktriangle}\partial\overline{Q}_{\blacktriangle}+\partial^2/\partial Q_{\blacktriangledown}\partial\overline{Q}_{\blacktriangledown})$ is the trace of the Hermitian matrix of the mixed derivatives; **the converse fails**, and $\lvert Q_{\blacktriangle}\rvert^2-\lvert Q_{\blacktriangledown}\rvert^2$ is harmonic but not pluriharmonic. The two notions are the real and the complex readings of the same operator: harmonic functions are the solutions of $\Delta u=0$, and pluriharmonic functions are the real parts of holomorphic functions. The distinction is developed in *Analysis on $\mathbb{C}^2$*.
 

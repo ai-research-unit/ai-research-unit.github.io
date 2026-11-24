@@ -104,7 +104,7 @@ So the maximal ideal coincides with one of the two submodules and meets the othe
 
 ## The Involutions as Sign Patterns
 
-An $R$-linear involution $s$ that is also an algebra automorphism fixes $1$ and, by the automorphism theorem of *Dual-Numbers Automorphisms and Derivations*, is $\varphi_c$ with $\varphi_c(\varepsilon) = \varepsilon c$ for some $c \in R^\times$; it is an involution exactly when $c^2 = 1$. Over a field (or, more generally, an integral domain) this gives $c = \pm 1$, so the involutions are the sign patterns
+An $R$-linear involution $s$ that is also an algebra automorphism fixes $1$ and, by the automorphism theorem of *Dual-Numbers Automorphisms and Derivations*, is $\digamma_{\mathrm{map},c}$ with $\digamma_{\mathrm{map},c}(\varepsilon) = \varepsilon c$ for some $c \in R^\times$; it is an involution exactly when $c^2 = 1$. Over a field (or, more generally, an integral domain) this gives $c = \pm 1$, so the involutions are the sign patterns
 
 $$
 (+,+) : (q, q') \mapsto (q, q') \qquad \text{(identity)}, \qquad (+,-) : (q, q') \mapsto (q, -q') \qquad \text{(dual conjugation)}.

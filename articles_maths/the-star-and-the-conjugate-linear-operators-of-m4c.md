@@ -336,7 +336,7 @@ of complex dimension eight, not the four-dimensional left factor $L(\mathbb{B})$
 
 ## The Star and the Adjoint
 
-**The Dirac adjoint.** The Dirac adjoint of a spinor is $\psi^{*}G_0$, with $G_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$ the time generator of the complex frame. In the operator dictionary the two factors are the star (the algebra involution on the spinor) and the time generator (the odd operation). The star is not the generator; the generator is the bar in the real frame, and the basis operator $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$ in the complex frame. The composite is the adjoint.
+**The Dirac adjoint.** The Dirac adjoint of a spinor is $Ξ_{\mathrm{wfn}}^{*}G_0$, with $G_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$ the time generator of the complex frame. In the operator dictionary the two factors are the star (the algebra involution on the spinor) and the time generator (the odd operation). The star is not the generator; the generator is the bar in the real frame, and the basis operator $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$ in the complex frame. The composite is the adjoint.
 
 **The Hermitian form.** The Hermitian form on $\mathbb{B}$ is
 $$

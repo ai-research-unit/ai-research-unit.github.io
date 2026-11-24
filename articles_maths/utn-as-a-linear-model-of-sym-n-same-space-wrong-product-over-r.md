@@ -76,7 +76,7 @@ so the defect is the sum of the three mixed and antisymmetric contributions, and
 
 ## No Linear Isomorphism Can Repair It
 
-**The two algebras are not isomorphic, and no linear isomorphism carries one product to the other.** Suppose $\varphi:UT_n\to S$ linear and bijective with $\varphi(XY)=\varphi(X)\circ\varphi(Y)$. Take $X\ne0$ with $X^{2}=0$, which exists in $n_+$. Then $\varphi(X)\circ\varphi(X)=\varphi(0)=0$, so $\varphi(X)$ is a nilpotent element of the Jordan algebra $S$, hence zero, since a Jordan algebra of a real inner product space has no nonzero nilpotent. This contradicts the injectivity.
+**The two algebras are not isomorphic, and no linear isomorphism carries one product to the other.** Suppose $\digamma_{\mathrm{map}}:UT_n\to S$ linear and bijective with $\digamma_{\mathrm{map}}(XY)=\digamma_{\mathrm{map}}(X)\circ\digamma_{\mathrm{map}}(Y)$. Take $X\ne0$ with $X^{2}=0$, which exists in $n_+$. Then $\digamma_{\mathrm{map}}(X)\circ\digamma_{\mathrm{map}}(X)=\digamma_{\mathrm{map}}(0)=0$, so $\digamma_{\mathrm{map}}(X)$ is a nilpotent element of the Jordan algebra $S$, hence zero, since a Jordan algebra of a real inner product space has no nonzero nilpotent. This contradicts the injectivity.
 
 **Consequence: the nilpotents are the obstruction.** The set of nilpotent elements is empty in $S$ and is the whole radical $n_+$ in $UT_n$, and this set is invariant under linear isomorphisms only up to image; so the two algebras cannot be matched. The obstruction is the same in every dimension, and it is not a matter of a bad choice of the map.
 

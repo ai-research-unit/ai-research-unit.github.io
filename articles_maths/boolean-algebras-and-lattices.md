@@ -75,7 +75,7 @@ $$
 \alpha \wedge \neg\alpha = 0, \qquad \alpha \vee \neg\alpha = 1 .
 $$
 
-A **homomorphism** of Boolean algebras is a map $\varphi : B \to B'$ preserving $\wedge$, $\vee$, $\neg$, $0$ and $1$. A **subalgebra** is a subset closed under the three operations; an **ideal** is a nonempty subset $I$ closed under finite joins and downward closed, $\alpha \in I$ and $\beta \leq \alpha$ implying $\beta \in I$; a **filter** is the order-dual notion. The algebra $B$ is **trivial** if $0 = 1$.
+A **homomorphism** of Boolean algebras is a map $\digamma_{\mathrm{map}} : B \to B'$ preserving $\wedge$, $\vee$, $\neg$, $0$ and $1$. A **subalgebra** is a subset closed under the three operations; an **ideal** is a nonempty subset $I$ closed under finite joins and downward closed, $\alpha \in I$ and $\beta \leq \alpha$ implying $\beta \in I$; a **filter** is the order-dual notion. The algebra $B$ is **trivial** if $0 = 1$.
 
 **Theorem.** In a bounded distributive lattice, a complement, when it exists, is unique.
 
@@ -205,26 +205,26 @@ where the algebra variables are written $\alpha_1,\dots,\alpha_n$ to distinguish
 Let $L$ be the propositional language on a set of variables, built from the connectives $\wedge, \vee, \neg, \to, \leftrightarrow$ as in *Logic and Proof*, and let $T$ be a set of propositions. Define a relation on the propositions by
 
 $$
-\varphi \sim_T \psi \iff T \vdash \varphi \leftrightarrow \psi,
+\digamma_{\mathrm{map}} \sim_T Ξ_{\mathrm{wfn}} \iff T \vdash \digamma_{\mathrm{map}} \leftrightarrow Ξ_{\mathrm{wfn}},
 $$
 
-that is, $T$ proves that $\varphi$ and $\psi$ are equivalent. The **Lindenbaum–Tarski algebra** of $T$ is the quotient of the propositions by $\sim_T$, with the operations induced by the connectives and the classes of the always-false and always-true propositions as $0$ and $1$.
+that is, $T$ proves that $\digamma_{\mathrm{map}}$ and $Ξ_{\mathrm{wfn}}$ are equivalent. The **Lindenbaum–Tarski algebra** of $T$ is the quotient of the propositions by $\sim_T$, with the operations induced by the connectives and the classes of the always-false and always-true propositions as $0$ and $1$.
 
 **Theorem (Lindenbaum–Tarski).** The relation $\sim_T$ is a congruence on the propositional algebra, and the quotient is a Boolean algebra. It is the trivial algebra exactly when $T$ is inconsistent.
 
-**Proof.** The relation is an equivalence relation because $\leftrightarrow$ is reflexive, symmetric and transitive in the propositional calculus, and it is a congruence because the connectives are compatible with provable equivalence; the quotient therefore inherits the operations. The distributive, complementation and bound laws hold because their instances in the connectives are tautologies, each provable from the axioms of *Logic and Proof*; for instance $\varphi \wedge \neg \varphi$ is refutable and $\varphi \vee \neg \varphi$ is provable in the classical calculus. If $T$ is inconsistent then every proposition is provable, so all classes coincide and $0 = 1$; conversely if $0 = 1$ then $T$ proves a contradiction.
+**Proof.** The relation is an equivalence relation because $\leftrightarrow$ is reflexive, symmetric and transitive in the propositional calculus, and it is a congruence because the connectives are compatible with provable equivalence; the quotient therefore inherits the operations. The distributive, complementation and bound laws hold because their instances in the connectives are tautologies, each provable from the axioms of *Logic and Proof*; for instance $\digamma_{\mathrm{map}} \wedge \neg \digamma_{\mathrm{map}}$ is refutable and $\digamma_{\mathrm{map}} \vee \neg \digamma_{\mathrm{map}}$ is provable in the classical calculus. If $T$ is inconsistent then every proposition is provable, so all classes coincide and $0 = 1$; conversely if $0 = 1$ then $T$ proves a contradiction.
 
 ### Semantics and the Two-Element Model
 
 A **valuation** is a map $v$ from the propositional variables to $\mathbf{2}$, extended to all propositions by the truth tables; equivalently, by the theorem above, a homomorphism from the free propositional algebra to $\mathbf{2}$. A proposition is a **tautology** if every valuation gives it the value $1$, and **satisfiable** if some valuation does.
 
-**Theorem (soundness and completeness, semantic form).** For a set $T$ of propositions and a proposition $\varphi$,
+**Theorem (soundness and completeness, semantic form).** For a set $T$ of propositions and a proposition $\digamma_{\mathrm{map}}$,
 
 $$
-T \vdash \varphi \iff \text{every valuation satisfying } T \text{ satisfies } \varphi .
+T \vdash \digamma_{\mathrm{map}} \iff \text{every valuation satisfying } T \text{ satisfies } \digamma_{\mathrm{map}} .
 $$
 
-**Pro.** Soundness is induction on the length of a derivation, each axiom being a tautology and each rule preserving truth. For completeness, suppose $T \nvdash \varphi$; then the class of $\varphi$ is not $1$ in the Lindenbaum–Tarski algebra $B$ of $T$, and since $B$ is a nontrivial Boolean algebra it has a homomorphism to $\mathbf{2}$ — in the finite case by the finite representation theorem above, and in general by the prime-filter theorem — pulling back to a valuation satisfying $T$ and falsifying $\varphi$. A direct proof from the syntax is in *Logic and Proof*.
+**Pro.** Soundness is induction on the length of a derivation, each axiom being a tautology and each rule preserving truth. For completeness, suppose $T \nvdash \digamma_{\mathrm{map}}$; then the class of $\digamma_{\mathrm{map}}$ is not $1$ in the Lindenbaum–Tarski algebra $B$ of $T$, and since $B$ is a nontrivial Boolean algebra it has a homomorphism to $\mathbf{2}$ — in the finite case by the finite representation theorem above, and in general by the prime-filter theorem — pulling back to a valuation satisfying $T$ and falsifying $\digamma_{\mathrm{map}}$. A direct proof from the syntax is in *Logic and Proof*.
 
 **Remark.** The completeness theorem identifies the semantic models of propositional logic with the homomorphisms into $\mathbf{2}$. This is the reason the two-element algebra is the object of study: the variety generated by $\mathbf{2}$ is the variety of all Boolean algebras, so the equational theory of the system is the theory of this single finite algebra.
 
@@ -287,7 +287,7 @@ The Boolean system supports an algebra and no analysis. Its free algebras are fi
 | $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$ | The field of two elements |
 | $\alpha^{e}$ | Reduced monomial, $e \in \mathbf{2}^n$ |
 | $\oplus$ | Addition in $\mathbb{F}_2$, the symmetric difference |
-| $\varphi \sim_T \psi$ | Provable equivalence modulo $T$, defining the Lindenbaum–Tarski algebra |
+| $\digamma_{\mathrm{map}} \sim_T Ξ_{\mathrm{wfn}}$ | Provable equivalence modulo $T$, defining the Lindenbaum–Tarski algebra |
 | $v$ | Valuation, equivalently a homomorphism to $\mathbf{2}$ |
 | $m_x$ | Minterm at the point $x$ |
 | $\alpha \uparrow \beta$ | NAND, $1 \oplus \alpha\beta$ |

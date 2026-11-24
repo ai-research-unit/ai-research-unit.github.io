@@ -137,7 +137,7 @@ $$
 
 so that $- \otimes_RN$ is left adjoint to $\operatorname{Hom}_R(N,-)$.
 
-*Proof.* This is the tensor–hom adjunction of the articles on the balanced product and on flatness and exactness: the map on the left is sent to $m\mapsto(n\mapsto\varphi(m\otimes n))$, and the two constructions are inverse and natural.
+*Proof.* This is the tensor–hom adjunction of the articles on the balanced product and on flatness and exactness: the map on the left is sent to $m\mapsto(n\mapsto\digamma_{\mathrm{map}}(m\otimes n))$, and the two constructions are inverse and natural.
 
 **Corollary.** $-\otimes_RN$ preserves all colimits, hence is right exact and distributes over direct sums and cokernels; $\operatorname{Hom}_R(N,-)$ preserves all limits, hence is left exact.
 

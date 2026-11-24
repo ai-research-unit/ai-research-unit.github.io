@@ -248,13 +248,13 @@ The Feynman–Kac formula is the representation of the solution of the heat equa
 
 ### The Dirichlet Problem
 
-**Theorem (Kakutani's formula).** Let $D \subseteq \mathbb{R}^d$ be a bounded domain with smooth (or merely regular) boundary, let $\tau_D = \inf\{t : B_t \notin D\}$, and let $\varphi$ be continuous on $\partial D$. Then the function
+**Theorem (Kakutani's formula).** Let $D \subseteq \mathbb{R}^d$ be a bounded domain with smooth (or merely regular) boundary, let $\tau_D = \inf\{t : B_t \notin D\}$, and let $\digamma_{\mathrm{map}}$ be continuous on $\partial D$. Then the function
 
 $$
-u(x) = \mathbb{E}^x\bigl[\varphi(B_{\tau_D})\bigr], \qquad x \in D,
+u(x) = \mathbb{E}^x\bigl[\digamma_{\mathrm{map}}(B_{\tau_D})\bigr], \qquad x \in D,
 $$
 
-is the unique continuous solution of the Dirichlet problem $\Delta u = 0$ in $D$, $u = \varphi$ on $\partial D$; the boundary values are taken because $\mathbb{P}^x(\tau_D < \infty) = 1$ and $\lim_{x\to y}u(x) = \varphi(y)$ for regular boundary points $y$.
+is the unique continuous solution of the Dirichlet problem $\Delta u = 0$ in $D$, $u = \digamma_{\mathrm{map}}$ on $\partial D$; the boundary values are taken because $\mathbb{P}^x(\tau_D < \infty) = 1$ and $\lim_{x\to y}u(x) = \digamma_{\mathrm{map}}(y)$ for regular boundary points $y$.
 
 Kakutani's formula is the probabilistic solution of the Dirichlet problem, and it identifies Brownian motion as the tool of classical potential theory: the harmonic measure of the domain is the law of $B_{\tau_D}$, the value of the harmonic function is the average of the boundary data against it, and the boundaries are regular exactly when the motion leaves the domain continuously. The smoothness of the boundary is not needed: the Wiener criterion characterises the regular points in terms of the capacity of the complement, and it is the potential-theoretic statement of the strong Markov property.
 
@@ -282,7 +282,7 @@ The Itô integral is defined for simple predictable integrands by the left-endpo
 | $b$, $\sigma$ | Drift and diffusion coefficients of an SDE |
 | $Z_t$, $\theta$, $\mathbb{Q}=Z_T\mathbb{P}$ | Girsanov density, shift, changed measure |
 | $V$, Feynman–Kac | Potential and the representation of $\exp(t(\Delta/2-V))$ |
-| $\tau_D$, Kakutani | Exit time from $D$; $u(x)=\mathbb{E}^x[\varphi(B_{\tau_D})]$ |
+| $\tau_D$, Kakutani | Exit time from $D$; $u(x)=\mathbb{E}^x[\digamma_{\mathrm{map}}(B_{\tau_D})]$ |
 | Bessel drift | $(d-1)/(2R_t)$ in the radial SDE |
 
 

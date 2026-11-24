@@ -10,7 +10,7 @@ What "closure" means here. Take three quantities measured by three different phy
 The claim, in four parts.
 
 - GIM is unitarity plus non-degeneracy, and that is a statement about the flavour factor. The box amplitude sums $V_{id}V^{*}_{is}m_i^2$ over the internal quarks. The sum of the $V$ products vanishes because $V$ is unitary; what survives is the failure of the mass operator to be a multiple of the identity on the generation label. Written this way, the mechanism is not a trick about charm: it is the statement that a loop of a generation-universal coupling cancels unless the masses split.
-- The charm prediction was a genuine prediction. $\delta m_K$ was measured before charm existed. The box formula, read backwards with the GIM mechanism, gave $m_c\approx2.674\times10^{-27}\ \mathrm{kg}$. The $J/\psi$ came in at $5.526\times10^{-27}\ \mathrm{kg}$, and the current mass relevant to the loop is $2.264\times10^{-27}\ \mathrm{kg}$ — the hadron mass was never the right number, and the prediction was right anyway.
+- The charm prediction was a genuine prediction. $\delta m_K$ was measured before charm existed. The box formula, read backwards with the GIM mechanism, gave $m_c\approx2.674\times10^{-27}\ \mathrm{kg}$. The $J/Ξ_{\mathrm{wfn}}$ came in at $5.526\times10^{-27}\ \mathrm{kg}$, and the current mass relevant to the loop is $2.264\times10^{-27}\ \mathrm{kg}$ — the hadron mass was never the right number, and the prediction was right anyway.
 - The three mixing systems span fourteen orders of magnitude in $\delta m/m$ and their pattern is diagnostic. $7.0\times10^{-15}$, $6.3\times10^{-14}$, $2.2\times10^{-12}$. The third is large enough that the $B_s$ oscillates essentially completely before it decays: $\chi_s=0.4993$, against a ceiling of $0.5$.
 - The triangle closes, with one number that does not. Four of the five measurements land within a per cent of the fit; $\varepsilon'/\varepsilon$ does not, and the article says so rather than presenting a triumph.
 
@@ -31,10 +31,10 @@ with $M_{12}$ and $\Gamma_{12}$ the dispersive and absorptive mixing amplitudes.
 $$
 \delta m=m_H-m_L=2\lvert M_{12}\rvert ,
 \qquad
-\delta\Gamma=\Gamma_H-\Gamma_L=2\lvert\Gamma_{12}\rvert\cos\phi ,
+\delta\Gamma=\Gamma_H-\Gamma_L=2\lvert\Gamma_{12}\rvert\cos\xi_{\mathrm{pot}} ,
 $$
 
-where $\phi=\arg(M_{12}/\Gamma_{12})$. The two parameters that experiments quote are $\delta m$ and the decay-width difference, and the relevant dimensionless ratios are
+where $\xi_{\mathrm{pot}}=\arg(M_{12}/\Gamma_{12})$. The two parameters that experiments quote are $\delta m$ and the decay-width difference, and the relevant dimensionless ratios are
 
 $$
 x=\frac{\delta m}{\Gamma},
@@ -138,7 +138,7 @@ $$
 m_c\approx2.674\times10^{-27}\ \mathrm{kg} .
 $$
 
-**What was found, and what the number actually meant.** The $J/\psi$ was discovered at $5.526\times10^{-27}\ \mathrm{kg}$, and the $D$ meson at $3.334\times10^{-27}\ \mathrm{kg}$. Neither is $2.674\times10^{-27}\ \mathrm{kg}$, and both are the wrong kind of number: the mass in the box is the **current** mass of the charm quark, which is $2.264\times10^{-27}\ \mathrm{kg}$, and the hadron masses include the binding energy of a light quark and a gluon cloud. So the prediction was right to about $15\%$ and the two numbers that "disconfirmed" it were not the quantity being predicted.
+**What was found, and what the number actually meant.** The $J/Ξ_{\mathrm{wfn}}$ was discovered at $5.526\times10^{-27}\ \mathrm{kg}$, and the $D$ meson at $3.334\times10^{-27}\ \mathrm{kg}$. Neither is $2.674\times10^{-27}\ \mathrm{kg}$, and both are the wrong kind of number: the mass in the box is the **current** mass of the charm quark, which is $2.264\times10^{-27}\ \mathrm{kg}$, and the hadron masses include the binding energy of a light quark and a gluon cloud. So the prediction was right to about $15\%$ and the two numbers that "disconfirmed" it were not the quantity being predicted.
 
 Why this is worth recording. It is the cleanest case in the corpus of a prediction that is easy to mis-state. A reader who compares $2.674\times10^{-27}\ \mathrm{kg}$ with $3.334\times10^{-27}\ \mathrm{kg}$ concludes the prediction was wrong by $25\%$; a reader who compares with $2.264\times10^{-27}\ \mathrm{kg}$ concludes it was right to $18\%$ with the accuracy of a one-loop calculation with an uncomputed hadronic matrix element. The second comparison is the correct one, and the distinction is exactly the one [the hadron-structure article](hadron-structure-from-qcd-the-bound-state-problem.html) drew between current and constituent masses.
 
@@ -268,7 +268,7 @@ The five measurements, and what each uses.
 |---|---|---|---|---|
 | $R_b$ | $\lvert V_{ub}\rvert/\digamma_{\mathrm{ckm},12}\lvert V_{cb}\rvert$ | Tree-level semileptonic decays | $0.386$ | $3\%$ |
 | $R_t$ | $\delta m_{B_d}/\delta m_{B_s}$ | Loop-level box diagrams | $0.911$ | $1.3\%$ |
-| $\beta$ | $\sin2\beta$ in $B\to J/\psi K_S$ | Tree decay with mixing | $22.2^\circ$ | $0.7^\circ$ |
+| $\beta$ | $\sin2\beta$ in $B\to J/Ξ_{\mathrm{wfn}} K_S$ | Tree decay with mixing | $22.2^\circ$ | $0.7^\circ$ |
 | $\gamma$ | $B\to DK$ | Pure tree, no mixing | $65.9^\circ$ | $3.5^\circ$ |
 | $\alpha$ | $B\to\pi\pi,\rho\rho,\rho\pi$ | Isospin analysis of trees | $91.9^\circ$ | $1.5^\circ$ |
 

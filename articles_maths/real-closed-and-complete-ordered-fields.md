@@ -132,13 +132,13 @@ Thus the algebraic closure of a real-closed field is obtained by adjoining a sin
 
 **Theorem (Cantor).** Any two order-complete ordered fields are isomorphic by a unique order-preserving field isomorphism.
 
-**Proof sketch.** Let $F$ and $F'$ be order-complete ordered fields. Their prime fields are the images of $\mathbb{Q}$, and the unique ordering of $\mathbb{Q}$ is preserved, giving an isomorphism $\varphi_0$ of the prime subfields that is order-preserving. Extend $\varphi_0$ to a map $\varphi : F \to F'$ by
+**Proof sketch.** Let $F$ and $F'$ be order-complete ordered fields. Their prime fields are the images of $\mathbb{Q}$, and the unique ordering of $\mathbb{Q}$ is preserved, giving an isomorphism $\digamma_{\mathrm{map},0}$ of the prime subfields that is order-preserving. Extend $\digamma_{\mathrm{map},0}$ to a map $\digamma_{\mathrm{map}} : F \to F'$ by
 
 $$
-\varphi(x) = \sup\{ \varphi_0(q) : q \in \mathbb{Q},\ q < x \},
+\digamma_{\mathrm{map}}(x) = \sup\{ \digamma_{\mathrm{map},0}(q) : q \in \mathbb{Q},\ q < x \},
 $$
 
-which is defined because $\varphi_0(A_x)$ is nonempty and bounded above in $F'$. The map is order-preserving and additive and multiplicative by the arithmetic of suprema, and its kernel is trivial; it is surjective because, given $y \in F'$, the element $x = \sup\{q \in \mathbb{Q} : \varphi_0(q) < y\}$ satisfies $\varphi(x) = y$ by the order-density of $\mathbb{Q}$ in both fields. Uniqueness holds because an order-preserving field map is determined by its restriction to $\mathbb{Q}$, hence to the order-dense subfield $\mathbb{Q}$, hence to $F$.
+which is defined because $\digamma_{\mathrm{map},0}(A_x)$ is nonempty and bounded above in $F'$. The map is order-preserving and additive and multiplicative by the arithmetic of suprema, and its kernel is trivial; it is surjective because, given $y \in F'$, the element $x = \sup\{q \in \mathbb{Q} : \digamma_{\mathrm{map},0}(q) < y\}$ satisfies $\digamma_{\mathrm{map}}(x) = y$ by the order-density of $\mathbb{Q}$ in both fields. Uniqueness holds because an order-preserving field map is determined by its restriction to $\mathbb{Q}$, hence to the order-dense subfield $\mathbb{Q}$, hence to $F$.
 
 **Corollary (the real numbers are unique).** Up to a unique order-preserving field isomorphism there is exactly one order-complete ordered field, namely $\mathbb{R}$. In particular every complete ordered field is $\mathbb{R}$, and every order-complete ordered field contains $\mathbb{Q}$ as an order-dense subfield and is isomorphic to $\mathbb{R}$.
 

@@ -28,10 +28,10 @@ $$
 
 The algebraic norm of a product is the diagonal of its form.
 
-**Definition.** Let $\star$ be a product on $\mathbb{C}_{\mathrm{spl}}$ and let $\varphi(Q_1,Q_2)=\operatorname{Sc}(Q_1\star Q_2)$ be the scalar part of its form. The **algebraic norm of $\star$** is the diagonal
+**Definition.** Let $\star$ be a product on $\mathbb{C}_{\mathrm{spl}}$ and let $\digamma_{\mathrm{map}}(Q_1,Q_2)=\operatorname{Sc}(Q_1\star Q_2)$ be the scalar part of its form. The **algebraic norm of $\star$** is the diagonal
 
 $$
-\varphi(Q)=\varphi(Q,Q)=\operatorname{Sc}\bigl(Q\star Q\bigr).
+\digamma_{\mathrm{map}}(Q)=\digamma_{\mathrm{map}}(Q,Q)=\operatorname{Sc}\bigl(Q\star Q\bigr).
 $$
 
 Throughout this article the product is the general plain sesquilinear product $Q_1\star Q_2=Q_1\bar Q_2$, whose square is scalar, so that the algebraic norm is the scalar coefficient of the square; it means the algebraic norm of that product, written $\langle\cdot\rangle_{*}$.

@@ -73,7 +73,7 @@ and the even part commutes with $\pi$; the obstruction to associativity of the t
 
 **Corollary (the duality and the adjoint module).** The adjoint action makes the dual $M^*$ with the transpose action a graded module over the same ring with the twisted parameters; the parity operator of $M^*$ is the transpose of $\pi$, self-adjoint for the dual form, and the twisted multiplications on $M$ and on $M^*$ are adjoint to each other.
 
-**Proof.** The transpose action $(T^{\mathrm t}\varphi)(m) = \varphi(Tm)$ gives $\ell_r^\pi$ on $M^*$ the adjoint $\ell_{\delta(r)}^\pi$ of the operator on $M$, by the defining identity of the adjoint; the parity operator dualises and remains an involution and self-adjoint for the dual form.
+**Proof.** The transpose action $(T^{\mathrm t}\digamma_{\mathrm{map}})(m) = \digamma_{\mathrm{map}}(Tm)$ gives $\ell_r^\pi$ on $M^*$ the adjoint $\ell_{\delta(r)}^\pi$ of the operator on $M$, by the defining identity of the adjoint; the parity operator dualises and remains an involution and self-adjoint for the dual form.
 
 ## Topological Compatibility and Examples
 

@@ -43,7 +43,7 @@ makes $J$ a Jordan triple system, and the quadratic map $\mathrm{Jor}_x$ satisfi
 
 *Proof.* The symmetry in $x$ and $z$ is the commutativity of $\bullet$; the Jordan triple identity is the linearisation of the Jordan identity, which the binary Jordan identity ensures. The identification $\{x,y,x\} = 2\mathrm{Jor}_x(y)$ is the defining formula $\mathrm{Jor}_x = 2L_x^2-L_{x^2}$ read on $y$.
 
-**Definition (morphism).** A **homomorphism** of Jordan triple systems is an $R$-linear map $\varphi$ with $\varphi\{x,y,z\} = \{\varphi x,\varphi y,\varphi z\}$; an **anti-homomorphism** reverses the order of the arguments, and $T$ with the reversed arguments is the **opposite** triple.
+**Definition (morphism).** A **homomorphism** of Jordan triple systems is an $R$-linear map $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}\{x,y,z\} = \{\digamma_{\mathrm{map}} x,\digamma_{\mathrm{map}} y,\digamma_{\mathrm{map}} z\}$; an **anti-homomorphism** reverses the order of the arguments, and $T$ with the reversed arguments is the **opposite** triple.
 
 ## The Involution of a Jordan Triple
 

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The $n$-th roots of unity are the roots of $x^n - 1$, and the field they generate over the prime field is the $n$-th **cyclotomic field**. Over $\mathbb{Q}$ this field has degree $\varphi(n)$, its Galois group is the group $(\mathbb{Z}/n\mathbb{Z})^\times$ of invertibles modulo $n$ acting by $\omega \mapsto \omega^k$, and it is therefore abelian over $\mathbb{Q}$; the Kronecker–Weber theorem says that these are the only abelian extensions of $\mathbb{Q}$. Over a field of characteristic $p$ the same polynomials govern the arithmetic of the prime $p$, since $x^n - 1$ has multiple roots exactly when $p$ divides $n$.
+The $n$-th roots of unity are the roots of $x^n - 1$, and the field they generate over the prime field is the $n$-th **cyclotomic field**. Over $\mathbb{Q}$ this field has degree $\digamma_{\mathrm{tot}}(n)$, its Galois group is the group $(\mathbb{Z}/n\mathbb{Z})^\times$ of invertibles modulo $n$ acting by $\omega \mapsto \omega^k$, and it is therefore abelian over $\mathbb{Q}$; the Kronecker–Weber theorem says that these are the only abelian extensions of $\mathbb{Q}$. Over a field of characteristic $p$ the same polynomials govern the arithmetic of the prime $p$, since $x^n - 1$ has multiple roots exactly when $p$ divides $n$.
 
 The cyclotomic fields are the first family of number fields for which everything can be computed: the ring of integers is $\mathbb{Z}[\omega_n]$ itself, the ramified primes are exactly the divisors of $n$, and the splitting of an unramified prime is decided by the order of $p$ modulo $n$. They are also the source of the reciprocity laws: the quadratic reciprocity law is a statement about the quadratic subfield of a cyclotomic field, and the Kronecker–Weber theorem, that every abelian extension of $\mathbb{Q}$ is a subfield of a cyclotomic field, is proved.
 
-This article develops the cyclotomic polynomial and its irreducibility over $\mathbb{Q}$, the Galois group of the cyclotomic field, the subfield lattice with the quadratic subfields in the prime case, the ring of integers, ramification and splitting, the norm of $1 - \omega$, and the cyclotomic units. Throughout, $\omega_n$ denotes a primitive $n$-th root of unity, so that the $n$-th roots of unity are $1, \omega_n, \ldots, \omega_n^{n-1}$ and $\omega_n$ generates them as a group; $\varphi$ is the Euler totient function. Field extensions, splitting fields and algebraic closure are from *Field Extensions* and *Splitting Fields and Algebraic Closure*; the Galois correspondence is from *Galois Theory*, which also records the computation of the Galois group of $\mathbb{Q}(\omega_n)$ used here; finite fields are from *Finite Fields*; unique factorisation and Eisenstein's criterion from *Unique Factorisation Domains*; and Dedekind domains, ramification and the ideal class group from *Dedekind Domains and Ideal Class Groups*. The constructibility of the regular $n$-gon is a statement about a plane and a compass and belongs to Part II; it is named here only to defer it.
+This article develops the cyclotomic polynomial and its irreducibility over $\mathbb{Q}$, the Galois group of the cyclotomic field, the subfield lattice with the quadratic subfields in the prime case, the ring of integers, ramification and splitting, the norm of $1 - \omega$, and the cyclotomic units. Throughout, $\omega_n$ denotes a primitive $n$-th root of unity, so that the $n$-th roots of unity are $1, \omega_n, \ldots, \omega_n^{n-1}$ and $\omega_n$ generates them as a group; $\digamma_{\mathrm{map}}$ is the Euler totient function. Field extensions, splitting fields and algebraic closure are from *Field Extensions* and *Splitting Fields and Algebraic Closure*; the Galois correspondence is from *Galois Theory*, which also records the computation of the Galois group of $\mathbb{Q}(\omega_n)$ used here; finite fields are from *Finite Fields*; unique factorisation and Eisenstein's criterion from *Unique Factorisation Domains*; and Dedekind domains, ramification and the ideal class group from *Dedekind Domains and Ideal Class Groups*. The constructibility of the regular $n$-gon is a statement about a plane and a compass and belongs to Part II; it is named here only to defer it.
 
 ---
 
@@ -36,7 +36,7 @@ $$
 \Phi_n(x) = \prod_{\substack{1 \leq k \leq n \\ \gcd(k,n) = 1}} (x - \omega_n^k),
 $$
 
-the product over the primitive $n$-th roots of unity in a splitting field of $x^n - 1$. It has degree $\varphi(n)$, the number of integers $1 \leq k \leq n$ coprime to $n$.
+the product over the primitive $n$-th roots of unity in a splitting field of $x^n - 1$. It has degree $\digamma_{\mathrm{tot}}(n)$, the number of integers $1 \leq k \leq n$ coprime to $n$.
 
 **Proposition.** For every $n \geq 1$,
 
@@ -44,13 +44,13 @@ $$
 x^n - 1 = \prod_{d \mid n} \Phi_d(x),
 $$
 
-the product over the positive divisors of $n$. Consequently $\Phi_n(x) \in \mathbb{Z}[x]$, is monic of degree $\varphi(n)$, and satisfies $\sum_{d \mid n} \varphi(d) = n$.
+the product over the positive divisors of $n$. Consequently $\Phi_n(x) \in \mathbb{Z}[x]$, is monic of degree $\digamma_{\mathrm{tot}}(n)$, and satisfies $\sum_{d \mid n} \digamma_{\mathrm{map}}(d) = n$.
 
-**Proof.** Every $n$-th root of unity is a primitive $d$-th root of unity for exactly one $d \mid n$, namely $d$ equal to its order; grouping the linear factors of $x^n - 1$ by this order gives the displayed product. The polynomial $\Phi_n$ is then determined by induction on $n$ from the division $x^n - 1 = \Phi_n(x) \prod_{d \mid n, d < n} \Phi_d(x)$: since the divisor on the right is monic with integer coefficients by induction, the quotient has integer coefficients. The degree statement follows from the sum formula, which is the count $\sum_{d\mid n}\varphi(d) = n$.
+**Proof.** Every $n$-th root of unity is a primitive $d$-th root of unity for exactly one $d \mid n$, namely $d$ equal to its order; grouping the linear factors of $x^n - 1$ by this order gives the displayed product. The polynomial $\Phi_n$ is then determined by induction on $n$ from the division $x^n - 1 = \Phi_n(x) \prod_{d \mid n, d < n} \Phi_d(x)$: since the divisor on the right is monic with integer coefficients by induction, the quotient has integer coefficients. The degree statement follows from the sum formula, which is the count $\sum_{d\mid n}\digamma_{\mathrm{map}}(d) = n$.
 
 **Corollary.** $\Phi_1(x) = x - 1$, $\Phi_2(x) = x + 1$, and for a prime $p$, $\Phi_p(x) = (x^p-1)/(x-1) = x^{p-1} + x^{p-2} + \cdots + x + 1$ and $\Phi_{p^v}(x) = \Phi_p(x^{p^{v-1}})$. The constant term is $\Phi_n(0) = -1$ for $n = 1$ and $\Phi_n(0) = 1$ for every $n \geq 2$; the value at $1$ is $\Phi_n(1) = p$ when $n = p^v$ is a prime power and $\Phi_n(1) = 1$ when $n$ is divisible by two distinct primes.
 
-**Proof.** The prime case is immediate. For $n = p^v$ the divisors are $1, p, \ldots, p^v$, so $x^{p^v}-1 = \prod_{j=0}^{v} \Phi_{p^j}(x)$; comparing with $x^{p^v} - 1 = (x^{p^{v-1}})^p - 1 = (x^{p^{v-1}}-1)\Phi_p(x^{p^{v-1}})$ and inducting gives $\Phi_{p^v}(x) = \Phi_p(x^{p^{v-1}})$, whence $\Phi_{p^v}(1) = \Phi_p(1) = p$. For the constant term, $\Phi_n(0) = \prod_{k}(-\omega_n^k) = (-1)^{\varphi(n)}\omega_n^{\sum k}$, the sum over $k \in (\mathbb{Z}/n\mathbb{Z})^\times$; for $n \geq 3$ the pairs $k$ and $n-k$ sum to $n$, so $\sum k = n\varphi(n)/2$ and $\omega_n^{\sum k} = (\omega_n^n)^{\varphi(n)/2} = 1$, while $\varphi(n)$ is even; for $n = 2$ the product is $-\omega_2 = 1$; for $n = 1$ it is $-1$. Finally, if $n = pm$ with $p \nmid m$ and $m > 1$ one has the identity $\Phi_n(x) = \Phi_m(x^p)/\Phi_m(x)$, obtained by dividing the two instances of $x^r - 1 = \prod_{d\mid r}\Phi_d$; evaluating at $x = 1$, where $\Phi_m(1) \neq 0$, gives $\Phi_n(1) = 1$ whenever $n$ is not a prime power.
+**Proof.** The prime case is immediate. For $n = p^v$ the divisors are $1, p, \ldots, p^v$, so $x^{p^v}-1 = \prod_{j=0}^{v} \Phi_{p^j}(x)$; comparing with $x^{p^v} - 1 = (x^{p^{v-1}})^p - 1 = (x^{p^{v-1}}-1)\Phi_p(x^{p^{v-1}})$ and inducting gives $\Phi_{p^v}(x) = \Phi_p(x^{p^{v-1}})$, whence $\Phi_{p^v}(1) = \Phi_p(1) = p$. For the constant term, $\Phi_n(0) = \prod_{k}(-\omega_n^k) = (-1)^{\digamma_{\mathrm{tot}}(n)}\omega_n^{\sum k}$, the sum over $k \in (\mathbb{Z}/n\mathbb{Z})^\times$; for $n \geq 3$ the pairs $k$ and $n-k$ sum to $n$, so $\sum k = n\digamma_{\mathrm{tot}}(n)/2$ and $\omega_n^{\sum k} = (\omega_n^n)^{\digamma_{\mathrm{tot}}(n)/2} = 1$, while $\digamma_{\mathrm{tot}}(n)$ is even; for $n = 2$ the product is $-\omega_2 = 1$; for $n = 1$ it is $-1$. Finally, if $n = pm$ with $p \nmid m$ and $m > 1$ one has the identity $\Phi_n(x) = \Phi_m(x^p)/\Phi_m(x)$, obtained by dividing the two instances of $x^r - 1 = \prod_{d\mid r}\Phi_d$; evaluating at $x = 1$, where $\Phi_m(1) \neq 0$, gives $\Phi_n(1) = 1$ whenever $n$ is not a prime power.
 
 The values $\Phi_1$ to $\Phi_{12}$ are the following.
 
@@ -71,7 +71,7 @@ The values $\Phi_1$ to $\Phi_{12}$ are the following.
 
 **Theorem (irreducibility over $\mathbb{Q}$).** The cyclotomic polynomial $\Phi_n(x)$ is irreducible in $\mathbb{Q}[x]$, and hence is the minimal polynomial of every primitive $n$-th root of unity over $\mathbb{Q}$.
 
-**Proof.** Since $\Phi_n$ is monic with integer coefficients, Gauss's lemma applied to $\mathbb{Z}[x]$ shows it suffices to prove that $\Phi_n$ is irreducible in $\mathbb{Z}[x]$. Let $f \in \mathbb{Z}[x]$ be the monic irreducible factor of $\Phi_n$ with $f(\omega_n) = 0$, so that $f$ divides $\Phi_n$ and hence divides $x^n - 1$. Write $\omega = \omega_n$ and $\Phi_n = f h$ with $h \in \mathbb{Z}[x]$ monic. It is enough to prove that $f(\omega^p) = 0$ for every prime $p \nmid n$, because then $\omega^k$ is a root of $f$ for every $k$ coprime to $n$ — each such $k$ being a product of primes not dividing $n$ — so $\deg f \geq \varphi(n) = \deg \Phi_n$ and $f = \Phi_n$ up to sign.
+**Proof.** Since $\Phi_n$ is monic with integer coefficients, Gauss's lemma applied to $\mathbb{Z}[x]$ shows it suffices to prove that $\Phi_n$ is irreducible in $\mathbb{Z}[x]$. Let $f \in \mathbb{Z}[x]$ be the monic irreducible factor of $\Phi_n$ with $f(\omega_n) = 0$, so that $f$ divides $\Phi_n$ and hence divides $x^n - 1$. Write $\omega = \omega_n$ and $\Phi_n = f h$ with $h \in \mathbb{Z}[x]$ monic. It is enough to prove that $f(\omega^p) = 0$ for every prime $p \nmid n$, because then $\omega^k$ is a root of $f$ for every $k$ coprime to $n$ — each such $k$ being a product of primes not dividing $n$ — so $\deg f \geq \digamma_{\mathrm{tot}}(n) = \deg \Phi_n$ and $f = \Phi_n$ up to sign.
 
 Suppose therefore that $p \nmid n$ and $f(\omega^p) \neq 0$. Since $\omega^p$ is a primitive $n$-th root of unity, $\Phi_n(\omega^p) = 0$, and as $f(\omega^p) \neq 0$ we get $h(\omega^p) = 0$. Hence $\omega$ is a root of $h(x^p)$, and since $f$ is the minimal polynomial of $\omega$ over $\mathbb{Q}$ and $h(x^p) \in \mathbb{Z}[x]$, Gauss's lemma gives that $f$ divides $h(x^p)$ in $\mathbb{Z}[x]$. Reduction modulo $p$ is a ring homomorphism $\mathbb{Z}[x] \to \mathbb{F}_p[x]$, and in $\mathbb{F}_p[x]$ the Frobenius identity gives $\bar h(x^p) = \bar h(x)^p$. Therefore
 
@@ -79,9 +79,9 @@ $$
 \bar f \mid \bar h^{\,p} \quad \text{in } \mathbb{F}_p[x].
 $$
 
-Let $\varphi$ be an irreducible factor of $\bar f$ in the unique factorisation domain $\mathbb{F}_p[x]$; since $\bar f$ is nonconstant and $\mathbb{F}_p[x]$ is a unique factorisation domain, $\varphi$ is irreducible and $\varphi \mid \bar h^{\,p}$, hence $\varphi \mid \bar h$. On the other hand $f h = \Phi_n$ and $\Phi_n \mid x^n - 1$, so $\bar f \bar h = \overline{\Phi_n}$ divides $x^n - \bar 1$ in $\mathbb{F}_p[x]$; since $\varphi$ divides both $\bar f$ and $\bar h$, the square $\varphi^2$ divides $\bar f \bar h$ and therefore divides $x^n - 1$. But $x^n - 1$ is separable over $\mathbb{F}_p$ when $p \nmid n$, because its derivative $n x^{n-1}$ has no root in common with $x^n - 1$: a common root $\alpha$ would satisfy $\alpha^{n-1} = 0$ and hence $\alpha = 0$, which is not a root of $x^n - 1$. A separable polynomial has no repeated irreducible factor. This contradiction proves $f(\omega^p) = 0$.
+Let $\digamma_{\mathrm{map}}$ be an irreducible factor of $\bar f$ in the unique factorisation domain $\mathbb{F}_p[x]$; since $\bar f$ is nonconstant and $\mathbb{F}_p[x]$ is a unique factorisation domain, $\digamma_{\mathrm{map}}$ is irreducible and $\digamma_{\mathrm{map}} \mid \bar h^{\,p}$, hence $\digamma_{\mathrm{map}} \mid \bar h$. On the other hand $f h = \Phi_n$ and $\Phi_n \mid x^n - 1$, so $\bar f \bar h = \overline{\Phi_n}$ divides $x^n - \bar 1$ in $\mathbb{F}_p[x]$; since $\digamma_{\mathrm{map}}$ divides both $\bar f$ and $\bar h$, the square $\digamma_{\mathrm{map}}^2$ divides $\bar f \bar h$ and therefore divides $x^n - 1$. But $x^n - 1$ is separable over $\mathbb{F}_p$ when $p \nmid n$, because its derivative $n x^{n-1}$ has no root in common with $x^n - 1$: a common root $\alpha$ would satisfy $\alpha^{n-1} = 0$ and hence $\alpha = 0$, which is not a root of $x^n - 1$. A separable polynomial has no repeated irreducible factor. This contradiction proves $f(\omega^p) = 0$.
 
-**Corollary.** $\mathbb{Q}(\omega_n)$ has degree $\varphi(n)$ over $\mathbb{Q}$ for every $n$, and $\Phi_n$ is the minimal polynomial of $\omega_n$. For positive integers $m, n$, with $\omega_1 = 1$ so that $\mathbb{Q}(\omega_1) = \mathbb{Q}(\omega_2) = \mathbb{Q}$,
+**Corollary.** $\mathbb{Q}(\omega_n)$ has degree $\digamma_{\mathrm{tot}}(n)$ over $\mathbb{Q}$ for every $n$, and $\Phi_n$ is the minimal polynomial of $\omega_n$. For positive integers $m, n$, with $\omega_1 = 1$ so that $\mathbb{Q}(\omega_1) = \mathbb{Q}(\omega_2) = \mathbb{Q}$,
 
 $$
 \mathbb{Q}(\omega_m) \cap \mathbb{Q}(\omega_n) = \mathbb{Q}(\omega_{\gcd(m,n)}),
@@ -103,11 +103,11 @@ $$
 \boxed{\;\operatorname{gal}(K/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times\;},
 $$
 
-the isomorphism sending $k \in (\mathbb{Z}/n\mathbb{Z})^\times$ to the automorphism $\sigma_k$ determined by $\sigma_k(\omega_n) = \omega_n^k$. In particular $\operatorname{gal}(\mathbb{Q}(\omega_n)/\mathbb{Q})$ is abelian of order $\varphi(n)$, and its exponent divides $\lambda(n)$, the exponent of $(\mathbb{Z}/n\mathbb{Z})^\times$.
+the isomorphism sending $k \in (\mathbb{Z}/n\mathbb{Z})^\times$ to the automorphism $\sigma_k$ determined by $\sigma_k(\omega_n) = \omega_n^k$. In particular $\operatorname{gal}(\mathbb{Q}(\omega_n)/\mathbb{Q})$ is abelian of order $\digamma_{\mathrm{tot}}(n)$, and its exponent divides $\lambda(n)$, the exponent of $(\mathbb{Z}/n\mathbb{Z})^\times$.
 
 **Proof.** $K$ is the splitting field of $x^n - 1$ over $\mathbb{Q}$, hence normal; $x^n-1$ is separable over $\mathbb{Q}$ since $\operatorname{char}\mathbb{Q} = 0$, so $K/\mathbb{Q}$ is Galois. Every $\sigma \in \operatorname{gal}(K/\mathbb{Q})$ sends $\omega_n$ to another root of $\Phi_n$, that is, to $\omega_n^k$ for a unique $k \in (\mathbb{Z}/n\mathbb{Z})^\times$; conversely, since $\Phi_n$ is irreducible, for each such $k$ there is a $\mathbb{Q}$-automorphism of $K$ sending $\omega_n$ to $\omega_n^k$. The map $k \mapsto \sigma_k$ is a group homomorphism $(\mathbb{Z}/n\mathbb{Z})^\times \to \operatorname{gal}(K/\mathbb{Q})$ and a bijection, hence an isomorphism.
 
-**Corollary.** When $(\mathbb{Z}/n\mathbb{Z})^\times$ is cyclic, $K$ has exactly one subfield of each degree dividing $\varphi(n)$; in particular it has exactly $\tau(\varphi(n))$ subfields, where $\tau$ is the divisor-counting function. For $n$ a prime $p$ the group $(\mathbb{Z}/p\mathbb{Z})^\times$ is cyclic of order $p-1$, and the subfields of $\mathbb{Q}(\omega_p)$ correspond bijectively to the divisors of $p-1$.
+**Corollary.** When $(\mathbb{Z}/n\mathbb{Z})^\times$ is cyclic, $K$ has exactly one subfield of each degree dividing $\digamma_{\mathrm{tot}}(n)$; in particular it has exactly $\tau(\digamma_{\mathrm{tot}}(n))$ subfields, where $\tau$ is the divisor-counting function. For $n$ a prime $p$ the group $(\mathbb{Z}/p\mathbb{Z})^\times$ is cyclic of order $p-1$, and the subfields of $\mathbb{Q}(\omega_p)$ correspond bijectively to the divisors of $p-1$.
 
 **Proof.** The subgroups of a cyclic group of order $m$ correspond to the divisors of $m$, one of each order; the Galois correspondence of *Galois Theory* turns this into the statement about subfields.
 
@@ -149,9 +149,9 @@ $$
 \boxed{\;\mathcal{O}_K = \mathbb{Z}[\omega_n]\;},
 $$
 
-the smallest subring of $K$ containing $\mathbb{Z}$ and $\omega_n$. Consequently $\{1, \omega_n, \ldots, \omega_n^{\varphi(n)-1}\}$ is an integral basis of $K$ over $\mathbb{Q}$, and $\mathcal{O}_K$ is a Dedekind domain in the sense of *Dedekind Domains and Ideal Class Groups*.
+the smallest subring of $K$ containing $\mathbb{Z}$ and $\omega_n$. Consequently $\{1, \omega_n, \ldots, \omega_n^{\digamma_{\mathrm{tot}}(n)-1}\}$ is an integral basis of $K$ over $\mathbb{Q}$, and $\mathcal{O}_K$ is a Dedekind domain in the sense of *Dedekind Domains and Ideal Class Groups*.
 
-**Proof sketch.** Let $\omega = \omega_n$ and $\Phi = \Phi_n$. The ring $\mathbb{Z}[\omega] \cong \mathbb{Z}[x]/(\Phi)$ is contained in $\mathcal{O}_K$ and is a Noetherian domain. To see that it is integrally closed it suffices to show it is integrally closed in $K$; one shows that $\Phi$ is a **Kronecker polynomial**, meaning that for every root $\omega'$ of $\Phi$ and every $k$, the quotients $(\omega'{}^k - \omega^k)/(\omega' - \omega)$ lie in $\mathbb{Z}[\omega][\omega']$, and then the elementary symmetric functions of the conjugates of a purported integral element force it back into $\mathbb{Z}[\omega]$ — this is Dedekind's argument. Alternatively one shows the discriminant of the basis $\{1, \omega, \ldots, \omega^{\varphi(n)-1}\}$ is the squarefree part times a power of $n$, and that no prime dividing $n$ can contribute to the index of $\mathbb{Z}[\omega]$ in $\mathcal{O}_K$ by a reduction modulo $1 - \omega$.
+**Proof sketch.** Let $\omega = \omega_n$ and $\Phi = \Phi_n$. The ring $\mathbb{Z}[\omega] \cong \mathbb{Z}[x]/(\Phi)$ is contained in $\mathcal{O}_K$ and is a Noetherian domain. To see that it is integrally closed it suffices to show it is integrally closed in $K$; one shows that $\Phi$ is a **Kronecker polynomial**, meaning that for every root $\omega'$ of $\Phi$ and every $k$, the quotients $(\omega'{}^k - \omega^k)/(\omega' - \omega)$ lie in $\mathbb{Z}[\omega][\omega']$, and then the elementary symmetric functions of the conjugates of a purported integral element force it back into $\mathbb{Z}[\omega]$ — this is Dedekind's argument. Alternatively one shows the discriminant of the basis $\{1, \omega, \ldots, \omega^{\digamma_{\mathrm{tot}}(n)-1}\}$ is the squarefree part times a power of $n$, and that no prime dividing $n$ can contribute to the index of $\mathbb{Z}[\omega]$ in $\mathcal{O}_K$ by a reduction modulo $1 - \omega$.
 
 **Example.** For $n = 4$, $\mathcal{O}_{\mathbb{Q}(i)} = \mathbb{Z}[i]$, the Gaussian integers, an integral basis being $\{1, i\}$. For $n = 3$, $\mathcal{O}_{\mathbb{Q}(\sqrt{-3})} = \mathbb{Z}[\omega_3] = \mathbb{Z}[(1+\sqrt{-3})/2]$, an integral basis being $\{1, (1+\sqrt{-3})/2\}$; the ring $\mathbb{Z}[\sqrt{-3}]$ is strictly smaller and is not integrally closed.
 
@@ -165,15 +165,15 @@ the smallest subring of $K$ containing $\mathbb{Z}$ and $\omega_n$. Consequently
 
 **(a)** $p$ ramifies in $K$ if and only if $p \mid n$. Every prime ideal of $\mathcal{O}_K$ above such a $p$ contains $1 - \omega_n$, and $(1 - \omega_n)$ is a prime ideal only when $n$ is a prime power.
 
-**(b)** If $n = p^v$, then $p$ is totally ramified: $p\mathcal{O}_K = (1-\omega_{p^v})^{\varphi(p^v)}$, and $\mathcal{O}_K/(1-\omega_{p^v}) \cong \mathbb{F}_p$. Moreover $(1-\omega_{p^v})$ is the unique prime above $p$.
+**(b)** If $n = p^v$, then $p$ is totally ramified: $p\mathcal{O}_K = (1-\omega_{p^v})^{\digamma_{\mathrm{map}}(p^v)}$, and $\mathcal{O}_K/(1-\omega_{p^v}) \cong \mathbb{F}_p$. Moreover $(1-\omega_{p^v})$ is the unique prime above $p$.
 
-**(c)** If $p \nmid n$, then $p$ is unramified. If $f$ is the order of $p$ in $(\mathbb{Z}/n\mathbb{Z})^\times$, then $p$ splits into $\varphi(n)/f$ distinct primes of residue degree $f$:
+**(c)** If $p \nmid n$, then $p$ is unramified. If $f$ is the order of $p$ in $(\mathbb{Z}/n\mathbb{Z})^\times$, then $p$ splits into $\digamma_{\mathrm{tot}}(n)/f$ distinct primes of residue degree $f$:
 
 $$
-p \mathcal{O}_K = \mathrm{P}_1 \cdots \mathrm{P}_{\varphi(n)/f}, \qquad [\mathcal{O}_K/\mathrm{P}_i : \mathbb{F}_p] = f .
+p \mathcal{O}_K = \mathrm{P}_1 \cdots \mathrm{P}_{\digamma_{\mathrm{tot}}(n)/f}, \qquad [\mathcal{O}_K/\mathrm{P}_i : \mathbb{F}_p] = f .
 $$
 
-**(d)** In general, writing $n = p^v m$ with $p \nmid m$, the primes above $p$ correspond to the primes above $p$ in $\mathbb{Q}(\omega_m)$ and each acquires the totally ramified factor of degree $\varphi(p^v)$ contributed by the $p$-power part.
+**(d)** In general, writing $n = p^v m$ with $p \nmid m$, the primes above $p$ correspond to the primes above $p$ in $\mathbb{Q}(\omega_m)$ and each acquires the totally ramified factor of degree $\digamma_{\mathrm{map}}(p^v)$ contributed by the $p$-power part.
 
 **Proof sketch.** For (b), the identity
 
@@ -181,13 +181,13 @@ $$
 \frac{x^{p^v} - 1}{x^{p^{v-1}} - 1} = \Phi_{p^v}(x) = \prod_{\gcd(k,p)=1}(x - \omega_{p^v}^k)
 $$
 
-evaluated at $x = 1$ gives $\prod_{k}(1 - \omega_{p^v}^k) = p$, so $p \in (1-\omega_{p^v})$ and $p \mathcal{O}_K \subseteq (1-\omega_{p^v})$; the quotient $\mathcal{O}_K/(1-\omega_{p^v})$ is $\mathbb{F}_p$ because the norm computation shows $(1-\omega_{p^v})$ has index $p$, and the discriminant computation $\operatorname{disc}(K) = \pm p^{p^{v-1}(v p - v - 1)}$ shows the ramification index is $\varphi(p^v)$. For (a), if $p \mid n$ then $1-\omega_n$ is a non-invertible in every prime above $p$; if $p \nmid n$ then $x^n-1$ is separable modulo $p$ and the standard theorem on the splitting of primes in $\mathbb{Z}[\omega_n]$ applies, which gives (c): the polynomial $\Phi_n$ modulo $p$ factors into irreducible factors all of the same degree $f$, equal to the order of $p$ mod $n$, by the theory of finite fields of *Finite Fields*, and each factor corresponds to a prime of $\mathcal{O}_K$ of residue degree $f$, since $\mathcal{O}_K/(p) \cong \mathbb{F}_p[x]/(\bar\Phi_n)$.
+evaluated at $x = 1$ gives $\prod_{k}(1 - \omega_{p^v}^k) = p$, so $p \in (1-\omega_{p^v})$ and $p \mathcal{O}_K \subseteq (1-\omega_{p^v})$; the quotient $\mathcal{O}_K/(1-\omega_{p^v})$ is $\mathbb{F}_p$ because the norm computation shows $(1-\omega_{p^v})$ has index $p$, and the discriminant computation $\operatorname{disc}(K) = \pm p^{p^{v-1}(v p - v - 1)}$ shows the ramification index is $\digamma_{\mathrm{map}}(p^v)$. For (a), if $p \mid n$ then $1-\omega_n$ is a non-invertible in every prime above $p$; if $p \nmid n$ then $x^n-1$ is separable modulo $p$ and the standard theorem on the splitting of primes in $\mathbb{Z}[\omega_n]$ applies, which gives (c): the polynomial $\Phi_n$ modulo $p$ factors into irreducible factors all of the same degree $f$, equal to the order of $p$ mod $n$, by the theory of finite fields of *Finite Fields*, and each factor corresponds to a prime of $\mathcal{O}_K$ of residue degree $f$, since $\mathcal{O}_K/(p) \cong \mathbb{F}_p[x]/(\bar\Phi_n)$.
 
 **Example ($p = 2$ and the Gaussian integers).** For $n = 4$, $2$ ramifies: $2\mathcal{O}_{\mathbb{Q}(i)} = (1+i)^2$ and $1 + i = 1 - \omega_4$ up to an invertible element, in agreement with (b) for $p^v = 2$.
 
 **Example (splitting).** For $n = 5$, the group $(\mathbb{Z}/5\mathbb{Z})^\times$ has order $4$. The prime $p = 2$ has order $4$ modulo $5$, so $2$ is inert: $2\mathcal{O}_{\mathbb{Q}(\omega_5)}$ is prime. The prime $p = 11$ has $11 \equiv 1 \pmod 5$, so $f = 1$ and $11$ splits into four primes. The prime $p = 19$ has $19 \equiv 4 \equiv -1 \pmod5$, of order $2$, so $19$ splits into two primes of residue degree $2$. And $p = 5$ is totally ramified, by (b) with $v = 1$.
 
-**Example (inertia).** For $n = 7$, the order of $2$ modulo $7$ is $3$, so $2$ splits into $\varphi(7)/3 = 2$ primes of residue degree $3$.
+**Example (inertia).** For $n = 7$, the order of $2$ modulo $7$ is $3$, so $2$ splits into $\digamma_{\mathrm{map}}(7)/3 = 2$ primes of residue degree $3$.
 
 ### Norms and Cyclotomic Units
 
@@ -217,7 +217,7 @@ Each such quotient is invertible in $\mathbb{Z}[\omega_n]$. When $n$ is not a pr
 
 **Definition.** For $n \geq 3$ the **maximal real subfield** of $\mathbb{Q}(\omega_n)$ is $K^+ = \mathbb{Q}(\omega_n + \omega_n^{-1})$, the fixed field of complex conjugation.
 
-**Theorem.** $K^+$ is a real field, $[K^+ : \mathbb{Q}] = \varphi(n)/2$, and $\operatorname{gal}(K^+/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times / \{\pm 1\}$. The field $K = \mathbb{Q}(\omega_n)$ is a quadratic extension of $K^+$, and $\mathcal{O}_{K^+} = \mathbb{Z}[\omega_n + \omega_n^{-1}]$.
+**Theorem.** $K^+$ is a real field, $[K^+ : \mathbb{Q}] = \digamma_{\mathrm{tot}}(n)/2$, and $\operatorname{gal}(K^+/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times / \{\pm 1\}$. The field $K = \mathbb{Q}(\omega_n)$ is a quadratic extension of $K^+$, and $\mathcal{O}_{K^+} = \mathbb{Z}[\omega_n + \omega_n^{-1}]$.
 
 **Proof.** Complex conjugation is the automorphism $\sigma_{-1}$, of order $2$; its fixed field is $K^+$, which consists of the elements invariant under $\omega \mapsto \omega^{-1}$, and $\omega + \omega^{-1}$ generates it because the conjugates $\omega^k + \omega^{-k}$ are distinct on the classes modulo $\pm1$ and separate the elements of the fixed field. The degree formula and the group statement follow from the Galois correspondence. The ring of integers statement is proved by the same Kronecker argument applied to the real subfield, using the relation $x^2 - (\omega+\omega^{-1})x + 1 = 0$.
 
@@ -225,9 +225,9 @@ Each such quotient is invertible in $\mathbb{Z}[\omega_n]$. When $n$ is not a pr
 
 ## Summary
 
-For $n \geq 1$ the $n$-th cyclotomic polynomial $\Phi_n(x) = \prod (x - \omega_n^k)$, the product over the primitive $n$-th roots of unity, is monic with integer coefficients of degree $\varphi(n)$, satisfies $x^n - 1 = \prod_{d \mid n} \Phi_d(x)$, and is irreducible over $\mathbb{Q}$; hence $\mathbb{Q}(\omega_n)$ has degree $\varphi(n)$ over $\mathbb{Q}$. The extension $\mathbb{Q}(\omega_n)/\mathbb{Q}$ is Galois, abelian, with $\operatorname{gal}(\mathbb{Q}(\omega_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$ acting by $\omega_n \mapsto \omega_n^k$, so the subfields of $\mathbb{Q}(\omega_n)$ correspond to the subgroups of $(\mathbb{Z}/n\mathbb{Z})^\times$. For an odd prime $p$ the unique quadratic subfield is $\mathbb{Q}(\sqrt{p^\ast})$ with $p^\ast = (-1)^{(p-1)/2}p$, exhibited by the Gauss sum $g^2 = p^\ast$; the comparison of the Galois action on $g$ with the action of the Frobenius at a prime $q \neq p$ yields the quadratic reciprocity law.
+For $n \geq 1$ the $n$-th cyclotomic polynomial $\Phi_n(x) = \prod (x - \omega_n^k)$, the product over the primitive $n$-th roots of unity, is monic with integer coefficients of degree $\digamma_{\mathrm{tot}}(n)$, satisfies $x^n - 1 = \prod_{d \mid n} \Phi_d(x)$, and is irreducible over $\mathbb{Q}$; hence $\mathbb{Q}(\omega_n)$ has degree $\digamma_{\mathrm{tot}}(n)$ over $\mathbb{Q}$. The extension $\mathbb{Q}(\omega_n)/\mathbb{Q}$ is Galois, abelian, with $\operatorname{gal}(\mathbb{Q}(\omega_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$ acting by $\omega_n \mapsto \omega_n^k$, so the subfields of $\mathbb{Q}(\omega_n)$ correspond to the subgroups of $(\mathbb{Z}/n\mathbb{Z})^\times$. For an odd prime $p$ the unique quadratic subfield is $\mathbb{Q}(\sqrt{p^\ast})$ with $p^\ast = (-1)^{(p-1)/2}p$, exhibited by the Gauss sum $g^2 = p^\ast$; the comparison of the Galois action on $g$ with the action of the Frobenius at a prime $q \neq p$ yields the quadratic reciprocity law.
 
-The ring of integers of $\mathbb{Q}(\omega_n)$ is $\mathbb{Z}[\omega_n]$, which is therefore a Dedekind doma, and the ramified primes are exactly the divisors of $n$. When $n = p^v$ the prime $p$ is totally ramified, $p = (1-\omega_{p^v})^{\varphi(p^v)}$ up to invertibles, and $\operatorname{N}(1-\omega_{p^v}) = p$; when $p \nmid n$ the prime $p$ is unramified and splits into $\varphi(n)/f$ primes of residue degree $f$, where $f$ is the order of $p$ modulo $n$. Cyclotomic units are the quotients $(\omega_n^a-1)/(\omega_n^b-1)$; they form a subgroup of the group of invertibles, whose rank is determined by Dirichlet's unit theorem. The maximal real subfield $\mathbb{Q}(\omega_n + \omega_n^{-1})$ has degree $\varphi(n)/2$ over $\mathbb{Q}$ and is the fixed field of complex conjugation. The constructibility of the regular $n$-gon, a statement about ruler and compass in the plane, is deferred to Part II, where the plane is available; the Kronecker–Weber theorem, that every abelian extension of $\mathbb{Q}$ is a subfield of a cyclotomic one, is proved.
+The ring of integers of $\mathbb{Q}(\omega_n)$ is $\mathbb{Z}[\omega_n]$, which is therefore a Dedekind doma, and the ramified primes are exactly the divisors of $n$. When $n = p^v$ the prime $p$ is totally ramified, $p = (1-\omega_{p^v})^{\digamma_{\mathrm{map}}(p^v)}$ up to invertibles, and $\operatorname{N}(1-\omega_{p^v}) = p$; when $p \nmid n$ the prime $p$ is unramified and splits into $\digamma_{\mathrm{tot}}(n)/f$ primes of residue degree $f$, where $f$ is the order of $p$ modulo $n$. Cyclotomic units are the quotients $(\omega_n^a-1)/(\omega_n^b-1)$; they form a subgroup of the group of invertibles, whose rank is determined by Dirichlet's unit theorem. The maximal real subfield $\mathbb{Q}(\omega_n + \omega_n^{-1})$ has degree $\digamma_{\mathrm{tot}}(n)/2$ over $\mathbb{Q}$ and is the fixed field of complex conjugation. The constructibility of the regular $n$-gon, a statement about ruler and compass in the plane, is deferred to Part II, where the plane is available; the Kronecker–Weber theorem, that every abelian extension of $\mathbb{Q}$ is a subfield of a cyclotomic one, is proved.
 
 ## Summary of Notation
 
@@ -235,9 +235,9 @@ The ring of integers of $\mathbb{Q}(\omega_n)$ is $\mathbb{Z}[\omega_n]$, which 
 |---|---|
 | $\omega_n$ | A primitive $n$-th root of unity |
 | $\mu_n(K)$ | Group of $n$-th roots of unity in $K$, cyclic |
-| $\Phi_n(x)$ | $n$-th cyclotomic polynomial, degree $\varphi(n)$ |
-| $\varphi$ | Euler totient function |
-| $\mathbb{Q}(\omega_n)$ | The $n$-th cyclotomic field, of degree $\varphi(n)$ over $\mathbb{Q}$ |
+| $\Phi_n(x)$ | $n$-th cyclotomic polynomial, degree $\digamma_{\mathrm{tot}}(n)$ |
+| $\digamma_{\mathrm{map}}$ | Euler totient function |
+| $\mathbb{Q}(\omega_n)$ | The $n$-th cyclotomic field, of degree $\digamma_{\mathrm{tot}}(n)$ over $\mathbb{Q}$ |
 | $\sigma_k$ | Automorphism $\omega_n \mapsto \omega_n^k$ |
 | $\operatorname{gal}(\mathbb{Q}(\omega_n)/\mathbb{Q})$ | $\cong (\mathbb{Z}/n\mathbb{Z})^\times$ |
 | $\lambda(n)$ | Exponent of $(\mathbb{Z}/n\mathbb{Z})^\times$ |

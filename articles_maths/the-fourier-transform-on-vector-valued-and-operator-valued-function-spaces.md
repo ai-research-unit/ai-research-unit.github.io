@@ -42,15 +42,15 @@ $$
 
 *Proof.* Continuity of $T$ gives $\lVert Tf\rVert\le\lVert T\rVert\lVert f\rVert$, so $Tf$ is integrable, and the same continuity carries the Bochner integral through, since $T$ applied to a limit of simple functions is the limit of their images.
 
-**Corollary (the transform is the identity on the value space).** Let $(\varphi_j)$ be an orthonormal basis of $H$ and write $f_j=\langle f,\varphi_j\rangle$. Then, for each $\zeta$, the series
+**Corollary (the transform is the identity on the value space).** Let $(\digamma_{\mathrm{map},j})$ be an orthonormal basis of $H$ and write $f_j=\langle f,\digamma_{\mathrm{map},j}\rangle$. Then, for each $\zeta$, the series
 
 $$
-\mathcal{F}[f](\zeta)=\sum_{j}\mathcal{F}[f_j](\zeta)\,\varphi_j
+\mathcal{F}[f](\zeta)=\sum_{j}\mathcal{F}[f_j](\zeta)\,\digamma_{\mathrm{map},j}
 $$
 
 converges in the norm of $H$, and $\lVert\mathcal{F}[f](\zeta)\rVert^2=\sum_j\lvert\mathcal{F}[f_j](\zeta)\rvert^2$.
 
-*Proof.* By the coordinate formula, $\langle\mathcal{F}[f](\zeta),\varphi_j\rangle=\mathcal{F}[f_j](\zeta)$, so the coefficients of $\mathcal{F}[f](\zeta)$ in the basis are the scalar transforms, and the norm identity is Parseval's. The finite partial sums form a Cauchy sequence, because the squared norm of the tail of the series is the sum of the tail of the non-negative series on the right, which converges; and the limit has the stated norm.
+*Proof.* By the coordinate formula, $\langle\mathcal{F}[f](\zeta),\digamma_{\mathrm{map},j}\rangle=\mathcal{F}[f_j](\zeta)$, so the coefficients of $\mathcal{F}[f](\zeta)$ in the basis are the scalar transforms, and the norm identity is Parseval's. The finite partial sums form a Cauchy sequence, because the squared norm of the tail of the series is the sum of the tail of the non-negative series on the right, which converges; and the limit has the stated norm.
 
 **Remark (what has and has not been proved).** The corollary is the whole reason the theory has no new formula: the transform of $f$ is assembled from the scalar transforms of the coordinates, and the assembly is the identity map of $H$. Equivalently, $\mathcal{F}$ acting on $L^2(\mathbb{R}^n;H)$ is the tensor product of the scalar transform with the identity of $H$, in the sense that it agrees on the algebraic tensor product $L^2(\mathbb{R}^n)\odot H$ with $\mathcal{F}\otimes 1_H$ and is continuous there. **A change of orthonormal basis of $H$ does not change the transform of any function**, which is the first hint of the uniqueness statement of §*The Uniqueness Claim*.
 
@@ -64,7 +64,7 @@ $$
 \int_{\mathbb{R}^n}\lVert\mathcal{F}[f](\zeta)\rVert^2\,d\zeta=(2\pi)^n\int_{\mathbb{R}^n}\lVert f(x)\rVert^2\,dx .
 $$
 
-*Proof.* Choose an orthonormal basis $(\varphi_j)$ of $H$ and write $f_j=\langle f,\varphi_j\rangle$. Each $f_j$ lies in $L^1\cap L^2(\mathbb{R}^n;\mathbb{C})$, because $\lvert f_j\rvert\le\lVert f\rVert$. By the corollary of §*The Transform of a Vector-Valued Function*, $\lVert\mathcal{F}[f](\zeta)\rVert^2=\sum_j\lvert\mathcal{F}[f_j](\zeta)\rvert^2$ for every $\zeta$, a series of non-negative terms; integrating it and interchanging sum and integral by monotone convergence gives $\sum_j\lVert\mathcal{F}[f_j]\rVert_2^2$ on the left. The scalar identity of *The Inverse Fourier Transform of a Symbol* gives $\lVert\mathcal{F}[f_j]\rVert_2^2=(2\pi)^n\lVert f_j\rVert_2^2$ for each $j$, and Parseval gives $\sum_j\lVert f_j\rVert_2^2=\lVert f\rVert_2^2$. Assembling the three equalities gives the statement, and the value $(2\pi)^n\lVert f\rVert_2^2$ is finite, so the series converges and $\mathcal{F}[f]$ lies in $L^2$.
+*Proof.* Choose an orthonormal basis $(\digamma_{\mathrm{map},j})$ of $H$ and write $f_j=\langle f,\digamma_{\mathrm{map},j}\rangle$. Each $f_j$ lies in $L^1\cap L^2(\mathbb{R}^n;\mathbb{C})$, because $\lvert f_j\rvert\le\lVert f\rVert$. By the corollary of §*The Transform of a Vector-Valued Function*, $\lVert\mathcal{F}[f](\zeta)\rVert^2=\sum_j\lvert\mathcal{F}[f_j](\zeta)\rvert^2$ for every $\zeta$, a series of non-negative terms; integrating it and interchanging sum and integral by monotone convergence gives $\sum_j\lVert\mathcal{F}[f_j]\rVert_2^2$ on the left. The scalar identity of *The Inverse Fourier Transform of a Symbol* gives $\lVert\mathcal{F}[f_j]\rVert_2^2=(2\pi)^n\lVert f_j\rVert_2^2$ for each $j$, and Parseval gives $\sum_j\lVert f_j\rVert_2^2=\lVert f\rVert_2^2$. Assembling the three equalities gives the statement, and the value $(2\pi)^n\lVert f\rVert_2^2$ is finite, so the series converges and $\mathcal{F}[f]$ lies in $L^2$.
 
 **Corollary (the unitary).** The operator $\mathcal{U}=(2\pi)^{-n/2}\mathcal{F}$, defined first on $L^1\cap L^2(\mathbb{R}^n;H)$, extends by continuity to an isometry of $L^2(\mathbb{R}^n;H)$ onto itself, and it is surjective, hence unitary.
 
@@ -80,11 +80,11 @@ $$
 
 ## Operator-Valued Functions
 
-**Definition (the Hilbert–Schmidt class).** An operator $T\in\mathcal{L}(H)$ is **Hilbert–Schmidt** when $\sum_j\lVert T\varphi_j\rVert^2<\infty$ for one, and then for every, orthonormal basis $(\varphi_j)$; the sum is the square of the **Hilbert–Schmidt norm** $\lVert T\rVert_2$, and the class $\mathcal{L}_2(H)$ is a Hilbert space for the inner product $\langle S,T\rangle_2=\sum_j\langle S\varphi_j,T\varphi_j\rangle=\operatorname{tr}(S^{*}T)$.
+**Definition (the Hilbert–Schmidt class).** An operator $T\in\mathcal{L}(H)$ is **Hilbert–Schmidt** when $\sum_j\lVert T\digamma_{\mathrm{map},j}\rVert^2<\infty$ for one, and then for every, orthonormal basis $(\digamma_{\mathrm{map},j})$; the sum is the square of the **Hilbert–Schmidt norm** $\lVert T\rVert_2$, and the class $\mathcal{L}_2(H)$ is a Hilbert space for the inner product $\langle S,T\rangle_2=\sum_j\langle S\digamma_{\mathrm{map},j},T\digamma_{\mathrm{map},j}\rangle=\operatorname{tr}(S^{*}T)$.
 
-**Lemma (independence of the basis).** The number $\sum_{j,k}\lvert\langle T\varphi_j,\varphi_k\rangle\rvert^2$ does not depend on the orthonormal basis, and it equals $\operatorname{tr}(T^{*}T)$.
+**Lemma (independence of the basis).** The number $\sum_{j,k}\lvert\langle T\digamma_{\mathrm{map},j},\digamma_{\mathrm{map},k}\rangle\rvert^2$ does not depend on the orthonormal basis, and it equals $\operatorname{tr}(T^{*}T)$.
 
-*Proof.* For fixed $j$ the sum over $k$ is $\lVert T\varphi_j\rVert^2$ by Parseval. The sum over $j$ of these is the trace of $T^{*}T$, which is a positive trace-class operator, and the trace of such an operator is the sum of its diagonal entries in any orthonormal basis, by monotone convergence applied to the definition of the trace.
+*Proof.* For fixed $j$ the sum over $k$ is $\lVert T\digamma_{\mathrm{map},j}\rVert^2$ by Parseval. The sum over $j$ of these is the trace of $T^{*}T$, which is a positive trace-class operator, and the trace of such an operator is the sum of its diagonal entries in any orthonormal basis, by monotone convergence applied to the definition of the trace.
 
 **Definition (the weak transform).** For $T:\mathbb{R}^n\to\mathcal{L}(H)$ and $\zeta\in\mathbb{R}^n$, the **transform** is the operator $\mathcal{F}[T](\zeta)$ determined by
 
@@ -160,7 +160,7 @@ $$
 
 *Proof.* For $g\in C_c^\infty(\mathbb{R}^n)$ one computes $(\mathcal{F}T_K\mathcal{F}^{-1}g)(\zeta)=\int e^{-i\zeta\cdot x}(T_K\mathcal{F}^{-1}g)(x)\,dx$ and $\mathcal{F}^{-1}g(x)=(2\pi)^{-n}\int e^{ix\cdot\eta}g(\eta)\,d\eta$; substituting and exchanging the integrals shows that $(2\pi)^{-n}\widehat K$ is the kernel of $\mathcal{F}T_K\mathcal{F}^{-1}$. The trace of an operator with a continuous kernel is the integral of its diagonal, quoted from *Trace Ideals and Their Applications* of Simon, and the trace is invariant under conjugation by an invertible operator. Applying both to $\mathcal{F}T_K\mathcal{F}^{-1}$ gives $\int(2\pi)^{-n}\widehat K(\zeta,\zeta)\,d\zeta=\int K(x,x)\,dx$.
 
-**Remark (pointwise the two diagonals differ, and the Gaussian is where they nearly agree).** Take the rank-one kernel $K(x,y)=\psi(x)\overline{\psi(y)}$ with $\psi$ integrable. Its transform is the rank-one kernel $\widehat K(\zeta,\eta)=\hat\psi(\zeta)\overline{\hat\psi(\eta)}$, so the diagonal of the transformed kernel is $\lvert\hat\psi(\zeta)\rvert^2$ while the diagonal of the original is $\lvert\psi(x)\rvert^2$. The two agree pointwise only when $\psi$ is an eigenfunction of the transform. For $\psi(x)=e^{-\lvert x\rvert^2/2}$ one has $\hat\psi=(2\pi)^{n/2}\psi$, so that $\lvert\hat\psi\rvert^2=(2\pi)^n\lvert\psi\rvert^2$: the Gaussian diagonal is reproduced up to the constant, and the constant is exactly the factor by which the diagonal of a self-dual kernel rescales. **The proposition above is the only sense in which the two diagonals agree for a general kernel: the agreement is an identity of integrals, and it is a coincidence of pointwise values only for the self-dual kernels.**
+**Remark (pointwise the two diagonals differ, and the Gaussian is where they nearly agree).** Take the rank-one kernel $K(x,y)=Ξ_{\mathrm{wfn}}(x)\overline{Ξ_{\mathrm{wfn}}(y)}$ with $Ξ_{\mathrm{wfn}}$ integrable. Its transform is the rank-one kernel $\widehat K(\zeta,\eta)=\hatΞ_{\mathrm{wfn}}(\zeta)\overline{\hatΞ_{\mathrm{wfn}}(\eta)}$, so the diagonal of the transformed kernel is $\lvert\hatΞ_{\mathrm{wfn}}(\zeta)\rvert^2$ while the diagonal of the original is $\lvertΞ_{\mathrm{wfn}}(x)\rvert^2$. The two agree pointwise only when $Ξ_{\mathrm{wfn}}$ is an eigenfunction of the transform. For $Ξ_{\mathrm{wfn}}(x)=e^{-\lvert x\rvert^2/2}$ one has $\hatΞ_{\mathrm{wfn}}=(2\pi)^{n/2}Ξ_{\mathrm{wfn}}$, so that $\lvert\hatΞ_{\mathrm{wfn}}\rvert^2=(2\pi)^n\lvertΞ_{\mathrm{wfn}}\rvert^2$: the Gaussian diagonal is reproduced up to the constant, and the constant is exactly the factor by which the diagonal of a self-dual kernel rescales. **The proposition above is the only sense in which the two diagonals agree for a general kernel: the agreement is an identity of integrals, and it is a coincidence of pointwise values only for the self-dual kernels.**
 
 ### The operator-valued kernel
 
@@ -176,7 +176,7 @@ is a positive-definite operator-valued kernel.
 
 *Proof.* Let $\zeta_1,\dots,\zeta_N$, $w_1,\dots,w_N\in H$, and put $\Lambda(x)=\sum_p w_p\,e^{-i\zeta_p\cdot x}$, an $H$-valued bounded integrable function. Then $\sum_{p,q}\langle\widehat K(\zeta_p,\zeta_q)w_q,w_p\rangle=\int\int\langle K(x,y)\Lambda(y),\Lambda(x)\rangle\,dx\,dy$, and the right side is non-negative by the definition, applied to step-function approximations of $\Lambda$ exactly as in the scalar lemma. The families being arbitrary, $\widehat K$ is positive definite.
 
-**Corollary (the diagonal is a positive operator).** For every $\zeta$, the operator $\widehat K(\zeta,\zeta)$ is positive, and its trace, when finite, is $\sum_j\widehat K(\zeta,\zeta)$ evaluated on an orthonormal basis, which is the sum of scalar symbols of the kernels $\langle K(\cdot,\cdot)\varphi_j,\varphi_j\rangle$.
+**Corollary (the diagonal is a positive operator).** For every $\zeta$, the operator $\widehat K(\zeta,\zeta)$ is positive, and its trace, when finite, is $\sum_j\widehat K(\zeta,\zeta)$ evaluated on an orthonormal basis, which is the sum of scalar symbols of the kernels $\langle K(\cdot,\cdot)\digamma_{\mathrm{map},j},\digamma_{\mathrm{map},j}\rangle$.
 
 *Proof.* Positivity is the theorem with $\eta=\zeta$ and $N=1$. The trace statement is the definition of the diagonal entries in a basis and the scalar case applied to each of them.
 
@@ -214,7 +214,7 @@ $$
 
 and $\mathcal{U}f=\hat f$ extends to a unitary of $L^2(G;H)$ onto $L^2(\widehat G;H)$.
 
-*Proof.* The scalar statement is the Plancherel theorem for a locally compact abelian group, quoted from *A Course in Abstract Harmonic Analysis* of Folland, together with the existence and uniqueness of the measure. The vector statement follows by choosing an orthonormal basis $(\varphi_j)$ of $H$, writing $f_j=\langle f,\varphi_j\rangle$, and repeating the argument of §*The Isometry and the Unitary*: the norm identity becomes a sum of scalar identities, and monotone convergence justifies the exchange. The unitary is then obtained by continuity on the dense set $L^1\cap L^2$.
+*Proof.* The scalar statement is the Plancherel theorem for a locally compact abelian group, quoted from *A Course in Abstract Harmonic Analysis* of Folland, together with the existence and uniqueness of the measure. The vector statement follows by choosing an orthonormal basis $(\digamma_{\mathrm{map},j})$ of $H$, writing $f_j=\langle f,\digamma_{\mathrm{map},j}\rangle$, and repeating the argument of §*The Isometry and the Unitary*: the norm identity becomes a sum of scalar identities, and monotone convergence justifies the exchange. The unitary is then obtained by continuity on the dense set $L^1\cap L^2$.
 
 **Definition (the Plancherel density).** The measure $d\gamma$ is the **Plancherel measure**. When $\widehat G$ is identified with a space carrying another measure $d\lambda$, say by a homeomorphism, the **density** is the function $\varpi$ with $d\gamma=\varpi\,d\lambda$, that is, the Radon–Nikodym derivative of the Plancherel measure against $d\lambda$. The density is not intrinsic; the pair of an identification and a density is.
 
@@ -238,7 +238,7 @@ $$
 
 holds in the norm of $L^2(G;\mathcal{L}_2(H))$, that is, the integrals over an increasing family of compact subsets of $\widehat G$ converge to $F$ in that norm. If in addition $F$ is continuous, $F\in L^1$, and $\hat F\in L^1(\widehat G;\mathcal{L}_2(H))$, the formula holds pointwise in the Hilbert–Schmidt norm.
 
-*Proof.* Apply the theorem of §*The Isometry and the Unitary* with $H$ replaced by the Hilbert space $\mathcal{L}_2(H)$: the Hilbert–Schmidt identity is that theorem, and the transform there is the weak transform of §*Operator-Valued Functions*, which agrees with the strong one by the proposition of that section. The pointwise statement is the scalar inversion theorem applied to each matrix entry $\langle F\varphi_j,\varphi_k\rangle$, followed by summation in the Hilbert–Schmidt norm, which is legitimate because $\hat F$ is integrable in that norm and the partial sums converge.
+*Proof.* Apply the theorem of §*The Isometry and the Unitary* with $H$ replaced by the Hilbert space $\mathcal{L}_2(H)$: the Hilbert–Schmidt identity is that theorem, and the transform there is the weak transform of §*Operator-Valued Functions*, which agrees with the strong one by the proposition of that section. The pointwise statement is the scalar inversion theorem applied to each matrix entry $\langle F\digamma_{\mathrm{map},j},\digamma_{\mathrm{map},k}\rangle$, followed by summation in the Hilbert–Schmidt norm, which is legitimate because $\hat F$ is integrable in that norm and the partial sums converge.
 
 **Remark (what replaces the pointwise product).** In the scalar inversion the integrand is a number times a character. Here it is an operator times a character, and the order is fixed: the operator is on the left, which is the order in which the transform was defined. The two-sided version, with a character on each side of the operator, belongs to the biquaternion articles of the corpus, where the value algebra is not commutative and the placement carries information; on an abelian group with operator values the right placement is a different transform, not a variant of this one.
 
@@ -289,7 +289,7 @@ Three sentences carry the article. **The transform is the identity on the values
 | $T$ | A bounded operator on $H$, and the value of an operator-valued function |
 | $f,g$ | Functions with values in $H$ |
 | $u,v,w_p$ | Vectors of $H$ |
-| $\varphi_j$ | An orthonormal basis of $H$, indexed by $j$ and $k$ |
+| $\digamma_{\mathrm{map},j}$ | An orthonormal basis of $H$, indexed by $j$ and $k$ |
 | $\mathcal{F}$ | The transform $\int e^{-i\zeta\cdot x}f(x)\,dx$ and its group analogue $\int f(x)\overline{\gamma(x)}\,dx$ |
 | $\mathcal{U}$ | The unitary $(2\pi)^{-n/2}\mathcal{F}$, and its group analogue |
 | $\tau_y$ | The translation $(\tau_yf)(x)=f(x+y)$, chosen so that the transform intertwines it with $\mu_y$ |
@@ -297,7 +297,7 @@ Three sentences carry the article. **The transform is the identity on the values
 | $m$ | A unimodular function on the dual, the gauge between two transforms |
 | $K$ | A kernel on $X\times X$, and $K_x=K(\cdot,x)$ |
 | $\widehat K$ | The transform of a kernel in both variables |
-| $\psi$ | A function whose rank-one kernel is used as an example |
+| $Ξ_{\mathrm{wfn}}$ | A function whose rank-one kernel is used as an example |
 | $\Lambda$ | A bounded integrable test function used to prove positivity of $\widehat K$ |
 | $X$ | The set on which a kernel is defined |
 | $G$ | A locally compact abelian group, written additively |

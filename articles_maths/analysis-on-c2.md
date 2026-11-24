@@ -230,7 +230,7 @@ The product of two entire functions of one variable is identically zero only whe
 
 **Proposition (zeros are hypersurfaces).** If $f$ is holomorphic and not identically zero on a domain $D\subset\mathbb{C}^2$, then its zero set $Z(f)$ has empty interior. At every point where $df\neq0$, the set $Z(f)$ is a complex submanifold of complex dimension $1$.
 
-*Proof.* The empty interior is the identity theorem. At a point with $df\neq0$, one of the partial derivatives, say $\partial f/\partial Q_{\blacktriangledown}$, is nonzero, and the holomorphic implicit function theorem solves $f(Q_{\blacktriangle},Q_{\blacktriangledown})=0$ for $Q_{\blacktriangledown}=\varphi(Q_{\blacktriangle})$ near the point; the graph is a complex curve.
+*Proof.* The empty interior is the identity theorem. At a point with $df\neq0$, one of the partial derivatives, say $\partial f/\partial Q_{\blacktriangledown}$, is nonzero, and the holomorphic implicit function theorem solves $f(Q_{\blacktriangle},Q_{\blacktriangledown})=0$ for $Q_{\blacktriangledown}=\digamma_{\mathrm{map}}(Q_{\blacktriangle})$ near the point; the graph is a complex curve.
 
 **Remark (the argument principle has no direct analogue).** In one variable the zeros of $f$ are isolated and the integral of $f'/f$ over a contour counts them. **In two variables the zeros form a complex curve, and the count is not a number but a divisor**, an integer attached to each irreducible component; the replacement of the contour integral is the theory of positive currents and Lelong numbers, which integrates the Poincaré–Lelong form of $\log\lvert f\rvert$ over a hypersurface (*Several Complex Variables*). The one-variable statement is recovered by restricting to a complex line that meets the zero curve transversely.
 

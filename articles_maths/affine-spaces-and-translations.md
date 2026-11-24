@@ -36,18 +36,18 @@ Condition (i) says that $V$ acts on $\mathbb{A}$; condition (ii) says the action
 **Definition.** An **origin** in $\mathbb{A}$ is a point $o \in \mathbb{A}$. Given $o$, the **position map** is
 
 $$
-\varphi_o:\mathbb{A} \longrightarrow V, \qquad a \longmapsto a-o .
+\digamma_{\mathrm{map},o}:\mathbb{A} \longrightarrow V, \qquad a \longmapsto a-o .
 $$
 
-**Proposition.** For every origin $o$, the position map $\varphi_o$ is a bijection. For two origins $o,o'$,
+**Proposition.** For every origin $o$, the position map $\digamma_{\mathrm{map},o}$ is a bijection. For two origins $o,o'$,
 
 $$
-\boxed{\;\varphi_{o'}(a)=\varphi_o(a)-(o'-o)\;},
+\boxed{\;\digamma_{\mathrm{map},o'}(a)=\digamma_{\mathrm{map},o}(a)-(o'-o)\;},
 $$
 
 so the two identifications of $\mathbb{A}$ with $V$ differ by the translation $v \mapsto v-(o'-o)$. Consequently any statement about $\mathbb{A}$ that is to be intrinsic must be invariant under the translations of $V$.
 
-*Proof.* The map is a bijection because for each $v$ there is a unique $a=o+v$ with $a-o=v$. The relation $\varphi_{o'}(a)=a-o'=(a-o)-(o'-o)$ gives the second statement.
+*Proof.* The map is a bijection because for each $v$ there is a unique $a=o+v$ with $a-o=v$. The relation $\digamma_{\mathrm{map},o'}(a)=a-o'=(a-o)-(o'-o)$ gives the second statement.
 
 The content of the definition is thus that an affine space is a vector space **together with a forgotten origin**, and the choice of an origin converts it into a vector space in a way that is canonical only up to translation. This is why statements in affine geometry come in two forms: an intrinsic form using differences of points, and a coordinate form after an origin is chosen.
 
@@ -169,7 +169,7 @@ for a point $a$ and a linear subspace $W \subseteq V$, called the **direction** 
 
 *Proof.* (i) The differences of elements of $a+W$ are exactly the elements of $W$. (ii) If $B\subseteq C$ then $a \in C$, so $a-b \in U$, and for $w \in W$ one has $a+w \in C$, whence $w=(a+w)-a \in U$ and $W \subseteq U$; conversely $W \subseteq U$ and $a-b \in U$ give $a+W \subseteq b+U$. (iii) If $a+W$ and $b+W$ meet, then $a-b \in W$ by (ii) applied both ways, and the two are equal. (iv) If $c \in B \cap C$ then $B=c+W$, $C=c+U$, and $B \cap C=c+(W \cap U)$.
 
-For $n=1$ an affine subspace of dimension $1$ is the whole of $\mathbb{A}$, and of dimension $0$ a single point: over a one-dimensional direction space there is nothing else. For $n=2$ the subspaces of dimension $1$ are the **lines**, for $n=3$ the subspaces of dimension $1$ and $2$ are the **lines** and **planes**, and in general a **hyperplane** is an affine subspace of dimension $n-1$, of the form $\{a: \varphi(a-o)=\lambda\}$ for a nonzero linear functional $\varphi$. Two distinct lines in a plane meet in a point or are disjoint and parallel, and this is the intersection statement (iv) with $\dim W=\dim U=1$: either $W=U$ (parallel or equal) or $W \cap U=0$ and the intersection is a single point.
+For $n=1$ an affine subspace of dimension $1$ is the whole of $\mathbb{A}$, and of dimension $0$ a single point: over a one-dimensional direction space there is nothing else. For $n=2$ the subspaces of dimension $1$ are the **lines**, for $n=3$ the subspaces of dimension $1$ and $2$ are the **lines** and **planes**, and in general a **hyperplane** is an affine subspace of dimension $n-1$, of the form $\{a: \digamma_{\mathrm{map}}(a-o)=\lambda\}$ for a nonzero linear functional $\digamma_{\mathrm{map}}$. Two distinct lines in a plane meet in a point or are disjoint and parallel, and this is the intersection statement (iv) with $\dim W=\dim U=1$: either $W=U$ (parallel or equal) or $W \cap U=0$ and the intersection is a single point.
 
 ### Affine Maps
 
@@ -199,7 +199,7 @@ The Euclidean group $V \rtimes O(V,\mathfrak{Q})$ and the classification of its 
 | $V$ | direction vector space, $\dim_F V=n$ |
 | $\mathbb{A}$ | affine space with direction $V$ |
 | $a+v$, $b-a$ | action of $V$ on $\mathbb{A}$ and difference of points |
-| $o$ | an origin; $\varphi_o(a)=a-o$ |
+| $o$ | an origin; $\digamma_{\mathrm{map},o}(a)=a-o$ |
 | $t_v$ | translation by $v$, $t_v(a)=a+v$ |
 | $T(\mathbb{A}) \cong (V,+)$ | translation group |
 | $\operatorname{Aff}(\mathbb{A})=\operatorname{Aff}(V)$ | affine group |

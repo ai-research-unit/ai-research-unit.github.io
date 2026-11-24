@@ -55,15 +55,15 @@ so that the cobordism groups are the homotopy groups of the Thom spectra: $\Omeg
 
 ## Surgery
 
-**Definition.** Let $M$ be a closed $n$-manifold and let $\phi : S^k\times D^{n-k}\hookrightarrow M$ be an embedding with trivial normal bundle. **Surgery** on $M$ along $\phi$ removes the interior of the image and glues in $D^{k+1}\times S^{n-k-1}$ along the common boundary $S^k\times S^{n-k-1}$, producing a new closed $n$-manifold $M'$:
+**Definition.** Let $M$ be a closed $n$-manifold and let $\digamma_{\mathrm{map}} : S^k\times D^{n-k}\hookrightarrow M$ be an embedding with trivial normal bundle. **Surgery** on $M$ along $\digamma_{\mathrm{map}}$ removes the interior of the image and glues in $D^{k+1}\times S^{n-k-1}$ along the common boundary $S^k\times S^{n-k-1}$, producing a new closed $n$-manifold $M'$:
 
 $$
-M' = (M\setminus \mathrm{int}\,\phi(S^k\times D^{n-k})) \cup_{\partial}\ (D^{k+1}\times S^{n-k-1}) .
+M' = (M\setminus \mathrm{int}\,\digamma_{\mathrm{map}}(S^k\times D^{n-k})) \cup_{\partial}\ (D^{k+1}\times S^{n-k-1}) .
 $$
 
-The manifold $W = M\times I$ with a $(k+1)$-handle attached along $\phi$ is a cobordism from $M$ to $M'$, the **trace** of the surgery; the inclusion $M\hookrightarrow W$ induces the quotient on $\pi_k$ that kills the class $[\phi]$, so the trace is a homotopy equivalence only when that class is trivial, and in the nontrivial case it is the record of a genuine change of the homotopy type of the manifold.
+The manifold $W = M\times I$ with a $(k+1)$-handle attached along $\digamma_{\mathrm{map}}$ is a cobordism from $M$ to $M'$, the **trace** of the surgery; the inclusion $M\hookrightarrow W$ induces the quotient on $\pi_k$ that kills the class $[\digamma_{\mathrm{map}}]$, so the trace is a homotopy equivalence only when that class is trivial, and in the nontrivial case it is the record of a genuine change of the homotopy type of the manifold.
 
-**Proposition (effect on homology).** Let $k<n-k-1$. Then the surgery kills the homotopy class $[\phi]\in\pi_k(M)$: the new manifold $M'$ has $\pi_k(M')$ obtained from $\pi_k(M)$ by adding the relation $[\phi]=0$, and, in the same range of dimensions, the homology of $M'$ is obtained from that of $M$ by killing the class carried by the embedded sphere in dimension $k$ and adjoining a class in dimension $n-k-1$, the class carried by the belt sphere of the glued handle. Consequently every class of dimension $k<\tfrac{n}{2}$ can be killed by surgery, at the cost of altering the homology of $M$ in a controlled way.
+**Proposition (effect on homology).** Let $k<n-k-1$. Then the surgery kills the homotopy class $[\digamma_{\mathrm{map}}]\in\pi_k(M)$: the new manifold $M'$ has $\pi_k(M')$ obtained from $\pi_k(M)$ by adding the relation $[\digamma_{\mathrm{map}}]=0$, and, in the same range of dimensions, the homology of $M'$ is obtained from that of $M$ by killing the class carried by the embedded sphere in dimension $k$ and adjoining a class in dimension $n-k-1$, the class carried by the belt sphere of the glued handle. Consequently every class of dimension $k<\tfrac{n}{2}$ can be killed by surgery, at the cost of altering the homology of $M$ in a controlled way.
 
 **Proof sketch.** The complement of the tubular neighbourhood retracts onto the complement of the sphere, and the cocore disc $D^{n-k}$ in the glued copy is a relative cycle whose boundary is the original sphere; the effects on the homotopy and homology groups follow from the Seifert–van Kampen theorem and the Mayer–Vietoris sequence.
 

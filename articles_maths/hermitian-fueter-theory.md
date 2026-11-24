@@ -96,15 +96,15 @@ $$
 \boxed{\;A_0 = 3B+rB_r , \qquad B_0 = -\tfrac{1}{r}A_r\;} ,
 $$
 
-the **reduced Cauchy–Riemann system** of *Fueter Theory*; equivalently, with $A=\phi$, $B=\psi/r$,
-the system $\phi_0=\psi_r+2\psi/r$, $\psi_0=-\phi_r$. Every axial regular function is determined by
+the **reduced Cauchy–Riemann system** of *Fueter Theory*; equivalently, with $A=\digamma_{\mathrm{map}}$, $B=Ξ_{\mathrm{wfn}}/r$,
+the system $\digamma_{\mathrm{map},0}=Ξ_{\mathrm{wfn},r}+2Ξ_{\mathrm{wfn}}/r$, $Ξ_{\mathrm{wfn},0}=-\digamma_{\mathrm{map},r}$. Every axial regular function is determined by
 the pair $(A,B)$ of scalar functions of the two variables $(q_t,r)$, and the class of such pairs is
 the axial quaternionic function theory.
 
 *Proof.* Quoted from *Fueter Theory*: the derivation uses
 $D(A+\vec qB)=(A_0-3B-rB_r)+(B_0+A_r/r)\vec q$, which follows from $\sum_ie_i\vec q\,q_i=-r^2$ and
 the radial identities for the Laplacian in the axial coordinates. The substitution
-$A=r^2\phi,B=r\psi$ carries the system into the displayed pair.
+$A=r^2\digamma_{\mathrm{map}},B=rΞ_{\mathrm{wfn}}$ carries the system into the displayed pair.
 
 ### The Spherical Reduction of the Hermitian System
 

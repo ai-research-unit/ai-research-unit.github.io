@@ -89,7 +89,7 @@ $$
 
 which is the swap $\Pi_1 \leftrightarrow \Pi_2$ of the two idempotents.
 
-**The dual numbers.** An automorphism of $\mathbb{C}_{\mathrm{dln}}$ fixes $1$ and sends $\varepsilon$ to $c + d\varepsilon$; from $0 = \varphi(\varepsilon^2) = \varphi(\varepsilon)^2 = c^2 + 2cd\varepsilon$ one gets $c = 0$, and $d \neq 0$ by injectivity. Every $d \in \mathbb{R}^\times$ occurs, so
+**The dual numbers.** An automorphism of $\mathbb{C}_{\mathrm{dln}}$ fixes $1$ and sends $\varepsilon$ to $c + d\varepsilon$; from $0 = \digamma_{\mathrm{map}}(\varepsilon^2) = \digamma_{\mathrm{map}}(\varepsilon)^2 = c^2 + 2cd\varepsilon$ one gets $c = 0$, and $d \neq 0$ by injectivity. Every $d \in \mathbb{R}^\times$ occurs, so
 
 $$
 \operatorname{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathrm{dln}}) \cong \mathbb{R}^\times, \qquad \varepsilon \mapsto d\varepsilon.
@@ -139,7 +139,7 @@ $$
 
 for all $x, y \in A$. The set of all such maps is written $\operatorname{Der}_R(A)$.
 
-If $A$ is unital then every derivation satisfies $\delta(1_A) = 0$, because $\delta(1_A) = \delta(1_A \cdot 1_A) = 2\delta(1_A)$. The Leibniz rule is the infinitesimal form of multiplicativity: a one-parameter family of automorphisms $\varphi_t$ with $\varphi_0 = \mathrm{id}$ and $\varphi_t(xy) = \varphi_t(x)\varphi_t(y)$ has derivative at $t = 0$ obeying the rule, which is why a derivation is called an **infinitesimal automorphism**.
+If $A$ is unital then every derivation satisfies $\delta(1_A) = 0$, because $\delta(1_A) = \delta(1_A \cdot 1_A) = 2\delta(1_A)$. The Leibniz rule is the infinitesimal form of multiplicativity: a one-parameter family of automorphisms $\digamma_{\mathrm{map},t}$ with $\digamma_{\mathrm{map},0} = \mathrm{id}$ and $\digamma_{\mathrm{map},t}(xy) = \digamma_{\mathrm{map},t}(x)\digamma_{\mathrm{map},t}(y)$ has derivative at $t = 0$ obeying the rule, which is why a derivation is called an **infinitesimal automorphism**.
 
 **Example.** For the polynomial algebra, a derivation satisfies $\delta(1) = 0$ and is determined by its value $f(x) = \delta(x)$ at $x$, since
 
@@ -281,11 +281,11 @@ $$
 
 The same identity applied to $\exp(-\delta)$, together with the commutativity of $\delta$ with its powers in the product $\exp(\delta)\exp(-\delta) = \exp(0) = 1$, gives the inverse.
 
-**Proposition (the automorphisms of the dual-number algebra).** Let $\varepsilon^2 = 0$ and let $\varphi = \mathrm{id} + \varepsilon\delta$ be an $R[\varepsilon]$-algebra automorphism of $A[\varepsilon]$. Then $\delta$ is a derivation of $A$.
+**Proposition (the automorphisms of the dual-number algebra).** Let $\varepsilon^2 = 0$ and let $\digamma_{\mathrm{map}} = \mathrm{id} + \varepsilon\delta$ be an $R[\varepsilon]$-algebra automorphism of $A[\varepsilon]$. Then $\delta$ is a derivation of $A$.
 
-*Proof.* Write $\varphi(x) = x + \varepsilon\delta(x)$ and expand $\varphi(xy) = \varphi(x)\varphi(y)$; the terms containing $\varepsilon^2$ vanish, and the coefficient of $\varepsilon$ is $\delta(xy) = \delta(x)y + x\delta(y)$.
+*Proof.* Write $\digamma_{\mathrm{map}}(x) = x + \varepsilon\delta(x)$ and expand $\digamma_{\mathrm{map}}(xy) = \digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(y)$; the terms containing $\varepsilon^2$ vanish, and the coefficient of $\varepsilon$ is $\delta(xy) = \delta(x)y + x\delta(y)$.
 
-The proposition is the algebraic form of the statement that the infinitesimal automorphisms of $A$ are its derivations. The analytic form, in which a differentiable family $\varphi_t$ of automorphisms with $\varphi_0 = \mathrm{id}$ is differentiated at $t = 0$, is the same computation read with the derivative of Part III, where the limit is available.
+The proposition is the algebraic form of the statement that the infinitesimal automorphisms of $A$ are its derivations. The analytic form, in which a differentiable family $\digamma_{\mathrm{map},t}$ of automorphisms with $\digamma_{\mathrm{map},0} = \mathrm{id}$ is differentiated at $t = 0$, is the same computation read with the derivative of Part III, where the limit is available.
 
 **Theorem (inner derivations exponentiate to inner automorphisms).** Let $a \in A$ and suppose $\exp(a)$ is invertible in $A$. Then
 
@@ -301,7 +301,7 @@ This is the identity $\mathrm{Ad}_{\exp(a)} = \exp(\mathrm{ad}_a)$ of the adjoin
 
 The data of an $R$-algebra $A$ are the module structure and the product. An automorphism is required to preserve exactly these, so any further structure that happens to be present on the underlying module — a length, an angle, a volume — is not automatically preserved.
 
-**Example.** The automorphism $\varphi(\varepsilon) = d\varepsilon$ of $\mathbb{C}_{\mathrm{dln}}$, $d \neq 1$, has matrix $\begin{pmatrix} 1 & 0 \\ 0 & d \end{pmatrix}$ in the basis $\{1, \varepsilon\}$. It preserves the product because it fixes $1$ and scales $\varepsilon$, but it is not the identity map of the underlying module, and an extra structure on that module is not automatically preserved by it.
+**Example.** The automorphism $\digamma_{\mathrm{map}}(\varepsilon) = d\varepsilon$ of $\mathbb{C}_{\mathrm{dln}}$, $d \neq 1$, has matrix $\begin{pmatrix} 1 & 0 \\ 0 & d \end{pmatrix}$ in the basis $\{1, \varepsilon\}$. It preserves the product because it fixes $1$ and scales $\varepsilon$, but it is not the identity map of the underlying module, and an extra structure on that module is not automatically preserved by it.
 
 **Example.** On $\mathbb{B} \cong M_2(\mathbb{C})$ the invariant $\sum_\mu Q_\mu^2$ of the coefficients — the determinant of the corresponding matrix, an algebraic function of the coordinates — is carried along by **every** inner automorphism, conjugation by a matrix leaving the determinant unchanged; the complex conjugation $\sigma(\tilde{Q}) = \tilde{Q}^{*}$ of the coefficients moves it and is not inner. Whether one of these quantities survives is a property of the quantity and not of the automorphism.
 

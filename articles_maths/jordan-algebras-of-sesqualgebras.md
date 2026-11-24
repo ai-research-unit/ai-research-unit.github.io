@@ -100,13 +100,13 @@ $$
 
 which on the Hermitian part is $U_{x}(y) = xyx$; the identification and its properties are *The Hermitian Jordan Algebra*, §*The Quadratic Representation*.
 
-**Proposition.** The assignments $A \mapsto H(A)$ and $A \mapsto J(A)$ are functorial: a morphism $\varphi$ of involutive $R$-algebras, $\varphi(xy) = \varphi(x)\varphi(y)$ and $\varphi(x^{*}) = \varphi(x)^{*}$, carries $H(A)$ into $H(B)$, and it is a homomorphism of Jordan algebras,
+**Proposition.** The assignments $A \mapsto H(A)$ and $A \mapsto J(A)$ are functorial: a morphism $\digamma_{\mathrm{map}}$ of involutive $R$-algebras, $\digamma_{\mathrm{map}}(xy) = \digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(y)$ and $\digamma_{\mathrm{map}}(x^{*}) = \digamma_{\mathrm{map}}(x)^{*}$, carries $H(A)$ into $H(B)$, and it is a homomorphism of Jordan algebras,
 
 $$
-\varphi(x \circ y) = \varphi(x) \circ \varphi(y) .
+\digamma_{\mathrm{map}}(x \circ y) = \digamma_{\mathrm{map}}(x) \circ \digamma_{\mathrm{map}}(y) .
 $$
 
-**Proof.** $\varphi(x)^{*} = \varphi(x^{*}) = \varphi(x)$ for $x \in H(A)$, so $\varphi$ preserves the Hermitian elements; then $\varphi(x \circ y) = \tfrac12\varphi(xy + yx) = \tfrac12\bigl(\varphi(x)\varphi(y) + \varphi(y)\varphi(x)\bigr) = \varphi(x) \circ \varphi(y)$ by multiplicativity and additivity, and the scalars are respected because a morphism is $R$-linear and the fixed ring is contained in $R$.
+**Proof.** $\digamma_{\mathrm{map}}(x)^{*} = \digamma_{\mathrm{map}}(x^{*}) = \digamma_{\mathrm{map}}(x)$ for $x \in H(A)$, so $\digamma_{\mathrm{map}}$ preserves the Hermitian elements; then $\digamma_{\mathrm{map}}(x \circ y) = \tfrac12\digamma_{\mathrm{map}}(xy + yx) = \tfrac12\bigl(\digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(y) + \digamma_{\mathrm{map}}(y)\digamma_{\mathrm{map}}(x)\bigr) = \digamma_{\mathrm{map}}(x) \circ \digamma_{\mathrm{map}}(y)$ by multiplicativity and additivity, and the scalars are respected because a morphism is $R$-linear and the fixed ring is contained in $R$.
 
 **Remark.** The functor is the Jordan counterpart of the functor $A \mapsto S(A)$ of *Lie Algebras of Sesqualgebras*, which carries the same morphisms to homomorphisms of Lie algebras. The two functors are the two halves of the pair, and the scalar action is where their functoriality is anchored: both go to algebras over the fixed ring, and a *conjugate* morphism, which is $\varsigma$-semilinear rather than linear, respects the fixed ring too, since $\varsigma$ fixes it pointwise.
 

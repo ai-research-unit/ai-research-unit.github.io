@@ -87,7 +87,7 @@ u = (\hat a\cdot\nabla)(\rho u) - [\vec a\times\nabla v]_3,
 v = (\hat a\cdot\nabla)(\rho v) + [\vec a\times\nabla u]_3.
 $$
 
-Since $(\hat a\cdot\nabla)(\rho g) = g+a\partial/\partial a\,g+a'\partial/\partial a'\,g$, the first identity states $0 = a\partial/\partial a\,u+a'\partial/\partial a'\,u-[\vec a\times\nabla v]_3$ and the second states $0 = a\partial/\partial a\,v+a'\partial/\partial a'\,v+[\vec a\times\nabla u]_3$; the Cauchy–Riemann relations imply both, and conversely the two rows $(a,a',a',-a)$ and $(-a',a,a,a')$ in the partials $(\partial/\partial a\,u,\partial/\partial a'\,u,\partial/\partial a\,v,\partial/\partial a'\,v)$ are orthogonal and their span contains $(1,0,0,-1)$ and $(0,1,1,0)$, so away from $\rho = 0$ the pair is equivalent to $\partial/\partial a\,u = \partial/\partial a'\,v$, $\partial/\partial a'\,u = -\partial/\partial a\,v$. The rewriting is called **Debye** because the two real scalars $\psi_E,\psi_M$ that generate the source-free Maxwell solutions and satisfy the wave equation are the **Debye potentials**: the identity is the sense in which an analytic function serves as its own Debye potential, the cross term playing the role of the companion component.
+Since $(\hat a\cdot\nabla)(\rho g) = g+a\partial/\partial a\,g+a'\partial/\partial a'\,g$, the first identity states $0 = a\partial/\partial a\,u+a'\partial/\partial a'\,u-[\vec a\times\nabla v]_3$ and the second states $0 = a\partial/\partial a\,v+a'\partial/\partial a'\,v+[\vec a\times\nabla u]_3$; the Cauchy–Riemann relations imply both, and conversely the two rows $(a,a',a',-a)$ and $(-a',a,a,a')$ in the partials $(\partial/\partial a\,u,\partial/\partial a'\,u,\partial/\partial a\,v,\partial/\partial a'\,v)$ are orthogonal and their span contains $(1,0,0,-1)$ and $(0,1,1,0)$, so away from $\rho = 0$ the pair is equivalent to $\partial/\partial a\,u = \partial/\partial a'\,v$, $\partial/\partial a'\,u = -\partial/\partial a\,v$. The rewriting is called **Debye** because the two real scalars $Ξ_{\mathrm{wfn},E},Ξ_{\mathrm{wfn},M}$ that generate the source-free Maxwell solutions and satisfy the wave equation are the **Debye potentials**: the identity is the sense in which an analytic function serves as its own Debye potential, the cross term playing the role of the companion component.
 
 **The quaternion case.** The same contraction applies to the quaternion system. For $F = F_0+\vec F$ regular with $\vec F = F_1\vec e_x+F_2\vec e_y+F_3\vec e_z$, and $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\rho = |\vec q|>0$, the component $F_0$ satisfies
 
@@ -251,7 +251,7 @@ Regular functions have the induced series and the monogenic Taylor expansion of 
 | $\mathrm{div}, \mathrm{grad}, \mathrm{rot}$ | Vector operators in the componentwise system |
 | $\partial/\partial Q_t\,F_0 = \mathrm{div}\,\vec F$, $\partial/\partial Q_t\,\vec F = -\mathrm{grad}\,F_0-\mathrm{rot}\,\vec F$ | Quaternionic Cauchy–Riemann system |
 | $(\vec q\times\nabla g)_k$ | Components of the radius–gradient cross product in the Debye-type identities |
-| $\psi_E$, $\psi_M$ | Debye potentials, the two real scalar generators of source-free Maxwell solutions |
+| $Ξ_{\mathrm{wfn},E}$, $Ξ_{\mathrm{wfn},M}$ | Debye potentials, the two real scalar generators of source-free Maxwell solutions |
 | $I$, $S^2$ | Imaginary unit, $I^2 = -1$; the imaginary units of $\mathbb{H}$ form the two-sphere |
 | $\mathbb{C}_I = \mathbb{R}+I\mathbb{R}$ | Slice through $I$, a copy of the complex plane |
 | $A, B$ | Axial coefficients, $F = A(q_t,\rho)+\vec u_{\mathrm d}B(q_t,\rho)$ |

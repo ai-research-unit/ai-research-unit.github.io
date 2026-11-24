@@ -69,10 +69,10 @@ The principle is the fixed-point theorem of the metric setting and is proved by 
 
 ### Implicit Functions and Level Sets
 
-**Theorem (implicit function theorem).** Let $X,Y,Z$ be Banach spaces, let $\Omega \subseteq X\times Y$ be open, and let $F:\Omega\to Z$ be of class $C^k$ with $F(x_0,y_0)=0$. If the partial derivative $\partial/\partial y\,F(x_0,y_0) \in B(Y,Z)$ is invertible, then there are neighbourhoods $\Omega$ of $x_0$ and $W$ of $y_0$ and a $C^k$ map $\varphi:\Omega\to W$ with $\varphi(x_0)=y_0$ and
+**Theorem (implicit function theorem).** Let $X,Y,Z$ be Banach spaces, let $\Omega \subseteq X\times Y$ be open, and let $F:\Omega\to Z$ be of class $C^k$ with $F(x_0,y_0)=0$. If the partial derivative $\partial/\partial y\,F(x_0,y_0) \in B(Y,Z)$ is invertible, then there are neighbourhoods $\Omega$ of $x_0$ and $W$ of $y_0$ and a $C^k$ map $\digamma_{\mathrm{map}}:\Omega\to W$ with $\digamma_{\mathrm{map}}(x_0)=y_0$ and
 
 $$
-\boxed{\;F(x,y)=0 \text{ in } \Omega\times W \iff y=\varphi(x); \qquad \varphi'(x)=-\bigl(\partial/\partial y\,F(x,\varphi(x))\bigr)^{-1}\partial/\partial x\,F(x,\varphi(x))\;}.
+\boxed{\;F(x,y)=0 \text{ in } \Omega\times W \iff y=\digamma_{\mathrm{map}}(x); \qquad \digamma_{\mathrm{map}}'(x)=-\bigl(\partial/\partial y\,F(x,\digamma_{\mathrm{map}}(x))\bigr)^{-1}\partial/\partial x\,F(x,\digamma_{\mathrm{map}}(x))\;}.
 $$
 
 *Proof.* Apply the inverse function theorem to $(x,y)\mapsto(x,F(x,y))$, whose derivative at $(x_0,y_0)$ is the invertible operator with matrix $\begin{pmatrix}I&0\\\partial/\partial x\,F&\partial/\partial y\,F\end{pmatrix}$.

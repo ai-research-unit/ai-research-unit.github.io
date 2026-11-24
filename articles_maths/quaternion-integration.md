@@ -227,15 +227,15 @@ $$
 
 ### Integration by Parts
 
-**Theorem (integration by parts).** Let $\phi$ be real-valued and $C^1$ on $\bar{\Omega}$ and let $f$ be quaternion-valued and $C^1$ on $\bar{\Omega}$. Then
+**Theorem (integration by parts).** Let $\digamma_{\mathrm{map}}$ be real-valued and $C^1$ on $\bar{\Omega}$ and let $f$ be quaternion-valued and $C^1$ on $\bar{\Omega}$. Then
 
 $$
-\int_\Omega \bigl[\,(D\phi)\,f + \phi\,(Df)\,\bigr] dV = \int_{\partial\Omega} \nu \phi f \, dS.
+\int_\Omega \bigl[\,(D\digamma_{\mathrm{map}})\,f + \digamma_{\mathrm{map}}\,(Df)\,\bigr] dV = \int_{\partial\Omega} \nu \digamma_{\mathrm{map}} f \, dS.
 $$
 
-Equivalently, $\int_\Omega (D\phi) f \, dV = \int_{\partial\Omega}\nu\phi f\,dS - \int_\Omega \phi\,(Df)\,dV$.
+Equivalently, $\int_\Omega (D\digamma_{\mathrm{map}}) f \, dV = \int_{\partial\Omega}\nu\digamma_{\mathrm{map}} f\,dS - \int_\Omega \digamma_{\mathrm{map}}\,(Df)\,dV$.
 
-**Proof.** A real scalar $\phi$ commutes with every $e_\mu$, so the Leibniz rule for $D$ gives $D(\phi f) = \sum_\mu e_\mu\partial/\partial q_\mu\,(\phi f) = \sum_\mu e_\mu(\partial/\partial q_\mu\,\phi) f + \sum_\mu e_\mu\phi\partial/\partial q_\mu f = (D\phi)f + \phi\,Df$. The divergence theorem applied to $\phi f$ gives the displayed identity.
+**Proof.** A real scalar $\digamma_{\mathrm{map}}$ commutes with every $e_\mu$, so the Leibniz rule for $D$ gives $D(\digamma_{\mathrm{map}} f) = \sum_\mu e_\mu\partial/\partial q_\mu\,(\digamma_{\mathrm{map}} f) = \sum_\mu e_\mu(\partial/\partial q_\mu\,\digamma_{\mathrm{map}}) f + \sum_\mu e_\mu\digamma_{\mathrm{map}}\partial/\partial q_\mu f = (D\digamma_{\mathrm{map}})f + \digamma_{\mathrm{map}}\,Df$. The divergence theorem applied to $\digamma_{\mathrm{map}} f$ gives the displayed identity.
 
 **Corollary (scalar Green identity).** Let $u, v$ be real-valued $C^2$ functions on $\bar{\Omega}$. Then
 

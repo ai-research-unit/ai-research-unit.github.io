@@ -7,63 +7,63 @@ The involution on the group algebra turns a scalar function on the group into a 
 
 The article assumes the group, its Haar measure and the modular function from *Locally Compact Groups and Haar Measure*; the algebra $L^1(G)$, its involution, its positive cone and its positive functionals from *The Convolution Algebra $L^1(G)$* and *The Group Algebra as an Involutive Algebra*; the correspondence between nondegenerate `*`-representations of $L^1(G)$ and continuous unitary representations of $G$ from *The Convolution Algebra $L^1(G)$*; the characters, Pontryagin duality and the abelian transform from *Harmonic Analysis on Groups*; the unitary representations, irreducibility, the unitary dual and the direct integral from *Noncommutative Harmonic Analysis*; the abstract GNS construction from *The GNS Construction* (Topology on Algebras); and the Hilbert spaces, the bounded operators, the `*`-representations and the $\mathrm{C}^*$-algebras from *Operator Algebras*. The Plancherel measure is *Unitary Representations and the Plancherel Theorem*, below; the adjoint of a representation operator is *Unitary Representations and the Adjoint*, in the `- * Operator Theory` group; the extension of the theory to a Gelfand pair is *Spherical Functions and the Zonal Spherical Function*, next.
 
-Throughout, $G$ is a locally compact Hausdorff group with identity $e$ and left Haar measure $dx$, and $\Delta$ is its modular function; $\phi : G\to\mathbb{C}$ is **continuous** and **positive definite**, written $\phi\gg0$, when
+Throughout, $G$ is a locally compact Hausdorff group with identity $e$ and left Haar measure $dx$, and $\Delta$ is its modular function; $\digamma_{\mathrm{map}} : G\to\mathbb{C}$ is **continuous** and **positive definite**, written $\digamma_{\mathrm{map}}\gg0$, when
 
 $$
-\sum_{i,j=1}^n c_i\,\overline{c_j}\,\phi(x_i^{-1}x_j) \geq 0
+\sum_{i,j=1}^n c_i\,\overline{c_j}\,\digamma_{\mathrm{map}}(x_i^{-1}x_j) \geq 0
 $$
 
 for every finite family $x_1,\dots,x_n\in G$ and scalars $c_1,\dots,c_n\in\mathbb{C}$. A unitary representation is a continuous homomorphism $\pi : G\to\mathcal{U}(\mathcal{H})$ into the unitary operators of a Hilbert space $\mathcal{H}$; its **matrix coefficients** are the functions $x\mapsto\langle\pi(x)\zeta,\eta\rangle$.
 
 ## The Positive Definite Functions
 
-**Theorem (elementary properties).** A continuous $\phi$ is positive definite if and only if the function $\phi_{\mathrm{refl}}(x) = \overline{\phi(x^{-1})}$ is, and then
+**Theorem (elementary properties).** A continuous $\digamma_{\mathrm{map}}$ is positive definite if and only if the function $\digamma_{\mathrm{map},\mathrm{refl}}(x) = \overline{\digamma_{\mathrm{map}}(x^{-1})}$ is, and then
 
 $$
-\boxed{\;\phi(x^{-1}) = \overline{\phi(x)}, \qquad |\phi(x)| \leq \phi(e), \qquad \phi(e)\geq0\;} ;
+\boxed{\;\digamma_{\mathrm{map}}(x^{-1}) = \overline{\digamma_{\mathrm{map}}(x)}, \qquad |\digamma_{\mathrm{map}}(x)| \leq \digamma_{\mathrm{map}}(e), \qquad \digamma_{\mathrm{map}}(e)\geq0\;} ;
 $$
 
-if $\phi(e) = 0$ then $\phi\equiv0$, and every positive definite function is bounded with $\|\phi\|_\infty = \phi(e)$.
+if $\digamma_{\mathrm{map}}(e) = 0$ then $\digamma_{\mathrm{map}}\equiv0$, and every positive definite function is bounded with $\|\digamma_{\mathrm{map}}\|_\infty = \digamma_{\mathrm{map}}(e)$.
 
-**Proof.** The $2\times2$ case of the defining inequality with $(x_1,x_2) = (e,x)$ gives the Hermitian symmetry $\phi(x^{-1}) = \overline{\phi(x)}$ and $\phi(e)\geq0$; the $n$-tuple $(e,x_1,\dots,x_n)$ with the phase of $c_0$ adjusted gives $|\phi(x)|\leq\phi(e)$; the norm statement follows. The $\phi_{\mathrm{refl}}$ statement is the defining sum rewritten with the $x_i$ replaced by their inverses.
+**Proof.** The $2\times2$ case of the defining inequality with $(x_1,x_2) = (e,x)$ gives the Hermitian symmetry $\digamma_{\mathrm{map}}(x^{-1}) = \overline{\digamma_{\mathrm{map}}(x)}$ and $\digamma_{\mathrm{map}}(e)\geq0$; the $n$-tuple $(e,x_1,\dots,x_n)$ with the phase of $c_0$ adjusted gives $|\digamma_{\mathrm{map}}(x)|\leq\digamma_{\mathrm{map}}(e)$; the norm statement follows. The $\digamma_{\mathrm{map},\mathrm{refl}}$ statement is the defining sum rewritten with the $x_i$ replaced by their inverses.
 
-**Proposition (the functional on the algebra).** A bounded continuous $\phi$ is positive definite if and only if the functional
-
-$$
-\omega_\phi(f) = \int_G f(x)\,\phi(x)\,dx
-$$
-
-is positive on $L^1(G)$, that is $\omega_\phi(f^*\!*f)\geq0$ for all $f$, and if and only if the sesquilinear form
+**Proposition (the functional on the algebra).** A bounded continuous $\digamma_{\mathrm{map}}$ is positive definite if and only if the functional
 
 $$
-\langle Sf, Sg\rangle_\phi = \int_G\int_G \phi(y^{-1}x)\,f(x)\,\overline{g(y)}\,dx\,dy
+\omega_\digamma_{\mathrm{map}}(f) = \int_G f(x)\,\digamma_{\mathrm{map}}(x)\,dx
+$$
+
+is positive on $L^1(G)$, that is $\omega_\digamma_{\mathrm{map}}(f^*\!*f)\geq0$ for all $f$, and if and only if the sesquilinear form
+
+$$
+\langle Sf, Sg\rangle_\digamma_{\mathrm{map}} = \int_G\int_G \digamma_{\mathrm{map}}(y^{-1}x)\,f(x)\,\overline{g(y)}\,dx\,dy
 $$
 
 is positive semidefinite on $C_c(G)$.
 
-**Proof.** The sesquilinear form on step functions $f = \sum c_i\delta_{x_i}$ reduces to the defining double sum, so positive definiteness is precisely its positive semidefiniteness on $C_c(G)$; the equivalence with the positivity of $\omega_\phi$ is the standard computation relating the two expressions by Fubini and the definition of $f^*\!*f$, and is in the references.
+**Proof.** The sesquilinear form on step functions $f = \sum c_i\delta_{x_i}$ reduces to the defining double sum, so positive definiteness is precisely its positive semidefiniteness on $C_c(G)$; the equivalence with the positivity of $\omega_\digamma_{\mathrm{map}}$ is the standard computation relating the two expressions by Fubini and the definition of $f^*\!*f$, and is in the references.
 
-**Corollary (the cone and its closure).** The positive definite functions form a convex cone, closed under the involution $\phi\mapsto\phi_{\mathrm{refl}}$, and closed under pointwise limits of locally bounded families and under the product of two bounded positive definite functions; the normalised ones, with $\phi(e) = 1$, are the **states** of the group.
+**Corollary (the cone and its closure).** The positive definite functions form a convex cone, closed under the involution $\digamma_{\mathrm{map}}\mapsto\digamma_{\mathrm{map},\mathrm{refl}}$, and closed under pointwise limits of locally bounded families and under the product of two bounded positive definite functions; the normalised ones, with $\digamma_{\mathrm{map}}(e) = 1$, are the **states** of the group.
 
-**Proof.** Convexity is the linearity of the defining sum in $\phi$; closure under pointwise limits is the closedness of the non-negative reals. Closure under products follows from the representation-theoretic description below via the tensor product, and the normalisation is the statement $\|\phi\|_\infty = \phi(e)$.
+**Proof.** Convexity is the linearity of the defining sum in $\digamma_{\mathrm{map}}$; closure under pointwise limits is the closedness of the non-negative reals. Closure under products follows from the representation-theoretic description below via the tensor product, and the normalisation is the statement $\|\digamma_{\mathrm{map}}\|_\infty = \digamma_{\mathrm{map}}(e)$.
 
 ## The GNS Construction for a Positive Definite Function
 
-**Theorem (every positive definite function is a matrix coefficient).** Let $\phi\gg0$ and let $N = \{f\in C_c(G) : \langle Sf,Sf\rangle_\phi = 0\}$. Then the quotient $\mathcal{H}_\phi = C_c(G)/N$ completes to a Hilbert space on which there is a unique unitary representation $\pi_\phi$ with
+**Theorem (every positive definite function is a matrix coefficient).** Let $\digamma_{\mathrm{map}}\gg0$ and let $N = \{f\in C_c(G) : \langle Sf,Sf\rangle_\digamma_{\mathrm{map}} = 0\}$. Then the quotient $\mathcal{H}_\digamma_{\mathrm{map}} = C_c(G)/N$ completes to a Hilbert space on which there is a unique unitary representation $\pi_\digamma_{\mathrm{map}}$ with
 
 $$
-\pi_\phi(x)(Sf) = S(L_xf), \qquad (L_xf)(y) = f(x^{-1}y),
+\pi_\digamma_{\mathrm{map}}(x)(Sf) = S(L_xf), \qquad (L_xf)(y) = f(x^{-1}y),
 $$
 
-and a cyclic vector $\zeta_\phi = S(\text{normalised approximate identity})$ with
+and a cyclic vector $\zeta_\digamma_{\mathrm{map}} = S(\text{normalised approximate identity})$ with
 
 $$
-\boxed{\;\phi(x) = \langle\pi_\phi(x)\zeta_\phi, \zeta_\phi\rangle , \qquad \|\zeta_\phi\|^2 = \phi(e)\;} .
+\boxed{\;\digamma_{\mathrm{map}}(x) = \langle\pi_\digamma_{\mathrm{map}}(x)\zeta_\digamma_{\mathrm{map}}, \zeta_\digamma_{\mathrm{map}}\rangle , \qquad \|\zeta_\digamma_{\mathrm{map}}\|^2 = \digamma_{\mathrm{map}}(e)\;} .
 $$
 
-**Proof.** The quotient by the null space of the positive semidefinite form is a pre-Hilbert space, and its completion is $\mathcal{H}_\phi$. The left translation $L_x$ is isometric for the form, $\langle SL_xf, SL_xg\rangle_\phi = \langle Sf,Sg\rangle_\phi$, because $\phi$ is invariant under this substitution in its argument; hence $L_x$ descends to a unitary operator $\pi_\phi(x)$ on $\mathcal{H}_\phi$, and $\pi_\phi(xy) = \pi_\phi(x)\pi_\phi(y)$ because $L_{xy} = L_xL_y$. Continuity of $x\mapsto\pi_\phi(x)$ follows from the continuity of translation in $C_c(G)$ and the bound $\|S(L_xf) - Sf\|^2 = 2\|Sf\|^2 - 2\,\mathrm{Re}\langle S(L_xf),Sf\rangle_\phi$, whose last term is continuous in $x$. The vector $\zeta_\phi = S(u)$ for a normalised approximate identity $u$ of $L^1(G)$ is cyclic because $S(C_c(G))$ is dense, and $\langle\pi_\phi(x)\zeta_\phi,\zeta_\phi\rangle_\phi = \langle S(L_xu), S(u)\rangle_\phi\to\phi(x)$.
+**Proof.** The quotient by the null space of the positive semidefinite form is a pre-Hilbert space, and its completion is $\mathcal{H}_\digamma_{\mathrm{map}}$. The left translation $L_x$ is isometric for the form, $\langle SL_xf, SL_xg\rangle_\digamma_{\mathrm{map}} = \langle Sf,Sg\rangle_\digamma_{\mathrm{map}}$, because $\digamma_{\mathrm{map}}$ is invariant under this substitution in its argument; hence $L_x$ descends to a unitary operator $\pi_\digamma_{\mathrm{map}}(x)$ on $\mathcal{H}_\digamma_{\mathrm{map}}$, and $\pi_\digamma_{\mathrm{map}}(xy) = \pi_\digamma_{\mathrm{map}}(x)\pi_\digamma_{\mathrm{map}}(y)$ because $L_{xy} = L_xL_y$. Continuity of $x\mapsto\pi_\digamma_{\mathrm{map}}(x)$ follows from the continuity of translation in $C_c(G)$ and the bound $\|S(L_xf) - Sf\|^2 = 2\|Sf\|^2 - 2\,\mathrm{Re}\langle S(L_xf),Sf\rangle_\digamma_{\mathrm{map}}$, whose last term is continuous in $x$. The vector $\zeta_\digamma_{\mathrm{map}} = S(u)$ for a normalised approximate identity $u$ of $L^1(G)$ is cyclic because $S(C_c(G))$ is dense, and $\langle\pi_\digamma_{\mathrm{map}}(x)\zeta_\digamma_{\mathrm{map}},\zeta_\digamma_{\mathrm{map}}\rangle_\digamma_{\mathrm{map}} = \langle S(L_xu), S(u)\rangle_\digamma_{\mathrm{map}}\to\digamma_{\mathrm{map}}(x)$.
 
-**Corollary (the correspondence).** The assignment $\phi\mapsto(\pi_\phi,\zeta_\phi)$ is a bijection, up to unitary equivalence fixing the vector, between the continuous positive definite functions and the pairs $(\pi,\zeta)$ consisting of a continuous unitary representation with a cyclic vector; irreducibility of $\pi_\phi$ corresponds to $\phi$ being an extreme point of the normalised cone.
+**Corollary (the correspondence).** The assignment $\digamma_{\mathrm{map}}\mapsto(\pi_\digamma_{\mathrm{map}},\zeta_\digamma_{\mathrm{map}})$ is a bijection, up to unitary equivalence fixing the vector, between the continuous positive definite functions and the pairs $(\pi,\zeta)$ consisting of a continuous unitary representation with a cyclic vector; irreducibility of $\pi_\digamma_{\mathrm{map}}$ corresponds to $\digamma_{\mathrm{map}}$ being an extreme point of the normalised cone.
 
 **Proof.** Given a cyclic pair $(\pi,\zeta)$, the function $\langle\pi(x)\zeta,\zeta\rangle$ is positive definite by the defining sum, and the GNS construction recovers $(\pi,\zeta)$ from it; the two constructions are inverse. The irreducibility statement is the standard description of the extreme points of the state space as the pure states, whose GNS representations are irreducible.
 
@@ -77,7 +77,7 @@ $$
 
 the product over the continuous unitary representations, is injective, and the Gelfand–Raikov topology on $G$ is the original one.
 
-**Proof.** Choose a symmetric open neighbourhood $V$ of $e$ with $x\notin V^2$, and $f\in C_c(G)$ supported in $V$ with $f\geq0$ and $f(e)>0$; set $\phi = f^*\!*f$, which is positive definite by the proposition. Then $\phi(y) = \int_G \overline{f(z^{-1})}\,\Delta(z)^{-1}\,f(z^{-1}y)\,dz$, whose integrand is supported where $z\in V$ and $z^{-1}y\in V$, hence where $y = z\,(z^{-1}y)\in V^2$; so $\phi$ vanishes off $V^2$ and $\phi(x) = 0$, while $\phi(e) = \int_G |f|^2 > 0$. For the GNS pair $(\pi_\phi,\zeta_\phi)$ the matrix coefficient at $x$ is $\phi(x) = 0$, so $\langle\pi_\phi(x)\zeta_\phi,\zeta_\phi\rangle = 0\neq\|\zeta_\phi\|^2 = \phi(e)$ and $\pi_\phi(x)\neq1$. The product map is then injective because every nontrivial element is separated from the identity by some factor; continuity of $j$ is the continuity of each $\pi$, and the topology it induces on $G$ is the quotient topology of the same family, which is the original group topology.
+**Proof.** Choose a symmetric open neighbourhood $V$ of $e$ with $x\notin V^2$, and $f\in C_c(G)$ supported in $V$ with $f\geq0$ and $f(e)>0$; set $\digamma_{\mathrm{map}} = f^*\!*f$, which is positive definite by the proposition. Then $\digamma_{\mathrm{map}}(y) = \int_G \overline{f(z^{-1})}\,\Delta(z)^{-1}\,f(z^{-1}y)\,dz$, whose integrand is supported where $z\in V$ and $z^{-1}y\in V$, hence where $y = z\,(z^{-1}y)\in V^2$; so $\digamma_{\mathrm{map}}$ vanishes off $V^2$ and $\digamma_{\mathrm{map}}(x) = 0$, while $\digamma_{\mathrm{map}}(e) = \int_G |f|^2 > 0$. For the GNS pair $(\pi_\digamma_{\mathrm{map}},\zeta_\digamma_{\mathrm{map}})$ the matrix coefficient at $x$ is $\digamma_{\mathrm{map}}(x) = 0$, so $\langle\pi_\digamma_{\mathrm{map}}(x)\zeta_\digamma_{\mathrm{map}},\zeta_\digamma_{\mathrm{map}}\rangle = 0\neq\|\zeta_\digamma_{\mathrm{map}}\|^2 = \digamma_{\mathrm{map}}(e)$ and $\pi_\digamma_{\mathrm{map}}(x)\neq1$. The product map is then injective because every nontrivial element is separated from the identity by some factor; continuity of $j$ is the continuity of each $\pi$, and the topology it induces on $G$ is the quotient topology of the same family, which is the original group topology.
 
 **Corollary (the embedding in the unitaries of the group algebra).** The left regular representation already separates the points: the map
 
@@ -95,20 +95,20 @@ is a topological isomorphism of $G$ onto its image, and the image lies in the un
 
 ## Summary
 
-A continuous function $\phi$ on $G$ is positive definite when the defining finite sums are non-negative; then $\phi(x^{-1}) = \overline{\phi(x)}$, $|\phi(x)|\leq\phi(e) = \|\phi\|_\infty$, the positive definite functions form a convex cone closed under the involution $x\mapsto x^{-1}$, and $\phi$ is positive definite exactly when the functional $\omega_\phi(f) = \int f\phi$ is positive on $L^1(G)$, equivalently when the sesquilinear form $\langle Sf,Sg\rangle_\phi$ is positive semidefinite. The GNS construction gives, for each positive definite $\phi$, a unitary representation $\pi_\phi$ with cyclic vector $\zeta_\phi$ and matrix coefficient $\phi(x) = \langle\pi_\phi(x)\zeta_\phi,\zeta_\phi\rangle$, and the assignment is a bijection with the cyclic unitary representations up to equivalence; the extreme points of the normalised cone are the irreducible representations. The Gelfand–Raikov theorem, proved by convolving a bump supported in a small symmetric neighbourhood with its involution to obtain a positive definite function vanishing at a prescribed nontrivial point, shows that the continuous unitary representations separate the points of $G$, equivalently that $G$ embeds topologically into the product of the unitary groups of its representation spaces, and in operator form that $x\mapsto\lambda(x)$ is a topological isomorphism of $G$ onto a closed subgroup of the unitary group of the multiplier algebra of $C^*(G)$. In the abelian case the positive definite functions are the transforms of positive measures on the dual (Bochner). The adjoint, the Plancherel measure, the Gelfand pairs and the completeness of the dual are the neighbouring articles.
+A continuous function $\digamma_{\mathrm{map}}$ on $G$ is positive definite when the defining finite sums are non-negative; then $\digamma_{\mathrm{map}}(x^{-1}) = \overline{\digamma_{\mathrm{map}}(x)}$, $|\digamma_{\mathrm{map}}(x)|\leq\digamma_{\mathrm{map}}(e) = \|\digamma_{\mathrm{map}}\|_\infty$, the positive definite functions form a convex cone closed under the involution $x\mapsto x^{-1}$, and $\digamma_{\mathrm{map}}$ is positive definite exactly when the functional $\omega_\digamma_{\mathrm{map}}(f) = \int f\digamma_{\mathrm{map}}$ is positive on $L^1(G)$, equivalently when the sesquilinear form $\langle Sf,Sg\rangle_\digamma_{\mathrm{map}}$ is positive semidefinite. The GNS construction gives, for each positive definite $\digamma_{\mathrm{map}}$, a unitary representation $\pi_\digamma_{\mathrm{map}}$ with cyclic vector $\zeta_\digamma_{\mathrm{map}}$ and matrix coefficient $\digamma_{\mathrm{map}}(x) = \langle\pi_\digamma_{\mathrm{map}}(x)\zeta_\digamma_{\mathrm{map}},\zeta_\digamma_{\mathrm{map}}\rangle$, and the assignment is a bijection with the cyclic unitary representations up to equivalence; the extreme points of the normalised cone are the irreducible representations. The Gelfand–Raikov theorem, proved by convolving a bump supported in a small symmetric neighbourhood with its involution to obtain a positive definite function vanishing at a prescribed nontrivial point, shows that the continuous unitary representations separate the points of $G$, equivalently that $G$ embeds topologically into the product of the unitary groups of its representation spaces, and in operator form that $x\mapsto\lambda(x)$ is a topological isomorphism of $G$ onto a closed subgroup of the unitary group of the multiplier algebra of $C^*(G)$. In the abelian case the positive definite functions are the transforms of positive measures on the dual (Bochner). The adjoint, the Plancherel measure, the Gelfand pairs and the completeness of the dual are the neighbouring articles.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\phi\gg0$ | $\phi$ is continuous positive definite |
-| $\sum_{i,j}c_i\overline{c_j}\phi(x_i^{-1}x_j)\geq0$ | The defining inequality |
-| $\phi_{\mathrm{refl}}(x) = \overline{\phi(x^{-1})}$ | The involuted function, positive definite with $\phi$ |
-| $\phi(x^{-1}) = \overline{\phi(x)}$, $\|\phi\|_\infty = \phi(e)$ | The elementary properties |
-| $\omega_\phi(f) = \int_G f\phi\,dx$ | The functional, positive iff $\phi\gg0$ |
-| $\langle Sf,Sg\rangle_\phi$ | The positive semidefinite sesquilinear form |
-| $\pi_\phi$, $\zeta_\phi$ | The GNS representation and cyclic vector |
-| $\phi(x) = \langle\pi_\phi(x)\zeta_\phi,\zeta_\phi\rangle$ | Every positive definite function is a matrix coefficient |
+| $\digamma_{\mathrm{map}}\gg0$ | $\digamma_{\mathrm{map}}$ is continuous positive definite |
+| $\sum_{i,j}c_i\overline{c_j}\digamma_{\mathrm{map}}(x_i^{-1}x_j)\geq0$ | The defining inequality |
+| $\digamma_{\mathrm{map},\mathrm{refl}}(x) = \overline{\digamma_{\mathrm{map}}(x^{-1})}$ | The involuted function, positive definite with $\digamma_{\mathrm{map}}$ |
+| $\digamma_{\mathrm{map}}(x^{-1}) = \overline{\digamma_{\mathrm{map}}(x)}$, $\|\digamma_{\mathrm{map}}\|_\infty = \digamma_{\mathrm{map}}(e)$ | The elementary properties |
+| $\omega_\digamma_{\mathrm{map}}(f) = \int_G f\digamma_{\mathrm{map}}\,dx$ | The functional, positive iff $\digamma_{\mathrm{map}}\gg0$ |
+| $\langle Sf,Sg\rangle_\digamma_{\mathrm{map}}$ | The positive semidefinite sesquilinear form |
+| $\pi_\digamma_{\mathrm{map}}$, $\zeta_\digamma_{\mathrm{map}}$ | The GNS representation and cyclic vector |
+| $\digamma_{\mathrm{map}}(x) = \langle\pi_\digamma_{\mathrm{map}}(x)\zeta_\digamma_{\mathrm{map}},\zeta_\digamma_{\mathrm{map}}\rangle$ | Every positive definite function is a matrix coefficient |
 | $j(x) = (\pi(x))_\pi$ | The separating product map of Gelfand–Raikov |
 | $j_G(x) = \lambda(x)\in\mathcal{U}(M(C^*(G)))$ | The embedding in the unitaries of the group algebra |
 | $\hat\mu\gg0\iff\mu\geq0$ | Bochner's theorem, abelian case |

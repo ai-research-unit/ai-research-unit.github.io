@@ -25,7 +25,7 @@ The following elementary facts are used without further comment.
 
 **Proposition.** Let $G, H$ be topological abelian groups.
 
-**(a)** A continuous homomorphism $f : G \to H$ induces a continuous homomorphism $f^\vee : H^\vee \to G^\vee$ by $f^\vee(\psi) = \psi \circ f$, and $(\mathrm{id}_G)^\vee = \mathrm{id}_{G^\vee}$, $(g \circ f)^\vee = f^\vee \circ g^\vee$. Thus $G \mapsto G^\vee$ is a contravariant functor.
+**(a)** A continuous homomorphism $f : G \to H$ induces a continuous homomorphism $f^\vee : H^\vee \to G^\vee$ by $f^\vee(Ξ_{\mathrm{wfn}}) = Ξ_{\mathrm{wfn}} \circ f$, and $(\mathrm{id}_G)^\vee = \mathrm{id}_{G^\vee}$, $(g \circ f)^\vee = f^\vee \circ g^\vee$. Thus $G \mapsto G^\vee$ is a contravariant functor.
 
 **(b)** A character of $G$ has image in the compact group $S^1$, so its image is compact; a character is trivial on the identity component $G_0$ if and only if the image of $G$ is totally disconnected, and the dual of a connected group is torsion-free.
 

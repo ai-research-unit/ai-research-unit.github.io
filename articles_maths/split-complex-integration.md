@@ -81,7 +81,7 @@ $$
 
 **Additivity.** $\displaystyle\int_{\gamma_1 + \gamma_2} f(Q)\,dQ = \int_{\gamma_1} f(Q)\,dQ + \int_{\gamma_2} f(Q)\,dQ$.
 
-**Reparametrisation.** If $\varphi : [c,d] \to [a,b]$ is a piecewise $C^1$ bijection with $\varphi(c) = a$, $\varphi(d) = b$, then $\int_{\gamma \circ \varphi} f\,dQ = \int_\gamma f\,dQ$; if $\varphi$ reverses the endpoints, the sign changes.
+**Reparametrisation.** If $\digamma_{\mathrm{map}} : [c,d] \to [a,b]$ is a piecewise $C^1$ bijection with $\digamma_{\mathrm{map}}(c) = a$, $\digamma_{\mathrm{map}}(d) = b$, then $\int_{\gamma \circ \digamma_{\mathrm{map}}} f\,dQ = \int_\gamma f\,dQ$; if $\digamma_{\mathrm{map}}$ reverses the endpoints, the sign changes.
 
 **Estimation.** If $\|f(Q)\| \leq m$ on $\gamma^*$, then
 

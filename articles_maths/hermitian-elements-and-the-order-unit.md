@@ -39,9 +39,9 @@ $$
 
 *Proof.* $1>0$; for a Hermitian $h$ the bound $-\lVert h\rVert1\leq h\leq\lVert h\rVert1$ is the spectral bound in a $\ast$-normed algebra, so $1$ is an order unit and $\lVert h\rVert_1\leq\lVert h\rVert$; conversely the order interval estimate $-\lambda1\leq h\leq\lambda1$ gives $\lVert h\rVert\leq\lambda$ by the norm estimate on the positive cone, so $\lVert h\rVert = \lVert h\rVert_1$. The interval $[-1,1]$ is the set of Hermitian elements of norm at most one, which is the unit ball.
 
-**Proposition (the states are the unit's dual base).** The **states**, the positive functionals with $\varphi(1) = 1$, are the base of the dual cone $A_+^{*}$ at the order unit, and they separate the points of $H(A)$; the order of $H(A)$ is the order of the evaluation functionals, $h\leq k\iff\varphi(h)\leq\varphi(k)$ for every state $\varphi$.
+**Proposition (the states are the unit's dual base).** The **states**, the positive functionals with $\digamma_{\mathrm{map}}(1) = 1$, are the base of the dual cone $A_+^{*}$ at the order unit, and they separate the points of $H(A)$; the order of $H(A)$ is the order of the evaluation functionals, $h\leq k\iff\digamma_{\mathrm{map}}(h)\leq\digamma_{\mathrm{map}}(k)$ for every state $\digamma_{\mathrm{map}}$.
 
-*Proof.* The normalisation $\varphi(1) = 1$ cuts the dual cone in a base because $\varphi(1)>0$ for every nonzero positive functional in the unital case; separation and the order representation are the Hahn–Banach theorem together with the fact that a Hermitian element that is nonpositive has a state seeing it, which is a consequence of the Hahn–Banach theorem applied in the ordered space $H(A)$ with the order unit.
+*Proof.* The normalisation $\digamma_{\mathrm{map}}(1) = 1$ cuts the dual cone in a base because $\digamma_{\mathrm{map}}(1)>0$ for every nonzero positive functional in the unital case; separation and the order representation are the Hahn–Banach theorem together with the fact that a Hermitian element that is nonpositive has a state seeing it, which is a consequence of the Hahn–Banach theorem applied in the ordered space $H(A)$ with the order unit.
 
 ## The Decomposition with Respect to the Order Unit
 
@@ -92,7 +92,7 @@ The **Hermitian part** $H(A)$ of an involutive algebra is a real ordered vector 
 | $\lVert h\rVert_1 = \lVert h\rVert$ | The order-unit norm is the $\ast$-norm |
 | $\lvert h\rvert = (h^{2})^{1/2}$ | Absolute value |
 | $h = h_+ - h_-$ | Jordan decomposition, $h_+h_- = 0$ |
-| $\varphi(1) = 1$ | State, the base of the dual cone |
+| $\digamma_{\mathrm{map}}(1) = 1$ | State, the base of the dual cone |
 
 ## Further Reading
 

@@ -351,7 +351,7 @@ which is the classical Larmor frequency for a moment $\mu=ϙ\frac{h}{2\pi 2m}$ i
 
 **What this locates and what it does not derive.** It locates the coupling: the frame factor that carries the velocity also carries the magnetic moment, so a minimal substitution cannot produce two different coefficients. It does not derive the value from first principles, because the value is the statement that the two readings come from one factor, and *The Classical Origin of $g=2$ in Biquaternionic Form* carries the derivation with the expansion. What this article contributes is the reason the two cannot differ: there is one boost in the word, and both readings are functions of it.
 
-**The limit that shows it.** In the non-relativistic limit the whole of the coupling is the substitution $\vec p\mapsto\vec p-q\vec A$ and $E\mapsto E+ϙ\phi$, and the spin term appears at the same order because it comes from the same factor. A coupling that entered at a different order would have to come from a different place in the algebra, and the algebra has one place: the central imaginary bracket.
+**The limit that shows it.** In the non-relativistic limit the whole of the coupling is the substitution $\vec p\mapsto\vec p-q\vec A$ and $E\mapsto E+ϙ\xi_{\mathrm{pot}}$, and the spin term appears at the same order because it comes from the same factor. A coupling that entered at a different order would have to come from a different place in the algebra, and the algebra has one place: the central imaginary bracket.
 
 ## The Legacy Pauli Gamma Formulation
 

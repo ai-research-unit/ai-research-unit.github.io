@@ -140,7 +140,7 @@ $$
 \det:\mathrm{U}(n)\to S^{1}
 $$
 
-is a continuous surjection, and it is surjective because $\operatorname{diag}(e^{i\varphi},1,\dots,1)$ is unitary with determinant $e^{i\varphi}$. The computation confirms the modulus at $n=2,3$ and the surjectivity by the diagonal example, and it is the first sign that the unitary group is not contractible.
+is a continuous surjection, and it is surjective because $\operatorname{diag}(e^{i\digamma_{\mathrm{map}}},1,\dots,1)$ is unitary with determinant $e^{i\digamma_{\mathrm{map}}}$. The computation confirms the modulus at $n=2,3$ and the surjectivity by the diagonal example, and it is the first sign that the unitary group is not contractible.
 
 **The unitary group is not contractible.** A contractible space has trivial continuous maps into any space up to homotopy, while the determinant is a surjection onto the circle and the circle is not contractible; so
 

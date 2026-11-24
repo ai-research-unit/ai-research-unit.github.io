@@ -82,9 +82,9 @@ are inverse equivalences between the category of complex $B$-modules with a semi
 
 ### The Descent of an Automorphism and a Derivation
 
-**Proposition.** Let $\varphi$ be an automorphism of $B$ commuting with the conjugation $\sigma$, so $\varphi\sigma = \sigma\varphi$. Then $\varphi$ preserves the real form $A = B^\sigma$, its restriction $\varphi|_A$ is an automorphism of $A$, and $\varphi$ is the complexification of $\varphi|_A$. Let $D$ be a $\mathbb{C}$-linear derivation of $B$ with $D\sigma = \sigma D$; then $D$ preserves $A$, its restriction is an $\mathbb{R}$-linear derivation of $A$, and $D$ is the complexification of its restriction.
+**Proposition.** Let $\digamma_{\mathrm{map}}$ be an automorphism of $B$ commuting with the conjugation $\sigma$, so $\digamma_{\mathrm{map}}\sigma = \sigma\digamma_{\mathrm{map}}$. Then $\digamma_{\mathrm{map}}$ preserves the real form $A = B^\sigma$, its restriction $\digamma_{\mathrm{map}}|_A$ is an automorphism of $A$, and $\digamma_{\mathrm{map}}$ is the complexification of $\digamma_{\mathrm{map}}|_A$. Let $D$ be a $\mathbb{C}$-linear derivation of $B$ with $D\sigma = \sigma D$; then $D$ preserves $A$, its restriction is an $\mathbb{R}$-linear derivation of $A$, and $D$ is the complexification of its restriction.
 
-*Proof.* A $\sigma$-equivariant map preserves the fixed set, hence restricts to $A$; the maps $\varphi$ and $D$ are $\mathbb{C}$-linear, so they are determined by their restrictions to the real part $A$ of $B = A\oplus iA$, and the scalar extension of a $\mathbb{C}$-linear map is the map itself. The derivation property and the multiplicativity are inherited by the restriction.
+*Proof.* A $\sigma$-equivariant map preserves the fixed set, hence restricts to $A$; the maps $\digamma_{\mathrm{map}}$ and $D$ are $\mathbb{C}$-linear, so they are determined by their restrictions to the real part $A$ of $B = A\oplus iA$, and the scalar extension of a $\mathbb{C}$-linear map is the map itself. The derivation property and the multiplicativity are inherited by the restriction.
 
 ## Examples
 

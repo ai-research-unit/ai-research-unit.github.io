@@ -14,7 +14,7 @@ To a Lie group $G$ one associates its tangent space at the identity, $\mathrm{G}
 
 ## Smooth Manifolds (Recalled)
 
-A **smooth manifold** of dimension $n$ is a second-countable Hausdorff space $M$ with a maximal atlas of charts $\phi : \Omega \to \mathbb{R}^n$ whose transition maps are smooth; smooth maps and their derivatives $df_p : T_pM \to T_{f(p)}N$ are defined in charts. The pushforward of a vector field $X$ by a diffeomorphism $F$ is written $F_*X$.
+A **smooth manifold** of dimension $n$ is a second-countable Hausdorff space $M$ with a maximal atlas of charts $\digamma_{\mathrm{map}} : \Omega \to \mathbb{R}^n$ whose transition maps are smooth; smooth maps and their derivatives $df_p : T_pM \to T_{f(p)}N$ are defined in charts. The pushforward of a vector field $X$ by a diffeomorphism $F$ is written $F_*X$.
 
 ## Definition of a Lie Group
 
@@ -181,9 +181,9 @@ $$
 
 **(c)** The map $\exp$ is smooth with $d\exp_0 = \operatorname{id}_{\mathrm{G}}$, so by the inverse function theorem some neighborhoods $\Omega$ of $0$ and $V$ of $e$ satisfy $\exp(\Omega) = V$ diffeomorphically; thus every element near $e$ has a unique small logarithm.
 
-**(d)** For a Lie group homomorphism $\varphi : G \to H$,
+**(d)** For a Lie group homomorphism $\digamma_{\mathrm{map}} : G \to H$,
 $$
-\varphi(\exp_G X) = \exp_H(d\varphi_e X).
+\digamma_{\mathrm{map}}(\exp_G X) = \exp_H(d\digamma_{\mathrm{map},e} X).
 $$
 
 **(e)** For a matrix group, $\exp(X) = \sum_{k \geq 0} X^k/k!$, the matrix exponential.
@@ -217,25 +217,25 @@ lies in $SL_2(\mathbb{R})$ but equals no $\exp(X)$ with $X$ real. A real matrix 
 
 ## Lie Group Homomorphisms and Their Differentials
 
-A **Lie group homomorphism** is a map $\varphi : G \to H$ that is both a group homomorphism and smooth; it is an **isomorphism** if it is bijective with smooth inverse. Every continuous group homomorphism between Lie groups is automatically smooth.
+A **Lie group homomorphism** is a map $\digamma_{\mathrm{map}} : G \to H$ that is both a group homomorphism and smooth; it is an **isomorphism** if it is bijective with smooth inverse. Every continuous group homomorphism between Lie groups is automatically smooth.
 
 Its derivative at the identity,
 
 $$
-d\varphi_e : \mathrm{G} \to \mathrm{H},
+d\digamma_{\mathrm{map},e} : \mathrm{G} \to \mathrm{H},
 $$
 
 is a **Lie algebra homomorphism**:
 
 $$
-d\varphi_e([X,Y]) = [d\varphi_eX, d\varphi_eY].
+d\digamma_{\mathrm{map},e}([X,Y]) = [d\digamma_{\mathrm{map},e}X, d\digamma_{\mathrm{map},e}Y].
 $$
 
-The assignment $G \mapsto \mathrm{G}$ is functorial: $d(\psi \circ \varphi)_e = d\psi_e \circ d\varphi_e$ and $d(\operatorname{id}_G)_e = \operatorname{id}_{\mathrm{G}}$. For example, $\det$ differentiates to $\operatorname{tr}$, and the covering $SU(2) \to SO(3)$ has differential an isomorphism $\mathrm{SU}(2) \to \mathrm{SO}(3)$.
+The assignment $G \mapsto \mathrm{G}$ is functorial: $d(Ξ_{\mathrm{wfn}} \circ \digamma_{\mathrm{map}})_e = dΞ_{\mathrm{wfn},e} \circ d\digamma_{\mathrm{map},e}$ and $d(\operatorname{id}_G)_e = \operatorname{id}_{\mathrm{G}}$. For example, $\det$ differentiates to $\operatorname{tr}$, and the covering $SU(2) \to SO(3)$ has differential an isomorphism $\mathrm{SU}(2) \to \mathrm{SO}(3)$.
 
-**Integration theorem.** If $G$ is simply connected and $\phi : \mathrm{G} \to \mathrm{H}$ is a Lie algebra homomorphism, then there is a unique Lie group homomorphism $\varphi : G \to H$ with $d\varphi_e = \phi$. (This is sometimes called Lie's second theorem; the numbering of Lie's theorems varies among sources.)
+**Integration theorem.** If $G$ is simply connected and $\digamma_{\mathrm{map}} : \mathrm{G} \to \mathrm{H}$ is a Lie algebra homomorphism, then there is a unique Lie group homomorphism $\digamma_{\mathrm{map}} : G \to H$ with $d\digamma_{\mathrm{map},e} = \digamma_{\mathrm{map}}$. (This is sometimes called Lie's second theorem; the numbering of Lie's theorems varies among sources.)
 
-For a homomorphism $\varphi : G \to H$: $\operatorname{Lie}(\ker\varphi) = \ker d\varphi_e$; the image is an immersed Lie subgroup with $\operatorname{Lie}(\varphi(G)) = \operatorname{im}d\varphi_e$; if $G, H$ are connected of the same dimension and $d\varphi_e$ is an isomorphism, then $\varphi$ is a covering map, and an isomorphism if $G$ is simply connected; if $\varphi$ is surjective with $H$ connected, then $G/\ker\varphi \cong H$.
+For a homomorphism $\digamma_{\mathrm{map}} : G \to H$: $\operatorname{Lie}(\ker\digamma_{\mathrm{map}}) = \ker d\digamma_{\mathrm{map},e}$; the image is an immersed Lie subgroup with $\operatorname{Lie}(\digamma_{\mathrm{map}}(G)) = \operatorname{im}d\digamma_{\mathrm{map},e}$; if $G, H$ are connected of the same dimension and $d\digamma_{\mathrm{map},e}$ is an isomorphism, then $\digamma_{\mathrm{map}}$ is a covering map, and an isomorphism if $G$ is simply connected; if $\digamma_{\mathrm{map}}$ is surjective with $H$ connected, then $G/\ker\digamma_{\mathrm{map}} \cong H$.
 
 ## Lie Subgroups and Lie Subalgebras
 
@@ -341,7 +341,7 @@ $$
 
 The map $\pi$ is a principal $N$-bundle, and $G/N$ is connected, respectively compact, when $G$ is. More generally, for any closed subgroup $H$ the homogeneous space $G/H$ has a unique smooth structure making $\pi : G \to G/H$ a submersion, with $\dim G/H = \dim G - \dim H$; when $H$ is normal this is a Lie group. Closedness is essential: the quotient by a dense subgroup such as the irrational line of *Lie Subgroups and Lie Subalgebras* is not a manifold.
 
-**First isomorphism theorem.** For a Lie group homomorphism $\varphi : G \to H$, the kernel is a closed normal subgroup, the image is an immersed Lie subgroup, and $\varphi$ induces an isomorphism of Lie groups $G/\ker\varphi \cong \varphi(G)$.
+**First isomorphism theorem.** For a Lie group homomorphism $\digamma_{\mathrm{map}} : G \to H$, the kernel is a closed normal subgroup, the image is an immersed Lie subgroup, and $\digamma_{\mathrm{map}}$ induces an isomorphism of Lie groups $G/\ker\digamma_{\mathrm{map}} \cong \digamma_{\mathrm{map}}(G)$.
 
 Examples: $\mathbb{R}/\mathbb{Z} \cong S^1$, $\mathbb{R}^n/\mathbb{Z}^n \cong T^n$, $SU(2)/\{\pm1\} \cong SO(3) \cong \mathbb{RP}^3$, $\mathrm{U}(n)/SU(n) \cong \mathrm{U}(1)$, $GL_n(\mathbb{R})/SL_n(\mathbb{R}) \cong \mathbb{R}^\times$, and $G/[G,G]$ is the maximal abelian quotient, equal to $\mathbb{R}^2$ for the Heisenberg group.
 

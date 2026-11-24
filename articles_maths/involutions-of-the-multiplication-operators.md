@@ -66,9 +66,9 @@ and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^*\oplus\operatorname{Mult}(
 
 *Proof.* $\rho(L_a^*) = \rho(L_{\sigma(a)})$ acts by $\sigma(a)$; the compatibility with $\tau$ is $\tau(a\cdot m) = \sigma(a)\cdot\tau(m)$, which is the assumed semilinearity.
 
-**Proposition (naturality).** Let $\varphi : (A,\sigma)\to(B,\tau)$ be a $\sigma$-equivariant homomorphism of involutive commutative algebras. Then the induced map $\operatorname{Mult}(\varphi) : \operatorname{Mult}(A)\to\operatorname{Mult}(B)$, $L_a\mapsto L_{\varphi(a)}$, satisfies $\operatorname{Mult}(\varphi)(F^*) = \operatorname{Mult}(\varphi)(F)^*$.
+**Proposition (naturality).** Let $\digamma_{\mathrm{map}} : (A,\sigma)\to(B,\tau)$ be a $\sigma$-equivariant homomorphism of involutive commutative algebras. Then the induced map $\operatorname{Mult}(\digamma_{\mathrm{map}}) : \operatorname{Mult}(A)\to\operatorname{Mult}(B)$, $L_a\mapsto L_{\digamma_{\mathrm{map}}(a)}$, satisfies $\operatorname{Mult}(\digamma_{\mathrm{map}})(F^*) = \operatorname{Mult}(\digamma_{\mathrm{map}})(F)^*$.
 
-*Proof.* On the generators $L_a$: $\operatorname{Mult}(\varphi)(L_a^*) = \operatorname{Mult}(\varphi)(L_{\sigma(a)}) = L_{\varphi\sigma(a)} = L_{\tau\varphi(a)} = \operatorname{Mult}(\varphi)(L_a)^*$, and the maps are linear.
+*Proof.* On the generators $L_a$: $\operatorname{Mult}(\digamma_{\mathrm{map}})(L_a^*) = \operatorname{Mult}(\digamma_{\mathrm{map}})(L_{\sigma(a)}) = L_{\digamma_{\mathrm{map}}\sigma(a)} = L_{\tau\digamma_{\mathrm{map}}(a)} = \operatorname{Mult}(\digamma_{\mathrm{map}})(L_a)^*$, and the maps are linear.
 
 ## Examples
 

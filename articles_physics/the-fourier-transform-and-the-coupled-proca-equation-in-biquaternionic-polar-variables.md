@@ -35,7 +35,7 @@ $$
 \qquad
 \tilde U=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}\Bigr) ,
 \qquad
-\tilde u=\exp\Bigl(i\frac{\phi_{\mathrm{rot}}}{2}\hat n_{\mathrm{ax}}\Bigr) ,
+\tilde u=\exp\Bigl(i\frac{\digamma_{\mathrm{ang}}}{2}\hat n_{\mathrm{ax}}\Bigr) ,
 $$
 
 with $\varrho>0$ the scale, $\theta_{\mathrm{pha}}$ the phase, and the boost and the rotor contributing three angles each. Eight parameters for eight real components, and the parent's N-regular set is $\varrho>0$ with nothing else excluded. The parent's two exact mass-term statements are quoted:
@@ -166,7 +166,7 @@ The gauge transformation is the phase coordinate's motion, and on the symbol it 
 | --- | --- |
 | $\pi_{\imath}=h\nu_{\imath}-q A_{\imath}$ | The shifted four-momentum; the symbol's argument |
 | $\varkappa$ | The coupling |
-| $\varrho,\ \theta_{\mathrm{pha}},\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \phi_{\mathrm{rot}},\ \hat n_{\mathrm{ax}}$ | Scale, phase, rapidity, boost axis, rotor angle, rotor axis |
+| $\varrho,\ \theta_{\mathrm{pha}},\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \digamma_{\mathrm{ang}},\ \hat n_{\mathrm{ax}}$ | Scale, phase, rapidity, boost axis, rotor angle, rotor axis |
 | $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F-\pi_{\imath}\pi_{\jmath}$ | The coupled symbol; Hermitian, complex |
 | $\frac{2\pi i\varkappa}{h}F^{(\Phi)}$ | The imaginary part; the obstruction |
 | $-4\pi^{2}$ | The trace; the constraint's symbol, free of curvature |

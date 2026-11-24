@@ -19,11 +19,11 @@ $$
 Its **rank** is the dimension of its image. A rank-one idempotent has the form
 
 $$
-P=u\,\varphi,\qquad
-\varphi(u)=1,
+P=u\,\digamma_{\mathrm{map}},\qquad
+\digamma_{\mathrm{map}}(u)=1,
 $$
 
-where $u\in\mathbb{C}^4$ is a nonzero vector and $\varphi\in(\mathbb{C}^4)^*$ is a linear form with $\varphi(u)=1$. The image is the line $L=\mathbb{C}u$, and the kernel is the hyperplane $H=\ker\varphi$, which does not contain $u$.
+where $u\in\mathbb{C}^4$ is a nonzero vector and $\digamma_{\mathrm{map}}\in(\mathbb{C}^4)^*$ is a linear form with $\digamma_{\mathrm{map}}(u)=1$. The image is the line $L=\mathbb{C}u$, and the kernel is the hyperplane $H=\ker\digamma_{\mathrm{map}}$, which does not contain $u$.
 
 **The affine bundle.** The map
 
@@ -36,7 +36,7 @@ $$
 sends a rank-one idempotent to its image line. The fibre over a line $L$ is
 
 $$
-\pi^{-1}(L)=\{\varphi\in L^*:\varphi(u)=1\},
+\pi^{-1}(L)=\{\digamma_{\mathrm{map}}\in L^*:\digamma_{\mathrm{map}}(u)=1\},
 $$
 
 an affine space of dimension $3$: the linear forms on $L$ with value $1$ on $u$. The total space is an **affine bundle of rank $3$** over $\mathbb{P}^3$, of complex dimension
@@ -64,7 +64,7 @@ $$
 x_1+ax_2+bx_3+cx_4=0.
 $$
 
-The three coordinates $(a,b,c)$ are the fibre coordinates over the line $[e_1]$. The transition functions between charts are affine, because the condition $\varphi(u)=1$ is affine in the frame.
+The three coordinates $(a,b,c)$ are the fibre coordinates over the line $[e_1]$. The transition functions between charts are affine, because the condition $\digamma_{\mathrm{map}}(u)=1$ is affine in the frame.
 
 **The fibre is not a vector space.** The fibre over $L$ is an affine space, not a vector space: there is no canonical origin. The **orthogonal projection** onto $L$,
 

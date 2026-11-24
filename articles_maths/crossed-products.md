@@ -41,7 +41,7 @@ because both sides have the same multiplication on the generators. For $H$ cycli
 
 ### Graded algebras
 
-**Definition.** A **$G$-graded algebra** is an algebra $B$ together with a direct-sum decomposition $B = \bigoplus_{\sigma \in G} B_\sigma$ into linear subspaces, indexed by the group $G$, such that $B_\sigma B_\tau \subseteq B_{\sigma\tau}$. A **graded homomorphism** is an algebra homomorphism $\varphi : B \to B'$ with $\varphi(B_\sigma) \subseteq B'_\sigma$.
+**Definition.** A **$G$-graded algebra** is an algebra $B$ together with a direct-sum decomposition $B = \bigoplus_{\sigma \in G} B_\sigma$ into linear subspaces, indexed by the group $G$, such that $B_\sigma B_\tau \subseteq B_{\sigma\tau}$. A **graded homomorphism** is an algebra homomorphism $\digamma_{\mathrm{map}} : B \to B'$ with $\digamma_{\mathrm{map}}(B_\sigma) \subseteq B'_\sigma$.
 
 For a crossed product the graded pieces are the $A$-submodules $B_\sigma = A u_\sigma$, each an $(A, A)$-bimodule because $u_\sigma A u_\sigma^{-1} = \alpha_\sigma(A) = A$. The **degree-zero part** $B_1$ is always a subalgebra; in a crossed product $B_1 = A$, and each $B_\sigma$ is an invertible $(A,A)$-bimodule with inverse $B_{\sigma^{-1}}$, because $u_\sigma u_{\sigma^{-1}} = c(\sigma,\sigma^{-1})u_1$ is invertible in $A$. This is the structural reason a crossed product is determined by its degree-zero part together with the grading: the homogeneous components are the "twists" of $A$ by the automorphisms of the action.
 

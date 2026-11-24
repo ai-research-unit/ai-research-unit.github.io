@@ -44,7 +44,7 @@ $$
 X^{-1} = \varnothing \subseteq X^0 \subseteq X^1 \subseteq \cdots \subseteq X, \qquad X = \bigcup_n X^n ,
 $$
 
-such that $X^n$ is obtained from $X^{n-1}$ by attaching **equivariant $n$-cells** $G/H_\alpha\times D^n$ along equivariant attaching maps $\varphi_\alpha : G/H_\alpha\times S^{n-1}\to X^{n-1}$, and such that a subset of $X$ is closed exactly when its preimage in every cell is closed (the weak topology). The space $X^n$ is the **$n$-skeleton**, and the $G$-CW complex is **finite** when there are finitely many cells.
+such that $X^n$ is obtained from $X^{n-1}$ by attaching **equivariant $n$-cells** $G/H_\alpha\times D^n$ along equivariant attaching maps $\digamma_{\mathrm{map},\alpha} : G/H_\alpha\times S^{n-1}\to X^{n-1}$, and such that a subset of $X$ is closed exactly when its preimage in every cell is closed (the weak topology). The space $X^n$ is the **$n$-skeleton**, and the $G$-CW complex is **finite** when there are finitely many cells.
 
 Every orbit $G/H$ is a $G$-CW complex with one cell in dimension zero, and the **equivariant sphere** $S^n$ with a linear action of a finite group is a $G$-CW complex whose cells are indexed by the orbit types of the stabilisers.
 

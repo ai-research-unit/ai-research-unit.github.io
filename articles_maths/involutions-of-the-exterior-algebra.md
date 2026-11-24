@@ -9,9 +9,9 @@ The base is a field $K$ of characteristic not two and $V$ has dimension $m$; the
 
 ## Involutions and Anti-Involutions
 
-**Definition.** An **involution** of $A$ is a $K$-linear map $\varphi$ with $\varphi^2=\mathrm{id}$ and $\varphi(xy)=\varphi(x)\varphi(y)$; an **anti-involution** is a linear map $\varphi$ with $\varphi^2=\mathrm{id}$ and $\varphi(xy)=\varphi(y)\varphi(x)$. An involution or anti-involution is **graded** when it preserves the homogeneous degree and **reversing** when it sends $A^k$ to $A^{m-k}$.
+**Definition.** An **involution** of $A$ is a $K$-linear map $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}^2=\mathrm{id}$ and $\digamma_{\mathrm{map}}(xy)=\digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(y)$; an **anti-involution** is a linear map $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}^2=\mathrm{id}$ and $\digamma_{\mathrm{map}}(xy)=\digamma_{\mathrm{map}}(y)\digamma_{\mathrm{map}}(x)$. An involution or anti-involution is **graded** when it preserves the homogeneous degree and **reversing** when it sends $A^k$ to $A^{m-k}$.
 
-**Definition.** A linear map $\varphi$ is a **signed identity** when it acts on each homogeneous component by a scalar, $\varphi(x)=\epsilon_kx$ for $x\in A^k$.
+**Definition.** A linear map $\digamma_{\mathrm{map}}$ is a **signed identity** when it acts on each homogeneous component by a scalar, $\digamma_{\mathrm{map}}(x)=\epsilon_kx$ for $x\in A^k$.
 
 **Proposition.** A signed identity is an involution exactly when every $\epsilon_k=\pm1$; it is an algebra automorphism exactly when $\epsilon_k=\epsilon_1^{k}$ for all $k$, and then it is the identity if $\epsilon_1=1$ and the grade involution if $\epsilon_1=-1$.
 

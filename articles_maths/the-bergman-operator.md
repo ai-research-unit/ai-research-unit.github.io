@@ -31,9 +31,9 @@ with the inner product inherited from $L^2(\Omega)$. The **Bergman operator** is
 
 ## The Bergman Kernel and the Reproducing Property
 
-**Definition.** Let $(\varphi_j)_{j \ge 0}$ be an orthonormal basis of $A^2(\Omega)$. The **Bergman kernel** of $\Omega$ is
+**Definition.** Let $(\digamma_{\mathrm{map},j})_{j \ge 0}$ be an orthonormal basis of $A^2(\Omega)$. The **Bergman kernel** of $\Omega$ is
 $$
-K(z, w) = \sum_{j \ge 0} \varphi_j(z)\,\overline{\varphi_j(w)} .
+K(z, w) = \sum_{j \ge 0} \digamma_{\mathrm{map},j}(z)\,\overline{\digamma_{\mathrm{map},j}(w)} .
 $$
 
 **Proposition (the kernel is well defined, independent of the basis and reproducing).** The series converges absolutely and locally uniformly, the sum does not depend on the orthonormal basis, $K$ is holomorphic in $z$ and antiholomorphic in $w$, it satisfies the Hermitian symmetry $K(w, z) = \overline{K(z, w)}$, and for every $f \in A^2(\Omega)$
@@ -41,7 +41,7 @@ $$
 \boxed{\;f(z) = \langle f, K(\cdot, z)\rangle = \int_\Omega f(w)\,\overline{K(z, w)}\,dV(w)\;} .
 $$
 
-**Proof.** For fixed $z$ the functional $f \mapsto f(z)$ is continuous by the previous section, so it is represented by a unique vector $K_z \in A^2(\Omega)$ with $f(z) = \langle f, K_z\rangle$, by Riesz's theorem of *Hilbert Spaces*; expanding $K_z = \sum_j \langle K_z,\varphi_j\rangle\varphi_j$ and using $\langle K_z,\varphi_j\rangle = \overline{\varphi_j(z)}$ gives $K_z = \sum_j \overline{\varphi_j(z)}\,\varphi_j$, and $K(z,w) = \overline{K_w(z)}$ is its evaluation. The absolute and locally uniform convergence is the convergence in $A^2$ together with the continuity of the evaluations; the independence of the basis is the uniqueness of the representing vector; the symmetry is $K(w,z) = \overline{K(z,w)}$ read from the display.
+**Proof.** For fixed $z$ the functional $f \mapsto f(z)$ is continuous by the previous section, so it is represented by a unique vector $K_z \in A^2(\Omega)$ with $f(z) = \langle f, K_z\rangle$, by Riesz's theorem of *Hilbert Spaces*; expanding $K_z = \sum_j \langle K_z,\digamma_{\mathrm{map},j}\rangle\digamma_{\mathrm{map},j}$ and using $\langle K_z,\digamma_{\mathrm{map},j}\rangle = \overline{\digamma_{\mathrm{map},j}(z)}$ gives $K_z = \sum_j \overline{\digamma_{\mathrm{map},j}(z)}\,\digamma_{\mathrm{map},j}$, and $K(z,w) = \overline{K_w(z)}$ is its evaluation. The absolute and locally uniform convergence is the convergence in $A^2$ together with the continuity of the evaluations; the independence of the basis is the uniqueness of the representing vector; the symmetry is $K(w,z) = \overline{K(z,w)}$ read from the display.
 
 **Corollary (the kernel is the projection's kernel).** $P$ is the integral operator with kernel $K$,
 $$
@@ -98,7 +98,7 @@ $$
 
 ## Summary
 
-A bounded domain $\Omega \subseteq \mathbb{C}^n$ carries the Bergman space $A^2(\Omega)$ of holomorphic square-integrable functions, a closed subspace of $L^2(\Omega)$ and hence a Hilbert space, and the Bergman operator $P$ is the orthogonal projection of $L^2(\Omega)$ onto it. The projection is represented by the Bergman kernel $K(z,w) = \sum_j \varphi_j(z)\overline{\varphi_j(w)}$, holomorphic in $z$, antiholomorphic in $w$, Hermitian and positive definite, and reproducing every $f \in A^2$ by the integral against $K$; it satisfies $P^2 = P$, $P^{*} = P$, $\|P\| = 1$ and $P \ge 0$ for the chosen $L^2$ form. A biholomorphism $F : \Omega_1 \to \Omega_2$ acts by the isometry $g \mapsto (g\circ F)\det F'$, and the kernels transform by $K_{\Omega_1}(z,w) = \det F'(z)\,K_{\Omega_2}(F(z),F(w))\,\overline{\det F'(w)}$, so the holomorphic automorphisms of the domain preserve the projection up to conjugation and the Bergman metric up to holomorphic reparametrisation. The metric, the automorphism group and the Hermitian symmetric spaces are *Hermitian Symmetric Spaces and the Bergman Metric*; the involutions of the projection are *Involutions of the Bergman Operator*.
+A bounded domain $\Omega \subseteq \mathbb{C}^n$ carries the Bergman space $A^2(\Omega)$ of holomorphic square-integrable functions, a closed subspace of $L^2(\Omega)$ and hence a Hilbert space, and the Bergman operator $P$ is the orthogonal projection of $L^2(\Omega)$ onto it. The projection is represented by the Bergman kernel $K(z,w) = \sum_j \digamma_{\mathrm{map},j}(z)\overline{\digamma_{\mathrm{map},j}(w)}$, holomorphic in $z$, antiholomorphic in $w$, Hermitian and positive definite, and reproducing every $f \in A^2$ by the integral against $K$; it satisfies $P^2 = P$, $P^{*} = P$, $\|P\| = 1$ and $P \ge 0$ for the chosen $L^2$ form. A biholomorphism $F : \Omega_1 \to \Omega_2$ acts by the isometry $g \mapsto (g\circ F)\det F'$, and the kernels transform by $K_{\Omega_1}(z,w) = \det F'(z)\,K_{\Omega_2}(F(z),F(w))\,\overline{\det F'(w)}$, so the holomorphic automorphisms of the domain preserve the projection up to conjugation and the Bergman metric up to holomorphic reparametrisation. The metric, the automorphism group and the Hermitian symmetric spaces are *Hermitian Symmetric Spaces and the Bergman Metric*; the involutions of the projection are *Involutions of the Bergman Operator*.
 
 ## Summary of Notation
 
@@ -108,8 +108,8 @@ A bounded domain $\Omega \subseteq \mathbb{C}^n$ carries the Bergman space $A^2(
 | $L^2(\Omega)$ | square-integrable functions, $\langle f,g\rangle = \int_\Omega f\bar g\,dV$ |
 | $A^2(\Omega)$ | the Bergman space, the holomorphic functions in $L^2(\Omega)$ |
 | $P$ | the Bergman operator, the orthogonal projection onto $A^2(\Omega)$ |
-| $K(z,w)$ | the Bergman kernel, $\sum_j \varphi_j(z)\overline{\varphi_j(w)}$ |
-| $\varphi_j$ | an orthonormal basis of $A^2(\Omega)$ |
+| $K(z,w)$ | the Bergman kernel, $\sum_j \digamma_{\mathrm{map},j}(z)\overline{\digamma_{\mathrm{map},j}(w)}$ |
+| $\digamma_{\mathrm{map},j}$ | an orthonormal basis of $A^2(\Omega)$ |
 | $U_F$ | the isometry $g \mapsto (g\circ F)\det F'$ of a biholomorphism |
 | $\det F'$ | the Jacobian determinant of a biholomorphism |
 

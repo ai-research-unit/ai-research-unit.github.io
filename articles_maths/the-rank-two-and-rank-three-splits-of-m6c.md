@@ -217,7 +217,7 @@ $$
 
 as a bimodule. The corner $FME$ is the dual bimodule.
 
-**Proof.** The left action is $A\cdot M=A_{11}M$ and the right action is $M\cdot B=MB_{22}$; the map $u\otimes\varphi\mapsto u\varphi$ intertwines them. The dimensions are $p(6-p)$ on both sides.
+**Proof.** The left action is $A\cdot M=A_{11}M$ and the right action is $M\cdot B=MB_{22}$; the map $u\otimes\digamma_{\mathrm{map}}\mapsto u\digamma_{\mathrm{map}}$ intertwines them. The dimensions are $p(6-p)$ on both sides.
 
 **Corollary (the mass-squared operator).** The product $MN\in EME$ is the **mass-squared operator** of the mass block, and $NM\in FMF$ is its partner. For the rank-two split it is a $2\times2$ matrix; for the rank-three split it is a $3\times3$ matrix.
 

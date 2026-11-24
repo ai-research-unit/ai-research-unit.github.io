@@ -62,7 +62,7 @@ the second with the convention that $H^n(G_K,A)$ is the direct limit $\varinjlim
 
 ### Functoriality
 
-**Proposition.** Galois cohomology is a functor in both variables. A homomorphism of coefficient groups $\varphi : A \to A'$ compatible with the actions induces $H^n(G,A) \to H^n(G,A')$; an inclusion of Galois groups $H \subseteq G = \operatorname{gal}(L/K)$ with $H = \operatorname{gal}(L/M)$, $M/K$ Galois, gives the **restriction** map
+**Proposition.** Galois cohomology is a functor in both variables. A homomorphism of coefficient groups $\digamma_{\mathrm{map}} : A \to A'$ compatible with the actions induces $H^n(G,A) \to H^n(G,A')$; an inclusion of Galois groups $H \subseteq G = \operatorname{gal}(L/K)$ with $H = \operatorname{gal}(L/M)$, $M/K$ Galois, gives the **restriction** map
 
 $$
 \operatorname{res} : H^n(G,A) \to H^n(H,A),

@@ -60,7 +60,7 @@ $$
 
 ## Automorphisms
 
-**Definition.** An automorphism of $M_4(\mathbb{C})$ is an invertible linear map $\varphi$ with $\varphi(AB)=\varphi(A)\varphi(B)$ for all $A,B$.
+**Definition.** An automorphism of $M_4(\mathbb{C})$ is an invertible linear map $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(AB)=\digamma_{\mathrm{map}}(A)\digamma_{\mathrm{map}}(B)$ for all $A,B$.
 
 **Proposition.** For every $U\in GL_4(\mathbb{C})$ the map $\operatorname{Inn}_U(A)=UAU^{-1}$ is an automorphism, and $\operatorname{Inn}_U=\operatorname{Inn}_V$ exactly when $V=\lambda U$ for some $\lambda\in\mathbb{C}^{\times}$.
 
@@ -74,7 +74,7 @@ $$
 
 of dimension $15$. In particular there is no outer automorphism.
 
-**Proof.** The theorem is the case $n=4$ of the Skolem–Noether theorem: every isomorphism of central simple algebras is conjugation by an invertible element. The elementary proof uses the module: an automorphism $\varphi$ makes $\mathbb{C}^{4}$ into a second module for $M_4$ by $A\cdot v=\varphi(A)v$, and the two modules are isomorphic because $M_4$ has a unique irreducible module up to isomorphism; an intertwiner $U$ satisfies $\varphi(A)U=UA$, that is, $\varphi(A)=UAU^{-1}$.
+**Proof.** The theorem is the case $n=4$ of the Skolem–Noether theorem: every isomorphism of central simple algebras is conjugation by an invertible element. The elementary proof uses the module: an automorphism $\digamma_{\mathrm{map}}$ makes $\mathbb{C}^{4}$ into a second module for $M_4$ by $A\cdot v=\digamma_{\mathrm{map}}(A)v$, and the two modules are isomorphic because $M_4$ has a unique irreducible module up to isomorphism; an intertwiner $U$ satisfies $\digamma_{\mathrm{map}}(A)U=UA$, that is, $\digamma_{\mathrm{map}}(A)=UAU^{-1}$.
 
 **The centre.** The scalar matrices act trivially, so the automorphism group is the quotient $PGL_4$, not $GL_4$. The determinant of $A$ is preserved by every inner automorphism, but the group is not reduced to $SL_4$: conjugation by $U$ and by $\lambda U$ agree for every $\lambda\ne0$, and the correct statement is $PGL_4\cong SL_4/\mu_4$, where $\mu_4$ is the group of fourth roots of unity acting by scalars.
 
@@ -82,7 +82,7 @@ of dimension $15$. In particular there is no outer automorphism.
 
 ## The $*$-Structures
 
-**Definition.** A $*$-derivation is a derivation $D$ with $D(A^{*})=D(A)^{*}$ for all $A$. A $*$-automorphism is an automorphism $\varphi$ with $\varphi(A^{*})=\varphi(A)^{*}$.
+**Definition.** A $*$-derivation is a derivation $D$ with $D(A^{*})=D(A)^{*}$ for all $A$. A $*$-automorphism is an automorphism $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(A^{*})=\digamma_{\mathrm{map}}(A)^{*}$.
 
 **Proposition.** A derivation $\operatorname{ad}_X$ is a $*$-derivation exactly when $X$ is anti-Hermitian, $X^{*}=-X$. The $*$-derivations form the real Lie algebra $\mathfrak{u}(4)$ modulo its centre, isomorphic to $\mathfrak{su}(4)$, of real dimension $15$.
 
@@ -108,23 +108,23 @@ The group of $*$-automorphisms is therefore $PU(4)=U(4)/U(1)$, of real dimension
 
 ## The Antilinear Automorphisms
 
-**Definition.** A **complex-antilinear automorphism** is a bijective map $\varphi$ with
+**Definition.** A **complex-antilinear automorphism** is a bijective map $\digamma_{\mathrm{map}}$ with
 
 $$
-\varphi(A+B)=\varphi(A)+\varphi(B),\qquad
-\varphi(\lambda A)=\bar\lambda\,\varphi(A),\qquad
-\varphi(AB)=\varphi(A)\varphi(B).
+\digamma_{\mathrm{map}}(A+B)=\digamma_{\mathrm{map}}(A)+\digamma_{\mathrm{map}}(B),\qquad
+\digamma_{\mathrm{map}}(\lambda A)=\bar\lambda\,\digamma_{\mathrm{map}}(A),\qquad
+\digamma_{\mathrm{map}}(AB)=\digamma_{\mathrm{map}}(A)\digamma_{\mathrm{map}}(B).
 $$
 
 **Proposition.** Every antilinear automorphism is of the form
 
 $$
-\varphi(A)=U\bar A U^{-1}
+\digamma_{\mathrm{map}}(A)=U\bar A U^{-1}
 $$
 
 for some $U\in GL_4(\mathbb{C})$, and two matrices $U,V$ give the same map exactly when $V=\lambda U$ with $\lambda\in\mathbb{C}^{\times}$.
 
-**Proof.** Composing $\varphi$ with the conjugation $\bar A$ gives a complex-linear automorphism $A\mapsto \varphi(\bar A)$, which is inner by Skolem–Noether: $\varphi(\bar A)=UAU^{-1}$, hence $\varphi(A)=U\bar A U^{-1}$. The ambiguity is the scalar, as for the linear case.
+**Proof.** Composing $\digamma_{\mathrm{map}}$ with the conjugation $\bar A$ gives a complex-linear automorphism $A\mapsto \digamma_{\mathrm{map}}(\bar A)$, which is inner by Skolem–Noether: $\digamma_{\mathrm{map}}(\bar A)=UAU^{-1}$, hence $\digamma_{\mathrm{map}}(A)=U\bar A U^{-1}$. The ambiguity is the scalar, as for the linear case.
 
 **The group.** The antilinear automorphisms form the coset $PGL_4\cdot\bar{\phantom{A}}$, and
 
@@ -134,7 +134,7 @@ $$
 
 where the nontrivial element acts by $\bar{\phantom{A}}$. The subgroup of complex-linear automorphisms has index two, and the coset is the set of antilinear ones.
 
-**The real forms again.** An antilinear automorphism of order two is a **real structure** on the algebra; its fixed algebra is a real form. The two possibilities, $\varphi^{2}=\mathrm{id}$ and $\varphi^{2}$ an inner automorphism of order two, correspond to the real and quaternionic structures. The classification is *The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$*; the point here is that the antilinear automorphisms are a single coset, and the real forms are the fixed algebras of its involutions.
+**The real forms again.** An antilinear automorphism of order two is a **real structure** on the algebra; its fixed algebra is a real form. The two possibilities, $\digamma_{\mathrm{map}}^{2}=\mathrm{id}$ and $\digamma_{\mathrm{map}}^{2}$ an inner automorphism of order two, correspond to the real and quaternionic structures. The classification is *The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$*; the point here is that the antilinear automorphisms are a single coset, and the real forms are the fixed algebras of its involutions.
 
 ## The Biquaternion Comparison
 

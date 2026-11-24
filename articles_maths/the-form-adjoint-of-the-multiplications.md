@@ -36,7 +36,7 @@ $$
 \boxed{\;\mathrm{Sd}_{x}^{*} = \mathrm{Sd}_{x^{*}}\;} ,
 $$
 
-the adjoint of the two-sided operator by $x$ being the two-sided operator by $x^{*}$, for a **cyclic** functional $\varphi = h(\cdot,1)$, in particular for the trace form; when $x$ is self-adjoint the two-sided operator is a self-adjoint operator in the sense of *Self-Adjoint and Anti-Self-Adjoint Operators of a Form*.
+the adjoint of the two-sided operator by $x$ being the two-sided operator by $x^{*}$, for a **cyclic** functional $\digamma_{\mathrm{map}} = h(\cdot,1)$, in particular for the trace form; when $x$ is self-adjoint the two-sided operator is a self-adjoint operator in the sense of *Self-Adjoint and Anti-Self-Adjoint Operators of a Form*.
 
 **Proof.**
 

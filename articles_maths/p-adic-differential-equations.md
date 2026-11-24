@@ -93,11 +93,11 @@ The Bézout property is what makes the Robba ring the correct analogue of a prin
 
 ### The Frobenius and the Structure of $\mathcal{R}$
 
-**Theorem.** The substitution $x \mapsto x^p$ defines an injective endomorphism $\varphi$ of $\mathcal{R}$ whose image is the subring $\mathcal{R}^{p}$ of series in $x^p$, and $\mathcal{R}$ is a finite free module over $\varphi(\mathcal{R})$ of rank $p$. The endomorphism $\varphi$ is a **Frobenius**, and the pair $(\mathcal{R},\varphi)$ is an example of a Frobenius ring in the sense of the theory of $\varphi$-modules.
+**Theorem.** The substitution $x \mapsto x^p$ defines an injective endomorphism $\digamma_{\mathrm{map}}$ of $\mathcal{R}$ whose image is the subring $\mathcal{R}^{p}$ of series in $x^p$, and $\mathcal{R}$ is a finite free module over $\digamma_{\mathrm{map}}(\mathcal{R})$ of rank $p$. The endomorphism $\digamma_{\mathrm{map}}$ is a **Frobenius**, and the pair $(\mathcal{R},\digamma_{\mathrm{map}})$ is an example of a Frobenius ring in the sense of the theory of $\digamma_{\mathrm{map}}$-modules.
 
 **Proof.** The substitution is a ring homomorphism because it is induced by the map on the coefficient field; it is injective because a nonzero Laurent series has a nonzero image. A basis of $\mathcal{R}$ over its image is $1, x, \dots, x^{p-1}$, since every Laurent series is uniquely $\sum_{j=0}^{p-1} x^j f_j(x^p)$ with $f_j \in \mathcal{R}$; the convergence of the rearranged series is the non-Archimedean grouping criterion.
 
-The Frobenius is the structure that links the differential theory to the arithmetic of the field of norms and to the theory of $\varphi$-modules and $(\varphi,\Gamma)$-modules; those applications belong to the arithmetic part of the corpus, and the analytic content used here is only the fact that the Frobenius makes $\mathcal{R}$ a finite module over its image.
+The Frobenius is the structure that links the differential theory to the arithmetic of the field of norms and to the theory of $\digamma_{\mathrm{map}}$-modules and $(\digamma_{\mathrm{map}},\Gamma)$-modules; those applications belong to the arithmetic part of the corpus, and the analytic content used here is only the fact that the Frobenius makes $\mathcal{R}$ a finite module over its image.
 
 ## The Dwork–Robba Decomposition
 
@@ -181,7 +181,7 @@ The Robba ring, the union over $r>0$ of the rings of Laurent series converging o
 | $\nabla$ | Connection of a differential module |
 | $y' = Ay$ | Linear differential system, $A \in M_n$ |
 | $Y$, $F$, $x^B$ | Fundamental solution, Fuchsian factor, formal power of $x$ |
-| $\varphi : x \mapsto x^p$ | Frobenius endomorphism of $\mathcal{R}$ |
+| $\digamma_{\mathrm{map}} : x \mapsto x^p$ | Frobenius endomorphism of $\mathcal{R}$ |
 | slope, isoclinic | Slope of a differential module, and its isoclinic pieces |
 | $M_{>0}$, $M_{\leq 0}$ | Positive-slope part and nonpositive-slope part |
 | solvable at $1$ | All slopes $\geq 0$ |

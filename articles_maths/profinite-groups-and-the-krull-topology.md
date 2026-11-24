@@ -13,17 +13,17 @@ The article develops the inverse limit and its topology, the dictionary of open 
 
 ### Definition and Universal Property
 
-**Definition.** An **inverse system of finite groups** consists of a directed set $I$, a finite group $G_i$ for each $i \in I$, and a homomorphism $\varphi_{ij} : G_j \to G_i$ for each $i \leq j$, such that $\varphi_{ii} = \mathrm{id}$ and $\varphi_{ij} \circ \varphi_{jk} = \varphi_{ik}$ for $i \leq j \leq k$. Its **inverse limit** is
+**Definition.** An **inverse system of finite groups** consists of a directed set $I$, a finite group $G_i$ for each $i \in I$, and a homomorphism $\digamma_{\mathrm{map},ij} : G_j \to G_i$ for each $i \leq j$, such that $\digamma_{\mathrm{map},ii} = \mathrm{id}$ and $\digamma_{\mathrm{map},ij} \circ \digamma_{\mathrm{map},jk} = \digamma_{\mathrm{map},ik}$ for $i \leq j \leq k$. Its **inverse limit** is
 
 $$
-\varprojlim_i G_i = \Bigl\{(g_i) \in \prod_i G_i : \varphi_{ij}(g_j) = g_i \text{ for all } i \leq j\Bigr\},
+\varprojlim_i G_i = \Bigl\{(g_i) \in \prod_i G_i : \digamma_{\mathrm{map},ij}(g_j) = g_i \text{ for all } i \leq j\Bigr\},
 $$
 
 with the subspace topology inherited from the product of the discrete topologies, and with the group structure of the product.
 
-**Proposition (universal property).** The projections $\pi_i : \varprojlim_j G_j \to G_i$ are continuous homomorphisms satisfying $\varphi_{ij}\pi_j = \pi_i$, and if $H$ is a topological group with compatible continuous homomorphisms $\psi_i : H \to G_i$, then there is a unique continuous homomorphism $\psi : H \to \varprojlim_i G_i$ with $\pi_i \psi = \psi_i$. The inverse limit is therefore the limit of the system in the category of topological groups.
+**Proposition (universal property).** The projections $\pi_i : \varprojlim_j G_j \to G_i$ are continuous homomorphisms satisfying $\digamma_{\mathrm{map},ij}\pi_j = \pi_i$, and if $H$ is a topological group with compatible continuous homomorphisms $Ξ_{\mathrm{wfn},i} : H \to G_i$, then there is a unique continuous homomorphism $Ξ_{\mathrm{wfn}} : H \to \varprojlim_i G_i$ with $\pi_i Ξ_{\mathrm{wfn}} = Ξ_{\mathrm{wfn},i}$. The inverse limit is therefore the limit of the system in the category of topological groups.
 
-**Proof.** The subset defined by the compatible families is a subgroup and is closed, being the intersection of the closed conditions $\varphi_{ij}\pi_j = \pi_i$. The map $\psi$ is given by $\psi(h) = (\psi_i(h))_i$; it is a homomorphism, and it is continuous because each coordinate is. Uniqueness is clear.
+**Proof.** The subset defined by the compatible families is a subgroup and is closed, being the intersection of the closed conditions $\digamma_{\mathrm{map},ij}\pi_j = \pi_i$. The map $Ξ_{\mathrm{wfn}}$ is given by $Ξ_{\mathrm{wfn}}(h) = (Ξ_{\mathrm{wfn},i}(h))_i$; it is a homomorphism, and it is continuous because each coordinate is. Uniqueness is clear.
 
 **Theorem.** A group $G$ is profinite — isomorphic as a topological group to the inverse limit of an inverse system of finite groups — if and only if $G$ is a compact Hausdorff totally disconnected topological group.
 
@@ -212,7 +212,7 @@ The Krull topology on a Galois group is the inverse-limit topology over the fini
 | Symbol | Meaning |
 |---|---|
 | $\varprojlim_i G_i$ | Inverse limit of an inverse system of groups |
-| $\varphi_{ij} : G_j \to G_i$ | Bonding maps of the system |
+| $\digamma_{\mathrm{map},ij} : G_j \to G_i$ | Bonding maps of the system |
 | profinite | Inverse limit of finite groups; compact Hausdorff totally disconnected |
 | $N \trianglelefteq_o G$ | Open (hence finite-index) normal subgroup |
 | $G/N$ | Finite quotient, discrete |

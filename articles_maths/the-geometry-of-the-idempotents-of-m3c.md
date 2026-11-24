@@ -85,13 +85,13 @@ sends an idempotent to its image line. The fibre over a line $L$ is the set of i
 
 **Proof.** Fix a line $L$. A complement $W$ to $L$ is the graph of a linear map $L\to\mathbb{C}^{3}/L$; the set of such graphs is an affine space modelled on $\operatorname{Hom}(L,\mathbb{C}^{3}/L)\cong\mathbb{C}^{2}$. The identification depends on the choice of a base complement, so the bundle is affine and not a vector bundle. The total space has dimension $2+2=4$.
 
-**Explicit coordinates.** Choose a vector $u$ spanning $L$ and a linear functional $\varphi$ with $\varphi(u)=1$. The idempotent is
+**Explicit coordinates.** Choose a vector $u$ spanning $L$ and a linear functional $\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(u)=1$. The idempotent is
 
 $$
-E=u\varphi,
+E=u\digamma_{\mathrm{map}},
 $$
 
-and the kernel is $\ker\varphi$, a complement of $L$. The pair $(u,\varphi)$ is determined by $E$ up to the scaling $(u,\varphi)\mapsto(\lambda u,\lambda^{-1}\varphi)$, so the fibre has the two parameters of $\varphi$ modulo the normalisation $\varphi(u)=1$, which is the affine space $\mathbb{C}^{2}$.
+and the kernel is $\ker\digamma_{\mathrm{map}}$, a complement of $L$. The pair $(u,\digamma_{\mathrm{map}})$ is determined by $E$ up to the scaling $(u,\digamma_{\mathrm{map}})\mapsto(\lambda u,\lambda^{-1}\digamma_{\mathrm{map}})$, so the fibre has the two parameters of $\digamma_{\mathrm{map}}$ modulo the normalisation $\digamma_{\mathrm{map}}(u)=1$, which is the affine space $\mathbb{C}^{2}$.
 
 **The rank-two case.** For $p=2$, the map $E\mapsto\ker E$ sends a rank-two idempotent to a line, and the fibre is again an affine space of dimension $2$; via $E\mapsto I-E$ this is the rank-one picture with image and kernel exchanged.
 
@@ -100,12 +100,12 @@ and the kernel is $\ker\varphi$, a complement of $L$. The pair $(u,\varphi)$ is 
 $$
 u=\begin{pmatrix}1\\1\\0\end{pmatrix},
 \qquad
-\varphi=\begin{pmatrix}1&0&0\end{pmatrix},
+\digamma_{\mathrm{map}}=\begin{pmatrix}1&0&0\end{pmatrix},
 \qquad
-E=u\varphi=\begin{pmatrix}1&0&0\\1&0&0\\0&0&0\end{pmatrix}.
+E=u\digamma_{\mathrm{map}}=\begin{pmatrix}1&0&0\\1&0&0\\0&0&0\end{pmatrix}.
 $$
 
-Then $E^{2}=E$, $\operatorname{im}E=\mathbb{C}u$, and $\ker E=\ker\varphi=\{x:x_1=0\}=\operatorname{span}(e_2,e_3)$, a complement of the line $\mathbb{C}u$. The rank is $1$, the trace is $1$, and the point of $\mathbb{P}^{2}$ is $[1:1:0]$. The fibre coordinate is the functional $\varphi$ restricted to the quotient, with the normalisation $\varphi(u)=1$.
+Then $E^{2}=E$, $\operatorname{im}E=\mathbb{C}u$, and $\ker E=\ker\digamma_{\mathrm{map}}=\{x:x_1=0\}=\operatorname{span}(e_2,e_3)$, a complement of the line $\mathbb{C}u$. The rank is $1$, the trace is $1$, and the point of $\mathbb{P}^{2}$ is $[1:1:0]$. The fibre coordinate is the functional $\digamma_{\mathrm{map}}$ restricted to the quotient, with the normalisation $\digamma_{\mathrm{map}}(u)=1$.
 
 **The zero and the identity.** The idempotents of rank $0$ and $3$ are isolated: the zero matrix and the identity. The variety of all idempotents has four connected components. The rank-one and rank-two varieties are connected, and the zero and identity are points, so the total has four connected components, of dimensions $0,4,4,0$.
 

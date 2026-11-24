@@ -76,40 +76,40 @@ Let $\Lambda^2 V$ be the second exterior power of $V$, the quotient of $V \otime
 **Theorem.** Let $B$ be a symmetric bilinear form on $V$. There is a well-defined $F$-linear map
 
 $$
-\boxed{\;\varphi : \Lambda^2 V \longrightarrow \operatorname{End}(V), \qquad \varphi(u \wedge v)(x) = B(v, x)\,u - B(u, x)\,v\;},
+\boxed{\;\digamma_{\mathrm{map}} : \Lambda^2 V \longrightarrow \operatorname{End}(V), \qquad \digamma_{\mathrm{map}}(u \wedge v)(x) = B(v, x)\,u - B(u, x)\,v\;},
 $$
 
-and its image lies in $\mathrm{SO}(V, B)$. When $B$ is non-degenerate, $\varphi$ is an isomorphism of vector spaces onto $\mathrm{SO}(V, B)$.
+and its image lies in $\mathrm{SO}(V, B)$. When $B$ is non-degenerate, $\digamma_{\mathrm{map}}$ is an isomorphism of vector spaces onto $\mathrm{SO}(V, B)$.
 
-**Proof.** The right-hand side is alternating in $u, v$, because swapping $u$ and $v$ negates it; by the universal property of $\Lambda^2 V$ it therefore descends to a well-defined linear map, which we still call $\varphi$. For antisymmetry, compute
-
-$$
-B\bigl(\varphi(u \wedge v)x, y\bigr) = B(v, x)B(u, y) - B(u, x)B(v, y),
-$$
+**Proof.** The right-hand side is alternating in $u, v$, because swapping $u$ and $v$ negates it; by the universal property of $\Lambda^2 V$ it therefore descends to a well-defined linear map, which we still call $\digamma_{\mathrm{map}}$. For antisymmetry, compute
 
 $$
-B\bigl(x, \varphi(u \wedge v)y\bigr) = B(v, y)B(u, x) - B(u, y)B(v, x),
+B\bigl(\digamma_{\mathrm{map}}(u \wedge v)x, y\bigr) = B(v, x)B(u, y) - B(u, x)B(v, y),
 $$
 
-and the two expressions sum to $0$. So $\varphi$ maps into $\mathrm{SO}(V, B)$. If $B$ is non-degenerate, the identification $V \to V^*$, $u \mapsto B(u, -)$, gives $\Lambda^2 V \cong V \otimes V^* \cong \operatorname{End}(V)$ after antisymmetrisation, and this is precisely $\varphi$; both sides have dimension $\binom{n}{2}$ over a field, so $\varphi$ is an isomorphism.
+$$
+B\bigl(x, \digamma_{\mathrm{map}}(u \wedge v)y\bigr) = B(v, y)B(u, x) - B(u, y)B(v, x),
+$$
+
+and the two expressions sum to $0$. So $\digamma_{\mathrm{map}}$ maps into $\mathrm{SO}(V, B)$. If $B$ is non-degenerate, the identification $V \to V^*$, $u \mapsto B(u, -)$, gives $\Lambda^2 V \cong V \otimes V^* \cong \operatorname{End}(V)$ after antisymmetrisation, and this is precisely $\digamma_{\mathrm{map}}$; both sides have dimension $\binom{n}{2}$ over a field, so $\digamma_{\mathrm{map}}$ is an isomorphism.
 
 The isomorphism depends on $B$: a different non-degenerate form gives a different identification of $\Lambda^2 V$ with $\mathrm{SO}(V, B)$. It is the algebraic statement that **bivectors are infinitesimal rotations**.
 
 ### The Bracket as a Commutator of Bivectors
 
-Transporting the commutator along $\varphi$ makes $\Lambda^2 V$ a Lie algebra.
+Transporting the commutator along $\digamma_{\mathrm{map}}$ makes $\Lambda^2 V$ a Lie algebra.
 
 **Definition.** The **bivector bracket** on $\Lambda^2 V$ is
 
 $$
-[X, Y] = \varphi^{-1}\bigl([\varphi X, \varphi Y]\bigr),
+[X, Y] = \digamma_{\mathrm{map}}^{-1}\bigl([\digamma_{\mathrm{map}} X, \digamma_{\mathrm{map}} Y]\bigr),
 $$
 
-where the bracket on the right is the commutator of endomorphisms. With this bracket and the identification $\varphi$, the space of bivectors $\Lambda^2 V$ is a Lie algebra isomorphic to $\mathrm{SO}(V, B)$.
+where the bracket on the right is the commutator of endomorphisms. With this bracket and the identification $\digamma_{\mathrm{map}}$, the space of bivectors $\Lambda^2 V$ is a Lie algebra isomorphic to $\mathrm{SO}(V, B)$.
 
-**Example (the plane).** For $V = F^2$ with the standard form, $\Lambda^2 V$ is one-dimensional, spanned by $e_1 \wedge e_2$, and $\varphi(e_1 \wedge e_2) = -J$; the bracket is zero because $\mathrm{SO}(2)$ is abelian.
+**Example (the plane).** For $V = F^2$ with the standard form, $\Lambda^2 V$ is one-dimensional, spanned by $e_1 \wedge e_2$, and $\digamma_{\mathrm{map}}(e_1 \wedge e_2) = -J$; the bracket is zero because $\mathrm{SO}(2)$ is abelian.
 
-**Example (space).** For $V = F^3$ with the standard form, the bivectors $e_2 \wedge e_3$, $e_3 \wedge e_1$, $e_1 \wedge e_2$ are a basis, and $\varphi$ sends them to $-L_1, -L_2, -L_3$; the bracket of the generators $L_1, L_2, L_3$ is
+**Example (space).** For $V = F^3$ with the standard form, the bivectors $e_2 \wedge e_3$, $e_3 \wedge e_1$, $e_1 \wedge e_2$ are a basis, and $\digamma_{\mathrm{map}}$ sends them to $-L_1, -L_2, -L_3$; the bracket of the generators $L_1, L_2, L_3$ is
 
 $$
 [L_1, L_2] = L_3, \qquad [L_2, L_3] = L_1, \qquad [L_3, L_1] = L_2,
@@ -142,7 +142,7 @@ using that $I + A$ and $(I - A)^{-1}$ commute because both are polynomials in $A
 Assume $F = \mathbb{R}$ and $q$ definite, so that $\mathrm{SO}(V, \mathfrak{Q})$ is the definite orthogonal Lie algebra. Choose an orthonormal basis and pair the coordinates $(e_1, e_2), (e_3, e_4), \ldots$; let $\mathrm{H}$ be the space spanned by the block generators
 
 $$
-H_k = \varphi(e_{2k-1} \wedge e_{2k}),
+H_k = \digamma_{\mathrm{map}}(e_{2k-1} \wedge e_{2k}),
 $$
 
 each of which rotates the corresponding coordinate plane and annihilates the rest. Then $\mathrm{H}$ is a **Cartan subalgebra**: it is abelian, and it is maximal among the abelian subalgebras consisting of semisimple elements. Its dimension is
@@ -263,7 +263,7 @@ so the complexification is $\mathrm{SL}(2, \mathbb{C}) \oplus \mathrm{SL}(2, \ma
 
 The **orthogonal Lie algebra** $\mathrm{SO}(V, \mathfrak{Q})$ of a non-degenerate quadratic space is the space of **antisymmetric** maps $A$ with $B(Au, v) + B(u, Av) = 0$, equivalently $M^T G + GM = 0$ in a basis, and it is a Lie subalgebra of $\mathrm{GL}(V)$ under the commutator. It is free of rank $\binom{n}{2}$ when $V$ is free of rank $n$ and $B$ is non-degenerate; for $q = 0$ it degenerates to $\mathrm{GL}(V)$, so non-degeneracy is essential.
 
-For any symmetric $B$ the formula $\varphi(u \wedge v)(x) = B(v, x)u - B(u, x)v$ gives a linear map $\Lambda^2 V \to \mathrm{SO}(V, B)$ which is an isomorphism when $B$ is non-degenerate. Transporting the commutator makes the **bivectors** $\Lambda^2 V$ a Lie algebra isomorphic to $\mathrm{SO}(V, B)$; the bracket of bivectors is their commutator as endomorphisms, and in dimension three it is the vector product.
+For any symmetric $B$ the formula $\digamma_{\mathrm{map}}(u \wedge v)(x) = B(v, x)u - B(u, x)v$ gives a linear map $\Lambda^2 V \to \mathrm{SO}(V, B)$ which is an isomorphism when $B$ is non-degenerate. Transporting the commutator makes the **bivectors** $\Lambda^2 V$ a Lie algebra isomorphic to $\mathrm{SO}(V, B)$; the bracket of bivectors is their commutator as endomorphisms, and in dimension three it is the vector product.
 
 The **Cayley transform** $C(A) = (I + A)(I - A)^{-1}$ is the rational passage from the anti-self-adjoint maps to the rotations that avoid the eigenvalue $1$; the exponential map, which needs the series and its convergence, is Part III's. The algebra has dimension $\binom{n}{2}$ and rank $\lfloor n/2\rfloor$, a Cartan subalgebra being spanned by the block generators of the coordinate planes; the **split and definite forms** $\mathrm{SO}(p, r)$ have a common complexification $\mathrm{SO}(n, \mathbb{C})$ and differ as real forms. In low dimensions $\mathrm{SO}(2)$ is one-dimensional abelian, $\mathrm{SO}(3) \cong \mathbb{R}^3$ with the vector product as bracket, and $\mathrm{SO}(3, 1) \cong \mathrm{SO}(1, 3) \cong \mathrm{SL}(2, \mathbb{C})$ as real Lie algebras, the two signatures being the same up to the order of the signs.
 
@@ -293,7 +293,7 @@ and $\kappa$ is negative definite because $\operatorname{tr}(X^2) = -\sum_{ij}X_
 | $\mathrm{SL}(2, \mathbb{C})$ | Lie algebra of traceless $2 \times 2$ complex matrices |
 | $\mathrm{SU}(2)$ | Lie algebra of traceless anti-Hermitian $2 \times 2$ matrices |
 | $\Lambda^2 V$ | Second exterior power, the bivectors |
-| $\varphi$ | Isomorphism $\Lambda^2 V \to \mathrm{SO}(V, B)$ |
+| $\digamma_{\mathrm{map}}$ | Isomorphism $\Lambda^2 V \to \mathrm{SO}(V, B)$ |
 | $J$, $L_i$, $H_k$ | Generators of anti-self-adjoint maps |
 | $E_{ij} = e_ie_j^{T} - e_je_i^{T}$ | Standard basis of $\mathrm{SO}(n)$ |
 | $\kappa(X, Y)$ | Killing form $\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$ |

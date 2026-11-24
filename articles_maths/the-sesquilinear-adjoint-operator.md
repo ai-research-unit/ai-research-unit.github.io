@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The module of a sesqualgebra carries a pairing twisted by the base involution, $\varphi(x,y)=\tau(xy^{*})$, linear in its first variable and $\varsigma$-semilinear in its second, and an operator takes its adjoint against that pairing. This article develops the adjoint. The **conjugate transpose** $T^{\dagger}$ of a linear operator is defined by $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$, and the assignment $T\mapsto T^{\dagger}$ is a $\varsigma$-semilinear anti-automorphism of order two of the endomorphism algebra, not an $R$-linear one, because the pairing carries the twist in its second slot. For a conjugate-linear operator the twisted rule is the one that is available: over a ring without zero divisors the linear rule has no solution at all, and the adjoint is defined by the twisted rule $\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)$, under which the parity is preserved: the adjoint of a conjugate-linear operator is again conjugate-linear. The two adjoints that such an operator admits — the adjoint against $\varphi$ and the adjoint against the transposed pairing $\varphi^{t}(x,y)=\varphi(y,x)$ — coincide for the pairing of this article, one of the consequences of its sesqui-symmetry.
+The module of a sesqualgebra carries a pairing twisted by the base involution, $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$, linear in its first variable and $\varsigma$-semilinear in its second, and an operator takes its adjoint against that pairing. This article develops the adjoint. The **conjugate transpose** $T^{\dagger}$ of a linear operator is defined by $\digamma_{\mathrm{map}}(Tx,y)=\digamma_{\mathrm{map}}(x,T^{\dagger}y)$, and the assignment $T\mapsto T^{\dagger}$ is a $\varsigma$-semilinear anti-automorphism of order two of the endomorphism algebra, not an $R$-linear one, because the pairing carries the twist in its second slot. For a conjugate-linear operator the twisted rule is the one that is available: over a ring without zero divisors the linear rule has no solution at all, and the adjoint is defined by the twisted rule $\digamma_{\mathrm{map}}(Sx,y)=\varsigma\bigl(\digamma_{\mathrm{map}}(x,S^{\dagger}y)\bigr)$, under which the parity is preserved: the adjoint of a conjugate-linear operator is again conjugate-linear. The two adjoints that such an operator admits — the adjoint against $\digamma_{\mathrm{map}}$ and the adjoint against the transposed pairing $\digamma_{\mathrm{map}}^{t}(x,y)=\digamma_{\mathrm{map}}(y,x)$ — coincide for the pairing of this article, one of the consequences of its sesqui-symmetry.
 
 The subject is the operator theory of the sesqualgebras, in the group *Operator Theory*. The pairing, its two parities and the conjugate dual are *The Sesquilinear Product* and *Conjugate-Linear Maps and the Conjugate Dual*; the bilinear counterpart, where the pairing is $\tau(xy)$ and the twist is carried by the conjugation $T^{*_\varsigma}=\sigma T^{*}\sigma$ of the adjoint operation, is *The Adjoint in an Involutive Algebra*; the adjoints of the individual operators are *The Adjoint of the Sesquilinear Two-Sided Operator*, *The Adjoint of the Conjugate Left Multiplication* and *The Adjoint of the Ternary Product*, named as the owners and not computed here; and the algebra that the adjoint puts on the endomorphism module is *The Sesquilinear Structure of the Endomorphism Algebra*.
 
-Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is an associative unital $R$-algebra with a $\varsigma$-semilinear involution $*$, the sesquilinear product is the derived operation $x\star y=xy^{*}$, and $\tau : A\to R$ is an $R$-linear functional, central, $\tau(uv)=\tau(vu)$, and compatible with the involution, $\tau(u^{*})=\varsigma(\tau(u))$. Juxtaposition denotes the associative product. The **sesquilinear pairing** is $\varphi(x,y)=\tau(xy^{*})$, and it is **perfect**: the map $z\mapsto\Phi(z)=\varphi(\,\cdot\,,z)$ is a bijection $A\to A^{*}$. The unitary elements and the inner $*$-automorphisms are *Invertibles and the Unitary Elements*; the Hermitian and the anti-Hermitian elements are *Hermitian and Anti-Hermitian Elements*.
+Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is an associative unital $R$-algebra with a $\varsigma$-semilinear involution $*$, the sesquilinear product is the derived operation $x\star y=xy^{*}$, and $\tau : A\to R$ is an $R$-linear functional, central, $\tau(uv)=\tau(vu)$, and compatible with the involution, $\tau(u^{*})=\varsigma(\tau(u))$. Juxtaposition denotes the associative product. The **sesquilinear pairing** is $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$, and it is **perfect**: the map $z\mapsto\Phi(z)=\digamma_{\mathrm{map}}(\,\cdot\,,z)$ is a bijection $A\to A^{*}$. The unitary elements and the inner $*$-automorphisms are *Invertibles and the Unitary Elements*; the Hermitian and the anti-Hermitian elements are *Hermitian and Anti-Hermitian Elements*.
 
 ## The Pairing
 
@@ -15,48 +15,48 @@ Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of 
 **Definition.** The **sesquilinear pairing** attached to the trace $\tau$ is
 
 $$
-\varphi(x,y)=\tau(xy^{*}) .
+\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*}) .
 $$
 
 **Proposition (the parities and the symmetry).** For all $x,y\in A$ and all $\lambda\in R$,
 
 $$
-\varphi(\lambda x,y)=\lambda\,\varphi(x,y), \qquad \varphi(x,\lambda y)=\varsigma(\lambda)\,\varphi(x,y),
+\digamma_{\mathrm{map}}(\lambda x,y)=\lambda\,\digamma_{\mathrm{map}}(x,y), \qquad \digamma_{\mathrm{map}}(x,\lambda y)=\varsigma(\lambda)\,\digamma_{\mathrm{map}}(x,y),
 $$
 
-so $\varphi$ is $R$-linear in its first variable and $\varsigma$-semilinear in its second; and
+so $\digamma_{\mathrm{map}}$ is $R$-linear in its first variable and $\varsigma$-semilinear in its second; and
 
 $$
-\varphi(y,x)=\varsigma\bigl(\varphi(x,y)\bigr) .
+\digamma_{\mathrm{map}}(y,x)=\varsigma\bigl(\digamma_{\mathrm{map}}(x,y)\bigr) .
 $$
 
-**Proof.** The first identity is the $R$-linearity of $\tau$. For the second, $\varphi(x,\lambda y)=\tau\bigl(x(\lambda y)^{*}\bigr)=\tau\bigl(x\,\varsigma(\lambda)\,y^{*}\bigr)=\varsigma(\lambda)\,\tau(xy^{*})$, by the $\varsigma$-semilinearity of $*$ and the $R$-linearity of $\tau$. For the symmetry, $(xy^{*})^{*}=yx^{*}$ together with the compatibility of $\tau$ with $*$ gives $\varphi(y,x)=\tau(yx^{*})=\tau\bigl((xy^{*})^{*}\bigr)=\varsigma\bigl(\tau(xy^{*})\bigr)=\varsigma\bigl(\varphi(x,y)\bigr)$.
+**Proof.** The first identity is the $R$-linearity of $\tau$. For the second, $\digamma_{\mathrm{map}}(x,\lambda y)=\tau\bigl(x(\lambda y)^{*}\bigr)=\tau\bigl(x\,\varsigma(\lambda)\,y^{*}\bigr)=\varsigma(\lambda)\,\tau(xy^{*})$, by the $\varsigma$-semilinearity of $*$ and the $R$-linearity of $\tau$. For the symmetry, $(xy^{*})^{*}=yx^{*}$ together with the compatibility of $\tau$ with $*$ gives $\digamma_{\mathrm{map}}(y,x)=\tau(yx^{*})=\tau\bigl((xy^{*})^{*}\bigr)=\varsigma\bigl(\tau(xy^{*})\bigr)=\varsigma\bigl(\digamma_{\mathrm{map}}(x,y)\bigr)$.
 
-**Remark.** The two identities are the definition of sesquilinearity, and $\varphi(y,x)=\varsigma(\varphi(x,y))$ is the form that symmetry takes over a twisted base: it is the natural substitute for symmetry and it reduces to $\varphi(y,x)=\varphi(x,y)$ at $\varsigma=\mathrm{id}$. The pairing is perfect, by the standing hypothesis.
+**Remark.** The two identities are the definition of sesquilinearity, and $\digamma_{\mathrm{map}}(y,x)=\varsigma(\digamma_{\mathrm{map}}(x,y))$ is the form that symmetry takes over a twisted base: it is the natural substitute for symmetry and it reduces to $\digamma_{\mathrm{map}}(y,x)=\digamma_{\mathrm{map}}(x,y)$ at $\varsigma=\mathrm{id}$. The pairing is perfect, by the standing hypothesis.
 
 **Example (the coefficient pairing).** For $A=M_{n}(\mathbb{C})$ with the conjugation $\varsigma$, the trace $\tau$ and the conjugate transpose,
 
 $$
-\varphi(X,Y)=\operatorname{tr}(XY^{*})=\sum_{i,j}X_{ij}\,\overline{Y_{ij}},
+\digamma_{\mathrm{map}}(X,Y)=\operatorname{tr}(XY^{*})=\sum_{i,j}X_{ij}\,\overline{Y_{ij}},
 $$
 
 the pairing of the coefficient matrices; it is perfect, because every $\mathbb{C}$-linear functional on $M_{n}(\mathbb{C})$ is $X\mapsto\operatorname{tr}(XW)$ for a unique $W$.
 
-**Example (the quaternions).** For $A=\mathbb{H}$ over $R=\mathbb{R}$ with $\varsigma=\mathrm{id}$, the quaternion conjugation $*$ and $\tau$ the real part, $\varphi(u,v)=\operatorname{Re}(u\overline{v})$ is the dot pairing; it is symmetric in the ordinary sense and perfect.
+**Example (the quaternions).** For $A=\mathbb{H}$ over $R=\mathbb{R}$ with $\varsigma=\mathrm{id}$, the quaternion conjugation $*$ and $\tau$ the real part, $\digamma_{\mathrm{map}}(u,v)=\operatorname{Re}(u\overline{v})$ is the dot pairing; it is symmetric in the ordinary sense and perfect.
 
 ### The Transposed Pairing
 
-**Definition.** The **transposed pairing** is $\varphi^{t}(x,y)=\varphi(y,x)$.
+**Definition.** The **transposed pairing** is $\digamma_{\mathrm{map}}^{t}(x,y)=\digamma_{\mathrm{map}}(y,x)$.
 
-**Proposition.** $\varphi^{t}$ is $\varsigma$-semilinear in its first variable and $R$-linear in its second, it is sesqui-symmetric, $(\varphi^{t})^{t}=\varphi$, and
+**Proposition.** $\digamma_{\mathrm{map}}^{t}$ is $\varsigma$-semilinear in its first variable and $R$-linear in its second, it is sesqui-symmetric, $(\digamma_{\mathrm{map}}^{t})^{t}=\digamma_{\mathrm{map}}$, and
 
 $$
-\varphi^{t}(x,y)=\varsigma\bigl(\varphi(x,y)\bigr) .
+\digamma_{\mathrm{map}}^{t}(x,y)=\varsigma\bigl(\digamma_{\mathrm{map}}(x,y)\bigr) .
 $$
 
-**Proof.** The parities are $\varphi^{t}(\lambda x,y)=\varphi(y,\lambda x)=\varsigma(\lambda)\varphi(y,x)=\varsigma(\lambda)\varphi^{t}(x,y)$ and $\varphi^{t}(x,\lambda y)=\varphi(\lambda y,x)=\lambda\varphi(y,x)=\lambda\varphi^{t}(x,y)$; the display is the symmetry of the preceding section, and the two clauses together give $(\varphi^{t})^{t}=\varphi$.
+**Proof.** The parities are $\digamma_{\mathrm{map}}^{t}(\lambda x,y)=\digamma_{\mathrm{map}}(y,\lambda x)=\varsigma(\lambda)\digamma_{\mathrm{map}}(y,x)=\varsigma(\lambda)\digamma_{\mathrm{map}}^{t}(x,y)$ and $\digamma_{\mathrm{map}}^{t}(x,\lambda y)=\digamma_{\mathrm{map}}(\lambda y,x)=\lambda\digamma_{\mathrm{map}}(y,x)=\lambda\digamma_{\mathrm{map}}^{t}(x,y)$; the display is the symmetry of the preceding section, and the two clauses together give $(\digamma_{\mathrm{map}}^{t})^{t}=\digamma_{\mathrm{map}}$.
 
-**Remark.** The two pairings carry the same information and are adapted to the two slots: $\varphi$ receives a linear operator on its left and a conjugate-linear one on its right, and $\varphi^{t}$ the other way round. This is the pair of pairings against which the adjoint is taken, and it is the source of the two adjoints of a conjugate-linear operator.
+**Remark.** The two pairings carry the same information and are adapted to the two slots: $\digamma_{\mathrm{map}}$ receives a linear operator on its left and a conjugate-linear one on its right, and $\digamma_{\mathrm{map}}^{t}$ the other way round. This is the pair of pairings against which the adjoint is taken, and it is the source of the two adjoints of a conjugate-linear operator.
 
 ## The Conjugate Transpose
 
@@ -65,7 +65,7 @@ $$
 **Definition.** Let $T$ be an $R$-linear operator on $A$. The **adjoint** of $T$ is the operator $T^{\dagger}$ with
 
 $$
-\varphi(Tx,y)=\varphi(x,T^{\dagger}y) \qquad \text{for all } x,y\in A .
+\digamma_{\mathrm{map}}(Tx,y)=\digamma_{\mathrm{map}}(x,T^{\dagger}y) \qquad \text{for all } x,y\in A .
 $$
 
 **Theorem (existence, uniqueness and the laws).** Every $R$-linear $T$ has exactly one adjoint, $T^{\dagger}$ is $R$-linear, and for $R$-linear $S,T$ and $\lambda\in R$,
@@ -74,7 +74,7 @@ $$
 \boxed{\;(S+T)^{\dagger}=S^{\dagger}+T^{\dagger}, \qquad (\lambda T)^{\dagger}=\varsigma(\lambda)\,T^{\dagger}, \qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger}, \qquad (T^{\dagger})^{\dagger}=T, \qquad \mathrm{id}^{\dagger}=\mathrm{id}\;} .
 $$
 
-**Proof.** For fixed $y$ the map $x\mapsto\varphi(Tx,y)$ is $R$-linear, because $T$ is linear and $\varphi$ is linear in its first variable; by the perfection of the pairing it is $x\mapsto\varphi(x,z)$ for a unique $z$, and $T^{\dagger}y=z$ defines the adjoint, so it exists and is unique. It is $R$-linear because $\varphi\bigl(x,T^{\dagger}(\lambda y)\bigr)=\varphi(Tx,\lambda y)=\varsigma(\lambda)\varphi(Tx,y)=\varsigma(\lambda)\varphi(x,T^{\dagger}y)=\varphi\bigl(x,\lambda T^{\dagger}y\bigr)$, which gives $T^{\dagger}(\lambda y)=\lambda T^{\dagger}y$. The first law is the additivity of $\varphi$ in the slot that carries the operator; the second is $\varphi\bigl((\lambda T)x,y\bigr)=\lambda\varphi(Tx,y)=\lambda\varphi(x,T^{\dagger}y)=\varphi\bigl(x,\varsigma(\lambda)T^{\dagger}y\bigr)$, the last step using the semilinearity of the pairing in its second slot; the composite law is $\varphi(STx,y)=\varphi(Tx,S^{\dagger}y)=\varphi(x,T^{\dagger}S^{\dagger}y)$, the order of the factors being reversed by the two applications of the definition; and the law of order two is the definition read with the two arguments exchanged: from $\varphi(Ty,x)=\varphi(y,T^{\dagger}x)$ and the sesqui-symmetry of $\varphi$ the two sides give $\varsigma\bigl(\varphi(x,Ty)\bigr)=\varsigma\bigl(\varphi(T^{\dagger}x,y)\bigr)$, that is $\varphi(x,Ty)=\varphi(T^{\dagger}x,y)$, which identifies $(T^{\dagger})^{\dagger}$ with $T$. For $\mathrm{id}$ there is nothing to prove.
+**Proof.** For fixed $y$ the map $x\mapsto\digamma_{\mathrm{map}}(Tx,y)$ is $R$-linear, because $T$ is linear and $\digamma_{\mathrm{map}}$ is linear in its first variable; by the perfection of the pairing it is $x\mapsto\digamma_{\mathrm{map}}(x,z)$ for a unique $z$, and $T^{\dagger}y=z$ defines the adjoint, so it exists and is unique. It is $R$-linear because $\digamma_{\mathrm{map}}\bigl(x,T^{\dagger}(\lambda y)\bigr)=\digamma_{\mathrm{map}}(Tx,\lambda y)=\varsigma(\lambda)\digamma_{\mathrm{map}}(Tx,y)=\varsigma(\lambda)\digamma_{\mathrm{map}}(x,T^{\dagger}y)=\digamma_{\mathrm{map}}\bigl(x,\lambda T^{\dagger}y\bigr)$, which gives $T^{\dagger}(\lambda y)=\lambda T^{\dagger}y$. The first law is the additivity of $\digamma_{\mathrm{map}}$ in the slot that carries the operator; the second is $\digamma_{\mathrm{map}}\bigl((\lambda T)x,y\bigr)=\lambda\digamma_{\mathrm{map}}(Tx,y)=\lambda\digamma_{\mathrm{map}}(x,T^{\dagger}y)=\digamma_{\mathrm{map}}\bigl(x,\varsigma(\lambda)T^{\dagger}y\bigr)$, the last step using the semilinearity of the pairing in its second slot; the composite law is $\digamma_{\mathrm{map}}(STx,y)=\digamma_{\mathrm{map}}(Tx,S^{\dagger}y)=\digamma_{\mathrm{map}}(x,T^{\dagger}S^{\dagger}y)$, the order of the factors being reversed by the two applications of the definition; and the law of order two is the definition read with the two arguments exchanged: from $\digamma_{\mathrm{map}}(Ty,x)=\digamma_{\mathrm{map}}(y,T^{\dagger}x)$ and the sesqui-symmetry of $\digamma_{\mathrm{map}}$ the two sides give $\varsigma\bigl(\digamma_{\mathrm{map}}(x,Ty)\bigr)=\varsigma\bigl(\digamma_{\mathrm{map}}(T^{\dagger}x,y)\bigr)$, that is $\digamma_{\mathrm{map}}(x,Ty)=\digamma_{\mathrm{map}}(T^{\dagger}x,y)$, which identifies $(T^{\dagger})^{\dagger}$ with $T$. For $\mathrm{id}$ there is nothing to prove.
 
 **Theorem (the twisted anti-automorphism).** The assignment $T\mapsto T^{\dagger}$ is an anti-automorphism of order two of the algebra $\operatorname{End}_{R}(A)$ that is $\varsigma$-semilinear,
 
@@ -92,7 +92,7 @@ $$
 
 In particular the right multiplication $R_{b}(x)=xb^{*}$ has $R_{b}^{\dagger}=R_{b^{*}}$.
 
-**Proof.** $\varphi(L_{p}R_{q}x,y)=\tau(pxqy^{*})$, while $\varphi(x,L_{p^{*}}R_{q^{*}}y)=\tau\bigl(x(p^{*}yq^{*})^{*}\bigr)=\tau(xqy^{*}p)=\tau(pxqy^{*})$, by the anti-multiplicativity of $*$ and the centrality of $\tau$. The particular case is $R_{b}=L_{1}R_{b^{*}}$, and the formula gives $R_{b}^{\dagger}=L_{1}R_{b}=R_{b^{*}}$, since $R_{b^{*}}x=x(b^{*})^{*}=xb$.
+**Proof.** $\digamma_{\mathrm{map}}(L_{p}R_{q}x,y)=\tau(pxqy^{*})$, while $\digamma_{\mathrm{map}}(x,L_{p^{*}}R_{q^{*}}y)=\tau\bigl(x(p^{*}yq^{*})^{*}\bigr)=\tau(xqy^{*}p)=\tau(pxqy^{*})$, by the anti-multiplicativity of $*$ and the centrality of $\tau$. The particular case is $R_{b}=L_{1}R_{b^{*}}$, and the formula gives $R_{b}^{\dagger}=L_{1}R_{b}=R_{b^{*}}$, since $R_{b^{*}}x=x(b^{*})^{*}=xb$.
 
 ### The Comparison with the Bilinear Case
 
@@ -105,10 +105,10 @@ In particular the right multiplication $R_{b}(x)=xb^{*}$ has $R_{b}^{\dagger}=R_
 **Proposition (no linear adjoint for a conjugate-linear operator).** Let $\varsigma\neq\mathrm{id}$, let $R$ have no zero divisors, and let $S$ be a nonzero $\varsigma$-semilinear operator on $A$. Then there is no operator $U$ with
 
 $$
-\varphi(Sx,y)=\varphi(x,Uy)\qquad\text{for all }x,y\in A .
+\digamma_{\mathrm{map}}(Sx,y)=\digamma_{\mathrm{map}}(x,Uy)\qquad\text{for all }x,y\in A .
 $$
 
-**Proof.** Suppose there is one. Replacing $x$ by $\lambda x$, the left-hand side becomes $\varphi\bigl(S(\lambda x),y\bigr)=\varphi\bigl(\varsigma(\lambda)Sx,y\bigr)=\varsigma(\lambda)\varphi(Sx,y)$, and the right-hand side becomes $\varphi(\lambda x,Uy)=\lambda\varphi(x,Uy)$. The two are equal for every $\lambda$, $x$ and $y$, so $\bigl(\varsigma(\lambda)-\lambda\bigr)\varphi(Sx,y)=0$. Choosing $\lambda$ with $\varsigma(\lambda)\neq\lambda$, a non-zero-divisor by the hypothesis on $R$, gives $\varphi(Sx,y)=0$ for all $x$ and $y$; since $S\neq0$ there is $x$ with $Sx\neq0$, and the nondegeneracy of the pairing gives $y$ with $\varphi(Sx,y)\neq0$, a contradiction.
+**Proof.** Suppose there is one. Replacing $x$ by $\lambda x$, the left-hand side becomes $\digamma_{\mathrm{map}}\bigl(S(\lambda x),y\bigr)=\digamma_{\mathrm{map}}\bigl(\varsigma(\lambda)Sx,y\bigr)=\varsigma(\lambda)\digamma_{\mathrm{map}}(Sx,y)$, and the right-hand side becomes $\digamma_{\mathrm{map}}(\lambda x,Uy)=\lambda\digamma_{\mathrm{map}}(x,Uy)$. The two are equal for every $\lambda$, $x$ and $y$, so $\bigl(\varsigma(\lambda)-\lambda\bigr)\digamma_{\mathrm{map}}(Sx,y)=0$. Choosing $\lambda$ with $\varsigma(\lambda)\neq\lambda$, a non-zero-divisor by the hypothesis on $R$, gives $\digamma_{\mathrm{map}}(Sx,y)=0$ for all $x$ and $y$; since $S\neq0$ there is $x$ with $Sx\neq0$, and the nondegeneracy of the pairing gives $y$ with $\digamma_{\mathrm{map}}(Sx,y)\neq0$, a contradiction.
 
 **Remark (the hypothesis is not idle).** The step that cancels $\varsigma(\lambda)-\lambda$ needs it, and without it the proposition fails. For $R=\mathbb{Q}[\varepsilon]/(\varepsilon^{2})$ with $\varsigma(\varepsilon)=-\varepsilon$, $A=M_{2}(R)$ with the involution $X^{*}=\varsigma(X)^{t}$ and $\tau$ the trace, the pairing is perfect and the operator $S=L_{a}$ with $a=\varepsilon E_{11}$ has the $R$-linear adjoint $U(Y)=-\varepsilon Y^{t}E_{11}$ beside its twisted adjoint $\mathcal{T}_{1,a}$: there $\varsigma(\lambda)-\lambda$ is $0$ or a zero divisor for every $\lambda$, so it annihilates the image of $S$ and the argument has nothing to cancel. Over a field, and more generally over a domain, the proposition stands as stated.
 
@@ -119,7 +119,7 @@ $$
 **Definition.** Let $S$ be a $\varsigma$-semilinear operator on $A$. The **adjoint** of $S$ is the operator $S^{\dagger}$ with
 
 $$
-\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)\qquad\text{for all }x,y\in A .
+\digamma_{\mathrm{map}}(Sx,y)=\varsigma\bigl(\digamma_{\mathrm{map}}(x,S^{\dagger}y)\bigr)\qquad\text{for all }x,y\in A .
 $$
 
 **Theorem (existence and parity preservation).** Every $\varsigma$-semilinear $S$ has exactly one adjoint; $S^{\dagger}$ is $\varsigma$-semilinear, so the adjoint operation preserves the parity; and for $\varsigma$-semilinear $S,U$, $R$-linear $T$ and $\lambda\in R$,
@@ -128,7 +128,7 @@ $$
 \boxed{\;(S+U)^{\dagger}=S^{\dagger}+U^{\dagger}, \quad (\lambda S)^{\dagger}=\lambda S^{\dagger}, \quad (TS)^{\dagger}=S^{\dagger}T^{\dagger}, \quad (ST)^{\dagger}=T^{\dagger}S^{\dagger}, \quad (SU)^{\dagger}=U^{\dagger}S^{\dagger}, \quad (S^{\dagger})^{\dagger}=S\;} .
 $$
 
-**Proof.** For fixed $y$ the map $x\mapsto\varsigma\bigl(\varphi(Sx,y)\bigr)$ is $R$-linear, since $\varphi\bigl(S(\lambda x),y\bigr)=\varsigma(\lambda)\varphi(Sx,y)$ and $\varsigma^{2}=\mathrm{id}$; by perfection it is $x\mapsto\varphi(x,z)$ for a unique $z$, and $S^{\dagger}y=z$, which gives existence and uniqueness. The parity is $\varphi\bigl(x,S^{\dagger}(\lambda y)\bigr)=\varsigma\bigl(\varphi(Sx,\lambda y)\bigr)=\varsigma\bigl(\varsigma(\lambda)\varphi(Sx,y)\bigr)=\lambda\,\varsigma\bigl(\varphi(Sx,y)\bigr)=\lambda\varphi(x,S^{\dagger}y)$, so $S^{\dagger}(\lambda y)=\varsigma(\lambda)S^{\dagger}y$: the identity just written is $\Phi\bigl(S^{\dagger}(\lambda y)\bigr)=\lambda\Phi(S^{\dagger}y)$, and $\Phi\bigl(\varsigma(\lambda)S^{\dagger}y\bigr)=\lambda\Phi(S^{\dagger}y)$ as well, the pairing reading a scalar in its second slot through $\varsigma$, so the injectivity of $\Phi$ gives the law. The adjoint of a conjugate-linear operator is conjugate-linear. The additive law is the additivity of $\varphi$ in its first slot, and the scalar law is $\varphi\bigl((\lambda S)x,y\bigr)=\lambda\varphi(Sx,y)=\lambda\,\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)=\varsigma\bigl(\varphi(x,\lambda S^{\dagger}y)\bigr)$, so that $(\lambda S)^{\dagger}=\lambda S^{\dagger}$. For the composites, each carries as many twists as it has conjugate-linear factors and the twists cancel in pairs: for instance $\varphi\bigl((SU)x,y\bigr)=\varsigma\bigl(\varphi(Ux,S^{\dagger}y)\bigr)=\varsigma\bigl(\varsigma\bigl(\varphi(x,U^{\dagger}S^{\dagger}y)\bigr)\bigr)=\varphi(x,U^{\dagger}S^{\dagger}y)$, the two steps being the defining relations of $S^{\dagger}$ and $U^{\dagger}$, so that $SU$, being $R$-linear, has $U^{\dagger}S^{\dagger}$ as its adjoint; the mixed composites are the same computation with one twist surviving, which is the twisted rule they obey; and the law of order two is the definition read backwards with the sesqui-symmetry of the pairing.
+**Proof.** For fixed $y$ the map $x\mapsto\varsigma\bigl(\digamma_{\mathrm{map}}(Sx,y)\bigr)$ is $R$-linear, since $\digamma_{\mathrm{map}}\bigl(S(\lambda x),y\bigr)=\varsigma(\lambda)\digamma_{\mathrm{map}}(Sx,y)$ and $\varsigma^{2}=\mathrm{id}$; by perfection it is $x\mapsto\digamma_{\mathrm{map}}(x,z)$ for a unique $z$, and $S^{\dagger}y=z$, which gives existence and uniqueness. The parity is $\digamma_{\mathrm{map}}\bigl(x,S^{\dagger}(\lambda y)\bigr)=\varsigma\bigl(\digamma_{\mathrm{map}}(Sx,\lambda y)\bigr)=\varsigma\bigl(\varsigma(\lambda)\digamma_{\mathrm{map}}(Sx,y)\bigr)=\lambda\,\varsigma\bigl(\digamma_{\mathrm{map}}(Sx,y)\bigr)=\lambda\digamma_{\mathrm{map}}(x,S^{\dagger}y)$, so $S^{\dagger}(\lambda y)=\varsigma(\lambda)S^{\dagger}y$: the identity just written is $\Phi\bigl(S^{\dagger}(\lambda y)\bigr)=\lambda\Phi(S^{\dagger}y)$, and $\Phi\bigl(\varsigma(\lambda)S^{\dagger}y\bigr)=\lambda\Phi(S^{\dagger}y)$ as well, the pairing reading a scalar in its second slot through $\varsigma$, so the injectivity of $\Phi$ gives the law. The adjoint of a conjugate-linear operator is conjugate-linear. The additive law is the additivity of $\digamma_{\mathrm{map}}$ in its first slot, and the scalar law is $\digamma_{\mathrm{map}}\bigl((\lambda S)x,y\bigr)=\lambda\digamma_{\mathrm{map}}(Sx,y)=\lambda\,\varsigma\bigl(\digamma_{\mathrm{map}}(x,S^{\dagger}y)\bigr)=\varsigma\bigl(\digamma_{\mathrm{map}}(x,\lambda S^{\dagger}y)\bigr)$, so that $(\lambda S)^{\dagger}=\lambda S^{\dagger}$. For the composites, each carries as many twists as it has conjugate-linear factors and the twists cancel in pairs: for instance $\digamma_{\mathrm{map}}\bigl((SU)x,y\bigr)=\varsigma\bigl(\digamma_{\mathrm{map}}(Ux,S^{\dagger}y)\bigr)=\varsigma\bigl(\varsigma\bigl(\digamma_{\mathrm{map}}(x,U^{\dagger}S^{\dagger}y)\bigr)\bigr)=\digamma_{\mathrm{map}}(x,U^{\dagger}S^{\dagger}y)$, the two steps being the defining relations of $S^{\dagger}$ and $U^{\dagger}$, so that $SU$, being $R$-linear, has $U^{\dagger}S^{\dagger}$ as its adjoint; the mixed composites are the same computation with one twist surviving, which is the twisted rule they obey; and the law of order two is the definition read backwards with the sesqui-symmetry of the pairing.
 
 **Remark (the two scalar laws).** The adjoint operation is $\varsigma$-semilinear on the linear operators and $R$-linear on the conjugate-linear ones: $(\lambda T)^{\dagger}=\varsigma(\lambda)T^{\dagger}$ against $(\lambda S)^{\dagger}=\lambda S^{\dagger}$. The reason is that the twisted rule of a conjugate-linear operator carries a $\varsigma$ that cancels the $\varsigma$ with which the pairing reads a scalar in its second slot, while the rule of a linear operator carries none and that $\varsigma$ survives. The operation therefore preserves the parity, but twists the scalars on one of the two homogeneous components of the module of all operators and not on the other.
 
@@ -138,27 +138,27 @@ $$
 \mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}, \qquad \left(*\right)^{\dagger}=* .
 $$
 
-**Proof.** For the two-sided operator, $\varsigma\bigl(\varphi(x,\mathcal{T}_{b,a}y)\bigr)=\varsigma\bigl(\tau\bigl(x(by^{*}a)^{*}\bigr)\bigr)=\varsigma\bigl(\tau(xa^{*}yb^{*})\bigr)=\tau\bigl((xa^{*}yb^{*})^{*}\bigr)=\tau(by^{*}ax^{*})=\tau(ax^{*}by^{*})=\varphi(\mathcal{T}_{a,b}x,y)$, using the anti-multiplicativity of $*$ and the centrality of $\tau$. For the involution, $\left(*\right)^{\dagger}=*$ is $\varsigma\bigl(\varphi(x,y^{*})\bigr)=\varsigma\bigl(\tau(xy)\bigr)=\tau\bigl((xy)^{*}\bigr)=\tau(y^{*}x^{*})=\tau(x^{*}y^{*})=\varphi(x^{*},y)$.
+**Proof.** For the two-sided operator, $\varsigma\bigl(\digamma_{\mathrm{map}}(x,\mathcal{T}_{b,a}y)\bigr)=\varsigma\bigl(\tau\bigl(x(by^{*}a)^{*}\bigr)\bigr)=\varsigma\bigl(\tau(xa^{*}yb^{*})\bigr)=\tau\bigl((xa^{*}yb^{*})^{*}\bigr)=\tau(by^{*}ax^{*})=\tau(ax^{*}by^{*})=\digamma_{\mathrm{map}}(\mathcal{T}_{a,b}x,y)$, using the anti-multiplicativity of $*$ and the centrality of $\tau$. For the involution, $\left(*\right)^{\dagger}=*$ is $\varsigma\bigl(\digamma_{\mathrm{map}}(x,y^{*})\bigr)=\varsigma\bigl(\tau(xy)\bigr)=\tau\bigl((xy)^{*}\bigr)=\tau(y^{*}x^{*})=\tau(x^{*}y^{*})=\digamma_{\mathrm{map}}(x^{*},y)$.
 
 **Remark.** The two-sided operator is conjugate-linear and its adjoint exchanges the two parameters; the involution of the elements, also conjugate-linear, is self-adjoint. The adjoint of the two-sided operator is the subject of *The Adjoint of the Sesquilinear Two-Sided Operator*, and that of the one-sided case $\mathcal{T}_{a,1}=L_{a}$ of *The Adjoint of the Conjugate Left Multiplication*.
 
 ### The Two Adjoints
 
-**Definition.** The **left adjoint** of a $\varsigma$-semilinear $S$ for the pairing $\varphi$ is the operator ${}^{\dagger}S$ with
+**Definition.** The **left adjoint** of a $\varsigma$-semilinear $S$ for the pairing $\digamma_{\mathrm{map}}$ is the operator ${}^{\dagger}S$ with
 
 $$
-\varphi(y,Sx)=\varsigma\bigl(\varphi({}^{\dagger}Sy,x)\bigr)\qquad\text{for all }x,y\in A .
+\digamma_{\mathrm{map}}(y,Sx)=\varsigma\bigl(\digamma_{\mathrm{map}}({}^{\dagger}Sy,x)\bigr)\qquad\text{for all }x,y\in A .
 $$
 
-**Theorem (the two adjoints).** For every $\varsigma$-semilinear $S$ the left adjoint exists, is unique, and is the adjoint of $S$ for the transposed pairing $\varphi^{t}$; for the sesqui-symmetric pairing of this article the two adjoints coincide,
+**Theorem (the two adjoints).** For every $\varsigma$-semilinear $S$ the left adjoint exists, is unique, and is the adjoint of $S$ for the transposed pairing $\digamma_{\mathrm{map}}^{t}$; for the sesqui-symmetric pairing of this article the two adjoints coincide,
 
 $$
 {}^{\dagger}S=S^{\dagger} .
 $$
 
-**Proof.** The left adjoint is the adjoint against $\varphi^{t}$ read with the two arguments in the other order, so existence and uniqueness are the theorem above applied to $\varphi^{t}$. For the coincidence, $\varphi(y,Sx)=\varsigma\bigl(\varphi(Sx,y)\bigr)$ by the sesqui-symmetry of $\varphi$, and this is $\varsigma\bigl(\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)\bigr)=\varphi(x,S^{\dagger}y)$; on the other side $\varsigma\bigl(\varphi(S^{\dagger}y,x)\bigr)=\varsigma\bigl(\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)\bigr)=\varphi(x,S^{\dagger}y)$ as well, so $S^{\dagger}$ satisfies the defining identity of ${}^{\dagger}S$.
+**Proof.** The left adjoint is the adjoint against $\digamma_{\mathrm{map}}^{t}$ read with the two arguments in the other order, so existence and uniqueness are the theorem above applied to $\digamma_{\mathrm{map}}^{t}$. For the coincidence, $\digamma_{\mathrm{map}}(y,Sx)=\varsigma\bigl(\digamma_{\mathrm{map}}(Sx,y)\bigr)$ by the sesqui-symmetry of $\digamma_{\mathrm{map}}$, and this is $\varsigma\bigl(\varsigma\bigl(\digamma_{\mathrm{map}}(x,S^{\dagger}y)\bigr)\bigr)=\digamma_{\mathrm{map}}(x,S^{\dagger}y)$; on the other side $\varsigma\bigl(\digamma_{\mathrm{map}}(S^{\dagger}y,x)\bigr)=\varsigma\bigl(\varsigma\bigl(\digamma_{\mathrm{map}}(x,S^{\dagger}y)\bigr)\bigr)=\digamma_{\mathrm{map}}(x,S^{\dagger}y)$ as well, so $S^{\dagger}$ satisfies the defining identity of ${}^{\dagger}S$.
 
-**Remark (why a conjugate-linear operator requires two adjoints).** The two adjoints are the two pairings and not one pairing seen twice: the adjoint is taken against $\varphi$ and the left adjoint against $\varphi^{t}$, and $\varphi^{t}=\varsigma\circ\varphi$ is what makes them agree for the sesqui-symmetric pairing; the defect of a general pairing is the difference of the two, the sesquilinear analogue of the defect that separates the adjoint from the left adjoint of the bilinear case. The same split appears on the duals, where the transpose of a $\varsigma$-semilinear map cannot stay on one dual but flips the ordinary and the conjugate dual, $S^{*}:A^{*}\to A^{\varsigma*}$ and $S^{*}:A^{\varsigma*}\to A^{*}$, as *Conjugate-Linear Maps and the Conjugate Dual* records; the adjoint of a linear operator and the adjoint of a conjugate-linear one are therefore different constructions, which is the reason for the twisted rule and for the pair of adjoints above.
+**Remark (why a conjugate-linear operator requires two adjoints).** The two adjoints are the two pairings and not one pairing seen twice: the adjoint is taken against $\digamma_{\mathrm{map}}$ and the left adjoint against $\digamma_{\mathrm{map}}^{t}$, and $\digamma_{\mathrm{map}}^{t}=\varsigma\circ\digamma_{\mathrm{map}}$ is what makes them agree for the sesqui-symmetric pairing; the defect of a general pairing is the difference of the two, the sesquilinear analogue of the defect that separates the adjoint from the left adjoint of the bilinear case. The same split appears on the duals, where the transpose of a $\varsigma$-semilinear map cannot stay on one dual but flips the ordinary and the conjugate dual, $S^{*}:A^{*}\to A^{\varsigma*}$ and $S^{*}:A^{\varsigma*}\to A^{*}$, as *Conjugate-Linear Maps and the Conjugate Dual* records; the adjoint of a linear operator and the adjoint of a conjugate-linear one are therefore different constructions, which is the reason for the twisted rule and for the pair of adjoints above.
 
 ## The One-Sided Multiplications
 
@@ -170,7 +170,7 @@ $$
 
 The adjoint of a conjugate-linear one-sided multiplication is therefore a two-sided operator and not another one-sided multiplication, and the family of the one-sided multiplications is not stable under the adjoint.
 
-**Proof.** The right multiplication is linear, and $\varphi(R_{b}x,y)=\tau(xb^{*}y^{*})=\varphi(x,R_{b^{*}}y)$, since $R_{b^{*}}y=y(b^{*})^{*}=yb$. The left multiplication is conjugate-linear, $L_{a}(\lambda x)=a\varsigma(\lambda)x^{*}=\varsigma(\lambda)L_{a}x$, and $\varsigma\bigl(\varphi(x,\mathcal{T}_{1,a}y)\bigr)=\varsigma\bigl(\tau(xa^{*}y)\bigr)=\tau(y^{*}ax^{*})=\tau(ax^{*}y^{*})=\varphi(L_{a}x,y)$, by the anti-multiplicativity of $*$ and the centrality of $\tau$.
+**Proof.** The right multiplication is linear, and $\digamma_{\mathrm{map}}(R_{b}x,y)=\tau(xb^{*}y^{*})=\digamma_{\mathrm{map}}(x,R_{b^{*}}y)$, since $R_{b^{*}}y=y(b^{*})^{*}=yb$. The left multiplication is conjugate-linear, $L_{a}(\lambda x)=a\varsigma(\lambda)x^{*}=\varsigma(\lambda)L_{a}x$, and $\varsigma\bigl(\digamma_{\mathrm{map}}(x,\mathcal{T}_{1,a}y)\bigr)=\varsigma\bigl(\tau(xa^{*}y)\bigr)=\tau(y^{*}ax^{*})=\tau(ax^{*}y^{*})=\digamma_{\mathrm{map}}(L_{a}x,y)$, by the anti-multiplicativity of $*$ and the centrality of $\tau$.
 
 **Remark.** For a commutative $A$ the two families meet, $\mathcal{T}_{1,a}=L_{a}$, and the left multiplication is self-adjoint; in general the failure of stability is the asymmetry of the two slots of the product, the right multiplication linear and the left one conjugate-linear, so that they cannot have adjoints of the same kind. At $\varsigma=\mathrm{id}$ the left multiplication is linear as well, the two adjoints are taken by one rule, and the statements reduce to the twisted-pairing case of *The Adjoint in an Involutive Algebra*, read with $\sigma=*$.
 
@@ -178,11 +178,11 @@ The adjoint of a conjugate-linear one-sided multiplication is therefore a two-si
 
 ### The Complex Matrices
 
-For $A=M_{n}(\mathbb{C})$ with the conjugate transpose and $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ the adjoint of the two-sided multiplication is $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$ and that of the two-sided operator is $\mathcal{T}_{A,B}^{\dagger}=\mathcal{T}_{B,A}$. In particular a **reflection** $\mathcal{T}_{u,u}$, with $u$ unitary, is self-adjoint, $\mathcal{T}_{u,u}^{\dagger}=\mathcal{T}_{u,u}$, so the two-sided family of *The Sesquilinear Two-Sided Operator* is cut by the adjoint into the self-adjoint reflections and the rest. The involution $X\mapsto X^{*}$ is self-adjoint under the twisted rule and has no adjoint under the linear rule, by the parity obstruction, being conjugate-linear.
+For $A=M_{n}(\mathbb{C})$ with the conjugate transpose and $\digamma_{\mathrm{map}}(X,Y)=\operatorname{tr}(XY^{*})$ the adjoint of the two-sided multiplication is $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$ and that of the two-sided operator is $\mathcal{T}_{A,B}^{\dagger}=\mathcal{T}_{B,A}$. In particular a **reflection** $\mathcal{T}_{u,u}$, with $u$ unitary, is self-adjoint, $\mathcal{T}_{u,u}^{\dagger}=\mathcal{T}_{u,u}$, so the two-sided family of *The Sesquilinear Two-Sided Operator* is cut by the adjoint into the self-adjoint reflections and the rest. The involution $X\mapsto X^{*}$ is self-adjoint under the twisted rule and has no adjoint under the linear rule, by the parity obstruction, being conjugate-linear.
 
 ### The Field
 
-For $A=\mathbb{C}$ over $R=\mathbb{C}$ with $\varsigma$ the conjugation, $\tau$ the identity and $\varphi(x,y)=x\overline{y}$, the multiplication $T_{c}(x)=cx$ is $\mathbb{C}$-linear and $T_{c}^{\dagger}=T_{\overline{c}}$, the multiplication by the conjugate. The conjugation is conjugate-linear and self-adjoint; the left multiplication is $L_{c}(x)=c\overline{x}=\overline{x}c=\mathcal{T}_{1,c}$, hence self-adjoint because the field is commutative; and the adjoint operation is the conjugation of the parameter, a $\varsigma$-semilinear anti-automorphism of order two of $\operatorname{End}_{\mathbb{C}}(\mathbb{C})\cong\mathbb{C}$.
+For $A=\mathbb{C}$ over $R=\mathbb{C}$ with $\varsigma$ the conjugation, $\tau$ the identity and $\digamma_{\mathrm{map}}(x,y)=x\overline{y}$, the multiplication $T_{c}(x)=cx$ is $\mathbb{C}$-linear and $T_{c}^{\dagger}=T_{\overline{c}}$, the multiplication by the conjugate. The conjugation is conjugate-linear and self-adjoint; the left multiplication is $L_{c}(x)=c\overline{x}=\overline{x}c=\mathcal{T}_{1,c}$, hence self-adjoint because the field is commutative; and the adjoint operation is the conjugation of the parameter, a $\varsigma$-semilinear anti-automorphism of order two of $\operatorname{End}_{\mathbb{C}}(\mathbb{C})\cong\mathbb{C}$.
 
 ### The Quaternions
 
@@ -190,23 +190,23 @@ For $A=\mathbb{H}$ over $R=\mathbb{R}$ with the quaternion conjugation, $\varsig
 
 ## Summary
 
-A sesqualgebra carries the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$, linear in the first slot, $\varsigma$-semilinear in the second, sesqui-symmetric, $\varphi(y,x)=\varsigma(\varphi(x,y))$, with the transposed pairing $\varphi^{t}$ of the opposite parity. The adjoint of an $R$-linear operator is defined by $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$, exists and is unique when the pairing is perfect, and the assignment $T\mapsto T^{\dagger}$ is a $\varsigma$-semilinear anti-automorphism of order two of the endomorphism algebra, $(ST)^{\dagger}=T^{\dagger}S^{\dagger}$ and $(\lambda T)^{\dagger}=\varsigma(\lambda)T^{\dagger}$, an ordinary involution only when $\varsigma=\mathrm{id}$. For a conjugate-linear operator over a ring without zero divisors the linear rule is contradicted by the scalars, and the adjoint is defined by the twisted rule $\varphi(Sx,y)=\varsigma(\varphi(x,S^{\dagger}y))$, under which the adjoint is again conjugate-linear; the left adjoint, taken against the transposed pairing, exists as well, and the two coincide exactly because the pairing is sesqui-symmetric. The two-sided multiplication obeys $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$, the right multiplication $R_{b}^{\dagger}=R_{b^{*}}$, the two-sided operator $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$, and the left multiplication $L_{a}^{\dagger}=\mathcal{T}_{1,a}$, so the family of the one-sided multiplications is not stable under the adjoint, the right multiplications being stable and the left ones mapping to two-sided operators, and the adjoints of the individual operators are computed in *The Adjoint of the Sesquilinear Two-Sided Operator* and *The Adjoint of the Conjugate Left Multiplication*. At $\varsigma=\mathrm{id}$ the whole theory reduces to the twisted-pairing case of the bilinear adjoint, read with $\sigma=*$.
+A sesqualgebra carries the sesquilinear pairing $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$, linear in the first slot, $\varsigma$-semilinear in the second, sesqui-symmetric, $\digamma_{\mathrm{map}}(y,x)=\varsigma(\digamma_{\mathrm{map}}(x,y))$, with the transposed pairing $\digamma_{\mathrm{map}}^{t}$ of the opposite parity. The adjoint of an $R$-linear operator is defined by $\digamma_{\mathrm{map}}(Tx,y)=\digamma_{\mathrm{map}}(x,T^{\dagger}y)$, exists and is unique when the pairing is perfect, and the assignment $T\mapsto T^{\dagger}$ is a $\varsigma$-semilinear anti-automorphism of order two of the endomorphism algebra, $(ST)^{\dagger}=T^{\dagger}S^{\dagger}$ and $(\lambda T)^{\dagger}=\varsigma(\lambda)T^{\dagger}$, an ordinary involution only when $\varsigma=\mathrm{id}$. For a conjugate-linear operator over a ring without zero divisors the linear rule is contradicted by the scalars, and the adjoint is defined by the twisted rule $\digamma_{\mathrm{map}}(Sx,y)=\varsigma(\digamma_{\mathrm{map}}(x,S^{\dagger}y))$, under which the adjoint is again conjugate-linear; the left adjoint, taken against the transposed pairing, exists as well, and the two coincide exactly because the pairing is sesqui-symmetric. The two-sided multiplication obeys $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$, the right multiplication $R_{b}^{\dagger}=R_{b^{*}}$, the two-sided operator $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$, and the left multiplication $L_{a}^{\dagger}=\mathcal{T}_{1,a}$, so the family of the one-sided multiplications is not stable under the adjoint, the right multiplications being stable and the left ones mapping to two-sided operators, and the adjoints of the individual operators are computed in *The Adjoint of the Sesquilinear Two-Sided Operator* and *The Adjoint of the Conjugate Left Multiplication*. At $\varsigma=\mathrm{id}$ the whole theory reduces to the twisted-pairing case of the bilinear adjoint, read with $\sigma=*$.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\tau$, $\tau(uv)=\tau(vu)$, $\tau(u^{*})=\varsigma(\tau(u))$ | the central trace, compatible with the involution |
-| $\varphi(x,y)=\tau(xy^{*})$ | the sesquilinear pairing, linear in the first slot and $\varsigma$-semilinear in the second |
-| $\varphi(y,x)=\varsigma(\varphi(x,y))$ | the sesqui-symmetry of the pairing |
-| $\varphi^{t}(x,y)=\varphi(y,x)$ | the transposed pairing, of the opposite parity |
-| $\Phi(z)=\varphi(\,\cdot\,,z)$ | the reading of the pairing as a map $A\to A^{*}$ |
-| $T^{\dagger}$ | the adjoint of a linear operator, $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$ |
-| $S^{\dagger}$ | the adjoint of a conjugate-linear operator, $\varphi(Sx,y)=\varsigma(\varphi(x,S^{\dagger}y))$ |
+| $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$ | the sesquilinear pairing, linear in the first slot and $\varsigma$-semilinear in the second |
+| $\digamma_{\mathrm{map}}(y,x)=\varsigma(\digamma_{\mathrm{map}}(x,y))$ | the sesqui-symmetry of the pairing |
+| $\digamma_{\mathrm{map}}^{t}(x,y)=\digamma_{\mathrm{map}}(y,x)$ | the transposed pairing, of the opposite parity |
+| $\Phi(z)=\digamma_{\mathrm{map}}(\,\cdot\,,z)$ | the reading of the pairing as a map $A\to A^{*}$ |
+| $T^{\dagger}$ | the adjoint of a linear operator, $\digamma_{\mathrm{map}}(Tx,y)=\digamma_{\mathrm{map}}(x,T^{\dagger}y)$ |
+| $S^{\dagger}$ | the adjoint of a conjugate-linear operator, $\digamma_{\mathrm{map}}(Sx,y)=\varsigma(\digamma_{\mathrm{map}}(x,S^{\dagger}y))$ |
 | $(\lambda T)^{\dagger}=\varsigma(\lambda)T^{\dagger}$ | the adjoint operation is $\varsigma$-semilinear on the linear operators |
 | $(\lambda S)^{\dagger}=\lambda S^{\dagger}$ | and $R$-linear on the conjugate-linear ones |
 | $(ST)^{\dagger}=T^{\dagger}S^{\dagger}$ | the adjoint operation is an anti-automorphism |
-| ${}^{\dagger}S$ | the left adjoint, the adjoint for $\varphi^{t}$ |
+| ${}^{\dagger}S$ | the left adjoint, the adjoint for $\digamma_{\mathrm{map}}^{t}$ |
 | $L_{p}R_{q}(x)=pxq$, $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$ | the two-sided multiplication and its adjoint |
 | $R_{b}(x)=xb^{*}$, $R_{b}^{\dagger}=R_{b^{*}}$ | the right multiplication and its adjoint |
 | $L_{a}(x)=ax^{*}$, $L_{a}^{\dagger}=\mathcal{T}_{1,a}$ | the left multiplication and its adjoint |

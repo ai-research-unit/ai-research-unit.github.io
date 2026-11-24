@@ -119,7 +119,7 @@ $$
 
 *Proof.* Subtracting the integral equations and applying the Lipschitz condition gives $u(t) \le \|y_0-z_0\| + L\int_{t_0}^t u(s)\,ds$ for $u = \|y-z\|$; Gronwall gives the estimate.
 
-**Corollary (uniqueness).** Two solutions with the same initial datum agree on the intersection of their intervals, so the maximal solution is unique. In particular the **flow** $\varphi_t(y_0) = y(t)$ of an autonomous equation is well defined wherever it exists, and $\varphi_{t+s} = \varphi_t \circ \varphi_s$ on the common domain of definition.
+**Corollary (uniqueness).** Two solutions with the same initial datum agree on the intersection of their intervals, so the maximal solution is unique. In particular the **flow** $\digamma_{\mathrm{map},t}(y_0) = y(t)$ of an autonomous equation is well defined wherever it exists, and $\digamma_{\mathrm{map},t+s} = \digamma_{\mathrm{map},t} \circ \digamma_{\mathrm{map},s}$ on the common domain of definition.
 
 The estimate says that the solution depends on the initial datum Lipschitz-continuously with a constant growing exponentially in $t$, and that this exponential growth is the worst case; for a linear equation $y' = Ay$ the sharp constant is $\|\exp(tA)\|$, which need not equal $\exp(\|A\|t)$.
 
@@ -398,7 +398,7 @@ with the same $X_1^{(n)}, X_2^{(n)}$ built from $q$ alone — the powers of $\om
 
 ### Equilibria and Linearisation
 
-**Definition.** For an autonomous equation $y' = f(y)$ a point $y_*$ is an **equilibrium** if $f(y_*) = 0$, and the equilibrium is **stable** if for every neighbourhood $\Omega$ of $y_*$ there is a neighbourhood $V$ with $\varphi_t(V) \subseteq \Omega$ for all $t \ge 0$; it is **asymptotically stable** if in addition $\varphi_t(y) \to y_*$ as $t \to \infty$ for $y$ in some neighbourhood, and **unstable** if it is not stable.
+**Definition.** For an autonomous equation $y' = f(y)$ a point $y_*$ is an **equilibrium** if $f(y_*) = 0$, and the equilibrium is **stable** if for every neighbourhood $\Omega$ of $y_*$ there is a neighbourhood $V$ with $\digamma_{\mathrm{map},t}(V) \subseteq \Omega$ for all $t \ge 0$; it is **asymptotically stable** if in addition $\digamma_{\mathrm{map},t}(y) \to y_*$ as $t \to \infty$ for $y$ in some neighbourhood, and **unstable** if it is not stable.
 
 **Theorem (linearisation).** Let $f$ be of class $C^1$ near an equilibrium $y_*$, with derivative $A = Df(y_*)$. Then:
 
@@ -412,7 +412,7 @@ with the same $X_1^{(n)}, X_2^{(n)}$ built from $q$ alone — the powers of $\om
 
 ### The Planar Case
 
-For a planar autonomous system $x' = \phi(x,y)$, $y' = \psi(x,y)$ with equilibrium at the origin and linearisation matrix $A = \begin{pmatrix}\phi_x & \phi_y\\ \psi_x & \psi_y\end{pmatrix}$, the eigenvalues $\lambda_1, \lambda_2$ of $A$ classify the phase portrait at the origin in the nondegenerate case $\det A \neq 0$.
+For a planar autonomous system $x' = \digamma_{\mathrm{map}}(x,y)$, $y' = Ξ_{\mathrm{wfn}}(x,y)$ with equilibrium at the origin and linearisation matrix $A = \begin{pmatrix}\digamma_{\mathrm{map},x} & \digamma_{\mathrm{map},y}\\ Ξ_{\mathrm{wfn},x} & Ξ_{\mathrm{wfn},y}\end{pmatrix}$, the eigenvalues $\lambda_1, \lambda_2$ of $A$ classify the phase portrait at the origin in the nondegenerate case $\det A \neq 0$.
 
 **Theorem (classification of planar equilibria).** With $\tau = \operatorname{tr}A$, $\delta = \det A$ and discriminant $\tau^2 - 4\delta$:
 
@@ -454,7 +454,7 @@ For an autonomous system the equilibria are classified by the derivative at the 
 | $y(t_0) = y_0$ | Initial datum |
 | $L$ | Lipschitz constant in the second variable |
 | $T$ | Picard operator $T(y)(t) = y_0 + \int_{t_0}^t f(s,y(s))\,ds$ |
-| $\varphi_t$ | Flow of an autonomous equation, $\varphi_t(y_0) = y(t)$ |
+| $\digamma_{\mathrm{map},t}$ | Flow of an autonomous equation, $\digamma_{\mathrm{map},t}(y_0) = y(t)$ |
 | $A$, $A(t)$ | Bounded operator of a linear system $y' = Ay + b$ |
 | $\exp(tA)$ | Matrix (operator) exponential, the solution operator |
 | $\Phi(t)$ | Fundamental matrix, $\Phi' = A\Phi$, $\Phi(t_0) = I$ |

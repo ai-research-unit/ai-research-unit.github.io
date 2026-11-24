@@ -60,7 +60,7 @@ and the three variations are these. Varying $\vec\digamma_{\mathrm{lgr}}$ return
 
 What the promotion does buy is the correct statement of the constraint. At the rungs above, the velocity's place is taken by the rapidity, and its momentum vanishes identically — the relativistic companion computes $\partial\mathcal L/\partial\dot\theta_{\mathrm{rpd}}=0$ on every configuration. Here the same fact is $p_{\vec v}=0$ once the velocity is promoted: it is then a coordinate with no kinetic term, so its conjugate is zero rather than small. The two statements are the same statement in two charts, and the fluid chart is the one in which it is visible without algebra; at this rung the density's momentum $p_r=0$ is the same fact in the chart that needs no promotion.
 
-A rotational fluid needs two more fields and cannot be written with $\vec v$ alone. If the flow is not a gradient, the velocity must be represented as $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, the Clebsch form, and the action acquires the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ and their constraint. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the representation and the rank it carries. At this rung the vorticity is zero identically, so the pair is absent and the action's two fields suffice; that is the fluid form of the statement that the phase is one function's worth of data.
+A rotational fluid needs two more fields and cannot be written with $\vec v$ alone. If the flow is not a gradient, the velocity must be represented as $\vec v=\vec\nabla_\Phi\xi_{\mathrm{pot},\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, the Clebsch form, and the action acquires the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ and their constraint. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the representation and the rank it carries. At this rung the vorticity is zero identically, so the pair is absent and the action's two fields suffice; that is the fluid form of the statement that the phase is one function's worth of data.
 
 ## The Variation: Two of Them
 
@@ -220,7 +220,7 @@ The chart. One action, three charts — element, polar, fluid — with the word 
 | $\sigma^{Q}_{ij}$ | The gradient energy's stress tensor; $\partial_j\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_iQ$ |
 | $V$ | External potential; $V=0$ for the free field |
 | $\vec\digamma_{\mathrm{lgr}}$ | Multiplier of the promoted constraint; equal to $m\vec j$ |
-| $\phi_{\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | Clebsch potentials; needed only for a rotational flow |
+| $\xi_{\mathrm{pot},\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | Clebsch potentials; needed only for a rotational flow |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 

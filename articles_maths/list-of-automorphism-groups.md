@@ -33,7 +33,7 @@ A ring automorphism preserves addition and multiplication, and hence $0$, $1$, t
 | $\operatorname{Inn}(R) \cong R^\times/Z(R)^\times$ | the inner automorphisms $r \mapsto uru^{-1}$ | *Ring and Field Automorphisms* |
 | $\operatorname{Out}(R)$ | the quotient of the automorphisms by the inner ones | *Ring and Field Automorphisms* |
 | Fixed subring $R^G$ | the elements fixed by a subgroup $G \leq \operatorname{Aut}(R)$ | *Ring and Field Automorphisms* |
-| Frobenius $\varphi(x) = x^p$ | an automorphism of a finite field, of order the degree over $\mathbb{F}_p$ | *Ring and Field Automorphisms* |
+| Frobenius $\digamma_{\mathrm{map}}(x) = x^p$ | an automorphism of a finite field, of order the degree over $\mathbb{F}_p$ | *Ring and Field Automorphisms* |
 | Complex conjugation on $\mathbb{C}$ | the nontrivial automorphism of $\mathbb{C}$ over $\mathbb{R}$ | *Ring and Field Automorphisms* |
 | $\operatorname{Aut}(M_n(k))$ | of order $PGL_n(k)$, the inner automorphisms, for a field $k$ | *Automorphisms and Derivations of Algebras* |
 | $\operatorname{Aut}(R[x])$ | the triangular automorphisms and the affine substitutions, of $R[x]$ | *Polynomial Rings and Rational Functions* |

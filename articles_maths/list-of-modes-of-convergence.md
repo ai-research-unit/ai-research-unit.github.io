@@ -52,7 +52,7 @@ This article lists the modes of convergence the corpus uses. A mode of convergen
 
 | Object | Its definition, and its relation to the other modes | Introduced in |
 |---|---|---|
-| weak convergence $x_n \rightharpoonup x$ | $\varphi(x_n) \to \varphi(x)$ for every bounded functional; implied by norm convergence | *Modes of Convergence*; *Banach and Hilbert Spaces* |
+| weak convergence $x_n \rightharpoonup x$ | $\digamma_{\mathrm{map}}(x_n) \to \digamma_{\mathrm{map}}(x)$ for every bounded functional; implied by norm convergence | *Modes of Convergence*; *Banach and Hilbert Spaces* |
 | weak-$\ast$ convergence $f_n \overset{\ast}{\rightharpoonup} f$ | pointwise convergence on the predual; on $X^\ast$ | *Modes of Convergence*; *Banach and Hilbert Spaces* |
 | Banach–Alaoglu theorem | the weak-$\ast$ compactness of the unit ball of a dual space | *Banach and Hilbert Spaces* |
 | weak lower semicontinuity of the norm | $\lVert x\rVert \leq \liminf \lVert x_n\rVert$ along a weakly convergent sequence | *Modes of Convergence* |

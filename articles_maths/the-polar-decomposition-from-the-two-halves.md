@@ -101,10 +101,10 @@ which was verified at $n=2,3,4,5$ on random matrices. So the stretch accounts fo
 **The determinant of the stretch is the modulus and the determinant of the rotation is the phase.** From $A=PU$ and $\det P>0$,
 
 $$
-\det A=(\det P)(\det U),\qquad |\det A|=\det P,\qquad \det U=e^{i\varphi},
+\det A=(\det P)(\det U),\qquad |\det A|=\det P,\qquad \det U=e^{i\digamma_{\mathrm{map}}},
 $$
 
-with $\varphi$ the sum of the phases of the eigenvalues. The computation confirms the split at $n=3,4$, and it is the polar form of the determinant.
+with $\digamma_{\mathrm{map}}$ the sum of the phases of the eigenvalues. The computation confirms the split at $n=3,4$, and it is the polar form of the determinant.
 
 **The condition number is the ratio of the extreme stretch factors.** For the spectral norm,
 

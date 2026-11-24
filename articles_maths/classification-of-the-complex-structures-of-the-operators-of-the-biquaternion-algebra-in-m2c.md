@@ -68,7 +68,7 @@ so the decomposition is $A_{11}\oplus A_{22}=M_4(\mathbb{C})\oplus0\oplus0\oplus
 **Theorem (the real structures of the sum).** A real structure of $A\oplus A$, with $A=M_4(\mathbb{C})$, either preserves or exchanges the two simple summands.
 
 - Preserving: $\theta=\theta_1\times\theta_2$ with each $\theta_i$ one of the two, four maps.
-- Exchanging: $\theta(A,B)=(\varphi(B),\varphi^{-1}(A))$ with $\varphi$ a conjugate-linear automorphism, and all such are conjugate.
+- Exchanging: $\theta(A,B)=(\digamma_{\mathrm{map}}(B),\digamma_{\mathrm{map}}^{-1}(A))$ with $\digamma_{\mathrm{map}}$ a conjugate-linear automorphism, and all such are conjugate.
 
 Hence five real structures and four isomorphism classes of fixed algebra:
 $$
@@ -78,7 +78,7 @@ M_4(\mathbb{R})\oplus M_2(\mathbb{H}),\quad
 M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}.
 $$
 
-*Proof.* A conjugate-linear automorphism permutes the two-element set of simple ideals. In the exchanging case $\theta^2=1$ forces the inverse in the second slot, and $\varphi=\operatorname{Ad}_G\circ\tau_{\mathbb{R}}$ by Skolem–Noether; conjugation by $(1,U)$ replaces $G$ by $G\bar U$, which runs over $GL_4(\mathbb{C})$.
+*Proof.* A conjugate-linear automorphism permutes the two-element set of simple ideals. In the exchanging case $\theta^2=1$ forces the inverse in the second slot, and $\digamma_{\mathrm{map}}=\operatorname{Ad}_G\circ\tau_{\mathbb{R}}$ by Skolem–Noether; conjugation by $(1,U)$ replaces $G$ by $G\bar U$, which runs over $GL_4(\mathbb{C})$.
 
 **The five structures.**
 

@@ -68,7 +68,7 @@ a sum of $n$ Peirce lines, one per value of the first index. So the minimal left
 
 ## Simplicity and Its Consequences
 
-**Every automorphism is inner.** An automorphism $\varphi$ of $M_n(\mathbb{C})$ sends the minimal left ideal $L_V$ to another minimal left ideal, hence sends a line of the domain to a line and induces a projective transformation of $\mathbb{P}^{n-1}$. Lifting that transformation to a linear $S$ gives $\varphi(A)=SAS^{-1}$, and $S$ is unique up to a central scalar. This is the Skolem–Noether theorem in the matrix case, and it is the reason the Peirce gauges of *The Peirce Basis and the Corners* exhaust the freedom of a frame.
+**Every automorphism is inner.** An automorphism $\digamma_{\mathrm{map}}$ of $M_n(\mathbb{C})$ sends the minimal left ideal $L_V$ to another minimal left ideal, hence sends a line of the domain to a line and induces a projective transformation of $\mathbb{P}^{n-1}$. Lifting that transformation to a linear $S$ gives $\digamma_{\mathrm{map}}(A)=SAS^{-1}$, and $S$ is unique up to a central scalar. This is the Skolem–Noether theorem in the matrix case, and it is the reason the Peirce gauges of *The Peirce Basis and the Corners* exhaust the freedom of a frame.
 
 **Every derivation is inner, and the derivations form a space of dimension $n^{2}-1$.** A derivation is a linear $D$ with $D(AB)=D(A)B+AD(B)$. Every $D_A(X)=[A,X]$ is a derivation, and conversely every derivation is of that form: the map $A\mapsto D_A$ has kernel the centre, so
 

@@ -243,12 +243,12 @@ $$
 
 **Proof.** The adjugate identity $\operatorname{adj}(tI-A)(tI-A)=\chi_A(t)I$ is an identity of polynomials in $t$ with matrix coefficients; comparing coefficients gives the relation. Equivalently, the identity holds for diagonalisable matrices by the eigenvalue computation and extends by continuity.
 
-**The rank-one case.** For $A$ with simple spectrum, each $P_k$ is a rank-one idempotent, hence of the form $u_k\varphi_k$ with $\varphi_k(u_k)=1$. In the eigenbasis,
+**The rank-one case.** For $A$ with simple spectrum, each $P_k$ is a rank-one idempotent, hence of the form $u_k\digamma_{\mathrm{map},k}$ with $\digamma_{\mathrm{map},k}(u_k)=1$. In the eigenbasis,
 
 $$
 P_k=e_ke_k^{\mathsf T},\qquad
 u_k=e_k,\qquad
-\varphi_k=e_k^{\mathsf T}.
+\digamma_{\mathrm{map},k}=e_k^{\mathsf T}.
 $$
 
 The spectral decomposition is the resolution of the identity into three rank-one projectors, and it is the matrix form of the Lagrange interpolation of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*.

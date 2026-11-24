@@ -66,7 +66,7 @@ $$
 
 where the first is the set of functionals vanishing on $V_1$ and the second the set vanishing on $V_0$; equivalently $(V^{*})_i \cong (V_i)^{*}$, and the transposed involution $\alpha^{*}$ is the grade involution of $V^{*}$.
 
-**Proof.** A functional vanishing on $V_1$ is fixed by $\alpha^{*}$, because $\alpha^{*}\varphi = \varphi\alpha$ and $\varphi\alpha = \varphi$ on $V_0$ and vanishes on $V_1$; hence the fixed part of $\alpha^{*}$ is the annihilator of $V_1$, of dimension $n$, and the negated part is the annihilator of $V_0$, of dimension $m$. This is *Involutions of the Dual Space*, and the identifications with $(V_i)^{*}$ are the restriction maps.
+**Proof.** A functional vanishing on $V_1$ is fixed by $\alpha^{*}$, because $\alpha^{*}\digamma_{\mathrm{map}} = \digamma_{\mathrm{map}}\alpha$ and $\digamma_{\mathrm{map}}\alpha = \digamma_{\mathrm{map}}$ on $V_0$ and vanishes on $V_1$; hence the fixed part of $\alpha^{*}$ is the annihilator of $V_1$, of dimension $n$, and the negated part is the annihilator of $V_0$, of dimension $m$. This is *Involutions of the Dual Space*, and the identifications with $(V_i)^{*}$ are the restriction maps.
 
 **Proposition (the graded tensor product).** For graded spaces $V$ and $W$ the tensor product is graded by
 

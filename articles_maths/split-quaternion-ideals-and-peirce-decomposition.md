@@ -21,7 +21,7 @@ Let $A$ be an associative unital algebra over a field $k$. An additive subgroup 
 
 A base-field remark will be used repeatedly. If $A I \subseteq I$, then $I$ is automatically a $k$-subspace, since $\lambda \tilde q = (\lambda 1)\tilde q \in I$ for $\lambda \in k$ and $\tilde q \in I$, as $\lambda 1 \in A$. So the left ideals do not depend on which field of scalars inside the centre is used to view the algebra.
 
-For a two-sided ideal $I$, the **quotient algebra** $A/I$ is defined, and kernels of algebra homomorphisms are two-sided ideals; the first isomorphism theorem gives $A/\ker\varphi \cong \operatorname{im}\varphi$. For a left ideal only, $A/I$ is still a left $A$-module but not in general an algebra. Thus the left ideals govern module theory and the two-sided ideals govern quotient algebras.
+For a two-sided ideal $I$, the **quotient algebra** $A/I$ is defined, and kernels of algebra homomorphisms are two-sided ideals; the first isomorphism theorem gives $A/\ker\digamma_{\mathrm{map}} \cong \operatorname{im}\digamma_{\mathrm{map}}$. For a left ideal only, $A/I$ is still a left $A$-module but not in general an algebra. Thus the left ideals govern module theory and the two-sided ideals govern quotient algebras.
 
 ## The Two-Sided Ideals: Simplicity of $\mathbb{H}_{\mathrm{spl}}$
 

@@ -37,15 +37,15 @@ Every two-sided ideal is a submodule and, since $xx' \in I$ for $x, x' \in I$, a
 
 The trivial ideals are $\{0\}$ and $A$; an ideal is **proper** if it is neither. In a unital algebra $A$ a proper ideal $I$ contains no unit, because $u \in I$ together with $u u^{-1} = 1$ would give $1 \in I$ and then $I = A$; consequently $A$ is a division algebra precisely when it is unital and its only left ideals are $0$ and $A$, a point developed.
 
-**Proposition (kernels and images).** Let $\varphi : A \to B$ be an algebra homomorphism. Then $\ker \varphi$ is a two-sided ideal of $A$ and $\operatorname{im} \varphi$ is a subalgebra of $B$.
+**Proposition (kernels and images).** Let $\digamma_{\mathrm{map}} : A \to B$ be an algebra homomorphism. Then $\ker \digamma_{\mathrm{map}}$ is a two-sided ideal of $A$ and $\operatorname{im} \digamma_{\mathrm{map}}$ is a subalgebra of $B$.
 
-*Proof.* The kernel is a submodule by module theory, and for $x \in \ker\varphi$ and $a \in A$ one has $\varphi(ax) = \varphi(a)\varphi(x) = 0$ and $\varphi(xa) = \varphi(x)\varphi(a) = 0$, so $\ker\varphi$ is two-sided. The image is a submodule closed under products, since $\varphi(x)\varphi(y) = \varphi(xy)$ is again in the image.
+*Proof.* The kernel is a submodule by module theory, and for $x \in \ker\digamma_{\mathrm{map}}$ and $a \in A$ one has $\digamma_{\mathrm{map}}(ax) = \digamma_{\mathrm{map}}(a)\digamma_{\mathrm{map}}(x) = 0$ and $\digamma_{\mathrm{map}}(xa) = \digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(a) = 0$, so $\ker\digamma_{\mathrm{map}}$ is two-sided. The image is a submodule closed under products, since $\digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(y) = \digamma_{\mathrm{map}}(xy)$ is again in the image.
 
-**Proposition (preimages and images of ideals).** Let $\varphi : A \to B$ be an algebra homomorphism. If $J \subseteq B$ is a (left, right, two-sided) ideal, then $\varphi^{-1}(J)$ is an ideal of $A$ of the same kind. If $I \subseteq A$ is a two-sided ideal with $\ker \varphi \subseteq I$, then $\varphi(I)$ is a two-sided ideal of $\operatorname{im}\varphi$.
+**Proposition (preimages and images of ideals).** Let $\digamma_{\mathrm{map}} : A \to B$ be an algebra homomorphism. If $J \subseteq B$ is a (left, right, two-sided) ideal, then $\digamma_{\mathrm{map}}^{-1}(J)$ is an ideal of $A$ of the same kind. If $I \subseteq A$ is a two-sided ideal with $\ker \digamma_{\mathrm{map}} \subseteq I$, then $\digamma_{\mathrm{map}}(I)$ is a two-sided ideal of $\operatorname{im}\digamma_{\mathrm{map}}$.
 
-*Proof.* For the preimage, if $\varphi(x) \in J$ then $\varphi(ax) = \varphi(a)\varphi(x) \in J$, and dually on the right. For the image, if $y = \varphi(x)$ with $x \in I$ and $b = \varphi(a)$, then $by = \varphi(ax)$ with $ax \in I$, and dually.
+*Proof.* For the preimage, if $\digamma_{\mathrm{map}}(x) \in J$ then $\digamma_{\mathrm{map}}(ax) = \digamma_{\mathrm{map}}(a)\digamma_{\mathrm{map}}(x) \in J$, and dually on the right. For the image, if $y = \digamma_{\mathrm{map}}(x)$ with $x \in I$ and $b = \digamma_{\mathrm{map}}(a)$, then $by = \digamma_{\mathrm{map}}(ax)$ with $ax \in I$, and dually.
 
-The hypothesis $\ker\varphi \subseteq I$ is exactly what makes $I$ the preimage of $\varphi(I)$: an element $x \in A$ with $\varphi(x) \in \varphi(I)$ differs from an element of $I$ by an element of $\ker\varphi$, hence lies in $I$.
+The hypothesis $\ker\digamma_{\mathrm{map}} \subseteq I$ is exactly what makes $I$ the preimage of $\digamma_{\mathrm{map}}(I)$: an element $x \in A$ with $\digamma_{\mathrm{map}}(x) \in \digamma_{\mathrm{map}}(I)$ differs from an element of $I$ by an element of $\ker\digamma_{\mathrm{map}}$, hence lies in $I$.
 
 ### Generated Ideals
 
@@ -105,24 +105,24 @@ Notice that the proof uses only that $I$ is closed under products and under mult
 
 ## Algebra Homomorphisms
 
-**Definition.** Let $A$ and $B$ be $R$-algebras. A map $\varphi : A \to B$ is an **algebra homomorphism** if it is $R$-linear and multiplicative:
+**Definition.** Let $A$ and $B$ be $R$-algebras. A map $\digamma_{\mathrm{map}} : A \to B$ is an **algebra homomorphism** if it is $R$-linear and multiplicative:
 
 $$
-\varphi(x + y) = \varphi(x) + \varphi(y), \quad \varphi(rx) = r\varphi(x), \quad \varphi(xy) = \varphi(x)\varphi(y)
+\digamma_{\mathrm{map}}(x + y) = \digamma_{\mathrm{map}}(x) + \digamma_{\mathrm{map}}(y), \quad \digamma_{\mathrm{map}}(rx) = r\digamma_{\mathrm{map}}(x), \quad \digamma_{\mathrm{map}}(xy) = \digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(y)
 $$
 
-for all $x, y \in A$ and $r \in R$. It is a **monomorphism** if injective, an **epimorphism** if surjective, an **isomorphism** if bijective, an **endomorphism** if $A = B$, and an **automorphism** if it is a bijective endomorphism. A homomorphism of unital algebras is **unital** if $\varphi(1_A) = 1_B$.
+for all $x, y \in A$ and $r \in R$. It is a **monomorphism** if injective, an **epimorphism** if surjective, an **isomorphism** if bijective, an **endomorphism** if $A = B$, and an **automorphism** if it is a bijective endomorphism. A homomorphism of unital algebras is **unital** if $\digamma_{\mathrm{map}}(1_A) = 1_B$.
 
 The composite of two homomorphisms is a homomorphism, and the identity is a homomorphism; consequently the $R$-algebra automorphisms of $A$ form a group under composition, written $\operatorname{Aut}_R(A)$ and studied.
 
-**Proposition.** A homomorphism $\varphi$ is injective if and only if $\ker\varphi = 0$. A bijective homomorphism has a two-sided inverse, which is again a homomorphism.
+**Proposition.** A homomorphism $\digamma_{\mathrm{map}}$ is injective if and only if $\ker\digamma_{\mathrm{map}} = 0$. A bijective homomorphism has a two-sided inverse, which is again a homomorphism.
 
-*Proof.* The first statement is the module-theoretic criterion. For the second, if $\varphi$ is bijective and $u, v \in B$, write $u = \varphi(x)$, $v = \varphi(y)$; then $\varphi^{-1}(uv) = \varphi^{-1}(\varphi(xy)) = xy = \varphi^{-1}(u)\varphi^{-1}(v)$, and $R$-linearity of $\varphi^{-1}$ follows from that of $\varphi$.
+*Proof.* The first statement is the module-theoretic criterion. For the second, if $\digamma_{\mathrm{map}}$ is bijective and $u, v \in B$, write $u = \digamma_{\mathrm{map}}(x)$, $v = \digamma_{\mathrm{map}}(y)$; then $\digamma_{\mathrm{map}}^{-1}(uv) = \digamma_{\mathrm{map}}^{-1}(\digamma_{\mathrm{map}}(xy)) = xy = \digamma_{\mathrm{map}}^{-1}(u)\digamma_{\mathrm{map}}^{-1}(v)$, and $R$-linearity of $\digamma_{\mathrm{map}}^{-1}$ follows from that of $\digamma_{\mathrm{map}}$.
 
 **Example (the universal property of a quotient).** Let $I$ be a two-sided ideal of $A$. For every algebra $B$, precomposition with the quotient map is a bijection
 
 $$
-\{\text{algebra homomorphisms } A/I \to B\} \;\longrightarrow\; \{\text{algebra homomorphisms } \varphi : A \to B \text{ with } I \subseteq \ker\varphi\}.
+\{\text{algebra homomorphisms } A/I \to B\} \;\longrightarrow\; \{\text{algebra homomorphisms } \digamma_{\mathrm{map}} : A \to B \text{ with } I \subseteq \ker\digamma_{\mathrm{map}}\}.
 $$
 
 This is the defining universal property of the quotient, and it is the form in which quotients are used to present algebras by generators and relations.
@@ -135,15 +135,15 @@ This is the defining universal property of the quotient, and it is the form in w
 
 The three isomorphism theorems and the correspondence theorem carry over from modules without change, with "submodule" replaced by "subalgebra" or "ideal" as appropriate.
 
-**Theorem (first isomorphism theorem).** Let $\varphi : A \to B$ be an algebra homomorphism. Then $\varphi$ induces an isomorphism
+**Theorem (first isomorphism theorem).** Let $\digamma_{\mathrm{map}} : A \to B$ be an algebra homomorphism. Then $\digamma_{\mathrm{map}}$ induces an isomorphism
 
 $$
-\boxed{\;A/\ker\varphi \;\cong\; \operatorname{im}\varphi\;},
+\boxed{\;A/\ker\digamma_{\mathrm{map}} \;\cong\; \operatorname{im}\digamma_{\mathrm{map}}\;},
 $$
 
-given by $a + \ker\varphi \mapsto \varphi(a)$.
+given by $a + \ker\digamma_{\mathrm{map}} \mapsto \digamma_{\mathrm{map}}(a)$.
 
-*Proof.* The map is well defined and $R$-linear by the module theorem; it is multiplicative because $\varphi$ is, and it is bijective onto the image by construction.
+*Proof.* The map is well defined and $R$-linear by the module theorem; it is multiplicative because $\digamma_{\mathrm{map}}$ is, and it is bijective onto the image by construction.
 
 **Theorem (second isomorphism theorem).** Let $B$ be a subalgebra and $I$ a two-sided ideal of $A$. Then $B + I$ is a subalgebra of $A$, $B \cap I$ is a two-sided ideal of $B$, and
 
@@ -224,7 +224,7 @@ where $\mathbb{R}\langle x, y \rangle$ is the free algebra on two generators, co
 
 A **subalgebra** is a submodule closed under the product; a **left**, **right** or **two-sided ideal** is a submodule closed under multiplication by the algebra on the left, on the right, or on both sides. Kernels of algebra homomorphisms are two-sided ideals and images are subalgebras; preimages of ideals are ideals. A two-sided ideal $I$ is exactly what is needed to form the quotient algebra $A/I$, whose product $(a+I)(b+I) = ab + I$ is well defined by bilinearity and by the closure of $I$.
 
-The first isomorphism theorem gives $A/\ker\varphi \cong \operatorname{im}\varphi$, the second gives $(B+I)/I \cong B/(B\cap I)$ for a subalgebra $B$ and an ideal $I$, the third gives $(A/I)/(J/I) \cong A/J$ for ideals $I \subseteq J$, and the correspondence theorem identifies the ideals of $A/I$ with the ideals of $A$ containing $I$. A nonzero algebra is **simple** when it has no proper nonzero two-sided ideal, a proper ideal is **maximal** when nothing lies strictly between it and the algebra, and maximality is equivalent to simplicity of the quotient.
+The first isomorphism theorem gives $A/\ker\digamma_{\mathrm{map}} \cong \operatorname{im}\digamma_{\mathrm{map}}$, the second gives $(B+I)/I \cong B/(B\cap I)$ for a subalgebra $B$ and an ideal $I$, the third gives $(A/I)/(J/I) \cong A/J$ for ideals $I \subseteq J$, and the correspondence theorem identifies the ideals of $A/I$ with the ideals of $A$ containing $I$. A nonzero algebra is **simple** when it has no proper nonzero two-sided ideal, a proper ideal is **maximal** when nothing lies strictly between it and the algebra, and maximality is equivalent to simplicity of the quotient.
 
 Associativity is not needed for any of this. It is needed only to multiply ideals — to make the span of the products $xy$, $x \in I$, $y \in J$ an ideal — and to describe a generated ideal by expressions $asb$. The quotient presentations $\mathbb{C} = \mathbb{R}[x]/(x^2+1)$, $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[x]/(x^2-1)$, $\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[x]/(x^2)$ and $\mathbb{H} = \mathbb{R}\langle x,y\rangle/(x^2+1, y^2+1, xy+yx)$ are the concrete output of the construction.
 
@@ -240,8 +240,8 @@ Associativity is not needed for any of this. It is needed only to multiply ideal
 | $I + J$, $I \cap J$, $IJ$ | Sum, intersection, product of ideals |
 | $A/I$ | Quotient algebra by a two-sided ideal $I$ |
 | $\pi : A \to A/I$ | Quotient map, $\ker\pi = I$ |
-| $\varphi : A \to B$ | Algebra homomorphism |
-| $\ker\varphi$, $\operatorname{im}\varphi$ | Kernel (an ideal) and image (a subalgebra) |
+| $\digamma_{\mathrm{map}} : A \to B$ | Algebra homomorphism |
+| $\ker\digamma_{\mathrm{map}}$, $\operatorname{im}\digamma_{\mathrm{map}}$ | Kernel (an ideal) and image (a subalgebra) |
 | $\operatorname{Aut}_R(A)$ | Group of $R$-algebra automorphisms of $A$ |
 | $J(A)$ | Jacobson radical |
 | $\mathbb{R}\langle x, y\rangle$ | Free algebra on two generators |

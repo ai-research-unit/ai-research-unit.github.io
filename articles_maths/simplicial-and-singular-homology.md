@@ -111,7 +111,7 @@ A space $X$ with $H_n(X;R) = 0$ for all $n \geq 1$ and $H_0(X;R) \cong R$ is **a
 
 *Proof.* The chain map property is $f_\# \partial(\sigma) = \sum_i (-1)^i f \sigma \delta^i = \partial f_\#(\sigma)$, an identity of maps; a chain map induces a map on homology because it carries cycles to cycles and boundaries to boundaries. The functorial identities are immediate from associativity of composition.
 
-**Definition.** A **chain homotopy** between chain maps $\varphi, \psi : C_* \to D_*$ is a family of maps $P_n : C_n \to D_{n+1}$ with $\psi_n - \varphi_n = \partial^D_{n+1} P_n + P_{n-1}\partial^C_n$. Chain-homotopic chain maps induce the same map on homology, since $P$ carries cycles to boundaries.
+**Definition.** A **chain homotopy** between chain maps $\digamma_{\mathrm{map}}, Ξ_{\mathrm{wfn}} : C_* \to D_*$ is a family of maps $P_n : C_n \to D_{n+1}$ with $Ξ_{\mathrm{wfn},n} - \digamma_{\mathrm{map},n} = \partial^D_{n+1} P_n + P_{n-1}\partial^C_n$. Chain-homotopic chain maps induce the same map on homology, since $P$ carries cycles to boundaries.
 
 **Theorem (homotopy invariance).** If $f, g : X \to Y$ are homotopic then the induced chain maps are chain homotopic, so $f_* = g_*$; consequently a homotopy equivalence induces an isomorphism on homology.
 
@@ -231,7 +231,7 @@ Singular homology is functorial in the strongest sense: a continuous map induces
 | $H_{\mathrm{red},n}(X;R)$ | Reduced homology; $\varepsilon$ the augmentation |
 | $H_n(X,A;R)$ | Relative homology of a pair $A \subseteq X$ |
 | $f_\#$, $f_*$ | Induced chain map and induced map on homology |
-| $P_n$, chain homotopy | $\psi-\varphi = \partial P + P\partial$; homotopic maps induce equal maps on homology |
+| $P_n$, chain homotopy | $Ξ_{\mathrm{wfn}}-\digamma_{\mathrm{map}} = \partial P + P\partial$; homotopic maps induce equal maps on homology |
 | $\partial : H_n(X,A) \to H_{n-1}(A)$ | Connecting map of the long exact sequence of a pair |
 | Excision | $H_n(X\setminus Z, A\setminus Z) \cong H_n(X,A)$ for $\overline Z \subseteq \operatorname{int}A$ |
 | Mayer–Vietoris | Long exact sequence of $A$, $B$ and $A \cap B$ when $X = \operatorname{int}A \cup \operatorname{int}B$ |

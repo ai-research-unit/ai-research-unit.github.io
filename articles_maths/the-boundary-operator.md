@@ -146,13 +146,13 @@ The theorem is the operator-layer form of the universal coefficient theorem: it 
 
 ### The Leibniz Rule for the Cap Product
 
-**Theorem.** The boundary operator is a graded derivation for the cap product of *Cup and Cap Products*: for a cochain $\varphi$ of degree $k$ and a chain $c$ of degree $n$,
+**Theorem.** The boundary operator is a graded derivation for the cap product of *Cup and Cap Products*: for a cochain $\digamma_{\mathrm{map}}$ of degree $k$ and a chain $c$ of degree $n$,
 
 $$
-\boxed{\;\partial(c \frown \varphi) = (-1)^{k}\bigl((\partial c) \frown \varphi - c \frown \delta\varphi\bigr)\;},
+\boxed{\;\partial(c \frown \digamma_{\mathrm{map}}) = (-1)^{k}\bigl((\partial c) \frown \digamma_{\mathrm{map}} - c \frown \delta\digamma_{\mathrm{map}}\bigr)\;},
 $$
 
-so that on classes the cap product makes $H_*(X;R)$ a graded module over the graded ring $H^*(X;R)$, with the boundary measuring the failure of the two terms on the right to cancel. The dual statement, the Leibniz rule $\delta(\varphi \smile \psi) = (\delta\varphi)\smile\psi + (-1)^{|\varphi|}\varphi\smile(\delta\psi)$, makes the coboundary a graded derivation for the cup product; its operator form is the subject of *The Cup Product as an Operator*.
+so that on classes the cap product makes $H_*(X;R)$ a graded module over the graded ring $H^*(X;R)$, with the boundary measuring the failure of the two terms on the right to cancel. The dual statement, the Leibniz rule $\delta(\digamma_{\mathrm{map}} \smile Ξ_{\mathrm{wfn}}) = (\delta\digamma_{\mathrm{map}})\smileΞ_{\mathrm{wfn}} + (-1)^{|\digamma_{\mathrm{map}}|}\digamma_{\mathrm{map}}\smile(\deltaΞ_{\mathrm{wfn}})$, makes the coboundary a graded derivation for the cup product; its operator form is the subject of *The Cup Product as an Operator*.
 
 *Proof.* Both are the cochain-level identities of *Cup and Cap Products*, where the sign is forced by the convention for the evaluation of a cochain on a chain; the first is the boundary rule for the cap product, the second the Leibniz rule for the cup product.
 

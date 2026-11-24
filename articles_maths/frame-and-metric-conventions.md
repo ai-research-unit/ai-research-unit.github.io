@@ -135,15 +135,7 @@ Eight rules follow.
 
 ## Summary
 
-The word *frame* here means a spacetime frame: a choice of coordinates on the biquaternion space. There are two, $\mathbb{B}$ and $\mathbb{B}_{\Phi}$, and each carries its coordinate as part of the choice. The metric is one, $\delta_{\mu\nu}=(1,1,1,1)$, the same in both.
-
-The $\mathbb{B}$ frame is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$: the natural complete frame, the general frame of the biquaternion universe, with interval coefficients $(1,1,1,1)$, the Euclidean form, and no reality condition. The material case is $Q_t=iq'_t$, $Q_k=q_k$, and there the interval is the Minkowski one. The $\mathbb{B}_{\Phi}$ frame is a particular case of it, kept for convenience: the material real frame, $x_0=q'_t$ on $\mathbb{B}_{\Phi}$; the time direction is the one the weight leaves positive. On the material case the two differ by $Q_t=ix_0$.
-
-The metric is one, and it is the tuple of the interval in the $Q$'s: $\delta_{\mu\nu}=(1,1,1,1)$ with $\sum_\mu Q_\mu^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$. In the $\mathbb{B}_{\Phi}$ frame the same interval reads $-x_0^2+x_1^2+x_2^2+x_3^2$, and the one minus is the $i$ of $Q_t=ix_0$, which is $i^2=-1$ on the time slot. The plain weight $\varepsilon=(1,-1,-1,-1)$ is a different object: it belongs to the product and is the same in both frames. Naming the frame and its coordinate together is what keeps a sign from moving silently.
-
-**The Clifford map carries the directions, not a basis.** It sends the four directions of a frame into $M_4(\mathbb{C})$; its image is four-dimensional and not closed, and its products leave it. It is a dictionary for the physics literature, not a map of $\mathbb{B}$: the framework studies physics by the change of frame, $\mathbb{B}$ in the general case and the real frame of $\mathbb{B}_{\Phi}$ in the material case. The base change is the substitution $Q_t=ix_0$, written once, and the interval is read in the new coordinate after it.
-
-**A count of directions is named directly.** The **inertia** of a form is the triple $(n,m,r)$ of its positive, negative and null directions, and $\sigma=n-m$ is its **excess**. No metric, interval or norm carries either.
+Two frames, one metric. The $\mathbb{B}$ frame reads the complex coordinate $Q_\mu$ with interval $\sum_\mu Q_\mu^2$. The $\mathbb{B}_{\Phi}$ frame reads the real $x_\mu$ of the material sector, where the one $i$ of $Q_t=ix_0$ puts the single minus on the time term. The metric is $\delta_{\mu\nu}=(1,1,1,1)$ in both, the plain weight $\varepsilon$ belongs to the product, and the Clifford map is a dictionary into $M_4(\mathbb{C})$, not a structure of the algebra. Naming a frame names its coordinate, which is what keeps a sign from moving silently.
 
 ## Summary of Notation
 
@@ -154,7 +146,7 @@ The metric is one, and it is the tuple of the interval in the $Q$'s: $\delta_{\m
 | $\varepsilon=(1,-1,-1,-1)$ | The plain weight, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; the same in both frames |
 | $\langle\tilde Q\rangle_\natural=\sum_\mu Q_\mu^2$ | The quaternionic interval; coefficients $\delta_{\mu\nu}=(1,1,1,1)$ in the $Q$ coordinate (complex in general), and $-(q'_t)^2+q_x^2+q_y^2+q_z^2$ read on $\mathbb{B}_{\Phi}$ |
 | $\delta_{\mu\nu}$ | The unit metric, $(1,1,1,1)$ on the four $Q_\mu$, the same on the general frame and on the two real sectors |
-| $(n,m,r)$ | The **inertia** of a form: its counts of positive, negative and null directions, positive counted first |
+| $(n,m,r)$ | The **inertia** of a form: the counts of positive, negative and null directions, positive first; a count of a form, carried by no metric, interval or norm |
 | $\sigma=n-m$ | The **excess** of a form: the positive count less the negative one |
 | $\gamma_\mu$ | The four values of the Clifford map, one set for both frames, the index always low; the arrays are displayed in §*The Clifford Map* |
 | $\mathsf{K}$ | The Clifford map, a dictionary from the four directions of a frame into $M_4(\mathbb{C})$, the same in both frames, not a structure of $\mathbb{B}$; its values are displayed in §*The Clifford Map* |

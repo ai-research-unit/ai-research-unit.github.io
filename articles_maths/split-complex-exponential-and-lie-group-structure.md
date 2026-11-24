@@ -175,7 +175,7 @@ $$
 t \longmapsto \exp(tQ), \qquad Q \in \mathbb{C}_{\mathrm{spl}},
 $$
 
-and the infinitesimal generator $Q$ is recovered as $\phi'(0)$. Explicitly, for $Q = q + j q'$,
+and the infinitesimal generator $Q$ is recovered as $\digamma_{\mathrm{map}}'(0)$. Explicitly, for $Q = q + j q'$,
 
 $$
 \exp(tQ) = \exp(q t)\bigl(\cosh(q' t) + j\sinh(q' t)\bigr),
@@ -183,7 +183,7 @@ $$
 
 so the one-parameter subgroups are the exponentials of the straight lines through the origin of the abelian Lie algebra; as unparametrised subgroups they are indexed by the directions $\mathbb{R}Q$ in $\mathbb{C}_{\mathrm{spl}}$, a real projective line.
 
-**Proof.** A one-parameter subgroup is a continuous homomorphism $\phi : (\mathbb{R},+)\to{\mathbb{C}_{\mathrm{spl}}}^\times$; being differentiable by continuity, it has an infinitesimal generator $Q = \phi'(0)\in\operatorname{Lie}({\mathbb{C}_{\mathrm{spl}}}^\times) = \mathbb{C}_{\mathrm{spl}}$, and the standard Lie-theoretic argument gives $\phi(t) = \exp(tQ)$. Because $\exp$ is injective on $\mathbb{C}_{\mathrm{spl}}$, the image $\exp(\mathbb{R}Q)$ determines the line $\mathbb{R}Q$, while replacing $Q$ by a nonzero scalar multiple reparametrises the same image; hence the homomorphism determines $Q$ uniquely and the subgroup determines the direction. The displayed formula is the closed form applied to $tQ = q t + q' t j$.
+**Proof.** A one-parameter subgroup is a continuous homomorphism $\digamma_{\mathrm{map}} : (\mathbb{R},+)\to{\mathbb{C}_{\mathrm{spl}}}^\times$; being differentiable by continuity, it has an infinitesimal generator $Q = \digamma_{\mathrm{map}}'(0)\in\operatorname{Lie}({\mathbb{C}_{\mathrm{spl}}}^\times) = \mathbb{C}_{\mathrm{spl}}$, and the standard Lie-theoretic argument gives $\digamma_{\mathrm{map}}(t) = \exp(tQ)$. Because $\exp$ is injective on $\mathbb{C}_{\mathrm{spl}}$, the image $\exp(\mathbb{R}Q)$ determines the line $\mathbb{R}Q$, while replacing $Q$ by a nonzero scalar multiple reparametrises the same image; hence the homomorphism determines $Q$ uniquely and the subgroup determines the direction. The displayed formula is the closed form applied to $tQ = q t + q' t j$.
 
 **The geometry slot.** The parameter $Q = j$ generates the hyperbolic rotation subgroup
 

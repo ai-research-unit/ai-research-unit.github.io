@@ -10,9 +10,9 @@ $$
 \mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y) = h(x,y) + h(y,x)
 $$
 
-recovers from the diagonal the **trace form** $h(x,y) + \varsigma(h(x,y))$, and leaves the anti-Hermitian part of $h$ unseen; at the trivial base involution and with $2$ invertible the passage is a bijection, and in characteristic two the diagonal sees nothing at all. And the **Hermitian square** $x^{*}x$ of the algebra is the element whose functional image is the diagonal, $\mathfrak{Q}(x) = \varphi(x^{*}x)$, so that the quadratic form of the layer is carried by the involution of the algebra and not by the form alone.
+recovers from the diagonal the **trace form** $h(x,y) + \varsigma(h(x,y))$, and leaves the anti-Hermitian part of $h$ unseen; at the trivial base involution and with $2$ invertible the passage is a bijection, and in characteristic two the diagonal sees nothing at all. And the **Hermitian square** $x^{*}x$ of the algebra is the element whose functional image is the diagonal, $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x)$, so that the quadratic form of the layer is carried by the involution of the algebra and not by the form alone.
 
-This is the counterpart, in the sesquilinear layer, of *Quadratic Forms and Polarisation*, whose identity and whose characteristic-two degeneracy are the same. The form is *Sesqualgebras with a Form*, the matrix and quaternion quadratics are *Quadratic Forms over Algebras and Norms*, the trace form is *Hermitian Algebras*, and the real form that the trace form defines is *Real Forms and the Signature*. Throughout, $(A,*,h)$ is a sesqualgebra with a form over a base $(R,\varsigma)$, $\varphi = h(\cdot, 1)$ is the functional of the form, and $R^{\varsigma}$ is the fixed ring.
+This is the counterpart, in the sesquilinear layer, of *Quadratic Forms and Polarisation*, whose identity and whose characteristic-two degeneracy are the same. The form is *Sesqualgebras with a Form*, the matrix and quaternion quadratics are *Quadratic Forms over Algebras and Norms*, the trace form is *Hermitian Algebras*, and the real form that the trace form defines is *Real Forms and the Signature*. Throughout, $(A,*,h)$ is a sesqualgebra with a form over a base $(R,\varsigma)$, $\digamma_{\mathrm{map}} = h(\cdot, 1)$ is the functional of the form, and $R^{\varsigma}$ is the fixed ring.
 
 ## The Diagonal
 
@@ -67,16 +67,16 @@ The diagonal of the layer is computed by the algebra, because the functional of 
 **Proposition.** The diagonal is the functional image of the **Hermitian square**:
 
 $$
-\boxed{\;\mathfrak{Q}(x) = \varphi(x^{*}x), \qquad \varphi = h(\cdot, 1)\;},
+\boxed{\;\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x), \qquad \digamma_{\mathrm{map}} = h(\cdot, 1)\;},
 $$
 
 and $x^{*}x$ is self-adjoint, $(x^{*}x)^{*} = x^{*}x$.
 
-**Proof.** $\varphi(x^{*}x) = h(x^{*}x, 1) = h(x, x^{*}1) = h(x,x)$, by the compatibility $h(ab,c) = h(b,a^{*}c)$ read at $(a,b,c) = (x^{*},x,1)$ and by $1^{*} = 1$. Self-adjointness is the involution axiom, $(x^{*}x)^{*} = x^{*}x^{**} = x^{*}x$.
+**Proof.** $\digamma_{\mathrm{map}}(x^{*}x) = h(x^{*}x, 1) = h(x, x^{*}1) = h(x,x)$, by the compatibility $h(ab,c) = h(b,a^{*}c)$ read at $(a,b,c) = (x^{*},x,1)$ and by $1^{*} = 1$. Self-adjointness is the involution axiom, $(x^{*}x)^{*} = x^{*}x^{**} = x^{*}x$.
 
-**Corollary.** The **quadratic form of the algebra** $\mathfrak{Q}(x) = \varphi(x^{*}x)$ satisfies $\mathfrak{Q}(x) = h(x,x)$, and its polarisation is the trace form, $\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y) = h_{\mathrm{tr}}(x,y)$.
+**Corollary.** The **quadratic form of the algebra** $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x)$ satisfies $\mathfrak{Q}(x) = h(x,x)$, and its polarisation is the trace form, $\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y) = h_{\mathrm{tr}}(x,y)$.
 
-The two products $x^{*}x$ and $xx^{*}$ are the two Hermitian squares of the element, exchanged by the involution. The second gives the same diagonal for a **cyclic** functional, in particular for the trace form $\varphi = \tau$, where $\varphi(xx^{*}) = \varphi(x^{*}x)$ and the diagonal is also the functional image of $xx^{*}$; for a non-cyclic functional the two differ, and it is $x^{*}x$ that the diagonal reads. The square is the **norm map** of the layer; it is quadratic over $R^{\varsigma}$ in the sense $(\lambda x)^{*}(\lambda x) = \varsigma(\lambda)\lambda\,x^{*}x = |\lambda|^{2}x^{*}x$, and it is multiplicative for the elements of the unitary slice, $(xy)^{*}(xy) = y^{*}(x^{*}x)y$. When the norm map is multiplicative on the whole algebra the form is that of a composition algebra, and the norm form of the quaternion and octonion algebras is the classical instance: the polarisation of the norm is the trace form, and the whole theory is *Hermitian Forms over Algebras and Norms*.
+The two products $x^{*}x$ and $xx^{*}$ are the two Hermitian squares of the element, exchanged by the involution. The second gives the same diagonal for a **cyclic** functional, in particular for the trace form $\digamma_{\mathrm{map}} = \tau$, where $\digamma_{\mathrm{map}}(xx^{*}) = \digamma_{\mathrm{map}}(x^{*}x)$ and the diagonal is also the functional image of $xx^{*}$; for a non-cyclic functional the two differ, and it is $x^{*}x$ that the diagonal reads. The square is the **norm map** of the layer; it is quadratic over $R^{\varsigma}$ in the sense $(\lambda x)^{*}(\lambda x) = \varsigma(\lambda)\lambda\,x^{*}x = |\lambda|^{2}x^{*}x$, and it is multiplicative for the elements of the unitary slice, $(xy)^{*}(xy) = y^{*}(x^{*}x)y$. When the norm map is multiplicative on the whole algebra the form is that of a composition algebra, and the norm form of the quaternion and octonion algebras is the classical instance: the polarisation of the norm is the trace form, and the whole theory is *Hermitian Forms over Algebras and Norms*.
 
 ## The Failure When 2 Is Not Invertible
 
@@ -112,7 +112,7 @@ On $\mathbb{B}$ with the dagger, $\mathfrak{Q}(\tilde Q) = \operatorname{Sc}(\ti
 - The **polarisation identity** reads $\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y) = h_{\mathrm{tr}}(x,y)$, the trace form.
 - The trace form is symmetric and $R^{\varsigma}$-bilinear, the anti-Hermitian part $h_{\mathrm{sk}}$ is alternating, and $h = \tfrac{1}{2}h_{\mathrm{tr}} + \tfrac{1}{2}h_{\mathrm{sk}}$ when $2$ is invertible: the diagonal recovers the trace form and never the antisymmetric part.
 - Over $\mathbb{C}$ the decomposition is $\operatorname{Re}h + \mathrm{i}\operatorname{Im}h$, a real symmetric form and a real alternating form.
-- The diagonal is the functional image of the **Hermitian square**, $\mathfrak{Q}(x) = \varphi(x^{*}x)$, and the quadratic form $\mathfrak{Q}(x) = \varphi(x^{*}x)$ has the trace form for its polarisation; for a cyclic functional the square $xx^{*}$ gives the same diagonal.
+- The diagonal is the functional image of the **Hermitian square**, $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x)$, and the quadratic form $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(x^{*}x)$ has the trace form for its polarisation; for a cyclic functional the square $xx^{*}$ gives the same diagonal.
 - In characteristic two with the trivial involution the polarisation degenerates, the diagonal determines nothing, and a quadratic refinement is extra structure.
 - The classical bilinear original is *Quadratic Forms and Polarisation*; the norm forms of the algebras are *Hermitian Forms over Algebras and Norms*.
 
@@ -124,9 +124,9 @@ On $\mathbb{B}$ with the dagger, $\mathfrak{Q}(\tilde Q) = \operatorname{Sc}(\ti
 | $h_{\mathrm{tr}}$ | the trace form $h(x,y) + \varsigma(h(x,y))$ |
 | $h_{\mathrm{sk}}$ | the anti-Hermitian part $h(x,y) - \varsigma(h(x,y))$ |
 | $h^{\dagger}$ | the involution $h^{\dagger}(x,y) = \varsigma(h(y,x))$ on the forms |
-| $\varphi$ | the functional $h(\cdot,1)$ |
+| $\digamma_{\mathrm{map}}$ | the functional $h(\cdot,1)$ |
 | $xx^{*}$ | the Hermitian square of $x$ |
-| $\mathfrak{Q}(x) = \varphi(xx^{*})$ | the quadratic form of the algebra |
+| $\mathfrak{Q}(x) = \digamma_{\mathrm{map}}(xx^{*})$ | the quadratic form of the algebra |
 | $R^{\varsigma}$ | the fixed ring of the base involution |
 
 ## Further Reading

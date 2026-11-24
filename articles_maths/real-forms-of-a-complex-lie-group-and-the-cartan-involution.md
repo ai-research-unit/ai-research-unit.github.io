@@ -29,7 +29,7 @@ The article assumes the real and the complex Lie group, the complexification of 
 
 **Corollary.** Two real forms $\mathrm{G}$ and $\mathrm{G}'$ are **equivalent** — conjugate by an automorphism of $\mathrm{G}_{\mathbb{C}}$ — exactly when their conjugations are conjugate by an automorphism of $\mathrm{G}_{\mathbb{C}}$; the classification of the real forms is therefore the classification of the conjugations up to conjugacy.
 
-*Proof.* An automorphism $\varphi$ of $\mathrm{G}_{\mathbb{C}}$ carries the conjugation $\sigma$ to $\varphi\sigma\varphi^{-1}$, whose fixed algebra is $\varphi(\mathrm{G}^{\sigma})$; the correspondence is bijective.
+*Proof.* An automorphism $\digamma_{\mathrm{map}}$ of $\mathrm{G}_{\mathbb{C}}$ carries the conjugation $\sigma$ to $\digamma_{\mathrm{map}}\sigma\digamma_{\mathrm{map}}^{-1}$, whose fixed algebra is $\digamma_{\mathrm{map}}(\mathrm{G}^{\sigma})$; the correspondence is bijective.
 
 ## The Cartan Involution
 

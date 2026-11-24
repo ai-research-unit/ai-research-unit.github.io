@@ -74,13 +74,13 @@ so the derivative at $0$ vanishes, which for all $v$ is the variational equation
 
 **Theorem (the classical Dirichlet principle).** Let $U\in H^1(\Omega)$ be harmonic on $\Omega$ and let $\mathcal{E}_U=\{w\in H^1(\Omega) : w-U\in H^1_0(\Omega)\}$ be the affine set of admissible functions with the boundary data of $U$. Then $U$ minimises the Dirichlet integral $\int_\Omega|\nabla w|^2$ over $\mathcal{E}_U$, and it is the unique minimiser.
 
-*Proof.* For any $w=U+\phi$ with $\phi\in H^1_0(\Omega)$,
+*Proof.* For any $w=U+\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}\in H^1_0(\Omega)$,
 
 $$
-\boxed{\;\int|\nabla w|^2 = \int|\nabla U|^2 + 2\operatorname{Re}\int\nabla U\cdot\overline{\nabla\phi} + \int|\nabla\phi|^2\;} ,
+\boxed{\;\int|\nabla w|^2 = \int|\nabla U|^2 + 2\operatorname{Re}\int\nabla U\cdot\overline{\nabla\digamma_{\mathrm{map}}} + \int|\nabla\digamma_{\mathrm{map}}|^2\;} ,
 $$
 
-and the middle term vanishes because $\Delta U=0$ in the weak sense and $\phi$ has trace zero; hence $\int|\nabla w|^2\ge\int|\nabla U|^2$, with equality only for $\phi=0$ by the Poincaré inequality. The classical minimiser is therefore the harmonic function with the given boundary values.
+and the middle term vanishes because $\Delta U=0$ in the weak sense and $\digamma_{\mathrm{map}}$ has trace zero; hence $\int|\nabla w|^2\ge\int|\nabla U|^2$, with equality only for $\digamma_{\mathrm{map}}=0$ by the Poincaré inequality. The classical minimiser is therefore the harmonic function with the given boundary values.
 
 ## Regularity of the Minimiser
 
@@ -92,15 +92,15 @@ and the middle term vanishes because $\Delta U=0$ in the weak sense and $\phi$ h
 
 ## The Inhomogeneous Problem and Variational Inequalities
 
-**Theorem (the inhomogeneous Dirichlet problem).** Let $U\in H^1(\Omega)$ carry the boundary data and let $\phi\in H^1_0(\Omega)$, so that $w=U+\phi$ is the general admissible function. Then the minimiser of $\int|\nabla w|^2-2\operatorname{Re}\langle f,w\rangle$ over the affine set $U+H^1_0(\Omega)$ is $w=U+\phi_0$, where $\phi_0$ is the weak solution of
+**Theorem (the inhomogeneous Dirichlet problem).** Let $U\in H^1(\Omega)$ carry the boundary data and let $\digamma_{\mathrm{map}}\in H^1_0(\Omega)$, so that $w=U+\digamma_{\mathrm{map}}$ is the general admissible function. Then the minimiser of $\int|\nabla w|^2-2\operatorname{Re}\langle f,w\rangle$ over the affine set $U+H^1_0(\Omega)$ is $w=U+\digamma_{\mathrm{map},0}$, where $\digamma_{\mathrm{map},0}$ is the weak solution of
 
 $$
-\mathfrak{a}(\phi,v) = \langle f,v\rangle - \mathfrak{a}(U,v) \qquad (v\in H^1_0(\Omega)) ,
+\mathfrak{a}(\digamma_{\mathrm{map}},v) = \langle f,v\rangle - \mathfrak{a}(U,v) \qquad (v\in H^1_0(\Omega)) ,
 $$
 
-and the dependence of $\phi_0$ on $U$ is affine and bounded; the boundary data therefore enter the problem as an extra source term $-\mathfrak{a}(U,\cdot)$.
+and the dependence of $\digamma_{\mathrm{map},0}$ on $U$ is affine and bounded; the boundary data therefore enter the problem as an extra source term $-\mathfrak{a}(U,\cdot)$.
 
-*Proof.* Substituting $w=U+\phi$ in the Dirichlet principle, the functional becomes $E_f(U+\phi)$, whose part depending on $\phi$ is $\mathfrak{a}(\phi,\phi)-2\operatorname{Re}\langle f,\phi\rangle+2\operatorname{Re}\mathfrak{a}(U,\phi)$ plus a constant; the minimiser satisfies the variational equation displayed, and Lax–Milgram gives existence, uniqueness and the affine bounded dependence on $U$.
+*Proof.* Substituting $w=U+\digamma_{\mathrm{map}}$ in the Dirichlet principle, the functional becomes $E_f(U+\digamma_{\mathrm{map}})$, whose part depending on $\digamma_{\mathrm{map}}$ is $\mathfrak{a}(\digamma_{\mathrm{map}},\digamma_{\mathrm{map}})-2\operatorname{Re}\langle f,\digamma_{\mathrm{map}}\rangle+2\operatorname{Re}\mathfrak{a}(U,\digamma_{\mathrm{map}})$ plus a constant; the minimiser satisfies the variational equation displayed, and Lax–Milgram gives existence, uniqueness and the affine bounded dependence on $U$.
 
 **Theorem (variational inequalities).** Let $K\subseteq H^1_0(\Omega)$ be a nonempty closed convex set and let $\mathfrak{a}$ be a bounded coercive Hermitian form. Then $E_f$ has a unique minimiser $w$ over $K$, and $w$ is characterised by the variational inequality
 
@@ -110,7 +110,7 @@ $$
 
 *Proof.* Existence is the standard argument for a coercive convex continuous functional on a closed convex set: a minimising sequence is bounded, so a subsequence converges weakly, and the weak lower semicontinuity of $E_f$, which is convex continuous, gives a minimiser. Uniqueness is strict convexity, using the parallelogram identity for the quadratic part. For the characterisation, the convexity of $K$ makes $w+t(v-w)\in K$ for $0\le t\le1$; the derivative of $t\mapsto E_f(w+t(v-w))$ at $t=0$ is $2\operatorname{Re}(\mathfrak{a}(w,v-w)-\langle f,v-w\rangle)$, and it must be nonnegative.
 
-**Example (the obstacle problem).** For $K=\{w\in H^1_0(\Omega) : w\ge\psi \text{ a.e.}\}$ with an obstacle $\psi\le0$ on the boundary and datum $f=0$, the minimiser satisfies the variational inequality and is the smallest superharmonic majorant of $\psi$: $-\Delta w\ge0$ on $\Omega$, $-\Delta w=0$ on the coincidence set $\{w>\psi\}$, and $w\ge\psi$. The inequality replaces the equation on the contact set, and it is the prototype of the variational inequalities of *The Calculus of Variations* and, in the literature, of *An Introduction to Variational Inequalities and Their Applications* by Kinderlehrer and Stampacchia.
+**Example (the obstacle problem).** For $K=\{w\in H^1_0(\Omega) : w\geΞ_{\mathrm{wfn}} \text{ a.e.}\}$ with an obstacle $Ξ_{\mathrm{wfn}}\le0$ on the boundary and datum $f=0$, the minimiser satisfies the variational inequality and is the smallest superharmonic majorant of $Ξ_{\mathrm{wfn}}$: $-\Delta w\ge0$ on $\Omega$, $-\Delta w=0$ on the coincidence set $\{w>Ξ_{\mathrm{wfn}}\}$, and $w\geΞ_{\mathrm{wfn}}$. The inequality replaces the equation on the contact set, and it is the prototype of the variational inequalities of *The Calculus of Variations* and, in the literature, of *An Introduction to Variational Inequalities and Their Applications* by Kinderlehrer and Stampacchia.
 
 ## Summary
 
@@ -129,7 +129,7 @@ The elliptic weak problem has a Hermitian functional $E_f(w)=\mathfrak{a}(w,w)-2
 | $\mathcal{E}_U=U+H^1_0(\Omega)$ | Affine admissible set with boundary data $U$ |
 | $c$ | Coercivity constant of the form |
 | $K$ | Nonempty closed convex constraint set |
-| $\psi$ | Obstacle, the function defining $K=\{w\ge\psi\}$ |
+| $Ξ_{\mathrm{wfn}}$ | Obstacle, the function defining $K=\{w\geΞ_{\mathrm{wfn}}\}$ |
 
 ## Further Reading
 

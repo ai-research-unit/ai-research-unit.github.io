@@ -51,17 +51,17 @@ $$
 
 the infimum over the homeomorphisms compatible with the markings up to isotopy. The function $d_T$ is a complete metric on $\mathcal{T}(S)$, called the **Teichmüller metric**; it is invariant under the action of the mapping class group, so it descends to a metric on the moduli space.
 
-**Theorem (Teichmüller; existence and uniqueness of the extremal map).** Let $[X,f],[Y,h]\in\mathcal{T}(S)$ and let $K$ be the value of the infimum above. Then the infimum is attained: there is a homeomorphism $k : X\to Y$ with $K(k) = K$ realising the distance, and it is unique up to composition with a conformal automorphism of $Y$. The extremal map is the **Teichmüller map**, and it is characterised by the existence of a holomorphic quadratic differential $\phi$ on $X$ such that the Beltrami coefficient of $k$ is
+**Theorem (Teichmüller; existence and uniqueness of the extremal map).** Let $[X,f],[Y,h]\in\mathcal{T}(S)$ and let $K$ be the value of the infimum above. Then the infimum is attained: there is a homeomorphism $k : X\to Y$ with $K(k) = K$ realising the distance, and it is unique up to composition with a conformal automorphism of $Y$. The extremal map is the **Teichmüller map**, and it is characterised by the existence of a holomorphic quadratic differential $\digamma_{\mathrm{map}}$ on $X$ such that the Beltrami coefficient of $k$ is
 
 $$
-\boxed{\;\mu = k_0\,\frac{\bar\phi}{|\phi|}, \qquad k_0 = \frac{K-1}{K+1}\;} ,
+\boxed{\;\mu = k_0\,\frac{\bar\digamma_{\mathrm{map}}}{|\digamma_{\mathrm{map}}|}, \qquad k_0 = \frac{K-1}{K+1}\;} ,
 $$
 
-a Beltrami differential of constant modulus $k_0$ determined by the direction field of $\phi$. In the natural coordinates of $\phi$ on $X$ and of the push-forward quadratic differential on $Y$, the map $k$ is affine, with the same constant stretch: it multiplies the horizontal coordinate by a fixed factor and the vertical coordinate by the reciprocal factor.
+a Beltrami differential of constant modulus $k_0$ determined by the direction field of $\digamma_{\mathrm{map}}$. In the natural coordinates of $\digamma_{\mathrm{map}}$ on $X$ and of the push-forward quadratic differential on $Y$, the map $k$ is affine, with the same constant stretch: it multiplies the horizontal coordinate by a fixed factor and the vertical coordinate by the reciprocal factor.
 
 **Proof sketch.** The existence and the uniqueness of the extremal quasiconformal map are the theorems of Teichmüller, proved by the reduction to the Beltrami equation with the coefficient of constant modulus determined by an extremal quadratic differential; the analytic content — the measurable Riemann mapping theorem, the solvability of the Beltrami equation and the extremal length — belongs elsewhere in the corpus (*Measure Theory and Integration*, *Fourier Analysis on Euclidean Spaces*, *Sobolev Spaces and Weak Solutions*), where the measure and the limit are available; the quasiconformal maps themselves are not developed anywhere in it. The explicit form of the extremal map in the coordinates of the quadratic differential is the computation that gives both the existence and the uniqueness.
 
-**Theorem (Teichmüller geodesics; the distance formula).** The Teichmüller metric is a Finsler metric, whose infinitesimal norm is the infimum of the essential sup norms of the Beltrami coefficients modulo the trivial ones; it is not Riemannian for $g\geq2$. The geodesic ray determined by a holomorphic quadratic differential $\phi$ is the family of the extremal maps with Beltrami coefficients $k_0(t)\,\bar\phi/|\phi|$ as the modulus $k_0(t)$ increases from $0$, and every geodesic is of this form; two points are joined by a unique geodesic. The distance has the extremal-length formulation of Kerckhoff: the metric is also given by
+**Theorem (Teichmüller geodesics; the distance formula).** The Teichmüller metric is a Finsler metric, whose infinitesimal norm is the infimum of the essential sup norms of the Beltrami coefficients modulo the trivial ones; it is not Riemannian for $g\geq2$. The geodesic ray determined by a holomorphic quadratic differential $\digamma_{\mathrm{map}}$ is the family of the extremal maps with Beltrami coefficients $k_0(t)\,\bar\digamma_{\mathrm{map}}/|\digamma_{\mathrm{map}}|$ as the modulus $k_0(t)$ increases from $0$, and every geodesic is of this form; two points are joined by a unique geodesic. The distance has the extremal-length formulation of Kerckhoff: the metric is also given by
 
 $$
 \boxed{\;d_T([X,f],[Y,h]) = \tfrac12\log\inf_{\gamma}\frac{\mathrm{Ext}_Y(\gamma)}{\mathrm{Ext}_X(\gamma)}\;} ,
@@ -76,7 +76,7 @@ the infimum over the simple closed curves $\gamma$ on $S$, where $\mathrm{Ext}$ 
 **Remark (the two metrics).** The other canonical metric, the **Weil–Petersson metric**, is defined by the pairing of the holomorphic quadratic differentials
 
 $$
-\langle\phi,\psi\rangle_{\mathrm{WP}} = \int_X \phi\,\overline{\psi}\,\lambda^{-2},
+\langle\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}\rangle_{\mathrm{WP}} = \int_X \digamma_{\mathrm{map}}\,\overline{Ξ_{\mathrm{wfn}}}\,\lambda^{-2},
 $$
 
 where the hyperbolic metric of $X$ is written $\lambda^2|dz|^2$ in a conformal coordinate, and it is a Kähler metric of negative scalar curvature which is incomplete; it is the metric appearing in the Ahlfors–Bers theory of the deformation spaces and in the Weil–Petersson volumes of the moduli spaces. The analytic definition of the integral and the Kähler properties of the metric belong to Part III and to *Kähler Geometry* respectively; the two metrics are distinct, the Teichmüller metric being Finsler and the Weil–Petersson metric Riemannian, and the comparison of their geodesics and their boundaries is one of the standard themes of the theory.
@@ -154,7 +154,7 @@ The mapping class group $\mathrm{Mod}(S)$ acts properly discontinuously by bihol
 | $6g-6+2n$, $3g-3+n$ | Real and complex dimensions of $\mathcal{T}(S)$ |
 | $\gamma_i$, $\ell_{\gamma}$, $\tau_i$ | Curves of a pants decomposition; the length and Fenchel–Nielsen twist coordinates |
 | $d_T$, $K(k)$ | Teichmüller distance, $\frac12\inf\log K$; dilatation of a quasiconformal homeomorphism |
-| $\mu = k_0\bar\phi/\vert\phi\vert$ | Beltrami coefficient of the Teichmüller map, $k_0=(K-1)/(K+1)$; $\phi$ the extremal holomorphic quadratic differential |
+| $\mu = k_0\bar\digamma_{\mathrm{map}}/\vert\digamma_{\mathrm{map}}\vert$ | Beltrami coefficient of the Teichmüller map, $k_0=(K-1)/(K+1)$; $\digamma_{\mathrm{map}}$ the extremal holomorphic quadratic differential |
 | $Q(X)$, $\mathrm{Ext}_X(\gamma)$ | Holomorphic quadratic differentials on $X$; extremal length of a curve |
 | $\langle\cdot,\cdot\rangle_{\mathrm{WP}}$ | Weil–Petersson pairing of quadratic differentials; $\lambda$ the hyperbolic metric density |
 | $\overline{\mathcal{M}}_{g,n}$ | Deligne–Mumford compactification by the stable curves |

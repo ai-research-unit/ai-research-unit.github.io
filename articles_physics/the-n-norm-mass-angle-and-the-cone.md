@@ -144,7 +144,7 @@ $$
 \varrho\,e^{i\theta_{\mathrm{pha}}},\qquad \varrho=\lvert N\rvert^{1/2}>0 .
 $$
 
-The scale is the modulus of the norm and the angle is its unimodular direction. In coordinates, writing $N=\lvert N\rvert e^{i\psi}$ with $\psi\in(-\pi,\pi]$, the angle is $\psi/2$ and the modulus is $\lvert N\rvert^{1/2}$. The phase therefore lives in a half-circle, $\theta_{\mathrm{pha}}=\psi/2\in(-\pi/2,\pi/2]$, and the range is not the full circle: the branch has halved it.
+The scale is the modulus of the norm and the angle is its unimodular direction. In coordinates, writing $N=\lvert N\rvert e^{iΞ_{\mathrm{wfn}}}$ with $Ξ_{\mathrm{wfn}}\in(-\pi,\pi]$, the angle is $Ξ_{\mathrm{wfn}}/2$ and the modulus is $\lvert N\rvert^{1/2}$. The phase therefore lives in a half-circle, $\theta_{\mathrm{pha}}=Ξ_{\mathrm{wfn}}/2\in(-\pi/2,\pi/2]$, and the range is not the full circle: the branch has halved it.
 
 The halving is the square root, and it is the reason the angle is called the angle. A rotation by $2\pi$ of the norm is a rotation by $\pi$ of the modulus, and a rotation by $2\pi$ of the modulus is a rotation by $\pi$ of the phase. The phase is an angle in the double cover of the circle, exactly as the rotor angle is, and the two are independent.
 
@@ -162,7 +162,7 @@ $$
 
 The scale is the same expression in both cases and its reading is not. On a spacelike four-vector $\varrho$ is the proper length of the displacement. On a timelike four-vector $\varrho$ is $mc$, because $N=-m^{2}c^{2}$ and $\varrho=mc$; the mass is $m=\varrho/c$. One modulus, two names, and the name is decided by the sign of the norm.
 
-The consequence is that matter sits at the endpoint of the phase interval. The phase of a timelike four-vector is exactly $i$, which is the boundary value $\psi/2=\pi/2$ of the half-circle. It is not an interior point of the range that matter happens to occupy. It is the endpoint, and the endpoint is reached because the norm is real and negative, which is the definition of timelike.
+The consequence is that matter sits at the endpoint of the phase interval. The phase of a timelike four-vector is exactly $i$, which is the boundary value $Ξ_{\mathrm{wfn}}/2=\pi/2$ of the half-circle. It is not an interior point of the range that matter happens to occupy. It is the endpoint, and the endpoint is reached because the norm is real and negative, which is the definition of timelike.
 
 The angle is therefore a sign label on the sector and a free parameter off it. This is the sharpest difference between the two readings of one complex number. On the algebra the phase is one continuous parameter of the group of invertibles. On the material sector it takes two values, and the two values are the two halves of the light cone, and the third case is the cone itself.
 

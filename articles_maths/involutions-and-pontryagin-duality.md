@@ -29,7 +29,7 @@ $$
 
 Consequently $\sigma^\vee$ is the unique continuous involution of $G^\vee$ making the evaluation pairing equivariant, and the duality is an equivalence between the category of locally compact abelian groups with involutions and its own opposite: a morphism $f : G \to H$ of involutive groups, $f\sigma_G = \sigma_H f$, dualises to a morphism $f^\vee : H^\vee \to G^\vee$ with $f^\vee\sigma_H^\vee = \sigma_G^\vee f^\vee$.
 
-**Proof.** The identity is the definition, $\langle\sigma(x),\chi\rangle = \chi(\sigma(x)) = (\chi\circ\sigma)(x) = \langle x,\sigma^\vee(\chi)\rangle$. For a morphism $f$ commuting with the involutions, $f^\vee\sigma_H^\vee(\psi) = \psi\circ\sigma_H\circ f = \psi\circ f\circ\sigma_G = \sigma_G^\vee(f^\vee(\psi))$, so the dual also commutes with them; the two constructions are inverse up to the natural evaluation isomorphisms, which is the equivalence of the category with its opposite.
+**Proof.** The identity is the definition, $\langle\sigma(x),\chi\rangle = \chi(\sigma(x)) = (\chi\circ\sigma)(x) = \langle x,\sigma^\vee(\chi)\rangle$. For a morphism $f$ commuting with the involutions, $f^\vee\sigma_H^\vee(Ξ_{\mathrm{wfn}}) = Ξ_{\mathrm{wfn}}\circ\sigma_H\circ f = Ξ_{\mathrm{wfn}}\circ f\circ\sigma_G = \sigma_G^\vee(f^\vee(Ξ_{\mathrm{wfn}}))$, so the dual also commutes with them; the two constructions are inverse up to the natural evaluation isomorphisms, which is the equivalence of the category with its opposite.
 
 ## The Fixed Points on Both Sides
 

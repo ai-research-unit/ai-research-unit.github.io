@@ -17,7 +17,7 @@ The algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mat
 The idempotents $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$ of the centre give the **Peirce decomposition** of every module, and are the key to the whole theory. Because $\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = 1$ and $\tilde\Pi_{\mathrm{id},1} \tilde\Pi_{\mathrm{id},2} = 0$, the algebra splits as a product
 
 $$
-\varphi : \mathbb{B}_{\mathrm{spl}} \longrightarrow \mathbb{H} \oplus \mathbb{H} , \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) ,
+\digamma_{\mathrm{map}} : \mathbb{B}_{\mathrm{spl}} \longrightarrow \mathbb{H} \oplus \mathbb{H} , \qquad \digamma_{\mathrm{map}}(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) ,
 $$
 
 and every left $\mathbb{B}_{\mathrm{spl}}$-module $M$ splits as
@@ -82,7 +82,7 @@ Because the centre is $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb
 
 ## The Group of Invertibles
 
-**Theorem.** The group of invertibles of $\mathbb{B}_{\mathrm{spl}}$ is the direct product $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$ under the isomorphism $\varphi$:
+**Theorem.** The group of invertibles of $\mathbb{B}_{\mathrm{spl}}$ is the direct product $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$ under the isomorphism $\digamma_{\mathrm{map}}$:
 
 $$
 {\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \left\{ (\tilde{Q}_+, \tilde{Q}_-) : \tilde{Q}_+ \neq 0, \tilde{Q}_- \neq 0 \right\} , \qquad {\mathbb{B}_{\mathrm{spl}}}^{\times} = \mathbb{H}^{\times} \times \mathbb{H}^{\times} .
@@ -130,7 +130,7 @@ The two positive rays are also the reason the group of invertibles is non-compac
 
 ## The Defining Representation
 
-The **defining representation** of $\mathbb{B}_{\mathrm{spl}}$ is the action on either simple module, $S_\pm \cong \mathbb{H}$, of real dimension $4$. Under $\varphi$ it is the representation $(\tilde{Q}_+, \tilde{Q}_-) \mapsto \tilde{Q}_+$ on the first factor (or $\tilde{Q}_-$ on the second). There is no faithful irreducible representation: any faithful module must have $a \geq 1$ and $b \geq 1$, hence dimension at least $8$, and the regular representation $S_+ \oplus S_-$ is the smallest faithful one.
+The **defining representation** of $\mathbb{B}_{\mathrm{spl}}$ is the action on either simple module, $S_\pm \cong \mathbb{H}$, of real dimension $4$. Under $\digamma_{\mathrm{map}}$ it is the representation $(\tilde{Q}_+, \tilde{Q}_-) \mapsto \tilde{Q}_+$ on the first factor (or $\tilde{Q}_-$ on the second). There is no faithful irreducible representation: any faithful module must have $a \geq 1$ and $b \geq 1$, hence dimension at least $8$, and the regular representation $S_+ \oplus S_-$ is the smallest faithful one.
 
 This is a genuine difference from the biquaternion case. There the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ has a single simple module $\mathbb{C}^2$, the defining representation is two-dimensional over $\mathbb{C}$, and it is faithful; the split biquaternion algebra has two four-dimensional simple modules over $\mathbb{R}$ and no faithful irreducible one.
 
@@ -167,7 +167,7 @@ The split biquaternion algebra is a free $\mathbb{C}_{\mathrm{spl}}$-module of r
 | $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
 | $\mathbb{C}_{\mathrm{spl}}, \mathbb{H}, \mathbb{R}$ | The split complex, quaternion and real ground structures |
 | $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$ | Central idempotents; their multiplication operators are the Peirce projectors |
-| $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Isomorphism to $\mathbb{H} \oplus \mathbb{H}$ |
+| $\digamma_{\mathrm{map}}(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Isomorphism to $\mathbb{H} \oplus \mathbb{H}$ |
 | $S_+, S_-$ | The two simple left modules, each $\cong \mathbb{H}$, dimension $4$ |
 | $M = a S_+ \oplus b S_-$ | Classification of real representations by multiplicities |
 | $\operatorname{End}_{\mathbb{B}_{\mathrm{spl}}}(S_\pm) \cong \mathbb{H}$ | Division ring of the simple module |

@@ -60,10 +60,10 @@ and the attractor $K$ is a fixed point of the involution, $\sigma(K) = K$.
 
 ## The Adjoint Action on the Measures and the Symmetric Measure
 
-**Definition.** The **Koopman operator** of the involution acts on the functions by $U_\sigma\varphi = \varphi\circ\sigma$; it is an involutive isometry of the bounded continuous functions in the supremum norm, and a unitary involution of $L^2(\mu)$ when $\mu$ is invariant. Its **adjoint** acts on the measures by the pushforward,
+**Definition.** The **Koopman operator** of the involution acts on the functions by $U_\sigma\digamma_{\mathrm{map}} = \digamma_{\mathrm{map}}\circ\sigma$; it is an involutive isometry of the bounded continuous functions in the supremum norm, and a unitary involution of $L^2(\mu)$ when $\mu$ is invariant. Its **adjoint** acts on the measures by the pushforward,
 
 $$
-\sigma_\# \mu = \mu \circ \sigma^{-1} = \mu\circ\sigma , \qquad \int \varphi\, d(\sigma_\#\mu) = \int (\varphi\circ\sigma)\, d\mu ,
+\sigma_\# \mu = \mu \circ \sigma^{-1} = \mu\circ\sigma , \qquad \int \digamma_{\mathrm{map}}\, d(\sigma_\#\mu) = \int (\digamma_{\mathrm{map}}\circ\sigma)\, d\mu ,
 $$
 
 and $\sigma_\#$ is again an involution of the probability measures, and an isometry for the Wasserstein metric because $\sigma$ is an isometry.
@@ -101,7 +101,7 @@ An isometric involution $\sigma$ of $X$ induces an involutive isometry $\Sigma$ 
 | Symbol | Meaning |
 |---|---|
 | $\sigma$, $\Sigma$ | Isometric involution of $X$; the induced involution $\Sigma(A)=\sigma(A)$ on $\mathcal{K}(X)$ |
-| $U_\sigma$ | Koopman operator $U_\sigma\varphi=\varphi\circ\sigma$; unitary involution of the functions |
+| $U_\sigma$ | Koopman operator $U_\sigma\digamma_{\mathrm{map}}=\digamma_{\mathrm{map}}\circ\sigma$; unitary involution of the functions |
 | $\sigma_\#$ | Pushforward, the adjoint of $U_\sigma$; an involution of the measures |
 | $\operatorname{Fix}\Sigma$ | The $\sigma$-invariant compact sets, closed in $\mathcal{K}(X)$ |
 | $F\circ\Sigma=\Sigma\circ F$ | The commutation, equivalent to the reversibility of the system |

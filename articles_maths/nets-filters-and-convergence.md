@@ -41,7 +41,7 @@ Convergence is tested on a neighbourhood base, by the definition of the neighbou
 
 **Proof.** A tail is a set of the form $\{x_\alpha : \alpha \geq \alpha_0\}$; the first statement is the definition of eventual containment. For the second, the defining condition says that no neighbourhood $\Omega$ and no $\alpha_0$ have $x_\alpha \notin \Omega$ for all $\alpha \geq \alpha_0$, that is, $\Omega$ meets the tail over $\alpha_0$.
 
-**Example.** Every sequence in a metric space whose terms approach $x$ is a net converging to $x$; conversely a convergent net in a metric space need not be a sequence. Let $\psi$ assign to each finite set $F \subseteq \mathbb{R}$ the least integer not in $F$, a point outside $F$. The net $(\psi(F))$ over the directed set of finite subsets has no limit in $\mathbb{R}$: if $\Omega$ is a bounded neighbourhood of a point and $F_0$ an index, then for any integer $N$ above $\Omega$ the finite set $F = F_0 \cup \{\, k \in \mathbb{Z} : k \leq N \,\}$ has $\psi(F) > N$ and hence $\psi(F) \notin \Omega$, so no tail is contained in $\Omega$. Every integer $m$ is a cluster point, since $\psi(F) = m$ for the finite sets $F$ containing every integer below $m$ and not $m$, so the net is frequently in every neighbourhood of $m$; the non-integral points with a neighbourhood containing no integer are not cluster points. A net therefore separates the two notions that coincide for sequences in a metric space.
+**Example.** Every sequence in a metric space whose terms approach $x$ is a net converging to $x$; conversely a convergent net in a metric space need not be a sequence. Let $Ξ_{\mathrm{wfn}}$ assign to each finite set $F \subseteq \mathbb{R}$ the least integer not in $F$, a point outside $F$. The net $(Ξ_{\mathrm{wfn}}(F))$ over the directed set of finite subsets has no limit in $\mathbb{R}$: if $\Omega$ is a bounded neighbourhood of a point and $F_0$ an index, then for any integer $N$ above $\Omega$ the finite set $F = F_0 \cup \{\, k \in \mathbb{Z} : k \leq N \,\}$ has $Ξ_{\mathrm{wfn}}(F) > N$ and hence $Ξ_{\mathrm{wfn}}(F) \notin \Omega$, so no tail is contained in $\Omega$. Every integer $m$ is a cluster point, since $Ξ_{\mathrm{wfn}}(F) = m$ for the finite sets $F$ containing every integer below $m$ and not $m$, so the net is frequently in every neighbourhood of $m$; the non-integral points with a neighbourhood containing no integer are not cluster points. A net therefore separates the two notions that coincide for sequences in a metric space.
 
 **Remark.** A net is a generalisation of a sequence and not of a convergent series; the directed set need not be countable and need not have a smallest element. The neighbourhood net of a point of a non-first-countable space is of this kind, and it is the net that witnesses the failure of sequential arguments.
 
@@ -49,13 +49,13 @@ Convergence is tested on a neighbourhood base, by the definition of the neighbou
 
 A sequence passes to a subsequence by composing with a strictly increasing map $\mathbb{N} \to \mathbb{N}$; the corresponding notion for nets must allow the index set to change and must ensure that the new net runs to the end of the old one.
 
-**Definition.** Let $(x_\alpha)_{\alpha \in D}$ be a net and let $(y_\beta)_{\beta \in E}$ be a net in the same set. Then $(y_\beta)$ is a **subnet** of $(x_\alpha)$ if there is a map $\varphi : E \to D$ with $y_\beta = x_{\varphi(\beta)}$ for all $\beta$, and $\varphi$ is **monotone and cofinal**: $\beta \leq \beta'$ implies $\varphi(\beta) \leq \varphi(\beta')$, and for every $\alpha \in D$ there is $\beta_0 \in E$ with $\alpha \leq \varphi(\beta)$ whenever $\beta \geq \beta_0$.
+**Definition.** Let $(x_\alpha)_{\alpha \in D}$ be a net and let $(y_\beta)_{\beta \in E}$ be a net in the same set. Then $(y_\beta)$ is a **subnet** of $(x_\alpha)$ if there is a map $\digamma_{\mathrm{map}} : E \to D$ with $y_\beta = x_{\digamma_{\mathrm{map}}(\beta)}$ for all $\beta$, and $\digamma_{\mathrm{map}}$ is **monotone and cofinal**: $\beta \leq \beta'$ implies $\digamma_{\mathrm{map}}(\beta) \leq \digamma_{\mathrm{map}}(\beta')$, and for every $\alpha \in D$ there is $\beta_0 \in E$ with $\alpha \leq \digamma_{\mathrm{map}}(\beta)$ whenever $\beta \geq \beta_0$.
 
 A subnet of a sequence indexed by a directed set $E$ need not be a sequence, and a sequence that is a subnet of a sequence is exactly a subsequence. The definitions of limit and cluster point are related by subnets in the expected way.
 
 **Proposition.** If $x_\alpha \to x$ and $(y_\beta)$ is a subnet of $(x_\alpha)$, then $y_\beta \to x$. If $x$ is a cluster point of $(x_\alpha)$, there is a subnet of $(x_\alpha)$ converging to $x$.
 
-**Proof.** Given a neighbourhood $\Omega$ of $x$, choose $\alpha_0$ with $x_\alpha \in \Omega$ for $\alpha \geq \alpha_0$ and then $\beta_0$ with $\varphi(\beta) \geq \alpha_0$ for $\beta \geq \beta_0$; then $y_\beta = x_{\varphi(\beta)} \in \Omega$ for $\beta \geq \beta_0$. For the second statement let $E$ be the set of the pairs $(\alpha, \Omega)$ with $\alpha \in D$, $\Omega$ a neighbourhood of $x$ and $x_\alpha \in \Omega$, ordered componentwise and directed by clusterhood: given $(\alpha, \Omega)$ and $(\alpha', \Omega')$ choose $\gamma \geq \alpha, \alpha'$ and $V \subseteq \Omega \cap \Omega'$, and a $\delta \geq \gamma$ with $x_\delta \in V$. The projection $(\alpha, \Omega) \mapsto \alpha$ is monotone and cofinal, since $(\delta, X)$ lies above every prescribed index, and $y_{(\alpha,\Omega)} = x_\alpha$ converges to $x$ because for a given $\Omega$ and $\alpha_0$ one takes $\delta \geq \alpha_0$ with $x_\delta \in \Omega$, and then $y_{(\alpha,V)} \in \Omega$ for all $(\alpha, V) \geq (\delta, \Omega)$.
+**Proof.** Given a neighbourhood $\Omega$ of $x$, choose $\alpha_0$ with $x_\alpha \in \Omega$ for $\alpha \geq \alpha_0$ and then $\beta_0$ with $\digamma_{\mathrm{map}}(\beta) \geq \alpha_0$ for $\beta \geq \beta_0$; then $y_\beta = x_{\digamma_{\mathrm{map}}(\beta)} \in \Omega$ for $\beta \geq \beta_0$. For the second statement let $E$ be the set of the pairs $(\alpha, \Omega)$ with $\alpha \in D$, $\Omega$ a neighbourhood of $x$ and $x_\alpha \in \Omega$, ordered componentwise and directed by clusterhood: given $(\alpha, \Omega)$ and $(\alpha', \Omega')$ choose $\gamma \geq \alpha, \alpha'$ and $V \subseteq \Omega \cap \Omega'$, and a $\delta \geq \gamma$ with $x_\delta \in V$. The projection $(\alpha, \Omega) \mapsto \alpha$ is monotone and cofinal, since $(\delta, X)$ lies above every prescribed index, and $y_{(\alpha,\Omega)} = x_\alpha$ converges to $x$ because for a given $\Omega$ and $\alpha_0$ one takes $\delta \geq \alpha_0$ with $x_\delta \in \Omega$, and then $y_{(\alpha,V)} \in \Omega$ for all $(\alpha, V) \geq (\delta, \Omega)$.
 
 **Corollary.** A net has a convergent subnet if and only if it has a cluster point: passing to a subnet is exactly the operation of selecting a piece of the net that accumulates at a prescribed point.
 
@@ -141,7 +141,7 @@ The two languages are not merely analogous; there is a bijective correspondence 
 
 **Proposition.** If $(y_\beta)$ is a subnet of $(x_\alpha)$, the tail filter of $(y_\beta)$ is finer than the tail filter of $(x_\alpha)$.
 
-**Proof.** Given $\alpha$ choose $\beta_0$ with $\varphi(\beta) \geq \alpha$ for $\beta \geq \beta_0$; then the $\beta$-tail of $y$ is contained in the $\alpha$-tail of $x$, so every tail of $x$ lies in the tail filter of $y$, which is therefore finer.
+**Proof.** Given $\alpha$ choose $\beta_0$ with $\digamma_{\mathrm{map}}(\beta) \geq \alpha$ for $\beta \geq \beta_0$; then the $\beta$-tail of $y$ is contained in the $\alpha$-tail of $x$, so every tail of $x$ lies in the tail filter of $y$, which is therefore finer.
 
 ### From a Filter to a Net
 
@@ -248,7 +248,7 @@ Topological properties are read off both languages: Hausdorff means unique limit
 | $(D, \leq)$ | Directed set; $\alpha, \beta, \gamma$ its elements |
 | $(x_\alpha)_{\alpha \in D}$, $x_\alpha \to x$ | Net and its convergence; eventually in every neighbourhood |
 | Cluster point | Frequently in every neighbourhood; limits of subnets |
-| $\varphi : E \to D$ | Monotone cofinal reindexing defining a subnet |
+| $\digamma_{\mathrm{map}} : E \to D$ | Monotone cofinal reindexing defining a subnet |
 | $\mathcal{F}, \mathcal{G}$ | Filters on a set $X$ |
 | $\mathcal{B}$ | Filter base |
 | $\mathcal{N}_x$, $\mathcal{N}(x)$ | Neighbourhood filter at $x$ |

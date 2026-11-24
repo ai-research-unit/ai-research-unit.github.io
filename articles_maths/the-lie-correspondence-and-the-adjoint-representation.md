@@ -7,13 +7,13 @@ The exponential map of the companion article *The Lie Algebra and the Exponentia
 
 The article states the Lie correspondence in the three forms it usually takes: the bijection between homomorphisms for a simply connected source, the classification of connected groups with a given algebra by discrete central subgroups, and the correspondence between subalgebras, ideals and the analytic subgroups of a given group. It then develops the adjoint representation $\operatorname{Ad}$ of the group and the adjoint representation $\operatorname{ad}$ of the algebra, their relation $d(\operatorname{Ad})_e = \operatorname{ad}$, the identification of the centre with the kernel of $\operatorname{Ad}$, and the description of the automorphism group of a semisimple algebra as an extension of the adjoint group by the diagram automorphisms. It closes with the table of the classical groups, one row per algebra and one column each for the cover, the centre, the quotients and the fundamental group, and with the list of what the algebra does not determine: the fundamental group, compactness, the real form and the unitary dual.
 
-The manifold and exponential conventions are those of *Lie Groups* and *The Lie Algebra and the Exponential Map*: $G$ is a smooth Lie group with Lie algebra $\mathrm{G} = T_eG$, homomorphisms are smooth, and $d\varphi_e$ is the differential at the identity. Lie algebras are written in upright capitals, so $\mathrm{G}, \mathrm{H}, \mathrm{I}, \mathrm{N}$ are Lie algebras, $\mathrm{Z}(\mathrm{G})$ is the centre, $\operatorname{Der}(\mathrm{G})$ and $\operatorname{Aut}(\mathrm{G})$ are the derivations and automorphisms, and $\operatorname{ad}_x(y) = [x, y]$. The base field is $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, and Lie's third theorem is stated over $\mathbb{R}$. No physics is invoked.
+The manifold and exponential conventions are those of *Lie Groups* and *The Lie Algebra and the Exponential Map*: $G$ is a smooth Lie group with Lie algebra $\mathrm{G} = T_eG$, homomorphisms are smooth, and $d\digamma_{\mathrm{map},e}$ is the differential at the identity. Lie algebras are written in upright capitals, so $\mathrm{G}, \mathrm{H}, \mathrm{I}, \mathrm{N}$ are Lie algebras, $\mathrm{Z}(\mathrm{G})$ is the centre, $\operatorname{Der}(\mathrm{G})$ and $\operatorname{Aut}(\mathrm{G})$ are the derivations and automorphisms, and $\operatorname{ad}_x(y) = [x, y]$. The base field is $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, and Lie's third theorem is stated over $\mathbb{R}$. No physics is invoked.
 
 ## The Lie Functor
 
 ### The Category of Lie Groups and Lie Algebras
 
-The construction of *The Lie Algebra and the Exponential Map* associates to each Lie group $G$ over $\mathbb{K}$ its Lie algebra $\mathrm{G} = \operatorname{Lie}(G)$ and to each smooth homomorphism $\varphi : G \to H$ the linear map $d\varphi_e : \mathrm{G} \to \mathrm{H}$, which is a homomorphism of Lie algebras. This is a functor
+The construction of *The Lie Algebra and the Exponential Map* associates to each Lie group $G$ over $\mathbb{K}$ its Lie algebra $\mathrm{G} = \operatorname{Lie}(G)$ and to each smooth homomorphism $\digamma_{\mathrm{map}} : G \to H$ the linear map $d\digamma_{\mathrm{map},e} : \mathrm{G} \to \mathrm{H}$, which is a homomorphism of Lie algebras. This is a functor
 
 $$
 \operatorname{Lie} : \mathbf{LieGrp}_{\mathbb{K}} \longrightarrow \mathbf{LieAlg}_{\mathbb{K}},
@@ -27,13 +27,13 @@ from Lie groups and smooth homomorphisms to Lie algebras and Lie algebra homomor
 
 ### Local Isomorphisms
 
-**Definition.** A homomorphism $\varphi : G \to H$ of Lie groups is a **local isomorphism** if $d\varphi_e : \mathrm{G} \to \mathrm{H}$ is a linear isomorphism.
+**Definition.** A homomorphism $\digamma_{\mathrm{map}} : G \to H$ of Lie groups is a **local isomorphism** if $d\digamma_{\mathrm{map},e} : \mathrm{G} \to \mathrm{H}$ is a linear isomorphism.
 
-**Theorem.** Let $\varphi : G \to H$ be a local isomorphism of Lie groups. Then $\varphi$ is a local diffeomorphism, its kernel is a discrete subgroup of $G$, and if $G$ and $H$ are connected then $\varphi$ is a covering map onto its image. Conversely, a covering homomorphism of connected Lie groups is a local isomorphism.
+**Theorem.** Let $\digamma_{\mathrm{map}} : G \to H$ be a local isomorphism of Lie groups. Then $\digamma_{\mathrm{map}}$ is a local diffeomorphism, its kernel is a discrete subgroup of $G$, and if $G$ and $H$ are connected then $\digamma_{\mathrm{map}}$ is a covering map onto its image. Conversely, a covering homomorphism of connected Lie groups is a local isomorphism.
 
-**Proof.** Since $d\varphi_e$ is invertible, the inverse function theorem exhibits $\varphi$ as a local diffeomorphism near $e$; for $g$ near the identity, the left translations identify neighbourhoods of $g$ and of $\varphi(g)$, so $\varphi$ is a local diffeomorphism everywhere. A local diffeomorphism has discrete fibres, so $\ker\varphi$ is discrete. If $G$ is connected, the image of $\varphi$ is an open and closed connected subgroup, and a local diffeomorphism onto a connected group with discrete fibres is a covering. The converse is the inverse function theorem applied at the identity.
+**Proof.** Since $d\digamma_{\mathrm{map},e}$ is invertible, the inverse function theorem exhibits $\digamma_{\mathrm{map}}$ as a local diffeomorphism near $e$; for $g$ near the identity, the left translations identify neighbourhoods of $g$ and of $\digamma_{\mathrm{map}}(g)$, so $\digamma_{\mathrm{map}}$ is a local diffeomorphism everywhere. A local diffeomorphism has discrete fibres, so $\ker\digamma_{\mathrm{map}}$ is discrete. If $G$ is connected, the image of $\digamma_{\mathrm{map}}$ is an open and closed connected subgroup, and a local diffeomorphism onto a connected group with discrete fibres is a covering. The converse is the inverse function theorem applied at the identity.
 
-**Corollary.** A local isomorphism between connected Lie groups of the same dimension is surjective, hence a covering map, and its kernel is isomorphic to the quotient of the fundamental group of the base by the image of the fundamental group of the source; in particular $\ker\varphi \cong \pi_1(H)$ when $G$ is simply connected.
+**Corollary.** A local isomorphism between connected Lie groups of the same dimension is surjective, hence a covering map, and its kernel is isomorphic to the quotient of the fundamental group of the base by the image of the fundamental group of the source; in particular $\ker\digamma_{\mathrm{map}} \cong \pi_1(H)$ when $G$ is simply connected.
 
 ### Simply Connected Groups
 
@@ -42,7 +42,7 @@ from Lie groups and smooth homomorphisms to Lie algebras and Lie algebra homomor
 **Theorem.** Let $G$ be a simply connected Lie group and $H$ a Lie group with Lie algebras $\mathrm{G}, \mathrm{H}$. Then the map
 
 $$
-\boxed{\;\operatorname{Hom}_{\mathbf{LieGrp}}(G, H) \longrightarrow \operatorname{Hom}_{\mathbf{LieAlg}}(\mathrm{G}, \mathrm{H}), \qquad \varphi \longmapsto d\varphi_e\;},
+\boxed{\;\operatorname{Hom}_{\mathbf{LieGrp}}(G, H) \longrightarrow \operatorname{Hom}_{\mathbf{LieAlg}}(\mathrm{G}, \mathrm{H}), \qquad \digamma_{\mathrm{map}} \longmapsto d\digamma_{\mathrm{map},e}\;},
 $$
 
 is a bijection.
@@ -89,10 +89,10 @@ Part (a) is **Lie's third theorem**, and part (b) is the statement that the univ
 
 **Proof.** If $H$ is normal then $\operatorname{Ad}(g)\mathrm{H} = \mathrm{H}$ for all $g$ and differentiating gives $[\mathrm{G}, \mathrm{H}] \subseteq \mathrm{H}$. Conversely, if $\mathrm{H}$ is an ideal then $\exp(\mathrm{G})$ normalises $H$: the identity $\exp(\operatorname{Ad}(g)v) = g\exp(v)g^{-1}$ of *The Lie Algebra and the Exponential Map* shows that conjugation preserves $\exp(\mathrm{H}) = H$, and $\exp(\mathrm{G})$ generates $G$ when $G$ is connected. The statement about the quotient follows from the naturality of the Lie functor.
 
-**Theorem.** Let $\varphi : G \to H$ be a homomorphism of connected Lie groups, with differential $d\varphi_e : \mathrm{G} \to \mathrm{H}$. Then
+**Theorem.** Let $\digamma_{\mathrm{map}} : G \to H$ be a homomorphism of connected Lie groups, with differential $d\digamma_{\mathrm{map},e} : \mathrm{G} \to \mathrm{H}$. Then
 
 $$
-\operatorname{Lie}(\ker\varphi) = \ker(d\varphi_e), \qquad \operatorname{Lie}(\overline{\operatorname{im}\varphi}) = \operatorname{im}(d\varphi_e),
+\operatorname{Lie}(\ker\digamma_{\mathrm{map}}) = \ker(d\digamma_{\mathrm{map},e}), \qquad \operatorname{Lie}(\overline{\operatorname{im}\digamma_{\mathrm{map}}}) = \operatorname{im}(d\digamma_{\mathrm{map},e}),
 $$
 
 where the closures are taken in $H$; if the image is closed the closure is redundant.
@@ -196,7 +196,7 @@ $$
 
 is the finite group of outer automorphisms in the semisimple case.
 
-**Proof sketch.** The automorphism group is a closed subgroup of $GL(\mathrm{G})$ and hence a Lie group by the closed subgroup theorem; differentiating the identity $\varphi([x,y]) = [\varphi x, \varphi y]$ at $\varphi = \mathrm{id}$ gives the derivation condition, so the Lie algebra is $\operatorname{Der}(\mathrm{G})$. The identity component statement follows because $\operatorname{Ad}(G_{\mathrm{cov}})$ and $\operatorname{Aut}(\mathrm{G})_0$ are connected subgroups with the same Lie algebra, by the inner-derivation theorem.
+**Proof sketch.** The automorphism group is a closed subgroup of $GL(\mathrm{G})$ and hence a Lie group by the closed subgroup theorem; differentiating the identity $\digamma_{\mathrm{map}}([x,y]) = [\digamma_{\mathrm{map}} x, \digamma_{\mathrm{map}} y]$ at $\digamma_{\mathrm{map}} = \mathrm{id}$ gives the derivation condition, so the Lie algebra is $\operatorname{Der}(\mathrm{G})$. The identity component statement follows because $\operatorname{Ad}(G_{\mathrm{cov}})$ and $\operatorname{Aut}(\mathrm{G})_0$ are connected subgroups with the same Lie algebra, by the inner-derivation theorem.
 
 ### The Adjoint Representation in Coordinates
 
@@ -304,7 +304,7 @@ The failure is not repaired by passing to the cover. If $g\in G_{\mathrm{cov}}$ 
 
 ## Summary
 
-The functor $\operatorname{Lie}$ from Lie groups to Lie algebras is neither full nor faithful; it preserves exactly the local structure, and a homomorphism is a local isomorphism precisely when it induces an isomorphism of Lie algebras. For a simply connected source $G$ the map $\varphi \mapsto d\varphi_e$ is a bijection from $\operatorname{Hom}(G,H)$ to $\operatorname{Hom}(\mathrm{G},\mathrm{H})$, so the simply connected Lie groups and the finite-dimensional Lie algebras form equivalent categories, and Lie's third theorem says that every finite-dimensional real Lie algebra occurs.
+The functor $\operatorname{Lie}$ from Lie groups to Lie algebras is neither full nor faithful; it preserves exactly the local structure, and a homomorphism is a local isomorphism precisely when it induces an isomorphism of Lie algebras. For a simply connected source $G$ the map $\digamma_{\mathrm{map}} \mapsto d\digamma_{\mathrm{map},e}$ is a bijection from $\operatorname{Hom}(G,H)$ to $\operatorname{Hom}(\mathrm{G},\mathrm{H})$, so the simply connected Lie groups and the finite-dimensional Lie algebras form equivalent categories, and Lie's third theorem says that every finite-dimensional real Lie algebra occurs.
 
 Every connected Lie group $G$ with algebra $\mathrm{G}$ is a quotient $G_{\mathrm{cov}}/D$ of its simply connected cover by a discrete central subgroup $D \cong \pi_1(G)$, so the connected groups with a given algebra are classified by those subgroups, and the fundamental group of $G$ is abelian. Lie subalgebras correspond to connected immersed subgroups, ideals to normal connected subgroups, and quotients of algebras to quotients of groups; closed subgroups of a Lie group are embedded Lie subgroups by the closed subgroup theorem.
 
@@ -319,10 +319,10 @@ The classical groups show what the choice of $\Gamma$ carries. The algebra $\mat
 | $\mathbb{K}$ | $\mathbb{R}$ or $\mathbb{C}$; the base of the Lie groups |
 | $G, H$ | Connected Lie groups over $\mathbb{K}$ |
 | $\mathrm{G} = \operatorname{Lie}(G)$ | Lie algebra of $G$; $T_eG$ with the bracket |
-| $d\varphi_e$ | Differential at the identity; a Lie algebra homomorphism |
-| $\operatorname{Hom}(G,H)$, $\operatorname{Hom}(\mathrm{G},\mathrm{H})$ | Lie group and Lie algebra homomorphisms; $\varphi \mapsto d\varphi_e$ is a bijection between them |
+| $d\digamma_{\mathrm{map},e}$ | Differential at the identity; a Lie algebra homomorphism |
+| $\operatorname{Hom}(G,H)$, $\operatorname{Hom}(\mathrm{G},\mathrm{H})$ | Lie group and Lie algebra homomorphisms; $\digamma_{\mathrm{map}} \mapsto d\digamma_{\mathrm{map},e}$ is a bijection between them |
 | $\operatorname{Lie} : \mathbf{LieGrp} \to \mathbf{LieAlg}$ | The Lie functor; neither full nor faithful |
-| $\varphi : G \to H$ local isomorphism | $d\varphi_e$ invertible; then $\varphi$ is a covering for connected $G, H$ |
+| $\digamma_{\mathrm{map}} : G \to H$ local isomorphism | $d\digamma_{\mathrm{map},e}$ invertible; then $\digamma_{\mathrm{map}}$ is a covering for connected $G, H$ |
 | $G_{\mathrm{cov}}, \pi : G_{\mathrm{cov}} \to G$ | Simply connected cover; $\ker\pi \cong \pi_1(G)$, discrete and central |
 | $G \cong G_{\mathrm{cov}}/D$ | Classification of connected groups with a given algebra by discrete central $D$ |
 | $\Gamma \subseteq Z(G_{\mathrm{cov}})$ | Discrete central subgroup; $G = G_{\mathrm{cov}}/\Gamma$ and $\Gamma \cong \pi_1(G)$ |

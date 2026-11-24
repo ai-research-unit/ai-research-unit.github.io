@@ -19,7 +19,7 @@ For a finite-dimensional $D$ this is equivalent to the absence of zero divisors,
 
 **Proposition (ideals and quotients).** A division algebra has exactly two left ideals and exactly two right ideals, namely $0$ and the whole algebra; hence it is simple, and every nonzero algebra homomorphism from a division algebra is injective. A finite-dimensional simple algebra over $k$ is, by Wedderburn–Artin, of the form $M_n(D)$ for a division algebra $D$ and an integer $n \geq 1$, and it is a division algebra exactly when $n = 1$.
 
-*Proof.* If $I \neq 0$ is a left ideal and $0 \neq a \in I$, then $1 = a^{-1}a \in I$, so $I = A$. Injectivity of a homomorphism $\varphi$ follows because $\ker\varphi$ is a proper two-sided ideal, hence $0$. The last statement is Wedderburn–Artin: a simple finite-dimensional algebra is $M_n(D)$ for a division algebra $D$, and $M_n(D)$ is a division algebra only for $n = 1$.
+*Proof.* If $I \neq 0$ is a left ideal and $0 \neq a \in I$, then $1 = a^{-1}a \in I$, so $I = A$. Injectivity of a homomorphism $\digamma_{\mathrm{map}}$ follows because $\ker\digamma_{\mathrm{map}}$ is a proper two-sided ideal, hence $0$. The last statement is Wedderburn–Artin: a simple finite-dimensional algebra is $M_n(D)$ for a division algebra $D$, and $M_n(D)$ is a division algebra only for $n = 1$.
 
 **Example.** $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and every field are division algebras. The algebras $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{B}$, $M_n(k)$ for $n \geq 2$, $k[x]$ and $k[G]$ for nontrivial finite $G$ are not, by the zero divisors listed in *Examples of Algebras*. The pattern is instructive: $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ are the division algebras among the number systems.
 
@@ -133,10 +133,10 @@ $$
 (b \otimes a')\cdot_f x = f(b)\,x\,a', \qquad (b \otimes a')\cdot_g x = g(b)\,x\,a' ,
 $$
 
-and each is a direct sum of copies of the unique simple module with the same multiplicity, by dimension count; hence there is a $k$-linear isomorphism $\psi$ of $A$ intertwining $\cdot_f$ with $\cdot_g$. Being a $B \otimes_k A_{\mathrm{opp}}$-module isomorphism, $\psi$ is in particular $A_{\mathrm{opp}}$-linear, that is $\psi(xa') = \psi(x)a'$, so it is an isomorphism of $A$ as a free right $A$-module of rank one. Therefore $a = \psi(1)$ generates $A$ as a right $A$-module and is invertible, and combining $A_{\mathrm{opp}}$-linearity at $x = 1$ with the intertwining relation at $x = 1$ gives
+and each is a direct sum of copies of the unique simple module with the same multiplicity, by dimension count; hence there is a $k$-linear isomorphism $Ξ_{\mathrm{wfn}}$ of $A$ intertwining $\cdot_f$ with $\cdot_g$. Being a $B \otimes_k A_{\mathrm{opp}}$-module isomorphism, $Ξ_{\mathrm{wfn}}$ is in particular $A_{\mathrm{opp}}$-linear, that is $Ξ_{\mathrm{wfn}}(xa') = Ξ_{\mathrm{wfn}}(x)a'$, so it is an isomorphism of $A$ as a free right $A$-module of rank one. Therefore $a = Ξ_{\mathrm{wfn}}(1)$ generates $A$ as a right $A$-module and is invertible, and combining $A_{\mathrm{opp}}$-linearity at $x = 1$ with the intertwining relation at $x = 1$ gives
 
 $$
-\psi(f(b)) = \psi(1)f(b) = a f(b), \qquad \psi(f(b)) = g(b)\psi(1) = g(b)a ,
+Ξ_{\mathrm{wfn}}(f(b)) = Ξ_{\mathrm{wfn}}(1)f(b) = a f(b), \qquad Ξ_{\mathrm{wfn}}(f(b)) = g(b)Ξ_{\mathrm{wfn}}(1) = g(b)a ,
 $$
 
 whence $g(b)a = af(b)$, that is $g(b) = a f(b)a^{-1}$.

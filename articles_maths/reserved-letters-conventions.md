@@ -20,7 +20,7 @@ A convention is not a description. Nothing in the algebra forces $\theta$ rather
 
 **An imaginary angle is written $i\theta$ where it is used.** A boost is the rotation at an imaginary argument: $\exp(i\theta)$ at $\theta=i\theta_{\mathrm{rpd}}$ is $\exp(-\theta_{\mathrm{rpd}})$. The $i$ stands at the point of substitution and $\theta_{\mathrm{rpd}}$ stays real and subscripted. A purely imaginary angle is never a glyph of its own; it is $i$ times a real one, and the rotation and the boost are one formula at two values of the slot.
 
-**The letter carries no second role.** The uses that once shared it have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$; the curvature of a connection is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the congruence relation is $\vartheta_{\mathrm{cng}}$; the symplectic potential is $\varpi$; the theta function is $\vartheta_{\mathrm{thf}}$. A subscript on $\theta$ names the angle's own coordinate and does not make the letter an index of another kind: $p_\theta$ and $A_\theta$ are the momentum and the potential along the angular coordinate.
+**The letter carries no second role.** The uses that are not angles have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$; the curvature of a connection is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the congruence relation is $\vartheta_{\mathrm{cng}}$; the symplectic potential is $\varpi$; the theta function is $\vartheta_{\mathrm{thf}}$. A subscript on $\theta$ names the angle's own coordinate and does not make the letter an index of another kind: $p_\theta$ and $A_\theta$ are the momentum and the potential along the angular coordinate.
 
 ### Scales: $\varrho$
 
@@ -81,18 +81,11 @@ A convention is not a description. Nothing in the algebra forces $\theta$ rather
 **The bare glyph is forbidden, with one exception.** The glyph of the $\Pi$ shape carries nothing on its own. A potent always carries $\mathrm{id}$ or $\mathrm{nil}$ as the first word of its subscript, a projection carries its sign, $\Pi_\pm$, and the reduced idempotent pair is $\Pi_{\mathrm{id},\pm}$; a bare $\Pi$ is allowed for none of them. The one exception is the number, and the lowercase is spent on it and on nothing else: $\pi=3.14159\ldots$, the ratio of a circumference to its diameter.
 
 **The pure nilpotent carries the arrow.** A pure nilpotent is $\vec\Pi_{\mathrm{nil}}$ or $\vec\pi_{\mathrm{nil}}$, with the arrow and no tilde. An idempotent has no pure form, and no arrowed idempotent exists.
-
 ## Summary
 
-Eight glyphs carry eight roles, and each is spent once. An angle is $\theta$, real, with a subscript naming which angle it is, the $i$ of a rotation sitting in the exponential; a scale is $\varrho$, the positive real factor of a polar decomposition and the amplitude of a wave; a wave number is $\nu=k/2\pi=1/\lambda$, with three to an element; a wavelength is $\lambda=1/\nu$, with three to an element; and an eigenvalue is $\eta$, a root of $\eta^{2}-2Q_t\eta+N=0$.
+Eight glyphs carry eight roles, and each is spent once: $\theta$ an angle, $\varrho$ a scale, $\nu$ a wave number, $\lambda$ a wavelength, $\eta$ an eigenvalue, $i$ the scalar imaginary, $\Phi$ and $\Psi$ the two sectors. The angle is the one letter whose case needs a rule of its own, and an imaginary angle is written $i\theta$ where it is used. Every other scalar takes $\digamma$ with a subscript that names its sense.
 
-Three more glyphs carry a role each. The scalar imaginary is $i$, and the space index is the dotless $\imath$; the material and informational sectors are the uppercase $\Phi$ and $\Psi$, and the lowercase $\phi$, $\varphi$ and $\psi$ are forbidden.
-
-Every other scalar takes $\digamma$ with a subscript that names its sense. None of the eight carries a second sense, and no other scalar borrows one of them.
-
-The angle is the one letter whose case needs a rule of its own. It is real, and an imaginary angle is written $i\theta$ where it is used, so that a rotation and a boost are one formula at two values of the slot. The roles that once shared the letter have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$, the curvature is $\Omega$, the two-sided operator is $\mathrm{Sd}$, the congruence is $\vartheta_{\mathrm{cng}}$, the symplectic potential is $\varpi$ and the theta function is $\vartheta_{\mathrm{thf}}$.
-
-Three families carry the elements, and each is spent once. The generic element is the Q family, $q$, $Q$, $\breve Q$, $\tilde q$ and $\tilde Q$, with the case and the accent naming the layer and the coefficients carrying the same letter; a root is $Ζ$, split by the case rule into $Ζ$, $Ζ_\pm$, $\tilde\zeta$ and $\tilde{Ζ}$; and the idempotent and the nilpotent are the $\Pi$ family, with $\mathrm{id}$ or $\mathrm{nil}$ as the first word of the subscript and the case naming the layer.
+Three families carry the elements, and each is spent once: the Q family, $q$, $Q$, $\breve Q$, $\tilde q$ and $\tilde Q$, with the case and the accent naming the layer and the coefficients carrying the same letter; the roots $Ζ$, split by the case rule; and the $\Pi$ family, with $\mathrm{id}$ or $\mathrm{nil}$ as the first word of the subscript and the case naming the layer.
 
 ## Summary of Notation
 

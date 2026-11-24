@@ -70,9 +70,9 @@ Then $I_U$ is a left ideal, because $\ker(AX)\supseteq\ker X$. Conversely every 
 
 ## Automorphisms and Derivations
 
-**Theorem (Skolem–Noether over $\mathbb{R}$).** Every automorphism of $M_n(\mathbb{R})$ is inner: $\varphi=\operatorname{Ad}_S$ for some $S\in\mathrm{GL}_n(\mathbb{R})$, unique up to a nonzero scalar.
+**Theorem (Skolem–Noether over $\mathbb{R}$).** Every automorphism of $M_n(\mathbb{R})$ is inner: $\digamma_{\mathrm{map}}=\operatorname{Ad}_S$ for some $S\in\mathrm{GL}_n(\mathbb{R})$, unique up to a nonzero scalar.
 
-*Proof.* Let $V=\mathbb{R}^{n}$ and let $\varphi$ act on the algebra. The algebra is $\operatorname{End}(V)$, so $\varphi$ carries the minimal right ideals to minimal right ideals; these are the rank-one maps $v\ell$. So $\varphi$ permutes the lines of $V$ by a map induced by a linear $S$, and $\varphi$ agrees with $\operatorname{Ad}_S$ on every rank-one map, hence on the whole algebra because the rank-one maps span it. If $\operatorname{Ad}_S=\operatorname{Ad}_{S'}$ then $S^{-1}S'$ commutes with everything, hence is a scalar.
+*Proof.* Let $V=\mathbb{R}^{n}$ and let $\digamma_{\mathrm{map}}$ act on the algebra. The algebra is $\operatorname{End}(V)$, so $\digamma_{\mathrm{map}}$ carries the minimal right ideals to minimal right ideals; these are the rank-one maps $v\ell$. So $\digamma_{\mathrm{map}}$ permutes the lines of $V$ by a map induced by a linear $S$, and $\digamma_{\mathrm{map}}$ agrees with $\operatorname{Ad}_S$ on every rank-one map, hence on the whole algebra because the rank-one maps span it. If $\operatorname{Ad}_S=\operatorname{Ad}_{S'}$ then $S^{-1}S'$ commutes with everything, hence is a scalar.
 
 **Theorem.** Every derivation of $M_n(\mathbb{R})$ is inner: $D=\operatorname{ad}_A$ with $\operatorname{ad}_A(X)=AX-XA$ for some $A$, unique up to a scalar.
 

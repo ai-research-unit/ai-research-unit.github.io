@@ -11,9 +11,9 @@ The article uses no analysis and no geometry: the actions are algebraic actions 
 
 ## The Action of the Descent Group on the Cohomology
 
-**Proposition (the action).** Let $G$ act on $X$ and let $\mathcal{F}$ carry a $G$-equivariant structure, as in *Equivariant Sheaves and Descent*. Then $G$ acts on the cohomology $H^*(X,\mathcal{F})$ by $\gamma^*=H^*(\gamma,\varphi_{\gamma})$, the action is functorial in the equivariant sheaf, and it commutes with the cup product of *The Cup Product on Sheaf Cohomology*: $\gamma^*(\alpha\smile\beta)=\gamma^*\alpha\smile\gamma^*\beta$. When $G=\mathbb{Z}/2$ with generator $\mathrm{J}$, the action is an involution of the graded ring, $\mathrm{J}^2=\mathrm{id}$, and its fixed part $H^*(X,\mathcal{F})^{\mathrm{J}}$ is the invariant cohomology.
+**Proposition (the action).** Let $G$ act on $X$ and let $\mathcal{F}$ carry a $G$-equivariant structure, as in *Equivariant Sheaves and Descent*. Then $G$ acts on the cohomology $H^*(X,\mathcal{F})$ by $\gamma^*=H^*(\gamma,\digamma_{\mathrm{map},\gamma})$, the action is functorial in the equivariant sheaf, and it commutes with the cup product of *The Cup Product on Sheaf Cohomology*: $\gamma^*(\alpha\smile\beta)=\gamma^*\alpha\smile\gamma^*\beta$. When $G=\mathbb{Z}/2$ with generator $\mathrm{J}$, the action is an involution of the graded ring, $\mathrm{J}^2=\mathrm{id}$, and its fixed part $H^*(X,\mathcal{F})^{\mathrm{J}}$ is the invariant cohomology.
 
-*Proof.* The equivariant structure gives an isomorphism $\varphi_{\gamma}:\gamma_*\mathcal{F}\to\mathcal{F}$, and the functor $H^*(X,-)$ carries it to an isomorphism $H^*(X,\mathcal{F})\to H^*(X,\mathcal{F})$ that is the action; the composability of the equivariant structures makes the assignment a group homomorphism, and the naturality of the cup product makes it multiplicative. For an involution the square is the identity because the equivariant structure is of order two.
+*Proof.* The equivariant structure gives an isomorphism $\digamma_{\mathrm{map},\gamma}:\gamma_*\mathcal{F}\to\mathcal{F}$, and the functor $H^*(X,-)$ carries it to an isomorphism $H^*(X,\mathcal{F})\to H^*(X,\mathcal{F})$ that is the action; the composability of the equivariant structures makes the assignment a group homomorphism, and the naturality of the cup product makes it multiplicative. For an involution the square is the identity because the equivariant structure is of order two.
 
 **Proposition (the fixed part is a module of the invariant ring).** The fixed part $H^*(X,\mathcal{F})^{G}$ is a module over the invariant ring $H^*(X,\mathcal{O}_X)^{G}$, and the cup product of two invariant classes is invariant; the graded ring $H^*(X,\mathcal{O}_X)^{G}$ is the **invariant cohomology ring**.
 
@@ -108,7 +108,7 @@ The passage from the invariants of the cohomology to the cohomology of the desce
 | Symbol | Meaning |
 |---|---|
 | $G$, $\Gamma$ | descent group; Galois group $\operatorname{gal}(K/k)$ in the semilinear case |
-| $\gamma^*=H^*(\gamma,\varphi_{\gamma})$ | action on the cohomology; commutes with the cup product |
+| $\gamma^*=H^*(\gamma,\digamma_{\mathrm{map},\gamma})$ | action on the cohomology; commutes with the cup product |
 | $H^*(X,\mathcal{F})^{G}$, $H^*(X,\mathcal{F})^{\mathrm{J}}$ | fixed part of the cohomology; invariant cohomology |
 | $H^*(X/G,\mathcal{F}^{G})\cong H^*(X,\mathcal{F})^{G}$ | descent isomorphism; fixed part $=$ cohomology of the descended sheaf |
 | $H^*(X,\mathcal{F}^{\Gamma})\cong H^*(X_K,\mathcal{F})^{\Gamma}$ | Galois form; semilinear action over $K$ |

@@ -22,7 +22,7 @@
 
 *Proof.* The rank is at most four; the invertible matrices form an open set.
 
-**Corollary.** The rank of a rank-one bispinor $\psi\bar\chi^{\dagger}$ is one for nonzero factors and zero otherwise.
+**Corollary.** The rank of a rank-one bispinor $Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}$ is one for nonzero factors and zero otherwise.
 
 *Proof.* A nonzero product of a column and a row has a one-dimensional image.
 
@@ -48,7 +48,7 @@
 
 **Proposition.** The rank-one stratum is the image of the Segre map $\mathbb{P}^{3}\times\mathbb{P}^{3}\to\mathbb{P}^{15}$, of dimension six in projective space, and it is the union of the minimal left ideals.
 
-*Proof.* A rank-one matrix is $\psi\bar\chi^{\dagger}$ with both factors nonzero, and the pair is determined up to a common scalar; the image of the Segre map has dimension $3+3=6$.
+*Proof.* A rank-one matrix is $Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}$ with both factors nonzero, and the pair is determined up to a common scalar; the image of the Segre map has dimension $3+3=6$.
 
 **Corollary.** The pure bispinors are the intersections of a minimal left ideal with a minimal right ideal, and each is a single point of the Segre variety.
 
@@ -64,7 +64,7 @@
 
 **Proposition.** Every minimal left ideal consists of bispinors of rank at most one, so it lies in the closure of the pure stratum.
 
-*Proof.* The elements of the ideal are $\psi\bar\chi^{\dagger}$ for fixed $\bar\chi$, of rank one or zero.
+*Proof.* The elements of the ideal are $Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}$ for fixed $\bar\chi$, of rank one or zero.
 
 **Corollary.** The intersection of a carrier with the rank-one stratum is nonempty for $V_3$ and empty for $V_0$.
 
@@ -88,7 +88,7 @@
 
 **Proposition.** The rank of a bispinor is one and its square is a nonzero multiple of itself, so the rank-one bispinors are exactly the nonzero elements whose square lies in their own line.
 
-*Proof.* A bispinor is $\psi\bar\chi^{\dagger}$; its square is $\psi(\bar\chi^{\dagger}\psi)\bar\chi^{\dagger}$, which is the pairing times the bispinor, and the pairing is nonzero for a pair of nonzero spinors.
+*Proof.* A bispinor is $Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}$; its square is $Ξ_{\mathrm{wfn}}(\bar\chi^{\dagger}Ξ_{\mathrm{wfn}})\bar\chi^{\dagger}$, which is the pairing times the bispinor, and the pairing is nonzero for a pair of nonzero spinors.
 
 **Corollary.** The nonzero bispinors form a single orbit under the product of the two special linear actions, and the orbit is the complement of the zero bispinor.
 

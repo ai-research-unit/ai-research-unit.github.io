@@ -70,7 +70,7 @@ are mutually inverse, because $E_{12}E_{21} = E_{11} = e$ and $E_{21}E_{12} = E_
 Now define, for $s = (s_1,s_2) \in \mathbb{R}^2$, the matrix $E(s)$ whose first column is $s$ and whose second column is $0$, and let
 
 $$
-\varphi : (\mathbb{R}^2)^{\oplus d} \longrightarrow M, \qquad \varphi(s^{(1)}, \dots, s^{(d)}) = \sum_{k=1}^{d} E(s^{(k)}) w_k .
+\digamma_{\mathrm{map}} : (\mathbb{R}^2)^{\oplus d} \longrightarrow M, \qquad \digamma_{\mathrm{map}}(s^{(1)}, \dots, s^{(d)}) = \sum_{k=1}^{d} E(s^{(k)}) w_k .
 $$
 
 The map is $M_2(\mathbb{R})$-linear: $E(As) = A E(s)$ for every matrix $A$, because both sides have first column $As$ and second column $0$. It carries the standard basis vectors of the $k$-th copy of $\mathbb{R}^2$ to $w_k$ and $E_{21}w_k$, since $E(1,0) = E_{11}$ and $E(0,1) = E_{21}$, so it is bijective. Hence $M \cong (\mathbb{R}^2)^{\oplus d}$ as a module.

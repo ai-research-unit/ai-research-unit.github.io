@@ -97,7 +97,7 @@ and it is the determinant of the multiplication in the idempotent coordinates.
 $$
 {\mathbb{B}_{\mathrm{red}}}^{\times}=\bigl\{\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}:Q_{\blacktriangle}+Q_{\blacktriangledown}\neq0\ \text{and}\ Q_{\blacktriangle}-Q_{\blacktriangledown}\neq0\bigr\}=\bigl\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\bigr\},
 $$
-and it is isomorphic to $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ by the component map $\varphi$.
+and it is isomorphic to $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ by the component map $\digamma_{\mathrm{map}}$.
 
 *Proof.* The criterion is the theorem above; the component map sends $\breve Q$ to $(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ and the product to the componentwise product, so it restricts to an isomorphism of the group of invertibles onto the pairs of nonzero complex numbers. The group is **abelian**, and its identity is $1$.
 

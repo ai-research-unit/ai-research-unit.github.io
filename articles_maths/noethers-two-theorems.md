@@ -111,25 +111,25 @@ The four conserved quantities are the components of the canonical four-vector, a
 
 **Lorentz invariance and angular momentum.** For the Lorentz group the parameter is instead the constant antisymmetric pair $\omega_{\mu\nu}$, the fields transform by their Lorentz action plus the coordinate change, and the six conserved quantities are the components of the angular-momentum tensor. The counting is the only point needed here: the group has $k=6$ parameters and the first theorem returns $6$ conservation laws.
 
-**An internal symmetry and the electric-type current.** Let the density be invariant under the constant phase rotation of a complex field, $\delta\phi = i\alpha\phi$, $\delta\phi^* = -i\alpha\phi^*$. For the massless complex scalar with
+**An internal symmetry and the electric-type current.** Let the density be invariant under the constant phase rotation of a complex field, $\delta\digamma_{\mathrm{map}} = i\alpha\digamma_{\mathrm{map}}$, $\delta\digamma_{\mathrm{map}}^* = -i\alpha\digamma_{\mathrm{map}}^*$. For the massless complex scalar with
 
 $$
-\mathcal{L} = \sum_\mu\partial/\partial x_\mu\,\phi^*\,\partial/\partial x_\mu\phi ,
+\mathcal{L} = \sum_\mu\partial/\partial x_\mu\,\digamma_{\mathrm{map}}^*\,\partial/\partial x_\mu\digamma_{\mathrm{map}} ,
 $$
 
-the conjugate momentum is $\mathcal{L}_{\mu\phi} = \partial/\partial x_\mu\phi^*$ and $\mathcal{L}_{\mu\bar{\phi}} = \partial/\partial x_\mu\phi$, so the current is
+the conjugate momentum is $\mathcal{L}_{\mu\digamma_{\mathrm{map}}} = \partial/\partial x_\mu\digamma_{\mathrm{map}}^*$ and $\mathcal{L}_{\mu\bar{\digamma_{\mathrm{map}}}} = \partial/\partial x_\mu\digamma_{\mathrm{map}}$, so the current is
 
 $$
-j_\mu = i\bigl(\phi\,\partial/\partial x_\mu\phi^* - \bar{\phi}\partial/\partial x_\mu\phi\bigr).
+j_\mu = i\bigl(\digamma_{\mathrm{map}}\,\partial/\partial x_\mu\digamma_{\mathrm{map}}^* - \bar{\digamma_{\mathrm{map}}}\partial/\partial x_\mu\digamma_{\mathrm{map}}\bigr).
 $$
 
 Its divergence computed off shell is
 
 $$
-\sum_\mu\partial/\partial x_\mu j_\mu = i\bigl(\phi\,\Box_\Phi\phi^* - \bar{\phi}\Box_\Phi\phi\bigr),
+\sum_\mu\partial/\partial x_\mu j_\mu = i\bigl(\digamma_{\mathrm{map}}\,\Box_\Phi\digamma_{\mathrm{map}}^* - \bar{\digamma_{\mathrm{map}}}\Box_\Phi\digamma_{\mathrm{map}}\bigr),
 $$
 
-which is precisely $-E_\phi\zeta_\phi - E_{\bar{\phi}}\zeta_{\bar\phi}$ and therefore vanishes on shell. The identity was checked on a superposition of two on-shell exponential solutions of null four-vector, where the divergence is $2.2\times10^{-13}$. This current is the ancestor of the conserved four-vector current of a complex field, and the corpus's *Noether's Theorem in Biquaternionic Form* carries its biquaternion image, the material-sector current $\tilde{J}$.
+which is precisely $-E_\digamma_{\mathrm{map}}\zeta_\digamma_{\mathrm{map}} - E_{\bar{\digamma_{\mathrm{map}}}}\zeta_{\bar\digamma_{\mathrm{map}}}$ and therefore vanishes on shell. The identity was checked on a superposition of two on-shell exponential solutions of null four-vector, where the divergence is $2.2\times10^{-13}$. This current is the ancestor of the conserved four-vector current of a complex field, and the corpus's *Noether's Theorem in Biquaternionic Form* carries its biquaternion image, the material-sector current $\tilde{J}$.
 
 ## The Second Theorem
 

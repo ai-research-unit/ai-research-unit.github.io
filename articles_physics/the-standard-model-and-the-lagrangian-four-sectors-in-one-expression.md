@@ -84,7 +84,7 @@ The three coefficients are equal because each factor's gauge field is normalised
 The term. One term per Weyl field, in the form
 
 $$
-\mathcal{L}_{\mathrm{ferm}}=\sum_{\psi}\bar{\tilde\Xi}_{\psi}\,i\,\tilde\nabla_{\mathrm{gco},\Phi}\,\tilde\Xi_{\psi} ,
+\mathcal{L}_{\mathrm{ferm}}=\sum_{Ξ_{\mathrm{wfn}}}\bar{\tilde\Xi}_{Ξ_{\mathrm{wfn}}}\,i\,\tilde\nabla_{\mathrm{gco},\Phi}\,\tilde\Xi_{Ξ_{\mathrm{wfn}}} ,
 $$
 
 with $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ the Dirac adjoint of the corpus, and $\tilde\nabla_{\mathrm{gco},\Phi}$ the gauge-covariant gradient, carrying the three connections in the representation of the field it acts on. The display states the structure; the component form of $\tilde\nabla_{\mathrm{gco},\Phi}$ and the sign of the bilinear are the Dirac article's, where the massless pair is $\tilde\nabla_\Phi\tilde\Xi_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=0$.
@@ -92,10 +92,10 @@ with $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ the Dirac adjoint of the corpus, a
 The covariant gradient. Its action on a field in the representation $(\mathbf{3}$ or $\mathbf{1},\mathbf{2}$ or $\mathbf{1},Y)$ is the one of *Operator and Calculus Conventions*, §*The Gradient*, and it reads
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\psi}=\tilde\nabla_\Phi\tilde\Xi_{\psi}+\frac{2\pi i\,ϙ}{h}\Bigl(\sum_a T_{a,\psi} G_{a}+\sum_a\tau_{a,\psi} W_{a}+Y_\psi B\Bigr)\tilde\Xi_{\psi} ,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{Ξ_{\mathrm{wfn}}}=\tilde\nabla_\Phi\tilde\Xi_{Ξ_{\mathrm{wfn}}}+\frac{2\pi i\,ϙ}{h}\Bigl(\sum_a T_{a,Ξ_{\mathrm{wfn}}} G_{a}+\sum_a\tau_{a,Ξ_{\mathrm{wfn}}} W_{a}+Y_Ξ_{\mathrm{wfn}} B\Bigr)\tilde\Xi_{Ξ_{\mathrm{wfn}}} ,
 $$
 
-with $T_{a,\psi}$ the colour generators in the representation of $\psi$ and $\tau_{a,\psi}$ the weak ones. The bracket is the connection in that representation, and it is the same object for all fifteen fields of a generation, differing only in which generators act and with which hypercharge.
+with $T_{a,Ξ_{\mathrm{wfn}}}$ the colour generators in the representation of $Ξ_{\mathrm{wfn}}$ and $\tau_{a,Ξ_{\mathrm{wfn}}}$ the weak ones. The bracket is the connection in that representation, and it is the same object for all fifteen fields of a generation, differing only in which generators act and with which hypercharge.
 
 Why the term is one term and not fifteen. The fifteen Weyl fields of a generation carry fifteen different connections and fifteen different hypercharges, so the display above is fifteen terms in one line. That is the whole of the fermion sector: a kinetic term per field, and no mass term.
 
@@ -187,7 +187,7 @@ $$
 \boxed{\;
 \begin{aligned}
 \mathcal{L}_{\mathrm{SM}}={}&-\tfrac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14\sum_{\imath,\jmath}B_{\imath\jmath}B_{\imath\jmath}\\[2pt]
-&+\sum_{\psi}\bar{\tilde\Xi}_{\psi}\,i\,\tilde\nabla_{\mathrm{gco},\Phi}\,\tilde\Xi_{\psi}\\[2pt]
+&+\sum_{Ξ_{\mathrm{wfn}}}\bar{\tilde\Xi}_{Ξ_{\mathrm{wfn}}}\,i\,\tilde\nabla_{\mathrm{gco},\Phi}\,\tilde\Xi_{Ξ_{\mathrm{wfn}}}\\[2pt]
 &-\sum_{\imath}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)^{\dagger}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)+\mu^2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\varpi_{\mathrm{cpl}}\left(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}\right)^2\\[2pt]
 &-\sum_{a,b}\Bigl(\bar Q_{L,a}\omicron_{\mathrm{hgs}}\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\omicron_{\mathrm{hgs}}\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\omicron_{\mathrm{hgs}}\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.}\\[2pt]
 &+\frac{\theta_{\mathrm{QCD}}}{32\pi^2}\sum_{\imath,\jmath,a}G_{a,\imath\jmath}G_{a,\mathrm{dual},\imath\jmath} .
@@ -206,7 +206,7 @@ What the display is. It is a Lagrangian density of dimension four, and every ter
 What is checked. Each term of the sum is checked separately, under the three local transformations
 
 $$
-\psi\mapsto e^{iY_\psi\alpha(x)}\,U_c(x)\,U_L(x)\,\psi ,
+Ξ_{\mathrm{wfn}}\mapsto e^{iY_Ξ_{\mathrm{wfn}}\alpha(x)}\,U_c(x)\,U_L(x)\,Ξ_{\mathrm{wfn}} ,
 \qquad
 G_{\imath}\mapsto U_cG_{\imath} U_c^{\dagger}+\frac{i}{g_s}U_c\frac{\partial U_c^{\dagger}}{\partial R_{\imath}} ,
 $$
@@ -292,7 +292,7 @@ Three sectors out of four. The corpus writes a gauge action, a scalar action and
 | $-\tfrac14F\cdot F$ | $-\tfrac14\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}$ | the same, by §*The Dictionary* |
 | $+\tfrac12\partial\xi\cdot\partial\xi$ | $-\tfrac12\sum_{\imath}\partial_{\imath}\xi\,\partial_{\imath}\xi$ | the same, by §*The Dictionary* |
 | $\lvert D_{\imath}\omicron_{\mathrm{hgs}}\rvert^2$ | $-\sum_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^\dagger(D_{\imath}\omicron_{\mathrm{hgs}})$ | the same |
-| the Dirac kinetic term, $\bar\psi\,iD_{\imath}\psi$ | $\bar{\tilde\Xi}\,i\tilde\nabla_\Phi\tilde\Xi$ | the Dirac article's pair; a central shift, if wanted, is added as $\kappa$ and never carried in the glyph |
+| the Dirac kinetic term, $\barΞ_{\mathrm{wfn}}\,iD_{\imath}Ξ_{\mathrm{wfn}}$ | $\bar{\tilde\Xi}\,i\tilde\nabla_\Phi\tilde\Xi$ | the Dirac article's pair; a central shift, if wanted, is added as $\kappa$ and never carried in the glyph |
 | $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$ | $\tilde\Xi\tilde\Xi^{\natural}$ | the norm of an element |
 
 The dictionary is a dictionary and not a theory. Each row is an identity between two writings of one object, and none of them is a derivation. The corpus's contribution is that the objects have homes: the connection is a material-sector element, the curvature is its vector part under $\natural$, the scalar is an element and its modulus squared is the norm.

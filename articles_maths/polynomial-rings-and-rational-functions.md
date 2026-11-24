@@ -16,7 +16,7 @@ The ring-theoretic background is *Rings*, *Integral Domains*, *Unique Factorisat
 
 **Definition.** For a commutative ring $R$ the **polynomial ring** $R[x]$ is the set of formal sums $\sum_{k\geq0}a_kx^k$ with $a_k \in R$ and $a_k = 0$ for all but finitely many $k$, with the termwise addition and the multiplication given by the Cauchy rule $\left(\sum a_ix^i\right)\left(\sum b_jx^j\right) = \sum_k\left(\sum_{i+j=k}a_ib_j\right)x^k$. The **degree** of a nonzero polynomial is the largest $k$ with $a_k \neq 0$, and the **leading coefficient** is that $a_k$.
 
-**Theorem (universal property).** Let $R$ be commutative, $S$ a commutative ring and $\varphi : R \to S$ a ring homomorphism. Then for every $s \in S$ there is exactly one ring homomorphism $\Phi : R[x] \to S$ with $\Phi(x) = s$ and $\Phi|_R = \varphi$, given by $\Phi(\sum a_kx^k) = \sum\varphi(a_k)s^k$. In particular the evaluation maps $\operatorname{ev}_s : R[x] \to R$ are the heart of the theory: a polynomial is determined by the functor it induces on the category of commutative $R$-rings.
+**Theorem (universal property).** Let $R$ be commutative, $S$ a commutative ring and $\digamma_{\mathrm{map}} : R \to S$ a ring homomorphism. Then for every $s \in S$ there is exactly one ring homomorphism $\Phi : R[x] \to S$ with $\Phi(x) = s$ and $\Phi|_R = \digamma_{\mathrm{map}}$, given by $\Phi(\sum a_kx^k) = \sum\digamma_{\mathrm{map}}(a_k)s^k$. In particular the evaluation maps $\operatorname{ev}_s : R[x] \to R$ are the heart of the theory: a polynomial is determined by the functor it induces on the category of commutative $R$-rings.
 
 **Proof.** Existence and uniqueness are checked on monomials, where the value of $\Phi$ is forced, and the Cauchy rule is exactly what makes $\Phi$ multiplicative.
 
@@ -74,9 +74,9 @@ $$
 
 **Proof.** The degree is additive on products of polynomials and subadditive on sums, and these properties descend to fractions.
 
-**Theorem (Lüroth).** Let $K$ be a field and let $L$ be a field with $K \subseteq L \subseteq K(x)$. Then $L = K(\varphi)$ for some $\varphi \in K(x)$; in particular $L$ is either $K$ or a rational function field in one variable over $K$.
+**Theorem (Lüroth).** Let $K$ be a field and let $L$ be a field with $K \subseteq L \subseteq K(x)$. Then $L = K(\digamma_{\mathrm{map}})$ for some $\digamma_{\mathrm{map}} \in K(x)$; in particular $L$ is either $K$ or a rational function field in one variable over $K$.
 
-**Proof sketch.** Writing $\varphi = f/g$ in lowest terms and using the degree $\max(\deg f,\deg g) = [K(x):K(\varphi)]$, one shows that if $L \supsetneq K$ contains an element $\varphi$ of minimal degree, then $L = K(\varphi)$; any $\psi \in L$ is algebraic over $K(\varphi)$, and the degree estimate forces it to lie in $K(\varphi)$.
+**Proof sketch.** Writing $\digamma_{\mathrm{map}} = f/g$ in lowest terms and using the degree $\max(\deg f,\deg g) = [K(x):K(\digamma_{\mathrm{map}})]$, one shows that if $L \supsetneq K$ contains an element $\digamma_{\mathrm{map}}$ of minimal degree, then $L = K(\digamma_{\mathrm{map}})$; any $Ξ_{\mathrm{wfn}} \in L$ is algebraic over $K(\digamma_{\mathrm{map}})$, and the degree estimate forces it to lie in $K(\digamma_{\mathrm{map}})$.
 
 **Example.** In $\mathbb{R}(x)$ the subfield $\mathbb{R}(x^2)$, consisting of the rational functions even in $x$, is a rational function field in one variable with $[\,\mathbb{R}(x):\mathbb{R}(x^2)\,] = 2$: the element $x$ satisfies the quadratic $T^2-x^2$ over $\mathbb{R}(x^2)$. Likewise $\mathbb{R}(x^3+x)$ is a proper intermediate field with $[\,\mathbb{R}(x):\mathbb{R}(x^3+x)\,] = 3$, since $x$ satisfies $T^3+T-(x^3+x)$.
 

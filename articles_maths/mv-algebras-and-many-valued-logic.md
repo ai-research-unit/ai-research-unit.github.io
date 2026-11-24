@@ -231,19 +231,19 @@ such that for every $x \in [0,1]^n$ one has $f(x) = \ell_i(x)$ for some $i$. The
 
 **Definition.** The formulas of **Łukasiewicz propositional logic** $\mathrm{L}$ are built from propositional variables by the connectives $\neg$ and $\to$; the derived connectives are $\alpha \oplus \beta = \neg \alpha \to \beta$, $\alpha \odot \beta = \neg(\alpha \to \neg \beta)$, $\alpha \vee \beta = (\alpha \to \beta) \to \beta$ and $\alpha \wedge \beta = \alpha \odot (\alpha \to \beta)$. A **valuation** is a map $v$ from the variables to $[0,1]$, extended by
 $$
-v(\neg\varphi) = 1 - v(\varphi), \qquad v(\varphi \to \psi) = \min(1, 1 - v(\varphi) + v(\psi)).
+v(\neg\digamma_{\mathrm{fml}}) = 1 - v(\digamma_{\mathrm{fml}}), \qquad v(\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}) = \min(1, 1 - v(\digamma_{\mathrm{fml}}) + v(\digamma_{\mathrm{fml}})).
 $$
-A formula is a **tautology** if $v(\varphi) = 1$ for every valuation, and $\mathrm{L}$ is the logic whose theorems are the tautologies. Equivalently, valuations into $[0,1]_{\mathrm{L}}$ are exactly the homomorphisms from the free MV-algebra on the variables to $[0,1]_{\mathrm{L}}$.
+A formula is a **tautology** if $v(\digamma_{\mathrm{fml}}) = 1$ for every valuation, and $\mathrm{L}$ is the logic whose theorems are the tautologies. Equivalently, valuations into $[0,1]_{\mathrm{L}}$ are exactly the homomorphisms from the free MV-algebra on the variables to $[0,1]_{\mathrm{L}}$.
 
 ### Algebraic Completeness
 
-**Theorem (Chang completeness).** For every formula $\varphi$ of $\mathrm{L}$,
+**Theorem (Chang completeness).** For every formula $\digamma_{\mathrm{fml}}$ of $\mathrm{L}$,
 
 $$
-\boxed{\;\vdash_{\mathrm{L}} \varphi \iff v(\varphi) = 1 \text{ for every valuation } v : \mathrm{Vars} \to [0,1]\;}.
+\boxed{\;\vdash_{\mathrm{L}} \digamma_{\mathrm{fml}} \iff v(\digamma_{\mathrm{fml}}) = 1 \text{ for every valuation } v : \mathrm{Vars} \to [0,1]\;}.
 $$
 
-**Proof.** Soundness is induction on the length of the derivation: the Łukasiewicz axioms of the Hilbert system for $\mathrm{L}$ are identities of MV-algebras, each of which is verified in $[0,1]_{\mathrm{L}}$, and the rules preserve the value $1$. For completeness, the Lindenbaum algebra $F$ of $\mathrm{L}$ is an MV-algebra, and the valuations are exactly the homomorphisms from the term algebra to $[0,1]_{\mathrm{L}}$ that respect provable equivalence; by Chang's theorem the homomorphisms to $[0,1]_{\mathrm{L}}$ separate the points of $F$, so if $\varphi$ is not a theorem and its class is therefore not $1$, some valuation sends $\varphi$ to a value different from $1$.
+**Proof.** Soundness is induction on the length of the derivation: the Łukasiewicz axioms of the Hilbert system for $\mathrm{L}$ are identities of MV-algebras, each of which is verified in $[0,1]_{\mathrm{L}}$, and the rules preserve the value $1$. For completeness, the Lindenbaum algebra $F$ of $\mathrm{L}$ is an MV-algebra, and the valuations are exactly the homomorphisms from the term algebra to $[0,1]_{\mathrm{L}}$ that respect provable equivalence; by Chang's theorem the homomorphisms to $[0,1]_{\mathrm{L}}$ separate the points of $F$, so if $\digamma_{\mathrm{fml}}$ is not a theorem and its class is therefore not $1$, some valuation sends $\digamma_{\mathrm{fml}}$ to a value different from $1$.
 
 **Corollary.** The logic $\mathrm{L}$ is *the* logic of the standard interval, and the many-valued semantics is complete: the interval supplies all the counterexamples needed. The finite chains $\mathrm{L}_n$ give the **finite-valued Łukasiewicz logics** $\mathrm{L}_n$, and a formula valid in $[0,1]_{\mathrm{L}}$ is valid in each $\mathrm{L}_n$ because $\mathrm{L}_n$ is a subalgebra. Conversely, a counterexample on $[0,1]$ can be perturbed, since the operations $\min(1,\cdot)$, $1-\cdot$ and $+$ are continuous, to one whose values all lie in $\tfrac1n\mathbb{Z}$ for some $n$, and it is then a counterexample in $\mathrm{L}_n$; hence the tautologies of the infinite-valued logic are exactly the formulas tautological in every finite-valued logic, and $\mathrm{L}$ is the intersection of the logics $\mathrm{L}_n$.
 

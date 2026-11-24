@@ -174,8 +174,8 @@ $$
 the singular values are
 
 $$
-\sigma_1=\frac{1+\sqrt5}{2}=\varphi,\qquad
-\sigma_2=\frac{\sqrt5-1}{2}=\frac1\varphi,
+\sigma_1=\frac{1+\sqrt5}{2}=\digamma_{\mathrm{map}},\qquad
+\sigma_2=\frac{\sqrt5-1}{2}=\frac1\digamma_{\mathrm{map}},
 $$
 
 the golden ratio and its inverse. The singular values are the positive square roots of the eigenvalues $(3\pm\sqrt5)/2$ of $M^*M$.

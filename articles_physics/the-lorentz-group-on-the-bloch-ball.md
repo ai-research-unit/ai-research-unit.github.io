@@ -202,7 +202,7 @@ F=\sqrt{\tfrac{1}{2}\Bigl(1+\vec s_{\Psi}\cdot\vec s_{\Psi}'
 +\sqrt{\bigl(1-\lvert\vec s_{\Psi}\rvert^{2}\bigr)\bigl(1-\lvert\vec s_{\Psi}'\rvert^{2}\bigr)}\Bigr)},
 \qquad d_{B}=\arccos F ,
 $$
-with $F$ the fidelity of the two states: $F=0.948683$ for the state at radius $0.6$ against the centre, and $F=\cos(\phi/2)$ for two pure states at Bloch angle $\phi$. It is the metric of distinguishability, and it is invariant under the rotation subgroup and under no boost. On the pair $\vec s_{\Psi}=(0.3,0,0)$ and $\vec s_{\Psi}'=(0.85,0,0)$ the two metrics read $d_{K}=0.946633$ and $d_{B}=0.355646$; after a boost of rapidity $1.2$ along $\vec e_x$ the Klein distance is still $0.946633$ and the Bures distance is $0.131964$.
+with $F$ the fidelity of the two states: $F=0.948683$ for the state at radius $0.6$ against the centre, and $F=\cos(\xi_{\mathrm{pot}}/2)$ for two pure states at Bloch angle $\xi_{\mathrm{pot}}$. It is the metric of distinguishability, and it is invariant under the rotation subgroup and under no boost. On the pair $\vec s_{\Psi}=(0.3,0,0)$ and $\vec s_{\Psi}'=(0.85,0,0)$ the two metrics read $d_{K}=0.946633$ and $d_{B}=0.355646$; after a boost of rapidity $1.2$ along $\vec e_x$ the Klein distance is still $0.946633$ and the Bures distance is $0.131964$.
 
 So the two metrics answer two different questions, and only one of them is a question about frames. The Klein distance asks how far apart two states are in the geometry the group acts on; it is the distance a boost preserves, and it is the distance of the velocity space of the material sector. The Bures distance asks how distinguishable two states are; it is the distance a measurement can see, and a boost changes it because a boost changes the state.
 
@@ -229,14 +229,14 @@ This is why the boost cannot be removed by a change of drawing. The unitary part
 The product of two boosts is a boost times a rotation, and the rotation is the Wigner rotation. Take $\tilde U=\tilde U_{\mathrm b}(\theta_1,\vec u_1)\tilde U_{\mathrm b}(\theta_2,\vec u_2)$. The polar decomposition gives $\tilde U=\tilde L\tilde R$ with $\tilde R$ unitary, and the axis of $\tilde R$ is $\pm\vec u_1\times\vec u_2$. The closed form is
 $$
 \tan\frac{\Omega}{2}=
-\frac{\sinh\frac{\theta_1}{2}\sinh\frac{\theta_2}{2}\sin\phi}
-{\cosh\frac{\theta_1}{2}\cosh\frac{\theta_2}{2}+\sinh\frac{\theta_1}{2}\sinh\frac{\theta_2}{2}\cos\phi},
+\frac{\sinh\frac{\theta_1}{2}\sinh\frac{\theta_2}{2}\sin\xi_{\mathrm{pot}}}
+{\cosh\frac{\theta_1}{2}\cosh\frac{\theta_2}{2}+\sinh\frac{\theta_1}{2}\sinh\frac{\theta_2}{2}\cos\xi_{\mathrm{pot}}},
 $$
-with $\phi$ the angle between the two axes. Verified on a hundred random pairs, worst deviation $1.2\times10^{-15}$.
+with $\xi_{\mathrm{pot}}$ the angle between the two axes. Verified on a hundred random pairs, worst deviation $1.2\times10^{-15}$.
 
 The numbers, at $\theta_1=1.5$ and $\theta_2=1.2$, with the first axis along $\vec e_z$.
 
-| $\phi$ | $\Omega$ |
+| $\xi_{\mathrm{pot}}$ | $\Omega$ |
 | --- | --- |
 | $0$ | $0.000000$ |
 | $\pi/6$ | $0.261814$ |

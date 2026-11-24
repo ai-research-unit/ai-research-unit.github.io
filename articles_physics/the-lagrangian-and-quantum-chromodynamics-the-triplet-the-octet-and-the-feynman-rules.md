@@ -7,10 +7,10 @@ The standing of this article. Everything below is standard theory, written in th
 The claim. Quantum chromodynamics is one Lagrangian with four pieces and four vertices.
 
 $$
-\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}+\sum_f\bar\psi_f\left(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)\psi_f+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}} .
+\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}+\sum_f\barΞ_{\mathrm{wfn},f}\left(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)Ξ_{\mathrm{wfn},f}+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}} .
 $$
 
-The quark $\psi_f$ is a colour triplet, one per flavour $f$; the gluon $G_{a,\imath}$ is a colour octet; the vertices are the quark–gluon, the three-gluon, the four-gluon and the ghost–gluon, and they exhaust the tree-level content. The $\theta$ term is a fifth piece, a total derivative in perturbation theory, and it is named here and left to its own article.
+The quark $Ξ_{\mathrm{wfn},f}$ is a colour triplet, one per flavour $f$; the gluon $G_{a,\imath}$ is a colour octet; the vertices are the quark–gluon, the three-gluon, the four-gluon and the ghost–gluon, and they exhaust the tree-level content. The $\theta$ term is a fifth piece, a total derivative in perturbation theory, and it is named here and left to its own article.
 
 Why the number three is not in the Lagrangian. Nothing in the algebra or in the Lagrangian's structure fixes $N_c=3$. The number is measured, four independent ways, and the section *Why Three Colours* records them. That is the same status as the nineteen parameters of [the content article](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html): a fact about the world, imported.
 
@@ -29,7 +29,7 @@ One convention is a restriction. Spinors, generators and projectors are written 
 The four pieces, in the corpus's coordinates. With $\partial/\partial R_{\imath}$ the derivative of [the assembled Lagrangian](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) and the sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ applying to every display,
 
 $$
-\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}+\sum_f\bar\psi_f\left(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)\psi_f-\frac{1}{2\zeta}\sum_{a,\imath}\left(\frac{\partial G_{a,\imath}}{\partial R_{\imath}}\right)^2+\sum_{a}\bar c_{a}\left(-\frac{\partial^2}{\partial R_{\imath}\partial R_{\imath}}\right)c_{a}+\mathcal{L}_{cG} .
+\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}+\sum_f\barΞ_{\mathrm{wfn},f}\left(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)Ξ_{\mathrm{wfn},f}-\frac{1}{2\zeta}\sum_{a,\imath}\left(\frac{\partial G_{a,\imath}}{\partial R_{\imath}}\right)^2+\sum_{a}\bar c_{a}\left(-\frac{\partial^2}{\partial R_{\imath}\partial R_{\imath}}\right)c_{a}+\mathcal{L}_{cG} .
 $$
 
 The pieces, named. The first is the gauge kinetic term; the second the quark term, one per flavour, with the covariant derivative carrying the colour connection in the triplet; the third the gauge-fixing term with parameter $\zeta$; the fourth and fifth the ghost kinetic and ghost–gluon terms. The list is complete for perturbation theory. The $\theta$ term,
@@ -42,7 +42,7 @@ is a total derivative and contributes nothing to any perturbative amplitude; it 
 
 Why the gauge-fixing and ghost terms are not optional. The quadratic kernel of the gauge field alone is not invertible, because the gauge orbit is a flat direction of $-\frac14\sum GG$; the gauge-fixing term lifts it, and the ghost term restores the gauge invariance that the fixing broke. That mechanism is the subject of [Gauge Fixing in the Electroweak Theory](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html), and its structure in QCD is identical with one difference that matters: the ghost of QCD is in the adjoint, so it carries a colour index and couples through $f_{abc}$ rather than through a generator matrix.
 
-**The mass term is allowed here and forbidden there.** A term $m\bar\psi\psi$ is invariant under $SU(3)$, so QCD admits quark masses; the same term is forbidden in the electroweak theory because the two chiralities carry different $SU(2)$ representations. The quark mass in the display above is therefore a genuine parameter of the strong sector, generated elsewhere — by the Yukawa sector — and carried here as an input.
+**The mass term is allowed here and forbidden there.** A term $m\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}$ is invariant under $SU(3)$, so QCD admits quark masses; the same term is forbidden in the electroweak theory because the two chiralities carry different $SU(2)$ representations. The quark mass in the display above is therefore a genuine parameter of the strong sector, generated elsewhere — by the Yukawa sector — and carried here as an input.
 
 ### Why Three Colours
 
@@ -73,8 +73,8 @@ The three representations.
 
 | Object | Representation | Dimension | Why |
 |---|---|---|---|
-| Quark $\psi$ | $\mathbf{3}$ | $3$ | It carries one colour index |
-| Antiquark $\bar\psi$ | $\bar{\mathbf{3}}$ | $3$ | The conjugate index |
+| Quark $Ξ_{\mathrm{wfn}}$ | $\mathbf{3}$ | $3$ | It carries one colour index |
+| Antiquark $\barΞ_{\mathrm{wfn}}$ | $\bar{\mathbf{3}}$ | $3$ | The conjugate index |
 | Gluon $G_{a,\imath}$ | $\mathbf{8}$ (adjoint) | $8=N^2-1$ | It carries colour and anticolour in the traceless combination |
 
 Why the gluon is the octet and not the singlet inside $\mathbf{3}\otimes\bar{\mathbf{3}}$. A gluon must carry a colour and an anticolour, so it lives in $\mathbf{3}\otimes\bar{\mathbf{3}}$, and
@@ -175,7 +175,7 @@ This identity is the one to check, and it was. With random constant fields the t
 
 Consequence, stated once. Because $G_{a,\imath\jmath}$ is a commutator of covariant derivatives, the cubic and quartic terms in $-\frac14\sum GG$ have coefficients fixed by $g_s$ and by nothing else. Every self-coupling of the gluon is a consequence of the non-abelian commutator; an abelian theory has neither, because its structure constants vanish.
 
-The pairing. Three bilinears and no cross term. The gauge term pairs $G_{a,\imath\jmath}$ with itself, the matter term pairs $\bar\psi_f$ with its own derivative, and the ghost term pairs $\bar c_{a}$ with the d'Alembertian of $c_{a}$. No term pairs two different fields, so the density is a sum of three bilinear forms, each in one field, and the reality of the density is the reality of each form separately. The gauge term is real on sight: $G_{a,\imath}$ is real, $f_{abc}$ is real, and the sum of squares of the components is a real number at every event. The matter term is real because the operator between the spinor and its conjugate is Hermitian, the current $\bar\psi_f\gamma_{\imath}\psi_f$ is real, and a real current contracted with a real connection with real $g_s$ stays real. The ghost term is real because $-\partial^2$ is real and its two fields are real numbers of the component dictionary, as the ghost of an abelian theory also is.
+The pairing. Three bilinears and no cross term. The gauge term pairs $G_{a,\imath\jmath}$ with itself, the matter term pairs $\barΞ_{\mathrm{wfn},f}$ with its own derivative, and the ghost term pairs $\bar c_{a}$ with the d'Alembertian of $c_{a}$. No term pairs two different fields, so the density is a sum of three bilinear forms, each in one field, and the reality of the density is the reality of each form separately. The gauge term is real on sight: $G_{a,\imath}$ is real, $f_{abc}$ is real, and the sum of squares of the components is a real number at every event. The matter term is real because the operator between the spinor and its conjugate is Hermitian, the current $\barΞ_{\mathrm{wfn},f}\gamma_{\imath}Ξ_{\mathrm{wfn},f}$ is real, and a real current contracted with a real connection with real $g_s$ stays real. The ghost term is real because $-\partial^2$ is real and its two fields are real numbers of the component dictionary, as the ghost of an abelian theory also is.
 
 The type of the coefficient. Every coefficient is real, and one of them is fixed by a count and not by a normalisation. The $\tfrac14$ in front of the gauge term is a convention, settled with the definition of $G_{a,\imath\jmath}$ and not separately from it: it is the value that makes the variation produce $D_{\imath} G_{a,\imath\jmath}$ with no leftover factor. $\zeta$ must be real and positive, because the third term exists to make a quadratic form invertible and positive, and a complex or negative $\zeta$ leaves the kernel indefinite and the propagator unsigned. $g_s$ is real and $m_f$ is real, because the fields they multiply are real and a complex coupling would make $G_{a,\imath\jmath}$ complex and the density with it. The one coefficient here that is not a normalisation is the sign of the ghost term. It must be opposite to a normal scalar's, so that the determinant it contributes cancels the two unphysical modes each gauge generator carries. Flip that sign and the count of degrees of freedom is wrong by $2(N^2-1)$, which in this theory is thirty-two.
 
@@ -188,10 +188,10 @@ What reality does not buy. The spectrum is not in the display. The density is re
 Three variations and what each returns. Varying $G_{a,\imath}$,
 
 $$
-D_{\jmath} G_{a,\imath\jmath}=g_s\sum_f\bar\psi_f\left(\varepsilon_{\imath}\gamma_{\imath} T_{a}\right)\psi_f ,
+D_{\jmath} G_{a,\imath\jmath}=g_s\sum_f\barΞ_{\mathrm{wfn},f}\left(\varepsilon_{\imath}\gamma_{\imath} T_{a}\right)Ξ_{\mathrm{wfn},f} ,
 $$
 
-with the covariant divergence on the left because the field strength is a commutator; varying $\bar\psi_f$ gives the covariant Dirac equation $\left(i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)\psi_f=0$, and varying $\psi_f$ gives its conjugate. The source is the colour current, and it carries the same $T_{a}$ the covariant derivative carries: the charge in $D_{\imath}$ is the charge in $j_{a,\imath}$, which is the normalisation check the Maxwell article performs for $e$.
+with the covariant divergence on the left because the field strength is a commutator; varying $\barΞ_{\mathrm{wfn},f}$ gives the covariant Dirac equation $\left(i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)Ξ_{\mathrm{wfn},f}=0$, and varying $Ξ_{\mathrm{wfn},f}$ gives its conjugate. The source is the colour current, and it carries the same $T_{a}$ the covariant derivative carries: the charge in $D_{\imath}$ is the charge in $j_{a,\imath}$, which is the normalisation check the Maxwell article performs for $e$.
 
 The identity that is not an equation. Because $G_{a,\imath\jmath}$ is a commutator it satisfies $D_{[\imath}G_{a,\jmath\rho]}=0$ identically, for every configuration, on shell or off. That is the Bianchi identity, it constrains nothing, and it is not the field equation. The two stand to each other as $\mathrm{d}F=0$ stands to $\mathrm{d}\star F=J$.
 
@@ -230,7 +230,7 @@ Eight constraints, not eight equations of motion. The time component of the fiel
 $$
 D_jG_{a,j0}=g_s\rho_{a} ,
 \qquad
-\rho_{a}=\sum_f\psi_f^{\dagger}T_{a}\psi_f ,
+\rho_{a}=\sum_fΞ_{\mathrm{wfn},f}^{\dagger}T_{a}Ξ_{\mathrm{wfn},f} ,
 $$
 
 a condition on the initial data for each of the eight generators. It contains no second time derivative, so it propagates nothing: it is Gauss's law eight times over, and the divergence of the spatial part reproduces it because the colour current is covariantly conserved. The word *covariantly* is the whole non-abelian content here: an ordinary divergence would not reproduce the constraint, and the $f_{abc}$ term in $D_{\imath} j_{a,\imath}$ is exactly what makes the two agree.
@@ -277,7 +277,7 @@ Why the three-gluon rule has no explicit $i$ and the four-gluon rule has one. Th
 The quark–gluon vertex, in one line. The interaction term in the quark piece is
 
 $$
--g_s\sum_{a,\imath}\varepsilon_{\imath}\bar\psi\gamma_{\imath} T_{a}G_{a,\imath}\psi ,
+-g_s\sum_{a,\imath}\varepsilon_{\imath}\barΞ_{\mathrm{wfn}}\gamma_{\imath} T_{a}G_{a,\imath}Ξ_{\mathrm{wfn}} ,
 $$
 
 with the sign from $\left(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\right)\left(-ig_sT_{a}G_{a,\imath}\right)=+g_s\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} T_{a}G_{a,\imath}$. The vertex is $i$ times this coefficient with the fields removed, so it is $-ig_s\varepsilon_{\imath}\gamma_{\imath} T_{a,ij}$.
@@ -387,7 +387,7 @@ The two quadratic Casimir invariants. From the explicit matrices, $\sum_aT_{a}T_
 The colour current, and the conservation it has. The current that couples to $G_{a,\imath}$ is
 
 $$
-j_{a,\imath}=\sum_f\bar\psi_f\left(\varepsilon_{\imath}\gamma_{\imath} T_{a}\right)\psi_f ,
+j_{a,\imath}=\sum_f\barΞ_{\mathrm{wfn},f}\left(\varepsilon_{\imath}\gamma_{\imath} T_{a}\right)Ξ_{\mathrm{wfn},f} ,
 $$
 
 and it is covariantly conserved, $D_{\imath} j_{a,\imath}=0$, not ordinarily conserved: its ordinary divergence is $\partial_{\imath} j_{a,\imath}=g_sf_{abc}G_{b,\imath} j_{c,\imath}$, which does not vanish. The current carries the colour it couples to, so it cannot be a singlet, and the statement is the same one the non-abelian article makes about the field equation. It is also why this corpus writes no colour charge operator: a conserved charge needs a singlet current, and confinement is exactly the statement that no colour-singlet current exists.
@@ -407,7 +407,7 @@ Classically the trace vanishes for massless quarks, because the action is then s
 The axial current and its two terms. **The flavour-singlet axial current is not conserved either**, and its divergence has a mass term and a topological term,
 
 $$
-\partial_{\imath} j_{5,\imath}=2i\sum_fm_f\bar\psi_f\gamma_5\psi_f+\frac{g_s^{2}N_f}{16\pi^{2}}\sum_{a,\imath,\jmath}G_{a,\imath\jmath}\widetilde G_{a,\imath\jmath} ,
+\partial_{\imath} j_{5,\imath}=2i\sum_fm_f\barΞ_{\mathrm{wfn},f}\gamma_5Ξ_{\mathrm{wfn},f}+\frac{g_s^{2}N_f}{16\pi^{2}}\sum_{a,\imath,\jmath}G_{a,\imath\jmath}\widetilde G_{a,\imath\jmath} ,
 $$
 
 so that a chiral symmetry the classical action has is broken by the measure. The second term is a total derivative in the field strength but not in the current, and that difference is what makes $\theta_{\mathrm{QCD}}$ a parameter of the theory rather than a surface term that can be discarded.
@@ -451,7 +451,7 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 
 | Symbol | Meaning |
 |---|---|
-| $\psi_f$, $\bar\psi_f$ | Quark field of flavour $f$ in the $\mathbf{3}$, and its conjugate |
+| $Ξ_{\mathrm{wfn},f}$, $\barΞ_{\mathrm{wfn},f}$ | Quark field of flavour $f$ in the $\mathbf{3}$, and its conjugate |
 | $G_{a,\imath}$, $G_{a,\imath\jmath}$ | Gluon field and field strength, $a=1,\dots,8$ |
 | $g_s$ | Strong coupling; $\alpha_s=g_s^2/4\pi$ |
 | $T_{a}=\digamma_{\mathrm{gmn},a}/2$ | Generators of the triplet; $\digamma_{\mathrm{gmn},a}$ the Gell-Mann matrices |
@@ -460,7 +460,7 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 | $C_F=4/3$ | Quadratic Casimir of the triplet, $\sum_aT_{a}T_{a}=C_FI$ |
 | $C_A=3$ | Quadratic Casimir of the adjoint, $\sum_{c,e}f_{ace}f_{bce}=C_A\delta_{ab}$ |
 | $D_{\imath}$ | Covariant derivative, $\partial_{\imath}-ig_sG_{a,\imath} T_{a}$ |
-| $j_{a,\imath}$ | Colour current, $\sum_f\bar\psi_f\varepsilon_{\imath}\gamma_{\imath} T_{a}\psi_f$; covariantly conserved |
+| $j_{a,\imath}$ | Colour current, $\sum_f\barΞ_{\mathrm{wfn},f}\varepsilon_{\imath}\gamma_{\imath} T_{a}Ξ_{\mathrm{wfn},f}$; covariantly conserved |
 | $j_{5,\imath}$ | Flavour-singlet axial current, with the mass and anomaly terms in its divergence |
 | $\sum_{\imath}\varepsilon_{\imath}\theta_{\imath\imath}$ | Trace of the stress tensor; equal to $\beta(g_s)G_{a}G_{a}/2g_s$ |
 | $\zeta$ | Gauge parameter; $\zeta=1$ is Feynman gauge |

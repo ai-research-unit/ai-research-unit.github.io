@@ -9,7 +9,7 @@ T^\alpha_a=L_a\alpha,\qquad T^\alpha_a(x)=a\,\alpha(x),
 $$
 and this article computes its **adjoint** with respect to the form of the category,
 $$
-\langle x,y\rangle=\varphi(xy^*)=\mathbb E\bigl[x\bar y\bigr].
+\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)=\mathbb E\bigl[x\bar y\bigr].
 $$
 The adjoint is again a signed left multiplication,
 $$
@@ -17,9 +17,9 @@ $$
 $$
 the signed left multiplication by the **twisted image** $\delta(a)$ of the parameter, where $\delta$ is the composite of the conjugation and the grade involution. The formula is the same as in the noncommutative signed theory of *The Signed Left Multiplication on a Ring*, in Part I, but the derivation differs: there the twisted involution performs the reversal of the product, while here the product is commutative, the adjoint of the ordinary left multiplication is the left multiplication by the conjugate, and the twist $\delta$ on the parameter completes the computation. The article gives the closed form, the behaviour under products and squares, the conditions for self-adjointness, isometry and unitarity, and the comparison of the adjoint with the involution on the elements, which agree exactly up to the twisted involution $\delta$.
 
-The conventions are those fixed in *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category: $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the pointwise product, the conjugation $\sigma(a)=\bar a$, the state $\varphi(a)=\mathbb E[a]$, the form of the category $\langle x,y\rangle=\varphi(xy^*)$, the grade involution $\alpha$, the grading and the twisted involution $\delta=\sigma\alpha=\alpha\sigma$. The signed left multiplication and its products are *The Signed Left Multiplication on the Algebra of Random Variables*, earlier in this category; the signed two-sided operator, of which it is the case $b=1$, and its adjoint are *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category, and *The Signed Adjoint Two-Sided Operator on the Algebra of Random Variables*, the preceding article of this category; the reflections and their adjoints are *Reflections as Signed Two-Sided Operators on the Algebra of Random Variables*, earlier in this category, and *The Signed Adjoint of the Reflection on the Algebra of Random Variables*, the preceding article of this category; the adjoint of the unsigned left multiplication is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, earlier in this category; the operator-algebra involution is *The Involution on the Operator Algebra of a Process*, earlier in this category; and the graded adjoint action is *The Graded Adjoint Action on a Module over the Algebra of Random Variables*, the next article of this category. No physics is invoked.
+The conventions are those fixed in *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category: $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the pointwise product, the conjugation $\sigma(a)=\bar a$, the state $\digamma_{\mathrm{map}}(a)=\mathbb E[a]$, the form of the category $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$, the grade involution $\alpha$, the grading and the twisted involution $\delta=\sigma\alpha=\alpha\sigma$. The signed left multiplication and its products are *The Signed Left Multiplication on the Algebra of Random Variables*, earlier in this category; the signed two-sided operator, of which it is the case $b=1$, and its adjoint are *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category, and *The Signed Adjoint Two-Sided Operator on the Algebra of Random Variables*, the preceding article of this category; the reflections and their adjoints are *Reflections as Signed Two-Sided Operators on the Algebra of Random Variables*, earlier in this category, and *The Signed Adjoint of the Reflection on the Algebra of Random Variables*, the preceding article of this category; the adjoint of the unsigned left multiplication is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, earlier in this category; the operator-algebra involution is *The Involution on the Operator Algebra of a Process*, earlier in this category; and the graded adjoint action is *The Graded Adjoint Action on a Module over the Algebra of Random Variables*, the next article of this category. No physics is invoked.
 
-Throughout, $\mathcal{A}$ is the algebra of random variables, $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form $\langle x,y\rangle=\varphi(xy^*)$ is the Hilbert space of the category, $T^\alpha_a=L_a\alpha$ is the signed left multiplication, and $\delta=\sigma\alpha$; the twisted involution satisfies $\delta^2=\mathrm{id}$, $\delta\alpha=\alpha\delta=\sigma$ and $\delta\sigma=\sigma\delta=\alpha$.
+Throughout, $\mathcal{A}$ is the algebra of random variables, $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ is the Hilbert space of the category, $T^\alpha_a=L_a\alpha$ is the signed left multiplication, and $\delta=\sigma\alpha$; the twisted involution satisfies $\delta^2=\mathrm{id}$, $\delta\alpha=\alpha\delta=\sigma$ and $\delta\sigma=\sigma\delta=\alpha$.
 
 ## The Signed Adjoint
 
@@ -112,7 +112,7 @@ The signed adjoint of the left multiplication degenerates in four configurations
 
 ## Summary
 
-The adjoint of the signed left multiplication $T^\alpha_a=L_a\alpha$ of the algebra of random variables with respect to the form $\langle x,y\rangle=\varphi(xy^*)$ is the signed left multiplication of the twisted parameter,
+The adjoint of the signed left multiplication $T^\alpha_a=L_a\alpha$ of the algebra of random variables with respect to the form $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ is the signed left multiplication of the twisted parameter,
 $$
 \bigl(T^\alpha_a\bigr)^*=T^\alpha_{\delta(a)}=\alpha L_{a^*},\qquad \delta=\sigma\alpha=\alpha\sigma ,
 $$
@@ -123,7 +123,7 @@ so the adjoint operation preserves the class of the signed left multiplications 
 | Symbol | Meaning |
 |---|---|
 | $T^\alpha_a=L_a\alpha$ | the signed left multiplication |
-| $\langle x,y\rangle=\varphi(xy^*)$ | the form of the category |
+| $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ | the form of the category |
 | $\delta=\sigma\alpha=\alpha\sigma$ | the twisted involution |
 | $(T^\alpha_a)^*=T^\alpha_{\delta(a)}=\alpha L_{a^*}$ | the signed adjoint |
 | $T^\alpha_aT^\alpha_b=L_{a\alpha(b)}$ | the products, unsigned |

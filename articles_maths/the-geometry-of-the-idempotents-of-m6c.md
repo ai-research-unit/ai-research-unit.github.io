@@ -58,14 +58,14 @@ and the rank is the trace. Conversely, every direct sum decomposition $V=U\oplus
 **Theorem.** A rank-one idempotent is
 
 $$
-E=u\varphi,
+E=u\digamma_{\mathrm{map}},
 \qquad
-\varphi(u)=1,
+\digamma_{\mathrm{map}}(u)=1,
 $$
 
-with $u\in\mathbb{C}^6$ and $\varphi\in(\mathbb{C}^6)^*$. Its image is the line $\mathbb{C}u$, and its kernel is the hyperplane $\ker\varphi$.
+with $u\in\mathbb{C}^6$ and $\digamma_{\mathrm{map}}\in(\mathbb{C}^6)^*$. Its image is the line $\mathbb{C}u$, and its kernel is the hyperplane $\ker\digamma_{\mathrm{map}}$.
 
-**Proof.** A rank-one matrix is $u\varphi$; $E^2=u\varphi(u)\varphi=\varphi(u)E$, so $E^2=E$ iff $\varphi(u)=1$. The image is $\mathbb{C}u$; the kernel is $\ker\varphi$.
+**Proof.** A rank-one matrix is $u\digamma_{\mathrm{map}}$; $E^2=u\digamma_{\mathrm{map}}(u)\digamma_{\mathrm{map}}=\digamma_{\mathrm{map}}(u)E$, so $E^2=E$ iff $\digamma_{\mathrm{map}}(u)=1$. The image is $\mathbb{C}u$; the kernel is $\ker\digamma_{\mathrm{map}}$.
 
 **Theorem (the affine bundle).** The rank-one idempotents form an affine bundle of rank $5$ over $\mathbb{P}^5$:
 
@@ -95,7 +95,7 @@ E=\begin{pmatrix}1&a_2&\cdots&a_6\\0&0&\cdots&0\\\vdots&\vdots&&\vdots\\0&0&\cdo
 (a_2,\dots,a_6)\in\mathbb{C}^5 .
 $$
 
-**Proof.** $E=e_1\varphi$ with $\varphi(e_1)=1$ and $\varphi(e_j)=a_j$; the matrix is the row $(1,a_2,\dots,a_6)$ in the first row.
+**Proof.** $E=e_1\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(e_1)=1$ and $\digamma_{\mathrm{map}}(e_j)=a_j$; the matrix is the row $(1,a_2,\dots,a_6)$ in the first row.
 
 ### The Rank-$p$ Idempotents
 

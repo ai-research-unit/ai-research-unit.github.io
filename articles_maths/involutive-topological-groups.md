@@ -109,42 +109,42 @@ where $\pi : G \to G/H$ is the quotient map. Both inclusions can be strict.
 **Theorem (the symmetric map).** Let $\sigma$ be a topological involution of a Hausdorff group $G$, put $\alpha = \sigma\iota$ and $I(\sigma) = G^\alpha$, a closed subgroup, and define
 
 $$
-\varphi : G \to G, \qquad \varphi(g) = g^{-1}\sigma(g)^{-1} = g^{-1}\alpha(g).
+\digamma_{\mathrm{map}} : G \to G, \qquad \digamma_{\mathrm{map}}(g) = g^{-1}\sigma(g)^{-1} = g^{-1}\alpha(g).
 $$
 
-Then $\varphi$ is continuous, takes its values in the fixed set $G^\sigma$, is constant on the left cosets of $I(\sigma)$, and induces a continuous bijection
+Then $\digamma_{\mathrm{map}}$ is continuous, takes its values in the fixed set $G^\sigma$, is constant on the left cosets of $I(\sigma)$, and induces a continuous bijection
 
 $$
-\boxed{\;\bar\varphi : G/I(\sigma) \longrightarrow \varphi(G) \subseteq G^\sigma, \qquad gI(\sigma) \longmapsto g^{-1}\alpha(g)\;},
+\boxed{\;\bar\digamma_{\mathrm{map}} : G/I(\sigma) \longrightarrow \digamma_{\mathrm{map}}(G) \subseteq G^\sigma, \qquad gI(\sigma) \longmapsto g^{-1}\alpha(g)\;},
 $$
 
-onto its image. If $G$ is compact, then $G/I(\sigma)$ is compact Hausdorff, the image $\varphi(G)$ is a closed subspace of $G^\sigma$, and $\bar\varphi$ is a homeomorphism of $G/I(\sigma)$ onto $\varphi(G)$.
+onto its image. If $G$ is compact, then $G/I(\sigma)$ is compact Hausdorff, the image $\digamma_{\mathrm{map}}(G)$ is a closed subspace of $G^\sigma$, and $\bar\digamma_{\mathrm{map}}$ is a homeomorphism of $G/I(\sigma)$ onto $\digamma_{\mathrm{map}}(G)$.
 
-**Proof.** The map $\varphi$ is continuous, being a composite of the continuous operations of the group. Using $\alpha^2 = \mathrm{id}$,
-
-$$
-\alpha(\varphi(g)) = \alpha(g^{-1})\alpha(\alpha(g)) = \alpha(g)^{-1}g = \varphi(g)^{-1},
-$$
-
-so $\varphi(g)$ lies in $I(\alpha) = G^\sigma$, which is the statement that the image is in the fixed set. If $h \in I(\sigma) = G^\alpha$ then $\alpha(h) = h$ and
+**Proof.** The map $\digamma_{\mathrm{map}}$ is continuous, being a composite of the continuous operations of the group. Using $\alpha^2 = \mathrm{id}$,
 
 $$
-\varphi(hg) = (hg)^{-1}\alpha(hg) = g^{-1}h^{-1}h\,\alpha(g) = g^{-1}\alpha(g) = \varphi(g),
+\alpha(\digamma_{\mathrm{map}}(g)) = \alpha(g^{-1})\alpha(\alpha(g)) = \alpha(g)^{-1}g = \digamma_{\mathrm{map}}(g)^{-1},
 $$
 
-so $\varphi$ is constant on left cosets and $\bar\varphi$ is well defined, and it is continuous because $\varphi$ is and the quotient map is continuous. For injectivity, suppose $\varphi(g) = \varphi(g')$ and write $g' = ug$; since $\alpha(g) = g\,\varphi(g)$,
+so $\digamma_{\mathrm{map}}(g)$ lies in $I(\alpha) = G^\sigma$, which is the statement that the image is in the fixed set. If $h \in I(\sigma) = G^\alpha$ then $\alpha(h) = h$ and
 
 $$
-\varphi(g') = (ug)^{-1}\alpha(ug) = g^{-1}u^{-1}\alpha(u)\,\alpha(g) = g^{-1}u^{-1}\alpha(u)\,g\,\varphi(g),
+\digamma_{\mathrm{map}}(hg) = (hg)^{-1}\alpha(hg) = g^{-1}h^{-1}h\,\alpha(g) = g^{-1}\alpha(g) = \digamma_{\mathrm{map}}(g),
 $$
 
-and equality with $\varphi(g)$ gives $g^{-1}u^{-1}\alpha(u)g = e$, that is $\alpha(u) = u$, so $u \in G^\alpha = I(\sigma)$ and $g' \in I(\sigma)g$. Thus $\bar\varphi$ is injective, and it is a bijection onto its image. If $G$ is compact then $G/I(\sigma)$ is compact, the subgroup $I(\sigma)$ is closed so $G/I(\sigma)$ is Hausdorff, the image $\varphi(G)$ is compact and hence closed in $G^\sigma$, and a continuous bijection from a compact space onto a Hausdorff space is a homeomorphism.
+so $\digamma_{\mathrm{map}}$ is constant on left cosets and $\bar\digamma_{\mathrm{map}}$ is well defined, and it is continuous because $\digamma_{\mathrm{map}}$ is and the quotient map is continuous. For injectivity, suppose $\digamma_{\mathrm{map}}(g) = \digamma_{\mathrm{map}}(g')$ and write $g' = ug$; since $\alpha(g) = g\,\digamma_{\mathrm{map}}(g)$,
 
-**Example (the inversion of the circle, verdict: the degenerate case).** For $G = S^1$ with $\sigma = \iota$ the associated automorphism is $\alpha = \mathrm{id}$, so $I(\sigma) = G$, the coset space is a single point, and $\varphi$ is the constant map $g \mapsto e$. The fixed set is $\{\pm 1\}$ and the image is $\{e\}$, so the theorem is sharp: the coset space can be trivial while the fixed set is not.
+$$
+\digamma_{\mathrm{map}}(g') = (ug)^{-1}\alpha(ug) = g^{-1}u^{-1}\alpha(u)\,\alpha(g) = g^{-1}u^{-1}\alpha(u)\,g\,\digamma_{\mathrm{map}}(g),
+$$
 
-**Example (the swap of the torus, verdict: a homeomorphism onto the whole fixed set).** For $G = S^1 \times S^1$ with the involutive automorphism $\alpha(x,y) = (y,x)$ the associated involution is $\sigma(x,y) = (y^{-1},x^{-1})$. The inverted subgroup is the diagonal $I(\sigma) = \{(x,x)\}$ and the fixed set is the anti-diagonal $G^\sigma = \{(x,x^{-1})\}$, both circles; the coset space $G/I(\sigma)$ is a circle and $\varphi(x,y) = (x^{-1}y, y^{-1}x) = (t,t^{-1})$ with $t = x^{-1}y$ is a homeomorphism of the coset space onto the anti-diagonal. Here the image is the whole fixed set.
+and equality with $\digamma_{\mathrm{map}}(g)$ gives $g^{-1}u^{-1}\alpha(u)g = e$, that is $\alpha(u) = u$, so $u \in G^\alpha = I(\sigma)$ and $g' \in I(\sigma)g$. Thus $\bar\digamma_{\mathrm{map}}$ is injective, and it is a bijection onto its image. If $G$ is compact then $G/I(\sigma)$ is compact, the subgroup $I(\sigma)$ is closed so $G/I(\sigma)$ is Hausdorff, the image $\digamma_{\mathrm{map}}(G)$ is compact and hence closed in $G^\sigma$, and a continuous bijection from a compact space onto a Hausdorff space is a homeomorphism.
 
-**Example (a reflection of the torus, verdict: a homeomorphism onto a proper closed piece of the fixed set).** For the same group and the involutive automorphism $\alpha(x,y) = (x,y^{-1})$ the inverted subgroup is $I(\sigma) = S^1 \times \{\pm 1\}$ and the fixed set is $G^\sigma = \{\pm 1\} \times S^1$; the coset space $G/I(\sigma)$ is a circle and $\varphi(x,y) = (1,y^{-2})$ maps it homeomorphically onto the single circle $\{1\} \times S^1$, which is a proper closed subspace of the two-circle fixed set. The image of the coset space is therefore not the whole fixed set, and the second component of $G^\sigma$ is invisible to the symmetric map.
+**Example (the inversion of the circle, verdict: the degenerate case).** For $G = S^1$ with $\sigma = \iota$ the associated automorphism is $\alpha = \mathrm{id}$, so $I(\sigma) = G$, the coset space is a single point, and $\digamma_{\mathrm{map}}$ is the constant map $g \mapsto e$. The fixed set is $\{\pm 1\}$ and the image is $\{e\}$, so the theorem is sharp: the coset space can be trivial while the fixed set is not.
+
+**Example (the swap of the torus, verdict: a homeomorphism onto the whole fixed set).** For $G = S^1 \times S^1$ with the involutive automorphism $\alpha(x,y) = (y,x)$ the associated involution is $\sigma(x,y) = (y^{-1},x^{-1})$. The inverted subgroup is the diagonal $I(\sigma) = \{(x,x)\}$ and the fixed set is the anti-diagonal $G^\sigma = \{(x,x^{-1})\}$, both circles; the coset space $G/I(\sigma)$ is a circle and $\digamma_{\mathrm{map}}(x,y) = (x^{-1}y, y^{-1}x) = (t,t^{-1})$ with $t = x^{-1}y$ is a homeomorphism of the coset space onto the anti-diagonal. Here the image is the whole fixed set.
+
+**Example (a reflection of the torus, verdict: a homeomorphism onto a proper closed piece of the fixed set).** For the same group and the involutive automorphism $\alpha(x,y) = (x,y^{-1})$ the inverted subgroup is $I(\sigma) = S^1 \times \{\pm 1\}$ and the fixed set is $G^\sigma = \{\pm 1\} \times S^1$; the coset space $G/I(\sigma)$ is a circle and $\digamma_{\mathrm{map}}(x,y) = (1,y^{-2})$ maps it homeomorphically onto the single circle $\{1\} \times S^1$, which is a proper closed subspace of the two-circle fixed set. The image of the coset space is therefore not the whole fixed set, and the second component of $G^\sigma$ is invisible to the symmetric map.
 
 ### The Split Extension by $C_2$
 
@@ -183,7 +183,7 @@ An involutive topological group is a topological group with a continuous involut
 
 The fixed set $G^\sigma$ and the inverted set $I(\sigma)$ are closed, being equalizers of continuous maps into a Hausdorff space; the inverted set $I(\sigma) = G^\alpha$ is a closed subgroup while the fixed set $G^\sigma = I(\alpha)$ is a closed set, a subgroup exactly when its elements commute pairwise; and both are compact when $G$ is. The involution preserves the identity component and the topological properties of the group and its subgroups, an open fixed subgroup is the whole group when the group is connected and has finite index when the group is compact, and the involution descends to the component group.
 
-A continuous involution is uniformly continuous for the two-sided uniformity and exchanges the left and the right uniformities, so it extends uniquely to a continuous involution of the completion $\hat G$, the completion is again an involutive topological group, and the fixed and the inverted sets of the extension meet $G$ in those of $G$. On a stable subgroup the involution restricts and on the quotient by a stable closed normal subgroup it descends, the abstract strictness of the image of the fixed set being unrepaired by the topology. The symmetric map $\varphi(g) = g^{-1}\sigma(g)^{-1}$ is continuous, takes its values in the fixed set, and induces a continuous bijection of the coset space $G/I(\sigma)$ onto its image, which is a homeomorphism onto a closed subspace of the fixed set when the group is compact; the image need not be the whole fixed set, as the reflection of the torus shows. The semidirect product $G \rtimes_\alpha C_2$ with the product topology is a topological group exactly when $\alpha$ is continuous, and then $G$ is an open normal subgroup of index two with $G^\alpha$ the centraliser of the added element, so that $O(2)$, the dihedral groups and the infinite dihedral group arise in this way. On an abelian group the topological involutions are the continuous automorphisms of order two, among them the inversion and the sign changes, computable on $\mathbb{R}^n$, $S^1$ and $T^n$, with the closed $2$-torsion subgroup as the fixed subgroup of the inversion.
+A continuous involution is uniformly continuous for the two-sided uniformity and exchanges the left and the right uniformities, so it extends uniquely to a continuous involution of the completion $\hat G$, the completion is again an involutive topological group, and the fixed and the inverted sets of the extension meet $G$ in those of $G$. On a stable subgroup the involution restricts and on the quotient by a stable closed normal subgroup it descends, the abstract strictness of the image of the fixed set being unrepaired by the topology. The symmetric map $\digamma_{\mathrm{map}}(g) = g^{-1}\sigma(g)^{-1}$ is continuous, takes its values in the fixed set, and induces a continuous bijection of the coset space $G/I(\sigma)$ onto its image, which is a homeomorphism onto a closed subspace of the fixed set when the group is compact; the image need not be the whole fixed set, as the reflection of the torus shows. The semidirect product $G \rtimes_\alpha C_2$ with the product topology is a topological group exactly when $\alpha$ is continuous, and then $G$ is an open normal subgroup of index two with $G^\alpha$ the centraliser of the added element, so that $O(2)$, the dihedral groups and the infinite dihedral group arise in this way. On an abelian group the topological involutions are the continuous automorphisms of order two, among them the inversion and the sign changes, computable on $\mathbb{R}^n$, $S^1$ and $T^n$, with the closed $2$-torsion subgroup as the fixed subgroup of the inversion.
 
 ## Summary of Notation
 
@@ -199,7 +199,7 @@ A continuous involution is uniformly continuous for the two-sided uniformity and
 | $\mathcal{\Omega}_L$, $\mathcal{\Omega}_R$, $E_\Omega$ | the left and right uniformities and their basic entourages, from *Topological Groups* |
 | $\hat G$ | the completion in the two-sided uniformity, carrying the extended involution |
 | $G_e$, $G/G_e$ | the identity component, preserved by the involution, and the component group |
-| $\varphi$ | the symmetric map $g \mapsto g^{-1}\sigma(g)^{-1} = g^{-1}\alpha(g)$ |
+| $\digamma_{\mathrm{map}}$ | the symmetric map $g \mapsto g^{-1}\sigma(g)^{-1} = g^{-1}\alpha(g)$ |
 | $G/I(\sigma)$ | the coset space of left cosets, embedding in the fixed set $G^\sigma$ |
 | $G \rtimes_\alpha C_2$ | the split extension, a topological group exactly when $\alpha$ is continuous |
 | $\operatorname{Ad}_u$, $C_G(u)$ | the inner automorphism and the centraliser, the fixed subgroup of $\operatorname{Ad}_u$ |

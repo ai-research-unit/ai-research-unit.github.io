@@ -59,7 +59,7 @@ and the two inequalities are equalities on the summands; the direct sum norm $\l
 
 ## The Transposed Involution and the Dual Norm
 
-**Definition.** The **transposed involution** of $\mathrm{J}$ on the dual $X^{*}$ is $\mathrm{J}'(\varphi) = \varphi \circ \mathrm{J}$; it is an involution of the same kind, and it is continuous for the dual norm.
+**Definition.** The **transposed involution** of $\mathrm{J}$ on the dual $X^{*}$ is $\mathrm{J}'(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map}} \circ \mathrm{J}$; it is an involution of the same kind, and it is continuous for the dual norm.
 
 **Theorem (the transpose has the same norm).** For a continuous involution $\mathrm{J}$,
 
@@ -91,7 +91,7 @@ and each is a normed space for the dual norm; the dual of the involutive space w
 
 ## Summary
 
-On a normed space a continuous involution $\mathrm{J}$ has a finite norm $\lVert\mathrm{J}\rVert \geq 1$, it is a topological isomorphism equal to its own inverse, and it is an isometry exactly when $\lVert\mathrm{J}\rVert = 1$; the formula $\lVert x\rVert_{\mathrm{J}} = \sup(\lVert x\rVert, \lVert\mathrm{J} x\rVert)$ is an equivalent norm for which every continuous involution is isometric, and the original norm is already invariant exactly in the isometric case. The fixed and negated subspaces are closed and normed for the restricted norms, and when $2$ is invertible the averaging projections exhibit $X$ as the topological direct sum $X^{\mathrm{J}}\oplus X^{-}$, the invariant norm being equivalent to the direct sum of the restrictions, which are isometric to the summands; in the antilinear case the fixed subspace is a real normed space. On the dual the transposed involution $\mathrm{J}'(\varphi) = \varphi\circ\mathrm{J}$ has the same norm, $\lVert\mathrm{J}'\rVert = \lVert\mathrm{J}\rVert$, is isometric exactly when $\mathrm{J}$ is, and its fixed and negated parts are the annihilators of $X^{-}$ and $X^{\mathrm{J}}$. The conjugation of $\mathbb{C}^{n}$, the coordinate involution of $\ell^{n}$ and the discontinuous involutions of an infinite-dimensional normed space are the standard examples. The Banach case, where completeness is used, is *Involutive Banach Spaces*.
+On a normed space a continuous involution $\mathrm{J}$ has a finite norm $\lVert\mathrm{J}\rVert \geq 1$, it is a topological isomorphism equal to its own inverse, and it is an isometry exactly when $\lVert\mathrm{J}\rVert = 1$; the formula $\lVert x\rVert_{\mathrm{J}} = \sup(\lVert x\rVert, \lVert\mathrm{J} x\rVert)$ is an equivalent norm for which every continuous involution is isometric, and the original norm is already invariant exactly in the isometric case. The fixed and negated subspaces are closed and normed for the restricted norms, and when $2$ is invertible the averaging projections exhibit $X$ as the topological direct sum $X^{\mathrm{J}}\oplus X^{-}$, the invariant norm being equivalent to the direct sum of the restrictions, which are isometric to the summands; in the antilinear case the fixed subspace is a real normed space. On the dual the transposed involution $\mathrm{J}'(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map}}\circ\mathrm{J}$ has the same norm, $\lVert\mathrm{J}'\rVert = \lVert\mathrm{J}\rVert$, is isometric exactly when $\mathrm{J}$ is, and its fixed and negated parts are the annihilators of $X^{-}$ and $X^{\mathrm{J}}$. The conjugation of $\mathbb{C}^{n}$, the coordinate involution of $\ell^{n}$ and the discontinuous involutions of an infinite-dimensional normed space are the standard examples. The Banach case, where completeness is used, is *Involutive Banach Spaces*.
 
 ## Summary of Notation
 
@@ -105,7 +105,7 @@ On a normed space a continuous involution $\mathrm{J}$ has a finite norm $\lVert
 | $\lVert x\rVert_{\mathrm{J}} = \sup(\lVert x\rVert, \lVert\mathrm{J} x\rVert)$ | Equivalent invariant norm |
 | $X^{\mathrm{J}}$, $X^{-}$ | Fixed and negated subspaces, normed |
 | $\pi_{1,2} = \frac12(\mathrm{id}\pm\mathrm{J})$ | Averaging projections |
-| $\mathrm{J}'(\varphi) = \varphi\circ\mathrm{J}$ | Transposed involution on the dual |
+| $\mathrm{J}'(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map}}\circ\mathrm{J}$ | Transposed involution on the dual |
 | $\lVert\mathrm{J}'\rVert = \lVert\mathrm{J}\rVert$ | Norm of the transpose |
 | $(X^{-})^{\circ}$, $(X^{\mathrm{J}})^{\circ}$ | Annihilators, the dual summands |
 

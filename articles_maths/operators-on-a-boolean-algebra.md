@@ -114,11 +114,11 @@ for arbitrary $A$ and $B$. The answer is that this is a strong condition on the 
 
 ## Boolean Homomorphisms and the Operators of a Map
 
-**Definition.** A map $\varphi : \mathcal{P}(Y) \to \mathcal{P}(X)$ is a **Boolean homomorphism** when it preserves the Boolean operations: $\varphi(B \cup C) = \varphi(B) \cup \varphi(C)$, $\varphi(B \cap C) = \varphi(B) \cap \varphi(C)$, $\varphi(B^{c}) = \varphi(B)^{c}$, $\varphi(\emptyset) = \emptyset$ and $\varphi(Y) = X$.
+**Definition.** A map $\digamma_{\mathrm{map}} : \mathcal{P}(Y) \to \mathcal{P}(X)$ is a **Boolean homomorphism** when it preserves the Boolean operations: $\digamma_{\mathrm{map}}(B \cup C) = \digamma_{\mathrm{map}}(B) \cup \digamma_{\mathrm{map}}(C)$, $\digamma_{\mathrm{map}}(B \cap C) = \digamma_{\mathrm{map}}(B) \cap \digamma_{\mathrm{map}}(C)$, $\digamma_{\mathrm{map}}(B^{c}) = \digamma_{\mathrm{map}}(B)^{c}$, $\digamma_{\mathrm{map}}(\emptyset) = \emptyset$ and $\digamma_{\mathrm{map}}(Y) = X$.
 
-**Theorem.** A map $\varphi : \mathcal{P}(Y) \to \mathcal{P}(X)$ is a Boolean homomorphism preserving arbitrary unions if and only if it is the preimage operator $\varphi = f^{-1}$ of a unique map $f : X \to Y$.
+**Theorem.** A map $\digamma_{\mathrm{map}} : \mathcal{P}(Y) \to \mathcal{P}(X)$ is a Boolean homomorphism preserving arbitrary unions if and only if it is the preimage operator $\digamma_{\mathrm{map}} = f^{-1}$ of a unique map $f : X \to Y$.
 
-**Proof.** The preimage operator is a Boolean homomorphism preserving arbitrary unions by *Continuous Maps as Operators*. Conversely, let $\varphi$ preserve the Boolean operations and arbitrary unions. For each $y \in Y$ put $A_{y} = \varphi(\{y\})$; the sets $A_{y}$ are disjoint and their union is $X$, because the singletons are disjoint with union $Y$ and the operations are preserved. Define $f(x) = $ the unique $y$ with $x \in A_{y}$. Then for $B \subseteq Y$, $\varphi(B) = \varphi(\bigcup_{y \in B}\{y\}) = \bigcup_{y \in B} A_{y} = f^{-1}(B)$. Uniqueness is that $f$ is recovered from the family $A_{y}$, and a map with the same preimage operator has the same fibres.
+**Proof.** The preimage operator is a Boolean homomorphism preserving arbitrary unions by *Continuous Maps as Operators*. Conversely, let $\digamma_{\mathrm{map}}$ preserve the Boolean operations and arbitrary unions. For each $y \in Y$ put $A_{y} = \digamma_{\mathrm{map}}(\{y\})$; the sets $A_{y}$ are disjoint and their union is $X$, because the singletons are disjoint with union $Y$ and the operations are preserved. Define $f(x) = $ the unique $y$ with $x \in A_{y}$. Then for $B \subseteq Y$, $\digamma_{\mathrm{map}}(B) = \digamma_{\mathrm{map}}(\bigcup_{y \in B}\{y\}) = \bigcup_{y \in B} A_{y} = f^{-1}(B)$. Uniqueness is that $f$ is recovered from the family $A_{y}$, and a map with the same preimage operator has the same fibres.
 
 **Corollary.** The closure and the interior are not Boolean homomorphisms: the closure does not preserve complements, since $\overline{A^{c}}$ need not be $\overline{A}^{c}$, and it does not preserve meets; the interior does not preserve joins. The preimage operators of continuous maps are the Boolean homomorphisms that preserve arbitrary unions, and they are the operators of the algebra that come from geometry; the closure and the interior are operators that come from the topology itself.
 
@@ -140,7 +140,7 @@ The power set of a space is a complete Boolean algebra, and the open sets and th
 | $I(F) = \operatorname{int} F$ | Interior, a map $\mathcal{F}(X) \to \mathcal{O}(X)$ |
 | $C \dashv I$, $g \dashv h$ | Adjunction (Galois connection); $g(p) \leq q \iff p \leq h(q)$ |
 | global adjunction | $\overline{A} \subseteq B \iff A \subseteq \operatorname{int} B$ for all $A, B$; holds iff every open set is closed |
-| $\varphi$ | A Boolean homomorphism $\mathcal{P}(Y) \to \mathcal{P}(X)$ |
+| $\digamma_{\mathrm{map}}$ | A Boolean homomorphism $\mathcal{P}(Y) \to \mathcal{P}(X)$ |
 | $f^{-1}$ | The preimage operator; every union-preserving Boolean homomorphism is one |
 
 ## Further Reading

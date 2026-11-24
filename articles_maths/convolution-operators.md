@@ -68,9 +68,9 @@ $k*\delta=k$, and taking the Fourier transform below would give $\mathcal F k\,\
 $k\in L^1$ with $\mathcal F k\not\equiv0$, so $\mathcal F\delta\equiv1$, which is not the transform of an $L^1$
 function; the point mass at $0$ has this property but is not an $L^1$ function.
 
-**Example (approximate identities).** A sequence $\phi_m\in L^1$ with $\int\phi_m=1$, $\lVert\phi_m\rVert_1$
-bounded and $\int_{\lvert x\rvert>\delta}\lvert\phi_m\rvert\to0$ for every $\delta>0$ satisfies
-$T_{\phi_m}f=\phi_m*f\to f$ in $L^{n}$ for $1\leq p<\infty$ and at every Lebesgue point of $f$, by
+**Example (approximate identities).** A sequence $\digamma_{\mathrm{map},m}\in L^1$ with $\int\digamma_{\mathrm{map},m}=1$, $\lVert\digamma_{\mathrm{map},m}\rVert_1$
+bounded and $\int_{\lvert x\rvert>\delta}\lvert\digamma_{\mathrm{map},m}\rvert\to0$ for every $\delta>0$ satisfies
+$T_{\digamma_{\mathrm{map},m}}f=\digamma_{\mathrm{map},m}*f\to f$ in $L^{n}$ for $1\leq p<\infty$ and at every Lebesgue point of $f$, by
 *Fourier Analysis on Euclidean Spaces*; the family is an approximate identity for the algebra, though not
 an identity.
 

@@ -10,21 +10,21 @@ It assumes *$UT_4$ as the Complement of the Antisymmetric Part* and *The Jordan 
 
 ## The Isomorphism
 
-**Definition.** Let $\varphi:\operatorname{Sym}_4\to UT_4$ be the linear map fixed on the basis by
+**Definition.** Let $\digamma_{\mathrm{map}}:\operatorname{Sym}_4\to UT_4$ be the linear map fixed on the basis by
 
 $$
-\varphi(E_{ii})=E_{ii},\qquad \varphi(E_{ij}+E_{ji})=E_{ij}\ \ (i<j).
+\digamma_{\mathrm{map}}(E_{ii})=E_{ii},\qquad \digamma_{\mathrm{map}}(E_{ij}+E_{ji})=E_{ij}\ \ (i<j).
 $$
 
-**Theorem.** $\varphi$ is an isomorphism of vector spaces.
+**Theorem.** $\digamma_{\mathrm{map}}$ is an isomorphism of vector spaces.
 
 **Proof.** Symmetric matrices have the basis $E_{ii}$ for $1\le i\le4$ and $E_{ij}+E_{ji}$ for $i<j$, ten elements in all; upper triangular matrices have the basis $E_{ij}$ for $i\le j$, also ten. The map sends one basis to the other, so it is invertible.
 
-**The inverse.** $\varphi^{-1}(E_{ij})=E_{ij}+E_{ji}$ for $i<j$ and $\varphi^{-1}(E_{ii})=E_{ii}$.
+**The inverse.** $\digamma_{\mathrm{map}}^{-1}(E_{ij})=E_{ij}+E_{ji}$ for $i<j$ and $\digamma_{\mathrm{map}}^{-1}(E_{ii})=E_{ii}$.
 
 **Proof.** Read the definition backwards.
 
-**Proposition.** $\varphi$ preserves the trace and the unit: $\operatorname{tr}\varphi(A)=\operatorname{tr}A$ and $\varphi(\mathrm I_4)=\mathrm I_4$.
+**Proposition.** $\digamma_{\mathrm{map}}$ preserves the trace and the unit: $\operatorname{tr}\digamma_{\mathrm{map}}(A)=\operatorname{tr}A$ and $\digamma_{\mathrm{map}}(\mathrm I_4)=\mathrm I_4$.
 
 **Proof.** Both bases consist of matrices whose trace is $0$ off the diagonal and $1$ on it, and $\mathrm I_4$ is the sum of the four diagonal units in both spaces.
 
@@ -34,25 +34,25 @@ $$
 
 ## The Two Products Do Not Correspond
 
-**Definition.** On $\operatorname{Sym}_4$ the product is $A\circ B=\tfrac12(AB+BA)$; on $UT_4$ it is the ordinary product. The model transports the second to the first by $A*B=\varphi^{-1}(\varphi(A)\varphi(B))$.
+**Definition.** On $\operatorname{Sym}_4$ the product is $A\circ B=\tfrac12(AB+BA)$; on $UT_4$ it is the ordinary product. The model transports the second to the first by $A*B=\digamma_{\mathrm{map}}^{-1}(\digamma_{\mathrm{map}}(A)\digamma_{\mathrm{map}}(B))$.
 
 **Proposition.** The product $*$ differs from $\circ$.
 
 **Proof.** It is enough to find one pair where the two disagree, which the next proposition does.
 
-**Proposition.** With $A=E_{12}+E_{21}$ one has $A\circ A=E_{11}+E_{22}$ and $\varphi(A)*\varphi(A)=0$.
+**Proposition.** With $A=E_{12}+E_{21}$ one has $A\circ A=E_{11}+E_{22}$ and $\digamma_{\mathrm{map}}(A)*\digamma_{\mathrm{map}}(A)=0$.
 
-**Proof.** $A^{2}=E_{12}E_{21}+E_{21}E_{12}=E_{11}+E_{22}$ since $E_{12}E_{12}=E_{21}E_{21}=0$. And $\varphi(A)=E_{12}$ with $E_{12}E_{12}=0$.
+**Proof.** $A^{2}=E_{12}E_{21}+E_{21}E_{12}=E_{11}+E_{22}$ since $E_{12}E_{12}=E_{21}E_{21}=0$. And $\digamma_{\mathrm{map}}(A)=E_{12}$ with $E_{12}E_{12}=0$.
 
 **Corollary.** The two products on the ten-dimensional space are not related by any scalar: one square is nonzero and the other is zero.
 
 **Proof.** A scalar multiple of a nonzero matrix is nonzero.
 
-**A second pair.** With $A=E_{11}$ and $B=E_{12}+E_{21}$, the Jordan product is $A\circ B=\tfrac12(E_{12}+E_{21})$, while the transported product is $\varphi(A)\varphi(B)=E_{11}E_{12}=E_{12}$, twice as large on the same entries.
+**A second pair.** With $A=E_{11}$ and $B=E_{12}+E_{21}$, the Jordan product is $A\circ B=\tfrac12(E_{12}+E_{21})$, while the transported product is $\digamma_{\mathrm{map}}(A)\digamma_{\mathrm{map}}(B)=E_{11}E_{12}=E_{12}$, twice as large on the same entries.
 
 **Proof.** $E_{11}E_{12}=E_{12}$ and $E_{12}E_{11}=0$.
 
-**The structural reason.** $\varphi$ is not multiplicative because it is not built from the algebra: it identifies a symmetric pair, which is one element of $\operatorname{Sym}_4$, with a single unit, which is one element of $UT_4$, and the product of two such units depends on the order in a way the anticommutator does not see.
+**The structural reason.** $\digamma_{\mathrm{map}}$ is not multiplicative because it is not built from the algebra: it identifies a symmetric pair, which is one element of $\operatorname{Sym}_4$, with a single unit, which is one element of $UT_4$, and the product of two such units depends on the order in a way the anticommutator does not see.
 
 **Proof.** $E_{ij}E_{kl}=\delta_{jk}E_{il}$ while $\tfrac12\{(E_{ij}+E_{ji}),(E_{kl}+E_{lk})\}$ has terms in both orders; the two differ by the commutator.
 
@@ -60,7 +60,7 @@ $$
 
 **The table of invariants.**
 
-| Property | Preserved by $\varphi$ |
+| Property | Preserved by $\digamma_{\mathrm{map}}$ |
 |---|---|
 | dimension | yes, $10$ |
 | trace | yes |
@@ -74,29 +74,29 @@ $$
 | rank of an element | no |
 | the determinant of the image | no |
 
-**Proposition.** The trace pairing is preserved on the diagonal and across it, and it is not preserved between two symmetric pairs: $\beta(E_{ii},E_{jj})=\beta(\varphi(E_{ii}),\varphi(E_{jj}))=\delta_{ij}$, and $\beta(E_{ii},E_{jk}+E_{kj})=\beta(E_{ii},E_{jk})=0$ for $j<k$, but $\beta(E_{12}+E_{21},E_{12}+E_{21})=2$ while $\beta(E_{12},E_{12})=0$.
+**Proposition.** The trace pairing is preserved on the diagonal and across it, and it is not preserved between two symmetric pairs: $\beta(E_{ii},E_{jj})=\beta(\digamma_{\mathrm{map}}(E_{ii}),\digamma_{\mathrm{map}}(E_{jj}))=\delta_{ij}$, and $\beta(E_{ii},E_{jk}+E_{kj})=\beta(E_{ii},E_{jk})=0$ for $j<k$, but $\beta(E_{12}+E_{21},E_{12}+E_{21})=2$ while $\beta(E_{12},E_{12})=0$.
 
 **Proof.** The diagonal units pair by $\delta_{ij}$ in both spaces, and a diagonal unit kills both the pair and the single unit that is its image; the last computation is that of the corollary below.
 
-**Corollary.** The model is not an isometry on the whole space: $\beta(A,A)=2$ for $A=E_{12}+E_{21}$ while $\beta(\varphi(A),\varphi(A))=\operatorname{tr}(E_{12}E_{12})=0$.
+**Corollary.** The model is not an isometry on the whole space: $\beta(A,A)=2$ for $A=E_{12}+E_{21}$ while $\beta(\digamma_{\mathrm{map}}(A),\digamma_{\mathrm{map}}(A))=\operatorname{tr}(E_{12}E_{12})=0$.
 
 **Proof.** $A^{2}=E_{11}+E_{22}$ has trace $2$, and $E_{12}^{2}=0$.
 
 **The one structure that carries over intact.** The subspace structure: the diagonal, the off-diagonal pairs, the strict upper part and the dimensions of all the pieces that are defined by position.
 
-**Proof.** $\varphi$ sends the diagonal to the diagonal and the symmetric pair of the positions $(i,j)$ to the single position $(i,j)$; the counts agree because both are indexed by the same set of pairs.
+**Proof.** $\digamma_{\mathrm{map}}$ sends the diagonal to the diagonal and the symmetric pair of the positions $(i,j)$ to the single position $(i,j)$; the counts agree because both are indexed by the same set of pairs.
 
 ## What Does Not Survive
 
-**The cone.** The cone of squares of $\operatorname{Sym}_4(\mathbb{R})$ is the cone of positive semidefinite matrices, of dimension $10$; its image under $\varphi$ is not the set of squares of $UT_4$, which is not even a cone in the same sense.
+**The cone.** The cone of squares of $\operatorname{Sym}_4(\mathbb{R})$ is the cone of positive semidefinite matrices, of dimension $10$; its image under $\digamma_{\mathrm{map}}$ is not the set of squares of $UT_4$, which is not even a cone in the same sense.
 
 **Proof.** The squares of $\operatorname{Sym}_4$ are the positive semidefinite matrices, while a square of an upper triangular matrix is upper triangular and need not be symmetric.
 
 **The idempotents.** $E_{11}$ is an idempotent in both readings, but the rank-one projection $P=\tfrac12(E_{11}+E_{12}+E_{21}+E_{22})$ onto the line spanned by $e_1+e_2$ is a symmetric idempotent whose image is not idempotent.
 
-**Proof.** $P^{2}=P$ by direct expansion. Its image is $\varphi(P)=\tfrac12(E_{11}+E_{12}+E_{22})$, whose square is $\tfrac14(E_{11}+2E_{12}+E_{22})$, which is not $\varphi(P)$.
+**Proof.** $P^{2}=P$ by direct expansion. Its image is $\digamma_{\mathrm{map}}(P)=\tfrac12(E_{11}+E_{12}+E_{22})$, whose square is $\tfrac14(E_{11}+2E_{12}+E_{22})$, which is not $\digamma_{\mathrm{map}}(P)$.
 
-**The rank and the determinant.** $\det A=-1$ for $A=E_{12}+E_{21}$, while $\det\varphi(A)=0$; the model does not preserve invertibility.
+**The rank and the determinant.** $\det A=-1$ for $A=E_{12}+E_{21}$, while $\det\digamma_{\mathrm{map}}(A)=0$; the model does not preserve invertibility.
 
 **Proof.** The eigenvalues of $A$ are $\pm1$; $E_{12}$ is nilpotent.
 
@@ -130,8 +130,8 @@ What survives is the linear structure, the trace, the unit and the position subs
 
 | Symbol | Meaning |
 |---|---|
-| $\varphi$ | the linear isomorphism $\operatorname{Sym}_4\to UT_4$ |
-| $A*B=\varphi^{-1}(\varphi(A)\varphi(B))$ | the transported product |
+| $\digamma_{\mathrm{map}}$ | the linear isomorphism $\operatorname{Sym}_4\to UT_4$ |
+| $A*B=\digamma_{\mathrm{map}}^{-1}(\digamma_{\mathrm{map}}(A)\digamma_{\mathrm{map}}(B))$ | the transported product |
 | $A\circ B$ | the Jordan product, the true product of the half |
 | $E_{ij}+E_{ji}\mapsto E_{ij}$ | the rule on the off-diagonal pairs |
 | $\beta$ | the trace pairing, preserved on the diagonal only |

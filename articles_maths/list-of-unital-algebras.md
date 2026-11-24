@@ -79,13 +79,13 @@ A homomorphism between unital algebras may or may not preserve the identity, and
 
 | Map | Its relation to the identity | Introduced in |
 |---|---|---|
-| A unital (identity-preserving) homomorphism | $\varphi(1_A) = 1_B$, the corpus's default for rings and for algebra homomorphisms | *Rings* |
+| A unital (identity-preserving) homomorphism | $\digamma_{\mathrm{map}}(1_A) = 1_B$, the corpus's default for rings and for algebra homomorphisms | *Rings* |
 | The augmentation $\pi : k[G] \to k$ | unital, $\pi(1_G) = 1$; its kernel is the augmentation ideal | *Group Algebras* |
 | The inclusion $A \to A^+$ | not identity-preserving when $A$ has no identity, since $A$ has none to preserve | *Unital Algebras* |
 | The quotient $A^+ \to A^+/A \cong R$ | unital, with kernel $A$ | *Unital Algebras* |
 | The quotient map $A \to A/I$ | unital, with identity $1 + I$ | *Rings*, §Quotient Rings |
-| The idempotent $\varphi(1_A)$ | for an arbitrary homomorphism, $\varphi(1_A)$ is an idempotent of $B$, and $\varphi$ is unital exactly when $\varphi(1_A) = 1_B$ | *Unital Algebras* |
-| The unital extension $\varphi^+$ | the unique unital homomorphism $A^+ \to B$ extending $\varphi : A \to B$, $\varphi^+(a,r) = \varphi(a) + r1_B$ | *Unital Algebras* |
+| The idempotent $\digamma_{\mathrm{map}}(1_A)$ | for an arbitrary homomorphism, $\digamma_{\mathrm{map}}(1_A)$ is an idempotent of $B$, and $\digamma_{\mathrm{map}}$ is unital exactly when $\digamma_{\mathrm{map}}(1_A) = 1_B$ | *Unital Algebras* |
+| The unital extension $\digamma_{\mathrm{map}}^+$ | the unique unital homomorphism $A^+ \to B$ extending $\digamma_{\mathrm{map}} : A \to B$, $\digamma_{\mathrm{map}}^+(a,r) = \digamma_{\mathrm{map}}(a) + r1_B$ | *Unital Algebras* |
 
 A unital homomorphism carries units to units, so it restricts to a group homomorphism $A^\times \to B^\times$; a homomorphism that does not preserve the identity carries no such group map in general, which is the reason the corpus fixes the unital convention for rings and for algebra homomorphisms.
 
@@ -131,8 +131,8 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $A^\times$ | The group of invertibles of $A$ |
 | $Z(A)$ | The centre of $A$, a commutative subring containing $1_A$ |
 | $\eta : R \to A$, $\eta(r) = r1_A$ | The canonical map making a unital $R$-algebra a ring over $R$ |
-| $\varphi^+$ | The unique unital extension $A^+ \to B$ of $\varphi : A \to B$, $\varphi^+(a,r) = \varphi(a) + r1_B$ |
-| $\varphi(1_A)$ | An idempotent in $B$; $\varphi$ is unital exactly when it equals $1_B$ |
+| $\digamma_{\mathrm{map}}^+$ | The unique unital extension $A^+ \to B$ of $\digamma_{\mathrm{map}} : A \to B$, $\digamma_{\mathrm{map}}^+(a,r) = \digamma_{\mathrm{map}}(a) + r1_B$ |
+| $\digamma_{\mathrm{map}}(1_A)$ | An idempotent in $B$; $\digamma_{\mathrm{map}}$ is unital exactly when it equals $1_B$ |
 | $A^+ = A \oplus R$ | The unitisation, with $(a,r)(b,s) = (ab+rb+sa, rs)$ and identity $(0,1)$ |
 | $I_n$, $\mathrm{GL}_n(R)$ | The identity matrix and the group of invertibles of $M_n(R)$ |
 | $M_n(D)$, $\mathrm{GL}_n(D)$ | A matrix ring over a division ring and its units |

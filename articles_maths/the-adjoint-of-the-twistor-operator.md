@@ -22,7 +22,7 @@ with $D$ the self-adjoint Cauchy–Riemann operator, and reads from it the conse
 **Definition.** The **formal adjoint** $\mathcal{T}^*$ of the twistor operator is the differential operator $\Gamma(T^*M\otimes\mathcal{S})\to\Gamma(\mathcal{S})$ with
 
 $$
-\int_M h(\mathcal{T}\sigma,\psi)\,\mu_g = \int_M h(\sigma,\mathcal{T}^{*}\psi)\,\mu_g
+\int_M h(\mathcal{T}\sigma,Ξ_{\mathrm{wfn}})\,\mu_g = \int_M h(\sigma,\mathcal{T}^{*}Ξ_{\mathrm{wfn}})\,\mu_g
 $$
 
 for all compactly supported smooth sections, $h$ extended to the twisted bundle by the metric on the cotangent factor.
@@ -31,15 +31,15 @@ for all compactly supported smooth sections, $h$ extended to the twisted bundle 
 
 **Proof.** The adjoint of a composite is the composite of the adjoints in the reverse order, so $\mathcal{T}^*=(\pi\nabla)^*=\nabla^*\pi^*$, and $\pi$ is an orthogonal projection for the pointwise form, hence $\pi^*=\pi$. The symbol statements are the symbol of the contraction and of its adjoint, and the ellipticity is the invertibility of the symbol of $\mathcal{T}$ on the trace-free part, which is the content of the symbol computation of *The Twistor Operator*.
 
-**Proposition (the components).** Writing a twisted section as $\psi=\sum_i\theta_i\otimes\psi_i$ with $\psi_i\in\Gamma(\mathcal{S})$, the projection acts by
+**Proposition (the components).** Writing a twisted section as $Ξ_{\mathrm{wfn}}=\sum_i\theta_i\otimesΞ_{\mathrm{wfn},i}$ with $Ξ_{\mathrm{wfn},i}\in\Gamma(\mathcal{S})$, the projection acts by
 
 $$
-\pi\psi = \sum_i\theta_i\otimes\Bigl(\psi_i+\tfrac1n c(e_i)(c\psi)\Bigr) , \qquad c\psi=\sum_j c(e_j)\psi_j ,
+\piΞ_{\mathrm{wfn}} = \sum_i\theta_i\otimes\Bigl(Ξ_{\mathrm{wfn},i}+\tfrac1n c(e_i)(cΞ_{\mathrm{wfn}})\Bigr) , \qquad cΞ_{\mathrm{wfn}}=\sum_j c(e_j)Ξ_{\mathrm{wfn},j} ,
 $$
 
-and the adjoint is $\mathcal{T}^{*}\psi=-\sum_i\nabla_i\bigl(\psi_i+\tfrac1nc(e_i)(c\psi)\bigr)$ up to the lower-order terms of $\nabla^*$; in particular $\mathcal{T}^*\psi$ depends on $\psi$ through its trace-free part and the divergence of its components.
+and the adjoint is $\mathcal{T}^{*}Ξ_{\mathrm{wfn}}=-\sum_i\nabla_i\bigl(Ξ_{\mathrm{wfn},i}+\tfrac1nc(e_i)(cΞ_{\mathrm{wfn}})\bigr)$ up to the lower-order terms of $\nabla^*$; in particular $\mathcal{T}^*Ξ_{\mathrm{wfn}}$ depends on $Ξ_{\mathrm{wfn}}$ through its trace-free part and the divergence of its components.
 
-**Proof.** The formula for $\pi$ is the definition $\pi\psi=\psi-\frac1nc^*c\psi$ with the adjoint contraction $c^*\sigma=-\sum_i\theta_i\otimes c(e_i)\sigma$ of *The Adjoint of the Clifford Multiplication*; the divergence is the leading part of $\nabla^*$, which is $-\sum_i\nabla_i$ on the components plus the curvature terms recorded in *The Codifferential on a Spinor Bundle*.
+**Proof.** The formula for $\pi$ is the definition $\piΞ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn}}-\frac1nc^*cΞ_{\mathrm{wfn}}$ with the adjoint contraction $c^*\sigma=-\sum_i\theta_i\otimes c(e_i)\sigma$ of *The Adjoint of the Clifford Multiplication*; the divergence is the leading part of $\nabla^*$, which is $-\sum_i\nabla_i$ on the components plus the curvature terms recorded in *The Codifferential on a Spinor Bundle*.
 
 **Remark (the pairing as the twistor form).** The $L^2$ pairing of the definition is the integrated form of the pointwise Hermitian form of *Hermitian Clifford Structures*; the anti-linearity in the second argument and the reality of $\nabla$ make the pairing conjugate-symmetric, which is the **conjugate symmetry** of *Involutions of the Twistor Operator* read at the level of the adjoint.
 

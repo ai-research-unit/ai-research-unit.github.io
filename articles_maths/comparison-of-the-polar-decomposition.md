@@ -49,7 +49,7 @@ The following table writes the word of each algebra as a product of exponentials
 |---|---|---|
 | $\mathbb{R}$ | $q = \exp(\ln\lvert q\rvert)\cdot(\pm e_t)$ | the scale has the hyperbolic unit $e_t$; the sign is **not** an exponential, since $\exp(\mathbb{R})=\mathbb{R}_{>0}$ misses $-1$ |
 | $\mathbb{C}$ | $Q = \exp(\ln\sqrt{\langle Q\rangle_{*}})\,\exp(i\theta)$ | the cosine root $i$, trigonometric |
-| $\mathbb{C}_{\mathrm{spl}}$ | $Q = \exp(\ln\sqrt{\lvert\langle Q\rangle_{*}\rvert})\cdot\bigl(\pm\exp(j\phi)\bigr)$ for $\langle Q\rangle_{*}>0$, $\bigl(\pm j\exp(j\phi)\bigr)$ for $\langle Q\rangle_{*}<0$ | the hyperbolic root $j$, hyperbolic; the sign is the discrete component, and the factor $j$ is the second component for $\langle Q\rangle_{*}<0$ |
+| $\mathbb{C}_{\mathrm{spl}}$ | $Q = \exp(\ln\sqrt{\lvert\langle Q\rangle_{*}\rvert})\cdot\bigl(\pm\exp(j\digamma_{\mathrm{map}})\bigr)$ for $\langle Q\rangle_{*}>0$, $\bigl(\pm j\exp(j\digamma_{\mathrm{map}})\bigr)$ for $\langle Q\rangle_{*}<0$ | the hyperbolic root $j$, hyperbolic; the sign is the discrete component, and the factor $j$ is the second component for $\langle Q\rangle_{*}<0$ |
 | $\mathbb{C}_{\mathrm{dln}}$ | $Q = \exp(\ln\lvert q\rvert)\,\bigl(\pm\exp(\varepsilon s)\bigr)$ | the nilpotent root $\varepsilon$, parabolic; the sign is the component of the group of invertibles |
 | $\mathbb{H}$ | $\tilde q = \exp(\ln\sqrt{N})\,\exp\bigl(\mu\tfrac{\theta_{\mathrm{axr}}}{2}\bigr)$ | the cosine root $\mu$, a unit pure quaternion, trigonometric |
 | $\mathbb{H}_{\mathrm{spl}}$ | $\tilde q = \exp(\ln\sqrt{\lvert N\rvert})\,\exp(\sigma)\cdot\bigl(\exp(\tfrac{\theta_{\mathrm{axr}}}{2} \vec e_x)\bigr)\cdot(\text{optional } \vec e_y)$ | the hyperbolic exponent $\sigma\in\operatorname{span}\{\vec e_y,\vec e_z\}$ and the cosine root $\vec e_x$; the reflection $\vec e_y$ is discrete |
@@ -94,7 +94,7 @@ The following table compares the factor groups of the polar decompositions of th
 |---|---|---|---|---|---|---|---|---|
 | scale | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ |
 | elliptic phase | — | $\mathrm{U}(1)$ | — | — | — | — | $\mathrm{U}(1)$ | — |
-| hyperbolic phase | — | — | $\exp(\phi j)$ | — | — | — | — | $\exp(j\tau)$ |
+| hyperbolic phase | — | — | $\exp(\digamma_{\mathrm{map}} j)$ | — | — | — | — | $\exp(j\tau)$ |
 | parabolic phase | — | — | — | $1+\mathrm{M}$ | — | — | — | — |
 | hyperbolic rotation | — | — | — | — | — | yes | yes | — |
 | rotor | $\{\pm1\}$ | — | — | — | $Sp(1)$ | $\mathrm{U}(1)$ | $Sp(1)$ | $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ |
@@ -109,7 +109,7 @@ The hyperbolic rotation of $\mathbb{B}$ is the one occurrence of a hyperbolic ro
 
 In the indefinite series the unit factor is genuinely non-compact.
 
-- **Split complex.** The unit factor is a hyperbolic $\exp(\phi j)$ and there is no elliptic one, because the algebra has no root of $-1$ (*Modulus–Unit Polar Decomposition of Split-Complex Numbers*, §*Position and Inertia*).
+- **Split complex.** The unit factor is a hyperbolic $\exp(\digamma_{\mathrm{map}} j)$ and there is no elliptic one, because the algebra has no root of $-1$ (*Modulus–Unit Polar Decomposition of Split-Complex Numbers*, §*Position and Inertia*).
 - **Dual numbers.** The unit factor is the parabolic $1+\mathrm{M}=\{1+s\varepsilon\}$, a shear with a globally defined angle (*Dual-Numbers Polar Decomposition*, §*The Factors and Their Meanings*).
 - **Split quaternions.** The unit factor is a hyperbolic rotation in $\operatorname{span}\{1,\vec e_y,\vec e_z\}$, together with a one-parameter rotor $\mathrm{U}(1)$ from the elliptic direction $\vec e_x$ and a discrete reflection component (*Split-Quaternion Polar Decomposition*, §*The Polar Decomposition*).
 - **Split biquaternions.** The unit factor is a rotor $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ of dimension six in place of a hyperbolic rotation, together with a central hyperbolic phase $\exp(j\tau)$, the scale and the phase being the two components of the split complex modulus (*Split-Biquaternion Polar Decomposition*, §*The Factors and Their Meanings*).
@@ -124,7 +124,7 @@ The factor groups are
 
 - the positive scale $\mathbb{R}_{>0}$, present in every column;
 - the elliptic phase $\mathrm{U}(1)$ of $\mathbb{C}$ and $\mathbb{B}$;
-- the hyperbolic phase $\exp(\phi j)$ of $\mathbb{C}_{\mathrm{spl}}$ and $\exp(j\tau)$ of $\mathbb{B}_{\mathrm{spl}}$;
+- the hyperbolic phase $\exp(\digamma_{\mathrm{map}} j)$ of $\mathbb{C}_{\mathrm{spl}}$ and $\exp(j\tau)$ of $\mathbb{B}_{\mathrm{spl}}$;
 - the parabolic phase $1+\mathrm{M}$ of $\mathbb{C}_{\mathrm{dln}}$;
 - the hyperbolic rotation of $\mathbb{H}_{\mathrm{spl}}$ and of $\mathbb{B}$;
 - the rotor, discrete in $\mathbb{R}$, the circle $\mathrm{U}(1)$ in $\mathbb{H}_{\mathrm{spl}}$, and the sphere $Sp(1)$ or the product $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ in $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{B}_{\mathrm{spl}}$.
@@ -141,7 +141,7 @@ The decompositions fall into the definite series $\mathbb{R}, \mathbb{C}, \mathb
 | $\varrho_\pm=\lvert\tilde q\pm \tilde q'\rvert$ | the two idempotent components of the modulus of $\tilde Q=\tilde q+j\tilde q'$ |
 | $\mathrm{U}(1)$ | the unit circle, the compact elliptic phase of $\mathbb{C}$ and $\mathbb{B}$ |
 | $\mathrm{Sp}(1)=\{\tilde q\in\mathbb{H}:\tilde q\tilde q^{\natural}=1\}$ | the unit real quaternions, the compact rotor of $\mathbb{H}$ and $\mathbb{B}$ |
-| $\exp(\phi j),\exp(j\tau)$ | the hyperbolic phase of $\mathbb{C}_{\mathrm{spl}}$ and of $\mathbb{B}_{\mathrm{spl}}$ |
+| $\exp(\digamma_{\mathrm{map}} j),\exp(j\tau)$ | the hyperbolic phase of $\mathbb{C}_{\mathrm{spl}}$ and of $\mathbb{B}_{\mathrm{spl}}$ |
 | $1+\mathrm{M}$ | the parabolic phase of $\mathbb{C}_{\mathrm{dln}}$, $\mathrm{M}=(\varepsilon)$ |
 | $B_+$ | the Hermitian positive subspace of $\mathbb{B}$ carrying the hyperbolic rotation |
 | $\mathrm{U}(1)$ | the rotor of $\mathbb{H}_{\mathrm{spl}}$ from the elliptic direction $\vec e_x$ |

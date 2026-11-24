@@ -187,15 +187,15 @@ $$
 
 and this vanishes exactly when both brackets do.
 
-**Corollary (the reduced Cauchy–Riemann system).** Writing $A=\phi$ and $B=\psi/r$ for real-valued $\phi,\psi$ of $(q_t,r)$ turns the pair into
+**Corollary (the reduced Cauchy–Riemann system).** Writing $A=\digamma_{\mathrm{map}}$ and $B=Ξ_{\mathrm{wfn}}/r$ for real-valued $\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}$ of $(q_t,r)$ turns the pair into
 
 $$
-\phi_0 = \psi_r+\frac{2\psi}{r} , \qquad \psi_0 = -\phi_r ,
+\digamma_{\mathrm{map},0} = Ξ_{\mathrm{wfn},r}+\frac{2Ξ_{\mathrm{wfn}}}{r} , \qquad Ξ_{\mathrm{wfn},0} = -\digamma_{\mathrm{map},r} ,
 $$
 
 the reduced Cauchy–Riemann system of the axial theory. The solutions are exactly the axial regular functions, and Fueter's theorem says that every holomorphic function of the reduced variable $\varkappa_{\mathrm{crd}}=q_t+ir$ produces one through $F=\Delta f_{\mathrm{ax}}$; this is the precise sense in which complex analysis sits inside the quaternionic theory as its rotation-invariant part.
 
-*Proof.* Substituting $A=\phi$, $B=\psi/r$ into $\partial A/\partial q_t=3B+r\partial B/\partial r$ gives $\phi_0=3\psi/r+r(\psi_r/r-\psi/r^2)=\psi_r+2\psi/r$, and substituting into $\partial B/\partial q_t=-(\partial A/\partial r)/r$ gives $\psi_0/r-\psi/r^2\cdot0=-\phi_r/r$, that is $\psi_0=-\phi_r$. For the worked example $F=-12q_t-4\vec q$ one has $\phi=-12q_t$, $\psi=-4r$, and the pair reads $-12=-4-8$ and $0=0$.
+*Proof.* Substituting $A=\digamma_{\mathrm{map}}$, $B=Ξ_{\mathrm{wfn}}/r$ into $\partial A/\partial q_t=3B+r\partial B/\partial r$ gives $\digamma_{\mathrm{map},0}=3Ξ_{\mathrm{wfn}}/r+r(Ξ_{\mathrm{wfn},r}/r-Ξ_{\mathrm{wfn}}/r^2)=Ξ_{\mathrm{wfn},r}+2Ξ_{\mathrm{wfn}}/r$, and substituting into $\partial B/\partial q_t=-(\partial A/\partial r)/r$ gives $Ξ_{\mathrm{wfn},0}/r-Ξ_{\mathrm{wfn}}/r^2\cdot0=-\digamma_{\mathrm{map},r}/r$, that is $Ξ_{\mathrm{wfn},0}=-\digamma_{\mathrm{map},r}$. For the worked example $F=-12q_t-4\vec q$ one has $\digamma_{\mathrm{map}}=-12q_t$, $Ξ_{\mathrm{wfn}}=-4r$, and the pair reads $-12=-4-8$ and $0=0$.
 
 **Example (the radial regular functions).** Taking $A=0$, the pair requires $3B+r\partial B/\partial r=0$, so $B=cr^{-3}$; the function $f(q)=\vec q\,r^{-3}$ is regular away from the axis and is, up to the constant, the vector part of the Cauchy–Fueter kernel. Taking $B=0$ requires $\partial A/\partial r=0$, so $A=A(q_t)$, an arbitrary function of the real variable; the function $f=A(q_t)$ is regular, the "plane" regular functions of the real axis. These two families are the extreme axial cases and the building blocks of the general axial solution.
 

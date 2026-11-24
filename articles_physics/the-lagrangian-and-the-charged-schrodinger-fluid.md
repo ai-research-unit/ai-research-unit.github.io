@@ -84,13 +84,13 @@ The canonical energy is gauge dependent and the fluid's energy is not. The Legen
 
 ## The Structural Consequence: The Coupling Supplies the Clebsch Structure
 
-A rotational fluid needs a second representation of its velocity, and the connection is one. The Clebsch form of a velocity with rank-two vorticity is $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, with the pair carrying the curl. Here
+A rotational fluid needs a second representation of its velocity, and the connection is one. The Clebsch form of a velocity with rank-two vorticity is $\vec v=\vec\nabla_\Phi\xi_{\mathrm{pot},\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, with the pair carrying the curl. Here
 
 $$
 \vec v=\frac{\vec\nabla_\Phi S}{m}+\frac{ϙ}{m}\vec A,
 $$
 
-so the representation is of that shape after a transcription: $\phi_{\mathrm{clb}}=S/m$, and the whole second term is the pair's, because $\vec A$ is one vector where the Clebsch form wants two scalars. The potential plays the pair's part and is not itself a pair. Its own curl is the vorticity, so its two stream functions are what the pair would be, and they belong to the field rather than to the matter. The transcription is exact and the point of it is that a constant $\alpha_{\mathrm{clb}}$ would describe an irrotational flow: the rotation is in $\vec A$ and not in the coupling's coefficient.
+so the representation is of that shape after a transcription: $\xi_{\mathrm{pot},\mathrm{clb}}=S/m$, and the whole second term is the pair's, because $\vec A$ is one vector where the Clebsch form wants two scalars. The potential plays the pair's part and is not itself a pair. Its own curl is the vorticity, so its two stream functions are what the pair would be, and they belong to the field rather than to the matter. The transcription is exact and the point of it is that a constant $\alpha_{\mathrm{clb}}$ would describe an irrotational flow: the rotation is in $\vec A$ and not in the coupling's coefficient.
 
 The rank follows and it is the block's. The curl of the velocity is a three-vector, $\vec\nabla_\Phi\times\vec v=ϙ\vec B/m$, so the vorticity two-form has no time-space part and its rank is at most two. The block's ladder says the same: the charged Schrödinger fluid has rank two where the field is present, and the charged spin-zero fluid reaches rank four only when $\vec E\cdot\vec B\ne0$, because only a four-vector velocity with the shell's norm can carry a vorticity that knows both halves of the field. The action explains the rank: the velocity's second term is a three-vector potential, and a three-vector cannot make a four-dimensional two-form.
 
@@ -170,7 +170,7 @@ Gauge invariance. Exact in the density, term by term, with no boundary term. The
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; untouched by the coupling |
 | $\mathcal E_{\mathrm{grad}}=\frac{hc}{8\pi^{2}\nu_m}\int(\vec\nabla_\Phi \varrho)^{2}$ | Gradient energy; untouched by the coupling |
 | $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths; gauge invariant |
-| $\phi_{\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | Clebsch potentials; here $\phi_{\mathrm{clb}}=S/m$, $\alpha_{\mathrm{clb}}=ϙ/m$, $\beta_{\mathrm{clb}}$ the potential's |
+| $\xi_{\mathrm{pot},\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | Clebsch potentials; here $\xi_{\mathrm{pot},\mathrm{clb}}=S/m$, $\alpha_{\mathrm{clb}}=ϙ/m$, $\beta_{\mathrm{clb}}$ the potential's |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 

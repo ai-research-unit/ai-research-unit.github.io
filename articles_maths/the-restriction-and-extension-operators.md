@@ -21,7 +21,7 @@ $$
 (j^*\mathcal{F})(V)=\mathcal{F}(V),\qquad V\subseteq \Omega \text{ open},
 $$
 
-and the restriction maps inherited from $\mathcal{F}$; it is also written $\mathcal{F}|_\Omega$. On morphisms, $j^*$ is the assignment $\varphi\mapsto\varphi|_\Omega$, and it is a functor $\mathrm{Sh}(X)\to\mathrm{Sh}(\Omega)$, the **restriction functor**.
+and the restriction maps inherited from $\mathcal{F}$; it is also written $\mathcal{F}|_\Omega$. On morphisms, $j^*$ is the assignment $\digamma_{\mathrm{map}}\mapsto\digamma_{\mathrm{map}}|_\Omega$, and it is a functor $\mathrm{Sh}(X)\to\mathrm{Sh}(\Omega)$, the **restriction functor**.
 
 **Proposition (stalks and exactness).** For every $x\in \Omega$, $(j^*\mathcal{F})_x=\mathcal{F}_x$, and the restriction functor is **exact**: it preserves kernels, cokernels, images, limits and colimits, the operations being computed sectionwise over the opens of $\Omega$.
 
@@ -61,7 +61,7 @@ so that $\operatorname{Supp}(j_!\mathcal{M})$ is a closed subset of $X$ containe
 
 **Proposition (exactness).** The extension by zero is exact.
 
-*Proof.* On stalks, $(j_!\varphi)_x$ is $\varphi_x$ for $x\in \Omega$ and $0$ for $x\notin \Omega$ by the previous proposition; a sequence of sheaves on $\Omega$ is exact if and only if it is exact on every stalk, and each of the induced maps of stalks is either the corresponding map of the exact sequence or the zero map between zero groups. Hence an exact sequence on $\Omega$ extends to an exact sequence on $X$, and $j_!$ preserves kernels and cokernels.
+*Proof.* On stalks, $(j_!\digamma_{\mathrm{map}})_x$ is $\digamma_{\mathrm{map},x}$ for $x\in \Omega$ and $0$ for $x\notin \Omega$ by the previous proposition; a sequence of sheaves on $\Omega$ is exact if and only if it is exact on every stalk, and each of the induced maps of stalks is either the corresponding map of the exact sequence or the zero map between zero groups. Hence an exact sequence on $\Omega$ extends to an exact sequence on $X$, and $j_!$ preserves kernels and cokernels.
 
 **Example (the extension is not the direct image).** For $\Omega=(0,1)\subset X=\mathbb{R}$ and the constant sheaf $\underline{\mathbb{Z}}_\Omega$, the direct image $j_*\underline{\mathbb{Z}}_\Omega$ has global sections $\mathbb{Z}$ and the extension by zero $j_!\underline{\mathbb{Z}}_\Omega$ has global sections $0$: a nonzero locally constant function on $(0,1)$ has support $(0,1)$, which is not closed in $\mathbb{R}$, so it is not a section of the extension. The two functors differ exactly on the sections near the boundary of $\Omega$.
 

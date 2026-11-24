@@ -161,12 +161,12 @@ of complex dimension $5$ and real dimension $10$.
 **Proof.** A hypersurface is singular at a point exactly when the gradient of its defining equation vanishes there. The gradient of $\det$ vanishes exactly on $\Sigma$ by the theorem above. The rank-one matrices are the image of
 
 $$
-\mathbb{C}^{3}\times(\mathbb{C}^{3})^{*}\longrightarrow M_3,\qquad (u,\varphi)\longmapsto u\varphi,
+\mathbb{C}^{3}\times(\mathbb{C}^{3})^{*}\longrightarrow M_3,\qquad (u,\digamma_{\mathrm{map}})\longmapsto u\digamma_{\mathrm{map}},
 $$
 
-modulo the scaling $(u,\varphi)\mapsto(\lambda u,\lambda^{-1}\varphi)$. The pair has six parameters and the scaling is one-dimensional, so the rank-one matrices have dimension $5$; they are the affine cone, with apex $0$, over the Segre variety $\mathbb{P}^{2}\times\mathbb{P}^{2}$ of dimension $4$. The whole variety $\Sigma$ has dimension $5$.
+modulo the scaling $(u,\digamma_{\mathrm{map}})\mapsto(\lambda u,\lambda^{-1}\digamma_{\mathrm{map}})$. The pair has six parameters and the scaling is one-dimensional, so the rank-one matrices have dimension $5$; they are the affine cone, with apex $0$, over the Segre variety $\mathbb{P}^{2}\times\mathbb{P}^{2}$ of dimension $4$. The whole variety $\Sigma$ has dimension $5$.
 
-**The nilpotent part.** Inside $\Sigma$, the rank-one matrices with $\varphi(u)=0$ are the nilpotent ones. They form the orbit of $E_{12}$, of dimension $4$, and they are the affine cone over the incidence variety of dimension $3$. The singular locus of the determinant hypersurface is the full $\Sigma$, not only its nilpotent part.
+**The nilpotent part.** Inside $\Sigma$, the rank-one matrices with $\digamma_{\mathrm{map}}(u)=0$ are the nilpotent ones. They form the orbit of $E_{12}$, of dimension $4$, and they are the affine cone over the incidence variety of dimension $3$. The singular locus of the determinant hypersurface is the full $\Sigma$, not only its nilpotent part.
 
 **Worked example.** For $A=\operatorname{diag}(1,1,0)$, of rank $2$,
 

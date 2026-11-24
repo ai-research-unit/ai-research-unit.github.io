@@ -160,7 +160,7 @@ the general rows are the distributional form.
 
 The operator theory built from the kernel involution — the self-adjointness of $T_K$, its compactness in the
 Hilbert–Schmidt case, the reality of the eigenvalues, the orthogonal eigenfunctions, the expansion
-$K(x,y)=\sum_n\lambda_n\varphi_n(x)\overline{\varphi_n(y)}$ with $\lambda_n\geq0$ exactly for a positive
+$K(x,y)=\sum_n\lambda_n\digamma_{\mathrm{map},n}(x)\overline{\digamma_{\mathrm{map},n}(y)}$ with $\lambda_n\geq0$ exactly for a positive
 definite kernel, the uniform convergence of the expansion for a continuous kernel (Mercer's theorem) and the
 trace identities $\sum_n\lambda_n=\int K(x,x)\,d\mu$ and $\lVert K\rVert_{L^2}^2=\sum_n\lambda_n^2$ — is
 *Hermitian Integral Kernels*, the article of the `* Operator Theory` group that follows this one, together

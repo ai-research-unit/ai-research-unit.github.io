@@ -74,7 +74,7 @@ the **Fredholm resolvent equation**; the kernel is the Green function of $(L-\la
 
 *Proof.* The identity $R(\lambda)=G+\lambda GR(\lambda)$ written in kernels is the displayed equation, the composition of integral operators being the convolution of kernels. That the kernel is the Green function of the shifted problem is the definition, and its analyticity is that of the resolvent transported to the kernel by the identity.
 
-**Theorem (meromorphic structure).** Suppose that $G$ is compact and that $R(\lambda)$ exists in a punctured neighbourhood of an eigenvalue $\lambda_0$ of finite multiplicity $m$. Then $R(\lambda)$ has a pole of order at most $m$ at $\lambda_0$, and if $\lambda_0$ is a simple eigenvalue with orthonormal eigenfunction $\varphi_0$ and spectral projection $P_0 = \langle\cdot,\varphi_0\rangle\varphi_0$, then the residue is
+**Theorem (meromorphic structure).** Suppose that $G$ is compact and that $R(\lambda)$ exists in a punctured neighbourhood of an eigenvalue $\lambda_0$ of finite multiplicity $m$. Then $R(\lambda)$ has a pole of order at most $m$ at $\lambda_0$, and if $\lambda_0$ is a simple eigenvalue with orthonormal eigenfunction $\digamma_{\mathrm{map},0}$ and spectral projection $P_0 = \langle\cdot,\digamma_{\mathrm{map},0}\rangle\digamma_{\mathrm{map},0}$, then the residue is
 
 $$
 \lim_{\lambda\to\lambda_0}(\lambda-\lambda_0)\,R(\lambda) = -P_0 .
@@ -84,7 +84,7 @@ $$
 
 ### The Resolvent of an Interval Problem
 
-**Example.** For $L=-d^2/dx^2$ on $(0,\pi)$ with $u(0)=u(\pi)=0$ the eigenvalues and eigenfunctions are $\lambda_n=n^2$ and $\varphi_n(x)=\sqrt{2/\pi}\,\sin(nx)$, so the resolvent kernel is
+**Example.** For $L=-d^2/dx^2$ on $(0,\pi)$ with $u(0)=u(\pi)=0$ the eigenvalues and eigenfunctions are $\lambda_n=n^2$ and $\digamma_{\mathrm{map},n}(x)=\sqrt{2/\pi}\,\sin(nx)$, so the resolvent kernel is
 
 $$
 R(\lambda;x,y) = \frac{2}{\pi}\sum_{n\ge1}\frac{\sin(nx)\,\sin(ny)}{n^2-\lambda} \qquad (\lambda\neq n^2).
@@ -171,10 +171,10 @@ $$
 If in addition the resolvent is compact, then the spectrum is discrete: it consists of real eigenvalues of finite multiplicity tending to $+\infty$ or to $-\infty$ in absolute value, there is an orthonormal basis of eigenvectors, and for every $\lambda$ outside the spectrum
 
 $$
-R(\lambda) = \sum_n \frac{1}{\lambda_n-\lambda}\,\langle\cdot,\varphi_n\rangle\,\varphi_n ,
+R(\lambda) = \sum_n \frac{1}{\lambda_n-\lambda}\,\langle\cdot,\digamma_{\mathrm{map},n}\rangle\,\digamma_{\mathrm{map},n} ,
 $$
 
-the series converging in the operator norm, with $L\varphi_n=\lambda_n\varphi_n$.
+the series converging in the operator norm, with $L\digamma_{\mathrm{map},n}=\lambda_n\digamma_{\mathrm{map},n}$.
 
 *Proof.* The estimate is the standard one for a self-adjoint operator, proved by applying the Cauchy–Schwarz inequality to $\|(L-\lambda)u\|\,\|u\|\ge|\operatorname{Im}\langle(L-\lambda)u,u\rangle| = |\nu|\|u\|^2$; it gives the bound and shows that the range is closed and dense, so $\lambda$ is in the resolvent set. The compactness of the resolvent makes the spectrum discrete and the eigenvectors complete, by the spectral theorem for a compact self-adjoint operator applied to $R(\lambda_0)$ for a real $\lambda_0$ in the resolvent set, whose eigenvalues are the reciprocals of $\lambda_n-\lambda_0$; the spectral mapping gives the eigenvalues $\lambda_n$ of $L$. The series is the spectral expansion of $R(\lambda)$ in the eigenbasis.
 
@@ -186,19 +186,19 @@ $$
 
 and the eigenvalues of $L$ are recovered from the poles of the resolvent.
 
-*Proof.* The eigenvector equation $L\varphi=\lambda_n\varphi$ reads $R(\lambda)\varphi=(\lambda_n-\lambda)^{-1}\varphi$, so every spectral value of $L$ produces a spectral value of $R(\lambda)$; conversely every eigenvector of $R(\lambda)$ is an eigenvector of $L$ because $L=R(\lambda)^{-1}+\lambda$ on the domain. The identification of the spectra follows from the spectral mapping theorem for a bounded operator, applied to $R(\lambda)$ and its inverse.
+*Proof.* The eigenvector equation $L\digamma_{\mathrm{map}}=\lambda_n\digamma_{\mathrm{map}}$ reads $R(\lambda)\digamma_{\mathrm{map}}=(\lambda_n-\lambda)^{-1}\digamma_{\mathrm{map}}$, so every spectral value of $L$ produces a spectral value of $R(\lambda)$; conversely every eigenvector of $R(\lambda)$ is an eigenvector of $L$ because $L=R(\lambda)^{-1}+\lambda$ on the domain. The identification of the spectra follows from the spectral mapping theorem for a bounded operator, applied to $R(\lambda)$ and its inverse.
 
 ## The Resolvent and the Spectral Calculus
 
-**Theorem (recovery of the spectral measure).** Let $L$ be self-adjoint with spectral measure $E$ and let $\varphi$ be a vector of the domain. Then the scalar function $\lambda\mapsto\langle R(\lambda)\varphi,\varphi\rangle$ is analytic off the real axis and
+**Theorem (recovery of the spectral measure).** Let $L$ be self-adjoint with spectral measure $E$ and let $\digamma_{\mathrm{map}}$ be a vector of the domain. Then the scalar function $\lambda\mapsto\langle R(\lambda)\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}\rangle$ is analytic off the real axis and
 
 $$
-\frac{1}{2\pi i}\int_{\mathbb{R}}\Bigl(\langle R(\mu+i\varepsilon)\varphi,\varphi\rangle - \langle R(\mu-i\varepsilon)\varphi,\varphi\rangle\Bigr) g(\mu)\,d\mu \longrightarrow \langle g(L)\varphi,\varphi\rangle
+\frac{1}{2\pi i}\int_{\mathbb{R}}\Bigl(\langle R(\mu+i\varepsilon)\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}\rangle - \langle R(\mu-i\varepsilon)\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}\rangle\Bigr) g(\mu)\,d\mu \longrightarrow \langle g(L)\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}\rangle
 $$
 
-as $\varepsilon\downarrow0$ for every continuous $g$ of compact support, the **Stieltjes inversion formula**; in particular $\langle E(B)\varphi,\varphi\rangle$ is recovered by taking $g$ to approximate the indicator of a Borel set $B$.
+as $\varepsilon\downarrow0$ for every continuous $g$ of compact support, the **Stieltjes inversion formula**; in particular $\langle E(B)\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}\rangle$ is recovered by taking $g$ to approximate the indicator of a Borel set $B$.
 
-*Proof.* By the spectral theorem the pairing is the Stieltjes transform of the measure $\mu_E = \langle E(\cdot)\varphi,\varphi\rangle$, $\langle R(\lambda)\varphi,\varphi\rangle = \int(\mu-\lambda)^{-1}d\mu_E(\mu)$, and the difference of the two boundary values of $(\mu-\lambda)^{-1}$ across the real axis has the limit $2\pi i$ times the delta at $\mu$ in the distributional sense, by the Sokhotski–Plemelj formula; integrating against $g$ gives $2\pi i\int g\,d\mu_E = 2\pi i\langle g(L)\varphi,\varphi\rangle$. Dividing by $2\pi i$ gives the displayed limit, and the identification of the spectral measure follows on approximating the indicator of $B$ by continuous functions of compact support.
+*Proof.* By the spectral theorem the pairing is the Stieltjes transform of the measure $\mu_E = \langle E(\cdot)\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}\rangle$, $\langle R(\lambda)\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}\rangle = \int(\mu-\lambda)^{-1}d\mu_E(\mu)$, and the difference of the two boundary values of $(\mu-\lambda)^{-1}$ across the real axis has the limit $2\pi i$ times the delta at $\mu$ in the distributional sense, by the Sokhotski–Plemelj formula; integrating against $g$ gives $2\pi i\int g\,d\mu_E = 2\pi i\langle g(L)\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}\rangle$. Dividing by $2\pi i$ gives the displayed limit, and the identification of the spectral measure follows on approximating the indicator of $B$ by continuous functions of compact support.
 
 **Theorem (the Dunford integral).** Let $L$ generate a strongly continuous semigroup $\exp(tL)$, $t\ge0$, with $\|\exp(tL)\|\le M\exp(\omega t)$. Then for $a>\omega$ and $t>0$,
 
@@ -210,13 +210,13 @@ the integral converging in the operator norm and defining the semigroup from the
 
 *Proof.* The resolvent is bounded on the vertical line $\operatorname{Re}\lambda=a$, and the integral is the inverse Laplace transform of the resolvent, which is the generating relation of the semigroup; the estimate $\|R(\lambda)\|=O(|\lambda|^{-1})$ on the line makes the integral absolutely convergent, and the semigroup law follows from that of the exponential. The hypothesis that $L$ generates the semigroup is the Hille–Yosida condition on the resolvent on a half-plane, and the verification of it for a differential operator is the analytic content of the generation theorems.
 
-**Remark (the calculus and the dynamics).** The estimate on the imaginary axis is the quantitative form of the self-adjointness of $L$: it is the hypothesis of the Hille–Yosida and Stone theorems, by which $L$ generates the groups and semigroups of the dynamical problems, and it is the input of the Stieltjes inversion formula that recovers the spectral measure of $L$ from the pairing $\langle R(\lambda)\varphi,\varphi\rangle$. The spectral representation of a self-adjoint operator by a projection-valued measure, the functional calculus and the unitary groups are those of *Unbounded Operators and Spectral Measures*, and the heat and wave semigroups of a differential operator are the applications recorded there and in *Partial Differential Equations*.
+**Remark (the calculus and the dynamics).** The estimate on the imaginary axis is the quantitative form of the self-adjointness of $L$: it is the hypothesis of the Hille–Yosida and Stone theorems, by which $L$ generates the groups and semigroups of the dynamical problems, and it is the input of the Stieltjes inversion formula that recovers the spectral measure of $L$ from the pairing $\langle R(\lambda)\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}\rangle$. The spectral representation of a self-adjoint operator by a projection-valued measure, the functional calculus and the unitary groups are those of *Unbounded Operators and Spectral Measures*, and the heat and wave semigroups of a differential operator are the applications recorded there and in *Partial Differential Equations*.
 
 ## Summary
 
 The resolvent of a closed operator $L$ is $R(\lambda)=(L-\lambda)^{-1}$, defined on the open resolvent set and analytic there, with the identity $R(\lambda)-R(\mu)=(\lambda-\mu)R(\lambda)R(\mu)$, the derivative $R'(\lambda)=R(\lambda)^2$ and the Neumann series about each point of the resolvent set; the complement of the resolvent set is the closed spectrum, and the resolvent is of size $O(|\lambda|^{-1})$ at infinity. For a differential operator with a boundary condition the resolvent is the Green operator of the shifted problem, it is given by $R(\lambda)=G(I-\lambda G)^{-1}=G+\lambda GR(\lambda)$, and its kernel, the resolvent kernel, satisfies the Fredholm resolvent equation.
 
-For a self-adjoint operator the spectrum is real and the resolvent obeys $\|R(\mu+i\nu)\|\le|\nu|^{-1}$; if the resolvent is compact the spectrum is discrete, the eigenvalues are real of finite multiplicity and the resolvent is meromorphic with poles at them, the residue at a simple eigenvalue being the negative of the spectral projection. The eigenvector expansion $R(\lambda)=\sum(\lambda_n-\lambda)^{-1}\langle\cdot,\varphi_n\rangle\varphi_n$ diagonalises the resolvent, the eigenvalues are recovered from the poles, and the estimate on the imaginary axis is the analytic form of self-adjointness that carries the group and semigroup theorems. The interval problem displays the two faces of the resolvent at once: the spectral series with its poles at the eigenvalues, and the closed form in $k=\sqrt{-\lambda}$, whose singularities are the zeros of $\sinh(k\pi)$. The pairing $\langle R(\lambda)\varphi,\varphi\rangle$ is the Stieltjes transform of the spectral measure, and the Sokhotski–Plemelj jump across the real axis recovers the measure; the Dunford integral $\exp(tL)=\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\exp(t\lambda)R(\lambda)d\lambda$ recovers the semigroup from the resolvent. For an operator written in two blocks relative to a direct sum, the resolvent is recovered from the Schur complement: the compression to the first summand is $R_{11}(\lambda)=((A-\lambda)-B(D-\lambda)^{-1}C)^{-1}$, so the eliminated block enters the first through the energy-dependent addition $B(D-\lambda)^{-1}C$, real where the eliminated spectrum is discrete and complex where it is continuous; for a self-adjoint operator the addition jumps by $2\pi iB\delta(D-E)B^{*}$ across the continuous spectrum, and the continuation of the reduced equation through the cut carries the resonance pole below the axis, with $-\tfrac12\Gamma$ for its imaginary part and the Golden Rule width $\Gamma=2\pi B\delta(D-E)B^{*}$.
+For a self-adjoint operator the spectrum is real and the resolvent obeys $\|R(\mu+i\nu)\|\le|\nu|^{-1}$; if the resolvent is compact the spectrum is discrete, the eigenvalues are real of finite multiplicity and the resolvent is meromorphic with poles at them, the residue at a simple eigenvalue being the negative of the spectral projection. The eigenvector expansion $R(\lambda)=\sum(\lambda_n-\lambda)^{-1}\langle\cdot,\digamma_{\mathrm{map},n}\rangle\digamma_{\mathrm{map},n}$ diagonalises the resolvent, the eigenvalues are recovered from the poles, and the estimate on the imaginary axis is the analytic form of self-adjointness that carries the group and semigroup theorems. The interval problem displays the two faces of the resolvent at once: the spectral series with its poles at the eigenvalues, and the closed form in $k=\sqrt{-\lambda}$, whose singularities are the zeros of $\sinh(k\pi)$. The pairing $\langle R(\lambda)\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}\rangle$ is the Stieltjes transform of the spectral measure, and the Sokhotski–Plemelj jump across the real axis recovers the measure; the Dunford integral $\exp(tL)=\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\exp(t\lambda)R(\lambda)d\lambda$ recovers the semigroup from the resolvent. For an operator written in two blocks relative to a direct sum, the resolvent is recovered from the Schur complement: the compression to the first summand is $R_{11}(\lambda)=((A-\lambda)-B(D-\lambda)^{-1}C)^{-1}$, so the eliminated block enters the first through the energy-dependent addition $B(D-\lambda)^{-1}C$, real where the eliminated spectrum is discrete and complex where it is continuous; for a self-adjoint operator the addition jumps by $2\pi iB\delta(D-E)B^{*}$ across the continuous spectrum, and the continuation of the reduced equation through the cut carries the resonance pole below the axis, with $-\tfrac12\Gamma$ for its imaginary part and the Golden Rule width $\Gamma=2\pi B\delta(D-E)B^{*}$.
 
 ## Summary of Notation
 
@@ -227,8 +227,8 @@ For a self-adjoint operator the spectrum is real and the resolvent obeys $\|R(\m
 | $\rho(L)$, $\sigma(L)$ | Resolvent set, spectrum |
 | $R(\lambda;x,y)$ | Resolvent kernel |
 | $G$ | Green operator of $(L,B)$, that is $R(0)$ |
-| $\lambda_n$, $\varphi_n$ | Eigenvalues and orthonormal eigenfunctions |
-| $P_0 = \langle\cdot,\varphi_0\rangle\varphi_0$ | Projection onto a simple eigenspace |
+| $\lambda_n$, $\digamma_{\mathrm{map},n}$ | Eigenvalues and orthonormal eigenfunctions |
+| $P_0 = \langle\cdot,\digamma_{\mathrm{map},0}\rangle\digamma_{\mathrm{map},0}$ | Projection onto a simple eigenspace |
 | $\|R(\mu+i\nu)\|\le|\nu|^{-1}$ | Resolvent estimate for self-adjoint $L$ |
 | $A,B,C,D$ | Blocks of $L$ relative to a direct sum $\mathcal H_1\oplus\mathcal H_2$ |
 | $S(\lambda)=(A-\lambda)-B(D-\lambda)^{-1}C$ | Schur complement; $R_{11}(\lambda)=S(\lambda)^{-1}$ |

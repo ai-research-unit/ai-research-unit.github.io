@@ -27,7 +27,7 @@ Throughout, $k$ is a field and representations are finite-dimensional over $k$ u
 
 ### Representations and Modules
 
-**Definition.** A **representation** of a quiver $Q$ is the data of a $k$-module $V_i$ for each vertex $i$ and a $k$-linear map $V_a:V_{s(a)}\to V_{t(a)}$ for each arrow $a$. A **morphism** $\varphi:V\to W$ is a family of $k$-linear maps $\varphi_i:V_i\to W_i$ with $W_a\varphi_{s(a)}=\varphi_{t(a)}V_a$ for every arrow. The **dimension vector** of a representation is the element $\underline{\dim}V=\sum_{i}(\dim_kV_i)\,[i]$ of the free abelian group $\mathbb{Z}^{Q_0}$ with basis the vertices, and the **total dimension** is $\sum_i\dim_kV_i$.
+**Definition.** A **representation** of a quiver $Q$ is the data of a $k$-module $V_i$ for each vertex $i$ and a $k$-linear map $V_a:V_{s(a)}\to V_{t(a)}$ for each arrow $a$. A **morphism** $\digamma_{\mathrm{map}}:V\to W$ is a family of $k$-linear maps $\digamma_{\mathrm{map},i}:V_i\to W_i$ with $W_a\digamma_{\mathrm{map},s(a)}=\digamma_{\mathrm{map},t(a)}V_a$ for every arrow. The **dimension vector** of a representation is the element $\underline{\dim}V=\sum_{i}(\dim_kV_i)\,[i]$ of the free abelian group $\mathbb{Z}^{Q_0}$ with basis the vertices, and the **total dimension** is $\sum_i\dim_kV_i$.
 
 **Theorem.** Let $Q$ be a quiver and let $kQ$-$\mathrm{Mod}$ be the category of left $kQ$-modules. The functor sending a representation $V$ to the $kQ$-module $\bigoplus_{i\in Q_0}V_i$ on which $e_i$ acts as the projection onto $V_i$ and an arrow $a$ acts by $V_a$ on the appropriate summand and by $0$ on the others is an equivalence of categories
 $$

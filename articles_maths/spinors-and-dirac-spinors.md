@@ -18,7 +18,7 @@ Nothing below is a statement of physics. The units are $e_t,\vec e_x,\vec e_y,\v
 
 **Definition.** A **spinor** of the row is an element of a minimal left ideal $I_\ell$ of $\operatorname{End}(\mathbb{B})$, the ideal of the operators with image in a fixed complex line $\ell$ of the module $V_{3/2}$. A **weight basis** of $I_\ell$ is a basis of four elements carried by the copy with the weights of the module.
 
-**Proposition.** A spinor has four complex coordinates, and in a weight basis they are $\psi_{3/2},\psi_{1/2},\psi_{-1/2},\psi_{-3/2}$, of weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$. The four functionals that read them are a basis of the dual of the ideal.
+**Proposition.** A spinor has four complex coordinates, and in a weight basis they are $Ξ_{\mathrm{wfn},3/2},Ξ_{\mathrm{wfn},1/2},Ξ_{\mathrm{wfn},-1/2},Ξ_{\mathrm{wfn},-3/2}$, of weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$. The four functionals that read them are a basis of the dual of the ideal.
 
 *Proof.* The ideal is a copy of the module, of complex dimension four, and the module has a weight string of four distinct entries. A functional of weight $\mu$ is non-zero on the line of weight $m$ only when $m+\mu=0$, so the four functionals are dual to the four weight lines.
 
@@ -32,7 +32,7 @@ Nothing below is a statement of physics. The units are $e_t,\vec e_x,\vec e_y,\v
 
 *Proof.* The intersection $I_\ell\cap J_h$ is the set of operators with image in $\ell$ and kernel containing $h$, a single line. The sum has dimension $4+4-1=7$ when $\ell\subseteq h$; for $h=\ell^{\perp}$ the intersection is zero, since an operator with image $\ell$ vanishing on $\ell^{\perp}$ is a multiple of the projector onto $\ell$, and that projector does not vanish on $\ell$. Hence the sum is direct, of dimension eight.
 
-**Corollary.** The Dirac spinor splits uniquely as a pair $(\psi,\chi)$, and the splitting is the pair of projections onto the two summands.
+**Corollary.** The Dirac spinor splits uniquely as a pair $(Ξ_{\mathrm{wfn}},\chi)$, and the splitting is the pair of projections onto the two summands.
 
 *Proof.* A direct sum gives unique coordinates; the two projections keep one summand and annihilate the other.
 
@@ -74,10 +74,10 @@ $$
 
 ## The Invariants
 
-**Definition.** For a Dirac spinor $(\psi,\chi)$ put
+**Definition.** For a Dirac spinor $(Ξ_{\mathrm{wfn}},\chi)$ put
 
 $$
-q_L(\psi)=\langle\psi,\psi\rangle,\qquad q_R(\chi)=\langle\chi,\chi\rangle,\qquad \beta(\psi,\chi)=\langle\psi,\chi\rangle,
+q_L(Ξ_{\mathrm{wfn}})=\langleΞ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}}\rangle,\qquad q_R(\chi)=\langle\chi,\chi\rangle,\qquad \beta(Ξ_{\mathrm{wfn}},\chi)=\langleΞ_{\mathrm{wfn}},\chi\rangle,
 $$
 
 the restrictions of the trace form to the halves and the pairing between them.

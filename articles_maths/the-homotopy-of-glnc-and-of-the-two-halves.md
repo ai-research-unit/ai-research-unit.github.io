@@ -52,7 +52,7 @@ $$
 \det:\mathrm{U}(n)\to S^{1}
 $$
 
-is continuous and surjective, since $\operatorname{diag}(e^{i\varphi},1,\dots,1)$ is unitary with the determinant $e^{i\varphi}$. The computation confirms the surjectivity at $n=2,3$, and it gives the generator of the fundamental group.
+is continuous and surjective, since $\operatorname{diag}(e^{i\digamma_{\mathrm{map}}},1,\dots,1)$ is unitary with the determinant $e^{i\digamma_{\mathrm{map}}}$. The computation confirms the surjectivity at $n=2,3$, and it gives the generator of the fundamental group.
 
 **The phase loop in the group winds $n$ times.** For the loop
 

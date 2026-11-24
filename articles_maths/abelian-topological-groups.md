@@ -223,10 +223,10 @@ The annihilator formalism of §Characters and the Dual becomes a dictionary of s
 
 ### Inverse Limits
 
-**Definition.** An **inverse system** of abelian topological groups is a directed set $I$ with groups $G_i$ and continuous homomorphisms $\varphi_{ij} : G_j \to G_i$ for $i \leq j$, compatible in the evident sense; its **inverse limit** is
+**Definition.** An **inverse system** of abelian topological groups is a directed set $I$ with groups $G_i$ and continuous homomorphisms $\digamma_{\mathrm{map},ij} : G_j \to G_i$ for $i \leq j$, compatible in the evident sense; its **inverse limit** is
 
 $$
-\varprojlim_i G_i = \Bigl\{(x_i) \in \prod_i G_i : \varphi_{ij}(x_j) = x_i \text{ for all } i \leq j\Bigr\},
+\varprojlim_i G_i = \Bigl\{(x_i) \in \prod_i G_i : \digamma_{\mathrm{map},ij}(x_j) = x_i \text{ for all } i \leq j\Bigr\},
 $$
 
 with the subspace topology.

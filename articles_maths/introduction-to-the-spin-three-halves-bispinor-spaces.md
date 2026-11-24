@@ -35,7 +35,7 @@ $$
 **Definition.** A **bispinor** is an element of the module $V_{3/2}$. A **weight basis** is a chain $u_{3/2},u_{1/2},u_{-1/2},u_{-3/2}$ with $u_m$ of weight $m$ and with the raising operator carrying $u_m$ to a fixed non-zero multiple of $u_{m+1}$. In that basis a bispinor has four coordinates,
 
 $$
-\psi=\psi_{3/2}u_{3/2}+\psi_{1/2}u_{1/2}+\psi_{-1/2}u_{-1/2}+\psi_{-3/2}u_{-3/2}.
+Ξ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn},3/2}u_{3/2}+Ξ_{\mathrm{wfn},1/2}u_{1/2}+Ξ_{\mathrm{wfn},-1/2}u_{-1/2}+Ξ_{\mathrm{wfn},-3/2}u_{-3/2}.
 $$
 
 **Proposition.** The four coordinates are the values of four functionals of weights $-\tfrac32,-\tfrac12,\tfrac12,\tfrac32$, and the functionals are a basis of the dual module. The coordinate of weight $-\tfrac32$ is the one that survives on the highest line, and it is the only one that does not vanish there.

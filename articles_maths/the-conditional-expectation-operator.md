@@ -35,9 +35,9 @@ and $E_{\mathcal G}X=X$ exactly when $X\in L^2(\mathcal G)$.
 
 *Proof.* The range is contained in $L^2(\mathcal G)$ and $E_{\mathcal G}$ fixes $L^2(\mathcal G)$, so $E_{\mathcal G}^2=E_{\mathcal G}$; the self-adjointness is the defining identity $\langle E_{\mathcal G}X,Y\rangle=\langle X,E_{\mathcal G}Y\rangle$ for $X,Y\in L^2(\mathcal F)$, which follows from the same identity restricted to $Y\in L^2(\mathcal G)$ after decomposing; the norm is one because a nonzero projection has norm one, and the contraction is the general property of a projection. The fixed space is the range.
 
-**Theorem (positivity and Jensen).** If $X\ge0$ then $E_{\mathcal G}X\ge0$, and for every convex $\varphi:\mathbb R\to\mathbb R$ with $\varphi(X)$ integrable,
+**Theorem (positivity and Jensen).** If $X\ge0$ then $E_{\mathcal G}X\ge0$, and for every convex $\digamma_{\mathrm{map}}:\mathbb R\to\mathbb R$ with $\digamma_{\mathrm{map}}(X)$ integrable,
 $$
-\varphi(E_{\mathcal G}X)\le E_{\mathcal G}[\varphi(X)] .
+\digamma_{\mathrm{map}}(E_{\mathcal G}X)\le E_{\mathcal G}[\digamma_{\mathrm{map}}(X)] .
 $$
 
 *Proof.* The positivity is the definition of the conditional expectation as an average; the inequality is the conditional Jensen inequality of *Independence and Conditional Expectation*, which is the statement that the projection is an order-preserving contraction and not merely a linear one.

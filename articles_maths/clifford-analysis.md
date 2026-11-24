@@ -257,7 +257,7 @@ $$
 (\mathcal{S}^l)^\dagger = \nu_{B}M\,\mathcal{S}^l\,\nu_{B}M ,
 $$
 
-the operator of multiplication by the normal on both sides; in the flat case $\Gamma=\mathbb{R}^m$ with $\nu_B=e_{m+1}$ this gives $(\mathcal{S}^l)^\dagger=\mathcal{S}^l$, so that the projections $P^\pm_l$ are orthogonal on $L^2(\mathbb{R}^m)$. On a general surface the formula does not settle the duality, and the relevant adjointness is the relative one with respect to the **total subspace** of real functionals of the form $u\mapsto\int_\Gamma\varphi\,\nu_B\,u\,d\mathcal{H}^m$ with $\varphi\in C^{0,\alpha}(\Gamma)$, which is total in the dual of $C^{0,\alpha}(\Gamma)$: with respect to that subspace the adjoints of $\mathcal{S}^l$ and $P^\pm_l$ are $\mathcal{S}^r$ and $P^\pm_r$.
+the operator of multiplication by the normal on both sides; in the flat case $\Gamma=\mathbb{R}^m$ with $\nu_B=e_{m+1}$ this gives $(\mathcal{S}^l)^\dagger=\mathcal{S}^l$, so that the projections $P^\pm_l$ are orthogonal on $L^2(\mathbb{R}^m)$. On a general surface the formula does not settle the duality, and the relevant adjointness is the relative one with respect to the **total subspace** of real functionals of the form $u\mapsto\int_\Gamma\digamma_{\mathrm{map}}\,\nu_B\,u\,d\mathcal{H}^m$ with $\digamma_{\mathrm{map}}\in C^{0,\alpha}(\Gamma)$, which is total in the dual of $C^{0,\alpha}(\Gamma)$: with respect to that subspace the adjoints of $\mathcal{S}^l$ and $P^\pm_l$ are $\mathcal{S}^r$ and $P^\pm_r$.
 
 *Proof.* Quoted from the literature. The metric formula is a computation with the parity of the kernel and the symmetry of the normal; the relative adjointness is the general fact that $P^+_l$ and $P^-_l$ split the space and the right-handed operators split the dual pairing in the complementary way, which is the statement that the left and right function theories are dual to each other rather than identical.
 
@@ -545,7 +545,7 @@ so a variable shift costs the term $-(D\lambda)$: the splitting theorem fails, a
 $$
 D+\lambda=\eta\,(D+Q)\,\eta^{-1},
 $$
-so a variable-coefficient equation with a scalar shift is equivalent to a constant-coefficient one whenever $Q$ is constant; in the applications $\eta=\exp(\varphi)$ and the constancy of $Q=\lambda+D\varphi$ is an eikonal condition. The constant $Q$ is then generally Clifford-valued rather than scalar, so the splitting theorem above does not apply to it: the reduction solves the equation by a zero-divisor device, not by a spectral one. That device and its use in slowly varying media belong to the articles that use it.
+so a variable-coefficient equation with a scalar shift is equivalent to a constant-coefficient one whenever $Q$ is constant; in the applications $\eta=\exp(\digamma_{\mathrm{map}})$ and the constancy of $Q=\lambda+D\digamma_{\mathrm{map}}$ is an eikonal condition. The constant $Q$ is then generally Clifford-valued rather than scalar, so the splitting theorem above does not apply to it: the reduction solves the equation by a zero-divisor device, not by a spectral one. That device and its use in slowly varying media belong to the articles that use it.
 
 ## The Hermitean Refinement
 

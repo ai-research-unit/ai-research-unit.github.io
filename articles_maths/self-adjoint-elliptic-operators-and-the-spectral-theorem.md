@@ -30,37 +30,37 @@ acting in $L^2(\Omega)$; it is the **self-adjoint realisation** of the boundary-
 
 ## The Spectral Theorem
 
-**Theorem (the spectral theorem for the elliptic realisation).** Let $L$ be a self-adjoint realisation with compact inverse. Then there is an orthonormal basis $(\varphi_n)$ of $L^2(\Omega)$ consisting of eigenfunctions,
+**Theorem (the spectral theorem for the elliptic realisation).** Let $L$ be a self-adjoint realisation with compact inverse. Then there is an orthonormal basis $(\digamma_{\mathrm{map},n})$ of $L^2(\Omega)$ consisting of eigenfunctions,
 
 $$
-L\varphi_n = \lambda_n\varphi_n , \qquad \varphi_n\in\mathrm{dom}\,L ,
+L\digamma_{\mathrm{map},n} = \lambda_n\digamma_{\mathrm{map},n} , \qquad \digamma_{\mathrm{map},n}\in\mathrm{dom}\,L ,
 $$
 
 the eigenvalues real, of finite multiplicity and with $|\lambda_n|\to\infty$; the operator has the spectral representation
 
 $$
-\boxed{\;Lf = \sum_{n\ge1}\lambda_n\,\langle f,\varphi_n\rangle\,\varphi_n , \qquad \mathrm{dom}\,L = \Bigl\{f\in L^2(\Omega) : \sum_n\lambda_n^2|\langle f,\varphi_n\rangle|^2<\infty\Bigr\}\;} ,
+\boxed{\;Lf = \sum_{n\ge1}\lambda_n\,\langle f,\digamma_{\mathrm{map},n}\rangle\,\digamma_{\mathrm{map},n} , \qquad \mathrm{dom}\,L = \Bigl\{f\in L^2(\Omega) : \sum_n\lambda_n^2|\langle f,\digamma_{\mathrm{map},n}\rangle|^2<\infty\Bigr\}\;} ,
 $$
 
 and for every bounded Borel function $g$ on the real line the functional calculus is
 
 $$
-g(L)f = \sum_{n\ge1}g(\lambda_n)\,\langle f,\varphi_n\rangle\,\varphi_n ,
+g(L)f = \sum_{n\ge1}g(\lambda_n)\,\langle f,\digamma_{\mathrm{map},n}\rangle\,\digamma_{\mathrm{map},n} ,
 $$
 
 with the spectral measure $E(B)=\sum_{\lambda_n\in B}P_n$, where $P_n$ is the orthogonal projection onto the eigenspace of $\lambda_n$.
 
-*Proof.* The inverse $S$ is compact and self-adjoint, so by the spectral theorem for a compact self-adjoint operator of *Banach and Hilbert Spaces* it has an orthonormal basis of eigenvectors with eigenvalues $\mu_n$ real and $\to0$; the eigenvector equation $S\varphi=\mu\varphi$ is equivalent to $L\varphi=\mu^{-1}\varphi$ with $\varphi\in\mathrm{dom}\,L$, so the eigenfunctions of $S$ are those of $L$ and the eigenvalues are the reciprocals, giving the reality, the finite multiplicity and $|\lambda_n|\to\infty$. The spectral representation and the functional calculus are the spectral theorem for a self-adjoint operator as stated in *Unbounded Operators and Spectral Measures*, applied to the discrete spectrum produced by the compactness of $S$.
+*Proof.* The inverse $S$ is compact and self-adjoint, so by the spectral theorem for a compact self-adjoint operator of *Banach and Hilbert Spaces* it has an orthonormal basis of eigenvectors with eigenvalues $\mu_n$ real and $\to0$; the eigenvector equation $S\digamma_{\mathrm{map}}=\mu\digamma_{\mathrm{map}}$ is equivalent to $L\digamma_{\mathrm{map}}=\mu^{-1}\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}\in\mathrm{dom}\,L$, so the eigenfunctions of $S$ are those of $L$ and the eigenvalues are the reciprocals, giving the reality, the finite multiplicity and $|\lambda_n|\to\infty$. The spectral representation and the functional calculus are the spectral theorem for a self-adjoint operator as stated in *Unbounded Operators and Spectral Measures*, applied to the discrete spectrum produced by the compactness of $S$.
 
-**Corollary (the expansion and the Green function).** For $f\in L^2(\Omega)$ the series $f=\sum_n\langle f,\varphi_n\rangle\varphi_n$ converges in $L^2$, and the solution of $Lu=f$ in the domain is $u=\sum_n\lambda_n^{-1}\langle f,\varphi_n\rangle\varphi_n$; the Green function of the problem is
+**Corollary (the expansion and the Green function).** For $f\in L^2(\Omega)$ the series $f=\sum_n\langle f,\digamma_{\mathrm{map},n}\rangle\digamma_{\mathrm{map},n}$ converges in $L^2$, and the solution of $Lu=f$ in the domain is $u=\sum_n\lambda_n^{-1}\langle f,\digamma_{\mathrm{map},n}\rangle\digamma_{\mathrm{map},n}$; the Green function of the problem is
 
 $$
-\boxed{\;G(x,y) = \sum_{n\ge1}\frac{\varphi_n(x)\overline{\varphi_n(y)}}{\lambda_n}\;} ,
+\boxed{\;G(x,y) = \sum_{n\ge1}\frac{\digamma_{\mathrm{map},n}(x)\overline{\digamma_{\mathrm{map},n}(y)}}{\lambda_n}\;} ,
 $$
 
 the series converging in $L^2(\Omega\times\Omega)$ and, when the eigenfunctions are continuous, absolutely and uniformly away from the diagonal.
 
-*Proof.* The expansion is the Parseval identity in the orthonormal basis; applying $S=L^{-1}$ gives the solution series, and the kernel of $S$ is the displayed sum by the expansion of the kernel in the basis $(\varphi_n\otimes\overline{\varphi_m})$.
+*Proof.* The expansion is the Parseval identity in the orthonormal basis; applying $S=L^{-1}$ gives the solution series, and the kernel of $S$ is the displayed sum by the expansion of the kernel in the basis $(\digamma_{\mathrm{map},n}\otimes\overline{\digamma_{\mathrm{map},m}})$.
 
 ## The Discrete Spectrum
 
@@ -122,7 +122,7 @@ which is the area of the quarter disc $\{x,y\ge0 : x^2+y^2\le\lambda\}$ of radiu
 
 ## Summary
 
-A formally self-adjoint uniformly elliptic operator with a self-adjoint boundary condition has a self-adjoint realisation on $H^2\cap\mathrm{dom}\,B$, its inverse being the compact self-adjoint solution operator of the weak problem. The spectral theorem gives an orthonormal basis of eigenfunctions, the spectral representation $Lf=\sum\lambda_n\langle f,\varphi_n\rangle\varphi_n$, the domain characterised by the square-summability of $\lambda_n\langle f,\varphi_n\rangle$, and the functional calculus $g(L)=\sum g(\lambda_n)P_n$; the Green function is the kernel $\sum\lambda_n^{-1}\varphi_n(x)\overline{\varphi_n(y)}$. The spectrum is discrete with $\lambda_n\to+\infty$ when the form is coercive, the eigenvalues are counted by the finite function $N(\lambda)$ and characterised by the min–max principle. The Weyl law gives the leading asymptotics $N(\lambda)\sim\frac{\omega_n}{(2\pi)^n}|\Omega|\lambda^{n/2}$, the same for the Dirichlet and the Neumann conditions, with the first correction of order $\lambda^{(n-1)/2}$ depending on the boundary area and, in sign, on the condition.
+A formally self-adjoint uniformly elliptic operator with a self-adjoint boundary condition has a self-adjoint realisation on $H^2\cap\mathrm{dom}\,B$, its inverse being the compact self-adjoint solution operator of the weak problem. The spectral theorem gives an orthonormal basis of eigenfunctions, the spectral representation $Lf=\sum\lambda_n\langle f,\digamma_{\mathrm{map},n}\rangle\digamma_{\mathrm{map},n}$, the domain characterised by the square-summability of $\lambda_n\langle f,\digamma_{\mathrm{map},n}\rangle$, and the functional calculus $g(L)=\sum g(\lambda_n)P_n$; the Green function is the kernel $\sum\lambda_n^{-1}\digamma_{\mathrm{map},n}(x)\overline{\digamma_{\mathrm{map},n}(y)}$. The spectrum is discrete with $\lambda_n\to+\infty$ when the form is coercive, the eigenvalues are counted by the finite function $N(\lambda)$ and characterised by the min–max principle. The Weyl law gives the leading asymptotics $N(\lambda)\sim\frac{\omega_n}{(2\pi)^n}|\Omega|\lambda^{n/2}$, the same for the Dirichlet and the Neumann conditions, with the first correction of order $\lambda^{(n-1)/2}$ depending on the boundary area and, in sign, on the condition.
 
 ## Summary of Notation
 
@@ -130,7 +130,7 @@ A formally self-adjoint uniformly elliptic operator with a self-adjoint boundary
 |---|---|
 | $L$ | Self-adjoint elliptic realisation |
 | $\mathrm{dom}\,L=H^2\cap\{Bu=0\}$ | Domain of the realisation |
-| $\lambda_n$, $\varphi_n$ | Eigenvalues and orthonormal eigenfunctions |
+| $\lambda_n$, $\digamma_{\mathrm{map},n}$ | Eigenvalues and orthonormal eigenfunctions |
 | $S=L^{-1}$ | Compact self-adjoint solution operator |
 | $E(B)=\sum_{\lambda_n\in B}P_n$ | Spectral measure of $L$ |
 | $g(L)$ | Functional calculus |

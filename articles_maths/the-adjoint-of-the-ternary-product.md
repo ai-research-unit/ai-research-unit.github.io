@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The ternary product $\{x,y,z\}=xy^{*}z$ has three slots, and each of them turns the ternary operator $\mathrm{Sd}_{x,y}$ of the pair $(x,y)$ into an operator of the earlier entries of the group: the third slot gives the plain left multiplication $L_{x\star y}R_{1}$ by the derived product, the middle slot the two-sided operator $\mathcal{T}_{x,z}$, and the first slot the plain right multiplication, as *The Ternary Product as an Operator* records. The present article takes the adjoint of the ternary operator for the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$. The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule of *The Sesquilinear Adjoint Operator*, and the whole article turns on the single identity
+The ternary product $\{x,y,z\}=xy^{*}z$ has three slots, and each of them turns the ternary operator $\mathrm{Sd}_{x,y}$ of the pair $(x,y)$ into an operator of the earlier entries of the group: the third slot gives the plain left multiplication $L_{x\star y}R_{1}$ by the derived product, the middle slot the two-sided operator $\mathcal{T}_{x,z}$, and the first slot the plain right multiplication, as *The Ternary Product as an Operator* records. The present article takes the adjoint of the ternary operator for the sesquilinear pairing $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$. The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule of *The Sesquilinear Adjoint Operator*, and the whole article turns on the single identity
 
 $$
 \mathrm{Sd}_{x,y}^{\dagger}=\mathrm{Sd}_{y,x},
@@ -10,13 +10,13 @@ $$
 
 the adjoint of the ternary operator of a pair being the ternary operator of the swapped pair. Three consequences are drawn. The diagonal $\mathrm{Sd}_{x,x}$ is self-adjoint for every element, so the quadratic representation of the Jordan theory is self-adjoint. The operator $\mathrm{Sd}_{x,y}$ is self-adjoint if and only if the derived product $x\star y$ is Hermitian, which ties the operator theory to *Hermitian and Anti-Hermitian Elements*. And the adjoint operation permutes the three readings of the ternary product among themselves, so the ternary product introduces no adjoint that the two-sided operator and the plain one-sided operators had not already named; this is the operator form of the reversibility that the $J^{*}$-triples carry.
 
-Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and $1^{*}=1$, and the function $\tau:A\to R$ is $R$-linear, central and compatible with the involution, $\tau(ab)=\tau(ba)$ and $\tau(x^{*})=\varsigma(\tau(x))$, with the pairing $\varphi(x,y)=\tau(xy^{*})$ perfect. The derived product is $x\star y=xy^{*}$, the ternary product is $\{x,y,z\}=xy^{*}z$, and
+Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and $1^{*}=1$, and the function $\tau:A\to R$ is $R$-linear, central and compatible with the involution, $\tau(ab)=\tau(ba)$ and $\tau(x^{*})=\varsigma(\tau(x))$, with the pairing $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$ perfect. The derived product is $x\star y=xy^{*}$, the ternary product is $\{x,y,z\}=xy^{*}z$, and
 
 $$
 \mathrm{Sd}_{x,y}(z)=xy^{*}z=\{x,y,z\}, \qquad \mathcal{T}_{a,b}(x)=ax^{*}b, \qquad L_{p}R_{q}(x)=pxq .
 $$
 
-The adjoint of an $R$-linear operator $T$ is the operator $T^{\dagger}$ with $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$, and the adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger}$ with $\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)$; both exist and are unique by *The Sesquilinear Adjoint Operator*.
+The adjoint of an $R$-linear operator $T$ is the operator $T^{\dagger}$ with $\digamma_{\mathrm{map}}(Tx,y)=\digamma_{\mathrm{map}}(x,T^{\dagger}y)$, and the adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger}$ with $\digamma_{\mathrm{map}}(Sx,y)=\varsigma\bigl(\digamma_{\mathrm{map}}(x,S^{\dagger}y)\bigr)$; both exist and are unique by *The Sesquilinear Adjoint Operator*.
 
 ## The Operator and its Adjoint
 
@@ -37,10 +37,10 @@ $$
 **Theorem (the adjoint of the ternary operator).** For all $x,y\in A$,
 
 $$
-\boxed{\;\mathrm{Sd}_{x,y}^{\dagger}=\mathrm{Sd}_{y,x};\qquad\text{that is,}\qquad \varphi(\mathrm{Sd}_{x,y}z,w)=\varphi(z,\mathrm{Sd}_{y,x}w)\quad\text{for all }z,w\in A\;} .
+\boxed{\;\mathrm{Sd}_{x,y}^{\dagger}=\mathrm{Sd}_{y,x};\qquad\text{that is,}\qquad \digamma_{\mathrm{map}}(\mathrm{Sd}_{x,y}z,w)=\digamma_{\mathrm{map}}(z,\mathrm{Sd}_{y,x}w)\quad\text{for all }z,w\in A\;} .
 $$
 
-**Proof.** By the definition of the pairing, $\varphi(\mathrm{Sd}_{x,y}z,w)=\tau\bigl(xy^{*}zw^{*}\bigr)$, and the cyclicity of $\tau$ turns it into $\tau\bigl(zw^{*}xy^{*}\bigr)$. On the other side, $\varphi(z,\mathrm{Sd}_{y,x}w)=\tau\bigl(z(yx^{*}w)^{*}\bigr)=\tau\bigl(zw^{*}xy^{*}\bigr)$, by the anti-multiplicativity of $*$. The two are equal, and the adjoint is unique.
+**Proof.** By the definition of the pairing, $\digamma_{\mathrm{map}}(\mathrm{Sd}_{x,y}z,w)=\tau\bigl(xy^{*}zw^{*}\bigr)$, and the cyclicity of $\tau$ turns it into $\tau\bigl(zw^{*}xy^{*}\bigr)$. On the other side, $\digamma_{\mathrm{map}}(z,\mathrm{Sd}_{y,x}w)=\tau\bigl(z(yx^{*}w)^{*}\bigr)=\tau\bigl(zw^{*}xy^{*}\bigr)$, by the anti-multiplicativity of $*$. The two are equal, and the adjoint is unique.
 
 **Corollary (the order of the operation).** $\mathrm{Sd}_{x,y}^{\dagger\dagger}=\mathrm{Sd}_{x,y}$, and $\mathrm{Sd}_{x,x}^{\dagger}=\mathrm{Sd}_{x,x}$: the diagonal of the pair map is self-adjoint.
 
@@ -107,12 +107,12 @@ The identity $\mathrm{Sd}_{x,y}^{\dagger}=\mathrm{Sd}_{y,x}$ is the algebraic co
 **Theorem (the reversed triple).** For all $x,y,z,w\in A$,
 
 $$
-\varphi\bigl(\{x,y,z\},w\bigr)=\varphi\bigl(z,\{y,x,w\}\bigr).
+\digamma_{\mathrm{map}}\bigl(\{x,y,z\},w\bigr)=\digamma_{\mathrm{map}}\bigl(z,\{y,x,w\}\bigr).
 $$
 
 The triple is reversible: the pairing of $\{x,y,z\}$ with $w$ equals the pairing of $z$ with the triple $\{y,x,w\}$, and this is the statement that the operator of the pair $(x,y)$ has the operator of the reversed pair $(y,x)$ as its adjoint.
 
-**Proof.** The identity is the adjoint theorem written with the ternary product: $\varphi(xy^{*}z,w)=\tau(xy^{*}zw^{*})=\tau(zw^{*}xy^{*})=\varphi(z,yx^{*}w)$.
+**Proof.** The identity is the adjoint theorem written with the ternary product: $\digamma_{\mathrm{map}}(xy^{*}z,w)=\tau(xy^{*}zw^{*})=\tau(zw^{*}xy^{*})=\digamma_{\mathrm{map}}(z,yx^{*}w)$.
 
 **Remark.** The reversibility is the symmetry that the $J^{*}$-triples carry: the operator of a pair has the operator of the reversed pair as its adjoint, so the family of the pair operators is closed under the adjoint, and the first slot of the triple may be exchanged with the outside element against the pairing at the cost of swapping the two middle parameters. Read on the derived product, the reversal is $y\star x=(x\star y)^{*}$: the derived product of the swapped pair is the star of the derived product of the pair, and it is this identity that the self-adjointness criterion of the preceding section turns into a condition on the pair.
 
@@ -136,7 +136,7 @@ so every operator of a pair is self-adjoint, in agreement with the criterion, an
 
 ### The Complex Matrices
 
-Let $A=M_n(\mathbb{C})$ with the conjugate transpose, $\varsigma$ the conjugation, $\tau$ the trace and $\varphi(X,Y)=\operatorname{tr}(XY^{*})$. The ternary operator of the pair $(X,Y)$ is $\mathrm{Sd}_{X,Y}(Z)=XY^{*}Z$, its adjoint is $\mathrm{Sd}_{X,Y}^{\dagger}=\mathrm{Sd}_{Y,X}$, and the criterion reads
+Let $A=M_n(\mathbb{C})$ with the conjugate transpose, $\varsigma$ the conjugation, $\tau$ the trace and $\digamma_{\mathrm{map}}(X,Y)=\operatorname{tr}(XY^{*})$. The ternary operator of the pair $(X,Y)$ is $\mathrm{Sd}_{X,Y}(Z)=XY^{*}Z$, its adjoint is $\mathrm{Sd}_{X,Y}^{\dagger}=\mathrm{Sd}_{Y,X}$, and the criterion reads
 
 $$
 \mathrm{Sd}_{X,Y}^{\dagger}=\mathrm{Sd}_{X,Y}\quad\Longleftrightarrow\quad XY^{*}=YX^{*} .
@@ -150,7 +150,7 @@ Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the quaternioni
 
 ## Summary
 
-The ternary operator $\mathrm{Sd}_{x,y}(z)=xy^{*}z$ of a pair is $R$-linear, and its adjoint for the pairing $\varphi(x,y)=\tau(xy^{*})$ is the ternary operator of the swapped pair, $\mathrm{Sd}_{x,y}^{\dagger}=\mathrm{Sd}_{y,x}$; equivalently $\varphi(\{x,y,z\},w)=\varphi(z,\{y,x,w\})$, the reversal of the triple. The adjoint operation is of order two and exchanges the two parities of the parameters, and it is the star on the derived product in the factorisation $\mathrm{Sd}_{x,y}=L_{x\star y}R_{1}$, so that $\mathrm{Sd}_{x,y}^{\dagger}=L_{(x\star y)^{*}}R_{1}$. The diagonal $\mathrm{Sd}_{x,x}$ is self-adjoint for every element, which is the self-adjointness of the quadratic representation of the Jordan theory, and the operator of a general pair is self-adjoint exactly when the derived product of the pair is Hermitian; the criterion is not automatic, the pair $(E_{11},E_{21})$ of $M_2(\mathbb{C})$ being the smallest witness. The adjoint permutes the three readings of the ternary product among themselves and leaves the family of the pair operators stable, in contrast with the conjugate left multiplication, whose adjoint does not stay in the one-sided family. In the two degenerations of the involution the article reduces to the bilinear case on the one hand and to the commutative case on the other, where every element is Hermitian and every operator of a pair is self-adjoint.
+The ternary operator $\mathrm{Sd}_{x,y}(z)=xy^{*}z$ of a pair is $R$-linear, and its adjoint for the pairing $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$ is the ternary operator of the swapped pair, $\mathrm{Sd}_{x,y}^{\dagger}=\mathrm{Sd}_{y,x}$; equivalently $\digamma_{\mathrm{map}}(\{x,y,z\},w)=\digamma_{\mathrm{map}}(z,\{y,x,w\})$, the reversal of the triple. The adjoint operation is of order two and exchanges the two parities of the parameters, and it is the star on the derived product in the factorisation $\mathrm{Sd}_{x,y}=L_{x\star y}R_{1}$, so that $\mathrm{Sd}_{x,y}^{\dagger}=L_{(x\star y)^{*}}R_{1}$. The diagonal $\mathrm{Sd}_{x,x}$ is self-adjoint for every element, which is the self-adjointness of the quadratic representation of the Jordan theory, and the operator of a general pair is self-adjoint exactly when the derived product of the pair is Hermitian; the criterion is not automatic, the pair $(E_{11},E_{21})$ of $M_2(\mathbb{C})$ being the smallest witness. The adjoint permutes the three readings of the ternary product among themselves and leaves the family of the pair operators stable, in contrast with the conjugate left multiplication, whose adjoint does not stay in the one-sided family. In the two degenerations of the involution the article reduces to the bilinear case on the one hand and to the commutative case on the other, where every element is Hermitian and every operator of a pair is self-adjoint.
 
 ## Summary of Notation
 
@@ -158,7 +158,7 @@ The ternary operator $\mathrm{Sd}_{x,y}(z)=xy^{*}z$ of a pair is $R$-linear, and
 |---|---|
 | $\mathrm{Sd}_{x,y}(z)=xy^{*}z=\{x,y,z\}$ | the ternary operator of the pair $(x,y)$, $R$-linear |
 | $\mathrm{Sd}_{x,y}^{\dagger}=\mathrm{Sd}_{y,x}$ | the adjoint swaps the two parameters |
-| $\varphi(\{x,y,z\},w)=\varphi(z,\{y,x,w\})$ | the reversal of the triple |
+| $\digamma_{\mathrm{map}}(\{x,y,z\},w)=\digamma_{\mathrm{map}}(z,\{y,x,w\})$ | the reversal of the triple |
 | $\mathrm{Sd}_{x,x}^{\dagger}=\mathrm{Sd}_{x,x}=L_{x\star x}R_{1}$ | the diagonal is self-adjoint: the quadratic representation |
 | $\mathrm{Sd}_{x,y}^{\dagger}=\mathrm{Sd}_{x,y}\iff(x\star y)^{*}=x\star y$ | the Hermitian criterion |
 | $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$ | the adjoint of the two-sided operator |

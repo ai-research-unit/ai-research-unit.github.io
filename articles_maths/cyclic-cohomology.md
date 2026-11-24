@@ -19,27 +19,27 @@ $$
 C^n(A,A^*) = \operatorname{Hom}_k(A^{\otimes n},A^*) \cong \operatorname{Hom}_k(A^{\otimes(n+1)},k) ,
 $$
 
-an element $\phi$ of which is written as a multilinear functional $\phi(a_0,\dots,a_n)$; the **Hochschild coboundary** $b:C^n\to C^{n+1}$ is
+an element $\digamma_{\mathrm{map}}$ of which is written as a multilinear functional $\digamma_{\mathrm{map}}(a_0,\dots,a_n)$; the **Hochschild coboundary** $b:C^n\to C^{n+1}$ is
 
 $$
-(b\phi)(a_0,\dots,a_{n+1}) = \sum_{i=0}^{n}(-1)^i\phi(a_0,\dots,a_ia_{i+1},\dots,a_{n+1})+(-1)^{n+1}\phi(a_{n+1}a_0,a_1,\dots,a_n) .
+(b\digamma_{\mathrm{map}})(a_0,\dots,a_{n+1}) = \sum_{i=0}^{n}(-1)^i\digamma_{\mathrm{map}}(a_0,\dots,a_ia_{i+1},\dots,a_{n+1})+(-1)^{n+1}\digamma_{\mathrm{map}}(a_{n+1}a_0,a_1,\dots,a_n) .
 $$
 
 The identity $b^2=0$ holds; the **Hochschild cohomology** is $HH^n(A,A^*)=\ker b/\operatorname{im}b$. The complex is the dual of the Hochschild chain complex with coefficients in $A$, which is the object of *Cyclic Homology*.
 
-**Proposition (degree zero and one).** $HH^0(A,A^*)$ is the space of **traces**, the linear functionals $\tau$ with $\tau(a_0a_1)=\tau(a_1a_0)$; and $HH^1(A,A^*)$ is the space of derivations of $A$ into $A^*$ modulo inner derivations, the identification sending $\phi$ to the derivation $a\mapsto\phi(\,\cdot\,,a)-$ (the dual of the usual Hochschild identification).
+**Proposition (degree zero and one).** $HH^0(A,A^*)$ is the space of **traces**, the linear functionals $\tau$ with $\tau(a_0a_1)=\tau(a_1a_0)$; and $HH^1(A,A^*)$ is the space of derivations of $A$ into $A^*$ modulo inner derivations, the identification sending $\digamma_{\mathrm{map}}$ to the derivation $a\mapsto\digamma_{\mathrm{map}}(\,\cdot\,,a)-$ (the dual of the usual Hochschild identification).
 
-*Proof.* The formula for $b$ in degree $0$ is $(b\tau)(a_0,a_1)=\tau(a_0a_1)-\tau(a_1a_0)$, so $b\tau=0$ is exactly the trace condition. For degree $1$ the identity $(b\phi)(a_0,a_1,a_2)=\phi(a_0a_1,a_2)-\phi(a_0,a_1a_2)+\phi(a_2a_0,a_1)$ is the cocycle condition, which is the Leibniz rule for the associated derivation.
+*Proof.* The formula for $b$ in degree $0$ is $(b\tau)(a_0,a_1)=\tau(a_0a_1)-\tau(a_1a_0)$, so $b\tau=0$ is exactly the trace condition. For degree $1$ the identity $(b\digamma_{\mathrm{map}})(a_0,a_1,a_2)=\digamma_{\mathrm{map}}(a_0a_1,a_2)-\digamma_{\mathrm{map}}(a_0,a_1a_2)+\digamma_{\mathrm{map}}(a_2a_0,a_1)$ is the cocycle condition, which is the Leibniz rule for the associated derivation.
 
 ### Cyclicity
 
 The cyclic group $\mathbb{Z}/(n+1)$ acts on $C^n$ by
 
 $$
-(\lambda\phi)(a_0,\dots,a_n) = (-1)^n\phi(a_n,a_0,\dots,a_{n-1}) .
+(\lambda\digamma_{\mathrm{map}})(a_0,\dots,a_n) = (-1)^n\digamma_{\mathrm{map}}(a_n,a_0,\dots,a_{n-1}) .
 $$
 
-A cochain is **cyclic** if $\lambda\phi=\phi$; the cyclic cochains form the subspace $C^n_\lambda(A,A^*)$. The sign is chosen so that the Hochschild coboundary preserves cyclicity, $b\lambda=\lambda b$, hence $b$ restricts to a coboundary on the cyclic subcomplex:
+A cochain is **cyclic** if $\lambda\digamma_{\mathrm{map}}=\digamma_{\mathrm{map}}$; the cyclic cochains form the subspace $C^n_\lambda(A,A^*)$. The sign is chosen so that the Hochschild coboundary preserves cyclicity, $b\lambda=\lambda b$, hence $b$ restricts to a coboundary on the cyclic subcomplex:
 
 $$
 \cdots\to C^{n-1}_\lambda\xrightarrow{b}C^n_\lambda\xrightarrow{b}C^{n+1}_\lambda\to\cdots , \qquad b^2=0 .
@@ -73,13 +73,13 @@ is a cyclic $1$-cocycle: cyclicity follows from $df_0f_1=d(f_0f_1)-f_0df_1$ and 
 
 ### The Operator $B$
 
-Besides the Hochschild coboundary, the cyclic theory uses Connes' **boundary operator** $B:C^{n}\to C^{n-1}$, defined as the composition of the antisymmetrisation $\operatorname{Alt}$, given on a cochain $\phi$ of degree $n-1$ by
+Besides the Hochschild coboundary, the cyclic theory uses Connes' **boundary operator** $B:C^{n}\to C^{n-1}$, defined as the composition of the antisymmetrisation $\operatorname{Alt}$, given on a cochain $\digamma_{\mathrm{map}}$ of degree $n-1$ by
 
 $$
-(\operatorname{Alt}\phi)(a_0,\dots,a_{n-1}) = \sum_{j=0}^{n-1}(-1)^{(n-1)j}\phi(a_j,a_{j+1},\dots,a_{n-1},a_0,\dots,a_{j-1}) ,
+(\operatorname{Alt}\digamma_{\mathrm{map}})(a_0,\dots,a_{n-1}) = \sum_{j=0}^{n-1}(-1)^{(n-1)j}\digamma_{\mathrm{map}}(a_j,a_{j+1},\dots,a_{n-1},a_0,\dots,a_{j-1}) ,
 $$
 
-with the operator $B_0\phi(a_0,\dots,a_{n-1})=\phi(1,a_0,\dots,a_{n-1})-(-1)^{n}\phi(a_0,\dots,a_{n-1},1)$, in the form $B=\operatorname{Alt}\circ B_0$ up to the conventional normalisation.
+with the operator $B_0\digamma_{\mathrm{map}}(a_0,\dots,a_{n-1})=\digamma_{\mathrm{map}}(1,a_0,\dots,a_{n-1})-(-1)^{n}\digamma_{\mathrm{map}}(a_0,\dots,a_{n-1},1)$, in the form $B=\operatorname{Alt}\circ B_0$ up to the conventional normalisation.
 
 **Proposition.** The operators satisfy $b^2=0$, $B^2=0$ and $bB+Bb=0$.
 
@@ -181,7 +181,7 @@ from the $K$-theory of $A$ to the cyclic homology and from the $K$-cohomology to
 
 ## Summary
 
-Cyclic cohomology is built from the Hochschild cochain complex $C^n(A,A^*)=\operatorname{Hom}_k(A^{\otimes(n+1)},k)$ with the coboundary $(b\phi)(a_0,\dots,a_{n+1})=\sum_i(-1)^i\phi(a_0,\dots,a_ia_{i+1},\dots,a_{n+1})+(-1)^{n+1}\phi(a_{n+1}a_0,\dots,a_n)$ and the cyclic subcomplex $C^n_\lambda$ of cochains fixed by $\lambda\phi(a_0,\dots,a_n)=(-1)^n\phi(a_n,a_0,\dots,a_{n-1})$; the cohomology $HC^n(A)$ of the cyclic complex, over a field of characteristic zero, is the cyclic cohomology, and it is also the cohomology of the total complex of the $(b,B)$-bicomplex with $B^2=0$ and $bB+Bb=0$. In degree zero it is the space of traces; the periodicity operator $S$ raises the degree by two and the Connes exact sequence $\cdots\to HC^{n-1}\xrightarrow{S}HC^{n+1}\xrightarrow{I}HH^{n+1}\xrightarrow{B}HC^n\to\cdots$ relates it to Hochschild cohomology, with the dual arrows to the homology sequence of *Cyclic Homology*. Cyclic cohomology pairs with $K$-theory: a trace pairs with $K_0$ by $\langle[\tau],[e]\rangle=\tau_N(e)$ and a cyclic $1$-cocycle pairs with $K_1$ by $\langle[\tau],[u]\rangle=\tau_N(u^{-1},u)$, the two low cases of the Chern character $ch:K_*(A)\to HC_*(A)$ and its dual; in the commutative case the pairing is the integration of a de Rham current, and in the non-commutative case it is the index of a Fredholm operator, the Fredholm module's Connes–Chern character supplying the cocycle. The homology theory, the cyclic bicomplex and the trace map are *Cyclic Homology* (Part I); the $K$-theory of rings is *K-Theory of Rings*; the index theory, the spectral triples and the local index formula are Part II's.
+Cyclic cohomology is built from the Hochschild cochain complex $C^n(A,A^*)=\operatorname{Hom}_k(A^{\otimes(n+1)},k)$ with the coboundary $(b\digamma_{\mathrm{map}})(a_0,\dots,a_{n+1})=\sum_i(-1)^i\digamma_{\mathrm{map}}(a_0,\dots,a_ia_{i+1},\dots,a_{n+1})+(-1)^{n+1}\digamma_{\mathrm{map}}(a_{n+1}a_0,\dots,a_n)$ and the cyclic subcomplex $C^n_\lambda$ of cochains fixed by $\lambda\digamma_{\mathrm{map}}(a_0,\dots,a_n)=(-1)^n\digamma_{\mathrm{map}}(a_n,a_0,\dots,a_{n-1})$; the cohomology $HC^n(A)$ of the cyclic complex, over a field of characteristic zero, is the cyclic cohomology, and it is also the cohomology of the total complex of the $(b,B)$-bicomplex with $B^2=0$ and $bB+Bb=0$. In degree zero it is the space of traces; the periodicity operator $S$ raises the degree by two and the Connes exact sequence $\cdots\to HC^{n-1}\xrightarrow{S}HC^{n+1}\xrightarrow{I}HH^{n+1}\xrightarrow{B}HC^n\to\cdots$ relates it to Hochschild cohomology, with the dual arrows to the homology sequence of *Cyclic Homology*. Cyclic cohomology pairs with $K$-theory: a trace pairs with $K_0$ by $\langle[\tau],[e]\rangle=\tau_N(e)$ and a cyclic $1$-cocycle pairs with $K_1$ by $\langle[\tau],[u]\rangle=\tau_N(u^{-1},u)$, the two low cases of the Chern character $ch:K_*(A)\to HC_*(A)$ and its dual; in the commutative case the pairing is the integration of a de Rham current, and in the non-commutative case it is the index of a Fredholm operator, the Fredholm module's Connes–Chern character supplying the cocycle. The homology theory, the cyclic bicomplex and the trace map are *Cyclic Homology* (Part I); the $K$-theory of rings is *K-Theory of Rings*; the index theory, the spectral triples and the local index formula are Part II's.
 
 ## Summary of Notation
 
@@ -192,7 +192,7 @@ Cyclic cohomology is built from the Hochschild cochain complex $C^n(A,A^*)=\oper
 | $C^n(A,A^*)$ | Hochschild cochains, functionals on $A^{\otimes(n+1)}$ |
 | $b$ | Hochschild coboundary, $b^2=0$ |
 | $HH^n(A,A^*)$ | Hochschild cohomology |
-| $\lambda$ | Cyclic operator $(\lambda\phi)(a_0,\dots,a_n)=(-1)^n\phi(a_n,\dots,a_{n-1})$ |
+| $\lambda$ | Cyclic operator $(\lambda\digamma_{\mathrm{map}})(a_0,\dots,a_n)=(-1)^n\digamma_{\mathrm{map}}(a_n,\dots,a_{n-1})$ |
 | $C^n_\lambda(A,A^*)$ | Cyclic cochains |
 | $B$ | Connes' boundary, $B^2=0$, $bB+Bb=0$ |
 | $HC^n(A)$ | Cyclic cohomology |

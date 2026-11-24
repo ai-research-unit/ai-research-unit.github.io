@@ -356,10 +356,10 @@ $$
 \int_a^b f \frac{dg}{dx} = [f g]_a^b - \int_a^b \frac{df}{dx} g.
 $$
 
-**Substitution.** If $\phi$ is continuously differentiable and $f$ is continuous, then
+**Substitution.** If $\digamma_{\mathrm{map}}$ is continuously differentiable and $f$ is continuous, then
 
 $$
-\int_{\phi(a)}^{\phi(b)} f(u) \, du = \int_a^b f(\phi(c)) \frac{d\phi}{dx}(c) \, dc.
+\int_{\digamma_{\mathrm{map}}(a)}^{\digamma_{\mathrm{map}}(b)} f(u) \, du = \int_a^b f(\digamma_{\mathrm{map}}(c)) \frac{d\digamma_{\mathrm{map}}}{dx}(c) \, dc.
 $$
 
 ### Improper Integrals

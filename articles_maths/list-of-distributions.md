@@ -13,8 +13,8 @@ This article lists the distributions and the generalised functions the corpus in
 | a distribution of finite order | the dual of $C^k_c$ for some $k$; the smallest $k$ is the order | *Distributions and Fundamental Solutions* |
 | a compactly supported distribution $u \in \mathcal E'(\Omega)$ | the dual of $C^\infty(\Omega)$; convolution with every distribution is defined | *Distributions and Fundamental Solutions* |
 | a tempered distribution $u \in \mathcal S'(\mathbb R^n)$ | the Schwartz class $\mathcal S(\mathbb R^n)$; the Fourier transform is defined | *Distributions and Fundamental Solutions*; *Fourier Analysis on Euclidean Spaces* |
-| a distribution of function type | a locally integrable function $f$, acting by $\varphi \mapsto \int f\varphi$; the embedding of $L^1_{loc}$ into $\mathcal D'$ | *Distributions and Fundamental Solutions* |
-| a measure as a distribution | a Radon measure, acting by $\varphi \mapsto \int\varphi\,d\mu$; the continuous dual of $C_0$ is a subspace of $\mathcal D'$ | *Distributions and Fundamental Solutions*; *Locally Compact Groups and Haar Measure* |
+| a distribution of function type | a locally integrable function $f$, acting by $\digamma_{\mathrm{map}} \mapsto \int f\digamma_{\mathrm{map}}$; the embedding of $L^1_{loc}$ into $\mathcal D'$ | *Distributions and Fundamental Solutions* |
+| a measure as a distribution | a Radon measure, acting by $\digamma_{\mathrm{map}} \mapsto \int\digamma_{\mathrm{map}}\,d\mu$; the continuous dual of $C_0$ is a subspace of $\mathcal D'$ | *Distributions and Fundamental Solutions*; *Locally Compact Groups and Haar Measure* |
 | a positive distribution | the distribution associated to the measure it defines by the Riesz representation theorem | *Distributions and Fundamental Solutions* |
 | the Schwartz kernel $K \in \mathcal D'(Y \times X)$ | the distribution representing a continuous operator $T : \mathcal D(X) \to \mathcal D'(Y)$; unique | *The Schwartz Kernel Theorem* |
 
@@ -22,11 +22,11 @@ This article lists the distributions and the generalised functions the corpus in
 
 | Object | Its definition, and the operations it supports | Introduced in |
 |---|---|---|
-| the delta distribution $\delta$ | $\langle\delta,\varphi\rangle = \varphi(0)$; differentiable, the convolution identity, Fourier transform $1$ | *Distributions and Fundamental Solutions* |
-| the translated delta $\delta_a$ | $\langle\delta_a,\varphi\rangle = \varphi(a)$; the derivative of the Heaviside step at $a$ | *Distributions and Fundamental Solutions* |
-| the derivatives $\partial^\alpha\delta$ | $\langle\partial^\alpha\delta,\varphi\rangle = (-1)^{|\alpha|}\partial^\alpha\varphi(0)$; the only distributions supported at a point are their finite combinations | *Distributions and Fundamental Solutions* |
+| the delta distribution $\delta$ | $\langle\delta,\digamma_{\mathrm{map}}\rangle = \digamma_{\mathrm{map}}(0)$; differentiable, the convolution identity, Fourier transform $1$ | *Distributions and Fundamental Solutions* |
+| the translated delta $\delta_a$ | $\langle\delta_a,\digamma_{\mathrm{map}}\rangle = \digamma_{\mathrm{map}}(a)$; the derivative of the Heaviside step at $a$ | *Distributions and Fundamental Solutions* |
+| the derivatives $\partial^\alpha\delta$ | $\langle\partial^\alpha\delta,\digamma_{\mathrm{map}}\rangle = (-1)^{|\alpha|}\partial^\alpha\digamma_{\mathrm{map}}(0)$; the only distributions supported at a point are their finite combinations | *Distributions and Fundamental Solutions* |
 | the Heaviside function $H$ | $H(x) = \mathbf 1_{x>0}$ as a distribution; its derivative is $\delta$ | *Distributions and Fundamental Solutions* |
-| the principal value $\mathrm{pv}\,\frac1x$ | $\langle \mathrm{pv}\,\frac1x,\varphi\rangle = \lim_{\epsilon\to0}\int_{\lvert x\rvert>\epsilon}\frac{\varphi(x)}{x}dx$; the distributional derivative of $\log\lvert x\rvert$, with Fourier transform $-\pi i\,\mathrm{sgn}$ | *Distributions and Fundamental Solutions*; *Fourier Analysis on Euclidean Spaces* |
+| the principal value $\mathrm{pv}\,\frac1x$ | $\langle \mathrm{pv}\,\frac1x,\digamma_{\mathrm{map}}\rangle = \lim_{\epsilon\to0}\int_{\lvert x\rvert>\epsilon}\frac{\digamma_{\mathrm{map}}(x)}{x}dx$; the distributional derivative of $\log\lvert x\rvert$, with Fourier transform $-\pi i\,\mathrm{sgn}$ | *Distributions and Fundamental Solutions*; *Fourier Analysis on Euclidean Spaces* |
 | the finite part $\mathrm{pf}\,\frac1{x^2}$ | the Hadamard regularisation of the divergent integral; it supports a derivative and a convolution with the Hilbert kernel | *Distributions and Fundamental Solutions* |
 | the delta distribution of a hypercomplex system | the identity of the convolution algebra of the split-complex, dual-number, quaternion or biquaternion plane | *Split-Complex Harmonic Analysis*; *Dual-Numbers Harmonic Analysis*; *Quaternion Harmonic Analysis*; *Biquaternion Integration* |
 | the delta distribution on a locally compact group | the identity $\delta_e$ of the convolution algebra of measures, together with the Haar measure | *Harmonic Analysis on Groups* |
@@ -35,8 +35,8 @@ This article lists the distributions and the generalised functions the corpus in
 
 | Object | Its definition, and the operations it supports | Introduced in |
 |---|---|---|
-| the surface delta $\delta_S$ (the single layer of unit density) | $\langle\delta_S,\psi\rangle = \int_S\psi\,dS$; equals $\lvert\nabla\varphi\rvert\,\delta\circ\varphi$ for a defining function $\varphi$ of $S$ | *Distributions on Surfaces, Layers, and Jump Conditions* |
-| the normal layer $n\,\delta_S$ | the gradient of the Heaviside function of a defining function, $\nabla H(\varphi)$ | *Distributions on Surfaces, Layers, and Jump Conditions* |
+| the surface delta $\delta_S$ (the single layer of unit density) | $\langle\delta_S,Ξ_{\mathrm{wfn}}\rangle = \int_SΞ_{\mathrm{wfn}}\,dS$; equals $\lvert\nabla\digamma_{\mathrm{map}}\rvert\,\delta\circ\digamma_{\mathrm{map}}$ for a defining function $\digamma_{\mathrm{map}}$ of $S$ | *Distributions on Surfaces, Layers, and Jump Conditions* |
+| the normal layer $n\,\delta_S$ | the gradient of the Heaviside function of a defining function, $\nabla H(\digamma_{\mathrm{map}})$ | *Distributions on Surfaces, Layers, and Jump Conditions* |
 | the double layer $\partial/\partial n\,\delta_S$ | the normal derivative of the surface delta; a layer of order $1$, the density of a normal dipole sheet | *Distributions on Surfaces, Layers, and Jump Conditions* |
 | the layer of order $k$, $\partial^k/\partial n^k(g\delta_S)$ | a distribution supported on $S$; every distribution supported on a hypersurface is locally a finite sum of layers | *Distributions on Surfaces, Layers, and Jump Conditions* |
 | the singular part of the divergence, $(n\cdot[A])\,\delta_S$ | the single layer produced by a discontinuous vector field; the surface charge density | *Distributions on Surfaces, Layers, and Jump Conditions* |
@@ -47,12 +47,12 @@ This article lists the distributions and the generalised functions the corpus in
 
 | Object | The operation it supports, and the limit of that operation | Introduced in |
 |---|---|---|
-| differentiation of a distribution | $\langle u',\varphi\rangle = -\langle u,\varphi'\rangle$; defined for every distribution and of no higher order than the distribution | *Distributions and Fundamental Solutions* |
-| multiplication by a smooth function | $\langle au,\varphi\rangle = \langle u,a\varphi\rangle$; defined for $a \in C^\infty$ | *Distributions and Fundamental Solutions* |
+| differentiation of a distribution | $\langle u',\digamma_{\mathrm{map}}\rangle = -\langle u,\digamma_{\mathrm{map}}'\rangle$; defined for every distribution and of no higher order than the distribution | *Distributions and Fundamental Solutions* |
+| multiplication by a smooth function | $\langle au,\digamma_{\mathrm{map}}\rangle = \langle u,a\digamma_{\mathrm{map}}\rangle$; defined for $a \in C^\infty$ | *Distributions and Fundamental Solutions* |
 | the product of two distributions | defined only when their wave front sets do not meet in a forbidden way; $\delta\cdot\delta$ and $\delta\cdot\mathrm{pv}\frac1x$ are not defined | *Distributions and Fundamental Solutions*; *Microlocal Analysis* |
-| convolution with a test function | $u * \varphi$ is a smooth function, a mollification and approximation of $u$ | *Distributions and Fundamental Solutions* |
+| convolution with a test function | $u * \digamma_{\mathrm{map}}$ is a smooth function, a mollification and approximation of $u$ | *Distributions and Fundamental Solutions* |
 | convolution of two distributions | defined when one has compact support; it is commutative only under that hypothesis | *Distributions and Fundamental Solutions* |
-| the Fourier transform of a tempered distribution | $\langle\vec u,\varphi\rangle = \langle u,\mathcal F\\varphi\rangle$; exchanges differentiation and multiplication | *Distributions and Fundamental Solutions*; *Fourier Analysis on Euclidean Spaces* |
+| the Fourier transform of a tempered distribution | $\langle\vec u,\digamma_{\mathrm{map}}\rangle = \langle u,\mathcal F\\digamma_{\mathrm{map}}\rangle$; exchanges differentiation and multiplication | *Distributions and Fundamental Solutions*; *Fourier Analysis on Euclidean Spaces* |
 | restriction and pullback | defined under a transversality condition on the wave front set; the trace on a boundary needs it | *Distributions and Fundamental Solutions*; *Microlocal Analysis*; *Distributions on Surfaces, Layers, and Jump Conditions* |
 | the wave front set $\operatorname{WF}(u)$ | the refined singular support: the directions in which $u$ fails to be smooth; the product and the pullback are governed by it | *Microlocal Analysis* |
 | the order and the singular support | the structure theorem: a distribution of finite order is a sum of derivatives of measures | *Distributions and Fundamental Solutions* |
@@ -104,7 +104,7 @@ The objects are named by their standard symbols; the tables use the following.
 |---|---|
 | $\mathcal D$, $\mathcal E$, $\mathcal S$ | test functions, smooth functions, Schwartz class |
 | $\mathcal D'$, $\mathcal E'$, $\mathcal S'$ | distributions, compactly supported and tempered distributions |
-| $\langle u,\varphi\rangle$ | the duality pairing |
+| $\langle u,\digamma_{\mathrm{map}}\rangle$ | the duality pairing |
 | $\delta$, $\delta_a$, $\partial^\alpha\delta$ | the delta distribution, its translate, its derivatives |
 | $H$, $\mathrm{pv}\frac1x$, $\mathrm{pf}\frac1{x^2}$ | Heaviside function, principal value, finite part |
 | $\vec u$ | the Fourier transform of a tempered distribution |

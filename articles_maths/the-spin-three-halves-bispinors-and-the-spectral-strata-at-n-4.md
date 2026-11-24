@@ -8,23 +8,23 @@
 
 **It assumes** *The Fierz–Kofink Identities and the Classification of Spinors at $n=4$* and *The Spin-$\tfrac32$ Bispinors and the Rank Strata at $n=4$*. The row at order two is *The Spin-$\tfrac12$ Bispinors and the Spectral Strata*.
 
-**The result in one line.** A pure bispinor has the spectrum $\{\omega(\bar\chi,\psi),0,0,0\}$, a traceless bispinor the spectrum $\{\pm\alpha,\pm\beta\}$, and a general bispinor an arbitrary spectrum of four values.
+**The result in one line.** A pure bispinor has the spectrum $\{\omega(\bar\chi,Ξ_{\mathrm{wfn}}),0,0,0\}$, a traceless bispinor the spectrum $\{\pm\alpha,\pm\beta\}$, and a general bispinor an arbitrary spectrum of four values.
 
 **Boundaries.** The article treats the spectrum as a multiset; the eigenvectors and the Jordan structure beyond the spectrum are treated in the rank articles.
 
 ## The Pure Bispinors
 
-**Proposition.** If $X=\psi\bar\chi^{\dagger}$ is a rank-one bispinor then $X^{2}=\omega(\bar\chi,\psi)X$, so the spectrum is $\{\omega(\bar\chi,\psi),0,0,0\}$ and the minimal polynomial divides $\lambda(\lambda-\omega)$.
+**Proposition.** If $X=Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}$ is a rank-one bispinor then $X^{2}=\omega(\bar\chi,Ξ_{\mathrm{wfn}})X$, so the spectrum is $\{\omega(\bar\chi,Ξ_{\mathrm{wfn}}),0,0,0\}$ and the minimal polynomial divides $\lambda(\lambda-\omega)$.
 
-*Proof.* $XX=\psi(\bar\chi^{\dagger}\psi)\bar\chi^{\dagger}=\omega(\bar\chi,\psi)X$ by the Fierz identity; a rank-one matrix has a one-dimensional image and a three-dimensional kernel, so three eigenvalues are zero and the fourth is the trace.
+*Proof.* $XX=Ξ_{\mathrm{wfn}}(\bar\chi^{\dagger}Ξ_{\mathrm{wfn}})\bar\chi^{\dagger}=\omega(\bar\chi,Ξ_{\mathrm{wfn}})X$ by the Fierz identity; a rank-one matrix has a one-dimensional image and a three-dimensional kernel, so three eigenvalues are zero and the fourth is the trace.
 
-**Corollary.** The pure bispinor is a projection up to a scalar exactly when $\omega(\bar\chi,\psi)\neq0$, and it is nilpotent exactly when $\omega(\bar\chi,\psi)=0$.
+**Corollary.** The pure bispinor is a projection up to a scalar exactly when $\omega(\bar\chi,Ξ_{\mathrm{wfn}})\neq0$, and it is nilpotent exactly when $\omega(\bar\chi,Ξ_{\mathrm{wfn}})=0$.
 
-*Proof.* $X^{2}=cX$ with $c=\omega(\bar\chi,\psi)$; if $c=0$ the matrix is nilpotent of index two.
+*Proof.* $X^{2}=cX$ with $c=\omega(\bar\chi,Ξ_{\mathrm{wfn}})$; if $c=0$ the matrix is nilpotent of index two.
 
 **Corollary.** The trace of a pure bispinor is the pairing of its two factors, and the determinant vanishes.
 
-*Proof.* The trace of $X$ is $\sum_i\psi_i\bar\chi_i=\omega(\bar\chi,\psi)$; the rank is one, so the determinant is zero.
+*Proof.* The trace of $X$ is $\sum_iΞ_{\mathrm{wfn},i}\bar\chi_i=\omega(\bar\chi,Ξ_{\mathrm{wfn}})$; the rank is one, so the determinant is zero.
 
 **The reading.** The pure spectrum has one nonzero eigenvalue and a triple zero, and the nonzero eigenvalue is the pairing of the spinors.
 
@@ -88,7 +88,7 @@
 
 **Proposition.** Every element of a minimal left ideal has at least three vanishing eigenvalues, and the elements of rank one have exactly three.
 
-*Proof.* An element of the ideal is $\psi\bar\chi^{\dagger}$, of rank one for nonzero factors and zero at the origin; a rank-one matrix has three zero eigenvalues.
+*Proof.* An element of the ideal is $Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}$, of rank one for nonzero factors and zero at the origin; a rank-one matrix has three zero eigenvalues.
 
 **Corollary.** The spectrum of a pure bispinor is the pairing of its factors together with three zeros, and the trace is that pairing.
 
@@ -116,7 +116,7 @@
 
 ## Summary
 
-A pure bispinor satisfies $X^{2}=\omega(\bar\chi,\psi)X$, so its spectrum is one pairing and three zeros. A traceless bispinor has the symmetric spectrum $\{\pm\alpha,\pm\beta\}$ and characteristic polynomial $\lambda^{4}-(\operatorname{tr}X^{2}/2)\lambda^{2}+\det X$. A general bispinor is a scalar shift of a traceless one.
+A pure bispinor satisfies $X^{2}=\omega(\bar\chi,Ξ_{\mathrm{wfn}})X$, so its spectrum is one pairing and three zeros. A traceless bispinor has the symmetric spectrum $\{\pm\alpha,\pm\beta\}$ and characteristic polynomial $\lambda^{4}-(\operatorname{tr}X^{2}/2)\lambda^{2}+\det X$. A general bispinor is a scalar shift of a traceless one.
 
 The multiplicity patterns are the five partitions of four, and they stratify the bispinor space. The carrier of label zero lies in the most degenerate pattern, the other carriers meet the generic one, and the ideals lie where at least three eigenvalues vanish.
 
@@ -124,7 +124,7 @@ The multiplicity patterns are the five partitions of four, and they stratify the
 
 | Symbol | Meaning |
 |---|---|
-| $\omega(\bar\chi,\psi)$ | the nonzero eigenvalue of a pure bispinor |
+| $\omega(\bar\chi,Ξ_{\mathrm{wfn}})$ | the nonzero eigenvalue of a pure bispinor |
 | $\{\pm\alpha,\pm\beta\}$ | the traceless spectrum |
 | $t\pm\alpha,t\pm\beta$ | the general spectrum |
 | $1+1+1+1,\dots,4$ | the multiplicity patterns |

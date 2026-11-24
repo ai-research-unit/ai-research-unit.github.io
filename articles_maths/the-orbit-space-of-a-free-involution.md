@@ -45,10 +45,10 @@ The neighbourhood is the two-fold analogue of the disjoint neighbourhoods of the
 **Definition.** A continuous surjection $p : E \to B$ is a **covering map** when every point of $B$ has an open neighbourhood $V$ that is **evenly covered**: there is a discrete space $F$ and a homeomorphism
 
 $$
-\boxed{\;\varphi : p^{-1}(V) \longrightarrow V \times F\;}
+\boxed{\;\digamma_{\mathrm{map}} : p^{-1}(V) \longrightarrow V \times F\;}
 $$
 
-over $V$, that is, $\mathrm{pr}_{V} \circ \varphi = p$ on $p^{-1}(V)$. The space $F$ is the **fibre**, and the covering is **$n$-fold** when $F$ has $n$ points. A **two-fold covering** is a covering with two points in the fibre.
+over $V$, that is, $\mathrm{pr}_{V} \circ \digamma_{\mathrm{map}} = p$ on $p^{-1}(V)$. The space $F$ is the **fibre**, and the covering is **$n$-fold** when $F$ has $n$ points. A **two-fold covering** is a covering with two points in the fibre.
 
 For a two-fold covering the preimage of an evenly covered $V$ is the disjoint union of two open sets each homeomorphic to $V$ under $p$. When $B$ is connected the fibre is the same finite cardinal over every point, and the covering is $n$-fold for a fixed $n$; the two-fold case is $n = 2$.
 
@@ -76,7 +76,7 @@ a disjoint union of two open sets, and $\pi$ restricts to a homeomorphism on eac
 
 ### Deck Transformations
 
-**Definition.** Let $p : E \to B$ be a covering. A **deck transformation** is a homeomorphism $\varphi : E \to E$ with $p \circ \varphi = p$. The deck transformations form a group under composition, the **deck group** of the covering.
+**Definition.** Let $p : E \to B$ be a covering. A **deck transformation** is a homeomorphism $\digamma_{\mathrm{map}} : E \to E$ with $p \circ \digamma_{\mathrm{map}} = p$. The deck transformations form a group under composition, the **deck group** of the covering.
 
 **Theorem.** Let $\sigma$ be a free continuous involution of a connected Hausdorff space $X$. Then the deck group of $\pi : X \to X/\sigma$ is $\{1, \sigma\} \cong \mathbb{Z}/2$, and it acts transitively on every fibre.
 
@@ -128,7 +128,7 @@ A free continuous involution of a Hausdorff space has, at each point, an open ne
 | evenly covered, fibre | $p^{-1}(V) \cong V \times F$ over $V$; $F$ the fibre |
 | two-fold covering | A covering with a two-point fibre |
 | $\pi : X \to X/\sigma$ | The orbit map; a two-fold covering for free $\sigma$ and Hausdorff $X$ |
-| deck transformation | Homeomorphism $\varphi$ of $E$ with $p\varphi = p$ |
+| deck transformation | Homeomorphism $\digamma_{\mathrm{map}}$ of $E$ with $p\digamma_{\mathrm{map}} = p$ |
 | deck group | The group of deck transformations; $\mathbb{Z}/2$ for the orbit map |
 | regular covering | Deck group acts transitively on each fibre |
 | $z \mapsto z^{2}$ | The squaring cover $S^{1} \to S^{1}$, the orbit map of $z \mapsto -z$ |

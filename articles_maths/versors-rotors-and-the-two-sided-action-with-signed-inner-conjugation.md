@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The generators of a Clifford algebra are vectors, and the elements built from them by multiplication are the versors. An even versor of unit norm is a **rotor**, and it acts on the space of vectors by the **two-sided operator** $v\mapsto RvR^{-1}$, which is a rotation; the same element acts on the spinor module of *Spin Representations and Clifford Modules with Inner Conjugation* by **left multiplication** $\psi\mapsto R\psi$. The two actions are not interchangeable. The two-sided operator is the vector action and carries the full parameter of the rotation; left multiplication is the spinor action and carries half that parameter, which is why a spinor changes sign under the full parameter while a vector returns to itself. This article derives both actions, proves the rotation formula from the closed form of a bivector, exhibits the failure of left multiplication on a vector and shows how the two-sided operator repairs it, and records the two-to-one cover of the rotation group that the two actions express.
+The generators of a Clifford algebra are vectors, and the elements built from them by multiplication are the versors. An even versor of unit norm is a **rotor**, and it acts on the space of vectors by the **two-sided operator** $v\mapsto RvR^{-1}$, which is a rotation; the same element acts on the spinor module of *Spin Representations and Clifford Modules with Inner Conjugation* by **left multiplication** $Ξ_{\mathrm{wfn}}\mapsto RΞ_{\mathrm{wfn}}$. The two actions are not interchangeable. The two-sided operator is the vector action and carries the full parameter of the rotation; left multiplication is the spinor action and carries half that parameter, which is why a spinor changes sign under the full parameter while a vector returns to itself. This article derives both actions, proves the rotation formula from the closed form of a bivector, exhibits the failure of left multiplication on a vector and shows how the two-sided operator repairs it, and records the two-to-one cover of the rotation group that the two actions express.
 
 The Clifford algebra, the fundamental relation and the parity grading are from *Clifford Algebras*; the grade subspaces, the grade projection and the outer and inner products are from *The Geometric Product and the Grade Decomposition*; the volume element and the star are from *The Volume Element, Duality and the Hodge Star*; the Clifford group, the signed inner conjugation action, the Clifford norm, the Pin and Spin groups and the Cartan–Dieudonné theorem are from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and the general family of two-sided operators, of which the two-sided operator is the inverse member, is from *The Family of Two-Sided Operators on a Clifford Algebra*; the identification of the bivectors with the orthogonal Lie algebra is from *The Clifford Algebra as a Lie Algebra*; the quaternion rotations are from *Quaternion Rotations and Reflections* and the rotation and reflection groups of the biquaternion algebra from *Biquaternion Rotations and Lorentz Transformations*. Nothing owned by those entries is re-derived. The base is a field of characteristic not $2$, with $q$ non-degenerate on a finite-dimensional space $V$ and $B$ its polar form; the conventions are $v^2=\mathfrak{Q}(v)\cdot1$, reversion $x^{r}$ and Clifford conjugation $x^{\natural}=\alpha(x^{r})$.
 
@@ -87,13 +87,13 @@ $$
 \boxed{\;R\,e_1\,R^{-1}=\cos\theta\,e_1+\sin\theta\,e_2\;},
 $$
 
-the plane rotation with parameter $\theta$; for $\varepsilon=-1$, with a real parameter $\varphi$ and the rotor $R=\cosh\tfrac{\varphi}{2}-\sinh\tfrac{\varphi}{2}B$,
+the plane rotation with parameter $\theta$; for $\varepsilon=-1$, with a real parameter $\digamma_{\mathrm{map}}$ and the rotor $R=\cosh\tfrac{\digamma_{\mathrm{map}}}{2}-\sinh\tfrac{\digamma_{\mathrm{map}}}{2}B$,
 
 $$
-R\,e_1\,R^{-1}=\cosh\varphi\,e_1+\sinh\varphi\,e_2,
+R\,e_1\,R^{-1}=\cosh\digamma_{\mathrm{map}}\,e_1+\sinh\digamma_{\mathrm{map}}\,e_2,
 $$
 
-the hyperbolic element of the plane with parameter $\varphi$. In both cases the rotor fixes every vector orthogonal to the plane.
+the hyperbolic element of the plane with parameter $\digamma_{\mathrm{map}}$. In both cases the rotor fixes every vector orthogonal to the plane.
 
 **Proof.** With $B=e_1e_2$ the anticommutation gives $Be_1=-\mathfrak{Q}(e_1)e_2=-e_2$, $e_1B=\mathfrak{Q}(e_1)e_2=e_2$, $Be_2=\mathfrak{Q}(e_2)e_1=\varepsilon e_1$ and $e_2B=-\mathfrak{Q}(e_2)e_1=-\varepsilon e_1$; hence
 
@@ -101,7 +101,7 @@ $$
 J_B(e_1)=\tfrac12(Be_1-e_1B)=-e_2, \qquad J_B(e_2)=\tfrac12(Be_2-e_2B)=\varepsilon e_1,
 $$
 
-and $J_B^2=-\varepsilon$ on the plane. For $v$ orthogonal to the plane the monomials $B$ and $v$ have disjoint index sets, so $Bv=vB$, the Koszul sign being $(-1)^{2\cdot1}=+1$, and $J_B(v)=0$. The closed form gives $RvR^{-1}$ as the polynomial $\cos\theta-\sin\theta J_B$ on the plane when $J_B^2=-1$ and $\cosh\varphi-\sinh\varphi J_B$ when $J_B^2=+1$, and substituting $J_B(e_1)=-e_2$ gives the two displays.
+and $J_B^2=-\varepsilon$ on the plane. For $v$ orthogonal to the plane the monomials $B$ and $v$ have disjoint index sets, so $Bv=vB$, the Koszul sign being $(-1)^{2\cdot1}=+1$, and $J_B(v)=0$. The closed form gives $RvR^{-1}$ as the polynomial $\cos\theta-\sin\theta J_B$ on the plane when $J_B^2=-1$ and $\cosh\digamma_{\mathrm{map}}-\sinh\digamma_{\mathrm{map}} J_B$ when $J_B^2=+1$, and substituting $J_B(e_1)=-e_2$ gives the two displays.
 
 **Corollary (the factor two).** The rotor $R=\cos\tfrac{\theta}{2}-\sin\tfrac{\theta}{2}B$ carries the parameter $\theta/2$ while producing the rotation with parameter $\theta$: replacing $\theta$ by $\theta+\pi$ gives the rotation with parameter $\theta+\pi$, and replacing $\theta$ by $\theta+2\pi$ gives the same rotation but the rotor $-R$.
 
@@ -112,10 +112,10 @@ and $J_B^2=-\varepsilon$ on the plane. For $v$ orthogonal to the plane the monom
 **Corollary (the hyperbolic plane).** Under the theorem with $\varepsilon=-1$, so that $B^2=+1$, the rotor is
 
 $$
-R=\cosh\tfrac{\varphi}{2}-B\sinh\tfrac{\varphi}{2}
+R=\cosh\tfrac{\digamma_{\mathrm{map}}}{2}-B\sinh\tfrac{\digamma_{\mathrm{map}}}{2}
 $$
 
-and the map $v\mapsto RvR^{-1}$ is the hyperbolic element of the plane of $B$ with parameter $\varphi$, the rotor carrying the parameter $\varphi/2$: it preserves the form, fixes the orthogonal complement of the plane, and $R(\varphi)^{-1}=R(-\varphi)$. A bivector of square $+1$ thus generates a boost where a bivector of square $-1$ generates a rotation, the two cases being distinguished by the sign of $\mathfrak{Q}(e_1)\mathfrak{Q}(e_2)$.
+and the map $v\mapsto RvR^{-1}$ is the hyperbolic element of the plane of $B$ with parameter $\digamma_{\mathrm{map}}$, the rotor carrying the parameter $\digamma_{\mathrm{map}}/2$: it preserves the form, fixes the orthogonal complement of the plane, and $R(\digamma_{\mathrm{map}})^{-1}=R(-\digamma_{\mathrm{map}})$. A bivector of square $+1$ thus generates a boost where a bivector of square $-1$ generates a rotation, the two cases being distinguished by the sign of $\mathfrak{Q}(e_1)\mathfrak{Q}(e_2)$.
 
 **Proof.** By the theorem $B^2=-\varepsilon=+1$, so $B=e_1e_2$ with $\mathfrak{Q}(e_1)\mathfrak{Q}(e_2)=-1$; the closed form of an element of square $+1$ is the hyperbolic cosine and sine, and the action on the plane is the second display of the theorem.
 
@@ -161,7 +161,7 @@ The other action of a rotor is multiplication on the left, and it is a different
 **Definition.** Let $S$ be a Clifford module over $\mathrm{Cl}(V,\mathfrak{Q})$, in the sense of *Spin Representations and Clifford Modules with Inner Conjugation*. The **spinor action** of the rotors is left multiplication,
 
 $$
-\psi\longmapsto R\psi, \qquad \psi\in S,\ R\ \text{a rotor},
+Ξ_{\mathrm{wfn}}\longmapsto RΞ_{\mathrm{wfn}}, \qquad Ξ_{\mathrm{wfn}}\in S,\ R\ \text{a rotor},
 $$
 
 the restriction to the rotors of the left action of the even subalgebra $\mathrm{Cl}^0(V,\mathfrak{Q})$.
@@ -204,9 +204,9 @@ In $\mathrm{Cl}_{1,3}$ the rotors are the elements of $\mathrm{Spin}(1,3)\cong S
 
 A **versor** is a product of non-isotropic vectors; versors are invertible, their inverses are versors of the same parity, and they form the Lipschitz group, which coincides with the Clifford group of invertibles that preserve the space of vectors under the signed inner conjugation. An even versor of Clifford norm one is a **rotor**; the rotors form a subgroup of the spin group containing $\pm1$, and they map onto the special orthogonal group with kernel $\{\pm1\}$, so that they are a two-to-one cover of the rotations.
 
-The element generated by a bivector is a rotor. With $J_B=\tfrac12\operatorname{ad}_B$ acting on $V$, the vector action is the one-parameter group of $J_B$; if $B=e_1e_2$ with $B^2=-1$ then $J_B$ is a complex structure on the plane of $B$ and annihilates its orthogonal complement, and the rotor $R=\cos\tfrac{\theta}{2}-\sin\tfrac{\theta}{2}B$ satisfies $Re_1R^{-1}=\cos\theta\,e_1+\sin\theta\,e_2$, fixing the perpendicular directions, so that it is the rotation with parameter $\theta$ while its own parameter is half. If $B^2=+1$ the same computation with $\cosh$ and $\sinh$ gives the hyperbolic element of the plane, with parameter $\varphi/2$. A general bivector of a definite real space is a sum of commuting simple bivectors, and the element it generates is a product of commuting plane rotations.
+The element generated by a bivector is a rotor. With $J_B=\tfrac12\operatorname{ad}_B$ acting on $V$, the vector action is the one-parameter group of $J_B$; if $B=e_1e_2$ with $B^2=-1$ then $J_B$ is a complex structure on the plane of $B$ and annihilates its orthogonal complement, and the rotor $R=\cos\tfrac{\theta}{2}-\sin\tfrac{\theta}{2}B$ satisfies $Re_1R^{-1}=\cos\theta\,e_1+\sin\theta\,e_2$, fixing the perpendicular directions, so that it is the rotation with parameter $\theta$ while its own parameter is half. If $B^2=+1$ the same computation with $\cosh$ and $\sinh$ gives the hyperbolic element of the plane, with parameter $\digamma_{\mathrm{map}}/2$. A general bivector of a definite real space is a sum of commuting simple bivectors, and the element it generates is a product of commuting plane rotations.
 
-The rotor has two actions. The **two-sided operator** $v\mapsto RvR^{-1}$ acts on the vectors and carries the full parameter of the rotation, because it is the signed inner conjugation of a versor and therefore preserves the quadratic space. The **left action** $\psi\mapsto R\psi$ acts on a Clifford module and carries half the parameter, because it is the spin representation and satisfies $\rho(-1)=-\mathrm{id}$: a full turn of the vectors acts on a spinor as $-1$. Left multiplication does not act on the vectors at all, and the reason is visible in the example $Re_3=\cos\tfrac{\theta}{2}e_3-\sin\tfrac{\theta}{2}\omega$ of $\mathrm{Cl}_{3,0}$, a vector together with a trivector; in the two-sided operator the two trivector parts cancel, because the trivector parts of $vB$ and of $Bv$ are equal and enter with opposite signs.
+The rotor has two actions. The **two-sided operator** $v\mapsto RvR^{-1}$ acts on the vectors and carries the full parameter of the rotation, because it is the signed inner conjugation of a versor and therefore preserves the quadratic space. The **left action** $Ξ_{\mathrm{wfn}}\mapsto RΞ_{\mathrm{wfn}}$ acts on a Clifford module and carries half the parameter, because it is the spin representation and satisfies $\rho(-1)=-\mathrm{id}$: a full turn of the vectors acts on a spinor as $-1$. Left multiplication does not act on the vectors at all, and the reason is visible in the example $Re_3=\cos\tfrac{\theta}{2}e_3-\sin\tfrac{\theta}{2}\omega$ of $\mathrm{Cl}_{3,0}$, a vector together with a trivector; in the two-sided operator the two trivector parts cancel, because the trivector parts of $vB$ and of $Bv$ are equal and enter with opposite signs.
 
 ## Summary of Notation
 
@@ -218,10 +218,10 @@ The rotor has two actions. The **two-sided operator** $v\mapsto RvR^{-1}$ acts o
 | $N(x)=x x^{\natural}$ | Clifford norm, $N(v)=-\mathfrak{Q}(v)$ on a vector |
 | $R$ | Rotor, an even versor with $N(R)=1$ |
 | $R=\cos\tfrac{\theta}{2}-\sin\tfrac{\theta}{2}B$ | Elliptic rotor of the plane of $B$, $B^2=-1$ |
-| $R=\cosh\tfrac{\varphi}{2}-\sinh\tfrac{\varphi}{2}B$ | Hyperbolic rotor, $B^2=+1$, parameter $\varphi/2$ |
+| $R=\cosh\tfrac{\digamma_{\mathrm{map}}}{2}-\sinh\tfrac{\digamma_{\mathrm{map}}}{2}B$ | Hyperbolic rotor, $B^2=+1$, parameter $\digamma_{\mathrm{map}}/2$ |
 | $J_B=\tfrac12\operatorname{ad}_B$ | Endomorphism of $V$, the generator of the vector action |
 | $v\mapsto RvR^{-1}$ | Two-Sided Operator, the vector action, full parameter |
-| $\psi\mapsto R\psi$ | Left action, the spinor action, half parameter |
+| $Ξ_{\mathrm{wfn}}\mapsto RΞ_{\mathrm{wfn}}$ | Left action, the spinor action, half parameter |
 | $\mathrm{Rotors}\to SO(V,\mathfrak{Q})$ | Two-to-one cover, kernel $\{\pm1\}$ |
 
 ## Further Reading

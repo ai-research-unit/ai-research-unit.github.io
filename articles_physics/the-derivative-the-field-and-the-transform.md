@@ -147,10 +147,10 @@ $$
 \det\mathsf D_{\imath}=(\Box_\Phi-\eta)^{2},
 $$
 
-and the equation $\mathsf D_{\imath}\psi=0$ has the chiral form
+and the equation $\mathsf D_{\imath}Ξ_{\mathrm{wfn}}=0$ has the chiral form
 
 $$
-D_+\psi_+=c\,\psi_-,\qquad D_-\psi_-=-c\,\psi_+,
+D_+Ξ_{\mathrm{wfn},+}=c\,Ξ_{\mathrm{wfn},-},\qquad D_-Ξ_{\mathrm{wfn},-}=-c\,Ξ_{\mathrm{wfn},+},
 $$
 
 two first-order equations in two components, each coupling one chiral half to the other through the constant $c$. The scalar shift and the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)=\Box_\Phi-\kappa^{2}$ give the same statement with a real parameter.
@@ -380,7 +380,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The object.** A first-order operator $\mathsf D$ with $\mathsf D^{2}=\Box_\Phi I$, and its shifted form $\mathsf D_{\imath}=\mathsf D+c\gamma_5$ with $\det\mathsf D_{\imath}=(\Box_\Phi-\eta)^{2}$.
 
-**The warrant.** No root exists by left multiplication alone, because a minimal left ideal has complex dimension two and the Clifford relation needs four. The root exists in the operator algebra of the regular module, built from the two ideals, the exchange $u$ and the grading $G$, and its shifted form has the chiral rows $D_+\psi_+=c\psi_-$ and $D_-\psi_-=-c\psi_+$.
+**The warrant.** No root exists by left multiplication alone, because a minimal left ideal has complex dimension two and the Clifford relation needs four. The root exists in the operator algebra of the regular module, built from the two ideals, the exchange $u$ and the grading $G$, and its shifted form has the chiral rows $D_+Ξ_{\mathrm{wfn},+}=cΞ_{\mathrm{wfn},-}$ and $D_-Ξ_{\mathrm{wfn},-}=-cΞ_{\mathrm{wfn},+}$.
 
 **The reading.** A second-order wave is two first-order transports. The two transported objects are the two chiral halves, which are the two minimal left ideals, and the shift is what couples them. A massless field has two decoupled halves and a massive one has two coupled halves, and the algebra says so in one line. The corpus's Dirac equation has the same structure, with the mass as the one term that multiplies on the right.
 
@@ -522,7 +522,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 | the first-order root | $\mathsf D$ | two-sided, with $\mathsf D^{2}=\Box_\Phi I$ |
 | the shift | $c$ | $\mathsf D_{\imath}=\mathsf D+c\gamma_5$, $c^{2}=-\eta$ |
 | the pseudoscalar | $\gamma_5$ | the two-sided generator of the chirality |
-| the chiral halves | $\psi_\pm$ | the two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ |
+| the chiral halves | $Ξ_{\mathrm{wfn},\pm}$ | the two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ |
 | the group of invertibles | $\mathbb{B}^{\times}$ | real dimension $8$ |
 | the norm-one group | $\mathbb{B}^{\times}_1$ | real dimension $6$, centre $\{\pm e_t\}$ |
 | the unit quaternions | $S^{3}$ | real dimension $3$, the maximal compact subgroup |

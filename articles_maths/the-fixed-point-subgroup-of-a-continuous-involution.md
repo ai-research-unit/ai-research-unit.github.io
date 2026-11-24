@@ -58,7 +58,7 @@ The subgroup that a continuous involution always carries is not the fixed set bu
 **Proposition (the two faces differ in general).** The sets $G^\sigma$ and $H = I(\sigma)$ need not be comparable: for $S_3$ with the involution $\sigma = \iota\,c_{(1\,2)}$ one has $\lvert G^\sigma\rvert = 4$ and $\lvert H\rvert = 2$, so neither contains the other. The elementwise statement that always holds is the factorisation of the symmetric map
 
 $$
-\boxed{\;\varphi : G \longrightarrow G^\sigma, \qquad \varphi(g) = g^{-1}\alpha(g) = g^{-1}\sigma(g)^{-1}\;},
+\boxed{\;\digamma_{\mathrm{map}} : G \longrightarrow G^\sigma, \qquad \digamma_{\mathrm{map}}(g) = g^{-1}\alpha(g) = g^{-1}\sigma(g)^{-1}\;},
 $$
 
 which lands in the fixed-point set, is constant on the left cosets of $H$, and induces a continuous bijection of $G/H$ onto its image, the set of **twisted squares**; this is the coset theorem of *Involutive Topological Groups*, and the image need not be all of $G^\sigma$, as the same source records.
@@ -108,7 +108,7 @@ The fixed-point set $G^\sigma$ of a continuous involution of a Hausdorff topolog
 | $I(\sigma) = \{g : \sigma(g) = g^{-1}\}$ | the inverted set, always a closed subgroup |
 | $G^\alpha = I(\sigma)$ | the fixed subgroup of $\alpha$, the subgroup the involution carries |
 | $I(\alpha) = G^\sigma$ | the other face of the dictionary |
-| $\varphi(g) = g^{-1}\alpha(g)$ | the symmetric map into $G^\sigma$, with image the twisted squares |
+| $\digamma_{\mathrm{map}}(g) = g^{-1}\alpha(g)$ | the symmetric map into $G^\sigma$, with image the twisted squares |
 | $H = G^\alpha$ | the fixed subgroup, used as the modulus of the quotients |
 | $\bar\sigma(gH) = H\sigma(g)$ | the induced bijection $G/H \to H\backslash G$ |
 | $H\backslash G/H$ | the double coset space, carrying an induced involution |

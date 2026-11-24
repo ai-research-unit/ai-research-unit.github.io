@@ -30,7 +30,7 @@ Three things are established, and they are local statements.
 
 *First, the coupling enters the logarithmic derivative as one added four-vector.* Because each component of the connection is a central scalar, $\frac{2\pi iϙ}{h}\tilde A_\Phi$ passes through $\tilde\Xi^{-1}$ and joins the four brackets without disturbing their types. It lands in the phase bracket and in the boost bracket and in neither of the other two.
 
-*Second, the shift is the classical substitution, in one object.* The scalar potential and the vector potential are the temporal and spatial slots of one element, so $E\mapsto E+ϙ\phi$ and $\vec p\mapsto\vec p-q\vec A$ are not two substitutions. They are the addition of $\frac{2\pi ϙ}{h}\tilde A_\Phi$ to the covariant wavevector, and the algebra states them with one sign.
+*Second, the shift is the classical substitution, in one object.* The scalar potential and the vector potential are the temporal and spatial slots of one element, so $E\mapsto E+ϙ\xi_{\mathrm{pot}}$ and $\vec p\mapsto\vec p-q\vec A$ are not two substitutions. They are the addition of $\frac{2\pi ϙ}{h}\tilde A_\Phi$ to the covariant wavevector, and the algebra states them with one sign.
 
 *Third, the spin transport is what the chart does and does not show.* The connection is central per component, so it multiplies the word and cannot rotate either frame factor. The rotor's own rate is the mass term's and the coupling leaves it alone. What the background does to the spin is indirect and is recorded as the chart's limit.
 

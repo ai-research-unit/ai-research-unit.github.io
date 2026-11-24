@@ -84,10 +84,10 @@ for every $\zeta\in\mathbb{C}^n$. In particular $\tau(\mathcal{F}[u])\le R$.
 
 **Proposition (type gives support).** Let $u$ be a tempered $A_{\mathbb{C}}$-valued distribution whose transform extends to an entire function of exponential type at most $R$, and suppose that transform is a Schwartz function on $\mathbb{R}^n$. Then $\operatorname{supp}u\subseteq K_R$.
 
-*Proof.* Let $x_0\notin K_R$, put $\varrho=\lvert x_0\rvert$ and $\nu=x_0/\varrho$, and choose $\delta>0$ with $\varrho-\delta>R$. Let $\varphi\in C_c^\infty$ be supported in the ball of radius $\delta$ about $x_0$. Since $\mathcal{F}[u]$ is a Schwartz function, $u$ is a Schwartz function and the pairing is an integral,
+*Proof.* Let $x_0\notin K_R$, put $\varrho=\lvert x_0\rvert$ and $\nu=x_0/\varrho$, and choose $\delta>0$ with $\varrho-\delta>R$. Let $\digamma_{\mathrm{map}}\in C_c^\infty$ be supported in the ball of radius $\delta$ about $x_0$. Since $\mathcal{F}[u]$ is a Schwartz function, $u$ is a Schwartz function and the pairing is an integral,
 
 $$
-\langle u,\varphi\rangle=(2\pi)^{-n}\int_{\mathbb{R}^n}\mathcal{F}[u](\xi)\,\overline{\mathcal{F}[\varphi](\xi)}\,d\xi ,
+\langle u,\digamma_{\mathrm{map}}\rangle=(2\pi)^{-n}\int_{\mathbb{R}^n}\mathcal{F}[u](\xi)\,\overline{\mathcal{F}[\digamma_{\mathrm{map}}](\xi)}\,d\xi ,
 $$
 
 which is the distributional form of the Plancherel identity of §*Plancherel with the Constant*. Both factors are entire, so the integration can be moved to the translate $\xi\mapsto\xi+i\tau\nu$ with $\tau>0$; the shift is the classical step of the Paley–Wiener theorem, and it uses the translate estimate $\int\lvert F(\xi+i\tau\nu)\rvert\,d\xi\le C e^{R\tau}$ for an entire function $F$ of exponential type at most $R$. That estimate is quoted with the theorem and is not reproved here. On the translate the two bounds are
@@ -95,10 +95,10 @@ which is the distributional form of the Plancherel identity of §*Plancherel wit
 $$
 \lvert\mathcal{F}[u](\xi+i\tau\nu)\rvert\le C\,(1+\lvert\xi\rvert)^{N}e^{R\tau},
 \qquad
-\lvert\mathcal{F}[\varphi](\xi+i\tau\nu)\rvert\le\lVert\varphi\rVert_1\,e^{\tau(\nu\cdot x_0+\delta)} ,
+\lvert\mathcal{F}[\digamma_{\mathrm{map}}](\xi+i\tau\nu)\rvert\le\lVert\digamma_{\mathrm{map}}\rVert_1\,e^{\tau(\nu\cdot x_0+\delta)} ,
 $$
 
-the first from the exponential type and the polynomial growth, the second from the support of $\varphi$ and the estimate of the previous proposition. The product is bounded by a constant times $(1+\lvert\xi\rvert)^{N}e^{-\tau(\varrho-\delta-R)}$, which decays in $\xi$ and tends to zero as $\tau\to\infty$ for fixed $\xi$. Letting $\tau\to\infty$ gives $\langle u,\varphi\rangle=0$. Every $\varphi$ supported outside $K_R$ is a locally finite sum of such functions, by a partition of unity subordinate to a cover by balls of radius $\delta$, so $u$ vanishes there.
+the first from the exponential type and the polynomial growth, the second from the support of $\digamma_{\mathrm{map}}$ and the estimate of the previous proposition. The product is bounded by a constant times $(1+\lvert\xi\rvert)^{N}e^{-\tau(\varrho-\delta-R)}$, which decays in $\xi$ and tends to zero as $\tau\to\infty$ for fixed $\xi$. Letting $\tau\to\infty$ gives $\langle u,\digamma_{\mathrm{map}}\rangle=0$. Every $\digamma_{\mathrm{map}}$ supported outside $K_R$ is a locally finite sum of such functions, by a partition of unity subordinate to a cover by balls of radius $\delta$, so $u$ vanishes there.
 
 **Remark (the two propositions together).** They say that the support radius and the exponential type are the same number, read from two sides. The passage from the scalar case to $A_{\mathbb{C}}$-valued functions costs nothing: the estimates above are entrywise in a basis of $A_{\mathbb{C}}$ over $\mathbb{C}$, and the modulus of an element is comparable to the maximum of the moduli of its coordinates. What the two propositions do not settle in the generality stated is the tempered case without the Schwartz hypothesis; that is the Paley–Wiener theorem in the form given by Hörmander, and it is quoted, not proved here.
 
@@ -251,18 +251,18 @@ at every point where $\sigma$ is invertible, so the logarithmic derivative of th
 
 ## Stationary Phase as the Local Reading
 
-**The theorem, quoted.** Let $\varphi:\mathbb{R}^n\to\mathbb{R}$ be smooth and real-valued, let $a\in C_c^\infty(\mathbb{R}^n)$, and suppose $\varphi$ has exactly one critical point $x_0$ in the support of $a$, with $\varphi'(x_0)=0$ and $\varphi''(x_0)$ nonsingular. Then, as $\lambda\to+\infty$,
+**The theorem, quoted.** Let $\digamma_{\mathrm{map}}:\mathbb{R}^n\to\mathbb{R}$ be smooth and real-valued, let $a\in C_c^\infty(\mathbb{R}^n)$, and suppose $\digamma_{\mathrm{map}}$ has exactly one critical point $x_0$ in the support of $a$, with $\digamma_{\mathrm{map}}'(x_0)=0$ and $\digamma_{\mathrm{map}}''(x_0)$ nonsingular. Then, as $\lambda\to+\infty$,
 
 $$
-\int_{\mathbb{R}^n}e^{i\lambda\varphi(x)}a(x)\,dx
-=e^{i\lambda\varphi(x_0)}\,e^{\frac{i\pi}{4}\operatorname{sgn}\varphi''(x_0)}\,
-\frac{(2\pi)^{n/2}}{\lambda^{n/2}\lvert\det\varphi''(x_0)\rvert^{1/2}}
+\int_{\mathbb{R}^n}e^{i\lambda\digamma_{\mathrm{map}}(x)}a(x)\,dx
+=e^{i\lambda\digamma_{\mathrm{map}}(x_0)}\,e^{\frac{i\pi}{4}\operatorname{sgn}\digamma_{\mathrm{map}}''(x_0)}\,
+\frac{(2\pi)^{n/2}}{\lambda^{n/2}\lvert\det\digamma_{\mathrm{map}}''(x_0)\rvert^{1/2}}
 \Big(a(x_0)+O(\lambda^{-1})\Big),
 $$
 
 where $\operatorname{sgn}$ is the signature, the number of positive eigenvalues minus the number of negative ones. This is the stationary phase theorem, quoted from Theorem 7.7.5 of *The Analysis of Linear Partial Differential Operators I* of Hörmander, together with its hypotheses: a single critical point, non-degeneracy of the Hessian, and an amplitude of compact support. Without the critical point the integral is rapidly decreasing in $\lambda$, and with a degenerate Hessian the exponent $n/2$ is replaced by a larger one determined by the first non-vanishing jet.
 
-**Remark (why the theorem does not apply to the inversion integral directly).** The phase of the inversion integral is $\varphi(\zeta)=\langle\zeta,x\rangle$, which is linear. It has no critical point at all, its Hessian vanishes identically, and the stationary phase theorem therefore has nothing to say about the integral as it stands. What holds instead is this: a smooth compactly supported multiplier gives a kernel that decays faster than any power, by integration by parts, since $\frac{1}{ix_j}\partial_{\zeta_j}e^{i\zeta\cdot x}=e^{i\zeta\cdot x}$ moves the derivative onto the multiplier and each integration gains a factor $\lvert x\rvert^{-1}$.
+**Remark (why the theorem does not apply to the inversion integral directly).** The phase of the inversion integral is $\digamma_{\mathrm{map}}(\zeta)=\langle\zeta,x\rangle$, which is linear. It has no critical point at all, its Hessian vanishes identically, and the stationary phase theorem therefore has nothing to say about the integral as it stands. What holds instead is this: a smooth compactly supported multiplier gives a kernel that decays faster than any power, by integration by parts, since $\frac{1}{ix_j}\partial_{\zeta_j}e^{i\zeta\cdot x}=e^{i\zeta\cdot x}$ moves the derivative onto the multiplier and each integration gains a factor $\lvert x\rvert^{-1}$.
 
 **The place where it does apply.** The decay of the kernel is not governed by the smooth part of the multiplier but by its singularity. Model the singularity of $m_\sigma$ across the zero hypersurface $\Sigma=\{\det L_\sigma=0\}$ by a jump: let $\mu$ equal a smooth function on one side of $\Sigma$ and zero on the other, with $\Sigma$ smooth near a point $\zeta_0$ and $\nabla\det L_\sigma\ne0$ there. Then integration by parts in the normal direction turns the inverse transform of $\mu$ into an integral over $\Sigma$ with the phase $\langle\cdot,x\rangle$ restricted to $\Sigma$. The critical points of that restriction are the points where $x$ is normal to $\Sigma$, and the Hessian of the restriction at such a point is the second fundamental form of $\Sigma$ there.
 
@@ -309,7 +309,7 @@ Three sentences carry the article. **The pole order is a property of the point a
 | $M$ | The supremum of $\lVert L_{\sigma^{-1}}\rVert$ over the frequencies, in the bounded case |
 | $\operatorname{adj}$ | The adjugate of a square matrix |
 | $\operatorname{tr}$ | The trace of a square matrix |
-| $\varphi$ | The phase of a stationary phase integral, and a test function in the Paley–Wiener proof |
+| $\digamma_{\mathrm{map}}$ | The phase of a stationary phase integral, and a test function in the Paley–Wiener proof |
 | $\lambda$ | The large parameter of the stationary phase asymptotics |
 | $\nu$ | A unit vector in $\mathbb{R}^n$, the direction of a contour shift |
 | $\Sigma$ | The complex zero hypersurface $\{\det L_\sigma=0\}$ near a smooth point |

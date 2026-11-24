@@ -5,7 +5,7 @@
 
 The Sobolev space $W^{k,n}$ measures the smoothness of a function by the square integrability of its derivatives and so measures smoothness and integrability with two indices, the order of differentiation and the exponent of the norm. There is a third and finer invariant of smoothness, the way in which the $L^{n}$ norms of the successive frequency components of the function decay, and the spaces that record it are the **Besov spaces** $B^{s}_{n,m}$ and the **Triebel–Lizorkin spaces** $F^{s}_{n,m}$: three indices now, smoothness $s$, integrability $p$ and a fine index $q$ that measures the distribution of the smoothness across the dyadic frequency scales. The Sobolev spaces are the case $q=2$ of the Triebel–Lizorkin family, the Hölder spaces are the case $p=q=\infty$ of the Besov family, the Hardy space $H^1$ and the space $\mathrm{BMO}$ of bounded mean oscillation are the borderline members $F^0_{1,2}$ and $F^0_{\infty,2}$, and the Besov spaces are the natural class in which the real interpolation of the Sobolev scale is closed.
 
-The article develops the theory from the **Littlewood–Paley decomposition**. A dyadic partition of unity $\{\varphi_j\}_{j\ge0}$ in the frequency variable decomposes a tempered distribution into its frequency layers $\varphi_j(D)f$, and the two families of spaces are defined by the size of the sequences or functions $2^{js}\varphi_j(D)f$ in the appropriate mixed norm: the Besov norm is the $\ell^{m}$ norm in $j$ followed by the $L^{n}$ norm in $x$, and the Triebel–Lizorkin norm is the $L^{n}$ norm followed by the $\ell^{m}$ norm, so the two differ exactly in the order of the two operations, and coincide only when $p=q$. The theory then consists of the independence of the definition from the partition, the elementary properties of the two scales and their comparison with the classical spaces, the lifting and the Fourier-multiplier properties, the embeddings and the compactness, the trace theorem on a hyperplane, the atomic and molecular decompositions in which the norm is computed from the coefficients of a single expansion, and the interpolation theorems that place the scale exactly at the real and complex interpolation of the Sobolev spaces. The **Bony paraproduct** and the product estimates that follow from the decomposition are recorded, because they are the reason the Besov scale is the natural one for the nonlinear estimates of the theory of partial differential equations.
+The article develops the theory from the **Littlewood–Paley decomposition**. A dyadic partition of unity $\{\digamma_{\mathrm{map},j}\}_{j\ge0}$ in the frequency variable decomposes a tempered distribution into its frequency layers $\digamma_{\mathrm{map},j}(D)f$, and the two families of spaces are defined by the size of the sequences or functions $2^{js}\digamma_{\mathrm{map},j}(D)f$ in the appropriate mixed norm: the Besov norm is the $\ell^{m}$ norm in $j$ followed by the $L^{n}$ norm in $x$, and the Triebel–Lizorkin norm is the $L^{n}$ norm followed by the $\ell^{m}$ norm, so the two differ exactly in the order of the two operations, and coincide only when $p=q$. The theory then consists of the independence of the definition from the partition, the elementary properties of the two scales and their comparison with the classical spaces, the lifting and the Fourier-multiplier properties, the embeddings and the compactness, the trace theorem on a hyperplane, the atomic and molecular decompositions in which the norm is computed from the coefficients of a single expansion, and the interpolation theorems that place the scale exactly at the real and complex interpolation of the Sobolev spaces. The **Bony paraproduct** and the product estimates that follow from the decomposition are recorded, because they are the reason the Besov scale is the natural one for the nonlinear estimates of the theory of partial differential equations.
 
 The Fourier transform, the Schwartz space, the tempered distributions, the Littlewood–Paley maximal function and the Calderón–Zygmund theory are those of *Fourier Analysis on Euclidean Spaces*; the distributional calculus and the convolution of distributions are those of *Distributions and Fundamental Solutions*; the real and complex interpolation methods, and the interpolation of the Sobolev scale, are those of *Interpolation Theory*, to which this article is the supplement of the function spaces. The weak derivatives and the Sobolev spaces $W^{k,n}$ are recalled here in line, as the classical spaces with which the new scales are compared; their systematic development is subsequent to this article, and the scales of this article do not depend on it. The applications of the spaces to elliptic boundary problems, to nonlinear equations and to the calculus of variations are not treated here.
 
@@ -15,19 +15,19 @@ No physics is invoked.
 
 ### Dyadic Partitions of Unity
 
-**Definition.** A sequence $(\varphi_j)_{j\ge0}$ in the Schwartz class $\mathcal S(\mathbb{R}^n)$ is a **dyadic partition of unity** if there is $\varphi \in C_c^\infty(\mathbb{R}^n)$ with $\varphi(\zeta)=1$ for $|\zeta|\le1$ and $\operatorname{supp}\varphi\subseteq\{|\zeta|\le2\}$, such that
+**Definition.** A sequence $(\digamma_{\mathrm{map},j})_{j\ge0}$ in the Schwartz class $\mathcal S(\mathbb{R}^n)$ is a **dyadic partition of unity** if there is $\digamma_{\mathrm{map}} \in C_c^\infty(\mathbb{R}^n)$ with $\digamma_{\mathrm{map}}(\zeta)=1$ for $|\zeta|\le1$ and $\operatorname{supp}\digamma_{\mathrm{map}}\subseteq\{|\zeta|\le2\}$, such that
 
 $$
-\varphi_0=\varphi, \qquad \varphi_j(\zeta)=\varphi(2^{-j}\zeta)-\varphi(2^{-j+1}\zeta) \quad (j \ge1).
+\digamma_{\mathrm{map},0}=\digamma_{\mathrm{map}}, \qquad \digamma_{\mathrm{map},j}(\zeta)=\digamma_{\mathrm{map}}(2^{-j}\zeta)-\digamma_{\mathrm{map}}(2^{-j+1}\zeta) \quad (j \ge1).
 $$
 
-Then $\varphi_j \in C_c^\infty$, $\operatorname{supp}\varphi_j \subseteq\{2^{j-1}\le|\zeta|\le2^{j+1}\}$ for $j \ge1$, and
+Then $\digamma_{\mathrm{map},j} \in C_c^\infty$, $\operatorname{supp}\digamma_{\mathrm{map},j} \subseteq\{2^{j-1}\le|\zeta|\le2^{j+1}\}$ for $j \ge1$, and
 
 $$
-\sum_{j=0}^{\infty}\varphi_j(\zeta)=1 \quad (\zeta \neq0),
+\sum_{j=0}^{\infty}\digamma_{\mathrm{map},j}(\zeta)=1 \quad (\zeta \neq0),
 $$
 
-the sum being locally finite; the $\varphi_j$ are the **Littlewood–Paley blocks** and, for $f \in\mathcal S'(\mathbb{R}^n)$, the distributions $\varphi_j(D)f$ are defined by the Fourier multiplier $\varphi_j$, with $\widehat{\varphi_j(D)f}=\varphi_j\mathcal F f$.
+the sum being locally finite; the $\digamma_{\mathrm{map},j}$ are the **Littlewood–Paley blocks** and, for $f \in\mathcal S'(\mathbb{R}^n)$, the distributions $\digamma_{\mathrm{map},j}(D)f$ are defined by the Fourier multiplier $\digamma_{\mathrm{map},j}$, with $\widehat{\digamma_{\mathrm{map},j}(D)f}=\digamma_{\mathrm{map},j}\mathcal F f$.
 
 **Theorem (Bernstein's inequalities).** Let $k \in \mathbb{N}_0$, $1\le p\le r\le\infty$, and let $f \in L^{n}(\mathbb{R}^n)$ have $\operatorname{supp}\mathcal F f \subseteq\{|\zeta|\le R\}$. Then
 
@@ -37,25 +37,25 @@ $$
 
 with a constant depending on $k,n$ but not on $R$ or $f$; in particular the frequency localisation allows any derivative to be traded for a power of the frequency and any higher $L^r$ norm to be traded for the $L^{n}$ norm at the cost of $R^{n(1/p-1/r)}$.
 
-*Proof (sketch).* One writes $f=\phi*f$ for a suitable Schwartz function $\phi$ with $\hat\phi=1$ on the support of $\mathcal F f$, applies the derivative to the convolution kernel and uses Young's inequality, together with the scaling estimate $\|\phi_R\|_{L^r}\le CR^{n(1/p-1/r)}\|\phi_R\|_{L^{n}}$ for the rescaled kernel $\phi_R$.
+*Proof (sketch).* One writes $f=\digamma_{\mathrm{map}}*f$ for a suitable Schwartz function $\digamma_{\mathrm{map}}$ with $\hat\digamma_{\mathrm{map}}=1$ on the support of $\mathcal F f$, applies the derivative to the convolution kernel and uses Young's inequality, together with the scaling estimate $\|\digamma_{\mathrm{map},R}\|_{L^r}\le CR^{n(1/p-1/r)}\|\digamma_{\mathrm{map},R}\|_{L^{n}}$ for the rescaled kernel $\digamma_{\mathrm{map},R}$.
 
 Bernstein's inequalities are the analytic engine of the whole theory: they convert the size of a frequency-localised piece into the size of its derivatives, and they show that the smoothness $s$ must be measured by the factor $2^{js}$ attached to the block at frequency $2^j$.
 
 ### The Two Scales
 
-**Definition.** Let $s \in\mathbb{R}$, $0<p\le\infty$ and $0<q\le\infty$, and let $(\varphi_j)$ be a dyadic partition of unity. For $f \in\mathcal S'(\mathbb{R}^n)$ put
+**Definition.** Let $s \in\mathbb{R}$, $0<p\le\infty$ and $0<q\le\infty$, and let $(\digamma_{\mathrm{map},j})$ be a dyadic partition of unity. For $f \in\mathcal S'(\mathbb{R}^n)$ put
 
 $$
-\|f\|_{B^{s}_{n,m}}=\Bigl(\sum_{j=0}^{\infty}\bigl(2^{js}\|\varphi_j(D)f\|_{L^{n}}\bigr)^q\Bigr)^{1/q},
+\|f\|_{B^{s}_{n,m}}=\Bigl(\sum_{j=0}^{\infty}\bigl(2^{js}\|\digamma_{\mathrm{map},j}(D)f\|_{L^{n}}\bigr)^q\Bigr)^{1/q},
 \qquad
-\|f\|_{F^{s}_{n,m}}=\Bigl\|\Bigl(\sum_{j=0}^{\infty}\bigl(2^{js}|\varphi_j(D)f|\bigr)^q\Bigr)^{1/q}\Bigr\|_{L^{n}},
+\|f\|_{F^{s}_{n,m}}=\Bigl\|\Bigl(\sum_{j=0}^{\infty}\bigl(2^{js}|\digamma_{\mathrm{map},j}(D)f|\bigr)^q\Bigr)^{1/q}\Bigr\|_{L^{n}},
 $$
 
-with the usual modification $\sup_j$ when $q=\infty$ and, in the $F$-case, the modification $\sup_j2^{js}|\varphi_j(D)f(x)|$ when $p=\infty$. The **Besov space** $B^{s}_{n,m}$ is the set of $f \in\mathcal S'$ with $\|f\|_{B^{s}_{n,m}}<\infty$, and the **Triebel–Lizorkin space** $F^{s}_{n,m}$ is the set of $f \in\mathcal S'$ with $\|f\|_{F^{s}_{n,m}}<\infty$, both understood modulo polynomials when the seminorm vanishes on them.
+with the usual modification $\sup_j$ when $q=\infty$ and, in the $F$-case, the modification $\sup_j2^{js}|\digamma_{\mathrm{map},j}(D)f(x)|$ when $p=\infty$. The **Besov space** $B^{s}_{n,m}$ is the set of $f \in\mathcal S'$ with $\|f\|_{B^{s}_{n,m}}<\infty$, and the **Triebel–Lizorkin space** $F^{s}_{n,m}$ is the set of $f \in\mathcal S'$ with $\|f\|_{F^{s}_{n,m}}<\infty$, both understood modulo polynomials when the seminorm vanishes on them.
 
 **Theorem (independence of the partition).** The spaces $B^{s}_{n,m}$ and $F^{s}_{n,m}$ do not depend on the choice of the dyadic partition of unity, and the norms obtained from two different partitions are equivalent.
 
-*Proof (sketch).* If $(\psi_k)$ is another partition, then $\varphi_j(D)f=\sum_k\varphi_j(D)\psi_k(D)f$, and the sum is over the finitely many $k$ with $2^k$ comparable to $2^j$, by the support condition; the kernel of $\varphi_j(D)\psi_k(D)$ is a Schwartz function whose $L^1$ norm is controlled uniformly, so Young's inequality bounds each block of the first partition by the corresponding block of the second, and the two-sided estimate follows by symmetry and by the triangle inequality in the appropriate mixed norm.
+*Proof (sketch).* If $(Ξ_{\mathrm{wfn},k})$ is another partition, then $\digamma_{\mathrm{map},j}(D)f=\sum_k\digamma_{\mathrm{map},j}(D)Ξ_{\mathrm{wfn},k}(D)f$, and the sum is over the finitely many $k$ with $2^k$ comparable to $2^j$, by the support condition; the kernel of $\digamma_{\mathrm{map},j}(D)Ξ_{\mathrm{wfn},k}(D)$ is a Schwartz function whose $L^1$ norm is controlled uniformly, so Young's inequality bounds each block of the first partition by the corresponding block of the second, and the two-sided estimate follows by symmetry and by the triangle inequality in the appropriate mixed norm.
 
 **Proposition (elementary properties).** Let $s \in\mathbb{R}$ and $0<p,q\le\infty$.
 
@@ -75,7 +75,7 @@ so the Besov scale brackets the Triebel–Lizorkin scale and the two coincide at
 
 (v) The Schwartz class $\mathcal S$ is dense in $B^{s}_{n,m}$ and in $F^{s}_{n,m}$ when $p,q<\infty$, the dual of $B^{s}_{n,m}$ is $B^{-s}_{p',q'}$ for $1\le p,q<\infty$, and the dual of $F^{s}_{n,m}$ is $F^{-s}_{p',q'}$ for $1<p<\infty$ and $1\le q<\infty$, where $1/p+1/p'=1$ and $1/q+1/q'=1$.
 
-*Proof (sketch).* Completeness is the completeness of the mixed sequence and function spaces, the map $f\mapsto(\varphi_j(D)f)$ being an isometry into a closed subspace for the Besov scale; the continuous inclusions in (ii) and (iii) are consequences of the embeddings of the sequence spaces $\ell^{m}_1\hookrightarrow\ell^{m}_2$, Minkowski's integral inequality and the support condition; the lifting (iv) is the comparison of the multipliers $(1+|\zeta|^2)^{-\sigma/2}$ with $2^{-j\sigma}$ on the support of $\varphi_j$; and (v) is the standard duality, obtained from the duality of the underlying sequence spaces and the density of $\mathcal S$.
+*Proof (sketch).* Completeness is the completeness of the mixed sequence and function spaces, the map $f\mapsto(\digamma_{\mathrm{map},j}(D)f)$ being an isometry into a closed subspace for the Besov scale; the continuous inclusions in (ii) and (iii) are consequences of the embeddings of the sequence spaces $\ell^{m}_1\hookrightarrow\ell^{m}_2$, Minkowski's integral inequality and the support condition; the lifting (iv) is the comparison of the multipliers $(1+|\zeta|^2)^{-\sigma/2}$ with $2^{-j\sigma}$ on the support of $\digamma_{\mathrm{map},j}$; and (v) is the standard duality, obtained from the duality of the underlying sequence spaces and the density of $\mathcal S$.
 
 ## Comparison with the Classical Spaces
 
@@ -98,7 +98,7 @@ and for $k \in\mathbb{N}_0$ and $1\le p\le\infty$ the **Sobolev space** $W^{k,n}
 (v) $F^0_{1,2}=H^1_{\mathrm{Har}}$, the real Hardy space, and $F^0_{\infty,2}=\mathrm{BMO}$;
 (vi) $F^0_{p,2}=L^{n}$ for $1<p<\infty$.
 
-*Proof (sketch).* For (i) one uses the multiplier theorem of *Fourier Analysis on Euclidean Spaces* to compare the norm $\bigl\|(\sum_j|\varphi_j(D)f|^2)^{1/2}\bigr\|_{L^{n}}$ with $\|(1-\Delta)^{s/2}f\|_{L^{n}}$, the two multipliers being comparable on the support of each block; (ii) adds Bernstein's inequality to compare the $L^{n}$ norms of the derivatives; (iii) is the case $p=q=2$ of (i) and the Plancherel theorem; (iv) is the classical characterisation of the Hölder–Zygmund spaces by the decay of the Littlewood–Paley blocks; (v) is the atomic description of the Hardy space and the John–Nirenberg inequality for $\mathrm{BMO}$; and (vi) is the case $s=0$ of (i). These identifications are standard and are cited below.
+*Proof (sketch).* For (i) one uses the multiplier theorem of *Fourier Analysis on Euclidean Spaces* to compare the norm $\bigl\|(\sum_j|\digamma_{\mathrm{map},j}(D)f|^2)^{1/2}\bigr\|_{L^{n}}$ with $\|(1-\Delta)^{s/2}f\|_{L^{n}}$, the two multipliers being comparable on the support of each block; (ii) adds Bernstein's inequality to compare the $L^{n}$ norms of the derivatives; (iii) is the case $p=q=2$ of (i) and the Plancherel theorem; (iv) is the classical characterisation of the Hölder–Zygmund spaces by the decay of the Littlewood–Paley blocks; (v) is the atomic description of the Hardy space and the John–Nirenberg inequality for $\mathrm{BMO}$; and (vi) is the case $s=0$ of (i). These identifications are standard and are cited below.
 
 **Corollary (the classical scales as one-parameter families).** The Sobolev spaces, the Hölder–Zygmund spaces, the Hardy space and $\mathrm{BMO}$ are all members of the two scales, and the scales therefore carry the classical spaces with their interpolation and their embeddings as special cases; the spaces $W^{k,n}$ and $H^k$ are the cases $q=2$ of the Triebel–Lizorkin family, and the embeddings proved there follow from the general embeddings of the next section.
 
@@ -112,7 +112,7 @@ $$
 
 with the $\sup$ modification for $q=\infty$; the quantity is an equivalent quasi-norm. The classical Besov definition by the modulus of continuity is therefore the same scale, and for $p=q=\infty$ the characterisation reduces to the Hölder condition of order $s$.
 
-*Proof (sketch).* The equivalence of the difference and the frequency descriptions is the standard Littlewood–Paley–Stein argument: the difference $\Delta_h^k$ annihilates the frequencies below $|h|^{-1}$, so the integral over $t\approx2^{-j}$ sees exactly the block $\varphi_j(D)f$, and the two sides are comparable by Bernstein's inequality in both directions.
+*Proof (sketch).* The equivalence of the difference and the frequency descriptions is the standard Littlewood–Paley–Stein argument: the difference $\Delta_h^k$ annihilates the frequencies below $|h|^{-1}$, so the integral over $t\approx2^{-j}$ sees exactly the block $\digamma_{\mathrm{map},j}(D)f$, and the two sides are comparable by Bernstein's inequality in both directions.
 
 **Theorem (heat-kernel characterisation).** Let $s>0$ and let $\exp(t\Delta)$ be the heat semigroup. Then $f \in B^{s}_{n,m}$ if and only if
 
@@ -136,7 +136,7 @@ The heat-kernel description is the form in which the scale is used for the regul
 
 (iii) On a bounded domain with the cone condition the strict inequality $s-\frac np>s'-\frac{n}{p'}$ gives a compact embedding $B^{s}_{n,m}(\Omega)\hookrightarrow B^{s'}_{n',m}(\Omega)$ (Rellich–Kondrachov), and the same holds when $s-\frac np=s'-\frac{n}{p'}$ with $p<p'$; the compactness fails on $\mathbb{R}^n$ itself, where the scaling of a fixed function makes the embedding non-compact. In particular, on a bounded domain $B^{s}_{n,m}\hookrightarrow\hookrightarrow B^{s'}_{n,m}$ for every $s>s'$ and every $q$, the gain $s-s'$ being strictly positive, and $B^{s}_{n,m}\hookrightarrow\hookrightarrow\Lambda^{s-n/p}$ for $s>\frac np$.
 
-*Proof (sketch).* By Bernstein's inequality each block $\varphi_j(D)f$ satisfies $\|\varphi_j(D)f\|_{L^{p'}}\le C2^{jn(1/p-1/p')}\|\varphi_j(D)f\|_{L^{n}}$, and the gain $2^{j(s-s')}$ in the embedding is exactly the factor $2^{jn(1/p-1/p')}$ when $s-\frac np=s'-\frac{n}{p'}$; the sum is then dominated by the Besov norm, giving (i), and (ii) is the case $p'=\infty$. For (iii) one splits the sum into the finitely many low frequencies, which are compact by the Arzelà–Ascoli theorem on a bounded domain, and the tail, whose norm is small uniformly on the unit ball, the strict gain in the smoothness making the tail small and the boundedness of the domain making the low frequencies compact.
+*Proof (sketch).* By Bernstein's inequality each block $\digamma_{\mathrm{map},j}(D)f$ satisfies $\|\digamma_{\mathrm{map},j}(D)f\|_{L^{p'}}\le C2^{jn(1/p-1/p')}\|\digamma_{\mathrm{map},j}(D)f\|_{L^{n}}$, and the gain $2^{j(s-s')}$ in the embedding is exactly the factor $2^{jn(1/p-1/p')}$ when $s-\frac np=s'-\frac{n}{p'}$; the sum is then dominated by the Besov norm, giving (i), and (ii) is the case $p'=\infty$. For (iii) one splits the sum into the finitely many low frequencies, which are compact by the Arzelà–Ascoli theorem on a bounded domain, and the tail, whose norm is small uniformly on the unit ball, the strict gain in the smoothness making the tail small and the boundedness of the domain making the low frequencies compact.
 
 **Corollary (comparison with the Sobolev embeddings).** For $1<p<\infty$ the embedding $W^{k,n}\hookrightarrow L^{p'}$ with $\frac1{p'}=\frac1p-\frac kn$, and its compact form when $p'<\infty$, are the case $q=2$ of the theorem, by the identification $W^{k,n}=F^k_{p,2}$; the embedding $W^{k,n}\hookrightarrow\Lambda^{k-n/p}$ into the Hölder–Zygmund class of exponent $k-n/p$ is the corresponding statement, in the Zygmund convention when $k-\frac np$ is an integer. These are the Sobolev and Rellich–Kondrachov theorems, recovered here from the scale.
 
@@ -173,9 +173,9 @@ $$
 
 so that the Triebel–Lizorkin norm is the $L^{n}$ norm of the maximal function of the coefficients and the Besov norm is their mixed norm. The molecular decompositions hold with molecules in place of atoms and the same coefficient norms.
 
-*Proof (sketch).* The atoms are built from the Littlewood–Paley blocks: for a dyadic cube $Q$ of side $2^{-j}$ one takes the product of $\varphi_j(D)f$ with a cutoff adapted to $Q$ and corrects the moments, which is possible because $K>s$; the converse is the estimate of each atom in the scale by Bernstein's inequality and the cancellation (the cancellation is what makes the estimate sharp in $s$). The computations are the standard ones, cited below.
+*Proof (sketch).* The atoms are built from the Littlewood–Paley blocks: for a dyadic cube $Q$ of side $2^{-j}$ one takes the product of $\digamma_{\mathrm{map},j}(D)f$ with a cutoff adapted to $Q$ and corrects the moments, which is possible because $K>s$; the converse is the estimate of each atom in the scale by Bernstein's inequality and the cancellation (the cancellation is what makes the estimate sharp in $s$). The computations are the standard ones, cited below.
 
-The atomic decomposition is the bridge from the Fourier description to the real-variable description: it shows that membership in the scale is a condition on a single expansion in localised, oscillating pieces, and it is the form in which the spaces are used in harmonic analysis and in the theory of singular integrals of *Fourier Analysis on Euclidean Spaces*. The wavelet characterisations are the orthonormal version of the same expansion, with $\lambda_{j,\nu}=\langle f,\psi_{j,\nu}\rangle$ for a wavelet basis $\{\psi_{j,\nu}\}$, and the coefficient norm is then exactly the norm of the scale.
+The atomic decomposition is the bridge from the Fourier description to the real-variable description: it shows that membership in the scale is a condition on a single expansion in localised, oscillating pieces, and it is the form in which the spaces are used in harmonic analysis and in the theory of singular integrals of *Fourier Analysis on Euclidean Spaces*. The wavelet characterisations are the orthonormal version of the same expansion, with $\lambda_{j,\nu}=\langle f,Ξ_{\mathrm{wfn},j,\nu}\rangle$ for a wavelet basis $\{Ξ_{\mathrm{wfn},j,\nu}\}$, and the coefficient norm is then exactly the norm of the scale.
 
 ## Interpolation and Products
 
@@ -190,7 +190,7 @@ $$
 
 with equivalent quasi-norms, the real method being taken in the sense of *Interpolation Theory*; the real interpolation of the two scales is therefore the Besov scale, whatever the originating family.
 
-*Proof (sketch).* The $K$-functional of the pair is computed blockwise: the frequency blocks of the two spaces are Sobolev-type spaces of a single scale, and the $K$-functional of a piece $\varphi_j(D)f$ is comparable to $\min(2^{js_0},2^{js_1})$-weighted versions of its norm, so the $K$-functional of $f$ is equivalent to a mixed norm in the blocks; the $\vartheta_{\mathrm{itp}},q$ norm then produces the Besov norm with exponent $q$, and the equality of the two families follows from the comparison of the scales. The details are the standard ones of the theory.
+*Proof (sketch).* The $K$-functional of the pair is computed blockwise: the frequency blocks of the two spaces are Sobolev-type spaces of a single scale, and the $K$-functional of a piece $\digamma_{\mathrm{map},j}(D)f$ is comparable to $\min(2^{js_0},2^{js_1})$-weighted versions of its norm, so the $K$-functional of $f$ is equivalent to a mixed norm in the blocks; the $\vartheta_{\mathrm{itp}},q$ norm then produces the Besov norm with exponent $q$, and the equality of the two families follows from the comparison of the scales. The details are the standard ones of the theory.
 
 **Theorem (complex interpolation and the interpolation of the Sobolev scale).** Let $s_0 \neq s_1$, $0<p,q\le\infty$ and $\vartheta_{\mathrm{itp}} \in(0,1)$, and put $s=(1-\vartheta_{\mathrm{itp}})s_0+\vartheta_{\mathrm{itp}} s_1$. Then
 
@@ -210,10 +210,10 @@ The two theorems are the reason the scale is the natural one for interpolation: 
 **Definition.** For $f,g \in\mathcal S'$ the **Bony paraproduct** is the decomposition
 
 $$
-fg=\sum_{j,k}\varphi_j(D)f\,\varphi_k(D)g
-=\underbrace{\sum_{j}\sum_{k\le j-2}\varphi_j(D)f\,\varphi_k(D)g}_{T_fg}
-+\underbrace{\sum_{k}\sum_{j\le k-2}\varphi_j(D)f\,\varphi_k(D)g}_{T_gf}
-+\underbrace{\sum_{|j-k|\le1}\varphi_j(D)f\,\varphi_k(D)g}_{R(f,g)},
+fg=\sum_{j,k}\digamma_{\mathrm{map},j}(D)f\,\digamma_{\mathrm{map},k}(D)g
+=\underbrace{\sum_{j}\sum_{k\le j-2}\digamma_{\mathrm{map},j}(D)f\,\digamma_{\mathrm{map},k}(D)g}_{T_fg}
++\underbrace{\sum_{k}\sum_{j\le k-2}\digamma_{\mathrm{map},j}(D)f\,\digamma_{\mathrm{map},k}(D)g}_{T_gf}
++\underbrace{\sum_{|j-k|\le1}\digamma_{\mathrm{map},j}(D)f\,\digamma_{\mathrm{map},k}(D)g}_{R(f,g)},
 $$
 
 in which $T_fg$ collects the terms in which the frequency of $f$ dominates, $T_gf$ the terms in which that of $g$ dominates, and the remainder $R$ the terms of comparable frequency.
@@ -232,7 +232,7 @@ The paraproduct is the standard tool of the nonlinear theory: the product estima
 
 ## Summary
 
-The Besov spaces $B^{s}_{n,m}$ and the Triebel–Lizorkin spaces $F^{s}_{n,m}$ are the two three-parameter scales of smoothness obtained from a dyadic partition of unity $(\varphi_j)$ in the frequency variable. The Besov quasi-norm is $\bigl(\sum_j(2^{js}\|\varphi_j(D)f\|_{L^{n}})^q\bigr)^{1/q}$, the $\ell^{m}$ norm over the frequency blocks followed by the $L^{n}$ norm in space, and the Triebel–Lizorkin quasi-norm is $\bigl\|\bigl(\sum_j(2^{js}|\varphi_j(D)f|)^q\bigr)^{1/q}\bigr\|_{L^{n}}$, the same quantities with the two operations interchanged; they coincide when $p=q$, and in general $B^{s}_{n,\min(n,m)}\hookrightarrow F^{s}_{n,m}\hookrightarrow B^{s}_{n,\max(n,m)}$. The definitions are independent of the partition, the spaces are complete quasi-Banach (Banach for $p,q \ge1$), the lifting $I_\sigma=(1-\Delta)^{-\sigma/2}$ shifts the smoothness index by $\sigma$, and the scale is monotone in $q$. **Bernstein's inequalities** trade derivatives for powers of the frequency, and they are the analytic reason for the factor $2^{js}$.
+The Besov spaces $B^{s}_{n,m}$ and the Triebel–Lizorkin spaces $F^{s}_{n,m}$ are the two three-parameter scales of smoothness obtained from a dyadic partition of unity $(\digamma_{\mathrm{map},j})$ in the frequency variable. The Besov quasi-norm is $\bigl(\sum_j(2^{js}\|\digamma_{\mathrm{map},j}(D)f\|_{L^{n}})^q\bigr)^{1/q}$, the $\ell^{m}$ norm over the frequency blocks followed by the $L^{n}$ norm in space, and the Triebel–Lizorkin quasi-norm is $\bigl\|\bigl(\sum_j(2^{js}|\digamma_{\mathrm{map},j}(D)f|)^q\bigr)^{1/q}\bigr\|_{L^{n}}$, the same quantities with the two operations interchanged; they coincide when $p=q$, and in general $B^{s}_{n,\min(n,m)}\hookrightarrow F^{s}_{n,m}\hookrightarrow B^{s}_{n,\max(n,m)}$. The definitions are independent of the partition, the spaces are complete quasi-Banach (Banach for $p,q \ge1$), the lifting $I_\sigma=(1-\Delta)^{-\sigma/2}$ shifts the smoothness index by $\sigma$, and the scale is monotone in $q$. **Bernstein's inequalities** trade derivatives for powers of the frequency, and they are the analytic reason for the factor $2^{js}$.
 
 The classical spaces are members of the scale: $F^{s}_{n,2}=H^{s}_{n}$ is the Bessel potential space, $F^k_{p,2}=W^{k,n}$ is the Sobolev space, $B^s_{\infty,\infty}=C^s$ is the Hölder–Zygmund space, $F^0_{1,2}=H^1$ is the real Hardy space and $F^0_{\infty,2}=\mathrm{BMO}$; the difference and heat-kernel characterisations identify the scale with the classical Besov definition by the modulus of continuity. The **Sobolev-type embeddings** hold with the exponent determined by $s-\frac np$, they are compact under the strict inequality (Rellich–Kondrachov), and for $s>\frac np$ the spaces are algebras; the **trace** on a hyperplane lands in the scale with the loss $\frac1p$, sharply, and the spaces on a domain are defined by restriction with the corresponding extension theorems. The **atomic and molecular decompositions** compute the quasi-norm from the coefficients of an expansion in localised oscillating pieces, and the wavelet characterisations are the orthonormal form of the same statement. **Real interpolation** of the scales gives the Besov scale, $\bigl(B^{s_0}_{p,q_0},B^{s_1}_{p,q_1}\bigr)_{\vartheta_{\mathrm{itp}},q}=B^{s}_{n,m}$, and **complex interpolation** preserves the family and the fine index, so the Sobolev scale is closed under interpolation; the **Bony paraproduct** decomposes a product into the terms dominated by either factor and the comparable-frequency remainder, and the resulting product estimates make the spaces with $s>\frac np$ algebras and supply the nonlinear estimates of the theory of partial differential equations.
 
@@ -242,8 +242,8 @@ The classical spaces are members of the scale: $F^{s}_{n,2}=H^{s}_{n}$ is the Be
 |---|---|
 | $s$ | smoothness index, $s \in\mathbb{R}$ |
 | $n,m$ | integrability and fine indices, $0<n,m\le\infty$ |
-| $\varphi_j$, $(\varphi_j)$ | Littlewood–Paley blocks, dyadic partition of unity |
-| $\varphi_j(D)$ | Fourier multiplier by $\varphi_j$ |
+| $\digamma_{\mathrm{map},j}$, $(\digamma_{\mathrm{map},j})$ | Littlewood–Paley blocks, dyadic partition of unity |
+| $\digamma_{\mathrm{map},j}(D)$ | Fourier multiplier by $\digamma_{\mathrm{map},j}$ |
 | $B^{s}_{n,m}$ | Besov space |
 | $F^{s}_{n,m}$ | Triebel–Lizorkin space |
 | $\|f\|_{B^{s}_{n,m}}$, $\|f\|_{F^{s}_{n,m}}$ | the corresponding quasi-norms |
@@ -258,7 +258,7 @@ The classical spaces are members of the scale: $F^{s}_{n,2}=H^{s}_{n}$ is the Be
 | $[\,\cdot,\cdot\,]_{\mathrm{itp},\vartheta}$ | complex interpolation functor |
 | $T_fg$, $R(f,g)$ | Bony paraproduct terms |
 | $a_{j,\nu}$, $\lambda_{j,\nu}$ | atoms and coefficients |
-| $\psi_{j,\nu}$ | wavelet basis |
+| $Ξ_{\mathrm{wfn},j,\nu}$ | wavelet basis |
 
 
 ## Further Reading

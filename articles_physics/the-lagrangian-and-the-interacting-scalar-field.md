@@ -153,5 +153,5 @@ $$
 - *The Lagrangian and the Klein–Gordon Equation*, the free companion, whose action, current and stress this article extends.
 - *The Lagrangian and the Coupled Klein–Gordon Equation*, for a different way of making the scalar equation non-trivial: by a connection rather than by a self-interaction.
 - *The Lagrangian and the Second Quantisation: From the Action to the Commutator*, for what would be needed before a four-point function could be written down.
-- Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory*, for the quantised $\phi^{4}$ theory this article deliberately does not construct.
+- Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory*, for the quantised $\xi_{\mathrm{pot}}^{4}$ theory this article deliberately does not construct.
 - Sidney Coleman, *Aspects of Symmetry*, for the classical stability and the effective-mass language.

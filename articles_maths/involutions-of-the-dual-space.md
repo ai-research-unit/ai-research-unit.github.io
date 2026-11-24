@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An involution of a linear space carries over to the dual space by transposition, and the article is about that carried involution: the map $T^{*} : V^{*} \to V^{*}$ defined by $T^{*}\varphi = \varphi \circ T$, its order, its type, the identification of its fixed and negated parts as annihilators of the negated and fixed parts of $T$, its matrix in the dual basis, and the way it interacts with the double dual and with the transpose of a linear map. It is the dual counterpart of the involution of the space, and it is the first of the induced involutions of the `*`-theory group.
+An involution of a linear space carries over to the dual space by transposition, and the article is about that carried involution: the map $T^{*} : V^{*} \to V^{*}$ defined by $T^{*}\digamma_{\mathrm{map}} = \digamma_{\mathrm{map}} \circ T$, its order, its type, the identification of its fixed and negated parts as annihilators of the negated and fixed parts of $T$, its matrix in the dual basis, and the way it interacts with the double dual and with the transpose of a linear map. It is the dual counterpart of the involution of the space, and it is the first of the induced involutions of the `*`-theory group.
 
 *Involutive Linear Spaces* introduces the linear involution, the decomposition $V = V_+ \oplus V_-$, the type $(n,m)$, the trace $n-m$ and the determinant $(-1)^{m}$, and it records, among the induced involutions, that the dual map is an involution of the same type; the detailed study of the dual involution is the business of this article, and none of the general theory is repeated. *The Transpose of a Linear Map* establishes the transposition of a linear map, its contravariance, the annihilator description of kernel and image, and the double dual; those results are cited and used. The pairing-based adjoint of an endomorphism, which identifies $V$ with $V^{*}$ at the cost of a pairing, is *The Adjoint of an Endomorphism*, and the two dualities are related in *The Involution on the Dual Operator*.
 
@@ -10,7 +10,7 @@ Throughout, $F$ is a field, $V$ is a finite-dimensional $F$-linear space, $T$ is
 
 ## The Transposed Involution
 
-**Definition.** The **transposed involution** of $T$ is the map $T^{*} : V^{*} \to V^{*}$ with $T^{*}\varphi = \varphi \circ T$, that is, $(T^{*}\varphi)(v) = \varphi(Tv)$.
+**Definition.** The **transposed involution** of $T$ is the map $T^{*} : V^{*} \to V^{*}$ with $T^{*}\digamma_{\mathrm{map}} = \digamma_{\mathrm{map}} \circ T$, that is, $(T^{*}\digamma_{\mathrm{map}})(v) = \digamma_{\mathrm{map}}(Tv)$.
 
 **Proposition.** $T^{*}$ is linear, it is an involution of $V^{*}$, and it has the same type as $T$:
 
@@ -24,7 +24,7 @@ $$
 \boxed{\;(V^{*})_+ = (V_-)^{0}, \qquad (V^{*})_- = (V_+)^{0}\;} .
 $$
 
-**Proof.** Linearity is the linearity of the composite $\varphi T$ in $\varphi$. By the composition law of the transpose, $(T^2)^{*} = (T^{*})^2$, and $T^2 = \mathrm{id}$ gives $(T^{*})^2 = \mathrm{id}$. For the fixed part, $T^{*}\varphi = \varphi$ means $\varphi(Tv) = \varphi(v)$ for all $v$; on $V_-$ this reads $\varphi(-v) = \varphi(v)$, that is $\varphi(v) = 0$, and on $V_+$ it reads $\varphi(v) = \varphi(v)$; hence $\varphi$ is fixed exactly when it vanishes on $V_-$, which is the definition of $(V_-)^{0}$. The annihilator of $V_-$ has dimension $\dim_F V - m = n$ by *The Transpose of a Linear Map*, which is the dimension of the fixed part of an involution of type $(n,m)$; the negated part is obtained in the same way.
+**Proof.** Linearity is the linearity of the composite $\digamma_{\mathrm{map}} T$ in $\digamma_{\mathrm{map}}$. By the composition law of the transpose, $(T^2)^{*} = (T^{*})^2$, and $T^2 = \mathrm{id}$ gives $(T^{*})^2 = \mathrm{id}$. For the fixed part, $T^{*}\digamma_{\mathrm{map}} = \digamma_{\mathrm{map}}$ means $\digamma_{\mathrm{map}}(Tv) = \digamma_{\mathrm{map}}(v)$ for all $v$; on $V_-$ this reads $\digamma_{\mathrm{map}}(-v) = \digamma_{\mathrm{map}}(v)$, that is $\digamma_{\mathrm{map}}(v) = 0$, and on $V_+$ it reads $\digamma_{\mathrm{map}}(v) = \digamma_{\mathrm{map}}(v)$; hence $\digamma_{\mathrm{map}}$ is fixed exactly when it vanishes on $V_-$, which is the definition of $(V_-)^{0}$. The annihilator of $V_-$ has dimension $\dim_F V - m = n$ by *The Transpose of a Linear Map*, which is the dimension of the fixed part of an involution of type $(n,m)$; the negated part is obtained in the same way.
 
 **Corollary (the fixed dimensions are exchanged).** $\dim_F (V^{*})_+ = n$ and $\dim_F (V^{*})_- = m$, so the trace and the determinant agree,
 
@@ -34,15 +34,15 @@ $$
 
 **Proof.** The dimensions are those of the annihilators, computed in the proposition; the trace is the difference of the two dimensions of the type, and the determinant the sign $(-1)^{m}$.
 
-**Example.** For $n=2$ and $T$ of type $(1,1)$, say $T = \operatorname{diag}(1,-1)$ in a basis $e_1,e_2$ with dual basis $\varphi^{1},\varphi^{2}$, the transposed involution is $\operatorname{diag}(1,-1)$ in the dual basis: $T^{*}\varphi^{1} = \varphi^{1}$ because $\varphi^{1}(Te_1) = 1$ and $\varphi^{1}(Te_2) = 0$, and $T^{*}\varphi^{2} = -\varphi^{2}$. Its fixed part is spanned by $\varphi^{1}$, and $(V_-)^{0}$ is spanned by $\varphi^{1}$, as it must be.
+**Example.** For $n=2$ and $T$ of type $(1,1)$, say $T = \operatorname{diag}(1,-1)$ in a basis $e_1,e_2$ with dual basis $\digamma_{\mathrm{map}}^{1},\digamma_{\mathrm{map}}^{2}$, the transposed involution is $\operatorname{diag}(1,-1)$ in the dual basis: $T^{*}\digamma_{\mathrm{map}}^{1} = \digamma_{\mathrm{map}}^{1}$ because $\digamma_{\mathrm{map}}^{1}(Te_1) = 1$ and $\digamma_{\mathrm{map}}^{1}(Te_2) = 0$, and $T^{*}\digamma_{\mathrm{map}}^{2} = -\digamma_{\mathrm{map}}^{2}$. Its fixed part is spanned by $\digamma_{\mathrm{map}}^{1}$, and $(V_-)^{0}$ is spanned by $\digamma_{\mathrm{map}}^{1}$, as it must be.
 
 ## The Matrix in the Dual Basis
 
-Fix a basis $\mathcal{B} = (v_1,\dots,v_n)$ of $V$ in which $T$ is diagonal, $Tv_i = \varepsilon_i v_i$ with $\varepsilon_i = 1$ for $i \le p$ and $\varepsilon_i = -1$ for $i > p$, and let $\mathcal{B}^{*} = (\varphi_1,\dots,\varphi_n)$ be the dual basis, $\varphi_i(v_j) = \delta_{ij}$.
+Fix a basis $\mathcal{B} = (v_1,\dots,v_n)$ of $V$ in which $T$ is diagonal, $Tv_i = \varepsilon_i v_i$ with $\varepsilon_i = 1$ for $i \le p$ and $\varepsilon_i = -1$ for $i > p$, and let $\mathcal{B}^{*} = (\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},n})$ be the dual basis, $\digamma_{\mathrm{map},i}(v_j) = \delta_{ij}$.
 
-**Proposition.** $T^{*}\varphi_i = \varepsilon_i\varphi_i$, so the matrix of $T^{*}$ in the dual basis is $\operatorname{diag}(\varepsilon_1,\dots,\varepsilon_n)$, the transpose of the matrix of $T$; in an arbitrary basis the matrix of $T^{*}$ in the dual basis is the transpose of the matrix of $T$, as *The Transpose of a Linear Map* records.
+**Proposition.** $T^{*}\digamma_{\mathrm{map},i} = \varepsilon_i\digamma_{\mathrm{map},i}$, so the matrix of $T^{*}$ in the dual basis is $\operatorname{diag}(\varepsilon_1,\dots,\varepsilon_n)$, the transpose of the matrix of $T$; in an arbitrary basis the matrix of $T^{*}$ in the dual basis is the transpose of the matrix of $T$, as *The Transpose of a Linear Map* records.
 
-**Proof.** $(T^{*}\varphi_i)(v_j) = \varphi_i(Tv_j) = \varepsilon_j\delta_{ij} = \varepsilon_i\delta_{ij} = (\varepsilon_i\varphi_i)(v_j)$ for every $j$; the maps agree on a basis, hence are equal.
+**Proof.** $(T^{*}\digamma_{\mathrm{map},i})(v_j) = \digamma_{\mathrm{map},i}(Tv_j) = \varepsilon_j\delta_{ij} = \varepsilon_i\delta_{ij} = (\varepsilon_i\digamma_{\mathrm{map},i})(v_j)$ for every $j$; the maps agree on a basis, hence are equal.
 
 **Remark (the dual basis is adapted, not chosen twice).** The basis diagonalising $T$ also diagonalises $T^{*}$, and the eigenvalues are the same because the two maps have the same matrix entries read in different pairs of indices. This is the matrix reason that the type is preserved, and it shows that no new computation is needed for the dual: the transposition exchanges the two eigenvalues of a non-symmetric situation only when the order of the terms is read in the other direction.
 
@@ -52,7 +52,7 @@ Fix a basis $\mathcal{B} = (v_1,\dots,v_n)$ of $V$ in which $T$ is diagonal, $Tv
 
 **Proposition (the annihilator of a stable subspace is stable).** If $U$ is stable under $T$, then $U^{0} \subseteq V^{*}$ is stable under $T^{*}$, and the induced involution on the dual of the quotient $V/U$ is identified through the canonical isomorphism $(V/U)^{*} \cong U^{0}$ with the restriction of $T^{*}$ to $U^{0}$.
 
-**Proof.** If $\varphi$ vanishes on $U$ and $u \in U$ then $(T^{*}\varphi)(u) = \varphi(Tu)$ vanishes because $Tu \in U$; hence $T^{*}(U^{0}) \subseteq U^{0}$, and the inclusion is an equality because $T^{*}$ is invertible. The canonical identification $(V/U)^{*} \cong U^{0}$ carries a functional on the quotient to its composite with $V \to V/U$, and the transposition commutes with the quotient map, so the induced involution on $(V/U)^{*}$ is the restriction.
+**Proof.** If $\digamma_{\mathrm{map}}$ vanishes on $U$ and $u \in U$ then $(T^{*}\digamma_{\mathrm{map}})(u) = \digamma_{\mathrm{map}}(Tu)$ vanishes because $Tu \in U$; hence $T^{*}(U^{0}) \subseteq U^{0}$, and the inclusion is an equality because $T^{*}$ is invertible. The canonical identification $(V/U)^{*} \cong U^{0}$ carries a functional on the quotient to its composite with $V \to V/U$, and the transposition commutes with the quotient map, so the induced involution on $(V/U)^{*}$ is the restriction.
 
 **Corollary.** If $U = V_+$ or $U = V_-$, then the annihilator is the negated or the fixed part of $V^{*}$, and the involution induced on the dual of the complementary quotient has the type read from the other side.
 
@@ -64,11 +64,11 @@ Fix a basis $\mathcal{B} = (v_1,\dots,v_n)$ of $V$ in which $T$ is diagonal, $Tv
 
 **Proof.** The intertwining is the naturality of the double transpose in *The Transpose of a Linear Map*; the type statement follows because $\mathrm{ev}$ is an isomorphism carrying the decomposition of $V$ to that of $V^{**}$.
 
-**Remark (the involution of the dual is intrinsic).** The description of $(V^{*})_+$ and $(V^{*})_-$ as annihilators uses only $T$ and the evaluation pairing $(v,\varphi) \mapsto \varphi(v)$; no basis and no bilinear pairing on $V$ enters. The dual involution is therefore an invariant of the pair $(V,T)$, and the same construction applies to $V^{**}$ to give back $T$.
+**Remark (the involution of the dual is intrinsic).** The description of $(V^{*})_+$ and $(V^{*})_-$ as annihilators uses only $T$ and the evaluation pairing $(v,\digamma_{\mathrm{map}}) \mapsto \digamma_{\mathrm{map}}(v)$; no basis and no bilinear pairing on $V$ enters. The dual involution is therefore an invariant of the pair $(V,T)$, and the same construction applies to $V^{**}$ to give back $T$.
 
 ## Summary
 
-For a linear involution $T$ of a finite-dimensional space $V$ of type $(n,m)$, the transposed map $T^{*} : V^{*} \to V^{*}$, $T^{*}\varphi = \varphi T$, is a linear involution of the dual of the same type $(n,m)$; its fixed vectors are exactly the functionals vanishing on the negated part $V_-$, and its negated vectors are the functionals vanishing on the fixed part $V_+$, so that $(V^{*})_+ = (V_-)^{0}$ and $(V^{*})_- = (V_+)^{0}$. Its trace and determinant agree with those of $T$. In a basis diagonalising $T$ the transposed involution is diagonalised by the dual basis with the same eigenvalues, and in general its matrix in the dual basis is the transpose of the matrix of $T$. The annihilator of a stable subspace is stable, and the involution induced on the dual of a quotient is the restriction to the annihilator under the canonical identification. The double transpose is $T$ under the evaluation isomorphism, which intertwines the two involutions, and the construction uses no form.
+For a linear involution $T$ of a finite-dimensional space $V$ of type $(n,m)$, the transposed map $T^{*} : V^{*} \to V^{*}$, $T^{*}\digamma_{\mathrm{map}} = \digamma_{\mathrm{map}} T$, is a linear involution of the dual of the same type $(n,m)$; its fixed vectors are exactly the functionals vanishing on the negated part $V_-$, and its negated vectors are the functionals vanishing on the fixed part $V_+$, so that $(V^{*})_+ = (V_-)^{0}$ and $(V^{*})_- = (V_+)^{0}$. Its trace and determinant agree with those of $T$. In a basis diagonalising $T$ the transposed involution is diagonalised by the dual basis with the same eigenvalues, and in general its matrix in the dual basis is the transpose of the matrix of $T$. The annihilator of a stable subspace is stable, and the involution induced on the dual of a quotient is the restriction to the annihilator under the canonical identification. The double transpose is $T$ under the evaluation isomorphism, which intertwines the two involutions, and the construction uses no form.
 
 ## Summary of Notation
 
@@ -80,10 +80,10 @@ For a linear involution $T$ of a finite-dimensional space $V$ of type $(n,m)$, t
 | $T$ | a linear involution of $V$, $T^2=\mathrm{id}_V$ |
 | $(n,m)$ | the type of $T$: $p=\dim V_+$, $q=\dim V_-$ |
 | $V_+ = \ker(T-\mathrm{id})$, $V_- = \ker(T+\mathrm{id})$ | fixed and negated parts of $V$ |
-| $T^{*} : V^{*}\to V^{*}$, $T^{*}\varphi=\varphi T$ | the transposed involution |
+| $T^{*} : V^{*}\to V^{*}$, $T^{*}\digamma_{\mathrm{map}}=\digamma_{\mathrm{map}} T$ | the transposed involution |
 | $(V^{*})_+ = (V_-)^{0}$, $(V^{*})_- = (V_+)^{0}$ | fixed and negated parts of the dual |
 | $U^{0}$ | the annihilator of a subspace $U$ |
-| $\varphi_i$, $\delta_{ij}$ | the dual basis and the Kronecker symbol |
+| $\digamma_{\mathrm{map},i}$, $\delta_{ij}$ | the dual basis and the Kronecker symbol |
 | $\mathrm{ev} : V\to V^{**}$ | the evaluation map |
 | $T^{**}$ | the double transpose, equal to $T$ under $\mathrm{ev}$ |
 

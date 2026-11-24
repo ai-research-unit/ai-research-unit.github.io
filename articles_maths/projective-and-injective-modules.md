@@ -27,7 +27,7 @@ In the language of diagrams, the triangle with vertices $P$, $B$ and $C$, carryi
 
 *Proof.* (i) $\Rightarrow$ (ii): apply the lifting property to $q:B \to P$ and $\operatorname{id}_P:P \to P$; the resulting $s:P \to B$ satisfies $qs=\operatorname{id}_P$, so the sequence splits by the splitting lemma of the exact-sequences article.
 
-(ii) $\Rightarrow$ (iii): choose a surjection $\varphi:L \to P$ with $L$ free, which exists because every module is a quotient of a free module. The sequence $0 \to \ker\varphi \to L \to P \to 0$ splits, so $L \cong P \oplus \ker\varphi$.
+(ii) $\Rightarrow$ (iii): choose a surjection $\digamma_{\mathrm{map}}:L \to P$ with $L$ free, which exists because every module is a quotient of a free module. The sequence $0 \to \ker\digamma_{\mathrm{map}} \to L \to P \to 0$ splits, so $L \cong P \oplus \ker\digamma_{\mathrm{map}}$.
 
 (iii) $\Rightarrow$ (i): write $L=P\oplus K$ with $L$ free, and let $q:B \to C$ be surjective with $f:P \to C$. The map $f \oplus 0:P\oplus K \to C$ lifts to $h:L \to B$ because $L$ is free, and the restriction of $h$ to $P$ is the required lift.
 
@@ -51,15 +51,15 @@ The elements $f_i$ are a **dual basis**: they express the identity of $P$ as a f
 
 ### Traces of Endomorphisms of Projective Modules
 
-The dual basis gives a coordinate-free trace. Let $P$ be finitely generated projective with dual basis $p_1,\dots,p_n$ and $f_1,\dots,f_n$, and let $\varphi \in \operatorname{End}_R(P)$. Define
+The dual basis gives a coordinate-free trace. Let $P$ be finitely generated projective with dual basis $p_1,\dots,p_n$ and $f_1,\dots,f_n$, and let $\digamma_{\mathrm{map}} \in \operatorname{End}_R(P)$. Define
 
 $$
-\operatorname{tr}(\varphi)=\sum_{i=1}^{n} f_i\bigl(\varphi(p_i)\bigr) \in R .
+\operatorname{tr}(\digamma_{\mathrm{map}})=\sum_{i=1}^{n} f_i\bigl(\digamma_{\mathrm{map}}(p_i)\bigr) \in R .
 $$
 
-**Proposition.** The element $\operatorname{tr}(\varphi)$ does not depend on the dual basis; $\operatorname{tr}$ is $R$-linear in $\varphi$; $\operatorname{tr}(\varphi\psi)=\operatorname{tr}(\psi\varphi)$; and $\operatorname{tr}(\operatorname{id}_P)$ localises at each prime $\mathrm{P}$ to the rank of $P_{\mathrm{P}}$ over $R_{\mathrm{P}}$.
+**Proposition.** The element $\operatorname{tr}(\digamma_{\mathrm{map}})$ does not depend on the dual basis; $\operatorname{tr}$ is $R$-linear in $\digamma_{\mathrm{map}}$; $\operatorname{tr}(\digamma_{\mathrm{map}}Ξ_{\mathrm{wfn}})=\operatorname{tr}(Ξ_{\mathrm{wfn}}\digamma_{\mathrm{map}})$; and $\operatorname{tr}(\operatorname{id}_P)$ localises at each prime $\mathrm{P}$ to the rank of $P_{\mathrm{P}}$ over $R_{\mathrm{P}}$.
 
-*Proof.* Write $P$ as a direct summand of a free module $L$ of rank $n$ and extend $\varphi$ to $\varphi\oplus 0$ on $L$. Choosing the dual basis of $L$ to be the coordinate functionals of a basis $e_1,\dots,e_n$, the formula computes the ordinary matrix trace of $\varphi\oplus 0$, which is independent of the basis of $L$. Since the two dual bases of $P$ obtained from two complements both arise from bases of ambient free modules connected by an invertible matrix, independence follows. Linearity and the trace identity are inherited from the matrix case, and the value on $\operatorname{id}_P$ is $n$, the rank of $P$ at primes over which $P$ is free of rank $n$.
+*Proof.* Write $P$ as a direct summand of a free module $L$ of rank $n$ and extend $\digamma_{\mathrm{map}}$ to $\digamma_{\mathrm{map}}\oplus 0$ on $L$. Choosing the dual basis of $L$ to be the coordinate functionals of a basis $e_1,\dots,e_n$, the formula computes the ordinary matrix trace of $\digamma_{\mathrm{map}}\oplus 0$, which is independent of the basis of $L$. Since the two dual bases of $P$ obtained from two complements both arise from bases of ambient free modules connected by an invertible matrix, independence follows. Linearity and the trace identity are inherited from the matrix case, and the value on $\operatorname{id}_P$ is $n$, the rank of $P$ at primes over which $P$ is free of rank $n$.
 
 The trace of an endomorphism of a projective module is used to define the characteristic polynomial when $P$ is projective of constant rank, and it is the invariant in terms of which the determinant of an automorphism is computed in the article of this category on the special linear group.
 
@@ -85,7 +85,7 @@ so $Re$ is projective. It is not free: a nonzero free $R$-module has at least $|
 
 **Theorem (local rings).** If $(R,\mathrm{M})$ is a local ring, then every finitely generated projective $R$-module is free.
 
-*Proof.* Let $P$ be finitely generated projective and choose a minimal surjection $\varphi:R^n \to P$, possible by Nakayama's lemma with $n=\dim_k(P/\mathrm{M}P)$, $k=R/\mathrm{M}$. Since $P$ is projective, $\varphi$ splits, so $R^n \cong P \oplus K$ with $K=\ker\varphi$. Tensoring the isomorphism $R^n \cong P \oplus K$ with $k=R/\mathrm{M}$, which carries $R^n$ to $k^n$, gives $k^n \cong P/\mathrm{M}P \oplus K/\mathrm{M}K$; the first summand has dimension $n$ by the choice of $n$, so $K/\mathrm{M}K=0$, and Nakayama's lemma gives $K=0$. Hence $P \cong R^n$.
+*Proof.* Let $P$ be finitely generated projective and choose a minimal surjection $\digamma_{\mathrm{map}}:R^n \to P$, possible by Nakayama's lemma with $n=\dim_k(P/\mathrm{M}P)$, $k=R/\mathrm{M}$. Since $P$ is projective, $\digamma_{\mathrm{map}}$ splits, so $R^n \cong P \oplus K$ with $K=\ker\digamma_{\mathrm{map}}$. Tensoring the isomorphism $R^n \cong P \oplus K$ with $k=R/\mathrm{M}$, which carries $R^n$ to $k^n$, gives $k^n \cong P/\mathrm{M}P \oplus K/\mathrm{M}K$; the first summand has dimension $n$ by the choice of $n$, so $K/\mathrm{M}K=0$, and Nakayama's lemma gives $K=0$. Hence $P \cong R^n$.
 
 **Theorem (principal ideal domains).** Over a principal ideal domain every projective module is free.
 

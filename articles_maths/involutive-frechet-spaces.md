@@ -58,7 +58,7 @@ is a topological direct sum of Fréchet spaces.
 
 ## The Strong Dual
 
-**Theorem (the transposed involution on the strong dual).** The strong dual $E'_{b}$ is a complete locally convex space, the transposed involution $\mathrm{J}'(\varphi) = \varphi\circ\mathrm{J}$ is a continuous involution of the same kind, and its fixed and negated subspaces are the annihilators
+**Theorem (the transposed involution on the strong dual).** The strong dual $E'_{b}$ is a complete locally convex space, the transposed involution $\mathrm{J}'(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map}}\circ\mathrm{J}$ is a continuous involution of the same kind, and its fixed and negated subspaces are the annihilators
 
 $$
 \boxed{\;(E'_{b})^{\mathrm{J}'} = (E^{-})^{\circ}, \qquad (E'_{b})^{-} = (E^{\mathrm{J}})^{\circ}\;} ,
@@ -95,7 +95,7 @@ On a Fréchet space a $\varsigma$-semilinear involution is continuous exactly wh
 | $E^{\mathrm{J}}$, $E^{-}$ | Closed summands, Fréchet spaces |
 | $\pi_{1,2} = \frac12(\mathrm{id}\pm\mathrm{J})$ | Continuous averaging projections |
 | $E'_{b}$ | Strong dual, complete |
-| $\mathrm{J}'(\varphi) = \varphi\circ\mathrm{J}$ | Transposed involution on the strong dual |
+| $\mathrm{J}'(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map}}\circ\mathrm{J}$ | Transposed involution on the strong dual |
 | $(E^{-})^{\circ}$, $(E^{\mathrm{J}})^{\circ}$ | Annihilators, the dual summands |
 
 ## Further Reading

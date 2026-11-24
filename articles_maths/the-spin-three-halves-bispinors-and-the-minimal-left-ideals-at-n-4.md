@@ -8,15 +8,15 @@
 
 **It assumes** *Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$* and *The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$*. The row at order two is *The Spin-$\tfrac12$ Bispinors and the Minimal Left Ideals*.
 
-**The result in one line.** For a fixed nonzero dual spinor $\bar\chi$, the set $\{\psi\bar\chi^{\dagger}\}$ is a minimal left ideal of dimension four, and every minimal left ideal arises this way from a line of dual spinors.
+**The result in one line.** For a fixed nonzero dual spinor $\bar\chi$, the set $\{Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}\}$ is a minimal left ideal of dimension four, and every minimal left ideal arises this way from a line of dual spinors.
 
 **Boundaries.** The article treats the rank-one bispinors and the ideals they generate; the higher-rank bispinors are the subject of the rank articles.
 
 ## From a Spinor to a Bispinor
 
-**Proposition.** For fixed nonzero $\bar\chi$ the map $\psi\mapsto\psi\bar\chi^{\dagger}$ is injective and linear, with image the set of matrices whose rows are multiples of the row $\bar\chi^{\dagger}$.
+**Proposition.** For fixed nonzero $\bar\chi$ the map $Ξ_{\mathrm{wfn}}\mapstoΞ_{\mathrm{wfn}}\bar\chi^{\dagger}$ is injective and linear, with image the set of matrices whose rows are multiples of the row $\bar\chi^{\dagger}$.
 
-*Proof.* The matrix $\psi\bar\chi^{\dagger}$ has entries $\psi_i\bar\chi_j$, so each row is $\bar\chi_j$ times the vector $\psi$; the map is injective because $\bar\chi\neq0$ gives a nonzero functional.
+*Proof.* The matrix $Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}$ has entries $Ξ_{\mathrm{wfn},i}\bar\chi_j$, so each row is $\bar\chi_j$ times the vector $Ξ_{\mathrm{wfn}}$; the map is injective because $\bar\chi\neq0$ gives a nonzero functional.
 
 **Corollary.** The image has dimension four, and its nonzero elements have rank one.
 
@@ -24,13 +24,13 @@
 
 **Corollary.** The image is closed under left multiplication by any matrix and not under right multiplication.
 
-*Proof.* $A(\psi\bar\chi^{\dagger})=(A\psi)\bar\chi^{\dagger}$ stays in the image; $(\psi\bar\chi^{\dagger})B=\psi(\bar\chi^{\dagger}B)$ changes the functional unless $B$ preserves the line.
+*Proof.* $A(Ξ_{\mathrm{wfn}}\bar\chi^{\dagger})=(AΞ_{\mathrm{wfn}})\bar\chi^{\dagger}$ stays in the image; $(Ξ_{\mathrm{wfn}}\bar\chi^{\dagger})B=Ξ_{\mathrm{wfn}}(\bar\chi^{\dagger}B)$ changes the functional unless $B$ preserves the line.
 
 **The reading.** The construction is the multiplication of the module by a fixed functional, and it produces a space of rank-one bispinors closed on the left.
 
 ## The Fibres Are the Ideals
 
-**Proposition.** The image of the map is the minimal left ideal $M_4P$ where $P$ is the rank-one idempotent projecting onto the line of the spinor $\psi_0$ paired with $\bar\chi$ to one.
+**Proposition.** The image of the map is the minimal left ideal $M_4P$ where $P$ is the rank-one idempotent projecting onto the line of the spinor $Ξ_{\mathrm{wfn},0}$ paired with $\bar\chi$ to one.
 
 *Proof.* The ideal $M_4P$ consists of the matrices whose rows lie in the row space of $P$, which is spanned by $\bar\chi^{\dagger}$; both spaces are four-dimensional and one contains the other.
 
@@ -106,7 +106,7 @@
 
 ## Summary
 
-For a fixed nonzero dual spinor the map $\psi\mapsto\psi\bar\chi^{\dagger}$ has a four-dimensional image, consisting of the matrices whose rows are multiples of the dual spinor, and that image is a minimal left ideal. Every minimal left ideal arises this way from a line of dual spinors, so the ideals are parametrised by $\mathbb{P}^{3}$.
+For a fixed nonzero dual spinor the map $Ξ_{\mathrm{wfn}}\mapstoΞ_{\mathrm{wfn}}\bar\chi^{\dagger}$ has a four-dimensional image, consisting of the matrices whose rows are multiples of the dual spinor, and that image is a minimal left ideal. Every minimal left ideal arises this way from a line of dual spinors, so the ideals are parametrised by $\mathbb{P}^{3}$.
 
 The right ideals are obtained by fixing the first factor, and the intersection of a left ideal with a right ideal is a line spanned by a rank-one bispinor. The two-sided ideals are trivial.
 
@@ -114,7 +114,7 @@ The right ideals are obtained by fixing the first factor, and the intersection o
 
 | Symbol | Meaning |
 |---|---|
-| $\psi\bar\chi^{\dagger}$ | a rank-one bispinor |
+| $Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}$ | a rank-one bispinor |
 | $M_4P$ | the minimal left ideal it generates |
 | $\mathbb{P}^{3}$ | the parameter space of the ideals |
 | $3+3=6$ | the parameters of a rank-one idempotent |

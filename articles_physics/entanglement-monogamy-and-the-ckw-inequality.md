@@ -28,7 +28,7 @@ The article uses [Multi-Partite Entanglement: GHZ, W and the Three-Qubit Classif
 
 ## The Inequality
 
-The statement. Let $\lvert\psi\rangle\in(\mathbb{C}^2)^{\otimes3}$ be normalised, let $\rho_{AB}$, $\rho_{AC}$ and $\rho_A$ be the reductions, and let $C$ denote the Wootters concurrence. Then
+The statement. Let $\lvertΞ_{\mathrm{wfn}}\rangle\in(\mathbb{C}^2)^{\otimes3}$ be normalised, let $\rho_{AB}$, $\rho_{AC}$ and $\rho_A$ be the reductions, and let $C$ denote the Wootters concurrence. Then
 
 $$
 C(\rho_{AB})^{2}+C(\rho_{AC})^{2}\ \le\ 4\det\rho_A .

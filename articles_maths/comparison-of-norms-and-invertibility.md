@@ -123,7 +123,7 @@ Each algebra of the table has a polar decomposition $\tilde Q_1=\varrho u$ of ev
 | polar data | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{C}_{\mathrm{spl}}$ | $\mathbb{C}_{\mathrm{dln}}$ | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{spl}}$ | $\mathbb{B}$ | $\mathbb{B}_{\mathrm{spl}}$ |
 |---|---|---|---|---|---|---|---|---|
 | modulus | $\lvert q\rvert$ | $\sqrt{N}$ | $\sqrt{\lvert N\rvert}$ | $\lvert a\rvert$ | $\sqrt{N}$ | $\sqrt{\lvert N\rvert}$ | $\sqrt{\lvert N\rvert}$ | $\varrho_\pm=\lvert\tilde q\pm\tilde q'\rvert$ |
-| unit factor | discrete, $\{\pm1\}$ | compact, $\mathrm{U}(1)$ | hyperbolic, $\exp(\phi j)$ | parabolic, $1+\mathrm{M}$ | compact, $Sp(1)$ | compact and hyperbolic | compact and hyperbolic | hyperbolic central, compact rotor |
+| unit factor | discrete, $\{\pm1\}$ | compact, $\mathrm{U}(1)$ | hyperbolic, $\exp(\digamma_{\mathrm{map}} j)$ | parabolic, $1+\mathrm{M}$ | compact, $Sp(1)$ | compact and hyperbolic | compact and hyperbolic | hyperbolic central, compact rotor |
 | boundary | $\{0\}$ | $\{0\}$ | null cone | $\mathrm{M}$ | $\{0\}$ | null cone | null cone | none |
 | series | definite | definite | indefinite | indefinite | definite | indefinite | definite | indefinite |
 
@@ -157,7 +157,7 @@ The norm of each of the eight algebras is multiplicative, and the eight divide b
 | $\mathrm{U}(1), Sp(1)=S^3$ | the compact groups of invertibles of $\mathbb{C}$ and $\mathbb{H}$ |
 | $\mathbb{R}_{>0}$ | the positive scalars, the identity component of $\mathbb{R}^\times$ |
 | $\tilde Q_1=\varrho u$ | the polar decomposition of an element: modulus and unit factor |
-| $\exp(\phi j),\exp(j\tau)$ | the hyperbolic unit factors of $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{B}_{\mathrm{spl}}$ |
+| $\exp(\digamma_{\mathrm{map}} j),\exp(j\tau)$ | the hyperbolic unit factors of $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{B}_{\mathrm{spl}}$ |
 | $1+\mathrm{M}$ | the parabolic unit factor of $\mathbb{C}_{\mathrm{dln}}$ |
 | $GL_2(\mathbb{R}), GL(2,\mathbb{C})$ | groups of invertibles of $\mathbb{H}_{\mathrm{spl}}$ and $\mathbb{B}$ |
 | $\pi_0,\pi_1$ | the components and the fundamental group of the group of invertibles |

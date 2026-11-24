@@ -135,9 +135,9 @@ Conversely, if $x^*$ is feasible and such multipliers exist, then $x^*$ is optim
 
 **Proof sketch.** The programme is rewritten as $\min\lvert f_0+\delta_{\{f_i\leq0\}}+\delta_{\{Ax = b\}}\rvert$ and the Fenchel duality theorem is applied with the qualification provided by Slater's condition, which supplies the relative interior point required; the stationarity condition is the subdifferential sum rule, valid under the same qualification; the converse is the direct computation of the Lagrangian inequality.
 
-**Theorem (minimax).** Let $K\subseteq\mathbb{R}^n$ and $L\subseteq\mathbb{R}^m$ be nonempty compact convex sets, and let $\phi:K\times L\to\mathbb{R}$ be continuous, convex in its first variable and concave in its second. Then
+**Theorem (minimax).** Let $K\subseteq\mathbb{R}^n$ and $L\subseteq\mathbb{R}^m$ be nonempty compact convex sets, and let $\digamma_{\mathrm{map}}:K\times L\to\mathbb{R}$ be continuous, convex in its first variable and concave in its second. Then
 $$
-\boxed{\;\min_{x\in K}\max_{y\in L}\phi(x,y) = \max_{y\in L}\min_{x\in K}\phi(x,y)\;}.
+\boxed{\;\min_{x\in K}\max_{y\in L}\digamma_{\mathrm{map}}(x,y) = \max_{y\in L}\min_{x\in K}\digamma_{\mathrm{map}}(x,y)\;}.
 $$
 **Proof sketch.** That the left side is at least the right is the weak duality; for equality one uses the convexity and concavity to reduce to the minimisation of a convex function on $K$ and applies the supporting hyperplane theorem in the product $K\times L$, or invokes the general minimax theorem of Sion, of which this is the compact case, proved by the same separation.
 

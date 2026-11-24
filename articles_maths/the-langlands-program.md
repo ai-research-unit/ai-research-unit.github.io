@@ -95,10 +95,10 @@ $$
 \boxed{\;\left\{ \text{irreducible admissible representations } \pi \text{ of } GL_n(F) \right\} \longleftrightarrow \left\{ \text{$n$-dimensional Frobenius-semisimple Weil–Deligne representations } \rho \text{ of } W_F \right\}\;},
 $$
 
-characterised by the equality of local factors: for every irreducible representation $\pi$ and its parameter $\rho = \phi_\pi$, and for every character $\chi$ of $F^\times$,
+characterised by the equality of local factors: for every irreducible representation $\pi$ and its parameter $\rho = \digamma_{\mathrm{map},\pi}$, and for every character $\chi$ of $F^\times$,
 
 $$
-\gamma(s, \pi \times \chi, \psi) = \gamma(s, \rho \otimes \chi, \psi),
+\gamma(s, \pi \times \chi, Ξ_{\mathrm{wfn}}) = \gamma(s, \rho \otimes \chi, Ξ_{\mathrm{wfn}}),
 $$
 
 where the local $\gamma$-factors on the left are those defined by the zeta integrals of *Automorphic Forms* and the local constants on the right are those of Weil–Deligne representations; equivalently, the twisted local $L$-factors and $\varepsilon$-factors agree.
@@ -108,7 +108,7 @@ The theorem is the precise form of the local reciprocity for $GL_n$, and it was 
 **Definition.** An **$L$-parameter** for $G$ over $F$ is a homomorphism
 
 $$
-\phi : W_F \times SL_2(\mathbb{C}) \longrightarrow {}^L G
+\digamma_{\mathrm{map}} : W_F \times SL_2(\mathbb{C}) \longrightarrow {}^L G
 $$
 
 whose restriction to $W_F$ is continuous, whose images of the two factors commute, and whose composition with ${}^L G \to W_F$ is the identity map on $W_F$; the factor $SL_2(\mathbb{C})$ encodes the monodromy and is the algebraic form of the unipotent part of the Weil–Deligne representation. The local conjecture is that the irreducible admissible representations of $G(F)$ are parameterised by the $L$-parameters up to conjugacy by $\hat G$, and that the fibres are the **$L$-packets**.
@@ -117,13 +117,13 @@ whose restriction to $W_F$ is continuous, whose images of the two factors commut
 
 The local Langlands correspondence is characterised by the equality of local factors, and this is what makes it a working theorem rather than a classification alone.
 
-**Definition.** For an $L$-parameter $\phi$ of $GL_n(F)$ the **local $L$-factor** and **$ \varepsilon$-factor** are
+**Definition.** For an $L$-parameter $\digamma_{\mathrm{map}}$ of $GL_n(F)$ the **local $L$-factor** and **$ \varepsilon$-factor** are
 
 $$
-L(s, \phi) = \det\!\left(1 - \phi(\operatorname{Frob})\, q^{-s}\right)^{-1}, \qquad \varepsilon(s, \phi, \psi) = \varepsilon(\phi)\, q^{-c(s-1/2)},
+L(s, \digamma_{\mathrm{map}}) = \det\!\left(1 - \digamma_{\mathrm{map}}(\operatorname{Frob})\, q^{-s}\right)^{-1}, \qquad \varepsilon(s, \digamma_{\mathrm{map}}, Ξ_{\mathrm{wfn}}) = \varepsilon(\digamma_{\mathrm{map}})\, q^{-c(s-1/2)},
 $$
 
-for unramified $\phi$, with the general case defined by the local analysis of the Weil–Deligne representation; $c$ is the conductor and $\psi$ a nontrivial additive character.
+for unramified $\digamma_{\mathrm{map}}$, with the general case defined by the local analysis of the Weil–Deligne representation; $c$ is the conductor and $Ξ_{\mathrm{wfn}}$ a nontrivial additive character.
 
 The local factors are multiplicative in exact sequences — the inductivity of $\gamma$-factors — and this multiplicativity is the technical reason functoriality can be formulated: a homomorphism of $L$-groups transfers parameters, and the equality of local factors transfers the corresponding automorphic data.
 
@@ -131,10 +131,10 @@ The local factors are multiplicative in exact sequences — the inductivity of $
 
 ### The Conjecture
 
-**Conjecture (global Langlands reciprocity).** Let $F$ be a number field and $G$ a connected reductive group over $F$. Then there is a partition of the set of automorphic representations of $G(\mathbb{A}_F)$ into $L$-packets in such a way that the packets are in bijection with the global $L$-parameters $W_F \to {}^L G$ whose local components are the parameters of the local packets, and the $L$-functions correspond: for a parameter $\phi = \otimes_v\phi_v$ and the packet $\Pi_\phi = \otimes'_v \Pi_{\phi_v}$,
+**Conjecture (global Langlands reciprocity).** Let $F$ be a number field and $G$ a connected reductive group over $F$. Then there is a partition of the set of automorphic representations of $G(\mathbb{A}_F)$ into $L$-packets in such a way that the packets are in bijection with the global $L$-parameters $W_F \to {}^L G$ whose local components are the parameters of the local packets, and the $L$-functions correspond: for a parameter $\digamma_{\mathrm{map}} = \otimes_v\digamma_{\mathrm{map},v}$ and the packet $\Pi_\digamma_{\mathrm{map}} = \otimes'_v \Pi_{\digamma_{\mathrm{map},v}}$,
 
 $$
-L(s, \Pi_\phi) = L(s, \phi) = \prod_v L(s, \phi_v).
+L(s, \Pi_\digamma_{\mathrm{map}}) = L(s, \digamma_{\mathrm{map}}) = \prod_v L(s, \digamma_{\mathrm{map},v}).
 $$
 
 The conjecture has two directions. The **arithmetic-to-automorphic** direction attaches to each Galois representation an automorphic representation with the same $L$-function; the **automorphic-to-arithmetic** direction asserts that every automorphic representation of the relevant type arises this way, and it is the form taken by the Fontaine–Mazur conjecture: a geometric $\ell$-adic Galois representation of a number field should be automorphic. The two directions are the content of the reciprocity between the Galois world and the automorphic world.
@@ -168,7 +168,7 @@ $$
 be an $L$-homomorphism — a homomorphism of the $L$-groups respecting the projections to $W_F$ and algebraic on the dual groups. Then there is a **transfer** of automorphic representations: to each automorphic representation $\pi$ of $H(\mathbb{A}_F)$ there corresponds an automorphic representation $\Pi$ of $G(\mathbb{A}_F)$ such that, for every finite-dimensional representation $r$ of ${}^L G$,
 
 $$
-L(s, \Pi, r) = L(s, \pi, r \circ {}^L\phi),
+L(s, \Pi, r) = L(s, \pi, r \circ {}^L\digamma_{\mathrm{map}}),
 $$
 
 so that the $L$-functions of $\pi$ and $\Pi$ agree for all the representations of the dual groups related by the $L$-homomorphism.
@@ -213,7 +213,7 @@ The functorial layer is the principle that an $L$-homomorphism ${}^L H \to {}^L 
 | $L(s,\rho)$ | Artin $L$-function of a Galois representation |
 | $\hat G$, ${}^L G = \hat G \rtimes W_F$ | Langlands dual group and $L$-group |
 | $L$-parameter, $L$-packet | homomorphism $W_F\times SL_2(\mathbb{C})\to{}^L G$, and its fibre of representations |
-| $\gamma(s,\pi\times\chi,\psi)$, $\varepsilon(s,\phi,\psi)$ | Local gamma and epsilon factors |
+| $\gamma(s,\pi\times\chi,Ξ_{\mathrm{wfn}})$, $\varepsilon(s,\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})$ | Local gamma and epsilon factors |
 | $L(s,\pi)$, $\Lambda(s,\pi)$ | Automorphic $L$-function and its completion |
 | $BC_{E/F}$ | Cyclic base change |
 | $AI_{E/F}$ | Automorphic induction |

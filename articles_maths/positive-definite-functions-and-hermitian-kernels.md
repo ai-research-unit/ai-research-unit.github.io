@@ -10,8 +10,8 @@ $(K(x_i,x_j))$ it produces is positive semidefinite,
 $$
 \sum_{i,j=1}^n\overline{c_i}c_jK(x_i,x_j)\geq0
 $$
-for all choices of points and coefficients. A function $\varphi$ on a group is positive definite when the
-kernel $K(x,y)=\varphi(x-y)$ is, and the two notions are the two faces of one object: a positive definite
+for all choices of points and coefficients. A function $\digamma_{\mathrm{map}}$ on a group is positive definite when the
+kernel $K(x,y)=\digamma_{\mathrm{map}}(x-y)$ is, and the two notions are the two faces of one object: a positive definite
 function is exactly a Hermitian positive definite kernel that is translation invariant. The central theorem
 of the subject is **Bochner's theorem**: a continuous positive definite function on $\mathbb R^n$ is the
 Fourier transform of a unique finite positive measure, so that positive definiteness is the same condition
@@ -66,8 +66,8 @@ $$
 \sum_{i,j=1}^n\overline{c_i}c_jK(x_i,x_j)\geq0 ,
 $$
 equivalently if every finite matrix $(K(x_i,x_j))_{i,j=1}^n$ is Hermitian positive semidefinite; a
-**positive definite function** on a group is a function $\varphi$ for which the kernel
-$K(x,y)=\varphi(x-y)$ is positive definite.
+**positive definite function** on a group is a function $\digamma_{\mathrm{map}}$ for which the kernel
+$K(x,y)=\digamma_{\mathrm{map}}(x-y)$ is positive definite.
 
 **Theorem (positivity implies Hermitian).** Every positive definite kernel is Hermitian.
 
@@ -98,33 +98,33 @@ operator. The dictionary is proved there.
 
 ### Definition and Elementary Properties
 
-**Definition.** Let $G$ be an abelian group written additively. A function $\varphi:G\to\mathbb C$ is
+**Definition.** Let $G$ be an abelian group written additively. A function $\digamma_{\mathrm{map}}:G\to\mathbb C$ is
 **positive definite** if
 $$
-\sum_{i,j=1}^n\overline{c_i}c_j\varphi(x_i-x_j)\geq0
+\sum_{i,j=1}^n\overline{c_i}c_j\digamma_{\mathrm{map}}(x_i-x_j)\geq0
 $$
 for all $n$, all $x_i\in G$ and all $c_i\in\mathbb C$; it is **Hermitian** if
-$\varphi(-x)=\overline{\varphi(x)}$.
+$\digamma_{\mathrm{map}}(-x)=\overline{\digamma_{\mathrm{map}}(x)}$.
 
-**Theorem (elementary properties).** For a positive definite function $\varphi$:
+**Theorem (elementary properties).** For a positive definite function $\digamma_{\mathrm{map}}$:
 $$
-\varphi(0)\geq0,\qquad \varphi(-x)=\overline{\varphi(x)},\qquad \lvert\varphi(x)\rvert\leq\varphi(0),
-\qquad \varphi(x-x)=\overline{\varphi(x-x)} .
+\digamma_{\mathrm{map}}(0)\geq0,\qquad \digamma_{\mathrm{map}}(-x)=\overline{\digamma_{\mathrm{map}}(x)},\qquad \lvert\digamma_{\mathrm{map}}(x)\rvert\leq\digamma_{\mathrm{map}}(0),
+\qquad \digamma_{\mathrm{map}}(x-x)=\overline{\digamma_{\mathrm{map}}(x-x)} .
 $$
-If $\varphi(0)=0$ then $\varphi=0$; if $\varphi$ is not identically zero then $\varphi(0)>0$.
+If $\digamma_{\mathrm{map}}(0)=0$ then $\digamma_{\mathrm{map}}=0$; if $\digamma_{\mathrm{map}}$ is not identically zero then $\digamma_{\mathrm{map}}(0)>0$.
 
 **Proof.** The first is the $1\times1$ case; the second is the Hermitian property of the kernel
-$K(x,y)=\varphi(x-y)$ established above, which gives
-$\varphi(x-y)=\overline{\varphi(y-x)}$ and hence $\varphi(-x)=\overline{\varphi(x)}$ at $y=0$; the third is
-the Cauchy–Schwarz inequality applied to $K(x,0)=\varphi(x)$, $K(x,x)=\varphi(0)$ and $K(0,0)=\varphi(0)$.
+$K(x,y)=\digamma_{\mathrm{map}}(x-y)$ established above, which gives
+$\digamma_{\mathrm{map}}(x-y)=\overline{\digamma_{\mathrm{map}}(y-x)}$ and hence $\digamma_{\mathrm{map}}(-x)=\overline{\digamma_{\mathrm{map}}(x)}$ at $y=0$; the third is
+the Cauchy–Schwarz inequality applied to $K(x,0)=\digamma_{\mathrm{map}}(x)$, $K(x,x)=\digamma_{\mathrm{map}}(0)$ and $K(0,0)=\digamma_{\mathrm{map}}(0)$.
 
-**Theorem (the correspondence).** A Hermitian function $\varphi$ on $G$ is positive definite if and only if
-the kernel $K(x,y)=\varphi(x-y)$ is positive definite; the matching is a bijection between the positive
+**Theorem (the correspondence).** A Hermitian function $\digamma_{\mathrm{map}}$ on $G$ is positive definite if and only if
+the kernel $K(x,y)=\digamma_{\mathrm{map}}(x-y)$ is positive definite; the matching is a bijection between the positive
 definite functions and the translation-invariant positive definite kernels on $G$.
 
-**Proof.** The kernel $K(x,y)=\varphi(x-y)$ is translation invariant by construction, and its positive
-definiteness is the displayed condition for $\varphi$; conversely a translation-invariant kernel is
-determined by $\varphi(z)=K(z,0)$, and the Hermitian property of $K$ is the Hermitian property of $\varphi$.
+**Proof.** The kernel $K(x,y)=\digamma_{\mathrm{map}}(x-y)$ is translation invariant by construction, and its positive
+definiteness is the displayed condition for $\digamma_{\mathrm{map}}$; conversely a translation-invariant kernel is
+determined by $\digamma_{\mathrm{map}}(z)=K(z,0)$, and the Hermitian property of $K$ is the Hermitian property of $\digamma_{\mathrm{map}}$.
 
 ### Examples
 
@@ -132,11 +132,11 @@ determined by $\varphi(z)=K(z,0)$, and the Hermitian property of $K$ is the Herm
 group $\widehat G$ of a group $G$ (on a finite abelian group, a positive measure on the finite set of
 characters). Then
 $$
-\varphi(x)=\int_{\widehat G}\chi(x)\,d\mu(\chi)
+\digamma_{\mathrm{map}}(x)=\int_{\widehat G}\chi(x)\,d\mu(\chi)
 $$
 is positive definite, because for every finite collection
 $$
-\sum_{i,j}\overline{c_i}c_j\varphi(x_i-x_j)
+\sum_{i,j}\overline{c_i}c_j\digamma_{\mathrm{map}}(x_i-x_j)
 =\int_{\widehat G}\Bigl\lvert\sum_ic_i\chi(x_i)\Bigr\rvert^2d\mu(\chi)\geq0 ,
 $$
 using $\chi(x_i-x_j)=\chi(x_i)\overline{\chi(x_j)}$. Every positive definite function of a finite abelian
@@ -146,53 +146,53 @@ instance of Bochner's theorem.
 **Example (the Gaussian and the characteristic functions).** On $\mathbb R$ the functions $\exp(-\pi tx^2)$
 for $t>0$ are positive definite, with the measure $\mu$ of density $\sqrt t\,\exp(-\pi t\zeta^2)$ in Bochner's
 theorem below; more generally the characteristic function of any probability measure,
-$\varphi(x)=\int \exp(2\pi ix\zeta)d\mu(\zeta)$ with $\mu\geq0$ and $\mu(\mathbb R)=1$, is positive definite. A
+$\digamma_{\mathrm{map}}(x)=\int \exp(2\pi ix\zeta)d\mu(\zeta)$ with $\mu\geq0$ and $\mu(\mathbb R)=1$, is positive definite. A
 function that is not Hermitian is not positive definite: the real cosine
 $\cos(2\pi\zeta_0x)=\frac12(\exp(2\pi i\zeta_0x)+\exp(-2\pi i\zeta_0x))$ is positive definite, with
-$\mu=\frac12(\delta_{\zeta_0}+\delta_{-\zeta_0})$, while $\varphi(x)=\exp(2\pi i\zeta_0x)$ is Hermitian and positive
+$\mu=\frac12(\delta_{\zeta_0}+\delta_{-\zeta_0})$, while $\digamma_{\mathrm{map}}(x)=\exp(2\pi i\zeta_0x)$ is Hermitian and positive
 definite because it is a character, and a function such as $\mathrm i\sin(2\pi\zeta_0x)$ fails the Hermitian
 condition.
 
-**Example (the point mass).** On a discrete group the function $\varphi=\mathbf 1_{\{0\}}$, equal to $1$ at
+**Example (the point mass).** On a discrete group the function $\digamma_{\mathrm{map}}=\mathbf 1_{\{0\}}$, equal to $1$ at
 the identity and $0$ elsewhere, is positive definite, with the measure $\mu$ the normalised Haar measure of
 the compact character group; on $\mathbb Z$ this is the constant measure $d\mu=d\theta$ on the circle, and
-$\varphi(n)=\int_0^1\exp(2\pi in\theta)d\theta=\delta_{n0}$. This is the positive definite function of the
+$\digamma_{\mathrm{tot}}(n)=\int_0^1\exp(2\pi in\theta)d\theta=\delta_{n0}$. This is the positive definite function of the
 regular representation, and its kernel is the identity kernel $K(x,y)=\mathbf 1_{\{x=y\}}$.
 
 ## Bochner's Theorem
 
 ### Statement
 
-**Theorem (Bochner, Euclidean form).** A continuous function $\varphi:\mathbb R^n\to\mathbb C$ is positive
+**Theorem (Bochner, Euclidean form).** A continuous function $\digamma_{\mathrm{map}}:\mathbb R^n\to\mathbb C$ is positive
 definite if and only if there is a unique finite positive measure $\mu$ on $\mathbb R^n$, with
-$\mu(\mathbb R^n)=\varphi(0)$, such that
+$\mu(\mathbb R^n)=\digamma_{\mathrm{map}}(0)$, such that
 $$
-\boxed{\;\varphi(x)=\int_{\mathbb R^n}\exp(2\pi ix\cdot\zeta)\,d\mu(\zeta)\qquad\text{for all }x\in\mathbb R^n\;} .
+\boxed{\;\digamma_{\mathrm{map}}(x)=\int_{\mathbb R^n}\exp(2\pi ix\cdot\zeta)\,d\mu(\zeta)\qquad\text{for all }x\in\mathbb R^n\;} .
 $$
-The measure $\mu$ is a probability measure exactly when $\varphi(0)=1$, and it is the
-**Fourier–Stieltjes transform** (or spectral measure) of $\varphi$; the transform is written with the
+The measure $\mu$ is a probability measure exactly when $\digamma_{\mathrm{map}}(0)=1$, and it is the
+**Fourier–Stieltjes transform** (or spectral measure) of $\digamma_{\mathrm{map}}$; the transform is written with the
 positive exponent $\exp(+2\pi ix\cdot\zeta)$, so that it is the conjugate of the transform at $x$.
 
 ### Proof Sketch
 
 **Proof sketch.** The easy direction is the computation of the example above: if
-$\varphi(x)=\int \exp(2\pi ix\cdot\zeta)d\mu(\zeta)$ with $\mu\geq0$, then
-$\sum\bar c_ic_j\varphi(x_i-x_j)=\int\lvert\sum_ic_i\exp(2\pi ix_i\cdot\zeta)\rvert^2d\mu(\zeta)\geq0$, and the
-continuity is dominated convergence. For the converse, let $\varphi$ be continuous and positive definite,
-with $\varphi(0)\geq0$, and consider the linear functional defined on the compactly supported continuous
+$\digamma_{\mathrm{map}}(x)=\int \exp(2\pi ix\cdot\zeta)d\mu(\zeta)$ with $\mu\geq0$, then
+$\sum\bar c_ic_j\digamma_{\mathrm{map}}(x_i-x_j)=\int\lvert\sum_ic_i\exp(2\pi ix_i\cdot\zeta)\rvert^2d\mu(\zeta)\geq0$, and the
+continuity is dominated convergence. For the converse, let $\digamma_{\mathrm{map}}$ be continuous and positive definite,
+with $\digamma_{\mathrm{map}}(0)\geq0$, and consider the linear functional defined on the compactly supported continuous
 functions by
 $$
-L(\psi)=\iint\varphi(x-y)\psi(x)\overline{\psi(y)}\,dx\,dy ;
+L(Ξ_{\mathrm{wfn}})=\iint\digamma_{\mathrm{map}}(x-y)Ξ_{\mathrm{wfn}}(x)\overline{Ξ_{\mathrm{wfn}}(y)}\,dx\,dy ;
 $$
-positive definiteness of $\varphi$ makes $L$ nonnegative on every $\psi=\sum c_ik_{\zeta_i}$ and hence on all
+positive definiteness of $\digamma_{\mathrm{map}}$ makes $L$ nonnegative on every $Ξ_{\mathrm{wfn}}=\sum c_ik_{\zeta_i}$ and hence on all
 of $C_c(\mathbb R^n)$, by density, and a standard polarisation recovers $L$ from the diagonal values
-$L(\psi*\psi^{*})$. Since $\varphi$ is continuous and dominated by $\varphi(0)$, the functional $L$ is
-bounded by $\varphi(0)\lVert\psi\rVert_1^2$ and extends to a finite positive measure by the Riesz
+$L(Ξ_{\mathrm{wfn}}*Ξ_{\mathrm{wfn}}^{*})$. Since $\digamma_{\mathrm{map}}$ is continuous and dominated by $\digamma_{\mathrm{map}}(0)$, the functional $L$ is
+bounded by $\digamma_{\mathrm{map}}(0)\lVertΞ_{\mathrm{wfn}}\rVert_1^2$ and extends to a finite positive measure by the Riesz
 representation theorem of *Measure Theory and Integration* (the duality of $C_c$ and positive functionals).
 The Fourier transform of this measure is then computed from $L$ by inserting $\exp(2\pi ix\cdot\cdot)$, which
 shows
 $$
-\varphi(x)=\int \exp(2\pi ix\cdot\zeta)\,d\mu(\zeta) ;
+\digamma_{\mathrm{map}}(x)=\int \exp(2\pi ix\cdot\zeta)\,d\mu(\zeta) ;
 $$
 the uniqueness of $\mu$ is the injectivity of the Fourier–Stieltjes transform on finite measures, from the
 multiplication formula. The details of the duality argument belong to *Measure Theory and Integration* and
@@ -205,19 +205,19 @@ the positive definite cone is the image of the positive cone of measures under t
 
 ### Consequences
 
-The theorem identifies four conditions on a continuous $\varphi$: positive definiteness, being a
+The theorem identifies four conditions on a continuous $\digamma_{\mathrm{map}}$: positive definiteness, being a
 Fourier–Stieltjes transform with a positive measure, being a positive linear functional on the convolution
 algebra, and being the matrix of a positive operator on the characters. The consequences used later are the
 following.
 
-**Corollary (normalisation and products).** For a positive definite $\varphi$ the value $\varphi(0)$ is the
-total mass $\mu(\mathbb R^n)$, and $\varphi$ is bounded with $\lvert\varphi\rvert\leq\varphi(0)$; the
+**Corollary (normalisation and products).** For a positive definite $\digamma_{\mathrm{map}}$ the value $\digamma_{\mathrm{map}}(0)$ is the
+total mass $\mu(\mathbb R^n)$, and $\digamma_{\mathrm{map}}$ is bounded with $\lvert\digamma_{\mathrm{map}}\rvert\leq\digamma_{\mathrm{map}}(0)$; the
 product of two positive definite functions is positive definite, with the measure the convolution of the two
-spectral measures; the conjugate $\bar\varphi$ and the reflection $x\mapsto\varphi(-x)$ are positive
+spectral measures; the conjugate $\bar\digamma_{\mathrm{map}}$ and the reflection $x\mapsto\digamma_{\mathrm{map}}(-x)$ are positive
 definite, with the reflected measure.
 
 **Proof.** The mass statement is the value at $0$; the bound is above; the product is
-$\varphi\psi(x)=\iint \exp(2\pi ix\cdot(\zeta+\eta))d\mu(\zeta)d\nu(\eta)$, which is the transform of the
+$\digamma_{\mathrm{map}}Ξ_{\mathrm{wfn}}(x)=\iint \exp(2\pi ix\cdot(\zeta+\eta))d\mu(\zeta)d\nu(\eta)$, which is the transform of the
 push-forward of $\mu\otimes\nu$ under addition, a positive measure; the conjugation and reflection are the
 adjoint and the inverse of the transform on measures.
 
@@ -273,12 +273,12 @@ numbers.
 The involution $\bar f$ on functions induces the involution $K^{*}(x,y)=\overline{K(y,x)}$ on kernels; a
 kernel is Hermitian when $K^{*}=K$ and positive definite when every finite matrix $(K(x_i,x_j))$ is
 positive semidefinite, a condition that forces Hermitian and gives
-$\lvert K(x,y)\rvert^2\leq K(x,x)K(y,y)$. A function $\varphi$ on a group is positive definite when the
-translation-invariant kernel $K(x,y)=\varphi(x-y)$ is, and then $\varphi(0)\geq0$,
-$\varphi(-x)=\overline{\varphi(x)}$ and $\lvert\varphi(x)\rvert\leq\varphi(0)$. Bochner's theorem states
+$\lvert K(x,y)\rvert^2\leq K(x,x)K(y,y)$. A function $\digamma_{\mathrm{map}}$ on a group is positive definite when the
+translation-invariant kernel $K(x,y)=\digamma_{\mathrm{map}}(x-y)$ is, and then $\digamma_{\mathrm{map}}(0)\geq0$,
+$\digamma_{\mathrm{map}}(-x)=\overline{\digamma_{\mathrm{map}}(x)}$ and $\lvert\digamma_{\mathrm{map}}(x)\rvert\leq\digamma_{\mathrm{map}}(0)$. Bochner's theorem states
 that a continuous positive definite function on $\mathbb R^n$ is exactly the Fourier–Stieltjes transform
-$\varphi(x)=\int \exp(2\pi ix\cdot\zeta)d\mu(\zeta)$ of a unique finite positive measure of total mass
-$\varphi(0)$, and the general locally compact abelian case, together with the Gelfand–Raikov theorem, is
+$\digamma_{\mathrm{map}}(x)=\int \exp(2\pi ix\cdot\zeta)d\mu(\zeta)$ of a unique finite positive measure of total mass
+$\digamma_{\mathrm{map}}(0)$, and the general locally compact abelian case, together with the Gelfand–Raikov theorem, is
 that of *Harmonic Analysis on Groups* and of *Positive Definite Functions and the Gelfand–Raikov Theorem*.
 Every positive definite kernel is the Gram kernel of a family of vectors in a Hilbert space, the Kolmogorov
 decomposition, $K(x,y)=\langle k_y,k_x\rangle$; and the positive definite kernels form a cone closed under
@@ -292,8 +292,8 @@ subject of the next article of this group.
 | $f^{*}$, $K^{*}$ | Involution, $\bar f$; $K^{*}(x,y)=\overline{K(y,x)}$ |
 | Hermitian | $K(x,y)=\overline{K(y,x)}$, the fixed points of the involution |
 | positive definite | $\sum_{i,j}\overline{c_i}c_jK(x_i,x_j)\geq0$ for all finite data |
-| $\varphi$ | Positive definite function, kernel $\varphi(x-y)$ |
-| $\mu$ | The spectral measure of Bochner's theorem, $\mu(\mathbb R^n)=\varphi(0)$ |
+| $\digamma_{\mathrm{map}}$ | Positive definite function, kernel $\digamma_{\mathrm{map}}(x-y)$ |
+| $\mu$ | The spectral measure of Bochner's theorem, $\mu(\mathbb R^n)=\digamma_{\mathrm{map}}(0)$ |
 | $\chi$ | Character of the group |
 | $k_x$, $\langle k_y,k_x\rangle=K(x,y)$ | Kolmogorov vectors and decomposition |
 | $K_{\mathrm h}$ | Hermitian part $\frac12(K+K^{*})$ |

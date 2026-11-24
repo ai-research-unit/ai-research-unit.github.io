@@ -12,9 +12,9 @@ No physics is invoked.
 
 ## The Section and the Return Map
 
-**Definition.** Let $\varphi_t$ be a complete flow on a manifold $M$ and let $\Sigma\subseteq M$ be a codimension-one submanifold transverse to the generating field $X$, a **section**. For $q\in\Sigma$ whose forward orbit meets $\Sigma$ again, the **first return time** is $\tau(q)=\inf\{t>0:\varphi_t(q)\in\Sigma\}$ and the **return map** (Poincaré map) is $P(q)=\varphi_{\tau(q)}(q)\in\Sigma$. The section is **global** if every orbit meets it; the return map is then defined on all of $\Sigma$, and the flow is the **suspension** of $P$ with roof $\tau$: the quotient of $\Sigma\times[0,\infty)$ by the identification $(q,\tau(q))\sim(Pq,0)$, with the flow the translation in the second coordinate modulo the identification. The existence and the smoothness of $P$ and $\tau$, and the equivalence of the flow with the suspension, are the content of the Poincaré section theorem and the suspension theorem of *Smooth Dynamical Systems*, and are cited here.
+**Definition.** Let $\digamma_{\mathrm{map},t}$ be a complete flow on a manifold $M$ and let $\Sigma\subseteq M$ be a codimension-one submanifold transverse to the generating field $X$, a **section**. For $q\in\Sigma$ whose forward orbit meets $\Sigma$ again, the **first return time** is $\tau(q)=\inf\{t>0:\digamma_{\mathrm{map},t}(q)\in\Sigma\}$ and the **return map** (Poincaré map) is $P(q)=\digamma_{\mathrm{map},\tau(q)}(q)\in\Sigma$. The section is **global** if every orbit meets it; the return map is then defined on all of $\Sigma$, and the flow is the **suspension** of $P$ with roof $\tau$: the quotient of $\Sigma\times[0,\infty)$ by the identification $(q,\tau(q))\sim(Pq,0)$, with the flow the translation in the second coordinate modulo the identification. The existence and the smoothness of $P$ and $\tau$, and the equivalence of the flow with the suspension, are the content of the Poincaré section theorem and the suspension theorem of *Smooth Dynamical Systems*, and are cited here.
 
-**Definition (the induced measure).** Let $\mu$ be a $\varphi_t$-invariant measure and let the section carry the induced measure $\mu_\Sigma$ defined by
+**Definition (the induced measure).** Let $\mu$ be a $\digamma_{\mathrm{map},t}$-invariant measure and let the section carry the induced measure $\mu_\Sigma$ defined by
 
 $$
 \mu_\Sigma(A)=\frac{1}{\bar\tau}\int_A\tau\,d\mu_\Sigma^{\natural},
@@ -40,9 +40,9 @@ $$
 g(Px)=\exp(i\lambda\tau(x))g(x) \qquad (x\in\Sigma).
 $$
 
-More generally, if $g$ satisfies $g(Px)=\exp(i\phi(x))g(x)$ for a phase $\phi$ and the flow function is rebuilt by $F(q,s)=\exp(i\phi_s(q))g(q)$ with $\phi_s$ accumulating $\phi$ along the return, then $F$ is an eigenfunction exactly when the phase is a **coboundary** over the return map, $\phi(x)=\psi(Px)-\psi(x)$, in which case the eigenvalue is $0$.
+More generally, if $g$ satisfies $g(Px)=\exp(i\digamma_{\mathrm{map}}(x))g(x)$ for a phase $\digamma_{\mathrm{map}}$ and the flow function is rebuilt by $F(q,s)=\exp(i\digamma_{\mathrm{map},s}(q))g(q)$ with $\digamma_{\mathrm{map},s}$ accumulating $\digamma_{\mathrm{map}}$ along the return, then $F$ is an eigenfunction exactly when the phase is a **coboundary** over the return map, $\digamma_{\mathrm{map}}(x)=Ξ_{\mathrm{wfn}}(Px)-Ξ_{\mathrm{wfn}}(x)$, in which case the eigenvalue is $0$.
 
-*Proof.* If $\Phi_tF=\exp(i\lambda t)F$, evaluating along the orbit from $x\in\Sigma$ at the return time gives $F(Px)=F(\varphi_{\tau(x)}x)=\exp(i\lambda\tau(x))F(x)$, so $g=F|_\Sigma$ satisfies the cocycle equation. Conversely, if $g$ satisfies it, define $F$ on the suspension by $F(q,s)=\exp(i\lambda s)g(q)$; the identification $(q,\tau(q))\sim(Pq,0)$ is respected because $\exp(i\lambda\tau(q))g(q)=g(Pq)$, and the flow $\Phi_tF=\exp(i\lambda t)F$ holds by the definition of the translation. The coboundary statement is the special case in which the cocycle $\exp(i\phi)$ is a coboundary, so that it can be removed by the multiplication by $\exp(i\psi)$.
+*Proof.* If $\Phi_tF=\exp(i\lambda t)F$, evaluating along the orbit from $x\in\Sigma$ at the return time gives $F(Px)=F(\digamma_{\mathrm{map},\tau(x)}x)=\exp(i\lambda\tau(x))F(x)$, so $g=F|_\Sigma$ satisfies the cocycle equation. Conversely, if $g$ satisfies it, define $F$ on the suspension by $F(q,s)=\exp(i\lambda s)g(q)$; the identification $(q,\tau(q))\sim(Pq,0)$ is respected because $\exp(i\lambda\tau(q))g(q)=g(Pq)$, and the flow $\Phi_tF=\exp(i\lambda t)F$ holds by the definition of the translation. The coboundary statement is the special case in which the cocycle $\exp(i\digamma_{\mathrm{map}})$ is a coboundary, so that it can be removed by the multiplication by $\exp(iΞ_{\mathrm{wfn}})$.
 
 **Corollary (spectral reduction).** The eigenvalues of the unitary flow operator are the numbers $\lambda$ for which there is a nonzero $g$ on the section with $g(Px)=\exp(i\lambda\tau(x))g(x)$; the flow has pure point spectrum exactly when the section is spanned by such twisted solutions. The twisted transfer operator that governs the general case is the operator-theoretic form of the cocycle equation and is *The Adjoint of the Koopman Operator* in the `- * Operator Theory` group; only the cocycle equation is derived here.
 
@@ -53,7 +53,7 @@ More generally, if $g$ satisfies $g(Px)=\exp(i\phi(x))g(x)$ for a phase $\phi$ a
 **Theorem (transfer of the ergodic properties, quoted).** Let the flow be the suspension of $(P,\tau)$ with finite mean return time. Then the flow preserves $\mu$ if and only if $P$ preserves the induced $\mu_\Sigma$, and the flow is ergodic if and only if $P$ is ergodic; the flow is mixing if and only if $P$ is mixing and the roof $\tau$ is not cohomologous to a constant, the exceptional case $\tau\equiv\bar\tau$ being the product of $P$ with the rotation of period $\bar\tau$, which is ergodic but not mixing. The entropy is given by **Abramov's formula**
 
 $$
-\boxed{\;h_\mu(\varphi_1)=h_{\mu_\Sigma}(P)\big/\bar\tau\;} ,
+\boxed{\;h_\mu(\digamma_{\mathrm{map},1})=h_{\mu_\Sigma}(P)\big/\bar\tau\;} ,
 $$
 
 the entropy per unit time of the flow being the entropy per return of the return map divided by the mean return time.
@@ -102,29 +102,29 @@ that is, the mean return time to $A$ with respect to the induced probability is 
 
 ## The Linearised Poincaré Map and the Monodromy
 
-**Definition.** Let $p$ be a periodic point of the flow of period $T$, let $\Sigma$ be a section through $p$, and let $P$ be the return map. The **linearised Poincaré map** at $p$ is the derivative $DP(p)$ acting on the tangent space $T_p\Sigma$; the **monodromy** of the variational equation of *The Evolution Operator* is $M=D_p\varphi_T$ on $T_pM$.
+**Definition.** Let $p$ be a periodic point of the flow of period $T$, let $\Sigma$ be a section through $p$, and let $P$ be the return map. The **linearised Poincaré map** at $p$ is the derivative $DP(p)$ acting on the tangent space $T_p\Sigma$; the **monodromy** of the variational equation of *The Evolution Operator* is $M=D_p\digamma_{\mathrm{map},T}$ on $T_pM$.
 
-**Theorem (the two spectra agree off the flow direction).** The vector $X(p)$ is an eigenvector of the monodromy $M=D_p\varphi_T$ with eigenvalue $1$, and
+**Theorem (the two spectra agree off the flow direction).** The vector $X(p)$ is an eigenvector of the monodromy $M=D_p\digamma_{\mathrm{map},T}$ with eigenvalue $1$, and
 
 $$
-\boxed{\;\det(\mu I-DP(p))=\frac{\det(\mu I-D_p\varphi_T)}{\mu-1} \quad \text{in the reduced sense}\;},
+\boxed{\;\det(\mu I-DP(p))=\frac{\det(\mu I-D_p\digamma_{\mathrm{map},T})}{\mu-1} \quad \text{in the reduced sense}\;},
 $$
 
-so the eigenvalues of $DP(p)$, counted with multiplicity, are the eigenvalues of $D_p\varphi_T$ other than the trivial eigenvalue $1$; these are the **Floquet multipliers** of the periodic orbit apart from $1$.
+so the eigenvalues of $DP(p)$, counted with multiplicity, are the eigenvalues of $D_p\digamma_{\mathrm{map},T}$ other than the trivial eigenvalue $1$; these are the **Floquet multipliers** of the periodic orbit apart from $1$.
 
-*Proof.* Differentiating the relation $P(q)=\varphi_{\tau(q)}(q)$ at $q=p$ and using $d\tau(X(p))=1$ from transversality, one finds that $DP(p)$ and $D_p\varphi_T$ differ by a rank-one operator whose image lies in the flow direction; the characteristic polynomials therefore differ by the factor $\mu-1$ attached to that direction, which is the displayed identity. The computation is that of the return map theorem of *Smooth Dynamical Systems* and of Floquet theory in *Ordinary Differential Equations*, and is cited rather than reproved.
+*Proof.* Differentiating the relation $P(q)=\digamma_{\mathrm{map},\tau(q)}(q)$ at $q=p$ and using $d\tau(X(p))=1$ from transversality, one finds that $DP(p)$ and $D_p\digamma_{\mathrm{map},T}$ differ by a rank-one operator whose image lies in the flow direction; the characteristic polynomials therefore differ by the factor $\mu-1$ attached to that direction, which is the displayed identity. The computation is that of the return map theorem of *Smooth Dynamical Systems* and of Floquet theory in *Ordinary Differential Equations*, and is cited rather than reproved.
 
 **Corollary (stability and the reduction).** The periodic orbit is hyperbolic exactly when $DP(p)$ has no eigenvalue on the unit circle, and its stability and its rate of return to the orbit are read from $DP(p)$; the orbit's Floquet exponents are the logarithms of the multipliers divided by the period. The dictionary thus transfers the linear stability of a periodic orbit to the linear theory of the return map, which is the operator-theoretic content of the reduction of the flow to the section.
 
 ## Summary
 
-The **Poincaré map** $P(q)=\varphi_{\tau(q)}(q)$ is the first return map to a transverse section $\Sigma$ of a flow, and a flow with a global section is the **suspension** of $(P,\tau)$ with the return time as roof; the existence and smoothness of $P$ and $\tau$ and the suspension equivalence are the Poincaré section theorem of *Smooth Dynamical Systems*. The **reduction** is operator-theoretic: an observable of the flow is a function on the suspension, the flow operator is the translation in the time coordinate, and a function $F$ is an eigenfunction $\Phi_tF=\exp(i\lambda t)F$ exactly when its restriction $g=F|_\Sigma$ solves the **cocycle equation** $g(Px)=\exp(i\lambda\tau(x))g(x)$; from this the spectrum of the flow is read from the return map, with the simple case $\tau\equiv\bar\tau$ reducing the flow to the product of $P$ and a rotation and the general case genuinely twisted. **Ergodicity, mixing and hyperbolicity** pass from $P$ to the suspension, and the entropy per unit time is $h_{\mu_\Sigma}(P)/\bar\tau$ by **Abramov's formula**. The transfer operator $\mathcal{P}_P$ has the induced measure as its fixed point, and the **induced transformation** $T_A$ on a subset has the **Kac formula** $\int_Ar_A\,d\mu=1$, $\int_Ar_A\,d\mu_A=1/\mu(A)$; for the doubling map with $A=[0,\tfrac12)$ the level sets satisfy $\mu\{r_A>n\}=2^{-(n+1)}$ exactly, and the induced mean return time is $2=1/\mu(A)$ (both verified). The **linearised Poincaré map** $DP(p)$ at a periodic point carries the nontrivial **Floquet multipliers** of the orbit, the trivial multiplier $1$ belonging to the flow direction $X(p)$; the monodromy $D_p\varphi_T$ of *The Evolution Operator* and $DP(p)$ have the same spectrum off that direction. The twisted transfer operator that solves the cocycle equation, and the involution that reverses a reversible return map, belong to the `- * Operator Theory` group of this category and are not used here.
+The **Poincaré map** $P(q)=\digamma_{\mathrm{map},\tau(q)}(q)$ is the first return map to a transverse section $\Sigma$ of a flow, and a flow with a global section is the **suspension** of $(P,\tau)$ with the return time as roof; the existence and smoothness of $P$ and $\tau$ and the suspension equivalence are the Poincaré section theorem of *Smooth Dynamical Systems*. The **reduction** is operator-theoretic: an observable of the flow is a function on the suspension, the flow operator is the translation in the time coordinate, and a function $F$ is an eigenfunction $\Phi_tF=\exp(i\lambda t)F$ exactly when its restriction $g=F|_\Sigma$ solves the **cocycle equation** $g(Px)=\exp(i\lambda\tau(x))g(x)$; from this the spectrum of the flow is read from the return map, with the simple case $\tau\equiv\bar\tau$ reducing the flow to the product of $P$ and a rotation and the general case genuinely twisted. **Ergodicity, mixing and hyperbolicity** pass from $P$ to the suspension, and the entropy per unit time is $h_{\mu_\Sigma}(P)/\bar\tau$ by **Abramov's formula**. The transfer operator $\mathcal{P}_P$ has the induced measure as its fixed point, and the **induced transformation** $T_A$ on a subset has the **Kac formula** $\int_Ar_A\,d\mu=1$, $\int_Ar_A\,d\mu_A=1/\mu(A)$; for the doubling map with $A=[0,\tfrac12)$ the level sets satisfy $\mu\{r_A>n\}=2^{-(n+1)}$ exactly, and the induced mean return time is $2=1/\mu(A)$ (both verified). The **linearised Poincaré map** $DP(p)$ at a periodic point carries the nontrivial **Floquet multipliers** of the orbit, the trivial multiplier $1$ belonging to the flow direction $X(p)$; the monodromy $D_p\digamma_{\mathrm{map},T}$ of *The Evolution Operator* and $DP(p)$ have the same spectrum off that direction. The twisted transfer operator that solves the cocycle equation, and the involution that reverses a reversible return map, belong to the `- * Operator Theory` group of this category and are not used here.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\Sigma$, $X$, $\varphi_t$ | Section, generating field, flow |
+| $\Sigma$, $X$, $\digamma_{\mathrm{map},t}$ | Section, generating field, flow |
 | $\tau(q)$, $P(q)$ | First return time; return map (Poincaré map) |
 | $(P,\tau)$ suspension | Quotient $\Sigma\times[0,\infty)/((q,\tau(q))\sim(Pq,0))$ |
 | $\mu_\Sigma$, $\bar\tau$ | Induced measure on the section; mean return time |
@@ -132,8 +132,8 @@ The **Poincaré map** $P(q)=\varphi_{\tau(q)}(q)$ is the first return map to a t
 | $g(Px)=\exp(i\lambda\tau(x))g(x)$ | Cocycle equation for a flow eigenfunction |
 | $r_A$, $T_A$ | First return time to $A$; induced transformation |
 | $\int_Ar_A\,d\mu=1$ | Kac's formula |
-| $DP(p)$, $D_p\varphi_T$ | Linearised Poincaré map; monodromy |
-| $h_\mu(\varphi_1)=h_{\mu_\Sigma}(P)/\bar\tau$ | Abramov's formula |
+| $DP(p)$, $D_p\digamma_{\mathrm{map},T}$ | Linearised Poincaré map; monodromy |
+| $h_\mu(\digamma_{\mathrm{map},1})=h_{\mu_\Sigma}(P)/\bar\tau$ | Abramov's formula |
 
 ## Further Reading
 

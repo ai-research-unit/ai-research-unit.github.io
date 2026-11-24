@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A flow $\varphi_t$ of a vector field $X$ on a manifold $M$ is a one-parameter group of diffeomorphisms, and every such group acts linearly on the objects attached to $M$: on the smooth functions by composition, $\Phi_tf=f\circ\varphi_t$, on the differential forms by pullback, $\Phi_t\alpha=\varphi_t^*\alpha$, and on the measures and densities by pushforward. Each of these actions is a **one-parameter group of operators**, $\Phi_{s+t}=\Phi_s\Phi_t$ and $\Phi_0=I$, and each of them encodes the flow in operator form. The generator of the action on functions is the **Lie derivative** $\mathcal{L}_X$, the directional derivative along the field; on forms it is the same operator, obtained by the Cartan formula $\mathcal{L}_X=d\iota_X+\iota_Xd$; on the volume densities it is the negative divergence, $-\operatorname{div}(X\,\cdot)$, so that the invariance of a measure is the vanishing of the divergence of $X$ with respect to it, and the transport of a density is the **Liouville equation** of the flow. The Lie derivative is a derivation of the algebra of functions, and the map $X\mapsto\mathcal{L}_X$ is a representation of the Lie algebra of vector fields by derivations, $[\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_{[X,Y]}$; this is the form in which the infinitesimal structure of the flow is recorded.
+A flow $\digamma_{\mathrm{map},t}$ of a vector field $X$ on a manifold $M$ is a one-parameter group of diffeomorphisms, and every such group acts linearly on the objects attached to $M$: on the smooth functions by composition, $\Phi_tf=f\circ\digamma_{\mathrm{map},t}$, on the differential forms by pullback, $\Phi_t\alpha=\digamma_{\mathrm{map},t}^*\alpha$, and on the measures and densities by pushforward. Each of these actions is a **one-parameter group of operators**, $\Phi_{s+t}=\Phi_s\Phi_t$ and $\Phi_0=I$, and each of them encodes the flow in operator form. The generator of the action on functions is the **Lie derivative** $\mathcal{L}_X$, the directional derivative along the field; on forms it is the same operator, obtained by the Cartan formula $\mathcal{L}_X=d\iota_X+\iota_Xd$; on the volume densities it is the negative divergence, $-\operatorname{div}(X\,\cdot)$, so that the invariance of a measure is the vanishing of the divergence of $X$ with respect to it, and the transport of a density is the **Liouville equation** of the flow. The Lie derivative is a derivation of the algebra of functions, and the map $X\mapsto\mathcal{L}_X$ is a representation of the Lie algebra of vector fields by derivations, $[\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_{[X,Y]}$; this is the form in which the infinitesimal structure of the flow is recorded.
 
 The article treats the flow as an operator and its generator as the Lie derivative. It defines the three actions — on functions, on forms and on densities — and proves the group law and the strong continuity in each; it identifies the generator with the Lie derivative and proves the derivation property and the commutator identity; it derives the **Liouville operator** $-\operatorname{div}(X\,\cdot)$ as the generator on densities and the transport equation $\partial/\partial t\rho+\operatorname{div}(\rho X)=0$; it states Stone's theorem for the unitary case and the resulting self-adjoint generator $A=-i\mathcal{L}_X$, with the spectral reading of the flow (pure point for a periodic or quasi-periodic flow, Lebesgue for an Anosov flow, cited); and it closes with the relation of the flow operator to the evolution operator of the preceding article, to the Koopman operator of the discrete system, and to the return map that reduces a flow to a discrete system.
 
@@ -16,23 +16,23 @@ No physics is invoked.
 
 ### The Three Actions
 
-**Definition.** Let $M$ be a smooth manifold, $X$ a complete vector field with flow $\varphi_t$, and $m$ a smooth reference volume. The **flow operator** on functions is
+**Definition.** Let $M$ be a smooth manifold, $X$ a complete vector field with flow $\digamma_{\mathrm{map},t}$, and $m$ a smooth reference volume. The **flow operator** on functions is
 
 $$
-\Phi_t:C^\infty(M)\to C^\infty(M), \qquad \Phi_tf=f\circ\varphi_t ;
+\Phi_t:C^\infty(M)\to C^\infty(M), \qquad \Phi_tf=f\circ\digamma_{\mathrm{map},t} ;
 $$
 
-on differential forms it is the pullback $\Phi_t\alpha=\varphi_t^*\alpha$; and on measures it is the pushforward $(\varphi_t)_*\nu=\nu\circ\varphi_t^{-1}$, written on a density $\rho$ with respect to $m$ by
+on differential forms it is the pullback $\Phi_t\alpha=\digamma_{\mathrm{map},t}^*\alpha$; and on measures it is the pushforward $(\digamma_{\mathrm{map},t})_*\nu=\nu\circ\digamma_{\mathrm{map},t}^{-1}$, written on a density $\rho$ with respect to $m$ by
 
 $$
-(\mathcal{P}_t\rho)(x)=\rho(\varphi_{-t}(x))\,|\det D\varphi_{-t}(x)| .
+(\mathcal{P}_t\rho)(x)=\rho(\digamma_{\mathrm{map},-t}(x))\,|\det D\digamma_{\mathrm{map},-t}(x)| .
 $$
 
 The three operators are the three representations of the same group $\mathbb{R}$.
 
-**Theorem (group law and continuity).** Each of the three families is a one-parameter group, $\Phi_{s+t}=\Phi_s\Phi_t$ and $\Phi_0=I$, and each is strongly continuous: $\Phi_tf\to f$ in $C^\infty$ as $t\to0$ uniformly on compact sets with all derivatives, and $\Phi_t$ on the forms is strongly continuous in the Fréchet topology. If $m$ is $\varphi_t$-invariant then $\Phi_t$ on functions extends to a strongly continuous one-parameter group of unitary operators on $L^2(M,m)$, with $\Phi_t^{-1}=\Phi_{-t}$.
+**Theorem (group law and continuity).** Each of the three families is a one-parameter group, $\Phi_{s+t}=\Phi_s\Phi_t$ and $\Phi_0=I$, and each is strongly continuous: $\Phi_tf\to f$ in $C^\infty$ as $t\to0$ uniformly on compact sets with all derivatives, and $\Phi_t$ on the forms is strongly continuous in the Fréchet topology. If $m$ is $\digamma_{\mathrm{map},t}$-invariant then $\Phi_t$ on functions extends to a strongly continuous one-parameter group of unitary operators on $L^2(M,m)$, with $\Phi_t^{-1}=\Phi_{-t}$.
 
-*Proof.* The group law is the group law of the flow, $\Phi_{s+t}f=f\circ\varphi_{s+t}=f\circ\varphi_s\circ\varphi_t=\Phi_s\Phi_tf$, and the same for the pullback and the pushforward by functoriality. The continuity follows from the smooth dependence of the flow on the initial condition. In the invariant case, the change of variables $y=\varphi_t^{-1}x$ together with $\varphi_t^*m=m$ gives $\|\Phi_tf\|_{L^2}^2=\int|f(\varphi_tx)|^2dm(x)=\int|f(y)|^2dm(y)=\|f\|_{L^2}$.
+*Proof.* The group law is the group law of the flow, $\Phi_{s+t}f=f\circ\digamma_{\mathrm{map},s+t}=f\circ\digamma_{\mathrm{map},s}\circ\digamma_{\mathrm{map},t}=\Phi_s\Phi_tf$, and the same for the pullback and the pushforward by functoriality. The continuity follows from the smooth dependence of the flow on the initial condition. In the invariant case, the change of variables $y=\digamma_{\mathrm{map},t}^{-1}x$ together with $\digamma_{\mathrm{map},t}^*m=m$ gives $\|\Phi_tf\|_{L^2}^2=\int|f(\digamma_{\mathrm{map},t}x)|^2dm(x)=\int|f(y)|^2dm(y)=\|f\|_{L^2}$.
 
 ### The Pushforward and the Invariance of a Measure
 
@@ -44,13 +44,13 @@ $$
 
 so a smooth positive density $\rho$ gives an invariant measure exactly when $\operatorname{div}(\rho X)=0$.
 
-*Proof.* For a domain $\Omega$ with smooth boundary, the rate of change of $m(\varphi_t(\Omega))$ at $t=0$ is $\int_\Omega\operatorname{div}_mX\,dm$ by the divergence theorem, so the volume is preserved for all $\Omega$ exactly when $\operatorname{div}_mX=0$; the same computation applied to the measure $\rho m$ gives $\frac{d}{dt}\big|_{0}\int_{\varphi_t(\Omega)}\rho\,dm=\int_\Omega\operatorname{div}(\rho X)\,dm$, which is the weak form of the transport equation and vanishes for all $\Omega$ exactly when $\rho$ solves $\operatorname{div}(\rho X)=0$ in the invariant case.
+*Proof.* For a domain $\Omega$ with smooth boundary, the rate of change of $m(\digamma_{\mathrm{map},t}(\Omega))$ at $t=0$ is $\int_\Omega\operatorname{div}_mX\,dm$ by the divergence theorem, so the volume is preserved for all $\Omega$ exactly when $\operatorname{div}_mX=0$; the same computation applied to the measure $\rho m$ gives $\frac{d}{dt}\big|_{0}\int_{\digamma_{\mathrm{map},t}(\Omega)}\rho\,dm=\int_\Omega\operatorname{div}(\rho X)\,dm$, which is the weak form of the transport equation and vanishes for all $\Omega$ exactly when $\rho$ solves $\operatorname{div}(\rho X)=0$ in the invariant case.
 
 ## The Generator: the Lie Derivative
 
 ### The Lie Derivative as Generator
 
-**Theorem (the generator on functions is $\mathcal{L}_X$).** Let $\varphi_t$ be the flow of $X$ and $\Phi_tf=f\circ\varphi_t$. Then for $f\in C^1(M)$
+**Theorem (the generator on functions is $\mathcal{L}_X$).** Let $\digamma_{\mathrm{map},t}$ be the flow of $X$ and $\Phi_tf=f\circ\digamma_{\mathrm{map},t}$. Then for $f\in C^1(M)$
 
 $$
 \frac{d}{dt}\Big|_{t=0}\Phi_tf=\mathcal{L}_Xf=Xf ,
@@ -58,9 +58,9 @@ $$
 
 the directional derivative of $f$ along $X$; consequently $\Phi_t=\exp(t\mathcal{L}_X)$ on a domain on which the group is generated, and the Lie derivative is the infinitesimal generator of the flow operator on functions.
 
-*Proof.* By the definition of the flow, $\frac{d}{dt}\big|_{0}\varphi_t(x)=X(x)$; the chain rule gives $\frac{d}{dt}\big|_{0}f(\varphi_t(x))=df(X(x))=Xf(x)$, which is the definition of the Lie derivative on functions.
+*Proof.* By the definition of the flow, $\frac{d}{dt}\big|_{0}\digamma_{\mathrm{map},t}(x)=X(x)$; the chain rule gives $\frac{d}{dt}\big|_{0}f(\digamma_{\mathrm{map},t}(x))=df(X(x))=Xf(x)$, which is the definition of the Lie derivative on functions.
 
-**Example (a rotation, recomputed).** On $\mathbb{R}^2$ let $X=y\,\partial/\partial x-x\,\partial/\partial y$, so that the flow is the rotation $\varphi_t(x,y)=(x\cos t+y\sin t,\,-x\sin t+y\cos t)$ and $\operatorname{div}X=0$. Then $\mathcal{L}_Xf=yf_x-xf_y$, and the identities $\frac{d}{dt}\big|_{0}f\circ\varphi_t=\mathcal{L}_Xf$ were checked numerically from the flow at $(x,y)=(0.3,0.7)$: for $f=x$ both sides are $0.7$, for $f=y$ both are $-0.3$, for $f=x^2+y^2$ both are $0$, and for $f=xy$ both are $0.4$. The invariant functions are exactly those with $\mathcal{L}_Xf=0$, and the flow is volume-preserving because the divergence vanishes.
+**Example (a rotation, recomputed).** On $\mathbb{R}^2$ let $X=y\,\partial/\partial x-x\,\partial/\partial y$, so that the flow is the rotation $\digamma_{\mathrm{map},t}(x,y)=(x\cos t+y\sin t,\,-x\sin t+y\cos t)$ and $\operatorname{div}X=0$. Then $\mathcal{L}_Xf=yf_x-xf_y$, and the identities $\frac{d}{dt}\big|_{0}f\circ\digamma_{\mathrm{map},t}=\mathcal{L}_Xf$ were checked numerically from the flow at $(x,y)=(0.3,0.7)$: for $f=x$ both sides are $0.7$, for $f=y$ both are $-0.3$, for $f=x^2+y^2$ both are $0$, and for $f=xy$ both are $0.4$. The invariant functions are exactly those with $\mathcal{L}_Xf=0$, and the flow is volume-preserving because the divergence vanishes.
 
 ### The Derivation Property and the Commutator
 
@@ -79,18 +79,18 @@ where $[X,Y]=XY-YX$ is the Lie bracket of vector fields and $[\mathcal{L}_X,\mat
 **Theorem (Cartan's formula on forms).** On differential forms the generator of the pullback is the same Lie derivative,
 
 $$
-\mathcal{L}_X\alpha=\frac{d}{dt}\Big|_{0}\varphi_t^*\alpha, \qquad \mathcal{L}_X=\iota_Xd+d\iota_X ,
+\mathcal{L}_X\alpha=\frac{d}{dt}\Big|_{0}\digamma_{\mathrm{map},t}^*\alpha, \qquad \mathcal{L}_X=\iota_Xd+d\iota_X ,
 $$
 
 where $\iota_X$ is the interior product and $d$ the exterior derivative; in particular $\mathcal{L}_X$ commutes with $d$ and $[\mathcal{L}_X,\iota_Y]=\iota_{[X,Y]}$.
 
-*Proof.* Quoted as standard from *Smooth Manifolds and Differential Geometry*, where the Cartan formula and its consequences are proved; it is the commuting of the exterior derivative with the pullback, $\varphi_t^*d=d\varphi_t^*$, differentiated at $t=0$.
+*Proof.* Quoted as standard from *Smooth Manifolds and Differential Geometry*, where the Cartan formula and its consequences are proved; it is the commuting of the exterior derivative with the pullback, $\digamma_{\mathrm{map},t}^*d=d\digamma_{\mathrm{map},t}^*$, differentiated at $t=0$.
 
 ## Stone's Theorem and the Spectrum of the Flow
 
 ### The Unitary Case and the Self-Adjoint Generator
 
-**Theorem (Stone for the flow operator).** If $\mu$ is a $\varphi_t$-invariant probability measure, then $\Phi_tf=f\circ\varphi_t$ is a strongly continuous one-parameter unitary group on $L^2(M,\mu)$, and there is a unique self-adjoint operator $A$ with
+**Theorem (Stone for the flow operator).** If $\mu$ is a $\digamma_{\mathrm{map},t}$-invariant probability measure, then $\Phi_tf=f\circ\digamma_{\mathrm{map},t}$ is a strongly continuous one-parameter unitary group on $L^2(M,\mu)$, and there is a unique self-adjoint operator $A$ with
 
 $$
 \boxed{\;\Phi_t=\exp(itA), \qquad A=-i\mathcal{L}_X\;} ,
@@ -105,7 +105,7 @@ on the domain where the generator exists, with $\mathcal{L}_X$ essentially anti-
 **Theorem (spectral classification, cited).** For a measure-preserving flow:
 
 1. the flow is ergodic if and only if the eigenvalue $1$ of $\{\Phi_t\}$ is simple, that is, the invariant functions are the constants;
-2. the flow is weakly mixing if and only if the only eigenvalue of the group is $1$; it is mixing if and only if the correlations of observables decay, $\int f\circ\varphi_t\cdot g\,d\mu\to\mu(f)\mu(g)$;
+2. the flow is weakly mixing if and only if the only eigenvalue of the group is $1$; it is mixing if and only if the correlations of observables decay, $\int f\circ\digamma_{\mathrm{map},t}\cdot g\,d\mu\to\mu(f)\mu(g)$;
 3. an eigenvalue $\lambda$ of the group is a character, $\Phi_tf=\exp(i\lambda t)f$, and the closed span of the eigenfunctions is the **discrete** part of the spectrum; the orthogonal complement carries the **continuous** part, and the spectral theorem of Stone reads the flow as multiplication by $\exp(i\lambda t)$ on the direct integral over the spectrum of $A$.
 
 *Proof.* Statements 1 and 2 are the flow form of the spectral characterisations of ergodicity and mixing, proved in *The Koopman Operator* for the discrete case and applied here to the group; statement 3 is the functional calculus for the self-adjoint generator $A$.
@@ -114,21 +114,21 @@ on the domain where the generator exists, with $\mathcal{L}_X$ essentially anti-
 
 ## The Flow Operator and its Neighbours
 
-**Remark (the evolution operator).** The flow operator is the autonomous case of the evolution operator of *The Evolution Operator*: the family $\Phi(t,s)$ of a linear equation along a flow is the flow operator on the tangent bundle, $\Phi(t,s)=D\varphi_{t-s}(\varphi_s(x))$, and the generator of the autonomous flow operator on functions is $\mathcal{L}_X$ in place of the abstract $A$. The present article is the differential-geometric face of the abstract semigroup.
+**Remark (the evolution operator).** The flow operator is the autonomous case of the evolution operator of *The Evolution Operator*: the family $\Phi(t,s)$ of a linear equation along a flow is the flow operator on the tangent bundle, $\Phi(t,s)=D\digamma_{\mathrm{map},t-s}(\digamma_{\mathrm{map},s}(x))$, and the generator of the autonomous flow operator on functions is $\mathcal{L}_X$ in place of the abstract $A$. The present article is the differential-geometric face of the abstract semigroup.
 
 **Remark (the return map).** A flow with a transverse section $\Sigma$ is a suspension of the **return map** $P:\Sigma\to\Sigma$ with roof function the return time; the flow operator and the Koopman operator of the return map are related by the suspension formula, in which an observable of the flow is coded by the observables of the section and the return time. The construction, the return time, the induced measure and the operator-theoretic form of the reduction are *The Poincaré Map*, later in this category; the suspension and the section themselves are *Smooth Dynamical Systems* and are cited, not restated.
 
 ## Summary
 
-A flow $\varphi_t$ of a vector field $X$ acts as a **one-parameter group of operators**: on functions by $\Phi_tf=f\circ\varphi_t$, on forms by the pullback $\varphi_t^*$, and on densities by the pushforward $(\mathcal{P}_t\rho)(x)=\rho(\varphi_{-t}x)|\det D\varphi_{-t}(x)|$; each satisfies $\Phi_{s+t}=\Phi_s\Phi_t$, $\Phi_0=I$, and is strongly continuous, and on functions it is isometric for an invariant measure, in which case it is unitary and Stone's theorem applies. The **generator** on functions is the **Lie derivative** $\mathcal{L}_X$, the directional derivative, so that $\Phi_t=\exp(t\mathcal{L}_X)$ and, on $L^2$ of an invariant measure, $\Phi_t=\exp(itA)$ with $A=-i\mathcal{L}_X$ self-adjoint; the Lie derivative is a derivation, $[\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_{[X,Y]}$, so $X\mapsto\mathcal{L}_X$ is a representation of the Lie algebra of vector fields by derivations, and on forms it is the Cartan expression $\mathcal{L}_X=\iota_Xd+d\iota_X$. On densities the generator is $-\operatorname{div}(X\,\cdot)$, with the **Liouville equation** $\partial/\partial t\rho+\operatorname{div}(\rho X)=0$; the invariance of a measure is the vanishing of the divergence of $X$ with respect to it. The spectrum of the flow reads the dynamics: ergodicity is the simplicity of the eigenvalue $1$, weak mixing the absence of other eigenvalues, mixing the decay of correlations, with pure point spectrum for a quasi-periodic flow and countable Lebesgue spectrum for an Anosov flow such as the geodesic flow of a negatively curved manifold, cited from *Hyperbolic Dynamics and Anosov Systems*. The flow operator is the autonomous case of *The Evolution Operator* and is reduced to a discrete system through *The Poincaré Map*; its adjoint, with the divergence correction, and the involution that reverses the flow are in the `- * Operator Theory` group and are not used here.
+A flow $\digamma_{\mathrm{map},t}$ of a vector field $X$ acts as a **one-parameter group of operators**: on functions by $\Phi_tf=f\circ\digamma_{\mathrm{map},t}$, on forms by the pullback $\digamma_{\mathrm{map},t}^*$, and on densities by the pushforward $(\mathcal{P}_t\rho)(x)=\rho(\digamma_{\mathrm{map},-t}x)|\det D\digamma_{\mathrm{map},-t}(x)|$; each satisfies $\Phi_{s+t}=\Phi_s\Phi_t$, $\Phi_0=I$, and is strongly continuous, and on functions it is isometric for an invariant measure, in which case it is unitary and Stone's theorem applies. The **generator** on functions is the **Lie derivative** $\mathcal{L}_X$, the directional derivative, so that $\Phi_t=\exp(t\mathcal{L}_X)$ and, on $L^2$ of an invariant measure, $\Phi_t=\exp(itA)$ with $A=-i\mathcal{L}_X$ self-adjoint; the Lie derivative is a derivation, $[\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_{[X,Y]}$, so $X\mapsto\mathcal{L}_X$ is a representation of the Lie algebra of vector fields by derivations, and on forms it is the Cartan expression $\mathcal{L}_X=\iota_Xd+d\iota_X$. On densities the generator is $-\operatorname{div}(X\,\cdot)$, with the **Liouville equation** $\partial/\partial t\rho+\operatorname{div}(\rho X)=0$; the invariance of a measure is the vanishing of the divergence of $X$ with respect to it. The spectrum of the flow reads the dynamics: ergodicity is the simplicity of the eigenvalue $1$, weak mixing the absence of other eigenvalues, mixing the decay of correlations, with pure point spectrum for a quasi-periodic flow and countable Lebesgue spectrum for an Anosov flow such as the geodesic flow of a negatively curved manifold, cited from *Hyperbolic Dynamics and Anosov Systems*. The flow operator is the autonomous case of *The Evolution Operator* and is reduced to a discrete system through *The Poincaré Map*; its adjoint, with the divergence correction, and the involution that reverses the flow are in the `- * Operator Theory` group and are not used here.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $X$, $\varphi_t$ | Vector field and its flow |
-| $\Phi_tf=f\circ\varphi_t$ | Flow operator on functions |
-| $\varphi_t^*\alpha$, $(\varphi_t)_*\nu$ | Pullback on forms, pushforward on measures |
+| $X$, $\digamma_{\mathrm{map},t}$ | Vector field and its flow |
+| $\Phi_tf=f\circ\digamma_{\mathrm{map},t}$ | Flow operator on functions |
+| $\digamma_{\mathrm{map},t}^*\alpha$, $(\digamma_{\mathrm{map},t})_*\nu$ | Pullback on forms, pushforward on measures |
 | $\mathcal{L}_X=X$ | Lie derivative (directional derivative) along $X$ |
 | $[X,Y]$, $[\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_{[X,Y]}$ | Lie bracket of fields; commutator of derivations |
 | $\iota_X$, $d$ | Interior product and exterior derivative; $\mathcal{L}_X=\iota_Xd+d\iota_X$ |

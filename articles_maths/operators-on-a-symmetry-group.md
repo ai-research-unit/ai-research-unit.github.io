@@ -17,7 +17,7 @@ Let $X$ be a set with a chosen distance $d$, or a finite-dimensional space $V$ o
 
 ### The Symmetry Group
 
-**Definition.** A **symmetry group** of $X$ is a subgroup $G \leq \operatorname{Isom}(X)$ of the isometry group of the chosen structure. Its elements are the **motions** available for $X$; when $X$ is a figure $F$ inside a larger space and the chosen structure is the ambient one, the maximal such subgroup is $\operatorname{sym}(F) = \{\varphi \in \operatorname{Isom}(X) : \varphi(F) = F\}$, the symmetry group of the figure, whose finite and discrete instances are *Symmetry, Point and Crystallographic Groups*.
+**Definition.** A **symmetry group** of $X$ is a subgroup $G \leq \operatorname{Isom}(X)$ of the isometry group of the chosen structure. Its elements are the **motions** available for $X$; when $X$ is a figure $F$ inside a larger space and the chosen structure is the ambient one, the maximal such subgroup is $\operatorname{sym}(F) = \{\digamma_{\mathrm{map}} \in \operatorname{Isom}(X) : \digamma_{\mathrm{map}}(F) = F\}$, the symmetry group of the figure, whose finite and discrete instances are *Symmetry, Point and Crystallographic Groups*.
 
 A symmetry group is therefore not a datum of $X$ alone. The Euclidean plane with its form $x^2+y^2$ has the symmetry group $O(2)$ and no hyperbolic rotation; the plane with the form $x^2-y^2$ has the symmetry group $O(1,1)$ and no Euclidean rotation. This dependence on the chosen form is the boundary test of the part, and it is what makes every statement below a statement of geometry rather than of group theory.
 

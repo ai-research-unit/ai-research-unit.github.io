@@ -41,15 +41,15 @@ $$
 
 ## Rigidity
 
-**Theorem (the unique $\mathrm{C}^*$-norm and the isometric maps).** A $*$-algebra carries at most one $\mathrm{C}^*$-norm; every $*$-isomorphism of $\mathrm{C}^*$-algebras is isometric; and every unital $*$-homomorphism $\varphi : A \to B$ of unital $\mathrm{C}^*$-algebras is contractive, with
+**Theorem (the unique $\mathrm{C}^*$-norm and the isometric maps).** A $*$-algebra carries at most one $\mathrm{C}^*$-norm; every $*$-isomorphism of $\mathrm{C}^*$-algebras is isometric; and every unital $*$-homomorphism $\digamma_{\mathrm{map}} : A \to B$ of unital $\mathrm{C}^*$-algebras is contractive, with
 
 $$
-\boxed{\;\lVert\varphi(a)\rVert = r\bigl(\varphi(a^*a)\bigr)^{1/2} \leq r(a^*a)^{1/2} = \lVert a\rVert\;} .
+\boxed{\;\lVert\digamma_{\mathrm{map}}(a)\rVert = r\bigl(\digamma_{\mathrm{map}}(a^*a)\bigr)^{1/2} \leq r(a^*a)^{1/2} = \lVert a\rVert\;} .
 $$
 
 An injective unital $*$-homomorphism is isometric.
 
-**Proof.** Uniqueness: the norm is $\lVert a\rVert = r(a^*a)^{1/2}$, and the spectral radius is defined by invertibility, an algebraic notion, so two $\mathrm{C}^*$-norms on the same $*$-algebra agree; a $*$-isomorphism preserves invertibility, hence the spectral radius of $a^*a$, hence the norm. Contractivity: $\sigma(\varphi(a^*a)) \subseteq \sigma(a^*a)$ under a unital homomorphism, so $r(\varphi(a^*a)) \leq r(a^*a)$; the displayed chain follows. For an injective unital $*$-homomorphism the spectra agree by the same argument applied to the range, so the inequality is an equality.
+**Proof.** Uniqueness: the norm is $\lVert a\rVert = r(a^*a)^{1/2}$, and the spectral radius is defined by invertibility, an algebraic notion, so two $\mathrm{C}^*$-norms on the same $*$-algebra agree; a $*$-isomorphism preserves invertibility, hence the spectral radius of $a^*a$, hence the norm. Contractivity: $\sigma(\digamma_{\mathrm{map}}(a^*a)) \subseteq \sigma(a^*a)$ under a unital homomorphism, so $r(\digamma_{\mathrm{map}}(a^*a)) \leq r(a^*a)$; the displayed chain follows. For an injective unital $*$-homomorphism the spectra agree by the same argument applied to the range, so the inequality is an equality.
 
 **Corollary (the $\mathrm{C}^*$-identity characterises the $\mathrm{C}^*$-norm).** A complete norm $\lVert\cdot\rVert$ on a $*$-algebra is a $\mathrm{C}^*$-norm if and only if $\lVert a^*a\rVert = \lVert a\rVert^2$ for all $a$; among the Banach $*$-norms the $\mathrm{C}^*$-norm is the unique one with this property, and it is the smallest complete algebra $\ast$-norm in which the involution is isometric when such exists.
 
@@ -87,7 +87,7 @@ one has $r(a) = r(b) = 0$ while $a + b = \begin{pmatrix}0&1\\1&0\end{pmatrix}$ h
 
 ## Summary
 
-In a $\mathrm{C}^*$-algebra the involution computes the spectral radius: $\lVert a^*a\rVert = r(a^*a) = \lVert a\rVert^2$, so $\lVert a\rVert = r(a^*a)^{1/2}$, and for a normal (in particular self-adjoint) element $\lVert a\rVert = r(a)$. The involution moves the spectrum by conjugation, $\sigma(a^*) = \overline{\sigma(a)}$, it preserves the spectral radius, $r(a^*) = r(a)$, and $r(a^*a) = r(a)^2$. These identities make the norm algebraic: a $*$-algebra carries at most one $\mathrm{C}^*$-norm, every $*$-isomorphism is isometric, and every unital $*$-homomorphism is contractive with $\lVert\varphi(a)\rVert^2 = r(\varphi(a^*a)) \leq r(a^*a) = \lVert a\rVert^2$, an injective one isometrically. The $\mathrm{C}^*$-identity thus characterises the $\mathrm{C}^*$-norm among the Banach $*$-norms. The positivity and the order are *Hermitian and Self-Adjoint Elements of a Banach Algebra*, and the operator formulation is *Operator Algebras*.
+In a $\mathrm{C}^*$-algebra the involution computes the spectral radius: $\lVert a^*a\rVert = r(a^*a) = \lVert a\rVert^2$, so $\lVert a\rVert = r(a^*a)^{1/2}$, and for a normal (in particular self-adjoint) element $\lVert a\rVert = r(a)$. The involution moves the spectrum by conjugation, $\sigma(a^*) = \overline{\sigma(a)}$, it preserves the spectral radius, $r(a^*) = r(a)$, and $r(a^*a) = r(a)^2$. These identities make the norm algebraic: a $*$-algebra carries at most one $\mathrm{C}^*$-norm, every $*$-isomorphism is isometric, and every unital $*$-homomorphism is contractive with $\lVert\digamma_{\mathrm{map}}(a)\rVert^2 = r(\digamma_{\mathrm{map}}(a^*a)) \leq r(a^*a) = \lVert a\rVert^2$, an injective one isometrically. The $\mathrm{C}^*$-identity thus characterises the $\mathrm{C}^*$-norm among the Banach $*$-norms. The positivity and the order are *Hermitian and Self-Adjoint Elements of a Banach Algebra*, and the operator formulation is *Operator Algebras*.
 
 ## Summary of Notation
 
@@ -98,7 +98,7 @@ In a $\mathrm{C}^*$-algebra the involution computes the spectral radius: $\lVert
 | $\lVert a\rVert = r(a^*a)^{1/2}$ | Norm recovered from the involution |
 | $\lVert a\rVert = r(a)$ | Normal (self-adjoint) case |
 | $\sigma(a^*) = \overline{\sigma(a)}$, $r(a^*) = r(a)$ | Involution and spectrum |
-| $\lVert\varphi(a)\rVert \leq \lVert a\rVert$ | Contractivity of a unital $*$-homomorphism |
+| $\lVert\digamma_{\mathrm{map}}(a)\rVert \leq \lVert a\rVert$ | Contractivity of a unital $*$-homomorphism |
 | Unique $\mathrm{C}^*$-norm | At most one such norm on a $*$-algebra |
 | $\lVert a\rVert \leq \lvert a\rvert$ | C*-norm smallest complete isometric `*`-norm |
 | $r$ not subadditive | $r(a+b) > r(a)+r(b)$ in $M_2(\mathbb{C})$ |

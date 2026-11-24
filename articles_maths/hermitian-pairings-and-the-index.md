@@ -11,22 +11,22 @@ The prerequisites are *Hermitian Pairings on a Topological Space* for the Hermit
 
 ## Hermitian Pairings
 
-**Definition.** Let $A$ be a ring with an involution $*$, and let $M$ be a right $A$-module. A **Hermitian pairing** on $M$ is a biadditive map $\phi:M\times M\to A$ that is $A$-linear in the second variable and conjugate-linear in the first,
+**Definition.** Let $A$ be a ring with an involution $*$, and let $M$ be a right $A$-module. A **Hermitian pairing** on $M$ is a biadditive map $\digamma_{\mathrm{map}}:M\times M\to A$ that is $A$-linear in the second variable and conjugate-linear in the first,
 
 $$
-\phi(xa,y)=\phi(x,y)a,\qquad
-\phi(x,ya)=\phi(x,y)a,\qquad
-\phi(y,x)=\phi(x,y)^{*} ,
+\digamma_{\mathrm{map}}(xa,y)=\digamma_{\mathrm{map}}(x,y)a,\qquad
+\digamma_{\mathrm{map}}(x,ya)=\digamma_{\mathrm{map}}(x,y)a,\qquad
+\digamma_{\mathrm{map}}(y,x)=\digamma_{\mathrm{map}}(x,y)^{*} ,
 $$
 
-with the last the **Hermitian symmetry**; the form is **positive definite** when $\phi(x,x)$ is a positive element of $A$ for $x\neq0$, and the pair $(M,\phi)$ is a **Hermitian module**. The **signature** of a Hermitian pairing on a finite-dimensional real or complex space is the difference of the numbers of positive and negative eigenvalues, $\sigma=n-m$; the **Witt group** classifies the forms up to the addition of hyperbolic planes, and the classification of the Hermitian forms over an involution ring is that of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
+with the last the **Hermitian symmetry**; the form is **positive definite** when $\digamma_{\mathrm{map}}(x,x)$ is a positive element of $A$ for $x\neq0$, and the pair $(M,\digamma_{\mathrm{map}})$ is a **Hermitian module**. The **signature** of a Hermitian pairing on a finite-dimensional real or complex space is the difference of the numbers of positive and negative eigenvalues, $\sigma=n-m$; the **Witt group** classifies the forms up to the addition of hyperbolic planes, and the classification of the Hermitian forms over an involution ring is that of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
 
-**Theorem (the pairing of a topological space).** Let $X$ be a compact space with a continuous involution $\iota$, and let $\phi$ be a Hermitian pairing on the cohomology $H^{*}(X;\mathbb{C})$ that is compatible with the involution. Then the cohomology decomposes orthogonally into the eigenspaces of $\iota$, the pairing restricted to each eigenspace is nondegenerate, and the signatures of the restrictions determine the pairing up to isometry:
+**Theorem (the pairing of a topological space).** Let $X$ be a compact space with a continuous involution $\iota$, and let $\digamma_{\mathrm{map}}$ be a Hermitian pairing on the cohomology $H^{*}(X;\mathbb{C})$ that is compatible with the involution. Then the cohomology decomposes orthogonally into the eigenspaces of $\iota$, the pairing restricted to each eigenspace is nondegenerate, and the signatures of the restrictions determine the pairing up to isometry:
 
 $$
 H^{*}(X;\mathbb{C})=H^{+}\oplus H^{-},\qquad
-\phi=\phi_{+}\perp\phi_{-},\qquad
-\operatorname{sign}\phi=\operatorname{sign}\phi_{+}+\operatorname{sign}\phi_{-} .
+\digamma_{\mathrm{map}}=\digamma_{\mathrm{map},+}\perp\digamma_{\mathrm{map},-},\qquad
+\operatorname{sign}\digamma_{\mathrm{map}}=\operatorname{sign}\digamma_{\mathrm{map},+}+\operatorname{sign}\digamma_{\mathrm{map},-} .
 $$
 
 **Proof.** The compatibility of the pairing with the involution and its Hermitian symmetry make the eigenspaces orthogonal and the restrictions nondegenerate; the orthogonal decomposition and the additivity of the signature are the elementary linear algebra of an isometric involution on a Hermitian space. The statement is that of *Hermitian Pairings on a Topological Space*.
@@ -147,9 +147,9 @@ A **Hermitian pairing** is a sesquilinear form with conjugate symmetry, positive
 
 | Symbol | Meaning |
 |---|---|
-| $\phi$, $\phi(y,x)=\phi(x,y)^{*}$ | Hermitian pairing on a module with an involution |
+| $\digamma_{\mathrm{map}}$, $\digamma_{\mathrm{map}}(y,x)=\digamma_{\mathrm{map}}(x,y)^{*}$ | Hermitian pairing on a module with an involution |
 | $\sigma=n-m$, Witt group | Signature and classification of a Hermitian form |
-| $H^{*}=H^{+}\oplus H^{-}$, $\phi=\phi_{+}\perp\phi_{-}$ | Orthogonal decomposition under an involution |
+| $H^{*}=H^{+}\oplus H^{-}$, $\digamma_{\mathrm{map}}=\digamma_{\mathrm{map},+}\perp\digamma_{\mathrm{map},-}$ | Orthogonal decomposition under an involution |
 | $[\sigma_D]\in K^{0}(T^{*}M)$, $[M]\in K_{0}(T^{*}M)$ | Symbol class and fundamental class |
 | $\operatorname{ind}D=\langle[\sigma_D],[M]\rangle$ | Index pairing |
 | $\operatorname{ind}D=\int_M\operatorname{ch}(E)\rho(TM)$ | Chern-character form of the pairing |

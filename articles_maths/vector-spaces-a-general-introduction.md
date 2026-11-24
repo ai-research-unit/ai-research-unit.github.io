@@ -101,27 +101,27 @@ A submodule of a module over a field is exactly a vector subspace.
 Let $M$ and $N$ be $R$-modules. An **$R$-module homomorphism** is a function
 
 $$
-\varphi : M \to N
+\digamma_{\mathrm{map}} : M \to N
 $$
 
 such that for all $r \in R$ and $m, n \in M$:
 
-**(H1)** $\varphi(m + n) = \varphi(m) + \varphi(n)$.
+**(H1)** $\digamma_{\mathrm{map}}(m + n) = \digamma_{\mathrm{map}}(m) + \digamma_{\mathrm{tot}}(n)$.
 
-**(H2)** $\varphi(r m) = r \varphi(m)$.
+**(H2)** $\digamma_{\mathrm{map}}(r m) = r \digamma_{\mathrm{map}}(m)$.
 
 An $R$-module homomorphism that is bijective is an **$R$-module isomorphism**. If there is an $R$-module isomorphism $M \to N$, we write $M \cong N$ and say that $M$ and $N$ are **isomorphic**.
 
-The **kernel** of an $R$-module homomorphism $\varphi : M \to N$ is
+The **kernel** of an $R$-module homomorphism $\digamma_{\mathrm{map}} : M \to N$ is
 
 $$
-\ker \varphi = \{m \in M : \varphi(m) = 0\}.
+\ker \digamma_{\mathrm{map}} = \{m \in M : \digamma_{\mathrm{map}}(m) = 0\}.
 $$
 
-The **image** of $\varphi$ is
+The **image** of $\digamma_{\mathrm{map}}$ is
 
 $$
-\operatorname{im} \varphi = \{\varphi(m) : m \in M\}.
+\operatorname{im} \digamma_{\mathrm{map}} = \{\digamma_{\mathrm{map}}(m) : m \in M\}.
 $$
 
 The kernel is a submodule of $M$, and the image is a submodule of $N$.
@@ -142,10 +142,10 @@ $$
 
 These operations are well-defined, and $M/N$ is an $R$-module.
 
-The **first isomorphism theorem** states that if $\varphi : M \to N$ is an $R$-module homomorphism, then
+The **first isomorphism theorem** states that if $\digamma_{\mathrm{map}} : M \to N$ is an $R$-module homomorphism, then
 
 $$
-\boxed{\;M / \ker \varphi \cong \operatorname{im} \varphi\;}.
+\boxed{\;M / \ker \digamma_{\mathrm{map}} \cong \operatorname{im} \digamma_{\mathrm{map}}\;}.
 $$
 
 ---

@@ -57,7 +57,7 @@ What the group does not say. Three things are outside the group and inside the m
 The covariant derivative carries both. Its action on a field of hypercharge $Y$ in the representation $\tau$ of $SU(2)_L$ is
 
 $$
-D_{\imath}\psi=\frac{\partial\psi}{\partial R_{\imath}}+i\,g\sum_a\tau_aW_{a,\imath}\psi+i\,g_{\mathrm Y}Y B_{\imath}\psi ,
+D_{\imath}Ξ_{\mathrm{wfn}}=\frac{\partialΞ_{\mathrm{wfn}}}{\partial R_{\imath}}+i\,g\sum_a\tau_aW_{a,\imath}Ξ_{\mathrm{wfn}}+i\,g_{\mathrm Y}Y B_{\imath}Ξ_{\mathrm{wfn}} ,
 $$
 
 and the product $g_{\mathrm Y}Y$ is what appears. That product is the reason the overall scale of $Y$ is not a physical quantity, as §*What the Conditions Do Not Fix* shows.

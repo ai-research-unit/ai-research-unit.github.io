@@ -101,9 +101,9 @@ The map $Df(x)$ is the **Fréchet derivative** of $f$ at $x$. The limit is taken
 
 (ii) $D(T \circ f)(x)=T \circ Df(x)$;
 
-(iii) if $\varphi:\Omega \to \mathbb{K}$ is differentiable at $x$ then so is $\varphi f$, with $D(\varphi f)(x)h=\varphi(x)Df(x)h+(D\varphi(x)h)f(x)$.
+(iii) if $\digamma_{\mathrm{map}}:\Omega \to \mathbb{K}$ is differentiable at $x$ then so is $\digamma_{\mathrm{map}} f$, with $D(\digamma_{\mathrm{map}} f)(x)h=\digamma_{\mathrm{map}}(x)Df(x)h+(D\digamma_{\mathrm{map}}(x)h)f(x)$.
 
-*Proof.* The difference quotients of (i) and (ii) are the corresponding combinations of the difference quotients of $f$ and $g$, each of which is $o(\|h\|)$; for (iii), $(\varphi f)(x+h)-(\varphi f)(x)=\varphi(x)Df(x)h+\varphi(x)o(\|h\|)+(D\varphi(x)h)f(x)+(D\varphi(x)h)Df(x)h+o(\|h\|)$ and the last two terms are $O(\|h\|^2)$, hence $o(\|h\|)$.
+*Proof.* The difference quotients of (i) and (ii) are the corresponding combinations of the difference quotients of $f$ and $g$, each of which is $o(\|h\|)$; for (iii), $(\digamma_{\mathrm{map}} f)(x+h)-(\digamma_{\mathrm{map}} f)(x)=\digamma_{\mathrm{map}}(x)Df(x)h+\digamma_{\mathrm{map}}(x)o(\|h\|)+(D\digamma_{\mathrm{map}}(x)h)f(x)+(D\digamma_{\mathrm{map}}(x)h)Df(x)h+o(\|h\|)$ and the last two terms are $O(\|h\|^2)$, hence $o(\|h\|)$.
 
 **Theorem (chain rule).** Let $f:\Omega \to V$ and $g:V \to Z$ with $V \subseteq Y$ open. If $f$ is differentiable at $x$ and $g$ is differentiable at $f(x)$, then $g \circ f$ is differentiable at $x$ with
 
@@ -149,10 +149,10 @@ $$
 \|f(x)-f(y)\| \le M\|x-y\| \qquad \text{for all } x,y \in \Omega .
 $$
 
-*Proof.* Fix $x,y$, fix $\varepsilon>0$ and put $\varphi(t)=f(x+t(y-x))$ for $t \in [0,1]$. Let $\Phi$ be the set of $t \in [0,1]$ such that $\|\varphi(s)-\varphi(0)\|\le(M+\varepsilon)s\|y-x\|$ for every $s \le t$. The set is nonempty, since $0 \in \Phi$, and closed by continuity. If $t \in \Phi$ with $t<1$, then differentiability at $t$ gives $\|\varphi(t+h)-\varphi(t)-\varphi'(t)h\|\le\varepsilon h\|y-x\|$ for all sufficiently small $h>0$, and $\|\varphi'(t)\|\le M\|y-x\|$, whence
+*Proof.* Fix $x,y$, fix $\varepsilon>0$ and put $\digamma_{\mathrm{map}}(t)=f(x+t(y-x))$ for $t \in [0,1]$. Let $\Phi$ be the set of $t \in [0,1]$ such that $\|\digamma_{\mathrm{map}}(s)-\digamma_{\mathrm{map}}(0)\|\le(M+\varepsilon)s\|y-x\|$ for every $s \le t$. The set is nonempty, since $0 \in \Phi$, and closed by continuity. If $t \in \Phi$ with $t<1$, then differentiability at $t$ gives $\|\digamma_{\mathrm{map}}(t+h)-\digamma_{\mathrm{map}}(t)-\digamma_{\mathrm{map}}'(t)h\|\le\varepsilon h\|y-x\|$ for all sufficiently small $h>0$, and $\|\digamma_{\mathrm{map}}'(t)\|\le M\|y-x\|$, whence
 
 $$
-\|\varphi(t+h)-\varphi(0)\| \le (M+\varepsilon)t\|y-x\|+(M+\varepsilon)h\|y-x\|=(M+\varepsilon)(t+h)\|y-x\|,
+\|\digamma_{\mathrm{map}}(t+h)-\digamma_{\mathrm{map}}(0)\| \le (M+\varepsilon)t\|y-x\|+(M+\varepsilon)h\|y-x\|=(M+\varepsilon)(t+h)\|y-x\|,
 $$
 
 so $t+h \in \Phi$. Hence $\Phi$ is open in $[0,1]$ as well as closed and nonempty, so $\Phi=[0,1]$; taking $t=1$ and letting $\varepsilon \to 0$ gives the inequality.
@@ -201,7 +201,7 @@ $$
 \Bigl\|f(x+h)-\sum_{j=0}^{k}\frac{1}{j!}D^jf(x)h^j\Bigr\| \le \frac{\|h\|^{k+1}}{(k+1)!}\sup_{0\le t\le1}\|D^{k+1}f(x+th)\| .
 $$
 
-*Proof.* Put $\varphi(t)=f(x+th)$ for $t \in [0,1]$, so that $D\varphi(t)=Df(x+th)h$ by the chain rule and, by induction, $D^j\varphi(t)=D^jf(x+th)h^j$. The scalar-parameter formula $\varphi(1)=\sum_{j\le k}\varphi^{(j)}(0)/j!+\int_0^1(1-t)^k\varphi^{(k+1)}(t)/k!\,dt$ follows from repeated integration by parts, and substituting the expressions for $\varphi^{(j)}$ gives the claim; the estimate uses $\int_0^1(1-t)^kdt=1/(k+1)$ and the boundedness of $D^{k+1}$.
+*Proof.* Put $\digamma_{\mathrm{map}}(t)=f(x+th)$ for $t \in [0,1]$, so that $D\digamma_{\mathrm{map}}(t)=Df(x+th)h$ by the chain rule and, by induction, $D^j\digamma_{\mathrm{map}}(t)=D^jf(x+th)h^j$. The scalar-parameter formula $\digamma_{\mathrm{map}}(1)=\sum_{j\le k}\digamma_{\mathrm{map}}^{(j)}(0)/j!+\int_0^1(1-t)^k\digamma_{\mathrm{map}}^{(k+1)}(t)/k!\,dt$ follows from repeated integration by parts, and substituting the expressions for $\digamma_{\mathrm{map}}^{(j)}$ gives the claim; the estimate uses $\int_0^1(1-t)^kdt=1/(k+1)$ and the boundedness of $D^{k+1}$.
 
 **Theorem (Taylor with Peano remainder).** If $f$ is of class $C^k$ on a neighbourhood of $x$, then
 
@@ -261,23 +261,23 @@ so $Df(x,y)$ is invertible at every point and the theorem gives a local inverse 
 
 ## The Implicit Function Theorem
 
-**Theorem (implicit function theorem).** Let $X,Y,Z$ be Banach spaces, let $W \subseteq X \times Y$ be open and $F:W \to Z$ of class $C^1$, and let $(x_0,y_0) \in W$ with $F(x_0,y_0)=0$. Suppose the partial derivative $D_2F(x_0,y_0) \in B(Y,Z)$ is invertible with bounded inverse, where $D_2F$ denotes the derivative with respect to the second variable. Then there are open neighbourhoods $\Omega_0$ of $x_0$ and $V_0$ of $y_0$ and a unique map $\varphi:\Omega_0 \to V_0$ of class $C^1$ with
+**Theorem (implicit function theorem).** Let $X,Y,Z$ be Banach spaces, let $W \subseteq X \times Y$ be open and $F:W \to Z$ of class $C^1$, and let $(x_0,y_0) \in W$ with $F(x_0,y_0)=0$. Suppose the partial derivative $D_2F(x_0,y_0) \in B(Y,Z)$ is invertible with bounded inverse, where $D_2F$ denotes the derivative with respect to the second variable. Then there are open neighbourhoods $\Omega_0$ of $x_0$ and $V_0$ of $y_0$ and a unique map $\digamma_{\mathrm{map}}:\Omega_0 \to V_0$ of class $C^1$ with
 
 $$
-F(x,\varphi(x))=0 \quad (x \in \Omega_0), \qquad \varphi(x_0)=y_0,
+F(x,\digamma_{\mathrm{map}}(x))=0 \quad (x \in \Omega_0), \qquad \digamma_{\mathrm{map}}(x_0)=y_0,
 $$
 
 and for $x \in \Omega_0$,
 
 $$
-\boxed{\;D\varphi(x)=-\bigl(D_2F(x,\varphi(x))\bigr)^{-1}\circ D_1F(x,\varphi(x))\;}.
+\boxed{\;D\digamma_{\mathrm{map}}(x)=-\bigl(D_2F(x,\digamma_{\mathrm{map}}(x))\bigr)^{-1}\circ D_1F(x,\digamma_{\mathrm{map}}(x))\;}.
 $$
 
-If $F$ is of class $C^k$ then so is $\varphi$.
+If $F$ is of class $C^k$ then so is $\digamma_{\mathrm{map}}$.
 
-*Proof.* Define $\Phi:W \to X \times Z$ by $\Phi(x,y)=(x,F(x,y))$; then $D\Phi(x_0,y_0)$ is invertible, with inverse $(u,v)\mapsto(u,(D_2F)^{-1}(v-D_1F\,u))$. The inverse function theorem applied to $\Phi$ gives a local inverse of the form $(x,z) \mapsto (x,\psi(x,z))$, and $\varphi(x)=\psi(x,0)$ satisfies $F(x,\varphi(x))=0$; uniqueness follows from the injectivity of $\Phi$ on the neighbourhood. Differentiating the identity $F(x,\varphi(x))=0$ by the chain rule gives $D_1F+D_2F\circ D\varphi=0$, whence the formula.
+*Proof.* Define $\Phi:W \to X \times Z$ by $\Phi(x,y)=(x,F(x,y))$; then $D\Phi(x_0,y_0)$ is invertible, with inverse $(u,v)\mapsto(u,(D_2F)^{-1}(v-D_1F\,u))$. The inverse function theorem applied to $\Phi$ gives a local inverse of the form $(x,z) \mapsto (x,Ξ_{\mathrm{wfn}}(x,z))$, and $\digamma_{\mathrm{map}}(x)=Ξ_{\mathrm{wfn}}(x,0)$ satisfies $F(x,\digamma_{\mathrm{map}}(x))=0$; uniqueness follows from the injectivity of $\Phi$ on the neighbourhood. Differentiating the identity $F(x,\digamma_{\mathrm{map}}(x))=0$ by the chain rule gives $D_1F+D_2F\circ D\digamma_{\mathrm{map}}=0$, whence the formula.
 
-**Corollary (submersions and the rank theorem).** Let $F:W \to Z$ be $C^1$ and suppose $DF$ is surjective at $(x_0,y_0)$ with the kernel splitting; then there are local coordinates in which $F$ is the projection onto the first factor, so the level set $F^{-1}(F(x_0,y_0))$ is locally the graph of $\varphi$ and is a $C^1$ submanifold modelled on $\ker DF$. This is the local form of the rank theorem; the global theory of such local models on manifolds is that of Part II and of *Smooth Manifolds and Differential Geometry*.
+**Corollary (submersions and the rank theorem).** Let $F:W \to Z$ be $C^1$ and suppose $DF$ is surjective at $(x_0,y_0)$ with the kernel splitting; then there are local coordinates in which $F$ is the projection onto the first factor, so the level set $F^{-1}(F(x_0,y_0))$ is locally the graph of $\digamma_{\mathrm{map}}$ and is a $C^1$ submanifold modelled on $\ker DF$. This is the local form of the rank theorem; the global theory of such local models on manifolds is that of Part II and of *Smooth Manifolds and Differential Geometry*.
 
 **Corollary (existence of solutions).** If $F(x_0,y_0)=0$ and $D_2F(x_0,y_0)$ is invertible, then for every $x$ near $x_0$ the equation $F(x,y)=0$ has exactly one solution in a fixed neighbourhood of $y_0$. This is the sense in which the theorem solves equations: it converts the invertibility of one bounded linear map into a local existence and uniqueness statement for a nonlinear equation, and its quantitative form is the contraction estimate of the proof.
 
@@ -299,7 +299,7 @@ and $Df(x)$ is the linear map it represents.
 
 (iii) The inverse function theorem reads: if $m=n$ and $\det J_f(x_0)\neq0$, then $f$ is a local $C^1$ diffeomorphism at $x_0$ and $J_{f^{-1}}(f(x_0))=J_f(x_0)^{-1}$.
 
-(iv) The implicit function theorem reads: if $\det\bigl(\partial F_i/\partial y_j(x_0,y_0)\bigr)\neq0$, then the level set $F=0$ is locally a graph $y=\varphi(x)$ with $J_\varphi=-(D_yF)^{-1}D_xF$.
+(iv) The implicit function theorem reads: if $\det\bigl(\partial F_i/\partial y_j(x_0,y_0)\bigr)\neq0$, then the level set $F=0$ is locally a graph $y=\digamma_{\mathrm{map}}(x)$ with $J_\digamma_{\mathrm{map}}=-(D_yF)^{-1}D_xF$.
 
 **Example (Newton's method).** Let $f:\mathbb{R}^n \to \mathbb{R}^n$ be $C^1$ with $Df(x)$ invertible near a zero $x^*$ and put $F(x)=x-Df(x)^{-1}f(x)$; then $DF(x^*)=I-D(Df(x^*)^{-1})f(x^*)-Df(x^*)^{-1}Df(x^*)=0$, so $F$ is a contraction on a suitable ball and the Newton iterates $x_{n+1}=x_n-Df(x_n)^{-1}f(x_n)$ converge to $x^*$ with $\|x_{n+1}-x^*\|\le C\|x_n-x^*\|^2$. The vanishing of $DF$ at the zero is the source of the quadratic order, and it is the quantitative content of the differentiability hypothesis.
 
@@ -309,7 +309,7 @@ and $Df(x)$ is the linear map it represents.
 
 A bounded multilinear map is one that is continuous, and the bounded $k$-linear maps form a normed space $\mathcal L(X_1,\dots,X_k;Y)$, complete when $Y$ is; the telescoping identity converts differences of products into sums of products of differences. A map $f:\Omega\to Y$ is differentiable at $x$ when a bounded linear map $Df(x)$ approximates it to first order with error $o(\|h\|)$; the derivative is unique, differentiability implies continuity, and the chain rule $D(g\circ f)(x)=Dg(f(x))\circ Df(x)$ holds, with the sum, scalar-multiple and product rules. Partial derivatives exist whenever the total derivative does and assemble it as $Df(x)h=\sum_iD_if(x)h_i$; conversely continuous partial derivatives imply differentiability. The mean value theorem is replaced by the mean value inequality $\|f(x)-f(y)\|\le M\|x-y\|$ when $\|Df\|\le M$ on a convex set, and a vanishing derivative on a convex set forces constancy.
 
-Higher derivatives are bounded symmetric multilinear maps $D^kf(x) \in \mathcal L^k(X;Y)$, the symmetry of the second derivative holding when it is continuous and extending to all orders; Taylor's theorem holds with the integral remainder, giving an error bounded by $\|h\|^{k+1}\sup\|D^{k+1}f\|/(k+1)!$ for $C^{k+1}$ maps, and with the Peano remainder $o(\|h\|^k)$ for $C^k$ maps. The Banach contraction principle supplies the unique fixed point and the geometric error estimates, and from it the inverse function theorem follows by contraction of the auxiliary map $x \mapsto x+y-f(x)$: an invertible derivative at a point makes the map a local $C^k$ diffeomorphism with $D(f^{-1})(y)=(Df(f^{-1}(y)))^{-1}$. The implicit function theorem follows from the inverse theorem applied to $(x,y)\mapsto(x,F(x,y))$: an invertible partial derivative $D_2F$ makes the equation $F(x,y)=0$ locally solvable as $y=\varphi(x)$, with $D\varphi=-(D_2F)^{-1}D_1F$, and gives the local rank theorem. In finite dimension all of this is the Jacobian matrix: the chain rule is matrix multiplication and the inverse function theorem is the nonvanishing of $\det J_f$.
+Higher derivatives are bounded symmetric multilinear maps $D^kf(x) \in \mathcal L^k(X;Y)$, the symmetry of the second derivative holding when it is continuous and extending to all orders; Taylor's theorem holds with the integral remainder, giving an error bounded by $\|h\|^{k+1}\sup\|D^{k+1}f\|/(k+1)!$ for $C^{k+1}$ maps, and with the Peano remainder $o(\|h\|^k)$ for $C^k$ maps. The Banach contraction principle supplies the unique fixed point and the geometric error estimates, and from it the inverse function theorem follows by contraction of the auxiliary map $x \mapsto x+y-f(x)$: an invertible derivative at a point makes the map a local $C^k$ diffeomorphism with $D(f^{-1})(y)=(Df(f^{-1}(y)))^{-1}$. The implicit function theorem follows from the inverse theorem applied to $(x,y)\mapsto(x,F(x,y))$: an invertible partial derivative $D_2F$ makes the equation $F(x,y)=0$ locally solvable as $y=\digamma_{\mathrm{map}}(x)$, with $D\digamma_{\mathrm{map}}=-(D_2F)^{-1}D_1F$, and gives the local rank theorem. In finite dimension all of this is the Jacobian matrix: the chain rule is matrix multiplication and the inverse function theorem is the nonvanishing of $\det J_f$.
 
 ## Summary of Notation
 
@@ -329,7 +329,7 @@ Higher derivatives are bounded symmetric multilinear maps $D^kf(x) \in \mathcal 
 | $o(\|h\|)$, $O(\|h\|^2)$ | Landau notation in the norm of $X$ |
 | $M$, $c$ | bounds and contraction constants |
 | $F$, $x_{n+1}=F(x_n)$ | contraction and its iterates |
-| $\varphi$ | implicitly defined map |
+| $\digamma_{\mathrm{map}}$ | implicitly defined map |
 | $h^j=(h,\dots,h)$ | repeated argument of a multilinear map |
 
 

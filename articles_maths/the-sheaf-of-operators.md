@@ -21,15 +21,15 @@ and an operator on $\mathcal{F}$ over $\Omega$ is the same thing as a compatible
 
 *Proof.* The first identity and the gluing are the sheaf property of $\mathcal{E}nd(\mathcal{F})$ established in *Operators on a Sheaf*; they are restated here only to fix the reading of the sections as operators on the restriction.
 
-**Proposition (the bifunctor).** The sheaf hom $\mathcal{H}om(-,-)$ is a bifunctor on sheaves of $\mathcal{O}_X$-modules, contravariant in the first variable and covariant in the second, so that a morphism $\varphi:\mathcal{F}\to\mathcal{G}$ induces $\mathcal{H}om(\varphi,\mathcal{G}):\mathcal{H}om(\mathcal{G},\mathcal{G})\to\mathcal{H}om(\mathcal{F},\mathcal{G})$ and $\mathcal{H}om(\mathcal{F},\varphi):\mathcal{H}om(\mathcal{F},\mathcal{G})\to\mathcal{H}om(\mathcal{F},\mathcal{G})$. For the operator sheaf this gives, for every isomorphism $\varphi:\mathcal{F}\to\mathcal{G}$, an isomorphism of sheaves of rings
+**Proposition (the bifunctor).** The sheaf hom $\mathcal{H}om(-,-)$ is a bifunctor on sheaves of $\mathcal{O}_X$-modules, contravariant in the first variable and covariant in the second, so that a morphism $\digamma_{\mathrm{map}}:\mathcal{F}\to\mathcal{G}$ induces $\mathcal{H}om(\digamma_{\mathrm{map}},\mathcal{G}):\mathcal{H}om(\mathcal{G},\mathcal{G})\to\mathcal{H}om(\mathcal{F},\mathcal{G})$ and $\mathcal{H}om(\mathcal{F},\digamma_{\mathrm{map}}):\mathcal{H}om(\mathcal{F},\mathcal{G})\to\mathcal{H}om(\mathcal{F},\mathcal{G})$. For the operator sheaf this gives, for every isomorphism $\digamma_{\mathrm{map}}:\mathcal{F}\to\mathcal{G}$, an isomorphism of sheaves of rings
 
 $$
-\boxed{\;\mathcal{E}nd(\varphi):\mathcal{E}nd(\mathcal{F})\longrightarrow\mathcal{E}nd(\mathcal{G}),\qquad T\mapsto\varphi\,T\,\varphi^{-1}\;},
+\boxed{\;\mathcal{E}nd(\digamma_{\mathrm{map}}):\mathcal{E}nd(\mathcal{F})\longrightarrow\mathcal{E}nd(\mathcal{G}),\qquad T\mapsto\digamma_{\mathrm{map}}\,T\,\digamma_{\mathrm{map}}^{-1}\;},
 $$
 
 and $\mathcal{E}nd$ is a functor on the groupoid of sheaves and isomorphisms.
 
-*Proof.* The bifunctoriality of $\mathcal{H}om$ is the functoriality of morphism sets, contravariant in the source and covariant in the target, sheafified. For an isomorphism the pair of variances composes to the conjugation displayed, which is a ring isomorphism with the displayed inverse $\mathcal{E}nd(\varphi^{-1})$.
+*Proof.* The bifunctoriality of $\mathcal{H}om$ is the functoriality of morphism sets, contravariant in the source and covariant in the target, sheafified. For an isomorphism the pair of variances composes to the conjugation displayed, which is a ring isomorphism with the displayed inverse $\mathcal{E}nd(\digamma_{\mathrm{map}}^{-1})$.
 
 **Remark (the operator sheaf of a subsheaf).** A monomorphism $\mathcal{F}\to\mathcal{G}$ induces a restriction $\mathcal{E}nd(\mathcal{G})\to\mathcal{E}nd(\mathcal{F})$ on the operators that preserve $\mathcal{F}$, but not every operator on $\mathcal{F}$ extends; $\mathcal{E}nd$ is not a functor on all morphisms, and the failure of the extension of operators is the restriction phenomenon of *The Restriction and Extension Operators*.
 
@@ -129,7 +129,7 @@ For a locally free sheaf of finite rank $r$ the local structure is the matrix al
 |---|---|
 | $\Gamma(\Omega,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}\rvert_\Omega)$ | sections of the operator sheaf are the operators on the restriction |
 | $\mathcal{H}om(-,-)$ | bifunctor, contravariant in the source and covariant in the target |
-| $\mathcal{E}nd(\varphi)(T)=\varphi T\varphi^{-1}$ | functoriality on isomorphisms by conjugation |
+| $\mathcal{E}nd(\digamma_{\mathrm{map}})(T)=\digamma_{\mathrm{map}} T\digamma_{\mathrm{map}}^{-1}$ | functoriality on isomorphisms by conjugation |
 | $\mathcal{G}L(\mathcal{F})=\mathcal{E}nd(\mathcal{F})^{\times}$ | sheaf of invertibles, the automorphism sheaf $\mathcal{A}ut(\mathcal{F})$ |
 | $\mathrm{GL}_r(\mathcal{O}_X)$ | local model of the automorphism sheaf for a rank-$r$ locally free sheaf |
 | $M_r(\mathcal{O}_X)$ | local model of the operator sheaf; locally free of rank $r^2$ |

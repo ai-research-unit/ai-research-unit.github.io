@@ -19,33 +19,33 @@ The article develops the definition and the first variation, the minimal surface
 
 ### Parametrised Surfaces and the Area
 
-**Definition.** Let $M$ be a compact two-dimensional manifold with boundary $\partial M$ and let $\phi : M \to \mathbb{R}^n$ be an immersion of class $C^2$. The **area** of $\phi$ is
+**Definition.** Let $M$ be a compact two-dimensional manifold with boundary $\partial M$ and let $\digamma_{\mathrm{map}} : M \to \mathbb{R}^n$ be an immersion of class $C^2$. The **area** of $\digamma_{\mathrm{map}}$ is
 
 $$
-A(\phi) = \int_M\sqrt{\det\bigl(g_{ij}(x)\bigr)}\,dx, \qquad g_{ij}(x) = \partial/\partial x_i\,\phi(x)\cdot\partial/\partial x_j\,\phi(x),
+A(\digamma_{\mathrm{map}}) = \int_M\sqrt{\det\bigl(g_{ij}(x)\bigr)}\,dx, \qquad g_{ij}(x) = \partial/\partial x_i\,\digamma_{\mathrm{map}}(x)\cdot\partial/\partial x_j\,\digamma_{\mathrm{map}}(x),
 $$
 
-where $g$ is the induced (first fundamental) metric. The **mean curvature vector** is the trace of the second fundamental form, $H = \sum_{i,j}(g^{-1})_{ij}\mathrm{II}_{ij}$, and $\phi$ is **minimal** if $H\equiv0$.
+where $g$ is the induced (first fundamental) metric. The **mean curvature vector** is the trace of the second fundamental form, $H = \sum_{i,j}(g^{-1})_{ij}\mathrm{II}_{ij}$, and $\digamma_{\mathrm{map}}$ is **minimal** if $H\equiv0$.
 
-**Definition.** A **variation** of $\phi$ is a $C^2$ map $\Phi : M\times(-\varepsilon,\varepsilon)\to\mathbb{R}^n$ with $\Phi(x,0)=\phi(x)$ for all $x$ and $\Phi(x,t)=\phi(x)$ for $x\in\partial M$ and all $t$; the associated **variational field** is $V(x) = \partial/\partial t\,\Phi(x,t)|_{t=0}$, a vector field along $\phi$ vanishing on $\partial M$. The variation is **normal** if $V$ is everywhere perpendicular to $\phi_*TM$.
+**Definition.** A **variation** of $\digamma_{\mathrm{map}}$ is a $C^2$ map $\Phi : M\times(-\varepsilon,\varepsilon)\to\mathbb{R}^n$ with $\Phi(x,0)=\digamma_{\mathrm{map}}(x)$ for all $x$ and $\Phi(x,t)=\digamma_{\mathrm{map}}(x)$ for $x\in\partial M$ and all $t$; the associated **variational field** is $V(x) = \partial/\partial t\,\Phi(x,t)|_{t=0}$, a vector field along $\digamma_{\mathrm{map}}$ vanishing on $\partial M$. The variation is **normal** if $V$ is everywhere perpendicular to $\digamma_{\mathrm{map},*}TM$.
 
-**Theorem (first variation of area).** For every variation $\Phi$ of $\phi$,
+**Theorem (first variation of area).** For every variation $\Phi$ of $\digamma_{\mathrm{map}}$,
 
 $$
-\boxed{\;\frac{d}{dt}A(\phi_t)\Bigr|_{t=0} = -\int_M V\cdot H\,dA\;} ,
+\boxed{\;\frac{d}{dt}A(\digamma_{\mathrm{map},t})\Bigr|_{t=0} = -\int_M V\cdot H\,dA\;} ,
 $$
 
 where $dA = \sqrt{\det(g_{ij})}\,dx$ is the area element and $H$ is the mean curvature vector. Hence a surface is a critical point of the area functional for all variations fixing the boundary if and only if $H\equiv0$.
 
-*Proof.* Quoted as standard and used in the preceding article in its one-dimensional form. The derivative of the induced metric is $\partial/\partial t\,g_{ij} = \partial/\partial x_i\,V\cdot\partial/\partial x_j\,\phi + \partial/\partial x_j\,V\cdot\partial/\partial x_i\,\phi$, and the derivative of the volume element is the trace of that with respect to $g$; integrating by parts on $M$ and using the vanishing of $V$ on $\partial M$ produces the integral of $V$ against the trace of the second fundamental form, with the sign displayed. Since $V$ is an arbitrary field along $\phi$ vanishing on the boundary, the integral vanishes for all such $V$ exactly when $H=0$.
+*Proof.* Quoted as standard and used in the preceding article in its one-dimensional form. The derivative of the induced metric is $\partial/\partial t\,g_{ij} = \partial/\partial x_i\,V\cdot\partial/\partial x_j\,\digamma_{\mathrm{map}} + \partial/\partial x_j\,V\cdot\partial/\partial x_i\,\digamma_{\mathrm{map}}$, and the derivative of the volume element is the trace of that with respect to $g$; integrating by parts on $M$ and using the vanishing of $V$ on $\partial M$ produces the integral of $V$ against the trace of the second fundamental form, with the sign displayed. Since $V$ is an arbitrary field along $\digamma_{\mathrm{map}}$ vanishing on the boundary, the integral vanishes for all such $V$ exactly when $H=0$.
 
-**Remark (the degeneracy of the area).** The area functional is invariant under reparametrisation: $A(\phi\circ\psi) = A(\phi)$ for every diffeomorphism $\psi$ of $M$. Its first variation therefore vanishes in the directions tangent to the reparametrisation group, and the functional is not coercive on a space of maps without a constraint on the parametrisation. This is why the existence theory of Plateau's problem is carried out for the **energy**
+**Remark (the degeneracy of the area).** The area functional is invariant under reparametrisation: $A(\digamma_{\mathrm{map}}\circΞ_{\mathrm{wfn}}) = A(\digamma_{\mathrm{map}})$ for every diffeomorphism $Ξ_{\mathrm{wfn}}$ of $M$. Its first variation therefore vanishes in the directions tangent to the reparametrisation group, and the functional is not coercive on a space of maps without a constraint on the parametrisation. This is why the existence theory of Plateau's problem is carried out for the **energy**
 
 $$
-E(\phi) = \frac12\int_M|\nabla\phi|^2\,dA ,
+E(\digamma_{\mathrm{map}}) = \frac12\int_M|\nabla\digamma_{\mathrm{map}}|^2\,dA ,
 $$
 
-which is coercive on $W^{1,2}(M,\mathbb{R}^n)$ and agrees with the area on conformal maps, $E(\phi) = A(\phi)$ for $\phi$ conformal.
+which is coercive on $W^{1,2}(M,\mathbb{R}^n)$ and agrees with the area on conformal maps, $E(\digamma_{\mathrm{map}}) = A(\digamma_{\mathrm{map}})$ for $\digamma_{\mathrm{map}}$ conformal.
 
 ### The Minimal Surface Equation
 
@@ -111,13 +111,13 @@ is conformal with $\sigma_{ww}+\sigma_{vv}=0$, so it is minimal, and it is one o
 
 ### Statement and Existence
 
-**Definition.** Let $\Gamma \subset \mathbb{R}^n$ be a closed Jordan curve. **Plateau's problem** asks for a continuous map $\phi : D \to \mathbb{R}^n$ from the closed disc, smooth on the open disc, that is a conformal minimal immersion of the open disc and maps $\partial D$ homeomorphically onto $\Gamma$. Such a $\phi$ is a **minimal disc** or a **solution of Plateau's problem**.
+**Definition.** Let $\Gamma \subset \mathbb{R}^n$ be a closed Jordan curve. **Plateau's problem** asks for a continuous map $\digamma_{\mathrm{map}} : D \to \mathbb{R}^n$ from the closed disc, smooth on the open disc, that is a conformal minimal immersion of the open disc and maps $\partial D$ homeomorphically onto $\Gamma$. Such a $\digamma_{\mathrm{map}}$ is a **minimal disc** or a **solution of Plateau's problem**.
 
 **Theorem (Douglas–Radó).** For every rectifiable Jordan curve $\Gamma \subset \mathbb{R}^n$, Plateau's problem has a solution; the solution minimises the energy $E$ among all $W^{1,2}$ maps of the disc whose boundary values are a (suitably normalised) parametrisation of $\Gamma$.
 
 *Proof.* Quoted as standard (the theorem of Douglas and Radó, 1931). The proof minimises $E$ over the class of admissible maps, uses the coercivity of the energy and its weak lower semicontinuity on the reflexive space $W^{1,2}(D,\mathbb{R}^n)$ by the direct method of the preceding articles, and then shows that a minimiser with a suitably normalised boundary parametrisation is conformal; the conformality makes it a critical point of the area and hence minimal. The existence of the minimiser requires care because the class of admissible boundary parametrisations is not closed under weak limits, and it is exactly this difficulty that the **Douglas condition** resolves.
 
-**Theorem (regularity).** A solution of Plateau's problem is real analytic on the open disc; it is an immersion except possibly at finitely many interior **branch points**, where $\nabla\phi$ vanishes and the surface has a conical or umbilic-like singularity, and it is embedded near a sufficiently smooth Jordan curve except possibly finitely many boundary branch points (Gulliver–Osserman–Spruck).
+**Theorem (regularity).** A solution of Plateau's problem is real analytic on the open disc; it is an immersion except possibly at finitely many interior **branch points**, where $\nabla\digamma_{\mathrm{map}}$ vanishes and the surface has a conical or umbilic-like singularity, and it is embedded near a sufficiently smooth Jordan curve except possibly finitely many boundary branch points (Gulliver–Osserman–Spruck).
 
 *Proof.* Quoted as standard. Interior analyticity is a consequence of the elliptic regularity of the minimal surface equation and of the conformality, the branch points are isolated by analyticity, and the boundary regularity is proved by a reflection argument when the curve is analytic, with the general smooth case following by approximation.
 
@@ -125,10 +125,10 @@ is conformal with $\sigma_{ww}+\sigma_{vv}=0$, so it is minimal, and it is one o
 
 ### The Isoperimetric Inequality
 
-**Theorem (isoperimetric inequality for minimal surfaces).** Let $\phi : D\to\mathbb{R}^n$ be a minimal disc with boundary a closed curve of length $L$. Then
+**Theorem (isoperimetric inequality for minimal surfaces).** Let $\digamma_{\mathrm{map}} : D\to\mathbb{R}^n$ be a minimal disc with boundary a closed curve of length $L$. Then
 
 $$
-\boxed{\;A(\phi) \le \frac{L^2}{4\pi}\;} ,
+\boxed{\;A(\digamma_{\mathrm{map}}) \le \frac{L^2}{4\pi}\;} ,
 $$
 
 with equality only for the planar disc.
@@ -137,13 +137,13 @@ with equality only for the planar disc.
 
 ## Stability and the Second Variation
 
-**Definition.** Let $\phi : M \to \mathbb{R}^n$ be a minimal immersion and consider a normal variation with field $V = f\nu$ for a function $f$ vanishing on $\partial M$ and a unit normal $\nu$. The **second variation** of the area is
+**Definition.** Let $\digamma_{\mathrm{map}} : M \to \mathbb{R}^n$ be a minimal immersion and consider a normal variation with field $V = f\nu$ for a function $f$ vanishing on $\partial M$ and a unit normal $\nu$. The **second variation** of the area is
 
 $$
-\frac{d^2}{dt^2}A(\phi_t)\Bigr|_{t=0} = \int_M\Bigl(|\nabla f|^2 - |A|^2f^2\Bigr)dA ,
+\frac{d^2}{dt^2}A(\digamma_{\mathrm{map},t})\Bigr|_{t=0} = \int_M\Bigl(|\nabla f|^2 - |A|^2f^2\Bigr)dA ,
 $$
 
-where $|A|^2$ is the squared norm of the second fundamental form. The **Jacobi operator** is $L = \Delta_M + |A|^2$ (with $\Delta_M$ the Laplace–Beltrami operator, here with the sign making $L$ consistent with the formula), and $\phi$ is **stable** if the second variation is nonnegative for every such $f$, equivalently if the first eigenvalue of $-L$ is nonnegative.
+where $|A|^2$ is the squared norm of the second fundamental form. The **Jacobi operator** is $L = \Delta_M + |A|^2$ (with $\Delta_M$ the Laplace–Beltrami operator, here with the sign making $L$ consistent with the formula), and $\digamma_{\mathrm{map}}$ is **stable** if the second variation is nonnegative for every such $f$, equivalently if the first eigenvalue of $-L$ is nonnegative.
 
 **Theorem (stability criterion).** A minimal surface is stable if and only if
 
@@ -171,21 +171,21 @@ for every compactly supported $f$; the plane and the catenoid are stable, the he
 
 ### The Weierstrass Representation
 
-**Definition.** A **conformal minimal immersion** $\phi : M \to \mathbb{R}^3$ of a Riemann surface $M$ has, in a local conformal coordinate $z$, the **Weierstrass data** $(g,\omega)$ consisting of a meromorphic function $g$ (the Gauss map, after stereographic projection) and a holomorphic $1$-form $\omega$; the immersion is recovered by
+**Definition.** A **conformal minimal immersion** $\digamma_{\mathrm{map}} : M \to \mathbb{R}^3$ of a Riemann surface $M$ has, in a local conformal coordinate $z$, the **Weierstrass data** $(g,\omega)$ consisting of a meromorphic function $g$ (the Gauss map, after stereographic projection) and a holomorphic $1$-form $\omega$; the immersion is recovered by
 
 $$
-\phi(z) = \operatorname{Re}\int^z\Bigl(\tfrac12(1-g^2)\omega,\ \tfrac{i}{2}(1+g^2)\omega,\ g\,\omega\Bigr) ,
+\digamma_{\mathrm{map}}(z) = \operatorname{Re}\int^z\Bigl(\tfrac12(1-g^2)\omega,\ \tfrac{i}{2}(1+g^2)\omega,\ g\,\omega\Bigr) ,
 $$
 
-and the induced metric is $\tfrac14(1+|g|^2)^2|\omega|^2$, so that $\phi$ is conformal exactly when this expression is positive, which requires that $\omega$ have no zeros or poles other than those of $g$.
+and the induced metric is $\tfrac14(1+|g|^2)^2|\omega|^2$, so that $\digamma_{\mathrm{map}}$ is conformal exactly when this expression is positive, which requires that $\omega$ have no zeros or poles other than those of $g$.
 
 **Theorem (Weierstrass representation).** Every conformal minimal immersion of a simply connected Riemann surface into $\mathbb{R}^3$ arises from Weierstrass data $(g,\omega)$ as above, and conversely every pair $(g,\omega)$ for which the metric $\tfrac14(1+|g|^2)^2|\omega|^2$ is nondegenerate defines a conformal minimal immersion; the immersion is single-valued on $M$ exactly when the periods of the holomorphic form vanish over a basis of $H_1(M,\mathbb{Z})$.
 
-*Proof.* Quoted as standard. The harmonicity and conformality of $\phi$ imply that its coordinate functions are harmonic and that $\partial/\partial z\,\phi$ is holomorphic with $\partial/\partial z\,\phi\cdot\partial/\partial z\,\phi = 0$; a holomorphic null vector in $\mathbb{C}^3$ is determined up to scale by its third component and its stereographically projected direction, which are $g$ and $\omega$, and integrating gives the formula. The period condition is the statement that the integral of the $1$-form over closed loops depends only on the homotopy class.
+*Proof.* Quoted as standard. The harmonicity and conformality of $\digamma_{\mathrm{map}}$ imply that its coordinate functions are harmonic and that $\partial/\partial z\,\digamma_{\mathrm{map}}$ is holomorphic with $\partial/\partial z\,\digamma_{\mathrm{map}}\cdot\partial/\partial z\,\digamma_{\mathrm{map}} = 0$; a holomorphic null vector in $\mathbb{C}^3$ is determined up to scale by its third component and its stereographically projected direction, which are $g$ and $\omega$, and integrating gives the formula. The period condition is the statement that the integral of the $1$-form over closed loops depends only on the homotopy class.
 
 **Example (the catenoid and the helicoid in Weierstrass data).** For the catenoid, $g(z)=z$ and $\omega = dz/z^2$; for the helicoid, $g(z)=z$ and $\omega = i\,dz/z^2$. The two surfaces differ only by the constant phase of the Weierstrass form, which is the conformal form of the isometric deformation between them; the computation is exact and exhibits the power of the representation.
 
-**Remark (the harmonic–conformal dictionary).** The content of the Weierstrass representation is that a minimal surface in $\mathbb{R}^3$ is the same thing as a conformal harmonic map of a Riemann surface into $\mathbb{R}^3$; harmonicity is the Euler–Lagrange equation of the energy and conformality is the constraint, and the harmonicity of each coordinate is the Laplace equation. The general theory of harmonic maps into a Riemannian target, where the energy is $\int|\nabla\phi|^2$ and the tension field replaces the Laplace equation, is not covered here; the present theory is the case of the flat target $\mathbb{R}^3$ with the conformality constraint that makes the energy equal to the area.
+**Remark (the harmonic–conformal dictionary).** The content of the Weierstrass representation is that a minimal surface in $\mathbb{R}^3$ is the same thing as a conformal harmonic map of a Riemann surface into $\mathbb{R}^3$; harmonicity is the Euler–Lagrange equation of the energy and conformality is the constraint, and the harmonicity of each coordinate is the Laplace equation. The general theory of harmonic maps into a Riemannian target, where the energy is $\int|\nabla\digamma_{\mathrm{map}}|^2$ and the tension field replaces the Laplace equation, is not covered here; the present theory is the case of the flat target $\mathbb{R}^3$ with the conformality constraint that makes the energy equal to the area.
 
 ## Summary
 
@@ -198,11 +198,11 @@ Plateau's problem asks for a minimal disc spanning a Jordan curve and is solved 
 | Symbol | Meaning |
 |---|---|
 | $M$, $\partial M$ | Two-dimensional surface and its boundary |
-| $\phi : M\to\mathbb{R}^n$ | Parametrised immersion |
+| $\digamma_{\mathrm{map}} : M\to\mathbb{R}^n$ | Parametrised immersion |
 | $g_{ij}$, $dA$ | Induced metric and area element |
-| $A(\phi)$, $E(\phi)$ | Area and energy functionals |
+| $A(\digamma_{\mathrm{map}})$, $E(\digamma_{\mathrm{map}})$ | Area and energy functionals |
 | $H$, $\mathrm{II}$, $|A|^2$ | Mean curvature vector, second fundamental form, its squared norm |
-| $V$ | Variational field along $\phi$ |
+| $V$ | Variational field along $\digamma_{\mathrm{map}}$ |
 | $w : \Omega\to\mathbb{R}$ | Function whose graph is a minimal graph |
 | minimal surface equation | $\nabla\cdot(\nabla w/\sqrt{1+|\nabla w|^2})=0$ |
 | $\Gamma$, $D$ | Jordan curve and disc of Plateau's problem |

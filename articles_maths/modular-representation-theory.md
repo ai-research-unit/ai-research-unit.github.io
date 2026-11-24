@@ -9,7 +9,7 @@ The article is the twenty-fourth of the corpus, in the category *Linear Spaces o
 
 Two boundaries are kept. The **block theory** — the decomposition of $k[G]$ into its indecomposable two-sided ideals, the defect groups and the Brauer correspondence — is the subject of another article of this category and is referred to but not used here; the **integral** theory of the lattices over a discrete valuation ring, which underlies the reduction that defines the decomposition matrix, is the subject, the final article, and only the existence of an integral form is used here. The analytic theory of the modular forms and of the $p$-adic completions of the character fields belongs to Part III.
 
-Throughout, $G$ is a finite group, $p$ a prime dividing $\lvert G\rvert$, $k$ an algebraically closed field of characteristic $p$, $k[G]$ the group algebra, $\operatorname{rad}$ the Jacobson radical, $S_1,\dots,S_r$ the simple $k[G]$-modules and $P_i$ the projective cover of $S_i$, also called the **projective indecomposable** module; $p$-regular elements are the elements of order prime to $p$, $\varphi_i$ are the Brauer characters, $D = (d_{\chi j})$ is the decomposition matrix, $C = (c_{ij})$ is the Cartan matrix, and $\chi$ runs over the ordinary irreducible characters of *Character Theory*, restricted to the $p$-regular elements.
+Throughout, $G$ is a finite group, $p$ a prime dividing $\lvert G\rvert$, $k$ an algebraically closed field of characteristic $p$, $k[G]$ the group algebra, $\operatorname{rad}$ the Jacobson radical, $S_1,\dots,S_r$ the simple $k[G]$-modules and $P_i$ the projective cover of $S_i$, also called the **projective indecomposable** module; $p$-regular elements are the elements of order prime to $p$, $\digamma_{\mathrm{map},i}$ are the Brauer characters, $D = (d_{\chi j})$ is the decomposition matrix, $C = (c_{ij})$ is the Cartan matrix, and $\chi$ runs over the ordinary irreducible characters of *Character Theory*, restricted to the $p$-regular elements.
 
 ## The Group Algebra in Positive Characteristic
 
@@ -33,17 +33,17 @@ Throughout, $G$ is a finite group, $p$ a prime dividing $\lvert G\rvert$, $k$ an
 **Definition.** Let $V$ be a finite-dimensional $k[G]$-module with $k$ of characteristic $p$, let $g\in G$ be $p$-regular and let $\lambda_1,\dots,\lambda_n$ be the eigenvalues of $g$ on $V$ in the algebraic closure of $k$, each a root of unity of order prime to $p$. Lifting each $\lambda_i$ to the root of unity of the same order in a field of characteristic zero, the **Brauer character** of $V$ is
 
 $$
-\varphi_V(g) = \lambda_1+\cdots+\lambda_n \;\in\; \mathbb{C},
+\digamma_{\mathrm{map},V}(g) = \lambda_1+\cdots+\lambda_n \;\in\; \mathbb{C},
 $$
 
-a complex number depending only on the $p$-regular element $g$ and the isomorphism class of $V$; the Brauer character is extended by zero (or not at all) on the elements of order divisible by $p$, and the values so defined make $\varphi_V$ a class function on the $p$-regular elements.
+a complex number depending only on the $p$-regular element $g$ and the isomorphism class of $V$; the Brauer character is extended by zero (or not at all) on the elements of order divisible by $p$, and the values so defined make $\digamma_{\mathrm{map},V}$ a class function on the $p$-regular elements.
 
 **Proposition.** Let $k$ be algebraically closed of characteristic $p$. Then the Brauer characters satisfy:
 
-1. $\varphi_V(1) = \dim_kV$, and $\varphi_{V\oplus W} = \varphi_V+\varphi_W$, $\varphi_{V\otimes W} = \varphi_V\varphi_W$;
-2. $\varphi_V$ is constant on the conjugacy classes of $p$-regular elements;
+1. $\digamma_{\mathrm{map},V}(1) = \dim_kV$, and $\digamma_{\mathrm{map},V\oplus W} = \digamma_{\mathrm{map},V}+\digamma_{\mathrm{map},W}$, $\digamma_{\mathrm{map},V\otimes W} = \digamma_{\mathrm{map},V}\digamma_{\mathrm{map},W}$;
+2. $\digamma_{\mathrm{map},V}$ is constant on the conjugacy classes of $p$-regular elements;
 3. the Brauer characters of the simple modules $S_1,\dots,S_r$ are linearly independent over $\mathbb{C}$ on the $p$-regular classes;
-4. the multiplicity of the simple module $S_i$ as a composition factor of $V$ is computable from $\varphi_V$ by the orthogonality relations, whose weights involve the $p$-parts of the centralisers of the $p$-regular elements.
+4. the multiplicity of the simple module $S_i$ as a composition factor of $V$ is computable from $\digamma_{\mathrm{map},V}$ by the orthogonality relations, whose weights involve the $p$-parts of the centralisers of the $p$-regular elements.
 
 *Proof.* The Brauer character is the trace of the action on the $p$-regular elements after a lift of the eigenvalues, and the trace is additive and multiplicative; the conjugacy invariance is the invariance of the trace; the linear independence is the theorem of Brauer–Nesbitt together with the existence of enough functions, and the orthogonality relations are the standard form of the theory, recorded in the references.
 
@@ -56,7 +56,7 @@ $$
 the number of times the simple module $S_j$ occurs in a composition series of the reduction, and the **decomposition matrix** is the matrix $D = (d_{\chi j})$ with the ordinary irreducible characters as rows and the simple modular modules as columns; the decomposition is independent of the choice of the integral form, and the reduction is compatible with the Brauer character in the sense that
 
 $$
-\boxed{\;\chi(g) = \sum_jd_{\chi j}\,\varphi_j(g) \qquad\text{for every } p\text{-regular } g\in G\;} .
+\boxed{\;\chi(g) = \sum_jd_{\chi j}\,\digamma_{\mathrm{map},j}(g) \qquad\text{for every } p\text{-regular } g\in G\;} .
 $$
 
 The existence of the integral form and the independence of the reduction are not covered here.
@@ -65,7 +65,7 @@ The existence of the integral form and the independence of the reduction are not
 
 1. the entries of $D$ are non-negative integers and no row of $D$ is zero;
 2. the columns of $D$ are non-zero and the number $r$ of the simple modules equals the number of $p$-regular classes;
-3. if $\varphi_1,\dots,\varphi_r$ are the Brauer characters of the simple modules and $\chi_1,\dots,\chi_s$ the ordinary irreducible characters, then the matrix $D$ has rank $r$, and the relations $\sum_\chi d_{\chi i}d_{\chi j} = c_{ij}$ define the **Cartan matrix** $C = D^{\mathsf{T}}D$, whose entries are the multiplicities of the simple modules in the projective indecomposables:
+3. if $\digamma_{\mathrm{map},1},\dots,\digamma_{\mathrm{map},r}$ are the Brauer characters of the simple modules and $\chi_1,\dots,\chi_s$ the ordinary irreducible characters, then the matrix $D$ has rank $r$, and the relations $\sum_\chi d_{\chi i}d_{\chi j} = c_{ij}$ define the **Cartan matrix** $C = D^{\mathsf{T}}D$, whose entries are the multiplicities of the simple modules in the projective indecomposables:
 
 $$
 \boxed{\;c_{ij} = \bigl[P_i : S_j\bigr] = \bigl[P_j : S_i\bigr]\;}.
@@ -116,7 +116,7 @@ Hence the two projective indecomposable modules have $\dim_kP_1 = c_{11}\cdot1+c
 
 ## Summary
 
-Let $G$ be a finite group, $p$ a prime dividing $\lvert G\rvert$ and $k$ an algebraically closed field of characteristic $p$. The group algebra $k[G]$ is a **symmetric** (hence self-injective) finite-dimensional algebra by the non-degeneracy of the trace form, so that its projective and injective modules coincide, the Krull–Schmidt theorem holds, and $k[G]\cong\bigoplus_iP_i^{\oplus\dim S_i}$ with $P_i$ the projective cover of the simple module $S_i$; the number of simple modules equals the number of $p$-regular conjugacy classes of $G$ by the theorem of **Brauer–Nesbitt**. The **Brauer characters** $\varphi_V$, defined by lifting the eigenvalues of a $p$-regular element to characteristic zero and summing them, are additive and multiplicative class functions on the $p$-regular elements, and they are linearly independent for the simple modules; the ordinary irreducible characters restrict to the $p$-regular elements as $\chi = \sum_jd_{\chi j}\varphi_j$ with $d_{\chi j}$ the multiplicities of the reduction of an integral form, and the **decomposition matrix** $D = (d_{\chi j})$ and the **Cartan matrix** $C = D^{\mathsf{T}}D$ satisfy $c_{ij} = [P_i:S_j] = [P_j:S_i]$, with $\dim_kP_i = \sum_jc_{ij}\dim_kS_j$ and $\sum_i\dim_kP_i\dim_kS_i = \lvert G\rvert$. For $S_3$ in characteristic $3$ the computation gives $D = \begin{pmatrix}1&0\\0&1\\1&1\end{pmatrix}$ and $C = \begin{pmatrix}2&1\\1&2\end{pmatrix}$ with $\dim_kP_1 = \dim_kP_2 = 3$ and the total $6 = \lvert G\rvert$, all verified with exact arithmetic; for the cyclic group of order $p$ in characteristic $p$ the group algebra is the local algebra $k[x]/((x-1)^p)$ with one simple module, the projective indecomposable $k[C_p]$ of dimension $p$ and the Cartan matrix $(p)$, and the indecomposable modules are the truncated polynomial algebras $k[x]/((x-1)^i)$; for a $p$-group the algebra is local and the only projective indecomposable is $k[G]$ itself. When $p$ does not divide $\lvert G\rvert$ the theory collapses to the ordinary theory of *Character Theory* with the identity matrices. The block decomposition of $k[G]$ and the defect groups are the subject, and the integral forms underlying the reduction are the subject, the two remaining articles of this category.
+Let $G$ be a finite group, $p$ a prime dividing $\lvert G\rvert$ and $k$ an algebraically closed field of characteristic $p$. The group algebra $k[G]$ is a **symmetric** (hence self-injective) finite-dimensional algebra by the non-degeneracy of the trace form, so that its projective and injective modules coincide, the Krull–Schmidt theorem holds, and $k[G]\cong\bigoplus_iP_i^{\oplus\dim S_i}$ with $P_i$ the projective cover of the simple module $S_i$; the number of simple modules equals the number of $p$-regular conjugacy classes of $G$ by the theorem of **Brauer–Nesbitt**. The **Brauer characters** $\digamma_{\mathrm{map},V}$, defined by lifting the eigenvalues of a $p$-regular element to characteristic zero and summing them, are additive and multiplicative class functions on the $p$-regular elements, and they are linearly independent for the simple modules; the ordinary irreducible characters restrict to the $p$-regular elements as $\chi = \sum_jd_{\chi j}\digamma_{\mathrm{map},j}$ with $d_{\chi j}$ the multiplicities of the reduction of an integral form, and the **decomposition matrix** $D = (d_{\chi j})$ and the **Cartan matrix** $C = D^{\mathsf{T}}D$ satisfy $c_{ij} = [P_i:S_j] = [P_j:S_i]$, with $\dim_kP_i = \sum_jc_{ij}\dim_kS_j$ and $\sum_i\dim_kP_i\dim_kS_i = \lvert G\rvert$. For $S_3$ in characteristic $3$ the computation gives $D = \begin{pmatrix}1&0\\0&1\\1&1\end{pmatrix}$ and $C = \begin{pmatrix}2&1\\1&2\end{pmatrix}$ with $\dim_kP_1 = \dim_kP_2 = 3$ and the total $6 = \lvert G\rvert$, all verified with exact arithmetic; for the cyclic group of order $p$ in characteristic $p$ the group algebra is the local algebra $k[x]/((x-1)^p)$ with one simple module, the projective indecomposable $k[C_p]$ of dimension $p$ and the Cartan matrix $(p)$, and the indecomposable modules are the truncated polynomial algebras $k[x]/((x-1)^i)$; for a $p$-group the algebra is local and the only projective indecomposable is $k[G]$ itself. When $p$ does not divide $\lvert G\rvert$ the theory collapses to the ordinary theory of *Character Theory* with the identity matrices. The block decomposition of $k[G]$ and the defect groups are the subject, and the integral forms underlying the reduction are the subject, the two remaining articles of this category.
 
 ## Summary of Notation
 
@@ -127,9 +127,9 @@ Let $G$ be a finite group, $p$ a prime dividing $\lvert G\rvert$ and $k$ an alge
 | $\operatorname{rad}k[G]$ | Jacobson radical |
 | $S_i$, $P_i$ | simple modules and their projective covers |
 | $r$ | $\lvert\{S_i\}\rvert = $ number of $p$-regular conjugacy classes |
-| $\varphi_V$, $\varphi_i$ | Brauer characters of a module and of the simple modules |
+| $\digamma_{\mathrm{map},V}$, $\digamma_{\mathrm{map},i}$ | Brauer characters of a module and of the simple modules |
 | $p$-regular element | element of order prime to $p$ |
-| $D = (d_{\chi j})$, $\chi = \sum_jd_{\chi j}\varphi_j$ | decomposition matrix and decomposition numbers |
+| $D = (d_{\chi j})$, $\chi = \sum_jd_{\chi j}\digamma_{\mathrm{map},j}$ | decomposition matrix and decomposition numbers |
 | $C = D^{\mathsf{T}}D$, $c_{ij} = [P_i:S_j]$ | Cartan matrix and Cartan invariants |
 | $\dim_kP_i = \sum_jc_{ij}\dim_kS_j$, $\sum_i\dim_kP_i\dim_kS_i = \lvert G\rvert$ | dimension formulas |
 | $k[C_p]\cong k[x]/((x-1)^p)$ | local group algebra of the cyclic group of order $p$ |

@@ -17,7 +17,7 @@ The vocabulary of superfluidity agrees with the block's and the objects do not: 
 The condensate is described by one complex function and its modulus squared is the density. Write
 
 $$
-\psi=n_{\mathrm{num}}\,e^{\frac{2\pi iS}{h}},
+Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}\,e^{\frac{2\pi iS}{h}},
 \qquad
 \vec v=\frac{1}{m}\vec\nabla_\Phi S ,
 $$
@@ -28,7 +28,7 @@ $$
 with $\rho_{\mathrm{num}}$ the number density of condensed particles and $\vec v$ the velocity of the condensate's flow. The Gross–Pitaevskii equation is
 
 $$
-i \frac{h}{2\pi}\,\partial_{t'}\psi=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi\psi+g\lvert\psi\rvert^{2}\psi ,
+i \frac{h}{2\pi}\,\partial_{t'}Ξ_{\mathrm{wfn}}=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\PhiΞ_{\mathrm{wfn}}+g\lvertΞ_{\mathrm{wfn}}\rvert^{2}Ξ_{\mathrm{wfn}} ,
 $$
 
 with $g$ the contact coupling, positive for a repulsive interaction and negative for an attractive one.
@@ -45,7 +45,7 @@ For a dilute gas of hard spheres, $g=4\pi \frac{h^{2}}{4\pi^{2}}a_{\mathrm{sc}}/
 
 ## Two Exact Solutions
 
-**The uniform condensate fixes the chemical potential and the healing length.** With $\psi=n_0\exp(-i\mu_{\mathrm{chm}}\frac{2\pi t'}{h})$ and $\mu_{\mathrm{chm}}=g\rho_0$, the equation is satisfied identically: the kinetic term vanishes and the two remaining terms cancel. The chemical potential is the interaction energy per particle, and it is the energy cost of adding one particle to the condensate.
+**The uniform condensate fixes the chemical potential and the healing length.** With $Ξ_{\mathrm{wfn}}=n_0\exp(-i\mu_{\mathrm{chm}}\frac{2\pi t'}{h})$ and $\mu_{\mathrm{chm}}=g\rho_0$, the equation is satisfied identically: the kinetic term vanishes and the two remaining terms cancel. The chemical potential is the interaction energy per particle, and it is the energy cost of adding one particle to the condensate.
 
 A long-wavelength disturbance propagates at the sound speed
 
@@ -83,7 +83,7 @@ The soliton is the fluid at its most nonlinear and its most rigid. Its density i
 
 ## The Linear Limit
 
-With $g=0$ the Gross–Pitaevskii equation is $i \frac{h}{2\pi}\partial_{t'}\psi=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi\psi$, the free equation of the trilogy. In the fluid's variables the pressure vanishes, so the limit is the pressureless member of the reverse map's family, and its only force is the quantum potential.
+With $g=0$ the Gross–Pitaevskii equation is $i \frac{h}{2\pi}\partial_{t'}Ξ_{\mathrm{wfn}}=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\PhiΞ_{\mathrm{wfn}}$, the free equation of the trilogy. In the fluid's variables the pressure vanishes, so the limit is the pressureless member of the reverse map's family, and its only force is the quantum potential.
 
 **So the linear equation is the non-interacting limit and not the fundamental law.** The order parameter is the same object in both cases; what changes is whether the interaction is present. A condensate with $g=0$ is a gas of non-interacting bosons, which is the case in which the condensate is a single-particle state and the fluid has nothing to carry but the quantum potential.
 
@@ -91,7 +91,7 @@ In the one condensed-matter system where a Schrödinger-like equation is fundame
 
 ## The Direction
 
-**The order parameter is written first, and the fluid is read from it.** The theory's variable is $\psi$; the density and the velocity are defined from it by the polar decomposition; the pressure is not an independent datum but the interaction written in fluid variables. A reader who wanted to start from the fluid would have to invent $\frac{h}{2\pi}$, $m$ and $g$, and the three together are the theory.
+**The order parameter is written first, and the fluid is read from it.** The theory's variable is $Ξ_{\mathrm{wfn}}$; the density and the velocity are defined from it by the polar decomposition; the pressure is not an independent datum but the interaction written in fluid variables. A reader who wanted to start from the fluid would have to invent $\frac{h}{2\pi}$, $m$ and $g$, and the three together are the theory.
 
 The condensate fraction, the healing length around a defect, the Thomas–Fermi radius and the soliton's width are all measured, and each is a measurement of the order parameter's parameters. None of them is a measurement of a pressure in a fluid that was known beforehand.
 
@@ -131,7 +131,7 @@ The block's denial stands: the sharing is of formulas, not of objects, and the h
 
 | Symbol | Meaning |
 |---|---|
-| $\psi=n_{\mathrm{num}}e^{\frac{2\pi iS}{h}}$ | Order parameter |
+| $Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}e^{\frac{2\pi iS}{h}}$ | Order parameter |
 | $\rho_{\mathrm{num}},\ \rho_0$ | Number density and its uniform value |
 | $S$ | Action; the phase is $\frac{2\pi S}{h}$ |
 | $\vec v=\vec\nabla_\Phi S/m$ | Condensate velocity |

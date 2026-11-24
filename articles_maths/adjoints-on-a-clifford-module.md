@@ -22,7 +22,7 @@ $\rho(x)^{*}=\rho(x^{*})$, the resulting $\ast$-structure, the reversal of the f
 elementary algebraic reason the Dirac operator is formally self-adjoint — is Part II's, in *The
 Adjoint of the One-Sided Action with Hermitian Adjoint*; the bilinear operators built from two
 spinors and the Fierz identity are *Bilinear Operators on a Hermitian Module with Hermitian
-Adjoint*; the spinor adjoint $\psi^{*}v_0$, with $v_0$ the time-like vector, and the invariant $\psi^{*}v_0\psi$ are
+Adjoint*; the spinor adjoint $Ξ_{\mathrm{wfn}}^{*}v_0$, with $v_0$ the time-like vector, and the invariant $Ξ_{\mathrm{wfn}}^{*}v_0Ξ_{\mathrm{wfn}}$ are
 *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint*; and the finite-dimensional Dirac
 element with its Hermitian adjoint is *Dirac Operators with Hermitian Adjoint*. Those results are
 cited. What this article adds is the distinction between the two adjoints on a Clifford module and
@@ -289,7 +289,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_aΞ_{\mathrm{wfn}}=aΞ_{\mathrm{wfn}}$ and $R_bΞ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .

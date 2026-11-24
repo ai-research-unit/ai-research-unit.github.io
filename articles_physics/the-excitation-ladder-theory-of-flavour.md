@@ -19,7 +19,7 @@ The claim rests on a fact the classification article established. The fermions o
 $$
 \mathbf{16}\;\longrightarrow\;\mathbf{16}\otimes\mathbb C^{3},
 \qquad
-\tilde Q\cdot(\psi\otimes f)=(\tilde Q\cdot\psi)\otimes f .
+\tilde Q\cdot(Ξ_{\mathrm{wfn}}\otimes f)=(\tilde Q\cdotΞ_{\mathrm{wfn}})\otimes f .
 $$
 
 Every operator the model builds from the group is therefore the same operator on every rung, $Q\otimes\mathbb 1_3$ and $T_3\otimes\mathbb 1_3$. No measurement of charge, colour, weak isospin or $B-L$ can distinguish one rung from another. Flavour cannot be a charge, and it must therefore be a quantity a spectrum produces: an energy, a mass, a level spacing.

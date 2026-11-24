@@ -47,7 +47,7 @@ $$
 
 ### The Quotient by a Finite Group
 
-**Definition.** A **categorical quotient** of $X$ by $G$ is an $S$-scheme $X/G$ with a morphism $\pi : X\to X/G$ over $S$ such that $\pi\circ\sigma = \pi$ and such that every $G$-invariant morphism $\psi : X\to Y$ over $S$ factors uniquely as $\psi = \phi\circ\pi$. A categorical quotient is unique up to unique isomorphism when it exists, and it is a **coarse moduli** of the action.
+**Definition.** A **categorical quotient** of $X$ by $G$ is an $S$-scheme $X/G$ with a morphism $\pi : X\to X/G$ over $S$ such that $\pi\circ\sigma = \pi$ and such that every $G$-invariant morphism $Ξ_{\mathrm{wfn}} : X\to Y$ over $S$ factors uniquely as $Ξ_{\mathrm{wfn}} = \digamma_{\mathrm{map}}\circ\pi$. A categorical quotient is unique up to unique isomorphism when it exists, and it is a **coarse moduli** of the action.
 
 **Theorem (the affine quotient).** Let $X = \operatorname{Spec}A$ be affine over $S$ and let $G$ act on $X$ by $S$-automorphisms of order two, with the corresponding involution $\mathrm{J}$ of $A$. Then the **invariant ring** $A^G = \{a\in A : \mathrm{J}(a) = a\}$ is a subalgebra, the morphism
 $$
@@ -55,7 +55,7 @@ $$
 $$
 induced by the inclusion is a categorical quotient, and the structure sheaf of the quotient is $\mathcal{O}_{X/G} = A^G$.
 
-*Proof.* For a $G$-invariant morphism $\psi : X\to Y = \operatorname{Spec}B$ the pullback $\psi^\flat : B\to A$ lands in the invariants $A^G$, since $\psi\circ\sigma = \psi$ is $\psi^\flat\circ\mathrm{J} = \psi^\flat$; hence $\psi^\flat$ factors uniquely through the inclusion $A^G\hookrightarrow A$, giving $\phi : \operatorname{Spec}A^G\to Y$ with $\psi = \phi\circ\pi$. The uniqueness is the uniqueness of the factorisation through a subalgebra, and $\mathcal{O}_{X/G}$ is $A^G$ by the construction.
+*Proof.* For a $G$-invariant morphism $Ξ_{\mathrm{wfn}} : X\to Y = \operatorname{Spec}B$ the pullback $Ξ_{\mathrm{wfn}}^\flat : B\to A$ lands in the invariants $A^G$, since $Ξ_{\mathrm{wfn}}\circ\sigma = Ξ_{\mathrm{wfn}}$ is $Ξ_{\mathrm{wfn}}^\flat\circ\mathrm{J} = Ξ_{\mathrm{wfn}}^\flat$; hence $Ξ_{\mathrm{wfn}}^\flat$ factors uniquely through the inclusion $A^G\hookrightarrow A$, giving $\digamma_{\mathrm{map}} : \operatorname{Spec}A^G\to Y$ with $Ξ_{\mathrm{wfn}} = \digamma_{\mathrm{map}}\circ\pi$. The uniqueness is the uniqueness of the factorisation through a subalgebra, and $\mathcal{O}_{X/G}$ is $A^G$ by the construction.
 
 **Theorem (the finiteness of the invariants).** For a finite group $G$ acting on a finitely generated $k$-algebra $A$, the invariant ring $A^G$ is a finitely generated $k$-algebra, so the affine quotient of a variety is a variety. The bound on the degrees is independent of the group.
 

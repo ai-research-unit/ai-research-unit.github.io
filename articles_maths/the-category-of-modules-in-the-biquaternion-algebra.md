@@ -274,7 +274,7 @@ $$
 
 a Borel subgroup of $PGL_2(\mathbb{C})$, of complex dimension two.
 
-**The real structure.** Coefficient conjugation $\sigma$ acts on the lattice by the antiholomorphic involution, $t\mapsto-1/\bar t$ in the chart above, with no fixed point; no minimal left ideal is therefore stable under it, and the real structure preserves the subfamily $\mathbb{P}^1(\mathbb{R})$, on which it acts as the antipodal map. Since $\sigma$ is $\mathbb{C}$-antilinear, it intertwines the action of an invertible element with that of its image, $\sigma\circ\varphi_{\tilde Q}=\varphi_{\sigma(\tilde Q)}\circ\sigma$; the two actions are not the same action, and the real structure pairs the orbit of a line under $\mathbb{B}^\times$ with the orbit of its conjugate.
+**The real structure.** Coefficient conjugation $\sigma$ acts on the lattice by the antiholomorphic involution, $t\mapsto-1/\bar t$ in the chart above, with no fixed point; no minimal left ideal is therefore stable under it, and the real structure preserves the subfamily $\mathbb{P}^1(\mathbb{R})$, on which it acts as the antipodal map. Since $\sigma$ is $\mathbb{C}$-antilinear, it intertwines the action of an invertible element with that of its image, $\sigma\circ\digamma_{\mathrm{map},\tilde Q}=\digamma_{\mathrm{map},\sigma(\tilde Q)}\circ\sigma$; the two actions are not the same action, and the real structure pairs the orbit of a line under $\mathbb{B}^\times$ with the orbit of its conjugate.
 
 ## Summary
 

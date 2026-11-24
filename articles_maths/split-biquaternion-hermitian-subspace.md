@@ -152,7 +152,7 @@ The nontrivial idempotents $\tilde\Pi_{\mathrm{id},1}$ and $\tilde\Pi_{\mathrm{i
 
 ## The Image in the Two Halves
 
-Under the idempotent-decomposition isomorphism $\varphi : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, a Hermitian element $\tilde{Q} = q_t e_t + j\vec q$ has components
+Under the idempotent-decomposition isomorphism $\digamma_{\mathrm{map}} : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, a Hermitian element $\tilde{Q} = q_t e_t + j\vec q$ has components
 
 $$
 \tilde{Q}_+ = q_t + \vec q, \qquad \tilde{Q}_- = q_t - \vec q = (\tilde{Q}_+)^{\natural}.
@@ -161,7 +161,7 @@ $$
 The image of $\mathbb{B}_{\Psi}$ is therefore the set of **conjugate pairs**
 
 $$
-\varphi(\mathbb{B}_{\Psi}) = \left\{ (h, h^{\natural}) : h \in \mathbb{H} \right\} \cong \mathbb{H},
+\digamma_{\mathrm{map}}(\mathbb{B}_{\Psi}) = \left\{ (h, h^{\natural}) : h \in \mathbb{H} \right\} \cong \mathbb{H},
 $$
 
 a real four-dimensional subspace of $\mathbb{H} \oplus \mathbb{H}$, and the map $h \mapsto (h, h^{\natural})$ is an isomorphism of the underlying real vector spaces. With the Hermitian form this identifies the Hermitian sector with the graph of quaternion conjugation in $\mathbb{H} \oplus \mathbb{H}$.
@@ -208,7 +208,7 @@ The Hermitian subspace is the fixed space of Hermitian conjugation, the positive
 
 ## Summary
 
-The Hermitian subspace $\mathbb{B}_{\Psi}$ is the fixed space of Hermitian conjugation, the set of elements $\tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z$ with real scalar part and purely split-imaginary vector part; it is a real vector space of dimension $4$ with basis $e_t, j\vec e_x, j\vec e_y, j\vec e_z$. It is **not** a subalgebra, since $(j\vec e_x)(j\vec e_y) = \vec e_z$ leaves the subspace; but it is closed under the symmetrized product, which gives it the structure of a **Jordan algebra**, and the square of a Hermitian vector is a real scalar. The commutator of two Hermitian elements is $2\,\vec q_1\times\vec q_2$, an anti-Hermitian element, so the bracket lands in $\mathbb{B}_{\Phi}$. The split-biquaternion norm restricts to the positive definite form $N = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ of inertia $(4,0)$, and consequently $\mathbb{B}_{\Psi}$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of inertia $(1,3)$ and isotropic cone $q_t^2 = (q'_x)^2+(q'_y)^2+(q'_z)^2$, whose nonzero points are all units. The only idempotents in the subspace are $0$ and $e_t$; unlike the biquaternion case the nontrivial idempotents are not Hermitian. The image under $\varphi$ is the set of conjugate pairs $(h, h^{\natural})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations both negate its vector part, and anti-Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{B}_{\Phi}$.
+The Hermitian subspace $\mathbb{B}_{\Psi}$ is the fixed space of Hermitian conjugation, the set of elements $\tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z$ with real scalar part and purely split-imaginary vector part; it is a real vector space of dimension $4$ with basis $e_t, j\vec e_x, j\vec e_y, j\vec e_z$. It is **not** a subalgebra, since $(j\vec e_x)(j\vec e_y) = \vec e_z$ leaves the subspace; but it is closed under the symmetrized product, which gives it the structure of a **Jordan algebra**, and the square of a Hermitian vector is a real scalar. The commutator of two Hermitian elements is $2\,\vec q_1\times\vec q_2$, an anti-Hermitian element, so the bracket lands in $\mathbb{B}_{\Phi}$. The split-biquaternion norm restricts to the positive definite form $N = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ of inertia $(4,0)$, and consequently $\mathbb{B}_{\Psi}$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of inertia $(1,3)$ and isotropic cone $q_t^2 = (q'_x)^2+(q'_y)^2+(q'_z)^2$, whose nonzero points are all units. The only idempotents in the subspace are $0$ and $e_t$; unlike the biquaternion case the nontrivial idempotents are not Hermitian. The image under $\digamma_{\mathrm{map}}$ is the set of conjugate pairs $(h, h^{\natural})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations both negate its vector part, and anti-Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{B}_{\Phi}$.
 
 ## Summary of Notation
 
@@ -223,7 +223,7 @@ The Hermitian subspace $\mathbb{B}_{\Psi}$ is the fixed space of Hermitian conju
 | $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'{}^2_\mu)$ | Hermitian norm, inertia $(1,3)$ on $\mathbb{B}_{\Psi}$ |
 | $\tilde{Q}_1 \bullet \tilde{Q}_2 = \tfrac{1}{2}(\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1)$ | Symmetrized (Jordan) product |
 | $[\tilde{Q}_1, \tilde{Q}_2] = 2\,\vec q_1\times\vec q_2$ | Commutator, an element of $\mathbb{B}_{\Phi}$ |
-| $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Image in $\mathbb{H} \oplus \mathbb{H}$; $(h,h^{\natural})$ on $\mathbb{B}_{\Psi}$ |
+| $\digamma_{\mathrm{map}}(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Image in $\mathbb{H} \oplus \mathbb{H}$; $(h,h^{\natural})$ on $\mathbb{B}_{\Psi}$ |
 | $q_t^2 = (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ | Isotropic cone of the Hermitian norm |
 | $SO(1,3)$ | Lorentz group acting on the Hermitian subspace |
 

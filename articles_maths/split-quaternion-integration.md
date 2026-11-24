@@ -228,10 +228,10 @@ for every $f$ with compact support, so that $E_D*f$ is a solution of the inhomog
 
 The singularities of the inverse on the null cone are treated distributionally, exactly as in the theory of the wave operator.
 
-**Theorem (The Principal Value of the Inverse).** The locally integrable function $1/\langle\tilde q\rangle_{\natural}$ on the algebra, and the distribution $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ on the vector subspace, have well-defined principal values: for a test function $\varphi$,
+**Theorem (The Principal Value of the Inverse).** The locally integrable function $1/\langle\tilde q\rangle_{\natural}$ on the algebra, and the distribution $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ on the vector subspace, have well-defined principal values: for a test function $\digamma_{\mathrm{map}}$,
 
 $$
-\Big\langle \mathrm{pv}\frac{1}{N},\, \varphi\Big\rangle = \lim_{\varepsilon\to0}\int_{|\langle\tilde q\rangle_{\natural}|>\varepsilon}\frac{\varphi(\tilde q)}{\langle\tilde q\rangle_{\natural}}\,\mathrm{d}\tilde q ,
+\Big\langle \mathrm{pv}\frac{1}{N},\, \digamma_{\mathrm{map}}\Big\rangle = \lim_{\varepsilon\to0}\int_{|\langle\tilde q\rangle_{\natural}|>\varepsilon}\frac{\digamma_{\mathrm{map}}(\tilde q)}{\langle\tilde q\rangle_{\natural}}\,\mathrm{d}\tilde q ,
 $$
 
 and the limit exists because the level sets of $\langle\cdot\rangle_{\natural}$ have finite area and the singularity is odd with respect to $\tilde q \mapsto -\tilde q$ after symmetrisation. Off the null cone the reciprocal is an ordinary function and $\langle\tilde q\rangle_{\natural}\cdot(1/\langle\tilde q\rangle_{\natural}) = 1$ identically, so the difference

@@ -402,7 +402,7 @@ So the contrast is not that the word exists off the cone and nothing exists on i
 
 ### The Boundary Value
 
-The word has boundary values on the cone. A family with $\varrho=Re^{-\psi/2}$ and boost rapidity $\theta_{\mathrm{rpd}}=\psi$ has a limit as $\psi\to\infty$, and the limit is nonzero: the collapsing scale and the diverging boost cancel, leaving the direction $e_t+i\vec u_{\mathrm b}$ of the boost. The stratum the limit reaches is decided by the rotor: the idempotent stratum where the scalar part of the limit is nonzero, the nilpotent stratum where it vanishes (*The Massless Limit as a Boundary Value of the Polar Word*).
+The word has boundary values on the cone. A family with $\varrho=Re^{-Ξ_{\mathrm{wfn}}/2}$ and boost rapidity $\theta_{\mathrm{rpd}}=Ξ_{\mathrm{wfn}}$ has a limit as $Ξ_{\mathrm{wfn}}\to\infty$, and the limit is nonzero: the collapsing scale and the diverging boost cancel, leaving the direction $e_t+i\vec u_{\mathrm b}$ of the boost. The stratum the limit reaches is decided by the rotor: the idempotent stratum where the scalar part of the limit is nonzero, the nilpotent stratum where it vanishes (*The Massless Limit as a Boundary Value of the Polar Word*).
 
 Two things follow, and the second is the important one. The element has a limit, so the cone is reachable and the degenerate case is a boundary of the same theory and not a different one. The generator has no limit, and the limit is path-dependent, so the boundary value is not a value of the word: it is what the word does when its domain is exhausted.
 

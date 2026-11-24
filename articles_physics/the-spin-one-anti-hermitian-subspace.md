@@ -8,7 +8,7 @@ The subspace is $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\m
 
 The generator of a rotation is $\tfrac12\vec u$ and it acts by the commutator, and the commutator consumes the axis twice, once on each side. The identity $[\tfrac12\vec u,\vec v]=\vec u\times\vec v$ states the cancellation in one line, and it is what turns the half of the spinor case into the integer of this one. The commutator with a unit axis annihilates the axis and quarter-turns the plane perpendicular to it.
 
-A rotation preserves it and a boost does not: a boost along the axis sends $\vec u$ to $\cosh\phi\,\vec u-i\sinh\phi$, so the image acquires a component along the negative-definite line $\mathbb{R}(ie_t)$. This is the same failure of invariance that the spin-half carrier showed, and it is repaired the same way, by a closure.
+A rotation preserves it and a boost does not: a boost along the axis sends $\vec u$ to $\cosh\xi_{\mathrm{pot}}\,\vec u-i\sinh\xi_{\mathrm{pot}}$, so the image acquires a component along the negative-definite line $\mathbb{R}(ie_t)$. This is the same failure of invariance that the spin-half carrier showed, and it is repaired the same way, by a closure.
 
 The subspace $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$ is of real dimension four, it is carried onto itself by the whole group, and the direction that was added is the central generator $ie_t$ and not the identity. The identity $e_t$ lies in the other half. So the closure is not the triple with a label attached: it is the triple with one more generator, and the group needs that generator to close.
 
@@ -22,7 +22,7 @@ The second objection is that a Lie algebra is not a space a field takes values i
 
 The third objection is that the corpus calls the material sector the third carrier, of real dimension four, while this entry calls the triple the carrier, of real dimension three. Both namings occur and both are correct at their own level. The carrier of the *spin* is the triple: three dimensions, three weights, the identity $2s+1=3$. The carrier of the *amplitude* is the sector: a field's amplitude is a four-vector, and a four-vector needs its time slot. The difference between the two is one real dimension, and it is exactly the dimension that the field equation's constraint removes. The entry states both and keeps them apart in a section of their own.
 
-The letters. The algebra is $\mathbb{B}$, real of dimension eight, units $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_{\imath}^{2}=-e_t$; the central imaginary is $i$; an element is $\tilde Q=Q_te_t+\vec Q$ with complex coefficients $Q_{\imath}=q_{\imath}+iq'_{\imath}$. The pure part is $\mathfrak{k}$, an element of it is written $\vec v$ with $\lvert\vec v\rvert^{2}=v_x^{2}+v_y^{2}+v_z^{2}$, and the cross product is $\times$. The star ${}^{*}$ is the Hermitian conjugation, the bar $\bar{\cdot}$ the coefficient conjugation, and ${}^{\natural}$ the natural conjugation. The norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, $B$ is its polar form, and $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ is the square of the vector part. The sectors are $\mathbb{B}_\Phi=\{X^{*}=-X\}$ and $\mathbb{B}_\Psi=\{X^{*}=X\}$. A rotation generator is $A(\vec u)=\tfrac12\vec u$; a rotor is $\tilde u_{\mathrm r}=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u$; a Lorentz rotor is $\tilde U_{\mathrm{lor}}$ with $N(\tilde U_{\mathrm{lor}})=1$, and a boost is $\cosh\tfrac{\phi}{2}e_t+i\sinh\tfrac{\phi}{2}\vec u_{\mathrm b}$. The four sectors of the two predicates are written $\Sigma_{ij}$.
+The letters. The algebra is $\mathbb{B}$, real of dimension eight, units $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_{\imath}^{2}=-e_t$; the central imaginary is $i$; an element is $\tilde Q=Q_te_t+\vec Q$ with complex coefficients $Q_{\imath}=q_{\imath}+iq'_{\imath}$. The pure part is $\mathfrak{k}$, an element of it is written $\vec v$ with $\lvert\vec v\rvert^{2}=v_x^{2}+v_y^{2}+v_z^{2}$, and the cross product is $\times$. The star ${}^{*}$ is the Hermitian conjugation, the bar $\bar{\cdot}$ the coefficient conjugation, and ${}^{\natural}$ the natural conjugation. The norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, $B$ is its polar form, and $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ is the square of the vector part. The sectors are $\mathbb{B}_\Phi=\{X^{*}=-X\}$ and $\mathbb{B}_\Psi=\{X^{*}=X\}$. A rotation generator is $A(\vec u)=\tfrac12\vec u$; a rotor is $\tilde u_{\mathrm r}=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u$; a Lorentz rotor is $\tilde U_{\mathrm{lor}}$ with $N(\tilde U_{\mathrm{lor}})=1$, and a boost is $\cosh\tfrac{\xi_{\mathrm{pot}}}{2}e_t+i\sinh\tfrac{\xi_{\mathrm{pot}}}{2}\vec u_{\mathrm b}$. The four sectors of the two predicates are written $\Sigma_{ij}$.
 
 Boundaries. The subspace, the closure and the weights are *Introduction to the Spin-One Anti-Hermitian Subspace*; the norm, the signs and the cone are *The Spin-One Anti-Hermitian Subspace and N Norm Regularity*; the predicate, the spectrum and the degenerate line are *The Spin-One Anti-Hermitian Subspace and Spectral Regularity*; the four sectors inside the closure are *The Spin-One Anti-Hermitian Subspace and the Sectors*; the list of three carriers and the closure rules are *From the Spin to the Carriers and the Closures*; the bracket and its Lie algebra are *Lie Algebras of Sesqualgebras*; the product's two halves are *The Vector Parts of the Products over the Biquaternion Algebra*; the rotor and the double cover are *Biquaternion Rotations and Lorentz Transformations*. The physics is taken from *Four-Vectors and the Interval*, *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, *The Third Polarization and the Self-Dual Split of the Massive Field Strength*, *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane*, *The Generalized Bloch Ball for Spin 1*, *Maxwell's Equations in the Biquaternionic Formulation*, *Mass in Motion: The Region of Both Invariants*, *The Gauge Principle in Biquaternionic Form* and *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*. No dynamics, no gauge principle and no quantization appear below.
 
@@ -190,10 +190,10 @@ The reason, in one line. The commutator consumes the axis twice, once on each si
 
 What it costs. A two-sided action requires the acting element and its conjugate on either side, so it needs the inverse, so it needs the norm to be invertible. A one-sided action needs only a product. **The triple is therefore the carrier on which the group acts by an automorphism, and the plane is the carrier on which it acts by a multiplication from one side only.**
 
-Where the automorphism stops. The action $\operatorname{Ad}_U$ is multiplicative only when $U^{*}U=e_t$, and that holds for the rotation rotors and fails for the boosts. For a boost of rapidity $\phi$ along $\vec u_{\mathrm b}$,
+Where the automorphism stops. The action $\operatorname{Ad}_U$ is multiplicative only when $U^{*}U=e_t$, and that holds for the rotation rotors and fails for the boosts. For a boost of rapidity $\xi_{\mathrm{pot}}$ along $\vec u_{\mathrm b}$,
 
 $$
-U^{*}U=\cosh\phi\,e_t+i\sinh\phi\,\vec u_{\mathrm b},
+U^{*}U=\cosh\xi_{\mathrm{pot}}\,e_t+i\sinh\xi_{\mathrm{pot}}\,\vec u_{\mathrm b},
 $$
 
 verified to $6.3\times10^{-16}$, so $\operatorname{Ad}_B(XY)$ and $\operatorname{Ad}_B(X)\operatorname{Ad}_B(Y)$ differ by that factor and the map is not an algebra automorphism. The action is nevertheless a group action and it preserves the sector and the norm. The distinction is worth stating because the word conjugation suggests an automorphism and, for a boost, the suggestion is false.
@@ -204,7 +204,7 @@ The test. A subspace is a carrier when the action of the group carries it onto i
 
 A rotation keeps the triple. A rotation rotor is real and of unit norm, so its star is its inverse and the action is the ordinary conjugation. The conjugate of a real pure element is a real pure element, the scalar part stays zero, and the residual over one hundred random vectors is $2.2\times10^{-16}$. So the rotation subgroup acts on the triple and its action is the rotation of the three-space.
 
-**A boost does not.** A boost rotor is Hermitian of unit norm, $U_{\mathrm b}=\cosh\tfrac{\phi}{2}e_t+i\sinh\tfrac{\phi}{2}\vec u_{\mathrm b}$, so $U_{\mathrm b}^{*}=U_{\mathrm b}$ and the action is $X\mapsto U_{\mathrm b}XU_{\mathrm b}$, a two-sided multiplication by the same element. On the transverse directions nothing happens,
+**A boost does not.** A boost rotor is Hermitian of unit norm, $U_{\mathrm b}=\cosh\tfrac{\xi_{\mathrm{pot}}}{2}e_t+i\sinh\tfrac{\xi_{\mathrm{pot}}}{2}\vec u_{\mathrm b}$, so $U_{\mathrm b}^{*}=U_{\mathrm b}$ and the action is $X\mapsto U_{\mathrm b}XU_{\mathrm b}$, a two-sided multiplication by the same element. On the transverse directions nothing happens,
 
 $$
 \operatorname{Ad}_{U_{\mathrm b}}(\vec e_x)=\vec e_x ,
@@ -215,14 +215,14 @@ $$
 when the boost is along $\vec e_z$, verified to $6.7\times10^{-16}$. On the axis the element leaves the triple:
 
 $$
-\operatorname{Ad}_{U_{\mathrm b}}(\vec e_z)=\cosh\phi\,\vec e_z-i\sinh\phi ,
+\operatorname{Ad}_{U_{\mathrm b}}(\vec e_z)=\cosh\xi_{\mathrm{pot}}\,\vec e_z-i\sinh\xi_{\mathrm{pot}} ,
 \qquad
-\operatorname{Ad}_{U_{\mathrm b}}(ie_t)=i\cosh\phi\,e_t-\sinh\phi\,\vec e_z ,
+\operatorname{Ad}_{U_{\mathrm b}}(ie_t)=i\cosh\xi_{\mathrm{pot}}\,e_t-\sinh\xi_{\mathrm{pot}}\,\vec e_z ,
 $$
 
 both verified to $4.4\times10^{-16}$ over one hundred rapidities. The first line is the failure: a pure vector is sent to a sum of a pure vector and a multiple of $ie_t$, so the image is no longer in the triple but it is still in the sector. The two lines together are the boost of the four-vector basis, with the time slot and the axis slot mixing by the hyperbolic rotation.
 
-The size of the failure. A vector parallel to the boost axis of length $r$ acquires a scalar of magnitude $r\sinh\phi$ and keeps $r\cosh\phi$ along the axis. The failure is therefore not a small effect and it is not removable by a choice of frame: it is proportional to the rapidity, and at a boost the triple is broken by an amount that grows without bound.
+The size of the failure. A vector parallel to the boost axis of length $r$ acquires a scalar of magnitude $r\sinh\xi_{\mathrm{pot}}$ and keeps $r\cosh\xi_{\mathrm{pot}}$ along the axis. The failure is therefore not a small effect and it is not removable by a choice of frame: it is proportional to the rapidity, and at a boost the triple is broken by an amount that grows without bound.
 
 The repair. The image of the action is contained in the span of the triple and the line $\mathbb{R}(ie_t)$, and that span is closed. So the closure of the carrier is the four-dimensional space, and it is the smallest subspace containing the triple and stable under the whole group. This is the same mechanism as in the spin-half case, where the image of a transverse multiplication by an axis forced the addition of two real dimensions; here the addition is one real dimension and the resulting space is the material sector.
 
@@ -417,7 +417,7 @@ The origin. All three carriers contain the origin, and the origin is in $\Sigma_
 
 3. The integer weight is the price of two-sidedness, and the boson does not pay the sign. The commutator halves nothing: the half in the generator is cancelled by the two sides, and the weights come out as integers. A full turn is $+\mathrm{id}$ and the kernel $\{\pm e_t\}$ of the two-to-one cover acts trivially, which is the statement $(-1)^{2s}=+1$. So a spin-one object does not distinguish a rotation from the rotation followed by a full turn, and the double cover is invisible to it. The spin-half entry pays the sign because its action is one-sided; the spin-one carrier does not, and the difference is exactly the factor of two in the commutator.
 
-4. A boost turns spin into time, and this is why spin is not a four-vector. Under a boost along the axis the pure vector $\vec e_z$ becomes $\cosh\phi\,\vec e_z-i\sinh\phi$: the spin direction keeps a spatial part and gains a time part. So the three spin states of one frame are not the three spin states of another, and the object that is covariant is the four-component amplitude in the sector, not the triple. This is the framework's version of the standard statement that the spin of a particle is defined in its rest frame and that a moving particle's polarization is a four-vector. The identity $\operatorname{Ad}_{U_{\mathrm b}}(\vec e_x)=\vec e_x$ for a boost along $z$ is the other half of the same statement: the transverse directions are untouched, and only the axis mixes with time.
+4. A boost turns spin into time, and this is why spin is not a four-vector. Under a boost along the axis the pure vector $\vec e_z$ becomes $\cosh\xi_{\mathrm{pot}}\,\vec e_z-i\sinh\xi_{\mathrm{pot}}$: the spin direction keeps a spatial part and gains a time part. So the three spin states of one frame are not the three spin states of another, and the object that is covariant is the four-component amplitude in the sector, not the triple. This is the framework's version of the standard statement that the spin of a particle is defined in its rest frame and that a moving particle's polarization is a four-vector. The identity $\operatorname{Ad}_{U_{\mathrm b}}(\vec e_x)=\vec e_x$ for a boost along $z$ is the other half of the same statement: the transverse directions are untouched, and only the axis mixes with time.
 
 5. The rest frame is the spectrally degenerate locus. The degenerate locus of the sector is the line $\mathbb{R}(ie_t)$, and a momentum at rest is $i\,mc\,e_t$, which is on that line. So the eigenvalues of the momentum coalesce exactly when the particle is at rest, and the spectral degeneracy of the material sector is the rest frame. Conversely the region $\Sigma_{11}$, where the vector part does not vanish, is motion: this is the precise content of the corpus's name "mass in motion" for that region, and it is a statement about the spectrum and not a metaphor.
 
@@ -463,7 +463,7 @@ The list of three carriers is finite by the classification, not by survey. The e
 
 The carrier. The vector part $\mathfrak{k}$ of real dimension three, the real pure elements, with $\vec a\vec b=-\vec a\cdot\vec b+\vec a\times\vec b$. It is closed under the commutator and not under the product, it has no axis and no family, and it is the only one of the three carriers that is a Lie algebra.
 
-The action. $\operatorname{Ad}_U(X)=UXU^{*}$ at $N(U)=1$. A rotation preserves the triple and acts on it as an ordinary rotation, with residual $2.2\times10^{-16}$ over one hundred vectors. A boost does not: it sends the axis to $\cosh\phi\,\vec e_z-i\sinh\phi$ and the time line to $i\cosh\phi\,e_t-\sinh\phi\,\vec e_z$, both to $4.4\times10^{-16}$, so the image leaves the triple and stays in the sector.
+The action. $\operatorname{Ad}_U(X)=UXU^{*}$ at $N(U)=1$. A rotation preserves the triple and acts on it as an ordinary rotation, with residual $2.2\times10^{-16}$ over one hundred vectors. A boost does not: it sends the axis to $\cosh\xi_{\mathrm{pot}}\,\vec e_z-i\sinh\xi_{\mathrm{pot}}$ and the time line to $i\cosh\xi_{\mathrm{pot}}\,e_t-\sinh\xi_{\mathrm{pot}}\,\vec e_z$, both to $4.4\times10^{-16}$, so the image leaves the triple and stays in the sector.
 
 The weights. $[\tfrac12\vec u,\vec v]=\vec u\times\vec v$ exactly; on the complexified carrier the weights are $+1$ on $\varepsilon_+$, $-1$ on $\varepsilon_-$ and $0$ on the axis; $2s+1=3=\dim_\mathbb{R}\mathfrak{k}$. The weight operator is $i$ times the commutator, Hermitian to $6.3\times10^{-16}$.
 
@@ -505,8 +505,8 @@ The readings. Spin one is the adjoint representation, so the carrier is the alge
 | $\tilde S_3=i[\tfrac12\vec u,\ \cdot\ ]$ | the Hermitian weight operator |
 | $\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | the idempotents $\tfrac12(e_t\pm i\vec u)$ |
 | $\operatorname{Ad}_U(X)=UXU^{*}$ | the action of a Lorentz rotor of unit norm |
-| $\tilde U_{\mathrm b}$ | a boost rotor, $\cosh\tfrac{\phi}{2}e_t+i\sinh\tfrac{\phi}{2}\vec u_{\mathrm b}$ |
-| $\theta,\ \phi$ | the rotation angle and the boost rapidity |
+| $\tilde U_{\mathrm b}$ | a boost rotor, $\cosh\tfrac{\xi_{\mathrm{pot}}}{2}e_t+i\sinh\tfrac{\xi_{\mathrm{pot}}}{2}\vec u_{\mathrm b}$ |
+| $\theta,\ \xi_{\mathrm{pot}}$ | the rotation angle and the boost rapidity |
 
 ## Further Reading
 

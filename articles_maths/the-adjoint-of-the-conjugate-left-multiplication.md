@@ -2,17 +2,17 @@
 
 ## Introduction
 
-The sesquilinear product attaches two one-sided operators to an element, the right multiplication $R_{b}(x)=x\star b=xb^{*}$ and the left multiplication $L_{a}(x)=a\star x=ax^{*}$, and the two are not of the same kind: the right multiplication is $R$-linear, while the left multiplication is $\varsigma$-semilinear, because it is the second slot of the product that meets the involution and exports the conjugate of the scalar. The present article studies the adjoint of the conjugate-linear one, and it does so for the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*. The operator $L_{a}$, for $a\neq0$, is $R$-linear exactly when the base involution $\varsigma$ is trivial, and in the general case it has no adjoint under the linear rule; the adjoint it does have is taken by the twisted rule of the conjugate-linear operators, and it is the two-sided operator $\mathcal{T}_{1,a}$ of *The Sesquilinear Two-Sided Operator*, not another one-sided multiplication. The article computes that adjoint, the products the operator forms with its adjoint, the elements for which the operator is self-adjoint, the unitary case, and the two degenerations of the involution.
+The sesquilinear product attaches two one-sided operators to an element, the right multiplication $R_{b}(x)=x\star b=xb^{*}$ and the left multiplication $L_{a}(x)=a\star x=ax^{*}$, and the two are not of the same kind: the right multiplication is $R$-linear, while the left multiplication is $\varsigma$-semilinear, because it is the second slot of the product that meets the involution and exports the conjugate of the scalar. The present article studies the adjoint of the conjugate-linear one, and it does so for the sesquilinear pairing $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*. The operator $L_{a}$, for $a\neq0$, is $R$-linear exactly when the base involution $\varsigma$ is trivial, and in the general case it has no adjoint under the linear rule; the adjoint it does have is taken by the twisted rule of the conjugate-linear operators, and it is the two-sided operator $\mathcal{T}_{1,a}$ of *The Sesquilinear Two-Sided Operator*, not another one-sided multiplication. The article computes that adjoint, the products the operator forms with its adjoint, the elements for which the operator is self-adjoint, the unitary case, and the two degenerations of the involution.
 
 The subject belongs to the operator theory of the sesqualgebras, and its point is the asymmetry of the two slots. The right multiplication and the left multiplication are the two ways an element acts on the algebra, and the adjoint separates them: the right multiplication is met by the linear rule and is adjoint to another right multiplication, while the left multiplication is met by the twisted rule and is adjoint to a two-sided operator. The family of the one-sided operators is therefore not stable under the adjoint, and the products $L_{a}^{\dagger}L_{b}$ and $L_{b}L_{a}^{\dagger}$ are the plain one-sided operators, the right and the left regular families of the ordinary product. That is the content of the article.
 
-Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma$ is an involution of $R$, and $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that $A$ is a sesqualgebra in the sense of *Sesqualgebras*; the unit satisfies $1^{*}=1$. The function $\tau:A\to R$ is $R$-linear, central, compatible with the involution, $\tau(ab)=\tau(ba)$ and $\tau(x^{*})=\varsigma(\tau(x))$, and the pairing is $\varphi(x,y)=\tau(xy^{*})$, $R$-linear in its first variable, $\varsigma$-semilinear in its second and perfect. The derived product is $x\star y=xy^{*}$, and the operators are
+Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma$ is an involution of $R$, and $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that $A$ is a sesqualgebra in the sense of *Sesqualgebras*; the unit satisfies $1^{*}=1$. The function $\tau:A\to R$ is $R$-linear, central, compatible with the involution, $\tau(ab)=\tau(ba)$ and $\tau(x^{*})=\varsigma(\tau(x))$, and the pairing is $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$, $R$-linear in its first variable, $\varsigma$-semilinear in its second and perfect. The derived product is $x\star y=xy^{*}$, and the operators are
 
 $$
 L_{a}(x)=a\star x=ax^{*}, \qquad R_{b}(x)=x\star b=xb^{*}, \qquad \mathcal{T}_{a,b}(x)=ax^{*}b, \qquad L_{p}R_{q}(x)=pxq .
 $$
 
-The adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger}$ with $\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)$, and the adjoint of an $R$-linear operator $T$ is the operator $T^{\dagger}$ with $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$; both exist and are unique, as *The Sesquilinear Adjoint Operator* proves.
+The adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger}$ with $\digamma_{\mathrm{map}}(Sx,y)=\varsigma\bigl(\digamma_{\mathrm{map}}(x,S^{\dagger}y)\bigr)$, and the adjoint of an $R$-linear operator $T$ is the operator $T^{\dagger}$ with $\digamma_{\mathrm{map}}(Tx,y)=\digamma_{\mathrm{map}}(x,T^{\dagger}y)$; both exist and are unique, as *The Sesquilinear Adjoint Operator* proves.
 
 ## The Conjugate Left Multiplication
 
@@ -41,14 +41,14 @@ $$
 **Proposition (the parity obstruction, the case of $L_{a}$).** Let $\varsigma\neq\mathrm{id}$ and let $a\neq0$. Then there is no $R$-linear operator $U$ with
 
 $$
-\varphi(L_{a}x,y)=\varphi(x,Uy)\qquad\text{for all }x,y\in A .
+\digamma_{\mathrm{map}}(L_{a}x,y)=\digamma_{\mathrm{map}}(x,Uy)\qquad\text{for all }x,y\in A .
 $$
 
-**Proof.** Suppose there is one, and replace $x$ by $\lambda x$ in the identity. On the left, $\varphi\bigl(L_{a}(\lambda x),y\bigr)=\varphi\bigl(\varsigma(\lambda)L_{a}x,y\bigr)=\varsigma(\lambda)\varphi(L_{a}x,y)$; on the right, $\varphi(\lambda x,Uy)=\lambda\varphi(x,Uy)=\lambda\varphi(L_{a}x,y)$. Hence $\bigl(\varsigma(\lambda)-\lambda\bigr)\varphi(L_{a}x,y)=0$ for every $\lambda$, $x$ and $y$. Choosing $\lambda$ with $\varsigma(\lambda)\neq\lambda$, which is possible because $\varsigma\neq\mathrm{id}$ and which is a non-zero-divisor by the hypothesis on $R$, gives $\varphi(L_{a}x,y)=0$ for all $x$ and $y$; since $a\neq0$ the operator $L_{a}$ does not vanish, and the perfection of the pairing supplies $y$ with $\varphi(L_{a}x,y)\neq0$ for some $x$, a contradiction.
+**Proof.** Suppose there is one, and replace $x$ by $\lambda x$ in the identity. On the left, $\digamma_{\mathrm{map}}\bigl(L_{a}(\lambda x),y\bigr)=\digamma_{\mathrm{map}}\bigl(\varsigma(\lambda)L_{a}x,y\bigr)=\varsigma(\lambda)\digamma_{\mathrm{map}}(L_{a}x,y)$; on the right, $\digamma_{\mathrm{map}}(\lambda x,Uy)=\lambda\digamma_{\mathrm{map}}(x,Uy)=\lambda\digamma_{\mathrm{map}}(L_{a}x,y)$. Hence $\bigl(\varsigma(\lambda)-\lambda\bigr)\digamma_{\mathrm{map}}(L_{a}x,y)=0$ for every $\lambda$, $x$ and $y$. Choosing $\lambda$ with $\varsigma(\lambda)\neq\lambda$, which is possible because $\varsigma\neq\mathrm{id}$ and which is a non-zero-divisor by the hypothesis on $R$, gives $\digamma_{\mathrm{map}}(L_{a}x,y)=0$ for all $x$ and $y$; since $a\neq0$ the operator $L_{a}$ does not vanish, and the perfection of the pairing supplies $y$ with $\digamma_{\mathrm{map}}(L_{a}x,y)\neq0$ for some $x$, a contradiction.
 
 **Remark (why the ring has no zero divisors).** The proof cancels $\varsigma(\lambda)-\lambda$, and that step is not idle: over $R=\mathbb{Q}[\varepsilon]/(\varepsilon^{2})$ with $\varsigma(\varepsilon)=-\varepsilon$, $A=M_{2}(R)$ with $X^{*}=\varsigma(X)^{T}$ and $\tau$ the trace, the pairing is perfect and $L_{a}$ for $a=\varepsilon E_{11}$ has the $R$-linear adjoint $U(Y)=-\varepsilon Y^{T}E_{11}$ beside its twisted adjoint $\mathcal{T}_{1,a}$: for every $\lambda$ the difference $\varsigma(\lambda)-\lambda$ annihilates the image of $L_{a}$, so the argument has nothing to cancel. The same hypothesis is used in the criterion for $R$-linearity, which evaluates at the unit: there a zero divisor of $R$ lets $(\varsigma(\lambda)-\lambda)a$ vanish although $\varsigma(\lambda)\neq\lambda$ and $a\neq0$.
 
-**Remark.** The witness of the failure is the unit: $\varphi(L_{a}1,1)=\tau(a)$, and the defect $\bigl(\varsigma(\lambda)-\lambda\bigr)\tau(a)$ is the obstruction in its smallest form. The single-slot adjoint that the operator does not have is the one the right multiplication does have, and the reason is the parity: a conjugate-linear operator exports the scalar $\varsigma(\lambda)$ and a linear rule imports the scalar $\lambda$, so the two can agree only if the two scalars are the same.
+**Remark.** The witness of the failure is the unit: $\digamma_{\mathrm{map}}(L_{a}1,1)=\tau(a)$, and the defect $\bigl(\varsigma(\lambda)-\lambda\bigr)\tau(a)$ is the obstruction in its smallest form. The single-slot adjoint that the operator does not have is the one the right multiplication does have, and the reason is the parity: a conjugate-linear operator exports the scalar $\varsigma(\lambda)$ and a linear rule imports the scalar $\lambda$, so the two can agree only if the two scalars are the same.
 
 ## The Twisted Adjoint
 
@@ -62,7 +62,7 @@ $$
 
 The adjoint is $\varsigma$-semilinear, it is a two-sided operator and not a one-sided multiplication, and it is a left multiplication $L_{a}$ again exactly when $a$ is central.
 
-**Proof.** The defining identity is $\varphi(L_{a}x,y)=\varsigma\bigl(\varphi(x,L_{a}^{\dagger}y)\bigr)$, and for the candidate $L_{a}^{\dagger}(y)=y^{*}a$ the right-hand side is $\varsigma\bigl(\tau(x(y^{*}a)^{*})\bigr)=\varsigma\bigl(\tau(xa^{*}y)\bigr)=\tau\bigl((xa^{*}y)^{*}\bigr)=\tau(y^{*}ax^{*})=\tau(ax^{*}y^{*})$, using the anti-multiplicativity of $*$ and the compatibility of $\tau$; the cyclicity of $\tau$ turns the last expression into $\tau(ax^{*}y^{*})=\varphi(L_{a}x,y)$, which is the identity. The operator is $\varsigma$-semilinear by its definition, and the two-sided operator $\mathcal{T}_{1,a}$ is a left multiplication $L_{c}$ only if $y^{*}a=cy^{*}$ for all $y$, that is only if $a=c$ is central.
+**Proof.** The defining identity is $\digamma_{\mathrm{map}}(L_{a}x,y)=\varsigma\bigl(\digamma_{\mathrm{map}}(x,L_{a}^{\dagger}y)\bigr)$, and for the candidate $L_{a}^{\dagger}(y)=y^{*}a$ the right-hand side is $\varsigma\bigl(\tau(x(y^{*}a)^{*})\bigr)=\varsigma\bigl(\tau(xa^{*}y)\bigr)=\tau\bigl((xa^{*}y)^{*}\bigr)=\tau(y^{*}ax^{*})=\tau(ax^{*}y^{*})$, using the anti-multiplicativity of $*$ and the compatibility of $\tau$; the cyclicity of $\tau$ turns the last expression into $\tau(ax^{*}y^{*})=\digamma_{\mathrm{map}}(L_{a}x,y)$, which is the identity. The operator is $\varsigma$-semilinear by its definition, and the two-sided operator $\mathcal{T}_{1,a}$ is a left multiplication $L_{c}$ only if $y^{*}a=cy^{*}$ for all $y$, that is only if $a=c$ is central.
 
 **Corollary (the order of the operation).** $L_{a}^{\dagger\dagger}=L_{a}$; the adjoint operation is an order-two map on the union of the left regular family with the two-sided operators $\mathcal{T}_{1,a}$.
 
@@ -78,7 +78,7 @@ $$
 {}^{\dagger}L_{a}=L_{a}^{\dagger}=\mathcal{T}_{1,a} .
 $$
 
-**Proof.** The two adjoints are the adjoint taken against $\varphi$ and against $\varphi^{T}$, and for the sesqui-symmetric pairing $\varphi^{T}=\varsigma\circ\varphi$ makes them agree, as *The Sesquilinear Adjoint Operator* proves.
+**Proof.** The two adjoints are the adjoint taken against $\digamma_{\mathrm{map}}$ and against $\digamma_{\mathrm{map}}^{T}$, and for the sesqui-symmetric pairing $\digamma_{\mathrm{map}}^{T}=\varsigma\circ\digamma_{\mathrm{map}}$ makes them agree, as *The Sesquilinear Adjoint Operator* proves.
 
 **Remark.** The coincidence is the reason a single symbol $\dagger$ serves. It is not a general fact about pairings: for a pairing that is not sesqui-symmetric the two adjoints differ, and the difference is the sesquilinear analogue of the defect that separates the adjoint from the left adjoint of the bilinear case.
 
@@ -132,7 +132,7 @@ $$
 
 ### The Worked Cases
 
-**The complex matrices.** Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose, $\varsigma$ the conjugation, $\tau$ the trace and $\varphi(X,Y)=\operatorname{tr}(XY^{*})$. The conjugate left multiplication is $L_{A}(X)=AX^{*}$, and
+**The complex matrices.** Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose, $\varsigma$ the conjugation, $\tau$ the trace and $\digamma_{\mathrm{map}}(X,Y)=\operatorname{tr}(XY^{*})$. The conjugate left multiplication is $L_{A}(X)=AX^{*}$, and
 
 $$
 L_{A}^{\dagger}(Y)=Y^{*}A, \qquad L_{A}^{\dagger}L_{B}=R_{A^{*}B}, \qquad L_{B}L_{A}^{\dagger}=L_{BA^{*}}R_{1} .
@@ -140,7 +140,7 @@ $$
 
 The criterion reads $L_{A}^{\dagger}=L_{A}$ if and only if $A=\lambda 1$ is a scalar matrix, and a unitary $U$ gives the antiunitary $L_{U}(X)=UX^{*}$ with $L_{U}^{\dagger}=L_{U}^{-1}$. For $n=2$ and $A=E_{12}$ the adjoint is $L_{A}^{\dagger}(Y)=Y^{*}E_{12}$, which sends $Y=E_{11}$ to $E_{11}E_{12}=E_{12}$ and $Y=E_{12}$ to $E_{21}E_{12}=E_{22}$, while $L_{A}$ sends $E_{11}$ to $0$ and $E_{12}$ to $E_{11}$; the two operators differ, and the element $E_{12}$ is not central.
 
-**The field.** Let $A=\mathbb{C}$ with $\varsigma$ the conjugation, $\tau$ the identity and $\varphi(x,y)=x\overline{y}$. The conjugate left multiplication is $L_{c}(x)=c\overline{x}$, its adjoint is $L_{c}^{\dagger}(y)=\overline{y}c=c\overline{y}=L_{c}(y)$, and every conjugate left multiplication is self-adjoint, the algebra being commutative. The assignment $c\mapsto L_{c}$ is an $R$-linear isomorphism of the field onto the conjugate-linear operators of the space, and the antiunitary operators of the field are exactly the multiplications by the complex numbers $c$ with $c\overline{c}=1$.
+**The field.** Let $A=\mathbb{C}$ with $\varsigma$ the conjugation, $\tau$ the identity and $\digamma_{\mathrm{map}}(x,y)=x\overline{y}$. The conjugate left multiplication is $L_{c}(x)=c\overline{x}$, its adjoint is $L_{c}^{\dagger}(y)=\overline{y}c=c\overline{y}=L_{c}(y)$, and every conjugate left multiplication is self-adjoint, the algebra being commutative. The assignment $c\mapsto L_{c}$ is an $R$-linear isomorphism of the field onto the conjugate-linear operators of the space, and the antiunitary operators of the field are exactly the multiplications by the complex numbers $c$ with $c\overline{c}=1$.
 
 **The quaternions.** Let $A=\mathbb{H}$ over $R=\mathbb{R}$ with the quaternion conjugation and $\tau$ the real part, so that $\varsigma=\mathrm{id}$ and the twisted rule is the linear rule. The right multiplication is $R_{b}^{\dagger}=R_{b^{*}}$ and the left multiplication is $L_{a}^{\dagger}=\mathcal{T}_{1,a}(y)=y^{*}a$, which is one-sided again only for real $a$, the central elements of the division algebra $\mathbb{H}$. The unitary elements are those with $qq^{*}=1$, and the conjugate left multiplication by such an element is antiunitary; since $\mathbb{H}$ is a division algebra, $L_{a}$ is injective for $a\neq0$.
 
@@ -155,7 +155,7 @@ When $\varsigma=\mathrm{id}$ the operator $L_{a}$ is $R$-linear, and the proposi
 The other degeneration is $*=\mathrm{id}$, and it is not independent: the identity is an anti-automorphism only on a commutative algebra, so $*=\mathrm{id}$ forces $A$ commutative, and then the scalar rule $(\lambda x)^{*}=\varsigma(\lambda)x^{*}$ reads $\lambda x=\varsigma(\lambda)x$, that is $\varsigma=\mathrm{id}$ as well. In that case the derived product is the ordinary product, $L_{a}(x)=ax$ is the plain left multiplication, the two-sided operator $\mathcal{T}_{1,a}(y)=ya$ is the plain right multiplication, and
 
 $$
-L_{a}^{\dagger}=R_{a},\qquad \varphi(ax,y)=\tau(axy)=\tau(xay)=\varphi(x,ay) ,
+L_{a}^{\dagger}=R_{a},\qquad \digamma_{\mathrm{map}}(ax,y)=\tau(axy)=\tau(xay)=\digamma_{\mathrm{map}}(x,ay) ,
 $$
 
 so every left multiplication is self-adjoint, in agreement with the criterion, every element being central. The two degenerations therefore meet, and the article collapses to the classical statement that the left and the right multiplication by an element of a commutative algebra are adjoint.

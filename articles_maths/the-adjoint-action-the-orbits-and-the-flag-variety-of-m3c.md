@@ -97,7 +97,7 @@ $$
 Z(N)=\left\{\begin{pmatrix}a&b&c\\0&a&0\\0&d&e\end{pmatrix}\right\},
 $$
 
-of dimension $5$. The orbit has dimension $9-5=4$. It is the set of rank-one nilpotent matrices, equivalently the set of matrices $u\varphi$ with $\varphi(u)=0$ and $u\neq0$. The parameters are $u\in\mathbb{C}^{3}\smallsetminus\{0\}$ (three dimensions) and $\varphi\in u^{\perp}$ (two dimensions), modulo the scaling $(u,\varphi)\mapsto(\lambda u,\lambda^{-1}\varphi)$ (one dimension), so the dimension is $3+2-1=4$. Projectively the orbit is the incidence variety of pairs $([u],[\varphi])$ with $u\in\ker\varphi$, of dimension $3$; the orbit is the affine cone over it.
+of dimension $5$. The orbit has dimension $9-5=4$. It is the set of rank-one nilpotent matrices, equivalently the set of matrices $u\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(u)=0$ and $u\neq0$. The parameters are $u\in\mathbb{C}^{3}\smallsetminus\{0\}$ (three dimensions) and $\digamma_{\mathrm{map}}\in u^{\perp}$ (two dimensions), modulo the scaling $(u,\digamma_{\mathrm{map}})\mapsto(\lambda u,\lambda^{-1}\digamma_{\mathrm{map}})$ (one dimension), so the dimension is $3+2-1=4$. Projectively the orbit is the incidence variety of pairs $([u],[\digamma_{\mathrm{map}}])$ with $u\in\ker\digamma_{\mathrm{map}}$, of dimension $3$; the orbit is the affine cone over it.
 
 **Worked example: the principal nilpotent orbit.** Let $N=E_{12}+E_{23}$. The centraliser is the algebra of polynomials in $N$,
 
@@ -139,7 +139,7 @@ These are three polynomial equations, and the cone has dimension $9-3=6$. It is 
 
 **The orbits.** The nilpotent orbits are the zero orbit $\{0\}$, of dimension $0$; the minimal orbit, the rank-one nilpotent matrices, of dimension $4$; and the principal orbit, the rank-two nilpotent matrices, of dimension $6$. There are exactly three, because the nilpotent Jordan types in size $3$ are the partitions $1+1+1$, $2+1$ and $3$.
 
-**Proof.** A nilpotent matrix has a Jordan form with blocks of size at most $3$ and eigenvalue $0$; the partitions of $3$ are the three listed. The dimensions are computed from the centralisers: $9$, $5$ and $3$. The rank-one nilpotents are exactly the matrices $u\varphi$ with $\varphi(u)=0$ and $u\neq0$; the rank-two nilpotents are the matrices whose cube is zero but whose square is not.
+**Proof.** A nilpotent matrix has a Jordan form with blocks of size at most $3$ and eigenvalue $0$; the partitions of $3$ are the three listed. The dimensions are computed from the centralisers: $9$, $5$ and $3$. The rank-one nilpotents are exactly the matrices $u\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}(u)=0$ and $u\neq0$; the rank-two nilpotents are the matrices whose cube is zero but whose square is not.
 
 **The closure order.** The zero orbit lies in the closure of both nonzero orbits. The minimal orbit lies in the closure of the principal orbit: a principal nilpotent degenerates, along a parameter, to a rank-one nilpotent. The principal orbit does not lie in the closure of the minimal one, by dimension. So
 

@@ -137,17 +137,17 @@ is $\varsigma$-semilinear, and under the identification $(M^{\varsigma*})^{*} \c
 
 ### Along a Conjugate-Linear Map
 
-**Theorem (transport preserves the parity).** Let $A$ carry a $\varsigma$-sesquilinear product $\cdot_{A}$ and let $\varphi : A \to B$ be a $\varsigma$-semilinear bijection. Then the transported product
+**Theorem (transport preserves the parity).** Let $A$ carry a $\varsigma$-sesquilinear product $\cdot_{A}$ and let $\digamma_{\mathrm{map}} : A \to B$ be a $\varsigma$-semilinear bijection. Then the transported product
 
 $$
-\boxed{\;x \cdot_{B} y = \varphi\bigl( \varphi^{-1}(x) \cdot_{A} \varphi^{-1}(y) \bigr)\;}
+\boxed{\;x \cdot_{B} y = \digamma_{\mathrm{map}}\bigl( \digamma_{\mathrm{map}}^{-1}(x) \cdot_{A} \digamma_{\mathrm{map}}^{-1}(y) \bigr)\;}
 $$
 
 is a $\varsigma$-sesquilinear product on $B$ of the same parity as $\cdot_{A}$, linear in the first slot and $\varsigma$-semilinear in the second.
 
-**Proof.** In the first slot, $\varphi^{-1}$ is semilinear and $\cdot_{A}$ is linear in its first variable, so their composite is semilinear, and $\varphi$ is semilinear, so the composite is linear. In the second slot, $\varphi^{-1}$ is semilinear and $\cdot_{A}$ is semilinear in its second variable, so the composite is linear, and $\varphi$ is semilinear, so the composite is semilinear. In each slot the variable passes through two semilinear steps and the parity rule applied twice returns the parity of the slot.
+**Proof.** In the first slot, $\digamma_{\mathrm{map}}^{-1}$ is semilinear and $\cdot_{A}$ is linear in its first variable, so their composite is semilinear, and $\digamma_{\mathrm{map}}$ is semilinear, so the composite is linear. In the second slot, $\digamma_{\mathrm{map}}^{-1}$ is semilinear and $\cdot_{A}$ is semilinear in its second variable, so the composite is linear, and $\digamma_{\mathrm{map}}$ is semilinear, so the composite is semilinear. In each slot the variable passes through two semilinear steps and the parity rule applied twice returns the parity of the slot.
 
-**Remark.** Transport by a conjugate-linear map does **not** reverse the parity, because each slot meets one $\varphi^{-1}$ and one $\varphi$ and the two conjugations cancel. What reverses the parity is the transposition of the product, $x \cdot y \mapsto y \cdot x$, which is the bilinear map $A^{\varsigma} \times A \to A$ of *The Sesquilinear Product* and the opposite algebra of *Sesqualgebras*: there the conjugate module comes into the first slot and the parity of the first slot is reversed.
+**Remark.** Transport by a conjugate-linear map does **not** reverse the parity, because each slot meets one $\digamma_{\mathrm{map}}^{-1}$ and one $\digamma_{\mathrm{map}}$ and the two conjugations cancel. What reverses the parity is the transposition of the product, $x \cdot y \mapsto y \cdot x$, which is the bilinear map $A^{\varsigma} \times A \to A$ of *The Sesquilinear Product* and the opposite algebra of *Sesqualgebras*: there the conjugate module comes into the first slot and the parity of the first slot is reversed.
 
 ### Conjugation as the Model
 

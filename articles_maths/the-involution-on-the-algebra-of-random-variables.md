@@ -9,10 +9,10 @@ x^*=\bar x ,
 $$
 and the involution is the structure that turns the algebra into a probability theory: it selects the **real random variables** as its fixed elements, it defines the positive elements as the squares of the real ones, and it makes the expectation a **state**, positive and faithful. This article is the `*` theory of the algebra of random variables. It defines the involution, identifies the real random variables, records the decomposition of an element into a real and an imaginary part, the modulus and the positive cone, describes the algebra as a commutative von Neumann algebra with its Gelfand description and its lattice-ordered self-adjoint part, and derives the spectral theory of a real random variable, its spectral measure and its distribution.
 
-The conventions are those fixed for the category in *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category: $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the pointwise product, the conjugation $x^*=\bar x$, the state $\varphi(x)=\mathbb E[x]$ and the form of the category $\langle x,y\rangle=\varphi(xy^*)$. The non-commutative generalization, where the algebra is not assumed commutative, is *Non-Commutative Probability and the Involutive Algebra of Random Variables*, earlier in this category, and the present article is its commutative case. The state, the positivity, the form and the realness here are the ones used throughout the category; the covariance of the form is *The Covariance Function and Hermitian Positivity*, later in this category, and the conjugate symmetry of the Fourier transform of the law is *The Characteristic Function and Conjugate Symmetry*, later in this category. The involution on the algebra of arithmetic functions, which has the same formula on the values and a different product, is *The Involution on the Algebra of Arithmetic Functions*, written, and the conjugations of the number systems are *Algebra and Element Conventions*, written. The operator-algebraic background, the Gelfand duality, the von Neumann algebras, the positive functionals and the spectral theorem are *Operator Algebras*, written. No physics is invoked.
+The conventions are those fixed for the category in *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category: $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the pointwise product, the conjugation $x^*=\bar x$, the state $\digamma_{\mathrm{map}}(x)=\mathbb E[x]$ and the form of the category $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$. The non-commutative generalization, where the algebra is not assumed commutative, is *Non-Commutative Probability and the Involutive Algebra of Random Variables*, earlier in this category, and the present article is its commutative case. The state, the positivity, the form and the realness here are the ones used throughout the category; the covariance of the form is *The Covariance Function and Hermitian Positivity*, later in this category, and the conjugate symmetry of the Fourier transform of the law is *The Characteristic Function and Conjugate Symmetry*, later in this category. The involution on the algebra of arithmetic functions, which has the same formula on the values and a different product, is *The Involution on the Algebra of Arithmetic Functions*, written, and the conjugations of the number systems are *Algebra and Element Conventions*, written. The operator-algebraic background, the Gelfand duality, the von Neumann algebras, the positive functionals and the spectral theorem are *Operator Algebras*, written. No physics is invoked.
 
 Throughout, $(\Omega,\mathcal F,\mathbb P)$ is a probability space, $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ is the algebra of $\mathbb P$-classes of bounded complex random variables with
-the pointwise product, the unit $1$ and the conjugation $x^*=\bar x$, the state is $\varphi(x)=\mathbb E[x]$, the form is $\langle x,y\rangle=\varphi(xy^*)$ on $\mathcal{H}=L^2(\Omega,\mathbb P)$, and the norm of $\mathcal{A}$ is the essential supremum $\|x\|_\infty$. The self-adjoint elements are written $\mathcal{A}_{sa}$ and the positive ones $\mathcal{A}_+$, and the real part and the imaginary part of $x$ are written $\Re x$ and $\Im x$.
+the pointwise product, the unit $1$ and the conjugation $x^*=\bar x$, the state is $\digamma_{\mathrm{map}}(x)=\mathbb E[x]$, the form is $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ on $\mathcal{H}=L^2(\Omega,\mathbb P)$, and the norm of $\mathcal{A}$ is the essential supremum $\|x\|_\infty$. The self-adjoint elements are written $\mathcal{A}_{sa}$ and the positive ones $\mathcal{A}_+$, and the real part and the imaginary part of $x$ are written $\Re x$ and $\Im x$.
 
 ## The Involution
 
@@ -46,7 +46,7 @@ and $x$ is self-adjoint exactly when $\Im x=0$; the self-adjoint elements are ex
 
 *Proof.* The conjugate of $\Re x$ is $\frac12(\bar x+x)=\Re x$, so the real part is self-adjoint, and the same for the imaginary part; the sum reconstructs $x$; the uniqueness is the directness of the sum, proved by taking the conjugate of $a+ib=c+id$ with $a,b,c,d$ self-adjoint, which gives $b=d$. An element of $L^\infty$ is fixed by the conjugation exactly when it is real-valued.
 
-**Theorem (the realness criterion).** An element $x$ is self-adjoint if and only if $\|x-x^*\|_2=0$, that is if and only if $\varphi\bigl((x-x^*)^2\bigr)=0$.
+**Theorem (the realness criterion).** An element $x$ is self-adjoint if and only if $\|x-x^*\|_2=0$, that is if and only if $\digamma_{\mathrm{map}}\bigl((x-x^*)^2\bigr)=0$.
 
 *Proof.* The form is positive definite, $\langle z,z\rangle=\mathbb E|z|^2=0$ implying $z=0$, because a nonzero square-integrable function has a positive integral of its square; hence $x-x^*=0$ is equivalent to the vanishing of its norm, and $x-x^*=0$ is the self-adjointness.
 
@@ -70,11 +70,11 @@ and $u$ is unitary in $\mathcal{A}$, $u^*u=uu^*=1$, exactly when $x$ is invertib
 
 ### The state and the GNS form
 
-**Theorem (the state).** The expectation $\varphi(x)=\mathbb E[x]$ is a state:
+**Theorem (the state).** The expectation $\digamma_{\mathrm{map}}(x)=\mathbb E[x]$ is a state:
 $$
-\varphi(1)=1,\qquad \varphi(x^*x)=\mathbb E[|x|^2]\ge0,\qquad \varphi(x^*)=\overline{\varphi(x)},
+\digamma_{\mathrm{map}}(1)=1,\qquad \digamma_{\mathrm{map}}(x^*x)=\mathbb E[|x|^2]\ge0,\qquad \digamma_{\mathrm{map}}(x^*)=\overline{\digamma_{\mathrm{map}}(x)},
 $$
-and it is **faithful**: $\varphi(x^*x)=0$ implies $x=0$. The associated form $\langle x,y\rangle=\varphi(xy^*)$ is a genuine inner product on $\mathcal{H}=L^2(\Omega,\mathbb P)$, it is invariant under the involution, and the left multiplication satisfies $L_a^*=L_{a^*}$.
+and it is **faithful**: $\digamma_{\mathrm{map}}(x^*x)=0$ implies $x=0$. The associated form $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ is a genuine inner product on $\mathcal{H}=L^2(\Omega,\mathbb P)$, it is invariant under the involution, and the left multiplication satisfies $L_a^*=L_{a^*}$.
 
 *Proof.* The positivity and the unitality are the properties of the expectation; the faithfulness is the vanishing of $\mathbb E|z|^2$ implying $z=0$; the invariance of the form and the adjoint identity are those of *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category, and they hold because the state is tracial in the commutative algebra. The positivity and the faithfulness are exactly the hypothesis the non-commutative theory of *Non-Commutative Probability and the Involutive Algebra of Random Variables*, earlier in this category, must impose.
 
@@ -94,7 +94,7 @@ The algebra $\mathcal{A}$ is a commutative von Neumann algebra, hence a commutat
 
 ### The Gelfand description
 
-**Theorem (Gelfand).** As a commutative $C^*$-algebra $\mathcal{A}=C(\Omega_{\mathcal{A}})$ for the compact Hausdorff space $\Omega_{\mathcal{A}}$ of the characters, and the involution becomes the complex conjugation of the functions on $\Omega_{\mathcal{A}}$; the probability measure $\mathbb P$ corresponds to the state $\varphi$ by integration, $\varphi(x)=\int_{\Omega_{\mathcal{A}}}\hat x\,d\nu$, and $\nu$ is a Baire probability measure on $\Omega_{\mathcal{A}}$.
+**Theorem (Gelfand).** As a commutative $C^*$-algebra $\mathcal{A}=C(\Omega_{\mathcal{A}})$ for the compact Hausdorff space $\Omega_{\mathcal{A}}$ of the characters, and the involution becomes the complex conjugation of the functions on $\Omega_{\mathcal{A}}$; the probability measure $\mathbb P$ corresponds to the state $\digamma_{\mathrm{map}}$ by integration, $\digamma_{\mathrm{map}}(x)=\int_{\Omega_{\mathcal{A}}}\hat x\,d\nu$, and $\nu$ is a Baire probability measure on $\Omega_{\mathcal{A}}$.
 
 *Proof.* The Gelfand duality represents a commutative $C^*$-algebra as the algebra of continuous functions on its character space, and the self-adjoint elements correspond to the real-valued functions; the state is a positive functional, hence a measure by the Riesz representation. The correspondence is the probabilistic form of the Gelfand–Naimark theorem.
 
@@ -114,11 +114,11 @@ for every bounded Borel $f$ on the spectrum, and the functional calculus $f\maps
 
 **Theorem (the distribution of a real random variable).** Let $x\in\mathcal{A}_{sa}$ and let $\mu_x$ be the law of the random variable $x$, $\mu_x(A)=\mathbb P(x\in A)$. Then
 $$
-\varphi(f(x))=\mathbb E[f(x)]=\int_{\mathbb{R}}f\,d\mu_x
+\digamma_{\mathrm{map}}(f(x))=\mathbb E[f(x)]=\int_{\mathbb{R}}f\,d\mu_x
 $$
-for every bounded Borel $f$, the moments are $\varphi(x^n)=\int t^n\,d\mu_x$, and $\mu_x$ is the scalar measure $\langle E_x(\cdot)\mathbf 1,\mathbf 1\rangle$ of the spectral measure.
+for every bounded Borel $f$, the moments are $\digamma_{\mathrm{map}}(x^n)=\int t^n\,d\mu_x$, and $\mu_x$ is the scalar measure $\langle E_x(\cdot)\mathbf 1,\mathbf 1\rangle$ of the spectral measure.
 
-*Proof.* The first identity is the change of variables in the integral defining the expectation, and the second is its specialisation to $f(t)=t^n$; the last is the identification of the scalar spectral measure with the law of $x$, since $\varphi(E_x(A))=\mathbb P(x\in A)$.
+*Proof.* The first identity is the change of variables in the integral defining the expectation, and the second is its specialisation to $f(t)=t^n$; the last is the identification of the scalar spectral measure with the law of $x$, since $\digamma_{\mathrm{map}}(E_x(A))=\mathbb P(x\in A)$.
 
 ## Comparison with the Other Involutions
 
@@ -128,13 +128,13 @@ for every bounded Borel $f$, the moments are $\varphi(x^n)=\int t^n\,d\mu_x$, an
 
 ## Worked Examples
 
-**Example (the two-atom algebra).** Let $\Omega=\{\omega_-,\omega_+\}$ with $\mathbb P(\omega_\pm)=\frac12$. Then $\mathcal{A}\cong\mathbb{C}^2$ with $\bar x=(x_-^*,x_+^*)$, $\mathcal{A}_{sa}\cong\mathbb{R}^2$ with the pointwise order, $\varphi(x)=\frac12(x_-+x_+)$, and the form is the Euclidean form of $\mathbb{C}^2$ up to the factor $\frac12$. The spectral measure of a real $x=(x_-,x_+)$ is the sum of the two point masses at the values $x_\pm$ with weights $\frac12$.
+**Example (the two-atom algebra).** Let $\Omega=\{\omega_-,\omega_+\}$ with $\mathbb P(\omega_\pm)=\frac12$. Then $\mathcal{A}\cong\mathbb{C}^2$ with $\bar x=(x_-^*,x_+^*)$, $\mathcal{A}_{sa}\cong\mathbb{R}^2$ with the pointwise order, $\digamma_{\mathrm{map}}(x)=\frac12(x_-+x_+)$, and the form is the Euclidean form of $\mathbb{C}^2$ up to the factor $\frac12$. The spectral measure of a real $x=(x_-,x_+)$ is the sum of the two point masses at the values $x_\pm$ with weights $\frac12$.
 
 **Example (the circle).** Let $\Omega=\mathbb R/\mathbb Z$ with the Lebesgue measure. The function $x(\theta)=\cos(2\pi\theta)$ is self-adjoint, its distribution is the arcsine law, $\frac{1}{\pi\sqrt{1-t^2}}$ on $[-1,1]$, its spectral measure is the push-forward of the Lebesgue measure under the cosine, and the functional calculus sends a bounded Borel $f$ to the function $f(\cos(2\pi\theta))$.
 
 **Example (the modulus and the sign).** For $x(\omega)$ vanishing on a set of positive probability the polar decomposition $x=u|x|$ has $u=\mathrm{sgn}\,x$ unitary only off the zero set; the failure of the unitarity is the failure of the invertibility. The modulus provides the lattice operations, $x\vee y=\frac12(x+y+|x-y|)$, and the positivity of the cone is the pointwise positivity of the function.
 
-**Example (the state of the arithmetic case is not tracial).** In the algebra of arithmetic functions the coefficient involution $\sigma(f)(n)=\overline{f(n)}$ is the same conjugation, but the augmentation $\varphi(f)=f(1)$ is a state whose form is not invariant under the translations, and the positivity of the state has a different content; the comparison isolates the role of the product and shows that the involution alone does not give the probability.
+**Example (the state of the arithmetic case is not tracial).** In the algebra of arithmetic functions the coefficient involution $\sigma(f)(n)=\overline{f(n)}$ is the same conjugation, but the augmentation $\digamma_{\mathrm{map}}(f)=f(1)$ is a state whose form is not invariant under the translations, and the positivity of the state has a different content; the comparison isolates the role of the product and shows that the involution alone does not give the probability.
 
 ## Failure of the Degenerate Cases
 
@@ -142,7 +142,7 @@ The involution degenerates in four configurations. First, the involution is the 
 
 ## Summary
 
-The involution of the algebra of random variables $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ is the complex conjugation $x^*=\bar x$, an involutive, isometric, conjugate-linear anti-automorphism that is an automorphism because the algebra is commutative. Its fixed elements are the **real random variables**, $\mathcal{A}_{sa}=L^\infty(\Omega,\mathbb P;\mathbb{R})$, every element decomposes uniquely as $x=\Re x+i\,\Im x$ with self-adjoint parts, the realness is equivalent to the vanishing of $\|x-x^*\|_2$, and the positive elements $x=y^*y$ form a proper convex cone with the modulus $|x|=(x^*x)^{1/2}$ and the polar decomposition $x=u|x|$. The expectation is a faithful state, the form $\langle x,y\rangle=\varphi(xy^*)$ is a genuine inner product, and the involution is invariant under it; the self-adjoint part is a lattice with $x\vee y=\frac12(x+y+|x-y|)$, the algebra is a commutative von Neumann algebra, and its Gelfand description is the algebra of continuous functions on the character space with the conjugation. The spectral theorem gives every real $x$ a spectral measure and the functional calculus, and the law of $x$ is the scalar spectral measure with the moments $\varphi(x^n)$. The non-commutative generalization is *Non-Commutative Probability and the Involutive Algebra of Random Variables*, the covariance is *The Covariance Function and Hermitian Positivity*, and the conjugate symmetry of the Fourier transform is *The Characteristic Function and Conjugate Symmetry*, both later in this category.
+The involution of the algebra of random variables $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ is the complex conjugation $x^*=\bar x$, an involutive, isometric, conjugate-linear anti-automorphism that is an automorphism because the algebra is commutative. Its fixed elements are the **real random variables**, $\mathcal{A}_{sa}=L^\infty(\Omega,\mathbb P;\mathbb{R})$, every element decomposes uniquely as $x=\Re x+i\,\Im x$ with self-adjoint parts, the realness is equivalent to the vanishing of $\|x-x^*\|_2$, and the positive elements $x=y^*y$ form a proper convex cone with the modulus $|x|=(x^*x)^{1/2}$ and the polar decomposition $x=u|x|$. The expectation is a faithful state, the form $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ is a genuine inner product, and the involution is invariant under it; the self-adjoint part is a lattice with $x\vee y=\frac12(x+y+|x-y|)$, the algebra is a commutative von Neumann algebra, and its Gelfand description is the algebra of continuous functions on the character space with the conjugation. The spectral theorem gives every real $x$ a spectral measure and the functional calculus, and the law of $x$ is the scalar spectral measure with the moments $\digamma_{\mathrm{map}}(x^n)$. The non-commutative generalization is *Non-Commutative Probability and the Involutive Algebra of Random Variables*, the covariance is *The Covariance Function and Hermitian Positivity*, and the conjugate symmetry of the Fourier transform is *The Characteristic Function and Conjugate Symmetry*, both later in this category.
 
 ## Summary of Notation
 
@@ -151,8 +151,8 @@ The involution of the algebra of random variables $\mathcal{A}=L^\infty(\Omega,\
 | $x^*=\bar x$ | the involution, complex conjugation |
 | $\mathcal{A}_{sa}$ | the self-adjoint (real) random variables |
 | $\Re x=\frac12(x+x^*)$, $\Im x=\frac{1}{2i}(x-x^*)$ | real and imaginary parts |
-| $\varphi(x)=\mathbb E[x]$ | the state, faithful |
-| $\langle x,y\rangle=\varphi(xy^*)$ | the form of the category |
+| $\digamma_{\mathrm{map}}(x)=\mathbb E[x]$ | the state, faithful |
+| $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ | the form of the category |
 | $|x|=(x^*x)^{1/2}$, $x=u|x|$ | modulus and polar decomposition |
 | $\mathcal{A}_+=\{x^*x\}$ | the positive cone |
 | $x\vee y=\frac12(x+y+|x-y|)$ | the lattice operations |

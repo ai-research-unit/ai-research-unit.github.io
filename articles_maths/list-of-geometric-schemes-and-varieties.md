@@ -42,7 +42,7 @@ A variety is the classical geometric object: a reduced scheme of finite type ove
 | the projective variety and its homogeneous coordinate ring | the zero set in $\mathbb{P}^n_k$ of homogeneous polynomials | *Algebraic Geometry* |
 | the Zariski topology | the closed sets $V(\mathrm{A})$: quasicompact, Noetherian, not Hausdorff | *Algebraic Geometry* |
 | an irreducible variety | not the union of two proper closed subsets; the components are the maximal ones | *Algebraic Geometry* |
-| a morphism of varieties and its pullback | a polynomial map and the ring map $\varphi^* : k[Y] \to k[X]$ | *Algebraic Geometry* |
+| a morphism of varieties and its pullback | a polynomial map and the ring map $\digamma_{\mathrm{map}}^* : k[Y] \to k[X]$ | *Algebraic Geometry* |
 | the function field $k(X)$ | the fraction field of $k[X]$, of transcendence degree $\dim X$ | *Algebraic Geometry* |
 | a rational map and a birational map | a morphism on a dense open set; a rational map with a rational inverse | *Algebraic Geometry* |
 | the blow-up $X_{\mathrm{cov}} \to X$ | the birational map that replaces a subvariety by a divisor | *Algebraic Geometry* |

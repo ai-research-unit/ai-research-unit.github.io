@@ -176,7 +176,7 @@ The norm of a quaternion algebra is a twofold Pfister form, of dimension $4$, an
 **Definition.** Let $B = (a, b)_F \otimes_F (c, d)_F$ be a **biquaternion algebra** over $F$, the tensor product of two quaternion algebras, of dimension $16$ over $F$. This is the algebraists' sense of the word, and it is not the complex algebra $\mathbb{B}$ of the corpus; the collision of the two names is recorded in *Division Algebras*. The **Albert form** of $B$ is the form
 
 $$
-\phi_B = \langle a, b, -ab, -c, -d, cd\rangle ,
+\digamma_{\mathrm{map},B} = \langle a, b, -ab, -c, -d, cd\rangle ,
 $$
 
 of dimension $6$ over $F$.
@@ -184,20 +184,20 @@ of dimension $6$ over $F$.
 **Proposition.** The Albert form has trivial signed discriminant:
 
 $$
-\Delta(\phi_B) = a\,b\,(-ab)\,(-c)\,(-d)\,(cd) = -(abcd)^2 \equiv -1, \qquad d(\phi_B) = (-1)^{15}\Delta(\phi_B) = 1 .
+\Delta(\digamma_{\mathrm{map},B}) = a\,b\,(-ab)\,(-c)\,(-d)\,(cd) = -(abcd)^2 \equiv -1, \qquad d(\digamma_{\mathrm{map},B}) = (-1)^{15}\Delta(\digamma_{\mathrm{map},B}) = 1 .
 $$
 
-*Proof.* The product of the six entries is $(-1)^3 (abcd)^2$, so the discriminant is the square class of $-1$ whatever the parameters; the signed discriminant is $d(q) = (-1)^{n(n-1)/2}\Delta(q)$ of the section above, with $n = 6$, so $d(\phi_B) = (-1)^{15}\cdot(-1) = 1$.
+*Proof.* The product of the six entries is $(-1)^3 (abcd)^2$, so the discriminant is the square class of $-1$ whatever the parameters; the signed discriminant is $d(q) = (-1)^{n(n-1)/2}\Delta(q)$ of the section above, with $n = 6$, so $d(\digamma_{\mathrm{map},B}) = (-1)^{15}\cdot(-1) = 1$.
 
-**Theorem (Albert).** The biquaternion algebra $B = (a, b)_F \otimes_F (c, d)_F$ is a division algebra if and only if its Albert form $\phi_B$ is anisotropic over $F$.
+**Theorem (Albert).** The biquaternion algebra $B = (a, b)_F \otimes_F (c, d)_F$ is a division algebra if and only if its Albert form $\digamma_{\mathrm{map},B}$ is anisotropic over $F$.
 
-The statement is the dimension-$6$ companion of the corollary above, and its proof matches a zero divisor of $B$ with a nontrivial zero of $\phi_B$; it is cited as standard (Lam, *Introduction to Quadratic Forms over Fields*, III, Theorem 4.8). The criterion by which the anisotropy is decided over a local field is Springer's theorem, in *Local Fields*.
+The statement is the dimension-$6$ companion of the corollary above, and its proof matches a zero divisor of $B$ with a nontrivial zero of $\digamma_{\mathrm{map},B}$; it is cited as standard (Lam, *Introduction to Quadratic Forms over Fields*, III, Theorem 4.8). The criterion by which the anisotropy is decided over a local field is Springer's theorem, in *Local Fields*.
 
-**Remark (the index, read from the form).** When $\phi_B$ is isotropic, the index of $B$ is read from the type of isotropy, and the three cases exhaust the values the index can take:
+**Remark (the index, read from the form).** When $\digamma_{\mathrm{map},B}$ is isotropic, the index of $B$ is read from the type of isotropy, and the three cases exhaust the values the index can take:
 
-1. $B \cong M_4(F)$, of index $1$, exactly when $\phi_B$ is hyperbolic, that is $\phi_B \cong \langle 1, -1, 1, -1, 1, -1\rangle$;
-2. $B \cong \mathsf{M}_2(D)$ for a quaternion division algebra $D$, of index $2$, exactly when $\phi_B$ is isotropic but not hyperbolic, equivalently $\phi_B \cong \langle 1, -1, e, f, g, h\rangle$ with the four-dimensional form $\langle e, f, g, h\rangle$ anisotropic;
-3. $B$ is a division algebra, of index $4$, exactly when $\phi_B$ is anisotropic.
+1. $B \cong M_4(F)$, of index $1$, exactly when $\digamma_{\mathrm{map},B}$ is hyperbolic, that is $\digamma_{\mathrm{map},B} \cong \langle 1, -1, 1, -1, 1, -1\rangle$;
+2. $B \cong \mathsf{M}_2(D)$ for a quaternion division algebra $D$, of index $2$, exactly when $\digamma_{\mathrm{map},B}$ is isotropic but not hyperbolic, equivalently $\digamma_{\mathrm{map},B} \cong \langle 1, -1, e, f, g, h\rangle$ with the four-dimensional form $\langle e, f, g, h\rangle$ anisotropic;
+3. $B$ is a division algebra, of index $4$, exactly when $\digamma_{\mathrm{map},B}$ is anisotropic.
 
 **Remark (isomorphism).** Two biquaternion algebras over $F$ are isomorphic as $F$-algebras if and only if their Albert forms are **similar**, that is, isometric up to multiplication by a scalar from $F^\times$. This is the dimension-$6$ companion of the statement that two quaternion algebras are isomorphic exactly when their norm forms are isometric.
 
@@ -337,7 +337,7 @@ For a formally real field and an ordering $P$, extension to the real closure giv
 | $\langle\!\langle a_1, \ldots, a_n\rangle\!\rangle$ | $n$-fold Pfister form $\bigotimes_i \langle 1, -a_i\rangle$ |
 | $\pi$ | A Pfister form |
 | $B = (a,b)_F \otimes_F (c,d)_F$ | Biquaternion algebra, the tensor product of two quaternion algebras |
-| $\phi_B$ | Albert form $\langle a, b, -ab, -c, -d, cd\rangle$ of $B$, of dimension $6$ and trivial signed discriminant |
+| $\digamma_{\mathrm{map},B}$ | Albert form $\langle a, b, -ab, -c, -d, cd\rangle$ of $B$, of dimension $6$ and trivial signed discriminant |
 | $P$, $\operatorname{sign}_P$ | Ordering of a formally real field; the signature at $P$ |
 | $F_P$ | Real closure of $F$ at the ordering $P$ |
 | $\operatorname{sign}$ | Total signature, $W(F) \to \prod_P \mathbb{Z}$ |

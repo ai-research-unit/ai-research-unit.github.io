@@ -89,7 +89,7 @@ Thus $(\mathbb{N}, +, \cdot, 0, 1)$ is a commutative semiring with identity.
 
 ### The Universal Property
 
-**Theorem.** Let $(A, +, \cdot, 0_A, 1_A)$ be a commutative semiring with identity and let $a \in A$. Then there is a unique semiring homomorphism $\varphi : \mathbb{N} \to A$ with $\varphi(1) = 1_A$; it is given by $\varphi(n) = n \cdot 1_A$ and is the unique homomorphism of unital semirings. In particular $\mathbb{N}$ is the **initial object** in the category of commutative semirings with identity, and it is the free such semiring on the empty set of generators.
+**Theorem.** Let $(A, +, \cdot, 0_A, 1_A)$ be a commutative semiring with identity and let $a \in A$. Then there is a unique semiring homomorphism $\digamma_{\mathrm{map}} : \mathbb{N} \to A$ with $\digamma_{\mathrm{map}}(1) = 1_A$; it is given by $\digamma_{\mathrm{tot}}(n) = n \cdot 1_A$ and is the unique homomorphism of unital semirings. In particular $\mathbb{N}$ is the **initial object** in the category of commutative semirings with identity, and it is the free such semiring on the empty set of generators.
 
 **Proof.** The map $n \mapsto n\cdot 1_A$ is defined by recursion and is additive and multiplicative by the distributive and associative laws in $A$; uniqueness is forced because a unital semiring homomorphism must send $1$ to $1_A$ and preserve sums.
 

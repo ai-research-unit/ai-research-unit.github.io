@@ -6,7 +6,7 @@
 
 **The order matters.** The bracket comes first, then the ladder, then the vacuum and the state space, then the objects built on them: the Wick theorem, the functional integral, the generating functional, the determinant, the S-matrix, LSZ, the spin–statistics theorem and the group flow. A reader who starts at the S-matrix will not know which of the sixteen carries the postulate.
 
-**Where the postulate sits.** In the six canonical-quantisation articles, and nowhere else. They write $[\hat\phi,\hat\pi]=i \frac{h}{2\pi}\delta$, and the other ten use the result. The classical half of that equation is the family's, and [The Lagrangian and the Second Quantisation](the-lagrangian-and-the-second-quantisation.html) derives it from the action.
+**Where the postulate sits.** In the six canonical-quantisation articles, and nowhere else. They write $[\hat\xi_{\mathrm{pot}},\hat\pi]=i \frac{h}{2\pi}\delta$, and the other ten use the result. The classical half of that equation is the family's, and [The Lagrangian and the Second Quantisation](the-lagrangian-and-the-second-quantisation.html) derives it from the action.
 
 ## The Six Quantisations
 
@@ -49,7 +49,7 @@ Sixteen articles, four groups. The six quantisations carry the postulate; two bu
 
 | Symbol | Meaning |
 |---|---|
-| $\hat\phi,\hat\pi$ | field and conjugate momentum, promoted to operators |
+| $\hat\xi_{\mathrm{pot}},\hat\pi$ | field and conjugate momentum, promoted to operators |
 | $[\,,\,]$ | the commutator the promotion introduces |
 | $a,a^{\dagger}$ | annihilation and creation operators on the module |
 | $\mathcal F$ | Fock space, the symmetric or exterior algebra of the one-particle module |

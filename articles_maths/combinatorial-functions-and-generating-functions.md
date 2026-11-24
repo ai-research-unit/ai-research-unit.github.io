@@ -7,7 +7,7 @@ This is the fourth article of the Natural Numbers system in Part V, and it occup
 
 The corpus's default base is the commutative ring $R$ with identity $1 \neq 0$, and this article uses that base throughout: generating functions are elements of the formal power series ring $R[[x]]$, and the arithmetic functions take values in $R$. Two places require more than a commutative ring, and they are flagged where they occur: the reciprocal $(1 - x)^{-1}$ and the composition of formal power series require conditions on the constant terms, and the formal logarithm and exponential require that $R$ be a $\mathbb{Q}$-algebra, that is, that every positive integer be invertible. Coefficient extraction, the Cauchy product and Lagrange inversion need no such hypothesis.
 
-The general theory of rings and ideals is from *Rings*, and the theory of the formal power series ring is from *Formal Power Series and Completion*; the recursive definitions of the functions are from *The Natural Numbers*, and the arithmetic functions and their Dirichlet series are from *Analytic Number Theory*. The asymptotic estimates at the end of the article are real-valued statements about functions on $\mathbb{N}$, and they belong to the analytic side of the corpus; they are quoted from the standard literature and are marked as such. Throughout, a sequence $(a_n)_{n \geq 0}$ in $R$ has **ordinary generating function** $A(x) = \sum_{n \geq 0} a_n x^n$ and **exponential generating function** $\hat A(x) = \sum_{n \geq 0} a_n x^n / n!$, the latter requiring that $R$ be a $\mathbb{Q}$-algebra; $\mu$ is the Möbius function, $\varphi$ the Euler function, $\zeta$ the Riemann zeta function and $[x^n] A(x)$ the coefficient of $x^n$.
+The general theory of rings and ideals is from *Rings*, and the theory of the formal power series ring is from *Formal Power Series and Completion*; the recursive definitions of the functions are from *The Natural Numbers*, and the arithmetic functions and their Dirichlet series are from *Analytic Number Theory*. The asymptotic estimates at the end of the article are real-valued statements about functions on $\mathbb{N}$, and they belong to the analytic side of the corpus; they are quoted from the standard literature and are marked as such. Throughout, a sequence $(a_n)_{n \geq 0}$ in $R$ has **ordinary generating function** $A(x) = \sum_{n \geq 0} a_n x^n$ and **exponential generating function** $\hat A(x) = \sum_{n \geq 0} a_n x^n / n!$, the latter requiring that $R$ be a $\mathbb{Q}$-algebra; $\mu$ is the Möbius function, $\digamma_{\mathrm{map}}$ the Euler function, $\zeta$ the Riemann zeta function and $[x^n] A(x)$ the coefficient of $x^n$.
 
 ## Generating Functions
 
@@ -117,17 +117,17 @@ $$
 
 ### Partitions and the Pentagonal Theorem
 
-**Definition.** The **partition function** $p(n)$ counts the partitions of $n$ into positive parts, and **Euler's product** is $\phi(x) = \prod_{k \geq 1}(1 - x^k)$.
+**Definition.** The **partition function** $p(n)$ counts the partitions of $n$ into positive parts, and **Euler's product** is $\digamma_{\mathrm{map}}(x) = \prod_{k \geq 1}(1 - x^k)$.
 
 **Theorem (Euler).** The generating function of $p(n)$ is
 
 $$
-\sum_{n \geq 0} p(n) x^n = \prod_{k \geq 1} \frac{1}{1 - x^k} = \frac{1}{\phi(x)},
+\sum_{n \geq 0} p(n) x^n = \prod_{k \geq 1} \frac{1}{1 - x^k} = \frac{1}{\digamma_{\mathrm{map}}(x)},
 $$
 
 and Euler's pentagonal number theorem states
 
-$$ \boxed{\;\phi(x) = \prod_{k \geq 1}(1 - x^k) = \sum_{j \in \mathbb{Z}} (-1)^j x^{j(3j-1)/2} \;}.
+$$ \boxed{\;\digamma_{\mathrm{map}}(x) = \prod_{k \geq 1}(1 - x^k) = \sum_{j \in \mathbb{Z}} (-1)^j x^{j(3j-1)/2} \;}.
 $$
 
 **Proof.** The first identity is the expansion of each factor as a geometric series $1 + x^k + x^{2k} + \cdots$ and the collection of the contributions to $x^n$, each partition of $n$ contributing once. The pentagonal theorem is Euler's; the standard proof multiplies out the product and observes that the surviving terms are those in which the parts form a strictly decreasing then strictly decreasing-by-one pattern, giving the pentagonal exponents $j(3j\pm1)/2$ with signs $(-1)^j$.
@@ -166,9 +166,9 @@ $$
 
 **Proof.** Associativity and commutativity of the convolution follow from the reindexing of the divisors of a product; the identity is $\varepsilon$. The identity $\mu * \zeta = \varepsilon$ is verified at $n$ by grouping the divisors of $n$ according to their squarefree part, the alternating sum over the subsets of the primes dividing $n$ being $(1-1)^k = 0$ for $n > 1$. Möbius inversion is the statement that $\mu$ is the inverse of $\zeta$ in the convolution ring.
 
-**Theorem.** **Euler's totient function** $\varphi(n)$ satisfies $\sum_{d\mid n}\varphi(d) = n$ and $\sum_{n\geq 1} \varphi(n) n^{-s} = \zeta(s-1)/\zeta(s)$; the divisor function $\tau$, the sum-of-divisors function $\sigma$ and the Liouville function have the Dirichlet series $\zeta(s)^2$, $\zeta(s)\zeta(s-1)$ and $\zeta(2s)/\zeta(s)$ respectively.
+**Theorem.** **Euler's totient function** $\digamma_{\mathrm{tot}}(n)$ satisfies $\sum_{d\mid n}\digamma_{\mathrm{map}}(d) = n$ and $\sum_{n\geq 1} \digamma_{\mathrm{tot}}(n) n^{-s} = \zeta(s-1)/\zeta(s)$; the divisor function $\tau$, the sum-of-divisors function $\sigma$ and the Liouville function have the Dirichlet series $\zeta(s)^2$, $\zeta(s)\zeta(s-1)$ and $\zeta(2s)/\zeta(s)$ respectively.
 
-**Proof.** The divisor identity for $\varphi$ counts the elements of a cyclic group by their order; the Dirichlet series follow from the multiplicativity of the functions and the Euler product $\zeta(s) = \prod_p (1 - p^{-s})^{-1}$. The computations are in *Analytic Number Theory*.
+**Proof.** The divisor identity for $\digamma_{\mathrm{map}}$ counts the elements of a cyclic group by their order; the Dirichlet series follow from the multiplicativity of the functions and the Euler product $\zeta(s) = \prod_p (1 - p^{-s})^{-1}$. The computations are in *Analytic Number Theory*.
 
 ## Lagrange Inversion and Applications
 
@@ -259,12 +259,12 @@ $$
 **Corollary (necklaces).** The number of necklaces with $n$ beads and $k$ colours is
 
 $$
-N(n,k) = \frac{1}{n}\sum_{d \mid n} \varphi(d)\, k^{\,n/d},
+N(n,k) = \frac{1}{n}\sum_{d \mid n} \digamma_{\mathrm{map}}(d)\, k^{\,n/d},
 $$
 
 and the number of bracelets is obtained by adding the reversal to the group and applying the same formula to the dihedral group.
 
-**Proof.** The cyclic group $C_n$ acts on the $n$ positions; the rotations with $n/d$ cycles of length $d$ are counted by $\varphi(d)$, and Pólya's theorem with $k$ colours of weight $1$ gives the formula.
+**Proof.** The cyclic group $C_n$ acts on the $n$ positions; the rotations with $n/d$ cycles of length $d$ are counted by $\digamma_{\mathrm{map}}(d)$, and Pólya's theorem with $k$ colours of weight $1$ gives the formula.
 
 **Example.** With $n = 4$ and $k = 2$ the formula gives $\tfrac14(2^4 + 2^2 + 0 + 2^2) = 6$ necklaces, namely $0000$, $0001$, $0011$, $0101$, $0111$, $1111$; with the reversal included the bracelets still number $6$, because the reversal maps each of the six necklaces to a rotation of itself.
 
@@ -287,8 +287,8 @@ The binomial coefficients satisfy the Pascal identity, the binomial theorem and 
 | $S(n,k)$, $s(n,k)$ | Stirling numbers of the second, first kind |
 | $B_n$ | Bell number |
 | $C_n$, $C(x)$ | Catalan number and its generating function |
-| $p(n)$, $\phi(x)$ | Partition function, Euler's product $\prod(1-x^k)$ |
-| $\varphi(n)$ | Euler's totient function, the count of $k \leq n$ coprime to $n$ |
+| $p(n)$, $\digamma_{\mathrm{map}}(x)$ | Partition function, Euler's product $\prod(1-x^k)$ |
+| $\digamma_{\mathrm{tot}}(n)$ | Euler's totient function, the count of $k \leq n$ coprime to $n$ |
 | $\mu, \tau, \sigma$ | Möbius, divisor and sum-of-divisors functions |
 | $f * g$ | Dirichlet convolution |
 | $\varepsilon, \zeta$ | Unit and constant-one arithmetic functions, with Dirichlet series $\zeta(s)$ |

@@ -15,7 +15,7 @@ The treatment is honest about what is proved and what is quoted. The axioms, the
 
 The language of set theory is a first-order language, in the sense of *Logic and Proof*, with a single non-logical symbol, the binary relation $\in$, and no function or constant symbols. Its formulas are built from the atomic formulas $x \in y$ and $x = y$ by the connectives and quantifiers. A **set** is a value of the variables; the quantifiers range over all sets. The formula $x \subseteq y$ abbreviates $\forall z\,(z \in x \to z \in y)$, and $x = y$ is taken as a primitive, though the axiom of extensionality makes it equivalent to $\forall z\,(z \in x \leftrightarrow z \in y)$.
 
-A **class** is a collection defined by a formula $\varphi(x)$, written $\{x : \varphi(x)\}$, and is not in general a set: the class of all sets that are not members of themselves is a class, and the paradoxes show that it is not a set. Every set is a class, via the formula $x \in a$; a class that is not a set is a **proper class**. The distinction is not part of the formal language — classes are a convenient abbreviation for formulas — and the corpus uses it only as a shorthand. The standard convention is that a class $\{x : \varphi(x)\}$ may be substituted for a variable in any statement, by translating the statement into the formula $\varphi$.
+A **class** is a collection defined by a formula $\digamma_{\mathrm{fml}}(x)$, written $\{x : \digamma_{\mathrm{fml}}(x)\}$, and is not in general a set: the class of all sets that are not members of themselves is a class, and the paradoxes show that it is not a set. Every set is a class, via the formula $x \in a$; a class that is not a set is a **proper class**. The distinction is not part of the formal language — classes are a convenient abbreviation for formulas — and the corpus uses it only as a shorthand. The standard convention is that a class $\{x : \digamma_{\mathrm{fml}}(x)\}$ may be substituted for a variable in any statement, by translating the statement into the formula $\digamma_{\mathrm{fml}}$.
 
 ### The Zermelo–Fraenkel Axioms
 
@@ -25,8 +25,8 @@ The following sentences are the **Zermelo–Fraenkel axioms**; together with the
 2. **Pairing.** For all $a, b$ there is a set $c$ whose elements are exactly $a$ and $b$: $\forall a \forall b \exists c \forall z\,(z \in c \leftrightarrow z = a \vee z = b)$. The unordered pair is written $\{a,b\}$, and the singleton $\{a\} = \{a,a\}$.
 3. **Union.** For every $a$ there is a set $\bigcup a$ with $z \in \bigcup a \leftrightarrow \exists y\,(y \in a \wedge z \in y)$.
 4. **Power set.** For every $a$ there is a set $\mathcal{P}(a)$ with $z \in \mathcal{P}(a) \leftrightarrow z \subseteq a$.
-5. **Separation.** For every $a$ and every formula $\varphi(z, \vec{p})$, there is a set $b$ with $z \in b \leftrightarrow z \in a \wedge \varphi(z,\vec{p})$. The set is $\{z \in a : \varphi(z, \vec{p})\}$.
-6. **Replacement.** For every formula $\varphi(x,y,\vec{p})$ that is functional in $x$, and every $a$, there is a set $b$ whose elements are the values $y$ for $x \in a$: the image of a set under a definable function is a set.
+5. **Separation.** For every $a$ and every formula $\digamma_{\mathrm{fml}}(z, \vec{p})$, there is a set $b$ with $z \in b \leftrightarrow z \in a \wedge \digamma_{\mathrm{fml}}(z,\vec{p})$. The set is $\{z \in a : \digamma_{\mathrm{fml}}(z, \vec{p})\}$.
+6. **Replacement.** For every formula $\digamma_{\mathrm{fml}}(x,y,\vec{p})$ that is functional in $x$, and every $a$, there is a set $b$ whose elements are the values $y$ for $x \in a$: the image of a set under a definable function is a set.
 7. **Infinity.** There is a set containing $\emptyset$ and closed under $z \mapsto z \cup \{z\}$.
 8. **Foundation (regularity).** Every nonempty set $a$ has an element disjoint from it: no set is a member of itself, and there are no infinite descending membership chains.
 9. **Choice.** For every set $a$ whose elements are nonempty and pairwise disjoint, there is a set $c$ meeting each element of $a$ in exactly one point.
@@ -191,15 +191,15 @@ The hierarchy is the picture of the set-theoretic universe that the corpus presu
 
 ### The Reflection Principle
 
-**Theorem (reflection, schema).** For every formula $\varphi(x_1,\ldots,x_n)$ and every ordinal $\alpha$ there is an ordinal $\beta > \alpha$ such that, for all $a_1,\ldots,a_n \in V_\beta$,
+**Theorem (reflection, schema).** For every formula $\digamma_{\mathrm{fml}}(x_1,\ldots,x_n)$ and every ordinal $\alpha$ there is an ordinal $\beta > \alpha$ such that, for all $a_1,\ldots,a_n \in V_\beta$,
 
 $$
-\boxed{\;\varphi(a_1,\ldots,a_n) \iff \varphi^{V_\beta}(a_1,\ldots,a_n)\;},
+\boxed{\;\digamma_{\mathrm{fml}}(a_1,\ldots,a_n) \iff \digamma_{\mathrm{fml}}^{V_\beta}(a_1,\ldots,a_n)\;},
 $$
 
-where $\varphi^{V_\beta}$ is $\varphi$ with every quantifier relativised to $V_\beta$.
+where $\digamma_{\mathrm{fml}}^{V_\beta}$ is $\digamma_{\mathrm{fml}}$ with every quantifier relativised to $V_\beta$.
 
-**Proof sketch.** The proof is a syntactic induction on $\varphi$, using the absoluteness of $\Delta_0$ formulas and the existence of a closure ordinal for each existential quantifier: for a formula $\exists y\,\psi(y,x_1,\ldots,x_n)$, one collects, for each tuple in a given $V_\beta$, a witness $y$ of smallest rank and takes the supremum of the ranks, iterating $\omega$ times to close under all subformulas. The argument is a theorem of ZFC and belongs to the metatheory of set theory; the arithmetisation of syntax and the metatheoretic techniques used to state it are developed and revisited.
+**Proof sketch.** The proof is a syntactic induction on $\digamma_{\mathrm{fml}}$, using the absoluteness of $\Delta_0$ formulas and the existence of a closure ordinal for each existential quantifier: for a formula $\exists y\,\digamma_{\mathrm{fml}}(y,x_1,\ldots,x_n)$, one collects, for each tuple in a given $V_\beta$, a witness $y$ of smallest rank and takes the supremum of the ranks, iterating $\omega$ times to close under all subformulas. The argument is a theorem of ZFC and belongs to the metatheory of set theory; the arithmetisation of syntax and the metatheoretic techniques used to state it are developed and revisited.
 
 The reflection principle is the reason a set is a faithful miniature of the universe for any finite list of formulas, and it is the technical heart of the constructions of model theory. It is stated here because it is the bridge between this article and the logical layer that follows.
 
@@ -266,7 +266,7 @@ The cumulative hierarchy $V_\alpha$ is built by iterated power sets and unions; 
 | $\bigcup a$, $\bigcap a$ | Union and intersection of the elements of $a$ |
 | $\emptyset$ | Empty set |
 | $\omega$ | The least infinite ordinal, the set of natural numbers |
-| $\{x : \varphi(x)\}$ | Class defined by a formula; proper class if not a set |
+| $\{x : \digamma_{\mathrm{fml}}(x)\}$ | Class defined by a formula; proper class if not a set |
 | $\alpha, \beta, \gamma, \lambda$ | Ordinals |
 | $\mathrm{On}$ | Proper class of all ordinals |
 | $\alpha + 1 = \alpha \cup \{\alpha\}$ | Successor ordinal |
@@ -277,7 +277,7 @@ The cumulative hierarchy $V_\alpha$ is built by iterated power sets and unions; 
 | $V_\alpha$, $V$ | Cumulative hierarchy and its union |
 | $\operatorname{rk}(x)$ | Rank of $x$: least $\alpha$ with $x \in V_{\alpha+1}$ |
 | $L_\alpha$, $L$ | Constructible hierarchy and the constructible universe |
-| $\varphi^{V_\beta}$ | Relativisation of $\varphi$ to $V_\beta$ |
+| $\digamma_{\mathrm{fml}}^{V_\beta}$ | Relativisation of $\digamma_{\mathrm{fml}}$ to $V_\beta$ |
 | $\mathbb{P}$, $G$, $M[G]$ | Forcing conditions, generic filter, generic extension |
 | ZF, ZFC | Zermelo–Fraenkel axioms; with the axiom of choice |
 

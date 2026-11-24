@@ -223,7 +223,7 @@ The ratio theorem is the statement that the two averages have the same asymptoti
 
 ### Orbit Equivalence and Dye's Theorem
 
-**Definition.** Two measure-preserving actions of countable groups $G$ and $H$ on standard probability spaces $(X,\mu)$ and $(Y,\nu)$ are **orbit-equivalent** if there is a measure-preserving isomorphism $\phi : X \to Y$ modulo null sets carrying the $G$-orbits onto the $H$-orbits: $\phi(Gx) = H\phi(x)$ for a.e. $x$.
+**Definition.** Two measure-preserving actions of countable groups $G$ and $H$ on standard probability spaces $(X,\mu)$ and $(Y,\nu)$ are **orbit-equivalent** if there is a measure-preserving isomorphism $\digamma_{\mathrm{map}} : X \to Y$ modulo null sets carrying the $G$-orbits onto the $H$-orbits: $\digamma_{\mathrm{map}}(Gx) = H\digamma_{\mathrm{map}}(x)$ for a.e. $x$.
 
 Orbit equivalence forgets the group and retains only the equivalence relation of lying in a common orbit; it is the coarsest equivalence relation between actions that preserves the measure-theoretic dynamics, and it is the reason amenable groups are interchangeable from the measure-theoretic point of view.
 

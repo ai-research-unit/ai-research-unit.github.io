@@ -16,17 +16,17 @@ Nothing below is a statement of physics. The units are $e_t,\vec e_x,\vec e_y,\v
 
 ## The Sixteen Bilinears
 
-**Definition.** Fix a basis $E_1,\dots,E_{16}$ of the operator space, self-adjoint for the trace form. For a spinor $\psi$ the **bilinear covariants** are the sixteen numbers
+**Definition.** Fix a basis $E_1,\dots,E_{16}$ of the operator space, self-adjoint for the trace form. For a spinor $Ξ_{\mathrm{wfn}}$ the **bilinear covariants** are the sixteen numbers
 
 $$
-\beta_i(\psi)=\langle\psi,E_i\psi\rangle,\qquad i=1,\dots,16,
+\beta_i(Ξ_{\mathrm{wfn}})=\langleΞ_{\mathrm{wfn}},E_iΞ_{\mathrm{wfn}}\rangle,\qquad i=1,\dots,16,
 $$
 
-and the **aggregate** is the operator $Z(\psi)=\sum_i\beta_i(\psi)E^i$, where $E^i$ is the dual basis for the trace form.
+and the **aggregate** is the operator $Z(Ξ_{\mathrm{wfn}})=\sum_i\beta_i(Ξ_{\mathrm{wfn}})E^i$, where $E^i$ is the dual basis for the trace form.
 
-**Proposition.** The aggregate is the operator of rank one $Z(\psi)\eta=\psi\,\langle\psi,\eta\rangle$. Its image is the line of $\psi$, its square is $qZ$ with $q=\langle\psi,\psi\rangle$, and the sixteen bilinears are its coefficients.
+**Proposition.** The aggregate is the operator of rank one $Z(Ξ_{\mathrm{wfn}})\eta=Ξ_{\mathrm{wfn}}\,\langleΞ_{\mathrm{wfn}},\eta\rangle$. Its image is the line of $Ξ_{\mathrm{wfn}}$, its square is $qZ$ with $q=\langleΞ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}}\rangle$, and the sixteen bilinears are its coefficients.
 
-*Proof.* The right side is linear in $\eta$ and its value is a multiple of $\psi$, so its image is the line of $\psi$ and it is of rank one. Composing it with itself multiplies the scalar by $\langle\psi,\psi\rangle$, which is $q$. The coefficients of the operator in the dual basis are the values $\langle\psi,E_i\psi\rangle$ by the definition of the dual basis.
+*Proof.* The right side is linear in $\eta$ and its value is a multiple of $Ξ_{\mathrm{wfn}}$, so its image is the line of $Ξ_{\mathrm{wfn}}$ and it is of rank one. Composing it with itself multiplies the scalar by $\langleΞ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}}\rangle$, which is $q$. The coefficients of the operator in the dual basis are the values $\langleΞ_{\mathrm{wfn}},E_iΞ_{\mathrm{wfn}}\rangle$ by the definition of the dual basis.
 
 **Corollary.** The sixteen bilinears are the coefficients of an operator of rank one, so they number sixteen but describe a spinor of four coordinates and a phase.
 
@@ -36,7 +36,7 @@ and the **aggregate** is the operator $Z(\psi)=\sum_i\beta_i(\psi)E^i$, where $E
 
 ## The Identities
 
-**Theorem (Fierz–Kofink).** For every spinor $\psi$ the sixteen bilinears satisfy
+**Theorem (Fierz–Kofink).** For every spinor $Ξ_{\mathrm{wfn}}$ the sixteen bilinears satisfy
 
 $$
 \sum_{ij}\beta_i\beta_j\,E^iE^j=q\sum_i\beta_iE^i,
@@ -88,7 +88,7 @@ and they refine the classes at the two ends only.
 
 **Corollary.** A spinor has a type, the type of the operator its bilinears build, and the type is constant on the orbit of the spinor under the group.
 
-*Proof.* The aggregate is built from the spinor by a formula invariant under the group, so the group carries the aggregate of $\psi$ to the aggregate of $g\psi$, and the two are conjugate.
+*Proof.* The aggregate is built from the spinor by a formula invariant under the group, so the group carries the aggregate of $Ξ_{\mathrm{wfn}}$ to the aggregate of $gΞ_{\mathrm{wfn}}$, and the two are conjugate.
 
 **The reading.** The classification is the orbit classification under another name, and the invariants that separate the classes are the coefficients of the characteristic polynomial together with the pattern of coincidences among them.
 

@@ -88,7 +88,7 @@ $$
 
 ## The Quotient by the Involution
 
-**Definition.** Let $X$ be a variety with a real structure and let $G = \{\mathrm{id},\sigma\}$. A **quotient** of $X$ by $\sigma$ is a variety $X/\sigma$ over $k$ with a morphism $\pi : X\to X/\sigma$ over $k$ such that $\pi\circ\sigma = \pi$ and such that every morphism $\psi : X\to Y$ over $k$ with $\psi\circ\sigma = \psi$ factors uniquely as $\psi = \phi\circ\pi$. When such a quotient exists it is unique, and it is the **categorical quotient**.
+**Definition.** Let $X$ be a variety with a real structure and let $G = \{\mathrm{id},\sigma\}$. A **quotient** of $X$ by $\sigma$ is a variety $X/\sigma$ over $k$ with a morphism $\pi : X\to X/\sigma$ over $k$ such that $\pi\circ\sigma = \pi$ and such that every morphism $Ξ_{\mathrm{wfn}} : X\to Y$ over $k$ with $Ξ_{\mathrm{wfn}}\circ\sigma = Ξ_{\mathrm{wfn}}$ factors uniquely as $Ξ_{\mathrm{wfn}} = \digamma_{\mathrm{map}}\circ\pi$. When such a quotient exists it is unique, and it is the **categorical quotient**.
 
 **Theorem (the quotient of an affine variety).** Let $X = \operatorname{Spec}A$ and let $\mathrm{J}$ be the involution of $A$. Then the **invariant ring** $A^\mathrm{J} = \{a\in A : \mathrm{J}(a) = a\}$ is a finitely generated $k$-algebra when $A$ is finitely generated over $k$, the morphism
 $$
@@ -96,7 +96,7 @@ $$
 $$
 induced by the inclusion $A^\mathrm{J}\hookrightarrow A$ is a quotient by $\sigma$, and $\pi_*\mathcal{O}_X^\sigma = \mathcal{O}_{\operatorname{Spec}A^\mathrm{J}}$.
 
-*Proof.* The invariants of a finitely generated algebra under a finite group action form a finitely generated algebra, by Noether's theorem as in Part I's *Invariant Theory*; the map $\pi$ is invariant because $\mathrm{J}|_{A^\mathrm{J}} = \mathrm{id}$, and the universal property is the universal property of the invariants: a $\mathrm{J}$-invariant map $\psi^\flat : A\to B$ lands in $B^\sigma$ only if its image is fixed, and it factors uniquely through $A^\mathrm{J}$ by the universal property of the subalgebra. The identification of the pushforward is the definition of the structure sheaf of $\operatorname{Spec}A^\mathrm{J}$.
+*Proof.* The invariants of a finitely generated algebra under a finite group action form a finitely generated algebra, by Noether's theorem as in Part I's *Invariant Theory*; the map $\pi$ is invariant because $\mathrm{J}|_{A^\mathrm{J}} = \mathrm{id}$, and the universal property is the universal property of the invariants: a $\mathrm{J}$-invariant map $Ξ_{\mathrm{wfn}}^\flat : A\to B$ lands in $B^\sigma$ only if its image is fixed, and it factors uniquely through $A^\mathrm{J}$ by the universal property of the subalgebra. The identification of the pushforward is the definition of the structure sheaf of $\operatorname{Spec}A^\mathrm{J}$.
 
 **Theorem (the general quotient, stated).** Let a finite group $G$ act on a variety $X$ over $k$ by $k$-automorphisms. Then the quotient $X/G$ exists as a variety when $X$ is quasi-projective, the morphism $\pi : X\to X/G$ is finite and surjective, and the structure sheaf of the quotient is the sheaf of invariants $\mathcal{O}_{X/G} = (\pi_*\mathcal{O}_X)^G$. The quotient by an involution is the case $G = \mathbb{Z}/2$.
 

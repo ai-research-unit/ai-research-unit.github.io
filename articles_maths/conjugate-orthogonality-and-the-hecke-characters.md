@@ -37,21 +37,21 @@ a product of local characters $\chi_v:K_v^\times\to\mathbb{T}$ almost all of whi
 
 **Theorem (orthogonality).** Let $G$ be a compact abelian group with normalised Haar measure and dual $\widehat G$. Then
 $$
-\boxed{\;\int_G\chi(g)\overline{\psi(g)}\,dg=\delta_{\chi\psi},\qquad \sum_{\chi\in\widehat G}\chi(g)\overline{\chi(h)}=\delta_{gh}\;},
+\boxed{\;\int_G\chi(g)\overline{Ξ_{\mathrm{wfn}}(g)}\,dg=\delta_{\chiΞ_{\mathrm{wfn}}},\qquad \sum_{\chi\in\widehat G}\chi(g)\overline{\chi(h)}=\delta_{gh}\;},
 $$
 where the second identity holds in the appropriate sense for the discrete dual and is the **second orthogonality** relation.
 
-**Proof.** For $\chi\ne\psi$ the function $\chi\overline\psi$ is a nontrivial character and its integral vanishes by the invariance of the measure; for $\chi=\psi$ the integral is $1$. The second relation is the dual statement, in *Abstract Harmonic Analysis*.
+**Proof.** For $\chi\neΞ_{\mathrm{wfn}}$ the function $\chi\overlineΞ_{\mathrm{wfn}}$ is a nontrivial character and its integral vanishes by the invariance of the measure; for $\chi=Ξ_{\mathrm{wfn}}$ the integral is $1$. The second relation is the dual statement, in *Abstract Harmonic Analysis*.
 
 **Definition.** The **conjugate orthogonality pairing** on the Hecke characters is the Hermitian form
 $$
-\langle\chi,\psi\rangle=\lim_{T\to\infty}\frac{1}{T}\int_{C_K^T}\chi\,\overline\psi\,d\mu ,
+\langle\chi,Ξ_{\mathrm{wfn}}\rangle=\lim_{T\to\infty}\frac{1}{T}\int_{C_K^T}\chi\,\overlineΞ_{\mathrm{wfn}}\,d\mu ,
 $$
-the limit over the growing compact subgroups $C_K^T$ of the idèle class group; it is well defined on the characters of bounded conductor and it is $\delta_{\chi\psi}$.
+the limit over the growing compact subgroups $C_K^T$ of the idèle class group; it is well defined on the characters of bounded conductor and it is $\delta_{\chiΞ_{\mathrm{wfn}}}$.
 
 **Theorem.** For Hecke characters of bounded conductor the conjugate orthogonality holds, and for the Dirichlet characters modulo $m$ it specialises to
 $$
-\frac{1}{\varphi(m)}\sum_{a\in(\mathbb{Z}/m)^\times}\chi(a)\overline{\psi(a)}=\delta_{\chi\psi}.
+\frac{1}{\digamma_{\mathrm{map}}(m)}\sum_{a\in(\mathbb{Z}/m)^\times}\chi(a)\overline{Ξ_{\mathrm{wfn}}(a)}=\delta_{\chiΞ_{\mathrm{wfn}}}.
 $$
 
 **Proof.** The first statement is the orthogonality applied to the compact group $(C_K)_T$ and the passage to the limit; the specialisation is the identification of the Dirichlet characters with the characters of $(\mathbb{Z}/m)^\times$ and the orthogonality of the finite abelian group, in *Algebraic Number Theory*.
@@ -80,7 +80,7 @@ The orthogonality fails in four degenerate configurations. First, for characters
 
 ## Summary
 
-A Hecke character of a number field is a continuous homomorphism from the idèle class group to the circle group, factoring as a product of local characters; for $\mathbb{Q}$ these are the Dirichlet characters. The characters satisfy the conjugate orthogonality $\langle\chi,\psi\rangle=\delta_{\chi\psi}$, which specialises for the Dirichlet characters modulo $m$ to $\frac1{\varphi(m)}\sum_a\chi(a)\overline{\psi(a)}=\delta_{\chi\psi}$, and the arithmetic content of the pairing is the conductor-discriminant formula, $\mathfrak{d}_{L/K}=\prod_\chi\mathfrak{f}(\chi)$, which expresses the discriminant of an abelian extension as the product of the conductors of its characters. The degenerate cases are the characters of unbounded conductor, the archimedean ramification, the quasi-characters and the nonabelian generalisation.
+A Hecke character of a number field is a continuous homomorphism from the idèle class group to the circle group, factoring as a product of local characters; for $\mathbb{Q}$ these are the Dirichlet characters. The characters satisfy the conjugate orthogonality $\langle\chi,Ξ_{\mathrm{wfn}}\rangle=\delta_{\chiΞ_{\mathrm{wfn}}}$, which specialises for the Dirichlet characters modulo $m$ to $\frac1{\digamma_{\mathrm{map}}(m)}\sum_a\chi(a)\overline{Ξ_{\mathrm{wfn}}(a)}=\delta_{\chiΞ_{\mathrm{wfn}}}$, and the arithmetic content of the pairing is the conductor-discriminant formula, $\mathfrak{d}_{L/K}=\prod_\chi\mathfrak{f}(\chi)$, which expresses the discriminant of an abelian extension as the product of the conductors of its characters. The degenerate cases are the characters of unbounded conductor, the archimedean ramification, the quasi-characters and the nonabelian generalisation.
 
 ## Summary of Notation
 
@@ -92,7 +92,7 @@ A Hecke character of a number field is a continuous homomorphism from the idèle
 | $\mathfrak{f}(\chi)$ | Conductor |
 | $L(s,\chi)$ | Hecke $L$-function |
 | $W(\chi)$ | Root number |
-| $\langle\chi,\psi\rangle=\delta_{\chi\psi}$ | Conjugate orthogonality |
+| $\langle\chi,Ξ_{\mathrm{wfn}}\rangle=\delta_{\chiΞ_{\mathrm{wfn}}}$ | Conjugate orthogonality |
 | $\mathfrak{d}_{L/K}=\prod_\chi\mathfrak{f}(\chi)$ | Conductor-discriminant formula |
 | $\widehat G$ | Dual group |
 

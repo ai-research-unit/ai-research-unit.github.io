@@ -496,23 +496,23 @@ is independent of the azimuth of $\vec u_{\mathrm r}$ around $\vec u_{\mathrm b}
 **Proposition (the eigenvalues do not determine the word).** For $\theta_{\mathrm{rpd}}>0$, $\theta_{\mathrm{axr}}\notin\{0,2\pi\}$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$, the family
 
 $$
-\boxed{\; \tilde U(\varphi)=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
-\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}(\varphi)\Bigr),
+\boxed{\; \tilde U(\digamma_{\mathrm{map}})=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
+\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}(\digamma_{\mathrm{map}})\Bigr),
 \qquad
-\vec u_{\mathrm r}(\varphi)\perp\vec u_{\mathrm b} \;},
+\vec u_{\mathrm r}(\digamma_{\mathrm{map}})\perp\vec u_{\mathrm b} \;},
 $$
 
-has constant eigenvalues $\lambda_\pm=\varrho e^{i\theta_{\mathrm{pha}}}(U_t\pm i(\vec U\cdot\vec U)^{1/2})$, but the eigenprojections and the polar axes vary with $\varphi$.
+has constant eigenvalues $\lambda_\pm=\varrho e^{i\theta_{\mathrm{pha}}}(U_t\pm i(\vec U\cdot\vec U)^{1/2})$, but the eigenprojections and the polar axes vary with $\digamma_{\mathrm{map}}$.
 
-*Proof.* The scalar part is $\operatorname{Sc}\tilde U=\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)$, independent of $\varphi$, and the determinant is one; hence $U_t$ and $U_t^2+\vec U\cdot\vec U=1$ are constant, and the two eigenvalues are constant. The vector part of $\tilde U(\varphi)$ is
+*Proof.* The scalar part is $\operatorname{Sc}\tilde U=\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)$, independent of $\digamma_{\mathrm{map}}$, and the determinant is one; hence $U_t$ and $U_t^2+\vec U\cdot\vec U=1$ are constant, and the two eigenvalues are constant. The vector part of $\tilde U(\digamma_{\mathrm{map}})$ is
 
 $$
-\cosh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}(\varphi)
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}(\digamma_{\mathrm{map}})
 +i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}
-+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}(\varphi),
++i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}(\digamma_{\mathrm{map}}),
 $$
 
-which depends on $\varphi$; hence the eigenprojection depends on $\varphi$. The polar axis $\vec u_{\mathrm r}(\varphi)$ is the variable itself.
+which depends on $\digamma_{\mathrm{map}}$; hence the eigenprojection depends on $\digamma_{\mathrm{map}}$. The polar axis $\vec u_{\mathrm r}(\digamma_{\mathrm{map}})$ is the variable itself.
 
 This is the structural difference from the split-complex and reduced biquaternion articles: there the eigenprojections are fixed, and the eigenvalues determine the polar parameters. Here the eigenvalues determine the scalar factor and the two eigenvalues of the unit factor, and the eigenprojections determine the rest.
 

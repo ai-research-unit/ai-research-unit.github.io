@@ -131,29 +131,29 @@ Both columns agree to the seven decimals printed, a residual below $5\times10^{-
 
 ## Transformation Properties
 
-The distinction the words "size" and "density" carry is a distinction under boosts, so the two numbers must be followed through one. Take an $N$-regular element $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}(c_h+is_h\vec u_{\mathrm b})$ with $c_h=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$, $s_h=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$, and act on the left by a boost factor of rapidity $\phi$ about the real unit axis $\vec u_{\phi}$,
+The distinction the words "size" and "density" carry is a distinction under boosts, so the two numbers must be followed through one. Take an $N$-regular element $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}(c_h+is_h\vec u_{\mathrm b})$ with $c_h=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$, $s_h=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$, and act on the left by a boost factor of rapidity $\xi_{\mathrm{pot}}$ about the real unit axis $\vec u_{\xi_{\mathrm{pot}}}$,
 
 $$
-\tilde U_{\mathrm b}(\phi,\vec u_{\phi})=\cosh\frac{\phi}{2}+i\sinh\frac{\phi}{2}\vec u_{\phi} .
+\tilde U_{\mathrm b}(\xi_{\mathrm{pot}},\vec u_{\xi_{\mathrm{pot}}})=\cosh\frac{\xi_{\mathrm{pot}}}{2}+i\sinh\frac{\xi_{\mathrm{pot}}}{2}\vec u_{\xi_{\mathrm{pot}}} .
 $$
 
-The modulus does not move. $N(\tilde U_{\mathrm b}\tilde\Xi)=N(\tilde U_{\mathrm b})N(\tilde\Xi)$ and $N(\tilde U_{\mathrm b})=\cosh^{2}\frac\phi2-\sinh^{2}\frac\phi2=1$, so
+The modulus does not move. $N(\tilde U_{\mathrm b}\tilde\Xi)=N(\tilde U_{\mathrm b})N(\tilde\Xi)$ and $N(\tilde U_{\mathrm b})=\cosh^{2}\frac\xi_{\mathrm{pot}}2-\sinh^{2}\frac\xi_{\mathrm{pot}}2=1$, so
 
 $$
 \lvert N(\tilde\Xi')\rvert=\lvert N(\tilde\Xi)\rvert=\varrho^{2}:\quad\text{the invariant length is invariant.}
 $$
 
-The Euclidean size moves as a time component. With $\chi$ the angle between $\vec u_{\mathrm b}$ and $\vec u_{\phi}$,
+The Euclidean size moves as a time component. With $\chi$ the angle between $\vec u_{\mathrm b}$ and $\vec u_{\xi_{\mathrm{pot}}}$,
 
 $$
-\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi\Bigr),
+\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\cosh\xi_{\mathrm{pot}}+\sinh\theta_{\mathrm{rpd}}\sinh\xi_{\mathrm{pot}}\cos\chi\Bigr),
 $$
 
-which is $\gamma_\phi\bigl(u_{t}+\beta_\phi\,\vec u_{\phi}\cdot\vec u\bigr)$ for the four-velocity $u_{\imath}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$, its temporal component first and all indices low, scaled by $\varrho^{2}$. The two special cases are the memorable ones: for a boost along the flow, $\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\cosh(\theta_{\mathrm{rpd}}+\phi)$, the rapidity adding; for a boost perpendicular to it, $\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}\cosh\phi$, the two Lorentz factors multiplying. *Proof and residuals: §*Appendix: The Algebra*, §*The Boost Composition*.*
+which is $\gamma_\xi_{\mathrm{pot}}\bigl(u_{t}+\beta_\xi_{\mathrm{pot}}\,\vec u_{\xi_{\mathrm{pot}}}\cdot\vec u\bigr)$ for the four-velocity $u_{\imath}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$, its temporal component first and all indices low, scaled by $\varrho^{2}$. The two special cases are the memorable ones: for a boost along the flow, $\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\cosh(\theta_{\mathrm{rpd}}+\xi_{\mathrm{pot}})$, the rapidity adding; for a boost perpendicular to it, $\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}\cosh\xi_{\mathrm{pot}}$, the two Lorentz factors multiplying. *Proof and residuals: §*Appendix: The Algebra*, §*The Boost Composition*.*
 
 So the ratio is the flow's Lorentz factor and transforms as one. $\langle\tilde\Xi\rangle_{*}/\lvert N\rvert=\cosh\theta_{\mathrm{rpd}}$ is the time component of the four-velocity, and the sentence "the Euclidean size is the coordinate density" is the statement that a coordinate density is a time component. $\lvert N\rvert$ is a scalar of the theory; $\langle\cdot\rangle_{*}$ is not, and the phrase "the field's size" is therefore misleading wherever it appears in the block: the field has no Lorentz-invariant Euclidean size, it has an invariant modulus and a frame-dependent time component.
 
-Verified on five angles and three boosts. With $\varrho=1$, $\theta_{\mathrm{rpd}}=1.0986$, $\phi=0.7$, the measured $\langle\tilde\Xi'\rangle_{*}$ and the displayed law agree to $1.3\times10^{-15}$ at $\chi=0^{\circ},30^{\circ},60^{\circ},90^{\circ},180^{\circ}$, and $\lvert N\rvert$ stays at $1$ to $2\times10^{-16}$ throughout.
+Verified on five angles and three boosts. With $\varrho=1$, $\theta_{\mathrm{rpd}}=1.0986$, $\xi_{\mathrm{pot}}=0.7$, the measured $\langle\tilde\Xi'\rangle_{*}$ and the displayed law agree to $1.3\times10^{-15}$ at $\chi=0^{\circ},30^{\circ},60^{\circ},90^{\circ},180^{\circ}$, and $\lvert N\rvert$ stays at $1$ to $2\times10^{-16}$ throughout.
 
 ## The Element's Size Is the Current's Time Component
 
@@ -318,7 +318,7 @@ On the cone the ratio has no value and the pair does. $\rho_{\mathrm{num}}\to0$,
 | $\varrho$ | the word's scale, with $\varrho^{2}=\lvert N(\tilde\Xi)\rvert$ |
 | $\theta_{\mathrm{pha}}$ | the central phase of the word |
 | $\theta_{\mathrm{rpd}}$ | the boost's rapidity, with $\gamma=\cosh\theta_{\mathrm{rpd}}$ |
-| $\phi$, $\vec u_{\phi}$ | the rapidity of an applied boost and its real unit axis |
+| $\xi_{\mathrm{pot}}$, $\vec u_{\xi_{\mathrm{pot}}}$ | the rapidity of an applied boost and its real unit axis |
 | $\chi$ | the angle between that axis and the flow's axis $\vec u_{\mathrm b}$ |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | the proper density, the invariant length of the current over $c$ |
 | $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | the coordinate density, $j_0/c$ |
@@ -381,33 +381,33 @@ For the modulus, $N$ is multiplicative, by the theorem of [N-Regularity and N-De
 
 ### The Boost Composition
 
-Claim. For $\tilde\Xi$ with rapidity $\theta_{\mathrm{rpd}}$ about the real unit axis $\vec u_{\mathrm b}$ and a boost of rapidity $\phi$ about the real unit axis $\vec u_{\phi}$, with $\cos\chi=\vec u_{\mathrm b}\cdot\vec u_{\phi}$,
+Claim. For $\tilde\Xi$ with rapidity $\theta_{\mathrm{rpd}}$ about the real unit axis $\vec u_{\mathrm b}$ and a boost of rapidity $\xi_{\mathrm{pot}}$ about the real unit axis $\vec u_{\xi_{\mathrm{pot}}}$, with $\cos\chi=\vec u_{\mathrm b}\cdot\vec u_{\xi_{\mathrm{pot}}}$,
 
 $$
-\langle\tilde U_{\mathrm b}(\phi,\vec u_{\phi})\tilde\Xi\rangle_{*}=\varrho^{2}\bigl(\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi\bigr),
+\langle\tilde U_{\mathrm b}(\xi_{\mathrm{pot}},\vec u_{\xi_{\mathrm{pot}}})\tilde\Xi\rangle_{*}=\varrho^{2}\bigl(\cosh\theta_{\mathrm{rpd}}\cosh\xi_{\mathrm{pot}}+\sinh\theta_{\mathrm{rpd}}\sinh\xi_{\mathrm{pot}}\cos\chi\bigr),
 \qquad
-\lvert N(\tilde U_{\mathrm b}(\phi,\vec u_{\phi})\tilde\Xi)\rvert=\varrho^{2}.
+\lvert N(\tilde U_{\mathrm b}(\xi_{\mathrm{pot}},\vec u_{\xi_{\mathrm{pot}}})\tilde\Xi)\rvert=\varrho^{2}.
 $$
 
-*Proof.* The modulus is multiplicative and $N(\tilde U_{\mathrm b})=\cosh^{2}\frac\phi2-\sinh^{2}\frac\phi2=1$. For the size, write $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}(c_h+is_h\vec u_{\mathrm b})$ and $\tilde U_{\mathrm b}=c_\phi+is_\phi\vec u_{\phi}$. The product is
+*Proof.* The modulus is multiplicative and $N(\tilde U_{\mathrm b})=\cosh^{2}\frac\xi_{\mathrm{pot}}2-\sinh^{2}\frac\xi_{\mathrm{pot}}2=1$. For the size, write $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}(c_h+is_h\vec u_{\mathrm b})$ and $\tilde U_{\mathrm b}=c_\xi_{\mathrm{pot}}+is_\xi_{\mathrm{pot}}\vec u_{\xi_{\mathrm{pot}}}$. The product is
 
 $$
-e^{i\theta_{\mathrm{pha}}}\Bigl[\bigl(c_hc_\phi-s_hs_\phi\,\vec u_{\mathrm b}\vec u_{\phi}\bigr)+i\bigl(c_hs_\phi\vec u_{\phi}+s_hc_\phi\vec u_{\mathrm b}\bigr)\Bigr].
+e^{i\theta_{\mathrm{pha}}}\Bigl[\bigl(c_hc_\xi_{\mathrm{pot}}-s_hs_\xi_{\mathrm{pot}}\,\vec u_{\mathrm b}\vec u_{\xi_{\mathrm{pot}}}\bigr)+i\bigl(c_hs_\xi_{\mathrm{pot}}\vec u_{\xi_{\mathrm{pot}}}+s_hc_\xi_{\mathrm{pot}}\vec u_{\mathrm b}\bigr)\Bigr].
 $$
 
-Since $\vec u_{\mathrm b}\vec u_{\phi}=-\cos\chi+\vec u_{\mathrm b}\times\vec u_{\phi}$, with the cross product orthogonal to both axes, the product splits into three pieces:
+Since $\vec u_{\mathrm b}\vec u_{\xi_{\mathrm{pot}}}=-\cos\chi+\vec u_{\mathrm b}\times\vec u_{\xi_{\mathrm{pot}}}$, with the cross product orthogonal to both axes, the product splits into three pieces:
 
 $$
-\underbrace{\bigl(c_hc_\phi+s_hs_\phi\cos\chi\bigr)}_{\text{real scalar}}-s_hs_\phi\,\vec u_{\mathrm b}\times\vec u_{\phi}+i\underbrace{\bigl(c_hs_\phi\vec u_{\phi}+s_hc_\phi\vec u_{\mathrm b}\bigr)}_{\text{real vector}} .
+\underbrace{\bigl(c_hc_\xi_{\mathrm{pot}}+s_hs_\xi_{\mathrm{pot}}\cos\chi\bigr)}_{\text{real scalar}}-s_hs_\xi_{\mathrm{pot}}\,\vec u_{\mathrm b}\times\vec u_{\xi_{\mathrm{pot}}}+i\underbrace{\bigl(c_hs_\xi_{\mathrm{pot}}\vec u_{\xi_{\mathrm{pot}}}+s_hc_\xi_{\mathrm{pot}}\vec u_{\mathrm b}\bigr)}_{\text{real vector}} .
 $$
 
 Each piece is a real scalar, a real vector, or $i$ times a real vector, and the three are mutually orthogonal in the eight real coordinates, so the Euclidean size is the sum of their squared lengths:
 
 $$
-\frac{\langle\tilde U_{\mathrm b}\tilde\Xi\rangle_{*}}{\varrho^{2}}=(c_hc_\phi+s_hs_\phi\cos\chi)^{2}+s_h^{2}s_\phi^{2}\sin^{2}\chi+\bigl(c_h^{2}s_\phi^{2}+s_h^{2}c_\phi^{2}+2c_hs_hc_\phi s_\phi\cos\chi\bigr).
+\frac{\langle\tilde U_{\mathrm b}\tilde\Xi\rangle_{*}}{\varrho^{2}}=(c_hc_\xi_{\mathrm{pot}}+s_hs_\xi_{\mathrm{pot}}\cos\chi)^{2}+s_h^{2}s_\xi_{\mathrm{pot}}^{2}\sin^{2}\chi+\bigl(c_h^{2}s_\xi_{\mathrm{pot}}^{2}+s_h^{2}c_\xi_{\mathrm{pot}}^{2}+2c_hs_hc_\xi_{\mathrm{pot}} s_\xi_{\mathrm{pot}}\cos\chi\bigr).
 $$
 
-Adding the $\cos^{2}\chi$ and $\sin^{2}\chi$ terms, the first and third pieces give $c_h^{2}(c_\phi^{2}+s_\phi^{2})+s_h^{2}(c_\phi^{2}+s_\phi^{2})=(c_h^{2}+s_h^{2})\cosh\phi$, and the two cross terms give $4c_hs_hc_\phi s_\phi\cos\chi$. With $c_h^{2}+s_h^{2}=\cosh\theta_{\mathrm{rpd}}$ and $2c_hs_h=\sinh\theta_{\mathrm{rpd}}$, $2c_\phi s_\phi=\sinh\phi$, the total is $\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi$. That is the time component of $u_{\imath}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$ under a boost of rapidity $\phi$ about $\vec u_{\phi}$, multiplied by $\varrho^{2}$.
+Adding the $\cos^{2}\chi$ and $\sin^{2}\chi$ terms, the first and third pieces give $c_h^{2}(c_\xi_{\mathrm{pot}}^{2}+s_\xi_{\mathrm{pot}}^{2})+s_h^{2}(c_\xi_{\mathrm{pot}}^{2}+s_\xi_{\mathrm{pot}}^{2})=(c_h^{2}+s_h^{2})\cosh\xi_{\mathrm{pot}}$, and the two cross terms give $4c_hs_hc_\xi_{\mathrm{pot}} s_\xi_{\mathrm{pot}}\cos\chi$. With $c_h^{2}+s_h^{2}=\cosh\theta_{\mathrm{rpd}}$ and $2c_hs_h=\sinh\theta_{\mathrm{rpd}}$, $2c_\xi_{\mathrm{pot}} s_\xi_{\mathrm{pot}}=\sinh\xi_{\mathrm{pot}}$, the total is $\cosh\theta_{\mathrm{rpd}}\cosh\xi_{\mathrm{pot}}+\sinh\theta_{\mathrm{rpd}}\sinh\xi_{\mathrm{pot}}\cos\chi$. That is the time component of $u_{\imath}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$ under a boost of rapidity $\xi_{\mathrm{pot}}$ about $\vec u_{\xi_{\mathrm{pot}}}$, multiplied by $\varrho^{2}$.
 
 ### The Scalar Part of the Current
 
@@ -423,9 +423,9 @@ All residuals are on the quantities named and were computed from the eight real 
 | --- | --- | --- |
 | the Lagrange identity | $\langle\cdot\rangle_{*}^{2}-\lvert N\rvert^{2}-4A^{2}$ on $20000$ random elements | $5.7\times10^{-13}$ |
 | the polar ratio | $\langle\cdot\rangle_{*}/\lvert N\rvert$ against $\cosh\theta_{\mathrm{rpd}}$, three elements | $\lt 5\times10^{-8}$ |
-| the boost, collinear | $\varrho^{2}\cosh(\theta+\phi)$, $\phi\in\{0,0.5493,1.2\}$ | $1.8\times10^{-15}$ |
-| the boost, perpendicular | $\varrho^{2}\cosh\theta\cosh\phi$, $\phi\in\{0.5493,1.2\}$ | $8.9\times10^{-16}$ |
-| the boost, five angles | $\chi\in\{0,30,60,90,180\}^{\circ}$, $\phi=0.7$ | $1.3\times10^{-15}$ |
+| the boost, collinear | $\varrho^{2}\cosh(\theta+\xi_{\mathrm{pot}})$, $\xi_{\mathrm{pot}}\in\{0,0.5493,1.2\}$ | $1.8\times10^{-15}$ |
+| the boost, perpendicular | $\varrho^{2}\cosh\theta\cosh\xi_{\mathrm{pot}}$, $\xi_{\mathrm{pot}}\in\{0.5493,1.2\}$ | $8.9\times10^{-16}$ |
+| the boost, five angles | $\chi\in\{0,30,60,90,180\}^{\circ}$, $\xi_{\mathrm{pot}}=0.7$ | $1.3\times10^{-15}$ |
 | the modulus under a boost | $\lvert N\rvert$ before and after | $2.2\times10^{-16}$ |
 | the current | $\mathrm{Sc}(\tilde J_\Phi)/(ic)$ against $\langle\cdot\rangle_{*}$ | $4.4\times10^{-16}$ |
 

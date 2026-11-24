@@ -34,7 +34,7 @@ of real dimension four.
 
 **The action.** $\operatorname{Ad}_U$ for $U$ unitary preserves the adjoint: $(UAU^{\dagger})^{\dagger}=UA^{\dagger}U^{\dagger}$, so it preserves both halves and acts on $\mathfrak{u}(2)$ by conjugation.
 
-**The rotation.** On $\mathfrak{su}(2)$ the action is the rotation. The map $\mathrm{SU}(2)\to\mathrm{SO}(3)$ is onto with kernel $\{\pm\mathrm I_2\}$, and $\mathrm{U}(2)\to\mathrm{SO}(3)$ has kernel the central circle $\{e^{i\varphi}\mathrm I_2\}$.
+**The rotation.** On $\mathfrak{su}(2)$ the action is the rotation. The map $\mathrm{SU}(2)\to\mathrm{SO}(3)$ is onto with kernel $\{\pm\mathrm I_2\}$, and $\mathrm{U}(2)\to\mathrm{SO}(3)$ has kernel the central circle $\{e^{i\digamma_{\mathrm{map}}}\mathrm I_2\}$.
 
 ## The Star and the Two Halves
 

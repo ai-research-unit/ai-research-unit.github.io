@@ -44,7 +44,7 @@ $$
 \ell_\lambda(ax)(b) = \lambda(axb) = \ell_\lambda(x)(ba) = (a \cdot \ell_\lambda(x))(b),
 $$
 
-where the left $A$-module structure on $A^*$ is $(a\cdot f)(b) = f(ba)$; so a Frobenius functional gives an isomorphism ${}_A A \to {}_A A^*$, and conversely any isomorphism is $\ell_\lambda$ for $\lambda = \varphi(1)$. The right-hand statement is identical with the opposite module structure, so 3 is equivalent to 1 and 2. Statement 4 is the non-degeneracy condition rewritten, since $\ell_\lambda$ is injective exactly when the left annihilator of $\lambda$ is zero.
+where the left $A$-module structure on $A^*$ is $(a\cdot f)(b) = f(ba)$; so a Frobenius functional gives an isomorphism ${}_A A \to {}_A A^*$, and conversely any isomorphism is $\ell_\lambda$ for $\lambda = \digamma_{\mathrm{map}}(1)$. The right-hand statement is identical with the opposite module structure, so 3 is equivalent to 1 and 2. Statement 4 is the non-degeneracy condition rewritten, since $\ell_\lambda$ is injective exactly when the left annihilator of $\lambda$ is zero.
 
 **Corollary (self-injectivity).** A Frobenius algebra $A$ is **quasi-Frobenius**: every projective left $A$-module is injective, and every injective left $A$-module is projective, so a left $A$-module is projective if and only if it is injective.
 

@@ -40,7 +40,7 @@ and the $\mathbb{C}$-linear structure of $B(H)$ is recovered from the real struc
 
 ## The Order and the Order Unit
 
-**Definition.** For $S,T\in B(H)_{\mathrm{sa}}$ the relation $S\le T$ means $T-S\ge0$; a linear functional $\varphi$ on a real vector space $V$ with a cone $V_+$ is **positive** if $\varphi(V_+)\subseteq[0,\infty)$, and an **order unit** is an element $e$ such that for every $v$ there is $\lambda>0$ with $-\lambda e\le v\le\lambda e$.
+**Definition.** For $S,T\in B(H)_{\mathrm{sa}}$ the relation $S\le T$ means $T-S\ge0$; a linear functional $\digamma_{\mathrm{map}}$ on a real vector space $V$ with a cone $V_+$ is **positive** if $\digamma_{\mathrm{map}}(V_+)\subseteq[0,\infty)$, and an **order unit** is an element $e$ such that for every $v$ there is $\lambda>0$ with $-\lambda e\le v\le\lambda e$.
 
 **Theorem (the order is a partial order with order unit).** The relation $\le$ is a partial order on $B(H)_{\mathrm{sa}}$, compatible with addition and with multiplication by positive scalars; it is antisymmetric, it is not total in dimension at least two, and the identity $I$ is an order unit, since
 
@@ -60,7 +60,7 @@ and the order unit is the smallest positive operator dominating every operator o
 
 *Proof.* The inequality $-\|T\|I\le T\le\|T\|I$ gives the infimum no larger than $\|T\|$; conversely $-\lambda I\le T\le\lambda I$ gives $|\langle Tx,x\rangle|\le\lambda\|x\|^2$ and hence $\|T\|\le\lambda$ by the norm formula, so the infimum is exactly $\|T\|$.
 
-**Proposition (positivity of the form).** A linear functional $\varphi$ on $B(H)_{\mathrm{sa}}$ is positive exactly when it is of the form $T\mapsto\sum_k\langle Tx_k,x_k\rangle$ for a sequence with $\sum\|x_k\|^2<\infty$ (the normal case) or is a weak limit of such; the positive functionals are the states, and the order is the dual order induced by the cone of positive operators.
+**Proposition (positivity of the form).** A linear functional $\digamma_{\mathrm{map}}$ on $B(H)_{\mathrm{sa}}$ is positive exactly when it is of the form $T\mapsto\sum_k\langle Tx_k,x_k\rangle$ for a sequence with $\sum\|x_k\|^2<\infty$ (the normal case) or is a weak limit of such; the positive functionals are the states, and the order is the dual order induced by the cone of positive operators.
 
 *Proof.* The functionals $T\mapsto\langle Tx,x\rangle$ are positive, the sums of positives are positive, and the weak limits of positives are positive; conversely every positive functional on the self-adjoint part of a $C^*$-algebra extends to a positive functional on the algebra, which is of the stated form in the normal case by the standard representation theory for $B(H)$.
 

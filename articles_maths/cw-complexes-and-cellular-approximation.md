@@ -16,14 +16,14 @@ Throughout, $D^n = \{x \in \mathbb{R}^n : |x| \leq 1\}$ is the closed unit disc,
 **Definition.** A **CW complex** is a pair $(X, \mathcal{E})$ where $X$ is a topological space and $\mathcal{E} = \coprod_{n \geq 0} \mathcal{E}_n$ is a family of maps, the **attaching maps**,
 
 $$
-\varphi_\alpha : D^n \longrightarrow X, \qquad \alpha \in \mathcal{E}_n,
+\digamma_{\mathrm{map},\alpha} : D^n \longrightarrow X, \qquad \alpha \in \mathcal{E}_n,
 $$
 
-such that, writing $e^n_\alpha = \varphi_\alpha(\mathring D^n)$ for the associated **open $n$-cell**:
+such that, writing $e^n_\alpha = \digamma_{\mathrm{map},\alpha}(\mathring D^n)$ for the associated **open $n$-cell**:
 
-1. the restriction $\varphi_\alpha|_{\mathring D^n}$ is a homeomorphism onto $e^n_\alpha$, and $X$ is the disjoint union of the cells $e^n_\alpha$;
+1. the restriction $\digamma_{\mathrm{map},\alpha}|_{\mathring D^n}$ is a homeomorphism onto $e^n_\alpha$, and $X$ is the disjoint union of the cells $e^n_\alpha$;
 2. the **closure finiteness** condition: for each $n$ and $\alpha$ the closure $\overline{e^n_\alpha}$ meets only finitely many cells;
-3. the **weak topology** condition: a subset $A \subseteq X$ is closed if and only if $A \cap \overline{e^n_\alpha}$ is closed for every cell, equivalently $\varphi_\alpha^{-1}(A)$ is closed in $D^n$ for every attaching map.
+3. the **weak topology** condition: a subset $A \subseteq X$ is closed if and only if $A \cap \overline{e^n_\alpha}$ is closed for every cell, equivalently $\digamma_{\mathrm{map},\alpha}^{-1}(A)$ is closed in $D^n$ for every attaching map.
 
 The **$n$-skeleton** is $X^n = \bigcup_{k \leq n} \bigcup_{\alpha \in \mathcal{E}_k} e^k_\alpha$, a closed subspace; the space is **finite-dimensional** of dimension $n$ if $\mathcal{E}_k = \varnothing$ for $k > n$ and $\mathcal{E}_n \neq \varnothing$, and **finite** if $\mathcal{E}$ is finite. The **dimension** of $X$ is the supremum of the dimensions of its cells.
 
@@ -35,7 +35,7 @@ $$
 \coprod_{\alpha \in \mathcal{E}_n} S^{n-1} \longrightarrow X^{n-1}, \qquad \coprod_{\alpha \in \mathcal{E}_n} D^n \longrightarrow X^n,
 $$
 
-in which the left vertical map is the inclusion of the boundary and the upper horizontal map is the restriction of the attaching maps, is a pushout in the category of topological spaces: $X^n$ is the quotient of the disjoint union $X^{n-1} \sqcup \coprod_\alpha D^n$ by the identification $x \sim \varphi_\alpha(x)$ for $x \in S^{n-1}$, and the topology is the quotient topology.
+in which the left vertical map is the inclusion of the boundary and the upper horizontal map is the restriction of the attaching maps, is a pushout in the category of topological spaces: $X^n$ is the quotient of the disjoint union $X^{n-1} \sqcup \coprod_\alpha D^n$ by the identification $x \sim \digamma_{\mathrm{map},\alpha}(x)$ for $x \in S^{n-1}$, and the topology is the quotient topology.
 
 *Proof.* The quotient description is a restatement of the construction; the quotient topology is the weak topology because a set is closed in the quotient exactly when its preimage in each $D^n$ and in $X^{n-1}$ is closed.
 
@@ -102,7 +102,7 @@ zero when there are no $n$-cells. The boundary is defined from the attaching map
 **Definition (cellular boundary).** For an $n$-cell $e^n_\alpha$ let $q_\beta : X^{n-1} \to X^{n-1}/(X^{n-2} \cup \text{other } (n-1)\text{-cells}) \cong S^{n-1}$ be the collapse onto the closed $(n-1)$-cell $e^{n-1}_\beta$, a sphere because the cell is a disc modulo its boundary. The **cellular boundary** of $e^n_\alpha$ is
 
 $$
-\partial_n(e^n_\alpha) = \sum_{\beta \in \mathcal{E}_{n-1}} \deg\bigl(q_\beta \circ \varphi_\alpha|_{S^{n-1}}\bigr)\, e^{n-1}_\beta,
+\partial_n(e^n_\alpha) = \sum_{\beta \in \mathcal{E}_{n-1}} \deg\bigl(q_\beta \circ \digamma_{\mathrm{map},\alpha}|_{S^{n-1}}\bigr)\, e^{n-1}_\beta,
 $$
 
 the sum being finite by closure finiteness. For $n = 0$ the boundary is zero, and for $n = 1$ the sum counts signed endpoints, the degree of a map $S^0 \to S^0$ being $+1$ or $-1$ according as the map preserves or interchanges the two points.
@@ -117,10 +117,10 @@ $$
 
 ### The Boundary Formula
 
-**Theorem (cellular boundary formula).** For an $n$-cell $e^n_\alpha$ with attaching map $\varphi_\alpha$ and an $(n-1)$-cell $e^{n-1}_\beta$, the coefficient of $e^{n-1}_\beta$ in $\partial_n e^n_\alpha$ is the degree of the composite
+**Theorem (cellular boundary formula).** For an $n$-cell $e^n_\alpha$ with attaching map $\digamma_{\mathrm{map},\alpha}$ and an $(n-1)$-cell $e^{n-1}_\beta$, the coefficient of $e^{n-1}_\beta$ in $\partial_n e^n_\alpha$ is the degree of the composite
 
 $$
-S^{n-1} \xrightarrow{\ \varphi_\alpha|_{S^{n-1}}\ } X^{n-1} \xrightarrow{\ q_\beta\ } S^{n-1},
+S^{n-1} \xrightarrow{\ \digamma_{\mathrm{map},\alpha}|_{S^{n-1}}\ } X^{n-1} \xrightarrow{\ q_\beta\ } S^{n-1},
 $$
 
 where $q_\beta$ collapses $X^{n-1} \setminus e^{n-1}_\beta$ to a point.
@@ -187,14 +187,14 @@ The cellular chain complex is free on the cells in each degree, with boundary gi
 | Symbol | Meaning |
 |---|---|
 | $D^n$, $S^{n-1} = \partial D^n$, $\mathring D^n$ | Closed disc, its boundary sphere, its interior |
-| $\varphi_\alpha : D^n \to X$ | Attaching map of a cell |
-| $e^n_\alpha = \varphi_\alpha(\mathring D^n)$ | Open $n$-cell |
+| $\digamma_{\mathrm{map},\alpha} : D^n \to X$ | Attaching map of a cell |
+| $e^n_\alpha = \digamma_{\mathrm{map},\alpha}(\mathring D^n)$ | Open $n$-cell |
 | $X^n$ | $n$-skeleton; $\bigcup_{k \leq n} X^k$ |
 | $X/A$ | Quotient by a subcomplex; collapsible when $(X,A)$ has the HEP |
 | $(X,A)$ has the HEP | Homotopy extension property; equivalently the inclusion is a cofibration |
 | $\deg f$, $f : S^n \to S^n$ | Degree; the integer with $f_* = \deg f \cdot \mathrm{id}$ on $H_n(S^n)$ |
 | $C_n^{\mathrm{CW}}(X) = \mathbb{Z}[\mathcal{E}_n]$ | Cellular chains, free on the $n$-cells |
-| $\partial_n$ | Cellular boundary; $\partial_n e^n_\alpha = \sum_\beta \deg(q_\beta \varphi_\alpha) e^{n-1}_\beta$ |
+| $\partial_n$ | Cellular boundary; $\partial_n e^n_\alpha = \sum_\beta \deg(q_\beta \digamma_{\mathrm{map},\alpha}) e^{n-1}_\beta$ |
 | $q_\beta$ | Collapse of $X^{n-1}$ onto the cell $e^{n-1}_\beta$ |
 | $H_n^{\mathrm{CW}}(X)$ | Homology of the cellular complex, $\cong H_n(X)$ |
 | $\chi(X) = \sum_n (-1)^n \#\mathcal{E}_n$ | Euler characteristic; equals $\sum_n(-1)^n\operatorname{rk}H_n(X)$ |

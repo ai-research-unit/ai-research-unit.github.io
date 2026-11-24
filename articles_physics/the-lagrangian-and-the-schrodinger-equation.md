@@ -125,7 +125,7 @@ $$
 
 a form the companion article uses, because there the parameters are real and the variation cannot be complexified.
 
-**Why the kinetic term is antisymmetrized.** The symmetric combination $\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)$ is complex. Its real part is a total derivative, $\mathrm{Re}\,\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)=\tfrac14\partial\rho$ with $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\,\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})$, and its imaginary part is the whole of the kinetic Lagrangian. The antisymmetrization keeps the imaginary part and discards the total derivative, which is the same device as in the standard action $\int\bigl[(i\frac{h}{2\pi 2})(\psi^{*}\dot\psi-\dot\psi^{*}\psi)-\psi^{*}\hat H\psi\bigr]$. The companion uses the same identity once, in its kinetic term, and the identity is not repeated there.
+**Why the kinetic term is antisymmetrized.** The symmetric combination $\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)$ is complex. Its real part is a total derivative, $\mathrm{Re}\,\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)=\tfrac14\partial\rho$ with $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\,\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})$, and its imaginary part is the whole of the kinetic Lagrangian. The antisymmetrization keeps the imaginary part and discards the total derivative, which is the same device as in the standard action $\int\bigl[(i\frac{h}{2\pi 2})(Ξ_{\mathrm{wfn}}^{*}\dotΞ_{\mathrm{wfn}}-\dotΞ_{\mathrm{wfn}}^{*}Ξ_{\mathrm{wfn}})-Ξ_{\mathrm{wfn}}^{*}\hat HΞ_{\mathrm{wfn}}\bigr]$. The companion uses the same identity once, in its kinetic term, and the identity is not repeated there.
 
 ### The Two Settings
 

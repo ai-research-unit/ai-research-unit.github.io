@@ -29,22 +29,22 @@ $$
 **Definition.** For a left $A$-module $M$ the **dual module** is $M^{*} = \operatorname{Hom}_A(M,A)$, with the left action
 
 $$
-(a \cdot \varphi)(x) = \varphi(x)\,\sigma(a) .
+(a \cdot \digamma_{\mathrm{map}})(x) = \digamma_{\mathrm{map}}(x)\,\sigma(a) .
 $$
 
 **Proposition.** $M^{*}$ is a left $A$-module under the action above, and the **evaluation pairing**
 
 $$
-\boxed{\;\langle \cdot,\cdot\rangle : M^{*} \times M \longrightarrow A, \qquad \langle \varphi,x\rangle = \varphi(x)\;} ,
+\boxed{\;\langle \cdot,\cdot\rangle : M^{*} \times M \longrightarrow A, \qquad \langle \digamma_{\mathrm{map}},x\rangle = \digamma_{\mathrm{map}}(x)\;} ,
 $$
 
-satisfies $\langle a\cdot\varphi,x\rangle = \langle\varphi,x\rangle\sigma(a)$ and $\langle\varphi,a\cdot x\rangle = a\langle\varphi,x\rangle$; it is $\sigma$-sesquilinear in this sense, and it is non-degenerate when $M$ is free of finite rank.
+satisfies $\langle a\cdot\digamma_{\mathrm{map}},x\rangle = \langle\digamma_{\mathrm{map}},x\rangle\sigma(a)$ and $\langle\digamma_{\mathrm{map}},a\cdot x\rangle = a\langle\digamma_{\mathrm{map}},x\rangle$; it is $\sigma$-sesquilinear in this sense, and it is non-degenerate when $M$ is free of finite rank.
 
-**Proof.** For the module axioms, $a\cdot(b\cdot\varphi)(x) = (b\cdot\varphi)(x)\sigma(a) = \varphi(x)\sigma(b)\sigma(a) = \varphi(x)\sigma(ab) = (ab)\cdot\varphi(x)$, and $1\cdot\varphi = \varphi$. For the sesquilinearity, the two displayed identities are the definitions of the two actions; non-degeneracy for a free module of finite rank is the statement that a functional is determined by its values on a basis and that every assignment on a basis extends, so a functional vanishing on all of $M$ is $0$ and a vector killed by all functionals is $0$.
+**Proof.** For the module axioms, $a\cdot(b\cdot\digamma_{\mathrm{map}})(x) = (b\cdot\digamma_{\mathrm{map}})(x)\sigma(a) = \digamma_{\mathrm{map}}(x)\sigma(b)\sigma(a) = \digamma_{\mathrm{map}}(x)\sigma(ab) = (ab)\cdot\digamma_{\mathrm{map}}(x)$, and $1\cdot\digamma_{\mathrm{map}} = \digamma_{\mathrm{map}}$. For the sesquilinearity, the two displayed identities are the definitions of the two actions; non-degeneracy for a free module of finite rank is the statement that a functional is determined by its values on a basis and that every assignment on a basis extends, so a functional vanishing on all of $M$ is $0$ and a vector killed by all functionals is $0$.
 
-**Proposition (the dual functor).** For a homomorphism $f : M \to N$ of left $A$-modules the **transpose** $f^{*} : N^{*} \to M^{*}$, $f^{*}\psi = \psi \circ f$, is a homomorphism of left $A$-modules, $(g f)^{*} = f^{*}g^{*}$ and $\mathrm{id}^{*} = \mathrm{id}$; the dual is therefore a contravariant functor from left $A$-modules to left $A$-modules, and it is the ring-level form of the transposition of *The Transpose of a Linear Map*.
+**Proposition (the dual functor).** For a homomorphism $f : M \to N$ of left $A$-modules the **transpose** $f^{*} : N^{*} \to M^{*}$, $f^{*}Ξ_{\mathrm{wfn}} = Ξ_{\mathrm{wfn}} \circ f$, is a homomorphism of left $A$-modules, $(g f)^{*} = f^{*}g^{*}$ and $\mathrm{id}^{*} = \mathrm{id}$; the dual is therefore a contravariant functor from left $A$-modules to left $A$-modules, and it is the ring-level form of the transposition of *The Transpose of a Linear Map*.
 
-**Proof.** Additivity and $\sigma$-compatibility of $f^{*}\psi$ are the definitions; the composition law and the identity law are the same computation as for vector spaces, $(g f)^{*}\psi = \psi g f = f^{*}(g^{*}\psi)$.
+**Proof.** Additivity and $\sigma$-compatibility of $f^{*}Ξ_{\mathrm{wfn}}$ are the definitions; the composition law and the identity law are the same computation as for vector spaces, $(g f)^{*}Ξ_{\mathrm{wfn}} = Ξ_{\mathrm{wfn}} g f = f^{*}(g^{*}Ξ_{\mathrm{wfn}})$.
 
 ## The Induced Involution on the Endomorphisms
 
@@ -60,11 +60,11 @@ $$
 
 **Remark (the general ring: an automorphism, not an involution).** Over a non-commutative ring the map $A \mapsto \sigma(A)^{\mathsf{T}}$ is the composite of the anti-automorphism $\sigma$ and the anti-isomorphism transpose, hence an **automorphism** of order two, not an involution in the corpus sense; the anti-automorphism of order two on the endomorphism ring of a free module over a general involutive ring is the transpose alone, $A \mapsto A^{\mathsf{T}}$, which needs no involution. The involution of the endomorphism ring that the pairings produce, and its classification, are *Involutions of the Endomorphism Algebra*, and the sesquilinear pairing that identifies $M$ with $M^{*}$ and turns the transpose into an adjoint is *Hilbert Algebras*.
 
-**Remark (the diagram of the two dualities).** The dual functor and the twist fit together: the double dual of a module over an involutive ring recovers the module only through an identification $M \cong M^{**}$ given by the evaluation $\varphi \mapsto \varphi(x)$, which is $\sigma$-semilinear on the module variable; the comparison of the dual duality with the pairing duality is the content of *The Involution on the Dual Operator* for the linear case.
+**Remark (the diagram of the two dualities).** The dual functor and the twist fit together: the double dual of a module over an involutive ring recovers the module only through an identification $M \cong M^{**}$ given by the evaluation $\digamma_{\mathrm{map}} \mapsto \digamma_{\mathrm{map}}(x)$, which is $\sigma$-semilinear on the module variable; the comparison of the dual duality with the pairing duality is the content of *The Involution on the Dual Operator* for the linear case.
 
 ## Summary
 
-A ring $A$ with involution $\sigma$ turns every left $A$-module $M$ into a right $A$-module $M^{\sigma}$ by $x\cdot a = \sigma(a)x$, and the construction is an exact contravariant equivalence between left and right modules; over a commutative ring the twisted action is again a left action. The dual $M^{*} = \operatorname{Hom}_A(M,A)$ is a left $A$-module under $(a\cdot\varphi)(x) = \varphi(x)\sigma(a)$, and the evaluation pairing is $\sigma$-sesquilinear, non-degenerate for a free module of finite rank; the transpose $f \mapsto f^{*}$ is a contravariant functor. On the endomorphism ring of the free module $A^{n}$, identified with $M_n(A)$, the map $A \mapsto \sigma(A)^{\mathsf{T}}$ is additive of order two; it is an involution of the matrix ring over a commutative ring, with the $\sigma$-self-adjoint and the unitary matrices as its fixed and its unitary elements, and over a general ring it is an automorphism of order two, the anti-involution being the transpose alone. The pairing-based involution of the endomorphism algebra and the forms themselves are objects of the `*`-operator group and of Part II.
+A ring $A$ with involution $\sigma$ turns every left $A$-module $M$ into a right $A$-module $M^{\sigma}$ by $x\cdot a = \sigma(a)x$, and the construction is an exact contravariant equivalence between left and right modules; over a commutative ring the twisted action is again a left action. The dual $M^{*} = \operatorname{Hom}_A(M,A)$ is a left $A$-module under $(a\cdot\digamma_{\mathrm{map}})(x) = \digamma_{\mathrm{map}}(x)\sigma(a)$, and the evaluation pairing is $\sigma$-sesquilinear, non-degenerate for a free module of finite rank; the transpose $f \mapsto f^{*}$ is a contravariant functor. On the endomorphism ring of the free module $A^{n}$, identified with $M_n(A)$, the map $A \mapsto \sigma(A)^{\mathsf{T}}$ is additive of order two; it is an involution of the matrix ring over a commutative ring, with the $\sigma$-self-adjoint and the unitary matrices as its fixed and its unitary elements, and over a general ring it is an automorphism of order two, the anti-involution being the transpose alone. The pairing-based involution of the endomorphism algebra and the forms themselves are objects of the `*`-operator group and of Part II.
 
 ## Summary of Notation
 
@@ -76,9 +76,9 @@ A ring $A$ with involution $\sigma$ turns every left $A$-module $M$ into a right
 | $M$ | a left $A$-module |
 | $M^{\sigma}$ | the twisted right module, $x\cdot a=\sigma(a)x$ |
 | $M^{*}=\operatorname{Hom}_A(M,A)$ | the dual module |
-| $(a\cdot\varphi)(x)=\varphi(x)\sigma(a)$ | the left action on the dual |
-| $\langle\varphi,x\rangle=\varphi(x)$ | the evaluation pairing, $\sigma$-sesquilinear |
-| $f^{*}=\psi\mapsto\psi f$ | the transpose, a contravariant functor |
+| $(a\cdot\digamma_{\mathrm{map}})(x)=\digamma_{\mathrm{map}}(x)\sigma(a)$ | the left action on the dual |
+| $\langle\digamma_{\mathrm{map}},x\rangle=\digamma_{\mathrm{map}}(x)$ | the evaluation pairing, $\sigma$-sesquilinear |
+| $f^{*}=Ξ_{\mathrm{wfn}}\mapstoΞ_{\mathrm{wfn}} f$ | the transpose, a contravariant functor |
 | $A^{*}=\sigma(A)^{\mathsf{T}}$ | the induced map on $M_n(A)$ |
 | $A^{*}A=AA^{*}=I$ | the unitary matrices of the commutative case |
 

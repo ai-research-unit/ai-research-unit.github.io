@@ -171,9 +171,9 @@ symmetry.
 
 ### Positive Definite Functions and the Cone of Positive Measures
 
-**Theorem (Bochner, recast).** A continuous function $\varphi$ on $\mathbb R^n$ is positive definite if and
-only if $\varphi(x)=\hat\mu(-x)$ for a unique finite **positive** measure $\mu$, equivalently
-$\varphi(x)=\int \exp(2\pi ix\cdot\zeta)d\mu(\zeta)$; the Hermitian measures are exactly the measures whose
+**Theorem (Bochner, recast).** A continuous function $\digamma_{\mathrm{map}}$ on $\mathbb R^n$ is positive definite if and
+only if $\digamma_{\mathrm{map}}(x)=\hat\mu(-x)$ for a unique finite **positive** measure $\mu$, equivalently
+$\digamma_{\mathrm{map}}(x)=\int \exp(2\pi ix\cdot\zeta)d\mu(\zeta)$; the Hermitian measures are exactly the measures whose
 transforms satisfy the Hermitian symmetry, and the positive measures among them are exactly the transforms
 of the positive definite functions.
 

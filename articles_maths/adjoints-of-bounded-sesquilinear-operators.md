@@ -34,7 +34,7 @@ $$
 
 **Remark (the two orientations).** The companion form of *Hermitian Forms on a Sesqualgebra* is $\Phi(x,y)=xy^{*}=h(y^{*},x^{*})^{*}$, the same datum read through the involution with the slots exchanged. The article uses $h$, conjugate-linear in the first slot; the formulas of the companion orientation follow by transporting along the involution, and every statement below is read on $h$.
 
-**Remark (no cyclicity).** The trace pairing $\varphi(x,y)=\tau(xy^{*})$ of Part I is a **scalar** form, and its adjoint operation uses the cyclicity $\tau(uv)=\tau(vu)$. The canonical pairing is $A$-valued and has no cyclicity: $h(xa,y)=a^{*}h(x,y)$ while $h(x,ya)=h(x,y)a$, and the two differ by the commutator. This single difference is the source of every restriction of the article.
+**Remark (no cyclicity).** The trace pairing $\digamma_{\mathrm{map}}(x,y)=\tau(xy^{*})$ of Part I is a **scalar** form, and its adjoint operation uses the cyclicity $\tau(uv)=\tau(vu)$. The canonical pairing is $A$-valued and has no cyclicity: $h(xa,y)=a^{*}h(x,y)$ while $h(x,ya)=h(x,y)a$, and the two differ by the commutator. This single difference is the source of every restriction of the article.
 
 ### The Adjoint Relation
 

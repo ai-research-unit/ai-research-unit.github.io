@@ -33,30 +33,30 @@ and the **idempotent coordinates** $z_+, z_-$ are the values of $z$ under the tw
 **Theorem (the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R}\times\mathbb{R}$).** The map
 
 $$
-\varphi : \mathbb{C}_{\mathrm{spl}} \longrightarrow \mathbb{R}^2, \qquad \varphi(z) = (z_+, z_-) = (a+a',\, a-a') ,
+\digamma_{\mathrm{map}} : \mathbb{C}_{\mathrm{spl}} \longrightarrow \mathbb{R}^2, \qquad \digamma_{\mathrm{map}}(z) = (z_+, z_-) = (a+a',\, a-a') ,
 $$
 
-is an isomorphism of real vector spaces and of rings, with the product of $\mathbb{R}^2$ taken componentwise; its inverse is $\varphi^{-1}(u,v) = \frac{u+v}{2} + j\,\frac{u-v}{2}$. The conjugation corresponds to the exchange of the two coordinates, $\varphi(\bar z) = (z_-, z_+)$, and the norm corresponds to the product, $\langle z\rangle_{*} = z_+z_-$.
+is an isomorphism of real vector spaces and of rings, with the product of $\mathbb{R}^2$ taken componentwise; its inverse is $\digamma_{\mathrm{map}}^{-1}(u,v) = \frac{u+v}{2} + j\,\frac{u-v}{2}$. The conjugation corresponds to the exchange of the two coordinates, $\digamma_{\mathrm{map}}(\bar z) = (z_-, z_+)$, and the norm corresponds to the product, $\langle z\rangle_{*} = z_+z_-$.
 
-**Proof.** The idempotents are the standard projections onto the two coordinates; linearity of $\varphi$ is clear, and multiplicativity is the computation $\varphi(zw) = (z_+w_+, z_-w_-)$, since $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$ and $\Pi_+\Pi_- = 0$. The inverse is verified by $z = z_+\Pi_+ + z_-\Pi_-$, and the conjugation is $\bar z = z_-\Pi_+ + z_+\Pi_-$, the exchange of the two coordinates. Finally $\langle z\rangle_{*} = z\bar z = z_+z_-$, by expanding $(z_+\Pi_+ + z_-\Pi_-)(z_-\Pi_+ + z_+\Pi_-)$ and using $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$, $\Pi_+\Pi_- = 0$, $\Pi_++\Pi_- = 1$.
+**Proof.** The idempotents are the standard projections onto the two coordinates; linearity of $\digamma_{\mathrm{map}}$ is clear, and multiplicativity is the computation $\digamma_{\mathrm{map}}(zw) = (z_+w_+, z_-w_-)$, since $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$ and $\Pi_+\Pi_- = 0$. The inverse is verified by $z = z_+\Pi_+ + z_-\Pi_-$, and the conjugation is $\bar z = z_-\Pi_+ + z_+\Pi_-$, the exchange of the two coordinates. Finally $\langle z\rangle_{*} = z\bar z = z_+z_-$, by expanding $(z_+\Pi_+ + z_-\Pi_-)(z_-\Pi_+ + z_+\Pi_-)$ and using $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$, $\Pi_+\Pi_- = 0$, $\Pi_++\Pi_- = 1$.
 
 ### The Quadratic Map on the Pair
 
 **Theorem (the recursion splits).** For $c = \gamma + j\gamma'$ with $c_+ = \gamma+\gamma'$ and $c_- = \gamma-\gamma'$, the iterate of $f_c$ is given componentwise:
 
 $$
-\boxed{\; \varphi\bigl(f_c(z)\bigr) = \bigl(z_+^2 + c_+,\ z_-^2 + c_-\bigr) \;}.
+\boxed{\; \digamma_{\mathrm{map}}\bigl(f_c(z)\bigr) = \bigl(z_+^2 + c_+,\ z_-^2 + c_-\bigr) \;}.
 $$
 
 Consequently, with $g_+(u) = u^2+c_+$ and $g_-(v) = v^2+c_-$ the two real quadratic maps of the pair,
 
 $$
-\varphi \circ f_c^n = (g_+^n, g_-^n) \circ \varphi \qquad \text{for every } n \geq 0 ,
+\digamma_{\mathrm{map}} \circ f_c^n = (g_+^n, g_-^n) \circ \digamma_{\mathrm{map}} \qquad \text{for every } n \geq 0 ,
 $$
 
 and the orbit of $z$ under $f_c$ is bounded if and only if both orbits $g_+^n(z_+)$ and $g_-^n(z_-)$ are bounded.
 
-**Proof.** Since $\varphi$ is a ring isomorphism, $\varphi(f_c(z)) = \varphi(z)^2 + \varphi(c) = (z_+^2+c_+, z_-^2+c_-)$; iterating gives the displayed formula, and boundedness of a sequence in $\mathbb{R}^2$ is boundedness of both coordinates.
+**Proof.** Since $\digamma_{\mathrm{map}}$ is a ring isomorphism, $\digamma_{\mathrm{map}}(f_c(z)) = \digamma_{\mathrm{map}}(z)^2 + \digamma_{\mathrm{map}}(c) = (z_+^2+c_+, z_-^2+c_-)$; iterating gives the displayed formula, and boundedness of a sequence in $\mathbb{R}^2$ is boundedness of both coordinates.
 
 **Corollary (the critical set).** The derivative of $f_c$ is the multiplication by $2z$. As an element of the algebra, $2z$ vanishes only at $z = 0$; as a real-linear map of the plane, the multiplication by $2z$ has determinant $\langle 2z\rangle_{*} = 4\langle z\rangle_{*}$ and is therefore singular exactly on the null cone $\mathcal{N} = \{N = 0\}$, where $2z$ is a zero divisor. So the critical set of $f_c$ as a real dynamical system is the union of the two null lines, and $0$ is its only point at which the derivative vanishes as an algebra element. The orbit of $0$ is the pair $(g_+^n(0), g_-^n(0))$ of the two real critical orbits, and it is this orbit that defines the connectedness locus below.
 
@@ -101,7 +101,7 @@ $$
 **Theorem.** The connectedness locus is the square
 
 $$
-\boxed{\; M_{\mathbb{C}_{\mathrm{spl}}} = \varphi^{-1}\Bigl([-2,\tfrac14] \times [-2,\tfrac14]\Bigr) = \left\{c = \gamma+j\gamma' : -2 \leq \gamma+\gamma' \leq \tfrac14, \ -2 \leq \gamma-\gamma' \leq \tfrac14 \right\} \;},
+\boxed{\; M_{\mathbb{C}_{\mathrm{spl}}} = \digamma_{\mathrm{map}}^{-1}\Bigl([-2,\tfrac14] \times [-2,\tfrac14]\Bigr) = \left\{c = \gamma+j\gamma' : -2 \leq \gamma+\gamma' \leq \tfrac14, \ -2 \leq \gamma-\gamma' \leq \tfrac14 \right\} \;},
 $$
 
 the product of two real Mandelbrot intervals, with vertices $\frac14$, $-\frac78 \pm j\frac98$ and $-2$ in the coordinates $c = \gamma+j\gamma'$, centre $-\frac78$, diagonal $\frac94$ along the real axis and side length $\frac{9\sqrt2}{8}$.
@@ -134,9 +134,9 @@ so $\langle\cdot\rangle_{*}$ vanishes at the $n$-th step exactly when one of the
 
 ## Summary
 
-The split-complex quadratic family $f_c(z) = z^2+c$ on $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ is, through the idempotent decomposition $\varphi(z) = (z_+,z_-) = (a+a',a-a')$, the pair of real quadratic maps $u \mapsto u^2+c_+$ and $v \mapsto v^2+c_-$ acting on the two coordinates. The critical set is the null cone $\mathcal{N}$ — the derivative is the multiplication by $2z$, singular exactly where $2z$ is a zero divisor — and the critical value of the point $0$ is $c$; the other critical points $t\Pi_\pm$ have the images $t^2\Pi_\pm+c$, and the orbit of $0$ is the pair of the two real critical orbits and is the orbit that defines the connectedness locus. The orbit of a point is bounded exactly when both coordinate orbits are bounded. The norm $N = a^2-a'{}^2 = z_+z_-$ is indefinite and vanishes on the two null lines; it cannot serve as an escape radius, and the escape is decided by the two real radii $R_\pm = \frac12(1+\sqrt{1+4|c_\pm|})$ separately, not by a single radius.
+The split-complex quadratic family $f_c(z) = z^2+c$ on $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ is, through the idempotent decomposition $\digamma_{\mathrm{map}}(z) = (z_+,z_-) = (a+a',a-a')$, the pair of real quadratic maps $u \mapsto u^2+c_+$ and $v \mapsto v^2+c_-$ acting on the two coordinates. The critical set is the null cone $\mathcal{N}$ — the derivative is the multiplication by $2z$, singular exactly where $2z$ is a zero divisor — and the critical value of the point $0$ is $c$; the other critical points $t\Pi_\pm$ have the images $t^2\Pi_\pm+c$, and the orbit of $0$ is the pair of the two real critical orbits and is the orbit that defines the connectedness locus. The orbit of a point is bounded exactly when both coordinate orbits are bounded. The norm $N = a^2-a'{}^2 = z_+z_-$ is indefinite and vanishes on the two null lines; it cannot serve as an escape radius, and the escape is decided by the two real radii $R_\pm = \frac12(1+\sqrt{1+4|c_\pm|})$ separately, not by a single radius.
 
-The connectedness locus is the square $\varphi^{-1}([-2,\frac14]\times[-2,\frac14])$, the product of the two real Mandelbrot intervals, with vertices $\frac14$, $-\frac78\pm j\frac98$, $-2$, centre $-\frac78$ and side $\frac{9\sqrt2}{8}$; on the real axis it is the interval $[-2,\frac14]$ of the real quadratic family. The fractal content of the complex parameter plane — the Mandelbrot set and its hyperbolic components — is replaced here by the convex square, and the fractal content of the split family is carried by the Julia sets of the individual parameters, treated in *The Split-Complex Julia Sets*. The algebra, the idempotents and the null cone are those of *Split-Complex Algebra*, *Square Roots of One and the Idempotents of the Split-Complex Algebra* and *Split-Complex Null Quadric and Projective Geometry*; the real quadratic theory that the pair inherits is that of *The Mandelbrot Set and the Quadratic Family* and *The Escape Radius and the Green's Function*.
+The connectedness locus is the square $\digamma_{\mathrm{map}}^{-1}([-2,\frac14]\times[-2,\frac14])$, the product of the two real Mandelbrot intervals, with vertices $\frac14$, $-\frac78\pm j\frac98$, $-2$, centre $-\frac78$ and side $\frac{9\sqrt2}{8}$; on the real axis it is the interval $[-2,\frac14]$ of the real quadratic family. The fractal content of the complex parameter plane — the Mandelbrot set and its hyperbolic components — is replaced here by the convex square, and the fractal content of the split family is carried by the Julia sets of the individual parameters, treated in *The Split-Complex Julia Sets*. The algebra, the idempotents and the null cone are those of *Split-Complex Algebra*, *Square Roots of One and the Idempotents of the Split-Complex Algebra* and *Split-Complex Null Quadric and Projective Geometry*; the real quadratic theory that the pair inherits is that of *The Mandelbrot Set and the Quadratic Family* and *The Escape Radius and the Green's Function*.
 
 ## Summary of Notation
 
@@ -148,13 +148,13 @@ The connectedness locus is the square $\varphi^{-1}([-2,\frac14]\times[-2,\frac1
 | $\langle z\rangle_{*} = a^2-a'{}^2 = z_+z_-$ | Norm, inertia $(1,1)$ |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents |
 | $z_\pm = a\pm a'$ | Idempotent coordinates |
-| $\varphi(z) = (z_+,z_-)$ | Isomorphism $\mathbb{C}_{\mathrm{spl}}\to\mathbb{R}^2$ |
+| $\digamma_{\mathrm{map}}(z) = (z_+,z_-)$ | Isomorphism $\mathbb{C}_{\mathrm{spl}}\to\mathbb{R}^2$ |
 | $f_c(z) = z^2+c$ | The split-complex quadratic family |
 | $c_\pm = \gamma\pm\gamma'$ | Idempotent coordinates of $c = \gamma+j\gamma'$ |
 | $g_\pm$ | The two real quadratic maps $u\mapsto u^2+c_\pm$ |
 | $\mathcal{N} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ | Null cone, the two null lines |
 | $R_\pm = \tfrac12(1+\sqrt{1+4\lvert c_\pm\rvert})$ | The two real escape radii |
-| $M_{\mathbb{C}_{\mathrm{spl}}}$ | Connectedness locus, the square $\varphi^{-1}([-2,\tfrac14]^2)$ |
+| $M_{\mathbb{C}_{\mathrm{spl}}}$ | Connectedness locus, the square $\digamma_{\mathrm{map}}^{-1}([-2,\tfrac14]^2)$ |
 
 ## Further Reading
 

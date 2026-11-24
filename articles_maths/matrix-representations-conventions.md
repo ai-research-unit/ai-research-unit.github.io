@@ -842,38 +842,9 @@ $$
 so the axis-free display is the conjugated block. The $2\times2$ image $\mathsf{M}_2(\tilde Q)$ is untouched by $C_{\Pi}$: a change of frame conjugates the $4\times4$ displays and leaves the $2\times2$ display alone. That asymmetry is what separates the two kinds of model in §*The Matrix Models*.
 
 **The determinant squares, the trace doubles.** From the block form, $\det L(\tilde Q)=\det\mathsf{M}_2(\tilde Q)^2=\langle\tilde Q\rangle_{\natural}^2$ and $\operatorname{tr}L(\tilde Q)=2\operatorname{tr}\mathsf{M}_2(\tilde Q)=4Q_t$, in either frame. The two invariants of the operator are the invariants of the element, counted twice.
-
 ## Summary
 
-The algebra is displayed in three ways, in the order in which the displays are built.
-
-**The axis-free representation comes first.** Its basis is the tensor basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, its product is the multiplication table, and its two matrices are read off that table by columns:
-$$
-L_{\mathrm{axf}}(\tilde Q)=
-\begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
-Q_z&-Q_y&Q_x&Q_t
-\end{pmatrix},
-\qquad
-R_{\mathrm{axf}}(\tilde Q)=
-\begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&Q_z&-Q_y\\
-Q_y&-Q_z&Q_t&Q_x\\
-Q_z&Q_y&-Q_x&Q_t
-\end{pmatrix}.
-$$
-Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, its transpose is the conjugation, and its sixteen products are real. Nothing is chosen but the basis the algebra already carries.
-
-**The Pauli representation comes second.** Its frame is the Peirce basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$. The four left matrices $L_{\mathrm{pau},e_\mu}$, the four right matrices $R_{\mathrm{pau},e_\nu}$ and the sixteen basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ are written out, and the basis operators are the Clifford algebra: $e_\mu\otimes e_{\mathrm{opp},\nu}\mapsto L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame operators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})$. Five basis operators are the gamma matrices, written in this frame and in the axis-free one. The basis operators are the matrices of the sixteen basis two-sided operators $e_\mu[\,]e_\nu$, so one table of them serves the two-sided family, the enveloping algebra and the Clifford algebra at once.
-
-**The switch comes between them, and belongs to both.** It is $C_{\Pi}$ and its inverse, of determinant $-\tfrac14$ and normalisation $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4$, with $L_{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$ and $R_{\mathrm{axf}}=C_{\Pi}RC_{\Pi}^{-1}$. It is two $2\times2$ blocks, it carries the eight unit matrices and the sixteen basis operators, and it leaves the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ alone.
-
-**The $2\times2$ isomorphism comes last.** It is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, forced by $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$. It needs no frame, and it is the block of the Pauli display: the change of frame moves the block and never the image.
-
-**The subscript names the copy, and a bare $\mathsf{M}_4$ is not written.** A regular matrix carries the family letter $L$ or $R$ in its subscript and the frame label $\mathrm{axf}$ or $\mathrm{pau}$ in its caret.
+The algebra is displayed in three ways, in the order in which the displays are built. The **axis-free** representation comes first: the tensor basis, the multiplication table, and $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$ read off it by columns, with eight real unit matrices and nothing chosen but the basis the algebra already carries. The **Pauli** representation comes second: the Peirce basis of the standard pair, $L=I_2\otimes\mathsf{M}_2(\tilde Q)$, and sixteen basis operators that are the Clifford algebra. The **switch** between them is $C_{\Pi}$ and its inverse, and the $2\times2$ isomorphism comes last, needing no frame. A regular matrix carries its family letter in the subscript and its frame label in the caret; a bare $\mathsf{M}_4$ is not written.
 
 ## Summary of Notation
 

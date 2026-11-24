@@ -315,7 +315,7 @@ Every valued field has a completion, unique up to isometry, which is complete an
 
 ## Further Reading
 
-- Alexander Ostrowski, "Über einige Lösungen der Funktionalgleichung $\varphi(x)\varphi(y) = \varphi(xy)$", *Acta Mathematica* 41 (1918), for the classification of absolute values on $\mathbb{Q}$.
+- Alexander Ostrowski, "Über einige Lösungen der Funktionalgleichung $\digamma_{\mathrm{map}}(x)\digamma_{\mathrm{map}}(y) = \digamma_{\mathrm{map}}(xy)$", *Acta Mathematica* 41 (1918), for the classification of absolute values on $\mathbb{Q}$.
 - Kurt Hensel, *Theorie der algebraischen Zahlen* (Teubner, 1908), for the $p$-adic numbers and the lifting lemma.
 - Nicolas Bourbaki, *Commutative Algebra, Chapters 1–7* (Springer, 1998), for valuations and valuation rings.
 - Jean-Pierre Serre, *Local Fields* (Springer, 1979), for $\mathbb{Q}_p$, $\mathbb{C}_p$, Hensel's lemma and ramification.

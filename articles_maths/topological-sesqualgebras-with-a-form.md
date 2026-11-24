@@ -34,7 +34,7 @@ $$
 
 is zero. A **topological sesqualgebra with a form** is an associative topological $R$-algebra with a continuous $\varsigma$-semilinear involution $*$, together with a continuous Hermitian form $h$ that is compatible with the product in the sense of the next section; its sesqualgebra is the derived operation $x \star y = xy^{*}$.
 
-The conventions are those of the sesqualgebra block, the pairing $\varphi(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, §*The Two Parities*: $R$-linear in the first slot and $\varsigma$-semilinear in the second, with the values in $R$ rather than in an algebra, and with $\varepsilon = 1$ in the sense of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, §*Hermitian Forms over a Ring with Involution*, where it is the first slot that carries the twist; the bilinear forms that return at the collapse are those of *Bilinear Forms*, §*Definition*.
+The conventions are those of the sesqualgebra block, the pairing $\digamma_{\mathrm{map}}(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, §*The Two Parities*: $R$-linear in the first slot and $\varsigma$-semilinear in the second, with the values in $R$ rather than in an algebra, and with $\varepsilon = 1$ in the sense of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, §*Hermitian Forms over a Ring with Involution*, where it is the first slot that carries the twist; the bilinear forms that return at the collapse are those of *Bilinear Forms*, §*Definition*.
 
 **Proposition (the diagonal).** Let $h$ be Hermitian. Then $h(x,x) = \varsigma(h(x,x))$ for every $x$, so the diagonal takes its values in the fixed ring $R^{\varsigma}$ of the base involution. If $h$ is anti-Hermitian then $h(x,x) = -\varsigma(h(x,x))$, so the diagonal vanishes when $2$ is invertible and $\varsigma = \mathrm{id}$.
 
@@ -42,7 +42,7 @@ The conventions are those of the sesqualgebra block, the pairing $\varphi(x,y) =
 
 **Proposition (the radical of a continuous form is closed).** Let $h$ be continuous. Then its radical is a closed submodule of $A$.
 
-*Proof.* For each $y$ the map $\varphi_y : x \mapsto h(x,y)$ is continuous, being the restriction of $h$ to $A \times \{y\}$, and its kernel is closed because $\{0\}$ is closed in $R$. The radical is $\bigcap_y \ker\varphi_y$, an intersection of closed sets, hence closed; it is a subgroup and stable under the scalars because each $\varphi_y$ is additive and $R$-linear.
+*Proof.* For each $y$ the map $\digamma_{\mathrm{map},y} : x \mapsto h(x,y)$ is continuous, being the restriction of $h$ to $A \times \{y\}$, and its kernel is closed because $\{0\}$ is closed in $R$. The radical is $\bigcap_y \ker\digamma_{\mathrm{map},y}$, an intersection of closed sets, hence closed; it is a subgroup and stable under the scalars because each $\digamma_{\mathrm{map},y}$ is additive and $R$-linear.
 
 **Remark (the radical is two-sided).** The definition of the radical is not one-sided: because $h$ is Hermitian, the elements annihilated on the right are the same as those annihilated on the left, since $h(x,y) = 0$ for all $y$ gives $h(y,x) = \varsigma(h(x,y)) = 0$ for all $y$, which is the same condition read with the variables renamed. The radical is therefore the two-sided orthogonal of $A$, and the nondegeneracy of the definition above is symmetric in the two slots.
 
@@ -60,7 +60,7 @@ $$
 h(Y,X) = \operatorname{tr}(YX^{*}) = \sum_{i,j} Y_{ij}\overline{X_{ij}} = \varsigma\Bigl(\sum_{i,j} X_{ij}\overline{Y_{ij}}\Bigr) = \varsigma\bigl(h(X,Y)\bigr),
 $$
 
-and it is nondegenerate, its Gram matrix in the unit basis being the identity: if $\operatorname{tr}(XY^{*}) = 0$ for every $Y$ then $X = 0$, taking $Y$ with a single nonzero entry. This is the form of the layer, and every statement below is read on it. It is the pairing $\varphi(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, §*The Two Parities*, with $\tau = \operatorname{tr}$; for a central linear functional, $\tau(uv) = \tau(vu)$, the compatibility is automatic, since $h(xy,z) = \tau(xyz^{*})$ and $h(y,x^{*}z) = \tau\bigl(y(x^{*}z)^{*}\bigr) = \tau(yz^{*}x)$ agree.
+and it is nondegenerate, its Gram matrix in the unit basis being the identity: if $\operatorname{tr}(XY^{*}) = 0$ for every $Y$ then $X = 0$, taking $Y$ with a single nonzero entry. This is the form of the layer, and every statement below is read on it. It is the pairing $\digamma_{\mathrm{map}}(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, §*The Two Parities*, with $\tau = \operatorname{tr}$; for a central linear functional, $\tau(uv) = \tau(vu)$, the compatibility is automatic, since $h(xy,z) = \tau(xyz^{*})$ and $h(y,x^{*}z) = \tau\bigl(y(x^{*}z)^{*}\bigr) = \tau(yz^{*}x)$ agree.
 
 ## The Compatibility
 

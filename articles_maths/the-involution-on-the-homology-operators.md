@@ -59,7 +59,7 @@ and the anti-invariant operators form the complementary summand $\operatorname{H
 
 **(c)** The symplectic representation of the mapping class group is equivariant for the action of a surface involution on the mapping class group and on the homology.
 
-**Proof.** (a) is the conjugation formula of the mapping class group action: $\rho(\phi T_a\phi^{-1}) = \rho(\phi)\rho(T_a)\rho(\phi)^{-1}$, applied to $\phi$ the involution; (b) is the naturality of the handle and surgery constructions under an equivariant homeomorphism, with the local model of the normal representation required for the equivariance; (c) is the compatibility of the action on $H_1$ with the action on the mapping class group.
+**Proof.** (a) is the conjugation formula of the mapping class group action: $\rho(\digamma_{\mathrm{map}} T_a\digamma_{\mathrm{map}}^{-1}) = \rho(\digamma_{\mathrm{map}})\rho(T_a)\rho(\digamma_{\mathrm{map}})^{-1}$, applied to $\digamma_{\mathrm{map}}$ the involution; (b) is the naturality of the handle and surgery constructions under an equivariant homeomorphism, with the local model of the normal representation required for the equivariance; (c) is the compatibility of the action on $H_1$ with the action on the mapping class group.
 
 **Corollary (which operators descend to the quotient).** An equivariant operator on $H_*(M)$ restricts to operators on the fixed part $H^{+}$ and on the anti-fixed part $H^{-}$; over a field in which $2$ is invertible, an equivariant operator therefore descends to an operator on the invariants and to one on the coinvariants, and the natural operators that are equivariant descend to the homology of the quotient and to the homology of the fixed set, as in *The Involution as an Operator on the Homology*.
 

@@ -83,7 +83,7 @@ $$
 
 where $\omega_{n-1}$ is the area of the unit sphere in $\mathbb{R}^n$. Conversely, a continuous function with the mean value property is harmonic.
 
-*Proof.* Let $\varphi(r) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{\partial B(x,r)}w\,dS$. Differentiating with respect to $r$ and applying the divergence theorem gives $\varphi'(r) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{B(x,r)}\Delta w\,dy = 0$, so $\varphi$ is constant, and its limit as $r\to0$ is $w(x)$ by continuity; this is the surface form, and integrating in $r$ gives the volume form. Conversely, a continuous function with the mean value property satisfies $\Delta w = 0$ in the distributional sense, and by elliptic regularity, established below by the representation formula, it is harmonic.
+*Proof.* Let $\digamma_{\mathrm{map}}(r) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{\partial B(x,r)}w\,dS$. Differentiating with respect to $r$ and applying the divergence theorem gives $\digamma_{\mathrm{map}}'(r) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{B(x,r)}\Delta w\,dy = 0$, so $\digamma_{\mathrm{map}}$ is constant, and its limit as $r\to0$ is $w(x)$ by continuity; this is the surface form, and integrating in $r$ gives the volume form. Conversely, a continuous function with the mean value property satisfies $\Delta w = 0$ in the distributional sense, and by elliptic regularity, established below by the representation formula, it is harmonic.
 
 **Theorem (maximum principle).** A harmonic function on a connected open set attains its maximum and minimum only on the boundary, in the sense that if $\Omega$ is connected and bounded with $w$ continuous on $\overline\Omega$ and harmonic on $\Omega$, then $\sup_\Omega w = \sup_{\partial\Omega}w$ and $\inf_\Omega w = \inf_{\partial\Omega}w$; if the extremum is attained at an interior point the function is constant.
 
@@ -223,29 +223,29 @@ The example explains the classification in terms of the auxiliary data a type ca
 
 ### Separation of Variables
 
-**Theorem (eigenfunction expansion).** Let $\Omega$ be a bounded domain with smooth boundary, and let $(\lambda_k,\varphi_k)$ be the eigenvalues and orthonormal eigenfunctions of $-\Delta$ with homogeneous Dirichlet boundary conditions, so that
+**Theorem (eigenfunction expansion).** Let $\Omega$ be a bounded domain with smooth boundary, and let $(\lambda_k,\digamma_{\mathrm{map},k})$ be the eigenvalues and orthonormal eigenfunctions of $-\Delta$ with homogeneous Dirichlet boundary conditions, so that
 
 $$
--\Delta\varphi_k = \lambda_k\varphi_k \quad \text{in } \Omega, \qquad \varphi_k = 0 \quad \text{on } \partial\Omega .
+-\Delta\digamma_{\mathrm{map},k} = \lambda_k\digamma_{\mathrm{map},k} \quad \text{in } \Omega, \qquad \digamma_{\mathrm{map},k} = 0 \quad \text{on } \partial\Omega .
 $$
 
-Then the eigenvalues are positive with $\lambda_k \to \infty$ and the $\varphi_k$ form an orthonormal basis of $L^2(\Omega)$. The solution of the heat equation with datum $f = \sum_kc_k\varphi_k$ is
+Then the eigenvalues are positive with $\lambda_k \to \infty$ and the $\digamma_{\mathrm{map},k}$ form an orthonormal basis of $L^2(\Omega)$. The solution of the heat equation with datum $f = \sum_kc_k\digamma_{\mathrm{map},k}$ is
 
 $$
-w(x,t) = \sum_k c_k \exp(-\lambda_kt)\varphi_k(x),
+w(x,t) = \sum_k c_k \exp(-\lambda_kt)\digamma_{\mathrm{map},k}(x),
 $$
 
 and the solution of the wave equation with $w(\cdot,0)=f$, $\partial/\partial t w(\cdot,0)=g$ is
 
 $$
-w(x,t) = \sum_k\Bigl(c_k\cos(c\sqrt{\lambda_k}\,t) + d_k\,\frac{\sin(c\sqrt{\lambda_k}\,t)}{c\sqrt{\lambda_k}}\Bigr)\varphi_k(x),
+w(x,t) = \sum_k\Bigl(c_k\cos(c\sqrt{\lambda_k}\,t) + d_k\,\frac{\sin(c\sqrt{\lambda_k}\,t)}{c\sqrt{\lambda_k}}\Bigr)\digamma_{\mathrm{map},k}(x),
 $$
 
 with $d_k$ the coefficients of $g$, and $\partial/\partial t w$ obtained by termwise differentiation.
 
-*Proof.* The eigenfunction problem is a Sturm–Liouville problem after separation of variables, and its spectral theory is that of *Ordinary Differential Equations*: the eigenvalues are positive because $-\Delta$ is a positive operator, they tend to infinity by the compactness of the resolvent, and the eigenfunctions are complete. Substituting the series into the equation and using the orthonormality of the $\varphi_k$ decouples the equation into ordinary equations in $t$ for each coefficient, solved by the displayed exponentials and trigonometric functions; the convergence of the series to a classical solution follows from the decay of the coefficients once the data are smooth enough.
+*Proof.* The eigenfunction problem is a Sturm–Liouville problem after separation of variables, and its spectral theory is that of *Ordinary Differential Equations*: the eigenvalues are positive because $-\Delta$ is a positive operator, they tend to infinity by the compactness of the resolvent, and the eigenfunctions are complete. Substituting the series into the equation and using the orthonormality of the $\digamma_{\mathrm{map},k}$ decouples the equation into ordinary equations in $t$ for each coefficient, solved by the displayed exponentials and trigonometric functions; the convergence of the series to a classical solution follows from the decay of the coefficients once the data are smooth enough.
 
-**Example (the vibrating string).** On $\Omega = (0,L)$ the eigenvalues are $\lambda_k = k^2\pi^2/L^2$ with $\varphi_k(x) = \sqrt{2/L}\sin(k\pi x/L)$; the solution of the wave equation is a superposition of standing waves with frequencies $ck\pi/L$, and the slowest mode dominates. The exhibited series is the Fourier sine series, and the general theory of such expansions on an interval is the classical theory of the Sturm–Liouville problem of *Ordinary Differential Equations*.
+**Example (the vibrating string).** On $\Omega = (0,L)$ the eigenvalues are $\lambda_k = k^2\pi^2/L^2$ with $\digamma_{\mathrm{map},k}(x) = \sqrt{2/L}\sin(k\pi x/L)$; the solution of the wave equation is a superposition of standing waves with frequencies $ck\pi/L$, and the slowest mode dominates. The exhibited series is the Fourier sine series, and the general theory of such expansions on an interval is the classical theory of the Sturm–Liouville problem of *Ordinary Differential Equations*.
 
 ## Summary
 
@@ -273,7 +273,7 @@ Hadamard's notion of a well-posed problem — existence, uniqueness and continuo
 | characteristic curves | Integral curves of $dx/dt = a(x,w)$ |
 | complete integral | Family of solutions with $n$ parameters |
 | well posed (Hadamard) | Existence, uniqueness and continuous dependence on the data |
-| $\lambda_k$, $\varphi_k$ | Dirichlet eigenvalues and eigenfunctions of $-\Delta$ |
+| $\lambda_k$, $\digamma_{\mathrm{map},k}$ | Dirichlet eigenvalues and eigenfunctions of $-\Delta$ |
 
 
 ## Further Reading

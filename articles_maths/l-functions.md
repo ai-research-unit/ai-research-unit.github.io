@@ -21,9 +21,9 @@ The prerequisites are *Adelic Analysis* for the adelic integrals, the Hecke char
 
 **Proposition.** The set $\widehat{G}$ of characters of the finite abelian group $G = (\mathbb{Z}/q\mathbb{Z})^\times$ is a group under pointwise multiplication, isomorphic to $G$; the characters satisfy the orthogonality relations
 $$
-\boxed{\;\sum_{\chi \in \widehat G} \chi(a) = \begin{cases} \varphi(q) & a\equiv1 \pmod q,\\ 0 & \text{otherwise},\end{cases}
+\boxed{\;\sum_{\chi \in \widehat G} \chi(a) = \begin{cases} \digamma_{\mathrm{map}}(q) & a\equiv1 \pmod q,\\ 0 & \text{otherwise},\end{cases}
 \qquad
-\sum_{a \in G}\chi(a) = \begin{cases} \varphi(q) & \chi = \chi_0,\\ 0 & \text{otherwise},\end{cases}\;}
+\sum_{a \in G}\chi(a) = \begin{cases} \digamma_{\mathrm{map}}(q) & \chi = \chi_0,\\ 0 & \text{otherwise},\end{cases}\;}
 $$
 and the characters of $(\mathbb{Z}/q\mathbb{Z})^\times$ are exactly the characters of $\mathbb{Z}/q\mathbb{Z}$ whose value at a nonunit is $0$.
 
@@ -57,7 +57,7 @@ L(s,\chi) = \sum_{n\geq1}\frac{\chi(n)}{n^s} = \prod_{p}\frac{1}{1-\chi(p)p^{-s}
 $$
 **Theorem (elementary properties).** The series and the product converge absolutely and locally uniformly for $\Re s>1$, the product is the Euler product of the series, and if $\chi\neq\chi_0$ then the series converges conditionally, and the function is continuous, on the half-plane $\Re s>0$; if $\chi = \chi_0$, then $L(s,\chi_0) = \zeta(s)\prod_{p\mid q}(1-p^{-s})$ has the simple pole of $\omega$ at $s=1$ and no other pole.
 
-**Proof.** Absolute convergence for $\sigma>1$ is the Euler product theorem. For a nonprincipal character the partial sums of the coefficients are bounded by $\varphi(q)$ because the character sums over complete residue systems vanish; summation by parts then gives the convergence for $\sigma>0$. The principal character factors out the finitely many primes dividing $q$.
+**Proof.** Absolute convergence for $\sigma>1$ is the Euler product theorem. For a nonprincipal character the partial sums of the coefficients are bounded by $\digamma_{\mathrm{map}}(q)$ because the character sums over complete residue systems vanish; summation by parts then gives the convergence for $\sigma>0$. The principal character factors out the finitely many primes dividing $q$.
 
 ### Analytic Continuation and the Functional Equation
 
@@ -77,7 +77,7 @@ For a nonprimitive character the same statements hold after removing the finitel
 
 **Corollary (the zeros of a Dirichlet $L$-function).** A Dirichlet $L$-function with $\chi\neq\chi_0$ has no zero in $\Re s>1$, by the Euler product, and no zero at $s=1$, by the nonvanishing theorem below; its trivial zeros are the poles of the Gamma factor of its completed function, at $s=-1,-3,-5,\dots$ when $\chi$ is odd and at $s=0,-2,-4,\dots$ when $\chi$ is even, the point $s=0$ being a zero for every even character except the principal character modulo $1$, for which $L(0,\chi_0) = \zeta(0) = -\tfrac12$; hence all its nontrivial zeros lie in the critical strip $0\le\Re s\le1$. The analogue of the Riemann hypothesis asserts that they all satisfy $\Re s = \tfrac12$, and the generalised Riemann hypothesis is the statement for all the Dirichlet $L$-functions at once, treated.
 
-**Theorem (nonvanishing at $s=1$ and Dirichlet's theorem).** For every character $\chi\neq\chi_0$ modulo $q$, $L(1,\chi)\neq0$. Consequently, for every $a$ with $(a,q)=1$ the sum $\sum_{p}\frac{1}{p^s}$ over the primes $p\equiv a \pmod q$ behaves like $\frac{1}{\varphi(q)}\log\frac{1}{s-1}$ as $s\to1^+$, and there are infinitely many such primes.
+**Theorem (nonvanishing at $s=1$ and Dirichlet's theorem).** For every character $\chi\neq\chi_0$ modulo $q$, $L(1,\chi)\neq0$. Consequently, for every $a$ with $(a,q)=1$ the sum $\sum_{p}\frac{1}{p^s}$ over the primes $p\equiv a \pmod q$ behaves like $\frac{1}{\digamma_{\mathrm{map}}(q)}\log\frac{1}{s-1}$ as $s\to1^+$, and there are infinitely many such primes.
 
 **Proof sketch.** For a real character $\chi$ the product $\zeta(s)L(s,\chi)$ has nonnegative Dirichlet coefficients, since $\sum_{d\mid n}\chi(d) = \prod_{p^a\|n}(1+\chi(p)+\cdots+\chi(p)^a)\geq0$ for every $n$; its Euler product has a logarithm with nonnegative coefficients, and at every square $m^2$ coprime to $q$ the coefficient satisfies $\sum_{d\mid m^2}\chi(d)\geq1$, so the coefficients are not all zero and the abscissa of convergence of the series is finite. If $L(1,\chi)$ vanished with a simple zero, the pole of $\omega$ would cancel and $\zeta(s)L(s,\chi)$, being a Dirichlet series with nonnegative coefficients and a finite abscissa of convergence, would be entire — which Landau's theorem of *Zeta Functions* forbids, since such a series is singular at its abscissa. Alternatively, and cleanly for a primitive real character, the class number formula of *Algebraic Number Theory* exhibits the value directly, $L(1,\chi_d) = 2\pi h/(w\sqrt{\lvert d\rvert})>0$ for the quadratic field of discriminant $d$ associated with $\chi$, which settles the primitive case and with it the nonprimitive one, whose Euler factors at the primes dividing $q$ are finite and nonzero at $s=1$. For a non-real character one applies the same argument to
 $$
@@ -159,7 +159,7 @@ The nonvanishing $L(1,\chi)\neq0$ for nonprincipal $\chi$ is the analytic input 
 |---|---|
 | $q$ | Modulus of a Dirichlet character |
 | $\chi$, $\chi_0$ | Dirichlet character modulo $q$, principal character |
-| $\varphi(q)$ | Euler's totient, order of $(\mathbb{Z}/q\mathbb{Z})^\times$ |
+| $\digamma_{\mathrm{map}}(q)$ | Euler's totient, order of $(\mathbb{Z}/q\mathbb{Z})^\times$ |
 | $f$, conductor | Least modulus from which $\chi$ is induced; $\chi$ primitive if $f=q$ |
 | even, odd | $\chi(-1)=1$, $\chi(-1)=-1$ |
 | $\tau(\chi)$ | Gauss sum $\sum_{a=1}^q\chi(a)\exp(2\pi ia/q)$ |

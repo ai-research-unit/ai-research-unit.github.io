@@ -66,7 +66,7 @@ $$
 u(\theta) = \cos\theta + i \sin\theta, \qquad \langle u(\theta)\rangle_{*} = \cos^2\theta + \sin^2\theta = 1,
 $$
 
-and $u(\theta)u(\phi) = u(\theta + \phi)$ by the addition formulas, so $G_{\mathbb{C}} = \mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z}$. The matrix of multiplication is
+and $u(\theta)u(\digamma_{\mathrm{map}}) = u(\theta + \digamma_{\mathrm{map}})$ by the addition formulas, so $G_{\mathbb{C}} = \mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z}$. The matrix of multiplication is
 
 $$
 M(u(\theta)) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} \in SO(2),

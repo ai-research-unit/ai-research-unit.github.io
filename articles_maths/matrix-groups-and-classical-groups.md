@@ -194,23 +194,23 @@ Thus the three families $A$, $B$, $C$ meet at the bottom: the compact symplectic
 
 Identify $\mathbb{R}^3$ with the space of pure quaternions $\mathrm{Vect}(\mathbb{H}) = \{x \in \mathbb{H} : \mathrm{Sc}(x) = 0\}$.
 
-**Theorem.** For $u \in \mathbb{H}^1$ the map $\varphi_u(x) = u x  u^{\natural}$ restricts to a rotation of the pure quaternions, $\varphi_u \in SO(3)$, and
+**Theorem.** For $u \in \mathbb{H}^1$ the map $\digamma_{\mathrm{map},u}(x) = u x  u^{\natural}$ restricts to a rotation of the pure quaternions, $\digamma_{\mathrm{map},u} \in SO(3)$, and
 
 $$
-\boxed{\;\varphi : \mathbb{H}^1 \longrightarrow SO(3), \qquad u \longmapsto \varphi_u\;},
+\boxed{\;\digamma_{\mathrm{map}} : \mathbb{H}^1 \longrightarrow SO(3), \qquad u \longmapsto \digamma_{\mathrm{map},u}\;},
 $$
 
 is a continuous surjective homomorphism with kernel $\{\pm 1\}$. Hence $SO(3) \cong \mathbb{H}^1/\{\pm 1\} \cong SU(2)/\{\pm I\} = PSU(2)$.
 
-**Proof.** If $x$ is pure and $u$ is invertible then $u x  u^{\natural}$ is pure, because $\overline{u x  u^{\natural}} = u x^{\natural}  u^{\natural} = -u x u^{\natural}$, conjugation reversing the scalar sign; the norms agree, $N(ux u^{\natural}) = N(u)N(x)N(u) = N(x)$, so $\varphi_u$ preserves the standard form of $\mathbb{R}^3$; and $\varphi$ is a homomorphism because the map is the conjugation action of the group of invertibles on the algebra, which is multiplicative in $u$. The image lies in $SO(3)$ rather than merely in $O(3)$: the map $u \mapsto \varphi_u$ is continuous and $\mathbb{H}^1 = S^3$ is connected, so the image lies in the identity component. If $u$ lies in the kernel then $ux = xu$ for all pure $x$, in particular for $x = \vec e_x, \vec e_y, \vec e_z$, so $u$ commutes with $\vec e_x, \vec e_y, \vec e_z$ and hence lies in the centre of $\mathbb{H}$, which is $\mathbb{R}$; with $N(u) = 1$ this gives $u = \pm 1$. Thus the kernel has order two and the image is a compact connected subgroup of dimension $3$; as $SO(3)$ is connected of dimension $3$, the image is open and closed and therefore all of $SO(3)$.
+**Proof.** If $x$ is pure and $u$ is invertible then $u x  u^{\natural}$ is pure, because $\overline{u x  u^{\natural}} = u x^{\natural}  u^{\natural} = -u x u^{\natural}$, conjugation reversing the scalar sign; the norms agree, $N(ux u^{\natural}) = N(u)N(x)N(u) = N(x)$, so $\digamma_{\mathrm{map},u}$ preserves the standard form of $\mathbb{R}^3$; and $\digamma_{\mathrm{map}}$ is a homomorphism because the map is the conjugation action of the group of invertibles on the algebra, which is multiplicative in $u$. The image lies in $SO(3)$ rather than merely in $O(3)$: the map $u \mapsto \digamma_{\mathrm{map},u}$ is continuous and $\mathbb{H}^1 = S^3$ is connected, so the image lies in the identity component. If $u$ lies in the kernel then $ux = xu$ for all pure $x$, in particular for $x = \vec e_x, \vec e_y, \vec e_z$, so $u$ commutes with $\vec e_x, \vec e_y, \vec e_z$ and hence lies in the centre of $\mathbb{H}$, which is $\mathbb{R}$; with $N(u) = 1$ this gives $u = \pm 1$. Thus the kernel has order two and the image is a compact connected subgroup of dimension $3$; as $SO(3)$ is connected of dimension $3$, the image is open and closed and therefore all of $SO(3)$.
 
-**Corollary.** The homomorphism $\varphi$ is a two-to-one covering, the two preimages of a rotation being antipodal unit quaternions $u$ and $-u$; consequently $SO(3)$ is homeomorphic to the quotient of $S^3$ by the antipodal map, that is, to the real projective space $\mathbb{RP}^3$, and $\pi_x(SO(3)) \cong \mathbb{Z}/2\mathbb{Z}$.
+**Corollary.** The homomorphism $\digamma_{\mathrm{map}}$ is a two-to-one covering, the two preimages of a rotation being antipodal unit quaternions $u$ and $-u$; consequently $SO(3)$ is homeomorphic to the quotient of $S^3$ by the antipodal map, that is, to the real projective space $\mathbb{RP}^3$, and $\pi_x(SO(3)) \cong \mathbb{Z}/2\mathbb{Z}$.
 
 ### The Rotation Angle
 
-**Proposition (Rodrigues form).** If $u = \cos(\theta/2) + \sin(\theta/2) n$ with $n$ a pure unit quaternion, then $\varphi_u$ is the rotation about the axis $n$ through the angle $\theta$.
+**Proposition (Rodrigues form).** If $u = \cos(\theta/2) + \sin(\theta/2) n$ with $n$ a pure unit quaternion, then $\digamma_{\mathrm{map},u}$ is the rotation about the axis $n$ through the angle $\theta$.
 
-**Proof.** Conjugation by $u$ fixes $u$ itself and hence fixes $n = u - \mathrm{Sc}(u)$ up to normalisation, so the axis is $n$. For the angle, the trace of the matrix of $\varphi_u$ on the pure part is computed from the multiplication table: writing $a = \mathrm{Sc}(u)$ and $v = \mathrm{Vect}(u)$ with $N(v) = 1 - a^2$, the diagonal entries of the matrix are $a^2 + v_1^2 - v_2^2 - v_3^2$, $a^2 - v_1^2 + v_2^2 - v_3^2$ and $a^2 - v_1^2 - v_2^2 + v_3^2$, whose sum is $3a^2 - N(v) = 4a^2 - 1$. For a rotation through $\theta$ the trace is $1 + 2\cos \theta$, so $4a^2 - 1 = 1 + 2\cos \theta$, that is, $2a^2 - 1 = \cos \theta$, which is $\cos \theta = 2\cos^2(\theta/2) - 1$ with $a = \cos(\theta/2)$.
+**Proof.** Conjugation by $u$ fixes $u$ itself and hence fixes $n = u - \mathrm{Sc}(u)$ up to normalisation, so the axis is $n$. For the angle, the trace of the matrix of $\digamma_{\mathrm{map},u}$ on the pure part is computed from the multiplication table: writing $a = \mathrm{Sc}(u)$ and $v = \mathrm{Vect}(u)$ with $N(v) = 1 - a^2$, the diagonal entries of the matrix are $a^2 + v_1^2 - v_2^2 - v_3^2$, $a^2 - v_1^2 + v_2^2 - v_3^2$ and $a^2 - v_1^2 - v_2^2 + v_3^2$, whose sum is $3a^2 - N(v) = 4a^2 - 1$. For a rotation through $\theta$ the trace is $1 + 2\cos \theta$, so $4a^2 - 1 = 1 + 2\cos \theta$, that is, $2a^2 - 1 = \cos \theta$, which is $\cos \theta = 2\cos^2(\theta/2) - 1$ with $a = \cos(\theta/2)$.
 
 The proposition explains the two-to-one cover: the quaternions $u$ and $-u$ give the same rotation, and a rotation through $2\pi$ about any axis corresponds to $\theta = 2\pi$, hence to $u = \cos \pi + \sin \pi \, n = -1$, which is not the identity of $\mathbb{H}^1$; the path $t \mapsto \cos(\pi t) + \sin(\pi t) n$ in $S^3$ joins $1$ to $-1$ and closes only after two full turns.
 
@@ -220,16 +220,16 @@ $$
 u \, \vec e_x \, u^{\natural} = \tfrac{1}{2}(1 + \vec e_z) \vec e_x (1 - \vec e_z) = \tfrac{1}{2}(\vec e_x + \vec e_y)(1 - \vec e_z) = \tfrac{1}{2}(\vec e_x + \vec e_y + \vec e_y - \vec e_x) = \vec e_y ,
 $$
 
-and similarly $u \vec e_y  u^{\natural} = -\vec e_x$ and $u \vec e_z  u^{\natural} = \vec e_z$. So $\varphi_u$ is the rotation of the $(\vec e_x, \vec e_y)$-plane through $\pi/2$, as predicted. Squaring, $u^2 = \tfrac{1}{2}(1 + \vec e_z)^2 = \vec e_z$, and indeed $\varphi_{\vec e_z}$ is the rotation through $\pi$ about $\vec e_z$, with trace $4 \cdot 0^2 - 1 = -1 = 1 + 2\cos \pi$. The example also shows that the quaternion product computes the composite of rotations: $\varphi_{u v} = \varphi_u \circ \varphi_v$ because $\varphi$ is a homomorphism.
+and similarly $u \vec e_y  u^{\natural} = -\vec e_x$ and $u \vec e_z  u^{\natural} = \vec e_z$. So $\digamma_{\mathrm{map},u}$ is the rotation of the $(\vec e_x, \vec e_y)$-plane through $\pi/2$, as predicted. Squaring, $u^2 = \tfrac{1}{2}(1 + \vec e_z)^2 = \vec e_z$, and indeed $\digamma_{\mathrm{map},\vec e_z}$ is the rotation through $\pi$ about $\vec e_z$, with trace $4 \cdot 0^2 - 1 = -1 = 1 + 2\cos \pi$. The example also shows that the quaternion product computes the composite of rotations: $\digamma_{\mathrm{map},u v} = \digamma_{\mathrm{map},u} \circ \digamma_{\mathrm{map},v}$ because $\digamma_{\mathrm{map}}$ is a homomorphism.
 
 ### SO(4) from Two Copies of SU(2)
 
 Now let $\mathbb{H} \cong \mathbb{R}^4$ and consider the two-sided action.
 
-**Theorem.** For $u, v \in \mathbb{H}^1$ the map $\psi_{(u,v)}(q) = u q v^{\natural}$ is an orthogonal transformation of $\mathbb{R}^4$ of determinant $1$, and
+**Theorem.** For $u, v \in \mathbb{H}^1$ the map $Ξ_{\mathrm{wfn},(u,v)}(q) = u q v^{\natural}$ is an orthogonal transformation of $\mathbb{R}^4$ of determinant $1$, and
 
 $$
-\psi : \mathbb{H}^1 \times \mathbb{H}^1 \longrightarrow SO(4), \qquad (u,v) \longmapsto \psi_{(u,v)},
+Ξ_{\mathrm{wfn}} : \mathbb{H}^1 \times \mathbb{H}^1 \longrightarrow SO(4), \qquad (u,v) \longmapsto Ξ_{\mathrm{wfn},(u,v)},
 $$
 
 is a surjective homomorphism with kernel $\{\pm(1,1)\}$ of order $2$. Hence
@@ -238,7 +238,7 @@ $$
 \boxed{\;SO(4) \cong (\mathbb{H}^1 \times \mathbb{H}^1)/\{\pm(1,1)\} \cong (SU(2) \times SU(2))/\{\pm(I,I)\}\;}.
 $$
 
-**Proof.** The map $\psi_{(u,v)}$ preserves the norm because $N(uqv^{\natural}) = N(u)N(q)N(v) = N(q)$, so it is orthogonal; it is the composite of left multiplication by $u$ and right multiplication by $ v^{\natural}$, and each of these has real determinant $1$: the maps $u \mapsto L_u$ and $v \mapsto R_v$ are continuous from the connected group $\mathbb{H}^1 = S^3$ into the orthogonal group $O(4)$ of $\mathbb{H} \cong \mathbb{R}^4$, so their images lie in the identity component $SO(4)$. The map is a homomorphism because each factor acts multiplicatively. Its kernel consists of the pairs with $uq = qv$ for all $q$; taking $q = 1$ gives $u = v$, and then $uq = qu$ for all $q$, so $u$ is central and, being a unit of norm $1$, is $\pm 1$. Thus the kernel has order $2$ and the image is a connected compact subgroup of dimension $6$, equal to $\dim SO(4)$; a connected subgroup of a connected group of the same dimension is open and closed, so the image is all of $SO(4)$.
+**Proof.** The map $Ξ_{\mathrm{wfn},(u,v)}$ preserves the norm because $N(uqv^{\natural}) = N(u)N(q)N(v) = N(q)$, so it is orthogonal; it is the composite of left multiplication by $u$ and right multiplication by $ v^{\natural}$, and each of these has real determinant $1$: the maps $u \mapsto L_u$ and $v \mapsto R_v$ are continuous from the connected group $\mathbb{H}^1 = S^3$ into the orthogonal group $O(4)$ of $\mathbb{H} \cong \mathbb{R}^4$, so their images lie in the identity component $SO(4)$. The map is a homomorphism because each factor acts multiplicatively. Its kernel consists of the pairs with $uq = qv$ for all $q$; taking $q = 1$ gives $u = v$, and then $uq = qu$ for all $q$, so $u$ is central and, being a unit of norm $1$, is $\pm 1$. Thus the kernel has order $2$ and the image is a connected compact subgroup of dimension $6$, equal to $\dim SO(4)$; a connected subgroup of a connected group of the same dimension is open and closed, so the image is all of $SO(4)$.
 
 **Corollary.** $SO(4)$ is not simple: the image of each factor is a normal subgroup isomorphic to $S^3/\{\pm 1\} \cong SU(2)/\{\pm I\} \cong SO(3)$, the two images intersect in $\{\pm I\}$ and together generate $SO(4)$, and the quotient by either of them is the other factor, $S^3\cong SU(2)$; the quotient by the centre $\{\pm I\}$ is $SO(3) \times SO(3)$.
 
@@ -307,8 +307,8 @@ The representations of the quaternion algebra make the lowest cases explicit. Th
 | $\mathbb{H}^1 = S^3$ | Unit quaternions; also written $Sp(1)$ |
 | $\rho(z + w\vec e_y) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ | Representation of $\mathbb{H}$ in $M_2(\mathbb{C})$, determinant $N(q)$ |
 | $\sigma_x, \sigma_y, \sigma_z$ | Pauli matrices; $\rho(\vec e_x) = i\sigma_z$, $\rho(\vec e_y) = i\sigma_y$, $\rho(\vec e_z) = i\sigma_x$ |
-| $\varphi_u(x) = u x u^{\natural}$ | Rotation by a unit quaternion; kernel $\{\pm 1\}$ of $\mathbb{H}^1 \to SO(3)$ |
-| $\psi_{(u,v)}(q) = u q  v^{\natural}$ | The map $\mathbb{H}^1 \times \mathbb{H}^1 \to SO(4)$, kernel $\{\pm(1,1)\}$ |
+| $\digamma_{\mathrm{map},u}(x) = u x u^{\natural}$ | Rotation by a unit quaternion; kernel $\{\pm 1\}$ of $\mathbb{H}^1 \to SO(3)$ |
+| $Ξ_{\mathrm{wfn},(u,v)}(q) = u q  v^{\natural}$ | The map $\mathbb{H}^1 \times \mathbb{H}^1 \to SO(4)$, kernel $\{\pm(1,1)\}$ |
 | $S^{n-1}$, $\mathbb{RP}^3$ | Unit sphere; $SO(3) \cong \mathbb{RP}^3$ |
 | $Z(G)$ | Centre of a group |
 | $\mathbb{Z}/n\mathbb{Z}$, $\mu_n$ | Cyclic group of order $n$; $n$-th roots of unity |

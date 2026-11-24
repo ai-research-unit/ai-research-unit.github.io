@@ -44,17 +44,17 @@ No physics is invoked.
 
 **Proof sketch.** A Herman ring has two invariant boundary circles, and each is mapped homeomorphically onto itself by $f^p$; on each the map is conjugate to the same irrational rotation, and the classical argument of Herman shows that a Herman ring forces the two complementary components of the ring to be exchanged by $f^p$ and each to contain a **pole** of the map, so that a Herman ring requires at least two poles. A polynomial has a single pole, at $\infty$, which lies in the unbounded component, so the configuration is impossible and a polynomial has no Herman rings. For the simple connectivity, every bounded component of $F$ lies in the basin of an attracting or parabolic cycle or is a Siegel disc, and each of these is simply connected: the basin of an attracting or parabolic point has the point or the parabolic cycle in its closure and is a union of preimages of a simply connected immediate basin, and the Siegel disc is a disc by definition. The details are in *The Geometry of the Julia Sets*.
 
-**Theorem (Böttcher).** Let $f$ be a polynomial of degree $d \geq 2$. There is a conformal map $\varphi$ from a neighbourhood of $\infty$ onto the complement of a closed disk, with
+**Theorem (Böttcher).** Let $f$ be a polynomial of degree $d \geq 2$. There is a conformal map $\digamma_{\mathrm{map}}$ from a neighbourhood of $\infty$ onto the complement of a closed disk, with
 
-$$\boxed{\;\varphi(f(z)) = \varphi(z)^d , \qquad \varphi(z) \sim z \ \text{as } z \to \infty\;},$$
+$$\boxed{\;\digamma_{\mathrm{map}}(f(z)) = \digamma_{\mathrm{map}}(z)^d , \qquad \digamma_{\mathrm{map}}(z) \sim z \ \text{as } z \to \infty\;},$$
 
-the **Böttcher coordinate**. If $K(f)$ is connected then $\varphi$ extends conformally to the whole basin of $\infty$, $A(\infty) \to \hat{\mathbb{C}} \setminus \overline{\mathbb{U}}$, and the basin of $\infty$ is simply connected.
+the **Böttcher coordinate**. If $K(f)$ is connected then $\digamma_{\mathrm{map}}$ extends conformally to the whole basin of $\infty$, $A(\infty) \to \hat{\mathbb{C}} \setminus \overline{\mathbb{U}}$, and the basin of $\infty$ is simply connected.
 
-**Proof sketch.** Near $\infty$ the map $f$ is conjugate, by the local coordinate $w = 1/z$, to a holomorphic map tangent to $w \mapsto w^d$ at $w = 0$; the local inverse branches and the estimate $\varphi_n(z) = f^n(z)^{1/d^n}$ converge locally uniformly off $K$, defining $\varphi$ as the limit of the root $d^n$-th of the iterates. The convergence and the functional equation are the content of the theorem; the extension to the basin when $K$ is connected is the monodromy of the root along the simply connected complement. The Green's function $G = \log|\varphi|$ is the subject of *The Escape Radius and the Green's Function*.
+**Proof sketch.** Near $\infty$ the map $f$ is conjugate, by the local coordinate $w = 1/z$, to a holomorphic map tangent to $w \mapsto w^d$ at $w = 0$; the local inverse branches and the estimate $\digamma_{\mathrm{map},n}(z) = f^n(z)^{1/d^n}$ converge locally uniformly off $K$, defining $\digamma_{\mathrm{map}}$ as the limit of the root $d^n$-th of the iterates. The convergence and the functional equation are the content of the theorem; the extension to the basin when $K$ is connected is the monodromy of the root along the simply connected complement. The Green's function $G = \log|\digamma_{\mathrm{map}}|$ is the subject of *The Escape Radius and the Green's Function*.
 
 **Theorem (Leau–Fatou–Julia–Ritt).** Let $f$ have a parabolic fixed point at $0$ with multiplier a primitive $q$-th root of unity, and let $k+1$ be the multiplicity of the fixed point of $f^q$ at $0$. Then there are $k$ **attracting petals** and $k$ **repelling petals**, each a simply connected domain with vertex at $0$, on each of which $f^q$ is conformally conjugate to the translation $w \mapsto w+1$; the union of the petals is a punctured neighbourhood of $0$, and the petals are exchanged by the dynamics. The same statement holds at a parabolic cycle.
 
-**Proof sketch.** After a change of variable the germ reads $f^q(z) = z + z^{k+1} + \cdots$; the Fatou coordinate in the direction of a petal is $\psi(z) = -1/(kz^k) + \cdots$, which satisfies $\psi(f^q(z)) = \psi(z) + 1$, and the petals are the preimages under $\psi$ of the half-planes of the form $\{\operatorname{Re} w > R\}$ and $\{\operatorname{Re} w < -R\}$. The statement at a cycle follows by applying the result to a suitable iterate.
+**Proof sketch.** After a change of variable the germ reads $f^q(z) = z + z^{k+1} + \cdots$; the Fatou coordinate in the direction of a petal is $Ξ_{\mathrm{wfn}}(z) = -1/(kz^k) + \cdots$, which satisfies $Ξ_{\mathrm{wfn}}(f^q(z)) = Ξ_{\mathrm{wfn}}(z) + 1$, and the petals are the preimages under $Ξ_{\mathrm{wfn}}$ of the half-planes of the form $\{\operatorname{Re} w > R\}$ and $\{\operatorname{Re} w < -R\}$. The statement at a cycle follows by applying the result to a suitable iterate.
 
 **Corollary (classification for polynomials).** Every periodic Fatou component of a polynomial of degree $d \geq 2$ is an attracting basin, a parabolic basin or a Siegel disc. The attracting and parabolic basins contain critical points of $f^p$, and a polynomial of degree $d$ has at most $d-1$ attracting cycles.
 
@@ -98,7 +98,7 @@ For a polynomial the list shortens: there are no Herman rings, every Fatou compo
 | parabolic basin | Basin of a parabolic cycle, with the Leau–Fatou petals |
 | Siegel disc | Component on which $f^p$ is conjugate to a rigid rotation |
 | Herman ring | Annular component with a rigid rotation; absent for polynomials |
-| $\varphi$ | Böttcher coordinate, $\varphi(f(z)) = \varphi(z)^d$ |
+| $\digamma_{\mathrm{map}}$ | Böttcher coordinate, $\digamma_{\mathrm{map}}(f(z)) = \digamma_{\mathrm{map}}(z)^d$ |
 | petals, Fatou coordinate | Domains of conjugacy to a translation at a parabolic cycle |
 | no-wandering-domains theorem | Every Fatou component is eventually periodic (Sullivan) |
 | Brjuno condition | Arithmetical condition for linearisability at an indifferent fixed point |

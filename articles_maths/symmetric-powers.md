@@ -174,7 +174,7 @@ $$
 M^n \longrightarrow P_n, \qquad (u_1, \ldots, u_n) \longmapsto \prod_{j=1}^{n} \Bigl(\sum_{i=1}^{d} u_{j,i}  x_i\Bigr),
 $$
 
-where $u_j = \sum_i u_{j,i} e_i$, is symmetric multilinear, so by the universal property it induces an $R$-linear map $\Phi : \operatorname{sym}^n M \to P_n$ with $\Phi(\exp(a)) = x^a$. In the other direction let $\psi : P_n \to \operatorname{sym}^n M$ be the unique $R$-linear map on the basis with $\psi(x^a) = \exp(a)$. Then $\Phi\psi = \operatorname{id}_{P_n}$ because it fixes the basis, and $\psi\Phi(\exp(a)) = \psi(x^a) = \exp(a)$ for every $a$, so $\psi\Phi = \operatorname{id}_{\operatorname{sym}^n M}$ because the $\exp(a)$ span. Hence $\Phi$ is an isomorphism and the $\exp(a)$ are a basis.
+where $u_j = \sum_i u_{j,i} e_i$, is symmetric multilinear, so by the universal property it induces an $R$-linear map $\Phi : \operatorname{sym}^n M \to P_n$ with $\Phi(\exp(a)) = x^a$. In the other direction let $Ξ_{\mathrm{wfn}} : P_n \to \operatorname{sym}^n M$ be the unique $R$-linear map on the basis with $Ξ_{\mathrm{wfn}}(x^a) = \exp(a)$. Then $\PhiΞ_{\mathrm{wfn}} = \operatorname{id}_{P_n}$ because it fixes the basis, and $Ξ_{\mathrm{wfn}}\Phi(\exp(a)) = Ξ_{\mathrm{wfn}}(x^a) = \exp(a)$ for every $a$, so $Ξ_{\mathrm{wfn}}\Phi = \operatorname{id}_{\operatorname{sym}^n M}$ because the $\exp(a)$ span. Hence $\Phi$ is an isomorphism and the $\exp(a)$ are a basis.
 
 Equivalently, the map $R[x_1, \ldots, x_d] \to \operatorname{sym}(R^d)$ sending $x_i \mapsto e_i$ is an isomorphism of graded algebras; this identification is developed.
 

@@ -152,14 +152,14 @@ $$
 in which
 
 $$
-\boxed{\;\pi = \sum_{i=1}^{r} \partial/\partial q_i\wedge\partial/\partial p_i + \frac{1}{2}\sum_{j,k} \phi_{jk}(y)\, \partial/\partial y_j\wedge\partial/\partial y_k, \qquad \phi_{jk}(0) = 0\;} .
+\boxed{\;\pi = \sum_{i=1}^{r} \partial/\partial q_i\wedge\partial/\partial p_i + \frac{1}{2}\sum_{j,k} \digamma_{\mathrm{map},jk}(y)\, \partial/\partial y_j\wedge\partial/\partial y_k, \qquad \digamma_{\mathrm{map},jk}(0) = 0\;} .
 $$
 
 Consequently the Poisson structure is locally the product of a symplectic structure of dimension $2r$ and a Poisson structure whose rank vanishes at the origin, and the symplectic leaf through $x$ is locally the slice $y = 0$.
 
-**Proof sketch.** The first term is the symplectic normal form along the leaf, produced by the symplectic Darboux theorem applied to the restriction of $\pi$ to the leaf and a complementary choice of coordinates; the remaining part is the **transverse Poisson structure**, defined on a complement to the leaf, and it is Poisson because the bracket of two functions of the transverse coordinates is again a function of them. The vanishing $\phi_{jk}(0)=0$ is the statement that the rank at the origin is exactly $2r$, so the transverse structure vanishes there.
+**Proof sketch.** The first term is the symplectic normal form along the leaf, produced by the symplectic Darboux theorem applied to the restriction of $\pi$ to the leaf and a complementary choice of coordinates; the remaining part is the **transverse Poisson structure**, defined on a complement to the leaf, and it is Poisson because the bracket of two functions of the transverse coordinates is again a function of them. The vanishing $\digamma_{\mathrm{map},jk}(0)=0$ is the statement that the rank at the origin is exactly $2r$, so the transverse structure vanishes there.
 
-**Remark.** The splitting theorem is the sharp local statement of Poisson geometry, and it is the reason a Poisson manifold is described as a foliation by symplectic leaves with a transverse singular structure. In the nondegenerate case $r = n/2$ it reduces to the Darboux theorem of *Symplectic Geometry*; in the Lie–Poisson case the leaves are the coadjoint orbits and the splitting is the theorem of Lie–Weinstein on the linearisation of a Poisson structure at a point. The local normal form is not a classification: the transverse factor $\phi$ has no linear term and its higher terms are arbitrary solutions of the Poisson condition, so two Poisson structures of the same rank at a point need not be locally isomorphic, and the classification of Poisson structures in dimension three is already a nontrivial problem.
+**Remark.** The splitting theorem is the sharp local statement of Poisson geometry, and it is the reason a Poisson manifold is described as a foliation by symplectic leaves with a transverse singular structure. In the nondegenerate case $r = n/2$ it reduces to the Darboux theorem of *Symplectic Geometry*; in the Lie–Poisson case the leaves are the coadjoint orbits and the splitting is the theorem of Lie–Weinstein on the linearisation of a Poisson structure at a point. The local normal form is not a classification: the transverse factor $\digamma_{\mathrm{map}}$ has no linear term and its higher terms are arbitrary solutions of the Poisson condition, so two Poisson structures of the same rank at a point need not be locally isomorphic, and the classification of Poisson structures in dimension three is already a nontrivial problem.
 
 ## Poisson Maps and Poisson Cohomology
 
@@ -231,7 +231,7 @@ A Poisson map preserves the bracket, a coisotropic submanifold is one whose vani
 | $[\pi,\pi]=0$ | The Poisson condition; equivalent to the Jacobi identity |
 | Casimir | $f$ with $\{f,g\}=0$ for all $g$; centre of $C^\infty(M)$ |
 | Symplectic leaf | Orbit under the Hamiltonian flows; carries a symplectic form |
-| $(q_i, p_i, y_j)$ | Weinstein splitting coordinates; $\pi = \sum\partial/\partial q_i\wedge\partial/\partial p_i + \frac12\sum\phi_{jk}(y)\partial/\partial y_j\wedge\partial/\partial y_k$ |
+| $(q_i, p_i, y_j)$ | Weinstein splitting coordinates; $\pi = \sum\partial/\partial q_i\wedge\partial/\partial p_i + \frac12\sum\digamma_{\mathrm{map},jk}(y)\partial/\partial y_j\wedge\partial/\partial y_k$ |
 | $\mathrm{G}^*$, $\{f,g\}(\zeta)=\langle\zeta,[df,dg]\rangle$ | Lie–Poisson structure on the dual of a Lie algebra |
 | Poisson map $F$ | $\{f\circ F, g\circ F\} = \{f,g\}\circ F$ |
 | Coisotropic submanifold | Vanishing ideal closed under the bracket; $\pi^{\sharp}(TC^{\circ})\subseteq TC$ |

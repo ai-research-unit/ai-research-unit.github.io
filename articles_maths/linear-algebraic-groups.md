@@ -49,7 +49,7 @@ with coordinate ring $k[GL_n] = k[x_{ij}, d^{-1}]$ where $d = \det(x_{ij})$ is t
 
 ### Linear Algebraic Groups and their Morphisms
 
-**Definition.** A **linear algebraic group over $k$** is a closed subgroup $G \subseteq GL_n$ over $k$ for some $n$: a subgroup that is the zero set of a family of polynomial functions on $GL_n$ with coefficients in $k$. The subspace topology on $G$ is the **Zariski topology** of $G$, and $G$ is a reduced affine variety with a group structure for which the operations are morphisms. The group of **$k$-points** is $G(k) = G \cap GL_n(k)$. A **morphism** $\varphi : G \to H$ of linear algebraic groups over $k$ is a group homomorphism that is a polynomial map with coefficients in $k$; it is an **isomorphism** if it is bijective with polynomial inverse, and an **isogeny** if it is surjective with finite kernel.
+**Definition.** A **linear algebraic group over $k$** is a closed subgroup $G \subseteq GL_n$ over $k$ for some $n$: a subgroup that is the zero set of a family of polynomial functions on $GL_n$ with coefficients in $k$. The subspace topology on $G$ is the **Zariski topology** of $G$, and $G$ is a reduced affine variety with a group structure for which the operations are morphisms. The group of **$k$-points** is $G(k) = G \cap GL_n(k)$. A **morphism** $\digamma_{\mathrm{map}} : G \to H$ of linear algebraic groups over $k$ is a group homomorphism that is a polynomial map with coefficients in $k$; it is an **isomorphism** if it is bijective with polynomial inverse, and an **isogeny** if it is surjective with finite kernel.
 
 **Example (the basic list).** The following closed subgroups of $GL_n$ are the standard examples, defined over any field containing the coefficients of the equations:
 

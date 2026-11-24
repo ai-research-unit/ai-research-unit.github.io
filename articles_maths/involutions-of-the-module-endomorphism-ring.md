@@ -33,10 +33,10 @@ For the adjoint of a $\sigma$-sesquilinear pairing the map $f \mapsto f^{*}$ is 
 
 ### Conjugation and isomorphism
 
-**Definition.** Two involutions $\mathrm{J}$ and $\mathrm{J}'$ of $E$ are **isomorphic** when there is an $R$-algebra automorphism $\varphi$ of $E$ with
+**Definition.** Two involutions $\mathrm{J}$ and $\mathrm{J}'$ of $E$ are **isomorphic** when there is an $R$-algebra automorphism $\digamma_{\mathrm{map}}$ of $E$ with
 
 $$
-\mathrm{J}'=\varphi\,\mathrm{J}\,\varphi^{-1}.
+\mathrm{J}'=\digamma_{\mathrm{map}}\,\mathrm{J}\,\digamma_{\mathrm{map}}^{-1}.
 $$
 
 The group $E^{\times}$ acts on the set of involutions by **inner conjugation**,
@@ -145,7 +145,7 @@ The general question — which involutions of an endomorphism ring are adjointab
 
 **Proposition.** Isomorphic involutions induce conjugate automorphisms of the centre; consequently the first-kind and second-kind classes are isomorphism invariants, and within one kind the fixed part of the centre is an invariant.
 
-*Proof.* An isomorphism $\varphi$ carries $Z(E)$ into $Z(E)$ and intertwines the two restrictions.
+*Proof.* An isomorphism $\digamma_{\mathrm{map}}$ carries $Z(E)$ into $Z(E)$ and intertwines the two restrictions.
 
 ## Examples
 

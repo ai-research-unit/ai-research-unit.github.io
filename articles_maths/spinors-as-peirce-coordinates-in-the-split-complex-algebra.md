@@ -17,7 +17,7 @@ $$
 The coordinate array is diagonal, and the two columns are
 
 $$
-\psi^{(+)}=(Q_{+},0),\qquad \psi^{(-)}=(0,Q_{-}).
+Ξ_{\mathrm{wfn}}^{(+)}=(Q_{+},0),\qquad Ξ_{\mathrm{wfn}}^{(-)}=(0,Q_{-}).
 $$
 
 Each column has one nonzero entry. The vanishing of the other entry is not a choice: it is the vanishing of the mixed Peirce component $\mathbb{C}_{\mathrm{spl},+-}=0$.
@@ -59,7 +59,7 @@ The Peirce coordinates of the split-complex algebra are $Q_{\pm}=q\pm q'$, and t
 | Symbol | Meaning |
 |---|---|
 | $Q_{\pm}=q\pm q'$ | The Peirce coordinates |
-| $\psi^{(\pm)}$ | The column of index $\pm$ |
+| $Ξ_{\mathrm{wfn}}^{(\pm)}$ | The column of index $\pm$ |
 | $\Pi_{\pm}$ | The idempotents, the basis units |
 
 ## Further Reading

@@ -45,7 +45,7 @@ $$
 (r1_A)(s1_A) = r\bigl(1_A(s1_A)\bigr) = r\bigl(s(1_A1_A)\bigr) = rs\,1_A = \eta(rs),
 $$
 
-and $\eta(1_R) = 1_R1_A = 1_A$. (2) For $a \in A$ the first $R$-linearity axiom and the identity give $(r1_A)a = r(1_Aa) = ra$, and the second gives $a(r1_A) = r(a1_A) = ra$; hence $(r1_A)a = a(r1_A)$ and $r1_A \in Z(A)$. (3) A unital $R$-subalgebra contains $1_A$, hence contains $r1_A$ for every $r$, so it contains $R\cdot1_A$; and that set is closed under the operations because $\eta$ is a ring homomorphism and the product is $R$-bilinear. A unital homomorphism $\varphi : R \to A$ has $\varphi(r) = \varphi(r1_R) = r\varphi(1_R) = r1_A = \eta(r)$ by $R$-linearity and unitality, so it is $\eta$.
+and $\eta(1_R) = 1_R1_A = 1_A$. (2) For $a \in A$ the first $R$-linearity axiom and the identity give $(r1_A)a = r(1_Aa) = ra$, and the second gives $a(r1_A) = r(a1_A) = ra$; hence $(r1_A)a = a(r1_A)$ and $r1_A \in Z(A)$. (3) A unital $R$-subalgebra contains $1_A$, hence contains $r1_A$ for every $r$, so it contains $R\cdot1_A$; and that set is closed under the operations because $\eta$ is a ring homomorphism and the product is $R$-bilinear. A unital homomorphism $\digamma_{\mathrm{map}} : R \to A$ has $\digamma_{\mathrm{map}}(r) = \digamma_{\mathrm{map}}(r1_R) = r\digamma_{\mathrm{map}}(1_R) = r1_A = \eta(r)$ by $R$-linearity and unitality, so it is $\eta$.
 
 The centrality in statement (2) is not a technicality: it is exactly what makes the multiplication by scalars compatible with the multiplication of $A$ in both variables.
 
@@ -152,27 +152,27 @@ $$
 
 and the two differ by the difference of $a(bc)$ and $(ab)c$, which is zero exactly when $A$ is associative, all other terms agreeing.
 
-**Theorem (universal property).** Let $A$ be an $R$-algebra and let $B$ be a unital associative $R$-algebra. Then every $R$-algebra homomorphism $\varphi : A \to B$ extends uniquely to a unital $R$-algebra homomorphism $\varphi^+ : A^+ \to B$, given by
+**Theorem (universal property).** Let $A$ be an $R$-algebra and let $B$ be a unital associative $R$-algebra. Then every $R$-algebra homomorphism $\digamma_{\mathrm{map}} : A \to B$ extends uniquely to a unital $R$-algebra homomorphism $\digamma_{\mathrm{map}}^+ : A^+ \to B$, given by
 
 $$
-\boxed{\;\varphi^+(a, r) = \varphi(a) + r\,1_B\;} .
+\boxed{\;\digamma_{\mathrm{map}}^+(a, r) = \digamma_{\mathrm{map}}(a) + r\,1_B\;} .
 $$
 
 Equivalently, restriction along the inclusion $A \hookrightarrow A^+$ is a bijection $\operatorname{Hom}^{1}_{R\text{-alg}}(A^+, B) \to \operatorname{Hom}_{R\text{-alg}}(A, B)$, natural in $A$ and in $B$: the unitisation is left adjoint to the forgetful functor from unital associative $R$-algebras to $R$-algebras.
 
-*Proof.* The map $\varphi^+$ is $R$-linear, and it is multiplicative:
+*Proof.* The map $\digamma_{\mathrm{map}}^+$ is $R$-linear, and it is multiplicative:
 
 $$
-\varphi^+\bigl((a,r)(b,s)\bigr) = \varphi(ab + rb + sa) + rs\,1_B = \varphi(a)\varphi(b) + r\varphi(b) + s\varphi(a) + rs\,1_B,
+\digamma_{\mathrm{map}}^+\bigl((a,r)(b,s)\bigr) = \digamma_{\mathrm{map}}(ab + rb + sa) + rs\,1_B = \digamma_{\mathrm{map}}(a)\digamma_{\mathrm{map}}(b) + r\digamma_{\mathrm{map}}(b) + s\digamma_{\mathrm{map}}(a) + rs\,1_B,
 $$
 
 while
 
 $$
-\varphi^+(a,r)\varphi^+(b,s) = \bigl(\varphi(a) + r1_B\bigr)\bigl(\varphi(b) + s1_B\bigr) = \varphi(a)\varphi(b) + s\varphi(a) + r\varphi(b) + rs\,1_B ,
+\digamma_{\mathrm{map}}^+(a,r)\digamma_{\mathrm{map}}^+(b,s) = \bigl(\digamma_{\mathrm{map}}(a) + r1_B\bigr)\bigl(\digamma_{\mathrm{map}}(b) + s1_B\bigr) = \digamma_{\mathrm{map}}(a)\digamma_{\mathrm{map}}(b) + s\digamma_{\mathrm{map}}(a) + r\digamma_{\mathrm{map}}(b) + rs\,1_B ,
 $$
 
-the two being equal, the middle two terms differing only in their order. It is unital because $\varphi^+(0,1) = 1_B$. If $\psi : A^+ \to B$ is a unital homomorphism that restricts to $\varphi$ on $A$, then $\psi(0,1) = 1_B$ and hence $\psi(a,r) = \psi(a,0) + \psi(0,r) = \varphi(a) + r\,1_B$ by linearity, which is $\varphi^+$; so the extension is unique. Naturality is the identity $\varphi^+(f^+(a,r)) = (\varphi f)^+(a,r)$ for a homomorphism $f : A \to A'$, immediate from the definitions.
+the two being equal, the middle two terms differing only in their order. It is unital because $\digamma_{\mathrm{map}}^+(0,1) = 1_B$. If $Ξ_{\mathrm{wfn}} : A^+ \to B$ is a unital homomorphism that restricts to $\digamma_{\mathrm{map}}$ on $A$, then $Ξ_{\mathrm{wfn}}(0,1) = 1_B$ and hence $Ξ_{\mathrm{wfn}}(a,r) = Ξ_{\mathrm{wfn}}(a,0) + Ξ_{\mathrm{wfn}}(0,r) = \digamma_{\mathrm{map}}(a) + r\,1_B$ by linearity, which is $\digamma_{\mathrm{map}}^+$; so the extension is unique. Naturality is the identity $\digamma_{\mathrm{map}}^+(f^+(a,r)) = (\digamma_{\mathrm{map}} f)^+(a,r)$ for a homomorphism $f : A \to A'$, immediate from the definitions.
 
 **Corollary (functoriality).** For an $R$-algebra homomorphism $f : A \to A'$, the assignment $f^+(a,r) = (f(a), r)$ is a unital $R$-algebra homomorphism $A^+ \to A'{}^+$, and the unitisation is a functor. The unitisation of a unital algebra gains nothing and loses nothing: for unital $A$ the map
 
@@ -194,25 +194,25 @@ the middle equality being the expansion of the product in the unital algebra $A$
 
 ## Homomorphisms and the Identity
 
-**Definition.** A homomorphism $\varphi : A \to B$ of unital $R$-algebras is **unital** if $\varphi(1_A) = 1_B$.
+**Definition.** A homomorphism $\digamma_{\mathrm{map}} : A \to B$ of unital $R$-algebras is **unital** if $\digamma_{\mathrm{map}}(1_A) = 1_B$.
 
 This is the definition used in *Ideals and Quotients of Algebras*, and it is not automatic.
 
-**Theorem.** Let $\varphi : A \to B$ be an $R$-algebra homomorphism of unital algebras.
+**Theorem.** Let $\digamma_{\mathrm{map}} : A \to B$ be an $R$-algebra homomorphism of unital algebras.
 
-1. $\varphi(1_A)$ is an idempotent of $B$, and $\varphi$ is unital if and only if that idempotent is $1_B$.
-2. If $\varphi$ is unital then $\varphi(A^\times) \subseteq B^\times$, and $\varphi$ restricts to a group homomorphism $A^\times \to B^\times$, $u \mapsto \varphi(u)$, with $\varphi(u^{-1}) = \varphi(u)^{-1}$.
-3. Conversely, if $\varphi$ maps some invertible of $A$ to an invertible of $B$, then $\varphi$ is unital.
+1. $\digamma_{\mathrm{map}}(1_A)$ is an idempotent of $B$, and $\digamma_{\mathrm{map}}$ is unital if and only if that idempotent is $1_B$.
+2. If $\digamma_{\mathrm{map}}$ is unital then $\digamma_{\mathrm{map}}(A^\times) \subseteq B^\times$, and $\digamma_{\mathrm{map}}$ restricts to a group homomorphism $A^\times \to B^\times$, $u \mapsto \digamma_{\mathrm{map}}(u)$, with $\digamma_{\mathrm{map}}(u^{-1}) = \digamma_{\mathrm{map}}(u)^{-1}$.
+3. Conversely, if $\digamma_{\mathrm{map}}$ maps some invertible of $A$ to an invertible of $B$, then $\digamma_{\mathrm{map}}$ is unital.
 
-*Proof.* (1) $\varphi(1_A)^2 = \varphi(1_A1_A) = \varphi(1_A)$, so the image of the identity is idempotent; it equals $1_B$ exactly when $\varphi$ is unital. (2) If $u \in A^\times$ then $\varphi(u)\varphi(u^{-1}) = \varphi(uu^{-1}) = \varphi(1_A) = 1_B$ and likewise on the other side, so $\varphi(u) \in B^\times$ with inverse $\varphi(u^{-1})$. (3) Suppose $u \in A^\times$ and $\varphi(u) \in B^\times$, and let $e = \varphi(1_A)$. Since $\varphi(u1_A) = \varphi(u)e$ and $\varphi(u1_A) = \varphi(u)$, the idempotent $e$ satisfies $\varphi(u)e = \varphi(u)$; multiplying this on the left by the inverse of $\varphi(u)$ gives $e = 1_B$, so $\varphi$ is unital.
+*Proof.* (1) $\digamma_{\mathrm{map}}(1_A)^2 = \digamma_{\mathrm{map}}(1_A1_A) = \digamma_{\mathrm{map}}(1_A)$, so the image of the identity is idempotent; it equals $1_B$ exactly when $\digamma_{\mathrm{map}}$ is unital. (2) If $u \in A^\times$ then $\digamma_{\mathrm{map}}(u)\digamma_{\mathrm{map}}(u^{-1}) = \digamma_{\mathrm{map}}(uu^{-1}) = \digamma_{\mathrm{map}}(1_A) = 1_B$ and likewise on the other side, so $\digamma_{\mathrm{map}}(u) \in B^\times$ with inverse $\digamma_{\mathrm{map}}(u^{-1})$. (3) Suppose $u \in A^\times$ and $\digamma_{\mathrm{map}}(u) \in B^\times$, and let $e = \digamma_{\mathrm{map}}(1_A)$. Since $\digamma_{\mathrm{map}}(u1_A) = \digamma_{\mathrm{map}}(u)e$ and $\digamma_{\mathrm{map}}(u1_A) = \digamma_{\mathrm{map}}(u)$, the idempotent $e$ satisfies $\digamma_{\mathrm{map}}(u)e = \digamma_{\mathrm{map}}(u)$; multiplying this on the left by the inverse of $\digamma_{\mathrm{map}}(u)$ gives $e = 1_B$, so $\digamma_{\mathrm{map}}$ is unital.
 
-**Example (homomorphisms that do not preserve the identity).** The zero homomorphism $A \to B$ between nonzero unital algebras is not unital; it sends $1_A$ to the idempotent $0$. For an associative unital algebra $A$ and a central idempotent $e \in Z(A)$ the map $\varphi(a) = eae$ is an algebra homomorphism, since
+**Example (homomorphisms that do not preserve the identity).** The zero homomorphism $A \to B$ between nonzero unital algebras is not unital; it sends $1_A$ to the idempotent $0$. For an associative unital algebra $A$ and a central idempotent $e \in Z(A)$ the map $\digamma_{\mathrm{map}}(a) = eae$ is an algebra homomorphism, since
 
 $$
-\varphi(a)\varphi(b) = eaebe = e^2abe = eab e = \varphi(ab)
+\digamma_{\mathrm{map}}(a)\digamma_{\mathrm{map}}(b) = eaebe = e^2abe = eab e = \digamma_{\mathrm{map}}(ab)
 $$
 
-using $e$ central and idempotent, with $\varphi(1_A) = e$; it is unital exactly when $e = 1_A$. Its image is the ideal $Ae$, and for $A = R \times R$ and $e = (1,0)$ it is the projection onto the first factor.
+using $e$ central and idempotent, with $\digamma_{\mathrm{map}}(1_A) = e$; it is unital exactly when $e = 1_A$. Its image is the ideal $Ae$, and for $A = R \times R$ and $e = (1,0)$ it is the projection onto the first factor.
 
 **Remark (why the corpus insists).** The distinction between the two notions of homomorphism is not a convention of convenience. A unital homomorphism is what makes the passage to units a functor, as statement (2) shows; it is what the universal properties of the unitisation and of the enveloping algebra of *Universal Enveloping Algebras* quantify over; it is what makes a quotient map $A \to A/I$ unital and therefore makes the quotient of a unital algebra unital; and it is what makes the augmentation $k[G] \to k$ of *Group Algebras*, $g \mapsto 1$, a unital homomorphism whose kernel is the augmentation ideal. A module over a unital algebra is required to be **unital**, $1 \cdot m = m$, for the same reason: the identity of the algebra must act as the identity of the module, and the representation theory of *Group Algebras* and *Matrix Algebras* is the theory of unital modules.
 
@@ -258,7 +258,7 @@ $$
 
 onto the product of $Ae$ and $Af$ with the identity $e$ and $1_A - e$ respectively.
 
-*Proof.* If $e \in Z(A)$ then $eAf = (eA)f = (Ae)f = A(ef) = 0$, and similarly $fAe = 0$, so the four-corner sum collapses to the two diagonal corners; also $a \mapsto ae$ is $R$-linear, and $a(xe) = (ax)e$ and $(xe)a = (xa)e$ show that $Ae$ is an ideal, likewise $Af$. The map $\varphi(a) = (ae, af)$ is additive and multiplicative, since $(ae)(be) = aebe = ab e^2 = abe$ using the centrality of $e$, and the same for $f$; the cross terms never occur because $\varphi(ab) = (abe, abf)$ already has the two components separate. It is unital, $\varphi(1_A) = (e, f)$, which is the identity of the product. It is injective because $ae = 0$ and $af = 0$ give $a = a(e+f) = 0$, and surjective because an element of $Ae \times Af$ is $(xe, yf)$ and is the image of $xe + yf$, with $\varphi(xe+yf) = (xe, yf)$ since $fe = 0$ and $ef = 0$.
+*Proof.* If $e \in Z(A)$ then $eAf = (eA)f = (Ae)f = A(ef) = 0$, and similarly $fAe = 0$, so the four-corner sum collapses to the two diagonal corners; also $a \mapsto ae$ is $R$-linear, and $a(xe) = (ax)e$ and $(xe)a = (xa)e$ show that $Ae$ is an ideal, likewise $Af$. The map $\digamma_{\mathrm{map}}(a) = (ae, af)$ is additive and multiplicative, since $(ae)(be) = aebe = ab e^2 = abe$ using the centrality of $e$, and the same for $f$; the cross terms never occur because $\digamma_{\mathrm{map}}(ab) = (abe, abf)$ already has the two components separate. It is unital, $\digamma_{\mathrm{map}}(1_A) = (e, f)$, which is the identity of the product. It is injective because $ae = 0$ and $af = 0$ give $a = a(e+f) = 0$, and surjective because an element of $Ae \times Af$ is $(xe, yf)$ and is the image of $xe + yf$, with $\digamma_{\mathrm{map}}(xe+yf) = (xe, yf)$ since $fe = 0$ and $ef = 0$.
 
 **Remark (why centrality is needed).** Without it the Peirce pieces are not ideals and no product decomposition follows, so the Peirce decomposition is strictly finer than the decomposition by central idempotents. For $A = M_2(k)$ the idempotent $E_{11}$ does not commute with $E_{12}$ and so is not central, and the decomposition is $M_2(k) = kE_{11} \oplus kE_{12} \oplus kE_{21} \oplus kE_{22}$, four one-dimensional Peirce spaces none of which is two-sided; $M_2(k)$ is simple, so its only two-sided ideals are $0$ and $M_2(k)$, and no product decomposition exists (*Matrix Algebras*, §*Ideals and Simplicity*). The Peirce spaces of $E_{11}$ are the matrix units, the observations $E_{11}\mathsf{M}_2E_{22} = kE_{12}$ and $E_{22}\mathsf{M}_2E_{11} = kE_{21}$ being the two off-diagonal corners of *Matrix Algebras*, §*Matrix Units*. The endomorphism ring of a module gives the same corners in the general form $M = eM \oplus (1-e)M$ (*Direct Sums, Free Modules and Rank*, §*Direct Summands and Idempotents*).
 
@@ -313,8 +313,8 @@ The non-unital algebras of the corpus are the polynomials of positive degree, th
 | $k^\times G \subseteq k[G]^\times$ | The invertibles of a group algebra over a field $k$, as in *Group Algebras*, §*Invertibles and Zero Divisors* |
 | $(x) \subseteq R[x]$ | The polynomials of positive degree, a non-unital algebra |
 | $A^+ = A \oplus R$ | The unitisation, with $(a,r)(b,s) = (ab+rb+sa, rs)$ and identity $(0,1)$; not the symmetrised algebra $A^+$ of *Jordan Algebras* |
-| $\varphi^+$ | The unique unital extension $A^+ \to B$ of $\varphi : A \to B$, $\varphi^+(a,r) = \varphi(a) + r1_B$ |
-| $\varphi(1_A)$ | Idempotent in $B$; $\varphi$ unital exactly when it is $1_B$ |
+| $\digamma_{\mathrm{map}}^+$ | The unique unital extension $A^+ \to B$ of $\digamma_{\mathrm{map}} : A \to B$, $\digamma_{\mathrm{map}}^+(a,r) = \digamma_{\mathrm{map}}(a) + r1_B$ |
+| $\digamma_{\mathrm{map}}(1_A)$ | Idempotent in $B$; $\digamma_{\mathrm{map}}$ unital exactly when it is $1_B$ |
 | $e$, $e^2 = e$ | An idempotent; **central** when $e \in Z(A)$, and then it splits $A$ as the product $Ae \times A(1_A - e)$ |
 | $eAe$, $eAf$, $fAe$, $fAf$ | The Peirce spaces of $e$, with $f = 1_A - e$; the diagonal corners are subalgebras with identities $e$ and $f$ |
 | $I(G) \subseteq k[G]$ | The augmentation ideal of a group algebra; unital as an algebra for $G = \mathbb{Z}/2$ over a field of characteristic not $2$ |

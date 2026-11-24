@@ -53,7 +53,7 @@ the $m$-dimensional volume of the image of the unit $m$-cube under the different
 $$
 \boxed{\;\int_AJ_mf\,dx = \int_{\mathbb{R}^n}\mathcal{H}^0\bigl(A\cap f^{-1}(y)\bigr)\,d\mathcal{H}^m(y)\;},
 $$
-and more generally $\int_A\varphi(f(x))J_mf(x)dx = \int\varphi(y)N(f,A,y)d\mathcal{H}^m(y)$ for Borel $\varphi\geq0$, where $N(f,A,y)$ is the number of preimages in $A$.
+and more generally $\int_A\digamma_{\mathrm{map}}(f(x))J_mf(x)dx = \int\digamma_{\mathrm{map}}(y)N(f,A,y)d\mathcal{H}^m(y)$ for Borel $\digamma_{\mathrm{map}}\geq0$, where $N(f,A,y)$ is the number of preimages in $A$.
 
 **Proof sketch.** For an injective $C^1$ map the formula is the change of variables theorem, with the Jacobian given by the Gram determinant; for a Lipschitz map, Rademacher's theorem gives the differential almost everywhere, and the formula is obtained by decomposing the domain into countably many pieces on each of which $f$ is a small perturbation of its affine approximation with an error controlled by the integrability of the Lipschitz constant and the Vitali–Besicovitch covering theorem; the multiplicity is what accounts for the failure of injectivity, and the countability of the preimages almost everywhere follows from the area formula applied to a small ball around each point.
 

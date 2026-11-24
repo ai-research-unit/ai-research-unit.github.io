@@ -76,10 +76,10 @@ where $m_0$ is the multiplication of $A$ and $\partial=[m_0,-]$ is the Hochschil
 **Definition.** Let $A$ be a $k$-algebra and $M$ a finite-dimensional $A$-module (over a field $k$). A **deformation** of $M$ over $R=k[\varepsilon]/(\varepsilon^2)$ is an $A\otimes_kR$-module $M_R$, flat over $R$, with $M_R\otimes_Rk\cong M$; equivalently an $A$-module structure on $M\otimes_k\mathbb{C}_{\mathrm{dln}}$ of the form
 
 $$
-a\cdot_\varepsilon m=a m+\varepsilon\varphi(a,m),
+a\cdot_\varepsilon m=a m+\varepsilon\digamma_{\mathrm{map}}(a,m),
 $$
 
-with $\varphi:A\times M\to M$ satisfying $a\varphi(b,m)-\varphi(ab,m)+\varphi(a,bm)=0$, which is the condition that $\varphi \in \operatorname{Hom}_k(A\otimes M,M)$ be a $1$-cocycle.
+with $\digamma_{\mathrm{map}}:A\times M\to M$ satisfying $a\digamma_{\mathrm{map}}(b,m)-\digamma_{\mathrm{map}}(ab,m)+\digamma_{\mathrm{map}}(a,bm)=0$, which is the condition that $\digamma_{\mathrm{map}} \in \operatorname{Hom}_k(A\otimes M,M)$ be a $1$-cocycle.
 
 **Theorem.** The first-order deformations of $M$ up to equivalence are in natural bijection with $\operatorname{Ext}^1_A(M,M)$, and the obstruction to extending a deformation of $M$ to the second order lies in $\operatorname{Ext}^2_A(M,M)$.
 

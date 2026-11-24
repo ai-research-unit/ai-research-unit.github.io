@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Let $\mathcal{A}$ be the algebra of random variables, the commutative unital algebra of the bounded complex random variables on a probability space under the pointwise product, with its complex conjugation and its expectation. The probability gives the algebra a state $\varphi(x)=\mathbb E[x]$, the state gives it the **form of the category** $\langle x,y\rangle=\varphi(xy^*)=\mathbb E[x\,\bar y]$, and the form makes $\mathcal{A}$ a subspace of the Hilbert space $\mathcal{H}=L^2$ of the square-integrable variables. A **grade involution** $\alpha$ is an involutive automorphism of $\mathcal{A}$ commuting with the conjugation, and for fixed $a,b$ the **signed two-sided operator** is the operator
+Let $\mathcal{A}$ be the algebra of random variables, the commutative unital algebra of the bounded complex random variables on a probability space under the pointwise product, with its complex conjugation and its expectation. The probability gives the algebra a state $\digamma_{\mathrm{map}}(x)=\mathbb E[x]$, the state gives it the **form of the category** $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)=\mathbb E[x\,\bar y]$, and the form makes $\mathcal{A}$ a subspace of the Hilbert space $\mathcal{H}=L^2$ of the square-integrable variables. A **grade involution** $\alpha$ is an involutive automorphism of $\mathcal{A}$ commuting with the conjugation, and for fixed $a,b$ the **signed two-sided operator** is the operator
 $$
 S^\alpha_{a,b}(x)=a\,\alpha(x)\,b,
 $$
@@ -13,7 +13,7 @@ The two features that decide the shape of the answers are that the product is co
 
 The probabilistic content is fixed elsewhere. The random variables, their laws, the expectation and the $L^{n}$ spaces are *Measure-Theoretic Probability*, written, and the state used here is its expectation. The involution on the elements is *The Involution on the Algebra of Random Variables*, later in this category, where the complex conjugation and the real random variables are treated; the present article states the involution only to the extent the signed operators need it. The covariance form and its positivity are *The Covariance Function and Hermitian Positivity*, later in this category; the adjoint of the unsigned left multiplication is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, later in this category; the graded version is *The Graded Action on a Module over the Algebra of Random Variables*, later in this category; and the reflections built from the invertibles are *Reflections as Signed Two-Sided Operators on the Algebra of Random Variables*, next in this category. The noncommutative signed two-sided operator is *The Signed Two-Sided Operator on a Ring*, in Part I. Nothing here reads a distance or a form as an object, and no physics is invoked.
 
-Throughout, $(\Omega,\mathcal F,\mathbb P)$ is a probability space, $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ is the algebra of $\mathbb P$-classes of bounded complex random variables with the pointwise product, the conjugation $\sigma(x)=\bar x$ and the state $\varphi(x)=\mathbb E[x]$; the form is $\langle x,y\rangle=\varphi(xy^*)$ on $\mathcal{H}=L^2(\Omega,\mathbb P)$, and $\|x\|_2=\langle x,x\rangle^{1/2}$. The grade involution is $\alpha$; it commutes with $\sigma$, and $\delta=\sigma\alpha=\alpha\sigma$ is their composite. The grading is $\mathcal{A}=\mathcal{A}_{\bar0}\oplus\mathcal{A}_{\bar1}$ with $\mathcal{A}_{\bar0}=\ker(\alpha-I)$ the even part and $\mathcal{A}_{\bar1}=\ker(\alpha+I)$ the odd part.
+Throughout, $(\Omega,\mathcal F,\mathbb P)$ is a probability space, $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ is the algebra of $\mathbb P$-classes of bounded complex random variables with the pointwise product, the conjugation $\sigma(x)=\bar x$ and the state $\digamma_{\mathrm{map}}(x)=\mathbb E[x]$; the form is $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ on $\mathcal{H}=L^2(\Omega,\mathbb P)$, and $\|x\|_2=\langle x,x\rangle^{1/2}$. The grade involution is $\alpha$; it commutes with $\sigma$, and $\delta=\sigma\alpha=\alpha\sigma$ is their composite. The grading is $\mathcal{A}=\mathcal{A}_{\bar0}\oplus\mathcal{A}_{\bar1}$ with $\mathcal{A}_{\bar0}=\ker(\alpha-I)$ the even part and $\mathcal{A}_{\bar1}=\ker(\alpha+I)$ the odd part.
 
 ## The Algebra of Random Variables and its Form
 
@@ -23,15 +23,15 @@ Throughout, $(\Omega,\mathcal F,\mathbb P)$ is a probability space, $\mathcal{A}
 $$
 \sigma(x)=\bar x,
 $$
-and the state $\varphi(x)=\mathbb E[x]$. The state is positive, $\varphi(x^*x)=\mathbb E[|x|^2]\ge0$, unital, $\varphi(1)=1$, and self-adjoint, $\varphi(x^*)=\overline{\varphi(x)}$. The involution is the complex conjugation, and its fixed elements, $\sigma(x)=x$, are the **real random variables**.
+and the state $\digamma_{\mathrm{map}}(x)=\mathbb E[x]$. The state is positive, $\digamma_{\mathrm{map}}(x^*x)=\mathbb E[|x|^2]\ge0$, unital, $\digamma_{\mathrm{map}}(1)=1$, and self-adjoint, $\digamma_{\mathrm{map}}(x^*)=\overline{\digamma_{\mathrm{map}}(x)}$. The involution is the complex conjugation, and its fixed elements, $\sigma(x)=x$, are the **real random variables**.
 
 *Proof.* The product is commutative and associative, as the pointwise product of functions; the conjugation is an involutive anti-automorphism, $\bar{xy}=\bar x\bar y$ and $\overline{\bar x}=x$, which is an automorphism because the algebra is commutative; the state is positive and unital as the expectation, and its self-adjointness is $\mathbb E[\bar x]=\overline{\mathbb E[x]}$. The fixed elements are the variables equal to their own conjugate, which are the real-valued ones. The involution and the state are *Measure-Theoretic Probability*, and their operator theory is *The Involution on the Algebra of Random Variables*, later in this category.
 
 ### The grade involution and the grading
 
-**Definition.** A **grade involution** is a unital involutive algebra automorphism $\alpha$ of $\mathcal{A}$ that commutes with the conjugation, $\alpha\sigma=\sigma\alpha$, and preserves the state, $\varphi\circ\alpha=\varphi$. In the standard model it is the composition with a measure-preserving involution $\varphi_0$ of $(\Omega,\mathcal F,\mathbb P)$,
+**Definition.** A **grade involution** is a unital involutive algebra automorphism $\alpha$ of $\mathcal{A}$ that commutes with the conjugation, $\alpha\sigma=\sigma\alpha$, and preserves the state, $\digamma_{\mathrm{map}}\circ\alpha=\digamma_{\mathrm{map}}$. In the standard model it is the composition with a measure-preserving involution $\digamma_{\mathrm{map},0}$ of $(\Omega,\mathcal F,\mathbb P)$,
 $$
-\alpha(x)=x\circ\varphi_0,\qquad \varphi_0^2=\mathrm{id},\qquad \varphi_0\text{ preserves }\mathbb P .
+\alpha(x)=x\circ\digamma_{\mathrm{map},0},\qquad \digamma_{\mathrm{map},0}^2=\mathrm{id},\qquad \digamma_{\mathrm{map},0}\text{ preserves }\mathbb P .
 $$
 
 **Theorem (properties of the grade involution).** For every grade involution,
@@ -42,15 +42,15 @@ and $\alpha$ is unitary for the form of the category. The grading is $\mathcal{A
 
 *Proof.* The involution and multiplicativity are those of an automorphism of order two; the unitality is the definition; the compatibility with the conjugation is the commutativity of $\alpha$ and $\sigma$; and the self-adjointness is
 $$
-\langle\alpha x,y\rangle=\mathbb E[(x\circ\varphi_0)\bar y]=\mathbb E[x(\bar y\circ\varphi_0)]=\langle x,\alpha y\rangle,
+\langle\alpha x,y\rangle=\mathbb E[(x\circ\digamma_{\mathrm{map},0})\bar y]=\mathbb E[x(\bar y\circ\digamma_{\mathrm{map},0})]=\langle x,\alpha y\rangle,
 $$
-where the middle equality is the change of variables under the measure-preserving $\varphi_0$; the unitarity is $\alpha^*\alpha=\alpha^2=\mathrm{id}$. The grading is the eigenspace decomposition of the involution $\alpha$, and the product rule is its multiplicativity: for $x\in\mathcal{A}_{\bar i}$, $y\in\mathcal{A}_{\bar j}$, $\alpha(xy)=\alpha(x)\alpha(y)=(-1)^{i}(-1)^{j}xy=(-1)^{i+j}xy$.
+where the middle equality is the change of variables under the measure-preserving $\digamma_{\mathrm{map},0}$; the unitarity is $\alpha^*\alpha=\alpha^2=\mathrm{id}$. The grading is the eigenspace decomposition of the involution $\alpha$, and the product rule is its multiplicativity: for $x\in\mathcal{A}_{\bar i}$, $y\in\mathcal{A}_{\bar j}$, $\alpha(xy)=\alpha(x)\alpha(y)=(-1)^{i}(-1)^{j}xy=(-1)^{i+j}xy$.
 
 ### The form of the category
 
 **Definition.** The **form of the category** is
 $$
-\langle x,y\rangle=\varphi(xy^*)=\mathbb E[x\,\bar y]\qquad (x,y\in\mathcal{H}=L^2(\Omega,\mathbb P)),
+\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)=\mathbb E[x\,\bar y]\qquad (x,y\in\mathcal{H}=L^2(\Omega,\mathbb P)),
 $$
 linear in the first argument, conjugate-linear in the second, and positive definite on $\mathcal{H}$.
 
@@ -133,9 +133,9 @@ the two conditions coinciding because a multiplication operator on a Hilbert spa
 
 ## Worked Examples
 
-**Example (the swap on two atoms).** Let $\Omega=\{\omega_-,\omega_+\}$ with $\mathbb P(\omega_\pm)=\frac12$ and let $\varphi_0$ interchange the two points, so that $\mathcal{A}\cong\mathbb C^2$ with $\alpha(x_-,x_+)=(x_+,x_-)$. The even part is the diagonal $\{(x,x)\}$ and the odd part is the antidiagonal; the form is $\langle x,y\rangle=\frac12(x_-\bar y_-+x_+\bar y_+)$. For $c=(c_-,c_+)$ the two-sided operator $S^\alpha_c=L_c\alpha$ is the map $(x_-,x_+)\mapsto(c_+x_+,c_-x_-)$; it is self-adjoint exactly when $c_-=c_+$, that is when $c$ is even, and unitary exactly when $|c_\pm|=1$. The self-adjoint unitary two-sided operators are therefore the $S^\alpha_c$ with $c$ even and $|c|=1$, that is $c=(z,z)$ with $|z|=1$, a circle of operators, each the reflection $\alpha$ followed by the multiplication by the unimodular constant $z$; the two of them with $z=\pm1$ are $\pm\alpha$.
+**Example (the swap on two atoms).** Let $\Omega=\{\omega_-,\omega_+\}$ with $\mathbb P(\omega_\pm)=\frac12$ and let $\digamma_{\mathrm{map},0}$ interchange the two points, so that $\mathcal{A}\cong\mathbb C^2$ with $\alpha(x_-,x_+)=(x_+,x_-)$. The even part is the diagonal $\{(x,x)\}$ and the odd part is the antidiagonal; the form is $\langle x,y\rangle=\frac12(x_-\bar y_-+x_+\bar y_+)$. For $c=(c_-,c_+)$ the two-sided operator $S^\alpha_c=L_c\alpha$ is the map $(x_-,x_+)\mapsto(c_+x_+,c_-x_-)$; it is self-adjoint exactly when $c_-=c_+$, that is when $c$ is even, and unitary exactly when $|c_\pm|=1$. The self-adjoint unitary two-sided operators are therefore the $S^\alpha_c$ with $c$ even and $|c|=1$, that is $c=(z,z)$ with $|z|=1$, a circle of operators, each the reflection $\alpha$ followed by the multiplication by the unimodular constant $z$; the two of them with $z=\pm1$ are $\pm\alpha$.
 
-**Example (the reflection of the circle).** Let $\Omega=\mathbb R/\mathbb Z$ with the Lebesgue measure and $\varphi_0(\theta)=-\theta$, so that $\alpha(x)(\theta)=x(-\theta)$. The even functions are the symmetric ones and the odd the antisymmetric; the characters split into the cosines and the sines. For $c(\theta)=\exp(2\pi i\theta)$ the two-sided operator $S^\alpha_c$ has $|c|=1$ and $c\,\alpha(c)=\exp(2\pi i\theta)\exp(-2\pi i\theta)=1$, so it is a unitary involution; its square is the identity and it belongs to the family of the corollary.
+**Example (the reflection of the circle).** Let $\Omega=\mathbb R/\mathbb Z$ with the Lebesgue measure and $\digamma_{\mathrm{map},0}(\theta)=-\theta$, so that $\alpha(x)(\theta)=x(-\theta)$. The even functions are the symmetric ones and the odd the antisymmetric; the characters split into the cosines and the sines. For $c(\theta)=\exp(2\pi i\theta)$ the two-sided operator $S^\alpha_c$ has $|c|=1$ and $c\,\alpha(c)=\exp(2\pi i\theta)\exp(-2\pi i\theta)=1$, so it is a unitary involution; its square is the identity and it belongs to the family of the corollary.
 
 **Example (the trivial grading).** For $\alpha=\mathrm{id}$ the grading is $\mathcal{A}_{\bar0}=\mathcal{A}$, $\mathcal{A}_{\bar1}=0$, the two-sided operator is the unsigned $S^\alpha_{a,b}=L_{ab}$, and the adjoint is $S^\alpha_{a,b}\mapsto L_{(ab)^*}$; self-adjointness is $c=c^*$, that is $c$ real, and unitarity is $|c|=1$. This is the boundary at which the signed theory reduces to the theory of the multiplications.
 
@@ -145,7 +145,7 @@ The signed two-sided operator degenerates in four configurations, all of them co
 
 ## Summary
 
-Over the algebra of random variables $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the conjugation $\sigma(x)=\bar x$ and the state $\varphi(x)=\mathbb E[x]$, the form of the category is $\langle x,y\rangle=\varphi(xy^*)$, and it is invariant under the conjugation, so the left multiplication satisfies $L_a^*=L_{a^*}$ and the involution on the elements and the adjoint on the unsigned operators coincide. A grade involution $\alpha$ is a unital involutive $*$-automorphism of $\mathcal{A}$ preserving the state, in canonical form the composition with a measure-preserving involution, and it is self-adjoint and unitary for the form. The signed two-sided operator $S^\alpha_{a,b}(x)=a\,\alpha(x)\,b$ collapses on the commutative algebra to $S^\alpha_{a,b}=L_{ab}\alpha$, depends only on the product $c=ab$, reverses the grading, and has the adjoint $S^\alpha_{\delta(a),\delta(b)}=\alpha L_{c^*}$ with $\delta=\sigma\alpha$; it is self-adjoint exactly when $c=\delta(c)$, an isometry and unitary exactly when $|c|=1$, and an involution exactly when $c\,\alpha(c)=1$. The comparison with the arithmetic case isolates the two forces: commutativity collapses the two-sided operator, invariance of the form restores the clean adjoint. The involution itself is *The Involution on the Algebra of Random Variables*, later in this category, the reflections are the next article, the unsigned adjoint is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, and the graded version is *The Graded Action on a Module over the Algebra of Random Variables*, both later in this category.
+Over the algebra of random variables $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the conjugation $\sigma(x)=\bar x$ and the state $\digamma_{\mathrm{map}}(x)=\mathbb E[x]$, the form of the category is $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$, and it is invariant under the conjugation, so the left multiplication satisfies $L_a^*=L_{a^*}$ and the involution on the elements and the adjoint on the unsigned operators coincide. A grade involution $\alpha$ is a unital involutive $*$-automorphism of $\mathcal{A}$ preserving the state, in canonical form the composition with a measure-preserving involution, and it is self-adjoint and unitary for the form. The signed two-sided operator $S^\alpha_{a,b}(x)=a\,\alpha(x)\,b$ collapses on the commutative algebra to $S^\alpha_{a,b}=L_{ab}\alpha$, depends only on the product $c=ab$, reverses the grading, and has the adjoint $S^\alpha_{\delta(a),\delta(b)}=\alpha L_{c^*}$ with $\delta=\sigma\alpha$; it is self-adjoint exactly when $c=\delta(c)$, an isometry and unitary exactly when $|c|=1$, and an involution exactly when $c\,\alpha(c)=1$. The comparison with the arithmetic case isolates the two forces: commutativity collapses the two-sided operator, invariance of the form restores the clean adjoint. The involution itself is *The Involution on the Algebra of Random Variables*, later in this category, the reflections are the next article, the unsigned adjoint is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, and the graded version is *The Graded Action on a Module over the Algebra of Random Variables*, both later in this category.
 
 ## Summary of Notation
 
@@ -153,10 +153,10 @@ Over the algebra of random variables $\mathcal{A}=L^\infty(\Omega,\mathcal F,\ma
 |---|---|
 | $(\Omega,\mathcal F,\mathbb P)$, $\mathcal{A}=L^\infty(\Omega,\mathbb P)$ | probability space and algebra of random variables |
 | $\sigma(x)=\bar x$, $x^*=\bar x$ | complex conjugation, the involution of the category |
-| $\varphi(x)=\mathbb E[x]$ | the state, the expectation |
+| $\digamma_{\mathrm{map}}(x)=\mathbb E[x]$ | the state, the expectation |
 | $\mathcal{H}=L^2(\Omega,\mathbb P)$ | the Hilbert space of the form |
-| $\langle x,y\rangle=\varphi(xy^*)$ | the form of the category |
-| $\alpha$, $\varphi_0$ | grade involution; the measure-preserving involution with $\alpha(x)=x\circ\varphi_0$ |
+| $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ | the form of the category |
+| $\alpha$, $\digamma_{\mathrm{map},0}$ | grade involution; the measure-preserving involution with $\alpha(x)=x\circ\digamma_{\mathrm{map},0}$ |
 | $\delta=\sigma\alpha=\alpha\sigma$, $\delta(x)=\alpha(x^*)$ | the twisted involution |
 | $\mathcal{A}_{\bar0}$, $\mathcal{A}_{\bar1}$ | even and odd parts of the grading |
 | $L_a$, $L_a^*=L_{a^*}$ | left multiplication and its adjoint |

@@ -8,7 +8,7 @@
 
 **Why one algebra carries three articles.** The duo-complex category is the only one whose matrix model is an algebra another category already owns. The collision is at the level of the model and not of the subject. There, the objects are the frame, the product, the trace, the determinant, the projectors and the norms **of the algebra**; here, they are the two basis vectors, the two generators, the ambient four units, the real structure $J$, the three forms, the lines, the flags and the spinor **of the module**. After that division no section and no object is shared: one pair reads $\mathbb{B}\cong M_2(\mathbb{C})$ as a set of matrices, the other reads $\mathbb{C}^2$ as a space acted on. The name of the pair keeps the algebra in the title because the algebra is what provides the language, and the qualifier *defining* records that the subject is the defining module.
 
-**The three articles of the trio.** This article writes the carriers, the bases and the four readings. Its first companion, *$M_2(\mathbb{C})$ Defining Representation : Products, Forms and Norms*, writes every quantity that involves two objects: the three pairings of two columns, the two pairings of two operators, the determinant as a quadratic form and the four norms. Its second companion, *$M_2(\mathbb{C})$ Defining Representation : Operators*, writes the two-sided family $u\phi^{\mathsf T}$ and its semigroup. **The split is the split of the biquaternion triplet**: one article for the object, one for the pair of objects, one for the family.
+**The three articles of the trio.** This article writes the carriers, the bases and the four readings. Its first companion, *$M_2(\mathbb{C})$ Defining Representation : Products, Forms and Norms*, writes every quantity that involves two objects: the three pairings of two columns, the two pairings of two operators, the determinant as a quadratic form and the four norms. Its second companion, *$M_2(\mathbb{C})$ Defining Representation : Operators*, writes the two-sided family $u\digamma_{\mathrm{map}}^{\mathsf T}$ and its semigroup. **The split is the split of the biquaternion triplet**: one article for the object, one for the pair of objects, one for the family.
 
 **Why the space matters.** The physics corpus is written against this carrier: the Weyl spinor of the Lorentz group, the pure state of the qubit and the null direction of a light ray are three readings of the same point set, distinguished only by the form that is used on it. The mathematics corpus had the space, the forms and the endomorphisms, but read none of the three readings. This article supplies the reading, and the operator face is the companion article *$M_2(\mathbb{C})$ Defining Representation : Operators*.
 
@@ -16,20 +16,20 @@
 
 | Reading | Structure used | Object | Dimension |
 |---|---|---|---|
-| the bilinear cone | the symmetric form $B$ and the dual space | the rank-one operators $u\phi^{\mathsf T}$, a quadric in $\mathbb{P}^3$ | complex $3$ |
+| the bilinear cone | the symmetric form $B$ and the dual space | the rank-one operators $u\digamma_{\mathrm{map}}^{\mathsf T}$, a quadric in $\mathbb{P}^3$ | complex $3$ |
 | the Hermitian cone | the Hermitian form $H$ and the conjugation | the rank-one $uu^{\dagger}$, the future light cone | real $3$ |
 | the spinor | the alternating form $\omega$ and the action of $\mathrm{SL}_2(\mathbb{C})$ | the Weyl spinor and its null vector | complex $2$ |
 | the qubit | the definite $H$ and the action of $\mathrm{SU}(2)$ | the state space, the Bloch ball and its sphere | real $3$ |
 
-**Boundaries.** The space, its two scalar structures, the complex structure $J$ and the norm are *Duo-Complex Numbers*; the three forms with their Gram matrices, their isometry groups and their isotropic sets are *The Three Canonical Forms on $\mathbb{C}^2$*; the lattice of subspaces, the dual and the incidence are *The Subspaces of $\mathbb{C}^2$*; the endomorphism algebra, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$ and the centraliser of $J$ are *The Endomorphisms of $\mathbb{C}^2$*; the Hopf fibration is *The Unit Sphere and the Hopf Fibration*, the Grassmannians are *Grassmannians and Stiefel Manifolds*, and the general theory of holomorphic functions of two variables is *Several Complex Variables*. The operators $L_{u}R_{\phi}$, their composition, their length and their adjoints are the companion article. Nothing of the algebra's own structure theory is repeated: the Peirce frame, the determinant of an element and the four norms are the biquaternion pair.
+**Boundaries.** The space, its two scalar structures, the complex structure $J$ and the norm are *Duo-Complex Numbers*; the three forms with their Gram matrices, their isometry groups and their isotropic sets are *The Three Canonical Forms on $\mathbb{C}^2$*; the lattice of subspaces, the dual and the incidence are *The Subspaces of $\mathbb{C}^2$*; the endomorphism algebra, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$ and the centraliser of $J$ are *The Endomorphisms of $\mathbb{C}^2$*; the Hopf fibration is *The Unit Sphere and the Hopf Fibration*, the Grassmannians are *Grassmannians and Stiefel Manifolds*, and the general theory of holomorphic functions of two variables is *Several Complex Variables*. The operators $L_{u}R_{\digamma_{\mathrm{map}}}$, their composition, their length and their adjoints are the companion article. Nothing of the algebra's own structure theory is repeated: the Peirce frame, the determinant of an element and the four norms are the biquaternion pair.
 
 **Conventions.** The space is $V=\mathbb{C}^2$ with the complex basis $e_1,e_2$ and the coordinates
 $$
 u=u_{\blacktriangle}e_1+u_{\blacktriangledown}e_2,\qquad u_{\blacktriangle},u_{\blacktriangledown}\in\mathbb{C},
 $$
-written with the triangles of the category (*Duo-Complex Numbers*). The dual space is $V^{*}$ with the dual basis $\epsilon^{1},\epsilon^{2}$ and the row $\phi=\phi_{\blacktriangle}\epsilon^{1}+\phi_{\blacktriangledown}\epsilon^{2}$, so that the pairing is
+written with the triangles of the category (*Duo-Complex Numbers*). The dual space is $V^{*}$ with the dual basis $\epsilon^{1},\epsilon^{2}$ and the row $\digamma_{\mathrm{map}}=\digamma_{\mathrm{map},\blacktriangle}\epsilon^{1}+\digamma_{\mathrm{map},\blacktriangledown}\epsilon^{2}$, so that the pairing is
 $$
-\phi(u)=\phi_{\blacktriangle}u_{\blacktriangle}+\phi_{\blacktriangledown}u_{\blacktriangledown},
+\digamma_{\mathrm{map}}(u)=\digamma_{\mathrm{map},\blacktriangle}u_{\blacktriangle}+\digamma_{\mathrm{map},\blacktriangledown}u_{\blacktriangledown},
 $$
 with **no conjugation**: the duality is complex bilinear. The three forms are
 $$
@@ -39,7 +39,7 @@ B(u,v)=u_{\blacktriangle}v_{\blacktriangle}+u_{\blacktriangledown}v_{\blacktrian
 $$
 so that $H$ is **linear in the first slot and conjugate-linear in the second**, the convention of the whole corpus and the opposite of the physicists' one. The dagger is $M^{\dagger}=\overline{M}^{\mathsf T}$, the transpose is $M^{\mathsf T}$, and the matrix units are $E_{jk}=e_je_k^{\mathsf T}$. A rank-one operator with a column in the left slot and a row in the right is written
 $$
-L_{u}R_{\phi}=u\phi^{\mathsf T},\qquad L_{u}R_{\phi}(v)=\phi(v)\,u .
+L_{u}R_{\digamma_{\mathrm{map}}}=u\digamma_{\mathrm{map}}^{\mathsf T},\qquad L_{u}R_{\digamma_{\mathrm{map}}}(v)=\digamma_{\mathrm{map}}(v)\,u .
 $$
 
 ## The Carrier and Its Basis
@@ -188,11 +188,11 @@ L_{e_1}R_{\epsilon^{1}}=E_{11},\quad
 L_{e_1}R_{\epsilon^{2}}=E_{12},\quad
 L_{e_2}R_{\epsilon^{1}}=E_{21},\quad
 L_{e_2}R_{\epsilon^{2}}=E_{22},\qquad
-L_{u}R_{\phi}=u\phi^{\mathsf T}.
+L_{u}R_{\digamma_{\mathrm{map}}}=u\digamma_{\mathrm{map}}^{\mathsf T}.
 $$
-**The count $4=2\times2$ is a column-row count**, and the general member has entries $u_j\phi_k$,
+**The count $4=2\times2$ is a column-row count**, and the general member has entries $u_j\digamma_{\mathrm{map},k}$,
 $$
-(u\phi^{\mathsf T})_{jk}=u_j\phi_k,\qquad j,k=1,2 .
+(u\digamma_{\mathrm{map}}^{\mathsf T})_{jk}=u_j\digamma_{\mathrm{map},k},\qquad j,k=1,2 .
 $$
 **The two counts answer two questions.** A representation of a two-dimensional algebra needs two matrices, which are $I_2$ and $L_\beta$; the ambient algebra of all operators needs the four units, and the rank-one cone is a cone inside it. **Neither count contradicts the other and both are exact.**
 
@@ -266,7 +266,7 @@ each of determinant one. It is the basis of *$M_2(\mathbb{C})$ Pauli Representat
 
 ### The Column and the Row
 
-**Definition.** The **column** is the element $u\in V$ read as a list of two complex numbers, and the **row** is the element $\phi\in V^{*}$ read as a list of two complex numbers. The pairing $\phi(u)=\phi^{\mathsf T}u$ is the product of a row by a column and returns a scalar.
+**Definition.** The **column** is the element $u\in V$ read as a list of two complex numbers, and the **row** is the element $\digamma_{\mathrm{map}}\in V^{*}$ read as a list of two complex numbers. The pairing $\digamma_{\mathrm{map}}(u)=\digamma_{\mathrm{map}}^{\mathsf T}u$ is the product of a row by a column and returns a scalar.
 
 **The dual is not the space, and the identification is a choice.** There is no canonical isomorphism $V\cong V^{*}$ for a complex vector space: an isomorphism is the same thing as a nondegenerate bilinear or sesquilinear form, and $V$ carries three of them. Each gives its own identification, and the three are different maps.
 
@@ -343,7 +343,7 @@ with the point at infinity for $u_{\blacktriangle}=0$.
 
 *Proof.* A line meets the unit sphere $S^{3}=\{\lVert u\rVert=1\}$ in a circle $u\mapsto e^{i\theta}u$, so $\mathbb{P}^{1}=S^{3}/S^{1}$, which is the Hopf fibration; the base is $S^{2}$ (*The Unit Sphere and the Hopf Fibration*). The affine coordinate $\varkappa$ is the stereographic coordinate of the sphere, and the point at infinity is the north pole.
 
-**The dual point and the incidence.** A nonzero row $\phi\in V^{*}$ defines the hyperplane $\{\phi=0\}$, which is a point $[\phi]$ of the dual projective line $(\mathbb{P}^{1})^{*}$. The pair $(u,\phi)$ is **incident** when $\phi(u)=0$, that is when the line $[u]$ lies in the hyperplane $\phi=0$, which in one projective dimension says that the point $[u]$ is exactly the kernel of $\phi$, that is the point of $\mathbb{P}^{1}$ dual to $[\phi]$. **The incidence is a single complex number and its vanishing is the only incidence relation of the line**: the two objects are a point and a dual point, and the incidence is the evaluation.
+**The dual point and the incidence.** A nonzero row $\digamma_{\mathrm{map}}\in V^{*}$ defines the hyperplane $\{\digamma_{\mathrm{map}}=0\}$, which is a point $[\digamma_{\mathrm{map}}]$ of the dual projective line $(\mathbb{P}^{1})^{*}$. The pair $(u,\digamma_{\mathrm{map}})$ is **incident** when $\digamma_{\mathrm{map}}(u)=0$, that is when the line $[u]$ lies in the hyperplane $\digamma_{\mathrm{map}}=0$, which in one projective dimension says that the point $[u]$ is exactly the kernel of $\digamma_{\mathrm{map}}$, that is the point of $\mathbb{P}^{1}$ dual to $[\digamma_{\mathrm{map}}]$. **The incidence is a single complex number and its vanishing is the only incidence relation of the line**: the two objects are a point and a dual point, and the incidence is the evaluation.
 
 ### The Flags
 
@@ -362,7 +362,7 @@ with the point at infinity for $u_{\blacktriangle}=0$.
 | $[u]$ | a line, a point of $\mathbb{P}^{1}$ | the projective geometry |
 | $\pi_u$ | the Hermitian projector of rank one | the state of a system |
 | $S^{3}\ni u$ | an invertible element column | the spinor, the flag |
-| $u\phi^{\mathsf T}$ | a pair of a line and a dual line | a point of the bilinear cone |
+| $u\digamma_{\mathrm{map}}^{\mathsf T}$ | a pair of a line and a dual line | a point of the bilinear cone |
 | $uu^{\dagger}$ | a line with its conjugate row | a point of the Hermitian cone |
 
 **Every row of the table is a point set, and no row is a vector space.** The cone is a cone, the sphere is a sphere and the ball of the qubit is a ball: **the carrier is a vector space and every one of its readings is not**, which is the structural reason the operator article of this pair has no identity and no inverses.
@@ -375,13 +375,13 @@ with the point at infinity for $u_{\blacktriangle}=0$.
 
 **Definition.** The **rank-one cone** of the carrier is
 $$
-\mathcal{C}=\{u\phi^{\mathsf T}:u\in V,\ \phi\in V^{*}\}\subset M_2(\mathbb{C}).
+\mathcal{C}=\{u\digamma_{\mathrm{map}}^{\mathsf T}:u\in V,\ \digamma_{\mathrm{map}}\in V^{*}\}\subset M_2(\mathbb{C}).
 $$
 It is the set of operators of rank at most one, and it is a cone: $\lambda\mathcal{C}=\mathcal{C}$ for every $\lambda\in\mathbb{C}$.
 
 **Proposition (the criterion).** For $M\in M_2(\mathbb{C})$ the following are equivalent: $M\in\mathcal{C}$; $\operatorname{rank}M\le1$; $\det M=0$.
 
-*Proof.* The rank is at most one exactly when the two columns are dependent, which is the existence of $\phi$ with $M=u\phi^{\mathsf T}$; for a matrix of size two the vanishing of the determinant is the same dependence. **The determinant is the special form the criterion takes at this size**, and the general statement is the rank inequality (*$M_4(\mathbb{C})$ Pauli Representation* for the general size).
+*Proof.* The rank is at most one exactly when the two columns are dependent, which is the existence of $\digamma_{\mathrm{map}}$ with $M=u\digamma_{\mathrm{map}}^{\mathsf T}$; for a matrix of size two the vanishing of the determinant is the same dependence. **The determinant is the special form the criterion takes at this size**, and the general statement is the rank inequality (*$M_4(\mathbb{C})$ Pauli Representation* for the general size).
 
 **Proposition (the cone is not a subspace, and its span is everything).** The four matrix units $E_{jk}$ are in $\mathcal{C}$, so the linear span of the cone is $M_2(\mathbb{C})$; the identity $I_2$ is not in $\mathcal{C}$, and it is the sum of two of its members.
 
@@ -393,13 +393,13 @@ It is the set of operators of rank at most one, and it is a cone: $\lambda\mathc
 
 **Proposition (the projectivisation is a product of two lines).** The projectivisation of $\mathcal{C}$ is the **Segre quadric**
 $$
-\mathbb{P}^{1}\times\mathbb{P}^{1}\subset\mathbb{P}^{3},\qquad ([u],[\phi])\longmapsto[u\phi^{\mathsf T}],
+\mathbb{P}^{1}\times\mathbb{P}^{1}\subset\mathbb{P}^{3},\qquad ([u],[\digamma_{\mathrm{map}}])\longmapsto[u\digamma_{\mathrm{map}}^{\mathsf T}],
 $$
 and the map is injective.
 
-*Proof.* The matrix $u\phi^{\mathsf T}$ determines its image line $[u]$ and its kernel $\{\phi=0\}$, hence the pair; conversely the pair determines the matrix up to a scalar, which is the projectivisation. Two rank-one matrices with the same image and the same kernel are proportional, because both act as a scalar on the image.
+*Proof.* The matrix $u\digamma_{\mathrm{map}}^{\mathsf T}$ determines its image line $[u]$ and its kernel $\{\digamma_{\mathrm{map}}=0\}$, hence the pair; conversely the pair determines the matrix up to a scalar, which is the projectivisation. Two rank-one matrices with the same image and the same kernel are proportional, because both act as a scalar on the image.
 
-**The two rulings.** For a fixed $[\phi]$ the family $[u\phi^{\mathsf T}]$ is a line in $\mathbb{P}^{3}$, and for a fixed $[u]$ the family is another line. **The quadric is thus ruled in two ways, and the two rulings are the two factors of the product.** A point of the quadric is a point of each ruling, and the pair of rulings is the pair (line, dual line).
+**The two rulings.** For a fixed $[\digamma_{\mathrm{map}}]$ the family $[u\digamma_{\mathrm{map}}^{\mathsf T}]$ is a line in $\mathbb{P}^{3}$, and for a fixed $[u]$ the family is another line. **The quadric is thus ruled in two ways, and the two rulings are the two factors of the product.** A point of the quadric is a point of each ruling, and the pair of rulings is the pair (line, dual line).
 
 **The equation of the quadric.** In the coordinates $(w_{11},w_{12},w_{21},w_{22})$ of the matrix-unit basis the quadric is
 $$
@@ -422,15 +422,15 @@ and it is nondegenerate; the cone $\mathcal{C}$ is its isotropic cone.
 
 **Definition.** The **isotropic lines** of $B$ are $\ell_{\pm}=\mathbb{C}(e_1\pm ie_2)$, and they are the only two: $u_{\blacktriangledown}^{2}=-u_{\blacktriangle}^{2}$ forces $u_{\blacktriangledown}=\pm iu_{\blacktriangle}$.
 
-**Proposition (the isotropic columns and the transpose square).** For $T=L_{u}R_{\phi}=u\phi^{\mathsf T}$ and $\sigma=u^{\mathsf T}u$,
+**Proposition (the isotropic columns and the transpose square).** For $T=L_{u}R_{\digamma_{\mathrm{map}}}=u\digamma_{\mathrm{map}}^{\mathsf T}$ and $\sigma=u^{\mathsf T}u$,
 $$
-T^{\mathsf T}T=\sigma\,\phi\phi^{\mathsf T},\qquad TT^{\mathsf T}=\tau\,uu^{\mathsf T},\quad \tau=\phi^{\mathsf T}\phi ,
+T^{\mathsf T}T=\sigma\,\digamma_{\mathrm{map}}\digamma_{\mathrm{map}}^{\mathsf T},\qquad TT^{\mathsf T}=\tau\,uu^{\mathsf T},\quad \tau=\digamma_{\mathrm{map}}^{\mathsf T}\digamma_{\mathrm{map}} ,
 $$
-so $T^{\mathsf T}T=0$ exactly when the column $u$ lies on one of the two isotropic lines, and $TT^{\mathsf T}=0$ exactly when the row $\phi$ lies on one of the two isotropic lines of the dual.
+so $T^{\mathsf T}T=0$ exactly when the column $u$ lies on one of the two isotropic lines, and $TT^{\mathsf T}=0$ exactly when the row $\digamma_{\mathrm{map}}$ lies on one of the two isotropic lines of the dual.
 
-*Proof.* $T^{\mathsf T}=\phi u^{\mathsf T}$, so $T^{\mathsf T}T=\phi\,(u^{\mathsf T}u)\,\phi^{\mathsf T}=\sigma\,\phi\phi^{\mathsf T}$, the scalar commuting with the two columns. The matrix $\phi\phi^{\mathsf T}$ is nonzero for $\phi\neq0$, so the vanishing is exactly $\sigma=0$, which is the isotropy of the column; the second statement is the same computation with the two slots exchanged.
+*Proof.* $T^{\mathsf T}=\digamma_{\mathrm{map}} u^{\mathsf T}$, so $T^{\mathsf T}T=\digamma_{\mathrm{map}}\,(u^{\mathsf T}u)\,\digamma_{\mathrm{map}}^{\mathsf T}=\sigma\,\digamma_{\mathrm{map}}\digamma_{\mathrm{map}}^{\mathsf T}$, the scalar commuting with the two columns. The matrix $\digamma_{\mathrm{map}}\digamma_{\mathrm{map}}^{\mathsf T}$ is nonzero for $\digamma_{\mathrm{map}}\neq0$, so the vanishing is exactly $\sigma=0$, which is the isotropy of the column; the second statement is the same computation with the two slots exchanged.
 
-**The isotropic columns are the null directions of the operator.** A member of the cone with an isotropic column has $T^{\mathsf T}T=0$, hence is **isotropic** for the transpose form of the operator space, $\langle T,T\rangle=\operatorname{tr}(T^{\mathsf T}T)=0$. **This is isotropy and not nilpotence**: $T^{2}=\phi(u)T$ vanishes only when $\phi(u)=0$, which is a second condition on the row and not on the column, so a member with an isotropic column and $\phi(u)\neq0$ is a rank-one matrix that is null without being nilpotent. **The two isotropic lines of $B$ are therefore the two directions on which the operator becomes null for the transpose form**, and this is the only place where the isotropy of $B$ is visible as a property of an operator rather than as a property of a vector.
+**The isotropic columns are the null directions of the operator.** A member of the cone with an isotropic column has $T^{\mathsf T}T=0$, hence is **isotropic** for the transpose form of the operator space, $\langle T,T\rangle=\operatorname{tr}(T^{\mathsf T}T)=0$. **This is isotropy and not nilpotence**: $T^{2}=\digamma_{\mathrm{map}}(u)T$ vanishes only when $\digamma_{\mathrm{map}}(u)=0$, which is a second condition on the row and not on the column, so a member with an isotropic column and $\digamma_{\mathrm{map}}(u)\neq0$ is a rank-one matrix that is null without being nilpotent. **The two isotropic lines of $B$ are therefore the two directions on which the operator becomes null for the transpose form**, and this is the only place where the isotropy of $B$ is visible as a property of an operator rather than as a property of a vector.
 
 ## The Hermitian Cone and the Light Cone
 
@@ -451,13 +451,13 @@ $$
 
 *Proof.* The determinant of a rank-one matrix is zero. The trace of $uu^{\dagger}$ is $\sum_{j,k}u_ju_k^{\dagger}\delta_{jk}=\sum_j\lvert u_j\rvert^{2}$.
 
-**Proposition (the cone is the fixed locus of the dagger inside the bilinear cone).** Let $L_{u}R_{\phi}=u\phi^{\mathsf T}$ be a nonzero member of $\mathcal{C}$. Then
+**Proposition (the cone is the fixed locus of the dagger inside the bilinear cone).** Let $L_{u}R_{\digamma_{\mathrm{map}}}=u\digamma_{\mathrm{map}}^{\mathsf T}$ be a nonzero member of $\mathcal{C}$. Then
 $$
-L_{u}R_{\phi}^{\dagger}=L_{u}R_{\phi}\iff \phi=c\,\bar u\ \text{ with }c\in\mathbb{R},
+L_{u}R_{\digamma_{\mathrm{map}}}^{\dagger}=L_{u}R_{\digamma_{\mathrm{map}}}\iff \digamma_{\mathrm{map}}=c\,\bar u\ \text{ with }c\in\mathbb{R},
 $$
-and in that case $L_{u}R_{\phi}=c\,uu^{\dagger}$. The fixed locus is therefore the real line through the Hermitian cone.
+and in that case $L_{u}R_{\digamma_{\mathrm{map}}}=c\,uu^{\dagger}$. The fixed locus is therefore the real line through the Hermitian cone.
 
-*Proof.* The adjoint is $\bar\phi u^{\mathsf T}$. Two rank-one matrices are equal exactly when their columns are proportional and their rows are proportional with the reciprocal scalar; the equality $u\phi^{\mathsf T}=\bar\phi u^{\mathsf T}$ gives $\phi=c\bar u$ and $\bar\phi=\alpha u$ for scalars $c,\alpha$, and the two displays $u\phi^{\mathsf T}=c\,u\bar u^{\mathsf T}$ and $\bar\phi u^{\mathsf T}=\alpha\,u\bar u^{\mathsf T}$ force $\alpha=c$, while conjugating $\phi=c\bar u$ gives $\alpha=\bar c$, so $c=\bar c$. Conversely, $c$ real gives $u(c\bar u)^{\mathsf T}=c\,u\bar u^{\mathsf T}=c\,uu^{\dagger}$, which is Hermitian.
+*Proof.* The adjoint is $\bar\digamma_{\mathrm{map}} u^{\mathsf T}$. Two rank-one matrices are equal exactly when their columns are proportional and their rows are proportional with the reciprocal scalar; the equality $u\digamma_{\mathrm{map}}^{\mathsf T}=\bar\digamma_{\mathrm{map}} u^{\mathsf T}$ gives $\digamma_{\mathrm{map}}=c\bar u$ and $\bar\digamma_{\mathrm{map}}=\alpha u$ for scalars $c,\alpha$, and the two displays $u\digamma_{\mathrm{map}}^{\mathsf T}=c\,u\bar u^{\mathsf T}$ and $\bar\digamma_{\mathrm{map}} u^{\mathsf T}=\alpha\,u\bar u^{\mathsf T}$ force $\alpha=c$, while conjugating $\digamma_{\mathrm{map}}=c\bar u$ gives $\alpha=\bar c$, so $c=\bar c$. Conversely, $c$ real gives $u(c\bar u)^{\mathsf T}=c\,u\bar u^{\mathsf T}=c\,uu^{\dagger}$, which is Hermitian.
 
 **The fixed locus is a real line through the cone.** The Hermitian cone itself is the positive part of the fixed locus, and the negative part is the cone of the negative semidefinite matrices of rank one. **The dagger is conjugate-linear, and that is why the second cone exists at all**: the bilinear cone is the cone of a complex-bilinear object and the Hermitian cone is the cone of a sesquilinear one, the adjoint is the only structure of the space that mixes the two, and the mixing produces a real locus.
 
@@ -502,17 +502,17 @@ and it is onto that cone; the trace is $\lVert u\rVert^{2}=2t$.
 
 | | bilinear cone $\mathcal{C}$ | Hermitian cone $\mathcal{C}_{H}$ |
 |---|---|---|
-| members | $u\phi^{\mathsf T}$ | $uu^{\dagger}$, positive semidefinite |
+| members | $u\digamma_{\mathrm{map}}^{\mathsf T}$ | $uu^{\dagger}$, positive semidefinite |
 | ambient | $M_2(\mathbb{C})$, complex dimension $4$ | the Hermitian subspace, dimension $4$ over $\mathbb{R}$ |
 | equation | $\det M=0$ | $\det M=0$ on the Hermitian subspace |
 | dimension | complex $3$ | real $3$ |
 | projectivisation | $\mathbb{P}^{1}\times\mathbb{P}^{1}$ | $\mathbb{P}^{1}$ |
 | rulings | two, independent | one, the diagonal |
-| parameter | $(u,\phi)$ modulo the scaling | $u$ modulo the phase |
+| parameter | $(u,\digamma_{\mathrm{map}})$ modulo the scaling | $u$ modulo the phase |
 | fixed by | nothing | the dagger |
-| adjoint family | $L_{\phi}R_{u}$ | itself |
+| adjoint family | $L_{\digamma_{\mathrm{map}}}R_{u}$ | itself |
 
-**The collapse of the two rulings to one is the phase quotient.** In the bilinear cone the line of the column and the line of the row are independent, so the projectivisation has two factors. In the Hermitian cone the row is the conjugate of the column, $\phi=\bar u$, so the second factor is determined by the first up to the phase, and the diagonal $[\phi]=[\bar u]$ is a single $\mathbb{P}^{1}$. **The conjugation is what identifies the two rulings, and there is no other identification.**
+**The collapse of the two rulings to one is the phase quotient.** In the bilinear cone the line of the column and the line of the row are independent, so the projectivisation has two factors. In the Hermitian cone the row is the conjugate of the column, $\digamma_{\mathrm{map}}=\bar u$, so the second factor is determined by the first up to the phase, and the diagonal $[\digamma_{\mathrm{map}}]=[\bar u]$ is a single $\mathbb{P}^{1}$. **The conjugation is what identifies the two rulings, and there is no other identification.**
 
 ## The Spinor and the Two Actions
 
@@ -565,7 +565,7 @@ so $\Lambda$ preserves the quadratic form $Q(M)=t^{2}-\lvert\vec x\rvert^{2}$ of
 
 **Proposition (the invariance of the two cones).** For $A\in\mathrm{GL}_2(\mathbb{C})$ and $T\in\mathcal{C}$, the conjugate $ATA^{-1}$ is in $\mathcal{C}$; for $B\in\mathrm{GL}_2(\mathbb{C})$ and $M\in\mathcal{C}_{H}$, the matrix $BMB^{\dagger}$ is in $\mathcal{C}_{H}$.
 
-*Proof.* $Au\phi^{\mathsf T}A^{-1}=(Au)(\phi^{\mathsf T}A^{-1})$ is rank one, and $Buu^{\dagger}B^{\dagger}=(Bu)(Bu)^{\dagger}$ is positive semidefinite of rank one.
+*Proof.* $Au\digamma_{\mathrm{map}}^{\mathsf T}A^{-1}=(Au)(\digamma_{\mathrm{map}}^{\mathsf T}A^{-1})$ is rank one, and $Buu^{\dagger}B^{\dagger}=(Bu)(Bu)^{\dagger}$ is positive semidefinite of rank one.
 
 **Two invariance statements and two groups.** The bilinear cone is invariant under conjugation, which is an action of the group on the operator space, and the Hermitian cone is invariant under congruence, which is another action of the same group. **The two actions differ, and the difference is again the dagger**: one uses $A^{-1}$ and the other $A^{\dagger}$.
 
@@ -643,9 +643,9 @@ is a fibre bundle with fibre $S^{1}$, and its fibres are the phase circles $u\ma
 
 ### The Effect on the Two Cones
 
-**Proposition (the phase quotient acts differently on the two cones).** The scaling $u\mapsto\lambda u$ with $\lvert\lambda\rvert=1$, together with the compensating $\phi\mapsto\lambda^{-1}\phi$, fixes every point of the bilinear cone; the scaling $u\mapsto\lambda u$ alone fixes every point of the Hermitian cone, without any compensation.
+**Proposition (the phase quotient acts differently on the two cones).** The scaling $u\mapsto\lambda u$ with $\lvert\lambda\rvert=1$, together with the compensating $\digamma_{\mathrm{map}}\mapsto\lambda^{-1}\digamma_{\mathrm{map}}$, fixes every point of the bilinear cone; the scaling $u\mapsto\lambda u$ alone fixes every point of the Hermitian cone, without any compensation.
 
-*Proof.* $(\lambda u)(\lambda^{-1}\phi)^{\mathsf T}=u\phi^{\mathsf T}$; and $(\lambda u)(\lambda u)^{\dagger}=\lvert\lambda\rvert^{2}uu^{\dagger}=uu^{\dagger}$.
+*Proof.* $(\lambda u)(\lambda^{-1}\digamma_{\mathrm{map}})^{\mathsf T}=u\digamma_{\mathrm{map}}^{\mathsf T}$; and $(\lambda u)(\lambda u)^{\dagger}=\lvert\lambda\rvert^{2}uu^{\dagger}=uu^{\dagger}$.
 
 **The two statements look alike and are not.** In the first the phase acts on the two slots with opposite exponents, so the phase is a symmetry of the parametrisation and the two rulings stay independent. In the second the phase acts on the single slot and cancels against its own conjugate, so **the second ruling is not a ruling at all**: the row is the conjugate of the column, the phase is quotiented, and the projectivised cone is one $\mathbb{P}^{1}$ and not a product.
 
@@ -655,7 +655,7 @@ is a fibre bundle with fibre $S^{1}$, and its fibres are the phase circles $u\ma
 
 The carrier of this trio is the module $V=\mathbb{C}^{2}$, of complex dimension two, with the basis $e_1=(1,0)$ and $e_2=(0,1)$. An operator is a $2\times2$ matrix read by its two images $Ae_1=(a,c)$ and $Ae_2=(b,d)$. With the reduced biquaternion product $(a+jb)(c+jd)=(ac+bd)+j(ad+bc)$, $j^{2}=1$, the carrier is the commutative algebra $\mathbb{C}[j]/(j^{2}-1)$, and its regular representation is generated by the two matrices $L(1)=I_2$ and $L(j)=\sigma_1$, with $$L(z)=\begin{pmatrix}z_{\blacktriangle}&z_{\blacktriangledown}\\ z_{\blacktriangledown}&z_{\blacktriangle}\end{pmatrix},\qquad \operatorname{tr}L(z)=2z_{\blacktriangle},\qquad \det L(z)=z_{\blacktriangle}^{2}-z_{\blacktriangledown}^{2}.$$ In the bases $(e_+,e_-)$ and $(1,ij)$ the same family is the diagonal and the rotation form, and the second generator is $\tfrac12(I_2-\sigma_3)$ and $-J_2$; the traceless parts are $\sigma_1$, $-\sigma_3$ and $-i\sigma_2$, the three Pauli vector matrices up to sign, the three Pauli vector matrices. The right family equals the left, because the product is commutative. The two-sided family $\{L_uR_v\}$ is the plane spanned by the two generators, and the plane meets the rank-one cone in the two isotropic lines $\alpha=\pm\beta$. The ambient algebra of all operators has complex dimension four and the basis of the four matrix units $E_{jk}=e_je_k^{\mathsf T}$, with $E_{jk}E_{lm}=\delta_{kl}E_{jm}$, $I_2=E_{11}+E_{22}$ and $4=2\times2$ column-row products $L_{e_j}R_{\epsilon^{k}}$. Five bases of the ambient space are written out — the units, the Pauli basis, the anti-Hermitian basis, the symmetric and antisymmetric pair, and the diagonal-nilpotent pair — with the dictionary between the units and the Pauli matrices written line by line. The article then reads the space through the three canonical forms.
 
-A line is a point of $\mathbb{P}^{1}$, a rank-one Hermitian projector $\pi_u=uu^{\dagger}/(u^{\dagger}u)$, and a pure state; the projective line is $S^{2}$; a flag is a line with a ray, that is invertible column, and the flags are $S^{3}$ with the Hopf fibration over the lines. The rank-one operators $u\phi^{\mathsf T}$ form a cone of complex dimension three whose projectivisation is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, with the determinant as its equation and as a nondegenerate quadratic form; the cone spans the operator space although the identity is not in it. The Hermitian rank-one matrices $uu^{\dagger}$ form a cone of real dimension three which is the fixed locus of the dagger inside the bilinear cone up to a real scale, with $\det=0$ and $\operatorname{tr}=\lVert u\rVert^{2}$, and which the Pauli coordinates identify with the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$. The two cones differ in dimension, in projectivisation and in their rulings, and the collapse of the two rulings to one is the phase quotient.
+A line is a point of $\mathbb{P}^{1}$, a rank-one Hermitian projector $\pi_u=uu^{\dagger}/(u^{\dagger}u)$, and a pure state; the projective line is $S^{2}$; a flag is a line with a ray, that is invertible column, and the flags are $S^{3}$ with the Hopf fibration over the lines. The rank-one operators $u\digamma_{\mathrm{map}}^{\mathsf T}$ form a cone of complex dimension three whose projectivisation is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, with the determinant as its equation and as a nondegenerate quadratic form; the cone spans the operator space although the identity is not in it. The Hermitian rank-one matrices $uu^{\dagger}$ form a cone of real dimension three which is the fixed locus of the dagger inside the bilinear cone up to a real scale, with $\det=0$ and $\operatorname{tr}=\lVert u\rVert^{2}$, and which the Pauli coordinates identify with the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$. The two cones differ in dimension, in projectivisation and in their rulings, and the collapse of the two rulings to one is the phase quotient.
 
 The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor of type $(\tfrac12,0)$, and its conjugate is the second module of the pair; the duality through $\omega$ makes the dual module the module itself, and a spinor produces a null vector by $u\mapsto uu^{\dagger}$, with the double cover of the Lorentz group of kernel $\{\pm I_2\}$ and the two signs of the spinor giving the same vector. On the trace-one slice the positive cone is the Bloch ball, the Bloch vector is $\vec s=2\vec x$, the purity is $\operatorname{tr}\rho^{2}=\tfrac12(1+\lvert\vec s\rvert^{2})$, and the pure states are the unit sphere, which is the projective line. The operators of the carrier, one-sided and two-sided, their composition, their length and their adjoints, are the companion article *$M_2(\mathbb{C})$ Defining Representation : Operators*.
 
@@ -666,13 +666,13 @@ The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor
 | $V=\mathbb{C}^{2}$ | the carrier, of complex dimension $2$ |
 | $e_1,e_2$ | the complex basis |
 | $u_{\blacktriangle},u_{\blacktriangledown}$ | the two complex coordinates |
-| $V^{*}$, $\phi$ | the dual and the row |
-| $\phi(u)=\phi^{\mathsf T}u$ | the pairing, complex bilinear |
+| $V^{*}$, $\digamma_{\mathrm{map}}$ | the dual and the row |
+| $\digamma_{\mathrm{map}}(u)=\digamma_{\mathrm{map}}^{\mathsf T}u$ | the pairing, complex bilinear |
 | $J$, $J_2$ | multiplication by $i$; the alternating matrix $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ |
 | $H$, $B$, $\omega$ | the Hermitian, the symmetric bilinear and the alternating forms |
 | $M^{\dagger}$, $M^{\mathsf T}$ | the conjugate transpose and the transpose |
 | $E_{jk}$ | the matrix units $e_je_k^{\mathsf T}$ |
-| $L_{u}R_{\phi}=u\phi^{\mathsf T}$ | the rank-one operator with column $u$ and row $\phi$ |
+| $L_{u}R_{\digamma_{\mathrm{map}}}=u\digamma_{\mathrm{map}}^{\mathsf T}$ | the rank-one operator with column $u$ and row $\digamma_{\mathrm{map}}$ |
 | $\mathcal{C}$ | the bilinear rank-one cone |
 | $\mathcal{C}_{H}$ | the Hermitian rank-one cone |
 | $\pi_u$ | the projector $uu^{\dagger}/(u^{\dagger}u)$ |
@@ -690,4 +690,4 @@ The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor
 
 *Duo-Complex Numbers* fixes the space, its two scalar structures, the complex structure and the norm, and is the entry point of the category. *$M_2(\mathbb{C})$ Defining Representation : Products, Forms and Norms* is the second article of this trio: the three pairings of two columns, their six real forms, the two pairings of two operators, the determinant as a quadratic form and the four norms. *$M_2(\mathbb{C})$ Defining Representation : Operators* is the third: the two-sided family and its semigroup. *The Three Canonical Forms on $\mathbb{C}^2$* proves the properties of $H$, $B$ and $\omega$, their Gram matrices, their isometry groups and their isotropic sets. *Duo-Complex Numbers* fixes the space, its scalar structures, the complex structure and the norm. *The Realification of $\mathbb{C}^2$* is a separate article of the corpus and is not used here: **this trio reads the carrier as a complex space of dimension two and every operator as a $2\times2$ complex matrix**, and no object of the three articles is a matrix of size four or a quadruple of real coordinates.
 
-On the algebra side, *$M_2(\mathbb{C})$ Pauli Representation* and its operators companion read $\mathbb{B}\cong M_2(\mathbb{C})$ as a set of matrices, with the frame, the Peirce decomposition, the trace, the determinant, the projectors, the adjugate and the norms. The companion of this article is *$M_2(\mathbb{C})$ Defining Representation : Operators*, which treats $L_{u}R_{\phi}$ as an operator, its composition, its length, its adjoints and the two cones as sets of operators. For the general size, *$M_4(\mathbb{C})$ Pauli Representation* gives the rank criterion and the determinantal variety, of which §*The Bilinear Cone and the Segre Quadric* is the two-dimensional case. For the analysis of the space, *Several Complex Variables* is the general theory and *Analysis on $\mathbb{C}^2$* its two-variable case.
+On the algebra side, *$M_2(\mathbb{C})$ Pauli Representation* and its operators companion read $\mathbb{B}\cong M_2(\mathbb{C})$ as a set of matrices, with the frame, the Peirce decomposition, the trace, the determinant, the projectors, the adjugate and the norms. The companion of this article is *$M_2(\mathbb{C})$ Defining Representation : Operators*, which treats $L_{u}R_{\digamma_{\mathrm{map}}}$ as an operator, its composition, its length, its adjoints and the two cones as sets of operators. For the general size, *$M_4(\mathbb{C})$ Pauli Representation* gives the rank criterion and the determinantal variety, of which §*The Bilinear Cone and the Segre Quadric* is the two-dimensional case. For the analysis of the space, *Several Complex Variables* is the general theory and *Analysis on $\mathbb{C}^2$* its two-variable case.

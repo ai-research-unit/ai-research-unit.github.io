@@ -10,7 +10,7 @@ This article lists the inequalities the corpus states and uses. An inequality is
 | Object | What it bounds, and its relation to the others | Introduced in |
 |---|---|---|
 | Cauchy–Schwarz | $\lvert\langle x,y\rangle\rvert \leq \lVert x\rVert\lVert y\rVert$; the basic inequality of an inner product space, with equality exactly on proportional vectors | *Banach and Hilbert Spaces* |
-| Jensen's inequality | $\varphi(\int f\,d\mu) \leq \int \varphi\circ f\,d\mu$ for convex $\varphi$; the definition of convexity in its integral form | *Convex Analysis*; *Measure-Theoretic Probability* |
+| Jensen's inequality | $\digamma_{\mathrm{map}}(\int f\,d\mu) \leq \int \digamma_{\mathrm{map}}\circ f\,d\mu$ for convex $\digamma_{\mathrm{map}}$; the definition of convexity in its integral form | *Convex Analysis*; *Measure-Theoretic Probability* |
 | the Fenchel–Young inequality | $\langle x,y\rangle \leq f(x) + f^*(y)$; the general form of Young's inequality, with equality exactly when $y \in \partial f(x)$ | *Convex Analysis* |
 | the arithmetic–geometric mean inequality | $\sqrt{ab} \leq (a+b)/2$; the case $p = q = 2$ of Young | *Sobolev Spaces and Weak Solutions* |
 | the convexity of the sublevel sets, and the supporting hyperplane inequality | $f(x) \geq f(x_0) + \langle v, x - x_0\rangle$ for $v$ in the subdifferential | *Convex Analysis* |
@@ -70,7 +70,7 @@ A warning belongs here. The classical **Hardy inequality**, which bounds the mea
 | the maximal inequality at $p = 1$ | the strong-type bound fails; only the weak-type $(1,1)$ bound holds | *Real Harmonic Analysis* |
 | the isoperimetric inequality | equality holds exactly for balls; no other set attains it | *Geometric Measure Theory* |
 | the Poincaré inequality without a normalisation | fails on functions with a constant part; the mean must be removed for the inequality to hold | *Sobolev Spaces and Weak Solutions* |
-| Jensen's inequality for a non-convex $\varphi$ | fails; convexity is sharp for the inequality | *Convex Analysis* |
+| Jensen's inequality for a non-convex $\digamma_{\mathrm{map}}$ | fails; convexity is sharp for the inequality | *Convex Analysis* |
 
 ## Summary
 

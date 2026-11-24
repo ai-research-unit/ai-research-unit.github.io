@@ -226,10 +226,10 @@ An **ideal** in an algebra $A$ over a commutative ring $R$ is a submodule $I \su
 
 ### Homomorphisms
 
-An **algebra homomorphism** from an algebra $A$ over a commutative ring $R$ to an algebra $B$ over the same ring $R$ is an $R$-linear map $\varphi: A \to B$ that preserves the product:
+An **algebra homomorphism** from an algebra $A$ over a commutative ring $R$ to an algebra $B$ over the same ring $R$ is an $R$-linear map $\digamma_{\mathrm{map}}: A \to B$ that preserves the product:
 
 $$
-\varphi(uv) = \varphi(u)\varphi(v)
+\digamma_{\mathrm{map}}(uv) = \digamma_{\mathrm{map}}(u)\digamma_{\mathrm{map}}(v)
 $$
 
 for all $u, v \in A$. An **isomorphism** is a bijective homomorphism.

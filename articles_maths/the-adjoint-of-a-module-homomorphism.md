@@ -39,7 +39,7 @@ The second display in the definition follows from the first by replacing $a$ wit
 
 **(b) The regular pairing of an involutive algebra.** For $M=N=A$ with the product, the map $\langle a,b\rangle=\sigma(a)\,b$ is additive in each variable and satisfies the sesquilinear identity; it is non-degenerate when $A$ is a division ring and is the model for the forms of *Hermitian Forms over an Involution Ring*, which owns them.
 
-**(c) The evaluation pairing.** For $N=M^{\vee}=\operatorname{Hom}_R(M,R)$ with the twisted structure, $\langle m,\varphi\rangle=\varphi(m)$ is the evaluation pairing; it is bilinear and non-degenerate when $M$ is a finite free $R$-module.
+**(c) The evaluation pairing.** For $N=M^{\vee}=\operatorname{Hom}_R(M,R)$ with the twisted structure, $\langle m,\digamma_{\mathrm{map}}\rangle=\digamma_{\mathrm{map}}(m)$ is the evaluation pairing; it is bilinear and non-degenerate when $M$ is a finite free $R$-module.
 
 ## The Adjoint
 
@@ -125,13 +125,13 @@ $$
 
 In the bilinear case the adjoint of a homomorphism with respect to the evaluation pairing is the transpose.
 
-**Proposition.** Let $A=R$ be commutative, $\sigma=\mathrm{id}$, and let $N=M^{\vee}=\operatorname{Hom}_R(M,R)$ with the evaluation pairing $\langle m,\varphi\rangle=\varphi(m)$. Then for $f : M \to M$ the adjoint with respect to the evaluation pairing is the transpose
+**Proposition.** Let $A=R$ be commutative, $\sigma=\mathrm{id}$, and let $N=M^{\vee}=\operatorname{Hom}_R(M,R)$ with the evaluation pairing $\langle m,\digamma_{\mathrm{map}}\rangle=\digamma_{\mathrm{map}}(m)$. Then for $f : M \to M$ the adjoint with respect to the evaluation pairing is the transpose
 
 $$
-f^{\mathrm{t}} : M^{\vee} \to M^{\vee}, \qquad f^{\mathrm{t}}(\varphi)=\varphi \circ f .
+f^{\mathrm{t}} : M^{\vee} \to M^{\vee}, \qquad f^{\mathrm{t}}(\digamma_{\mathrm{map}})=\digamma_{\mathrm{map}} \circ f .
 $$
 
-*Proof.* $\langle f(m),\varphi\rangle=\varphi(f(m))=(f^{\mathrm{t}}\varphi)(m)=\langle m,f^{\mathrm{t}}\varphi\rangle$, so $f^{\mathrm{t}}$ represents the functional and is the adjoint by uniqueness.
+*Proof.* $\langle f(m),\digamma_{\mathrm{map}}\rangle=\digamma_{\mathrm{map}}(f(m))=(f^{\mathrm{t}}\digamma_{\mathrm{map}})(m)=\langle m,f^{\mathrm{t}}\digamma_{\mathrm{map}}\rangle$, so $f^{\mathrm{t}}$ represents the functional and is the adjoint by uniqueness.
 
 The transpose is contravariant, $(fg)^{\mathrm{t}}=g^{\mathrm{t}}f^{\mathrm{t}}$, and involutive when $M$ is reflexive, in agreement with the general laws.
 

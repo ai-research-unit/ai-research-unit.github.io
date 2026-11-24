@@ -218,14 +218,14 @@ So the two named angles are not functions of the spectrum. The spectrum carries 
 The class has a symmetry that the axis count alone hides. Conjugating a frame by a rotation about its own boost axis preserves the spectrum:
 
 $$
-\tilde U\ \longmapsto\ \tilde R_\phi\,\tilde U\,\tilde R_\phi^{*},
+\tilde U\ \longmapsto\ \tilde R_\xi_{\mathrm{pot}}\,\tilde U\,\tilde R_\xi_{\mathrm{pot}}^{*},
 \qquad
-\tilde R_\phi=\exp\Bigl(\tfrac{\phi}{2}\vec u_{\mathrm b}\Bigr).
+\tilde R_\xi_{\mathrm{pot}}=\exp\Bigl(\tfrac{\xi_{\mathrm{pot}}}{2}\vec u_{\mathrm b}\Bigr).
 $$
 
-The conjugation fixes the boost factor, because $\tilde R_\phi$ commutes with $\tilde U_\Psi$; it carries the rotation axis $\vec u_{\mathrm r}$ to $R_\phi\vec u_{\mathrm r}$, that is, it rotates the rotation axis about the boost axis; and it preserves the eigenvalues, because a conjugate matrix has the same eigenvalues. So one spectrum carries a one-parameter family of frames in which only the azimuth of the rotation axis about the boost axis changes.
+The conjugation fixes the boost factor, because $\tilde R_\xi_{\mathrm{pot}}$ commutes with $\tilde U_\Psi$; it carries the rotation axis $\vec u_{\mathrm r}$ to $R_\xi_{\mathrm{pot}}\vec u_{\mathrm r}$, that is, it rotates the rotation axis about the boost axis; and it preserves the eigenvalues, because a conjugate matrix has the same eigenvalues. So one spectrum carries a one-parameter family of frames in which only the azimuth of the rotation axis about the boost axis changes.
 
-For the worked element, with $\vec u_{\mathrm b}=\vec e_x$, the eigenvalues are $1.624811-1.300243i$ and $0.375189+0.300243i$ at $\phi=0$, $0.3$, $1$ and $2.5$ radians alike, to six decimal places. The frames differ; the spectrum does not.
+For the worked element, with $\vec u_{\mathrm b}=\vec e_x$, the eigenvalues are $1.624811-1.300243i$ and $0.375189+0.300243i$ at $\xi_{\mathrm{pot}}=0$, $0.3$, $1$ and $2.5$ radians alike, to six decimal places. The frames differ; the spectrum does not.
 
 ### The Verification
 

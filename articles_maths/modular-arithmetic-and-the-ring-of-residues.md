@@ -7,7 +7,7 @@ This is the second article of the Integers system in Part V, and it occupies the
 
 The system $\mathbb{Z}$ has no geometry and no analysis, and its applications are correspondingly arithmetic: the congruences are the whole of its applied content, and they are the origin of the finite rings and finite groups that occur throughout the corpus. The general theory of quotient rings, ideals and the first isomorphism theorem is from *Rings*, and the divisibility and factorisation theory of $\mathbb{Z}$ is from *The Integers* and *Unique Factorisation Domains*; the group-theoretic background, including the structure of finite abelian groups and the notion of a cyclic group, is from *Groups*. The quadratic reciprocity law is stated with a reference to the standard literature, and the analytic estimate of the distribution of the primes is not used.
 
-Throughout, $n$ is a positive integer, $\mathbb{Z}/n\mathbb{Z}$ or $\mathbb{Z}_n$ is the ring of residues modulo $n$, and $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$ is the field with $p$ elements for $p$ prime; the class of $a$ is written $\bar a$ or $a \bmod n$, and $a \equiv b \pmod n$ means that $n$ divides $a - b$. The group of invertibles of $\mathbb{Z}/n\mathbb{Z}$ is written $(\mathbb{Z}/n\mathbb{Z})^\times$, $\varphi$ is the Euler function, $\operatorname{ord}_n(a)$ is the multiplicative order of $a$ modulo $n$, and $\left(\frac{a}{p}\right)$ is the Legendre symbol. The base is the commutative ring with identity throughout, and the specific rings here are finite and commutative.
+Throughout, $n$ is a positive integer, $\mathbb{Z}/n\mathbb{Z}$ or $\mathbb{Z}_n$ is the ring of residues modulo $n$, and $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$ is the field with $p$ elements for $p$ prime; the class of $a$ is written $\bar a$ or $a \bmod n$, and $a \equiv b \pmod n$ means that $n$ divides $a - b$. The group of invertibles of $\mathbb{Z}/n\mathbb{Z}$ is written $(\mathbb{Z}/n\mathbb{Z})^\times$, $\digamma_{\mathrm{map}}$ is the Euler function, $\operatorname{ord}_n(a)$ is the multiplicative order of $a$ modulo $n$, and $\left(\frac{a}{p}\right)$ is the Legendre symbol. The base is the commutative ring with identity throughout, and the specific rings here are finite and commutative.
 
 ## Congruences
 
@@ -56,7 +56,7 @@ $$
 **Theorem (Chinese remainder).** If $m$ and $n$ are coprime positive integers, then the map
 
 $$
-\psi : \mathbb{Z}/mn\mathbb{Z} \to \mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}, \qquad \psi(\bar a) = (\bar a \bmod m, \bar a \bmod n),
+Ξ_{\mathrm{wfn}} : \mathbb{Z}/mn\mathbb{Z} \to \mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}, \qquad Ξ_{\mathrm{wfn}}(\bar a) = (\bar a \bmod m, \bar a \bmod n),
 $$
 
 is an isomorphism of rings. More generally, for pairwise coprime $n_1, \dots, n_k$,
@@ -64,7 +64,7 @@ is an isomorphism of rings. More generally, for pairwise coprime $n_1, \dots, n_
 $$ \boxed{\;\mathbb{Z}/n_1\cdots n_k\mathbb{Z} \cong \prod_{i=1}^{k} \mathbb{Z}/n_i\mathbb{Z}\;}.
 $$
 
-**Proof.** The kernel of $\psi$ is the set of classes divisible by both $m$ and $n$, that is, by $mn$ since $m$ and $n$ are coprime; so $\psi$ is injective. The two rings have the same finite cardinality $mn$, so $\psi$ is bijective. The general case is induction.
+**Proof.** The kernel of $Ξ_{\mathrm{wfn}}$ is the set of classes divisible by both $m$ and $n$, that is, by $mn$ since $m$ and $n$ are coprime; so $Ξ_{\mathrm{wfn}}$ is injective. The two rings have the same finite cardinality $mn$, so $Ξ_{\mathrm{wfn}}$ is bijective. The general case is induction.
 
 **Corollary.** The group of invertibles satisfies
 
@@ -72,15 +72,15 @@ $$
 (\mathbb{Z}/mn\mathbb{Z})^\times \cong (\mathbb{Z}/m\mathbb{Z})^\times \times (\mathbb{Z}/n\mathbb{Z})^\times
 $$
 
-for coprime $m, n$, and the Euler function is multiplicative: $\varphi(mn) = \varphi(m)\varphi(n)$.
+for coprime $m, n$, and the Euler function is multiplicative: $\digamma_{\mathrm{map}}(mn) = \digamma_{\mathrm{map}}(m)\digamma_{\mathrm{tot}}(n)$.
 
-**Proof.** The isomorphism is the restriction of $\psi$ to units, since an element of a product of rings is invertible exactly when each component is; the multiplicativity of $\varphi$ is then the multiplicativity of the cardinality.
+**Proof.** The isomorphism is the restriction of $Ξ_{\mathrm{wfn}}$ to units, since an element of a product of rings is invertible exactly when each component is; the multiplicativity of $\digamma_{\mathrm{map}}$ is then the multiplicativity of the cardinality.
 
 **Example.** $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$, and the class of $5$ corresponds to $(1, 2)$; the invertibles of $\mathbb{Z}/6\mathbb{Z}$ are $\bar 1$ and $\bar 5$, corresponding to the pairs $(1,1)$ and $(1,2)$, which are exactly the elements of the product of the groups of invertibles $\{1\} \subseteq \mathbb{Z}/2\mathbb{Z}$ and $\{1,2\} \subseteq \mathbb{Z}/3\mathbb{Z}$. The computation shows that the isomorphism of rings does not preserve the additive generator: the class $\bar 1$ corresponds to $(1,1)$, not to $(1,0)$.
 
 ### The Additive and Multiplicative Structure
 
-**Theorem.** $(\mathbb{Z}/n\mathbb{Z}, +)$ is a cyclic group of order $n$, generated by $\bar 1$; it is isomorphic to the group $\mathbb{Z}/n\mathbb{Z}$ of the notation. $(\mathbb{Z}/n\mathbb{Z}, \cdot)$ is a commutative monoid with identity and zero, and its group of invertibles has order $\varphi(n)$.
+**Theorem.** $(\mathbb{Z}/n\mathbb{Z}, +)$ is a cyclic group of order $n$, generated by $\bar 1$; it is isomorphic to the group $\mathbb{Z}/n\mathbb{Z}$ of the notation. $(\mathbb{Z}/n\mathbb{Z}, \cdot)$ is a commutative monoid with identity and zero, and its group of invertibles has order $\digamma_{\mathrm{tot}}(n)$.
 
 **Proof.** The classes $\bar 0, \bar 1, \dots, \overline{n-1}$ are the multiples of $\bar 1$; the order statements are then immediate. The invertibles are counted by the preceding section.
 
@@ -90,9 +90,9 @@ $$
 \mathbb{Z}/n\mathbb{Z} \cong \prod_{i=1}^{r} \mathbb{Z}/p_i^{k_i}\mathbb{Z}, \qquad (\mathbb{Z}/n\mathbb{Z})^\times \cong \prod_{i=1}^{r} (\mathbb{Z}/p_i^{k_i}\mathbb{Z})^\times,
 $$
 
-and $\varphi(n) = n \prod_{i=1}^{r}\left(1 - \frac{1}{p_i}\right) = \prod_i p_i^{k_i - 1}(p_i - 1)$.
+and $\digamma_{\mathrm{tot}}(n) = n \prod_{i=1}^{r}\left(1 - \frac{1}{p_i}\right) = \prod_i p_i^{k_i - 1}(p_i - 1)$.
 
-**Proof.** The decomposition is the Chinese remainder theorem applied to the prime powers; the formula for $\varphi$ is the multiplicativity together with $\varphi(p^k) = p^{k-1}(p-1)$, obtained by counting the integers in $\{1, \dots, p^k\}$ not divisible by $p$.
+**Proof.** The decomposition is the Chinese remainder theorem applied to the prime powers; the formula for $\digamma_{\mathrm{map}}$ is the multiplicativity together with $\digamma_{\mathrm{map}}(p^k) = p^{k-1}(p-1)$, obtained by counting the integers in $\{1, \dots, p^k\}$ not divisible by $p$.
 
 **Theorem.** The group of invertibles of $\mathbb{Z}/p^k\mathbb{Z}$ is cyclic for odd $p$; for $p = 2$ it is trivial for $k = 1$, of order $2$ for $k = 2$, and isomorphic to $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2^{k-2}\mathbb{Z}$ for $k \geq 3$.
 
@@ -102,26 +102,26 @@ and $\varphi(n) = n \prod_{i=1}^{r}\left(1 - \frac{1}{p_i}\right) = \prod_i p_i^
 
 ### Euler's Function
 
-**Definition.** The **Euler function** $\varphi(n)$ is the number of integers in $\{1, \dots, n\}$ coprime to $n$; equivalently the order of $(\mathbb{Z}/n\mathbb{Z})^\times$.
+**Definition.** The **Euler function** $\digamma_{\mathrm{tot}}(n)$ is the number of integers in $\{1, \dots, n\}$ coprime to $n$; equivalently the order of $(\mathbb{Z}/n\mathbb{Z})^\times$.
 
 **Theorem.** The Euler function satisfies
 
 $$
-\sum_{d \mid n} \varphi(d) = n,
+\sum_{d \mid n} \digamma_{\mathrm{map}}(d) = n,
 $$
 
-and it is the Dirichlet series coefficient determined by $\sum_{n \geq 1} \varphi(n)n^{-s} = \omega/\zeta(s)$ in the notation of *Combinatorial Functions and Generating Functions*.
+and it is the Dirichlet series coefficient determined by $\sum_{n \geq 1} \digamma_{\mathrm{tot}}(n)n^{-s} = \omega/\zeta(s)$ in the notation of *Combinatorial Functions and Generating Functions*.
 
-**Proof.** Partition the integers $1, \dots, n$ by the value of $\gcd(k, n) = d$; the classes with gcd $d$ are in bijection with the integers $k/d$ coprime to $n/d$, of which there are $\varphi(n/d)$; summing over $d \mid n$ gives $\sum_{d\mid n}\varphi(n/d) = n$, which is the stated identity after reindexing. The Dirichlet series is the standard computation with Möbius inversion.
+**Proof.** Partition the integers $1, \dots, n$ by the value of $\gcd(k, n) = d$; the classes with gcd $d$ are in bijection with the integers $k/d$ coprime to $n/d$, of which there are $\digamma_{\mathrm{map}}(n/d)$; summing over $d \mid n$ gives $\sum_{d\mid n}\digamma_{\mathrm{map}}(n/d) = n$, which is the stated identity after reindexing. The Dirichlet series is the standard computation with Möbius inversion.
 
 ### Euler, Fermat and Wilson
 
 **Theorem (Euler).** If $\gcd(a, n) = 1$ then
 
-$$ \boxed{\;a^{\varphi(n)} \equiv 1 \pmod n \;}.
+$$ \boxed{\;a^{\digamma_{\mathrm{tot}}(n)} \equiv 1 \pmod n \;}.
 $$
 
-**Proof.** Multiplication by $\bar a$ permutes the group $(\mathbb{Z}/n\mathbb{Z})^\times$, so $\prod_{u \in U} u = \prod_{u\in U} \bar a u = \bar a^{\varphi(n)} \prod_{u\in U} u$; cancelling the product, which is invertible, gives $\bar a^{\varphi(n)} = \bar 1$.
+**Proof.** Multiplication by $\bar a$ permutes the group $(\mathbb{Z}/n\mathbb{Z})^\times$, so $\prod_{u \in U} u = \prod_{u\in U} \bar a u = \bar a^{\digamma_{\mathrm{tot}}(n)} \prod_{u\in U} u$; cancelling the product, which is invertible, gives $\bar a^{\digamma_{\mathrm{tot}}(n)} = \bar 1$.
 
 **Theorem (Fermat's little theorem).** If $p$ is prime then for every integer $a$,
 
@@ -131,13 +131,13 @@ $$
 
 and if $p \nmid a$ then $a^{p-1} \equiv 1 \pmod p$.
 
-**Proof.** The second statement is Euler's theorem with $\varphi(p) = p-1$; the first follows by multiplying by $a$ and noting that it also holds for $a \equiv 0$.
+**Proof.** The second statement is Euler's theorem with $\digamma_{\mathrm{map}}(p) = p-1$; the first follows by multiplying by $a$ and noting that it also holds for $a \equiv 0$.
 
 **Theorem (Wilson).** If $p$ is prime then $(p-1)! \equiv -1 \pmod p$.
 
 **Proof.** In $\mathbb{F}_p$ the nonzero elements pair off into inverse pairs except for the self-inverse elements $\pm 1$, since the solutions of $m^2 = 1$ are $m = \pm 1$ in a field; multiplying all nonzero classes gives $\bar 1 \cdot (-\bar 1)$ times $\bar 1$ for each inverse pair, hence $-1$.
 
-**Corollary.** The order $\operatorname{ord}_n(a)$ of an invertible element $a$ modulo $n$ divides $\varphi(n)$, and $a$ is a **primitive root** modulo $n$ exactly when its order is $\varphi(n)$. For $p$ prime the group $\mathbb{F}_p^\times$ is cyclic of order $p-1$.
+**Corollary.** The order $\operatorname{ord}_n(a)$ of an invertible element $a$ modulo $n$ divides $\digamma_{\mathrm{tot}}(n)$, and $a$ is a **primitive root** modulo $n$ exactly when its order is $\digamma_{\mathrm{tot}}(n)$. For $p$ prime the group $\mathbb{F}_p^\times$ is cyclic of order $p-1$.
 
 **Proof.** Lagrange's theorem in the finite group $(\mathbb{Z}/n\mathbb{Z})^\times$ gives the divisibility; cyclicity of $\mathbb{F}_p^\times$ is the case $k = 1$ of the structure theorem above.
 
@@ -194,9 +194,9 @@ and the supplementary laws are $\left(\frac{-1}{p}\right) = (-1)^{(p-1)/2}$ and 
 
 **Proof.** Since $10 \equiv 1 \pmod 9$ and $10 \equiv -1 \pmod{11}$, the value of the decimal expansion $\sum a_i 10^i$ is congruent to $\sum a_i$ modulo $9$ and to $\sum (-1)^i a_i$ modulo $11$.
 
-**Theorem (cancellation of periods).** If $\gcd(a, n) = 1$ then the sequence of powers $a, a^2, a^3, \dots$ modulo $n$ is periodic with period $\operatorname{ord}_n(a)$, and the period divides $\varphi(n)$; in particular the decimal expansion of $1/n$ is purely periodic of period $\operatorname{ord}_n(10)$ when $\gcd(10, n) = 1$.
+**Theorem (cancellation of periods).** If $\gcd(a, n) = 1$ then the sequence of powers $a, a^2, a^3, \dots$ modulo $n$ is periodic with period $\operatorname{ord}_n(a)$, and the period divides $\digamma_{\mathrm{tot}}(n)$; in particular the decimal expansion of $1/n$ is purely periodic of period $\operatorname{ord}_n(10)$ when $\gcd(10, n) = 1$.
 
-**Proof.** The powers form the cyclic subgroup generated by $\bar a$ in the finite group $(\mathbb{Z}/n\mathbb{Z})^\times$, whose order is $\operatorname{ord}_n(a)$ and divides $\varphi(n)$ by Lagrange. The decimal statement is the division algorithm applied to the remainders, which repeat with the period of the powers of $10$.
+**Proof.** The powers form the cyclic subgroup generated by $\bar a$ in the finite group $(\mathbb{Z}/n\mathbb{Z})^\times$, whose order is $\operatorname{ord}_n(a)$ and divides $\digamma_{\mathrm{tot}}(n)$ by Lagrange. The decimal statement is the division algorithm applied to the remainders, which repeat with the period of the powers of $10$.
 
 ## Polynomial Congruences and Hensel's Lemma
 
@@ -246,9 +246,9 @@ and since $2k \geq k+1$, the congruence modulo $p^{k+1}$ is $f(r_k) + t p^k \fra
 
 ## Summary
 
-Congruence modulo $n$ is the equivalence relation $a \equiv b \pmod n \iff n \mid (a-b)$, compatible with addition and multiplication, and the quotient $\mathbb{Z}/n\mathbb{Z}$ is a commutative ring with identity whose elements are the classes $\bar 0, \dots, \overline{n-1}$; it is a field exactly when $n$ is prime, in which case it is $\mathbb{F}_p$. An element is invertible exactly when it is coprime to $n$, a zero divisor exactly when its gcd with $n$ is proper nontrivial, and the invertibles form a group of order $\varphi(n)$. The Chinese remainder theorem identifies $\mathbb{Z}/mn\mathbb{Z}$ with $\mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ for coprime $m, n$, whence the multiplicativity of $\varphi$ and the decomposition of the rings and groups of invertibles into their prime-power parts; $\varphi(n) = n\prod(1 - 1/p_i)$ and $\sum_{d\mid n}\varphi(d) = n$.
+Congruence modulo $n$ is the equivalence relation $a \equiv b \pmod n \iff n \mid (a-b)$, compatible with addition and multiplication, and the quotient $\mathbb{Z}/n\mathbb{Z}$ is a commutative ring with identity whose elements are the classes $\bar 0, \dots, \overline{n-1}$; it is a field exactly when $n$ is prime, in which case it is $\mathbb{F}_p$. An element is invertible exactly when it is coprime to $n$, a zero divisor exactly when its gcd with $n$ is proper nontrivial, and the invertibles form a group of order $\digamma_{\mathrm{tot}}(n)$. The Chinese remainder theorem identifies $\mathbb{Z}/mn\mathbb{Z}$ with $\mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ for coprime $m, n$, whence the multiplicativity of $\digamma_{\mathrm{map}}$ and the decomposition of the rings and groups of invertibles into their prime-power parts; $\digamma_{\mathrm{tot}}(n) = n\prod(1 - 1/p_i)$ and $\sum_{d\mid n}\digamma_{\mathrm{map}}(d) = n$.
 
-Euler's theorem states $a^{\varphi(n)} \equiv 1 \pmod n$ for invertibles, Fermat's little theorem is its prime case $a^{p-1} \equiv 1 \pmod p$, and Wilson's theorem states $(p-1)! \equiv -1 \pmod p$. The order of an invertible element divides $\varphi(n)$, the group of invertibles modulo an odd prime power is cyclic, and the multiplicative group of a finite prime field is cyclic. The linear congruence $am \equiv b \pmod n$ is solvable exactly when $\gcd(a,n)$ divides $b$, with that many solutions, and the quadratic congruence $m^2 \equiv a \pmod p$ is governed by the Legendre symbol, Euler's criterion and the law of quadratic reciprocity. The arithmetic of the integers modulo $n$ is thus the whole applied content of the system $\mathbb{Z}$: it is the source of the finite rings and finite abelian groups of the corpus, and it is where the divisibility theory of the system becomes an effective calculus.
+Euler's theorem states $a^{\digamma_{\mathrm{tot}}(n)} \equiv 1 \pmod n$ for invertibles, Fermat's little theorem is its prime case $a^{p-1} \equiv 1 \pmod p$, and Wilson's theorem states $(p-1)! \equiv -1 \pmod p$. The order of an invertible element divides $\digamma_{\mathrm{tot}}(n)$, the group of invertibles modulo an odd prime power is cyclic, and the multiplicative group of a finite prime field is cyclic. The linear congruence $am \equiv b \pmod n$ is solvable exactly when $\gcd(a,n)$ divides $b$, with that many solutions, and the quadratic congruence $m^2 \equiv a \pmod p$ is governed by the Legendre symbol, Euler's criterion and the law of quadratic reciprocity. The arithmetic of the integers modulo $n$ is thus the whole applied content of the system $\mathbb{Z}$: it is the source of the finite rings and finite abelian groups of the corpus, and it is where the divisibility theory of the system becomes an effective calculus.
 
 ## Summary of Notation
 
@@ -259,11 +259,11 @@ Euler's theorem states $a^{\varphi(n)} \equiv 1 \pmod n$ for invertibles, Fermat
 | $\mathbb{Z}/n\mathbb{Z}$, $\mathbb{Z}_n$ | Ring of residues modulo $n$ |
 | $\mathbb{F}_p$ | Field $\mathbb{Z}/p\mathbb{Z}$, $p$ prime |
 | $(\mathbb{Z}/n\mathbb{Z})^\times$ | Group of invertibles modulo $n$ |
-| $\varphi(n)$ | Euler function, order of the group of invertibles |
+| $\digamma_{\mathrm{tot}}(n)$ | Euler function, order of the group of invertibles |
 | $\operatorname{ord}_n(a)$ | Multiplicative order of $a$ modulo $n$ |
 | $\left(\frac{a}{p}\right)$ | Legendre symbol |
 | $\pi$ | Canonical map $\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ |
-| $\psi$ | Chinese remainder isomorphism |
+| $Ξ_{\mathrm{wfn}}$ | Chinese remainder isomorphism |
 
 ## Further Reading
 

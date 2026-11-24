@@ -13,28 +13,28 @@
 
 ## The Constant-Field Reduction
 
-The effective action $\Gamma[\phi]$ is the Legendre transform of the connected generating functional. When the argument is a constant classical field, every derivative term vanishes and
+The effective action $\Gamma[\xi_{\mathrm{pot}}]$ is the Legendre transform of the connected generating functional. When the argument is a constant classical field, every derivative term vanishes and
 
 $$
-\Gamma[\phi_{\mathrm c}] = -\int d^4x\ \mathcal{V}_{\mathrm{eff}}(\phi_{\mathrm c}),
+\Gamma[\xi_{\mathrm{pot},\mathrm c}] = -\int d^4x\ \mathcal{V}_{\mathrm{eff}}(\xi_{\mathrm{pot},\mathrm c}),
 $$
 
 so the effective potential is a function of the field value alone. The tree value is the potential of the Lagrangian,
 
 $$
-\mathcal{V}_{\mathrm{tree}}(\phi_{\mathrm c}) = V(\phi_{\mathrm c}).
+\mathcal{V}_{\mathrm{tree}}(\xi_{\mathrm{pot},\mathrm c}) = V(\xi_{\mathrm{pot},\mathrm c}).
 $$
 
 **The one-loop term.** Expanding the action about the constant background and keeping the quadratic part, the fluctuation integral is Gaussian and gives
 
 $$
-\mathcal{V}_{1\text{-loop}} = \frac{1}{2}\,\mathrm{Tr}\ln\!\left(\frac{\delta^2 S}{\delta\phi^2}\Big|_{\phi_{\mathrm c}}\right),
+\mathcal{V}_{1\text{-loop}} = \frac{1}{2}\,\mathrm{Tr}\ln\!\left(\frac{\delta^2 S}{\delta\xi_{\mathrm{pot}}^2}\Big|_{\xi_{\mathrm{pot},\mathrm c}}\right),
 $$
 
-a trace over the fluctuation operator, evaluated with a regulator. For a field of mass $m^2(\phi_{\mathrm c})$ in four dimensions the regulated trace reduces to
+a trace over the fluctuation operator, evaluated with a regulator. For a field of mass $m^2(\xi_{\mathrm{pot},\mathrm c})$ in four dimensions the regulated trace reduces to
 
 $$
-\mathcal{V}_{1\text{-loop}} = \frac{m^4(\phi_{\mathrm c})}{64\pi^2}\left(\ln\frac{m^2(\phi_{\mathrm c})}{\mu^2} - \frac32\right),
+\mathcal{V}_{1\text{-loop}} = \frac{m^4(\xi_{\mathrm{pot},\mathrm c})}{64\pi^2}\left(\ln\frac{m^2(\xi_{\mathrm{pot},\mathrm c})}{\mu^2} - \frac32\right),
 $$
 
 so the correction is fixed by the **fourth power** of the fluctuation mass and by the logarithm of its ratio to the renormalisation scale. The sign is positive for a bosonic loop and negative for a fermionic one; the counting of degrees of freedom enters only through the multiplicity of each mass.
@@ -83,10 +83,10 @@ The algebra enters this machinery in one place: it fixes the shape of the invari
 
 | Symbol | Meaning |
 |---|---|
-| $\Gamma[\phi]$ | the effective action |
+| $\Gamma[\xi_{\mathrm{pot}}]$ | the effective action |
 | $\mathcal{V}_{\mathrm{eff}}$ | the effective potential |
 | $\mathcal{V}_{\mathrm{tree}}$ | its classical value |
-| $m^2(\phi_{\mathrm c})$ | the fluctuation mass at the constant background |
+| $m^2(\xi_{\mathrm{pot},\mathrm c})$ | the fluctuation mass at the constant background |
 | $\mu$ | the renormalisation scale |
 | $B$ | the coefficient of $\rho^2\ln\rho$ |
 | $n_i$ | the multiplicity of the $i$-th circulating field |

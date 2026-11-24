@@ -61,7 +61,7 @@ Hence $\pi$ is a morphism of $X$ over $k = \mathbb{F}_q$, and it is the operator
 
 ## Fixed Points
 
-**Definition.** For a variety $X$ over $k$, the **fixed subscheme** of an endomorphism $\varphi : X\to X$ is the equaliser of $\varphi$ and the identity, that is, the fibre product of the diagonal $X\to X\times_kX$ with the graph $(\mathrm{id},\varphi) : X\to X\times_kX$; it is the locus cut out by the vanishing of the difference of the two maps. On the points with values in a $k$-algebra $R$, the fixed points of $\varphi$ are the elements of $X(R)$ fixed by the induced map.
+**Definition.** For a variety $X$ over $k$, the **fixed subscheme** of an endomorphism $\digamma_{\mathrm{map}} : X\to X$ is the equaliser of $\digamma_{\mathrm{map}}$ and the identity, that is, the fibre product of the diagonal $X\to X\times_kX$ with the graph $(\mathrm{id},\digamma_{\mathrm{map}}) : X\to X\times_kX$; it is the locus cut out by the vanishing of the difference of the two maps. On the points with values in a $k$-algebra $R$, the fixed points of $\digamma_{\mathrm{map}}$ are the elements of $X(R)$ fixed by the induced map.
 
 **Theorem (fixed points of the Frobenius powers).** Let $X$ be a variety over $\mathbb{F}_q$ and let $\pi = F^a$ be its $q$-power Frobenius. For every $n\geq1$,
 $$

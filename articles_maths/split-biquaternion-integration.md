@@ -107,15 +107,15 @@ This is the same reduction as for the differential operators: the split biquater
 
 ### The Scalar Case
 
-**Theorem (integration by parts).** Let $\phi$ be a scalar function and $F_{\mathrm{fn}}$ a split-biquaternion-valued function, both continuously differentiable on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then for each $\mu$,
+**Theorem (integration by parts).** Let $\digamma_{\mathrm{map}}$ be a scalar function and $F_{\mathrm{fn}}$ a split-biquaternion-valued function, both continuously differentiable on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then for each $\mu$,
 
 $$
-\int_\Omega (\partial/\partial q_\mu \phi) F_{\mathrm{fn}} \, dV = \int_{\partial \Omega} \phi F_{\mathrm{fn}} \, n_\mu \, dS - \int_\Omega \phi (\partial/\partial q_\mu F_{\mathrm{fn}}) \, dV,
+\int_\Omega (\partial/\partial q_\mu \digamma_{\mathrm{map}}) F_{\mathrm{fn}} \, dV = \int_{\partial \Omega} \digamma_{\mathrm{map}} F_{\mathrm{fn}} \, n_\mu \, dS - \int_\Omega \digamma_{\mathrm{map}} (\partial/\partial q_\mu F_{\mathrm{fn}}) \, dV,
 $$
 
 where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial \Omega$ and $dS$ is the surface measure.
 
-**Proof.** This is the standard integration by parts formula in $\mathbb{R}^4$, applied to the scalar function $\phi$ and each of the eight real components of $F_{\mathrm{fn}}$. Summing over the components gives the result.
+**Proof.** This is the standard integration by parts formula in $\mathbb{R}^4$, applied to the scalar function $\digamma_{\mathrm{map}}$ and each of the eight real components of $F_{\mathrm{fn}}$. Summing over the components gives the result.
 
 ### The Vector Case
 
@@ -283,16 +283,16 @@ $$
 
 where $\delta_0$ is the delta distribution at the origin and $2\pi^2$ is the surface area of the unit three-sphere in $\mathbb{R}^4$.
 
-**Proof.** The function $G_{\mathrm{fn}}$ is locally integrable and smooth away from the origin. For a test function $\phi$ with compact support, the pairing $\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle$ is defined by integration by parts:
+**Proof.** The function $G_{\mathrm{fn}}$ is locally integrable and smooth away from the origin. For a test function $\digamma_{\mathrm{map}}$ with compact support, the pairing $\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \digamma_{\mathrm{map}} \rangle$ is defined by integration by parts:
 
 $$
-\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle = -\int_{\mathbb{R}^4} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV.
+\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \digamma_{\mathrm{map}} \rangle = -\int_{\mathbb{R}^4} G_{\mathrm{fn}} (\tilde\nabla_\Phi \digamma_{\mathrm{map}}) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \digamma_{\mathrm{map}}) \, dV.
 $$
 
 Applying the divergence theorem to the domain $\|\tilde{Q}\| > \varepsilon$ and using $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$ away from the origin gives
 
 $$
-\int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS - \int_{\|\tilde{Q}\| > \varepsilon} (\tilde\nabla_\Phi G_{\mathrm{fn}}) \phi \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS.
+\int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \digamma_{\mathrm{map}}) \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \digamma_{\mathrm{map}} \, dS - \int_{\|\tilde{Q}\| > \varepsilon} (\tilde\nabla_\Phi G_{\mathrm{fn}}) \digamma_{\mathrm{map}} \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \digamma_{\mathrm{map}} \, dS.
 $$
 
 On the sphere $\|\tilde{Q}\| = \varepsilon$, the outward unit normal of the region $\|\tilde{Q}\| > \varepsilon$ points away from the origin, i.e. inward across this inner sphere, so $\tilde u_{\mathrm n} = -\tilde{Q}/\varepsilon$, and $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\varepsilon^4$. So
@@ -304,13 +304,13 @@ $$
 So
 
 $$
-\int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS = -\frac{1}{\varepsilon^3} \int_{\|\tilde{Q}\| = \varepsilon} \phi \, dS \cdot e_t.
+\int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \digamma_{\mathrm{map}} \, dS = -\frac{1}{\varepsilon^3} \int_{\|\tilde{Q}\| = \varepsilon} \digamma_{\mathrm{map}} \, dS \cdot e_t.
 $$
 
-As $\varepsilon \to 0$, the average of $\phi$ over the sphere tends to $\phi(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $-2\pi^2 \phi(0) e_t$. Therefore
+As $\varepsilon \to 0$, the average of $\digamma_{\mathrm{map}}$ over the sphere tends to $\digamma_{\mathrm{map}}(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $-2\pi^2 \digamma_{\mathrm{map}}(0) e_t$. Therefore
 
 $$
-\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle = 2\pi^2 \phi(0) e_t,
+\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \digamma_{\mathrm{map}} \rangle = 2\pi^2 \digamma_{\mathrm{map}}(0) e_t,
 $$
 
 which is the distributional identity $\tilde\nabla_\Phi G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$, in agreement with the statement of the theorem.

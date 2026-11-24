@@ -18,7 +18,7 @@ The article defines symmetric tensors and their contraction with the metric, dev
 
 ### Symmetric Powers and Symmetric Tensors
 
-Let $V$ be a finite-dimensional vector space over a field $F$ of characteristic $0$ and let $V^*$ be its dual. By *Symmetric Powers*, the $k$-fold symmetric power $\operatorname{sym}^k(V^*)$ is the quotient of the $k$-fold tensor power $(V^*)^{\otimes k}$ by the subspace spanned by the tensors $\varphi_1 \otimes \cdots \otimes \varphi_k - \varphi_{\sigma(1)}\otimes\cdots\otimes\varphi_{\sigma(k)}$ for $\sigma$ in the symmetric group $S_k$. An element of $\operatorname{sym}^k(V^*)$ is a **symmetric tensor** of rank $k$, that is, a $k$-linear form $\varphi : V^k \to F$ invariant under permutation of its arguments. In characteristic $0$ the symmetric power is canonically the module of $S_k$-invariant elements of $(V^*)^{\otimes k}$, so this use of the term agrees with the invariants that *Symmetric Powers* calls symmetric tensors in the strict sense.
+Let $V$ be a finite-dimensional vector space over a field $F$ of characteristic $0$ and let $V^*$ be its dual. By *Symmetric Powers*, the $k$-fold symmetric power $\operatorname{sym}^k(V^*)$ is the quotient of the $k$-fold tensor power $(V^*)^{\otimes k}$ by the subspace spanned by the tensors $\digamma_{\mathrm{map},1} \otimes \cdots \otimes \digamma_{\mathrm{map},k} - \digamma_{\mathrm{map},\sigma(1)}\otimes\cdots\otimes\digamma_{\mathrm{map},\sigma(k)}$ for $\sigma$ in the symmetric group $S_k$. An element of $\operatorname{sym}^k(V^*)$ is a **symmetric tensor** of rank $k$, that is, a $k$-linear form $\digamma_{\mathrm{map}} : V^k \to F$ invariant under permutation of its arguments. In characteristic $0$ the symmetric power is canonically the module of $S_k$-invariant elements of $(V^*)^{\otimes k}$, so this use of the term agrees with the invariants that *Symmetric Powers* calls symmetric tensors in the strict sense.
 
 **Proposition.** If $V$ has basis $e_1, \ldots, e_n$ with dual basis $\check e_1, \ldots, \check e_n$ defined by $\check e_i(e_j) = \delta_{ij}$, then the products $\check e_{i_1}\cdots \check e_{i_k}$ with $i_1 \leq \cdots \leq i_k$ are a basis of $\operatorname{sym}^k(V^*)$. Hence
 
@@ -32,10 +32,10 @@ $$
 
 ### Symmetric Tensors under the Orthogonal Group
 
-Assume $F = \mathbb{R}$ and let $V = \mathbb{R}^n$ carry the standard positive definite inner product $g$, with $g_{ij} = \delta_{ij}$. The **orthogonal group** $O(n)$ acts on $\operatorname{sym}^k(V^*)$ by $(g\varphi)(v_1,\ldots,v_k) = \varphi(g^{-1}v_1,\ldots,g^{-1}v_k)$, and this action determines the structure of the layer. Inside $\operatorname{sym}^k(V^*)$ sits the image of the **contraction** with the metric,
+Assume $F = \mathbb{R}$ and let $V = \mathbb{R}^n$ carry the standard positive definite inner product $g$, with $g_{ij} = \delta_{ij}$. The **orthogonal group** $O(n)$ acts on $\operatorname{sym}^k(V^*)$ by $(g\digamma_{\mathrm{map}})(v_1,\ldots,v_k) = \digamma_{\mathrm{map}}(g^{-1}v_1,\ldots,g^{-1}v_k)$, and this action determines the structure of the layer. Inside $\operatorname{sym}^k(V^*)$ sits the image of the **contraction** with the metric,
 
 $$
-\operatorname{sym}^{k-2}(V^*) \longrightarrow \operatorname{sym}^k(V^*), \qquad \varphi \longmapsto g\,\varphi,
+\operatorname{sym}^{k-2}(V^*) \longrightarrow \operatorname{sym}^k(V^*), \qquad \digamma_{\mathrm{map}} \longmapsto g\,\digamma_{\mathrm{map}},
 $$
 
 which lowers the rank by two by summing over a pair of indices with the metric and its inverse. The **trace-free** or **harmonic** symmetric tensors are the kernel of a dual contraction; when the metric is the identity the contraction is the Laplacian and the trace-free tensors are exactly the harmonic polynomials defined below.
@@ -142,7 +142,7 @@ $$
 
 and $\Delta_Sf_{\mathrm{res}} = -k(k-1) - (n-1)k\,f_{\mathrm{res}} = -k(k+n-2)f_{\mathrm{res}}$.
 
-**Example.** For $n = 3$ the eigenvalue is $-k(k+1)$, so the spherical harmonics of degrees $0, 1, 2$ have eigenvalues $0, -2, -6$. The polynomial $f = x^2 - y^2$ restricts to the sphere as $\sin^2\theta\cos2\varphi$, and a direct computation of $\Delta_{S^2}$ gives $\Delta_{S^2} f = -6f$, in agreement with the theorem.
+**Example.** For $n = 3$ the eigenvalue is $-k(k+1)$, so the spherical harmonics of degrees $0, 1, 2$ have eigenvalues $0, -2, -6$. The polynomial $f = x^2 - y^2$ restricts to the sphere as $\sin^2\theta\cos2\digamma_{\mathrm{map}}$, and a direct computation of $\Delta_{S^2}$ gives $\Delta_{S^2} f = -6f$, in agreement with the theorem.
 
 ### Orthogonality
 
@@ -185,10 +185,10 @@ The zonal harmonic depends only on the inner product $\langle x, y\rangle$, so i
 The reproducing property for an orthonormal basis $Y_{k1}, \ldots, Y_{kd}$ of $\mathcal{H}_k$ reads $Z_k(x,y) = \sum_{j} Y_{kj}(x)\overline{Y_{kj}(y)}$, and taking $n = 3$, where $d = 2k+1$, gives the classical **addition theorem**
 
 $$
-P_k(\cos\gamma) = \frac{4\pi}{2k+1}\sum_{m=-k}^{k} Y_{km}(\theta, \phi)\,\overline{Y_{km}(\theta', \phi')} ,
+P_k(\cos\gamma) = \frac{4\pi}{2k+1}\sum_{m=-k}^{k} Y_{km}(\theta, \digamma_{\mathrm{map}})\,\overline{Y_{km}(\theta', \digamma_{\mathrm{map}}')} ,
 $$
 
-with $\cos\gamma = \cos\theta\cos\theta' + \sin\theta\sin\theta'\cos(\phi - \phi')$. The rewriting of the kernel in the single variable $t$ is the general addition theorem for the harmonic layers; it expresses the reproducing kernel of each irreducible summand of the polynomial algebra in terms of a single classical special function.
+with $\cos\gamma = \cos\theta\cos\theta' + \sin\theta\sin\theta'\cos(\digamma_{\mathrm{map}} - \digamma_{\mathrm{map}}')$. The rewriting of the kernel in the single variable $t$ is the general addition theorem for the harmonic layers; it expresses the reproducing kernel of each irreducible summand of the polynomial algebra in terms of a single classical special function.
 
 ## Dimensions of the Layers
 

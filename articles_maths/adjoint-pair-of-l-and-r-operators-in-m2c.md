@@ -47,7 +47,7 @@ whose Gram matrix is $\tfrac12F$. The residual of $\mathrm{Sc}(XY)-\tfrac12\oper
 
 ## The Four Adjoints
 
-**The definition.** For a form $\phi$ and a $\mathbb{C}$-linear $F$, the adjoint $F^{\phi}$ is the unique map with $\phi(FX,Y)=\phi(X,F^{\phi}Y)$. It exists because the form is non-degenerate.
+**The definition.** For a form $\digamma_{\mathrm{map}}$ and a $\mathbb{C}$-linear $F$, the adjoint $F^{\digamma_{\mathrm{map}}}$ is the unique map with $\digamma_{\mathrm{map}}(FX,Y)=\digamma_{\mathrm{map}}(X,F^{\digamma_{\mathrm{map}}}Y)$. It exists because the form is non-degenerate.
 
 **The table.** For $A,B\in M_2(\mathbb{C})$,
 

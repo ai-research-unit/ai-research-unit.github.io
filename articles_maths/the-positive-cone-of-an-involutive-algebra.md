@@ -111,17 +111,17 @@ $$
 
 ## The Section of the Positive Functionals
 
-**Definition.** A **positive functional** on the involutive algebra is a linear functional $\varphi$ that is Hermitian, $\varphi(a^{*}) = \overline{\varphi(a)}$, and positive on the cone, $\varphi(a^{*}a)\geq0$ for every $a$; it is a **state** when further $\varphi(1) = 1$.
+**Definition.** A **positive functional** on the involutive algebra is a linear functional $\digamma_{\mathrm{map}}$ that is Hermitian, $\digamma_{\mathrm{map}}(a^{*}) = \overline{\digamma_{\mathrm{map}}(a)}$, and positive on the cone, $\digamma_{\mathrm{map}}(a^{*}a)\geq0$ for every $a$; it is a **state** when further $\digamma_{\mathrm{map}}(1) = 1$.
 
-**Proposition.** A Hermitian linear functional is positive if and only if it is positive on $A_+$; the positive functionals form the **dual cone** of $A_+$ in the space of Hermitian functionals, and the states form its base at the order unit. For every positive $\varphi$ the **Cauchy–Schwarz inequality**
+**Proposition.** A Hermitian linear functional is positive if and only if it is positive on $A_+$; the positive functionals form the **dual cone** of $A_+$ in the space of Hermitian functionals, and the states form its base at the order unit. For every positive $\digamma_{\mathrm{map}}$ the **Cauchy–Schwarz inequality**
 
 $$
-\boxed{\;\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\,\varphi(b^{*}b)\;}
+\boxed{\;\lvert\digamma_{\mathrm{map}}(b^{*}a)\rvert^{2}\leq\digamma_{\mathrm{map}}(a^{*}a)\,\digamma_{\mathrm{map}}(b^{*}b)\;}
 $$
 
 holds.
 
-*Proof.* Positivity on the cone is equivalent to positivity on the generators $a^{*}a$ by linearity and the definition of the cone; the base statement is the order-unit normalisation of *Ordered Vector Spaces and the Order Unit*; the inequality is the Cauchy–Schwarz inequality of the positive semidefinite form $(a,b)\mapsto\varphi(b^{*}a)$, which is positive semidefinite because $\varphi((a+\lambda b)^{*}(a+\lambda b))\geq0$ for every $\lambda$.
+*Proof.* Positivity on the cone is equivalent to positivity on the generators $a^{*}a$ by linearity and the definition of the cone; the base statement is the order-unit normalisation of *Ordered Vector Spaces and the Order Unit*; the inequality is the Cauchy–Schwarz inequality of the positive semidefinite form $(a,b)\mapsto\digamma_{\mathrm{map}}(b^{*}a)$, which is positive semidefinite because $\digamma_{\mathrm{map}}((a+\lambda b)^{*}(a+\lambda b))\geq0$ for every $\lambda$.
 
 ## Summary
 
@@ -138,8 +138,8 @@ An **involution** of an algebra is a conjugate-linear anti-automorphism of order
 | Reduced | $\sum a_i^{*}a_i = 0$ implies every $a_i = 0$ |
 | $a\leq b \iff b-a\in A_+$ | The order on the Hermitian part |
 | $\{a,b\} = \tfrac12(ab+ba)$ | Symmetrised product, preserving $A_+$ |
-| $\varphi(a^{*}a)\geq0$ | Positive functional; state when $\varphi(1) = 1$ |
-| $\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\varphi(b^{*}b)$ | Cauchy–Schwarz for the positive functionals |
+| $\digamma_{\mathrm{map}}(a^{*}a)\geq0$ | Positive functional; state when $\digamma_{\mathrm{map}}(1) = 1$ |
+| $\lvert\digamma_{\mathrm{map}}(b^{*}a)\rvert^{2}\leq\digamma_{\mathrm{map}}(a^{*}a)\digamma_{\mathrm{map}}(b^{*}b)$ | Cauchy–Schwarz for the positive functionals |
 
 ## Further Reading
 

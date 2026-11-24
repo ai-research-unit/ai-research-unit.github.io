@@ -179,15 +179,15 @@ If $\operatorname{Im}\lambda \neq 0$ then $T-\lambda I$ is injective with closed
 
 ## The Riesz Representation Theorem
 
-**Theorem (Riesz).** Let $H$ be a Hilbert space and $\varphi:H \to \mathbb{K}$ a bounded linear functional. Then there is a unique $y \in H$ with
+**Theorem (Riesz).** Let $H$ be a Hilbert space and $\digamma_{\mathrm{map}}:H \to \mathbb{K}$ a bounded linear functional. Then there is a unique $y \in H$ with
 
 $$
-\varphi(x)=\langle x,y\rangle \quad \text{for all } x \in H, \qquad \text{and then} \qquad \|\varphi\|=\|y\| .
+\digamma_{\mathrm{map}}(x)=\langle x,y\rangle \quad \text{for all } x \in H, \qquad \text{and then} \qquad \|\digamma_{\mathrm{map}}\|=\|y\| .
 $$
 
-*Proof.* If $\varphi=0$ take $y=0$. Otherwise $M=\ker\varphi$ is a closed subspace of codimension $1$, so $M^{\perp}$ is one-dimensional, spanned by a unit vector $e$. Then $\varphi(e) \neq 0$, and $y=\overline{\varphi(e)}\,e$ satisfies $\varphi(x)=\langle x,y\rangle$ for all $x$: both sides vanish on $M$ and agree on $e$. Uniqueness: $\langle x,y-y'\rangle=0$ for all $x$ forces $y=y'$. The norm identity follows from Cauchy–Schwarz with equality.
+*Proof.* If $\digamma_{\mathrm{map}}=0$ take $y=0$. Otherwise $M=\ker\digamma_{\mathrm{map}}$ is a closed subspace of codimension $1$, so $M^{\perp}$ is one-dimensional, spanned by a unit vector $e$. Then $\digamma_{\mathrm{map}}(e) \neq 0$, and $y=\overline{\digamma_{\mathrm{map}}(e)}\,e$ satisfies $\digamma_{\mathrm{map}}(x)=\langle x,y\rangle$ for all $x$: both sides vanish on $M$ and agree on $e$. Uniqueness: $\langle x,y-y'\rangle=0$ for all $x$ forces $y=y'$. The norm identity follows from Cauchy–Schwarz with equality.
 
-**Corollary.** The map $y \mapsto \langle\cdot,y\rangle$ is a conjugate-linear isometric bijection $H \to H^*$, so $H$ is reflexive and $H^*$ is again a Hilbert space with $\langle \varphi,\psi\rangle=\langle y_\varphi,y_\psi\rangle$. In particular a Hilbert space is its own dual up to the conjugate-linear identification, a property false for a general Banach space.
+**Corollary.** The map $y \mapsto \langle\cdot,y\rangle$ is a conjugate-linear isometric bijection $H \to H^*$, so $H$ is reflexive and $H^*$ is again a Hilbert space with $\langle \digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}\rangle=\langle y_\digamma_{\mathrm{map}},y_Ξ_{\mathrm{wfn}}\rangle$. In particular a Hilbert space is its own dual up to the conjugate-linear identification, a property false for a general Banach space.
 
 ## The Spectral Theorem
 

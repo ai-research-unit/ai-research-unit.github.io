@@ -13,16 +13,16 @@ The algebra and the minimal left ideals are *Left Multiplication and the Cliffor
 **Definition.** Let $I = \mathrm{Cl}(V,\mathfrak{Q})\pi$ be a minimal left ideal. The **one-sided action** of the algebra on $I$ is the restriction of the left multiplication,
 
 $$
-\boxed{\;\rho_I : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{End}_F(I), \qquad \rho_I(x)\psi = x\,\psi , \qquad \psi \in I\;} .
+\boxed{\;\rho_I : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{End}_F(I), \qquad \rho_I(x)Ξ_{\mathrm{wfn}} = x\,Ξ_{\mathrm{wfn}} , \qquad Ξ_{\mathrm{wfn}} \in I\;} .
 $$
 
 It is the module action of the regular module on its submodule $I$, and it is an algebra homomorphism.
 
-**Proposition.** $\rho_I$ is well defined – that is, $x\psi \in I$ for $x \in \mathrm{Cl}$ and $\psi \in I$ – precisely because $I$ is a left ideal; and $\rho_I(xz) = \rho_I(x)\rho_I(z)$, $\rho_I(1) = \mathrm{id}_I$.
+**Proposition.** $\rho_I$ is well defined – that is, $xΞ_{\mathrm{wfn}} \in I$ for $x \in \mathrm{Cl}$ and $Ξ_{\mathrm{wfn}} \in I$ – precisely because $I$ is a left ideal; and $\rho_I(xz) = \rho_I(x)\rho_I(z)$, $\rho_I(1) = \mathrm{id}_I$.
 
-**Proof.** $x\psi \in \mathrm{Cl}\psi \subseteq \mathrm{Cl}\,\mathrm{Cl}\pi \subseteq \mathrm{Cl}\pi = I$; the homomorphism properties are associativity and $1\psi = \psi$.
+**Proof.** $xΞ_{\mathrm{wfn}} \in \mathrm{Cl}Ξ_{\mathrm{wfn}} \subseteq \mathrm{Cl}\,\mathrm{Cl}\pi \subseteq \mathrm{Cl}\pi = I$; the homomorphism properties are associativity and $1Ξ_{\mathrm{wfn}} = Ξ_{\mathrm{wfn}}$.
 
-**Proposition (only the left family acts).** Let $R_y(\psi) = \psi y$ be the right multiplication. Then $R_y$ preserves $I$ for every $y$ only when $I$ is a two-sided ideal, which for a minimal left ideal of a simple algebra it is not. A right multiplication by an invertible element preserves a minimal *right* ideal, and the resulting action is the dual of $\rho_I$.
+**Proposition (only the left family acts).** Let $R_y(Ξ_{\mathrm{wfn}}) = Ξ_{\mathrm{wfn}} y$ be the right multiplication. Then $R_y$ preserves $I$ for every $y$ only when $I$ is a two-sided ideal, which for a minimal left ideal of a simple algebra it is not. A right multiplication by an invertible element preserves a minimal *right* ideal, and the resulting action is the dual of $\rho_I$.
 
 **Proof.** If $R_y(I) \subseteq I$ for all $y$ then $\mathrm{Cl}\pi\,\mathrm{Cl} \subseteq \mathrm{Cl}\pi$, so $\mathrm{Cl}\pi$ is two-sided, contrary to minimality in a simple algebra, where the only two-sided ideals are $0$ and the algebra. For a minimal right ideal $J = \pi'\mathrm{Cl}$, right multiplication by an invertible element $R$ satisfies $JR = \pi'\mathrm{Cl}R = \pi'\mathrm{Cl}$, since $\mathrm{Cl}R = \mathrm{Cl}$.
 
@@ -36,7 +36,7 @@ $$
 \rho : \mathrm{Spin}(V,\mathfrak{Q}) \longrightarrow GL_F(I), \qquad \rho(x) = \rho_I(x)\big|_{\mathrm{Spin}(V,\mathfrak{Q})} .
 $$
 
-**Theorem (irreducibility).** Let $I$ be a minimal left ideal. Then the action $\rho_I$ of the algebra on $I$ is irreducible: $I$ has no proper nonzero submodule, and every nonzero element of $I$ is a cyclic vector. Equivalently, the only $F$-linear maps $T : I \to I$ with $T(x\psi) = xT(\psi)$ for every $x$ and $\psi$ are the multiplications by elements of the division ring $D = \mathrm{End}_{\mathrm{Cl}}(I)$, so the commutant is a division algebra and
+**Theorem (irreducibility).** Let $I$ be a minimal left ideal. Then the action $\rho_I$ of the algebra on $I$ is irreducible: $I$ has no proper nonzero submodule, and every nonzero element of $I$ is a cyclic vector. Equivalently, the only $F$-linear maps $T : I \to I$ with $T(xΞ_{\mathrm{wfn}}) = xT(Ξ_{\mathrm{wfn}})$ for every $x$ and $Ξ_{\mathrm{wfn}}$ are the multiplications by elements of the division ring $D = \mathrm{End}_{\mathrm{Cl}}(I)$, so the commutant is a division algebra and
 
 $$
 \boxed{\;\rho_I\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) = \mathrm{End}_D(I)\;}
@@ -44,7 +44,7 @@ $$
 
 whenever the algebra is simple.
 
-**Proof.** A submodule of the left ideal $I$ is a left ideal contained in $I$, and minimality leaves only $0$ and $I$; a nonzero $\psi \in I$ generates $\mathrm{Cl}\psi = I$. For the commutant, a $T$ commuting with the action is an endomorphism of the simple module, so Schur's lemma makes $D = \mathrm{End}_{\mathrm{Cl}}(I)$ a division ring; the density statement is the double centraliser theorem applied to the simple algebra.
+**Proof.** A submodule of the left ideal $I$ is a left ideal contained in $I$, and minimality leaves only $0$ and $I$; a nonzero $Ξ_{\mathrm{wfn}} \in I$ generates $\mathrm{Cl}Ξ_{\mathrm{wfn}} = I$. For the commutant, a $T$ commuting with the action is an endomorphism of the simple module, so Schur's lemma makes $D = \mathrm{End}_{\mathrm{Cl}}(I)$ a division ring; the density statement is the double centraliser theorem applied to the simple algebra.
 
 **Theorem (the kernel on the group).** The representation $\rho$ satisfies $\rho(-1) = -\mathrm{id}_I \neq \mathrm{id}_I$, so $-1$ is **not** in the kernel. When the Clifford algebra is simple the action of the algebra on the irreducible module is faithful, so an element of the spin group acting as the identity on $I$ is the identity of the algebra, and the kernel of $\rho$ is trivial. When the algebra is a product $A \times A$, the irreducible module of one factor is annihilated by the other and the kernel is the nontrivial subgroup $\mathrm{Spin}(V,\mathfrak{Q}) \cap (\{1\}\times A)$. In both cases $\rho$ does not descend to $SO(V,\mathfrak{Q})$: the element $-1$ is in the kernel of the projection $\mathrm{Spin} \to SO$ but acts as $-\mathrm{id}_I$ on the module.
 
@@ -54,7 +54,7 @@ whenever the algebra is simple.
 
 ## The One-Sided Action and the Vector Action
 
-**Proposition (the two actions are different).** Let $R$ be a rotor and $\psi \in I$. The **spin action** is left multiplication $\psi \mapsto R\psi$ and carries the half of the double cover that acts on the spinors; the **vector action** is the two-sided operator $v \mapsto RvR^{-1}$ and acts on $V$, not on $I$ in general. The two actions carry the two halves of the parameter of the rotation, and they are not the same representation.
+**Proposition (the two actions are different).** Let $R$ be a rotor and $Ξ_{\mathrm{wfn}} \in I$. The **spin action** is left multiplication $Ξ_{\mathrm{wfn}} \mapsto RΞ_{\mathrm{wfn}}$ and carries the half of the double cover that acts on the spinors; the **vector action** is the two-sided operator $v \mapsto RvR^{-1}$ and acts on $V$, not on $I$ in general. The two actions carry the two halves of the parameter of the rotation, and they are not the same representation.
 
 **Proof.** Left multiplication by $R$ is the module action; the two-sided operator is the operator of *The Two-Sided Operator on a Clifford Algebra*, which acts on $V$ by construction and does not preserve a general left ideal, as the explicit counterexample of *Peirce Carriers and Inner Conjugation* shows.
 
@@ -76,7 +76,7 @@ In $\mathrm{Cl}_{0,2}(\mathbb{R})\cong\mathbb{H}$ with $R = e_1e_2$ and $I$ a mi
 
 ## Summary
 
-On a minimal left ideal $I = \mathrm{Cl}(V,\mathfrak{Q})\pi$ the **one-sided action** $\rho_I(x)\psi = x\psi$ is the module action of the algebra, and it is the left family alone: a right multiplication does not preserve a left ideal, so nothing two-sided acts on the spinors. The action is **irreducible**, because $I$ is a simple module; its commutant is the division algebra $D = \mathrm{End}_{\mathrm{Cl}}(I)$ and, over a simple algebra, the action exhausts $\mathrm{End}_D(I)$. The **spin representation** is the restriction of this action to $\mathrm{Spin}(V,\mathfrak{Q})$; it satisfies $\rho(-1) = -\mathrm{id}_I$, its kernel is trivial over a simple algebra and is the other factor over a product algebra, and it therefore does not descend to $SO(V,\mathfrak{Q})$ – the element $-1$ is invisible to $SO$ but acts as $-\mathrm{id}_I$ on the spinors. The action on the vectors by the two-sided operator is a different representation, on a different space, and the one-sided action is the correct one for spinors because only left multiplication stays in the ideal. The construction of the ideals, their dimension, the chirality and the concrete models are *Peirce Carriers and Inner Conjugation* and *Spin Representations and Clifford Modules with Inner Conjugation*.
+On a minimal left ideal $I = \mathrm{Cl}(V,\mathfrak{Q})\pi$ the **one-sided action** $\rho_I(x)Ξ_{\mathrm{wfn}} = xΞ_{\mathrm{wfn}}$ is the module action of the algebra, and it is the left family alone: a right multiplication does not preserve a left ideal, so nothing two-sided acts on the spinors. The action is **irreducible**, because $I$ is a simple module; its commutant is the division algebra $D = \mathrm{End}_{\mathrm{Cl}}(I)$ and, over a simple algebra, the action exhausts $\mathrm{End}_D(I)$. The **spin representation** is the restriction of this action to $\mathrm{Spin}(V,\mathfrak{Q})$; it satisfies $\rho(-1) = -\mathrm{id}_I$, its kernel is trivial over a simple algebra and is the other factor over a product algebra, and it therefore does not descend to $SO(V,\mathfrak{Q})$ – the element $-1$ is invisible to $SO$ but acts as $-\mathrm{id}_I$ on the spinors. The action on the vectors by the two-sided operator is a different representation, on a different space, and the one-sided action is the correct one for spinors because only left multiplication stays in the ideal. The construction of the ideals, their dimension, the chirality and the concrete models are *Peirce Carriers and Inner Conjugation* and *Spin Representations and Clifford Modules with Inner Conjugation*.
 
 ## Summary of Notation
 
@@ -84,12 +84,12 @@ On a minimal left ideal $I = \mathrm{Cl}(V,\mathfrak{Q})\pi$ the **one-sided act
 |---|---|
 | $I = \mathrm{Cl}(V,\mathfrak{Q})\pi$ | Peirce carrier (minimal left ideal here), the spinor space |
 | $\rho_I(x)$ | One-sided action, the left multiplication restricted to $I$ |
-| $R_y(\psi) = \psi y$ | Right multiplication, which does not preserve $I$ |
+| $R_y(Ξ_{\mathrm{wfn}}) = Ξ_{\mathrm{wfn}} y$ | Right multiplication, which does not preserve $I$ |
 | $\rho = \rho_I\big|_{\mathrm{Spin}}$ | Spin representation |
 | $D = \mathrm{End}_{\mathrm{Cl}}(I)$ | Commutant, a division algebra |
 | $\rho_I(\mathrm{Cl}) = \mathrm{End}_D(I)$ | Density over a simple algebra |
 | $\rho(-1) = -\mathrm{id}_I$ | The sign of the double cover in the representation |
-| $R\psi$, $RvR^{-1}$ | Spin action and vector action of a rotor |
+| $RΞ_{\mathrm{wfn}}$, $RvR^{-1}$ | Spin action and vector action of a rotor |
 
 ## Further Reading
 

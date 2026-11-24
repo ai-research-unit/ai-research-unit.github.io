@@ -403,7 +403,7 @@ a single element $E$ of the corner $\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi
 
 **Corollary (the multiplier is one corner element, and the perpendicular axes differ by a phase).** The maps are exactly the maps $X\mapsto XE$ with
 $E$ in the corner $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\mathbb{B}\tilde\Pi_{\mathrm{id},-}(\vec u_{\mathrm r})$, a complex line, and the correspondence is bijective. A
-perpendicular real unit vector gives $E=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\vec v$, and for $\vec v=\cos\varphi\,\vec u_2+\sin\varphi\,\vec u_3$
+perpendicular real unit vector gives $E=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\vec v$, and for $\vec v=\cos\digamma_{\mathrm{map}}\,\vec u_2+\sin\digamma_{\mathrm{map}}\,\vec u_3$
 that corner element runs once round the circle of elements of modulus one. So the perpendicular real axes carry the phase of the exchange, and not a
 direction of it.
 

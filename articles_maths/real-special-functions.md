@@ -643,11 +643,11 @@ $$
 ### The Incomplete Elliptic Integrals
 
 $$
-F(\phi, k) = \int_0^\phi \frac{d\theta}{\sqrt{1 - k^2 \sin^2 \theta}},
+F(\digamma_{\mathrm{map}}, k) = \int_0^\digamma_{\mathrm{map}} \frac{d\theta}{\sqrt{1 - k^2 \sin^2 \theta}},
 $$
 
 $$
-E(\phi, k) = \int_0^\phi \sqrt{1 - k^2 \sin^2 \theta} \, d\theta.
+E(\digamma_{\mathrm{map}}, k) = \int_0^\digamma_{\mathrm{map}} \sqrt{1 - k^2 \sin^2 \theta} \, d\theta.
 $$
 
 ### Relation to the Hypergeometric Function

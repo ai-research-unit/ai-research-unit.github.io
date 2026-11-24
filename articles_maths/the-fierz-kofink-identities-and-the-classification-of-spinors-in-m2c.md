@@ -20,7 +20,7 @@ with $E_k=-i\sigma_k$. The statements are the same statements, and only the writ
 
 **Boundaries.** The operator algebra as a whole is [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure in $M_2(\mathbb{C})$](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure-in-m2c.html). The two-sided action is [Operators Acting on Two Sides in $M_2(\mathbb{C})$](operators-acting-on-two-sides-in-m2c.html). The chirality operator is [Operator Chirality on the Biquaternion Algebra in $M_2(\mathbb{C})$](operator-chirality-on-the-biquaternion-algebra-in-m2c.html). The $n=2$ spine is [The One-Sided Operators at $n=2$](the-one-sided-operators-at-n-2.html) and [The Two-Sided Operators and the Segre Cone at $n=2$](the-two-sided-operators-and-the-segre-cone-at-n-2.html), and the display is [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-pauli-representation-operators.html).
 
-**Letters.** $\psi$ a spinor, $E_\mu$ the basis with $E_0=\mathrm I_2$, $G_\mu$ the array of $\Gamma_\mu$, $Z$ the aggregate, $\sigma,\omega,J,K,S$ the covariants.
+**Letters.** $Ξ_{\mathrm{wfn}}$ a spinor, $E_\mu$ the basis with $E_0=\mathrm I_2$, $G_\mu$ the array of $\Gamma_\mu$, $Z$ the aggregate, $\sigma,\omega,J,K,S$ the covariants.
 
 ## The Frame Operators
 
@@ -42,21 +42,21 @@ $$
 
 **Why they hold.** $R_{E_x}^2=R_{E_x^2}=R_{-\mathrm I_2}=-\mathrm{id}$, so $\Gamma_0^2=+1$; $L_{E_k}R_{E_y}$ squares to $L_{E_k^2}R_{E_y^2}=+\mathrm{id}$, so $\Gamma_k^2=-1$; and $\Gamma_5^2=+1$. Two distinct frame operators anticommute because the units anticommute on the side where they differ.
 
-**The form.** $\langle X,Y\rangle=\tfrac12\operatorname{tr}(X^{\dagger}Y)$ is positive definite, and $\mathcal B$ is orthonormal. In this form $G_0$ and $G_5$ are Hermitian and the three $G_k$ are skew-Hermitian, verified: $\lVert G_k^{\dagger}+G_k\rVert=0$. Every covariant below is $\langle\psi,M\psi\rangle$ with $M$ Hermitian, hence real.
+**The form.** $\langle X,Y\rangle=\tfrac12\operatorname{tr}(X^{\dagger}Y)$ is positive definite, and $\mathcal B$ is orthonormal. In this form $G_0$ and $G_5$ are Hermitian and the three $G_k$ are skew-Hermitian, verified: $\lVert G_k^{\dagger}+G_k\rVert=0$. Every covariant below is $\langleΞ_{\mathrm{wfn}},MΞ_{\mathrm{wfn}}\rangle$ with $M$ Hermitian, hence real.
 
 ## The Bilinear Covariants
 
 **The definitions.**
 $$
-\sigma=\langle\psi,\Gamma_0\psi\rangle,\quad \omega=i\langle\psi,\Gamma_0\Gamma_5\psi\rangle,\quad J_0=\langle\psi,\psi\rangle,\quad J_k=\langle\psi,\Gamma_0\Gamma_k\psi\rangle,
+\sigma=\langleΞ_{\mathrm{wfn}},\Gamma_0Ξ_{\mathrm{wfn}}\rangle,\quad \omega=i\langleΞ_{\mathrm{wfn}},\Gamma_0\Gamma_5Ξ_{\mathrm{wfn}}\rangle,\quad J_0=\langleΞ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}}\rangle,\quad J_k=\langleΞ_{\mathrm{wfn}},\Gamma_0\Gamma_kΞ_{\mathrm{wfn}}\rangle,
 $$
 $$
-K_0=-\langle\psi,\Gamma_0\Gamma_5\Gamma_0\psi\rangle,\quad K_k=-\langle\psi,\Gamma_0\Gamma_5\Gamma_k\psi\rangle,\quad S_{\mu\nu}=\langle\psi,\Gamma_0\Sigma_{\mu\nu}\psi\rangle,\quad \Sigma_{\mu\nu}=\tfrac{i}{2}[\Gamma_\mu,\Gamma_\nu].
+K_0=-\langleΞ_{\mathrm{wfn}},\Gamma_0\Gamma_5\Gamma_0Ξ_{\mathrm{wfn}}\rangle,\quad K_k=-\langleΞ_{\mathrm{wfn}},\Gamma_0\Gamma_5\Gamma_kΞ_{\mathrm{wfn}}\rangle,\quad S_{\mu\nu}=\langleΞ_{\mathrm{wfn}},\Gamma_0\Sigma_{\mu\nu}Ξ_{\mathrm{wfn}}\rangle,\quad \Sigma_{\mu\nu}=\tfrac{i}{2}[\Gamma_\mu,\Gamma_\nu].
 $$
 
 **The count.** $1+1+4+4+6=16$ real numbers.
 
-**The completeness.** The sixteen products $\mathrm{id}$, $\Gamma_\mu$, $\Gamma_\mu\Gamma_\nu$ ($\mu<\nu$), $\Gamma_5\Gamma_\mu$, $\Gamma_5$ are a basis of $\operatorname{End}_\mathbb{C}(M_2)$, of complex dimension sixteen; in the display this is the identity $\operatorname{End}_\mathbb{C}(M_2)\cong M_2\otimes M_2$ read on a basis. So every sesquilinear form is $\phi\mapsto\langle\phi,M\psi\rangle$ for one operator $M$, and the covariants are the coefficients of $M$.
+**The completeness.** The sixteen products $\mathrm{id}$, $\Gamma_\mu$, $\Gamma_\mu\Gamma_\nu$ ($\mu<\nu$), $\Gamma_5\Gamma_\mu$, $\Gamma_5$ are a basis of $\operatorname{End}_\mathbb{C}(M_2)$, of complex dimension sixteen; in the display this is the identity $\operatorname{End}_\mathbb{C}(M_2)\cong M_2\otimes M_2$ read on a basis. So every sesquilinear form is $\digamma_{\mathrm{map}}\mapsto\langle\digamma_{\mathrm{map}},MΞ_{\mathrm{wfn}}\rangle$ for one operator $M$, and the covariants are the coefficients of $M$.
 
 **The matrix form of the completeness.** A linear operator on $M_2(\mathbb{C})$ is a sum of terms $Y\mapsto AYB$; the sixteen products above are the sixteen pairs $(A,B)$ in a suitable order, which is the statement that $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$.
 
@@ -74,17 +74,17 @@ J_\mu K_\nu-J_\nu K_\mu=\omega S_{\mu\nu}+\sigma\tilde S_{\mu\nu}.
 $$
 Verified on random spinors to $0$ exactly; the opposite sign in the second term fails by a residual of order $10$, so the sign is not a convention here but a fact of the display.
 
-**Why the tensor identity holds.** It is the antisymmetric part of the product of two rank-one operators. In matrix terms $J_\mu K_\nu-J_\nu K_\mu$ is the antisymmetrisation of $\langle\psi,\Gamma_\mu\psi\rangle\langle\psi,\Gamma_5\Gamma_\nu\psi\rangle$, and the Fierz rearrangement of four spinor factors into two pairs gives the two scalars $\sigma$ and $\omega$ multiplying the two possible antisymmetric tensors, $S$ and its dual.
+**Why the tensor identity holds.** It is the antisymmetric part of the product of two rank-one operators. In matrix terms $J_\mu K_\nu-J_\nu K_\mu$ is the antisymmetrisation of $\langleΞ_{\mathrm{wfn}},\Gamma_\muΞ_{\mathrm{wfn}}\rangle\langleΞ_{\mathrm{wfn}},\Gamma_5\Gamma_\nuΞ_{\mathrm{wfn}}\rangle$, and the Fierz rearrangement of four spinor factors into two pairs gives the two scalars $\sigma$ and $\omega$ multiplying the two possible antisymmetric tensors, $S$ and its dual.
 
 **The reading.** For a regular spinor $\sigma^2+\omega^2=J^2\neq0$, so $S$ is determined by $J$ and $K$. For a singular spinor $J$ is null and the identity becomes $J_\mu K_\nu=J_\nu K_\mu$: the axial vector is parallel to the null vector whenever it does not vanish.
 
 ## The Fierz Aggregate
 
-**The operator.** $Z\eta=4\psi\langle\psi,\Gamma_0\eta\rangle$, which in the module is the rank-one matrix
+**The operator.** $Z\eta=4Ξ_{\mathrm{wfn}}\langleΞ_{\mathrm{wfn}},\Gamma_0\eta\rangle$, which in the module is the rank-one matrix
 $$
-Z=4\,\psi\,\psi^{\dagger}\Gamma_0 .
+Z=4\,Ξ_{\mathrm{wfn}}\,Ξ_{\mathrm{wfn}}^{\dagger}\Gamma_0 .
 $$
-Its trace is $4\sigma$, and its image is the line $\mathbb{C}\psi$.
+Its trace is $4\sigma$, and its image is the line $\mathbb{C}Ξ_{\mathrm{wfn}}$.
 
 **The seven identities.** Verified on random spinors to $10^{-13}$:
 $$
@@ -93,9 +93,9 @@ $$
 $$
 Z\Gamma_0\Gamma_5Z=4K_0Z,\quad Z\Gamma_k\Gamma_5Z=4K_kZ,\quad Z\Sigma_{\mu\nu}Z=4S_{\mu\nu}Z .
 $$
-The first is one line: $Z^2=16\psi(\psi^{\dagger}\Gamma_0\psi)\psi^{\dagger}\Gamma_0=4\sigma Z$.
+The first is one line: $Z^2=16Ξ_{\mathrm{wfn}}(Ξ_{\mathrm{wfn}}^{\dagger}\Gamma_0Ξ_{\mathrm{wfn}})Ξ_{\mathrm{wfn}}^{\dagger}\Gamma_0=4\sigma Z$.
 
-**The inversion.** For a fixed $\zeta$ with $\langle\psi,\Gamma_0\zeta\rangle\neq0$, $\psi=Z\zeta/\left(4\langle\psi,\Gamma_0\zeta\rangle\right)$: the aggregate returns the spinor, which is Lounesto's boomerang. In the matrix reading it is the statement that a rank-one matrix is its own image.
+**The inversion.** For a fixed $\zeta$ with $\langleΞ_{\mathrm{wfn}},\Gamma_0\zeta\rangle\neq0$, $Ξ_{\mathrm{wfn}}=Z\zeta/\left(4\langleΞ_{\mathrm{wfn}},\Gamma_0\zeta\rangle\right)$: the aggregate returns the spinor, which is Lounesto's boomerang. In the matrix reading it is the statement that a rank-one matrix is its own image.
 
 ## The Classification
 
@@ -114,9 +114,9 @@ The first is one line: $Z^2=16\psi(\psi^{\dagger}\Gamma_0\psi)\psi^{\dagger}\Gam
 
 **The test that fails.** In classes $4$ and $6$ the vector $K$ is null, $K^2=0$, so a test on $K^2$ cannot separate class $6$ from class $5$. The test must be on the vector $K$ itself.
 
-**The two halves.** With $P_\pm=\tfrac12(\mathrm{id}\pm\Gamma_0)$, the halves $\chi=P_+\psi$ and $\varphi=P_-\psi$ give
+**The two halves.** With $P_\pm=\tfrac12(\mathrm{id}\pm\Gamma_0)$, the halves $\chi=P_+Ξ_{\mathrm{wfn}}$ and $\digamma_{\mathrm{map}}=P_-Ξ_{\mathrm{wfn}}$ give
 $$
-\sigma=\lVert\chi\rVert^2-\lVert\varphi\rVert^2,\qquad \omega=2\operatorname{Im}\langle\chi,\Gamma_5\varphi\rangle .
+\sigma=\lVert\chi\rVert^2-\lVert\digamma_{\mathrm{map}}\rVert^2,\qquad \omega=2\operatorname{Im}\langle\chi,\Gamma_5\digamma_{\mathrm{map}}\rangle .
 $$
 So a spinor is regular exactly when the two halves have unequal lengths or a relative phase.
 
@@ -134,7 +134,7 @@ So a spinor is regular exactly when the two halves have unequal lengths or a rel
 
 The five frame operators are left and right multiplications by the units, $iR_{E_x}$, $iL_{E_k}R_{E_y}$, $-iR_{E_z}$; their arrays in the coefficient basis are printed above and satisfy the Clifford relations $G_0^2=G_5^2=\mathrm I_4$, $G_k^2=-\mathrm I_4$ and pairwise anticommutation.
 
-A spinor produces sixteen real covariants $\sigma,\omega,J,K,S$, the coefficients of the sixteen basis operators of $\operatorname{End}_\mathbb{C}(M_2)$. They satisfy $J^2=\sigma^2+\omega^2=-K^2$, $J\cdot K=0$ and $J_\mu K_\nu-J_\nu K_\mu=\omega S_{\mu\nu}+\sigma\tilde S_{\mu\nu}$, all verified to machine precision. The aggregate $Z=4\psi\psi^{\dagger}\Gamma_0$ is rank one and satisfies the seven identities, and it inverts to the spinor.
+A spinor produces sixteen real covariants $\sigma,\omega,J,K,S$, the coefficients of the sixteen basis operators of $\operatorname{End}_\mathbb{C}(M_2)$. They satisfy $J^2=\sigma^2+\omega^2=-K^2$, $J\cdot K=0$ and $J_\mu K_\nu-J_\nu K_\mu=\omega S_{\mu\nu}+\sigma\tilde S_{\mu\nu}$, all verified to machine precision. The aggregate $Z=4Ξ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}^{\dagger}\Gamma_0$ is rank one and satisfies the seven identities, and it inverts to the spinor.
 
 The identities allow exactly six classes, regular and singular, and each is realised by an explicit $2\times2$ matrix; the singular classes are separated by the vector $K$ and the tensor $S$, not by $K^2$.
 
@@ -145,7 +145,7 @@ The identities allow exactly six classes, regular and singular, and each is real
 | $\Gamma_0,\Gamma_k,\Gamma_5$ | the five frame operators |
 | $G_\mu$ | their $4\times4$ arrays in $\mathcal B$ |
 | $\sigma,\omega,J,K,S$ | scalar, pseudoscalar, vector, axial vector, tensor |
-| $Z=4\psi\psi^{\dagger}\Gamma_0$ | the Fierz aggregate |
+| $Z=4Ξ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}^{\dagger}\Gamma_0$ | the Fierz aggregate |
 | $\tilde S$ | the Hodge dual of $S$ |
 | $P_\pm=\tfrac12(\mathrm{id}\pm\Gamma_0)$ | the two halves |
 

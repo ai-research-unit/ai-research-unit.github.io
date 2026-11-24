@@ -165,10 +165,10 @@ The operator is not self-adjoint, and $V+V^\dagger$ and $V-V^\dagger$ are its se
 parts; the example shows that the kernel involution is the sharpening of the operator adjoint for integral
 operators.
 
-**Example (rank one).** For $K(x,y)=\varphi(x)\overline{\psi(y)}$ the operator is
-$T_Kf=\varphi\int\psi^{\dagger}iR_{\mathrm{axf},\vec e_x}f$, and the adjoint kernel is
-$\overline{K(y,x)}=\overline{\varphi(y)}\psi(x)$, so that $T_K^\dagger g=\psi\int\bar\varphi g$; the two
-coincide with $K$ when $\varphi=\psi$ and $\lVert\varphi\rVert=1$, which recovers the orthogonal projection
+**Example (rank one).** For $K(x,y)=\digamma_{\mathrm{map}}(x)\overline{Ξ_{\mathrm{wfn}}(y)}$ the operator is
+$T_Kf=\digamma_{\mathrm{map}}\intΞ_{\mathrm{wfn}}^{\dagger}iR_{\mathrm{axf},\vec e_x}f$, and the adjoint kernel is
+$\overline{K(y,x)}=\overline{\digamma_{\mathrm{map}}(y)}Ξ_{\mathrm{wfn}}(x)$, so that $T_K^\dagger g=Ξ_{\mathrm{wfn}}\int\bar\digamma_{\mathrm{map}} g$; the two
+coincide with $K$ when $\digamma_{\mathrm{map}}=Ξ_{\mathrm{wfn}}$ and $\lVert\digamma_{\mathrm{map}}\rVert=1$, which recovers the orthogonal projection
 of rank one as the self-adjoint case.
 
 **Example (the Fourier and Hilbert operators).** The Fourier operator $\mathcal F$ of *The Fourier Operator*

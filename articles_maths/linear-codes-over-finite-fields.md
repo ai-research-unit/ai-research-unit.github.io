@@ -90,7 +90,7 @@ $$
 
 so that the weight distribution of the dual code is determined by that of $C$.
 
-**Proof sketch.** The enumerator is a sum over the codewords of a product over the coordinates, and the Fourier expansion of the indicator of a subspace over $\mathbb{F}_q$ — that is, the character sum $\sum_{w}\psi(w\cdot v)$ — transforms the sum over $C$ into a sum over $C^\perp$; for $q = 2$ the characters are $\pm1$ and the substitution is the displayed one.
+**Proof sketch.** The enumerator is a sum over the codewords of a product over the coordinates, and the Fourier expansion of the indicator of a subspace over $\mathbb{F}_q$ — that is, the character sum $\sum_{w}Ξ_{\mathrm{wfn}}(w\cdot v)$ — transforms the sum over $C$ into a sum over $C^\perp$; for $q = 2$ the characters are $\pm1$ and the substitution is the displayed one.
 
 **Example ($[7,4,3]$ and its dual).** The binary linear code with the parity check matrix whose columns are the seven nonzero vectors of $\mathbb{F}_2^3$ is a $[7,4,3]$-code, the **Hamming code**. Its weight distribution, computed by listing its sixteen words, is
 

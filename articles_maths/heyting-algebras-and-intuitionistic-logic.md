@@ -80,7 +80,7 @@ and $\neg \alpha = 1$ if and only if $\alpha = 0$.
 $$
 \alpha \wedge \beta = \emptyset, \qquad \neg(\alpha \wedge \beta) = \neg\emptyset = 1, \qquad \neg \alpha \vee \neg \beta = \{q\} \vee \{p\} = \{p,q\},
 $$
-so the two sides differ. This failure is exactly the failure of one of De Morgan's laws in intuitionistic logic, and it is the algebraic content of the non-derivability of $\neg(\varphi \wedge \psi) \to \neg\varphi \vee \neg\psi$.
+so the two sides differ. This failure is exactly the failure of one of De Morgan's laws in intuitionistic logic, and it is the algebraic content of the non-derivability of $\neg(\digamma_{\mathrm{fml}} \wedge \digamma_{\mathrm{fml}}) \to \neg\digamma_{\mathrm{fml}} \vee \neg\digamma_{\mathrm{fml}}$.
 
 ## Regular Elements and the Booleanization
 
@@ -94,17 +94,17 @@ $$
 
 **Proof.** Monotonicity of $j$ follows from monotonicity of $\neg$ applied twice; extensivity is $\alpha \leq \neg\neg \alpha$; idempotence is $\neg\neg\neg\neg \alpha = \neg\neg \alpha$, which follows from $\neg\neg\neg = \neg$ applied twice. The meet identity is proved above. The fixed points of an idempotent monotone map are its image; $0$ and $1$ are fixed since $\neg\neg 0 = \neg 1 = 0$ and $\neg\neg 1 = \neg 0 = 1$, and $\neg \alpha$ is fixed by $\neg\neg\neg = \neg$. On the regular elements the operations displayed are well defined: $\alpha \sqcap \beta$ is regular by the meet identity, $\alpha \sqcup \beta$ is regular since it is $\neg\neg$ of something, and $\neg \alpha$ is regular. The distributive law and complementation hold because $\neg\neg$ turns the Heyting operations into the Boolean ones: $\alpha \sqcup \neg \alpha = \neg\neg(\alpha \vee \neg \alpha) = \neg\neg 1 = 1$ and $\alpha \sqcap \neg \alpha \leq \alpha \wedge \neg \alpha = 0$. Hence $H_{\neg\neg}$ is a Boolean algebra.
 
-**Theorem (Glivenko).** Let $\vdash_{\mathrm{IPC}}$ and $\vdash_{\mathrm{CPC}}$ denote derivability in intuitionistic and classical propositional logic. For every proposition $\varphi$,
+**Theorem (Glivenko).** Let $\vdash_{\mathrm{IPC}}$ and $\vdash_{\mathrm{CPC}}$ denote derivability in intuitionistic and classical propositional logic. For every proposition $\digamma_{\mathrm{fml}}$,
 
 $$
-\boxed{\;\vdash_{\mathrm{IPC}} \varphi \iff \vdash_{\mathrm{CPC}} \neg\neg\varphi, \qquad \text{and in fact} \qquad \vdash_{\mathrm{IPC}} \neg\varphi \iff \vdash_{\mathrm{CPC}} \neg\varphi\;}.
+\boxed{\;\vdash_{\mathrm{IPC}} \digamma_{\mathrm{fml}} \iff \vdash_{\mathrm{CPC}} \neg\neg\digamma_{\mathrm{fml}}, \qquad \text{and in fact} \qquad \vdash_{\mathrm{IPC}} \neg\digamma_{\mathrm{fml}} \iff \vdash_{\mathrm{CPC}} \neg\digamma_{\mathrm{fml}}\;}.
 $$
 
-**Proof.** One direction is immediate: if $\vdash_{\mathrm{IPC}} \neg\neg\varphi$ then $\vdash_{\mathrm{CPC}} \neg\neg\varphi$, and classically $\neg\neg\varphi \to \varphi$, so $\vdash_{\mathrm{CPC}} \varphi$. Conversely, the Gödel–Gentzen negative translation $\varphi \mapsto \varphi^{N}$ satisfies
+**Proof.** One direction is immediate: if $\vdash_{\mathrm{IPC}} \neg\neg\digamma_{\mathrm{fml}}$ then $\vdash_{\mathrm{CPC}} \neg\neg\digamma_{\mathrm{fml}}$, and classically $\neg\neg\digamma_{\mathrm{fml}} \to \digamma_{\mathrm{fml}}$, so $\vdash_{\mathrm{CPC}} \digamma_{\mathrm{fml}}$. Conversely, the Gödel–Gentzen negative translation $\digamma_{\mathrm{fml}} \mapsto \digamma_{\mathrm{fml}}^{N}$ satisfies
 $$
-\vdash_{\mathrm{CPC}} \varphi \implies \vdash_{\mathrm{IPC}} \varphi^{N}, \qquad \vdash_{\mathrm{IPC}} \varphi^{N} \leftrightarrow \neg\neg\varphi,
+\vdash_{\mathrm{CPC}} \digamma_{\mathrm{fml}} \implies \vdash_{\mathrm{IPC}} \digamma_{\mathrm{fml}}^{N}, \qquad \vdash_{\mathrm{IPC}} \digamma_{\mathrm{fml}}^{N} \leftrightarrow \neg\neg\digamma_{\mathrm{fml}},
 $$
-so $\vdash_{\mathrm{CPC}} \varphi$ implies $\vdash_{\mathrm{IPC}} \neg\neg\varphi$; the second stated equivalence follows by applying the first to $\neg\varphi$. The negative translation and its properties belong to *Proof Theory and Type Theory*.
+so $\vdash_{\mathrm{CPC}} \digamma_{\mathrm{fml}}$ implies $\vdash_{\mathrm{IPC}} \neg\neg\digamma_{\mathrm{fml}}$; the second stated equivalence follows by applying the first to $\neg\digamma_{\mathrm{fml}}$. The negative translation and its properties belong to *Proof Theory and Type Theory*.
 
 Glivenko's theorem is the precise sense in which classical propositional logic is embedded in the intuitionistic one at the level of negations. The class of Heyting algebras is therefore not a conservative extension of the Boolean case, because not every identity of Boolean algebras holds in a Heyting algebra; only the negative identities transfer.
 
@@ -115,24 +115,24 @@ Glivenko's theorem is the precise sense in which classical propositional logic i
 Let $L$ be the propositional language built from the connectives $\wedge, \vee, \to, \neg$, let $T$ be a theory, and define
 
 $$
-\varphi \sim_T \psi \iff T \vdash_{\mathrm{IPC}} \varphi \leftrightarrow \psi .
+\digamma_{\mathrm{fml}} \sim_T \digamma_{\mathrm{fml}} \iff T \vdash_{\mathrm{IPC}} \digamma_{\mathrm{fml}} \leftrightarrow \digamma_{\mathrm{fml}} .
 $$
 
 As in the Boolean case, $\sim_T$ is a congruence, and the quotient is a Heyting algebra with the operations induced by the connectives; it is the **Lindenbaum algebra** of $T$. The verification is the same computation as in *Boolean Algebras and Lattices*, with the residuation law replacing the Boolean equivalence; the laws of $H$ are exactly the axioms and rules of the intuitionistic calculus, as stated in *Logic and Proof*.
 
-**Theorem (algebraic completeness).** For every theory $T$ and proposition $\varphi$,
+**Theorem (algebraic completeness).** For every theory $T$ and proposition $\digamma_{\mathrm{fml}}$,
 
 $$
-\boxed{\;T \vdash_{\mathrm{IPC}} \varphi \iff \text{every Heyting algebra homomorphism satisfying } T \text{ sends } \varphi \text{ to } 1\;}.
+\boxed{\;T \vdash_{\mathrm{IPC}} \digamma_{\mathrm{fml}} \iff \text{every Heyting algebra homomorphism satisfying } T \text{ sends } \digamma_{\mathrm{fml}} \text{ to } 1\;}.
 $$
 
-**Proof.** Soundness is induction on the length of the derivation, each axiom being an identity of Heyting algebras and each rule preserving the value $1$. Completeness follows from the Lindenbaum algebra: if $T \nvdash \varphi$, then the class of $\varphi$ is not $1$ in $H = L/\sim_T$, and the quotient map is a homomorphism satisfying $T$ and sending $\varphi$ to a non-top element. Both directions are the standard algebraic-completeness argument; the syntactic proof and the Kripke completeness theorem, which uses partially ordered frames and is the sharper statement, are in *Proof Theory and Type Theory*.
+**Proof.** Soundness is induction on the length of the derivation, each axiom being an identity of Heyting algebras and each rule preserving the value $1$. Completeness follows from the Lindenbaum algebra: if $T \nvdash \digamma_{\mathrm{fml}}$, then the class of $\digamma_{\mathrm{fml}}$ is not $1$ in $H = L/\sim_T$, and the quotient map is a homomorphism satisfying $T$ and sending $\digamma_{\mathrm{fml}}$ to a non-top element. Both directions are the standard algebraic-completeness argument; the syntactic proof and the Kripke completeness theorem, which uses partially ordered frames and is the sharper statement, are in *Proof Theory and Type Theory*.
 
 ### The Failure of Finite-Valued Semantics
 
 The Boolean case has a single characteristic algebra $\mathbf{2}$, so classical propositional logic is two-valued. The intuitionistic case is different in kind.
 
-**Theorem (Gödel).** There is no finite set $\{H_1,\dots,H_n\}$ of finite Heyting algebras such that $\vdash_{\mathrm{IPC}} \varphi$ if and only if $\varphi$ takes the value $1$ in every $H_i$ under every assignment; in particular no single finite Heyting algebra characterises $\mathrm{IPC}$.
+**Theorem (Gödel).** There is no finite set $\{H_1,\dots,H_n\}$ of finite Heyting algebras such that $\vdash_{\mathrm{IPC}} \digamma_{\mathrm{fml}}$ if and only if $\digamma_{\mathrm{fml}}$ takes the value $1$ in every $H_i$ under every assignment; in particular no single finite Heyting algebra characterises $\mathrm{IPC}$.
 
 **Proof.** For $n \geq 1$ let $p_0,\dots,p_n$ be distinct propositional variables and put
 $$

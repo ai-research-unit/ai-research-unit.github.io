@@ -21,7 +21,7 @@ Dimension means the Krull dimension for the rings of this list, and the vector-s
 | $\mathbb{Q}$ | $0$ | all nonzero | none | *The Rational Numbers* |
 | $\mathbb{R}$ | $0$ | all nonzero | none | *The Real Numbers* |
 | $\mathbb{C}$ | $0$ | all nonzero | none | *The Complex Numbers* |
-| $\mathbb{Z}/n\mathbb{Z}$ | $0$ | the classes coprime to $n$, of order $\varphi(n)$ | every nonunit when $n$ is composite | *Modular Arithmetic and the Ring of Residues* |
+| $\mathbb{Z}/n\mathbb{Z}$ | $0$ | the classes coprime to $n$, of order $\digamma_{\mathrm{tot}}(n)$ | every nonunit when $n$ is composite | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{F}_p$ | $0$ | cyclic of order $p-1$ | none | *Finite Fields* |
 | $\mathbb{F}_q$, $q = p^n$ | $0$ | cyclic of order $q-1$ | none | *Finite Fields* |
 | $\mathbb{Z}/4\mathbb{Z}$ | $0$ | $\{1, 3\}$ | $2$ is nilpotent | *Reduced Rings and the Nilradical* |
@@ -113,7 +113,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $k(x)$, $k((t))$ | Rational function field, Laurent series field |
 | $\mathbb{Z}_{(p)}$, $\mathbb{Z}_p$ | Localisation at $p$, $p$-adic integers |
 | $R \times S$ | Product ring |
-| $\varphi(n)$ | Euler totient, the order of $(\mathbb{Z}/n\mathbb{Z})^{\times}$ |
+| $\digamma_{\mathrm{tot}}(n)$ | Euler totient, the order of $(\mathbb{Z}/n\mathbb{Z})^{\times}$ |
 | $\mathbb{H}$, $\mathbb{B}$, $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{O}$ | Quaternions, biquaternions, split-biquaternions, octonions; not commutative |
 | $M_n(R)$, $R\langle x_1,\dots,x_n\rangle$, $A_1(k)$ | Matrix ring, free algebra, Weyl algebra; not commutative |
 

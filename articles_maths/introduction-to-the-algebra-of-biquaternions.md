@@ -146,10 +146,10 @@ are unital algebra homomorphisms over $\mathbb{R}$ with commuting images (*Tenso
 The scalars of an algebra enter through the canonical unital ring homomorphism from the base ring into the centre, the map $\eta(r) = r 1_A$ of *Unital Algebras*, whose image is the scalar line. Here it is
 
 $$
-\varphi : \mathbb{C} \longrightarrow Z(\mathbb{B}) , \qquad \varphi(A) = Ae_t ,
+\digamma_{\mathrm{map}} : \mathbb{C} \longrightarrow Z(\mathbb{B}) , \qquad \digamma_{\mathrm{map}}(A) = Ae_t ,
 $$
 
-with image the scalar line $\mathbb{C}e_t = \mathbb{B}_{C}$, and the scalar action is $A \tilde Q = \varphi(A)\tilde Q$, applied to the four complex coefficients. The image is central, so the action is compatible with the product,
+with image the scalar line $\mathbb{C}e_t = \mathbb{B}_{C}$, and the scalar action is $A \tilde Q = \digamma_{\mathrm{map}}(A)\tilde Q$, applied to the four complex coefficients. The image is central, so the action is compatible with the product,
 
 $$
 A(\tilde Q_1 \tilde Q_2) = (A \tilde Q_1)\tilde Q_2 = \tilde Q_1(A \tilde Q_2) , \qquad A \in \mathbb{C} ,
@@ -237,7 +237,7 @@ $$
 \boxed{\ \text{With the general plain bilinear product, } \mathbb{B} \text{ is an associative unital non-commutative } \mathbb{C}\text{-algebra of dimension four.}\ }
 $$
 
-Its scalars enter through the structure map $\varphi(A) = Ae_t$, whose image is the scalar line and which is central; the centre is the scalar line, so the algebra is central simple. It is not a division algebra, and the witness uses the product alone:
+Its scalars enter through the structure map $\digamma_{\mathrm{map}}(A) = Ae_t$, whose image is the scalar line and which is central; the centre is the scalar line, so the algebra is central simple. It is not a division algebra, and the witness uses the product alone:
 
 $$
 (e_t + i\vec e_x)(e_t - i\vec e_x)=0,\qquad e_t\pm i\vec e_x\neq0 .
@@ -270,7 +270,7 @@ The algebra is central simple of dimension four. The element, its three coordina
 | $\tilde Q = h_1 + ih_2$ | the quaternionic coordinates, $h_1, h_2 \in \mathbb{H}$ |
 | $(\vec Q_1, \vec Q_2) = \sum_k Q_{1k} Q_{2k}$ | complex bilinear dot product of the vector parts |
 | $\vec Q_1 \times \vec Q_2$ | complex bilinear cross product of the vector parts |
-| $\varphi : \mathbb{C} \to Z(\mathbb{B})$, $A \mapsto Ae_t$ | the structure map of the complex algebra |
+| $\digamma_{\mathrm{map}} : \mathbb{C} \to Z(\mathbb{B})$, $A \mapsto Ae_t$ | the structure map of the complex algebra |
 | $\mathbb{B}_{C} = \mathbb{C}e_t$ | the centre, equal to the scalar line |
 | $\mathbb{B}_{H} = \mathbb{R}e_t + \mathbb{R}\vec e_x + \mathbb{R}\vec e_y + \mathbb{R}\vec e_z$ | the quaternion subspace |
 | ${}^{\natural}$, $\bar{\cdot}$ | the quaternion and the coefficient conjugation |

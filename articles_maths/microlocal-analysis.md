@@ -109,7 +109,7 @@ $$
 \boxed{\;WF(u)\cap(-WF(v))=\varnothing, \qquad -WF(v)=\{(x,-\zeta):(x,\zeta)\in WF(v)\}\;} .
 $$
 
-Then the bilinear form $(u,v)\mapsto\langle uv,\varphi\rangle$, defined for $\varphi \in C_c^\infty$ by the tensor product $u\otimes v$ paired with $\varphi(x)\delta(x-y)$, extends uniquely to a distribution $uv \in \mathcal D'$, and
+Then the bilinear form $(u,v)\mapsto\langle uv,\digamma_{\mathrm{map}}\rangle$, defined for $\digamma_{\mathrm{map}} \in C_c^\infty$ by the tensor product $u\otimes v$ paired with $\digamma_{\mathrm{map}}(x)\delta(x-y)$, extends uniquely to a distribution $uv \in \mathcal D'$, and
 
 $$
 WF(uv)\subseteq WF(u)\cup WF(v)\cup\bigl(WF(u)+WF(v)\bigr),

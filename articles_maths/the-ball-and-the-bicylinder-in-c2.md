@@ -93,18 +93,18 @@ as a homogeneous space.
 
 **Theorem (the Möbius maps).** For $Q_0\in\mathbb{B}^2$, let $P_{Q_0}$ be the orthogonal projection of $\mathbb{C}^2$ onto the complex line $\mathbb{C}Q_0$ and define
 $$
-\varphi_{Q_0}(Q)=\frac{Q_0-P_{Q_0}Q-\sqrt{1-\lVert Q_0\rVert^2}\,(I-P_{Q_0})Q}{1-\langle Q,Q_0\rangle},\qquad \langle Q,Q_0\rangle=Q_{\blacktriangle}\overline{Q_{0\blacktriangle}}+Q_{\blacktriangledown}\overline{Q_{0\blacktriangledown}}.
+\digamma_{\mathrm{map},Q_0}(Q)=\frac{Q_0-P_{Q_0}Q-\sqrt{1-\lVert Q_0\rVert^2}\,(I-P_{Q_0})Q}{1-\langle Q,Q_0\rangle},\qquad \langle Q,Q_0\rangle=Q_{\blacktriangle}\overline{Q_{0\blacktriangle}}+Q_{\blacktriangledown}\overline{Q_{0\blacktriangledown}}.
 $$
-Then $\varphi_{Q_0}$ is a biholomorphism of $\mathbb{B}^2$ with
+Then $\digamma_{\mathrm{map},Q_0}$ is a biholomorphism of $\mathbb{B}^2$ with
 $$
-\varphi_{Q_0}(0)=Q_0,\qquad \varphi_{Q_0}(Q_0)=0,\qquad \varphi_{Q_0}\circ\varphi_{Q_0}=\mathrm{id},
+\digamma_{\mathrm{map},Q_0}(0)=Q_0,\qquad \digamma_{\mathrm{map},Q_0}(Q_0)=0,\qquad \digamma_{\mathrm{map},Q_0}\circ\digamma_{\mathrm{map},Q_0}=\mathrm{id},
 $$
 and
 $$
-1-\lVert\varphi_{Q_0}(Q)\rVert^2=\frac{(1-\lVert Q_0\rVert^2)(1-\lVert Q\rVert^2)}{\lvert1-\langle Q,Q_0\rangle\rvert^2}.
+1-\lVert\digamma_{\mathrm{map},Q_0}(Q)\rVert^2=\frac{(1-\lVert Q_0\rVert^2)(1-\lVert Q\rVert^2)}{\lvert1-\langle Q,Q_0\rangle\rvert^2}.
 $$
 
-*Proof.* The value at $0$ is $Q_0$ and the value at $Q_0$ is $0$, because $P_{Q_0}Q_0=Q_0$ and $(I-P_{Q_0})Q_0=0$. The displayed identity is a direct computation with $\lVert P_{Q_0}Q\rVert^2+\lVert(I-P_{Q_0})Q\rVert^2=\lVert Q\rVert^2$; it shows that $\lVert Q\rVert<1$ implies $\lVert\varphi_{Q_0}(Q)\rVert<1$, and that the boundary goes to the boundary. The map is an involution, $\varphi_{Q_0}\circ\varphi_{Q_0}=\mathrm{id}$, by direct substitution; hence it is a biholomorphism.
+*Proof.* The value at $0$ is $Q_0$ and the value at $Q_0$ is $0$, because $P_{Q_0}Q_0=Q_0$ and $(I-P_{Q_0})Q_0=0$. The displayed identity is a direct computation with $\lVert P_{Q_0}Q\rVert^2+\lVert(I-P_{Q_0})Q\rVert^2=\lVert Q\rVert^2$; it shows that $\lVert Q\rVert<1$ implies $\lVert\digamma_{\mathrm{map},Q_0}(Q)\rVert<1$, and that the boundary goes to the boundary. The map is an involution, $\digamma_{\mathrm{map},Q_0}\circ\digamma_{\mathrm{map},Q_0}=\mathrm{id}$, by direct substitution; hence it is a biholomorphism.
 
 **Remark (the model of the ball).** The ball is the bounded realisation of complex hyperbolic space $\mathbb{CH}^2$, and $\mathrm{PU}(2,1)$ is its group of holomorphic isometries for the Bergman metric. **The dimension $8$ is the dimension of the group, not of the space**; the space has real dimension $4$, and the isotropy has dimension $4$.
 
@@ -124,9 +124,9 @@ It is isomorphic to $\mathrm{PSL}_2(\mathbb{R})\cong\mathrm{PU}(1,1)$ and has re
 
 **Theorem (the automorphisms of the bicylinder).** Every biholomorphism of $\Delta^2$ is of the form
 $$
-(Q_{\blacktriangle},Q_{\blacktriangledown})\longmapsto\bigl(\varphi_{\blacktriangle}(Q_{\blacktriangle}),\varphi_{\blacktriangledown}(Q_{\blacktriangledown})\bigr),
+(Q_{\blacktriangle},Q_{\blacktriangledown})\longmapsto\bigl(\digamma_{\mathrm{map},\blacktriangle}(Q_{\blacktriangle}),\digamma_{\mathrm{map},\blacktriangledown}(Q_{\blacktriangledown})\bigr),
 $$
-where $\varphi_{\blacktriangle},\varphi_{\blacktriangledown}\in\operatorname{Aut}(\Delta)$ and the two are interchanged when $\sigma$ swaps the coordinates. Hence
+where $\digamma_{\mathrm{map},\blacktriangle},\digamma_{\mathrm{map},\blacktriangledown}\in\operatorname{Aut}(\Delta)$ and the two are interchanged when $\sigma$ swaps the coordinates. Hence
 $$
 \operatorname{Aut}(\Delta^2)\cong\bigl(\operatorname{Aut}(\Delta)\bigr)^2\rtimes S_2
 \cong\bigl(\mathrm{PSL}_2(\mathbb{R})\bigr)^2\rtimes S_2,
@@ -274,7 +274,7 @@ The Riemann mapping theorem fails in $\mathbb{C}^2$: the ball and the bicylinder
 | $\mathrm{U}(2,1)$ | the matrices preserving $\operatorname{diag}(1,1,-1)$ |
 | $\mathrm{PU}(2,1)$ | the projective unitary group, $\operatorname{Aut}(\mathbb{B}^2)$ |
 | $\mathrm{PSL}_2(\mathbb{R})$ | the disc automorphism group, $\operatorname{Aut}(\Delta)$ |
-| $\varphi_{Q_0}$ | the Möbius map of the ball sending $0$ to $Q_0$ |
+| $\digamma_{\mathrm{map},Q_0}$ | the Möbius map of the ball sending $0$ to $Q_0$ |
 | $\mathcal{L}_r$ | the Levi form of the defining function $r$ |
 | strongly pseudoconvex | positive definite Levi form on the complex tangent space |
 | $\log D$ | the logarithmic image of a complete Reinhardt domain |

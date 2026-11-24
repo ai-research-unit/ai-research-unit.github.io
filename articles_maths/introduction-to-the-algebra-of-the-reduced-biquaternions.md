@@ -102,7 +102,7 @@ The zero divisors, their two families and their geometry are *Zero Divisors of t
 
 **The algebra is the direct product of two copies of $\mathbb{C}$, and its maximal ideals are the two idempotent lines.**
 
-**Theorem (the structure).** The component map $\varphi(\breve Q)=(Q_{+},Q_{-})$ is an isomorphism of $\mathbb{C}$-algebras
+**Theorem (the structure).** The component map $\digamma_{\mathrm{map}}(\breve Q)=(Q_{+},Q_{-})$ is an isomorphism of $\mathbb{C}$-algebras
 $$
 \boxed{\; \mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-\cong\mathbb{C}\oplus\mathbb{C} \;},
 $$

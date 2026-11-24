@@ -34,7 +34,7 @@ The three conditions are the algebraic definition of *Quadratic Forms and Polari
 
 **Proposition.** Let $m$ be a continuous quadratic form on a Hausdorff module over a Hausdorff field. Then the radical is a closed subspace of $V$.
 
-*Proof.* For each $w\in V$ the map $\varphi_{w}(v)=B(v,w)$ is continuous, by the continuity of $B$ and that of the pairing with the fixed vector $w$; its kernel is closed. The radical is the intersection $\bigcap_{w\in V}\ker\varphi_{w}$, and an intersection of closed sets is closed.
+*Proof.* For each $w\in V$ the map $\digamma_{\mathrm{map},w}(v)=B(v,w)$ is continuous, by the continuity of $B$ and that of the pairing with the fixed vector $w$; its kernel is closed. The radical is the intersection $\bigcap_{w\in V}\ker\digamma_{\mathrm{map},w}$, and an intersection of closed sets is closed.
 
 The proposition is the reason the radical is a topological object and not only an algebraic one, and it is what allows the quotient by the radical to be formed as a topological space in the finite-dimensional case; the quotient by the radical of a continuous form is treated in *Topological Clifford Algebras*, §*The Closure of Zero and the Hausdorff Quotient*, where it is compared with the closure of zero.
 

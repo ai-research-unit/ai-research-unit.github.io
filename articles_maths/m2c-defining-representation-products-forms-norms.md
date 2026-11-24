@@ -98,7 +98,7 @@ $$
 | Form | Isometry group | Isotropic set | The reading |
 |---|---|---|---|
 | $H$ | $\mathrm{U}(2)$ | $\{0\}$ | the qubit, with the pure states as the rank-one projectors |
-| $B$ | $\mathrm{O}(2,\mathbb{C})$ | two complex lines | the bilinear cone $u\phi^{\mathsf T}$ |
+| $B$ | $\mathrm{O}(2,\mathbb{C})$ | two complex lines | the bilinear cone $u\digamma_{\mathrm{map}}^{\mathsf T}$ |
 | $\omega$ | $\mathrm{SL}_2(\mathbb{C})$ | every complex line | the spinor and the Lorentz group |
 
 **The three groups are not the same group and the three geometries are not the same geometry.** The first is compact, the second is the complex orthogonal group $\mathrm{O}(2,\mathbb{C})$, and the third is the double cover of the Lorentz group. **The same carrier carries a compact geometry, a split geometry and a symplectic geometry, and the three pairings are what separates them.**
@@ -226,11 +226,11 @@ $$
 | Statement | Here | In the algebra pair |
 |---|---|---|
 | the determinant of a rank-one member | $0$, identically | the quaternionic norm, nonzero |
-| the trace of a rank-one member | $\phi(u)$, a product of two coordinates | $2Q_t$ |
+| the trace of a rank-one member | $\digamma_{\mathrm{map}}(u)$, a product of two coordinates | $2Q_t$ |
 | the four norms on one element | the plain, the determinant, the Hilbert–Schmidt and the Krein-type forms | the same four, with the algebra product inside |
 | the two pairings of two elements | $\operatorname{tr}(uv^{\mathsf T})$ and $\operatorname{tr}(uv^{\dagger})$ | the four forms $\tfrac12\operatorname{tr}(A_1A_2)$ and its three variants |
 
-**The trace and the determinant of a member of the cone are the two elementary symmetric functions of the pair $(u,\phi)$**, and this is exact at this size only: at the size four the determinant of a two-sided operator is a quartic in the coordinates. **The module reading is the one in which the rank is one by construction**, and the algebra reading is the one in which the rank is a condition.
+**The trace and the determinant of a member of the cone are the two elementary symmetric functions of the pair $(u,\digamma_{\mathrm{map}})$**, and this is exact at this size only: at the size four the determinant of a two-sided operator is a quartic in the coordinates. **The module reading is the one in which the rank is one by construction**, and the algebra reading is the one in which the rank is a condition.
 
 ## Summary
 
@@ -257,7 +257,7 @@ An operator carries four quadratic invariants, of which only the Hilbert–Schmi
 
 ## Further Reading
 
-*$M_2(\mathbb{C})$ Defining Representation* is the first article of the trio: the two basis vectors, the two generators, the five bases of the operator space and the four readings. *$M_2(\mathbb{C})$ Defining Representation : Operators* is the third: the two-sided family $u\phi^{\mathsf T}$, its rank and its fibres.
+*$M_2(\mathbb{C})$ Defining Representation* is the first article of the trio: the two basis vectors, the two generators, the five bases of the operator space and the four readings. *$M_2(\mathbb{C})$ Defining Representation : Operators* is the third: the two-sided family $u\digamma_{\mathrm{map}}^{\mathsf T}$, its rank and its fibres.
 
 *The Three Canonical Forms on $\mathbb{C}^2$* proves the properties of $H$, $B$ and $\omega$, their isometry groups and their isotropic sets. *Duo-Complex Numbers* fixes the space, its two scalar structures, the complex structure and the norm, and is the article of the category that this trio reads through matrices.
 

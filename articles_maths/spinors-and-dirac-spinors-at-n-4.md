@@ -14,7 +14,7 @@
 
 ## The Three Kinds
 
-**Definition.** A **spinor** is a vector of $V_{3/2}=\mathbb{C}^{4}$; a **Weyl spinor** is a vector of one of the two halves $S_{+}$ or $S_{-}$ of dimension two; a **Dirac spinor** is a pair $(\psi_{+},\psi_{-})$ of Weyl spinors, that is a vector of $S_{+}\oplus S_{-}$.
+**Definition.** A **spinor** is a vector of $V_{3/2}=\mathbb{C}^{4}$; a **Weyl spinor** is a vector of one of the two halves $S_{+}$ or $S_{-}$ of dimension two; a **Dirac spinor** is a pair $(Ξ_{\mathrm{wfn},+},Ξ_{\mathrm{wfn},-})$ of Weyl spinors, that is a vector of $S_{+}\oplus S_{-}$.
 
 **Proposition.** The three spaces have dimensions four, two and four, and the Dirac spinor is the same object as the spinor: $S_{+}\oplus S_{-}\cong V_{3/2}$.
 
@@ -42,7 +42,7 @@
 
 **Corollary.** A bispinor is a matrix, that is a spinor times a dual spinor summed over a basis, which is the content of the bispinor identification.
 
-*Proof.* The rank-one matrices are $\psi\bar\chi^{\dagger}$ and they span the algebra.
+*Proof.* The rank-one matrices are $Ξ_{\mathrm{wfn}}\bar\chi^{\dagger}$ and they span the algebra.
 
 **The reading.** The spinors are the columns, the dual spinors the rows, and the algebra is the space of bispinors: the three objects are the three ways of looking at a matrix.
 
@@ -54,7 +54,7 @@
 
 **Corollary.** The symmetry between a spinor and its dual is antisymmetric, so a spinor is never paired with itself to a nonzero scalar.
 
-*Proof.* $\omega(\psi,\psi)=0$ for an alternating form.
+*Proof.* $\omega(Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=0$ for an alternating form.
 
 **Corollary.** The reality condition is quaternionic: there is an anti-linear $T$ with $T^{2}=-1$, and a Majorana spinor in the strict sense, which would need $T^{2}=+1$, does not exist.
 

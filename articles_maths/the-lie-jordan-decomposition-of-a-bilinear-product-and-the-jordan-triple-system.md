@@ -10,7 +10,7 @@ $$
 c_{\mu\nu\lambda} = \sum_\rho\bigl(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho}\bigr)k_\rho,
 $$
 
-where $L_{a}R_{b}\psi=a\psi b$ are the basis operators, $L_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the reference basis operator of the $\mu$-th coordinate, with $\nu(t)=x$ and $\nu(k)=y$ for $k=1,2,3$, and $L_{e_t}R_{\vec e_z}$ is the chirality operator, so that $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}}L_{e_\rho}R_{\vec e_{\nu(\rho)}})$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_t}R_{\vec e_z}L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}})$ are the traces of four and five reference basis operators, the unit phases of the basis operators cancelling in the trace, and $k_\mu$ is a neutral vector. The reference basis operators are the bare basis operators, of square $\pm1$; the physics articles of the relativistic quantum series use the scaled basis operators $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ and $-iL_{e_t}R_{\vec e_z}$, and every statement below is a statement about the bare basis operators, in which the $i$'s are absent by construction. No single letter stands for a reference basis operator: it is written as its two multipliers. The composition
+where $L_{a}R_{b}Ξ_{\mathrm{wfn}}=aΞ_{\mathrm{wfn}} b$ are the basis operators, $L_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the reference basis operator of the $\mu$-th coordinate, with $\nu(t)=x$ and $\nu(k)=y$ for $k=1,2,3$, and $L_{e_t}R_{\vec e_z}$ is the chirality operator, so that $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}}L_{e_\rho}R_{\vec e_{\nu(\rho)}})$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_t}R_{\vec e_z}L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}})$ are the traces of four and five reference basis operators, the unit phases of the basis operators cancelling in the trace, and $k_\mu$ is a neutral vector. The reference basis operators are the bare basis operators, of square $\pm1$; the physics articles of the relativistic quantum series use the scaled basis operators $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ and $-iL_{e_t}R_{\vec e_z}$, and every statement below is a statement about the bare basis operators, in which the $i$'s are absent by construction. No single letter stands for a reference basis operator: it is written as its two multipliers. The composition
 
 $$
 (G \star H)_\lambda = \sum_{\mu,\nu}G_\mu\, c_{\mu\lambda\nu} H_\nu
@@ -132,7 +132,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_aΞ_{\mathrm{wfn}}=aΞ_{\mathrm{wfn}}$ and $R_bΞ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
@@ -183,7 +183,7 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 | $c_{\mu\nu\lambda} = \sum_\rho(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ | Structure constants |
 | $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}}L_{e_\rho}R_{\vec e_{\nu(\rho)}})$ | Symmetric trace of four reference basis operators |
 | $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_t}R_{\vec e_z}L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}})$ | Totally antisymmetric symbol, the trace of five reference basis operators |
-| $L_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $L_{e_t}R_{\vec e_z}$ | The reference basis operators of the four coordinates and of the chirality, in the units $e_t,\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{B}$; $L_{a}R_{b}\psi=a\psi b$, and $\nu(t)=x$, $\nu(k)=y$ |
+| $L_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $L_{e_t}R_{\vec e_z}$ | The reference basis operators of the four coordinates and of the chirality, in the units $e_t,\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{B}$; $L_{a}R_{b}Ξ_{\mathrm{wfn}}=aΞ_{\mathrm{wfn}} b$, and $\nu(t)=x$, $\nu(k)=y$ |
 | $k_\mu$ | Neutral vector, the unit of the composition |
 | $G \bullet H = \tfrac12(G\star H + H\star G)$ | Jordan (symmetric) product |
 | $[G,H] = \tfrac12(G\star H - H\star G)$ | Lie (antisymmetric) bracket |

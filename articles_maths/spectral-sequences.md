@@ -126,7 +126,7 @@ obtained from the inclusions and projections of the filtration. They are the com
 
 ### The Base-Change Spectral Sequence
 
-**Theorem.** Let $\varphi:R\to S$ be a homomorphism of commutative rings, let $M$ be an $R$-module and $N$ an $S$-module. There is a first-quadrant spectral sequence
+**Theorem.** Let $\digamma_{\mathrm{map}}:R\to S$ be a homomorphism of commutative rings, let $M$ be an $R$-module and $N$ an $S$-module. There is a first-quadrant spectral sequence
 
 $$
 E_2^{n,m}=\operatorname{Tor}_n^S\bigl(\operatorname{Tor}_m^R(S,M),N\bigr)\Longrightarrow\operatorname{Tor}_{n+m}^R(M,\operatorname{Res}N),
@@ -210,7 +210,7 @@ Every statement is algebraic. The spectral sequences attached to spaces, fibrati
 | $R^pG(R^qF(A))$ | $E_2$-page of the Grothendieck spectral sequence |
 | $d_2^{0,1}$ | differential appearing in the five-term exact sequence |
 | $\operatorname{Tor}_n^R$, $R^pG$ | derived functors entering the examples |
-| $R$ | commutative ring with $1\neq0$; $\varphi:R\to S$ a change of rings |
+| $R$ | commutative ring with $1\neq0$; $\digamma_{\mathrm{map}}:R\to S$ a change of rings |
 
 
 ## Further Reading

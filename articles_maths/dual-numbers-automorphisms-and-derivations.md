@@ -17,29 +17,29 @@ with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, dual conjugation $\
 
 ### Definition
 
-**Definition.** An **$R$-algebra automorphism** of $\mathbb{C}_{\mathrm{dln},R}$ is a bijective $R$-linear map $\varphi : \mathbb{C}_{\mathrm{dln},R} \to \mathbb{C}_{\mathrm{dln},R}$ with $\varphi(Q_1Q_2) = \varphi(Q_1)\varphi(Q_2)$ and $\varphi(1) = 1$. They form a group under composition, written $\operatorname{Aut}_R(\mathbb{C}_{\mathrm{dln},R})$; when $R = \mathbb{R}$ we write $\operatorname{Aut}(\mathbb{C}_{\mathrm{dln}})$.
+**Definition.** An **$R$-algebra automorphism** of $\mathbb{C}_{\mathrm{dln},R}$ is a bijective $R$-linear map $\digamma_{\mathrm{map}} : \mathbb{C}_{\mathrm{dln},R} \to \mathbb{C}_{\mathrm{dln},R}$ with $\digamma_{\mathrm{map}}(Q_1Q_2) = \digamma_{\mathrm{map}}(Q_1)\digamma_{\mathrm{map}}(Q_2)$ and $\digamma_{\mathrm{map}}(1) = 1$. They form a group under composition, written $\operatorname{Aut}_R(\mathbb{C}_{\mathrm{dln},R})$; when $R = \mathbb{R}$ we write $\operatorname{Aut}(\mathbb{C}_{\mathrm{dln}})$.
 
 ### The Automorphisms
 
 **Theorem.** Every automorphism of $\mathbb{C}_{\mathrm{dln},R}$ is determined by its value on $\varepsilon$, and
 
 $$
-\varphi(q + \varepsilon q') = q + q'c\,\varepsilon, \qquad c \in R^\times,
+\digamma_{\mathrm{map}}(q + \varepsilon q') = q + q'c\,\varepsilon, \qquad c \in R^\times,
 $$
 
-so the assignment $\varphi \mapsto c$ is a group isomorphism
+so the assignment $\digamma_{\mathrm{map}} \mapsto c$ is a group isomorphism
 
 $$
 \boxed{\; \operatorname{Aut}_R(\mathbb{C}_{\mathrm{dln},R}) \;\cong\; R^\times \;}.
 $$
 
-**Proof.** An automorphism must fix $R$ pointwise, since it is $R$-linear and unital, so it is determined by $\varphi(\varepsilon)$. Writing $\varphi(\varepsilon) = Q_1 = q_1 + \varepsilon q'_1$, the relation $\varepsilon^2 = 0$ is preserved only if
+**Proof.** An automorphism must fix $R$ pointwise, since it is $R$-linear and unital, so it is determined by $\digamma_{\mathrm{map}}(\varepsilon)$. Writing $\digamma_{\mathrm{map}}(\varepsilon) = Q_1 = q_1 + \varepsilon q'_1$, the relation $\varepsilon^2 = 0$ is preserved only if
 
 $$
-0 = \varphi(\varepsilon^2) = \varphi(\varepsilon)^2 = q_1^2 + 2q_1q'_1\,\varepsilon,
+0 = \digamma_{\mathrm{map}}(\varepsilon^2) = \digamma_{\mathrm{map}}(\varepsilon)^2 = q_1^2 + 2q_1q'_1\,\varepsilon,
 $$
 
-that is, $q_1^2 = 0$ and $2q_1q'_1 = 0$. The scalar $q'_1$ is invertible: $\varphi(q + \varepsilon q') = (q + q'q_1) + q'q'_1\,\varepsilon$ has $\varepsilon$-component $q'q'_1$, and surjectivity of $\varphi$ forces $q' \mapsto q'q'_1$ to be onto $R$, which happens only for $q'_1 \in R^\times$. With $q'_1$ an invertible element and $2$ invertible, $q_1q'_1 = 0$ gives $q_1 = 0$, so $\varphi(\varepsilon) = q'_1\varepsilon$ and $\varphi(q + \varepsilon q') = q + q'q'_1\varepsilon$. This is bijective exactly when multiplication by $q'_1$ is, that is, exactly when $q'_1 \in R^\times$. Composition corresponds to multiplication of the scalars, so $\varphi \mapsto q'_1$ is an isomorphism onto $R^\times$; writing the multiplier as $c$ gives the stated form $\varphi(q + \varepsilon q') = q + q'c\,\varepsilon$.
+that is, $q_1^2 = 0$ and $2q_1q'_1 = 0$. The scalar $q'_1$ is invertible: $\digamma_{\mathrm{map}}(q + \varepsilon q') = (q + q'q_1) + q'q'_1\,\varepsilon$ has $\varepsilon$-component $q'q'_1$, and surjectivity of $\digamma_{\mathrm{map}}$ forces $q' \mapsto q'q'_1$ to be onto $R$, which happens only for $q'_1 \in R^\times$. With $q'_1$ an invertible element and $2$ invertible, $q_1q'_1 = 0$ gives $q_1 = 0$, so $\digamma_{\mathrm{map}}(\varepsilon) = q'_1\varepsilon$ and $\digamma_{\mathrm{map}}(q + \varepsilon q') = q + q'q'_1\varepsilon$. This is bijective exactly when multiplication by $q'_1$ is, that is, exactly when $q'_1 \in R^\times$. Composition corresponds to multiplication of the scalars, so $\digamma_{\mathrm{map}} \mapsto q'_1$ is an isomorphism onto $R^\times$; writing the multiplier as $c$ gives the stated form $\digamma_{\mathrm{map}}(q + \varepsilon q') = q + q'c\,\varepsilon$.
 
 **Corollary.** Over $\mathbb{R}$ the automorphism group is $\operatorname{Aut}(\mathbb{C}_{\mathrm{dln}}) \cong \mathbb{R}^\times$, a one-dimensional abelian Lie group with exactly two connected components, distinguished by the sign of the scalar $c$; the identity component is $\{c > 0\} \cong \mathbb{R}_{>0}$.
 
@@ -48,10 +48,10 @@ that is, $q_1^2 = 0$ and $2q_1q'_1 = 0$. The scalar $q'_1$ is invertible: $\varp
 **Proposition.** Every automorphism fixes the real submodule $R_{\mathbb{C}_{\mathrm{dln}}}$ pointwise and acts on the infinitesimal submodule $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$ by the scalar $c$:
 
 $$
-\varphi(R_{\mathbb{C}_{\mathrm{dln}}}) = R_{\mathbb{C}_{\mathrm{dln}}}, \qquad \varphi(\varepsilon q') = c \varepsilon q'.
+\digamma_{\mathrm{map}}(R_{\mathbb{C}_{\mathrm{dln}}}) = R_{\mathbb{C}_{\mathrm{dln}}}, \qquad \digamma_{\mathrm{map}}(\varepsilon q') = c \varepsilon q'.
 $$
 
-**Proof.** $\varphi(q) = q$ by $R$-linearity and unitality, and $\varphi(\varepsilon q') = q'\varphi(\varepsilon) = q' \varepsilon c$.
+**Proof.** $\digamma_{\mathrm{map}}(q) = q$ by $R$-linearity and unitality, and $\digamma_{\mathrm{map}}(\varepsilon q') = q'\digamma_{\mathrm{map}}(\varepsilon) = q' \varepsilon c$.
 
 So the automorphism group acts trivially on the quotient $\mathbb{C}_{\mathrm{dln},R}/\mathrm{M} \cong R$ and by the full group of scalars on $\mathrm{M}$. This is the algebraic reason that an automorphism cannot exchange the two submodules: the identity $1$ is fixed, so the real submodule is stable, and the class of $\varepsilon$ in the quotient is nonzero, so the infinitesimal submodule is stable.
 
@@ -143,7 +143,7 @@ $$
 \boxed{\; \operatorname{Lie}\operatorname{Aut}(\mathbb{C}_{\mathrm{dln}}) = \operatorname{Der}(\mathbb{C}_{\mathrm{dln}}) = \mathbb{R}\,\partial_{\mathrm{nil}} \;}.
 $$
 
-**Proof.** Since $(\partial_{\mathrm{nil}})^k(\varepsilon) = \varepsilon$ for every $k \geq 1$, the exponential series gives $\exp(t\,\partial_{\mathrm{nil}})(\varepsilon) = \sum_{k \geq 0} t^k\varepsilon/k! = \exp(t)\varepsilon$, and $\exp(t\,\partial_{\mathrm{nil}})(a) = a$. The resulting automorphism is $\varphi_{\exp(t)}$ in the notation of the automorphism theorem, and as $t$ ranges over $\mathbb{R}$ the scalar $\exp(t)$ ranges over $\mathbb{R}_{>0}$, the identity component of $\mathbb{R}^\times$.
+**Proof.** Since $(\partial_{\mathrm{nil}})^k(\varepsilon) = \varepsilon$ for every $k \geq 1$, the exponential series gives $\exp(t\,\partial_{\mathrm{nil}})(\varepsilon) = \sum_{k \geq 0} t^k\varepsilon/k! = \exp(t)\varepsilon$, and $\exp(t\,\partial_{\mathrm{nil}})(a) = a$. The resulting automorphism is $\digamma_{\mathrm{map},\exp(t)}$ in the notation of the automorphism theorem, and as $t$ ranges over $\mathbb{R}$ the scalar $\exp(t)$ ranges over $\mathbb{R}_{>0}$, the identity component of $\mathbb{R}^\times$.
 
 This is the standard correspondence for a finite-dimensional real algebra: the Lie algebra of the automorphism group is the derivation algebra, and the exponential of a derivation is an automorphism.
 
@@ -167,7 +167,7 @@ Two structural facts account for the difference. First, the complex algebra is a
 
 ## Summary
 
-The unital algebra automorphisms of $\mathbb{C}_{\mathrm{dln},R}$ are exactly the maps $\varphi_c(q + \varepsilon q') = q + q'c\,\varepsilon$ with $c \in R^\times$, and $\operatorname{Aut}_R(\mathbb{C}_{\mathrm{dln},R}) \cong R^\times$; over $\mathbb{R}$ this is $\mathbb{R}^\times$, a one-dimensional abelian Lie group with two contractible components. Every automorphism fixes the real submodule pointwise and scales the infinitesimal submodule by $c$,  The $R$-linear derivations are exactly the maps $D(q + \varepsilon q') = c \varepsilon q'$ with $c \in R$; the derivation module is free of rank one, $\operatorname{Der}_R(\mathbb{C}_{\mathrm{dln},R}) \cong R$, generated by $\partial_{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q'$. As a space of derivations of $\mathbb{C}_{\mathrm{dln}}$ over $\mathbb{R}$ it is the one-dimensional space $\mathbb{R}\,\partial_{\mathrm{nil}}$, since $\varepsilon^2 = 0$ is the single defining relation of the algebra. Since $\mathbb{C}_{\mathrm{dln}}$ is commutative, every inner derivation vanishes and the unique generator is outer. The derivation $\partial_{\mathrm{nil}}$ is a projection onto the nilpotent direction with kernel the real submodule, and its exponential realises the identity component of the automorphism group, $\exp(t\,\partial_{\mathrm{nil}})(\varepsilon) = \exp(t)\varepsilon$, so $\operatorname{Lie}\operatorname{Aut}(\mathbb{C}_{\mathrm{dln}}) = \operatorname{Der}(\mathbb{C}_{\mathrm{dln}}) = \mathbb{R}\,\partial_{\mathrm{nil}}$. Here the automorphism group is the scalars and the derivation space is a single line of outer derivations.
+The unital algebra automorphisms of $\mathbb{C}_{\mathrm{dln},R}$ are exactly the maps $\digamma_{\mathrm{map},c}(q + \varepsilon q') = q + q'c\,\varepsilon$ with $c \in R^\times$, and $\operatorname{Aut}_R(\mathbb{C}_{\mathrm{dln},R}) \cong R^\times$; over $\mathbb{R}$ this is $\mathbb{R}^\times$, a one-dimensional abelian Lie group with two contractible components. Every automorphism fixes the real submodule pointwise and scales the infinitesimal submodule by $c$,  The $R$-linear derivations are exactly the maps $D(q + \varepsilon q') = c \varepsilon q'$ with $c \in R$; the derivation module is free of rank one, $\operatorname{Der}_R(\mathbb{C}_{\mathrm{dln},R}) \cong R$, generated by $\partial_{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q'$. As a space of derivations of $\mathbb{C}_{\mathrm{dln}}$ over $\mathbb{R}$ it is the one-dimensional space $\mathbb{R}\,\partial_{\mathrm{nil}}$, since $\varepsilon^2 = 0$ is the single defining relation of the algebra. Since $\mathbb{C}_{\mathrm{dln}}$ is commutative, every inner derivation vanishes and the unique generator is outer. The derivation $\partial_{\mathrm{nil}}$ is a projection onto the nilpotent direction with kernel the real submodule, and its exponential realises the identity component of the automorphism group, $\exp(t\,\partial_{\mathrm{nil}})(\varepsilon) = \exp(t)\varepsilon$, so $\operatorname{Lie}\operatorname{Aut}(\mathbb{C}_{\mathrm{dln}}) = \operatorname{Der}(\mathbb{C}_{\mathrm{dln}}) = \mathbb{R}\,\partial_{\mathrm{nil}}$. Here the automorphism group is the scalars and the derivation space is a single line of outer derivations.
 
 ## Summary of Notation
 
@@ -180,10 +180,10 @@ The unital algebra automorphisms of $\mathbb{C}_{\mathrm{dln},R}$ are exactly th
 | $\bar{Q} = q - \varepsilon q'$ | Dual conjugation |
 | $R_{\mathbb{C}_{\mathrm{dln}}}$, $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$ | Real and infinitesimal submodules |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal |
-| $\operatorname{Aut}_R(\mathbb{C}_{\mathrm{dln},R}) \cong R^\times$ | Group of unital algebra automorphisms, $\varphi_c(\varepsilon) = \varepsilon c$ |
+| $\operatorname{Aut}_R(\mathbb{C}_{\mathrm{dln},R}) \cong R^\times$ | Group of unital algebra automorphisms, $\digamma_{\mathrm{map},c}(\varepsilon) = \varepsilon c$ |
 | $\operatorname{Der}_R(\mathbb{C}_{\mathrm{dln},R}) \cong R$ | Module of derivations, free of rank one |
 | $\partial_{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q'$ | The derivation in the nilpotent direction |
-| $\varphi_c$ | Automorphism with $\varphi_c(\varepsilon) = \varepsilon c$, $c \in R^\times$ |
+| $\digamma_{\mathrm{map},c}$ | Automorphism with $\digamma_{\mathrm{map},c}(\varepsilon) = \varepsilon c$, $c \in R^\times$ |
 | $\operatorname{ad}_{Q_1}(Q_2) = [Q_1, Q_2]$ | Inner derivation, identically zero here |
 | $\mathbb{C}$ | The complex field, the comparison model |
 

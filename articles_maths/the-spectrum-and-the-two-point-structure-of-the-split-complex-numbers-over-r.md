@@ -13,21 +13,21 @@ The algebra is $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]$, $j^2=1$, with $\Pi_\pm
 **Theorem (the two characters).** The characters are the two coordinate maps
 
 $$
-\varphi_+ : Q=q+jq'\mapsto q+q' , \qquad \varphi_- : Q=q+jq'\mapsto q-q' ,
+\digamma_{\mathrm{map},+} : Q=q+jq'\mapsto q+q' , \qquad \digamma_{\mathrm{map},-} : Q=q+jq'\mapsto q-q' ,
 $$
 
-with kernels $\ker\varphi_\pm=\mathbb{R}\Pi_\mp$.
+with kernels $\ker\digamma_{\mathrm{map},\pm}=\mathbb{R}\Pi_\mp$.
 
-**Proof.** A character fixes $\mathbb{R}$ and sends $j$ to an element $\xi$ with $\xi^2=1$, hence to $\xi=\pm1$. For $\xi=1$ the value on $Q$ is $q+q'$ and for $\xi=-1$ it is $q-q'$; each is additive, multiplicative and unital, since $(q+q')(c+c')$ and $(q-q')(c-c')$ are the two coordinates of the product. The kernel of $\varphi_+$ is the set $q'=-q$, that is $\mathbb{R}\Pi_-$, and the kernel of $\varphi_-$ is $\mathbb{R}\Pi_+$.
+**Proof.** A character fixes $\mathbb{R}$ and sends $j$ to an element $\xi$ with $\xi^2=1$, hence to $\xi=\pm1$. For $\xi=1$ the value on $Q$ is $q+q'$ and for $\xi=-1$ it is $q-q'$; each is additive, multiplicative and unital, since $(q+q')(c+c')$ and $(q-q')(c-c')$ are the two coordinates of the product. The kernel of $\digamma_{\mathrm{map},+}$ is the set $q'=-q$, that is $\mathbb{R}\Pi_-$, and the kernel of $\digamma_{\mathrm{map},-}$ is $\mathbb{R}\Pi_+$.
 
-The characters are the two idempotent coordinates, so the algebra is recovered from its characters: the map $Q\mapsto(\varphi_+(Q),\varphi_-(Q))$ is the isomorphism $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$. Two characters, two coordinates, one isomorphism.
+The characters are the two idempotent coordinates, so the algebra is recovered from its characters: the map $Q\mapsto(\digamma_{\mathrm{map},+}(Q),\digamma_{\mathrm{map},-}(Q))$ is the isomorphism $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$. Two characters, two coordinates, one isomorphism.
 
 ### The Values on the Idempotents
 
 The characters read the idempotents as the two coordinate projectors,
 
 $$
-\varphi_+(\Pi_+)=1,\quad \varphi_+(\Pi_-)=0, \qquad \varphi_-(\Pi_+)=0,\quad \varphi_-(\Pi_-)=1 ,
+\digamma_{\mathrm{map},+}(\Pi_+)=1,\quad \digamma_{\mathrm{map},+}(\Pi_-)=0, \qquad \digamma_{\mathrm{map},-}(\Pi_+)=0,\quad \digamma_{\mathrm{map},-}(\Pi_-)=1 ,
 $$
 
 so each character is the evaluation of the Peirce coordinate it names and vanishes on the other idempotent. The two values on an element are its two Peirce coordinates, which is the reason the idempotent coordinates are also called the spectral coordinates (*Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*).
@@ -84,7 +84,7 @@ Over $\mathbb{R}$ there are exactly two finite étale algebras of rank two up to
 
 ### The Exchange Acts by Transposition
 
-The conjugation $\bar\cdot$, $j\mapsto-j$, sends $\varphi_+$ to $\varphi_-$ and $\varphi_-$ to $\varphi_+$, since $\varphi_\pm(\bar Q)=\varphi_\mp(Q)$. On the spectrum it acts as the transposition of the two points, freely and transitively: one orbit of size two.
+The conjugation $\bar\cdot$, $j\mapsto-j$, sends $\digamma_{\mathrm{map},+}$ to $\digamma_{\mathrm{map},-}$ and $\digamma_{\mathrm{map},-}$ to $\digamma_{\mathrm{map},+}$, since $\digamma_{\mathrm{map},\pm}(\bar Q)=\digamma_{\mathrm{map},\mp}(Q)$. On the spectrum it acts as the transposition of the two points, freely and transitively: one orbit of size two.
 
 ### Why It Is the Only One
 
@@ -110,7 +110,7 @@ The fundamental theorem of Galois theory asks for a normal separable extension a
 
 ## Summary
 
-The characters of $\mathbb{C}_{\mathrm{spl}}$ are the two idempotent coordinates $\varphi_\pm(Q)=q\pm q'$, with kernels the two idempotent lines, and an $\mathbb{R}$-algebra map is fixed by the image of $j$, which satisfies $\xi^2=1$, so there are exactly two. The spectrum is the discrete two-point space $\{\mathbb{R}\Pi_+,\mathbb{R}\Pi_-\}$, each point has residue field $\mathbb{R}$, and the algebra is the ring of all real-valued functions on the two points.
+The characters of $\mathbb{C}_{\mathrm{spl}}$ are the two idempotent coordinates $\digamma_{\mathrm{map},\pm}(Q)=q\pm q'$, with kernels the two idempotent lines, and an $\mathbb{R}$-algebra map is fixed by the image of $j$, which satisfies $\xi^2=1$, so there are exactly two. The spectrum is the discrete two-point space $\{\mathbb{R}\Pi_+,\mathbb{R}\Pi_-\}$, each point has residue field $\mathbb{R}$, and the algebra is the ring of all real-valued functions on the two points.
 
 The base map is finite étale of rank two and split, so the algebra is a product of two copies of the base and not a field. Up to isomorphism there are two such algebras over $\mathbb{R}$, this one and the field $\mathbb{C}$: the field has one point with a degree-two residue field, the split algebra two points with residue field the base. The conjugation acts on the two points as the transposition, and it is the only automorphism.
 
@@ -120,8 +120,8 @@ The Galois correspondence holds with two intermediate subalgebras against two su
 
 | Symbol | Meaning |
 |---|---|
-| $\varphi_\pm(Q)=q\pm q'$ | The two characters, the two idempotent coordinates |
-| $\ker\varphi_\pm=\mathbb{R}\Pi_\mp$ | The kernel of each character, a minimal ideal |
+| $\digamma_{\mathrm{map},\pm}(Q)=q\pm q'$ | The two characters, the two idempotent coordinates |
+| $\ker\digamma_{\mathrm{map},\pm}=\mathbb{R}\Pi_\mp$ | The kernel of each character, a minimal ideal |
 | $\operatorname{Spec}\mathbb{C}_{\mathrm{spl}}=\{\mathfrak p_+,\mathfrak p_-\}$ | The spectrum, two points |
 | $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ | The algebra as the functions on the two points |
 | $\bar\cdot$ | The exchange of the two points, the only automorphism |

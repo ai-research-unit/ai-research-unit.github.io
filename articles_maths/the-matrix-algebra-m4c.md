@@ -132,9 +132,9 @@ $$
 
 **Proof.** The characteristic polynomial is the determinant of $tI-A$; expanding along the permutations gives the displayed coefficients, which are the elementary symmetric functions of the eigenvalues expressed through the power sums. Cayley–Hamilton is the standard theorem for matrices over a commutative ring (*The Jordan–Chevalley Decomposition of a Matrix*).
 
-**The trace is the unique invariant linear functional.** If $\varphi:M_4\to\mathbb{C}$ is linear and $\varphi(AB)=\varphi(BA)$ for all $A,B$, then $\varphi=c\operatorname{tr}$ for some $c\in\mathbb{C}$.
+**The trace is the unique invariant linear functional.** If $\digamma_{\mathrm{map}}:M_4\to\mathbb{C}$ is linear and $\digamma_{\mathrm{map}}(AB)=\digamma_{\mathrm{map}}(BA)$ for all $A,B$, then $\digamma_{\mathrm{map}}=c\operatorname{tr}$ for some $c\in\mathbb{C}$.
 
-**Proof.** The condition says that $\varphi$ vanishes on every commutator $[A,B]$. The commutators span the traceless subspace $\mathfrak{sl}_4(\mathbb{C})$, of dimension $15$: the elementary commutators $[E_{ij},E_{ji}]=E_{ii}-E_{jj}$ span the diagonal traceless subspace, and $[E_{ij},E_{jk}]=E_{ik}$ for $i\ne k$ gives the off-diagonal units. Hence $\varphi$ vanishes on $\mathfrak{sl}_4$ and is determined by its value on $I$, so $\varphi=\varphi(I)\operatorname{tr}/4$.
+**Proof.** The condition says that $\digamma_{\mathrm{map}}$ vanishes on every commutator $[A,B]$. The commutators span the traceless subspace $\mathfrak{sl}_4(\mathbb{C})$, of dimension $15$: the elementary commutators $[E_{ij},E_{ji}]=E_{ii}-E_{jj}$ span the diagonal traceless subspace, and $[E_{ij},E_{jk}]=E_{ik}$ for $i\ne k$ gives the off-diagonal units. Hence $\digamma_{\mathrm{map}}$ vanishes on $\mathfrak{sl}_4$ and is determined by its value on $I$, so $\digamma_{\mathrm{map}}=\digamma_{\mathrm{map}}(I)\operatorname{tr}/4$.
 
 **The determinant is the unique multiplicative polynomial of degree four normalised at $I$.** A polynomial function $f:M_4\to\mathbb{C}$ with $f(AB)=f(A)f(B)$ for all $A,B$, homogeneous of degree $4$, and $f(I)=1$, is $f=\det$. On the invertible matrices $f$ is a rational character of $GL_4(\mathbb{C})$, and every such character is a power of the determinant; homogeneity of degree $4$ and $f(I)=1$ force the first power. The details are in Horn and Johnson, *Matrix Analysis*.
 

@@ -87,13 +87,13 @@ defined when $\int |X| \, d\mathbb{P} < \infty$, in which case $X$ is **integrab
 
 The probabilistic inequalities are the quantitative content of the measure theory, and they are the tools of the limit theorems.
 
-**Theorem (Jensen).** Let $\varphi : \mathbb{R} \to \mathbb{R}$ be convex and let $X$ be integrable with $\varphi(X)$ integrable. Then
+**Theorem (Jensen).** Let $\digamma_{\mathrm{map}} : \mathbb{R} \to \mathbb{R}$ be convex and let $X$ be integrable with $\digamma_{\mathrm{map}}(X)$ integrable. Then
 
 $$
-\varphi(\mathbb{E}[X]) \leq \mathbb{E}[\varphi(X)];
+\digamma_{\mathrm{map}}(\mathbb{E}[X]) \leq \mathbb{E}[\digamma_{\mathrm{map}}(X)];
 $$
 
-for $\varphi(x) = |x|^p$, $p \geq 1$, this gives $\|X\|_1 \leq \|X\|_p$ and hence $L^{n} \subseteq L^1$.
+for $\digamma_{\mathrm{map}}(x) = |x|^p$, $p \geq 1$, this gives $\|X\|_1 \leq \|X\|_p$ and hence $L^{n} \subseteq L^1$.
 
 **Theorem (Markov).** For a nonnegative random variable $X$ and $a > 0$,
 
@@ -155,32 +155,32 @@ Slutsky's theorem is the working form of the continuous mapping principle: it pe
 **Definition.** The **characteristic function** of a random variable $X$ on $\mathbb{R}^d$ is
 
 $$
-\varphi_X(t) = \mathbb{E}\!\left[\exp(i\langle t, X\rangle)\right] = \int_{\mathbb{R}^d} \exp(i\langle t,x\rangle)\, d\mu_X(x), \qquad t \in \mathbb{R}^d,
+\digamma_{\mathrm{map},X}(t) = \mathbb{E}\!\left[\exp(i\langle t, X\rangle)\right] = \int_{\mathbb{R}^d} \exp(i\langle t,x\rangle)\, d\mu_X(x), \qquad t \in \mathbb{R}^d,
 $$
 
 the Fourier transform of the distribution $\mu_X$.
 
-**Theorem (basic properties).** The characteristic function satisfies $\varphi_X(0) = 1$, $|\varphi_X(t)| \leq 1$, $\varphi_X(-t) = \overline{\varphi_X(t)}$, and $\varphi_X$ is uniformly continuous on $\mathbb{R}^d$. It is positive definite in the sense that $\sum_{j,k} c_j\overline{c_k}\varphi_X(t_j - t_k) \geq 0$ for all finite families $t_j \in \mathbb{R}^d$ and $c_j \in \mathbb{C}$; conversely, by Bochner's theorem, every continuous positive definite function with $\varphi(0) = 1$ is the characteristic function of a unique probability measure.
+**Theorem (basic properties).** The characteristic function satisfies $\digamma_{\mathrm{map},X}(0) = 1$, $|\digamma_{\mathrm{map},X}(t)| \leq 1$, $\digamma_{\mathrm{map},X}(-t) = \overline{\digamma_{\mathrm{map},X}(t)}$, and $\digamma_{\mathrm{map},X}$ is uniformly continuous on $\mathbb{R}^d$. It is positive definite in the sense that $\sum_{j,k} c_j\overline{c_k}\digamma_{\mathrm{map},X}(t_j - t_k) \geq 0$ for all finite families $t_j \in \mathbb{R}^d$ and $c_j \in \mathbb{C}$; conversely, by Bochner's theorem, every continuous positive definite function with $\digamma_{\mathrm{map}}(0) = 1$ is the characteristic function of a unique probability measure.
 
-*Proof.* The first four properties are immediate from the definition and the dominated convergence theorem; uniform continuity follows from $\left|\varphi(t+h) - \varphi(t)\right| \leq \mathbb{E}\left|\exp(i\langle h,X\rangle) - 1\right|$, whose right-hand side is independent of $t$ and tends to $0$ as $h \to 0$ by dominated convergence. Positive definiteness is the computation $\sum_{j,k}c_j\overline{c_k}\varphi(t_j-t_k) = \mathbb{E}\left|\sum_j c_j \exp(i\langle t_j,X\rangle)\right|^2 \geq 0$. The converse is Bochner's theorem, whose proof is the inversion formula of *Fourier Analysis on Euclidean Spaces*.
+*Proof.* The first four properties are immediate from the definition and the dominated convergence theorem; uniform continuity follows from $\left|\digamma_{\mathrm{map}}(t+h) - \digamma_{\mathrm{map}}(t)\right| \leq \mathbb{E}\left|\exp(i\langle h,X\rangle) - 1\right|$, whose right-hand side is independent of $t$ and tends to $0$ as $h \to 0$ by dominated convergence. Positive definiteness is the computation $\sum_{j,k}c_j\overline{c_k}\digamma_{\mathrm{map}}(t_j-t_k) = \mathbb{E}\left|\sum_j c_j \exp(i\langle t_j,X\rangle)\right|^2 \geq 0$. The converse is Bochner's theorem, whose proof is the inversion formula of *Fourier Analysis on Euclidean Spaces*.
 
-**Theorem (uniqueness and inversion).** The characteristic function determines the distribution: if $\varphi_X = \varphi_Y$ then $\mu_X = \mu_Y$. More precisely, if $\varphi$ is integrable then $\mu_X$ has the continuous density
+**Theorem (uniqueness and inversion).** The characteristic function determines the distribution: if $\digamma_{\mathrm{map},X} = \digamma_{\mathrm{map},Y}$ then $\mu_X = \mu_Y$. More precisely, if $\digamma_{\mathrm{map}}$ is integrable then $\mu_X$ has the continuous density
 
 $$
-\boxed{\;f(x) = \frac{1}{(2\pi)^d}\int_{\mathbb{R}^d} \exp(-i\langle t,x\rangle)\varphi(t)\, dt\;},
+\boxed{\;f(x) = \frac{1}{(2\pi)^d}\int_{\mathbb{R}^d} \exp(-i\langle t,x\rangle)\digamma_{\mathrm{map}}(t)\, dt\;},
 $$
 
 and in general the distribution is recovered from the characteristic function by the inversion formula for the Fourier transform of a finite measure.
 
 The uniqueness theorem is the reason the characteristic function is the standard tool for limit theorems: it linearises the operation of passing to a limit of distributions, and it converts the convergence in distribution into the pointwise convergence of functions. The analytic theory behind the inversion formula — the Schwartz space, the Parseval identity and the extension of the Fourier transform to tempered distributions — is the subject of *Fourier Analysis on Euclidean Spaces*.
 
-**Example.** The normal distribution $N(\mu,\sigma^2)$ has characteristic function $\varphi(t) = \exp(i\mu t - \sigma^2t^2/2)$; the Poisson distribution with parameter $\lambda$ has $\varphi(t) = \exp(\lambda(\exp(it)-1))$ for a variable on $\mathbb{Z}_{\geq0}$; the Cauchy distribution with density $1/(\pi(1+x^2))$ has $\varphi(t) = \exp(-|t|)$; and the Bernoulli distribution has $\varphi(t) = 1 - p + p\exp(it)$. The last three show that the characteristic function is generally complex-valued and need not be integrable, so the inversion formula must be applied in the distributional sense.
+**Example.** The normal distribution $N(\mu,\sigma^2)$ has characteristic function $\digamma_{\mathrm{map}}(t) = \exp(i\mu t - \sigma^2t^2/2)$; the Poisson distribution with parameter $\lambda$ has $\digamma_{\mathrm{map}}(t) = \exp(\lambda(\exp(it)-1))$ for a variable on $\mathbb{Z}_{\geq0}$; the Cauchy distribution with density $1/(\pi(1+x^2))$ has $\digamma_{\mathrm{map}}(t) = \exp(-|t|)$; and the Bernoulli distribution has $\digamma_{\mathrm{map}}(t) = 1 - p + p\exp(it)$. The last three show that the characteristic function is generally complex-valued and need not be integrable, so the inversion formula must be applied in the distributional sense.
 
 ### Moment Generating and Cumulants
 
-**Definition.** When $X$ has finite moments of all orders the **moment generating function** is $M_X(t) = \mathbb{E}[\exp(tX)]$, defined near $t=0$ when the expectation converges; the **cumulants** $\kappa_n$ are the coefficients in the expansion $\log \varphi_X(t) = \sum_{n\geq1}\kappa_n (it)^n/n!$. The moments are recovered from the derivatives of $\varphi_X$ at $0$: $\mathbb{E}[X^n] = i^{-n}\varphi_X^{(n)}(0)$ when the moment exists.
+**Definition.** When $X$ has finite moments of all orders the **moment generating function** is $M_X(t) = \mathbb{E}[\exp(tX)]$, defined near $t=0$ when the expectation converges; the **cumulants** $\kappa_n$ are the coefficients in the expansion $\log \digamma_{\mathrm{map},X}(t) = \sum_{n\geq1}\kappa_n (it)^n/n!$. The moments are recovered from the derivatives of $\digamma_{\mathrm{map},X}$ at $0$: $\mathbb{E}[X^n] = i^{-n}\digamma_{\mathrm{map},X}^{(n)}(0)$ when the moment exists.
 
-The cumulants are additive for sums of independent random variables, and this is the structural reason they appear in the central limit theorem: the $n$-th cumulant of a sum of independent variables is the sum of the $n$-th cumulants, so the asymptotic distribution of a sum is governed by its first two cumulants. The additivity is a formal consequence of the factorisation $\varphi_{X+Y} = \varphi_X\varphi_Y$ for independent $X,Y$, which is stated in the next section and proved.
+The cumulants are additive for sums of independent random variables, and this is the structural reason they appear in the central limit theorem: the $n$-th cumulant of a sum of independent variables is the sum of the $n$-th cumulants, so the asymptotic distribution of a sum is governed by its first two cumulants. The additivity is a formal consequence of the factorisation $\digamma_{\mathrm{map},X+Y} = \digamma_{\mathrm{map},X}\digamma_{\mathrm{map},Y}$ for independent $X,Y$, which is stated in the next section and proved.
 
 ## The Limit Theorems in Outline
 
@@ -192,7 +192,7 @@ $$
 \mathbb{P}(X_1 \in B_1, \dots, X_n \in B_n) = \prod_{i=1}^n \mathbb{P}(X_i \in B_i),
 $$
 
-and an infinite family is independent if every finite subfamily is. Equivalently, the joint distribution is the product of the marginal distributions, and the characteristic function factorises: $\varphi_{X_1+\cdots+X_n} = \prod_i \varphi_{X_i}$.
+and an infinite family is independent if every finite subfamily is. Equivalently, the joint distribution is the product of the marginal distributions, and the characteristic function factorises: $\digamma_{\mathrm{map},X_1+\cdots+X_n} = \prod_i \digamma_{\mathrm{map},X_i}$.
 
 Independence is the probabilistic content of the product measure, and it is developed elsewhere, where the product measure is constructed, the Borel–Cantelli lemmas and the Kolmogorov zero–one law are proved, and the conditional expectation is defined as a projection. This article uses only the factorisation of the characteristic function and the additivity of the cumulants.
 
@@ -214,7 +214,7 @@ $$
 
 the standard normal distribution.
 
-The three theorems are the classical limit theorems, and they are the subject, where they are proved, refined and generalised: the weak law follows from Chebyshev when the variance is finite and from the truncation argument of Khinchin in general; the strong law is proved by the maximal inequality of Kolmogorov; and the central limit theorem is proved by the convergence of characteristic functions, via the expansion $\varphi(t/\sqrt n)^n \to \exp(-t^2/2)$ and the continuity theorem of Lévy. The rate of convergence in the central limit theorem is the Berry–Esseen theorem, and the local form is the local limit theorem; both are developed there.
+The three theorems are the classical limit theorems, and they are the subject, where they are proved, refined and generalised: the weak law follows from Chebyshev when the variance is finite and from the truncation argument of Khinchin in general; the strong law is proved by the maximal inequality of Kolmogorov; and the central limit theorem is proved by the convergence of characteristic functions, via the expansion $\digamma_{\mathrm{map}}(t/\sqrt n)^n \to \exp(-t^2/2)$ and the continuity theorem of Lévy. The rate of convergence in the central limit theorem is the Berry–Esseen theorem, and the local form is the local limit theorem; both are developed there.
 
 The place of the limit theorems in the present article is structural. The weak law is the statement that the empirical mean is a consistent estimator of the mean; the strong law is the statement that the empirical measure converges to the distribution almost surely, and it is the probabilistic form of the pointwise ergodic theorem; and the central limit theorem is the statement that the fluctuations of the empirical mean around its limit are asymptotically Gaussian, and it is the reason the normal distribution is universal. The passage from the law of large numbers to ergodic theory is the passage from independent sequences to stationary ones, and it is developed.
 
@@ -241,7 +241,7 @@ Convergence of random variables has four modes — almost surely, in probability
 | $\mathbf{1}_A$, $\delta_x$ | Indicator of $A$, point mass at $x$ |
 | $X_n \to X$ a.s., $\xrightarrow{\mathbb{P}}$, $\xrightarrow{L^{}}$, $\xrightarrow{d}$ | The four modes of convergence |
 | $\mu_n \to \mu$ weakly | $\int f\,d\mu_n \to \int f\,d\mu$ for bounded continuous $f$ |
-| $\varphi_X(t) = \mathbb{E}[\exp(i\langle t,X\rangle)]$ | Characteristic function |
+| $\digamma_{\mathrm{map},X}(t) = \mathbb{E}[\exp(i\langle t,X\rangle)]$ | Characteristic function |
 | $M_X$, $\kappa_n$ | Moment generating function, cumulants |
 | $N(\mu,\sigma^2)$, $\mathrm{Bin}(n,p)$, $\mathrm{Pois}(\lambda)$ | Normal, binomial, Poisson distributions |
 | independent | joint law is the product of the marginals |

@@ -6,7 +6,7 @@
 Optimal control is the problem of steering a dynamical system with a control of one's own choosing so as to minimise a cost. The **state** $x(t)$ obeys a differential equation $dx/dt = f(x,u,t)$ whose right-hand side contains a **control** $u(t)$ drawn from a set $\Omega$, and the cost is a **running cost**, integrated along the trajectory, together with a **terminal cost** paid at the final time,
 
 $$
-J(u) = \varphi\bigl(x(T)\bigr) + \int_{t_0}^{T}L\bigl(x(t),u(t),t\bigr)\,dt .
+J(u) = \digamma_{\mathrm{map}}\bigl(x(T)\bigr) + \int_{t_0}^{T}L\bigl(x(t),u(t),t\bigr)\,dt .
 $$
 
 The problem is the calculus of variations read with a differential equation as its constraint, and it has two faces. The **Pontryagin maximum principle** removes the constraint by the multiplier rule: the multiplier is a function of time, the **costate** $n(t)$, and the state, the control and the costate together satisfy a first-order system of twice the dimension of the state, whose solutions are the candidates for optimality. **Dynamic programming** instead studies the **value function**, the least cost attainable from a given state at a given time, and shows that it solves a first-order partial differential equation, the **Hamilton–Jacobi–Bellman equation**, which is the Hamilton–Jacobi equation of the calculus of variations with the control eliminated by a minimisation.
@@ -21,7 +21,7 @@ The setting is that of the calculus of variations: the Lagrange multiplier rule 
 
 ### Data, Admissible Controls and Minimisers
 
-**Definition.** A **control system** on an interval $[t_0,T]$ consists of a **state space** $X\subseteq\mathbb{R}^n$, a **control set** $\Omega\subseteq\mathbb{R}^m$, a **dynamics** $f : X\times \Omega\times[t_0,T]\to\mathbb{R}^n$, a **running cost** $L : X\times \Omega\times[t_0,T]\to\mathbb{R}$ and a **terminal cost** $\varphi : X\to\mathbb{R}$. An **admissible control** is a bounded measurable $u : [t_0,T]\to \Omega$; the corresponding **trajectory** is the solution $x$ of
+**Definition.** A **control system** on an interval $[t_0,T]$ consists of a **state space** $X\subseteq\mathbb{R}^n$, a **control set** $\Omega\subseteq\mathbb{R}^m$, a **dynamics** $f : X\times \Omega\times[t_0,T]\to\mathbb{R}^n$, a **running cost** $L : X\times \Omega\times[t_0,T]\to\mathbb{R}$ and a **terminal cost** $\digamma_{\mathrm{map}} : X\to\mathbb{R}$. An **admissible control** is a bounded measurable $u : [t_0,T]\to \Omega$; the corresponding **trajectory** is the solution $x$ of
 
 $$
 \left(dx/dt\right)(t) = f\bigl(x(t),u(t),t\bigr), \qquad x(t_0)=x_0 ,
@@ -35,9 +35,9 @@ The hypotheses that make the trajectory well posed are the standard ones: $f$ co
 
 ### Two Elementary Problems
 
-**Example (the scalar integrator).** Let $n=m=1$, $f(x,u)=u$, $\Omega=\mathbb{R}$, $L=\tfrac12(x^2+u^2)$, $\varphi=0$, $x(0)=x_0$, with $T$ fixed and $x(T)$ free. The task is to hold the state near the origin at least cost, and the solution below is $x(t)=x_0\cosh(T-t)/\cosh T$, $u(t)=-\tanh(T-t)x(t)$.
+**Example (the scalar integrator).** Let $n=m=1$, $f(x,u)=u$, $\Omega=\mathbb{R}$, $L=\tfrac12(x^2+u^2)$, $\digamma_{\mathrm{map}}=0$, $x(0)=x_0$, with $T$ fixed and $x(T)$ free. The task is to hold the state near the origin at least cost, and the solution below is $x(t)=x_0\cosh(T-t)/\cosh T$, $u(t)=-\tanh(T-t)x(t)$.
 
-**Example (the double integrator).** Let $x=(x_1,x_2)$ with $dx_{1}/dt=x_2$, $dx_{2}/dt=u$, $\Omega=[-1,1]$, $L=1$ and $\varphi=0$. The cost is the time itself, so the problem is to bring the state to the origin, at rest, in the least time with a bounded acceleration; its solution is the bang-bang law of the section below, and it is the standard instance in which the optimal control takes only the extreme values of $\Omega$.
+**Example (the double integrator).** Let $x=(x_1,x_2)$ with $dx_{1}/dt=x_2$, $dx_{2}/dt=u$, $\Omega=[-1,1]$, $L=1$ and $\digamma_{\mathrm{map}}=0$. The cost is the time itself, so the problem is to bring the state to the origin, at rest, in the least time with a bounded acceleration; its solution is the bang-bang law of the section below, and it is the standard instance in which the optimal control takes only the extreme values of $\Omega$.
 
 ### The Relation to the Calculus of Variations
 
@@ -61,7 +61,7 @@ The definition is the one that gives the maximum principle its classical shape. 
 
 ### Statement of the Principle
 
-**Theorem (Pontryagin maximum principle, normal form).** Suppose that $\Omega$ is compact, that $f$ is continuous in $(u,t)$ and of class $C^1$ in $x$ with a bound on $\partial/\partial x f$, and that $L$ and $\varphi$ are of class $C^1$ in $x$. Let $(x^*,u^*)$ be optimal for the problem with $x(t_0)=x_0$ fixed, $T$ fixed and $x(T)$ free. Then there is an absolutely continuous $n : [t_0,T]\to\mathbb{R}^n$ such that, for almost every $t$,
+**Theorem (Pontryagin maximum principle, normal form).** Suppose that $\Omega$ is compact, that $f$ is continuous in $(u,t)$ and of class $C^1$ in $x$ with a bound on $\partial/\partial x f$, and that $L$ and $\digamma_{\mathrm{map}}$ are of class $C^1$ in $x$. Let $(x^*,u^*)$ be optimal for the problem with $x(t_0)=x_0$ fixed, $T$ fixed and $x(T)$ free. Then there is an absolutely continuous $n : [t_0,T]\to\mathbb{R}^n$ such that, for almost every $t$,
 
 $$
 \boxed{\;\left(dx/dt\right)^{*} = \frac{\partial H}{\partial n}, \qquad \,dn/dt = -\frac{\partial H}{\partial x}\;},
@@ -70,7 +70,7 @@ $$
 the second equation being read along $(x^*,u^*,n)$, and such that $u^*(t)$ minimises the function $u\mapsto H(x^*(t),u,n(t),t)$ over $\Omega$ at almost every $t$. At the terminal time,
 
 $$
-n(T) = \frac{\partial\varphi}{\partial x}\bigl(x^*(T)\bigr),
+n(T) = \frac{\partial\digamma_{\mathrm{map}}}{\partial x}\bigl(x^*(T)\bigr),
 $$
 
 and if the final time is free as well then in addition
@@ -96,7 +96,7 @@ The derivation itself makes the role of the costate plain.
 *Proof (sketch).* Adjoin the state equation to the cost with a multiplier $n$, pairing the multiplier against $f-dx/dt$ so that the sign below comes out right:
 
 $$
-\widehat J(u) = \varphi\bigl(x(T)\bigr) + \int_{t_0}^{T}\Bigl[L(x,u,t) + \langle n, f(x,u,t)-dx/dt\rangle\Bigr]dt .
+\widehat J(u) = \digamma_{\mathrm{map}}\bigl(x(T)\bigr) + \int_{t_0}^{T}\Bigl[L(x,u,t) + \langle n, f(x,u,t)-dx/dt\rangle\Bigr]dt .
 $$
 
 The functional $\widehat J$ is stationary in $n$ exactly when the state equation holds. Stationarity in $x$ is the Euler–Lagrange equation of the integrand $G = L+\langle n,f\rangle-\langle n,dx/dt\rangle$ in the state variable: $\partial/\partial \left(dx/dt\right)\,G=-n$, $\partial/\partial x G = \partial/\partial x L+(\partial/\partial x f)^{\mathsf T}n$, and $\frac{d}{dt}\partial/\partial \left(dx/dt\right)\,G=\partial/\partial x G$ gives
@@ -105,7 +105,7 @@ $$
 dn/dt = -\partial/\partial x L - (\partial/\partial x f)^{\mathsf T}n = -\frac{\partial H}{\partial x},
 $$
 
-the costate equation. The integration by parts that produces it leaves the boundary term $-\langle n(T),\delta x(T)\rangle$, which together with $d\varphi(x(T))$ gives $n(T)=\partial/\partial x\varphi(x^*(T))$ when the final state is free. Stationarity in $u$ gives $\langle \partial/\partial u L+(\partial/\partial u f)^{\mathsf T}n,\delta u\rangle = 0$ on directions in which the control may vary, which is $\langle \partial/\partial u H,\delta u\rangle = 0$ and hence the pointwise minimisation where the control is free to move in all directions. The free-time condition is the remaining boundary term: differentiating the value in $T$ gives $\partial/\partial x\varphi\cdot\left(dx/dt\right)^{*} + L = \langle n,\left(dx/dt\right)^{*}\rangle + L = H = 0$ at $T$.
+the costate equation. The integration by parts that produces it leaves the boundary term $-\langle n(T),\delta x(T)\rangle$, which together with $d\digamma_{\mathrm{map}}(x(T))$ gives $n(T)=\partial/\partial x\digamma_{\mathrm{map}}(x^*(T))$ when the final state is free. Stationarity in $u$ gives $\langle \partial/\partial u L+(\partial/\partial u f)^{\mathsf T}n,\delta u\rangle = 0$ on directions in which the control may vary, which is $\langle \partial/\partial u H,\delta u\rangle = 0$ and hence the pointwise minimisation where the control is free to move in all directions. The free-time condition is the remaining boundary term: differentiating the value in $T$ gives $\partial/\partial x\digamma_{\mathrm{map}}\cdot\left(dx/dt\right)^{*} + L = \langle n,\left(dx/dt\right)^{*}\rangle + L = H = 0$ at $T$.
 
 The proof is a sketch in one respect, and the respect matters: the variation in $u$ is legitimate only when $\delta u$ ranges over a space containing the admissible directions at $u^*$, that is, in the interior of $\Omega$. The full theorem replaces it by a needle variation, a perturbation of the control on a set of small measure, and the passage to the limit produces the pointwise minimisation without any differentiability in $u$. Nothing else in the statement changes, and the interior case is the one used in every computation below.
 
@@ -123,7 +123,7 @@ and $\partial/\partial u H$ vanishes in the interior case; in the general case $
 
 For a free final time the constant is zero, by the transversality condition: an autonomous time-optimal problem has $H\equiv0$ along the optimal trajectory. This is the conservation law of the optimal control problem, the analogue of the conservation of energy of a mechanical system, and it is the first check to apply to a candidate solution.
 
-**Remark (the costate as a sensitivity, and the convex case).** The costate has a second reading, independent of the multiplier rule: for a perturbation of the initial state $x_0$ the least cost $V(x_0)$ satisfies $dV = \langle n(t_0),dx_0\rangle$ to first order, so that $n$ measures the marginal cost of the state — the **shadow price** of the state in the language of the convex analysis of this Part. When the problem is **convex** — $L$ convex in $(x,u)$, $f$ affine, $\varphi$ convex, $\Omega$ convex — the maximum principle is also sufficient: a pair satisfying the four conditions is optimal. The convexity hypothesis is the one that rules out the saddle points a non-convex problem may have, and the sufficiency is proved by the convexity inequality along a comparison trajectory, exactly as the Karush–Kuhn–Tucker conditions of the convex analysis are shown to be sufficient.
+**Remark (the costate as a sensitivity, and the convex case).** The costate has a second reading, independent of the multiplier rule: for a perturbation of the initial state $x_0$ the least cost $V(x_0)$ satisfies $dV = \langle n(t_0),dx_0\rangle$ to first order, so that $n$ measures the marginal cost of the state — the **shadow price** of the state in the language of the convex analysis of this Part. When the problem is **convex** — $L$ convex in $(x,u)$, $f$ affine, $\digamma_{\mathrm{map}}$ convex, $\Omega$ convex — the maximum principle is also sufficient: a pair satisfying the four conditions is optimal. The convexity hypothesis is the one that rules out the saddle points a non-convex problem may have, and the sufficiency is proved by the convexity inequality along a comparison trajectory, exactly as the Karush–Kuhn–Tucker conditions of the convex analysis are shown to be sufficient.
 
 ## The Linear-Quadratic Regulator
 
@@ -159,7 +159,7 @@ $$
 
 and equating this with $-Cx-A^{\mathsf T}Sx$, whose terms all carry $x$, gives the Riccati equation. The terminal condition is $S(T)=E$, from $n(T)=Ex(T)$.
 
-The Riccati equation in this sense is the matrix generalisation of the classical scalar Riccati equation treated in the integrable systems of this Part: the scalar instance below, $dS/dt=S^2-1$, is exactly that equation with constant coefficients, and its constant solutions $S=\pm1$ are the two equilibria of the classical equation. What differs is where the equation comes from and what it describes. There the equation is the logarithmic derivative $y=\phi'/\phi$ of a second-order linear equation and is integrated by that substitution; here it is the flow of the optimal feedback, and the matrix equation is equivalent to the linear system of the maximum principle, so the linearisation is present in both but is exploited differently. The constant solution $S=1$ of the infinite-horizon problem with $C=D=B=1$, $A=0$ is the stabilising feedback, the equilibrium towards which the finite-horizon solution flows as the interval lengthens.
+The Riccati equation in this sense is the matrix generalisation of the classical scalar Riccati equation treated in the integrable systems of this Part: the scalar instance below, $dS/dt=S^2-1$, is exactly that equation with constant coefficients, and its constant solutions $S=\pm1$ are the two equilibria of the classical equation. What differs is where the equation comes from and what it describes. There the equation is the logarithmic derivative $y=\digamma_{\mathrm{map}}'/\digamma_{\mathrm{map}}$ of a second-order linear equation and is integrated by that substitution; here it is the flow of the optimal feedback, and the matrix equation is equivalent to the linear system of the maximum principle, so the linearisation is present in both but is exploited differently. The constant solution $S=1$ of the infinite-horizon problem with $C=D=B=1$, $A=0$ is the stabilising feedback, the equilibrium towards which the finite-horizon solution flows as the interval lengthens.
 
 ### The Scalar Regulator
 
@@ -197,7 +197,7 @@ When the running cost is $L=1$ the cost is the time itself, and the control Hami
 
 ### The Double Integrator
 
-Take the double integrator of the first section: $x=(x_1,x_2)$, $dx_{1}/dt=x_2$, $dx_{2}/dt=u$, $\Omega=[-1,1]$, $L=1$, $\varphi=0$, $x(T)=0$ with $T$ free and minimal, the target being the origin at rest. The control Hamiltonian is
+Take the double integrator of the first section: $x=(x_1,x_2)$, $dx_{1}/dt=x_2$, $dx_{2}/dt=u$, $\Omega=[-1,1]$, $L=1$, $\digamma_{\mathrm{map}}=0$, $x(T)=0$ with $T$ free and minimal, the target being the origin at rest. The control Hamiltonian is
 
 $$
 H = n_1x_2 + n_2u + 1 ,
@@ -228,10 +228,10 @@ The optimal control is $u^*=-\operatorname{sgn}\sigma$ before the switching curv
 **Definition.** For $(\zeta,\tau)\in X\times[t_0,T]$ let $\mathcal{\Omega}(\zeta,\tau)$ be the admissible controls on $[\tau,T]$ whose trajectory from $\zeta$ at time $\tau$ exists; the **value function** is
 
 $$
-V(\zeta,\tau) = \inf_{u\in\mathcal{\Omega}(\zeta,\tau)}\Bigl[\varphi\bigl(x(T)\bigr) + \int_{\tau}^{T}L\bigl(x,u,t\bigr)dt\Bigr] ,
+V(\zeta,\tau) = \inf_{u\in\mathcal{\Omega}(\zeta,\tau)}\Bigl[\digamma_{\mathrm{map}}\bigl(x(T)\bigr) + \int_{\tau}^{T}L\bigl(x,u,t\bigr)dt\Bigr] ,
 $$
 
-with $x(\tau)=\zeta$; the infimum is over the controls, and $V(\zeta,T)=\varphi(\zeta)$.
+with $x(\tau)=\zeta$; the infimum is over the controls, and $V(\zeta,T)=\digamma_{\mathrm{map}}(\zeta)$.
 
 **Theorem (Bellman's principle of optimality).** For $t_0\le\tau\le\tau'\le T$,
 
@@ -248,7 +248,7 @@ the infimum being over the controls on $[\tau,\tau']$ and $x$ the trajectory the
 **Theorem (Hamilton–Jacobi–Bellman).** Suppose $V$ is of class $C^1$ on $X\times(t_0,T)$. Then $V$ satisfies
 
 $$
-\boxed{\;\frac{\partial V}{\partial t} + \min_{u\in \Omega}\Bigl[L(\zeta,u,t) + \Bigl\langle \frac{\partial V}{\partial\zeta}, f(\zeta,u,t)\Bigr\rangle\Bigr] = 0 , \qquad V(\zeta,T)=\varphi(\zeta)\;}.
+\boxed{\;\frac{\partial V}{\partial t} + \min_{u\in \Omega}\Bigl[L(\zeta,u,t) + \Bigl\langle \frac{\partial V}{\partial\zeta}, f(\zeta,u,t)\Bigr\rangle\Bigr] = 0 , \qquad V(\zeta,T)=\digamma_{\mathrm{map}}(\zeta)\;}.
 $$
 
 *Proof.* Take $\tau'=\tau+\varepsilon$ in Bellman's principle, let the control be constant on the short interval, and expand to first order in $\varepsilon$; dividing by $\varepsilon$ and using that an optimal control achieves the minimum gives the equation.
@@ -261,23 +261,23 @@ $$
 
 along an optimal trajectory: substituting $n=\partial/\partial \zeta V$ into the minimised Hamiltonian identifies the Bellman minimiser with the maximum-principle minimiser. In the scalar regulator above the identity reads $n=\tanh(T-t)x=Sx$, the costate obtained from the Riccati equation, and $V=\tfrac12Sx^2$ satisfies $\partial/\partial t V+\tfrac12x^2-\tfrac12(\partial/\partial x V)^2=0$, which is the Bellman equation with the control eliminated: $\min_u[\tfrac12(x^2+u^2)+(\partial/\partial x V)u] = \tfrac12x^2-\tfrac12(\partial/\partial x V)^2$ at $u=-\partial/\partial x V$.
 
-**Theorem (verification).** Suppose $W\in C^1$ satisfies the Hamilton–Jacobi–Bellman equation with $W(\zeta,T)=\varphi(\zeta)$, and suppose that for each $(\zeta,t)$ the minimum in the equation is attained at $u=\kappa(\zeta,t)$ with $\kappa$ measurable. Then $W=V$ on $X\times[t_0,T]$, the closed-loop equation $dx/dt=f(x,\kappa(x,t),t)$ has trajectories that are admissible, and the corresponding control is optimal.
+**Theorem (verification).** Suppose $W\in C^1$ satisfies the Hamilton–Jacobi–Bellman equation with $W(\zeta,T)=\digamma_{\mathrm{map}}(\zeta)$, and suppose that for each $(\zeta,t)$ the minimum in the equation is attained at $u=\kappa(\zeta,t)$ with $\kappa$ measurable. Then $W=V$ on $X\times[t_0,T]$, the closed-loop equation $dx/dt=f(x,\kappa(x,t),t)$ has trajectories that are admissible, and the corresponding control is optimal.
 
-*Proof.* For any admissible control and its trajectory, the Bellman equation gives $\frac{d}{dt}W(x(t),t) = \partial/\partial t W+\partial/\partial x W\cdot f \le -L(x,u,t)$ with equality exactly at $u=\kappa(x,t)$; integrating from $t$ to $T$ and using $W(\cdot,T)=\varphi$ gives $W(x(t),t)\le J$ for every $u$, with equality for the closed-loop control.
+*Proof.* For any admissible control and its trajectory, the Bellman equation gives $\frac{d}{dt}W(x(t),t) = \partial/\partial t W+\partial/\partial x W\cdot f \le -L(x,u,t)$ with equality exactly at $u=\kappa(x,t)$; integrating from $t$ to $T$ and using $W(\cdot,T)=\digamma_{\mathrm{map}}$ gives $W(x(t),t)\le J$ for every $u$, with equality for the closed-loop control.
 
 The verification theorem is why dynamic programming proves **sufficiency**, whereas the maximum principle gives candidates. Its restriction is regularity: the value function of a control problem need not be differentiable, and the classical equation is then replaced by the equation read in the sense of **viscosity solutions**, the device that makes the comparison argument of the verification theorem work for a merely continuous value function. This is the point of contact with the nonsmooth analysis of this Part, and the classical statement above is the differentiable case.
 
 ### The Passage between the Two Routes
 
-The two routes are related by the **characteristic system** of the Bellman equation. The equation $\partial/\partial t V + H(\zeta,\kappa(\zeta,\partial/\partial \zeta V,t),\partial/\partial \zeta V,t)=0$ is a first-order partial differential equation whose characteristic equations, along the curves of steepest descent, are the state and costate equations of the maximum principle, with $n=\partial/\partial \zeta V$; the initial condition $V(\zeta,T)=\varphi(\zeta)$ produces the terminal condition $n(T)=\partial/\partial x\varphi(x(T))$ on the characteristics that arrive at $T$. The maximum principle is thus the characteristic method for the Bellman equation, and it is available precisely when the value function is not: its equations are ordinary, along a single trajectory, and they do not require the value function to exist as a differentiable function of the state. The Bellman equation, conversely, decides the global question the maximum principle leaves open, for a convex problem its solution certifying the optimum where the costate system supplies only candidates.
+The two routes are related by the **characteristic system** of the Bellman equation. The equation $\partial/\partial t V + H(\zeta,\kappa(\zeta,\partial/\partial \zeta V,t),\partial/\partial \zeta V,t)=0$ is a first-order partial differential equation whose characteristic equations, along the curves of steepest descent, are the state and costate equations of the maximum principle, with $n=\partial/\partial \zeta V$; the initial condition $V(\zeta,T)=\digamma_{\mathrm{map}}(\zeta)$ produces the terminal condition $n(T)=\partial/\partial x\digamma_{\mathrm{map}}(x(T))$ on the characteristics that arrive at $T$. The maximum principle is thus the characteristic method for the Bellman equation, and it is available precisely when the value function is not: its equations are ordinary, along a single trajectory, and they do not require the value function to exist as a differentiable function of the state. The Bellman equation, conversely, decides the global question the maximum principle leaves open, for a convex problem its solution certifying the optimum where the costate system supplies only candidates.
 
 ## Summary
 
-An optimal control problem fixes a control system: a state $x$ obeying $dx/dt=f(x,u,t)$, a control $u$ in a set $\Omega$, a running cost $L$ and a terminal cost $\varphi$, the cost being $J(u)=\varphi(x(T))+\int_{t_0}^{T}L\,dt$. It is the calculus of variations with the state equation as its constraint, and the multiplier of that constraint is the **costate** $n$. The **Pontryagin maximum principle** states that an optimal pair together with a costate satisfies the state equation $dx/dt=\partial/\partial n H$ and the costate equation $dn/dt=-\partial/\partial x H$ of the control Hamiltonian $H=\langle n,f\rangle+L$, that $u(t)$ minimises $u\mapsto H(x(t),u,n(t),t)$ over $\Omega$ at almost every time, and that the split boundary conditions are $x(t_0)=x_0$ together with $n(T)=\partial/\partial x\varphi(x(T))$ when the final state is free, with $H(T)=0$ added when the final time is free. The principle is the multiplier rule of the calculus of variations, the control condition requiring the needle variation rather than a smooth one; its Hamiltonian is constant along optimal trajectories of an autonomous problem, and zero when the final time is free.
+An optimal control problem fixes a control system: a state $x$ obeying $dx/dt=f(x,u,t)$, a control $u$ in a set $\Omega$, a running cost $L$ and a terminal cost $\digamma_{\mathrm{map}}$, the cost being $J(u)=\digamma_{\mathrm{map}}(x(T))+\int_{t_0}^{T}L\,dt$. It is the calculus of variations with the state equation as its constraint, and the multiplier of that constraint is the **costate** $n$. The **Pontryagin maximum principle** states that an optimal pair together with a costate satisfies the state equation $dx/dt=\partial/\partial n H$ and the costate equation $dn/dt=-\partial/\partial x H$ of the control Hamiltonian $H=\langle n,f\rangle+L$, that $u(t)$ minimises $u\mapsto H(x(t),u,n(t),t)$ over $\Omega$ at almost every time, and that the split boundary conditions are $x(t_0)=x_0$ together with $n(T)=\partial/\partial x\digamma_{\mathrm{map}}(x(T))$ when the final state is free, with $H(T)=0$ added when the final time is free. The principle is the multiplier rule of the calculus of variations, the control condition requiring the needle variation rather than a smooth one; its Hamiltonian is constant along optimal trajectories of an autonomous problem, and zero when the final time is free.
 
 The **linear-quadratic regulator** is the case of a linear system and a quadratic cost, and it is solved by a linear feedback $u=-D^{-1}B^{\mathsf T}Sx$ whose matrix $S$ solves the matrix Riccati equation $dS/dt=-C-A^{\mathsf T}S-SA+SBD^{-1}B^{\mathsf T}S$ with $S(T)=E$; in the scalar instance $dx/dt=u$, $J=\tfrac12\int_0^T(x^2+u^2)dt$, the solution is $S=\tanh(T-t)$, the feedback is $u=-\tanh(T-t)x$, the closed loop is $x=x_0\cosh(T-t)/\cosh T$, and the Riccati solution exhibits the finite escape that separates the finite- from the infinite-horizon problem. The **time-optimal** problem with a bounded control has a Hamiltonian linear in the control, so the optimal control is **bang-bang**: for the double integrator it takes the values $\pm1$ with at most one switch, on the two parabolic arcs $\sigma=x_1+\tfrac12x_2\lvert x_2\rvert=0$, and the optimal times from $(1,0)$, $(2,0)$ and $(0,1)$ are $2$, $2\sqrt2$ and $1+\sqrt2$.
 
-**Dynamic programming** introduces the value function $V$, the least cost from a state at a time, and derives from Bellman's principle the **Hamilton–Jacobi–Bellman equation** $\partial/\partial t V+\min_u[L+\langle \partial/\partial x V,f\rangle]=0$ with $V(\cdot,T)=\varphi$. A classical solution of that equation, together with a measurable minimiser, is optimal, so the method certifies **sufficiency** where the maximum principle produces candidates; the costate and the value function are related by $n=\partial/\partial x V$ along an optimal trajectory, and the maximum principle is the characteristic system of the Bellman equation. Convexity of the problem makes the maximum principle sufficient as well, and the value function's possible failure to be differentiable is the point of contact with the nonsmooth analysis of this Part.
+**Dynamic programming** introduces the value function $V$, the least cost from a state at a time, and derives from Bellman's principle the **Hamilton–Jacobi–Bellman equation** $\partial/\partial t V+\min_u[L+\langle \partial/\partial x V,f\rangle]=0$ with $V(\cdot,T)=\digamma_{\mathrm{map}}$. A classical solution of that equation, together with a measurable minimiser, is optimal, so the method certifies **sufficiency** where the maximum principle produces candidates; the costate and the value function are related by $n=\partial/\partial x V$ along an optimal trajectory, and the maximum principle is the characteristic system of the Bellman equation. Convexity of the problem makes the maximum principle sufficient as well, and the value function's possible failure to be differentiable is the point of contact with the nonsmooth analysis of this Part.
 
 ## Summary of Notation
 
@@ -285,13 +285,13 @@ The **linear-quadratic regulator** is the case of a linear system and a quadrati
 |---|---|
 | $x$, $u$, $\Omega$ | State, control, control set |
 | $f(x,u,t)$ | Dynamics, $dx/dt=f$ |
-| $L$, $\varphi$, $J$ | Running cost, terminal cost, cost functional |
+| $L$, $\digamma_{\mathrm{map}}$, $J$ | Running cost, terminal cost, cost functional |
 | $t_0$, $T$ | Initial and final times |
 | $H=\langle n,f\rangle+L$ | Control Hamiltonian |
 | $n$ | Costate, the multiplier of the state equation |
 | $dx/dt=\partial/\partial n H$, $dn/dt=-\partial/\partial x H$ | State and costate equations |
 | $u$ minimises $H$ | Pointwise condition of the maximum principle |
-| $n(T)=\partial/\partial x\varphi(x(T))$ | Transversality for a free final state |
+| $n(T)=\partial/\partial x\digamma_{\mathrm{map}}(x(T))$ | Transversality for a free final state |
 | $H(T)=0$ | Additional condition for a free final time |
 | $A$, $B$, $C$, $D$, $E$ | System and cost matrices of the linear-quadratic problem |
 | $S$ | Riccati matrix, $n=Sx$ |

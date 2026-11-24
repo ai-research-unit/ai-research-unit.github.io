@@ -164,7 +164,7 @@ The three imaginary units $\vec e_x, \vec e_y, \vec e_z$ lie in $\mathbb{B}_{\Ph
 
 ## The Image in the Two Halves
 
-Under the idempotent-decomposition isomorphism $\varphi : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, an anti-Hermitian element $\tilde{Q} = j r_0 e_t + \vec q$ has components
+Under the idempotent-decomposition isomorphism $\digamma_{\mathrm{map}} : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, an anti-Hermitian element $\tilde{Q} = j r_0 e_t + \vec q$ has components
 
 $$
 \tilde{Q}_+ = r_0 + \vec q, \qquad \tilde{Q}_- = -r_0 + \vec q = -(\tilde{Q}_+)^{\natural}.
@@ -173,7 +173,7 @@ $$
 The image of $\mathbb{B}_{\Phi}$ is therefore the set of **anti-conjugate pairs**
 
 $$
-\varphi(\mathbb{B}_{\Phi}) = \left\{ (h, -h^{\natural}) : h \in \mathbb{H} \right\} \cong \mathbb{H},
+\digamma_{\mathrm{map}}(\mathbb{B}_{\Phi}) = \left\{ (h, -h^{\natural}) : h \in \mathbb{H} \right\} \cong \mathbb{H},
 $$
 
 a real four-dimensional subspace of $\mathbb{H} \oplus \mathbb{H}$. Together with the image $(h, h^{\natural})$ of $\mathbb{B}_{\Psi}$ it exhibits the Hermitian decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ as the decomposition of a pair $(h_1, h_2)$ into its conjugate-symmetric and conjugate-antisymmetric parts.
@@ -214,7 +214,7 @@ The anti-Hermitian subspace is the negative eigenspace of the involution ${}^{*}
 
 ## Summary
 
-The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ is the fixed space of anti-Hermitian conjugation, the set of elements $\tilde{Q} = j r_0 e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with purely split-imaginary scalar part and real vector part; it is a real vector space of dimension $4$ with basis $je_t, \vec e_x, \vec e_y, \vec e_z$. It is **not** a subalgebra — $(je_t)^2 = e_t$ leaves it — but the symmetrized product of two of its elements is Hermitian, the commutator is $2\,\vec q_1\times\vec q_2$, a pure real quaternion, and under that bracket $\mathbb{B}_{\Phi}$ is a **Lie subalgebra** with bracket image the three-dimensional $\mathrm{SO}(3)$. Multiplication by $j$ is a linear isomorphism $\mathbb{B}_{\Phi} \to \mathbb{B}_{\Psi}$, and the square of an anti-Hermitian element is Hermitian. The split-biquaternion norm restricts to the positive definite form $N = r_0^2 + q_x^2 + q_y^2 + q_z^2$ of inertia $(4,0)$, so $\mathbb{B}_{\Phi}$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of inertia $(3,1)$ and isotropic cone $r_0^2 = q_x^2 + q_y^2 + q_z^2$, whose nonzero points are all units. The roots of $-1$ in the subspace are the unit pure real quaternions, a two-sphere $S^2$, the same roots as in the quaternion subspace. The image under $\varphi$ is the set of anti-conjugate pairs $(h, -h^{\natural})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, anti-Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations negate the vector and scalar parts respectively, and Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{B}_{\Psi}$.
+The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ is the fixed space of anti-Hermitian conjugation, the set of elements $\tilde{Q} = j r_0 e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with purely split-imaginary scalar part and real vector part; it is a real vector space of dimension $4$ with basis $je_t, \vec e_x, \vec e_y, \vec e_z$. It is **not** a subalgebra — $(je_t)^2 = e_t$ leaves it — but the symmetrized product of two of its elements is Hermitian, the commutator is $2\,\vec q_1\times\vec q_2$, a pure real quaternion, and under that bracket $\mathbb{B}_{\Phi}$ is a **Lie subalgebra** with bracket image the three-dimensional $\mathrm{SO}(3)$. Multiplication by $j$ is a linear isomorphism $\mathbb{B}_{\Phi} \to \mathbb{B}_{\Psi}$, and the square of an anti-Hermitian element is Hermitian. The split-biquaternion norm restricts to the positive definite form $N = r_0^2 + q_x^2 + q_y^2 + q_z^2$ of inertia $(4,0)$, so $\mathbb{B}_{\Phi}$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of inertia $(3,1)$ and isotropic cone $r_0^2 = q_x^2 + q_y^2 + q_z^2$, whose nonzero points are all units. The roots of $-1$ in the subspace are the unit pure real quaternions, a two-sphere $S^2$, the same roots as in the quaternion subspace. The image under $\digamma_{\mathrm{map}}$ is the set of anti-conjugate pairs $(h, -h^{\natural})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, anti-Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations negate the vector and scalar parts respectively, and Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{B}_{\Psi}$.
 
 ## Summary of Notation
 

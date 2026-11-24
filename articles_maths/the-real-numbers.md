@@ -105,7 +105,7 @@ and the set of irrationals is uncountable, of the same cardinality; in particula
 
 **Proof sketch.** If $F$ embeds in $\mathbb{R}$ it is Archimedean, because $\mathbb{R}$ is. Conversely, if $F$ is Archimedean then the map
 
-$$ \varphi : F \to \mathbb{R}, \qquad \varphi(a) = \sup\{q \in \mathbb{Q} : q < a\},
+$$ \digamma_{\mathrm{map}} : F \to \mathbb{R}, \qquad \digamma_{\mathrm{map}}(a) = \sup\{q \in \mathbb{Q} : q < a\},
 $$
 
 is well defined because $\{q \in \mathbb{Q} : q < a\}$ is nonempty and bounded above in $F$, hence bounded by a real after the identification of the rationals; it is order-preserving by construction, additive because the rationals below $a + b$ are exactly the sums of rationals below $a$ and below $b$ up to arbitrarily small error, and multiplicative by the analogous squeezing argument using the Archimedean property; it fixes $\mathbb{Q}$ and is therefore the unique such embedding.
@@ -203,7 +203,7 @@ In the order-theoretic terms of Cantor's theorems, $\mathbb{Q}$ is the unique co
 | $\overline{\mathbb{Q}} \cap \mathbb{R}$ | Real algebraic numbers, real closure of $\mathbb{Q}$ |
 | $\operatorname{tr.deg}_{\mathbb{Q}} \mathbb{R}$ | Transcendence degree, $2^{\aleph_0}$ |
 | $\mathbb{Q}_p$, $\mathbb{C}_p$ | Non-Archimedean completions of $\mathbb{Q}$ |
-| $\varphi : F \to \mathbb{R}$ | Archimedean embedding $a \mapsto \sup\{q \in \mathbb{Q} : q < a\}$ |
+| $\digamma_{\mathrm{map}} : F \to \mathbb{R}$ | Archimedean embedding $a \mapsto \sup\{q \in \mathbb{Q} : q < a\}$ |
 | $M$ | Relative algebraic closure of a subfield $F \subseteq \mathbb{R}$ |
 
 ## Further Reading

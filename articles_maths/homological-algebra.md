@@ -159,9 +159,9 @@ an **injective resolution** if every $I^n$ is injective.
 
 The reason resolutions are computable is that they are unique up to homotopy, so any two choices give the same answer.
 
-**Theorem (comparison).** Let $P_\bullet\xrightarrow{\varepsilon}M$ be a projective resolution and $Q_\bullet\xrightarrow{\eta}N$ an exact sequence with $Q_n$ projective. Every morphism $u:M\to N$ lifts to a morphism of complexes $\varphi:P_\bullet\to Q_\bullet$ with $\eta\varphi_0=u\varepsilon$, and any two such lifts are chain homotopic.
+**Theorem (comparison).** Let $P_\bullet\xrightarrow{\varepsilon}M$ be a projective resolution and $Q_\bullet\xrightarrow{\eta}N$ an exact sequence with $Q_n$ projective. Every morphism $u:M\to N$ lifts to a morphism of complexes $\digamma_{\mathrm{map}}:P_\bullet\to Q_\bullet$ with $\eta\digamma_{\mathrm{map},0}=u\varepsilon$, and any two such lifts are chain homotopic.
 
-*Proof.* Since $Q_0\to N$ is surjective and $P_0$ is projective, the map $u\varepsilon:P_0\to N$ lifts to $\varphi_0:P_0\to Q_0$. Suppose $\varphi_{n-1}$ has been constructed. The composite $d^Q_{n-1}\varphi_{n-1}:P_n\to Q_{n-1}$ has image in $\ker(Q_{n-1}\to Q_{n-2})=\operatorname{im}(Q_n\to Q_{n-1})$ by exactness and the commuting relation already established; since $P_n$ is projective, it lifts along the surjection $Q_n\to\operatorname{im}(Q_n\to Q_{n-1})$ to $\varphi_n$. This produces the chain map. For the uniqueness up to homotopy, given two lifts $\varphi,\psi$, the differences $\varphi_n-\psi_n$ satisfy $(\varphi_0-\psi_0)\varepsilon=0$, so $\varphi_0-\psi_0$ lands in $\operatorname{im}(Q_1\to Q_0)$; the projectivity of $P_0$ gives $s_0:P_0\to Q_1$ with $d^Q_1s_0=\varphi_0-\psi_0$. Then $\varphi_1-\psi_1-s_0d^P_1$ has image killed by $d^Q_1$, hence lands in $\operatorname{im}(Q_2\to Q_1)$, and projectivity of $P_1$ gives $s_1$; the induction produces the homotopy.
+*Proof.* Since $Q_0\to N$ is surjective and $P_0$ is projective, the map $u\varepsilon:P_0\to N$ lifts to $\digamma_{\mathrm{map},0}:P_0\to Q_0$. Suppose $\digamma_{\mathrm{map},n-1}$ has been constructed. The composite $d^Q_{n-1}\digamma_{\mathrm{map},n-1}:P_n\to Q_{n-1}$ has image in $\ker(Q_{n-1}\to Q_{n-2})=\operatorname{im}(Q_n\to Q_{n-1})$ by exactness and the commuting relation already established; since $P_n$ is projective, it lifts along the surjection $Q_n\to\operatorname{im}(Q_n\to Q_{n-1})$ to $\digamma_{\mathrm{map},n}$. This produces the chain map. For the uniqueness up to homotopy, given two lifts $\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}$, the differences $\digamma_{\mathrm{map},n}-Ξ_{\mathrm{wfn},n}$ satisfy $(\digamma_{\mathrm{map},0}-Ξ_{\mathrm{wfn},0})\varepsilon=0$, so $\digamma_{\mathrm{map},0}-Ξ_{\mathrm{wfn},0}$ lands in $\operatorname{im}(Q_1\to Q_0)$; the projectivity of $P_0$ gives $s_0:P_0\to Q_1$ with $d^Q_1s_0=\digamma_{\mathrm{map},0}-Ξ_{\mathrm{wfn},0}$. Then $\digamma_{\mathrm{map},1}-Ξ_{\mathrm{wfn},1}-s_0d^P_1$ has image killed by $d^Q_1$, hence lands in $\operatorname{im}(Q_2\to Q_1)$, and projectivity of $P_1$ gives $s_1$; the induction produces the homotopy.
 
 **Corollary.** Any two projective resolutions of $M$ are homotopy equivalent, and hence their homologies are isomorphic; the same holds for injective resolutions by the dual argument.
 
@@ -259,7 +259,7 @@ Every result is algebraic. The applications to sheaf cohomology and to algebraic
 | $Z_n=\ker d_n$, $B_n=\operatorname{im}d_{n+1}$ | cycles and boundaries |
 | $H_n(C)=Z_n/B_n$ | homology; $H^n$ for cohomology |
 | $f_\bullet:C_\bullet\to D_\bullet$ | morphism of complexes |
-| $\varphi\simeq\psi$, $s$ | chain homotopy and the homotopy $s_n:C_n\to D_{n+1}$ |
+| $\digamma_{\mathrm{map}}\simeqΞ_{\mathrm{wfn}}$, $s$ | chain homotopy and the homotopy $s_n:C_n\to D_{n+1}$ |
 | $\operatorname{Cone}(f)$ | mapping cone of a chain map |
 | $P_\bullet\to M$, $M\to I^\bullet$ | projective and injective resolutions |
 | $\varepsilon$, $\eta$ | augmentation of a resolution |

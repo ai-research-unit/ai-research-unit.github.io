@@ -205,7 +205,7 @@ Uniform integrability is thus the exact replacement for a dominating function: i
 
 Let $X$ be a normed space over $\mathbb{K}$ with dual $X'$, the Banach space of bounded linear functionals. The notation is that of *Normed and Banach Spaces* and *Duality Theory*.
 
-**Definition.** A sequence $(x_n)$ in $X$ **converges weakly** to $x \in X$, written $x_n \rightharpoonup x$, if $\varphi(x_n) \to \varphi(x)$ for every $\varphi \in X'$. The **weak topology** $\sigma(X, X')$ is the coarsest topology making every $\varphi \in X'$ continuous; it is locally convex and Hausdorff, and weak convergence is convergence in it.
+**Definition.** A sequence $(x_n)$ in $X$ **converges weakly** to $x \in X$, written $x_n \rightharpoonup x$, if $\digamma_{\mathrm{map}}(x_n) \to \digamma_{\mathrm{map}}(x)$ for every $\digamma_{\mathrm{map}} \in X'$. The **weak topology** $\sigma(X, X')$ is the coarsest topology making every $\digamma_{\mathrm{map}} \in X'$ continuous; it is locally convex and Hausdorff, and weak convergence is convergence in it.
 
 **Theorem (properties of weak convergence).**
 
@@ -217,25 +217,25 @@ Let $X$ be a normed space over $\mathbb{K}$ with dual $X'$, the Banach space of 
 
 **(d)** (Mazur) Every norm-closed convex subset of $X$ is weakly closed, and the weak closure of a convex set is its norm closure; equivalently, every weak limit is a norm limit of convex combinations.
 
-**Proof sketch.** (a) A weakly convergent sequence is pointwise bounded on $X'$, hence bounded by the uniform boundedness principle, a consequence of Baire's theorem for the complete space $X'$; in a Hilbert space it follows alternatively from the uniform boundedness principle applied to the functionals $x \mapsto \langle x_n, x \rangle$. Lower semicontinuity of the norm is the estimate $\|\varphi(x)\| \leq \liminf \|\varphi(x_n)\| \leq \|\varphi\| \liminf \|x_n\|$ followed by the Hahn–Banach theorem. (c) Expanding $\|x_n - x\|^2 = \|x_n\|^2 - 2\operatorname{Re}\langle x_n, x\rangle + \|x\|^2$ in a Hilbert space. (d) The second dual statement is the Hahn–Banach separation theorem, from *Duality Theory*.
+**Proof sketch.** (a) A weakly convergent sequence is pointwise bounded on $X'$, hence bounded by the uniform boundedness principle, a consequence of Baire's theorem for the complete space $X'$; in a Hilbert space it follows alternatively from the uniform boundedness principle applied to the functionals $x \mapsto \langle x_n, x \rangle$. Lower semicontinuity of the norm is the estimate $\|\digamma_{\mathrm{map}}(x)\| \leq \liminf \|\digamma_{\mathrm{map}}(x_n)\| \leq \|\digamma_{\mathrm{map}}\| \liminf \|x_n\|$ followed by the Hahn–Banach theorem. (c) Expanding $\|x_n - x\|^2 = \|x_n\|^2 - 2\operatorname{Re}\langle x_n, x\rangle + \|x\|^2$ in a Hilbert space. (d) The second dual statement is the Hahn–Banach separation theorem, from *Duality Theory*.
 
 ### Weak-$\ast$ Convergence
 
-**Definition.** Let $X$ be a normed space and $X'$ its dual. A sequence $(\varphi_n) \subseteq X'$ **converges weak-$\ast$** to $\varphi \in X'$, written $\varphi_n \xrightarrow{w^*} \varphi$, if $\varphi_n(x) \to \varphi(x)$ for every $x \in X$. The weak-$\ast$ topology $\sigma(X', X)$ is the coarsest making the evaluations $x : X' \to \mathbb{K}$ continuous.
+**Definition.** Let $X$ be a normed space and $X'$ its dual. A sequence $(\digamma_{\mathrm{map},n}) \subseteq X'$ **converges weak-$\ast$** to $\digamma_{\mathrm{map}} \in X'$, written $\digamma_{\mathrm{map},n} \xrightarrow{w^*} \digamma_{\mathrm{map}}$, if $\digamma_{\mathrm{map},n}(x) \to \digamma_{\mathrm{map}}(x)$ for every $x \in X$. The weak-$\ast$ topology $\sigma(X', X)$ is the coarsest making the evaluations $x : X' \to \mathbb{K}$ continuous.
 
 **Theorem (Banach–Alaoglu).** The closed unit ball of $X'$ is compact in the weak-$\ast$ topology. If $X$ is separable, the weak-$\ast$ topology on the ball is metrisable, so the ball is sequentially compact.
 
-Weak-$\ast$ convergence is weaker than weak convergence on $X'$; the two coincide when $X$ is reflexive. The sequence $e_n$ in $\ell^1 = (c_0)'$ satisfies $e_n(x) = x_n \to 0$ for every $x \in c_0$, so $e_n \xrightarrow{w^*} 0$, while $e_n$ has no weak limit in $\ell^1$: the functional $\varphi(y) = \sum_n y_n$ in $(\ell^1)' = \ell^\infty$ has $\varphi(e_n) = 1$ for every $n$, so the only possible weak limit, forced to be $0$ by testing against the coordinate functionals, is not one. Banach–Alaoglu is the compactness theorem that produces minimisers in the variational arguments , and it is the source of the compactness in the duality theory.
+Weak-$\ast$ convergence is weaker than weak convergence on $X'$; the two coincide when $X$ is reflexive. The sequence $e_n$ in $\ell^1 = (c_0)'$ satisfies $e_n(x) = x_n \to 0$ for every $x \in c_0$, so $e_n \xrightarrow{w^*} 0$, while $e_n$ has no weak limit in $\ell^1$: the functional $\digamma_{\mathrm{map}}(y) = \sum_n y_n$ in $(\ell^1)' = \ell^\infty$ has $\digamma_{\mathrm{map}}(e_n) = 1$ for every $n$, so the only possible weak limit, forced to be $0$ by testing against the coordinate functionals, is not one. Banach–Alaoglu is the compactness theorem that produces minimisers in the variational arguments , and it is the source of the compactness in the duality theory.
 
 ### Convergence of Measures
 
 Let $X$ be a locally compact Hausdorff space and let $M(X)$ be the space of finite signed Radon measures, identified by the Riesz representation theorem with the dual of $C_0(X)$, the continuous functions vanishing at infinity, in the norm of total variation.
 
-**Definition.** A sequence $(\mu_n) \subseteq M(X)$ **converges weakly** to $\mu$ if $\int \varphi \, d\mu_n \to \int \varphi \, d\mu$ for every $\varphi \in C_0(X)$; it **converges vaguely** if this holds for every $\varphi \in C_c(X)$, the continuous functions of compact support. On a compact $X$ the two agree.
+**Definition.** A sequence $(\mu_n) \subseteq M(X)$ **converges weakly** to $\mu$ if $\int \digamma_{\mathrm{map}} \, d\mu_n \to \int \digamma_{\mathrm{map}} \, d\mu$ for every $\digamma_{\mathrm{map}} \in C_0(X)$; it **converges vaguely** if this holds for every $\digamma_{\mathrm{map}} \in C_c(X)$, the continuous functions of compact support. On a compact $X$ the two agree.
 
-**Theorem (portmanteau).** For finite positive measures on a metric space $X$, weak convergence of $\mu_n$ to $\mu$ is equivalent to each of: $\limsup_n \mu_n(F) \leq \mu(F)$ for every closed $F$; $\liminf_n \mu_n(\Omega) \geq \mu(\Omega)$ for every open $\Omega$; $\mu_n(A) \to \mu(A)$ for every Borel $A$ with $\mu(\partial A) = 0$; and $\int \varphi \, d\mu_n \to \int \varphi \, d\mu$ for every bounded uniformly continuous $\varphi$.
+**Theorem (portmanteau).** For finite positive measures on a metric space $X$, weak convergence of $\mu_n$ to $\mu$ is equivalent to each of: $\limsup_n \mu_n(F) \leq \mu(F)$ for every closed $F$; $\liminf_n \mu_n(\Omega) \geq \mu(\Omega)$ for every open $\Omega$; $\mu_n(A) \to \mu(A)$ for every Borel $A$ with $\mu(\partial A) = 0$; and $\int \digamma_{\mathrm{map}} \, d\mu_n \to \int \digamma_{\mathrm{map}} \, d\mu$ for every bounded uniformly continuous $\digamma_{\mathrm{map}}$.
 
-**Example (approximation of the Dirac measure).** On $\mathbb{R}$ let $\mu_n$ be the measure with density $n\,\mathbf{1}_{[0,1/n]}$ with respect to Lebesgue measure. Then $\int \varphi \, d\mu_n \to \varphi(0)$ for every $\varphi \in C_c(\mathbb{R})$, so $\mu_n$ converges vaguely, and weakly, to the Dirac measure $\delta_0$. The sequence of densities converges to $0$ a.e.; the convergence of the measures is a different statement from the a.e. convergence of the densities, and the distinction is the one between the mode of the previous sections and the mode of this one.
+**Example (approximation of the Dirac measure).** On $\mathbb{R}$ let $\mu_n$ be the measure with density $n\,\mathbf{1}_{[0,1/n]}$ with respect to Lebesgue measure. Then $\int \digamma_{\mathrm{map}} \, d\mu_n \to \digamma_{\mathrm{map}}(0)$ for every $\digamma_{\mathrm{map}} \in C_c(\mathbb{R})$, so $\mu_n$ converges vaguely, and weakly, to the Dirac measure $\delta_0$. The sequence of densities converges to $0$ a.e.; the convergence of the measures is a different statement from the a.e. convergence of the densities, and the distinction is the one between the mode of the previous sections and the mode of this one.
 
 These definitions are the ones used for the convergence of measures, and for the convergence of the invariant measures in the ergodic theory of the Part.
 
@@ -294,9 +294,9 @@ The modes fixed by this article, with their notation, are the following.
 | Almost uniform | $f_n \rightrightarrows f$ off $E$, $\mu(E) < \epsilon$ | Egorov's conclusion |
 | In measure | $f_n \xrightarrow{\mu} f$ | $\mu(\{\|f_n - f\| > \epsilon\}) \to 0$ |
 | In $L^{n}$ | $f_n \xrightarrow{L^{n} }$ | $\|f_n - f\|_p \to 0$ |
-| Weak | $f_n \rightharpoonup f$ | $\varphi(f_n) \to \varphi(f)$ for all $\varphi \in X'$ |
+| Weak | $f_n \rightharpoonup f$ | $\digamma_{\mathrm{map}}(f_n) \to \digamma_{\mathrm{map}}(f)$ for all $\digamma_{\mathrm{map}} \in X'$ |
 | Weak-$\ast$ | $f_n \xrightarrow{w^*} f$ | $f_n(x) \to f(x)$ for all $x \in X$, the $f_n$ lying in $X'$ |
-| Weakly (of measures) | $\mu_n \to \mu$ | $\int \varphi \, d\mu_n \to \int \varphi \, d\mu$, $\varphi \in C_0(X)$ |
+| Weakly (of measures) | $\mu_n \to \mu$ | $\int \digamma_{\mathrm{map}} \, d\mu_n \to \int \digamma_{\mathrm{map}} \, d\mu$, $\digamma_{\mathrm{map}} \in C_0(X)$ |
 
 The implication scheme is the following; every arrow is an implication, and every omitted arrow is false in general.
 
@@ -337,8 +337,8 @@ Finally, each mode is the hypothesis of an interchange theorem: the monotone, Fa
 | uniform integrability | $\lim_{c \to \infty} \sup_f \int_{\{|f| > c\}} \lvert f \rvert \, d\mu = 0$ |
 | $X'$ | Dual space of a normed space |
 | $x_n \rightharpoonup x$, $\sigma(X, X')$ | Weak convergence and weak topology |
-| $\varphi_n \xrightarrow{w^*} \varphi$, $\sigma(X', X)$ | Weak-$\ast$ convergence and weak-$\ast$ topology |
-| $\mu_n \to \mu$ | Weak convergence of measures, $\int \varphi \, d\mu_n \to \int \varphi \, d\mu$ |
+| $\digamma_{\mathrm{map},n} \xrightarrow{w^*} \digamma_{\mathrm{map}}$, $\sigma(X', X)$ | Weak-$\ast$ convergence and weak-$\ast$ topology |
+| $\mu_n \to \mu$ | Weak convergence of measures, $\int \digamma_{\mathrm{map}} \, d\mu_n \to \int \digamma_{\mathrm{map}} \, d\mu$ |
 | $M(X)$, $C_0(X)$, $C_c(X)$ | Finite Radon measures, functions vanishing at infinity, compact support |
 | $\mathbf{1}_A$ | Indicator of a set |
 | $L^{n}(\mu)$ | Lebesgue space |

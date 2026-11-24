@@ -286,18 +286,18 @@ The convolution theorem for the quaternion Fourier transform is the same as for 
 
 ### Approximate Identities
 
-A sequence $(\phi_n)$ in $L^1(\mathbb{H})$ is an **approximate identity** if
+A sequence $(\digamma_{\mathrm{map},n})$ in $L^1(\mathbb{H})$ is an **approximate identity** if
 
 $$
-\int_{\mathbb{H}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{|\tilde q| > \delta} |\phi_n(\tilde q)| \, dq \to 0
+\int_{\mathbb{H}} \digamma_{\mathrm{map},n} = 1, \qquad \sup_n \|\digamma_{\mathrm{map},n}\|_1 < \infty, \qquad \int_{|\tilde q| > \delta} |\digamma_{\mathrm{map},n}(\tilde q)| \, dq \to 0
 $$
 
 for every $\delta > 0$.
 
-**Theorem.** If $(\phi_n)$ is an approximate identity and $f \in L^{n}(\mathbb{H})$ for $1 \leq p < \infty$, then
+**Theorem.** If $(\digamma_{\mathrm{map},n})$ is an approximate identity and $f \in L^{n}(\mathbb{H})$ for $1 \leq p < \infty$, then
 
 $$
-\|f * \phi_n - f\|_p \to 0.
+\|f * \digamma_{\mathrm{map},n} - f\|_p \to 0.
 $$
 
 This is the same as in the real case, because the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$.
@@ -310,22 +310,22 @@ A **tempered distribution** on $\mathbb{H}$ is a continuous linear functional on
 
 ### Operations on Distributions
 
-**Differentiation.** For $T \in \mathcal{S}'(\mathbb{H})$ and $\phi \in \mathcal{S}(\mathbb{H})$,
+**Differentiation.** For $T \in \mathcal{S}'(\mathbb{H})$ and $\digamma_{\mathrm{map}} \in \mathcal{S}(\mathbb{H})$,
 
 $$
-\langle \partial/\partial q_\mu T, \phi \rangle = -\langle T, \partial/\partial q_\mu \phi \rangle, \qquad \mu\in\{t,x,y,z\}.
+\langle \partial/\partial q_\mu T, \digamma_{\mathrm{map}} \rangle = -\langle T, \partial/\partial q_\mu \digamma_{\mathrm{map}} \rangle, \qquad \mu\in\{t,x,y,z\}.
 $$
 
 **Multiplication by a function.** For $f \in C^\infty(\mathbb{H})$ with polynomial growth and $T \in \mathcal{S}'(\mathbb{H})$,
 
 $$
-\langle f T, \phi \rangle = \langle T, f \phi \rangle.
+\langle f T, \digamma_{\mathrm{map}} \rangle = \langle T, f \digamma_{\mathrm{map}} \rangle.
 $$
 
-**Quaternion Fourier transform.** For $T \in \mathcal{S}'(\mathbb{H})$ and $\phi \in \mathcal{S}(\mathbb{H})$,
+**Quaternion Fourier transform.** For $T \in \mathcal{S}'(\mathbb{H})$ and $\digamma_{\mathrm{map}} \in \mathcal{S}(\mathbb{H})$,
 
 $$
-\langle \hat{T}, \phi \rangle = \langle T, \hat{\phi} \rangle.
+\langle \hat{T}, \digamma_{\mathrm{map}} \rangle = \langle T, \hat{\digamma_{\mathrm{map}}} \rangle.
 $$
 
 The quaternion Fourier transform is a bijection $\mathcal{S}'(\mathbb{H}) \to \mathcal{S}'(\mathbb{H})$.
@@ -335,7 +335,7 @@ The quaternion Fourier transform is a bijection $\mathcal{S}'(\mathbb{H}) \to \m
 The **delta distribution** $\delta$ is the tempered distribution
 
 $$
-\langle \delta, \phi \rangle = \phi(0).
+\langle \delta, \digamma_{\mathrm{map}} \rangle = \digamma_{\mathrm{map}}(0).
 $$
 
 Its quaternion Fourier transform is the constant function $1$, and the quaternion Fourier transform of $1$ is $\delta$. The delta is the identity for convolution: $\delta * T = T$ for every tempered distribution $T$.

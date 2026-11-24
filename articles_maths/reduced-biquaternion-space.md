@@ -101,14 +101,14 @@ so the product is carried by two independent copies of the complex multiplicatio
 **Theorem (the component map).** The map
 
 $$
-\varphi:\mathbb{B}_{\mathrm{red}}\longrightarrow\mathbb{C}\oplus\mathbb{C},\qquad
-\varphi(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},\;Q_{\blacktriangle}-Q_{\blacktriangledown}),
+\digamma_{\mathrm{map}}:\mathbb{B}_{\mathrm{red}}\longrightarrow\mathbb{C}\oplus\mathbb{C},\qquad
+\digamma_{\mathrm{map}}(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},\;Q_{\blacktriangle}-Q_{\blacktriangledown}),
 $$
 
 is an isomorphism of $\mathbb{R}$-algebras and of $\mathbb{C}$-algebras, and its inverse is
-$\varphi^{-1}(u,v)=\tfrac12(u+v)+\tfrac12(u-v)j$.
+$\digamma_{\mathrm{map}}^{-1}(u,v)=\tfrac12(u+v)+\tfrac12(u-v)j$.
 
-*Proof.* The map is $\mathbb{C}$-linear and bijective, since $Q_{\blacktriangle}=\tfrac12(u+v)$ and $Q_{\blacktriangledown}=\tfrac12(u-v)$; and it is multiplicative by the componentwise product displayed in the previous section, $\varphi(\breve Q_{1}\breve Q_{2})=\varphi(\breve Q_{1})\varphi(\breve Q_{2})$. The identity $1$ maps to $(1,1)$. Hence it is an isomorphism.
+*Proof.* The map is $\mathbb{C}$-linear and bijective, since $Q_{\blacktriangle}=\tfrac12(u+v)$ and $Q_{\blacktriangledown}=\tfrac12(u-v)$; and it is multiplicative by the componentwise product displayed in the previous section, $\digamma_{\mathrm{map}}(\breve Q_{1}\breve Q_{2})=\digamma_{\mathrm{map}}(\breve Q_{1})\digamma_{\mathrm{map}}(\breve Q_{2})$. The identity $1$ maps to $(1,1)$. Hence it is an isomorphism.
 
 **Corollary (the algebra is a direct product of two fields).** The reduced biquaternion algebra is the direct product of the fields $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$,
 
@@ -128,7 +128,7 @@ $$
 
 An element $\breve Q$ is invertible exactly when both idempotent coordinates are nonzero, $Q_{+}\neq0$ and $Q_{-}\neq0$; otherwise it is a zero divisor. The algebra is therefore not a field and not a division algebra, and the set of zero divisors is the union of the two idempotent lines with the origin removed.
 
-*Proof.* The product of an element of $\mathbb{C}\Pi_+$ and an element of $\mathbb{C}\Pi_-$ vanishes because $\Pi_+\Pi_-=0$. An element is invertible exactly when both components $Q_{+}$ and $Q_{-}$ are invertible in $\mathbb{C}$, that is both are nonzero; the inverse is then $\varphi^{-1}\bigl(Q_{+}^{-1},Q_{-}^{-1}\bigr)$. The zero divisors, their geometry and their families are *Zero Divisors of the Algebra of the Reduced Biquaternions*, below this article in this category; the criterion and the group of invertibles are *Norm and Invertibility in the Algebra of the Reduced Biquaternions*.
+*Proof.* The product of an element of $\mathbb{C}\Pi_+$ and an element of $\mathbb{C}\Pi_-$ vanishes because $\Pi_+\Pi_-=0$. An element is invertible exactly when both components $Q_{+}$ and $Q_{-}$ are invertible in $\mathbb{C}$, that is both are nonzero; the inverse is then $\digamma_{\mathrm{map}}^{-1}\bigl(Q_{+}^{-1},Q_{-}^{-1}\bigr)$. The zero divisors, their geometry and their families are *Zero Divisors of the Algebra of the Reduced Biquaternions*, below this article in this category; the criterion and the group of invertibles are *Norm and Invertibility in the Algebra of the Reduced Biquaternions*.
 
 The two conditions $Q_{+}=0$ and $Q_{-}=0$ are the two equations $Q_{\blacktriangle}=-Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=Q_{\blacktriangledown}$, each defining a **complex line** through the origin, namely $\mathbb{C}\Pi_-$ and $\mathbb{C}\Pi_+$. The zero-divisor set is the union of these two punctured lines, a complex-algebraic curve of two components; because it is a union of two planes and not the zero set of an irreducible cone, the algebra is not a division algebra and its **null cone is degenerate**. The reduced norm that reads the zero divisors is $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$, the product of the two components; it is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*.
 
@@ -162,7 +162,7 @@ $$
 $$
 the commutative unital $\mathbb{R}$-algebra of basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. An element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, its scalar part $Q_{\blacktriangle}$ and its $j$-part $jQ_{\blacktriangledown}$; the glyph $\mathbb{B}_{\mathrm{red}}$ and the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ are those of *Algebra and Element Conventions*. The algebra contains the two complementary idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, with $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$, and every element is $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$.
 
-The **component map** $\varphi(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ is an isomorphism of $\mathbb{C}$-algebras onto $\mathbb{C}\oplus\mathbb{C}$, so the algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two complex fields, the product being componentwise in the two idempotent coordinates. Consequently the algebra is **commutative and associative**, it **has zero divisors** — every element of $\mathbb{C}\Pi_+$ annihilates every element of $\mathbb{C}\Pi_-$ — and it is **not a field and not a division algebra**: an element is invertible exactly when both idempotent coordinates $Q_{+}$ and $Q_{-}$ are nonzero, and otherwise it is a zero divisor. The zero-divisor set is the union of the two punctured idempotent lines, a degenerate null cone, and the reduced norm that reads it is $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$.
+The **component map** $\digamma_{\mathrm{map}}(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ is an isomorphism of $\mathbb{C}$-algebras onto $\mathbb{C}\oplus\mathbb{C}$, so the algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two complex fields, the product being componentwise in the two idempotent coordinates. Consequently the algebra is **commutative and associative**, it **has zero divisors** — every element of $\mathbb{C}\Pi_+$ annihilates every element of $\mathbb{C}\Pi_-$ — and it is **not a field and not a division algebra**: an element is invertible exactly when both idempotent coordinates $Q_{+}$ and $Q_{-}$ are nonzero, and otherwise it is a zero divisor. The zero-divisor set is the union of the two punctured idempotent lines, a degenerate null cone, and the reduced norm that reads it is $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$.
 
 The algebra is the complexification of the split-complex numbers $\mathbb{C}_{\mathrm{spl}}$ and the commutative companion of the split-biquaternions $\mathbb{B}_{\mathrm{spl}}$; it is the **tessarines** of Cockle and the **double-complex** or **commutative hypercomplex** algebra of the modern literature. The algebraic norm of a product (an element of the algebra) and the topological norm (a positive real) are distinct objects, and the warning is repeated in every article where it bears.
 
@@ -178,7 +178,7 @@ The algebra is the complexification of the split-complex numbers $\mathbb{C}_{\m
 | $q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown}$ | the four real coordinates of $\breve Q$ |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | the two complementary idempotents |
 | $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ | the idempotent coordinates of $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ |
-| $\varphi(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ | the isomorphism $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ |
+| $\digamma_{\mathrm{map}}(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ | the isomorphism $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ |
 | $\mathbb{C}\Pi_+,\mathbb{C}\Pi_-$ | the two idempotent lines, the components of the direct product |
 | $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$ | the reduced norm, the criterion of invertibility |
 | $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | the split-biquaternions, the quaternionic companion |

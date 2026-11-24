@@ -23,12 +23,12 @@ The article is self-contained topologically: vector bundles over a compact Hausd
 **Definition.** Let $X$ be a topological space. A **(complex) vector bundle of rank $k$** over $X$ is a continuous surjection $p : E \to X$ together with a structure of complex vector space on each fibre $E_x = p^{-1}(x)$, such that for every $x \in X$ there are a neighbourhood $\Omega$ of $x$ and a homeomorphism
 
 $$
-\varphi : p^{-1}(\Omega) \longrightarrow \Omega\times\mathbb{C}^k
+\digamma_{\mathrm{map}} : p^{-1}(\Omega) \longrightarrow \Omega\times\mathbb{C}^k
 $$
 
-which is fibrewise a linear isomorphism. The space $E$ is the **total space**, $X$ the **base**, and the pair $(\Omega,\varphi)$ a **local trivialisation**. A **section** of $E$ is a continuous map $\sigma : X \to E$ with $p\circ\sigma = \operatorname{id}_X$; the sections form a module $\Gamma(X,E)$ over the ring $C(X)$ of continuous complex functions. A bundle of rank $1$ is a **line bundle**, and the **trivial bundle** of rank $k$ is $X\times\mathbb{C}^k$ with the first projection.
+which is fibrewise a linear isomorphism. The space $E$ is the **total space**, $X$ the **base**, and the pair $(\Omega,\digamma_{\mathrm{map}})$ a **local trivialisation**. A **section** of $E$ is a continuous map $\sigma : X \to E$ with $p\circ\sigma = \operatorname{id}_X$; the sections form a module $\Gamma(X,E)$ over the ring $C(X)$ of continuous complex functions. A bundle of rank $1$ is a **line bundle**, and the **trivial bundle** of rank $k$ is $X\times\mathbb{C}^k$ with the first projection.
 
-**Definition.** A **morphism** of vector bundles over $X$ is a continuous map $\varphi : E \to F$ with $p_F\circ\varphi = p_E$ which is linear on each fibre; an **isomorphism** is a morphism with a two-sided inverse. Two bundles are **isomorphic** if there is an isomorphism between them, and the isomorphism class of $E$ is written $[E]$. The **direct sum** (or Whitney sum) $E\oplus F$ has fibres $E_x\oplus F_x$; the **tensor product** $E\otimes F$ has fibres $E_x\otimes F_x$; the **dual** $E^*$ has fibres the dual spaces; and the **exterior powers** $\Lambda^kE$ are defined fibrewise. All four are bundles over $X$, and the operations are compatible with isomorphism.
+**Definition.** A **morphism** of vector bundles over $X$ is a continuous map $\digamma_{\mathrm{map}} : E \to F$ with $p_F\circ\digamma_{\mathrm{map}} = p_E$ which is linear on each fibre; an **isomorphism** is a morphism with a two-sided inverse. Two bundles are **isomorphic** if there is an isomorphism between them, and the isomorphism class of $E$ is written $[E]$. The **direct sum** (or Whitney sum) $E\oplus F$ has fibres $E_x\oplus F_x$; the **tensor product** $E\otimes F$ has fibres $E_x\otimes F_x$; the **dual** $E^*$ has fibres the dual spaces; and the **exterior powers** $\Lambda^kE$ are defined fibrewise. All four are bundles over $X$, and the operations are compatible with isomorphism.
 
 **Definition.** For a continuous map $f : Y \to X$ and a bundle $p : E \to X$, the **pullback** $f^*E$ is the bundle over $Y$ with total space $\{(y,e) \in Y\times E : f(y) = p(e)\}$ and the projection to $Y$; it is a bundle of the same rank, and $(f\circ g)^*E \cong g^*f^*E$ and $\operatorname{id}^*E \cong E$.
 
@@ -64,7 +64,7 @@ $$
 
 Its elements are written as formal differences $[E]-[F]$. Equivalently, $K^0(X) = (V(X)\times V(X))/\sim$, where $(E,F)\sim(E',F')$ if and only if there is a bundle $G$ with $E\oplus F'\oplus G \cong E'\oplus F\oplus G$; the two descriptions agree by the universal property of the Grothendieck group.
 
-**Proposition (universal property).** Every monoid homomorphism $\varphi : V(X)\to A$ into an abelian group factors uniquely through the class map $V(X)\to K^0(X)$, so that $K^0$ is the universal abelian group receiving a homomorphism from the monoid of bundles.
+**Proposition (universal property).** Every monoid homomorphism $\digamma_{\mathrm{map}} : V(X)\to A$ into an abelian group factors uniquely through the class map $V(X)\to K^0(X)$, so that $K^0$ is the universal abelian group receiving a homomorphism from the monoid of bundles.
 
 **Proof.** The relations imposed are exactly those needed for additivity in the direct sum, and the resulting group satisfies the universal property by construction; the explicit presentation by pairs with the cancellation relation shows that the construction is idempotent.
 
@@ -198,7 +198,7 @@ $$
 (m,n)\cdot(x,y,z) = \bigl(x+m,\ y+n,\ \exp(2\pi i nx)z\bigr) ,
 $$
 
-which is an action because $\exp(2\pi in(x+m')) = \exp(2\pi inx)$ for integers $n,m'$, and which defines a line bundle over $\mathbb{T}^2 = \mathbb{R}^2/\mathbb{Z}^2$. The bundle is nontrivial: a nowhere-zero section would be a nonvanishing equivariant function $s = \exp(2\pi i\phi)$ with $\phi(x+m,y+n)\equiv\phi(x,y)+nx \pmod 1$, and computing $\phi(x+1,y+1)$ from the two generators gives both $\phi(x,y)+x$ and $\phi(x,y)+2x$, forcing $x \equiv 2x \pmod 1$ for all $x$, which is false; so the bundle has no nowhere-zero section while a trivial line bundle has one. The general computation of $K^0(\mathbb{T}^n)$ is standard and uses the identification of the bundles over a torus with equivariant data.
+which is an action because $\exp(2\pi in(x+m')) = \exp(2\pi inx)$ for integers $n,m'$, and which defines a line bundle over $\mathbb{T}^2 = \mathbb{R}^2/\mathbb{Z}^2$. The bundle is nontrivial: a nowhere-zero section would be a nonvanishing equivariant function $s = \exp(2\pi i\digamma_{\mathrm{map}})$ with $\digamma_{\mathrm{map}}(x+m,y+n)\equiv\digamma_{\mathrm{map}}(x,y)+nx \pmod 1$, and computing $\digamma_{\mathrm{map}}(x+1,y+1)$ from the two generators gives both $\digamma_{\mathrm{map}}(x,y)+x$ and $\digamma_{\mathrm{map}}(x,y)+2x$, forcing $x \equiv 2x \pmod 1$ for all $x$, which is false; so the bundle has no nowhere-zero section while a trivial line bundle has one. The general computation of $K^0(\mathbb{T}^n)$ is standard and uses the identification of the bundles over a torus with equivariant data.
 
 ### Exact Sequences
 

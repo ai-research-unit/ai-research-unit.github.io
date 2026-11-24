@@ -46,7 +46,7 @@ The $F$-linear case is the case $\varsigma = \mathrm{id}$, so the semilinear not
 
 **Remark.** An involution is bijective, because $\sigma^2 = \mathrm{id}$, so the word "anti-automorphism" is accurate. The definition imposes no condition on $F$; in particular $2$ need not be invertible, and the two places where that matters — the decomposition into symmetric and antisymmetric elements, and the closure of the symmetric elements under the symmetrised product — are marked in the text.
 
-**Definition (morphisms).** A **homomorphism** $(A,\sigma) \to (B,\tau)$ of involutive algebras is a unital algebra homomorphism $\varphi : A \to B$ with $\varphi \circ \sigma = \tau \circ \varphi$. Two involutions of the same algebra are **equivalent** when $\sigma' = \varphi \sigma \varphi^{-1}$ for an algebra automorphism $\varphi$; an automorphism of $(A,\sigma)$ is an algebra automorphism commuting with $\sigma$. With $B = A$ the condition says that the automorphism commutes with the involution, so the automorphism group of $(A,\sigma)$ is the centraliser of $\sigma$ in $\operatorname{Aut}(A)$.
+**Definition (morphisms).** A **homomorphism** $(A,\sigma) \to (B,\tau)$ of involutive algebras is a unital algebra homomorphism $\digamma_{\mathrm{map}} : A \to B$ with $\digamma_{\mathrm{map}} \circ \sigma = \tau \circ \digamma_{\mathrm{map}}$. Two involutions of the same algebra are **equivalent** when $\sigma' = \digamma_{\mathrm{map}} \sigma \digamma_{\mathrm{map}}^{-1}$ for an algebra automorphism $\digamma_{\mathrm{map}}$; an automorphism of $(A,\sigma)$ is an algebra automorphism commuting with $\sigma$. With $B = A$ the condition says that the automorphism commutes with the involution, so the automorphism group of $(A,\sigma)$ is the centraliser of $\sigma$ in $\operatorname{Aut}(A)$.
 
 ### The Opposite Algebra
 
@@ -178,9 +178,9 @@ $$
 
 exhibits $a$ as a symmetric element plus an element of $I$.
 
-**Corollary.** The kernel of a homomorphism of involutive algebras is $\sigma$-stable and two-sided, and the first isomorphism theorem holds in the form $A/\ker\varphi \cong \operatorname{im}\varphi$ with the induced involution.
+**Corollary.** The kernel of a homomorphism of involutive algebras is $\sigma$-stable and two-sided, and the first isomorphism theorem holds in the form $A/\ker\digamma_{\mathrm{map}} \cong \operatorname{im}\digamma_{\mathrm{map}}$ with the induced involution.
 
-**Proof.** If $\varphi \circ \sigma = \tau \circ \varphi$ and $\varphi(a) = 0$ then $\varphi(\sigma(a)) = \tau(0) = 0$, so the kernel is $\sigma$-stable; the rest is the isomorphism theorem for algebras with the involution transported.
+**Proof.** If $\digamma_{\mathrm{map}} \circ \sigma = \tau \circ \digamma_{\mathrm{map}}$ and $\digamma_{\mathrm{map}}(a) = 0$ then $\digamma_{\mathrm{map}}(\sigma(a)) = \tau(0) = 0$, so the kernel is $\sigma$-stable; the rest is the isomorphism theorem for algebras with the involution transported.
 
 **Remark.** The invariant quotients of an algebra with an involution — the ideals stable under the involution and the algebras they define — are the algebra case of the $\sigma$-ideals of *Involutive Rings*, and the two theories run in parallel. Which of these quotients are semiprime, prime or reduced is the subject of *Semiprime Rings*, *Prime Rings* and *Reduced Rings and the Nilradical*, in *Rings and Fields*.
 

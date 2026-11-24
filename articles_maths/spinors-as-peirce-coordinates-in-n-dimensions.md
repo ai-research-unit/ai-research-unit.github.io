@@ -21,7 +21,7 @@ The numbers $X_{kl}$ are the **Peirce coordinates** of $X$. The first index is t
 **Definition.** For fixed $l$, the **column** of $X$ is the $n$-tuple
 
 $$
-\psi^{(l)}=(X_{1l},\dots,X_{nl}).
+Ξ_{\mathrm{wfn}}^{(l)}=(X_{1l},\dots,X_{nl}).
 $$
 
 A **spinor** of the family, in the basis, is a column of the coordinate array, taken up to a common nonzero factor.
@@ -51,7 +51,7 @@ $$
 so, after multiplying the column by the common factor $t_{l}^{-1}$, the entries transform by
 
 $$
-\psi_{k}\longmapsto t_{k}^{-1}\psi_{k}.
+Ξ_{\mathrm{wfn},k}\longmapsto t_{k}^{-1}Ξ_{\mathrm{wfn},k}.
 $$
 
 **Proof.** The coordinate law was proved in *The Peirce Basis in $n$ Dimensions*: $X'_{kl}=t_{k}^{-1}t_{l}X_{kl}$. Multiplying the column by $t_{l}$ removes the factor $t_{l}$ and leaves the factor $t_{k}^{-1}$ on the $k$-th entry.
@@ -63,12 +63,12 @@ $$
 Because the overall factor is removed, a spinor is a point of the projective space $\mathbb{P}^{n-1}$:
 
 $$
-[\psi]=[\psi_{1}:\cdots:\psi_{n}].
+[Ξ_{\mathrm{wfn}}]=[Ξ_{\mathrm{wfn},1}:\cdots:Ξ_{\mathrm{wfn},n}].
 $$
 
 The gauge acts on this point by the diagonal torus $(\mathbb{C}^{\times})^{n-1}$, and the action is not trivial. A single spinor therefore carries very little gauge-invariant information.
 
-**The orbit is determined by the zero entries.** On the open set where every entry is nonzero, the torus acts transitively: given $[\psi]$ and $[\varphi]$ with all entries nonzero, the scalars $t_{k}=\psi_{k}/\varphi_{k}$ send one to the other. So the gauge orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is the set of indices $l$ for which $\psi_{l}=0$. In particular, no ratio $\psi_{j}/\psi_{l}$ is gauge invariant: it is multiplied by $t_{j}/t_{l}$.
+**The orbit is determined by the zero entries.** On the open set where every entry is nonzero, the torus acts transitively: given $[Ξ_{\mathrm{wfn}}]$ and $[\digamma_{\mathrm{map}}]$ with all entries nonzero, the scalars $t_{k}=Ξ_{\mathrm{wfn},k}/\digamma_{\mathrm{map},k}$ send one to the other. So the gauge orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is the set of indices $l$ for which $Ξ_{\mathrm{wfn},l}=0$. In particular, no ratio $Ξ_{\mathrm{wfn},j}/Ξ_{\mathrm{wfn},l}$ is gauge invariant: it is multiplied by $t_{j}/t_{l}$.
 
 **Invariants need a cycle.** A product of coordinates around a closed cycle is gauge invariant:
 
@@ -86,15 +86,15 @@ A single coordinate is not invariant, and a column alone has no invariant produc
 If the family is Hermitian and the basis is Hermitian, the gauge is $|t_{k}|=1$. In that case
 
 $$
-\sum_{l=1}^{n}\lvert\psi_{l}\rvert^{2}
+\sum_{l=1}^{n}\lvertΞ_{\mathrm{wfn},l}\rvert^{2}
 \longmapsto
-\sum_{l=1}^{n}\lvert t_{l}\rvert^{2}\lvert\psi_{l}\rvert^{2}
-=\sum_{l=1}^{n}\lvert\psi_{l}\rvert^{2},
+\sum_{l=1}^{n}\lvert t_{l}\rvert^{2}\lvertΞ_{\mathrm{wfn},l}\rvert^{2}
+=\sum_{l=1}^{n}\lvertΞ_{\mathrm{wfn},l}\rvert^{2},
 $$
 
-so the Hermitian norm of a spinor is gauge invariant. The gauge orbit of a spinor is then the set of spinors with the same moduli $\lvert\psi_{1}\rvert,\dots,\lvert\psi_{n}\rvert$, and a spinor is described by its point of the sphere modulo the torus of phases.
+so the Hermitian norm of a spinor is gauge invariant. The gauge orbit of a spinor is then the set of spinors with the same moduli $\lvertΞ_{\mathrm{wfn},1}\rvert,\dots,\lvertΞ_{\mathrm{wfn},n}\rvert$, and a spinor is described by its point of the sphere modulo the torus of phases.
 
-No other quadratic invariant exists: a quadratic form in the entries is invariant under $(\mathbb{C}^{\times})^{n-1}$ only when it is a sum of terms $\lvert\psi_{l}\rvert^{2}$ with equal coefficients, that is, a multiple of the norm.
+No other quadratic invariant exists: a quadratic form in the entries is invariant under $(\mathbb{C}^{\times})^{n-1}$ only when it is a sum of terms $\lvertΞ_{\mathrm{wfn},l}\rvert^{2}$ with equal coefficients, that is, a multiple of the norm.
 
 ## Chirality
 
@@ -112,14 +112,14 @@ A spinor is not the whole element of $M_{n}(\mathbb{C})$, not a Peirce line, and
 
 ## Summary
 
-The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{nl})$ up to a common factor. The gauge sends $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$, so a spinor transforms by $\psi_{k}\mapsto t_{k}^{-1}\psi_{k}$ up to the overall factor, with effective group $(\mathbb{C}^{\times})^{n-1}$. Projectively, the orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is its zero pattern; invariant products are cycles of coordinates. In the Hermitian gauge the norm is invariant. A chiral split of a column requires an extra sign function on the lines, balanced only for even $n$.
+The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{nl})$ up to a common factor. The gauge sends $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$, so a spinor transforms by $Ξ_{\mathrm{wfn},k}\mapsto t_{k}^{-1}Ξ_{\mathrm{wfn},k}$ up to the overall factor, with effective group $(\mathbb{C}^{\times})^{n-1}$. Projectively, the orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is its zero pattern; invariant products are cycles of coordinates. In the Hermitian gauge the norm is invariant. A chiral split of a column requires an extra sign function on the lines, balanced only for even $n$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $X_{kl}$ | The Peirce coordinate of $X$ in position $(k,l)$ |
-| $\psi^{(l)}$ | The column of index $l$, a spinor |
+| $Ξ_{\mathrm{wfn}}^{(l)}$ | The column of index $l$, a spinor |
 | $t_{k}$ | A gauge parameter, $t_{k}\ne0$ |
 | $\Gamma$ | A grading, an automorphism with $\Gamma^{2}=1$ commuting with the family |
 | $\varepsilon_{k}=\pm1$ | The sign of $\Gamma$ on the line $V_{k}$ |

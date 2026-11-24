@@ -143,9 +143,9 @@ is the complete invariant of the ordered quadruples of distinct points.
 
 **Definition.** A projective subspace $\mathbb{P}(W) \subseteq \mathbb{P}(V)$ is **stable** under the operator $[T]$ when $T(W) = W$; the subgroup of $PGL(V)$ stabilising $\mathbb{P}(W)$ is the image of the subgroup of $GL(V)$ preserving the flag ending at $W$, and the operators fixing a point are the image of the stabiliser of a line.
 
-**Proposition.** The stabiliser of a point $[v]$ is the image of the group of the linear maps preserving the line $Kv$, of dimension $n^2$ as a transformation group, and the stabiliser of a hyperplane is the image of the group of the linear maps preserving $\ker\varphi$; the two are the maximal parabolics of the projective group.
+**Proposition.** The stabiliser of a point $[v]$ is the image of the group of the linear maps preserving the line $Kv$, of dimension $n^2$ as a transformation group, and the stabiliser of a hyperplane is the image of the group of the linear maps preserving $\ker\digamma_{\mathrm{map}}$; the two are the maximal parabolics of the projective group.
 
-**Proof.** A linear map preserves the line $Kv$ exactly when it induces a map of the quotient $V/Kv$, and it preserves the hyperplane $\ker \varphi$ exactly when it preserves the linear form up to a scalar; the dimensions are read from the exact sequences and count the operators fixing the corresponding figure.
+**Proof.** A linear map preserves the line $Kv$ exactly when it induces a map of the quotient $V/Kv$, and it preserves the hyperplane $\ker \digamma_{\mathrm{map}}$ exactly when it preserves the linear form up to a scalar; the dimensions are read from the exact sequences and count the operators fixing the corresponding figure.
 
 ### The Operators Preserving a Quadric
 

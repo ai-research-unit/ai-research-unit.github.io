@@ -9,7 +9,7 @@ S^\alpha_{a,b}(x)=a\,\alpha(x)\,b ,
 $$
 and this article computes its **adjoint** with respect to the form of the category,
 $$
-\langle x,y\rangle=\varphi(xy^*)=\mathbb E\bigl[x\bar y\bigr].
+\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)=\mathbb E\bigl[x\bar y\bigr].
 $$
 The result is
 $$
@@ -17,9 +17,9 @@ $$
 $$
 the signed two-sided operator of the **twisted images** of the two parameters, where $\delta$ is the composite of the conjugation and the grade involution. The formula is the same as in the noncommutative signed theory of *The Signed Adjoint Two-Sided Operator on a Ring*, in Part I, but the reason is different: there the twisted involution $\delta$ performs the reversal of the product, while here the product is commutative and the invariance of the expectation form alone yields $L_c^*=L_{c^*}$, after which the twist $\delta$ on the parameters completes the computation. The article gives the closed form of the adjoint, the behaviour under products, the self-adjointness, the isometry, the unitarity and the involutions of the signed two-sided operators, and the comparison with the unsigned two-sided operator and with the ring case.
 
-The conventions are those fixed in *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category: $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the pointwise product, the conjugation $\sigma(a)=\bar a$, the state $\varphi(a)=\mathbb E[a]$, the form of the category $\langle x,y\rangle=\varphi(xy^*)$, the grade involution $\alpha$ (an involutive, unitary, self-adjoint automorphism commuting with the conjugation), the grading $\mathcal{A}=\mathcal{A}_{\bar0}\oplus\mathcal{A}_{\bar1}$, and the twisted involution $\delta=\sigma\alpha=\alpha\sigma$. The signed two-sided operator collapses on the commutative algebra to $S^\alpha_c$ with $c=ab$ and $S^\alpha_c=L_c\alpha$, which is *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category; the signed left multiplication is $T^\alpha_a=S^\alpha_{a,1}=L_a\alpha$, *The Signed Left Multiplication on the Algebra of Random Variables*, earlier in this category, and its adjoint is *The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables*, the later article of this category; the reflections are *Reflections as Signed Two-Sided Operators on the Algebra of Random Variables*, earlier in this category, and their adjoints are *The Signed Adjoint of the Reflection on the Algebra of Random Variables*, later in this category. The adjoint of the unsigned left multiplication is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, earlier in this category, and the operator-algebra involution is *The Involution on the Operator Algebra of a Process*, earlier in this category. No physics is invoked.
+The conventions are those fixed in *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category: $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the pointwise product, the conjugation $\sigma(a)=\bar a$, the state $\digamma_{\mathrm{map}}(a)=\mathbb E[a]$, the form of the category $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$, the grade involution $\alpha$ (an involutive, unitary, self-adjoint automorphism commuting with the conjugation), the grading $\mathcal{A}=\mathcal{A}_{\bar0}\oplus\mathcal{A}_{\bar1}$, and the twisted involution $\delta=\sigma\alpha=\alpha\sigma$. The signed two-sided operator collapses on the commutative algebra to $S^\alpha_c$ with $c=ab$ and $S^\alpha_c=L_c\alpha$, which is *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category; the signed left multiplication is $T^\alpha_a=S^\alpha_{a,1}=L_a\alpha$, *The Signed Left Multiplication on the Algebra of Random Variables*, earlier in this category, and its adjoint is *The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables*, the later article of this category; the reflections are *Reflections as Signed Two-Sided Operators on the Algebra of Random Variables*, earlier in this category, and their adjoints are *The Signed Adjoint of the Reflection on the Algebra of Random Variables*, later in this category. The adjoint of the unsigned left multiplication is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, earlier in this category, and the operator-algebra involution is *The Involution on the Operator Algebra of a Process*, earlier in this category. No physics is invoked.
 
-Throughout, $\mathcal{A}$ is the algebra of random variables, $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form $\langle x,y\rangle=\varphi(xy^*)$ is the Hilbert space of the category, $\alpha$ is the grade involution and $\delta=\sigma\alpha$. The signed two-sided operator is $S^\alpha_{a,b}(x)=a\,\alpha(x)\,b$, the unsigned two-sided operator is $\mathcal{T}_{a,b}(x)=axb$, and the twisted involution satisfies $\delta^2=\mathrm{id}$, $\delta\sigma=\sigma\delta=\alpha$ and $\delta\alpha=\alpha\delta=\sigma$.
+Throughout, $\mathcal{A}$ is the algebra of random variables, $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ is the Hilbert space of the category, $\alpha$ is the grade involution and $\delta=\sigma\alpha$. The signed two-sided operator is $S^\alpha_{a,b}(x)=a\,\alpha(x)\,b$, the unsigned two-sided operator is $\mathcal{T}_{a,b}(x)=axb$, and the twisted involution satisfies $\delta^2=\mathrm{id}$, $\delta\sigma=\sigma\delta=\alpha$ and $\delta\alpha=\alpha\delta=\sigma$.
 
 ## The Signed Adjoint Two-Sided Operator
 
@@ -86,7 +86,7 @@ The signed adjoint two-sided operator degenerates in four configurations. First,
 
 ## Summary
 
-The adjoint of the signed two-sided operator $S^\alpha_{a,b}(x)=a\alpha(x)b$ on the algebra of random variables with respect to the form $\langle x,y\rangle=\varphi(xy^*)$ is the signed two-sided operator of the twisted images of the parameters,
+The adjoint of the signed two-sided operator $S^\alpha_{a,b}(x)=a\alpha(x)b$ on the algebra of random variables with respect to the form $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ is the signed two-sided operator of the twisted images of the parameters,
 $$
 \bigl(S^\alpha_{a,b}\bigr)^*=S^\alpha_{\delta(a),\delta(b)},\qquad \delta=\sigma\alpha=\alpha\sigma ,
 $$
@@ -97,7 +97,7 @@ the same formula as on a noncommutative ring but derived here from the invarianc
 | Symbol | Meaning |
 |---|---|
 | $S^\alpha_{a,b}(x)=a\alpha(x)b$ | the signed two-sided operator |
-| $\langle x,y\rangle=\varphi(xy^*)$ | the form of the category |
+| $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ | the form of the category |
 | $\delta=\sigma\alpha=\alpha\sigma$ | the twisted involution |
 | $(S^\alpha_{a,b})^*=S^\alpha_{\delta(a),\delta(b)}$ | the adjoint |
 | $S^\alpha_{a,b}S^\alpha_{c,d}=S^\alpha_{a\alpha(c),\alpha(d)b}$ | the product |

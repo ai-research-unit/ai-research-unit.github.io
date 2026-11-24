@@ -411,18 +411,18 @@ the second term being the differential of the angle of the curve with the first 
 
 ### Example: The Sphere of Radius $R$
 
-**Example.** Let $x(u,v)=i\,R\bigl(\sin u\cos v\,\vec e_x+\sin u\sin v\,\vec e_y+\cos u\,\vec e_z\bigr)$, with $u=\theta$ the polar angle and $v=\phi$ the azimuth. Then $\omega_1=R\,\mathrm d\theta$, $\omega_2=R\sin\theta\,\mathrm d\phi$, and the frame of the two subsections above is
+**Example.** Let $x(u,v)=i\,R\bigl(\sin u\cos v\,\vec e_x+\sin u\sin v\,\vec e_y+\cos u\,\vec e_z\bigr)$, with $u=\theta$ the polar angle and $v=\digamma_{\mathrm{map}}$ the azimuth. Then $\omega_1=R\,\mathrm d\theta$, $\omega_2=R\sin\theta\,\mathrm d\digamma_{\mathrm{map}}$, and the frame of the two subsections above is
 
 $$
-v_1=i\bigl(\cos\theta\cos\phi\,\vec e_x+\cos\theta\sin\phi\,\vec e_y-\sin\theta\,\vec e_z\bigr),\qquad
-v_2=i\bigl(-\sin\phi\,\vec e_x+\cos\phi\,\vec e_y\bigr),\qquad
+v_1=i\bigl(\cos\theta\cos\digamma_{\mathrm{map}}\,\vec e_x+\cos\theta\sin\digamma_{\mathrm{map}}\,\vec e_y-\sin\theta\,\vec e_z\bigr),\qquad
+v_2=i\bigl(-\sin\digamma_{\mathrm{map}}\,\vec e_x+\cos\digamma_{\mathrm{map}}\,\vec e_y\bigr),\qquad
 v_3=\frac{x}{R},
 $$
 
-the rotor of the frame is $r=\exp(\tfrac12\phi\,\vec e_z)\exp(\tfrac12\theta\,\vec e_y)$ in the sense of the exponential series of the real quaternions, and the connection is
+the rotor of the frame is $r=\exp(\tfrac12\digamma_{\mathrm{map}}\,\vec e_z)\exp(\tfrac12\theta\,\vec e_y)$ in the sense of the exponential series of the real quaternions, and the connection is
 
 $$
-\mathrm d\iota=2r^{\dagger}\mathrm dr=-\sin\theta\,\mathrm d\phi\,\vec e_x+\mathrm d\theta\,\vec e_y+\cos\theta\,\mathrm d\phi\,\vec e_z .
+\mathrm d\iota=2r^{\dagger}\mathrm dr=-\sin\theta\,\mathrm d\digamma_{\mathrm{map}}\,\vec e_x+\mathrm d\theta\,\vec e_y+\cos\theta\,\mathrm d\digamma_{\mathrm{map}}\,\vec e_z .
 $$
 
 Hence $a_1=0$, $a_2=-\sin\theta$, $b_1=1$, $b_2=0$, $c_1=0$, $c_2=\cos\theta$, and
@@ -433,7 +433,7 @@ $$
 
 the curvature constant and the surface umbilic at every point, and the latitude circle of polar angle $\theta_0$ has geodesic curvature $\rho_g=\cot\theta_0$, vanishing at the equator, which is the great circle.
 
-**Proof.** The frame is the two-sided operator of the generators by the displayed rotor, which is the composition of a rotation of $\phi$ about $\vec e_z$ and one of $\theta$ about the moved second axis; the connection is $2r^{\dagger}\mathrm dr$ expanded in the two parameters; the two curvatures follow from the formulas of the Gaussian and mean curvature with $\Delta_0=R^2\sin\theta$; the geodesic curvature is the third component of the connection along the curve, as in the geodesic theorem.
+**Proof.** The frame is the two-sided operator of the generators by the displayed rotor, which is the composition of a rotation of $\digamma_{\mathrm{map}}$ about $\vec e_z$ and one of $\theta$ about the moved second axis; the connection is $2r^{\dagger}\mathrm dr$ expanded in the two parameters; the two curvatures follow from the formulas of the Gaussian and mean curvature with $\Delta_0=R^2\sin\theta$; the geodesic curvature is the third component of the connection along the curve, as in the geodesic theorem.
 
 ## The Legacy Pauli Gamma Formulation
 

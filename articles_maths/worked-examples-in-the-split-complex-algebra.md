@@ -66,7 +66,7 @@ $$
 \mathbb{R}\Pi_+ = \{(t,t) : t \in \mathbb{R}\}, \qquad \mathbb{R}\Pi_- = \{(t,-t) : t \in \mathbb{R}\},
 $$
 
-in the coordinates $(q,q')$; their product is zero, and $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$. The isomorphism with $\mathbb{R}\oplus\mathbb{R}$ is realised numerically by $\varphi(3+2j) = (5, 1)$; the multiplication is componentwise, $\varphi(QB) = (Q_+B_+, Q_-B_-)$.
+in the coordinates $(q,q')$; their product is zero, and $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$. The isomorphism with $\mathbb{R}\oplus\mathbb{R}$ is realised numerically by $\digamma_{\mathrm{map}}(3+2j) = (5, 1)$; the multiplication is componentwise, $\digamma_{\mathrm{map}}(QB) = (Q_+B_+, Q_-B_-)$.
 
 ## Explicit Zero-Divisor Pairs
 

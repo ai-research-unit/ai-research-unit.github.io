@@ -35,9 +35,9 @@ $$
 
 *Proof.* Choose any pair $(a,b)$ on the circle of radius $\lvert\tilde q\rvert$ and put $\tilde u_{\mathrm r}=\tilde q(a+b\nu)^{-1}$; then $N(\tilde u_{\mathrm r})=N(\tilde q)/(a^2+b^2)=1$, so $\tilde u_{\mathrm r}$ is a versor, and the product returns $\tilde q$. Verified on random elements and axes.
 
-**Remark (the circle of words).** The words over a fixed element and a fixed axis form a free circle orbit: if $\tilde q=\tilde u_{\mathrm r}(a+b\nu)$ then for every real $\phi$
+**Remark (the circle of words).** The words over a fixed element and a fixed axis form a free circle orbit: if $\tilde q=\tilde u_{\mathrm r}(a+b\nu)$ then for every real $\digamma_{\mathrm{map}}$
 $$
-\tilde q=\bigl(\tilde u_{\mathrm r}e^{\phi\nu}\bigr)\bigl(e^{-\phi\nu}(a+b\nu)\bigr),
+\tilde q=\bigl(\tilde u_{\mathrm r}e^{\digamma_{\mathrm{map}}\nu}\bigr)\bigl(e^{-\digamma_{\mathrm{map}}\nu}(a+b\nu)\bigr),
 $$
 and the two factors are again a versor and an element of the plane. So the pairing is not a factorisation until a normalisation is chosen, and the choice of the normalisation is the real content of the construction.
 
@@ -50,7 +50,7 @@ $$
 a=\frac{\lvert\tilde q\rvert\,q_t}{\sqrt{q_t^2+\langle\vec q,\nu\rangle^2}},\qquad b=\frac{\lvert\tilde q\rvert\,\langle\vec q,\nu\rangle}{\sqrt{q_t^2+\langle\vec q,\nu\rangle^2}}.
 $$
 
-*Proof.* Existence is the construction of the formula: put $\mathrm{den}=\sqrt{q_t^2+\langle\vec q,\nu\rangle^2}$ and $f=a+b\nu=\lvert\tilde q\rvert(q_t+\langle\vec q,\nu\rangle\nu)/\mathrm{den}$, which is invertible in the plane, and $\tilde u_{\mathrm r}=\tilde q f^{-1}$, a versor; the scalar part of $\tilde u_{\mathrm r}$ is $\lvert\tilde q\rvert^{-1}\mathrm{Sc}(\tilde q f^{\natural})$, and the computation of the scalar part and of the component along $\nu$ gives $u_{{\mathrm r}t}=\mathrm{den}/\lvert\tilde q\rvert>0$ and $\langle\vec u_{\mathrm r},\nu\rangle=0$. For uniqueness, let two normalised words be given; then $\tilde u_{\mathrm r}^{-1}\tilde u_{\mathrm r}'=(a+b\nu)(a'+b'\nu)^{-1}=e^{\phi\nu}$ for some $\phi$, since the quotient of two elements of the plane is invertible in the plane. The component of the vector part of $\tilde u_{\mathrm r}'=\tilde u_{\mathrm r}e^{\phi\nu}$ along $\nu$ is $\sin\phi\,u_{{\mathrm r}t}$, which vanishes only for $\phi\in\{0,\pi\}$, and the condition $u_{{\mathrm r}t}'>0$ gives $u_{{\mathrm r}t}\cos\phi>0$, hence $\phi=0$. Verified on $2000$ random elements: the constructed word satisfies all four conditions, and the two conditions cut the circle to one point.
+*Proof.* Existence is the construction of the formula: put $\mathrm{den}=\sqrt{q_t^2+\langle\vec q,\nu\rangle^2}$ and $f=a+b\nu=\lvert\tilde q\rvert(q_t+\langle\vec q,\nu\rangle\nu)/\mathrm{den}$, which is invertible in the plane, and $\tilde u_{\mathrm r}=\tilde q f^{-1}$, a versor; the scalar part of $\tilde u_{\mathrm r}$ is $\lvert\tilde q\rvert^{-1}\mathrm{Sc}(\tilde q f^{\natural})$, and the computation of the scalar part and of the component along $\nu$ gives $u_{{\mathrm r}t}=\mathrm{den}/\lvert\tilde q\rvert>0$ and $\langle\vec u_{\mathrm r},\nu\rangle=0$. For uniqueness, let two normalised words be given; then $\tilde u_{\mathrm r}^{-1}\tilde u_{\mathrm r}'=(a+b\nu)(a'+b'\nu)^{-1}=e^{\digamma_{\mathrm{map}}\nu}$ for some $\digamma_{\mathrm{map}}$, since the quotient of two elements of the plane is invertible in the plane. The component of the vector part of $\tilde u_{\mathrm r}'=\tilde u_{\mathrm r}e^{\digamma_{\mathrm{map}}\nu}$ along $\nu$ is $\sin\digamma_{\mathrm{map}}\,u_{{\mathrm r}t}$, which vanishes only for $\digamma_{\mathrm{map}}\in\{0,\pi\}$, and the condition $u_{{\mathrm r}t}'>0$ gives $u_{{\mathrm r}t}\cos\digamma_{\mathrm{map}}>0$, hence $\digamma_{\mathrm{map}}=0$. Verified on $2000$ random elements: the constructed word satisfies all four conditions, and the two conditions cut the circle to one point.
 
 **Corollary (the pair is the normalised projection).** Let $\pi_\nu(\tilde q)=q_te_t+\langle\vec q,\nu\rangle\nu$ be the orthogonal projection of $\tilde q$ onto the plane of the axis. Then
 $$

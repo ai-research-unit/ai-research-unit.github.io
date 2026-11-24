@@ -129,7 +129,7 @@ $$
 A *_C B = (A * B)/N,
 $$
 
-where $N$ is the normal closure of the set $\{c\,\phi(c)^{-1} : c \in C\}$ for the two embeddings of $C$ into $A$ and $B$. It is characterised by the universal property that homomorphisms $A *_C B \to G$ correspond to pairs of homomorphisms $A \to G$ and $B \to G$ agreeing on $C$.
+where $N$ is the normal closure of the set $\{c\,\digamma_{\mathrm{map}}(c)^{-1} : c \in C\}$ for the two embeddings of $C$ into $A$ and $B$. It is characterised by the universal property that homomorphisms $A *_C B \to G$ correspond to pairs of homomorphisms $A \to G$ and $B \to G$ agreeing on $C$.
 
 **Theorem (normal form).** Every element of $A *_C B$ has a unique reduced form: a sequence $a_1 b_1 a_2 b_2 \cdots$ or $b_1 a_1 b_2 \cdots$ with the $a_i \in A \setminus C$, $b_i \in B \setminus C$ alternating and nonempty, together with a possible single element of $C$ at one end.
 

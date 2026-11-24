@@ -60,7 +60,7 @@ the exponential growth rate of the language.
 **Example (the golden-mean shift).** Let $X$ be the subshift of $\Sigma_2$ whose forbidden word is $11$, so that $X$ consists of the sequences with no two consecutive ones. Its language of length $n$ is the set of binary words with no $11$, of cardinality the Fibonacci number $F_{n+2}$; a direct count gives $|\mathcal L_n(X)|=2,3,5,8,13,21,\dots$ and
 
 $$
-h_{\mathrm{tpl}}(\sigma|_X)=\lim_n\frac1n\log F_{n+2}=\log\varphi, \qquad \varphi=\frac{1+\sqrt5}{2}=1.618034\ldots
+h_{\mathrm{tpl}}(\sigma|_X)=\lim_n\frac1n\log F_{n+2}=\log\digamma_{\mathrm{map}}, \qquad \digamma_{\mathrm{map}}=\frac{1+\sqrt5}{2}=1.618034\ldots
 $$
 
 the logarithm of the golden ratio, in agreement with the matrix computation of the next section.
@@ -99,7 +99,7 @@ $$
 A=\begin{pmatrix}1&1\\1&0\end{pmatrix}, \qquad \det(I-tA)=1-t-t^2,
 $$
 
-so $\zeta(t)=1/(1-t-t^2)$, the fixed points of $\sigma^n$ number $\operatorname{tr}(A^n)=1,3,4,7,11,18,29,\dots$, the Lucas numbers, and the spectral radius is the golden ratio, since the characteristic polynomial is $\lambda^2-\lambda-1$; the entropy is $\log\varphi$ computed above.
+so $\zeta(t)=1/(1-t-t^2)$, the fixed points of $\sigma^n$ number $\operatorname{tr}(A^n)=1,3,4,7,11,18,29,\dots$, the Lucas numbers, and the spectral radius is the golden ratio, since the characteristic polynomial is $\lambda^2-\lambda-1$; the entropy is $\log\digamma_{\mathrm{map}}$ computed above.
 
 ### Sofic Shifts
 
@@ -111,17 +111,17 @@ so $\zeta(t)=1/(1-t-t^2)$, the fixed points of $\sigma^n$ number $\operatorname{
 
 ### Sliding Block Codes
 
-**Definition.** Let $X \subseteq\Sigma_{\mathcal A}$ and $Y \subseteq\Sigma_{\mathcal B}$ be subshifts. A **sliding block code** with memory $m$ and anticipation $a$ is a map $\phi:X\to Y$ given by a function $\Phi:\mathcal A^{m+a+1}\to\mathcal B$ such that
+**Definition.** Let $X \subseteq\Sigma_{\mathcal A}$ and $Y \subseteq\Sigma_{\mathcal B}$ be subshifts. A **sliding block code** with memory $m$ and anticipation $a$ is a map $\digamma_{\mathrm{map}}:X\to Y$ given by a function $\Phi:\mathcal A^{m+a+1}\to\mathcal B$ such that
 
 $$
-\phi(x)_n=\Phi(x_{n-m}\cdots x_{n+a}) \qquad \text{for all } n ,
+\digamma_{\mathrm{map}}(x)_n=\Phi(x_{n-m}\cdots x_{n+a}) \qquad \text{for all } n ,
 $$
 
 and a **block code** is the one-sided analogue. A **conjugacy** is a bijective sliding block code whose inverse is again a sliding block code, and a **factor map** is a surjective one.
 
-**Theorem (Curtis–Hedlund–Lyndon).** A map $\phi:X\to Y$ between subshifts is continuous and commutes with the shifts, $\phi\circ\sigma=\sigma\circ\phi$, if and only if it is a sliding block code.
+**Theorem (Curtis–Hedlund–Lyndon).** A map $\digamma_{\mathrm{map}}:X\to Y$ between subshifts is continuous and commutes with the shifts, $\digamma_{\mathrm{map}}\circ\sigma=\sigma\circ\digamma_{\mathrm{map}}$, if and only if it is a sliding block code.
 
-*Proof.* If $\phi$ is a sliding block code, the continuity is clear because the $n$-th coordinate of the image depends only on finitely many coordinates of the input, and the commutation with the shift is the translation invariance of the block rule. Conversely, if $\phi$ is continuous and commutes with the shift, the compactness of $X$ gives a finite cylinder $[w]$ whose image lies in the cylinder $[\phi(x)_0]$ of the zeroth coordinate, and the commutation extends the rule to all the coordinates, producing the sliding block.
+*Proof.* If $\digamma_{\mathrm{map}}$ is a sliding block code, the continuity is clear because the $n$-th coordinate of the image depends only on finitely many coordinates of the input, and the commutation with the shift is the translation invariance of the block rule. Conversely, if $\digamma_{\mathrm{map}}$ is continuous and commutes with the shift, the compactness of $X$ gives a finite cylinder $[w]$ whose image lies in the cylinder $[\digamma_{\mathrm{map}}(x)_0]$ of the zeroth coordinate, and the commutation extends the rule to all the coordinates, producing the sliding block.
 
 ### Markov Partitions and the Coding of Hyperbolic Systems
 
@@ -141,17 +141,17 @@ and a **block code** is the one-sided analogue. A **conjugacy** is a bijective s
 
 **Example (Sturmian and rotation codings).** For an irrational $\alpha \in(0,1)$ and the rotation $R_\alpha$ of the circle, the coding of the orbit of a point with respect to the partition of the circle into the two intervals of lengths $\alpha$ and $1-\alpha$ is a Sturmian word over two symbols; the associated subshift is minimal, has complexity $p(n)=n+1$ and zero entropy, and it is not of finite type. The Sturmian subshift is the symbolic model of the irrational rotation: the rotation is a continuous at most two-to-one factor of the subshift, so the subshift is minimal and zero-entropy but is not equicontinuous, and its arithmetic — the continued fraction of $\alpha$ and the recurrence of the return times — belongs.
 
-**Example (substitution subshifts).** A **substitution** is a map $\tau:\mathcal A\to\mathcal A^+$ extended to words and to sequences; the subshift generated by the fixed point of a primitive substitution is minimal and uniquely ergodic, and its complexity and entropy are computed from the incidence matrix of $\tau$, whose Perron eigenvalue gives the entropy. For the **Fibonacci substitution** $0\mapsto01$, $1\mapsto0$ the subshift is the Sturmian subshift of slope $\varphi-1$ with complexity $n+1$ and zero entropy; for the **Thue–Morse** substitution the subshift is minimal, uniquely ergodic, of zero entropy, and of linear complexity, its complexity growing like a constant times $n$ rather than like $n+1$.
+**Example (substitution subshifts).** A **substitution** is a map $\tau:\mathcal A\to\mathcal A^+$ extended to words and to sequences; the subshift generated by the fixed point of a primitive substitution is minimal and uniquely ergodic, and its complexity and entropy are computed from the incidence matrix of $\tau$, whose Perron eigenvalue gives the entropy. For the **Fibonacci substitution** $0\mapsto01$, $1\mapsto0$ the subshift is the Sturmian subshift of slope $\digamma_{\mathrm{map}}-1$ with complexity $n+1$ and zero entropy; for the **Thue–Morse** substitution the subshift is minimal, uniquely ergodic, of zero entropy, and of linear complexity, its complexity growing like a constant times $n$ rather than like $n+1$.
 
 ### The $\beta$-Shift and Other Codings
 
-**Example (the $\beta$-shift).** For a real $\beta>1$ the **$\beta$-shift** is the subshift of $\{0,\dots,\lceil\beta\rceil-1\}^{\mathbb N}$ whose sequences are the $\beta$-expansions of the numbers in $[0,1)$; its entropy is $\log\beta$, and it is sofic when the $\beta$-expansion of $1$ is eventually periodic, in particular when $\beta$ is a Pisot number; conversely the soficity forces $\beta$ to be a **Perron number** — an algebraic integer all of whose conjugates are smaller in modulus — by the theorem of Bertrand. For $\beta=\varphi$ the $\beta$-shift is the golden-mean shift of the previous section, so that the arithmetic of the expansion and the combinatorics of the forbidden word $11$ are the same object.
+**Example (the $\beta$-shift).** For a real $\beta>1$ the **$\beta$-shift** is the subshift of $\{0,\dots,\lceil\beta\rceil-1\}^{\mathbb N}$ whose sequences are the $\beta$-expansions of the numbers in $[0,1)$; its entropy is $\log\beta$, and it is sofic when the $\beta$-expansion of $1$ is eventually periodic, in particular when $\beta$ is a Pisot number; conversely the soficity forces $\beta$ to be a **Perron number** — an algebraic integer all of whose conjugates are smaller in modulus — by the theorem of Bertrand. For $\beta=\digamma_{\mathrm{map}}$ the $\beta$-shift is the golden-mean shift of the previous section, so that the arithmetic of the expansion and the combinatorics of the forbidden word $11$ are the same object.
 
 **Example (the horseshoe and the solenoid in symbolic form).** The invariant set of the Smale horseshoe is conjugate to the full two-shift; the solenoid of *Chaos and Strange Attractors* is the inverse limit of the doubling map and its symbolic model is the one-sided two-shift, and the Anosov diffeomorphisms of the torus are coded by the Markov partitions built from their stable and unstable foliations, so that their periodic orbit counts are computed by the transition matrices, as in *Hyperbolic Dynamics and Anosov Systems*.
 
 ## Summary
 
-The **full shift** $\sigma$ on $\Sigma_d=\mathcal A^{\mathbb Z}$ is a homeomorphism of a compact perfect totally disconnected space, homeomorphic to the middle-third Cantor set; it is mixing, its periodic points are dense, the fixed points of $\sigma^n$ number $d^n$, and $h_{\mathrm{tpl}}(\sigma)=\log d$, with the Bernoulli measures as the invariant measures. A **subshift** is a closed invariant subset, determined by its **language** $\mathcal L(X)$ or by its forbidden words, and its entropy is the exponential growth rate of the language, $h_{\mathrm{tpl}}(\sigma|_X)=\lim_n\frac1n\log|\mathcal L_n(X)|$. A **subshift of finite type** $\Sigma_A$ is defined by a $\{0,1\}$-matrix $A$; its entropy is $h_{\mathrm{tpl}}=\log\rho(A)$ by Perron–Frobenius, the fixed points of $\sigma^n$ number $\operatorname{tr}(A^n)$, and the Bowen–Lanford **zeta function** is $\zeta_X(t)=\exp\sum_n\frac{p_n}{n}t^n=1/\det(I-tA)$, rational; the full $d$-shift has $\zeta=1/(1-dt)$ and the golden-mean shift has matrix $\begin{pmatrix}1&1\\1&0\end{pmatrix}$, $\zeta=1/(1-t-t^2)$, $p_n$ the Lucas numbers and entropy $\log\varphi$. A **sofic shift** is the image of an SFT, or the set of labels of the paths of a finite labelled graph, and its entropy is read from a right-resolving presentation.
+The **full shift** $\sigma$ on $\Sigma_d=\mathcal A^{\mathbb Z}$ is a homeomorphism of a compact perfect totally disconnected space, homeomorphic to the middle-third Cantor set; it is mixing, its periodic points are dense, the fixed points of $\sigma^n$ number $d^n$, and $h_{\mathrm{tpl}}(\sigma)=\log d$, with the Bernoulli measures as the invariant measures. A **subshift** is a closed invariant subset, determined by its **language** $\mathcal L(X)$ or by its forbidden words, and its entropy is the exponential growth rate of the language, $h_{\mathrm{tpl}}(\sigma|_X)=\lim_n\frac1n\log|\mathcal L_n(X)|$. A **subshift of finite type** $\Sigma_A$ is defined by a $\{0,1\}$-matrix $A$; its entropy is $h_{\mathrm{tpl}}=\log\rho(A)$ by Perron–Frobenius, the fixed points of $\sigma^n$ number $\operatorname{tr}(A^n)$, and the Bowen–Lanford **zeta function** is $\zeta_X(t)=\exp\sum_n\frac{p_n}{n}t^n=1/\det(I-tA)$, rational; the full $d$-shift has $\zeta=1/(1-dt)$ and the golden-mean shift has matrix $\begin{pmatrix}1&1\\1&0\end{pmatrix}$, $\zeta=1/(1-t-t^2)$, $p_n$ the Lucas numbers and entropy $\log\digamma_{\mathrm{map}}$. A **sofic shift** is the image of an SFT, or the set of labels of the paths of a finite labelled graph, and its entropy is read from a right-resolving presentation.
 
 A **sliding block code** is a shift-commuting map given by a finite block rule, and the theorem of Curtis–Hedlund–Lyndon states that these are exactly the continuous shift-commuting maps; a **Markov partition** of a locally maximal hyperbolic set produces a sliding block code from an SFT onto the set which is finite-to-one and injective on the periodic points, giving $h_{\mathrm{tpl}}=\log\rho(A)$ and the periodic orbit counts. The classification of the shifts of finite type is by **strong shift equivalence**, with **shift equivalence** and the **dimension group** as a decidable invariant; conjugacy implies shift equivalence by Williams and Bowen–Franks, and the converse fails in general, so the shift equivalence conjecture is false. The **complexity** $p(n)$ of a subshift satisfies the Morse–Hedlund theorem — $p(n)\le n$ forces eventual periodicity — and the **Sturmian** words with $p(n)=n+1$ are the minimal zero-entropy codings of irrational rotations; the **substitution** subshifts, the $\beta$-shifts and the **horseshoe** and solenoid models are the standard examples, the arithmetic of the codings belonging.
 
@@ -166,7 +166,7 @@ A **sliding block code** is a shift-commuting map given by a finite block rule, 
 | $\mathcal L(X)$, $\mathcal L_n(X)$ | language and words of length $n$ |
 | $X$, $\Sigma_A$ | subshift and subshift of finite type |
 | $A$ | transition (adjacency) matrix |
-| $\rho(A)$, $\varphi$ | spectral radius, golden ratio |
+| $\rho(A)$, $\digamma_{\mathrm{map}}$ | spectral radius, golden ratio |
 | $p_n$, $\zeta_X$ | periodic points of period $n$, zeta function |
 | $\pi$ | coding map of a Markov partition |
 | $p_X(n)$ | complexity of a subshift |

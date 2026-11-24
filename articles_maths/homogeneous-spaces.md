@@ -20,7 +20,7 @@ The article assumes *Smooth Manifolds and Differential Geometry* for manifolds, 
 **Theorem (orbit–stabiliser).** For a group $G$ acting on a set $X$ and $x \in X$, the map
 
 $$
-\boxed{\;\varphi_x : G/G_x \longrightarrow G \cdot x, \qquad \varphi_x(gG_x) = g \cdot x\;},
+\boxed{\;\digamma_{\mathrm{map},x} : G/G_x \longrightarrow G \cdot x, \qquad \digamma_{\mathrm{map},x}(gG_x) = g \cdot x\;},
 $$
 
 is a well-defined $G$-equivariant bijection. In particular, if the action is transitive and $H = G_x$, then $X \cong G/H$ as $G$-sets.

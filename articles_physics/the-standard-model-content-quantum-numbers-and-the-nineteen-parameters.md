@@ -35,7 +35,7 @@ with $Ϙ$ the electric charge in units of the elementary charge and $T_3$ the ei
 - The subscript $L$ on $SU(2)_L$ is a restriction: the factor acts on left-handed fields and not on right-handed ones. That is the chirality of the model.
 - The $\mathrm{U}(1)_Y$ factor acts on the two chiralities with different charges, $Y_L\neq Y_R$ for a given fermion species.
 
-Together the two asymmetries forbid a bare fermion mass. A term of the form $m\bar\psi\psi$ couples the two chiralities and is not invariant under the product, so no fermion mass exists before symmetry breaking.
+Together the two asymmetries forbid a bare fermion mass. A term of the form $m\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}$ couples the two chiralities and is not invariant under the product, so no fermion mass exists before symmetry breaking.
 
 | Factor | Group | Real dimension | Coupling | Gauge fields | Acts on |
 |---|---|---|---|---|---|

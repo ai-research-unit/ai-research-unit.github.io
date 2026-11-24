@@ -184,7 +184,7 @@ $$
 \boxed{\;\|x\|^{2} = \|x^{*}x\|\;} ,
 $$
 
-and the scalar reading of the same element is the form at the two equal arguments, $h(x,x) = \varphi(x^{*}x)$ for the functional $\varphi$ of *The Sesquilinear Form and the Conjugation*, §*The Reconstruction*, so that the form's diagonal, the Hermitian square and the norm are three readings of one datum.
+and the scalar reading of the same element is the form at the two equal arguments, $h(x,x) = \digamma_{\mathrm{map}}(x^{*}x)$ for the functional $\digamma_{\mathrm{map}}$ of *The Sesquilinear Form and the Conjugation*, §*The Reconstruction*, so that the form's diagonal, the Hermitian square and the norm are three readings of one datum.
 
 *Proof.* The first identity is the condition, and the second is the reconstruction of the form from its functional at the pair $(x,x)$.
 

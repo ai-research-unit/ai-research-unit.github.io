@@ -129,7 +129,7 @@ $$
 
 **Proof.** An element is fixed by every $\mathrm{Ad}_g$ exactly when its coefficients are constant on conjugacy classes, which is the centrality statement of *Group Algebras*. For such a $z$ each term of the sum sends $z$ to itself, because $gzg^{-1}=z$ when $z$ is central, and there are $|\chi|$ terms.
 
-In particular, for the **class sum** $C_\psi=\sum_{h\in\psi} h$ of a conjugacy class $\psi$, the class sums being a basis of the centre of $k[G]$ by *Group Algebras*, the proposition gives $\mathrm{Ad}_\chi(C_\psi)=|\chi|\,C_\psi$. The class operators therefore act on the centre diagonally with the class sizes as eigenvalues. The product of two class operators on the centre, and the algebra of the centre that the product defines, are the class algebra of the representation theory and belong to the later categories; what is fixed here is the operator attached to a class and its commutation with the inner conjugations.
+In particular, for the **class sum** $C_Ξ_{\mathrm{wfn}}=\sum_{h\inΞ_{\mathrm{wfn}}} h$ of a conjugacy class $Ξ_{\mathrm{wfn}}$, the class sums being a basis of the centre of $k[G]$ by *Group Algebras*, the proposition gives $\mathrm{Ad}_\chi(C_Ξ_{\mathrm{wfn}})=|\chi|\,C_Ξ_{\mathrm{wfn}}$. The class operators therefore act on the centre diagonally with the class sizes as eigenvalues. The product of two class operators on the centre, and the algebra of the centre that the product defines, are the class algebra of the representation theory and belong to the later categories; what is fixed here is the operator attached to a class and its commutation with the inner conjugations.
 
 ## Summary
 
@@ -155,7 +155,7 @@ The **class operator** of a conjugacy class $\chi$ is the sum $\mathrm{Ad}_\chi=
 | $N_G(H)$ | normaliser of $H$, the stabiliser of $H$ in the action on subgroups |
 | $\mathrm{Ad}_g$ | the linear extension of $c_g$ to $k[G]$, the inner automorphism of the algebra |
 | $\mathrm{Ad}_\chi=\sum_{g\in\chi}c_g$ | class operator of the conjugacy class $\chi$ |
-| $C_\psi=\sum_{h\in\psi}h$ | class sum of $\psi$, central in $k[G]$ by *Group Algebras* |
+| $C_Ξ_{\mathrm{wfn}}=\sum_{h\inΞ_{\mathrm{wfn}}}h$ | class sum of $Ξ_{\mathrm{wfn}}$, central in $k[G]$ by *Group Algebras* |
 | $k[G]$ | group algebra of finite $k$-linear combinations of the group elements |
 
 ## Further Reading

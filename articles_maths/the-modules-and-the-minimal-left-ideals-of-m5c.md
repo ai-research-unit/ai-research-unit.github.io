@@ -153,7 +153,7 @@ with summands of dimensions $1$, $4$, $4$, so that both carriers have dimension 
 
 **Proposition.** The left carrier is isomorphic to $V$ as a left module, the right carrier to $V^*$ as a right module. For a spectral projector $P=P_k$, $C_L(P_k)=\bigoplus_lA_{lk}$ is the $k$-th column and $C_R(P_k)=\bigoplus_lA_{kl}$ is the $k$-th row.
 
-**Proof.** The two decompositions are the Peirce decomposition read on the left and on the right. The dimensions are $\dim PM_5P=1$ and $\dim QM_5P=\dim PM_5Q=4$. The isomorphism $M_5P\cong V$ is the theorem of §*The Ideals $M_5P$*; for the right carrier, $PM_5=\{v\varphi:\varphi\in V^*\}$ and $v\varphi\mapsto\varphi$ is an isomorphism onto $V^*$. For the spectral projector, $A_{lk}=P_lM_5P_k$ and the column is the sum over $l$; the row is the sum over $l$ of $A_{kl}$.
+**Proof.** The two decompositions are the Peirce decomposition read on the left and on the right. The dimensions are $\dim PM_5P=1$ and $\dim QM_5P=\dim PM_5Q=4$. The isomorphism $M_5P\cong V$ is the theorem of §*The Ideals $M_5P$*; for the right carrier, $PM_5=\{v\digamma_{\mathrm{map}}:\digamma_{\mathrm{map}}\in V^*\}$ and $v\digamma_{\mathrm{map}}\mapsto\digamma_{\mathrm{map}}$ is an isomorphism onto $V^*$. For the spectral projector, $A_{lk}=P_lM_5P_k$ and the column is the sum over $l$; the row is the sum over $l$ of $A_{kl}$.
 
 **Remark.** The formula $PM_5P\oplus PM_5Q$ is the **right** carrier; the **left** carrier is $PM_5P\oplus QM_5P$. The two mixed corners are exchanged by transposition and by the involution, and they are different subspaces of $M_5$. The left carrier is the module $V$; the right carrier is the dual right module $V^*$. Neither is a Peirce line, and neither is a spinor.
 

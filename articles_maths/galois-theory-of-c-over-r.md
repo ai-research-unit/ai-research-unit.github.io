@@ -129,7 +129,7 @@ The naive reading that "$\mathbb{C}$ cannot be reached from $\mathbb{R}$ by radi
 For prime $p$ and $n \geq 1$ the extension $\mathbb{F}_{p^n}/\mathbb{F}_p$ is Galois of degree $n$, with
 
 $$
-\operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n\mathbb{Z}, \qquad \varphi(a) = a^p,
+\operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \digamma_{\mathrm{map}} \rangle \cong \mathbb{Z}/n\mathbb{Z}, \qquad \digamma_{\mathrm{map}}(a) = a^p,
 $$
 
 and its subfields are the fields $\mathbb{F}_{p^m}$ with $m \mid n$ (*Fields*). In both this and the complex case the group is cyclic, hence abelian, every subgroup is normal and every intermediate extension is Galois; both base fields are perfect.
@@ -207,7 +207,7 @@ The article places the extension in its wider setting. Real closed fields are ch
 | $G$, $H$, $K^H$ | Galois group, a subgroup, its fixed field |
 | $\overline{F}$ | Algebraic closure of $F$ |
 | $\overline{\mathbb{Q}}$, $\overline{\mathbb{Q}} \cap \mathbb{R}$ | Algebraic closure of $\mathbb{Q}$; real algebraic numbers |
-| $\mathbb{F}_{p^n}$, $\varphi(a) = a^p$ | Finite field; Frobenius automorphism |
+| $\mathbb{F}_{p^n}$, $\digamma_{\mathrm{map}}(a) = a^p$ | Finite field; Frobenius automorphism |
 | $\widehat{\mathbb{Z}} = \varprojlim_n \mathbb{Z}/n\mathbb{Z}$ | Absolute Galois group of $\mathbb{F}_p$ |
 | $\operatorname{Aut}(\mathbb{C})$ | All field automorphisms of $\mathbb{C}$ |
 | $P$ | Positive cone of an ordering of a field |

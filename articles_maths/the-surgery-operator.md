@@ -13,13 +13,13 @@ The operator is the second of the operator group, and it is the local operation 
 
 **Definition.** Let $M$ be a closed connected oriented $n$-manifold. A **surgery datum** is an embedding
 $$
-\varphi : S^k \times D^{n-k} \longrightarrow M
+\digamma_{\mathrm{map}} : S^k \times D^{n-k} \longrightarrow M
 $$
-of a product of a $k$-sphere and an $(n-k)$-disc into the interior of $M$, with $0 \leq k \leq n-1$. Writing $N = \varphi(S^k\times D^{n-k})$ for its image, the **surgered manifold** is
+of a product of a $k$-sphere and an $(n-k)$-disc into the interior of $M$, with $0 \leq k \leq n-1$. Writing $N = \digamma_{\mathrm{map}}(S^k\times D^{n-k})$ for its image, the **surgered manifold** is
 $$
-M' = \bigl(M \setminus \operatorname{int}N\bigr) \;\cup_{\ \varphi|_{S^k\times S^{n-k-1}}\ } \; D^{k+1}\times S^{n-k-1},
+M' = \bigl(M \setminus \operatorname{int}N\bigr) \;\cup_{\ \digamma_{\mathrm{map}}|_{S^k\times S^{n-k-1}}\ } \; D^{k+1}\times S^{n-k-1},
 $$
-the two pieces glued along the common boundary $S^k\times S^{n-k-1}$ by the restriction of $\varphi$. The **surgery operator** is the assignment $S_\varphi : [M]\mapsto[M']$ carrying a manifold to the manifold obtained by the surgery, and its **trace** is the $(n+1)$-manifold with boundary
+the two pieces glued along the common boundary $S^k\times S^{n-k-1}$ by the restriction of $\digamma_{\mathrm{map}}$. The **surgery operator** is the assignment $S_\digamma_{\mathrm{map}} : [M]\mapsto[M']$ carrying a manifold to the manifold obtained by the surgery, and its **trace** is the $(n+1)$-manifold with boundary
 $$
 W = M\times[0,1] \;\cup_{\ S^k\times D^{n-k}\times\{1\}\ } \; D^{k+1}\times D^{n-k},
 $$
@@ -33,13 +33,13 @@ in which a $(k+1)$-handle is attached to the top of $M\times[0,1]$.
 $$
 W \;\simeq\; M \cup_{\alpha} e^{k+1}, \qquad W \;\simeq\; M' \cup_{\beta} \exp(\,n-k),
 $$
-where $\alpha$ is the **attaching sphere** $\varphi(S^k\times\{0\})$ and $\beta$ the **belt sphere** $\varphi(\{0\}\times S^{n-k-1})$. The first describes the surgery as the addition of a $(k+1)$-cell to $M$, the second as the addition of an $(n-k)$-cell to $M'$.
+where $\alpha$ is the **attaching sphere** $\digamma_{\mathrm{map}}(S^k\times\{0\})$ and $\beta$ the **belt sphere** $\digamma_{\mathrm{map}}(\{0\}\times S^{n-k-1})$. The first describes the surgery as the addition of a $(k+1)$-cell to $M$, the second as the addition of an $(n-k)$-cell to $M'$.
 
 ## The Effect on the Homology
 
 **Definition.** The class that the surgery acts on is
 $$
-\alpha = \varphi_*[S^k] \in H_k(M;\mathbb{Z}),
+\alpha = \digamma_{\mathrm{map},*}[S^k] \in H_k(M;\mathbb{Z}),
 $$
 the image of the fundamental class of the $k$-sphere under the embedding of the core.
 
@@ -140,17 +140,17 @@ and the obstruction is the **signature** of the middle-dimensional intersection 
 
 ## Summary
 
-A surgery removes an embedded product $S^k\times D^{n-k}$ from an $n$-manifold and glues back $D^{k+1}\times S^{n-k-1}$, and the surgery operator $S_\varphi$ carries a manifold to the surgered manifold $M'$. Its trace $W$ is the bordism traced by the operation and admits the two descriptions $W\simeq M\cup_\alpha e^{k+1}\simeq M'\cup_\beta e^{n-k}$, with $\alpha$ the attaching sphere and $\beta$ the belt sphere. The relative homology of the trace vanishes except in degree $k+1$, where it is $\mathbb{Z}$, and the long exact sequences of the two descriptions give the effect on the homology: below the middle dimension ($2k\leq n-3$) the surgery kills the class $\alpha$, so $H_k(M')\cong H_k(M)/\langle\alpha\rangle$, it leaves the intermediate degrees $k+1 \leq i \leq n-k-2$ unchanged, and it changes the complementary degree by the dual statement. On the chain complex the operation is an elementary expansion (equivalently a collapse), and in the middle dimension it is an elementary operation on the intersection form, adding or removing a hyperbolic plane. The obstruction to reversing the operation is the Wall surgery obstruction in $L_n(\mathbb{Z}[\pi_1])$, which is the signature in dimension $4k$ and the Kervaire invariant in dimension $4k+2$, and the surgery exact sequence relates it to the structure set and the normal invariants; the conclusions hold in dimension at least five, and the low-dimensional exceptions are those of the geometric topology of this Part.
+A surgery removes an embedded product $S^k\times D^{n-k}$ from an $n$-manifold and glues back $D^{k+1}\times S^{n-k-1}$, and the surgery operator $S_\digamma_{\mathrm{map}}$ carries a manifold to the surgered manifold $M'$. Its trace $W$ is the bordism traced by the operation and admits the two descriptions $W\simeq M\cup_\alpha e^{k+1}\simeq M'\cup_\beta e^{n-k}$, with $\alpha$ the attaching sphere and $\beta$ the belt sphere. The relative homology of the trace vanishes except in degree $k+1$, where it is $\mathbb{Z}$, and the long exact sequences of the two descriptions give the effect on the homology: below the middle dimension ($2k\leq n-3$) the surgery kills the class $\alpha$, so $H_k(M')\cong H_k(M)/\langle\alpha\rangle$, it leaves the intermediate degrees $k+1 \leq i \leq n-k-2$ unchanged, and it changes the complementary degree by the dual statement. On the chain complex the operation is an elementary expansion (equivalently a collapse), and in the middle dimension it is an elementary operation on the intersection form, adding or removing a hyperbolic plane. The obstruction to reversing the operation is the Wall surgery obstruction in $L_n(\mathbb{Z}[\pi_1])$, which is the signature in dimension $4k$ and the Kervaire invariant in dimension $4k+2$, and the surgery exact sequence relates it to the structure set and the normal invariants; the conclusions hold in dimension at least five, and the low-dimensional exceptions are those of the geometric topology of this Part.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\varphi : S^k\times D^{n-k}\hookrightarrow M$ | the surgery datum; a framed embedding |
+| $\digamma_{\mathrm{map}} : S^k\times D^{n-k}\hookrightarrow M$ | the surgery datum; a framed embedding |
 | $M' = (M\setminus\operatorname{int}N)\cup(D^{k+1}\times S^{n-k-1})$ | the surgered manifold |
-| $S_\varphi$ | the surgery operator, $[M]\mapsto[M']$ |
+| $S_\digamma_{\mathrm{map}}$ | the surgery operator, $[M]\mapsto[M']$ |
 | $W = M\times I\cup_{\text{handle}} D^{k+1}\times D^{n-k}$ | the trace of the surgery, an oriented bordism $M\rightsquigarrow M'$ |
-| $\alpha = \varphi_*[S^k]$, $\beta$ | the attaching sphere class in $H_k(M)$; the belt sphere class in $H_{n-k-1}(M')$ |
+| $\alpha = \digamma_{\mathrm{map},*}[S^k]$, $\beta$ | the attaching sphere class in $H_k(M)$; the belt sphere class in $H_{n-k-1}(M')$ |
 | $W\simeq M\cup_\alpha e^{k+1}\simeq M'\cup_\beta e^{n-k}$ | the two handle descriptions of the trace |
 | $H_i(W,M)\cong\mathbb{Z}$ at $i=k+1$, $0$ else | the relative homology of the trace |
 | $H_k(M')\cong H_k(M)/\langle\alpha\rangle$ | the class killed by a below-the-middle surgery |

@@ -101,26 +101,26 @@ $$
 the one-dimensional Navier–Stokes equation for a flow with no pressure. The Hopf–Cole transformation
 
 $$
-u=-2\digamma_{\mathrm{kin}}\,\partial_x\ln\psi
+u=-2\digamma_{\mathrm{kin}}\,\partial_x\lnΞ_{\mathrm{wfn}}
 $$
 
 carries it into the heat equation
 
 $$
-\partial_{t'}\psi=\digamma_{\mathrm{kin}}\,\partial_{xx}\psi ,
+\partial_{t'}Ξ_{\mathrm{wfn}}=\digamma_{\mathrm{kin}}\,\partial_{xx}Ξ_{\mathrm{wfn}} ,
 $$
 
-which is linear. The check is a differentiation: with $\psi$ solving the heat equation, $u$ as defined solves Burgers' equation identically, and the check is exact for every positive $\digamma_{\mathrm{kin}}$.
+which is linear. The check is a differentiation: with $Ξ_{\mathrm{wfn}}$ solving the heat equation, $u$ as defined solves Burgers' equation identically, and the check is exact for every positive $\digamma_{\mathrm{kin}}$.
 
-The check is worth writing on a case. Take the heat kernel $\psi=(t')^{-1/2}\exp(-x^{2}/(4\digamma_{\mathrm{kin}}t'))$. Then
+The check is worth writing on a case. Take the heat kernel $Ξ_{\mathrm{wfn}}=(t')^{-1/2}\exp(-x^{2}/(4\digamma_{\mathrm{kin}}t'))$. Then
 
 $$
-u=-2\digamma_{\mathrm{kin}}\,\partial_x\ln\psi=\frac{x}{t'},
+u=-2\digamma_{\mathrm{kin}}\,\partial_x\lnΞ_{\mathrm{wfn}}=\frac{x}{t'},
 $$
 
 which solves Burgers' equation with no pressure: $\partial_{t'}u=-x/t'{}^{2}$, $u\partial_xu=x/t'{}^{2}$, and $\digamma_{\mathrm{kin}}\partial_{xx}u=0$. The three terms cancel pairwise, and the solution is the inviscid rarefaction written in similarity variables.
 
-In three dimensions the transformation survives only for potential flow. With $\vec v=-2\digamma_{\mathrm{kin}}\vec\nabla_\Phi\ln\psi$ and $\psi$ solving $\partial_{t'}\psi=\digamma_{\mathrm{kin}}\Delta_\Phi\psi$, the vector Burgers equation holds identically, because the two identities used in one dimension are the gradient of the scalar ones. A flow with a non-vanishing curl is not of this form, and for it no such transformation is known. So even the exceptional linearisation is a potential-flow statement, and the vorticity obstruction of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) is untouched.
+In three dimensions the transformation survives only for potential flow. With $\vec v=-2\digamma_{\mathrm{kin}}\vec\nabla_\Phi\lnΞ_{\mathrm{wfn}}$ and $Ξ_{\mathrm{wfn}}$ solving $\partial_{t'}Ξ_{\mathrm{wfn}}=\digamma_{\mathrm{kin}}\Delta_\PhiΞ_{\mathrm{wfn}}$, the vector Burgers equation holds identically, because the two identities used in one dimension are the gradient of the scalar ones. A flow with a non-vanishing curl is not of this form, and for it no such transformation is known. So even the exceptional linearisation is a potential-flow statement, and the vorticity obstruction of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) is untouched.
 
 ## Why the Heat Equation Is Not a Wave Equation
 
@@ -186,7 +186,7 @@ The heat equation is not a wave equation. Its frequency is $-i\digamma_{\mathrm{
 | $s_{\mathrm{spc}},\ s_{\mathrm{ent}}$ | Specific entropy and entropy density |
 | $T$ | Temperature |
 | $u$ | Velocity of the one-dimensional flow |
-| $\psi$ | Hopf–Cole potential |
+| $Ξ_{\mathrm{wfn}}$ | Hopf–Cole potential |
 | $E$ | Kinetic energy of the flow |
 | $\rho_{\mathrm{mass}}$ | Mass density |
 

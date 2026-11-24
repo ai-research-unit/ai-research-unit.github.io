@@ -200,24 +200,24 @@ $$
 with basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+-})$ and the same complex dimension two. A spinor and a co-spinor are
 
 $$
-\psi=\psi_{1}\tilde\Pi_{\mathrm{id},+}+\psi_{2}\vec\Pi_{\mathrm{nil},-+},\qquad
+Ξ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn},1}\tilde\Pi_{\mathrm{id},+}+Ξ_{\mathrm{wfn},2}\vec\Pi_{\mathrm{nil},-+},\qquad
 \chi=\chi_{1}\tilde\Pi_{\mathrm{id},+}+\chi_{2}\vec\Pi_{\mathrm{nil},+-},
 $$
 
 with complex coefficients. The products needed below are $\tilde\Pi_{\mathrm{id},+}^{2}=\tilde\Pi_{\mathrm{id},+}$, $\tilde\Pi_{\mathrm{id},+}\vec\Pi_{\mathrm{nil},+-}=\vec\Pi_{\mathrm{nil},+-}$, $\vec\Pi_{\mathrm{nil},-+}\tilde\Pi_{\mathrm{id},+}=\vec\Pi_{\mathrm{nil},-+}$, $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$, $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-}$, and the two vanishing products $\tilde\Pi_{\mathrm{id},+}\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}\tilde\Pi_{\mathrm{id},+}=0$.
 
-**Proposition (the cone is the product set).** The set $\{\psi\chi:\psi\in S_{+},\chi\in S_{+}^{\vee}\}$ is exactly the cone $\mathcal{N}$.
+**Proposition (the cone is the product set).** The set $\{Ξ_{\mathrm{wfn}}\chi:Ξ_{\mathrm{wfn}}\in S_{+},\chi\in S_{+}^{\vee}\}$ is exactly the cone $\mathcal{N}$.
 
-*Proof.* Multiplying out, the Peirce coordinates of $Q=\psi\chi$ are
+*Proof.* Multiplying out, the Peirce coordinates of $Q=Ξ_{\mathrm{wfn}}\chi$ are
 
 $$
-Q_{++}=\psi_{1}\chi_{1},\qquad Q_{+-}=\psi_{1}\chi_{2},\qquad Q_{-+}=\psi_{2}\chi_{1},\qquad Q_{--}=\psi_{2}\chi_{2},
+Q_{++}=Ξ_{\mathrm{wfn},1}\chi_{1},\qquad Q_{+-}=Ξ_{\mathrm{wfn},1}\chi_{2},\qquad Q_{-+}=Ξ_{\mathrm{wfn},2}\chi_{1},\qquad Q_{--}=Ξ_{\mathrm{wfn},2}\chi_{2},
 $$
 
 so each coordinate is an entry of the outer product of the coefficient column of the spinor with the coefficient row of the co-spinor, and
 
 $$
-Q_{++}Q_{--}-Q_{+-}Q_{-+}=\psi_{1}\chi_{1}\psi_{2}\chi_{2}-\psi_{1}\chi_{2}\psi_{2}\chi_{1}=0 .
+Q_{++}Q_{--}-Q_{+-}Q_{-+}=Ξ_{\mathrm{wfn},1}\chi_{1}Ξ_{\mathrm{wfn},2}\chi_{2}-Ξ_{\mathrm{wfn},1}\chi_{2}Ξ_{\mathrm{wfn},2}\chi_{1}=0 .
 $$
 
 The determinant of the Peirce coordinates being the norm (*The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*), the product is on the cone. Conversely a nonzero element of the cone has the rank-one model $\mathsf{M}_{2}(\tilde Q)=uv^{\mathsf{T}}$ of §*The Matrix Picture*, and the display is read backwards: the column $u$ gives the coordinates of a spinor and the row $v^{\mathsf{T}}$ those of a co-spinor, and their product is that element. The zero of the cone is the product of two zero factors.
@@ -225,36 +225,36 @@ The determinant of the Peirce coordinates being the norm (*The Peirce Basis of a
 **The contraction.** A co-spinor and a spinor multiply in the other order too, and that product is not an operator but a multiple of the idempotent:
 
 $$
-\chi\psi=\varepsilon(\chi,\psi)\,\tilde\Pi_{\mathrm{id},+},\qquad \varepsilon(\chi,\psi)=\chi_{1}\psi_{1}+\chi_{2}\psi_{2},
+\chiΞ_{\mathrm{wfn}}=\varepsilon(\chi,Ξ_{\mathrm{wfn}})\,\tilde\Pi_{\mathrm{id},+},\qquad \varepsilon(\chi,Ξ_{\mathrm{wfn}})=\chi_{1}Ξ_{\mathrm{wfn},1}+\chi_{2}Ξ_{\mathrm{wfn},2},
 $$
 
 because $\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, the corner of a primitive idempotent. The form $\varepsilon$ is complex bilinear and carries **no conjugation**; it is the evaluation of the co-spinor on the spinor. Its value is the scalar part,
 
 $$
-2Q_{t}=\varepsilon(\chi,\psi),
+2Q_{t}=\varepsilon(\chi,Ξ_{\mathrm{wfn}}),
 $$
 
 the same identity as $2Q_t=v^{\mathsf{T}}u$ of §*The Matrix Picture*. **The trace of the matrix model is the contraction of the two factors.**
 
-**Theorem (the pure stratum is the incidence).** For $Q=\psi\chi\neq0$ the spinor line $[\psi]$ lies in the hyperplane $\ker\chi$ exactly when $Q$ is pure.
+**Theorem (the pure stratum is the incidence).** For $Q=Ξ_{\mathrm{wfn}}\chi\neq0$ the spinor line $[Ξ_{\mathrm{wfn}}]$ lies in the hyperplane $\ker\chi$ exactly when $Q$ is pure.
 
-*Proof.* The condition $[\psi]\subset\ker\chi$ is $\varepsilon(\chi,\psi)=0$, that is $Q_{t}=0$, that is the purity of $Q$ by §*The Three Strata*. Off the pure stratum the two are transverse: the line and the hyperplane meet only in the zero vector.
+*Proof.* The condition $[Ξ_{\mathrm{wfn}}]\subset\ker\chi$ is $\varepsilon(\chi,Ξ_{\mathrm{wfn}})=0$, that is $Q_{t}=0$, that is the purity of $Q$ by §*The Three Strata*. Off the pure stratum the two are transverse: the line and the hyperplane meet only in the zero vector.
 
-**Corollary (the quadric is a product of two projective lines).** The assignment $[Q]\mapsto([\psi],[\chi])$ is a bijection
+**Corollary (the quadric is a product of two projective lines).** The assignment $[Q]\mapsto([Ξ_{\mathrm{wfn}}],[\chi])$ is a bijection
 
 $$
 \mathbb{P}(\mathcal{N})\longrightarrow\mathbb{P}(S_{+})\times\mathbb{P}(S_{+}^{\vee}),
 $$
 
-because the scaling $(\psi,\chi)\mapsto(\lambda\psi,\lambda^{-1}\chi)$ leaves $\psi\chi$ fixed, and conversely the pair is recovered from the element: the line $[\psi]$ is the column space of the operator and the line $[\chi]$ its row space, which fixes the relative scale. Under it the projectivised pure stratum is the incidence variety
+because the scaling $(Ξ_{\mathrm{wfn}},\chi)\mapsto(\lambdaΞ_{\mathrm{wfn}},\lambda^{-1}\chi)$ leaves $Ξ_{\mathrm{wfn}}\chi$ fixed, and conversely the pair is recovered from the element: the line $[Ξ_{\mathrm{wfn}}]$ is the column space of the operator and the line $[\chi]$ its row space, which fixes the relative scale. Under it the projectivised pure stratum is the incidence variety
 
 $$
-\{([\psi],[\chi]):[\psi]\subset\ker\chi\}\cong\mathrm{Fl}(1,2;\mathbb{C}^{2})\cong\mathbb{P}^{1},
+\{([Ξ_{\mathrm{wfn}}],[\chi]):[Ξ_{\mathrm{wfn}}]\subset\ker\chi\}\cong\mathrm{Fl}(1,2;\mathbb{C}^{2})\cong\mathbb{P}^{1},
 $$
 
 which is the hyperplane section $\{Q_{t}=0\}$ of the quadric, a conic in the plane $\{Q_{t}=0\}$, and the projectivised non-pure stratum is its complement. In rank two a hyperplane of the plane is a line, so incidence is equality of the two lines: the pure stratum is the **diagonal** of the product and the non-pure stratum is the complement of the diagonal, which is the idempotent surface of §*The Three Strata*. An idempotent is a pair of a line and a distinct hyperplane, and the coincidence that purity forces is exactly what is removed.
 
-**The two rulings.** Fixing the spinor line and varying the co-spinor gives the complex plane $\psi S_{+}^{\vee}$, whose projectivisation is a line of the quadric; fixing the co-spinor and varying the spinor gives the plane $S_{+}\chi$. The two families are the two rulings, and two members of different families meet in exactly the point $[\psi\chi]$: an element of $\psi S_{+}^{\vee}$ has column space $\mathbb{C}\psi$ and an element of $S_{+}\chi$ has row space $\mathbb{C}\chi$, and a rank-one element with both is a multiple of the product. **The two rulings of the Segre quadric are the spinor line and the co-spinor line.** The statements that the rulings are the images of the two factors, in *$M_2(\mathbb{C})$ Defining Representation : Operators* and in *Split-Quaternion Null Quadric and Projective Geometry*, receive here their biquaternion names.
+**The two rulings.** Fixing the spinor line and varying the co-spinor gives the complex plane $Ξ_{\mathrm{wfn}} S_{+}^{\vee}$, whose projectivisation is a line of the quadric; fixing the co-spinor and varying the spinor gives the plane $S_{+}\chi$. The two families are the two rulings, and two members of different families meet in exactly the point $[Ξ_{\mathrm{wfn}}\chi]$: an element of $Ξ_{\mathrm{wfn}} S_{+}^{\vee}$ has column space $\mathbb{C}Ξ_{\mathrm{wfn}}$ and an element of $S_{+}\chi$ has row space $\mathbb{C}\chi$, and a rank-one element with both is a multiple of the product. **The two rulings of the Segre quadric are the spinor line and the co-spinor line.** The statements that the rulings are the images of the two factors, in *$M_2(\mathbb{C})$ Defining Representation : Operators* and in *Split-Quaternion Null Quadric and Projective Geometry*, receive here their biquaternion names.
 
 **Caution (the two row spaces).** The superscript star is already taken. The corpus writes $S_{+}^{*}=(\mathbb{B}\tilde\Pi_{\mathrm{id},+})^{*}=\tilde\Pi_{\mathrm{id},+}^{*}\mathbb{B}$ for the Hermitian adjoint, which is the row of $\tilde\Pi_{\mathrm{id},+}^{*}$. For the standard pair $\tilde\Pi_{\mathrm{id},+}^{*}=\tilde\Pi_{\mathrm{id},+}$, so the two row spaces coincide and the standard chart hides the difference; for a general family they do not, and the product above uses the row of $\tilde\Pi_{\mathrm{id},+}$ and no involution at all. The symbol $\vee$ marks that difference.
 
@@ -456,7 +456,7 @@ The $\natural$-degenerate sector is the null cone $\mathcal{N}=\{N=0\}$, the zer
 
 It is the determinantal variety of rank at most one. The origin is the apex and the only singular point; the punctured cone is the zero-divisor set. The cone is a two-sided ideal of the multiplicative semigroup and contains no invertible element.
 
-Every point of the punctured cone is a product $\psi\chi$ of a spinor of $S_{+}=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and a co-spinor of $S_{+}^{\vee}=\tilde\Pi_{\mathrm{id},+}\mathbb{B}$, the assignment $[Q]\mapsto([\psi],[\chi])$ is a bijection $\mathbb{P}(\mathcal{N})\cong\mathbb{P}(S_{+})\times\mathbb{P}(S_{+}^{\vee})$, and the scalar part is the contraction $2Q_t=\varepsilon(\chi,\psi)$ of the pair. The contraction vanishes, equivalently the spinor line lies in the kernel of the co-spinor, exactly on the pure stratum; the projectivised pure stratum is therefore the incidence variety $\mathrm{Fl}(1,2;\mathbb{C}^{2})$, a conic in $\mathbb{P}^{3}$, and the projectivised non-pure stratum is its complement, the idempotent surface. The two rulings of the quadric are the spinor line and the co-spinor line.
+Every point of the punctured cone is a product $Ξ_{\mathrm{wfn}}\chi$ of a spinor of $S_{+}=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and a co-spinor of $S_{+}^{\vee}=\tilde\Pi_{\mathrm{id},+}\mathbb{B}$, the assignment $[Q]\mapsto([Ξ_{\mathrm{wfn}}],[\chi])$ is a bijection $\mathbb{P}(\mathcal{N})\cong\mathbb{P}(S_{+})\times\mathbb{P}(S_{+}^{\vee})$, and the scalar part is the contraction $2Q_t=\varepsilon(\chi,Ξ_{\mathrm{wfn}})$ of the pair. The contraction vanishes, equivalently the spinor line lies in the kernel of the co-spinor, exactly on the pure stratum; the projectivised pure stratum is therefore the incidence variety $\mathrm{Fl}(1,2;\mathbb{C}^{2})$, a conic in $\mathbb{P}^{3}$, and the projectivised non-pure stratum is its complement, the idempotent surface. The two rulings of the quadric are the spinor line and the co-spinor line.
 
 The cone splits into the origin, the pure stratum of nilpotents of index two, and the non-pure stratum of complex multiples of non-trivial idempotents. The three have real dimensions zero, four and six; the non-pure stratum is open and dense in the punctured cone. Under similarity the pure stratum is one orbit and each idempotent multiple family $c\tilde\Pi_{\mathrm{id}}$ is one orbit, separated by the scalar part $Q_t$.
 
@@ -486,7 +486,7 @@ The polar decomposition survives on the cone in degenerate form: the Hermitian f
 | $S_{+}=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ | the spinor space, the Peirce carrier |
 | $S_{+}^{\vee}=\tilde\Pi_{\mathrm{id},+}\mathbb{B}$ | the co-spinor space, its row space |
 | $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$ | the mixed units of the Peirce basis |
-| $\varepsilon(\chi,\psi)$ | the contraction, $\chi\psi=\varepsilon(\chi,\psi)\tilde\Pi_{\mathrm{id},+}$ |
+| $\varepsilon(\chi,Ξ_{\mathrm{wfn}})$ | the contraction, $\chiΞ_{\mathrm{wfn}}=\varepsilon(\chi,Ξ_{\mathrm{wfn}})\tilde\Pi_{\mathrm{id},+}$ |
 | $Q_{st}$ | the Peirce coordinates of $\tilde Q$ |
 | $\mathsf{M}_2(\tilde Q)=uv^{\mathsf{T}}$ | the rank-one matrix model |
 | $Q_t=\frac{1}{2}v^{\mathsf{T}}u$ | the scalar part as a contraction |

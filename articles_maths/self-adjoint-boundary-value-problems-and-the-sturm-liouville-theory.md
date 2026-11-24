@@ -96,15 +96,15 @@ which is a Hermitian sesquilinear form on the admissible subspace $\mathcal{A}$,
 
 ## Completeness
 
-**Theorem (completeness of the eigenfunction expansion).** Let the problem $(L,B)$ be self-adjoint and suppose that the Green operator $G$ of *The Green Operator* exists, is compact and is self-adjoint on $L^2(\Omega)$. Then the eigenvalues of the problem form a real sequence $\lambda_1,\lambda_2,\dots$ tending to infinity in absolute value, each of finite multiplicity, the eigenfunctions $\varphi_n$ may be chosen orthonormal in $L^2(\Omega)$, and they are complete:
+**Theorem (completeness of the eigenfunction expansion).** Let the problem $(L,B)$ be self-adjoint and suppose that the Green operator $G$ of *The Green Operator* exists, is compact and is self-adjoint on $L^2(\Omega)$. Then the eigenvalues of the problem form a real sequence $\lambda_1,\lambda_2,\dots$ tending to infinity in absolute value, each of finite multiplicity, the eigenfunctions $\digamma_{\mathrm{map},n}$ may be chosen orthonormal in $L^2(\Omega)$, and they are complete:
 
 $$
-\boxed{\;f = \sum_{n\ge1}\langle f,\varphi_n\rangle\,\varphi_n , \qquad \|f\|^2 = \sum_{n\ge1}\bigl|\langle f,\varphi_n\rangle\bigr|^2\;} ,
+\boxed{\;f = \sum_{n\ge1}\langle f,\digamma_{\mathrm{map},n}\rangle\,\digamma_{\mathrm{map},n} , \qquad \|f\|^2 = \sum_{n\ge1}\bigl|\langle f,\digamma_{\mathrm{map},n}\rangle\bigr|^2\;} ,
 $$
 
 the first series converging in $L^2(\Omega)$ for every $f$.
 
-*Proof.* The Green operator $G$ is the inverse of $L$ on the admissible subspace, and the eigenvector equation $G\varphi=\mu\varphi$ with $\mu\neq0$ is equivalent to $L\varphi=\mu^{-1}\varphi$ with $\varphi\in\mathcal{A}$; hence the eigenvalues of $G$ are the reciprocals of the eigenvalues of $L$, and the eigenfunctions are the same. The spectral theorem for a compact self-adjoint operator on a Hilbert space, that of *Banach and Hilbert Spaces*, gives an orthonormal basis of eigenvectors of $G$ with real eigenvalues tending to $0$; reading the reciprocals gives the completeness, the reality and the finiteness of the multiplicity for $L$. The expansion is the expansion in that basis.
+*Proof.* The Green operator $G$ is the inverse of $L$ on the admissible subspace, and the eigenvector equation $G\digamma_{\mathrm{map}}=\mu\digamma_{\mathrm{map}}$ with $\mu\neq0$ is equivalent to $L\digamma_{\mathrm{map}}=\mu^{-1}\digamma_{\mathrm{map}}$ with $\digamma_{\mathrm{map}}\in\mathcal{A}$; hence the eigenvalues of $G$ are the reciprocals of the eigenvalues of $L$, and the eigenfunctions are the same. The spectral theorem for a compact self-adjoint operator on a Hilbert space, that of *Banach and Hilbert Spaces*, gives an orthonormal basis of eigenvectors of $G$ with real eigenvalues tending to $0$; reading the reciprocals gives the completeness, the reality and the finiteness of the multiplicity for $L$. The expansion is the expansion in that basis.
 
 **Remark (self-adjointness of the inverse).** The hypothesis that $G$ is self-adjoint is the analytic form of the self-adjointness of the problem: the Green operator of a self-adjoint problem is self-adjoint, and the kernel identity $G(x,y)=\overline{G(y,x)}$ of *The Green Operator* is its integral form. The proof of the implication, with the boundary conditions of the adjoint problem entered, is the content of *The Adjoint Problem and the Green Function*, below; here it is used in the direction required, namely that the self-adjointness of the problem produces the complete expansion.
 
@@ -130,7 +130,7 @@ an anti-Hermitian form in the four boundary values $w(a),w'(a),w(b),w'(b)$ and t
 
 The boundary-value problem for a differential operator carries a boundary form, obtained from the Green formula as the difference $\int(Lw)\bar v-\int w\overline{L^{\dagger}v}$ expressed in the boundary data; for a formally self-adjoint $L$ the form is sesquilinear, anti-Hermitian, $\langle w,v\rangle_\partial=-\overline{\langle v,w\rangle_\partial}$, and determined by the traces of $w$ and $v$ up to order $m-1$. The problem is self-adjoint when the form vanishes on the admissible subspace, equivalently when the admissible subspace is Lagrangian for it, and that vanishing is exactly the symmetry of the realisation, $\langle Lw,v\rangle-\langle w,Lv\rangle=\langle w,v\rangle_\partial$. Self-adjointness makes the eigenvalues real, by $(\lambda-\bar\lambda)\|w\|^2=0$, and makes the eigenfunctions belonging to distinct eigenvalues orthogonal; the eigenspaces are mutually orthogonal and the eigenvalue equation is the hermitian problem for the form $\mathfrak{a}(w,v)=\langle Lw,v\rangle$.
 
-If in addition the Green operator is compact and self-adjoint, the spectral theorem for a compact self-adjoint operator gives a complete orthonormal system of eigenfunctions, the eigenvalues being the reciprocals of its eigenvalues, real, of finite multiplicity and tending to infinity; this is the completeness of the eigenfunction expansion, $f=\sum\langle f,\varphi_n\rangle\varphi_n$. On an interval the boundary form is the classical bracket $[\,p(w\bar v'-w'\bar v)\,]_a^b$, the separated and periodic conditions are self-adjoint, and the resulting theory is the classical Sturm–Liouville theory: real, simple, increasing eigenvalues and a complete expansion in the weighted space, the periodic case differing only in the multiplicity of the eigenvalues.
+If in addition the Green operator is compact and self-adjoint, the spectral theorem for a compact self-adjoint operator gives a complete orthonormal system of eigenfunctions, the eigenvalues being the reciprocals of its eigenvalues, real, of finite multiplicity and tending to infinity; this is the completeness of the eigenfunction expansion, $f=\sum\langle f,\digamma_{\mathrm{map},n}\rangle\digamma_{\mathrm{map},n}$. On an interval the boundary form is the classical bracket $[\,p(w\bar v'-w'\bar v)\,]_a^b$, the separated and periodic conditions are self-adjoint, and the resulting theory is the classical Sturm–Liouville theory: real, simple, increasing eigenvalues and a complete expansion in the weighted space, the periodic case differing only in the multiplicity of the eigenvalues.
 
 ## Summary of Notation
 
@@ -142,7 +142,7 @@ If in addition the Green operator is compact and self-adjoint, the spectral theo
 | $\gamma w = (\gamma_0w,\dots,\gamma_{m-1}w)$ | Boundary data (traces of the normal derivatives) |
 | $\mathcal{A}$ | Admissible subspace of the boundary condition |
 | $\mathfrak{a}(w,v)=\langle Lw,v\rangle$ | Hermitian form of the problem |
-| $\lambda_n$, $\varphi_n$ | Eigenvalues and orthonormal eigenfunctions |
+| $\lambda_n$, $\digamma_{\mathrm{map},n}$ | Eigenvalues and orthonormal eigenfunctions |
 | $G$ | Compact self-adjoint Green operator |
 
 ## Further Reading

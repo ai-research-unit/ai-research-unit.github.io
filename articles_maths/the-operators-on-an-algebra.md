@@ -209,28 +209,28 @@ $$
 L(1) = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad L(i) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}.
 $$
 
-**The conjugate-linear operators.** The remainder of $M_2(\mathbb{R})$ is not of this form. An operator $\varphi$ is **conjugate-linear** when it is additive and $\varphi(\lambda z) = \bar\lambda\,\varphi(z)$ for every $\lambda \in \mathbb{C}$; such an operator is $\mathbb{R}$-linear, is not $\mathbb{C}$-linear unless it is zero, and is determined by the single value $u = \varphi(1)$, since
+**The conjugate-linear operators.** The remainder of $M_2(\mathbb{R})$ is not of this form. An operator $\digamma_{\mathrm{map}}$ is **conjugate-linear** when it is additive and $\digamma_{\mathrm{map}}(\lambda z) = \bar\lambda\,\digamma_{\mathrm{map}}(z)$ for every $\lambda \in \mathbb{C}$; such an operator is $\mathbb{R}$-linear, is not $\mathbb{C}$-linear unless it is zero, and is determined by the single value $u = \digamma_{\mathrm{map}}(1)$, since
 
 $$
-\varphi(z) = \varphi(z \cdot 1) = \bar z\,\varphi(1) = \bar z u .
+\digamma_{\mathrm{map}}(z) = \digamma_{\mathrm{map}}(z \cdot 1) = \bar z\,\digamma_{\mathrm{map}}(1) = \bar z u .
 $$
 
 Writing $u = p + qi$ and using $\bar i = -i$, the operator is
 
 $$
-\varphi(p + qi): \quad 1 \mapsto p + qi, \qquad i \mapsto -i(p+qi) = q - pi,
+\digamma_{\mathrm{map}}(p + qi): \quad 1 \mapsto p + qi, \qquad i \mapsto -i(p+qi) = q - pi,
 $$
 
 so in the basis $(1,i)$ its matrix and its action are
 
 $$
-\varphi = \begin{pmatrix} p & q \\ q & -p \end{pmatrix}, \qquad \varphi(x + yi) = (px + qy) + (qx - py)i .
+\digamma_{\mathrm{map}} = \begin{pmatrix} p & q \\ q & -p \end{pmatrix}, \qquad \digamma_{\mathrm{map}}(x + yi) = (px + qy) + (qx - py)i .
 $$
 
 These operators form a subspace of dimension $2$. The composite of two of them is $\mathbb{C}$-linear rather than conjugate-linear, since
 
 $$
-\varphi_u(\varphi_v(z)) = \overline{\varphi_v(z)}\,u = \overline{\bar z v}\,u = \overline{v}\,u\,z = L(\overline{v}u)(z),
+\digamma_{\mathrm{map},u}(\digamma_{\mathrm{map},v}(z)) = \overline{\digamma_{\mathrm{map},v}(z)}\,u = \overline{\bar z v}\,u = \overline{v}\,u\,z = L(\overline{v}u)(z),
 $$
 
 so the conjugate-linear operators are not closed under composition; the composite lands back in $L(\mathbb{C})$, as it must, since the product of two conjugations is a linear map. The two subspaces together exhaust the ambient space:

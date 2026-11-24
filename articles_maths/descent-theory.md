@@ -11,7 +11,7 @@ Throughout, $(\mathcal{C},J)$ is a site with a terminal object, $f:S'\to S$ is a
 
 ## Fibred and Indexed Categories
 
-**Definition.** An **indexed category** over $\mathcal{C}$ is a pseudofunctor $\mathbb{X}:\mathcal{C}_{\mathrm{opp}}\to\mathbf{Cat}$: to each object $S$ a category $\mathbb{X}_S$, to each morphism $f:S'\to S$ a base-change functor $f^*:\mathbb{X}_S\to\mathbb{X}_{S'}$, to each composition a coherent isomorphism $(fg)^*\cong g^*f^*$, and to each identity a coherent isomorphism $\mathrm{id}^*\cong\mathrm{id}$, subject to the usual associativity and unit conditions. The **total category** $\int\mathbb{X}$ has as objects the pairs $(S,X)$ with $X$ an object of $\mathbb{X}_S$ and as morphisms the pairs $(f,\phi)$ with $f:S'\to S$ and $\phi:f^*X\to X'$, and it is fibred over $\mathcal{C}$ by the projection $(S,X)\mapsto S$. A fibred category is a **stack** when it satisfies the descent condition below.
+**Definition.** An **indexed category** over $\mathcal{C}$ is a pseudofunctor $\mathbb{X}:\mathcal{C}_{\mathrm{opp}}\to\mathbf{Cat}$: to each object $S$ a category $\mathbb{X}_S$, to each morphism $f:S'\to S$ a base-change functor $f^*:\mathbb{X}_S\to\mathbb{X}_{S'}$, to each composition a coherent isomorphism $(fg)^*\cong g^*f^*$, and to each identity a coherent isomorphism $\mathrm{id}^*\cong\mathrm{id}$, subject to the usual associativity and unit conditions. The **total category** $\int\mathbb{X}$ has as objects the pairs $(S,X)$ with $X$ an object of $\mathbb{X}_S$ and as morphisms the pairs $(f,\digamma_{\mathrm{map}})$ with $f:S'\to S$ and $\digamma_{\mathrm{map}}:f^*X\to X'$, and it is fibred over $\mathcal{C}$ by the projection $(S,X)\mapsto S$. A fibred category is a **stack** when it satisfies the descent condition below.
 
 **Proposition.** An indexed category is equivalent to a fibration over $\mathcal{C}$ with a cleavage, and the base-change functors are unique up to a canonical isomorphism; the fibre $\mathbb{X}_S$ over $S$ is the subcategory of the total category of the objects lying over $S$ and the morphisms lying over $\mathrm{id}_S$. The formation of the total category is inverse to the passage from a fibration to its indexed category, up to equivalence.
 
@@ -21,11 +21,11 @@ Throughout, $(\mathcal{C},J)$ is a site with a terminal object, $f:S'\to S$ is a
 
 ## Descent Data for a Covering
 
-**Definition.** Let $\mathbb{X}$ be an indexed category over $\mathcal{C}$ and let $\mathcal{U}=\{f_i:c_i\to c\}$ be a covering family. A **descent datum** for $\mathcal{U}$ with values in $\mathbb{X}$ is a family $(X_i,\phi_{ij})$ with $X_i\in\mathbb{X}_{c_i}$ and isomorphisms
+**Definition.** Let $\mathbb{X}$ be an indexed category over $\mathcal{C}$ and let $\mathcal{U}=\{f_i:c_i\to c\}$ be a covering family. A **descent datum** for $\mathcal{U}$ with values in $\mathbb{X}$ is a family $(X_i,\digamma_{\mathrm{map},ij})$ with $X_i\in\mathbb{X}_{c_i}$ and isomorphisms
 $$
-\phi_{ij}:f_{ij,2}^*X_j\xrightarrow{\ \sim\ }f_{ij,1}^*X_i
+\digamma_{\mathrm{map},ij}:f_{ij,2}^*X_j\xrightarrow{\ \sim\ }f_{ij,1}^*X_i
 $$
-over the fibre product $c_{ij}=c_i\times_cc_j$, where $f_{ij,1},f_{ij,2}$ are the two projections, subject to the **cocycle condition** on the triple fibre products $c_{ijk}$: the two ways of comparing $f^*X$ on $c_{ijk}$ coincide. The **descent category** $\mathrm{Desc}(\mathcal{U},\mathbb{X})$ has the descent data as objects and, as morphisms, the families of morphisms over the $c_i$ commuting with the isomorphisms $\phi_{ij}$.
+over the fibre product $c_{ij}=c_i\times_cc_j$, where $f_{ij,1},f_{ij,2}$ are the two projections, subject to the **cocycle condition** on the triple fibre products $c_{ijk}$: the two ways of comparing $f^*X$ on $c_{ijk}$ coincide. The **descent category** $\mathrm{Desc}(\mathcal{U},\mathbb{X})$ has the descent data as objects and, as morphisms, the families of morphisms over the $c_i$ commuting with the isomorphisms $\digamma_{\mathrm{map},ij}$.
 
 **Definition.** The **comparison functor** is
 $$
@@ -51,11 +51,11 @@ R\rightrightarrows R'\rightrightarrows R'\otimes_RR'\cdots
 $$
 built from the tensor powers, with the coface and codegeneracy maps given by the algebra structure and the unit.
 
-*Proof (in outline).* The functor is fully faithful by the exactness of $-\otimes_RR'$ and the faithful flatness, which lets one descend the equalities of morphisms from the tensor powers. For the essential surjectivity, a descent datum $(M',\phi)$ is turned into an $R$-module by taking the equalizer of the pair of maps $M'\rightrightarrows M'\otimes_RR'$ whose first member is the descent isomorphism $\phi$ and whose second is the canonical map $m'\mapsto1\otimes m'$,
+*Proof (in outline).* The functor is fully faithful by the exactness of $-\otimes_RR'$ and the faithful flatness, which lets one descend the equalities of morphisms from the tensor powers. For the essential surjectivity, a descent datum $(M',\digamma_{\mathrm{map}})$ is turned into an $R$-module by taking the equalizer of the pair of maps $M'\rightrightarrows M'\otimes_RR'$ whose first member is the descent isomorphism $\digamma_{\mathrm{map}}$ and whose second is the canonical map $m'\mapsto1\otimes m'$,
 $$
 0\to M\to M'\rightrightarrows M'\otimes_RR',
 $$
-and the flatness of $R'$ over $R$ shows that $M\otimes_RR'\cong M'$ compatibly with $\phi$; the cocycle condition is what makes the equalizer compute the correct module and makes the two constructions inverse.
+and the flatness of $R'$ over $R$ shows that $M\otimes_RR'\cong M'$ compatibly with $\digamma_{\mathrm{map}}$; the cocycle condition is what makes the equalizer compute the correct module and makes the two constructions inverse.
 
 **Definition.** The **Amitsur complex** of a faithfully flat cover $R\to R'$ is the cosimplicial object with terms $R'\otimes_RR'\otimes_R\cdots\otimes_RR'$ and the coface maps inserting $1$ in the consecutive positions; for an $R$-module $M$ the complex
 $$
@@ -109,7 +109,7 @@ In this way descent theory unifies the gluing of the sheaves with the reconstruc
 | $\int\mathbb{X}$ | total category of the indexed category |
 | $\mathcal{U}=\{f_i:c_i\to c\}$ | covering family |
 | $\mathrm{Desc}(\mathcal{U},\mathbb{X})$ | descent category |
-| $\phi_{ij}$ | descent isomorphism over $c_i\times_cc_j$ |
+| $\digamma_{\mathrm{map},ij}$ | descent isomorphism over $c_i\times_cc_j$ |
 | $R\to R'$ | faithfully flat cover |
 | Amitsur complex | $R\rightrightarrows R'\rightrightarrows R'\otimes_RR'\cdots$ |
 | $\mathbb{T}$ | monad, $\mathbb{T}=F\circ L$ |

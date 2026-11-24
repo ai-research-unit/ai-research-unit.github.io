@@ -382,7 +382,7 @@ and the corner embeddings give, for each $k$, the algebra $M_k$ as the corner $E
 
 **Proposition.** The mixed corner $EMF$ is a left module over $EME\cong M_p$ and a right module over $FMF\cong M_{6-p}$, and it is isomorphic to the bimodule $\mathbb{C}^{p}\otimes(\mathbb{C}^{6-p})^*$ of $p\times(6-p)$ matrices. The corner $FME$ is the dual bimodule.
 
-**Proof.** $A_{11}MN'$ and $M B_{22}$ are the left and right actions; the dimensions match, and the isomorphism is $u\otimes\varphi\mapsto u\varphi$.
+**Proof.** $A_{11}MN'$ and $M B_{22}$ are the left and right actions; the dimensions match, and the isomorphism is $u\otimes\digamma_{\mathrm{map}}\mapsto u\digamma_{\mathrm{map}}$.
 
 **Corollary (the mass block is a bimodule element).** The mass block $M$ is not an element of either corner algebra; it is an element of the mixed bimodule. The gauge acts on it by the relative scale, and the corner unitaries act on it by left and right multiplication.
 

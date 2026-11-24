@@ -162,7 +162,7 @@ with fixed algebras $M_4(\mathbb{R})$ and $M_2(\mathbb{H})$. The first is the en
 **Theorem (the real structures of the complexification).** Let $A=M_4(\mathbb{C})$. A real structure on $A\oplus A$ either preserves or exchanges the two simple summands.
 
 - In the preserving case $\theta=\theta_1\times\theta_2$ with each $\theta_i$ a real structure of $A$, and there are four such maps.
-- In the exchanging case $\theta(A,B)=(\varphi(B),\varphi^{-1}(A))$ for a conjugate-linear automorphism $\varphi$ of $A$, and all such $\theta$ are conjugate.
+- In the exchanging case $\theta(A,B)=(\digamma_{\mathrm{map}}(B),\digamma_{\mathrm{map}}^{-1}(A))$ for a conjugate-linear automorphism $\digamma_{\mathrm{map}}$ of $A$, and all such $\theta$ are conjugate.
 
 Hence there are **five real structures** and **four classes**. A structure is a map and a class is an orbit of maps, and the two counts differ because the two mixed structures, $\tau_{\mathbb{R}}\times\tau_{\mathbb{H}}$ and $\tau_{\mathbb{H}}\times\tau_{\mathbb{R}}$, are distinct maps that are conjugate by the swap, as the remark below shows. The four classes give **four real algebras** up to isomorphism:
 
@@ -173,7 +173,7 @@ M_4(\mathbb{R})\oplus M_2(\mathbb{H}),\quad
 M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}.
 $$
 
-*Proof.* The summands are the two simple ideals, and a conjugate-linear automorphism permutes the two-element set of them, so it preserves or exchanges. In the preserving case each component is a conjugate-linear multiplicative involution of $A$, and there are exactly two of those. In the exchanging case write $\theta(A,B)=(\varphi(B),\psi(A))$ with $\varphi,\psi$ multiplicative and conjugate-linear; then $\theta^2=1$ forces $\psi=\varphi^{-1}$. A conjugate-linear automorphism of $A$ is $\varphi=\operatorname{Ad}_G\circ\tau_{\mathbb{R}}$ for some $G\in GL_4(\mathbb{C})$, by Skolem–Noether applied to $\varphi\circ\tau_{\mathbb{R}}^{-1}$, which is $\mathbb{C}$-linear. Two such structures are conjugate: conjugation by $(1,U)$ replaces $\operatorname{Ad}_G$ by $\operatorname{Ad}_{G\bar U}$, and $G\bar U$ runs over $GL_4(\mathbb{C})$ as $U$ does. The fixed algebra of the exchanging case is read off from $\theta(A,B)=(A,B)$, that is $A=\varphi(B)$, one condition and hence real dimension thirty-two. ∎
+*Proof.* The summands are the two simple ideals, and a conjugate-linear automorphism permutes the two-element set of them, so it preserves or exchanges. In the preserving case each component is a conjugate-linear multiplicative involution of $A$, and there are exactly two of those. In the exchanging case write $\theta(A,B)=(\digamma_{\mathrm{map}}(B),Ξ_{\mathrm{wfn}}(A))$ with $\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}}$ multiplicative and conjugate-linear; then $\theta^2=1$ forces $Ξ_{\mathrm{wfn}}=\digamma_{\mathrm{map}}^{-1}$. A conjugate-linear automorphism of $A$ is $\digamma_{\mathrm{map}}=\operatorname{Ad}_G\circ\tau_{\mathbb{R}}$ for some $G\in GL_4(\mathbb{C})$, by Skolem–Noether applied to $\digamma_{\mathrm{map}}\circ\tau_{\mathbb{R}}^{-1}$, which is $\mathbb{C}$-linear. Two such structures are conjugate: conjugation by $(1,U)$ replaces $\operatorname{Ad}_G$ by $\operatorname{Ad}_{G\bar U}$, and $G\bar U$ runs over $GL_4(\mathbb{C})$ as $U$ does. The fixed algebra of the exchanging case is read off from $\theta(A,B)=(A,B)$, that is $A=\digamma_{\mathrm{map}}(B)$, one condition and hence real dimension thirty-two. ∎
 
 **The five structures, explicitly.** The table lists the five, the fixed algebra of each, and its type.
 
@@ -366,7 +366,7 @@ Then $J_i$ is a two-sided ideal of $S_i$, and $S$ is the fibre product of $S_1$ 
 **The three families.** The theorem gives three families, and they exhaust the possibilities.
 
 - **Products** $S=S_1\oplus S_2$, the case $J_1=S_1$ and $J_2=S_2$. No relation between the slots.
-- **Graphs** $S=\{(a,\varphi(a))\}$, the case $J_1=0=J_2$ and $\varphi:S_1\to S_2$ an isomorphism; when $S_1=S_2$ and $\varphi=\mathrm{id}$ this is the diagonal.
+- **Graphs** $S=\{(a,\digamma_{\mathrm{map}}(a))\}$, the case $J_1=0=J_2$ and $\digamma_{\mathrm{map}}:S_1\to S_2$ an isomorphism; when $S_1=S_2$ and $\digamma_{\mathrm{map}}=\mathrm{id}$ this is the diagonal.
 - **Fibre products** over a proper common quotient, the case in which the $J_i$ are nonzero and at least one is proper. This is the family with no counterpart in a simple algebra.
 
 **The count of the product family.** For $M_4(\mathbb{R})\oplus M_4(\mathbb{R})$ the product family is indexed by the pairs of unital subalgebras of $M_4(\mathbb{R})$: at the semisimple level there are finitely many types in each slot, by the companion article, and the number of pairs of types is its square. The graph family is indexed by the isomorphisms between subalgebras of the same type, which form a single class per type. The fibre-product family is not finite, because two subalgebras can share a quotient and the quotients vary. The smallest example is inside the diagonal algebra: with $D=\mathbb{R}^4$ the diagonal subalgebra of $M_4(\mathbb{R})$ and $J\subset D$ the ideal of diagonal matrices whose last entry vanishes, the fibre product of $D$ with itself over $D/J\cong\mathbb{R}$ is the seven-dimensional algebra

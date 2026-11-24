@@ -9,7 +9,7 @@ Two things change, and neither requires a new construction. The first is that th
 The sign of the two-sided operator is visible here in a form that the algebra-level article does not show. On the carrier, left multiplication by $x$ realises the one-sided action, and the signed inner conjugation is realised by conjugating the Clifford multiplication by the two one-sided actions of $x$ and $\alpha(x)$:
 
 $$
-\mathrm{Ad}^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{-1}\psi=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{-1}\psi .
+\mathrm{Ad}^{\alpha}_x(v)\,Ξ_{\mathrm{wfn}}=\alpha(x)\,v\,x^{-1}Ξ_{\mathrm{wfn}}=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{-1}Ξ_{\mathrm{wfn}} .
 $$
 
 The two factors of the two-sided operator are thus the left multiplication by $\alpha(x)$ and the inverse left multiplication by $x$, and on the carrier their conjugation is exactly the module statement that the odd part returns the negative of the reflection.
@@ -21,7 +21,7 @@ The Clifford algebra, the parity grading and the intrinsic involutions are from 
 **Proposition (the left action).** Let $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ be a left ideal. For every $a\in\mathrm{Cl}(V,\mathfrak{Q})$ the left multiplication $L_a$ carries $I$ into itself, $L_a(I)\subseteq I$, and $I$ is a Clifford module. Consequently the assignment
 
 $$
-\boxed{\;\rho(x)\psi=x\,\psi,\qquad x\in\mathrm{Pin}(V,\mathfrak{Q}),\ \psi\in I\;},
+\boxed{\;\rho(x)Ξ_{\mathrm{wfn}}=x\,Ξ_{\mathrm{wfn}},\qquad x\in\mathrm{Pin}(V,\mathfrak{Q}),\ Ξ_{\mathrm{wfn}}\in I\;},
 $$
 
 is the restriction of the algebra action to the group, that is, the pin representation of *Pin Representations and Clifford Modules with Signed Inner Conjugation*.
@@ -52,20 +52,20 @@ and left multiplication by an even element preserves the two summands while left
 
 ## The Signed Conjugation on the Ideal
 
-**Proposition (the operator realised by left multiplications).** For $x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}$, $v\in V$ and $\psi\in I$,
+**Proposition (the operator realised by left multiplications).** For $x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}$, $v\in V$ and $Ξ_{\mathrm{wfn}}\in I$,
 
 $$
-\mathrm{Ad}^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{-1}\,\psi=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{-1}\,\psi .
+\mathrm{Ad}^{\alpha}_x(v)\,Ξ_{\mathrm{wfn}}=\alpha(x)\,v\,x^{-1}\,Ξ_{\mathrm{wfn}}=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{-1}\,Ξ_{\mathrm{wfn}} .
 $$
 
 So the signed inner conjugation is realised on the carrier as the conjugation of the Clifford multiplication by the left multiplications of $\alpha(x)$ and $x$: the left factor is the signed left multiplication $\Lambda^{\alpha}_x$ and the right factor is the inverse left multiplication, the two ingredients of *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*.
 
-*Proof.* Both sides are the same product of three factors in the algebra, applied to $\psi$; the first and the third factor are $\rho(\alpha(x))=\Lambda^{\alpha}_x$ and $\rho(x)^{-1}=\rho(x^{-1})$, since $\rho$ is a representation of the group of invertibles. The module is one-sided, so both factors of the two-sided operator act on $\psi$ as left multiplications by elements of the algebra; the inverse right multiplication $R_{x^{-1}}$ of *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* is the right factor on the algebra, and on the ideal its work is done by the left multiplication by $x^{-1}$.
+*Proof.* Both sides are the same product of three factors in the algebra, applied to $Ξ_{\mathrm{wfn}}$; the first and the third factor are $\rho(\alpha(x))=\Lambda^{\alpha}_x$ and $\rho(x)^{-1}=\rho(x^{-1})$, since $\rho$ is a representation of the group of invertibles. The module is one-sided, so both factors of the two-sided operator act on $Ξ_{\mathrm{wfn}}$ as left multiplications by elements of the algebra; the inverse right multiplication $R_{x^{-1}}$ of *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* is the right factor on the algebra, and on the ideal its work is done by the left multiplication by $x^{-1}$.
 
-**Corollary (the reflection, with and without the sign).** Let $u\in V$ with $\mathfrak{Q}(u)\neq0$ and let $\rho_u$ be the reflection in $u^{\perp}$. Then for all $v\in V$ and $\psi\in I$,
+**Corollary (the reflection, with and without the sign).** Let $u\in V$ with $\mathfrak{Q}(u)\neq0$ and let $\rho_u$ be the reflection in $u^{\perp}$. Then for all $v\in V$ and $Ξ_{\mathrm{wfn}}\in I$,
 
 $$
-\boxed{\;\rho(\mathrm{Ad}^{\alpha}_u(v))\,\psi=\rho_u(v)\,\psi,\qquad \rho(u)\,\rho(v)\,\rho(u)^{-1}\,\psi=-\rho_u(v)\,\psi\;} .
+\boxed{\;\rho(\mathrm{Ad}^{\alpha}_u(v))\,Ξ_{\mathrm{wfn}}=\rho_u(v)\,Ξ_{\mathrm{wfn}},\qquad \rho(u)\,\rho(v)\,\rho(u)^{-1}\,Ξ_{\mathrm{wfn}}=-\rho_u(v)\,Ξ_{\mathrm{wfn}}\;} .
 $$
 
 So on the carrier the two-sided operator with a vector returns the negative of the reflection, and the signed inner conjugation is what removes the sign; the parity sign $\varepsilon_x=(-1)^{k}$ of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* is the only difference between the two computations.
@@ -92,7 +92,7 @@ so it interchanges the two summands, while the even element $e_1e_2$ acts by $e_
 
 ### The Reflection Read on the Ideal
 
-In the same algebra take $u=e_1$, $v=e_2$ and $\psi=\pi$. Then $\rho_{e_1}$ fixes $e_2$, since $B(e_1,e_2)=0$, and the two computations are
+In the same algebra take $u=e_1$, $v=e_2$ and $Ξ_{\mathrm{wfn}}=\pi$. Then $\rho_{e_1}$ fixes $e_2$, since $B(e_1,e_2)=0$, and the two computations are
 
 $$
 \mathrm{Ad}^{\alpha}_{e_1}(e_2)\,\pi=-e_1e_2e_1\,\pi=e_2\,\pi,\qquad \rho(e_1)\rho(e_2)\rho(e_1)^{-1}\,\pi=e_1e_2e_1\,\pi=-e_2\,\pi ,
@@ -102,7 +102,7 @@ because $e_1e_2e_1=-e_2e_1e_1=-e_2$, and the reflection of $e_2$ in $e_1^{\perp}
 
 ### The Volume Element
 
-The volume element $\omega=e_1e_2e_3$ is odd, central and satisfies $\omega^{2}=-1$, and its action on the carrier is left multiplication by $\omega$, which is the map $\psi\mapsto\omega\psi$ sending $I^{0}$ to $I^{1}$ and $I^{1}$ to $I^{0}$. By the corollary of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$ while $\mathrm{Ad}_\omega=\mathrm{id}$, so on the ideal the signed conjugation by $\omega$ acts as $-\mathrm{id}$, that is, it separates a spinor from its negative and is not the identity; the inner conjugation by the same central element is invisible on the ideal.
+The volume element $\omega=e_1e_2e_3$ is odd, central and satisfies $\omega^{2}=-1$, and its action on the carrier is left multiplication by $\omega$, which is the map $Ξ_{\mathrm{wfn}}\mapsto\omegaΞ_{\mathrm{wfn}}$ sending $I^{0}$ to $I^{1}$ and $I^{1}$ to $I^{0}$. By the corollary of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$ while $\mathrm{Ad}_\omega=\mathrm{id}$, so on the ideal the signed conjugation by $\omega$ acts as $-\mathrm{id}$, that is, it separates a spinor from its negative and is not the identity; the inner conjugation by the same central element is invisible on the ideal.
 
 ### The Biquaternion Ideal
 
@@ -112,20 +112,20 @@ For $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ the same construction g
 
 A **Peirce carrier** $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ is a left ideal, hence a Clifford module on which the left multiplication by *every* element of the algebra is defined; when $\pi$ is primitive it is a minimal left ideal. The whole **Pin group** therefore acts on it by left multiplication, and the ideal carries the pinor representation, with spinors understood as the elements of $I$. If the algebra is simple and $I\neq0$ the action is faithful, and over a product the kernel is $\mathrm{Pin}\cap(\{1\}\times A)$.
 
-The carrier is not homogeneous: it splits as $I=I^0\oplus I^1$ with $I^{i}=\mathrm{Cl}^{i}\pi$, the even elements of the algebra, hence all of $\mathrm{Spin}$, preserve the two summands, and the odd elements of $\mathrm{Pin}$ interchange them. The two summands are the ideal-theoretic counterparts of the two chiral halves of an even-dimensional Clifford module. The signed inner conjugation is realised on the ideal by conjugating the Clifford multiplication with two left multiplications, $\mathrm{Ad}^{\alpha}_x(v)\psi=\rho(\alpha(x))\rho(v)\rho(x)^{-1}\psi$, so the left factor of the two-sided operator appears as the **signed left multiplication** $\Lambda^{\alpha}_x$ and the right factor as the inverse left multiplication; for a vector the plain two-sided operator gives $-\rho_u(v)\psi$ and the signed one $\rho_u(v)\psi$, which is the sign that the pin theory needs and that the spin theory, confined to the even part, never meets. The central volume element of an odd-dimensional algebra acts on the ideal by the exchange of the two summands, and the signed conjugation by it acts as $-\mathrm{id}$ where the inner conjugation acts as the identity.
+The carrier is not homogeneous: it splits as $I=I^0\oplus I^1$ with $I^{i}=\mathrm{Cl}^{i}\pi$, the even elements of the algebra, hence all of $\mathrm{Spin}$, preserve the two summands, and the odd elements of $\mathrm{Pin}$ interchange them. The two summands are the ideal-theoretic counterparts of the two chiral halves of an even-dimensional Clifford module. The signed inner conjugation is realised on the ideal by conjugating the Clifford multiplication with two left multiplications, $\mathrm{Ad}^{\alpha}_x(v)Ξ_{\mathrm{wfn}}=\rho(\alpha(x))\rho(v)\rho(x)^{-1}Ξ_{\mathrm{wfn}}$, so the left factor of the two-sided operator appears as the **signed left multiplication** $\Lambda^{\alpha}_x$ and the right factor as the inverse left multiplication; for a vector the plain two-sided operator gives $-\rho_u(v)Ξ_{\mathrm{wfn}}$ and the signed one $\rho_u(v)Ξ_{\mathrm{wfn}}$, which is the sign that the pin theory needs and that the spin theory, confined to the even part, never meets. The central volume element of an odd-dimensional algebra acts on the ideal by the exchange of the two summands, and the signed conjugation by it acts as $-\mathrm{id}$ where the inner conjugation acts as the identity.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ | Minimal left ideal, a Clifford module; $\pi$ a primitive idempotent |
-| $\rho(x)\psi=x\psi$ | Left action of the algebra, restricted to Pin |
+| $\rho(x)Ξ_{\mathrm{wfn}}=xΞ_{\mathrm{wfn}}$ | Left action of the algebra, restricted to Pin |
 | $I=I^0\oplus I^1$, $I^{i}=\mathrm{Cl}^{i}\pi$ | The parity splitting of the ideal |
 | $\mathrm{Cl}^0$ preserves, $\mathrm{Cl}^1$ interchanges | Even and odd elements on the summands |
-| $\mathrm{Ad}^{\alpha}_x(v)\psi=\rho(\alpha(x))\rho(v)\rho(x)^{-1}\psi$ | The signed conjugation on the ideal |
+| $\mathrm{Ad}^{\alpha}_x(v)Ξ_{\mathrm{wfn}}=\rho(\alpha(x))\rho(v)\rho(x)^{-1}Ξ_{\mathrm{wfn}}$ | The signed conjugation on the ideal |
 | $\Lambda^{\alpha}_x=\rho(\alpha(x))$, $L_{x^{-1}}=\rho(x)^{-1}$ | The one-sided factors, both as left multiplications on the ideal |
-| $\rho(\mathrm{Ad}^{\alpha}_u(v))\psi=\rho_u(v)\psi$ | The reflection on the ideal |
-| $\rho(u)\rho(v)\rho(u)^{-1}\psi=-\rho_u(v)\psi$ | The same, without the sign |
+| $\rho(\mathrm{Ad}^{\alpha}_u(v))Ξ_{\mathrm{wfn}}=\rho_u(v)Ξ_{\mathrm{wfn}}$ | The reflection on the ideal |
+| $\rho(u)\rho(v)\rho(u)^{-1}Ξ_{\mathrm{wfn}}=-\rho_u(v)Ξ_{\mathrm{wfn}}$ | The same, without the sign |
 | $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$, $\mathrm{Ad}_\omega=\mathrm{id}$ | The central volume element, odd dimension |
 | $\ker\rho=\mathrm{Pin}\cap(\{1\}\times A)$ | Kernel over a product of simple algebras |
 

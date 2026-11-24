@@ -73,7 +73,7 @@ The twists are the generators of the mapping class group, and the transvections 
 
 **Theorem (the symplectic representation is surjective).** The action on the homology gives a surjective homomorphism
 $$
-\boxed{\;\mathrm{Mod}(S_g)\longrightarrow \operatorname{Sp}\bigl(2g,\mathbb{Z}\bigr), \qquad \bigl[\phi\bigr]\longmapsto \phi_*\;} ,
+\boxed{\;\mathrm{Mod}(S_g)\longrightarrow \operatorname{Sp}\bigl(2g,\mathbb{Z}\bigr), \qquad \bigl[\digamma_{\mathrm{map}}\bigr]\longmapsto \digamma_{\mathrm{map},*}\;} ,
 $$
 whose kernel is the **Torelli group** $\mathcal{I}(S_g)$; the images of the Dehn twists are the transvections, and the transvections generate $\operatorname{Sp}(2g,\mathbb{Z})$. For $g = 1$ the map is an isomorphism $\mathrm{Mod}(T^2)\cong SL_2(\mathbb{Z})$.
 

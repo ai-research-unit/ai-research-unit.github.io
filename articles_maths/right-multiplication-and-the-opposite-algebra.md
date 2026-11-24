@@ -80,17 +80,17 @@ with inverse $b \mapsto R_b$. Consequently $\{L_a\}' = \{R_b\}$ and $\{R_b\}' = 
 
 ## The Right Spin Action and the Dual Representation
 
-**Definition.** Let $J = \pi'\mathrm{Cl}(V,\mathfrak{Q})$ be a minimal right ideal, so that $J$ is a simple right module. The **right spin action** is the restriction to $\mathrm{Spin}(V,\mathfrak{Q})$ of the right action of the algebra, $\psi \mapsto \psi\,x$.
+**Definition.** Let $J = \pi'\mathrm{Cl}(V,\mathfrak{Q})$ be a minimal right ideal, so that $J$ is a simple right module. The **right spin action** is the restriction to $\mathrm{Spin}(V,\mathfrak{Q})$ of the right action of the algebra, $Ξ_{\mathrm{wfn}} \mapsto Ξ_{\mathrm{wfn}}\,x$.
 
 **Proposition (the transport by reversion).** Reversion maps a minimal right ideal to a minimal left ideal, $r(J) = \mathrm{Cl}(V,\mathfrak{Q})\,r(\pi')$, and it intertwines the right action with the left action by the reversed element:
 
 $$
-r(\psi\,x) = x^{r}\,r(\psi), \qquad \psi \in J .
+r(Ξ_{\mathrm{wfn}}\,x) = x^{r}\,r(Ξ_{\mathrm{wfn}}), \qquad Ξ_{\mathrm{wfn}} \in J .
 $$
 
 So the right spin action on $J$ is, on $r(J)$ and through $r$, the ordinary left action by $x^{r}$. Hence the right spin action is the spin representation composed with the algebra anti-automorphism $r$; it is the contragredient of the spin representation up to the group automorphism $\mathrm{inv}\circ r$ of the spin group, and the right simple modules give no irreducible representation that the left modules do not already give.
 
-**Proof.** $r(\psi x) = r(x)r(\psi) = x^{r}r(\psi)$, using that $r$ is an anti-automorphism; that $r(J)$ is a minimal left ideal follows because $r$ is an algebra isomorphism $\mathrm{Cl}\to\mathrm{Cl}_{\mathrm{opp}}$, so it exchanges left and right ideals. The comparison with the contragredient is the standard duality $x \mapsto (x^{-1})^{\mathrm{t}}$ of a finite-dimensional representation, applied to the transport just computed.
+**Proof.** $r(Ξ_{\mathrm{wfn}} x) = r(x)r(Ξ_{\mathrm{wfn}}) = x^{r}r(Ξ_{\mathrm{wfn}})$, using that $r$ is an anti-automorphism; that $r(J)$ is a minimal left ideal follows because $r$ is an algebra isomorphism $\mathrm{Cl}\to\mathrm{Cl}_{\mathrm{opp}}$, so it exchanges left and right ideals. The comparison with the contragredient is the standard duality $x \mapsto (x^{-1})^{\mathrm{t}}$ of a finite-dimensional representation, applied to the transport just computed.
 
 **Remark (the pairing between the two spinor spaces).** A minimal left ideal $I$ and a minimal right ideal $J$ built from complementary primitive idempotents pair through the algebra product $I\times J \to \mathrm{Cl}$, whose composition with the coefficient of the unit is a bilinear form; the left action on $I$ and the right action on $J$ are adjoint for it. The non-degeneracy of that form, the trace form behind it and the invariance under the spin group are the Hermitian structure, treated in *The Trace Form and the Hilbert Structure with Hermitian Adjoint* and in the Hermitian group, and the present article uses only the transport by reversion. The identification of the minimal right ideals with the opposite chiral halves, and the module-theoretic form of the two-half structure, are *Spin Representations and Clifford Modules with Inner Conjugation* and *Peirce Carriers and Inner Conjugation*.
 
@@ -124,7 +124,7 @@ The **right multiplication** $R_x(y) = yx$ is anti-multiplicative, $R_xR_z = R_{
 | $\mathrm{End}_{\mathrm{Cl}}(\mathrm{Cl}) \cong \mathrm{Cl}_{\mathrm{opp}}$ | Commutant of the left regular representation |
 | $Z(\mathrm{Cl}) = \{x : L_x = R_x\}$ | Centre |
 | $J = \pi'\mathrm{Cl}(V,\mathfrak{Q})$ | Minimal right ideal, dual spinor space |
-| $\psi \mapsto \psi\,x$ | Right spin action, the dual direction |
+| $Ξ_{\mathrm{wfn}} \mapsto Ξ_{\mathrm{wfn}}\,x$ | Right spin action, the dual direction |
 
 ## Further Reading
 

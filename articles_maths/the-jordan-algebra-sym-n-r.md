@@ -112,7 +112,7 @@ where $V_{\lambda}=\{X: E\circ X=\lambda X\}$. The sum is $n(n+1)/2$, the dimens
 
 ## Automorphisms and Derivations
 
-**The automorphisms of the Jordan algebra are the conjugations by orthogonal matrices.** A linear map $\varphi:S\to S$ with $\varphi(X\circ Y)=\varphi(X)\circ\varphi(Y)$ and $\varphi(\mathrm{I})=\mathrm{I}$ is $X\mapsto QXQ^{\mathsf T}$ for some $Q\in\mathrm{O}(n)$.
+**The automorphisms of the Jordan algebra are the conjugations by orthogonal matrices.** A linear map $\digamma_{\mathrm{map}}:S\to S$ with $\digamma_{\mathrm{map}}(X\circ Y)=\digamma_{\mathrm{map}}(X)\circ\digamma_{\mathrm{map}}(Y)$ and $\digamma_{\mathrm{map}}(\mathrm{I})=\mathrm{I}$ is $X\mapsto QXQ^{\mathsf T}$ for some $Q\in\mathrm{O}(n)$.
 
 *Proof.* An automorphism permutes the idempotents and preserves the orthogonality, so it permutes the orthogonal projections; by the theorem of projective geometry it is induced by an orthogonal map, and the sign of $Q$ does not matter. Conversely every $Q\in\mathrm{O}(n)$ gives an automorphism. Measured on $100$ random $Q$ at $n=4$, the conjugation preserved the Jordan product in every case.
 

@@ -91,13 +91,13 @@ $$
 \iota_{X_t}\omega_t = -\sigma .
 $$
 
-Let $\varphi_t$ be its flow, defined near the origin for $t \in [0,1]$; then
+Let $\digamma_{\mathrm{map},t}$ be its flow, defined near the origin for $t \in [0,1]$; then
 
 $$
-\frac{d}{dt}\bigl(\varphi_t^*\omega_t\bigr) = \varphi_t^*\Bigl(\mathcal{L}_{X_t}\omega_t + \frac{d\omega_t}{dt}\Bigr) = \varphi_t^*\bigl(d\,\iota_{X_t}\omega_t + (\omega_1-\omega_0)\bigr) = \varphi_t^*(-d\sigma + d\sigma) = 0 .
+\frac{d}{dt}\bigl(\digamma_{\mathrm{map},t}^*\omega_t\bigr) = \digamma_{\mathrm{map},t}^*\Bigl(\mathcal{L}_{X_t}\omega_t + \frac{d\omega_t}{dt}\Bigr) = \digamma_{\mathrm{map},t}^*\bigl(d\,\iota_{X_t}\omega_t + (\omega_1-\omega_0)\bigr) = \digamma_{\mathrm{map},t}^*(-d\sigma + d\sigma) = 0 .
 $$
 
-Hence $\varphi_t^*\omega_t$ is constant in $t$, and evaluating at $t = 0$ gives $\varphi_t^*\omega_t = \omega_0$ for all $t$; at $t = 1$ the map $\varphi_1$ pulls $\omega_1$ back to $\omega_0$, which is the Darboux chart.
+Hence $\digamma_{\mathrm{map},t}^*\omega_t$ is constant in $t$, and evaluating at $t = 0$ gives $\digamma_{\mathrm{map},t}^*\omega_t = \omega_0$ for all $t$; at $t = 1$ the map $\digamma_{\mathrm{map},1}$ pulls $\omega_1$ back to $\omega_0$, which is the Darboux chart.
 
 **Remark.** The argument is Moser's, and it uses only the closedness of the forms, the Poincaré lemma and the openness of nondegeneracy; it is the standard proof that a family of cohomologous nondegenerate closed forms is trivialised by an isotopy. The contrast with Riemannian geometry is the point of the theorem. A Riemannian metric has local invariants — the curvature and its covariant derivatives — and no two metrics of different curvature are locally isometric; a symplectic form has none, and two symplectic manifolds of the same dimension are always locally symplectomorphic. The sectional curvature, the Ricci tensor and the Levi-Civita connection of a Riemannian metric are those of the companion article *Riemannian Geometry*, being written in parallel.
 

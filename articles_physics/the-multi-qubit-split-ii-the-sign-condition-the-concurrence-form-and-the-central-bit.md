@@ -109,22 +109,22 @@ $$
 and put
 
 $$
-D(\psi)=c_{00}c_{11}-c_{01}c_{10}=\det\begin{pmatrix}c_{00}&c_{01}\\ c_{10}&c_{11}\end{pmatrix}.
+D(Ξ_{\mathrm{wfn}})=c_{00}c_{11}-c_{01}c_{10}=\det\begin{pmatrix}c_{00}&c_{01}\\ c_{10}&c_{11}\end{pmatrix}.
 $$
 
 The concurrence is $C=2\lvert D\rvert$. The vanishing of $D$ is the rank-one condition on the coefficient array, hence the product-state condition; the normalised modulus is the entanglement measure.
 
-The Bell-basis diagonalisation. With $\lvert b_{\imath}\rangle$ the four Bell states and $\psi=\sum_{\imath} b_{\imath}\lvert b_{\imath}\rangle$,
+The Bell-basis diagonalisation. With $\lvert b_{\imath}\rangle$ the four Bell states and $Ξ_{\mathrm{wfn}}=\sum_{\imath} b_{\imath}\lvert b_{\imath}\rangle$,
 
 $$
-2D(\psi)=b_1^{2}-b_2^{2}-b_3^{2}+b_4^{2},
+2D(Ξ_{\mathrm{wfn}})=b_1^{2}-b_2^{2}-b_3^{2}+b_4^{2},
 $$
 
 so the concurrence is the modulus of a quadratic form of inertia $(2,2)$ on the Bell-basis amplitudes. The biquaternion norm, by contrast, is $\sum_{\imath} c_{\imath}^{2}$ in the quaternion basis and $\sum_{\imath} b_{\imath}^{2}$ in the Bell basis, because the Bell transform is orthogonal; the two forms are different and the change of basis separates them.
 
 The two forms are independent. They are not proportional: the norm has inertia $(4,0)$ on real amplitudes in its diagonal basis and the concurrence form has $(2,2)$, and inertia is a congruence invariant. So the two-qubit module carries two independent quadratic forms where the one-qubit module carries one, and the corpus's interval form is the one that does not measure entanglement.
 
-**The concurrence amplitude is not an expectation.** Suppose that for some element $\tilde A$ of the algebra, acting on the module $\mathbb{C}^4$, one had $D(\psi)=\langle\psi\rvert\tilde A\lvert\psi\rangle$ for all $\psi$. Under a global phase $\psi\mapsto e^{i\theta}\psi$ the right side is unchanged, since $\langle e^{i\theta}\psi\rvert\tilde A\lvert e^{i\theta}\psi\rangle=\langle\psi\rvert\tilde A\lvert\psi\rangle$, while the left side becomes $e^{2i\theta}D(\psi)$. For $\theta=\pi/4$ the two differ unless $D(\psi)=0$. So no such element exists.
+**The concurrence amplitude is not an expectation.** Suppose that for some element $\tilde A$ of the algebra, acting on the module $\mathbb{C}^4$, one had $D(Ξ_{\mathrm{wfn}})=\langleΞ_{\mathrm{wfn}}\rvert\tilde A\lvertΞ_{\mathrm{wfn}}\rangle$ for all $Ξ_{\mathrm{wfn}}$. Under a global phase $Ξ_{\mathrm{wfn}}\mapsto e^{i\theta}Ξ_{\mathrm{wfn}}$ the right side is unchanged, since $\langle e^{i\theta}Ξ_{\mathrm{wfn}}\rvert\tilde A\lvert e^{i\theta}Ξ_{\mathrm{wfn}}\rangle=\langleΞ_{\mathrm{wfn}}\rvert\tilde A\lvertΞ_{\mathrm{wfn}}\rangle$, while the left side becomes $e^{2i\theta}D(Ξ_{\mathrm{wfn}})$. For $\theta=\pi/4$ the two differ unless $D(Ξ_{\mathrm{wfn}})=0$. So no such element exists.
 
 The same conclusion by the corpus's own route. On the module $\mathbb{C}^4\cong\mathbb{B}$ the concurrence amplitude requires the exchange of the two factors. The permutation that exchanges $\vec e_x$ and $\vec e_y$ and fixes $e_t$ and $\vec e_z$ is not a left multiplication: if it were, its value on $e_t$ would be the multiplier, hence the identity, and the identity fixes everything. So the measure needs the tensor structure and not the algebra. The two arguments agree, and the phase argument is the shorter one.
 

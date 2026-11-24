@@ -90,7 +90,7 @@ If the dilation is required to be **minimal**, meaning $K$ is the closed linear 
 
 *Proof.* The dilation formula with $V=I$ and $F=E$ is the identity of the measure; conversely, if $E(\Delta)=V^*E(\Delta)V$ with $V$ unitary, then the multiplicativity of $E$ is inherited from the multiplicativity of $F$.
 
-**Theorem (Stinespring).** The Naimark dilation is the commutative case of the Stinespring dilation: a completely positive map $\varphi:\mathcal{A}\to B(H)$ on a $C^*$-algebra has the form $\varphi(a)=V^*\pi(a)V$ for a representation $\pi$ of $\mathcal{A}$ on a Hilbert space $K$ and a bounded linear $V:H\to K$, and the dilation is minimal and unique up to unitary equivalence; when $\mathcal{A}$ is commutative and $\pi$ is the representation of the functions by multiplication, the Stinespring dilation specialises to the Naimark dilation.
+**Theorem (Stinespring).** The Naimark dilation is the commutative case of the Stinespring dilation: a completely positive map $\digamma_{\mathrm{map}}:\mathcal{A}\to B(H)$ on a $C^*$-algebra has the form $\digamma_{\mathrm{map}}(a)=V^*\pi(a)V$ for a representation $\pi$ of $\mathcal{A}$ on a Hilbert space $K$ and a bounded linear $V:H\to K$, and the dilation is minimal and unique up to unitary equivalence; when $\mathcal{A}$ is commutative and $\pi$ is the representation of the functions by multiplication, the Stinespring dilation specialises to the Naimark dilation.
 
 *Proof.* This is the Stinespring theorem; the commutative case is the spectral theorem for the representation $\pi$, whose spectral measure is the $F$ of the Naimark dilation, and the isometry $V$ is the Stinespring operator.
 

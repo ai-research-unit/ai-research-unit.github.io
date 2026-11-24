@@ -63,7 +63,7 @@ where $\nabla^{*}\nabla=-\operatorname{tr}_g(\nabla^{\mathcal{S}})^2$ is the con
 
 **Proof sketch.** Expanding $D^{2}=\sum_{i,j}c(e_i)c(e_j)\nabla^{\mathcal{S}}_{i}\nabla^{\mathcal{S}}_{j}$ and splitting into the symmetric and antisymmetric parts, the Clifford relations $c(e_i)c(e_j)+c(e_j)c(e_i)=-2\delta_{ij}$ turn the symmetric part into the connection Laplacian, and the antisymmetric part is the curvature of the spin connection Clifford-multiplied; its trace over the spinorial indices is $\tfrac14\operatorname{scal}$, the identity of the Clifford algebra in dimension $n$. The computation is that of *Spin Geometry* and *Clifford Modules and the Twisted Cauchy–Riemann Operator*, and it is the spin form of the Weitzenböck formula $\Delta=\nabla^{*}\nabla+\mathcal{R}$ of *The Hodge Laplacian*.
 
-**Corollary.** On a closed spin manifold the operator has compact resolvent, discrete spectrum and complete eigenspinors; its spectrum is real and symmetric about the origin, $\lambda\leftrightarrow-\lambda$ in even dimensions, because $D$ anticommutes with the chirality; and its kernel consists of the **harmonic spinors**, the spinors with $D\psi=0$ and $\nabla\psi=0$ whenever the scalar curvature is nonnegative.
+**Corollary.** On a closed spin manifold the operator has compact resolvent, discrete spectrum and complete eigenspinors; its spectrum is real and symmetric about the origin, $\lambda\leftrightarrow-\lambda$ in even dimensions, because $D$ anticommutes with the chirality; and its kernel consists of the **harmonic spinors**, the spinors with $DΞ_{\mathrm{wfn}}=0$ and $\nablaΞ_{\mathrm{wfn}}=0$ whenever the scalar curvature is nonnegative.
 
 ## The Index and the $\hat A$-Genus
 
@@ -81,7 +81,7 @@ $$
 
 in the Pontryagin classes $n_i$ of $TM$. In particular $\hat A[M]$ is an integer for a closed spin manifold.
 
-**Proof sketch.** A harmonic spinor solves $D\psi=0$, and the self-adjointness identifies the kernel of $D$ with the direct sum $\ker D^{+}\oplus\ker D^{-}$, so the index is the difference of the two chiral kernel dimensions; the identification of the index with $\int_M\hat A(TM)$ is the Atiyah–Singer theorem for the spin symbol, whose symbol class is the Bott class with Chern character the $\hat A$-class. The general theorem and its heat-kernel proof are in *The Atiyah–Singer Index Theorem and K-Theory*; the integrality of the $\hat A$-genus on a spin manifold is the Borel–Hirzebruch integrality theorem, and in dimension four it yields Rökhlin's theorem, that the signature of a closed spin four-manifold is divisible by $16$.
+**Proof sketch.** A harmonic spinor solves $DΞ_{\mathrm{wfn}}=0$, and the self-adjointness identifies the kernel of $D$ with the direct sum $\ker D^{+}\oplus\ker D^{-}$, so the index is the difference of the two chiral kernel dimensions; the identification of the index with $\int_M\hat A(TM)$ is the Atiyah–Singer theorem for the spin symbol, whose symbol class is the Bott class with Chern character the $\hat A$-class. The general theorem and its heat-kernel proof are in *The Atiyah–Singer Index Theorem and K-Theory*; the integrality of the $\hat A$-genus on a spin manifold is the Borel–Hirzebruch integrality theorem, and in dimension four it yields Rökhlin's theorem, that the signature of a closed spin four-manifold is divisible by $16$.
 
 **Corollary (the twisted operator).** For the operator twisted by a Hermitian vector bundle $E$ with connection, $D_E:\Gamma(\mathcal{S}\otimes E)\to\Gamma(\mathcal{S}\otimes E)$, the index of the positive half is
 
@@ -99,14 +99,14 @@ $$
 \operatorname{scal}>0\ \text{on }M\quad\Longrightarrow\quad \hat A[M]=\operatorname{ind}D^{+}=0 .
 $$
 
-**Proof.** For a spinor $\psi$ the Lichnerowicz formula gives
+**Proof.** For a spinor $Ξ_{\mathrm{wfn}}$ the Lichnerowicz formula gives
 
 $$
-\|D\psi\|^{2}=(D^{2}\psi,\psi)=(\nabla^{*}\nabla\psi,\psi)+\tfrac14\int_M\operatorname{scal}|\psi|^{2}
-=\|\nabla\psi\|^{2}+\tfrac14\int_M\operatorname{scal}|\psi|^{2},
+\|DΞ_{\mathrm{wfn}}\|^{2}=(D^{2}Ξ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})=(\nabla^{*}\nablaΞ_{\mathrm{wfn}},Ξ_{\mathrm{wfn}})+\tfrac14\int_M\operatorname{scal}|Ξ_{\mathrm{wfn}}|^{2}
+=\|\nablaΞ_{\mathrm{wfn}}\|^{2}+\tfrac14\int_M\operatorname{scal}|Ξ_{\mathrm{wfn}}|^{2},
 $$
 
-using the self-adjointness of the connection Laplacian; if $D\psi=0$ and $\operatorname{scal}>0$, the second term is strictly positive unless $\psi=0$, so $\psi=0$, and both chiral kernels vanish.
+using the self-adjointness of the connection Laplacian; if $DΞ_{\mathrm{wfn}}=0$ and $\operatorname{scal}>0$, the second term is strictly positive unless $Ξ_{\mathrm{wfn}}=0$, so $Ξ_{\mathrm{wfn}}=0$, and both chiral kernels vanish.
 
 **Corollary (the obstruction).** A closed spin manifold with $\hat A[M]\neq0$ carries no metric of positive scalar curvature; the $K3$ surface, with $\hat A[K3]=2$, is the standard example, and the argument is the prototype of the index-theoretic obstructions to positive scalar curvature of Gromov–Lawson and of Schoen–Yau. The vanishing is one-way: $\hat A=0$ does not produce a positive-scalar-curvature metric, and the existence question is the subject of the surgery theory of *Differential Topology* and its analytic refinements. In dimension four the integrality of the $\hat A$-genus reads $-\sigma/8\in\mathbb{Z}$, and Rökhlin's theorem sharpens it to $16\mid\sigma$ for a closed spin four-manifold.
 

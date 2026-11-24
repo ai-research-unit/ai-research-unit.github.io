@@ -50,10 +50,10 @@ The CW complexes are the spaces assembled from discs, and the homotopy extension
 | Object or theorem | The statement or the structure | Introduced in |
 |---|---|---|
 | a CW complex $X$ | a space with a cell filtration $X^n$ and the weak topology on the cells; Hausdorff and paracompact | *CW Complexes and Cellular Approximation* |
-| the attaching maps and the cells | $\varphi_\alpha : D^n \to X$, with open cell $e^n_\alpha = \varphi_\alpha(\mathring D^n)$ | *CW Complexes and Cellular Approximation* |
+| the attaching maps and the cells | $\digamma_{\mathrm{map},\alpha} : D^n \to X$, with open cell $e^n_\alpha = \digamma_{\mathrm{map},\alpha}(\mathring D^n)$ | *CW Complexes and Cellular Approximation* |
 | the homotopy extension property (HEP) | the extension of a homotopy from $A$ to $X$; for a relative CW pair, equivalently the inclusion is a cofibration | *CW Complexes and Cellular Approximation* |
 | the cellular approximation theorem | every map of CW complexes is homotopic to a cellular one; $\pi_n(S^n) \cong \mathbb{Z}$ and $\pi_k(S^n) = 0$ for $k < n$ | *CW Complexes and Cellular Approximation* |
-| the cellular chain complex | free on the $n$-cells, with $\partial_n e^n_\alpha = \sum_\beta \deg(q_\beta\varphi_\alpha)e^{n-1}_\beta$; its homology is the singular homology | *CW Complexes and Cellular Approximation* |
+| the cellular chain complex | free on the $n$-cells, with $\partial_n e^n_\alpha = \sum_\beta \deg(q_\beta\digamma_{\mathrm{map},\alpha})e^{n-1}_\beta$; its homology is the singular homology | *CW Complexes and Cellular Approximation* |
 | the degree of a map of spheres | $\deg f$ with $f_* = \deg f\cdot\mathrm{id}$ on $H_n(S^n;\mathbb{Z})$ | *Degree Theory and the Brouwer Fixed Point Theorem* |
 | the Euler characteristic | $\chi(X) = \sum_n(-1)^n\#\mathcal{E}_n$, equal to the alternating sum of the Betti numbers | *CW Complexes and Cellular Approximation* |
 | the quotient and smash product $X/A$, $X \wedge Y$, $\Sigma X$ | the collapse of a subcomplex, the smash product of based complexes and the reduced suspension | *CW Complexes and Cellular Approximation* |

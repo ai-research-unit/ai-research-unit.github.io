@@ -121,10 +121,10 @@ a compact subset of $\mathbb{C}$; the **basin of infinity** is $A(\infty) = \hat
 **Theorem (Brolin).** For a polynomial $f$ of degree $d \geq 2$ there is a unique probability measure $\mu$ on $\hat{\mathbb{C}}$ satisfying
 
 $$
-\int \varphi \, d\mu = \frac{1}{d^n}\sum_{f^n(w) = z} \varphi(w)
+\int \digamma_{\mathrm{map}} \, d\mu = \frac{1}{d^n}\sum_{f^n(w) = z} \digamma_{\mathrm{map}}(w)
 $$
 
-for every continuous $\varphi$ and every $z$ outside the exceptional set, the sum being over the $d^n$ preimages of $z$ counted with multiplicity. The measure is $f$-invariant, $f_*\mu = \mu$; it is supported on $J(f)$; it is the measure of maximal entropy $\log d$; and it is the **equilibrium measure** of the basin, obtained as the weak limit of the normalised counting measures of the preimages of any non-exceptional point.
+for every continuous $\digamma_{\mathrm{map}}$ and every $z$ outside the exceptional set, the sum being over the $d^n$ preimages of $z$ counted with multiplicity. The measure is $f$-invariant, $f_*\mu = \mu$; it is supported on $J(f)$; it is the measure of maximal entropy $\log d$; and it is the **equilibrium measure** of the basin, obtained as the weak limit of the normalised counting measures of the preimages of any non-exceptional point.
 
 **Proof sketch.** The displayed average over the $d^n$ preimages converges weakly to a probability measure, by the Banach–Alaoglu theorem and the choice of a limit point of the sequence of averaged counting measures; the averaging identity makes the limit $f$-invariant and independent of $z$, and its entropy is $\log d$, the topological entropy of $f$. The identification of the maximal entropy measure with the equilibrium measure is the theory of *Ergodic Theory* and *The Geometry of the Julia Sets*. The computation of the entropy and the Lyapunov exponent as averages is the thermodynamic formalism, cited there.
 

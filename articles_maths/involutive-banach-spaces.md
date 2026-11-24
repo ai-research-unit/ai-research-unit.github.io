@@ -63,7 +63,7 @@ and the negated subspace of the completion is the closure of the negated subspac
 
 ## The Dual
 
-**Theorem (the dual is an involutive Banach space).** The dual $X^{*}$ with the dual norm is a Banach space, the transposed involution $\mathrm{J}'(\varphi) = \varphi\circ\mathrm{J}$ is a continuous involution of the same kind with
+**Theorem (the dual is an involutive Banach space).** The dual $X^{*}$ with the dual norm is a Banach space, the transposed involution $\mathrm{J}'(\digamma_{\mathrm{map}}) = \digamma_{\mathrm{map}}\circ\mathrm{J}$ is a continuous involution of the same kind with
 
 $$
 \boxed{\;\lVert\mathrm{J}'\rVert = \lVert\mathrm{J}\rVert\;} ,
@@ -83,7 +83,7 @@ and the fixed and negated subspaces of $\mathrm{J}'$ are the annihilators of $X^
 
 **Example (the function spaces).** On $C(K)$ for a compact Hausdorff $K$ the map $f \mapsto \overline{f}$ is an antilinear isometric involution with fixed subspace the real Banach space $C(K,\mathbb{R})$; on $L^{n}(\mu)$ the map $f \mapsto \overline{f}$ is an antilinear isometric involution with fixed subspace the real space $L^{n}(\mu,\mathbb{R})$, the completions of the corresponding finitely supported spaces.
 
-**Example (the completion of an involutive space).** On $\mathbb{C}[x]$ with the $(x)$-adic topology the involution $\varphi_{0}(f)(x) = f(-x)$ is continuous with fixed subspace the even polynomials; its extension to the completion $\mathbb{C}[[x]]$ has fixed subspace the even power series, the closure of the even polynomials, and the extension adds limits and no new fixed element.
+**Example (the completion of an involutive space).** On $\mathbb{C}[x]$ with the $(x)$-adic topology the involution $\digamma_{\mathrm{map},0}(f)(x) = f(-x)$ is continuous with fixed subspace the even polynomials; its extension to the completion $\mathbb{C}[[x]]$ has fixed subspace the even power series, the closure of the even polynomials, and the extension adds limits and no new fixed element.
 
 ## Summary
 

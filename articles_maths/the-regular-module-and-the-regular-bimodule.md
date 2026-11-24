@@ -66,7 +66,7 @@ which is the associativity of $R$ once more.
 
 **Proposition.** ${}_RR$ is a generator.
 
-**Proof.** By *Modules* every module $M$ is a quotient of a free module, $M \cong F/\ker \varphi$ with $F$ free; by the universal property of a basis $F$ is a direct sum of copies of ${}_RR$, and a direct sum of copies of ${}_RR$ is a direct sum of copies of ${}_RR$. The defining quotient is $\varphi$.
+**Proof.** By *Modules* every module $M$ is a quotient of a free module, $M \cong F/\ker \digamma_{\mathrm{map}}$ with $F$ free; by the universal property of a basis $F$ is a direct sum of copies of ${}_RR$, and a direct sum of copies of ${}_RR$ is a direct sum of copies of ${}_RR$. The defining quotient is $\digamma_{\mathrm{map}}$.
 
 **Corollary (the regular module sees everything).** Every left $R$-module is a quotient of a direct sum of copies of ${}_RR$, so a property preserved by quotients and direct sums and true of ${}_RR$ is true of every module; the regular module is the single test object of the category. The dual statement, with submodules and products, holds for the injective envelope of ${}_RR$, which is not the regular module in general.
 

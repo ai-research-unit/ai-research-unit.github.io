@@ -135,7 +135,7 @@ $$
 
 between the algebra of alternating forms under the wedge product and the exterior algebra of the dual module.
 
-**Proof.** A form of degree $n$ corresponds to a linear functional on $\Lambda^n M$, hence to an element of $(\Lambda^n M)^*$; over a free module of finite rank the natural map $\Lambda^n(M^*) \to (\Lambda^n M)^*$ sending $\varphi_1 \wedge \cdots \wedge \varphi_n$ to the form $(x_1, \ldots, x_n) \mapsto \det(\varphi_p(x_q))$ is an isomorphism, by the basis theorem of *Exterior Powers* applied to the dual basis. Multiplicativity of the correspondence is the definition of the wedge product of forms.
+**Proof.** A form of degree $n$ corresponds to a linear functional on $\Lambda^n M$, hence to an element of $(\Lambda^n M)^*$; over a free module of finite rank the natural map $\Lambda^n(M^*) \to (\Lambda^n M)^*$ sending $\digamma_{\mathrm{map},1} \wedge \cdots \wedge \digamma_{\mathrm{map},n}$ to the form $(x_1, \ldots, x_n) \mapsto \det(\digamma_{\mathrm{map},p}(x_q))$ is an isomorphism, by the basis theorem of *Exterior Powers* applied to the dual basis. Multiplicativity of the correspondence is the definition of the wedge product of forms.
 
 **Definition.** The **wedge product of forms** $\alpha \wedge \beta \in \operatorname{Alt}^{p+q}(M; R)$ of forms $\alpha$ of degree $p$ and $\beta$ of degree $q$ is the form
 

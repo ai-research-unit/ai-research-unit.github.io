@@ -176,9 +176,9 @@ The abelian formula is the same formula. The corpus's charged-scalar formula $M_
 The currents of the global group. Before gauging, the action is invariant under constant $SU(2)_L\times\mathrm{U}(1)_Y$, and the Noether currents are
 
 $$
-J_{a,\imath}=\frac{g}{2}\,\omicron_{\mathrm{hgs}}^{\dagger}\tau_{a} i\!\overleftrightarrow{D_{\imath}}\omicron_{\mathrm{hgs}}+\bar\psi\gamma_{\imath}\tau_{a}\psi ,
+J_{a,\imath}=\frac{g}{2}\,\omicron_{\mathrm{hgs}}^{\dagger}\tau_{a} i\!\overleftrightarrow{D_{\imath}}\omicron_{\mathrm{hgs}}+\barΞ_{\mathrm{wfn}}\gamma_{\imath}\tau_{a}Ξ_{\mathrm{wfn}} ,
 \qquad
-J^{Y}_{\imath}=g_{\mathrm Y}\,Y_{\mathrm{hch}}\,\omicron_{\mathrm{hgs}}^{\dagger}i\!\overleftrightarrow{D_{\imath}}\omicron_{\mathrm{hgs}}+\bar\psi\gamma_{\imath} Y\psi ,
+J^{Y}_{\imath}=g_{\mathrm Y}\,Y_{\mathrm{hch}}\,\omicron_{\mathrm{hgs}}^{\dagger}i\!\overleftrightarrow{D_{\imath}}\omicron_{\mathrm{hgs}}+\barΞ_{\mathrm{wfn}}\gamma_{\imath} YΞ_{\mathrm{wfn}} ,
 $$
 
 which are exactly the sources in the equations of motion. The identification of the two is not a coincidence: it is the statement that gauging a global symmetry makes its Noether current the source of the gauge field, and it is the reason the variation with respect to the gauge field and the Noether construction give the same object.

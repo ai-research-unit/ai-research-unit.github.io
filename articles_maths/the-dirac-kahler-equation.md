@@ -80,7 +80,7 @@ $$
 Z_{ab} = \sum_H (-1)^{h(h-1)/2}\,(c_H)^T_{ab}\, dx_H ,
 $$
 
-in which $c_H$ is the product of the generators indexed by $H$ and $h$ is the degree of $H$. The generators are $c_0=iL_{e_t}R_{\vec e_x}$ and $c_k=iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}\psi=a\psi b$, and $c_H$ is a single basis operator up to a phase in $\{1,-1,i,-i\}$. The matrix $Z$ is constructed so that
+in which $c_H$ is the product of the generators indexed by $H$ and $h$ is the degree of $H$. The generators are $c_0=iL_{e_t}R_{\vec e_x}$ and $c_k=iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}Ξ_{\mathrm{wfn}}=aΞ_{\mathrm{wfn}} b$, and $c_H$ is a single basis operator up to a phase in $\{1,-1,i,-i\}$. The matrix $Z$ is constructed so that
 
 $$
 dx_\mu \vee Z = c_\mu^T Z ,
@@ -154,7 +154,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_aΞ_{\mathrm{wfn}}=aΞ_{\mathrm{wfn}}$ and $R_bΞ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
@@ -182,7 +182,7 @@ In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(c_
 | $\square$ | Laplace–de Rham (Laplace–Beltrami) operator |
 | $dx_\mu\vee dx_\nu = dx_\mu\wedge dx_\nu+\delta_{\mu\nu}$ | Clifford product on forms |
 | $Z_{ab}$ | Basis change to four Dirac copies |
-| $c_\mu$ | Generators $c_0=iL_{e_t}R_{\vec e_x}$, $c_k=iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}\psi=a\psi b$ |
+| $c_\mu$ | Generators $c_0=iL_{e_t}R_{\vec e_x}$, $c_k=iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}Ξ_{\mathrm{wfn}}=aΞ_{\mathrm{wfn}} b$ |
 | $c_H$ | Product of the generators indexed by $H$; one basis operator up to a phase |
 | $\mathrm{SO}(2,4)$ | Internal symmetry mixing the four copies |
 | $A = e\sum_\mu A_\mu dx_\mu$ | Abelian gauge potential, minimally coupled |

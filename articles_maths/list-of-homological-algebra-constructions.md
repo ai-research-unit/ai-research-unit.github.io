@@ -15,7 +15,7 @@ A **chain complex** is a graded module with a square-zero endomorphism, and its 
 | Chain and cochain complex $(C_\bullet,d_\bullet)$ | the data $d^2=0$; the complex that computes homology | *Homological Algebra* |
 | Cycles, boundaries and homology $H_n(C)$ | how far the complex is from exact | *Homological Algebra* |
 | Morphism of complexes | a map commuting with the differentials; it induces a map on homology | *Homological Algebra* |
-| Chain homotopy $\varphi \simeq \psi$ | a map that induces the same map on homology | *Homological Algebra* |
+| Chain homotopy $\digamma_{\mathrm{map}} \simeq Ξ_{\mathrm{wfn}}$ | a map that induces the same map on homology | *Homological Algebra* |
 | Mapping cone $\operatorname{Cone}(f)$ | the complex carrying the long exact sequence of a map | *Homological Algebra* |
 | Short exact sequence | a sequence exact at three terms; the basic input of the theory | *Exact Sequences* |
 | Snake lemma and the connecting homomorphism | the map producing the long exact sequence | *Exact Sequences* |

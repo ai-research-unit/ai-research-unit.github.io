@@ -122,15 +122,15 @@ $$
 so every positive spinor has a unique intrinsic form
 
 $$
-\psi_+=a\tilde\Pi_{\mathrm{id},++}\jmath_+,\qquad a\in\mathbb{C},\quad \jmath_+\in\mathbb{B}_{-+},
+Ξ_{\mathrm{wfn},+}=a\tilde\Pi_{\mathrm{id},++}\jmath_+,\qquad a\in\mathbb{C},\quad \jmath_+\in\mathbb{B}_{-+},
 $$
 
-and every negative spinor the mirror form $\psi_-=\jmath_-+d\tilde\Pi_{\mathrm{id},-}$. The coefficient $a$ is the diagonal part and ${\jmath}_+$ is the nilpotent part; both are intrinsic, and the coordinate $c$ of ${\jmath}_+$ in a chosen basis is not.
+and every negative spinor the mirror form $Ξ_{\mathrm{wfn},-}=\jmath_-+d\tilde\Pi_{\mathrm{id},-}$. The coefficient $a$ is the diagonal part and ${\jmath}_+$ is the nilpotent part; both are intrinsic, and the coordinate $c$ of ${\jmath}_+$ in a chosen basis is not.
 
 The ladder has two rungs.
 
 $$
-\vec\Pi_{\mathrm{nil},+-}\psi_+=c\,\tilde\Pi_{\mathrm{id},+},\qquad \vec\Pi_{\mathrm{nil},-+}\psi_+=a\,\vec\Pi_{\mathrm{nil},-+},
+\vec\Pi_{\mathrm{nil},+-}Ξ_{\mathrm{wfn},+}=c\,\tilde\Pi_{\mathrm{id},+},\qquad \vec\Pi_{\mathrm{nil},-+}Ξ_{\mathrm{wfn},+}=a\,\vec\Pi_{\mathrm{nil},-+},
 $$
 
 so left multiplication by one nilpotent keeps the mixed part and kills the diagonal part, and the other does the reverse. Both maps are square-zero, and the two composites are the projections onto the two lines.
@@ -144,7 +144,7 @@ $$
 The diagonal coefficients are invariant and the mixed ones carry reciprocal factors. The Hermitian norm, when the family is Hermitian and $|t|=1$, is
 
 $$
-\operatorname{Sc}(\psi_+\psi_+^{*})=\tfrac12\bigl(|a|^{2}+|c|^{2}\bigr).
+\operatorname{Sc}(Ξ_{\mathrm{wfn},+}Ξ_{\mathrm{wfn},+}^{*})=\tfrac12\bigl(|a|^{2}+|c|^{2}\bigr).
 $$
 
 Right multiplication is the other action, and it does not respect the split. Right multiplication by $\tilde Q$ preserves $S_+$ exactly when $\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},-}=0$; the two mixed units exchange $S_+$ and $S_-$, each being square-zero and the two being inverse to one another.
@@ -330,7 +330,7 @@ The swap has no $\pm1$ multiplicative character, so it cannot be the sign of a m
 Read: the two companion nilpotents act on a spinor as two steps, each square-zero, and the composite of the two is a projection.
 
 $$
-\vec\Pi_{\mathrm{nil},+-}\psi_+=c\,\tilde\Pi_{\mathrm{id},+},\qquad \vec\Pi_{\mathrm{nil},-+}\psi_+=a\,\vec\Pi_{\mathrm{nil},-+},\qquad \vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-} .
+\vec\Pi_{\mathrm{nil},+-}Ξ_{\mathrm{wfn},+}=c\,\tilde\Pi_{\mathrm{id},+},\qquad \vec\Pi_{\mathrm{nil},-+}Ξ_{\mathrm{wfn},+}=a\,\vec\Pi_{\mathrm{nil},-+},\qquad \vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-} .
 $$
 
 The two steps are not inverses, and that is the point. The first keeps the mixed part and kills the diagonal part; the second keeps the diagonal part and kills the mixed part. Applying either twice gives zero, and applying them in the two orders gives two different projections.
@@ -431,7 +431,7 @@ The carrier of the module is not yet a field. A field is an element of the carri
 | $V=\mathbb{B}$ | the carrier of the regular module |
 | $L(\tilde Q)$, $R(\tilde Q)$ | left and right multiplication by $\tilde Q$ |
 | $\Pi_u=\tfrac12(e_t+iu\cdot\vec e)$ | the rank-one idempotent at $u\in\mathbb{C}^{3}$, $u\cdot u=1$ |
-| $\psi_+=a\tilde\Pi_{\mathrm{id},++}\jmath_+$ | the intrinsic form of a positive spinor |
+| $Ξ_{\mathrm{wfn},+}=a\tilde\Pi_{\mathrm{id},++}\jmath_+$ | the intrinsic form of a positive spinor |
 | $a,c,b,d$ | Peirce coordinates of the two spinors |
 | $t\in\mathbb{C}^{\times}$ | the gauge parameter of a Peirce basis |
 | $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ | the trace form on the carrier |

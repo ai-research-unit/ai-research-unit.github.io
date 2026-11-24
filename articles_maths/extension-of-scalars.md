@@ -3,15 +3,15 @@
 
 ## Introduction
 
-A ring homomorphism $\varphi:R \to S$ allows every $S$-module to be viewed as an $R$-module by restriction of scalars, and, in the other direction, every $R$-module to be converted into an $S$-module by extension of scalars, $M \mapsto S \otimes_R M$. The two constructions are adjoint, so extension is a left adjoint and is right exact, while restriction is a forgetful functor and is exact. Extension of scalars is also called base change, and it is the operation that changes the ring of coefficients: it is how a real vector space becomes complex, how a complex vector space becomes real again, and how a module over a quotient $R/I$ is seen to be $M/IM$.
+A ring homomorphism $\digamma_{\mathrm{map}}:R \to S$ allows every $S$-module to be viewed as an $R$-module by restriction of scalars, and, in the other direction, every $R$-module to be converted into an $S$-module by extension of scalars, $M \mapsto S \otimes_R M$. The two constructions are adjoint, so extension is a left adjoint and is right exact, while restriction is a forgetful functor and is exact. Extension of scalars is also called base change, and it is the operation that changes the ring of coefficients: it is how a real vector space becomes complex, how a complex vector space becomes real again, and how a module over a quotient $R/I$ is seen to be $M/IM$.
 
-Throughout, $\varphi:R \to S$ is a homomorphism of commutative rings with $1 \neq 0$, $S$ is regarded as an $R$-module via $\varphi$, and all tensor products are over $R$ unless indicated. The template is the balanced product constructed in the companion article of this category on the balanced product, and its right exactness, established in the companion article on flatness and exactness, is used throughout.
+Throughout, $\digamma_{\mathrm{map}}:R \to S$ is a homomorphism of commutative rings with $1 \neq 0$, $S$ is regarded as an $R$-module via $\digamma_{\mathrm{map}}$, and all tensor products are over $R$ unless indicated. The template is the balanced product constructed in the companion article of this category on the balanced product, and its right exactness, established in the companion article on flatness and exactness, is used throughout.
 
 ## Extension of Scalars
 
 ### Definition
 
-**Definition.** Let $M$ be an $R$-module. The **extension of scalars** of $M$ along $\varphi$ is the $S$-module
+**Definition.** Let $M$ be an $R$-module. The **extension of scalars** of $M$ along $\digamma_{\mathrm{map}}$ is the $S$-module
 
 $$
 \boxed{\;M_S \;=\; S \otimes_R M\;} ,
@@ -25,7 +25,7 @@ with $S$-action $s \cdot (s' \otimes m)=(ss') \otimes m$.
 
 ### The Adjunction with Restriction of Scalars
 
-**Definition.** If $N$ is an $S$-module, its **restriction of scalars** to $R$ is the $R$-module $\operatorname{Res}N$ with the same underlying abelian group and $r \cdot n=\varphi(r)n$.
+**Definition.** If $N$ is an $S$-module, its **restriction of scalars** to $R$ is the $R$-module $\operatorname{Res}N$ with the same underlying abelian group and $r \cdot n=\digamma_{\mathrm{map}}(r)n$.
 
 **Theorem.** Extension and restriction of scalars are adjoint: for every $R$-module $M$ and every $S$-module $N$ there is a natural bijection
 
@@ -33,9 +33,9 @@ $$
 \boxed{\;\operatorname{Hom}_S(S \otimes_R M,\,N) \;\cong\; \operatorname{Hom}_R(M,\,\operatorname{Res}N)\;}.
 $$
 
-*Proof.* Given an $S$-linear $\Phi:S \otimes_R M \to N$, the map $m \mapsto \Phi(1 \otimes m)$ is $R$-linear, since $\Phi(1 \otimes rm)=\Phi(r(1 \otimes m))=r\Phi(1 \otimes m)$. Conversely, given an $R$-linear $\psi:M \to \operatorname{Res}N$, the map $S \times M \to N$, $(s,m) \mapsto s\,\psi(m)$, is balanced: it is additive in each variable, and $(sr,m)$ and $(s,rm)$ both map to $s\varphi(r)\psi(m)=s\psi(rm)$. It therefore induces an $S$-linear $\Psi:S \otimes_R M \to N$ with $\Psi(s \otimes m)=s\psi(m)$. The two constructions are inverse, and naturality is immediate.
+*Proof.* Given an $S$-linear $\Phi:S \otimes_R M \to N$, the map $m \mapsto \Phi(1 \otimes m)$ is $R$-linear, since $\Phi(1 \otimes rm)=\Phi(r(1 \otimes m))=r\Phi(1 \otimes m)$. Conversely, given an $R$-linear $Ξ_{\mathrm{wfn}}:M \to \operatorname{Res}N$, the map $S \times M \to N$, $(s,m) \mapsto s\,Ξ_{\mathrm{wfn}}(m)$, is balanced: it is additive in each variable, and $(sr,m)$ and $(s,rm)$ both map to $s\digamma_{\mathrm{map}}(r)Ξ_{\mathrm{wfn}}(m)=sΞ_{\mathrm{wfn}}(rm)$. It therefore induces an $S$-linear $\Psi:S \otimes_R M \to N$ with $\Psi(s \otimes m)=sΞ_{\mathrm{wfn}}(m)$. The two constructions are inverse, and naturality is immediate.
 
-**Corollary.** Extension of scalars is a functor $R\text{-}\mathbf{Mod} \to S\text{-}\mathbf{Mod}$, right exact, and exact whenever $S$ is flat as an $R$-module; it preserves direct sums and is additive on homomorphisms, $\varphi_*(M \oplus M') \cong \varphi_*M \oplus \varphi_*M'$. If $S$ is free as an $R$-module, in particular if $R$ and $S$ are fields, extension of scalars is exact.
+**Corollary.** Extension of scalars is a functor $R\text{-}\mathbf{Mod} \to S\text{-}\mathbf{Mod}$, right exact, and exact whenever $S$ is flat as an $R$-module; it preserves direct sums and is additive on homomorphisms, $\digamma_{\mathrm{map},*}(M \oplus M') \cong \digamma_{\mathrm{map},*}M \oplus \digamma_{\mathrm{map},*}M'$. If $S$ is free as an $R$-module, in particular if $R$ and $S$ are fields, extension of scalars is exact.
 
 *Proof.* The right exactness is that of the tensor product. The preservation of direct sums is the isomorphism $S \otimes_R (M \oplus M') \cong (S \otimes_R M) \oplus (S \otimes_R M')$ from the companion article on the balanced product. Free modules are flat, by the companion article on flatness and exactness.
 
@@ -53,11 +53,11 @@ a product of $\gcd(n,m)$ copies of the field of degree $\operatorname{lcm}(n,m)$
 
 ### Free Modules and Fields
 
-**Proposition.** For every $n$ there is an $S$-module isomorphism $S \otimes_R R^n \cong S^n$, so extension of scalars along $\varphi$ carries the free $R$-module of rank $n$ to the free $S$-module of rank $n$. In particular, if $K \subseteq L$ is a field extension and $V$ is a $K$-vector space of dimension $n$, then $L \otimes_K V$ has dimension $n$ over $L$.
+**Proposition.** For every $n$ there is an $S$-module isomorphism $S \otimes_R R^n \cong S^n$, so extension of scalars along $\digamma_{\mathrm{map}}$ carries the free $R$-module of rank $n$ to the free $S$-module of rank $n$. In particular, if $K \subseteq L$ is a field extension and $V$ is a $K$-vector space of dimension $n$, then $L \otimes_K V$ has dimension $n$ over $L$.
 
 *Proof.* The isomorphism is $s \otimes (a_1,\dots,a_n) \mapsto (sa_1,\dots,sa_n)$, with inverse $(s_1,\dots,s_n) \mapsto \sum_i s_i \otimes e_i$. For the field case, take the images $1 \otimes e_i$ of a $K$-basis: they span, because $L \otimes_K V$ is generated over $L$ by the image of $V$ and $V=\sum_iKe_i$; and they are independent, because the $L$-linear map $L \otimes_K V \to L^n$ sending $\lambda \otimes(\sum a_ie_i)$ to $(\lambda a_i)$ is well defined and is a left inverse.
 
-The field statement is the one that says extension of scalars does not change the dimension: complexification of an $n$-dimensional real vector space is $n$-dimensional over $\mathbb{C}$, and the dimension is *not* doubled; it is realification that doubles it, below. For a general $\varphi$ the rank can change or be lost, because $S$ need not be free, or even flat, over $R$.
+The field statement is the one that says extension of scalars does not change the dimension: complexification of an $n$-dimensional real vector space is $n$-dimensional over $\mathbb{C}$, and the dimension is *not* doubled; it is realification that doubles it, below. For a general $\digamma_{\mathrm{map}}$ the rank can change or be lost, because $S$ need not be free, or even flat, over $R$.
 
 ### Phenomena for General Base Rings
 
@@ -71,13 +71,13 @@ The field statement is the one that says extension of scalars does not change th
 
 ## Base Change for Algebras
 
-**Definition.** Let $T$ be an $R$-algebra. The **base change** of $T$ along $\varphi$ is $S \otimes_R T$, with multiplication determined by
+**Definition.** Let $T$ be an $R$-algebra. The **base change** of $T$ along $\digamma_{\mathrm{map}}$ is $S \otimes_R T$, with multiplication determined by
 
 $$
 (s_1 \otimes t_1)(s_2 \otimes t_2)=s_1s_2 \otimes t_1t_2 .
 $$
 
-**Proposition.** The multiplication is well defined and makes $S \otimes_R T$ a commutative $S$-algebra with unit $1 \otimes 1$, and it is characterised by the universal property that for every $S$-algebra $U$, regarded as an $R$-algebra via $\varphi$, there is a natural bijection $\operatorname{Hom}_{S\text{-}\mathbf{Alg}}(S \otimes_R T,U) \cong \operatorname{Hom}_{R\text{-}\mathbf{Alg}}(T,U)$. In particular the square-zero extension $R[\varepsilon]/(\varepsilon^2)$ base changes to $S[\varepsilon]/(\varepsilon^2)$, and the tensor product of two algebras over a field is again an algebra over that field.
+**Proposition.** The multiplication is well defined and makes $S \otimes_R T$ a commutative $S$-algebra with unit $1 \otimes 1$, and it is characterised by the universal property that for every $S$-algebra $U$, regarded as an $R$-algebra via $\digamma_{\mathrm{map}}$, there is a natural bijection $\operatorname{Hom}_{S\text{-}\mathbf{Alg}}(S \otimes_R T,U) \cong \operatorname{Hom}_{R\text{-}\mathbf{Alg}}(T,U)$. In particular the square-zero extension $R[\varepsilon]/(\varepsilon^2)$ base changes to $S[\varepsilon]/(\varepsilon^2)$, and the tensor product of two algebras over a field is again an algebra over that field.
 
 *Proof.* The displayed product is the unique $S$-bilinear map extending $R$-bilinear multiplication; the details are the standard algebra form of the universal property of $\otimes$, and the multiplication is commutative because $R$ is.
 
@@ -127,7 +127,7 @@ as real vector spaces, where $iV=\{i \otimes v\}$.
 
 ## Behaviour of Standard Properties under Base Change
 
-**Theorem.** Let $\varphi:R \to S$ be a ring homomorphism and $M$ an $R$-module. Then the extension of scalars $M_S=S\otimes_RM$ is (i) free if $M$ is free, (ii) projective if $M$ is projective, (iii) flat if $M$ is flat, and (iv) finitely generated if $M$ is finitely generated, finitely presented if $M$ is finitely presented.
+**Theorem.** Let $\digamma_{\mathrm{map}}:R \to S$ be a ring homomorphism and $M$ an $R$-module. Then the extension of scalars $M_S=S\otimes_RM$ is (i) free if $M$ is free, (ii) projective if $M$ is projective, (iii) flat if $M$ is flat, and (iv) finitely generated if $M$ is finitely generated, finitely presented if $M$ is finitely presented.
 
 *Proof.* (i) $S\otimes_RR^n \cong S^n$. (ii) If $M \oplus N \cong R^n$ then $M_S \oplus N_S \cong S^n$. (iii) For an $S$-module $N$ one has $N\otimes_S(S\otimes_RM) \cong N\otimes_RM$ by associativity, so exactness of $-\otimes_RM$ gives exactness of $-\otimes_SM_S$. (iv) Tensoring a finite presentation $R^p \to R^q \to M \to 0$ by $S$ gives the finite presentation $S^p \to S^q \to M_S \to 0$ of $M_S$ over $S$.
 
@@ -143,7 +143,7 @@ as real vector spaces, where $iV=\{i \otimes v\}$.
 
 ## Summary
 
-A ring homomorphism $\varphi:R \to S$ gives a functor $R\text{-}\mathbf{Mod} \to S\text{-}\mathbf{Mod}$, $M \mapsto M_S=S \otimes_R M$, the extension of scalars, with $S$-action $s \cdot(s' \otimes m)=(ss') \otimes m$. It is left adjoint to the restriction of scalars, $\operatorname{Hom}_S(S \otimes_R M,N) \cong \operatorname{Hom}_R(M,\operatorname{Res}N)$, hence right exact and compatible with direct sums; it is exact exactly when $S$ is flat over $R$, and in particular whenever $S$ is free over $R$, which includes the case of a field extension.
+A ring homomorphism $\digamma_{\mathrm{map}}:R \to S$ gives a functor $R\text{-}\mathbf{Mod} \to S\text{-}\mathbf{Mod}$, $M \mapsto M_S=S \otimes_R M$, the extension of scalars, with $S$-action $s \cdot(s' \otimes m)=(ss') \otimes m$. It is left adjoint to the restriction of scalars, $\operatorname{Hom}_S(S \otimes_R M,N) \cong \operatorname{Hom}_R(M,\operatorname{Res}N)$, hence right exact and compatible with direct sums; it is exact exactly when $S$ is flat over $R$, and in particular whenever $S$ is free over $R$, which includes the case of a field extension.
 
 The rank behaviour is the field case first: $S \otimes_R R^n \cong S^n$, so over a field extension the dimension of a vector space is unchanged, $\dim_L(L \otimes_K V)=\dim_K V$. For a general base ring the rank can change or be lost: extension along $\mathbb{Z} \to \mathbb{Z}/n$ computes $M/nM$, it can annihilate a nonzero module as $\mathbb{Q} \otimes_{\mathbb{Z}} \mathbb{Z}/n=0$, and it converts free modules to free modules of the same rank but not in a way that respects the lattice of submodules unless $S$ is flat. Base change of algebras takes $T$ to the $S$-algebra $S \otimes_R T$ with multiplication $s_1s_2 \otimes t_1t_2$; complexification of a real space, $V_{\mathbb{C}}=\mathbb{C} \otimes_{\mathbb{R}}V$, gives a complex space of the same dimension with $V_{\mathbb{C}}=V \oplus iV$ and a conjugate-linear involution fixing $V$, while realification doubles the real dimension and is inverse to complexification in the sense that $(\operatorname{Res}W)_{\mathbb{C}} \cong W \oplus \bar W$. Complexification of a real algebra $T$ is the case $R=\mathbb{R}$, $S=\mathbb{C}$, the algebra-level instance of the construction. Base change preserves freeness, projectivity, flatness, finite generation and finite presentation, and it is transitive along a composite of ring homomorphisms; it is exact precisely when the target ring is flat over the source.
 
@@ -151,7 +151,7 @@ The rank behaviour is the field case first: $S \otimes_R R^n \cong S^n$, so over
 
 | Symbol | Meaning |
 |---|---|
-| $\varphi:R \to S$ | ring homomorphism of commutative rings |
+| $\digamma_{\mathrm{map}}:R \to S$ | ring homomorphism of commutative rings |
 | $M_S = S \otimes_R M$ | extension of scalars |
 | $\operatorname{Res}N$ | restriction of scalars of an $S$-module |
 | $\operatorname{Hom}_S(S \otimes_R M,N) \cong \operatorname{Hom}_R(M,\operatorname{Res}N)$ | the adjunction |

@@ -17,7 +17,7 @@ The conventions are those of *Presheaves and Sheaves* for sheaves and stalks and
 
 ## Complexes of Sheaves
 
-**Definition.** A **cochain complex of sheaves** on $X$ is a family $(\mathcal{F}^i)_{i\in\mathbb{Z}}$ of sheaves and morphisms $d^i:\mathcal{F}^i\to\mathcal{F}^{i+1}$ with $d^{i+1}d^i=0$ for every $i$. A **morphism of complexes** $\varphi:(\mathcal{F}^\bullet,d)\to(\mathcal{G}^\bullet,e)$ is a family of morphisms $\varphi^i:\mathcal{F}^i\to\mathcal{G}^i$ with $e^i\varphi^i=\varphi^{i+1}d^i$, that is, commuting with the coboundaries; a morphism is a **quasi-isomorphism** if it induces isomorphisms on all the cohomology sheaves defined below.
+**Definition.** A **cochain complex of sheaves** on $X$ is a family $(\mathcal{F}^i)_{i\in\mathbb{Z}}$ of sheaves and morphisms $d^i:\mathcal{F}^i\to\mathcal{F}^{i+1}$ with $d^{i+1}d^i=0$ for every $i$. A **morphism of complexes** $\digamma_{\mathrm{map}}:(\mathcal{F}^\bullet,d)\to(\mathcal{G}^\bullet,e)$ is a family of morphisms $\digamma_{\mathrm{map}}^i:\mathcal{F}^i\to\mathcal{G}^i$ with $e^i\digamma_{\mathrm{map}}^i=\digamma_{\mathrm{map}}^{i+1}d^i$, that is, commuting with the coboundaries; a morphism is a **quasi-isomorphism** if it induces isomorphisms on all the cohomology sheaves defined below.
 
 **Definition.** The **shift** $\mathcal{F}^\bullet[1]$ of a complex is the complex with $(\mathcal{F}^\bullet[1])^i=\mathcal{F}^{i+1}$ and differential $-d^{i+1}$; the iterated shifts $\mathcal{F}^\bullet[k]$ with differential $(-1)^kd$ are defined in the same way. The complexes of sheaves on $X$ and their morphisms form the category $\mathbf{C}(\mathrm{Sh}(X))$, which is additive, and an abelian category when the coefficient category is the category of abelian groups or of modules.
 
@@ -114,13 +114,13 @@ whose construction is *Spectral Sequences* and *Derived Functors and Sheaf Cohom
 **Theorem (the long exact sequence of a short exact sequence of complexes).** A short exact sequence of complexes
 
 $$
-0\to\mathcal{F}^\bullet\xrightarrow{\ \varphi\ }\mathcal{G}^\bullet\xrightarrow{\ \psi\ }\mathcal{H}^\bullet\to0
+0\to\mathcal{F}^\bullet\xrightarrow{\ \digamma_{\mathrm{map}}\ }\mathcal{G}^\bullet\xrightarrow{\ Ξ_{\mathrm{wfn}}\ }\mathcal{H}^\bullet\to0
 $$
 
 gives a long exact sequence of cohomology sheaves
 
 $$
-\cdots\to\mathcal{H}^i(\mathcal{F}^\bullet)\xrightarrow{\ \varphi\ }\mathcal{H}^i(\mathcal{G}^\bullet)\xrightarrow{\ \psi\ }\mathcal{H}^i(\mathcal{H}^\bullet)\xrightarrow{\ \delta\ }\mathcal{H}^{i+1}(\mathcal{F}^\bullet)\to\cdots
+\cdots\to\mathcal{H}^i(\mathcal{F}^\bullet)\xrightarrow{\ \digamma_{\mathrm{map}}\ }\mathcal{H}^i(\mathcal{G}^\bullet)\xrightarrow{\ Ξ_{\mathrm{wfn}}\ }\mathcal{H}^i(\mathcal{H}^\bullet)\xrightarrow{\ \delta\ }\mathcal{H}^{i+1}(\mathcal{F}^\bullet)\to\cdots
 $$
 
 with connecting morphisms $\delta$ natural in the sequence; applying global sections gives the same long exact sequence for the cohomology $H^i(\Gamma(X,-))$ of the complexes.
@@ -129,9 +129,9 @@ with connecting morphisms $\delta$ natural in the sequence; applying global sect
 
 **Remark (the coboundary and the connecting map are different operators).** The coboundary $d$ is the differential of the complex and raises the internal degree of the grading; the connecting map $\delta$ is defined only in the presence of a short exact sequence of complexes and shifts the cohomological degree. Both are written with symbols suggesting a boundary, and in the classical complexes of topology the connecting map of the sequence of a pair is the transpose of the coboundary of the quotient complex; the article keeps the two apart, $d$ for the differential and $\delta$ for the connecting map.
 
-**Proposition (functoriality of the coboundary).** A morphism of complexes commutes with the coboundary and induces morphisms $\mathcal{H}^i(\varphi)$ and $H^i(\Gamma(X,\varphi))$ on the cohomology; the inverse image $f^{-1}$ of a continuous map $f$ is exact and carries a complex of sheaves on $Y$ to a complex of sheaves on $X$ with $f^{-1}\mathcal{H}^i(\mathcal{F}^\bullet)=\mathcal{H}^i(f^{-1}\mathcal{F}^\bullet)$, while the direct image $f_*$ carries a complex on $X$ to a complex on $Y$ and commutes with the coboundary degreewise.
+**Proposition (functoriality of the coboundary).** A morphism of complexes commutes with the coboundary and induces morphisms $\mathcal{H}^i(\digamma_{\mathrm{map}})$ and $H^i(\Gamma(X,\digamma_{\mathrm{map}}))$ on the cohomology; the inverse image $f^{-1}$ of a continuous map $f$ is exact and carries a complex of sheaves on $Y$ to a complex of sheaves on $X$ with $f^{-1}\mathcal{H}^i(\mathcal{F}^\bullet)=\mathcal{H}^i(f^{-1}\mathcal{F}^\bullet)$, while the direct image $f_*$ carries a complex on $X$ to a complex on $Y$ and commutes with the coboundary degreewise.
 
-*Proof.* A morphism of complexes is defined by $e\varphi=\varphi d$, which is exactly the compatibility of $\varphi$ with the coboundaries; the induced maps on cohomology exist because $\varphi$ carries cocycles to cocycles and coboundaries to coboundaries, and the functoriality of $f^{-1}$ and $f_*$ makes the coboundary commute with them.
+*Proof.* A morphism of complexes is defined by $e\digamma_{\mathrm{map}}=\digamma_{\mathrm{map}} d$, which is exactly the compatibility of $\digamma_{\mathrm{map}}$ with the coboundaries; the induced maps on cohomology exist because $\digamma_{\mathrm{map}}$ carries cocycles to cocycles and coboundaries to coboundaries, and the functoriality of $f^{-1}$ and $f_*$ makes the coboundary commute with them.
 
 ## Worked Cases
 
@@ -149,7 +149,7 @@ Let $\mathcal{F}$ be a sheaf and let $T:\mathcal{F}\to\mathcal{F}$ be an operato
 
 ### The Mapping Cone
 
-For a morphism of complexes $\varphi:\mathcal{F}^\bullet\to\mathcal{G}^\bullet$, the **mapping cone** is the complex with terms $\mathcal{G}^i\oplus\mathcal{F}^{i+1}$ and coboundary $d(g,f)=(dg+\varphi(f),-df)$; the sign $-1$ on the second component is what makes the square of the coboundary vanish, and the resulting long exact sequence is that of the contravariant triangle of $\varphi$. The construction is the standard one of *Derived Categories* and *Homological Algebra*; it is recorded here as the basic operation of the operator $d$ on complexes and is not developed.
+For a morphism of complexes $\digamma_{\mathrm{map}}:\mathcal{F}^\bullet\to\mathcal{G}^\bullet$, the **mapping cone** is the complex with terms $\mathcal{G}^i\oplus\mathcal{F}^{i+1}$ and coboundary $d(g,f)=(dg+\digamma_{\mathrm{map}}(f),-df)$; the sign $-1$ on the second component is what makes the square of the coboundary vanish, and the resulting long exact sequence is that of the contravariant triangle of $\digamma_{\mathrm{map}}$. The construction is the standard one of *Derived Categories* and *Homological Algebra*; it is recorded here as the basic operation of the operator $d$ on complexes and is not developed.
 
 ## Summary
 
@@ -172,7 +172,7 @@ Applying global sections to the complex gives the complex $\Gamma(X,\mathcal{F}^
 | $H^i(\Gamma(X,\mathcal{F}^\bullet))\cong H^i(X,\mathcal{F})$ | abstract de Rham theorem for an acyclic resolution |
 | $\mathbb{H}^i(X,\mathcal{F}^\bullet)=R^i\Gamma(X,\mathcal{F}^\bullet)$ | hypercohomology |
 | $\delta$ | connecting map of a short exact sequence of complexes |
-| mapping cone | complex $\mathcal{G}^i\oplus\mathcal{F}^{i+1}$, coboundary $d(g,f)=(dg+\varphi(f),-df)$ |
+| mapping cone | complex $\mathcal{G}^i\oplus\mathcal{F}^{i+1}$, coboundary $d(g,f)=(dg+\digamma_{\mathrm{map}}(f),-df)$ |
 
 ## Further Reading
 

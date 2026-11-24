@@ -11,39 +11,39 @@ The article treats the definition of a solitary wave and of a soliton; the KdV s
 
 ## Solitary Waves and Solitons
 
-**Definition.** Let $\partial/\partial t w = F(w)$ be an evolution equation on the line. A **solitary wave** is a solution of the form $w(x,t) = \phi(x-ct)$ with $\phi$ a nonzero function decaying at infinity and $c$ a constant velocity; the profile $\phi$ then solves the ordinary differential equation
+**Definition.** Let $\partial/\partial t w = F(w)$ be an evolution equation on the line. A **solitary wave** is a solution of the form $w(x,t) = \digamma_{\mathrm{map}}(x-ct)$ with $\digamma_{\mathrm{map}}$ a nonzero function decaying at infinity and $c$ a constant velocity; the profile $\digamma_{\mathrm{map}}$ then solves the ordinary differential equation
 
 $$
-\phi'' = F_1(\phi,\phi') , \qquad F(\phi,-c\phi') = -c\phi' ,
+\digamma_{\mathrm{map}}'' = F_1(\digamma_{\mathrm{map}},\digamma_{\mathrm{map}}') , \qquad F(\digamma_{\mathrm{map}},-c\digamma_{\mathrm{map}}') = -c\digamma_{\mathrm{map}}' ,
 $$
 
 the second being the travelling-wave reduction of the equation. The solitary wave is a **soliton** if it survives collisions with other solitary waves of the same equation asymptotically unchanged in form and speed.
 
 **Remark (why the distinction is real).** The travelling-wave reduction is an ordinary differential equation with a homoclinic orbit at the origin, and the existence of a solitary wave is a question about homoclinic bifurcation; the equation is not required to be integrable. The stability against collision, by contrast, is a rigid property. For a general equation a solitary wave interacting with another emits radiation and is deformed; for an integrable equation the interaction is exactly elastic, because the inverse scattering transform writes the solution as a sum of asymptotically free pieces, and nothing is transferred to the continuous spectrum in the reflectionless case.
 
-**Example (the KdV solitary wave).** In the convention of the preceding article, $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w=0$, the travelling-wave ansatz $w = \phi(x-ct)$ gives $-c\phi' - 6\phi\phi' + \phi'''=0$, which integrates once to $\phi'' = c\phi + 3\phi^2 + A$. Taking $A=0$ and seeking a solution decaying at infinity, the equation $\frac12(\phi')^2 = \frac c2\phi^2+\phi^3$ has the homoclinic solution
+**Example (the KdV solitary wave).** In the convention of the preceding article, $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w=0$, the travelling-wave ansatz $w = \digamma_{\mathrm{map}}(x-ct)$ gives $-c\digamma_{\mathrm{map}}' - 6\digamma_{\mathrm{map}}\digamma_{\mathrm{map}}' + \digamma_{\mathrm{map}}'''=0$, which integrates once to $\digamma_{\mathrm{map}}'' = c\digamma_{\mathrm{map}} + 3\digamma_{\mathrm{map}}^2 + A$. Taking $A=0$ and seeking a solution decaying at infinity, the equation $\frac12(\digamma_{\mathrm{map}}')^2 = \frac c2\digamma_{\mathrm{map}}^2+\digamma_{\mathrm{map}}^3$ has the homoclinic solution
 
 $$
-\boxed{\;\phi(\zeta) = -\frac{c}{2}\operatorname{sech}^2\left(\frac{\sqrt{c}}{2}\zeta\right)\;},
+\boxed{\;\digamma_{\mathrm{map}}(\zeta) = -\frac{c}{2}\operatorname{sech}^2\left(\frac{\sqrt{c}}{2}\zeta\right)\;},
 $$
 
-which is the one-soliton of the preceding article with $c = 4\kappa^2$ and amplitude $-\frac{c}{2} = -2\kappa^2$. The amplitude is therefore proportional to the speed, $|{\phi}|_{\max} = c/2$, and this amplitude-speed relation is the signature of the KdV soliton: taller waves travel faster, so a fast soliton overtakes a slow one.
+which is the one-soliton of the preceding article with $c = 4\kappa^2$ and amplitude $-\frac{c}{2} = -2\kappa^2$. The amplitude is therefore proportional to the speed, $|{\digamma_{\mathrm{map}}}|_{\max} = c/2$, and this amplitude-speed relation is the signature of the KdV soliton: taller waves travel faster, so a fast soliton overtakes a slow one.
 
 **Example (the nonlinear Schrödinger soliton).** For the focusing nonlinear Schrödinger equation
 
 $$
-i\partial/\partial t\,\psi + \partial^2/\partial x^2\,\psi + 2|\psi|^2\psi = 0 ,
+i\partial/\partial t\,Ξ_{\mathrm{wfn}} + \partial^2/\partial x^2\,Ξ_{\mathrm{wfn}} + 2|Ξ_{\mathrm{wfn}}|^2Ξ_{\mathrm{wfn}} = 0 ,
 $$
 
 already mentioned as an AKNS reduction, the soliton is an **envelope** rather than a pulse: with $A>0$ and $v$ real,
 
 $$
-\psi(x,t) = A\operatorname{sech}\bigl(A(x-vt-x_0)\bigr)\exp\left(i\Bigl(\frac{v}{2}x + \omega t\Bigr)\right), \qquad \omega = A^2 - \frac{v^2}{4} .
+Ξ_{\mathrm{wfn}}(x,t) = A\operatorname{sech}\bigl(A(x-vt-x_0)\bigr)\exp\left(i\Bigl(\frac{v}{2}x + \omega t\Bigr)\right), \qquad \omega = A^2 - \frac{v^2}{4} .
 $$
 
 Its modulus is a localised hump of amplitude $A$ moving with speed $v$, and its phase oscillates under the envelope; the relation between the amplitude and the frequency, $\omega = A^2-v^2/4$, is the nonlinear dispersion relation, and it is what distinguishes the soliton from a Gaussian profile, whose envelope spreads. The formula is verified by substitution into the equation, the second derivative of the sech profile cancelling the nonlinear term against the dispersion.
 
-**Remark (bright and dark solitons).** For the defocusing equation $i\partial/\partial t\,\psi+\partial^2/\partial x^2\,\psi-2|\psi|^2\psi=0$, whose nonlinearity is repulsive, there is no localised hump of small amplitude; the distinguished localised solutions are instead the **dark solitons**, which are depletions of a nonzero background $\psi_0$, $\psi = \psi_0\tanh(\cdot)\exp(i\phi)$, moving at less than the speed of the background. The two cases illustrate that the existence of a bright soliton is a property of the focusing equation, and that the nonlinear Schrödinger equation is the model in which the focusing/defocusing dichotomy is cleanest.
+**Remark (bright and dark solitons).** For the defocusing equation $i\partial/\partial t\,Ξ_{\mathrm{wfn}}+\partial^2/\partial x^2\,Ξ_{\mathrm{wfn}}-2|Ξ_{\mathrm{wfn}}|^2Ξ_{\mathrm{wfn}}=0$, whose nonlinearity is repulsive, there is no localised hump of small amplitude; the distinguished localised solutions are instead the **dark solitons**, which are depletions of a nonzero background $Ξ_{\mathrm{wfn},0}$, $Ξ_{\mathrm{wfn}} = Ξ_{\mathrm{wfn},0}\tanh(\cdot)\exp(i\digamma_{\mathrm{map}})$, moving at less than the speed of the background. The two cases illustrate that the existence of a bright soliton is a property of the focusing equation, and that the nonlinear Schrödinger equation is the model in which the focusing/defocusing dichotomy is cleanest.
 
 ## The KdV Soliton and Its Interaction
 
@@ -115,13 +115,13 @@ $$
 
 has the **peakon** solution $w(x,t) = c\,\exp(-|x-ct|)$ for $c\neq0$: a travelling wave whose profile has a corner at its crest and which solves the equation in the weak sense. Peakons are the analogue of solitons for this equation, they interact elastically, and they show that the soliton mechanism does not require the solution to be smooth; the equation is integrable, with a Lax pair and an inverse scattering transform of its own.
 
-**Example (line solitons and lumps).** In two spatial dimensions the Kadomtsev–Petviashvili equation, the two-dimensional integrable relative of KdV, has **line solitons** $w=\phi(x+ay-ct)$ that are independent of one direction, and the Davey–Stewartson equation has **lumps**, rational localised solutions decaying algebraically in all directions. The higher-dimensional theory shows that the elastic interaction is not peculiar to one dimension, but the stability properties of the higher-dimensional solitons differ, as the next section records.
+**Example (line solitons and lumps).** In two spatial dimensions the Kadomtsev–Petviashvili equation, the two-dimensional integrable relative of KdV, has **line solitons** $w=\digamma_{\mathrm{map}}(x+ay-ct)$ that are independent of one direction, and the Davey–Stewartson equation has **lumps**, rational localised solutions decaying algebraically in all directions. The higher-dimensional theory shows that the elastic interaction is not peculiar to one dimension, but the stability properties of the higher-dimensional solitons differ, as the next section records.
 
 ## Stability of Solitons
 
-**Definition.** Let $\phi_c$ be a solitary wave of an evolution equation, and let $\tau_r\phi_c$ denote its translate by $r$. The wave is **orbitally stable** if for every $\varepsilon>0$ there is $\delta>0$ such that an initial datum within distance $\delta$ of the orbit $\{\tau_r\phi_c : r\in\mathbb{R}\}$ in the relevant norm generates a solution that remains within distance $\varepsilon$ of that orbit for all time; it is **asymptotically stable** if, in addition, the solution converges to some member of the orbit as $t\to\infty$.
+**Definition.** Let $\digamma_{\mathrm{map},c}$ be a solitary wave of an evolution equation, and let $\tau_r\digamma_{\mathrm{map},c}$ denote its translate by $r$. The wave is **orbitally stable** if for every $\varepsilon>0$ there is $\delta>0$ such that an initial datum within distance $\delta$ of the orbit $\{\tau_r\digamma_{\mathrm{map},c} : r\in\mathbb{R}\}$ in the relevant norm generates a solution that remains within distance $\varepsilon$ of that orbit for all time; it is **asymptotically stable** if, in addition, the solution converges to some member of the orbit as $t\to\infty$.
 
-**Theorem (orbital stability of the NLS soliton).** For the focusing nonlinear Schrödinger equation with a power nonlinearity $i\partial/\partial t\,\psi+\partial^2/\partial x^2\,\psi+|\psi|^{p-1}\psi=0$ in the $L^2$-subcritical range $1<p<5$, the ground-state solitary wave is orbitally stable in $H^1$; for the supercritical range it is unstable, and the instability is by blow-up or by dispersion.
+**Theorem (orbital stability of the NLS soliton).** For the focusing nonlinear Schrödinger equation with a power nonlinearity $i\partial/\partial t\,Ξ_{\mathrm{wfn}}+\partial^2/\partial x^2\,Ξ_{\mathrm{wfn}}+|Ξ_{\mathrm{wfn}}|^{p-1}Ξ_{\mathrm{wfn}}=0$ in the $L^2$-subcritical range $1<p<5$, the ground-state solitary wave is orbitally stable in $H^1$; for the supercritical range it is unstable, and the instability is by blow-up or by dispersion.
 
 *Proof.* Quoted as standard (Weinstein, Cazenave–Lions). The proof combines the variational characterisation of the solitary wave as the minimiser of the energy functional at fixed $L^2$ norm, the coercivity of the second variation on the orthogonal complement of the orbit, and a Gronwall argument that controls the growth of the deviation; the critical exponent is the one at which the second variation loses its coercivity.
 
@@ -139,25 +139,25 @@ has the **peakon** solution $w(x,t) = c\,\exp(-|x-ct|)$ for $c\neq0$: a travelli
 
 ## Summary
 
-A solitary wave of an evolution equation is a localised travelling wave $w=\phi(x-ct)$ whose profile solves the travelling-wave reduction, and it is a soliton if it also survives collisions unchanged apart from a phase shift. For KdV in the convention $\partial/\partial t w-6w\partial/\partial x w+\partial^3/\partial x^3 w=0$, the solitary wave is $\phi=-\frac c2\operatorname{sech}^2(\frac{\sqrt c}{2}\zeta)$ with amplitude $c/2$ proportional to the speed, so taller solitons move faster; the reflectionless $N$-soliton is asymptotically $N$ separated one-solitons at both time infinities, and the elastic collision shifts each centre by a finite phase shift, proportional for two solitons to $\log\frac{(\kappa_1+\kappa_2)^2}{(\kappa_1-\kappa_2)^2}$, which diverges at the resonance $\kappa_1\to\kappa_2$. The conserved quantities of KdV evaluate on the $N$-soliton as sums of powers of the $\kappa_n$, which is the precise form of the discrete picture, and every sufficiently smooth initial datum resolves asymptotically into finitely many solitons plus dispersive radiation. For the focusing nonlinear Schrödinger equation $i\partial/\partial t\,\psi+\partial^2/\partial x^2\,\psi+2|\psi|^2\psi=0$ the soliton is an envelope $A\operatorname{sech}(A(x-vt))\exp(i(vx/2+\omega t))$ with $\omega=A^2-\frac{v^2}{4}$, and the defocusing equation possesses dark solitons instead. The sine-Gordon equation has the topological kink $4\arctan \exp(\gamma(x-vt))$, with $\gamma=(1-v^2)^{-1/2}$, and the breather, a kink–antikink bound state oscillating in time; the Camassa–Holm equation has the cornered peakon. Solitary waves that are not integrable solitons may still be orbitally stable, as the NLS and KdV stability theorems show, but their collisions radiate, and the multidimensional case introduces transverse instabilities that have no one-dimensional analogue.
+A solitary wave of an evolution equation is a localised travelling wave $w=\digamma_{\mathrm{map}}(x-ct)$ whose profile solves the travelling-wave reduction, and it is a soliton if it also survives collisions unchanged apart from a phase shift. For KdV in the convention $\partial/\partial t w-6w\partial/\partial x w+\partial^3/\partial x^3 w=0$, the solitary wave is $\digamma_{\mathrm{map}}=-\frac c2\operatorname{sech}^2(\frac{\sqrt c}{2}\zeta)$ with amplitude $c/2$ proportional to the speed, so taller solitons move faster; the reflectionless $N$-soliton is asymptotically $N$ separated one-solitons at both time infinities, and the elastic collision shifts each centre by a finite phase shift, proportional for two solitons to $\log\frac{(\kappa_1+\kappa_2)^2}{(\kappa_1-\kappa_2)^2}$, which diverges at the resonance $\kappa_1\to\kappa_2$. The conserved quantities of KdV evaluate on the $N$-soliton as sums of powers of the $\kappa_n$, which is the precise form of the discrete picture, and every sufficiently smooth initial datum resolves asymptotically into finitely many solitons plus dispersive radiation. For the focusing nonlinear Schrödinger equation $i\partial/\partial t\,Ξ_{\mathrm{wfn}}+\partial^2/\partial x^2\,Ξ_{\mathrm{wfn}}+2|Ξ_{\mathrm{wfn}}|^2Ξ_{\mathrm{wfn}}=0$ the soliton is an envelope $A\operatorname{sech}(A(x-vt))\exp(i(vx/2+\omega t))$ with $\omega=A^2-\frac{v^2}{4}$, and the defocusing equation possesses dark solitons instead. The sine-Gordon equation has the topological kink $4\arctan \exp(\gamma(x-vt))$, with $\gamma=(1-v^2)^{-1/2}$, and the breather, a kink–antikink bound state oscillating in time; the Camassa–Holm equation has the cornered peakon. Solitary waves that are not integrable solitons may still be orbitally stable, as the NLS and KdV stability theorems show, but their collisions radiate, and the multidimensional case introduces transverse instabilities that have no one-dimensional analogue.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $w(x,t)$, $\phi$ | Field and solitary-wave profile |
+| $w(x,t)$, $\digamma_{\mathrm{map}}$ | Field and solitary-wave profile |
 | $c$, $v$ | Speed of a solitary wave |
 | KdV | $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w = 0$ |
 | $\kappa_n$ | Bound-state parameters; the bound-state eigenvalues of the scattering problem are $-\kappa_n^2$ |
 | $I_k$ | Conserved quantities, evaluated on the reflectionless data |
 | $\delta_n^\pm$ | Asymptotic centres of the $n$-th soliton; phase shift $\delta_n^+-\delta_n^-$ |
-| NLS | $i\partial/\partial t\,\psi+\partial^2/\partial x^2\,\psi+2|\psi|^2\psi=0$ (focusing) |
+| NLS | $i\partial/\partial t\,Ξ_{\mathrm{wfn}}+\partial^2/\partial x^2\,Ξ_{\mathrm{wfn}}+2|Ξ_{\mathrm{wfn}}|^2Ξ_{\mathrm{wfn}}=0$ (focusing) |
 | $A$, $\omega$ | Soliton amplitude and frequency, $\omega=A^2-v^2/4$ |
 | sine-Gordon | $\partial^2/\partial t^2 w-\partial^2/\partial x^2 w+\sin w=0$ |
 | $\gamma$ | Factor $(1-v^2)^{-1/2}$ in the pseudo-Euclidean symmetry of the kink |
 | $2\pi$ | Topological charge of the sine-Gordon kink |
 | peakon | $w=c\,\exp(-|x-ct|)$, the cornered Camassa–Holm soliton |
-| orbital stability | Stability of the orbit $\{\tau_r\phi_c\}$ under the flow |
+| orbital stability | Stability of the orbit $\{\tau_r\digamma_{\mathrm{map},c}\}$ under the flow |
 
 ## Further Reading
 

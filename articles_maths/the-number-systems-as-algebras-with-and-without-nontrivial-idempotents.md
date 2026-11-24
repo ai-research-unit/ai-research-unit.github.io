@@ -167,10 +167,10 @@ The isomorphism is the standard one: choose a representation of the quaternion u
 An idempotent in $M_2(\mathbb{C})$ is a projection: a matrix $e$ with $e^2=e$. The trivial idempotents are $0$ and $I$. The nontrivial idempotents are the rank-one projections. A rank-one projection is the projection onto a line $L$ along a complementary line $K$, with $V=L\oplus K$; it has the form
 
 $$
-e=u\varphi, \qquad \varphi(u)=1,
+e=u\digamma_{\mathrm{map}}, \qquad \digamma_{\mathrm{map}}(u)=1,
 $$
 
-where $u$ spans $L$ and $\varphi$ is the linear functional with kernel $K$. The pair $(L,K)$ of complementary lines in $\mathbb{C}^2$ is the parameter, so the rank-one projections form a two-complex-parameter family; equivalently, the pairs of distinct points of $\mathbb{C}P^1$. The two matrix units
+where $u$ spans $L$ and $\digamma_{\mathrm{map}}$ is the linear functional with kernel $K$. The pair $(L,K)$ of complementary lines in $\mathbb{C}^2$ is the parameter, so the rank-one projections form a two-complex-parameter family; equivalently, the pairs of distinct points of $\mathbb{C}P^1$. The two matrix units
 
 $$
 E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix}, \qquad E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix}

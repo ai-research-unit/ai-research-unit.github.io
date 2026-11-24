@@ -154,7 +154,7 @@ Two fluid properties follow from the mapping and have not been used in this bloc
 
 ### The two densities
 
-His density is the modulus of the current, and his scalar bilinear is a different number. His $\Omega$ and $\Omega_{\mathrm{ps}}$ are the scalar and the pseudoscalar bilinears, $\Omega=\bar\psi\psi$ and $\Omega_{\mathrm{ps}}=i\bar\psi\gamma_5\psi$, and his density is their quadrature:
+His density is the modulus of the current, and his scalar bilinear is a different number. His $\Omega$ and $\Omega_{\mathrm{ps}}$ are the scalar and the pseudoscalar bilinears, $\Omega=\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}$ and $\Omega_{\mathrm{ps}}=i\barΞ_{\mathrm{wfn}}\gamma_5Ξ_{\mathrm{wfn}}$, and his density is their quadrature:
 
 $$
 \rho^{2}=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}=\sum_{\imath}\varepsilon_{\imath} j_{\imath} j_{\imath},
@@ -304,7 +304,7 @@ No experiment separates the two formulations. What separates them is the origin 
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\vec s$ | The spin element |
 | $\rho$, $v_{\imath}$, $w_{\imath}$, $\nu_{\imath}$, $\theta$ | Takabayasi's density, velocity, spin, momentum and internal angle |
-| $\Omega=\bar\psi\psi$, $\Omega_{\mathrm{ps}}=i\bar\psi\gamma_5\psi$ | His scalar and pseudoscalar bilinears; $\Omega=\rho\cos\theta$ and $\Omega_{\mathrm{ps}}=\rho\sin\theta$ |
+| $\Omega=\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}$, $\Omega_{\mathrm{ps}}=i\barΞ_{\mathrm{wfn}}\gamma_5Ξ_{\mathrm{wfn}}$ | His scalar and pseudoscalar bilinears; $\Omega=\rho\cos\theta$ and $\Omega_{\mathrm{ps}}=\rho\sin\theta$ |
 | $j_{\imath}$ | The current, with $\rho^{2}=\sum_{\imath}\varepsilon_{\imath} j_{\imath} j_{\imath}=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}$ |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number; the unit that makes his $\nu_{\imath}$ dimensionless |
 | $u_{\imath}$, $q_{\imath}$, $\epsilon$ | Eckart four-velocity, heat flow, and the energy density it sees |

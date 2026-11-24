@@ -5,7 +5,7 @@
 
 The **covariance function** of a family of random variables records the pairing of the family with itself in the form of the category,
 $$
-R(s,t)=\varphi\bigl(X_sX_t^*\bigr)=\langle X_s,X_t\rangle ,
+R(s,t)=\digamma_{\mathrm{map}}\bigl(X_sX_t^*\bigr)=\langle X_s,X_t\rangle ,
 $$
 the expectation form of *The Involution on the Algebra of Random Variables*, the preceding article. Its two structural properties are the **Hermitian symmetry** $R(s,t)=\overline{R(t,s)}$ and the **positive definiteness**
 $$
@@ -13,9 +13,9 @@ $$
 $$
 which together say that $R$ is the Gram matrix of the family in the Hilbert space of the theory. The article develops the covariance function from that point of view: it defines the covariance and its operator, proves the Hermitian symmetry, the Cauchy–Schwarz inequality and the positive definiteness, proves the realization theorem that every Hermitian positive-definite kernel is the covariance of a family (the Gelfand–Naimark–Segal construction followed by the Kolmogorov extension), specialises to the stationary case, where the covariance depends on the differences of the indices and the **Herglotz–Bochner theorem** identifies the stationary covariance functions with the Fourier transforms of the positive measures, and compares the covariance with the general form of the category.
 
-The conventions are those of *The Involution on the Algebra of Random Variables*, the preceding article: the algebra of random variables $L^\infty(\Omega,\mathcal F,\mathbb P)$, the conjugation $x^*=\bar x$, the state $\varphi(x)=\mathbb E[x]$ and the form $\langle x,y\rangle=\varphi(xy^*)$ on $\mathcal{H}=L^2(\Omega,\mathbb P)$, all faithful and positive definite. The realization of a process from its finite-dimensional laws is the Kolmogorov extension, *Measure-Theoretic Probability*, written; the Gaussian laws determined by their covariances are *Independence and Conditional Expectation*, written; the Gram matrices, the positive operators and the Hilbert space geometry are *Banach and Hilbert Spaces*, written; the spectral theory of the stationary processes and the Herglotz representation are *Ergodic Theory*, written, and the reversibility consequences of the covariance symmetry are *The Reversibility of a Stationary Process*, earlier in this category. The Fourier transform of the law, its conjugate symmetry and its positive-definiteness are *The Characteristic Function and Conjugate Symmetry*, the next article. No physics is invoked.
+The conventions are those of *The Involution on the Algebra of Random Variables*, the preceding article: the algebra of random variables $L^\infty(\Omega,\mathcal F,\mathbb P)$, the conjugation $x^*=\bar x$, the state $\digamma_{\mathrm{map}}(x)=\mathbb E[x]$ and the form $\langle x,y\rangle=\digamma_{\mathrm{map}}(xy^*)$ on $\mathcal{H}=L^2(\Omega,\mathbb P)$, all faithful and positive definite. The realization of a process from its finite-dimensional laws is the Kolmogorov extension, *Measure-Theoretic Probability*, written; the Gaussian laws determined by their covariances are *Independence and Conditional Expectation*, written; the Gram matrices, the positive operators and the Hilbert space geometry are *Banach and Hilbert Spaces*, written; the spectral theory of the stationary processes and the Herglotz representation are *Ergodic Theory*, written, and the reversibility consequences of the covariance symmetry are *The Reversibility of a Stationary Process*, earlier in this category. The Fourier transform of the law, its conjugate symmetry and its positive-definiteness are *The Characteristic Function and Conjugate Symmetry*, the next article. No physics is invoked.
 
-Throughout, $T$ is an index set, $\{X_t\}_{t\in T}$ is a family of complex random variables in $L^2(\Omega,\mathbb P)$ with means $m_t=\varphi(X_t)$, and the covariance is taken centred, $R(s,t)=\varphi\bigl((X_s-m_s)(X_t-m_t)^*\bigr)$, or without centring where the context makes the means zero. The Hilbert space is $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form of the category, the covariance operator is $C$ on the closed span of the family, and for $T=\mathbb Z$ or $T=\mathbb R$ the stationary covariance is written $R(t-s)$.
+Throughout, $T$ is an index set, $\{X_t\}_{t\in T}$ is a family of complex random variables in $L^2(\Omega,\mathbb P)$ with means $m_t=\digamma_{\mathrm{map}}(X_t)$, and the covariance is taken centred, $R(s,t)=\digamma_{\mathrm{map}}\bigl((X_s-m_s)(X_t-m_t)^*\bigr)$, or without centring where the context makes the means zero. The Hilbert space is $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form of the category, the covariance operator is $C$ on the closed span of the family, and for $T=\mathbb Z$ or $T=\mathbb R$ the stationary covariance is written $R(t-s)$.
 
 ## The Covariance Function
 
@@ -23,7 +23,7 @@ Throughout, $T$ is an index set, $\{X_t\}_{t\in T}$ is a family of complex rando
 
 **Definition.** The **covariance function** of the family is
 $$
-R(s,t)=\varphi\bigl((X_s-m_s)(X_t-m_t)^*\bigr)=\bigl\langle X_s-m_s,\ X_t-m_t\bigr\rangle ,
+R(s,t)=\digamma_{\mathrm{map}}\bigl((X_s-m_s)(X_t-m_t)^*\bigr)=\bigl\langle X_s-m_s,\ X_t-m_t\bigr\rangle ,
 $$
 and the **covariance operator** is the linear operator on the closed span of the centred family with
 $$
@@ -40,7 +40,7 @@ it satisfies the Cauchy–Schwarz inequality
 $$
 |R(s,t)|^2\le R(s,s)\,R(t,t),
 $$
-and $R(t,t)=\varphi(|X_t-m_t|^2)=\operatorname{Var}(X_t)\ge0$, so the diagonal is real and nonnegative.
+and $R(t,t)=\digamma_{\mathrm{map}}(|X_t-m_t|^2)=\operatorname{Var}(X_t)\ge0$, so the diagonal is real and nonnegative.
 
 *Proof.* The Hermitian symmetry is the anti-linearity of the form in the second argument, $R(t,s)=\langle X_t,X_s\rangle=\overline{\langle X_s,X_t\rangle}$; the Cauchy–Schwarz inequality is the general inequality for a positive-definite form on the two vectors; the diagonal is the variance.
 
@@ -48,7 +48,7 @@ and $R(t,t)=\varphi(|X_t-m_t|^2)=\operatorname{Var}(X_t)\ge0$, so the diagonal i
 
 **Theorem (positive definiteness).** For every finite set of indices $t_1,\dots,t_k$ and complex scalars $c_1,\dots,c_k$,
 $$
-\boxed{\;\sum_{i,j=1}^k c_i\,\overline{c_j}\,R(t_i,t_j)=\varphi\Bigl(\Bigl|\sum_ic_i(X_{t_i}-m_{t_i})\Bigr|^2\Bigr)\ge0\;} ,
+\boxed{\;\sum_{i,j=1}^k c_i\,\overline{c_j}\,R(t_i,t_j)=\digamma_{\mathrm{map}}\Bigl(\Bigl|\sum_ic_i(X_{t_i}-m_{t_i})\Bigr|^2\Bigr)\ge0\;} ,
 $$
 so $R$ is a **positive-definite** kernel, and the matrix $(R(t_i,t_j))$ is positive semi-definite Hermitian. The kernel is positive definite in the strict sense: the double sum vanishes exactly when $\sum_ic_i(X_{t_i}-m_{t_i})=0$ in $\mathcal{H}$, because the form of the category is positive definite, which is the faithfulness of the state established in the preceding article.
 
@@ -60,7 +60,7 @@ so $R$ is a **positive-definite** kernel, and the matrix $(R(t_i,t_j))$ is posit
 
 **Theorem (realization).** Let $R:T\times T\to\mathbb{C}$ be Hermitian and positive definite and let $m:T\to\mathbb{C}$. Then there are a probability space $(\Omega,\mathcal F,\mathbb P)$ and a family $\{X_t\}_{t\in T}$ of random variables with means $m_t$ and covariance $R$; the family is realised as the vectors $x_t$ of the Gelfand–Naimark–Segal space of the kernel, $X_t=m_t+\pi(x_t)$ on the GNS space, and $R$ is the Gram matrix, $R(s,t)=\langle x_s,x_t\rangle$.
 
-*Proof.* Form the free vector space on $T$ with the sesquilinear form $\langle x_s,x_t\rangle=R(s,t)$; the positive definiteness makes the form an inner product after the quotient by the null vectors, and the completion is a Hilbert space $\mathcal{K}$ with the coordinate vectors $x_t$ satisfying the Gram conditions. The von Neumann algebra generated by the coordinate multiplication on $\mathcal{K}$ with the vector state $\varphi(z)=\langle z\mathbf 1,\mathbf 1\rangle$ provides the algebra of random variables and the state; the passage to a genuine probability space, when $T$ is countable and $R$ is measurable, is the Kolmogorov extension applied to the finite-dimensional laws. The construction is the commutative case of the GNS construction of *Non-Commutative Probability and the Involutive Algebra of Random Variables*, earlier in this category.
+*Proof.* Form the free vector space on $T$ with the sesquilinear form $\langle x_s,x_t\rangle=R(s,t)$; the positive definiteness makes the form an inner product after the quotient by the null vectors, and the completion is a Hilbert space $\mathcal{K}$ with the coordinate vectors $x_t$ satisfying the Gram conditions. The von Neumann algebra generated by the coordinate multiplication on $\mathcal{K}$ with the vector state $\digamma_{\mathrm{map}}(z)=\langle z\mathbf 1,\mathbf 1\rangle$ provides the algebra of random variables and the state; the passage to a genuine probability space, when $T$ is countable and $R$ is measurable, is the Kolmogorov extension applied to the finite-dimensional laws. The construction is the commutative case of the GNS construction of *Non-Commutative Probability and the Involutive Algebra of Random Variables*, earlier in this category.
 
 **Corollary (the covariance is the form).** The covariance function of a family is exactly the restriction to the family of the form of the category; two families have the same covariance exactly when their centred spans are isometric in $L^2(\Omega,\mathbb P)$, and the covariance operator is the restriction of the multiplication in the sense of the Gram operator of the family.
 
@@ -126,13 +126,13 @@ The covariance degenerates in four configurations. First, the Hermitian symmetry
 
 ## Summary
 
-The covariance function of a family of random variables is the pairing $R(s,t)=\varphi\bigl((X_s-m_s)(X_t-m_t)^*\bigr)$ in the form of the category; it is Hermitian, $R(s,t)=\overline{R(t,s)}$, it satisfies the Cauchy–Schwarz inequality $|R(s,t)|^2\le R(s,s)R(t,t)$, and it is positive definite, the double sum $\sum c_i\bar c_jR(t_i,t_j)$ being the squared norm of the combination $\sum c_i(X_{t_i}-m_{t_i})$. Conversely every Hermitian positive-definite kernel is the covariance of some family, realised as the coordinate vectors of its GNS space, with the passage to a stochastic process by the Kolmogorov extension and the Gaussian determination of the law by the covariance. In the stationary case the covariance depends on the difference, it is bounded, $|R(t)|\le R(0)$, and the Herglotz and Bochner theorems identify the stationary covariance functions of $\mathbb Z$ and of $\mathbb R$ with the Fourier transforms of the finite positive spectral measures. The function and its positivity also carry the reversibility of the process and the conjugate symmetry of the law, which are *The Reversibility of a Stationary Process*, earlier in this category, and *The Characteristic Function and Conjugate Symmetry*, the next article.
+The covariance function of a family of random variables is the pairing $R(s,t)=\digamma_{\mathrm{map}}\bigl((X_s-m_s)(X_t-m_t)^*\bigr)$ in the form of the category; it is Hermitian, $R(s,t)=\overline{R(t,s)}$, it satisfies the Cauchy–Schwarz inequality $|R(s,t)|^2\le R(s,s)R(t,t)$, and it is positive definite, the double sum $\sum c_i\bar c_jR(t_i,t_j)$ being the squared norm of the combination $\sum c_i(X_{t_i}-m_{t_i})$. Conversely every Hermitian positive-definite kernel is the covariance of some family, realised as the coordinate vectors of its GNS space, with the passage to a stochastic process by the Kolmogorov extension and the Gaussian determination of the law by the covariance. In the stationary case the covariance depends on the difference, it is bounded, $|R(t)|\le R(0)$, and the Herglotz and Bochner theorems identify the stationary covariance functions of $\mathbb Z$ and of $\mathbb R$ with the Fourier transforms of the finite positive spectral measures. The function and its positivity also carry the reversibility of the process and the conjugate symmetry of the law, which are *The Reversibility of a Stationary Process*, earlier in this category, and *The Characteristic Function and Conjugate Symmetry*, the next article.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $R(s,t)=\varphi\bigl((X_s-m_s)(X_t-m_t)^*\bigr)$ | the covariance function |
+| $R(s,t)=\digamma_{\mathrm{map}}\bigl((X_s-m_s)(X_t-m_t)^*\bigr)$ | the covariance function |
 | $R(s,t)=\overline{R(t,s)}$ | Hermitian symmetry |
 | $|R(s,t)|^2\le R(s,s)R(t,t)$ | Cauchy–Schwarz |
 | $\sum c_i\bar c_jR(t_i,t_j)\ge0$ | positive definiteness |

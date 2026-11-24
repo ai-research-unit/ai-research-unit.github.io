@@ -218,7 +218,7 @@ is ordered lexicographically by the lowest-degree nonzero coefficient: $\sum a_k
 
 ### Order-Preserving Maps
 
-**Definition.** An **order-preserving** map of ordered fields (or of ordered sets) $\varphi : F \to K$ satisfies $x \leq y \implies \varphi(x) \leq \varphi(y)$. An **ordered-field embedding** is an injective field homomorphism that is order-preserving, and its image is then an ordered subfield.
+**Definition.** An **order-preserving** map of ordered fields (or of ordered sets) $\digamma_{\mathrm{map}} : F \to K$ satisfies $x \leq y \implies \digamma_{\mathrm{map}}(x) \leq \digamma_{\mathrm{map}}(y)$. An **ordered-field embedding** is an injective field homomorphism that is order-preserving, and its image is then an ordered subfield.
 
 **Proposition.** Let $F$ and $K$ be ordered fields and let $\sigma : F \to K$ be a field homomorphism such that $x > 0$ in $F$ implies $\sigma(x) > 0$ in $K$. Then $\sigma$ is strictly order-preserving and injective. In particular, the embedding of the prime field $\mathbb{Q}$ into any ordered field is order-preserving.
 

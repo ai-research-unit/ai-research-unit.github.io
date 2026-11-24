@@ -84,7 +84,7 @@ $$
 
 a union of the two coordinate-line families restricted to the hyperbola. On the null lines $t = 0$ the description degenerates: the hyperbola splits into the two null lines, and the two families of coordinate lines coincide with them.
 
-**Proof.** Immediate from the product formula $J_c = \varphi^{-1}((J_+\times\mathbb{R})\cup(\mathbb{R}\times J_-))$ of *The Split-Complex Julia Sets* and from $N = z_+z_-$; the level set $\langle z\rangle_{*} = t$ in the coordinates is the hyperbola $z_+z_- = t$, which the two coordinate foliations cut into the two families, and its intersections with $J_c$ are exactly those on which a coordinate lies in the corresponding real Julia set.
+**Proof.** Immediate from the product formula $J_c = \digamma_{\mathrm{map}}^{-1}((J_+\times\mathbb{R})\cup(\mathbb{R}\times J_-))$ of *The Split-Complex Julia Sets* and from $N = z_+z_-$; the level set $\langle z\rangle_{*} = t$ in the coordinates is the hyperbola $z_+z_- = t$, which the two coordinate foliations cut into the two families, and its intersections with $J_c$ are exactly those on which a coordinate lies in the corresponding real Julia set.
 
 **Theorem (the dimension).** For every $c \in \mathbb{C}_{\mathrm{spl}}$ the Hausdorff dimension of the split Julia set is
 
@@ -94,7 +94,7 @@ $$
 
 whenever the two real Julia sets are nonempty, the product rule $\dim_H(A\times\mathbb{R}) = \dim_H A + 1$ for $A \subseteq \mathbb{R}$ being that of *Fractal Geometry*, and the dimension of a finite union being the maximum. If one of the real Julia sets is empty the corresponding product is absent, and if both are empty the set is empty.
 
-**Proof.** $J_c$ is the union of the two products $\varphi^{-1}(J_+\times\mathbb{R})$ and $\varphi^{-1}(\mathbb{R}\times J_-)$, and $\varphi$ is a linear isomorphism, hence bi-Lipschitz and dimension-preserving; the dimension of a product $A\times\mathbb{R}$ is $\dim_H A + 1$ for a subset of the line, and the dimension of a finite union is the maximum of the dimensions.
+**Proof.** $J_c$ is the union of the two products $\digamma_{\mathrm{map}}^{-1}(J_+\times\mathbb{R})$ and $\digamma_{\mathrm{map}}^{-1}(\mathbb{R}\times J_-)$, and $\digamma_{\mathrm{map}}$ is a linear isomorphism, hence bi-Lipschitz and dimension-preserving; the dimension of a product $A\times\mathbb{R}$ is $\dim_H A + 1$ for a subset of the line, and the dimension of a finite union is the maximum of the dimensions.
 
 **Corollary.** The split Julia set is never of dimension below one, and it is never compact: it contains the product of a nonempty subset of the line with the whole line, which is unbounded, so a nonempty $J_c$ is unbounded and only the empty set is compact. For $c = 0$ the dimension is $1+0 = 1$ and the set is the union of the four lines through the sides of the square $K_0$ — it strictly contains $\partial K_0$ and is not the boundary of the square; for $c = -2$ the dimension is $1+1 = 2$, in agreement with the two crossing strips of *The Split-Complex Julia Sets*. In particular the plane Julia set of a split-complex quadratic map is never the boundary of its filled Julia set, because the boundary is compact and the Julia set is not.
 
@@ -102,9 +102,9 @@ whenever the two real Julia sets are nonempty, the product rule $\dim_H(A\times\
 
 ## The Hyperbolic Components and the Multiplier Metric
 
-**Definition.** A parameter of $M_{\mathbb{C}_{\mathrm{spl}}}$ is **hyperbolic** if both real maps $g_\pm$ have an attracting cycle, that is if both $c_+$ and $c_-$ lie in the union of the real hyperbolic intervals; a **hyperbolic component** of $M_{\mathbb{C}_{\mathrm{spl}}}$ is a connected component of the hyperbolic parameters. Since the condition is a product condition, a hyperbolic component of $M_{\mathbb{C}_{\mathrm{spl}}}$ is $\varphi^{-1}(I_+ \times I_-)$ with $I_\pm$ a real hyperbolic interval.
+**Definition.** A parameter of $M_{\mathbb{C}_{\mathrm{spl}}}$ is **hyperbolic** if both real maps $g_\pm$ have an attracting cycle, that is if both $c_+$ and $c_-$ lie in the union of the real hyperbolic intervals; a **hyperbolic component** of $M_{\mathbb{C}_{\mathrm{spl}}}$ is a connected component of the hyperbolic parameters. Since the condition is a product condition, a hyperbolic component of $M_{\mathbb{C}_{\mathrm{spl}}}$ is $\digamma_{\mathrm{map}}^{-1}(I_+ \times I_-)$ with $I_\pm$ a real hyperbolic interval.
 
-**Theorem (the multiplier map).** Let $H = \varphi^{-1}(I_+\times I_-)$ be a hyperbolic component, where $I_\pm$ is a real hyperbolic interval of period $p_\pm$. Then the **multiplier map**
+**Theorem (the multiplier map).** Let $H = \digamma_{\mathrm{map}}^{-1}(I_+\times I_-)$ be a hyperbolic component, where $I_\pm$ is a real hyperbolic interval of period $p_\pm$. Then the **multiplier map**
 
 $$
 \Lambda : H \longrightarrow (-1,1)^2, \qquad \Lambda(c) = \bigl(\lambda_{p_+}(c_+),\, \lambda_{p_-}(c_-)\bigr) ,
@@ -112,9 +112,9 @@ $$
 
 sending $c$ to the pair of multipliers of the two attracting real cycles, is a diffeomorphism onto the square $(-1,1)^2$; in particular $H$ is a rectangle.
 
-**Proof.** On a real hyperbolic interval of period $p$ the multiplier of the attracting cycle is a strictly monotone real-analytic function of the parameter, running from $1$ at one endpoint (the period-doubling point) to $-1$ at the other (the next period-doubling point); this is the one-dimensional multiplier theorem in its real form. Applying it to both factors and using that $\varphi$ is an isomorphism gives a diffeomorphism of the product onto $(-1,1)^2$.
+**Proof.** On a real hyperbolic interval of period $p$ the multiplier of the attracting cycle is a strictly monotone real-analytic function of the parameter, running from $1$ at one endpoint (the period-doubling point) to $-1$ at the other (the next period-doubling point); this is the one-dimensional multiplier theorem in its real form. Applying it to both factors and using that $\digamma_{\mathrm{map}}$ is an isomorphism gives a diffeomorphism of the product onto $(-1,1)^2$.
 
-**Definition (the hyperbolic metric on a component).** The interval $(-1,1)$ is conformally the unit disk, by $w \mapsto (1+w)/(1-w)$ or by the hyperbolic tangent; transporting the Poincaré metric of the disk gives the **hyperbolic metric** $\rho$ on $(-1,1)$. On a hyperbolic component $H = \varphi^{-1}(I_+\times I_-)$ the pull-back
+**Definition (the hyperbolic metric on a component).** The interval $(-1,1)$ is conformally the unit disk, by $w \mapsto (1+w)/(1-w)$ or by the hyperbolic tangent; transporting the Poincaré metric of the disk gives the **hyperbolic metric** $\rho$ on $(-1,1)$. On a hyperbolic component $H = \digamma_{\mathrm{map}}^{-1}(I_+\times I_-)$ the pull-back
 
 $$
 \rho_H = \Lambda^*(\rho\oplus\rho)
@@ -130,7 +130,7 @@ of the product of the two Poincaré metrics is a complete hyperbolic metric of c
 
 ## Summary
 
-The split plane carries the Lorentzian form $\langle z\rangle_{*} = a^2-a'{}^2$ of inertia $(1,1)$; the group $SO(1,1)$ of hyperbolic rotations is the one-parameter group $z \mapsto \exp(js)z$, its orbits are the hyperbolas $N = $ const, and its projective action fixes the two points at infinity $t = \pm1$ of the null quadric, the hyperbolic distance being the cross-ratio. The scaling $z \mapsto uz$ carries $f_c$ to $uz^2+c/u$, which is affinely conjugate to $f_c$ with the same normalised parameter, so the hyperbolic rotations produce no symmetry of a given Julia set; the affine automorphisms of $f_c$ are trivial, and the symmetries coming from the algebra are the four even symmetries $z \mapsto uz$ with $u^2 = 1$. The Julia sets are instead read through the foliation: on each hyperbola $N = t$ the Julia set is cut out by the two coordinate foliations and a coordinate lying in the corresponding real Julia set, and the two null lines are the degenerate members. The Hausdorff dimension of the split Julia set is $1 + \max\{\dim_H J_+, \dim_H J_-\}$, one plus the larger dimension of the two real factors, by the product rule; the addend one is the dimension of the hyperbolic direction. The hyperbolic components of the connectedness locus are the rectangles $\varphi^{-1}(I_+\times I_-)$, and the pair of real multipliers maps each diffeomorphically onto $(-1,1)^2$, carrying the product of the two Poincaré metrics; this is the split analogue of the biholomorphic multiplier map on a hyperbolic component of the Mandelbrot set. The group theory of the hyperbolic rotations is that of *Hyperbolic Rotations*, the null quadric that of *Split-Complex Null Quadric and Projective Geometry*, the dimension rule that of *Fractal Geometry*, and the three-dimensional hyperbolic limit sets of the corpus are those of *Iterated Function Systems in the Complex Plane*.
+The split plane carries the Lorentzian form $\langle z\rangle_{*} = a^2-a'{}^2$ of inertia $(1,1)$; the group $SO(1,1)$ of hyperbolic rotations is the one-parameter group $z \mapsto \exp(js)z$, its orbits are the hyperbolas $N = $ const, and its projective action fixes the two points at infinity $t = \pm1$ of the null quadric, the hyperbolic distance being the cross-ratio. The scaling $z \mapsto uz$ carries $f_c$ to $uz^2+c/u$, which is affinely conjugate to $f_c$ with the same normalised parameter, so the hyperbolic rotations produce no symmetry of a given Julia set; the affine automorphisms of $f_c$ are trivial, and the symmetries coming from the algebra are the four even symmetries $z \mapsto uz$ with $u^2 = 1$. The Julia sets are instead read through the foliation: on each hyperbola $N = t$ the Julia set is cut out by the two coordinate foliations and a coordinate lying in the corresponding real Julia set, and the two null lines are the degenerate members. The Hausdorff dimension of the split Julia set is $1 + \max\{\dim_H J_+, \dim_H J_-\}$, one plus the larger dimension of the two real factors, by the product rule; the addend one is the dimension of the hyperbolic direction. The hyperbolic components of the connectedness locus are the rectangles $\digamma_{\mathrm{map}}^{-1}(I_+\times I_-)$, and the pair of real multipliers maps each diffeomorphically onto $(-1,1)^2$, carrying the product of the two Poincaré metrics; this is the split analogue of the biholomorphic multiplier map on a hyperbolic component of the Mandelbrot set. The group theory of the hyperbolic rotations is that of *Hyperbolic Rotations*, the null quadric that of *Split-Complex Null Quadric and Projective Geometry*, the dimension rule that of *Fractal Geometry*, and the three-dimensional hyperbolic limit sets of the corpus are those of *Iterated Function Systems in the Complex Plane*.
 
 ## Summary of Notation
 
@@ -146,7 +146,7 @@ The split plane carries the Lorentzian form $\langle z\rangle_{*} = a^2-a'{}^2$ 
 | $z_\pm = a\pm a'$ | Coordinate foliations along the null directions |
 | $J_\pm$, $J_c$ | Real Julia sets, and the split Julia set |
 | $\dim_H J_c = 1+\max\{\dim_H J_+,\dim_H J_-\}$ | Dimension formula for the split Julia set |
-| $H = \varphi^{-1}(I_+\times I_-)$ | Hyperbolic component, a rectangle |
+| $H = \digamma_{\mathrm{map}}^{-1}(I_+\times I_-)$ | Hyperbolic component, a rectangle |
 | $\Lambda(c) = (\lambda_{p_+}(c_+),\lambda_{p_-}(c_-))$ | Multiplier map onto $(-1,1)^2$ |
 | $\rho_H = \Lambda^*(\rho\oplus\rho)$ | Product Poincaré metric on a component |
 

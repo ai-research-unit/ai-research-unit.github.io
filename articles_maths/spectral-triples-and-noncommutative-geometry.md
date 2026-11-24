@@ -27,12 +27,12 @@ The operator $D$ defines a metric on the state space of the algebra, and in the 
 **Definition.** Let $\mathcal{S}(A)$ be the set of states of $A$, that is, the positive linear functionals of norm one. The **Connes distance** on $\mathcal{S}(A)$ is
 
 $$
-d(\varphi,\psi)=\sup\bigl\{\,|\varphi(a)-\psi(a)| \ :\ a\in A,\ \|[D,\pi(a)]\|\leq1\,\bigr\}.
+d(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=\sup\bigl\{\,|\digamma_{\mathrm{map}}(a)-Ξ_{\mathrm{wfn}}(a)| \ :\ a\in A,\ \|[D,\pi(a)]\|\leq1\,\bigr\}.
 $$
 
-**Theorem.** The function $d$ is symmetric, satisfies the triangle inequality, and takes values in $[0,+\infty]$, so it is a pseudometric on the state space; two states satisfy $d(\varphi,\psi)=0$ exactly when they agree on the constraint set $C=\{a\in A:\|[D,\pi(a)]\|\leq1\}$, so $d$ is a metric exactly when $C$ separates the states. It is finite-valued when the constraint set is norm-bounded, in particular in the commutative case of the theorem below.
+**Theorem.** The function $d$ is symmetric, satisfies the triangle inequality, and takes values in $[0,+\infty]$, so it is a pseudometric on the state space; two states satisfy $d(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=0$ exactly when they agree on the constraint set $C=\{a\in A:\|[D,\pi(a)]\|\leq1\}$, so $d$ is a metric exactly when $C$ separates the states. It is finite-valued when the constraint set is norm-bounded, in particular in the commutative case of the theorem below.
 
-**Proof.** Symmetry is immediate from the definition. For the triangle inequality, $|\varphi(a)-\psi(a)|\leq|\varphi(a)-\chi(a)|+|\chi(a)-\psi(a)|$ pointwise, and the supremum over the constraint set is subadditive. The vanishing statement is the definition: $d(\varphi,\psi)=0$ says that $\varphi$ and $\psi$ take the same value at every element of $C$. Norm-boundedness of $C$ bounds $d$, because $|\varphi(a)-\psi(a)|\leq2\|a\|$ for states of norm one.
+**Proof.** Symmetry is immediate from the definition. For the triangle inequality, $|\digamma_{\mathrm{map}}(a)-Ξ_{\mathrm{wfn}}(a)|\leq|\digamma_{\mathrm{map}}(a)-\chi(a)|+|\chi(a)-Ξ_{\mathrm{wfn}}(a)|$ pointwise, and the supremum over the constraint set is subadditive. The vanishing statement is the definition: $d(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=0$ says that $\digamma_{\mathrm{map}}$ and $Ξ_{\mathrm{wfn}}$ take the same value at every element of $C$. Norm-boundedness of $C$ bounds $d$, because $|\digamma_{\mathrm{map}}(a)-Ξ_{\mathrm{wfn}}(a)|\leq2\|a\|$ for states of norm one.
 
 **Theorem (commutative case).** Let $M$ be a closed spin Riemannian manifold, let $A=C^{\infty}(M)$ act on $H=L^{2}(M,S)$ by pointwise multiplication, and let $D$ be the Cauchy–Riemann operator of the spinor bundle. Then the pure states of $A$ are the points of $M$ and
 
@@ -103,7 +103,7 @@ and the reconstruction is functorial.
 
 ## Cyclic Cohomology and the Connes–Chern Character
 
-**Definition.** For a $*$-algebra $A$, the **cyclic cohomology** $HC^{\bullet}(A)$ is the cohomology of the complex of cyclic multilinear functionals: a cyclic $n$-cochain is a multilinear functional $\varphi\colon A^{n+1}\to\mathbb{C}$ satisfying the cyclicity $\varphi(a_0,\dots,a_n)=(-1)^{n}\varphi(a_n,a_0,\dots,a_{n-1})$, and the differential is the Hochschild coboundary restricted to cyclic cochains.
+**Definition.** For a $*$-algebra $A$, the **cyclic cohomology** $HC^{\bullet}(A)$ is the cohomology of the complex of cyclic multilinear functionals: a cyclic $n$-cochain is a multilinear functional $\digamma_{\mathrm{map}}\colon A^{n+1}\to\mathbb{C}$ satisfying the cyclicity $\digamma_{\mathrm{map}}(a_0,\dots,a_n)=(-1)^{n}\digamma_{\mathrm{map}}(a_n,a_0,\dots,a_{n-1})$, and the differential is the Hochschild coboundary restricted to cyclic cochains.
 
 **Definition.** Let $(A,H,D)$ be an even spectral triple of finite dimension with chirality operator $\Gamma$. The **Connes–Chern character** is the cyclic cocycle
 
@@ -161,10 +161,10 @@ $$
 [D,\pi(a,b)]=\begin{pmatrix}0&m(b-a)\\ m(a-b)&0\end{pmatrix}, \qquad \|[D,\pi(a,b)]\|=m|a-b|,
 $$
 
-and the Connes distance between the two pure states $\varphi_1(a,b)=a$ and $\varphi_2(a,b)=b$ is
+and the Connes distance between the two pure states $\digamma_{\mathrm{map},1}(a,b)=a$ and $\digamma_{\mathrm{map},2}(a,b)=b$ is
 
 $$
-d(\varphi_1,\varphi_2)=\sup\{|a-b|:m|a-b|\leq1\}=\frac{1}{m}.
+d(\digamma_{\mathrm{map},1},\digamma_{\mathrm{map},2})=\sup\{|a-b|:m|a-b|\leq1\}=\frac{1}{m}.
 $$
 
 The two-point space is thus a metric space whose distance is the inverse of the off-diagonal entry of $D$, and the triple reconstructs a finite geometry from a matrix.
@@ -187,7 +187,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_aΞ_{\mathrm{wfn}}=aΞ_{\mathrm{wfn}}$ and $R_bΞ_{\mathrm{wfn}}=Ξ_{\mathrm{wfn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
@@ -201,7 +201,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-A spectral triple $(A,H,D)$ is a represented $*$-algebra with a self-adjoint operator of compact resolvent whose commutators with the algebra are bounded; it is even when a chirality grading is present, and it satisfies the axioms of dimension, regularity, finiteness, reality, first order and orientation. The operator is the metric datum: the Connes distance $d(\varphi,\psi)=\sup\{|\varphi(a)-\psi(a)|:\|[D,a]\|\leq1\}$ recovers the geodesic distance in the commutative case, where the pure states are the points of a spin manifold and $[D,f]=c(df)$.
+A spectral triple $(A,H,D)$ is a represented $*$-algebra with a self-adjoint operator of compact resolvent whose commutators with the algebra are bounded; it is even when a chirality grading is present, and it satisfies the axioms of dimension, regularity, finiteness, reality, first order and orientation. The operator is the metric datum: the Connes distance $d(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=\sup\{|\digamma_{\mathrm{map}}(a)-Ξ_{\mathrm{wfn}}(a)|:\|[D,a]\|\leq1\}$ recovers the geodesic distance in the commutative case, where the pure states are the points of a spin manifold and $[D,f]=c(df)$.
 
 A real structure is an antilinear $J$ with signs $J^{2}=\varepsilon$, $JD=\varepsilon'DJ$ and $J\Gamma=\varepsilon''\Gamma J$, the order-zero and order-one conditions, and a KO-dimension that is periodic of period eight; for a spin manifold of dimension $m$ the KO-dimension is $m\bmod8$. By Connes' reconstruction theorem a commutative spectral triple satisfying the axioms is exactly a closed spin manifold with its spinor geometry, so the noncommutative theory generalises the classical one.
 
@@ -216,7 +216,7 @@ The Connes–Chern character is the cyclic cocycle $\operatorname{ch}(D)(a_0,\do
 | $[D,\pi(a)]$ bounded | First-order condition; $D$ is a first-order operator |
 | $(D-i)^{-1}$ compact | Compact-resolvent condition; closed geometry |
 | $\Gamma$ | Chirality operator, $\Gamma^{2}=1$, $\Gamma D=-D\Gamma$ |
-| $d(\varphi,\psi)=\sup\{|\varphi(a)-\psi(a)|:\|[D,a]\|\leq1\}$ | Connes distance |
+| $d(\digamma_{\mathrm{map}},Ξ_{\mathrm{wfn}})=\sup\{|\digamma_{\mathrm{map}}(a)-Ξ_{\mathrm{wfn}}(a)|:\|[D,a]\|\leq1\}$ | Connes distance |
 | $[D,f]=c(df)$ | Commutator of the operator with a function; Clifford multiplication by the gradient |
 | $J$ | Real structure, antilinear isometry |
 | $\varepsilon,\varepsilon',\varepsilon''$ | Signs $J^{2}=\varepsilon$, $JD=\varepsilon'DJ$, $J\Gamma=\varepsilon''\Gamma J$ |

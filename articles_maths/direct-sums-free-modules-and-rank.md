@@ -97,11 +97,11 @@ with $r_b \in R$ and all but finitely many $r_b$ zero. The uniqueness of the coe
 
 ### The Universal Property
 
-**Theorem (universal property of a free module).** Let $B$ be a basis of the free module $L$ and let $M$ be any $R$-module. Every function $\varphi : B \to M$ extends uniquely to an $R$-linear map $f : L \to M$ with $f|_B=\varphi$.
+**Theorem (universal property of a free module).** Let $B$ be a basis of the free module $L$ and let $M$ be any $R$-module. Every function $\digamma_{\mathrm{map}} : B \to M$ extends uniquely to an $R$-linear map $f : L \to M$ with $f|_B=\digamma_{\mathrm{map}}$.
 
-*Proof.* Existence: define $f\bigl(\sum_b r_b b\bigr)=\sum_b r_b \varphi(b)$, a finite sum and well defined because the coordinates $r_b$ are unique. Linearity is immediate. Uniqueness: any two extensions agree on a basis, and a basis generates.
+*Proof.* Existence: define $f\bigl(\sum_b r_b b\bigr)=\sum_b r_b \digamma_{\mathrm{map}}(b)$, a finite sum and well defined because the coordinates $r_b$ are unique. Linearity is immediate. Uniqueness: any two extensions agree on a basis, and a basis generates.
 
-The universal property is the working form of freeness and is equivalent to it: if $L$ has a generating set $B$ with this extension property, applying it with $\varphi$ the inclusion $B \hookrightarrow L$ gives a splitting of the canonical map from the free module on $B$, so $B$ is a basis. It is also the reason that a linear map may be specified on a basis and nowhere else.
+The universal property is the working form of freeness and is equivalent to it: if $L$ has a generating set $B$ with this extension property, applying it with $\digamma_{\mathrm{map}}$ the inclusion $B \hookrightarrow L$ gives a splitting of the canonical map from the free module on $B$, so $B$ is a basis. It is also the reason that a linear map may be specified on a basis and nowhere else.
 
 ### Free Modules as Direct Sums
 

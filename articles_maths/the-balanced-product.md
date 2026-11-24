@@ -84,7 +84,7 @@ Put $M \otimes_R N=F/K$ and $m \otimes n=e_{(m,n)}+K$. By construction the map $
 **Theorem.** Let $R$ be a commutative ring and $M,N,P$ be $R$-modules. There is an isomorphism, natural in each variable,
 
 $$
-\boxed{\;\operatorname{Hom}_R(M \otimes_R N,\,P) \;\cong\; \operatorname{Bilin}_R(M,N;P), \qquad \varphi \longmapsto \bigl((m,n) \mapsto \varphi(m \otimes n)\bigr)\;}.
+\boxed{\;\operatorname{Hom}_R(M \otimes_R N,\,P) \;\cong\; \operatorname{Bilin}_R(M,N;P), \qquad \digamma_{\mathrm{map}} \longmapsto \bigl((m,n) \mapsto \digamma_{\mathrm{map}}(m \otimes n)\bigr)\;}.
 $$
 
 For a general ring $R$ with $M$ a right module and $N$ a left module, the same statement holds with $\operatorname{Bilin}_R$ replaced by $\operatorname{Bal}_R$ and $\operatorname{Hom}_R$ by $\operatorname{Hom}_{\mathbb{Z}}$.

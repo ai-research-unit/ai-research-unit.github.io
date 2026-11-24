@@ -16,10 +16,10 @@ Manifolds are smooth and second countable; bundles are smooth; the structure gro
 **Definition.** A **fibre bundle** with **total space** $E$, **base** $B$ and **fibre** $F$ is a smooth map $\pi : E \to B$ together with a cover $\{Ζ_\alpha\}$ of $B$ by open sets and diffeomorphisms
 
 $$
-\phi_\alpha : \pi^{-1}(Ζ_\alpha) \longrightarrow Ζ_\alpha \times F
+\digamma_{\mathrm{map},\alpha} : \pi^{-1}(Ζ_\alpha) \longrightarrow Ζ_\alpha \times F
 $$
 
-such that $\pi = \mathrm{pr}_1 \circ \phi_\alpha$ on $\pi^{-1}(Ζ_\alpha)$ and the maps $\phi_\alpha \circ \phi_\beta^{-1}$ are of the form $(x, v) \mapsto (x, g_{\alpha\beta}(x)v)$ for smooth maps $g_{\alpha\beta} : Ζ_\alpha \cap Ζ_\beta \to \operatorname{Diff}(F)$. The data $\{(Ζ_\alpha, \phi_\alpha)\}$ are a **bundle atlas**, the maps $g_{\alpha\beta}$ are the **transition functions**, and the bundle is **trivial** if it admits an atlas with one chart, $E \cong B \times F$.
+such that $\pi = \mathrm{pr}_1 \circ \digamma_{\mathrm{map},\alpha}$ on $\pi^{-1}(Ζ_\alpha)$ and the maps $\digamma_{\mathrm{map},\alpha} \circ \digamma_{\mathrm{map},\beta}^{-1}$ are of the form $(x, v) \mapsto (x, g_{\alpha\beta}(x)v)$ for smooth maps $g_{\alpha\beta} : Ζ_\alpha \cap Ζ_\beta \to \operatorname{Diff}(F)$. The data $\{(Ζ_\alpha, \digamma_{\mathrm{map},\alpha})\}$ are a **bundle atlas**, the maps $g_{\alpha\beta}$ are the **transition functions**, and the bundle is **trivial** if it admits an atlas with one chart, $E \cong B \times F$.
 
 **Definition.** A **structure group** of the bundle is a Lie group $G$ acting on $F$ such that all transition functions take values in $G$; a bundle with structure group $G$ is a **$G$-bundle**. The condition that the transition functions lie in a fixed $G$ is an additional datum; the transition functions of a bundle always lie in the diffeomorphism group of the fibre.
 

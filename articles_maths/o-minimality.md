@@ -7,16 +7,16 @@ This is the o-minimality article of the Real Numbers system, and it stands in th
 
 This article is the one article of the load that is model-theoretic rather than synthetic, and its position is deliberate: o-minimality is not a construction on $\mathbb{R}$ but a property of the line's definable sets, and it is a property of the real line in the same way that the intermediate value property or the cell decomposition of a semialgebraic set is. It is placed here because it is the definable form of the completeness and order of $\mathbb{R}$: the definable sets of the line are the sets that a first-order description of the line can name, and o-minimality says that they cannot be wild. Its content is the regularity of the definable functions — piecewise continuity, piecewise monotonicity and the existence of one-sided limits — which is the order-and-definability analogue of the analytic regularity that the Analysis group develops. The general model theory — languages, structures, satisfaction, quantifier elimination, compactness, types and elementary extensions — is the subject of the companion article *Model Theory*, which is being written in parallel and is used here rather than developed; the model theory of the natural numbers, with its wild definability and its undecidability, is the subject of *Peano Arithmetic and Model Theory* and forms the contrast to everything below. The real algebraic geometry of the semialgebraic sets is from *Real Algebraic Geometry*, and the ordered field theory of $\mathbb{R}$ from *Real-Closed and Complete Ordered Fields*.
 
-Throughout, $\mathcal{L}$ is a first-order language containing a binary relation symbol $<$, an $\mathcal{L}$-**structure** $\mathcal{M}$ is o-minimal if $<$ is interpreted as a dense linear order without endpoints on its domain $M$ and every subset of $M$ definable with parameters is a finite union of intervals and points; $\mathbb{R}$ denotes the real line as an $\mathcal{L}$-structure, $\mathrm{RCF}$ the theory of real closed fields in the language of ordered rings, $\mathbb{R}_{\exp}$ the real exponential field $(\mathbb{R}, +, \cdot, <, \exp)$ and $\mathbb{R}_{\mathrm{an}}$ the real field with restricted analytic functions. Definable sets are written as $\varphi(M, \bar a) = \{b \in M^n : \mathcal{M} \models \varphi(b, \bar a)\}$, and a **cell** is a definable set of a particular recursive form introduced below.
+Throughout, $\mathcal{L}$ is a first-order language containing a binary relation symbol $<$, an $\mathcal{L}$-**structure** $\mathcal{M}$ is o-minimal if $<$ is interpreted as a dense linear order without endpoints on its domain $M$ and every subset of $M$ definable with parameters is a finite union of intervals and points; $\mathbb{R}$ denotes the real line as an $\mathcal{L}$-structure, $\mathrm{RCF}$ the theory of real closed fields in the language of ordered rings, $\mathbb{R}_{\exp}$ the real exponential field $(\mathbb{R}, +, \cdot, <, \exp)$ and $\mathbb{R}_{\mathrm{an}}$ the real field with restricted analytic functions. Definable sets are written as $\digamma_{\mathrm{map}}(M, \bar a) = \{b \in M^n : \mathcal{M} \models \digamma_{\mathrm{map}}(b, \bar a)\}$, and a **cell** is a definable set of a particular recursive form introduced below.
 
 ## Definable Sets
 
 ### Languages and Structures
 
-**Definition.** Let $\mathcal{L}$ be a first-order language and $\mathcal{M}$ an $\mathcal{L}$-structure with domain $M$. A set $A \subseteq M^n$ is **definable** (in $\mathcal{M}$, with parameters) if there is a formula $\varphi(b_1, \dots, b_n, \bar c)$ of $\mathcal{L}$ and a tuple $\bar a \in M^m$ with
+**Definition.** Let $\mathcal{L}$ be a first-order language and $\mathcal{M}$ an $\mathcal{L}$-structure with domain $M$. A set $A \subseteq M^n$ is **definable** (in $\mathcal{M}$, with parameters) if there is a formula $\digamma_{\mathrm{map}}(b_1, \dots, b_n, \bar c)$ of $\mathcal{L}$ and a tuple $\bar a \in M^m$ with
 
 $$
-A = \{\bar b \in M^n : \mathcal{M} \models \varphi(\bar b, \bar a)\}.
+A = \{\bar b \in M^n : \mathcal{M} \models \digamma_{\mathrm{map}}(\bar b, \bar a)\}.
 $$
 
 A set definable without parameters is **0-definable**. A function is definable if its graph is.
@@ -216,7 +216,7 @@ The structure theory of o-minimal structures rests on the cell decomposition: ev
 |---|---|
 | $\mathcal{L}$ | A first-order language, containing $<$ |
 | $\mathcal{M}$, $M$ | A structure and its domain |
-| $\varphi(M, \bar a)$ | Definable set of a formula with parameters |
+| $\digamma_{\mathrm{map}}(M, \bar a)$ | Definable set of a formula with parameters |
 | $\mathrm{dcl}$ | Definable closure |
 | $\mathrm{RCF}$ | Theory of real closed fields |
 | $\mathbb{R}$ | The real field $(\mathbb{R}, +, \cdot, <)$ |

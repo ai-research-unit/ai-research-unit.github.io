@@ -13,18 +13,18 @@
 
 ## The Measure and the Chiral Rotation
 
-The fermion path integral integrates over $\psi$ and $\bar\psi$ with a measure written formally as a product of coefficients in a complete basis,
+The fermion path integral integrates over $Ξ_{\mathrm{wfn}}$ and $\barΞ_{\mathrm{wfn}}$ with a measure written formally as a product of coefficients in a complete basis,
 
 $$
-\mathcal{D}\bar\psi\,\mathcal{D}\psi=\prod_n da_n\,d\bar b_n .
+\mathcal{D}\barΞ_{\mathrm{wfn}}\,\mathcal{D}Ξ_{\mathrm{wfn}}=\prod_n da_n\,d\bar b_n .
 $$
 
-**The rotation.** A chiral rotation with constant parameter $\alpha$ acts on the fields by $\psi\mapsto e^{i\alpha\gamma_5}\psi$. In the basis the same rotation acts on the coefficients, so if the measure were invariant the transformation would be a symmetry of the integral.
+**The rotation.** A chiral rotation with constant parameter $\alpha$ acts on the fields by $Ξ_{\mathrm{wfn}}\mapsto e^{i\alpha\gamma_5}Ξ_{\mathrm{wfn}}$. In the basis the same rotation acts on the coefficients, so if the measure were invariant the transformation would be a symmetry of the integral.
 
 **The Jacobian.** It is not. The rotation is a linear change of variables whose Jacobian is a formal determinant,
 
 $$
-\boxed{\;\mathcal{D}\bar\psi\,\mathcal{D}\psi\;\longmapsto\;\mathcal{D}\bar\psi\,\mathcal{D}\psi\;\exp\!\left(-2i\alpha\int d^4x\ \mathcal{A}(x)\right)\;}
+\boxed{\;\mathcal{D}\barΞ_{\mathrm{wfn}}\,\mathcal{D}Ξ_{\mathrm{wfn}}\;\longmapsto\;\mathcal{D}\barΞ_{\mathrm{wfn}}\,\mathcal{D}Ξ_{\mathrm{wfn}}\;\exp\!\left(-2i\alpha\int d^4x\ \mathcal{A}(x)\right)\;}
 $$
 
 so the anomaly density $\mathcal{A}$ is the Jacobian per unit rotation angle. A determinant of an infinite matrix is not a number until it is regulated, and the whole content of the method is in how the regulation respects the symmetry it is measuring.
