@@ -52,81 +52,23 @@ The Fock exception. A Fock operator is not an element of the algebra; its supers
 
 ## The Two Sides and the Renaming Theorem
 
-The statement. Write $L_D\tilde{Ξ} := D\tilde{Ξ}$ and $R_D\tilde{Ξ} := \tilde{Ξ} D$ for the two one-sided actions on a field $\tilde{Ξ}\in\mathbb{B}$. Then
-
+The statement. With $L_D\tilde{Ξ}:=D\tilde{Ξ}$ and $R_D\tilde{Ξ}:=\tilde{Ξ} D$ on a field $\tilde{Ξ}\in\mathbb{B}$,
 $$
 R_D=\natural\circ L_{D^{\natural}}\circ\natural,
 \qquad
 L_D=\natural\circ R_{D^{\natural}}\circ\natural,
+\qquad
+(\tilde{Ξ} D)^{\natural}=D^{\natural}\,\tilde{Ξ}^{\natural}.
 $$
-
-and on a field
-
-$$
-\boxed{\;(\tilde{Ξ} D)^{\natural}=D^{\natural}\,\tilde{Ξ}^{\natural}\;}
-$$
+Three properties of $\natural$ carry it — involutive, $\mathbb{C}$-linear and an anti-automorphism — and the third does the work: the order of a product reverses. An involution that preserved the order would identify the two sides; one that reverses it exchanges them.
 
 **A right action on $\tilde{Ξ}$ is a left action on $\tilde{Ξ}^{\natural}$.** The side is not a property of the equation. It is a property of the field the equation is written on.
 
-The three properties. Everything rests on them, and only the third is non-trivial.
+What it does not say. Not that the two operators are equal: on $D=-5e_t+3i\vec e_x$ the arrays $R_D$ and $L_{D^{\natural}}$ differ, and neither may be substituted for the other at sight. What is equal is the pair of solution sets after renaming.
 
-| property | statement | residual |
-| --- | --- | --- |
-| involutive | $\natural\circ\natural=\mathrm{id}$ | $0$ |
-| $\mathbb{C}$-linear | $\natural(i\tilde{Ξ})=i\,\natural(\tilde{Ξ})$ | $0$ |
-| anti-automorphism | $(ab)^{\natural}=b^{\natural}a^{\natural}$ | $2.6\times10^{-15}$ over $400$ random complex pairs |
+Where it does not reach. Three cases, and each is stated where it is used. With more than one field the anti-automorphism reverses the whole order, $(\tilde{Ξ} D\xi)^{\natural}=\xi^{\natural}D^{\natural}\tilde{Ξ}^{\natural}$, so the two fields exchange places and renaming alone does not move the side; the bilinear identities of the integration articles stand in this case, and it is why they carry the superscript $R$ on the derivative. On a column $\tilde{Ξ}\in\mathbb{C}^{4}$ there is no quaternion conjugation, only the antilinear Dirac adjoint, and on a space of functions of two variables, as in a star product, $\natural$ is not the involution in play: the statement is a statement about fields valued in $\mathbb{B}$. And in a two-sided action $a\tilde{Ξ} b$, the mirror coupling, or the exchange of the two slots of a basis operator, conjugating the field destroys what is being displayed; there both factors stay in place and the side is named by position, or by $L_a$ and $R_a$.
 
-The first makes $\natural$ invertible with $\natural^{-1}=\natural$. The third makes it reverse the order of a product. The second lets the mass, which is central, pass through untouched. An involution that preserved the order would identify the two sides; one that reverses the order exchanges them. $\natural$ reverses, so it exchanges.
-
-The proof is three symbols. Applied to the two factors $\tilde{Ξ}$ and $D$,
-
-$$
-(\tilde{Ξ} D)^{\natural}=D^{\natural}\,\tilde{Ξ}^{\natural}.
-$$
-
-Read forwards, conjugating a right action gives a left action of the conjugated operator. Read backwards, using $\natural^{2}=\mathrm{id}$, a right action is the conjugate of a left action — the two lines of the statement above.
-
-In matrix form it is one congruence. With $\mathsf C=\operatorname{diag}(1,-1,-1,-1)$ the matrix of $\natural$ on a coordinate column,
-
-$$
-\mathsf C\,R_D\,\mathsf C=L_{D^{\natural}},
-\qquad
-\mathsf C\,L_D\,\mathsf C=R_{D^{\natural}},
-\qquad\text{both at residual }0 .
-$$
-
-$\mathsf C$ is the change of basis that exchanges the two families, and $\mathsf C^{\mathsf T}\mathsf C=I$, $\det\mathsf C=-1$.
-
-On an equation. Take $\tilde{Ξ} D=m\xi$ with $m$ central, so $m^{\natural}=m$, and conjugate both sides:
-
-$$
-D^{\natural}\,\tilde{Ξ}^{\natural}=m\,\xi^{\natural}.
-$$
-
-The map $Ξ:(\tilde{Ξ},\xi)\mapsto(\tilde{Ξ}^{\natural},\xi^{\natural})$ is $\mathbb{C}$-linear, involutive and invertible, so it is a **bijection of solution sets** and not an inclusion:
-
-$$
-\{\tilde{Ξ}:\ \tilde{Ξ} D=m\xi\}\ \xrightarrow{\ Ξ\ }\ \{u:\ D^{\natural}u=m\,\xi^{\natural}\},
-\qquad Ξ^{-1}=Ξ .
-$$
-
-Verified: a pair solved on the right at residual $2.0\times10^{-15}$ maps to a pair solved on the left at residual $1.1\times10^{-15}$, on all four basis solutions. Same solutions, relabelled.
-
-What the theorem does not say. It does not say the two operators are equal. On $D=-5e_t+3i\vec e_x$,
-
-$$
-\bigl\langle R_D-L_{D^{\natural}}\bigr\rangle_*^{1/2}=8.4853\neq0 ,
-$$
-
-so the two arrays differ and neither may be substituted for the other at sight. What is equal is the pair of solution sets after renaming, not the operators.
-
-Where the theorem does not reach. Three cases, and each is stated where it is used.
-
-1. More than one field. The anti-automorphism reverses the whole order, $(\tilde{Ξ} D\xi)^{\natural}=\xi^{\natural}D^{\natural}\tilde{Ξ}^{\natural}$, residual $1.3\times10^{-14}$ over $200$ random triples. The two fields exchange places, so renaming alone does not suffice, and where the two fields are not the same object the reordering changes the statement. The bilinear identities of the integration articles stand in this case, and it is why they carry the superscript $R$ on the derivative.
-2. A carrier without $\natural$. On a column $\tilde{Ξ}\in\mathbb{C}^{4}$ there is no quaternion conjugation, only the antilinear Dirac adjoint; on a space of functions of two variables, as in a star product, $\natural$ is not the involution in play. The theorem is a theorem about fields valued in $\mathbb{B}$.
-3. The side itself on display. For the two-sided action $a\tilde{Ξ} b$, the mirror coupling, or the exchange of the two slots of a basis operator, conjugating the field destroys what is being displayed. There both factors stay in place and the side is named by position, or by $L_a$ and $R_a$.
-
-The consequence for the corpus. Every equation that acts on a single biquaternion field is written on the left. The ones that would read as acting on the right are the same equations on the conjugate field, and the chiral pair is the instance: with $Ξ=\tilde{Ξ}^{\natural}$, the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ is complete as written, both equations acting from the left, and $\natural$ is what separates them. Across the $404$ files and $10\,196$ display equations of the physics corpus no glyph names a side: the side is position, the conjugation is $\natural$, and the exchange is $N$.
+The consequence for the corpus. Every equation that acts on a single biquaternion field is written on the left. The ones that would read as acting on the right are the same equations on the conjugate field, and the chiral pair is the instance: with $Ξ=\tilde{Ξ}^{\natural}$, the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ is complete as written, both equations acting from the left, and $\natural$ is what separates them. No glyph names a side: the side is position, the conjugation is $\natural$, and the exchange is $N$.
 
 ## Conventions for Derivation
 
@@ -552,7 +494,7 @@ The proof is one term. The involution is $\mathbb{C}$-linear, it acts on the uni
 
 What it says. A right action is the conjugation of a left action: conjugate the field, apply the conjugate gradient from the left, conjugate the result. In the notation of §*The Two Sides and the Renaming Theorem*, $R_{\tilde\nabla_\Phi}=\natural\circ L_{(\tilde\nabla_\Phi)^{\natural}}\circ\natural$, read on a differential operator rather than on a multiplication. The statement needs no equation, no mass, no chirality and no pair of fields. It is an identity between operators, true of any $\tilde Q_1$: a solution, a non-solution, a product, a constant.
 
-With a connection nothing changes. The components of $\tilde\nabla_{\mathrm{gco},\Phi}$ are central scalars, so the same term-by-term computation gives $\bigl(\tilde Q_1\overleftarrow{\tilde\nabla_{\mathrm{gco},\Phi}}\bigr)^{\natural}=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde Q_1^{\natural}$, at the same residual, with $\natural$ again fixing the coefficients and reading the invertibles alone.
+With a connection nothing changes. The components of $\tilde\nabla_{\mathrm{gco},\Phi}$ are central scalars, so the same term-by-term computation gives $\bigl(\tilde Q_1\overleftarrow{\tilde\nabla_{\mathrm{gco},\Phi}}\bigr)^{\natural}=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde Q_1^{\natural}$, by the same computation, with $\natural$ again fixing the coefficients and reading the invertibles alone.
 
 The instance that hides the generality. The chiral pair is the case usually quoted. From $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, transposing with $\tilde Q_1=\tilde{Ξ}_{L}^{\natural}$ and using $m^{\natural}=m$,
 
@@ -568,11 +510,9 @@ Why the superscript $R$ is nevertheless written. The identity holds for a field,
 
 with the unit after the bracket. It does not pass to the left of $\tilde Q_2$: that is a commutation with the units, allowed only when $\tilde Q_2$ is central. Nor is the rule $-i(\partial\tilde Q_1/\partial r'_t)e_t\tilde Q_2+\sum_{\imath\in\{x,y,z\}}(\partial\tilde Q_1/\partial r_{\imath})\vec e_{\imath}\tilde Q_2$, which differs from the first term by the defect $-i(\partial\tilde Q_1/\partial r'_t)[\tilde Q_2,e_t]+\sum_{\imath\in\{x,y,z\}}(\partial\tilde Q_1/\partial r_{\imath})[\tilde Q_2,\vec e_{\imath}]$. That is the case §*The Two Sides and the Renaming Theorem* excludes, and the case the integration articles meet. There the derivative is named $\vec\nabla_\Phi^{R}$ after the factor it differentiates, and the name is a position, not a second operator.
 
-The slots. The transposition is the exchange of the two slots of a basis operator, read on a differential operator. In the language of *Operator Chirality on the Biquaternion Algebra*, §*Conjugation Exchanges the Sides*, the map that carries a left multiplier to a right multiplier is $\mathsf C$, the conjugation written as a congruence, $\mathsf C L(a^{\natural})\mathsf C=R(a)$, which in the axis-free frame is the switch $\mathsf D=\operatorname{diag}(1,-1,-1,-1)$ and is the $N$ of the matrix form above. A left action of the gradient and a right action of the same gradient therefore have arrays that agree up to that sign and that order, which is where the phases of the two sides come from.
+The slots. The transposition is the exchange of the two slots of a basis operator, read on a differential operator. In the language of *Operator Chirality on the Biquaternion Algebra*, §*Conjugation Exchanges the Sides*, the map that carries a left multiplier to a right multiplier is $\mathsf C$, the conjugation written as a congruence, $\mathsf C L(a^{\natural})\mathsf C=R(a)$, which in the axis-free frame is the switch $N=\operatorname{diag}(1,-1,-1,-1)$. A left action of the gradient and a right action of the same gradient therefore have arrays that agree up to that sign and that order, which is where the phases of the two sides come from.
 
 What it is not. Not a transpose without conjugation: $\mathsf C$ is not the identity, and $\mathsf C^{\mathsf T}\mathsf C=I$ with $\det\mathsf C=-1$ make the congruence a congruence and not a similarity. Not the adjoint either: the dagger carries the integration by parts and the boundary term, while $\natural$ carries the invertibles alone at fixed coordinate; the two agree on the gradient, $\tilde\nabla_\Phi^{*}=(\tilde\nabla_\Phi)^{\natural}$, and part on a general element.
-
-Verified. On random polynomial fields in the four coordinates the boxed line holds at residual $0.0$, the reconstruction from the conjugate at $0.0$, the chiral instance at $0.0$, and the product rule above at $0.0$; on $\tilde Q_1=r_x\vec e_x$ and $\tilde Q_2=\vec e_y$ the naive rule returns $-\vec e_y$ where the product rule returns $+\vec e_y$. The anti-automorphism it uses holds at residual $1.0\times10^{-15}$ over $200$ random pairs; the automorphism that would be needed if the units were not reversed fails at $2.7\times10^{1}$.
 
 ## The Legacy Pauli Gamma Formulation
 
