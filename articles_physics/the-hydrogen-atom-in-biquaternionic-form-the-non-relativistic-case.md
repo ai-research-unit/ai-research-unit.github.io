@@ -214,11 +214,11 @@ $$
 The ground state is therefore
 
 $$
-\tilde{Ξ}_{100}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{\pi a_0^3}}\,\exp(-r/a_0)\,\xi_{s_z},
+\tilde{Ξ}_{100}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = N_{100}\,\exp(-r/a_0)\,\xi_{s_z},
 \qquad E_1=-\frac{\kappa}{2a_0},
 $$
 
-a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde\Pi_{\mathrm{id}}(\pm \vec e_z)$. A complete eigenstate is the product $R_{nl}Y_l^{l_z}\xi_{s_z}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $L^2$ and $L_{\mathrm{orb},z}$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.
+with $N_{100}^{2}=1/(\pi a_0^{3})$, the normalisation named through its square because a root of a volume is a half power of the base units; the state is a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde\Pi_{\mathrm{id}}(\pm \vec e_z)$. A complete eigenstate is the product $R_{nl}Y_l^{l_z}\xi_{s_z}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $L^2$ and $L_{\mathrm{orb},z}$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.
 
 ## Correspondence with the Standard Solution
 

@@ -7,7 +7,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is 
 The answer has three parts, and they are three images of one algebraic object under the three maps that the framework uses: the momentum-space image, the configuration-space image, and the state-space image.
 
 - **In momentum space** the locus is the mass shell of a massless particle, $E^{2}/c^{2}=\lvert\vec p\rvert^{2}$, written as $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ for the momentum biquaternion $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$. The non-relativistic free dispersion $E=p^2 c/(2\,m\,c)$ does **not** lie on it: the on-shell momentum satisfies $N=p^2(1-p^2/4m^2c^2)$ for a free particle, with $p=\lvert\vec p\rvert$ throughout this section, which is positive (spacelike) for every $p<2mc$, vanishes exactly at $p=2mc$, and is negative beyond. The zero divisor locus is therefore the boundary of the non-relativistic description in momentum space: the free spin-0 particle approaches the locus only at the scale $2mc$, where the non-relativistic approximation is already failing for other reasons.
-- **In configuration space** the locus is not reached by a real momentum, because a real pure momentum $p\,\vec e_{\imath}$ has $N=p^2$ and vanishes only at $p=0$. The image of $N\to0$ is the **turning surface** of the semiclassical treatment, $p(x)^2=2m(E-V(x))=0$, which is where the WKB amplitude $A\propto1/\sqrt{|p|}$ diverges and the eikonal momentum degenerates. The turning surface is the configuration-space shadow of the cone.
+- **In configuration space** the locus is not reached by a real momentum, because a real pure momentum $p\,\vec e_{\imath}$ has $N=p^2$ and vanishes only at $p=0$. The image of $N\to0$ is the **turning surface** of the semiclassical treatment, $p(x)^2=2m(E-V(x))=0$, which is where the WKB amplitude, whose square is $A^{2}\propto1/\lvert p\rvert$, diverges and the eikonal momentum degenerates. The turning surface is the configuration-space shadow of the cone.
 - **In state space** the locus is the boundary of the pure-state manifold. The state space of the spin-0 problem is the unit-weight slice of the future light cone of the informational sector, and the pure states are exactly the points on its boundary, where the density operator is a projector.
 
 Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
@@ -113,7 +113,7 @@ $$
 E=V(x),
 $$
 
-which separates the classically allowed from the classically forbidden region. The WKB amplitude $A=C/\sqrt{|p(x)|}$ diverges there, the eikonal 1-form $p\,\mathrm dx$ degenerates, and the transport equation loses its meaning. The turning surface is the configuration-space image of the zero divisor cone: not a place where the momentum element is a zero divisor — the vanishing element is excluded from $\mathcal{Z}$ by definition — but the place where a real momentum element reaches the apex of the cone and the semiclassical expansion breaks down.
+which separates the classically allowed from the classically forbidden region. The WKB amplitude $A$, whose square is $A^{2}=C^{2}/\lvert p(x)\rvert$, diverges there (the amplitude is named through its square, because a root of a momentum is a half power of the base units), the eikonal 1-form $p\,\mathrm dx$ degenerates, and the transport equation loses its meaning. The turning surface is the configuration-space image of the zero divisor cone: not a place where the momentum element is a zero divisor — the vanishing element is excluded from $\mathcal{Z}$ by definition — but the place where a real momentum element reaches the apex of the cone and the semiclassical expansion breaks down.
 
 A one-dimensional example makes the divergence explicit. For the harmonic potential $V(x)=\frac12m\omega^2x^2$ at energy $E$, the turning points are
 
@@ -272,7 +272,7 @@ The state module and the null solutions are then two faces of one fact. The modu
 |---|---|
 | Algebra | The division property: $N\ne0$ is exactly invertibility; $\mathcal{Z}$ is the boundary of the invertible set |
 | Momentum space | The non-relativistic dispersion: spacelike for $p<2mc$, null at $p=2mc$, timelike beyond |
-| Configuration space | The semiclassical expansion: turning surfaces and caustics, where $p(x)=0$ and $A\propto1/\sqrt{|p|}$ diverges |
+| Configuration space | The semiclassical expansion: turning surfaces and caustics, where $p(x)=0$ and $A^{2}\propto1/\lvert p\rvert$ diverges |
 | State space | Purity: the pure states are the boundary of the unit-weight slice; the interior is the invertible (mixed) states |
 | Dynamical | Nothing: the $*$-unitary flow preserves membership, and every congruence preserves the sign of the norm |
 

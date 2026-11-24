@@ -83,11 +83,11 @@ The consecutive mass ratios fall by $12.3$; the steps in the square root grow by
 
 No column is constant, so the ladder is not an equal-spacing tower in any of these variables. That is the honest reading, and it moves the question from the spacing to the count.
 
-**The square root has a name in the coupling sector.** The mass of a fermion is its Yukawa coupling to the vacuum value, $y_f=\sqrt2\,m_f/v$, so the square root of a mass is the square root of a coupling times the constant $\sqrt{v/\sqrt2}$. The ratios above are the ratios $\sqrt{\rho_i}=\sqrt{y_i/y_1}$, dimensionless, and no wave equation enters their definition. The variable is chosen because the two steps are then in a constant ratio; that is a property of the measured spectrum and not a derivation.
+**The square root has a name in the coupling sector.** The mass of a fermion is its Yukawa coupling to the vacuum value, $y_f=\sqrt2\,m_f/v$, and the ratios above are the ratios of couplings, $\rho_i=y_i/y_1$, whose roots $\sqrt{\rho_i}$ are the rungs; a mass ratio is dimensionless, so its root is a number and not a half power of a unit. No wave equation enters their definition. The variable is chosen because the two steps are then in a constant ratio; that is a property of the measured spectrum and not a derivation.
 
 ## Koide's Relation, Stated
 
-Koide's relation, stated in 1981 for the charged leptons and not derived since, is a statement about two mass ratios and nothing else. Dividing numerator and denominator by $m_1$, which is the square of $\sqrt{m_1}$, turns every mass into a ratio to $m_1$ and every root into the root of that ratio; what remains is a function of two numbers. Writing
+Koide's relation, stated in 1981 for the charged leptons and not derived since, is a statement about two mass ratios and nothing else. Dividing numerator and denominator by $m_1$ turns every mass into a ratio to $m_1$ and every root into the root of that ratio, a dimensionless number; what remains is a function of two numbers. Writing
 
 $$
 \rho_2:=\frac{m_2}{m_1},\qquad \rho_3:=\frac{m_3}{m_1},

@@ -90,10 +90,16 @@ $$
 In each asymptotic region the field admits a standard mode decomposition, and the corresponding operators define the **in** and **out** Fock spaces. The two sets of positive-frequency solutions are, in each region,
 
 $$
-u_{\mathrm{in},\vec\nu_\Phi}(r'_t)\sim\frac{1}{\sqrt{2\omega_{\mathrm{in},\vec\nu_\Phi}}}\exp(-i\omega_{\mathrm{in},\vec\nu_\Phi}r'_t),
+u_{\mathrm{in},\vec\nu_\Phi}(r'_t)\sim A_{\mathrm{in},\vec\nu_\Phi}\exp(-i\omega_{\mathrm{in},\vec\nu_\Phi}r'_t),
 \qquad
-u_{\mathrm{out},\vec\nu_\Phi}(r'_t)\sim\frac{1}{\sqrt{2\omega_{\mathrm{out},\vec\nu_\Phi}}}\exp(-i\omega_{\mathrm{out},\vec\nu_\Phi}r'_t),
+u_{\mathrm{out},\vec\nu_\Phi}(r'_t)\sim A_{\mathrm{out},\vec\nu_\Phi}\exp(-i\omega_{\mathrm{out},\vec\nu_\Phi}r'_t),
+\qquad
+A_{\mathrm{in},\vec\nu_\Phi}^{2}=\frac{1}{2\omega_{\mathrm{in},\vec\nu_\Phi}} ,
+\qquad
+A_{\mathrm{out},\vec\nu_\Phi}^{2}=\frac{1}{2\omega_{\mathrm{out},\vec\nu_\Phi}} ,
 $$
+
+each mode amplitude being named through its square, because a root of a frequency is a half power of the base units.
 
 normalized by the Klein–Gordon inner product. Both sets solve the same second-order equation; they are related by a linear transformation with time-independent coefficients,
 
@@ -188,7 +194,7 @@ $$
 \omega(r'_t)=\omega_2\ (\text{for }r'_t>0),
 $$
 
-a real scalar mode for economy; the complex case doubles the modes and the pair count below is the same per mode. The in-mode is $u_{\mathrm{in}}(r'_t)=\exp(-i\theta_{\mathrm{pwt}})/\sqrt{2\omega_1}$ for $r'_t<0$. The constant prefactor is common to both regions and cancels in the matching, so continuity of $u$ and $du/dr'_t$ at $r'_t=0$ may be imposed on the un-normalized form $\exp(-i\theta_{\mathrm{pwt}})$, whose value and derivative at the origin are $1$ and $-i\omega_1$; this requires the out-region form
+a real scalar mode for economy; the complex case doubles the modes and the pair count below is the same per mode. The in-mode is $u_{\mathrm{in}}(r'_t)=A_1\exp(-i\theta_{\mathrm{pwt}})$ with $A_1^{2}=1/(2\omega_1)$ for $r'_t<0$. The constant prefactor is common to both regions and cancels in the matching, so continuity of $u$ and $du/dr'_t$ at $r'_t=0$ may be imposed on the un-normalized form $\exp(-i\theta_{\mathrm{pwt}})$, whose value and derivative at the origin are $1$ and $-i\omega_1$; this requires the out-region form
 
 $$
 \exp(-i\theta_{\mathrm{pwt}})=A\,\exp(-i\theta_{\mathrm{pwt}})+B\,\exp(+i\theta_{\mathrm{pwt}}),
@@ -209,7 +215,7 @@ $$
 
 The angle is $\theta_{\mathrm{pwt}}=\omega_{\vec\nu_\Phi}r'_t$, a material frequency times a material length; both are real, so the angle is real and the exponent is a phase.
 
-Rescaling to the canonical normalizations of both modes, $u_{\mathrm{in}}=\alpha u_{\mathrm{out}}+\beta u_{\mathrm{out}}^*$ with $u_{\mathrm{in}}=\exp(-i\theta_{\mathrm{pwt}})/\sqrt{2\omega_1}$ and $u_{\mathrm{out}}=\exp(-i\theta_{\mathrm{pwt}})/\sqrt{2\omega_2}$, gives
+Rescaling to the canonical normalizations of both modes, $u_{\mathrm{in}}=\alpha u_{\mathrm{out}}+\beta u_{\mathrm{out}}^*$ with $u_{\mathrm{in}}=A_1\exp(-i\theta_{\mathrm{pwt}})$ and $u_{\mathrm{out}}=A_2\exp(-i\theta_{\mathrm{pwt}})$, where $A_1^{2}=1/(2\omega_1)$ and $A_2^{2}=1/(2\omega_2)$, gives
 
 $$
 \alpha=A\sqrt{\frac{\omega_2}{\omega_1}},

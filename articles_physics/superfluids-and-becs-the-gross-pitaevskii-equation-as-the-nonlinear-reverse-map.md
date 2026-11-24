@@ -74,10 +74,10 @@ The radius is where the density vanishes, and the profile is an inverted parabol
 With $g=-g_{\mathrm{att}}<0$ the equation admits
 
 $$
-\psi=\sqrt{\frac{2\mu_{\mathrm{chm}}}{g_{\mathrm{att}}}}\;\mathrm{sech}\!\left(\frac{2\pi \sqrt{2m\mu_{\mathrm{chm}}}}{h}\,x\right)e^{i\mu_{\mathrm{chm}}\frac{2\pi t'}{h}},
+n_{\mathrm{sol}}\;\mathrm{sech}\!\left(\frac{2\pi \sqrt{2m\mu_{\mathrm{chm}}}}{h}\,x\right)e^{i\mu_{\mathrm{chm}}\frac{2\pi t'}{h}},
 $$
 
-which is checked by substitution: the three terms cancel identically for every $\mu_{\mathrm{chm}}>0$. The phase advances as $+\mu_{\mathrm{chm}}\frac{2\pi t'}{h}$, so the state's energy is $-\mu_{\mathrm{chm}}$ and the soliton is bound. Its amplitude and its width are both fixed by $\mu_{\mathrm{chm}}$, so the pulse has one parameter and not two.
+with $n_{\mathrm{sol}}^{2}=2\mu_{\mathrm{chm}}/g_{\mathrm{att}}$, the soliton amplitude named through its square because a root of a density is a half power of the base units. The ansatz is checked by substitution: the three terms cancel identically for every $\mu_{\mathrm{chm}}>0$. The phase advances as $+\mu_{\mathrm{chm}}\frac{2\pi t'}{h}$, so the state's energy is $-\mu_{\mathrm{chm}}$ and the soliton is bound. Its amplitude and its width are both fixed by $\mu_{\mathrm{chm}}$, so the pulse has one parameter and not two.
 
 The soliton is the fluid at its most nonlinear and its most rigid. Its density is a sech squared, its velocity is zero, and its shape is preserved because the dispersion of the kinetic term and the steepening of the interaction cancel exactly. That is the same balance as the Korteweg–de Vries soliton, in a different equation, and it is the reason the two are often mentioned together.
 

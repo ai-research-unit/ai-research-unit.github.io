@@ -186,7 +186,7 @@ $$
 
 the biquaternion form of the statement that a unit direction squares to $-1$ up to the two minus signs, which cancel.
 
-**The four values.** For the positive-frequency solution the pairing is twice the geometric mean of the two amplitude norms, $\sqrt{E\mp\lvert\vec p\rvert}\,\sqrt{E\pm\lvert\vec p\rvert}=\sqrt{E^2-\vec p^{\,2}}=m$, so
+**The four values.** For the positive-frequency solution the pairing is twice the geometric mean $a_\pm b_\pm$ of the two amplitude norms, with $a_\pm^{2}=E\mp\lvert\vec p\rvert c$ and $b_\pm^{2}=E\pm\lvert\vec p\rvert c$, so that $a_\pm^{2}b_\pm^{2}=E^{2}-\lvert\vec p\rvert^{2}c^{2}=m^{2}c^{4}$; the amplitudes are named through their squares, because a root of an energy is a half power of the base units, and the product of the two roots is the root of an energy squared. Then
 
 $$
 \langle\tilde w_\pm,\tilde w_\pm\rangle_{\mathrm D}=2m .

@@ -12,7 +12,7 @@ The pair is closed on the central class, $\varrho\,e^{i\theta_{\mathrm{pha}}}\va
 
 The criterion. $\epsilon=1/(2\pi\nu_{\Phi}L)$, with $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$ and $L$ the length over which the scale varies, $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The quantum potential over the kinetic energy is $\epsilon^{2}$; the scale's gradient over the phase's is $\epsilon$. The parameter is defined in *The Non-Quantum Limit of the Biquaternion Model*, and it is the same one here, with $\varrho$ in the place of the amplitude.
 
-The parent's pair is exact and its two lines are ordered differently: the real line is an expansion whose third term is the quantum potential, and the imaginary line is not an expansion at all. Order zero is the Hamilton–Jacobi equation, whose characters are the classical trajectories and whose algebra form is a norm. Order one is the transport equation, which the limit does not produce and cannot spoil, and which gives $C/\sqrt{\lvert p\rvert}$ in one dimension and the van Vleck determinant in three. Order two is the quantum potential, and its ratio to the kinetic energy is $\epsilon^{2}$ everywhere but is not bounded on any region, which is the difference between the limit and the approximation.
+The parent's pair is exact and its two lines are ordered differently: the real line is an expansion whose third term is the quantum potential, and the imaginary line is not an expansion at all. Order zero is the Hamilton–Jacobi equation, whose characters are the classical trajectories and whose algebra form is a norm. Order one is the transport equation, which the limit does not produce and cannot spoil, and which gives \varrho^{2}=C^{2}/\lvert p\rvert in one dimension — the amplitude named through its square, because a root of a momentum is a half power of the base units — and the van Vleck determinant in three. Order two is the quantum potential, and its ratio to the kinetic energy is $\epsilon^{2}$ everywhere but is not bounded on any region, which is the difference between the limit and the approximation.
 
 The amplitude–phase decomposition, the two real equations, the Hamilton–Jacobi equation, the method of characteristics, the optical–mechanical analogy, the transport equation, the WKB amplitude, the van Vleck determinant and the quantum potential are standard, and each is in every textbook on semiclassical mechanics. Added here: the ordering of the parent's own terms against one parameter, the norm reading of the eikonal, the identification of the limit's amplitude and density with two specific factors of the polar word, and the statement that the limit is defined only on the central class.
 
@@ -136,10 +136,12 @@ The velocity is the phase gradient and not the word's boost, and the polar chart
 In one dimension it integrates. $\varrho^{2}\,dS/dx=\text{const}$, so
 
 $$
-\varrho(x)=\frac{C}{\sqrt{\lvert p(x)\rvert}},
+\varrho^{2}(x)=\frac{C^{2}}{\lvert p(x)\rvert},
 \qquad
-p(x)=\sqrt{2m\left(E-V(x)\right)} .
+p(x)=\sqrt{2m\left(E-V(x)\right)} ,
 $$
+
+the amplitude being named through its square, because a root of a momentum is a half power of the base units and is not printed.
 
 The wave is large where the particle moves slowly and small where it moves fast, and this is the whole of the WKB amplitude. It follows from the exact equation and not from an expansion.
 
@@ -189,7 +191,7 @@ and the difference is the interference term. **The limit is not a map on the sta
 
 Three failures, and each is a place and not an order.
 
-At a turning point. $p\to0$, the amplitude $C/\sqrt{\lvert p\rvert}$ diverges, and the eikonal's two branches meet. The repair is a uniform approximation on an Airy scale, which the algebra does not supply; the standard methods are used unchanged.
+At a turning point. $p\to0$, the density $C^{2}/\lvert p\rvert$ diverges and the amplitude with it, and the eikonal's two branches meet. The repair is a uniform approximation on an Airy scale, which the algebra does not supply; the standard methods are used unchanged.
 
 At a caustic. The van Vleck determinant vanishes and the ray congruence folds. The same repair applies, and the same statement holds: the algebra supplies the location of the failure, not its cure.
 
@@ -225,7 +227,7 @@ The field is the parent's polar word $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde 
 
 The real line has three orders. Order zero is the Hamilton–Jacobi equation, read in the algebra as $\frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V$, whose characters are the classical trajectories. Order two is the quantum potential $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$, the only term the limit deletes. Order one is present as the scale's gradient, and it is what the first correction keeps.
 
-The imaginary line is the transport equation and it is not an expansion: $\partial_{t'}\varrho^{2}+\vec\nabla_\Phi\cdot(\varrho^{2}\vec\nabla_\Phi S/m)=0$ holds at every order and the limit cannot spoil it. It gives $\varrho=C/\sqrt{\lvert p\rvert}$ in one dimension and the van Vleck determinant in three.
+The imaginary line is the transport equation and it is not an expansion: $\partial_{t'}\varrho^{2}+\vec\nabla_\Phi\cdot(\varrho^{2}\vec\nabla_\Phi S/m)=0$ holds at every order and the limit cannot spoil it. It gives $\varrho^{2}=C^{2}/\lvert p\rvert$ in one dimension and the van Vleck determinant in three.
 
 Three statements are the polar chart's contribution and not the analysis's. The limit's amplitude is the word's scale. The limit's density is the Hermitian norm, equal to $2\varrho^{2}$ exactly where the boost is the identity. And the frame's two brackets are excluded by an exact statement — they carry no derivative of a fast object — rather than by an estimate.
 

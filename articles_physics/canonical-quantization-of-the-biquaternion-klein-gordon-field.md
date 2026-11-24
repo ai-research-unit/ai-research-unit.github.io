@@ -145,7 +145,7 @@ $$
 \exp(+i\theta_{\mathrm{pwp}})=\exp\!\big(-i\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural})\big) .
 $$
 
-The exponentials are central, so the mode expansion is a sum of central phases multiplying operators; the field operator at each event is an operator times $e_t$, i.e. it is central-valued as an operator-valued distribution, and the transport of the phase is the framework's own. The normalization $1/\sqrt{2E_{\vec p}}$ and the measure $d^3p/h^{3}$ are the standard Lorentz-invariant ones and are inherited.
+The exponentials are central, so the mode expansion is a sum of central phases multiplying operators; the field operator at each event is an operator times $e_t$, i.e. it is central-valued as an operator-valued distribution, and the transport of the phase is the framework's own. The normalisation and the measure are the standard Lorentz-invariant ones and are inherited; written through a square the normalisation of the textbook expansion is $N_{\vec p}^{2}=1/(2E_{\vec p})$, because a root of a mode energy is a half power of the base units and is not printed.
 
 For a **real** (neutral) scalar field the field is Hermitian, $\xi_{\mathrm{fop}}=\xi_{\mathrm{fop}}^{\dagger}$, which forces $b_{\mathrm{fop},\vec p}=a_{\mathrm{fop},\vec p}$; there is one set of modes, the field creates and destroys its own antiparticle, and the charge below vanishes identically. For a **complex** (charged) field the two sets are independent. The biquaternion framework does not by itself prefer either: the real field is a Hermitian central-valued operator field, the complex field a pair of them related by the central phase, and the distinction is the standard one.
 

@@ -179,9 +179,9 @@ when the flavours are massive, and vanishes when any flavour is massless. The re
 
 ### The Maslov phases
 
-The amplitude $C/\sqrt{\lvert p\rvert}$ diverges where $p\to0$, and the eikonal's two branches meet there. Near a simple turning point the equation for the envelope is approximated by Airy's equation, and the Airy functions connect the oscillatory solution on the allowed side to the exponential on the forbidden one.
+The amplitude $A$, whose square is $A^{2}=C^{2}/\lvert p\rvert$ — named through its square, because a root of a momentum is a half power of the base units — diverges where $p\to0$, and the eikonal's two branches meet there. Near a simple turning point the equation for the envelope is approximated by Airy's equation, and the Airy functions connect the oscillatory solution on the allowed side to the exponential on the forbidden one.
 
-Across a soft turning point the oscillatory solution acquires a phase $-\pi/2$ relative to the naive phase; across a hard wall it acquires $-\pi$. The wall therefore carries Maslov index two where a soft turning point carries one. In the framework these are operations on the central $i$: the connection formulas contain $\sqrt{2\pi i \frac{h}{2\pi}}$ and $i^{-1/2}$, and the square root is taken inside $\mathbb{B}_{C}$, which is a copy of $\mathbb{C}$. That is why the Maslov phases are unambiguous here — the central $i$ is supplied by the algebra and does not require a chosen complex structure.
+Across a soft turning point the oscillatory solution acquires a phase $-\pi/2$ relative to the naive phase; across a hard wall it acquires $-\pi$. The wall therefore carries Maslov index two where a soft turning point carries one. In the framework these are operations on the central $i$: the connection formulas carry the fixed dimensionless phase $e^{i\pi/4}$, which is $i^{-1/2}$, and no root of an action is printed, and the square root is taken inside $\mathbb{B}_{C}$, which is a copy of $\mathbb{C}$. That is why the Maslov phases are unambiguous here — the central $i$ is supplied by the algebra and does not require a chosen complex structure.
 
 ### The Bohr–Sommerfeld condition
 

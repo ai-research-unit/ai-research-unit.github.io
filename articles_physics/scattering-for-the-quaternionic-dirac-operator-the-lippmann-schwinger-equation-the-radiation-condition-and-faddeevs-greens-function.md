@@ -198,7 +198,7 @@ The source adds one restriction that the corpus should note, because it is easy 
 
 ## The Scattering Problem and the Lippmann–Schwinger Equation
 
-The problem is now stated for the Dirac-type operator itself, with a potential of the most general kind. Let $m(x)$ be a **quaternion-valued potential with compact support** $G$, and let $2\pi\vec\nu_\Phi$ be a vector identified with $2\pi\nu_{\Phi x}\vec e_x+2\pi\nu_{\Phi y}\vec e_y+2\pi\nu_{\Phi z}\vec e_z\in\mathbb{H}$, with $2\pi\nu_{\Phi}=\sqrt{4\pi^{2}\vec4\pi^{2}\nu_\Phi^{2}}$ and $\operatorname{Im}(2\pi\nu_{\Phi})\ge0$. Let $u_{\mathrm{inc}}$ be an incident field solving the **homogeneous** equation
+The problem is now stated for the Dirac-type operator itself, with a potential of the most general kind. Let $m(x)$ be a **quaternion-valued potential with compact support** $G$, and let $2\pi\vec\nu_\Phi$ be a vector identified with $2\pi\nu_{\Phi x}\vec e_x+2\pi\nu_{\Phi y}\vec e_y+2\pi\nu_{\Phi z}\vec e_z\in\mathbb{H}$, with $2\pi\nu_{\Phi}=\sqrt{4\pi^{2}\vec\nu_\Phi^{2}}$ and $\operatorname{Im}(2\pi\nu_{\Phi})\ge0$. Let $u_{\mathrm{inc}}$ be an incident field solving the **homogeneous** equation
 
 $$
 D_3u_{\mathrm{inc}} + u_{\mathrm{inc}}2\pi\vec\nu_\Phi = 0 \qquad \text{in } \mathbb{R}^3 . \tag{8.1}
