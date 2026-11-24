@@ -282,8 +282,8 @@ The Yukawa sector answers the same question by counting. The one-bidoublet condi
 ## Further Reading
 
 - [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The group, the sixteen, the chain and the declarations, with no coupling value.
-- [The Breaking Chain and the Boson Spectrum: One Flag, Three Scales, Twenty-One Bosons](the-breaking-chain-and-the-boson-spectrum.html). The chain as three stabilisers, and the dimension budget that fixes the count of states.
+- [The Breaking Chain: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-one-flag-three-stabilisers-three-scales.html). The chain as three stabilisers, and the dimension budget that fixes the count of states.
 - [The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators](the-weinberg-angle-and-the-three-neutral-states.html). The angle as a ratio, and the neutral current written symbolically.
-- [The Scalar Sector and the Leptoquark Bounds: Twenty-Four Real Components, Six Unseen States, Two Scales](the-scalar-sector-and-the-leptoquark-bounds.html). The multiplet list and the states, with the mass ratios referred here.
+- [The Scalar Sector: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-twenty-four-real-components-twelve-eaten.html). The multiplet list and the states, with the mass ratios referred here.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). Why the larger group that would close the gap is not available on the carrier.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). What the recovery recovers, counted.

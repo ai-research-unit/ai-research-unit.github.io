@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This article classifies nothing. It states one hypothesis about why the fermions come in three copies, and what that hypothesis does and does not explain. The classification of one generation is finished elsewhere, in [Particle Classification: Three Grids, One Name in Every Cell](particle-classification-three-grids-one-name-in-every-cell.html). That article names the sixteen cells, the twenty-one bosons and the twelve surviving scalars, and it says nothing about flavour. The separation is deliberate: the classification states a structure, flavour states a spectrum, and a nomenclature that absorbs both stops being a nomenclature.
+This article classifies nothing. It states one hypothesis about why the fermions come in three copies, and what that hypothesis does and does not explain. The classification of one generation is finished elsewhere, in [The Fermions of One Generation](classification-of-the-fermions-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html). That article names the sixteen cells, the twenty-one bosons and the twelve surviving scalars, and it says nothing about flavour. The separation is deliberate: the classification states a structure, flavour states a spectrum, and a nomenclature that absorbs both stops being a nomenclature.
 
 The hypothesis is that there are no elementary particles, only fields and their levels of combined excitation. Flavour 1 is the ground level, flavour 2 the first combined level, and flavour 3 the second. The ladder has three rungs: the three copies are the whole of it, and there is no fourth.
 
@@ -260,7 +260,7 @@ The letter $\rho$ carries the mass ratio in this article and is given the subscr
 ## Further Reading
 
 - [An Introduction to Flavour: Mass, Lifetime, Decay Pattern, the Three Handles](an-introduction-to-flavour.html). The phenomena this article theorises, with no theory of them.
-- [Particle Classification: Three Grids, One Name in Every Cell](particle-classification-three-grids-one-name-in-every-cell.html). One generation, sixteen cells, three grids, and no flavour.
+- [The Fermions of One Generation](classification-of-the-fermions-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html). One generation, sixteen cells, three grids, and no flavour.
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). Why the algebra does not count them.
 - [The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The misalignment between the flavour basis and the mass basis.

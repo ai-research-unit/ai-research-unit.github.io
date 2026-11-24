@@ -15,6 +15,19 @@ DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-uni
 # Old URLs kept alive after a rename: (deployed page, alias that copies it).
 # The pruner spares the aliases, and no sitemap lists them.
 LEGACY_COPIES = [
+    # The chain-and-spectrum and scalar-and-leptoquark articles were split in two.
+    ("articles_physics/the-breaking-chain-one-flag-three-stabilisers-three-scales.html",
+     "articles_physics/the-breaking-chain-and-the-boson-spectrum.html"),
+    ("articles_physics/the-scalar-sector-twenty-four-real-components-twelve-eaten.html",
+     "articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html"),
+    # The classification article was split in two, bosons and fermions; the old
+    # URL serves the boson article, which carries the group, the ledger and grids.
+    ("articles_physics/classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html",
+     "articles_physics/particle-classification-three-grids-one-name-in-every-cell.html"),
+    # The boson-spectrum article was merged into the classification article; the
+    # old URL serves the merged page, which now carries the fates and the mixing.
+    ("articles_physics/classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html",
+     "articles_physics/the-twenty-one-gauge-bosons-nine-massless-twelve-massive.html"),
     ("articles_maths/the-spin-half-bispinors-and-n-norm-regularity-in-m2c.html",
      "articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html"),
     ("articles_maths/the-spin-half-bispinors-and-n-norm-regularity.html",
