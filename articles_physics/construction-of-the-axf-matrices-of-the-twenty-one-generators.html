@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction of the AXF Matrices of the Twenty-One Generators: Fifteen for $\mathfrak{su}(4)$, Three for $\mathfrak{su}(2)_L$, Three for $\mathfrak{su}(2)_R$ — Biquaternion Universe</title>
+  <meta name="description" content="Everything on this page is built from six arrays. The six are the axis-free arrays of left and right multiplication by the three vector units. With the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="construction-of-the-axf-matrices-of-the-twenty-one-generators-fifteen-for-math0-three-for-math1-three-for-math2"><strong>Construction of the AXF Matrices of the Twenty-One Generators: Fifteen for $\mathfrak{su}(4)$, Three for $\mathfrak{su}(2)_L$, Three for $\mathfrak{su}(2)_R$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Everything on this page is built from six arrays.</strong> The six are the axis-free arrays of left and right multiplication by the three vector units $\vec e_x,\vec e_y,\vec e_z$. With the two identities of the scalar unit they are eight arrays, and every one of the twenty-one generators is one of three operations applied to them: <strong>halve one array</strong>, <strong>multiply one array by $i$</strong>, or <strong>add and subtract two arrays</strong> (three, once, for the corner). No array below is chosen, and no array below is a Pauli array or a gamma array.</p>
+<p><strong>The order of the article is the order of the construction.</strong> §<em>Part I</em> builds the six weak generators, and they are the raw arrays halved, so they come first. §<em>Part II</em> builds the fifteen of $\mathfrak{su}(4)$ in three steps: the eight arrays, the sixteen words, the six pairs. §<em>Part III</em> reads the result back: one table of properties, one boson per array, and the mass each one gets.</p>
+<p><strong>The counts, in one display.</strong>
+$$
+\underbrace{15}_{\mathfrak{su}(4)}+\underbrace{3}_{\mathrm{SU}(2)_L}+\underbrace{3}_{\mathrm{SU}(2)_R}=21,
+\qquad
+\underbrace{16}_{4\times4}-\underbrace{1}_{\text{the trace}}=15,
+\qquad
+\underbrace{21}_{\text{arrays}}-\underbrace{6}_{\text{two-term sums}}=15\ \text{directions}.
+$$
+<strong>Twenty-one arrays and fifteen directions is not a contradiction, and it is the reason the article has to print twenty-one matrices to describe fifteen generators.</strong></p>
+<p><strong>The frame.</strong> The axis-free frame of <a href="the-axf-matrices-axis-free-integer-entries.html">The AXF Matrices: Axis-Free, Integer Entries</a>. The array of an operator is read by columns, the $j$-th column being the product with the $j$-th unit:
+$$
+L_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=\bigl[\tilde Q\,e_{\jmath}\bigr]_{\imath},\qquad
+R_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=\bigl[e_{\jmath}\,\tilde Q\bigr]_{\imath},
+\qquad e_\mu\in\{e_t,\vec e_x,\vec e_y,\vec e_z\}.
+$$
+<strong>The order is $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the product is $\vec e_x\vec e_y=\vec e_z$ cyclically, and $E_{jk}$ is the matrix unit in that order.</strong> The scalar unit $e_t$ is the identity of the algebra, so $e_t\vec X=\vec Xe_t=\vec X$: the temporal line is the lepton line of the model, and that is the whole of the identification.</p>
+<p><strong>Two words that name a side and not a chirality.</strong> $L$ and $R$ name the side of the multiplication in the algebra, left or right. They are the labels of $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$ because the two triples of arrays are the two triples of generators, and the assignment of a fermion chirality to a side is a separate declaration of the model, made in <a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model</a> and not here.</p>
+<h2 id="part-i-the-two-weak-triples-from-the-axis-free-arrays">Part I. The Two Weak Triples from the Axis-Free Arrays</h2>
+<p><strong>The definition, and the only number in it.</strong>
+$$
+T^{L}_{a}:=\tfrac12\,L_{\mathrm{axf}}(\vec e_a),\qquad
+T^{R}_{a}:=\tfrac12\,R_{\mathrm{axf}}(\vec e_a),\qquad a=x,y,z .
+$$
+<strong>The six arrays of the model are these, and the raw arrays are twice them.</strong> The article prints the raw six first, because they are the input of Part II as well, and then the model's six at their own normalisation.</p>
+<p><strong>The three left arrays.</strong> Each is a signed permutation, read by columns: the $j$-th column is $\vec e_a e_j$.</p>
+<p>$$
+\ell_x:=L_{\mathrm{axf}}(\vec e_x)=\begin{pmatrix}0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 1 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+\ell_y:=L_{\mathrm{axf}}(\vec e_y)=\begin{pmatrix}0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+\ell_z:=L_{\mathrm{axf}}(\vec e_z)=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>The three right arrays.</strong> The same reading with the factors exchanged.</p>
+<p>$$
+r_x:=R_{\mathrm{axf}}(\vec e_x)=\begin{pmatrix}0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+r_y:=R_{\mathrm{axf}}(\vec e_y)=\begin{pmatrix}0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+r_z:=R_{\mathrm{axf}}(\vec e_z)=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>The one structural fact about the six, and it is visible in the two arrays of the same direction.</strong> $\ell_x$ and $r_x$ are the same signed permutation and differ only in the signs of the second plane. Both send $e_t\mapsto\vec e_x$ and $\vec e_x\mapsto-e_t$; both send the pair $\{\vec e_y,\vec e_z\}$ to itself; <strong>the block $\{t,x\}$ is identical and the block $\{y,z\}$ is opposite</strong>. The same holds for $y$ and $z$ with the complement cycled. <strong>That single fact is the reason a sum can isolate a plane</strong>, and Part II Step 3 is nothing but that fact used six times.</p>
+<p><strong>The properties inherited from the algebra.</strong>
+$$
+\ell_a^{2}=r_a^{2}=-\mathrm I_4,\qquad \ell_x\ell_y=\ell_z,\qquad r_xr_y=-r_z,\qquad \ell_a r_b=r_b\ell_a .
+$$
+<strong>The first is $\vec e_a^2=-1$; the second says left multiplication is a homomorphism; the third says right multiplication is an anti-homomorphism</strong>, $R_AR_B=R_{BA}$; <strong>the fourth is associativity</strong>, $(\vec e_a\tilde X)\vec e_b=\vec e_a(\tilde X\vec e_b)$, and it will be the reason the two triples commute.</p>
+<p><strong>The model's six, at their own normalisation.</strong> One direction printed left next to right, so that the two signs of the second plane stand in one picture.</p>
+<p>$$
+T^{L}_{x}=\tfrac12\ell_x=\begin{pmatrix}0 &amp; -\tfrac12 &amp; 0 &amp; 0 \\ \tfrac12 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -\tfrac12 \\ 0 &amp; 0 &amp; \tfrac12 &amp; 0\end{pmatrix},\qquad
+T^{R}_{x}=\tfrac12 r_x=\begin{pmatrix}0 &amp; -\tfrac12 &amp; 0 &amp; 0 \\ \tfrac12 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; \tfrac12 \\ 0 &amp; 0 &amp; -\tfrac12 &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>The same pattern, for the six, with the entries and not the displays.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>array</th>
+<th>$(t,a)$</th>
+<th>$(a,t)$</th>
+<th>$(b,c)$</th>
+<th>$(c,b)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T^{L}_{a}$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac12$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac12$</td>
+</tr>
+<tr>
+<td>$T^{R}_{a}$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac12$</td>
+<td>$-\tfrac12$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the table as row then column, and read the two blocks as two planes.</strong> $T^{L}_{a}$ sends $e_t\mapsto\tfrac12 e_a$ and $e_a\mapsto-\tfrac12 e_t$, so it turns the plane $\{t,a\}$; and it sends $e_b\mapsto\tfrac12 e_c$ and $e_c\mapsto-\tfrac12 e_b$, so it turns the plane $\{b,c\}$. <strong>Two planes, four cells, one array.</strong> $T^{R}_{a}$ agrees on the first plane and reverses on the second. The entries are the same six numbers in both rows, and the difference is two signs.</p>
+<p><strong>Why the half, in one line.</strong> The raw arrays close with $2$ in the structure constants,
+$$
+[\ell_a,\ell_b]=2\epsilon_{abc}\,\ell_c ,
+$$
+so
+$$
+[T^{L}_{a},T^{L}_{b}]=\epsilon_{abc}\,T^{L}_{c}
+$$
+with no constant left over. <strong>The half is the number that removes the $2$, and it is the only number in the definition of the six.</strong></p>
+<p><strong>The three brackets, all exact.</strong>
+$$
+[T^{L}_{a},T^{L}_{b}]=\epsilon_{abc}T^{L}_{c},\qquad
+[T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}T^{R}_{c},\qquad
+[T^{L}_{a},T^{R}_{b}]=0 .
+$$
+<strong>The minus in the second is the anti-homomorphism of the properties display above</strong>, and it is a sign inside the triple, not a different algebra: $\{-T^{R}_{a}\}$ closes with $+\epsilon_{abc}$. <strong>The third line is the one that matters for the model.</strong> Two triples that commute span $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, and that is the weak pair of the group, sitting inside $\mathfrak{su}(4)$.</p>
+<p><strong>The six weak arrays are the two halves of $\mathfrak{so}(4)$, and the star says which is which.</strong> Read an array as the two-form $\omega=\tfrac12\omega_{jk}\,dx^j\wedge dx^k$ with $\omega_{jk}=M_{jk}$, and fix the star by
+$$
+\star(dt\wedge dx)=dy\wedge dz,\qquad \star(dt\wedge dy)=dz\wedge dx,\qquad \star(dt\wedge dz)=dx\wedge dy .
+$$
+<strong>The star here is the star of $\mathbb{R}^4$ with the Euclidean metric, the four signs all plus</strong>, which is the metric of the frame and the one the Rotors article uses; on two-forms it satisfies $\star^2=+1$, so its eigenvalues are $\pm1$ and the split below is a split into eigenspaces. <strong>With the Minkowski star the same computation would give $\star^2=-1$ and eigenvalues $\pm i$, and the self-dual statement would be false as written</strong> — the definiteness is what is being used.</p>
+<p>Then, for every one of the six,
+$$
+\star\,\omega(T^{L}_{a})=+\omega(T^{L}_{a}),\qquad \star\,\omega(T^{R}_{a})=-\omega(T^{R}_{a}),
+$$
+six checks and six hits. <strong>So the left triple spans the self-dual three-space of $\Lambda^{2}\mathbb{R}^{4}$, the right triple the anti-self-dual one, and $\mathfrak{so}(4)=\mathfrak{su}(2)_{+}\oplus\mathfrak{su}(2)_{-}$ is this display read as a statement about algebras.</strong> For $a=x$ the coefficients are $\omega_{tx}=\omega_{yz}=-\tfrac12$ on the left and $\omega_{tx}=-\tfrac12$, $\omega_{yz}=+\tfrac12$ on the right: the same number on the plane $\{t,x\}$ and opposite numbers on $\{y,z\}$. <strong>The same split is visible in the three brackets of §<em>Part I</em> with no star at all</strong>: the left triple closes with $+\epsilon_{abc}$ and the right with $-\epsilon_{abc}$, and that sign is what distinguishes the two eigenspaces.</p>
+<p><strong>The properties of the six, in one line each.</strong> Anti-Hermitian, because they are real and antisymmetric. Traceless. $\operatorname{tr}(X^{\dagger}X)=1$. Spectrum $\pm\tfrac i2$, each twice. Four cells. <strong>No array of the six is one cell wide</strong>, and that is already the reason the fifteen are built in pairs.</p>
+<p><strong>The doublet reading, three sentences, and then dropped.</strong> The same abstract weak generator also acts on a two-row doublet, where it is $\tfrac i2$ times a $2\times2$ array of Pauli type. <strong>That array belongs to the doublet factor of $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$ and not to the quartet</strong>, so it is a different carrier and a different array, and it is not printed here. What is printed here is the carrier's reading, which is the one the two-sided action supplies and the one that makes $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ a subgroup of $\mathrm{SU}(4)$.</p>
+<h2 id="part-ii-the-fifteen-of-math100-in-three-steps">Part II. The Fifteen of $\mathfrak{su}(4)$ in Three Steps</h2>
+<p><strong>The construction is the one of <a href="../articles_internal/structures/structure-SU4-basis-construction.html">Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices</a>, and it has three steps.</strong> Step 1 names the raw material; Step 2 makes the sixteen words and deletes the trace; Step 3 sums and subtracts the six pairs. <strong>Steps 1 and 2 are forced. Step 3 is one choice, and it is the choice that puts one plane in one array.</strong> The choice is not arbitrary even so: §<em>The Unique Property of the Physics Base</em> of that article proves the pair resolution is the only basis of the fifteen that a diagonal adjoint $M^2$ admits, with "one plane", "eigenline of the pair" and "diagonal mass matrix" three names for one condition.</p>
+<h3 id="step-1-eight-arrays-two-of-them-the-identity">Step 1. Eight Arrays, Two of Them the Identity</h3>
+<p><strong>Both families are linear in the algebra element</strong>, so the array of a general element is a combination of four arrays per side, and the eight
+$$
+L_{\mathrm{axf}}(e_\mu),\quad R_{\mathrm{axf}}(e_\nu),\qquad \mu,\nu\in\{t,x,y,z\},
+$$
+are the whole input. <strong>Six are distinct and two coincide</strong>, because the scalar unit acts the same on both sides:
+$$
+L_{\mathrm{axf}}(e_t)=R_{\mathrm{axf}}(e_t)=\mathrm I_4 .
+$$
+<strong>The six distinct ones are $\ell_x,\ell_y,\ell_z,r_x,r_y,r_z$, printed in §<em>Part I</em>.</strong> Each is a signed permutation, orthogonal, of determinant $+1$ and trace $4\delta_{\mu t}$. <strong>$\mathrm I_4$ is the degenerate member of the same family</strong>, one signed permutation with no transpositions; the count of eight is a count of signed permutations, and the six distinct ones are the ones worth printing.</p>
+<p><strong>Nothing here is a frame chosen for the occasion.</strong> The eight arrays are the multiplication table of the algebra read twice, once from each side. <strong>A reader who wants to know where $\ell_x$ comes from is answered by four words: left multiplication by $\vec e_x$.</strong></p>
+<h3 id="step-2-the-sixteen-words-minus-one-times-math111">Step 2. The Sixteen Words, Minus One, Times $i$</h3>
+<p><strong>The definition of a word.</strong> A product of one left array with one right array:
+$$
+W_{\mu\nu}:=L_{\mathrm{axf}}(e_\mu)\,R_{\mathrm{axf}}(e_\nu).
+$$
+<strong>Proposition.</strong> The sixteen $W_{\mu\nu}$ are a basis of $M_4(\mathbb{R})$, and they are orthogonal in the trace form,
+$$
+\operatorname{tr}\bigl(W_{\mu\nu}^{\mathsf T}W_{\mu'\nu'}\bigr)=4\,\delta_{\mu\mu'}\delta_{\nu\nu'} .
+$$
+<strong>Both checks are recomputed here: $256$ pairs, $256$ hits.</strong></p>
+<p><strong>The six with one scalar index are the raw arrays again</strong>, $W_{ta}=r_a$ and $W_{at}=\ell_a$, and they are real antisymmetric, so they are anti-Hermitian as they stand. <strong>The nine with both indices vector are real symmetric</strong>, so they need the factor $i$ and nothing else:
+$$
+iN_{jk}:=i\,W_{jk}=i\,\ell_jr_k,\qquad j,k=x,y,z .
+$$</p>
+<p><strong>The nine, one to a display.</strong></p>
+<p>$$
+iN_{xx}=\begin{pmatrix}-i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i\end{pmatrix}
+$$</p>
+<p>$$
+iN_{xy}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; i \\ 0 &amp; 0 &amp; -i &amp; 0 \\ 0 &amp; -i &amp; 0 &amp; 0 \\ i &amp; 0 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+iN_{xz}=\begin{pmatrix}0 &amp; 0 &amp; -i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -i \\ -i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -i &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+iN_{yx}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; -i \\ 0 &amp; 0 &amp; -i &amp; 0 \\ 0 &amp; -i &amp; 0 &amp; 0 \\ -i &amp; 0 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+iN_{yy}=\begin{pmatrix}-i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i\end{pmatrix}
+$$</p>
+<p>$$
+iN_{yz}=\begin{pmatrix}0 &amp; i &amp; 0 &amp; 0 \\ i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -i \\ 0 &amp; 0 &amp; -i &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+iN_{zx}=\begin{pmatrix}0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -i \\ i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -i &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+iN_{zy}=\begin{pmatrix}0 &amp; -i &amp; 0 &amp; 0 \\ -i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -i \\ 0 &amp; 0 &amp; -i &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+iN_{zz}=\begin{pmatrix}-i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -i\end{pmatrix}
+$$</p>
+<p><strong>Why the factor $i$ is forced and not chosen.</strong> Every generator of $\mathfrak{su}(4)$ is anti-Hermitian. A real antisymmetric array is anti-Hermitian already; a real symmetric one is Hermitian and must be multiplied by $i$. <strong>The split $6+9$ is the count of scalar indices, and the $i$ is the sign of the nine.</strong></p>
+<p><strong>Deleting the trace is deleting one word, and that is why the count is $15$.</strong> Exactly one of the sixteen has a trace, namely $W_{tt}=\mathrm I_4$, the product of the two scalar units. <strong>So "remove the trace" is not an operation on a sum: it is the deletion of a single word</strong>, and $16-1=15$ is a count of index pairs. The same fifteen is the number of cells of the $4\times4$ grid with the corner dropped.</p>
+<p><strong>The fifteen as they stand are a basis of the corpus, the maths base.</strong> Nothing is added, halved or rescaled: six raw arrays and nine products times $i$. Its trace form is inherited from the words, $\operatorname{tr}(G^{\dagger}G)=4$ on each.</p>
+<p><strong>What the maths base spends.</strong> A word moves four cells, $\ell_x$ moves the pairs $(t,x)$ and $(y,z)$. <strong>Taking the words whole therefore means that no generator of this basis is one cell wide</strong>, and a reader looking for a single particle finds two planes in one array. That is the whole of the choice Step 3 makes.</p>
+<h3 id="step-3-the-six-pairs-sum-and-difference">Step 3. The Six Pairs, Sum and Difference</h3>
+<p><strong>One operation, applied to pairs of words.</strong> For each of the six unordered index pairs $\{\mu,\nu\}$ replace the two words of the pair by their half-sum and half-difference:
+$$
+P^{+}_{\mu\nu}:=\tfrac12\bigl(W_{\mu\nu}+W_{\nu\mu}\bigr),\qquad
+P^{-}_{\mu\nu}:=\tfrac12\bigl(W_{\mu\nu}-W_{\nu\mu}\bigr).
+$$
+<strong>Why it works is the structural fact of §<em>Part I</em>, used six times.</strong> The two words of a pair are the same signed permutation and differ only in the signs of one of the two planes they move. <strong>So the sum keeps the plane on which they agree, the difference keeps the plane on which they disagree, and both results are supported on a single plane.</strong> Two four-cell words give two two-cell arrays.</p>
+<p><strong>The six pairs and their twelve outputs.</strong> The sign of a half-difference is the orientation sign of the four indices $(\mu,\nu,\mu',\nu')$ against $(t,x,y,z)$, with $\{\mu',\nu'\}$ the complementary pair written in ascending order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>the two words</th>
+<th>half-sum</th>
+<th>half-difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{t,x\}$</td>
+<td>$W_{tx}=r_x$, $W_{xt}=\ell_x$</td>
+<td>$-A_{tx}$</td>
+<td>$+A_{yz}$</td>
+</tr>
+<tr>
+<td>$\{t,y\}$</td>
+<td>$W_{ty}=r_y$, $W_{yt}=\ell_y$</td>
+<td>$-A_{ty}$</td>
+<td>$-A_{xz}$</td>
+</tr>
+<tr>
+<td>$\{t,z\}$</td>
+<td>$W_{tz}=r_z$, $W_{zt}=\ell_z$</td>
+<td>$-A_{tz}$</td>
+<td>$+A_{xy}$</td>
+</tr>
+<tr>
+<td>$\{x,y\}$</td>
+<td>$W_{xy}=N_{xy}$, $W_{yx}=N_{yx}$</td>
+<td>$-S_{xy}$</td>
+<td>$+S_{tz}$</td>
+</tr>
+<tr>
+<td>$\{x,z\}$</td>
+<td>$W_{xz}=N_{xz}$, $W_{zx}=N_{zx}$</td>
+<td>$-S_{xz}$</td>
+<td>$-S_{ty}$</td>
+</tr>
+<tr>
+<td>$\{y,z\}$</td>
+<td>$W_{yz}=N_{yz}$, $W_{zy}=N_{zy}$</td>
+<td>$-S_{yz}$</td>
+<td>$+S_{tx}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the third column as one sentence.</strong> The half-sum is always <strong>minus</strong> the array on the pair's own two indices; the half-difference is <strong>plus or minus</strong> the array on the complementary pair. <strong>Take the pair $\{t,a\}$: the agreement is the plane $\{t,a\}$, which is a leptoquark plane, and the disagreement is the plane $\{b,c\}$, which is a colour plane.</strong> Take the pair $\{b,c\}$: the agreement is the real colour array $-S_{bc}$ and the disagreement is the real leptoquark array $\pm S_{ta}$.</p>
+<p><strong>Six of the twelve outputs are generators as they stand and six are not.</strong> The three outputs on a pair $\{t,a\}$ are real antisymmetric, $A_{ta}$ and $A_{bc}$, which is $\mathfrak{su}(4)$ already; the three outputs on a pair $\{b,c\}$ are real symmetric, $S_{bc}$ and $S_{ta}$, and they take the factor $i$ of Step 2 like the other symmetric words. <strong>That is why the displays below write $iS_{jk}$ and not $S_{jk}$, and it is the same rule as before, not a second one.</strong></p>
+<p><strong>The identity behind the table, in one line.</strong> For $\{a,b,c\}=\{x,y,z\}$ cyclic, with $A_{bc}$ written on the complement in that same cyclic order,
+$$
+A_{ta}=-\tfrac12\bigl(W_{ta}+W_{at}\bigr),\qquad
+A_{bc}=+\tfrac12\bigl(W_{ta}-W_{at}\bigr),
+$$
+<strong>and this is the sentence the model is built on</strong>: the leptoquark plane is where left and right multiplication agree, and the colour plane is where they disagree. <strong>The half is what makes these two lines integral.</strong></p>
+<p><strong>The six mixed planes, three displays.</strong> $A_{jk}=E_{jk}-E_{kj}$ and $iS_{jk}=i(E_{jk}+E_{kj})$.</p>
+<p>$$
+A_{tx}=\begin{pmatrix}0 &amp; 1 &amp; 0 &amp; 0 \\ -1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix},\qquad iS_{tx}=\begin{pmatrix}0 &amp; i &amp; 0 &amp; 0 \\ i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+A_{ty}=\begin{pmatrix}0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ -1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix},\qquad iS_{ty}=\begin{pmatrix}0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+A_{tz}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ -1 &amp; 0 &amp; 0 &amp; 0\end{pmatrix},\qquad iS_{tz}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; i \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ i &amp; 0 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>The six colour arrays, three displays.</strong></p>
+<p>$$
+A_{xy}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix},\qquad iS_{xy}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+A_{xz}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0\end{pmatrix},\qquad iS_{xz}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p>$$
+A_{yz}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0\end{pmatrix},\qquad iS_{yz}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i \\ 0 &amp; 0 &amp; i &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>And the three diagonals, which are not paired by the rule.</strong> The diagonal words are $W_{jj}$, so they are taken whole, in one sum and two successive differences, and <strong>all three carry the factor $i$ of the nine</strong>:
+$$
+iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr),\qquad
+d_2=\tfrac i2\bigl(W_{yy}-W_{xx}\bigr),\qquad
+d_3=\tfrac i2\bigl(W_{zz}-W_{yy}\bigr).
+$$
+$$
+iD=\begin{pmatrix}-3i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i\end{pmatrix}
+$$</p>
+<p>$$
+d_2=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix},\qquad d_3=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -i\end{pmatrix}
+$$</p>
+<p><strong>The factor $i$ on the diagonals is the factor the nine planes carry, and a construction that drops it produces a real Hermitian array that is not in $\mathfrak{su}(4)$.</strong> Written without the $i$, $D=W_{xx}+W_{yy}+W_{zz}$ is the real diagonal $\operatorname{diag}(-3,1,1,1)$; <strong>the generator is $iD$, and $D$ is the array that carries $B-L$</strong>, with $B-L=\tfrac13D$ on $\mathbf4$.</p>
+<p><strong>One array worked from end to end, because the mechanism is worth seeing once.</strong>
+$$
+\tfrac12\bigl(W_{tx}+W_{xt}\bigr)=\tfrac12\left[\begin{pmatrix}0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0\end{pmatrix}+\begin{pmatrix}0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 1 &amp; 0\end{pmatrix}\right]=\begin{pmatrix}0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix}=-A_{tx}
+$$
+<strong>The two words of the pair agree on the plane $\{t,x\}$ and disagree on $\{y,z\}$; the sum kills the disagreement; the survivor is one leptoquark plane.</strong> The first display of the colour group does the same on the imaginary side: $iS_{tz}=i\tfrac12(W_{xy}-W_{yx})$ keeps $\{t,z\}$.</p>
+<p><strong>The count.</strong> Six pairs give twelve arrays, the three diagonal words give three, $12+3=15$. <strong>The arithmetic of the construction is the arithmetic of the grid</strong>: twelve off-diagonal planes and three diagonal arrays.</p>
+<h3 id="the-twenty-one-counted">The Twenty-One, Counted</h3>
+<p><strong>The six weak arrays are sums and differences of the fifteen, and the coefficients are integers after the halving.</strong>
+$$
+A_{ta}=-\bigl(T^{L}_{a}+T^{R}_{a}\bigr),\qquad
+A_{bc}=-\epsilon_{abc}\bigl(T^{L}_{a}-T^{R}_{a}\bigr),
+$$
+<strong>and inverted,</strong>
+$$
+T^{L}_{a}=-\tfrac12\bigl(A_{ta}+\epsilon_{abc}A_{bc}\bigr),\qquad
+T^{R}_{a}=-\tfrac12\bigl(A_{ta}-\epsilon_{abc}A_{bc}\bigr).
+$$
+<strong>The $\epsilon$ is a convention and not a sign of the algebra.</strong> $A_{bc}$ is written with $b&lt;c$ throughout, and $\epsilon_{abc}=+1$ when $(a,b,c)$ is a cyclic order of $(x,y,z)$. For $a=x$ and $a=z$ the cyclic pair is already ascending, so the second line reads with a minus; for $a=y$ the cyclic pair is $(z,x)$ and the ascending one is $(x,z)$, so the same array carries the opposite sign. <strong>Write the pairs in cyclic order and $\epsilon=+1$ everywhere; write them with $b&lt;c$ and $\epsilon$ is the price.</strong></p>
+<p><strong>Check one, in four cells.</strong> The two weak arrays agree on the $\{t,a\}$ block, so their sum keeps it doubled and its half is the leptoquark plane; they differ on the $\{b,c\}$ block, so their difference keeps it doubled and its half is the colour plane. <strong>The half in the definition of $T$ is exactly what makes those two lines integral.</strong></p>
+<p><strong>Twenty-one arrays, fifteen directions.</strong> The six relations are independent, so the rank of the twenty-one columns over $\mathbb{Q}(i)$ — equivalently over $\mathbb{R}$, the entries being Gaussian integers — is fifteen, and the twenty-one arrays are distinct. <strong>Both statements are needed and neither is a defect</strong>: one array per generator, and six of the arrays two-term sums of the other fifteen.</p>
+<p><strong>The normalisation, said once.</strong> The fifteen are Gaussian-integer arrays, every entry in $\{0,\pm1,\pm i,\pm3i\}$ — the only entry of modulus $\ne1$ is the $-3i$ of the corner — with $\operatorname{tr}(X^{\dagger}X)=2$, except the corner, which has $12$. The six are real half-integer arrays, entries in $\{0,\pm\tfrac12\}$, with $1$. <strong>No display mixes them</strong>, and every relation above holds with the halves as written.</p>
+<h2 id="part-iii-the-properties-of-the-twenty-one-and-the-boson-in-each">Part III. The Properties of the Twenty-One, and the Boson in Each</h2>
+<h3 id="one-table-of-properties">One Table of Properties</h3>
+<p><strong>Six families, and every numeric entry in the table is recomputed in §<em>The Checks</em>.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>arrays</th>
+<th>entries</th>
+<th>cells</th>
+<th>$\operatorname{tr}(X^{\dagger}X)$</th>
+<th>spectrum</th>
+<th>the exponential is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real plane $\{j,k\}$</td>
+<td>$A_{jk}$, $6$</td>
+<td>$0,\pm1$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$0,0,\pm i$</td>
+<td>a real rotation of the plane $\{j,k\}$</td>
+</tr>
+<tr>
+<td>imaginary plane $\{j,k\}$</td>
+<td>$iS_{jk}$, $6$</td>
+<td>$0,\pm i$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$0,0,\pm i$</td>
+<td>complex, unitary, $\det=1$</td>
+</tr>
+<tr>
+<td>the corner</td>
+<td>$iD$, $1$</td>
+<td>$-3i$, $i$</td>
+<td>$4$</td>
+<td>$12$</td>
+<td>$-3i,i,i,i$</td>
+<td>four phases</td>
+</tr>
+<tr>
+<td>colour diagonals</td>
+<td>$d_2,d_3$, $2$</td>
+<td>$0,\pm i$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$0,0,\pm i$</td>
+<td>two phases, two fixed lines</td>
+</tr>
+<tr>
+<td>left triple</td>
+<td>$T^{L}_{a}$, $3$</td>
+<td>$0,\pm\tfrac12$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$\pm\tfrac i2$ twice</td>
+<td>a real rotation by $\tfrac{\theta}{2}$ of two planes</td>
+</tr>
+<tr>
+<td>right triple</td>
+<td>$T^{R}_{a}$, $3$</td>
+<td>$0,\pm\tfrac12$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$\pm\tfrac i2$ twice</td>
+<td>the same, one plane reversed</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table has two behaviours, not six.</strong> A real array has a real orthogonal exponential, so it turns planes and fixes the rest; an imaginary one has a complex exponential, so it does not preserve the real quartet. <strong>That is the $6+9$ split read at the level of the group, and it is the reason the twenty-one are not twenty-one rotations.</strong></p>
+<p><strong>One exponential, exactly.</strong> For the real planes and the weak arrays there is a closed form, and the two differ by the half:
+$$
+\exp\bigl(\theta A_{tx}\bigr)e_t=\cos\theta\,e_t-\sin\theta\,e_x,\qquad
+\exp\bigl(\theta T^{L}_{x}\bigr)e_t=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,e_x .
+$$
+<strong>At $\theta=0.4$ the first gives $(0.921061,\,-0.389418,\,0,\,0)$</strong>, and $\exp(\theta A_{tx})$ fixes $e_y$ and $e_z$. <strong>The half-angle in the second is the half in the definition of $T^{L}_{x}$ and nothing else.</strong> $T^{L}_{x}$ turns both its planes by $\tfrac{\theta}{2}$ in the same sense; $T^{R}_{x}$ turns $\{t,x\}$ by $\tfrac{\theta}{2}$ and $\{y,z\}$ by $-\tfrac{\theta}{2}$.</p>
+<p><strong>The Gram, and the one entry that is not orthogonal.</strong> The fifteen are pairwise orthogonal in the trace form except one entry,
+$$
+\operatorname{tr}(d_2d_3)=+1,
+$$
+<strong>which is the array form of the statement that a colour basis is a choice and the algebra is not.</strong> The six weak arrays are not orthogonal to the fifteen, and cannot be: they are sums of them. Their overlap is exactly the two planes they are made of,
+$$
+\operatorname{tr}\bigl(T^{L}_{a}A_{ta}\bigr)=1,\qquad \operatorname{tr}\bigl(T^{L}_{a}A_{bc}\bigr)=\epsilon_{abc},
+$$
+with $\operatorname{tr}(T^{L}_{a}T^{L}_{b})=-\delta_{ab}$ and $\operatorname{tr}(T^{L}_{a}T^{R}_{b})=0$. <strong>The $\epsilon$ in the second is the same $\epsilon$ as above, and it is the orientation of the pair $(b,c)$ and not a sign of the algebra.</strong></p>
+<h3 id="the-grid-and-the-boson-in-each-cell">The Grid, and the Boson in Each Cell</h3>
+<p><strong>The grid is $4\times4$, rows from and columns to, cell $(i,j)$ moving index $j$ into index $i$.</strong> Each cell carries a name; the pair of mirrored cells holds the two amplitudes of one plane, and therefore two particles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$t$ lepton</th>
+<th>$x$ red</th>
+<th>$y$ green</th>
+<th>$z$ blue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>$t$ lepton</strong></td>
+<td>$B'$</td>
+<td>$\bar X^{r}$</td>
+<td>$\bar X^{g}$</td>
+<td>$\bar X^{b}$</td>
+</tr>
+<tr>
+<td><strong>$x$ red</strong></td>
+<td>$X^{r}$</td>
+<td>$T^{c}_{3}$</td>
+<td>$g_{1}$</td>
+<td>$g_{4}$</td>
+</tr>
+<tr>
+<td><strong>$y$ green</strong></td>
+<td>$X^{g}$</td>
+<td>$g_{2}$</td>
+<td>$T^{c}_{8}$</td>
+<td>$g_{6}$</td>
+</tr>
+<tr>
+<td><strong>$z$ blue</strong></td>
+<td>$X^{b}$</td>
+<td>$g_{5}$</td>
+<td>$g_{7}$</td>
+<td>trace, not a generator</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The blocks, and the count of each.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>cells</th>
+<th>arrays</th>
+<th>bosons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the $t$ row and column, off the corner</td>
+<td>$6$</td>
+<td>$A_{ta}$, $iS_{ta}$</td>
+<td>the leptoquark sextet $X^{a}$, $\bar X^{a}$</td>
+</tr>
+<tr>
+<td>the $3\times3$ colour block, off the diagonal</td>
+<td>$6$</td>
+<td>$A_{bc}$, $iS_{bc}$</td>
+<td>six gluons, two per plane</td>
+</tr>
+<tr>
+<td>the colour diagonal</td>
+<td>$3$ cells, $2$ generators</td>
+<td>$d_2,d_3$</td>
+<td>$T^{c}_{3}$, $T^{c}_{8}$</td>
+</tr>
+<tr>
+<td>the corner</td>
+<td>$1$</td>
+<td>$iD$</td>
+<td>$B'$, the $B-L$ boson</td>
+</tr>
+<tr>
+<td>not on the grid</td>
+<td>—</td>
+<td>$T^{L}_{a}$</td>
+<td>$W^{\pm}_{L}$, $W^{3}_{L}$</td>
+</tr>
+<tr>
+<td>not on the grid</td>
+<td>—</td>
+<td>$T^{R}_{a}$</td>
+<td>$W^{\pm}_{R}$, $W^{3}_{R}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two counts of the frame's decomposition.</strong>
+$$
+\underbrace{6}_{\text{leptoquarks}}+\underbrace{8}_{\text{gluons}}+\underbrace{1}_{B-L}=15,
+\qquad
+\underbrace{6}_{\text{mixed cells}}+\underbrace{9}_{3\times3}+\underbrace{1}_{(t,t)}=16 .
+$$</p>
+<p><strong>One array per generator, one boson per array.</strong> The identification, with the cells each array moves and the mass each boson gets at tree level.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>array</th>
+<th>the cells it moves</th>
+<th>the boson</th>
+<th>mass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{tx}$, $iS_{tx}$</td>
+<td>$(t,x)$ and $(x,t)$</td>
+<td>$X^{r}$ and $\bar X^{r}$, one per amplitude</td>
+<td>$32v^{2}$</td>
+</tr>
+<tr>
+<td>$A_{ty}$, $iS_{ty}$</td>
+<td>$(t,y)$ and $(y,t)$</td>
+<td>$X^{g}$ and $\bar X^{g}$</td>
+<td>$32v^{2}$</td>
+</tr>
+<tr>
+<td>$A_{tz}$, $iS_{tz}$</td>
+<td>$(t,z)$ and $(z,t)$</td>
+<td>$X^{b}$ and $\bar X^{b}$</td>
+<td>$32v^{2}$</td>
+</tr>
+<tr>
+<td>$A_{xy}$, $iS_{xy}$</td>
+<td>$(x,y)$ and $(y,x)$</td>
+<td>the gluon pair $g_{1}$, $g_{2}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$A_{xz}$, $iS_{xz}$</td>
+<td>$(x,z)$ and $(z,x)$</td>
+<td>the gluon pair $g_{4}$, $g_{5}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$A_{yz}$, $iS_{yz}$</td>
+<td>$(y,z)$ and $(z,y)$</td>
+<td>the gluon pair $g_{6}$, $g_{7}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$d_2$, $d_3$</td>
+<td>the colour diagonal</td>
+<td>$T^{c}_{3}$, $T^{c}_{8}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>$(t,t)$</td>
+<td>$B'$</td>
+<td>$0$ at the first breaking; an ingredient of $\gamma$, $Z$, $Z_R$</td>
+</tr>
+<tr>
+<td>$T^{L}_{x}$, $T^{L}_{y}$</td>
+<td>four cells, $\{t,x\}\cup\{y,z\}$ and $\{t,y\}\cup\{x,z\}$</td>
+<td>$W^{+}_{L}$, $W^{-}_{L}$</td>
+<td>$0$ until $v$, then $M_W$</td>
+</tr>
+<tr>
+<td>$T^{L}_{z}$</td>
+<td>the same four cells, $\{t,z\}\cup\{x,y\}$</td>
+<td>$W^{3}_{L}$</td>
+<td>$0$ until $v$; mixes into $\gamma$, $Z$</td>
+</tr>
+<tr>
+<td>$T^{R}_{x}$, $T^{R}_{y}$</td>
+<td>the same four cells</td>
+<td>$W^{+}_{R}$, $W^{-}_{R}$</td>
+<td>$0$ until $v_R$, then $M_{W_R}$</td>
+</tr>
+<tr>
+<td>$T^{R}_{z}$</td>
+<td>the same four cells</td>
+<td>$W^{3}_{R}$</td>
+<td>mixes into $\gamma$, $Z$, $Z_R$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two conventions live in that table, and both are named.</strong> <strong>Which of a plane's two amplitudes carries which of the pair's two names is a choice</strong> — the two names of a mirrored pair could be exchanged without changing a number. <strong>Which of $T^{L}_{x},T^{L}_{y},T^{L}_{z}$ is called $W^{3}_{L}$ is the choice of Cartan</strong>, and the same for the right triple. <strong>And the real and imaginary amplitudes of one plane are the two components of one complex field</strong>, so calling $A_{tx}$ the particle and $iS_{tx}$ the antiparticle is the $i$ convention and not a physical distinction — the bosonic form of the chirality declaration, stated here once and not used again. <strong>What is not a choice is the count</strong>: one array per generator, two amplitudes per plane, one boson per amplitude.</p>
+<p><strong>Nine massless and twelve massive is the end of the chain, not the first step.</strong> At the first breaking the massive set is the sextet alone; the other six are $W^{\pm}_{L}$, $W^{\pm}_{R}$, $Z$ and $Z_R$, and they come later. The two ways of counting $21$ are therefore
+$$
+\underbrace{8+1}_{9\ \text{massless}}+\underbrace{6+2+2+1+1}_{12\ \text{massive}}=21,
+$$
+with the photon massless for a second reason, a null direction of a $3\times3$ matrix rather than an unbroken stabiliser. <a href="classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons</a> has the ledger; <a href="the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain</a> has the stabilisers.</p>
+<h3 id="the-mass-and-the-one-difference-that-decides-it">The Mass, and the One Difference That Decides It</h3>
+<p><strong>The scalar that breaks $\mathrm{SU}(4)$ takes its value along the lepton line</strong>, $\Phi_0=vD$ with $D=\operatorname{diag}(-3,1,1,1)$, and the adjoint mass matrix of the fifteen is
+$$
+M^{2}_{XY}=\operatorname{tr}\bigl([X,\Phi_0]^{\dagger}[Y,\Phi_0]\bigr).
+$$
+<strong>In the physics basis it is diagonal, with one number per plane.</strong>
+$$
+M^{2}=2v^{2}\bigl(\lambda_j-\lambda_k\bigr)^{2}\ \text{ on a plane }\{j,k\},\qquad \lambda=\operatorname{eig}(D),
+$$
+<strong>which is one display.</strong>
+$$
+M^{2}=\operatorname{diag}\bigl(\underbrace{32v^{2},\dots,32v^{2}}_{6},\underbrace{0,\dots,0}_{9}\bigr).
+$$</p>
+<p><strong>Read $32$ off the eigenvalues.</strong> $32=2\times4^{2}$, and $4=1-(-3)$ is a colour eigenvalue minus the lepton eigenvalue. <strong>Colour is unbroken because $D$ is a multiple of the identity on the colour triple</strong>, and the corner is untouched because $[iD,D]=0$; the nine zeros are those two facts and nothing else.</p>
+<p><strong>The matrix has its own article.</strong> <a href="the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html">The Adjoint Mass Matrix of the Fifteen</a> computes all $225$ entries, states the commutator lemma that produces them, names the nine-dimensional kernel as $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, shows the same operator in the maths base, and says why a recomputation of $W_L$ on the carrier gives $8v^{2}$ and not a mass.</p>
+<h3 id="three-things-the-arrays-do-not-do">Three Things the Arrays Do Not Do</h3>
+<p><strong>They do not boost.</strong> No exponential of the twenty-one is a Lorentz boost. The generator of the boost in a plane is the Hermitian $-i$ times the cell, and it is not in the algebra; <a href="the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Twenty-One Generators</a> proves it three ways.</p>
+<p><strong>They do not identify the carrier with spacetime.</strong> The quartet is a formal copy of the carrier, and a rotor of its three-space is a rotor of that three-space. The theorem and its consequence are in <a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model</a>, §<em>The Carrier Is a Copy</em>.</p>
+<p><strong>They do not fix a coupling.</strong> All three gauge couplings of the model are symbolic, so the numbers in the mass column are coefficients of $v^{2}$ and not predictions in kilograms. <a href="../articles_internal/the-coupling-sector-of-the-four-colours-model.html">The Coupling Sector</a> records what the model does and does not supply.</p>
+<h2 id="the-checks">The Checks</h2>
+<p>Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet ordered $(t,x,y,z)$ and the product fixed by $\vec e_x\vec e_y=\vec e_z$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arrays displayed</td>
+<td>$21$, all four-row</td>
+</tr>
+<tr>
+<td>anti-Hermitian, traceless</td>
+<td>$21/21$, $21/21$</td>
+</tr>
+<tr>
+<td>distinct arrays</td>
+<td>$21$</td>
+</tr>
+<tr>
+<td>rank over $\mathbb{Q}(i)$ of the twenty-one / of the fifteen</td>
+<td>$15$ / $15$</td>
+</tr>
+<tr>
+<td>$\ell_a^{2}=r_a^{2}=-\mathrm I_4$</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>$\ell_x\ell_y=\ell_z$ / $r_xr_y=-r_z$</td>
+<td>$3/3$ / $3/3$</td>
+</tr>
+<tr>
+<td>$[\ell_a,\ell_b]=2\epsilon_{abc}\ell_c$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>$[T^{L}_{a},T^{L}_{b}]=\epsilon_{abc}T^{L}_{c}$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>$[T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}T^{R}_{c}$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>$[T^{L}_{a},T^{R}_{b}]=0$</td>
+<td>$9/9$ exact</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(T^{L})^{2}=\operatorname{tr}(T^{R})^{2}=-1$</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>spectrum of each weak array</td>
+<td>$\pm\tfrac i2$, twice</td>
+</tr>
+<tr>
+<td>$T^{L}_{a}-T^{R}_{a}$ supported on $2$ cells</td>
+<td>$3/3$</td>
+</tr>
+<tr>
+<td>star eigenvalue $+1$ (left) / $-1$ (right)</td>
+<td>$3/3$ / $3/3$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(W^{\mathsf T}W')=4\delta$</td>
+<td>$256/256$</td>
+</tr>
+<tr>
+<td>one scalar index $\Rightarrow$ antisymmetric / two $\Rightarrow$ symmetric</td>
+<td>$6/6$ / $9/9$</td>
+</tr>
+<tr>
+<td>only $W_{tt}$ has a trace</td>
+<td>$16/16$</td>
+</tr>
+<tr>
+<td>half-sum and half-difference one plane each</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>the signs of the pair table</td>
+<td>$6/6$ exact</td>
+</tr>
+<tr>
+<td>$A_{ta}=-(T^{L}_{a}+T^{R}_{a})$, $A_{bc}=-\epsilon_{abc}(T^{L}_{a}-T^{R}_{a})$</td>
+<td>$6/6$ exact</td>
+</tr>
+<tr>
+<td>inversion of $T^{L}$, $T^{R}$ from $A_{ta}$, $A_{bc}$, with $\epsilon_{abc}$</td>
+<td>$6/6$ exact</td>
+</tr>
+<tr>
+<td>$iN_{xx}+iN_{yy}+iN_{zz}=iD$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(X^{\dagger}X)$ of the fifteen</td>
+<td>$2$ on twelve, $12$ on $iD$</td>
+</tr>
+<tr>
+<td>Gram of the fifteen off-diagonal</td>
+<td>one entry, $+1$</td>
+</tr>
+<tr>
+<td>eight colour generators fix $e_t$ / six mixed move it</td>
+<td>$8/8$ / $6/6$</td>
+</tr>
+<tr>
+<td>eight colour generators closed under the bracket</td>
+<td>$64/64$</td>
+</tr>
+<tr>
+<td>$M^{2}$ of the fifteen</td>
+<td>$32v^{2}$ on the six mixed planes, $0$ on the nine, off-diagonals $0$</td>
+</tr>
+<tr>
+<td>$\exp(\theta A_{tx})$: rotation, $e_t\mapsto(\cos\theta,-\sin\theta,0,0)$</td>
+<td>exact; $0.4$ gives $(0.921061,-0.389418,0,0)$</td>
+</tr>
+<tr>
+<td>$\det\exp(0.7X)=1$ and unitary</td>
+<td>$21/21$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The twenty-one generators are twenty-one four-row axis-free arrays, and the article prints them in the order they are made.</strong> The six weak arrays are half the raw arrays $\ell_a$, $r_a$; the fifteen are the sixteen words minus the trace word, with $i$ on the nine symmetric ones, and then the six pairs replaced by half-sum and half-difference.</p>
+<p><strong>The left and right triples differ by one sign on two entries per array</strong>, they commute because the algebra is associative, and their brackets carry opposite signs because right multiplication is an anti-homomorphism. <strong>As two-forms they are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$</strong>, and the six real planes of $\mathfrak{su}(4)$ are their sums and differences: $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-\epsilon_{abc}(T^{L}_{a}-T^{R}_{a})$. Twenty-one arrays, fifteen directions.</p>
+<p><strong>Every property in Part III is one number.</strong> Two cells or four; $2$, $12$ or $1$ under $\operatorname{tr}(X^{\dagger}X)$; spectrum $0,0,\pm i$ or $\pm\tfrac i2$ twice; a real rotation or a complex one. <strong>And every array is one boson</strong>: six leptoquarks, eight gluons, $B'$, and the six weak directions that become $W^{\pm}$, $Z$, $\gamma$, $W^{\pm}_{R}$ and $Z_R$. <strong>The mass is $2v^{2}$ times the square of the difference of two eigenvalues of $D$</strong>, which is $32v^{2}$ across the lepton line and zero across anything colour, and that single difference is the whole of the nine-and-twelve split at the first breaking.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the base of the carrier, $\vec e_x\vec e_y=\vec e_z$ cyclically</td>
+</tr>
+<tr>
+<td>$L_{\mathrm{axf}},R_{\mathrm{axf}}$</td>
+<td>arrays of left and right multiplication, columns equal to products</td>
+</tr>
+<tr>
+<td>$\ell_a,r_a$</td>
+<td>the six raw arrays $L_{\mathrm{axf}}(\vec e_a)$, $R_{\mathrm{axf}}(\vec e_a)$</td>
+</tr>
+<tr>
+<td>$E_{jk}$</td>
+<td>the matrix unit in the order $(t,x,y,z)$</td>
+</tr>
+<tr>
+<td>$A_{jk}=E_{jk}-E_{kj}$</td>
+<td>the real generator of the plane $\{j,k\}$, written $j&lt;k$</td>
+</tr>
+<tr>
+<td>$iS_{jk}=i(E_{jk}+E_{kj})$</td>
+<td>the imaginary generator of the same plane</td>
+</tr>
+<tr>
+<td>$W_{\mu\nu}=\ell_\mu r_\nu$</td>
+<td>a word, a signed permutation, $\operatorname{tr}(W^{\mathsf T}W')=4\delta$</td>
+</tr>
+<tr>
+<td>$N_{jk}=\ell_jr_k$</td>
+<td>the nine vector-vector words</td>
+</tr>
+<tr>
+<td>$D=\operatorname{diag}(-3,1,1,1)$</td>
+<td>the corner's diagonal, with $B-L=\tfrac13D$</td>
+</tr>
+<tr>
+<td>$iD,d_2,d_3$</td>
+<td>the three diagonal generators</td>
+</tr>
+<tr>
+<td>$T^{L}_{a}=\tfrac12\ell_a$</td>
+<td>the three generators of $\mathfrak{su}(2)_L$</td>
+</tr>
+<tr>
+<td>$T^{R}_{a}=\tfrac12r_a$</td>
+<td>the three generators of $\mathfrak{su}(2)_R$</td>
+</tr>
+<tr>
+<td>$P^{\pm}_{\mu\nu}$</td>
+<td>half-sum and half-difference of a pair of words</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_internal/structures/structure-SU4-basis-construction.html">Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices</a>. The three steps of Part II in full, with the word table and the theorem on why the physics base is the one a diagonal mass matrix forces.</li>
+<li><a href="../articles_internal/structures/structure-SU4-basis-comparison.html">Two Bases of $\mathfrak{su}(4)$</a>. The change of basis between the maths fifteen and the physics fifteen, in both directions, with the composition checked to the identity.</li>
+<li><a href="the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html">The Adjoint Mass Matrix of the Fifteen</a>. The mass matrix of Part III in full: all $225$ entries, the commutator lemma, the nine-dimensional kernel, both bases, and the $8v^{2}$ artefact.</li>
+<li><a href="the-axf-matrices-axis-free-integer-entries.html">The AXF Matrices: Axis-Free, Integer Entries</a>. The frame, the signed permutations and the ten properties.</li>
+<li><a href="../articles_internal/the-twenty-one-generators-in-the-axis-free-frame.html">The Twenty-One Generators in the Axis-Free Frame</a>. The arrays of $L_{\vec e_a}$ and $R_{\vec e_a}$, their word support and the six relations.</li>
+<li><a href="../articles_maths/m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a> and <a href="../articles_maths/m2c-defining-representation.html">$M_2(\mathbb{C})$ Defining Representation</a>. The four-row and two-row frames.</li>
+<li><a href="../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a>. The fifteen in the operator basis, numbered $G_1$ to $G_{15}$.</li>
+<li><a href="the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Twenty-One Generators</a>. What each array does when exponentiated, and why no boost is in the group.</li>
+<li><a href="the-commutation-table-of-the-twenty-one-generators-441-entries-164-nonzero-and-six-rules.html">The Commutation Table of the Twenty-One Generators</a>. Every bracket of every array with every other, printed block by block, with the six rules that produce the table.</li>
+<li><a href="classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators</a>. The grid, the neutral sector and the ledger of the spectrum.</li>
+<li><a href="the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales</a>. The three breakings that turn the array labels into masses.</li>
+<li><a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. The declaration, the carrier, and why $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R=\exp L(\mathfrak k)\times\exp R(\mathfrak k)$.</li>
+<li>W. Fulton and J. Harris, <em>Representation Theory: A First Course</em>, Springer, 1991 — one-sided actions, the anti-homomorphism of the right action, and why the two commute.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

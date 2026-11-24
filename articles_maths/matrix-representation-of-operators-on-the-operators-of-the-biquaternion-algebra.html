@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Representation of Operators on the Operators of the Biquaternion Algebra — Biquaternion Universe</title>
+  <meta name="description" content="The question. The article Axis-Free Representation: Operators assigns to every operator on the biquaternion algebra a array, and sorts the operators into…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="matrix-representation-of-operators-on-the-operators-of-the-biquaternion-algebra"><strong>Matrix Representation of Operators on the Operators of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The article <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em> assigns to every operator on the biquaternion algebra a $4\times4$ array, and sorts the operators into the general endomorphisms, the two one-sided copies and the two-sided products. This article runs the same sorting one level higher. An operator on the operator space is an element of $\operatorname{End}(\operatorname{End}(\mathbb{B}))$, it receives a $16\times16$ array in the sixteen words, and the three levels are read side by side.</p>
+<p><strong>The answer in one line.</strong> The sixteen words are an orthogonal basis of the operator space; an operator on that space is a $16\times16$ array; a two-sided one is the Kronecker product of two $4\times4$ arrays; the derivation $[K,\cdot]$ is the Kronecker difference of one array with itself; and the fifteen generators of $\mathfrak{su}(4)$ become fifteen arrays of order sixteen with the same split, the same grading and the same rotor.</p>
+<p><strong>The three levels.</strong> The three levels are the elements, the operators on them and the operators on the operators.</p>
+<ul>
+<li>At the level of the elements an array is a $4\times4$ matrix of a multiplication, and the sixteen words are themselves such arrays.</li>
+<li>At the level of the operators an array is a $4\times4$ matrix of an endomorphism of $\mathbb{B}$, and the space has sixteen complex dimensions.</li>
+<li>At the level of the operators on the operators an array is a $16\times16$ matrix of an endomorphism of that sixteen-dimensional space, and the space has two hundred and fifty-six complex dimensions.</li>
+</ul>
+<p><strong>What the article proves.</strong> Every operator on the operator space is a sum of at most sixteen two-sided products; the product itself is a Kronecker product; the least number of products is the rank of the $16\times16$ array; and the rank of the operator as a map is the product of the two ranks of its factors.</p>
+<p><strong>Boundaries.</strong> The level below is <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em>. The same fifteen generators read as operators rather than as arrays are <em>The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$</em>, and the same fifteen read at the level of the algebra are <em>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</em>; §<em>The Generators in the Axis-Free Matrices $L$ and $R$</em> prints the six axis-free matrices $\ell_k$, $r_k$ whole and the nine products $iN_{jk}$, both bases being printed there, and §<em>The Fifteen as Arrays of Order Sixteen</em> restates the second of the two articles in the array language. The abstract two-sided family is <em>The Two-Sided Operators and the Segre Cone</em>, the length is <em>The Length and the Two Ranks</em>, and the algebra acting on itself is <em>$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation</em>. The Hermitian pair is Part V and is not treated here.</p>
+<p><strong>Conventions.</strong> The basis of the algebra is
+$$
+\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z),
+$$
+with $e_t$ the unit and
+$$
+\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t,\qquad
+\vec e_x\vec e_y=\vec e_z,\quad
+\vec e_y\vec e_z=\vec e_x,\quad
+\vec e_z\vec e_x=\vec e_y,
+$$
+and the reverse products negated. Write $\mu,\nu,\rho,\sigma$ for the four indices and $L_\mu:=L_{\mathrm{axf},e_\mu}$, $R_\nu:=R_{\mathrm{axf},e_\nu}$ for the <strong>axis-free matrices</strong> of left and right multiplication in the basis $\mathcal{E}$, so that $L_\mu$ is the matrix of $X\mapsto e_\mu X$ and $R_\nu$ that of $X\mapsto Xe_\nu$. The short forms $\ell_k:=L_{\mathrm{axf},\vec e_k}$ and $r_k:=R_{\mathrm{axf},\vec e_k}$ are used for the six vector ones. The <strong>words</strong> are
+$$
+W_{\mu\nu}:=L_\mu R_\nu=T_{e_\mu,e_\nu},\qquad W_{\mu\nu}(X)=e_\mu Xe_\nu,
+$$
+sixteen of them, of order four. The matrix units of order four are $E_{ij}$, with $i,j\in\{1,2,3,4\}$ standing for $t,x,y,z$ in that order. The form on the operator space is
+$$
+\langle S,T\rangle=\operatorname{tr}\bigl(S^{*}T\bigr),
+$$
+and the form on the space of operators on operators is
+$$
+\langle\Phi,\Psi\rangle_{\mathcal{A}}=\operatorname{tr}\bigl(\Phi^{*}\Psi\bigr),
+$$
+with the adjoint taken with respect to the first form. The complex dimension is written $\dim_{\mathbb{C}}$, the rank of a matrix $\operatorname{rank}$, and the spectrum $\operatorname{spec}$.</p>
+<h2 id="the-ladder-of-levels">The Ladder of Levels</h2>
+<p><strong>The three spaces.</strong> The algebra $\mathbb{B}$ has complex dimension four. Its endomorphism algebra $V:=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ has complex dimension sixteen. The endomorphism algebra of that, $\mathcal{A}:=\operatorname{End}_{\mathbb{C}}(V)$, has complex dimension two hundred and fifty-six.</p>
+<p><strong>The table.</strong> The three levels differ in the object, in the dimension and in the order of the array that represents a member.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>level</th>
+<th>the object</th>
+<th>$\dim_{\mathbb{C}}$</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>the array</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>elements</td>
+<td>an element $Q$ of $\mathbb{B}$</td>
+<td>$4$</td>
+<td>$8$</td>
+<td>none; the element is a column</td>
+</tr>
+<tr>
+<td>operators</td>
+<td>$S\in V$</td>
+<td>$16$</td>
+<td>$32$</td>
+<td>$4\times4$ in the words $L_\mu$, $R_\nu$</td>
+</tr>
+<tr>
+<td>operators on operators</td>
+<td>$\Phi\in\mathcal{A}$</td>
+<td>$256$</td>
+<td>$512$</td>
+<td>$16\times16$ in the sixteen words $W_{\mu\nu}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the third level adds.</strong> Two things, and nothing else. The first is size: an array of order sixteen has two hundred and fifty-six entries, and the product, the trace, the determinant and the spectrum of a two-sided operator follow the rules of the Kronecker product. The second is that the carrier now has an algebra structure of its own, so the operators on it include the regular representation, the derivations and the conjugations, and those three families have no counterpart at the level of the elements.</p>
+<p><strong>The uniformity.</strong> The construction is one construction. A basis of a space of dimension $n$ gives an array of order $n$ for every operator on that space: at the level below the space is $\mathbb{B}$, of dimension four, and the arrays are of order four; at this level the space is $V$, of dimension sixteen, and the arrays are of order sixteen.</p>
+<h2 id="the-carrier-and-its-basis">The Carrier and Its Basis</h2>
+<p><strong>The carrier.</strong> The carrier of the derivation is the operator space $V=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. Its elements are the operators $S$, and they are the objects that the fifteen generators of $\mathfrak{su}(4)$ turn.</p>
+<p><strong>Proposition (the sixteen words are an orthogonal basis).</strong> The words $W_{\mu\nu}$ are a basis of $V$, and
+$$
+\langle W_{\mu\nu},W_{\rho\sigma}\rangle=\operatorname{tr}\bigl(W_{\mu\nu}^{\mathsf T}W_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
+$$</p>
+<p><em>Proof.</em> Two words whose nonzero positions differ are orthogonal, since no position carries two nonzero entries of the two, so every term of the trace vanishes. The sixteen words fall into four groups of four, one group for each possible support: the diagonal, and the three pairings of the four indices into two pairs. Within a group the four words differ only in the signs of the four positions, and the four sign vectors are pairwise orthogonal, which a check of the four groups settles. So distinct words are orthogonal, each word has norm four because it has four entries $\pm1$, and the sixteen independent elements of a space of dimension sixteen are a basis.</p>
+<p><strong>Definition (the array).</strong> The <strong>array</strong> of an operator $\Phi$ on the operator space is the $16\times16$ matrix of its values on the words,
+$$
+[\Phi]_{(\mu\nu),(\rho\sigma)}=\tfrac14\operatorname{tr}\bigl(W_{\mu\nu}^{\mathsf T}\,\Phi(W_{\rho\sigma})\bigr),
+$$
+so that $\Phi(W_{\rho\sigma})=\sum_{\mu\nu}[\Phi]_{(\mu\nu),(\rho\sigma)}W_{\mu\nu}$. The row index is the image and the column index the source.</p>
+<p><strong>The reading.</strong> The definition is the definition of a matrix in a basis, written with the Hilbert–Schmidt form because the words are orthogonal but not of unit norm. The factor $\tfrac14$ is the square of the norm of a word.</p>
+<p><strong>Proposition (the words multiply to words up to sign).</strong> For two words,
+$$
+W_{\mu\nu}W_{\rho\sigma}=\pm\,W_{\mu\rho,\,\nu\sigma},
+$$
+where $\mu\rho$ and $\nu\sigma$ are the products of the corresponding units, taken up to the sign of the multiplication table.</p>
+<p><em>Proof.</em> The left and the right multiplications commute, so $W_{\mu\nu}W_{\rho\sigma}=L_\mu L_\rho R_\nu R_\sigma$; the products of two units are units up to sign, by the multiplication table of $\mathbb{B}$.</p>
+<p><strong>Corollary (the set of the words and their negatives is closed).</strong> The product of any number of words is $\pm$ a word, and the identity is the word $W_{tt}=\mathrm{I}_4$.</p>
+<p><em>Proof.</em> Iterate the proposition. The identity is $L_tR_t$, and $e_te_t=e_t$.</p>
+<p><strong>The change of basis from the matrix units.</strong> The sixteen matrix units $E_{ij}$ are the second natural basis of $V$. Read the sixteen words in row-major order as the columns of a matrix $C$, so that $C=2P$ with
+$$
+P_{(\mu\nu),(ij)}=\tfrac12\,(W_{\mu\nu})_{ij}.
+$$
+The matrix $P$ is orthogonal,
+$$
+P^{\mathsf T}P=\mathrm{I}_{16},
+$$
+and it has four entries $\pm\tfrac12$ in each row and in each column.</p>
+<p><em>Proof.</em> The inner product of two columns of $P$ is $\tfrac14\operatorname{tr}(W_{\mu\nu}^{\mathsf T}W_{\rho\sigma})=\delta$, by the orthogonality of the words; a square matrix with orthonormal columns is orthogonal, and then its rows are orthonormal too, so each row has four entries $\pm\tfrac12$, since the entries are $0$ and $\pm\tfrac12$ and the row norm is one.</p>
+<p><strong>Corollary (the two arrays of one operator).</strong> For an operator $\Phi$ with array $[\Phi]_{E}$ in the matrix units and array $[\Phi]_{W}$ in the words,
+$$
+[\Phi]_{W}=C^{-1}[\Phi]_{E}\,C=P^{\mathsf T}[\Phi]_{E}P .
+$$</p>
+<p><em>Proof.</em> The columns of $C$ are the coordinates of the words in the unit basis, so the array changes by $C^{-1}(\cdot)C$. Since $C=2P$ and $P$ is orthogonal, the two scalings cancel and the expression in $P$ is the same.</p>
+<p><strong>Corollary (the invariants do not depend on the basis).</strong> The trace, the determinant, the rank and the spectrum of an operator on the operator space are those of its array in either basis.</p>
+<p><em>Proof.</em> $P$ is invertible, so the two arrays are similar.</p>
+<p><strong>The reading.</strong> The word basis is the axis-free basis of the carrier: the same sixteen signed permutations that are the operators of the level below, now used as the basis of the space in which the operators of this level are written. The matrix units are the second basis, and the two are related by the orthogonal $P$.</p>
+<h2 id="the-two-sided-operators-on-the-operator-space">The Two-Sided Operators on the Operator Space</h2>
+<p><strong>Definition.</strong> For two operators $A,B\in V$ the <strong>two-sided operator on the operator space</strong> is
+$$
+\Theta_{A,B}(S)=ASB .
+$$
+It extends the level-one operator $T_{a,b}(X)=aXb$, with the elements replaced by operators.</p>
+<p><strong>Proposition (the Kronecker form).</strong> In the matrix-unit basis of the carrier the array of $\Theta_{A,B}$ is the Kronecker product
+$$
+[\Theta_{A,B}]_{E}=A\otimes B^{\mathsf T},\qquad
+\bigl(A\otimes B^{\mathsf T}\bigr)_{(ij),(kl)}=A_{ik}B_{lj}.
+$$</p>
+<p><em>Proof.</em> Apply $\Theta_{A,B}$ to a matrix unit: $AE_{kl}B=\sum_{i,j}A_{ik}B_{lj}E_{ij}$, so the entry in row $(i,j)$ and column $(k,l)$ is $A_{ik}B_{lj}$, which is the entry of the Kronecker product.</p>
+<p><strong>Corollary (the array in the words).</strong> In the word basis,
+$$
+[\Theta_{A,B}]_{W}=P^{\mathsf T}\bigl(A\otimes B^{\mathsf T}\bigr)P .
+$$</p>
+<p><strong>Remark (the two Kronecker factors are the two axis-free families).</strong> For $A=\ell_k=L_{\mathrm{axf},\vec e_k}$ the array of the left multiplier $\Lambda_{\ell_k}$ is $\ell_k\otimes\mathrm{I}_4$, and for $B=r_k=R_{\mathrm{axf},\vec e_k}$ the array of the right multiplier $\Rho_{r_k}$ is $\mathrm{I}_4\otimes r_k^{\mathsf T}$. So the two factors of the Kronecker product are the axis-free left matrix and the transposed axis-free right matrix, and the word $W_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ acts on the operator space with the array $L_{\mathrm{axf},e_\mu}\otimes R_{\mathrm{axf},e_\nu}^{\mathsf T}$.</p>
+<p><em>Proof.</em> The preceding corollary on the change of basis.</p>
+<p><strong>Proposition (the invariants of a two-sided operator).</strong> For two operators $A$ and $B$,
+$$
+\operatorname{tr}\Theta_{A,B}=\operatorname{tr}A\,\operatorname{tr}B,\qquad
+\det\Theta_{A,B}=(\det A)^{4}(\det B)^{4},\qquad
+\operatorname{rank}\Theta_{A,B}=\operatorname{rank}A\cdot\operatorname{rank}B,
+$$
+and the spectrum of $\Theta_{A,B}$ is the sixteen products $\alpha_i\beta_j$ of the eigenvalues of $A$ and of $B$.</p>
+<p><em>Proof.</em> The eigenvalues of a Kronecker product are the pairwise products, the trace is the sum of the products of the traces, the determinant of $A\otimes C$ of order $mn$ is $(\det A)^{m}(\det C)^{n}$, and the rank of a Kronecker product is the product of the ranks. The determinant of $B^{\mathsf T}$ is that of $B$, and the spectrum of $B^{\mathsf T}$ is that of $B$.</p>
+<p><strong>Proposition (the composition law).</strong> The two-sided operators compose by
+$$
+\Theta_{A,B}\,\Theta_{C,D}=\Theta_{AC,DB},
+$$
+the reversed order in the second factor.</p>
+<p><em>Proof.</em> $\Theta_{A,B}(\Theta_{C,D}(S))=A(CSD)B=(AC)S(DB)$.</p>
+<p><strong>Corollary (the scaling and the cone).</strong> The pair $(A,B)$ has thirty-two complex parameters, the scaling $(A,B)\mapsto(\lambda A,\lambda^{-1}B)$ leaves the operator alone, and the image of the pair is a cone of complex dimension thirty-one whose projective image is the Segre product $\mathbb{P}^{15}\times\mathbb{P}^{15}$.</p>
+<p><em>Proof.</em> The scaling is read from the definition; the stabiliser is trivial at every pair of nonzero operators, so the orbits are lines and the image has dimension $32-1=31$; the projective image of the decomposable tensors of $M_4\otimes M_4$ is the product of the two projective spaces.</p>
+<p><strong>Proposition (the 256 arrays are signed permutations of order sixteen).</strong> For two words $A=W_{\alpha\beta}$ and $B=W_{\gamma\delta}$ the array $[\Theta_{A,B}]_{W}$ has exactly sixteen nonzero entries, one in each row and in each column, all of them $\pm1$.</p>
+<p><em>Proof.</em> The entry in row $(\mu\nu)$ and column $(\rho\sigma)$ is $\tfrac14\operatorname{tr}(W_{\mu\nu}^{\mathsf T}W_{\alpha\beta}W_{\rho\sigma}W_{\gamma\delta})$. The product $W_{\alpha\beta}W_{\rho\sigma}W_{\gamma\delta}$ is, up to sign, a single word, by the closure of the words; and a word pairs with itself to the trace four and with every other word to zero. So for each column $(\rho,\sigma)$ there is exactly one row, and the entry there is $\pm1$; a square matrix with one nonzero in each column has one in each row.</p>
+<p><strong>The reading.</strong> At the level below the sixteen words act on the four basis elements of the algebra, and the arrays of the units are the signed permutations of order four. At this level the same sixteen words act on the sixteen words, and the arrays of the products of two of them are the signed permutations of order sixteen. The pattern of the level is repeated with four replaced by sixteen.</p>
+<h2 id="the-one-sided-copies-and-the-regular-representation">The One-Sided Copies and the Regular Representation</h2>
+<p><strong>Definition (the left and the right copies).</strong> Write
+$$
+\Lambda_A(S)=AS,\qquad \Rho_B(S)=SB,
+$$
+so that $\Lambda_A=\Theta_{A,\mathrm{I}}$ and $\Rho_B=\Theta_{\mathrm{I},B}$.</p>
+<p><strong>Proposition (each copy is of dimension sixteen).</strong> The maps $A\mapsto\Lambda_A$ and $B\mapsto\Rho_B$ are injective, so their images are two subspaces of $\mathcal{A}$ of complex dimension sixteen.</p>
+<p><em>Proof.</em> $\Lambda_A$ applied to the identity gives $A$, so $\Lambda_A=0$ forces $A=0$; likewise $\Rho_B$ applied to the identity gives $B$.</p>
+<p><strong>Proposition (the intersection is the scalars).</strong> $\Lambda_A=\Rho_B$ exactly when $A=B=\lambda\mathrm{I}_4$.</p>
+<p><em>Proof.</em> Evaluate at the identity: $A=B$. Then $AS=SA$ for every operator $S$, so $A$ commutes with the whole matrix algebra and is a scalar.</p>
+<p><strong>Corollary (the two-sided complement is of dimension 225).</strong> The sum of the two copies has complex dimension $16+16-1=31$, and its complement in the two hundred and fifty-six has dimension $225$.</p>
+<p><em>Proof.</em> The sum of two subspaces of dimensions sixteen and sixteen with an intersection of dimension one.</p>
+<p><strong>Proposition (the splitting of the two hundred and fifty-six).</strong> Write $\mathfrak{sl}_4$ for the traceless operators, of complex dimension fifteen. Then, in the identification $\mathcal{A}=V\otimes V$ of the Kronecker form,
+$$
+\mathcal{A}=\bigl(\mathfrak{sl}_4\otimes\mathfrak{sl}_4\bigr)\oplus\bigl(\mathfrak{sl}_4\otimes\mathrm{I}\bigr)\oplus\bigl(\mathrm{I}\otimes\mathfrak{sl}_4\bigr)\oplus\bigl(\mathrm{I}\otimes\mathrm{I}\bigr),
+$$
+of dimensions $225+15+15+1$. The left copy is the sum of the second summand and the scalar line, and the right copy the sum of the third and the scalar line.</p>
+<p><em>Proof.</em> The decomposition $V=\mathfrak{sl}_4\oplus\mathbb{C}\mathrm{I}$ of a matrix algebra into its traceless part and its centre, multiplied out.</p>
+<p><strong>Corollary (which operators are genuinely two-sided).</strong> The complement of the one-sided copies is exactly the set of the two-sided operators with both factors traceless.</p>
+<p><em>Proof.</em> The trace of $A$ is the coefficient of $\mathrm{I}$ in the first factor and the trace of $B$ that in the second; the complement is the product of the two traceless parts.</p>
+<p><strong>The reading against the level below.</strong> The level below splits its sixteen as $4+4-1+9$, with the one-sided copies of dimension four and a complement of dimension nine. This level splits its two hundred and fifty-six as $16+16-1+225$, with the same shape and one number changed: nine becomes $15^{2}=225$. The complement is the square of the traceless space, so the genuinely two-sided operators are the products of two traceless ones.</p>
+<p><strong>Proposition (the double centraliser).</strong> The commutant of the left copy in $\mathcal{A}$ is the right copy, and conversely, so each family is the centraliser of the other.</p>
+<p><em>Proof.</em> Let $\Phi$ commute with every $\Lambda_A$. Then $\Phi(AS)=A\Phi(S)$ for all $A$ and $S$, and the choice $A=S$ with $S$ replaced by the identity gives $\Phi(S)=S\,\Phi(\mathrm{I})$. So $\Phi=\Rho_B$ with $B=\Phi(\mathrm{I})$. The converse is the commutation $L_AR_B=R_BL_A$.</p>
+<h2 id="the-derivations-and-the-fifteen">The Derivations and the Fifteen</h2>
+<p><strong>Definition.</strong> For an operator $K\in V$ the <strong>inner derivation</strong> is
+$$
+\mathrm{ad}_K(S)=KS-SK,
+$$
+and it is $\Lambda_K-\Rho_K$.</p>
+<p><strong>Proposition (it is a derivation and its adjoint).</strong> $\mathrm{ad}_K(ST)=\mathrm{ad}_K(S)T+S\,\mathrm{ad}_K(T)$, and $(\mathrm{ad}_K)^{*}=\mathrm{ad}_{K^{*}}$ for the form of the operator space, so $\mathrm{ad}_K$ is anti-Hermitian exactly when $K$ is.</p>
+<p><em>Proof.</em> The Leibniz rule is associativity; the adjoint is the cyclic invariance of the trace, $\operatorname{tr}((KS-SK)^{*}T)=\operatorname{tr}(S^{*}(K^{*}T-TK^{*}))$.</p>
+<p><strong>Proposition (the array).</strong> In the matrix-unit basis of the carrier the array of $\mathrm{ad}_K$ is the Kronecker difference
+$$
+[\mathrm{ad}_K]_{E}=K\otimes\mathrm{I}_4-\mathrm{I}_4\otimes K^{\mathsf T}.
+$$</p>
+<p><em>Proof.</em> The first term is the array of $\Lambda_K$ and the second that of $\Rho_K$, by the Kronecker form of the two-sided operator.</p>
+<p><strong>Corollary (the kernel, the rank and the spectrum).</strong> Let $m_1,\dots,m_r$ be the multiplicities of the distinct eigenvalues $\kappa_1,\dots,\kappa_r$ of $K$. Then the kernel of $\mathrm{ad}_K$ is the centraliser of $K$ in $V$, of complex dimension $\sum_i m_i^{2}$; the rank is $16-\sum_i m_i^{2}$; and the spectrum is the sixteen differences $\kappa_i-\kappa_j$.</p>
+<p><em>Proof.</em> $KS=SK$ exactly when $S$ preserves each eigenspace of $K$, so the centraliser is the algebra of block-diagonal operators in the eigenbasis, of dimension $\sum m_i^{2}$. The spectrum is the spectrum of a Kronecker difference, and the rank is the number of nonzero differences.</p>
+<p><strong>Proposition (the fifteen).</strong> The operators $K$ with $K^{*}=-K$ and $\operatorname{tr}K=0$ form a real vector space of dimension fifteen, and the map $K\mapsto\mathrm{ad}_K$ is injective on it.</p>
+<p><em>Proof.</em> Sixteen real parameters for an anti-Hermitian operator of order four, one equation for the trace; the kernel of the map is the scalars, and the only scalar among the traceless operators is zero.</p>
+<p><strong>Proposition (the split at order sixteen).</strong> The fifteen arrays split as six real antisymmetric and nine purely imaginary symmetric arrays of order sixteen.</p>
+<p><em>Proof.</em> For $K$ real antisymmetric, $(K\otimes\mathrm{I}-\mathrm{I}\otimes K^{\mathsf T})^{\mathsf T}=K^{\mathsf T}\otimes\mathrm{I}-\mathrm{I}\otimes K=-(K\otimes\mathrm{I}-\mathrm{I}\otimes K^{\mathsf T})$, so the array is real and antisymmetric; for $K=iS$ with $S$ real symmetric, the array is $i(S\otimes\mathrm{I}-\mathrm{I}\otimes S)$, which is imaginary and symmetric.</p>
+<p><strong>The table of the three shapes.</strong> Every array is anti-Hermitian and of trace zero. The spectrum and the rank depend on the generator.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the generator</th>
+<th>its spectrum</th>
+<th>the spectrum of its array</th>
+<th>the rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the fifteen of the words basis, $K^{2}=-\mathrm{I}_4$</td>
+<td>$i,i,-i,-i$</td>
+<td>$0^{8},(\pm2i)^{4}$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>the fourteen of the plane basis other than $iD$</td>
+<td>$0,0,\pm i$</td>
+<td>$0^{6},(\pm i)^{4},\pm2i$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>the sum $iD$</td>
+<td>$-3i,i,i,i$</td>
+<td>$0^{10},(\pm4i)^{3}$</td>
+<td>$6$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading of the table.</strong> The rank is the number of ordered pairs of positions whose eigenvalues differ, so it measures how far the generator is from a multiple of the identity. The uniform value $8$ is the value of an involution, where every eigenvalue appears twice; the value $10$ is the value of a plane array, where two eigenvalues vanish and two survive at multiplicity one; and the value $6$ is the value of $iD$, of multiplicities $1,3$, the largest degeneracy among the fifteen, which no involution reaches. The two lists of the fifteen are printed in the next section.</p>
+<p><strong>Corollary (the square of the derivation of an involution).</strong> For $K^{2}=-\mathrm{I}_4$,
+$$
+\Bigl(\tfrac12\,\mathrm{ad}_K\Bigr)^{2}=-P,
+$$
+with $P$ the projection onto the eight-dimensional image of $\mathrm{ad}_K$. So $\tfrac12\mathrm{ad}_K$ is a complex structure on the image, and the image is the orthogonal complement of the commutant.</p>
+<p><em>Proof.</em> The eigenvalues of the array are $0$ and $\pm2i$, so those of its square are $0$ and $-4$, and $\operatorname{rank}\mathrm{ad}_K=8$; a diagonalisable operator with the eigenvalues $0$ and $-4$ satisfies $(\mathrm{ad}_K)^{2}=-4P$ with $P$ the spectral projection of the nonzero part.</p>
+<p><strong>Theorem (the rotor).</strong> For $U=e^{\theta K}\in\mathrm{SU}(4)$,
+$$
+e^{\theta\,\mathrm{ad}_K}=\mathrm{Ad}_U,\qquad
+\bigl[\mathrm{Ad}_U\bigr]_{E}=U\otimes\bar U,
+$$
+and $\mathrm{Ad}_U$ is unitary for the form of the operator space, of determinant one.</p>
+<p><em>Proof.</em> The exponential of a commutator is the conjugation by the exponential; the array of the conjugation is the Kronecker product of the array with its conjugate; the eigenvalues of $U\otimes\bar U$ are the products $\upsilon_i\bar\upsilon_j$ of modulus one, and the determinant is $(\det U)^{4}(\det\bar U)^{4}=1$.</p>
+<p><strong>Proposition (the trace form on the fifteen).</strong> For two traceless operators $X$ and $Y$,
+$$
+\langle\mathrm{ad}_X,\mathrm{ad}_Y\rangle_{\mathcal{A}}=8\,\langle X,Y\rangle .
+$$</p>
+<p><em>Proof.</em> Expanding the Kronecker difference, the two diagonal terms are $4\operatorname{tr}(X^{*}Y)$ each, one from the left factors and one from the right; the two cross terms carry the factor $\operatorname{tr}X$ or $\operatorname{tr}Y$ and vanish on traceless factors. The sum is $8\operatorname{tr}(X^{*}Y)$.</p>
+<p><strong>The ladder.</strong> The counts of the level are:
+$$
+512\ \longrightarrow\ 256\ \longrightarrow\ 30\ \longrightarrow\ 15,
+$$
+five hundred and twelve real dimensions of endomorphisms of the operator space, two hundred and fifty-six of anti-Hermitian ones, thirty of derivations, and fifteen of anti-Hermitian derivations.</p>
+<p><em>Proof.</em> The space $\mathcal{A}$ of complex dimension $256$ has real dimension $512$. An anti-Hermitian operator on it is a matrix of order sixteen with $\Phi^{*}=-\Phi$: the sixteen diagonal entries are purely imaginary and the one hundred and twenty off-diagonal pairs are conjugate, so the count is $16+2\cdot120=256$. The derivations of a full matrix algebra are the inner ones, $\mathrm{ad}_K$ with $K$ of order four, of complex dimension fifteen and real dimension thirty; the anti-Hermitian ones among them are the fifteen real dimensions of $\mathfrak{su}(4)$.</p>
+<h2 id="the-generators-in-the-axis-free-matrices-math294-and-math295">The Generators in the Axis-Free Matrices $L$ and $R$</h2>
+<p><strong>What this frame is.</strong> The regular matrices of left and right multiplication in the coefficient basis, with the columns equal to the products of the basis units. No frame of $\mathbb{C}^2$ is chosen and no sign of $\sigma_k$ is fixed, so this is where the frame of this article is read. Write
+$$
+\ell_k:=L_{\mathrm{axf},\vec e_k},\qquad r_k:=R_{\mathrm{axf},\vec e_k},
+$$
+so that $\ell_k$ is the array of $X\mapsto\vec e_kX$ and $r_k$ that of $X\mapsto X\vec e_k$. The same six arrays are printed in <a href="matrix-representations-conventions.html">Matrix Representations and Conventions</a>, §<em>The Left Family</em> and §<em>The Right Family</em>, in <a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a>, §<em>The Four Left Matrices</em> and §<em>The Four Right Matrices</em>, and in <a href="the-anti-hermitian-derivations-of-m2c-as-su2.html">The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</a>, §<em>The Axis-Free Representation, $4\times4$</em>. The four articles print one and the same six arrays, entry for entry.</p>
+<p><strong>The three left matrices.</strong> Left multiplication by the three vector units, printed whole:</p>
+<p>$$
+\ell_x=L_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+\ell_y=L_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+\ell_z=L_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>The three right matrices.</strong> Right multiplication by the same three units, the same construction with the order of the factors exchanged:</p>
+<p>$$
+r_x=R_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+r_y=R_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+r_z=R_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>The six are $G_1$ to $G_6$.</strong> The first six of the fifteen generators are these six arrays, taken whole:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>generator</th>
+<th>array</th>
+<th>symmetry</th>
+<th>square</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G_1$</td>
+<td>$\ell_x=L_{\mathrm{axf},\vec e_x}$</td>
+<td>real antisymmetric</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$G_2$</td>
+<td>$\ell_y=L_{\mathrm{axf},\vec e_y}$</td>
+<td>real antisymmetric</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$G_3$</td>
+<td>$\ell_z=L_{\mathrm{axf},\vec e_z}$</td>
+<td>real antisymmetric</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$G_4$</td>
+<td>$r_x=R_{\mathrm{axf},\vec e_x}$</td>
+<td>real antisymmetric</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$G_5$</td>
+<td>$r_y=R_{\mathrm{axf},\vec e_y}$</td>
+<td>real antisymmetric</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$G_6$</td>
+<td>$r_z=R_{\mathrm{axf},\vec e_z}$</td>
+<td>real antisymmetric</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two families against each other.</strong> Each of the six is a quarter turn of two coordinate planes. They agree wherever the two laws agree, and they differ exactly where right multiplication carries a unit to the negative of where left multiplication carries it: the difference $\ell_k-r_k$ has exactly two nonzero entries, $+2$ and $-2$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\ell_x,\ell_y,\ell_z$</th>
+<th>$r_x,r_y,r_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>trace</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>determinant</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>square</td>
+<td>$-\mathrm{I}_4$</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>transpose</td>
+<td>$-\ell_k$</td>
+<td>$-r_k$</td>
+</tr>
+<tr>
+<td>the planes turned</td>
+<td>$(e_t,\vec e_x)$ with $(e_y,\vec e_z)$, cyclically</td>
+<td>the same two planes</td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The six are a basis of $\mathfrak{so}(4)$.</strong> Each is real and antisymmetric, so each lies in $\mathfrak{so}(4)$, and the six are linearly independent, so they span it: rank six in the sixteen-dimensional space. The halves $\tfrac12(\ell_k-r_k)$ and $\tfrac12(\ell_k+r_k)$ split that six as $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$.</p>
+<p><strong>The half belongs to the other article.</strong> The article on $M_2(\mathbb{C})$ takes its three generators to be $\tfrac12\ell_k$ and its three derivations to be $\tfrac12(\ell_k-r_k)$, the six halved arrays satisfying the same brackets with the structure constant $1$ instead of $2$. This article keeps the six whole and undifferenced: each of them is one of the fifteen generators at order four, and each acts here as the generator of a derivation of the operator space, whose array of order sixteen is the Kronecker difference of the next section.</p>
+<p><strong>The nine products.</strong> The nine remaining generators are $i$ times a product of one left array with one right one. Write $N_{jk}:=\ell_jr_k$; each row of $\ell_j$ carries a single entry, so each row of the product is $\pm$ one row of $r_k$.</p>
+<p>$$
+G_{7}=iN_{xx}=i\,\ell_x r_x=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix}
+$$</p>
+<p>$$
+G_{8}=iN_{xy}=i\,\ell_x r_y=\begin{pmatrix}0&amp;0&amp;0&amp;i\\0&amp;0&amp;-i&amp;0\\0&amp;-i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+G_{9}=iN_{xz}=i\,\ell_x r_z=\begin{pmatrix}0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;-i\\-i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+G_{10}=iN_{yx}=i\,\ell_y r_x=\begin{pmatrix}0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\\0&amp;-i&amp;0&amp;0\\-i&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+G_{11}=iN_{yy}=i\,\ell_y r_y=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix}
+$$</p>
+<p>$$
+G_{12}=iN_{yz}=i\,\ell_y r_z=\begin{pmatrix}0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+G_{13}=iN_{zx}=i\,\ell_z r_x=\begin{pmatrix}0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\\i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+G_{14}=iN_{zy}=i\,\ell_z r_y=\begin{pmatrix}0&amp;-i&amp;0&amp;0\\-i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+G_{15}=iN_{zz}=i\,\ell_z r_z=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\end{pmatrix}
+$$</p>
+<p><strong>One product, worked.</strong> The entries of $G_8$ follow row by row from $\ell_x$ and $r_y$. The rows of $\ell_x$ are $-e_x^{\mathsf T}$, $e_t^{\mathsf T}$, $-e_z^{\mathsf T}$, $e_y^{\mathsf T}$, so the rows of the product are
+$$
+-(0,0,0,-1),\qquad (0,0,-1,0),\qquad -(0,1,0,0),\qquad (1,0,0,0),
+$$
+which is the array at $G_8$ with the factor $i$ removed.</p>
+<p><strong>The fifteen, listed once.</strong> The fifteen traceless words are $\ell_x,\ell_y,\ell_z$, $r_x,r_y,r_z$ and the nine $iN_{jk}$, the six with one index $t$ and the nine with none:
+$$
+\ell_x,\ \ell_y,\ \ell_z,\ r_x,\ r_y,\ r_z,\quad iN_{xx},\ iN_{xy},\ iN_{xz},\ iN_{yx},\ iN_{yy},\ iN_{yz},\ iN_{zx},\ iN_{zy},\ iN_{zz}.
+$$
+The factor $i$ makes the nine anti-Hermitian, since each of the nine products is a real symmetric signed permutation. Every array of order sixteen in this article is computed from one of these fifteen by the Kronecker difference.</p>
+<p><strong>The plane basis.</strong> With the rows and the columns in the order $t,x,y,z$, the twelve off-diagonal arrays are
+$$
+A_{jk}=E_{jk}-E_{kj},\qquad iS_{jk}=i\bigl(E_{jk}+E_{kj}\bigr),
+$$
+six real antisymmetric and six imaginary symmetric, and the three diagonals are
+$$
+iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr),\qquad
+d_2=\tfrac i2\bigl(W_{yy}-W_{xx}\bigr),\qquad
+d_3=\tfrac i2\bigl(W_{zz}-W_{yy}\bigr).
+$$</p>
+<p>$$
+A_{tx}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+A_{ty}=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+A_{tz}=\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+A_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+A_{xz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+A_{yz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iS_{tx}=\begin{pmatrix}0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iS_{ty}=\begin{pmatrix}0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iS_{tz}=\begin{pmatrix}0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iS_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iS_{xz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iS_{yz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;i&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iD=\begin{pmatrix}-3i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix}
+$$</p>
+<p>$$
+d_2=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+d_3=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\end{pmatrix}
+$$</p>
+<p><strong>The two lists agree on three arrays and differ on twelve.</strong> For $(a,b,c)$ a cyclic order of $(x,y,z)$,
+$$
+\tfrac12\bigl(\ell_a+r_a\bigr)=-A_{ta},\qquad \tfrac12\bigl(\ell_a-r_a\bigr)=-A_{bc},
+$$
+so the six real arrays are the half-sum and the half-difference of the three pairs $\ell_a,r_a$. The six imaginary ones are read from the three pairs of products, for example
+$$
+\tfrac12\bigl(iN_{xy}+iN_{yx}\bigr)=-iS_{xy},\qquad
+\tfrac12\bigl(iN_{xy}-iN_{yx}\bigr)=iS_{tz}.
+$$
+The three diagonals are the three diagonal words recombined, $iD=G_7+G_{11}+G_{15}$.</p>
+<p><strong>The trace form is not the same in the two.</strong> In the words basis $\operatorname{tr}(G_a^{*}G_b)=4\delta_{ab}$. In the plane basis the square norms are $2$ on fourteen arrays and $12$ on $iD$, and $\operatorname{tr}(d_2^{*}d_3)=-1$. Every factor $4$ and every factor $8$ in this article refers to the words basis.</p>
+<p><strong>The spectra are not the same in the two.</strong> The fifteen of the words basis all square to $-\mathrm{I}_4$ and have the eigenvalues $i,i,-i,-i$; in the plane basis the fourteen arrays other than $iD$ have $0,0,\pm i$, and $iD$ has $-3i,i,i,i$. That is the source of the three shapes of the table above.</p>
+<h2 id="the-fifteen-as-arrays-of-order-sixteen">The Fifteen as Arrays of Order Sixteen</h2>
+<p><strong>What this section does.</strong> <em>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</em> states its results at the level of the algebra: fifteen generators, one involution, one spectrum, one rotor, one grading, two bases. Each of those statements is a statement about the fifteen $16\times16$ arrays of this level, and the table gives the translation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the statement at the level of the algebra</th>
+<th>the statement as arrays of order sixteen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the generators are anti-Hermitian and traceless</td>
+<td>each array is anti-Hermitian for $\langle\cdot,\cdot\rangle_{\mathcal{A}}$ and of trace zero</td>
+</tr>
+<tr>
+<td>the split $6+9$</td>
+<td>six real antisymmetric arrays, nine imaginary symmetric ones</td>
+</tr>
+<tr>
+<td>$K^{2}=-\mathrm{I}_4$ for each of the fifteen of the words basis</td>
+<td>the array spectrum is $0^{8},(\pm2i)^{4}$ and $(\tfrac12\mathrm{ad}_K)^{2}=-P$ on the image</td>
+</tr>
+<tr>
+<td>the derivation spectrum $0^{8},(\pm2i)^{4}$</td>
+<td>the sixteen differences of the eigenvalues, repeated by multiplicity</td>
+</tr>
+<tr>
+<td>the trace form $4\delta_{ab}$</td>
+<td>the form on the fifteen arrays is $8\delta_{ab}$, in the words basis</td>
+</tr>
+<tr>
+<td>the rotor $\cos\theta\,\mathrm{I}_4+\sin\theta\,K$</td>
+<td>the rotor $U\otimes\bar U$, of order sixteen, unitary and of determinant one</td>
+</tr>
+<tr>
+<td>the grading of the six and the nine</td>
+<td>the bracket of a real antisymmetric array with an imaginary symmetric one is imaginary symmetric, and so on</td>
+</tr>
+<tr>
+<td>the two bases of the fifteen</td>
+<td>two similarity classes of arrays, one for each basis of the generators</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first row, in detail.</strong> The two conditions on an operator $K$ of order four are the two conditions on its array of order sixteen. The anti-Hermitian condition is preserved because the words are an orthogonal basis: the array of the adjoint is the conjugate transpose of the array of the operator, in either basis, since $P$ is real. The trace condition is preserved because the trace of the array is the trace of the operator.</p>
+<p><strong>The second row, in detail.</strong> The split is the level-one split seen through the Kronecker difference. A real antisymmetric $K$ gives a real array, because both factors of the Kronecker difference are real; an imaginary symmetric one gives an imaginary array; and the transposition rule of the proposition above separates the two.</p>
+<p><strong>The third row, in detail.</strong> The involution $K^{2}=-\mathrm{I}_4$, which holds on the words basis, does not survive as an involution of the array: the array of the derivation squares to $-4$ on its image and to zero on the commutant. What survives is the pair of eigenvalues $0$ and $-4$, and the complex structure $\tfrac12\mathrm{ad}_K$ on the image. The spectral reading is the honest one: the derivation of an involution is not an involution, and the eight zero eigenvalues are the commutant.</p>
+<p><strong>The fourth row, in detail.</strong> The uniform spectrum of the level of the algebra is the statement that every generator has the eigenvalues $i,i,-i,-i$, and the array's spectrum is the sixteen differences of those four numbers, which is $0$ eight times and $\pm2i$ four times each. The uniformity is a property of the fifteen of the words basis; a generator of the plane basis breaks it, as the table of the three shapes records. The two statements are the same statement, read at the two levels of the two bases.</p>
+<p><strong>The fifth row, in detail.</strong> The trace form of the fifteen is $4\delta_{ab}$; the form on the corresponding arrays is $8\delta_{ab}$, by the factor of the proposition above. The factor eight is twice the four of the norm of a word: the two terms of the Kronecker difference contribute four each.</p>
+<p><strong>The sixth row, in detail.</strong> The rotor of the level of the algebra is a polynomial of degree one in $K$. The rotor of this level is the Kronecker product of that polynomial with its conjugate,
+$$
+\bigl(\cos\theta\,\mathrm{I}_4+\sin\theta\,K\bigr)\otimes\bigl(\cos\theta\,\mathrm{I}_4+\sin\theta\,\bar K\bigr),
+$$
+which is a polynomial of degree two in the Kronecker products of $K$ with itself. The compact form $\cos\theta\,\mathrm{I}_{16}+\sin\theta\,K$ is lost, exactly as the plane basis of the level below loses the compact form of the rotor.</p>
+<p><strong>The seventh row, in detail.</strong> The grading is a statement about the brackets of the generators, and it is transported to the arrays by the identity $[\mathrm{ad}_X,\mathrm{ad}_Y]=\mathrm{ad}_{[X,Y]}$. The bracket of two real antisymmetric arrays is a real antisymmetric array; the bracket of a real antisymmetric one with an imaginary symmetric one is imaginary symmetric; and the bracket of two imaginary symmetric ones is real antisymmetric. The array computation and the generator computation agree entry by entry, because the map $\mathrm{ad}$ is a Lie algebra isomorphism onto its image.</p>
+<p><strong>The eighth row, in detail.</strong> The two bases of the fifteen are two bases of the generator space, and each gives a different similarity class of arrays. The change of basis of the generators is a $15\times15$ matrix; the change of the arrays is the conjugation by the corresponding element of $\mathrm{GL}_{16}$. The invariants of the array, its spectrum and its rank, are the same in the two; the entries are not.</p>
+<p><strong>The reading of the section.</strong> The article at the level of the algebra is about fifteen matrices of order four. This level turns each of them into an operator of order sixteen, and every proposition of that article becomes a proposition about the array of order sixteen of that operator: the split into real and imaginary, the rank, the spectrum, the rotor, the form and the grading. Nothing is added to the mathematics; the arrays of order sixteen are the same fifteen objects written in the basis in which the derivations act.</p>
+<h2 id="one-operator-three-arrays">One Operator, Three Arrays</h2>
+<p><strong>The operator.</strong> The example is the derivation of the sum $iD=i(W_{xx}+W_{yy}+W_{zz})=\operatorname{diag}(-3i,i,i,i)$, the generator whose image is the six planes through the $t$ line.</p>
+<p><strong>In the matrix units.</strong> The array is the Kronecker difference, which is diagonal because $iD$ is diagonal. The sixteen entries, in row-major order with the semicolons between the four rows of the $4\times4$ grid, are
+$$
+[\mathrm{ad}_{iD}]_{E}=\operatorname{diag}\bigl(0,-4i,-4i,-4i;\ 4i,0,0,0;\ 4i,0,0,0;\ 4i,0,0,0\bigr),
+$$
+the differences $\kappa_\mu-\kappa_\nu$ of the four diagonal entries $-3i,i,i,i$.</p>
+<p><strong>In the words.</strong> The array is the diagonal one conjugated by $P$. It has twenty-four nonzero entries, all of them $\pm2i$: the twelve off-diagonal rows are the words of the six pairs, and each of those rows lands on the two words of the pair on the complementary planes.</p>
+<p><strong>In the planes.</strong> In the basis
+$$
+\mathrm{I}_4,\ A_{tx},\ iS_{tx},\ A_{ty},\ iS_{ty},\ A_{tz},\ iS_{tz},\ A_{xy},\ iS_{xy},\ A_{xz},\ iS_{xz},\ A_{yz},\ iS_{yz},\ iD,\ d_2,\ d_3
+$$
+of the carrier, the array is block diagonal, with three copies of one block and zeros elsewhere:
+$$
+[\mathrm{ad}_{iD}]_{\mathrm{plane}}=\operatorname{diag}\bigl(0,\ J,\ J,\ J,\ 0_6,\ 0_3\bigr),\qquad
+J=\begin{pmatrix}0&amp;4\\-4&amp;0\end{pmatrix}.
+$$</p>
+<p><em>Proof.</em> On the first triple of planes, $[\mathrm{iD},A_{ta}]=-4\,iS_{ta}$ and $[\mathrm{iD},iS_{ta}]=4\,A_{ta}$; on the second triple and on the three diagonals the bracket vanishes; and the identity is fixed.</p>
+<p><strong>The reading of the example.</strong> One operator, three arrays, one spectrum $\{0^{10},(\pm4i)^{3}\}$ and one rank six. The matrix-unit array displays the spectrum; the plane array displays the image, which is the three planes through $t$ and nothing else; the word array is the axis-free form, and it is the array in which the other fifteen generators are also written. A reader who wants the spectrum reads the diagonal array, a reader who wants the geometry reads the plane array, and a reader who wants the integral structure reads the array in the words.</p>
+<h2 id="the-ranks-and-the-length">The Ranks and the Length</h2>
+<p><strong>Proposition (the rank of a product operator).</strong> For two operators $A$ and $B$ of order four, the rank of $\Theta_{A,B}$ as a map of the operator space is $\operatorname{rank}A\cdot\operatorname{rank}B$, so the possible ranks are $0$ and the nine products of two numbers of $\{1,2,3,4\}$.</p>
+<p><em>Proof.</em> The rank of a Kronecker product, and the ranks of $A$ and of $B$ ranging over the five values $0,1,2,3,4$; the nonzero products are $1,2,3,4,6,8,9,12,16$.</p>
+<p><strong>The reading.</strong> At the level below an operator of the biquaternion algebra has rank four or zero, because the algebra is a division algebra, and a two-sided operator has rank four over the invertible pairs. At this level the factors are operators, whose ranks are the ten of a matrix of order four, and the rank of the product is the product. The rank stratifies the product operators into nine nonzero values, against the two of the level below.</p>
+<p><strong>Proposition (the length).</strong> Every operator on the operator space is a sum of two-sided products, and the least number of them is the rank of its $16\times16$ array. So the length takes the values $1$ to $16$ and is a property of the array alone.</p>
+<p><em>Proof.</em> An expansion $\Phi=\sum_k\Theta_{A_k,B_k}$ is an expansion of the array as $\sum_k A_k\otimes B_k^{\mathsf T}$, and the least number of terms in such an expansion of a tensor in $M_4\otimes M_4$ is the rank of the matricised tensor, which is the array itself.</p>
+<p><strong>Corollary (the two invariants measure different things).</strong> A single product has length one and rank $\operatorname{rank}A\cdot\operatorname{rank}B$, which runs over the nine nonzero values; so the length does not determine the rank. The identity has length one and rank sixteen, and a product of two projections of rank two has length one and rank four.</p>
+<p><em>Proof.</em> The first sentence is the two propositions; the identity is $\Theta_{\mathrm{I},\mathrm{I}}$ and a projection of rank two has, as a factor, the rank two.</p>
+<p><strong>The reading.</strong> The two invariants measure different things, as at the level below. The length measures the tensor and the array; the rank measures the map. The first is between one and sixteen and the second between zero and sixteen, and the two agree neither in general nor at the identity.</p>
+<h2 id="summary">Summary</h2>
+<p>The operator space $V=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ has complex dimension sixteen and the sixteen words $W_{\mu\nu}=L_\mu R_\nu$ are an orthogonal basis of it, with $\langle W_{\mu\nu},W_{\rho\sigma}\rangle=4\delta$. An operator on the operator space is an element of $\mathcal{A}=\operatorname{End}_{\mathbb{C}}(V)$ of complex dimension two hundred and fifty-six, and its array is a $16\times16$ matrix in the words. The change of basis from the matrix units is the orthogonal $P$, with $P_{(\mu\nu),(ij)}=\tfrac12(W_{\mu\nu})_{ij}$.</p>
+<p>The two-sided operator $\Theta_{A,B}(S)=ASB$ has the Kronecker array $A\otimes B^{\mathsf T}$ in the matrix units and its similarity by $P$ in the words. Its trace is $\operatorname{tr}A\operatorname{tr}B$, its determinant $(\det A)^{4}(\det B)^{4}$, its rank $\operatorname{rank}A\cdot\operatorname{rank}B$, and its spectrum the sixteen products of the eigenvalues of the two factors. The composition law is $\Theta_{A,B}\Theta_{C,D}=\Theta_{AC,DB}$; the pairs form a cone of complex dimension thirty-one; and the products of two words are the $256$ signed permutations of order sixteen.</p>
+<p>The left and the right copies are of dimension sixteen with the scalars in common, so their sum is of dimension thirty-one, and the complement of dimension $225$ is the product of the two traceless spaces. The derivation $\mathrm{ad}_K$ has the array $K\otimes\mathrm{I}_4-\mathrm{I}_4\otimes K^{\mathsf T}$, kernel the centraliser of $K$ of dimension $\sum m_i^{2}$, rank $16-\sum m_i^{2}$ and spectrum the sixteen differences; the fifteen generators of $\mathfrak{su}(4)$ give fifteen anti-Hermitian traceless arrays of order sixteen, six real antisymmetric and nine imaginary symmetric, with the ranks $8$, $10$ and $6$ of the three shapes; the rotor is $U\otimes\bar U$; and the form on the fifteen arrays is $8$ times the form on the fifteen generators in the words basis.</p>
+<p>The ladder is $512\to256\to30\to15$. Every operator on the operator space is a sum of at most sixteen two-sided products, the least number being the rank of its array, and the derivation of the sum $iD$ is one operator with three arrays, one per basis: the diagonal one of the matrix units, the twenty-four-entry one of the words, and the three-block one of the planes.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, of complex dimension four</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>the operator space $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen</td>
+</tr>
+<tr>
+<td>$\mathcal{A}$</td>
+<td>the space of operators on operators, $\operatorname{End}_{\mathbb{C}}(V)$, of complex dimension two hundred and fifty-six</td>
+</tr>
+<tr>
+<td>$L_\mu$, $R_\nu$</td>
+<td>the axis-free matrices $L_{\mathrm{axf},e_\mu}$ and $R_{\mathrm{axf},e_\nu}$ of left and right multiplication</td>
+</tr>
+<tr>
+<td>$\ell_k$, $r_k$</td>
+<td>the axis-free matrices $L_{\mathrm{axf},\vec e_k}$ and $R_{\mathrm{axf},\vec e_k}$, the first six generators, printed whole</td>
+</tr>
+<tr>
+<td>$N_{jk}$</td>
+<td>the product $\ell_jr_k$, a real symmetric signed permutation</td>
+</tr>
+<tr>
+<td>$W_{\mu\nu}$</td>
+<td>the word $L_\mu R_\nu=T_{e_\mu,e_\nu}$</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix unit of order four, $i,j$ standing for $t,x,y,z$</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>the orthogonal change of basis, $P_{(\mu\nu),(ij)}=\tfrac12(W_{\mu\nu})_{ij}$</td>
+</tr>
+<tr>
+<td>$[\Phi]_{W}$, $[\Phi]_{E}$</td>
+<td>the array of $\Phi$ in the words and in the matrix units</td>
+</tr>
+<tr>
+<td>$\Theta_{A,B}$</td>
+<td>the two-sided operator $S\mapsto ASB$</td>
+</tr>
+<tr>
+<td>$\Lambda_A$, $\Rho_B$</td>
+<td>the left and the right multipliers $S\mapsto AS$ and $S\mapsto SB$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_K$</td>
+<td>the derivation $S\mapsto KS-SK$</td>
+</tr>
+<tr>
+<td>$\langle S,T\rangle$</td>
+<td>the form $\operatorname{tr}(S^{*}T)$ on $V$</td>
+</tr>
+<tr>
+<td>$\langle\Phi,\Psi\rangle_{\mathcal{A}}$</td>
+<td>the form $\operatorname{tr}(\Phi^{*}\Psi)$ on $\mathcal{A}$</td>
+</tr>
+<tr>
+<td>$G_a$, $a=1,\dots,15$</td>
+<td>the fifteen generators in the words basis</td>
+</tr>
+<tr>
+<td>$A_{jk}$, $iS_{jk}$</td>
+<td>the twelve off-diagonal generators of the plane basis</td>
+</tr>
+<tr>
+<td>$iD$, $d_2$, $d_3$</td>
+<td>the three diagonal generators of the plane basis</td>
+</tr>
+<tr>
+<td>$K\otimes L$</td>
+<td>the Kronecker product of two matrices of order four</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_4$</td>
+<td>the traceless operators, of complex dimension fifteen</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}$, $\operatorname{spec}$</td>
+<td>the rank of a matrix, the spectrum of an operator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a>, for the level below: the one-sided copies, the sixteen products and the coefficient matrix.</li>
+<li><a href="the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a>, for the fifteen generators at the level of the algebra, the grading and the two bases.</li>
+<li><a href="the-anti-hermitian-derivations-of-the-operators-of-the-biquaternion-algebra-as-su4.html">The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$</a>, for the same fifteen read as operators on the algebra.</li>
+<li><a href="end-b-as-an-algebra-the-regular-representation.html">$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation</a>, for the two-sided products and the law $T_{a,b}T_{c,d}=T_{ac,db}$.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone.html">The Two-Sided Operators and the Segre Cone</a>, for the cone of the products and its projective image.</li>
+<li><a href="the-length-and-the-two-ranks.html">The Length and the Two Ranks</a>, for the minimal number of products at the level below.</li>
+<li><a href="matrix-representations-conventions.html">Matrix Representations and Conventions</a>, for the axis-free matrices $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$ the words are built from.</li>
+<li><a href="the-anti-hermitian-derivations-of-m2c-as-su2.html">The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</a>, for the same six axis-free matrices printed whole, in the frame that fixes no sign of $\sigma_k$, and for the halves $\tfrac12\ell_k$ and $\tfrac12(\ell_k-r_k)$ that are its generators.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

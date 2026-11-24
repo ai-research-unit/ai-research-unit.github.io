@@ -1601,7 +1601,15 @@
     <lastmod>2026-11-24</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions.html</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html</loc>
     <lastmod>2026-11-24</lastmod>
   </url>
   <url>
@@ -1609,7 +1617,15 @@
     <lastmod>2026-11-24</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-axf-matrices-of-the-twenty-one-generators.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-generators.html</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-commutation-table-of-the-twenty-one-generators-441-entries-164-nonzero-and-six-rules.html</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-21-axf-matrices-of-the-bosons-in-detail.html</loc>
     <lastmod>2026-11-24</lastmod>
   </url>
   <url>
@@ -1721,7 +1737,15 @@
     <lastmod>2026-11-24</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-adjoint-mass-matrix-as-the-square-of-the-roots-two-v-squared-double-commutator-six-planes-and-nine-zeros.html</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-mass-matrix-of-the-twenty-one-gauge-bosons-four-blocks-one-mixing-and-the-nine-zeros.html</loc>
     <lastmod>2026-11-24</lastmod>
   </url>
   <url>
@@ -9322,7 +9346,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/worked-examples-of-polar-decomposition-of-split-complex-numbers.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/relations-between-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html</loc>
@@ -9746,7 +9770,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/worked-examples-of-polar-decomposition-of-reduced-biquaternions.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/relations-between-polar-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html</loc>
@@ -10859,6 +10883,10 @@
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/end-b-as-an-algebra-the-regular-representation.html</loc>
     <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_maths/matrix-representation-of-operators-on-the-operators-of-the-biquaternion-algebra.html</loc>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-one-sided-operators-of-the-biquaternion-algebra.html</loc>

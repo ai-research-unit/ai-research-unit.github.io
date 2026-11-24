@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Five Counts of the Twenty-One: Twenty-Four Cells, Six Planes, Twenty-One Arrays, Fifteen Directions — Biquaternion Universe</title>
+  <meta name="description" content="Five different objects are called &quot;the twenty-one&quot; in this block of the corpus, and each has its own count. The counts are cells, geometric planes…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions"><strong>The Five Counts of the Twenty-One: Twenty-Four Cells, Six Planes, Twenty-One Arrays, Fifteen Directions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Five different objects are called "the twenty-one" in this block of the corpus, and each has its own count.</strong> The counts are $24$ cells, $6$ geometric planes, $21$ arrays, $21$ generator names on the declared copy against $15$ on the carrier, and $15$ directions. None of them is the others, and most of the slips in the boson articles are a slide from one to the next.</p>
+<p>The slides are easy to make because every count is arithmetically right. The grid has $16$ cells and the three grids have $24$. A four-index object has six unordered pairs. The boson ledger has $21$ entries. The algebra $\mathfrak{su}(4)$ has dimension $15$. Each number answers a different question, and a sentence that mixes two of them is wrong even when both numbers are right.</p>
+<p>This article fixes the five words, gives each one a definition, states the map from one to another, and names the article where each count is the operative one. It is a vocabulary article: it proves counts and identities and adds no physics. Where a count has a home elsewhere, the home is cited and the count is restated only as far as the map needs it.</p>
+<p>The articles it leans on are <a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model</a> for the declaration of the group, <a href="construction-of-the-axf-matrices-of-the-twenty-one-generators.html">Construction of the AXF Matrices of the Twenty-One Generators</a> for the arrays, <a href="classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons</a> for the grid, and <a href="the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html">The Adjoint Mass Matrix of the Fifteen</a> for the count that the mass spectrum uses.</p>
+<h2 id="the-cell-twenty-four-positions">The Cell: Twenty-Four Positions</h2>
+<p><strong>A cell is a position in one of the three grids.</strong> The model declares three unitary factors, of ranks $4$, $2$ and $2$, and each factor has a grid: the $4\times4$ grid of the quartet carrier, and a $2\times2$ grid for each weak doublet. The count is the sum of squares,</p>
+<p>$$
+4^{2}+2^{2}+2^{2}=16+4+4=24 .
+$$</p>
+<p><strong>A cell is a position and not a generator.</strong> The cell $(i,j)$ is the matrix unit $E_{ij}$; it is not an element of the algebra. The algebra is the traceless anti-Hermitian part, so a generator is a combination of cells: an off-diagonal generator occupies two cells, $A_{jk}=E_{jk}-E_{kj}$ or $iS_{jk}=i(E_{jk}+E_{kj})$, and a diagonal generator is a combination of diagonal cells, $iD$ being $i$ times the three colour diagonal cells minus three times the corner cell, $iD=i(N_{xx}+N_{yy}+N_{zz})-3iE_{tt}$.</p>
+<p><strong>The four diagonal cells against the three diagonal directions.</strong> The quartet grid has four diagonal cells and the algebra has three diagonal directions, because the trace is removed: the four cells span a four-dimensional space and the traceless part of it is three-dimensional. That is the arithmetic behind "remove the trace", and it is one cell and one dimension, not a coincidence.</p>
+<p><strong>The $4\times4$ grid in blocks.</strong> The grid splits by what a cell touches:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>cells</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>corner</td>
+<td>$1$</td>
+<td>$(t,t)$, the single cell that carries $B'$</td>
+</tr>
+<tr>
+<td>mixed band</td>
+<td>$6$</td>
+<td>the $t$ row and the $t$ column off the corner</td>
+</tr>
+<tr>
+<td>colour block</td>
+<td>$9$</td>
+<td>the $3\times3$ grid on $x,y,z$</td>
+</tr>
+</tbody>
+</table></div>
+<p>$1+6+9=16$. The generator count of the same three blocks is $1+6+8=15$, because the colour block has nine cells and eight traceless directions.</p>
+<p><strong>Why the cells are counted at all.</strong> The cell count is the one that says how many amplitudes a generator moves: two for an off-diagonal array, none for a diagonal one. The mass articles use "one entry per plane" and the classification uses "one name in every cell", and both are statements about cells. The generator ledger never uses $24$.</p>
+<h2 id="the-plane-six-geometric-pairs-twelve-arrays">The Plane: Six Geometric Pairs, Twelve Arrays</h2>
+<p><strong>A plane is an unordered pair of the four indices.</strong> There are</p>
+<p>$$
+\binom{4}{2}=6
+$$</p>
+<p>of them: three mixed, $\{t,x\}$, $\{t,y\}$, $\{t,z\}$, and three colour, $\{x,y\}$, $\{y,z\}$, $\{z,x\}$.</p>
+<p><strong>Each plane carries two arrays.</strong> The real array $A_{jk}=E_{jk}-E_{kj}$ and the imaginary one $iS_{jk}=i(E_{jk}+E_{kj})$ are independent, both lie in the algebra, and both are supported on the same two indices. So six planes carry twelve arrays, and $12+3=15$ counts the fifteen once the three diagonal directions are added.</p>
+<p><strong>The word "plane" is used for the array in the mass articles, and that is the one slide to know.</strong> "The six leptoquark planes" and "$32v^{2}$ on six planes" count arrays: three geometric pairs, each contributing a real and an imaginary plane. "The three colour planes" counts geometric pairs, because the colour block is discussed as a block. Both usages are arithmetically consistent; a sentence that mixes them is not. The safe form is to name the object: <em>the six mixed arrays, on three geometric planes</em>.</p>
+<p><strong>A plane is not a particle.</strong> The three mixed planes carry six leptoquark states, because each plane carries two amplitudes, $X^{\alpha}$ and $\bar X^{\alpha}$. The three colour planes carry eight gluons, because the colour block is $\mathfrak{su}(3)$ and not three directions. So "one plane, one particle" holds for the mixed band and fails for colour. <a href="classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons</a> states both fates; the count of particles is neither six nor three.</p>
+<h2 id="the-array-twenty-one-matrices-fifteen-dimensions">The Array: Twenty-One Matrices, Fifteen Dimensions</h2>
+<p><strong>An array is a $4\times4$ matrix, and the corpus prints twenty-one of them.</strong> Fifteen are the arrays of $\mathfrak{su}(4)$ — six real planes, six imaginary planes, three diagonals — and six are the weak generators $T^{L}_{a}=\tfrac12L_{e_a}$ and $T^{R}_{a}=\tfrac12R_{e_a}$.</p>
+<p><strong>The twenty-one arrays span fifteen dimensions, not twenty-one.</strong> The rank is a computation, not a convention:</p>
+<p>$$
+\operatorname{rank}\{A_{jk},iS_{jk},iD,d_2,d_3,T^{L}_{a},T^{R}_{a}\}=15 .
+$$</p>
+<p>The reason is that each weak array is a sum or a difference of two of the fifteen: $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-(T^{L}_{a}-T^{R}_{a})$ with $(a,b,c)$ cyclic. Six names, no new direction. <strong>This is why "twenty-one arrays" and "twenty-one generators" are different sentences</strong>: the first is a count of printed matrices, the second is a count of named generators on the declared copy, and neither is a dimension.</p>
+<p><strong>The trace form separates the three kinds of array.</strong> With $G^{\dagger}G$ read in the fundamental,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>array</th>
+<th>$\operatorname{tr}(G^{\dagger}G)$</th>
+<th>spectrum of $G$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{jk}$, $iS_{jk}$</td>
+<td>$2$</td>
+<td>$0,0,\pm i$</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>$12$</td>
+<td>$-3i$ and $i$ three times</td>
+</tr>
+<tr>
+<td>$d_2$, $d_3$</td>
+<td>$2$</td>
+<td>$0,0,\pm i$</td>
+</tr>
+<tr>
+<td>$T^{L}_{a}$, $T^{R}_{a}$</td>
+<td>$1$</td>
+<td>$\pm\tfrac i2$ twice</td>
+</tr>
+</tbody>
+</table></div>
+<p>The entry $12$ is arithmetic about the corner: $\operatorname{tr}(D^{2})=9+1+1+1=12$, nine from the lepton line and one from each colour line. The weak arrays carry $1$, which is the half in $T^{L}_{a}$ appearing twice — the factor that a recomputation of a weak mass on the carrier gets wrong.</p>
+<h2 id="the-generator-twenty-one-names-on-the-copy-fifteen-on-the-carrier">The Generator: Twenty-One Names on the Copy, Fifteen on the Carrier</h2>
+<p><strong>The model's gauge group is declared on a copy of the carrier, and the twenty-one is a count on that copy.</strong> <a href="the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Twenty-One Generators</a> proves the copy theorem: the physical quartet of the model is a formal copy of the algebra's four-dimensional carrier, and the copy does not inherit the Lorentz action of the carrier. On the copy the group is $\mathrm{SU}(4)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R}$, of dimension $15+3+3=21$.</p>
+<p><strong>On the carrier the six weak generators are not independent.</strong> They sit inside the fifteen, as the recombination identities above show. So a statement of the form "the twenty-one generators act on the carrier" is shorthand for "the twenty-one names, each read as an array of the fifteen". The two readings give different matrices for the same name, and that is the second slide to know.</p>
+<p><strong>Two cuts of the same fifteen.</strong> The fifteen is cut twice, and both cuts are used:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>cut</th>
+<th>parts</th>
+<th>where it is used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>by grid block</td>
+<td>$8+1+6$</td>
+<td>the classification's picture of the quartet grid</td>
+</tr>
+<tr>
+<td>by residual algebra</td>
+<td>$8+1+3+3$</td>
+<td>the breaking chain and the gauge algebras</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first is colour, corner, mixed. The second is colour, $B-L$, the two weak triples. They agree in the colour block and differ in how the six mixed arrays are grouped: as six leptoquarks, or as two triples that become the $W$'s and $Z$'s. <a href="the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Gauge Algebras of the Two Sectors</a> owns the second cut and proves the chain $8+1+3+3=15\to12\to9$.</p>
+<h2 id="the-direction-fifteen-and-two-bases">The Direction: Fifteen, and Two Bases</h2>
+<p><strong>A direction is an element of the fifteen-dimensional real space $\mathfrak{su}(4)$.</strong> A basis is a choice of fifteen arrays that span it, and the corpus uses two.</p>
+<p><strong>The maths basis</strong> is the words: the sixteen products $W_{\mu\nu}=L(e_{\mu})R(e_{\nu})$ are a basis of $M_4(\mathbb R)$; delete the one that is the identity, $W_{tt}=\mathrm I_4$, and multiply the other fifteen by $i$. Each of the fifteen has $\operatorname{tr}(G^{\dagger}G)=4$ and each moves four cells, because a word is a product of two signed permutations and has one non-zero entry in every row.</p>
+<p><strong>The physics basis</strong> is the six pairs summed and differenced, plus the three diagonals. Its arrays have $\operatorname{tr}(G^{\dagger}G)=2$ on the planes and each one moves two cells. The change of basis is the pair resolution, and <a href="construction-of-the-axf-matrices-of-the-twenty-one-generators.html">Construction of the AXF Matrices of the Twenty-One Generators</a> constructs it in three steps.</p>
+<p><strong>One direction, two arrays.</strong> $A_{tx}$ in the physics basis is $-\tfrac12(W_{tx}+W_{xt})$ in the maths basis. Both are the same direction, both are printed in the corpus, and the trace norms differ by the factor two that the halving introduces. A mass quoted "per direction" is basis-independent; a mass quoted "per array" carries the normalisation of the array.</p>
+<h2 id="the-map-between-the-counts">The Map Between the Counts</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>word</th>
+<th>count</th>
+<th>what it counts</th>
+<th>the article where it is operative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cell</td>
+<td>$24$</td>
+<td>positions in the three grids</td>
+<td>the classification's grid</td>
+</tr>
+<tr>
+<td>plane</td>
+<td>$6$</td>
+<td>unordered pairs of the four indices</td>
+<td>the classification's block picture</td>
+</tr>
+<tr>
+<td>array</td>
+<td>$21$</td>
+<td>printed $4\times4$ matrices</td>
+<td>the AXF article</td>
+</tr>
+<tr>
+<td>generator name</td>
+<td>$21$</td>
+<td>names on the declared copy</td>
+<td>the model article, the rotors</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>$15$</td>
+<td>$\dim_{\mathbb R}\mathfrak{su}(4)$</td>
+<td>the adjoint mass matrix, the rotations</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three identities that connect the columns.</strong></p>
+<p>$$
+16+4+4=24,\qquad 12+3=15,\qquad 15+3+3=21,\qquad \operatorname{rank}(\text{21 arrays})=15 .
+$$</p>
+<p><strong>The three slides that the table prevents.</strong></p>
+<ol>
+<li>Twenty-four cells are not twenty-one generators: the cells include the four diagonal positions and both halves of every off-diagonal one.</li>
+<li>Six planes are twelve arrays, not six generators: each geometric pair carries a real and an imaginary array.</li>
+<li>Twenty-one named generators are fifteen directions: the six weak names are combinations of the fifteen.</li>
+</ol>
+<h2 id="the-checks">The Checks</h2>
+<p>Twelve recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\vec e_x\vec e_y=\vec e_z$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the cell count</td>
+<td>$4^{2}+2^{2}+2^{2}$</td>
+<td>$24$</td>
+</tr>
+<tr>
+<td>the plane count</td>
+<td>$\binom{4}{2}$, mixed plus colour</td>
+<td>$6=3+3$</td>
+</tr>
+<tr>
+<td>the arrays on the planes and the diagonals</td>
+<td>$12+3$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the boson ledger</td>
+<td>$15+3+3$</td>
+<td>$21$</td>
+</tr>
+<tr>
+<td>the rank of the twenty-one arrays</td>
+<td>real rank of the $21\times32$ matrix</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the rank of the fifteen</td>
+<td>same, fifteen arrays only</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the recombination identities</td>
+<td>$A_{ta}=-(T^{L}_{a}+T^{R}_{a})$, $A_{bc}=-(T^{L}_{a}-T^{R}_{a})$, $(a,b,c)$ cyclic</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>the grid in blocks</td>
+<td>$1+6+9$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>the generator count in the same blocks</td>
+<td>$1+6+8$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the trace norms</td>
+<td>$\operatorname{tr}(G^{\dagger}G)$ for $A_{jk}$, $iD$, $T^{L}_{a}$</td>
+<td>$2$, $12$, $1$</td>
+</tr>
+<tr>
+<td>the two cuts of the fifteen</td>
+<td>$8+1+6$ and $8+1+3+3$</td>
+<td>$15$, $15$</td>
+</tr>
+<tr>
+<td>the corner</td>
+<td>$16-1$ cells minus the trace</td>
+<td>$15$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>Five counts, five objects.</strong> Twenty-four cells are positions in three grids. Six planes are unordered index pairs, carrying twelve arrays. Twenty-one arrays are printed matrices. Twenty-one generator names live on the declared copy. Fifteen directions span $\mathfrak{su}(4)$.</p>
+<p><strong>The map is four identities.</strong> $16+4+4=24$; $12+3=15$; $15+3+3=21$; and the twenty-one arrays have rank fifteen because the six weak names are sums and differences of the fifteen.</p>
+<p><strong>The three slides.</strong> Cells are not generators; planes are twice as many arrays; named generators are not directions.</p>
+<p><strong>Why it matters.</strong> Every count in the boson block of the corpus is right in its own register, and every error in that block is a sentence that changes register without saying so. The cure is to name the object: a cell, a plane, an array, a name, or a direction.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix unit, one cell</td>
+</tr>
+<tr>
+<td>$A_{jk}=E_{jk}-E_{kj}$</td>
+<td>the real array of the plane $\{j,k\}$</td>
+</tr>
+<tr>
+<td>$iS_{jk}=i(E_{jk}+E_{kj})$</td>
+<td>the imaginary array of the same plane</td>
+</tr>
+<tr>
+<td>$D=\operatorname{diag}(-3,1,1,1)$</td>
+<td>the vacuum direction, traceless, $B-L=\tfrac13D$</td>
+</tr>
+<tr>
+<td>$iD$, $d_2$, $d_3$</td>
+<td>the three diagonal directions</td>
+</tr>
+<tr>
+<td>$W_{\mu\nu}=L(e_\mu)R(e_\nu)$</td>
+<td>a word, one of the sixteen products</td>
+</tr>
+<tr>
+<td>$T^{L}_{a}=\tfrac12L_{e_a}$, $T^{R}_{a}=\tfrac12R_{e_a}$</td>
+<td>the six weak arrays</td>
+</tr>
+<tr>
+<td>cell, plane, array, name, direction</td>
+<td>the five counts, in the sense of this article</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="construction-of-the-axf-matrices-of-the-twenty-one-generators.html">Construction of the AXF Matrices of the Twenty-One Generators</a>. The twenty-one arrays printed one to a display, and the three-step construction of the physics basis from the words.</li>
+<li><a href="classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive</a>. The grid, the block picture and the ledger of the spectrum.</li>
+<li><a href="the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Twenty-One Generators in the Four Colours Left–Right Model</a>. The copy theorem, and what each of the twenty-one exponentials turns.</li>
+<li><a href="the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html">The Adjoint Mass Matrix of the Fifteen: One Number per Plane, $32v^2$ on Six and Zero on Nine</a>. The count of directions read as a mass spectrum.</li>
+<li><a href="the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Gauge Algebras of the Two Sectors</a>. The second cut of the fifteen, $8+1+3+3$, and the chain to $9$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

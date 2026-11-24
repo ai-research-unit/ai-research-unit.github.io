@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mass Matrix of the Twenty-One Gauge Bosons: Four Blocks, One Mixing, and the Nine Zeros — Biquaternion Universe</title>
+  <meta name="description" content="The twenty-one gauge directions split into four blocks, and only one of them mixes. The blocks are eight colour directions, six leptoquark directions…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-mass-matrix-of-the-twenty-one-gauge-bosons-four-blocks-one-mixing-and-the-nine-zeros"><strong>The Mass Matrix of the Twenty-One Gauge Bosons: Four Blocks, One Mixing, and the Nine Zeros</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The twenty-one gauge directions split into four blocks, and only one of them mixes.</strong> The blocks are eight colour directions, six leptoquark directions, three neutral directions and four charged ones, $8+6+3+4=21$. The first two are already settled at the first breaking, the third has no free angle, and the fourth — the pair $W^{\pm}_{L}$, $W^{\pm}_{R}$ — is the one place in the boson sector where a new angle appears.</p>
+<p><strong>The four blocks are exact and not an approximation.</strong> Each vacuum of the chain is a colour singlet with a definite electric charge, so every mass term carries the colour representation and the charge of both of its generators. Two generators of different colour or different charge therefore never mix, at any order of perturbation theory. The block structure is a statement about the quantum numbers the vacua carry, and it survives every correction that does not break colour or charge.</p>
+<p><strong>What the article computes, and what it borrows.</strong> It derives the charged block from the bidoublet's kinetic term, states its determinant and its two eigenvalues, shows that a massless charged boson needs alignment $\kappa=\kappa'$, and shows that at equal couplings the mixing is maximal. That last result is the reason the Standard Model's $W$ is a mixture of $W_L$ and $W_R$ and not either of them. The colour, leptoquark and neutral blocks are quoted with a pointer to the article that owns each: <a href="the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html">The Adjoint Mass Matrix of the Fifteen</a> for the first two and <a href="classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons</a> for the third.</p>
+<p><strong>The one sentence worth carrying away.</strong> The neutral block is blind to the ratio $\kappa'/\kappa$ and the charged block is not, so the departure from $\rho=1$ is entirely a charged-block effect:</p>
+<p>$$
+\rho=\frac{M_{W}^{2}}{M_{Z}^{2}\cos^{2}\theta_W}=1-\sin2\beta,\qquad \tan\beta=\frac{\kappa'}{\kappa},
+$$</p>
+<p>below $M_R$, at equal couplings, at tree level. That is $\rho-1=-2\kappa\kappa'/(\kappa^{2}+\kappa'^{2})$, which is the form <a href="the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html">The Scalar Sector</a> states as "proportional to $\kappa\kappa'$", with its coefficient.</p>
+<h2 id="the-four-blocks">The Four Blocks</h2>
+<p><strong>The split.</strong> The twenty-one generator names of the declared copy are sorted by what the three vacua do to them:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>generators</th>
+<th>colour</th>
+<th>charge</th>
+<th>scale at which it fills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colour</td>
+<td>$8$</td>
+<td>$\mathbf8$</td>
+<td>$0$</td>
+<td>never</td>
+</tr>
+<tr>
+<td>leptoquark</td>
+<td>$6$</td>
+<td>$\mathbf3$ and $\bar{\mathbf3}$</td>
+<td>$\pm\tfrac23$</td>
+<td>$M_C$</td>
+</tr>
+<tr>
+<td>neutral</td>
+<td>$3$</td>
+<td>$\mathbf1$</td>
+<td>$0$</td>
+<td>$M_R$ and $M_W$</td>
+</tr>
+<tr>
+<td>charged</td>
+<td>$4$</td>
+<td>$\mathbf1$</td>
+<td>$\pm1$</td>
+<td>$M_R$ and $M_W$</td>
+</tr>
+</tbody>
+</table></div>
+<p>$8+6+3+4=21$. The charged block counts four real generators because the two complex fields $W^{+}_{L}$ and $W^{+}_{R}$ carry two real components each.</p>
+<p><strong>Why the split is exact.</strong> A mass term is quadratic in two generators and linear in the vacuum that produces it. Every vacuum of the chain is a colour singlet with $Q=0$, so the mass term is invariant under colour and under electric charge, so it vanishes between two generators whose colour representations or charges differ. The blocks are the eigenspaces of (colour representation, $Q$), and no correction that preserves colour and charge can move a mass across them.</p>
+<p><strong>What the split is not.</strong> It is not a statement about the algebra: the four blocks are not subalgebras, and the charged and neutral blocks are not even inside $\mathfrak{su}(4)$ — their generators are the weak ones. The split is a statement about the vacua, and it is the reason each block can be computed on its own.</p>
+<h2 id="the-colour-block-eight-zeros">The Colour Block: Eight Zeros</h2>
+<p><strong>The eight colour directions are massless at every scale, exactly.</strong> Two reasons, and both are exact.</p>
+<p><strong>The first vacuum.</strong> $D=\operatorname{diag}(-3,1,1,1)$ is a multiple of the identity on the colour triple, so every colour generator commutes with it: the colour planes have $\lambda_j=\lambda_k$ and the two colour diagonals commute with it. A generator that commutes with the vacuum has zero mass, which is the kernel statement of <a href="the-adjoint-mass-matrix-as-the-square-of-the-roots-two-v-squared-double-commutator-six-planes-and-nine-zeros.html">The Adjoint Mass Matrix as the Square of the Roots</a>.</p>
+<p><strong>The second and third vacua.</strong> The bidoublet is a colour singlet, so its vacuum expectation value does not couple to a colour generator at all. The same holds for the $(\mathbf4,\mathbf1,\mathbf2)$ scalar, whose vacuum lies along the lepton line, and the lepton line is a colour singlet.</p>
+<p><strong>The consequence.</strong> The $8\times8$ colour block is zero, not small, and colour is unbroken at every step of the chain. This is the matrix statement of the corpus's claim that colour is a stabiliser at every scale.</p>
+<h2 id="the-leptoquark-block-six-at-math41">The Leptoquark Block: Six at $32v^{2}$</h2>
+<p><strong>The six leptoquark directions are the six planes through the lepton line, and they all take the same mass at the first breaking.</strong> In the physics basis the block is $32v^{2}$ times the identity of dimension six:</p>
+<p>$$
+M^{2}_{\text{lepto}}=32v^{2}\,\mathrm I_{6},\qquad 32=2\cdot4^{2},\qquad 4=1-(-3).
+$$</p>
+<p>The leakage is the entry-by-entry computation of <a href="the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html">The Adjoint Mass Matrix of the Fifteen</a>; the reason is the identity of <a href="the-adjoint-mass-matrix-as-the-square-of-the-roots-two-v-squared-double-commutator-six-planes-and-nine-zeros.html">The Adjoint Mass Matrix as the Square of the Roots</a>, which says that the mass on a plane is twice the square of the vacuum's eigenvalue difference across it. <strong>The six are equal because the vacuum has one lepton line and three equal colour lines</strong>, so all six differences are the same number.</p>
+<p><strong>The later breakings add nothing here.</strong> The bidoublet is colour-blind, and the leptoquarks have already left the unbroken algebra at $M_C$. The block stays $32v^{2}$ at tree level; the one-loop shift is the effective-potential article's.</p>
+<h2 id="the-neutral-block-rank-two-and-one-null-direction">The Neutral Block: Rank Two and One Null Direction</h2>
+<p><strong>Three fields, two vacuum directions, one null vector.</strong> The neutral block is spanned by $W^{3}_{L}$, $W^{3}_{R}$ and the surviving $\mathrm{SU}(4)$ Cartan $B'$, and each vacuum contributes a rank-one term: one from the $\mathrm{SU}(4)$ vacuum along $a_1=(0,\tfrac12,-\sqrt{\tfrac38})$ with weight $v_R^{2}$, and one from the bidoublet, which is the sum of its two diagonal entries' contributions.</p>
+<p><strong>The ratio $\kappa'/\kappa$ drops out, and this is the exact statement behind "the neutral block has no angle".</strong> The two neutral components of the bidoublet have $(T_{3L},T_{3R})=(+\tfrac12,-\tfrac12)$ and $(-\tfrac12,+\tfrac12)$ — the diagonal entries of a $(1,2,\bar2)$ — so their vacuum vectors are $(\tfrac12,-\tfrac12,0)\kappa$ and $(-\tfrac12,+\tfrac12,0)\kappa'$, which are <em>parallel</em>. Their two rank-one terms add to one,</p>
+<p>$$
+\kappa^{2}\,uu^{\mathsf T}+\kappa'^{2}\,uu^{\mathsf T}=(\kappa^{2}+\kappa'^{2})\,u\,u^{\mathsf T},\qquad u=\bigl(\tfrac12,-\tfrac12,0\bigr),
+$$</p>
+<p>so the bidoublet enters the neutral block through $\kappa^{2}+\kappa'^{2}=v^{2}$ alone. <strong>The neutral sector sees the size of the bidoublet's vacuum and never its direction.</strong> The coupling-weighted form of the same three-by-three is the classification article's.</p>
+<p><strong>What follows.</strong> The rank is two for every $(\kappa,\kappa')$, so there is exactly one massless neutral — the photon — and its direction is the null vector of the $3\times3$, the vector $(1,1,\sqrt{2/3})$ in the $(T_{3L},T_{3R},T^{15})$ normalisation. The direction is <a href="the-photon-as-the-unbroken-mixture.html">The Photon as the Unbroken Mixture</a>'s; at $v_R=10v$ the two massive eigenvalues are $0.3994$ and $62.6$ in units of $g^{2}v^{2}$ — the numbers of the classification article — and they do not move when $\kappa'/\kappa$ moves.</p>
+<p><strong>Why the block is nevertheless not free of the second vev.</strong> It is free of the <em>direction</em>, and it is not free of the <em>size</em>: $v^{2}=\kappa^{2}+\kappa'^{2}$ is the same number for every $\beta$, so the neutral masses are the same at every $\beta$. That is exactly why the departure from $\rho=1$ has to come from somewhere else.</p>
+<h2 id="the-charged-block">The Charged Block</h2>
+<p><strong>The fields and the vacuum.</strong> The charged block is spanned by $W^{+}_{L}$ and $W^{+}_{R}$, with $W^{\pm}=(W^{1}\mp iW^{2})/\sqrt2$. The bidoublet's vacuum is</p>
+<p>$$
+\langle H\rangle=\begin{pmatrix}\kappa&amp;0\\0&amp;\kappa'\end{pmatrix},\qquad v^{2}=\kappa^{2}+\kappa'^{2},
+$$</p>
+<p>with the two diagonal entries neutral and the two off-diagonal entries charged, and with the convention that fixes the charge assignments of <a href="the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html">The Scalar Sector</a>.</p>
+<p><strong>The covariant derivative.</strong> With the right factor acting by $\Phi\mapsto\Phi\,\sigma_a^{\mathsf T}/2$, which is the convention in which both diagonal entries are neutral,</p>
+<p>$$
+D_\mu H=\partial_\mu H-i g_L\frac{\sigma_a}{2}W^{a}_{L\mu}H+i g_R H\frac{\sigma_a^{\mathsf T}}{2}W^{a}_{R\mu}.
+$$</p>
+<p>Separating the charged components at the vacuum, the two off-diagonal entries are</p>
+<p>$$
+(D_\mu H)_{12}=-\frac{i}{\sqrt2}g_L\kappa'\,W^{+}_{L}+\frac{i}{\sqrt2}g_R\kappa\,W^{-}_{R},\qquad
+(D_\mu H)_{21}=-\frac{i}{\sqrt2}g_L\kappa\,W^{-}_{L}+\frac{i}{\sqrt2}g_R\kappa'\,W^{+}_{R}.
+$$</p>
+<p><strong>The mass term.</strong> With the kinetic term $\tfrac12\operatorname{tr}\bigl[(D_\mu H)^{\dagger}(D_\mu H)\bigr]$ and $\operatorname{tr}$ in the bidoublet's two indices,</p>
+<p>$$
+\mathcal L\supset\tfrac14 g_L^{2}v^{2}\lvert W_{L}\rvert^{2}+\tfrac14 g_R^{2}v^{2}\lvert W_{R}\rvert^{2}\pm g_Lg_R\kappa\kappa'\,\mathrm{Re}\bigl(W_{L}W_{R}\bigr),
+$$</p>
+<p>so the block is</p>
+<p>$$
+\mathcal M^{2}_{\pm}=\frac14\begin{pmatrix}g_L^{2}v^{2}&amp;\pm2g_Lg_R\kappa\kappa'\\ \pm2g_Lg_R\kappa\kappa'&amp;g_R^{2}v^{2}\end{pmatrix}.
+$$</p>
+<p><strong>The sign of the off-diagonal is a convention and no eigenvalue depends on it.</strong> It is the relative phase of $W^{+}_{L}$ and $W^{+}_{R}$, which a redefinition $W^{+}_{R}\mapsto-W^{+}_{R}$ removes; a computation with the other sign for the right action, $\Phi\mapsto g_R\Phi$, gives the opposite sign and the same spectrum. Everything below is stated for the magnitude.</p>
+<p><strong>The Standard Model limit.</strong> Set $\kappa'=0$ and $g_L=g_R=g$. The block is $\tfrac14g^{2}v^{2}$ times the identity: two degenerate charged bosons of squared mass $\tfrac14g^{2}v^{2}$, which is the corpus's $W$ mass squared. <strong>Alignment reproduces the Standard Model's charged mass and, as the neutral block shows, its neutral masses too.</strong></p>
+<h2 id="the-determinant-the-eigenvalues-and-alignment">The Determinant, the Eigenvalues and Alignment</h2>
+<p><strong>The determinant.</strong> For a $2\times2$ block $\begin{pmatrix}A&amp;C\\C&amp;B\end{pmatrix}$,</p>
+<p>$$
+\det\mathcal M^{2}_{\pm}=\frac{g_L^{2}g_R^{2}}{16}\bigl[(v^{2})^{2}-4\kappa^{2}\kappa'^{2}\bigr]=\Bigl(\frac{g_Lg_R}{4}\Bigr)^{2}\bigl(\kappa^{2}-\kappa'^{2}\bigr)^{2}\ \ge 0 .
+$$</p>
+<p><strong>Alignment is the only way to a massless charged boson.</strong> The determinant vanishes exactly when $\kappa=\kappa'$. At that point the two diagonal entries and the off-diagonal are equal in magnitude and the block is rank one:</p>
+<p>$$
+\mathcal M^{2}_{\pm}\Big|_{\kappa=\kappa'}=\frac14\begin{pmatrix}g_L^{2}&amp;g_Lg_R\\ g_Lg_R&amp;g_R^{2}\end{pmatrix}\kappa^{2}\cdot2 ,
+$$</p>
+<p>with null vector $(g_R,-g_L)$. <strong>A massless charged boson is a physical catastrophe, so this is a bound on the scalar sector and not a curiosity</strong>: whatever the vacuum is, $\kappa\neq\kappa'$.</p>
+<p><strong>The eigenvalues.</strong> For the general block,</p>
+<p>$$
+M^{2}_{\pm}=\tfrac18\bigl(g_L^{2}+g_R^{2}\bigr)v^{2}\pm\tfrac12\sqrt{\tfrac1{16}\bigl(g_L^{2}-g_R^{2}\bigr)^{2}v^{4}+g_L^{2}g_R^{2}\kappa^{2}\kappa'^{2}} .
+$$</p>
+<p>At equal couplings this collapses to one line:</p>
+<p>$$
+M^{2}_{\pm}=\tfrac14g^{2}v^{2}\bigl(1\mp\sin2\beta\bigr),\qquad \tan\beta=\frac{\kappa'}{\kappa},\qquad \kappa^{2}+\kappa'^{2}=v^{2}.
+$$</p>
+<p><strong>The light one is the Standard Model's $W$ and the heavy one is the $W_R$ partner.</strong> At $\beta=0$ they are degenerate; at $\beta=0.3$ they are $0.1088\,g^{2}v^{2}$ and $0.3912\,g^{2}v^{2}$; at $\beta=\pi/4$ the light one is exactly zero.</p>
+<p><strong>The mixing angle.</strong> For the same block,</p>
+<p>$$
+\tan2\theta_{\pm}=\frac{2\mathcal M^{2}_{LR}}{\mathcal M^{2}_{LL}-\mathcal M^{2}_{RR}}
+=\pm\frac{2g_Lg_R\sin2\beta}{g_L^{2}-g_R^{2}} .
+$$</p>
+<p><strong>At equal couplings the mixing is maximal for every alignment.</strong> The denominator vanishes, the block is $\tfrac14g^{2}v^{2}$ times $\begin{pmatrix}1&amp;\sin2\beta\\ \sin2\beta&amp;1\end{pmatrix}$, and its eigenvectors are $(1,1)/\sqrt2$ and $(1,-1)/\sqrt2$ at every $\beta$. So the physical charged bosons are</p>
+<p>$$
+W_{1}=\frac{W_{L}+W_{R}}{\sqrt2},\qquad W_{2}=\frac{W_{L}-W_{R}}{\sqrt2},
+$$</p>
+<p>independently of the vacuum direction, with squared masses $\tfrac14g^{2}v^{2}(1\mp\sin2\beta)$. <strong>The Standard Model's $W$ is half $W_L$ and half $W_R$.</strong> That is the sharpest consequence of the block: at equal couplings the left–right mixing angle is not a small parameter but $\pi/4$, and what is small is the squared-mass splitting, $\propto\sin2\beta$.</p>
+<p><strong>And the mixing vanishes only when a coupling does.</strong> For $g_L\neq g_R$ the angle is small in proportion to $\sin2\beta$, and it vanishes at alignment. So "small $W_L$–$W_R$ mixing" is a statement about two things at once: a coupling splitting and a vacuum alignment.</p>
+<h2 id="the-math127-parameter-below-math128">The $\rho$ Parameter Below $M_R$</h2>
+<p><strong>The two squared masses, side by side.</strong> The light charged one carries the alignment factor and the light neutral one does not:</p>
+<p>$$
+M_{W}^{2}=\tfrac14g^{2}v^{2}\bigl(1-\sin2\beta\bigr),\qquad
+M_{Z}^{2}=\tfrac14\bigl(g^{2}+g_{\mathrm Y}^{2}\bigr)v^{2},
+\qquad
+\cos^{2}\theta_W=\frac{g^{2}}{g^{2}+g_{\mathrm Y}^{2}} .
+$$</p>
+<p><strong>The ratio.</strong> Substituting,</p>
+<p>$$
+\rho=\frac{M_{W}^{2}}{M_{Z}^{2}\cos^{2}\theta_W}
+=\frac{\tfrac14g^{2}v^{2}(1-\sin2\beta)}{\tfrac14(g^{2}+g_{\mathrm Y}^{2})v^{2}\cdot\dfrac{g^{2}}{g^{2}+g_{\mathrm Y}^{2}}}
+=1-\sin2\beta .
+$$</p>
+<p><strong>Why the departure sits entirely in the charged block.</strong> The neutral block is blind to $\beta$ (§<em>The Neutral Block: Rank Two and One Null Direction</em>), so $M_Z$ is the Standard Model's; the charged block is not, so $M_W$ is smaller by $(1-\sin2\beta)$. <strong>The custodial violation of this model is a charged-block phenomenon</strong>, which is the matrix form of the statement that the two diagonal vevs give the same neutral vector and different charged ones.</p>
+<p><strong>The numbers.</strong> At $\beta=0.1$ the ratio at $v/v_R=10^{-1}$ is $0.8026$, and in the limit $v/v_R\to0$ it is $0.8013=1-\sin0.2$. At $\beta=0.3$ it is $0.436$. The measured value is $1.00038\pm0.00020$, so $\sin2\beta$ is bounded to be small — the same bound that <a href="the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html">The Scalar Sector</a> states as "$\kappa\kappa'$ small", now with its coefficient.</p>
+<p><strong>What this $\rho$ is not.</strong> It is not the loop-level $\rho$. The tree-level relation above is the one the custodial symmetry of <a href="custodial-symmetry-and-the-rho-parameter.html">Custodial Symmetry and the $\rho$ Parameter</a> protects; the radiative corrections are that article's, and the comparison with the measured number needs the top mass and the hypercharge running, which the framework does not supply here.</p>
+<h2 id="the-count-in-blocks">The Count in Blocks</h2>
+<p><strong>Two counts, one block structure.</strong> The blocks give both the massless and the massive count without a second ledger:</p>
+<p>$$
+\underbrace{8}_{\text{colour}}+\underbrace{1}_{\text{photon}}=9\ \text{massless},\qquad
+\underbrace{6}_{\text{leptoquark}}+\underbrace{2}_{\text{neutral}}+\underbrace{4}_{\text{charged}}=12\ \text{massive}.
+$$</p>
+<p><strong>The nine.</strong> The colour eight stay massless forever and the photon is a null direction of the neutral block, so the two zeros have two different reasons: one is a stabiliser of the vacuum and the other is an eigenvector of the neutral block.</p>
+<p><strong>The twelve.</strong> Six fill at $M_C$, and the six weak directions fill in two steps: the $W^{\pm}_{R}$ pair and the $Z_R$ at $M_R$, the $W^{\pm}_{L}$ pair and the $Z$ at $M_W$. <strong>The block structure and the chain agree step by step</strong>, which is the check that the four blocks are the right decomposition and not an arbitrary one.</p>
+<h2 id="what-the-article-does-not-do">What the Article Does Not Do</h2>
+<p><strong>It does not fix a coupling.</strong> Both $g_L$ and $g_R$ are symbolic, and so is the matching that produces $g_{\mathrm Y}$.</p>
+<p><strong>It does not compute the heavy neutral or the heavy charged mass beyond tree level.</strong> Threshold corrections at $M_R$ are the effective-potential article's.</p>
+<p><strong>It does not treat a second bidoublet.</strong> A second $(1,2,2)$ makes the two diagonal vevs of the two fields independent, and the charged block becomes $2\times2$ per field pair with more than one angle; the block structure survives and the alignment condition becomes a condition on the sum of the products.</p>
+<p><strong>It does not treat a $(\mathbf{15},2,2)$ bidoublet.</strong> Its components include colour octets, and a vacuum expectation value in them breaks colour directly; then the colour block is no longer zero and the four-block split is lost. That is a different model, not a correction to this one.</p>
+<h2 id="the-checks">The Checks</h2>
+<p>Fourteen recomputations, at tree level, with $v^{2}=\kappa^{2}+\kappa'^{2}$ and $v_R=10\,v$ where a numerical value is quoted.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Standard Model limit</td>
+<td>$\kappa'=0$, $g_L=g_R$</td>
+<td>$\tfrac14g^{2}v^{2}$ twice</td>
+</tr>
+<tr>
+<td>the determinant</td>
+<td>$\det$ of the $2\times2$</td>
+<td>$(\tfrac14g_Lg_R)^{2}(\kappa^{2}-\kappa'^{2})^{2}$</td>
+</tr>
+<tr>
+<td>the null direction</td>
+<td>$\kappa=\kappa'$</td>
+<td>rank one, $(g_R,-g_L)$, eigenvalue $0$</td>
+</tr>
+<tr>
+<td>the eigenvalues at equal couplings</td>
+<td>$\beta=0.3$</td>
+<td>$0.1088$, $0.3912$, against $\tfrac14(1\mp\sin0.6)$</td>
+</tr>
+<tr>
+<td>the mixing angle at equal couplings</td>
+<td>eigenvector of $\begin{pmatrix}1&amp;s\\s&amp;1\end{pmatrix}$</td>
+<td>$\pi/4$ for every $s$</td>
+</tr>
+<tr>
+<td>the mixing angle off equal couplings</td>
+<td>$g_L=1$, $g_R=2$, $\beta=0.3$</td>
+<td>$18.5^{\circ}$, against $\tfrac12\arctan\frac{4\sin0.6}{3}$</td>
+</tr>
+<tr>
+<td>the trace of the charged block</td>
+<td>$\tfrac14(g_L^{2}+g_R^{2})v^{2}$</td>
+<td>$\tfrac12g^{2}v^{2}$ at equal couplings</td>
+</tr>
+<tr>
+<td>the neutral block's eigenvalues</td>
+<td>$\beta=0$, $0.1$, $0.3$</td>
+<td>$0$, $0.3994$, $62.6$ at every $\beta$</td>
+</tr>
+<tr>
+<td>the photon's masslessness</td>
+<td>null vector for every $\beta$</td>
+<td>$0$ exactly</td>
+</tr>
+<tr>
+<td>$\rho$ at $\beta=0.1$</td>
+<td>$v/v_R=10^{-1}$</td>
+<td>$0.8026$</td>
+</tr>
+<tr>
+<td>$\rho$ in the limit</td>
+<td>$v/v_R\to0$</td>
+<td>$0.8013=1-\sin0.2$</td>
+</tr>
+<tr>
+<td>the colour block</td>
+<td>$\lvert[g,D]\rvert$ for the eight</td>
+<td>$0$ for all eight</td>
+</tr>
+<tr>
+<td>the leptoquark block</td>
+<td>from the double-commutator identity</td>
+<td>$32v^{2}$ six times</td>
+</tr>
+<tr>
+<td>the block count</td>
+<td>$8+6+3+4$ against $9+12$</td>
+<td>$21$ against $21$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>Four blocks.</strong> Colour $8$, leptoquark $6$, neutral $3$, charged $4$; $8+6+3+4=21$. The split is exact because every vacuum is a colour singlet of definite charge.</p>
+<p><strong>One mixing.</strong> The charged block is $\tfrac14\begin{pmatrix}g_L^{2}v^{2}&amp;\pm2g_Lg_R\kappa\kappa'\\ \pm2g_Lg_R\kappa\kappa'&amp;g_R^{2}v^{2}\end{pmatrix}$; its determinant is $(\tfrac14g_Lg_R)^{2}(\kappa^{2}-\kappa'^{2})^{2}$, so a massless charged boson needs $\kappa=\kappa'$ and alignment is a bound.</p>
+<p><strong>One angle, and it is maximal.</strong> At equal couplings the mixing is $\pi/4$ for every vacuum direction: the physical charged bosons are $(W_L\pm W_R)/\sqrt2$, and what is small is the squared-mass splitting $\tfrac14g^{2}v^{2}\sin2\beta$.</p>
+<p><strong>The departure from $\rho=1$ is a charged-block effect.</strong> The neutral block is blind to $\kappa'/\kappa$, so $\rho=1-\sin2\beta=1-2\kappa\kappa'/(\kappa^{2}+\kappa'^{2})$ below $M_R$, at equal couplings.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$W^{\pm}_{L}$, $W^{\pm}_{R}$</td>
+<td>the charged gauge fields of the two weak factors</td>
+</tr>
+<tr>
+<td>$\kappa$, $\kappa'$</td>
+<td>the two diagonal vacuum expectation values of the bidoublet</td>
+</tr>
+<tr>
+<td>$v^{2}=\kappa^{2}+\kappa'^{2}$</td>
+<td>the electroweak vacuum, squared</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>$\arctan(\kappa'/\kappa)$, the vacuum's direction</td>
+</tr>
+<tr>
+<td>$\mathcal M^{2}_{\pm}$</td>
+<td>the $2\times2$ charged mass matrix</td>
+</tr>
+<tr>
+<td>$\mathcal M^{2}$</td>
+<td>the $3\times3$ neutral mass matrix</td>
+</tr>
+<tr>
+<td>$\theta_{\pm}$</td>
+<td>the $W_L$–$W_R$ mixing angle</td>
+</tr>
+<tr>
+<td>$B'$</td>
+<td>the surviving $\mathrm{SU}(4)$ Cartan, $A^{15}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html">The Adjoint Mass Matrix of the Fifteen: One Number per Plane, $32v^2$ on Six and Zero on Nine</a>. The colour and leptoquark blocks in full, computed entry by entry.</li>
+<li><a href="the-adjoint-mass-matrix-as-the-square-of-the-roots-two-v-squared-double-commutator-six-planes-and-nine-zeros.html">The Adjoint Mass Matrix as the Square of the Roots</a>. Why the leptoquark block is a multiple of the identity, and why the colour block is exactly zero.</li>
+<li><a href="classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons in the Four Colours Left–Right Model</a>. The neutral block's entries and eigenvalues, and the ledger of the spectrum.</li>
+<li><a href="the-photon-as-the-unbroken-mixture.html">The Photon as the Unbroken Mixture: One Null Direction, Three Parents</a>. The null vector of the neutral block, derived three ways.</li>
+<li><a href="the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html">The Scalar Sector of the Four Colours Left–Right Model</a>. The bidoublet, its two diagonal vevs, and the statement that $\rho-1\propto\kappa\kappa'$.</li>
+<li><a href="custodial-symmetry-and-the-rho-parameter.html">Custodial Symmetry and the $\rho$ Parameter</a>. The relation $\rho=1$ and its radiative corrections.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
