@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charge Quantisation from the Fourth Colour: One Trace, One Third — Biquaternion Universe</title>
-  <meta name="description" content="The question. Why is the proton&#x27;s charge exactly minus the electron&#x27;s? The Standard Model assigns hypercharges and then checks that the anomalies cancel.…">
+  <meta name="description" content="This article derives; it does not survey. The 21 AXF Matrices of the Bosons in Detail prints the twenty-one arrays one at a time, and its subsection on…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,96 +71,86 @@
       <div class="article-body">
         <h1 id="charge-quantisation-from-the-fourth-colour-one-trace-one-third"><strong>Charge Quantisation from the Fourth Colour: One Trace, One Third</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The question.</strong> Why is the proton's charge exactly minus the electron's? The Standard Model assigns hypercharges and then checks that the anomalies cancel. It does not explain the equality; it imposes it. Does this frame do better?</p>
-<p><strong>The answer, in one line.</strong></p>
+<p><strong>This article derives; it does not survey.</strong> <a href="the-21-axf-matrices-of-the-bosons-in-detail.html">The 21 AXF Matrices of the Bosons in Detail</a> prints the twenty-one arrays one at a time, and its subsection on $B'$ makes six statements about one array. <strong>Five quotations follow, each a block taken word for word from that subsection.</strong> Each is followed by what it forces. Nothing else is assumed, no array is recomputed, and no vacuum is chosen.</p>
+<p><strong>The array, as the detail article prints it.</strong> It is the corner of the fifteen, and it carries the only entry of modulus three in the whole twenty-one:</p>
 <p>$$
-\boxed{\;
-\operatorname{tr}_{\mathbf4}D=(-3)+(+1)+(+1)+(+1)=0
-\quad\Longrightarrow\quad
-3q+\ell=0
-\quad\Longrightarrow\quad
-q=-\tfrac13\ell
-\;}
+iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr)=\begin{pmatrix}-3i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i\end{pmatrix}
 $$</p>
-<p><strong>The array is $D=\operatorname{diag}(-3,1,1,1)$</strong>, the corner generator of the corpus, with the lepton line first and the three colour lines after; $B-L=\tfrac13D$ is the same array divided by three, and the order is named wherever it matters. The trace vanishes because $D$ is a generator, and a generator of $\mathrm{SU}(4)$ is traceless. The quark's eigenvalue is minus a third of the lepton's because the lepton stands against three colours and the four entries must sum to zero. <strong>The advantage over the Standard Model is one of assumption, not of reach</strong>: the Standard Model reaches the same ratio from its field list, and the comparison section states the difference at its true size.</p>
-<p><strong>One subject, and the boundary of it.</strong> This article is about one number and where it comes from: the trace of one array, read as the relation between the quark's charge and the lepton's. The fate of the twenty-one generators, the sort by what each does to the time line, the real-form reading of the nine and the origin of the abelian factor are a different subject — they are about where the generators <em>go</em>, not about what one of them <em>says</em>. That ledger is <a href="where-the-twenty-one-generators-go-one-ledger-three-readings-and-the-one-abelian-factor.html">Where the Twenty-One Generators Go</a>, and the only thing taken from it here is the name of the corner array and of its boson, $iD$ and $B'$, so that this article and the boson articles print the same object.</p>
-<p><strong>What is claimed.</strong> That $B-L$ is a traceless generator of $\mathrm{SU}(4)$, so its four eigenvalues on the quartet sum to zero; that this sum is exactly the quark–lepton charge relation; that the charge quantum is $e/(N-1)$, so that the third is the number of colours; that the corpus's own display $D=\operatorname{diag}(-3,1,1,1)$ is the same equation; that the trace which quantises the charge is also the row which cancels the mixed anomaly; and that the relation is a statement about a trace, not about a dynamics.</p>
-<p><strong>What is not claimed.</strong> That it explains why the electron's charge has the value it has — it does not, and no group-theoretic argument can. That it derives the charges from the algebra alone — the quartet is the declaration (A), and the trace is a property of $\mathrm{SU}(4)$, the carrier's group. That the Standard Model lacks the fact — given its field list it fixes the same ratio by anomaly cancellation, and the comparison section states what the frame's smaller assumption is worth. That the trace fixes a scale — it does not, and the section on the trace shows the invariance by scaling.</p>
-<p><strong>The order.</strong> What charge quantisation means; the trace and why it vanishes; the relation in four notations; the comparison with the Standard Model; what is explained and what is not; the same trace in the corpus's own language.</p>
-<h2 id="what-charge-quantisation-means-exactly">What Charge Quantisation Means, Exactly</h2>
-<p><strong>Three statements are usually run together. This frame separates them.</strong></p>
+<p><strong>The order is $(e_t,\vec e_x,\vec e_y,\vec e_z)$</strong>, the lepton line first and the three colour lines after, and it is the order of every display in this article.</p>
+<p><strong>The five results, and the quotation each one comes from.</strong> This table is the plan of the article.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>statement</th>
-<th>content</th>
-<th>who gives it</th>
+<th>result</th>
+<th>from which quotation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>integrality</strong></td>
-<td>every charge is an integer multiple of $e/3$</td>
-<td>the frame, through the relation: the denominator is the number of colours</td>
+<td>$\ell+3q=0$, so $q=-\tfrac13\ell$</td>
+<td>the trace is zero</td>
 </tr>
 <tr>
-<td><strong>the quark–lepton relation</strong></td>
-<td>$3q+\ell=0$ on the $B-L$ eigenvalues, hence $Q_p+Q_e=0$</td>
-<td>the frame: the trace of $B-L$</td>
+<td>the charge quantum is $e/3$</td>
+<td>the corner entry is $-3$, the count of colour lines</td>
 </tr>
 <tr>
-<td><strong>the absolute scale</strong></td>
-<td>$e$ has the value it has</td>
-<td>nobody: it is a measurement</td>
+<td>the seven charges of a generation</td>
+<td>$B-L=\tfrac13D$</td>
+</tr>
+<tr>
+<td>$B-L$ is exact at every scale</td>
+<td>$[iD,\Phi_0]=0$</td>
+</tr>
+<tr>
+<td>the relative phase of lepton and colour is $4\theta$</td>
+<td>four phases and no rotation</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Only the second is the frame's achievement, and the first follows from it.</strong> The third is outside any group theory, and the closing table says so.</p>
-<p><strong>Why the second is the interesting one.</strong> A hydrogen atom's neutrality is a measured fact of extraordinary precision. In the Standard Model it is a consequence of the hypercharge assignments being what they are, and anomaly cancellation constrains those assignments without determining them. In the frame it is a consequence of one diagonal matrix being traceless, and that matrix is a generator of the group that was already there.</p>
-<p><strong>Why the first is nearly free.</strong> If $3q+\ell=0$ and $\ell$ is a multiple of $e$, then $q$ is a multiple of $e/3$. Integrality in thirds is not a separate mystery once the relation holds; it is bookkeeping.</p>
-<p><strong>The quantum is set by the number of colours, and that is the content of "thirds".</strong> For an $\mathrm{SU}(N)$ that puts one lepton beside $N-1$ colours in its fundamental, tracelessness reads</p>
+<p><strong>What the chain needs beyond the quotations, stated once so that it is not smuggled in.</strong> Two things, and neither is a free parameter of the argument. The first is the identification (A): the corner eigenvalue belongs to the lepton and the three equal eigenvalues belong to the three colours. The trace alone says "one against three"; (A) says which is which. The second is the combination $Y=T_{3R}+\tfrac12(B-L)$, by which hypercharge is built from the right-handed neutral direction and the corner. Both belong to the model and both are fixed elsewhere: (A) in <a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model</a>, the combination in <a href="the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html">The Neutral Sector</a>. <strong>Everything else in this article follows from the five quotations.</strong></p>
+<h2 id="quotation-one-the-entries-and-the-trace">Quotation One: the Entries, and the Trace</h2>
+<p><strong>The detail article, §$B'$:</strong></p>
+<blockquote>
+<p><strong>The entries.</strong> Four diagonal cells, and the only entry of modulus $\ne1$ in the whole twenty-one: $-3i$ at the corner. <strong>Trace zero because $-3+1+1+1=0$</strong>, norm $12$ because $9+1+1+1=12$, spectrum $-3i,i,i,i$.</p>
+</blockquote>
+<p><strong>And, in the same subsection:</strong></p>
+<blockquote>
+<p><strong>The corner cell carries minus the sum of the other three</strong>, and that is the only way a diagonal with three equal entries can be traceless.</p>
+</blockquote>
+<p><strong>What follows: the ratio, and only the ratio.</strong> Write the eigenvalues in the order above as $\ell,q,q,q$, with $\ell$ the corner and $q$ the three colour entries; both are real because $D$ is Hermitian. Trace zero is one equation,</p>
 <p>$$
-(N-1)q+\ell=0\quad\Longrightarrow\quad q=-\frac{\ell}{N-1},
+\ell+3q=0
+\qquad\Longrightarrow\qquad
+\ell=-3q ,
 $$</p>
-<p>so the quantum is $e/(N-1)$, and it is $e/3$ because there are three colours and not because of anything in a hypercharge table. Four colours would give quarters and two would give halves.</p>
-<p><strong>The unit is attained, and the denominator is a count.</strong> The four charges of one left-handed quartet are $\tfrac23$, $-\tfrac13$, $0$ and $-1$, and their differences generate exactly $\tfrac13\mathbb{Z}$ and not a sublattice of it. The denominator three is the number of entries that share the quark eigenvalue. A reader who wants to know why nature chose thirds is answered here: the lepton stands against three colours, and three is the number of dimensions the algebra supplies for them.</p>
-<h2 id="the-trace-and-why-it-vanishes">The Trace, and Why It Vanishes</h2>
-<p><strong>The computation is one line, and it is done on the corpus's own array.</strong></p>
+<p>and that is the whole computation. <strong>The quark's eigenvalue is minus a third of the lepton's because the lepton stands once and the colours stand three times.</strong></p>
+<p><strong>The general statement, which the quotation's number hides.</strong> In a four-row array the coefficient is $3$; in an $N$-row array it is $N-1$, one lepton line against $N-1$ colour lines:</p>
 <p>$$
-D=\operatorname{diag}(-3,1,1,1),\qquad
-\operatorname{tr}_{\mathbf4}D=(-3)+(+1)+(+1)+(+1)=0 .
+\ell+(N-1)q=0 .
 $$</p>
-<p><strong>The array is the one the boson articles display.</strong> The order is $(e_t,\vec e_x,\vec e_y,\vec e_z)$ — the lepton line first, the three colour lines after — the corner cell is $-3$, and the three colour cells are $+1$. <a href="the-21-axf-matrices-of-the-bosons-in-detail.html">The 21 AXF Matrices of the Bosons in Detail</a> prints this array as the generator $iD$ and names its boson $B'$; here the $i$ is dropped, because $\operatorname{tr}D$ and $\operatorname{tr}(iD)$ vanish together and a real diagonal is easier to read.</p>
-<p><strong>Nothing in this article treats $D$ as a special object.</strong> It is the fifteenth of the twenty-one arrays, one of the three diagonal ones, and <a href="construction-of-the-axf-matrices-of-the-twenty-one-generators.html">Construction of the AXF Matrices</a> builds the three from the same three diagonal words, $iD=i(W_{xx}+W_{yy}+W_{zz})$ with $d_{2}$ and $d_{3}$ as the two successive differences; that article is where the factors are fixed and where the factor $i$ is shown to be forced. <strong>What singles it out is the eigenvalue pattern and not the construction</strong>: of the three diagonals it is the only one that gives one line a value different from the three others, which is the pattern a charge has to have. $d_{2}$ and $d_{3}$ vanish on the lepton line, so neither can be read as a charge on the quartet at all.</p>
-<p><strong>The charge is that array divided by three.</strong></p>
+<p>Four colours give a third. Three colours would give a half, and that is the arithmetic reason the observed third is evidence for a fourth line and not for a coincidence.</p>
+<p><strong>What the quotation's second sentence adds, and it is more than emphasis.</strong> Given the three equal entries, the fourth is <strong>forced</strong>. So the declaration that three lines are equivalent and one is different leaves no freedom in the diagonal: the pattern $(-3,1,1,1)$ is not a choice among traceless diagonals, it is the only one of that shape. <strong>The trace does not select the numbers; it selects the corner once the shape is declared, and the model supplies the shape.</strong></p>
+<p><strong>What the trace does not fix, said plainly because the next section needs it.</strong> $\operatorname{diag}(-6,2,2,2)$ has the same vanishing trace and the same ratio. So does $\operatorname{diag}(-\tfrac12,\tfrac16,\tfrac16,\tfrac16)$. <strong>The trace fixes the ratio and nothing else</strong>, and the scale is fixed later, by naming which of these arrays is the generator.</p>
+<h2 id="quotation-two-the-corner-entry-and-the-unit">Quotation Two: the Corner Entry, and the Unit</h2>
+<p><strong>The detail article, §$B'$, continuing the same sentence:</strong></p>
+<blockquote>
+<p><strong>The same equation read as charges is $3\cdot(+1)+(-3)=0$</strong> — and the $-3$ is the count of colour lines, the same number that appears as $N-1$ in the charge quantum $e/(N-1)$.</p>
+</blockquote>
+<p><strong>What follows: no charge can be finer than a third.</strong> The eigenvalues of $D$ give two offsets, $+\tfrac16$ and $-\tfrac12$, once divided by six; the isospin adds $0$, $\pm\tfrac12$ or $\pm1$. The values a state attains are four:</p>
 <p>$$
-B-L=\tfrac13D=\operatorname{diag}\bigl(-1,\tfrac13,\tfrac13,\tfrac13\bigr),
-\qquad
-\operatorname{tr}_{\mathbf4}(B-L)=\tfrac13+\tfrac13+\tfrac13-1=0 .
+Q\in\Bigl\{\,0,\ -1,\ +\tfrac23,\ -\tfrac13\,\Bigr\}.
 $$</p>
-<p>So the lepton carries $-1$ and each colour $+\tfrac13$, and the second trace is the first divided by three. Both readings are used below and the order is the same in both: lepton first. <strong>A reader who meets $\operatorname{diag}\bigl(\tfrac13,\tfrac13,\tfrac13,-1\bigr)$ elsewhere is reading one matrix in another order</strong> — colour first, lepton last — and not another matrix.</p>
-<p><strong>Why it must vanish, stated three ways.</strong></p>
-<p><strong>Generators are traceless.</strong> Every generator of a compact semisimple group is traceless on every finite-dimensional unitary representation. $\mathrm{SU}(4)$ is semisimple, and $B-L$ is a linear combination of its Cartan generators. So the vanishing is not a numerical accident of the eigenvalue choice; it is forced by $B-L$ being a generator at all.</p>
-<p><strong>Determinant one.</strong> If $M$ generates $\mathrm{SU}(4)$, then $\exp(i\theta M)$ has determinant one for every $\theta$, and $\det\exp(i\theta M)=\exp\bigl(i\theta\operatorname{tr}M\bigr)$. So $\operatorname{tr}M=0$ follows from the determinant condition alone, with no appeal to semisimplicity. The vanishing trace is the linearisation of "determinant one", and that is the same statement in the group rather than in the algebra.</p>
-<p><strong>The display, which is the same sum inspected.</strong> $D=\operatorname{diag}(-3,1,1,1)$ has $-3+1+1+1=0$ by inspection, and the inspection is the general argument written on one matrix: the corner cell is minus the sum of the three equal entries, because a diagonal with three equal entries has no other way to be traceless. This is the form the boson articles print, and it is the one this article's displays use.</p>
-<p><strong>The corpus prints this one direction at three lengths, and each has a reason.</strong> $iD$ with $\operatorname{tr}(iD)^2=12$ in the array articles, which count cells and norm; $B-L=\tfrac13D$ with $\operatorname{tr}(B-L)^2=\tfrac43$ here, which names the charge; $T^{15}=D/\sqrt{24}$ with $\operatorname{tr}(T^{15})^2=\tfrac12$ in the gauge articles, which normalise a coupling. The relations are exact, $B-L=\tfrac13D=\sqrt{\tfrac83}\,T^{15}$, and a vector quoted in one basis is not a different vector in another: the photon is $(1,1,\tfrac16)$ in $(T_{3L},T_{3R},D)$ and $(1,1,\sqrt{\tfrac23})$ in $(T_{3L},T_{3R},T^{15})$. <strong>Each article names its basis where it prints a vector</strong>, and that is the only convention a reader crossing between them has to check.</p>
-<p><strong>The step that is not automatic.</strong> The trace vanishing says the sum of the four eigenvalues is zero. Reading it as $3q+\ell=0$ requires that the three equal entries be the quarks and the single entry be the lepton, and that is (A), the split $\mathbf4\to\mathbf3\oplus\mathbf1$ with the line identified as the lepton. The trace gives the arithmetic; the declaration gives the interpretation.</p>
-<p><strong>So the claim has two halves, and neither is enough alone.</strong> Given that the fourth direction is the lepton, the tracelessness of $B-L$ forces the quark charge to a third of it. Without the trace there is no relation; without (A) there is no quark–lepton assignment.</p>
-<p><strong>What the trace does not fix, shown by scaling it.</strong> The trace is a linear condition on the eigenvalues, so it survives $B-L\to c\,(B-L)$ for any $c$. Multiplying by three gives $D$ back,</p>
-<p>$$
-\operatorname{tr}_{\mathbf4}\bigl(3(B-L)\bigr)=\operatorname{tr}_{\mathbf4}D=(-3)+1+1+1=0 ,
-$$</p>
-<p>with eigenvalues $(-3,+1,+1,+1)$ in the corpus order: still traceless, still one lepton against three quarks, and with charges three times larger. <strong>So the two arrays of this article are the two ends of one rescaling</strong>, and the trace is blind to which end is used. It fixes the ratio $q:\ell=1:-3$ and says nothing about the scale. A trace that survives rescaling is exactly the kind of statement a scale-free equation can make, and stating it here is what keeps the comparison with the Standard Model honest.</p>
-<h2 id="the-relation-in-four-notations">The Relation in Four Notations</h2>
-<p><strong>The same equation four times, so that no reader is left with a different version. The corpus's form comes first, because it is the one the other articles print.</strong></p>
-<p><strong>In the corpus's form.</strong> $D=\operatorname{diag}(-3,1,1,1)$ is traceless, and its eigenvalues on the quartet read $-3,+1,+1,+1$: one lepton and three colours. This is the display the boson articles use, and it is the array named $iD$ there.</p>
-<p><strong>In trace form.</strong> $\operatorname{tr}_{\mathbf4}(B-L)=0$, which is $\operatorname{tr}_{\mathbf4}D=0$ divided by three: the sum of the quartet's four eigenvalues vanishes.</p>
-<p><strong>In eigenvalue form.</strong> $3\cdot(+1)+(-3)=0$ in $D$ units, and $3\cdot\tfrac13+(-1)=0$ in $B-L$ units. The second is the first divided by three, and both say three quarks against one lepton.</p>
-<p><strong>In charge form.</strong> The charge operator of the frame is</p>
-<p>$$
-Q=T_{3L}+T_{3R}+\tfrac16D=T_{3}+\tfrac16D=T_{3}+\tfrac12(B-L),
-$$</p>
-<p>with $T_{3}=T_{3L}+T_{3R}$ the total third component of weak isospin. Since $D$ has $+1$ on a colour line and $-3$ on the lepton line, the weight $\tfrac16$ gives $+\tfrac16-\tfrac12=-\tfrac13$ on the down quark and $-\tfrac16-\tfrac12=-1$ on the electron, which is the whole content of the coefficient. The left-handed fields sit in the $(\mathbf4,\mathbf2,\mathbf1)$ and the right-handed in the $(\bar{\mathbf4},\mathbf1,\mathbf2)$, and the columns below carry the physical charges of those fields, with the conjugate's sign already absorbed. Applied to the seven states of one generation, the formula gives the observed charges with nothing added.</p>
+<p><strong>Their differences are $\tfrac23$, $\tfrac13$ and $1$</strong>, so the lattice they generate is exactly $\tfrac13\mathbb{Z}$, and the smallest step is $\tfrac13$. The neighbouring values $\pm\tfrac12$ and $+\tfrac16$ are not excluded by arithmetic; they are excluded by the content, because no field of the sixteen carries an isospin and an eigenvalue that give them.</p>
+<p><strong>The unit is attained, and that is why it is a unit and not a bound.</strong> The down quark carries $-\tfrac13$. A set of charges whose smallest difference is $\tfrac13$ and which contains $\tfrac13$ itself has $\tfrac13$ as its unit, not merely as its denominator.</p>
+<p><strong>The number is doing the work, and it appears twice.</strong> The corner entry is $-3$ because three colour lines contribute one each, and the quantum is a third because the lepton stands against three. <strong>The same count, read once as an entry and once as a denominator</strong>, which is what the quotation says in its own words.</p>
+<p><strong>And the entry is not the trace.</strong> The trace is removed by deleting one word from the sixteen, which is a bookkeeping step on the list of arrays; $-3$ is an eigenvalue of one of the fifteen that remain. The two numbers agree because both count colour lines, and they are different objects.</p>
+<h2 id="quotation-three-the-boson-and-the-seven-charges">Quotation Three: the Boson, and the Seven Charges</h2>
+<p><strong>The detail article, §$B'$:</strong></p>
+<blockquote>
+<p><strong>The boson.</strong> $B'$ is the $B-L$ boson, and <strong>the array is the one the vacuum is built from</strong>. With the $i$ removed, $D=\operatorname{diag}(-3,1,1,1)$ is the Hermitian direction of the breaking, $\Phi_0=vD$, and $B-L=\tfrac13D$ on the $\mathbf4$: the charge is this array divided by three, which in charges reads $(-1,\tfrac13,\tfrac13,\tfrac13)$ with the lepton first.</p>
+</blockquote>
+<p><strong>What follows: the charge of every state of one generation.</strong> Substituting the quoted $B-L$ into the quoted combination $Y=T_{3R}+\tfrac12(B-L)$ and adding the left isospin gives $Q=T_{3L}+T_{3R}+\tfrac16D$. The seven states then read:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -168,17 +158,15 @@ $$</p>
 <th>$T_{3L}$</th>
 <th>$T_{3R}$</th>
 <th>$D$</th>
-<th>$B-L=\tfrac13D$</th>
 <th>$Q$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>${\jmath}_L$</td>
+<td>$\nu_L$</td>
 <td>$+\tfrac12$</td>
 <td>$0$</td>
 <td>$-3$</td>
-<td>$-1$</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -187,14 +175,12 @@ $$</p>
 <td>$0$</td>
 <td>$-3$</td>
 <td>$-1$</td>
-<td>$-1$</td>
 </tr>
 <tr>
 <td>$u_L$</td>
 <td>$+\tfrac12$</td>
 <td>$0$</td>
 <td>$+1$</td>
-<td>$+\tfrac13$</td>
 <td>$+\tfrac23$</td>
 </tr>
 <tr>
@@ -202,7 +188,6 @@ $$</p>
 <td>$-\tfrac12$</td>
 <td>$0$</td>
 <td>$+1$</td>
-<td>$+\tfrac13$</td>
 <td>$-\tfrac13$</td>
 </tr>
 <tr>
@@ -210,7 +195,6 @@ $$</p>
 <td>$0$</td>
 <td>$+\tfrac12$</td>
 <td>$+1$</td>
-<td>$+\tfrac13$</td>
 <td>$+\tfrac23$</td>
 </tr>
 <tr>
@@ -218,7 +202,6 @@ $$</p>
 <td>$0$</td>
 <td>$-\tfrac12$</td>
 <td>$+1$</td>
-<td>$+\tfrac13$</td>
 <td>$-\tfrac13$</td>
 </tr>
 <tr>
@@ -227,42 +210,116 @@ $$</p>
 <td>$-\tfrac12$</td>
 <td>$-3$</td>
 <td>$-1$</td>
-<td>$-1$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Computed on the proton and the electron directly.</strong> Summing the same operator over the constituents, with each constituent contributing its own $T_3$ and its own $D$,</p>
+<p><strong>Every row is one addition</strong>: a half-integer isospin and a sixth of an integer eigenvalue. The seven charges are the last column, and no row uses a number that is not in the quotation or in the combination.</p>
+<p><strong>What follows: the proton and the electron cancel, and the cancellation is two cancellations.</strong> The proton is three quarks, each with $D=+1$; the electron is one lepton with $D=-3$. <strong>In $D$ the two sides weigh $+3$ and $-3$, and the sum is zero because three colour lines weigh exactly one lepton line</strong> — that is quotation one, read on a composite state. In isospin the proton's three quarks give $2\cdot\tfrac12-\tfrac12=+\tfrac12$ and the electron gives $-\tfrac12$, and that sum is zero as well. <strong>Both pieces vanish separately, which is why the equality of the two charges is exact and not approximate.</strong></p>
+<p><strong>What follows: the mixed anomaly row vanishes, and it vanishes term by term.</strong> On the left-handed multiplet $(\mathbf4,\mathbf2,\mathbf1)$ the hypercharge is $Y=\tfrac16D$, and</p>
 <p>$$
-Q_p=\underbrace{\tfrac12}_{T_3}+\tfrac16\underbrace{\bigl(+1+1+1\bigr)}_{D}=+\tfrac12+\tfrac12=+1 ,
+\operatorname{tr}\bigl(T_{3L}^{2}Y\bigr)=\tfrac12\cdot\tfrac16\operatorname{tr}_{\mathbf4}D=0 ,
 $$</p>
-<p>$$
-Q_e=\underbrace{\Bigl(-\tfrac12\Bigr)}_{T_3}+\tfrac16\underbrace{\bigl(-3\bigr)}_{D}=-\tfrac12-\tfrac12=-1 ,
-$$</p>
-<p>so</p>
-<p>$$
-Q_p+Q_e=\bigl(\tfrac12-\tfrac12\bigr)+\tfrac16\bigl(3-3\bigr)=0 ,
-$$</p>
-<p><strong>Two cancellations, and they are different cancellations.</strong> The $T_3$ parts cancel because the proton's three quarks and the electron carry $\sum T_3=0$ between them; that is the tracelessness of $T_3$, which any $\mathrm{SU}(2)$ has. The $D$ parts cancel because the proton's constituents and the electron are one full quartet of $D$ eigenvalues, $+1+1+1-3$, and a quartet sums to zero. The second cancellation is the trace, and it is the one the frame supplies.</p>
-<p><strong>Divided by three, the corpus's display is the Standard Model's table.</strong> $D$ carries $-3$ and three ones; divide by three, add the $\mathrm{SU}(2)$ piece through $Q=T_3+\tfrac16D$, and the charges of the table appear. Nothing in the passage needs a convention beyond the two stated: the order $(t,x,y,z)$ and the normalisation $B-L=\tfrac13D$.</p>
-<p><strong>One warning about the symbols, because the equation is written twice in the literature and the two writings differ by a sign.</strong> The relation $3q+\ell=0$ holds on the $B-L$ eigenvalues, with $q=+\tfrac13$ and $\ell=-1$. On electric charges it reads $3Q_d=Q_e$, not $3Q_d+Q_e=0$, and the passage between the two is one line: the down quark and the electron both carry $T_{3}=-\tfrac12$, so $Q=T_{3}+\tfrac16D$ gives $Q_d=-\tfrac12+\tfrac16=-\tfrac13$ and $Q_e=-\tfrac12-\tfrac12=-1$, whence $3Q_d-Q_e=0$. Both statements are true. A reader who transposes the additive form to electric charges gets $3\bigl(-\tfrac13\bigr)+(-1)=-2$ instead of $0$, and goes looking for an error in a table that has none.</p>
-<p><strong>The check that the four forms agree.</strong> Each is a rewriting of $\sum_i\eta_i=0$, with $\{\eta_i\}=\{-3,+1,+1,+1\}$ in the corpus's units and $\{\eta_i\}=\{-\tfrac13,+\tfrac13,+\tfrac13,+\tfrac13\}$ in the charge's. Agreement is therefore not a matter of computation but of notation and of the factor between the two units, and the corpus's value is that its own $\mathfrak{su}(4)$ display is the first of the four.</p>
-<h2 id="what-the-standard-model-assumes-and-what-the-frame-assumes">What the Standard Model Assumes, and What the Frame Assumes</h2>
-<p><strong>The section is named after the comparison it makes, and the naming is itself a correction.</strong> An earlier form of it was called "Why the Standard Model Cannot Do This". That title was false, and the paragraph inside the section already showed it false while the title went on asserting it. The Standard Model can produce the ratio. What differs is what each theory has to be given in order to produce it, and that is the comparison this section makes.</p>
-<p><strong>Two retractions, because both were one overclaim.</strong> The earlier argument said the Standard Model's conditions are homogeneous and the trace is not. The trace is homogeneous: the array scales to $(+1,+1,+1,-3)$ and still sums to zero. And the earlier title said the Standard Model cannot get thirds. It can, as the computation below shows. What does the work in the frame is not a difference in homogeneity but that the trace's coefficients <em>are</em> the counts, three colours against one lepton, so $(N-1)q+\ell=0$ has the integer solution $q:\ell=1:-(N-1)$. A claim that rests on the wrong reason is a claim the first careful reader breaks, and losing a slogan is cheaper than losing the argument.</p>
-<p><strong>What the Standard Model has, with its content assumed.</strong> Take one family: a quark doublet in three colours at hypercharge $Y_q$, a lepton doublet at $Y_l$, the singlets $Y_u,Y_d,Y_e$, and one scalar doublet at $Y_H$, with the Yukawa couplings tying the singlets to it, $Y_u=Y_q+Y_H$, $Y_d=Y_q-Y_H$ and $Y_e=Y_l-Y_H$. The condition $\operatorname{tr}(T_{3L}^2Y)=0$ reads $\tfrac32Y_q+\tfrac12Y_l=0$ and gives $Y_l=-3Y_q$. The condition $\operatorname{tr}Y=0$ then reads $6Y_q+2Y_l-3Y_u-3Y_d-Y_e=0$, which on substituting the tie gives $Y_H=3Y_q$. And with those two the cubic condition $\operatorname{tr}Y^3=0$ is satisfied identically, for every $Y_q$. So the whole table follows from one number, and that number is fixed by the measured $e$.</p>
-<p><strong>What that shows, and what the earlier count got wrong.</strong> It shows that the Standard Model fixes the ratio: $Y_l=-3Y_q$ is $3q+\ell=0$ written in hypercharges. The earlier framing, "six unknowns against three conditions", counted the wrong way — it is not the number of equations that reduces the unknown count, it is the content. It also shows how much the content has to include: the multiplet structure of five fermion fields, the scalar's being a doublet, and the Yukawa structure that ties the singlets to it. Remove any of the three and the system has to be solved again on different assumptions.</p>
-<p><strong>What the frame assumes to reach the same ratio.</strong> One declaration, (A), which says that the fourth line of the quartet is the lepton. Nothing else. The trace then holds for every field that comes as a whole quartet, and it holds with no reference to the scalar sector: no scalar enters the argument, and no Yukawa structure does either.</p>
-<p><strong>The gain, in one word and then in one sentence.</strong> The word is parsimony. The sentence is: the frame assumes one declaration and reads one trace, the Standard Model assumes a field list and solves a small system, and both reach the same ratio. The frame does not explain more; it assumes less.</p>
-<p><strong>The three places the difference is real, each stated at its true size.</strong></p>
+<p>the factor $\tfrac12$ being $\operatorname{tr}(T_{3L}^{2})$ over the doublet and $\tfrac16$ the coefficient of $D$. <strong>So the row does not cancel: it vanishes, because the trace is zero.</strong> A reader who expects anomaly cancellation to constrain the content will find the constraint already met by the array.</p>
+<p><strong>One consequence of the division by three, stated because it is often confused.</strong> $B-L=\tfrac13D$ has eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$ and $D$ has $(-3,1,1,1)$: the same direction, two normalisations. <strong>A charge statement is a statement about a direction; a matrix statement is a statement about an array.</strong> Neither is more fundamental, and this article names which of the two it is using.</p>
+<h2 id="quotation-four-what-the-vacuum-does-not-see">Quotation Four: What the Vacuum Does Not See</h2>
+<p><strong>The detail article, §$B'$:</strong></p>
+<blockquote>
+<p><strong>What the vacuum does not see.</strong> $[iD,\Phi_0]=0$, so this array is invisible to the first breaking</p>
+<p><strong>The unique statement is narrower and it is the one that matters here</strong>: of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place.</p>
+</blockquote>
+<p><strong>What follows: $B-L$ is exact at every scale.</strong> A generator that commutes with the vacuum value is unbroken by the step that imposes that value; the quotation says it of the first breaking. Because that step is the one that could have destroyed the corner — it is the step that removes six of the fifteen — <strong>$B-L$ survives every step of the chain</strong>, and the quantum number it measures is the same at $M_C$, at $M_R$, at $M_W$ and below.</p>
+<p><strong>That is a physical result and not a bookkeeping remark.</strong> Three statements follow from it at once.</p>
 <ul>
-<li><strong>Robustness of the content.</strong> In the frame, any content built from whole quartets inherits the ratio, and a new quartet can be added without disturbing the old ones, because each quartet contributes zero to the trace. In the Standard Model a new chiral field with an unknown hypercharge is a new unknown in the same system, and the solution moves.</li>
-<li><strong>Linearity, which is a gain in length and not in reach.</strong> The frame's condition is linear with integer coefficients, so the integral solution is read off. The Standard Model's information sits partly in a cubic condition, although on this content the cubic turns out to be automatic once the linear ones are imposed. The gain is a shorter derivation, not a different prediction.</li>
-<li><strong>The unit.</strong> Neither theory fixes $e$. The frame's advantage is that its unit is tied to the coupling of the group that contains colour, through the same embedding, and that relation is a scale-bearing statement kept in <a href="the-one-coupling-that-returns-the-standard-model.html">The One Coupling That Returns the Standard Model</a>. Tied to is not explained.</li>
+<li><strong>The charge lattice does not move.</strong> Because $B-L$ is exact and takes the values $(-1,\tfrac13,\tfrac13,\tfrac13)$ on a quartet, the unit $\tfrac13$ is the same at every scale. What runs is a coupling, not the charge it multiplies.</li>
+<li><strong>No mixing renormalises it.</strong> The neutral sector mixes $W^{3}_{L}$, $W^{3}_{R}$ and $B'$ into $\gamma$, $Z$ and $Z_R$, and the mixing is a change of basis, not a change of the corner's eigenvalue. The lepton's $B-L$ is $-1$ before the mixing and $-1$ after it.</li>
+<li><strong>The other two neutral directions are not so lucky.</strong> $T_{3R}$ is broken at $M_R$ and $T_{3L}$ at $M_W$. Of the three ingredients of the neutral sector only the corner survives untouched, and the quotation's second sentence gives the sharpest form of why: <strong>of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place.</strong> The six that touch it move it out to a colour line, so they are not in the stabiliser, and only the corner acts on the lepton line as a phase.</li>
 </ul>
-<p><strong>What the frame still does not explain.</strong> $\operatorname{tr}_{\mathbf4}D=0$ says the four eigenvalues sum to zero. It does not say that the lepton's is $-3$ rather than $-6$ with the quarks' $-2$ — equivalently $-1$ rather than $-2$ with $-\tfrac23$, in charge units. The scale of $B-L$ is a normalisation, and the pair — the array and the weight with which it enters $Y$ — carries one physical product. The trace is blind to how that product is split. So the frame explains the ratio exactly and the scale not at all.</p>
-<p><strong>The comparison in one sentence each.</strong> <em>Standard Model: one scale is free, and the whole table, ratio included, is fixed once the content and the single-doublet Yukawa structure are assumed. Frame: the ratio is fixed by the trace, with nothing assumed beyond the declaration, and the scale is a split of one product.</em> Both sentences are about what is assumed, and neither is about explanatory reach.</p>
+<p><strong>What this buys, in one sentence.</strong> The lepton line is an eigenline of the unbroken corner, with a fixed eigenvalue, at every scale; therefore the lepton's share of $B-L$ is exactly $-1$ and no dynamics below $M_C$ can change it.</p>
+<h2 id="quotation-five-the-exponential-and-the-relative-phase">Quotation Five: the Exponential, and the Relative Phase</h2>
+<p><strong>The detail article, §$B'$, on the exponential of the array:</strong></p>
+<blockquote>
+<p><strong>The array moves no index and turns no plane</strong>; it multiplies the four lines by four phases.</p>
+</blockquote>
+<p><strong>What follows: one global phase and one physical phase.</strong> The four phases are $e^{-3i\theta}$ and $e^{i\theta}$ three times, so the matrix factorises into a scalar and a single distinguished phase:</p>
+<p>$$
+\exp(\theta\,iD)=e^{i\theta}\operatorname{diag}\bigl(e^{-4i\theta},\,1,\,1,\,1\bigr).
+$$</p>
+<p><strong>Only $4\theta$ is physical.</strong> The common factor $e^{i\theta}$ multiplies every line and can be removed by a global rephasing; what remains is a phase on the lepton line at four times the rate of the rotation parameter.</p>
+<p><strong>The $4$ is the number of lines, and here the arithmetic closes.</strong> The difference between the two eigenvalues is $\ell-q=-(N-1)q-q=-Nq$, and with $q=1$ and $N=4$ it is $4$. <strong>So the relative phase between the lepton and the colours advances $N$ times as fast as the common phase</strong>, the same $N$ that appears as $N-1$.</p>
+<p><strong>One exact consequence, easy to state and easy to check.</strong> Set $4\theta=2\pi$. Then $\exp(\theta\,iD)$ is a multiple of the identity, and it happens four times in a full turn:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\theta$</th>
+<th>$\exp(\theta\,iD)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$\mathrm I_4$</td>
+</tr>
+<tr>
+<td>$\tfrac{\pi}{2}$</td>
+<td>$i\,\mathrm I_4$</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>$-\mathrm I_4$</td>
+</tr>
+<tr>
+<td>$\tfrac{3\pi}{2}$</td>
+<td>$-i\,\mathrm I_4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>At $\theta=\tfrac{\pi}{2}$ the lepton and the three colours carry the same phase</strong>, and the "one against three" asymmetry disappears: a quarter turn removes it. That is the exponential form of the statement that the lepton and the quarks differ by four units of the corner's charge, and no reader can make it from the trace alone.</p>
+<h2 id="one-direction-three-normalisations">One Direction, Three Normalisations</h2>
+<p><strong>The quoted norm $12$ fixes the normalisation of the direction, and the rest is division.</strong> The detail article states "norm $12$ because $9+1+1+1=12$", that is $\operatorname{tr}\bigl((iD)^{\dagger}iD\bigr)=12$ in the fundamental. Two other normalisations of the same direction are in use in the corpus, and both follow by scaling:</p>
+<p>$$
+\operatorname{tr}\bigl((iD)^{\dagger}iD\bigr)=12,\qquad
+\operatorname{tr}\bigl((B-L)^{\dagger}(B-L)\bigr)=\tfrac19\cdot 12=\tfrac43,\qquad
+\operatorname{tr}\bigl((T^{15})^{\dagger}T^{15}\bigr)=\tfrac{1}{24}\cdot 12=\tfrac12 .
+$$</p>
+<p><strong>The conversion between the last two is one number</strong>, $B-L=\sqrt{\tfrac{8}{3}}\,T^{15}$, because $\tfrac43$ divided by $\tfrac12$ is $\tfrac83$. A reader who meets $T^{15}$ in a gauge article and $iD$ in the array articles is meeting one direction in two normalisations, and the ratio of the norms is the dictionary.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>name</th>
+<th>array</th>
+<th>norm</th>
+<th>where it is used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$iD$</td>
+<td>$\operatorname{diag}(-3i,i,i,i)$</td>
+<td>$12$</td>
+<td>the array articles, and this one</td>
+</tr>
+<tr>
+<td>$B-L$</td>
+<td>$\operatorname{diag}(-1,\tfrac13,\tfrac13,\tfrac13)$</td>
+<td>$\tfrac43$</td>
+<td>the charge statements, and this one</td>
+</tr>
+<tr>
+<td>$T^{15}$</td>
+<td>$\operatorname{diag}(-3,1,1,1)/\sqrt{24}$</td>
+<td>$\tfrac12$</td>
+<td>the gauge articles and the running</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The displayed array in the corpus's own notation is $D$, not $iD$.</strong> The physics articles print $D=\operatorname{diag}(-3,1,1,1)$ and the generator is $iD$; the difference is the factor that makes the array anti-Hermitian, which the boson articles discuss and on which no charge statement depends. <strong>This article prints $D$ in its charge statements and $iD$ when it is speaking of the generator</strong>, and that is the whole of the convention.</p>
+<h2 id="the-comparison-with-the-standard-model">The Comparison with the Standard Model</h2>
+<p><strong>The claim is about assumptions, not about reach, and it has to be stated in that form.</strong> The Standard Model assigns five hypercharges and then imposes four anomaly conditions; the frame fixes one array and reads its trace. <strong>Both reach the ratio.</strong> The difference is the price.</p>
+<p><strong>The Standard Model's system, solved on its own content.</strong> With the content assumed, the three linear conditions $\operatorname{tr}(T_{3L}^{2}Y)=0$, $\operatorname{tr}Y=0$ and the gravitational one leave a two-dimensional space of solutions, spanned by $(1,1,1,-3,-6)$ and $(0,1,-1,0,0)$; the cubic $\operatorname{tr}Y^{3}=0$ cuts it to three rays, and one of them is the physical assignment. <strong>The cubic is satisfied automatically on this content once the linear ones hold</strong>, so the derivation is shorter than it looks, but the field list and the single-doublet Yukawa structure are inputs.</p>
+<p><strong>The frame's system.</strong> One array, declared to have three equal entries and one corner. The trace gives the ratio; (A) gives the interpretation; nothing else is chosen. <strong>There is no cubic to impose</strong>, because there is no assignment to solve: the charge is a multiple of one eigenvalue.</p>
+<p><strong>Where the advantage is real, and where it is not.</strong> It is real in robustness: a new quartet added to the frame contributes zero to the trace and cannot move the ratio, whereas a new chiral field in the Standard Model is a new unknown in the same system. It is not real in reach: neither theory fixes the value of $e$, and neither explains why the lepton's eigenvalue is $-3$ rather than $-6$. <strong>The gain is parsimony.</strong></p>
 <h2 id="what-is-explained-and-what-is-not">What Is Explained and What Is Not</h2>
-<p><strong>A four-row ledger, so that the claim cannot be inflated.</strong></p>
+<p><strong>A four-row table, so that the claim cannot be inflated.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -274,12 +331,12 @@ $$</p>
 <tbody>
 <tr>
 <td>why is $Q_p=-Q_e$?</td>
-<td>the tracelessness of $B-L$</td>
+<td>the tracelessness of $D$</td>
 <td>because $3q+\ell=0$</td>
 </tr>
 <tr>
 <td>why is every charge a multiple of $e/3$?</td>
-<td>the same, plus the integrality of $\ell$</td>
+<td>the corner entry, plus the integrality of $\ell$</td>
 <td>bookkeeping</td>
 </tr>
 <tr>
@@ -294,33 +351,15 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The first row is the frame's genuine answer.</strong> Proton–electron neutrality is a theorem in the frame and a coincidence in the Standard Model. It is the strongest claim this article makes about electromagnetic physics, and it is strong because it is small and exact.</p>
-<p><strong>The third row is a convention, and which convention has to be named.</strong> Saying "the electron has charge $-1$" is not a measurement, but it is not arbitrary either. Only the product of the array with its weight in $Y$ is physical, and the pair — the scale of $B-L$ and the coefficient in $Y=T_{3R}+c\,(B-L)$ — can be split more than one way without changing the product. The array $(-3,+1,+1,+1)$ with $c=\tfrac16$ prints one set of numbers; the array $(-1,\tfrac13,\tfrac13,\tfrac13)$ with $c=\tfrac12$ prints the same set, because the product is the same. Two different conventions, one physics. What the trace fixes is the ratio inside the array, and that is why the second row is the one with content: "the electron's charge is three times the down quark's" is printed identically by both conventions, and "$-1$" is not.</p>
-<p><strong>And the scaling of the earlier section is the other case, which is why the two must not be run together.</strong> There the weight was held and only the array was rescaled, and the charges did change. That is exactly what shows the trace is blind to the scale: it survives a change that the physics does not survive. So the trace fixes a ratio and nothing else, and the scale is fixed by the convention $c$ and by the measured $e$.</p>
-<p><strong>The fourth row is outside any group theory.</strong> $e$ is a coupling; it runs; its value at a scale is a measured input. No trace fixes it, and the frame relates it to another coupling rather than explaining it.</p>
-<p><strong>What would refute the claim, so that it is a claim and not a slogan.</strong> Three ways, and naming them is part of the argument.</p>
-<ul>
-<li><strong>If the fourth colour were not gauged.</strong> The trace would still hold as algebra and would say nothing about nature. The whole content is conditional on (A), and (A) is a declaration.</li>
-<li><strong>If a fourth-colour-like resonance had the wrong $B-L$.</strong> A state coupled to $q\bar q$ rather than to $q\ell$, or one whose $B-L$ is not proportional to $D$, would break the identification of the diagonal with $B-L$, and with it the reading of the three entries as quarks.</li>
-<li><strong>If a charge outside $\tfrac13\mathbb{Z}$ were found in the visible sector.</strong> A state charged under a new $\mathrm{U}(1)$ that mixes kinetically with hypercharge carries a charge irrational in units of $e$, and no current measurement excludes it. That would make "every charge lies in $\tfrac13\mathbb{Z}$" false as a universal statement, and the trace a statement about one lattice rather than about all charges.</li>
-</ul>
-<p>None of the three has happened, and the third is the one a future experiment could deliver.</p>
-<h2 id="the-same-trace-in-the-corpuss-own-language">The Same Trace in the Corpus's Own Language</h2>
-<p><strong>The corpus's $\mathfrak{su}(4)$.</strong> Its Cartan subalgebra is generated by three diagonal traceless matrices. $D=\operatorname{diag}(-3,1,1,1)$ is one of them, and its tracelessness is not a choice but the definition of $\mathfrak{su}(4)$ as a subalgebra of $\mathfrak{u}(4)$.</p>
-<p><strong>What this article adds to that.</strong> That $D$'s eigenvalue array, read as $B-L$ up to normalisation, is the one that distinguishes the fourth direction from the three, and that this reading is (A). So nothing in the algebra changes; what changes is the statement of which diagonal direction the physical $B-L$ is, and what follows from it.</p>
-<p><strong>The diagonal was forced, given the split.</strong> The centraliser of $\mathfrak{su}(3)$ in $\mathfrak{su}(4)$ is one-dimensional and is spanned by $iD$, so $D$ is the only traceless diagonal that commutes with colour: one value on the colour three-space and a different one on the lepton line. So there was no choice of which diagonal to call $B-L$, conditional on the split. The split is (A); the diagonal is forced.</p>
-<p><strong>The trace that quantises the charge is the trace that cancels the anomaly.</strong> $\operatorname{tr}_{\mathbf4}D=0$ is also the mixed row of the anomaly ledger. On the left-handed multiplet $(\mathbf4,\mathbf2,\mathbf1)$ the right-handed isospin vanishes, so $Y=\tfrac16D$; the two components of the doublet carry $T_{3L}^2=\tfrac14$ each, so their sum is $\tfrac12$; and the row is</p>
-<p>$$
-\operatorname{tr}\bigl(T_{3L}^2Y\bigr)=\tfrac12\cdot\tfrac16\operatorname{tr}_{\mathbf4}D=\tfrac1{12}\operatorname{tr}_{\mathbf4}D=0 ,
-$$</p>
-<p>while the $(\bar{\mathbf4},\mathbf1,\mathbf2)$ contributes nothing because $T_{3L}=0$ there and no right-handed field enters this row. So the number that quantises the charge and the number that cancels the row are one number, and the row is a fixed multiple of it: the factor $\tfrac1{12}$ is the doublet half times the weight $\tfrac16$, and neither depends on the charges; in the $B-L$ normalisation the same row reads $\tfrac14\operatorname{tr}_{\mathbf4}(B-L)$ and vanishes for the same reason. The coincidence is not a coincidence: an anomaly coefficient is defined as a trace of the charge over the fermions in the multiplet, so a frame in which charge is quantised by a trace is a frame in which this particular row vanishes by construction. The two results are one equation read twice. <a href="anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html">Anomalies and Anomaly Cancellation</a> computes the four rows and records that all four now hold identically.</p>
+<p><strong>The first row is the frame's genuine answer</strong>, and quotation three shows it twice: once in $D$, once in isospin. <strong>The third row is a convention and is not arbitrary</strong>: only the product of the array with the coupling enters physics, so the split between them is a choice, and the corpus states which choice it makes. <strong>The fourth row is outside any group theory</strong>: $e$ is a coupling, it runs, and its value at a scale is measured.</p>
+<p><strong>What would refute the claim.</strong> Three ways, and naming them is part of the argument. If the fourth colour were not gauged, the trace would hold as algebra and say nothing about nature. If a fourth-colour-like resonance had the wrong $B-L$, the identification of the corner with the lepton line would be wrong. If a charge outside $\tfrac13\mathbb{Z}$ were found in the visible sector, the lattice derived from the two eigenvalues would be wrong.</p>
 <h2 id="the-checks">The Checks</h2>
-<p>Thirteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet ordered $(t,x,y,z)$.</p>
+<p>Fifteen recomputations, all on the quoted array, at $\operatorname{tr}$ in the fundamental.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>claim</th>
-<th>check</th>
+<th>computation</th>
 <th>result</th>
 </tr>
 </thead>
@@ -331,76 +370,81 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>the trace in charge units</td>
-<td>$\tfrac13+\tfrac13+\tfrac13-1$</td>
-<td>$0$, the same divided by three</td>
+<td>the general $N$</td>
+<td>$\ell+(N-1)q$ at $N=4$, $q=1$</td>
+<td>$-3+3=0$</td>
 </tr>
 <tr>
-<td>the relation</td>
-<td>$3q+\ell$ at $q=+1$, $\ell=-3$</td>
-<td>$0$, and at $q=\tfrac13$, $\ell=-1$</td>
+<td>the scale is free</td>
+<td>$\operatorname{diag}(-6,2,2,2)$</td>
+<td>trace $0$, same ratio</td>
 </tr>
 <tr>
-<td>the quantum</td>
-<td>$(N-1)q+\ell=0$ at $N=4$</td>
-<td>$e/3$, and the down quark attains it</td>
+<td>the corner is forced</td>
+<td>three equal entries fixed</td>
+<td>the fourth is $-3q$</td>
 </tr>
 <tr>
-<td>the corner entry</td>
-<td>the $-3$ against the three colours</td>
-<td>the count of colour lines</td>
+<td>the charge set</td>
+<td>$T_{3L}+T_{3R}+\tfrac16D$ on the seven states</td>
+<td>$0,-1,\tfrac23,-\tfrac13$</td>
 </tr>
 <tr>
-<td>the two orderings</td>
-<td>$D$ against $\operatorname{diag}\bigl(\tfrac13,\tfrac13,\tfrac13,-1\bigr)$</td>
-<td>the same matrix, lepton first against lepton last</td>
+<td>the unit</td>
+<td>differences $\tfrac23$, $\tfrac13$, $1$</td>
+<td>lattice $\tfrac13\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>the unit is attained</td>
+<td>$Q_d$</td>
+<td>$-\tfrac13$</td>
 </tr>
 <tr>
 <td>the scaling</td>
-<td>$3\times\bigl(-1,\tfrac13,\tfrac13,\tfrac13\bigr)$</td>
-<td>$(-3,+1,+1,+1)=D$, still traceless</td>
+<td>$3\times(-1,\tfrac13,\tfrac13,\tfrac13)$</td>
+<td>$(-3,1,1,1)=D$</td>
 </tr>
 <tr>
-<td>the centraliser</td>
-<td>$\mathfrak z_{\mathfrak{su}(3)}(\mathfrak{su}(4))$</td>
-<td>one-dimensional, spanned by $iD$</td>
+<td>the proton and the electron</td>
+<td>$\sum D$ and $\sum T_3$ over three quarks and one lepton</td>
+<td>$0$ and $0$, separately</td>
 </tr>
 <tr>
 <td>the mixed anomaly row</td>
-<td>$\operatorname{tr}(T_{3L}^2Y)$ on $(\mathbf4,\mathbf2,\mathbf1)$</td>
-<td>$\tfrac1{12}\operatorname{tr}_{\mathbf4}D=0$</td>
+<td>$\tfrac12\cdot\tfrac16\operatorname{tr}_{\mathbf4}D$</td>
+<td>$0$</td>
 </tr>
 <tr>
-<td>the three normalisations</td>
-<td>$iD$ against $\tfrac13D$ against $D/\sqrt{24}$</td>
-<td>norms $12$, $\tfrac43$, $\tfrac12$, one direction</td>
+<td>the norm chain</td>
+<td>$12$ against $\tfrac{12}{9}$ against $\tfrac{12}{24}$</td>
+<td>$\tfrac43$, $\tfrac12$</td>
 </tr>
 <tr>
-<td>the electric form</td>
-<td>$3Q_d-Q_e$ at $Q_d=-\tfrac13$, $Q_e=-1$</td>
-<td>$0$, both at $T_3=-\tfrac12$</td>
+<td>the dictionary</td>
+<td>$B-L$ against $\sqrt{\tfrac83}\,T^{15}$</td>
+<td>equal</td>
 </tr>
 <tr>
-<td>the Standard Model's system</td>
-<td>content assumed, $\operatorname{tr}(T_{3L}^2Y)=\operatorname{tr}Y=0$</td>
-<td>one scale free, $Y_H=3Y_q$, cubic automatic</td>
+<td>the factorisation</td>
+<td>$\exp(\theta iD)$ against $e^{i\theta}\operatorname{diag}(e^{-4i\theta},1,1,1)$</td>
+<td>equal</td>
 </tr>
 <tr>
-<td>the frame's freedom</td>
-<td>one array, trace fixed</td>
-<td>the ratio, not the scale</td>
+<td>the central values</td>
+<td>$\exp(\tfrac{\pi}{2}iD)$</td>
+<td>$i\,\mathrm I_4$</td>
+</tr>
+<tr>
+<td>the exactness</td>
+<td>$[iD,\Phi_0]$, and the nine that commute with $D$</td>
+<td>$0$, and the eight gluons plus $B'$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p><strong>The relation.</strong> $\operatorname{tr}_{\mathbf4}D=0$, so $3q+\ell=0$, so the quark's eigenvalue is minus a third of the lepton's, hence the down quark's charge is a third of the electron's, hence the proton and the electron cancel exactly. In the charge's own normalisation the same statement is $\operatorname{tr}_{\mathbf4}(B-L)=0$.</p>
-<p><strong>Why it holds.</strong> Because $B-L$ is a generator of $\mathrm{SU}(4)$ and generators are traceless — not because the charges were chosen well.</p>
-<p><strong>What it needs.</strong> (A), to say that the single eigenvalue $-3$ is the lepton and the three $+1$ are the quarks. The trace gives the arithmetic, the declaration gives the interpretation.</p>
-<p><strong>The quantum.</strong> The charge quantum is $e/(N-1)$, and it is $e/3$ because there are three colours; four colours would give quarters. The unit is attained, because the four charges of a quartet are $\tfrac23$, $-\tfrac13$, $0$ and $-1$, and they generate exactly $\tfrac13\mathbb{Z}$.</p>
-<p><strong>The comparison.</strong> Both theories reach the ratio; the difference is the price. The Standard Model fixes the whole table, ratio included, from one scale once its field list and its single-doublet Yukawa structure are assumed. The frame fixes the ratio from one trace with nothing assumed beyond the declaration, and leaves the scale a split of one product. The gain is parsimony, not reach: neither theory fixes $e$, and neither explains the printed value of any charge.</p>
-<p><strong>The limits.</strong> The ratio is explained; the overall scale is set by a stated convention of normalisation; the value of $e$ is measured.</p>
-<p><strong>The economy.</strong> The trace that quantises the charge is the trace that cancels the mixed anomaly: the row is $\tfrac14\operatorname{tr}_{\mathbf4}(B-L)$, a fixed multiple of the same number, so one trace does two jobs.</p>
-<p><strong>The corpus's form.</strong> $D=\operatorname{diag}(-3,1,1,1)$ traceless, one-dimensional centraliser, so the diagonal was forced once the split was declared.</p>
+<p><strong>Five quotations, five results.</strong> The trace is zero, so $\ell=-3q$, so the down quark's charge is a third of the electron's, so proton and electron cancel. The corner entry is $-3$, so the quantum is $e/(N-1)=e/3$ and it is attained. The array is $B-L$ times three, so the seven charges of a generation are one addition each and the mixed anomaly row vanishes. The array commutes with the vacuum, so $B-L$ is exact at every scale and the lattice does not move. The exponential is one global phase times a phase at four times the rate, so the lepton and the colours differ by $N$ units of the corner's charge and agree after a quarter turn.</p>
+<p><strong>The one input that is not in the quotations</strong> is the identification (A), which says that the corner is the lepton and the three equal entries are the colours. Without it the trace is arithmetic about a matrix; with it the arithmetic is a statement about nature.</p>
+<p><strong>The limit.</strong> The ratio is explained, the scale is a stated normalisation, and the value of $e$ is measured. Nothing in the five quotations touches the third.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -412,63 +456,64 @@ $$</p>
 <tbody>
 <tr>
 <td>$D$</td>
-<td>$\operatorname{diag}(-3,1,1,1)$ on $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the corpus's corner array; the array the boson articles print, and the one this article's displays use</td>
+<td>$\operatorname{diag}(-3,1,1,1)$ on $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the corpus's corner array</td>
 </tr>
 <tr>
 <td>$iD$</td>
-<td>the same as a generator of $\mathfrak{su}(4)$, the fifteenth, with $\operatorname{tr}(iD)^2=12$; the name it carries in the array articles</td>
+<td>the same as a generator of $\mathfrak{su}(4)$, with $\operatorname{tr}((iD)^{\dagger}iD)=12$; the array the detail article prints</td>
 </tr>
 <tr>
-<td>$B-L$</td>
-<td>baryon number minus lepton number, $B-L=\tfrac13D$, a Cartan generator of $\mathrm{SU}(4)$ with eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$; the name the charge carries</td>
-</tr>
-<tr>
-<td>$B'$</td>
-<td>the boson of that generator, the fourth entry of the neutral block beside $W^3_L$ and $W^3_R$</td>
-</tr>
-<tr>
-<td>$T^{15}$</td>
-<td>the same Cartan normalised by $\operatorname{tr}(T^{15})^2=\tfrac12$, so $B-L=\sqrt{8/3}\,T^{15}$; the name the gauge articles carry</td>
-</tr>
-<tr>
-<td>$q,\ell$</td>
-<td>the quark and lepton eigenvalues, $+1$ and $-3$ on $D$ and $+\tfrac13$ and $-1$ on $B-L$</td>
+<td>$\ell$, $q$</td>
+<td>the corner and the colour eigenvalue, $-3$ and $+1$ on $D$, $-1$ and $\tfrac13$ on $B-L$</td>
 </tr>
 <tr>
 <td>$N$</td>
-<td>the size of the fundamental, one lepton plus $N-1$ colours; $N=4$ here</td>
+<td>the size of the fundamental, one lepton line and $N-1$ colour lines; $N=4$ here</td>
+</tr>
+<tr>
+<td>$B-L$</td>
+<td>$\tfrac13D$, with eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$</td>
+</tr>
+<tr>
+<td>$T^{15}$</td>
+<td>$D/\sqrt{24}$, with $\operatorname{tr}((T^{15})^{\dagger}T^{15})=\tfrac12$</td>
+</tr>
+<tr>
+<td>$B'$</td>
+<td>the boson of $iD$, the fourth entry of the neutral block</td>
 </tr>
 <tr>
 <td>$Y$</td>
-<td>$T_{3R}+\tfrac16D=T_{3R}+\tfrac12(B-L)$, hypercharge as a combination of two factors</td>
+<td>$T_{3R}+\tfrac12(B-L)=T_{3R}+\tfrac16D$</td>
 </tr>
 <tr>
 <td>$Q$</td>
-<td>$T_{3L}+T_{3R}+\tfrac16D=T_{3L}+T_{3R}+\tfrac12(B-L)$, the electric charge</td>
+<td>$T_{3L}+T_{3R}+\tfrac16D$</td>
+</tr>
+<tr>
+<td>(A)</td>
+<td>the identification: the corner eigenvalue is the lepton's, the three equal ones are the colours'</td>
 </tr>
 <tr>
 <td>$\tfrac13\mathbb{Z}$</td>
-<td>the charge lattice, attained by the down quark's $-\tfrac13$</td>
-</tr>
-<tr>
-<td>$\mathfrak z_{\mathfrak{su}(3)}(\mathfrak{su}(4))$</td>
-<td>the centraliser of the colour subalgebra, one-dimensional</td>
+<td>the charge lattice generated by $0$, $-1$, $\tfrac23$, $-\tfrac13$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="where-the-twenty-one-generators-go-one-ledger-three-readings-and-the-one-abelian-factor.html">Where the Twenty-One Generators Go: One Ledger, Three Readings, and the One Abelian Factor</a>. The companion: where each generator sits, what it becomes, the sort by the time line, the real form of the nine, and why hypercharge is a mixture rather than a factor.</li>
-<li><a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. The group, the sixteen, the declaration (A), and $15=8+1+6$ with $D=\operatorname{diag}(-3,1,1,1)$.</li>
-<li><a href="the-21-axf-matrices-of-the-bosons-in-detail.html">The 21 AXF Matrices of the Bosons in Detail: Every Matrix, Every Boson, Its Entries, Its Spectrum and Its Fate</a>. The twenty-one one at a time, with $iD$ printed as the corner array and its boson named $B'$.</li>
-<li><a href="construction-of-the-axf-matrices-of-the-twenty-one-generators.html">Construction of the AXF Matrices of the Twenty-One Generators</a>. Where $iD=i(W_{xx}+W_{yy}+W_{zz})$ is built from the same three words as $d_{2}$ and $d_{3}$, and why the factor $i$ is forced.</li>
-<li><a href="the-electroweak-gauge-group-and-the-hypercharge-assignment.html">The Electroweak Gauge Group and the Hypercharge Assignment</a>. The anomaly system solved in full, the three rays, and the discrete choice among them.</li>
-<li><a href="anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html">Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model</a>. The four hypercharge rows, all satisfied identically on the sixteen.</li>
-<li><a href="quantum-chromodynamics-as-the-residual-of-su4.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$</a>. Why the eight are unbroken at every scale.</li>
-<li><a href="the-photon-in-biquaternionic-form.html">The Photon in Biquaternionic Form</a>. The mixture that survives the chain, before the two vacua are imposed.</li>
-<li><a href="the-one-coupling-that-returns-the-standard-model.html">The One Coupling That Returns the Standard Model</a>. The matching relations and the scale-bearing statements this article does not print.</li>
+<li><a href="the-21-axf-matrices-of-the-bosons-in-detail.html">The 21 AXF Matrices of the Bosons in Detail: Every Matrix, Every Boson, Its Entries, Its Spectrum and Its Fate</a>. The article this one quotes; its §$B'$ is the source of all five quotations.</li>
+<li><a href="construction-of-the-axf-matrices-of-the-twenty-one-generators.html">Construction of the AXF Matrices of the Twenty-One Generators</a>. Where $iD=i(W_{xx}+W_{yy}+W_{zz})$ is built from one sum and two differences, and why the factor $i$ is forced.</li>
+<li><a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. The declaration (A), which is the one input the quotations do not contain.</li>
+<li><a href="where-the-twenty-one-generators-go-one-ledger-three-readings-and-the-one-abelian-factor.html">Where the Twenty-One Generators Go: One Ledger, Three Readings, and the One Abelian Factor</a>. The array's address in the group, and why $B-L$ rather than hypercharge is what $\mathrm{SU}(4)$ supplies.</li>
+<li><a href="the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html">The Neutral Sector of the Four Colours Left–Right Model: Three Ingredients, Rank Two, One Null Direction</a>. Where $Y=T_{3R}+\tfrac12(B-L)$ comes from, and the mixing that leaves the corner's eigenvalue alone.</li>
+<li><a href="the-electroweak-gauge-group-and-the-hypercharge-assignment.html">The Electroweak Gauge Group and the Hypercharge Assignment</a>. The anomaly system solved in full: the three rays the comparison section trades against one trace.</li>
+<li><a href="anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html">Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model</a>. The four rows, and why they vanish identically here.</li>
+<li><a href="the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html">The Quantum Numbers Below the Breaking: Colour, $B-L$, Weak Isospin and the Electric Charge</a>. The exactness that quotation four establishes, read as a table of fates.</li>
+<li><a href="the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales</a>. The chain whose first step the corner survives.</li>
+<li><a href="the-one-coupling-that-returns-the-standard-model.html">The One Coupling That Returns the Standard Model</a>. The scale-bearing statements this article does not print.</li>
 </ul>
-<p><strong>The traps.</strong> Do not say "charge quantisation is derived" without the two clauses: the ratio is, the scale is not. Do not drop (A): the trace alone gives no quark–lepton assignment. Do not read the third and fourth rows of the four-row table as failures of the frame; they are outside any group theory, and the Standard Model does not answer them either. Do not say the trace is "not homogeneous": it is homogeneous, and what does the work is that its coefficients are the integer counts and that the normalisation is fixed by the embedding. Do not say "the Standard Model cannot get thirds": it gets them from its field list, and this article's claim is that the frame gets them from less. Do not write $3Q_d+Q_e=0$ for electric charges: the additive form holds on the $B-L$ eigenvalues, and on electric charges the relation is $3Q_d=Q_e$. Do not call the electron's charge arbitrary: it is fixed by a normalisation convention, and a convention that is stated is not the same thing as no answer.</p>
+<p><strong>The traps.</strong> Do not say "charge quantisation is derived" without the two clauses: the ratio is, the scale is not. Do not drop (A): the trace alone gives no quark–lepton assignment. Do not say the trace is "not homogeneous": it is homogeneous, and what does the work is that its coefficients are the integer counts and that the normalisation is fixed by naming the array. Do not confuse $-3$ with "the trace removed": one is an eigenvalue, the other a deletion from the list of sixteen. Do not write $3Q_d+Q_e=0$ for electric charges; the additive form holds on the $B-L$ eigenvalues, and on electric charges the relation is $3Q_d=Q_e$. Do not call the electron's charge arbitrary: it is fixed by a normalisation convention, and a convention that is stated is not the same thing as no answer. Do not treat the four phases of the exponential as four independent facts: only the relative phase $4\theta$ is physical.</p>
       </div>
     </main>
   </div>
