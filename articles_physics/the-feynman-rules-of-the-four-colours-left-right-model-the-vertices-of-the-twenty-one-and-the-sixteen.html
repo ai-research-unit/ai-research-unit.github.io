@@ -74,14 +74,14 @@
 <p>The standing of this article, stated first because everything below depends on it. <strong>The Lagrangian is the corpus's, the group is the corpus's, and the rules are transcription.</strong> Nothing here is a framework result: the twenty-one generators, the sixteen fermions and one covariant derivative are the content of <a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model</a>, and the matrix algebra is the content of <a href="the-commutation-table-of-the-twenty-one-generators-441-entries-164-nonzero-and-six-rules.html">The Commutation Table of the Twenty-One Generators</a>. <strong>What the article adds is the dictionary those two articles do not print</strong>: which of the twenty-one couples to which pair of the sixteen, with what group factor, at what normalisation, and with which sign.</p>
 <p><strong>Four things, and they are the four sections that carry weight.</strong></p>
 <ul>
-<li><strong>The vertex list.</strong> The twenty-one gauge fields against the sixteen fermions, read entry by entry off the printed arrays. Every boson–fermion vertex matrix is named below by the two fermion lines it joins, and there are $204$ nonzero entries in total.</li>
+<li><strong>The vertex list.</strong> The twenty-one gauge fields against the sixteen fermions, read entry by entry off the printed arrays. Every boson–fermion vertex matrix is named below by the two fermion lines it joins, and on the eight states of one chirality there are $88$ nonzero entries in total.</li>
 <li><strong>The normalisation.</strong> The printed arrays are not orthonormal in the trace: $\operatorname{tr}(G^{\dagger}G)=2$ for the planes and the colour diagonals, $12$ for the corner, and $1$ for the weak arrays. <strong>A canonical kinetic term therefore forces a family-dependent rescaling, and that rescaling is what makes "one coupling" a statement about the normalised basis and not about the printed one.</strong> No article in the corpus says this before the rules are written, and it is the reason a rule copied in the printed basis carries the wrong relative weight.</li>
 <li><strong>The two-index rule.</strong> Every vertex is $X\otimes\mathbb{1}_2$ on the quartet times the doublet slot. <strong>A colour rotation cannot change a doublet slot and a weak rotation cannot change a colour line</strong>, and that one bracket decides the shape of every vertex in the table.</li>
 <li><strong>One coupling per block, and no equality.</strong> $g_4$, $g_L$ and $g_R$ stay symbolic throughout. The frame fixes what each multiplies and fixes no value.</li>
 </ul>
 <p><strong>What the article does not do, and cannot.</strong> It does not derive a fermion action from the algebra. The spin-$\tfrac12$ sector has twelve electroweak articles and six strong ones and <strong>no action in either</strong>, because a fermion kinetic term needs the sector's connection acting on the fermion's carrier and neither a chiral $\mathrm{SU}(2)_L$ nor a colour $\mathrm{SU}(3)_c$ is in $\mathbb{B}$; that is the ledger of <a href="../articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.html">the internal note on the spin of the Lagrangian articles</a>. <strong>The fermion Lagrangian used here is transcribed, and every rule that contains a fermion is a rule of the transcribed Lagrangian.</strong> The article stays at tree level: the corpus's scattering content is tree level, and loops would need the renormalisation that <a href="the-s-matrix-in-biquaternionic-form.html">the S-matrix article</a> records as open.</p>
 <h2 id="conventions">Conventions</h2>
-<p><strong>The corpus's coordinates, stated once.</strong> The derivative is $\partial/\partial R_{\imath}$, every four-index sum obeys the sign rule $\sum_{\imath}X_{\imath}Y_{\imath}=-X\cdot Y$, and the metric is the corpus's $(1,1,1,1)$ on the biquaternion coordinates. <strong>A display here and the same display in a text with a mostly-minus metric differ by the sign of every summed pair.</strong> A Dirac matrix is written low and contracted as $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}X_{\imath}$ with $\varepsilon_{t}=+1$. The measure is $\mathrm{d}^{4}r$.</p>
+<p><strong>The corpus's coordinates, stated once.</strong> The derivative is $\partial/\partial R_{\imath}$ and the metric is the identity $(1,1,1,1)$ on the biquaternion coordinates, so every index is low and every contraction is a plain sum, $\sum_{\imath}X_{\imath}Y_{\imath}=X\cdot Y$, with no sign hidden in the summation. <strong>A display here and the same display in a text with a mostly-minus metric differ by the sign of every summed pair</strong>, which is why the sums are written out. The measure is $\mathrm{d}^{4}r$.</p>
 <p><strong>The indices.</strong> The quartet index runs over $(t,x,y,z)$, and the fermion tables of <a href="classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html">the classification</a> name the same three directions $r,g,b$; <strong>the two namings are one convention and this article uses $(t,x,y,z)$ inside every matrix and $(r,g,b)$ inside every table about quarks.</strong> The doublet index runs over two values per chirality, written $\uparrow$ and $\downarrow$ in the classification and $u,d$ here. The family index runs over three and never mixes with either. <strong>The Lorentz index is $\imath$ and $\jmath$</strong>, and it is low everywhere because the metric is the identity.</p>
 <p><strong>The matrices, and the one place where a convention must be declared.</strong> The printed arrays are anti-hermitian: $A_{jk}=E_{jk}-E_{kj}$ is real antisymmetric, $iS_{jk}=i(E_{jk}+E_{kj})$ is imaginary symmetric, and $iD$, $d_2$, $d_3$ are imaginary diagonal. <strong>A Feynman rule needs hermitian generators and a canonical kinetic term</strong>, so the rule uses</p>
 <p>$$
@@ -102,7 +102,7 @@ $$</p>
 <p><strong>Four pieces, and the vertex budget is in the third column.</strong></p>
 <p>$$
 \mathcal{L}=-\tfrac14\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath}
-+\sum_{f}\bar\xi_{f}\Bigl(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}D_{\imath}\Bigr)\xi_{f}
++\sum_{f}\bar\xi_{f}\Bigl(-i\sum_{\imath}\gamma_{\imath}D_{\imath}\Bigr)\xi_{f}
 +\bigl(D_{\imath}\Phi\bigr)^{\dagger}\bigl(D_{\imath}\Phi\bigr)-V(\Phi)
 +\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}+\mathcal{L}_{\mathrm{Yuk}} .
 $$</p>
@@ -159,7 +159,7 @@ $$</p>
 \end{cases}
 $$</p>
 <p><strong>The consequence is immediate and it is not cosmetic.</strong> A canonical gauge kinetic term is $-\tfrac14\sum_{a}(\partial_{\imath}A_{a,\jmath}-\partial_{\jmath}A_{a,\imath})^{2}$, and the trace form of $\operatorname{tr}(F_{\imath\jmath}F_{\imath\jmath})$ in the printed basis is not diagonal with one coefficient. <strong>With $A_{\imath}=A^{a}_{\imath}G_{a}$ and $\operatorname{tr}(G_{a}G_{b})=T_{a}\delta_{ab}$ the kinetic term is $\tfrac12T_{a}(\partial A^{a})^{2}$, and canonical normalisation needs $A^{a}\to A^{a}/\sqrt{2T_{a}}$.</strong></p>
-<p><strong>The basis is not orthogonal either, and this is the part the trace-norm table hides.</strong> Evaluating the whole $15\times15$ Gram matrix $\langle G_{a},G_{b}\rangle=\operatorname{tr}(G_{a}^{\dagger}G_{b})$ leaves exactly one nonzero off-diagonal entry:</p>
+<p><strong>The basis is not orthogonal either, and the trace-norm table reports the norms and omits the one off-diagonal.</strong> Evaluating the whole $15\times15$ Gram matrix $\langle G_{a},G_{b}\rangle=\operatorname{tr}(G_{a}^{\dagger}G_{b})$ leaves exactly one nonzero off-diagonal entry:</p>
 <p>$$
 \langle d_{2},d_{3}\rangle=\operatorname{tr}\bigl(d_{2}^{\dagger}d_{3}\bigr)=-1,
 \qquad
@@ -172,13 +172,14 @@ d_{2}+d_{3}=i\operatorname{diag}(0,1,0,-1)\ \text{of norm}^{2}\ 2,
 d_{2}-d_{3}=i\operatorname{diag}(0,1,-2,1)\ \text{of norm}^{2}\ 6 .
 $$</p>
 <p><strong>So canonical normalisation takes one rotation in the colour Cartan and then one rescaling per direction, and the two steps do not commute with each other.</strong> That single rotation is the only place in the whole normalisation where two printed arrays have to be mixed before a rule can be written.</p>
+<p><strong>One check closes the section.</strong> With the rotation done and every array rescaled, the fifteen orthonormal generators satisfy $\sum_{a=1}^{15}t_{a}^{2}=-\tfrac{15}{8}\mathbb{1}$, which is $(N^{2}-1)/2N$ at $N=4$. <strong>Without the rotation the same sum is not a multiple of the identity</strong>: it gives $\operatorname{diag}(-1.875,-1.792,-2.042,-1.792)$ on $(t,x,y,z)$, and the failure sits entirely in the colour block because $d_{2}$ and $d_{3}$ both vanish on $e_{t}$. <strong>A reader who checks the lepton line alone will see the right number and conclude wrongly that no rotation is needed.</strong></p>
 <p><strong>The rescaling, stated per family.</strong></p>
 <p>$$
 \text{planes: } \tfrac12,
 \qquad
 \text{corner: } \tfrac{1}{\sqrt{24}},
 \qquad
-\text{colour Cartan: one rotation, then } \tfrac{1}{\sqrt2}\ \text{and}\ \tfrac{1}{\sqrt{12}},
+\text{colour Cartan: one rotation, then } \tfrac12\ \text{and}\ \tfrac{1}{\sqrt{12}},
 \qquad
 \text{weak arrays: } \tfrac{1}{\sqrt2}.
 $$</p>
@@ -223,7 +224,7 @@ $$</p>
 <tr>
 <td>$Z$</td>
 <td>$1$</td>
-<td>$0.3994\,g^{2}v^{2}$</td>
+<td>$0.4\,g^{2}v^{2}$</td>
 <td>the coefficient moves with $g_4/g_R$</td>
 </tr>
 <tr>
@@ -257,7 +258,7 @@ $$</p>
 </tr>
 <tr>
 <td>fermion $ij$, mass $m$</td>
-<td>$\dfrac{i\bigl(m-\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}k_{\imath}\bigr)_{ij}}{k^{2}-m^{2}+i\epsilon}$</td>
+<td>$\dfrac{i\bigl(m-\sum_{\imath}\gamma_{\imath}k_{\imath}\bigr)_{ij}}{k^{2}-m^{2}+i\epsilon}$</td>
 </tr>
 <tr>
 <td>ghost $ab$</td>
@@ -284,8 +285,8 @@ $$</p>
 <tbody>
 <tr>
 <td>fermion–gauge</td>
-<td>$204$ nonzero entries</td>
-<td>$-ig\,\varepsilon_{\imath}\gamma_{\imath}(t_{a})_{ij}$</td>
+<td>$88$ nonzero entries per chirality</td>
+<td>$-ig\,\gamma_{\imath}(t_{a})_{ij}$</td>
 <td>fermion kinetic</td>
 </tr>
 <tr>
@@ -326,13 +327,17 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The count in the first row is the one worth computing, and it is small.</strong> The vertex matrix of a gauge field is its own $4\times4$ array: a plane has twelve nonzero entries, a diagonal has four, and a weak array has eight. <strong>So the twenty-one gauge fields produce $12\cdot12+4+4+4+3\cdot8+3\cdot8=144+12+48=204$ nonzero fermion–gauge entries</strong>, each joining one quartet line to one quartet line and doubling in the doublet slot. <strong>Two hundred and four numbers, and the printed arrays already contain all of them.</strong></p>
+<p><strong>The count in the first row is the one worth computing, and it is smaller than a first guess.</strong> The vertex matrix of a gauge field is its own $4\times4$ array, and a printed array is sparse: a plane has two nonzero entries, not a full row, the corner has four, and each colour diagonal has two. <strong>Doubling for the doublet slot and summing the twenty-one,</strong>
+$$
+\underbrace{48}_{\text{twelve planes}\times2\times2}+\underbrace{16}_{\text{corner }8\, +\, \text{two diagonals }4+4}+\underbrace{24}_{\text{three weak arrays}\times8}=88,
+$$
+<strong>so one chirality has eighty-eight nonzero fermion–gauge entries and the model has $176$ counting both blocks.</strong> Each joins one quartet line to one quartet line, or one doublet slot to one doublet slot, and never both. <strong>Eighty-eight numbers per chirality, and the printed arrays already contain all of them.</strong></p>
 <p><strong>The three-gauge count is the commutation table's.</strong> Of the $441$ pairs exactly $164$ fail to commute, and each nonzero bracket $[G_{a},G_{b}]=f_{abc}G_{c}$ is a three-point vertex with legs $a$, $b$, $c$ and factor $g f_{abc}$. <strong>The article does not list $164$ vertices; it lists what the six rules say they are</strong>, because the six rules are the compact form of the table and they were verified entry by entry in the commutation article.</p>
 <p><strong>What is not in the table is a number.</strong> No vertex carries a value, because no coupling has a value, because the frame does not fix one. <strong>The rules are a shape and a factor; the numbers belong to the coupling article and to the data.</strong></p>
 <h2 id="the-fermiongauge-vertex">The Fermion–Gauge Vertex</h2>
 <p><strong>One line, and every fermion vertex is that line.</strong></p>
 <p>$$
-\Gamma^{a}_{\imath}=-ig_{4}\,\varepsilon_{\imath}\gamma_{\imath}\,\bigl(t_{a}\otimes\mathbb{1}_{2}\bigr),
+\Gamma^{a}_{\imath}=-ig_{4}\,\gamma_{\imath}\,\bigl(t_{a}\otimes\mathbb{1}_{2}\bigr),
 \qquad
 \bigl[\Gamma^{a}_{\imath},\ \mathbb{1}_{4}\otimes\tau_{i}\bigr]=0 .
 $$</p>
@@ -374,14 +379,14 @@ $$</p>
 <p><strong>Eight, one, six, and the sum is fifteen.</strong> That classification is <a href="lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html">the lepton-flavour article</a>'s and it is computed there; it is quoted here because it is the selection rule of the fermion–gauge vertex. <strong>No generator of the fifteen returns a direction inside the lepton line except a multiple of $e_{t}$</strong>, so no gauge vertex turns a lepton into a lepton, and lepton flavour has no gauge channel.</p>
 <p><strong>Worked, a gluon vertex.</strong> With $A_{xy}$ the red–green plane and $t_{xy}$ its normalised generator,</p>
 <p>$$
-\Gamma_{xy,\imath}=-ig_{4}\varepsilon_{\imath}\gamma_{\imath}\bigl(t_{xy}\otimes\mathbb{1}_{2}\bigr),
+\Gamma_{xy,\imath}=-ig_{4}\gamma_{\imath}\bigl(t_{xy}\otimes\mathbb{1}_{2}\bigr),
 \qquad
 u^{r}\to u^{g},\quad d^{r}\to d^{g},\quad Q(u^{r})=Q(u^{g})=+\tfrac23 ,
 $$</p>
 <p><strong>and the doublet slot is carried through unchanged in both rows.</strong> The two entries have the same coefficient, which is the statement that a gluon is colour-blind to the doublet index. <strong>A vertex with different coefficients in the two rows would be a colour rotation that knew the weak index, and the algebra has no such entry.</strong></p>
 <p><strong>Worked, a leptoquark vertex.</strong> With $A_{tx}$ the red plane through the lepton line,</p>
 <p>$$
-\Gamma_{tx,\imath}=-ig_{4}\varepsilon_{\imath}\gamma_{\imath}\bigl(t_{tx}\otimes\mathbb{1}_{2}\bigr),
+\Gamma_{tx,\imath}=-ig_{4}\gamma_{\imath}\bigl(t_{tx}\otimes\mathbb{1}_{2}\bigr),
 \qquad
 u^{r}\to\nu_{L},\quad d^{r}\to e_{L},
 $$</p>
@@ -395,7 +400,7 @@ $$</p>
 <p><strong>The same matrix, the same charge transfer, two different final particles</strong>, because the array moved the line and the slot stayed. <strong>The balance in both rows is the check that the two-index reading is the right one</strong>, and it is the fermion half of the $B-L$ statement of <a href="the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html">the leptoquark article</a>: the boson carries $B-L=\pm\tfrac43$ and every vertex conserves $B-L$ exactly.</p>
 <p><strong>Worked, the corner.</strong> With $iD$ and its normalised generator $t_{D}$,</p>
 <p>$$
-\Gamma_{D,\imath}=-ig_{4}\varepsilon_{\imath}\gamma_{\imath}\bigl(t_{D}\otimes\mathbb{1}_{2}\bigr),
+\Gamma_{D,\imath}=-ig_{4}\gamma_{\imath}\bigl(t_{D}\otimes\mathbb{1}_{2}\bigr),
 \qquad
 e_{t}\to-3i\,e_{t},
 \qquad
@@ -404,7 +409,7 @@ $$</p>
 <p><strong>which is $B-L$ and not electric charge</strong>: the phase is $-3i$ on the lepton line and $+i$ on each colour line, uniform in the doublet slot. <strong>A vertex that assigned the same quantum number to $u^{r}$ and $d^{r}$ is exactly this one</strong>, and that is why the electric charge is not a vertex of the twenty-one.</p>
 <p><strong>Worked, a weak vertex.</strong> With $\tau_{3}$ on the doublet,</p>
 <p>$$
-\Gamma^{L}_{3,\imath}=-ig_{L}\varepsilon_{\imath}\gamma_{\imath}\bigl(\mathbb{1}_{4}\otimes\tau_{3}\bigr),
+\Gamma^{L}_{3,\imath}=-ig_{L}\gamma_{\imath}\bigl(\mathbb{1}_{4}\otimes\tau_{3}\bigr),
 \qquad
 u^{a}\to+\tfrac12\,u^{a},\qquad d^{a}\to-\tfrac12\,d^{a},
 $$</p>
@@ -521,9 +526,9 @@ $$</p>
 <td>$15$</td>
 </tr>
 <tr>
-<td>the fermion–gauge entries</td>
-<td>$144+12+48$</td>
-<td>$204$</td>
+<td>the fermion–gauge entries, one chirality</td>
+<td>$48+16+24$</td>
+<td>$88$</td>
 </tr>
 <tr>
 <td>the nonzero brackets</td>
@@ -536,19 +541,29 @@ $$</p>
 <td>$0.2887$</td>
 </tr>
 <tr>
+<td>the fifteen, orthonormalised</td>
+<td>$\sum_{a=1}^{15}t_{a}^{2}$</td>
+<td>$-\tfrac{15}{8}\mathbb{1}$</td>
+</tr>
+<tr>
+<td>the fifteen, unrotated</td>
+<td>the same sum without the rotation</td>
+<td>$-1.875$, $-1.792$, $-2.042$, $-1.792$</td>
+</tr>
+<tr>
 <td>the $B-L$ transfer, leptoquark, both rows</td>
 <td>$\Delta Q$</td>
 <td>$-\tfrac23$ in both</td>
 </tr>
 <tr>
 <td>the nine and twelve of the spectrum</td>
-<td>$8+1$ and $6+2+4$</td>
+<td>$8+1$ and $6+2+2+1+1$</td>
 <td>$9$ and $12$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p><strong>The rules of this model are the rules of one Lagrangian, and the Lagrangian is the corpus's.</strong> One covariant derivative with three symbolic couplings, four pieces, and a vertex list of seven types. <strong>The dictionary is the contribution</strong>: the twenty-one gauge fields against the sixteen fermions give $204$ nonzero vertex entries, all of them entries of the printed arrays, and the three-gauge sector is the commutation table's $164$ nonzero brackets.</p>
+<p><strong>The rules of this model are the rules of one Lagrangian, and the Lagrangian is the corpus's.</strong> One covariant derivative with three symbolic couplings, four pieces, and a vertex list of seven types. <strong>The dictionary is the contribution</strong>: the twenty-one gauge fields against the sixteen fermions give $88$ nonzero vertex entries per chirality, all of them entries of the printed arrays, and the three-gauge sector is the commutation table's $164$ nonzero brackets.</p>
 <p><strong>Three things had to be settled before a rule could be written.</strong> The normalisation, because the printed arrays carry three different trace norms and a canonical kinetic term forces a family-dependent rescaling of $\tfrac12$, $1/\sqrt{24}$ and $1/\sqrt2$. The generator convention, because the corpus's arrays are anti-hermitian and a rule needs hermitian generators, so the translation is one $i$ and one rescaling per gauge leg. And the two-index rule, because every vertex is $X\otimes\mathbb{1}_{2}$ and that bracket decides that no gauge vertex mixes the quartet index with the doublet index.</p>
 <p><strong>The fermion–gauge vertex is where the algebra and the physics meet and where the ledger has to be honest.</strong> The matrix is exact: the fifteen act on the quartet, the selection rule is eight annihilate the lepton line, one multiplies it, six move it into the triple, and no generator turns a lepton into a lepton. The dynamics is transcribed, because the spin-$\tfrac12$ sector has no action from the algebra and the corpus says so before this article prints a rule.</p>
 <p><strong>What the article hands on is a shape and a normalisation and no numbers.</strong> Couplings symbolic, loops absent, scalars counted and not instantiated, Yukawa elsewhere. <strong>A reader who wants an amplitude needs one more article, and it is <a href="three-diagrams-of-the-four-colours-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html">the three diagrams</a> that applies these rules twice with a number and once with a colour factor.</strong></p>
@@ -598,8 +613,8 @@ $$</p>
 <td>$\sigma_{i}/2$, acting on the doublet slot</td>
 </tr>
 <tr>
-<td>$\varepsilon_{\imath}$</td>
-<td>The sign rule's signs, $\varepsilon_{t}=+1$</td>
+<td>$\gamma_{\imath}$</td>
+<td>The Dirac matrix in the direction $\imath$, index low</td>
 </tr>
 <tr>
 <td>$\zeta$</td>
@@ -634,8 +649,8 @@ $$</p>
 <td>Gauge fixing and ghosts</td>
 </tr>
 <tr>
-<td>$204$</td>
-<td>The number of nonzero fermion–gauge vertex entries</td>
+<td>$88$</td>
+<td>The number of nonzero fermion–gauge vertex entries in one chirality</td>
 </tr>
 </tbody>
 </table></div>
