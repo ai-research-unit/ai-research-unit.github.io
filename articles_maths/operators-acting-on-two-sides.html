@@ -153,6 +153,11 @@ $$</p>
 $$</p>
 <p>In particular every complex-linear operator of $\mathbb{B}$ is a finite sum of two-sided operators, and the sum needs at most sixteen terms.</p>
 <p><strong>The statement beside the proof.</strong> The independence and the spanning are proved together in the next two subsections: the matrix-unit computation exhibits sixteen independent operators, and the change of basis shows that the coefficient products are the same sixteen operators in another basis. The generation statement is not used before it is proved.</p>
+<p><strong>The name of a basis operator.</strong> Each basis operator $e_\mu[\,]e_\nu$ is a <strong>word</strong>: the product of the left multiplication by one unit with the right multiplication by one unit,
+$$
+W_{\mu\nu}=L_{e_\mu}R_{e_\nu},\qquad \mu,\nu\in\{t,x,y,z\}.
+$$
+The word is labelled by its pair of units, and the sixteen labels are the sixteen cells of a grid. The grid has one corner, $W_{tt}=\mathrm{id}$, the identity operator, and it is the only word with a nonzero trace: $\operatorname{tr}(L_AR_B)=\operatorname{tr}A\operatorname{tr}B$, and only $e_t$ has a nonzero trace. The fifteen words of the grid without the corner are the traceless part of the operator space, and they are the six with one index $t$ and the nine with none.</p>
 <h3 id="the-matrix-unit-computation">The Matrix-Unit Computation</h3>
 <p><strong>The algebra's matrix units.</strong> In the Peirce frame, write</p>
 <p>$$
@@ -188,7 +193,7 @@ $$</p>
 <p>The sixteen operators $U_{ij}[\,]U_{kl}$ are a basis, by §<em>The Matrix-Unit Computation</em>. The coefficient matrix of the display is the tensor product $c\otimes c$, and $c$ is invertible; hence $c\otimes c$ is invertible, and the sixteen products are a basis.</p>
 <p><strong>The span.</strong> Every two-sided operator is a linear combination of the sixteen products, and every operator of the ambient space is a linear combination of the sixteen products; the span is the whole space, of complex dimension sixteen. The bilinear map $(\tilde Q,\tilde Q_2)\mapsto L_{\tilde Q}R_{\tilde Q_2}$ is therefore surjective onto $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and its image is the cone of the decomposable elements inside the complex sixteen-dimensional space.</p>
 <p><strong>The parameters and the operators.</strong> The parameters are eight complex numbers, the operators they generate by linear combination are complex sixteen-dimensional, and the map is bilinear rather than linear. The count is not a contradiction: the eight parameters describe one decomposable tensor, and the sixteen complex dimensions are the span of all of them.</p>
-<h2 id="the-ladder-math155">The Ladder $1,4,7,16$</h2>
+<h2 id="the-ladder-math161">The Ladder $1,4,7,16$</h2>
 <h3 id="the-chain">The Chain</h3>
 <p><strong>The chain of sets.</strong> The scalars, the one-sided families, the cone and the ambient space form the chain</p>
 <p>$$
@@ -218,7 +223,7 @@ $$</p>
 <p>which cannot equal $\vec e_y$. Contradiction.</p>
 <p><strong>The reading.</strong> The two one-sided families generate, under addition, a complex seven-dimensional subspace, and under composition they generate the whole complex sixteen-dimensional algebra. The sum is the additive closure and is not a subalgebra; the cone is the multiplicative closure and is not a subspace. The generation theorem is the statement that the multiplicative closure, taken with linear combinations, reaches the whole ambient space.</p>
 <h2 id="the-plain-adjoint">The Plain Adjoint</h2>
-<h3 id="math185">$L_{\tilde Q}R_{\tilde Q_2}^{\approx}=L_{\tilde Q_2}R_{\tilde Q}$</h3>
+<h3 id="math191">$L_{\tilde Q}R_{\tilde Q_2}^{\approx}=L_{\tilde Q_2}R_{\tilde Q}$</h3>
 <p><strong>Theorem (the adjoint).</strong> For the general plain bilinear form $\langle X,Y\rangle=\mathrm{Sc}(XY)$,</p>
 <p>$$
 \bigl(L_{\tilde Q}R_{\tilde Q_2}\bigr)^{\approx}=L_{\tilde Q_2}R_{\tilde Q}.
@@ -272,7 +277,7 @@ $$</p>
 \{\pm\mathrm{Ad}_{\tilde Q}\}\cong(\mathbb{B}^{\times}/\mathbb{C}^{\times})\times\{\pm1\},
 $$</p>
 <p>of complex dimension three. It is not all of $O_4(\mathbb{C})$, which has dimension six. The kernel of the parametrisation is $\{(\lambda e_t,\lambda^{-1}e_t)\}\cong\mathbb{C}^{\times}$, and the two cosets are the two components of the group.</p>
-<h3 id="the-criterion-math261">The Criterion $\tilde Q\tilde Q_2=e_t$</h3>
+<h3 id="the-criterion-math267">The Criterion $\tilde Q\tilde Q_2=e_t$</h3>
 <p><strong>Theorem (the multiplicative members).</strong> A nonzero operator $L_{\tilde Q}R_{\tilde Q_2}$ is multiplicative,</p>
 <p>$$
 L_{\tilde Q}R_{\tilde Q_2}(XY)=L_{\tilde Q}R_{\tilde Q_2}(X)\,L_{\tilde Q}R_{\tilde Q_2}(Y)\qquad\text{for all }X,Y,

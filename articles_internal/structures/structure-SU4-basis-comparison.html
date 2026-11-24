@@ -79,6 +79,7 @@ $$
 The union of the two lists has rank fifteen, each list is independent, and <strong>the number of arrays common to the two lists is zero</strong>. A basis is a choice, and these are two different choices of it.</p>
 <p><strong>Why the choices differ, in one paragraph.</strong> Both lists split the same way, six real arrays and nine imaginary ones, and the two real sixes span the same six-dimensional space while the two imaginary nines span the same nine-dimensional space. <strong>The difference is inside each summand.</strong> The maths list takes the real six as $\ell_a,r_a$, left and right multiplication by the vector units, which is the $\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$ basis of that space; the physics list takes the real six as the coordinate planes $A_{jk}$, which separates the three leptoquark planes from the three colour planes. The maths list takes the imaginary nine as $iN_{jk}$, the products in the operator frame; the physics list takes them as the six off-diagonal planes $iS_{jk}$ plus the three diagonals $iD,d_2,d_3$, which is the physics split $8+1$. §<em>Why the Two Bases Differ</em> gives the numbers.</p>
 <p><strong>What is not claimed.</strong> That one list is better than the other. The maths list is the algebra's own basis, the images of the sixteen words. The physics list is the sector basis, and its three families carry the names leptoquark, colour and $B-L$. <strong>Each is the right basis for the article that uses it.</strong></p>
+<p><strong>Where the two lists come from, word by word.</strong> <a href="structure-SU4-basis-construction.html">Building the Two Bases from the Axis-Free Left and Right Matrices</a> writes each of the thirty arrays as an explicit expression in the eight axis-free arrays $L_{\mathrm{axf}}(e_\mu),R_{\mathrm{axf}}(e_\mu)$ of <em>Matrix Representations and Conventions</em>. <strong>The two constructions share two steps, the deletion of the word $W_{tt}$ that carries the trace and the factor $i$ on the nine symmetric words, and differ by one: the maths base keeps the remaining words whole and the physics base resolves each of the six unordered index pairs into its half-sum and half-difference.</strong> This note starts where that one stops, and prints the arrays.</p>
 <h2 id="the-two-lists-named-once">The Two Lists, Named Once</h2>
 <p><strong>The physics fifteen.</strong> With $A_{jk}=E_{jk}-E_{kj}$, $iS_{jk}=i(E_{jk}+E_{kj})$, $E_{jk}$ the matrix unit of $\mathbb{C}^{4}$ in the order $(t,x,y,z)$, and $\{a,b,c\}=\{x,y,z\}$ cyclic.</p>
 <div class="table-scroll"><table>
@@ -494,10 +495,445 @@ $$
 <strong>The determinant is not one, and that is the whole lattice story</strong>: the map is invertible over $\mathbb{R}$ and not over $\mathbb{Z}$, and the two lattices have covolumes in the ratio $3:256$.</p>
 <h2 id="why-the-two-bases-differ">Why the Two Bases Differ</h2>
 <p><strong>The same two summands, sixed and nined differently.</strong> Both lists split as six real plus nine imaginary, the two sixes span one six-dimensional space, and the two nines span one nine-dimensional space. <strong>The bases differ inside the summands, not between them</strong>, which is why no real array of one list ever needs an imaginary array of the other.</p>
-<p><strong>Inside the six.</strong> The maths six are $\ell_a,r_a$, the images of the three vector units under left and right multiplication. They close, $[\ell_a,\ell_b]=\epsilon_{abc}\ell_c$ and $[r_a,r_b]=\epsilon_{abc}r_c$ with $[\ell_a,r_b]=0$, so the six are $\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, the two factors being the left and the right action. The physics six are the coordinate planes $A_{jk}$, which close as well because they are the same six-dimensional space. <strong>The difference is which triples are named</strong>: the maths basis names the two $\mathfrak{su}(2)$ factors, the physics basis names the three leptoquark planes and the three colour planes.</p>
+<p><strong>Inside the six.</strong> The maths six are $\ell_a,r_a$, the images of the three vector units under left and right multiplication. They close, $[\ell_a,\ell_b]=2\epsilon_{abc}\ell_c$ and $[r_a,r_b]=-2\epsilon_{abc}r_c$ with $[\ell_a,r_b]=0$, so the six are $\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, the two factors being the left and the right action. The physics six are the coordinate planes $A_{jk}$, which close as well because they are the same six-dimensional space. <strong>The difference is which triples are named</strong>: the maths basis names the two $\mathfrak{su}(2)$ factors, the physics basis names the three leptoquark planes and the three colour planes.</p>
 <p><strong>Inside the nine.</strong> The maths nine are $iN_{jk}$, one per word product, and their diagonal three is the Cartan. The physics nine are the six off-diagonal planes $iS_{jk}$ plus the corner and the two colour diagonals. <strong>The diagonal three is one three-dimensional space in both cases</strong>, and the change there is $iD=iN_{xx}+iN_{yy}+iN_{zz}$, $d_2=\tfrac12(iN_{yy}-iN_{xx})$, $d_3=\tfrac12(iN_{zz}-iN_{yy})$: integral one way, thirds the other.</p>
 <p><strong>Which arrays are integral over which.</strong> Twelve of the maths fifteen are integral combinations of the physics fifteen, the six $\ell,r$ and the six off-diagonal $iN$; the three diagonal $iN$ are not. In the other direction only one physics array, $iD$, is an integral combination of the maths fifteen. <strong>So the physics lattice is the finer one</strong>, and $iD=G_7+G_{11}+G_{15}$ is its one integral vector sitting in the maths lattice.</p>
 <p><strong>The physics reading of the difference.</strong> The physics basis separates what the model needs to name: the three leptoquark planes are the gauge bosons that would mediate proton decay, the eight arrays $A_{bc},iS_{bc},d_2,d_3$ are the gluons, and $iD$ carries $B-L$. <strong>The maths basis separates what the algebra needs to name</strong>: the two actions of the algebra on itself, and the nine products. Neither list can be read off the other without a computation, and this note is that computation.</p>
+<h2 id="section-c-which-basis-reads-the-bosons-the-cell-test-the-mass-matrix-and-the-corner">Section C. Which Basis Reads the Bosons: the Cell Test, the Mass Matrix, and the Corner</h2>
+<p><strong>The claim, stated before the evidence.</strong> The two bases are bases of one fifteen, so no physical quantity depends on the choice. <strong>What depends on the choice is what a reader can see without computing.</strong> The physics basis is adapted to the particle content and to the breaking chain; the maths basis is adapted to the algebra's own origin, left and right multiplication. Three tests below separate the two, and each is computed rather than asserted: the <strong>cell test</strong>, which asks whether a generator occupies one place on the model's grid; the <strong>mass test</strong>, which asks whether the mass matrix is diagonal in the basis; and the <strong>corner test</strong>, which asks whether $B-L$ is one array or three.</p>
+<p><strong>What this section does not claim.</strong> It does not claim that the maths basis is wrong, or that a Lagrangian written in it is a different theory. On the one test where the maths basis wins outright, the kinetic term, the win is stated in §<em>Where the Maths Basis Wins, Stated Plainly</em>.</p>
+<h3 id="the-grid-the-model-draws-and-what-a-cell-is">The Grid the Model Draws, and What a Cell Is</h3>
+<p><strong>The boson content is a grid, not a list.</strong> The model puts a name in every cell of a $4\times4$ grid whose rows and columns are the four indices $t,r,g,b$, removes the trace cell, and reads off $16-1=15$ generators. <strong>The grid is the physics basis drawn as a picture</strong>, and it is the reason this basis exists.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$t$ lepton</th>
+<th>$r$ red</th>
+<th>$g$ green</th>
+<th>$b$ blue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>$t$ lepton</strong></td>
+<td>$B'$, the $B-L$ boson</td>
+<td>$\bar X^{r}$</td>
+<td>$\bar X^{g}$</td>
+<td>$\bar X^{b}$</td>
+</tr>
+<tr>
+<td><strong>$r$ red</strong></td>
+<td>$X^{r}$</td>
+<td>$T^{c}_{3}$</td>
+<td>$g_{1}$</td>
+<td>$g_{4}$</td>
+</tr>
+<tr>
+<td><strong>$g$ green</strong></td>
+<td>$X^{g}$</td>
+<td>$g_{2}$</td>
+<td>$T^{c}_{8}$</td>
+<td>$g_{6}$</td>
+</tr>
+<tr>
+<td><strong>$b$ blue</strong></td>
+<td>$X^{b}$</td>
+<td>$g_{5}$</td>
+<td>$g_{7}$</td>
+<td>trace, not a generator</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A cell is a matrix unit, and a generator is a pair of opposite cells.</strong> The plane $\{j,k\}$ holds two generators, the real one $A_{jk}$ and the imaginary one $iS_{jk}$, and between them they occupy the two cells $(j,k)$ and $(k,j)$ and nothing else. <strong>So the physics basis is the only basis in which "which cell is this boson in" has an answer that is one generator wide</strong>, and the answer is exactly what the grid prints: the six cells of the $t$ band are the leptoquarks, the nine cells of the colour block are the gluons, and the corner is $B-L$.</p>
+<h3 id="the-cell-test-two-non-zero-entries-against-four">The Cell Test: Two Non-Zero Entries Against Four</h3>
+<p><strong>The count of non-zero entries of each generator, in the two bases.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>basis</th>
+<th>arrays with $2$ entries</th>
+<th>arrays with $4$ entries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>physics</td>
+<td>$14$ of $15$, the twelve planes and $d_2,d_3$</td>
+<td>$1$ of $15$, the corner $iD$</td>
+</tr>
+<tr>
+<td>maths</td>
+<td>$0$ of $15$</td>
+<td>$15$ of $15$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the number matters.</strong> A generator supported on two cells of one plane moves one particle. A generator supported on four cells of two planes moves two particles at once, and it therefore cannot be one particle. <strong>The two bases are separated by exactly this. Look at the corner array of the six $—$</strong></p>
+<p>$$
+A_{tx}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},\qquad \ell_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}.
+$$</p>
+<p><strong>Read the two arrays by their cells.</strong> $A_{tx}$ has its two entries in the cells $(t,r)$ and $(r,t)$: it occupies the plane $\{t,r\}$, which is one leptoquark pair and nothing else. $\ell_x$ has its four entries in $(t,r),(r,t)$ and in $(g,b),(b,g)$: it occupies the leptoquark plane $\{t,r\}$ <strong>and</strong> the colour plane $\{g,b\}$ at once, with equal weight. <strong>The first is a particle; the second is half a leptoquark and half a gluon</strong>, and that is the cell test.</p>
+<p><strong>The identity behind it, in one line.</strong>
+$$
+\ell_x=-A_{tx}-A_{yz},\qquad r_x=-A_{tx}+A_{yz}.
+$$
+and the same with the labels cycled: $\ell_y=-A_{ty}+A_{xz}$, $\ell_z=-A_{tz}-A_{xy}$, and the three right arrays with the sign of the colour term reversed. <strong>Every one of the six maths generators is a two-term sum of a leptoquark array and a gluon array with coefficients $\pm1$ and no constant term</strong>, so the cell test fails for all six of them and for a reason that is visible on the page.</p>
+<p><strong>The nine fail the same test for a different reason.</strong>
+$$
+iN_{xx}=i\operatorname{diag}(-1,-1,1,1),\qquad iD=i\operatorname{diag}(-3,1,1,1).
+$$
+$iN_{xx}$ charges the lepton line and the red line alike, and the green and blue alike: $t:-1$, $r:-1$, $g:+1$, $b:+1$. <strong>No particle of the model has that charge vector.</strong> $iD$ charges the lepton line with $-3$ and the three colours with $+1$: that is $B-L$, and it is one of the model's own names. So among the nine maths arrays, none is a particle name, and the three diagonal ones are differences of particle names with halves turned into thirds.</p>
+<h3 id="every-boson-with-its-array">Every Boson, with Its Array</h3>
+<p><strong>The fifteen of $\mathfrak{su}(4)$, one row per particle.</strong> The column <em>cell</em> is the pair of cells of the grid the array occupies; <em>moves the lepton line</em> is whether the array acts on $e_t$; <em>mass</em> is the entry of the mass matrix of §<em>The Mass Test</em>, in units of $\mu^{2}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>cell</th>
+<th>particle</th>
+<th>array</th>
+<th>moves $e_t$</th>
+<th>mass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(t,r)$ and $(r,t)$</td>
+<td>$X^{r}$</td>
+<td>$\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}$</td>
+<td>yes</td>
+<td>$\mu^{2}$</td>
+</tr>
+<tr>
+<td>$(t,g)$ and $(g,t)$</td>
+<td>$X^{g}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}$</td>
+<td>yes</td>
+<td>$\mu^{2}$</td>
+</tr>
+<tr>
+<td>$(t,b)$ and $(b,t)$</td>
+<td>$X^{b}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix}$</td>
+<td>yes</td>
+<td>$\mu^{2}$</td>
+</tr>
+<tr>
+<td>$(r,g)$ and $(g,r)$</td>
+<td>$g_{1}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}$</td>
+<td>no</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$(r,b)$ and $(b,r)$</td>
+<td>$g_{4}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix}$</td>
+<td>no</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$(g,b)$ and $(b,g)$</td>
+<td>$g_{6}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}$</td>
+<td>no</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$(t,r)$ and $(r,t)$</td>
+<td>$\bar X^{r}$</td>
+<td>$\begin{pmatrix}0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}$</td>
+<td>yes</td>
+<td>$\mu^{2}$</td>
+</tr>
+<tr>
+<td>$(t,g)$ and $(g,t)$</td>
+<td>$\bar X^{g}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}$</td>
+<td>yes</td>
+<td>$\mu^{2}$</td>
+</tr>
+<tr>
+<td>$(t,b)$ and $(b,t)$</td>
+<td>$\bar X^{b}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\end{pmatrix}$</td>
+<td>yes</td>
+<td>$\mu^{2}$</td>
+</tr>
+<tr>
+<td>$(r,g)$ and $(g,r)$</td>
+<td>$g_{2}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}$</td>
+<td>no</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$(r,b)$ and $(b,r)$</td>
+<td>$g_{5}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\end{pmatrix}$</td>
+<td>no</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$(g,b)$ and $(b,g)$</td>
+<td>$g_{7}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;i&amp;0\end{pmatrix}$</td>
+<td>no</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the four diagonal cells</td>
+<td>$B'$</td>
+<td>$\begin{pmatrix}-3i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix}$</td>
+<td>no</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$(r,r)$ and $(g,g)$</td>
+<td>$T^{c}_{3}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}$</td>
+<td>no</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$(g,g)$ and $(b,b)$</td>
+<td>$T^{c}_{8}$</td>
+<td>$\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\end{pmatrix}$</td>
+<td>no</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the <em>moves the lepton line</em> column down the table.</strong> Nine rows say no and six say yes, the nine are exactly the eight gluons and $B'$, and the six are exactly the leptoquark sextet. <strong>The single property "does this array act on $e_t$" sorts the fifteen into the two groups the model needs, and it is read off the array itself</strong>, because a generator moves $e_t$ if and only if it has a non-zero entry in the $t$ row or the $t$ column.</p>
+<p><strong>The six weak generators, for completeness.</strong> They are half the left and right multiplications, and their names on the model's two $2\times2$ grids are the $W$ and $W_R$ triples:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>generator</th>
+<th>array</th>
+<th>name in the model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T^{L}_{x}=\tfrac12\ell_x$</td>
+<td>$\begin{pmatrix}0&amp;-\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-\tfrac12\\0&amp;0&amp;\tfrac12&amp;0\end{pmatrix}$</td>
+<td>the $\mathrm{SU}(2)_L$ triple: $W^{\pm}$, $W^{3}_{L}$</td>
+</tr>
+<tr>
+<td>$T^{R}_{x}=\tfrac12 r_x$</td>
+<td>$\begin{pmatrix}0&amp;-\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;\tfrac12\\0&amp;0&amp;-\tfrac12&amp;0\end{pmatrix}$</td>
+<td>the $\mathrm{SU}(2)_R$ triple: $W^{\pm}_{R}$, $W^{3}_{R}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>These six are not in the fifteen.</strong> They are inside its span, $T^{L}_{a}=-\tfrac12(A_{ta}+A_{bc})$ and $T^{R}_{a}=-\tfrac12(A_{ta}-A_{bc})$, with the labels cycled, so they are half-integer combinations of a leptoquark array and a gluon array. <strong>Half-integer in the physics basis and half of one array in the maths basis</strong>, which is the one place the maths basis is the more compact of the two; §<em>Where the Maths Basis Wins, Stated Plainly</em> says so.</p>
+<h3 id="the-mass-test-the-mass-matrix-in-both-bases">The Mass Test: the Mass Matrix in Both Bases</h3>
+<p><strong>The matrix.</strong> The first step of the chain is the stabiliser of the corner: a scalar in the adjoint takes the vacuum $\Phi=v\,iD$, which commutes with the eight gluons, with $d_2,d_3$ and with itself, and with nothing else. The gauge fields then get
+$$
+M^{2}_{ab}=\operatorname{Re}\operatorname{tr}\bigl([T_a,\Phi]^{\dagger}[T_b,\Phi]\bigr),
+$$
+with $T_a$ the fifteen. <strong>The entry is zero unless both $T_a$ and $T_b$ fail to commute with the corner</strong>, and a generator fails to commute with $iD$ exactly when it has a $t$ index, which is the same condition as §<em>The Cell Test</em>. <strong>The one non-zero value is $\mu^{2}=32\,v^{2}$</strong>, and only the pattern concerns this section.</p>
+<p><strong>In the physics basis the matrix is diagonal, and one display says everything.</strong> In the ordering $A_{tx},A_{ty},A_{tz},A_{xy},A_{xz},A_{yz},iS_{tx},iS_{ty},iS_{tz},iS_{xy},iS_{xz},iS_{yz},iD,d_2,d_3$, the mass matrix in units of $\mu^{2}$ is the diagonal array
+$$
+M^{2}_{\text{phys}}=\mu^{2}\,\operatorname{diag}(1,1,1,0,0,0,\;1,1,1,0,0,0,\;0,0,0).
+$$
+<strong>Six non-zero entries, no off-diagonal entry at all</strong>, and the reader can point at the six: the leptoquark sextet. The eight gluon arrays have mass zero and stay at zero, the two colour diagonals likewise, and <strong>the corner $iD$ has mass zero because it is the vacuum itself</strong>, which is the display's statement that $B-L$ survives the first step.</p>
+<p><strong>In the maths basis the same matrix is neither diagonal nor sparse.</strong> Its six-by-six corner, on $\ell_a,r_a$, is three copies of one block,
+$$
+M^{2}_{\text{maths}}\big|_{6\times6}=\mu^{2}\begin{pmatrix}1&amp;1&amp;0&amp;0&amp;0&amp;0\\1&amp;1&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;1&amp;1\\0&amp;0&amp;0&amp;0&amp;1&amp;1\end{pmatrix},
+$$
+and the nine-by-nine corner on $iN_{jk}$ is three copies of $\begin{pmatrix}1&amp;-1\\-1&amp;1\end{pmatrix}$, one for each mixed pair of products, with the three diagonal products $iN_{xx},iN_{yy},iN_{zz}$ carrying nothing at all. <strong>Twenty-four non-zero entries against six</strong>, and not one of them on the diagonal. <strong>The block coefficient is $\mu^{2}$, the same as in the physics basis, and each block is a $2\times2$ of ones</strong>, so the array eigenvalue is $2\mu^{2}$. <strong>That factor two is the Gram and not a physical difference</strong>: the maths arrays have $\operatorname{tr}(G^{2})=-4$ against $\operatorname{tr}(T^{2})=-2$, so one and the same mass reads twice as large in their units, and raising the index with the Gram matrix makes the two spectra equal.</p>
+<p><strong>What the two matrices have in common.</strong> The spectra are the same, as they must be:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>non-zero entries</th>
+<th>eigenvalues, in units of $\mu^{2}$</th>
+<th>basis arrays that are eigenvectors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>physics</td>
+<td>$6$</td>
+<td>$0$ nine times, $\mu^{2}$ six times</td>
+<td>$15$ of $15$</td>
+</tr>
+<tr>
+<td>maths</td>
+<td>$24$</td>
+<td>$0$ nine times, $2\mu^{2}$ six times</td>
+<td>$3$ of $15$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The nine zeros are the same nine directions in both bases</strong>; only their names differ. <strong>But in the physics basis each of the nine is one printed array</strong>, and in the maths basis only three of the fifteen arrays are eigenvectors at all, the three $iN_{jj}$ of the Cartan; the other twelve eigenvectors are the sums and differences $\ell_a\pm r_a$ and $iN_{jk}\pm iN_{kj}$, each with equal weight. <strong>A reader who wants the massless gluons must build six sums out of the maths table and read them off the physics table.</strong></p>
+<p><strong>The nine zeros are the unbroken group, and they are the arithmetic of the chain itself.</strong> Eight gluons, the corner and the two colour diagonals: nine arrays, nine zero entries, and $9=8+1=\dim\bigl(\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\bigr)$ exactly. <strong>The six $\mu^{2}$ are the leptoquark sextet</strong>, the only coloured massive states in the theory. Nothing in the spectrum depends on the basis, and both matrices give the same nine and the same six.</p>
+<h3 id="kernel-and-image-not-rank">Kernel and Image, Not Rank</h3>
+<p><strong>A correction of language that matters for reading the table.</strong> The massless directions are the <strong>kernel</strong> of $M^{2}$, of dimension nine, and the massive directions are its <strong>image</strong>, of dimension six. <strong>The rank of the matrix is six, which is the dimension of the image and not a count of massless states</strong>; the number of massless states is $15-6=9$, the nullity. <strong>The matrix itself is the same in both bases</strong>, so both have kernel nine and image six, and this is not a difference between them.</p>
+<p><strong>The difference is whether the kernel and the image are spanned by basis vectors.</strong> In the physics basis they are, and the statement is checkable by looking: nine rows of the table say <em>moves no</em>, six say <em>moves yes</em>. In the maths basis neither is, and the statement needs a sum: the kernel contains $\ell_a-r_a=-2A_{bc}$ and not $\ell_a$, and the image contains $\ell_a+r_a=-2A_{ta}$ and not $\ell_a$. <strong>So the precise form of the complaint is: the mass matrix's kernel and image are not aligned with the maths basis, and they are aligned with the physics basis.</strong> That is not a claim about rank.</p>
+<h3 id="the-corner-test-math452-is-one-array-or-three">The Corner Test: $B-L$ Is One Array or Three</h3>
+<p><strong>The physics side, one display.</strong>
+$$
+iD=\begin{pmatrix}-3i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix}.
+$$
+<strong>The maths side, the same array as a sum of three.</strong>
+$$
+iD=iN_{xx}+iN_{yy}+iN_{zz},
+$$
+and the inverse, which is the direction a reader actually needs when asking <em>what is $iN_{xx}$ in the model's language</em>:
+$$
+iN_{xx}=\tfrac13\,iD-\tfrac43\,d_2-\tfrac23\,d_3,\qquad iN_{yy}=\tfrac13\,iD+\tfrac23\,d_2-\tfrac23\,d_3,\qquad iN_{zz}=\tfrac13\,iD+\tfrac23\,d_2+\tfrac43\,d_3.
+$$
+<strong>Three coefficients, all with denominator three.</strong> The corner is three arrays on the maths side, and each diagonal product is a combination of the corner and the two colour diagonals in thirds. <strong>This is the lattice statement in the language of particles</strong>: the physics basis contains $B-L$ as a single vector, and the maths basis contains it as a sum of all three of its diagonal vectors.</p>
+<p><strong>What the thirds cost, stated without drama.</strong> Nothing physical: the change of basis is invertible over $\mathbb{R}$ and either list is a basis. What they cost is that no reader can answer <em>where is $B-L$</em> on the maths side without adding three rows and checking that the coefficients are $1,1,1$ and not $1,1,-1$. <strong>The physics side answers it with one row.</strong></p>
+<h3 id="where-the-maths-basis-wins-stated-plainly">Where the Maths Basis Wins, Stated Plainly</h3>
+<p><strong>Two wins, and they are real.</strong></p>
+<p><strong>1. The kinetic term is orthonormal in the maths basis, and only nearly so in the physics basis.</strong> The maths fifteen satisfy
+$$
+\operatorname{tr}\bigl(G_aG_b\bigr)=-4\,\delta_{ab},\qquad a,b=1,\dots,15,
+$$
+so the gauge kinetic term is $-\tfrac14\sum_a F^{a}_{\mu\nu}F^{a\mu\nu}$ with one coefficient and no cross term. <strong>The physics fifteen satisfy no such thing</strong>, and the failure is small but not zero: the diagonal of the Gram matrix is $-2$ twelve times, $-12$ on $iD$, and there is exactly one non-zero off-diagonal entry,
+$$
+\operatorname{tr}\bigl(d_2d_3\bigr)=+1 .
+$$
+<strong>So the physics kinetic term carries one cross term and two unusual normalisations</strong>, and a canonical Lagrangian in it reads $-\tfrac14\kappa_{ab}F^{a}F^{b}$ with $\kappa$ the Gram matrix rather than with $\delta_{ab}$. <strong>The repair is local and labelled</strong>: the three diagonals $(iD,d_2,d_3)$ have Gram block $\operatorname{diag}(-12,-2,-2)$ plus that one $+1$ between $d_2$ and $d_3$, replacing $d_2,d_3$ by $d_2+d_3$ and $d_2-d_3$ removes the cross term and leaves norms $-12,-2,-6$, and three rescalings then give one common norm. <strong>Nothing else in the fifteen moves.</strong> That is the honest size of the maths basis's advantage.</p>
+<p><strong>2. The weak triples are one array each in the maths basis.</strong> $T^{L}_{a}=\tfrac12\ell_a$ and $T^{R}_{a}=\tfrac12 r_a$: one array and one scalar per generator, which is as compact as a generator can be. <strong>In the physics basis they are two-term sums with halves</strong>, so the maths basis wins that comparison outright. <strong>It wins it because the weak generators are left and right multiplications</strong>, which is exactly the structure the maths basis was built from, and that is worth saying: the maths basis is the right basis for the weak triples and the wrong basis for the particles.</p>
+<h3 id="the-balance-sheet">The Balance Sheet</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>physics basis</th>
+<th>maths basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>which cell is this boson in</td>
+<td>one array per cell pair</td>
+<td>no answer, four cells per array</td>
+</tr>
+<tr>
+<td>non-zero entries per generator</td>
+<td>$2$ (fourteen of fifteen)</td>
+<td>$4$ (all fifteen)</td>
+</tr>
+<tr>
+<td>does this array move the lepton line</td>
+<td>read off the array</td>
+<td>must be computed</td>
+</tr>
+<tr>
+<td>mass matrix of the first step</td>
+<td>diagonal, six entries</td>
+<td>dense, twenty-four entries</td>
+</tr>
+<tr>
+<td>basis arrays that are mass eigenvectors</td>
+<td>$15$ of $15$</td>
+<td>$3$ of $15$</td>
+</tr>
+<tr>
+<td>kernel and image spanned by basis vectors</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$B-L$ as one array</td>
+<td>yes, $iD$</td>
+<td>no, sum of three, thirds in the inverse</td>
+</tr>
+<tr>
+<td>gluons as eight arrays</td>
+<td>yes</td>
+<td>no, all eight are sums of two</td>
+</tr>
+<tr>
+<td>kinetic term orthonormal</td>
+<td>no, one cross term and two odd norms</td>
+<td>yes, $-4\delta_{ab}$</td>
+</tr>
+<tr>
+<td>weak triples as single arrays</td>
+<td>no, two-term sums with halves</td>
+<td>yes, $\tfrac12\ell_a$ and $\tfrac12 r_a$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the table by rows, not by columns.</strong> The physics basis wins every row that concerns <em>what a particle is</em> and loses both rows that concern <em>how the algebra multiplies</em>. <strong>Those are different questions</strong>, and the model needs both answered, which is why the corpus keeps both bases and prints the change of basis rather than choosing.</p>
+<h3 id="the-one-sentence-statement-and-what-it-is-worth">The One-Sentence Statement, and What It Is Worth</h3>
+<p><strong>The sentence.</strong> The maths basis is adapted to the kinetic term and to the algebra's multiplicative origin; the physics basis is adapted to the particle content, to the subgroup decomposition and to the kernel of the mass matrix. <strong>A reader who wants to know which boson is which reads the physics basis; a reader who wants to write the Yang-Mills term reads the maths basis; neither reading is a physical statement, and the change of basis converts one into the other at the cost of an invertible $15\times15$ matrix with determinant $3/256$ in one direction and $256/3$ in the other.</strong></p>
+<p><strong>What the sentence is worth.</strong> It is worth a presentation argument and not a physics argument, and the corpus says so: the model gauges $\mathfrak{su}(4)$, there are fifteen gauge bosons, and no array of any basis is observable. <strong>But presentation is not nothing</strong>: a spectrum that cannot be read off the page is a spectrum a reader has to recompute, and the whole of §<em>The Mass Test</em> is the demonstration that in one basis it is read off and in the other it is not.</p>
+<h3 id="the-checks-for-this-section">The Checks for This Section</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the physics mass matrix is diagonal</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>its diagonal is $\mu^{2}$ six times and $0$ the other nine times</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>the maths mass matrix is not diagonal</td>
+<td>yes, $24$ entries</td>
+</tr>
+<tr>
+<td>non-zero entries: physics / maths</td>
+<td>$6$ / $24$</td>
+</tr>
+<tr>
+<td>eigenvalues: physics / maths</td>
+<td>$0$ nine times, $\mu^{2}$ six / $0$ nine times, $2\mu^{2}$ six</td>
+</tr>
+<tr>
+<td>basis arrays that are mass eigenvectors: physics / maths</td>
+<td>$15/15$ / $3/15$</td>
+</tr>
+<tr>
+<td>kernel and image dimensions, both bases</td>
+<td>$9$ and $6$</td>
+</tr>
+<tr>
+<td>non-zero entries per generator: physics / maths</td>
+<td>$2$ (and $4$ for $iD$) / $4$</td>
+</tr>
+<tr>
+<td>physics Gram: $-2$ twelve times, $-12$ on $iD$, one $+1$ off the diagonal</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>maths Gram is $-4$ times the identity</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$iD=iN_{xx}+iN_{yy}+iN_{zz}$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$iN_{xx}=\tfrac13 iD-\tfrac43 d_2-\tfrac23 d_3$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$A_{ta}=-(T^{L}_{a}+T^{R}_{a})$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>the six mixed planes are exactly the six that move $e_t$</td>
+<td>$6/6$</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="the-checks">The Checks</h2>
 <p>Fifteen recomputations, on the printed entries, with the quartet ordered $(t,x,y,z)$.</p>
 <div class="table-scroll"><table>

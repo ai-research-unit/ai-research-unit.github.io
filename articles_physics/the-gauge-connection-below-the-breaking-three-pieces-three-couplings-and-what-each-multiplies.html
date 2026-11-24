@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies — Biquaternion Universe</title>
+  <meta name="description" content="The question. The model has one covariant derivative at the top and three couplings. After the chain, how many pieces does that derivative have, what does…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies"><strong>The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The model has one covariant derivative at the top and three couplings. After the chain, how many pieces does that derivative have, what does each piece multiply, and are the three low-energy couplings independent?</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;
+D_\mu=\partial_\mu
+-i g_s\,G^{a}_{\mu}T^{a}
+-i g\,\frac{\tau^{a}}{2}W^{a}_{\mu}
+-i g_Y\,Y B_{\mu},
+\qquad
+a=1,\dots,8\ \text{for colour},\quad a=1,2,3\ \text{for isospin},
+\;}
+$$</p>
+<p>$$
+\boxed{\;
+g_s=g_4,
+\qquad
+g=g_L,
+\qquad
+\frac{1}{g_Y^{2}}=\frac{1}{g_R^{2}}+\frac{1}{(2g_{B-L})^{2}},
+\qquad
+\frac{1}{e^{2}}=\frac{1}{g^{2}}+\frac{1}{g_Y^{2}},
+\qquad
+\tan\theta_W=\frac{g_Y}{g}.
+\;}
+$$</p>
+<p><strong>The single idea.</strong> The covariant derivative is not rewritten; it is <em>restricted</em>. Above the breaking it carries twenty-one connections and three couplings, one per factor. Below the breaking it carries twelve connections and the same three couplings, because the couplings belong to the factors and the factors do not change — only the basis in which the connections are counted does. Hypercharge's coupling is then not a fourth coupling but a combination of two of them, and the factor of two in that combination is the same $\tfrac12$ that appears in $Y=T_{3R}+\tfrac12(B-L)$.</p>
+<p><strong>What the article establishes.</strong> The derivative at the top; its restriction at each step; the table of what each surviving piece multiplies; the two matching relations with their factors of two; the reason there are three couplings and not four; and where the heavy pieces go when they are removed.</p>
+<p><strong>What the article does not establish.</strong> No numerical value. $g_4$, $g_L$, $g_R$ are symbols here, and the running that would give them values at a scale is <a href="the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html">The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop</a>. Whether the running succeeds is <a href="the-one-coupling-that-returns-the-standard-model.html">The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement</a>.</p>
+<p><strong>Where the algebras are.</strong> <a href="the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Gauge Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One</a> lists the algebras this derivative is built from. The generic construction of a covariant derivative in the algebra is <a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>.</p>
+<h2 id="one-derivative-at-the-top">One Derivative at the Top</h2>
+<p><strong>Twenty-one connections, three couplings.</strong> The count is the first thing to get right.</p>
+<p><strong>1.1 The object.</strong> Above every scale,</p>
+<p>$$
+D_\mu=\partial_\mu
+-i g_4\,A^{A}_{\mu}T^{A}
+-i g_L\,W^{a}_{\mu}\frac{\tau^{a}}{2}
+-i g_R\,V^{a}_{\mu}\frac{\sigma^{a}}{2},
+\qquad A=1,\dots,15,\quad a=1,2,3,
+$$</p>
+<p>with $T^{A}$ the fifteen $\mathrm{SU}(4)$ generators, $\tau^{a}$ the three left and $\sigma^{a}$ the three right.</p>
+<p><strong>1.2 Twenty-one and three.</strong> Twenty-one connections, because there are twenty-one generators. Three couplings, because there are three simple factors: $\mathrm{SU}(4)$ carries one, and the two $\mathrm{SU}(2)$s carry one each. A simple group has one coupling by definition — the generators of $\mathrm{SU}(4)$ cannot carry different couplings without breaking the invariance that makes them a basis of one algebra.</p>
+<p><strong>1.3 Why the split into "twenty-one and three" matters.</strong> Any statement of the form "the leptoquark coupling is different from the gluon coupling above $M_C$" is false, because both are $g_4$. The two couplings separate only below $M_C$, and only because $\mathrm{SU}(4)$ is no longer a symmetry.</p>
+<p><strong>1.4 The reality condition.</strong> Each connection is real, each generator anti-Hermitian in the physicists' convention or Hermitian with the $i$ absorbed, and the whole expression is anti-Hermitian: $D^\dagger=-D$. That is what makes $D_\mu$ a derivative rather than a field, and it is the reason the algebra's anti-Hermitian subspace is the one that carries the connection.</p>
+<h2 id="the-same-derivative-in-the-residual-basis">The Same Derivative in the Residual Basis</h2>
+<p><strong>No new object: a change of basis, applied twice.</strong> The derivative is restricted, and the restriction is exact.</p>
+<p><strong>2.1 After $M_C$.</strong> Split the fifteen into the eight $\mathfrak{su}(3)$ directions, the one $B-L$ direction and the six leptoquark directions:</p>
+<p>$$
+g_4A^{A}T^{A}\ \longrightarrow\
+g_4\,G^{a}T^{a}+g_4\,B\,T^{15}+g_4\left(X^{a}_{\mu}\,T^{a}_{t}+\text{h.c.}\right),
+$$</p>
+<p>where $T^{a}_{t}$ are the six mixed generators. The colour piece and the $B-L$ piece are the residual ones; the mixed piece is heavy. Note that all three carry the same $g_4$: the split is a split of generators, not of couplings.</p>
+<p><strong>2.2 After $M_R$.</strong> The right triplet splits into the surviving $\mathrm{U}(1)_R$ and two heavy directions, and the neutral fields mix:</p>
+<p>$$
+g_4\,B\,T^{15}+g_R\,V^{3}\frac{\sigma^{3}}{2}\ \longrightarrow\
+g_Y\,B'\,Y+g_R\,(\text{heavy neutral}),
+$$</p>
+<p>with $Y=T_{3R}+\tfrac12(B-L)$, $B'$ the hypercharge field, and the heavy neutral the combination orthogonal to it. The mixing angle is fixed by the two couplings, not chosen.</p>
+<p><strong>2.3 After $M_W$.</strong> The left triplet splits into the surviving $\mathrm{U}(1)$ and two heavy directions, and the neutral fields mix again:</p>
+<p>$$
+g\,W^{3}\frac{\tau^{3}}{2}+g_Y\,B'\,Y\ \longrightarrow\
+e\,A\,Q+g\,(\text{heavy neutral}),
+$$</p>
+<p>with $Q=T_{3L}+Y$ and $A$ the photon. The angle here is $\theta_W$.</p>
+<p><strong>2.4 The observation.</strong> In all three lines the heavy field is written in the same bracket as the light one, because both come from the same derivative. The difference between them is not their origin but whether they annihilate the vacuum, and that is <a href="the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html">The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass</a>.</p>
+<h2 id="what-each-piece-multiplies">What Each Piece Multiplies</h2>
+<p><strong>Three pieces, three modules, and a table that is the whole content.</strong> A coupling without a module is a number; a piece with a module is a physical statement.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>piece</th>
+<th>coupling</th>
+<th>algebra</th>
+<th>multiplies</th>
+<th>acts on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gluon</td>
+<td>$g_s=g_4$</td>
+<td>$\mathfrak{su}(3)$</td>
+<td>the triplet index of every coloured field</td>
+<td>$\mathbb C^3$</td>
+</tr>
+<tr>
+<td>weak</td>
+<td>$g=g_L$</td>
+<td>$\mathfrak{su}(2)_L$</td>
+<td>the $L$ doublet index, and only on left fields</td>
+<td>$\mathbb C^2_L$</td>
+</tr>
+<tr>
+<td>hypercharge</td>
+<td>$g_Y$</td>
+<td>$\mathfrak u(1)_Y$</td>
+<td>the number $Y$ of every field</td>
+<td>the whole generation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>3.1 The colours.</strong> The gluon piece multiplies nothing but the triplet index: it is blind to flavour, to chirality and to the lepton line. In indices, $(T^{a})^{i}_{\ j}$ with $i,j\in\{r,g,b\}$ and no other free index.</p>
+<p><strong>3.2 The left piece.</strong> The weak piece multiplies the doublet index and is absent on right-handed fields, because the right block has no $L$ index. That absence is what "the weak interaction is chiral" means at the level of the derivative: a right-handed singlet has no $\tau^{a}$ to multiply.</p>
+<p><strong>3.3 The hypercharge piece.</strong> It multiplies a number, not an index, and it acts on every field of the generation. That is why $Y$ can distinguish $u_R$ from $d_R$ while colour cannot, and why the two right-handed states that were degenerate above $M_R$ split below it.</p>
+<p><strong>3.4 The three heavy pieces, for contrast.</strong> The leptoquark piece multiplies a colour index and a lepton index at once; the $W_R$ piece multiplies only the $R$ index; the heavy neutral pieces multiply the two combinations orthogonal to $Y$ and to $Q$. None appears in the table because none survives.</p>
+<h2 id="the-three-couplings-and-the-two-matching-relations">The Three Couplings and the Two Matching Relations</h2>
+<p><strong>Where the factors of two come from.</strong> This is the section that most often goes wrong, and the factor has a visible origin.</p>
+<p><strong>4.1 The first relation is an equality.</strong> $g_s=g_4$ and $g=g_L$ at the matching scale, because the residual $\mathfrak{su}(3)$ and $\mathfrak{su}(2)_L$ are subalgebras of the factors that carried the couplings. No normalisation enters: the generators are the same generators.</p>
+<p><strong>4.2 The second relation is a combination.</strong> Hypercharge is $Y=T_{3R}+\tfrac12(B-L)$, so the field $B'$ is a unit vector in the plane of the two neutral fields, and its component along each is fixed by the coupling:</p>
+<p>$$
+A_R=\frac{g_Y}{g_R}B',
+\qquad
+A_{B-L}=\frac{g_Y}{2g_{B-L}}B',
+\qquad
+A_R^{2}+A_{B-L}^{2}=B'^{2}.
+$$</p>
+<p>Dividing through by $B'^{2}$ gives</p>
+<p>$$
+\frac{g_Y^{2}}{g_R^{2}}+\frac{g_Y^{2}}{(2g_{B-L})^{2}}=1
+\quad\Longrightarrow\quad
+\frac{1}{g_Y^{2}}=\frac{1}{g_R^{2}}+\frac{1}{(2g_{B-L})^{2}}.
+$$</p>
+<p><strong>4.3 The factor of two is the same $\tfrac12$.</strong> It is the $\tfrac12$ in $Y=T_{3R}+\tfrac12(B-L)$, passing through the orthogonality of the two fields. A reader who writes $g_Y^{-2}=g_R^{-2}+g_{B-L}^{-2}$ has normalised $B-L$ by its half-charge; both conventions are in use, and the corpus states which one it uses in the notation table.</p>
+<p><strong>4.4 The electromagnetic relation.</strong> The same construction one step later gives</p>
+<p>$$
+\frac{1}{e^{2}}=\frac{1}{g^{2}}+\frac{1}{g_Y^{2}},
+\qquad
+e=g\sin\theta_W=g_Y\cos\theta_W,
+\qquad
+\tan\theta_W=\frac{g_Y}{g},
+$$</p>
+<p>and the angle is a rotation of the basis, not a coupling. The corpus's statement of this is <a href="the-weinberg-angle-and-the-three-neutral-states.html">The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators</a>.</p>
+<p><strong>4.5 The unification statement.</strong> The model's threshold assumption is $g_4=g_L=g_R$ at one scale. That single equation is what makes the chain a unification rather than a product of three independent theories, and it is also the assumption that the running fails to reproduce: <a href="the-one-coupling-that-returns-the-standard-model.html">The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement</a>.</p>
+<h2 id="why-the-couplings-are-not-independent">Why the Couplings Are Not Independent</h2>
+<p><strong>One relation, one counting argument.</strong> Both say the same thing.</p>
+<p><strong>5.1 The relation.</strong> $g_Y$ is determined by $g_R$ and $g_{B-L}$ at the matching scale, so one coupling is not carried below $M_R$: the low-energy theory has three where the intermediate theory had four.</p>
+<p><strong>5.2 The counting statement.</strong> The count of independent couplings runs $3\to4\to3\to2$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>stage</th>
+<th>factors</th>
+<th>independent couplings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>above $M_C$</td>
+<td>$\mathrm{SU}(4)$, $\mathrm{SU}(2)_L$, $\mathrm{SU}(2)_R$</td>
+<td>$g_4$, $g_L$, $g_R$</td>
+</tr>
+<tr>
+<td>between $M_C$ and $M_R$</td>
+<td>$\mathrm{SU}(3)$, $\mathrm{U}(1)_{B-L}$, $\mathrm{SU}(2)_L$, $\mathrm{SU}(2)_R$</td>
+<td>$g_s$, $g_{B-L}$, $g_L$, $g_R$</td>
+</tr>
+<tr>
+<td>between $M_R$ and $M_W$</td>
+<td>$\mathrm{SU}(3)$, $\mathrm{SU}(2)_L$, $\mathrm{U}(1)_Y$</td>
+<td>$g_s$, $g$, $g_Y$</td>
+</tr>
+<tr>
+<td>below $M_W$</td>
+<td>$\mathrm{SU}(3)$, $\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$g_s$, $e$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The count rises at $M_C$ and falls twice, and the rise is the point: one factor splitting into two leaves two couplings where there was one, even though they are equal at the threshold. A counting that assumes one fewer coupling per step gets the first step wrong, not the last.</p>
+<p><strong>5.3 The consequence for a fit.</strong> A fit to the low-energy data determines $g$ and $g_Y$; the model then predicts $g_R$ and $g_{B-L}$ through the relation, given the scale. That prediction is the model's content, and it is the one the running tests.</p>
+<h2 id="what-is-left-out-and-where-it-goes">What Is Left Out, and Where It Goes</h2>
+<p><strong>The heavy pieces are removed, not deleted.</strong> The distinction is the subject of the next article in the block.</p>
+<p><strong>6.1 The removal.</strong> Below $M_C$ the leptoquark piece is absent from the derivative. Fields coupled by it are no longer coupled: the lepton and the quark do not share a connection, and the gauge symmetry that would have related them is gone.</p>
+<p><strong>6.2 What remains of it.</strong> The removal leaves operators: four-fermion terms with coefficients $\sim g_4^{2}/M_X^{2}$, which is why the leptoquarks can be bounded without being produced. That is the effective-Lagrangian statement, and the bound is in <a href="the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html">The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite</a>.</p>
+<p><strong>6.3 The correction to the light couplings.</strong> The removal also shifts the light couplings by finite amounts, which is the matching computation of <a href="the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html">The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop</a>. At tree level the shifts are zero; at one loop they are not.</p>
+<p><strong>6.4 The exact statement.</strong> Up to the matching corrections, the three pieces above are the whole gauge sector of the low-energy theory. Nothing else couples to a fermion through a derivative.</p>
+<h2 id="the-checks">The Checks</h2>
+<p><strong>Six checks.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the connections</td>
+<td>$15+3+3$ above, $8+1+3+3$ after $M_C$</td>
+<td>$21$, then $15$</td>
+</tr>
+<tr>
+<td>the couplings</td>
+<td>one per simple factor</td>
+<td>$3$ above, $4$ at the intermediate stage counting $B-L$</td>
+</tr>
+<tr>
+<td>the orthogonality</td>
+<td>$A_R^{2}+A_{B-L}^{2}=B'^{2}$</td>
+<td>gives $g_Y^{-2}=g_R^{-2}+(2g_{B-L})^{-2}$</td>
+</tr>
+<tr>
+<td>the electromagnetic limit</td>
+<td>$1/e^{2}=1/g^{2}+1/g_Y^{2}$</td>
+<td>reproduces $\tan\theta_W=g_Y/g$</td>
+</tr>
+<tr>
+<td>the chirality</td>
+<td>$L$ piece absent on right singlets</td>
+<td>the $R$ block has no $L$ index</td>
+</tr>
+<tr>
+<td>the colour blindness</td>
+<td>gluon piece carries no flavour index</td>
+<td>holds in every term</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="distinctions-that-are-easy-to-lose">Distinctions That Are Easy to Lose</h2>
+<p><strong>Three pairs.</strong></p>
+<p><strong>7.1 A coupling and a connection.</strong> Twenty-one connections, three couplings. Counting connections and calling the result the number of couplings is the commonest error in the subject.</p>
+<p><strong>7.2 The mixing angle and a coupling.</strong> $\theta_W$ is a rotation of the neutral basis, fixed by the ratio of two couplings. It is not a third coupling and it does not run independently.</p>
+<p><strong>7.3 The intermediate stage and the bottom.</strong> At the intermediate stage there are four couplings because $B-L$ is a factor; at the bottom there are three because $Y$ is a direction. A counting that ignores this will report four at every stage above $M_W$.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One derivative.</strong> Twenty-one connections, three couplings at the top; three pieces and three couplings at the bottom.</p>
+<p><strong>The three pieces.</strong> Colour on the triplet, weak isospin on the left doublet, hypercharge on the number $Y$.</p>
+<p><strong>The two relations.</strong> $g_s=g_4$, $g=g_L$ by identity of generators; $g_Y^{-2}=g_R^{-2}+(2g_{B-L})^{-2}$ by orthogonality of fields.</p>
+<p><strong>The angle.</strong> $\tan\theta_W=g_Y/g$, a rotation and not a coupling.</p>
+<p><strong>The heavy pieces.</strong> Removed below their thresholds, leaving four-fermion operators and finite shifts to the light couplings.</p>
+<p><strong>What is assumed.</strong> $g_4=g_L=g_R$ at one scale, which is the unification statement and the one the running fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D_\mu$</td>
+<td>the covariant derivative</td>
+</tr>
+<tr>
+<td>$g_4$, $g_L$, $g_R$</td>
+<td>the couplings of the three simple factors</td>
+</tr>
+<tr>
+<td>$g_{B-L}$</td>
+<td>the coupling of the $B-L$ factor between $M_C$ and $M_R$</td>
+</tr>
+<tr>
+<td>$g_s$, $g$, $g_Y$, $e$</td>
+<td>the low-energy couplings of colour, isospin, hypercharge, electromagnetism</td>
+</tr>
+<tr>
+<td>$T^{A}$, $T^{a}$</td>
+<td>the fifteen $\mathrm{SU}(4)$ generators and the eight colour ones</td>
+</tr>
+<tr>
+<td>$\tau^{a}$, $\sigma^{a}$</td>
+<td>the left and right isospin generators</td>
+</tr>
+<tr>
+<td>$Y$, $Q$</td>
+<td>hypercharge and electric charge</td>
+</tr>
+<tr>
+<td>$\theta_W$</td>
+<td>the weak mixing angle, $\tan\theta_W=g_Y/g$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Gauge Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One</a>. The algebras and modules this derivative is built from.</li>
+<li><a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>. The generic construction, before any model.</li>
+<li><a href="the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html">The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop</a>. What the removal of the heavy pieces costs.</li>
+<li><a href="the-weinberg-angle-and-the-three-neutral-states.html">The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators</a>. The rotation $\theta_W$ and the neutral basis.</li>
+<li><a href="the-one-coupling-that-returns-the-standard-model.html">The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement</a>. The running of these three couplings, and where it fails.</li>
+<li><a href="the-field-strength-biquaternion-and-its-invariants.html">The Field-Strength Biquaternion and Its Invariants</a>. The field strength built from $D_\mu$ once the photon is separated.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

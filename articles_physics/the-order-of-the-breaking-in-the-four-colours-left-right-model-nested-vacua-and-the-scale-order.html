@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Order of the Breaking in the Four Colours Left–Right Model: Nested Vacua and the Scale Order $M_C\ge M_R\ge M_W$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. The chain breaks the group in three factors. Why in that order? Could the electroweak step come first, or the right-handed one before the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-order-of-the-breaking-in-the-four-colours-leftright-model-nested-vacua-and-the-scale-order-math0"><strong>The Order of the Breaking in the Four Colours Left–Right Model: Nested Vacua and the Scale Order $M_C\ge M_R\ge M_W$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The chain breaks the group in three factors. Why in that order? Could the electroweak step come first, or the right-handed one before the colour one? And does the order of the factors impose an order on the three scales?</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;
+\underbrace{\mathbb C e_t\subset\mathbb C^4}_{\text{the carrier}}
+\ \longrightarrow\
+\underbrace{\mathbb C\, e_{\uparrow}\subset\mathbb C^2_R}_{\text{the }R\text{ doublet}}
+\ \longrightarrow\
+\underbrace{\mathbb C\,e_{\downarrow}\subset\mathbb C^2_L}_{\text{the }L\text{ doublet}},
+\qquad
+M_C\ \ge\ M_R\ \ge\ M_W .
+\;}
+$$</p>
+<p>Each line lies in a module of the group the previous line leaves unbroken, and that nesting is what fixes the order of the steps.</p>
+<p><strong>The single idea.</strong> The order is not a convention and it is not a choice of convenience. Hypercharge is $Y=T_{3R}+\tfrac12(B-L)$, and $B-L$ is a good quantum number only after $\mathrm{SU}(4)$ has been broken, because above $M_C$ it is one Cartan direction inside a simple group and not a factor. Charge is $Q=T_{3L}+Y$, and $Y$ is a good quantum number only after the right factor has been broken. So the third breaking cannot be written before the second, and the second cannot be written before the first.</p>
+<p><strong>What the article establishes.</strong> The three lines with the module each occupies; the nesting argument; the two charge arguments that forbid the reversed orders; the sense in which the numerical order $M_C\ge M_R\ge M_W$ follows from the chain as written; why the minimal content has one breaking where the chain has two factors, and why that makes two thresholds and not three; and what a different ordering would produce.</p>
+<p><strong>What the article does not establish.</strong> No scale value. $M_C$ and $M_R$ are parameters here; the bound on the first and the freedom of the second are in <a href="the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html">The Threshold Scales: $M_C$, $M_R$, $M_W$, and What Would Fix Them</a>.</p>
+<p><strong>Where the rest is.</strong> The stabilisers and the dimension budget are <a href="the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales</a>. The massless count is <a href="the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html">The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass</a>. This article owns the order and nothing else.</p>
+<h2 id="the-three-lines-and-their-modules">The Three Lines and Their Modules</h2>
+<p><strong>A vacuum is a direction, and a direction lives somewhere.</strong> The somewhere is the whole content of the ordering argument.</p>
+<p><strong>1.1 The carrier line.</strong> The first vacuum is the unit line of the carrier:</p>
+<p>$$
+\mathbb C e_t\subset\mathbb C^4,\qquad
+\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_t)=\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}.
+$$</p>
+<p>It is the only line every automorphism of the carrier structure fixes, and it is where $B-L$ takes its largest value, $-\tfrac13\cdot3$ against $-\tfrac13$ on the other three.</p>
+<p><strong>1.2 The right-doublet line.</strong> The second vacuum is a line in the $\mathrm{SU}(2)_R$ doublet carried by $\Phi=(\mathbf4,\mathbf1,\mathbf2)$:</p>
+<p>$$
+\mathbb C\,e_{\uparrow}\subset\mathbb C^2_R,\qquad
+\mathrm{Stab}_{\mathrm{SU}(2)_R}(\mathbb C\,e_{\uparrow})=\mathrm{U}(1)_R .
+$$</p>
+<p>A doublet has one line up to phase, so there is nothing to choose: any non-zero vacuum in the doublet breaks the factor to the same $\mathrm{U}(1)$.</p>
+<p><strong>1.3 The left-doublet line.</strong> The third vacuum is a line in the $\mathrm{SU}(2)_L$ doublet carried by the bidoublet $H=(\mathbf1,\mathbf2,\mathbf2)$:</p>
+<p>$$
+\mathbb C\,e_{\downarrow}\subset\mathbb C^2_L,\qquad
+\mathrm{Stab}_{\mathrm{SU}(2)_L}(\mathbb C\,e_{\downarrow})=\mathrm{U}(1)_L,
+$$</p>
+<p>generated by the Pauli matrix the line points along. That $\mathrm{U}(1)_L$ is not a factor of the low-energy group by itself: it is the direction that mixes with hypercharge to become the electric charge. So the left factor is fully broken as an $\mathrm{SU}(2)$, leaves one abelian direction, and that direction is not yet a symmetry of the spectrum — it is one parent of $Q$.</p>
+<p><strong>1.4 The summary of the three.</strong> Three lines, three modules: the carrier, the right doublet, the left doublet. The vacuum manifold is one point of $\mathbb{CP}^3\times\mathbb{CP}^1\times\mathbb{CP}^1$, and the chain is that point read factor by factor.</p>
+<h2 id="the-nesting">The Nesting</h2>
+<p><strong>Each line sits in a module of the group the previous line leaves behind.</strong> This is the structural statement the title names.</p>
+<p><strong>2.1 The first step leaves a module.</strong> After $\mathbb C e_t$ is fixed, the leftover group acts on the carrier as $\mathbf 4\to\mathbf 1\oplus\mathbf 3$. The second line does not live in the carrier at all: it lives in the $\mathrm{SU}(2)_R$ doublet, which the first step left untouched.</p>
+<p><strong>2.2 The second step leaves a module.</strong> After the right line is fixed, $\mathrm{SU}(2)_R\to\mathrm{U}(1)_R$, and the leftover group is $\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_R$. The third line lives in the $\mathrm{SU}(2)_L$ doublet, again untouched by either previous step.</p>
+<p><strong>2.3 Why "untouched" is the point, and the two conditions behind it.</strong> Two different conditions are at work, and only one of them is about being untouched.</p>
+<p><strong>(a) A field breaks a factor only if it transforms under it.</strong> With no index on the factor there is no generator to act on the vacuum, so nothing can be broken. $\Phi$ is an $L$ singlet and therefore <em>cannot</em> break $\mathrm{SU}(2)_L$; $H$ is an $L$ doublet and therefore can. This is the condition that fixes which field does which step, and it is a statement about the multiplet list.</p>
+<p><strong>(b) A field must be aligned with, or neutral under, the factors broken earlier.</strong> Otherwise its vacuum would tilt the previously fixed line and undo the earlier step. This is the condition that makes the order nest rather than interfere.</p>
+<p>The nesting is the statement that the corpus's three scalars obey both: $\Phi$ is a colour quartet and an $R$ doublet and an $L$ singlet, so by (a) it can break colour and the right factor and cannot break the left one, and by (b) its vacuum is inert on the $L$ factor; $H$ is colour-blind and an $L$ doublet, so it can break the left factor and nothing else.</p>
+<p><strong>2.4 The nesting is a statement about multiplets, not about scales.</strong> Which line comes first is fixed by which module it occupies. How far apart the two scales are is not fixed by anything in this section.</p>
+<h2 id="why-the-order-is-not-a-choice">Why the Order Is Not a Choice</h2>
+<p><strong>Two charges, and each one is defined only after its predecessor exists.</strong></p>
+<p><strong>3.1 Hypercharge needs $B-L$.</strong> The assignment is $Y=T_{3R}+\tfrac12(B-L)$. Above $M_C$, the generator $B-L$ is a linear combination of $\mathrm{SU}(4)$ Cartan generators inside a simple group; it is not a factor and there is no independent coupling attached to it — the direction is multiplied by $g_4$, like every other $\mathrm{SU}(4)$ direction, and by nothing else. Only after $\mathrm{SU}(4)\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}$ does $B-L$ become a $\mathrm{U}(1)$ with its own boson and its own coupling. Before that step, the formula for $Y$ names a generator of a simple group, which is legal but is not a hypercharge of a product group.</p>
+<p><strong>3.2 Charge needs hypercharge.</strong> The assignment is $Q=T_{3L}+Y$. Above $M_R$, $T_{3R}$ is a generator of an unbroken $\mathrm{SU}(2)_R$, and $Y$ is not a good quantum number: the $R$ doublet's two members have different would-be hypercharges, and rotating one into the other is a symmetry. Only after the right line is fixed do the two members of the $R$ doublet acquire definite $Y$, and only then does $Q$ have a meaning on the right-handed fields.</p>
+<p><strong>3.3 What this rules out.</strong> Breaking $\mathrm{SU}(2)_L$ first would require a hypercharge that does not exist yet, so the electroweak step cannot be written above $M_R$. Breaking $\mathrm{SU}(2)_R$ before $\mathrm{SU}(4)$ is writable — the $R$ line is a line in a module of the full group too — but it destroys the intermediate group of the chain, and with it the identification of the $B-L$ boson as the surviving Cartan direction.</p>
+<p><strong>3.4 The honest statement.</strong> The order of the steps is forced given the multiplet list. It is not forced by the group alone: a different scalar content would permit a different chain, and then the intermediate group, the charge assignments and the massless count would all differ. The corpus's chain is the one its three scalars dictate.</p>
+<h2 id="the-scale-order">The Scale Order</h2>
+<p><strong>One numerical order, and one reason for it.</strong> The order of the steps is structural; the order of the scales is what makes the effective description valid.</p>
+<p><strong>4.1 What "the effective theory below $M$" means.</strong> Below a threshold the heavy field is absent, and everything it did is compressed into local operators with coefficients fixed at the threshold. For the compression to be a small correction, the field's mass must be well above the energies at which the theory is used, and its mass is set by the vacuum it carries: $M_X^2=\tfrac12g_4^2v_R^2$, $M_{W_R}^2=\tfrac14g_R^2v_R^2$, $M_W^2=\tfrac14g_L^2v^2$.</p>
+<p><strong>4.2 The consequence.</strong> The chain as written has the intermediate group $\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ as the description between $M_R$ and $M_C$. That group exists as a description only if $\mathrm{SU}(2)_R$ is still unbroken when $\mathrm{SU}(4)$ breaks, which requires $M_C\ge M_R$. The requirement is not a dynamical theorem; it is a condition for the chain to be the chain.</p>
+<p><strong>What is ordering-independent, and what is not.</strong> The symmetry-breaking pattern itself — the group, the three lines, the stabiliser they cut out — does not depend on the order of the scales. Only its <em>factorization into stages</em> does. So the geometry is fixed and the effective description is not: $M_R&gt;M_C$ does not contradict the group theory, it contradicts the sentence "between $M_R$ and $M_C$ the theory is $\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$".</p>
+<p><strong>4.3 The other ordering.</strong> If $M_R&gt;M_C$ the intermediate group would be $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_R$, and the chain would read differently at every stage: the $B-L$ boson would not exist as a factor between the two scales, hypercharge would be assembled at $M_C$ rather than at $M_R$, and the rank would drop at the first step rather than at the second. Nothing forbids it in principle; the corpus does not use it, and the budget $5\to5\to4\to3$ belongs to the ordering it does use.</p>
+<p><strong>4.4 $M_W$ is last, and it is not a parameter.</strong> The electroweak scale is measured: $v$ is fixed by the Fermi constant. Its position at the bottom of the chain is not a choice: the bidoublet's vacuum is the one that gives mass to the $W$ and the $Z$, and if it were above $M_R$ the right-handed bosons would be the light ones, which contradicts their being absent from the observed spectrum.</p>
+<h2 id="the-minimal-content-one-breaking-two-factors">The Minimal Content: One Breaking, Two Factors</h2>
+<p><strong>One breaking, one scale, two factors.</strong> In the minimal content the first two scales do not "coincide": there is one breaking, and the chain's first two stabilisers are two of its factors.</p>
+<p><strong>5.1 The vacuum of $\Phi$.</strong> It is a line in the carrier times a line in the $R$ doublet, so it is a rank-one element of $\mathbb C^4\otimes\mathbb C^2$. One vacuum, one orbit, one stabiliser, one scale $v_R$. Nothing in the content offers a second number at which a second breaking could occur.</p>
+<p><strong>5.2 Its stabiliser, computed.</strong> $\Phi_0=v_R\,e_t\otimes e_{\uparrow}$ is annihilated by $\mathrm{SU}(3)$ acting on the triplet, and by the <em>diagonal</em> combination of the $B-L$ direction and $T_{3R}$ acting on the corner. That combination is exactly the hypercharge,</p>
+<p>$$
+Y=T_{3R}+\tfrac12(B-L),\qquad
+Y\,\Phi_0=0,
+$$</p>
+<p>so the stabiliser is</p>
+<p>$$
+\mathrm{Stab}(\Phi_0)=\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y,
+\qquad
+\dim=8+3+1=12 .
+$$</p>
+<p>This is the second of the chain's two intermediate groups, not the first. One breaking takes $21\to12$, and the nine states that become massive at $v_R$ are the six leptoquarks, $W^{\pm}_R$, and $Z_R$ — the last being the combination of $B-L$ and $T_{3R}$ orthogonal to $Y$, which is why the $\mathrm{U}(1)_{B-L}$ boson and the $\mathrm{U}(1)_R$ boson do not survive separately.</p>
+<p><strong>5.3 Where the fifteen comes from.</strong> $\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, dimension $15$, is the stabiliser of the carrier line <em>alone</em>. It is the intermediate group of the minimal content only if the field carrying the carrier line has no $R$ index — a $(\mathbf4,\mathbf1,\mathbf1)$ — with the right line fixed by a separate $(\mathbf1,\mathbf1,\mathbf2)$. Give the carrier line to the $(\mathbf4,\mathbf1,\mathbf2)$ instead and the one vacuum fixes both lines, so the $15$ is skipped: $B-L$ and $T_{3R}$ are broken to their diagonal in the same step that breaks $\mathrm{SU}(4)$.</p>
+<p><strong>5.4 Two counts, and the one to quote.</strong> So there are two correct statements and they answer different questions.</p>
+<p><em>The threshold count.</em> Two thresholds, $v_R$ and $v$. The dimensions are $21\to12\to9$, the newly massive states $9$ then $3$, and the total $12$. This is the count of scales at which the description changes.</p>
+<p><em>The factor count.</em> Three factors of the single stabiliser at $v_R$, read one at a time: $21\to15\to12\to9$, with $6$, $3$, $3$ leaving. This is the chain written as a chain, and it is exact group theory for the three lines. Its middle number is the stabiliser of the carrier line by itself, and in the minimal content no threshold sits there.</p>
+<p>A reader who quotes $21\to15\to12\to9$ as three scales will look for a threshold that is not there; a reader who quotes $21\to12\to9$ as the whole chain will lose the factorization that the charge argument in §<em>Why the Order Is Not a Choice</em> is about. Both are wanted, for different sentences.</p>
+<p><strong>5.5 What would split the two factors into two scales.</strong> A second field with its own vacuum direction: a $(\mathbf4,\mathbf1,\mathbf1)$ to fix the carrier line and a separate $(\mathbf1,\mathbf1,\mathbf2)$ to fix the right line, or a $(\mathbf{15},\mathbf2,\mathbf2)$ with a coloured vacuum. Either makes the $15$ a genuine threshold, at the price of new states and a new threshold — the subject of §<em>What Merging Steps Would Cost</em> read in reverse.</p>
+<h2 id="what-merging-steps-would-cost">What Merging Steps Would Cost</h2>
+<p><strong>The cost is scalar content, not ordering.</strong> Merging is possible; it is not free.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>merged</th>
+<th>what is needed</th>
+<th>what is lost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_C$ with $M_R$</td>
+<td>nothing: the minimal content already does it</td>
+<td>the two steps are one breaking, and the $15$-dimensional group is a factor of its stabiliser rather than a stage</td>
+</tr>
+<tr>
+<td>$M_R$ with $M_W$</td>
+<td>a bidoublet whose vacuum also breaks the right factor, i.e. a $(\mathbf{15},\mathbf2,\mathbf2)$ or a second $R$-doublet scalar</td>
+<td>the right-handed bosons would be as light as the $W$, which the spectrum excludes</td>
+</tr>
+<tr>
+<td>all three</td>
+<td>a single scalar multiplet carrying both a colour and a weak index</td>
+<td>the chain, and with it every identification in §<em>Why the Order Is Not a Choice</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The lesson.</strong> Merging is a change of the field list. It is never a change of the order, because the order is what makes the charges definable in the first place.</p>
+<h2 id="the-empirical-order">The Empirical Order</h2>
+<p><strong>What is measured, what is bounded, and what is assumed.</strong> Three statements, three different statuses.</p>
+<p><strong>6.1 $M_W$.</strong> Measured, through $v=(\sqrt2 G_F)^{-1/2}$.</p>
+<p><strong>6.2 $M_C$.</strong> Bounded from below by the absence of the leptoquarks: the six states of the first step mediate flavour-changing processes whose non-observation pushes the scale up. The bound and its assumptions are in <a href="the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html">The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite</a>.</p>
+<p><strong>6.3 $M_R$.</strong> Bounded from below by the absence of $W_R$ and by neutrinoless double beta decay, and it is otherwise free. Nothing in the model ties it to $M_C$ except the minimal coincidence of §<em>The Minimal Coincidence</em>.</p>
+<p><strong>6.4 The ordering as an empirical statement.</strong> $M_C\ge M_R\ge M_W$ is consistent with every bound and is required by the chain as written. The consistency is not automatic, and it is worth saying what it would take to fail: the bound on $M_C$ pushes $M_C$ up while the $M_R$ range is bounded from below by direct search, so the chain is in tension only if the leptoquark bound ever exceeded the range the $W_R$ sector allows. No present bound does that, and the arithmetic is <a href="the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html">The Threshold Scales: $M_C$, $M_R$, $M_W$, and What Would Fix Them</a>. It is not tested at the level of the individual inequalities, because the two upper scales are not measured.</p>
+<h2 id="the-checks">The Checks</h2>
+<p><strong>Eight checks.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the lines</td>
+<td>three, in three different modules</td>
+<td>carrier, $R$ doublet, $L$ doublet</td>
+</tr>
+<tr>
+<td>the line stabilisers</td>
+<td>$\mathrm{SU}(3)\times\mathrm{U}(1)$, $\mathrm{U}(1)$, $\mathrm{U}(1)$</td>
+<td>dimensions $9$, $1$, $1$: each line leaves an abelian direction</td>
+</tr>
+<tr>
+<td>their intersection</td>
+<td>the three conditions on $21$ generators</td>
+<td>$\mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}}$, dimension $9$</td>
+</tr>
+<tr>
+<td>the nesting</td>
+<td>each line's module untouched by the previous step</td>
+<td>holds for all three</td>
+</tr>
+<tr>
+<td>the charge chain</td>
+<td>$B-L$ then $Y$ then $Q$</td>
+<td>each defined only after its predecessor</td>
+</tr>
+<tr>
+<td>the rank</td>
+<td>$5\to5\to4\to3$</td>
+<td>one drop at $M_R$, one at $M_W$, none at $M_C$</td>
+</tr>
+<tr>
+<td>the minimal case</td>
+<td>one rank-one vacuum, stabiliser computed</td>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, dimension $12$: $21\to12\to9$ at two thresholds</td>
+</tr>
+<tr>
+<td>the factor count</td>
+<td>the same chain read three ways</td>
+<td>$21\to15\to12\to9$, with $15$ the carrier line's own stabiliser</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="distinctions-that-are-easy-to-lose">Distinctions That Are Easy to Lose</h2>
+<p><strong>Three pairs.</strong></p>
+<p><strong>7.1 The order of the steps and the order of the scales.</strong> The first is forced by the modules. The second is what the effective description requires, and only $M_C\ge M_R$ is constrained by the chain.</p>
+<p><strong>7.2 One breaking and one scale.</strong> In the minimal content the first two factors are one breaking. Counting thresholds, factors and stabilisers gives $2$, $3$ and $4$ — and only the first of those is a list of scales. A statement about a threshold and a statement about a factor are not interchangeable, and the $15$-dimensional group is where the two get confused.</p>
+<p><strong>7.3 Nesting and embedding.</strong> That each line lives in a module of the unbroken group is a statement about the vacuum, and it holds whether or not the group is embedded in anything larger. <a href="grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html">Grand Unification in the Biquaternion Framework: Where the Embedding Fails</a> is the article about the embedding, and it is a different question.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The order.</strong> The carrier line, then the right-doublet line, then the left-doublet line, each in a module the previous step leaves unbroken.</p>
+<p><strong>Why.</strong> Hypercharge is built from $B-L$, which needs $\mathrm{SU}(4)$ broken; charge is built from $Y$, which needs the right factor broken. The reversed orders are either unwritable or give a different intermediate group.</p>
+<p><strong>The scales.</strong> $M_C\ge M_R\ge M_W$ is the order the chain as written requires. In the minimal content $M_C=M_R$ for a stronger reason than coincidence: there is one rank-one vacuum, one breaking, one scale, and the chain's first two stabilisers are factors of the single stabiliser $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ of dimension $12$.</p>
+<p><strong>The cost of merging.</strong> Scalar content, never the order.</p>
+<p><strong>The empirical status.</strong> $M_W$ measured, $M_C$ bounded, $M_R$ free — and the chain is consistent as long as the $M_C$ bound stays below the range the $W_R$ sector allows.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb C e_t$</td>
+<td>the unit line of the carrier, the first vacuum</td>
+</tr>
+<tr>
+<td>$\mathbb C e_{\uparrow}$, $\mathbb C e_{\downarrow}$</td>
+<td>the lines in the $R$ and $L$ doublets</td>
+</tr>
+<tr>
+<td>$\Phi$, $H$</td>
+<td>the $(\mathbf4,\mathbf1,\mathbf2)$ and the $(\mathbf1,\mathbf2,\mathbf2)$</td>
+</tr>
+<tr>
+<td>$M_C$, $M_R$, $M_W$</td>
+<td>the three scales the chain's parameters name; two of them are one scale in the minimal content</td>
+</tr>
+<tr>
+<td>$v$, $v_R$</td>
+<td>the vacuum expectation values the scales are built from</td>
+</tr>
+<tr>
+<td>$B-L$, $T_{3R}$, $T_{3L}$</td>
+<td>the four charges whose assembly fixes the order</td>
+</tr>
+<tr>
+<td>$Y$, $Q$</td>
+<td>hypercharge and the electric charge</td>
+</tr>
+<tr>
+<td>rank-one vacuum</td>
+<td>a vacuum that is a rank-one tensor of two lines, so that one breaking covers two factors</td>
+</tr>
+<tr>
+<td>threshold count</td>
+<td>$21\to12\to9$: two scales at which the description changes</td>
+</tr>
+<tr>
+<td>factor count</td>
+<td>$21\to15\to12\to9$: the three lines read one at a time</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales</a>. The flag itself, with the budgets and the stabilisers.</li>
+<li><a href="the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html">The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass</a>. The stabiliser whose dimension is the massless count.</li>
+<li><a href="the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html">The Scalar Sector of the Four Colours Left–Right Model: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving</a>. The three multiplets whose indices are the modules of this article.</li>
+<li><a href="the-electroweak-gauge-group-and-the-hypercharge-assignment.html">The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$</a>. The assignment $Y=T_{3R}+\tfrac12(B-L)$ and the table it produces.</li>
+<li><a href="the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html">The Threshold Scales: $M_C$, $M_R$, $M_W$, and What Would Fix Them</a>. The bounds on the two upper scales.</li>
+<li><a href="grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html">Grand Unification in the Biquaternion Framework: Where the Embedding Fails</a>. The same chain read as an embedding, which is a different question from the nesting.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint Mass Matrix of the Fifteen: One Number per Plane, $32v^2$ on Six and Zero on Nine — Biquaternion Universe</title>
+  <meta name="description" content="One scalar direction, one matrix, fifteen numbers of which six are not zero. The fifteen generators of acquire masses from the vacuum of the scalar that…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane-math0-on-six-and-zero-on-nine"><strong>The Adjoint Mass Matrix of the Fifteen: One Number per Plane, $32v^2$ on Six and Zero on Nine</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>One scalar direction, one matrix, fifteen numbers of which six are not zero.</strong> The fifteen generators of $\mathfrak{su}(4)$ acquire masses from the vacuum of the scalar that breaks $\mathrm{SU}(4)$, and the object that carries them is the adjoint mass matrix
+$$
+M^{2}_{XY}=\operatorname{tr}\bigl([X,\Phi_0]^{\dagger}[Y,\Phi_0]\bigr),\qquad \Phi_0=vD,\qquad D=\operatorname{diag}(-3,1,1,1).
+$$
+<strong>In the physics basis it is diagonal, with one value per plane</strong>, and the value is $2v^{2}$ times the square of the difference of two eigenvalues of $D$:
+$$
+M^{2}=2v^{2}\bigl(\lambda_j-\lambda_k\bigr)^{2}\ \text{ on the plane }\{j,k\},\qquad \lambda=\operatorname{eig}(D).
+$$
+<strong>Evaluated, that is one display.</strong>
+$$
+M^{2}=\operatorname{diag}\bigl(\underbrace{32v^{2},\dots,32v^{2}}_{6},\underbrace{0,\dots,0}_{9}\bigr).
+$$</p>
+<p><strong>The six are the leptoquark planes and the nine are colour plus the corner.</strong> The nine are not "small": they are exactly zero, they are closed under the bracket, and they are the algebra that the first breaking leaves standing. <strong>The article computes the matrix entry by entry, says why six and not nine, checks that the corpus's two bases give the same masses, and separates one artefact that a recomputation is likely to produce.</strong> It does not compute the second breaking's mixing and it does not fix a coupling.</p>
+<p><strong>The whole content is one lemma.</strong> The commutator of a plane array with a diagonal is the other plane array of the same pair, times the difference of two eigenvalues. <strong>Everything below is that sentence applied six times.</strong></p>
+<h2 id="the-definition-and-two-conventions-that-turn-out-to-be-one">The Definition, and Two Conventions That Turn Out to Be One</h2>
+<p><strong>Where the matrix comes from.</strong> The scalar kinetic term contains $[A_\mu,\Phi]$, and a generator that commutes with the vacuum does not appear in it. <strong>Write the gauge field as $A_\mu=A^{X}_{\mu}X$ over a basis of the adjoint, put $\Phi=\Phi_0+\eta$, and the piece quadratic in the gauge field and quadratic in $v$ is</strong>
+$$
+\mathcal{L}\supset\tfrac12\,g^{2}\,A^{X}_{\mu}\,M^{2}_{XY}\,A^{Y\mu},\qquad M^{2}_{XY}=\operatorname{tr}\bigl([X,\Phi_0]^{\dagger}[Y,\Phi_0]\bigr).
+$$
+<strong>The commutator is the whole mechanism</strong>: a generator that does not move the vacuum has no mass, and one that moves it has a mass proportional to how far it moves it.</p>
+<p><strong>Two conventions, and they are the same matrix.</strong> The corpus writes the vacuum as $vD$ with $D$ Hermitian, and the structures note writes it as $v\,iD$ with $iD$ anti-Hermitian and takes the real part of the trace. <strong>The two agree identically.</strong> When $\Phi_0$ is Hermitian and $X$ anti-Hermitian, $[X,\Phi_0]$ is anti-Hermitian, so $[X,\Phi_0]^{\dagger}=-[X,\Phi_0]$ and
+$$
+\operatorname{tr}\bigl([X,\Phi_0]^{\dagger}[Y,\Phi_0]\bigr)=-\operatorname{tr}\bigl([X,\Phi_0][Y,\Phi_0]\bigr)=\operatorname{Re}\operatorname{tr}\bigl([X,\Phi_0]^{\dagger}[Y,\Phi_0]\bigr),
+$$
+<strong>so the $D$ form is already real and no $\operatorname{Re}$ is needed.</strong> Computed on all $225$ pairs of the fifteen the two forms agree entry by entry, and the $D$ form has no imaginary part at all. <strong>A reader who compares the two formulas has found a change of letter, not a discrepancy.</strong></p>
+<p><strong>What is factored out, and what is not.</strong> Three things sit outside $M^{2}$ and none of them is computed here: the coupling $g^{2}$, the $\tfrac12$ of the mass-term normalisation, and the field normalisation, which enters through $\operatorname{tr}(X^{\dagger}X)$. <strong>The entries below are the trace form of the arrays exactly as the AXF article prints them</strong>, and every ratio of masses is independent of those three factors.</p>
+<h2 id="the-commutator-lemma-one-plane-array-against-the-corner">The Commutator Lemma: One Plane Array Against the Corner</h2>
+<p><strong>The corner is diagonal, so the commutator of a matrix unit is one entry.</strong> With $E_{jk}$ the matrix unit, $\lambda=\operatorname{eig}(D)$ and $D$ diagonal,
+$$
+[E_{jk},D]=\bigl(\lambda_k-\lambda_j\bigr)E_{jk}.
+$$
+<strong>Antisymmetrising and symmetrising that line gives the two plane arrays of the pair</strong>, because the coefficient is the same on both entries only if the array is taken symmetric:
+$$
+[A_{jk},D]=\bigl(\lambda_k-\lambda_j\bigr)S_{jk},\qquad [S_{jk},D]=\bigl(\lambda_k-\lambda_j\bigr)A_{jk},\qquad [iS_{jk},D]=i\bigl(\lambda_k-\lambda_j\bigr)A_{jk}.
+$$
+<strong>So the commutator of a plane array never leaves its pair</strong>: it exchanges the real plane and the imaginary one and multiplies by $\Delta\lambda_{jk}:=\lambda_k-\lambda_j$. Six planes, six coefficients, computed:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>plane $\{j,k\}$</th>
+<th>$\Delta\lambda_{jk}$</th>
+<th>$[A_{jk},D]$</th>
+<th>$[iS_{jk},D]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{t,x\},\{t,y\},\{t,z\}$</td>
+<td>$+4$</td>
+<td>$\pm4S_{ta}$</td>
+<td>$\pm4iA_{ta}$</td>
+</tr>
+<tr>
+<td>$\{x,y\},\{x,z\},\{y,z\}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The zero row is colour.</strong> $D$ is $1$ on all three colour lines, so a colour plane's two eigenvalues are equal and its commutator vanishes — <strong>not because colour is special in the algebra, but because that one array is a multiple of the identity there.</strong> The $+4$ row is the lepton line: $-3$ against $+1$.</p>
+<p><strong>Two traces finish the computation.</strong> $\operatorname{tr}(A_{jk}^{2})=-2$, $\operatorname{tr}(S_{jk}^{2})=+2$ and $\operatorname{tr}(A_{jk}S_{jk})=0$ for all six planes, so the $2\times2$ block of one pair is already diagonal and its two entries are equal:
+$$
+M^{2}\Big|_{\{j,k\}}=2v^{2}\bigl(\Delta\lambda_{jk}\bigr)^{2}\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}.
+$$
+<strong>The vanishing of $\operatorname{tr}(A_{jk}S_{jk})$ is why no pair mixes</strong>, and it is a one-line computation rather than a theorem: an antisymmetric matrix against a symmetric one, in the same two-plane, gives zero.</p>
+<h2 id="the-fifteen-by-fifteen-in-the-physics-basis">The Fifteen-by-Fifteen, in the Physics Basis</h2>
+<p><strong>The ordering is the one of the AXF article</strong>: $A_{tx},A_{ty},A_{tz},A_{xy},A_{xz},A_{yz},iS_{tx},iS_{ty},iS_{tz},iS_{xy},iS_{xz},iS_{yz},iD,d_2,d_3$. <strong>Fifteen rows, one number each, and everything off the diagonal is zero.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>array</th>
+<th>plane</th>
+<th>$\Delta\lambda$</th>
+<th>$M^{2}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{tx},A_{ty},A_{tz}$</td>
+<td>$\{t,a\}$, leptoquark</td>
+<td>$+4$</td>
+<td>$32v^{2}$</td>
+</tr>
+<tr>
+<td>$A_{xy},A_{xz},A_{yz}$</td>
+<td>$\{b,c\}$, colour</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$iS_{tx},iS_{ty},iS_{tz}$</td>
+<td>$\{t,a\}$, leptoquark</td>
+<td>$+4$</td>
+<td>$32v^{2}$</td>
+</tr>
+<tr>
+<td>$iS_{xy},iS_{xz},iS_{yz}$</td>
+<td>$\{b,c\}$, colour</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>the corner</td>
+<td>$-$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$d_2,d_3$</td>
+<td>colour diagonals</td>
+<td>$-$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three statements about that table, each checked separately.</strong> The matrix is diagonal: $0$ in all $225-15=210$ off-diagonal entries. It is real and Hermitian: the largest imaginary part is $0$, so the $D$ and $iD$ conventions do not even differ by a phase here. And its rank is $6$: six equal entries, nine zeros.</p>
+<p><strong>The kernel is the unbroken algebra, and this is the sentence that makes the nine a result.</strong> The arrays annihilated by $[\,\cdot\,,D]$ are the nine with zero mass: the six colour planes, the two colour diagonals, and the corner. <strong>They span a nine-dimensional subspace, they are exactly $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, and they are closed under the bracket</strong> — all $81$ brackets of the nine land back in the nine, with a residual of $1.2\times10^{-15}$. <strong>A mass matrix whose kernel is a subalgebra is the matrix statement that the breaking leaves a group standing.</strong></p>
+<p><strong>The two zero rows have two different reasons, and the table does not distinguish them.</strong> The colour planes are zero because $\Delta\lambda=0$, a degeneracy of the vacuum along the colour triple. The corner and the colour diagonals are zero because those arrays are themselves diagonal, so they commute with $D$ identically: $[iD,D]=0$. <strong>One is a degeneracy; the other is a commutation.</strong> Both are exact, and both are visible only because the basis separates them.</p>
+<h2 id="why-six-and-not-nine-the-lepton-line-is-the-only-departure">Why Six and Not Nine: The Lepton Line Is the Only Departure</h2>
+<p><strong>Read $32$ off the eigenvalues.</strong> $32=2\times4^{2}$, and $4=1-(-3)$ is a colour eigenvalue minus the lepton eigenvalue. <strong>The lepton line is the one place where $D$ departs from a multiple of the identity, and a plane's mass is the square of that departure across it</strong>: a plane touching the lepton line sees it, a plane inside the colour triple does not, and a direction along a line cannot see a departure at all.</p>
+<p><strong>This is why the six massive gauge bosons are the only coloured ones.</strong> Every massive plane contains the lepton index $t$, so every massive generator moves the lepton line into colour; those are the six leptoquarks, three real planes and three imaginary planes, two amplitudes each. <strong>The eight colour generators and the corner stay massless at this scale, and no statement about the group is needed to see it</strong> — one eigenvalue of one array is enough.</p>
+<p><strong>The homogeneity is also the reason the number is $32$ and not something else.</strong> A vacuum proportional to the identity would commute with everything and break nothing; the trace-zero condition forces the corner to be $\operatorname{diag}(-3,1,1,1)$ up to scale and sign, so $4$ is not a parameter but the only difference available. <strong>Change the normalisation of $D$ and every entry scales by its square; change the direction and the pattern of six and nine changes with it.</strong></p>
+<h2 id="the-same-operator-in-the-maths-base-six-rank-one-blocks">The Same Operator in the Maths Base: Six Rank-One Blocks</h2>
+<p><strong>The maths base is the fifteen words taken as they are</strong>, $\ell_a$, $r_a$, $iN_{bc}$. <strong>The same matrix there is not diagonal</strong>, and that is the whole content of the pair-resolution argument: it is block diagonal in six $2\times2$ blocks, each of rank one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>the matrix, in units of $v^{2}$</th>
+<th>eigenvalues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\ell_a,r_a)$, three blocks</td>
+<td>$32\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix}$</td>
+<td>$0$, $64$</td>
+</tr>
+<tr>
+<td>$(iN_{bc},iN_{cb})$, three blocks</td>
+<td>$32\begin{pmatrix}1&amp;-1\\-1&amp;1\end{pmatrix}$</td>
+<td>$0$, $64$</td>
+</tr>
+<tr>
+<td>$iN_{xx},iN_{yy},iN_{zz}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Twenty-four non-zero entries out of $225$, twelve of them on the diagonal — two in each block — and six eigenvalues equal to $64v^{2}$.</strong> The reason for the factor two against the physics base is the block, not the physics: $32[[1,1],[1,1]]$ has eigenvalue $64$ on its eigenline, while the physics base puts the two normalised arrays on the two eigenlines and reads $32$ twice. <strong>The physics base is the basis in which the matrix is already diagonal, which is why the pair resolution was worth spending a choice on.</strong></p>
+<p><strong>Raise the index and the two bases give one number.</strong> The Gram entries are $\operatorname{tr}(X^{\dagger}X)=2$ for each physics array ($12$ for $iD$, whose mass is zero) and $4$ for each word. <strong>Dividing the entry by the Gram entry gives $32/2=16$ and $64/4=16$.</strong> The remaining factors, $g^{2}$, the $\tfrac12$ and the field normalisation, are common to every entry and cancel in every ratio. <strong>No basis change can move a mass, and the two displays are one matrix written twice.</strong></p>
+<p><strong>The three diagonal words carry nothing, and that is a statement about $D$ too.</strong> $iN_{xx}+iN_{yy}+iN_{zz}=iD$ is the vacuum itself, so the three commute with it: a direction along a diagonal cannot see a diagonal.</p>
+<h2 id="the-caveat-math137-on-the-carrier-is-an-artefact">The Caveat: $8v^{2}$ on the Carrier Is an Artefact</h2>
+<p><strong>The scalar that breaks $\mathrm{SU}(4)$ is a singlet of $\mathrm{SU}(2)_L$.</strong> Its vacuum is a direction in the quartet, and the left triple acts on the doublet factor, not on the quartet. <strong>So $T^{L}_{a}$ does not move $\Phi_0$ in the model, and the first breaking does not touch $W_L$.</strong></p>
+<p><strong>A recomputation on the carrier will say otherwise, and the number it produces is $8v^{2}$.</strong> Take $T^{L}_{x}=\tfrac12\ell_x$ as a four-row array acting on the quartet, and compute the same trace:
+$$
+\operatorname{tr}\bigl([T^{L}_{x},\Phi_0]^{\dagger}[T^{L}_{x},\Phi_0]\bigr)=8v^{2}.
+$$
+<strong>Read the arithmetic and the artefact is visible.</strong> $[\ell_x,D]=4S_{tx}$, so $[T^{L}_{x},D]=2S_{tx}$, and $4\operatorname{tr}(S_{tx}^{2})=4\times2=8$. <strong>The factor $\tfrac14$ between $8$ and $32$ is the half in $T^{L}_{x}$ appearing twice</strong>, and it is a warning about which carrier the array is being read on, not a mass. <strong>The six weak generators are not in the fifteen</strong>; on the carrier they are sums of colour and leptoquark planes, and their masses come from the second breaking through the doublet vacuum, not from this one.</p>
+<h2 id="what-the-matrix-does-not-say">What the Matrix Does Not Say</h2>
+<p><strong>It says nothing about a coupling.</strong> All three gauge couplings of the model are symbolic, so $32v^{2}$ is a coefficient of $v^{2}$ and not a number in kilograms. <strong>The coupling sector is a separate ledger.</strong></p>
+<p><strong>It says nothing about the corner's eventual mass.</strong> $[iD,D]=0$ is exact at this scale. The $B-L$ boson acquires a mass only through the mixing that produces $\gamma$, $Z$ and $Z_R$, and that mixing is computed in <a href="the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain</a>, not here.</p>
+<p><strong>It says nothing about the second breaking's spectrum.</strong> The right triple, the doublet vacuum and the neutral mixing are the next step, and their masses are coefficients of a different scale.</p>
+<h2 id="the-checks">The Checks</h2>
+<p>Sixteen recomputations, at $\operatorname{tr}$ in the fundamental, quartet ordered $(t,x,y,z)$, product fixed by $\vec e_x\vec e_y=\vec e_z$, vacuum $\Phi_0=vD$ with $D=\operatorname{diag}(-3,1,1,1)$ and $v=1$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the fifteen distinct, anti-Hermitian, traceless</td>
+<td>$15/15$</td>
+</tr>
+<tr>
+<td>$[A_{jk},D]=\Delta\lambda_{jk}S_{jk}$</td>
+<td>$6/6$ exact</td>
+</tr>
+<tr>
+<td>$[S_{jk},D]=\Delta\lambda_{jk}A_{jk}$ / $[iS_{jk},D]=i\Delta\lambda_{jk}A_{jk}$</td>
+<td>$6/6$ / $6/6$ exact</td>
+</tr>
+<tr>
+<td>$\Delta\lambda=+4$ on the three $t$-planes, $0$ on the three colour planes</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(A^{2})=-2$, $\operatorname{tr}(S^{2})=+2$, $\operatorname{tr}(AS)=0$</td>
+<td>$6/6$ each</td>
+</tr>
+<tr>
+<td>the six $2\times2$ blocks</td>
+<td>$32\operatorname{I}_2$ on the $t$-planes, $0$ on the colour planes</td>
+</tr>
+<tr>
+<td>$M^{2}$ off-diagonal entries</td>
+<td>$0$ in all $210$</td>
+</tr>
+<tr>
+<td>$M^{2}$ real and Hermitian</td>
+<td>no imaginary part, $M^{2}=M^{2\dagger}$</td>
+</tr>
+<tr>
+<td>rank of $M^{2}$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>kernel dimension, and the kernel named</td>
+<td>$9$: six colour planes, $d_2$, $d_3$, $iD$</td>
+</tr>
+<tr>
+<td>kernel closed under the bracket</td>
+<td>$81/81$, residual $1.2\times10^{-15}$</td>
+</tr>
+<tr>
+<td>the $D$ form against the $iD$ form with $\operatorname{Re}$</td>
+<td>$225/225$ agree</td>
+</tr>
+<tr>
+<td>maths-base blocks $32[[1,1],[1,1]]$ / $32[[1,-1],[-1,1]]$</td>
+<td>$3/3$ / $3/3$</td>
+</tr>
+<tr>
+<td>maths-base spectrum, and Gram entries</td>
+<td>$64v^{2}$ six times; $4$ per word</td>
+</tr>
+<tr>
+<td>raised index, both bases</td>
+<td>$64/4=32/2=16$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}([T^{L}_{x},\Phi_0]^{\dagger}[T^{L}_{x},\Phi_0])$ on the carrier</td>
+<td>$8v^{2}$, the artefact</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The adjoint mass matrix of the fifteen is one number per plane, and the number is $2v^{2}$ times the square of the eigenvalue difference across the plane.</strong> On the vacuum $\operatorname{diag}(-3,1,1,1)$ that is $32v^{2}$ on the six planes through the lepton line and exactly zero on the nine that avoid it.</p>
+<p><strong>Six and nine are one difference.</strong> The lepton line is the only departure of $D$ from a multiple of the identity, so a plane that touches it is heavy and a plane that does not is massless; the corner and the colour diagonals are massless for the second, exact reason that they commute with $D$. <strong>The nine-dimensional kernel is the unbroken $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, and it is closed under the bracket.</strong></p>
+<p><strong>The physics base is the basis in which the matrix is diagonal</strong>, the maths base is the basis in which it is six rank-one blocks, and the two are one matrix: $32$ against $64$ with Gram $2$ against $4$ gives $16$ either way. <strong>The one number that a recomputation produces wrongly is $8v^{2}$ for $W_L$ on the carrier, and it is the half in $T^{L}_{x}$ appearing twice.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X,Y$</td>
+<td>two of the fifteen, in the physics basis unless said otherwise</td>
+</tr>
+<tr>
+<td>$\Phi_0=vD$</td>
+<td>the vacuum of the scalar that breaks $\mathrm{SU}(4)$, along the lepton line</td>
+</tr>
+<tr>
+<td>$D=\operatorname{diag}(-3,1,1,1)$</td>
+<td>the corner, with $B-L=\tfrac13D$</td>
+</tr>
+<tr>
+<td>$\lambda_j$</td>
+<td>the eigenvalue of $D$ on the base vector $e_j$</td>
+</tr>
+<tr>
+<td>$\Delta\lambda_{jk}=\lambda_k-\lambda_j$</td>
+<td>the departure across the plane $\{j,k\}$; $+4$ through $t$, $0$ in colour</td>
+</tr>
+<tr>
+<td>$M^{2}_{XY}$</td>
+<td>the adjoint mass matrix $\operatorname{tr}([X,\Phi_0]^{\dagger}[Y,\Phi_0])$</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>the sign with which the two words of a pair agree, $+1$ for $\{t,a\}$ and $-1$ for $\{b,c\}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(X^{\dagger}X)$</td>
+<td>the Gram entry, $2$ for each physics array, $4$ for each word</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-axf-matrices-of-the-twenty-one-generators.html">The AXF Matrices of the Twenty-One Generators</a>. The twenty-one arrays, the three-step construction, and the property table this article's basis is taken from.</li>
+<li><a href="../articles_internal/structures/structure-SU4-basis-construction.html">Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices</a>. The pair lemma, the rank-one blocks, the maths-base display, and the theorem that one plane, eigenline and diagonal are one condition.</li>
+<li><a href="the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales</a>. What happens after this matrix: the second and third breaking, the mixing, and the scales.</li>
+<li><a href="classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators</a>. Which boson sits on each array, and the full spectrum with colour and charge.</li>
+<li><a href="the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html">The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite</a>. The six massive states of this matrix, their charges and the bound on their mass.</li>
+<li><a href="the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html">The Scalar Sector of the Four Colours Left–Right Model: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving</a>. Where the vacuum comes from and what is eaten to feed these six masses.</li>
+<li><a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model</a>. The declaration, the carrier and the stabiliser that make $D$ the only trace-zero direction available.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

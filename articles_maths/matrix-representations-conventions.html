@@ -345,6 +345,12 @@ $$
 and the same values hold for $R$, since the stitch changes neither a trace nor a determinant. They are the values of the matrix of the operator, not of the frame.</p>
 <h3 id="the-sixteen-products-in-this-frame">The Sixteen Products in This Frame</h3>
 <p><strong>They are real.</strong> The sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are real signed permutation matrices: four entries $\pm1$, one in each row and each column, of determinant $1$, of Hilbert–Schmidt norm two, and mutually orthogonal. Their entries are the structure constants themselves, so the product table of the algebra and the multiplication of the sixteen arrays are one table.</p>
+<p><strong>The word, and the name of a word.</strong> A product of one left array with one right array is a <strong>word</strong>,
+$$
+W_{\mu\nu}:=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu},\qquad \mu,\nu\in\{t,x,y,z\},
+$$
+and the label of a word is the pair of units it multiplies. The sixteen words are orthogonal in the trace form, $\operatorname{tr}(W_{\mu\nu}^{\mathsf T}W_{\rho\sigma})=4\,\delta_{\mu\rho}\delta_{\nu\sigma}$, because each is a signed permutation and a product of two signed permutations has trace $4$ exactly when the two agree. Sixteen arrays orthogonal in a sixteen-dimensional space are a basis of $M_4(\mathbb{R})$.</p>
+<p><strong>Exactly one word carries the trace.</strong> Only $W_{tt}$ has a nonzero trace, and its trace is $4$. Deleting the trace is therefore the deletion of the pair $(t,t)$ from the index list, and $16-1=15$ counts the pairs left. With $\ell_k=L_{\mathrm{axf},\vec e_k}$ and $r_k=R_{\mathrm{axf},\vec e_k}$, the fifteen are the six antisymmetric words $\ell_x,\ell_y,\ell_z,r_x,r_y,r_z$, with one index $t$, and the nine symmetric words $N_{jk}=\ell_jr_k$, with no index $t$. The matrix displays and the full table of names are §<em>The Sixteen Words, and Their Names</em> of <a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation: Operators</a>.</p>
 <p><strong>The sixteen, one by one.</strong> Each is a signed permutation matrix, with four entries $\pm1$, and each is written here with both factors named:</p>
 <p>$$
 L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},\qquad
@@ -452,7 +458,7 @@ L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}\;\longleftrightarrow\;L_{\mathrm{pa
 $$
 and the coefficients $Q_\mu Q_{2\nu}$ of a two-sided operator are the same sixteen numbers in both frames. Only the arrays differ: here real signed permutations, in the Peirce frame complex arrays with entries in $\{0,\pm1,\pm i\}$. §<em>The Switch Between the Two Frames</em> writes the sixteen expressions one by one, each an equality of the Pauli basis operator with its axis-free partner conjugated.</p>
 <p><strong>The cost.</strong> No $2\times2$ block appears, no Peirce idempotent is visible, and the sixteen arrays are all of one kind, so no five of them are singled out. The frame that gives the transpose dictionary takes away the block and the gamma frame; the next sections buy them back.</p>
-<h2 id="the-math309-pauli-representation">The $M_4(\mathbb{C})$ Pauli Representation</h2>
+<h2 id="the-math324-pauli-representation">The $M_4(\mathbb{C})$ Pauli Representation</h2>
 <p><strong>A second frame, and what it buys.</strong> The same two operators are displayed in the Peirce frame of the standard pair. The frame is a choice, and it is the choice the rest of the corpus makes: it is the frame in which the left matrix is a $2\times2$ block matrix, in which every basis operator is a Kronecker product of two $2\times2$ matrices, and in which five of them are the gamma matrices. Its label is $\mathrm{pau}$.</p>
 <h3 id="the-peirce-frame">The Peirce Frame</h3>
 <p><strong>The two idempotents.</strong> The standard pair is
@@ -911,7 +917,7 @@ $$
 \gamma_3=i\begin{pmatrix}0&amp;-1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\end{pmatrix},\qquad
 \gamma_5=i\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix}.
 $$</p>
-<h2 id="the-math621-pauli-representation">The $2\times2$ Pauli Representation</h2>
+<h2 id="the-math636-pauli-representation">The $2\times2$ Pauli Representation</h2>
 <p><strong>Read last, and not because it is small.</strong> The $2\times2$ display is the algebra itself, not an operator on it. It is placed last because it is best read after both $4\times4$ displays have shown what a matrix of an operator is, and because its matrices are the block of the Pauli display: the object it displays is the one the other two displays act on.</p>
 <h3 id="the-isomorphism">The Isomorphism</h3>
 <p><strong>The map.</strong> The isomorphism is $\mathbb{C}$-linear, multiplicative and bijective,
@@ -946,7 +952,7 @@ $$
 \operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t .
 $$
 The trace in that display is the trace of the image, and the corpus uses the word for the image alone: an element is read in $\operatorname{Sc}$. The determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus; the invertibility criterion, the group of invertibles and the unit-norm group are read from it.</p>
-<h3 id="the-bridge-to-the-math642-displays">The Bridge to the $4\times4$ Displays</h3>
+<h3 id="the-bridge-to-the-math657-displays">The Bridge to the $4\times4$ Displays</h3>
 <p><strong>The block.</strong> In the Pauli frame the left regular matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$, so the $2\times2$ image is the block of the $4\times4$ display, and the right regular matrix is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$, the same block transposed in the other slot. This is the whole reason the Peirce frame earns its root: it turns a $4\times4$ operator into a $2\times2$ matrix written twice.</p>
 <p><strong>The frame moves the block, not the image.</strong> In the axis-free frame the same operator reads
 $$

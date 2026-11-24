@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fermions After the Breaking: Three Colours and a Lepton Line, Two Weak Doublets, the Electric Charges — Biquaternion Universe</title>
+  <meta name="description" content="The question. One generation is sixteen states. After the chain has run, what are they — how many colours, how many doublets, which charges — and which of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fermions-after-the-breaking-three-colours-and-a-lepton-line-two-weak-doublets-the-electric-charges"><strong>The Fermions After the Breaking: Three Colours and a Lepton Line, Two Weak Doublets, the Electric Charges</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> One generation is sixteen states. After the chain has run, what are they — how many colours, how many doublets, which charges — and which of those numbers is read off the breaking and which is put in by hand?</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;
+(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)
+\ \longrightarrow\
+\underbrace{(Q_L)}_{\mathbf3,\ \text{six states}}
+\oplus\underbrace{(u_R,d_R)}_{\bar{\mathbf3},\ \text{six states}}
+\oplus\underbrace{(L_L)}_{\mathbf1,\ \text{two states}}
+\oplus\underbrace{(\nu_R,e_R)}_{\mathbf1,\ \text{two states}},
+\;}
+$$</p>
+<p>$$
+\boxed{\;
+6+6+2+2=16,
+\qquad
+Y=T_{3R}+\tfrac12(B-L),
+\qquad
+Q=T_{3L}+Y,
+\qquad
+\sum_{\text{generation}}Q=0,\quad \sum_{\text{generation}}(B-L)=0 .
+\;}
+$$</p>
+<p><strong>The single idea.</strong> The fermion quantum numbers are not an input list. They are the two Cartan eigenvalues the chain leaves behind — $B-L$ from the first step, $T_{3R}$ from the second — combined by one formula, and then the electric charge is a third combination on top. Every entry of the charge table follows from the value of $B-L$ on the quartet, which is itself fixed by declaring the fourth colour to be the lepton.</p>
+<p><strong>What the article establishes.</strong> The content of the sixteen at each stage of the chain; the split $\mathbf4\to\mathbf3\oplus\mathbf1$ and its reading as "three colours and a lepton line"; the assignment of $T_{3R}$ within the right doublet; hypercharge derived from $B-L$ and $T_{3R}$; the charge table with its two vanishing sums; why there is exactly one quark doublet and one lepton doublet per generation; and the anomaly arithmetic that makes the content consistent.</p>
+<p><strong>What the article does not establish.</strong> No mass and no mixing. The Yukawa sector, the one-matrix proportionality $M_d\propto M_e$ and its failure are <a href="the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html">The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation</a>. The generation count is <a href="the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a>.</p>
+<p><strong>Where the content is owned.</strong> The sixteen states, their $CP$ closure and the antiparticle tables are <a href="classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html">Classification of the Fermions in the Four Colours Left–Right Model: One Generation, Sixteen Fields, Thirty-Two States, Closed Under $CP$ and Not Under $C$</a>. The hypercharge assignment as an anomaly problem is <a href="the-electroweak-gauge-group-and-the-hypercharge-assignment.html">The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$</a>. This article owns the reading of the content after the breaking.</p>
+<h2 id="the-sixteen-and-the-two-blocks">The Sixteen and the Two Blocks</h2>
+<p><strong>Two blocks, because chirality is a choice of which factor acts.</strong> The count is arithmetic before it is physics.</p>
+<p><strong>1.1 The two blocks.</strong> The left block is $(\mathbf4,\mathbf2,\mathbf1)$: eight states, the $\mathrm{SU}(4)$ index and the $L$ index live, the $R$ index trivial. The right block is $(\bar{\mathbf4},\mathbf1,\mathbf2)$: eight states, the conjugate quartet and the $R$ index live, the $L$ index trivial. Together</p>
+<p>$$
+4\cdot2\cdot1+4\cdot1\cdot2=8+8=16 .
+$$</p>
+<p><strong>1.2 Why the conjugate.</strong> The right block carries $\bar{\mathbf4}$ and not $\mathbf4$. That single bar is what makes the sixteen anomaly-free in $\mathrm{SU}(4)$ and what makes the right-handed fields conjugates of quartet states rather than quartet states. It is also the reason $B-L$ has the sign it has on the right-handed leptons.</p>
+<p><strong>1.3 The third factor is not parallel to the second.</strong> The two blocks are not "the same eight twice". $(\mathbf4,\mathbf2,\mathbf1)$ and $(\mathbf4,\mathbf1,\mathbf2)$ are different modules, and the difference is which weak factor acts. Reading the pair as a $(\mathbf4,\mathbf2,\mathbf2)$ would give sixteen states with both weak factors live on all of them, which is the vector-like content the model does not have.</p>
+<h2 id="the-split-at-math29-three-colours-and-a-lepton-line">The Split at $M_C$: Three Colours and a Lepton Line</h2>
+<p><strong>The first step divides the quartet.</strong> One line out, three lines left.</p>
+<p><strong>2.1 The branching.</strong> Under $\mathrm{SU}(4)\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}$,</p>
+<p>$$
+\mathbf4\to\mathbf3_{+\frac13}\oplus\mathbf1_{-1},
+\qquad
+\bar{\mathbf4}\to\bar{\mathbf3}_{-\frac13}\oplus\mathbf1_{+1},
+$$</p>
+<p>the subscripts being $B-L$. The three are the colours; the one is the lepton line, the fourth colour.</p>
+<p><strong>2.2 The two blocks, branched.</strong> The left block becomes a colour triplet that is an $L$ doublet and a colour singlet that is an $L$ doublet:</p>
+<p>$$
+(\mathbf4,\mathbf2,\mathbf1)\to(\mathbf3,\tfrac13;\mathbf2,\mathbf1)\oplus(\mathbf1,-1;\mathbf2,\mathbf1).
+$$</p>
+<p>The right block becomes a colour antitriplet and a colour singlet, both $R$ doublets. So after $M_C$ the content is: a quark doublet, a lepton doublet, an antiquark doublet and an antilepton doublet, and $B-L$ is a good quantum number on all four.</p>
+<p><strong>2.3 What the first step buys.</strong> Before it, $B-L$ is a direction inside a simple group and there is no quantum number to assign. After it, every state has a definite $B-L$, and the two blocks differ by $\pm\tfrac13$ on the coloured states and by $\mp1$ on the singlet. That difference is the whole content of "three colours and a lepton line".</p>
+<p><strong>2.4 Why the lepton is a colour.</strong> The declaration is that the fourth colour is the lepton, and its consequence is the eigenvalue list $(-1,\tfrac13,\tfrac13,\tfrac13)$ on the quartet in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$. Charge quantisation follows from that list, because the trace $\operatorname{tr}_{\mathbf4}(B-L)=-1+1=0$ forces the three quark values once the lepton value is fixed. The argument is <a href="charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go</a>, and it is not repeated here.</p>
+<h2 id="the-right-doublet-at-math46-math47-becomes-a-label">The Right Doublet at $M_R$: $T_{3R}$ Becomes a Label</h2>
+<p><strong>The second step splits each right doublet.</strong> Two states, two labels, and one of them is new.</p>
+<p><strong>3.1 The branching.</strong> Under $\mathrm{SU}(2)_R\to\mathrm{U}(1)_R$ a doublet splits into its two components, which carry $T_{3R}=\pm\tfrac12$. Applied to the right block:</p>
+<p>$$
+(\bar{\mathbf3},-\tfrac13;\mathbf1,\mathbf2)\to
+(\bar{\mathbf3},-\tfrac13)_{+\frac12}\oplus(\bar{\mathbf3},-\tfrac13)_{-\frac12},
+$$</p>
+<p>and the same for the singlet. So each right-handed species is resolved into two, and the resolution is what allows a mass term to be written for one member and not the other.</p>
+<p><strong>3.2 The physical fields.</strong> The states of the $\bar{\mathbf4}$ block are conjugates of the right-handed fields, so the sign of every charge flips when the block is read as $\{u_R,d_R,\nu_R,e_R\}$. That flip is the bookkeeping behind the $-\tfrac13$ and $+1$ in §<em>The Split at $M_C$</em> becoming $+\tfrac13$ and $-1$ on the physical states.</p>
+<p><strong>3.3 Why the resolution matters.</strong> Above $M_R$ the two members of a right doublet are degenerate: $\mathrm{SU}(2)_R$ rotates one into the other and no mass term distinguishes them. Below $M_R$ they carry different $T_{3R}$, hence different $Y$, hence different $Q$: an up-type and a down-type quark, a neutrino and an electron. The mass splitting of the members of a right doublet is therefore a consequence of the second breaking and not an input.</p>
+<h2 id="hypercharge-derived">Hypercharge, Derived</h2>
+<p><strong>One formula, and it needs both previous steps.</strong> This is the section that answers where the numbers come from.</p>
+<p><strong>4.1 The formula.</strong></p>
+<p>$$
+Y=T_{3R}+\tfrac12(B-L).
+$$</p>
+<p><strong>4.2 Why the coefficients are what they are.</strong> The half in front of $B-L$ is the normalisation of the $\mathrm{SU}(4)$ generator that survives the first step: $B-L=\sqrt{8/3}\,T^{15}$, and the trace normalisation of $T^{15}$ is $\tfrac12$. The unit in front of $T_{3R}$ is the normalisation of the $\mathrm{SU}(2)$ Cartan. The two coefficients differ because the two groups enter the algebra with different trace normalisations, and that difference is the reason the weak mixing angle is not $\tfrac12$ at the breaking scale.</p>
+<p><strong>4.3 The check on each species.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>physical field</th>
+<th>$T_{3R}$</th>
+<th>$B-L$</th>
+<th>$Y=T_{3R}+\tfrac12(B-L)$</th>
+<th>observed $Y$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u_R$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$\tfrac12+\tfrac16=\tfrac23$</td>
+<td>$\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_R$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$-\tfrac12+\tfrac16=-\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\nu_R$</td>
+<td>$+\tfrac12$</td>
+<td>$-1$</td>
+<td>$\tfrac12-\tfrac12=0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_R$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+<td>$-\tfrac12-\tfrac12=-1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$Q_L$</td>
+<td>$0$</td>
+<td>$+\tfrac13$</td>
+<td>$\tfrac16$</td>
+<td>$\tfrac16$</td>
+</tr>
+<tr>
+<td>$L_L$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-\tfrac12$</td>
+<td>$-\tfrac12$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>4.4 What the table is not.</strong> It is not a fit. The two inputs are $B-L$, fixed by the declaration of the fourth colour, and $T_{3R}$, fixed by which member of the doublet a field is. Both are discrete. Nothing in the table is adjusted.</p>
+<h2 id="the-electric-charge-and-the-table">The Electric Charge and the Table</h2>
+<p><strong>The third combination, and the two sums that check it.</strong></p>
+<p><strong>5.1 The formula.</strong> $Q=T_{3L}+Y$. The left factor's Cartan is $\pm\tfrac12$ on a doublet and $0$ on a singlet.</p>
+<p><strong>5.2 The generation.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>multiplicity</th>
+<th>colour</th>
+<th>$T_{3L}$</th>
+<th>$T_{3R}$</th>
+<th>$B-L$</th>
+<th>$Y$</th>
+<th>$Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q_L=(u_L,d_L)$</td>
+<td>$6$</td>
+<td>$\mathbf3$</td>
+<td>$\pm\tfrac12$</td>
+<td>$0$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac16$</td>
+<td>$+\tfrac23$, $-\tfrac13$</td>
+</tr>
+<tr>
+<td>$u_R$</td>
+<td>$3$</td>
+<td>$\mathbf3$</td>
+<td>$0$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac23$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_R$</td>
+<td>$3$</td>
+<td>$\mathbf3$</td>
+<td>$0$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$-\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$L_L=(\nu_L,e_L)$</td>
+<td>$2$</td>
+<td>$\mathbf1$</td>
+<td>$\pm\tfrac12$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-\tfrac12$</td>
+<td>$0$, $-1$</td>
+</tr>
+<tr>
+<td>$\nu_R$</td>
+<td>$1$</td>
+<td>$\mathbf1$</td>
+<td>$0$</td>
+<td>$+\tfrac12$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_R$</td>
+<td>$1$</td>
+<td>$\mathbf1$</td>
+<td>$0$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Multiplicities: $6+3+3+2+1+1=16$.</p>
+<p><strong>5.3 The charge sum.</strong> $1+2-1-1+0-1=0$: the quark doublet contributes $3(\tfrac23-\tfrac13)=1$, the up singlets $3\cdot\tfrac23=2$, the down singlets $3\cdot(-\tfrac13)=-1$, the lepton doublet $0-1=-1$, the neutrino singlet $0$, the electron singlet $-1$. A generation is neutral.</p>
+<p><strong>5.4 The $B-L$ sum.</strong> $6\cdot\tfrac13+3\cdot\tfrac13+3\cdot\tfrac13+2\cdot(-1)+(-1)+(-1)=2+1+1-2-1-1=0$. The same vanishing, read on the other charge, and it is the same arithmetic as $\operatorname{tr}_{\mathbf4}(B-L)=0$ multiplied by the two chiralities.</p>
+<p><strong>5.5 The proton's charge, as an example of the same identity.</strong> $uud$ gives $\tfrac23+\tfrac23-\tfrac13=1$, and the electron gives $-1$: the hydrogen atom is neutral because $Q$ is a linear combination with the coefficient of $B$ fixed by the trace. This is what "charge quantisation" means here, and it is the reason the fourth colour had to be the lepton.</p>
+<h2 id="the-two-weak-doublets">The Two Weak Doublets</h2>
+<p><strong>Why exactly two, and why one of each kind.</strong> The count is the module structure, not a convention.</p>
+<p><strong>6.1 The count.</strong> A left doublet needs an $L$ index; the left block has one; the left block is a $\mathbf4$ of $\mathrm{SU}(4)$, which branches to $\mathbf3\oplus\mathbf1$. So there is one doublet on the triplet and one on the singlet: a quark doublet and a lepton doublet, and no third.</p>
+<p><strong>6.2 Why there is no right-handed doublet below $M_R$.</strong> The right doublets exist above $M_R$ and are resolved by the second breaking. Below $M_R$ each of their members is a singlet of everything except $\mathrm{U}(1)_Y$, so the low-energy theory has only left doublets and right singlets. That is the observed structure, and here it is a consequence of the breaking rather than an axiom.</p>
+<p><strong>6.3 The neutrino.</strong> The right block contains a colour singlet with $B-L=-1$ and $T_{3R}=+\tfrac12$, whose conjugate is $\nu_R$: a Standard-Model singlet with zero charge and zero hypercharge. The model therefore has a right-handed neutrino without adding one, and the mass it can carry — a Majorana mass at $M_R$ — is the seesaw of <a href="the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">The Seesaw Mechanism and Majorana Mass in Biquaternionic Form</a>.</p>
+<h2 id="anomalies-and-the-trace">Anomalies and the Trace</h2>
+<p><strong>Why the content is consistent, in one line and four checks.</strong></p>
+<p><strong>7.1 The one line.</strong> $\operatorname{tr}_{\mathbf4}(B-L)=0$.</p>
+<p><strong>7.2 The four consequences.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>anomaly</th>
+<th>coefficient</th>
+<th>why it vanishes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$[\mathrm{SU}(4)]^3$</td>
+<td>index of $\mathbf4$ minus index of $\bar{\mathbf4}$</td>
+<td>the two blocks are conjugates, so $1-1=0$</td>
+</tr>
+<tr>
+<td>$[\mathrm{SU}(4)]^2\,\mathrm{U}(1)_{B-L}$</td>
+<td>$2\operatorname{tr}_{\mathbf4}(B-L)$</td>
+<td>the trace is zero</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)_{L,R}^2\,\mathrm{U}(1)_{B-L}$</td>
+<td>$\sum_{\text{doublets}}B-L$</td>
+<td>quark doublet $+2$, lepton doublet $-2$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_{B-L}^3$</td>
+<td>$\sum(B-L)^3$ over the sixteen</td>
+<td>$2(-1)+6(\tfrac1{27})$ against $2(+1)+6(-\tfrac1{27})$, and the blocks cancel</td>
+</tr>
+<tr>
+<td>gravity</td>
+<td>$\sum B-L$ over the sixteen</td>
+<td>zero, as in §<em>The Electric Charge and the Table</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>7.3 What this is not.</strong> It is not a proof that the model is anomaly-free at every order. It is the statement that the cubic and mixed anomalies vanish because the sixteen is built from a quartet and its conjugate, and that the vanishing is a property of the trace rather than of a cancellation between unrelated multiplets. The full treatment is <a href="anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html">Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None</a>.</p>
+<p><strong>7.4 The $CP$ remark.</strong> The sixteen is closed under $CP$ and not under $C$, and the exchange of the two weak factors is what closes it. That is not used anywhere above, and it is the reason the model is a left–right model rather than a vector-like one.</p>
+<h2 id="what-the-fermion-content-does-not-say">What the Fermion Content Does Not Say</h2>
+<p><strong>Four silences.</strong> Each is a different article.</p>
+<p><strong>8.1 Masses.</strong> Every entry in the table is a quantum number. None is a mass. The masses come from Yukawa couplings, and the minimal content's single bidoublet forces $M_d\propto M_e$: <a href="the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html">The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation</a>.</p>
+<p><strong>8.2 Mixing.</strong> The table is diagonal in flavour by construction: one generation. The CKM and PMNS matrices are <a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a> and <a href="the-pmns-matrix-and-lepton-mixing.html">The PMNS Matrix and Lepton Mixing</a>.</p>
+<p><strong>8.3 The number of copies.</strong> Nothing above fixes three generations. The repetition is <a href="the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a>.</p>
+<p><strong>8.4 Which vacuum the quarks see.</strong> The table is the content, not the spectrum: confinement, and with it the absence of free quarks, is <a href="quantum-chromodynamics-as-the-residual-of-su4.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated</a>.</p>
+<h2 id="the-checks">The Checks</h2>
+<p><strong>Six checks.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the count</td>
+<td>$6+6+2+2$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>the branching</td>
+<td>$4\cdot2\cdot1$ and $\bar4\cdot1\cdot2$</td>
+<td>$8+8$</td>
+</tr>
+<tr>
+<td>hypercharge</td>
+<td>$Y=T_{3R}+\tfrac12(B-L)$ on all six species</td>
+<td>matches the observed table</td>
+</tr>
+<tr>
+<td>the charge</td>
+<td>$\sum Q$ over the generation</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$B-L$</td>
+<td>$\sum(B-L)$ over the generation</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the trace</td>
+<td>$\operatorname{tr}_{\mathbf4}(B-L)=-1+3\cdot\tfrac13$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="distinctions-that-are-easy-to-lose">Distinctions That Are Easy to Lose</h2>
+<p><strong>Three pairs.</strong></p>
+<p><strong>9.1 The block's labels and the physical fields.</strong> The $\bar{\mathbf4}$ block's charges are the negatives of the physical right-handed fields' charges. A table that mixes the two conventions has the wrong sign on $u_R$ and on $e_R$ and is still internally consistent, which is why the error survives.</p>
+<p><strong>9.2 Hypercharge and the weak hypercharge of the checklist.</strong> The corpus writes $Y$; the reference tables often write $Y_W=2Y$. Both are consistent, and the factor two is a convention on the $\mathrm{U}(1)$ normalisation.</p>
+<p><strong>9.3 Sixteen and fifteen.</strong> The sixteen includes $\nu_R$. A content with fifteen states is the Standard Model's, and it has no $T_{3R}$ to build hypercharge from. The sixteenth state is what makes the derivation of §<em>Hypercharge, Derived</em> possible.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The content.</strong> $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$, sixteen states, branching to a quark doublet, two up-type and down-type singlets, a lepton doublet and two lepton singlets.</p>
+<p><strong>The colours.</strong> Three, plus a lepton line: the split $\mathbf4\to\mathbf3\oplus\mathbf1$ at $M_C$.</p>
+<p><strong>The doublets.</strong> Two left doublets, one quark and one lepton; the right doublets are resolved at $M_R$.</p>
+<p><strong>The charges.</strong> $Y=T_{3R}+\tfrac12(B-L)$ and $Q=T_{3L}+Y$, both derived, both discrete, with $\sum Q=\sum(B-L)=0$ over a generation.</p>
+<p><strong>The consistency.</strong> The anomalies vanish because the sixteen is a quartet and its conjugate and because $\operatorname{tr}_{\mathbf4}(B-L)=0$.</p>
+<p><strong>What is missing.</strong> Masses, mixing, and the number of generations.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\mathbf4,\mathbf2,\mathbf1)$, $(\bar{\mathbf4},\mathbf1,\mathbf2)$</td>
+<td>the two blocks of the sixteen</td>
+</tr>
+<tr>
+<td>$Q_L$, $L_L$</td>
+<td>the quark and lepton left doublets</td>
+</tr>
+<tr>
+<td>$u_R$, $d_R$, $\nu_R$, $e_R$</td>
+<td>the right-handed singlets</td>
+</tr>
+<tr>
+<td>$B-L$</td>
+<td>baryon number minus lepton number, the $\mathrm{SU}(4)$ Cartan that survives $M_C$</td>
+</tr>
+<tr>
+<td>$T_{3L}$, $T_{3R}$</td>
+<td>the Cartan eigenvalues of the two weak factors</td>
+</tr>
+<tr>
+<td>$Y$, $Q$</td>
+<td>hypercharge and electric charge</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}_{\mathbf4}$</td>
+<td>the trace over the quartet, the source of every vanishing sum</td>
+</tr>
+<tr>
+<td>$M_C$, $M_R$</td>
+<td>the scales of the colour and right-handed breakings</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html">Classification of the Fermions in the Four Colours Left–Right Model: One Generation, Sixteen Fields, Thirty-Two States, Closed Under $CP$ and Not Under $C$</a>. The states, the antiparticle tables and the $CP$ closure.</li>
+<li><a href="the-electroweak-gauge-group-and-the-hypercharge-assignment.html">The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$</a>. The same assignments read as an anomaly problem, with the three rays and the one that survives.</li>
+<li><a href="charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go</a>. Why the trace fixes the eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$.</li>
+<li><a href="the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html">The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation</a>. What the content cannot say about masses.</li>
+<li><a href="anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html">Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None</a>. The anomaly arithmetic in full.</li>
+<li><a href="the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html">The Order of the Breaking in the Four Colours Left–Right Model: Nested Vacua and the Scale Order $M_C\ge M_R\ge M_W$</a>. Why $T_{3R}$ is a label only below $M_R$ and $B-L$ only below $M_C$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

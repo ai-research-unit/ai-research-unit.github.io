@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices — Biquaternion Universe</title>
+  <meta name="description" content="The question. The corpus prints two bases of: the maths fifteen of The Anti-Hermitian Derivations of as,, and the physics fifteen of The AXF Matrices of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="building-the-two-bases-of-math0-from-the-axis-free-left-and-right-matrices"><strong>Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The corpus prints two bases of $\mathfrak{su}(4)$: the <strong>maths fifteen</strong> of <a href="../../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a>, $\ell_a,r_a,iN_{jk}$, and the <strong>physics fifteen</strong> of <a href="../../articles_physics/the-axf-matrices-of-the-twenty-one-generators.html">The AXF Matrices of the Twenty-One Generators</a>, $A_{jk},iS_{jk},iD,d_2,d_3$. Both are credited to the same source, the axis-free left and right matrices $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$ of <a href="../../articles_maths/matrix-representations-conventions.html">Matrix Representations and Conventions</a>. <strong>This note does the arithmetic of that credit</strong>: it writes each base as an explicit expression in the eight axis-free arrays, and shows that the two expressions differ by exactly one step.</p>
+<p><strong>The answer in one line.</strong> Both bases are built from the same sixteen products $W_{\mu\nu}=L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu)$, $\mu,\nu\in\{t,x,y,z\}$, and both perform the same two steps on that list: the deletion of the one product that carries the trace, and the multiplication of the nine symmetric products by $i$. <strong>The maths base then stops and takes the fifteen products as they are. The physics base goes one step further: for each of the six unordered index pairs it replaces the two products of the pair by their half-sum and half-difference.</strong> That is the whole difference, and it is one line of algebra:
+$$
+\text{maths }=\bigl\{\,W_{\mu\nu}\,\bigr\}_{(\mu,\nu)\ne(t,t)},\qquad
+\text{physics }=\Bigl\{\,\tfrac12\bigl(W_{\mu\nu}\pm W_{\nu\mu}\bigr)\,\Bigr\}_{\{\mu,\nu\}},\quad \{\mu,\nu\}\ \text{one of the six pairs}.
+$$
+<strong>Nothing else is done in either construction.</strong> No generator of either base is a product of three words, a commutator, or an exponential: every one of the thirty is a word or a half-sum of two words.</p>
+<p><strong>What this note adds to the companion.</strong> <a href="structure-SU4-basis-comparison.html">Two Bases of $\mathfrak{su}(4)$</a> prints the thirty arrays and the change of basis in both directions. <strong>This note prints the construction</strong>: where each array comes from, which step of the construction introduces a factor $\tfrac12$, which step is forced, and why the same eight input arrays produce two bases with such different behaviour under reading. §<em>What Each Construction Spends</em> states the cost of each.</p>
+<h2 id="the-raw-material-eight-arrays-two-of-them-the-identity">The Raw Material: Eight Arrays, Two of Them the Identity</h2>
+<p><strong>The definitions, read by columns.</strong> The axis-free left matrix of an element is read by acting on the four units and writing the answer as a column, and the right matrix the same with the factors exchanged:
+$$
+L_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qe_\nu\bigr]_{\mu},\qquad R_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[e_\nu\tilde Q\bigr]_{\mu},\qquad e_\mu\in\{e_t,\vec e_x,\vec e_y,\vec e_z\}.
+$$
+<strong>Only the units matter here.</strong> Both families are linear in $\tilde Q$, so a matrix of a general element is a combination of the four matrices of the units, and the eight arrays $L_{\mathrm{axf}}(e_\mu)$, $R_{\mathrm{axf}}(e_\mu)$ are the entire input to both constructions. <strong>Six of the eight are distinct and two are the identity</strong>, because the scalar unit acts the same on both sides:
+$$
+L_{\mathrm{axf}}(e_t)=R_{\mathrm{axf}}(e_t)=\mathrm I_4 .
+$$
+<strong>The three left arrays, one to a display.</strong>
+$$
+\ell_x:=L_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}
+$$
+$$
+\ell_y:=L_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix}
+$$
+$$
+\ell_z:=L_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}
+$$
+<strong>The three right arrays, the same way.</strong>
+$$
+r_x:=R_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}
+$$
+$$
+r_y:=R_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix}
+$$
+$$
+r_z:=R_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}
+$$
+<strong>The one structural fact on which everything below rests.</strong> Compare $\ell_x$ with $r_x$: <strong>they are the same signed permutation and they differ only in the signs of the second plane.</strong>
+$$
+\ell_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\qquad
+r_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}.
+$$
+Both send $e_t\mapsto\vec e_x$ and $\vec e_x\mapsto-e_t$, and both send $\{\vec e_y,\vec e_z\}$ to itself; <strong>the first block is identical and the second block is opposite.</strong> That is the left and right multiplication of the biquaternion units, and the same statement holds for $y$ and $z$ with the complement cycled. <strong>This single fact is the reason the physics base can exist</strong>: take the sum of the two arrays and the second plane cancels; take the difference and the first plane cancels.</p>
+<p><strong>Two bookkeeping facts about the eight.</strong> Each is a signed permutation matrix, orthogonal, of determinant $+1$ and trace $4\delta_{\mu t}$; the four of each family together with their negatives form a copy of the quaternion group $Q_8$ inside $O(4)$. <strong>Neither fact is used in the constructions</strong>, and they are stated so that the arrays are not mistaken for a frame chosen for the occasion: they are the multiplication table of the algebra, read twice.</p>
+<h2 id="the-sixteen-words">The Sixteen Words</h2>
+<p><strong>The definition.</strong> A <strong>word</strong> is a product of one left array with one right array, the indices running over the four units:
+$$
+W_{\mu\nu}:=L_{\mathrm{axf}}(e_\mu)\,R_{\mathrm{axf}}(e_\nu),\qquad \mu,\nu\in\{t,x,y,z\}.
+$$
+<strong>Proposition (the words are a basis of $M_4(\mathbb{R})$).</strong> The sixteen $W_{\mu\nu}$ are linearly independent, and they are orthogonal in the trace form with one common norm,
+$$
+\operatorname{tr}\bigl(W_{\mu\nu}^{\mathsf T}W_{\mu'\nu'}\bigr)=4\,\delta_{\mu\mu'}\delta_{\nu\nu'} .
+$$
+<strong>Proof.</strong> Each array is a signed permutation matrix, so the product $W_{\mu\nu}^{\mathsf T}W_{\mu'\nu'}$ is a signed permutation matrix with trace $4$ if the two permutations agree and $0$ otherwise, and the permutations agree exactly when $(\mu,\nu)=(\mu',\nu')$. Sixteen arrays orthogonal in a sixteen-dimensional space are a basis. $\square$</p>
+<p><strong>The table of the sixteen.</strong> The last column names each word by the object the corpus already has for it; $N_{jk}:=\ell_jr_k$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>word</th>
+<th>the unit indices</th>
+<th>trace</th>
+<th>symmetry</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$W_{tt}$</td>
+<td>scalar, scalar</td>
+<td>$4$</td>
+<td>symmetric</td>
+<td>$\mathrm I_4$, <strong>the removed word</strong></td>
+</tr>
+<tr>
+<td>$W_{tx}$</td>
+<td>scalar, vector</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$r_x$</td>
+</tr>
+<tr>
+<td>$W_{ty}$</td>
+<td>scalar, vector</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$r_y$</td>
+</tr>
+<tr>
+<td>$W_{tz}$</td>
+<td>scalar, vector</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$r_z$</td>
+</tr>
+<tr>
+<td>$W_{xt}$</td>
+<td>vector, scalar</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$\ell_x$</td>
+</tr>
+<tr>
+<td>$W_{yt}$</td>
+<td>vector, scalar</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$\ell_y$</td>
+</tr>
+<tr>
+<td>$W_{zt}$</td>
+<td>vector, scalar</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$\ell_z$</td>
+</tr>
+<tr>
+<td>$W_{xx}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{xx}=\ell_xr_x$</td>
+</tr>
+<tr>
+<td>$W_{xy}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{xy}=\ell_xr_y$</td>
+</tr>
+<tr>
+<td>$W_{xz}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{xz}=\ell_xr_z$</td>
+</tr>
+<tr>
+<td>$W_{yx}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{yx}=\ell_yr_x$</td>
+</tr>
+<tr>
+<td>$W_{yy}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{yy}=\ell_yr_y$</td>
+</tr>
+<tr>
+<td>$W_{yz}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{yz}=\ell_yr_z$</td>
+</tr>
+<tr>
+<td>$W_{zx}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{zx}=\ell_zr_x$</td>
+</tr>
+<tr>
+<td>$W_{zy}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{zy}=\ell_zr_y$</td>
+</tr>
+<tr>
+<td>$W_{zz}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{zz}=\ell_zr_z$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two corollaries read off the table, and both bases use both.</strong></p>
+<p><strong>1. The trace cell is one word.</strong> Exactly one of the sixteen has a trace, namely $W_{tt}$, the product of the two scalar units. <strong>So "remove the trace" is not an operation on a sum: it is the deletion of a single word</strong>, and $16-1=15$ is achieved by deleting the pair $(t,t)$ from the index list. That is why the count $15$ is the same in both bases and is not a coincidence: it is the number of index pairs left after the scalar pair is dropped, and that is the same thing as the number of cells of the $4\times4$ grid after the corner is dropped.</p>
+<p><strong>2. The $6+9$ split is the count of scalar indices.</strong> The fifteen remaining words split by how many of their two indices are the scalar unit:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>scalar indices</th>
+<th>count</th>
+<th>words</th>
+<th>symmetry</th>
+<th>generator must be</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>one</td>
+<td>$6$</td>
+<td>$W_{ta}=r_a$, $W_{at}=\ell_a$</td>
+<td>real antisymmetric</td>
+<td>anti-Hermitian already</td>
+</tr>
+<tr>
+<td>none</td>
+<td>$9$</td>
+<td>$W_{jk}=N_{jk}$</td>
+<td>real symmetric</td>
+<td>multiply by $i$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The factor $i$ is therefore forced and not chosen.</strong> Every generator of $\mathfrak{su}(4)$ is anti-Hermitian. A real antisymmetric matrix is anti-Hermitian as it stands, and a real symmetric one is Hermitian, so it must be multiplied by $i$ to enter the algebra. <strong>The $6+9$ split and the $i$ are shared by both bases</strong>, and they are the only two steps that neither base is free to make differently. Everything that distinguishes the two bases happens inside the two summands.</p>
+<h2 id="the-maths-base-the-fifteen-words-taken-as-they-are">The Maths Base: The Fifteen Words Taken as They Are</h2>
+<p><strong>The construction, in two rules and no arithmetic.</strong></p>
+<p><strong>Rule M1 (the six).</strong> Take the six words with one scalar index, unchanged:
+$$
+\ell_a=W_{at},\qquad r_a=W_{ta},\qquad a=x,y,z .
+$$
+<strong>Rule M2 (the nine).</strong> Take the nine words with both indices vector, multiplied by $i$:
+$$
+iN_{jk}=i\,W_{jk}=i\,\ell_jr_k,\qquad j,k=x,y,z .
+$$
+<strong>Nothing is added, subtracted, halved or rescaled.</strong> The maths fifteen is the word list with one factor of $i$ on the second half, and that is the whole construction. <strong>A reader who wants to know where $\ell_x$ comes from is answered by three words: left multiplication by $\vec e_x$, read in the axis-free frame.</strong></p>
+<p><strong>The nine products, written out.</strong> The six real ones are the arrays of §<em>The Raw Material</em>, since $W_{at}=\ell_a$ and $W_{ta}=r_a$; only the nine products are new.</p>
+<p>$$
+N_{xx}=\ell_xr_x=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}
+$$
+$$
+N_{xy}=\ell_xr_y=\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}
+$$
+$$
+N_{xz}=\ell_xr_z=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\-1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix}
+$$
+$$
+N_{yx}=\ell_yr_x=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;-1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix}
+$$
+$$
+N_{yy}=\ell_yr_y=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}
+$$
+$$
+N_{yz}=\ell_yr_z=\begin{pmatrix}0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\end{pmatrix}
+$$
+$$
+N_{zx}=\ell_zr_x=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix}
+$$
+$$
+N_{zy}=\ell_zr_y=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\end{pmatrix}
+$$
+$$
+N_{zz}=\ell_zr_z=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}
+$$
+<strong>Each of the nine is a signed permutation matrix</strong> and each is symmetric, as the table of §<em>The Sixteen Words</em> said. <strong>The nine are the products and nothing else</strong>: $N_{xx}$ is left-by-$x$ followed by right-by-$x$, and a reader can recompute it from the two arrays of §<em>The Raw Material</em> in one line.</p>
+<p><strong>Why this base is orthonormal.</strong> The words are orthogonal with norm $4$, and the only change made is the factor $i$ on nine of them, of modulus one. So
+$$
+\operatorname{tr}\bigl(G_aG_b\bigr)=-4\,\delta_{ab},\qquad a,b=1,\dots,15,
+$$
+with the minus from $i^2$. <strong>That is a property inherited from the words and not a design of the maths base</strong>: any basis obtained from an orthogonal list by multiplying entries by phases is orthogonal, and this one happens to be the one that keeps every word whole.</p>
+<p><strong>The cost, stated here and counted in §<em>What Each Construction Spends</em>.</strong> A word moves four cells: $\ell_x$ moves the pairs $(t,x)$ and $(y,z)$. <strong>Taking the words whole therefore means that no generator of the maths base is one cell wide</strong>, and a reader looking for a single particle finds two planes in one array.</p>
+<h2 id="the-physics-base-the-six-pairs-sum-and-difference">The Physics Base: The Six Pairs, Sum and Difference</h2>
+<p><strong>The one step.</strong> The physics base applies one operation to the word list, and it is applied to <strong>pairs</strong> of words rather than to single ones. For each of the six unordered index pairs $\{\mu,\nu\}$ take the two words of the pair and replace them by their half-sum and half-difference:
+$$
+P^{+}_{\mu\nu}:=\tfrac12\bigl(W_{\mu\nu}+W_{\nu\mu}\bigr),\qquad P^{-}_{\mu\nu}:=\tfrac12\bigl(W_{\mu\nu}-W_{\nu\mu}\bigr).
+$$
+<strong>Why the operation works, in one paragraph.</strong> By the structural fact of §<em>The Raw Material</em>, the two words of a pair are the same signed permutation and differ only in the signs of one of the two planes they move. <strong>So the sum keeps the plane on which the two words agree and the difference keeps the plane on which they disagree, and both results are supported on that single plane.</strong> That is the entire mechanism: a pair of four-cell words produces two two-cell arrays.</p>
+<p><strong>The six pairs and their twelve outputs.</strong> Each row is computed from the two words named in it. The sign of the difference is the orientation sign of the four indices $(\mu,\nu,\mu',\nu')$ against $(t,x,y,z)$, with $\{\mu',\nu'\}$ the complementary pair.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>the two words</th>
+<th>half-sum</th>
+<th>half-difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{t,x\}$</td>
+<td>$W_{tx}=r_x$, $W_{xt}=\ell_x$</td>
+<td>$-A_{tx}$</td>
+<td>$+A_{yz}$</td>
+</tr>
+<tr>
+<td>$\{t,y\}$</td>
+<td>$W_{ty}=r_y$, $W_{yt}=\ell_y$</td>
+<td>$-A_{ty}$</td>
+<td>$-A_{xz}$</td>
+</tr>
+<tr>
+<td>$\{t,z\}$</td>
+<td>$W_{tz}=r_z$, $W_{zt}=\ell_z$</td>
+<td>$-A_{tz}$</td>
+<td>$+A_{xy}$</td>
+</tr>
+<tr>
+<td>$\{x,y\}$</td>
+<td>$W_{xy}=N_{xy}$, $W_{yx}=N_{yx}$</td>
+<td>$-S_{xy}$</td>
+<td>$+S_{tz}$</td>
+</tr>
+<tr>
+<td>$\{x,z\}$</td>
+<td>$W_{xz}=N_{xz}$, $W_{zx}=N_{zx}$</td>
+<td>$-S_{xz}$</td>
+<td>$-S_{ty}$</td>
+</tr>
+<tr>
+<td>$\{y,z\}$</td>
+<td>$W_{yz}=N_{yz}$, $W_{zy}=N_{zy}$</td>
+<td>$-S_{yz}$</td>
+<td>$+S_{tx}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the third column as one sentence.</strong> The half-sum is always <strong>minus</strong> the array on the pair's own two indices: the agreement of left and right multiplication on a pair of colours is the array on that pair. <strong>Take the pair $\{t,a\}$: the agreement is the plane $\{t,a\}$, which is a leptoquark plane; the disagreement is the plane $\{b,c\}$, which is a colour plane.</strong> Take the pair $\{b,c\}$: the agreement is the imaginary colour plane $iS_{bc}$ and the disagreement is the imaginary leptoquark plane $iS_{ta}$.</p>
+<p><strong>The identity behind the six rows, in one display.</strong>
+$$
+A_{ta}=-\tfrac12\bigl(W_{ta}+W_{at}\bigr),\qquad A_{bc}=+\tfrac12\bigl(W_{ta}-W_{at}\bigr),
+$$
+for $\{a,b,c\}=\{x,y,z\}$ cyclic, with the sign of the second as tabulated. <strong>This is the sentence the model is built on</strong>: the leptoquark plane is where left and right multiplication agree, and the colour plane is where they disagree.</p>
+<p><strong>The three diagonals.</strong> The diagonal words are single-index-pair objects $W_{jj}$, so they are not paired by the rule above; they are taken whole, in the sum and the two successive differences:
+$$
+iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr),\qquad d_2=\tfrac i2\bigl(W_{yy}-W_{xx}\bigr),\qquad d_3=\tfrac i2\bigl(W_{zz}-W_{yy}\bigr),
+$$
+with $D=\operatorname{diag}(-3,1,1,1)$ the real diagonal under $iD$. <strong>The three carry the factor $i$ of the nine, for the reason the nine do</strong>: $W_{jj}$ is real symmetric, so $iW_{jj}$ is anti-Hermitian and $W_{jj}$ is not. <strong>The corner is the one array of the physics fifteen whose coefficients carry no half</strong>, and that is visible in this display: no $\tfrac12$ appears in the sum that makes $iD$. Every other physics array, the twelve planes and the two colour diagonals, carries a half.</p>
+<p><strong>Two worked arrays, from the words to the cell.</strong>
+$$
+A_{tx}=-\tfrac12\bigl(W_{tx}+W_{xt}\bigr)=-\tfrac12\left[
+\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}+\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}
+\right]=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$
+$$
+iS_{tz}=i\,\tfrac12\bigl(W_{xy}-W_{yx}\bigr)=i\,\tfrac12\left[
+\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}-\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;-1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix}
+\right]=i\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}
+$$
+<strong>The first display is the whole of the physics base in one example</strong>: the two words of the pair $\{t,x\}$ agree on the plane $\{t,x\}$ and disagree on $\{y,z\}$, the sum kills the disagreement, and the survivor is one leptoquark plane. The second does the same on the imaginary side with the colours $\{x,y\}$.</p>
+<p><strong>The count.</strong> Six pairs give twelve arrays, the three diagonal words give three, and $12+3=15$. <strong>The arithmetic of the construction is the arithmetic of the grid</strong>: twelve off-diagonal planes and three diagonal arrays, which is the $15=6+6+3$ of the physics family list.</p>
+<h2 id="what-each-construction-spends">What Each Construction Spends</h2>
+<p><strong>Both constructions are exact and both are reversible.</strong> The change of basis between them, in both directions, is printed in <a href="structure-SU4-basis-comparison.html">Two Bases of $\mathfrak{su}(4)$</a>, and the composition is the identity on both sides. <strong>What differs is what each spent to get there</strong>, and the spending is visible in the coefficients.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what the construction does</th>
+<th>maths base</th>
+<th>physics base</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>words used per generator</td>
+<td>one</td>
+<td>one, or two</td>
+</tr>
+<tr>
+<td>operations on the words</td>
+<td>multiply nine of them by $i$</td>
+<td>pair them, then $\tfrac12$(sum), $\tfrac12$(difference)</td>
+</tr>
+<tr>
+<td>coefficients over the words</td>
+<td>$0,\pm1,\pm i$</td>
+<td>$0,\pm\tfrac12,\pm1,\pm i$</td>
+</tr>
+<tr>
+<td>arrays carrying a $\tfrac12$</td>
+<td>none</td>
+<td>fourteen of fifteen</td>
+</tr>
+<tr>
+<td>cells moved per generator</td>
+<td>four</td>
+<td>two</td>
+</tr>
+<tr>
+<td>integral over the words</td>
+<td>yes</td>
+<td>one array only, $iD$</td>
+</tr>
+<tr>
+<td>orthonormal in the trace</td>
+<td>yes, $-4\delta_{ab}$</td>
+<td>no, $-12$ on $iD$ and one cross term</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two lines that matter are the third and the fifth.</strong> Because the maths base takes the words whole, its coefficient matrix over the words is a permutation matrix times phases, of determinant a unit, and the array lattice it generates is the word lattice itself. <strong>Because the physics base halves, its coefficient matrix over the words has determinant</strong>
+$$
+\bigl|\det C_{\text{words}\to\text{physics}}\bigr|=\frac{3}{256},
+$$
+which is the number met in the comparison article from the other side. <strong>So the physics lattice is the finer of the two and the maths lattice the coarser</strong>, and the ratio is the price of the halves.</p>
+<p><strong>The price buys exactly one thing, and it is the thing the model needs.</strong> Halving a sum of two four-cell words produces a two-cell array, and a two-cell array is one particle. <strong>Fourteen halves buy fourteen particles and one corner</strong>, and §<em>Which Construction Answers Which Question</em> states what that is worth.</p>
+<h2 id="the-unique-property-of-the-physics-base">The Unique Property of the Physics Base</h2>
+<p><strong>The claim, with the hypothesis first.</strong> Every step of both constructions is a choice, and the previous section priced each one. <strong>One of them is not a matter of taste, and this section isolates it.</strong> Fix the sixteen words. In each of the six pairs $\{\mu,\nu\}$ replace the two words by an invertible real combination of the two, and keep the three diagonal words as they are. <strong>That is a four-parameter family of resolutions per pair, and the theorem is about all of them at once.</strong></p>
+<p><strong>Theorem.</strong> <em>The physics base is the unique member of that family in which every one of the twelve off-diagonal generators is supported on a single plane. It is equivalently the unique member in which the adjoint mass matrix is diagonal, and the two conditions are one condition.</em></p>
+<p><strong>The hypothesis is two hypotheses, and the theorem is empty without them.</strong> The first is the sixteen words: the property is a statement about the grid $(t,x,y,z)$, and a rotation moves every plane off the grid, which §<em>What the Theorem Does Not Say</em> exhibits with an array. The second is the within-pair resolution: <strong>taking the basis to be a resolution of pairs, rather than some other combination of the words, is a hypothesis and not a consequence.</strong> The one-plane demand alone does not single out the physics base, and §<em>What the Theorem Does Not Say</em> gives four words, drawn from two pairs, whose combination is one-plane and is in neither base. <strong>Inside those two, the four-parameter family in each pair collapses to one point, and this section computes why.</strong></p>
+<h3 id="the-pair-lemma-why-the-halves-are-forced">The Pair Lemma: Why the Halves Are Forced</h3>
+<p><strong>The two words of a pair are the sum and the difference of two plane parts.</strong> By §<em>The Raw Material</em> the two words of a pair are one signed permutation, so each is supported on the same two planes; call their plane parts $X$ and $Y$. The two words differ in the signs of exactly one of the two planes, so
+$$
+W_{\mu\nu}=X+Y,\qquad W_{\nu\mu}=X-Y .
+$$
+<strong>The pair $\{t,x\}$, in full, because the indices are what a reader trips on.</strong>
+$$
+W_{tx}=r_x=-A_{tx}+A_{yz},\qquad W_{xt}=\ell_x=-A_{tx}-A_{yz},
+$$
+that is, with $X=-A_{tx}$ and $Y=+A_{yz}$,
+$$
+W_{tx}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},\qquad W_{xt}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}.
+$$
+<strong>The second pair, where the two words differ on the other side.</strong> With $N_{xy}=\ell_xr_y$,
+$$
+W_{xy}=N_{xy}=+S_{tz}-S_{xy},\qquad W_{yx}=N_{yx}=-S_{tz}-S_{xy},
+$$
+so here $X=-S_{xy}$ and $Y=+S_{tz}$: <strong>the agreement of the two words is the colour plane and the disagreement is the leptoquark plane</strong>, the opposite assignment to the pair $\{t,x\}$, and that reversal is the whole of the difference between the two block shapes below.</p>
+<p><strong>The inverse of the sum and difference is the Hadamard matrix.</strong> Solving the two equations,
+$$
+X=\tfrac12\bigl(W_{\mu\nu}+W_{\nu\mu}\bigr),\qquad Y=\tfrac12\bigl(W_{\mu\nu}-W_{\nu\mu}\bigr),\qquad
+a\,W_{\mu\nu}+b\,W_{\nu\mu}=(a+b)\,X+(a-b)\,Y .
+$$
+<strong>So a combination of a pair is supported on one plane exactly when $a=\pm b$</strong>, on $X$ when $a=b$ and on $Y$ when $a=-b$, and there is no third case: the demand is one of the two linear equations $a-b=0$, $a+b=0$, and their solutions are the two eigenlines of the $2\times2$ Hadamard. <strong>The halves are not a convention here; they are the inverse of $\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}$, and any other coefficient leaves both planes alive.</strong></p>
+<p><strong>Worked, with a wrong coefficient.</strong>
+$$
+\tfrac12\bigl(W_{tx}+W_{xt}\bigr)=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}=-A_{tx},\qquad
+\tfrac12\bigl(W_{tx}-W_{xt}\bigr)=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}=A_{yz},
+$$
+$$
+2\,W_{tx}+W_{xt}=-3A_{tx}+A_{yz}=\begin{pmatrix}0&amp;-3&amp;0&amp;0\\3&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}.
+$$
+<strong>Two cells, two cells, four cells.</strong> The third array moves the leptoquark plane with weight three and the colour plane with weight one, so it is in both planes at once and a reader cannot say which cell it belongs to. <strong>That is the failure the physics base is built to avoid: a generator that is in two planes at once.</strong></p>
+<p><strong>Checked exhaustively.</strong> On coefficients in $\{-4,\dots,4\}$ for all six pairs, the number of non-zero entries of $aW_{\mu\nu}+bW_{\nu\mu}$ is two exactly when $|a|=|b|$ and four otherwise: <strong>$480$ combinations, no exception</strong>, and the same statement holds with the two words of a pair exchanged.</p>
+<h3 id="the-pair-block-of-the-mass-matrix-is-rank-one">The Pair Block of the Mass Matrix Is Rank One</h3>
+<p><strong>Setup.</strong> The adjoint mass matrix of §<em>The Mass Test</em> of the companion article is
+$$
+M^{2}_{ab}=\operatorname{Re}\operatorname{tr}\bigl([T_a,\Phi]^{\dagger}[T_b,\Phi]\bigr),\qquad \Phi=v\,iD,\qquad \mu^{2}:=32\,v^{2},
+$$
+and its entries are the traces of products of commutators with the corner. <strong>The first computation to do is the commutator of one word with $iD$, because everything follows from it.</strong></p>
+<p><strong>The commutator of a word is supported on its $t$-plane.</strong> $iD$ is $-3i$ on the lepton line and $i$ on each colour, so $[\cdot,iD]$ sees only the cells that join the lepton line to a colour. For the pair $\{t,x\}$,
+$$
+[A_{tx},iD]=4i\,S_{tx},\qquad [A_{yz},iD]=0,\qquad\Longrightarrow\qquad
+[r_x,iD]=[\ell_x,iD]=-4i\,S_{tx},
+$$
+and the two words of the pair have <strong>the same</strong> commutator, because they differ only in the colour plane, which $iD$ does not see. <strong>A pair whose words have equal commutators therefore has a block of ones:</strong>
+$$
+M^{2}\big|_{\{t,x\}}=\mu^{2}\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix},
+$$
+the entry computed as $\operatorname{Re}\operatorname{tr}((-4iS_{tx})^{\dagger}(-4iS_{tx}))=16\operatorname{tr}(S_{tx}^{2})=32$.</p>
+<p><strong>The colour pairs are the other case, and the sign is the sign of the disagreement.</strong> For the pair $\{x,y\}$,
+$$
+[S_{xy},iD]=0,\qquad [N_{xy},iD]=+4i\,A_{tz},\qquad [N_{yx},iD]=-4i\,A_{tz},
+$$
+because here it is the leptoquark plane that carries the opposite sign in the two words. <strong>So the two words have opposite commutators and the block has the sign off the diagonal:</strong>
+$$
+M^{2}\big|_{\{x,y\}}=\mu^{2}\begin{pmatrix}1&amp;-1\\-1&amp;1\end{pmatrix}.
+$$
+<strong>All six blocks, in one display.</strong> With $s$ the sign with which the two words of the pair agree on their commutator,
+$$
+M^{2}\big|_{\{\mu,\nu\}}=\mu^{2}\begin{pmatrix}1&amp;s\\ s&amp;1\end{pmatrix},\qquad
+s=+1\ \text{ for }\ \{\mu,\nu\}=\{t,a\},\qquad s=-1\ \text{ for }\ \{\mu,\nu\}=\{b,c\}.
+$$
+<strong>Every one of the six blocks is rank one.</strong> It has determinant zero and trace $2\mu^{2}$, so it has a kernel line and one non-zero eigenline, and both are named by the same two vectors in every pair:
+$$
+\begin{pmatrix}1&amp;s\\ s&amp;1\end{pmatrix}\begin{pmatrix}1\\ s\end{pmatrix}=2\begin{pmatrix}1\\ s\end{pmatrix},\qquad
+\begin{pmatrix}1&amp;s\\ s&amp;1\end{pmatrix}\begin{pmatrix}1\\ -s\end{pmatrix}=\begin{pmatrix}0\\0\end{pmatrix}.
+$$
+<strong>The eigenline $(1,s)$ is the half-sum and the kernel line $(1,-s)$ is the half-difference</strong>, which are the two one-plane arrays of the pair lemma. <strong>The mass matrix therefore has exactly the same preferred directions as the one-plane condition, and that is the theorem.</strong></p>
+<p><strong>The six pairs, the sign, and which of the two is heavy.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>$s$</th>
+<th>the eigenline $(1,s)$</th>
+<th>mass</th>
+<th>the kernel line $(1,-s)$</th>
+<th>mass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{t,x\}$</td>
+<td>$+1$</td>
+<td>$-A_{tx}$</td>
+<td>$\mu^2$</td>
+<td>$A_{yz}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\{t,y\}$</td>
+<td>$+1$</td>
+<td>$-A_{ty}$</td>
+<td>$\mu^2$</td>
+<td>$-A_{xz}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\{t,z\}$</td>
+<td>$+1$</td>
+<td>$-A_{tz}$</td>
+<td>$\mu^2$</td>
+<td>$A_{xy}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\{x,y\}$</td>
+<td>$-1$</td>
+<td>$+S_{tz}$</td>
+<td>$\mu^2$</td>
+<td>$-S_{xy}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\{x,z\}$</td>
+<td>$-1$</td>
+<td>$-S_{ty}$</td>
+<td>$\mu^2$</td>
+<td>$-S_{xz}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\{y,z\}$</td>
+<td>$-1$</td>
+<td>$+S_{tx}$</td>
+<td>$\mu^2$</td>
+<td>$-S_{yz}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the mass columns.</strong> For the three pairs through $t$ the heavy member is the half-sum and for the three colour pairs it is the half-difference; <strong>in both cases the heavy member is the one supported on the leptoquark plane, and the massless member is the one supported on the colour plane.</strong> No pair is mixed, in either case.</p>
+<h3 id="the-adjoint-mass-matrix-in-the-physics-base">The Adjoint Mass Matrix in the Physics Base</h3>
+<p><strong>In the ordering $A_{tx},A_{ty},A_{tz},A_{xy},A_{xz},A_{yz},iS_{tx},iS_{ty},iS_{tz},iS_{xy},iS_{xz},iS_{yz},iD,d_2,d_3$, the fifteen-by-fifteen array is</strong>
+$$
+M^{2}_{\text{phys}}=\begin{pmatrix}\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\end{pmatrix}.
+$$
+<strong>Six entries, on the diagonal, and nothing else.</strong> The six are the leptoquark sextet: the three real planes $A_{ta}$ and the three imaginary planes $iS_{ta}$, each with mass $\mu^{2}$. <strong>The nine zeros are the massless nine</strong>: the six colour planes, the two colour diagonals and the corner. <strong>The corner is zero because it is the vacuum itself</strong>, $[iD,iD]=0$, which is the array statement that $B-L$ is unbroken at this step. <strong>And there is no off-diagonal entry anywhere</strong>, which is the sentence the previous four displays were for: <em>no pair mixes, so no array is half of one particle and half of another.</em></p>
+<h3 id="the-adjoint-mass-matrix-in-the-maths-base">The Adjoint Mass Matrix in the Maths Base</h3>
+<p><strong>The same operator, in the ordering $\ell_x,\ell_y,\ell_z,r_x,r_y,r_z,iN_{xx},iN_{xy},iN_{xz},iN_{yx},iN_{yy},iN_{yz},iN_{zx},iN_{zy},iN_{zz}$, is</strong>
+$$
+M^{2}_{\text{maths}}=\begin{pmatrix}\mu^{2}&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;\mu^{2}&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\\mu^{2}&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;\mu^{2}&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;-\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;-\mu^{2}&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;-\mu^{2}&amp;0&amp;\mu^{2}&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;-\mu^{2}&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;-\mu^{2}&amp;0&amp;0&amp;0&amp;\mu^{2}&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;-\mu^{2}&amp;0&amp;\mu^{2}&amp;0\\0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\end{pmatrix}.
+$$
+<strong>Twenty-four entries, six rank-one blocks, and twelve of them on the diagonal — two in each block, which is what makes the block rank one rather than diagonal.</strong> The three blocks on $(\ell_a,r_a)$ are copies of $\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix}$; the three on $(iN_{bc},iN_{cb})$ are copies of $\begin{pmatrix}1&amp;-1\\-1&amp;1\end{pmatrix}$; and the three diagonal products $iN_{xx},iN_{yy},iN_{zz}$ carry nothing, because a diagonal array commutes with the corner. <strong>Only those three of the fifteen are eigenvectors of the array</strong>, as §<em>The Mass Test</em> of the companion states and this display shows: the block coefficient is $\mu^{2}$, so no off-diagonal word of the maths base is an eigenvector; <strong>the eigenvectors are $\ell_a\pm r_a$ and $iN_{bc}\pm iN_{cb}$</strong>, twelve of them, plus the three diagonal words.</p>
+<p><strong>The one number that differs between the two displays is the Gram factor and nothing else.</strong> The array eigenvalues are $\mu^{2}$ six times in the physics base and $2\mu^{2}$ six times in the maths base, because the two arrays have different normalisations, $\operatorname{tr}(T^{2})=-2$ against $\operatorname{tr}(G^{2})=-4$. <strong>Raise the index with the Gram matrix and the two spectra agree exactly</strong>, which is why the physical masses do not depend on the choice and only the reading does.</p>
+<h3 id="the-two-by-two-case-done-by-hand">The Two-by-Two Case, Done by Hand</h3>
+<p><strong>One pair, the whole theorem, no indices left implicit.</strong> For $\{\mu,\nu\}$ the block in the word basis is $\mu^{2}\begin{pmatrix}1&amp;s\\ s&amp;1\end{pmatrix}$, and the resolution is the congruence by
+$$
+H=\frac12\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix},\qquad H^{\mathsf T}H=\frac12\mathrm I_2,\qquad
+H^{\mathsf T}\begin{pmatrix}1&amp;s\\ s&amp;1\end{pmatrix}H=\begin{cases}\begin{pmatrix}1&amp;0\\0&amp;0\end{pmatrix},&amp;s=+1,\\[2pt]\begin{pmatrix}0&amp;0\\0&amp;1\end{pmatrix},&amp;s=-1.\end{cases}
+$$
+<strong>Two things to notice.</strong> The transformation is its own inverse up to the factor $\tfrac12$, which is the Hadamard matrix being symmetric and orthogonal: <strong>that is why the physics arrays are the averages and not twice the averages.</strong> And the diagonalised block has one entry equal to $\mu^{2}$ and one equal to zero, <strong>so the pair contributes exactly one massive direction and exactly one massless direction, whichever pair it is.</strong> Six pairs, six massive directions, six massless ones, and the fifteen split as $6+9$ with the three diagonals adding to the massless nine.</p>
+<p><strong>The mixed array, in this language.</strong> The array at the half-way point of the pair, $\tfrac12\bigl(W_{\mu\nu}+W_{\nu\mu}\bigr)$, has mass $\mu^{2}$; the array at the orthogonal direction has mass $0$. <strong>Any other combination, for instance $W_{\mu\nu}$ itself, is the sum of a massive and a massless array in equal parts</strong> — and that is not a statement about a particle, it is a statement about a bookkeeping choice, which is why the maths base is the wrong book for the spectrum.</p>
+<h3 id="why-one-plane-implies-a-diagonal-mass-matrix">Why One Plane Implies a Diagonal Mass Matrix</h3>
+<p><strong>The implication is a chain of four identities, and it runs in both directions.</strong></p>
+<p><strong>1.</strong> A word is the sum of its two plane parts, and its commutator with $iD$ keeps only the part that touches the lepton line.
+<strong>2.</strong> So for a combination $v=(a,b)$ of a pair, $[\cdot,iD]=(a+b)\,[X,iD]$, and the block entry between two combinations $v,v'$ is
+$$
+M^{2}(v,v')=\mu^{2}\,(a+b)(a'+b').
+$$
+<strong>3.</strong> Diagonal in a basis $\{v,v'\}$ therefore means $(a+b)(a'+b')=0$, which for a basis — both vectors non-zero — means that each of the two satisfies $a+b=0$ or $a-b=0$.
+<strong>4.</strong> Those two equations are $|a|=|b|$, which by the pair lemma is the one-plane condition.
+<strong>So one plane, eigenline and diagonal are three names for one condition, and the theorem's two forms are one form.</strong> The direction of causation matters and the corpus states it in this order: <strong>the one-plane condition is the cause and the diagonal matrix is the effect.</strong> The factor $\tfrac12$ was not chosen to diagonalise $M^{2}$; it was chosen to resolve the pair, and the diagonalisation follows from it.</p>
+<h3 id="the-two-bases-are-each-the-unique-solution-of-one-demand">The Two Bases Are Each the Unique Solution of One Demand</h3>
+<p><strong>The maths base has its own uniqueness, and it is the mirror image of this one.</strong> Among the same resolutions, it is the unique one in which every array is a single word. <strong>From that one demand follow its three virtues</strong>: integral entries, because a word is a signed permutation; the orthonormal Gram $-4\delta_{ab}$, because the words are orthogonal; and the compact weak triples, because $\ell_a$ and $r_a$ are words. <strong>The physics base buys none of those and buys the planes.</strong></p>
+<p><strong>The kinetic term cannot break the tie, and this is worth saying precisely.</strong> The gauge kinetic term is the trace form, and in the maths base it reads $-\tfrac14\sum_a F^{a}F^{a}$ with no cross term because $\operatorname{tr}(G_aG_b)=-4\delta_{ab}$. <strong>But $-4\delta_{ab}$ holds in every orthonormal basis of the fifteen, and there are as many of those as there are orthogonal matrices of order fifteen.</strong> The kinetic form is a multiple of the identity on $\mathfrak{su}(4)$, so it has no preferred basis and cannot have one: <strong>an operator that is a multiple of the identity names no direction, and a basis chosen to diagonalise it is chosen for no reason at all.</strong></p>
+<p><strong>The mass form is the one that names directions.</strong> It has two eigenvalues and is not a multiple of the identity, so it distinguishes; but it is degenerate, $\mu^{2}$ six times and $0$ nine times, so on its own it still does not name a basis. <strong>What names the physics base is the conjunction</strong>: the pair structure of the words, which fixes the six two-dimensional blocks, and the mass form, which fixes one direction inside each block. <strong>The intersection of the two demands is a single point, and that point is the basis this note has been building.</strong></p>
+<h3 id="what-the-theorem-does-not-say">What the Theorem Does Not Say</h3>
+<p><strong>1. It does not say the physics base is the only one-plane basis of $\mathfrak{su}(4)$.</strong> Conjugation moves the grid. Rotate the colours $x,y$ by $\theta$ and conjugate $A_{tx}$:
+$$
+R(\theta)\,A_{tx}\,R(\theta)^{\mathsf T}=\begin{pmatrix}0&amp;0.955&amp;0.296&amp;0\\-0.955&amp;0&amp;0&amp;0\\-0.296&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},\qquad \theta=0.3\ \text{rad},
+$$
+which has four cells on the two coordinate planes $\{t,x\}$ and $\{t,y\}$, and is <strong>one</strong> plane in the rotated frame: it is $A_{t,x'}$ with $x'=\cos\theta\,x+\sin\theta\,y$. <strong>The array is a single plane generator all the same, and it is not a coordinate plane</strong>, which is why the word 'unique' needs the grid. The physics base is not unique among bases of the algebra; <strong>it is unique among bases of the algebra that are built from the sixteen words without leaving the grid</strong>, and that is the only sense in which the corpus needs the word.</p>
+<p><strong>2. It does not say that the one-plane demand alone picks the physics base.</strong> A single cell is supported on one plane, so the demand is satisfied by the matrix units, and <strong>four words from two complementary pairs reach one</strong>:
+$$
+2E_{xt}=\tfrac12\bigl(W_{tx}+W_{xt}\bigr)+\tfrac12\bigl(W_{yz}-W_{zy}\bigr).
+$$
+<strong>Multiply by $i$ and the array is traceless, anti-Hermitian and one-plane, and it is in neither base.</strong> So the one-plane demand is necessary and not sufficient. <strong>What is true, and checked, is that no combination of two or three words drawn from different pairs is one-plane at all</strong>: the pair is the smallest group of words that resolves, because the two words of a pair are the only two words that share a support and differ in exactly one of the two planes. <strong>The sufficient statement is the one-plane demand applied inside each pair, one pair at a time, which is the theorem's hypothesis</strong>; without that restriction the solution set is much larger, and its extreme member is the basis of the twelve matrix units $iE_{jk}$, each of which is one cell and therefore one plane.</p>
+<p><strong>3. It says nothing about the three diagonals.</strong> $iD,d_2,d_3$ are single-cell diagonal arrays in the word list already, so the one-plane condition is satisfied by them automatically and by every resolution of them. Both bases put all three at mass zero, and both bases print them; <strong>the uniqueness statement is about the twelve off-diagonal generators, and the three diagonals are inherited rather than chosen.</strong></p>
+<p><strong>4. It is a statement about directions, not about normalisation.</strong> $2A_{tx}$ and $-7A_{yz}$ are one-plane arrays too, so the resolution is unique only up to a scale in each pair. <strong>The scale $\tfrac12$ is fixed by a further demand</strong>: that the arrays be the matrices $A_{jk}$ and $iS_{jk}$ with entries $\pm1$ and $\pm i$, which is the Hadamard inverse of the pair and the reason the physics Gram is $-2$ and not $-8$. <strong>A reader who wants the arrays to be the matrix units gets $\tfrac12$ from that, and does not get it from the mass matrix.</strong></p>
+<p><strong>5. It is a statement about the printed array, and the operator statement is slightly weaker.</strong> "$M^{2}$ is diagonal" is a statement about the fifteen-by-fifteen array of entries $M^{2}_{ab}$. To read it as an operator one raises an index with the Gram matrix, and in the physics base the Gram is $-2$ twelve times, $-12$ on $iD$, with the one off-diagonal entry $\operatorname{tr}(d_2d_3)=+1$. <strong>That entry mixes $d_2$ with $d_3$ and nothing else, and it sits inside the zero block</strong>, so the operator's eigenvectors are $d_2\pm d_3$ rather than $d_2$ and $d_3$ — and every direction in that block has mass zero either way. <strong>No generator changes side, and the six massive arrays of the physics base are eigenvectors of the operator as well as of the array.</strong></p>
+<h3 id="the-unique-property-hypothesis-and-consequence">The Unique Property: Hypothesis and Consequence</h3>
+<p><strong>The sentence, in the form the corpus can defend.</strong></p>
+<blockquote>
+<p><strong>The physics base is the unique basis of $\mathfrak{su}(4)$ obtainable from the sixteen axis-free words by resolving each of the six pairs, in which every off-diagonal generator is supported on a single plane; and it is the same basis, by the same uniqueness, in which the adjoint mass matrix with vacuum $\Phi=v\,iD$ is diagonal.</strong></p>
+</blockquote>
+<p><strong>The mechanism, in one sentence.</strong> The two words of a pair have commutators with $iD$ that are equal or opposite, so the pair's mass block is $\mu^{2}\begin{pmatrix}1&amp;s\\ s&amp;1\end{pmatrix}$, whose eigenlines are the half-sum and the half-difference — <strong>which are exactly the two arrays of the pair that live on one plane; so separating the planes and diagonalising the mass are one act.</strong></p>
+<p><strong>And the contrast, in one sentence.</strong> The maths base is the eigenbasis of the kinetic term, which is a multiple of the identity and therefore prefers nothing; the physics base is the eigenbasis of the mass term, <strong>which prefers the leptoquark planes over the colour planes, and the leptoquark planes are the particles.</strong></p>
+<h3 id="the-checks-for-this-section">The Checks for This Section</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mu^{2}=32\,v^{2}$ is the one non-zero entry</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>the physics mass matrix is diagonal</td>
+<td>yes, six entries, no off-diagonal</td>
+</tr>
+<tr>
+<td>its diagonal is $\mu^{2}$ six times and $0$ nine times</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>the maths mass matrix has twenty-four non-zero entries</td>
+<td>yes, six rank-one blocks</td>
+</tr>
+<tr>
+<td>array eigenvalues: physics / maths</td>
+<td>$\mu^{2}$ six / $2\mu^{2}$ six</td>
+</tr>
+<tr>
+<td>operator spectra after raising the index with the Gram</td>
+<td>equal in both bases</td>
+</tr>
+<tr>
+<td>each pair block is rank one</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>the block is $\mu^{2}\begin{pmatrix}1&amp;s\\ s&amp;1\end{pmatrix}$, $s=+1$ on the $t$-pairs</td>
+<td>$3/3$</td>
+</tr>
+<tr>
+<td>and $s=-1$ on the three colour pairs</td>
+<td>$3/3$</td>
+</tr>
+<tr>
+<td>$aW+bW'$ is one-plane exactly when $|a|=|b|$</td>
+<td>$480/480$</td>
+</tr>
+<tr>
+<td>$\tfrac12(W+W')$ and $\tfrac12(W-W')$ are both one-plane</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>$[r_x,iD]=[\ell_x,iD]=-4iS_{tx}$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$[N_{xy},iD]=-[N_{yx},iD]=+4iA_{tz}$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$H^{\mathsf T}M^{2}H$ is diagonal in each pair</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>$2E_{xt}=\tfrac12(W_{tx}+W_{xt})+\tfrac12(W_{yz}-W_{zy})$, one-plane and in neither base</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>no two- or three-word cross-pair combination is one-plane</td>
+<td>$0$ found</td>
+</tr>
+<tr>
+<td>a rotation of $A_{tx}$ gives a four-cell array on non-coordinate planes</td>
+<td>exact</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="which-construction-answers-which-question">Which Construction Answers Which Question</h2>
+<p><strong>The maths construction answers "which word is this?"</strong> A generator of the maths base is a single word of the frame, so it names an operation: left multiplication, right multiplication, or one product of the two. <strong>That is the natural question for the algebra</strong>, and it is why the six weak generators, which <em>are</em> one-sided multiplications, sit in this base as single arrays: $T^{L}_{a}=\tfrac12\ell_a=\tfrac12 W_{at}$ and $T^{R}_{a}=\tfrac12 r_a=\tfrac12 W_{ta}$, one word each.</p>
+<p><strong>The physics construction answers "which cell is this?"</strong> A generator of the physics base is a half-sum of the two words of one pair, and the half-sum is supported on one plane. <strong>That is the natural question for the model</strong>, whose content is a $4\times4$ grid with a name in every cell, and it is why the physics base is the one in which the mass matrix, the $B-L$ corner and the leptoquark/colour split are read off the arrays rather than computed from them.</p>
+<p><strong>Neither construction is the correct one.</strong> The words are the algebra's own objects and the planes are the model's own objects, and both sets are obtained from the same eight arrays by steps that no one is free to skip: <strong>the deletion of $W_{tt}$ and the factor $i$ are forced, and only the pairing of the six pairs is a choice.</strong> That choice is the whole of the difference between the two bases, <strong>and the previous section shows that it is not a free one either: inside a pair the resolution is forced, by the one-plane condition and by the mass matrix, which are one condition.</strong></p>
+<p><strong>One sentence to carry away.</strong> The maths base is the word list, and the physics base is the word list with every pair of words resolved into its agreement and its disagreement; the agreement of a pair is a plane of the model and the disagreement is the complementary plane, which is why the same sixteen products produce one base of factors and one base of particles.</p>
+<h2 id="the-checks">The Checks</h2>
+<p>Each line is recomputed on the printed entries, with the quartet ordered $(t,x,y,z)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\mathrm{axf},e_t}=R_{\mathrm{axf},e_t}=\mathrm I_4$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>all eight axis-free arrays are signed permutations of determinant $+1$</td>
+<td>$8/8$</td>
+</tr>
+<tr>
+<td>the sixteen words are independent, rank $16$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(W^{\mathsf T}W')=4\delta$ on all $256$ pairs</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>words with a non-zero trace</td>
+<td>$1$ of $16$, namely $W_{tt}$</td>
+</tr>
+<tr>
+<td>the six words with one scalar index are antisymmetric</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>the nine words with no scalar index are symmetric</td>
+<td>$9/9$</td>
+</tr>
+<tr>
+<td>$W_{at}=\ell_a$, $W_{ta}=r_a$</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>the two words of a pair share one signed permutation</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>$\tfrac12(W_{\mu\nu}+W_{\nu\mu})=-$ the array on $\{\mu,\nu\}$</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>$\tfrac12(W_{\mu\nu}-W_{\nu\mu})=\pm$ the array on the complement</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>$i(W_{xx}+W_{yy}+W_{zz})=iD$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\tfrac i2(W_{yy}-W_{xx})=d_2$, $\tfrac i2(W_{zz}-W_{yy})=d_3$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>the physics fifteen over the words has coefficients in $\{0,\pm\tfrac12,1\}$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>physics arrays carrying a $\tfrac12$</td>
+<td>$14$ of $15$</td>
+</tr>
+<tr>
+<td>$\lvert\det C_{\text{words}\to\text{physics}}\rvert$</td>
+<td>$3/256$</td>
+</tr>
+<tr>
+<td>the twelve planes are supported on two entries each</td>
+<td>$12/12$</td>
+</tr>
+<tr>
+<td>every word is supported on four entries</td>
+<td>$16/16$</td>
+</tr>
+<tr>
+<td>the six pairs realise three signed permutations, each shared with its complement</td>
+<td>$3$, $2$ each</td>
+</tr>
+<tr>
+<td>the maths fifteen and the $i$ times the nine are anti-Hermitian</td>
+<td>$15/15$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\mathrm{axf}}(\tilde Q)$, $R_{\mathrm{axf}}(\tilde Q)$</td>
+<td>the axis-free left and right matrices, columns read off multiplication by the four units</td>
+</tr>
+<tr>
+<td>$\ell_a=L_{\mathrm{axf},\vec e_a}$, $r_a=R_{\mathrm{axf},\vec e_a}$</td>
+<td>the six arrays of the three vector units</td>
+</tr>
+<tr>
+<td>$W_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$</td>
+<td>a word: one left array times one right array</td>
+</tr>
+<tr>
+<td>$N_{jk}=\ell_jr_k=W_{jk}$</td>
+<td>the nine words with both indices vector</td>
+</tr>
+<tr>
+<td>$P^{\pm}_{\mu\nu}=\tfrac12(W_{\mu\nu}\pm W_{\nu\mu})$</td>
+<td>the half-sum and half-difference of a pair of words</td>
+</tr>
+<tr>
+<td>$E_{jk}$</td>
+<td>the matrix unit of $\mathbb{C}^4$ in the order $(t,x,y,z)$</td>
+</tr>
+<tr>
+<td>$A_{jk}=E_{jk}-E_{kj}$</td>
+<td>a real plane</td>
+</tr>
+<tr>
+<td>$iS_{jk}=i(E_{jk}+E_{kj})$</td>
+<td>an imaginary plane</td>
+</tr>
+<tr>
+<td>$iD$, $d_2$, $d_3$</td>
+<td>the corner and the two colour diagonals</td>
+</tr>
+<tr>
+<td>$\{\mu',\nu'\}$</td>
+<td>the pair complementary to $\{\mu,\nu\}$ in $\{t,x,y,z\}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="structure-SU4-basis-comparison.html">Two Bases of $\mathfrak{su}(4)$</a>. The thirty arrays, and the change of basis in both directions.</li>
+<li><a href="../../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a>. The maths fifteen, its brackets and its rotors.</li>
+<li><a href="../../articles_physics/the-axf-matrices-of-the-twenty-one-generators.html">The AXF Matrices of the Twenty-One Generators</a>. The physics fifteen and the six weak generators.</li>
+<li><a href="../../articles_maths/matrix-representations-conventions.html">Matrix Representations and Conventions</a>. The definitions of $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$.</li>
+<li><a href="../../articles_maths/m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>. The same arrays, printed with the rest of the axis-free family.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gauge Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One — Biquaternion Universe</title>
+  <meta name="description" content="The question. The strong sector and the electroweak sector are written in different algebras. Which algebra is each, on which module does it act, and…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one"><strong>The Gauge Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The strong sector and the electroweak sector are written in different algebras. Which algebra is each, on which module does it act, and which of the two does the biquaternion algebra actually hand over?</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;
+\underbrace{\mathfrak{su}(3)}_{\dim 8}\ \text{on}\ \mathbb C^3,
+\qquad
+\underbrace{\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R}_{\dim 3+3}\ \text{on}\ \mathbb C^2\oplus\mathbb C^2,
+\qquad
+\underbrace{\mathfrak u(1)_{B-L}}_{\dim 1}\ \text{on the line},
+\;}
+$$</p>
+<p>$$
+\boxed{\;
+8+1+3+3=15\ \longrightarrow\ 8+3+1=12\ \longrightarrow\ 8+1=9,
+\qquad
+\mathfrak u(1)_Y=\left\langle T_{3R}+\tfrac12(B-L)\right\rangle,
+\quad
+\mathfrak u(1)_{\mathrm{em}}=\left\langle T_{3L}+Y\right\rangle .
+\;}
+$$</p>
+<p><strong>The single idea.</strong> Each sector is a pair: an algebra and a module. The algebra alone does not name the sector, because $\mathfrak{su}(2)_L$ and $\mathfrak{su}(2)_R$ are the same algebra; what distinguishes them is which doublet they act on. And of the two non-abelian factors, only the weak ones come from the biquaternion algebra — the rotors are a copy of $\mathrm{SU}(2)$ — while colour is posited as an algebra on three of the carrier's four dimensions.</p>
+<p><strong>What the article establishes.</strong> The list of residual algebras with their dimensions; the module each acts on; the two derived abelian factors with their derivations; the sense in which the photon's algebra is one-dimensional; the three reductions of dimension and what each costs; and the boundary between what the algebra reaches and what the model posits.</p>
+<p><strong>What the article does not establish.</strong> No coupling, no dynamics, no spectrum. The couplings are <a href="the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html">The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies</a>. The states are <a href="the-fermions-after-the-breaking-three-colours-and-a-lepton-line-two-weak-doublets-the-electric-charges.html">The Fermions After the Breaking: Three Colours and a Lepton Line, Two Weak Doublets, the Electric Charges</a>.</p>
+<p><strong>Where the ceiling is.</strong> The reason $\mathrm{SU}(3)$ is posited and not derived is <a href="why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</a>. That article is the boundary statement this one uses and does not repeat.</p>
+<h2 id="the-two-sectors-and-the-algebras-they-use">The Two Sectors and the Algebras They Use</h2>
+<p><strong>Two sectors, six algebras, three of them at the bottom.</strong> The inventory comes first.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>algebra</th>
+<th>dimension</th>
+<th>module</th>
+<th>where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strong</td>
+<td>$\mathfrak{su}(3)$</td>
+<td>$8$</td>
+<td>$\mathbb C^3\subset\mathbb C^4$</td>
+<td>posited on the triplet</td>
+</tr>
+<tr>
+<td>strong, abelian</td>
+<td>$\mathfrak u(1)_{B-L}$</td>
+<td>$1$</td>
+<td>the singlet line</td>
+<td>the surviving $\mathrm{SU}(4)$ Cartan</td>
+</tr>
+<tr>
+<td>electroweak, left</td>
+<td>$\mathfrak{su}(2)_L$</td>
+<td>$3$</td>
+<td>$\mathbb C^2_L$</td>
+<td>the rotor algebra</td>
+</tr>
+<tr>
+<td>electroweak, right</td>
+<td>$\mathfrak{su}(2)_R$</td>
+<td>$3$</td>
+<td>$\mathbb C^2_R$</td>
+<td>the rotor algebra</td>
+</tr>
+<tr>
+<td>electroweak, hypercharge</td>
+<td>$\mathfrak u(1)_Y$</td>
+<td>$1$</td>
+<td>the whole generation</td>
+<td>derived: $T_{3R}+\tfrac12(B-L)$</td>
+</tr>
+<tr>
+<td>electromagnetic</td>
+<td>$\mathfrak u(1)_{\mathrm{em}}$</td>
+<td>$1$</td>
+<td>one dimension per charge</td>
+<td>derived: $T_{3L}+Y$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading of the table.</strong> The strong sector is $\mathfrak{su}(3)\oplus\mathfrak u(1)_{B-L}$ at the intermediate stage and $\mathfrak{su}(3)$ alone at the bottom, because $B-L$ is absorbed into hypercharge. The electroweak sector is $\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$ at the intermediate stage and $\mathfrak{su}(2)_L\oplus\mathfrak u(1)_Y$ at the bottom. The electromagnetic sector is one $\mathfrak u(1)$.</p>
+<h2 id="colour-math30-on-three-dimensions">Colour: $\mathfrak{su}(3)$ on Three Dimensions</h2>
+<p><strong>Eight generators, one module, and a statement about what they can see.</strong></p>
+<p><strong>2.1 The algebra.</strong> $\mathfrak{su}(3)$ acts on $\mathbb C^3$, the triplet left by the split $\mathbf4\to\mathbf3\oplus\mathbf1$. Its eight generators are the two diagonal ($\lambda_3$, $\lambda_8$) and six off-diagonal Gell-Mann directions, and they annihilate the singlet line:</p>
+<p>$$
+\mathfrak{su}(3)=\{X\in\mathfrak{su}(4):\ X e_t=0\}.
+$$</p>
+<p><strong>2.2 The module.</strong> The triplet is the module of the sector. Every quark field is a vector in it, every gluon is an endomorphism of it, and no strong-sector object carries an index outside it.</p>
+<p><strong>2.3 What colour cannot see.</strong> $\mathfrak{su}(3)$ is blind to the lepton line and blind to both weak factors. That blindness is not an accident of the embedding: it is the content of $X e_t=0$, which says the algebra annihilates the fourth direction. Every statement about colour blindness in the corpus reduces to that equation.</p>
+<p><strong>2.4 Why the algebra is posited.</strong> The biquaternion algebra has three imaginary units and its rotors form $\mathrm{SU}(2)$. It has no eight-dimensional compact real form, so no amount of reading the algebra produces $\mathfrak{su}(3)$ acting on three complex dimensions. Colour is therefore an input: the model declares a $\mathfrak{su}(3)$ on the triplet, and everything downstream is consistent with that declaration rather than derived from it. The full argument, with the dimension count that rules out the alternatives, is <a href="why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</a>.</p>
+<h2 id="weak-isospin-two-copies-two-modules-one-algebra">Weak Isospin: Two Copies, Two Modules, One Algebra</h2>
+<p><strong>The isomorphism is not the physics.</strong> This is the distinction the sector lives or dies by.</p>
+<p><strong>3.1 The algebra.</strong> $\mathfrak{su}(2)$ is spanned by three generators obeying $[T_a,T_b]=i\varepsilon_{abc}T_c$, and the model has two copies of it, one per weak factor. As abstract algebras the two are isomorphic; as subalgebras of $\mathfrak{su}(4)\oplus\mathfrak{su}(2)\oplus\mathfrak{su}(2)$ they are different subspaces.</p>
+<p><strong>3.2 The two modules.</strong> The left copy acts on $\mathbb C^2_L$, the right on $\mathbb C^2_R$, and the carrier sees neither: both weak factors are external to the $\mathbf4$ and act on the two-index structure $(\mathbf2,\mathbf1)$ and $(\mathbf1,\mathbf2)$. So the two copies are told apart by their modules and by nothing else.</p>
+<p><strong>3.3 The rotor identification.</strong> Each copy is the rotor algebra of the biquaternion algebra: a unit quaternion rotates, three imaginary units span the rotation algebra, and the group is $\mathrm{SU}(2)$. This is the one place where the two sectors differ in provenance: the weak algebras are read off the algebra, and the strong one is not.</p>
+<p><strong>3.4 The parity exchange.</strong> The two copies are exchanged by the $L\leftrightarrow R$ swap, which is parity in this frame. A model with one copy has parity violated explicitly; a model with two and a vacuum that treats them unequally has it violated spontaneously. That distinction is what makes the left–right model a different claim from the Standard Model, and it is <a href="su2l-times-su2r-two-sides-six-generators-one-group.html">$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group</a>.</p>
+<h2 id="the-abelian-factors">The Abelian Factors</h2>
+<p><strong>Two of the three $\mathfrak u(1)$s are derived, and the third is a limit of them.</strong></p>
+<p><strong>4.1 $B-L$, which is a Cartan direction.</strong> It is not a factor of the top group: it is the diagonal of $\mathfrak{su}(4)$ orthogonal to $\mathfrak{su}(3)$,</p>
+<p>$$
+\mathfrak u(1)_{B-L}=\left\langle \operatorname{diag}(-1,\tfrac13,\tfrac13,\tfrac13)\right\rangle,
+$$</p>
+<p>and it becomes a factor only after the first breaking.</p>
+<p><strong>4.2 $Y$, which is a combination.</strong> Hypercharge is the span of</p>
+<p>$$
+T_{3R}+\tfrac12(B-L),
+$$</p>
+<p>so $\mathfrak u(1)_Y$ is a one-dimensional subspace of $\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$ and not a factor of anything. That is why the coupling $g_Y$ is not independent at the breaking scale: it is fixed by $g_R$ and $g_{B-L}$ through the normalisation of the combination, and the relation is in <a href="the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html">The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies</a>.</p>
+<p><strong>4.3 $Q$, which is a combination of a combination.</strong> The electric charge is the span of</p>
+<p>$$
+T_{3L}+Y=T_{3L}+T_{3R}+\tfrac12(B-L).
+$$</p>
+<p>It is the unique direction annihilated by both vacuum lines, which is why it survives: the two conditions $Q\Phi_0=0$ and $QH_0=0$ leave exactly one dimension among the five Cartan directions of $B-L$, $T_{3L}$ and $T_{3R}$.</p>
+<p><strong>4.4 The rank budget, read as an algebra statement.</strong> $5\to5\to4\to3$: the Cartan rank of the residual algebra, computed as the dimension of the maximal torus that survives. The first step removes no torus direction because the sextet is off-diagonal; the second removes $T_{3R}$; the third removes $T_{3L}$ and $Y$ and keeps their sum.</p>
+<h2 id="the-photon-on-one-dimension">The Photon on One Dimension</h2>
+<p><strong>The module of the last algebra is one-dimensional, and that is what "on one" means.</strong></p>
+<p><strong>5.1 The module.</strong> A $\mathrm{U}(1)$ acts on a one-dimensional complex space by a phase, $e^{i\alpha Q}$. So the module of $\mathfrak u(1)_{\mathrm{em}}$ is one complex dimension for each value of $Q$, and the algebra is a single number times the identity on it.</p>
+<p><strong>5.2 Why this is not a triviality.</strong> It fixes what the photon can and cannot do. It cannot change a charge, so it cannot connect two different species; it cannot change colour, so it commutes with $\mathfrak{su}(3)$; and it cannot change the generation, so it is diagonal in flavour. Every selection rule of electromagnetism is the one-dimensionality of the module written out.</p>
+<p><strong>5.3 The photon as a direction in a three-dimensional space.</strong> The algebra is one-dimensional, but the field that realises it is a particular vector in the three-dimensional neutral space spanned by $W^3_L$, $W^3_R$ and $B$. The one dimension of §<em>5.1</em> is the algebra's; the three-dimensional space is the neutral block's; and the map between them is the mixing. That is why "the photon is a mixture" and "the photon's algebra is one-dimensional" are both true and do not contradict: one statement is about the module, the other about the basis.</p>
+<h2 id="what-the-reduction-loses">What the Reduction Loses</h2>
+<p><strong>Six dimensions at the first step, six at the second and third.</strong> The losses are not all of a kind.</p>
+<p><strong>6.1 The first loss: colour-lepton mixing.</strong> The six leptoquark directions of $\mathfrak{su}(4)/\left(\mathfrak{su}(3)\oplus\mathfrak u(1)\right)$ are the endomorphisms that map the lepton line to the triplet and back. They carry colour, they carry $B-L=\pm\tfrac43$, and no residual algebra contains them. Their module structure under the residual group is a coloured pair, which is why they can be integrated out covariantly rather than dropped: they form a module, not a set.</p>
+<p><strong>6.2 The second loss: the right-handed charged pair.</strong> $\mathfrak{su}(2)_R/\mathfrak u(1)_R$ is two-dimensional and carries $T_{3R}=\pm1$ in the adjoint. Below $M_R$ there is no operator that rotates the members of a right doublet into each other, so no mass term can be forbidden by that symmetry, and the observed splitting of the members is allowed.</p>
+<p><strong>6.3 The third loss: the left-handed charged pair and the neutral mixing.</strong> $\left(\mathfrak{su}(2)_L\oplus\mathfrak u(1)_Y\right)/\mathfrak u(1)_{\mathrm{em}}$ is four-dimensional: the two $W^{\pm}$ and the two directions that become $Z$ and the photon. The one that survives is the combination annihilating both vevs.</p>
+<p><strong>6.4 What is not lost.</strong> $\mathfrak{su}(3)$ and $\mathfrak u(1)_{\mathrm{em}}$ are subalgebras at every stage, and $B-L$ survives the first two steps. The corpus's claim that colour is a stabiliser at every scale is exactly the statement that $\mathfrak{su}(3)\subset\mathfrak h_i$ for all three $\mathfrak h_i$.</p>
+<h2 id="the-checks">The Checks</h2>
+<p><strong>Six checks.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the dimensions</td>
+<td>$8+1+3+3$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the second step</td>
+<td>$15-3$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>the third step</td>
+<td>$12-3$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>the rank</td>
+<td>$\dim$ maximal torus</td>
+<td>$5\to5\to4\to3$</td>
+</tr>
+<tr>
+<td>the annihilation</td>
+<td>$Xe_t=0$ for $X\in\mathfrak{su}(3)$</td>
+<td>holds for all eight</td>
+</tr>
+<tr>
+<td>the surviving direction</td>
+<td>$Q\Phi_0=QH_0=0$</td>
+<td>one dimension among five</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="distinctions-that-are-easy-to-lose">Distinctions That Are Easy to Lose</h2>
+<p><strong>Three pairs.</strong></p>
+<p><strong>7.1 The algebra and the module.</strong> $\mathfrak{su}(2)_L$ and $\mathfrak{su}(2)_R$ are isomorphic; the sectors are not. Every statement that treats the two as interchangeable is a statement about the algebra alone and is silent about the physics.</p>
+<p><strong>7.2 Posited and derived.</strong> Colour is posited, the weak factors are read off the rotors, hypercharge and charge are derived from the two. Mixing these three provenances is the commonest error in reading the model, and the corpus's own summary of it is <a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>.</p>
+<p><strong>7.3 $\mathfrak u(1)$ as a factor and $\mathfrak u(1)$ as a direction.</strong> $B-L$ is a factor between $M_C$ and $M_R$. $Y$ and $Q$ are never factors: they are directions in a product. A coupling can be assigned to a factor; a direction's coupling is a combination of the factors'.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The algebras.</strong> $\mathfrak{su}(3)$ on $\mathbb C^3$, two $\mathfrak{su}(2)$ on the two doublets, and three $\mathfrak u(1)$ of which one is a factor and two are directions.</p>
+<p><strong>The dimensions.</strong> $8+1+3+3=15$, then $12$, then $9$, with the rank $5\to5\to4\to3$.</p>
+<p><strong>The two derived charges.</strong> $Y=T_{3R}+\tfrac12(B-L)$ and $Q=T_{3L}+Y$, each a one-dimensional subspace of the algebra above it.</p>
+<p><strong>The photon.</strong> A one-dimensional algebra acting on a one-dimensional module, realised by a particular direction in the three-dimensional neutral block.</p>
+<p><strong>The provenance.</strong> Weak algebras read off the rotors; colour posited; the two charges derived.</p>
+<p><strong>What the reduction loses.</strong> Six leptoquark directions, then the right charged pair, then the left charged pair and the neutral mixing.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(3)$, $\mathfrak{su}(2)_L$, $\mathfrak{su}(2)_R$</td>
+<td>the non-abelian residual algebras</td>
+</tr>
+<tr>
+<td>$\mathfrak u(1)_{B-L}$, $\mathfrak u(1)_Y$, $\mathfrak u(1)_{\mathrm{em}}$</td>
+<td>the three abelian directions</td>
+</tr>
+<tr>
+<td>$\mathbb C^3$, $\mathbb C^2_L$, $\mathbb C^2_R$</td>
+<td>the modules the algebras act on</td>
+</tr>
+<tr>
+<td>$T_{3L}$, $T_{3R}$, $B-L$</td>
+<td>the Cartan directions the charges are built from</td>
+</tr>
+<tr>
+<td>$\mathfrak h_i$</td>
+<td>the unbroken algebra at each stage</td>
+</tr>
+<tr>
+<td>$\mathrm{End}_{\mathbb C}(\mathbb B)$</td>
+<td>the frame the generators live in</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</a>. The ceiling, with the dimension count that produces it.</li>
+<li><a href="su2l-times-su2r-two-sides-six-generators-one-group.html">$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group</a>. The two weak copies and the parity exchange.</li>
+<li><a href="the-electroweak-gauge-group-and-the-hypercharge-assignment.html">The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$</a>. Hypercharge as an anomaly problem rather than a combination.</li>
+<li><a href="the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html">The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies</a>. The couplings these algebras carry.</li>
+<li><a href="quantum-chromodynamics-as-the-residual-of-su4.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated</a>. The strong sector as the stabiliser's algebra.</li>
+<li><a href="the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html">The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass</a>. The dimension of the last residual algebra, counted as the massless spectrum.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

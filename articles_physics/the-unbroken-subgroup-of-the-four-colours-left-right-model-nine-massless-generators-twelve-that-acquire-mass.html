@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass — Biquaternion Universe</title>
+  <meta name="description" content="The question. When the vacuum of the Four Colours Left–Right Model is chosen, which of the twenty-one gauge generators survive it, which acquire mass, and…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-unbroken-subgroup-of-the-four-colours-leftright-model-nine-massless-generators-twelve-that-acquire-mass"><strong>The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> When the vacuum of the Four Colours Left–Right Model is chosen, which of the twenty-one gauge generators survive it, which acquire mass, and why is the split $9+12$ a statement of group theory rather than of any coupling?</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;
+\left|\mathrm{Stab}_{G_{4LR}}(\text{vacuum})\right|=9,
+\qquad
+21=9+12,
+\qquad
+\underbrace{8+1}_{9\ \text{massless}}+\underbrace{6+2+2+1+1}_{12\ \text{massive}}=21 .
+\;}
+$$</p>
+<p>The nine are the eight gluons and the photon. The twelve are six leptoquarks, $W^{\pm}_{L}$, $W^{\pm}_{R}$, the $Z$ and the $Z_R$.</p>
+<p><strong>The single idea.</strong> A gauge field is massless exactly when its generator annihilates the vacuum. That is not a dynamical statement and it is not approximate: the gauge mass matrix is bilinear in $[X,\Phi_0]$, so every generator in the stabiliser of $\Phi_0$ gives a zero row and a zero column, and no generator outside it does. The massless count is therefore the dimension of one subgroup, fixed before a Lagrangian is written.</p>
+<p><strong>What the article establishes.</strong> The definition of the unbroken subgroup; the mass matrix formula and the proof that its kernel is the stabiliser; the two lists of nine and twelve with the mass coefficient each carries; the count at each of the three stages of the chain; and what masslessness means above and below a threshold.</p>
+<p><strong>What the article does not establish.</strong> No mass value. Every mass below is a coupling squared times a vacuum squared, with the coupling symbolic. The coefficients — $\tfrac14$, $\tfrac12$, $\tfrac58$ — come from the vacuum and are the group's; the couplings are not. Which values the couplings take is <a href="the-one-coupling-that-returns-the-standard-model.html">The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement</a>.</p>
+<p><strong>Where the spectrum is.</strong> The cells, the names in the cells and the neutral mixing are <a href="classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive</a>. The chain that produces the vacuum is <a href="the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales</a>. This article owns only the stabiliser and its dimension.</p>
+<h2 id="the-stabiliser-which-is-the-answer">The Stabiliser, Which Is the Answer</h2>
+<p><strong>One subgroup decides everything.</strong> The vacuum is a set of scalar values; the gauge group acts on them; the subgroup that leaves them fixed is the unbroken group.</p>
+<p><strong>1.1 The definition.</strong> Let $\Phi_0$ be the vacuum value of the scalar content, and let $G_{4LR}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$. Then</p>
+<p>$$
+H=\mathrm{Stab}_{G_{4LR}}(\Phi_0)=\{g\in G_{4LR}:\ g\cdot\Phi_0=\Phi_0\},
+\qquad
+\mathfrak h=\mathrm{Lie}(H).
+$$</p>
+<p><strong>1.2 The mass matrix.</strong> For a gauge generator $X$ acting on the scalar multiplet in the representation $R$,</p>
+<p>$$
+M^2_{XY}=\operatorname{tr}\left([X,\Phi_0]^\dagger\,[Y,\Phi_0]\right),
+$$</p>
+<p>the trace taken over the scalar's components, the sum running over every scalar that takes a vacuum value. This is the gauge-field mass term of the Lagrangian after the shift $\Phi=\Phi_0+\varphi$, written in the basis of generators rather than in the basis of fields.</p>
+<p><strong>The same matrix as the array articles.</strong> <a href="the-axf-matrices-of-the-twenty-one-generators.html">The AXF Matrices of the Twenty-One Generators: Fifteen for $\mathfrak{su}(4)$, Three for $\mathfrak{su}(2)_L$, Three for $\mathfrak{su}(2)_R$</a> and <a href="the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html">The Adjoint Mass Matrix of the Fifteen: One Number per Plane, $32v^2$ on Six and Zero on Nine</a> write $\Phi_0=vD$ with $D=\operatorname{diag}(-3,1,1,1)$ and use this same formula. The two differ only in the normalisation of the vacuum array, which rescales every entry of $M^{2}$ by one constant; the zero entries, the ranks and the counts are the same.</p>
+<p><strong>1.3 The kernel is the stabiliser.</strong> If $X\in\mathfrak h$ then $X\Phi_0=0$ by definition, so $[X,\Phi_0]=0$, so the whole row $M^2_{X\cdot}$ and the whole column $M^2_{\cdot X}$ vanish. Conversely a vanishing row means $[X,\Phi_0]=0$, which means $X$ annihilates the vacuum. Hence</p>
+<p>$$
+\ker M^2=\mathfrak h,
+\qquad
+\#\{\text{massless gauge fields}\}=\dim\mathfrak h .
+$$</p>
+<p><strong>1.4 What the identity is not.</strong> It is not a prediction of $\dim\mathfrak h$ from dynamics. It is a restatement: whoever chooses the vacuum chooses the stabiliser, and the stabiliser <em>is</em> the massless count. The content of the identity is that no other generator can be massless and no stabiliser direction can be massive, at tree level, in any gauge, with any normalisation.</p>
+<h2 id="the-nine">The Nine</h2>
+<p><strong>The unbroken subgroup and its generators.</strong> Nine dimensions, and every one of them annihilates the vacuum.</p>
+<p><strong>2.1 The subgroup.</strong> At the bottom of the chain,</p>
+<p>$$
+H_3=\mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}},
+\qquad
+\dim H_3=8+1=9 .
+$$</p>
+<p><strong>2.2 The list.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>boson</th>
+<th>number</th>
+<th>generator</th>
+<th>why massless</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gluons $G^{a}$</td>
+<td>$8$</td>
+<td>$\mathfrak{su}(3)$ on $\mathbb C^3\subset\mathbb C^4$</td>
+<td>colour is unbroken at every scale</td>
+</tr>
+<tr>
+<td>photon $\gamma$</td>
+<td>$1$</td>
+<td>the null combination of $W^3_L$, $W^3_R$, $B$</td>
+<td>it is the one direction that annihilates both vevs</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>2.3 The photon is a direction, not a factor.</strong> None of the three neutral generators is massless on its own. $W^3_L$ is broken at $M_W$, $W^3_R$ at $M_R$, and $B$ at $M_R$. The photon is the one linear combination left in the kernel of the two-by-two neutral block, and its existence is the statement that the block has rank two. The eigenvector, its normalisation and the angle that names it are in <a href="the-photon-as-the-unbroken-mixture.html">The Photon as the Unbroken Mixture: One Null Direction, Three Parents</a> and <a href="the-weinberg-angle-and-the-three-neutral-states.html">The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators</a>.</p>
+<p><strong>2.4 Why colour is the exception.</strong> Colour survives every step because no scalar in the minimal content carries a colour index that the vacuum could use: $\Phi$ is a $\mathbf 4$ and the vacuum sits on its singlet component, and $H$ is colour-blind. A vacuum that pointed into the triplet would break colour, and no field in the minimal sector does.</p>
+<h2 id="the-twelve">The Twelve</h2>
+<p><strong>The complement.</strong> Twelve dimensions of the algebra, and each maps to one massive state.</p>
+<p><strong>3.1 The list.</strong> Every mass is a coefficient times a coupling squared times a vacuum squared. The last column names the vacuum, not the threshold: in the minimal content the two colour-breaking masses share $v_R$ and therefore one threshold.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>states</th>
+<th>number</th>
+<th>generator</th>
+<th>mass</th>
+<th>vev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>leptoquarks $X^{r},X^{g},X^{b}$ and conjugates</td>
+<td>$6$</td>
+<td>the mixed cells $\{t,a\}$ of $\mathrm{SU}(4)$</td>
+<td>$\tfrac12 g_4^2 v_R^2$ each</td>
+<td>$v_R$</td>
+</tr>
+<tr>
+<td>$W^{\pm}_{R}$</td>
+<td>$2$</td>
+<td>the two off-diagonal $\mathrm{SU}(2)_R$ generators</td>
+<td>$\tfrac14 g_R^2 v_R^2$</td>
+<td>$v_R$</td>
+</tr>
+<tr>
+<td>$W^{\pm}_{L}$</td>
+<td>$2$</td>
+<td>the two off-diagonal $\mathrm{SU}(2)_L$ generators</td>
+<td>$\tfrac14 g_L^2 v^2$</td>
+<td>$v$</td>
+</tr>
+<tr>
+<td>$Z$</td>
+<td>$1$</td>
+<td>the heavy neutral combination at $v$</td>
+<td>$\tfrac14(g_L^2+g_Y^2)v^2$</td>
+<td>$v$</td>
+</tr>
+<tr>
+<td>$Z_R$</td>
+<td>$1$</td>
+<td>the heavy neutral combination at $v_R$</td>
+<td>$\tfrac14 g_R^2 v_R^2+\tfrac38 g_4^2 v_R^2$</td>
+<td>$v_R$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>3.2 The count.</strong> $6+2+2+1+1=12$. The first step loses six; the second and third lose three each, and they lose them by the same arithmetic, four generators replaced by one:</p>
+<p>$$
+\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}\longrightarrow\mathfrak u(1)_Y,
+\qquad
+\mathfrak{su}(2)_L\oplus\mathfrak u(1)_Y\longrightarrow\mathfrak u(1)_{\mathrm{em}},
+$$</p>
+<p>each a drop of $(3+1)-1=3$. In each case the three massive states are two charged bosons and one neutral mixture.</p>
+<p><strong>3.3 The leptoquarks are six and not three.</strong> The mixed block $\{t,a\}$ of the $4\times4$ matrix is three complex entries, and a complex entry with its conjugate is two real directions, so six. That six is the sextet of <a href="the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html">The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite</a>, and it is the same six as the six eaten components of $\Phi$.</p>
+<p><strong>3.4 The coefficients are the vacuum's.</strong> $\tfrac14$ is $|T_{3R}|^{2}=\tfrac14$ on the right doublet. $\tfrac12$ is the $\mathrm{SU}(4)$ normalisation on the mixed cell, in the convention $\operatorname{tr}(X^{2})=\tfrac12$ for the generators. $\tfrac58$ is $|a_1|^{2}=\tfrac14+\tfrac38$: one quarter from $T_{3R}$ and three eighths from $B-L=\sqrt{8/3}\,T^{15}$ with $\operatorname{tr}(T^{15})^{2}=\tfrac12$. None of the three is adjustable, and none of them is a coupling.</p>
+<p><strong>3.5 Two caveats on these numbers.</strong> First, $\tfrac58$ carries the normalisation convention $\operatorname{tr}(T^{15})^{2}=\tfrac12$; the other two do not depend on a choice of normalisation, because a doublet and a mixed cell are fixed by the representation theory alone. Second, the bare coefficients are not by themselves a mass ratio: the $\mathrm{SU}(4)$ entries are multiplied by $g_4$ and the $\mathrm{SU}(2)_R$ entries by $g_R$, and the two couplings are independent above $M_C$ and equal only at it. The physical ratio carries the coupling ratio,</p>
+<p>$$
+\frac{M_X}{M_{W_R}}=\sqrt2\,\frac{g_4}{g_R},
+$$</p>
+<p>so it is a prediction only once the two couplings are matched, which is why §<em>The Twelve</em> gives coefficients and no masses.</p>
+<p><strong>3.6 The $Z_R$ in full.</strong> The $\tfrac58$ is the equal-coupling value of a sum with one term per generator the state contains:</p>
+<p>$$
+M_{Z_R}^{2}=\tfrac14\,g_R^{2}v_R^{2}+\tfrac38\,g_4^{2}v_R^{2},
+\qquad
+M_{Z_R}^{2}=\tfrac58\,g^{2}v_R^{2}\ \text{when}\ g_4=g_R=g .
+$$</p>
+<p>The first term is the $T_{3R}$ quarter and the second the $B-L$ three eighths. This is also the sense in which the neutral at $M_R$ is not a $\mathrm{U}(1)_R$ boson: it is the mixture that consumes the $B-L$ direction, and the paragraph on the differences in §<em>The Count at Every Stage</em> is the accounting for that consumption.</p>
+<h2 id="the-count-at-every-stage">The Count at Every Stage</h2>
+<p><strong>The same identity, read three times.</strong> Above each threshold the massless set is larger, because fewer generators are broken.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>stage</th>
+<th>unbroken group</th>
+<th>dimension</th>
+<th>massless bosons</th>
+<th>broken at that step</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>top</td>
+<td>$\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td>$21$</td>
+<td>all $21$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>after $M_C$</td>
+<td>$\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td>$15$</td>
+<td>$8+1+3+3$</td>
+<td>$6$ leptoquarks</td>
+</tr>
+<tr>
+<td>after $M_R$</td>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>$12$</td>
+<td>$8+3+1$</td>
+<td>$W^{\pm}_{R}$, $Z_R$</td>
+</tr>
+<tr>
+<td>after $M_W$</td>
+<td>$\mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$9$</td>
+<td>$8+1$</td>
+<td>$W^{\pm}_{L}$, $Z$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two readings of the middle row.</strong> The $15$ is the stabiliser of the carrier line <em>alone</em>, so it is the description between the two steps only if the field carrying that line has no $R$ index — a $(\mathbf4,\mathbf1,\mathbf1)$ with the right line fixed by a separate $(\mathbf1,\mathbf1,\mathbf2)$. The minimal content's $(\mathbf4,\mathbf1,\mathbf2)$ carries both lines, so one vacuum fixes both and the first threshold lands on the $12$ row directly: the threshold count is $21\to12\to9$, and the $15$ is a factor count. <a href="the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html">The Order of the Breaking in the Four Colours Left–Right Model: Nested Vacua and the Scale Order $M_C\ge M_R\ge M_W$</a> owns that distinction.</p>
+<p><strong>The differences, and why the second step costs three.</strong> $21-15=6$, $15-12=3$, $12-9=3$, and $6+3+3=12$. The second step costs three and not the two one would assign to $\mathrm{SU}(2)_R\to\mathrm{U}(1)_R$ alone, because four generators are consumed and one survives: the triplet $\{W^{1}_R,W^{2}_R,W^{3}_R\}$ and the $B-L$ boson, which was massless after $M_C$, are replaced by the single hypercharge generator. The three states that acquire mass are $W^{\pm}_{R}$ and the neutral mixture $Z_R$; the dimension budget and the state count are the same number here, and the reason is that $B-L$ pays one of the three. The third step repeats the pattern exactly, with $\mathfrak{su}(2)_L\oplus\mathfrak u(1)_Y$ in place of $\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$.</p>
+<p><strong>Why the rank does not fall at the first step.</strong> The six leptoquark directions are non-Cartan, so $5\to5$ there and the rank falls only at the last two steps: $5\to5\to4\to3$. A reader who expects one rank drop per step will miscount the first.</p>
+<h2 id="why-the-count-cannot-be-otherwise">Why the Count Cannot Be Otherwise</h2>
+<p><strong>Four arguments, each independent.</strong> They are worth stating separately because each fails in a different model.</p>
+<p><strong>5.1 The kernel argument.</strong> §<em>The Stabiliser, Which Is the Answer</em>: $\ker M^2=\mathfrak h$ identically.</p>
+<p><strong>5.2 The coset argument.</strong> The number of massive gauge fields equals the dimension of the coset $G/H$, because each broken generator contributes exactly one real degree of freedom to the would-be Goldstones, and each would-be Goldstone is eaten. At the bottom, with $\dim G=21$ and $\dim H=9$, the coset has dimension $12$.</p>
+<p><strong>The coset count is the total, and the stage table is the sum of the stages.</strong> Read against the final stabiliser alone, $21-9$ is one number. Read stage by stage, the same argument applies to each stabiliser in turn — $21-15$ for the first line, $15-12$ for the second, $12-9$ for the third — and the three telescope:</p>
+<p>$$
+(21-15)+(15-12)+(12-9)=6+3+3=21-9 .
+$$</p>
+<p>So the two counts do not compete. A reader who applies the final coset at an intermediate stage will get $12$ where the answer is $6$ or $3$, because the intermediate group is the stabiliser of the lines fixed so far and not of the full vacuum.</p>
+<p><strong>The middle row is a factor, not a stage, in the minimal content.</strong> The $15$ is the stabiliser of the carrier line alone, which requires the field carrying that line to have no $R$ index. The minimal content's $(\mathbf4,\mathbf1,\mathbf2)$ carries both lines, so its one vacuum has the dimension-$12$ stabiliser and the thresholds are $21\to12\to9$. The table is the factor count; §<em>The Count at Every Stage</em> above and the scales article state the difference.</p>
+<p><strong>5.3 The eigenvalue argument.</strong> In the neutral basis $\{W^{3}_L,W^{3}_R,B'\}$ the two vacuum directions are the vectors of eigenvalues of $(T_{3L},T_{3R},T^{15})$ on the fields that take the vevs:</p>
+<p>$$
+a_1=\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr)v_R,
+\qquad
+a_2=\bigl(\tfrac12,-\tfrac12,0\bigr)v,
+\qquad
+\mathcal M^{2}=a_1a_1^{\mathsf T}+a_2a_2^{\mathsf T},
+$$</p>
+<p>the vectors carrying their own vacuum values. Then $\mathcal M^{2}$ is a sum of two rank-one matrices, so rank $\le2$ and at least one null direction; and $a_1\cdot a_2=-\tfrac14v_Rv\ne0$, so the two are independent and the rank is exactly two. Three neutral generators, one massless and two massive: $3=1+2$. The same vectors, with the same normalisation, are in <a href="classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive</a>, §<em>The Neutral Sector</em>.</p>
+<p><strong>5.4 The independence of content.</strong> The identity $\#\{\text{massless}\}=\dim\mathrm{Stab}(\Phi_0)$ holds for any vacuum, any scalar content and any ordering of scales. What the content changes is <em>which</em> subgroup is the stabiliser, not whether the count is the stabiliser's dimension. A different multiplet list therefore moves the number only by moving the vacuum.</p>
+<h2 id="what-masslessness-means-at-each-scale">What Masslessness Means at Each Scale</h2>
+<p><strong>One word, three regimes.</strong> The phrase "the $W_R$ is massless" is false at low energy and true above $M_R$, and both statements are exact.</p>
+<p><strong>6.1 Above a threshold.</strong> The gauge field exists as a propagating degree of freedom and its mass is zero in the unbroken phase. The count at the top of the table is $21$ massless fields.</p>
+<p><strong>6.2 Below a threshold.</strong> The field is removed from the low-energy theory. It is not a massless field with a small mass; it is not present. The low-energy theory is written with nine gauge fields and no others, and the removal is the subject of <a href="the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html">The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop</a>.</p>
+<p><strong>6.3 At the threshold.</strong> The matching is where the two descriptions meet, and it is not a physical transition of the gauge sector: the vacuum is a fact at every scale, and the description changes because the theory is truncated, not because the group changes. This is the distinction that <a href="the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html">The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies</a> turns into a statement about one derivative written in two bases.</p>
+<p><strong>6.4 The scalar count is the same count.</strong> Twelve broken generators, twelve eaten real scalars, twelve survivors of twenty-four. Three twelves, and only the first two are the same twelve. <a href="the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html">The Scalar Sector of the Four Colours Left–Right Model: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving</a> owns that ledger.</p>
+<h2 id="tree-level-and-where-a-loop-would-enter">Tree Level, and Where a Loop Would Enter</h2>
+<p><strong>What the identity survives.</strong> The kernel statement is exact at tree level and survives a renormalised vacuum: the stabiliser is a property of the vacuum's direction, and a loop that changes the vacuum's value without changing its orbit changes no stabiliser.</p>
+<p><strong>What it does not survive unchanged.</strong> The values in §<em>The Twelve</em> are tree-level. At one loop the coefficients shift, the neutral mixing angle runs, and the $\rho$ parameter departs from one by a finite amount. Those statements belong to <a href="custodial-symmetry-and-the-rho-parameter.html">Custodial Symmetry and the Rho Parameter: From Accidental to Gauged</a> and to <a href="the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html">The Effective Potential and the One-Loop Correction in Biquaternionic Form</a>.</p>
+<p><strong>The honest boundary.</strong> This article cannot say that the nine masses are zero to all orders. It says that the nine fields are the unbroken ones and that their masses vanish identically in the classical Lagrangian. A loop that generated a mass for a gluon or a photon would contradict gauge invariance, and none does.</p>
+<h2 id="the-checks">The Checks</h2>
+<p><strong>Seven checks, each independent.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the totals</td>
+<td>$9+12$ against $21$</td>
+<td>$21$</td>
+</tr>
+<tr>
+<td>the budget</td>
+<td>$(21-15)+(15-12)+(12-9)$</td>
+<td>$6+3+3=12$</td>
+</tr>
+<tr>
+<td>the rank</td>
+<td>$5\to5\to4\to3$</td>
+<td>the broken Cartan directions are $0+0+1+1$: the sextet is off-diagonal, so the first step costs no rank</td>
+</tr>
+<tr>
+<td>the neutral block</td>
+<td>three neutral generators, rank two</td>
+<td>one massless, two massive</td>
+</tr>
+<tr>
+<td>the eaten scalars</td>
+<td>$12$ broken against $16+8=24$ real</td>
+<td>$12$ eaten, $12$ survive</td>
+</tr>
+<tr>
+<td>the leptoquark six</td>
+<td>$3$ complex mixed cells</td>
+<td>$6$ real</td>
+</tr>
+<tr>
+<td>the identity</td>
+<td>$\ker M^2=\mathfrak h$</td>
+<td>proved from $[X,\Phi_0]=0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="distinctions-that-are-easy-to-lose">Distinctions That Are Easy to Lose</h2>
+<p><strong>Three pairs.</strong></p>
+<p><strong>8.1 Massless and light.</strong> A field below its threshold is absent, not light. Writing that the $Z_R$ has a small coupling to the electron mixes the two regimes.</p>
+<p><strong>8.2 The stabiliser and the low-energy gauge group.</strong> They coincide here only because the minimal content uses one scalar per step. With two scalars the unbroken group is the intersection of the two stabilisers, and the intersection is what the low-energy theory carries.</p>
+<p><strong>8.3 Nine massless gauge fields and one massless boson.</strong> The nine are unbroken generators, hence gauge fields with zero mass. Eight of them are gluons, confined, and therefore absent from the asymptotic spectrum; one is the photon, which is the single massless asymptotic gauge boson. "Nine massless" is a statement about the mass matrix; "one massless" is a statement about the spectrum. Confinement is what separates them, and it is <a href="quantum-chromodynamics-as-the-residual-of-su4.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated</a>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The subgroup.</strong> $H_3=\mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}}$, dimension nine, the stabiliser of the vacuum.</p>
+<p><strong>The identity.</strong> $\ker M^2=\mathfrak h$; the massless count is the dimension of the stabiliser, exactly, at tree level.</p>
+<p><strong>The nine.</strong> Eight gluons and one photon, the photon being the null combination of $W^3_L$, $W^3_R$ and $B$. Nine massless gauge fields, of which eight are confined and so are not asymptotic states; one massless asymptotic boson, the photon.</p>
+<p><strong>The twelve.</strong> Six leptoquarks, $W^{\pm}_{L}$, $W^{\pm}_{R}$, $Z$ and $Z_R$, with coefficients $\tfrac12$, $\tfrac14$, $\tfrac14$, $\tfrac14(g_L^2+g_Y^2)$ and $\tfrac14 g_R^2+\tfrac38 g_4^2$ (the last written $\tfrac58g^2$ at $g_4=g_R=g$).</p>
+<p><strong>The stages.</strong> $21\to15\to12\to9$ in dimensions, with $6$, $3$, $3$ leaving at the three steps and the rank falling only at the last two.</p>
+<p><strong>What is not here.</strong> No mass value, no coupling value, no loop correction.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G_{4LR}$</td>
+<td>$\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+</tr>
+<tr>
+<td>$H$, $\mathfrak h$</td>
+<td>the unbroken subgroup and its Lie algebra</td>
+</tr>
+<tr>
+<td>$\Phi_0$</td>
+<td>the vacuum value of the scalar content</td>
+</tr>
+<tr>
+<td>$M^2_{XY}$</td>
+<td>the gauge mass matrix, $\operatorname{tr}([X,\Phi_0]^\dagger[Y,\Phi_0])$</td>
+</tr>
+<tr>
+<td>$X^{a}$, $\bar X^{a}$</td>
+<td>the leptoquark gauge fields, $a=r,g,b$</td>
+</tr>
+<tr>
+<td>$W^{\pm}_{L}$, $W^{\pm}_{R}$</td>
+<td>the charged gauge fields of the two weak factors</td>
+</tr>
+<tr>
+<td>$Z$, $Z_R$</td>
+<td>the two massive neutral mass eigenstates</td>
+</tr>
+<tr>
+<td>$v$, $v_R$</td>
+<td>the electroweak and colour-breaking vacuum expectation values</td>
+</tr>
+<tr>
+<td>$T^{15}$, $B$</td>
+<td>the $\mathrm{SU}(4)$ Cartan direction and the $B-L$ boson</td>
+</tr>
+<tr>
+<td>$g_4$, $g_L$, $g_R$, $g_Y$</td>
+<td>the four couplings, all symbolic here</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive</a>. The cells, the names, the neutral sector and the same nine-and-twelve count read off the grids.</li>
+<li><a href="the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales</a>. The three stabilisers this article's subgroup is the last of.</li>
+<li><a href="the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html">The Scalar Sector of the Four Colours Left–Right Model: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving</a>. The fields that supply the vacuum, and the eaten count.</li>
+<li><a href="the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html">The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite</a>. The six states of the first step.</li>
+<li><a href="the-photon-as-the-unbroken-mixture.html">The Photon as the Unbroken Mixture: One Null Direction, Three Parents</a>. The null direction of the neutral block.</li>
+<li><a href="custodial-symmetry-and-the-rho-parameter.html">Custodial Symmetry and the Rho Parameter: From Accidental to Gauged</a>. Where the tree-level coefficients of §<em>The Twelve</em> receive their one-loop correction.</li>
+<li><a href="the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html">The Threshold Scales: $M_C$, $M_R$, $M_W$, and What Would Fix Them</a>. The bound that fixes the first scale, and the parameters the chain leaves free.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

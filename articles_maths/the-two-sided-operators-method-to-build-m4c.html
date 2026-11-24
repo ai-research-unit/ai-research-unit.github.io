@@ -262,6 +262,151 @@ L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&amp;-1&amp;0&amp;
 L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},e_t}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}.
 $$</p>
 <p>They agree in the first two rows and differ in the last two. A computation that confuses them returns the wrong coefficient; the companion article <em>The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</em> records the trap.</p>
+<h3 id="the-sixteen-words">The sixteen words</h3>
+<p><strong>Definition (word).</strong> A <strong>word</strong> is a product of one left array with one right array, the indices running over the four units:
+$$
+W_{\mu\nu}:=L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu),\qquad \mu,\nu\in\{t,x,y,z\}.
+$$
+The word $W_{\mu\nu}$ is the array of $X\mapsto e_\mu Xe_\nu$, so a word is labelled by a pair of units.</p>
+<p><strong>Proposition (the words are a basis of $M_4(\mathbb{R})$).</strong> The sixteen $W_{\mu\nu}$ are linearly independent, and they are orthogonal in the trace form with one common norm,
+$$
+\operatorname{tr}\bigl(W_{\mu\nu}^{\mathsf T}W_{\mu'\nu'}\bigr)=4\,\delta_{\mu\mu'}\delta_{\nu\nu'}.
+$$</p>
+<p><strong>Proof.</strong> Each array is a signed permutation matrix, so the product $W_{\mu\nu}^{\mathsf T}W_{\mu'\nu'}$ is a signed permutation matrix with trace $4$ if the two permutations agree and $0$ otherwise, and the permutations agree exactly when $(\mu,\nu)=(\mu',\nu')$. Sixteen arrays orthogonal in a sixteen-dimensional space are a basis. §<em>Orthogonality and the Coefficient Formula</em> proves the same identity through the transposition and composition laws.</p>
+<p><strong>The table of the sixteen.</strong> Write
+$$
+\ell_k:=L_{\mathrm{axf},\vec e_k},\qquad r_k:=R_{\mathrm{axf},\vec e_k},\qquad N_{jk}:=\ell_jr_k ,
+$$
+so that each word has a name among the objects the corpus already has.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>word</th>
+<th>the unit indices</th>
+<th>trace</th>
+<th>symmetry</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$W_{tt}$</td>
+<td>scalar, scalar</td>
+<td>$4$</td>
+<td>symmetric</td>
+<td>$\mathrm I_4$, the removed word</td>
+</tr>
+<tr>
+<td>$W_{tx}$</td>
+<td>scalar, vector</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$r_x$</td>
+</tr>
+<tr>
+<td>$W_{ty}$</td>
+<td>scalar, vector</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$r_y$</td>
+</tr>
+<tr>
+<td>$W_{tz}$</td>
+<td>scalar, vector</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$r_z$</td>
+</tr>
+<tr>
+<td>$W_{xt}$</td>
+<td>vector, scalar</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$\ell_x$</td>
+</tr>
+<tr>
+<td>$W_{yt}$</td>
+<td>vector, scalar</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$\ell_y$</td>
+</tr>
+<tr>
+<td>$W_{zt}$</td>
+<td>vector, scalar</td>
+<td>$0$</td>
+<td>antisymmetric</td>
+<td>$\ell_z$</td>
+</tr>
+<tr>
+<td>$W_{xx}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{xx}=\ell_xr_x$</td>
+</tr>
+<tr>
+<td>$W_{xy}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{xy}=\ell_xr_y$</td>
+</tr>
+<tr>
+<td>$W_{xz}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{xz}=\ell_xr_z$</td>
+</tr>
+<tr>
+<td>$W_{yx}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{yx}=\ell_yr_x$</td>
+</tr>
+<tr>
+<td>$W_{yy}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{yy}=\ell_yr_y$</td>
+</tr>
+<tr>
+<td>$W_{yz}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{yz}=\ell_yr_z$</td>
+</tr>
+<tr>
+<td>$W_{zx}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{zx}=\ell_zr_x$</td>
+</tr>
+<tr>
+<td>$W_{zy}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{zy}=\ell_zr_y$</td>
+</tr>
+<tr>
+<td>$W_{zz}$</td>
+<td>vector, vector</td>
+<td>$0$</td>
+<td>symmetric</td>
+<td>$N_{zz}=\ell_zr_z$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The trace and symmetry columns are those of §<em>The invariants</em>, read as a table of names: the corner is the identity, the first row is the right family and the first column the left family, and the nine products fill the block.</p>
+<p><strong>Corollary (the trace cell is one word).</strong> Exactly one of the sixteen has a trace, $W_{tt}$, the product of the two scalar units. So "remove the trace" is not an operation on a sum: it is the deletion of a single word, and $16-1=15$ is achieved by deleting the pair $(t,t)$ from the index list. That is why the count $15$ is the same in every basis of the traceless part: it is the number of index pairs left after the scalar pair is dropped, which is the number of cells of the $4\times4$ grid of pairs after its corner is dropped.</p>
+<p><strong>Corollary (the deletion splits as six and nine).</strong> The fifteen remaining words are six antisymmetric ones, with exactly one index equal to $t$, and nine symmetric ones, with no index equal to $t$. The six are $\ell_x,\ell_y,\ell_z,r_x,r_y,r_z$; the nine are the $N_{jk}$. So the deletion of $W_{tt}$ produces the split $6+9$ of the Cartan decomposition of $\mathfrak{su}(4)$ without a second choice, because the symmetry type of a word is decided by how many of its two indices are $t$.</p>
+<p><strong>Corollary (the same fifteen, made anti-Hermitian).</strong> Of the fifteen traceless words the six antisymmetric ones, with one $t$ index, are anti-Hermitian as they stand, and the nine symmetric ones become anti-Hermitian on multiplication by $i$. The fifteen arrays so obtained are the fifteen generators of $\mathfrak{su}(4)$ of <em>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</em>: the six $\ell_k$ and $r_k$ and the nine $iN_{jk}$. The basis of words and the basis of generators are one set, read in the real and in the imaginary frame.</p>
 <h3 id="the-invariants">The invariants</h3>
 <p><strong>The table.</strong> The trace is the usual trace, the determinant the usual determinant, the rank the usual rank, the order the least $k\ge1$ with $M^k=\mathrm{I}_4$, and the last column is $M^2$.</p>
 <div class="table-scroll"><table>
@@ -800,7 +945,7 @@ Both are single products up to a scalar: $P_+$ and $P_-$ are linear combinations
 <p><strong>The frame is not canonical.</strong> The five displayed matrices are one choice among the gamma sets of the companion article. The basis $\{L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}\}$ is canonical once the coefficient basis is fixed; the gamma set inside it is not.</p>
 <p>Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <h2 id="summary">Summary</h2>
-<p>The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(L_{\mathrm{axf},e_\mu}{R_{\mathrm{axf},e_\nu}}^{*}L_{\mathrm{axf},e_\rho}R_{\mathrm{axf},e_\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. They are closed under multiplication up to sign, and the thirty-two matrices $\pm L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four basis operators with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{\mathrm{pau},P_i}R_{\mathrm{pau},P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The Clifford frame is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.</p>
+<p>The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(L_{\mathrm{axf},e_\mu}{R_{\mathrm{axf},e_\nu}}^{*}L_{\mathrm{axf},e_\rho}R_{\mathrm{axf},e_\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. As words $W_{\mu\nu}=L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu)$ they are the identity, the six $\ell_k$ and $r_k$ and the nine $N_{jk}$; only $W_{tt}$ carries the trace, so the deletion of that one word gives the fifteen, in the ratio $6+9$. They are closed under multiplication up to sign, and the thirty-two matrices $\pm L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four basis operators with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{\mathrm{pau},P_i}R_{\mathrm{pau},P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The Clifford frame is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.</p>
 <p>$$
 \boxed{\ \operatorname{tr}(L_{\mathrm{axf},e_\mu}{R_{\mathrm{axf},e_\nu}}^{*}L_{\mathrm{axf},e_\rho}R_{\mathrm{axf},e_\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma},\qquad
 c_{\mu\nu}(A)=\tfrac14\operatorname{tr}(L_{\mathrm{axf},e_\mu}{R_{\mathrm{axf},e_\nu}}^{*}A),\qquad
@@ -838,6 +983,18 @@ $$</p>
 <tr>
 <td>$L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$</td>
 <td>$L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, the sixteen basis matrices</td>
+</tr>
+<tr>
+<td>$W_{\mu\nu}$</td>
+<td>the word $L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu)$, the same sixteen by their unit pair</td>
+</tr>
+<tr>
+<td>$\ell_k,r_k$</td>
+<td>$L_{\mathrm{axf},\vec e_k}$ and $R_{\mathrm{axf},\vec e_k}$, the three left and the three right arrays</td>
+</tr>
+<tr>
+<td>$N_{jk}$</td>
+<td>$\ell_jr_k$, the nine products of two spatial units</td>
 </tr>
 <tr>
 <td>$E_{ij}$</td>

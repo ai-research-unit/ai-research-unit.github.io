@@ -72,7 +72,7 @@
         <h1 id="the-anti-hermitian-derivations-of-math0-as-math1"><strong>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Two conditions pick out the generators: anti-Hermitian and traceless. They hold exactly for fifteen matrices, which form $\mathfrak{su}(4)$ of real dimension fifteen, and the fifteen split as six real antisymmetric and nine purely imaginary, $6+9$. Each generator $K$ gives the derivation $[K,\cdot]$, whose array is the Kronecker difference $K\otimes\mathrm{I}_4-\mathrm{I}_4\otimes K^{\mathsf T}$, and whose exponential is the conjugation by the rotor $U=e^{K}\in\mathrm{SU}(4)$.</strong></p>
-<p>The article writes the fifteen generators out in full, and it builds them the way the corpus builds every array: from the axis-free matrices $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$ of <em>Matrix Representations and Conventions</em>, not from a frame chosen for the occasion. The six real generators are the left and right matrices of the three vector units; the nine imaginary ones are $i$ times their nine products. Each of the fifteen is an involution up to the factor $i$, so each has the eigenvalues $i,i,-i,-i$ and each rotor is a closed form in $\cos\theta$ and $\sin\theta$.</p>
+<p>The article writes the fifteen generators out in full, and it builds them the way the corpus builds every array: from the axis-free matrices $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$ of <em>Matrix Representations and Conventions</em>, not from a frame chosen for the occasion. The six real generators are the left and right matrices of the three vector units; the nine imaginary ones are $i$ times their nine products. Each of the fifteen is an involution up to the factor $i$, so each has the eigenvalues $i,i,-i,-i$ and each rotor is a closed form in $\cos\theta$ and $\sin\theta$. The article then prints a second basis of the same fifteen, the plane basis, in which every off-diagonal array is a single plane, and sets the properties of the two bases side by side.</p>
 <p>The article also states the bracket table of the six and the nine, the split of the fifteen as $6+9$, the position of the three inner derivations of the biquaternion algebra inside the six, the spectrum of the derivation as the differences of the eigenvalues of its generator, and the orbit dimensions of the conjugation.</p>
 <p>The article assumes the Lie group results of <em>The Exponential and the Lie Group of $M_4(\mathbb{C})$</em>, the determinant formula $\det e^{F}=e^{\operatorname{tr}F}$, and the reading of the adjoint representation of $\mathrm{SU}(4)$.</p>
 <h2 id="the-two-conditions-on-the-generator">The Two Conditions on the Generator</h2>
@@ -95,6 +95,7 @@ $$</p>
 \ell_k:=L_{\mathrm{axf},\vec e_k},\qquad r_k:=R_{\mathrm{axf},\vec e_k},\qquad N_{jk}:=\ell_jr_k,\qquad j,k\in\{x,y,z\}.
 $$</p>
 <p>The fifteen are $\ell_x,\ell_y,\ell_z$, $r_x,r_y,r_z$ and the nine $iN_{jk}$.</p>
+<p><strong>The fifteen are fifteen words.</strong> A product of one left matrix with one right one is a <strong>word</strong> $W_{\mu\nu}=L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu)$, and the sixteen words are a basis of $M_4(\mathbb{R})$ with $\operatorname{tr}(W_{\mu\nu}^{\mathsf T}W_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$. Only $W_{tt}=\mathrm I_4$ has a nonzero trace, so the traceless part is the grid of pairs without the corner, and the fifteen of this article are those fifteen words made anti-Hermitian: the six antisymmetric words $\ell_k,r_k$ are already anti-Hermitian, and the nine symmetric words $N_{jk}$ become anti-Hermitian on multiplication by $i$. The split $15=6+9$ of §<em>The Split as Six and Nine</em> is therefore the split of the words by the number of $t$ indices they carry. The table of names is §<em>The Sixteen Words, and Their Names</em> of <a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation: Operators</a>.</p>
 <p><strong>The fifteen, one to a display.</strong> They are numbered $G_{1}$ to $G_{15}$ once, so that every later section can point at one of them. The first six are real antisymmetric, the last nine imaginary symmetric.</p>
 <p>$$
 G_{1}=\ell_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}
@@ -254,7 +255,7 @@ $$</p>
 -(0,0,0,-1),\quad (0,0,-1,0),\quad -(0,1,0,0),\quad (1,0,0,0),
 $$</p>
 <p>which is the matrix printed at $G_8$ with the factor $i$ removed. The remaining eight products are read the same way, one row at a time.</p>
-<p><strong>A second basis of the same fifteen.</strong> The fifteen-dimensional space has other bases in the corpus. <em>The Twenty-One Generators as $4\times4$ Arrays</em> prints twenty-one matrices in the plane basis $A_{jk},iS_{jk},iD$, and its six relations are the change of basis between the two lists: in its notation $\ell_x=-A_{tx}-A_{yz}$ and $r_x=-A_{tx}+A_{yz}$, so the six $\ell_k,r_k$ are shared and the nine $iN_{jk}$ are combinations of the planes. A reader arriving from that article will not find $i(E_{xy}+E_{yx})$ here, and does not need to: the two articles print two bases of one space.</p>
+<p><strong>A second basis, printed below.</strong> The fifteen-dimensional space has a second basis built from the same words, and §<em>Step 3: The Plane Basis</em> prints it: the half-sum and the half-difference of each of the six pairs, which is the only resolution of a pair that puts each array on a single plane. The two bases agree on the three diagonal words, differ on the twelve off-diagonal ones, and are carried into each other by $\ell_a=-A_{ta}-A_{bc}$ and $r_a=-A_{ta}+A_{bc}$. §<em>The Two Bases Compared</em> sets the properties of the two side by side.</p>
 <p><strong>Proposition (they are the fifteen of $\mathfrak{su}(4)$).</strong> The fifteen are anti-Hermitian, traceless and linearly independent over $\mathbb{R}$, so they are a basis of $\mathfrak{su}(4)$.</p>
 <p><strong>Proof.</strong> The printed matrices $L_{\mathrm{axf},\vec e_k}$ and $R_{\mathrm{axf},\vec e_k}$ are antisymmetric signed permutations with entries in $\{0,1,-1\}$, so each is anti-Hermitian and of trace zero. Each $N_{jk}$ is a product of two such and is a symmetric signed permutation, of trace zero, so $iN_{jk}$ is anti-Hermitian and traceless. For independence: the sixteen products $L_{\mathrm{axf},\mu}R_{\mathrm{axf},\nu}$ are a basis of $M_4(\mathbb{C})$, the fifteen above are fifteen of them, and the factor $i$ on the nine is invertible.</p>
 <p><strong>Proposition (each squares to $-\mathrm{I}_4$).</strong> Every one of the fifteen satisfies $K^{2}=-\mathrm{I}_4$, so each has the eigenvalues $i,i,-i,-i$ and each has trace zero.</p>
@@ -262,7 +263,311 @@ $$</p>
 <p><strong>Remark (the eight axis-free matrices).</strong> The axis-free frame names eight matrices, $\ell_t,\ell_x,\ell_y,\ell_z$ and $r_t,r_x,r_y,r_z$, and the two scalar ones are both the identity, $\ell_t=r_t=\mathrm{I}_4$. So the eight are seven distinct arrays, and the two identities are exactly the two the traceless condition excludes. The six that remain are $G_1$ to $G_6$.</p>
 <p><strong>Remark (the Cartan is inside the nine).</strong> The three diagonal generators are $G_7=iN_{xx}$, $G_{12}=iN_{yy}$ and $G_{15}=iN_{zz}$; they are imaginary diagonal and traceless, and they span the diagonal traceless subspace. The other six of the nine are off-diagonal, and $G_1$ to $G_6$ have no diagonal entry at all. So this basis puts the Cartan among the nine and puts none among the six.</p>
 <p><strong>Remark (why the products are sixteen and not fewer).</strong> The sixteen products are the arrays of the sixteen operators $T_{a,b}:X\mapsto aXb$ in the axis-free frame, and those operators are a basis of $\operatorname{End}(\mathbb{B})$. Their arrays have rank sixteen. This is the same count as the operator frame of <em>The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$</em>, where the carrier is written as the sixteen products.</p>
-<p><strong>Remark (the ordering of the corpus, not of a textbook).</strong> A textbook basis would single out a Cartan first and then add the roots. This basis does the opposite: the six real generators come from the multiplication itself, and the Cartan appears among the nine as three products. That is what building the generators from the axis-free matrices does, and it is the reason the fifteen here are all of one shape rather than split into weights.</p>
+<p><strong>Remark (the ordering of the corpus, not of a textbook).</strong> A textbook basis would single out a Cartan first and then add the roots. This basis does the opposite: the six real generators come from the multiplication itself, and the Cartan appears among the nine as three products. That is what building the generators from the axis-free matrices does, and it is the reason the fifteen here are all of one shape rather than split into weights. The plane basis of §<em>Step 3</em> takes the textbook order: the three diagonals first, then the twelve planes. The article prints both orders, and §<em>The Two Bases Compared</em> says what each order is for.</p>
+<h2 id="step-3-the-plane-basis">Step 3: The Plane Basis</h2>
+<p><strong>Steps 1 and 2 were forced and step 3 is not.</strong> The eight arrays, the sixteen words, the deletion of $W_{tt}$ and the factor $i$ on the nine leave no freedom: they produce the fifteen $G_1,\dots,G_{15}$ of §<em>The Fifteen Generators, Written Out</em>, every one of them a single word, and twelve of them touching two planes. A second basis of the same fifteen is reached by one optional step, applied to the six pairs of words: replace each pair by its half-sum and its half-difference. Nothing is added and nothing is dropped, so the list is again fifteen, and the support falls from two planes to one.</p>
+<p><strong>The step is a resolution of a pair and not a new construction.</strong> The two words of a pair are the same signed permutation with the signs of one plane reversed, so the pair has two plane parts $X$ and $Y$ and the two words are $X+Y$ and $X-Y$. The half-sum and the half-difference are the two parts themselves. This section states that lemma, applies it six times, prints the fifteen arrays, and compares the two bases.</p>
+<h3 id="the-pair-lemma">The Pair Lemma</h3>
+<p><strong>The two words of a pair differ in one plane.</strong> The two words of a pair are one signed permutation, so both are supported on the same two planes; call the two plane parts $X$ and $Y$. The signs of one of the two planes are reversed between them, so</p>
+<p>$$
+W_{\mu\nu}=X+Y,\qquad W_{\nu\mu}=X-Y .
+$$</p>
+<p><strong>The pair $\{t,x\}$, in full.</strong> With $X=-A_{tx}$ and $Y=+A_{yz}$,</p>
+<p>$$
+W_{tx}=r_x=-A_{tx}+A_{yz}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},\qquad
+W_{xt}=\ell_x=-A_{tx}-A_{yz}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}.
+$$</p>
+<p><strong>The inverse of the pair is the Hadamard matrix.</strong> Solving the two equations,</p>
+<p>$$
+X=\tfrac12\bigl(W_{\mu\nu}+W_{\nu\mu}\bigr),\qquad Y=\tfrac12\bigl(W_{\mu\nu}-W_{\nu\mu}\bigr),\qquad
+a\,W_{\mu\nu}+b\,W_{\nu\mu}=(a+b)\,X+(a-b)\,Y .
+$$</p>
+<p><strong>Proposition (a combination is one-plane exactly when the coefficients are equal or opposite).</strong> The array $aW_{\mu\nu}+bW_{\nu\mu}$ is supported on $X$ alone when $a=b$, on $Y$ alone when $a=-b$, and on both planes otherwise.</p>
+<p><strong>Proof.</strong> The two coefficients are $a+b$ and $a-b$, and one of them vanishes exactly when $a=\pm b$. The solutions are the two eigenlines of $\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}$, whose inverse carries the two words to the two planes. <strong>The halves are therefore the inverse of the Hadamard matrix and not a normalisation chosen at will.</strong></p>
+<p><strong>Worked, with a coefficient that is not a half.</strong></p>
+<p>$$
+\tfrac12\bigl(W_{tx}+W_{xt}\bigr)=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}=-A_{tx},\qquad
+2\,W_{tx}+W_{xt}=-3A_{tx}+A_{yz}=\begin{pmatrix}0&amp;-3&amp;0&amp;0\\3&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}.
+$$</p>
+<p>Two cells against four: the second array moves both planes at once, and no plane can be named for it.</p>
+<p><strong>The scale.</strong> The demand $\lvert a\rvert=\lvert b\rvert$ fixes the direction of the resolution in each pair and leaves a sign and a scale. The sign is fixed below by the ordering of the indices, and the scale $\tfrac12$ is the one that makes the two outputs matrices with entries in $\{0,\pm1\}$, that is, a pair of matrix units read in real form.</p>
+<p><strong>What the demand alone does not do.</strong> One plane is also reached by a single matrix unit, $iE_{jk}$, which is in neither basis; the uniqueness of the step is a uniqueness inside the six pairs. The demand is applied one pair at a time, and that restriction is its hypothesis.</p>
+<h3 id="the-six-pairs-and-their-twelve-outputs">The Six Pairs and Their Twelve Outputs</h3>
+<p><strong>The table.</strong> The pair is written in ascending index order, the complement likewise, and the sign of a half-difference is the sign of the permutation $(\mu,\nu,\mu',\nu')$ against $(t,x,y,z)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>the two words</th>
+<th>half-sum</th>
+<th>half-difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{t,x\}$</td>
+<td>$W_{tx}=r_x$, $W_{xt}=\ell_x$</td>
+<td>$-A_{tx}$</td>
+<td>$+A_{yz}$</td>
+</tr>
+<tr>
+<td>$\{t,y\}$</td>
+<td>$W_{ty}=r_y$, $W_{yt}=\ell_y$</td>
+<td>$-A_{ty}$</td>
+<td>$-A_{xz}$</td>
+</tr>
+<tr>
+<td>$\{t,z\}$</td>
+<td>$W_{tz}=r_z$, $W_{zt}=\ell_z$</td>
+<td>$-A_{tz}$</td>
+<td>$+A_{xy}$</td>
+</tr>
+<tr>
+<td>$\{x,y\}$</td>
+<td>$W_{xy}=N_{xy}$, $W_{yx}=N_{yx}$</td>
+<td>$-S_{xy}$</td>
+<td>$+S_{tz}$</td>
+</tr>
+<tr>
+<td>$\{x,z\}$</td>
+<td>$W_{xz}=N_{xz}$, $W_{zx}=N_{zx}$</td>
+<td>$-S_{xz}$</td>
+<td>$-S_{ty}$</td>
+</tr>
+<tr>
+<td>$\{y,z\}$</td>
+<td>$W_{yz}=N_{yz}$, $W_{zy}=N_{zy}$</td>
+<td>$-S_{yz}$</td>
+<td>$+S_{tx}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table read as one sentence.</strong> The half-sum is minus the array on the pair's own two indices, and the half-difference is the array on the complementary pair, with the sign of the ordering. Each pair therefore yields one array on a plane through the $t$ line and one on a plane that avoids it.</p>
+<p><strong>Six of the twelve need the factor $i$.</strong> On the three pairs $\{t,a\}$ both outputs are real antisymmetric, so both are anti-Hermitian as they stand. On the three pairs $\{b,c\}$ both outputs are real symmetric, $-S_{bc}$ and $\pm S_{ta}$, and they take the factor $i$ of the nine. After that multiplication the twelve are $\pm A_{jk}$ and $\pm iS_{jk}$, and the sign in each pair is fixed by the printing.</p>
+<p><strong>The identity behind the table, in one line.</strong> For $(a,b,c)$ a cyclic order of $(x,y,z)$,</p>
+<p>$$
+A_{ta}=-\tfrac12\bigl(W_{ta}+W_{at}\bigr),\qquad
+A_{bc}=+\tfrac12\bigl(W_{ta}-W_{at}\bigr).
+$$</p>
+<h3 id="the-twelve-plane-arrays-and-the-three-diagonals">The Twelve Plane Arrays and the Three Diagonals</h3>
+<p><strong>The convention.</strong> The rows and the columns are read in the order $t,x,y,z$, so that $t,x,y,z$ are $1,2,3,4$; $E_{jk}$ is the matrix unit; and for $j&lt;k$ in that order,</p>
+<p>$$
+A_{jk}:=E_{jk}-E_{kj},\qquad iS_{jk}:=i\bigl(E_{jk}+E_{kj}\bigr).
+$$</p>
+<p><strong>The two indices are not the one index of §<em>The Commutators and the Grading</em>.</strong> $iS_{jk}$ with two indices is the imaginary symmetric array of the plane $\{j,k\}$; $S_k=\tfrac12(\ell_k+r_k)$ with one index is the real antisymmetric combination of the words basis. The arity is the whole difference, and this section writes the one-index symbol only where the words basis is meant.</p>
+<p><strong>The six real arrays.</strong> They are the two outputs of the three pairs $\{t,a\}$, both of which are real antisymmetric: the half-sums give $A_{tx},A_{ty},A_{tz}$, the half-differences give $A_{yz},A_{xz},A_{xy}$.</p>
+<p>$$
+A_{tx}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+A_{ty}=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+A_{tz}=\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+A_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+A_{xz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+A_{yz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}
+$$</p>
+<p><strong>The six imaginary arrays.</strong> They are the two outputs of the three pairs $\{b,c\}$, both of which are real symmetric, each multiplied by $i$: the half-sums give the arrays on the planes $\{x,y\},\{x,z\},\{y,z\}$ and the half-differences the arrays on $\{t,z\},\{t,y\},\{t,x\}$. The sign of each output is the sign of the table, and the displays print the twelve with the plus sign.</p>
+<p>$$
+iS_{tx}=\begin{pmatrix}0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iS_{ty}=\begin{pmatrix}0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iS_{tz}=\begin{pmatrix}0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iS_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iS_{xz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+iS_{yz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;i&amp;0\end{pmatrix}
+$$</p>
+<p><strong>The three diagonals.</strong> They are not paired: the three words $W_{xx},W_{yy},W_{zz}$ are diagonal, and they are taken whole, in one sum and two successive differences.</p>
+<p>$$
+iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr)=\begin{pmatrix}-3i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix}
+$$</p>
+<p>$$
+d_2=\tfrac i2\bigl(W_{yy}-W_{xx}\bigr)=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p>$$
+d_3=\tfrac i2\bigl(W_{zz}-W_{yy}\bigr)=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\end{pmatrix}
+$$</p>
+<p><strong>The three diagonals are the three diagonal words, recombined.</strong> $iD=G_7+G_{11}+G_{15}$, and the map from $(iN_{xx},iN_{yy},iN_{zz})$ to $(iD,d_2,d_3)$ is invertible, so the two bases agree on the three-dimensional diagonal space and differ only on the twelve off-diagonal arrays.</p>
+<p><strong>Proposition (the fifteen are a second basis).</strong> The fifteen arrays are anti-Hermitian, traceless and of rank fifteen over $\mathbb{R}$, so they are a basis of $\mathfrak{su}(4)$.</p>
+<p><strong>Proof.</strong> Each is $i$ times a real matrix with two or four nonzero entries, so the conjugate transpose is minus itself, and each has zero trace. For independence: the twelve are supported on the twelve distinct off-diagonal planes, the three lie in the diagonal space, and the diagonal space meets the span of the twelve in zero.</p>
+<p><strong>Proposition (one plane per array).</strong> Each of the twelve off-diagonal arrays has exactly two nonzero entries, in the positions $(j,k)$ and $(k,j)$ of one plane $\{j,k\}$, and each of the three diagonals has its nonzero entries on the diagonal.</p>
+<p><strong>Proof.</strong> Read the displays. <strong>This is the property the step was taken for</strong>: one array, one plane, and no array that mixes two planes.</p>
+<h3 id="the-change-of-basis">The Change of Basis</h3>
+<p><strong>The six real generators of the words basis, in the plane basis.</strong> For $(a,b,c)$ a cyclic order of $(x,y,z)$,</p>
+<p>$$
+\ell_a=-A_{ta}-A_{bc},\qquad r_a=-A_{ta}+A_{bc}.
+$$</p>
+<p><strong>Proof.</strong> By the table, $W_{ta}=r_a=-A_{ta}+A_{bc}$ and $W_{at}=\ell_a=-A_{ta}-A_{bc}$, and the two displays hold for each of the three cyclic choices.</p>
+<p><strong>The two triples are the two kinds of plane.</strong> Adding and subtracting the two relations,</p>
+<p>$$
+\tfrac12\bigl(\ell_a+r_a\bigr)=-A_{ta},\qquad \tfrac12\bigl(\ell_a-r_a\bigr)=-A_{bc}.
+$$</p>
+<p><strong>So the plane basis displays the two triples.</strong> The three planes through the $t$ line are the three diagonal combinations $\tfrac12(\ell_a+r_a)$, and the three planes that avoid it are the three inner derivations $D_a=\tfrac12(\ell_a-r_a)$. In the words basis those two triples are combinations; in the plane basis they are basis elements, and a sign is the only difference.</p>
+<p><strong>The inverse, and the nine.</strong> The relations invert to</p>
+<p>$$
+A_{ta}=-\tfrac12\bigl(\ell_a+r_a\bigr),\qquad A_{bc}=-D_a,
+$$</p>
+<p>and the nine words are read from the table, one pair at a time, for example</p>
+<p>$$
+N_{xy}=W_{xy}=-S_{xy}+S_{tz},\qquad N_{yx}=W_{yx}=-S_{xy}-S_{tz}.
+$$</p>
+<p><strong>One matrix unit from one plane.</strong> The two arrays of a plane are the antisymmetric and the symmetric part of the two matrix units, so the plane pair carries the same information as the pair $E_{jk},E_{kj}$:</p>
+<p>$$
+S_{jk}+A_{jk}=2E_{jk},\qquad S_{jk}-A_{jk}=2E_{kj},\qquad S_{jk}=-i\,(iS_{jk}).
+$$</p>
+<h3 id="the-adjoint-of-math305">The Adjoint of $iD$</h3>
+<p><strong>Proposition (a quarter turn on six dimensions and zero on nine).</strong> With $iD$ as above,</p>
+<p>$$
+[iD,A_{ta}]=-4\,iS_{ta},\qquad [iD,iS_{ta}]=4\,A_{ta},\qquad [iD,X]=0
+$$</p>
+<p>for $X$ among the other nine arrays. So the image of $\mathrm{ad}_{iD}$ is the six-dimensional span of $A_{ta},iS_{ta}$, the kernel is the nine-dimensional span of the rest, and on each of the three planes the array acts as four times a quarter turn.</p>
+<p><strong>Proof.</strong> The commutator with a diagonal matrix multiplies the entry $X_{pq}$ by $d_q-d_p$ with $d=(-3,1,1,1)$; on the plane $\{t,a\}$ the difference is $4$ in one direction and $-4$ in the other, and on the planes $\{b,c\}$ and on the diagonal it is zero.</p>
+<p><strong>The quadratic form of the pair.</strong> Define</p>
+<p>$$
+\beta(X,Y):=\operatorname{Re}\operatorname{tr}\bigl([X,iD]^{*}[Y,iD]\bigr).
+$$</p>
+<p><strong>Proposition ($\beta$ is diagonal in the plane basis and of rank one on a pair in the words basis).</strong> $\beta$ is positive semidefinite, of kernel the nine-dimensional centraliser of $iD$ in $\mathfrak{su}(4)$, and it is $32$ on each of the six arrays $A_{ta},iS_{ta}$ and $0$ on the other nine. In the words basis the block of $\beta$ on the pair $(\ell_a,r_a)$ is</p>
+<p>$$
+32\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix},
+$$</p>
+<p>of rank one, with eigenlines $\ell_a+r_a=-2A_{ta}$ and $\ell_a-r_a=-2A_{bc}$.</p>
+<p><strong>Proof.</strong> $\beta(X,X)=\lVert[X,iD]\rVert^{2}\ge0$, and $[A_{ta},iD]=-4iS_{ta}$ has square norm $16\cdot2=32$. In the words basis $\beta(\ell_a,\ell_a)=\beta(r_a,r_a)=\beta(\ell_a,r_a)=32$, because $\ell_a$ and $r_a$ have the same component along $A_{ta}$ and opposite components along $A_{bc}$, which $\beta$ annihilates.</p>
+<p><strong>Remark (this is a second $6+9$, and it is not the symmetry split).</strong> The fifteen split as six and nine twice: once as six real antisymmetric and nine imaginary symmetric, and once as the six-dimensional image and the nine-dimensional kernel of $\mathrm{ad}_{iD}$. The two sixes differ. Their intersection is the three-dimensional span of $A_{tx},A_{ty},A_{tz}$, because the image holds three antisymmetric and three symmetric arrays, and its antisymmetric half is exactly the three planes through $t$. A reader who writes $6+9$ must say which split is meant.</p>
+<h2 id="the-two-bases-compared">The Two Bases Compared</h2>
+<p><strong>Two bases, one space, two demands.</strong> The words basis is the unique basis in which every array is a single word. The plane basis is the unique resolution of the six pairs in which every off-diagonal array is supported on a single plane. Each is the solution of one demand, and neither demand implies the other.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>property</th>
+<th>words basis, $G_1,\dots,G_{15}$</th>
+<th>plane basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>how it is reached</td>
+<td>steps 1 and 2, forced</td>
+<td>step 3, one optional choice</td>
+</tr>
+<tr>
+<td>nonzero entries</td>
+<td>four, on all fifteen</td>
+<td>two on fourteen, four on $iD$</td>
+</tr>
+<tr>
+<td>planes touched</td>
+<td>two on twelve, none on three</td>
+<td>one on twelve, none on three</td>
+</tr>
+<tr>
+<td>entries</td>
+<td>$\{0,\pm1\}$ and $i\{0,\pm1\}$</td>
+<td>$\{0,\pm1\}$ and $i\{0,\pm1\}$, and $i\{-3,1,1,1\}$ on $iD$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(G^{*}G)$</td>
+<td>$4$ on all fifteen</td>
+<td>$2$ on fourteen, $12$ on $iD$</td>
+</tr>
+<tr>
+<td>the trace form</td>
+<td>$\operatorname{tr}(G_a^{*}G_b)=4\delta_{ab}$</td>
+<td>not diagonal: $\operatorname{tr}(d_2^{*}d_3)=-1$</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$i,i,-i,-i$ on all fifteen</td>
+<td>$0,0,\pm i$ on fourteen, $-3i,i,i,i$ on $iD$</td>
+</tr>
+<tr>
+<td>$K^{2}$</td>
+<td>$-\mathrm{I}_4$</td>
+<td>$-(E_{jj}+E_{kk})$ on the twelve, $\operatorname{diag}(-9,-1,-1,-1)$ on $iD$</td>
+</tr>
+<tr>
+<td>the rotor</td>
+<td>$\cos\theta\,\mathrm{I}_4+\sin\theta\,K$</td>
+<td>$\mathrm{I}_4+\sin\theta\,K+(1-\cos\theta)K^{2}$</td>
+</tr>
+<tr>
+<td>spectrum of $\mathrm{ad}_K$</td>
+<td>$0^{8},(\pm2i)^{4}$, the same for all fifteen</td>
+<td>differs: $0^{6},(\pm i)^{4},\pm2i$ for a plane, $0^{10},(\pm4i)^{3}$ for $iD$</td>
+</tr>
+<tr>
+<td>structure constants</td>
+<td>integers</td>
+<td>integers, except the six brackets of a plane with its own partner, which carry thirds</td>
+</tr>
+<tr>
+<td>$\ell_k$ and $r_k$</td>
+<td>basis elements</td>
+<td>$-A_{ta}\mp A_{bc}$</td>
+</tr>
+<tr>
+<td>$D_k$ and $\tfrac12(\ell_k+r_k)$</td>
+<td>combinations of $\ell_k,r_k$</td>
+<td>$-A_{bc}$ and $-A_{ta}$, basis elements</td>
+</tr>
+<tr>
+<td>the Cartan</td>
+<td>three products $iN_{kk}$</td>
+<td>the three diagonals, first in the list</td>
+</tr>
+<tr>
+<td>the six of $\mathfrak{so}(4)$</td>
+<td>two families of one shape</td>
+<td>two triples, split by the plane's incidence with $t$</td>
+</tr>
+<tr>
+<td>the form $\beta$</td>
+<td>of rank one on each pair</td>
+<td>diagonal</td>
+</tr>
+<tr>
+<td>the demand it answers</td>
+<td>every array one word</td>
+<td>every off-diagonal array one plane</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the words basis buys.</strong> Four things, and the article uses all four.</p>
+<p><strong>Integrality.</strong> Every array is a signed permutation before the factor $i$, so every one of the $225$ brackets is an integer combination of basis elements. The bracket table can be checked by hand or in exact arithmetic, and it carries no tolerance.</p>
+<p><strong>Orthonormality.</strong> $\operatorname{tr}(G_a^{*}G_b)=4\delta_{ab}$, so the Gram matrix is $4\mathrm{I}_{15}$ and the coordinate of a matrix is a trace divided by four. Each coefficient is one projection.</p>
+<p><strong>One involution, one spectrum, one rotor.</strong> Every member squares to $-\mathrm{I}_4$, so every member has the eigenvalues $i,i,-i,-i$, every derivation has the spectrum $0^{8},(\pm2i)^{4}$, and every rotor is $\cos\theta\,\mathrm{I}_4+\sin\theta\,K$. Three propositions of this article are propositions about this basis and about no other.</p>
+<p><strong>The two $\mathfrak{su}(2)$'s of $\mathfrak{so}(4)$ as two families.</strong> The six are $\ell_x,\ell_y,\ell_z$ and $r_x,r_y,r_z$, two copies of one shape, with $[\ell_a,\ell_b]=2\ell_c$ and $[r_a,r_b]=-2r_c$. The two copies appear as two lists, not as two blocks of a split.</p>
+<p><strong>What the plane basis buys.</strong> Four things, and none of them is available in the words basis.</p>
+<p><strong>One array, one plane.</strong> Each of the twelve off-diagonal generators is one plane, and the array names the plane it turns. A question about a plane, such as which generators move it and which fix it, becomes a question about one array.</p>
+<p><strong>The Cartan displayed.</strong> $iD,d_2,d_3$ are the three diagonals and are printed first, so the basis is a Cartan followed by the roots, in the order a textbook uses. The weights are read off the diagonal entries, and each pair $\{A_{jk},iS_{jk}\}$ spans over $\mathbb{C}$ the two matrix units $E_{jk},E_{kj}$.</p>
+<p><strong>The two $\mathfrak{su}(2)$'s as two triples.</strong> $\tfrac12(\ell_a+r_a)=-A_{ta}$ and $D_a=-A_{bc}$, so the two triples of $\mathfrak{so}(4)$ are the three planes through the $t$ line and the three planes that avoid it. The split is by incidence with one line, a statement the words basis cannot make without a combination.</p>
+<p><strong>The adjoint of $iD$, and the form $\beta$.</strong> The image of $\mathrm{ad}_{iD}$ is six-dimensional, its kernel nine-dimensional, and $\beta$ is diagonal with two values. In the words basis the same form has a rank-one block on each pair, which is the block that step 3 resolves.</p>
+<p><strong>What the plane basis costs.</strong> Four things, and they are the reason the article does not use it for the rotors.</p>
+<p><strong>The spectrum is no longer uniform.</strong> A plane array has the eigenvalues $0,0,i,-i$ and $iD$ has $-3i,i,i,i$, so no single closed form covers the fifteen and no single derivation spectrum either. Each family needs its own display.</p>
+<p><strong>$K^{2}$ is no longer $-\mathrm{I}_4$.</strong> A plane array squares to minus the sum of two matrix units, so the exponential is a polynomial of degree two and the compact form $\cos\theta\,\mathrm{I}_4+\sin\theta\,K$ is lost:</p>
+<p>$$
+e^{\theta A_{ta}}=\mathrm{I}_4+\sin\theta\,A_{ta}+(1-\cos\theta)\,A_{ta}^{2},\qquad
+e^{\theta iD}=\operatorname{diag}\bigl(e^{-3i\theta},e^{i\theta},e^{i\theta},e^{i\theta}\bigr).
+$$</p>
+<p><strong>The trace form is not diagonal.</strong> $\operatorname{tr}(d_2^{*}d_3)=-1$, so the coefficients of a matrix in this basis solve a small linear system and are not single projections, and the norms are $2$ and $12$ rather than $4$ on all.</p>
+<p><strong>The brackets of a plane carry thirds.</strong> The bracket of the two arrays of one plane lands in the Cartan, and its coefficients there are $\pm\tfrac23$ and $\pm\tfrac43$, because $iD$ is not a multiple of a projection. Six of the $225$ brackets are of that kind, the two orders for each of the three planes, and the other $219$ are integral.</p>
+<p><strong>What neither basis buys.</strong> No basis of the fifteen is at once of one norm and of one plane per array: the two demands are incompatible, and that incompatibility is the whole content of the choice. Nor does the trace form select a basis, since on $\mathfrak{su}(4)$ it is a negative multiple of the identity and names no direction. What is left is a demand on the support, and there are two such demands, so there are two bases.</p>
+<p><strong>Which basis this article uses, and where.</strong> The sections that follow §<em>The Derivation and Its Array</em> use $G_1,\dots,G_{15}$, because the closed forms, the common spectrum and the derivation theorem rest on $K^{2}=-\mathrm{I}_4$. The plane basis answers the questions in which a plane is the object: the change of basis of this section, the Cartan, the incidence split of the six, the image of $\mathrm{ad}_{iD}$, and the form $\beta$. The change of basis is two lines, so a reader can pass from one to the other at any point.</p>
 <h2 id="the-derivation-and-its-array">The Derivation and Its Array</h2>
 <p><strong>Definition.</strong> For $K$ in the algebra the derivation is $\mathrm{ad}_K(X)=[K,X]$.</p>
 <p><strong>Proposition (it is a derivation and it is anti-Hermitian).</strong> The Leibniz rule holds, and for the Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ one has $(\mathrm{ad}_K)^{*}=\mathrm{ad}_{K^{*}}$, so $\mathrm{ad}_K$ is anti-Hermitian exactly when $K$ is. The kernel of $K\mapsto\mathrm{ad}_K$ is the scalars, so the map is injective on $\mathfrak{su}(4)$.</p>
@@ -510,7 +815,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Remark (three ladders at once).</strong> At the element level $32\to30\to16\to15$. At the operator level $512\to256\to30\to15$. Inside the fifteen, $15=6+9$ and $6+9=6+6+3$. The number fifteen appears twice for two different reasons: the generators have fifteen parameters because the trace removes one of the sixteen, and the derivations have real dimension fifteen because the algebra is a full matrix algebra and the inner derivations are the algebra modulo the centre. The map $K\mapsto\mathrm{ad}_K$ is the isomorphism between them, and it is why the two fifteens agree.</p>
+<p><strong>Remark (three ladders at once).</strong> At the element level $32\to30\to16\to15$. At the operator level $512\to256\to30\to15$. Inside the fifteen, $15=6+9$ and $6+9=6+6+3$, the second being six symmetric arrays and three diagonal ones. The number fifteen appears twice for two different reasons: the generators have fifteen parameters because the trace removes one of the sixteen, and the derivations have real dimension fifteen because the algebra is a full matrix algebra and the inner derivations are the algebra modulo the centre. The map $K\mapsto\mathrm{ad}_K$ is the isomorphism between them, and it is why the two fifteens agree.</p>
 <p><strong>Remark (the operator level is five hundred and twelve).</strong> $\operatorname{End}(M_4)$ has complex dimension $16\cdot16=256$, so real dimension five hundred and twelve. The anti-Hermitian half is two hundred and fifty-six, the derivation condition cuts to thirty, and the anti-Hermitian condition cuts to fifteen. The derivation condition is the strong one: it removes four hundred and eighty-two of the five hundred and twelve real dimensions, against the two hundred and fifty-six that the anti-Hermitian condition removes, and the two together leave fifteen. Neither condition implies the other. The derivation $\mathrm{ad}_K$ with $K=\operatorname{diag}(1,0,0,0)$ is not anti-Hermitian, since $(\mathrm{ad}_K)^{*}=\mathrm{ad}_{K^{*}}=\mathrm{ad}_K$ makes it Hermitian and it is not zero; and of the two hundred and fifty-six real dimensions of anti-Hermitian operators only fifteen are derivations.</p>
 <h2 id="the-orbits">The Orbits</h2>
 <p><strong>Proposition (the orbit of a matrix).</strong> The conjugation by $\mathrm{SU}(4)$ sends a matrix with four distinct eigenvalues to the matrices with the same spectrum and the same multiplicities — with four distinct eigenvalues that is the whole isospectral set — and the orbit has real dimension $12$.</p>
@@ -613,8 +918,9 @@ $$</p>
 <p><strong>Remark (the checks).</strong> On two hundred random generators of $\mathfrak{su}(4)$: the array is anti-Hermitian exactly, the Leibniz residual is at most $2.6\times10^{-14}$, the Kronecker form $F(X)=KX-XK$ holds to $7.1\times10^{-15}$, the power sums of the spectrum agree with the sums of the differences of the eigenvalues to a relative $1.2\times10^{-12}$, the exponential equals $U\otimes\bar U$ to $5.1\times10^{-15}$, and it is unitary to $4.7\times10^{-15}$ with determinant one to $7.3\times10^{-15}$. The fifteen generators of the basis are anti-Hermitian and traceless exactly, of rank fifteen, each of them squares to $-\mathrm{I}_4$ with the eigenvalues $i,i,-i,-i$. The closed forms agree to $3.6\times10^{-16}$. The bracket rows are exact identities over $\mathbb{Q}(i)$, and the residuals quoted for them are floating-point confirmations of exact identities rather than tolerances: $[\ell_x,\ell_y]=2\ell_z$, $[r_x,r_y]=-2r_z$, $[\ell_a,r_b]=0$, $[D_x,D_y]=D_z$, $[S_x,S_y]=D_z$, $[\ell_x,iN_{yz}]=2iN_{zz}$, $[iN_{xx},iN_{xy}]=-2r_z$, $[iN_{xy},iN_{yx}]=0$. The grading is checked on all $36+108+81$ pairs, with residual at most $8.9\times10^{-16}$: two of the six bracket into the six, one of the six with one of the nine into the nine, and two of the nine into the six.</p>
 <h2 id="summary">Summary</h2>
 <p>The anti-Hermitian traceless matrices of order four are $\mathfrak{su}(4)$, of real dimension fifteen, split as six real antisymmetric and nine purely imaginary, $6+9$. The fifteen are printed one to a display and numbered $G_{1}$ to $G_{15}$. The six are the left and right matrices of the three vector units in the axis-free frame, they are $\mathfrak{su}(2)\oplus\mathfrak{su}(2)=\mathfrak{so}(4)$, and the nine are $i$ times their nine products.</p>
-<p>Every generator of the basis satisfies $K^{2}=-\mathrm{I}_4$, so every rotor is a closed form in $\cos\theta$ and $\sin\theta$, and every generator has the eigenvalues $i,i,-i,-i$. The three inner derivations of the biquaternion algebra are the anti-diagonal combinations $\tfrac12(\ell_k-r_k)$, which satisfy $[D_x,D_y]=D_z$; the twelve remaining directions are the diagonal combinations $\tfrac12(\ell_k+r_k)$ and the nine.</p>
+<p>Every generator of the words basis satisfies $K^{2}=-\mathrm{I}_4$, so every rotor is a closed form in $\cos\theta$ and $\sin\theta$, and every generator has the eigenvalues $i,i,-i,-i$. The three inner derivations of the biquaternion algebra are the anti-diagonal combinations $\tfrac12(\ell_k-r_k)$, which satisfy $[D_x,D_y]=D_z$; the twelve remaining directions are the diagonal combinations $\tfrac12(\ell_k+r_k)$ and the nine.</p>
 <p>The bracket respects the grading: the six is a subalgebra, the mixed brackets stay in the nine, and the brackets of two of the nine land in the six. So $\mathrm{SU}(4)/\mathrm{SO}(4)$ is a symmetric space, and the fifteen of this article are its tangent data together with the isotropy algebra.</p>
+<p>The article prints two bases of the fifteen. The first is forced: eight arrays, sixteen words, the deletion of $W_{tt}$, the factor $i$ on the nine. It is orthogonal with $\operatorname{tr}(G_a^{*}G_b)=4\delta_{ab}$, every structure constant in it is an integer, every member squares to $-\mathrm{I}_4$, and every rotor is $\cos\theta\,\mathrm{I}_4+\sin\theta\,K$. The second is one optional step further, the half-sum and half-difference of the six pairs, and it puts each off-diagonal generator on a single plane. It pays for that where the two demands conflict: norms $2$ and $12$ instead of $4$, a spectrum that varies from array to array, a rotor of degree two in $K$, and thirds in the brackets of a plane with its own partner. The first basis is the one the rotors and the derivation spectrum are computed in; the second is the one in which a plane is one array.</p>
 <p>Each generator gives the derivation $[K,\cdot]$, of array $K\otimes\mathrm{I}_4-\mathrm{I}_4\otimes K^{\mathsf T}$, of spectrum the differences of the eigenvalues of $K$, of trace zero and of exponential $U\otimes\bar U\in\mathrm{SU}(16)$. The dimension ladder is $32\to30\to16\to15$ at the element level and $512\to256\to30\to15$ at the operator level, and the map $K\mapsto\mathrm{ad}_K$ makes the two fifteens the same fifteen.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -644,6 +950,18 @@ $$</p>
 <tr>
 <td>$N_{jk}$</td>
 <td>the product $\ell_jr_k$, a symmetric signed permutation; the generator is $iN_{jk}$</td>
+</tr>
+<tr>
+<td>$A_{jk}$, $iS_{jk}$</td>
+<td>the plane arrays $E_{jk}-E_{kj}$ and $i(E_{jk}+E_{kj})$, for $j&lt;k$</td>
+</tr>
+<tr>
+<td>$iD$, $d_2$, $d_3$</td>
+<td>the three diagonal arrays of the plane basis, $i(W_{xx}+W_{yy}+W_{zz})$ and two differences</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>the form $\operatorname{Re}\operatorname{tr}([X,iD]^{*}[Y,iD])$</td>
 </tr>
 <tr>
 <td>$\ell_t$, $r_t$</td>
@@ -689,7 +1007,7 @@ $$</p>
 <li><a href="the-anti-hermitian-derivations-of-m2c-as-su2.html">The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</a>, for the same construction at order two, with three generators.</li>
 <li><a href="the-anti-hermitian-derivations-of-the-operators-of-the-biquaternion-algebra-as-su4.html">The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$</a>, for the same fifteen generators in the operator basis of the algebra.</li>
 <li><a href="the-exponential-and-the-lie-group-of-m4c.html">The Exponential and the Lie Group of $M_4(\mathbb{C})$</a>, for the group behind the rotors.</li>
-<li><a href="../articles_physics/the-twenty-one-generators-twenty-one-arrays-fifteen-directions.html">The Twenty-One Generators as $4\times4$ Arrays</a>, for the same fifteen in the plane basis, and the six relations that carry one basis to the other.</li>
+<li><a href="../articles_physics/the-axf-matrices-of-the-twenty-one-generators.html">The AXF Matrices of the Twenty-One Generators</a>, for the plane basis of the same fifteen, printed there beside the twenty-one generators.</li>
 </ul>
       </div>
     </main>
