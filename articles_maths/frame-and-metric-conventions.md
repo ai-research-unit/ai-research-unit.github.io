@@ -104,7 +104,7 @@ Its values are fixed by the anticommutator,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad \varepsilon=(1,-1,-1,-1),
 $$
-and it is linear over the complex field in either frame. The two squares are $\gamma_0^2=+I_4$ and $\gamma_k^2=-I_4$ in both frames, and that is the weight written in the arrays. Earlier versions called the five images the gamma frame; this article names the map the Clifford map, because the object is a map and not a frame, and calls the five the gamma set. The letter $\gamma$ stays for the four images.
+and it is linear over the complex field in either frame. The two squares are $\gamma_0^2=+I_4$ and $\gamma_k^2=-I_4$ in both frames, and that is the weight written in the arrays. The map is the Clifford map and the five images are the gamma set; the letter $\gamma$ stays for the four images.
 
 **The image is four-dimensional and not closed.** Four elements span four dimensions, and $M_4(\mathbb{C})$ has sixteen. A product of two distinct images is a bivector, and it leaves the image. The image is a subspace, not a subalgebra, and not a basis: the basis is the sixteen graded products, $1+4+6+4+1$. Writing the four as "the basis" hides both the count and the place each product lands.
 
@@ -118,17 +118,16 @@ and it is linear over the complex field in either frame. The two squares are $\g
 
 ## The Rules
 
-Nine rules follow.
+Eight rules follow.
 
 1. **Declare the frame before the first display.** A formula that does not name its frame is read in the article's declared default, and an article declares one default only.
-2. **One product, one coordinate.** A product is read in one frame's coordinate, and the coordinate fixes the interval. The metric is one, $\delta_{\mu\nu}=(1,1,1,1)$, and it is the same in both frames. The matrices carry no frame and are never relabelled.
+2. **One product, one coordinate.** A product is read in one frame's coordinate, and the coordinate fixes the interval.
 3. **The index is low, and it labels a direction.** The index names which of the four directions is read; it is not a tensor slot, and no label is raised on the array itself: a contravariant index is not allowed, and the weight stands where a raising would stand, $\gamma_\mu\gamma_\mu=\varepsilon_\mu I_4$ with no sum. The fifth is a product and not an image of a direction, so it is written $\gamma_5$ without a label.
 4. **Name the frame with its coordinate.** The coordinate frame carries its interval. A statement that names a frame names the coordinate it reads; an interval is never moved from one frame to another.
 5. **The $i$ is in the coordinate or in the signs, never in the metric.** The one metric has real coefficients.
 6. **$Q_t=iq'_t$ is material.** The substitution is made on $\mathbb{B}_{\Phi}$ and is not carried to $\mathbb{B}_{\Psi}$ without saying so.
 7. **A change of frame is a written substitution.** It has a law, $Q_t=ix_0$ in the coordinates, and the article gives it. The frame is named on the coordinate and no metric is written, because the substitution carries the interval at once. A display is read only in the frame that produced it. The substitution does not touch the matrices.
-8. **The interval is a norm, not a metric.** The interval of an element is squared by multiplying it by its conjugate, $\langle\tilde X\rangle_\natural=\tilde X\tilde X^\natural$. In the $\mathbb{B}$ frame this is the plain sum $\sum_\mu Q_\mu^2$, with every coefficient $+1$. In the $\mathbb{B}_{\Phi}$ frame the interval is $-(q'_t)^2+q_x^2+q_y^2+q_z^2$: one minus, the square of the one $i$ of $Q_t=iq'_t$, which is $i^2=-1$ on the time slot. The minus is the $i$ squared, and no metric is written in either frame. The weight is not the negative of a metric: it records the square of each unit, and it is the same in both frames. The letter $\eta$ is never the metric.
-9. **The word *signature* is not used, and the metric has no signature to carry.** There is one metric, $\delta_{\mu\nu}=(1,1,1,1)$, its four coefficients are $+1$, and an object with four equal coefficients has nothing to sign. The signs a reader meets belong to the coordinate, $i^2=-1$ in $Q_t=iq'_t$, and to the plain weight $\varepsilon$ of the product; neither is carried by the metric. What is counted is named directly. The **inertia** of a form is the triple $(n,m,r)$ of its positive, negative and null directions, and the integer $\sigma=n-m$ is the **excess** of the positive over the negative directions. A metric, an interval and a norm therefore take no such word at all, and a sentence that needs one is a sentence that has attached a count to the wrong object.
+8. **The interval is a norm, not a metric.** The interval of an element is squared by multiplying it by its conjugate, $\langle\tilde X\rangle_\natural=\tilde X\tilde X^\natural$. In the $\mathbb{B}$ frame this is the plain sum $\sum_\mu Q_\mu^2$, with every coefficient $+1$. In the $\mathbb{B}_{\Phi}$ frame the interval is $-(q'_t)^2+q_x^2+q_y^2+q_z^2$: one minus, the square of the one $i$ of $Q_t=iq'_t$, which is $i^2=-1$ on the time slot. The minus is the $i$ squared, and no metric is written in either frame.
 
 **The plain weight is not a metric.** $\varepsilon=(1,-1,-1,-1)$ follows from the multiplication of the units, $\mathrm{Sc}(e_t^2)=+1$ and $\mathrm{Sc}(\vec e_k^2)=-1$. It belongs to the product, it is the same in both frames, and no frame changes it or raises it.
 
@@ -144,7 +143,7 @@ The metric is one, and it is the tuple of the interval in the $Q$'s: $\delta_{\m
 
 **The Clifford map carries the directions, not a basis.** It sends the four directions of a frame into $M_4(\mathbb{C})$; its image is four-dimensional and not closed, and its products leave it. It is a dictionary for the physics literature, not a map of $\mathbb{B}$: the framework studies physics by the change of frame, $\mathbb{B}$ in the general case and the real frame of $\mathbb{B}_{\Phi}$ in the material case. The base change is the substitution $Q_t=ix_0$, written once, and the interval is read in the new coordinate after it.
 
-**The word is not used, and there is nothing for it to name.** The one metric has four coefficients $+1$; a count of directions is the **inertia** $(n,m,r)$ of a form, and the single integer is the **excess** $\sigma=n-m$.
+**A count of directions is named directly.** The **inertia** of a form is the triple $(n,m,r)$ of its positive, negative and null directions, and $\sigma=n-m$ is its **excess**. No metric, interval or norm carries either.
 
 ## Summary of Notation
 

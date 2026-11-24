@@ -197,7 +197,7 @@ $$
 \tilde q' = q'_t\,e_t + q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z \in \mathbb{B}_{H}.
 $$
 
-The prime marks the second glyph and the split is uniform: $\tilde q$ takes the unprimed parameters and $\tilde q'$ the primed ones.
+The split is uniform: $\tilde q$ takes the unprimed parameters and $\tilde q'$ the primed ones (§*Index and Notation Conventions*, §*Marks That Are Not Indices*).
 
 ### The Hermitian and Anti-Hermitian Subspaces
 

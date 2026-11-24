@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This article is the tenth and last of the conventions articles of the mathematical corpus. It gathers the eight glyphs that the corpus spends once, together with the glyph that every other scalar takes, so that a reader who meets a scalar anywhere in the corpus finds the rule in one place. Five of them were fixed in the first statement of the rule and are repeated here unchanged: the angle, the scale, the wave number, the wavelength and the eigenvalue. Three were added when the same rule was read on the glyphs that a reader meets most often and least uniformly: the scalar imaginary and the two sector letters.
+This article is the tenth and last of the conventions articles of the mathematical corpus. It gathers the eight glyphs that the corpus spends once, together with the glyph that every other scalar takes, so that a reader who meets a scalar anywhere in the corpus finds the rule in one place.
 
 The letters are fixed with the base. *Algebra and Element Conventions* states the groups, rings and operations, the base and its units, the element and its coefficients, the remarkable subspaces and the conjugations, and leaves the scalars that are not elements to this article. Nothing here is new: the article is a summary, restated where a reader can find it without searching a long article for it, and it adds no glyph.
 
-A convention is not a description. Nothing in the algebra forces $\theta$ rather than another letter for an angle; what is not free is that one letter has one sense in one article. The corpus is being brought to the rule, so a spectral article that writes $\lambda$ for the eigenvalue, roughly $21\,000$ occurrences against $1\,500$ of $\eta$, is read here as the wavelength, and the older usage is named rather than hidden.
+A convention is not a description. Nothing in the algebra forces $\theta$ rather than another letter for an angle; what is not free is that one letter has one sense in one article.
 
 ## The Reserved Letters
 
@@ -24,15 +24,15 @@ A convention is not a description. Nothing in the algebra forces $\theta$ rather
 
 ### Scales: $\varrho$
 
-**The glyph $\varrho$ carries a scale and nothing else.** A polar decomposition writes an element as a positive real scale times a unit element, $\tilde\Xi=\varrho\,\tilde u$ with $\varrho=\lVert\tilde\Xi\rVert\ge0$ and $\lVert\tilde u\rVert=1$, and the amplitude of a wave is the same letter read as a magnitude. A subscript names which scale: $\varrho_{\mathrm{num}}$ the number density of a fluid, $\varrho_{\mathrm{chg}}$ the charge density, $\varrho_{\mathrm{ifm}}$ the coefficient of an indefinite form. The letter never carries an angle, a wave number, a wavelength or an eigenvalue.
+**The glyph $\varrho$ carries a scale and nothing else.** A polar decomposition writes an element as a positive real scale times a unit element, $\tilde\Xi=\varrho\,\tilde u$ with $\varrho=\lVert\tilde\Xi\rVert\ge0$ and $\lVert\tilde u\rVert=1$, and the amplitude of a wave is the same letter read as a magnitude. A subscript names which scale: $\varrho_{\mathrm{num}}$ a number density, $\varrho_{\mathrm{scl}}$ a scale factor, $\varrho_{\mathrm{ifm}}$ the coefficient of an indefinite form. The letter never carries an angle, a wave number, a wavelength or an eigenvalue.
 
 ### Wavenumbers: $\nu$
 
-**The glyph $\nu$ carries a wave number and nothing else.** The wave number is the number of turns per unit length, $\nu=k/2\pi=1/\lambda$, and a particle has three of them, $\nu_m$, $\nu_{\Phi}$ and $\nu_t^{\prime}$. The letter is never an index, because the space index is $k$; never a frequency in hertz, which is $f$ or $\omega$; and never a mass.
+**The glyph $\nu$ carries a wave number and nothing else.** The wave number is the number of turns per unit length, $\nu=k/2\pi=1/\lambda$, and an element has three of them, $\nu_m$, $\nu_{\Phi}$ and $\nu_t^{\prime}$. The letter is never an index, because the space index is $k$; never a frequency in hertz, which is $f$ or $\omega$; and never a mass.
 
 ### Wavelengths: $\lambda$
 
-**The glyph $\lambda$ carries a wavelength and nothing else.** It is the reciprocal of the wave number, $\lambda=1/\nu$, written $\lambda_m$, $\lambda_{\Phi}$ and $\lambda_t$ for the three of a particle. The letter never carries an eigenvalue, a coupling, a scale factor or a parameter of a family; those are $\eta$, $\digamma_{\mathrm{qtc}}$, $\digamma_{\mathrm{scl}}$ and $\digamma_{\mathrm{prm}}$.
+**The glyph $\lambda$ carries a wavelength and nothing else.** It is the reciprocal of the wave number, $\lambda=1/\nu$, written $\lambda_m$, $\lambda_{\Phi}$ and $\lambda_t$ for the three of an element. The letter never carries an eigenvalue, a coupling, a scale factor or a parameter of a family; those are $\eta$, $\digamma_{\mathrm{qtc}}$, $\digamma_{\mathrm{scl}}$ and $\digamma_{\mathrm{prm}}$.
 
 ### Eigenvalues: $\eta$
 
@@ -84,7 +84,7 @@ A convention is not a description. Nothing in the algebra forces $\theta$ rather
 
 ## Summary
 
-Eight glyphs carry eight roles, and each is spent once. An angle is $\theta$, real, with a subscript naming which angle it is, the $i$ of a rotation sitting in the exponential; a scale is $\varrho$, the positive real factor of a polar decomposition and the amplitude of a wave; a wave number is $\nu=k/2\pi=1/\lambda$, with three to a particle; a wavelength is $\lambda=1/\nu$, with three to a particle; and an eigenvalue is $\eta$, a root of $\eta^{2}-2Q_t\eta+N=0$.
+Eight glyphs carry eight roles, and each is spent once. An angle is $\theta$, real, with a subscript naming which angle it is, the $i$ of a rotation sitting in the exponential; a scale is $\varrho$, the positive real factor of a polar decomposition and the amplitude of a wave; a wave number is $\nu=k/2\pi=1/\lambda$, with three to an element; a wavelength is $\lambda=1/\nu$, with three to an element; and an eigenvalue is $\eta$, a root of $\eta^{2}-2Q_t\eta+N=0$.
 
 Three more glyphs carry a role each. The scalar imaginary is $i$, and the space index is the dotless $\imath$; the material and informational sectors are the uppercase $\Phi$ and $\Psi$, and the lowercase $\phi$, $\varphi$ and $\psi$ are forbidden.
 
@@ -100,8 +100,8 @@ Three families carry the elements, and each is spent once. The generic element i
 |---|---|
 | $\theta$ | The angle, real; a purely imaginary angle is written $i\theta$ at the point of use, and the $\theta$ inside stays real (§*The Reserved Letters*) |
 | $\varrho$ | The scale of a polar decomposition, $\tilde\Xi=\varrho\,\tilde u$ with $\varrho\ge0$, and the amplitude of a wave (§*The Reserved Letters*) |
-| $\nu$; $\nu_m$, $\nu_{\Phi}$, $\nu_t^{\prime}$ | The wave number, $\nu=k/2\pi=1/\lambda$; the three of a particle; never an index and never a frequency in hertz (§*The Reserved Letters*) |
-| $\lambda$; $\lambda_m$, $\lambda_{\Phi}$, $\lambda_t$ | The wavelength, $\lambda=1/\nu$; the three of a particle; never an eigenvalue or a coupling (§*The Reserved Letters*) |
+| $\nu$; $\nu_m$, $\nu_{\Phi}$, $\nu_t^{\prime}$ | The wave number, $\nu=k/2\pi=1/\lambda$; the three of an element; never an index and never a frequency in hertz (§*The Reserved Letters*) |
+| $\lambda$; $\lambda_m$, $\lambda_{\Phi}$, $\lambda_t$ | The wavelength, $\lambda=1/\nu$; the three of an element; never an eigenvalue or a coupling (§*The Reserved Letters*) |
 | $\eta$; $\eta_\pm$, $\eta_{1,2}$, $\eta_i$ | The eigenvalue, a root of $\eta^{2}-2Q_t\eta+N=0$; never an index and never a scale (§*The Reserved Letters*) |
 | $i$ | The scalar imaginary, $i^{2}=-1$, central in $\mathbb{B}$; the space index is the dotless $\imath$ and the second one $\jmath$ (§*Scalar Imaginary*) |
 | $\Phi$, $\Psi$ | The material and the informational sector — $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$, $\tilde Q_{\Phi}$, $\tilde Q_{\Psi}$; no lowercase form exists, and $\phi$, $\varphi$ and $\psi$ are forbidden (§*Sectors*) |
