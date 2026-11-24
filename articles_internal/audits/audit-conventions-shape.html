@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Audit Conventions Shape — Biquaternion Universe</title>
-  <meta name="description" content="">
+  <title>Audit of the Shape of the Conventions Articles — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A measurement of the twenty conventions articles — the ten of the mathematical corpus and the ten of the physical corpus — as objects…">
   <link rel="stylesheet" href="../../assets/css/base.css">
   <link rel="stylesheet" href="../../assets/css/layout.css">
   <link rel="stylesheet" href="../../assets/css/article.css">
@@ -69,7 +69,635 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        
+        <h1 id="audit-of-the-shape-of-the-conventions-articles">Audit of the Shape of the Conventions Articles</h1>
+<p><em>What this file is.</em> A measurement of the twenty conventions articles — the ten of the mathematical corpus and the ten of the physical corpus — as objects of writing rather than as statements of convention. It measures size, growth, historical residue, physics inside the mathematics, duplication inside each set, and paragraph shape. Written 2026-11-24 on the working tree. No article was modified; this is the review pass that precedes any repair.</p>
+<p><em>The ruling this file now follows.</em> <strong>The two conventions sets are independent. There are no shared rules, no master article, and no cross-citation of a convention from one set to the other.</strong> Each set states its own conventions in full, in its own words, for its own reader. Every finding below is therefore read per set, and no repair may consist of replacing a statement by a pointer to the other corpus.</p>
+<p><em>Scope.</em> <code>articles_maths/*-conventions.md</code>, 10 files, 61 982 words, and <code>articles_physics/*-conventions.md</code>, 10 files, 77 929 words: 20 files, 7 548 lines, 139 911 words. The two menus <code>maths.md</code> and <code>physics.md</code> both declare ten conventions articles, and the ten declared are the ten measured; nothing is missing and nothing extra is included.</p>
+<p><em>Headline.</em> <strong>The twenty conventions articles hold 1.26% of the corpus's words, and their mean length is 2.1 times the corpus mean and 2.5 times the median. Eight of the twenty sit among the seventy longest articles of 3 312. The mathematical set spends 12.3% of its prose on physical apparatus that its own scope excludes. In both sets the file has grown by restatement and by change history rather than by accretion of new rules.</strong> On the ruling above, the duplication between the two sets is not a defect and is not repaired; it is recorded once, in Finding 2, because it fixes the price of the ruling.</p>
+<p>The rest of this file is the measurement behind that sentence, sorted by cause, then the strategy.</p>
+<h2 id="the-twenty-articles">The Twenty Articles</h2>
+<p>Word counts are whitespace tokens of the whole file. The rank is the position of the article among the 3 312 files of the two corpora, first being longest. <em>Sec</em> counts every <code>##</code> section including Summary, Summary of Notation and Further Reading. <em>Rows</em> counts Markdown table lines, <em>display</em> counts the delimiter lines of display math, so half that number is the count of blocks.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corpus</th>
+<th>article</th>
+<th style="text-align: right;">words</th>
+<th style="text-align: right;">rank</th>
+<th style="text-align: right;">sec</th>
+<th style="text-align: right;">rows</th>
+<th style="text-align: right;">display</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>maths</td>
+<td><em>Algebra and Element Conventions</em></td>
+<td style="text-align: right;">9 271</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">99</td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><em>Product and Form Conventions</em></td>
+<td style="text-align: right;">3 131</td>
+<td style="text-align: right;">1 415</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><em>Norm and Unitary Conventions</em></td>
+<td style="text-align: right;">3 646</td>
+<td style="text-align: right;">1 118</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><em>Special Element and Peirce Conventions</em></td>
+<td style="text-align: right;">6 018</td>
+<td style="text-align: right;">279</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><em>Frame and Metric Conventions</em></td>
+<td style="text-align: right;">3 890</td>
+<td style="text-align: right;">972</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><em>Matrix Representations Conventions</em></td>
+<td style="text-align: right;">9 583</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">228</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><em>Operator and Calculus Conventions</em></td>
+<td style="text-align: right;">9 363</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">82</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><em>Operator Family Conventions</em></td>
+<td style="text-align: right;">4 561</td>
+<td style="text-align: right;">652</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><em>Index and Notation Conventions</em></td>
+<td style="text-align: right;">9 754</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">179</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><em>Reserved Letters Conventions</em></td>
+<td style="text-align: right;">2 765</td>
+<td style="text-align: right;">1 669</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><em>Algebra and Element Conventions</em></td>
+<td style="text-align: right;">9 685</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">52</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><em>Product and Form Conventions</em></td>
+<td style="text-align: right;">4 772</td>
+<td style="text-align: right;">576</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">58</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><em>Norm and Pairing Conventions</em></td>
+<td style="text-align: right;">4 881</td>
+<td style="text-align: right;">538</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><em>Special Element Conventions</em></td>
+<td style="text-align: right;">4 864</td>
+<td style="text-align: right;">542</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><em>Frame and Metric Conventions</em></td>
+<td style="text-align: right;">4 006</td>
+<td style="text-align: right;">896</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><em>Matrix Representations Conventions</em></td>
+<td style="text-align: right;">13 379</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">252</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><em>Operator and Calculus Conventions</em></td>
+<td style="text-align: right;">11 658</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">96</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><em>Index and Notation Conventions</em></td>
+<td style="text-align: right;">5 345</td>
+<td style="text-align: right;">411</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><em>Physics Units and Common Elements Conventions</em></td>
+<td style="text-align: right;">15 582</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">117</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><em>Reserved Letters Conventions</em></td>
+<td style="text-align: right;">3 757</td>
+<td style="text-align: right;">1 053</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table></div>
+<p>The corpus as a whole holds 11 132 681 words in 3 312 files. The median article is 2 786 words long, the mean 3 361, the ninetieth percentile 5 779. The conventions mean is 6 996.</p>
+<h2 id="finding-1-the-conventions-are-the-longest-prose-in-the-corpus">Finding 1 — The Conventions Are the Longest Prose in the Corpus</h2>
+<p>A convention article is read once and consulted often. The corpus has written it as the longest thing it has.</p>
+<p>Nine of the twenty exceed the ninetieth percentile of the corpus. Three enter the top twenty-five: <em>Physics Units and Common Elements Conventions</em> is the seventh longest article of 3 312, the physical <em>Matrix Representations Conventions</em> the fourteenth, the physical <em>Operator and Calculus Conventions</em> the twenty-fourth. Their mathematical counterparts rank 52 (<em>Index and Notation</em>), 59 (<em>Matrix Representations</em>) and 62 (<em>Operator and Calculus</em>).</p>
+<p>The growth is concentrated in the middle of the file. <em>Physics Units and Common Elements Conventions</em> has six <code>##</code> sections and 15 582 words: 2 600 words per section. <em>Index and Notation Conventions</em> in mathematics has 179 table rows in one article, more than any other file measured here.</p>
+<p>Length alone does not prove bloat; a convention can be long and dense. The remaining findings are what the length is made of.</p>
+<h2 id="finding-2-duplication-inside-each-set">Finding 2 — Duplication inside Each Set</h2>
+<p>The two sets are independent by ruling, so their agreement is not a defect. It is recorded once here, with one number, and then dropped: the audit does not ask for reconciliation and no repair below touches it.</p>
+<p>Recorded and closed: 157 paragraphs of more than 120 characters are identical in two or more of the twenty files, and 154 of them are shared by the mathematical and the physical article of one pair. <em>Frame and Metric Conventions</em> is the extreme case, with 39 of its 43 mathematical paragraphs recurring in the physical article under the same ten headings. Under the ruling this coincidence is the expected result of two sets that name the same objects, and it is left alone.</p>
+<p>What remains a defect is duplication <strong>inside</strong> one set, because independence gives each set one statement per rule and no second article to defer to.</p>
+<p>One paragraph is copied five times in the mathematical set:</p>
+<blockquote>
+<p><strong>No contravariant index appears in this article, and none appears anywhere in the series.</strong> The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice.</p>
+</blockquote>
+<p>It appears in <em>Algebra and Element</em>, <em>Product and Form</em>, <em>Norm and Unitary</em>, <em>Special Element and Peirce</em> and <em>Operator Family Conventions</em>, which is five statements of a rule that <em>Index and Notation Conventions</em> owns. The physical set has the same five copies, in its own five articles.</p>
+<p>Each set therefore has one rule stated six times, and the six statements must agree by hand. That is the internal cost of independence, and it is the only duplication the strategy below repairs.</p>
+<h2 id="finding-3-change-history-written-into-the-rule">Finding 3 — Change History Written into the Rule</h2>
+<p>A convention states a rule. A change log states what a rule used to be. The corpus has put the second into the first, in four places, and the first of them is a whole section.</p>
+<p><strong>1. The legacy sections.</strong> Three articles carry a section titled <em>The Legacy Pauli Gamma Formulation</em>:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">lines</th>
+<th style="text-align: right;">words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Matrix Representations Conventions</em> (maths)</td>
+<td style="text-align: right;">751–844</td>
+<td style="text-align: right;">702</td>
+</tr>
+<tr>
+<td><em>Matrix Representations Conventions</em> (physics)</td>
+<td style="text-align: right;">842–965</td>
+<td style="text-align: right;">1 364</td>
+</tr>
+<tr>
+<td><em>Operator and Calculus Conventions</em> (physics)</td>
+<td style="text-align: right;">577–602</td>
+<td style="text-align: right;">347</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each opens by declaring its own subject obsolete — "The Pauli and gamma formulation is legacy" — and then prints the five gamma arrays in three frames, the sixteen products, the comparison map, the contractions and the trace identities. The mathematical version declares that gamma matrices are not used, and then writes them in 228 display blocks, a quarter of the article's lines.</p>
+<p>The constraint on repairing this is severe and must be stated before any suggestion: <strong>91 files cite §<em>The Legacy Pauli Gamma Formulation</em> by name</strong>, 26 in the mathematical corpus and 65 in the physical one. The section is the designated house of the arrays, and both corpora have been told they can send readers there. It cannot be deleted. It can be shortened in place, in each set separately: the ruling forbids moving the arrays into one article that both sets cite.</p>
+<p><strong>2. The migration of a rule not yet done.</strong> <em>Reserved Letters Conventions</em> (maths), line 9:</p>
+<blockquote>
+<p>The corpus is being brought to the rule, so a spectral article that writes $\lambda$ for the eigenvalue, roughly $21\,000$ occurrences against $1\,500$ of $\eta$, is read here as the wavelength, and the older usage is named rather than hidden.</p>
+</blockquote>
+<p>That is a progress report on an editorial migration, with a count of the files still to be fixed. It will be false as soon as the migration ends, and it is not a convention.</p>
+<p><strong>3. A retirement table.</strong> <em>Index and Notation Conventions</em> (physics), line 108:</p>
+<blockquote>
+<p><strong>What the letter η used to carry.</strong> The letter η is retired from every scalar sense and kept for the spectrum.</p>
+</blockquote>
+<p>followed by a four-row table of replacements. Three of the four rows state a current rule; the heading is the only historical thing in them.</p>
+<p><strong>4. A rule against a word.</strong> <em>Frame and Metric Conventions</em> (maths and physics), rule 9 of nine:</p>
+<blockquote>
+<p><strong>The word <em>signature</em> is not used</strong>, and the metric has no signature to carry.</p>
+</blockquote>
+<p>A rule that exists because a word was once used is a change-log entry. The content behind it — the inertia $(n,m,r)$ and the excess $\sigma=n-m$ — is a convention and survives; the prohibition is history.</p>
+<p>Smaller traces of the same kind, each removable without loss of a rule:</p>
+<ul>
+<li><em>Matrix Representations Conventions</em> (maths), line 11: "<strong>The order renames nothing.</strong> The corpus calls the Peirce frame the canonical frame, and this article keeps the name". A reader who never knew another name does not need the reassurance.</li>
+<li><em>Index and Notation Conventions</em> (maths), line 134: "the norm the earlier notation called the Frobenius or the Hilbert–Schmidt norm … and no longer as a bar". Two names that "survive as names of the same object and never as symbols" are names the reader will never meet.</li>
+<li><em>Matrix Representations Conventions</em>, §<em>The Rule on Pauli and Gamma Matrices</em>: "A reference to a legacy section stays, and so does a historical remark inside one." That is a rule permitting history, written in a conventions article.</li>
+</ul>
+<h2 id="finding-4-physics-inside-the-mathematics">Finding 4 — Physics inside the Mathematics</h2>
+<p>The mathematical corpus excludes physics. Its menu says so in the entry of <em>Introduction to the Mathematical Corpus</em>, and <em>Reserved Letters Conventions</em> restates it: "This corpus excludes physics, so $c$, $\tau$ and $m$ keep the senses they have in mathematics."</p>
+<p>The measure here is generous to the corpus: a paragraph counts as touching physical apparatus if it contains one of a short list of physical nouns and adjectives — mass, charge, gauge, Maxwell, Dirac, Poynting, particle, photon, electron, quark, neutrino, energy, momentum, Lagrangian, field strength, current, Coulomb, permeability, permittivity, Planck, volt, ampere, kelvin, atom, hydrogen, experiment. One incidental word puts the whole paragraph in the count.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>mathematical article</th>
+<th style="text-align: right;">paragraphs</th>
+<th style="text-align: right;">words in them</th>
+<th style="text-align: right;">share of the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Index and Notation Conventions</em></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">3 309</td>
+<td style="text-align: right;"><strong>34.1%</strong></td>
+</tr>
+<tr>
+<td><em>Reserved Letters Conventions</em></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">678</td>
+<td style="text-align: right;"><strong>25.0%</strong></td>
+</tr>
+<tr>
+<td><em>Special Element and Peirce Conventions</em></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">1 220</td>
+<td style="text-align: right;"><strong>20.5%</strong></td>
+</tr>
+<tr>
+<td><em>Operator and Calculus Conventions</em></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">1 232</td>
+<td style="text-align: right;"><strong>13.3%</strong></td>
+</tr>
+<tr>
+<td><em>Matrix Representations Conventions</em></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">416</td>
+<td style="text-align: right;">4.4%</td>
+</tr>
+<tr>
+<td><em>Norm and Unitary Conventions</em></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">129</td>
+<td style="text-align: right;">3.6%</td>
+</tr>
+<tr>
+<td><em>Algebra and Element Conventions</em></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">289</td>
+<td style="text-align: right;">3.1%</td>
+</tr>
+<tr>
+<td><em>Frame and Metric Conventions</em></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: right;">2.7%</td>
+</tr>
+<tr>
+<td><em>Operator Family Conventions</em></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">2.7%</td>
+</tr>
+<tr>
+<td><em>Product and Form Conventions</em></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">2.4%</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">7 569</td>
+<td style="text-align: right;"><strong>12.3%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The share is an upper bound, because a paragraph that mentions a mass and otherwise states a glyph rule is not mostly physical. The itemisation below is the accurate measure, and each item is a sentence or a section that would be deleted, not a word.</p>
+<p><strong>Physical apparatus, by article.</strong></p>
+<ul>
+<li><em>Index and Notation Conventions</em> (maths) carries the labels $\mathrm{fop}$, $\mathrm{pau}$, $\mathrm{sp}$, $\mathrm{kin}$, $\mathrm{can}$, $\mathrm{exp}$, $\mathrm{lor}$ in its two- and three-letter tables: the Fock operator, the Pauli reading, the Dirac field, kinetic energy and momentum, the canonical energy–momentum tensor, the experimental value, the Lorentz object. It also carries <em>motional electric field</em>, <em>observed frequency</em>, <em>orbital generators</em> and <em>decay</em>. Of the 115 label rows, 18 name a physical object.</li>
+<li><em>Operator and Calculus Conventions</em> (maths) states the Dirac pair with a mass $m$, the Maxwell equation $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J$ with $\tilde J=ic\rho\,e_t+\vec J$, the field strength and the Poynting flux. It spends 1 853 words in four subsections — <em>The Plain Bilinear Product, Its Form and Its Norm</em> and its three companions — restating the products and the norms of two other articles.</li>
+<li><em>Special Element and Peirce Conventions</em> (maths) uses <em>gauge</em> eleven times, builds the Peirce example "With a star, $\lvert t_i\rvert=1$ and the gauge is a torus of phases", and carries the Dirac spinor.</li>
+<li><em>Reserved Letters Conventions</em> (maths) illustrates $\nu$ and $\lambda$ with "a particle has three of them", $\varrho$ with "the charge density", and the fallback $\digamma$ with a coupling.</li>
+<li><em>Frame and Metric Conventions</em> (maths), lines 5 and 139, define the subject with a physics word: "a <em>frame</em> means a spacetime frame". The object defined is a choice of coordinates on the biquaternion space; the word adds a subject the corpus excludes.</li>
+</ul>
+<p><strong>Two inversions, and they are now the sharpest defect in the file.</strong> The mathematics does not merely borrow physical vocabulary. In two places it defers to the physical corpus for its own rule, which independence forbids outright.</p>
+<ul>
+<li><em>Index and Notation Conventions</em> (maths), line 55, ends: "The rule is the one of the physical corpus (<em>Operator and Calculus Conventions</em>, §<em>Conventions for Derivation</em>)." The mathematical article has no <em>Conventions for Derivation</em> section; the reference is to the physical article of that name. A mathematical rule is justified by a physical statement.</li>
+<li><em>Matrix Representations Conventions</em> (maths), §<em>Further Reading</em>, line 958, sends the reader to <code>articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused</code> "for the reasons the AXF matrices replace the Pauli and gamma matrices". The rule the mathematical article states is argued only in a physical article.</li>
+</ul>
+<p>Both are links from the mathematical corpus into the physical one. Each is a place where a reader who is told the mathematics excludes physics is sent to physics for a mathematical convention, and each contradicts the ruling that no set defers to the other. They are the first two edits of the mathematical worklist.</p>
+<p><strong>What is not leakage.</strong> The shared alphabet is not the problem. A scale $\varrho$, a wave number $\nu$, an amplitude, a phase, an eigenvalue, a spinor and a spin are mathematical objects that physics also uses. The test that separates the two is this: <em>does the sentence need the physical world to be true, or only the algebra?</em> "A particle has three wave numbers" needs the physical world; "an element has three wave numbers, $\nu_m$, $\nu_\Phi$ and $\nu_t'$" does not. The first is leakage, the second is a convention.</p>
+<h2 id="finding-5-editorial-policy-inside-a-notation-article">Finding 5 — Editorial Policy inside a Notation Article</h2>
+<p><em>Index and Notation Conventions</em> (maths) has a section <em>Conventions of the Corpus Itself</em>, lines 390–415, 1 134 words, whose subject is not notation:</p>
+<ul>
+<li><strong>The menus</strong>, and the meaning of the <code>+</code> marker of a planned article;</li>
+<li><strong>The groups inside a category</strong>, and the four groups <code>- Theory</code>, <code>- Operator Theory</code>, <code>- * Theory</code>, <code>- * Operator Theory</code>;</li>
+<li><strong>The two involutions</strong>, and why they need not coincide;</li>
+<li><strong>The order and the fill rule</strong> of a category;</li>
+<li><strong>The category names and numbers</strong>;</li>
+<li><strong>The article files</strong>, and the slug rule;</li>
+<li><strong>The article skeleton</strong>, and its three closing sections;</li>
+<li><strong>Cross-references and boundaries</strong>, the "introduce once, cite afterwards" rule;</li>
+<li><strong>The word "interval"</strong>, and its two senses;</li>
+<li><strong>The letter $\iota$ is not used in Part VI.</strong></li>
+</ul>
+<p>Each is a rule of the corpus, and each is already stated elsewhere: in <code>maths.md</code> for the groups and the menus, in <code>PLAN.md</code> for the skeleton and the writing mode, in the article template for the closing sections. The section is a fourth copy of the editorial policy, kept in the one article whose subject is glyphs.</p>
+<p>The same article also carries a <em>LaTeX and Typesetting</em> section of 270 words, which repeats the LaTeX bullet list of <code>PLAN.md</code> — no <code>q'_0^2</code>, no <code>$…$</code> across a line break, four-space indent inside a list, <code>\dddot</code> and <code>\slashed</code> as template macros.</p>
+<p>Two of the ten are not duplicated anywhere and are worth keeping somewhere: <em>the word "interval" has two senses</em> and <em>the letter $\iota$ is not used in Part VI</em>. They belong where the corpus keeps its other rules, not in a notation article.</p>
+<h2 id="finding-6-restatement-on-top-of-statement">Finding 6 — Restatement on Top of Statement</h2>
+<p>Each article closes with <em>Summary</em> and <em>Summary of Notation</em>. Both are legitimate. The question is whether they restate or copy.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">words in Summary of Notation</th>
+<th style="text-align: right;">share of the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Algebra and Element Conventions</em> (maths)</td>
+<td style="text-align: right;">1 670</td>
+<td style="text-align: right;">18.0%</td>
+</tr>
+<tr>
+<td><em>Reserved Letters Conventions</em> (maths)</td>
+<td style="text-align: right;">318</td>
+<td style="text-align: right;">11.5%</td>
+</tr>
+<tr>
+<td><em>Reserved Letters Conventions</em> (physics)</td>
+<td style="text-align: right;">437</td>
+<td style="text-align: right;">11.6%</td>
+</tr>
+<tr>
+<td><em>Operator Family Conventions</em> (maths)</td>
+<td style="text-align: right;">333</td>
+<td style="text-align: right;">7.3%</td>
+</tr>
+<tr>
+<td><em>Product and Form Conventions</em> (maths)</td>
+<td style="text-align: right;">216</td>
+<td style="text-align: right;">6.9%</td>
+</tr>
+</tbody>
+</table></div>
+<p>The mathematical <em>Algebra and Element Conventions</em> spends 1 670 words on a 115-row table of every glyph in the series. The same inventory is tabulated again in <em>Index and Notation Conventions</em>, in its body table and again in its own Summary of Notation, where $\mathrm{fn}$, $\mathrm{fop}$, $\mathrm{opp}$ and $\mathrm{rgs}$ each appear twice by design. Three tables in the mathematical corpus state the same inventory.</p>
+<p><em>Frame and Metric Conventions</em> states its content three times: in §<em>The Rules</em>, as nine numbered rules; in §<em>Summary</em>, as four paragraphs; and again in the Summary of Notation. The rules section is 900 words and the summary 300, and the summary adds nothing the rules do not say.</p>
+<p><em>Operator and Calculus Conventions</em> (maths) spends 1 853 words, lines 252–416, restating the four products and their forms and norms, which <em>Product and Form Conventions</em> and <em>Norm and Unitary Conventions</em> own. The four subsections carry the same headings as the owning articles and are a fifth of the article.</p>
+<h2 id="finding-7-paragraphs-and-tables-that-resist-reading">Finding 7 — Paragraphs and Tables That Resist Reading</h2>
+<p>The corpus asks for short paragraphs, one idea each. Counted on prose paragraphs only, with tables and display math excluded, the worst offenders are these:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">prose paragraphs</th>
+<th style="text-align: right;">longest (chars)</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">over 1 000 chars</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Matrix Representations Conventions</em> (physics)</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">1 833</td>
+<td style="text-align: right;">764</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><em>Matrix Representations Conventions</em> (maths)</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">2 412</td>
+<td style="text-align: right;">751</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><em>Algebra and Element Conventions</em> (maths)</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">1 844</td>
+<td style="text-align: right;">469</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><em>Operator and Calculus Conventions</em> (maths)</td>
+<td style="text-align: right;">161</td>
+<td style="text-align: right;">1 861</td>
+<td style="text-align: right;">385</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><em>Operator and Calculus Conventions</em> (physics)</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">1 861</td>
+<td style="text-align: right;">384</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><em>Product and Form Conventions</em> (maths)</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">1 675</td>
+<td style="text-align: right;">367</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><em>Index and Notation Conventions</em> (maths)</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">2 663</td>
+<td style="text-align: right;">626</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><em>Frame and Metric Conventions</em> (maths)</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">3 134</td>
+<td style="text-align: right;">555</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table></div>
+<p>A 2 000-character paragraph is about 320 words: four ideas and a parenthesis. The worst paragraph of <em>Frame and Metric Conventions</em> is 3 134 characters, about eight ideas in one block. These are not isolated cases; there are 78 paragraphs over 1 000 characters in the twenty files.</p>
+<p>The display math tells the same story in the matrix article: 228 delimiter lines of display math in 966 lines, 23.6% of all lines, in 114 blocks, most of them a $4\times4$ array printed in full. The physical matrix article prints 252 delimiter lines.</p>
+<p><strong>A defect the measure found.</strong> <em>Index and Notation Conventions</em> (maths), line 459, is one table row glued to a fragment of itself:</p>
+<blockquote>
+<p>| $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$ | The six codes … on the same letters |, $_{\mathrm{prm}}$, $_{\mathrm{dfc}}$, $_{\mathrm{obf}}$, $_{\mathrm{adg}}$ | The six codes … on the same letters |</p>
+</blockquote>
+<p>The row is a copy-paste that was never closed. It is the clearest single proof that the article has grown by duplication rather than by composition: an insertion left the tail of the old row behind.</p>
+<h2 id="finding-8-content-held-in-the-wrong-article">Finding 8 — Content Held in the Wrong Article</h2>
+<p>Six pieces of text sit in the wrong one of the ten articles. Each is a move, not a cut, so the ruling on independence is untouched: no piece crosses between the two sets.</p>
+<p><strong>1. The marks that are not derivatives.</strong> <em>Operator and Calculus Conventions</em>, §<em>Conventions for Derivation</em>, lines 149–155, holds four rules that name a <strong>mark</strong> and no derivative: the prime marks the imaginary coordinate; the bar on an index marks the conjugate spinor; the underline is the scope mark of geometric calculus; $\partial_{\mathrm{nil}}$ is a construction written in the caret. <em>Index and Notation Conventions</em> is the article of the marks, and it states none of the four. Move the four there, and leave in §<em>Conventions for Derivation</em> the rules that are about differentiation: no dot, the fraction, the binding to the whole argument.</p>
+<p><strong>2. The prime, stated three times and never where it belongs.</strong> It is stated at <em>Algebra and Element Conventions</em> line 200 for the primed element, at <em>Operator and Calculus Conventions</em> line 149 for the imaginary coordinate, and again in that article's Summary at line 397. It is stated zero times in <em>Index and Notation</em>. One statement, in the marks article, is the whole rule; the two other sites become uses of it.</p>
+<p><strong>3. $h_{\mathrm{def}}$ contradicts <em>Reserved Letters Conventions</em>.</strong> <em>Index and Notation</em> line 396 fixes the deformation parameter as $h_{\mathrm{def}}$. <em>Reserved Letters</em> fixes eight glyphs and says that a scalar which is none of the eight takes $\digamma$ with a subscript naming its sense. $h_{\mathrm{def}}$ is a ninth glyph that takes no $\digamma$, so one of the two rules is wrong and the two articles never meet. Either the glyph is added to the eight, or it is written $\digamma_{\mathrm{def}}$. <strong>This is a contradiction inside the mathematical set, and it is the only one found.</strong></p>
+<p><strong>4. The Planck rule was a cross-set duplicate, and the check settles it.</strong> <em>Physics Units and Common Elements Conventions</em> holds the Planck constant rule, and so did the mathematical <em>Index and Notation</em>. The copy in the mathematical set is removed in pass four. The independence ruling did not require the removal — a duplicate would have been tolerable — but the exclusion of physics from the mathematical set did.</p>
+<p><strong>5. The gamma arrays: premise checked, and it fails.</strong> This item was written on the assumption that <em>Frame and Metric Conventions</em> displays the four arrays. It displays none: <code>begin{pmatrix}</code> returns 0 hits in that file. It holds $\mathsf{K}(e_\mu)=\gamma_\mu$ and the anticommutator, which is the map, and the arrays are held once, in <em>Matrix Representations</em>. <strong>There is no duplication, and no move is needed.</strong> What the check did find in the same section is a sentence of change history — "Earlier versions called the five images the gamma frame" — now cut to the naming rule.</p>
+<p><strong>6. Two of the eight rules of <em>Frame and Metric</em> carried a duplicate tail, checked.</strong> The claim that three rules are "not frame rules" was too strong, and reading them settled it. Rule 5 (<em>the $i$ is in the coordinate or in the signs, never in the metric</em>) is one sentence and is the article's thesis. Rules 2 and 8 each ended with a sentence already stated twice elsewhere in the same article: rule 2 restated the one metric and the frame-free matrices, and rule 8 restated that the weight is not the negative of a metric, which is the paragraph at line 132. Those two tails are gone. <strong>All eight rules stand.</strong></p>
+<p><strong>What the moves cost and what they bought.</strong> All four surviving moves are word-neutral or nearly so: the set goes from 58 320 to 58 352 words, a growth of 32. That is the expected shape of this repair — a rule moved to the article of marks is rewritten as the canonical statement, and the article of origin keeps a pointer of one sentence. The gain is not words but one owner per rule.</p>
+<p><strong>What must not move.</strong> The two first-order equations stay in <em>Operator and Calculus Conventions</em>, because the symbol rule of that article is read off them. The gamma arrays stay in <em>Matrix Representations</em>, because the rule that the gamma index is low and the frame is bracketed is checked against them. The four product sections stay in <em>Operator and Calculus Conventions</em>, because no other article reads a product on the gradient.</p>
+<p><strong>Residual physics, for a decision rather than a move.</strong> <em>Operator and Calculus Conventions</em> §<em>The Two First-Order Equations and Their Symbol</em> still speaks of a field of mass $m$, of chiral parts, of the Klein–Gordon equation, of a plane wave, of a momentum and of a Green's function. The Maxwell equation and the Poynting flux are gone; this vocabulary remains. Two readings are possible. Either the section is algebraic — two linear equations in $\Psi_R$ and $\Psi_L$ with a real central parameter $m$ — and the words change and nothing moves, or the section is physical and belongs to the other set, which the independence ruling forbids. <strong>The first reading is the one consistent with the ruling, and it is a wording job, about 40 words.</strong></p>
+<h2 id="what-is-not-bloat">What Is Not Bloat</h2>
+<p>Four things must be named as innocent, or the remedy will remove them.</p>
+<p><strong>The reserved-letters articles.</strong> They are summaries by design, they say so in the introduction, and at 2 765 and 3 757 words they are near the corpus median. Their repetition of the eight and the eleven glyphs is the point of the article.</p>
+<p><strong>The tables that are the only statement of a rule.</strong> The twelve products, the six layer tables of the norms, the Peirce multiplication rule and the four adjoints exist nowhere else in the same form. A table of 60 rows carrying 60 distinct rules is not bloat. The 115-label index is different: it is an inventory, and an inventory can live in one place and be referenced.</p>
+<p><strong>The cross-references inside a set.</strong> An article that cites another article of its own set instead of restating it does what the corpus asks, and independence leaves that route open. What independence closes is the other direction, a citation from one set to the other. The problem is the reverse of both: 91 files cite one legacy section by name, so the three legacy headings stay wherever else their contents go.</p>
+<p><strong>The duplication between the two sets.</strong> It is the consequence of the ruling, not a fault. Two sets that name the same objects with the same alphabet will agree in about 154 paragraphs of 157, and the agreement is left as it is.</p>
+<h2 id="the-suggested-strategy">The Suggested Strategy</h2>
+<p>The ruling removes the largest saving the first version of this audit proposed. Under independence the physical set keeps its own full statement, so no article of it can be shortened by pointing at a mathematical one. The reduction falls from about 70 000 words to about 20 000, and the corpus keeps roughly 120 000 words of conventions. That is the price of the ruling, and it is paid deliberately.</p>
+<p>What remains is a list of authored edits inside each set. <strong>No scripted pass is proposed.</strong> Every item is a decision about a paragraph, taken in review mode, with the author's permission for each one, and reported as it is made.</p>
+<h3 id="the-mathematical-set-61-982-words">The mathematical set: 61 982 words</h3>
+<p>Ordered by words removed per decision.</p>
+<ol>
+<li><strong><em>Operator and Calculus Conventions</em>, 9 363 words.</strong> The worst offender, and the clearest breach of the exclusion. <strong>Premise checked 2026-11-24, and the first plan for this article was wrong.</strong></li>
+</ol>
+<p>The four subsections at lines 252–416, 1 853 words, do two things at once, and only one of them is duplication:</p>
+<ul>
+<li>They restate the general definitions of the four forms and their norms, which <em>Product and Form Conventions</em> §<em>The Form Convention</em> states in full, as $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ and its three companions. That part is duplication and goes.</li>
+<li>They read the four products on the gradient and record the result: divergence, gradient and curl in one object; the plain norm $-\partial^2/\partial {r'_t}^2-\Delta_\Phi$; the quaternionic norm $\Box_\Phi$; the Hermitian norm also $\Box_\Phi$; the Krein norm equal to the plain one, indefinite, of inertia $(1,3)$. <strong>No other article owns this</strong>, and the §<em>Summary</em> of the article depends on it. The plan to delete the block would have deleted a rule.</li>
+</ul>
+<p>So the edit is a compression, not a deletion: one section, the four readings kept, the general definitions dropped, the physics dropped.</p>
+<ul>
+<li>Keep, per product, the one line that says what the product gives on the gradient, and the operator each norm produces. Four rows become one table.</li>
+<li>Drop the restatement of $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ and the "norm is the form at its two equal arguments" sentences, which <em>Product and Form</em> and <em>Norm and Unitary</em> own.</li>
+<li>Drop the Maxwell equation $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J$ with $\tilde J=ic\rho\,e_t+\vec J$, the field strength and the Poynting flux. They are physical apparatus inside the mathematical set.</li>
+<li>Drop the kinetic density $\mathcal L_{\mathrm{kin}}$ and the reference to <em>Hamiltonian Field Theory in Biquaternionic Form</em>, for the same reason.</li>
+<li>The paragraph <em>A contraction is a form, never an index</em> is the sixth copy of the rule that <em>Index and Notation Conventions</em> owns. One sentence pointing at the owning section, in the same set.</li>
+<li>The paragraph <em>The rule is one rule on both slices</em> is the fifth copy. It goes.</li>
+<li><strong>Two displays were missing and two sentences dangled.</strong> Line 373 ended "and" with no display, and line 389 ended "the half-sum is" with no display, so the Hermitian norm and the Krein half-sum were never written. The compression supplies both.</li>
+</ul>
+<p><strong>Done, 2026-11-24.</strong> The four subsections are now one product paragraph, one display and one note each: derivations, the general definitions, the Maxwell equation, the field strength, the Poynting flux, the kinetic density, the physics reference and the two duplicated contraction paragraphs are gone. The four headings are unchanged, so <code>Index and Notation Conventions</code> line 55 still reaches §<em>The Krein Product, Its Form and Its Norm</em>. The section §<em>The Two First-Order Equations and Their Symbol</em> lost its three demonstrations — the line-by-line square, the plane-wave symbol derivation and the Green's-function verification — and kept the equations, the refusal of the pair operator, the symbol in one sentence and the kernel subscripts.</p>
+<p>Result: 9 363 words to 7 769, a loss of 1 594.
+2. <strong><em>Index and Notation Conventions</em>, 9 754 words to 8 555. Done, except the labels.</strong>
+   - The seven physical labels, $\mathrm{fop}$, $\mathrm{pau}$, $\mathrm{sp}$, $\mathrm{kin}$, $\mathrm{can}$, $\mathrm{exp}$, $\mathrm{lor}$, and the 18 of 115 rows that name a physical object. Each needs a decision: a label the mathematical corpus genuinely spends stays, a label only physics spends goes.
+   - ~~§<em>Conventions of the Corpus Itself</em> and §<em>LaTeX and Typesetting</em>.~~ Done in pass four: 1 134 words to 420, and 270 to 165.
+   - ~~Line 55 defers to the physical corpus.~~ Done in pass one. The AXF reason is stated once, plainly, in the matrix article.
+   - Left: the label rows, and the residual physics words listed in Finding 8.
+3. <strong><em>Algebra and Element Conventions</em>, 9 271 words.</strong> The Summary of Notation is 1 670 words and repeats the 115-row glyph index of <em>Index and Notation</em>. One of the two inventories should go. Est. 1 000 to 1 600 words.
+4. <strong><em>Matrix Representations Conventions</em>, 9 583 words.</strong> The legacy section, 702 words, cut to the arrays and one sentence. The paragraph that permits a historical remark inside a legacy section, and the paragraph that reassures the reader that the order renames nothing. Est. 700 words.
+5. <strong><em>Special Element and Peirce Conventions</em>, 6 018 words.</strong> The eleven gauges, the "gauge is a torus of phases" example, the Dirac field. Keep the spinor, which is mathematical. Est. 600 words.
+6. <strong><em>Frame and Metric Conventions</em>, 3 890 words.</strong> Rule 9 on the word <em>signature</em>, and <em>spacetime</em> at lines 5 and 139. The article states its content three times, in the rules, the summary and the Summary of Notation; two of the three suffice. Est. 600 words.
+7. <strong><em>Reserved Letters Conventions</em>, 2 765 words.</strong> Line 9, the migration report with the count of files; "a particle has three of them"; "the charge density". Est. 200 words.</p>
+<p><strong>Done, 2026-11-24, first pass.</strong></p>
+<ul>
+<li><em>Operator and Calculus Conventions</em>: 9 363 words to 7 769. The four product subsections are one paragraph, one display and one note each; the Maxwell equation, the field strength, the Poynting flux, the kinetic density, the physics reference, the derivations and the two duplicated contraction paragraphs are gone. The equations section keeps the two lines, the refusal of the pair operator, the symbol in one sentence and the kernel subscripts, and loses its three demonstrations.</li>
+<li><em>Index and Notation Conventions</em>: 9 754 words to 9 704. Line 55 no longer defers to the physical corpus for the derivation rule, and it names <em>Operator and Calculus Conventions</em> instead of the retired title <em>Operator and Differential Calculus Conventions</em>. The glued row at old line 459 is rebuilt as a two-cell row: the tail was a copy of the front, and the rule it states — the six codes that separate two words sharing one spelling — survives in one line.</li>
+<li><em>Matrix Representations Conventions</em>: 9 583 words to 9 561. The <em>Further Reading</em> bullet that sent the reader to the physical article for why the AXF matrices replace the Pauli display is gone. <strong>The reason itself is now stated nowhere in the mathematical set, and that is an open item.</strong></li>
+</ul>
+<p><strong>Done, 2026-11-24, second pass.</strong></p>
+<ul>
+<li><em>Reserved Letters Conventions</em>: 2 765 words to 2 664. The migration report with its count of $21\,000$ occurrences is gone, and so is the sentence that counts how many glyphs were fixed in the first statement of the rule. Four physical illustrations became algebraic: a particle with three wave numbers is an element with three, the charge density is a scale factor, and the frequency in hertz and the coupling are dropped.</li>
+<li><em>Frame and Metric Conventions</em>: 3 890 words to 3 755. Rule 9, the prohibition on the word <em>signature</em>, is gone and the count of the rules follows it, nine to eight. Its two definitions survive as a positive statement: the inertia $(n,m,r)$ and the excess $\sigma=n-m$, kept also in the Summary of Notation. The physical article keeps its own nine rules: the two sets are independent, so its rule 9 is not this file's business.</li>
+<li><em>Matrix Representations Conventions</em>: 9 561 words to 9 545. "The order renames nothing" is gone. The paragraph now states what the two frames and their labels are, and drops the reassurance that a reader who never knew another order would not need.</li>
+</ul>
+<p><strong>Done, 2026-11-24, third pass: the legacy section.</strong></p>
+<ul>
+<li><em>Matrix Representations Conventions</em>: 9 545 words to 8 950. §<em>The Legacy Pauli Gamma Formulation</em> went from 702 words to 356, keeping the five basis operators, the Peirce arrays, the Pauli form and the axis-free arrays, and one sentence with the anticommutator and $\gamma_5$.</li>
+<li>Removed with it: the 16-row table reading each $\gamma$-product against its basis operator, which duplicates the 16-row table already in the body at §<em>The Sixteen Products</em>; the comparison map with $\iota_{\mathrm{Cl}}$ in gammas, which §<em>The Clifford Structure</em> and the Summary of Notation already state; the contractions paragraph; and the identities block with the four trace formulas and the four contraction sums, which are results and not conventions.</li>
+<li>Removed also the opening sentence that declared the formulation legacy and sent the reader to the physical article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. That reference is now gone from the mathematical set entirely, and the reading of the plain, non-historical sentence that replaces it needs an owner.</li>
+</ul>
+<p><strong>A measurement worth recording.</strong> The heading <em>The Legacy Pauli Gamma Formulation</em> returns 28 hits in <code>articles_maths</code>, and 27 of them are the articles' own sections with that title, not links into this file. So the corpus carries this section once per article, and the 91 references counted earlier are mostly self-sections. That repetition lies outside the conventions set and outside this audit's remit, but it is the single largest repetition found.</p>
+<p><strong>Done, 2026-11-24, fourth pass: the editorial policy.</strong></p>
+<ul>
+<li><em>Index and Notation Conventions</em>: 9 704 words to 8 555. §<em>Conventions of the Corpus Itself</em> is cut from 1 134 words to 420 and renamed §<em>A Word and Two Letters</em>; it now carries the interval, the refusal of $\iota$ in Part VI and the deformation parameter, and nothing else. §<em>LaTeX and Typesetting</em> is cut from 270 words to 165 and keeps every operative rule. The Summary loses its paragraph on the menus, the four groups, the article files and the skeleton, and keeps a rewritten paragraph in their place.</li>
+<li>What went and where the rule is: the menu form and the <code>+</code> marker, the four groups of a category, the split of the involution from the adjoint, the fill rule, the category numbers, the article files and the skeleton are all stated by <em>Introduction to the Mathematical Corpus</em>, whose menu entry lists exactly those subjects. That is a pointer to the same set, not a loss. <strong>The menu entry was read; the article was not</strong>, because it is not one of the ten conventions articles, so the ownership is asserted from the entry and should be confirmed by one look before the section is relied on. The claim in earlier drafts that <code>maths.md</code> and <code>PLAN.md</code> hold them was checked and is false: the menu shows the groups and does not define them, and <code>PLAN.md</code> does not mention them.</li>
+<li>The Planck constant paragraph is gone, with its barred letter and its two physical phases. <strong>Checked:</strong> the rule is held by <em>Physics Units and Common Elements Conventions</em>, so the mathematical copy was cross-set duplication. One sentence defining $h_{\mathrm{def}}$ is kept, because the maths set has no other statement of it.</li>
+<li><code>maths.md</code> follows: <em>Frame and Metric</em> goes from "seven rules" to "eight rules", which was stale before this audit touched anything; the <em>Matrix</em> entry loses the retirement of $M_4(\mathbb{C})_L$; the <em>Reserved Letters</em> entry loses "the roles that once shared the angle" and "the older use of $\lambda$", both history; the <em>Index</em> entry is rewritten to the new sections.</li>
+</ul>
+<p>Total for the four passes, measured with <code>wc -w</code> over <code>articles_maths/*-conventions.md</code>: 61 982 to 58 320. That is 3 662 words out, 5.9 per cent, and no rule is lost that is not held by another file in the same set. The per-article counts in the pass notes are <code>wc -w</code> readings and do not add to the total on their own, because the total spans the ten files and the passes touched six of them.</p>
+<p><strong>Done, 2026-11-24, fifth pass: Finding 8, the moves.</strong></p>
+<ul>
+<li><em>Index and Notation Conventions</em>: 8 555 words to 8 748. New §<em>Marks That Are Not Indices</em> under §<em>The Upper and Low Marks</em>, carrying the prime, the bar and the underline as canonical statements, plus the prime-after-subscript rule moved out of §<em>LaTeX and Typesetting</em>. The Summary gains one sentence.</li>
+<li><em>Operator and Calculus Conventions</em>: 7 769 to 7 679. §<em>The Derivative Marks</em> loses the three paragraphs on the prime, the bar and the underline and keeps <em>No dot</em> and $\\partial_{\\mathrm{nil}}$, with one sentence naming the new section. The Summary sentence on the prime becomes a pointer. $\\partial_{\\mathrm{nil}}$ stays: it defines a derivation of the algebra, which is calculus, not a mark.</li>
+<li><em>Algebra and Element Conventions</em>: 9 271 to 9 273. "The prime marks the second glyph" becomes a use of the rule with a pointer.</li>
+<li><em>Frame and Metric Conventions</em>: 3 682, from 3 755. Rule 2 and rule 8 lose their duplicate tails, the change of name in the Clifford section becomes a naming rule, and all eight rules stand.</li>
+<li><em>Operator and Calculus Conventions</em>, the two equations: "the dynamics of a field of mass $m$" becomes two elements and a real central parameter, "every coordinate form of a field equation" becomes "every coordinate form written elsewhere", "on a plane wave" becomes "on a mode of wave element", and "the Green's function of the d'Alembertian" becomes "the kernel of the inverse of the d'Alembertian". About 40 words, and the section is now algebraic throughout. <strong>Chiral</strong> stays, because it names the two carriers and is fixed in <em>Special Element and Peirce Conventions</em>.</li>
+</ul>
+<p>Total after five passes: 61 982 to 58 352, 3 630 words out, 5.9 per cent.</p>
+<p><strong>The finding that did not survive its own check.</strong> Item 5 of Finding 8 was wrong: the frame article displays no matrix. Two other items were overstated and were trimmed to what the text supports. Recorded here because an audit that quietly drops its own errors cannot be trusted.</p>
+<h3 id="the-physical-set-77-929-words">The physical set: 77 929 words</h3>
+<p>No item here can be solved by citing the mathematical set, and the set is the larger of the two.</p>
+<ol>
+<li><strong><em>Physics Units and Common Elements Conventions</em>, 15 582 words.</strong> Six sections and 117 table rows, a catalogue of physical objects rather than a convention. It is the single largest saving available anywhere in the twenty files, and it needs a structural decision before any paragraph is touched: is it one article, or is it a unit rule plus a dictionary that belongs elsewhere?</li>
+<li><strong><em>Matrix Representations Conventions</em>, 13 379 words.</strong> The legacy section, 1 364 words, cut to the arrays and one sentence. Twenty paragraphs over 1 000 characters to split. Est. 1 200 words.</li>
+<li><strong><em>Operator and Calculus Conventions</em>, 11 658 words.</strong> The legacy section, 347 words. Nine paragraphs over 1 000 characters. Est. 400 words.</li>
+<li><strong><em>Algebra and Element Conventions</em>, 9 685 words.</strong> The Summary of Notation, and twelve paragraphs over 1 000 characters. Est. 800 words.</li>
+<li><strong><em>Index and Notation Conventions</em>, 5 345 words.</strong> <em>What the letter η used to carry</em> becomes a statement of the current rule, with the table kept and the word <em>retired</em> dropped. Est. 100 words.</li>
+<li><strong><em>Frame and Metric Conventions</em>, 4 006 words.</strong> Rule 9, and the triple statement of the content. Est. 600 words.</li>
+<li>The remaining four articles, 4 772, 4 881, 4 864 and 3 757 words, hold long paragraphs and no structural problem.</li>
+</ol>
+<p>Total: about 8 000 to 11 000 words, and the first item is most of it.</p>
+<h3 id="what-to-do-next">What to do next</h3>
+<p>Five passes are done and the record of each is in the worklist above. What remains splits by cost, not by article.</p>
+<p><strong>Without a decision from the author, and cheap:</strong></p>
+<ol>
+<li>~~The moves of Finding 8.~~ Done in pass five, except item 5, which the check dissolved.</li>
+<li>The remaining long paragraphs of the seven edited articles: the audit measures them but does not fix them, because a split is a writing job and not a deletion.</li>
+</ol>
+<p><strong>Needing a decision:</strong></p>
+<ol>
+<li>The 18 label rows, one at a time.</li>
+<li>$h_{\mathrm{def}}$, as a ninth reserved glyph or as $\digamma_{\mathrm{def}}$.</li>
+<li>The physical set, which is 77 929 words and larger than the mathematical one. Nothing there can be solved by citing the mathematical set, and its first item, <em>Physics Units and Common Elements Conventions</em> at 15 582 words, is a structural question before it is an editing one.</li>
+</ol>
+<p><strong>The check each item needs.</strong> No item is a deletion of a heading that another article cites. The legacy headings stay in all three articles that carry them. Where a paragraph is removed rather than a heading, the citing article is checked by reading its own reference, not by scanning the tree.</p>
+<h2 id="open-questions-for-the-author">Open Questions for the Author</h2>
+<ol>
+<li>Is <em>Physics Units and Common Elements Conventions</em> a conventions article at all, or a dictionary of the physical corpus's objects? Its six sections are units, layer glyphs, the gradient, the four-vectors, the fields and the observables. As a catalogue it should be split; as a convention it should state the unit rule and leave the rest to the articles that use it.</li>
+<li>Where does the corpus keep its editorial rules? They are currently in four places — <code>maths.md</code>, <code>PLAN.md</code>, the template and <em>Index and Notation Conventions</em>. One place would be enough, and the notation article is the wrong one. The ruling on independence does not settle this, because the policy is shared even though the conventions are not.</li>
+<li>In each set, should the <em>No contravariant index</em> rule be stated once and cited, or stated in every article that needs it? Independence forbids citing the other set; it does not forbid citing the same set. One statement per set is the recommendation.</li>
+<li><strong>The label rows.</strong> Eighteen of the 115 rows of <em>Index and Notation</em> name an object only the physical corpus uses. Should the mathematical index keep a row for a label the mathematical articles never write? The recommendation is no, with one exception: a label that a mathematical article does write stays even if its object is physical.</li>
+<li><strong>$h_{\mathrm{def}}$.</strong> Is the deformation parameter one of the reserved glyphs, or a $\digamma$ with the subscript $\mathrm{def}$? Either answer closes the contradiction; the present state is neither.</li>
+<li><strong>The residual physics of the two equations.</strong> Is the section algebraic, with $m$ a central real parameter, or is it physical and mislaid? Only the first is consistent with the ruling.</li>
+<li><strong>The four moves of Finding 8.</strong> Do they happen, and in which order? They are cheap and they lose nothing, but they touch four articles at once, which is why they were proposed rather than done.</li>
+</ol>
       </div>
     </main>
   </div>

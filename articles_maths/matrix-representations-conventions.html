@@ -74,7 +74,7 @@
 <p>The algebra is read in matrices in three ways, and the three answer different questions. The <strong>axis-free representation</strong> reads multiplication in the basis the algebra already carries, and writes the two operators $L_{\mathrm{axf}}(\tilde Q)$ and $R_{\mathrm{axf}}(\tilde Q)$; it needs no frame, its entries are the structure constants, and it is the display a computation uses when no direction is to be singled out. The <strong>Pauli representation</strong> reads the same two operators in the Peirce frame of the standard pair; it costs the choice of a frame and buys the $2\times2$ block, the five-operator Clifford frame and the gamma matrices. The <strong>$2\times2$ isomorphism</strong> $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a complex matrix of the algebra's own size; it is not a regular representation at all, and it is the block from which the Pauli display is built.</p>
 <p>The order of the article is that order. The axis-free display comes first because it follows from the multiplication table alone, with nothing chosen. The Pauli display comes second because it needs the standard pair, and once it is written the switch between the two frames is one matrix and its inverse, §<em>The Switch Between the Two Frames</em>. The $2\times2$ isomorphism comes last because it is the algebra and not an operator on it, and it is read best after both $4\times4$ displays have shown what a matrix of an operator is. The rule that keeps the two legacy formulations out of every body section is stated before all three, in §<em>The Rule on Pauli and Gamma Matrices</em>.</p>
 <p><strong>Three displays, two objects.</strong> The two $4\times4$ displays are one operator in two bases: the same four-dimensional subalgebra $\mathbb{B}_L$ of the ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, written twice. The $2\times2$ display is a different object, the algebra itself. A change of frame never changes the operator, and it never touches the $2\times2$ image, because that image carries no frame.</p>
-<p><strong>The order renames nothing.</strong> The corpus calls the Peirce frame the canonical frame, and this article keeps the name: the word names the frame, not its position here. The axis-free frame is the coefficient basis read as a frame, and its label is $\mathrm{axf}$.</p>
+<p><strong>Two frames and their labels.</strong> The Peirce frame is the canonical frame, and the axis-free frame is the coefficient basis read as a frame, with the label $\mathrm{axf}$.</p>
 <p><strong>The algebra is $M_2(\mathbb{C})$, and it is never $M_4(\mathbb{C})$.</strong> The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra, it carries no biquaternion structure and takes no biquaternion name; the left and right copies are named $\mathbb{B}_L$ and $\mathbb{B}_R$, and a matrix of the left copy is a matrix of $\mathbb{B}_L$.</p>
 <p>The article assumes the base of <em>Algebra and Element Conventions</em> and the Peirce convention of <em>Special Element and Peirce Conventions</em>, whose standard pair fixes the Pauli frame.</p>
 <h2 id="the-rule-on-pauli-and-gamma-matrices">The Rule on Pauli and Gamma Matrices</h2>
@@ -877,10 +877,8 @@ $$
 $$
 so the frame is visible in the formula.</p>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
-<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, $Q_\mu$ or $x_\mu$, not to the array. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.</p>
-<p><strong>The gammas are the five-operator frame as matrices.</strong> The body writes the basis operators; this section writes the arrays, in both frames.</p>
-<p><strong>The five gammas.</strong> The five Dirac matrices are two-sided operators of the frame. The fifth is the fifth frame operator, written $\mathsf{V}_{\mathrm{vol}}$ where the operator and not its array is meant, with the frame named in the sentence; the articles on the sides use that glyph and cite the gamma display for the arrays.
-$$
+<p>The five Dirac matrices are two-sided operators of the frame, written $\gamma_\mu$ with no frame label, since the frame belongs to the coordinate. They satisfy $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and their arrays are the following, the same five objects in the two frames.</p>
+<p>$$
 \boxed{\;\gamma_0=iR_{\mathrm{pau},\vec e_x}=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\qquad
 \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\qquad
 \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\qquad
@@ -897,13 +895,13 @@ $$
 \gamma_3=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;-1\\-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}.
 $$
-They satisfy $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. In the Pauli form the same five are
+In the Pauli form the same five are
 $$
 \gamma_0=\sigma_1\otimes I_2,\qquad
 \gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
 \gamma_5=-\sigma_3\otimes I_2 .
 $$</p>
-<p><strong>In the axis-free frame.</strong> The conjugation §<em>The Switch Between the Two Frames</em> carries them, and there they are $i$ times real signed permutation matrices,
+<p><strong>In the axis-free frame.</strong>
 $$
 \gamma_0=i\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},\qquad
 \gamma_1=i\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix},
@@ -912,144 +910,8 @@ $$
 \gamma_2=i\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},\qquad
 \gamma_3=i\begin{pmatrix}0&amp;-1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\end{pmatrix},\qquad
 \gamma_5=i\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix}.
-$$
-The entries are $\pm i$ or $0$ in both frames, and the axis-free arrays are exactly the basis operators $iR_{\mathrm{axf},\vec e_x}$, $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ and $-iR_{\mathrm{axf},\vec e_z}$: the same five basis operators, drawn in the other frame.</p>
-<p><strong>The sixteen products.</strong> The five frame operators are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen basis operators:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>grade</th>
-<th>$\gamma$-product</th>
-<th>basis operator</th>
-<th>equality</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$0$</td>
-<td>$1$</td>
-<td>$L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$</td>
-<td>$L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I_4$</td>
-</tr>
-<tr>
-<td>$1$</td>
-<td>$\gamma_0$</td>
-<td>$L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$</td>
-<td>$L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}=-i\,\gamma_0$</td>
-</tr>
-<tr>
-<td>$1$</td>
-<td>$\gamma_1$</td>
-<td>$L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$</td>
-<td>$L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}=-i\,\gamma_1$</td>
-</tr>
-<tr>
-<td>$1$</td>
-<td>$\gamma_2$</td>
-<td>$L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}$</td>
-<td>$L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}=-i\,\gamma_2$</td>
-</tr>
-<tr>
-<td>$1$</td>
-<td>$\gamma_3$</td>
-<td>$L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$</td>
-<td>$L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}=-i\,\gamma_3$</td>
-</tr>
-<tr>
-<td>$2$</td>
-<td>$\gamma_0\gamma_1$</td>
-<td>$L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}$</td>
-<td>$L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}=\gamma_0\gamma_1$</td>
-</tr>
-<tr>
-<td>$2$</td>
-<td>$\gamma_0\gamma_2$</td>
-<td>$L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z}$</td>
-<td>$L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z}=\gamma_0\gamma_2$</td>
-</tr>
-<tr>
-<td>$2$</td>
-<td>$\gamma_0\gamma_3$</td>
-<td>$L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}$</td>
-<td>$L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}=\gamma_0\gamma_3$</td>
-</tr>
-<tr>
-<td>$2$</td>
-<td>$\gamma_1\gamma_2$</td>
-<td>$L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},e_t}$</td>
-<td>$L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},e_t}=\gamma_1\gamma_2$</td>
-</tr>
-<tr>
-<td>$2$</td>
-<td>$\gamma_1\gamma_3$</td>
-<td>$L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},e_t}$</td>
-<td>$L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},e_t}=-\gamma_1\gamma_3$</td>
-</tr>
-<tr>
-<td>$2$</td>
-<td>$\gamma_2\gamma_3$</td>
-<td>$L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},e_t}$</td>
-<td>$L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},e_t}=\gamma_2\gamma_3$</td>
-</tr>
-<tr>
-<td>$3$</td>
-<td>$\gamma_0\gamma_1\gamma_2$</td>
-<td>$L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_x}$</td>
-<td>$L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_x}=-i\,\gamma_0\gamma_1\gamma_2$</td>
-</tr>
-<tr>
-<td>$3$</td>
-<td>$\gamma_0\gamma_1\gamma_3$</td>
-<td>$L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_x}$</td>
-<td>$L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_x}=i\,\gamma_0\gamma_1\gamma_3$</td>
-</tr>
-<tr>
-<td>$3$</td>
-<td>$\gamma_0\gamma_2\gamma_3$</td>
-<td>$L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_x}$</td>
-<td>$L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_x}=-i\,\gamma_0\gamma_2\gamma_3$</td>
-</tr>
-<tr>
-<td>$3$</td>
-<td>$\gamma_1\gamma_2\gamma_3$</td>
-<td>$L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$</td>
-<td>$L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}=i\,\gamma_1\gamma_2\gamma_3$</td>
-</tr>
-<tr>
-<td>$4$</td>
-<td>$\gamma_0\gamma_1\gamma_2\gamma_3$</td>
-<td>$L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$</td>
-<td>$L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$</td>
-</tr>
-</tbody>
-</table></div>
-<p>Each row reads the basis operator as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$.</p>
-<p><strong>The comparison map.</strong> In gammas, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$, the same map as $\iota_{\mathrm{Cl}}(e_\mu)=L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_t}$ and $\iota_{\mathrm{Cl}}(i)=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ of §<em>The Clifford Structure</em>.</p>
-<p><strong>The contractions.</strong> In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}p_t+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}p_x+L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}p_y+L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and the same contraction in the $\mathbb{B}$ coordinate is $\sum_\mu \gamma_\mu\partial/\partial Q_\mu$. The two differ by the coordinate, $Q_t=ix_0$, and not by the matrices: $\partial/\partial x_\mu$ and $\partial/\partial Q_\mu$ already name the frame, so the array needs no label to say which is meant.</p>
-<p><strong>The identities the bodies cite.</strong> In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
-$$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
-$$
-$$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
-$$
-$$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
-$$
-$$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
-$$
-The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.</p>
-<h2 id="the-math742-pauli-representation">The $2\times2$ Pauli Representation</h2>
+$$</p>
+<h2 id="the-math634-pauli-representation">The $2\times2$ Pauli Representation</h2>
 <p><strong>Read last, and not because it is small.</strong> The $2\times2$ display is the algebra itself, not an operator on it. It is placed last because it is best read after both $4\times4$ displays have shown what a matrix of an operator is, and because its matrices are the block of the Pauli display: the object it displays is the one the other two displays act on.</p>
 <h3 id="the-isomorphism">The Isomorphism</h3>
 <p><strong>The map.</strong> The isomorphism is $\mathbb{C}$-linear, multiplicative and bijective,
@@ -1084,7 +946,7 @@ $$
 \operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t .
 $$
 The trace in that display is the trace of the image, and the corpus uses the word for the image alone: an element is read in $\operatorname{Sc}$. The determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus; the invertibility criterion, the group of invertibles and the unit-norm group are read from it.</p>
-<h3 id="the-bridge-to-the-math763-displays">The Bridge to the $4\times4$ Displays</h3>
+<h3 id="the-bridge-to-the-math655-displays">The Bridge to the $4\times4$ Displays</h3>
 <p><strong>The block.</strong> In the Pauli frame the left regular matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$, so the $2\times2$ image is the block of the $4\times4$ display, and the right regular matrix is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$, the same block transposed in the other slot. This is the whole reason the Peirce frame earns its root: it turns a $4\times4$ operator into a $2\times2$ matrix written twice.</p>
 <p><strong>The frame moves the block, not the image.</strong> In the axis-free frame the same operator reads
 $$
@@ -1206,7 +1068,6 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the reasons the AXF matrices replace the Pauli and gamma matrices.</li>
 <li>S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.</li>
 <li>Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", <em>IEEE Transactions on Signal Processing</em> <strong>52</strong> (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.</li>
 <li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a> and <a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a>, for the matrices, the product, the trace, the determinant and the sixteen basis operators in the coefficient basis.</li>
