@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Bases of $\mathfrak{su}(4)$: The Physics Fifteen and the Maths Fifteen, and the Change of Basis in Both Directions — Biquaternion Universe</title>
+  <meta name="description" content="The question this note answers. The AXF Matrices of the Twenty-One Generators prints fifteen four-row arrays for. The Anti-Hermitian Derivations of as…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="two-bases-of-math0-the-physics-fifteen-and-the-maths-fifteen-and-the-change-of-basis-in-both-directions"><strong>Two Bases of $\mathfrak{su}(4)$: The Physics Fifteen and the Maths Fifteen, and the Change of Basis in Both Directions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question this note answers.</strong> <a href="../../articles_physics/the-axf-matrices-of-the-twenty-one-generators.html">The AXF Matrices of the Twenty-One Generators</a> prints fifteen four-row arrays for $\mathfrak{su}(4)$. <a href="../../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a> prints fifteen four-row arrays for the same algebra. <strong>They share no array.</strong> This note prints both lists and gives, for each of the thirty, the explicit sum of the other list that produces it.</p>
+<p><strong>The answer in one line.</strong> The two lists are two bases of one fifteen-dimensional space, and no array of one appears in the other:
+$$
+\operatorname{span}_{\mathbb{R}}\{\text{physics fifteen}\}=\operatorname{span}_{\mathbb{R}}\{\text{maths fifteen}\}=\mathfrak{su}(4),\qquad 15+15-15=15 .
+$$
+The union of the two lists has rank fifteen, each list is independent, and <strong>the number of arrays common to the two lists is zero</strong>. A basis is a choice, and these are two different choices of it.</p>
+<p><strong>Why the choices differ, in one paragraph.</strong> Both lists split the same way, six real arrays and nine imaginary ones, and the two real sixes span the same six-dimensional space while the two imaginary nines span the same nine-dimensional space. <strong>The difference is inside each summand.</strong> The maths list takes the real six as $\ell_a,r_a$, left and right multiplication by the vector units, which is the $\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$ basis of that space; the physics list takes the real six as the coordinate planes $A_{jk}$, which separates the three leptoquark planes from the three colour planes. The maths list takes the imaginary nine as $iN_{jk}$, the products in the operator frame; the physics list takes them as the six off-diagonal planes $iS_{jk}$ plus the three diagonals $iD,d_2,d_3$, which is the physics split $8+1$. §<em>Why the Two Bases Differ</em> gives the numbers.</p>
+<p><strong>What is not claimed.</strong> That one list is better than the other. The maths list is the algebra's own basis, the images of the sixteen words. The physics list is the sector basis, and its three families carry the names leptoquark, colour and $B-L$. <strong>Each is the right basis for the article that uses it.</strong></p>
+<h2 id="the-two-lists-named-once">The Two Lists, Named Once</h2>
+<p><strong>The physics fifteen.</strong> With $A_{jk}=E_{jk}-E_{kj}$, $iS_{jk}=i(E_{jk}+E_{kj})$, $E_{jk}$ the matrix unit of $\mathbb{C}^{4}$ in the order $(t,x,y,z)$, and $\{a,b,c\}=\{x,y,z\}$ cyclic.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>arrays</th>
+<th>what they are</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$A_{tx},A_{ty},A_{tz}$</td>
+<td>the three real leptoquark planes</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$A_{xy},A_{yz},A_{zx}$</td>
+<td>the three real colour planes</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$iS_{xy},iS_{yz},iS_{zx}$</td>
+<td>the three imaginary colour planes</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$iS_{tx},iS_{ty},iS_{tz}$</td>
+<td>the three imaginary leptoquark planes</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$iD$</td>
+<td>the corner, $D=\operatorname{diag}(-3,1,1,1)$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$d_2,d_3$</td>
+<td>the two traceless colour diagonals</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The maths fifteen.</strong> Numbered $G_1$ to $G_{15}$ once, in the article that prints them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>arrays</th>
+<th>what they are</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G_1,G_2,G_3$</td>
+<td>$\ell_x,\ell_y,\ell_z$</td>
+<td>left multiplication by the vector units</td>
+</tr>
+<tr>
+<td>$G_4,G_5,G_6$</td>
+<td>$r_x,r_y,r_z$</td>
+<td>right multiplication by the vector units</td>
+</tr>
+<tr>
+<td>$G_7$ to $G_{15}$</td>
+<td>$iN_{xx},iN_{xy},iN_{xz},iN_{yx},iN_{yy},iN_{yz},iN_{zx},iN_{zy},iN_{zz}$</td>
+<td>$i$ times the nine products</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two splits, in one table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>summand</th>
+<th>dimension</th>
+<th>physics basis</th>
+<th>maths basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real antisymmetric</td>
+<td>$6$</td>
+<td>$A_{ta}$, $A_{bc}$</td>
+<td>$\ell_a$, $r_a$</td>
+</tr>
+<tr>
+<td>$i$ times real symmetric traceless</td>
+<td>$9$</td>
+<td>$iS_{jk}$, $iD$, $d_2$, $d_3$</td>
+<td>$iN_{jk}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The spaces are the same and the bases are not.</strong> The real antisymmetric matrices of order four are six-dimensional whichever six independent ones you pick, and the real symmetric traceless ones are nine-dimensional. <strong>Every array in both lists lies in one of those two summands</strong>, which is why the change of basis never mixes a real array with an imaginary one.</p>
+<h2 id="the-change-of-basis-in-general-form">The Change of Basis in General Form</h2>
+<p><strong>From the maths fifteen to the physics fifteen.</strong> Six rules, one per family, with $\{a,b,c\}$ cyclic:
+$$
+\begin{aligned}
+A_{ta}&amp;=-\tfrac12\bigl(\ell_a+r_a\bigr), &amp; A_{bc}&amp;=-\tfrac12\bigl(\ell_a-r_a\bigr),\\
+iS_{bc}&amp;=-\tfrac12\bigl(iN_{bc}+iN_{cb}\bigr), &amp; iS_{ta}&amp;=+\tfrac12\bigl(iN_{bc}-iN_{cb}\bigr),\\
+iD&amp;=iN_{xx}+iN_{yy}+iN_{zz}, &amp; d_2&amp;=\tfrac12\bigl(iN_{yy}-iN_{xx}\bigr),\quad d_3=\tfrac12\bigl(iN_{zz}-iN_{yy}\bigr).
+\end{aligned}
+$$
+Read the first line as the physics statement: <strong>the leptoquark plane is the symmetric half of the weak pair and the colour plane is the antisymmetric half.</strong> The second line is the same statement on the imaginary side, one plane pair at a time.</p>
+<p><strong>From the physics fifteen to the maths fifteen.</strong> The inverse, in the same shape:
+$$
+\begin{aligned}
+\ell_a&amp;=-A_{ta}-A_{bc}, &amp; r_a&amp;=-A_{ta}+A_{bc},\\
+iN_{bc}&amp;=+iS_{ta}-iS_{bc}, &amp; iN_{cb}&amp;=-iS_{ta}-iS_{bc},\\
+iN_{xx}&amp;=\tfrac13 iD-\tfrac43 d_2-\tfrac23 d_3, &amp; iN_{yy}&amp;=\tfrac13 iD+\tfrac23 d_2-\tfrac23 d_3,\quad iN_{zz}=\tfrac13 iD+\tfrac23 d_2+\tfrac43 d_3 .
+\end{aligned}
+$$
+<strong>The two lines of the middle row are the two orderings of one pair</strong>: for fixed $\{a,b,c\}$, the maths arrays $iN_{bc}$ and $iN_{cb}$ are built from the same two physics planes, the colour plane $iS_{bc}$ and the leptoquark plane $iS_{ta}$, and differ only in the sign of the second. <strong>The thirds on the last row are not a slip</strong>: $iN_{xx},iN_{yy},iN_{zz}$ are an integral basis of the diagonal space and $iD,d_2,d_3$ are not, and §<em>Why the Two Bases Differ</em> computes the resulting covolume ratio.</p>
+<h2 id="section-a-the-physics-fifteen-each-with-the-maths-sum-that-produces-it">Section A. The Physics Fifteen, Each with the Maths Sum That Produces It</h2>
+<p><strong>How to read the section.</strong> Each array is printed, then the sum of maths arrays that equals it, given once with names and once in the $G$ numbering. <strong>Every coefficient is $\pm\tfrac12$ except on the three diagonals</strong>, where $iD$ is a plain sum and the two colour diagonals are half differences. All fifteen are verified to machine zero in §<em>The Change of Basis in Both Directions</em>.</p>
+<h3 id="the-six-real-planes">The Six Real Planes</h3>
+<p><strong>$A_{tx}$, the leptoquark plane.</strong></p>
+<p>$$
+A_{tx}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> Minus the half sum of the pair that agrees on this block and cancels on the other:</p>
+<p>$$
+A_{tx}=-\tfrac12\bigl(\ell_x+r_x\bigr)=-\tfrac12\bigl(G_{1}+G_{4}\bigr).
+$$</p>
+<p><strong>$A_{ty}$, the leptoquark plane.</strong></p>
+<p>$$
+A_{ty}=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> Minus the half sum of the pair that agrees on this block and cancels on the other:</p>
+<p>$$
+A_{ty}=-\tfrac12\bigl(\ell_y+r_y\bigr)=-\tfrac12\bigl(G_{2}+G_{5}\bigr).
+$$</p>
+<p><strong>$A_{tz}$, the leptoquark plane.</strong></p>
+<p>$$
+A_{tz}=\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> Minus the half sum of the pair that agrees on this block and cancels on the other:</p>
+<p>$$
+A_{tz}=-\tfrac12\bigl(\ell_z+r_z\bigr)=-\tfrac12\bigl(G_{3}+G_{6}\bigr).
+$$</p>
+<p><strong>$A_{yz}$, the colour plane.</strong></p>
+<p>$$
+A_{yz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> Minus the half difference of the same pair, which keeps the block the sum cancelled:</p>
+<p>$$
+A_{yz}=-\tfrac12\bigl(\ell_x-r_x\bigr)=-\tfrac12\bigl(G_{1}-G_{4}\bigr).
+$$</p>
+<p><strong>$A_{zx}$, the colour plane.</strong></p>
+<p>$$
+A_{zx}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> Minus the half difference of the same pair, which keeps the block the sum cancelled:</p>
+<p>$$
+A_{zx}=-\tfrac12\bigl(\ell_y-r_y\bigr)=-\tfrac12\bigl(G_{2}-G_{5}\bigr).
+$$</p>
+<p><strong>$A_{xy}$, the colour plane.</strong></p>
+<p>$$
+A_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> Minus the half difference of the same pair, which keeps the block the sum cancelled:</p>
+<p>$$
+A_{xy}=-\tfrac12\bigl(\ell_z-r_z\bigr)=-\tfrac12\bigl(G_{3}-G_{6}\bigr).
+$$</p>
+<p><strong>So the six real arrays are the six sums and differences of the three pairs $\ell_a\pm r_a$</strong>, paired as the physics needs: the mixed plane from the sum, the colour plane from the difference.</p>
+<h3 id="the-six-imaginary-planes">The Six Imaginary Planes</h3>
+<p><strong>$iS_{yz}$, the imaginary colour plane.</strong></p>
+<p>$$
+iS_{yz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;i&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> Minus the average of the two orderings of the pair:</p>
+<p>$$
+iS_{yz}=-\tfrac12\bigl(iN_{yz}+iN_{zy}\bigr)=-\tfrac12\bigl(G_{12}+G_{14}\bigr).
+$$</p>
+<p><strong>$iS_{zx}$, the imaginary colour plane.</strong></p>
+<p>$$
+iS_{zx}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> Minus the average of the two orderings of the pair:</p>
+<p>$$
+iS_{zx}=-\tfrac12\bigl(iN_{zx}+iN_{xz}\bigr)=-\tfrac12\bigl(G_{13}+G_{9}\bigr).
+$$</p>
+<p><strong>$iS_{xy}$, the imaginary colour plane.</strong></p>
+<p>$$
+iS_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> Minus the average of the two orderings of the pair:</p>
+<p>$$
+iS_{xy}=-\tfrac12\bigl(iN_{xy}+iN_{yx}\bigr)=-\tfrac12\bigl(G_{8}+G_{10}\bigr).
+$$</p>
+<p><strong>$iS_{tx}$, the imaginary leptoquark plane.</strong></p>
+<p>$$
+iS_{tx}=\begin{pmatrix}0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> The half difference of the pair that belongs to the other two colours:</p>
+<p>$$
+iS_{tx}=+\tfrac12\bigl(iN_{yz}-iN_{zy}\bigr)=\tfrac12\bigl(G_{12}-G_{14}\bigr).
+$$</p>
+<p><strong>$iS_{ty}$, the imaginary leptoquark plane.</strong></p>
+<p>$$
+iS_{ty}=\begin{pmatrix}0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> The half difference of the pair that belongs to the other two colours:</p>
+<p>$$
+iS_{ty}=+\tfrac12\bigl(iN_{zx}-iN_{xz}\bigr)=\tfrac12\bigl(G_{13}-G_{9}\bigr).
+$$</p>
+<p><strong>$iS_{tz}$, the imaginary leptoquark plane.</strong></p>
+<p>$$
+iS_{tz}=\begin{pmatrix}0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> The half difference of the pair that belongs to the other two colours:</p>
+<p>$$
+iS_{tz}=+\tfrac12\bigl(iN_{xy}-iN_{yx}\bigr)=\tfrac12\bigl(G_{8}-G_{10}\bigr).
+$$</p>
+<p><strong>So the six imaginary planes are the six sums and differences of the three pairs of orderings.</strong> <strong>The leptoquark plane is built from the pair labelled by the other two colours</strong>, which is why its indices look mismatched: $iS_{tx}$ comes from $iN_{yz}$ and $iN_{zy}$.</p>
+<h3 id="the-three-diagonals">The Three Diagonals</h3>
+<p><strong>$iD$, the corner.</strong></p>
+<p>$$
+iD=\begin{pmatrix}-3i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> The plain sum of the three diagonal products:</p>
+<p>$$
+iD=iN_{xx}+iN_{yy}+iN_{zz}=G_{7}+G_{11}+G_{15}.
+$$</p>
+<p><strong>This is the shortest line in the note</strong>, and it is the identity the physics article states: the corner is the sum of the three diagonal products read in the operator frame.</p>
+<p><strong>$d_2$, the first colour diagonal.</strong></p>
+<p>$$
+d_{2}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> Half the difference of the first two diagonal products:</p>
+<p>$$
+d_{2}=\tfrac12\bigl(iN_{yy}-iN_{xx}\bigr)=\tfrac12\bigl(G_{11}-G_{7}\bigr).
+$$</p>
+<p><strong>$d_3$, the second colour diagonal.</strong></p>
+<p>$$
+d_{3}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\end{pmatrix}
+$$</p>
+<p><strong>From the maths fifteen.</strong> Half the difference of the last two:</p>
+<p>$$
+d_{3}=\tfrac12\bigl(iN_{zz}-iN_{yy}\bigr)=\tfrac12\bigl(G_{15}-G_{11}\bigr).
+$$</p>
+<p><strong>So the three diagonals are the sum and the two successive differences of the three diagonal products.</strong> The two triples span one space and not one lattice, which is the third sentence of §<em>Why the Two Bases Differ</em>.</p>
+<h2 id="section-b-the-maths-fifteen-each-with-the-physics-sum-that-produces-it">Section B. The Maths Fifteen, Each with the Physics Sum That Produces It</h2>
+<p><strong>How to read the section.</strong> The mirror of Section A. Each maths array is printed, then the sum of physics arrays that equals it. <strong>The coefficients are integers except on the three diagonals</strong>, where the three $iN_{jj}$ need thirds. Throughout, $\{a,b,c\}=\{x,y,z\}$ cyclic.</p>
+<h3 id="the-six-real-arrays">The Six Real Arrays</h3>
+<p><strong>$\ell_x=G_{1}$, left multiplication by $\vec e_x$.</strong></p>
+<p>$$
+\ell_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> Minus the sum of the leptoquark plane and the colour plane that share the label:</p>
+<p>$$
+\ell_x=-\bigl(A_{tx}+A_{yz}\bigr).
+$$</p>
+<p><strong>$\ell_y=G_{2}$, left multiplication by $\vec e_y$.</strong></p>
+<p>$$
+\ell_y=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> Minus the sum of the leptoquark plane and the colour plane that share the label:</p>
+<p>$$
+\ell_y=-\bigl(A_{ty}+A_{zx}\bigr).
+$$</p>
+<p><strong>$\ell_z=G_{3}$, left multiplication by $\vec e_z$.</strong></p>
+<p>$$
+\ell_z=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> Minus the sum of the leptoquark plane and the colour plane that share the label:</p>
+<p>$$
+\ell_z=-\bigl(A_{tz}+A_{xy}\bigr).
+$$</p>
+<p><strong>$r_x=G_{4}$, right multiplication by $\vec e_x$.</strong></p>
+<p>$$
+r_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> The same two planes, with the sign of the leptoquark one flipped:</p>
+<p>$$
+r_x=-A_{tx}+A_{yz}.
+$$</p>
+<p><strong>$r_y=G_{5}$, right multiplication by $\vec e_y$.</strong></p>
+<p>$$
+r_y=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> The same two planes, with the sign of the leptoquark one flipped:</p>
+<p>$$
+r_y=-A_{ty}+A_{zx}.
+$$</p>
+<p><strong>$r_z=G_{6}$, right multiplication by $\vec e_z$.</strong></p>
+<p>$$
+r_z=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> The same two planes, with the sign of the leptoquark one flipped:</p>
+<p>$$
+r_z=-A_{tz}+A_{xy}.
+$$</p>
+<p><strong>So each pair $\ell_a,r_a$ is the sum and the difference of two physics planes</strong>, the mixed one and the colour one of the same label. The physics basis names the two summands separately; the maths basis names only their two combinations.</p>
+<h3 id="the-nine-imaginary-arrays">The Nine Imaginary Arrays</h3>
+<p><strong>$iN_{yz}=G_{12}$, $i$ times the product.</strong></p>
+<p>$$
+iN_{yz}=\begin{pmatrix}0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> The leptoquark plane minus the colour plane of the same colour label:</p>
+<p>$$
+iN_{yz}=+iS_{tx}-iS_{yz}.
+$$</p>
+<p><strong>$iN_{zy}=G_{14}$, $i$ times the product.</strong></p>
+<p>$$
+iN_{zy}=\begin{pmatrix}0&amp;-i&amp;0&amp;0\\-i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> Minus the sum of the same two planes:</p>
+<p>$$
+iN_{zy}=-iS_{tx}-iS_{zy}.
+$$</p>
+<p><strong>$iN_{zx}=G_{13}$, $i$ times the product.</strong></p>
+<p>$$
+iN_{zx}=\begin{pmatrix}0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\\i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> The leptoquark plane minus the colour plane of the same colour label:</p>
+<p>$$
+iN_{zx}=+iS_{ty}-iS_{zx}.
+$$</p>
+<p><strong>$iN_{xz}=G_{9}$, $i$ times the product.</strong></p>
+<p>$$
+iN_{xz}=\begin{pmatrix}0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;-i\\-i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> Minus the sum of the same two planes:</p>
+<p>$$
+iN_{xz}=-iS_{ty}-iS_{xz}.
+$$</p>
+<p><strong>$iN_{xy}=G_{8}$, $i$ times the product.</strong></p>
+<p>$$
+iN_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;i\\0&amp;0&amp;-i&amp;0\\0&amp;-i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> The leptoquark plane minus the colour plane of the same colour label:</p>
+<p>$$
+iN_{xy}=+iS_{tz}-iS_{xy}.
+$$</p>
+<p><strong>$iN_{yx}=G_{10}$, $i$ times the product.</strong></p>
+<p>$$
+iN_{yx}=\begin{pmatrix}0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\\0&amp;-i&amp;0&amp;0\\-i&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> Minus the sum of the same two planes:</p>
+<p>$$
+iN_{yx}=-iS_{tz}-iS_{yx}.
+$$</p>
+<p><strong>The two orderings of one pair share the colour plane and differ in the sign of the leptoquark one.</strong> So the six off-diagonal maths arrays are the twelve half-sums of the six imaginary planes, taken in the one pairing that uses each plane once per colour label:
+$$
+iN_{bc}=+iS_{ta}-iS_{bc},\qquad iN_{cb}=-iS_{ta}-iS_{bc},\qquad \{a,b,c\}=\{x,y,z\}\ \text{cyclic}.
+$$</p>
+<h3 id="the-three-diagonal-arrays">The Three Diagonal Arrays</h3>
+<p><strong>$iN_{xx}=G_{7}$.</strong></p>
+<p>$$
+iN_{xx}=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> A third of the corner, less four thirds of $d_2$ and two thirds of $d_3$:</p>
+<p>$$
+iN_{xx}=\tfrac13 iD-\tfrac43 d_2-\tfrac23 d_3.
+$$</p>
+<p><strong>$iN_{yy}=G_{11}$.</strong></p>
+<p>$$
+iN_{yy}=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> A third of the corner, plus two thirds of $d_2$, less two thirds of $d_3$:</p>
+<p>$$
+iN_{yy}=\tfrac13 iD+\tfrac23 d_2-\tfrac23 d_3.
+$$</p>
+<p><strong>$iN_{zz}=G_{15}$.</strong></p>
+<p>$$
+iN_{zz}=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\end{pmatrix}
+$$</p>
+<p><strong>From the physics fifteen.</strong> A third of the corner, plus two thirds of $d_2$, plus four thirds of $d_3$:</p>
+<p>$$
+iN_{zz}=\tfrac13 iD+\tfrac23 d_2+\tfrac43 d_3.
+$$</p>
+<p><strong>Why the thirds, in one line.</strong> $D=\operatorname{diag}(-3,1,1,1)$ while each $iN_{jj}$ is diagonal with entries $\pm i$, so the coefficient of $iD$ must be $\tfrac13$ to match the corner's $-3$ in the first place. <strong>No integral combination of $iD,d_2,d_3$ reaches $iN_{xx}$.</strong></p>
+<h2 id="the-change-of-basis-in-both-directions">The Change of Basis in Both Directions</h2>
+<p><strong>The composition is the identity.</strong> Substituting the rules of Section A into those of Section B returns each array unchanged, and the same in the other order. The residuals are computed on the entries.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>composition</th>
+<th>count</th>
+<th>max residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>physics $\to$ maths $\to$ physics, all fifteen</td>
+<td>$15/15$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>maths $\to$ physics $\to$ maths, all fifteen</td>
+<td>$15/15$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the same on the six real arrays</td>
+<td>$6/6$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the same on the nine imaginary arrays</td>
+<td>$9/9$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The change of basis matrix.</strong> With the physics fifteen as columns $P$ and the maths fifteen as columns $M$, both $30\times15$ in the real coordinates $(\operatorname{Re},\operatorname{Im})$ of the entries, there is a unique $15\times15$ real matrix $C$ with $P=MC$, and exactly
+$$
+|\det C|=\frac{3}{256} .
+$$
+<strong>The determinant is not one, and that is the whole lattice story</strong>: the map is invertible over $\mathbb{R}$ and not over $\mathbb{Z}$, and the two lattices have covolumes in the ratio $3:256$.</p>
+<h2 id="why-the-two-bases-differ">Why the Two Bases Differ</h2>
+<p><strong>The same two summands, sixed and nined differently.</strong> Both lists split as six real plus nine imaginary, the two sixes span one six-dimensional space, and the two nines span one nine-dimensional space. <strong>The bases differ inside the summands, not between them</strong>, which is why no real array of one list ever needs an imaginary array of the other.</p>
+<p><strong>Inside the six.</strong> The maths six are $\ell_a,r_a$, the images of the three vector units under left and right multiplication. They close, $[\ell_a,\ell_b]=\epsilon_{abc}\ell_c$ and $[r_a,r_b]=\epsilon_{abc}r_c$ with $[\ell_a,r_b]=0$, so the six are $\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, the two factors being the left and the right action. The physics six are the coordinate planes $A_{jk}$, which close as well because they are the same six-dimensional space. <strong>The difference is which triples are named</strong>: the maths basis names the two $\mathfrak{su}(2)$ factors, the physics basis names the three leptoquark planes and the three colour planes.</p>
+<p><strong>Inside the nine.</strong> The maths nine are $iN_{jk}$, one per word product, and their diagonal three is the Cartan. The physics nine are the six off-diagonal planes $iS_{jk}$ plus the corner and the two colour diagonals. <strong>The diagonal three is one three-dimensional space in both cases</strong>, and the change there is $iD=iN_{xx}+iN_{yy}+iN_{zz}$, $d_2=\tfrac12(iN_{yy}-iN_{xx})$, $d_3=\tfrac12(iN_{zz}-iN_{yy})$: integral one way, thirds the other.</p>
+<p><strong>Which arrays are integral over which.</strong> Twelve of the maths fifteen are integral combinations of the physics fifteen, the six $\ell,r$ and the six off-diagonal $iN$; the three diagonal $iN$ are not. In the other direction only one physics array, $iD$, is an integral combination of the maths fifteen. <strong>So the physics lattice is the finer one</strong>, and $iD=G_7+G_{11}+G_{15}$ is its one integral vector sitting in the maths lattice.</p>
+<p><strong>The physics reading of the difference.</strong> The physics basis separates what the model needs to name: the three leptoquark planes are the gauge bosons that would mediate proton decay, the eight arrays $A_{bc},iS_{bc},d_2,d_3$ are the gluons, and $iD$ carries $B-L$. <strong>The maths basis separates what the algebra needs to name</strong>: the two actions of the algebra on itself, and the nine products. Neither list can be read off the other without a computation, and this note is that computation.</p>
+<h2 id="the-checks">The Checks</h2>
+<p>Fifteen recomputations, on the printed entries, with the quartet ordered $(t,x,y,z)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arrays displayed in Section A / in Section B</td>
+<td>$15$ / $15$</td>
+</tr>
+<tr>
+<td>Section A rebuilt from the maths fifteen</td>
+<td>$15/15$, residual $0$</td>
+</tr>
+<tr>
+<td>Section B rebuilt from the physics fifteen</td>
+<td>$15/15$, residual $0$</td>
+</tr>
+<tr>
+<td>rank of each fifteen</td>
+<td>$15$, $15$</td>
+</tr>
+<tr>
+<td>rank of the union</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>arrays common to the two lists</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>distinct arrays within each list</td>
+<td>$15$, $15$</td>
+</tr>
+<tr>
+<td>split $6+9$ in each list</td>
+<td>$6+9$, $6+9$</td>
+</tr>
+<tr>
+<td>the two real sixes span one space / the two nines one space</td>
+<td>$6$ / $9$</td>
+</tr>
+<tr>
+<td>$\det$ of the change of basis</td>
+<td>$3/256$</td>
+</tr>
+<tr>
+<td>maths arrays integral over physics / physics over maths</td>
+<td>$12/15$ / $1/15$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The two fifteens are two bases of one algebra and share no array. <strong>Section A prints the physics fifteen and writes each as a sum of maths arrays</strong>: $A_{ta}=-\tfrac12(\ell_a+r_a)$, $A_{bc}=-\tfrac12(\ell_a-r_a)$, $iS_{bc}=-\tfrac12(iN_{bc}+iN_{cb})$, $iS_{ta}=\tfrac12(iN_{bc}-iN_{cb})$, $iD=iN_{xx}+iN_{yy}+iN_{zz}$, and the two colour diagonals as half differences. <strong>Section B prints the maths fifteen and writes each as a sum of physics arrays</strong>: $\ell_a=-A_{ta}-A_{bc}$, $r_a=-A_{ta}+A_{bc}$, $iN_{bc}=iS_{ta}-iS_{bc}$, $iN_{cb}=-iS_{ta}-iS_{bc}$, and the three $iN_{jj}$ with thirds of $iD,d_2,d_3$.</p>
+<p>Both lists split as six real plus nine imaginary, and the two sixes and the two nines span the same spaces. <strong>The difference is the naming inside each summand</strong>: the maths basis names the two multiplication actions and the nine word products, the physics basis names the leptoquark planes, the colour planes, the corner and the two colour diagonals.</p>
+<p>The change of basis has determinant $3/256$: invertible over $\mathbb{R}$ and not over $\mathbb{Z}$. Twelve maths arrays are integral over the physics fifteen and only one physics array is integral over the maths fifteen, so <strong>the physics lattice is the finer one</strong>. That is the exact sense in which the two articles print one algebra in two integer frames.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_{jk}$</td>
+<td>the matrix unit of $\mathbb{C}^{4}$ in the order $(t,x,y,z)$</td>
+</tr>
+<tr>
+<td>$A_{jk}=E_{jk}-E_{kj}$</td>
+<td>the real generator of the plane $\{j,k\}$, physics basis</td>
+</tr>
+<tr>
+<td>$iS_{jk}=i(E_{jk}+E_{kj})$</td>
+<td>the imaginary generator of the same plane, physics basis</td>
+</tr>
+<tr>
+<td>$D=\operatorname{diag}(-3,1,1,1)$</td>
+<td>the corner, and $iD$ its generator</td>
+</tr>
+<tr>
+<td>$d_2,d_3$</td>
+<td>$i\operatorname{diag}(0,1,-1,0)$ and $i\operatorname{diag}(0,0,1,-1)$</td>
+</tr>
+<tr>
+<td>$\ell_a=G_{a}$, $r_a=G_{a+3}$</td>
+<td>left and right multiplication by $\vec e_a$, maths basis</td>
+</tr>
+<tr>
+<td>$iN_{jk}=G_{7..15}$</td>
+<td>$i$ times the nine products, maths basis</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>the change of basis, $P=MC$, with $|\det C|=3/256$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="related">Related</h2>
+<ul>
+<li><a href="../../articles_physics/the-axf-matrices-of-the-twenty-one-generators.html">The AXF Matrices of the Twenty-One Generators</a>. The physics fifteen printed one to a display, with the weak triples separated.</li>
+<li><a href="../../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a>. The maths fifteen, numbered $G_1$ to $G_{15}$.</li>
+<li><a href="structure-SU4-meaning.html">The Meaning of $\mathrm{SU}(4)$ in the Endomorphisms of the Biquaternion Algebra</a>. Why the fifteen is the whole group of the carrier.</li>
+<li><a href="structure-m4c.html">The Structures of $M_4(\mathbb{C})$</a>. The order-four inventory, with $\mathfrak{sl}_4$ of dimension fifteen.</li>
+<li><a href="../the-twenty-one-generators-in-the-axis-free-frame.html">The Twenty-One Generators in the Axis-Free Frame</a>. The operator basis and the cell count.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

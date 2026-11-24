@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The AXF Matrices of the Twenty-One Generators: Fifteen for $\mathfrak{su}(4)$, Three for $\mathfrak{su}(2)_L$, Three for $\mathfrak{su}(2)_R$ — Biquaternion Universe</title>
-  <meta name="description" content="The aim. This article prints every generator of the Four Colours Left–Right Model as a matrix, in the axis-free frame, and groups them by the algebra each…">
+  <meta name="description" content="The aim. This article prints every generator of the Four Colours Left–Right Model as an axis-free matrix, all of them of the same size, and keeps the…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-axf-matrices-of-the-twenty-one-generators-fifteen-for-math0-three-for-math1-three-for-math2"><strong>The AXF Matrices of the Twenty-One Generators: Fifteen for $\mathfrak{su}(4)$, Three for $\mathfrak{su}(2)_L$, Three for $\mathfrak{su}(2)_R$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The aim.</strong> This article prints every generator of the Four Colours Left–Right Model as a matrix, in the axis-free frame, and groups them by the algebra each belongs to. Three algebras are involved and they come in two sizes, so the article has three parts: the fifteen are printed in Part I, and the two weak triples in Parts II and III, and the parts do not share a display.</p>
+<p><strong>The aim.</strong> This article prints every generator of the Four Colours Left–Right Model as an axis-free matrix, all of them of the same size, and keeps the three algebras in three separate parts. <strong>All twenty-one are four-row arrays.</strong> The fifteen of $\mathfrak{su}(4)$ are the coordinate planes and the diagonals; the three of $\mathfrak{su}(2)_L$ are half the left multiplication by the three vector units; the three of $\mathfrak{su}(2)_R$ are half the right multiplication by the same units.</p>
 <p><strong>The three parts.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -79,47 +79,43 @@
 <th>part</th>
 <th>algebra</th>
 <th>generators</th>
-<th>matrices</th>
-<th>prints in</th>
+<th>array</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>I</td>
-<td>$\mathfrak{su}(4)$, the colour-leptoquark algebra</td>
+<td>$\mathfrak{su}(4)$</td>
 <td>$15$</td>
-<td>four-row</td>
-<td>§<em>The Fifteen Matrices of</em> $\mathfrak{su}(4)$</td>
+<td>$A_{jk}$, $iS_{jk}$, $iD$, $d_2$, $d_3$</td>
 </tr>
 <tr>
 <td>II</td>
-<td>$\mathfrak{su}(2)_L$, weak isospin on the left doublet</td>
+<td>$\mathfrak{su}(2)_L$</td>
 <td>$3$</td>
-<td>two-row</td>
-<td>§<em>The Three Matrices of</em> $\mathfrak{su}(2)_L$</td>
+<td>$T^{L}_{a}=\tfrac12 L_{\vec e_a}$</td>
 </tr>
 <tr>
 <td>III</td>
-<td>$\mathfrak{su}(2)_R$, weak isospin on the right doublet</td>
+<td>$\mathfrak{su}(2)_R$</td>
 <td>$3$</td>
-<td>two-row</td>
-<td>§<em>The Three Matrices of</em> $\mathfrak{su}(2)_R$</td>
+<td>$T^{R}_{a}=\tfrac12 R_{\vec e_a}$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>$15+3+3=21$, and the sizes differ for a reason.</strong> The quartet has four dimensions, so its algebra has fifteen generators and its matrices have four rows. Each doublet has two dimensions, so each weak algebra has three generators and its matrices have two rows. <strong>A four-row matrix cannot hold the weak generators and a two-row matrix cannot hold the colour ones</strong>, and the two are therefore printed separately, in separate frames, with no array serving two algebras.</p>
-<p><strong>The count from the cells, once.</strong> A block of $d$ rows carries $d^{2}$ real directions in its anti-Hermitian slice and the trace removes exactly one, so a factor of $d$ rows yields $d^{2}-1$ generators. Hence
+<p><strong>The left and right triples are different arrays, and the difference is visible.</strong> $T^{L}_{x}$ and $T^{R}_{x}$ agree in the upper two rows and columns, the block that carries the line into the colour $x$, and they differ in sign in the lower block, the plane $\{y,z\}$. <strong>Left multiplication turns both planes by the same quarter and right multiplication turns them by opposite quarters</strong>, and that is exactly the difference between the arrays. §<em>Part III</em> prints the six side by side in a pattern table.</p>
+<p><strong>$15+3+3=21$, and the sizes agree.</strong> The quartet is four-dimensional and each of the three vector units is an element of it, so all three algebras act on the same four-row carrier and all twenty-one arrays are four-row. The count from the cells is
 $$
-16-1=15,\qquad 4-1=3,\qquad 4-1=3,\qquad 15+3+3=21 .
+16-1+4-1+4-1=15+3+3=21,
 $$
-The three removed directions are the three identities $i\mathrm I_4$, $i\mathrm I_2$, $i\mathrm I_2$, one per factor, and they are what makes each algebra traceless.</p>
-<p><strong>What the frame is.</strong> The axis-free frame of <a href="the-axf-matrices-axis-free-integer-entries.html">The AXF Matrices: Axis-Free, Integer Entries</a>. In it the matrices of the units are signed permutations with entries in $\{0,+1,-1\}$ and the columns are the products with the units,
+with the three subtrahends the three identities $i\mathrm I_4$, $i\mathrm I_2$, $i\mathrm I_2$: the quartet's trace, and the trace of each doublet's endomorphism algebra.</p>
+<p><strong>What the frame is.</strong> The axis-free frame of <a href="the-axf-matrices-axis-free-integer-entries.html">The AXF Matrices: Axis-Free, Integer Entries</a>. In it the array of an operator is read by columns, the $j$-th column being the product with the $j$-th unit,
 $$
-L_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=\bigl[\tilde Q\,e_{\jmath}\bigr]_{\imath} .
+L_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=\bigl[\tilde Q\,e_{\jmath}\bigr]_{\imath},
 $$
-Every array below is built from the arrays of the units by that rule, by transposition, or by multiplication by $i$. <strong>No array below is a Pauli array or a gamma array</strong>, and no axis is selected anywhere.</p>
-<h2 id="part-i-the-fifteen-matrices-of-math24">Part I. The Fifteen Matrices of $\mathfrak{su}(4)$</h2>
-<p><strong>The frame and the indices.</strong> The quartet is $\mathbb{C}^{4}$ with the base $(e_t,\vec e_x,\vec e_y,\vec e_z)$, where $e_t$ is the lepton line and the other three are the colours, and $E_{jk}$ is the matrix unit in that order. The fifteen are built from the three families of the table.</p>
+and the arrays of the units' two one-sided actions are printed in <a href="../articles_internal/the-twenty-one-generators-in-the-axis-free-frame.html">The Twenty-One Generators in the Axis-Free Frame</a> and <a href="../articles_maths/m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>. <strong>No array below is a Pauli array or a gamma array</strong>, and no axis is chosen anywhere.</p>
+<h2 id="part-i-the-fifteen-matrices-of-math32">Part I. The Fifteen Matrices of $\mathfrak{su}(4)$</h2>
+<p><strong>The frame and the indices.</strong> The quartet is $\mathbb{C}^{4}$ with the base $(e_t,\vec e_x,\vec e_y,\vec e_z)$, $e_t$ the lepton line and the other three the colours, and $E_{jk}$ the matrix unit in that order. The fifteen come in three families.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -164,28 +160,28 @@ $$</p>
 <p><strong>Their action.</strong> $A_{ta}e_t=-e_a$ and $A_{ta}e_a=e_t$: the exponential turns the plane $\{t,a\}$ and fixes the two remaining colours. These three are the real halves of the leptoquark block.</p>
 <p><strong>The three colour planes, which fix the lepton line.</strong></p>
 <p>$$
-A_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
-$$</p>
-<p>$$
 A_{yz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}
 $$</p>
 <p>$$
 A_{zx}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix}
 $$</p>
-<p><strong>Their action.</strong> $A_{bc}e_t=0$: the exponential fixes the lepton line point by point and turns the colour triple. These three are the real part of the eight colour generators, and they are minus the inner derivations, $\tfrac12\operatorname{ad}_{\vec e_a}=-A_{bc}$.</p>
-<p><strong>What the six share.</strong> Real antisymmetric signed permutations with four nonzero entries, of square $-(E_{jj}+E_{kk})$ on their plane and zero elsewhere, of spectrum $i,-i,0,0$, of trace of square $-2$. <strong>The minus sign in that trace is what makes them rotations</strong>: the boost of the same plane has $+2$.</p>
-<h3 id="the-six-imaginary-planes">The Six Imaginary Planes</h3>
-<p><strong>The colour three, the second generator of each colour plane.</strong></p>
 <p>$$
-iS_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+A_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
 $$</p>
+<p><strong>Their action.</strong> $A_{bc}e_t=0$: the exponential fixes the lepton line point by point and turns the colour triple. These three are the real part of the eight colour generators, and they are minus the inner derivations, $\tfrac12\operatorname{ad}_{\vec e_a}=-A_{bc}$.</p>
+<p><strong>What the six share.</strong> Real antisymmetric signed permutations with four nonzero entries, of spectrum $i,-i,0,0$, of trace of square $-2$. <strong>The minus sign in that trace is what makes them rotations</strong>: the boost of the same plane has $+2$.</p>
+<h3 id="the-six-imaginary-planes">The Six Imaginary Planes</h3>
+<p><strong>The colour three.</strong></p>
 <p>$$
 iS_{yz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;i&amp;0\end{pmatrix}
 $$</p>
 <p>$$
 iS_{zx}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\end{pmatrix}
 $$</p>
-<p><strong>The mixed three, the second generator of each leptoquark plane.</strong></p>
+<p>$$
+iS_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>The mixed three.</strong></p>
 <p>$$
 iS_{tx}=\begin{pmatrix}0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
 $$</p>
@@ -195,107 +191,136 @@ $$</p>
 <p>$$
 iS_{tz}=\begin{pmatrix}0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\end{pmatrix}
 $$</p>
-<p><strong>Why the factor $i$.</strong> Without it, $S_{jk}=E_{jk}+E_{kj}$ is real and symmetric, its exponential is not unitary and it generates no compact group. The product by $i$ makes it anti-Hermitian and traceless and puts it in $\mathfrak{su}(4)$. <strong>The pair $(A_{jk},iS_{jk})$ is one cell pair's two real amplitudes</strong>, the two generators of one plane.</p>
-<p><strong>What the six share.</strong> $i$ times a symmetric signed permutation, four nonzero entries, spectrum $i,-i,0,0$, trace of square $-2$, fixing the two lines they do not touch. None is real, so no exponential of one of them is a real matrix.</p>
+<p><strong>Why the factor $i$.</strong> Without it, $S_{jk}=E_{jk}+E_{kj}$ is real and symmetric, its exponential is not unitary, and it generates no compact group. The product by $i$ makes it anti-Hermitian and traceless and puts it in $\mathfrak{su}(4)$. <strong>The pair $(A_{jk},iS_{jk})$ is the two real amplitudes of one plane</strong>, and each is one generator.</p>
+<p><strong>What the six share.</strong> $i$ times a symmetric signed permutation, four nonzero entries, spectrum $i,-i,0,0$, trace of square $-2$, fixing the two lines they do not touch. None is real, so no exponential of one of them is a real array.</p>
 <h3 id="the-three-diagonals">The Three Diagonals</h3>
 <p><strong>The corner.</strong></p>
 <p>$$
-iD=\begin{pmatrix}-3i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix},\qquad D=\operatorname{diag}(-3,1,1,1)
+iD=\begin{pmatrix}-3i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix},\qquad D=\operatorname{diag}(-3,1,1,1).
 $$</p>
-<p><strong>It is not a fourth diagonal.</strong> With $N_{jk}=\ell_jr_k$ the operator frame's products, $iN_{xx}+iN_{yy}+iN_{zz}=iD$: the corner is minus the sum of the colour diagonals, and that identity is why the quartet carries three diagonal generators and not four. <strong>The same $D$ carries $B-L$</strong>, since $B-L=\tfrac13D$ on $\mathbf4$ and $\tfrac12(B-L)=\tfrac16D$.</p>
+<p><strong>It is not a fourth diagonal.</strong> With $N_{jk}=\ell_jr_k$ the operator frame's products, $iN_{xx}+iN_{yy}+iN_{zz}=iD$: the corner is minus the sum of the three diagonal products, and that identity is why the quartet carries three diagonal generators and not four. <strong>The same $D$ carries $B-L$</strong>, with $B-L=\tfrac13D$ on $\mathbf4$.</p>
 <p><strong>The two colour diagonals.</strong></p>
 <p>$$
-d_{2}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+d_{2}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},\qquad d_{3}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\end{pmatrix}.
 $$</p>
-<p>$$
-d_{3}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;-i\end{pmatrix}
-$$</p>
-<p><strong>They fix the lepton line and differ on two colours.</strong> Spectrum $i,-i,0,0$, trace of square $-2$ each, and together with the six colour planes they make the eight colour generators, $3+3+2=8$. <strong>The trace form couples them</strong>, $\operatorname{tr}(d_id_j)=\begin{pmatrix}-2&amp;1\\1&amp;-2\end{pmatrix}$, which is the array form of the statement that a colour basis is a choice and the algebra is not.</p>
-<h2 id="part-ii-the-three-matrices-of-math85">Part II. The Three Matrices of $\mathfrak{su}(2)_L$</h2>
-<p><strong>The frame.</strong> A different frame and a different size: the left doublet is $\mathbb{C}^{2}$, and its generators are half the axis-free matrices of the three units of the two-row frame,
+<p><strong>They fix the lepton line and differ on two colours.</strong> Spectrum $i,-i,0,0$, trace of square $-2$ each, and together with the six colour planes they make the eight colour generators, $3+3+2=8$. <strong>Their trace form couples them</strong>, $\operatorname{tr}(d_id_j)=\begin{pmatrix}-2&amp;1\\1&amp;-2\end{pmatrix}$, which is the array form of the statement that a colour basis is a choice and the algebra is not.</p>
+<h2 id="part-ii-the-three-matrices-of-math90">Part II. The Three Matrices of $\mathfrak{su}(2)_L$</h2>
+<p><strong>The frame.</strong> The generators are half the left multiplication by the three vector units, read in the same four-row axis-free frame:
 $$
-T^{L}_{a}:=\tfrac12\,\mathsf M_2(\vec e_a),\qquad a=x,y,z ,
+T^{L}_{a}:=\tfrac12\,L_{\vec e_a},\qquad a=x,y,z .
 $$
-with $\mathsf M_2$ the axis-free two-row representation. The half removes the factor two that $[\vec e_x,\vec e_y]=2\vec e_z$ carries, so that the structure constants come out as $\epsilon_{abc}$ with no constant.</p>
+<strong>The half removes a factor two.</strong> The arrays of the units satisfy $[L_{\vec e_a},L_{\vec e_b}]=2\epsilon_{abc}L_{\vec e_c}$, because $[\vec e_x,\vec e_y]=2\vec e_z$ at the element level; halving makes the structure constants $\epsilon_{abc}$ with no constant. <strong>Nothing else is chosen</strong>: each array is a signed permutation and the half is a number.</p>
 <p><strong>The three, one to a display.</strong></p>
 <p>$$
-T^{L}_{x}=\tfrac12\mathsf M_2(\vec e_x)=\begin{pmatrix}0&amp;-\tfrac{i}{2}\\-\tfrac{i}{2}&amp;0\end{pmatrix}
+T^{L}_{x}=\tfrac12 L_{\vec e_x}=\begin{pmatrix}0&amp;-\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-\tfrac12\\0&amp;0&amp;\tfrac12&amp;0\end{pmatrix}
 $$</p>
 <p>$$
-T^{L}_{y}=\tfrac12\mathsf M_2(\vec e_y)=\begin{pmatrix}0&amp;-\tfrac12\\\tfrac12&amp;0\end{pmatrix}
+T^{L}_{y}=\tfrac12 L_{\vec e_y}=\begin{pmatrix}0&amp;0&amp;-\tfrac12&amp;0\\0&amp;0&amp;0&amp;\tfrac12\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;-\tfrac12&amp;0&amp;0\end{pmatrix}
 $$</p>
 <p>$$
-T^{L}_{z}=\tfrac12\mathsf M_2(\vec e_z)=\begin{pmatrix}-\tfrac{i}{2}&amp;0\\0&amp;\tfrac{i}{2}\end{pmatrix}
+T^{L}_{z}=\tfrac12 L_{\vec e_z}=\begin{pmatrix}0&amp;0&amp;0&amp;-\tfrac12\\0&amp;0&amp;-\tfrac12&amp;0\\0&amp;\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\end{pmatrix}
 $$</p>
-<p><strong>The shape, read off the entries.</strong> $T^{L}_{x}$ is $i$ times a real symmetric array, $T^{L}_{y}$ is real antisymmetric, $T^{L}_{z}$ is $i$ times a real diagonal. <strong>The three symmetry types are the three generators</strong>, and no sign was chosen by hand: each is $\tfrac12$ times an array of the units.</p>
-<p><strong>The properties.</strong> Anti-Hermitian, traceless, of square $-\tfrac14\mathrm I_2$, of spectrum $\pm\tfrac i2$, and closing as
+<p><strong>The action, read off the columns.</strong> $T^{L}_{a}$ sends $e_t\mapsto\tfrac12 e_a$ and $e_a\mapsto-\tfrac12 e_t$, so it turns the plane $\{t,a\}$; and it sends $e_b\mapsto\tfrac12 e_c$ and $e_c\mapsto-\tfrac12 e_b$, so it turns the plane $\{b,c\}$ <strong>by the same quarter turn</strong>. <strong>The two planes are turned with one orientation</strong>, and the four nonzero entries are the four moves.</p>
+<p><strong>The properties.</strong> Anti-Hermitian, traceless, of trace of square $-1$, of spectrum $\pm\tfrac i2$ each twice, and closing as
 $$
-[T^{L}_{a},T^{L}_{b}]=\epsilon_{abc}\,T^{L}_{c} ,
+[T^{L}_{a},T^{L}_{b}]=\epsilon_{abc}\,T^{L}_{c},
 $$
-so they are a basis of $\mathfrak{su}(2)_L$ and the structure constants are the alternating symbol.</p>
-<h2 id="part-iii-the-three-matrices-of-math104">Part III. The Three Matrices of $\mathfrak{su}(2)_R$</h2>
-<p><strong>The frame.</strong> The right doublet is a second, independent $\mathbb{C}^{2}$, and its generators are the same three arrays in that frame's units:
+so the three are a basis of $\mathfrak{su}(2)_L$ with the alternating symbol as structure constants.</p>
+<h2 id="part-iii-the-three-matrices-of-math109">Part III. The Three Matrices of $\mathfrak{su}(2)_R$</h2>
+<p><strong>The frame.</strong> Half the right multiplication by the same three units, in the same frame:
 $$
-T^{R}_{a}:=\tfrac12\,\mathsf M_2(\vec e_a),\qquad a=x,y,z .
+T^{R}_{a}:=\tfrac12\,R_{\vec e_a},\qquad a=x,y,z .
 $$
 <strong>The three, one to a display.</strong></p>
 <p>$$
-T^{R}_{x}=\tfrac12\mathsf M_2(\vec e_x)=\begin{pmatrix}0&amp;-\tfrac{i}{2}\\-\tfrac{i}{2}&amp;0\end{pmatrix}
+T^{R}_{x}=\tfrac12 R_{\vec e_x}=\begin{pmatrix}0&amp;-\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;\tfrac12\\0&amp;0&amp;-\tfrac12&amp;0\end{pmatrix}
 $$</p>
 <p>$$
-T^{R}_{y}=\tfrac12\mathsf M_2(\vec e_y)=\begin{pmatrix}0&amp;-\tfrac12\\\tfrac12&amp;0\end{pmatrix}
+T^{R}_{y}=\tfrac12 R_{\vec e_y}=\begin{pmatrix}0&amp;0&amp;-\tfrac12&amp;0\\0&amp;0&amp;0&amp;-\tfrac12\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;\tfrac12&amp;0&amp;0\end{pmatrix}
 $$</p>
 <p>$$
-T^{R}_{z}=\tfrac12\mathsf M_2(\vec e_z)=\begin{pmatrix}-\tfrac{i}{2}&amp;0\\0&amp;\tfrac{i}{2}\end{pmatrix}
+T^{R}_{z}=\tfrac12 R_{\vec e_z}=\begin{pmatrix}0&amp;0&amp;0&amp;-\tfrac12\\0&amp;0&amp;\tfrac12&amp;0\\0&amp;-\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\end{pmatrix}
 $$</p>
-<p><strong>Same entries as the left three, and that is the point.</strong> The two triples are equal as arrays and different as operators, because each acts on its own doublet. <strong>Nothing in the array distinguishes them; the block they occupy does</strong>, and that is why a display must say which doublet it is for.</p>
-<p><strong>The properties, identical.</strong> Anti-Hermitian, traceless, of square $-\tfrac14\mathrm I_2$, spectrum $\pm\tfrac i2$, and $[T^{R}_{a},T^{R}_{b}]=\epsilon_{abc}T^{R}_{c}$.</p>
-<h2 id="the-two-parts-side-by-side">The Two Parts Side by Side</h2>
-<p><strong>Where each sits.</strong> The three factors are separate spaces and the twenty-one occupy them one block apiece:</p>
+<p><strong>The action, and the difference from the left.</strong> $T^{R}_{a}$ sends $e_t\mapsto\tfrac12 e_a$ and $e_a\mapsto-\tfrac12 e_t$, the same as the left array; and it sends $e_b\mapsto-\tfrac12 e_c$ and $e_c\mapsto\tfrac12 e_b$, <strong>the opposite quarter turn</strong>. So the right array turns the plane $\{t,a\}$ one way and the plane $\{b,c\}$ the other way, and the two arrays differ in sign on exactly those two entries.</p>
+<p><strong>The six, in one pattern table.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>block</th>
-<th>rows</th>
-<th>algebra</th>
-<th>generators</th>
+<th>array</th>
+<th>entries $(t,a)$</th>
+<th>entries $(a,t)$</th>
+<th>entries $(b,c)$</th>
+<th>entries $(c,b)$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>the quartet</td>
-<td>$1$–$4$</td>
-<td>$\mathfrak{su}(4)$</td>
-<td>the fifteen</td>
+<td>$T^{L}_{x}$</td>
+<td>$-\tfrac12$</td>
+<td>$\tfrac12$</td>
+<td>$-\tfrac12$</td>
+<td>$\tfrac12$</td>
 </tr>
 <tr>
-<td>the left doublet</td>
-<td>$5$–$6$</td>
-<td>$\mathfrak{su}(2)_L$</td>
-<td>$T^{L}_{x},T^{L}_{y},T^{L}_{z}$</td>
+<td>$T^{L}_{y}$</td>
+<td>$-\tfrac12$</td>
+<td>$\tfrac12$</td>
+<td>$-\tfrac12$</td>
+<td>$\tfrac12$</td>
 </tr>
 <tr>
-<td>the right doublet</td>
-<td>$7$–$8$</td>
-<td>$\mathfrak{su}(2)_R$</td>
-<td>$T^{R}_{x},T^{R}_{y},T^{R}_{z}$</td>
+<td>$T^{L}_{z}$</td>
+<td>$-\tfrac12$</td>
+<td>$\tfrac12$</td>
+<td>$-\tfrac12$</td>
+<td>$\tfrac12$</td>
+</tr>
+<tr>
+<td>$T^{R}_{x}$</td>
+<td>$-\tfrac12$</td>
+<td>$\tfrac12$</td>
+<td>$\tfrac12$</td>
+<td>$-\tfrac12$</td>
+</tr>
+<tr>
+<td>$T^{R}_{y}$</td>
+<td>$-\tfrac12$</td>
+<td>$\tfrac12$</td>
+<td>$\tfrac12$</td>
+<td>$-\tfrac12$</td>
+</tr>
+<tr>
+<td>$T^{R}_{z}$</td>
+<td>$-\tfrac12$</td>
+<td>$\tfrac12$</td>
+<td>$\tfrac12$</td>
+<td>$-\tfrac12$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The two parts commute.</strong> Written in the three blocks, the twenty-one arrays are block diagonal with one nonzero block each, so every colour generator commutes with every weak generator,
+<p><strong>Read the table as row then column.</strong> The action written above is a column, so $e_t\mapsto\tfrac12 e_a$ is the entry $(a,t)$ and the entry $(t,a)$ is the one that sends $e_a\mapsto-\tfrac12 e_t$.</p>
+<p><strong>The last two columns are the whole difference.</strong> Same entries, opposite signs on the colour plane, and the two signs are the two orderings of the product: $\vec e_a\vec e_b=+\vec e_c$ but $\vec e_b\vec e_a=-\vec e_c$.</p>
+<p><strong>The properties.</strong> Anti-Hermitian, traceless, of trace of square $-1$, of spectrum $\pm\tfrac i2$ each twice, the same as the left triple. <strong>The bracket carries a minus sign</strong>:
 $$
-[X,Y]=0,\qquad X\in\mathfrak{su}(4),\quad Y\in\mathfrak{su}(2)_L\ \text{or}\ \mathfrak{su}(2)_R ,
+[T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}\,T^{R}_{c} .
 $$
-all ninety brackets zero, and the twenty-one are independent. <strong>That is the whole content of the direct sum</strong>: the model's group is $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ and the matrices display the product as blocks and not as sums.</p>
-<h2 id="why-the-sizes-differ">Why the Sizes Differ</h2>
-<p><strong>One paragraph, because the point is easy to lose.</strong> The fifteen are four-row because the space they act on is four-dimensional, and the six are two-row because each doublet is two-dimensional. <strong>Neither size is a choice of convenience</strong>: a two-row matrix cannot act on a quartet and a four-row matrix cannot be faithful on a doublet.</p>
-<p><strong>And the same abstract weak generator also has a four-row reading.</strong> On the carrier, left and right multiplication by the units are four-row arrays $\ell_a$ and $r_a$ with eigenvalues $\pm i$, twice those of $T^{L}_{a}$. They are the same operators under the identification that looks at the quartet rather than at the doublet, and the arithmetic that shows it is
+<strong>Why, in one line.</strong> Right multiplication reverses the order of a product, $R_A R_B=R_{BA}$, so the map $\vec e_a\mapsto R_{\vec e_a}$ is an anti-homomorphism while $\vec e_a\mapsto L_{\vec e_a}$ is a homomorphism. <strong>The span is the same Lie algebra either way</strong>, and $\{-T^{R}_{a}\}$ closes with $+\epsilon_{abc}$; the sign is a choice of labelling inside the triple and not a choice of group.</p>
+<p><strong>The two triples commute.</strong>
 $$
-\ell_a=-A_{ta}-A_{bc},\qquad r_a=-A_{ta}+A_{bc},\qquad \{a,b,c\}=\{x,y,z\},
+[T^{L}_{a},T^{R}_{b}]=0,\qquad a,b=x,y,z,
 $$
-so the four-row reading of the weak generators is a sum of two colour-leptoquark generators and adds no direction to the fifteen. <strong>It is stated here for orientation and used nowhere else</strong>: in this article the weak generators are the two-row arrays of Parts II and III, and the fifteen of Part I are complete without them.</p>
+because $(\vec e_a\tilde X)\vec e_b=\vec e_a(\tilde X\vec e_b)$ by associativity. <strong>That single identity is what makes $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ a subgroup of $\mathrm{SU}(4)$</strong>, and it is why the two triples can be printed side by side without one disturbing the other.</p>
+<h2 id="how-the-six-sit-inside-the-fifteen">How the Six Sit Inside the Fifteen</h2>
+<p><strong>The six are sums and differences of the fifteen, and the coefficients are integers after the halving.</strong>
+$$
+A_{ta}=-(T^{L}_{a}+T^{R}_{a}),\qquad A_{bc}=-(T^{L}_{a}-T^{R}_{a}),\qquad \{a,b,c\}=\{x,y,z\}.
+$$
+<strong>Check one, in four cells.</strong> The two weak arrays agree on the $\{t,a\}$ block, so their sum keeps it doubled and its half is the leptoquark plane; they differ on the $\{b,c\}$ block, so their difference keeps it doubled and its half is the colour plane. <strong>The half in the definition of $T$ is exactly what makes these two lines integral.</strong></p>
+<p><strong>Twenty-one arrays, fifteen directions.</strong> The six relations above are independent, so the rank of the twenty-one columns is fifteen. <strong>Both statements are needed and neither is a defect</strong>: twenty-one distinct arrays, one per generator, and fifteen directions, because six of the arrays are two-term sums of the other fifteen.</p>
+<p><strong>The normalisation, said once.</strong> The fifteen are integer arrays with trace of square $-2$; the six are half-integer arrays with trace of square $-1$. The two normalisations differ by the factor that removes the $2$ from $[\vec e_a,\vec e_b]=2\vec e_c$, and no display mixes them: every array above is printed at its own normalisation and the relations above hold with the halves as written.</p>
+<p><strong>The doublet reading, in three sentences, and then dropped.</strong> The same abstract weak generator also acts on a two-row doublet, where it is $\tfrac i2$ times a $2\times2$ array of Pauli type; that array belongs to the doublet factor of $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$ and not to the quartet. <strong>It is a different carrier and therefore a different array</strong>, and it is not printed here. What is printed here is the carrier's reading, which is the one the two-sided action supplies and the one that makes $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ a subgroup of $\mathrm{SU}(4)$.</p>
 <h2 id="the-checks">The Checks</h2>
-<p>Eighteen recomputations, the coefficient frame with the quartet ordered $(t,x,y,z)$ and the product fixed by $\vec e_x\vec e_y=\vec e_z$.</p>
+<p>Twenty recomputations, the quartet ordered $(t,x,y,z)$ and the product fixed by $\vec e_x\vec e_y=\vec e_z$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -305,71 +330,91 @@ so the four-row reading of the weak generators is a sum of two colour-leptoquark
 </thead>
 <tbody>
 <tr>
-<td>Part I: arrays printed</td>
-<td>$15$</td>
+<td>arrays displayed</td>
+<td>$21$, all four-row</td>
 </tr>
 <tr>
-<td>Part I: distinct, anti-Hermitian, traceless</td>
-<td>$15$, $15/15$, $15/15$</td>
+<td>anti-Hermitian, traceless</td>
+<td>$21/21$, $21/21$</td>
 </tr>
 <tr>
-<td>Part I: rank</td>
-<td>$15$</td>
+<td>distinct arrays</td>
+<td>$21$</td>
 </tr>
 <tr>
-<td>Part I: entries</td>
-<td>$0$, $\pm1$, $\pm i$, one $-3i$</td>
+<td>rank of the twenty-one / of the fifteen</td>
+<td>$15$ / $15$</td>
 </tr>
 <tr>
-<td>Part I: $iN_{xx}+iN_{yy}+iN_{zz}=iD$</td>
+<td>$T^{L}_{a}$ differs from $T^{R}_{a}$, each $a$</td>
+<td>$3/3$, by $1$ on two entries</td>
+</tr>
+<tr>
+<td>left and right agree on the $\{t,a\}$ block</td>
+<td>$3/3$</td>
+</tr>
+<tr>
+<td>entries of the weak six</td>
+<td>$0$, $\pm\tfrac12$</td>
+</tr>
+<tr>
+<td>$[T^{L}_{a},T^{L}_{b}]=\epsilon_{abc}T^{L}_{c}$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>$[T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}T^{R}_{c}$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>$\{-T^{R}_{a}\}$ closes with $+\epsilon_{abc}$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>$[T^{L}_{a},T^{R}_{b}]=0$</td>
+<td>$9/9$ exact</td>
+</tr>
+<tr>
+<td>$[L_{\vec e_a},L_{\vec e_b}]=2\epsilon_{abc}L_{\vec e_c}$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(T^{L})^{2}=\operatorname{tr}(T^{R})^{2}$</td>
+<td>$-1$, $-1$</td>
+</tr>
+<tr>
+<td>spectrum of each weak array</td>
+<td>$\pm\tfrac i2$, twice</td>
+</tr>
+<tr>
+<td>$A_{ta}=-(T^{L}_{a}+T^{R}_{a})$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>$A_{bc}=-(T^{L}_{a}-T^{R}_{a})$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>$iN_{xx}+iN_{yy}+iN_{zz}=iD$</td>
 <td>exact</td>
 </tr>
 <tr>
-<td>Part I: eight colour generators fix $e_t$ / six mixed move it</td>
-<td>$8/8$ / $6/6$</td>
-</tr>
-<tr>
-<td>Part I: $\operatorname{tr}X^{2}$</td>
+<td>$\operatorname{tr}X^{2}$ of the fifteen</td>
 <td>$-2$ on the twelve planes, $-12$ on $iD$</td>
 </tr>
 <tr>
-<td>Part II and III: arrays printed</td>
-<td>$3$ and $3$</td>
-</tr>
-<tr>
-<td>Part II and III: anti-Hermitian, traceless</td>
-<td>$6/6$, $6/6$</td>
-</tr>
-<tr>
-<td>Part II and III: $[T_a,T_b]=\epsilon_{abc}T_c$</td>
-<td>$6/6$ exact</td>
-</tr>
-<tr>
-<td>Part II and III: square $-\tfrac14\mathrm I_2$, spectrum $\pm\tfrac i2$, $\operatorname{tr}T^{2}=-\tfrac12$</td>
-<td>yes, yes, yes</td>
-</tr>
-<tr>
-<td>the three blocks independent at eight rows</td>
-<td>rank $21$</td>
-</tr>
-<tr>
-<td>colour against weak brackets</td>
-<td>$90/90$ zero</td>
+<td>eight colour generators fix $e_t$ / six mixed move it</td>
+<td>$8/8$ / $6/6$</td>
 </tr>
 <tr>
 <td>$\det\exp(0.7X)=1$ and unitary</td>
 <td>$21/21$</td>
 </tr>
-<tr>
-<td>cell arithmetic $16-1+4-1+4-1=21$</td>
-<td>exact</td>
-</tr>
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p>The twenty-one generators are printed as twenty-one matrices, and the article keeps them in the two algebras they belong to. <strong>Part I prints the fifteen of $\mathfrak{su}(4)$ as four-row axis-free arrays</strong>: six real planes, six imaginary planes and three diagonals. <strong>Parts II and III print the three of $\mathfrak{su}(2)_L$ and the three of $\mathfrak{su}(2)_R$ as two-row axis-free arrays</strong>, each triple $\tfrac12$ times the matrices of the units and closing at $\epsilon_{abc}$.</p>
-<p>The sizes differ because the spaces differ: four dimensions for the quartet, two for each doublet, and $16-1+4-1+4-1=15+3+3=21$ is the count from the cells with the three identities removed. The two parts commute and are independent, which is the statement that the model's group is a product.</p>
-<p>The one place the two parts meet is a single remark: on the carrier the weak generators also read as $\ell_a=-A_{ta}-A_{bc}$ and $r_a=-A_{ta}+A_{bc}$, four-row sums of colour-leptoquark generators. That reading adds no generator to the fifteen, and this article does not use it.</p>
+<p>The twenty-one generators are twenty-one four-row axis-free arrays, printed one to a display and kept in three parts. <strong>Part I prints the fifteen of $\mathfrak{su}(4)$</strong>: six real planes, six imaginary planes and three diagonals. <strong>Part II prints the three of $\mathfrak{su}(2)_L$</strong> as half the left multiplication by the vector units, and <strong>Part III the three of $\mathfrak{su}(2)_R$</strong> as half the right multiplication.</p>
+<p><strong>The left and right triples are different arrays</strong>: they agree on the plane $\{t,a\}$ and differ in sign on the plane $\{b,c\}$, because left multiplication turns both planes together and right multiplication turns them apart. The difference is one sign on two entries per array, and it is the difference between the two factors of the model.</p>
+<p>The two triples commute, so $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ sits inside $\mathrm{SU}(4)$; the right triple's bracket carries a minus sign because right multiplication reverses products; and the six weak arrays are the sums and differences of the fifteen, $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-(T^{L}_{a}-T^{R}_{a})$, so twenty-one arrays span fifteen directions.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -381,15 +426,11 @@ so the four-row reading of the weak generators is a sum of two colour-leptoquark
 <tbody>
 <tr>
 <td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>the base of the carrier, with $\vec e_x\vec e_y=\vec e_z$ cyclically</td>
+<td>the base of the carrier, $\vec e_x\vec e_y=\vec e_z$ cyclically</td>
 </tr>
 <tr>
 <td>$L_{\mathrm{axf}}(\tilde Q)$</td>
-<td>the matrix of left multiplication in the coefficient basis</td>
-</tr>
-<tr>
-<td>$\mathsf M_2(\vec e_a)$</td>
-<td>the axis-free two-row matrix of the unit $\vec e_a$</td>
+<td>the array of left multiplication, columns equal to products</td>
 </tr>
 <tr>
 <td>$E_{jk}$</td>
@@ -412,32 +453,30 @@ so the four-row reading of the weak generators is a sum of two colour-leptoquark
 <td>the two traceless colour diagonals</td>
 </tr>
 <tr>
-<td>$T^{L}_{a}=\tfrac12\mathsf M_2(\vec e_a)$</td>
+<td>$L_{\vec e_a},R_{\vec e_a}$</td>
+<td>left and right multiplication by the vector units</td>
+</tr>
+<tr>
+<td>$T^{L}_{a}=\tfrac12 L_{\vec e_a}$</td>
 <td>the three generators of $\mathfrak{su}(2)_L$</td>
 </tr>
 <tr>
-<td>$T^{R}_{a}=\tfrac12\mathsf M_2(\vec e_a)$</td>
+<td>$T^{R}_{a}=\tfrac12 R_{\vec e_a}$</td>
 <td>the three generators of $\mathfrak{su}(2)_R$</td>
-</tr>
-<tr>
-<td>$\ell_a,r_a$</td>
-<td>the four-row reading of the weak generators on the carrier, used once</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="../articles_internal/the-twenty-one-generators-in-the-axis-free-frame.html">The Twenty-One Generators in the Axis-Free Frame</a>. The arrays of $L_{\vec e_a}$ and $R_{\vec e_a}$, their word support and the six relations.</li>
 <li><a href="the-axf-matrices-axis-free-integer-entries.html">The AXF Matrices: Axis-Free, Integer Entries</a>. The frame, the signed permutations and the ten properties.</li>
-<li><a href="../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a>. The fifteen in the operator basis, printed one to a display.</li>
-<li><a href="../articles_maths/the-anti-hermitian-derivations-of-m2c-as-su2.html">The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</a>. The three two-row generators and the half that removes the factor two.</li>
-<li><a href="../articles_maths/m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a> and <a href="../articles_maths/m2c-defining-representation.html">$M_2(\mathbb{C})$ Defining Representation</a>. The four-row and two-row frames the two parts are built in.</li>
-<li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>. The displays, the operator that owns the array, and the ban on tildes on arrays.</li>
+<li><a href="../articles_maths/m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a> and <a href="../articles_maths/m2c-defining-representation.html">$M_2(\mathbb{C})$ Defining Representation</a>. The four-row and two-row frames.</li>
+<li><a href="../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a>. The fifteen in the operator basis, numbered $G_1$ to $G_{15}$.</li>
+<li><a href="../articles_internal/structures/structure-SU4-basis-comparison.html">Two Bases of $\mathfrak{su}(4)$</a>. The change of basis between this fifteen and the operator fifteen, in both directions.</li>
 <li><a href="the-rotors-of-the-twenty-one-generators-three-turn-space-three-turn-the-quartet-and-no-boost.html">The Rotors of the Twenty-One Generators</a>. What each of these arrays does when exponentiated.</li>
-<li><a href="classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html">Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive</a>. The cells and the ledger.</li>
-<li><a href="charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour</a>. $B-L$, the trace of $D$ and the charge table.</li>
-<li><a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. The declaration and the ladder.</li>
-<li>H. Georgi, <em>Lie Algebras in Particle Physics</em>, Benjamin Cummings, 1982 — the embeddings of $\mathfrak{su}(2)\times\mathfrak{su}(2)$ in $\mathfrak{su}(4)$ and the weak normalisations.</li>
-<li>W. Fulton and J. Harris, <em>Representation Theory: A First Course</em>, Springer, 1991 — direct sums, blocks, and why a product of groups is displayed as a block array.</li>
+<li><a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. The declaration, and why $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R=\exp L(\mathfrak k)\times\exp R(\mathfrak k)$.</li>
+<li><a href="classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html">Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators</a>. The cells and the ledger.</li>
+<li>W. Fulton and J. Harris, <em>Representation Theory: A First Course</em>, Springer, 1991 — one-sided actions, the anti-homomorphism of the right action, and why the two commute.</li>
 </ul>
       </div>
     </main>

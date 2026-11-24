@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Physics Triple and the Maths Triple of $\mathfrak{su}(2)$: One Factor of Two — Biquaternion Universe</title>
+  <meta name="description" content="Two articles print the same six four-row arrays, in two normalisations.">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-physics-triple-and-the-maths-triple-of-math0-one-factor-of-two"><strong>The Physics Triple and the Maths Triple of $\mathfrak{su}(2)$: One Factor of Two</strong></h1>
+<h2 id="what-the-two-lists-are">What the Two Lists Are</h2>
+<p>Two articles print the same six four-row arrays, in two normalisations.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>source</th>
+<th>arrays</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../articles_physics/the-axf-matrices-of-the-twenty-one-generators.html">The AXF Matrices of the Twenty-One Generators</a></td>
+<td>$T^{L}_{a}=\tfrac12 L_{\vec e_a}$, $T^{R}_{a}=\tfrac12 R_{\vec e_a}$</td>
+</tr>
+<tr>
+<td><a href="../../articles_maths/the-anti-hermitian-derivations-of-m2c-as-su2.html">The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</a>, <em>The Axis-Free Representation, $4\times4$</em></td>
+<td>$\ell_a=L_{\vec e_a}$, $r_a=R_{\vec e_a}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The change of basis is one number.</strong>
+$$
+T^{L}_{a}=\tfrac12\,\ell_a,\qquad T^{R}_{a}=\tfrac12\,r_a,\qquad C=\tfrac12\mathrm I_6 .
+$$</p>
+<h2 id="why-the-half">Why the Half</h2>
+<p><strong>It is a choice, and nothing forces it.</strong> Any nonzero scalar multiple of the six arrays is a basis of the same two $\mathfrak{su}(2)$'s, with the same brackets up to that scalar. The half is inherited from the maths article, which defines $G_k:=\tfrac12\mathsf M_2(\vec e_k)$, and that is the usual physics doublet normalisation $T_a=\tfrac12\sigma_a$. <strong>Inherited, not derived.</strong></p>
+<p><strong>What this choice buys.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>whole</th>
+<th>halved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bracket</td>
+<td>$2\epsilon_{abc}$</td>
+<td>$\epsilon_{abc}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}X^{2}$</td>
+<td>$-4$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$\det$</td>
+<td>$1$</td>
+<td>$1/16$</td>
+</tr>
+<tr>
+<td>coefficients of $A_{ta},A_{bc}$ in the six</td>
+<td>$\pm\tfrac12$</td>
+<td>$\pm1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What it does not buy.</strong> The six stay in $\mathfrak{su}(4)$ at any normalisation: they are anti-Hermitian and traceless whatever the scalar. What the half changes is the <strong>coordinates</strong>, not the membership. With the halves, each of the six planes $A_{ta}$ and $A_{bc}$ is an integer combination of the six with coefficients $\pm1$; with the arrays whole, the same two lines carry $\pm\tfrac12$. <strong>So the halved six put those six planes inside the $\mathbb{Z}$-span of the six, and the whole six do not.</strong> The other nine of the fifteen lie outside that span either way. That is the precise content of
+$$
+A_{ta}=-(T^{L}_{a}+T^{R}_{a}),\qquad A_{bc}=-(T^{L}_{a}-T^{R}_{a}),
+$$
+and it is the only line in this note that a different normalisation would falsify.</p>
+<p><strong>And $\tfrac12$ is not the only choice that does it.</strong> Every $\lambda=1/(2n)$ gives integer coordinates: $n=1$ gives $\pm1$, $n=2$ gives $\pm2$, and so on without end. <strong>The half is simply the largest $\lambda$ of that family</strong>, the one with the smallest integers, and that together with the standard structure constant $\epsilon_{abc}$ and the rational trace $-1$ is the whole of the argument. A convention, and a reasonable one, not a theorem.</p>
+<h2 id="section-a-my-six-each-as-the-half-of-its-maths-partner">Section A. My Six, Each as the Half of Its Maths Partner</h2>
+<h3 id="the-three-left">The Three Left</h3>
+<p><strong>$T^{L}_{x}=\tfrac12\ell_x$.</strong></p>
+<p>$$
+T^{L}_{x}=\begin{pmatrix}0&amp;-\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-\tfrac12\\0&amp;0&amp;\tfrac12&amp;0\end{pmatrix}=\tfrac12\,\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}
+$$</p>
+<p><strong>$T^{L}_{y}=\tfrac12\ell_y$.</strong></p>
+<p>$$
+T^{L}_{y}=\begin{pmatrix}0&amp;0&amp;-\tfrac12&amp;0\\0&amp;0&amp;0&amp;\tfrac12\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;-\tfrac12&amp;0&amp;0\end{pmatrix}=\tfrac12\,\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>$T^{L}_{z}=\tfrac12\ell_z$.</strong></p>
+<p>$$
+T^{L}_{z}=\begin{pmatrix}0&amp;0&amp;0&amp;-\tfrac12\\0&amp;0&amp;-\tfrac12&amp;0\\0&amp;\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\end{pmatrix}=\tfrac12\,\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<h3 id="the-three-right">The Three Right</h3>
+<p><strong>$T^{R}_{x}=\tfrac12 r_x$.</strong></p>
+<p>$$
+T^{R}_{x}=\begin{pmatrix}0&amp;-\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;\tfrac12\\0&amp;0&amp;-\tfrac12&amp;0\end{pmatrix}=\tfrac12\,\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}
+$$</p>
+<p><strong>$T^{R}_{y}=\tfrac12 r_y$.</strong></p>
+<p>$$
+T^{R}_{y}=\begin{pmatrix}0&amp;0&amp;-\tfrac12&amp;0\\0&amp;0&amp;0&amp;-\tfrac12\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;\tfrac12&amp;0&amp;0\end{pmatrix}=\tfrac12\,\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>$T^{R}_{z}=\tfrac12 r_z$.</strong></p>
+<p>$$
+T^{R}_{z}=\begin{pmatrix}0&amp;0&amp;0&amp;-\tfrac12\\0&amp;0&amp;\tfrac12&amp;0\\0&amp;-\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\end{pmatrix}=\tfrac12\,\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>Pairing is by label and by side.</strong> $T^{L}_{a}$ pairs with $\ell_a$, $T^{R}_{a}$ with $r_a$; no left array is a half of a right array, because $\ell_a\neq r_a$ for every $a$.</p>
+<h2 id="section-b-the-maths-six-each-as-twice-one-of-mine">Section B. The Maths Six, Each as Twice One of Mine</h2>
+<h3 id="the-three-left_1">The Three Left</h3>
+<p><strong>$\ell_x=2\,T^{L}_{x}$.</strong></p>
+<p>$$
+\ell_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}=2\,\begin{pmatrix}0&amp;-\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-\tfrac12\\0&amp;0&amp;\tfrac12&amp;0\end{pmatrix}
+$$</p>
+<p><strong>$\ell_y=2\,T^{L}_{y}$.</strong></p>
+<p>$$
+\ell_y=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix}=2\,\begin{pmatrix}0&amp;0&amp;-\tfrac12&amp;0\\0&amp;0&amp;0&amp;\tfrac12\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;-\tfrac12&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>$\ell_z=2\,T^{L}_{z}$.</strong></p>
+<p>$$
+\ell_z=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}=2\,\begin{pmatrix}0&amp;0&amp;0&amp;-\tfrac12\\0&amp;0&amp;-\tfrac12&amp;0\\0&amp;\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<h3 id="the-three-right_1">The Three Right</h3>
+<p><strong>$r_x=2\,T^{R}_{x}$.</strong></p>
+<p>$$
+r_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}=2\,\begin{pmatrix}0&amp;-\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;\tfrac12\\0&amp;0&amp;-\tfrac12&amp;0\end{pmatrix}
+$$</p>
+<p><strong>$r_y=2\,T^{R}_{y}$.</strong></p>
+<p>$$
+r_y=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix}=2\,\begin{pmatrix}0&amp;0&amp;-\tfrac12&amp;0\\0&amp;0&amp;0&amp;-\tfrac12\\\tfrac12&amp;0&amp;0&amp;0\\0&amp;\tfrac12&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>$r_z=2\,T^{R}_{z}$.</strong></p>
+<p>$$
+r_z=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}=2\,\begin{pmatrix}0&amp;0&amp;0&amp;-\tfrac12\\0&amp;0&amp;\tfrac12&amp;0\\0&amp;-\tfrac12&amp;0&amp;0\\\tfrac12&amp;0&amp;0&amp;0\end{pmatrix}
+$$</p>
+<p><strong>Both directions are the same scalar read twice.</strong> $C=\tfrac12\mathrm I_6$ forward, $C^{-1}=2\mathrm I_6$ back, $|\det C|=1/64$, and no off-diagonal entry: this is a rescaling, not a rotation of the six-space.</p>
+<h2 id="the-one-thing-the-half-does-not-reach">The One Thing the Half Does Not Reach</h2>
+<p><strong>The two-row triple $G_a=\tfrac12\mathsf M_2(\vec e_a)$ is not a linear combination of my six.</strong> A combination of four-row arrays is four-row. The bridge is a similarity, $\tfrac12S^{-1}\ell_aS=\mathrm I_2\otimes G_a$, with $S$ the Peirce change of frame; the invariant that can be checked without building $S$ is the characteristic polynomial, $(\lambda^{2}+\tfrac14)^{2}$ on both sides.</p>
+<h2 id="checks">Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T^{L}_{a}=\tfrac12\ell_a$, $T^{R}_{a}=\tfrac12 r_a$ / the inverse</td>
+<td>$6/6$, $6/6$</td>
+</tr>
+<tr>
+<td>anti-Hermitian and traceless</td>
+<td>$12/12$</td>
+</tr>
+<tr>
+<td>$[\ell_a,\ell_b]=2\epsilon_{abc}\ell_c$ / $[r_a,r_b]=-2\epsilon_{abc}r_c$</td>
+<td>$3/3$, $3/3$</td>
+</tr>
+<tr>
+<td>$[T^{L}_{a},T^{L}_{b}]=\epsilon_{abc}T^{L}_{c}$ / $[T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}T^{R}_{c}$</td>
+<td>$3/3$, $3/3$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}X^{2}$ whole / halved</td>
+<td>$-4$, $-1$</td>
+</tr>
+<tr>
+<td>$\det$ whole / halved</td>
+<td>$1$, $1/16$</td>
+</tr>
+<tr>
+<td>$A_{ta}=-(T^{L}_{a}+T^{R}_{a})$</td>
+<td>$3/3$</td>
+</tr>
+<tr>
+<td>the same line with whole arrays has coefficients $-\tfrac12$</td>
+<td>$3/3$</td>
+</tr>
+<tr>
+<td>$\lambda=1/(2n)$, $n=1,2,3,4$, all give integer coordinates</td>
+<td>$4/4$</td>
+</tr>
+<tr>
+<td>$P=\tfrac12 M$ on the six columns</td>
+<td>exact</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="related">Related</h2>
+<ul>
+<li><a href="../../articles_physics/the-axf-matrices-of-the-twenty-one-generators.html">The AXF Matrices of the Twenty-One Generators</a>. My six, one to a display.</li>
+<li><a href="../../articles_maths/the-anti-hermitian-derivations-of-m2c-as-su2.html">The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$</a>. The maths six and the two-row three.</li>
+<li><a href="structure-SU4-basis-comparison.html">Two Bases of $\mathfrak{su}(4)$</a>. The same question one algebra up, where the change of basis is not a scalar.</li>
+<li><a href="../the-twenty-one-generators-in-the-axis-free-frame.html">The Twenty-One Generators in the Axis-Free Frame</a>. The inventory and the six relations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
