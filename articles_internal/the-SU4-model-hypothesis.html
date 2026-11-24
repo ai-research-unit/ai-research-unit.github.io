@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $\mathrm{SU}(4)$ Model Hypothesis: Fifteen Bosons, Two Borders, and the Six Obstacles — Biquaternion Universe</title>
+  <meta name="description" content="The hypothesis, stated fairly. The Standard Model gauges twelve directions, The suggestion is that one chirality is missing, so that the honest count is…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-model-hypothesis-fifteen-bosons-two-borders-and-the-six-obstacles"><strong>The $\mathrm{SU}(4)$ Model Hypothesis: Fifteen Bosons, Two Borders, and the Six Obstacles</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The hypothesis, stated fairly.</strong> The Standard Model gauges twelve directions,
+$$
+\underbrace{8}_{\mathfrak{su}(3)}+\underbrace{3}_{\mathfrak{su}(2)_{L}}+\underbrace{1}_{\mathfrak u(1)}=12 .
+$$
+<strong>The suggestion is that one chirality is missing</strong>, so that the honest count is
+$$
+8+3+3+1=15 ,
+$$
+with a second weak triple restored. <strong>And $15$ is exactly $\dim\mathfrak{su}(4)=4^{2}-1$.</strong> The further suggestion is geometric: pass from a $3\times3$ block to a $4\times4$ by adding one corner and two borders, and the two borders will carry the two weak triples. <strong>That last step is right in the generative sense and wrong in the assemblic sense</strong>: the borders do generate $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, and they pay for it with three of the colour directions.</p>
+<p><strong>The verdict, in one line.</strong> <strong>The count is right, the model exists, and it is not $\mathrm{SU}(4)$.</strong> The fifteen-boson group is $\mathrm{SU}(3)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R}\times\mathrm U(1)_{B-L}$. It is a subgroup of the twenty-one of the Four Colours model, and it is <strong>not</strong> a subgroup of $\mathrm{SU}(4)$.</p>
+<p><strong>Why the two fifteens are different.</strong> $\dim\mathfrak{su}(4)=15$ and $\dim\bigl(\mathfrak{su}(3)\oplus\mathfrak{su}(2)\oplus\mathfrak{su}(2)\oplus\mathfrak u(1)\bigr)=15$. <strong>Equal dimension, different content</strong>, and the difference is not a matter of taste:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>content</th>
+<th>dimension</th>
+<th>rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(4)$</td>
+<td>$8+1+6$</td>
+<td>$15$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>left–right model</td>
+<td>$8+1+3+3$</td>
+<td>$15$</td>
+<td>$5$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two rows agree in the middle column and in nothing else.</strong> The $6$ of the first row is the leptoquark sector; the $3+3$ of the second row is the two weak triples. <strong>The numerical coincidence is exactly $3+3=6$</strong>, and that is the whole of it.</p>
+<p><strong>What follows.</strong> §<em>The Counting</em> says where the coincidence comes from. §<em>The Geometry You Saw</em> confirms the block picture, which is correct. §<em>The Six Obstacles</em> gives the obstructions, each with an exact number. §<em>What Is True</em> gives the constructive statement, and §<em>What Would Make an $\mathrm{SU}(4)$ Model</em> lists the honest routes.</p>
+<h2 id="the-counting">The Counting</h2>
+<p><strong>Twelve is the Standard Model.</strong> Three algebras, three couplings, rank
+$$
+2+1+1=4 .
+$$</p>
+<p><strong>Fifteen is the left–right model.</strong> Restoring the second weak triple gives four algebras, four couplings, rank
+$$
+2+1+1+1=5 .
+$$
+<strong>This is not a speculation: the group $\mathrm{SU}(3)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R}\times\mathrm U(1)_{B-L}$ is a standard object</strong>, and the corpus treats its weak pair in <a href="../articles_physics/su2l-times-su2r-two-sides-six-generators-one-group.html">$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group</a>.</p>
+<p><strong>Fifteen is also $\mathfrak{su}(4)$.</strong> But $\mathfrak{su}(4)$ is <strong>simple</strong>: one algebra, one coupling, rank $3$. <strong>Its fifteen directions split as $8+1+6$</strong>, and the six are the leptoquarks, which are gauge bosons and not optional.</p>
+<p><strong>So there are two fifteens and only one of them is simple.</strong> The hypothesis picks the number $15$ and then reads it as the simple one. <strong>The reading is what fails.</strong></p>
+<h2 id="the-geometry-you-saw">The Geometry You Saw</h2>
+<p><strong>The block picture is correct, and it is worth printing exactly.</strong> Write a traceless anti-Hermitian $4\times4$ array in the block form of the quartet $(e_t,\vec e_x,\vec e_y,\vec e_z)$:
+$$
+M=\begin{pmatrix}i\alpha &amp; \bar v^{\mathsf T}\\ -v &amp; A\end{pmatrix},\qquad A^{\dagger}=-A,\ v\in\mathbb C^{3},\ \alpha\in\mathbb R .
+$$
+<strong>The traceless condition fixes the corner</strong>, $i\alpha+\operatorname{tr}A=0$, so the corner is <strong>not an extra parameter</strong>. The count is then
+$$
+\underbrace{9}_{A\ \text{and its trace}}+\underbrace{6}_{v}=15 .
+$$</p>
+<p><strong>The two blocks, named.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>what it is</th>
+<th>real dimension</th>
+<th>the corpus's names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3\times3$ block</td>
+<td>$\mathfrak u(3)\subset\mathfrak{su}(4)$, the corner fixed by the trace</td>
+<td>$9$</td>
+<td>the eight gluons and $iD$</td>
+</tr>
+<tr>
+<td>border $v$ and $\bar v^{\mathsf T}$</td>
+<td>the coset $\mathfrak{su}(4)/\mathfrak u(3)$</td>
+<td>$6$</td>
+<td>$A_{ta}$ and $iS_{ta}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>And $\mathfrak u(3)=\mathfrak{su}(3)\oplus\mathfrak u(1)$</strong>, with the $\mathfrak u(1)$ the corner direction $iD=i\operatorname{diag}(-3,1,1,1)$, which is $B-L$ on the quartet. <strong>So</strong>
+$$
+15=\underbrace{8+1}_{9}+\underbrace{6}_{\text{border}} .
+$$
+<strong>This is exactly the shape the hypothesis saw</strong>: a $3\times3$ block, one corner, two borders. <strong>The arithmetic of the picture is right.</strong></p>
+<p><strong>The borders, counted once.</strong> The $(t,a)$ border is three complex entries, so <strong>six real numbers</strong>; the $(a,t)$ border is not independent, because anti-Hermiticity relates it to the first. <strong>The two borders together carry six real parameters, not twelve</strong>, and those six split as
+$$
+\underbrace{3}_{\text{real antisymmetric }A_{ta}}+\underbrace{3}_{\text{imaginary symmetric }iS_{ta}} .
+$$
+<strong>So the "two borders, $3+3$" reading is arithmetically available.</strong> It is the identification of that $3+3$ with the two weak triples that fails, and it fails in six separate ways, given next.</p>
+<h2 id="the-six-obstacles">The Six Obstacles</h2>
+<h3 id="obstacle-one-rank-this-one-is-decisive-on-its-own">Obstacle one: rank. This one is decisive on its own</h3>
+<p><strong>The two numbers, and which group each belongs to.</strong> $\operatorname{rank}\mathfrak{su}(4)=3$, because $\operatorname{rank}\mathfrak{su}(n)=n-1$. The group this hypothesis wants is
+$$
+\mathrm{SU}(3)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R}\times\mathrm U(1)_{B-L},\qquad
+\operatorname{rank}=2+1+1+1=5 .
+$$
+<strong>The rank five belongs to the product, not to $\mathfrak{su}(4)$.</strong> The model's full group is the twenty-one,
+$$
+G_{4LR}=\mathrm{SU}(4)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R},\qquad
+\operatorname{rank}=3+1+1=5,
+$$
+<strong>and that product is rank five too, for the same reason: the two weak factors are put in as factors.</strong> Rank adds over a direct product. It does not add over a subgroup of one simple factor.</p>
+<p><strong>So the rank five is real, and it is not a property of $\mathfrak{su}(4)$.</strong> The corpus states the rank of $\mathfrak{su}(4)$ as three in three places — dimension fifteen, rank three, in <em>Structural GUT Comparisons</em>, in its table, and in its notation list — and the whole point of that note's rank ceiling is that $\mathfrak{u}(4)$ at rank four is the operator layer's maximum.</p>
+<p><strong>The obstruction, in its sharpest form.</strong> It is not "rank five against rank three" in the abstract. It is this:
+$$
+\underbrace{\operatorname{rank}\mathfrak{su}(3)}_{2}+\underbrace{\operatorname{rank}\bigl(\mathfrak{su}(2)_{L}\oplus\mathfrak{su}(2)_{R}\bigr)}_{2}=4\ &gt;\ 3=\operatorname{rank}\mathfrak{su}(4).
+$$
+<strong>Colour needs two commuting directions. The two weak triples need two more. Four directions in a Cartan that has three.</strong> That is the whole argument, and it is a sum.</p>
+<p><strong>Why the sum cannot be dodged.</strong> A Cartan subalgebra is a maximal abelian subalgebra, so any subalgebra of $\mathfrak{su}(4)$ has rank at most three. Now take the Standard Model's four commuting generators: $T_{3}$, $T_{8}$ from colour, $T_{3L}$ from the weak triple, and hypercharge. <strong>The first two are independent, the third is independent of them, and hypercharge is independent of all three.</strong> Four commuting directions, in a space whose maximum is three. <strong>Verified: the traceless imaginary diagonals are three-dimensional, and adjoining any fourth diagonal leaves the rank at $3$.</strong></p>
+<p><strong>Two subgroups of maximal rank, and they are different.</strong> $\mathfrak{su}(4)$ has several maximal-rank subalgebras, and two of them matter here, because they are the two ways to spend a rank-three Cartan that a unified model cares about:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subalgebra</th>
+<th>dimension</th>
+<th>rank</th>
+<th>content</th>
+<th>fits the hypothesis?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(3)\oplus\mathfrak u(1)$</td>
+<td>$9$</td>
+<td>$3$</td>
+<td>colour and $B-L$</td>
+<td>colour: yes, weak: no</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(2)\oplus\mathfrak{su}(2)\oplus\mathfrak u(1)$</td>
+<td>$7$</td>
+<td>$3$</td>
+<td>a weak pair and a circle</td>
+<td>weak: yes, colour: no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Both are genuine subalgebras of $\mathfrak{su}(4)$ and both are closed.</strong> Verified: the first is the colour option of the corpus, the eight gluons and $iD$; the second is $S(\mathrm U(2)\times\mathrm U(2))$ on a $2+2$ split, dimension seven. A third, $\mathfrak{su}(2)\oplus\mathfrak u(1)\oplus\mathfrak u(1)$, spends the rank on one weak triple and two circles. <strong>The hypothesis wants the union of the first two rows, and that union has rank four.</strong></p>
+<p><strong>The line that separates them.</strong> Where the first row spends its rank on colour and leaves one direction, the second spends it on the weak pair and leaves one. <strong>There is one rank-three Cartan and two claimants, and the hypothesis asks for both claimants at once.</strong></p>
+<p><strong>Why $\mathfrak su(5)$ works and $\mathfrak su(4)$ does not.</strong> $\operatorname{rank}\mathfrak{su}(5)=4$, so the Standard Model's four commuting directions fit, and $24-12=12$ accommodates the surplus. <strong>The test is the same sum and it passes by one.</strong> For the left–right content the sum is five, and the standard simple group of rank five that holds it is $\mathfrak{so}(10)$, which contains $\mathrm{SU}(4)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R}$; <strong>that is why $\mathfrak{so}(10)$ is the standard left–right unification and $\mathfrak{su}(4)$ is not.</strong></p>
+<h3 id="obstacle-two-the-borders-do-generate-the-two-math94s">Obstacle two: the borders do generate the two $\mathfrak{su}(2)$'s</h3>
+<p><strong>The reading is right, and the first thing to say is that it works.</strong> Take the three real border planes $A_{tx},A_{ty},A_{tz}$ and close them under brackets. They are not closed among themselves:
+$$
+[A_{tx},A_{ty}]=-A_{xy},
+$$
+<strong>and that single bracket produces a colour–colour plane.</strong> Closing the triple gives a six-dimensional algebra, and it is exactly
+$$
+\langle A_{tx},A_{ty},A_{tz}\rangle_{\text{Lie}}
+=\operatorname{span}\{A_{tx},A_{ty},A_{tz},A_{xy},A_{xz},A_{yz}\}=\mathfrak{so}(4)
+=\mathfrak{su}(2)_{L}\oplus\mathfrak{su}(2)_{R}.
+$$
+<strong>So the border does produce the two weak triples.</strong> Not as a linear span inside the border, which is impossible, but <strong>generatively</strong>: the border, closed, is the weak pair. <strong>The geometric intuition is correct</strong>, and the earlier phrasing of this section — that the border spans no $\mathfrak{su}(2)$ — was the wrong test, because the proposal was never about a span.</p>
+<p><strong>The imaginary triple does the same thing.</strong> Closing $\{iS_{tx},iS_{ty},iS_{tz}\}$ gives another six-dimensional algebra, and it contains the same three colour planes $A_{xy},A_{xz},A_{yz}$.</p>
+<p><strong>And closing both triples together gives everything:</strong>
+$$
+\dim\langle\text{border}\rangle_{\text{Lie}}=15=\mathfrak{su}(4).
+$$
+<strong>So the two borders generate the whole algebra, not two separate factors.</strong> That is the first structural fact, and it is favourable: the border is exactly the right size to be the source of the weak pair.</p>
+<h3 id="obstacle-three-the-price-is-three-colour-planes-and-there-is-only-one-copy">Obstacle three: the price is three colour planes, and there is only one copy</h3>
+<p><strong>Where the two triples are built.</strong> The self-dual and anti-self-dual combinations are
+$$
+2T^{L}_{x}=-A_{tx}-A_{yz},\qquad 2T^{R}_{x}=-A_{tx}+A_{yz},
+$$
+<strong>one term in the border and one in the colour block.</strong> Every one of the six is half border, half block, and <strong>both triples draw on the same three planes</strong> $A_{xy},A_{xz},A_{yz}$.</p>
+<p><strong>The exact counts.</strong>
+$$
+\dim\bigl(\text{weak six}\cap\text{border}\bigr)=3,\qquad
+\dim\bigl(\text{weak six}\cap\mathfrak u(3)\bigr)=3,
+$$
+and, separating the two triples,
+$$
+\dim\bigl(\mathfrak{su}(2)_{L}\cap\mathfrak u(3)\bigr)=0,\qquad
+\dim\bigl(\mathfrak{su}(2)_{R}\cap\mathfrak u(3)\bigr)=0,
+$$
+$$
+\dim\bigl((\mathfrak{su}(2)_{L}\oplus\mathfrak{su}(2)_{R})\cap\mathfrak u(3)\bigr)=3 .
+$$
+<strong>Each weak triple on its own avoids the colour block entirely.</strong> Together they meet it in three directions, and those three are
+$$
+\mathfrak{so}(4)\cap\mathfrak u(3)=\operatorname{span}\{A_{xy},A_{xz},A_{yz}\},
+$$
+<strong>the three real off-diagonal planes of the colour block — the three gluons that turn one colour into another.</strong></p>
+<p><strong>So the two weak triples and the colour octet compete for the same three directions.</strong> A direction can be in the weak pair or in the colour octet, not in both. <strong>That is the content of the corpus's "$42$ of $48$ brackets nonzero".</strong></p>
+<p><strong>The span and the closure, which differ.</strong>
+$$
+\dim\bigl(\text{weak six}+\mathfrak u(3)\bigr)=12,\qquad
+\dim\bigl\langle\text{weak six}+\mathfrak u(3)\bigr\rangle_{\text{Lie}}=15 .
+$$
+<strong>So the fifteen generators $8+1$ plus the six weak ones are twelve-dimensional as a list and generate all fifteen.</strong> Closing them does not give a fifteen-dimensional product; it gives the simple algebra back.</p>
+<p><strong>And the rank closes the door.</strong> The group the hypothesis wants is $8+3+3+1$, rank $5$. <strong>The algebra that carries it has rank $3$.</strong> Adding the three leptoquarks to reach $8+3+3+1+3$ does not help: the sum is still generated in a rank-three algebra.</p>
+<p><strong>So the reading of the borders is right, the generation is right, and the assembly is what fails</strong>: $\mathfrak{su}(3)$ and the two weak triples cannot be carried at once, because they want the same three planes.</p>
+<h3 id="obstacle-four-the-fifteen-quartet-arrays-do-not-close">Obstacle four: the fifteen quartet arrays do not close</h3>
+<p><strong>Take the fifteen bosons the hypothesis wants, as arrays of the quartet</strong>: eight gluons, the corner $iD$, and the six weak arrays. <strong>Their rank is twelve, not fifteen</strong>, and they are not closed:
+$$
+[\text{the fifteen}]\not\subset\text{the fifteen},\qquad\text{closure}=15=\mathfrak{su}(4).
+$$</p>
+<p><strong>The smallest witness.</strong> With $iD=i\operatorname{diag}(-3,1,1,1)$ the $B-L$ direction, the commutator with each weak generator is exactly the imaginary symmetric border array in the same direction:
+$$
+[iD,T^{L}_{a}]=[iD,T^{R}_{a}]=2\,iS_{ta}\ \ne0,\qquad a=x,y,z .
+$$
+<strong>Six nonzero commutators out of six.</strong> Verified in all six cases.</p>
+<p><strong>What that means.</strong> On the quartet there is no fifteen-dimensional subalgebra whose content is $8+1+3+3$. <strong>Closing the set up gives all of $\mathfrak{su}(4)$</strong>, that is, the content changes to $8+1+6$ and the weak triples are gone. <strong>The fifteen exists as a group, but not as fifteen matrices on one carrier.</strong></p>
+<p><strong>This is the corpus's copy theorem in one line.</strong> The weak factor acts on $\mathbb C^{2}_{L}$, a carrier with no colour rows. On <strong>that</strong> carrier the fifteen closes. On the quartet it cannot: colour and weak do not commute, <strong>$42$ of $48$ brackets are nonzero</strong>, and the Lie closure is all fifteen directions.</p>
+<h3 id="obstacle-five-the-border-is-irreducible-so-its-six-directions-share-one-mass">Obstacle five: the border is irreducible, so its six directions share one mass</h3>
+<p><strong>This is the one that ends the concrete version of the plan</strong> — put the two weak triples in the two borders, and let the leptoquarks be heavy.</p>
+<p><strong>The module is irreducible.</strong> One border direction generates all six by bracketing:
+$$
+\dim\bigl(\text{the module generated by }A_{tx}\text{ under }\mathfrak u(3)\bigr)=6 .
+$$
+<strong>So the border carries no invariant subspace</strong>, and a gauge-invariant mass operator on it must commute with the action of $\mathfrak u(3)$.</p>
+<p><strong>The commutant is computed exactly.</strong> Solving $[M,\operatorname{ad}_{u}]=0$ for all $u\in\mathfrak u(3)$ on the six-dimensional border gives a <strong>two-dimensional</strong> commutant, spanned by the identity and the complex structure $J$ that sends $A_{ta}\mapsto iS_{ta}$:
+$$
+\operatorname{Comm}(\text{border})=\operatorname{span}\{\mathrm I_{6},\,J\},\qquad J^{2}=-\mathrm I_{6}.
+$$
+<strong>This is Schur's lemma for a module of complex type</strong>: the six real directions are one complex triplet, so its invariant endomorphisms are the complex scalars.</p>
+<p><strong>A mass squared must also be symmetric</strong>, because it comes from the trace form, and $J$ is antisymmetric. <strong>So the coefficient of $J$ vanishes and the mass operator is a scalar</strong>:
+$$
+M^{2}_{\text{border}}=m^{2}\,\mathrm I_{6}.
+$$
+<strong>All six border bosons have one mass.</strong> You cannot make three of them light at $100\,\mathrm{GeV}$ and three heavy. <strong>A gauge vacuum cannot split an irreducible module</strong>, and the border is irreducible as a $\mathfrak u(3)$-module.</p>
+<p><strong>The physical consequence.</strong> In $\mathrm{SU}(4)$ the six border directions are the leptoquarks, and the corpus's bound is $M_X\gtrsim4.0\times10^{-5}\,\mathrm{J}$ from $K_L\to\mu e$. <strong>Proton decay does not bite</strong>, because the leading operator is dimension nine. <strong>So the obstruction is not proton decay; it is that the six border directions are one object.</strong> If they are heavy, the $W$ is heavy too, and there is no weak interaction at $100\,\mathrm{GeV}$.</p>
+<h3 id="obstacle-six-one-coupling-against-four">Obstacle six: one coupling against four</h3>
+<p><strong>$\mathfrak{su}(4)$ is simple, so it has one gauge coupling.</strong> The fifteen-boson left–right model has four: $g_{3}$, $g_{2L}$, $g_{2R}$, $g_{B-L}$. <strong>A simple group cannot produce four independent couplings</strong> at any scale below its breaking, and above the breaking it forces relations among them that the observed spectrum does not satisfy.</p>
+<p><strong>This is the obstacle that makes $\mathrm{SU}(5)$ a desert hypothesis</strong>, and it is sharper here: $\mathrm{SU}(5)$ at least contains the Standard Model. <strong>$\mathfrak{su}(4)$ contains only $\mathfrak{su}(3)\oplus\mathfrak u(1)_{B-L}$</strong>, so it would force $g_{3}=g_{B-L}$ while saying nothing whatever about the weak couplings.</p>
+<p><strong>The corpus's own threshold statement is the same point in one line</strong>: $g_{4}=g_{L}=g_{R}$ at one scale, with its failure, is <a href="../articles_physics/the-one-coupling-that-returns-the-standard-model.html">The One Coupling That Returns the Standard Model</a>. <strong>A single group forces a single coupling, and the data has four.</strong></p>
+<h2 id="what-is-true">What Is True</h2>
+<p><strong>The fifteen-boson model exists, and its place in the chain is exact.</strong>
+$$
+\underbrace{12}_{\text{Standard Model}}\ \subset\ \underbrace{15}_{\text{left--right}}\ \subset\ \underbrace{21}_{\text{Four Colours}} .
+$$</p>
+<p><strong>The middle group.</strong> $\mathrm{SU}(3)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R}\times\mathrm U(1)_{B-L}$, dimension
+$$
+8+3+3+1=15,
+$$
+rank $5$, four couplings.</p>
+<p><strong>Where it sits.</strong> Its colour-times-$B-L$ part is inside $\mathfrak{su}(4)$:
+$$
+\mathfrak{su}(3)\oplus\mathfrak u(1)_{B-L}\ \subset\ \mathfrak{su}(4),\qquad 9\ \subset\ 15,
+$$
+<strong>and the two weak triples are external to $\mathfrak{su}(4)$.</strong> So
+$$
+\mathfrak{su}(3)\oplus\mathfrak u(1)\oplus\mathfrak{su}(2)_{L}\oplus\mathfrak{su}(2)_{R}
+\ \subset\ \mathfrak{su}(4)\oplus\mathfrak{su}(2)_{L}\oplus\mathfrak{su}(2)_{R},
+$$
+that is, the fifteen is inside the <strong>twenty-one</strong>, not inside the fifteen of $\mathfrak{su}(4)$.</p>
+<p><strong>The gap is exactly the six leptoquarks.</strong>
+$$
+21-6=15 .
+$$
+<strong>So the hypothesis is correct about the ladder and correct about the number, and it locates the rung one group too low.</strong> The fifteen-boson theory is the Four Colours model with the six leptoquark directions deleted. <strong>Deleting them is not a group operation</strong>: $\mathfrak{su}(4)$ is simple, so its six border directions are not an ideal, and there is no quotient of the twenty-one by them. The fifteen exists only as a <strong>different product</strong>, $\mathrm{SU}(3)\times\mathrm U(1)\times\mathrm{SU}(2)\times\mathrm{SU}(2)$, sitting inside the twenty-one.</p>
+<p><strong>The rank ladder confirms the placement.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>group</th>
+<th>dimension</th>
+<th>rank</th>
+<th>couplings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard Model</td>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm U(1)$</td>
+<td>$12$</td>
+<td>$4$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>left–right</td>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R}\times\mathrm U(1)$</td>
+<td>$15$</td>
+<td>$5$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Four Colours</td>
+<td>$\mathrm{SU}(4)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R}$</td>
+<td>$21$</td>
+<td>$5$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Between the second and third rungs the rank does not move and the dimension grows by six.</strong> The six added are the leptoquarks. <strong>Between the first and second the rank grows by one and the dimension by three</strong>: the restored chirality. <strong>Those are two different steps and the hypothesis merges them into one.</strong></p>
+<p><strong>One caveat on the middle rung.</strong> It is a group-theoretic intermediate, and the minimal content of the Four Colours model does not stop there: one bidoublet $\Phi=(\mathbf4,\mathbf1,\mathbf2)$ with $\Phi_0=v_R\,e_t\otimes e_{\uparrow}$ breaks $\mathrm{SU}(4)$ and $\mathrm{SU}(2)_R\times\mathrm U(1)_{B-L}$ at once, so the chain runs $21\to12\to9$ and skips $15$. <strong>Reaching the fifteen-boson rung needs a second field.</strong> That is <a href="../articles_physics/the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain</a>'s statement, and it is why the fifteen is a legitimate group but not an automatic stage.</p>
+<h2 id="what-would-make-an-math187-model">What Would Make an $\mathrm{SU}(4)$ Model</h2>
+<p><strong>Three honest routes, each with its price.</strong></p>
+<p><strong>Route one: accept the leptoquarks and drop the weak sector.</strong> $\mathrm{SU}(4)$ alone, fifteen bosons, content $8+1+6$, rank $3$, one coupling. <strong>This is the Pati–Salam colour group without the weak factors.</strong> It is a consistent gauge theory. It contains no $W$, no $Z$, no photon. <strong>The corpus's <em>Unbroken Subgroup</em> is the calculation</strong>: the nine directions that commute with the corner are the eight gluons and $B-L$, and nothing else survives.</p>
+<p><strong>Route two: accept the leptoquarks and put the weak factors outside.</strong> This is the Four Colours model, twenty-one bosons, rank $5$. <strong>It is the corpus's model</strong>, and it is the only one of the three that has a weak sector and a colour sector at once. <strong>The price is a declared copy plus a leptoquark mass at $10^{15}\,\mathrm{GeV}$.</strong></p>
+<p><strong>Route three: enlarge the group until the rank fits.</strong> $\mathfrak{su}(5)$ has rank $4$ and contains the Standard Model; $\mathfrak{su}(5)$ or $\mathfrak{so}(10)$ are the standard routes. <strong>The price is a desert and proton decay, and the reward is that the counting is forced rather than chosen.</strong></p>
+<p><strong>What does not work</strong> is a fifteen-dimensional simple group with content $8+1+3+3$. <strong>No such object exists</strong>: a simple group of dimension fifteen is $\mathfrak{su}(4)$, and its content is fixed at $8+1+6$ by its own root system.</p>
+<h2 id="the-checks">The Checks</h2>
+<p>Each line is recomputed on the printed arrays of the corpus, quartet ordered $(t,x,y,z)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim\mathfrak{su}(4)$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the $3\times3$ block $\mathfrak u(3)$, dimension</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>the border, real dimension</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>block and border independent, sum</td>
+<td>$0$, $15$</td>
+</tr>
+<tr>
+<td>$[\mathfrak u(3),\text{border}]\subset\text{border}$</td>
+<td>$54/54$</td>
+</tr>
+<tr>
+<td>$[\text{border},\text{border}]\subset\mathfrak u(3)$</td>
+<td>$15/15$</td>
+</tr>
+<tr>
+<td>$\dim\bigl([\text{border},\text{border}]\cap\text{border}\bigr)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>closure of the real border triple $A_{tx},A_{ty},A_{tz}$</td>
+<td>$6=\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$</td>
+</tr>
+<tr>
+<td>closure of the imaginary border triple $iS_{ta}$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>closure of the whole border</td>
+<td>$15=\mathfrak{su}(4)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(2)_{L}\cap\mathfrak u(3)$, $\mathfrak{su}(2)_{R}\cap\mathfrak u(3)$</td>
+<td>$0$, $0$</td>
+</tr>
+<tr>
+<td>$(\mathfrak{su}(2)_{L}\oplus\mathfrak{su}(2)_{R})\cap\mathfrak u(3)$</td>
+<td>$3$, the planes $A_{xy},A_{xz},A_{yz}$</td>
+</tr>
+<tr>
+<td>$\dim(\text{weak six}+\mathfrak u(3))$, and its Lie closure</td>
+<td>$12$, $15$</td>
+</tr>
+<tr>
+<td>rank of $\mathfrak{su}(4)$, dimension of the traceless diagonal</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>four commuting traceless imaginary diagonals</td>
+<td>dependent, rank $3$</td>
+</tr>
+<tr>
+<td>rank of the Standard Model, of the left–right model</td>
+<td>$4$, $5$</td>
+</tr>
+<tr>
+<td>rank $5$ inside rank $3$</td>
+<td>impossible</td>
+</tr>
+<tr>
+<td>the left–right group of dimension $15$ exists</td>
+<td>yes, rank $5$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(3)\oplus\mathfrak u(1)_{B-L}\subset\mathfrak{su}(4)$</td>
+<td>$9$ of $9$</td>
+</tr>
+<tr>
+<td>weak six $\cap$ border, weak six $\cap$ block</td>
+<td>$3$, $3$</td>
+</tr>
+<tr>
+<td>a weak generator inside the border or the block</td>
+<td>none, $0$ of $6$</td>
+</tr>
+<tr>
+<td>the border generates all six from one direction</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>invariant endomorphisms of the border</td>
+<td>$2$, $\operatorname{span}\{\mathrm I,J\}$</td>
+</tr>
+<tr>
+<td>mass operator on the border</td>
+<td>scalar, $m^{2}\mathrm I_{6}$</td>
+</tr>
+<tr>
+<td>rank of the fifteen quartet arrays $8+1+3+3$</td>
+<td>$12$, not $15$</td>
+</tr>
+<tr>
+<td>$[iD,T^{L}_{a}]$ nonzero</td>
+<td>$6$ of $6$</td>
+</tr>
+<tr>
+<td>$[\text{colour},\text{weak six}]$ nonzero</td>
+<td>$42$ of $48$</td>
+</tr>
+<tr>
+<td>Lie closure of the fifteen quartet arrays</td>
+<td>$15=\mathfrak{su}(4)$</td>
+</tr>
+<tr>
+<td>$21-6$</td>
+<td>$15$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The number is right and the group is not.</strong> $8+3+3+1=15$ is a true count, and it names $\mathrm{SU}(3)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R}\times\mathrm U(1)_{B-L}$. <strong>It is not $\mathrm{SU}(4)$, whose content is $8+1+6$.</strong> The coincidence is $3+3=6$, and nothing more.</p>
+<p><strong>The block picture was read correctly and interpreted one step too far.</strong> The $3\times3$ block is $\mathfrak u(3)$, nine directions; the corner is fixed by the trace; the two borders carry six real parameters together. <strong>Every one of those statements is confirmed.</strong> What fails is that the border is a <strong>module</strong>: $[\text{border},\text{border}]\subset\mathfrak u(3)$, and the border contains no $\mathfrak{su}(2)$ at all.</p>
+<p><strong>The borders do generate the two weak triples, and that is the strong point of the proposal.</strong> Closing $\{A_{tx},A_{ty},A_{tz}\}$ gives $\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$ exactly. <strong>What it costs is three colour directions</strong>: the closure contains $A_{xy},A_{xz},A_{yz}$, and the paired weak algebra meets $\mathfrak u(3)$ in exactly those three. <strong>The list of twelve spans twelve, and closing it gives fifteen</strong>: $\mathfrak{su}(3)$ and the two weak triples compete for the same three planes.</p>
+<p><strong>The border is irreducible, so it cannot be split into a light half and a heavy half.</strong> Its invariant endomorphisms are the complex scalars, its mass operator is a multiple of the identity, and all six of its directions carry one mass. <strong>This is the obstruction that ends the concrete plan</strong>, and it is not proton decay.</p>
+<p><strong>Rank is the decisive obstruction, and it is three lines long.</strong> $\mathfrak{su}(4)$ has rank $3$; four commuting traceless imaginary diagonals are always dependent; the Standard Model needs four commuting generators and the left–right model five.</p>
+<p><strong>The positive result is the ladder, with the rung corrected.</strong> $12\subset15\subset21$ is real, and the fifteen-boson rung sits inside the <strong>twenty-one</strong>, not inside $\mathfrak{su}(4)$. <strong>The gap between the fifteen-boson rung and the twenty-one is exactly the six leptoquarks</strong>, and those six are what a fourth colour is.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak u(3)\subset\mathfrak{su}(4)$</td>
+<td>the $3\times3$ block, corner fixed by the trace, nine directions</td>
+</tr>
+<tr>
+<td>border</td>
+<td>the coset $\mathfrak{su}(4)/\mathfrak u(3)$, six real directions, $A_{ta}$ and $iS_{ta}$</td>
+</tr>
+<tr>
+<td>$iD=i\operatorname{diag}(-3,1,1,1)$</td>
+<td>the corner direction, $B-L$ on the quartet</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}\mathfrak g$</td>
+<td>the dimension of a maximal abelian subalgebra, that is, of a maximal torus</td>
+</tr>
+<tr>
+<td>$\operatorname{Comm}(\text{border})$</td>
+<td>the endomorphisms of the border commuting with $\mathfrak u(3)$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>the complex structure of the border, $A_{ta}\mapsto iS_{ta}$, with $J^{2}=-\mathrm I_{6}$</td>
+</tr>
+<tr>
+<td>$\Lambda^{2}_{\pm}\mathbb R^{4}$</td>
+<td>the $\pm1$ eigenspaces of the star on two-forms</td>
+</tr>
+<tr>
+<td>$\mathbb{CP}^{3}$</td>
+<td>$\mathrm{SU}(4)/\mathrm U(3)$, the symmetric space whose tangent space is the border</td>
+</tr>
+<tr>
+<td>rank-one symmetric space</td>
+<td>a symmetric space whose maximal flat subspace is one-dimensional</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="structures/structure-SO4-basis-construction.html">The Basis of $\mathfrak{so}(4)$ and the Basis of $\mathfrak{su}(4)$</a>. The six planes, the six weak arrays, and the change of basis between them.</li>
+<li><a href="structures/structure-SU4-basis-construction.html">Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices</a>. The fifteen from the sixteen words.</li>
+<li><a href="../articles_physics/the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html">The Unbroken Subgroup of the Four Colours Left–Right Model</a>. The nine directions that survive the corner breaking.</li>
+<li><a href="../articles_physics/the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain of the Four Colours Left–Right Model</a>. The chain $21\to12\to9$ and why the minimal content skips the fifteen.</li>
+<li><a href="../articles_physics/the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html">The Leptoquarks of the Four Colours Left–Right Model</a>. The six states, the bound, and why proton decay does not bite.</li>
+<li><a href="../articles_physics/the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Gauge Algebras of the Two Sectors</a>. The cut $8+1+3+3$ and the chain $15\to12\to9$.</li>
+<li><a href="../articles_physics/su2l-times-su2r-two-sides-six-generators-one-group.html">$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group</a>. The weak pair as a group.</li>
+<li><a href="../articles_physics/the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions.html">The Five Counts of the Twenty-One</a>. The recombination identities as arrays.</li>
+<li><a href="../articles_physics/the-four-colours-left-right-model.html">The Four Colours Left–Right Model</a>. The declaration, the copy, and why the product is not inside $\mathfrak{su}(4)$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

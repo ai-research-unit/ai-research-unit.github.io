@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migration Note: The Two Symmetry Breakings — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A placement and writing plan. It says which sections move, which article goes where, which titles change, which sentences must be…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="migration-note-the-two-symmetry-breakings"><strong>Migration Note: The Two Symmetry Breakings</strong></h1>
+<p><em>What this file is.</em> A placement and writing plan. It says which sections move, which article goes where, which titles change, which sentences must be written first, and in what order the work is done. It contains no article text. Written 2026-11-24 in analysis mode; nothing in <code>physics.md</code> or <code>articles_physics/</code> was edited to produce it.</p>
+<p><em>What it plans.</em> The category is re-read as two successive breakings. The first breaks $\mathrm{SU}(4)$ out of $G_{4LR}$ and leaves $\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, the fifteen, which is the left–right model. The second breaks the weak pair and leaves the Standard Model. The block that audits the Standard Model moves from the end of the category to immediately after the first breaking, and the three sector sections follow both.</p>
+<p><em>The one number to keep in view.</em> Twenty-eight articles are involved: the fifteen under <code>#### The Spontaneous Symmetry Breaking</code>, the twelve under <code>### The Standard Model as the Low-Energy Phase</code>, and one that is filed under <code>#### The Bosons</code> and belongs to the breakings. They split nine and nineteen.</p>
+<h2 id="the-proposal">The Proposal</h2>
+<p>Two <code>###</code> sections replace one <code>####</code> subsection and one <code>###</code> section.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>now</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>#### The Spontaneous Symmetry Breaking</code> (fifteen articles, inside <code>### The Unified Group</code>)</td>
+<td><code>### The First Symmetry Breaking: The Four Colours Left–Right Model to the Left–Right Model</code> (nine)</td>
+</tr>
+<tr>
+<td><code>### The Standard Model as the Low-Energy Phase: The One Coupling That Returns It</code> (twelve articles, last section of the category)</td>
+<td><code>### The Second Symmetry Breaking: The Left–Right Model to the Standard Model</code> (nineteen), placed immediately after the first</td>
+</tr>
+</tbody>
+</table></div>
+<p>The reading becomes one sentence long. The fourth colour is gauged, then broken; the leptons become a line, the quarks become three colours, and what is left of $G_{4LR}$ is the left–right model. The weak pair is then broken; what is left is the Standard Model's group. The strong, electroweak and electromagnetic sections that follow are the same theory at three distances, which is what the model's lead article already says.</p>
+<p>The move costs nothing in URLs. Every article keeps its slug. The menu order is the sitemap order and the navigation order, so the rebuild re-orders both and rewrites <code>articles_internal/ai-physics-overview.md</code>, and no page moves.</p>
+<h2 id="why-the-corpus-already-says-this">Why the Corpus Already Says This</h2>
+<p><strong>Four statements already in the text, and one measurement.</strong></p>
+<p><strong>1.1 The chain's own display.</strong> <a href="../articles_physics/the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain</a> prints the chain as four groups in a row, with the left–right group as the second:</p>
+<p>$$
+\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R
+\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R
+\to\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y
+\to\mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}} .
+$$</p>
+<p>Two breakings sit between the first group and the third. The first section owns the first arrow. The second section owns the second.</p>
+<p><strong>1.2 The fermion article is already written in two steps.</strong> <a href="../articles_physics/the-fermions-after-the-breaking-three-colours-and-a-lepton-line-two-weak-doublets-the-electric-charges.html">The Fermions After the Breaking</a> has these two section titles:</p>
+<ul>
+<li>§<em>The Split at $M_C$: Three Colours and a Lepton Line</em></li>
+<li>§<em>The Right Doublet at $M_R$: $T_{3R}$ Becomes a Label</em></li>
+</ul>
+<p>The two breakings are the article's skeleton. Only the menu does not know it.</p>
+<p><strong>1.3 The scalar article is already written as a row per factor.</strong> <a href="../articles_physics/the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html">The Scalar Sector</a> counts the eaten scalars by broken factor, with the field named on every row: six of $\Phi$ for $\mathrm{SU}(4)$, two of $\Phi$ for $\mathrm{SU}(2)_R$, four of $H$ for the electroweak pair. The table is a three-step table.</p>
+<p><strong>1.4 The internal note already counts two scales.</strong> <a href="internal-note-the-four-colours-left-right-model.html">The Four Colours Left–Right Model</a>, §4.2, tabulates the model against Pati–Salam row by row and gives the last row as <em>scale of the model</em> — one, $M_{PS}$ against two, $M_C$ and $M_R$. §4.1 puts this group on the rank-five rung of the ladder $2&lt;4&lt;5&lt;6$, above $G_{\mathrm{SM}}$. The two-scale structure is the model's stated difference from the unified case.</p>
+<p><strong>1.5 The section name is not cited anywhere.</strong> The string "The Spontaneous Symmetry Breaking" occurs once outside this file, in a bibliography entry of another article. No prose cross-reference uses it. Renaming the section is free.</p>
+<h2 id="the-one-thing-that-is-not-editorial">The One Thing That Is Not Editorial</h2>
+<p><strong>The collapse, and the paragraph that depends on it.</strong> In the minimal content the two breakings are one. <a href="../articles_physics/the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain</a> states that the eaten count can be booked two ways, $6+2+4$ by the multiplet and $6+3+3$ by the scale, and justifies the double booking in one sentence:</p>
+<blockquote>
+<p>In the minimal content, where the two breakings are one, that booking is a convention of the ledger rather than a statement about which field's vev did the work, because one vev did both.</p>
+</blockquote>
+<p>That sentence carries the whole reconciliation. Split the block into two sections and the sentence becomes false as stated: the sections now assert two breakings, so "because one vev did both" contradicts the two titles. Three ways out, and the author must choose one before any file is touched.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>option</th>
+<th>what it asserts</th>
+<th>what it costs</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A. Two sections, one threshold</strong></td>
+<td>The sections are a reading of the algebra; the section openings say in one sentence that the minimal vacuum fixes both lines at once, so the left–right group is a factor of the stabiliser and not an energy range</td>
+<td>Nothing is written that is not already written; the opening sentence is a quotation of the chain article in plainer words</td>
+<td><strong>recommended</strong></td>
+</tr>
+<tr>
+<td><strong>B. Two sections, two thresholds</strong></td>
+<td>The first breaking is a stage: a scalar with no $R$ index is added, the $15$ becomes a genuine threshold, $M_C\ne M_R$</td>
+<td>New field, new running, and it collides with §4.3 of the internal note, which lists the leptoquark mass relation to $v_R$ among the six statements an edit may not alter</td>
+<td>physics work, not an edit</td>
+</tr>
+<tr>
+<td><strong>C. One section, honest title</strong></td>
+<td>A single block named for the fifteen, $21\to15\to12$, with the second step inside it</td>
+<td>Loses the two-part reading that is the point of the move</td>
+<td>rejected</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A, stated exactly.</strong> The first section opens with: <em>the minimal vacuum is one rank-one tensor, so it fixes the carrier line and the right line together; what the step delivers is the left–right group $\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ of dimension fifteen, a factor of the unbroken group rather than an energy range, and the first threshold in the minimal content lands on the twelve-dimensional group.</em> That sentence is §5.1 of <a href="../articles_physics/the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html">The Order of the Breaking</a> and §5.2 of <a href="../articles_physics/the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html">The Threshold Scales</a>, so the section repeats nothing new.</p>
+<p><strong>If B is ever taken.</strong> The candidate that reuses the most existing work is a $(\mathbf{15},\mathbf1,\mathbf1)$ with the vacuum $D=\operatorname{diag}(-3,1,1,1)$: its gauge spectrum is already computed, it is the adjoint so no representation theory is added, and it has no Yukawa, because $15\otimes4\otimes4$ has no singlet and $15\otimes4\otimes\bar4$ gives $(15,\mathbf2,\mathbf2)$ and not $(15,\mathbf1,\mathbf1)$. The price is four repairs: the leptoquark mass moves from $v_R$ to $v_C$, the neutral block gains a third rank-one term, the running gains a threshold, and the scalar count moves off twenty-four. B is not a menu edit.</p>
+<h2 id="the-new-order">The New Order</h2>
+<p><strong>Line numbers are the present ones in <code>physics.md</code>.</strong> They are given so that the edit is mechanical; they move as soon as the first block is cut.</p>
+<h3 id="the-unified-group-line-1296-thirty-one-articles">The Unified Group (line 1296, thirty-one articles)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subsection</th>
+<th style="text-align: right;">articles</th>
+<th>change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>#### The Model</code></td>
+<td style="text-align: right;">$1$</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>#### The Bosons</code></td>
+<td style="text-align: right;">$7$</td>
+<td>one leaves: the neutral sector</td>
+</tr>
+<tr>
+<td><code>#### The Fermions</code></td>
+<td style="text-align: right;">$2$</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>#### The Model with Flavours</code></td>
+<td style="text-align: right;">$3$</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>#### The General Gauge Machinery</code></td>
+<td style="text-align: right;">$18$</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>#### The Spontaneous Symmetry Breaking</code></td>
+<td style="text-align: right;">$0$</td>
+<td>the subsection is retired; its fifteen articles move</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-first-symmetry-breaking-the-four-colours-leftright-model-to-the-leftright-model-nine">The First Symmetry Breaking: The Four Colours Left–Right Model to the Left–Right Model (nine)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>subsection</th>
+<th>article</th>
+<th style="text-align: right;">now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>#### The Chain</code></td>
+<td>The Breaking Chain: One Flag, Three Stabilisers, Three Scales</td>
+<td style="text-align: right;">1414</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>#### The Chain</code></td>
+<td>The Order of the Breaking: Nested Vacua and the Scale Order $M_C\ge M_R\ge M_W$</td>
+<td style="text-align: right;">1411</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>#### The Rule</code></td>
+<td>The Unbroken Subgroup: Nine Massless Generators, Twelve That Acquire Mass</td>
+<td style="text-align: right;">1405</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>#### The First Step</code></td>
+<td>Where the Twenty-One Generators Go: One Ledger, Three Readings</td>
+<td style="text-align: right;">1408</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>#### The First Step</code></td>
+<td>The Adjoint Mass Matrix of the Fifteen: One Number per Plane</td>
+<td style="text-align: right;">1417</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>#### The First Step</code></td>
+<td>The Adjoint Mass Matrix as the Square of the Roots</td>
+<td style="text-align: right;">1420</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>#### The First Step</code></td>
+<td>The Leptoquarks: Six States, One Bound</td>
+<td style="text-align: right;">1429</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><code>#### The Content</code></td>
+<td>The Scalar Sector: Twenty-Four Real Components, Twelve Eaten</td>
+<td style="text-align: right;">1423</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>#### The Content</code></td>
+<td>The Fermions After the Breaking: Three Colours and a Lepton Line</td>
+<td style="text-align: right;">1432</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-second-symmetry-breaking-the-leftright-model-to-the-standard-model-nineteen">The Second Symmetry Breaking: The Left–Right Model to the Standard Model (nineteen)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>subsection</th>
+<th>article</th>
+<th style="text-align: right;">now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">10</td>
+<td><code>#### The Second Step</code></td>
+<td>The Mass Matrix of the Twenty-One Gauge Bosons: Four Blocks, One Mixing</td>
+<td style="text-align: right;">1426</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><code>#### The Second Step</code></td>
+<td>The Neutral Sector: Three Ingredients, Rank Two, One Null Direction</td>
+<td style="text-align: right;">1310</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><code>#### The Coupling Claim</code></td>
+<td>The One Coupling That Returns the Standard Model</td>
+<td style="text-align: right;">1747</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><code>#### The Coupling Claim</code></td>
+<td>The Weinberg Angle and the Three Neutral States</td>
+<td style="text-align: right;">1749</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><code>#### The Coupling Claim</code></td>
+<td>The Heavy Sector Below Its Threshold</td>
+<td style="text-align: right;">1441</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td><code>#### The Coupling Claim</code></td>
+<td>The Threshold Scales: $M_C$, $M_R$, $M_W$</td>
+<td style="text-align: right;">1447</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><code>#### The Standard Model as the Low-Energy Phase</code></td>
+<td>The Data Boundary</td>
+<td style="text-align: right;">1751</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><code>#### The Standard Model as the Low-Energy Phase</code></td>
+<td>The Standard Model as the Low-Energy Phase: The U(2) Ceiling</td>
+<td style="text-align: right;">1754</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td><code>#### The Standard Model as the Low-Energy Phase</code></td>
+<td>The Standard Model: Content, Quantum Numbers, Nineteen Parameters</td>
+<td style="text-align: right;">1757</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td><code>#### The Standard Model as the Low-Energy Phase</code></td>
+<td>The Standard Model and the Lagrangian: Four Sectors</td>
+<td style="text-align: right;">1760</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td><code>#### The Standard Model as the Low-Energy Phase</code></td>
+<td>The Parameter Count as the Measure of the Boundary</td>
+<td style="text-align: right;">1763</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><code>#### The Standard Model as the Low-Energy Phase</code></td>
+<td>The Hierarchy Problem and Naturalness</td>
+<td style="text-align: right;">1766</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td><code>#### The Standard Model as the Low-Energy Phase</code></td>
+<td>The Landau Pole, Triviality and Vacuum Stability</td>
+<td style="text-align: right;">1769</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td><code>#### The Standard Model as the Low-Energy Phase</code></td>
+<td>What the Standard Model Does Not Explain</td>
+<td style="text-align: right;">1772</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td><code>#### The Standard Model as the Low-Energy Phase</code></td>
+<td>Grand Unification: Where the Embedding Fails</td>
+<td style="text-align: right;">1775</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td><code>#### The Standard Model as the Low-Energy Phase</code></td>
+<td>The Sector Hub: What the Lagrangian Family Reaches</td>
+<td style="text-align: right;">1778</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td><code>#### What the Sectors Inherit</code></td>
+<td>The Quantum Numbers Below the Breaking</td>
+<td style="text-align: right;">1444</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td><code>#### What the Sectors Inherit</code></td>
+<td>The Gauge Connection Below the Breaking</td>
+<td style="text-align: right;">1438</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td><code>#### What the Sectors Inherit</code></td>
+<td>The Gauge Algebras of the Two Sectors</td>
+<td style="text-align: right;">1435</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-rest-of-the-category-unchanged-in-order">The rest of the category, unchanged, in order</h3>
+<p><code>### The Strong Interaction</code> (1450, $24$), <code>### The Electroweak Interaction</code> (1529, $31$), <code>### Electromagnetism</code> (1628, $30$), <code>### The Mass Spectrum and the Ledger</code> (1728, $5$), <code>### Focus on informational aspects</code> (1781, $3$).</p>
+<h3 id="the-arithmetic">The arithmetic</h3>
+<p>$$
+152=31+9+19+24+31+30+5+3,\qquad 28=15+12+1=9+19 .
+$$</p>
+<p>The one is the neutral sector. It sits under <code>#### The Bosons</code> at line 1310 and is a second-step spectrum article: three neutral gauge directions, a $3\times3$ mass matrix of rank two, the photon as its null vector. In <code>The Bosons</code> it is a spectrum among counts; in the second breaking it is the step's own result. Four articles cite it — <em>Charge Quantisation</em>, <em>Classification of the Bosons</em>, <em>The 21 AXF Matrices in Detail</em> and <em>Where the Twenty-One Generators Go</em> — and all four stay in <code>The Unified Group</code>, so the move turns four citations into forward references and breaks none.</p>
+<h2 id="the-moves-article-by-article-with-the-reason">The Moves, Article by Article, with the Reason</h2>
+<p><strong>The rule used.</strong> An article belongs to the step whose vacuum its numbers describe. Where an article straddles a step, it belongs to the earlier one and the later one cites it, because a section may look forward and may not look back.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>moves</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Breaking Chain</td>
+<td>stays, becomes the first of the new section</td>
+<td>it declares both arrows, so it must precede both</td>
+</tr>
+<tr>
+<td>The Order of the Breaking</td>
+<td>stays, second</td>
+<td>it argues why the arrows cannot be permuted; it is the section's argument, not its result</td>
+</tr>
+<tr>
+<td>The Unbroken Subgroup</td>
+<td>stays, third</td>
+<td>it is the general rule, one eaten scalar per broken generator, used by both sections</td>
+</tr>
+<tr>
+<td>Where the Twenty-One Generators Go</td>
+<td>stays</td>
+<td>the ledger of the twenty-one with $21=15+3+3$; the fifteen is this section's object</td>
+</tr>
+<tr>
+<td>The Adjoint Mass Matrix of the Fifteen</td>
+<td>stays</td>
+<td>its spectrum, $32v^2$ on six and zero on nine, is the first step's gauge spectrum</td>
+</tr>
+<tr>
+<td>The Adjoint Mass Matrix as the Square of the Roots</td>
+<td>stays</td>
+<td>same operator, one level up; the spectrum of the first step as a root system</td>
+</tr>
+<tr>
+<td>The Leptoquarks</td>
+<td>stays</td>
+<td>the six states that become massive at the first step, and their bound</td>
+</tr>
+<tr>
+<td>The Scalar Sector</td>
+<td>stays</td>
+<td>it names the fields that do the breaking, and its eaten table is the budget of the whole chain</td>
+</tr>
+<tr>
+<td>The Fermions After the Breaking</td>
+<td>stays</td>
+<td>its title's "the breaking" is the first one; its $M_R$ sections are a deliberate forward glance</td>
+</tr>
+<tr>
+<td>The Mass Matrix of the Twenty-One Gauge Bosons</td>
+<td>stays, first of the second section</td>
+<td>its colour and leptoquark blocks recap the first step; its neutral and charged blocks are the second</td>
+</tr>
+<tr>
+<td>The Neutral Sector</td>
+<td><strong>moves</strong>, from <code>#### The Bosons</code></td>
+<td>rank two, one null direction: the second step's own result</td>
+</tr>
+<tr>
+<td>The One Coupling That Returns the Standard Model</td>
+<td>moves with the section, and moves up</td>
+<td>it is the section's central claim; the threshold articles presuppose it</td>
+</tr>
+<tr>
+<td>The Weinberg Angle</td>
+<td>moves with the section</td>
+<td>it is a mixing of the same three neutral states, at the same threshold</td>
+</tr>
+<tr>
+<td>The Heavy Sector Below Its Threshold</td>
+<td>moves, and moves after the coupling article</td>
+<td>as written it precedes the article it reports the failure of; the move repairs an ordering fault</td>
+</tr>
+<tr>
+<td>The Threshold Scales</td>
+<td>moves, after the coupling article</td>
+<td>same fault, same repair</td>
+</tr>
+<tr>
+<td>The Data Boundary</td>
+<td>moves, and becomes the head of the audit group</td>
+<td>it is the rule that governs the ten articles after it</td>
+</tr>
+<tr>
+<td>The Standard Model as the Low-Energy Phase: The U(2) Ceiling</td>
+<td>moves</td>
+<td>the audit of the whole model</td>
+</tr>
+<tr>
+<td>Content, Quantum Numbers, Nineteen Parameters</td>
+<td>moves</td>
+<td>audit</td>
+</tr>
+<tr>
+<td>The Standard Model and the Lagrangian</td>
+<td>moves</td>
+<td>audit</td>
+</tr>
+<tr>
+<td>The Parameter Count</td>
+<td>moves</td>
+<td>audit</td>
+</tr>
+<tr>
+<td>The Hierarchy Problem</td>
+<td>moves</td>
+<td>audit</td>
+</tr>
+<tr>
+<td>The Landau Pole</td>
+<td>moves</td>
+<td>audit</td>
+</tr>
+<tr>
+<td>What the Standard Model Does Not Explain</td>
+<td>moves</td>
+<td>audit</td>
+</tr>
+<tr>
+<td>Grand Unification</td>
+<td>moves</td>
+<td>audit</td>
+</tr>
+<tr>
+<td>The Sector Hub</td>
+<td>moves, and stays last in the section</td>
+<td>it is the map of the three sections that follow; a map before the territory reads better than after</td>
+</tr>
+<tr>
+<td>The Quantum Numbers Below the Breaking</td>
+<td>moves</td>
+<td>the charge table as the Standard Model reads it</td>
+</tr>
+<tr>
+<td>The Gauge Connection Below the Breaking</td>
+<td>moves</td>
+<td>the covariant derivative rewritten after each step; it hands the notation on</td>
+</tr>
+<tr>
+<td>The Gauge Algebras of the Two Sectors</td>
+<td>moves, and closes the section</td>
+<td>it exists so that the next two sections open with their algebra already named</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three articles that stay where they are and gain one sentence.</strong> <a href="../articles_physics/classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html">Classification of the Bosons</a> in <code>#### The Bosons</code> holds the $9$ massless and $12$ massive count; it gains a forward pointer to the second section. The model's lead article gains a pointer to both sections in place of its pointer to one. <a href="../articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.html">The Data Boundary</a> gains its count repaired, §<em>R3</em> below.</p>
+<h2 id="titles">Titles</h2>
+<p><strong>The two section titles.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>recommended</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>### The First Symmetry Breaking: The Four Colours Left–Right Model to the Left–Right Model</code></td>
+<td>names the group before and the group after, both as theories: $G_{4LR}$ and the fifteen-dimensional left–right group. The corpus's lead article says of the second: "This is $G_{4LR}$ after the $\mathrm{SU}(4)$ breaking, and it is the left–right model"</td>
+</tr>
+<tr>
+<td><code>### The Second Symmetry Breaking: The Left–Right Model to the Standard Model</code></td>
+<td>the parallel form, and "the Standard Model" is what the sections after it detail</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why $\mathrm{SU}(4)$ alone cannot title the first section.</strong> $\mathrm{SU}(4)$ has no left–right content to leave behind. Its breaking is</p>
+<p>$$
+\mathrm{SU}(4)\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L},
+\qquad
+\mathbf{15}\to\mathbf8\oplus\mathbf3\oplus\bar{\mathbf3}\oplus\mathbf1,
+\qquad
+15-6=9,
+$$</p>
+<p>nine generators left unbroken in the adjoint and six vectors eaten.</p>
+<p>and the weak pair $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ sits beside $\mathrm{SU}(4)$ in the product, untouched by it. A title reading "$\mathrm{SU}(4)$ to the Left–Right Model" would say that the left–right structure is produced by breaking $\mathrm{SU}(4)$, which is false: three colours and one lepton line come out of $\mathrm{SU}(4)$, and the two chiralities were never inside it. What the first step produces is $G_{4LR}$ minus its fourth colour, which is the left–right model; the sentence names the two groups as groups, so the title names the two theories.</p>
+<p>The arithmetic of the two names, side by side. Both are right, and only one is right as a title about the pair:</p>
+<p>$$
+\underbrace{\mathrm{SU}(4)\to\mathrm{SU}(3)\times\mathrm{U}(1)}_{15\to9+6,\ \text{one factor, not a theory}}
+\qquad\text{against}\qquad
+\underbrace{G_{4LR}\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R}_{21\to15,\ \text{two theories}} .
+$$</p>
+<p>The section's own table prints $21\to15\to12\to9$, and the first row of that table is the pair of theories, not the pair of factors.</p>
+<p><strong>Refused.</strong></p>
+<ul>
+<li><em>The Pati–Salam Chain</em> — the model's own internal note is a list of differences from Pati–Salam, and a section named after the rival theory would invite the reader to import its claims. One retired URL already carries that name; the corpus should not promote it to a heading.</li>
+<li><em>The Electroweak Breaking</em> for the second — it collides with the electroweak section's own breaking at $M_W$, which is a third step and lives there.</li>
+<li><em>The Standard Model as the Low-Energy Phase</em> as the second section's whole name — ten of its nineteen articles audit the Standard Model, four argue one coupling claim, and five carry the step's spectrum and the handover; the title would cover the minority.</li>
+<li><em>Two Breakings</em> — a title that names a number rather than an object.</li>
+<li><em>$\mathrm{SU}(4)$ to the Left–Right Model</em> — false as a statement. $\mathrm{SU}(4)\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}$ keeps three colours and one lepton line and has no weak pair inside it, so it cannot deliver a left–right model. The left–right model is what the whole $G_{4LR}$ leaves, not what $\mathrm{SU}(4)$ leaves.</li>
+</ul>
+<p><strong>One sentence each section must carry, or the section lies.</strong> The first: the minimal vacuum is one rank-one tensor and fixes both lines, so the group that survives is the left–right group $\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ of dimension fifteen, the $\mathrm{SU}(4)$ factor is what the step breaks, and in the minimal content that fifteen is a factor of the stabiliser rather than an energy range. The second: the sixteen's right doublet gives up $T_{3R}$ at $M_R$, and its left doublet gives up $T_{3L}$ at $M_W$, which the electroweak section owns.</p>
+<p><strong>A duplication the move removes.</strong> The section now called <em>The Standard Model as the Low-Energy Phase: The One Coupling That Returns It</em> shares its first five words with the article <em>The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors</em>. Eleven files cite that article by title. After the split the phrase belongs to a <code>####</code> group of ten, and the article keeps a subtitle that distinguishes it. The ambiguity was the old section title's, not the article's.</p>
+<h2 id="repairs-that-come-first">Repairs That Come First</h2>
+<p><strong>R1 — the diquark fork is attached to the wrong multiplet.</strong> <a href="../articles_physics/the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html">The Leptoquarks</a> §11.1 says of $\Sigma$ in the $(\mathbf{15},\mathbf2,\mathbf2)$: "The $\mathbf3$ and $\bar{\mathbf3}$ are colour triplets with lepton number, so they can couple to $qq$ and to $q\ell$ at once". The arithmetic of the same article forbids it. Under $\mathrm{SU}(3)\times\mathrm{U}(1)_D$ with $B-L=D/3$:</p>
+<p>$$
+\mathbf{15}\to\mathbf8(0)\oplus\mathbf3(+4)\oplus\bar{\mathbf3}(-4)\oplus\mathbf1(0),
+\qquad
+\mathbf6\to\mathbf3(+2)\oplus\bar{\mathbf3}(-2).
+$$</p>
+<p>A $qq$ coupling needs $B-L=\pm\tfrac23$, which is the sextet's triplet and not the fifteen's, whose triplet carries $\pm\tfrac43$. The tensor products agree: $4\otimes4=6\oplus10$ contains the sextet and not the fifteen, and $4\otimes\bar4=1\oplus15$ contains the fifteen and not the sextet. So $\Sigma$ couples to $\psi\bar\psi$ and never to $\psi\psi$, and the dimension-six proton-decay bound belongs to a $(\mathbf6,\mathbf1,\mathbf1)$, which the minimal content does not have. The fork is real; it is a fork about fields the model does not contain. The repair is one paragraph, and it strengthens the article's own conclusion.</p>
+<p><strong>Measured:</strong> $8+3+3+1=15$; $3+3=6$; the fifteen's triplet $D$-charge $+4$ against the sextet's $+2$. The obstruction is not the $\mathrm{SU}(4)$ product but the weak index: $\psi\psi$ needs a colour sextet or decuplet, because $4\otimes4=6\oplus10$, and $\psi\bar\psi$ needs $(\mathbf{15},\mathbf2,\mathbf2)$, because $15\otimes4\otimes\bar4$ carries the $15$ only with the $(\mathbf2,\mathbf2)$. A $(\mathbf{15},\mathbf1,\mathbf1)$ therefore has no Yukawa at all.</p>
+<p><strong>R2 — the double booking loses its licence.</strong> §<em>The One Thing That Is Not Editorial</em> above. Under option A the sentence in the chain article stands and each section opening repeats its content in plainer words. Under option B the sentence must be rewritten, and the $6+2+4$ and $6+3+3$ rows become statements about two different vacua, which forces the $Z_R$'s eaten scalar to be booked to $\Phi$ and moves the surviving spectrum by one real component in $\Phi$ and one in $H$.</p>
+<p><strong>R3 — the data boundary counts a category that grew.</strong> <a href="../articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.html">The Data Boundary</a> fixes the category at $125$ entries, two claims, sixteen data, one hundred and seven structural, and says the register is complete. The menu now lists $152$ links. The register is $27$ short. The repair is either a recount or a sentence that dates the count.</p>
+<p><strong>R4 — an ordering fault the move repairs.</strong> As written, <a href="../articles_physics/the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html">The Heavy Sector</a> and <a href="../articles_physics/the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html">The Threshold Scales</a> precede <a href="../articles_physics/the-one-coupling-that-returns-the-standard-model.html">The One Coupling</a> that both defer to, and the first of the two cites the failure of an article it has not reached. In the new order they follow it. No prose changes.</p>
+<p><strong>R5 — the two charge tables must agree.</strong> <a href="../articles_physics/the-fermions-after-the-breaking-three-colours-and-a-lepton-line-two-weak-doublets-the-electric-charges.html">The Fermions After the Breaking</a> §<em>The Electric Charge and the Table</em> and <a href="../articles_physics/the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html">The Quantum Numbers Below the Breaking</a> §<em>The Table of Charges and Their Fates</em> both print the sixteen's charges. With the two articles in two sections, a reader will compare them. One of the two must point at the other and say which column each owns.</p>
+<p><strong>R6 — one forward pointer in the scalar article.</strong> Its §<em>The Eaten Count</em> is the chain's budget and its §<em>The Bidoublet and the $\rho$ Parameter</em> is second-step physics. It sits in the first section, so it gains one sentence: the bidoublet's four conditions are the second section's, and the two neutral survivors are specified there.</p>
+<h2 id="how-to-apply">How to Apply</h2>
+<p><strong>The mechanics, in order, with no git.</strong> The author applies; this note does not.</p>
+<ol>
+<li>Cut lines 1401–1449 of <code>physics.md</code> — the retired <code>####</code> heading and its fifteen entries with their comments — as fifteen independent blocks. Each block is a link line plus its <code>&lt;!-- … --&gt;</code> comment; the comment is the entry's abstract and must travel with the link.</li>
+<li>Cut lines 1310–1313, the neutral sector entry with its comment, out of <code>#### The Bosons</code>.</li>
+<li>Cut lines 1745–1780, the old Standard Model section, as twelve independent blocks.</li>
+<li>Paste in the new order of §<em>The New Order</em>. Keep one blank line between entries, as everywhere else. Keep the <code>###</code> and <code>####</code> headings free of trailing spaces.</li>
+<li>Rebuild. <code>python build.py</code> re-derives the navigation order, the sitemap order and <code>articles_internal/ai-physics-overview.md</code> from the menu, so those three follow the menu with no second edit.</li>
+<li>Read the build's two reports. The convention check is advisory and never fails the build. The orphan pruner removes deployed pages whose source is no longer linked; nothing here is unlinked, so it should print nothing.</li>
+<li>Run PLAN.md's trailing-mark check over <code>articles_physics</code> and expect $0$: <code>grep -rnE '(\$\\square\$|\\\(\\square\\\)|\$\\blacksquare\$)[ \t]*$' articles_physics | wc -l</code>.</li>
+</ol>
+<p><strong>Three things that follow the menu and need no edit.</strong> Navigation order, sitemap order, and the internal overview. <strong>One thing that does not:</strong> a heading's anchor. The renderer gives every heading an id derived from its text, so the old section's deep anchor stops resolving. No page links to it, and the sitemap lists pages, not anchors.</p>
+<p><strong>If a title ever changes a slug</strong>, the build carries a retired-address table, <code>LEGACY_COPIES</code>, which copies the live page to the old address on every rebuild. Nothing in this plan changes a slug.</p>
+<p><strong>This file is not versioned.</strong> <code>articles_internal/</code> is listed in <code>.gitignore</code>, so nothing written here appears in <code>git status</code>. The menu and the article files are versioned, and they are the only files the plan changes.</p>
+<h2 id="order-of-work">Order of Work</h2>
+<ol>
+<li>Decide A or B. Nothing else starts before it.</li>
+<li>R1, because the leptoquarks article is cited by the first section's opening and by the scalar article's eaten table.</li>
+<li>R3, a one-line repair, so that the audit group is honest before it is moved.</li>
+<li>The menu edit, in one pass, then one rebuild.</li>
+<li>R2's sentence, in the two section openings.</li>
+<li>R4 and R6, forward and backward pointers, then a second rebuild.</li>
+<li>R5 last, because it needs both articles to be in place to know which column each owns.</li>
+</ol>
+<h2 id="what-not-to-do">What Not to Do</h2>
+<ul>
+<li>Do not write a new article for either breaking. Every statement the two sections need is already in the corpus, in the chain article, the order article, the scalar article and the fermions article.</li>
+<li>Do not rename the section <em>The Pati–Salam Chain</em>, and do not let the two sections claim a unification their own coupling article reports as failing.</li>
+<li>Do not say that the left–right group is an energy range in the minimal content. Say it is a factor of the stabiliser, in one sentence, in the first section's opening.</li>
+<li>Do not write the first breaking as $\mathrm{SU}(4)\to$ the left–right model, in a title, a heading or a first sentence. Write $G_{4LR}\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, $21\to15$, and name $\mathrm{SU}(4)$ as the factor broken.</li>
+<li>Do not move the strong, electroweak or electromagnetic sections above the two breakings. They are the theory after it, and their articles say so: the two-sectors algebra article exists to hand them their algebra.</li>
+<li>Do not cut an article in two at the section boundary. The fermions article and the mass-matrix article both straddle it, and a section may look forward.</li>
+<li>Do not rewrite the $6+2+4$ and $6+3+3$ rows under option A. They are reconciled, and the reconciliation is quoted in this note.</li>
+<li>Do not treat the audit as a breaking. Ten of the nineteen articles in the second section audit the Standard Model as a benchmark; calling them a breaking would make ten titles false.</li>
+<li>Do not commit, and do not touch the deploy folder.</li>
+</ul>
+<h2 id="open-for-the-author">Open for the Author</h2>
+<ul>
+<li><strong>A or B</strong>, and if B, which field: $(\mathbf{15},\mathbf1,\mathbf1)$ reuses the adjoint spectrum and has no Yukawa, $(\mathbf4,\mathbf1,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf1)$ breaks parity but leaves a $Q=\pm\tfrac16$ colour triplet with no decay channel. Neither is a menu edit.</li>
+<li><strong>Whether the first section keeps <em>The Order of the Breaking</em>.</strong> It argues the order of all three steps, so it could equally open the second. It is put first here because the reader needs the reason before the result.</li>
+<li><strong>Whether <em>Where the Twenty-One Generators Go</em> belongs to the first section or to <em>The Model</em>.</strong> It is a ledger of the twenty-one, and the twenty-one exist before any breaking.</li>
+<li><strong>Whether the audit group should be a section of its own</strong> after the three sector sections, with only the coupling claim inside the second breaking. That keeps the second section at nine articles and the ordering argument of this note intact; it costs the "just after the first breaking" placement the author asked for.</li>
+<li><strong>Whether the <code>####</code> group names should follow the ledger.</strong> <em>The First Step</em> and <em>The Second Step</em> mirror $15$ and $3+3$; <em>The Chain</em>, <em>The Rule</em>, <em>The Content</em>, <em>The Coupling Claim</em>, <em>What the Sectors Inherit</em> are five different grammatical shapes, and the corpus's subsections are usually noun phrases of one shape.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

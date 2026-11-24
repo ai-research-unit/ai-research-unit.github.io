@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Basis of $\mathfrak{so}(4)$ and the Basis of $\mathfrak{su}(4)$: One Six-Dimensional Space in Two Bases, and Where the Other Nine Sit — Biquaternion Universe</title>
+  <meta name="description" content="The question. The standard basis of is the six planes. The corpus prints six weak arrays, and fifteen others. Which of our arrays are, and how does the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-basis-of-math0-and-the-basis-of-math1-one-six-dimensional-space-in-two-bases-and-where-the-other-nine-sit"><strong>The Basis of $\mathfrak{so}(4)$ and the Basis of $\mathfrak{su}(4)$: One Six-Dimensional Space in Two Bases, and Where the Other Nine Sit</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The standard basis of $\mathfrak{so}(4)$ is the six planes $A_{jk}=E_{jk}-E_{kj}$. The corpus prints six weak arrays $T^{L}_{a}$, $T^{R}_{a}$ and fifteen others. <strong>Which of our arrays are $\mathfrak{so}(4)$, and how does the standard basis relate to the one we print?</strong></p>
+<p><strong>The answer in three lines.</strong></p>
+<ul>
+<li>Our six weak arrays and the six planes are the <strong>same six-dimensional space</strong>, written in two bases. Nothing is added and nothing is missing.</li>
+<li>The change of basis is a three-block <strong>Hadamard transform</strong>: it pairs each lepton–colour plane with its Hodge dual colour–colour plane, and takes sum and difference. That is the <strong>self-dual / anti-self-dual</strong> split of $\mathfrak{so}(4)$.</li>
+<li>The other nine of the fifteen are <strong>not</strong> in $\mathfrak{so}(4)$. They form the complement $\mathfrak p$ in $\mathfrak{su}(4)=\mathfrak{so}(4)\oplus\mathfrak p$, and $\mathfrak p$ is <strong>not</strong> a subalgebra.</li>
+</ul>
+<p><strong>What this note adds to the corpus.</strong> <em>Construction of the AXF Matrices</em> proves each piece separately: that the left triple spans the self-dual three-space, that the right triple spans the anti-self-dual one, and that $\mathfrak{so}(4)=\mathfrak{su}(2)_{+}\oplus\mathfrak{su}(2)_{-}$. <strong>This note puts the six in one place</strong> and adds four things:</p>
+<ul>
+<li>the explicit change of basis, in both directions, with the signs;</li>
+<li>the $6\times6$ matrix, and why it is its own inverse;</li>
+<li>the placement of all twenty-one named arrays against the split $\mathfrak{so}(4)\oplus\mathfrak p$;</li>
+<li>the precise statement of what the inclusion $\mathfrak{so}(4)\subset\mathfrak{su}(4)$ licenses and what it forbids.</li>
+</ul>
+<h2 id="the-two-algebras-and-the-inclusion">The Two Algebras, and the Inclusion</h2>
+<p><strong>Both definitions, side by side.</strong>
+$$
+\mathfrak{so}(4)=\{X\in M_4(\mathbb R):X^{\mathsf T}=-X\},\qquad
+\mathfrak{su}(4)=\{X\in M_4(\mathbb C):X^{\dagger}=-X,\ \operatorname{tr}X=0\}.
+$$
+<strong>The dimensions.</strong> $\mathfrak{so}(4)$ has $\binom42=6$. The antisymmetry fixes the diagonal to zero and makes the six upper entries free. $\mathfrak{su}(4)$ has $4^{2}-1=15$.</p>
+<p><strong>The inclusion is immediate.</strong> A real antisymmetric matrix is anti-Hermitian, $X^{\dagger}=X^{\mathsf T}=-X$, and traceless because its diagonal vanishes. So
+$$
+\mathfrak{so}(4)\subset\mathfrak{su}(4)
+$$
+as a subalgebra, and the question is not whether it sits inside but <strong>which of our arrays span it</strong>.</p>
+<p><strong>The six planes, in the corpus's order.</strong> The quartet is ordered $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and the six planes fall into two blocks of three:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>planes</th>
+<th>what a rotation in the plane does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lepton–colour</td>
+<td>$A_{tx}$, $A_{ty}$, $A_{tz}$</td>
+<td>turns the lepton line into a colour line</td>
+</tr>
+<tr>
+<td>colour–colour</td>
+<td>$A_{xy}$, $A_{xz}$, $A_{yz}$</td>
+<td>turns one colour line into another</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Each plane is two cells wide.</strong> $A_{jk}$ carries $+1$ at $(j,k)$ and $-1$ at $(k,j)$, and zero in the other fourteen cells. <strong>The six together are the whole of $\mathfrak{so}(4)$</strong>, and the rank of the six is six.</p>
+<h2 id="the-star-and-the-two-halves">The Star, and the Two Halves</h2>
+<p><strong>The star.</strong> Read an array as the two-form $\omega=\tfrac12\omega_{jk}\,dx^{j}\wedge dx^{k}$ with $\omega_{jk}=M_{jk}$, and fix the Euclidean star of $\mathbb R^4$ by
+$$
+\star(dt\wedge dx)=dy\wedge dz,\qquad \star(dt\wedge dy)=dz\wedge dx,\qquad \star(dt\wedge dz)=dx\wedge dy .
+$$
+<strong>On two-forms $\star^{2}=+1$</strong>, so its eigenvalues are $\pm1$ and the split below is a split into eigenspaces, not a complexification.</p>
+<p><strong>What the star does to the six, one line each.</strong>
+$$
+\star A_{tx}=A_{yz},\qquad \star A_{ty}=-A_{xz},\qquad \star A_{tz}=A_{xy},
+$$
+and the same three read backwards, since $\star^{2}=+1$. <strong>The middle line carries a minus, and that minus is not a slip</strong>: $\star(dt\wedge dy)=dz\wedge dx=-dx\wedge dz$. <strong>So the star is not the cyclic map; it is the cyclic map with the middle sign flipped</strong>,
+$$
+\star A_{ta}=\sigma_{a}A_{bc},\qquad \sigma_{x}=+1,\ \sigma_{y}=-1,\ \sigma_{z}=+1,
+$$
+with $(a,b,c)$ cyclic. <strong>It pairs each lepton–colour plane with a colour–colour plane</strong> and leaves no plane fixed.</p>
+<p><strong>The two halves.</strong> The $+1$ and $-1$ eigenspaces of $\star$ are three-dimensional each, and they are the two $\mathfrak{su}(2)$'s:
+$$
+\mathfrak{so}(4)=\Lambda^{2}_{+}\mathbb R^{4}\oplus\Lambda^{2}_{-}\mathbb R^{4}=\mathfrak{su}(2)_{+}\oplus\mathfrak{su}(2)_{-}.
+$$
+<strong>Our names for them are $L$ and $R$.</strong> That identification is the whole content of the next section.</p>
+<h2 id="the-six-constructed-and-printed">The Six, Constructed and Printed</h2>
+<p><strong>The construction is three lines, and every one of the six comes out of it.</strong> The carrier has the ordered basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, $e_t$ is the identity, and the three vector units multiply by
+$$
+\vec e_x\vec e_y=\vec e_z,\qquad \vec e_y\vec e_z=\vec e_x,\qquad \vec e_z\vec e_x=\vec e_y
+$$
+cyclically, with $\vec e_a^{2}=-e_t$ and $\vec e_b\vec e_a=-\vec e_a\vec e_b$ for $a\neq b$.</p>
+<p><strong>Step 1: read the multiplication table by columns.</strong> The axis-free left array of a unit is read by acting on the four units and writing each answer as a column,
+$$
+L_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=\bigl[\tilde Q\,e_{\jmath}\bigr]_{\imath},
+$$
+and the right array is the same with the factors exchanged, $R_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=\bigl[e_{\jmath}\tilde Q\bigr]_{\imath}$. <strong>With $\tilde Q=e_t$ both give $\mathrm I_4$</strong>; with $\tilde Q=\vec e_a$ they give the six arrays below. Nothing is chosen in this step.</p>
+<p><strong>Worked on one direction, all four columns.</strong> The whole of $\ell_x$ and $r_x$ is this table, read as columns:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$j$</th>
+<th>$\vec e_x\vec e_j$</th>
+<th>column $j$ of $\ell_x$</th>
+<th>$\vec e_j\vec e_x$</th>
+<th>column $j$ of $r_x$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$t$</td>
+<td>$\vec e_x$</td>
+<td>$(0,1,0,0)$</td>
+<td>$\vec e_x$</td>
+<td>$(0,1,0,0)$</td>
+</tr>
+<tr>
+<td>$x$</td>
+<td>$-e_t$</td>
+<td>$(-1,0,0,0)$</td>
+<td>$-e_t$</td>
+<td>$(-1,0,0,0)$</td>
+</tr>
+<tr>
+<td>$y$</td>
+<td>$\vec e_z$</td>
+<td>$(0,0,0,1)$</td>
+<td>$-\vec e_z$</td>
+<td>$(0,0,0,-1)$</td>
+</tr>
+<tr>
+<td>$z$</td>
+<td>$-\vec e_y$</td>
+<td>$(0,0,-1,0)$</td>
+<td>$\vec e_y$</td>
+<td>$(0,0,1,0)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first two columns agree and the last two differ by a sign on both entries.</strong> That is the entire difference between the left and the right array of a direction: left multiplication is a homomorphism, right multiplication is an anti-homomorphism, and the disagreement sits in the plane $\{y,z\}$ and not in $\{t,x\}$.</p>
+<p><strong>Step 2: halve.</strong> The model's generators are
+$$
+T^{L}_{a}:=\tfrac12\,L_{\mathrm{axf}}(\vec e_a)=\tfrac12\,\ell_{a},\qquad
+T^{R}_{a}:=\tfrac12\,R_{\mathrm{axf}}(\vec e_a)=\tfrac12\,r_{a}.
+$$
+<strong>The half removes the $2$ from the structure constants</strong>, which is the only reason it is there: the raw arrays close with $[\ell_a,\ell_b]=2\epsilon_{abc}\ell_c$, and after the halving the same bracket reads $[T^{L}_{a},T^{L}_{b}]=\epsilon_{abc}T^{L}_{c}$.</p>
+<p><strong>Step 3: name the three planes.</strong> Each array of the six is four cells wide, two planes at once. $T^{L}_{a}$ turns the plane $\{t,a\}$ <strong>and</strong> the plane $\{b,c\}$ by the same signed angle; $T^{R}_{a}$ turns the first of the two the same way and the second the other way. <strong>That contrast between the two triples is the star, and it is computed in §<em>The Star, and the Two Halves</em>.</strong></p>
+<p><strong>The three left arrays, from Step 1.</strong>
+$$
+\ell_{x}=L_{\mathrm{axf}}(\vec e_x)=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\qquad
+\ell_{y}=L_{\mathrm{axf}}(\vec e_y)=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},
+$$
+$$
+\ell_{z}=L_{\mathrm{axf}}(\vec e_z)=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
+$$
+<strong>The three right arrays, the same reading with the factors exchanged.</strong>
+$$
+r_{x}=R_{\mathrm{axf}}(\vec e_x)=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},\qquad
+r_{y}=R_{\mathrm{axf}}(\vec e_y)=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix},
+$$
+$$
+r_{z}=R_{\mathrm{axf}}(\vec e_z)=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
+$$
+<strong>The one structural fact, visible in the pair of a single direction.</strong> $\ell_{x}$ and $r_{x}$ are the same signed permutation and differ <strong>only in the signs of the second plane</strong>: both send $e_t\mapsto\vec e_x$ and $\vec e_x\mapsto-e_t$, and on the second plane $\ell_x$ carries $-1$ at $(y,z)$ and $+1$ at $(z,y)$, while $r_x$ carries $+1$ at $(y,z)$ and $-1$ at $(z,y)$.</p>
+<p><strong>The six model generators, at the halved normalisation.</strong> Direction $x$, printed left beside right, so that the two signs of the second plane stand in one picture:
+$$
+T^{L}_{x}=\tfrac12\ell_{x}=\begin{pmatrix}0&amp;-\tfrac12&amp;0&amp;0\\ \tfrac12&amp;0&amp;0&amp;0\\ 0&amp;0&amp;0&amp;-\tfrac12\\ 0&amp;0&amp;\tfrac12&amp;0\end{pmatrix},\qquad
+T^{R}_{x}=\tfrac12 r_{x}=\begin{pmatrix}0&amp;-\tfrac12&amp;0&amp;0\\ \tfrac12&amp;0&amp;0&amp;0\\ 0&amp;0&amp;0&amp;\tfrac12\\ 0&amp;0&amp;-\tfrac12&amp;0\end{pmatrix},
+$$
+$$
+T^{L}_{y}=\tfrac12\ell_{y}=\begin{pmatrix}0&amp;0&amp;-\tfrac12&amp;0\\ 0&amp;0&amp;0&amp;\tfrac12\\ \tfrac12&amp;0&amp;0&amp;0\\ 0&amp;-\tfrac12&amp;0&amp;0\end{pmatrix},\qquad
+T^{R}_{y}=\tfrac12 r_{y}=\begin{pmatrix}0&amp;0&amp;-\tfrac12&amp;0\\ 0&amp;0&amp;0&amp;-\tfrac12\\ \tfrac12&amp;0&amp;0&amp;0\\ 0&amp;\tfrac12&amp;0&amp;0\end{pmatrix},
+$$
+$$
+T^{L}_{z}=\tfrac12\ell_{z}=\begin{pmatrix}0&amp;0&amp;0&amp;-\tfrac12\\ 0&amp;0&amp;-\tfrac12&amp;0\\ 0&amp;\tfrac12&amp;0&amp;0\\ \tfrac12&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+T^{R}_{z}=\tfrac12 r_{z}=\begin{pmatrix}0&amp;0&amp;0&amp;-\tfrac12\\ 0&amp;0&amp;\tfrac12&amp;0\\ 0&amp;-\tfrac12&amp;0&amp;0\\ \tfrac12&amp;0&amp;0&amp;0\end{pmatrix}.
+$$</p>
+<p><strong>The six planes of the standard basis, printed the same way.</strong> Each is two cells wide, $A_{jk}=E_{jk}-E_{kj}$, with $+1$ at $(j,k)$ and $-1$ at $(k,j)$:
+$$
+A_{tx}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+A_{yz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},
+$$
+$$
+A_{ty}=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+A_{xz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},
+$$
+$$
+A_{tz}=\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+A_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}.
+$$
+<strong>The pairing in the displays is the star's pairing</strong>, so the two arrays on one line are the two halves that $T^{L}_{a}$ and $T^{R}_{a}$ sum and subtract: $2T^{L}_{x}=-A_{tx}-A_{yz}$ reads off the first line entry by entry.</p>
+<p><strong>Read the two families against each other, once.</strong> The six raw arrays and the six planes are <strong>the same six-dimensional space</strong> — verified: the rank of the twelve arrays together is six, not twelve. What differs is the basis, and the entries:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>arrays</th>
+<th>entries</th>
+<th>cells</th>
+<th>planes turned</th>
+<th>$\operatorname{tr}(X^{\mathsf T}X)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>raw</td>
+<td>$\ell_a$</td>
+<td>$0,\pm1$</td>
+<td>four</td>
+<td>$\{t,a\}$ and $\{b,c\}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>model</td>
+<td>$T^{L}_{a}$, $T^{R}_{a}$</td>
+<td>$0,\pm\tfrac12$</td>
+<td>four</td>
+<td>the same two, with a relative sign</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>standard</td>
+<td>$A_{ta}$, $A_{bc}$</td>
+<td>$0,\pm1$</td>
+<td>two</td>
+<td>one plane each</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the standard basis is the one-plane basis and the corpus's is the two-plane basis</strong>, related by the Hadamard transform of the next section. A rotation of a single plane is one $A_{jk}$; a rotation of the carrier's two-space structure is one $T^{L}_{a}$.</p>
+<h2 id="the-change-of-basis">The Change of Basis</h2>
+<p><strong>The master identity.</strong> For any $a$,
+$$
+T^{L}_{a}=-\tfrac12\bigl(A_{ta}+\star A_{ta}\bigr),\qquad
+T^{R}_{a}=-\tfrac12\bigl(A_{ta}-\star A_{ta}\bigr),
+$$
+<strong>with no sign case</strong>: the star carries the signs, and the identity is uniform in $a$. <strong>Inverted, and this is the form the corpus uses when it calls the six "recombinations",</strong>
+$$
+A_{ta}=-\bigl(T^{L}_{a}+T^{R}_{a}\bigr),\qquad
+\star A_{ta}=-\bigl(T^{L}_{a}-T^{R}_{a}\bigr).
+$$
+<strong>Read on the plane pairs rather than on the star, the second line carries $\sigma_{a}$</strong>: $A_{yz}=-(T^{L}_{x}-T^{R}_{x})$, $A_{xz}=+\bigl(T^{L}_{y}-T^{R}_{y}\bigr)$, $A_{xy}=-(T^{L}_{z}-T^{R}_{z})$, which is the corpus's "$(a,b,c)$ cyclic" statement with the middle sign absorbed.</p>
+<p><strong>Worked once, on the printed entries.</strong> Take $a=x$, so $(a,b,c)=(x,y,z)$ and $\star A_{tx}=A_{yz}$. Then
+$$
+2T^{L}_{x}=-A_{tx}-A_{yz},\qquad 2T^{R}_{x}=-A_{tx}+A_{yz},
+$$
+and the first reads, entry by entry,
+$$
+2T^{L}_{x}=\begin{pmatrix}0&amp;-\tfrac12&amp;0&amp;0\\ \tfrac12&amp;0&amp;0&amp;0\\ 0&amp;0&amp;0&amp;-\tfrac12\\ 0&amp;0&amp;\tfrac12&amp;0\end{pmatrix}\times 2=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\ 1&amp;0&amp;0&amp;0\\ 0&amp;0&amp;0&amp;-1\\ 0&amp;0&amp;1&amp;0\end{pmatrix}=\ell_{x},
+$$
+which is the raw array of <em>Construction</em>, as it must be. <strong>The minus signs in the identity absorb the signs of the printed $r_a$</strong>, whose second plane runs the other way.</p>
+<p><strong>The same statement in one table, for all three directions</strong>, with the star's values read off §<em>The Star, and the Two Halves</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$a$</th>
+<th>$\star A_{ta}$</th>
+<th>$T^{L}_{a}$</th>
+<th>$T^{R}_{a}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x$</td>
+<td>$+A_{yz}$</td>
+<td>$-\tfrac12(A_{tx}+A_{yz})$</td>
+<td>$-\tfrac12(A_{tx}-A_{yz})$</td>
+</tr>
+<tr>
+<td>$y$</td>
+<td>$-A_{xz}$</td>
+<td>$-\tfrac12(A_{ty}-A_{xz})$</td>
+<td>$-\tfrac12(A_{ty}+A_{xz})$</td>
+</tr>
+<tr>
+<td>$z$</td>
+<td>$+A_{xy}$</td>
+<td>$-\tfrac12(A_{tz}+A_{xy})$</td>
+<td>$-\tfrac12(A_{tz}-A_{xy})$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three rows are one formula with a sign inside it</strong>, and the sign of the middle row is the one that reads as a minus in every printed table of the corpus.</p>
+<p><strong>The $6\times6$ matrix.</strong> Order the six coordinates as
+$$
+\bigl(A_{tx},\ \star A_{tx},\ A_{ty},\ \star A_{ty},\ A_{tz},\ \star A_{tz}\bigr)
+=\bigl(A_{tx},\ A_{yz},\ A_{ty},\ -A_{xz},\ A_{tz},\ A_{xy}\bigr),
+$$
+<strong>each lepton–colour plane followed by its star</strong>. Then the change of basis is block diagonal with <strong>three copies of one block</strong>:
+$$
+\begin{pmatrix}A_{ta}\\ \star A_{ta}\end{pmatrix}
+=\begin{pmatrix}-1&amp;-1\\ -1&amp;+1\end{pmatrix}\begin{pmatrix}T^{L}_{a}\\ T^{R}_{a}\end{pmatrix},
+\qquad
+\begin{pmatrix}T^{L}_{a}\\ T^{R}_{a}\end{pmatrix}
+=-\tfrac12\begin{pmatrix}1&amp;1\\ 1&amp;-1\end{pmatrix}\begin{pmatrix}A_{ta}\\ \star A_{ta}\end{pmatrix}.
+$$
+<strong>Written that way the block is uniform</strong>, and the only trace of the middle sign is the $-A_{xz}$ in the ordering. <strong>The block is a Hadamard matrix</strong>, $H=\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}$ with $H^{2}=2\,\mathrm I$. <strong>That square is why the transform is its own inverse up to the factor $2$</strong>, and why the two bases cannot be told apart by dimension, by rank or by the number of planes: only by how many cells each array occupies.</p>
+<p><strong>Normalised, the block is orthogonal.</strong> The two bases carry different norms,
+$$
+\operatorname{tr}\bigl(A_{jk}^{\mathsf T}A_{jk}\bigr)=2,\qquad \operatorname{tr}\bigl((T^{L}_{a})^{\mathsf T}T^{L}_{a}\bigr)=1,
+$$
+so on the arrays $\hat A_{jk}=A_{jk}/\sqrt2$ and $T^{L}_{a}$, $T^{R}_{a}$ the block is $-H/\sqrt2$, which is orthogonal and of determinant $-1$. <strong>The factor $\sqrt2$ between $\lvert A_{jk}\rvert$ and $\lvert T^{L}_{a}\rvert$ is exactly the factor between their norms</strong>, and it is the trace-form statement of the same $\tfrac12$ that the generators carry.</p>
+<p><strong>What the transform does, in words.</strong> $H$ takes a pair of planes and returns their sum and their difference. The sum of a plane and its star is self-dual; the difference is anti-self-dual. <strong>So the change of basis between the standard basis of $\mathfrak{so}(4)$ and ours is the projection onto the two chiral halves, written as a matrix.</strong> It is the two-point Fourier transform on the pair, and that is all it is.</p>
+<h2 id="the-two-triples-and-the-sign-that-distinguishes-them">The Two Triples, and the Sign That Distinguishes Them</h2>
+<p><strong>The brackets, with the printed entries.</strong>
+$$
+[T^{L}_{a},T^{L}_{b}]=\epsilon_{abc}T^{L}_{c},\qquad
+[T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}T^{R}_{c},\qquad
+[T^{L}_{a},T^{R}_{b}]=0 .
+$$
+<strong>The minus in the second line is not a different algebra.</strong> It is the anti-homomorphism $R_AR_B=R_{BA}$ read after the halving: the set $\{-T^{R}_{a}\}$ closes with $+\epsilon_{abc}$. <strong>The third line is what makes the pair a pair</strong>: two commuting triples span $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, and that direct sum is $\mathfrak{so}(4)$.</p>
+<p><strong>Which half a triple spans is the star's decision</strong>, and the star has eigenvalues $\pm1$ only because the metric of the carrier is Euclidean. <strong>With the Minkowski star the same computation gives $\star^{2}=-1$ and eigenvalues $\pm i$</strong>, and then there is no real three-space of self-dual two-forms to be one of the two triples. That is why the frame's star, four signs plus, is the one the model uses.</p>
+<h2 id="where-the-other-nine-sit">Where the Other Nine Sit</h2>
+<p><strong>The fifteen split by array type, and the split is a Cartan decomposition.</strong> Write
+$$
+\mathfrak p=\bigl\{iS:iS\in\mathfrak{su}(4),\ S\ \text{real symmetric}\bigr\},
+$$
+that is, the imaginary symmetric arrays together with the imaginary diagonal ones. Then
+$$
+\mathfrak{su}(4)=\mathfrak{so}(4)\oplus\mathfrak p,\qquad 15=6+9,\qquad \mathfrak{so}(4)\cap\mathfrak p=\{0\}.
+$$</p>
+<p><strong>The nine, counted by type.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>array type</th>
+<th>arrays</th>
+<th>count</th>
+<th>in $\mathfrak{so}(4)$ or in $\mathfrak p$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real antisymmetric</td>
+<td>$A_{ta}$, $A_{bc}$</td>
+<td>$6$</td>
+<td>$\mathfrak{so}(4)$</td>
+</tr>
+<tr>
+<td>imaginary symmetric</td>
+<td>$iS_{ta}$, $iS_{bc}$</td>
+<td>$6$</td>
+<td>$\mathfrak p$</td>
+</tr>
+<tr>
+<td>imaginary diagonal</td>
+<td>$d_{2}$, $d_{3}$, $iD$</td>
+<td>$3$</td>
+<td>$\mathfrak p$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three bracket relations that make this a Cartan decomposition.</strong>
+$$
+[\mathfrak{so}(4),\mathfrak{so}(4)]\subset\mathfrak{so}(4),\qquad
+[\mathfrak{so}(4),\mathfrak p]\subset\mathfrak p,\qquad
+[\mathfrak p,\mathfrak p]\subset\mathfrak{so}(4).
+$$
+<strong>The first says the six are a subalgebra.</strong> The second says the nine are a module over it. <strong>The third says the nine are not a subalgebra</strong>, and that is the sentence a reader needs before proposing to gauge them.</p>
+<p><strong>Where our twenty-one named arrays sit.</strong> The twenty-one names span only fifteen dimensions, and the fifteen are the table above. Read as arrays of the quartet, the weak six are the first row:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>arrays</th>
+<th>count</th>
+<th>where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>weak left</td>
+<td>$T^{L}_{a}$</td>
+<td>$3$</td>
+<td>the self-dual half of $\mathfrak{so}(4)$</td>
+</tr>
+<tr>
+<td>weak right</td>
+<td>$T^{R}_{a}$</td>
+<td>$3$</td>
+<td>the anti-self-dual half</td>
+</tr>
+<tr>
+<td>gluon, antisymmetric</td>
+<td>$A_{bc}$</td>
+<td>$3$</td>
+<td>$\mathfrak{so}(4)$, the colour half of the six planes</td>
+</tr>
+<tr>
+<td>leptoquark, antisymmetric</td>
+<td>$A_{ta}$</td>
+<td>$3$</td>
+<td>$\mathfrak{so}(4)$, the lepton–colour half</td>
+</tr>
+<tr>
+<td>gluon, symmetric</td>
+<td>$iS_{bc}$</td>
+<td>$3$</td>
+<td>$\mathfrak p$</td>
+</tr>
+<tr>
+<td>leptoquark, symmetric</td>
+<td>$iS_{ta}$</td>
+<td>$3$</td>
+<td>$\mathfrak p$</td>
+</tr>
+<tr>
+<td>colour diagonals</td>
+<td>$d_{2}$, $d_{3}$</td>
+<td>$2$</td>
+<td>$\mathfrak p$</td>
+</tr>
+<tr>
+<td>corner</td>
+<td>$iD$</td>
+<td>$1$</td>
+<td>$\mathfrak p$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the third and fourth rows against the first two.</strong> The six weak arrays <strong>are</strong> the six planes, renamed by the Hadamard transform; the colour octet borrows three of them and the leptoquark sextet borrows the other three. <strong>So the six "missing leptoquarks" are not missing and not a separate sextet</strong>: three of the six antisymmetric arrays that the leptoquark sector uses are directions of $\mathfrak{so}(4)$, and only their symmetric partners $iS_{ta}$ lie in $\mathfrak p$.</p>
+<p><strong>The counts that follow.</strong>
+$$
+\dim\bigl(\text{weak six}\cap\text{octet}\bigr)=3,\qquad
+\dim\bigl(\text{weak six}\cap\text{leptoquarks}\bigr)=3,\qquad
+\dim\bigl(\text{weak six}\cap\{iD\}\bigr)=0 .
+$$
+The first intersection is spanned by $A_{xy},A_{xz},A_{yz}$; the second by $A_{tx},A_{ty},A_{tz}$.</p>
+<h2 id="what-the-inclusion-does-not-give">What the Inclusion Does Not Give</h2>
+<p><strong>The true statement.</strong> $\mathfrak{so}(4)\subset\mathfrak{su}(4)$ is a subalgebra, and on the group side $\mathrm{SU}(2)\times\mathrm{SU}(2)\subset\mathrm{SU}(4)$ is a genuine subgroup. <strong>That much of the standard summary is correct</strong>, and the dimensions $6$ and $15$ are correct.</p>
+<p><strong>What the summary misses.</strong> The colour directions do not commute with the six:
+$$
+[\text{octet},\text{weak six}]\ne0\quad\text{in }42\text{ of }48\text{ brackets},
+$$
+and the span of the octet and the six is <strong>eleven</strong> dimensions, not fourteen. <strong>The Lie closure of the two together is all fifteen</strong>, that is, the whole of $\mathfrak{su}(4)$.</p>
+<p><strong>So three statements must be kept apart.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{so}(4)\subset\mathfrak{su}(4)$</td>
+<td>true</td>
+</tr>
+<tr>
+<td>the weak pair is a subgroup of $\mathrm{SU}(4)$</td>
+<td>true</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R}\subset\mathrm{SU}(4)$</td>
+<td><strong>false</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reason for the third line.</strong> Two factors of a gauge group must commute. Colour and weak do not. <strong>A product of groups whose algebras do not commute is not a subgroup of the simple group that contains both</strong>; it is a subgroup of a larger group only after the closure is taken, and the closure is $\mathfrak{su}(4)$ itself, without a weak factor left over.</p>
+<p><strong>Two further corrections to the usual reading.</strong></p>
+<ul>
+<li>The four-space here is the <strong>carrier</strong>, an internal space, not spacetime. The rotations of $\mathfrak{so}(4)$ mix the four lines $e_t,\vec e_x,\vec e_y,\vec e_z$ among themselves with real coefficients; they are not Lorentz transformations, and <em>The Rotors of the Twenty-One Generators</em> proves that no boost lies in the group.</li>
+<li>The chirality of the labels $L$ and $R$ is the <strong>side of the multiplication in the algebra</strong>, not a fermion chirality. The assignment of a chirality to a side is a separate declaration of the model.</li>
+</ul>
+<p><strong>Why the copy exists.</strong> Since the product does not sit inside $\mathfrak{su}(4)$, the model declares it on a formal copy of the carrier. On the copy the weak factor acts on $\mathbb C^{2}_{L}$, which has no colour rows, and the non-commutation costs nothing. <strong>On the quartet the cost is a leptoquark</strong>: a generator that couples the lepton line to a colour line converts a lepton into a quark, so the six border directions must acquire the colour-breaking mass. The bound is $M_X\gtrsim4.0\times10^{-5}\,\mathrm{J}$ from $K_L\to\mu e$, and proton decay does not bite, because the leading operator is dimension nine.</p>
+<h2 id="the-checks">The Checks</h2>
+<p>Each line is recomputed on the printed entries of <em>Construction</em> and <em>The 21 AXF Matrices</em>, quartet ordered $(t,x,y,z)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim\mathfrak{so}(4)$, rank of the six $A_{jk}$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>the six $A_{jk}$ are anti-Hermitian and traceless</td>
+<td>$6/6$</td>
+</tr>
+<tr>
+<td>$\star^{2}=+1$ on the six</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\star A_{ta}=\sigma_{a}A_{bc}$, $\sigma_{x}=+1$, $\sigma_{y}=-1$, $\sigma_{z}=+1$</td>
+<td>$3/3$</td>
+</tr>
+<tr>
+<td>$2T^{L}_{a}=-A_{ta}-\star A_{ta}$</td>
+<td>$3/3$</td>
+</tr>
+<tr>
+<td>$2T^{R}_{a}=-A_{ta}+\star A_{ta}$</td>
+<td>$3/3$</td>
+</tr>
+<tr>
+<td>$A_{ta}=-(T^{L}_{a}+T^{R}_{a})$</td>
+<td>$3/3$</td>
+</tr>
+<tr>
+<td>$\star A_{ta}=-(T^{L}_{a}-T^{R}_{a})$</td>
+<td>$3/3$</td>
+</tr>
+<tr>
+<td>$T^{L}_{a}$ self-dual, $T^{R}_{a}$ anti-self-dual</td>
+<td>$3/3$, $3/3$</td>
+</tr>
+<tr>
+<td>rank of the six $A$ together with the six $T$</td>
+<td>$6$, so one space</td>
+</tr>
+<tr>
+<td>$[T^{L},T^{L}]-\epsilon T^{L}$, $[T^{R},T^{R}]+\epsilon T^{R}$</td>
+<td>$3/3$, $3/3$ exact</td>
+</tr>
+<tr>
+<td>$[T^{L},T^{R}]=0$</td>
+<td>$9/9$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(A^{\mathsf T}A)$, $\operatorname{tr}((T^{L})^{\mathsf T}T^{L})$</td>
+<td>$2$, $1$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(4)=\mathfrak{so}(4)+\mathfrak p$, intersection</td>
+<td>$15$, $0$</td>
+</tr>
+<tr>
+<td>$[\mathfrak{so}(4),\mathfrak p]\subset\mathfrak p$</td>
+<td>$54/54$</td>
+</tr>
+<tr>
+<td>$[\mathfrak p,\mathfrak p]\subset\mathfrak{so}(4)$</td>
+<td>$36/36$</td>
+</tr>
+<tr>
+<td>the octet is a subalgebra, dimension</td>
+<td>yes, $8$</td>
+</tr>
+<tr>
+<td>$[\text{octet},\text{weak six}]$ non-zero</td>
+<td>$42$ of $48$</td>
+</tr>
+<tr>
+<td>span of octet and weak six, with the corner</td>
+<td>$11$, $12$</td>
+</tr>
+<tr>
+<td>span of all twenty-one arrays</td>
+<td>$15$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The six weak arrays and the six planes $A_{jk}$ are one six-dimensional space.</strong> The basis that prints $T^{L}_{a},T^{R}_{a}$ and the basis that prints $A_{ta},A_{bc}$ differ by a three-block Hadamard transform, and that transform is the self-dual–anti-self-dual split written as a matrix. <strong>Its inverse is itself up to the factor $2$</strong>, so the two bases agree in dimension, rank and cell count only when the norms are normalised.</p>
+<p><strong>The star decides which triple is which.</strong> $T^{L}_{a}$ is self-dual and $T^{R}_{a}$ anti-self-dual, and the minus in $[T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}T^{R}_{c}$ is the same fact read as structure constants.</p>
+<p><strong>The other nine of the fifteen are not in $\mathfrak{so}(4)$.</strong> They form $\mathfrak p$, they are a module and not a subalgebra, and their brackets with each other return to the six. <strong>The colour octet and the leptoquark sextet both straddle the split</strong>: three directions of each lie in $\mathfrak{so}(4)$ and the rest in $\mathfrak p$.</p>
+<p><strong>The inclusion is a subalgebra statement and not a gauge statement.</strong> $\mathfrak{so}(4)\subset\mathfrak{su}(4)$ is true, and the weak pair is a subgroup of $\mathrm{SU}(4)$. <strong>The product with colour is not</strong>, because colour and weak do not commute, and their closure is all fifteen directions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{jk}=E_{jk}-E_{kj}$</td>
+<td>the real plane of the pair $\{j,k\}$, two cells wide</td>
+</tr>
+<tr>
+<td>$iS_{jk}=i(E_{jk}+E_{kj})$</td>
+<td>the imaginary symmetric array of the pair</td>
+</tr>
+<tr>
+<td>$iD$, $d_{2}$, $d_{3}$</td>
+<td>the corner and the two colour diagonals</td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>the Euclidean star of $\mathbb R^4$, $\star^{2}=+1$ on two-forms</td>
+</tr>
+<tr>
+<td>$(a,b,c)$ cyclic</td>
+<td>the triple $(x,y,z)$ read cyclically, so that $\star A_{tx}=A_{yz}$, $\star A_{ty}=-A_{xz}$, $\star A_{tz}=A_{xy}$</td>
+</tr>
+<tr>
+<td>$T^{L}_{a}$, $T^{R}_{a}$</td>
+<td>the left and right weak generators, $\tfrac12\ell_{a}$ and $\tfrac12 r_{a}$</td>
+</tr>
+<tr>
+<td>$\Lambda^{2}_{\pm}\mathbb R^{4}$</td>
+<td>the $\pm1$ eigenspaces of $\star$ on two-forms, three-dimensional each</td>
+</tr>
+<tr>
+<td>$\mathfrak p$</td>
+<td>the complement of $\mathfrak{so}(4)$ in $\mathfrak{su}(4)$: $i$ times the real symmetric traceless arrays</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>the $2\times2$ Hadamard matrix of $+1$ and $-1$, with $H^{2}=2\,\mathrm I$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../../articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-generators.html">Construction of the AXF Matrices of the Twenty-One Generators</a>. The printed six, the half, and the star computation that gives the two halves.</li>
+<li><a href="../../articles_physics/the-21-axf-matrices-of-the-bosons-in-detail.html">The 21 AXF Matrices of the Bosons in Detail</a>. The twenty-one arrays one by one, with entries, spectra and exponentials.</li>
+<li><a href="../../articles_physics/the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Twenty-One Generators</a>. Why the six turn a four-space and no boost is in the group.</li>
+<li><a href="../../articles_physics/the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions.html">The Five Counts of the Twenty-One</a>. The five counts, and the recombination identities as arrays.</li>
+<li><a href="../../articles_physics/su2l-times-su2r-two-sides-six-generators-one-group.html">$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group</a>. The pair on the group side.</li>
+<li><a href="../../articles_physics/the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Gauge Algebras of the Two Sectors</a>. The cut $8+1+3+3$ and the breaking chain.</li>
+<li><a href="structure-SU4-basis-construction.html">Building the Two Bases of $\mathfrak{su}(4)$</a>. The companion: the fifteen from the sixteen words, in both bases.</li>
+<li><a href="../../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-bivector-plane.html">The Self-Dual and Anti-Self-Dual Split</a>. The star on the bivector plane, and the $\pm1$ eigenvalues.</li>
+<li><a href="structure-lie-correspondence-so-n.html">The Lie Correspondence for the Rotations</a>. The algebra $\mathfrak{so}(n)$, the group, and the exponential map between them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

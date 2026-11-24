@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Note: Four Colours, Worked Cases — The Arrays Acting on Biquaternion Fermions — Biquaternion Universe</title>
+  <meta name="description" content="A fermion state is an element of, and an array is an operator on that element; putting the two together is one line of arithmetic per case. This note does…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-note-four-colours-worked-cases-the-arrays-acting-on-biquaternion-fermions">Internal Note: Four Colours, Worked Cases — The Arrays Acting on Biquaternion Fermions</h1>
+<h2 id="the-answer">The Answer</h2>
+<p><strong>A fermion state is an element of $\mathbb{B}$, and an array is an operator on that element; putting the two together is one line of arithmetic per case.</strong> This note does it six times, on six situations that occur in the physics: a colour rotation, a hypercharge phase, a leptoquark rotation, a chirality split, a charged ladder, and the charge operator. <strong>Every number printed here was computed from the arrays of the corpus and is reproduced to four decimals.</strong></p>
+<p><strong>The one structural fact the whole note rests on.</strong> An element of $\mathbb{B}$ is four complex coefficients, so eight real parameters, in two blocks of four, and a case is: take a state, apply the array, read the image.</p>
+<p>$$
+Q=\sum_{\imath\in\{t,x,y,z\}}\bigl(q_\imath+i\,q'_\imath\bigr)e_\imath
+\quad\longmapsto\quad
+XQ=\sum_\imath\bigl(q_\imath+i\,q'_\imath\bigr)\,Xe_\imath .
+$$</p>
+<p><strong>A real array acts on the two blocks with the same matrix</strong>, because $i$ is central and the array does not see it; <strong>an imaginary array swaps them</strong>, with a sign. In the split (real block $q$, imaginary block $q'$),</p>
+<p>$$
+X\ \text{real}:\quad X\oplus X,
+\qquad
+X=iS\ \text{with}\ S\ \text{real}:\quad
+\begin{pmatrix}0&amp;-S\\ S&amp;0\end{pmatrix},
+\qquad
+(iS)(q+iq')=(-Sq')+i(Sq).
+$$</p>
+<p><strong>So a real array turns a state inside its block and an imaginary one carries it into the other block</strong>, and that single difference is the "turns or phases" of the corpus, read as a block structure. The real arrays are six of the fifteen; the imaginary ones are the other nine.</p>
+<p><strong>What a case prints, always four things.</strong> The array, the state it is applied to, the image, and the sentence from physics that the image says. <strong>What a case never prints</strong> is a coupling: the note is a note about operators, not about strengths.</p>
+<p><strong>The one sentence that keeps the note honest, and it comes before the first case.</strong> A colour line is not a quark. <strong>A quark carries a colour line <em>and</em> a doublet slot, so the sixteen fields of a generation are $4\times2\times2$ and no array touches the slot</strong>; the arrays of the corpus are $4\times4$ on the line factor and act as $X\otimes\mathbb{1}_2$ on the pair. <strong>That single tensor product is why a gluon can be colour-blind to the doublet, why $B-L$ is uniform across a doublet, and why the electric charge needs a $2\times2$ matrix the note does not print.</strong> The section after the next is the whole of that bookkeeping, with the two label tables and five vertices worked out table by table.</p>
+<h2 id="the-carrier-and-why-one-array-acts-twice">The Carrier, and Why One Array Acts Twice</h2>
+<p><strong>The coefficient vector $(q_t,q_x,q_y,q_z)$ is one quartet, and the array acts on it as a matrix read by columns.</strong> For the left multiplier of $\vec e_x$ this gives</p>
+<p>$$
+\ell_x=L_{\mathrm{axf}}(\vec e_x)=
+\begin{pmatrix}0&amp;-1&amp;0&amp;0\\ 1&amp;0&amp;0&amp;0\\ 0&amp;0&amp;0&amp;-1\\ 0&amp;0&amp;1&amp;0\end{pmatrix},
+\qquad
+L_{\mathrm{axf}}(\vec e_t)=\mathbb{1}_4 ,
+$$</p>
+<p><strong>and the check is that the matrix product reproduces the algebra product</strong>, entry for entry, on twenty integer test vectors. <strong>The same sixteen entries act on the primed block</strong> $(q'_t,q'_x,q'_y,q'_z)$, and that is the whole of the two-block statement: $X$ on $\mathbb{B}$ is $X\otimes\mathbb{1}_2$ in the split (coefficient, real-or-imaginary).</p>
+<p><strong>The six real planes are one-sided, and this is worth a table because it is exact.</strong> Each is a sum or a difference of a left multiplier and a right multiplier of the <em>same</em> unit:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>array</th>
+<th>operator form</th>
+<th>cells</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{tx}$</td>
+<td>$-\tfrac12\bigl(L_x+R_x\bigr)$</td>
+<td>$(t,x)$, $(x,t)$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$-\tfrac12\bigl(L_y+R_y\bigr)$</td>
+<td>$(t,y)$, $(y,t)$</td>
+</tr>
+<tr>
+<td>$A_{tz}$</td>
+<td>$-\tfrac12\bigl(L_z+R_z\bigr)$</td>
+<td>$(t,z)$, $(z,t)$</td>
+</tr>
+<tr>
+<td>$A_{xy}$</td>
+<td>$-\tfrac12\bigl(L_z-R_z\bigr)$</td>
+<td>$(x,y)$, $(y,x)$</td>
+</tr>
+<tr>
+<td>$A_{xz}$</td>
+<td>$+\tfrac12\bigl(L_y-R_y\bigr)$</td>
+<td>$(x,z)$, $(z,x)$</td>
+</tr>
+<tr>
+<td>$A_{yz}$</td>
+<td>$-\tfrac12\bigl(L_x-R_x\bigr)$</td>
+<td>$(y,z)$, $(z,y)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every difference in the table is $0.0$.</strong> So the six planes and the six weak arrays are the same two families of operators: $\tfrac12L_a$, $\tfrac12R_a$, $\tfrac12(L_a\pm R_a)$. <strong>The nine other arrays of the fifteen are not in that family</strong>, and this is where the $6+9$ split begins: an exhaustive search over the twenty-four combinations $\pm\tfrac12(L_a\pm R_a)$ and $\pm\tfrac i2(L_a\pm R_a)$ reproduces the six real planes and none of the six imaginary ones, and no such combination reproduces the three diagonals. <strong>That is why the imaginary arrays phase a state instead of turning it</strong>, which is the difference the next four cases make visible.</p>
+<h2 id="a-line-is-not-a-quark-the-two-labels-and-the-three-sizes-of-matrix">A Line Is Not a Quark: The Two Labels and the Three Sizes of Matrix</h2>
+<p><strong>The quartet index is one label and the doublet slot is another, and a particle is the pair.</strong> So a colour line is not a quark, and this section is the bookkeeping that keeps the two apart, because every case below is otherwise easy to misread.</p>
+<p>$$
+\underbrace{4}_{\text{quartet line}}\times\underbrace{2}_{\text{doublet slot}}=\underbrace{8}_{\text{left-handed fields}},
+\qquad
+8+8=16\ \text{fields per generation},
+\qquad
+16\times2=32\ \text{states}.
+$$</p>
+<p><strong>The eight left-handed fields, named by their two labels</strong>, with $Q=T_3+\tfrac16D$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>slot</th>
+<th>field</th>
+<th>$Q$</th>
+<th>$B-L$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$t$</td>
+<td>$u$</td>
+<td>$\nu_L$</td>
+<td>$0$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$t$</td>
+<td>$d$</td>
+<td>$e_L$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$x$</td>
+<td>$u$</td>
+<td>$u_r$</td>
+<td>$+\tfrac23$</td>
+<td>$+\tfrac13$</td>
+</tr>
+<tr>
+<td>$x$</td>
+<td>$d$</td>
+<td>$d_r$</td>
+<td>$-\tfrac13$</td>
+<td>$+\tfrac13$</td>
+</tr>
+<tr>
+<td>$y$</td>
+<td>$u$</td>
+<td>$u_g$</td>
+<td>$+\tfrac23$</td>
+<td>$+\tfrac13$</td>
+</tr>
+<tr>
+<td>$y$</td>
+<td>$d$</td>
+<td>$d_g$</td>
+<td>$-\tfrac13$</td>
+<td>$+\tfrac13$</td>
+</tr>
+<tr>
+<td>$z$</td>
+<td>$u$</td>
+<td>$u_b$</td>
+<td>$+\tfrac23$</td>
+<td>$+\tfrac13$</td>
+</tr>
+<tr>
+<td>$z$</td>
+<td>$d$</td>
+<td>$d_b$</td>
+<td>$-\tfrac13$</td>
+<td>$+\tfrac13$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>And the eight right-handed fields, on the conjugate quartet</strong>, where the sign of $B-L$ is reversed. <strong>The charge formula is the same one, $Q=T_3+\tfrac12(B-L)$, and it is the reason the two tables cannot be read with one $B-L$ assignment</strong>: the conjugate quartet carries the opposite sign.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>slot</th>
+<th>field</th>
+<th>$Q$</th>
+<th>$B-L$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar t$</td>
+<td>$u$</td>
+<td>$e^{+}_R$</td>
+<td>$+1$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>$\bar t$</td>
+<td>$d$</td>
+<td>$\nu^{c}_R$</td>
+<td>$0$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>$\bar x$</td>
+<td>$u$</td>
+<td>$d^{c}_{r}$</td>
+<td>$+\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\bar x$</td>
+<td>$d$</td>
+<td>$u^{c}_{r}$</td>
+<td>$-\tfrac23$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\bar y$</td>
+<td>$u$</td>
+<td>$d^{c}_{g}$</td>
+<td>$+\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\bar y$</td>
+<td>$d$</td>
+<td>$u^{c}_{g}$</td>
+<td>$-\tfrac23$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\bar z$</td>
+<td>$u$</td>
+<td>$d^{c}_{b}$</td>
+<td>$+\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\bar z$</td>
+<td>$d$</td>
+<td>$u^{c}_{b}$</td>
+<td>$-\tfrac23$</td>
+<td>$-\tfrac13$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A single coefficient line is therefore not a particle.</strong> $e_x$ carries colour and no weak charge: it is one quarter of the carrier and the colour half of a quark, and it is neither a quark nor a lepton nor a state. <strong>The smallest object that deserves a particle name is a pair $(e_a,\text{slot})$</strong>, and the sixteen names above are the whole of one generation.</p>
+<p><strong>The state space of one chirality is the tensor product, and that is why the two factors can be spoken of separately.</strong></p>
+<p>$$
+\mathbb{C}^4_{\text{lines}}\otimes\mathbb{C}^2_{\text{slots}}=\mathbb{C}^{8},
+\qquad
+\dim 4\times\dim 2=8,
+\qquad
+(4,2,1)\ \text{of}\ \mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R .
+$$</p>
+<p><strong>Every one of the twenty-one arrays is $4\times4$ and acts on the first factor alone</strong>, that is, as $X\otimes\mathbb{1}_2$ on the eight. <strong>The second factor needs its own matrices, and they are $2\times2$</strong>: they are $\sigma_a/2$, and they are not among the twenty-one. The three sizes are these, and no size can do another's work:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>size</th>
+<th>acts on</th>
+<th>which matrices</th>
+<th>index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$4\times4$</td>
+<td>the quartet line</td>
+<td>the fifteen, and the six read on the carrier</td>
+<td>colour and $B-L$</td>
+</tr>
+<tr>
+<td>$2\times2$</td>
+<td>the doublet slot</td>
+<td>$\sigma_a/2$, the weak generators of $(4,2,1)$</td>
+<td>$T_3$ and the ladder</td>
+</tr>
+<tr>
+<td>$3\times3$</td>
+<td>the family</td>
+<td>the Yukawa matrices</td>
+<td>generation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The identity that fixes the reading is one line of commutation</strong>, and it holds because the two factors are independent:</p>
+<p>$$
+\bigl[A_{jk}\otimes\mathbb{1}_2,\ \mathbb{1}_4\otimes\tfrac{\sigma_a}{2}\bigr]=0 .
+$$</p>
+<p><strong>A colour rotation cannot change a doublet slot, and a weak rotation cannot change a colour line.</strong> Everything the six cases show follows from that one bracket.</p>
+<h3 id="the-same-rotation-written-out-on-the-eight">The Same Rotation, Written Out on the Eight</h3>
+<p><strong>For $\theta=\tfrac{\pi}{2}$ the colour array becomes a permutation of the eight, and the display makes the doublet slot visible.</strong> In the basis $(t/u,\,t/d,\,x/u,\,x/d,\,y/u,\,y/d,\,z/u,\,z/d)$,</p>
+<p>$$
+\exp\!\left(\tfrac{\pi}{2}A_{xy}\right)\otimes\mathbb{1}_2=
+\begin{pmatrix}
+1&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\
+0&amp;1&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;0&amp;0&amp;1&amp;0&amp;0&amp;0\\
+0&amp;0&amp;0&amp;0&amp;0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;-1&amp;0&amp;0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;0&amp;-1&amp;0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;1&amp;0\\
+0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;1
+\end{pmatrix}.
+$$</p>
+<p><strong>Read by rows, that matrix says four things at once.</strong> The lepton line is fixed twice, in both slots. <strong>The red line goes to the green line twice, once in each slot</strong>, with the same coefficient. No row mixes $u$ with $d$. <strong>And the $z$ line is fixed</strong>, because $\{x,y\}$ is the plane and $z$ is not in it. So the array does not act on a quark: it acts on the colour half of every quark, and it does so identically in both halves.</p>
+<p><strong>The complementary object, the weak generator, is the other way round.</strong></p>
+<p>$$
+\mathbb{1}_4\otimes\tfrac{\sigma_3}{2}=\mathrm{diag}\bigl(+\tfrac12,-\tfrac12,+\tfrac12,-\tfrac12,+\tfrac12,-\tfrac12,+\tfrac12,-\tfrac12\bigr),
+$$</p>
+<p><strong>which assigns $+\tfrac12$ to the up slot on <em>every</em> line and $-\tfrac12$ to the down slot on every line.</strong> It cannot tell red from blue, and it does not try. <strong>A quark's charge is the sum of one entry of each display</strong>, and neither display alone is a charge.</p>
+<h3 id="what-the-two-labels-do-to-a-quark-five-cases">What the Two Labels Do to a Quark, Five Cases</h3>
+<p><strong>Case A, a gluon vertex.</strong> $A_{xy}\otimes\mathbb{1}_2$ sends $u_r\mapsto u_g$ and $d_r\mapsto d_g$, charge for charge:</p>
+<p>$$
+Q(u_r)=Q(u_g)=+\tfrac23,
+\qquad
+Q(d_r)=Q(d_g)=-\tfrac13,
+\qquad
+\Delta Q=0 .
+$$</p>
+<p><strong>The array moves both members of the doublet the same way, which is what "colour-blind to the doublet index" means.</strong> A gluon that treated $u$ and $d$ differently would not be a gluon.</p>
+<p><strong>Case B, a leptoquark vertex.</strong> $A_{tx}\otimes\mathbb{1}_2$ sends $u_r\mapsto\nu_L$ and $d_r\mapsto e_L$:</p>
+<p>$$
+Q(u_r)=+\tfrac23\ \longrightarrow\ Q(\nu_L)=0,
+\qquad
+Q(d_r)=-\tfrac13\ \longrightarrow\ Q(e_L)=-1,
+\qquad
+\Delta Q=-\tfrac23\ \text{in both}.
+$$</p>
+<p><strong>The same array, the same charge transfer, two different final particles</strong> — because the array moved the line and the slot stayed. <strong>The charge $-\tfrac23$ is carried away by $\bar X^{r}$, which is the boson the corpus assigns to $A_{tx}$</strong>, and the balance holds in both rows. That double agreement is the check that the two-label reading is the right one.</p>
+<p><strong>Case C, the three leptoquarks are three copies.</strong> Replacing $x$ by $y$ or $z$ in Case B gives the other two, with the same $\Delta Q$ and the same structure:</p>
+<p>$$
+\begin{array}{l|c|c|c}
+\text{array} &amp; \text{vertex in the }u\text{ slot} &amp; \text{vertex in the }d\text{ slot} &amp; \text{boson}\\ \hline
+A_{tx} &amp; u_r\to\nu_L &amp; d_r\to e_L &amp; \bar X^{r},\ -\tfrac23\\
+A_{ty} &amp; u_g\to\nu_L &amp; d_g\to e_L &amp; \bar X^{g},\ -\tfrac23\\
+A_{tz} &amp; u_b\to\nu_L &amp; d_b\to e_L &amp; \bar X^{b},\ -\tfrac23
+\end{array}
+$$</p>
+<p><strong>Six vertices, three bosons, one computation.</strong> The corpus says the three leptoquark planes are "three copies of one computation", and the table is that sentence written as vertices.</p>
+<p><strong>Case D, nothing of the fifteen makes a down quark out of an up quark.</strong> There is no array $X$ of the fifteen with $X\otimes\mathbb{1}_2:u_r\mapsto d_r$, because every one of them is a multiple of the identity on the second factor. <strong>The move $u\to d$ is the ladder $\tfrac12(\sigma_1-i\sigma_2)$ acting on the slot, a $2\times2$ object</strong>, and the $2\times2$ arrays are the ones this article does not print.</p>
+<p><strong>Case E, the six read on the carrier do move the line.</strong> $\tfrac12L_x$ sends $e_t\mapsto\tfrac12 e_x$, so on the eight it sends $\nu_L\mapsto\tfrac12 u_r$ and $e_L\mapsto\tfrac12 d_r$. <strong>That is a leptoquark move, not a weak move</strong>, and it is the difference Case 5 of this note turns on: the six are $4\times4$ arrays, so whatever they are called they act on the line factor and they carry colour.</p>
+<h3 id="which-labels-are-canonical-and-which-are-conventional">Which Labels Are Canonical and Which Are Conventional</h3>
+<p><strong>The letter $x$ meaning "red" is a convention, and the corpus says so.</strong> The sparse frames are the axis-free basis "up to a permutation of the three directions and a sign on each vector", and a cyclic relabelling conjugates every array by a permutation matrix:</p>
+<p>$$
+P A_{xy}P^{-1}=+A_{yz},\qquad
+P A_{xz}P^{-1}=-A_{xy},\qquad
+P A_{yz}P^{-1}=-A_{xz},
+$$</p>
+<p><strong>for $P$ the cycle $x\to y\to z\to x$ with $t$ fixed.</strong> So the three colour planes are one orbit under relabelling, and a reader who calls $e_x$ blue instead of red has changed nothing. <strong>Even the signs move</strong>, which is why no case below should be read as singling out one colour.</p>
+<p><strong>What is canonical is the split $t$ against the triple.</strong> The vacuum array is</p>
+<p>$$
+D=\mathrm{diag}(-3,1,1,1),
+$$</p>
+<p><strong>with one eigenvalue on the lepton line and one shared eigenvalue on the three colour lines</strong>, and that asymmetry is not a convention: it is the statement that the fourth colour is a lepton line and the other three are colour. <strong>A relabelling inside the triple is free; a relabelling that exchanges $t$ with one of the three is not</strong>, and it changes the model rather than the display.</p>
+<p><strong>The same distinction for the doublet slot.</strong> The slot labels $u,d$ are names for the two rows, and the physical statement is that the weak algebra acts on them and the colour algebra does not. <strong>Which row is called $u$ is a convention; that there are two rows and that they are one $\mathrm{SU}(2)$ doublet is not.</strong></p>
+<h2 id="case-1-the-colour-rotation-math206-on-a-colour-line">Case 1 — The Colour Rotation: $A_{xy}$ on a Colour Line</h2>
+<p><strong>The array, on the plane $\{x,y\}$, which leaves the lepton line alone.</strong></p>
+<p>$$
+A_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\ 0&amp;0&amp;1&amp;0\\ 0&amp;-1&amp;0&amp;0\\ 0&amp;0&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp(\theta A_{xy})e_x=\cos\theta\,e_x-\sin\theta\,e_y ,
+\qquad
+\exp(\theta A_{xy})e_t=e_t .
+$$</p>
+<p><strong>Two images, at $\theta=\tfrac{\pi}{4}$ and $\theta=\tfrac{\pi}{2}$.</strong></p>
+<p>$$
+\exp\!\left(\tfrac{\pi}{4}A_{xy}\right)e_x=0.7071\,e_x-0.7071\,e_y,
+\qquad
+\exp\!\left(\tfrac{\pi}{2}A_{xy}\right)e_x=-e_y .
+$$</p>
+<p><strong>The reading.</strong> The $x$ line goes to the $y$ line, and at the right angle it goes to minus the $y$ line, which is the same state with the sign the rotation carries. <strong>The lepton line is fixed, $e_t\mapsto e_t$, and that single equality is the gluon's masslessness</strong>: $[A_{xy},D]=0$ because $D$ has the same eigenvalue on the $x$ and the $y$ line, so the commutator that gives mass has nothing to act on.</p>
+<p><strong>On the eight, the case is two identical copies of itself</strong>, since the array is $A_{xy}\otimes\mathbb{1}_2$:</p>
+<p>$$
+u_r\mapsto\cos\theta\,u_r-\sin\theta\,u_g,
+\qquad
+d_r\mapsto\cos\theta\,d_r-\sin\theta\,d_g,
+\qquad
+\nu_L\mapsto\nu_L,
+\qquad
+e_L\mapsto e_L .
+$$</p>
+<p><strong>Two rows, one coefficient each, same angle.</strong> A reader who wants the single sentence: <strong>$A_{xy}$ turns the colour half of the whole doublet at once, which is what a colour rotation is obliged to do.</strong> It cannot rotate $u_r$ and leave $d_r$ alone, because that would be an operation on the colour index that depended on the doublet index, and no array of the fifteen has such an entry.</p>
+<p><strong>What the case does not say.</strong> The image $-\sin\theta\,e_y$ is a rotation of the quartet's coefficients, not a rotation of one quark into another particle: <strong>the doublet slot is untouched, so $u_r$ goes to a mixture of $u_r$ and $u_g$ and never to $d_r$.</strong> Whether the resulting mixture is what a gluon does depends on which factor the reader calls colour, and Case 5 of this note is where the two readings are separated.</p>
+<h2 id="case-2-the-hypercharge-phase-math230-on-the-lepton-line-and-on-a-colour-line">Case 2 — The Hypercharge Phase: $iD$ on the Lepton Line and on a Colour Line</h2>
+<p><strong>The array is diagonal, so it moves no index and turns no plane; it multiplies four lines by four phases, and being imaginary it does its work across the two blocks of the introduction.</strong></p>
+<p>$$
+iD=i\,\mathrm{diag}(-3,1,1,1),
+\qquad
+\exp(\theta\,iD)=\mathrm{diag}\bigl(e^{-3i\theta},e^{i\theta},e^{i\theta},e^{i\theta}\bigr).
+$$</p>
+<p><strong>Two images at $\theta=0.4$, one per line.</strong></p>
+<p>$$
+\exp(0.4\,iD)e_t=(0.3624-0.9320i)\,e_t,
+\qquad
+\exp(0.4\,iD)e_x=(0.9211+0.3894i)\,e_x .
+$$</p>
+<p><strong>The reading is charge quantisation in one line.</strong> The phases are $e^{-3i\theta}$ on the lepton line and $e^{+i\theta}$ on each colour line, and a phase is invariant under the full turn only when the integers balance:</p>
+<p>$$
+3\cdot(+1)+(-3)=0 .
+$$</p>
+<p><strong>The three colour lines share one phase, which is why $D$ is a multiple of the identity on the colour triple and why colour never splits a leptoquark sextet.</strong> The corpus states the same equation as the corner entry of $iD$; the image above is the same statement as an operator.</p>
+<p><strong>On the eight the phase is the same in both rows of a line</strong>, because $iD$ is also a multiple of the identity on the slot:</p>
+<p>$$
+u_x\mapsto e^{+i\theta}u_x,
+\qquad
+d_x\mapsto e^{+i\theta}d_x,
+\qquad
+u_t\mapsto e^{-3i\theta}u_t,
+\qquad
+d_t\mapsto e^{-3i\theta}d_t .
+$$</p>
+<p><strong>So the array gives the same phase to a red up quark and a red down quark, and physics gives them $+\tfrac23$ and $-\tfrac13$.</strong> The two differ by one unit of $T_3$, and $T_3$ is not in the quartet: <strong>the difference is the doublet index, and Case 6 is where it appears.</strong> The reading that survives is the one the corpus uses for $B-L$: $iD$ is a <em>line</em> charge, uniform across the doublet, and the electric charge is a line charge plus a slot charge and nothing else.</p>
+<h2 id="case-3-the-leptoquark-math247-and-math248-on-the-lepton-line">Case 3 — The Leptoquark: $A_{tx}$ and $iS_{tx}$ on the Lepton Line</h2>
+<p><strong>Two arrays on the same two cells, and the two images differ by an $i$.</strong></p>
+<p>$$
+\exp(\theta A_{tx})e_t=\cos\theta\,e_t-\sin\theta\,e_x,
+\qquad
+\exp(\theta\,iS_{tx})e_t=\cos\theta\,e_t+i\sin\theta\,e_x .
+$$</p>
+<p><strong>At $\theta=0.4$.</strong></p>
+<p>$$
+\exp(0.4A_{tx})e_t=0.9211\,e_t-0.3894\,e_x,
+\qquad
+\exp(0.4\,iS_{tx})e_t=0.9211\,e_t+0.3894\,i\,e_x .
+$$</p>
+<p><strong>The reading, and the difference of the two.</strong> The real array rotates the lepton line into the red line and the result is still a state of the real quartet. <strong>The imaginary array puts an $i$ on the red component, so the image is not a rotation of the real quartet at all</strong>, and that is the $6+9$ split met on one plane: six planes turn, nine arrays phase. <strong>The two arrays are the real and the imaginary part of one complex leptoquark field</strong>, and the corpus names them $\bar X^{r}$, charge $-\tfrac23$, and $X^{r}$, charge $+\tfrac23$.</p>
+<p><strong>The numbers that go with the case, from the mass form $m^{2}(X)=v^{2}\operatorname{tr}\bigl([X,\Phi_0]^{\dagger}[X,\Phi_0]\bigr)$.</strong></p>
+<p>$$
+m^{2}(A_{tx})=m^{2}(iS_{tx})=+32\,v^{2},
+\qquad
+[A_{tx},iS_{tx}]=2i\bigl(E_{tt}-E_{xx}\bigr),
+\qquad
+\operatorname{spec}A_{tx}=\operatorname{spec}iS_{tx}=\{0,0,\pm i\}.
+$$</p>
+<p><strong>The bracket is exact and it is the case's structural content</strong>: the plane's two arrays and one diagonal close into an $\mathfrak{su}(2)$, so a leptoquark plane is a three-dimensional object and not two unrelated directions. <strong>Resolved on the diagonals the corpus prints it as $[A_{tx},iS_{tx}]=2i(E_{tt}-E_{xx})=-\tfrac23(iD+2d_{2}+d_{3})$</strong>, in its own normalisation of $d_{2}$ and $d_{3}$, so the plane and the three diagonals close together. <strong>The mass is the same for both amplitudes</strong>, which says the two halves of the complex field are degenerate at this order.</p>
+<p><strong>What the case costs.</strong> A leptoquark that turns a lepton into a red quark at $32v^{2}$ is a proton-decay mediator, so $v$ here is the $\mathrm{SU}(4)$-breaking value and not the weak one. <strong>The case is a rotation of the carrier; the bound that makes it heavy is an experimental input the note does not supply.</strong></p>
+<h2 id="case-4-chirality-math268-a-right-multiplier-on-one-state">Case 4 — Chirality: $\xi=-iR_{\vec e_z}$, a Right Multiplier, on One State</h2>
+<p><strong>The operator is a pure right multiplier, so it is a basis operator and not a generator.</strong></p>
+<p>$$
+\xi=-iR_{\vec e_z},
+\qquad
+\xi^{2}=+\mathbb{1},
+\qquad
+P_{\pm}=\tfrac12\bigl(\mathbb{1}\pm\xi\bigr).
+$$</p>
+<p><strong>The images of the four basis vectors under $P_{+}$.</strong></p>
+<p>$$
+P_+e_t=\tfrac12\bigl(e_t-ie_z\bigr),
+\quad
+P_+e_x=\tfrac12\bigl(e_x+ie_y\bigr),
+\quad
+P_+e_y=-\tfrac{i}{2}\bigl(e_x+ie_y\bigr),
+\quad
+P_+e_z=\tfrac{i}{2}\bigl(e_t-ie_z\bigr).
+$$</p>
+<p><strong>The reading.</strong> $P_+$ has rank two over $\mathbb{C}$, and its image is spanned by $e_t-ie_z$ and $e_x+ie_y$; $P_-$ has image spanned by $e_t+ie_z$ and $e_x-ie_y$. <strong>So $\xi$ splits the carrier into two complex two-dimensional pieces, and a state of one chirality is a complex combination of two coefficient lines, not a subset of them.</strong> That is the algebraic form of "chirality is a side": the two pieces are the two minimal left ideals, and $P_\pm$ are the projectors onto them.</p>
+<p><strong>The physics the split delivers.</strong> A mass term pairs one piece with the other, so a state wholly inside $P_+$ has no mass term of its own: <strong>a chiral fermion cannot carry a bare Dirac mass</strong>, and the electron's mass has to wait for the vacuum expectation value that connects the two pieces. <strong>The case is also the sharpest limit of the note</strong>: the split needs a right multiplier, and no element of the left family does the same job.</p>
+<p><strong>One warning that belongs here.</strong> $\xi$ is defined with the Euclidean star and with $\vec e_z$ singled out; a different choice of unit gives a different pair of ideals, and the two pieces are the same only up to the relabelling the frame allows. <strong>The split is canonical as a split, not as a labelling.</strong></p>
+<h2 id="case-5-the-charged-ladder-math284-on-the-carrier">Case 5 — The Charged Ladder: $T^{L}_{x}-iT^{L}_{y}$ on the Carrier</h2>
+<p><strong>The two arrays are $\tfrac12L_x$ and $\tfrac12L_y$, so the complex combination is left multiplication by $\tfrac12(\vec e_x-i\vec e_y)$.</strong></p>
+<p>$$
+T^{L}_{x}-iT^{L}_{y}=\tfrac12\bigl(L_x-iL_y\bigr).
+$$</p>
+<p><strong>Three images, on the lepton line and on two colour lines.</strong></p>
+<p>$$
+\bigl(T^{L}_{x}-iT^{L}_{y}\bigr)e_t=\tfrac12\bigl(e_x-ie_y\bigr),
+\qquad
+\bigl(T^{L}_{x}-iT^{L}_{y}\bigr)e_x=-\tfrac12e_t+\tfrac{i}{2}e_z,
+\qquad
+\bigl(T^{L}_{x}-iT^{L}_{y}\bigr)e_z=-\tfrac{i}{2}e_x-\tfrac12e_y .
+$$</p>
+<p><strong>The reading, on the carrier.</strong> The ladder carries the lepton line into the red–green complex combination, and it carries the red line into the lepton line plus the blue line. <strong>Those are leptoquark vertices</strong>, and they are what the same matrix must do if the doublet it acts on is a lepton–colour pair.</p>
+<p><strong>The same number on the doublet.</strong> The identical combination acts on a two-row doublet as the $\nu$–$e$ ladder, because there the two rows are $\nu$ and $e$ and the ladder moves one into the other. <strong>The matrix is the same; the pairing is not.</strong></p>
+<p><strong>Why the difference is not cosmetic.</strong> One generator has one mass. On the carrier the ladder's partners are a lepton and a colour line, so the state it mediates sits at the $\mathrm{SU}(4)$ scale, $32v^{2}$ in Case 3. On the doublet its partners are $\nu$ and $e$, and the state it mediates is the $W$, whose mass is the weak scale and not the $\mathrm{SU}(4)$ scale. <strong>Both readings are exact and they cannot both be the physics of one field</strong>, so the corpus keeps them apart: the carrier's reading is what the two-sided action supplies, and the doublet's reading is the gauge factor of $(4,2,1)\oplus(\bar4,1,2)$.</p>
+<p><strong>The case in one sentence for the article that quotes it.</strong> The six weak arrays are the weak algebra read on the carrier; the $W$ is the same algebra read on the doublet; a note that prints one and names the other has printed the right matrix with the wrong noun.</p>
+<h2 id="case-6-the-charge-operator-needs-two-indices">Case 6 — The Charge Operator Needs Two Indices</h2>
+<p><strong>The charges are the eigenvalues of $Q=T_3+\tfrac16D$ on the sixteen states</strong>, and the table is the case. <strong>$D$ acts on the line index and $T_3$ on the slot index, so $Q$ is the one operator of the note that is not a single array.</strong></p>
+<p>$$
+\begin{array}{c|cccc}
+ &amp; r &amp; g &amp; b &amp; \ell\\ \hline
+T_3=+\tfrac12 &amp; +\tfrac23 &amp; +\tfrac23 &amp; +\tfrac23 &amp; 0\\
+T_3=-\tfrac12 &amp; -\tfrac13 &amp; -\tfrac13 &amp; -\tfrac13 &amp; -1
+\end{array}
+$$</p>
+<p><strong>The reading is that $Q$ is not an array of the twenty-one.</strong> $D$ is, and it is diagonal with entries $(-3,1,1,1)$; $T_3$ is not, because it takes two different values on the same colour line and the quartet has no index left to carry them. <strong>So the charge operator is a sum of one array of the fifteen and one operator of a second index</strong>, and that second index is exactly the doublet slot of the fermion count.</p>
+<p><strong>The same statement as a dimension.</strong> The centraliser of $D$ in $\mathfrak{su}(4)$ is $\mathfrak{u}(3)$, dimension nine, and every element of it is colour-blind on the colour triple. <strong>An operator that separates $+\tfrac23$ from $-\tfrac13$ inside one colour line is therefore outside that centraliser</strong>, hence outside $\mathfrak{su}(4)$, hence needs the second index. <strong>This is the only case of the six that cannot be written with the twenty-one alone</strong>, and it is the reason the model has three factors and not one.</p>
+<p><strong>The same eight entries, cross-checked against the label table.</strong> The four entries of the table are the four entries of the $Q$ display on page one of the two-label section: $u_r,u_g,u_b$ at $+\tfrac23$, $d_r,d_g,d_b$ at $-\tfrac13$, $\nu_L$ at $0$ and $e_L$ at $-1$. <strong>Eight entries, two sources, one number each</strong>, and the two agree because $Q$ is $T_3$ plus one sixth of $D$ and nothing else.</p>
+<p><strong>What the case does not do.</strong> It does not compute the mixing of the neutral directions, and it does not fix a coupling. <strong>The photon is the null direction of the neutral block and the $Z$ the other one</strong>; both are the subject of the mass-matrix article, and neither is needed to read the table above.</p>
+<h2 id="the-numbers-one-table">The Numbers, One Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>case</th>
+<th>array</th>
+<th>operator form</th>
+<th>image at $\theta=0.4$</th>
+<th>$m^{2}/v^{2}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$A_{xy}$</td>
+<td>$-\tfrac12(L_z-R_z)$</td>
+<td>$e_x\mapsto0.9211e_x-0.3894e_y$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$iD$</td>
+<td>diagonal</td>
+<td>$e_t\mapsto(0.3624-0.9320i)e_t$, $e_x\mapsto(0.9211+0.3894i)e_x$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$A_{tx}$</td>
+<td>$-\tfrac12(L_x+R_x)$</td>
+<td>$e_t\mapsto0.9211e_t-0.3894e_x$</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$iS_{tx}$</td>
+<td>not one-sided</td>
+<td>$e_t\mapsto0.9211e_t+0.3894ie_x$</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\xi=-iR_z$</td>
+<td>right multiplier</td>
+<td>$P_+$ projects on $\mathrm{span}\{e_t-ie_z,\,e_x+ie_y\}$</td>
+<td>---</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$T^{L}_{x}-iT^{L}_{y}$</td>
+<td>$\tfrac12(L_x-iL_y)$</td>
+<td>$e_t\mapsto\tfrac12(e_x-ie_y)$</td>
+<td>$16$ (artefact)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$Q=T_3+\tfrac16D$</td>
+<td>two indices</td>
+<td>charges $+\tfrac23,-\tfrac13,-1,0$</td>
+<td>---</td>
+</tr>
+<tr>
+<td>A</td>
+<td>$A_{xy}\otimes\mathbb{1}_2$</td>
+<td>permutation on eight</td>
+<td>$u_r\mapsto u_g$, $d_r\mapsto d_g$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>B</td>
+<td>$A_{tx}\otimes\mathbb{1}_2$</td>
+<td>two rows at once</td>
+<td>$u_r\mapsto\nu_L$, $d_r\mapsto e_L$</td>
+<td>$32$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two entries of the last column that are not masses are marked and they are not rounding.</strong> $m^{2}=8v^{2}$ on one weak array, and $16v^{2}$ on the ladder, which is twice the same number because the ladder is a sum of two of them; both are what the mass form returns when a weak generator is read on the carrier. <strong>The corpus calls the number an artefact for a reason that Case 5 gives</strong>: the field whose mass is $8v^{2}$ is not the field of Case 5's second reading.</p>
+<h2 id="what-the-cases-do-not-show">What the Cases Do Not Show</h2>
+<p><strong>They do not show a coupling.</strong> No $g_4$, no $g_L$, no $g_R$: the images are operators applied to states, and an operator is applied the same way at every strength. <strong>They do not show a fermion mass.</strong> The Yukawa matrices are $3\times3$ in the family index, they are not fixed by the frame, and Case 4 shows only why the bare term is forbidden and not what replaces it.</p>
+<p><strong>They do not print the $2\times2$ matrices.</strong> Every case of the note is a $4\times4$ array on the line index; <strong>the doublet slot appears only as a multiplicity</strong>, as the factor $\mathbb{1}_2$ that makes every image appear twice. A reader who wants $\sigma_a/2$ acting on the slot will find it in the electroweak articles of the corpus and not here, <strong>and the absence is deliberate</strong>: this note is the report of what the twenty-one do, and the twenty-one do not reach the slot.</p>
+<p><strong>They do not settle which reading of the six is the physics.</strong> Case 5 prints both and says so. <strong>The note's contribution is narrower and it is exact</strong>: every image above is a computed image of a printed array on a stated state, and each of the six is a situation the model has to describe. <strong>A reader who wants the couplings, the mixing angles or the proton lifetime will not find them here, and will find the operators they are attached to.</strong></p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-21-axf-matrices-of-the-bosons-in-detail.html">The 21 AXF Matrices of the Bosons in Detail</a>, for the arrays, their entries and their spectra.</li>
+<li><a href="../articles_physics/the-axf-matrices-axis-free-integer-entries.html">The AXF Matrices: Axis-Free, Integer Entries</a>, for the frame and the reading by columns.</li>
+<li><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a>, for the state as an element and the chiral mass rule used in Case 4.</li>
+<li><a href="../articles_physics/classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html">Classification of the Fermions in the Four Colours Left–Right Model</a>, for the sixteen and the conjugation.</li>
+<li><a href="../articles_physics/the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html">The Adjoint Mass Matrix of the Fifteen</a>, for the $32v^{2}$ and the nine zeros.</li>
+<li><a href="../articles_physics/the-mass-matrix-of-the-twenty-one-gauge-bosons-four-blocks-one-mixing-and-the-nine-zeros.html">The Mass Matrix of the Twenty-One Gauge Bosons</a>, for the charged block and the neutral mixing that Case 6 does not compute.</li>
+<li><a href="the-modules-what-the-algebra-acts-on.html">The Modules: What the Algebra Acts On</a>, for the carrier as the algebra and the splitting into two ideals that Case 4 uses.</li>
+<li><a href="../articles_physics/the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html">The Leptoquarks of the Four Colours Left–Right Model</a>, for the six states and the bound behind the vertices of Cases B and C.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
