@@ -6,7 +6,7 @@
 
 The article reads the three generators as the corpus reads them. The isomorphism $\mathsf{M}_2$ sends the vector units to the three matrices $\mathsf{M}_2(\vec e_k)$, and the half of those matrices are the generators; the normalization is the one that *Automorphisms and Derivations of Algebras* fixes at the element level, $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$. The bracket of the halved generators is $[G_1,G_2]=G_3$, with no factor and no sign.
 
-The article gives the three matrices twice, once from the Pauli matrices and once as the six axis-free matrices of the multiplication, the three derivations as four-by-four arrays in the basis of the elements, the conjugation table of the rotor on the three generators, the three rotors written out, the dimension ladder, the worked cases and the orbits. Every numeric statement was checked on the arrays.
+The article keeps three frames apart, and the table of §*Three Representations, Kept Apart* says what each one holds: the $2\times2$ Pauli generators $G_k=-\tfrac{i}{2}\sigma_k$; the same block twice in the $4\times4$ Peirce frame, $\mathrm I_2\otimes G_k$, with the transposed right family $G_k^{\mathsf T}\otimes\mathrm I_2$; and the $4\times4$ axis-free matrices $\ell_k$ and $r_k$ of left and right multiplication, of which the derivation is the half of the difference. Then the three derivations as four-by-four arrays in the basis of the elements, the conjugation table of the rotor on the three generators, the three rotors written out, the dimension ladder, the worked cases and the orbits. Every numeric statement was checked on the arrays.
 
 The article assumes the exponential of the matrix algebra from *The Exponential and the Lie Group Structure of $\mathrm{GL}_2(\mathbb{C})$*, the Lie correspondence of *The Lie Correspondence and the Adjoint Representation*, and the images of the units from the Pauli representation of $M_2(\mathbb{C})$.
 
@@ -28,7 +28,7 @@ $$
 
 and each of the three is anti-Hermitian and traceless. They are the three generators up to the factor $\tfrac12$ of the next section.
 
-**Remark (the images are written as matrices).** The three objects of this article are images of elements, and they are written with their entries. The arrays of the Pauli frame are printed once, in §*The Three, From the Pauli Matrices and From the Axis-Free Matrices*, because that section compares the two routes and a reader who is told that the images are $-i\sigma_k$ must be able to see what $\sigma_k$ is; everywhere else the body writes the entries.
+**Remark (the images are written as matrices).** The three objects of this article are images of elements, and they are written with their entries. The arrays of the Pauli frame are printed once, in §*Three Representations, Kept Apart*, because a reader who is told that the images are $-i\sigma_k$ must be able to see what $\sigma_k$ is; everywhere else the body writes the entries.
 
 ### The Split as One and Two
 
@@ -78,63 +78,203 @@ $$
 | $G_2$ | $-\tfrac12$ and $\tfrac12$ | real antisymmetric | $-\tfrac14\mathrm{I}_2$ | $\tfrac14$ |
 | $G_3$ | diagonal, $-\tfrac{i}{2}$ and $\tfrac{i}{2}$ | $i$ times real symmetric | $-\tfrac14\mathrm{I}_2$ | $\tfrac14$ |
 
-### The Three, From the Pauli Matrices and From the Axis-Free Matrices
+## Three Representations, Kept Apart
 
-**The Pauli matrices.** The three arrays of the Pauli frame, as *$M_2(\mathbb{C})$ Pauli Representation* prints them, and the images of the three vector units under them:
+**Why a section on this.** A matrix of order two and a matrix of order four are different objects, and an article that prints both without saying which frame each belongs to invites one mistake: to read a four-by-four array as a generator of $\mathfrak{su}(2)$. It is not one. The three directions $\vec e_x,\vec e_y,\vec e_z$ have matrices in three frames, of two sizes, and the table says which is which before any display.
+
+**The three frames and the two sizes.**
+
+| frame | size | basis of the carrier | matrix of left multiplication | the three left generators | the three right generators | as matrices they lie in |
+| --- | --- | --- | --- | --- | --- | --- |
+| Pauli, compressed | $2\times2$ | one Peirce plane | $\mathsf M_2(\vec e_k)=-i\sigma_k$ | $G_k=\tfrac12\mathsf M_2(\vec e_k)$ | $G_k^{\mathsf T}$ | $\mathfrak{su}(2)$ |
+| Pauli, Peirce frame | $4\times4$ | $\mathcal P$, the algebra | $\mathrm I_2\otimes\mathsf M_2(\vec e_k)$ | $\mathrm I_2\otimes G_k$ | $G_k^{\mathsf T}\otimes\mathrm I_2$ | $\mathfrak{su}(4)$ |
+| axis-free, coefficient frame | $4\times4$ | $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the algebra | $\ell_k$ | $\tfrac12\ell_k$ | $\tfrac12 r_k$ | $\mathfrak{so}(4)\subset\mathfrak{su}(4)$ |
+
+**Only the first row is $\mathfrak{su}(2)$.** The other two rows are the same three directions carried by the regular representation: their matrices are of order four, anti-Hermitian and traceless, so they lie in $\mathfrak{su}(4)$, and the three of a row span a real three-dimensional subspace of $\mathfrak{su}(4)$ which is a copy of $\mathfrak{su}(2)$. The three-dimensional space whose generators this article computes is the first row. A four-by-four matrix cannot be an element of $\mathfrak{su}(2)$ in its defining representation, and none of the arrays below is claimed to be one.
+
+**The half is applied once.** Left multiplication by $\vec e_k$ has a matrix in each frame, and the generator is half of it in every frame at once: $G_k$ in the Pauli frame, $\tfrac12\ell_k$ in the axis-free frame, and the half of $r_k$ for the right family. The half does not change the space, only the structure constant, from $2$ to $1$. Where a display below prints a matrix whole, the half is named in the sentence beside it, and the reason to print it whole is that it is the matrix the corpus prints elsewhere.
+
+### The Pauli Representation, $2\times2$
+
+**The frame.** The three arrays of the Pauli frame, as *$M_2(\mathbb{C})$ Pauli Representation* prints them:
 
 $$
 \sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
 \sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
-\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
-\qquad
-\mathsf{M}_2(\vec e_k)=-i\sigma_k .
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
 $$
 
-So the three generators are
-
+**The images of the units.** The isomorphism sends the three vector units to
 $$
-G_1=-\tfrac{i}{2}\sigma_1,\qquad G_2=-\tfrac{i}{2}\sigma_2,\qquad G_3=-\tfrac{i}{2}\sigma_3,
-$$
-
-which is the display of the definition, entry for entry.
-
-**The axis-free matrices.** The same three directions, built from the multiplication instead of from a frame of $\mathbb{C}^2$: the left and the right multiplication by the three vector units, in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the algebra, are the six matrices of *Matrix Representations and Conventions*,
-
-$$
-\ell_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
-\ell_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
-\ell_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+T_k=\mathsf M_2(\vec e_k)=-i\sigma_k,
 $$
 
 $$
-r_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\quad
-r_y=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\quad
+T_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+T_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+T_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+$$
+
+and the factor $i$ is forced by $\vec e_k^2=-e_t$, since the Pauli matrices square to $\mathrm I_2$.
+
+**The three left generators.** The same three arrays as in §*The Three Generators*, printed again here so that each frame stands alone, and written as the half of the image it comes from:
+
+$$
+G_1=\tfrac12T_1=\begin{pmatrix}0&-\tfrac{i}{2}\\-\tfrac{i}{2}&0\end{pmatrix}
+$$
+
+$$
+G_2=\tfrac12T_2=\begin{pmatrix}0&-\tfrac12\\ \tfrac12&0\end{pmatrix}
+$$
+
+$$
+G_3=\tfrac12T_3=\begin{pmatrix}-\tfrac{i}{2}&0\\0&\tfrac{i}{2}\end{pmatrix}.
+$$
+
+**The three right generators.** The right matrix of a block is its transpose, so the right family is $G_k^{\mathsf T}$, and transposition fixes $\sigma_1$ and $\sigma_3$ and negates $\sigma_2$:
+
+$$
+G_1^{\mathsf T}=\begin{pmatrix}0&-\tfrac{i}{2}\\-\tfrac{i}{2}&0\end{pmatrix}
+$$
+
+$$
+G_2^{\mathsf T}=\begin{pmatrix}0&\tfrac12\\-\tfrac12&0\end{pmatrix}=-G_2
+$$
+
+$$
+G_3^{\mathsf T}=\begin{pmatrix}-\tfrac{i}{2}&0\\0&\tfrac{i}{2}\end{pmatrix}.
+$$
+
+Six matrices, three of them distinct: the right family differs from the left in the sign of $G_2$ alone, which is the matrix form of the anti-automorphism.
+
+### The Pauli Representation, $4\times4$
+
+**What this frame is.** The uncompressed form of the same two families, on the algebra rather than on one plane. In the Peirce order $\mathcal P=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$,
+$$
+L_{\vec e_k}=\mathrm I_2\otimes\mathsf M_2(\vec e_k)=\mathrm I_2\otimes T_k,\qquad
+R_{\vec e_k}=\mathsf M_2(\vec e_k)^{\mathsf T}\otimes\mathrm I_2=T_k^{\mathsf T}\otimes\mathrm I_2 ,
+$$
+so the left display repeats the $2\times2$ block twice and the right display places the rows of the block in the positions of the identity. The half is applied as before.
+
+**The three left generators.**
+
+$$
+\mathrm I_2\otimes G_1=\begin{pmatrix}0&-\tfrac{i}{2}&0&0\\-\tfrac{i}{2}&0&0&0\\0&0&0&-\tfrac{i}{2}\\0&0&-\tfrac{i}{2}&0\end{pmatrix}
+$$
+
+$$
+\mathrm I_2\otimes G_2=\begin{pmatrix}0&-\tfrac12&0&0\\ \tfrac12&0&0&0\\0&0&0&-\tfrac12\\0&0&\tfrac12&0\end{pmatrix}
+$$
+
+$$
+\mathrm I_2\otimes G_3=\begin{pmatrix}-\tfrac{i}{2}&0&0&0\\0&\tfrac{i}{2}&0&0\\0&0&-\tfrac{i}{2}&0\\0&0&0&\tfrac{i}{2}\end{pmatrix}.
+$$
+
+**The three right generators.**
+
+$$
+G_1^{\mathsf T}\otimes\mathrm I_2=\begin{pmatrix}0&0&-\tfrac{i}{2}&0\\0&0&0&-\tfrac{i}{2}\\-\tfrac{i}{2}&0&0&0\\0&-\tfrac{i}{2}&0&0\end{pmatrix}
+$$
+
+$$
+G_2^{\mathsf T}\otimes\mathrm I_2=\begin{pmatrix}0&0&\tfrac12&0\\0&0&0&\tfrac12\\-\tfrac12&0&0&0\\0&-\tfrac12&0&0\end{pmatrix}
+$$
+
+$$
+G_3^{\mathsf T}\otimes\mathrm I_2=\begin{pmatrix}-\tfrac{i}{2}&0&0&0\\0&-\tfrac{i}{2}&0&0\\0&0&\tfrac{i}{2}&0\\0&0&0&\tfrac{i}{2}\end{pmatrix}.
+$$
+
+**What the four-by-four adds.** Nothing to the generators and everything to the carrier: the same three directions, acting on the four-dimensional algebra instead of on one plane, and a display in which the repetition is visible as repetition.
+
+### The Axis-Free Representation, $4\times4$
+
+**What this frame is.** The regular matrices of left and right multiplication in the coefficient basis, columns equal to products. No frame of $\mathbb{C}^2$ is chosen and no sign of $\sigma_k$ is fixed, so this is where the article's own frame is read.
+
+**The three left matrices.** Left multiplication by the three vector units, printed whole:
+
+$$
+\ell_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}
+$$
+
+$$
+\ell_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix}
+$$
+
+$$
+\ell_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+$$
+
+**The three right matrices.** Right multiplication by the same three units, the same construction with the order of the factors exchanged:
+
+$$
+r_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}
+$$
+
+$$
+r_y=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix}
+$$
+
+$$
 r_z=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 
-**Proposition (the axis-free route gives the derivations of this article).** The three arrays
+**The generator of each is its half.** The six are printed whole, as the sibling article prints them, and the generator of this article is half of each: $\tfrac12\ell_k$ and $\tfrac12 r_k$, the six halved matrices satisfying the same brackets with the structure constant $1$ instead of $2$.
 
+**The two families against each other.** They agree wherever the two laws agree, and they differ exactly where right multiplication carries a unit to the negative of where left multiplication carries it: the difference $\ell_k-r_k$ has exactly two nonzero entries, $+2$ and $-2$. Each of the six is a quarter turn of two coordinate planes, and each carries the entries
+
+| | $\ell_x,\ell_y,\ell_z$ | $r_x,r_y,r_z$ |
+|---|---|---|
+| trace | $0$ | $0$ |
+| determinant | $1$ | $1$ |
+| square | $-\mathrm I_4$ | $-\mathrm I_4$ |
+| transpose | $-\ell_k$ | $-r_k$ |
+| the planes turned | $(e_t,\vec e_x)$ with $(e_y,\vec e_z)$, cyclically | the same two planes |
+| fixed | none | none |
+
+**The six are a basis of $\mathfrak{so}(4)$.** Each is real and antisymmetric, so each lies in $\mathfrak{so}(4)$, and the six are linearly independent, so they span it: rank six in the sixteen-dimensional space. The halves $\tfrac12(\ell_k-r_k)$ and $\tfrac12(\ell_k+r_k)$ split that six as $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, which is the split of §*The Split as One and Two* seen at the operator level. **The six are not the generators of this article.** The generator $D_k$ is the half of that difference, $\tfrac12(\ell_k-r_k)$, whose three arrays are printed in §*The Array in the Basis of the Elements*.
+
+**The same six in the other frame.** With $S$ the matrix whose columns are $\mathcal P$ in the coefficient basis,
 $$
-\tfrac12\bigl(\ell_k-r_k\bigr),\qquad k=x,y,z,
+\tfrac12S^{-1}\ell_kS=\mathrm I_2\otimes G_k,\qquad \tfrac12S^{-1}r_kS=G_k^{\mathsf T}\otimes\mathrm I_2 ,
 $$
+so the two four-by-four rows of the table are the same six matrices in two bases, and the display of either row can be checked against the other entry by entry.
 
-are the arrays of $\mathrm{ad}_{G_k}$ in the basis $(\mathrm{I}_2,T_1,T_2,T_3)$, so the three matrices printed in §*The Array in the Basis of the Elements* are this route, entry for entry.
+### The Brackets in Each Frame
 
-**Proof.** $\mathrm{ad}_{G_k}$ is left multiplication by $T_k$ minus right multiplication by $T_k$, halved. The isomorphism $\mathsf{M}_2$ matches the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $(\mathrm{I}_2,T_1,T_2,T_3)$, so left multiplication by $\vec e_k$ and left multiplication by $T_k$ have the same array, and likewise on the right. The two arrays therefore agree on all sixteen entries, checked entry for entry.
-
-**Remark (why the two routes are worth both).** The Pauli route writes the three generators as $2\times2$ matrices and hides the fact that they are three directions of the algebra. The axis-free route writes them as $4\times4$ arrays of the multiplication and shows it: the three arrays are quarter-turns of the three coordinate planes of the element space, they kill the scalar line, and their brackets are read off without a convention for $\sigma_k$.
-
-### The Commutators
-
-**Proposition (the structure constants).** The three generators satisfy
+**Proposition (the structure constants).** In the Pauli representation the three generators satisfy
 
 $$
 [G_1,G_2]=G_3,\qquad [G_2,G_3]=G_1,\qquad [G_3,G_1]=G_2 .
 $$
 
-**Proof.** The images satisfy $[T_1,T_2]=2T_3$ and its cyclic rotations, because the elements satisfy $[\vec e_x,\vec e_y]=2\vec e_z$ and $\mathsf{M}_2$ is an algebra isomorphism. Halving both entries of each bracket gives the three identities.
+**Proof.** The images satisfy $[T_1,T_2]=2T_3$ and its cyclic rotations, because the elements satisfy $[\vec e_x,\vec e_y]=2\vec e_z$ and $\mathsf M_2$ is an algebra isomorphism. Halving both entries of each bracket gives the three identities.
 
-**Remark (no sign against the algebra frame).** The bracket here is the bracket of the algebra read through $\mathsf{M}_2$, and the half removes the factor two, so the table agrees with the table of the coefficient frame. Written without the half the same table reads $[T_1,T_2]=2T_3$.
+**Corollary (the same brackets in the Peirce frame).** The left family carries the same three identities, because $A\mapsto\mathrm I_2\otimes A$ is an algebra homomorphism. The right family carries them with the opposite sign, $[R_1,R_2]=-R_3$, because transposition reverses the order of a product; this is the same reversal that $[r_a,r_b]=-2r_c$ shows in the axis-free frame.
+
+**Proposition (the axis-free brackets).** With $a,b,c$ cyclic in $x,y,z$,
+
+$$
+[\ell_a,\ell_b]=2\ell_c,\qquad [r_a,r_b]=-2r_c,\qquad [\ell_a,r_b]=0 ,
+$$
+
+and the halved generators $\tfrac12\ell_k$, $\tfrac12 r_k$ satisfy the same three lines with the constant $1$.
+
+**Proof.** The first line is $[\vec e_a,\vec e_b]=2\vec e_c$ carried by left multiplication; the second is the same relation carried by right multiplication, where the order reverses; the third holds because left and right multiplication commute. Halving is linear.
+
+**Remark (left and right commute, and that is not trivial).** $[\ell_a,r_b]=0$ is the statement that the two families are the two commuting copies of $\mathfrak{su}(2)$ inside $\mathfrak{so}(4)$, and it is what makes the derivation $\tfrac12(\ell_k-r_k)$ a difference rather than a genuine bracket of the two.
+
+**Remark (no sign against the algebra frame).** The bracket here is the bracket of the algebra read through $\mathsf M_2$, and the half removes the factor two, so the table agrees with the table of the coefficient frame. Written without the half the same table reads $[T_1,T_2]=2T_3$.
+
+### The Arrays of the Derivations Are Not Generators
+
+**The distinction, stated once.** The next section prints three further four-by-four arrays, the arrays of $\mathrm{ad}_{G_1},\mathrm{ad}_{G_2},\mathrm{ad}_{G_3}$. They are operators on the space of elements, not matrices of elements, and they are a fourth object: not a fourth representation of the generators. The identity that ties the two is
+
+$$
+\mathrm{ad}_{G_k}=\tfrac12\bigl(\ell_k-r_k\bigr),
+$$
+
+which reads a difference of two generator matrices of the third row as the array of a derivation. The three arrays lie in $\mathfrak{su}(4)$ acting on the four-dimensional space of elements, they kill the identity, and each is a quarter turn of one coordinate plane there.
+
 
 ## The Derivation and Its Array
 
@@ -289,7 +429,7 @@ The anti-Hermitian traceless matrices of order two form $\mathfrak{su}(2)$, of r
 
 Each generator gives the derivation $[A,\cdot]$, anti-Hermitian for the Hilbert–Schmidt form, of array with the scalar row and column zero and the spectrum $\{0,0,i,-i\}$. The exponential is the conjugation by $U=e^{\theta G_k}=\cos\tfrac{\theta}{2}\mathrm{I}_2+\sin\tfrac{\theta}{2}T_k$, which turns the three-dimensional space of traceless elements by the angle $\theta$ about the axis $T_k$, right-handed, and fixes the identity and the axis.
 
-The three are written twice over: as $-\tfrac{i}{2}\sigma_k$ from the three arrays of the Pauli frame, and as $\tfrac12(\ell_k-r_k)$ from the six axis-free matrices of the multiplication, the two routes agreeing entry for entry.
+The three are written in three frames and the frames are kept apart: as $-\tfrac{i}{2}\sigma_k$ in the $2\times2$ Pauli representation, as $\mathrm I_2\otimes G_k$ and $G_k^{\mathsf T}\otimes\mathrm I_2$ in the $4\times4$ Peirce frame, and as the six axis-free matrices $\ell_k,r_k$ of left and right multiplication, of which $\tfrac12(\ell_k-r_k)$ is the array of the derivation. Only the first is a matrix of $\mathfrak{su}(2)$; the two four-by-four frames are the regular representation and lie in $\mathfrak{su}(4)$.
 
 The three rotors are the phase mixing $e^{\theta G_1}$, the real rotation $e^{\theta G_2}$ and the pair of opposite phases $e^{\theta G_3}$. The dimension ladder is $8,4,6,3$ at the element level and $32,16,6,3$ at the operator level, and the split of the generators as $1+2$, closed part plus open part, is the split $6+9$ of the fifteen at order four.
 
@@ -298,9 +438,11 @@ The three rotors are the phase mixing $e^{\theta G_1}$, the real rotation $e^{\t
 | Symbol | Meaning |
 |---|---|
 | $\mathsf{M}_2$ | the isomorphism from the algebra to $M_2(\mathbb{C})$ |
-| $\sigma_k$ | the three arrays of the Pauli frame, printed once in the section that compares the two routes |
+| $\sigma_k$ | the three arrays of the Pauli frame, printed in §*Three Representations, Kept Apart* |
 | $T_k$ | the image $\mathsf{M}_2(\vec e_k)$ of a vector unit, equal to $-i\sigma_k$ |
-| $\ell_k$, $r_k$ | the axis-free matrices of left and right multiplication by $\vec e_k$ |
+| $\ell_k$, $r_k$ | the axis-free matrices of left and right multiplication by $\vec e_k$; the six are a basis of $\mathfrak{so}(4)$ |
+| $\mathcal P$ | the Peirce frame $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ |
+| $\mathrm I_2\otimes G_k$, $G_k^{\mathsf T}\otimes\mathrm I_2$ | the same three generators in the Peirce frame, left and right |
 | $G_k$ | the generator $\tfrac12 T_k$ |
 | $\mathrm{ad}_A$ | the derivation $[A,\cdot]$ |
 | $\langle X,Y\rangle$ | the Hilbert–Schmidt form $\operatorname{tr}(X^{*}Y)$ |
