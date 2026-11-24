@@ -2,11 +2,11 @@
 
 ## Introduction
 
-**This article prints the fermion side of the model's gauge interaction: the fifteen arrays of $\mathfrak{su}(4)$ acting on the sixteen fields, entry by entry, with the quantum numbers of every entry.** It is the companion of [The Feynman Rules of the Four Colours Left–Right Model](the-feynman-rules-of-the-four-colours-left-right-model-the-vertices-of-the-twenty-one-and-the-sixteen.html), which states the rule $\Gamma^{a}_{\imath}=-ig_{4}\varepsilon_{\imath}\gamma_{\imath}(t_{a}\otimes\mathbb{1}_{2})$ and hands the matrices to this article.
+**This article prints the fermion side of the model's gauge interaction: the fifteen arrays of $\mathfrak{su}(4)$ acting on the sixteen fields, entry by entry, with the quantum numbers of every entry.** It is the companion of [The Feynman Rules of the Four Colours Left–Right Model](the-feynman-rules-of-the-four-colours-left-right-model-the-vertices-of-the-twenty-one-and-the-sixteen.html), which states the rule $\Gamma^{a}_{\imath}=-ig_{4}\gamma_{\imath}(t_{a}\otimes\mathbb{1}_{2})$ and hands the matrices to this article.
 
 **Three questions it answers, and one it does not.**
 
-- **Where does each entry go?** Every one of the $204$ nonzero fermion–gauge entries is a coefficient joining one quartet line to one quartet line. The article names the four families, prints their matrices, and lists the pairs.
+- **Where does each entry go?** Every one of the $88$ nonzero fermion–gauge entries per chirality is a coefficient joining one quartet line to one quartet line, or one doublet slot to one doublet slot. The article names the four families, prints their matrices, and lists the pairs.
 - **What charges does each entry carry?** $B-L$ and $Q$ are read off the entry, and the two are computed for both chiral blocks. **The fifteen carry $B-L$ and do not carry $Q$**, and the article says exactly where the failure sits.
 - **What does the algebra forbid?** No generator turns a lepton into a lepton, no generator turns an up slot into a down slot, and the six mixed planes are the only entries that change $B-L$ per line. **Each of the three is a statement with a proof, not a remark.**
 - **It does not derive the fermion Lagrangian.** The matrices are the corpus's; the dynamics is the transcription. That is [the spin note](../articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.html)'s ledger and this article inherits it without softening it.
@@ -49,7 +49,7 @@ $$
 | --- | --- | --- | --- | --- |
 | colour planes | $6$ | $A_{ab}$, $iS_{ab}$, $a,b\in\{x,y,z\}$ | $a\to b$ inside the triple | $0$ |
 | colour Cartan | $2$ | $d_{2}$, $d_{3}$ | phases inside the triple | $0$ |
-| corner | $1$ | $iD$ | phases, $-3i$ on $t$ and $+i$ on each $a$ | $\pm\tfrac43$ between lines, $0$ within |
+| corner | $1$ | $iD$ | phases, $-3i$ on $t$ and $+i$ on each $a$; no entry moves a line | $0$ per entry; the $-3i$ against $+i$ is where the $\pm\tfrac43$ sits |
 | mixed planes | $6$ | $A_{ta}$, $iS_{ta}$ | $t\leftrightarrow a$ | $\pm\tfrac43$ |
 
 **The $B-L$ column is the charge the *entry* transfers and not the charge of the field**, and the distinction is the reason the leptoquarks carry $\pm\tfrac43$: an entry that joins $t$ to $a$ moves a state from $B-L=-1$ to $B-L=+\tfrac13$, so the boson that carries the entry must take $\mp\tfrac43$ with it.
@@ -105,7 +105,7 @@ $$
 
 **What the second row forbids is an electric charge.** The corner gives the same phase $-3i$ to $\nu_{L}$ and to $e_{L}$, and the same phase $+i$ to $u^{r}$ and to $d^{r}$. **A quantum number that separates the members of a doublet cannot be a matrix on the quartet alone**, and the statement is exact: the two rows of the display are identical, so no property of the array distinguishes them.
 
-**What the third row allows is the whole of the model's new physics.** Six entries join the lepton line to a colour line, each carries $B-L=\pm\tfrac43$, and each conserves $B-L$ at the vertex because the boson carries it away. **Six entries, three colours, two chiralities of the plane, and that is the leptoquark sector.**
+**What the third row allows is the whole of the model's new physics.** Six entries join the lepton line to a colour line, each carries $B-L=\pm\tfrac43$, and each conserves $B-L$ at the vertex because the boson carries it away. **Six generators, three colours and the two plane types, and that is the leptoquark sector.**
 
 ## The Charges of Every Entry
 
@@ -183,9 +183,11 @@ $$
 
 **The count, one last time, and it is the article's only arithmetic.**
 $$
-\underbrace{144}_{\text{twelve planes}\times12}+\underbrace{12}_{\text{three diagonals}\times4}+\underbrace{48}_{\text{six weak arrays}\times8}=204 .
+\underbrace{48}_{\text{twelve planes}\times2\times2}+\underbrace{16}_{\text{corner }8,\ \text{two diagonals }4+4}+\underbrace{24}_{\text{three weak arrays}\times8}=88 .
 $$
-**Two hundred and four entries, and each is a number in a printed array.** The article has named all of them by family, by pair of lines and by the charge they transfer, and no entry has been computed that the corpus did not already print.
+**Eighty-eight entries in one chirality and $176$ in both, and each is a number in a printed array.** The article has named all of them by family, by pair of lines and by the charge they transfer, and no entry has been computed that the corpus did not already print.
+
+**The sparsity is worth one remark, because a reader expects more.** A plane such as $A_{tx}$ has two nonzero entries on the quartet and four on the eight: it moves one line into one other line and does nothing else. **Only the corner touches all four lines, and it does so diagonally.** So the gauge sector of this model is sparse in the fermion basis, and a vertex table written out is short.
 
 ## What the Article Does Not Do
 
@@ -210,7 +212,7 @@ $$
 | the leptoquark transfer, up row | $0-(+\tfrac23)$ | $-\tfrac23$ |
 | the leptoquark transfer, down row | $-1-(-\tfrac13)$ | $-\tfrac23$ |
 | the gluon transfer | $+\tfrac23-(+\tfrac23)$ | $0$ |
-| the entries | $144+12+48$ | $204$ |
+| the entries, one chirality | $48+16+24$ | $88$ |
 | the eight-by-eight block structure | the two $4\times4$ blocks | identical |
 
 ## Summary
@@ -238,7 +240,7 @@ $$
 | $\mathbf{4}$, $\bar{\mathbf{4}}$ | The two chiral blocks |
 | $-t^{\mathsf{T}}$ | The generator on the conjugate block |
 | $A_{ta}$, $iS_{ta}$ | The six mixed planes, the leptoquark entries |
-| $204$ | The number of nonzero fermion–gauge entries |
+| $88$ | The number of nonzero fermion–gauge entries in one chirality |
 
 ## Further Reading
 
